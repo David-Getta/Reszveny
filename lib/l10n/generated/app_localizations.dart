@@ -892,6 +892,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Something went wrong: {detail}'**
   String errUnknown(String detail);
+
+  /// No description provided for @newSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'New search'**
+  String get newSearch;
+
+  /// No description provided for @recentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent'**
+  String get recentSearches;
+
+  /// No description provided for @noRecentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'No recent searches yet.'**
+  String get noRecentSearches;
+
+  /// No description provided for @clearRecent.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear recent'**
+  String get clearRecent;
+
+  /// No description provided for @greeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Which stock shall we look at?'**
+  String get greeting;
+
+  /// No description provided for @searchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticker or company name'**
+  String get searchHint;
+
+  /// No description provided for @attachImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach an image'**
+  String get attachImage;
+
+  /// No description provided for @searchResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search results'**
+  String get searchResultsTitle;
+
+  /// No description provided for @errNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No stocks found for “{query}”.'**
+  String errNoResults(String query);
+
+  /// No description provided for @quickBarHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a ticker or company name…'**
+  String get quickBarHint;
+
+  /// No description provided for @openFullWindow.
+  ///
+  /// In en, this message translates to:
+  /// **'Open window'**
+  String get openFullWindow;
+
+  /// No description provided for @hotkeyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Press {shortcut} anywhere to summon Reszveny.'**
+  String hotkeyHint(String shortcut);
+
+  /// No description provided for @trayOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Reszveny'**
+  String get trayOpen;
+
+  /// No description provided for @trayQuickSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick search'**
+  String get trayQuickSearch;
+
+  /// No description provided for @trayQuit.
+  ///
+  /// In en, this message translates to:
+  /// **'Quit'**
+  String get trayQuit;
+
+  /// No description provided for @appearance.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get appearance;
+
+  /// No description provided for @themeSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get themeSystem;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get themeDark;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get themeLight;
+
+  /// No description provided for @back.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
 }
 
 class _AppLocalizationsDelegate

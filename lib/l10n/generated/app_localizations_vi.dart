@@ -406,4 +406,68 @@ class AppLocalizationsVi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Đã xảy ra lỗi: $detail';
   }
+
+  @override
+  String get newSearch => 'Tìm kiếm mới';
+
+  @override
+  String get recentSearches => 'Gần đây';
+
+  @override
+  String get noRecentSearches => 'Chưa có tìm kiếm gần đây.';
+
+  @override
+  String get clearRecent => 'Xóa gần đây';
+
+  @override
+  String get greeting => 'Hôm nay bạn muốn xem cổ phiếu nào?';
+
+  @override
+  String get searchHint => 'Mã cổ phiếu hoặc tên công ty';
+
+  @override
+  String get attachImage => 'Đính kèm ảnh';
+
+  @override
+  String get searchResultsTitle => 'Kết quả tìm kiếm';
+
+  @override
+  String errNoResults(String query) {
+    return 'Không tìm thấy cổ phiếu nào cho “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Nhập mã cổ phiếu hoặc tên công ty…';
+
+  @override
+  String get openFullWindow => 'Mở cửa sổ';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Nhấn $shortcut ở bất kỳ đâu để gọi Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Mở Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Tìm kiếm nhanh';
+
+  @override
+  String get trayQuit => 'Thoát';
+
+  @override
+  String get appearance => 'Giao diện';
+
+  @override
+  String get themeSystem => 'Theo hệ thống';
+
+  @override
+  String get themeDark => 'Tối';
+
+  @override
+  String get themeLight => 'Sáng';
+
+  @override
+  String get back => 'Quay lại';
 }

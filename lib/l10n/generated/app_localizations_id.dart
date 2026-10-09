@@ -407,4 +407,68 @@ class AppLocalizationsId extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Terjadi kesalahan: $detail';
   }
+
+  @override
+  String get newSearch => 'Pencarian baru';
+
+  @override
+  String get recentSearches => 'Terbaru';
+
+  @override
+  String get noRecentSearches => 'Belum ada pencarian terbaru.';
+
+  @override
+  String get clearRecent => 'Hapus pencarian terbaru';
+
+  @override
+  String get greeting => 'Saham mana yang akan kita lihat?';
+
+  @override
+  String get searchHint => 'Kode saham atau nama perusahaan';
+
+  @override
+  String get attachImage => 'Lampirkan gambar';
+
+  @override
+  String get searchResultsTitle => 'Hasil pencarian';
+
+  @override
+  String errNoResults(String query) {
+    return 'Tidak ada saham yang ditemukan untuk “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Ketik kode saham atau nama perusahaan…';
+
+  @override
+  String get openFullWindow => 'Buka jendela';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tekan $shortcut di mana saja untuk memanggil Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Buka Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Pencarian cepat';
+
+  @override
+  String get trayQuit => 'Keluar';
+
+  @override
+  String get appearance => 'Tampilan';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Gelap';
+
+  @override
+  String get themeLight => 'Terang';
+
+  @override
+  String get back => 'Kembali';
 }

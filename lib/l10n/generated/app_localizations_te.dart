@@ -408,4 +408,68 @@ class AppLocalizationsTe extends AppLocalizations {
   String errUnknown(String detail) {
     return 'ఏదో తప్పు జరిగింది: $detail';
   }
+
+  @override
+  String get newSearch => 'కొత్త శోధన';
+
+  @override
+  String get recentSearches => 'ఇటీవలివి';
+
+  @override
+  String get noRecentSearches => 'ఇంకా ఇటీవలి శోధనలు లేవు.';
+
+  @override
+  String get clearRecent => 'ఇటీవలివి తీసివేయండి';
+
+  @override
+  String get greeting => 'ఈరోజు ఏ స్టాక్ చూద్దాం?';
+
+  @override
+  String get searchHint => 'టికర్ లేదా కంపెనీ పేరు';
+
+  @override
+  String get attachImage => 'చిత్రాన్ని జోడించండి';
+
+  @override
+  String get searchResultsTitle => 'శోధన ఫలితాలు';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” కోసం స్టాక్‌లు ఏవీ కనుగొనబడలేదు.';
+  }
+
+  @override
+  String get quickBarHint => 'టికర్ లేదా కంపెనీ పేరు టైప్ చేయండి…';
+
+  @override
+  String get openFullWindow => 'విండో తెరవండి';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'ఎక్కడి నుంచైనా Reszveny ని తెరవడానికి $shortcut నొక్కండి.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny తెరవండి';
+
+  @override
+  String get trayQuickSearch => 'త్వరిత శోధన';
+
+  @override
+  String get trayQuit => 'నిష్క్రమించండి';
+
+  @override
+  String get appearance => 'రూపం';
+
+  @override
+  String get themeSystem => 'సిస్టమ్';
+
+  @override
+  String get themeDark => 'డార్క్';
+
+  @override
+  String get themeLight => 'లైట్';
+
+  @override
+  String get back => 'వెనుకకు';
 }

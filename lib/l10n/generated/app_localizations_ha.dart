@@ -408,4 +408,68 @@ class AppLocalizationsHa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Wani abu ya ɓaci: $detail';
   }
+
+  @override
+  String get newSearch => 'Sabon bincike';
+
+  @override
+  String get recentSearches => 'Na kwanan nan';
+
+  @override
+  String get noRecentSearches => 'Babu binciken kwanan nan tukuna.';
+
+  @override
+  String get clearRecent => 'Share na kwanan nan';
+
+  @override
+  String get greeting => 'Wane hannun jari za mu duba?';
+
+  @override
+  String get searchHint => 'Ticker ko sunan kamfani';
+
+  @override
+  String get attachImage => 'Haɗa hoto';
+
+  @override
+  String get searchResultsTitle => 'Sakamakon bincike';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ba a sami hannun jari don “$query” ba.';
+  }
+
+  @override
+  String get quickBarHint => 'Rubuta ticker ko sunan kamfani…';
+
+  @override
+  String get openFullWindow => 'Buɗe taga';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Danna $shortcut a ko\'ina don kiran Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Buɗe Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Bincike cikin sauri';
+
+  @override
+  String get trayQuit => 'Fita';
+
+  @override
+  String get appearance => 'Kamanni';
+
+  @override
+  String get themeSystem => 'Na\'ura';
+
+  @override
+  String get themeDark => 'Duhu';
+
+  @override
+  String get themeLight => 'Haske';
+
+  @override
+  String get back => 'Baya';
 }

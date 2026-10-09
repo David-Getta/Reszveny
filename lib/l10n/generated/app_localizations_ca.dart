@@ -409,4 +409,68 @@ class AppLocalizationsCa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Alguna cosa ha anat malament: $detail';
   }
+
+  @override
+  String get newSearch => 'Cerca nova';
+
+  @override
+  String get recentSearches => 'Recents';
+
+  @override
+  String get noRecentSearches => 'Encara no hi ha cerques recents.';
+
+  @override
+  String get clearRecent => 'Esborrar les recents';
+
+  @override
+  String get greeting => 'Quina acció mirem?';
+
+  @override
+  String get searchHint => 'Ticker o nom de l’empresa';
+
+  @override
+  String get attachImage => 'Adjuntar una imatge';
+
+  @override
+  String get searchResultsTitle => 'Resultats de la cerca';
+
+  @override
+  String errNoResults(String query) {
+    return 'No s’ha trobat cap acció per a «$query».';
+  }
+
+  @override
+  String get quickBarHint => 'Escriu un ticker o el nom d’una empresa…';
+
+  @override
+  String get openFullWindow => 'Obrir la finestra';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Prem $shortcut des de qualsevol lloc per obrir Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Obrir Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Cerca ràpida';
+
+  @override
+  String get trayQuit => 'Sortir';
+
+  @override
+  String get appearance => 'Aparença';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Fosc';
+
+  @override
+  String get themeLight => 'Clar';
+
+  @override
+  String get back => 'Enrere';
 }

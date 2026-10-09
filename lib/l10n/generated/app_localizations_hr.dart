@@ -409,4 +409,68 @@ class AppLocalizationsHr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Nešto je pošlo po krivu: $detail';
   }
+
+  @override
+  String get newSearch => 'Nova pretraga';
+
+  @override
+  String get recentSearches => 'Nedavno';
+
+  @override
+  String get noRecentSearches => 'Još nema nedavnih pretraga.';
+
+  @override
+  String get clearRecent => 'Očisti nedavne';
+
+  @override
+  String get greeting => 'Koju dionicu ćemo pogledati?';
+
+  @override
+  String get searchHint => 'Ticker ili naziv tvrtke';
+
+  @override
+  String get attachImage => 'Priloži sliku';
+
+  @override
+  String get searchResultsTitle => 'Rezultati pretrage';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nisu pronađene dionice za „$query“.';
+  }
+
+  @override
+  String get quickBarHint => 'Upiši ticker ili naziv tvrtke…';
+
+  @override
+  String get openFullWindow => 'Otvori prozor';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Pritisnite $shortcut bilo gdje da otvorite Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Otvori Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Brza pretraga';
+
+  @override
+  String get trayQuit => 'Izlaz';
+
+  @override
+  String get appearance => 'Izgled';
+
+  @override
+  String get themeSystem => 'Sustav';
+
+  @override
+  String get themeDark => 'Tamna';
+
+  @override
+  String get themeLight => 'Svijetla';
+
+  @override
+  String get back => 'Natrag';
 }

@@ -407,4 +407,68 @@ class AppLocalizationsSv extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Något gick fel: $detail';
   }
+
+  @override
+  String get newSearch => 'Ny sökning';
+
+  @override
+  String get recentSearches => 'Senaste';
+
+  @override
+  String get noRecentSearches => 'Inga senaste sökningar ännu.';
+
+  @override
+  String get clearRecent => 'Rensa senaste';
+
+  @override
+  String get greeting => 'Vilken aktie ska vi titta på?';
+
+  @override
+  String get searchHint => 'Ticker eller företagsnamn';
+
+  @override
+  String get attachImage => 'Bifoga en bild';
+
+  @override
+  String get searchResultsTitle => 'Sökresultat';
+
+  @override
+  String errNoResults(String query) {
+    return 'Inga aktier hittades för ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Skriv en ticker eller ett företagsnamn…';
+
+  @override
+  String get openFullWindow => 'Öppna fönster';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tryck på $shortcut var som helst för att öppna Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Öppna Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Snabbsökning';
+
+  @override
+  String get trayQuit => 'Avsluta';
+
+  @override
+  String get appearance => 'Utseende';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Mörkt';
+
+  @override
+  String get themeLight => 'Ljust';
+
+  @override
+  String get back => 'Tillbaka';
 }

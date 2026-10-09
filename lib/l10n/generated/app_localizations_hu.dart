@@ -409,4 +409,68 @@ class AppLocalizationsHu extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Hiba történt: $detail';
   }
+
+  @override
+  String get newSearch => 'Új keresés';
+
+  @override
+  String get recentSearches => 'Legutóbbiak';
+
+  @override
+  String get noRecentSearches => 'Még nincsenek korábbi keresések.';
+
+  @override
+  String get clearRecent => 'Legutóbbiak törlése';
+
+  @override
+  String get greeting => 'Melyik részvényt nézzük meg?';
+
+  @override
+  String get searchHint => 'Ticker vagy cégnév';
+
+  @override
+  String get attachImage => 'Kép csatolása';
+
+  @override
+  String get searchResultsTitle => 'Keresési találatok';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nincs találat a „$query” kifejezésre.';
+  }
+
+  @override
+  String get quickBarHint => 'Írj be egy tickert vagy cégnevet…';
+
+  @override
+  String get openFullWindow => 'Ablak megnyitása';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny megnyitása';
+
+  @override
+  String get trayQuickSearch => 'Gyorskeresés';
+
+  @override
+  String get trayQuit => 'Kilépés';
+
+  @override
+  String get appearance => 'Megjelenés';
+
+  @override
+  String get themeSystem => 'Rendszer';
+
+  @override
+  String get themeDark => 'Sötét';
+
+  @override
+  String get themeLight => 'Világos';
+
+  @override
+  String get back => 'Vissza';
 }

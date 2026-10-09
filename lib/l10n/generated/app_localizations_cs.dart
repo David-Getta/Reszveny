@@ -408,4 +408,68 @@ class AppLocalizationsCs extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Něco se pokazilo: $detail';
   }
+
+  @override
+  String get newSearch => 'Nové hledání';
+
+  @override
+  String get recentSearches => 'Nedávné';
+
+  @override
+  String get noRecentSearches => 'Zatím žádná nedávná hledání.';
+
+  @override
+  String get clearRecent => 'Vymazat nedávné';
+
+  @override
+  String get greeting => 'Na kterou akcii se podíváme?';
+
+  @override
+  String get searchHint => 'Ticker nebo název společnosti';
+
+  @override
+  String get attachImage => 'Připojit obrázek';
+
+  @override
+  String get searchResultsTitle => 'Výsledky hledání';
+
+  @override
+  String errNoResults(String query) {
+    return 'Pro „$query“ nebyly nalezeny žádné akcie.';
+  }
+
+  @override
+  String get quickBarHint => 'Zadejte ticker nebo název společnosti…';
+
+  @override
+  String get openFullWindow => 'Otevřít okno';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Stiskněte $shortcut kdekoli a vyvolejte Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Otevřít Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Rychlé hledání';
+
+  @override
+  String get trayQuit => 'Ukončit';
+
+  @override
+  String get appearance => 'Vzhled';
+
+  @override
+  String get themeSystem => 'Systémový';
+
+  @override
+  String get themeDark => 'Tmavý';
+
+  @override
+  String get themeLight => 'Světlý';
+
+  @override
+  String get back => 'Zpět';
 }

@@ -408,4 +408,68 @@ class AppLocalizationsAr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'حدث خطأ ما: $detail';
   }
+
+  @override
+  String get newSearch => 'بحث جديد';
+
+  @override
+  String get recentSearches => 'الأخيرة';
+
+  @override
+  String get noRecentSearches => 'لا توجد عمليات بحث أخيرة بعد.';
+
+  @override
+  String get clearRecent => 'مسح الأخيرة';
+
+  @override
+  String get greeting => 'أي سهم نلقي نظرة عليه؟';
+
+  @override
+  String get searchHint => 'رمز السهم أو اسم الشركة';
+
+  @override
+  String get attachImage => 'إرفاق صورة';
+
+  @override
+  String get searchResultsTitle => 'نتائج البحث';
+
+  @override
+  String errNoResults(String query) {
+    return 'لم يتم العثور على أسهم لـ “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'اكتب رمز السهم أو اسم الشركة…';
+
+  @override
+  String get openFullWindow => 'فتح النافذة';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'اضغط $shortcut في أي مكان لاستدعاء Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'فتح Reszveny';
+
+  @override
+  String get trayQuickSearch => 'بحث سريع';
+
+  @override
+  String get trayQuit => 'إنهاء';
+
+  @override
+  String get appearance => 'المظهر';
+
+  @override
+  String get themeSystem => 'النظام';
+
+  @override
+  String get themeDark => 'داكن';
+
+  @override
+  String get themeLight => 'فاتح';
+
+  @override
+  String get back => 'رجوع';
 }

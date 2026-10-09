@@ -1,34 +1,79 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../app_services.dart';
+import '../../core/desktop/desktop_integration.dart';
+import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
+import '../../theme/app_theme.dart';
+import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
-import '../stock_detail/stock_detail_page.dart';
 import 'candidate_sheet.dart';
+import 'search_field.dart';
 
-/// Kezdőképernyő: fotó / galéria / kézi ticker.
+/// Kezdőképernyő: nagy üdvözlő sor és egy keresősáv (ticker vagy cégnév,
+/// kép csatolása, kamera) – a Claude kezdőképernyőjének mintájára.
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({super.key, required this.onOpenSymbol, this.showAppBarActions = true});
+
+  final ValueChanged<StockCandidate> onOpenSymbol;
+
+  /// Keskeny elrendezésben (nincs oldalsáv) a beállítások az AppBarban.
+  final bool showAppBarActions;
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  final _tickerController = TextEditingController();
   bool _busy = false;
   String? _busyLabel;
+  List<StockCandidate>? _results;
+  String _lastQuery = '';
 
-  @override
-  void dispose() {
-    _tickerController.dispose();
-    super.dispose();
+  Future<void> _submit(String query) async {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final q = query.trim();
+    if (q.isEmpty) return;
+    FocusScope.of(context).unfocus();
+    setState(() {
+      _busy = true;
+      _busyLabel = l10n.loadingData;
+      _results = null;
+      _lastQuery = q;
+    });
+    List<StockCandidate> results;
+    try {
+      results = await services.marketData.search(q);
+    } catch (e) {
+      // Ha a keresés nem elérhető, ticker-ként próbáljuk.
+      results = const [];
+      if (e is! AppException || e.code != AppErrorCode.demoUnsupportedSymbol) _showError(e);
+    }
+    if (!mounted) return;
+    setState(() => _busy = false);
+
+    final looksLikeTicker = RegExp(r'^[A-Za-z.\-]{1,8}$').hasMatch(q);
+    if (results.isEmpty) {
+      if (looksLikeTicker) {
+        widget.onOpenSymbol(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
+      } else {
+        _showError(MarketDataException(AppErrorCode.noResults, detail: q));
+      }
+      return;
+    }
+    if (results.length == 1 || results.first.confidence >= 1) {
+      widget.onOpenSymbol(results.first);
+      return;
+    }
+    setState(() => _results = results);
   }
 
   Future<void> _capture(bool camera) async {
@@ -46,6 +91,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _busy = true;
       _busyLabel = l10n.recognizing;
+      _results = null;
     });
     final RecognitionResult result;
     try {
@@ -66,7 +112,7 @@ class _HomePageState extends State<HomePage> {
     final best = result.best!;
     final chosen = result.candidates.length == 1 && best.isConfident ? best : await showCandidateSheet(context, result);
     if (chosen == null || !mounted) return;
-    _openDetails(chosen, recognition: result);
+    widget.onOpenSymbol(chosen);
   }
 
   Future<void> _showNoCandidates(RecognitionResult result) async {
@@ -92,21 +138,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void _lookUpManual() {
-    final symbol = _tickerController.text.trim().toUpperCase();
-    if (symbol.isEmpty) return;
-    FocusScope.of(context).unfocus();
-    _openDetails(StockCandidate(symbol: symbol, companyName: symbol, confidence: 1));
-  }
-
-  void _openDetails(StockCandidate candidate, {RecognitionResult? recognition}) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => StockDetailPage(candidate: candidate, recognition: recognition),
-      ),
-    );
-  }
-
   void _showError(Object error) {
     if (!mounted) return;
     final l10n = AppLocalizations.of(context);
@@ -118,91 +149,111 @@ class _HomePageState extends State<HomePage> {
     final l10n = AppLocalizations.of(context);
     final services = AppServices.of(context);
     final theme = Theme.of(context);
+    final p = AppPalette.of(context);
     final supportsCamera = services.capture.supportsCamera;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(l10n.appTitle),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings_outlined),
-            tooltip: l10n.settings,
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const SettingsPage())),
-          ),
-        ],
-      ),
+      appBar: widget.showAppBarActions
+          ? desktopAppBar(
+              context,
+              hasSidebar: false,
+              title: Text(l10n.appTitle),
+              actions: [
+                IconButton(
+                  icon: const Icon(Icons.tune_rounded),
+                  tooltip: l10n.settings,
+                  onPressed: () =>
+                      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const SettingsPage())),
+                ),
+                const SizedBox(width: 4),
+              ],
+            )
+          : PreferredSize(preferredSize: const Size.fromHeight(28), child: const WindowDragArea()),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 560),
+            constraints: const BoxConstraints(maxWidth: 680),
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  if (services.config.isDemoMode)
-                    Card(
-                      color: theme.colorScheme.tertiaryContainer,
-                      child: Padding(
-                        padding: const EdgeInsets.all(12),
-                        child: Row(
-                          children: [
-                            Icon(Icons.science_outlined, color: theme.colorScheme.onTertiaryContainer),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Text(
-                                l10n.demoModeBanner(DemoMarketDataProvider.supportedSymbols.join(', ')),
-                                style: TextStyle(color: theme.colorScheme.onTertiaryContainer),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  const SizedBox(height: 24),
-                  Icon(Icons.document_scanner_outlined, size: 96, color: theme.colorScheme.primary),
-                  const SizedBox(height: 16),
-                  Text(l10n.homeTagline, textAlign: TextAlign.center, style: theme.textTheme.headlineSmall),
-                  const SizedBox(height: 8),
-                  Text(l10n.homeHint, textAlign: TextAlign.center, style: theme.textTheme.bodyMedium),
-                  const SizedBox(height: 32),
-                  if (_busy) ...[
-                    const Center(child: CircularProgressIndicator()),
-                    const SizedBox(height: 12),
-                    Text(_busyLabel ?? '', textAlign: TextAlign.center),
-                  ] else ...[
-                    if (supportsCamera)
-                      FilledButton.icon(
-                        onPressed: () => _capture(true),
-                        icon: const Icon(Icons.photo_camera_outlined),
-                        label: Text(l10n.takePhoto),
-                      ),
-                    if (supportsCamera) const SizedBox(height: 12),
-                    (supportsCamera ? OutlinedButton.icon : FilledButton.icon)(
-                      onPressed: () => _capture(false),
-                      icon: const Icon(Icons.photo_library_outlined),
-                      label: Text(supportsCamera ? l10n.chooseFromGallery : l10n.chooseImage),
-                    ),
-                  ],
-                  const SizedBox(height: 32),
-                  Text(l10n.enterTickerManually, style: theme.textTheme.titleMedium),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 48),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
-                        child: TextField(
-                          controller: _tickerController,
-                          textCapitalization: TextCapitalization.characters,
-                          decoration: InputDecoration(labelText: l10n.tickerInputLabel, hintText: l10n.tickerInputHint),
-                          onSubmitted: (_) => _lookUpManual(),
+                      Icon(Icons.auto_graph_rounded, color: p.accent, size: 30),
+                      const SizedBox(width: 12),
+                      Flexible(
+                        child: Text(
+                          l10n.greeting,
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.headlineMedium?.copyWith(
+                            fontFamilyFallback: AppTheme.serifFallback,
+                            fontSize: 30,
+                          ),
                         ),
                       ),
-                      const SizedBox(width: 8),
-                      FilledButton.tonal(onPressed: _busy ? null : _lookUpManual, child: Text(l10n.lookUp)),
                     ],
                   ),
-                  const SizedBox(height: 32),
-                  Text(l10n.disclaimer, textAlign: TextAlign.center, style: theme.textTheme.bodySmall),
+                  const SizedBox(height: 28),
+                  SearchField(
+                    hint: l10n.searchHint,
+                    autofocus: true,
+                    enabled: !_busy,
+                    onSubmitted: _submit,
+                    leading: [
+                      _PillAction(
+                        icon: Icons.add_photo_alternate_outlined,
+                        tooltip: l10n.attachImage,
+                        onTap: _busy ? null : () => _capture(false),
+                      ),
+                      if (supportsCamera)
+                        _PillAction(
+                          icon: Icons.photo_camera_outlined,
+                          tooltip: l10n.takePhoto,
+                          onTap: _busy ? null : () => _capture(true),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    l10n.homeHint,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                  const SizedBox(height: 24),
+                  if (_busy) ...[
+                    const Center(
+                      child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5)),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      _busyLabel ?? '',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: p.muted),
+                    ),
+                  ],
+                  if (_results != null)
+                    _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                  if (services.config.isDemoMode) ...[
+                    const SizedBox(height: 24),
+                    _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
+                  ],
+                  if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
+                    const SizedBox(height: 24),
+                    Text(
+                      l10n.hotkeyHint(DesktopIntegration.shortcutLabel),
+                      textAlign: TextAlign.center,
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
+                  ],
+                  const SizedBox(height: 40),
+                  Text(
+                    l10n.disclaimer,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
                 ],
               ),
             ),
@@ -212,3 +263,104 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+class _PillAction extends StatelessWidget {
+  const _PillAction({required this.icon, required this.tooltip, required this.onTap});
+
+  final IconData icon;
+  final String tooltip;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final p = AppPalette.of(context);
+    return IconButton(
+      icon: Icon(icon, size: 22),
+      tooltip: tooltip,
+      color: p.muted,
+      onPressed: onTap,
+      style: IconButton.styleFrom(shape: const CircleBorder(), padding: const EdgeInsets.all(8)),
+    );
+  }
+}
+
+class _SearchResults extends StatelessWidget {
+  const _SearchResults({required this.query, required this.results, required this.onTap});
+
+  final String query;
+  final List<StockCandidate> results;
+  final ValueChanged<StockCandidate> onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 8, 4, 8),
+          child: Text(l10n.searchResultsTitle, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+        ),
+        Card(
+          child: Column(
+            children: [
+              for (final (i, c) in results.indexed) ...[
+                if (i > 0) const Divider(height: 1),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: p.accent.withValues(alpha: 0.16),
+                    foregroundColor: p.accent,
+                    child: Text(
+                      c.symbol.substring(0, c.symbol.length.clamp(0, 2)),
+                      style: const TextStyle(fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                  title: Text(c.symbol, style: const TextStyle(fontWeight: FontWeight.w600)),
+                  subtitle: Text(c.companyName, maxLines: 1, overflow: TextOverflow.ellipsis),
+                  trailing: Icon(Icons.chevron_right_rounded, color: p.muted),
+                  onTap: () => onTap(c),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _DemoBanner extends StatelessWidget {
+  const _DemoBanner({required this.symbols});
+
+  final String symbols;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: p.accent.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: p.accent.withValues(alpha: 0.35)),
+      ),
+      child: Row(
+        children: [
+          Icon(Icons.science_outlined, color: p.accent, size: 20),
+          const SizedBox(width: 10),
+          Expanded(child: Text(l10n.demoModeBanner(symbols), style: Theme.of(context).textTheme.bodySmall)),
+        ],
+      ),
+    );
+  }
+}
+
+/// Esc a keresőmezőben: törli a találatokat.
+class ClearResultsIntent extends Intent {
+  const ClearResultsIntent();
+}
+
+const Map<ShortcutActivator, Intent> homeShortcuts = {SingleActivator(LogicalKeyboardKey.escape): ClearResultsIntent()};

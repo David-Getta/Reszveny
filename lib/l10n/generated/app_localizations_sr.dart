@@ -408,4 +408,68 @@ class AppLocalizationsSr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Нешто је пошло наопако: $detail';
   }
+
+  @override
+  String get newSearch => 'Нова претрага';
+
+  @override
+  String get recentSearches => 'Недавне';
+
+  @override
+  String get noRecentSearches => 'Још нема недавних претрага.';
+
+  @override
+  String get clearRecent => 'Обриши недавне';
+
+  @override
+  String get greeting => 'Коју акцију да погледамо?';
+
+  @override
+  String get searchHint => 'Тикер или назив компаније';
+
+  @override
+  String get attachImage => 'Приложи слику';
+
+  @override
+  String get searchResultsTitle => 'Резултати претраге';
+
+  @override
+  String errNoResults(String query) {
+    return 'Нису пронађене акције за „$query“.';
+  }
+
+  @override
+  String get quickBarHint => 'Унесите тикер или назив компаније…';
+
+  @override
+  String get openFullWindow => 'Отвори прозор';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Притисните $shortcut било где да позовете Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Отвори Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Брза претрага';
+
+  @override
+  String get trayQuit => 'Изађи';
+
+  @override
+  String get appearance => 'Изглед';
+
+  @override
+  String get themeSystem => 'Системска';
+
+  @override
+  String get themeDark => 'Тамна';
+
+  @override
+  String get themeLight => 'Светла';
+
+  @override
+  String get back => 'Назад';
 }

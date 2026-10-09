@@ -408,4 +408,68 @@ class AppLocalizationsBn extends AppLocalizations {
   String errUnknown(String detail) {
     return 'কিছু একটা ভুল হয়েছে: $detail';
   }
+
+  @override
+  String get newSearch => 'নতুন অনুসন্ধান';
+
+  @override
+  String get recentSearches => 'সাম্প্রতিক';
+
+  @override
+  String get noRecentSearches => 'এখনও কোনো সাম্প্রতিক অনুসন্ধান নেই।';
+
+  @override
+  String get clearRecent => 'সাম্প্রতিক মুছুন';
+
+  @override
+  String get greeting => 'আজ কোন শেয়ারটি দেখবেন?';
+
+  @override
+  String get searchHint => 'টিকার বা কোম্পানির নাম';
+
+  @override
+  String get attachImage => 'ছবি যুক্ত করুন';
+
+  @override
+  String get searchResultsTitle => 'অনুসন্ধানের ফলাফল';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query”-এর জন্য কোনো শেয়ার পাওয়া যায়নি।';
+  }
+
+  @override
+  String get quickBarHint => 'টিকার বা কোম্পানির নাম লিখুন…';
+
+  @override
+  String get openFullWindow => 'উইন্ডো খুলুন';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'যেকোনো জায়গা থেকে Reszveny খুলতে $shortcut চাপুন।';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny খুলুন';
+
+  @override
+  String get trayQuickSearch => 'দ্রুত অনুসন্ধান';
+
+  @override
+  String get trayQuit => 'প্রস্থান';
+
+  @override
+  String get appearance => 'চেহারা';
+
+  @override
+  String get themeSystem => 'সিস্টেম';
+
+  @override
+  String get themeDark => 'ডার্ক';
+
+  @override
+  String get themeLight => 'লাইট';
+
+  @override
+  String get back => 'ফিরে যান';
 }

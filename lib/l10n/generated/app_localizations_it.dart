@@ -407,4 +407,68 @@ class AppLocalizationsIt extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Si è verificato un errore: $detail';
   }
+
+  @override
+  String get newSearch => 'Nuova ricerca';
+
+  @override
+  String get recentSearches => 'Recenti';
+
+  @override
+  String get noRecentSearches => 'Ancora nessuna ricerca recente.';
+
+  @override
+  String get clearRecent => 'Cancella recenti';
+
+  @override
+  String get greeting => 'Quale azione guardiamo?';
+
+  @override
+  String get searchHint => 'Ticker o nome dell’azienda';
+
+  @override
+  String get attachImage => 'Allega un’immagine';
+
+  @override
+  String get searchResultsTitle => 'Risultati della ricerca';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nessuna azione trovata per “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Digita un ticker o il nome di un’azienda…';
+
+  @override
+  String get openFullWindow => 'Apri finestra';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Premi $shortcut ovunque per aprire Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Apri Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Ricerca rapida';
+
+  @override
+  String get trayQuit => 'Esci';
+
+  @override
+  String get appearance => 'Aspetto';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Scuro';
+
+  @override
+  String get themeLight => 'Chiaro';
+
+  @override
+  String get back => 'Indietro';
 }

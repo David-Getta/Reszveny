@@ -8,6 +8,8 @@ import '../../core/models/stock_details.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../../theme/app_theme.dart';
+import '../../widgets/desktop_chrome.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/section_card.dart';
@@ -45,7 +47,11 @@ class _StockDetailPageState extends State<StockDetailPage> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(widget.candidate.symbol)),
+      appBar: desktopAppBar(
+        context,
+        title: Text(widget.candidate.symbol),
+        hasSidebar: MediaQuery.sizeOf(context).width >= 860,
+      ),
       body: FutureBuilder<StockDetails>(
         future: _future,
         builder: (context, snapshot) {
@@ -94,6 +100,7 @@ class _DetailsBody extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final theme = Theme.of(context);
+    final palette = AppPalette.of(context);
     final d = details;
     final q = d.quote;
     final p = d.profile;
@@ -142,7 +149,7 @@ class _DetailsBody extends StatelessWidget {
                   Text(
                     '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
                     style: theme.textTheme.bodyMedium?.copyWith(
-                      color: q.isUp ? Colors.green.shade700 : theme.colorScheme.error,
+                      color: q.isUp ? palette.positive : palette.negative,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -407,12 +414,13 @@ class _ConsensusView extends StatelessWidget {
       Rating.strongSell => l10n.ratingStrongSell,
       null => l10n.notAvailable,
     };
+    final palette = AppPalette.of(context);
     final bars = [
-      (l10n.ratingStrongBuy, c.strongBuy, Colors.green.shade800),
-      (l10n.ratingBuy, c.buy, Colors.green.shade500),
-      (l10n.ratingHold, c.hold, Colors.amber.shade700),
-      (l10n.ratingSell, c.sell, Colors.orange.shade800),
-      (l10n.ratingStrongSell, c.strongSell, Colors.red.shade700),
+      (l10n.ratingStrongBuy, c.strongBuy, palette.positive),
+      (l10n.ratingBuy, c.buy, palette.positive.withValues(alpha: 0.65)),
+      (l10n.ratingHold, c.hold, palette.accent),
+      (l10n.ratingSell, c.sell, palette.negative.withValues(alpha: 0.65)),
+      (l10n.ratingStrongSell, c.strongSell, palette.negative),
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

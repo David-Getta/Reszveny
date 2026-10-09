@@ -406,4 +406,68 @@ class AppLocalizationsDa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Noget gik galt: $detail';
   }
+
+  @override
+  String get newSearch => 'Ny søgning';
+
+  @override
+  String get recentSearches => 'Seneste';
+
+  @override
+  String get noRecentSearches => 'Ingen seneste søgninger endnu.';
+
+  @override
+  String get clearRecent => 'Ryd seneste';
+
+  @override
+  String get greeting => 'Hvilken aktie skal vi se på?';
+
+  @override
+  String get searchHint => 'Ticker eller firmanavn';
+
+  @override
+  String get attachImage => 'Vedhæft et billede';
+
+  @override
+  String get searchResultsTitle => 'Søgeresultater';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ingen aktier fundet for ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Skriv en ticker eller et firmanavn…';
+
+  @override
+  String get openFullWindow => 'Åbn vindue';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tryk på $shortcut hvor som helst for at åbne Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Åbn Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Hurtig søgning';
+
+  @override
+  String get trayQuit => 'Afslut';
+
+  @override
+  String get appearance => 'Udseende';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Mørk';
+
+  @override
+  String get themeLight => 'Lys';
+
+  @override
+  String get back => 'Tilbage';
 }

@@ -408,4 +408,68 @@ class AppLocalizationsSq extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Ndodhi një gabim: $detail';
   }
+
+  @override
+  String get newSearch => 'Kërkim i ri';
+
+  @override
+  String get recentSearches => 'Të fundit';
+
+  @override
+  String get noRecentSearches => 'Ende nuk ka kërkime të fundit.';
+
+  @override
+  String get clearRecent => 'Fshi të fundit';
+
+  @override
+  String get greeting => 'Cilin aksion të shohim?';
+
+  @override
+  String get searchHint => 'Simboli ose emri i kompanisë';
+
+  @override
+  String get attachImage => 'Bashkëngjit një imazh';
+
+  @override
+  String get searchResultsTitle => 'Rezultatet e kërkimit';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nuk u gjet asnjë aksion për „$query“.';
+  }
+
+  @override
+  String get quickBarHint => 'Shkruaj një simbol ose emrin e kompanisë…';
+
+  @override
+  String get openFullWindow => 'Hap dritaren';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Shtypni $shortcut kudo për të hapur Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Hap Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Kërkim i shpejtë';
+
+  @override
+  String get trayQuit => 'Dil';
+
+  @override
+  String get appearance => 'Pamja';
+
+  @override
+  String get themeSystem => 'Sistemi';
+
+  @override
+  String get themeDark => 'E errët';
+
+  @override
+  String get themeLight => 'E çelët';
+
+  @override
+  String get back => 'Prapa';
 }

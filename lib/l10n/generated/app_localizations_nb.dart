@@ -406,4 +406,68 @@ class AppLocalizationsNb extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Noe gikk galt: $detail';
   }
+
+  @override
+  String get newSearch => 'Nytt søk';
+
+  @override
+  String get recentSearches => 'Nylige';
+
+  @override
+  String get noRecentSearches => 'Ingen nylige søk enda.';
+
+  @override
+  String get clearRecent => 'Tøm nylige';
+
+  @override
+  String get greeting => 'Hvilken aksje skal vi se på?';
+
+  @override
+  String get searchHint => 'Ticker eller firmanavn';
+
+  @override
+  String get attachImage => 'Legg ved et bilde';
+
+  @override
+  String get searchResultsTitle => 'Søkeresultater';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ingen aksjer funnet for «$query».';
+  }
+
+  @override
+  String get quickBarHint => 'Skriv inn en ticker eller et firmanavn…';
+
+  @override
+  String get openFullWindow => 'Åpne vindu';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Trykk $shortcut hvor som helst for å åpne Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Åpne Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Hurtigsøk';
+
+  @override
+  String get trayQuit => 'Avslutt';
+
+  @override
+  String get appearance => 'Utseende';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Mørk';
+
+  @override
+  String get themeLight => 'Lys';
+
+  @override
+  String get back => 'Tilbake';
 }

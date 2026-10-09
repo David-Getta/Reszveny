@@ -406,4 +406,68 @@ class AppLocalizationsSw extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Hitilafu imetokea: $detail';
   }
+
+  @override
+  String get newSearch => 'Utafutaji mpya';
+
+  @override
+  String get recentSearches => 'Hivi karibuni';
+
+  @override
+  String get noRecentSearches => 'Bado hakuna utafutaji wa hivi karibuni.';
+
+  @override
+  String get clearRecent => 'Futa za hivi karibuni';
+
+  @override
+  String get greeting => 'Tuangalie hisa gani?';
+
+  @override
+  String get searchHint => 'Ticker au jina la kampuni';
+
+  @override
+  String get attachImage => 'Ambatisha picha';
+
+  @override
+  String get searchResultsTitle => 'Matokeo ya utafutaji';
+
+  @override
+  String errNoResults(String query) {
+    return 'Hakuna hisa zilizopatikana kwa “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Andika ticker au jina la kampuni…';
+
+  @override
+  String get openFullWindow => 'Fungua dirisha';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Bonyeza $shortcut mahali popote kuita Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Fungua Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Utafutaji wa haraka';
+
+  @override
+  String get trayQuit => 'Ondoka';
+
+  @override
+  String get appearance => 'Mwonekano';
+
+  @override
+  String get themeSystem => 'Mfumo';
+
+  @override
+  String get themeDark => 'Giza';
+
+  @override
+  String get themeLight => 'Mwanga';
+
+  @override
+  String get back => 'Rudi';
 }

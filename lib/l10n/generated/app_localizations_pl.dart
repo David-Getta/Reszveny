@@ -410,4 +410,68 @@ class AppLocalizationsPl extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Coś poszło nie tak: $detail';
   }
+
+  @override
+  String get newSearch => 'Nowe wyszukiwanie';
+
+  @override
+  String get recentSearches => 'Ostatnie';
+
+  @override
+  String get noRecentSearches => 'Brak ostatnich wyszukiwań.';
+
+  @override
+  String get clearRecent => 'Wyczyść ostatnie';
+
+  @override
+  String get greeting => 'Którą akcję sprawdzimy?';
+
+  @override
+  String get searchHint => 'Ticker lub nazwa spółki';
+
+  @override
+  String get attachImage => 'Załącz obraz';
+
+  @override
+  String get searchResultsTitle => 'Wyniki wyszukiwania';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nie znaleziono akcji dla „$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Wpisz ticker lub nazwę spółki…';
+
+  @override
+  String get openFullWindow => 'Otwórz okno';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Naciśnij $shortcut w dowolnym miejscu, aby przywołać Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Otwórz Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Szybkie wyszukiwanie';
+
+  @override
+  String get trayQuit => 'Zakończ';
+
+  @override
+  String get appearance => 'Wygląd';
+
+  @override
+  String get themeSystem => 'Systemowy';
+
+  @override
+  String get themeDark => 'Ciemny';
+
+  @override
+  String get themeLight => 'Jasny';
+
+  @override
+  String get back => 'Wstecz';
 }

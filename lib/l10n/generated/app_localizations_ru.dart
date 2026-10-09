@@ -409,4 +409,68 @@ class AppLocalizationsRu extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Что-то пошло не так: $detail';
   }
+
+  @override
+  String get newSearch => 'Новый поиск';
+
+  @override
+  String get recentSearches => 'Недавние';
+
+  @override
+  String get noRecentSearches => 'Недавних запросов пока нет.';
+
+  @override
+  String get clearRecent => 'Очистить недавние';
+
+  @override
+  String get greeting => 'Какую акцию посмотрим?';
+
+  @override
+  String get searchHint => 'Тикер или название компании';
+
+  @override
+  String get attachImage => 'Прикрепить изображение';
+
+  @override
+  String get searchResultsTitle => 'Результаты поиска';
+
+  @override
+  String errNoResults(String query) {
+    return 'По запросу «$query» акции не найдены.';
+  }
+
+  @override
+  String get quickBarHint => 'Введите тикер или название компании…';
+
+  @override
+  String get openFullWindow => 'Открыть окно';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Нажмите $shortcut в любом месте, чтобы вызвать Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Открыть Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Быстрый поиск';
+
+  @override
+  String get trayQuit => 'Выйти';
+
+  @override
+  String get appearance => 'Внешний вид';
+
+  @override
+  String get themeSystem => 'Системная';
+
+  @override
+  String get themeDark => 'Тёмная';
+
+  @override
+  String get themeLight => 'Светлая';
+
+  @override
+  String get back => 'Назад';
 }

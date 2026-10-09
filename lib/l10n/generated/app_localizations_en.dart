@@ -407,4 +407,68 @@ class AppLocalizationsEn extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Something went wrong: $detail';
   }
+
+  @override
+  String get newSearch => 'New search';
+
+  @override
+  String get recentSearches => 'Recent';
+
+  @override
+  String get noRecentSearches => 'No recent searches yet.';
+
+  @override
+  String get clearRecent => 'Clear recent';
+
+  @override
+  String get greeting => 'Which stock shall we look at?';
+
+  @override
+  String get searchHint => 'Ticker or company name';
+
+  @override
+  String get attachImage => 'Attach an image';
+
+  @override
+  String get searchResultsTitle => 'Search results';
+
+  @override
+  String errNoResults(String query) {
+    return 'No stocks found for “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Type a ticker or company name…';
+
+  @override
+  String get openFullWindow => 'Open window';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Press $shortcut anywhere to summon Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Open Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Quick search';
+
+  @override
+  String get trayQuit => 'Quit';
+
+  @override
+  String get appearance => 'Appearance';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Dark';
+
+  @override
+  String get themeLight => 'Light';
+
+  @override
+  String get back => 'Back';
 }

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
+import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
@@ -23,6 +25,8 @@ AppServices services({Locale? locale}) => AppServices(
   recognizer: _NoRecognizer(),
   marketData: DemoMarketDataProvider(latency: Duration.zero),
   locale: LocaleController(initial: locale),
+  preferences: AppPreferences(),
+  desktop: DesktopIntegration(),
 );
 
 void main() {
@@ -30,13 +34,11 @@ void main() {
     await tester.pumpWidget(ReszvenyApp(services: services()));
     await tester.pumpAndSettle();
 
-    expect(find.text('Photograph a stock and learn everything about it.'), findsOneWidget);
+    expect(find.text('Which stock shall we look at?'), findsOneWidget);
     expect(find.textContaining('Demo mode'), findsOneWidget);
 
-    await tester.ensureVisible(find.byType(TextField));
     await tester.enterText(find.byType(TextField), 'aapl');
-    await tester.ensureVisible(find.text('Look up'));
-    await tester.tap(find.text('Look up'));
+    await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
 
     expect(find.text('Apple Inc.'), findsOneWidget);
@@ -47,10 +49,35 @@ void main() {
     }
   });
 
+  testWidgets('company name search lists matches and opens the chosen one', (tester) async {
+    await tester.pumpWidget(ReszvenyApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'micro');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    // Egyetlen találat → közvetlenül a részletek nyílnak meg.
+    expect(find.text('Microsoft Corporation'), findsOneWidget);
+    expect(find.text('Price'), findsOneWidget);
+  });
+
+  testWidgets('recent searches appear in the sidebar on wide screens', (tester) async {
+    tester.view.physicalSize = const Size(1400, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(ReszvenyApp(services: services()));
+    await tester.pumpAndSettle();
+    expect(find.text('New search'), findsOneWidget);
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    expect(find.text('NVIDIA Corporation'), findsOneWidget);
+    expect(find.widgetWithText(InkWell, 'NVDA'), findsWidgets);
+  });
+
   testWidgets('hungarian locale renders translated strings', (tester) async {
     await tester.pumpWidget(ReszvenyApp(services: services(locale: const Locale('hu'))));
     await tester.pumpAndSettle();
-    expect(find.text('Photograph a stock and learn everything about it.'), findsNothing);
+    expect(find.text('Which stock shall we look at?'), findsNothing);
     expect(find.byType(TextField), findsOneWidget);
   });
 

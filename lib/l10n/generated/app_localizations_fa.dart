@@ -405,4 +405,68 @@ class AppLocalizationsFa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'مشکلی پیش آمد: $detail';
   }
+
+  @override
+  String get newSearch => 'جستجوی جدید';
+
+  @override
+  String get recentSearches => 'اخیر';
+
+  @override
+  String get noRecentSearches => 'هنوز جستجوی اخیری وجود ندارد.';
+
+  @override
+  String get clearRecent => 'پاک کردن موارد اخیر';
+
+  @override
+  String get greeting => 'کدام سهم را بررسی کنیم؟';
+
+  @override
+  String get searchHint => 'نماد یا نام شرکت';
+
+  @override
+  String get attachImage => 'پیوست تصویر';
+
+  @override
+  String get searchResultsTitle => 'نتایج جستجو';
+
+  @override
+  String errNoResults(String query) {
+    return 'سهمی برای «$query» پیدا نشد.';
+  }
+
+  @override
+  String get quickBarHint => 'نماد یا نام شرکت را وارد کنید…';
+
+  @override
+  String get openFullWindow => 'باز کردن پنجره';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'برای فراخوانی Reszveny، در هر جایی $shortcut را فشار دهید.';
+  }
+
+  @override
+  String get trayOpen => 'باز کردن Reszveny';
+
+  @override
+  String get trayQuickSearch => 'جستجوی سریع';
+
+  @override
+  String get trayQuit => 'خروج';
+
+  @override
+  String get appearance => 'ظاهر';
+
+  @override
+  String get themeSystem => 'سیستم';
+
+  @override
+  String get themeDark => 'تیره';
+
+  @override
+  String get themeLight => 'روشن';
+
+  @override
+  String get back => 'بازگشت';
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 
+import 'core/app_preferences.dart';
 import 'core/config/app_config.dart';
+import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
 import 'features/capture/capture_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
@@ -18,15 +20,24 @@ class AppServices {
     required this.recognizer,
     required this.marketData,
     required this.locale,
+    required this.preferences,
+    required this.desktop,
   });
 
-  factory AppServices.fromConfig(AppConfig config, LocaleController locale) {
+  factory AppServices.fromConfig(
+    AppConfig config, {
+    required LocaleController locale,
+    required AppPreferences preferences,
+    DesktopIntegration? desktop,
+  }) {
     return AppServices(
       config: config,
       capture: CaptureService(),
       recognizer: ClaudeVisionRecognizer(config: config),
       marketData: config.hasFinnhubKey ? FinnhubMarketDataProvider(config: config) : DemoMarketDataProvider(),
       locale: locale,
+      preferences: preferences,
+      desktop: desktop ?? DesktopIntegration(),
     );
   }
 
@@ -35,6 +46,8 @@ class AppServices {
   final StockRecognizer recognizer;
   final MarketDataProvider marketData;
   final LocaleController locale;
+  final AppPreferences preferences;
+  final DesktopIntegration desktop;
 
   static AppServices of(BuildContext context) {
     final scope = context.dependOnInheritedWidgetOfExactType<AppServicesScope>();

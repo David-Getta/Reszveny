@@ -11,7 +11,13 @@
   "tickerInputHint": "e.g. AAPL",
   "lookUp": "Look up",
   "demoModeBanner": "Demo mode – no market data key configured. Sample data is available for: {symbols}.",
-  "@demoModeBanner": {"placeholders": {"symbols": {"type": "String"}}},
+  "@demoModeBanner": {
+    "placeholders": {
+      "symbols": {
+        "type": "String"
+      }
+    }
+  },
   "recognizing": "Analysing the image…",
   "loadingData": "Loading data…",
   "noCandidatesTitle": "No stock recognised",
@@ -19,16 +25,34 @@
   "whatWeSaw": "What we saw",
   "chooseCandidateTitle": "Which stock did you mean?",
   "confidencePercent": "{percent}% confidence",
-  "@confidencePercent": {"placeholders": {"percent": {"type": "int"}}},
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
   "settings": "Settings",
   "language": "Language",
   "systemLanguage": "System default",
   "about": "About",
   "disclaimer": "This app provides information only and is not investment advice. Data may be delayed or inaccurate.",
   "dataSource": "Data source: {source}",
-  "@dataSource": {"placeholders": {"source": {"type": "String"}}},
+  "@dataSource": {
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
   "recognizerSource": "Recognition: {source}",
-  "@recognizerSource": {"placeholders": {"source": {"type": "String"}}},
+  "@recognizerSource": {
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
   "retry": "Retry",
   "cancel": "Cancel",
   "ok": "OK",
@@ -70,7 +94,13 @@
   "labelWeek52Low": "52-week low",
   "labelAverageVolume10d": "Avg. volume (10 days)",
   "updatedAt": "Updated {time}",
-  "@updatedAt": {"placeholders": {"time": {"type": "String"}}},
+  "@updatedAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
   "labelPeTrailing": "P/E (trailing)",
   "labelPeForward": "P/E (forward)",
   "labelPb": "P/B",
@@ -100,9 +130,21 @@
   "ratingSell": "Sell",
   "ratingStrongSell": "Strong sell",
   "analystCount": "{count, plural, =1{1 analyst} other{{count} analysts}}",
-  "@analystCount": {"placeholders": {"count": {"type": "int"}}},
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "analystPeriod": "Period: {period}",
-  "@analystPeriod": {"placeholders": {"period": {"type": "String"}}},
+  "@analystPeriod": {
+    "placeholders": {
+      "period": {
+        "type": "String"
+      }
+    }
+  },
   "noNews": "No recent news.",
   "openArticle": "Open article",
   "openLinkFailed": "Could not open the link.",
@@ -112,7 +154,13 @@
   "errMissingAnthropicKey": "Image recognition is not configured (no ANTHROPIC_API_KEY). Enter the ticker manually.",
   "errRecognitionUnreachable": "Could not reach the recognition service. Check your internet connection.",
   "errRecognitionHttp": "The recognition service returned an error (HTTP {status}).",
-  "@errRecognitionHttp": {"placeholders": {"status": {"type": "String"}}},
+  "@errRecognitionHttp": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
   "errRecognitionRefused": "The recognition service could not process this image.",
   "errRecognitionTruncated": "The recognition response was cut off. Please try again.",
   "errRecognitionBadResponse": "Unexpected response from the recognition service.",
@@ -121,14 +169,78 @@
   "errMarketUnreachable": "Could not reach the market data service. Check your internet connection.",
   "errMarketRateLimited": "Too many requests to the market data service. Please wait a minute.",
   "errMarketHttp": "The market data service returned an error (HTTP {status}).",
-  "@errMarketHttp": {"placeholders": {"status": {"type": "String"}}},
+  "@errMarketHttp": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
   "errMarketBadResponse": "Unexpected response from the market data service.",
   "errNoQuote": "No price data found for {symbol}.",
-  "@errNoQuote": {"placeholders": {"symbol": {"type": "String"}}},
+  "@errNoQuote": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
   "errNoProfile": "No company profile found for {symbol}.",
-  "@errNoProfile": {"placeholders": {"symbol": {"type": "String"}}},
+  "@errNoProfile": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
   "errDemoUnsupportedSymbol": "Demo mode only supports {symbols}. Add a FINNHUB_API_KEY for live data.",
-  "@errDemoUnsupportedSymbol": {"placeholders": {"symbols": {"type": "String"}}},
+  "@errDemoUnsupportedSymbol": {
+    "placeholders": {
+      "symbols": {
+        "type": "String"
+      }
+    }
+  },
   "errUnknown": "Something went wrong: {detail}",
-  "@errUnknown": {"placeholders": {"detail": {"type": "String"}}}
+  "@errUnknown": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "newSearch": "New search",
+  "recentSearches": "Recent",
+  "noRecentSearches": "No recent searches yet.",
+  "clearRecent": "Clear recent",
+  "greeting": "Which stock shall we look at?",
+  "searchHint": "Ticker or company name",
+  "attachImage": "Attach an image",
+  "searchResultsTitle": "Search results",
+  "errNoResults": "No stocks found for “{query}”.",
+  "@errNoResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "quickBarHint": "Type a ticker or company name…",
+  "openFullWindow": "Open window",
+  "hotkeyHint": "Press {shortcut} anywhere to summon Reszveny.",
+  "@hotkeyHint": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  },
+  "trayOpen": "Open Reszveny",
+  "trayQuickSearch": "Quick search",
+  "trayQuit": "Quit",
+  "appearance": "Appearance",
+  "themeSystem": "System",
+  "themeDark": "Dark",
+  "themeLight": "Light",
+  "back": "Back"
 }

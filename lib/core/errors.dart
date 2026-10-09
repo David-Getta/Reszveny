@@ -16,6 +16,7 @@ enum AppErrorCode {
   noQuote,
   noProfile,
   demoUnsupportedSymbol,
+  noResults,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés

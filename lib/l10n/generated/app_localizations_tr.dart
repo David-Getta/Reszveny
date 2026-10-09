@@ -406,4 +406,68 @@ class AppLocalizationsTr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Bir şeyler yanlış gitti: $detail';
   }
+
+  @override
+  String get newSearch => 'Yeni arama';
+
+  @override
+  String get recentSearches => 'Son aramalar';
+
+  @override
+  String get noRecentSearches => 'Henüz son arama yok.';
+
+  @override
+  String get clearRecent => 'Son aramaları temizle';
+
+  @override
+  String get greeting => 'Hangi hisseye bakalım?';
+
+  @override
+  String get searchHint => 'Sembol veya şirket adı';
+
+  @override
+  String get attachImage => 'Görsel ekle';
+
+  @override
+  String get searchResultsTitle => 'Arama sonuçları';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” için hisse bulunamadı.';
+  }
+
+  @override
+  String get quickBarHint => 'Bir sembol veya şirket adı yazın…';
+
+  @override
+  String get openFullWindow => 'Pencereyi aç';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Reszveny\'yi çağırmak için herhangi bir yerde $shortcut tuşlarına basın.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny\'yi aç';
+
+  @override
+  String get trayQuickSearch => 'Hızlı arama';
+
+  @override
+  String get trayQuit => 'Çıkış';
+
+  @override
+  String get appearance => 'Görünüm';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Koyu';
+
+  @override
+  String get themeLight => 'Açık';
+
+  @override
+  String get back => 'Geri';
 }

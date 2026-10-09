@@ -409,4 +409,68 @@ class AppLocalizationsSk extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Niečo sa pokazilo: $detail';
   }
+
+  @override
+  String get newSearch => 'Nové vyhľadávanie';
+
+  @override
+  String get recentSearches => 'Nedávne';
+
+  @override
+  String get noRecentSearches => 'Zatiaľ žiadne nedávne vyhľadávania.';
+
+  @override
+  String get clearRecent => 'Vymazať nedávne';
+
+  @override
+  String get greeting => 'Na ktorú akciu sa pozrieme?';
+
+  @override
+  String get searchHint => 'Ticker alebo názov spoločnosti';
+
+  @override
+  String get attachImage => 'Priložiť obrázok';
+
+  @override
+  String get searchResultsTitle => 'Výsledky vyhľadávania';
+
+  @override
+  String errNoResults(String query) {
+    return 'Pre „$query“ sa nenašli žiadne akcie.';
+  }
+
+  @override
+  String get quickBarHint => 'Zadajte ticker alebo názov spoločnosti…';
+
+  @override
+  String get openFullWindow => 'Otvoriť okno';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Stlačte $shortcut kdekoľvek a vyvolajte Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Otvoriť Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Rýchle vyhľadávanie';
+
+  @override
+  String get trayQuit => 'Ukončiť';
+
+  @override
+  String get appearance => 'Vzhľad';
+
+  @override
+  String get themeSystem => 'Systémový';
+
+  @override
+  String get themeDark => 'Tmavý';
+
+  @override
+  String get themeLight => 'Svetlý';
+
+  @override
+  String get back => 'Späť';
 }

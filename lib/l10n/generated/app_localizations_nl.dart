@@ -407,4 +407,68 @@ class AppLocalizationsNl extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Er is iets misgegaan: $detail';
   }
+
+  @override
+  String get newSearch => 'Nieuwe zoekopdracht';
+
+  @override
+  String get recentSearches => 'Recent';
+
+  @override
+  String get noRecentSearches => 'Nog geen recente zoekopdrachten.';
+
+  @override
+  String get clearRecent => 'Recente wissen';
+
+  @override
+  String get greeting => 'Welk aandeel bekijken we?';
+
+  @override
+  String get searchHint => 'Ticker of bedrijfsnaam';
+
+  @override
+  String get attachImage => 'Afbeelding bijvoegen';
+
+  @override
+  String get searchResultsTitle => 'Zoekresultaten';
+
+  @override
+  String errNoResults(String query) {
+    return 'Geen aandelen gevonden voor “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Typ een ticker of bedrijfsnaam…';
+
+  @override
+  String get openFullWindow => 'Venster openen';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Druk waar dan ook op $shortcut om Reszveny te openen.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny openen';
+
+  @override
+  String get trayQuickSearch => 'Snel zoeken';
+
+  @override
+  String get trayQuit => 'Afsluiten';
+
+  @override
+  String get appearance => 'Weergave';
+
+  @override
+  String get themeSystem => 'Systeem';
+
+  @override
+  String get themeDark => 'Donker';
+
+  @override
+  String get themeLight => 'Licht';
+
+  @override
+  String get back => 'Terug';
 }

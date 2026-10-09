@@ -398,4 +398,68 @@ class AppLocalizationsJa extends AppLocalizations {
   String errUnknown(String detail) {
     return '問題が発生しました：$detail';
   }
+
+  @override
+  String get newSearch => '新しい検索';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '最近の検索はまだありません。';
+
+  @override
+  String get clearRecent => '履歴を消去';
+
+  @override
+  String get greeting => 'どの銘柄を見てみましょうか？';
+
+  @override
+  String get searchHint => 'ティッカーまたは会社名';
+
+  @override
+  String get attachImage => '画像を添付';
+
+  @override
+  String get searchResultsTitle => '検索結果';
+
+  @override
+  String errNoResults(String query) {
+    return '「$query」に該当する銘柄は見つかりませんでした。';
+  }
+
+  @override
+  String get quickBarHint => 'ティッカーまたは会社名を入力…';
+
+  @override
+  String get openFullWindow => 'ウィンドウを開く';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'どこからでも $shortcut を押すと Reszveny を呼び出せます。';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny を開く';
+
+  @override
+  String get trayQuickSearch => 'クイック検索';
+
+  @override
+  String get trayQuit => '終了';
+
+  @override
+  String get appearance => '外観';
+
+  @override
+  String get themeSystem => 'システム';
+
+  @override
+  String get themeDark => 'ダーク';
+
+  @override
+  String get themeLight => 'ライト';
+
+  @override
+  String get back => '戻る';
 }

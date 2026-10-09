@@ -408,4 +408,68 @@ class AppLocalizationsFil extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Nagkaproblema: $detail';
   }
+
+  @override
+  String get newSearch => 'Bagong paghahanap';
+
+  @override
+  String get recentSearches => 'Kamakailan';
+
+  @override
+  String get noRecentSearches => 'Wala pang kamakailang paghahanap.';
+
+  @override
+  String get clearRecent => 'I-clear ang kamakailan';
+
+  @override
+  String get greeting => 'Aling stock ang titingnan natin?';
+
+  @override
+  String get searchHint => 'Ticker o pangalan ng kumpanya';
+
+  @override
+  String get attachImage => 'Maglakip ng larawan';
+
+  @override
+  String get searchResultsTitle => 'Mga resulta ng paghahanap';
+
+  @override
+  String errNoResults(String query) {
+    return 'Walang nahanap na stock para sa “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Mag-type ng ticker o pangalan ng kumpanya…';
+
+  @override
+  String get openFullWindow => 'Buksan ang window';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Pindutin ang $shortcut kahit saan para tawagin ang Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Buksan ang Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Mabilisang paghahanap';
+
+  @override
+  String get trayQuit => 'Umalis';
+
+  @override
+  String get appearance => 'Hitsura';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Madilim';
+
+  @override
+  String get themeLight => 'Maliwanag';
+
+  @override
+  String get back => 'Bumalik';
 }

@@ -407,4 +407,68 @@ class AppLocalizationsTa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'ஏதோ தவறு நேர்ந்தது: $detail';
   }
+
+  @override
+  String get newSearch => 'புதிய தேடல்';
+
+  @override
+  String get recentSearches => 'சமீபத்தியவை';
+
+  @override
+  String get noRecentSearches => 'சமீபத்திய தேடல்கள் இன்னும் இல்லை.';
+
+  @override
+  String get clearRecent => 'சமீபத்தியவற்றை அழி';
+
+  @override
+  String get greeting => 'இன்று எந்தப் பங்கைப் பார்க்கலாம்?';
+
+  @override
+  String get searchHint => 'டிக்கர் அல்லது நிறுவனப் பெயர்';
+
+  @override
+  String get attachImage => 'படத்தை இணைக்க';
+
+  @override
+  String get searchResultsTitle => 'தேடல் முடிவுகள்';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” க்கான பங்குகள் எதுவும் கிடைக்கவில்லை.';
+  }
+
+  @override
+  String get quickBarHint => 'டிக்கர் அல்லது நிறுவனப் பெயரை உள்ளிடுக…';
+
+  @override
+  String get openFullWindow => 'சாளரத்தைத் திற';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'எங்கிருந்தும் Reszveny ஐ அழைக்க $shortcut ஐ அழுத்துங்கள்.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny ஐ திற';
+
+  @override
+  String get trayQuickSearch => 'விரைவு தேடல்';
+
+  @override
+  String get trayQuit => 'வெளியேறு';
+
+  @override
+  String get appearance => 'தோற்றம்';
+
+  @override
+  String get themeSystem => 'கணினி';
+
+  @override
+  String get themeDark => 'இருண்ட';
+
+  @override
+  String get themeLight => 'வெளிர்';
+
+  @override
+  String get back => 'பின்';
 }

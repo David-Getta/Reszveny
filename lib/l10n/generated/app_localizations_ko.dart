@@ -398,4 +398,68 @@ class AppLocalizationsKo extends AppLocalizations {
   String errUnknown(String detail) {
     return '문제가 발생했습니다: $detail';
   }
+
+  @override
+  String get newSearch => '새 검색';
+
+  @override
+  String get recentSearches => '최근';
+
+  @override
+  String get noRecentSearches => '아직 최근 검색이 없습니다.';
+
+  @override
+  String get clearRecent => '최근 기록 지우기';
+
+  @override
+  String get greeting => '어떤 종목을 살펴볼까요?';
+
+  @override
+  String get searchHint => '티커 또는 회사명';
+
+  @override
+  String get attachImage => '이미지 첨부';
+
+  @override
+  String get searchResultsTitle => '검색 결과';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query”에 해당하는 종목을 찾을 수 없습니다.';
+  }
+
+  @override
+  String get quickBarHint => '티커 또는 회사명을 입력하세요…';
+
+  @override
+  String get openFullWindow => '창 열기';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return '어디서든 $shortcut 키를 눌러 Reszveny를 불러오세요.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny 열기';
+
+  @override
+  String get trayQuickSearch => '빠른 검색';
+
+  @override
+  String get trayQuit => '종료';
+
+  @override
+  String get appearance => '모양';
+
+  @override
+  String get themeSystem => '시스템';
+
+  @override
+  String get themeDark => '다크';
+
+  @override
+  String get themeLight => '라이트';
+
+  @override
+  String get back => '뒤로';
 }

@@ -407,4 +407,68 @@ class AppLocalizationsFi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Jokin meni vikaan: $detail';
   }
+
+  @override
+  String get newSearch => 'Uusi haku';
+
+  @override
+  String get recentSearches => 'Viimeisimmät';
+
+  @override
+  String get noRecentSearches => 'Ei viimeaikaisia hakuja.';
+
+  @override
+  String get clearRecent => 'Tyhjennä viimeisimmät';
+
+  @override
+  String get greeting => 'Mitä osaketta tarkastellaan?';
+
+  @override
+  String get searchHint => 'Tunnus tai yrityksen nimi';
+
+  @override
+  String get attachImage => 'Liitä kuva';
+
+  @override
+  String get searchResultsTitle => 'Hakutulokset';
+
+  @override
+  String errNoResults(String query) {
+    return 'Osakkeita ei löytynyt haulla ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Kirjoita tunnus tai yrityksen nimi…';
+
+  @override
+  String get openFullWindow => 'Avaa ikkuna';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Paina $shortcut missä tahansa, niin Reszveny avautuu.';
+  }
+
+  @override
+  String get trayOpen => 'Avaa Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Pikahaku';
+
+  @override
+  String get trayQuit => 'Lopeta';
+
+  @override
+  String get appearance => 'Ulkoasu';
+
+  @override
+  String get themeSystem => 'Järjestelmä';
+
+  @override
+  String get themeDark => 'Tumma';
+
+  @override
+  String get themeLight => 'Vaalea';
+
+  @override
+  String get back => 'Takaisin';
 }

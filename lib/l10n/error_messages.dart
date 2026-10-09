@@ -21,5 +21,6 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.noQuote => l10n.errNoQuote(d),
     AppErrorCode.noProfile => l10n.errNoProfile(d),
     AppErrorCode.demoUnsupportedSymbol => l10n.errDemoUnsupportedSymbol(d),
+    AppErrorCode.noResults => l10n.errNoResults(d),
   };
 }

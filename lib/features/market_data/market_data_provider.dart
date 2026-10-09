@@ -3,6 +3,7 @@ import '../../core/models/company_profile.dart';
 import '../../core/models/news_item.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/models/stock_metrics.dart';
+import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
 
 /// Ticker → adatok. A konkrét adatforrás (Finnhub, demó, később saját
@@ -15,6 +16,9 @@ abstract class MarketDataProvider {
   Future<StockMetrics> metrics(String symbol);
   Future<List<NewsItem>> news(String symbol, {int limit = 20});
   Future<AnalystConsensus?> consensus(String symbol);
+
+  /// Ticker vagy cégnév keresése; a találatok megbízhatóság szerint.
+  Future<List<StockCandidate>> search(String query);
 
   /// Minden szekciót párhuzamosan tölt le; egy szekció hibája nem dönti be
   /// a többit, hanem a [StockDetails.errors] térképbe kerül.

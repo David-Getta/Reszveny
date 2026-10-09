@@ -405,4 +405,68 @@ class AppLocalizationsUr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'کچھ غلط ہو گیا: $detail';
   }
+
+  @override
+  String get newSearch => 'نئی تلاش';
+
+  @override
+  String get recentSearches => 'حالیہ';
+
+  @override
+  String get noRecentSearches => 'ابھی تک کوئی حالیہ تلاش نہیں۔';
+
+  @override
+  String get clearRecent => 'حالیہ صاف کریں';
+
+  @override
+  String get greeting => 'آج کون سا شیئر دیکھیں؟';
+
+  @override
+  String get searchHint => 'ٹکر یا کمپنی کا نام';
+
+  @override
+  String get attachImage => 'تصویر منسلک کریں';
+
+  @override
+  String get searchResultsTitle => 'تلاش کے نتائج';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” کے لیے کوئی شیئر نہیں ملا۔';
+  }
+
+  @override
+  String get quickBarHint => 'ٹکر یا کمپنی کا نام ٹائپ کریں…';
+
+  @override
+  String get openFullWindow => 'ونڈو کھولیں';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Reszveny کو کہیں سے بھی کھولنے کے لیے $shortcut دبائیں۔';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny کھولیں';
+
+  @override
+  String get trayQuickSearch => 'فوری تلاش';
+
+  @override
+  String get trayQuit => 'باہر نکلیں';
+
+  @override
+  String get appearance => 'ظاہری شکل';
+
+  @override
+  String get themeSystem => 'سسٹم';
+
+  @override
+  String get themeDark => 'ڈارک';
+
+  @override
+  String get themeLight => 'لائٹ';
+
+  @override
+  String get back => 'واپس';
 }

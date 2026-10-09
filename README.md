@@ -6,6 +6,18 @@ Egy kódbázis, öt platform: **iOS, iPadOS, macOS, Android, Windows** (Flutter)
 A felület **44 nyelven** érhető el, az alapértelmezett az angol; a részletes lista és a
 koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 
+## Kinézet és asztali élmény
+
+- **Claude-stílusú felület**: meleg, sötét alaptéma (világos is választható), oldalsáv
+  „Új keresés / Előzmények / Beállítások” menüvel, nagy üdvözlő sor és egy lekerekített
+  keresősáv (ticker vagy cégnév, kép csatolása, kamera). Apple-szerű részletek: rendszerbetű,
+  1 px-es finom szegélyek, rejtett natív címsor, húzható fejléc.
+- **Előhívás bárhonnan (macOS, Windows)**: `⌥ Space` (Windowson `Ctrl + Alt + Space`) egy
+  lebegő, mindig felül lévő gyorskereső sávot hoz elő – mint a Claude macOS-en. Enter: a
+  találat a teljes ablakban nyílik meg; Esc vagy kattintás máshova: a sáv eltűnik.
+- **Menüsor- / tálcaikon**: Megnyitás, Gyorskeresés, Kilépés.
+- **Cégnév-keresés**: nem csak ticker, cégnév is beírható („Apple”, „OTP”).
+
 ## Hogyan működik
 
 1. **Kép** – kamera vagy galéria (asztali gépen fájlválasztó).
@@ -50,18 +62,23 @@ kapja adaptív elrendezéssel.
 ```
 lib/
   main.dart, app.dart, app_services.dart   belépés, téma, nyelvkezelés, szolgáltatások
-  core/        konfiguráció, modellek, hibakódok, formázás, nyelvválasztás tárolása
+  core/        konfiguráció, modellek, hibakódok, formázás, beállítások (téma, előzmények)
+  core/desktop asztali integráció: ablak, globális gyorsbillentyű, tálcaikon
+  theme/       Claude-stílusú paletta és Material-téma
+  widgets/     húzható fejléc, asztali AppBar
   features/
     capture/       kamera + galéria (image_picker)
     recognition/   StockRecognizer interfész, Claude látás, heurisztikus ticker-kereső
     market_data/   MarketDataProvider interfész, Finnhub, demó adatok
-    home/          kezdőképernyő, jelölt-választó
+    shell/         oldalsávos keret, gyorssáv-mód váltás
+    home/          kezdőképernyő (üdvözlő sor + keresősáv), lebegő gyorssáv, jelölt-választó
     stock_detail/  részletes nézet szekciói
     settings/      nyelvválasztó, névjegy
   l10n/
     arb/           app_<nyelv>.arb – 44 nyelv, a sablon az app_en.arb
     generated/     flutter gen-l10n kimenete (verziókezelt, hogy a build ne függjön tőle)
 test/          egységtesztek (parse-olás, ticker-kereső, nyelvfeloldás, ARB-teljesség), widget-tesztek
+test/screenshots képernyőképek valódi betűkkel: flutter test --tags screenshot --dart-define=SHOTS=<mappa>
 .github/       CI: analyze + test, majd Android / Windows / iOS+macOS build
 ```
 

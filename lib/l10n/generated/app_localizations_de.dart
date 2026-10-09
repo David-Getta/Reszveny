@@ -409,4 +409,68 @@ class AppLocalizationsDe extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Etwas ist schiefgelaufen: $detail';
   }
+
+  @override
+  String get newSearch => 'Neue Suche';
+
+  @override
+  String get recentSearches => 'Zuletzt';
+
+  @override
+  String get noRecentSearches => 'Noch keine letzten Suchen.';
+
+  @override
+  String get clearRecent => 'Letzte Suchen löschen';
+
+  @override
+  String get greeting => 'Welche Aktie schauen wir uns an?';
+
+  @override
+  String get searchHint => 'Ticker oder Firmenname';
+
+  @override
+  String get attachImage => 'Bild anhängen';
+
+  @override
+  String get searchResultsTitle => 'Suchergebnisse';
+
+  @override
+  String errNoResults(String query) {
+    return 'Keine Aktien für „$query“ gefunden.';
+  }
+
+  @override
+  String get quickBarHint => 'Ticker oder Firmenname eingeben…';
+
+  @override
+  String get openFullWindow => 'Fenster öffnen';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Drücke $shortcut an beliebiger Stelle, um Reszveny aufzurufen.';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny öffnen';
+
+  @override
+  String get trayQuickSearch => 'Schnellsuche';
+
+  @override
+  String get trayQuit => 'Beenden';
+
+  @override
+  String get appearance => 'Erscheinungsbild';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Dunkel';
+
+  @override
+  String get themeLight => 'Hell';
+
+  @override
+  String get back => 'Zurück';
 }

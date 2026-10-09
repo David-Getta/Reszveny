@@ -395,6 +395,70 @@ class AppLocalizationsZh extends AppLocalizations {
   String errUnknown(String detail) {
     return '出了点问题：$detail';
   }
+
+  @override
+  String get newSearch => '新搜索';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '还没有最近的搜索。';
+
+  @override
+  String get clearRecent => '清除最近记录';
+
+  @override
+  String get greeting => '今天想看哪只股票？';
+
+  @override
+  String get searchHint => '股票代码或公司名称';
+
+  @override
+  String get attachImage => '添加图片';
+
+  @override
+  String get searchResultsTitle => '搜索结果';
+
+  @override
+  String errNoResults(String query) {
+    return '未找到与“$query”相关的股票。';
+  }
+
+  @override
+  String get quickBarHint => '输入股票代码或公司名称…';
+
+  @override
+  String get openFullWindow => '打开窗口';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return '在任意位置按 $shortcut 即可呼出 Reszveny。';
+  }
+
+  @override
+  String get trayOpen => '打开 Reszveny';
+
+  @override
+  String get trayQuickSearch => '快速搜索';
+
+  @override
+  String get trayQuit => '退出';
+
+  @override
+  String get appearance => '外观';
+
+  @override
+  String get themeSystem => '跟随系统';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get themeLight => '浅色';
+
+  @override
+  String get back => '返回';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -787,4 +851,68 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String errUnknown(String detail) {
     return '出現問題：$detail';
   }
+
+  @override
+  String get newSearch => '新搜尋';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '暫時未有最近搜尋。';
+
+  @override
+  String get clearRecent => '清除最近記錄';
+
+  @override
+  String get greeting => '今天想看哪隻股票？';
+
+  @override
+  String get searchHint => '股票代號或公司名稱';
+
+  @override
+  String get attachImage => '附加圖片';
+
+  @override
+  String get searchResultsTitle => '搜尋結果';
+
+  @override
+  String errNoResults(String query) {
+    return '找不到與「$query」相關的股票。';
+  }
+
+  @override
+  String get quickBarHint => '輸入股票代號或公司名稱…';
+
+  @override
+  String get openFullWindow => '開啟視窗';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return '在任何地方按 $shortcut 即可呼出 Reszveny。';
+  }
+
+  @override
+  String get trayOpen => '開啟 Reszveny';
+
+  @override
+  String get trayQuickSearch => '快速搜尋';
+
+  @override
+  String get trayQuit => '結束';
+
+  @override
+  String get appearance => '外觀';
+
+  @override
+  String get themeSystem => '跟隨系統';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get themeLight => '淺色';
+
+  @override
+  String get back => '返回';
 }

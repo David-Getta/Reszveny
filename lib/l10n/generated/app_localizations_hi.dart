@@ -407,4 +407,68 @@ class AppLocalizationsHi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'कुछ गलत हो गया: $detail';
   }
+
+  @override
+  String get newSearch => 'नई खोज';
+
+  @override
+  String get recentSearches => 'हाल के';
+
+  @override
+  String get noRecentSearches => 'अभी तक कोई हाल की खोज नहीं।';
+
+  @override
+  String get clearRecent => 'हाल के साफ़ करें';
+
+  @override
+  String get greeting => 'आज कौन-सा शेयर देखें?';
+
+  @override
+  String get searchHint => 'टिकर या कंपनी का नाम';
+
+  @override
+  String get attachImage => 'छवि संलग्न करें';
+
+  @override
+  String get searchResultsTitle => 'खोज परिणाम';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” के लिए कोई शेयर नहीं मिला।';
+  }
+
+  @override
+  String get quickBarHint => 'टिकर या कंपनी का नाम टाइप करें…';
+
+  @override
+  String get openFullWindow => 'विंडो खोलें';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Reszveny को कहीं से भी खोलने के लिए $shortcut दबाएँ।';
+  }
+
+  @override
+  String get trayOpen => 'Reszveny खोलें';
+
+  @override
+  String get trayQuickSearch => 'त्वरित खोज';
+
+  @override
+  String get trayQuit => 'बाहर निकलें';
+
+  @override
+  String get appearance => 'दिखावट';
+
+  @override
+  String get themeSystem => 'सिस्टम';
+
+  @override
+  String get themeDark => 'डार्क';
+
+  @override
+  String get themeLight => 'लाइट';
+
+  @override
+  String get back => 'वापस';
 }

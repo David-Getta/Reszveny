@@ -409,4 +409,68 @@ class AppLocalizationsEl extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Κάτι πήγε στραβά: $detail';
   }
+
+  @override
+  String get newSearch => 'Νέα αναζήτηση';
+
+  @override
+  String get recentSearches => 'Πρόσφατα';
+
+  @override
+  String get noRecentSearches => 'Δεν υπάρχουν πρόσφατες αναζητήσεις ακόμη.';
+
+  @override
+  String get clearRecent => 'Εκκαθάριση πρόσφατων';
+
+  @override
+  String get greeting => 'Ποια μετοχή να δούμε;';
+
+  @override
+  String get searchHint => 'Σύμβολο ή όνομα εταιρείας';
+
+  @override
+  String get attachImage => 'Επισύναψη εικόνας';
+
+  @override
+  String get searchResultsTitle => 'Αποτελέσματα αναζήτησης';
+
+  @override
+  String errNoResults(String query) {
+    return 'Δεν βρέθηκαν μετοχές για «$query».';
+  }
+
+  @override
+  String get quickBarHint => 'Πληκτρολογήστε σύμβολο ή όνομα εταιρείας…';
+
+  @override
+  String get openFullWindow => 'Άνοιγμα παραθύρου';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Πατήστε $shortcut οπουδήποτε για να εμφανιστεί το Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Άνοιγμα Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Γρήγορη αναζήτηση';
+
+  @override
+  String get trayQuit => 'Έξοδος';
+
+  @override
+  String get appearance => 'Εμφάνιση';
+
+  @override
+  String get themeSystem => 'Σύστημα';
+
+  @override
+  String get themeDark => 'Σκούρο';
+
+  @override
+  String get themeLight => 'Φωτεινό';
+
+  @override
+  String get back => 'Πίσω';
 }

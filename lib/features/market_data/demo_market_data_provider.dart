@@ -2,6 +2,7 @@ import '../../core/errors.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
 import '../../core/models/news_item.dart';
+import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_quote.dart';
 import 'market_data_provider.dart';
@@ -24,6 +25,27 @@ class DemoMarketDataProvider extends MarketDataProvider {
     if (!supportedSymbols.contains(symbol)) {
       throw MarketDataException(AppErrorCode.demoUnsupportedSymbol, detail: supportedSymbols.join(', '));
     }
+  }
+
+  @override
+  Future<List<StockCandidate>> search(String query) async {
+    await _wait();
+    final q = query.trim().toLowerCase();
+    if (q.isEmpty) return const [];
+    final names = {
+      'AAPL': 'Apple Inc.',
+      'MSFT': 'Microsoft Corporation',
+      'NVDA': 'NVIDIA Corporation',
+      'OTP': 'OTP Bank Nyrt.',
+    };
+    final out = <StockCandidate>[];
+    for (final e in names.entries) {
+      final exact = e.key.toLowerCase() == q;
+      final hit = exact || e.key.toLowerCase().startsWith(q) || e.value.toLowerCase().contains(q);
+      if (hit) out.add(StockCandidate(symbol: e.key, companyName: e.value, confidence: exact ? 1 : 0.8));
+    }
+    out.sort((a, b) => b.confidence.compareTo(a.confidence));
+    return out;
   }
 
   @override

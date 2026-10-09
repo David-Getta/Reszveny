@@ -63,7 +63,27 @@ A fordítások forrása az `lib/l10n/arb/app_en.arb` (angol sablon) és az `app_
 Egy automatikus teszt ellenőrzi, hogy minden nyelvben minden kulcs megvan, ugyanazokkal a
 helyőrzőkkel.
 
-## 4. Platformok
+## 4. Kinézet és asztali viselkedés
+
+**Claude-app stílus, Apple-érzet.** Meleg, sötét alap (#1F1E1D), narancs akcentus (#D97757),
+világos változat is. Széles képernyőn oldalsáv: „Új keresés”, „Beállítások”, „Előzmények”;
+a tartalom közepén egy nagy üdvözlő sor („Melyik részvényt nézzük meg?”) és egy lekerekített
+keresősáv, amely tickert és cégnevet is ért, bal oldalán kép csatolása és kamera gombbal.
+Keskeny képernyőn (telefon) ugyanez oldalsáv nélkül. Apple-részletek: rendszerbetű, finom
+1 px-es szegélyek, nagy lekerekítés, rejtett natív címsor, húzható fejléc, macOS-en a
+lámpáknak hagyott hely.
+
+**Előhívás bárhonnan.** macOS-en és Windowson egy globális gyorsbillentyű (`⌥ Space`, illetve
+`Ctrl + Alt + Space`) egy kompakt, lebegő keresősávot hoz elő a képernyő felső harmadában,
+minden más ablak felett – ugyanúgy, ahogy a Claude macOS-es alkalmazása. Enter a teljes
+ablakban nyitja meg a találatot, Esc vagy fókuszvesztés elrejti a sávot. A menüsorban /
+tálcán ikon áll rendelkezésre „Megnyitás / Gyorskeresés / Kilépés” menüvel.
+
+**Technika.** `window_manager` (ablak: rejtett címsor, méret, mindig felül, átlátszó háttér a
+gyorssávhoz), `hotkey_manager` (rendszerszintű gyorsbillentyű), `tray_manager` (ikon és menü).
+Mobilon ezek a részek automatikusan kimaradnak.
+
+## 5. Platformok
 
 | Platform | Megoldás |
 |---|---|
@@ -74,7 +94,7 @@ helyőrzőkkel.
 
 **Miért Flutter?** Egy kódbázisból natív módon fordul mind az öt célplatformra, van kamera- és képválasztó támogatása, és a felület minden platformon azonosan nézhet ki. (A web később opcionálisan hozzáadható.)
 
-## 5. Architektúra
+## 6. Architektúra
 
 ```
 ┌──────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌──────────────────┐
@@ -106,17 +126,18 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 
 Éles kiadásnál a kulcsokat egy saját kis backend (proxy) tartja, az app azzal beszél. A kódban a `AppConfig` központosítja a kulcsok és végpontok elérését, így a proxyra váltás egy helyen történik.
 
-## 6. Ütemterv
+## 7. Ütemterv
 
 | Fázis | Tartalom | Állapot |
 |---|---|---|
 | 0 | Repó, Flutter váz, mind az 5 platform target, CI, 44 nyelv | ✅ kész |
+| 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
 | 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
 | 2 | Grafikon, pénzügyi kimutatások, osztalék, elemzők, tulajdonosok | ⬜ |
 | 3 | OCR fallback offline, kedvencek/előzmények, deviza-átváltás, magyar/angol nyelv | ⬜ |
 | 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |
 
-## 7. Nyitott kérdések (a részletes leírásból várjuk a választ)
+## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)
 
 - Elsősorban melyik piac a fókusz? (BÉT, amerikai tőzsdék, európai – ez meghatározza az adatforrást.)
 - Kell-e portfólió-kezelés (saját részvények, vételi ár, hozam), vagy csak információ?

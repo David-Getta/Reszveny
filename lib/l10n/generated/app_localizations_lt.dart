@@ -410,4 +410,68 @@ class AppLocalizationsLt extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Kažkas nutiko ne taip: $detail';
   }
+
+  @override
+  String get newSearch => 'Nauja paieška';
+
+  @override
+  String get recentSearches => 'Naujausios';
+
+  @override
+  String get noRecentSearches => 'Naujausių paieškų dar nėra.';
+
+  @override
+  String get clearRecent => 'Išvalyti naujausias';
+
+  @override
+  String get greeting => 'Kurią akciją pažiūrėsime?';
+
+  @override
+  String get searchHint => 'Simbolis arba įmonės pavadinimas';
+
+  @override
+  String get attachImage => 'Pridėti vaizdą';
+
+  @override
+  String get searchResultsTitle => 'Paieškos rezultatai';
+
+  @override
+  String errNoResults(String query) {
+    return 'Pagal „$query“ akcijų nerasta.';
+  }
+
+  @override
+  String get quickBarHint => 'Įveskite simbolį arba įmonės pavadinimą…';
+
+  @override
+  String get openFullWindow => 'Atverti langą';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Paspauskite $shortcut bet kur, kad iškviestumėte Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Atverti Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Greitoji paieška';
+
+  @override
+  String get trayQuit => 'Baigti darbą';
+
+  @override
+  String get appearance => 'Išvaizda';
+
+  @override
+  String get themeSystem => 'Sistemos';
+
+  @override
+  String get themeDark => 'Tamsi';
+
+  @override
+  String get themeLight => 'Šviesi';
+
+  @override
+  String get back => 'Atgal';
 }

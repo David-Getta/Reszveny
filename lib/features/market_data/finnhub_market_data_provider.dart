@@ -7,6 +7,7 @@ import '../../core/errors.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
 import '../../core/models/news_item.dart';
+import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_quote.dart';
 import 'market_data_provider.dart';
@@ -79,6 +80,14 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
   Future<AnalystConsensus?> consensus(String symbol) async {
     final j = await _get('/stock/recommendation', {'symbol': symbol}) as List;
     return parseConsensus(j);
+  }
+
+  @override
+  Future<List<StockCandidate>> search(String query) async {
+    final q = query.trim();
+    if (q.isEmpty) return const [];
+    final j = await _get('/search', {'q': q}) as Map<String, dynamic>;
+    return parseSearch(q, j);
   }
 
   // ---- Parse-olás: tisztán a JSON-ból, hálózat nélkül tesztelhető. ----
@@ -178,6 +187,26 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     }
     items.sort((a, b) => b.publishedAt.compareTo(a.publishedAt));
     return items;
+  }
+
+  /// A Finnhub `/search` válasza. A pontos ticker-egyezés kerül előre, és a
+  /// származtatott (opció, warrant) típusokat kihagyjuk.
+  static List<StockCandidate> parseSearch(String query, Map<String, dynamic> j) {
+    final upper = query.trim().toUpperCase();
+    final out = <StockCandidate>[];
+    for (final raw in (j['result'] as List?) ?? const []) {
+      final r = (raw as Map).cast<String, dynamic>();
+      final symbol = _s(r['symbol']);
+      final name = _s(r['description']);
+      final type = _s(r['type']) ?? '';
+      if (symbol == null || name == null) continue;
+      if (type.isNotEmpty && type != 'Common Stock' && type != 'ADR' && type != 'ETP' && type != 'REIT') continue;
+      final exact = symbol.toUpperCase() == upper;
+      final nameHit = name.toUpperCase().contains(upper);
+      out.add(StockCandidate(symbol: symbol, companyName: name, confidence: exact ? 1 : (nameHit ? 0.8 : 0.6)));
+    }
+    out.sort((a, b) => b.confidence.compareTo(a.confidence));
+    return out.take(10).toList();
   }
 
   static AnalystConsensus? parseConsensus(List j) {

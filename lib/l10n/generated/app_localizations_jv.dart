@@ -408,4 +408,68 @@ class AppLocalizationsJv extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Ana sing salah: $detail';
   }
+
+  @override
+  String get newSearch => 'Panelusuran anyar';
+
+  @override
+  String get recentSearches => 'Paling anyar';
+
+  @override
+  String get noRecentSearches => 'Durung ana panelusuran anyar.';
+
+  @override
+  String get clearRecent => 'Busak panelusuran anyar';
+
+  @override
+  String get greeting => 'Saham endi sing arep dideleng?';
+
+  @override
+  String get searchHint => 'Kode saham utawa jeneng perusahaan';
+
+  @override
+  String get attachImage => 'Lampirake gambar';
+
+  @override
+  String get searchResultsTitle => 'Asil panelusuran';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ora ana saham sing ditemokake kanggo “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Ketik kode saham utawa jeneng perusahaan…';
+
+  @override
+  String get openFullWindow => 'Bukak jendhela';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tekan $shortcut ing ngendi wae kanggo nimbali Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Bukak Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Panelusuran cepet';
+
+  @override
+  String get trayQuit => 'Metu';
+
+  @override
+  String get appearance => 'Tampilan';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Peteng';
+
+  @override
+  String get themeLight => 'Padhang';
+
+  @override
+  String get back => 'Bali';
 }

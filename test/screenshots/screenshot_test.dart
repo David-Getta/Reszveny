@@ -1,0 +1,127 @@
+@Tags(['screenshot'])
+library;
+
+import 'dart:io';
+import 'dart:ui' as ui;
+
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/app.dart';
+import 'package:reszveny/app_services.dart';
+import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/desktop/desktop_integration.dart';
+import 'package:reszveny/core/locale_controller.dart';
+import 'package:reszveny/features/capture/capture_service.dart';
+import 'package:reszveny/features/home/quick_bar.dart';
+import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/theme/app_theme.dart';
+
+/// Képernyőképek a felületről a teszt-harnessben (valódi betűkkel). Csak
+/// kézzel futtatjuk: `flutter test --tags screenshot --dart-define=SHOTS=<mappa>`.
+const _outDir = String.fromEnvironment('SHOTS');
+
+class _NoRecognizer implements StockRecognizer {
+  @override
+  String get name => 'Claude Vision';
+
+  @override
+  Future<RecognitionResult> recognize(CapturedImage image, {String outputLanguage = 'English'}) async =>
+      const RecognitionResult(candidates: []);
+}
+
+AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) => AppServices(
+  config: const AppConfig(),
+  capture: CaptureService(),
+  recognizer: _NoRecognizer(),
+  marketData: DemoMarketDataProvider(latency: Duration.zero),
+  locale: LocaleController(initial: locale),
+  preferences: AppPreferences(themeMode: mode, recent: const ['AAPL', 'NVDA', 'OTP']),
+  desktop: DesktopIntegration(),
+);
+
+Future<void> _loadFonts() async {
+  final dir = Directory('/opt/flutter/bin/cache/artifacts/material_fonts');
+  Future<void> load(String family, String file) async {
+    final f = File('${dir.path}/$file');
+    if (!f.existsSync()) return;
+    final loader = FontLoader(family)..addFont(f.readAsBytes().then((b) => ByteData.view(b.buffer)));
+    await loader.load();
+  }
+
+  await load('Roboto', 'Roboto-Regular.ttf');
+  await load('Roboto', 'Roboto-Medium.ttf');
+  await load('Roboto', 'Roboto-Bold.ttf');
+  await load('MaterialIcons', 'MaterialIcons-Regular.otf');
+}
+
+Future<void> _shot(WidgetTester tester, String name) async {
+  if (_outDir.isEmpty) return;
+  await tester.runAsync(() async {
+    final boundary = tester.firstRenderObject<RenderRepaintBoundary>(find.byType(RepaintBoundary).first);
+    final image = await boundary.toImage(pixelRatio: 1);
+    final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
+    File('$_outDir/$name.png').writeAsBytesSync(bytes!.buffer.asUint8List());
+  });
+}
+
+void main() {
+  setUpAll(() async {
+    await _loadFonts();
+  });
+
+  Future<void> pumpApp(WidgetTester tester, AppServices s, Size size) async {
+    tester.view.physicalSize = size;
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(RepaintBoundary(child: ReszvenyApp(services: s)));
+    await tester.pumpAndSettle();
+  }
+
+  testWidgets('home wide dark', (tester) async {
+    await pumpApp(tester, _services(), const Size(1200, 780));
+    await _shot(tester, 'home_wide_dark');
+  });
+
+  testWidgets('home wide light', (tester) async {
+    await pumpApp(tester, _services(mode: ThemeMode.light), const Size(1200, 780));
+    await _shot(tester, 'home_wide_light');
+  });
+
+  testWidgets('home phone hungarian', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 900));
+    await _shot(tester, 'home_phone_hu');
+  });
+
+  testWidgets('detail wide dark', (tester) async {
+    await pumpApp(tester, _services(), const Size(1200, 1600));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_wide_dark');
+  });
+
+  testWidgets('quick bar', (tester) async {
+    tester.view.physicalSize = const Size(680, 84);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(
+      RepaintBoundary(
+        child: AppServicesScope(
+          services: _services(),
+          child: MaterialApp(
+            theme: AppTheme.build(Brightness.dark),
+            localizationsDelegates: ReszvenyApp.localizationsDelegates,
+            supportedLocales: const [Locale('en')],
+            home: QuickBar(onOpenSymbol: (_) {}, onOpenWindow: () {}),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await _shot(tester, 'quick_bar');
+  });
+}

@@ -409,4 +409,68 @@ class AppLocalizationsRo extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Ceva nu a funcționat: $detail';
   }
+
+  @override
+  String get newSearch => 'Căutare nouă';
+
+  @override
+  String get recentSearches => 'Recente';
+
+  @override
+  String get noRecentSearches => 'Nu există căutări recente încă.';
+
+  @override
+  String get clearRecent => 'Șterge recentele';
+
+  @override
+  String get greeting => 'La ce acțiune ne uităm?';
+
+  @override
+  String get searchHint => 'Simbol sau numele companiei';
+
+  @override
+  String get attachImage => 'Atașează o imagine';
+
+  @override
+  String get searchResultsTitle => 'Rezultatele căutării';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nu s-au găsit acțiuni pentru „$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Scrie un simbol sau numele unei companii…';
+
+  @override
+  String get openFullWindow => 'Deschide fereastra';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Apasă $shortcut oriunde pentru a deschide Reszveny.';
+  }
+
+  @override
+  String get trayOpen => 'Deschide Reszveny';
+
+  @override
+  String get trayQuickSearch => 'Căutare rapidă';
+
+  @override
+  String get trayQuit => 'Ieșire';
+
+  @override
+  String get appearance => 'Aspect';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Întunecat';
+
+  @override
+  String get themeLight => 'Luminos';
+
+  @override
+  String get back => 'Înapoi';
 }
