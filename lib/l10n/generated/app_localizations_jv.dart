@@ -1,0 +1,411 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Javanese (`jv`).
+class AppLocalizationsJv extends AppLocalizations {
+  AppLocalizationsJv([String locale = 'jv']) : super(locale);
+
+  @override
+  String get appTitle => 'Reszveny';
+
+  @override
+  String get homeTagline =>
+      'Fotonen saham lan ngertenana kabeh babagan saham iku.';
+
+  @override
+  String get homeHint =>
+      'Sertifikat saham, layar aplikasi sekuritas, koran utawa logo perusahaan – apa wae sing bisa ngenali saham.';
+
+  @override
+  String get takePhoto => 'Jupuk foto';
+
+  @override
+  String get chooseFromGallery => 'Pilih saka galeri';
+
+  @override
+  String get chooseImage => 'Pilih gambar';
+
+  @override
+  String get enterTickerManually => 'Ketik kode saham kanthi manual';
+
+  @override
+  String get tickerInputLabel => 'Kode saham';
+
+  @override
+  String get tickerInputHint => 'conto: AAPL';
+
+  @override
+  String get lookUp => 'Golek';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Mode demo – kunci data pasar durung disetel. Data conto kasedhiya kanggo: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Nganalisis gambar…';
+
+  @override
+  String get loadingData => 'Ngemot data…';
+
+  @override
+  String get noCandidatesTitle => 'Ora ana saham sing dikenali';
+
+  @override
+  String get noCandidatesBody =>
+      'Kita ora bisa ngenali saham ing gambar iki. Coba foto sing luwih cetha, utawa ketik kode saham kanthi manual.';
+
+  @override
+  String get whatWeSaw => 'Sing kita deleng';
+
+  @override
+  String get chooseCandidateTitle => 'Saham endi sing dikarepake?';
+
+  @override
+  String confidencePercent(int percent) {
+    return 'Keyakinan $percent%';
+  }
+
+  @override
+  String get settings => 'Setelan';
+
+  @override
+  String get language => 'Basa';
+
+  @override
+  String get systemLanguage => 'Standar sistem';
+
+  @override
+  String get about => 'Babagan';
+
+  @override
+  String get disclaimer =>
+      'Aplikasi iki mung nyedhiyakake informasi lan dudu saran investasi. Data bisa uga telat utawa ora akurat.';
+
+  @override
+  String dataSource(String source) {
+    return 'Sumber data: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Pangenalan: $source';
+  }
+
+  @override
+  String get retry => 'Jajal maneh';
+
+  @override
+  String get cancel => 'Batal';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Tutup';
+
+  @override
+  String get errorGeneric => 'Ana sing salah.';
+
+  @override
+  String get errorSectionUnavailable => 'Bagean iki ora bisa dimuat.';
+
+  @override
+  String get notAvailable => 't/a';
+
+  @override
+  String get sectionIdentity => 'Identifikasi';
+
+  @override
+  String get sectionPrice => 'Rega';
+
+  @override
+  String get sectionValuation => 'Valuasi';
+
+  @override
+  String get sectionFinancials => 'Keuangan';
+
+  @override
+  String get sectionDividend => 'Dividen';
+
+  @override
+  String get sectionProfile => 'Profil perusahaan';
+
+  @override
+  String get sectionAnalysts => 'Rating analis';
+
+  @override
+  String get sectionNews => 'Warta';
+
+  @override
+  String get sectionRecognition => 'Rincian pangenalan';
+
+  @override
+  String get labelSymbol => 'Kode saham';
+
+  @override
+  String get labelExchange => 'Bursa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Mata uang';
+
+  @override
+  String get labelCountry => 'Negara';
+
+  @override
+  String get labelIndustry => 'Industri';
+
+  @override
+  String get labelSector => 'Sektor';
+
+  @override
+  String get labelWebsite => 'Situs web';
+
+  @override
+  String get labelIpoDate => 'Tanggal IPO';
+
+  @override
+  String get labelMarketCap => 'Kapitalisasi pasar';
+
+  @override
+  String get labelSharesOutstanding => 'Saham beredar';
+
+  @override
+  String get labelEmployees => 'Karyawan';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Kantor pusat';
+
+  @override
+  String get labelDescription => 'Katrangan';
+
+  @override
+  String get labelLastPrice => 'Rega pungkasan';
+
+  @override
+  String get labelChange => 'Owah-owahan';
+
+  @override
+  String get labelOpen => 'Rega bukaan';
+
+  @override
+  String get labelDayHigh => 'Paling dhuwur dina iki';
+
+  @override
+  String get labelDayLow => 'Paling endhek dina iki';
+
+  @override
+  String get labelPreviousClose => 'Rega tutup sadurunge';
+
+  @override
+  String get labelWeek52High => 'Paling dhuwur 52 minggu';
+
+  @override
+  String get labelWeek52Low => 'Paling endhek 52 minggu';
+
+  @override
+  String get labelAverageVolume10d => 'Rata-rata volume (10 dina)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Dianyari $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (trailing)';
+
+  @override
+  String get labelPeForward => 'P/E (forward)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / arus kas bebas';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Pendapatan (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Bathi resik (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Margin bathi kotor';
+
+  @override
+  String get labelOperatingMargin => 'Margin bathi operasi';
+
+  @override
+  String get labelNetMargin => 'Margin bathi resik';
+
+  @override
+  String get labelRoe => 'Imbal hasil ekuitas (ROE)';
+
+  @override
+  String get labelRoa => 'Imbal hasil aset (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Utang / ekuitas';
+
+  @override
+  String get labelCurrentRatio => 'Rasio lancar';
+
+  @override
+  String get labelRevenueGrowth => 'Tuwuhing pendapatan (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Tuwuhing EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Imbal hasil dividen';
+
+  @override
+  String get labelDividendPerShare => 'Dividen saben saham';
+
+  @override
+  String get labelPayoutRatio => 'Rasio pembayaran dividen';
+
+  @override
+  String get labelConsensus => 'Konsensus';
+
+  @override
+  String get ratingStrongBuy => 'Tuku kuwat';
+
+  @override
+  String get ratingBuy => 'Tuku';
+
+  @override
+  String get ratingHold => 'Tahan';
+
+  @override
+  String get ratingSell => 'Adol';
+
+  @override
+  String get ratingStrongSell => 'Adol kuwat';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analis',
+      one: '1 analis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Periode: $period';
+  }
+
+  @override
+  String get noNews => 'Ora ana warta anyar.';
+
+  @override
+  String get openArticle => 'Bukak artikel';
+
+  @override
+  String get openLinkFailed => 'Pranala ora bisa dibukak.';
+
+  @override
+  String get recognitionSummary => 'Ringkesan';
+
+  @override
+  String get recognitionEvidence => 'Kenapa kita mikir ngono';
+
+  @override
+  String get recognitionRawText => 'Teks sing diwaca saka gambar';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Pangenalan gambar durung disetel (ora ana ANTHROPIC_API_KEY). Ketik kode saham kanthi manual.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Ora bisa nyambung menyang layanan pangenalan. Priksa sambungan internet sampeyan.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Layanan pangenalan mbalekake kaluputan (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused =>
+      'Layanan pangenalan ora bisa ngolah gambar iki.';
+
+  @override
+  String get errRecognitionTruncated =>
+      'Respons pangenalan kepunggel. Mangga jajal maneh.';
+
+  @override
+  String get errRecognitionBadResponse =>
+      'Respons sing ora dikarepake saka layanan pangenalan.';
+
+  @override
+  String get errRecognitionEmpty =>
+      'Layanan pangenalan mbalekake respons kosong.';
+
+  @override
+  String get errMissingFinnhubKey =>
+      'Data pasar durung disetel (ora ana FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Ora bisa nyambung menyang layanan data pasar. Priksa sambungan internet sampeyan.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Kakehan panjalukan menyang layanan data pasar. Mangga ngenteni sak menit.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Layanan data pasar mbalekake kaluputan (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse =>
+      'Respons sing ora dikarepake saka layanan data pasar.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Ora ana data rega kanggo $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Ora ana profil perusahaan kanggo $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Mode demo mung ndhukung $symbols. Tambahake FINNHUB_API_KEY kanggo data langsung.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Ana sing salah: $detail';
+  }
+}

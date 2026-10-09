@@ -1,0 +1,411 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Portuguese (`pt`).
+class AppLocalizationsPt extends AppLocalizations {
+  AppLocalizationsPt([String locale = 'pt']) : super(locale);
+
+  @override
+  String get appTitle => 'Reszveny';
+
+  @override
+  String get homeTagline => 'Fotografe uma ação e saiba tudo sobre ela.';
+
+  @override
+  String get homeHint =>
+      'Um certificado de ações, a imagem de uma app de corretora, um jornal ou o logótipo de uma empresa: qualquer coisa que identifique uma ação.';
+
+  @override
+  String get takePhoto => 'Tirar uma foto';
+
+  @override
+  String get chooseFromGallery => 'Escolher da galeria';
+
+  @override
+  String get chooseImage => 'Escolher uma imagem';
+
+  @override
+  String get enterTickerManually => 'Introduzir o ticker manualmente';
+
+  @override
+  String get tickerInputLabel => 'Símbolo (ticker)';
+
+  @override
+  String get tickerInputHint => 'ex.: AAPL';
+
+  @override
+  String get lookUp => 'Pesquisar';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Modo demo: nenhuma chave de dados de mercado configurada. Há dados de exemplo disponíveis para: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'A analisar a imagem…';
+
+  @override
+  String get loadingData => 'A carregar dados…';
+
+  @override
+  String get noCandidatesTitle => 'Nenhuma ação reconhecida';
+
+  @override
+  String get noCandidatesBody =>
+      'Não foi possível identificar uma ação nesta imagem. Tente uma foto mais nítida ou introduza o ticker manualmente.';
+
+  @override
+  String get whatWeSaw => 'O que vimos';
+
+  @override
+  String get chooseCandidateTitle => 'A que ação se refere?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% de confiança';
+  }
+
+  @override
+  String get settings => 'Configurações';
+
+  @override
+  String get language => 'Idioma';
+
+  @override
+  String get systemLanguage => 'Padrão do sistema';
+
+  @override
+  String get about => 'Sobre';
+
+  @override
+  String get disclaimer =>
+      'Esta app fornece apenas informação e não constitui aconselhamento de investimento. Os dados podem estar atrasados ou ser imprecisos.';
+
+  @override
+  String dataSource(String source) {
+    return 'Fonte de dados: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Reconhecimento: $source';
+  }
+
+  @override
+  String get retry => 'Tentar novamente';
+
+  @override
+  String get cancel => 'Cancelar';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Fechar';
+
+  @override
+  String get errorGeneric => 'Ocorreu um erro.';
+
+  @override
+  String get errorSectionUnavailable =>
+      'Não foi possível carregar esta secção.';
+
+  @override
+  String get notAvailable => 'n/d';
+
+  @override
+  String get sectionIdentity => 'Identificação';
+
+  @override
+  String get sectionPrice => 'Preço';
+
+  @override
+  String get sectionValuation => 'Avaliação';
+
+  @override
+  String get sectionFinancials => 'Dados financeiros';
+
+  @override
+  String get sectionDividend => 'Dividendo';
+
+  @override
+  String get sectionProfile => 'Perfil da empresa';
+
+  @override
+  String get sectionAnalysts => 'Recomendações de analistas';
+
+  @override
+  String get sectionNews => 'Notícias';
+
+  @override
+  String get sectionRecognition => 'Detalhes do reconhecimento';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Bolsa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Moeda';
+
+  @override
+  String get labelCountry => 'País';
+
+  @override
+  String get labelIndustry => 'Indústria';
+
+  @override
+  String get labelSector => 'Setor';
+
+  @override
+  String get labelWebsite => 'Site';
+
+  @override
+  String get labelIpoDate => 'Data do IPO';
+
+  @override
+  String get labelMarketCap => 'Capitalização de mercado';
+
+  @override
+  String get labelSharesOutstanding => 'Ações em circulação';
+
+  @override
+  String get labelEmployees => 'Funcionários';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Sede';
+
+  @override
+  String get labelDescription => 'Descrição';
+
+  @override
+  String get labelLastPrice => 'Último preço';
+
+  @override
+  String get labelChange => 'Variação';
+
+  @override
+  String get labelOpen => 'Abertura';
+
+  @override
+  String get labelDayHigh => 'Máximo do dia';
+
+  @override
+  String get labelDayLow => 'Mínimo do dia';
+
+  @override
+  String get labelPreviousClose => 'Fecho anterior';
+
+  @override
+  String get labelWeek52High => 'Máximo de 52 semanas';
+
+  @override
+  String get labelWeek52Low => 'Mínimo de 52 semanas';
+
+  @override
+  String get labelAverageVolume10d => 'Volume médio (10 dias)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Atualizado $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (histórico)';
+
+  @override
+  String get labelPeForward => 'P/E (previsto)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / fluxo de caixa livre';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Receita (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Lucro líquido (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Margem bruta';
+
+  @override
+  String get labelOperatingMargin => 'Margem operacional';
+
+  @override
+  String get labelNetMargin => 'Margem líquida';
+
+  @override
+  String get labelRoe => 'Rentabilidade do capital próprio (ROE)';
+
+  @override
+  String get labelRoa => 'Rentabilidade dos ativos (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Dívida / capital próprio';
+
+  @override
+  String get labelCurrentRatio => 'Liquidez corrente';
+
+  @override
+  String get labelRevenueGrowth => 'Crescimento da receita (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Crescimento do EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Rendimento do dividendo';
+
+  @override
+  String get labelDividendPerShare => 'Dividendo por ação';
+
+  @override
+  String get labelPayoutRatio => 'Taxa de distribuição (payout)';
+
+  @override
+  String get labelConsensus => 'Consenso';
+
+  @override
+  String get ratingStrongBuy => 'Compra forte';
+
+  @override
+  String get ratingBuy => 'Comprar';
+
+  @override
+  String get ratingHold => 'Manter';
+
+  @override
+  String get ratingSell => 'Vender';
+
+  @override
+  String get ratingStrongSell => 'Venda forte';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analistas',
+      one: '1 analista',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Período: $period';
+  }
+
+  @override
+  String get noNews => 'Sem notícias recentes.';
+
+  @override
+  String get openArticle => 'Abrir artigo';
+
+  @override
+  String get openLinkFailed => 'Não foi possível abrir o link.';
+
+  @override
+  String get recognitionSummary => 'Resumo';
+
+  @override
+  String get recognitionEvidence => 'Porque pensamos isso';
+
+  @override
+  String get recognitionRawText => 'Texto lido da imagem';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'O reconhecimento de imagens não está configurado (falta ANTHROPIC_API_KEY). Introduza o ticker manualmente.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Não foi possível contactar o serviço de reconhecimento. Verifique a sua conexão à internet.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'O serviço de reconhecimento devolveu um erro (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused =>
+      'O serviço de reconhecimento não conseguiu processar esta imagem.';
+
+  @override
+  String get errRecognitionTruncated =>
+      'A resposta do reconhecimento foi interrompida. Tente novamente.';
+
+  @override
+  String get errRecognitionBadResponse =>
+      'Resposta inesperada do serviço de reconhecimento.';
+
+  @override
+  String get errRecognitionEmpty =>
+      'O serviço de reconhecimento devolveu uma resposta vazia.';
+
+  @override
+  String get errMissingFinnhubKey =>
+      'Os dados de mercado não estão configurados (falta FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Não foi possível contactar o serviço de dados de mercado. Verifique a sua conexão à internet.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Demasiados pedidos ao serviço de dados de mercado. Aguarde um minuto.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'O serviço de dados de mercado devolveu um erro (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse =>
+      'Resposta inesperada do serviço de dados de mercado.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Não foram encontrados dados de preço para $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Não foi encontrado o perfil da empresa para $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'O modo demo só suporta $symbols. Adicione uma FINNHUB_API_KEY para obter dados em tempo real.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Ocorreu um erro: $detail';
+  }
+}
