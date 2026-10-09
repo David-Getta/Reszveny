@@ -18,7 +18,8 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: flutter gen-l10n
-      - run: dart format --output=none --set-exit-if-changed --line-length 120 lib test
+      - name: Check formatting (generated localizations excluded)
+        run: dart format --output=none --set-exit-if-changed --line-length 120 $(git ls-files 'lib/*.dart' 'lib/**/*.dart' 'test/**/*.dart' | grep -v '^lib/l10n/generated/')
       - run: flutter analyze --fatal-infos
       - run: flutter test
 
