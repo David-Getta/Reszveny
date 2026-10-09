@@ -12,6 +12,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
+import 'favorites_strip.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
 import 'candidate_sheet.dart';
@@ -254,6 +255,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                     if (_results != null)
                       _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                    FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                     if (services.config.isDemoMode) ...[
                       const SizedBox(height: 24),
                       _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),

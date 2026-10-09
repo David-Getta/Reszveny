@@ -13,7 +13,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline => 'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
+  String get homeTagline =>
+      'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analist', one: '1 analist');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analist',
+      one: '1 analist',
+    );
     return '$_temp0';
   }
 
@@ -334,10 +340,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get recognitionRawText => 'Görselden okunan metin';
 
   @override
-  String get errMissingAnthropicKey => 'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
+  String get errMissingAnthropicKey =>
+      'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
 
   @override
-  String get errRecognitionUnreachable => 'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errRecognitionUnreachable =>
+      'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -348,22 +356,27 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errRecognitionRefused => 'Tanıma hizmeti bu görseli işleyemedi.';
 
   @override
-  String get errRecognitionTruncated => 'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
+  String get errRecognitionTruncated =>
+      'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
 
   @override
-  String get errRecognitionBadResponse => 'Tanıma hizmetinden beklenmeyen yanıt.';
+  String get errRecognitionBadResponse =>
+      'Tanıma hizmetinden beklenmeyen yanıt.';
 
   @override
   String get errRecognitionEmpty => 'Tanıma hizmeti boş yanıt döndürdü.';
 
   @override
-  String get errMissingFinnhubKey => 'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
+  String get errMissingFinnhubKey =>
+      'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
 
   @override
-  String get errMarketUnreachable => 'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errMarketUnreachable =>
+      'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
-  String get errMarketRateLimited => 'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
+  String get errMarketRateLimited =>
+      'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
 
   @override
   String errMarketHttp(String status) {
@@ -371,7 +384,8 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Piyasa verisi hizmetinden beklenmeyen yanıt.';
+  String get errMarketBadResponse =>
+      'Piyasa verisi hizmetinden beklenmeyen yanıt.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,7 +485,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get aiRegenerate => 'Yeniden oluştur';
 
   @override
-  String get aiGenerating => 'Analiz hazırlanıyor… bu bir iki dakika sürebilir.';
+  String get aiGenerating =>
+      'Analiz hazırlanıyor… bu bir iki dakika sürebilir.';
 
   @override
   String get aiSources => 'Kaynaklar';
@@ -486,10 +501,12 @@ class AppLocalizationsTr extends AppLocalizations {
       'Kamuya açık veriler ve güncel haberlere dayanan, yapay zekâ tarafından oluşturulmuş analiz. Hatalar içerebilir veya güncelliğini yitirmiş olabilir; yatırım tavsiyesi değildir.';
 
   @override
-  String get errAiNotConfigured => 'Yapay zekâ analizi yapılandırılmamış (ANTHROPIC_API_KEY yok).';
+  String get errAiNotConfigured =>
+      'Yapay zekâ analizi yapılandırılmamış (ANTHROPIC_API_KEY yok).';
 
   @override
-  String get errAiUnreachable => 'Yapay zekâ hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errAiUnreachable =>
+      'Yapay zekâ hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
   String errAiHttp(String status) {
@@ -497,7 +514,8 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Yapay zekâ hizmeti bu hisseyi analiz etmeyi reddetti.';
+  String get errAiRefused =>
+      'Yapay zekâ hizmeti bu hisseyi analiz etmeyi reddetti.';
 
   @override
   String get errAiBadResponse => 'Yapay zekâ hizmetinden beklenmeyen yanıt.';
@@ -521,7 +539,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Mevcut veri kaynağında fiyat geçmişi bulunmuyor.';
+  String get chartUnavailable =>
+      'Mevcut veri kaynağında fiyat geçmişi bulunmuyor.';
 
   @override
   String get sectionStatements => 'Finansal tablolar (yıllık)';
@@ -548,7 +567,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Faaliyetlerden nakit akışı';
 
   @override
-  String get statementsUnavailable => 'Bu hisse için raporlanmış finansal tablolar bulunmuyor.';
+  String get statementsUnavailable =>
+      'Bu hisse için raporlanmış finansal tablolar bulunmuyor.';
 
   @override
   String get launchAtLogin => 'Oturum açılışında başlat';
@@ -557,7 +577,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get hotkeyLabel => 'Genel kısayol';
 
   @override
-  String get hotkeyRecordHint => 'Buraya tıklayın, ardından yeni tuş kombinasyonuna basın';
+  String get hotkeyRecordHint =>
+      'Buraya tıklayın, ardından yeni tuş kombinasyonuna basın';
 
   @override
   String get hotkeyReset => 'Varsayılana sıfırla';
@@ -567,4 +588,17 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get errClipboardNoImage => 'Panoda görsel yok.';
+
+  @override
+  String get favorites => 'Favoriler';
+
+  @override
+  String get addToFavorites => 'Favorilere ekle';
+
+  @override
+  String get removeFromFavorites => 'Favorilerden kaldır';
+
+  @override
+  String get noFavorites =>
+      'Henüz favori yok. Eklemek için bir hissenin yıldızına dokunun.';
 }

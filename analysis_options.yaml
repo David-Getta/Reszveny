@@ -8,3 +8,4 @@ analyzer:
     - windows/**
     - macos/**
     - lib/l10n/generated/**
+    - web/**

@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe",
   "hotkeyReset": "Rejesha chaguo-msingi",
   "pasteImage": "Bandika picha kutoka ubao wa kunakili",
-  "errClipboardNoImage": "Hakuna picha kwenye ubao wa kunakili."
+  "errClipboardNoImage": "Hakuna picha kwenye ubao wa kunakili.",
+  "favorites": "Vipendwa",
+  "addToFavorites": "Ongeza kwenye vipendwa",
+  "removeFromFavorites": "Ondoa kwenye vipendwa",
+  "noFavorites": "Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza."
 }

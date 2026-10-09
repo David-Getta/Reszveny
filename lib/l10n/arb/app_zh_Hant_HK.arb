@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "按一下此處，然後按下新的組合鍵",
   "hotkeyReset": "重設為預設值",
   "pasteImage": "從剪貼簿貼上圖片",
-  "errClipboardNoImage": "剪貼簿中沒有圖片。"
+  "errClipboardNoImage": "剪貼簿中沒有圖片。",
+  "favorites": "收藏",
+  "addToFavorites": "加入收藏",
+  "removeFromFavorites": "從收藏中移除",
+  "noFavorites": "暫時未有收藏。點一下股票上的星星即可加入。"
 }

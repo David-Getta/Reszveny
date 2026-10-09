@@ -13,7 +13,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline => 'शेअरचा फोटो काढा आणि त्याबद्दल सर्व काही जाणून घ्या.';
+  String get homeTagline =>
+      'शेअरचा फोटो काढा आणि त्याबद्दल सर्व काही जाणून घ्या.';
 
   @override
   String get homeHint =>
@@ -82,7 +83,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get about => 'अ‍ॅपविषयी';
 
   @override
-  String get disclaimer => 'हे अ‍ॅप केवळ माहिती देते आणि हा गुंतवणूक सल्ला नाही. डेटा विलंबित किंवा चुकीचा असू शकतो.';
+  String get disclaimer =>
+      'हे अ‍ॅप केवळ माहिती देते आणि हा गुंतवणूक सल्ला नाही. डेटा विलंबित किंवा चुकीचा असू शकतो.';
 
   @override
   String dataSource(String source) {
@@ -305,7 +307,12 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count विश्लेषक', one: '1 विश्लेषक');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषक',
+      one: '1 विश्लेषक',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +344,8 @@ class AppLocalizationsMr extends AppLocalizations {
       'प्रतिमा ओळख कॉन्फिगर केलेली नाही (ANTHROPIC_API_KEY नाही). टिकर मॅन्युअली टाका.';
 
   @override
-  String get errRecognitionUnreachable => 'ओळख सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
+  String get errRecognitionUnreachable =>
+      'ओळख सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,10 +353,12 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ओळख सेवा ही प्रतिमा प्रोसेस करू शकली नाही.';
+  String get errRecognitionRefused =>
+      'ओळख सेवा ही प्रतिमा प्रोसेस करू शकली नाही.';
 
   @override
-  String get errRecognitionTruncated => 'ओळख प्रतिसाद अपूर्ण राहिला. कृपया पुन्हा प्रयत्न करा.';
+  String get errRecognitionTruncated =>
+      'ओळख प्रतिसाद अपूर्ण राहिला. कृपया पुन्हा प्रयत्न करा.';
 
   @override
   String get errRecognitionBadResponse => 'ओळख सेवेकडून अनपेक्षित प्रतिसाद.';
@@ -357,13 +367,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String get errRecognitionEmpty => 'ओळख सेवेने रिकामा प्रतिसाद परत केला.';
 
   @override
-  String get errMissingFinnhubKey => 'मार्केट डेटा कॉन्फिगर केलेला नाही (FINNHUB_API_KEY नाही).';
+  String get errMissingFinnhubKey =>
+      'मार्केट डेटा कॉन्फिगर केलेला नाही (FINNHUB_API_KEY नाही).';
 
   @override
-  String get errMarketUnreachable => 'मार्केट डेटा सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
+  String get errMarketUnreachable =>
+      'मार्केट डेटा सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
-  String get errMarketRateLimited => 'मार्केट डेटा सेवेला खूप जास्त विनंत्या पाठवल्या गेल्या. कृपया एक मिनिट थांबा.';
+  String get errMarketRateLimited =>
+      'मार्केट डेटा सेवेला खूप जास्त विनंत्या पाठवल्या गेल्या. कृपया एक मिनिट थांबा.';
 
   @override
   String errMarketHttp(String status) {
@@ -371,7 +384,8 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'मार्केट डेटा सेवेकडून अनपेक्षित प्रतिसाद.';
+  String get errMarketBadResponse =>
+      'मार्केट डेटा सेवेकडून अनपेक्षित प्रतिसाद.';
 
   @override
   String errNoQuote(String symbol) {
@@ -458,52 +472,55 @@ class AppLocalizationsMr extends AppLocalizations {
   String get back => 'मागे';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI विश्लेषण';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI ने लिहिलेला सविस्तर आढावा: अलीकडील बातम्यांचा सारांश, व्यवसाय, बलस्थाने, जोखमी आणि छुपे घटक, मूल्यांकन आणि कशावर लक्ष ठेवावे.';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => 'विश्लेषण तयार करा';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => 'पुन्हा तयार करा';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'विश्लेषण तयार होत आहे… यास एक-दोन मिनिटे लागू शकतात.';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => 'स्रोत';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return 'तयार केले $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      'सार्वजनिक डेटा आणि अलीकडील बातम्यांवर आधारित AI-निर्मित विश्लेषण. यात चुका असू शकतात किंवा ते जुने असू शकते, आणि हा गुंतवणूक सल्ला नाही.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI विश्लेषण कॉन्फिगर केलेले नाही (ANTHROPIC_API_KEY नाही).';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'AI सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI सेवेने त्रुटी परत केली (HTTP $status).';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused => 'AI सेवेने या शेअरचे विश्लेषण करण्यास नकार दिला.';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI सेवेकडून अनपेक्षित प्रतिसाद.';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => 'किंमत चार्ट';
 
   @override
   String get rangeOneWeek => '1W';
@@ -521,50 +538,65 @@ class AppLocalizationsMr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'सध्याच्या डेटा स्रोतातून किंमतीचा इतिहास उपलब्ध नाही.';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => 'आर्थिक विवरणपत्रे (वार्षिक)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => 'आर्थिक वर्ष';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => 'महसूल';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => 'निव्वळ नफा';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => 'एकूण मालमत्ता';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => 'एकूण दायित्वे';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => 'भागधारकांची इक्विटी';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => 'ऑपरेटिंग कॅश फ्लो';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'या शेअरसाठी नोंदवलेली आर्थिक विवरणपत्रे उपलब्ध नाहीत.';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'लॉगइन करताना सुरू करा';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'ग्लोबल शॉर्टकट';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => 'येथे क्लिक करा, मग नवीन की कॉम्बिनेशन दाबा';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => 'डीफॉल्टवर रीसेट करा';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'क्लिपबोर्डमधून प्रतिमा पेस्ट करा';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'क्लिपबोर्डवर कोणतीही प्रतिमा नाही.';
+
+  @override
+  String get favorites => 'आवडते';
+
+  @override
+  String get addToFavorites => 'आवडत्यांमध्ये जोडा';
+
+  @override
+  String get removeFromFavorites => 'आवडत्यांमधून काढा';
+
+  @override
+  String get noFavorites =>
+      'अजून कोणतेही आवडते नाहीत. जोडण्यासाठी शेअरवरील तारा टॅप करा.';
 }

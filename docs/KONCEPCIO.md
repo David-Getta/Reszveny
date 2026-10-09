@@ -136,7 +136,8 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 | 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
 | 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
 | 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
-| 3 | OCR fallback offline (ML Kit, mobil), kedvencek, deviza-átváltás, árfolyam-riasztás | ⬜ |
+| 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
+| 3b | OCR fallback offline (ML Kit, mobil), deviza-átváltás, árfolyam-riasztás | ⬜ |
 | 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |
 
 ## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)

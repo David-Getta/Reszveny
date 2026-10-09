@@ -106,6 +106,21 @@ void main() {
     expect(find.text('Regenerate'), findsOneWidget);
   });
 
+  testWidgets('star adds a favorite that shows on the home screen with a price', (tester) async {
+    await tester.pumpWidget(ReszvenyApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Add to favorites'));
+    await tester.pumpAndSettle();
+    expect(find.byTooltip('Remove from favorites'), findsOneWidget);
+    await tester.tap(find.byType(BackButton));
+    await tester.pumpAndSettle();
+    expect(find.text('Favorites'), findsOneWidget);
+    expect(find.textContaining('231.45'), findsOneWidget);
+  });
+
   testWidgets('recent searches appear in the sidebar on wide screens', (tester) async {
     tester.view.physicalSize = const Size(1400, 900);
     tester.view.devicePixelRatio = 1;

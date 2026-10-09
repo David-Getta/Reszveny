@@ -54,6 +54,10 @@ class _StockDetailPageState extends State<StockDetailPage> {
         context,
         title: Text(widget.candidate.symbol),
         hasSidebar: MediaQuery.sizeOf(context).width >= 860,
+        actions: [
+          _FavoriteButton(symbol: widget.candidate.symbol),
+          const SizedBox(width: 4),
+        ],
       ),
       body: FutureBuilder<StockDetails>(
         future: _future,
@@ -487,6 +491,31 @@ class _ConsensusView extends StatelessWidget {
             ),
           ),
       ],
+    );
+  }
+}
+
+/// Csillag az AppBarban: kedvencekhez ad / onnan elvesz.
+class _FavoriteButton extends StatelessWidget {
+  const _FavoriteButton({required this.symbol});
+
+  final String symbol;
+
+  @override
+  Widget build(BuildContext context) {
+    final prefs = AppServices.of(context).preferences;
+    final l10n = AppLocalizations.of(context);
+    final palette = AppPalette.of(context);
+    return ListenableBuilder(
+      listenable: prefs,
+      builder: (context, _) {
+        final fav = prefs.isFavorite(symbol);
+        return IconButton(
+          tooltip: fav ? l10n.removeFromFavorites : l10n.addToFavorites,
+          icon: Icon(fav ? Icons.star_rounded : Icons.star_outline_rounded, color: fav ? palette.accent : null),
+          onPressed: () => prefs.toggleFavorite(symbol),
+        );
+      },
     );
   }
 }

@@ -343,7 +343,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chưa cấu hình nhận diện ảnh (thiếu ANTHROPIC_API_KEY). Hãy nhập mã cổ phiếu thủ công.';
 
   @override
-  String get errRecognitionUnreachable => 'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
+  String get errRecognitionUnreachable =>
+      'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -351,25 +352,31 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Dịch vụ nhận diện không thể xử lý ảnh này.';
+  String get errRecognitionRefused =>
+      'Dịch vụ nhận diện không thể xử lý ảnh này.';
 
   @override
-  String get errRecognitionTruncated => 'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
+  String get errRecognitionTruncated =>
+      'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
 
   @override
-  String get errRecognitionBadResponse => 'Phản hồi không mong đợi từ dịch vụ nhận diện.';
+  String get errRecognitionBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ nhận diện.';
 
   @override
   String get errRecognitionEmpty => 'Dịch vụ nhận diện trả về phản hồi trống.';
 
   @override
-  String get errMissingFinnhubKey => 'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
+  String get errMarketUnreachable =>
+      'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
 
   @override
-  String get errMarketRateLimited => 'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
+  String get errMarketRateLimited =>
+      'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
 
   @override
   String errMarketHttp(String status) {
@@ -377,7 +384,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
+  String get errMarketBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
 
   @override
   String errNoQuote(String symbol) {
@@ -464,113 +472,131 @@ class AppLocalizationsVi extends AppLocalizations {
   String get back => 'Quay lại';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'Phân tích AI';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'Tổng quan chi tiết do AI viết: tóm tắt tin tức gần đây, hoạt động kinh doanh, điểm mạnh, rủi ro và các yếu tố tiềm ẩn, định giá và những điều cần theo dõi.';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => 'Tạo phân tích';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => 'Tạo lại';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => 'Nguồn';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return 'Tạo lúc $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      'Phân tích do AI tạo dựa trên dữ liệu công khai và tin tức gần đây. Nội dung có thể sai hoặc lỗi thời và không phải là lời khuyên đầu tư.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Chưa cấu hình phân tích AI (thiếu ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'Dịch vụ AI trả về lỗi (HTTP $status).';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused => 'Dịch vụ AI đã từ chối phân tích cổ phiếu này.';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'Phản hồi không mong đợi từ dịch vụ AI.';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => 'Biểu đồ giá';
 
   @override
-  String get rangeOneWeek => '1W';
+  String get rangeOneWeek => '1T';
 
   @override
-  String get rangeOneMonth => '1M';
+  String get rangeOneMonth => '1Th';
 
   @override
-  String get rangeThreeMonths => '3M';
+  String get rangeThreeMonths => '3Th';
 
   @override
-  String get rangeOneYear => '1Y';
+  String get rangeOneYear => '1N';
 
   @override
-  String get rangeFiveYears => '5Y';
+  String get rangeFiveYears => '5N';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => 'Báo cáo tài chính (năm)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => 'Năm tài chính';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => 'Doanh thu';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => 'Lợi nhuận ròng';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => 'Tổng tài sản';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => 'Tổng nợ phải trả';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => 'Vốn chủ sở hữu';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => 'Dòng tiền từ hoạt động kinh doanh';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'Khởi chạy khi đăng nhập';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'Phím tắt toàn cục';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => 'Nhấp vào đây, rồi nhấn tổ hợp phím mới';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => 'Đặt lại mặc định';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'Dán ảnh từ bảng tạm';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'Không có ảnh trong bảng tạm.';
+
+  @override
+  String get favorites => 'Yêu thích';
+
+  @override
+  String get addToFavorites => 'Thêm vào yêu thích';
+
+  @override
+  String get removeFromFavorites => 'Xóa khỏi yêu thích';
+
+  @override
+  String get noFavorites =>
+      'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
 }

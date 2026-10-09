@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Spustelėkite čia ir paspauskite naują klavišų kombinaciją",
   "hotkeyReset": "Atkurti numatytąjį",
   "pasteImage": "Įklijuoti vaizdą iš iškarpinės",
-  "errClipboardNoImage": "Iškarpinėje nėra vaizdo."
+  "errClipboardNoImage": "Iškarpinėje nėra vaizdo.",
+  "favorites": "Mėgstamiausi",
+  "addToFavorites": "Pridėti į mėgstamiausius",
+  "removeFromFavorites": "Pašalinti iš mėgstamiausių",
+  "noFavorites": "Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte."
 }

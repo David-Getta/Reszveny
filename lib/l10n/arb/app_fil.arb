@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "I-click ito, pagkatapos pindutin ang bagong kombinasyon ng key",
   "hotkeyReset": "I-reset sa default",
   "pasteImage": "I-paste ang larawan mula sa clipboard",
-  "errClipboardNoImage": "Walang larawan sa clipboard."
+  "errClipboardNoImage": "Walang larawan sa clipboard.",
+  "favorites": "Mga Paborito",
+  "addToFavorites": "Idagdag sa mga paborito",
+  "removeFromFavorites": "Alisin sa mga paborito",
+  "noFavorites": "Wala pang paborito. I-tap ang bituin sa isang stock para idagdag ito."
 }

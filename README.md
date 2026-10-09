@@ -19,6 +19,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 - **Cégnév-keresés**: nem csak ticker, cégnév is beírható („Apple”, „OTP”).
 - **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
 - **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
+- **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
 - **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
 
 ## AI-elemzés: hírek összefoglalása és átfogó kép
@@ -47,6 +48,17 @@ Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `
 
 API-kulcs nélkül az app **demó módban** indul (AAPL, MSFT, NVDA, OTP mintaadatokkal), így a
 felület kulcs nélkül is végigjárható.
+
+## Előnézet a böngészőben
+
+Natív buildet a fejlesztői munkamenetben nem lehet készíteni, ezért minden lezárt lépés után
+a web-build frissül egy privát Artifact-oldalon (a linket a chatben adjuk át). Helyben:
+
+```bash
+flutter build web --release --no-web-resources-cdn
+```
+
+A web csak előnézeti csatorna; a kamera, a gyorsbillentyű és a tálcaikon ott nem elérhető.
 
 ## Fejlesztés
 

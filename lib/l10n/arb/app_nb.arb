@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Klikk her, og trykk deretter den nye tastekombinasjonen",
   "hotkeyReset": "Tilbakestill til standard",
   "pasteImage": "Lim inn bilde fra utklippstavlen",
-  "errClipboardNoImage": "Det er ikke noe bilde på utklippstavlen."
+  "errClipboardNoImage": "Det er ikke noe bilde på utklippstavlen.",
+  "favorites": "Favoritter",
+  "addToFavorites": "Legg til i favoritter",
+  "removeFromFavorites": "Fjern fra favoritter",
+  "noFavorites": "Ingen favoritter ennå. Trykk på stjernen ved en aksje for å legge den til."
 }

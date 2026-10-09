@@ -16,7 +16,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
 
   @override
-  String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
+  String get homeHint =>
+      '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
@@ -54,7 +55,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noCandidatesTitle => '종목을 인식하지 못했습니다';
 
   @override
-  String get noCandidatesBody => '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
+  String get noCandidatesBody =>
+      '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
 
   @override
   String get whatWeSaw => '인식된 내용';
@@ -80,7 +82,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about => '정보';
 
   @override
-  String get disclaimer => '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
+  String get disclaimer =>
+      '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
 
   @override
   String dataSource(String source) {
@@ -303,7 +306,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '애널리스트 $count명', one: '애널리스트 1명');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '애널리스트 $count명',
+      one: '애널리스트 1명',
+    );
     return '$_temp0';
   }
 
@@ -331,7 +339,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recognitionRawText => '이미지에서 읽은 텍스트';
 
   @override
-  String get errMissingAnthropicKey => '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
+  String get errMissingAnthropicKey =>
+      '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
 
   @override
   String get errRecognitionUnreachable => '인식 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -455,113 +464,125 @@ class AppLocalizationsKo extends AppLocalizations {
   String get back => '뒤로';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI 분석';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI가 작성한 상세 개요: 최근 뉴스 요약, 사업 내용, 강점, 리스크와 숨겨진 요인, 밸류에이션, 주목할 점.';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => '분석 생성';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => '다시 생성';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating => '분석을 준비하는 중… 1~2분 정도 걸릴 수 있습니다.';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => '출처';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return '생성: $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI 분석이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음).';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable => 'AI 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI 서비스에서 오류를 반환했습니다(HTTP $status).';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused => 'AI 서비스가 이 종목의 분석을 거부했습니다.';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI 서비스에서 예상치 못한 응답을 받았습니다.';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => '가격 차트';
 
   @override
-  String get rangeOneWeek => '1W';
+  String get rangeOneWeek => '1주';
 
   @override
-  String get rangeOneMonth => '1M';
+  String get rangeOneMonth => '1개월';
 
   @override
-  String get rangeThreeMonths => '3M';
+  String get rangeThreeMonths => '3개월';
 
   @override
-  String get rangeOneYear => '1Y';
+  String get rangeOneYear => '1년';
 
   @override
-  String get rangeFiveYears => '5Y';
+  String get rangeFiveYears => '5년';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable => '현재 데이터 출처에서는 가격 이력을 제공하지 않습니다.';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => '재무제표(연간)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => '회계연도';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => '매출';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => '순이익';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => '자산총계';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => '부채총계';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => '자본총계';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => '영업활동현금흐름';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable => '이 종목의 공시 재무제표를 제공할 수 없습니다.';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => '로그인 시 실행';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => '전역 단축키';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => '여기를 클릭한 뒤 새 키 조합을 누르세요';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => '기본값으로 재설정';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => '클립보드에서 이미지 붙여넣기';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => '클립보드에 이미지가 없습니다.';
+
+  @override
+  String get favorites => '즐겨찾기';
+
+  @override
+  String get addToFavorites => '즐겨찾기에 추가';
+
+  @override
+  String get removeFromFavorites => '즐겨찾기에서 제거';
+
+  @override
+  String get noFavorites => '아직 즐겨찾기가 없습니다. 종목의 별을 탭하여 추가하세요.';
 }

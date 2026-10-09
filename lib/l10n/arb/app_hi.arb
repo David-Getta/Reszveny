@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "यहाँ क्लिक करें, फिर नया कुंजी संयोजन दबाएँ",
   "hotkeyReset": "डिफ़ॉल्ट पर रीसेट करें",
   "pasteImage": "क्लिपबोर्ड से छवि पेस्ट करें",
-  "errClipboardNoImage": "क्लिपबोर्ड में कोई छवि नहीं है।"
+  "errClipboardNoImage": "क्लिपबोर्ड में कोई छवि नहीं है।",
+  "favorites": "पसंदीदा",
+  "addToFavorites": "पसंदीदा में जोड़ें",
+  "removeFromFavorites": "पसंदीदा से हटाएँ",
+  "noFavorites": "अभी तक कोई पसंदीदा नहीं। जोड़ने के लिए किसी शेयर पर स्टार टैप करें।"
 }

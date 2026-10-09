@@ -44,7 +44,11 @@ AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) => AppS
   recognizer: _NoRecognizer(),
   marketData: DemoMarketDataProvider(latency: Duration.zero),
   locale: LocaleController(initial: locale),
-  preferences: AppPreferences(themeMode: mode, recent: const ['AAPL', 'NVDA', 'OTP']),
+  preferences: AppPreferences(
+    themeMode: mode,
+    recent: const ['AAPL', 'NVDA', 'OTP'],
+    favorites: const ['AAPL', 'MSFT'],
+  ),
   desktop: DesktopIntegration(),
   reports: ReportStore(analyst: _FakeAnalyst()),
 );

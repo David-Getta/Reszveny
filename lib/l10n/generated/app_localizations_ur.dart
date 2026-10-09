@@ -13,7 +13,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline => 'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
+  String get homeTagline =>
+      'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تجزیہ کار', one: '1 تجزیہ کار');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تجزیہ کار',
+      one: '1 تجزیہ کار',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsUr extends AppLocalizations {
       'تصویر کی شناخت ترتیب نہیں دی گئی (ANTHROPIC_API_KEY موجود نہیں)۔ ٹکر دستی طور پر درج کریں۔';
 
   @override
-  String get errRecognitionUnreachable => 'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errRecognitionUnreachable =>
+      'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,10 +353,12 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
+  String get errRecognitionRefused =>
+      'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
 
   @override
-  String get errRecognitionTruncated => 'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
+  String get errRecognitionTruncated =>
+      'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
 
   @override
   String get errRecognitionBadResponse => 'شناختی سروس سے غیر متوقع جواب۔';
@@ -358,10 +367,12 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errRecognitionEmpty => 'شناختی سروس نے خالی جواب واپس کیا۔';
 
   @override
-  String get errMissingFinnhubKey => 'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
+  String get errMissingFinnhubKey =>
+      'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
 
   @override
-  String get errMarketUnreachable => 'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errMarketUnreachable =>
+      'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String get errMarketRateLimited =>
@@ -460,52 +471,56 @@ class AppLocalizationsUr extends AppLocalizations {
   String get back => 'واپس';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI تجزیہ';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI کا لکھا ہوا تفصیلی جائزہ: حالیہ خبروں کا خلاصہ، کاروبار، مضبوط پہلو، خطرات اور پوشیدہ عوامل، قدر کا تعین اور کن باتوں پر نظر رکھیں۔';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => 'تجزیہ تیار کریں';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => 'دوبارہ تیار کریں';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'تجزیہ تیار ہو رہا ہے… اس میں ایک دو منٹ لگ سکتے ہیں۔';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => 'ماخذ';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return 'تیار کیا گیا $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      'عوامی ڈیٹا اور حالیہ خبروں پر مبنی AI سے تیار کردہ تجزیہ۔ اس میں غلطیاں ہو سکتی ہیں یا یہ پرانا ہو سکتا ہے، اور یہ سرمایہ کاری کا مشورہ نہیں ہے۔';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI تجزیہ ترتیب نہیں دیا گیا (ANTHROPIC_API_KEY موجود نہیں)۔';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'AI سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI سروس نے ایک خرابی واپس کی (HTTP $status)۔';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused =>
+      'AI سروس نے اس شیئر کا تجزیہ کرنے سے انکار کر دیا۔';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI سروس سے غیر متوقع جواب۔';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => 'قیمت کا چارٹ';
 
   @override
   String get rangeOneWeek => '1W';
@@ -523,50 +538,65 @@ class AppLocalizationsUr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'موجودہ ڈیٹا ماخذ سے قیمت کی تاریخ دستیاب نہیں ہے۔';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => 'مالیاتی گوشوارے (سالانہ)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => 'مالی سال';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => 'آمدنی';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => 'خالص منافع';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => 'کل اثاثے';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => 'کل واجبات';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => 'شیئر ہولڈرز کی ایکویٹی';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => 'آپریٹنگ کیش فلو';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'اس شیئر کے لیے رپورٹ شدہ مالیاتی گوشوارے دستیاب نہیں ہیں۔';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'لاگ ان پر شروع کریں';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'گلوبل شارٹ کٹ';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => 'یہاں کلک کریں، پھر نیا کی کمبینیشن دبائیں';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => 'ڈیفالٹ پر ری سیٹ کریں';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'کلپ بورڈ سے تصویر پیسٹ کریں';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'کلپ بورڈ میں کوئی تصویر نہیں ہے۔';
+
+  @override
+  String get favorites => 'پسندیدہ';
+
+  @override
+  String get addToFavorites => 'پسندیدہ میں شامل کریں';
+
+  @override
+  String get removeFromFavorites => 'پسندیدہ سے ہٹائیں';
+
+  @override
+  String get noFavorites =>
+      'ابھی تک کوئی پسندیدہ نہیں۔ شامل کرنے کے لیے کسی شیئر پر ستارے کو ٹیپ کریں۔';
 }

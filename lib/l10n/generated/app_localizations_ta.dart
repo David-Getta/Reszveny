@@ -13,7 +13,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline => 'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
+  String get homeTagline =>
+      'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ஆய்வாளர்கள்', one: '1 ஆய்வாளர்');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ஆய்வாளர்கள்',
+      one: '1 ஆய்வாளர்',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsTa extends AppLocalizations {
       'பட அடையாளம் அமைக்கப்படவில்லை (ANTHROPIC_API_KEY இல்லை). டிக்கரை கைமுறையாக உள்ளிடுக.';
 
   @override
-  String get errRecognitionUnreachable => 'அடையாள சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
+  String get errRecognitionUnreachable =>
+      'அடையாள சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +353,27 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'அடையாள சேவை இந்தப் படத்தைச் செயலாக்க முடியவில்லை.';
+  String get errRecognitionRefused =>
+      'அடையாள சேவை இந்தப் படத்தைச் செயலாக்க முடியவில்லை.';
 
   @override
-  String get errRecognitionTruncated => 'அடையாளப் பதில் முழுமையாகக் கிடைக்கவில்லை. மீண்டும் முயற்சிக்கவும்.';
+  String get errRecognitionTruncated =>
+      'அடையாளப் பதில் முழுமையாகக் கிடைக்கவில்லை. மீண்டும் முயற்சிக்கவும்.';
 
   @override
-  String get errRecognitionBadResponse => 'அடையாள சேவையிலிருந்து எதிர்பாராத பதில்.';
+  String get errRecognitionBadResponse =>
+      'அடையாள சேவையிலிருந்து எதிர்பாராத பதில்.';
 
   @override
   String get errRecognitionEmpty => 'அடையாள சேவை வெற்றுப் பதிலைத் திருப்பியது.';
 
   @override
-  String get errMissingFinnhubKey => 'சந்தைத் தரவு அமைக்கப்படவில்லை (FINNHUB_API_KEY இல்லை).';
+  String get errMissingFinnhubKey =>
+      'சந்தைத் தரவு அமைக்கப்படவில்லை (FINNHUB_API_KEY இல்லை).';
 
   @override
-  String get errMarketUnreachable => 'சந்தைத் தரவு சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
+  String get errMarketUnreachable =>
+      'சந்தைத் தரவு சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +385,8 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'சந்தைத் தரவு சேவையிலிருந்து எதிர்பாராத பதில்.';
+  String get errMarketBadResponse =>
+      'சந்தைத் தரவு சேவையிலிருந்து எதிர்பாராத பதில்.';
 
   @override
   String errNoQuote(String symbol) {
@@ -460,52 +473,56 @@ class AppLocalizationsTa extends AppLocalizations {
   String get back => 'பின்';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI பகுப்பாய்வு';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI எழுதிய விரிவான கண்ணோட்டம்: சமீபத்திய செய்திகளின் சுருக்கம், வணிகம், பலங்கள், அபாயங்கள் மற்றும் மறைந்த காரணிகள், மதிப்பீடு மற்றும் கவனிக்க வேண்டியவை.';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => 'பகுப்பாய்வை உருவாக்கு';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => 'மீண்டும் உருவாக்கு';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'பகுப்பாய்வு தயாராகிறது… இதற்கு ஓரிரு நிமிடங்கள் ஆகலாம்.';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => 'ஆதாரங்கள்';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return 'உருவாக்கப்பட்டது $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      'பொதுத் தரவு மற்றும் சமீபத்திய செய்திகளின் அடிப்படையில் AI உருவாக்கிய பகுப்பாய்வு. இதில் பிழைகள் இருக்கலாம் அல்லது காலாவதியானதாக இருக்கலாம்; இது முதலீட்டு ஆலோசனை அல்ல.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI பகுப்பாய்வு அமைக்கப்படவில்லை (ANTHROPIC_API_KEY இல்லை).';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'AI சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI சேவை பிழையைத் திருப்பியது (HTTP $status).';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused =>
+      'AI சேவை இந்தப் பங்கைப் பகுப்பாய்வு செய்ய மறுத்தது.';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI சேவையிலிருந்து எதிர்பாராத பதில்.';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => 'விலை விளக்கப்படம்';
 
   @override
   String get rangeOneWeek => '1W';
@@ -523,50 +540,66 @@ class AppLocalizationsTa extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'தற்போதைய தரவு மூலத்திலிருந்து விலை வரலாறு கிடைக்கவில்லை.';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => 'நிதி அறிக்கைகள் (ஆண்டு)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => 'நிதியாண்டு';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => 'வருவாய்';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => 'நிகர லாபம்';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => 'மொத்த சொத்துகள்';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => 'மொத்த கடன்பொறுப்புகள்';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => 'பங்குதாரர்களின் பங்கு மூலதனம்';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => 'இயக்க பணப்புழக்கம்';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'இந்தப் பங்கிற்கான அறிவிக்கப்பட்ட நிதி அறிக்கைகள் கிடைக்கவில்லை.';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'உள்நுழையும்போது தொடங்கு';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'குளோபல் ஷார்ட்கட்';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint =>
+      'இங்கே கிளிக் செய்து, பின்னர் புதிய விசைச் சேர்க்கையை அழுத்துங்கள்';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => 'இயல்புநிலைக்கு மீட்டமை';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'கிளிப்போர்டிலிருந்து படத்தை ஒட்டு';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'கிளிப்போர்டில் படம் எதுவும் இல்லை.';
+
+  @override
+  String get favorites => 'பிடித்தவை';
+
+  @override
+  String get addToFavorites => 'பிடித்தவற்றில் சேர்';
+
+  @override
+  String get removeFromFavorites => 'பிடித்தவற்றிலிருந்து நீக்கு';
+
+  @override
+  String get noFavorites =>
+      'பிடித்தவை இன்னும் இல்லை. சேர்க்க ஒரு பங்கின் நட்சத்திரத்தைத் தட்டுங்கள்.';
 }

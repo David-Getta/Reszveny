@@ -54,7 +54,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noCandidatesTitle => '銘柄を認識できませんでした';
 
   @override
-  String get noCandidatesBody => 'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
+  String get noCandidatesBody =>
+      'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
 
   @override
   String get whatWeSaw => '認識した内容';
@@ -80,7 +81,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about => 'このアプリについて';
 
   @override
-  String get disclaimer => 'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
+  String get disclaimer =>
+      'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
 
   @override
   String dataSource(String source) {
@@ -303,7 +305,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'アナリスト$count名', one: 'アナリスト1名');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'アナリスト$count名',
+      one: 'アナリスト1名',
+    );
     return '$_temp0';
   }
 
@@ -331,10 +338,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recognitionRawText => '画像から読み取ったテキスト';
 
   @override
-  String get errMissingAnthropicKey => '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
+  String get errMissingAnthropicKey =>
+      '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
 
   @override
-  String get errRecognitionUnreachable => '認識サービスに接続できませんでした。インターネット接続を確認してください。';
+  String get errRecognitionUnreachable =>
+      '認識サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errRecognitionHttp(String status) {
@@ -455,113 +464,125 @@ class AppLocalizationsJa extends AppLocalizations {
   String get back => '戻る';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI 分析';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、注目ポイント。';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => '分析を生成';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => '再生成';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating => '分析を準備中…1〜2分かかることがあります。';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => '情報源';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return '生成：$time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI 分析が設定されていません（ANTHROPIC_API_KEY がありません）。';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable => 'AI サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI サービスがエラーを返しました（HTTP $status）。';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused => 'AI サービスがこの銘柄の分析を拒否しました。';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI サービスから予期しない応答がありました。';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => '株価チャート';
 
   @override
-  String get rangeOneWeek => '1W';
+  String get rangeOneWeek => '1週';
 
   @override
-  String get rangeOneMonth => '1M';
+  String get rangeOneMonth => '1月';
 
   @override
-  String get rangeThreeMonths => '3M';
+  String get rangeThreeMonths => '3月';
 
   @override
-  String get rangeOneYear => '1Y';
+  String get rangeOneYear => '1年';
 
   @override
-  String get rangeFiveYears => '5Y';
+  String get rangeFiveYears => '5年';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable => '現在のデータ提供元では株価の履歴を取得できません。';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => '財務諸表（年次）';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => '会計年度';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => '売上高';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => '純利益';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => '総資産';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => '負債合計';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => '株主資本';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => '営業キャッシュフロー';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable => 'この銘柄の財務諸表は利用できません。';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'ログイン時に起動';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'グローバルショートカット';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => 'ここをクリックして、新しいキーの組み合わせを押してください';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => '既定値に戻す';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'クリップボードから画像を貼り付け';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'クリップボードに画像がありません。';
+
+  @override
+  String get favorites => 'お気に入り';
+
+  @override
+  String get addToFavorites => 'お気に入りに追加';
+
+  @override
+  String get removeFromFavorites => 'お気に入りから削除';
+
+  @override
+  String get noFavorites => 'お気に入りはまだありません。銘柄の星をタップして追加してください。';
 }

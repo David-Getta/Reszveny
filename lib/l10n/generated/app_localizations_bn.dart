@@ -13,7 +13,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline => 'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
+  String get homeTagline =>
+      'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count বিশ্লেষক', one: '1 বিশ্লেষক');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count বিশ্লেষক',
+      one: '1 বিশ্লেষক',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsBn extends AppLocalizations {
       'ছবি শনাক্তকরণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)। টিকার ম্যানুয়ালি লিখুন।';
 
   @override
-  String get errRecognitionUnreachable => 'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errRecognitionUnreachable =>
+      'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +353,28 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
+  String get errRecognitionRefused =>
+      'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
 
   @override
-  String get errRecognitionTruncated => 'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
+  String get errRecognitionTruncated =>
+      'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
 
   @override
-  String get errRecognitionBadResponse => 'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errRecognitionBadResponse =>
+      'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
-  String get errRecognitionEmpty => 'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
+  String get errRecognitionEmpty =>
+      'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
 
   @override
-  String get errMissingFinnhubKey => 'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
+  String get errMissingFinnhubKey =>
+      'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
 
   @override
-  String get errMarketUnreachable => 'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errMarketUnreachable =>
+      'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +386,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errMarketBadResponse =>
+      'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
   String errNoQuote(String symbol) {
@@ -460,52 +474,56 @@ class AppLocalizationsBn extends AppLocalizations {
   String get back => 'ফিরে যান';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI বিশ্লেষণ';
 
   @override
   String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+      'AI-এর লেখা বিস্তারিত পর্যালোচনা: সাম্প্রতিক খবরের সারসংক্ষেপ, ব্যবসা, শক্তির দিক, ঝুঁকি ও লুকানো বিষয়, মূল্যায়ন এবং কোন বিষয়গুলিতে নজর রাখবেন।';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => 'বিশ্লেষণ তৈরি করুন';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => 'আবার তৈরি করুন';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'বিশ্লেষণ প্রস্তুত করা হচ্ছে… এতে এক-দুই মিনিট লাগতে পারে।';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => 'উৎস';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return 'তৈরি $time';
   }
 
   @override
   String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+      'সর্বজনীন ডেটা ও সাম্প্রতিক খবরের ভিত্তিতে AI-তৈরি বিশ্লেষণ। এতে ভুল থাকতে পারে বা এটি পুরোনো হতে পারে, এবং এটি বিনিয়োগ পরামর্শ নয়।';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI বিশ্লেষণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)।';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'AI সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI সেবা একটি ত্রুটি ফেরত দিয়েছে (HTTP $status)।';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused =>
+      'AI সেবা এই শেয়ারটি বিশ্লেষণ করতে অস্বীকার করেছে।';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => 'দামের চার্ট';
 
   @override
   String get rangeOneWeek => '1W';
@@ -523,50 +541,66 @@ class AppLocalizationsBn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'বর্তমান ডেটা উৎস থেকে দামের ইতিহাস পাওয়া যায় না।';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => 'আর্থিক বিবরণী (বার্ষিক)';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => 'অর্থবছর';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => 'রাজস্ব';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => 'নিট আয়';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => 'মোট সম্পদ';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => 'মোট দায়';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => 'শেয়ারহোল্ডারদের ইক্যুইটি';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => 'অপারেটিং ক্যাশ ফ্লো';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'এই শেয়ারের জন্য প্রকাশিত আর্থিক বিবরণী পাওয়া যায়নি।';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => 'লগইনের সময় চালু করুন';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => 'গ্লোবাল শর্টকাট';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint =>
+      'এখানে ক্লিক করুন, তারপর নতুন কী কম্বিনেশন চাপুন';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => 'ডিফল্টে রিসেট করুন';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => 'ক্লিপবোর্ড থেকে ছবি পেস্ট করুন';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => 'ক্লিপবোর্ডে কোনো ছবি নেই।';
+
+  @override
+  String get favorites => 'পছন্দের';
+
+  @override
+  String get addToFavorites => 'পছন্দের তালিকায় যোগ করুন';
+
+  @override
+  String get removeFromFavorites => 'পছন্দের তালিকা থেকে সরান';
+
+  @override
+  String get noFavorites =>
+      'এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।';
 }

@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Klicka här och tryck sedan på den nya tangentkombinationen",
   "hotkeyReset": "Återställ till standard",
   "pasteImage": "Klistra in bild från urklipp",
-  "errClipboardNoImage": "Det finns ingen bild i urklipp."
+  "errClipboardNoImage": "Det finns ingen bild i urklipp.",
+  "favorites": "Favoriter",
+  "addToFavorites": "Lägg till i favoriter",
+  "removeFromFavorites": "Ta bort från favoriter",
+  "noFavorites": "Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den."
 }

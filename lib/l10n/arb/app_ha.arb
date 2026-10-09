@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Danna nan, sannan ka danna sabon haɗin maɓallan",
   "hotkeyReset": "Mayar da tsoho",
   "pasteImage": "Liƙa hoto daga clipboard",
-  "errClipboardNoImage": "Babu hoto a clipboard."
+  "errClipboardNoImage": "Babu hoto a clipboard.",
+  "favorites": "Abubuwan da aka fi so",
+  "addToFavorites": "Ƙara zuwa abubuwan da aka fi so",
+  "removeFromFavorites": "Cire daga abubuwan da aka fi so",
+  "noFavorites": "Babu abubuwan da aka fi so tukuna. Taɓa tauraron da ke kan hannun jari don ƙara shi."
 }

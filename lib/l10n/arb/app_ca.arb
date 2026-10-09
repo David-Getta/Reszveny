@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Fes clic aquí i prem la nova combinació de tecles",
   "hotkeyReset": "Restablir el valor predeterminat",
   "pasteImage": "Enganxar imatge del porta-retalls",
-  "errClipboardNoImage": "No hi ha cap imatge al porta-retalls."
+  "errClipboardNoImage": "No hi ha cap imatge al porta-retalls.",
+  "favorites": "Favorits",
+  "addToFavorites": "Afegir als favorits",
+  "removeFromFavorites": "Eliminar dels favorits",
+  "noFavorites": "Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la."
 }

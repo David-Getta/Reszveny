@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Napsauta tätä ja paina sitten uutta näppäinyhdistelmää",
   "hotkeyReset": "Palauta oletus",
   "pasteImage": "Liitä kuva leikepöydältä",
-  "errClipboardNoImage": "Leikepöydällä ei ole kuvaa."
+  "errClipboardNoImage": "Leikepöydällä ei ole kuvaa.",
+  "favorites": "Suosikit",
+  "addToFavorites": "Lisää suosikkeihin",
+  "removeFromFavorites": "Poista suosikeista",
+  "noFavorites": "Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen."
 }

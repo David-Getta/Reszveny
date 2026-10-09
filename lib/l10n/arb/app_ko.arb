@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "여기를 클릭한 뒤 새 키 조합을 누르세요",
   "hotkeyReset": "기본값으로 재설정",
   "pasteImage": "클립보드에서 이미지 붙여넣기",
-  "errClipboardNoImage": "클립보드에 이미지가 없습니다."
+  "errClipboardNoImage": "클립보드에 이미지가 없습니다.",
+  "favorites": "즐겨찾기",
+  "addToFavorites": "즐겨찾기에 추가",
+  "removeFromFavorites": "즐겨찾기에서 제거",
+  "noFavorites": "아직 즐겨찾기가 없습니다. 종목의 별을 탭하여 추가하세요."
 }

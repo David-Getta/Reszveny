@@ -353,25 +353,32 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Сервис за препознавање није могао да обради ову слику.';
+  String get errRecognitionRefused =>
+      'Сервис за препознавање није могао да обради ову слику.';
 
   @override
-  String get errRecognitionTruncated => 'Одговор препознавања је прекинут. Покушајте поново.';
+  String get errRecognitionTruncated =>
+      'Одговор препознавања је прекинут. Покушајте поново.';
 
   @override
-  String get errRecognitionBadResponse => 'Неочекиван одговор сервиса за препознавање.';
+  String get errRecognitionBadResponse =>
+      'Неочекиван одговор сервиса за препознавање.';
 
   @override
-  String get errRecognitionEmpty => 'Сервис за препознавање је вратио празан одговор.';
+  String get errRecognitionEmpty =>
+      'Сервис за препознавање је вратио празан одговор.';
 
   @override
-  String get errMissingFinnhubKey => 'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
+  String get errMarketUnreachable =>
+      'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
 
   @override
-  String get errMarketRateLimited => 'Превише захтева ка сервису тржишних података. Сачекајте минут.';
+  String get errMarketRateLimited =>
+      'Превише захтева ка сервису тржишних података. Сачекајте минут.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +386,8 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Неочекиван одговор сервиса тржишних података.';
+  String get errMarketBadResponse =>
+      'Неочекиван одговор сервиса тржишних података.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +487,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get aiRegenerate => 'Генериши поново';
 
   @override
-  String get aiGenerating => 'Припремамо анализу… ово може потрајати минут или два.';
+  String get aiGenerating =>
+      'Припремамо анализу… ово може потрајати минут или два.';
 
   @override
   String get aiSources => 'Извори';
@@ -494,10 +503,12 @@ class AppLocalizationsSr extends AppLocalizations {
       'Анализа коју је генерисала вештачка интелигенција на основу јавних података и недавних вести. Може садржати грешке или бити застарела и не представља инвестициони савет.';
 
   @override
-  String get errAiNotConfigured => 'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
+  String get errAiUnreachable =>
+      'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +540,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get rangeFiveYears => '5Г';
 
   @override
-  String get chartUnavailable => 'Историја цена није доступна из тренутног извора података.';
+  String get chartUnavailable =>
+      'Историја цена није доступна из тренутног извора података.';
 
   @override
   String get sectionStatements => 'Финансијски извештаји (годишњи)';
@@ -556,7 +568,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Оперативни новчани ток';
 
   @override
-  String get statementsUnavailable => 'Објављени финансијски извештаји нису доступни за ову акцију.';
+  String get statementsUnavailable =>
+      'Објављени финансијски извештаји нису доступни за ову акцију.';
 
   @override
   String get launchAtLogin => 'Покрени при пријављивању';
@@ -565,7 +578,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get hotkeyLabel => 'Глобална пречица';
 
   @override
-  String get hotkeyRecordHint => 'Кликните овде, а затим притисните нову комбинацију тастера';
+  String get hotkeyRecordHint =>
+      'Кликните овде, а затим притисните нову комбинацију тастера';
 
   @override
   String get hotkeyReset => 'Врати на подразумевано';
@@ -575,4 +589,17 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get errClipboardNoImage => 'У клипборду нема слике.';
+
+  @override
+  String get favorites => 'Омиљено';
+
+  @override
+  String get addToFavorites => 'Додај у омиљене';
+
+  @override
+  String get removeFromFavorites => 'Уклони из омиљених';
+
+  @override
+  String get noFavorites =>
+      'Још нема омиљених. Додирните звездицу поред акције да бисте је додали.';
 }

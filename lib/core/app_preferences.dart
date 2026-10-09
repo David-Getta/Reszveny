@@ -5,12 +5,18 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 /// Felhasználói beállítások: megjelenés (téma) és a legutóbbi keresések.
 class AppPreferences extends ChangeNotifier {
-  AppPreferences({this.themeMode = ThemeMode.system, List<String> recent = const [], this.hotkeyJson})
-    : _recent = List.of(recent);
+  AppPreferences({
+    this.themeMode = ThemeMode.system,
+    List<String> recent = const [],
+    List<String> favorites = const [],
+    this.hotkeyJson,
+  }) : _recent = List.of(recent),
+       _favorites = List.of(favorites);
 
   static const _themeKey = 'theme_mode';
   static const _recentKey = 'recent_symbols';
   static const _hotkeyKey = 'global_hotkey';
+  static const _favoritesKey = 'favorite_symbols';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -18,6 +24,10 @@ class AppPreferences extends ChangeNotifier {
 
   List<String> _recent;
   List<String> get recent => List.unmodifiable(_recent);
+
+  final List<String> _favorites;
+  List<String> get favorites => List.unmodifiable(_favorites);
+  bool isFavorite(String symbol) => _favorites.contains(symbol.toUpperCase());
 
   /// A felhasználó által átállított globális gyorsbillentyű (hotkey_manager
   /// JSON-ja), vagy `null` az alapértelmezetthez.
@@ -31,6 +41,7 @@ class AppPreferences extends ChangeNotifier {
       return AppPreferences(
         themeMode: mode,
         recent: prefs.getStringList(_recentKey) ?? const [],
+        favorites: prefs.getStringList(_favoritesKey) ?? const [],
         hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
       );
     } catch (_) {
@@ -53,6 +64,14 @@ class AppPreferences extends ChangeNotifier {
     if (_recent.length > maxRecent) _recent = _recent.sublist(0, maxRecent);
     notifyListeners();
     await _save((p) => p.setStringList(_recentKey, _recent));
+  }
+
+  Future<void> toggleFavorite(String symbol) async {
+    final s = symbol.trim().toUpperCase();
+    if (s.isEmpty) return;
+    if (!_favorites.remove(s)) _favorites.insert(0, s);
+    notifyListeners();
+    await _save((p) => p.setStringList(_favoritesKey, _favorites));
   }
 
   Future<void> setHotkeyJson(Map<String, dynamic>? json) async {

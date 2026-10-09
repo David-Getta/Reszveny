@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Kliknite ovdje, a zatim pritisnite novu kombinaciju tipki",
   "hotkeyReset": "Vrati na zadano",
   "pasteImage": "Zalijepi sliku iz međuspremnika",
-  "errClipboardNoImage": "U međuspremniku nema slike."
+  "errClipboardNoImage": "U međuspremniku nema slike.",
+  "favorites": "Favoriti",
+  "addToFavorites": "Dodaj u favorite",
+  "removeFromFavorites": "Ukloni iz favorita",
+  "noFavorites": "Još nema favorita. Dodirnite zvjezdicu pored dionice da biste je dodali."
 }

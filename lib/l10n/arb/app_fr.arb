@@ -172,5 +172,9 @@
   "hotkeyRecordHint": "Cliquez ici, puis appuyez sur la nouvelle combinaison de touches",
   "hotkeyReset": "Rétablir la valeur par défaut",
   "pasteImage": "Coller l’image du presse-papiers",
-  "errClipboardNoImage": "Le presse-papiers ne contient aucune image."
+  "errClipboardNoImage": "Le presse-papiers ne contient aucune image.",
+  "favorites": "Favoris",
+  "addToFavorites": "Ajouter aux favoris",
+  "removeFromFavorites": "Retirer des favoris",
+  "noFavorites": "Aucun favori pour l’instant. Appuyez sur l’étoile d’une action pour l’ajouter."
 }

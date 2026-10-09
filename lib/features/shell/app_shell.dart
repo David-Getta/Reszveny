@@ -146,34 +146,36 @@ class _Sidebar extends StatelessWidget {
             child: _SidebarButton(icon: Icons.add_rounded, label: l10n.newSearch, onTap: onNewSearch, accent: true),
           ),
           _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings),
-          const SizedBox(height: 16),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(24, 8, 16, 6),
-            child: Text(
-              l10n.recentSearches.toUpperCase(),
-              style: theme.textTheme.labelSmall?.copyWith(color: p.muted, letterSpacing: 0.8),
-            ),
-          ),
+          const SizedBox(height: 8),
           Expanded(
             child: ListenableBuilder(
               listenable: services.preferences,
               builder: (context, _) {
+                final favorites = services.preferences.favorites;
                 final recent = services.preferences.recent;
-                if (recent.isEmpty) {
-                  return Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 4, 16, 0),
-                    child: Text(l10n.noRecentSearches, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                  );
-                }
+                Widget header(String text) => Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 14, 16, 6),
+                  child: Text(
+                    text.toUpperCase(),
+                    style: theme.textTheme.labelSmall?.copyWith(color: p.muted, letterSpacing: 0.8),
+                  ),
+                );
+                Widget empty(String text) => Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 4, 16, 0),
+                  child: Text(text, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                );
+                StockCandidate cand(String s) => StockCandidate(symbol: s, companyName: s, confidence: 1);
                 return ListView(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   children: [
+                    header(l10n.favorites),
+                    if (favorites.isEmpty) empty(l10n.noFavorites),
+                    for (final s in favorites)
+                      _SidebarButton(icon: Icons.star_rounded, label: s, onTap: () => onOpenSymbol(cand(s))),
+                    header(l10n.recentSearches),
+                    if (recent.isEmpty) empty(l10n.noRecentSearches),
                     for (final s in recent)
-                      _SidebarButton(
-                        icon: Icons.show_chart_rounded,
-                        label: s,
-                        onTap: () => onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
-                      ),
+                      _SidebarButton(icon: Icons.show_chart_rounded, label: s, onTap: () => onOpenSymbol(cand(s))),
                     if (recent.isNotEmpty)
                       _SidebarButton(
                         icon: Icons.delete_sweep_outlined,

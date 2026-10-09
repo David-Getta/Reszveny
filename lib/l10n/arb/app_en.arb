@@ -291,5 +291,9 @@
   "hotkeyRecordHint": "Click here, then press the new key combination",
   "hotkeyReset": "Reset to default",
   "pasteImage": "Paste image from clipboard",
-  "errClipboardNoImage": "There is no image on the clipboard."
+  "errClipboardNoImage": "There is no image on the clipboard.",
+  "favorites": "Favorites",
+  "addToFavorites": "Add to favorites",
+  "removeFromFavorites": "Remove from favorites",
+  "noFavorites": "No favorites yet. Tap the star on a stock to add it."
 }

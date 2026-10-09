@@ -303,7 +303,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析师',
+      one: '1 位分析师',
+    );
     return '$_temp0';
   }
 
@@ -331,7 +336,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey =>
+      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -455,115 +461,125 @@ class AppLocalizationsZh extends AppLocalizations {
   String get back => '返回';
 
   @override
-  String get aiSectionTitle => 'AI analysis';
+  String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值以及值得关注的要点。';
 
   @override
-  String get aiGenerate => 'Generate analysis';
+  String get aiGenerate => '生成分析';
 
   @override
-  String get aiRegenerate => 'Regenerate';
+  String get aiRegenerate => '重新生成';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating => '正在准备分析…这可能需要一到两分钟。';
 
   @override
-  String get aiSources => 'Sources';
+  String get aiSources => '来源';
 
   @override
   String aiGeneratedAt(String time) {
-    return 'Generated $time';
+    return '生成于 $time';
   }
 
   @override
-  String get aiDisclaimer =>
-      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+  String get aiDisclaimer => '基于公开数据和近期新闻由 AI 生成的分析。内容可能有误或已过时，不构成投资建议。';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI 分析未配置（缺少 ANTHROPIC_API_KEY）。';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable => '无法连接 AI 服务。请检查网络连接。';
 
   @override
   String errAiHttp(String status) {
-    return 'The AI service returned an error (HTTP $status).';
+    return 'AI 服务返回错误（HTTP $status）。';
   }
 
   @override
-  String get errAiRefused => 'The AI service declined to analyse this stock.';
+  String get errAiRefused => 'AI 服务拒绝分析这只股票。';
 
   @override
-  String get errAiBadResponse => 'Unexpected response from the AI service.';
+  String get errAiBadResponse => 'AI 服务返回了意外的响应。';
 
   @override
-  String get sectionChart => 'Price chart';
+  String get sectionChart => '价格走势';
 
   @override
-  String get rangeOneWeek => '1W';
+  String get rangeOneWeek => '1周';
 
   @override
-  String get rangeOneMonth => '1M';
+  String get rangeOneMonth => '1月';
 
   @override
-  String get rangeThreeMonths => '3M';
+  String get rangeThreeMonths => '3月';
 
   @override
-  String get rangeOneYear => '1Y';
+  String get rangeOneYear => '1年';
 
   @override
-  String get rangeFiveYears => '5Y';
+  String get rangeFiveYears => '5年';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable => '当前数据来源不提供历史价格。';
 
   @override
-  String get sectionStatements => 'Financial statements (annual)';
+  String get sectionStatements => '财务报表（年度）';
 
   @override
-  String get labelFiscalYear => 'Fiscal year';
+  String get labelFiscalYear => '财年';
 
   @override
-  String get labelRevenue => 'Revenue';
+  String get labelRevenue => '营业收入';
 
   @override
-  String get labelNetIncome => 'Net income';
+  String get labelNetIncome => '净利润';
 
   @override
-  String get labelTotalAssets => 'Total assets';
+  String get labelTotalAssets => '总资产';
 
   @override
-  String get labelTotalLiabilities => 'Total liabilities';
+  String get labelTotalLiabilities => '总负债';
 
   @override
-  String get labelEquity => 'Shareholders’ equity';
+  String get labelEquity => '股东权益';
 
   @override
-  String get labelOperatingCashFlow => 'Operating cash flow';
+  String get labelOperatingCashFlow => '经营现金流';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable => '暂无这只股票的已披露财务报表。';
 
   @override
-  String get launchAtLogin => 'Launch at login';
+  String get launchAtLogin => '登录时启动';
 
   @override
-  String get hotkeyLabel => 'Global shortcut';
+  String get hotkeyLabel => '全局快捷键';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint => '点击此处，然后按下新的组合键';
 
   @override
-  String get hotkeyReset => 'Reset to default';
+  String get hotkeyReset => '恢复默认';
 
   @override
-  String get pasteImage => 'Paste image from clipboard';
+  String get pasteImage => '从剪贴板粘贴图片';
 
   @override
-  String get errClipboardNoImage => 'There is no image on the clipboard.';
+  String get errClipboardNoImage => '剪贴板中没有图片。';
+
+  @override
+  String get favorites => '收藏';
+
+  @override
+  String get addToFavorites => '添加到收藏';
+
+  @override
+  String get removeFromFavorites => '从收藏中移除';
+
+  @override
+  String get noFavorites => '还没有收藏。点击股票上的星标即可添加。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -864,7 +880,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析員',
+      one: '1 位分析員',
+    );
     return '$_temp0';
   }
 
@@ -892,7 +913,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey =>
+      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -1014,4 +1036,125 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get back => '返回';
+
+  @override
+  String get aiSectionTitle => 'AI 分析';
+
+  @override
+  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值，以及值得留意的要點。';
+
+  @override
+  String get aiGenerate => '產生分析';
+
+  @override
+  String get aiRegenerate => '重新產生';
+
+  @override
+  String get aiGenerating => '正在準備分析…可能需要一至兩分鐘。';
+
+  @override
+  String get aiSources => '來源';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return '產生時間：$time';
+  }
+
+  @override
+  String get aiDisclaimer => '由 AI 根據公開數據及近期新聞產生的分析。內容可能有誤或已過時，並不構成投資建議。';
+
+  @override
+  String get errAiNotConfigured => '尚未設定 AI 分析（缺少 ANTHROPIC_API_KEY）。';
+
+  @override
+  String get errAiUnreachable => '無法連接 AI 服務。請檢查網絡連線。';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI 服務回傳錯誤（HTTP $status）。';
+  }
+
+  @override
+  String get errAiRefused => 'AI 服務拒絕分析這隻股票。';
+
+  @override
+  String get errAiBadResponse => 'AI 服務回傳了預期以外的回應。';
+
+  @override
+  String get sectionChart => '股價走勢';
+
+  @override
+  String get rangeOneWeek => '1週';
+
+  @override
+  String get rangeOneMonth => '1月';
+
+  @override
+  String get rangeThreeMonths => '3月';
+
+  @override
+  String get rangeOneYear => '1年';
+
+  @override
+  String get rangeFiveYears => '5年';
+
+  @override
+  String get chartUnavailable => '目前的數據來源不提供股價歷史。';
+
+  @override
+  String get sectionStatements => '財務報表（年度）';
+
+  @override
+  String get labelFiscalYear => '財政年度';
+
+  @override
+  String get labelRevenue => '收入';
+
+  @override
+  String get labelNetIncome => '純利';
+
+  @override
+  String get labelTotalAssets => '總資產';
+
+  @override
+  String get labelTotalLiabilities => '總負債';
+
+  @override
+  String get labelEquity => '股東權益';
+
+  @override
+  String get labelOperatingCashFlow => '經營現金流';
+
+  @override
+  String get statementsUnavailable => '沒有這隻股票的已公布財務報表。';
+
+  @override
+  String get launchAtLogin => '登入時啟動';
+
+  @override
+  String get hotkeyLabel => '全域快速鍵';
+
+  @override
+  String get hotkeyRecordHint => '按一下此處，然後按下新的組合鍵';
+
+  @override
+  String get hotkeyReset => '重設為預設值';
+
+  @override
+  String get pasteImage => '從剪貼簿貼上圖片';
+
+  @override
+  String get errClipboardNoImage => '剪貼簿中沒有圖片。';
+
+  @override
+  String get favorites => '收藏';
+
+  @override
+  String get addToFavorites => '加入收藏';
+
+  @override
+  String get removeFromFavorites => '從收藏中移除';
+
+  @override
+  String get noFavorites => '暫時未有收藏。點一下股票上的星星即可加入。';
 }
