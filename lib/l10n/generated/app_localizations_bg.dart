@@ -1,0 +1,410 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Bulgarian (`bg`).
+class AppLocalizationsBg extends AppLocalizations {
+  AppLocalizationsBg([String locale = 'bg']) : super(locale);
+
+  @override
+  String get appTitle => 'Reszveny';
+
+  @override
+  String get homeTagline => 'Снимайте акция и научете всичко за нея.';
+
+  @override
+  String get homeHint =>
+      'Сертификат за акции, екран на брокерско приложение, вестник или фирмено лого – всичко, което идентифицира акция.';
+
+  @override
+  String get takePhoto => 'Направи снимка';
+
+  @override
+  String get chooseFromGallery => 'Избор от галерията';
+
+  @override
+  String get chooseImage => 'Избор на изображение';
+
+  @override
+  String get enterTickerManually => 'Ръчно въвеждане на тикер';
+
+  @override
+  String get tickerInputLabel => 'Тикер символ';
+
+  @override
+  String get tickerInputHint => 'напр. AAPL';
+
+  @override
+  String get lookUp => 'Търсене';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Демо режим – не е конфигуриран ключ за пазарни данни. Примерни данни са налични за: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Анализ на изображението…';
+
+  @override
+  String get loadingData => 'Зареждане на данни…';
+
+  @override
+  String get noCandidatesTitle => 'Не е разпозната акция';
+
+  @override
+  String get noCandidatesBody =>
+      'Не успяхме да идентифицираме акция на това изображение. Опитайте с по-ясна снимка или въведете тикера ръчно.';
+
+  @override
+  String get whatWeSaw => 'Какво видяхме';
+
+  @override
+  String get chooseCandidateTitle => 'Коя акция имахте предвид?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% сигурност';
+  }
+
+  @override
+  String get settings => 'Настройки';
+
+  @override
+  String get language => 'Език';
+
+  @override
+  String get systemLanguage => 'Системен език';
+
+  @override
+  String get about => 'За приложението';
+
+  @override
+  String get disclaimer =>
+      'Това приложение предоставя само информация и не е инвестиционен съвет. Данните може да са забавени или неточни.';
+
+  @override
+  String dataSource(String source) {
+    return 'Източник на данни: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Разпознаване: $source';
+  }
+
+  @override
+  String get retry => 'Опитай отново';
+
+  @override
+  String get cancel => 'Отказ';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Затвори';
+
+  @override
+  String get errorGeneric => 'Нещо се обърка.';
+
+  @override
+  String get errorSectionUnavailable => 'Този раздел не можа да бъде зареден.';
+
+  @override
+  String get notAvailable => 'н/д';
+
+  @override
+  String get sectionIdentity => 'Идентификация';
+
+  @override
+  String get sectionPrice => 'Цена';
+
+  @override
+  String get sectionValuation => 'Оценка';
+
+  @override
+  String get sectionFinancials => 'Финансови показатели';
+
+  @override
+  String get sectionDividend => 'Дивидент';
+
+  @override
+  String get sectionProfile => 'Профил на компанията';
+
+  @override
+  String get sectionAnalysts => 'Оценки на аналитици';
+
+  @override
+  String get sectionNews => 'Новини';
+
+  @override
+  String get sectionRecognition => 'Детайли за разпознаването';
+
+  @override
+  String get labelSymbol => 'Тикер';
+
+  @override
+  String get labelExchange => 'Борса';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Валута';
+
+  @override
+  String get labelCountry => 'Държава';
+
+  @override
+  String get labelIndustry => 'Индустрия';
+
+  @override
+  String get labelSector => 'Сектор';
+
+  @override
+  String get labelWebsite => 'Уебсайт';
+
+  @override
+  String get labelIpoDate => 'Дата на IPO';
+
+  @override
+  String get labelMarketCap => 'Пазарна капитализация';
+
+  @override
+  String get labelSharesOutstanding => 'Акции в обращение';
+
+  @override
+  String get labelEmployees => 'Служители';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Централа';
+
+  @override
+  String get labelDescription => 'Описание';
+
+  @override
+  String get labelLastPrice => 'Последна цена';
+
+  @override
+  String get labelChange => 'Промяна';
+
+  @override
+  String get labelOpen => 'Отваряне';
+
+  @override
+  String get labelDayHigh => 'Дневен максимум';
+
+  @override
+  String get labelDayLow => 'Дневен минимум';
+
+  @override
+  String get labelPreviousClose => 'Предишно затваряне';
+
+  @override
+  String get labelWeek52High => '52-седмичен максимум';
+
+  @override
+  String get labelWeek52Low => '52-седмичен минимум';
+
+  @override
+  String get labelAverageVolume10d => 'Среден обем (10 дни)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Обновено $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (текущо)';
+
+  @override
+  String get labelPeForward => 'P/E (прогнозно)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / свободен паричен поток';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Бета';
+
+  @override
+  String get labelRevenueTtm => 'Приходи (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Нетна печалба (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Брутен марж';
+
+  @override
+  String get labelOperatingMargin => 'Операционен марж';
+
+  @override
+  String get labelNetMargin => 'Нетен марж';
+
+  @override
+  String get labelRoe => 'Възвръщаемост на капитала';
+
+  @override
+  String get labelRoa => 'Възвръщаемост на активите';
+
+  @override
+  String get labelDebtToEquity => 'Дълг / собствен капитал';
+
+  @override
+  String get labelCurrentRatio => 'Коефициент на текуща ликвидност';
+
+  @override
+  String get labelRevenueGrowth => 'Ръст на приходите (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Ръст на EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Дивидентна доходност';
+
+  @override
+  String get labelDividendPerShare => 'Дивидент на акция';
+
+  @override
+  String get labelPayoutRatio => 'Коефициент на изплащане';
+
+  @override
+  String get labelConsensus => 'Консенсус';
+
+  @override
+  String get ratingStrongBuy => 'Силна покупка';
+
+  @override
+  String get ratingBuy => 'Покупка';
+
+  @override
+  String get ratingHold => 'Задържане';
+
+  @override
+  String get ratingSell => 'Продажба';
+
+  @override
+  String get ratingStrongSell => 'Силна продажба';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count аналитици',
+      one: '1 аналитик',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Период: $period';
+  }
+
+  @override
+  String get noNews => 'Няма скорошни новини.';
+
+  @override
+  String get openArticle => 'Отвори статията';
+
+  @override
+  String get openLinkFailed => 'Връзката не можа да бъде отворена.';
+
+  @override
+  String get recognitionSummary => 'Обобщение';
+
+  @override
+  String get recognitionEvidence => 'Защо смятаме така';
+
+  @override
+  String get recognitionRawText => 'Текст, разчетен от изображението';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Разпознаването на изображения не е конфигурирано (няма ANTHROPIC_API_KEY). Въведете тикера ръчно.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Няма връзка с услугата за разпознаване. Проверете интернет връзката си.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Услугата за разпознаване върна грешка (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused =>
+      'Услугата за разпознаване не можа да обработи това изображение.';
+
+  @override
+  String get errRecognitionTruncated =>
+      'Отговорът от разпознаването беше прекъснат. Моля, опитайте отново.';
+
+  @override
+  String get errRecognitionBadResponse =>
+      'Неочакван отговор от услугата за разпознаване.';
+
+  @override
+  String get errRecognitionEmpty =>
+      'Услугата за разпознаване върна празен отговор.';
+
+  @override
+  String get errMissingFinnhubKey =>
+      'Пазарните данни не са конфигурирани (няма FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Няма връзка с услугата за пазарни данни. Проверете интернет връзката си.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Твърде много заявки към услугата за пазарни данни. Моля, изчакайте една минута.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Услугата за пазарни данни върна грешка (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse =>
+      'Неочакван отговор от услугата за пазарни данни.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Не са намерени ценови данни за $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Не е намерен профил на компания за $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Демо режимът поддържа само $symbols. Добавете FINNHUB_API_KEY за данни в реално време.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Нещо се обърка: $detail';
+  }
+}

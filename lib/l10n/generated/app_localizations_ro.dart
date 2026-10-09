@@ -1,0 +1,412 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Romanian Moldavian Moldovan (`ro`).
+class AppLocalizationsRo extends AppLocalizations {
+  AppLocalizationsRo([String locale = 'ro']) : super(locale);
+
+  @override
+  String get appTitle => 'Reszveny';
+
+  @override
+  String get homeTagline => 'Fotografiază o acțiune și află totul despre ea.';
+
+  @override
+  String get homeHint =>
+      'Un certificat de acțiuni, ecranul unei aplicații de brokeraj, un ziar sau logoul unei companii – orice identifică o acțiune.';
+
+  @override
+  String get takePhoto => 'Fă o fotografie';
+
+  @override
+  String get chooseFromGallery => 'Alege din galerie';
+
+  @override
+  String get chooseImage => 'Alege o imagine';
+
+  @override
+  String get enterTickerManually => 'Introdu simbolul manual';
+
+  @override
+  String get tickerInputLabel => 'Simbol (ticker)';
+
+  @override
+  String get tickerInputHint => 'ex. AAPL';
+
+  @override
+  String get lookUp => 'Caută';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Mod demo – nu este configurată nicio cheie pentru datele de piață. Date de exemplu disponibile pentru: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Se analizează imaginea…';
+
+  @override
+  String get loadingData => 'Se încarcă datele…';
+
+  @override
+  String get noCandidatesTitle => 'Nicio acțiune recunoscută';
+
+  @override
+  String get noCandidatesBody =>
+      'Nu am putut identifica o acțiune în această imagine. Încearcă o fotografie mai clară sau introdu simbolul manual.';
+
+  @override
+  String get whatWeSaw => 'Ce am văzut';
+
+  @override
+  String get chooseCandidateTitle => 'La ce acțiune te refereai?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% încredere';
+  }
+
+  @override
+  String get settings => 'Setări';
+
+  @override
+  String get language => 'Limbă';
+
+  @override
+  String get systemLanguage => 'Implicit (sistem)';
+
+  @override
+  String get about => 'Despre';
+
+  @override
+  String get disclaimer =>
+      'Această aplicație oferă doar informații și nu constituie consultanță de investiții. Datele pot fi întârziate sau inexacte.';
+
+  @override
+  String dataSource(String source) {
+    return 'Sursa datelor: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Recunoaștere: $source';
+  }
+
+  @override
+  String get retry => 'Reîncearcă';
+
+  @override
+  String get cancel => 'Anulează';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Închide';
+
+  @override
+  String get errorGeneric => 'Ceva nu a funcționat.';
+
+  @override
+  String get errorSectionUnavailable =>
+      'Această secțiune nu a putut fi încărcată.';
+
+  @override
+  String get notAvailable => 'n/a';
+
+  @override
+  String get sectionIdentity => 'Identificare';
+
+  @override
+  String get sectionPrice => 'Preț';
+
+  @override
+  String get sectionValuation => 'Evaluare';
+
+  @override
+  String get sectionFinancials => 'Date financiare';
+
+  @override
+  String get sectionDividend => 'Dividend';
+
+  @override
+  String get sectionProfile => 'Profilul companiei';
+
+  @override
+  String get sectionAnalysts => 'Evaluările analiștilor';
+
+  @override
+  String get sectionNews => 'Știri';
+
+  @override
+  String get sectionRecognition => 'Detalii despre recunoaștere';
+
+  @override
+  String get labelSymbol => 'Simbol';
+
+  @override
+  String get labelExchange => 'Bursă';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Monedă';
+
+  @override
+  String get labelCountry => 'Țară';
+
+  @override
+  String get labelIndustry => 'Industrie';
+
+  @override
+  String get labelSector => 'Sector';
+
+  @override
+  String get labelWebsite => 'Site web';
+
+  @override
+  String get labelIpoDate => 'Data IPO';
+
+  @override
+  String get labelMarketCap => 'Capitalizare bursieră';
+
+  @override
+  String get labelSharesOutstanding => 'Acțiuni în circulație';
+
+  @override
+  String get labelEmployees => 'Angajați';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Sediu central';
+
+  @override
+  String get labelDescription => 'Descriere';
+
+  @override
+  String get labelLastPrice => 'Ultimul preț';
+
+  @override
+  String get labelChange => 'Variație';
+
+  @override
+  String get labelOpen => 'Deschidere';
+
+  @override
+  String get labelDayHigh => 'Maximul zilei';
+
+  @override
+  String get labelDayLow => 'Minimul zilei';
+
+  @override
+  String get labelPreviousClose => 'Închiderea anterioară';
+
+  @override
+  String get labelWeek52High => 'Maxim 52 de săptămâni';
+
+  @override
+  String get labelWeek52Low => 'Minim 52 de săptămâni';
+
+  @override
+  String get labelAverageVolume10d => 'Volum mediu (10 zile)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Actualizat $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (istoric)';
+
+  @override
+  String get labelPeForward => 'P/E (estimat)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / flux de numerar liber';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Venituri (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Profit net (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Marjă brută';
+
+  @override
+  String get labelOperatingMargin => 'Marjă operațională';
+
+  @override
+  String get labelNetMargin => 'Marjă netă';
+
+  @override
+  String get labelRoe => 'Rentabilitatea capitalului propriu (ROE)';
+
+  @override
+  String get labelRoa => 'Rentabilitatea activelor (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Datorii / capital propriu';
+
+  @override
+  String get labelCurrentRatio => 'Rata lichidității curente';
+
+  @override
+  String get labelRevenueGrowth => 'Creșterea veniturilor (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Creșterea EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Randamentul dividendului';
+
+  @override
+  String get labelDividendPerShare => 'Dividend pe acțiune';
+
+  @override
+  String get labelPayoutRatio => 'Rata de distribuire (payout)';
+
+  @override
+  String get labelConsensus => 'Consens';
+
+  @override
+  String get ratingStrongBuy => 'Cumpărare puternică';
+
+  @override
+  String get ratingBuy => 'Cumpărare';
+
+  @override
+  String get ratingHold => 'Menținere';
+
+  @override
+  String get ratingSell => 'Vânzare';
+
+  @override
+  String get ratingStrongSell => 'Vânzare puternică';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de analiști',
+      few: '$count analiști',
+      one: '1 analist',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Perioadă: $period';
+  }
+
+  @override
+  String get noNews => 'Nu există știri recente.';
+
+  @override
+  String get openArticle => 'Deschide articolul';
+
+  @override
+  String get openLinkFailed => 'Linkul nu a putut fi deschis.';
+
+  @override
+  String get recognitionSummary => 'Rezumat';
+
+  @override
+  String get recognitionEvidence => 'De ce credem asta';
+
+  @override
+  String get recognitionRawText => 'Text citit din imagine';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Recunoașterea imaginilor nu este configurată (lipsește ANTHROPIC_API_KEY). Introdu simbolul manual.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Nu s-a putut contacta serviciul de recunoaștere. Verifică conexiunea la internet.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Serviciul de recunoaștere a returnat o eroare (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused =>
+      'Serviciul de recunoaștere nu a putut procesa această imagine.';
+
+  @override
+  String get errRecognitionTruncated =>
+      'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
+
+  @override
+  String get errRecognitionBadResponse =>
+      'Răspuns neașteptat de la serviciul de recunoaștere.';
+
+  @override
+  String get errRecognitionEmpty =>
+      'Serviciul de recunoaștere a returnat un răspuns gol.';
+
+  @override
+  String get errMissingFinnhubKey =>
+      'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Nu s-a putut contacta serviciul de date de piață. Verifică conexiunea la internet.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Serviciul de date de piață a returnat o eroare (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse =>
+      'Răspuns neașteptat de la serviciul de date de piață.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Nu s-au găsit date de preț pentru $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Nu s-a găsit profilul companiei pentru $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Modul demo acceptă doar $symbols. Adaugă o cheie FINNHUB_API_KEY pentru date în timp real.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Ceva nu a funcționat: $detail';
+  }
+}
