@@ -1,7 +1,9 @@
 import '../../core/errors.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
+import '../../core/models/financial_statements.dart';
 import '../../core/models/news_item.dart';
+import '../../core/models/price_history.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_quote.dart';
@@ -25,6 +27,73 @@ class DemoMarketDataProvider extends MarketDataProvider {
     if (!supportedSymbols.contains(symbol)) {
       throw MarketDataException(AppErrorCode.demoUnsupportedSymbol, detail: supportedSymbols.join(', '));
     }
+  }
+
+  @override
+  Future<PriceHistory> history(String symbol, {int years = 5}) async {
+    await _wait();
+    _check(symbol);
+    final last = (await quote(symbol)).price;
+    // Determinisztikus, bolyongás-szerű minta-sorozat, ami a mai árnál végződik.
+    final days = years * 252;
+    final values = List<double>.filled(days, 0);
+    var seed = symbol.codeUnits.fold<int>(7, (a, b) => (a * 31 + b) & 0x7fffffff);
+    double rnd() {
+      seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+      return seed / 0x7fffffff;
+    }
+
+    var v = 1.0;
+    for (var i = 0; i < days; i++) {
+      v *= 1 + (rnd() - 0.48) * 0.03;
+      values[i] = v;
+    }
+    final scale = last / values.last;
+    // Kereskedési napok visszafelé a mai naptól (hétvégék kihagyva).
+    final dates = <DateTime>[];
+    var d = DateTime.now();
+    while (dates.length < days) {
+      if (d.weekday <= DateTime.friday) dates.add(DateTime(d.year, d.month, d.day));
+      d = d.subtract(const Duration(days: 1));
+    }
+    final points = <PricePoint>[
+      for (var i = 0; i < days; i++)
+        PricePoint(
+          time: dates[days - 1 - i],
+          close: values[i] * scale,
+          open: values[i] * scale * 0.995,
+          high: values[i] * scale * 1.01,
+          low: values[i] * scale * 0.99,
+          volume: 40e6,
+        ),
+    ];
+    return PriceHistory(symbol: symbol, points: points);
+  }
+
+  @override
+  Future<FinancialStatements> statements(String symbol) async {
+    await _wait();
+    _check(symbol);
+    final m = await metrics(symbol);
+    final rev = m.revenueTtm ?? 1e9;
+    final ni = m.netIncomeTtm ?? 1e8;
+    final year = DateTime.now().year - 1;
+    return FinancialStatements(
+      symbol: symbol,
+      years: [
+        for (var k = 0; k < 4; k++)
+          AnnualFinancials(
+            fiscalYear: year - k,
+            periodEnd: DateTime(year - k, 12, 31),
+            revenue: rev * (1 - 0.08 * k),
+            netIncome: ni * (1 - 0.1 * k),
+            totalAssets: rev * 1.3,
+            totalLiabilities: rev * 0.8,
+            equity: rev * 0.5,
+            operatingCashFlow: ni * 1.2,
+          ),
+      ],
+    );
   }
 
   @override

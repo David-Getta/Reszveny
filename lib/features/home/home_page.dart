@@ -76,12 +76,19 @@ class _HomePageState extends State<HomePage> {
     setState(() => _results = results);
   }
 
-  Future<void> _capture(bool camera) async {
+  Future<void> _capture(bool camera) => _recognizeFrom(() async {
+    final services = AppServices.of(context);
+    return camera ? services.capture.fromCamera() : services.capture.fromGallery();
+  });
+
+  Future<void> _pasteImage() => _recognizeFrom(() => AppServices.of(context).capture.fromClipboard());
+
+  Future<void> _recognizeFrom(Future<CapturedImage?> Function() source) async {
     final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
     final CapturedImage? image;
     try {
-      image = camera ? await services.capture.fromCamera() : await services.capture.fromGallery();
+      image = await source();
     } catch (e) {
       _showError(e);
       return;
@@ -169,98 +176,123 @@ class _HomePageState extends State<HomePage> {
               ],
             )
           : PreferredSize(preferredSize: const Size.fromHeight(28), child: const WindowDragArea()),
-      body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 680),
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const SizedBox(height: 48),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.auto_graph_rounded, color: p.accent, size: 30),
-                      const SizedBox(width: 12),
-                      Flexible(
-                        child: Text(
-                          l10n.greeting,
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.headlineMedium?.copyWith(
-                            fontFamilyFallback: AppTheme.serifFallback,
-                            fontSize: 30,
+      body: CallbackShortcuts(
+        bindings: {
+          const SingleActivator(LogicalKeyboardKey.keyV, meta: true): _pasteIfNoText,
+          const SingleActivator(LogicalKeyboardKey.keyV, control: true): _pasteIfNoText,
+        },
+        child: SafeArea(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 680),
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const SizedBox(height: 48),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.auto_graph_rounded, color: p.accent, size: 30),
+                        const SizedBox(width: 12),
+                        Flexible(
+                          child: Text(
+                            l10n.greeting,
+                            textAlign: TextAlign.center,
+                            style: theme.textTheme.headlineMedium?.copyWith(
+                              fontFamilyFallback: AppTheme.serifFallback,
+                              fontSize: 30,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 28),
-                  SearchField(
-                    hint: l10n.searchHint,
-                    autofocus: true,
-                    enabled: !_busy,
-                    onSubmitted: _submit,
-                    leading: [
-                      _PillAction(
-                        icon: Icons.add_photo_alternate_outlined,
-                        tooltip: l10n.attachImage,
-                        onTap: _busy ? null : () => _capture(false),
-                      ),
-                      if (supportsCamera)
+                      ],
+                    ),
+                    const SizedBox(height: 28),
+                    SearchField(
+                      hint: l10n.searchHint,
+                      autofocus: true,
+                      enabled: !_busy,
+                      onSubmitted: _submit,
+                      leading: [
                         _PillAction(
-                          icon: Icons.photo_camera_outlined,
-                          tooltip: l10n.takePhoto,
-                          onTap: _busy ? null : () => _capture(true),
+                          icon: Icons.add_photo_alternate_outlined,
+                          tooltip: l10n.attachImage,
+                          onTap: _busy ? null : () => _capture(false),
                         ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    l10n.homeHint,
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                  ),
-                  const SizedBox(height: 24),
-                  if (_busy) ...[
-                    const Center(
-                      child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5)),
+                        if (supportsCamera)
+                          _PillAction(
+                            icon: Icons.photo_camera_outlined,
+                            tooltip: l10n.takePhoto,
+                            onTap: _busy ? null : () => _capture(true),
+                          ),
+                        if (DesktopIntegration.isSupported)
+                          _PillAction(
+                            icon: Icons.content_paste_rounded,
+                            tooltip: l10n.pasteImage,
+                            onTap: _busy ? null : _pasteImage,
+                          ),
+                      ],
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 12),
                     Text(
-                      _busyLabel ?? '',
+                      l10n.homeHint,
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: p.muted),
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
-                  ],
-                  if (_results != null)
-                    _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
-                  if (services.config.isDemoMode) ...[
                     const SizedBox(height: 24),
-                    _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
-                  ],
-                  if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
-                    const SizedBox(height: 24),
+                    if (_busy) ...[
+                      const Center(
+                        child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5)),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        _busyLabel ?? '',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: p.muted),
+                      ),
+                    ],
+                    if (_results != null)
+                      _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                    if (services.config.isDemoMode) ...[
+                      const SizedBox(height: 24),
+                      _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
+                    ],
+                    if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
+                      const SizedBox(height: 24),
+                      Text(
+                        l10n.hotkeyHint(services.desktop.shortcutLabel),
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                      ),
+                    ],
+                    const SizedBox(height: 40),
                     Text(
-                      l10n.hotkeyHint(DesktopIntegration.shortcutLabel),
+                      l10n.disclaimer,
                       textAlign: TextAlign.center,
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
                   ],
-                  const SizedBox(height: 40),
-                  Text(
-                    l10n.disclaimer,
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
         ),
       ),
     );
+  }
+
+  /// ⌘V / Ctrl+V: ha a vágólapon kép van, azt ismerjük fel; a szöveges
+  /// beillesztést a mező maga kezeli.
+  Future<void> _pasteIfNoText() async {
+    if (!DesktopIntegration.isSupported || _busy) return;
+    final services = AppServices.of(context);
+    try {
+      final image = await services.capture.fromClipboard();
+      await _recognizeFrom(() async => image);
+    } on AppException {
+      // Nincs kép: a TextField normál beillesztése fut.
+    }
   }
 }
 

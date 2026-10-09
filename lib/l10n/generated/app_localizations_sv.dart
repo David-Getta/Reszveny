@@ -111,8 +111,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get errorGeneric => 'Något gick fel.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Det här avsnittet kunde inte läsas in.';
+  String get errorSectionUnavailable => 'Det här avsnittet kunde inte läsas in.';
 
   @override
   String get notAvailable => 'ej tillg.';
@@ -307,12 +306,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analytiker',
-      one: '1 analytiker',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytiker', one: '1 analytiker');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Bildigenkänning är inte konfigurerad (ingen ANTHROPIC_API_KEY). Ange tickern manuellt.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
+  String get errRecognitionUnreachable => 'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,32 +346,25 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Igenkänningstjänsten kunde inte behandla bilden.';
+  String get errRecognitionRefused => 'Igenkänningstjänsten kunde inte behandla bilden.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Svaret från igenkänningstjänsten avbröts. Försök igen.';
+  String get errRecognitionTruncated => 'Svaret från igenkänningstjänsten avbröts. Försök igen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Oväntat svar från igenkänningstjänsten.';
+  String get errRecognitionBadResponse => 'Oväntat svar från igenkänningstjänsten.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Igenkänningstjänsten returnerade ett tomt svar.';
+  String get errRecognitionEmpty => 'Igenkänningstjänsten returnerade ett tomt svar.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marknadsdata är inte konfigurerad (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marknadsdata är inte konfigurerad (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
+  String get errMarketUnreachable => 'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
 
   @override
-  String get errMarketRateLimited =>
-      'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
+  String get errMarketRateLimited => 'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -471,4 +457,115 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get back => 'Tillbaka';
+
+  @override
+  String get aiSectionTitle => 'AI-analys';
+
+  @override
+  String get aiIntro =>
+      'En detaljerad, AI-skriven översikt: sammanfattning av aktuella nyheter, verksamheten, styrkor, risker och dolda faktorer, värdering och vad som är värt att bevaka.';
+
+  @override
+  String get aiGenerate => 'Generera analys';
+
+  @override
+  String get aiRegenerate => 'Generera igen';
+
+  @override
+  String get aiGenerating => 'Analysen förbereds… det kan ta en minut eller två.';
+
+  @override
+  String get aiSources => 'Källor';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Genererad $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-genererad analys baserad på offentliga data och aktuella nyheter. Den kan innehålla fel eller vara inaktuell och är inte investeringsrådgivning.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analys är inte konfigurerad (ingen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Kunde inte nå AI-tjänsten. Kontrollera din internetanslutning.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI-tjänsten returnerade ett fel (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI-tjänsten avböjde att analysera den här aktien.';
+
+  @override
+  String get errAiBadResponse => 'Oväntat svar från AI-tjänsten.';
+
+  @override
+  String get sectionChart => 'Kursdiagram';
+
+  @override
+  String get rangeOneWeek => '1V';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Å';
+
+  @override
+  String get rangeFiveYears => '5Å';
+
+  @override
+  String get chartUnavailable => 'Kurshistorik är inte tillgänglig från den aktuella datakällan.';
+
+  @override
+  String get sectionStatements => 'Finansiella rapporter (årliga)';
+
+  @override
+  String get labelFiscalYear => 'Räkenskapsår';
+
+  @override
+  String get labelRevenue => 'Omsättning';
+
+  @override
+  String get labelNetIncome => 'Nettoresultat';
+
+  @override
+  String get labelTotalAssets => 'Totala tillgångar';
+
+  @override
+  String get labelTotalLiabilities => 'Totala skulder';
+
+  @override
+  String get labelEquity => 'Eget kapital';
+
+  @override
+  String get labelOperatingCashFlow => 'Operativt kassaflöde';
+
+  @override
+  String get statementsUnavailable => 'Inga rapporterade finansiella rapporter är tillgängliga för den här aktien.';
+
+  @override
+  String get launchAtLogin => 'Starta vid inloggning';
+
+  @override
+  String get hotkeyLabel => 'Globalt kortkommando';
+
+  @override
+  String get hotkeyRecordHint => 'Klicka här och tryck sedan på den nya tangentkombinationen';
+
+  @override
+  String get hotkeyReset => 'Återställ till standard';
+
+  @override
+  String get pasteImage => 'Klistra in bild från urklipp';
+
+  @override
+  String get errClipboardNoImage => 'Det finns ingen bild i urklipp.';
 }

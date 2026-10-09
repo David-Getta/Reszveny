@@ -306,12 +306,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analytikere',
-      one: '1 analytiker',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytikere', one: '1 analytiker');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsNb extends AppLocalizations {
       'Bildegjenkjenning er ikke konfigurert (ingen ANTHROPIC_API_KEY). Skriv inn tickeren manuelt.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Kunne ikke nå gjenkjenningstjenesten. Sjekk internettforbindelsen din.';
+  String get errRecognitionUnreachable => 'Kunne ikke nå gjenkjenningstjenesten. Sjekk internettforbindelsen din.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Gjenkjenningstjenesten kunne ikke behandle dette bildet.';
+  String get errRecognitionRefused => 'Gjenkjenningstjenesten kunne ikke behandle dette bildet.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Svaret fra gjenkjenningstjenesten ble avbrutt. Prøv igjen.';
+  String get errRecognitionTruncated => 'Svaret fra gjenkjenningstjenesten ble avbrutt. Prøv igjen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Uventet svar fra gjenkjenningstjenesten.';
+  String get errRecognitionBadResponse => 'Uventet svar fra gjenkjenningstjenesten.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Gjenkjenningstjenesten returnerte et tomt svar.';
+  String get errRecognitionEmpty => 'Gjenkjenningstjenesten returnerte et tomt svar.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markedsdata er ikke konfigurert (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markedsdata er ikke konfigurert (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Kunne ikke nå markedsdatatjenesten. Sjekk internettforbindelsen din.';
+  String get errMarketUnreachable => 'Kunne ikke nå markedsdatatjenesten. Sjekk internettforbindelsen din.';
 
   @override
-  String get errMarketRateLimited =>
-      'For mange forespørsler til markedsdatatjenesten. Vent et minutt.';
+  String get errMarketRateLimited => 'For mange forespørsler til markedsdatatjenesten. Vent et minutt.';
 
   @override
   String errMarketHttp(String status) {
@@ -470,4 +457,115 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get back => 'Tilbake';
+
+  @override
+  String get aiSectionTitle => 'AI-analyse';
+
+  @override
+  String get aiIntro =>
+      'En detaljert, AI-skrevet oversikt: sammendrag av aktuelle nyheter, virksomheten, styrker, risikoer og skjulte faktorer, verdsettelse og hva du bør følge med på.';
+
+  @override
+  String get aiGenerate => 'Generer analyse';
+
+  @override
+  String get aiRegenerate => 'Generer på nytt';
+
+  @override
+  String get aiGenerating => 'Analysen forberedes… det kan ta et minutt eller to.';
+
+  @override
+  String get aiSources => 'Kilder';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generert $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-generert analyse basert på offentlige data og aktuelle nyheter. Den kan inneholde feil eller være utdatert, og er ikke investeringsråd.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analyse er ikke konfigurert (ingen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Kunne ikke nå AI-tjenesten. Sjekk internettforbindelsen din.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI-tjenesten returnerte en feil (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI-tjenesten avslo å analysere denne aksjen.';
+
+  @override
+  String get errAiBadResponse => 'Uventet svar fra AI-tjenesten.';
+
+  @override
+  String get sectionChart => 'Kursgraf';
+
+  @override
+  String get rangeOneWeek => '1U';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Å';
+
+  @override
+  String get rangeFiveYears => '5Å';
+
+  @override
+  String get chartUnavailable => 'Kurshistorikk er ikke tilgjengelig fra den gjeldende datakilden.';
+
+  @override
+  String get sectionStatements => 'Regnskap (årlig)';
+
+  @override
+  String get labelFiscalYear => 'Regnskapsår';
+
+  @override
+  String get labelRevenue => 'Omsetning';
+
+  @override
+  String get labelNetIncome => 'Nettoresultat';
+
+  @override
+  String get labelTotalAssets => 'Sum eiendeler';
+
+  @override
+  String get labelTotalLiabilities => 'Sum gjeld';
+
+  @override
+  String get labelEquity => 'Egenkapital';
+
+  @override
+  String get labelOperatingCashFlow => 'Kontantstrøm fra drift';
+
+  @override
+  String get statementsUnavailable => 'Det finnes ingen rapporterte regnskaper for denne aksjen.';
+
+  @override
+  String get launchAtLogin => 'Start ved innlogging';
+
+  @override
+  String get hotkeyLabel => 'Global hurtigtast';
+
+  @override
+  String get hotkeyRecordHint => 'Klikk her, og trykk deretter den nye tastekombinasjonen';
+
+  @override
+  String get hotkeyReset => 'Tilbakestill til standard';
+
+  @override
+  String get pasteImage => 'Lim inn bilde fra utklippstavlen';
+
+  @override
+  String get errClipboardNoImage => 'Det er ikke noe bilde på utklippstavlen.';
 }

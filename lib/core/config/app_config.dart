@@ -17,6 +17,8 @@ class AppConfig {
     this.anthropicModel = const String.fromEnvironment('ANTHROPIC_MODEL', defaultValue: 'claude-opus-5-5'),
     this.finnhubApiKey = const String.fromEnvironment('FINNHUB_API_KEY'),
     this.finnhubBaseUrl = const String.fromEnvironment('FINNHUB_BASE_URL', defaultValue: 'https://finnhub.io/api/v1'),
+    this.aiEffort = const String.fromEnvironment('ANTHROPIC_REPORT_EFFORT', defaultValue: 'high'),
+    this.aiWebSearch = const bool.fromEnvironment('ANTHROPIC_WEB_SEARCH', defaultValue: true),
   });
 
   final String anthropicApiKey;
@@ -24,6 +26,12 @@ class AppConfig {
   final String anthropicModel;
   final String finnhubApiKey;
   final String finnhubBaseUrl;
+
+  /// Az AI-elemzés alapossága (`low`…`max`).
+  final String aiEffort;
+
+  /// Kereshet-e a modell a weben friss hírek után az elemzéshez.
+  final bool aiWebSearch;
 
   bool get hasAnthropicKey => anthropicApiKey.isNotEmpty;
   bool get hasFinnhubKey => finnhubApiKey.isNotEmpty;

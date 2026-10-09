@@ -8,12 +8,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
+import 'package:reszveny/core/models/stock_details.dart';
+import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/features/analysis/report_store.dart';
+import 'package:reszveny/features/analysis/stock_analyst.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
@@ -41,6 +46,7 @@ AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) => AppS
   locale: LocaleController(initial: locale),
   preferences: AppPreferences(themeMode: mode, recent: const ['AAPL', 'NVDA', 'OTP']),
   desktop: DesktopIntegration(),
+  reports: ReportStore(analyst: _FakeAnalyst()),
 );
 
 Future<void> _loadFonts() async {
@@ -68,7 +74,41 @@ Future<void> _shot(WidgetTester tester, String name) async {
   });
 }
 
+class _FakeAnalyst implements StockAnalyst {
+  @override
+  String get name => 'test';
+
+  @override
+  Future<StockReport> analyze(StockDetails details, {String outputLanguage = 'English'}) async => StockReport(
+    symbol: details.symbol,
+    headline: 'Test headline',
+    sections: const [
+      ReportSection(
+        kind: ReportSectionKind.summary,
+        title: 'Summary',
+        paragraphs: ['NVIDIA dominates AI accelerators with ~80% share; growth is slowing from extreme levels.'],
+      ),
+      ReportSection(
+        kind: ReportSectionKind.news,
+        title: 'Recent news',
+        bullets: [
+          '2026-10-03: Q3 revenue guidance raised to \$62B.',
+          '2026-09-28: New export rules for China announced.',
+        ],
+      ),
+      ReportSection(
+        kind: ReportSectionKind.risks,
+        title: 'Risks and hidden factors',
+        bullets: ['Customer concentration: top 2 hyperscalers ≈ 40% of revenue.', 'Export controls on China.'],
+      ),
+    ],
+    sources: const [ReportSource(title: 'NVIDIA investor relations', url: 'https://investor.nvidia.com')],
+    generatedAt: DateTime.now(),
+  );
+}
+
 void main() {
+  setUp(() => SharedPreferences.setMockInitialValues({}));
   setUpAll(() async {
     await _loadFonts();
   });
@@ -102,6 +142,16 @@ void main() {
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_wide_dark');
+  });
+
+  testWidgets('detail with AI report', (tester) async {
+    await pumpApp(tester, _services(), const Size(1200, 1500));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Generate analysis'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_ai_report');
   });
 
   testWidgets('quick bar', (tester) async {

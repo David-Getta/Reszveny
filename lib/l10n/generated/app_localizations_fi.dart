@@ -343,8 +343,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Kuvantunnistusta ei ole määritetty (ei ANTHROPIC_API_KEY). Syötä tunnus manuaalisesti.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errRecognitionUnreachable => 'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +351,25 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
+  String get errRecognitionRefused => 'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
+  String get errRecognitionTruncated => 'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Odottamaton vastaus tunnistuspalvelulta.';
+  String get errRecognitionBadResponse => 'Odottamaton vastaus tunnistuspalvelulta.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Tunnistuspalvelu palautti tyhjän vastauksen.';
+  String get errRecognitionEmpty => 'Tunnistuspalvelu palautti tyhjän vastauksen.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errMarketUnreachable => 'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
-  String get errMarketRateLimited =>
-      'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
+  String get errMarketRateLimited => 'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +377,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Odottamaton vastaus markkinadatapalvelulta.';
+  String get errMarketBadResponse => 'Odottamaton vastaus markkinadatapalvelulta.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,4 +462,115 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get back => 'Takaisin';
+
+  @override
+  String get aiSectionTitle => 'Tekoälyanalyysi';
+
+  @override
+  String get aiIntro =>
+      'Yksityiskohtainen, tekoälyn kirjoittama katsaus: tuoreiden uutisten yhteenveto, liiketoiminta, vahvuudet, riskit ja piilevät tekijät, arvostus ja mitä seurata.';
+
+  @override
+  String get aiGenerate => 'Luo analyysi';
+
+  @override
+  String get aiRegenerate => 'Luo uudelleen';
+
+  @override
+  String get aiGenerating => 'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
+
+  @override
+  String get aiSources => 'Lähteet';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Luotu $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Tekoälyn tuottama analyysi, joka perustuu julkisiin tietoihin ja tuoreisiin uutisiin. Se voi sisältää virheitä tai olla vanhentunut, eikä se ole sijoitusneuvontaa.';
+
+  @override
+  String get errAiNotConfigured => 'Tekoälyanalyysia ei ole määritetty (ei ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Tekoälypalvelu palautti virheen (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
+
+  @override
+  String get errAiBadResponse => 'Odottamaton vastaus tekoälypalvelulta.';
+
+  @override
+  String get sectionChart => 'Kurssikaavio';
+
+  @override
+  String get rangeOneWeek => '1vk';
+
+  @override
+  String get rangeOneMonth => '1kk';
+
+  @override
+  String get rangeThreeMonths => '3kk';
+
+  @override
+  String get rangeOneYear => '1v';
+
+  @override
+  String get rangeFiveYears => '5v';
+
+  @override
+  String get chartUnavailable => 'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
+
+  @override
+  String get sectionStatements => 'Tilinpäätöstiedot (vuosittain)';
+
+  @override
+  String get labelFiscalYear => 'Tilikausi';
+
+  @override
+  String get labelRevenue => 'Liikevaihto';
+
+  @override
+  String get labelNetIncome => 'Nettotulos';
+
+  @override
+  String get labelTotalAssets => 'Varat yhteensä';
+
+  @override
+  String get labelTotalLiabilities => 'Velat yhteensä';
+
+  @override
+  String get labelEquity => 'Oma pääoma';
+
+  @override
+  String get labelOperatingCashFlow => 'Liiketoiminnan rahavirta';
+
+  @override
+  String get statementsUnavailable => 'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
+
+  @override
+  String get launchAtLogin => 'Käynnistä sisäänkirjautuessa';
+
+  @override
+  String get hotkeyLabel => 'Yleinen pikanäppäin';
+
+  @override
+  String get hotkeyRecordHint => 'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
+
+  @override
+  String get hotkeyReset => 'Palauta oletus';
+
+  @override
+  String get pasteImage => 'Liitä kuva leikepöydältä';
+
+  @override
+  String get errClipboardNoImage => 'Leikepöydällä ei ole kuvaa.';
 }

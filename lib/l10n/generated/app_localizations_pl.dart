@@ -13,8 +13,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Sfotografuj akcję i dowiedz się o niej wszystkiego.';
+  String get homeTagline => 'Sfotografuj akcję i dowiedz się o niej wszystkiego.';
 
   @override
   String get homeHint =>
@@ -355,32 +354,26 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Usługa rozpoznawania nie mogła przetworzyć tego obrazu.';
+  String get errRecognitionRefused => 'Usługa rozpoznawania nie mogła przetworzyć tego obrazu.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpowiedź usługi rozpoznawania została ucięta. Spróbuj ponownie.';
+  String get errRecognitionTruncated => 'Odpowiedź usługi rozpoznawania została ucięta. Spróbuj ponownie.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Nieoczekiwana odpowiedź usługi rozpoznawania.';
+  String get errRecognitionBadResponse => 'Nieoczekiwana odpowiedź usługi rozpoznawania.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Usługa rozpoznawania zwróciła pustą odpowiedź.';
+  String get errRecognitionEmpty => 'Usługa rozpoznawania zwróciła pustą odpowiedź.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Dane rynkowe nie są skonfigurowane (brak FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Dane rynkowe nie są skonfigurowane (brak FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nie udało się połączyć z usługą danych rynkowych. Sprawdź połączenie z internetem.';
 
   @override
-  String get errMarketRateLimited =>
-      'Zbyt wiele zapytań do usługi danych rynkowych. Odczekaj minutę.';
+  String get errMarketRateLimited => 'Zbyt wiele zapytań do usługi danych rynkowych. Odczekaj minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -388,8 +381,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Nieoczekiwana odpowiedź usługi danych rynkowych.';
+  String get errMarketBadResponse => 'Nieoczekiwana odpowiedź usługi danych rynkowych.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,4 +466,115 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get back => 'Wstecz';
+
+  @override
+  String get aiSectionTitle => 'Analiza AI';
+
+  @override
+  String get aiIntro =>
+      'Szczegółowy przegląd napisany przez AI: podsumowanie ostatnich wiadomości, działalność, mocne strony, ryzyka i ukryte czynniki, wycena oraz na co zwracać uwagę.';
+
+  @override
+  String get aiGenerate => 'Wygeneruj analizę';
+
+  @override
+  String get aiRegenerate => 'Wygeneruj ponownie';
+
+  @override
+  String get aiGenerating => 'Przygotowywanie analizy… może to potrwać minutę lub dwie.';
+
+  @override
+  String get aiSources => 'Źródła';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Wygenerowano $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analiza wygenerowana przez AI na podstawie publicznych danych i ostatnich wiadomości. Może zawierać błędy lub być nieaktualna i nie stanowi porady inwestycyjnej.';
+
+  @override
+  String get errAiNotConfigured => 'Analiza AI nie jest skonfigurowana (brak ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nie udało się połączyć z usługą AI. Sprawdź połączenie z internetem.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Usługa AI zwróciła błąd (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Usługa AI odmówiła analizy tej akcji.';
+
+  @override
+  String get errAiBadResponse => 'Nieoczekiwana odpowiedź usługi AI.';
+
+  @override
+  String get sectionChart => 'Wykres ceny';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1R';
+
+  @override
+  String get rangeFiveYears => '5L';
+
+  @override
+  String get chartUnavailable => 'Historia cen nie jest dostępna w bieżącym źródle danych.';
+
+  @override
+  String get sectionStatements => 'Sprawozdania finansowe (roczne)';
+
+  @override
+  String get labelFiscalYear => 'Rok obrotowy';
+
+  @override
+  String get labelRevenue => 'Przychody';
+
+  @override
+  String get labelNetIncome => 'Zysk netto';
+
+  @override
+  String get labelTotalAssets => 'Aktywa razem';
+
+  @override
+  String get labelTotalLiabilities => 'Zobowiązania razem';
+
+  @override
+  String get labelEquity => 'Kapitał własny';
+
+  @override
+  String get labelOperatingCashFlow => 'Przepływy pieniężne z działalności operacyjnej';
+
+  @override
+  String get statementsUnavailable => 'Raportowane sprawozdania finansowe nie są dostępne dla tej akcji.';
+
+  @override
+  String get launchAtLogin => 'Uruchamiaj przy logowaniu';
+
+  @override
+  String get hotkeyLabel => 'Skrót globalny';
+
+  @override
+  String get hotkeyRecordHint => 'Kliknij tutaj, a następnie naciśnij nową kombinację klawiszy';
+
+  @override
+  String get hotkeyReset => 'Przywróć domyślny';
+
+  @override
+  String get pasteImage => 'Wklej obraz ze schowka';
+
+  @override
+  String get errClipboardNoImage => 'W schowku nie ma obrazu.';
 }

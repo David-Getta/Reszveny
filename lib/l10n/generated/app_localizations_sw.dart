@@ -306,12 +306,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Wachambuzi $count',
-      one: 'Mchambuzi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Wachambuzi $count', one: 'Mchambuzi 1');
     return '$_temp0';
   }
 
@@ -352,31 +347,25 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Huduma ya utambuzi haikuweza kuchakata picha hii.';
+  String get errRecognitionRefused => 'Huduma ya utambuzi haikuweza kuchakata picha hii.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
+  String get errRecognitionTruncated => 'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
+  String get errRecognitionBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
 
   @override
   String get errRecognitionEmpty => 'Huduma ya utambuzi imerudisha jibu tupu.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
+  String get errMarketUnreachable => 'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
 
   @override
-  String get errMarketRateLimited =>
-      'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
+  String get errMarketRateLimited => 'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +373,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
+  String get errMarketBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -470,4 +458,115 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get back => 'Rudi';
+
+  @override
+  String get aiSectionTitle => 'Uchambuzi wa AI';
+
+  @override
+  String get aiIntro =>
+      'Muhtasari wa kina ulioandikwa na AI: muhtasari wa habari za hivi karibuni, biashara, uimara, hatari na mambo yaliyofichika, uthamini na mambo ya kufuatilia.';
+
+  @override
+  String get aiGenerate => 'Tengeneza uchambuzi';
+
+  @override
+  String get aiRegenerate => 'Tengeneza upya';
+
+  @override
+  String get aiGenerating => 'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
+
+  @override
+  String get aiSources => 'Vyanzo';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Imetengenezwa $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Uchambuzi uliotengenezwa na AI kwa kutumia data ya umma na habari za hivi karibuni. Unaweza kuwa na makosa au kuwa umepitwa na wakati, na si ushauri wa uwekezaji.';
+
+  @override
+  String get errAiNotConfigured => 'Uchambuzi wa AI haujasanidiwa (hakuna ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Huduma ya AI imerudisha hitilafu (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Huduma ya AI imekataa kuchambua hisa hii.';
+
+  @override
+  String get errAiBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya AI.';
+
+  @override
+  String get sectionChart => 'Chati ya bei';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
+
+  @override
+  String get sectionStatements => 'Taarifa za fedha (za mwaka)';
+
+  @override
+  String get labelFiscalYear => 'Mwaka wa fedha';
+
+  @override
+  String get labelRevenue => 'Mapato';
+
+  @override
+  String get labelNetIncome => 'Faida halisi';
+
+  @override
+  String get labelTotalAssets => 'Jumla ya mali';
+
+  @override
+  String get labelTotalLiabilities => 'Jumla ya madeni';
+
+  @override
+  String get labelEquity => 'Mtaji wa wanahisa';
+
+  @override
+  String get labelOperatingCashFlow => 'Mtiririko wa fedha wa uendeshaji';
+
+  @override
+  String get statementsUnavailable => 'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
+
+  @override
+  String get launchAtLogin => 'Anzisha wakati wa kuingia';
+
+  @override
+  String get hotkeyLabel => 'Njia ya mkato ya jumla';
+
+  @override
+  String get hotkeyRecordHint => 'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
+
+  @override
+  String get hotkeyReset => 'Rejesha chaguo-msingi';
+
+  @override
+  String get pasteImage => 'Bandika picha kutoka ubao wa kunakili';
+
+  @override
+  String get errClipboardNoImage => 'Hakuna picha kwenye ubao wa kunakili.';
 }

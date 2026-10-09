@@ -354,32 +354,26 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
+  String get errRecognitionRefused => 'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
+  String get errRecognitionTruncated => 'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočekávaná odpověď služby rozpoznávání.';
+  String get errRecognitionBadResponse => 'Neočekávaná odpověď služby rozpoznávání.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávání vrátila prázdnou odpověď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávání vrátila prázdnou odpověď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodařilo se připojit ke službě tržních dat. Zkontrolujte připojení k internetu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
+  String get errMarketRateLimited => 'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
 
   @override
   String errMarketHttp(String status) {
@@ -472,4 +466,115 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get back => 'Zpět';
+
+  @override
+  String get aiSectionTitle => 'AI analýza';
+
+  @override
+  String get aiIntro =>
+      'Podrobný přehled napsaný AI: shrnutí aktuálních zpráv, podnikání, silné stránky, rizika a skryté faktory, ocenění a co sledovat.';
+
+  @override
+  String get aiGenerate => 'Vygenerovat analýzu';
+
+  @override
+  String get aiRegenerate => 'Vygenerovat znovu';
+
+  @override
+  String get aiGenerating => 'Připravuji analýzu… může to trvat minutu či dvě.';
+
+  @override
+  String get aiSources => 'Zdroje';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Vygenerováno $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analýza vygenerovaná AI na základě veřejných dat a aktuálních zpráv. Může obsahovat chyby nebo být zastaralá a není investičním doporučením.';
+
+  @override
+  String get errAiNotConfigured => 'AI analýza není nastavena (chybí ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nepodařilo se připojit ke službě AI. Zkontrolujte připojení k internetu.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Služba AI vrátila chybu (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Služba AI odmítla tuto akcii analyzovat.';
+
+  @override
+  String get errAiBadResponse => 'Neočekávaná odpověď služby AI.';
+
+  @override
+  String get sectionChart => 'Graf ceny';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1R';
+
+  @override
+  String get rangeFiveYears => '5L';
+
+  @override
+  String get chartUnavailable => 'Historie cen není v aktuálním zdroji dat k dispozici.';
+
+  @override
+  String get sectionStatements => 'Finanční výkazy (roční)';
+
+  @override
+  String get labelFiscalYear => 'Fiskální rok';
+
+  @override
+  String get labelRevenue => 'Tržby';
+
+  @override
+  String get labelNetIncome => 'Čistý zisk';
+
+  @override
+  String get labelTotalAssets => 'Aktiva celkem';
+
+  @override
+  String get labelTotalLiabilities => 'Závazky celkem';
+
+  @override
+  String get labelEquity => 'Vlastní kapitál';
+
+  @override
+  String get labelOperatingCashFlow => 'Provozní peněžní tok';
+
+  @override
+  String get statementsUnavailable => 'Pro tuto akcii nejsou k dispozici vykázané finanční výkazy.';
+
+  @override
+  String get launchAtLogin => 'Spustit při přihlášení';
+
+  @override
+  String get hotkeyLabel => 'Globální zkratka';
+
+  @override
+  String get hotkeyRecordHint => 'Klikněte sem a poté stiskněte novou kombinaci kláves';
+
+  @override
+  String get hotkeyReset => 'Obnovit výchozí';
+
+  @override
+  String get pasteImage => 'Vložit obrázek ze schránky';
+
+  @override
+  String get errClipboardNoImage => 'Ve schránce není žádný obrázek.';
 }

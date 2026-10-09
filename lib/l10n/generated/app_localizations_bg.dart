@@ -306,12 +306,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count аналитици',
-      one: '1 аналитик',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count аналитици', one: '1 аналитик');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Разпознаването на изображения не е конфигурирано (няма ANTHROPIC_API_KEY). Въведете тикера ръчно.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Няма връзка с услугата за разпознаване. Проверете интернет връзката си.';
+  String get errRecognitionUnreachable => 'Няма връзка с услугата за разпознаване. Проверете интернет връзката си.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Услугата за разпознаване не можа да обработи това изображение.';
+  String get errRecognitionRefused => 'Услугата за разпознаване не можа да обработи това изображение.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Отговорът от разпознаването беше прекъснат. Моля, опитайте отново.';
+  String get errRecognitionTruncated => 'Отговорът от разпознаването беше прекъснат. Моля, опитайте отново.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочакван отговор от услугата за разпознаване.';
+  String get errRecognitionBadResponse => 'Неочакван отговор от услугата за разпознаване.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Услугата за разпознаване върна празен отговор.';
+  String get errRecognitionEmpty => 'Услугата за разпознаване върна празен отговор.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Пазарните данни не са конфигурирани (няма FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Пазарните данни не са конфигурирани (няма FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Няма връзка с услугата за пазарни данни. Проверете интернет връзката си.';
+  String get errMarketUnreachable => 'Няма връзка с услугата за пазарни данни. Проверете интернет връзката си.';
 
   @override
-  String get errMarketRateLimited =>
-      'Твърде много заявки към услугата за пазарни данни. Моля, изчакайте една минута.';
+  String get errMarketRateLimited => 'Твърде много заявки към услугата за пазарни данни. Моля, изчакайте една минута.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочакван отговор от услугата за пазарни данни.';
+  String get errMarketBadResponse => 'Неочакван отговор от услугата за пазарни данни.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,4 +457,115 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'AI анализ';
+
+  @override
+  String get aiIntro =>
+      'Подробен преглед, написан от AI: обобщение на последните новини, бизнесът, силните страни, рисковете и скритите фактори, оценката и какво да следите.';
+
+  @override
+  String get aiGenerate => 'Генерирай анализ';
+
+  @override
+  String get aiRegenerate => 'Генерирай отново';
+
+  @override
+  String get aiGenerating => 'Анализът се подготвя… това може да отнеме минута-две.';
+
+  @override
+  String get aiSources => 'Източници';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Генерирано $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Анализ, генериран от AI въз основа на публични данни и актуални новини. Може да съдържа грешки или да е остарял и не представлява инвестиционен съвет.';
+
+  @override
+  String get errAiNotConfigured => 'AI анализът не е конфигуриран (няма ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Няма връзка с AI услугата. Проверете интернет връзката си.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI услугата върна грешка (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI услугата отказа да анализира тази акция.';
+
+  @override
+  String get errAiBadResponse => 'Неочакван отговор от AI услугата.';
+
+  @override
+  String get sectionChart => 'Ценова графика';
+
+  @override
+  String get rangeOneWeek => '1С';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Г';
+
+  @override
+  String get rangeFiveYears => '5Г';
+
+  @override
+  String get chartUnavailable => 'Ценовата история не е налична от текущия източник на данни.';
+
+  @override
+  String get sectionStatements => 'Финансови отчети (годишни)';
+
+  @override
+  String get labelFiscalYear => 'Финансова година';
+
+  @override
+  String get labelRevenue => 'Приходи';
+
+  @override
+  String get labelNetIncome => 'Нетна печалба';
+
+  @override
+  String get labelTotalAssets => 'Общо активи';
+
+  @override
+  String get labelTotalLiabilities => 'Общо пасиви';
+
+  @override
+  String get labelEquity => 'Собствен капитал';
+
+  @override
+  String get labelOperatingCashFlow => 'Оперативен паричен поток';
+
+  @override
+  String get statementsUnavailable => 'За тази акция няма налични публикувани финансови отчети.';
+
+  @override
+  String get launchAtLogin => 'Стартиране при влизане';
+
+  @override
+  String get hotkeyLabel => 'Глобална клавишна комбинация';
+
+  @override
+  String get hotkeyRecordHint => 'Щракнете тук, после натиснете новата клавишна комбинация';
+
+  @override
+  String get hotkeyReset => 'Възстанови по подразбиране';
+
+  @override
+  String get pasteImage => 'Постави изображение от клипборда';
+
+  @override
+  String get errClipboardNoImage => 'В клипборда няма изображение.';
 }

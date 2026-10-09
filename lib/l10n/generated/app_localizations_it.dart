@@ -306,12 +306,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analisti',
-      one: '1 analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisti', one: '1 analista');
     return '$_temp0';
   }
 
@@ -352,32 +347,26 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
+  String get errRecognitionRefused => 'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
 
   @override
-  String get errRecognitionTruncated =>
-      'La risposta del riconoscimento è stata interrotta. Riprova.';
+  String get errRecognitionTruncated => 'La risposta del riconoscimento è stata interrotta. Riprova.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Risposta inattesa dal servizio di riconoscimento.';
+  String get errRecognitionBadResponse => 'Risposta inattesa dal servizio di riconoscimento.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Il servizio di riconoscimento ha restituito una risposta vuota.';
+  String get errRecognitionEmpty => 'Il servizio di riconoscimento ha restituito una risposta vuota.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Impossibile raggiungere il servizio dei dati di mercato. Controlla la connessione a internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
+  String get errMarketRateLimited => 'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +374,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Risposta inattesa dal servizio dei dati di mercato.';
+  String get errMarketBadResponse => 'Risposta inattesa dal servizio dei dati di mercato.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,4 +459,115 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get back => 'Indietro';
+
+  @override
+  String get aiSectionTitle => 'Analisi IA';
+
+  @override
+  String get aiIntro =>
+      'Una panoramica dettagliata scritta dall’IA: sintesi delle notizie recenti, attività, punti di forza, rischi e fattori nascosti, valutazione e cosa tenere d’occhio.';
+
+  @override
+  String get aiGenerate => 'Genera analisi';
+
+  @override
+  String get aiRegenerate => 'Rigenera';
+
+  @override
+  String get aiGenerating => 'Preparazione dell’analisi in corso… può richiedere uno o due minuti.';
+
+  @override
+  String get aiSources => 'Fonti';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generata $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analisi generata dall’IA sulla base di dati pubblici e notizie recenti. Può contenere errori o non essere aggiornata e non costituisce un consiglio di investimento.';
+
+  @override
+  String get errAiNotConfigured => 'L’analisi IA non è configurata (manca ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Impossibile raggiungere il servizio di IA. Controlla la connessione a internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Il servizio di IA ha restituito un errore (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Il servizio di IA ha rifiutato di analizzare questa azione.';
+
+  @override
+  String get errAiBadResponse => 'Risposta inattesa dal servizio di IA.';
+
+  @override
+  String get sectionChart => 'Grafico del prezzo';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'Lo storico dei prezzi non è disponibile dalla fonte dati attuale.';
+
+  @override
+  String get sectionStatements => 'Bilanci (annuali)';
+
+  @override
+  String get labelFiscalYear => 'Esercizio fiscale';
+
+  @override
+  String get labelRevenue => 'Ricavi';
+
+  @override
+  String get labelNetIncome => 'Utile netto';
+
+  @override
+  String get labelTotalAssets => 'Totale attivo';
+
+  @override
+  String get labelTotalLiabilities => 'Totale passività';
+
+  @override
+  String get labelEquity => 'Patrimonio netto';
+
+  @override
+  String get labelOperatingCashFlow => 'Flusso di cassa operativo';
+
+  @override
+  String get statementsUnavailable => 'Per questa azione non sono disponibili bilanci pubblicati.';
+
+  @override
+  String get launchAtLogin => 'Avvia all’accesso';
+
+  @override
+  String get hotkeyLabel => 'Scorciatoia globale';
+
+  @override
+  String get hotkeyRecordHint => 'Fai clic qui, poi premi la nuova combinazione di tasti';
+
+  @override
+  String get hotkeyReset => 'Ripristina predefinita';
+
+  @override
+  String get pasteImage => 'Incolla immagine dagli appunti';
+
+  @override
+  String get errClipboardNoImage => 'Non c’è nessuna immagine negli appunti.';
 }

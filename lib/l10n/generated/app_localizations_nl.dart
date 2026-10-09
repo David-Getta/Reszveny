@@ -306,12 +306,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analisten',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisten', one: '1 analist');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Beeldherkenning is niet ingesteld (geen ANTHROPIC_API_KEY). Voer de ticker handmatig in.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errRecognitionUnreachable => 'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'De herkenningsdienst kon deze afbeelding niet verwerken.';
+  String get errRecognitionRefused => 'De herkenningsdienst kon deze afbeelding niet verwerken.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
+  String get errRecognitionTruncated => 'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Onverwacht antwoord van de herkenningsdienst.';
+  String get errRecognitionBadResponse => 'Onverwacht antwoord van de herkenningsdienst.';
 
   @override
-  String get errRecognitionEmpty =>
-      'De herkenningsdienst gaf een leeg antwoord terug.';
+  String get errRecognitionEmpty => 'De herkenningsdienst gaf een leeg antwoord terug.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errMarketUnreachable => 'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
-  String get errMarketRateLimited =>
-      'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
+  String get errMarketRateLimited => 'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Onverwacht antwoord van de marktdatadienst.';
+  String get errMarketBadResponse => 'Onverwacht antwoord van de marktdatadienst.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,4 +457,115 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get back => 'Terug';
+
+  @override
+  String get aiSectionTitle => 'AI-analyse';
+
+  @override
+  String get aiIntro =>
+      'Een gedetailleerd, door AI geschreven overzicht: samenvatting van recent nieuws, het bedrijf, sterke punten, risico’s en verborgen factoren, waardering en waar je op moet letten.';
+
+  @override
+  String get aiGenerate => 'Analyse genereren';
+
+  @override
+  String get aiRegenerate => 'Opnieuw genereren';
+
+  @override
+  String get aiGenerating => 'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
+
+  @override
+  String get aiSources => 'Bronnen';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Gegenereerd $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Door AI gegenereerde analyse op basis van openbare gegevens en recent nieuws. Deze kan fouten bevatten of verouderd zijn en is geen beleggingsadvies.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'De AI-dienst gaf een fout terug (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
+
+  @override
+  String get errAiBadResponse => 'Onverwacht antwoord van de AI-dienst.';
+
+  @override
+  String get sectionChart => 'Koersgrafiek';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1J';
+
+  @override
+  String get rangeFiveYears => '5J';
+
+  @override
+  String get chartUnavailable => 'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
+
+  @override
+  String get sectionStatements => 'Financiële overzichten (jaarlijks)';
+
+  @override
+  String get labelFiscalYear => 'Boekjaar';
+
+  @override
+  String get labelRevenue => 'Omzet';
+
+  @override
+  String get labelNetIncome => 'Nettowinst';
+
+  @override
+  String get labelTotalAssets => 'Totale activa';
+
+  @override
+  String get labelTotalLiabilities => 'Totale verplichtingen';
+
+  @override
+  String get labelEquity => 'Eigen vermogen';
+
+  @override
+  String get labelOperatingCashFlow => 'Operationele kasstroom';
+
+  @override
+  String get statementsUnavailable => 'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
+
+  @override
+  String get launchAtLogin => 'Starten bij aanmelden';
+
+  @override
+  String get hotkeyLabel => 'Globale sneltoets';
+
+  @override
+  String get hotkeyRecordHint => 'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
+
+  @override
+  String get hotkeyReset => 'Standaard herstellen';
+
+  @override
+  String get pasteImage => 'Afbeelding plakken vanaf het klembord';
+
+  @override
+  String get errClipboardNoImage => 'Er staat geen afbeelding op het klembord.';
 }

@@ -13,8 +13,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
+  String get homeTagline => 'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count تجزیہ کار',
-      one: '1 تجزیہ کار',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تجزیہ کار', one: '1 تجزیہ کار');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsUr extends AppLocalizations {
       'تصویر کی شناخت ترتیب نہیں دی گئی (ANTHROPIC_API_KEY موجود نہیں)۔ ٹکر دستی طور پر درج کریں۔';
 
   @override
-  String get errRecognitionUnreachable =>
-      'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errRecognitionUnreachable => 'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,12 +346,10 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
+  String get errRecognitionRefused => 'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
 
   @override
-  String get errRecognitionTruncated =>
-      'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
+  String get errRecognitionTruncated => 'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
 
   @override
   String get errRecognitionBadResponse => 'شناختی سروس سے غیر متوقع جواب۔';
@@ -367,12 +358,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errRecognitionEmpty => 'شناختی سروس نے خالی جواب واپس کیا۔';
 
   @override
-  String get errMissingFinnhubKey =>
-      'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
+  String get errMissingFinnhubKey => 'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
 
   @override
-  String get errMarketUnreachable =>
-      'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errMarketUnreachable => 'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String get errMarketRateLimited =>
@@ -469,4 +458,115 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get back => 'واپس';
+
+  @override
+  String get aiSectionTitle => 'AI analysis';
+
+  @override
+  String get aiIntro =>
+      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+
+  @override
+  String get aiGenerate => 'Generate analysis';
+
+  @override
+  String get aiRegenerate => 'Regenerate';
+
+  @override
+  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+
+  @override
+  String get aiSources => 'Sources';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generated $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+
+  @override
+  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'The AI service returned an error (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'The AI service declined to analyse this stock.';
+
+  @override
+  String get errAiBadResponse => 'Unexpected response from the AI service.';
+
+  @override
+  String get sectionChart => 'Price chart';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Price history is not available from the current data source.';
+
+  @override
+  String get sectionStatements => 'Financial statements (annual)';
+
+  @override
+  String get labelFiscalYear => 'Fiscal year';
+
+  @override
+  String get labelRevenue => 'Revenue';
+
+  @override
+  String get labelNetIncome => 'Net income';
+
+  @override
+  String get labelTotalAssets => 'Total assets';
+
+  @override
+  String get labelTotalLiabilities => 'Total liabilities';
+
+  @override
+  String get labelEquity => 'Shareholders’ equity';
+
+  @override
+  String get labelOperatingCashFlow => 'Operating cash flow';
+
+  @override
+  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+
+  @override
+  String get launchAtLogin => 'Launch at login';
+
+  @override
+  String get hotkeyLabel => 'Global shortcut';
+
+  @override
+  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+
+  @override
+  String get hotkeyReset => 'Reset to default';
+
+  @override
+  String get pasteImage => 'Paste image from clipboard';
+
+  @override
+  String get errClipboardNoImage => 'There is no image on the clipboard.';
 }

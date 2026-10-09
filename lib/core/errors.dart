@@ -17,6 +17,14 @@ enum AppErrorCode {
   noProfile,
   demoUnsupportedSymbol,
   noResults,
+  aiNotConfigured,
+  aiUnreachable,
+  aiHttp,
+  aiRefused,
+  aiBadResponse,
+  clipboardNoImage,
+  chartUnavailable,
+  statementsUnavailable,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés
@@ -38,4 +46,8 @@ class RecognitionException extends AppException {
 
 class MarketDataException extends AppException {
   const MarketDataException(super.code, {super.detail, super.cause});
+}
+
+class AnalysisException extends AppException {
+  const AnalysisException(super.code, {super.detail, super.cause});
 }

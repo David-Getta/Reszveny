@@ -306,12 +306,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analis',
-      one: '1 analis',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Pengenalan gambar belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY). Masukkan kode saham secara manual.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
+  String get errRecognitionUnreachable => 'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Layanan pengenalan tidak dapat memproses gambar ini.';
+  String get errRecognitionRefused => 'Layanan pengenalan tidak dapat memproses gambar ini.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Respons pengenalan terpotong. Silakan coba lagi.';
+  String get errRecognitionTruncated => 'Respons pengenalan terpotong. Silakan coba lagi.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Respons tak terduga dari layanan pengenalan.';
+  String get errRecognitionBadResponse => 'Respons tak terduga dari layanan pengenalan.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Layanan pengenalan mengembalikan respons kosong.';
+  String get errRecognitionEmpty => 'Layanan pengenalan mengembalikan respons kosong.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
+  String get errMarketUnreachable => 'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
 
   @override
-  String get errMarketRateLimited =>
-      'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
+  String get errMarketRateLimited => 'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Respons tak terduga dari layanan data pasar.';
+  String get errMarketBadResponse => 'Respons tak terduga dari layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,4 +457,115 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get back => 'Kembali';
+
+  @override
+  String get aiSectionTitle => 'Analisis AI';
+
+  @override
+  String get aiIntro =>
+      'Ulasan mendetail yang ditulis oleh AI: ringkasan berita terbaru, bisnis, kekuatan, risiko dan faktor tersembunyi, valuasi, serta hal yang perlu dicermati.';
+
+  @override
+  String get aiGenerate => 'Buat analisis';
+
+  @override
+  String get aiRegenerate => 'Buat ulang';
+
+  @override
+  String get aiGenerating => 'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
+
+  @override
+  String get aiSources => 'Sumber';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Dibuat $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analisis yang dibuat oleh AI berdasarkan data publik dan berita terbaru. Mungkin berisi kesalahan atau sudah tidak mutakhir, dan bukan merupakan saran investasi.';
+
+  @override
+  String get errAiNotConfigured => 'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Layanan AI mengembalikan kesalahan (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Layanan AI menolak menganalisis saham ini.';
+
+  @override
+  String get errAiBadResponse => 'Respons tak terduga dari layanan AI.';
+
+  @override
+  String get sectionChart => 'Grafik harga';
+
+  @override
+  String get rangeOneWeek => '1M';
+
+  @override
+  String get rangeOneMonth => '1B';
+
+  @override
+  String get rangeThreeMonths => '3B';
+
+  @override
+  String get rangeOneYear => '1T';
+
+  @override
+  String get rangeFiveYears => '5T';
+
+  @override
+  String get chartUnavailable => 'Riwayat harga tidak tersedia dari sumber data saat ini.';
+
+  @override
+  String get sectionStatements => 'Laporan keuangan (tahunan)';
+
+  @override
+  String get labelFiscalYear => 'Tahun fiskal';
+
+  @override
+  String get labelRevenue => 'Pendapatan';
+
+  @override
+  String get labelNetIncome => 'Laba bersih';
+
+  @override
+  String get labelTotalAssets => 'Total aset';
+
+  @override
+  String get labelTotalLiabilities => 'Total liabilitas';
+
+  @override
+  String get labelEquity => 'Ekuitas pemegang saham';
+
+  @override
+  String get labelOperatingCashFlow => 'Arus kas operasi';
+
+  @override
+  String get statementsUnavailable => 'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
+
+  @override
+  String get launchAtLogin => 'Jalankan saat masuk';
+
+  @override
+  String get hotkeyLabel => 'Pintasan global';
+
+  @override
+  String get hotkeyRecordHint => 'Klik di sini, lalu tekan kombinasi tombol yang baru';
+
+  @override
+  String get hotkeyReset => 'Setel ulang ke bawaan';
+
+  @override
+  String get pasteImage => 'Tempel gambar dari papan klip';
+
+  @override
+  String get errClipboardNoImage => 'Tidak ada gambar di papan klip.';
 }

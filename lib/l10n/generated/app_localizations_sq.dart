@@ -13,8 +13,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Fotografoni një aksion dhe mësoni gjithçka për të.';
+  String get homeTagline => 'Fotografoni një aksion dhe mësoni gjithçka për të.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistë',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistë', one: '1 analist');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Njohja e imazheve nuk është konfiguruar (mungon ANTHROPIC_API_KEY). Shkruani simbolin manualisht.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+  String get errRecognitionUnreachable => 'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,24 +346,19 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
+  String get errRecognitionRefused => 'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
+  String get errRecognitionTruncated => 'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Përgjigje e papritur nga shërbimi i njohjes.';
+  String get errRecognitionBadResponse => 'Përgjigje e papritur nga shërbimi i njohjes.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Shërbimi i njohjes ktheu një përgjigje bosh.';
+  String get errRecognitionEmpty => 'Shërbimi i njohjes ktheu një përgjigje bosh.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Të dhënat e tregut nuk janë konfiguruar (mungon FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Të dhënat e tregut nuk janë konfiguruar (mungon FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
@@ -386,8 +374,7 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
+  String get errMarketBadResponse => 'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,4 +459,115 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get back => 'Prapa';
+
+  @override
+  String get aiSectionTitle => 'Analiza me AI';
+
+  @override
+  String get aiIntro =>
+      'Një përmbledhje e detajuar e shkruar nga AI: përmbledhje e lajmeve të fundit, biznesi, pikat e forta, rreziqet dhe faktorët e fshehur, vlerësimi dhe çfarë duhet ndjekur.';
+
+  @override
+  String get aiGenerate => 'Gjenero analizën';
+
+  @override
+  String get aiRegenerate => 'Gjenero përsëri';
+
+  @override
+  String get aiGenerating => 'Duke përgatitur analizën… kjo mund të zgjasë një ose dy minuta.';
+
+  @override
+  String get aiSources => 'Burimet';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Gjeneruar $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analizë e gjeneruar nga AI bazuar në të dhëna publike dhe lajme të fundit. Mund të përmbajë gabime ose të jetë e vjetruar dhe nuk përbën këshillë investimi.';
+
+  @override
+  String get errAiNotConfigured => 'Analiza me AI nuk është konfiguruar (mungon ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Shërbimi i AI nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Shërbimi i AI ktheu një gabim (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Shërbimi i AI refuzoi të analizojë këtë aksion.';
+
+  @override
+  String get errAiBadResponse => 'Përgjigje e papritur nga shërbimi i AI.';
+
+  @override
+  String get sectionChart => 'Grafiku i çmimit';
+
+  @override
+  String get rangeOneWeek => '1J';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1V';
+
+  @override
+  String get rangeFiveYears => '5V';
+
+  @override
+  String get chartUnavailable => 'Historiku i çmimeve nuk është i disponueshëm nga burimi aktual i të dhënave.';
+
+  @override
+  String get sectionStatements => 'Pasqyrat financiare (vjetore)';
+
+  @override
+  String get labelFiscalYear => 'Viti fiskal';
+
+  @override
+  String get labelRevenue => 'Të ardhurat';
+
+  @override
+  String get labelNetIncome => 'Fitimi neto';
+
+  @override
+  String get labelTotalAssets => 'Aktivet totale';
+
+  @override
+  String get labelTotalLiabilities => 'Detyrimet totale';
+
+  @override
+  String get labelEquity => 'Kapitali i aksionarëve';
+
+  @override
+  String get labelOperatingCashFlow => 'Fluksi i parasë nga veprimtaria operative';
+
+  @override
+  String get statementsUnavailable => 'Pasqyrat financiare të raportuara nuk janë të disponueshme për këtë aksion.';
+
+  @override
+  String get launchAtLogin => 'Nis gjatë hyrjes në sistem';
+
+  @override
+  String get hotkeyLabel => 'Shkurtore globale';
+
+  @override
+  String get hotkeyRecordHint => 'Klikoni këtu, pastaj shtypni kombinimin e ri të tasteve';
+
+  @override
+  String get hotkeyReset => 'Rikthe parazgjedhjen';
+
+  @override
+  String get pasteImage => 'Ngjit imazhin nga kujtesa e përkohshme';
+
+  @override
+  String get errClipboardNoImage => 'Nuk ka imazh në kujtesën e përkohshme.';
 }

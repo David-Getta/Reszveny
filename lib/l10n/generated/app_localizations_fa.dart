@@ -13,12 +13,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
+  String get homeTagline => 'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
 
   @override
-  String get homeHint =>
-      'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
+  String get homeHint => 'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
 
   @override
   String get takePhoto => 'عکس گرفتن';
@@ -307,12 +305,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count تحلیلگر',
-      one: '1 تحلیلگر',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تحلیلگر', one: '1 تحلیلگر');
     return '$_temp0';
   }
 
@@ -344,8 +337,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'شناسایی تصویر تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد). نماد را به‌صورت دستی وارد کنید.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errRecognitionUnreachable => 'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,12 +345,10 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
+  String get errRecognitionRefused => 'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
 
   @override
-  String get errRecognitionTruncated =>
-      'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
+  String get errRecognitionTruncated => 'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
 
   @override
   String get errRecognitionBadResponse => 'پاسخ غیرمنتظره از سرویس شناسایی.';
@@ -367,12 +357,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errRecognitionEmpty => 'سرویس شناسایی پاسخ خالی برگرداند.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
+  String get errMissingFinnhubKey => 'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
 
   @override
-  String get errMarketUnreachable =>
-      'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errMarketUnreachable => 'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String get errMarketRateLimited =>
@@ -469,4 +457,115 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get back => 'بازگشت';
+
+  @override
+  String get aiSectionTitle => 'تحلیل هوش مصنوعی';
+
+  @override
+  String get aiIntro =>
+      'مروری جامع نوشته‌شده با هوش مصنوعی: خلاصه اخبار اخیر، کسب‌وکار، نقاط قوت، ریسک‌ها و عوامل پنهان، ارزش‌گذاری و نکاتی که باید دنبال کنید.';
+
+  @override
+  String get aiGenerate => 'تولید تحلیل';
+
+  @override
+  String get aiRegenerate => 'تولید دوباره';
+
+  @override
+  String get aiGenerating => 'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
+
+  @override
+  String get aiSources => 'منابع';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'تولیدشده $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'تحلیل تولیدشده با هوش مصنوعی بر اساس داده‌های عمومی و اخبار اخیر. ممکن است خطا داشته باشد یا قدیمی باشد و توصیه سرمایه‌گذاری نیست.';
+
+  @override
+  String get errAiNotConfigured => 'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
+
+  @override
+  String get errAiUnreachable => 'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'سرویس هوش مصنوعی خطا برگرداند (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'سرویس هوش مصنوعی از تحلیل این سهم خودداری کرد.';
+
+  @override
+  String get errAiBadResponse => 'پاسخ غیرمنتظره از سرویس هوش مصنوعی.';
+
+  @override
+  String get sectionChart => 'نمودار قیمت';
+
+  @override
+  String get rangeOneWeek => '1 هفته';
+
+  @override
+  String get rangeOneMonth => '1 ماه';
+
+  @override
+  String get rangeThreeMonths => '3 ماه';
+
+  @override
+  String get rangeOneYear => '1 سال';
+
+  @override
+  String get rangeFiveYears => '5 سال';
+
+  @override
+  String get chartUnavailable => 'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
+
+  @override
+  String get sectionStatements => 'صورت‌های مالی (سالانه)';
+
+  @override
+  String get labelFiscalYear => 'سال مالی';
+
+  @override
+  String get labelRevenue => 'درآمد';
+
+  @override
+  String get labelNetIncome => 'سود خالص';
+
+  @override
+  String get labelTotalAssets => 'کل دارایی‌ها';
+
+  @override
+  String get labelTotalLiabilities => 'کل بدهی‌ها';
+
+  @override
+  String get labelEquity => 'حقوق صاحبان سهام';
+
+  @override
+  String get labelOperatingCashFlow => 'جریان نقدی عملیاتی';
+
+  @override
+  String get statementsUnavailable => 'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
+
+  @override
+  String get launchAtLogin => 'اجرا هنگام ورود به سیستم';
+
+  @override
+  String get hotkeyLabel => 'کلید میانبر سراسری';
+
+  @override
+  String get hotkeyRecordHint => 'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
+
+  @override
+  String get hotkeyReset => 'بازنشانی به پیش‌فرض';
+
+  @override
+  String get pasteImage => 'چسباندن تصویر از کلیپ‌بورد';
+
+  @override
+  String get errClipboardNoImage => 'تصویری در کلیپ‌بورد وجود ندارد.';
 }

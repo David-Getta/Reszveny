@@ -16,8 +16,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
 
   @override
-  String get homeHint =>
-      '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
+  String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
@@ -55,8 +54,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noCandidatesTitle => '종목을 인식하지 못했습니다';
 
   @override
-  String get noCandidatesBody =>
-      '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
+  String get noCandidatesBody => '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
 
   @override
   String get whatWeSaw => '인식된 내용';
@@ -82,8 +80,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about => '정보';
 
   @override
-  String get disclaimer =>
-      '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
+  String get disclaimer => '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
 
   @override
   String dataSource(String source) {
@@ -306,12 +303,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '애널리스트 $count명',
-      one: '애널리스트 1명',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '애널리스트 $count명', one: '애널리스트 1명');
     return '$_temp0';
   }
 
@@ -339,8 +331,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recognitionRawText => '이미지에서 읽은 텍스트';
 
   @override
-  String get errMissingAnthropicKey =>
-      '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
+  String get errMissingAnthropicKey => '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
 
   @override
   String get errRecognitionUnreachable => '인식 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -462,4 +453,115 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get back => '뒤로';
+
+  @override
+  String get aiSectionTitle => 'AI analysis';
+
+  @override
+  String get aiIntro =>
+      'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.';
+
+  @override
+  String get aiGenerate => 'Generate analysis';
+
+  @override
+  String get aiRegenerate => 'Regenerate';
+
+  @override
+  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+
+  @override
+  String get aiSources => 'Sources';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generated $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
+
+  @override
+  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'The AI service returned an error (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'The AI service declined to analyse this stock.';
+
+  @override
+  String get errAiBadResponse => 'Unexpected response from the AI service.';
+
+  @override
+  String get sectionChart => 'Price chart';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Price history is not available from the current data source.';
+
+  @override
+  String get sectionStatements => 'Financial statements (annual)';
+
+  @override
+  String get labelFiscalYear => 'Fiscal year';
+
+  @override
+  String get labelRevenue => 'Revenue';
+
+  @override
+  String get labelNetIncome => 'Net income';
+
+  @override
+  String get labelTotalAssets => 'Total assets';
+
+  @override
+  String get labelTotalLiabilities => 'Total liabilities';
+
+  @override
+  String get labelEquity => 'Shareholders’ equity';
+
+  @override
+  String get labelOperatingCashFlow => 'Operating cash flow';
+
+  @override
+  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+
+  @override
+  String get launchAtLogin => 'Launch at login';
+
+  @override
+  String get hotkeyLabel => 'Global shortcut';
+
+  @override
+  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+
+  @override
+  String get hotkeyReset => 'Reset to default';
+
+  @override
+  String get pasteImage => 'Paste image from clipboard';
+
+  @override
+  String get errClipboardNoImage => 'There is no image on the clipboard.';
 }

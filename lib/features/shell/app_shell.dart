@@ -190,7 +190,7 @@ class _Sidebar extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 8, 16, 16),
               child: Text(
-                l10n.hotkeyHint(DesktopIntegration.shortcutLabel),
+                l10n.hotkeyHint(services.desktop.shortcutLabel),
                 style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
               ),
             ),

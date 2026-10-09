@@ -15,7 +15,7 @@ Future<void> main() async {
   final locale = await LocaleController.load();
   final preferences = await AppPreferences.load();
   final desktop = DesktopIntegration();
-  await desktop.initialize(title: 'Reszveny');
+  await desktop.initialize(title: 'Reszveny', hotkeyJson: preferences.hotkeyJson);
   final services = AppServices.fromConfig(
     const AppConfig(),
     locale: locale,

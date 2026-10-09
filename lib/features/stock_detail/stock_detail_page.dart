@@ -11,8 +11,11 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../recognition/stock_recognizer.dart';
+import 'widgets/analysis_card.dart';
 import 'widgets/kv_table.dart';
+import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
+import 'widgets/statements_table.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
 class StockDetailPage extends StatefulWidget {
@@ -159,6 +162,19 @@ class _DetailsBody extends StatelessWidget {
         ),
       ),
 
+      // AI-elemzés
+      AnalysisCard(details: d),
+
+      // Grafikon
+      SectionCard(
+        title: l10n.sectionChart,
+        child: err(DetailSection.chart) != null
+            ? SectionError(err(DetailSection.chart)!)
+            : d.history == null
+            ? Text(l10n.notAvailable)
+            : PriceChart(history: d.history!, fmt: fmt, currency: cur),
+      ),
+
       // Árfolyam
       SectionCard(
         title: l10n.sectionPrice,
@@ -269,6 +285,16 @@ class _DetailsBody extends StatelessWidget {
                   (l10n.labelEpsGrowth, m?.epsGrowth == null ? null : fmt.percent(m!.epsGrowth, withSign: true)),
                 ],
               ),
+      ),
+
+      // Éves kimutatások
+      SectionCard(
+        title: l10n.sectionStatements,
+        child: err(DetailSection.statements) != null
+            ? SectionError(err(DetailSection.statements)!)
+            : d.statements == null || d.statements!.isEmpty
+            ? Text(l10n.notAvailable)
+            : StatementsTable(statements: d.statements!, fmt: fmt, currency: cur),
       ),
 
       // Osztalék

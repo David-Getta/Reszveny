@@ -111,8 +111,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorGeneric => 'Nešto je pošlo po krivu.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Ovaj odjeljak nije bilo moguće učitati.';
+  String get errorSectionUnavailable => 'Ovaj odjeljak nije bilo moguće učitati.';
 
   @override
   String get notAvailable => 'n/d';
@@ -345,8 +344,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Prepoznavanje slika nije postavljeno (nema ANTHROPIC_API_KEY). Ručno unesite ticker.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Nije moguće dohvatiti servis za prepoznavanje. Provjerite internetsku vezu.';
+  String get errRecognitionUnreachable => 'Nije moguće dohvatiti servis za prepoznavanje. Provjerite internetsku vezu.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -354,32 +352,25 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Servis za prepoznavanje nije mogao obraditi ovu sliku.';
+  String get errRecognitionRefused => 'Servis za prepoznavanje nije mogao obraditi ovu sliku.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odgovor prepoznavanja je prekinut. Pokušajte ponovno.';
+  String get errRecognitionTruncated => 'Odgovor prepoznavanja je prekinut. Pokušajte ponovno.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočekivan odgovor servisa za prepoznavanje.';
+  String get errRecognitionBadResponse => 'Neočekivan odgovor servisa za prepoznavanje.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Servis za prepoznavanje vratio je prazan odgovor.';
+  String get errRecognitionEmpty => 'Servis za prepoznavanje vratio je prazan odgovor.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tržišni podaci nisu postavljeni (nema FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Tržišni podaci nisu postavljeni (nema FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Nije moguće dohvatiti servis tržišnih podataka. Provjerite internetsku vezu.';
+  String get errMarketUnreachable => 'Nije moguće dohvatiti servis tržišnih podataka. Provjerite internetsku vezu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Previše zahtjeva prema servisu tržišnih podataka. Pričekajte minutu.';
+  String get errMarketRateLimited => 'Previše zahtjeva prema servisu tržišnih podataka. Pričekajte minutu.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +378,7 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočekivan odgovor servisa tržišnih podataka.';
+  String get errMarketBadResponse => 'Neočekivan odgovor servisa tržišnih podataka.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +463,115 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get back => 'Natrag';
+
+  @override
+  String get aiSectionTitle => 'AI analiza';
+
+  @override
+  String get aiIntro =>
+      'Detaljan pregled koji je napisala umjetna inteligencija: sažetak nedavnih vijesti, poslovanje, snage, rizici i skriveni faktori, vrednovanje i što pratiti.';
+
+  @override
+  String get aiGenerate => 'Generiraj analizu';
+
+  @override
+  String get aiRegenerate => 'Generiraj ponovno';
+
+  @override
+  String get aiGenerating => 'Pripremamo analizu… ovo može potrajati minutu ili dvije.';
+
+  @override
+  String get aiSources => 'Izvori';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generirano $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analiza koju je generirala umjetna inteligencija na temelju javnih podataka i nedavnih vijesti. Može sadržavati greške ili biti zastarjela i nije investicijski savjet.';
+
+  @override
+  String get errAiNotConfigured => 'AI analiza nije postavljena (nema ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nije moguće dohvatiti AI servis. Provjerite internetsku vezu.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI servis vratio je grešku (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI servis odbio je analizirati ovu dionicu.';
+
+  @override
+  String get errAiBadResponse => 'Neočekivan odgovor AI servisa.';
+
+  @override
+  String get sectionChart => 'Grafikon cijene';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1G';
+
+  @override
+  String get rangeFiveYears => '5G';
+
+  @override
+  String get chartUnavailable => 'Povijest cijena nije dostupna iz trenutnog izvora podataka.';
+
+  @override
+  String get sectionStatements => 'Financijski izvještaji (godišnji)';
+
+  @override
+  String get labelFiscalYear => 'Fiskalna godina';
+
+  @override
+  String get labelRevenue => 'Prihodi';
+
+  @override
+  String get labelNetIncome => 'Neto dobit';
+
+  @override
+  String get labelTotalAssets => 'Ukupna imovina';
+
+  @override
+  String get labelTotalLiabilities => 'Ukupne obveze';
+
+  @override
+  String get labelEquity => 'Kapital dioničara';
+
+  @override
+  String get labelOperatingCashFlow => 'Operativni novčani tok';
+
+  @override
+  String get statementsUnavailable => 'Objavljeni financijski izvještaji nisu dostupni za ovu dionicu.';
+
+  @override
+  String get launchAtLogin => 'Pokreni pri prijavi';
+
+  @override
+  String get hotkeyLabel => 'Globalni prečac';
+
+  @override
+  String get hotkeyRecordHint => 'Kliknite ovdje, a zatim pritisnite novu kombinaciju tipki';
+
+  @override
+  String get hotkeyReset => 'Vrati na zadano';
+
+  @override
+  String get pasteImage => 'Zalijepi sliku iz međuspremnika';
+
+  @override
+  String get errClipboardNoImage => 'U međuspremniku nema slike.';
 }

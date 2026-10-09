@@ -17,6 +17,22 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
   találat a teljes ablakban nyílik meg; Esc vagy kattintás máshova: a sáv eltűnik.
 - **Menüsor- / tálcaikon**: Megnyitás, Gyorskeresés, Kilépés.
 - **Cégnév-keresés**: nem csak ticker, cégnév is beírható („Apple”, „OTP”).
+- **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
+- **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
+- **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
+
+## AI-elemzés: hírek összefoglalása és átfogó kép
+
+A részletes nézet tetején egy gombnyomásra elkészül a részvény **AI-elemzése** (Claude):
+a friss hírek dátumozott összefoglalása, az üzleti modell, erősségek, **kockázatok és rejtett
+tényezők** (ügyfél-koncentráció, szabályozás, perek, hígítás, adósság, részvényalapú
+javadalmazás, irányítás…), pénzügyi helyzet, értékeltség, tulajdonosi kör és „mire figyelj”,
+forráslinkekkel. A modell megkapja a letöltött adatokat, és – ha engedélyezett – a beépített
+webkereséssel maga is utánanéz a legfrissebb eseményeknek. Az elemzés a felhasználó nyelvén
+készül, és 12 órán át a készüléken tárolódik, hogy ne kelljen újra fizetni érte.
+
+Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),
+`ANTHROPIC_WEB_SEARCH` (`true`/`false`, alap `true`).
 
 ## Hogyan működik
 
@@ -56,6 +72,8 @@ kapja adaptív elrendezéssel.
 | `ANTHROPIC_BASE_URL` | saját proxy éles kiadáshoz | `https://api.anthropic.com` |
 | `FINNHUB_API_KEY` | piaci adatok kulcsa | – (nélküle demó mód) |
 | `FINNHUB_BASE_URL` | saját proxy éles kiadáshoz | `https://finnhub.io/api/v1` |
+| `ANTHROPIC_REPORT_EFFORT` | AI-elemzés alapossága | `high` |
+| `ANTHROPIC_WEB_SEARCH` | webkeresés az AI-elemzéshez | `true` |
 
 ## Könyvtárszerkezet
 
@@ -69,10 +87,11 @@ lib/
   features/
     capture/       kamera + galéria (image_picker)
     recognition/   StockRecognizer interfész, Claude látás, heurisztikus ticker-kereső
+    analysis/      StockAnalyst interfész, Claude-elemzés (webkereséssel), lemezes gyorsítótár
     market_data/   MarketDataProvider interfész, Finnhub, demó adatok
     shell/         oldalsávos keret, gyorssáv-mód váltás
     home/          kezdőképernyő (üdvözlő sor + keresősáv), lebegő gyorssáv, jelölt-választó
-    stock_detail/  részletes nézet szekciói
+    stock_detail/  részletes nézet: AI-elemzés, grafikon, ár, azonosítás, értékelés, kimutatások, hírek…
     settings/      nyelvválasztó, névjegy
   l10n/
     arb/           app_<nyelv>.arb – 44 nyelv, a sablon az app_en.arb

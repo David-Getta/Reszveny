@@ -354,32 +354,26 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávania nedokázala tento obrázok spracovať.';
+  String get errRecognitionRefused => 'Služba rozpoznávania nedokázala tento obrázok spracovať.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
+  String get errRecognitionTruncated => 'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočakávaná odpoveď služby rozpoznávania.';
+  String get errRecognitionBadResponse => 'Neočakávaná odpoveď služby rozpoznávania.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávania vrátila prázdnu odpoveď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávania vrátila prázdnu odpoveď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodarilo sa pripojiť k službe trhových údajov. Skontrolujte pripojenie na internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
+  String get errMarketRateLimited => 'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočakávaná odpoveď služby trhových údajov.';
+  String get errMarketBadResponse => 'Neočakávaná odpoveď služby trhových údajov.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +466,115 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get back => 'Späť';
+
+  @override
+  String get aiSectionTitle => 'AI analýza';
+
+  @override
+  String get aiIntro =>
+      'Podrobný prehľad napísaný AI: zhrnutie aktuálnych správ, podnikanie, silné stránky, riziká a skryté faktory, ocenenie a čo sledovať.';
+
+  @override
+  String get aiGenerate => 'Vygenerovať analýzu';
+
+  @override
+  String get aiRegenerate => 'Vygenerovať znova';
+
+  @override
+  String get aiGenerating => 'Pripravujem analýzu… môže to trvať minútu či dve.';
+
+  @override
+  String get aiSources => 'Zdroje';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Vygenerované $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analýza vygenerovaná AI na základe verejných údajov a aktuálnych správ. Môže obsahovať chyby alebo byť zastaraná a nie je investičným odporúčaním.';
+
+  @override
+  String get errAiNotConfigured => 'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Služba AI vrátila chybu (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Služba AI odmietla túto akciu analyzovať.';
+
+  @override
+  String get errAiBadResponse => 'Neočakávaná odpoveď služby AI.';
+
+  @override
+  String get sectionChart => 'Graf ceny';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1R';
+
+  @override
+  String get rangeFiveYears => '5R';
+
+  @override
+  String get chartUnavailable => 'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
+
+  @override
+  String get sectionStatements => 'Finančné výkazy (ročné)';
+
+  @override
+  String get labelFiscalYear => 'Fiškálny rok';
+
+  @override
+  String get labelRevenue => 'Tržby';
+
+  @override
+  String get labelNetIncome => 'Čistý zisk';
+
+  @override
+  String get labelTotalAssets => 'Aktíva spolu';
+
+  @override
+  String get labelTotalLiabilities => 'Záväzky spolu';
+
+  @override
+  String get labelEquity => 'Vlastný kapitál';
+
+  @override
+  String get labelOperatingCashFlow => 'Prevádzkový peňažný tok';
+
+  @override
+  String get statementsUnavailable => 'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
+
+  @override
+  String get launchAtLogin => 'Spustiť pri prihlásení';
+
+  @override
+  String get hotkeyLabel => 'Globálna skratka';
+
+  @override
+  String get hotkeyRecordHint => 'Kliknite sem a potom stlačte novú kombináciu klávesov';
+
+  @override
+  String get hotkeyReset => 'Obnoviť predvolené';
+
+  @override
+  String get pasteImage => 'Prilepiť obrázok zo schránky';
+
+  @override
+  String get errClipboardNoImage => 'V schránke nie je žiadny obrázok.';
 }

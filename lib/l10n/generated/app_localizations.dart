@@ -103,8 +103,7 @@ import 'app_localizations_zh.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -112,8 +111,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -125,13 +123,12 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -178,11 +175,7 @@ abstract class AppLocalizations {
     Locale('ur'),
     Locale('vi'),
     Locale('zh'),
-    Locale.fromSubtags(
-      languageCode: 'zh',
-      countryCode: 'HK',
-      scriptCode: 'Hant',
-    ),
+    Locale.fromSubtags(languageCode: 'zh', countryCode: 'HK', scriptCode: 'Hant'),
   ];
 
   /// No description provided for @appTitle.
@@ -1012,10 +1005,219 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Back'**
   String get back;
+
+  /// No description provided for @aiSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis'**
+  String get aiSectionTitle;
+
+  /// No description provided for @aiIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.'**
+  String get aiIntro;
+
+  /// No description provided for @aiGenerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Generate analysis'**
+  String get aiGenerate;
+
+  /// No description provided for @aiRegenerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Regenerate'**
+  String get aiRegenerate;
+
+  /// No description provided for @aiGenerating.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the analysis… this can take a minute or two.'**
+  String get aiGenerating;
+
+  /// No description provided for @aiSources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get aiSources;
+
+  /// No description provided for @aiGeneratedAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Generated {time}'**
+  String aiGeneratedAt(String time);
+
+  /// No description provided for @aiDisclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.'**
+  String get aiDisclaimer;
+
+  /// No description provided for @errAiNotConfigured.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis is not configured (no ANTHROPIC_API_KEY).'**
+  String get errAiNotConfigured;
+
+  /// No description provided for @errAiUnreachable.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not reach the AI service. Check your internet connection.'**
+  String get errAiUnreachable;
+
+  /// No description provided for @errAiHttp.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service returned an error (HTTP {status}).'**
+  String errAiHttp(String status);
+
+  /// No description provided for @errAiRefused.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service declined to analyse this stock.'**
+  String get errAiRefused;
+
+  /// No description provided for @errAiBadResponse.
+  ///
+  /// In en, this message translates to:
+  /// **'Unexpected response from the AI service.'**
+  String get errAiBadResponse;
+
+  /// No description provided for @sectionChart.
+  ///
+  /// In en, this message translates to:
+  /// **'Price chart'**
+  String get sectionChart;
+
+  /// No description provided for @rangeOneWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'1W'**
+  String get rangeOneWeek;
+
+  /// No description provided for @rangeOneMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'1M'**
+  String get rangeOneMonth;
+
+  /// No description provided for @rangeThreeMonths.
+  ///
+  /// In en, this message translates to:
+  /// **'3M'**
+  String get rangeThreeMonths;
+
+  /// No description provided for @rangeOneYear.
+  ///
+  /// In en, this message translates to:
+  /// **'1Y'**
+  String get rangeOneYear;
+
+  /// No description provided for @rangeFiveYears.
+  ///
+  /// In en, this message translates to:
+  /// **'5Y'**
+  String get rangeFiveYears;
+
+  /// No description provided for @chartUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Price history is not available from the current data source.'**
+  String get chartUnavailable;
+
+  /// No description provided for @sectionStatements.
+  ///
+  /// In en, this message translates to:
+  /// **'Financial statements (annual)'**
+  String get sectionStatements;
+
+  /// No description provided for @labelFiscalYear.
+  ///
+  /// In en, this message translates to:
+  /// **'Fiscal year'**
+  String get labelFiscalYear;
+
+  /// No description provided for @labelRevenue.
+  ///
+  /// In en, this message translates to:
+  /// **'Revenue'**
+  String get labelRevenue;
+
+  /// No description provided for @labelNetIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Net income'**
+  String get labelNetIncome;
+
+  /// No description provided for @labelTotalAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'Total assets'**
+  String get labelTotalAssets;
+
+  /// No description provided for @labelTotalLiabilities.
+  ///
+  /// In en, this message translates to:
+  /// **'Total liabilities'**
+  String get labelTotalLiabilities;
+
+  /// No description provided for @labelEquity.
+  ///
+  /// In en, this message translates to:
+  /// **'Shareholders’ equity'**
+  String get labelEquity;
+
+  /// No description provided for @labelOperatingCashFlow.
+  ///
+  /// In en, this message translates to:
+  /// **'Operating cash flow'**
+  String get labelOperatingCashFlow;
+
+  /// No description provided for @statementsUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported financial statements are not available for this stock.'**
+  String get statementsUnavailable;
+
+  /// No description provided for @launchAtLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Launch at login'**
+  String get launchAtLogin;
+
+  /// No description provided for @hotkeyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Global shortcut'**
+  String get hotkeyLabel;
+
+  /// No description provided for @hotkeyRecordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Click here, then press the new key combination'**
+  String get hotkeyRecordHint;
+
+  /// No description provided for @hotkeyReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset to default'**
+  String get hotkeyReset;
+
+  /// No description provided for @pasteImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste image from clipboard'**
+  String get pasteImage;
+
+  /// No description provided for @errClipboardNoImage.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no image on the clipboard.'**
+  String get errClipboardNoImage;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override

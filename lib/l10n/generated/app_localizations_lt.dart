@@ -13,8 +13,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Nufotografuokite akciją ir sužinokite apie ją viską.';
+  String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
 
   @override
   String get homeHint =>
@@ -346,8 +345,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Vaizdų atpažinimas nesukonfigūruotas (nėra ANTHROPIC_API_KEY). Įveskite simbolį rankiniu būdu.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
+  String get errRecognitionUnreachable => 'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -355,32 +353,25 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
+  String get errRecognitionRefused => 'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
+  String get errRecognitionTruncated => 'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Netikėtas atpažinimo paslaugos atsakymas.';
+  String get errRecognitionBadResponse => 'Netikėtas atpažinimo paslaugos atsakymas.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Atpažinimo paslauga grąžino tuščią atsakymą.';
+  String get errRecognitionEmpty => 'Atpažinimo paslauga grąžino tuščią atsakymą.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
+  String get errMarketUnreachable => 'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
 
   @override
-  String get errMarketRateLimited =>
-      'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
+  String get errMarketRateLimited => 'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -388,8 +379,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Netikėtas rinkos duomenų paslaugos atsakymas.';
+  String get errMarketBadResponse => 'Netikėtas rinkos duomenų paslaugos atsakymas.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,4 +464,115 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get back => 'Atgal';
+
+  @override
+  String get aiSectionTitle => 'DI analizė';
+
+  @override
+  String get aiIntro =>
+      'Išsami DI parengta apžvalga: naujausių naujienų santrauka, veikla, stiprybės, rizikos ir paslėpti veiksniai, vertinimas ir į ką atkreipti dėmesį.';
+
+  @override
+  String get aiGenerate => 'Sukurti analizę';
+
+  @override
+  String get aiRegenerate => 'Sukurti iš naujo';
+
+  @override
+  String get aiGenerating => 'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
+
+  @override
+  String get aiSources => 'Šaltiniai';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Sukurta $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'DI sukurta analizė, pagrįsta viešais duomenimis ir naujausiomis naujienomis. Joje gali būti klaidų arba ji gali būti pasenusi, ir tai nėra investavimo rekomendacija.';
+
+  @override
+  String get errAiNotConfigured => 'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'DI paslauga grąžino klaidą (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'DI paslauga atsisakė analizuoti šią akciją.';
+
+  @override
+  String get errAiBadResponse => 'Netikėtas DI paslaugos atsakymas.';
+
+  @override
+  String get sectionChart => 'Kainos grafikas';
+
+  @override
+  String get rangeOneWeek => '1 sav.';
+
+  @override
+  String get rangeOneMonth => '1 mėn.';
+
+  @override
+  String get rangeThreeMonths => '3 mėn.';
+
+  @override
+  String get rangeOneYear => '1 m.';
+
+  @override
+  String get rangeFiveYears => '5 m.';
+
+  @override
+  String get chartUnavailable => 'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
+
+  @override
+  String get sectionStatements => 'Finansinės ataskaitos (metinės)';
+
+  @override
+  String get labelFiscalYear => 'Finansiniai metai';
+
+  @override
+  String get labelRevenue => 'Pajamos';
+
+  @override
+  String get labelNetIncome => 'Grynasis pelnas';
+
+  @override
+  String get labelTotalAssets => 'Visas turtas';
+
+  @override
+  String get labelTotalLiabilities => 'Visi įsipareigojimai';
+
+  @override
+  String get labelEquity => 'Nuosavas kapitalas';
+
+  @override
+  String get labelOperatingCashFlow => 'Pagrindinės veiklos pinigų srautas';
+
+  @override
+  String get statementsUnavailable => 'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
+
+  @override
+  String get launchAtLogin => 'Paleisti prisijungus';
+
+  @override
+  String get hotkeyLabel => 'Visuotinis spartusis klavišas';
+
+  @override
+  String get hotkeyRecordHint => 'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
+
+  @override
+  String get hotkeyReset => 'Atkurti numatytąjį';
+
+  @override
+  String get pasteImage => 'Įklijuoti vaizdą iš iškarpinės';
+
+  @override
+  String get errClipboardNoImage => 'Iškarpinėje nėra vaizdo.';
 }

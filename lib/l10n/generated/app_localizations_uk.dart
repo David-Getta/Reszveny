@@ -354,32 +354,26 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +466,115 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'ШІ-аналіз';
+
+  @override
+  String get aiIntro =>
+      'Детальний огляд, написаний ШІ: підсумок останніх новин, бізнес, сильні сторони, ризики та приховані фактори, оцінка і за чим стежити.';
+
+  @override
+  String get aiGenerate => 'Створити аналіз';
+
+  @override
+  String get aiRegenerate => 'Створити заново';
+
+  @override
+  String get aiGenerating => 'Готуємо аналіз… це може зайняти хвилину-дві.';
+
+  @override
+  String get aiSources => 'Джерела';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Створено $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
+
+  @override
+  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Служба ШІ повернула помилку (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Служба ШІ відмовилася аналізувати цю акцію.';
+
+  @override
+  String get errAiBadResponse => 'Неочікувана відповідь від служби ШІ.';
+
+  @override
+  String get sectionChart => 'Графік ціни';
+
+  @override
+  String get rangeOneWeek => '1Т';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Р';
+
+  @override
+  String get rangeFiveYears => '5Р';
+
+  @override
+  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
+
+  @override
+  String get sectionStatements => 'Фінансова звітність (річна)';
+
+  @override
+  String get labelFiscalYear => 'Фінансовий рік';
+
+  @override
+  String get labelRevenue => 'Виручка';
+
+  @override
+  String get labelNetIncome => 'Чистий прибуток';
+
+  @override
+  String get labelTotalAssets => 'Усього активів';
+
+  @override
+  String get labelTotalLiabilities => 'Усього зобов’язань';
+
+  @override
+  String get labelEquity => 'Власний капітал';
+
+  @override
+  String get labelOperatingCashFlow => 'Операційний грошовий потік';
+
+  @override
+  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
+
+  @override
+  String get launchAtLogin => 'Запускати під час входу в систему';
+
+  @override
+  String get hotkeyLabel => 'Глобальне сполучення клавіш';
+
+  @override
+  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
+
+  @override
+  String get hotkeyReset => 'Скинути до типового';
+
+  @override
+  String get pasteImage => 'Вставити зображення з буфера обміну';
+
+  @override
+  String get errClipboardNoImage => 'У буфері обміну немає зображення.';
 }

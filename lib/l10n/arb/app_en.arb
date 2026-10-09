@@ -242,5 +242,54 @@
   "themeSystem": "System",
   "themeDark": "Dark",
   "themeLight": "Light",
-  "back": "Back"
+  "back": "Back",
+  "aiSectionTitle": "AI analysis",
+  "aiIntro": "A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.",
+  "aiGenerate": "Generate analysis",
+  "aiRegenerate": "Regenerate",
+  "aiGenerating": "Preparing the analysis… this can take a minute or two.",
+  "aiSources": "Sources",
+  "aiGeneratedAt": "Generated {time}",
+  "@aiGeneratedAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "aiDisclaimer": "AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.",
+  "errAiNotConfigured": "AI analysis is not configured (no ANTHROPIC_API_KEY).",
+  "errAiUnreachable": "Could not reach the AI service. Check your internet connection.",
+  "errAiHttp": "The AI service returned an error (HTTP {status}).",
+  "@errAiHttp": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "errAiRefused": "The AI service declined to analyse this stock.",
+  "errAiBadResponse": "Unexpected response from the AI service.",
+  "sectionChart": "Price chart",
+  "rangeOneWeek": "1W",
+  "rangeOneMonth": "1M",
+  "rangeThreeMonths": "3M",
+  "rangeOneYear": "1Y",
+  "rangeFiveYears": "5Y",
+  "chartUnavailable": "Price history is not available from the current data source.",
+  "sectionStatements": "Financial statements (annual)",
+  "labelFiscalYear": "Fiscal year",
+  "labelRevenue": "Revenue",
+  "labelNetIncome": "Net income",
+  "labelTotalAssets": "Total assets",
+  "labelTotalLiabilities": "Total liabilities",
+  "labelEquity": "Shareholders’ equity",
+  "labelOperatingCashFlow": "Operating cash flow",
+  "statementsUnavailable": "Reported financial statements are not available for this stock.",
+  "launchAtLogin": "Launch at login",
+  "hotkeyLabel": "Global shortcut",
+  "hotkeyRecordHint": "Click here, then press the new key combination",
+  "hotkeyReset": "Reset to default",
+  "pasteImage": "Paste image from clipboard",
+  "errClipboardNoImage": "There is no image on the clipboard."
 }

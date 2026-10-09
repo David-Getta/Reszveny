@@ -4,6 +4,8 @@ import 'core/app_preferences.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
+import 'features/analysis/claude_stock_analyst.dart';
+import 'features/analysis/report_store.dart';
 import 'features/capture/capture_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
@@ -22,6 +24,7 @@ class AppServices {
     required this.locale,
     required this.preferences,
     required this.desktop,
+    required this.reports,
   });
 
   factory AppServices.fromConfig(
@@ -38,6 +41,7 @@ class AppServices {
       locale: locale,
       preferences: preferences,
       desktop: desktop ?? DesktopIntegration(),
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: config)),
     );
   }
 
@@ -48,6 +52,7 @@ class AppServices {
   final LocaleController locale;
   final AppPreferences preferences;
   final DesktopIntegration desktop;
+  final ReportStore reports;
 
   static AppServices of(BuildContext context) {
     final scope = context.dependOnInheritedWidgetOfExactType<AppServicesScope>();

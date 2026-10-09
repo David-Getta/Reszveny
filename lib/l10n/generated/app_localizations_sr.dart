@@ -353,32 +353,25 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Сервис за препознавање није могао да обради ову слику.';
+  String get errRecognitionRefused => 'Сервис за препознавање није могао да обради ову слику.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Одговор препознавања је прекинут. Покушајте поново.';
+  String get errRecognitionTruncated => 'Одговор препознавања је прекинут. Покушајте поново.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочекиван одговор сервиса за препознавање.';
+  String get errRecognitionBadResponse => 'Неочекиван одговор сервиса за препознавање.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Сервис за препознавање је вратио празан одговор.';
+  String get errRecognitionEmpty => 'Сервис за препознавање је вратио празан одговор.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
+  String get errMarketUnreachable => 'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
 
   @override
-  String get errMarketRateLimited =>
-      'Превише захтева ка сервису тржишних података. Сачекајте минут.';
+  String get errMarketRateLimited => 'Превише захтева ка сервису тржишних података. Сачекајте минут.';
 
   @override
   String errMarketHttp(String status) {
@@ -386,8 +379,7 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочекиван одговор сервиса тржишних података.';
+  String get errMarketBadResponse => 'Неочекиван одговор сервиса тржишних података.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,4 +464,115 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'AI анализа';
+
+  @override
+  String get aiIntro =>
+      'Детаљан преглед који је написала вештачка интелигенција: резиме недавних вести, пословање, снаге, ризици и скривени фактори, вредновање и шта пратити.';
+
+  @override
+  String get aiGenerate => 'Генериши анализу';
+
+  @override
+  String get aiRegenerate => 'Генериши поново';
+
+  @override
+  String get aiGenerating => 'Припремамо анализу… ово може потрајати минут или два.';
+
+  @override
+  String get aiSources => 'Извори';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Генерисано $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Анализа коју је генерисала вештачка интелигенција на основу јавних података и недавних вести. Може садржати грешке или бити застарела и не представља инвестициони савет.';
+
+  @override
+  String get errAiNotConfigured => 'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI сервис је вратио грешку (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI сервис је одбио да анализира ову акцију.';
+
+  @override
+  String get errAiBadResponse => 'Неочекиван одговор AI сервиса.';
+
+  @override
+  String get sectionChart => 'Графикон цене';
+
+  @override
+  String get rangeOneWeek => '1Н';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Г';
+
+  @override
+  String get rangeFiveYears => '5Г';
+
+  @override
+  String get chartUnavailable => 'Историја цена није доступна из тренутног извора података.';
+
+  @override
+  String get sectionStatements => 'Финансијски извештаји (годишњи)';
+
+  @override
+  String get labelFiscalYear => 'Фискална година';
+
+  @override
+  String get labelRevenue => 'Приходи';
+
+  @override
+  String get labelNetIncome => 'Нето добит';
+
+  @override
+  String get labelTotalAssets => 'Укупна имовина';
+
+  @override
+  String get labelTotalLiabilities => 'Укупне обавезе';
+
+  @override
+  String get labelEquity => 'Акционарски капитал';
+
+  @override
+  String get labelOperatingCashFlow => 'Оперативни новчани ток';
+
+  @override
+  String get statementsUnavailable => 'Објављени финансијски извештаји нису доступни за ову акцију.';
+
+  @override
+  String get launchAtLogin => 'Покрени при пријављивању';
+
+  @override
+  String get hotkeyLabel => 'Глобална пречица';
+
+  @override
+  String get hotkeyRecordHint => 'Кликните овде, а затим притисните нову комбинацију тастера';
+
+  @override
+  String get hotkeyReset => 'Врати на подразумевано';
+
+  @override
+  String get pasteImage => 'Налепи слику из клипборда';
+
+  @override
+  String get errClipboardNoImage => 'У клипборду нема слике.';
 }

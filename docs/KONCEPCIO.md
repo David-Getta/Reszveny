@@ -35,6 +35,7 @@ A részletes nézet szekciókra bomlik; minden szekció külön-külön tölthet
 12. **Kockázat és technikai mutatók** – volatilitás, RSI, mozgóátlagok, short interest.
 13. **Hasonló részvények / versenytársak**.
 14. **Megjegyzés** – a felismerés nyers eredménye (mit látott a képen), hogy a felhasználó ellenőrizni tudja.
+15. **AI-elemzés** – a részletes nézet tetején, gombnyomásra: a friss hírek dátumozott összefoglalása, üzleti modell, erősségek, kockázatok és rejtett tényezők, pénzügyi helyzet, értékeltség, tulajdonosi kör, „mire figyelj”, forráslinkek. A modell (Claude) a letöltött adatokat kapja kontextusként, és webkereséssel maga is utánanéz a legfrissebb eseményeknek; a felhasználó nyelvén ír, és a kész elemzést 12 órára a készülék tárolja.
 
 Az adatokat a felhasználó devizájában is mutatjuk (pl. HUF átváltás), és **jogi felelősségkizárással**: az app nem ad befektetési tanácsot.
 
@@ -110,6 +111,7 @@ Rétegek a kódban (`lib/`):
 - `features/recognition` – `StockRecognizer` interfész. Megvalósítások:
   - `ClaudeVisionRecognizer` – a képet a Claude API látás-képességével értelmezi, és **strukturált JSON**-t kér vissza (ticker, tőzsde, cégnév, megbízhatóság, mit látott). Minden platformon ugyanúgy működik, papír részvényt, logót és képernyőfotót is felismer.
   - `OcrRecognizer` (tervezett) – on-device szövegfelismerés (ML Kit) mobilon, offline fallbackként; a kiolvasott szövegből a `TickerExtractor` heurisztikával keres tickert/cégnevet.
+- `features/analysis` – `StockAnalyst` interfész; `ClaudeStockAnalyst` a Messages API-val, webkereséssel, strukturált JSON-nal; `ReportStore` gyorsítótár.
 - `features/market_data` – `MarketDataProvider` interfész. Megvalósítások:
   - `FinnhubMarketDataProvider` – élő adatok (árfolyam, profil, mutatók, hírek) a Finnhub API-ból.
   - `DemoMarketDataProvider` – beégetett mintaadatok, hogy az app kulcs nélkül is kipróbálható legyen.
@@ -133,8 +135,8 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 | 0 | Repó, Flutter váz, mind az 5 platform target, CI, 44 nyelv | ✅ kész |
 | 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
 | 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
-| 2 | Grafikon, pénzügyi kimutatások, osztalék, elemzők, tulajdonosok | ⬜ |
-| 3 | OCR fallback offline, kedvencek/előzmények, deviza-átváltás, magyar/angol nyelv | ⬜ |
+| 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
+| 3 | OCR fallback offline (ML Kit, mobil), kedvencek, deviza-átváltás, árfolyam-riasztás | ⬜ |
 | 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |
 
 ## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)

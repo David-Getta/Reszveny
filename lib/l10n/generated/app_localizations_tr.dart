@@ -13,8 +13,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
+  String get homeTagline => 'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analist',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analist', one: '1 analist');
     return '$_temp0';
   }
 
@@ -340,12 +334,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get recognitionRawText => 'Görselden okunan metin';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
+  String get errMissingAnthropicKey => 'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errRecognitionUnreachable => 'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -356,27 +348,22 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errRecognitionRefused => 'Tanıma hizmeti bu görseli işleyemedi.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
+  String get errRecognitionTruncated => 'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Tanıma hizmetinden beklenmeyen yanıt.';
+  String get errRecognitionBadResponse => 'Tanıma hizmetinden beklenmeyen yanıt.';
 
   @override
   String get errRecognitionEmpty => 'Tanıma hizmeti boş yanıt döndürdü.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
+  String get errMissingFinnhubKey => 'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
 
   @override
-  String get errMarketUnreachable =>
-      'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errMarketUnreachable => 'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
-  String get errMarketRateLimited =>
-      'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
+  String get errMarketRateLimited => 'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +371,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Piyasa verisi hizmetinden beklenmeyen yanıt.';
+  String get errMarketBadResponse => 'Piyasa verisi hizmetinden beklenmeyen yanıt.';
 
   @override
   String errNoQuote(String symbol) {
@@ -470,4 +456,115 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get back => 'Geri';
+
+  @override
+  String get aiSectionTitle => 'Yapay zekâ analizi';
+
+  @override
+  String get aiIntro =>
+      'Yapay zekâ tarafından yazılan ayrıntılı bir genel bakış: güncel haberlerin özeti, iş modeli, güçlü yönler, riskler ve gizli etkenler, değerleme ve izlenmesi gerekenler.';
+
+  @override
+  String get aiGenerate => 'Analiz oluştur';
+
+  @override
+  String get aiRegenerate => 'Yeniden oluştur';
+
+  @override
+  String get aiGenerating => 'Analiz hazırlanıyor… bu bir iki dakika sürebilir.';
+
+  @override
+  String get aiSources => 'Kaynaklar';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Oluşturuldu: $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Kamuya açık veriler ve güncel haberlere dayanan, yapay zekâ tarafından oluşturulmuş analiz. Hatalar içerebilir veya güncelliğini yitirmiş olabilir; yatırım tavsiyesi değildir.';
+
+  @override
+  String get errAiNotConfigured => 'Yapay zekâ analizi yapılandırılmamış (ANTHROPIC_API_KEY yok).';
+
+  @override
+  String get errAiUnreachable => 'Yapay zekâ hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Yapay zekâ hizmeti bir hata döndürdü (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Yapay zekâ hizmeti bu hisseyi analiz etmeyi reddetti.';
+
+  @override
+  String get errAiBadResponse => 'Yapay zekâ hizmetinden beklenmeyen yanıt.';
+
+  @override
+  String get sectionChart => 'Fiyat grafiği';
+
+  @override
+  String get rangeOneWeek => '1H';
+
+  @override
+  String get rangeOneMonth => '1A';
+
+  @override
+  String get rangeThreeMonths => '3A';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Mevcut veri kaynağında fiyat geçmişi bulunmuyor.';
+
+  @override
+  String get sectionStatements => 'Finansal tablolar (yıllık)';
+
+  @override
+  String get labelFiscalYear => 'Mali yıl';
+
+  @override
+  String get labelRevenue => 'Gelir';
+
+  @override
+  String get labelNetIncome => 'Net kâr';
+
+  @override
+  String get labelTotalAssets => 'Toplam varlıklar';
+
+  @override
+  String get labelTotalLiabilities => 'Toplam yükümlülükler';
+
+  @override
+  String get labelEquity => 'Özkaynaklar';
+
+  @override
+  String get labelOperatingCashFlow => 'Faaliyetlerden nakit akışı';
+
+  @override
+  String get statementsUnavailable => 'Bu hisse için raporlanmış finansal tablolar bulunmuyor.';
+
+  @override
+  String get launchAtLogin => 'Oturum açılışında başlat';
+
+  @override
+  String get hotkeyLabel => 'Genel kısayol';
+
+  @override
+  String get hotkeyRecordHint => 'Buraya tıklayın, ardından yeni tuş kombinasyonuna basın';
+
+  @override
+  String get hotkeyReset => 'Varsayılana sıfırla';
+
+  @override
+  String get pasteImage => 'Panodan görsel yapıştır';
+
+  @override
+  String get errClipboardNoImage => 'Panoda görsel yok.';
 }

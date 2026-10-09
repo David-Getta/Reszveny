@@ -13,8 +13,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Fotografiere eine Aktie und erfahre alles über sie.';
+  String get homeTagline => 'Fotografiere eine Aktie und erfahre alles über sie.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorGeneric => 'Etwas ist schiefgelaufen.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Dieser Abschnitt konnte nicht geladen werden.';
+  String get errorSectionUnavailable => 'Dieser Abschnitt konnte nicht geladen werden.';
 
   @override
   String get notAvailable => 'k. A.';
@@ -308,12 +306,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count Analysten',
-      one: '1 Analyst',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count Analysten', one: '1 Analyst');
     return '$_temp0';
   }
 
@@ -345,8 +338,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Bilderkennung ist nicht konfiguriert (kein ANTHROPIC_API_KEY). Gib den Ticker manuell ein.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Der Erkennungsdienst ist nicht erreichbar. Prüfe deine Internetverbindung.';
+  String get errRecognitionUnreachable => 'Der Erkennungsdienst ist nicht erreichbar. Prüfe deine Internetverbindung.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -354,32 +346,26 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Der Erkennungsdienst konnte dieses Bild nicht verarbeiten.';
+  String get errRecognitionRefused => 'Der Erkennungsdienst konnte dieses Bild nicht verarbeiten.';
 
   @override
   String get errRecognitionTruncated =>
       'Die Antwort des Erkennungsdienstes wurde abgeschnitten. Bitte versuche es erneut.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Unerwartete Antwort vom Erkennungsdienst.';
+  String get errRecognitionBadResponse => 'Unerwartete Antwort vom Erkennungsdienst.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Der Erkennungsdienst hat eine leere Antwort zurückgegeben.';
+  String get errRecognitionEmpty => 'Der Erkennungsdienst hat eine leere Antwort zurückgegeben.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marktdaten sind nicht konfiguriert (kein FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marktdaten sind nicht konfiguriert (kein FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Der Marktdatendienst ist nicht erreichbar. Prüfe deine Internetverbindung.';
+  String get errMarketUnreachable => 'Der Marktdatendienst ist nicht erreichbar. Prüfe deine Internetverbindung.';
 
   @override
-  String get errMarketRateLimited =>
-      'Zu viele Anfragen an den Marktdatendienst. Bitte warte eine Minute.';
+  String get errMarketRateLimited => 'Zu viele Anfragen an den Marktdatendienst. Bitte warte eine Minute.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +373,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Unerwartete Antwort vom Marktdatendienst.';
+  String get errMarketBadResponse => 'Unerwartete Antwort vom Marktdatendienst.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +458,115 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get back => 'Zurück';
+
+  @override
+  String get aiSectionTitle => 'KI-Analyse';
+
+  @override
+  String get aiIntro =>
+      'Ein ausführlicher, von KI verfasster Überblick: Zusammenfassung aktueller Nachrichten, Geschäftsmodell, Stärken, Risiken und verborgene Faktoren, Bewertung und worauf zu achten ist.';
+
+  @override
+  String get aiGenerate => 'Analyse erstellen';
+
+  @override
+  String get aiRegenerate => 'Neu erstellen';
+
+  @override
+  String get aiGenerating => 'Analyse wird vorbereitet… das kann ein bis zwei Minuten dauern.';
+
+  @override
+  String get aiSources => 'Quellen';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Erstellt $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'KI-generierte Analyse auf Basis öffentlicher Daten und aktueller Nachrichten. Sie kann Fehler enthalten oder veraltet sein und ist keine Anlageberatung.';
+
+  @override
+  String get errAiNotConfigured => 'KI-Analyse ist nicht konfiguriert (kein ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Der KI-Dienst ist nicht erreichbar. Prüfe deine Internetverbindung.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Der KI-Dienst hat einen Fehler zurückgegeben (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Der KI-Dienst hat die Analyse dieser Aktie abgelehnt.';
+
+  @override
+  String get errAiBadResponse => 'Unerwartete Antwort vom KI-Dienst.';
+
+  @override
+  String get sectionChart => 'Kurschart';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1J';
+
+  @override
+  String get rangeFiveYears => '5J';
+
+  @override
+  String get chartUnavailable => 'Die Kurshistorie ist bei der aktuellen Datenquelle nicht verfügbar.';
+
+  @override
+  String get sectionStatements => 'Finanzberichte (jährlich)';
+
+  @override
+  String get labelFiscalYear => 'Geschäftsjahr';
+
+  @override
+  String get labelRevenue => 'Umsatz';
+
+  @override
+  String get labelNetIncome => 'Nettogewinn';
+
+  @override
+  String get labelTotalAssets => 'Bilanzsumme';
+
+  @override
+  String get labelTotalLiabilities => 'Gesamtverbindlichkeiten';
+
+  @override
+  String get labelEquity => 'Eigenkapital';
+
+  @override
+  String get labelOperatingCashFlow => 'Operativer Cashflow';
+
+  @override
+  String get statementsUnavailable => 'Für diese Aktie sind keine veröffentlichten Finanzberichte verfügbar.';
+
+  @override
+  String get launchAtLogin => 'Bei Anmeldung starten';
+
+  @override
+  String get hotkeyLabel => 'Globales Tastenkürzel';
+
+  @override
+  String get hotkeyRecordHint => 'Hier klicken und dann die neue Tastenkombination drücken';
+
+  @override
+  String get hotkeyReset => 'Auf Standard zurücksetzen';
+
+  @override
+  String get pasteImage => 'Bild aus der Zwischenablage einfügen';
+
+  @override
+  String get errClipboardNoImage => 'In der Zwischenablage befindet sich kein Bild.';
 }

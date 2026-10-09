@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotkey_manager/hotkey_manager.dart';
 
 import '../../app_services.dart';
 import '../../core/desktop/desktop_integration.dart';
@@ -64,6 +65,10 @@ class SettingsPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  if (DesktopIntegration.isSupported) ...[
+                    sectionTitle(l10n.hotkeyLabel),
+                    Card(child: Column(children: [_HotkeyTile(), const Divider(height: 1), _LaunchAtLoginTile()])),
+                  ],
                   sectionTitle(l10n.language),
                   Card(
                     child: RadioGroup<String?>(
@@ -101,7 +106,7 @@ class SettingsPage extends StatelessWidget {
                           const Divider(height: 1),
                           ListTile(
                             leading: const Icon(Icons.keyboard_command_key_rounded),
-                            title: Text(l10n.hotkeyHint(DesktopIntegration.shortcutLabel)),
+                            title: Text(l10n.hotkeyHint(services.desktop.shortcutLabel)),
                           ),
                         ],
                       ],
@@ -117,6 +122,98 @@ class SettingsPage extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+}
+
+/// Gyorsbillentyű átállítása: kattintás után a következő lenyomott
+/// kombináció lesz az új.
+class _HotkeyTile extends StatefulWidget {
+  @override
+  State<_HotkeyTile> createState() => _HotkeyTileState();
+}
+
+class _HotkeyTileState extends State<_HotkeyTile> {
+  bool _recording = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final services = AppServices.of(context);
+    final p = AppPalette.of(context);
+    return ListenableBuilder(
+      listenable: services.desktop,
+      builder: (context, _) {
+        return ListTile(
+          leading: const Icon(Icons.keyboard_command_key_rounded),
+          title: Text(l10n.hotkeyLabel),
+          subtitle: _recording
+              ? Text(l10n.hotkeyRecordHint, style: TextStyle(color: p.accent))
+              : Text(services.desktop.shortcutLabel),
+          trailing: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (_recording)
+                SizedBox(
+                  width: 160,
+                  child: HotKeyRecorder(
+                    onHotKeyRecorded: (hk) async {
+                      if (hk.modifiers == null || hk.modifiers!.isEmpty) return;
+                      setState(() => _recording = false);
+                      await services.desktop.setHotKey(hk);
+                      await services.preferences.setHotkeyJson(hk.toJson());
+                    },
+                  ),
+                ),
+              TextButton(
+                onPressed: () async {
+                  await services.desktop.setHotKey(null);
+                  await services.preferences.setHotkeyJson(null);
+                  if (mounted) setState(() => _recording = false);
+                },
+                child: Text(l10n.hotkeyReset),
+              ),
+            ],
+          ),
+          onTap: () => setState(() => _recording = !_recording),
+        );
+      },
+    );
+  }
+}
+
+class _LaunchAtLoginTile extends StatefulWidget {
+  @override
+  State<_LaunchAtLoginTile> createState() => _LaunchAtLoginTileState();
+}
+
+class _LaunchAtLoginTileState extends State<_LaunchAtLoginTile> {
+  bool? _enabled;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_enabled != null) return;
+    AppServices.of(context).desktop.isLaunchAtLoginEnabled().then((v) {
+      if (mounted) setState(() => _enabled = v);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final services = AppServices.of(context);
+    return SwitchListTile(
+      secondary: const Icon(Icons.login_rounded),
+      title: Text(l10n.launchAtLogin),
+      value: _enabled ?? false,
+      onChanged: _enabled == null
+          ? null
+          : (v) async {
+              setState(() => _enabled = v);
+              final ok = await services.desktop.setLaunchAtLogin(v);
+              if (!ok && mounted) setState(() => _enabled = !v);
+            },
     );
   }
 }

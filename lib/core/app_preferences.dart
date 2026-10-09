@@ -1,12 +1,16 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Felhasználói beállítások: megjelenés (téma) és a legutóbbi keresések.
 class AppPreferences extends ChangeNotifier {
-  AppPreferences({this.themeMode = ThemeMode.system, List<String> recent = const []}) : _recent = List.of(recent);
+  AppPreferences({this.themeMode = ThemeMode.system, List<String> recent = const [], this.hotkeyJson})
+    : _recent = List.of(recent);
 
   static const _themeKey = 'theme_mode';
   static const _recentKey = 'recent_symbols';
+  static const _hotkeyKey = 'global_hotkey';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -15,11 +19,20 @@ class AppPreferences extends ChangeNotifier {
   List<String> _recent;
   List<String> get recent => List.unmodifiable(_recent);
 
+  /// A felhasználó által átállított globális gyorsbillentyű (hotkey_manager
+  /// JSON-ja), vagy `null` az alapértelmezetthez.
+  Map<String, dynamic>? hotkeyJson;
+
   static Future<AppPreferences> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final mode = ThemeMode.values.asNameMap()[prefs.getString(_themeKey) ?? ''] ?? ThemeMode.system;
-      return AppPreferences(themeMode: mode, recent: prefs.getStringList(_recentKey) ?? const []);
+      final hk = prefs.getString(_hotkeyKey);
+      return AppPreferences(
+        themeMode: mode,
+        recent: prefs.getStringList(_recentKey) ?? const [],
+        hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
+      );
     } catch (_) {
       return AppPreferences();
     }
@@ -40,6 +53,12 @@ class AppPreferences extends ChangeNotifier {
     if (_recent.length > maxRecent) _recent = _recent.sublist(0, maxRecent);
     notifyListeners();
     await _save((p) => p.setStringList(_recentKey, _recent));
+  }
+
+  Future<void> setHotkeyJson(Map<String, dynamic>? json) async {
+    hotkeyJson = json;
+    notifyListeners();
+    await _save((p) => json == null ? p.remove(_hotkeyKey) : p.setString(_hotkeyKey, jsonEncode(json)));
   }
 
   Future<void> clearRecent() async {

@@ -111,8 +111,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorGeneric => 'Ceva nu a funcționat.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Această secțiune nu a putut fi încărcată.';
+  String get errorSectionUnavailable => 'Această secțiune nu a putut fi încărcată.';
 
   @override
   String get notAvailable => 'n/a';
@@ -354,32 +353,26 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Serviciul de recunoaștere nu a putut procesa această imagine.';
+  String get errRecognitionRefused => 'Serviciul de recunoaștere nu a putut procesa această imagine.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
+  String get errRecognitionTruncated => 'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Răspuns neașteptat de la serviciul de recunoaștere.';
+  String get errRecognitionBadResponse => 'Răspuns neașteptat de la serviciul de recunoaștere.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Serviciul de recunoaștere a returnat un răspuns gol.';
+  String get errRecognitionEmpty => 'Serviciul de recunoaștere a returnat un răspuns gol.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nu s-a putut contacta serviciul de date de piață. Verifică conexiunea la internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
+  String get errMarketRateLimited => 'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +380,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Răspuns neașteptat de la serviciul de date de piață.';
+  String get errMarketBadResponse => 'Răspuns neașteptat de la serviciul de date de piață.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +465,115 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get back => 'Înapoi';
+
+  @override
+  String get aiSectionTitle => 'Analiză AI';
+
+  @override
+  String get aiIntro =>
+      'O prezentare detaliată scrisă de AI: rezumatul știrilor recente, afacerea, punctele forte, riscurile și factorii ascunși, evaluarea și ce trebuie urmărit.';
+
+  @override
+  String get aiGenerate => 'Generează analiza';
+
+  @override
+  String get aiRegenerate => 'Regenerează';
+
+  @override
+  String get aiGenerating => 'Se pregătește analiza… poate dura un minut sau două.';
+
+  @override
+  String get aiSources => 'Surse';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generată $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analiză generată de AI pe baza datelor publice și a știrilor recente. Poate conține erori sau poate fi depășită și nu reprezintă un sfat de investiții.';
+
+  @override
+  String get errAiNotConfigured => 'Analiza AI nu este configurată (lipsește ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nu s-a putut contacta serviciul AI. Verifică conexiunea la internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Serviciul AI a returnat o eroare (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Serviciul AI a refuzat să analizeze această acțiune.';
+
+  @override
+  String get errAiBadResponse => 'Răspuns neașteptat de la serviciul AI.';
+
+  @override
+  String get sectionChart => 'Graficul prețului';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1L';
+
+  @override
+  String get rangeThreeMonths => '3L';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'Istoricul prețurilor nu este disponibil de la sursa de date curentă.';
+
+  @override
+  String get sectionStatements => 'Situații financiare (anuale)';
+
+  @override
+  String get labelFiscalYear => 'An fiscal';
+
+  @override
+  String get labelRevenue => 'Venituri';
+
+  @override
+  String get labelNetIncome => 'Profit net';
+
+  @override
+  String get labelTotalAssets => 'Total active';
+
+  @override
+  String get labelTotalLiabilities => 'Total datorii';
+
+  @override
+  String get labelEquity => 'Capital propriu';
+
+  @override
+  String get labelOperatingCashFlow => 'Flux de numerar operațional';
+
+  @override
+  String get statementsUnavailable => 'Nu sunt disponibile situații financiare raportate pentru această acțiune.';
+
+  @override
+  String get launchAtLogin => 'Pornește la autentificare';
+
+  @override
+  String get hotkeyLabel => 'Scurtătură globală';
+
+  @override
+  String get hotkeyRecordHint => 'Dă clic aici, apoi apasă noua combinație de taste';
+
+  @override
+  String get hotkeyReset => 'Resetează la valoarea implicită';
+
+  @override
+  String get pasteImage => 'Lipește imaginea din clipboard';
+
+  @override
+  String get errClipboardNoImage => 'Nu există nicio imagine în clipboard.';
 }

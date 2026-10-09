@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/services.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
+import 'package:launch_at_startup/launch_at_startup.dart';
 import 'package:tray_manager/tray_manager.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -38,18 +39,62 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   bool _initialized = false;
   HotKey? _hotKey;
   bool _trayReady = false;
+  HotKey? _preferredHotKey;
   Size _lastFullSize = defaultWindowSize;
 
+  /// Az alapértelmezett gyorsbillentyű: ⌥ Space macOS-en, Ctrl+Alt+Space máshol.
+  static HotKey get defaultHotKey => HotKey(
+    key: PhysicalKeyboardKey.space,
+    modifiers: Platform.isMacOS ? [HotKeyModifier.alt] : [HotKeyModifier.control, HotKeyModifier.alt],
+    scope: HotKeyScope.system,
+  );
+
+  /// Az éppen érvényes gyorsbillentyű.
+  HotKey? get hotKey => _hotKey;
+
   /// Ember által olvasható gyorsbillentyű a beállításokhoz.
-  static String get shortcutLabel {
+  String get shortcutLabel {
     if (!isSupported) return '';
-    return Platform.isMacOS ? '⌥ Space' : 'Ctrl + Alt + Space';
+    final hk = _hotKey ?? defaultHotKey;
+    return describeHotKey(hk);
+  }
+
+  static String describeHotKey(HotKey hk) {
+    final mac = Platform.isMacOS;
+    final parts = <String>[];
+    for (final m in hk.modifiers ?? const <HotKeyModifier>[]) {
+      parts.add(switch (m) {
+        HotKeyModifier.alt => mac ? '⌥' : 'Alt',
+        HotKeyModifier.control => mac ? '⌃' : 'Ctrl',
+        HotKeyModifier.shift => mac ? '⇧' : 'Shift',
+        HotKeyModifier.meta => mac ? '⌘' : 'Win',
+        HotKeyModifier.capsLock => 'Caps',
+        HotKeyModifier.fn => 'Fn',
+      });
+    }
+    final key = hk.key;
+    var name = key is PhysicalKeyboardKey
+        ? key.debugName ?? ''
+        : key is LogicalKeyboardKey
+        ? key.keyLabel
+        : '';
+    if (name.isEmpty) name = key.toString();
+    parts.add(name);
+    return parts.join(mac ? ' ' : ' + ');
   }
 
   /// Az ablak előkészítése még az első képkocka előtt. [title] és a tálca-
   /// menü feliratai a felhasználó nyelvén érkeznek.
-  Future<void> initialize({required String title}) async {
+  Future<void> initialize({required String title, Map<String, dynamic>? hotkeyJson}) async {
     if (!isSupported || _initialized) return;
+    if (hotkeyJson != null) {
+      try {
+        _preferredHotKey = HotKey.fromJson(hotkeyJson);
+      } catch (_) {
+        _preferredHotKey = null;
+      }
+    }
+    launchAtStartup.setup(appName: title, appPath: Platform.resolvedExecutable, packageName: 'hu.reszveny.reszveny');
     _initialized = true;
     await windowManager.ensureInitialized();
     await hotKeyManager.unregisterAll();
@@ -71,16 +116,47 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   }
 
   Future<void> _registerHotKey() async {
-    final hotKey = HotKey(
-      key: PhysicalKeyboardKey.space,
-      modifiers: Platform.isMacOS ? [HotKeyModifier.alt] : [HotKeyModifier.control, HotKeyModifier.alt],
-      scope: HotKeyScope.system,
-    );
+    final base = _preferredHotKey ?? defaultHotKey;
+    final hotKey = HotKey(key: base.key, modifiers: base.modifiers, scope: HotKeyScope.system);
     try {
       await hotKeyManager.register(hotKey, keyDownHandler: (_) => toggleQuickBar());
       _hotKey = hotKey;
+      notifyListeners();
     } catch (e) {
       debugPrint('Gyorsbillentyű regisztrálása nem sikerült: $e');
+    }
+  }
+
+  /// Új gyorsbillentyű (vagy `null` = alapértelmezett) azonnali alkalmazása.
+  Future<void> setHotKey(HotKey? hotKey) async {
+    if (!isSupported) return;
+    _preferredHotKey = hotKey;
+    final old = _hotKey;
+    if (old != null) {
+      try {
+        await hotKeyManager.unregister(old);
+      } catch (_) {}
+      _hotKey = null;
+    }
+    await _registerHotKey();
+  }
+
+  Future<bool> isLaunchAtLoginEnabled() async {
+    if (!isSupported) return false;
+    try {
+      return await launchAtStartup.isEnabled();
+    } catch (_) {
+      return false;
+    }
+  }
+
+  Future<bool> setLaunchAtLogin(bool enabled) async {
+    if (!isSupported) return false;
+    try {
+      return enabled ? await launchAtStartup.enable() : await launchAtStartup.disable();
+    } catch (e) {
+      debugPrint('Bejelentkezéskori indítás beállítása nem sikerült: $e');
+      return false;
     }
   }
 

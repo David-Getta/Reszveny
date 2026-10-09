@@ -13,8 +13,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get appTitle => 'Reszveny';
 
   @override
-  String get homeTagline =>
-      'Fotografia una acció i descobreix-ho tot sobre ella.';
+  String get homeTagline => 'Fotografia una acció i descobreix-ho tot sobre ella.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorGeneric => 'Alguna cosa ha anat malament.';
 
   @override
-  String get errorSectionUnavailable =>
-      'No s\'ha pogut carregar aquesta secció.';
+  String get errorSectionUnavailable => 'No s\'ha pogut carregar aquesta secció.';
 
   @override
   String get notAvailable => 'n/d';
@@ -308,12 +306,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistes',
-      one: '1 analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistes', one: '1 analista');
     return '$_temp0';
   }
 
@@ -354,32 +347,26 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'El servei de reconeixement no ha pogut processar aquesta imatge.';
+  String get errRecognitionRefused => 'El servei de reconeixement no ha pogut processar aquesta imatge.';
 
   @override
-  String get errRecognitionTruncated =>
-      'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
+  String get errRecognitionTruncated => 'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Resposta inesperada del servei de reconeixement.';
+  String get errRecognitionBadResponse => 'Resposta inesperada del servei de reconeixement.';
 
   @override
-  String get errRecognitionEmpty =>
-      'El servei de reconeixement ha retornat una resposta buida.';
+  String get errRecognitionEmpty => 'El servei de reconeixement ha retornat una resposta buida.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'No s\'ha pogut connectar amb el servei de dades de mercat. Comprova la connexió a internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
+  String get errMarketRateLimited => 'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +374,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Resposta inesperada del servei de dades de mercat.';
+  String get errMarketBadResponse => 'Resposta inesperada del servei de dades de mercat.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,4 +459,115 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get back => 'Enrere';
+
+  @override
+  String get aiSectionTitle => 'Anàlisi amb IA';
+
+  @override
+  String get aiIntro =>
+      'Una visió general detallada escrita per IA: resum de les notícies recents, el negoci, punts forts, riscos i factors ocults, valoració i què cal vigilar.';
+
+  @override
+  String get aiGenerate => 'Generar anàlisi';
+
+  @override
+  String get aiRegenerate => 'Tornar a generar';
+
+  @override
+  String get aiGenerating => 'S’està preparant l’anàlisi… pot trigar un o dos minuts.';
+
+  @override
+  String get aiSources => 'Fonts';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generada $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Anàlisi generada per IA a partir de dades públiques i notícies recents. Pot contenir errors o estar desactualitzada, i no constitueix assessorament d’inversió.';
+
+  @override
+  String get errAiNotConfigured => 'L’anàlisi amb IA no està configurada (falta ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'No s’ha pogut connectar amb el servei d’IA. Comprova la connexió a internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'El servei d’IA ha retornat un error (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'El servei d’IA ha refusat analitzar aquesta acció.';
+
+  @override
+  String get errAiBadResponse => 'Resposta inesperada del servei d’IA.';
+
+  @override
+  String get sectionChart => 'Gràfic de preus';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'L’historial de preus no està disponible a la font de dades actual.';
+
+  @override
+  String get sectionStatements => 'Estats financers (anuals)';
+
+  @override
+  String get labelFiscalYear => 'Exercici fiscal';
+
+  @override
+  String get labelRevenue => 'Ingressos';
+
+  @override
+  String get labelNetIncome => 'Benefici net';
+
+  @override
+  String get labelTotalAssets => 'Actius totals';
+
+  @override
+  String get labelTotalLiabilities => 'Passius totals';
+
+  @override
+  String get labelEquity => 'Patrimoni net';
+
+  @override
+  String get labelOperatingCashFlow => 'Flux de caixa operatiu';
+
+  @override
+  String get statementsUnavailable => 'No hi ha estats financers publicats disponibles per a aquesta acció.';
+
+  @override
+  String get launchAtLogin => 'Obrir en iniciar la sessió';
+
+  @override
+  String get hotkeyLabel => 'Drecera global';
+
+  @override
+  String get hotkeyRecordHint => 'Fes clic aquí i prem la nova combinació de tecles';
+
+  @override
+  String get hotkeyReset => 'Restablir el valor predeterminat';
+
+  @override
+  String get pasteImage => 'Enganxar imatge del porta-retalls';
+
+  @override
+  String get errClipboardNoImage => 'No hi ha cap imatge al porta-retalls.';
 }
