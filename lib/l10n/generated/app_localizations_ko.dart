@@ -16,8 +16,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
 
   @override
-  String get homeHint =>
-      '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
+  String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
@@ -55,8 +54,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noCandidatesTitle => '종목을 인식하지 못했습니다';
 
   @override
-  String get noCandidatesBody =>
-      '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
+  String get noCandidatesBody => '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
 
   @override
   String get whatWeSaw => '인식된 내용';
@@ -82,8 +80,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about => '정보';
 
   @override
-  String get disclaimer =>
-      '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
+  String get disclaimer => '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
 
   @override
   String dataSource(String source) {
@@ -306,12 +303,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '애널리스트 $count명',
-      one: '애널리스트 1명',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '애널리스트 $count명', one: '애널리스트 1명');
     return '$_temp0';
   }
 
@@ -339,8 +331,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recognitionRawText => '이미지에서 읽은 텍스트';
 
   @override
-  String get errMissingAnthropicKey =>
-      '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
+  String get errMissingAnthropicKey => '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
 
   @override
   String get errRecognitionUnreachable => '인식 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -488,8 +479,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer =>
-      '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
+  String get aiDisclaimer => '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
 
   @override
   String get errAiNotConfigured => 'AI 분석이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음).';
@@ -644,4 +634,135 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get updateCheckFailed => '업데이트를 확인할 수 없습니다.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max 1';
+
+  @override
+  String get planMax2 => 'Max 2';
+
+  @override
+  String get planNone => 'No active plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days-day free trial with $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days of trial left',
+      one: '1 day of trial left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining of $total analyses left this period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renews $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose a plan';
+
+  @override
+  String get currentPlan => 'Current plan';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'Need more? Buy extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+
+  @override
+  String get purchasePending => 'Purchase pending…';
+
+  @override
+  String get purchaseFailed => 'The purchase could not be completed.';
+
+  @override
+  String get purchaseCanceled => 'Purchase canceled.';
+
+  @override
+  String get billingUnavailable =>
+      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+
+  @override
+  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+
+  @override
+  String get errNoPlan => 'An active plan is needed for AI analysis.';
+
+  @override
+  String get viewPlans => 'View plans';
+
+  @override
+  String get usageTitle => 'Usage';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+
+  @override
+  String get mostPopular => 'Most popular';
+
+  @override
+  String get bestValue => 'Best value';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
 }

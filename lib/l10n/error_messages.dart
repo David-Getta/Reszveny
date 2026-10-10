@@ -30,5 +30,8 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.clipboardNoImage => l10n.errClipboardNoImage,
     AppErrorCode.chartUnavailable => l10n.chartUnavailable,
     AppErrorCode.statementsUnavailable => l10n.statementsUnavailable,
+    AppErrorCode.quotaExceeded => l10n.errQuotaExceeded,
+    AppErrorCode.trialExpired => l10n.errTrialExpired,
+    AppErrorCode.noPlan => l10n.errNoPlan,
   };
 }

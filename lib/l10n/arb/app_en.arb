@@ -349,5 +349,90 @@
   "updateNow": "Update",
   "restartNow": "Restart",
   "updatesViaStore": "Updates arrive automatically through the app store.",
-  "updateCheckFailed": "Could not check for updates."
+  "updateCheckFailed": "Could not check for updates.",
+  "subscription": "Subscription",
+  "planTrial": "Trial",
+  "planNormal": "Normal",
+  "planPro": "Pro",
+  "planMax1": "Max 1",
+  "planMax2": "Max 2",
+  "planNone": "No active plan",
+  "planAnalysesPerMonth": "{count} analyses per month",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planTrialDescription": "{days}-day free trial with {count} analyses",
+  "@planTrialDescription": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trialDaysLeft": "{days, plural, =1{1 day of trial left} other{{days} days of trial left}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trialExpired": "Your free trial has ended. Choose a plan to keep analysing.",
+  "analysesRemaining": "{remaining} of {total} analyses left this period",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "extraCredits": "{count} extra analyses",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "renewsOn": "Renews {date}",
+  "@renewsOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "choosePlan": "Choose a plan",
+  "currentPlan": "Current plan",
+  "subscribe": "Subscribe",
+  "perMonth": "/ month",
+  "extraPacksTitle": "Need more? Buy extra analyses",
+  "extraPacksHint": "Extra analyses never expire and are used after your monthly allowance.",
+  "buy": "Buy",
+  "restorePurchases": "Restore purchases",
+  "manageSubscription": "Manage subscription",
+  "purchaseSuccess": "Thanks! Your purchase is active.",
+  "purchasePending": "Purchase pending…",
+  "purchaseFailed": "The purchase could not be completed.",
+  "purchaseCanceled": "Purchase canceled.",
+  "billingUnavailable": "Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.",
+  "errQuotaExceeded": "You have no analyses left for this period. Upgrade your plan or buy extra analyses.",
+  "errTrialExpired": "Your free trial has ended. Choose a plan to continue.",
+  "errNoPlan": "An active plan is needed for AI analysis.",
+  "viewPlans": "View plans",
+  "usageTitle": "Usage",
+  "demoPurchaseNote": "Demo billing: purchases are simulated on this platform.",
+  "mostPopular": "Most popular",
+  "bestValue": "Best value",
+  "planFeaturesCommon": "Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses."
 }

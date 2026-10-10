@@ -303,12 +303,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析师',
-      one: '1 位分析师',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
     return '$_temp0';
   }
 
@@ -336,8 +331,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -464,8 +458,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
+  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
 
   @override
   String get aiGenerate => '生成分析';
@@ -640,6 +633,137 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get updateCheckFailed => '无法检查更新。';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max 1';
+
+  @override
+  String get planMax2 => 'Max 2';
+
+  @override
+  String get planNone => 'No active plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days-day free trial with $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days of trial left',
+      one: '1 day of trial left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining of $total analyses left this period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renews $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose a plan';
+
+  @override
+  String get currentPlan => 'Current plan';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'Need more? Buy extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+
+  @override
+  String get purchasePending => 'Purchase pending…';
+
+  @override
+  String get purchaseFailed => 'The purchase could not be completed.';
+
+  @override
+  String get purchaseCanceled => 'Purchase canceled.';
+
+  @override
+  String get billingUnavailable =>
+      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+
+  @override
+  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+
+  @override
+  String get errNoPlan => 'An active plan is needed for AI analysis.';
+
+  @override
+  String get viewPlans => 'View plans';
+
+  @override
+  String get usageTitle => 'Usage';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+
+  @override
+  String get mostPopular => 'Most popular';
+
+  @override
+  String get bestValue => 'Best value';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -940,12 +1064,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析員',
-      one: '1 位分析員',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
     return '$_temp0';
   }
 
@@ -973,8 +1092,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -1101,8 +1219,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
+  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
 
   @override
   String get aiGenerate => '產生分析';

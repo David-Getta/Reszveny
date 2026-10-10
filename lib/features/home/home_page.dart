@@ -16,6 +16,7 @@ import 'favorites_strip.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
 import '../updates/update_banner.dart';
+import '../billing/usage_chip.dart';
 import 'candidate_sheet.dart';
 import 'search_field.dart';
 
@@ -193,6 +194,8 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const UpdateBanner(),
+                    if (widget.showAppBarActions)
+                      const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
                     const SizedBox(height: 48),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

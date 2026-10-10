@@ -6,6 +6,8 @@ import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
 import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
+import '../billing/paywall_page.dart';
+import '../billing/usage_chip.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
@@ -40,6 +42,19 @@ class SettingsPage extends StatelessWidget {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
                 children: [
+                  sectionTitle(l10n.subscription),
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Row(
+                        children: [
+                          const Expanded(child: UsageChip()),
+                          const SizedBox(width: 12),
+                          FilledButton.tonal(onPressed: () => PaywallPage.open(context), child: Text(l10n.viewPlans)),
+                        ],
+                      ),
+                    ),
+                  ),
                   sectionTitle(l10n.appearance),
                   Card(
                     child: Padding(

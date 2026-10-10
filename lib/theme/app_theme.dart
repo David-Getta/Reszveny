@@ -173,7 +173,7 @@ class AppTheme {
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-          textStyle: const TextStyle(fontWeight: FontWeight.w600),
+          textStyle: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -182,6 +182,7 @@ class AppTheme {
           side: BorderSide(color: p.border),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+          textStyle: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
         ),
       ),
       textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: p.accent)),

@@ -354,32 +354,26 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
+  String get errRecognitionRefused => 'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
+  String get errRecognitionTruncated => 'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočekávaná odpověď služby rozpoznávání.';
+  String get errRecognitionBadResponse => 'Neočekávaná odpověď služby rozpoznávání.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávání vrátila prázdnou odpověď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávání vrátila prázdnou odpověď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodařilo se připojit ke službě tržních dat. Zkontrolujte připojení k internetu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
+  String get errMarketRateLimited => 'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
 
   @override
   String errMarketHttp(String status) {
@@ -502,12 +496,10 @@ class AppLocalizationsCs extends AppLocalizations {
       'Analýza vygenerovaná AI na základě veřejných dat a aktuálních zpráv. Může obsahovat chyby nebo být zastaralá a není investičním doporučením.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI analýza není nastavena (chybí ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI analýza není nastavena (chybí ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Nepodařilo se připojit ke službě AI. Zkontrolujte připojení k internetu.';
+  String get errAiUnreachable => 'Nepodařilo se připojit ke službě AI. Zkontrolujte připojení k internetu.';
 
   @override
   String errAiHttp(String status) {
@@ -539,8 +531,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get rangeFiveYears => '5L';
 
   @override
-  String get chartUnavailable =>
-      'Historie cen není v aktuálním zdroji dat k dispozici.';
+  String get chartUnavailable => 'Historie cen není v aktuálním zdroji dat k dispozici.';
 
   @override
   String get sectionStatements => 'Finanční výkazy (roční)';
@@ -567,8 +558,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get labelOperatingCashFlow => 'Provozní peněžní tok';
 
   @override
-  String get statementsUnavailable =>
-      'Pro tuto akcii nejsou k dispozici vykázané finanční výkazy.';
+  String get statementsUnavailable => 'Pro tuto akcii nejsou k dispozici vykázané finanční výkazy.';
 
   @override
   String get launchAtLogin => 'Spustit při přihlášení';
@@ -577,8 +567,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get hotkeyLabel => 'Globální zkratka';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klikněte sem a poté stiskněte novou kombinaci kláves';
+  String get hotkeyRecordHint => 'Klikněte sem a poté stiskněte novou kombinaci kláves';
 
   @override
   String get hotkeyReset => 'Obnovit výchozí';
@@ -599,8 +588,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get removeFromFavorites => 'Odebrat z oblíbených';
 
   @override
-  String get noFavorites =>
-      'Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji.';
+  String get noFavorites => 'Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji.';
 
   @override
   String get displayCurrency => 'Měna zobrazení';
@@ -647,8 +635,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get updateDownloading => 'Aktualizace se stahuje na pozadí…';
 
   @override
-  String get updateDownloaded =>
-      'Aktualizace je připravena. Restartujte aplikaci a nainstalujte ji.';
+  String get updateDownloaded => 'Aktualizace je připravena. Restartujte aplikaci a nainstalujte ji.';
 
   @override
   String get updateNow => 'Aktualizovat';
@@ -657,9 +644,139 @@ class AppLocalizationsCs extends AppLocalizations {
   String get restartNow => 'Restartovat';
 
   @override
-  String get updatesViaStore =>
-      'Aktualizace přicházejí automaticky prostřednictvím obchodu s aplikacemi.';
+  String get updatesViaStore => 'Aktualizace přicházejí automaticky prostřednictvím obchodu s aplikacemi.';
 
   @override
   String get updateCheckFailed => 'Aktualizace se nepodařilo zkontrolovat.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max 1';
+
+  @override
+  String get planMax2 => 'Max 2';
+
+  @override
+  String get planNone => 'No active plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days-day free trial with $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days of trial left',
+      one: '1 day of trial left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining of $total analyses left this period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renews $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose a plan';
+
+  @override
+  String get currentPlan => 'Current plan';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'Need more? Buy extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+
+  @override
+  String get purchasePending => 'Purchase pending…';
+
+  @override
+  String get purchaseFailed => 'The purchase could not be completed.';
+
+  @override
+  String get purchaseCanceled => 'Purchase canceled.';
+
+  @override
+  String get billingUnavailable =>
+      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+
+  @override
+  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+
+  @override
+  String get errNoPlan => 'An active plan is needed for AI analysis.';
+
+  @override
+  String get viewPlans => 'View plans';
+
+  @override
+  String get usageTitle => 'Usage';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+
+  @override
+  String get mostPopular => 'Most popular';
+
+  @override
+  String get bestValue => 'Best value';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
 }

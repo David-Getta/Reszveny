@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app_services.dart';
+import '../../../core/errors.dart';
+import '../../../features/billing/paywall_page.dart';
 import '../../../core/models/stock_details.dart';
 import '../../../core/models/stock_report.dart';
 import '../../../core/util/formatters.dart';
@@ -35,6 +37,10 @@ class _AnalysisCardState extends State<AnalysisCard> {
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     services.reports.restore(widget.details.symbol, language: language);
   }
+
+  static bool _isQuotaError(Object? e) =>
+      e is AppException &&
+      (e.code == AppErrorCode.quotaExceeded || e.code == AppErrorCode.trialExpired || e.code == AppErrorCode.noPlan);
 
   Future<void> _generate({bool force = false}) {
     final services = AppServices.of(context);
@@ -75,10 +81,22 @@ class _AnalysisCardState extends State<AnalysisCard> {
                 Text(l10n.aiIntro, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
                 const SizedBox(height: 14),
                 if (error != null) ...[SectionError(errorMessage(l10n, error)), const SizedBox(height: 10)],
-                FilledButton.icon(
-                  onPressed: _generate,
-                  icon: const Icon(Icons.auto_awesome_rounded, size: 18),
-                  label: Text(l10n.aiGenerate),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    FilledButton.icon(
+                      onPressed: _generate,
+                      icon: const Icon(Icons.auto_awesome_rounded, size: 18),
+                      label: Text(l10n.aiGenerate),
+                    ),
+                    if (_isQuotaError(error))
+                      OutlinedButton.icon(
+                        onPressed: () => PaywallPage.open(context),
+                        icon: const Icon(Icons.workspace_premium_outlined, size: 18),
+                        label: Text(l10n.viewPlans),
+                      ),
+                  ],
                 ),
               ],
               if (loading) ...[

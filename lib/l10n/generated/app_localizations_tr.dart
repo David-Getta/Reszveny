@@ -13,8 +13,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
+  String get homeTagline => 'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analist',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analist', one: '1 analist');
     return '$_temp0';
   }
 
@@ -340,12 +334,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get recognitionRawText => 'Görselden okunan metin';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
+  String get errMissingAnthropicKey => 'Görsel tanıma yapılandırılmamış (ANTHROPIC_API_KEY yok). Sembolü elle girin.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errRecognitionUnreachable => 'Tanıma hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -356,27 +348,22 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errRecognitionRefused => 'Tanıma hizmeti bu görseli işleyemedi.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
+  String get errRecognitionTruncated => 'Tanıma yanıtı kesildi. Lütfen tekrar deneyin.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Tanıma hizmetinden beklenmeyen yanıt.';
+  String get errRecognitionBadResponse => 'Tanıma hizmetinden beklenmeyen yanıt.';
 
   @override
   String get errRecognitionEmpty => 'Tanıma hizmeti boş yanıt döndürdü.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
+  String get errMissingFinnhubKey => 'Piyasa verisi yapılandırılmamış (FINNHUB_API_KEY yok).';
 
   @override
-  String get errMarketUnreachable =>
-      'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errMarketUnreachable => 'Piyasa verisi hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
-  String get errMarketRateLimited =>
-      'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
+  String get errMarketRateLimited => 'Piyasa verisi hizmetine çok fazla istek gönderildi. Lütfen bir dakika bekleyin.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +371,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Piyasa verisi hizmetinden beklenmeyen yanıt.';
+  String get errMarketBadResponse => 'Piyasa verisi hizmetinden beklenmeyen yanıt.';
 
   @override
   String errNoQuote(String symbol) {
@@ -485,8 +471,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get aiRegenerate => 'Yeniden oluştur';
 
   @override
-  String get aiGenerating =>
-      'Analiz hazırlanıyor… bu bir iki dakika sürebilir.';
+  String get aiGenerating => 'Analiz hazırlanıyor… bu bir iki dakika sürebilir.';
 
   @override
   String get aiSources => 'Kaynaklar';
@@ -501,12 +486,10 @@ class AppLocalizationsTr extends AppLocalizations {
       'Kamuya açık veriler ve güncel haberlere dayanan, yapay zekâ tarafından oluşturulmuş analiz. Hatalar içerebilir veya güncelliğini yitirmiş olabilir; yatırım tavsiyesi değildir.';
 
   @override
-  String get errAiNotConfigured =>
-      'Yapay zekâ analizi yapılandırılmamış (ANTHROPIC_API_KEY yok).';
+  String get errAiNotConfigured => 'Yapay zekâ analizi yapılandırılmamış (ANTHROPIC_API_KEY yok).';
 
   @override
-  String get errAiUnreachable =>
-      'Yapay zekâ hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
+  String get errAiUnreachable => 'Yapay zekâ hizmetine ulaşılamadı. İnternet bağlantınızı kontrol edin.';
 
   @override
   String errAiHttp(String status) {
@@ -514,8 +497,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Yapay zekâ hizmeti bu hisseyi analiz etmeyi reddetti.';
+  String get errAiRefused => 'Yapay zekâ hizmeti bu hisseyi analiz etmeyi reddetti.';
 
   @override
   String get errAiBadResponse => 'Yapay zekâ hizmetinden beklenmeyen yanıt.';
@@ -539,8 +521,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Mevcut veri kaynağında fiyat geçmişi bulunmuyor.';
+  String get chartUnavailable => 'Mevcut veri kaynağında fiyat geçmişi bulunmuyor.';
 
   @override
   String get sectionStatements => 'Finansal tablolar (yıllık)';
@@ -567,8 +548,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Faaliyetlerden nakit akışı';
 
   @override
-  String get statementsUnavailable =>
-      'Bu hisse için raporlanmış finansal tablolar bulunmuyor.';
+  String get statementsUnavailable => 'Bu hisse için raporlanmış finansal tablolar bulunmuyor.';
 
   @override
   String get launchAtLogin => 'Oturum açılışında başlat';
@@ -577,8 +557,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get hotkeyLabel => 'Genel kısayol';
 
   @override
-  String get hotkeyRecordHint =>
-      'Buraya tıklayın, ardından yeni tuş kombinasyonuna basın';
+  String get hotkeyRecordHint => 'Buraya tıklayın, ardından yeni tuş kombinasyonuna basın';
 
   @override
   String get hotkeyReset => 'Varsayılana sıfırla';
@@ -599,8 +578,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get removeFromFavorites => 'Favorilerden kaldır';
 
   @override
-  String get noFavorites =>
-      'Henüz favori yok. Eklemek için bir hissenin yıldızına dokunun.';
+  String get noFavorites => 'Henüz favori yok. Eklemek için bir hissenin yıldızına dokunun.';
 
   @override
   String get displayCurrency => 'Görüntüleme para birimi';
@@ -647,8 +625,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get updateDownloading => 'Güncelleme arka planda indiriliyor…';
 
   @override
-  String get updateDownloaded =>
-      'Güncelleme hazır. Yüklemek için yeniden başlatın.';
+  String get updateDownloaded => 'Güncelleme hazır. Yüklemek için yeniden başlatın.';
 
   @override
   String get updateNow => 'Güncelle';
@@ -657,9 +634,139 @@ class AppLocalizationsTr extends AppLocalizations {
   String get restartNow => 'Yeniden başlat';
 
   @override
-  String get updatesViaStore =>
-      'Güncellemeler uygulama mağazası üzerinden otomatik olarak gelir.';
+  String get updatesViaStore => 'Güncellemeler uygulama mağazası üzerinden otomatik olarak gelir.';
 
   @override
   String get updateCheckFailed => 'Güncellemeler denetlenemedi.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max 1';
+
+  @override
+  String get planMax2 => 'Max 2';
+
+  @override
+  String get planNone => 'No active plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days-day free trial with $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days of trial left',
+      one: '1 day of trial left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining of $total analyses left this period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renews $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose a plan';
+
+  @override
+  String get currentPlan => 'Current plan';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'Need more? Buy extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+
+  @override
+  String get purchasePending => 'Purchase pending…';
+
+  @override
+  String get purchaseFailed => 'The purchase could not be completed.';
+
+  @override
+  String get purchaseCanceled => 'Purchase canceled.';
+
+  @override
+  String get billingUnavailable =>
+      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+
+  @override
+  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+
+  @override
+  String get errNoPlan => 'An active plan is needed for AI analysis.';
+
+  @override
+  String get viewPlans => 'View plans';
+
+  @override
+  String get usageTitle => 'Usage';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+
+  @override
+  String get mostPopular => 'Most popular';
+
+  @override
+  String get bestValue => 'Best value';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
 }

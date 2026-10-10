@@ -19,6 +19,9 @@ import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_report.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
+import 'package:reszveny/features/billing/demo_billing_service.dart';
+import 'package:reszveny/features/billing/entitlement_service.dart';
+import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
@@ -38,19 +41,33 @@ class _NoRecognizer implements StockRecognizer {
       const RecognitionResult(candidates: []);
 }
 
-AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) => AppServices(
-  config: const AppConfig(),
-  capture: CaptureService(),
-  recognizer: _NoRecognizer(),
-  marketData: DemoMarketDataProvider(latency: Duration.zero),
-  locale: LocaleController(initial: locale),
-  preferences: AppPreferences(
-    themeMode: mode,
-    recent: const ['AAPL', 'NVDA', 'OTP'],
-    favorites: const ['AAPL', 'MSFT'],
+AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) {
+  final ent = _entitlements();
+  return AppServices(
+    config: const AppConfig(),
+    capture: CaptureService(),
+    recognizer: _NoRecognizer(),
+    marketData: DemoMarketDataProvider(latency: Duration.zero),
+    locale: LocaleController(initial: locale),
+    preferences: AppPreferences(
+      themeMode: mode,
+      recent: const ['AAPL', 'NVDA', 'OTP'],
+      favorites: const ['AAPL', 'MSFT'],
+    ),
+    desktop: DesktopIntegration(),
+    reports: ReportStore(analyst: _FakeAnalyst(), entitlements: ent),
+    entitlements: ent,
+    billing: DemoBillingService(latency: Duration.zero),
+  );
+}
+
+EntitlementService _entitlements() => EntitlementService(
+  initial: EntitlementState(
+    tier: PlanTier.pro,
+    periodStart: DateTime.now().subtract(const Duration(days: 3)),
+    periodEnd: DateTime.now().add(const Duration(days: 27)),
+    usedInPeriod: 5,
   ),
-  desktop: DesktopIntegration(),
-  reports: ReportStore(analyst: _FakeAnalyst()),
 );
 
 Future<void> _loadFonts() async {
@@ -178,6 +195,15 @@ void main() {
     await tester.tap(find.text('Generate analysis'));
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_ai_report');
+  });
+
+  testWidgets('paywall', (tester) async {
+    await pumpApp(tester, _services(), const Size(1200, 900));
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('View plans').first);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'paywall');
   });
 
   testWidgets('quick bar', (tester) async {

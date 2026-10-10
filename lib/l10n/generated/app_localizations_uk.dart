@@ -354,32 +354,26 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -503,12 +496,10 @@ class AppLocalizationsUk extends AppLocalizations {
       'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
 
   @override
-  String get errAiNotConfigured =>
-      'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
 
   @override
   String errAiHttp(String status) {
@@ -540,8 +531,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get rangeFiveYears => '5Р';
 
   @override
-  String get chartUnavailable =>
-      'Історія цін недоступна в поточному джерелі даних.';
+  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
 
   @override
   String get sectionStatements => 'Фінансова звітність (річна)';
@@ -568,8 +558,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операційний грошовий потік';
 
   @override
-  String get statementsUnavailable =>
-      'Опублікована фінансова звітність для цієї акції недоступна.';
+  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
 
   @override
   String get launchAtLogin => 'Запускати під час входу в систему';
@@ -578,8 +567,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hotkeyLabel => 'Глобальне сполучення клавіш';
 
   @override
-  String get hotkeyRecordHint =>
-      'Натисніть тут, а потім натисніть нове сполучення клавіш';
+  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
 
   @override
   String get hotkeyReset => 'Скинути до типового';
@@ -600,8 +588,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get removeFromFavorites => 'Видалити з обраного';
 
   @override
-  String get noFavorites =>
-      'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+  String get noFavorites => 'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
 
   @override
   String get displayCurrency => 'Валюта відображення';
@@ -648,8 +635,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get updateDownloading => 'Оновлення завантажується у фоновому режимі…';
 
   @override
-  String get updateDownloaded =>
-      'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
+  String get updateDownloaded => 'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
 
   @override
   String get updateNow => 'Оновити';
@@ -658,9 +644,139 @@ class AppLocalizationsUk extends AppLocalizations {
   String get restartNow => 'Перезапустити';
 
   @override
-  String get updatesViaStore =>
-      'Оновлення надходять автоматично через магазин застосунків.';
+  String get updatesViaStore => 'Оновлення надходять автоматично через магазин застосунків.';
 
   @override
   String get updateCheckFailed => 'Не вдалося перевірити оновлення.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max 1';
+
+  @override
+  String get planMax2 => 'Max 2';
+
+  @override
+  String get planNone => 'No active plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days-day free trial with $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days of trial left',
+      one: '1 day of trial left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining of $total analyses left this period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renews $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose a plan';
+
+  @override
+  String get currentPlan => 'Current plan';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'Need more? Buy extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+
+  @override
+  String get purchasePending => 'Purchase pending…';
+
+  @override
+  String get purchaseFailed => 'The purchase could not be completed.';
+
+  @override
+  String get purchaseCanceled => 'Purchase canceled.';
+
+  @override
+  String get billingUnavailable =>
+      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+
+  @override
+  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+
+  @override
+  String get errNoPlan => 'An active plan is needed for AI analysis.';
+
+  @override
+  String get viewPlans => 'View plans';
+
+  @override
+  String get usageTitle => 'Usage';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+
+  @override
+  String get mostPopular => 'Most popular';
+
+  @override
+  String get bestValue => 'Best value';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
 }

@@ -9,6 +9,7 @@ import '../../core/desktop/desktop_integration.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../billing/usage_chip.dart';
 import '../home/home_page.dart';
 import '../home/quick_bar.dart';
 import '../settings/settings_page.dart';
@@ -146,6 +147,7 @@ class _Sidebar extends StatelessWidget {
             child: _SidebarButton(icon: Icons.add_rounded, label: l10n.newSearch, onTap: onNewSearch, accent: true),
           ),
           _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings),
+          const Padding(padding: EdgeInsets.fromLTRB(12, 8, 12, 0), child: UsageChip(compact: true)),
           const SizedBox(height: 8),
           Expanded(
             child: ListenableBuilder(

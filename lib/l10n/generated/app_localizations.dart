@@ -103,8 +103,7 @@ import 'app_localizations_zh.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -112,8 +111,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -125,13 +123,12 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -178,11 +175,7 @@ abstract class AppLocalizations {
     Locale('ur'),
     Locale('vi'),
     Locale('zh'),
-    Locale.fromSubtags(
-      languageCode: 'zh',
-      countryCode: 'HK',
-      scriptCode: 'Hant',
-    ),
+    Locale.fromSubtags(languageCode: 'zh', countryCode: 'HK', scriptCode: 'Hant'),
   ];
 
   /// No description provided for @appTitle.
@@ -1348,10 +1341,231 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not check for updates.'**
   String get updateCheckFailed;
+
+  /// No description provided for @subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get subscription;
+
+  /// No description provided for @planTrial.
+  ///
+  /// In en, this message translates to:
+  /// **'Trial'**
+  String get planTrial;
+
+  /// No description provided for @planNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get planNormal;
+
+  /// No description provided for @planPro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro'**
+  String get planPro;
+
+  /// No description provided for @planMax1.
+  ///
+  /// In en, this message translates to:
+  /// **'Max 1'**
+  String get planMax1;
+
+  /// No description provided for @planMax2.
+  ///
+  /// In en, this message translates to:
+  /// **'Max 2'**
+  String get planMax2;
+
+  /// No description provided for @planNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No active plan'**
+  String get planNone;
+
+  /// No description provided for @planAnalysesPerMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} analyses per month'**
+  String planAnalysesPerMonth(int count);
+
+  /// No description provided for @planTrialDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'{days}-day free trial with {count} analyses'**
+  String planTrialDescription(int days, int count);
+
+  /// No description provided for @trialDaysLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{1 day of trial left} other{{days} days of trial left}}'**
+  String trialDaysLeft(int days);
+
+  /// No description provided for @trialExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your free trial has ended. Choose a plan to keep analysing.'**
+  String get trialExpired;
+
+  /// No description provided for @analysesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{remaining} of {total} analyses left this period'**
+  String analysesRemaining(int remaining, int total);
+
+  /// No description provided for @extraCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} extra analyses'**
+  String extraCredits(int count);
+
+  /// No description provided for @renewsOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Renews {date}'**
+  String renewsOn(String date);
+
+  /// No description provided for @choosePlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a plan'**
+  String get choosePlan;
+
+  /// No description provided for @currentPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Current plan'**
+  String get currentPlan;
+
+  /// No description provided for @subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe'**
+  String get subscribe;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/ month'**
+  String get perMonth;
+
+  /// No description provided for @extraPacksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Need more? Buy extra analyses'**
+  String get extraPacksTitle;
+
+  /// No description provided for @extraPacksHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Extra analyses never expire and are used after your monthly allowance.'**
+  String get extraPacksHint;
+
+  /// No description provided for @buy.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy'**
+  String get buy;
+
+  /// No description provided for @restorePurchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchases'**
+  String get restorePurchases;
+
+  /// No description provided for @manageSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get manageSubscription;
+
+  /// No description provided for @purchaseSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks! Your purchase is active.'**
+  String get purchaseSuccess;
+
+  /// No description provided for @purchasePending.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase pending…'**
+  String get purchasePending;
+
+  /// No description provided for @purchaseFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase could not be completed.'**
+  String get purchaseFailed;
+
+  /// No description provided for @purchaseCanceled.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase canceled.'**
+  String get purchaseCanceled;
+
+  /// No description provided for @billingUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.'**
+  String get billingUnavailable;
+
+  /// No description provided for @errQuotaExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no analyses left for this period. Upgrade your plan or buy extra analyses.'**
+  String get errQuotaExceeded;
+
+  /// No description provided for @errTrialExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your free trial has ended. Choose a plan to continue.'**
+  String get errTrialExpired;
+
+  /// No description provided for @errNoPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'An active plan is needed for AI analysis.'**
+  String get errNoPlan;
+
+  /// No description provided for @viewPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'View plans'**
+  String get viewPlans;
+
+  /// No description provided for @usageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Usage'**
+  String get usageTitle;
+
+  /// No description provided for @demoPurchaseNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Demo billing: purchases are simulated on this platform.'**
+  String get demoPurchaseNote;
+
+  /// No description provided for @mostPopular.
+  ///
+  /// In en, this message translates to:
+  /// **'Most popular'**
+  String get mostPopular;
+
+  /// No description provided for @bestValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Best value'**
+  String get bestValue;
+
+  /// No description provided for @planFeaturesCommon.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.'**
+  String get planFeaturesCommon;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override

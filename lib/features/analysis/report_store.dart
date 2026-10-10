@@ -3,16 +3,21 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/errors.dart';
 import '../../core/models/stock_details.dart';
+import '../billing/entitlement_service.dart';
 import '../../core/models/stock_report.dart';
 import 'stock_analyst.dart';
 
 /// Az elemzések állapota és gyorsítótára tickerenként. A kész elemzést
 /// lemezre is menti, hogy újraindítás után se kelljen újra fizetni érte.
 class ReportStore extends ChangeNotifier {
-  ReportStore({required this.analyst, this.ttl = const Duration(hours: 12)});
+  ReportStore({required this.analyst, this.entitlements, this.ttl = const Duration(hours: 12)});
 
   final StockAnalyst analyst;
+
+  /// Ha meg van adva, elemzés előtt ellenőrzi és utána elhasználja a keretet.
+  final EntitlementService? entitlements;
   final Duration ttl;
 
   static const _prefix = 'report_';
@@ -49,12 +54,26 @@ class ReportStore extends ChangeNotifier {
     final symbol = details.symbol;
     if (_loading.contains(symbol)) return;
     if (!force && _reports[symbol] != null) return;
+    final ent = entitlements;
+    if (ent != null) {
+      final q = ent.check();
+      if (q != QuotaCheck.ok) {
+        _errors[symbol] = AnalysisException(switch (q) {
+          QuotaCheck.trialExpired => AppErrorCode.trialExpired,
+          QuotaCheck.noPlan => AppErrorCode.noPlan,
+          _ => AppErrorCode.quotaExceeded,
+        });
+        notifyListeners();
+        return;
+      }
+    }
     _loading.add(symbol);
     _errors.remove(symbol);
     notifyListeners();
     try {
       final r = await analyst.analyze(details, outputLanguage: outputLanguage);
       _reports[symbol] = r;
+      await entitlements?.consume();
       try {
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));

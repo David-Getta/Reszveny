@@ -55,6 +55,13 @@ Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `
 API-kulcs nélkül az app **demó módban** indul (AAPL, MSFT, NVDA, OTP mintaadatokkal), így a
 felület kulcs nélkül is végigjárható.
 
+## Előfizetés
+
+3 napos próbaidő (3 elemzés), majd Normál (8 elemzés/hó), Pro (20), Max 1 (80), Max 2 (150), és
+külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés az App Store-on, a Play-en és a Mac
+App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált bolt. A havi keret
+az AI-elemzésekre vonatkozik; a részletek és a szerveroldali teendők: [`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
+
 ## Automatikus frissítés
 
 Az app minden platformon a lehető legautomatikusabban frissül; a beállításokban látszik a

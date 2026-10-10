@@ -25,6 +25,9 @@ enum AppErrorCode {
   clipboardNoImage,
   chartUnavailable,
   statementsUnavailable,
+  quotaExceeded,
+  trialExpired,
+  noPlan,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés

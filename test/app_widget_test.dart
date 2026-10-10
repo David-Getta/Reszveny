@@ -11,6 +11,9 @@ import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_report.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
+import 'package:reszveny/features/billing/demo_billing_service.dart';
+import 'package:reszveny/features/billing/entitlement_service.dart';
+import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -24,15 +27,29 @@ class _NoRecognizer implements StockRecognizer {
       const RecognitionResult(candidates: []);
 }
 
-AppServices services({Locale? locale}) => AppServices(
-  config: const AppConfig(),
-  capture: CaptureService(),
-  recognizer: _NoRecognizer(),
-  marketData: DemoMarketDataProvider(latency: Duration.zero),
-  locale: LocaleController(initial: locale),
-  preferences: AppPreferences(),
-  desktop: DesktopIntegration(),
-  reports: ReportStore(analyst: _FakeAnalyst()),
+AppServices services({Locale? locale}) {
+  final ent = _entitlements();
+  return AppServices(
+    config: const AppConfig(),
+    capture: CaptureService(),
+    recognizer: _NoRecognizer(),
+    marketData: DemoMarketDataProvider(latency: Duration.zero),
+    locale: LocaleController(initial: locale),
+    preferences: AppPreferences(),
+    desktop: DesktopIntegration(),
+    reports: ReportStore(analyst: _FakeAnalyst(), entitlements: ent),
+    entitlements: ent,
+    billing: DemoBillingService(latency: Duration.zero),
+  );
+}
+
+EntitlementService _entitlements() => EntitlementService(
+  initial: EntitlementState(
+    tier: PlanTier.pro,
+    periodStart: DateTime.now().subtract(const Duration(days: 3)),
+    periodEnd: DateTime.now().add(const Duration(days: 27)),
+    usedInPeriod: 5,
+  ),
 );
 
 class _FakeAnalyst implements StockAnalyst {
@@ -119,6 +136,51 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Favorites'), findsOneWidget);
     expect(find.textContaining('231.45'), findsOneWidget);
+  });
+
+  testWidgets('paywall lists the four plans and a demo purchase upgrades the plan', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('View plans').first);
+    await tester.pumpAndSettle();
+    expect(find.text('Normal'), findsOneWidget);
+    expect(find.text('Max 2'), findsOneWidget);
+    expect(find.text('150 analyses per month'), findsOneWidget);
+    expect(find.text('Current plan'), findsWidgets);
+    // A Max 1 csomag megvétele a demó boltban azonnal aktiválódik.
+    final subscribeButtons = find.widgetWithText(FilledButton, 'Subscribe');
+    expect(subscribeButtons, findsNWidgets(3));
+    await tester.tap(subscribeButtons.at(1));
+    await tester.pumpAndSettle();
+    expect(
+      s.entitlements.plan?.tier,
+      PlanTier.max1,
+      reason: 'event=${s.billingController.lastEvent?.status} products=${s.billingController.products.length}',
+    );
+    expect(find.text('Thanks! Your purchase is active.'), findsOneWidget);
+  });
+
+  testWidgets('analysis is blocked when the allowance is used up and offers the plans', (tester) async {
+    final s = services();
+    for (var i = 0; i < 20; i++) {
+      await s.entitlements.consume();
+    }
+    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Generate analysis'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('no analyses left'), findsOneWidget);
+    expect(find.text('View plans'), findsOneWidget);
+    expect(find.text('Test headline'), findsNothing);
   });
 
   testWidgets('recent searches appear in the sidebar on wide screens', (tester) async {
