@@ -150,17 +150,17 @@ void main() {
     await tester.tap(find.text('View plans').first);
     await tester.pumpAndSettle();
     expect(find.text('Normal'), findsOneWidget);
-    expect(find.text('Max 2'), findsOneWidget);
+    expect(find.text('Ultra'), findsOneWidget);
     expect(find.text('150 analyses per month'), findsOneWidget);
     expect(find.text('Current plan'), findsWidgets);
-    // A Max 1 csomag megvétele a demó boltban azonnal aktiválódik.
+    // A Max csomag megvétele a demó boltban azonnal aktiválódik.
     final subscribeButtons = find.widgetWithText(FilledButton, 'Subscribe');
     expect(subscribeButtons, findsNWidgets(3));
     await tester.tap(subscribeButtons.at(1));
     await tester.pumpAndSettle();
     expect(
       s.entitlements.plan?.tier,
-      PlanTier.max1,
+      PlanTier.max,
       reason: 'event=${s.billingController.lastEvent?.status} products=${s.billingController.products.length}',
     );
     expect(find.text('Thanks! Your purchase is active.'), findsOneWidget);

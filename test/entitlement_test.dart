@@ -31,8 +31,8 @@ void main() {
   test('plans carry the agreed allowances', () {
     expect(PlanSpec.normal.analysesPerPeriod, 8);
     expect(PlanSpec.pro.analysesPerPeriod, 20);
-    expect(PlanSpec.max1.analysesPerPeriod, 80);
-    expect(PlanSpec.max2.analysesPerPeriod, 150);
+    expect(PlanSpec.max.analysesPerPeriod, 80);
+    expect(PlanSpec.ultra.analysesPerPeriod, 150);
     expect(PlanSpec.trial.trialLength, const Duration(days: 3));
   });
 
@@ -92,14 +92,14 @@ void main() {
 
   test('state survives a JSON round trip', () {
     final s = EntitlementState(
-      tier: PlanTier.max1,
+      tier: PlanTier.max,
       periodStart: DateTime.utc(2026, 10, 1),
       periodEnd: DateTime.utc(2026, 10, 31),
       usedInPeriod: 12,
       extraCredits: 3,
     );
     final back = EntitlementState.fromJson(s.toJson());
-    expect(back.tier, PlanTier.max1);
+    expect(back.tier, PlanTier.max);
     expect(back.usedInPeriod, 12);
     expect(back.extraCredits, 3);
     expect(back.periodEnd, DateTime.utc(2026, 10, 31));

@@ -139,7 +139,7 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 | 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
 | 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), StockLens név és logó | ✅ kész |
 | 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
-| 3d | Előfizetés: próbaidő, Normál/Pro/Max 1/Max 2, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
+| 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
 | 4a | Backend: proxy, vásárlás-ellenőrzés, kvóta-nyilvántartás, fiók | ⬜ |
 | 4b | OCR fallback offline (ML Kit, mobil), árfolyam-riasztás, portfólió | ⬜ |
 | 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |

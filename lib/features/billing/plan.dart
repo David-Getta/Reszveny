@@ -1,6 +1,6 @@
 /// Előfizetési csomagok és elemzés-keretek. A termékazonosítók ugyanezek az
 /// App Store Connectben és a Play Console-ban (konfigurálhatók).
-enum PlanTier { trial, normal, pro, max1, max2 }
+enum PlanTier { trial, normal, pro, max, ultra }
 
 class PlanSpec {
   const PlanSpec({required this.tier, required this.productId, required this.analysesPerPeriod, this.trialLength});
@@ -26,17 +26,17 @@ class PlanSpec {
   );
   static const normal = PlanSpec(tier: PlanTier.normal, productId: 'stocklens.sub.normal', analysesPerPeriod: 8);
   static const pro = PlanSpec(tier: PlanTier.pro, productId: 'stocklens.sub.pro', analysesPerPeriod: 20);
-  static const max1 = PlanSpec(tier: PlanTier.max1, productId: 'stocklens.sub.max1', analysesPerPeriod: 80);
-  static const max2 = PlanSpec(tier: PlanTier.max2, productId: 'stocklens.sub.max2', analysesPerPeriod: 150);
+  static const max = PlanSpec(tier: PlanTier.max, productId: 'stocklens.sub.max', analysesPerPeriod: 80);
+  static const ultra = PlanSpec(tier: PlanTier.ultra, productId: 'stocklens.sub.ultra', analysesPerPeriod: 150);
 
-  static const List<PlanSpec> paid = [normal, pro, max1, max2];
+  static const List<PlanSpec> paid = [normal, pro, max, ultra];
 
   static PlanSpec of(PlanTier tier) => switch (tier) {
     PlanTier.trial => trial,
     PlanTier.normal => normal,
     PlanTier.pro => pro,
-    PlanTier.max1 => max1,
-    PlanTier.max2 => max2,
+    PlanTier.max => max,
+    PlanTier.ultra => ultra,
   };
 
   static PlanSpec? byProductId(String id) {

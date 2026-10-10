@@ -37,8 +37,8 @@ class _PaywallPageState extends State<PaywallPage> {
     PlanTier.trial => l10n.planTrial,
     PlanTier.normal => l10n.planNormal,
     PlanTier.pro => l10n.planPro,
-    PlanTier.max1 => l10n.planMax1,
-    PlanTier.max2 => l10n.planMax2,
+    PlanTier.max => l10n.planMax1,
+    PlanTier.ultra => l10n.planMax2,
   };
 
   @override
@@ -99,7 +99,7 @@ class _PaywallPageState extends State<PaywallPage> {
                             current: ent.plan?.tier == spec.tier && !ent.isTrialExpired,
                             badge: spec.tier == PlanTier.pro
                                 ? l10n.mostPopular
-                                : spec.tier == PlanTier.max1
+                                : spec.tier == PlanTier.max
                                 ? l10n.bestValue
                                 : null,
                             busy: bc.busyProductId == spec.productId,

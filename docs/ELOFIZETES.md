@@ -7,8 +7,8 @@
 | Próbaidő | – | 3 elemzés 3 napig | első indításkor automatikusan indul |
 | Normál | `stocklens.sub.normal` | 8 | |
 | Pro | `stocklens.sub.pro` | 20 | „Legnépszerűbb” jelölés |
-| Max 1 | `stocklens.sub.max1` | 80 | „Legjobb ár/érték” jelölés |
-| Max 2 | `stocklens.sub.max2` | 150 | |
+| Max | `stocklens.sub.max` | 80 | „Legjobb ár/érték” jelölés |
+| Ultra | `stocklens.sub.ultra` | 150 | |
 
 Extra elemzés-csomagok (fogyó termékek, nem járnak le, a havi keret után fogynak):
 `stocklens.pack.5` (+5), `stocklens.pack.20` (+20), `stocklens.pack.50` (+50).

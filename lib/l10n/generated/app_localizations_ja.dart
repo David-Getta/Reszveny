@@ -658,10 +658,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get planPro => 'Pro';
 
   @override
-  String get planMax1 => 'Max 1';
+  String get planMax1 => 'Max';
 
   @override
-  String get planMax2 => 'Max 2';
+  String get planMax2 => 'Ultra';
 
   @override
   String get planNone => '有効なプランがありません';

@@ -36,8 +36,8 @@ class UsageChip extends StatelessWidget {
           label = switch (plan.tier) {
             PlanTier.normal => l10n.planNormal,
             PlanTier.pro => l10n.planPro,
-            PlanTier.max1 => l10n.planMax1,
-            PlanTier.max2 => l10n.planMax2,
+            PlanTier.max => l10n.planMax1,
+            PlanTier.ultra => l10n.planMax2,
             PlanTier.trial => l10n.planTrial,
           };
           detail = l10n.analysesRemaining(ent.remainingInPeriod, ent.quota);

@@ -654,10 +654,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get planPro => 'Pro';
 
   @override
-  String get planMax1 => 'Max 1';
+  String get planMax1 => 'Max';
 
   @override
-  String get planMax2 => 'Max 2';
+  String get planMax2 => 'Ultra';
 
   @override
   String get planNone => '没有有效的计划';
@@ -1421,10 +1421,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get planPro => 'Pro';
 
   @override
-  String get planMax1 => 'Max 1';
+  String get planMax1 => 'Max';
 
   @override
-  String get planMax2 => 'Max 2';
+  String get planMax2 => 'Ultra';
 
   @override
   String get planNone => '沒有生效的計劃';

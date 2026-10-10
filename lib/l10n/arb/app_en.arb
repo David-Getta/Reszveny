@@ -354,8 +354,8 @@
   "planTrial": "Trial",
   "planNormal": "Normal",
   "planPro": "Pro",
-  "planMax1": "Max 1",
-  "planMax2": "Max 2",
+  "planMax1": "Max",
+  "planMax2": "Ultra",
   "planNone": "No active plan",
   "planAnalysesPerMonth": "{count} analyses per month",
   "@planAnalysesPerMonth": {

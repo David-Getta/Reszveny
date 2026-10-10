@@ -1376,13 +1376,13 @@ abstract class AppLocalizations {
   /// No description provided for @planMax1.
   ///
   /// In en, this message translates to:
-  /// **'Max 1'**
+  /// **'Max'**
   String get planMax1;
 
   /// No description provided for @planMax2.
   ///
   /// In en, this message translates to:
-  /// **'Max 2'**
+  /// **'Ultra'**
   String get planMax2;
 
   /// No description provided for @planNone.

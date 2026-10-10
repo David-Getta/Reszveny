@@ -27,8 +27,8 @@ class DemoBillingService implements BillingService {
   static const Map<String, double> demoPrices = {
     'stocklens.sub.normal': 2990,
     'stocklens.sub.pro': 5990,
-    'stocklens.sub.max1': 14990,
-    'stocklens.sub.max2': 24990,
+    'stocklens.sub.max': 14990,
+    'stocklens.sub.ultra': 24990,
     'stocklens.pack.5': 1990,
     'stocklens.pack.20': 6990,
     'stocklens.pack.50': 14990,
