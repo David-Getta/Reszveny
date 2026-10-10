@@ -11,6 +11,7 @@ class AppPreferences extends ChangeNotifier {
     List<String> favorites = const [],
     this.hotkeyJson,
     this.displayCurrency,
+    this.autoUpdate = true,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -21,6 +22,7 @@ class AppPreferences extends ChangeNotifier {
   static const _hotkeyKey = 'global_hotkey';
   static const _favoritesKey = 'favorite_symbols';
   static const _currencyKey = 'display_currency';
+  static const _autoUpdateKey = 'auto_update';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -32,6 +34,9 @@ class AppPreferences extends ChangeNotifier {
   final List<String> _favorites;
   List<String> get favorites => List.unmodifiable(_favorites);
   bool isFavorite(String symbol) => _favorites.contains(symbol.toUpperCase());
+
+  /// Frissítések automatikus letöltése és telepítése (ahol a platform engedi).
+  bool autoUpdate;
 
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
@@ -52,6 +57,7 @@ class AppPreferences extends ChangeNotifier {
         favorites: prefs.getStringList(_favoritesKey) ?? const [],
         hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
         displayCurrency: prefs.getString(_currencyKey) ?? currencyUnset,
+        autoUpdate: prefs.getBool(_autoUpdateKey) ?? true,
       );
     } catch (_) {
       return AppPreferences();
@@ -78,6 +84,12 @@ class AppPreferences extends ChangeNotifier {
   /// Jelző: a felhasználó még nem választott; ilyenkor a rendszer nyelvéből
   /// származtatjuk. Az üres sztring = „csak a saját pénznem”.
   static const String currencyUnset = '__unset__';
+
+  Future<void> setAutoUpdate(bool enabled) async {
+    autoUpdate = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_autoUpdateKey, enabled));
+  }
 
   Future<void> setDisplayCurrency(String? code) async {
     displayCurrency = code ?? '';

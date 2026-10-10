@@ -55,6 +55,7 @@ enum ReportSectionKind {
   financials,
   valuation,
   ownership,
+  outlook,
   watch,
   other;
 

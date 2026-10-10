@@ -478,7 +478,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'Cikakken bayani da AI ya rubuta: taƙaitaccen sabbin labarai, kasuwancin, ƙarfi, haɗari da abubuwan da ba a gani, ƙima da abin da za a sa ido a kai.';
+      'Cikakken bayani da AI ya rubuta: taƙaitaccen sabbin labarai, kasuwancin, ƙarfi, haɗari da abubuwan da ba a gani, ƙima, hasashen farashi tare da yanayoyi daga mahangar tunani, zamantakewa, fasaha da babban tattalin arziki, da abin da za a sa ido a kai.';
 
   @override
   String get aiGenerate => 'Ƙirƙiri nazari';
@@ -620,4 +620,48 @@ class AppLocalizationsHa extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Farashin canji: 1 $from = $rate $to (ECB, $date)';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }

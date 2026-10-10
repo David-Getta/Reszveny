@@ -139,7 +139,7 @@
   "themeLight": "Clair",
   "back": "Retour",
   "aiSectionTitle": "Analyse IA",
-  "aiIntro": "Une vue d’ensemble détaillée rédigée par IA : synthèse des actualités récentes, activité, points forts, risques et facteurs cachés, valorisation et points à surveiller.",
+  "aiIntro": "Une vue d’ensemble détaillée rédigée par IA : synthèse des actualités récentes, activité, points forts, risques et facteurs cachés, valorisation, perspectives de cours avec des scénarios sous les angles psychologique, sociologique, technique et macroéconomique, et points à surveiller.",
   "aiGenerate": "Générer l’analyse",
   "aiRegenerate": "Régénérer",
   "aiGenerating": "Préparation de l’analyse… cela peut prendre une à deux minutes.",

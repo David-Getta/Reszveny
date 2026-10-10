@@ -5,6 +5,7 @@ import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
 import '../fx/fx_service.dart';
+import '../updates/update_service.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
@@ -110,6 +111,8 @@ class SettingsPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  sectionTitle(l10n.updates),
+                  const Card(child: _UpdatesTile()),
                   sectionTitle(l10n.about),
                   Card(
                     child: Column(
@@ -235,6 +238,61 @@ class _LaunchAtLoginTileState extends State<_LaunchAtLoginTile> {
               final ok = await services.desktop.setLaunchAtLogin(v);
               if (!ok && mounted) setState(() => _enabled = !v);
             },
+    );
+  }
+}
+
+/// Verzió, automatikus frissítés kapcsoló, kézi ellenőrzés és állapot.
+class _UpdatesTile extends StatelessWidget {
+  const _UpdatesTile();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final services = AppServices.of(context);
+    final p = AppPalette.of(context);
+    return ListenableBuilder(
+      listenable: Listenable.merge([services.updates, services.preferences]),
+      builder: (context, _) {
+        final u = services.updates;
+        final String statusText = switch (u.status) {
+          UpdateStatus.checking => l10n.updateChecking,
+          UpdateStatus.upToDate => l10n.updateUpToDate,
+          UpdateStatus.available => l10n.updateAvailable(u.latestVersion ?? ''),
+          UpdateStatus.downloading => l10n.updateDownloading,
+          UpdateStatus.downloaded => l10n.updateDownloaded,
+          UpdateStatus.failed => l10n.updateCheckFailed,
+          UpdateStatus.idle => u.channel == UpdateChannel.store ? l10n.updatesViaStore : '',
+        };
+        final storeOnly = u.channel == UpdateChannel.store;
+        return Column(
+          children: [
+            ListTile(
+              leading: const Icon(Icons.info_outline_rounded),
+              title: Text(l10n.currentVersion(u.currentVersion ?? '–')),
+              subtitle: statusText.isEmpty ? null : Text(statusText, style: TextStyle(color: p.muted)),
+              trailing: storeOnly
+                  ? null
+                  : TextButton(
+                      onPressed: u.status == UpdateStatus.checking ? null : () => u.check(),
+                      child: Text(l10n.checkForUpdates),
+                    ),
+            ),
+            if (!storeOnly) ...[
+              const Divider(height: 1),
+              SwitchListTile(
+                secondary: const Icon(Icons.system_update_alt_rounded),
+                title: Text(l10n.autoUpdate),
+                value: services.preferences.autoUpdate,
+                onChanged: (v) {
+                  services.preferences.setAutoUpdate(v);
+                  u.setAutoInstall(v);
+                },
+              ),
+            ],
+          ],
+        );
+      },
     );
   }
 }

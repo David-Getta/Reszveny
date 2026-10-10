@@ -244,7 +244,7 @@
   "themeLight": "Light",
   "back": "Back",
   "aiSectionTitle": "AI analysis",
-  "aiIntro": "A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.",
+  "aiIntro": "A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation, a price outlook with scenarios from psychological, sociological, technical and macro angles, and what to watch.",
   "aiGenerate": "Generate analysis",
   "aiRegenerate": "Regenerate",
   "aiGenerating": "Preparing the analysis… this can take a minute or two.",
@@ -322,5 +322,32 @@
         "type": "String"
       }
     }
-  }
+  },
+  "updates": "Updates",
+  "currentVersion": "Version {version}",
+  "@currentVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "autoUpdate": "Install updates automatically",
+  "checkForUpdates": "Check for updates",
+  "updateChecking": "Checking for updates…",
+  "updateUpToDate": "You’re on the latest version.",
+  "updateAvailable": "Version {version} is available.",
+  "@updateAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateDownloading": "Downloading the update in the background…",
+  "updateDownloaded": "The update is ready. Restart to install it.",
+  "updateNow": "Update",
+  "restartNow": "Restart",
+  "updatesViaStore": "Updates arrive automatically through the app store.",
+  "updateCheckFailed": "Could not check for updates."
 }

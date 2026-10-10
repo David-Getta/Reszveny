@@ -24,6 +24,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 - **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
 - **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
 - **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
+- **Automatikus frissítés**: Sparkle (macOS/Windows), Play rugalmas frissítés (Android), áruház (iOS), JSON-kiáltvány tartalékként; beállításokban verzió, kapcsoló, kézi ellenőrzés.
 - **Deviza-átváltás**: az ár a saját pénznemedben is megjelenik (ECB napi árfolyam, a Frankfurter nyílt API-n át, kulcs nélkül); a pénznem a beállításokban választható, alapból a rendszer nyelvéből/országából jön.
 - **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
 
@@ -53,6 +54,32 @@ Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `
 
 API-kulcs nélkül az app **demó módban** indul (AAPL, MSFT, NVDA, OTP mintaadatokkal), így a
 felület kulcs nélkül is végigjárható.
+
+## Automatikus frissítés
+
+Az app minden platformon a lehető legautomatikusabban frissül; a beállításokban látszik a
+verzió, kapcsolható az automatikus telepítés, és kézzel is lehet ellenőrizni.
+
+| Platform | Csatorna | Mi történik |
+|---|---|---|
+| macOS, Windows (bolton kívül) | Sparkle / WinSparkle (`auto_updater`) | óránként ellenőriz; ha engedélyezett, a háttérben letölt, a következő indításkor telepít |
+| Android (Play) | Play in-app update, rugalmas mód (`in_app_update`) | háttérben letölt, kész állapotban „Újraindítás” gomb telepíti |
+| iOS, iPadOS, Mac App Store | az áruház | az áruház frissít automatikusan; az app csak a verziót mutatja, és újabb kiáltvány esetén az áruház oldalára visz |
+| web, tartalék mindenhol | JSON-kiáltvány | ha újabb verzió van, sáv jelenik meg „Update” gombbal (letöltési / bolti link) |
+
+Beállítás (`--dart-define`):
+
+| Kulcs | Jelentés |
+|---|---|
+| `UPDATE_APPCAST_URL` | Sparkle appcast XML címe (pl. GitHub Releases-ből kiszolgálva) |
+| `UPDATE_MANIFEST_URL` | kiáltvány JSON: `{"version":"0.7.0+8","notes":"…","urls":{"macos":"…","windows":"…","android":"…","ios":"…"}}` |
+| `STORE_URL` | App Store / Play oldal, ha nincs platformspecifikus link |
+
+Sparkle-hez egyszer kulcsot kell generálni (`dart run auto_updater:generate_keys` macOS-en és
+Windowson), a publikus kulcsot a `macos/Runner/Info.plist` `SUPublicEDKey` bejegyzésébe kell
+tenni, és minden kiadást alá kell írni (`dart run auto_updater:sign_update <fájl>`), az
+aláírás az appcast `enclosure` elemébe kerül. Az appcast és a kiáltvány CI-ból generálható
+minden kiadásnál.
 
 ## Előnézet a böngészőben
 

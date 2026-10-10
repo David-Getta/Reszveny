@@ -23,4 +23,6 @@ Future<void> main() async {
     desktop: desktop,
   );
   runApp(StockLensApp(services: services));
+  // Frissítés-ellenőrzés a háttérben, az első képkocka után.
+  services.updates.initialize(autoInstall: preferences.autoUpdate);
 }

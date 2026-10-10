@@ -479,7 +479,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'Ein ausführlicher, von KI verfasster Überblick: Zusammenfassung aktueller Nachrichten, Geschäftsmodell, Stärken, Risiken und verborgene Faktoren, Bewertung und worauf zu achten ist.';
+      'Ein ausführlicher, von KI verfasster Überblick: Zusammenfassung aktueller Nachrichten, Geschäftsmodell, Stärken, Risiken und verborgene Faktoren, Bewertung, ein Kursausblick mit Szenarien aus psychologischer, soziologischer, technischer und makroökonomischer Sicht sowie worauf zu achten ist.';
 
   @override
   String get aiGenerate => 'Analyse erstellen';
@@ -621,4 +621,48 @@ class AppLocalizationsDe extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (EZB, $date)';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }

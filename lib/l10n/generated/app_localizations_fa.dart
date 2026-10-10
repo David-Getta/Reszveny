@@ -475,7 +475,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'مروری جامع نوشته‌شده با هوش مصنوعی: خلاصه اخبار اخیر، کسب‌وکار، نقاط قوت، ریسک‌ها و عوامل پنهان، ارزش‌گذاری و نکاتی که باید دنبال کنید.';
+      'مروری جامع نوشته‌شده با هوش مصنوعی: خلاصه اخبار اخیر، کسب‌وکار، نقاط قوت، ریسک‌ها و عوامل پنهان، ارزش‌گذاری، چشم‌انداز قیمت با سناریوهایی از زوایای روان‌شناختی، جامعه‌شناختی، تکنیکال و کلان، و نکاتی که باید دنبال کنید.';
 
   @override
   String get aiGenerate => 'تولید تحلیل';
@@ -615,4 +615,48 @@ class AppLocalizationsFa extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return 'نرخ: 1 $from = $rate $to (ECB، $date)';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }

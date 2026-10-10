@@ -13,6 +13,7 @@ import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
+import 'features/updates/update_service.dart';
 
 /// Az app szolgáltatásainak egy helyen összerakott példányai. Egyszerű
 /// függőség-befecskendezés: a widgetek `AppServices.of(context)`-tel érik el.
@@ -27,7 +28,9 @@ class AppServices {
     required this.desktop,
     required this.reports,
     FxService? fx,
-  }) : fx = fx ?? FxService();
+    UpdateService? updates,
+  }) : fx = fx ?? FxService(),
+       updates = updates ?? UpdateService(config: config);
 
   factory AppServices.fromConfig(
     AppConfig config, {
@@ -56,6 +59,7 @@ class AppServices {
   final DesktopIntegration desktop;
   final ReportStore reports;
   final FxService fx;
+  final UpdateService updates;
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).
   String? displayCurrency(Locale locale) {

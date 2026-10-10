@@ -139,7 +139,7 @@
   "themeLight": "Vaalea",
   "back": "Takaisin",
   "aiSectionTitle": "Tekoälyanalyysi",
-  "aiIntro": "Yksityiskohtainen, tekoälyn kirjoittama katsaus: tuoreiden uutisten yhteenveto, liiketoiminta, vahvuudet, riskit ja piilevät tekijät, arvostus ja mitä seurata.",
+  "aiIntro": "Yksityiskohtainen, tekoälyn kirjoittama katsaus: tuoreiden uutisten yhteenveto, liiketoiminta, vahvuudet, riskit ja piilevät tekijät, arvostus, hintanäkymä skenaarioineen psykologisesta, sosiologisesta, teknisestä ja makrotalouden näkökulmasta sekä mitä seurata.",
   "aiGenerate": "Luo analyysi",
   "aiRegenerate": "Luo uudelleen",
   "aiGenerating": "Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.",

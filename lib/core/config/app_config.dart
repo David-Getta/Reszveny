@@ -19,6 +19,9 @@ class AppConfig {
     this.finnhubBaseUrl = const String.fromEnvironment('FINNHUB_BASE_URL', defaultValue: 'https://finnhub.io/api/v1'),
     this.aiEffort = const String.fromEnvironment('ANTHROPIC_REPORT_EFFORT', defaultValue: 'high'),
     this.aiWebSearch = const bool.fromEnvironment('ANTHROPIC_WEB_SEARCH', defaultValue: true),
+    this.updateAppcastUrl = const String.fromEnvironment('UPDATE_APPCAST_URL'),
+    this.updateManifestUrl = const String.fromEnvironment('UPDATE_MANIFEST_URL'),
+    this.storeUrl = const String.fromEnvironment('STORE_URL'),
   });
 
   final String anthropicApiKey;
@@ -32,6 +35,15 @@ class AppConfig {
 
   /// Kereshet-e a modell a weben friss hírek után az elemzéshez.
   final bool aiWebSearch;
+
+  /// Sparkle / WinSparkle appcast (macOS, Windows automatikus frissítés).
+  final String updateAppcastUrl;
+
+  /// Egyszerű JSON-kiáltvány a legújabb verzióról (minden platform, tartalék).
+  final String updateManifestUrl;
+
+  /// Bolti oldal (App Store / Play) – ide visz az „Update” gomb, ha nincs más.
+  final String storeUrl;
 
   bool get hasAnthropicKey => anthropicApiKey.isNotEmpty;
   bool get hasFinnhubKey => finnhubApiKey.isNotEmpty;

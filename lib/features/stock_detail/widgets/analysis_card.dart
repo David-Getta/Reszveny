@@ -164,6 +164,7 @@ class _ReportSectionView extends StatelessWidget {
     ReportSectionKind.financials => Icons.account_balance_outlined,
     ReportSectionKind.valuation => Icons.price_change_outlined,
     ReportSectionKind.ownership => Icons.groups_outlined,
+    ReportSectionKind.outlook => Icons.explore_outlined,
     ReportSectionKind.watch => Icons.visibility_outlined,
     ReportSectionKind.other => Icons.circle_outlined,
   };

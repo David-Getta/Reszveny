@@ -15,6 +15,7 @@ import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
+import '../updates/update_banner.dart';
 import 'candidate_sheet.dart';
 import 'search_field.dart';
 
@@ -191,6 +192,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    const UpdateBanner(),
                     const SizedBox(height: 48),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

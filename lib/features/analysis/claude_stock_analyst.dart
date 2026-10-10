@@ -104,11 +104,18 @@ Rules:
 - Be concrete and specific: numbers, dates, names, percentages. Prefer facts over generic statements.
 - Summarise the recent news (last few weeks) with dates and sources. When the web search tool is available, use it to find the latest news, earnings results, guidance changes, regulatory, legal or management events, insider and institutional activity, short interest, dilution or buybacks, debt maturities and anything material that a careful investor would want to know. Prefer primary or reputable financial sources.
 - Explicitly cover hidden or less obvious factors: customer or supplier concentration, regulatory exposure, litigation, accounting quirks, share-based compensation, convertible debt, related-party issues, governance, dual-class shares, geopolitical exposure, currency risk, cyclicality.
+- Include a dedicated "outlook" section on where the share price could move and why. Build it from several independent lenses and say explicitly which lens drives which conclusion:
+  * Investor psychology and behavioural finance: prevailing sentiment, fear/greed, FOMO or capitulation, anchoring to round numbers or all-time highs, recency bias, narrative strength, retail vs. institutional mood, social-media attention, short interest and squeeze potential.
+  * Sociology and society: demographic and cultural trends, consumer behaviour shifts, generational adoption, regulation driven by public opinion, ESG and reputational pressure, labour and geopolitical currents that touch the company.
+  * Fundamentals and valuation: earnings trajectory, guidance, multiples vs. peers and history, balance-sheet constraints.
+  * Market structure and technicals: trend, key support/resistance, moving averages, volume, volatility regime, index inclusion, options positioning, insider and institutional flows.
+  * Macro and sector: rates, inflation, currency, commodity inputs, sector rotation, the economic cycle.
+  Then give three scenarios as bullets, each starting with its name and a rough probability, e.g. "Bull (~30%): …", "Base (~45%): …", "Bear (~25%): …", with the conditions that would trigger each, an indicative price range or percentage move, and the time horizon (next weeks vs. 6-12 months). Finish with what would invalidate the view. Make clear these are scenarios with uncertainty, not predictions or advice; probabilities are rough judgements.
 - Never give personalised investment advice; describe facts and trade-offs. State uncertainty where data is missing.
 - Write everything in the language requested in the user message. Keep tickers, company names and figures as they are.
 - Return ONLY a single JSON object, no Markdown fences, no prose outside the JSON, matching exactly this shape:
-{"headline": string (1-2 sentences), "sections": [{"kind": one of "summary","news","business","strengths","risks","financials","valuation","ownership","watch","other", "title": string in the requested language, "paragraphs": [string], "bullets": [string]}], "sources": [{"title": string, "url": string}]}
-Include these sections in this order: summary, news, business, strengths, risks, financials, valuation, ownership, watch. Use bullets for news (one news item per bullet, starting with the date), strengths, risks and watch; paragraphs elsewhere. Aim for roughly 700-1100 words in total. List every source URL you relied on in "sources".''';
+{"headline": string (1-2 sentences), "sections": [{"kind": one of "summary","news","business","strengths","risks","financials","valuation","ownership","outlook","watch","other", "title": string in the requested language, "paragraphs": [string], "bullets": [string]}], "sources": [{"title": string, "url": string}]}
+Include these sections in this order: summary, news, business, strengths, risks, financials, valuation, ownership, outlook, watch. Use bullets for news (one news item per bullet, starting with the date), strengths, risks and watch; the outlook section uses paragraphs for the lenses and bullets for the three scenarios; paragraphs elsewhere. Aim for roughly 900-1400 words in total. List every source URL you relied on in "sources".''';
 
   /// A válasz sémája (csak webkeresés nélkül kényszeríthető).
   static const Map<String, dynamic> schema = {
@@ -131,6 +138,7 @@ Include these sections in this order: summary, news, business, strengths, risks,
                 'financials',
                 'valuation',
                 'ownership',
+                'outlook',
                 'watch',
                 'other',
               ],

@@ -139,7 +139,7 @@
   "themeLight": "Jasny",
   "back": "Wstecz",
   "aiSectionTitle": "Analiza AI",
-  "aiIntro": "Szczegółowy przegląd napisany przez AI: podsumowanie ostatnich wiadomości, działalność, mocne strony, ryzyka i ukryte czynniki, wycena oraz na co zwracać uwagę.",
+  "aiIntro": "Szczegółowy przegląd napisany przez AI: podsumowanie ostatnich wiadomości, działalność, mocne strony, ryzyka i ukryte czynniki, wycena, prognoza kursu ze scenariuszami z punktu widzenia psychologicznego, socjologicznego, technicznego i makroekonomicznego oraz na co zwracać uwagę.",
   "aiGenerate": "Wygeneruj analizę",
   "aiRegenerate": "Wygeneruj ponownie",
   "aiGenerating": "Przygotowywanie analizy… może to potrwać minutę lub dwie.",

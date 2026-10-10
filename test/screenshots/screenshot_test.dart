@@ -105,6 +105,20 @@ class _FakeAnalyst implements StockAnalyst {
         title: 'Risks and hidden factors',
         bullets: ['Customer concentration: top 2 hyperscalers ≈ 40% of revenue.', 'Export controls on China.'],
       ),
+      ReportSection(
+        kind: ReportSectionKind.outlook,
+        title: 'Where the price could go',
+        paragraphs: [
+          'Psychology: sentiment is euphoric; retail flows and options activity point to crowded positioning, which raises air-pocket risk on any guidance miss.',
+          'Sociology: AI adoption is now a mainstream cultural narrative; public-opinion-driven regulation (energy use, export policy) is the main social headwind.',
+          'Technicals and macro: price sits above the 50- and 200-day averages with support near 170; rate cuts would favour long-duration growth names.',
+        ],
+        bullets: [
+          'Bull (~30%): guidance beat and China relief: 215–240 within 6–12 months.',
+          'Base (~45%): growth normalises, multiple holds: 175–205.',
+          'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.',
+        ],
+      ),
     ],
     sources: const [ReportSource(title: 'NVIDIA investor relations', url: 'https://investor.nvidia.com')],
     generatedAt: DateTime.now(),

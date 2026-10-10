@@ -464,7 +464,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值以及值得关注的要点。';
+  String get aiIntro =>
+      '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
 
   @override
   String get aiGenerate => '生成分析';
@@ -596,6 +597,50 @@ class AppLocalizationsZh extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return '汇率：1 $from = $rate $to（欧洲央行，$date）';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1057,7 +1102,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值，以及值得留意的要點。';
+  String get aiIntro =>
+      '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
 
   @override
   String get aiGenerate => '產生分析';

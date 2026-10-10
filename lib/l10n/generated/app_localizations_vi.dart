@@ -476,7 +476,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'Tổng quan chi tiết do AI viết: tóm tắt tin tức gần đây, hoạt động kinh doanh, điểm mạnh, rủi ro và các yếu tố tiềm ẩn, định giá và những điều cần theo dõi.';
+      'Tổng quan chi tiết do AI viết: tóm tắt tin tức gần đây, hoạt động kinh doanh, điểm mạnh, rủi ro và các yếu tố tiềm ẩn, định giá, triển vọng giá với các kịch bản từ góc độ tâm lý, xã hội, kỹ thuật và vĩ mô, và những điều cần theo dõi.';
 
   @override
   String get aiGenerate => 'Tạo phân tích';
@@ -615,4 +615,48 @@ class AppLocalizationsVi extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Tỷ giá: 1 $from = $rate $to (ECB, $date)';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }

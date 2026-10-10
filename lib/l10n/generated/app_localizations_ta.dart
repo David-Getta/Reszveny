@@ -477,7 +477,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'AI எழுதிய விரிவான கண்ணோட்டம்: சமீபத்திய செய்திகளின் சுருக்கம், வணிகம், பலங்கள், அபாயங்கள் மற்றும் மறைந்த காரணிகள், மதிப்பீடு மற்றும் கவனிக்க வேண்டியவை.';
+      'AI எழுதிய விரிவான கண்ணோட்டம்: சமீபத்திய செய்திகளின் சுருக்கம், வணிகம், பலங்கள், அபாயங்கள் மற்றும் மறைந்த காரணிகள், மதிப்பீடு, உளவியல், சமூகவியல், தொழில்நுட்ப மற்றும் பேரியல் கோணங்களில் இருந்து சூழ்நிலைகளுடன் கூடிய விலை முன்னோக்கு மற்றும் கவனிக்க வேண்டியவை.';
 
   @override
   String get aiGenerate => 'பகுப்பாய்வை உருவாக்கு';
@@ -618,4 +618,48 @@ class AppLocalizationsTa extends AppLocalizations {
   String fxRateNote(String from, String rate, String to, String date) {
     return 'விகிதம்: 1 $from = $rate $to (ECB, $date)';
   }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates automatically';
+
+  @override
+  String get checkForUpdates => 'Check for updates';
+
+  @override
+  String get updateChecking => 'Checking for updates…';
+
+  @override
+  String get updateUpToDate => 'You’re on the latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version is available.';
+  }
+
+  @override
+  String get updateDownloading => 'Downloading the update in the background…';
+
+  @override
+  String get updateDownloaded => 'The update is ready. Restart to install it.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
+
+  @override
+  String get updateCheckFailed => 'Could not check for updates.';
 }

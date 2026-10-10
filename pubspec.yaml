@@ -7,6 +7,7 @@ environment:
   sdk: ^3.13.5
 
 dependencies:
+  auto_updater: ^1.0.0
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -14,8 +15,10 @@ dependencies:
   hotkey_manager: ^0.2.3
   http: ^1.6.0
   image_picker: ^1.2.4
+  in_app_update: ^5.0.0
   intl: ^0.20.3
   launch_at_startup: ^0.5.1
+  package_info_plus: ^9.0.1
   pasteboard: ^0.5.0
   shared_preferences: ^2.5.6
   tray_manager: ^0.5.0

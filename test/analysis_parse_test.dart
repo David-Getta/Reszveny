@@ -32,6 +32,12 @@ const sample = {
       'bullets': ['2026-10-01: X', '2026-10-05: Y'],
     },
     {
+      'kind': 'outlook',
+      'title': 'Kilátások',
+      'paragraphs': ['P'],
+      'bullets': ['Bull (~30%): x', 'Base (~45%): y', 'Bear (~25%): z'],
+    },
+    {
       'kind': 'weird',
       'title': 'Egyéb',
       'paragraphs': ['C'],
@@ -55,7 +61,12 @@ void main() {
       language: 'Hungarian',
     );
     expect(r.headline, startsWith('Apple'));
-    expect(r.sections.map((s) => s.kind), [ReportSectionKind.summary, ReportSectionKind.news, ReportSectionKind.other]);
+    expect(r.sections.map((s) => s.kind), [
+      ReportSectionKind.summary,
+      ReportSectionKind.news,
+      ReportSectionKind.outlook,
+      ReportSectionKind.other,
+    ]);
     expect(r.sections[1].bullets, hasLength(2));
     expect(r.sources.map((s) => s.url), ['https://investor.apple.com']);
     expect(r.language, 'Hungarian');
@@ -100,6 +111,17 @@ void main() {
         ]),
       ),
       throwsA(isA<AnalysisException>().having((e) => e.code, 'code', AppErrorCode.aiBadResponse)),
+    );
+  });
+
+  test('system prompt demands the multi-lens outlook section with scenarios', () {
+    expect(ClaudeStockAnalyst.systemPrompt, contains('"outlook"'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('behavioural finance'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('Sociology'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('Bull (~30%)'));
+    expect(
+      (ClaudeStockAnalyst.schema['properties']['sections']['items']['properties']['kind']['enum'] as List),
+      contains('outlook'),
     );
   });
 

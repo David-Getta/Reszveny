@@ -1022,7 +1022,7 @@ abstract class AppLocalizations {
   /// No description provided for @aiIntro.
   ///
   /// In en, this message translates to:
-  /// **'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation and what to watch.'**
+  /// **'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation, a price outlook with scenarios from psychological, sociological, technical and macro angles, and what to watch.'**
   String get aiIntro;
 
   /// No description provided for @aiGenerate.
@@ -1270,6 +1270,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Rate: 1 {from} = {rate} {to} (ECB, {date})'**
   String fxRateNote(String from, String rate, String to, String date);
+
+  /// No description provided for @updates.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates'**
+  String get updates;
+
+  /// No description provided for @currentVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version}'**
+  String currentVersion(String version);
+
+  /// No description provided for @autoUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Install updates automatically'**
+  String get autoUpdate;
+
+  /// No description provided for @checkForUpdates.
+  ///
+  /// In en, this message translates to:
+  /// **'Check for updates'**
+  String get checkForUpdates;
+
+  /// No description provided for @updateChecking.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking for updates…'**
+  String get updateChecking;
+
+  /// No description provided for @updateUpToDate.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re on the latest version.'**
+  String get updateUpToDate;
+
+  /// No description provided for @updateAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version} is available.'**
+  String updateAvailable(String version);
+
+  /// No description provided for @updateDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading the update in the background…'**
+  String get updateDownloading;
+
+  /// No description provided for @updateDownloaded.
+  ///
+  /// In en, this message translates to:
+  /// **'The update is ready. Restart to install it.'**
+  String get updateDownloaded;
+
+  /// No description provided for @updateNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get updateNow;
+
+  /// No description provided for @restartNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Restart'**
+  String get restartNow;
+
+  /// No description provided for @updatesViaStore.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates arrive automatically through the app store.'**
+  String get updatesViaStore;
+
+  /// No description provided for @updateCheckFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not check for updates.'**
+  String get updateCheckFailed;
 }
 
 class _AppLocalizationsDelegate
