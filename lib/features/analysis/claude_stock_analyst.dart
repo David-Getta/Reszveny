@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+import '../../core/backend/backend_client.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_details.dart';
@@ -51,15 +52,23 @@ class ClaudeStockAnalyst implements StockAnalyst {
     return parseResponse(details.symbol, response, language: outputLanguage);
   }
 
+  /// A backend 402-es hibakódja → az app hibakódja.
+  static AppErrorCode quotaErrorFor(String body) => switch (BackendClient.errorCode(body)) {
+    'trial_expired' => AppErrorCode.trialExpired,
+    'no_plan' => AppErrorCode.noPlan,
+    _ => AppErrorCode.quotaExceeded,
+  };
+
   Future<Map<String, dynamic>> _post(Map<String, dynamic> body) async {
     final http.Response res;
     try {
       res = await _client
           .post(
-            Uri.parse('${config.anthropicBaseUrl}/v1/messages'),
+            // Backend-módban a `/v1/analyze` végpont ellenőrzi a keretet és von le.
+            Uri.parse(config.analyzeEndpoint),
             headers: {
               'content-type': 'application/json',
-              'x-api-key': config.anthropicApiKey,
+              if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
               'anthropic-version': anthropicVersion,
               'anthropic-beta': 'server-side-fallback-2026-07-01',
             },
@@ -69,6 +78,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
     } on Exception catch (e) {
       throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
     }
+    if (res.statusCode == 402) throw AnalysisException(quotaErrorFor(res.body), cause: res.body);
     if (res.statusCode != 200) {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }

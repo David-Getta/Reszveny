@@ -60,7 +60,9 @@ felület kulcs nélkül is végigjárható.
 3 napos próbaidő (3 elemzés), majd Normál (8 elemzés/hó), Pro (20), Max (80), Ultra (150), és
 külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés az App Store-on, a Play-en és a Mac
 App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált bolt, amely az USD-alapárat a régió pénznemére váltja (ECB-árfolyam, helyi kerekítés). A havi keret
-az AI-elemzésekre vonatkozik; a részletek és a szerveroldali teendők: [`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
+az AI-elemzésekre vonatkozik. Éles kiadásban a keretet és a bolti bizonylatokat a saját backend
+([`server/`](server/README.md)) kezeli, a kliens `BACKEND_URL`-lel áll rá; részletek:
+[`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
 
 ## Automatikus frissítés
 
@@ -111,6 +113,8 @@ flutter test
 
 # futtatás kulcsokkal (a kulcsok soha nem kerülnek a forráskódba)
 flutter run --dart-define=ANTHROPIC_API_KEY=sk-ant-... --dart-define=FINNHUB_API_KEY=...
+# vagy a saját backenddel (kulcsok a szerveren, szerveroldali kvóta – lásd server/README.md)
+flutter run --dart-define=BACKEND_URL=http://localhost:8080
 ```
 
 Platform-célok: `flutter run -d ios|macos|android|windows` – az iPad ugyanazt az iOS-buildet
@@ -118,6 +122,7 @@ kapja adaptív elrendezéssel.
 
 | Beállítás (`--dart-define`) | Jelentés | Alapértelmezés |
 |---|---|---|
+| `BACKEND_URL` | a StockLens backend címe; ha meg van adva, a kulcsok nem kellenek | – (közvetlen hívás) |
 | `ANTHROPIC_API_KEY` | képfelismerés kulcsa | – (nélküle csak kézi ticker) |
 | `ANTHROPIC_MODEL` | használt modell | `claude-opus-5-5` |
 | `ANTHROPIC_BASE_URL` | saját proxy éles kiadáshoz | `https://api.anthropic.com` |
@@ -132,6 +137,7 @@ kapja adaptív elrendezéssel.
 lib/
   main.dart, app.dart, app_services.dart   belépés, téma, nyelvkezelés, szolgáltatások
   core/        konfiguráció, modellek, hibakódok, formázás, beállítások (téma, előzmények)
+  core/backend backend-kliens: névtelen fiók, token, /v1/me, vásárlás-ellenőrzés
   core/desktop asztali integráció: ablak, globális gyorsbillentyű, tálcaikon
   theme/       Claude-stílusú paletta és Material-téma
   widgets/     húzható fejléc, asztali AppBar
@@ -148,6 +154,7 @@ lib/
     arb/           app_<nyelv>.arb – 44 nyelv, a sablon az app_en.arb
     generated/     flutter gen-l10n kimenete (verziókezelt, hogy a build ne függjön tőle)
 test/          egységtesztek (parse-olás, ticker-kereső, nyelvfeloldás, ARB-teljesség), widget-tesztek
+server/        Dart (shelf + SQLite) backend: proxy, kvóta, vásárlás-ellenőrzés – saját tesztekkel
 test/screenshots képernyőképek valódi betűkkel: flutter test --tags screenshot --dart-define=SHOTS=<mappa>
 .github/       CI: analyze + test, majd Android / Windows / iOS+macOS build
 ```

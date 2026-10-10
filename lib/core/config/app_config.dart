@@ -5,10 +5,16 @@
 /// flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=...
 /// ```
 ///
-/// Éles kiadásban a kulcsokat egy saját backend-proxy tartja; akkor elég az
-/// [anthropicBaseUrl] / [finnhubBaseUrl] értékét a proxyra irányítani.
+/// Éles kiadásban a kulcsokat a saját backend (`server/`) tartja; akkor csak a
+/// `BACKEND_URL`-t kell megadni, a kliens minden hívást oda irányít (kvóta- és
+/// vásárlás-ellenőrzéssel), és a kulcsokra nincs szükség:
+///
+/// ```
+/// flutter run --dart-define=BACKEND_URL=https://api.stocklens.app
+/// ```
 class AppConfig {
   const AppConfig({
+    this.backendUrl = const String.fromEnvironment('BACKEND_URL'),
     this.anthropicApiKey = const String.fromEnvironment('ANTHROPIC_API_KEY'),
     this.anthropicBaseUrl = const String.fromEnvironment(
       'ANTHROPIC_BASE_URL',
@@ -23,6 +29,9 @@ class AppConfig {
     this.updateManifestUrl = const String.fromEnvironment('UPDATE_MANIFEST_URL'),
     this.storeUrl = const String.fromEnvironment('STORE_URL'),
   });
+
+  /// A StockLens backend címe (üres: a kliens közvetlenül, saját kulcsokkal hív).
+  final String backendUrl;
 
   final String anthropicApiKey;
   final String anthropicBaseUrl;
@@ -45,8 +54,23 @@ class AppConfig {
   /// Bolti oldal (App Store / Play) – ide visz az „Update” gomb, ha nincs más.
   final String storeUrl;
 
-  bool get hasAnthropicKey => anthropicApiKey.isNotEmpty;
-  bool get hasFinnhubKey => finnhubApiKey.isNotEmpty;
+  /// Backend-módban fut az app: a kulcsokat és a kvótát a szerver kezeli.
+  bool get hasBackend => backendUrl.isNotEmpty;
+
+  /// A backend címe záró perjel nélkül.
+  String get backend => backendUrl.endsWith('/') ? backendUrl.substring(0, backendUrl.length - 1) : backendUrl;
+
+  bool get hasAnthropicKey => hasBackend || anthropicApiKey.isNotEmpty;
+  bool get hasFinnhubKey => hasBackend || finnhubApiKey.isNotEmpty;
+
+  /// Az Anthropic-hívások alapcíme: a backend továbbítója vagy az API maga.
+  String get effectiveAnthropicBaseUrl => hasBackend ? '$backend/v1/anthropic' : anthropicBaseUrl;
+
+  /// A Finnhub-hívások alapcíme: a backend továbbítója vagy az API maga.
+  String get effectiveFinnhubBaseUrl => hasBackend ? '$backend/v1/market' : finnhubBaseUrl;
+
+  /// Az elemzés végpontja. A backend `/v1/analyze`-e kvótát ellenőriz és levon.
+  String get analyzeEndpoint => hasBackend ? '$backend/v1/analyze' : '$anthropicBaseUrl/v1/messages';
 
   /// Kulcsok nélkül az app demó módban fut: beégetett mintaadatokkal.
   bool get isDemoMode => !hasFinnhubKey;

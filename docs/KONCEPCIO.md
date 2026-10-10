@@ -126,7 +126,18 @@ Az API-kulcsokat **nem** tesszük a kódba. Fejlesztéskor `--dart-define`-nal a
 flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=...
 ```
 
-Éles kiadásnál a kulcsokat egy saját kis backend (proxy) tartja, az app azzal beszél. A kódban a `AppConfig` központosítja a kulcsok és végpontok elérését, így a proxyra váltás egy helyen történik.
+Éles kiadásnál a kulcsokat a saját backend (`server/`, Dart + shelf + SQLite) tartja, az app azzal beszél:
+
+```
+flutter run --dart-define=BACKEND_URL=https://api.stocklens.app
+```
+
+Ilyenkor a kliensnek nincs kulcsa: a felismerés és a piaci adat a szerver továbbítóján megy
+(`/v1/anthropic`, `/v1/market`), az elemzés pedig a `/v1/analyze` végponton, ami a szerver
+nyilvántartása szerint ellenőrzi és vonja le a keretet (402 → `quota_exceeded`,
+`trial_expired`, `no_plan`). A kliens első indításkor névtelen fiókot nyit (token a készüléken),
+a `/v1/me`-ből frissíti a csomagot, és vásárlás után a `/v1/purchases/verify`-ra küldi a bolti
+bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 
 ## 7. Ütemterv
 
@@ -140,9 +151,10 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 | 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), StockLens név és logó | ✅ kész |
 | 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
 | 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
-| 4a | Backend: proxy, vásárlás-ellenőrzés, kvóta-nyilvántartás, fiók | ⬜ |
+| 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
 | 4b | OCR fallback offline (ML Kit, mobil), árfolyam-riasztás, portfólió | ⬜ |
-| 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |
+| 4c | Bejelentkezés (Apple / Google), hogy a csomag minden eszközön ugyanaz legyen | ⬜ |
+| 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ |
 
 ## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)
 

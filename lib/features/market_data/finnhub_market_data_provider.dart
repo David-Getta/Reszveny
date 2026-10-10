@@ -29,11 +29,11 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     if (!config.hasFinnhubKey) {
       throw const MarketDataException(AppErrorCode.missingFinnhubKey);
     }
-    final uri = Uri.parse('${config.finnhubBaseUrl}$path').replace(queryParameters: query);
+    final uri = Uri.parse('${config.effectiveFinnhubBaseUrl}$path').replace(queryParameters: query);
     final http.Response res;
     try {
       res = await _client
-          .get(uri, headers: {'X-Finnhub-Token': config.finnhubApiKey})
+          .get(uri, headers: {if (config.finnhubApiKey.isNotEmpty) 'X-Finnhub-Token': config.finnhubApiKey})
           .timeout(const Duration(seconds: 20));
     } on Exception catch (e) {
       throw MarketDataException(AppErrorCode.marketUnreachable, cause: e);

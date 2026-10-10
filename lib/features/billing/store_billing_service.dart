@@ -85,7 +85,15 @@ class StoreBillingService implements BillingService {
         PurchaseStatus.error => BillingStatus.error,
         PurchaseStatus.canceled => BillingStatus.canceled,
       };
-      _events.add(BillingEvent(productId: p.productID, status: status, message: p.error?.message));
+      _events.add(
+        BillingEvent(
+          productId: p.productID,
+          status: status,
+          message: p.error?.message,
+          platform: p.verificationData.source,
+          verificationData: p.verificationData.serverVerificationData,
+        ),
+      );
       if (p.pendingCompletePurchase) _iap.completePurchase(p);
     }
   }

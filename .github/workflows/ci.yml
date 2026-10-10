@@ -23,6 +23,22 @@ jobs:
       - run: flutter analyze --fatal-infos
       - run: flutter test
 
+  server:
+    name: Backend (analyze & test)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed --line-length 120 .
+      - run: dart analyze --fatal-infos
+      - run: dart test
+
   build-android:
     name: Build Android (debug APK)
     needs: analyze-and-test

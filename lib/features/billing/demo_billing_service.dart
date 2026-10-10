@@ -67,7 +67,14 @@ class DemoBillingService implements BillingService {
   Future<void> buy(StoreProduct product) async {
     _events.add(BillingEvent(productId: product.id, status: BillingStatus.pending));
     await Future<void>.delayed(latency);
-    _events.add(BillingEvent(productId: product.id, status: BillingStatus.purchased));
+    _events.add(
+      BillingEvent(
+        productId: product.id,
+        status: BillingStatus.purchased,
+        platform: 'demo',
+        verificationData: 'demo-${product.id}-${DateTime.now().microsecondsSinceEpoch}',
+      ),
+    );
   }
 
   @override

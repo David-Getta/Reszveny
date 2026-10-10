@@ -5,14 +5,26 @@ import 'package:flutter/foundation.dart';
 import 'billing_service.dart';
 import 'entitlement_service.dart';
 
+/// Szerveroldali vásárlás-ellenőrzés: a bizonylatból a friss jogosultság.
+typedef PurchaseVerifier = Future<EntitlementState> Function(BillingEvent event);
+
 /// Összeköti a boltot a jogosultságokkal: vásárlási esemény → kvóta.
 class BillingController extends ChangeNotifier {
-  BillingController({required this.billing, required this.entitlements}) {
+  BillingController({required this.billing, required this.entitlements, this.verifier}) {
     _sub = billing.events.listen(_onEvent);
   }
 
   final BillingService billing;
   final EntitlementService entitlements;
+
+  /// Ha meg van adva (backend-mód), a vásárlást a szerver érvényesíti és a
+  /// kliens az ő válaszát veszi át; különben helyben írjuk jóvá.
+  final PurchaseVerifier? verifier;
+
+  String? _verifyError;
+
+  /// A legutóbbi szerveroldali ellenőrzés hibája (null, ha rendben volt).
+  String? get verifyError => _verifyError;
   late final StreamSubscription<BillingEvent> _sub;
 
   List<StoreProduct> _products = const [];
@@ -71,9 +83,21 @@ class BillingController extends ChangeNotifier {
   Future<void> _onEvent(BillingEvent e) async {
     _lastEvent = e;
     if (e.status == BillingStatus.purchased || e.status == BillingStatus.restored) {
-      // Élesben itt a szerver ellenőrzi a bizonylatot; a kliens a szerver
-      // válaszát veszi át. Addig helyben írjuk jóvá.
-      await entitlements.applyProduct(e.productId);
+      final v = verifier;
+      if (v != null) {
+        try {
+          await entitlements.replace(await v(e));
+          _verifyError = null;
+        } catch (err) {
+          // A szerver nem érhető el: a bizonylat megmarad a boltban, a
+          // visszaállítás később újra megpróbálja. Addig helyben írjuk jóvá.
+          debugPrint('Vásárlás ellenőrzése nem sikerült: $err');
+          _verifyError = '$err';
+          await entitlements.applyProduct(e.productId);
+        }
+      } else {
+        await entitlements.applyProduct(e.productId);
+      }
       _busyProductId = null;
     } else if (e.status != BillingStatus.pending) {
       _busyProductId = null;

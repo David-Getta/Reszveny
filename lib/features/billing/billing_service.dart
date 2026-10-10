@@ -29,11 +29,23 @@ class StoreProduct {
 enum BillingStatus { purchased, restored, pending, error, canceled }
 
 class BillingEvent {
-  const BillingEvent({required this.productId, required this.status, this.message});
+  const BillingEvent({
+    required this.productId,
+    required this.status,
+    this.message,
+    this.platform,
+    this.verificationData,
+  });
 
   final String productId;
   final BillingStatus status;
   final String? message;
+
+  /// A bolt neve a szerveroldali ellenőrzéshez (`app_store`, `google_play`, `demo`).
+  final String? platform;
+
+  /// A bolt bizonylata (`serverVerificationData`), amit a backend ellenőriz.
+  final String? verificationData;
 }
 
 /// Fizetés a platform boltján keresztül. A jogosultságot a [BillingController]

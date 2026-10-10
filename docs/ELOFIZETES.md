@@ -54,9 +54,29 @@ kedvencek és a 44 nyelv minden csomagban korlátlan.
 - `ReportStore.generate` elemzés előtt ellenőrzi a keretet, siker után elhasznál egyet;
   kimerült keretnél a kártya a csomagválasztóra visz.
 
-## Szerveroldal (következő lépés, kiadás előtt kötelező)
+## Szerveroldal (`server/`)
 
-A kliens önmagában nem bízható meg sem a kulccsal, sem a kvótával. Az éles működés:
+A kliens önmagában nem bízható meg sem a kulccsal, sem a kvótával, ezért a kiadás a backenddel
+történik. A `server/` mappában egy kis Dart (shelf + SQLite) szerver van, Dockerfile-lal:
+
+| Végpont | Mit csinál |
+|---|---|
+| `POST /v1/auth/anonymous` | Névtelen fiók, token; a próbaidő a szerveren indul |
+| `GET /v1/me` | A jogosultság a kliens `EntitlementState` formátumában |
+| `POST /v1/purchases/verify` | Bolti bizonylat ellenőrzése, csomag/extra jóváírása (tranzakciónként egyszer) |
+| `POST /v1/analyze` | Anthropic-továbbítás kvóta-ellenőrzéssel; 402 ha nincs keret; befejezett válasz után levonás és napló |
+| `POST /v1/anthropic/v1/messages` | Továbbítás kvóta nélkül (fotófelismerés) |
+| `GET /v1/market/*` | Finnhub-továbbítás a szerver kulcsával |
+
+Kliens oldalon elég a `--dart-define=BACKEND_URL=https://…`: az `AppConfig` ekkor a szerver
+továbbítóira irányít, a `BackendClient` kezeli a tokent (401-re új fiókot nyit), a
+`BillingController` a bolt bizonylatát a szerverrel ellenőrzi (ha a szerver nem érhető el, helyben
+írja jóvá és a visszaállítás később újrapróbálja), a `ReportStore` pedig minden elemzés és
+kvóta-hiba után a `/v1/me`-ből frissíti a keretet.
+
+A bolti bizonylat ellenőrzése jelenleg fejlesztői módban (`VERIFY_MODE=dev`) minden vásárlást
+elfogad; az App Store Server API / Play Developer API hívás (`VERIFY_MODE=store`) a bolti fiókok
+megléte után készül el. Az eredeti terv, viszonyításként:
 
 1. **Proxy**: az app nem közvetlenül az Anthropic és a Finnhub API-t hívja, hanem a saját
    backendet (`ANTHROPIC_BASE_URL` / `FINNHUB_BASE_URL` a proxyra mutat). A kulcsok csak a

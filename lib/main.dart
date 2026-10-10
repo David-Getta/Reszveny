@@ -29,4 +29,6 @@ Future<void> main() async {
   runApp(StockLensApp(services: services));
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
+  // Backend-módban a szerver szerinti csomag és keret átvétele.
+  services.syncEntitlements();
 }

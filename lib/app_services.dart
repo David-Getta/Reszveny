@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
 import 'core/app_preferences.dart';
+import 'core/backend/backend_client.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
@@ -36,13 +37,37 @@ class AppServices {
     required this.desktop,
     required this.reports,
     required this.entitlements,
+    this.backend,
     BillingService? billing,
     FxService? fx,
     UpdateService? updates,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config) {
     this.billing = billing ?? _demoBilling(this.fx);
-    billingController = BillingController(billing: this.billing, entitlements: entitlements);
+    final b = backend;
+    billingController = BillingController(
+      billing: this.billing,
+      entitlements: entitlements,
+      verifier: b == null
+          ? null
+          : (e) => b.verifyPurchase(
+              platform: e.platform ?? 'unknown',
+              productId: e.productId,
+              verificationData: e.verificationData ?? '',
+            ),
+    );
+  }
+
+  /// Backend-módban a szerver szerinti jogosultság átvétele (indításkor,
+  /// elemzés után, vásárlás után). Hálózati hiba esetén a helyi kép marad.
+  Future<void> syncEntitlements() async {
+    final b = backend;
+    if (b == null) return;
+    try {
+      await entitlements.replace(await b.me());
+    } catch (e) {
+      debugPrint('Jogosultság szinkron nem sikerült: $e');
+    }
   }
 
   /// Demó bolt a rendszer régiójának pénznemével és ECB-árfolyammal.
@@ -59,21 +84,30 @@ class AppServices {
     DesktopIntegration? desktop,
   }) {
     final storeBilling = !kIsWeb && (Platform.isIOS || Platform.isAndroid || Platform.isMacOS);
-    return AppServices(
+    // Backend-módban minden külső hívás a hitelesített kliensen, a szerveren át megy.
+    final backend = config.hasBackend ? BackendClient(baseUrl: config.backend) : null;
+    final client = backend?.authenticated;
+    late final AppServices services;
+    services = AppServices(
       config: config,
       capture: CaptureService(),
-      recognizer: ClaudeVisionRecognizer(config: config),
-      marketData: config.hasFinnhubKey ? FinnhubMarketDataProvider(config: config) : DemoMarketDataProvider(),
+      recognizer: ClaudeVisionRecognizer(config: config, client: client),
+      marketData: config.hasFinnhubKey
+          ? FinnhubMarketDataProvider(config: config, client: client)
+          : DemoMarketDataProvider(),
       locale: locale,
       preferences: preferences,
       desktop: desktop ?? DesktopIntegration(),
       reports: ReportStore(
-        analyst: ClaudeStockAnalyst(config: config),
+        analyst: ClaudeStockAnalyst(config: config, client: client),
         entitlements: entitlements,
+        onQuotaChanged: backend == null ? null : () => services.syncEntitlements(),
       ),
       entitlements: entitlements,
+      backend: backend,
       billing: storeBilling ? StoreBillingService() : null,
     );
+    return services;
   }
 
   final AppConfig config;
@@ -85,6 +119,9 @@ class AppServices {
   final DesktopIntegration desktop;
   final ReportStore reports;
   final EntitlementService entitlements;
+
+  /// A StockLens backend kliense, vagy `null` közvetlen (kulcsos/demó) módban.
+  final BackendClient? backend;
   late final BillingService billing;
   late final BillingController billingController;
   final FxService fx;

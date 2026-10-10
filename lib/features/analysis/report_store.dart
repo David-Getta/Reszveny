@@ -12,12 +12,25 @@ import 'stock_analyst.dart';
 /// Az elemzések állapota és gyorsítótára tickerenként. A kész elemzést
 /// lemezre is menti, hogy újraindítás után se kelljen újra fizetni érte.
 class ReportStore extends ChangeNotifier {
-  ReportStore({required this.analyst, this.entitlements, this.ttl = const Duration(hours: 12)});
+  static bool _isQuotaError(AppErrorCode c) =>
+      c == AppErrorCode.quotaExceeded || c == AppErrorCode.trialExpired || c == AppErrorCode.noPlan;
+
+  void _notifyQuota() {
+    final cb = onQuotaChanged;
+    if (cb == null) return;
+    cb().then((_) => notifyListeners()).catchError((Object e) => debugPrint('Jogosultság frissítése nem sikerült: $e'));
+  }
+
+  ReportStore({required this.analyst, this.entitlements, this.onQuotaChanged, this.ttl = const Duration(hours: 12)});
 
   final StockAnalyst analyst;
 
   /// Ha meg van adva, elemzés előtt ellenőrzi és utána elhasználja a keretet.
   final EntitlementService? entitlements;
+
+  /// Elemzés után (vagy a szerver kvóta-hibája után) hívjuk: backend-módban
+  /// innen frissül a jogosultság a szerver szerinti állapotra.
+  final Future<void> Function()? onQuotaChanged;
   final Duration ttl;
 
   static const _prefix = 'report_';
@@ -74,6 +87,7 @@ class ReportStore extends ChangeNotifier {
       final r = await analyst.analyze(details, outputLanguage: outputLanguage);
       _reports[symbol] = r;
       await entitlements?.consume();
+      _notifyQuota();
       try {
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));
@@ -82,6 +96,7 @@ class ReportStore extends ChangeNotifier {
       }
     } catch (e) {
       _errors[symbol] = e;
+      if (e is AppException && _isQuotaError(e.code)) _notifyQuota();
     } finally {
       _loading.remove(symbol);
       notifyListeners();
