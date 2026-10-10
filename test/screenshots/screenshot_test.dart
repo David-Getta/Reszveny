@@ -121,7 +121,7 @@ void main() {
     tester.view.physicalSize = size;
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
-    await tester.pumpWidget(RepaintBoundary(child: ReszvenyApp(services: s)));
+    await tester.pumpWidget(RepaintBoundary(child: StockLensApp(services: s)));
     await tester.pumpAndSettle();
   }
 
@@ -168,7 +168,7 @@ void main() {
           services: _services(),
           child: MaterialApp(
             theme: AppTheme.build(Brightness.dark),
-            localizationsDelegates: ReszvenyApp.localizationsDelegates,
+            localizationsDelegates: StockLensApp.localizationsDelegates,
             supportedLocales: const [Locale('en')],
             home: QuickBar(onOpenSymbol: (_) {}, onOpenWindow: () {}),
           ),

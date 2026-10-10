@@ -1,6 +1,6 @@
 {
   "@@locale": "ca",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografia una acció i descobreix-ho tot sobre ella.",
   "homeHint": "Un certificat d'accions, la pantalla d'una app de corredoria, un diari o el logotip d'una empresa: qualsevol cosa que identifiqui una acció.",
   "takePhoto": "Fer una foto",
@@ -129,8 +129,8 @@
   "errNoResults": "No s’ha trobat cap acció per a «{query}».",
   "quickBarHint": "Escriu un ticker o el nom d’una empresa…",
   "openFullWindow": "Obrir la finestra",
-  "hotkeyHint": "Prem {shortcut} des de qualsevol lloc per obrir Reszveny.",
-  "trayOpen": "Obrir Reszveny",
+  "hotkeyHint": "Prem {shortcut} des de qualsevol lloc per obrir StockLens.",
+  "trayOpen": "Obrir StockLens",
   "trayQuickSearch": "Cerca ràpida",
   "trayQuit": "Sortir",
   "appearance": "Aparença",

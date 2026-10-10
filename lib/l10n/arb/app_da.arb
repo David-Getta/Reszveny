@@ -1,6 +1,6 @@
 {
   "@@locale": "da",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografér en aktie og lær alt om den.",
   "homeHint": "Et aktiebrev, en skærm i en handelsapp, en avis eller et firmalogo – alt, der identificerer en aktie.",
   "takePhoto": "Tag et foto",
@@ -129,8 +129,8 @@
   "errNoResults": "Ingen aktier fundet for ”{query}”.",
   "quickBarHint": "Skriv en ticker eller et firmanavn…",
   "openFullWindow": "Åbn vindue",
-  "hotkeyHint": "Tryk på {shortcut} hvor som helst for at åbne Reszveny.",
-  "trayOpen": "Åbn Reszveny",
+  "hotkeyHint": "Tryk på {shortcut} hvor som helst for at åbne StockLens.",
+  "trayOpen": "Åbn StockLens",
   "trayQuickSearch": "Hurtig søgning",
   "trayQuit": "Afslut",
   "appearance": "Udseende",

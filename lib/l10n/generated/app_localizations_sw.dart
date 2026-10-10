@@ -10,7 +10,7 @@ class AppLocalizationsSw extends AppLocalizations {
   AppLocalizationsSw([String locale = 'sw']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Piga picha ya hisa na ujifunze kila kitu kuihusu.';
@@ -444,11 +444,11 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Bonyeza $shortcut mahali popote kuita Reszveny.';
+    return 'Bonyeza $shortcut mahali popote kuita StockLens.';
   }
 
   @override
-  String get trayOpen => 'Fungua Reszveny';
+  String get trayOpen => 'Fungua StockLens';
 
   @override
   String get trayQuickSearch => 'Utafutaji wa haraka';

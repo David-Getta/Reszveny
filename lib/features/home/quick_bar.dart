@@ -118,7 +118,7 @@ class _QuickBarState extends State<QuickBar> {
             leading: [
               Padding(
                 padding: const EdgeInsets.only(left: 6, right: 2),
-                child: Icon(Icons.auto_graph_rounded, color: p.accent, size: 22),
+                child: Image.asset('assets/branding/logo_128.png', width: 22, height: 22),
               ),
               IconButton(
                 tooltip: l10n.pasteImage,

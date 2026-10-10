@@ -10,7 +10,7 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Сфотографируйте акцию и узнайте о ней всё.';
@@ -447,11 +447,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Нажмите $shortcut в любом месте, чтобы вызвать Reszveny.';
+    return 'Нажмите $shortcut в любом месте, чтобы вызвать StockLens.';
   }
 
   @override
-  String get trayOpen => 'Открыть Reszveny';
+  String get trayOpen => 'Открыть StockLens';
 
   @override
   String get trayQuickSearch => 'Быстрый поиск';

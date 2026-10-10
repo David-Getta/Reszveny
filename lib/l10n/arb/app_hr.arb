@@ -1,6 +1,6 @@
 {
   "@@locale": "hr",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografirajte dionicu i saznajte sve o njoj.",
   "homeHint": "Potvrda o dionicama, zaslon brokerske aplikacije, novine ili logotip tvrtke – bilo što što identificira dionicu.",
   "takePhoto": "Snimi fotografiju",
@@ -129,8 +129,8 @@
   "errNoResults": "Nisu pronađene dionice za „{query}“.",
   "quickBarHint": "Upiši ticker ili naziv tvrtke…",
   "openFullWindow": "Otvori prozor",
-  "hotkeyHint": "Pritisnite {shortcut} bilo gdje da otvorite Reszveny.",
-  "trayOpen": "Otvori Reszveny",
+  "hotkeyHint": "Pritisnite {shortcut} bilo gdje da otvorite StockLens.",
+  "trayOpen": "Otvori StockLens",
   "trayQuickSearch": "Brza pretraga",
   "trayQuit": "Izlaz",
   "appearance": "Izgled",

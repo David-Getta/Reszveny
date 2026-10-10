@@ -1,6 +1,6 @@
 {
   "@@locale": "te",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "ఒక స్టాక్ ఫోటో తీయండి, దాని గురించి అన్నీ తెలుసుకోండి.",
   "homeHint": "షేర్ సర్టిఫికేట్, బ్రోకరేజ్ యాప్ స్క్రీన్, వార్తాపత్రిక లేదా కంపెనీ లోగో – స్టాక్‌ను గుర్తించే ఏదైనా.",
   "takePhoto": "ఫోటో తీయండి",
@@ -129,8 +129,8 @@
   "errNoResults": "“{query}” కోసం స్టాక్‌లు ఏవీ కనుగొనబడలేదు.",
   "quickBarHint": "టికర్ లేదా కంపెనీ పేరు టైప్ చేయండి…",
   "openFullWindow": "విండో తెరవండి",
-  "hotkeyHint": "ఎక్కడి నుంచైనా Reszveny ని తెరవడానికి {shortcut} నొక్కండి.",
-  "trayOpen": "Reszveny తెరవండి",
+  "hotkeyHint": "ఎక్కడి నుంచైనా StockLens ని తెరవడానికి {shortcut} నొక్కండి.",
+  "trayOpen": "StockLens తెరవండి",
   "trayQuickSearch": "త్వరిత శోధన",
   "trayQuit": "నిష్క్రమించండి",
   "appearance": "రూపం",

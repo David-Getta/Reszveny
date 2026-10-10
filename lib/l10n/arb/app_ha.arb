@@ -1,6 +1,6 @@
 {
   "@@locale": "ha",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.",
   "homeHint": "Takardar shaidar hannun jari, allon manhajar broker, jarida ko tambarin kamfani – duk abin da zai nuna hannun jari.",
   "takePhoto": "Ɗauki hoto",
@@ -129,8 +129,8 @@
   "errNoResults": "Ba a sami hannun jari don “{query}” ba.",
   "quickBarHint": "Rubuta ticker ko sunan kamfani…",
   "openFullWindow": "Buɗe taga",
-  "hotkeyHint": "Danna {shortcut} a ko'ina don kiran Reszveny.",
-  "trayOpen": "Buɗe Reszveny",
+  "hotkeyHint": "Danna {shortcut} a ko'ina don kiran StockLens.",
+  "trayOpen": "Buɗe StockLens",
   "trayQuickSearch": "Bincike cikin sauri",
   "trayQuit": "Fita",
   "appearance": "Kamanni",

@@ -195,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.auto_graph_rounded, color: p.accent, size: 30),
+                        Image.asset('assets/branding/logo_256.png', width: 34, height: 34),
                         const SizedBox(width: 12),
                         Flexible(
                           child: Text(

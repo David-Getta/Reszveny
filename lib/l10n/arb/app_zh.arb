@@ -1,6 +1,6 @@
 {
   "@@locale": "zh",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "拍下一只股票，了解它的一切。",
   "homeHint": "股票凭证、券商应用界面、报纸或公司标志——任何能识别出股票的内容。",
   "takePhoto": "拍照",
@@ -129,8 +129,8 @@
   "errNoResults": "未找到与“{query}”相关的股票。",
   "quickBarHint": "输入股票代码或公司名称…",
   "openFullWindow": "打开窗口",
-  "hotkeyHint": "在任意位置按 {shortcut} 即可呼出 Reszveny。",
-  "trayOpen": "打开 Reszveny",
+  "hotkeyHint": "在任意位置按 {shortcut} 即可呼出 StockLens。",
+  "trayOpen": "打开 StockLens",
   "trayQuickSearch": "快速搜索",
   "trayQuit": "退出",
   "appearance": "外观",

@@ -188,7 +188,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Reszveny'**
+  /// **'StockLens'**
   String get appTitle;
 
   /// No description provided for @homeTagline.
@@ -962,13 +962,13 @@ abstract class AppLocalizations {
   /// No description provided for @hotkeyHint.
   ///
   /// In en, this message translates to:
-  /// **'Press {shortcut} anywhere to summon Reszveny.'**
+  /// **'Press {shortcut} anywhere to summon StockLens.'**
   String hotkeyHint(String shortcut);
 
   /// No description provided for @trayOpen.
   ///
   /// In en, this message translates to:
-  /// **'Open Reszveny'**
+  /// **'Open StockLens'**
   String get trayOpen;
 
   /// No description provided for @trayQuickSearch.

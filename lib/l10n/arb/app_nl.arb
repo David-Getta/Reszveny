@@ -1,6 +1,6 @@
 {
   "@@locale": "nl",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografeer een aandeel en ontdek er alles over.",
   "homeHint": "Een aandeelbewijs, een scherm van een brokerapp, een krant of een bedrijfslogo – alles wat een aandeel identificeert.",
   "takePhoto": "Foto maken",
@@ -129,8 +129,8 @@
   "errNoResults": "Geen aandelen gevonden voor “{query}”.",
   "quickBarHint": "Typ een ticker of bedrijfsnaam…",
   "openFullWindow": "Venster openen",
-  "hotkeyHint": "Druk waar dan ook op {shortcut} om Reszveny te openen.",
-  "trayOpen": "Reszveny openen",
+  "hotkeyHint": "Druk waar dan ook op {shortcut} om StockLens te openen.",
+  "trayOpen": "StockLens openen",
   "trayQuickSearch": "Snel zoeken",
   "trayQuit": "Afsluiten",
   "appearance": "Weergave",

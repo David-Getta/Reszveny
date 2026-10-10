@@ -10,7 +10,7 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.';
@@ -444,11 +444,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nhấn $shortcut ở bất kỳ đâu để gọi Reszveny.';
+    return 'Nhấn $shortcut ở bất kỳ đâu để gọi StockLens.';
   }
 
   @override
-  String get trayOpen => 'Mở Reszveny';
+  String get trayOpen => 'Mở StockLens';
 
   @override
   String get trayQuickSearch => 'Tìm kiếm nhanh';

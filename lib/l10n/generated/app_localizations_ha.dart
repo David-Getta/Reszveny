@@ -10,7 +10,7 @@ class AppLocalizationsHa extends AppLocalizations {
   AppLocalizationsHa([String locale = 'ha']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -446,11 +446,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Danna $shortcut a ko\'ina don kiran Reszveny.';
+    return 'Danna $shortcut a ko\'ina don kiran StockLens.';
   }
 
   @override
-  String get trayOpen => 'Buɗe Reszveny';
+  String get trayOpen => 'Buɗe StockLens';
 
   @override
   String get trayQuickSearch => 'Bincike cikin sauri';

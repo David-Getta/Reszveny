@@ -10,7 +10,7 @@ class AppLocalizationsHu extends AppLocalizations {
   AppLocalizationsHu([String locale = 'hu']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -447,11 +447,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a Reszveny.';
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a StockLens.';
   }
 
   @override
-  String get trayOpen => 'Reszveny megnyitása';
+  String get trayOpen => 'StockLens megnyitása';
 
   @override
   String get trayQuickSearch => 'Gyorskeresés';

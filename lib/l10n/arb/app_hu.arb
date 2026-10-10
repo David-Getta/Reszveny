@@ -1,6 +1,6 @@
 {
   "@@locale": "hu",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotózz le egy részvényt, és tudj meg róla mindent.",
   "homeHint": "Részvényigazolás, brókerapp képernyője, újság vagy céglogó – bármi, ami azonosít egy részvényt.",
   "takePhoto": "Fotó készítése",
@@ -129,8 +129,8 @@
   "errNoResults": "Nincs találat a „{query}” kifejezésre.",
   "quickBarHint": "Írj be egy tickert vagy cégnevet…",
   "openFullWindow": "Ablak megnyitása",
-  "hotkeyHint": "Nyomd le bárhol a {shortcut} billentyűkombinációt, és előugrik a Reszveny.",
-  "trayOpen": "Reszveny megnyitása",
+  "hotkeyHint": "Nyomd le bárhol a {shortcut} billentyűkombinációt, és előugrik a StockLens.",
+  "trayOpen": "StockLens megnyitása",
   "trayQuickSearch": "Gyorskeresés",
   "trayQuit": "Kilépés",
   "appearance": "Megjelenés",

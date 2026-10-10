@@ -1,6 +1,6 @@
 {
   "@@locale": "es",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografía una acción y descubre todo sobre ella.",
   "homeHint": "Un certificado de acciones, la pantalla de una app de bróker, un periódico o el logotipo de una empresa: cualquier cosa que identifique una acción.",
   "takePhoto": "Hacer una foto",
@@ -129,8 +129,8 @@
   "errNoResults": "No se encontraron acciones para «{query}».",
   "quickBarHint": "Escribe un ticker o el nombre de una empresa…",
   "openFullWindow": "Abrir ventana",
-  "hotkeyHint": "Pulsa {shortcut} en cualquier lugar para abrir Reszveny.",
-  "trayOpen": "Abrir Reszveny",
+  "hotkeyHint": "Pulsa {shortcut} en cualquier lugar para abrir StockLens.",
+  "trayOpen": "Abrir StockLens",
   "trayQuickSearch": "Búsqueda rápida",
   "trayQuit": "Salir",
   "appearance": "Apariencia",

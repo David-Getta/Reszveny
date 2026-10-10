@@ -10,7 +10,7 @@ class AppLocalizationsFil extends AppLocalizations {
   AppLocalizationsFil([String locale = 'fil']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -446,11 +446,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Pindutin ang $shortcut kahit saan para tawagin ang Reszveny.';
+    return 'Pindutin ang $shortcut kahit saan para tawagin ang StockLens.';
   }
 
   @override
-  String get trayOpen => 'Buksan ang Reszveny';
+  String get trayOpen => 'Buksan ang StockLens';
 
   @override
   String get trayQuickSearch => 'Mabilisang paghahanap';

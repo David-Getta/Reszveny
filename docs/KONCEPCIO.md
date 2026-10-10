@@ -1,4 +1,4 @@
-# Részvény – koncepció és architektúra
+# StockLens – koncepció és architektúra
 
 > Alapötlet: **lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 > Ez a dokumentum az első, vázlatos leírást bontja ki; a részletes specifikáció később érkezik, és ezt a fájlt kell majd bővíteni.

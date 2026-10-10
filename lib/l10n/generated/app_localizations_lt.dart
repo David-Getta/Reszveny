@@ -10,7 +10,7 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -448,11 +448,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Paspauskite $shortcut bet kur, kad iškviestumėte Reszveny.';
+    return 'Paspauskite $shortcut bet kur, kad iškviestumėte StockLens.';
   }
 
   @override
-  String get trayOpen => 'Atverti Reszveny';
+  String get trayOpen => 'Atverti StockLens';
 
   @override
   String get trayQuickSearch => 'Greitoji paieška';

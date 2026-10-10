@@ -10,7 +10,7 @@ class AppLocalizationsCs extends AppLocalizations {
   AppLocalizationsCs([String locale = 'cs']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Vyfoťte akcii a zjistěte o ní vše.';
@@ -446,11 +446,11 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Stiskněte $shortcut kdekoli a vyvolejte Reszveny.';
+    return 'Stiskněte $shortcut kdekoli a vyvolejte StockLens.';
   }
 
   @override
-  String get trayOpen => 'Otevřít Reszveny';
+  String get trayOpen => 'Otevřít StockLens';
 
   @override
   String get trayQuickSearch => 'Rychlé hledání';

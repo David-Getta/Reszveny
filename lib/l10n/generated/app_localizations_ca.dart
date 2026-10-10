@@ -10,7 +10,7 @@ class AppLocalizationsCa extends AppLocalizations {
   AppLocalizationsCa([String locale = 'ca']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -447,11 +447,11 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Prem $shortcut des de qualsevol lloc per obrir Reszveny.';
+    return 'Prem $shortcut des de qualsevol lloc per obrir StockLens.';
   }
 
   @override
-  String get trayOpen => 'Obrir Reszveny';
+  String get trayOpen => 'Obrir StockLens';
 
   @override
   String get trayQuickSearch => 'Cerca ràpida';

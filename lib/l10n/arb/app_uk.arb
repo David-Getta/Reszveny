@@ -1,6 +1,6 @@
 {
   "@@locale": "uk",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Сфотографуйте акцію та дізнайтеся про неї все.",
   "homeHint": "Сертифікат акції, екран брокерського застосунку, газета або логотип компанії – будь-що, що дозволяє визначити акцію.",
   "takePhoto": "Зробити фото",
@@ -129,8 +129,8 @@
   "errNoResults": "За запитом «{query}» акцій не знайдено.",
   "quickBarHint": "Введіть тікер або назву компанії…",
   "openFullWindow": "Відкрити вікно",
-  "hotkeyHint": "Натисніть {shortcut} будь-де, щоб викликати Reszveny.",
-  "trayOpen": "Відкрити Reszveny",
+  "hotkeyHint": "Натисніть {shortcut} будь-де, щоб викликати StockLens.",
+  "trayOpen": "Відкрити StockLens",
   "trayQuickSearch": "Швидкий пошук",
   "trayQuit": "Вийти",
   "appearance": "Вигляд",

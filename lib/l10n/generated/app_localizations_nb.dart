@@ -10,7 +10,7 @@ class AppLocalizationsNb extends AppLocalizations {
   AppLocalizationsNb([String locale = 'nb']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografer en aksje og lær alt om den.';
@@ -444,11 +444,11 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Trykk $shortcut hvor som helst for å åpne Reszveny.';
+    return 'Trykk $shortcut hvor som helst for å åpne StockLens.';
   }
 
   @override
-  String get trayOpen => 'Åpne Reszveny';
+  String get trayOpen => 'Åpne StockLens';
 
   @override
   String get trayQuickSearch => 'Hurtigsøk';

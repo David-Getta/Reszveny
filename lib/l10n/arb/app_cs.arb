@@ -1,6 +1,6 @@
 {
   "@@locale": "cs",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Vyfoťte akcii a zjistěte o ní vše.",
   "homeHint": "Akciový certifikát, obrazovka brokerské aplikace, noviny nebo logo firmy – cokoli, co akcii identifikuje.",
   "takePhoto": "Vyfotit",
@@ -129,8 +129,8 @@
   "errNoResults": "Pro „{query}“ nebyly nalezeny žádné akcie.",
   "quickBarHint": "Zadejte ticker nebo název společnosti…",
   "openFullWindow": "Otevřít okno",
-  "hotkeyHint": "Stiskněte {shortcut} kdekoli a vyvolejte Reszveny.",
-  "trayOpen": "Otevřít Reszveny",
+  "hotkeyHint": "Stiskněte {shortcut} kdekoli a vyvolejte StockLens.",
+  "trayOpen": "Otevřít StockLens",
   "trayQuickSearch": "Rychlé hledání",
   "trayQuit": "Ukončit",
   "appearance": "Vzhled",

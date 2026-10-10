@@ -1,6 +1,6 @@
 {
   "@@locale": "vi",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.",
   "homeHint": "Chứng chỉ cổ phiếu, màn hình ứng dụng chứng khoán, báo hoặc logo công ty – bất cứ thứ gì giúp nhận diện cổ phiếu.",
   "takePhoto": "Chụp ảnh",
@@ -129,8 +129,8 @@
   "errNoResults": "Không tìm thấy cổ phiếu nào cho “{query}”.",
   "quickBarHint": "Nhập mã cổ phiếu hoặc tên công ty…",
   "openFullWindow": "Mở cửa sổ",
-  "hotkeyHint": "Nhấn {shortcut} ở bất kỳ đâu để gọi Reszveny.",
-  "trayOpen": "Mở Reszveny",
+  "hotkeyHint": "Nhấn {shortcut} ở bất kỳ đâu để gọi StockLens.",
+  "trayOpen": "Mở StockLens",
   "trayQuickSearch": "Tìm kiếm nhanh",
   "trayQuit": "Thoát",
   "appearance": "Giao diện",

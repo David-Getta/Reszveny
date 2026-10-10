@@ -15,12 +15,12 @@ Future<void> main() async {
   final locale = await LocaleController.load();
   final preferences = await AppPreferences.load();
   final desktop = DesktopIntegration();
-  await desktop.initialize(title: 'Reszveny', hotkeyJson: preferences.hotkeyJson);
+  await desktop.initialize(title: 'StockLens', hotkeyJson: preferences.hotkeyJson);
   final services = AppServices.fromConfig(
     const AppConfig(),
     locale: locale,
     preferences: preferences,
     desktop: desktop,
   );
-  runApp(ReszvenyApp(services: services));
+  runApp(StockLensApp(services: services));
 }

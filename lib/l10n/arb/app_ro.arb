@@ -1,6 +1,6 @@
 {
   "@@locale": "ro",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografiază o acțiune și află totul despre ea.",
   "homeHint": "Un certificat de acțiuni, ecranul unei aplicații de brokeraj, un ziar sau logoul unei companii – orice identifică o acțiune.",
   "takePhoto": "Fă o fotografie",
@@ -129,8 +129,8 @@
   "errNoResults": "Nu s-au găsit acțiuni pentru „{query}”.",
   "quickBarHint": "Scrie un simbol sau numele unei companii…",
   "openFullWindow": "Deschide fereastra",
-  "hotkeyHint": "Apasă {shortcut} oriunde pentru a deschide Reszveny.",
-  "trayOpen": "Deschide Reszveny",
+  "hotkeyHint": "Apasă {shortcut} oriunde pentru a deschide StockLens.",
+  "trayOpen": "Deschide StockLens",
   "trayQuickSearch": "Căutare rapidă",
   "trayQuit": "Ieșire",
   "appearance": "Aspect",

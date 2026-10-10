@@ -1,4 +1,4 @@
-# Reszveny – munkaszabályok
+# StockLens – munkaszabályok
 
 - **Nyelv**: a felhasználóval magyarul beszélünk; a kód kommentjei magyarok, a felület
   alapnyelve angol, 44 nyelvre fordítva (`lib/l10n/arb`).

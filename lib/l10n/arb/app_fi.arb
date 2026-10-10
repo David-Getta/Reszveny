@@ -1,6 +1,6 @@
 {
   "@@locale": "fi",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Kuvaa osake ja opi siitä kaikki.",
   "homeHint": "Osakekirja, välittäjäsovelluksen näyttö, sanomalehti tai yrityksen logo – mikä tahansa, mikä tunnistaa osakkeen.",
   "takePhoto": "Ota kuva",
@@ -129,8 +129,8 @@
   "errNoResults": "Osakkeita ei löytynyt haulla ”{query}”.",
   "quickBarHint": "Kirjoita tunnus tai yrityksen nimi…",
   "openFullWindow": "Avaa ikkuna",
-  "hotkeyHint": "Paina {shortcut} missä tahansa, niin Reszveny avautuu.",
-  "trayOpen": "Avaa Reszveny",
+  "hotkeyHint": "Paina {shortcut} missä tahansa, niin StockLens avautuu.",
+  "trayOpen": "Avaa StockLens",
   "trayQuickSearch": "Pikahaku",
   "trayQuit": "Lopeta",
   "appearance": "Ulkoasu",

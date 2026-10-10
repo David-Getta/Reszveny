@@ -1,6 +1,6 @@
 {
   "@@locale": "el",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.",
   "homeHint": "Ένας τίτλος μετοχής, η οθόνη μιας χρηματιστηριακής εφαρμογής, μια εφημερίδα ή ένα λογότυπο εταιρείας – οτιδήποτε ταυτοποιεί μια μετοχή.",
   "takePhoto": "Λήψη φωτογραφίας",
@@ -129,8 +129,8 @@
   "errNoResults": "Δεν βρέθηκαν μετοχές για «{query}».",
   "quickBarHint": "Πληκτρολογήστε σύμβολο ή όνομα εταιρείας…",
   "openFullWindow": "Άνοιγμα παραθύρου",
-  "hotkeyHint": "Πατήστε {shortcut} οπουδήποτε για να εμφανιστεί το Reszveny.",
-  "trayOpen": "Άνοιγμα Reszveny",
+  "hotkeyHint": "Πατήστε {shortcut} οπουδήποτε για να εμφανιστεί το StockLens.",
+  "trayOpen": "Άνοιγμα StockLens",
   "trayQuickSearch": "Γρήγορη αναζήτηση",
   "trayQuit": "Έξοδος",
   "appearance": "Εμφάνιση",

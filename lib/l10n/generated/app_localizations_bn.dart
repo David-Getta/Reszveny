@@ -10,7 +10,7 @@ class AppLocalizationsBn extends AppLocalizations {
   AppLocalizationsBn([String locale = 'bn']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -446,11 +446,11 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'যেকোনো জায়গা থেকে Reszveny খুলতে $shortcut চাপুন।';
+    return 'যেকোনো জায়গা থেকে StockLens খুলতে $shortcut চাপুন।';
   }
 
   @override
-  String get trayOpen => 'Reszveny খুলুন';
+  String get trayOpen => 'StockLens খুলুন';
 
   @override
   String get trayQuickSearch => 'দ্রুত অনুসন্ধান';

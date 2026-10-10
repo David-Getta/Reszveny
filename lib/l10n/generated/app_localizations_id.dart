@@ -10,7 +10,7 @@ class AppLocalizationsId extends AppLocalizations {
   AppLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Foto sebuah saham dan pelajari semua tentangnya.';
@@ -445,11 +445,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tekan $shortcut di mana saja untuk memanggil Reszveny.';
+    return 'Tekan $shortcut di mana saja untuk memanggil StockLens.';
   }
 
   @override
-  String get trayOpen => 'Buka Reszveny';
+  String get trayOpen => 'Buka StockLens';
 
   @override
   String get trayQuickSearch => 'Pencarian cepat';

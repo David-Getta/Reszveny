@@ -1,6 +1,6 @@
 {
   "@@locale": "sq",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotografoni një aksion dhe mësoni gjithçka për të.",
   "homeHint": "Një certifikatë aksionesh, ekrani i një aplikacioni brokerimi, një gazetë ose logoja e një kompanie – çdo gjë që identifikon një aksion.",
   "takePhoto": "Bëj një foto",
@@ -129,8 +129,8 @@
   "errNoResults": "Nuk u gjet asnjë aksion për „{query}“.",
   "quickBarHint": "Shkruaj një simbol ose emrin e kompanisë…",
   "openFullWindow": "Hap dritaren",
-  "hotkeyHint": "Shtypni {shortcut} kudo për të hapur Reszveny.",
-  "trayOpen": "Hap Reszveny",
+  "hotkeyHint": "Shtypni {shortcut} kudo për të hapur StockLens.",
+  "trayOpen": "Hap StockLens",
   "trayQuickSearch": "Kërkim i shpejtë",
   "trayQuit": "Dil",
   "appearance": "Pamja",

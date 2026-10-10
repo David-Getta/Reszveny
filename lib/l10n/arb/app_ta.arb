@@ -1,6 +1,6 @@
 {
   "@@locale": "ta",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.",
   "homeHint": "பங்குச் சான்றிதழ், புரோக்கரேஜ் ஆப் திரை, செய்தித்தாள் அல்லது நிறுவன லோகோ – ஒரு பங்கை அடையாளம் காட்டும் எதுவும்.",
   "takePhoto": "புகைப்படம் எடுக்க",
@@ -129,8 +129,8 @@
   "errNoResults": "“{query}” க்கான பங்குகள் எதுவும் கிடைக்கவில்லை.",
   "quickBarHint": "டிக்கர் அல்லது நிறுவனப் பெயரை உள்ளிடுக…",
   "openFullWindow": "சாளரத்தைத் திற",
-  "hotkeyHint": "எங்கிருந்தும் Reszveny ஐ அழைக்க {shortcut} ஐ அழுத்துங்கள்.",
-  "trayOpen": "Reszveny ஐ திற",
+  "hotkeyHint": "எங்கிருந்தும் StockLens ஐ அழைக்க {shortcut} ஐ அழுத்துங்கள்.",
+  "trayOpen": "StockLens ஐ திற",
   "trayQuickSearch": "விரைவு தேடல்",
   "trayQuit": "வெளியேறு",
   "appearance": "தோற்றம்",

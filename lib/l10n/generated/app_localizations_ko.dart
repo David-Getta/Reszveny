@@ -10,7 +10,7 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
@@ -436,11 +436,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '어디서든 $shortcut 키를 눌러 Reszveny를 불러오세요.';
+    return '어디서든 $shortcut 키를 눌러 StockLens를 불러오세요.';
   }
 
   @override
-  String get trayOpen => 'Reszveny 열기';
+  String get trayOpen => 'StockLens 열기';
 
   @override
   String get trayQuickSearch => '빠른 검색';

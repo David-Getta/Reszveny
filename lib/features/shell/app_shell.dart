@@ -134,7 +134,7 @@ class _Sidebar extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(macTrafficLights ? 84 : 16, 14, 12, 8),
               child: Row(
                 children: [
-                  Icon(Icons.auto_graph_rounded, color: p.accent, size: 20),
+                  Image.asset('assets/branding/logo_128.png', width: 22, height: 22),
                   const SizedBox(width: 8),
                   Text(l10n.appTitle, style: theme.textTheme.titleMedium),
                 ],

@@ -1,6 +1,6 @@
 {
   "@@locale": "jv",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Fotonen saham lan ngertenana kabeh babagan saham iku.",
   "homeHint": "Sertifikat saham, layar aplikasi sekuritas, koran utawa logo perusahaan – apa wae sing bisa ngenali saham.",
   "takePhoto": "Jupuk foto",
@@ -129,8 +129,8 @@
   "errNoResults": "Ora ana saham sing ditemokake kanggo “{query}”.",
   "quickBarHint": "Ketik kode saham utawa jeneng perusahaan…",
   "openFullWindow": "Bukak jendhela",
-  "hotkeyHint": "Tekan {shortcut} ing ngendi wae kanggo nimbali Reszveny.",
-  "trayOpen": "Bukak Reszveny",
+  "hotkeyHint": "Tekan {shortcut} ing ngendi wae kanggo nimbali StockLens.",
+  "trayOpen": "Bukak StockLens",
   "trayQuickSearch": "Panelusuran cepet",
   "trayQuit": "Metu",
   "appearance": "Tampilan",

@@ -1,6 +1,6 @@
 {
   "@@locale": "bg",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Снимайте акция и научете всичко за нея.",
   "homeHint": "Сертификат за акции, екран на брокерско приложение, вестник или фирмено лого – всичко, което идентифицира акция.",
   "takePhoto": "Направи снимка",
@@ -129,8 +129,8 @@
   "errNoResults": "Не са намерени акции за „{query}“.",
   "quickBarHint": "Въведете тикер или име на компания…",
   "openFullWindow": "Отвори прозореца",
-  "hotkeyHint": "Натиснете {shortcut} отвсякъде, за да извикате Reszveny.",
-  "trayOpen": "Отвори Reszveny",
+  "hotkeyHint": "Натиснете {shortcut} отвсякъде, за да извикате StockLens.",
+  "trayOpen": "Отвори StockLens",
   "trayQuickSearch": "Бързо търсене",
   "trayQuit": "Изход",
   "appearance": "Външен вид",

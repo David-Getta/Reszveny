@@ -1,6 +1,6 @@
 {
   "@@locale": "ja",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "株式を撮影して、その銘柄のすべてを知る。",
   "homeHint": "株券、証券アプリの画面、新聞、企業ロゴなど、銘柄を特定できるものなら何でも。",
   "takePhoto": "写真を撮る",
@@ -129,8 +129,8 @@
   "errNoResults": "「{query}」に該当する銘柄は見つかりませんでした。",
   "quickBarHint": "ティッカーまたは会社名を入力…",
   "openFullWindow": "ウィンドウを開く",
-  "hotkeyHint": "どこからでも {shortcut} を押すと Reszveny を呼び出せます。",
-  "trayOpen": "Reszveny を開く",
+  "hotkeyHint": "どこからでも {shortcut} を押すと StockLens を呼び出せます。",
+  "trayOpen": "StockLens を開く",
   "trayQuickSearch": "クイック検索",
   "trayQuit": "終了",
   "appearance": "外観",

@@ -1,6 +1,6 @@
 {
   "@@locale": "hi",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "किसी शेयर की फ़ोटो लें और उसके बारे में सब कुछ जानें।",
   "homeHint": "शेयर प्रमाणपत्र, ब्रोकरेज ऐप की स्क्रीन, अख़बार या कंपनी का लोगो – कुछ भी जो किसी शेयर की पहचान करे।",
   "takePhoto": "फ़ोटो लें",
@@ -129,8 +129,8 @@
   "errNoResults": "“{query}” के लिए कोई शेयर नहीं मिला।",
   "quickBarHint": "टिकर या कंपनी का नाम टाइप करें…",
   "openFullWindow": "विंडो खोलें",
-  "hotkeyHint": "Reszveny को कहीं से भी खोलने के लिए {shortcut} दबाएँ।",
-  "trayOpen": "Reszveny खोलें",
+  "hotkeyHint": "StockLens को कहीं से भी खोलने के लिए {shortcut} दबाएँ।",
+  "trayOpen": "StockLens खोलें",
   "trayQuickSearch": "त्वरित खोज",
   "trayQuit": "बाहर निकलें",
   "appearance": "दिखावट",

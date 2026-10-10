@@ -10,7 +10,7 @@ class AppLocalizationsUr extends AppLocalizations {
   AppLocalizationsUr([String locale = 'ur']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline =>
@@ -443,11 +443,11 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Reszveny کو کہیں سے بھی کھولنے کے لیے $shortcut دبائیں۔';
+    return 'StockLens کو کہیں سے بھی کھولنے کے لیے $shortcut دبائیں۔';
   }
 
   @override
-  String get trayOpen => 'Reszveny کھولیں';
+  String get trayOpen => 'StockLens کھولیں';
 
   @override
   String get trayQuickSearch => 'فوری تلاش';

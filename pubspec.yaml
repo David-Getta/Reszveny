@@ -1,5 +1,5 @@
 name: reszveny
-description: "Photograph a stock and learn everything about it – iOS, iPadOS, macOS, Android and Windows."
+description: "StockLens – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -34,11 +34,16 @@ flutter:
   generate: true
   assets:
     - assets/icons/
+    - assets/branding/logo_128.png
+    - assets/branding/logo_256.png
 
 flutter_launcher_icons:
   image_path: assets/branding/app_icon.png
   android: true
   ios: true
+  web:
+    generate: true
+    image_path: assets/branding/app_icon.png
   image_path_ios: assets/branding/app_icon_ios.png
   remove_alpha_ios: true
   macos:

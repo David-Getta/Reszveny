@@ -1,6 +1,6 @@
 {
   "@@locale": "fil",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.",
   "homeHint": "Share certificate, screen ng brokerage app, diyaryo o logo ng kumpanya – kahit anong tumutukoy sa isang stock.",
   "takePhoto": "Kumuha ng larawan",
@@ -129,8 +129,8 @@
   "errNoResults": "Walang nahanap na stock para sa “{query}”.",
   "quickBarHint": "Mag-type ng ticker o pangalan ng kumpanya…",
   "openFullWindow": "Buksan ang window",
-  "hotkeyHint": "Pindutin ang {shortcut} kahit saan para tawagin ang Reszveny.",
-  "trayOpen": "Buksan ang Reszveny",
+  "hotkeyHint": "Pindutin ang {shortcut} kahit saan para tawagin ang StockLens.",
+  "trayOpen": "Buksan ang StockLens",
   "trayQuickSearch": "Mabilisang paghahanap",
   "trayQuit": "Umalis",
   "appearance": "Hitsura",

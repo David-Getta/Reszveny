@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Photograph a stock and learn everything about it.",
   "homeHint": "A share certificate, a brokerage app screen, a newspaper or a company logo – anything that identifies a stock.",
   "takePhoto": "Take a photo",
@@ -227,7 +227,7 @@
   },
   "quickBarHint": "Type a ticker or company name…",
   "openFullWindow": "Open window",
-  "hotkeyHint": "Press {shortcut} anywhere to summon Reszveny.",
+  "hotkeyHint": "Press {shortcut} anywhere to summon StockLens.",
   "@hotkeyHint": {
     "placeholders": {
       "shortcut": {
@@ -235,7 +235,7 @@
       }
     }
   },
-  "trayOpen": "Open Reszveny",
+  "trayOpen": "Open StockLens",
   "trayQuickSearch": "Quick search",
   "trayQuit": "Quit",
   "appearance": "Appearance",

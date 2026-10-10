@@ -1,6 +1,6 @@
 {
   "@@locale": "lt",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Nufotografuokite akciją ir sužinokite apie ją viską.",
   "homeHint": "Akcijos sertifikatas, brokerio programėlės ekranas, laikraštis ar įmonės logotipas – bet kas, kas identifikuoja akciją.",
   "takePhoto": "Fotografuoti",
@@ -129,8 +129,8 @@
   "errNoResults": "Pagal „{query}“ akcijų nerasta.",
   "quickBarHint": "Įveskite simbolį arba įmonės pavadinimą…",
   "openFullWindow": "Atverti langą",
-  "hotkeyHint": "Paspauskite {shortcut} bet kur, kad iškviestumėte Reszveny.",
-  "trayOpen": "Atverti Reszveny",
+  "hotkeyHint": "Paspauskite {shortcut} bet kur, kad iškviestumėte StockLens.",
+  "trayOpen": "Atverti StockLens",
   "trayQuickSearch": "Greitoji paieška",
   "trayQuit": "Baigti darbą",
   "appearance": "Išvaizda",

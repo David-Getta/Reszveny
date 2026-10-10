@@ -1,6 +1,6 @@
 {
   "@@locale": "tr",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.",
   "homeHint": "Hisse senedi belgesi, aracı kurum uygulaması ekranı, gazete veya şirket logosu – hisseyi tanımlayan herhangi bir şey.",
   "takePhoto": "Fotoğraf çek",
@@ -129,8 +129,8 @@
   "errNoResults": "“{query}” için hisse bulunamadı.",
   "quickBarHint": "Bir sembol veya şirket adı yazın…",
   "openFullWindow": "Pencereyi aç",
-  "hotkeyHint": "Reszveny'yi çağırmak için herhangi bir yerde {shortcut} tuşlarına basın.",
-  "trayOpen": "Reszveny'yi aç",
+  "hotkeyHint": "StockLens'i çağırmak için herhangi bir yerde {shortcut} tuşlarına basın.",
+  "trayOpen": "StockLens'i aç",
   "trayQuickSearch": "Hızlı arama",
   "trayQuit": "Çıkış",
   "appearance": "Görünüm",

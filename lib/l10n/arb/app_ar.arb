@@ -1,6 +1,6 @@
 {
   "@@locale": "ar",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "صوّر سهماً وتعرّف على كل شيء عنه.",
   "homeHint": "شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.",
   "takePhoto": "التقاط صورة",
@@ -129,8 +129,8 @@
   "errNoResults": "لم يتم العثور على أسهم لـ “{query}”.",
   "quickBarHint": "اكتب رمز السهم أو اسم الشركة…",
   "openFullWindow": "فتح النافذة",
-  "hotkeyHint": "اضغط {shortcut} في أي مكان لاستدعاء Reszveny.",
-  "trayOpen": "فتح Reszveny",
+  "hotkeyHint": "اضغط {shortcut} في أي مكان لاستدعاء StockLens.",
+  "trayOpen": "فتح StockLens",
   "trayQuickSearch": "بحث سريع",
   "trayQuit": "إنهاء",
   "appearance": "المظهر",

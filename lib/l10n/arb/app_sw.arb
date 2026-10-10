@@ -1,6 +1,6 @@
 {
   "@@locale": "sw",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "Piga picha ya hisa na ujifunze kila kitu kuihusu.",
   "homeHint": "Hati ya hisa, skrini ya programu ya broker, gazeti au nembo ya kampuni – kitu chochote kinachotambulisha hisa.",
   "takePhoto": "Piga picha",
@@ -129,8 +129,8 @@
   "errNoResults": "Hakuna hisa zilizopatikana kwa “{query}”.",
   "quickBarHint": "Andika ticker au jina la kampuni…",
   "openFullWindow": "Fungua dirisha",
-  "hotkeyHint": "Bonyeza {shortcut} mahali popote kuita Reszveny.",
-  "trayOpen": "Fungua Reszveny",
+  "hotkeyHint": "Bonyeza {shortcut} mahali popote kuita StockLens.",
+  "trayOpen": "Fungua StockLens",
   "trayQuickSearch": "Utafutaji wa haraka",
   "trayQuit": "Ondoka",
   "appearance": "Mwonekano",

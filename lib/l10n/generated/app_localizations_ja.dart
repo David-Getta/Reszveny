@@ -10,7 +10,7 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '株式を撮影して、その銘柄のすべてを知る。';
@@ -436,11 +436,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'どこからでも $shortcut を押すと Reszveny を呼び出せます。';
+    return 'どこからでも $shortcut を押すと StockLens を呼び出せます。';
   }
 
   @override
-  String get trayOpen => 'Reszveny を開く';
+  String get trayOpen => 'StockLens を開く';
 
   @override
   String get trayQuickSearch => 'クイック検索';

@@ -10,7 +10,7 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '拍下一只股票，了解它的一切。';
@@ -433,11 +433,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '在任意位置按 $shortcut 即可呼出 Reszveny。';
+    return '在任意位置按 $shortcut 即可呼出 StockLens。';
   }
 
   @override
-  String get trayOpen => '打开 Reszveny';
+  String get trayOpen => '打开 StockLens';
 
   @override
   String get trayQuickSearch => '快速搜索';
@@ -587,7 +587,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   AppLocalizationsZhHantHk() : super('zh_Hant_HK');
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '拍一張股票相片，全面了解該股。';
@@ -1010,11 +1010,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '在任何地方按 $shortcut 即可呼出 Reszveny。';
+    return '在任何地方按 $shortcut 即可呼出 StockLens。';
   }
 
   @override
-  String get trayOpen => '開啟 Reszveny';
+  String get trayOpen => '開啟 StockLens';
 
   @override
   String get trayQuickSearch => '快速搜尋';

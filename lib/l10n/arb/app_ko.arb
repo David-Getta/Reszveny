@@ -1,6 +1,6 @@
 {
   "@@locale": "ko",
-  "appTitle": "Reszveny",
+  "appTitle": "StockLens",
   "homeTagline": "주식을 촬영하고 그 종목의 모든 것을 알아보세요.",
   "homeHint": "주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.",
   "takePhoto": "사진 촬영",
@@ -129,8 +129,8 @@
   "errNoResults": "“{query}”에 해당하는 종목을 찾을 수 없습니다.",
   "quickBarHint": "티커 또는 회사명을 입력하세요…",
   "openFullWindow": "창 열기",
-  "hotkeyHint": "어디서든 {shortcut} 키를 눌러 Reszveny를 불러오세요.",
-  "trayOpen": "Reszveny 열기",
+  "hotkeyHint": "어디서든 {shortcut} 키를 눌러 StockLens를 불러오세요.",
+  "trayOpen": "StockLens 열기",
   "trayQuickSearch": "빠른 검색",
   "trayQuit": "종료",
   "appearance": "모양",

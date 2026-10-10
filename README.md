@@ -1,4 +1,8 @@
-# Reszveny
+# StockLens
+
+<img src="assets/branding/wordmark_dark.png" alt="StockLens" width="360">
+
+**Név**: a *lens* egyszerre a kamera objektívje (lefotózod a részvényt) és a nagyító, amivel átlátod (minden adat és AI-elemzés). A logó: lencse-gyűrű, amelyből egy emelkedő árfolyamnyíl lép ki.
 
 **Lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 

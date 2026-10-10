@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "hu.reszveny" "\0"
-            VALUE "FileDescription", "reszveny" "\0"
+            VALUE "FileDescription", "StockLens" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "reszveny" "\0"
+            VALUE "InternalName", "StockLens" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 hu.reszveny. All rights reserved." "\0"
-            VALUE "OriginalFilename", "reszveny.exe" "\0"
-            VALUE "ProductName", "reszveny" "\0"
+            VALUE "OriginalFilename", "StockLens.exe" "\0"
+            VALUE "ProductName", "StockLens" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
