@@ -180,5 +180,18 @@
   "displayCurrency": "Divisa de visualització",
   "displayCurrencyNone": "Només la divisa pròpia de l’acció",
   "labelConverted": "≈ en {currency}",
-  "fxRateNote": "Tipus de canvi: 1 {from} = {rate} {to} (BCE, {date})"
+  "fxRateNote": "Tipus de canvi: 1 {from} = {rate} {to} (BCE, {date})",
+  "updates": "Actualitzacions",
+  "currentVersion": "Versió {version}",
+  "autoUpdate": "Instal·la les actualitzacions automàticament",
+  "checkForUpdates": "Cerca actualitzacions",
+  "updateChecking": "S’estan cercant actualitzacions…",
+  "updateUpToDate": "Tens la versió més recent.",
+  "updateAvailable": "La versió {version} està disponible.",
+  "updateDownloading": "S’està baixant l’actualització en segon pla…",
+  "updateDownloaded": "L’actualització està a punt. Reinicia per instal·lar-la.",
+  "updateNow": "Actualitza",
+  "restartNow": "Reinicia",
+  "updatesViaStore": "Les actualitzacions arriben automàticament a través de la botiga d’aplicacions.",
+  "updateCheckFailed": "No s’han pogut cercar actualitzacions."
 }

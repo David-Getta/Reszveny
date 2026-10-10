@@ -180,5 +180,18 @@
   "displayCurrency": "Валюта відображення",
   "displayCurrencyNone": "Лише власна валюта акції",
   "labelConverted": "≈ у {currency}",
-  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЄЦБ, {date})"
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЄЦБ, {date})",
+  "updates": "Оновлення",
+  "currentVersion": "Версія {version}",
+  "autoUpdate": "Встановлювати оновлення автоматично",
+  "checkForUpdates": "Перевірити оновлення",
+  "updateChecking": "Перевірка оновлень…",
+  "updateUpToDate": "У вас найновіша версія.",
+  "updateAvailable": "Доступна версія {version}.",
+  "updateDownloading": "Оновлення завантажується у фоновому режимі…",
+  "updateDownloaded": "Оновлення готове. Перезапустіть застосунок, щоб установити його.",
+  "updateNow": "Оновити",
+  "restartNow": "Перезапустити",
+  "updatesViaStore": "Оновлення надходять автоматично через магазин застосунків.",
+  "updateCheckFailed": "Не вдалося перевірити оновлення."
 }

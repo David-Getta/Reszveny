@@ -180,5 +180,18 @@
   "displayCurrency": "Валута приказа",
   "displayCurrencyNone": "Само сопствена валута акције",
   "labelConverted": "≈ у {currency}",
-  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЕЦБ, {date})"
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЕЦБ, {date})",
+  "updates": "Ажурирања",
+  "currentVersion": "Верзија {version}",
+  "autoUpdate": "Аутоматски инсталирај ажурирања",
+  "checkForUpdates": "Потражи ажурирања",
+  "updateChecking": "Тражење ажурирања…",
+  "updateUpToDate": "Имате најновију верзију.",
+  "updateAvailable": "Доступна је верзија {version}.",
+  "updateDownloading": "Ажурирање се преузима у позадини…",
+  "updateDownloaded": "Ажурирање је спремно. Поново покрените апликацију да бисте га инсталирали.",
+  "updateNow": "Ажурирај",
+  "restartNow": "Поново покрени",
+  "updatesViaStore": "Ажурирања стижу аутоматски преко продавнице апликација.",
+  "updateCheckFailed": "Није могуће потражити ажурирања."
 }

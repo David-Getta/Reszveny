@@ -180,5 +180,18 @@
   "displayCurrency": "Monedha e shfaqjes",
   "displayCurrencyNone": "Vetëm monedha e vetë aksionit",
   "labelConverted": "≈ në {currency}",
-  "fxRateNote": "Kursi: 1 {from} = {rate} {to} (BQE, {date})"
+  "fxRateNote": "Kursi: 1 {from} = {rate} {to} (BQE, {date})",
+  "updates": "Përditësimet",
+  "currentVersion": "Versioni {version}",
+  "autoUpdate": "Instalo përditësimet automatikisht",
+  "checkForUpdates": "Kontrollo për përditësime",
+  "updateChecking": "Po kontrollohet për përditësime…",
+  "updateUpToDate": "Keni versionin më të fundit.",
+  "updateAvailable": "Versioni {version} është i disponueshëm.",
+  "updateDownloading": "Përditësimi po shkarkohet në sfond…",
+  "updateDownloaded": "Përditësimi është gati. Rinisni aplikacionin për ta instaluar.",
+  "updateNow": "Përditëso",
+  "restartNow": "Rinis",
+  "updatesViaStore": "Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.",
+  "updateCheckFailed": "Nuk u arrit të kontrollohej për përditësime."
 }

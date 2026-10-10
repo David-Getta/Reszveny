@@ -180,5 +180,18 @@
   "displayCurrency": "Visningsvaluta",
   "displayCurrencyNone": "Kun aktiens egen valuta",
   "labelConverted": "≈ i {currency}",
-  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Opdateringer",
+  "currentVersion": "Version {version}",
+  "autoUpdate": "Installer opdateringer automatisk",
+  "checkForUpdates": "Søg efter opdateringer",
+  "updateChecking": "Søger efter opdateringer…",
+  "updateUpToDate": "Du har den nyeste version.",
+  "updateAvailable": "Version {version} er tilgængelig.",
+  "updateDownloading": "Opdateringen downloades i baggrunden…",
+  "updateDownloaded": "Opdateringen er klar. Genstart for at installere den.",
+  "updateNow": "Opdater",
+  "restartNow": "Genstart",
+  "updatesViaStore": "Opdateringer kommer automatisk via appbutikken.",
+  "updateCheckFailed": "Kunne ikke søge efter opdateringer."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Näyttövaluutta",
   "displayCurrencyNone": "Vain osakkeen oma valuutta",
   "labelConverted": "≈ valuutassa {currency}",
-  "fxRateNote": "Kurssi: 1 {from} = {rate} {to} (EKP, {date})"
+  "fxRateNote": "Kurssi: 1 {from} = {rate} {to} (EKP, {date})",
+  "updates": "Päivitykset",
+  "currentVersion": "Versio {version}",
+  "autoUpdate": "Asenna päivitykset automaattisesti",
+  "checkForUpdates": "Tarkista päivitykset",
+  "updateChecking": "Tarkistetaan päivityksiä…",
+  "updateUpToDate": "Käytössäsi on uusin versio.",
+  "updateAvailable": "Versio {version} on saatavilla.",
+  "updateDownloading": "Päivitystä ladataan taustalla…",
+  "updateDownloaded": "Päivitys on valmis. Käynnistä sovellus uudelleen asentaaksesi sen.",
+  "updateNow": "Päivitä",
+  "restartNow": "Käynnistä uudelleen",
+  "updatesViaStore": "Päivitykset saapuvat automaattisesti sovelluskaupan kautta.",
+  "updateCheckFailed": "Päivityksiä ei voitu tarkistaa."
 }

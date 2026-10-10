@@ -180,5 +180,18 @@
   "displayCurrency": "Monedă de afișare",
   "displayCurrencyNone": "Doar moneda proprie a acțiunii",
   "labelConverted": "≈ în {currency}",
-  "fxRateNote": "Curs: 1 {from} = {rate} {to} (BCE, {date})"
+  "fxRateNote": "Curs: 1 {from} = {rate} {to} (BCE, {date})",
+  "updates": "Actualizări",
+  "currentVersion": "Versiunea {version}",
+  "autoUpdate": "Instalează actualizările automat",
+  "checkForUpdates": "Caută actualizări",
+  "updateChecking": "Se caută actualizări…",
+  "updateUpToDate": "Ai cea mai recentă versiune.",
+  "updateAvailable": "Versiunea {version} este disponibilă.",
+  "updateDownloading": "Actualizarea se descarcă în fundal…",
+  "updateDownloaded": "Actualizarea este gata. Repornește pentru a o instala.",
+  "updateNow": "Actualizează",
+  "restartNow": "Repornește",
+  "updatesViaStore": "Actualizările sosesc automat prin magazinul de aplicații.",
+  "updateCheckFailed": "Nu s-au putut căuta actualizări."
 }

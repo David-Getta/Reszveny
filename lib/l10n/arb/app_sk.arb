@@ -180,5 +180,18 @@
   "displayCurrency": "Mena zobrazenia",
   "displayCurrencyNone": "Iba vlastná mena akcie",
   "labelConverted": "≈ v {currency}",
-  "fxRateNote": "Kurz: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kurz: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Aktualizácie",
+  "currentVersion": "Verzia {version}",
+  "autoUpdate": "Inštalovať aktualizácie automaticky",
+  "checkForUpdates": "Skontrolovať aktualizácie",
+  "updateChecking": "Kontrola aktualizácií…",
+  "updateUpToDate": "Máte najnovšiu verziu.",
+  "updateAvailable": "Je k dispozícii verzia {version}.",
+  "updateDownloading": "Aktualizácia sa sťahuje na pozadí…",
+  "updateDownloaded": "Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.",
+  "updateNow": "Aktualizovať",
+  "restartNow": "Reštartovať",
+  "updatesViaStore": "Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.",
+  "updateCheckFailed": "Aktualizácie sa nepodarilo skontrolovať."
 }

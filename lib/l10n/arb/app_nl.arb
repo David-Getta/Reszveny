@@ -180,5 +180,18 @@
   "displayCurrency": "Weergavevaluta",
   "displayCurrencyNone": "Alleen de eigen valuta van het aandeel",
   "labelConverted": "≈ in {currency}",
-  "fxRateNote": "Koers: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Koers: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Updates",
+  "currentVersion": "Versie {version}",
+  "autoUpdate": "Updates automatisch installeren",
+  "checkForUpdates": "Controleren op updates",
+  "updateChecking": "Controleren op updates…",
+  "updateUpToDate": "Je gebruikt de nieuwste versie.",
+  "updateAvailable": "Versie {version} is beschikbaar.",
+  "updateDownloading": "De update wordt op de achtergrond gedownload…",
+  "updateDownloaded": "De update is klaar. Start opnieuw op om deze te installeren.",
+  "updateNow": "Bijwerken",
+  "restartNow": "Opnieuw starten",
+  "updatesViaStore": "Updates komen automatisch binnen via de appwinkel.",
+  "updateCheckFailed": "Kon niet controleren op updates."
 }

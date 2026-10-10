@@ -180,5 +180,18 @@
   "displayCurrency": "Anzeigewährung",
   "displayCurrencyNone": "Nur die Währung der Aktie",
   "labelConverted": "≈ in {currency}",
-  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EZB, {date})"
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EZB, {date})",
+  "updates": "Updates",
+  "currentVersion": "Version {version}",
+  "autoUpdate": "Updates automatisch installieren",
+  "checkForUpdates": "Nach Updates suchen",
+  "updateChecking": "Suche nach Updates…",
+  "updateUpToDate": "Du verwendest die neueste Version.",
+  "updateAvailable": "Version {version} ist verfügbar.",
+  "updateDownloading": "Das Update wird im Hintergrund heruntergeladen…",
+  "updateDownloaded": "Das Update ist bereit. Starte die App neu, um es zu installieren.",
+  "updateNow": "Aktualisieren",
+  "restartNow": "Neu starten",
+  "updatesViaStore": "Updates werden automatisch über den App-Store bereitgestellt.",
+  "updateCheckFailed": "Es konnte nicht nach Updates gesucht werden."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Měna zobrazení",
   "displayCurrencyNone": "Pouze vlastní měna akcie",
   "labelConverted": "≈ v {currency}",
-  "fxRateNote": "Kurz: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kurz: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Aktualizace",
+  "currentVersion": "Verze {version}",
+  "autoUpdate": "Instalovat aktualizace automaticky",
+  "checkForUpdates": "Zkontrolovat aktualizace",
+  "updateChecking": "Kontrola aktualizací…",
+  "updateUpToDate": "Máte nejnovější verzi.",
+  "updateAvailable": "Je k dispozici verze {version}.",
+  "updateDownloading": "Aktualizace se stahuje na pozadí…",
+  "updateDownloaded": "Aktualizace je připravena. Restartujte aplikaci a nainstalujte ji.",
+  "updateNow": "Aktualizovat",
+  "restartNow": "Restartovat",
+  "updatesViaStore": "Aktualizace přicházejí automaticky prostřednictvím obchodu s aplikacemi.",
+  "updateCheckFailed": "Aktualizace se nepodařilo zkontrolovat."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Waluta wyświetlania",
   "displayCurrencyNone": "Tylko własna waluta akcji",
   "labelConverted": "≈ w {currency}",
-  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EBC, {date})"
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EBC, {date})",
+  "updates": "Aktualizacje",
+  "currentVersion": "Wersja {version}",
+  "autoUpdate": "Instaluj aktualizacje automatycznie",
+  "checkForUpdates": "Sprawdź aktualizacje",
+  "updateChecking": "Sprawdzanie aktualizacji…",
+  "updateUpToDate": "Masz najnowszą wersję.",
+  "updateAvailable": "Dostępna jest wersja {version}.",
+  "updateDownloading": "Aktualizacja jest pobierana w tle…",
+  "updateDownloaded": "Aktualizacja jest gotowa. Uruchom ponownie, aby ją zainstalować.",
+  "updateNow": "Aktualizuj",
+  "restartNow": "Uruchom ponownie",
+  "updatesViaStore": "Aktualizacje są dostarczane automatycznie przez sklep z aplikacjami.",
+  "updateCheckFailed": "Nie udało się sprawdzić aktualizacji."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Devise d’affichage",
   "displayCurrencyNone": "Devise de l’action uniquement",
   "labelConverted": "≈ en {currency}",
-  "fxRateNote": "Taux : 1 {from} = {rate} {to} (BCE, {date})"
+  "fxRateNote": "Taux : 1 {from} = {rate} {to} (BCE, {date})",
+  "updates": "Mises à jour",
+  "currentVersion": "Version {version}",
+  "autoUpdate": "Installer les mises à jour automatiquement",
+  "checkForUpdates": "Rechercher des mises à jour",
+  "updateChecking": "Recherche de mises à jour…",
+  "updateUpToDate": "Vous disposez de la dernière version.",
+  "updateAvailable": "La version {version} est disponible.",
+  "updateDownloading": "Téléchargement de la mise à jour en arrière-plan…",
+  "updateDownloaded": "La mise à jour est prête. Redémarrez pour l’installer.",
+  "updateNow": "Mettre à jour",
+  "restartNow": "Redémarrer",
+  "updatesViaStore": "Les mises à jour arrivent automatiquement via la boutique d’applications.",
+  "updateCheckFailed": "Impossible de rechercher des mises à jour."
 }

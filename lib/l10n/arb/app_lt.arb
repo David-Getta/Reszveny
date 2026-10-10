@@ -180,5 +180,18 @@
   "displayCurrency": "Rodymo valiuta",
   "displayCurrencyNone": "Tik pačios akcijos valiuta",
   "labelConverted": "≈ valiuta {currency}",
-  "fxRateNote": "Kursas: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kursas: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Naujinimai",
+  "currentVersion": "Versija {version}",
+  "autoUpdate": "Įdiegti naujinimus automatiškai",
+  "checkForUpdates": "Tikrinti, ar yra naujinimų",
+  "updateChecking": "Tikrinama, ar yra naujinimų…",
+  "updateUpToDate": "Naudojate naujausią versiją.",
+  "updateAvailable": "Pasiekiama versija {version}.",
+  "updateDownloading": "Naujinimas atsisiunčiamas fone…",
+  "updateDownloaded": "Naujinimas paruoštas. Paleiskite programą iš naujo, kad jį įdiegtumėte.",
+  "updateNow": "Naujinti",
+  "restartNow": "Paleisti iš naujo",
+  "updatesViaStore": "Naujinimai gaunami automatiškai per programėlių parduotuvę.",
+  "updateCheckFailed": "Nepavyko patikrinti, ar yra naujinimų."
 }
