@@ -354,32 +354,26 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávania nedokázala tento obrázok spracovať.';
+  String get errRecognitionRefused => 'Služba rozpoznávania nedokázala tento obrázok spracovať.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
+  String get errRecognitionTruncated => 'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočakávaná odpoveď služby rozpoznávania.';
+  String get errRecognitionBadResponse => 'Neočakávaná odpoveď služby rozpoznávania.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávania vrátila prázdnu odpoveď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávania vrátila prázdnu odpoveď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodarilo sa pripojiť k službe trhových údajov. Skontrolujte pripojenie na internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
+  String get errMarketRateLimited => 'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočakávaná odpoveď služby trhových údajov.';
+  String get errMarketBadResponse => 'Neočakávaná odpoveď služby trhových údajov.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +481,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiRegenerate => 'Vygenerovať znova';
 
   @override
-  String get aiGenerating =>
-      'Pripravujem analýzu… môže to trvať minútu či dve.';
+  String get aiGenerating => 'Pripravujem analýzu… môže to trvať minútu či dve.';
 
   @override
   String get aiSources => 'Zdroje';
@@ -504,12 +496,10 @@ class AppLocalizationsSk extends AppLocalizations {
       'Analýza vygenerovaná AI na základe verejných údajov a aktuálnych správ. Môže obsahovať chyby alebo byť zastaraná a nie je investičným odporúčaním.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
+  String get errAiUnreachable => 'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
 
   @override
   String errAiHttp(String status) {
@@ -541,8 +531,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get rangeFiveYears => '5R';
 
   @override
-  String get chartUnavailable =>
-      'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
+  String get chartUnavailable => 'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
 
   @override
   String get sectionStatements => 'Finančné výkazy (ročné)';
@@ -569,8 +558,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Prevádzkový peňažný tok';
 
   @override
-  String get statementsUnavailable =>
-      'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
+  String get statementsUnavailable => 'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
 
   @override
   String get launchAtLogin => 'Spustiť pri prihlásení';
@@ -579,8 +567,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get hotkeyLabel => 'Globálna skratka';
 
   @override
-  String get hotkeyRecordHint =>
-      'Kliknite sem a potom stlačte novú kombináciu klávesov';
+  String get hotkeyRecordHint => 'Kliknite sem a potom stlačte novú kombináciu klávesov';
 
   @override
   String get hotkeyReset => 'Obnoviť predvolené';
@@ -601,6 +588,21 @@ class AppLocalizationsSk extends AppLocalizations {
   String get removeFromFavorites => 'Odstrániť z obľúbených';
 
   @override
-  String get noFavorites =>
-      'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
+  String get noFavorites => 'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

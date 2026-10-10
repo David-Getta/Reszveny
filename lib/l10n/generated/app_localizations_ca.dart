@@ -13,8 +13,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Fotografia una acció i descobreix-ho tot sobre ella.';
+  String get homeTagline => 'Fotografia una acció i descobreix-ho tot sobre ella.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorGeneric => 'Alguna cosa ha anat malament.';
 
   @override
-  String get errorSectionUnavailable =>
-      'No s\'ha pogut carregar aquesta secció.';
+  String get errorSectionUnavailable => 'No s\'ha pogut carregar aquesta secció.';
 
   @override
   String get notAvailable => 'n/d';
@@ -308,12 +306,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistes',
-      one: '1 analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistes', one: '1 analista');
     return '$_temp0';
   }
 
@@ -354,32 +347,26 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'El servei de reconeixement no ha pogut processar aquesta imatge.';
+  String get errRecognitionRefused => 'El servei de reconeixement no ha pogut processar aquesta imatge.';
 
   @override
-  String get errRecognitionTruncated =>
-      'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
+  String get errRecognitionTruncated => 'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Resposta inesperada del servei de reconeixement.';
+  String get errRecognitionBadResponse => 'Resposta inesperada del servei de reconeixement.';
 
   @override
-  String get errRecognitionEmpty =>
-      'El servei de reconeixement ha retornat una resposta buida.';
+  String get errRecognitionEmpty => 'El servei de reconeixement ha retornat una resposta buida.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'No s\'ha pogut connectar amb el servei de dades de mercat. Comprova la connexió a internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
+  String get errMarketRateLimited => 'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +374,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Resposta inesperada del servei de dades de mercat.';
+  String get errMarketBadResponse => 'Resposta inesperada del servei de dades de mercat.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +474,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get aiRegenerate => 'Tornar a generar';
 
   @override
-  String get aiGenerating =>
-      'S’està preparant l’anàlisi… pot trigar un o dos minuts.';
+  String get aiGenerating => 'S’està preparant l’anàlisi… pot trigar un o dos minuts.';
 
   @override
   String get aiSources => 'Fonts';
@@ -504,12 +489,10 @@ class AppLocalizationsCa extends AppLocalizations {
       'Anàlisi generada per IA a partir de dades públiques i notícies recents. Pot contenir errors o estar desactualitzada, i no constitueix assessorament d’inversió.';
 
   @override
-  String get errAiNotConfigured =>
-      'L’anàlisi amb IA no està configurada (falta ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'L’anàlisi amb IA no està configurada (falta ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'No s’ha pogut connectar amb el servei d’IA. Comprova la connexió a internet.';
+  String get errAiUnreachable => 'No s’ha pogut connectar amb el servei d’IA. Comprova la connexió a internet.';
 
   @override
   String errAiHttp(String status) {
@@ -517,8 +500,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'El servei d’IA ha refusat analitzar aquesta acció.';
+  String get errAiRefused => 'El servei d’IA ha refusat analitzar aquesta acció.';
 
   @override
   String get errAiBadResponse => 'Resposta inesperada del servei d’IA.';
@@ -542,8 +524,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable =>
-      'L’historial de preus no està disponible a la font de dades actual.';
+  String get chartUnavailable => 'L’historial de preus no està disponible a la font de dades actual.';
 
   @override
   String get sectionStatements => 'Estats financers (anuals)';
@@ -570,8 +551,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flux de caixa operatiu';
 
   @override
-  String get statementsUnavailable =>
-      'No hi ha estats financers publicats disponibles per a aquesta acció.';
+  String get statementsUnavailable => 'No hi ha estats financers publicats disponibles per a aquesta acció.';
 
   @override
   String get launchAtLogin => 'Obrir en iniciar la sessió';
@@ -580,8 +560,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get hotkeyLabel => 'Drecera global';
 
   @override
-  String get hotkeyRecordHint =>
-      'Fes clic aquí i prem la nova combinació de tecles';
+  String get hotkeyRecordHint => 'Fes clic aquí i prem la nova combinació de tecles';
 
   @override
   String get hotkeyReset => 'Restablir el valor predeterminat';
@@ -602,6 +581,21 @@ class AppLocalizationsCa extends AppLocalizations {
   String get removeFromFavorites => 'Eliminar dels favorits';
 
   @override
-  String get noFavorites =>
-      'Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la.';
+  String get noFavorites => 'Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

@@ -13,8 +13,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
+  String get homeTagline => 'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errorGeneric => 'Κάτι πήγε στραβά.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
+  String get errorSectionUnavailable => 'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
 
   @override
   String get notAvailable => 'μ/δ';
@@ -308,12 +306,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count αναλυτές',
-      one: '1 αναλυτής',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count αναλυτές', one: '1 αναλυτής');
     return '$_temp0';
   }
 
@@ -354,32 +347,26 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
+  String get errRecognitionRefused => 'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
+  String get errRecognitionTruncated => 'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
+  String get errRecognitionBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
+  String get errRecognitionEmpty => 'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία δεδομένων αγοράς. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
-  String get errMarketRateLimited =>
-      'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
+  String get errMarketRateLimited => 'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +374,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
+  String get errMarketBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +474,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiRegenerate => 'Δημιουργία ξανά';
 
   @override
-  String get aiGenerating =>
-      'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
+  String get aiGenerating => 'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
 
   @override
   String get aiSources => 'Πηγές';
@@ -504,12 +489,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ανάλυση που δημιουργήθηκε από AI με βάση δημόσια δεδομένα και πρόσφατες ειδήσεις. Μπορεί να περιέχει λάθη ή να μην είναι ενημερωμένη και δεν αποτελεί επενδυτική συμβουλή.';
 
   @override
-  String get errAiNotConfigured =>
-      'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
+  String get errAiUnreachable => 'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
   String errAiHttp(String status) {
@@ -517,8 +500,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
+  String get errAiRefused => 'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
 
   @override
   String get errAiBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία AI.';
@@ -542,8 +524,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get rangeFiveYears => '5 έτη';
 
   @override
-  String get chartUnavailable =>
-      'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
+  String get chartUnavailable => 'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
 
   @override
   String get sectionStatements => 'Οικονομικές καταστάσεις (ετήσιες)';
@@ -580,8 +561,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hotkeyLabel => 'Γενική συντόμευση';
 
   @override
-  String get hotkeyRecordHint =>
-      'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
+  String get hotkeyRecordHint => 'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
 
   @override
   String get hotkeyReset => 'Επαναφορά προεπιλογής';
@@ -602,6 +582,21 @@ class AppLocalizationsEl extends AppLocalizations {
   String get removeFromFavorites => 'Αφαίρεση από τα αγαπημένα';
 
   @override
-  String get noFavorites =>
-      'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
+  String get noFavorites => 'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

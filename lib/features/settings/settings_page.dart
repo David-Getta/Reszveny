@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
 
 import '../../app_services.dart';
+import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
+import '../fx/fx_service.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
@@ -69,6 +71,25 @@ class SettingsPage extends StatelessWidget {
                     sectionTitle(l10n.hotkeyLabel),
                     Card(child: Column(children: [_HotkeyTile(), const Divider(height: 1), _LaunchAtLoginTile()])),
                   ],
+                  sectionTitle(l10n.displayCurrency),
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: DropdownButtonHideUnderline(
+                        child: DropdownButton<String>(
+                          isExpanded: true,
+                          value: services.preferences.displayCurrency == AppPreferences.currencyUnset
+                              ? (services.displayCurrency(Localizations.localeOf(context)) ?? '')
+                              : (services.preferences.displayCurrency ?? ''),
+                          items: [
+                            DropdownMenuItem(value: '', child: Text(l10n.displayCurrencyNone)),
+                            for (final c in FxService.supportedCurrencies) DropdownMenuItem(value: c, child: Text(c)),
+                          ],
+                          onChanged: (v) => services.preferences.setDisplayCurrency(v == null || v.isEmpty ? null : v),
+                        ),
+                      ),
+                    ),
+                  ),
                   sectionTitle(l10n.language),
                   Card(
                     child: RadioGroup<String?>(

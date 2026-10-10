@@ -123,6 +123,14 @@ void main() {
     addTearDown(tester.view.reset);
     await tester.pumpWidget(RepaintBoundary(child: StockLensApp(services: s)));
     await tester.pumpAndSettle();
+    // A logó-képek aszinkron töltődnek; itt megvárjuk őket.
+    await tester.runAsync(() async {
+      final ctx = tester.element(find.byType(StockLensApp));
+      for (final a in ['assets/branding/logo_128.png', 'assets/branding/logo_256.png']) {
+        await precacheImage(AssetImage(a), ctx);
+      }
+    });
+    await tester.pumpAndSettle();
   }
 
   testWidgets('home wide dark', (tester) async {

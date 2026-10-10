@@ -306,12 +306,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analisten',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisten', one: '1 analist');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Beeldherkenning is niet ingesteld (geen ANTHROPIC_API_KEY). Voer de ticker handmatig in.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errRecognitionUnreachable => 'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'De herkenningsdienst kon deze afbeelding niet verwerken.';
+  String get errRecognitionRefused => 'De herkenningsdienst kon deze afbeelding niet verwerken.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
+  String get errRecognitionTruncated => 'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Onverwacht antwoord van de herkenningsdienst.';
+  String get errRecognitionBadResponse => 'Onverwacht antwoord van de herkenningsdienst.';
 
   @override
-  String get errRecognitionEmpty =>
-      'De herkenningsdienst gaf een leeg antwoord terug.';
+  String get errRecognitionEmpty => 'De herkenningsdienst gaf een leeg antwoord terug.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errMarketUnreachable => 'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
-  String get errMarketRateLimited =>
-      'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
+  String get errMarketRateLimited => 'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Onverwacht antwoord van de marktdatadienst.';
+  String get errMarketBadResponse => 'Onverwacht antwoord van de marktdatadienst.';
 
   @override
   String errNoQuote(String symbol) {
@@ -486,8 +472,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get aiRegenerate => 'Opnieuw genereren';
 
   @override
-  String get aiGenerating =>
-      'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
+  String get aiGenerating => 'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
 
   @override
   String get aiSources => 'Bronnen';
@@ -502,12 +487,10 @@ class AppLocalizationsNl extends AppLocalizations {
       'Door AI gegenereerde analyse op basis van openbare gegevens en recent nieuws. Deze kan fouten bevatten of verouderd zijn en is geen beleggingsadvies.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errAiUnreachable => 'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errAiHttp(String status) {
@@ -515,8 +498,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
+  String get errAiRefused => 'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
 
   @override
   String get errAiBadResponse => 'Onverwacht antwoord van de AI-dienst.';
@@ -540,8 +522,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get rangeFiveYears => '5J';
 
   @override
-  String get chartUnavailable =>
-      'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
+  String get chartUnavailable => 'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
 
   @override
   String get sectionStatements => 'Financiële overzichten (jaarlijks)';
@@ -568,8 +549,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operationele kasstroom';
 
   @override
-  String get statementsUnavailable =>
-      'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
+  String get statementsUnavailable => 'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
 
   @override
   String get launchAtLogin => 'Starten bij aanmelden';
@@ -578,8 +558,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get hotkeyLabel => 'Globale sneltoets';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
+  String get hotkeyRecordHint => 'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
 
   @override
   String get hotkeyReset => 'Standaard herstellen';
@@ -600,6 +579,21 @@ class AppLocalizationsNl extends AppLocalizations {
   String get removeFromFavorites => 'Verwijderen uit favorieten';
 
   @override
-  String get noFavorites =>
-      'Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.';
+  String get noFavorites => 'Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

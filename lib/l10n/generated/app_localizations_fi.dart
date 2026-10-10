@@ -343,8 +343,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Kuvantunnistusta ei ole määritetty (ei ANTHROPIC_API_KEY). Syötä tunnus manuaalisesti.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errRecognitionUnreachable => 'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +351,25 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
+  String get errRecognitionRefused => 'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
+  String get errRecognitionTruncated => 'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Odottamaton vastaus tunnistuspalvelulta.';
+  String get errRecognitionBadResponse => 'Odottamaton vastaus tunnistuspalvelulta.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Tunnistuspalvelu palautti tyhjän vastauksen.';
+  String get errRecognitionEmpty => 'Tunnistuspalvelu palautti tyhjän vastauksen.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errMarketUnreachable => 'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
-  String get errMarketRateLimited =>
-      'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
+  String get errMarketRateLimited => 'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +377,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Odottamaton vastaus markkinadatapalvelulta.';
+  String get errMarketBadResponse => 'Odottamaton vastaus markkinadatapalvelulta.';
 
   @override
   String errNoQuote(String symbol) {
@@ -486,8 +477,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get aiRegenerate => 'Luo uudelleen';
 
   @override
-  String get aiGenerating =>
-      'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
+  String get aiGenerating => 'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
 
   @override
   String get aiSources => 'Lähteet';
@@ -502,12 +492,10 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tekoälyn tuottama analyysi, joka perustuu julkisiin tietoihin ja tuoreisiin uutisiin. Se voi sisältää virheitä tai olla vanhentunut, eikä se ole sijoitusneuvontaa.';
 
   @override
-  String get errAiNotConfigured =>
-      'Tekoälyanalyysia ei ole määritetty (ei ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Tekoälyanalyysia ei ole määritetty (ei ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errAiUnreachable => 'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errAiHttp(String status) {
@@ -515,8 +503,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
+  String get errAiRefused => 'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
 
   @override
   String get errAiBadResponse => 'Odottamaton vastaus tekoälypalvelulta.';
@@ -540,8 +527,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get rangeFiveYears => '5v';
 
   @override
-  String get chartUnavailable =>
-      'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
+  String get chartUnavailable => 'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
 
   @override
   String get sectionStatements => 'Tilinpäätöstiedot (vuosittain)';
@@ -568,8 +554,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelOperatingCashFlow => 'Liiketoiminnan rahavirta';
 
   @override
-  String get statementsUnavailable =>
-      'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
+  String get statementsUnavailable => 'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
 
   @override
   String get launchAtLogin => 'Käynnistä sisäänkirjautuessa';
@@ -578,8 +563,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hotkeyLabel => 'Yleinen pikanäppäin';
 
   @override
-  String get hotkeyRecordHint =>
-      'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
+  String get hotkeyRecordHint => 'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
 
   @override
   String get hotkeyReset => 'Palauta oletus';
@@ -600,6 +584,21 @@ class AppLocalizationsFi extends AppLocalizations {
   String get removeFromFavorites => 'Poista suosikeista';
 
   @override
-  String get noFavorites =>
-      'Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.';
+  String get noFavorites => 'Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

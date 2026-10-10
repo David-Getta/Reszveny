@@ -16,8 +16,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
 
   @override
-  String get homeHint =>
-      '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
+  String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
@@ -55,8 +54,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noCandidatesTitle => '종목을 인식하지 못했습니다';
 
   @override
-  String get noCandidatesBody =>
-      '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
+  String get noCandidatesBody => '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
 
   @override
   String get whatWeSaw => '인식된 내용';
@@ -82,8 +80,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about => '정보';
 
   @override
-  String get disclaimer =>
-      '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
+  String get disclaimer => '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
 
   @override
   String dataSource(String source) {
@@ -306,12 +303,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '애널리스트 $count명',
-      one: '애널리스트 1명',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '애널리스트 $count명', one: '애널리스트 1명');
     return '$_temp0';
   }
 
@@ -339,8 +331,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recognitionRawText => '이미지에서 읽은 텍스트';
 
   @override
-  String get errMissingAnthropicKey =>
-      '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
+  String get errMissingAnthropicKey => '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
 
   @override
   String get errRecognitionUnreachable => '인식 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -467,8 +458,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get aiSectionTitle => 'AI 분석';
 
   @override
-  String get aiIntro =>
-      'AI가 작성한 상세 개요: 최근 뉴스 요약, 사업 내용, 강점, 리스크와 숨겨진 요인, 밸류에이션, 주목할 점.';
+  String get aiIntro => 'AI가 작성한 상세 개요: 최근 뉴스 요약, 사업 내용, 강점, 리스크와 숨겨진 요인, 밸류에이션, 주목할 점.';
 
   @override
   String get aiGenerate => '분석 생성';
@@ -488,8 +478,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer =>
-      '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
+  String get aiDisclaimer => '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
 
   @override
   String get errAiNotConfigured => 'AI 분석이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음).';
@@ -585,4 +574,20 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noFavorites => '아직 즐겨찾기가 없습니다. 종목의 별을 탭하여 추가하세요.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

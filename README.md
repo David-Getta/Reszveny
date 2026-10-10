@@ -24,6 +24,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 - **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
 - **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
 - **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
+- **Deviza-átváltás**: az ár a saját pénznemedben is megjelenik (ECB napi árfolyam, a Frankfurter nyílt API-n át, kulcs nélkül); a pénznem a beállításokban választható, alapból a rendszer nyelvéből/országából jön.
 - **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
 
 ## AI-elemzés: hírek összefoglalása és átfogó kép

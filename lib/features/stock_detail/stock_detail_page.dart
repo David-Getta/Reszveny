@@ -12,6 +12,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
+import 'widgets/converted_price.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
@@ -160,6 +161,7 @@ class _DetailsBody extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                  ConvertedPrice(amount: q.price, fromCurrency: cur, withRate: true),
                 ],
               ),
           ],

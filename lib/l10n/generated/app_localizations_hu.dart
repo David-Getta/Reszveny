@@ -13,8 +13,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Fotózz le egy részvényt, és tudj meg róla mindent.';
+  String get homeTagline => 'Fotózz le egy részvényt, és tudj meg róla mindent.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorGeneric => 'Hiba történt.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Ezt a szakaszt nem sikerült betölteni.';
+  String get errorSectionUnavailable => 'Ezt a szakaszt nem sikerült betölteni.';
 
   @override
   String get notAvailable => 'n/a';
@@ -308,12 +306,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count elemző',
-      one: '1 elemző',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count elemző', one: '1 elemző');
     return '$_temp0';
   }
 
@@ -345,8 +338,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'A képfelismerés nincs beállítva (nincs ANTHROPIC_API_KEY). Add meg a tickert kézzel.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errRecognitionUnreachable => 'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -354,32 +346,25 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
+  String get errRecognitionRefused => 'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
 
   @override
-  String get errRecognitionTruncated =>
-      'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
+  String get errRecognitionTruncated => 'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Váratlan válasz érkezett a felismerő szolgáltatástól.';
+  String get errRecognitionBadResponse => 'Váratlan válasz érkezett a felismerő szolgáltatástól.';
 
   @override
-  String get errRecognitionEmpty =>
-      'A felismerő szolgáltatás üres választ adott.';
+  String get errRecognitionEmpty => 'A felismerő szolgáltatás üres választ adott.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'A piaci adatok nincsenek beállítva (nincs FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'A piaci adatok nincsenek beállítva (nincs FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errMarketUnreachable => 'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
-  String get errMarketRateLimited =>
-      'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
+  String get errMarketRateLimited => 'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +372,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
+  String get errMarketBadResponse => 'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +472,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get aiRegenerate => 'Újragenerálás';
 
   @override
-  String get aiGenerating =>
-      'Az elemzés készül… ez egy-két percet is igénybe vehet.';
+  String get aiGenerating => 'Az elemzés készül… ez egy-két percet is igénybe vehet.';
 
   @override
   String get aiSources => 'Források';
@@ -504,12 +487,10 @@ class AppLocalizationsHu extends AppLocalizations {
       'AI által készített elemzés nyilvános adatok és friss hírek alapján. Hibákat tartalmazhat vagy elavult lehet, és nem minősül befektetési tanácsadásnak.';
 
   @override
-  String get errAiNotConfigured =>
-      'Az AI-elemzés nincs beállítva (nincs ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Az AI-elemzés nincs beállítva (nincs ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Az AI-szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errAiUnreachable => 'Az AI-szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
   String errAiHttp(String status) {
@@ -517,12 +498,10 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Az AI-szolgáltatás nem vállalta ennek a részvénynek az elemzését.';
+  String get errAiRefused => 'Az AI-szolgáltatás nem vállalta ennek a részvénynek az elemzését.';
 
   @override
-  String get errAiBadResponse =>
-      'Váratlan válasz érkezett az AI-szolgáltatástól.';
+  String get errAiBadResponse => 'Váratlan válasz érkezett az AI-szolgáltatástól.';
 
   @override
   String get sectionChart => 'Árfolyamgrafikon';
@@ -543,8 +522,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get rangeFiveYears => '5É';
 
   @override
-  String get chartUnavailable =>
-      'Az árfolyamtörténet nem érhető el a jelenlegi adatforrásból.';
+  String get chartUnavailable => 'Az árfolyamtörténet nem érhető el a jelenlegi adatforrásból.';
 
   @override
   String get sectionStatements => 'Pénzügyi kimutatások (éves)';
@@ -571,8 +549,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Működési cash flow';
 
   @override
-  String get statementsUnavailable =>
-      'Ehhez a részvényhez nem érhetők el közzétett pénzügyi kimutatások.';
+  String get statementsUnavailable => 'Ehhez a részvényhez nem érhetők el közzétett pénzügyi kimutatások.';
 
   @override
   String get launchAtLogin => 'Indítás bejelentkezéskor';
@@ -581,8 +558,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get hotkeyLabel => 'Globális gyorsbillentyű';
 
   @override
-  String get hotkeyRecordHint =>
-      'Kattints ide, majd nyomd le az új billentyűkombinációt';
+  String get hotkeyRecordHint => 'Kattints ide, majd nyomd le az új billentyűkombinációt';
 
   @override
   String get hotkeyReset => 'Alapértelmezés visszaállítása';
@@ -603,6 +579,21 @@ class AppLocalizationsHu extends AppLocalizations {
   String get removeFromFavorites => 'Eltávolítás a kedvencek közül';
 
   @override
-  String get noFavorites =>
-      'Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.';
+  String get noFavorites => 'Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

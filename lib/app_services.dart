@@ -7,6 +7,7 @@ import 'core/locale_controller.dart';
 import 'features/analysis/claude_stock_analyst.dart';
 import 'features/analysis/report_store.dart';
 import 'features/capture/capture_service.dart';
+import 'features/fx/fx_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
@@ -25,7 +26,8 @@ class AppServices {
     required this.preferences,
     required this.desktop,
     required this.reports,
-  });
+    FxService? fx,
+  }) : fx = fx ?? FxService();
 
   factory AppServices.fromConfig(
     AppConfig config, {
@@ -53,6 +55,17 @@ class AppServices {
   final AppPreferences preferences;
   final DesktopIntegration desktop;
   final ReportStore reports;
+  final FxService fx;
+
+  /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).
+  String? displayCurrency(Locale locale) {
+    final pref = preferences.displayCurrency;
+    if (pref == AppPreferences.currencyUnset) {
+      final device = WidgetsBinding.instance.platformDispatcher.locale;
+      return defaultCurrencyFor(countryCode: device.countryCode, languageCode: locale.languageCode);
+    }
+    return (pref == null || pref.isEmpty) ? null : pref;
+  }
 
   static AppServices of(BuildContext context) {
     final scope = context.dependOnInheritedWidgetOfExactType<AppServicesScope>();

@@ -354,32 +354,26 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
+  String get errRecognitionRefused => 'Služba rozpoznávání nedokázala tento obrázek zpracovat.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
+  String get errRecognitionTruncated => 'Odpověď služby rozpoznávání byla zkrácena. Zkuste to znovu.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočekávaná odpověď služby rozpoznávání.';
+  String get errRecognitionBadResponse => 'Neočekávaná odpověď služby rozpoznávání.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávání vrátila prázdnou odpověď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávání vrátila prázdnou odpověď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Tržní data nejsou nastavena (chybí FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodařilo se připojit ke službě tržních dat. Zkontrolujte připojení k internetu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
+  String get errMarketRateLimited => 'Příliš mnoho požadavků na službu tržních dat. Počkejte prosím minutu.';
 
   @override
   String errMarketHttp(String status) {
@@ -502,12 +496,10 @@ class AppLocalizationsCs extends AppLocalizations {
       'Analýza vygenerovaná AI na základě veřejných dat a aktuálních zpráv. Může obsahovat chyby nebo být zastaralá a není investičním doporučením.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI analýza není nastavena (chybí ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI analýza není nastavena (chybí ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Nepodařilo se připojit ke službě AI. Zkontrolujte připojení k internetu.';
+  String get errAiUnreachable => 'Nepodařilo se připojit ke službě AI. Zkontrolujte připojení k internetu.';
 
   @override
   String errAiHttp(String status) {
@@ -539,8 +531,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get rangeFiveYears => '5L';
 
   @override
-  String get chartUnavailable =>
-      'Historie cen není v aktuálním zdroji dat k dispozici.';
+  String get chartUnavailable => 'Historie cen není v aktuálním zdroji dat k dispozici.';
 
   @override
   String get sectionStatements => 'Finanční výkazy (roční)';
@@ -567,8 +558,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get labelOperatingCashFlow => 'Provozní peněžní tok';
 
   @override
-  String get statementsUnavailable =>
-      'Pro tuto akcii nejsou k dispozici vykázané finanční výkazy.';
+  String get statementsUnavailable => 'Pro tuto akcii nejsou k dispozici vykázané finanční výkazy.';
 
   @override
   String get launchAtLogin => 'Spustit při přihlášení';
@@ -577,8 +567,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get hotkeyLabel => 'Globální zkratka';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klikněte sem a poté stiskněte novou kombinaci kláves';
+  String get hotkeyRecordHint => 'Klikněte sem a poté stiskněte novou kombinaci kláves';
 
   @override
   String get hotkeyReset => 'Obnovit výchozí';
@@ -599,6 +588,21 @@ class AppLocalizationsCs extends AppLocalizations {
   String get removeFromFavorites => 'Odebrat z oblíbených';
 
   @override
-  String get noFavorites =>
-      'Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji.';
+  String get noFavorites => 'Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

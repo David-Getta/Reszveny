@@ -13,8 +13,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Photographiez une action et apprenez tout sur elle.';
+  String get homeTagline => 'Photographiez une action et apprenez tout sur elle.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get errorGeneric => 'Une erreur s\'est produite.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Cette section n\'a pas pu être chargée.';
+  String get errorSectionUnavailable => 'Cette section n\'a pas pu être chargée.';
 
   @override
   String get notAvailable => 'n/d';
@@ -308,12 +306,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analystes',
-      one: '1 analyste',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analystes', one: '1 analyste');
     return '$_temp0';
   }
 
@@ -354,24 +347,19 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Le service de reconnaissance n\'a pas pu traiter cette image.';
+  String get errRecognitionRefused => 'Le service de reconnaissance n\'a pas pu traiter cette image.';
 
   @override
-  String get errRecognitionTruncated =>
-      'La réponse de la reconnaissance a été tronquée. Veuillez réessayer.';
+  String get errRecognitionTruncated => 'La réponse de la reconnaissance a été tronquée. Veuillez réessayer.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Réponse inattendue du service de reconnaissance.';
+  String get errRecognitionBadResponse => 'Réponse inattendue du service de reconnaissance.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Le service de reconnaissance a renvoyé une réponse vide.';
+  String get errRecognitionEmpty => 'Le service de reconnaissance a renvoyé une réponse vide.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Les données de marché ne sont pas configurées (FINNHUB_API_KEY manquante).';
+  String get errMissingFinnhubKey => 'Les données de marché ne sont pas configurées (FINNHUB_API_KEY manquante).';
 
   @override
   String get errMarketUnreachable =>
@@ -387,8 +375,7 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Réponse inattendue du service de données de marché.';
+  String get errMarketBadResponse => 'Réponse inattendue du service de données de marché.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +475,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get aiRegenerate => 'Régénérer';
 
   @override
-  String get aiGenerating =>
-      'Préparation de l’analyse… cela peut prendre une à deux minutes.';
+  String get aiGenerating => 'Préparation de l’analyse… cela peut prendre une à deux minutes.';
 
   @override
   String get aiSources => 'Sources';
@@ -504,12 +490,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'Analyse générée par IA à partir de données publiques et d’actualités récentes. Elle peut contenir des erreurs ou être obsolète et ne constitue pas un conseil en investissement.';
 
   @override
-  String get errAiNotConfigured =>
-      'L’analyse IA n’est pas configurée (ANTHROPIC_API_KEY manquante).';
+  String get errAiNotConfigured => 'L’analyse IA n’est pas configurée (ANTHROPIC_API_KEY manquante).';
 
   @override
-  String get errAiUnreachable =>
-      'Impossible de joindre le service d’IA. Vérifiez votre connexion internet.';
+  String get errAiUnreachable => 'Impossible de joindre le service d’IA. Vérifiez votre connexion internet.';
 
   @override
   String errAiHttp(String status) {
@@ -517,8 +501,7 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Le service d’IA a refusé d’analyser cette action.';
+  String get errAiRefused => 'Le service d’IA a refusé d’analyser cette action.';
 
   @override
   String get errAiBadResponse => 'Réponse inattendue du service d’IA.';
@@ -542,8 +525,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable =>
-      'L’historique des cours n’est pas disponible auprès de la source de données actuelle.';
+  String get chartUnavailable => 'L’historique des cours n’est pas disponible auprès de la source de données actuelle.';
 
   @override
   String get sectionStatements => 'États financiers (annuels)';
@@ -570,8 +552,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flux de trésorerie d’exploitation';
 
   @override
-  String get statementsUnavailable =>
-      'Aucun état financier publié n’est disponible pour cette action.';
+  String get statementsUnavailable => 'Aucun état financier publié n’est disponible pour cette action.';
 
   @override
   String get launchAtLogin => 'Lancer à l’ouverture de session';
@@ -580,8 +561,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hotkeyLabel => 'Raccourci global';
 
   @override
-  String get hotkeyRecordHint =>
-      'Cliquez ici, puis appuyez sur la nouvelle combinaison de touches';
+  String get hotkeyRecordHint => 'Cliquez ici, puis appuyez sur la nouvelle combinaison de touches';
 
   @override
   String get hotkeyReset => 'Rétablir la valeur par défaut';
@@ -590,8 +570,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get pasteImage => 'Coller l’image du presse-papiers';
 
   @override
-  String get errClipboardNoImage =>
-      'Le presse-papiers ne contient aucune image.';
+  String get errClipboardNoImage => 'Le presse-papiers ne contient aucune image.';
 
   @override
   String get favorites => 'Favoris';
@@ -603,6 +582,21 @@ class AppLocalizationsFr extends AppLocalizations {
   String get removeFromFavorites => 'Retirer des favoris';
 
   @override
-  String get noFavorites =>
-      'Aucun favori pour l’instant. Appuyez sur l’étoile d’une action pour l’ajouter.';
+  String get noFavorites => 'Aucun favori pour l’instant. Appuyez sur l’étoile d’une action pour l’ajouter.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

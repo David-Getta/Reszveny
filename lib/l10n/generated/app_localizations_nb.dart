@@ -306,12 +306,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analytikere',
-      one: '1 analytiker',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytikere', one: '1 analytiker');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsNb extends AppLocalizations {
       'Bildegjenkjenning er ikke konfigurert (ingen ANTHROPIC_API_KEY). Skriv inn tickeren manuelt.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Kunne ikke nå gjenkjenningstjenesten. Sjekk internettforbindelsen din.';
+  String get errRecognitionUnreachable => 'Kunne ikke nå gjenkjenningstjenesten. Sjekk internettforbindelsen din.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Gjenkjenningstjenesten kunne ikke behandle dette bildet.';
+  String get errRecognitionRefused => 'Gjenkjenningstjenesten kunne ikke behandle dette bildet.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Svaret fra gjenkjenningstjenesten ble avbrutt. Prøv igjen.';
+  String get errRecognitionTruncated => 'Svaret fra gjenkjenningstjenesten ble avbrutt. Prøv igjen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Uventet svar fra gjenkjenningstjenesten.';
+  String get errRecognitionBadResponse => 'Uventet svar fra gjenkjenningstjenesten.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Gjenkjenningstjenesten returnerte et tomt svar.';
+  String get errRecognitionEmpty => 'Gjenkjenningstjenesten returnerte et tomt svar.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markedsdata er ikke konfigurert (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markedsdata er ikke konfigurert (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Kunne ikke nå markedsdatatjenesten. Sjekk internettforbindelsen din.';
+  String get errMarketUnreachable => 'Kunne ikke nå markedsdatatjenesten. Sjekk internettforbindelsen din.';
 
   @override
-  String get errMarketRateLimited =>
-      'For mange forespørsler til markedsdatatjenesten. Vent et minutt.';
+  String get errMarketRateLimited => 'For mange forespørsler til markedsdatatjenesten. Vent et minutt.';
 
   @override
   String errMarketHttp(String status) {
@@ -485,8 +472,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get aiRegenerate => 'Generer på nytt';
 
   @override
-  String get aiGenerating =>
-      'Analysen forberedes… det kan ta et minutt eller to.';
+  String get aiGenerating => 'Analysen forberedes… det kan ta et minutt eller to.';
 
   @override
   String get aiSources => 'Kilder';
@@ -501,12 +487,10 @@ class AppLocalizationsNb extends AppLocalizations {
       'AI-generert analyse basert på offentlige data og aktuelle nyheter. Den kan inneholde feil eller være utdatert, og er ikke investeringsråd.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI-analyse er ikke konfigurert (ingen ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI-analyse er ikke konfigurert (ingen ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Kunne ikke nå AI-tjenesten. Sjekk internettforbindelsen din.';
+  String get errAiUnreachable => 'Kunne ikke nå AI-tjenesten. Sjekk internettforbindelsen din.';
 
   @override
   String errAiHttp(String status) {
@@ -538,8 +522,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get rangeFiveYears => '5Å';
 
   @override
-  String get chartUnavailable =>
-      'Kurshistorikk er ikke tilgjengelig fra den gjeldende datakilden.';
+  String get chartUnavailable => 'Kurshistorikk er ikke tilgjengelig fra den gjeldende datakilden.';
 
   @override
   String get sectionStatements => 'Regnskap (årlig)';
@@ -566,8 +549,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get labelOperatingCashFlow => 'Kontantstrøm fra drift';
 
   @override
-  String get statementsUnavailable =>
-      'Det finnes ingen rapporterte regnskaper for denne aksjen.';
+  String get statementsUnavailable => 'Det finnes ingen rapporterte regnskaper for denne aksjen.';
 
   @override
   String get launchAtLogin => 'Start ved innlogging';
@@ -576,8 +558,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get hotkeyLabel => 'Global hurtigtast';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klikk her, og trykk deretter den nye tastekombinasjonen';
+  String get hotkeyRecordHint => 'Klikk her, og trykk deretter den nye tastekombinasjonen';
 
   @override
   String get hotkeyReset => 'Tilbakestill til standard';
@@ -598,6 +579,21 @@ class AppLocalizationsNb extends AppLocalizations {
   String get removeFromFavorites => 'Fjern fra favoritter';
 
   @override
-  String get noFavorites =>
-      'Ingen favoritter ennå. Trykk på stjernen ved en aksje for å legge den til.';
+  String get noFavorites => 'Ingen favoritter ennå. Trykk på stjernen ved en aksje for å legge den til.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

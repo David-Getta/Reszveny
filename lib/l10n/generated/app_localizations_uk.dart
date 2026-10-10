@@ -354,32 +354,26 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -503,12 +496,10 @@ class AppLocalizationsUk extends AppLocalizations {
       'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
 
   @override
-  String get errAiNotConfigured =>
-      'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
 
   @override
   String errAiHttp(String status) {
@@ -540,8 +531,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get rangeFiveYears => '5Р';
 
   @override
-  String get chartUnavailable =>
-      'Історія цін недоступна в поточному джерелі даних.';
+  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
 
   @override
   String get sectionStatements => 'Фінансова звітність (річна)';
@@ -568,8 +558,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операційний грошовий потік';
 
   @override
-  String get statementsUnavailable =>
-      'Опублікована фінансова звітність для цієї акції недоступна.';
+  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
 
   @override
   String get launchAtLogin => 'Запускати під час входу в систему';
@@ -578,8 +567,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hotkeyLabel => 'Глобальне сполучення клавіш';
 
   @override
-  String get hotkeyRecordHint =>
-      'Натисніть тут, а потім натисніть нове сполучення клавіш';
+  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
 
   @override
   String get hotkeyReset => 'Скинути до типового';
@@ -600,6 +588,21 @@ class AppLocalizationsUk extends AppLocalizations {
   String get removeFromFavorites => 'Видалити з обраного';
 
   @override
-  String get noFavorites =>
-      'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+  String get noFavorites => 'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

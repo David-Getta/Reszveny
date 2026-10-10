@@ -54,8 +54,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noCandidatesTitle => '銘柄を認識できませんでした';
 
   @override
-  String get noCandidatesBody =>
-      'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
+  String get noCandidatesBody => 'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
 
   @override
   String get whatWeSaw => '認識した内容';
@@ -81,8 +80,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about => 'このアプリについて';
 
   @override
-  String get disclaimer =>
-      'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
+  String get disclaimer => 'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
 
   @override
   String dataSource(String source) {
@@ -305,12 +303,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'アナリスト$count名',
-      one: 'アナリスト1名',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'アナリスト$count名', one: 'アナリスト1名');
     return '$_temp0';
   }
 
@@ -338,12 +331,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recognitionRawText => '画像から読み取ったテキスト';
 
   @override
-  String get errMissingAnthropicKey =>
-      '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
+  String get errMissingAnthropicKey => '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
 
   @override
-  String get errRecognitionUnreachable =>
-      '認識サービスに接続できませんでした。インターネット接続を確認してください。';
+  String get errRecognitionUnreachable => '認識サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errRecognitionHttp(String status) {
@@ -467,8 +458,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、注目ポイント。';
+  String get aiIntro => 'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、注目ポイント。';
 
   @override
   String get aiGenerate => '分析を生成';
@@ -488,8 +478,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer =>
-      '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
+  String get aiDisclaimer => '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
 
   @override
   String get errAiNotConfigured => 'AI 分析が設定されていません（ANTHROPIC_API_KEY がありません）。';
@@ -585,4 +574,20 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noFavorites => 'お気に入りはまだありません。銘柄の星をタップして追加してください。';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }

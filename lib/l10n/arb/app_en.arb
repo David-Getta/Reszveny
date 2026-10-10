@@ -295,5 +295,32 @@
   "favorites": "Favorites",
   "addToFavorites": "Add to favorites",
   "removeFromFavorites": "Remove from favorites",
-  "noFavorites": "No favorites yet. Tap the star on a stock to add it."
+  "noFavorites": "No favorites yet. Tap the star on a stock to add it.",
+  "displayCurrency": "Display currency",
+  "displayCurrencyNone": "Stock’s own currency only",
+  "labelConverted": "≈ in {currency}",
+  "@labelConverted": {
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "fxRateNote": "Rate: 1 {from} = {rate} {to} (ECB, {date})",
+  "@fxRateNote": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "rate": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

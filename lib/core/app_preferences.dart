@@ -10,13 +10,17 @@ class AppPreferences extends ChangeNotifier {
     List<String> recent = const [],
     List<String> favorites = const [],
     this.hotkeyJson,
+    this.displayCurrency,
   }) : _recent = List.of(recent),
-       _favorites = List.of(favorites);
+       _favorites = List.of(favorites) {
+    displayCurrency ??= currencyUnset;
+  }
 
   static const _themeKey = 'theme_mode';
   static const _recentKey = 'recent_symbols';
   static const _hotkeyKey = 'global_hotkey';
   static const _favoritesKey = 'favorite_symbols';
+  static const _currencyKey = 'display_currency';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -28,6 +32,10 @@ class AppPreferences extends ChangeNotifier {
   final List<String> _favorites;
   List<String> get favorites => List.unmodifiable(_favorites);
   bool isFavorite(String symbol) => _favorites.contains(symbol.toUpperCase());
+
+  /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
+  /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
+  String? displayCurrency;
 
   /// A felhasználó által átállított globális gyorsbillentyű (hotkey_manager
   /// JSON-ja), vagy `null` az alapértelmezetthez.
@@ -43,6 +51,7 @@ class AppPreferences extends ChangeNotifier {
         recent: prefs.getStringList(_recentKey) ?? const [],
         favorites: prefs.getStringList(_favoritesKey) ?? const [],
         hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
+        displayCurrency: prefs.getString(_currencyKey) ?? currencyUnset,
       );
     } catch (_) {
       return AppPreferences();
@@ -64,6 +73,16 @@ class AppPreferences extends ChangeNotifier {
     if (_recent.length > maxRecent) _recent = _recent.sublist(0, maxRecent);
     notifyListeners();
     await _save((p) => p.setStringList(_recentKey, _recent));
+  }
+
+  /// Jelző: a felhasználó még nem választott; ilyenkor a rendszer nyelvéből
+  /// származtatjuk. Az üres sztring = „csak a saját pénznem”.
+  static const String currencyUnset = '__unset__';
+
+  Future<void> setDisplayCurrency(String? code) async {
+    displayCurrency = code ?? '';
+    notifyListeners();
+    await _save((p) => p.setString(_currencyKey, displayCurrency!));
   }
 
   Future<void> toggleFavorite(String symbol) async {

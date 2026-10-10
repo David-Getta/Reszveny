@@ -13,8 +13,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Fotonen saham lan ngertenana kabeh babagan saham iku.';
+  String get homeTagline => 'Fotonen saham lan ngertenana kabeh babagan saham iku.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analis',
-      one: '1 analis',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
     return '$_temp0';
   }
 
@@ -353,32 +347,26 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Layanan pangenalan ora bisa ngolah gambar iki.';
+  String get errRecognitionRefused => 'Layanan pangenalan ora bisa ngolah gambar iki.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Respons pangenalan kepunggel. Mangga jajal maneh.';
+  String get errRecognitionTruncated => 'Respons pangenalan kepunggel. Mangga jajal maneh.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Respons sing ora dikarepake saka layanan pangenalan.';
+  String get errRecognitionBadResponse => 'Respons sing ora dikarepake saka layanan pangenalan.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Layanan pangenalan mbalekake respons kosong.';
+  String get errRecognitionEmpty => 'Layanan pangenalan mbalekake respons kosong.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data pasar durung disetel (ora ana FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data pasar durung disetel (ora ana FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Ora bisa nyambung menyang layanan data pasar. Priksa sambungan internet sampeyan.';
 
   @override
-  String get errMarketRateLimited =>
-      'Kakehan panjalukan menyang layanan data pasar. Mangga ngenteni sak menit.';
+  String get errMarketRateLimited => 'Kakehan panjalukan menyang layanan data pasar. Mangga ngenteni sak menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -386,8 +374,7 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Respons sing ora dikarepake saka layanan data pasar.';
+  String get errMarketBadResponse => 'Respons sing ora dikarepake saka layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -487,8 +474,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get aiRegenerate => 'Gawe maneh';
 
   @override
-  String get aiGenerating =>
-      'Nyiapake analisis… iki bisa mbutuhake wektu siji utawa rong menit.';
+  String get aiGenerating => 'Nyiapake analisis… iki bisa mbutuhake wektu siji utawa rong menit.';
 
   @override
   String get aiSources => 'Sumber';
@@ -503,12 +489,10 @@ class AppLocalizationsJv extends AppLocalizations {
       'Analisis sing digawe dening AI adhedhasar data umum lan warta paling anyar. Bisa uga ngemot kaluputan utawa wis ora anyar, lan dudu saran investasi.';
 
   @override
-  String get errAiNotConfigured =>
-      'Analisis AI durung disetel (ora ana ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Analisis AI durung disetel (ora ana ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Ora bisa nyambung menyang layanan AI. Priksa sambungan internet sampeyan.';
+  String get errAiUnreachable => 'Ora bisa nyambung menyang layanan AI. Priksa sambungan internet sampeyan.';
 
   @override
   String errAiHttp(String status) {
@@ -540,8 +524,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get rangeFiveYears => '5T';
 
   @override
-  String get chartUnavailable =>
-      'Riwayat rega ora kasedhiya saka sumber data saiki.';
+  String get chartUnavailable => 'Riwayat rega ora kasedhiya saka sumber data saiki.';
 
   @override
   String get sectionStatements => 'Laporan keuangan (taunan)';
@@ -568,8 +551,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get labelOperatingCashFlow => 'Arus kas operasi';
 
   @override
-  String get statementsUnavailable =>
-      'Laporan keuangan sing dilaporake ora kasedhiya kanggo saham iki.';
+  String get statementsUnavailable => 'Laporan keuangan sing dilaporake ora kasedhiya kanggo saham iki.';
 
   @override
   String get launchAtLogin => 'Bukak nalika mlebu';
@@ -578,8 +560,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get hotkeyLabel => 'Trabasan global';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klik ing kene, banjur tekan kombinasi tombol sing anyar';
+  String get hotkeyRecordHint => 'Klik ing kene, banjur tekan kombinasi tombol sing anyar';
 
   @override
   String get hotkeyReset => 'Balekake menyang standar';
@@ -600,6 +581,21 @@ class AppLocalizationsJv extends AppLocalizations {
   String get removeFromFavorites => 'Busak saka favorit';
 
   @override
-  String get noFavorites =>
-      'Durung ana favorit. Tutul lintang ing saham kanggo nambahake.';
+  String get noFavorites => 'Durung ana favorit. Tutul lintang ing saham kanggo nambahake.';
+
+  @override
+  String get displayCurrency => 'Display currency';
+
+  @override
+  String get displayCurrencyNone => 'Stock’s own currency only';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
 }
