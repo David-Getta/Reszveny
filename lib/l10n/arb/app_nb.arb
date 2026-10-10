@@ -176,5 +176,9 @@
   "favorites": "Favoritter",
   "addToFavorites": "Legg til i favoritter",
   "removeFromFavorites": "Fjern fra favoritter",
-  "noFavorites": "Ingen favoritter ennå. Trykk på stjernen ved en aksje for å legge den til."
+  "noFavorites": "Ingen favoritter ennå. Trykk på stjernen ved en aksje for å legge den til.",
+  "displayCurrency": "Visningsvaluta",
+  "displayCurrencyNone": "Kun aksjens egen valuta",
+  "labelConverted": "≈ i {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ESB, {date})"
 }

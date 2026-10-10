@@ -176,5 +176,9 @@
   "favorites": "Favoris",
   "addToFavorites": "Ajouter aux favoris",
   "removeFromFavorites": "Retirer des favoris",
-  "noFavorites": "Aucun favori pour l’instant. Appuyez sur l’étoile d’une action pour l’ajouter."
+  "noFavorites": "Aucun favori pour l’instant. Appuyez sur l’étoile d’une action pour l’ajouter.",
+  "displayCurrency": "Devise d’affichage",
+  "displayCurrencyNone": "Devise de l’action uniquement",
+  "labelConverted": "≈ en {currency}",
+  "fxRateNote": "Taux : 1 {from} = {rate} {to} (BCE, {date})"
 }

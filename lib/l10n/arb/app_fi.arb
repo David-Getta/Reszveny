@@ -176,5 +176,9 @@
   "favorites": "Suosikit",
   "addToFavorites": "Lisää suosikkeihin",
   "removeFromFavorites": "Poista suosikeista",
-  "noFavorites": "Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen."
+  "noFavorites": "Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.",
+  "displayCurrency": "Näyttövaluutta",
+  "displayCurrencyNone": "Vain osakkeen oma valuutta",
+  "labelConverted": "≈ valuutassa {currency}",
+  "fxRateNote": "Kurssi: 1 {from} = {rate} {to} (EKP, {date})"
 }

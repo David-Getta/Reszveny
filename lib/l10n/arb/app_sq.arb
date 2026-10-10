@@ -176,5 +176,9 @@
   "favorites": "Të preferuarat",
   "addToFavorites": "Shto te të preferuarat",
   "removeFromFavorites": "Hiq nga të preferuarat",
-  "noFavorites": "Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar."
+  "noFavorites": "Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar.",
+  "displayCurrency": "Monedha e shfaqjes",
+  "displayCurrencyNone": "Vetëm monedha e vetë aksionit",
+  "labelConverted": "≈ në {currency}",
+  "fxRateNote": "Kursi: 1 {from} = {rate} {to} (BQE, {date})"
 }

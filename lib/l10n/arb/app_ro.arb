@@ -176,5 +176,9 @@
   "favorites": "Favorite",
   "addToFavorites": "Adaugă la favorite",
   "removeFromFavorites": "Elimină din favorite",
-  "noFavorites": "Nu există favorite încă. Atinge steluța unei acțiuni pentru a o adăuga."
+  "noFavorites": "Nu există favorite încă. Atinge steluța unei acțiuni pentru a o adăuga.",
+  "displayCurrency": "Monedă de afișare",
+  "displayCurrencyNone": "Doar moneda proprie a acțiunii",
+  "labelConverted": "≈ în {currency}",
+  "fxRateNote": "Curs: 1 {from} = {rate} {to} (BCE, {date})"
 }

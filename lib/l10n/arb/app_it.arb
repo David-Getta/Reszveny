@@ -176,5 +176,9 @@
   "favorites": "Preferiti",
   "addToFavorites": "Aggiungi ai preferiti",
   "removeFromFavorites": "Rimuovi dai preferiti",
-  "noFavorites": "Nessun preferito. Tocca la stella di un’azione per aggiungerla."
+  "noFavorites": "Nessun preferito. Tocca la stella di un’azione per aggiungerla.",
+  "displayCurrency": "Valuta di visualizzazione",
+  "displayCurrencyNone": "Solo la valuta dell’azione",
+  "labelConverted": "≈ in {currency}",
+  "fxRateNote": "Cambio: 1 {from} = {rate} {to} (BCE, {date})"
 }

@@ -176,5 +176,9 @@
   "favorites": "Любими",
   "addToFavorites": "Добави към любими",
   "removeFromFavorites": "Премахни от любими",
-  "noFavorites": "Още няма любими. Докоснете звездата на акция, за да я добавите."
+  "noFavorites": "Още няма любими. Докоснете звездата на акция, за да я добавите.",
+  "displayCurrency": "Валута за показване",
+  "displayCurrencyNone": "Само собствената валута на акцията",
+  "labelConverted": "≈ в {currency}",
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЕЦБ, {date})"
 }

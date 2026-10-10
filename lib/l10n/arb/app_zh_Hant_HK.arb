@@ -176,5 +176,9 @@
   "favorites": "收藏",
   "addToFavorites": "加入收藏",
   "removeFromFavorites": "從收藏中移除",
-  "noFavorites": "暫時未有收藏。點一下股票上的星星即可加入。"
+  "noFavorites": "暫時未有收藏。點一下股票上的星星即可加入。",
+  "displayCurrency": "顯示貨幣",
+  "displayCurrencyNone": "只顯示股票本身貨幣",
+  "labelConverted": "≈ 折合 {currency}",
+  "fxRateNote": "匯率：1 {from} = {rate} {to}（歐洲央行，{date}）"
 }

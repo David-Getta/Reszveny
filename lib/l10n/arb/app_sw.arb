@@ -176,5 +176,9 @@
   "favorites": "Vipendwa",
   "addToFavorites": "Ongeza kwenye vipendwa",
   "removeFromFavorites": "Ondoa kwenye vipendwa",
-  "noFavorites": "Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza."
+  "noFavorites": "Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.",
+  "displayCurrency": "Sarafu ya kuonyesha",
+  "displayCurrencyNone": "Sarafu ya hisa yenyewe pekee",
+  "labelConverted": "≈ kwa {currency}",
+  "fxRateNote": "Kiwango: 1 {from} = {rate} {to} (ECB, {date})"
 }

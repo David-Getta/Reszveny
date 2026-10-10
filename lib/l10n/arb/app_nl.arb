@@ -176,5 +176,9 @@
   "favorites": "Favorieten",
   "addToFavorites": "Toevoegen aan favorieten",
   "removeFromFavorites": "Verwijderen uit favorieten",
-  "noFavorites": "Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen."
+  "noFavorites": "Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.",
+  "displayCurrency": "Weergavevaluta",
+  "displayCurrencyNone": "Alleen de eigen valuta van het aandeel",
+  "labelConverted": "≈ in {currency}",
+  "fxRateNote": "Koers: 1 {from} = {rate} {to} (ECB, {date})"
 }

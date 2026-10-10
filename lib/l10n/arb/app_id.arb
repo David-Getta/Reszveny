@@ -176,5 +176,9 @@
   "favorites": "Favorit",
   "addToFavorites": "Tambahkan ke favorit",
   "removeFromFavorites": "Hapus dari favorit",
-  "noFavorites": "Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya."
+  "noFavorites": "Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.",
+  "displayCurrency": "Mata uang tampilan",
+  "displayCurrencyNone": "Hanya mata uang saham itu sendiri",
+  "labelConverted": "≈ dalam {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})"
 }

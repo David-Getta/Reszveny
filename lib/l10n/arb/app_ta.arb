@@ -176,5 +176,9 @@
   "favorites": "பிடித்தவை",
   "addToFavorites": "பிடித்தவற்றில் சேர்",
   "removeFromFavorites": "பிடித்தவற்றிலிருந்து நீக்கு",
-  "noFavorites": "பிடித்தவை இன்னும் இல்லை. சேர்க்க ஒரு பங்கின் நட்சத்திரத்தைத் தட்டுங்கள்."
+  "noFavorites": "பிடித்தவை இன்னும் இல்லை. சேர்க்க ஒரு பங்கின் நட்சத்திரத்தைத் தட்டுங்கள்.",
+  "displayCurrency": "காட்சி நாணயம்",
+  "displayCurrencyNone": "பங்கின் சொந்த நாணயம் மட்டும்",
+  "labelConverted": "≈ {currency} இல்",
+  "fxRateNote": "விகிதம்: 1 {from} = {rate} {to} (ECB, {date})"
 }

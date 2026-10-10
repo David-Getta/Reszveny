@@ -176,5 +176,9 @@
   "favorites": "Favorits",
   "addToFavorites": "Afegir als favorits",
   "removeFromFavorites": "Eliminar dels favorits",
-  "noFavorites": "Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la."
+  "noFavorites": "Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la.",
+  "displayCurrency": "Divisa de visualització",
+  "displayCurrencyNone": "Només la divisa pròpia de l’acció",
+  "labelConverted": "≈ en {currency}",
+  "fxRateNote": "Tipus de canvi: 1 {from} = {rate} {to} (BCE, {date})"
 }

@@ -176,5 +176,9 @@
   "favorites": "পছন্দের",
   "addToFavorites": "পছন্দের তালিকায় যোগ করুন",
   "removeFromFavorites": "পছন্দের তালিকা থেকে সরান",
-  "noFavorites": "এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।"
+  "noFavorites": "এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।",
+  "displayCurrency": "প্রদর্শনের মুদ্রা",
+  "displayCurrencyNone": "শুধু শেয়ারের নিজস্ব মুদ্রা",
+  "labelConverted": "≈ {currency}-এ",
+  "fxRateNote": "হার: 1 {from} = {rate} {to} (ECB, {date})"
 }

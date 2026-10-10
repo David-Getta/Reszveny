@@ -176,5 +176,9 @@
   "favorites": "Омиљено",
   "addToFavorites": "Додај у омиљене",
   "removeFromFavorites": "Уклони из омиљених",
-  "noFavorites": "Још нема омиљених. Додирните звездицу поред акције да бисте је додали."
+  "noFavorites": "Још нема омиљених. Додирните звездицу поред акције да бисте је додали.",
+  "displayCurrency": "Валута приказа",
+  "displayCurrencyNone": "Само сопствена валута акције",
+  "labelConverted": "≈ у {currency}",
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЕЦБ, {date})"
 }

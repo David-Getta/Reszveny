@@ -176,5 +176,9 @@
   "favorites": "پسندیدہ",
   "addToFavorites": "پسندیدہ میں شامل کریں",
   "removeFromFavorites": "پسندیدہ سے ہٹائیں",
-  "noFavorites": "ابھی تک کوئی پسندیدہ نہیں۔ شامل کرنے کے لیے کسی شیئر پر ستارے کو ٹیپ کریں۔"
+  "noFavorites": "ابھی تک کوئی پسندیدہ نہیں۔ شامل کرنے کے لیے کسی شیئر پر ستارے کو ٹیپ کریں۔",
+  "displayCurrency": "ڈسپلے کرنسی",
+  "displayCurrencyNone": "صرف شیئر کی اپنی کرنسی",
+  "labelConverted": "≈ {currency} میں",
+  "fxRateNote": "شرح: 1 {from} = {rate} {to} (ECB، {date})"
 }

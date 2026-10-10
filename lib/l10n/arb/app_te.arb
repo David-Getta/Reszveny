@@ -176,5 +176,9 @@
   "favorites": "ఇష్టమైనవి",
   "addToFavorites": "ఇష్టమైనవాటికి జోడించండి",
   "removeFromFavorites": "ఇష్టమైనవాటి నుండి తీసివేయండి",
-  "noFavorites": "ఇంకా ఇష్టమైనవి ఏవీ లేవు. జోడించడానికి స్టాక్‌పై ఉన్న నక్షత్రాన్ని నొక్కండి."
+  "noFavorites": "ఇంకా ఇష్టమైనవి ఏవీ లేవు. జోడించడానికి స్టాక్‌పై ఉన్న నక్షత్రాన్ని నొక్కండి.",
+  "displayCurrency": "ప్రదర్శన కరెన్సీ",
+  "displayCurrencyNone": "స్టాక్ సొంత కరెన్సీ మాత్రమే",
+  "labelConverted": "≈ {currency}లో",
+  "fxRateNote": "రేటు: 1 {from} = {rate} {to} (ECB, {date})"
 }

@@ -176,5 +176,9 @@
   "favorites": "Favoriten",
   "addToFavorites": "Zu Favoriten hinzufügen",
   "removeFromFavorites": "Aus Favoriten entfernen",
-  "noFavorites": "Noch keine Favoriten. Tippe auf den Stern einer Aktie, um sie hinzuzufügen."
+  "noFavorites": "Noch keine Favoriten. Tippe auf den Stern einer Aktie, um sie hinzuzufügen.",
+  "displayCurrency": "Anzeigewährung",
+  "displayCurrencyNone": "Nur die Währung der Aktie",
+  "labelConverted": "≈ in {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EZB, {date})"
 }

@@ -176,5 +176,9 @@
   "favorites": "Favoriter",
   "addToFavorites": "Lägg till i favoriter",
   "removeFromFavorites": "Ta bort från favoriter",
-  "noFavorites": "Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den."
+  "noFavorites": "Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den.",
+  "displayCurrency": "Visningsvaluta",
+  "displayCurrencyNone": "Endast aktiens egen valuta",
+  "labelConverted": "≈ i {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})"
 }

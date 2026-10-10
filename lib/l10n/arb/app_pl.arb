@@ -176,5 +176,9 @@
   "favorites": "Ulubione",
   "addToFavorites": "Dodaj do ulubionych",
   "removeFromFavorites": "Usuń z ulubionych",
-  "noFavorites": "Brak ulubionych. Dotknij gwiazdki przy akcji, aby ją dodać."
+  "noFavorites": "Brak ulubionych. Dotknij gwiazdki przy akcji, aby ją dodać.",
+  "displayCurrency": "Waluta wyświetlania",
+  "displayCurrencyNone": "Tylko własna waluta akcji",
+  "labelConverted": "≈ w {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (EBC, {date})"
 }

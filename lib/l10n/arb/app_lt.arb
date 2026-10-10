@@ -176,5 +176,9 @@
   "favorites": "Mėgstamiausi",
   "addToFavorites": "Pridėti į mėgstamiausius",
   "removeFromFavorites": "Pašalinti iš mėgstamiausių",
-  "noFavorites": "Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte."
+  "noFavorites": "Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.",
+  "displayCurrency": "Rodymo valiuta",
+  "displayCurrencyNone": "Tik pačios akcijos valiuta",
+  "labelConverted": "≈ valiuta {currency}",
+  "fxRateNote": "Kursas: 1 {from} = {rate} {to} (ECB, {date})"
 }

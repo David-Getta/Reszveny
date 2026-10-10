@@ -176,5 +176,9 @@
   "favorites": "Favorit",
   "addToFavorites": "Tambahake menyang favorit",
   "removeFromFavorites": "Busak saka favorit",
-  "noFavorites": "Durung ana favorit. Tutul lintang ing saham kanggo nambahake."
+  "noFavorites": "Durung ana favorit. Tutul lintang ing saham kanggo nambahake.",
+  "displayCurrency": "Mata uang tampilan",
+  "displayCurrencyNone": "Mung mata uang saham dhewe",
+  "labelConverted": "≈ ing {currency}",
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})"
 }

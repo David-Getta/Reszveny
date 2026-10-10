@@ -176,5 +176,9 @@
   "favorites": "Oblíbené",
   "addToFavorites": "Přidat do oblíbených",
   "removeFromFavorites": "Odebrat z oblíbených",
-  "noFavorites": "Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji."
+  "noFavorites": "Zatím žádné oblíbené. Klepněte na hvězdičku u akcie a přidejte ji.",
+  "displayCurrency": "Měna zobrazení",
+  "displayCurrencyNone": "Pouze vlastní měna akcie",
+  "labelConverted": "≈ v {currency}",
+  "fxRateNote": "Kurz: 1 {from} = {rate} {to} (ECB, {date})"
 }

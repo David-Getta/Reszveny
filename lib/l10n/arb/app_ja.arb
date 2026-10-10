@@ -176,5 +176,9 @@
   "favorites": "お気に入り",
   "addToFavorites": "お気に入りに追加",
   "removeFromFavorites": "お気に入りから削除",
-  "noFavorites": "お気に入りはまだありません。銘柄の星をタップして追加してください。"
+  "noFavorites": "お気に入りはまだありません。銘柄の星をタップして追加してください。",
+  "displayCurrency": "表示通貨",
+  "displayCurrencyNone": "銘柄の通貨のみ",
+  "labelConverted": "≈ {currency}換算",
+  "fxRateNote": "レート：1 {from} = {rate} {to}（ECB、{date}）"
 }

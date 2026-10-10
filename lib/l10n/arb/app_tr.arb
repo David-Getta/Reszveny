@@ -176,5 +176,9 @@
   "favorites": "Favoriler",
   "addToFavorites": "Favorilere ekle",
   "removeFromFavorites": "Favorilerden kaldır",
-  "noFavorites": "Henüz favori yok. Eklemek için bir hissenin yıldızına dokunun."
+  "noFavorites": "Henüz favori yok. Eklemek için bir hissenin yıldızına dokunun.",
+  "displayCurrency": "Görüntüleme para birimi",
+  "displayCurrencyNone": "Yalnızca hissenin kendi para birimi",
+  "labelConverted": "≈ {currency} olarak",
+  "fxRateNote": "Kur: 1 {from} = {rate} {to} (AMB, {date})"
 }

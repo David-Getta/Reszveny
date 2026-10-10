@@ -176,5 +176,9 @@
   "favorites": "Kedvencek",
   "addToFavorites": "Hozzáadás a kedvencekhez",
   "removeFromFavorites": "Eltávolítás a kedvencek közül",
-  "noFavorites": "Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz."
+  "noFavorites": "Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.",
+  "displayCurrency": "Megjelenítési pénznem",
+  "displayCurrencyNone": "Csak a részvény saját pénzneme",
+  "labelConverted": "≈ átváltva: {currency}",
+  "fxRateNote": "Árfolyam: 1 {from} = {rate} {to} (EKB, {date})"
 }

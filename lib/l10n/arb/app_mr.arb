@@ -176,5 +176,9 @@
   "favorites": "आवडते",
   "addToFavorites": "आवडत्यांमध्ये जोडा",
   "removeFromFavorites": "आवडत्यांमधून काढा",
-  "noFavorites": "अजून कोणतेही आवडते नाहीत. जोडण्यासाठी शेअरवरील तारा टॅप करा."
+  "noFavorites": "अजून कोणतेही आवडते नाहीत. जोडण्यासाठी शेअरवरील तारा टॅप करा.",
+  "displayCurrency": "दर्शवण्याचे चलन",
+  "displayCurrencyNone": "फक्त शेअरचे स्वतःचे चलन",
+  "labelConverted": "≈ {currency} मध्ये",
+  "fxRateNote": "दर: 1 {from} = {rate} {to} (ECB, {date})"
 }

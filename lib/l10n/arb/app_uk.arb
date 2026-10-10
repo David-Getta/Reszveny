@@ -176,5 +176,9 @@
   "favorites": "Обране",
   "addToFavorites": "Додати до обраного",
   "removeFromFavorites": "Видалити з обраного",
-  "noFavorites": "В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її."
+  "noFavorites": "В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.",
+  "displayCurrency": "Валюта відображення",
+  "displayCurrencyNone": "Лише власна валюта акції",
+  "labelConverted": "≈ у {currency}",
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЄЦБ, {date})"
 }

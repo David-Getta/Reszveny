@@ -176,5 +176,9 @@
   "favorites": "收藏",
   "addToFavorites": "添加到收藏",
   "removeFromFavorites": "从收藏中移除",
-  "noFavorites": "还没有收藏。点击股票上的星标即可添加。"
+  "noFavorites": "还没有收藏。点击股票上的星标即可添加。",
+  "displayCurrency": "显示货币",
+  "displayCurrencyNone": "仅显示股票自身货币",
+  "labelConverted": "≈ 折合 {currency}",
+  "fxRateNote": "汇率：1 {from} = {rate} {to}（欧洲央行，{date}）"
 }

@@ -176,5 +176,9 @@
   "favorites": "Favoriti",
   "addToFavorites": "Dodaj u favorite",
   "removeFromFavorites": "Ukloni iz favorita",
-  "noFavorites": "Još nema favorita. Dodirnite zvjezdicu pored dionice da biste je dodali."
+  "noFavorites": "Još nema favorita. Dodirnite zvjezdicu pored dionice da biste je dodali.",
+  "displayCurrency": "Valuta prikaza",
+  "displayCurrencyNone": "Samo vlastita valuta dionice",
+  "labelConverted": "≈ u {currency}",
+  "fxRateNote": "Tečaj: 1 {from} = {rate} {to} (ESB, {date})"
 }

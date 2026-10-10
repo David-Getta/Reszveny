@@ -176,5 +176,9 @@
   "favorites": "Mga Paborito",
   "addToFavorites": "Idagdag sa mga paborito",
   "removeFromFavorites": "Alisin sa mga paborito",
-  "noFavorites": "Wala pang paborito. I-tap ang bituin sa isang stock para idagdag ito."
+  "noFavorites": "Wala pang paborito. I-tap ang bituin sa isang stock para idagdag ito.",
+  "displayCurrency": "Currency na ipapakita",
+  "displayCurrencyNone": "Sariling currency lang ng stock",
+  "labelConverted": "≈ sa {currency}",
+  "fxRateNote": "Rate: 1 {from} = {rate} {to} (ECB, {date})"
 }

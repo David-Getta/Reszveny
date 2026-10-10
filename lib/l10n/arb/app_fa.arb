@@ -176,5 +176,9 @@
   "favorites": "علاقه‌مندی‌ها",
   "addToFavorites": "افزودن به علاقه‌مندی‌ها",
   "removeFromFavorites": "حذف از علاقه‌مندی‌ها",
-  "noFavorites": "هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید."
+  "noFavorites": "هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.",
+  "displayCurrency": "واحد پول نمایش",
+  "displayCurrencyNone": "فقط واحد پول خود سهم",
+  "labelConverted": "≈ به {currency}",
+  "fxRateNote": "نرخ: 1 {from} = {rate} {to} (ECB، {date})"
 }

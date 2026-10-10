@@ -176,5 +176,9 @@
   "favorites": "المفضلة",
   "addToFavorites": "إضافة إلى المفضلة",
   "removeFromFavorites": "إزالة من المفضلة",
-  "noFavorites": "لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته."
+  "noFavorites": "لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.",
+  "displayCurrency": "عملة العرض",
+  "displayCurrencyNone": "عملة السهم الأصلية فقط",
+  "labelConverted": "≈ بعملة {currency}",
+  "fxRateNote": "سعر الصرف: 1 {from} = {rate} {to} (ECB، {date})"
 }

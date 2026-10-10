@@ -176,5 +176,9 @@
   "favorites": "즐겨찾기",
   "addToFavorites": "즐겨찾기에 추가",
   "removeFromFavorites": "즐겨찾기에서 제거",
-  "noFavorites": "아직 즐겨찾기가 없습니다. 종목의 별을 탭하여 추가하세요."
+  "noFavorites": "아직 즐겨찾기가 없습니다. 종목의 별을 탭하여 추가하세요.",
+  "displayCurrency": "표시 통화",
+  "displayCurrencyNone": "종목 통화만 표시",
+  "labelConverted": "≈ {currency} 환산",
+  "fxRateNote": "환율: 1 {from} = {rate} {to} (ECB, {date})"
 }

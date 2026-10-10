@@ -176,5 +176,9 @@
   "favorites": "Yêu thích",
   "addToFavorites": "Thêm vào yêu thích",
   "removeFromFavorites": "Xóa khỏi yêu thích",
-  "noFavorites": "Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm."
+  "noFavorites": "Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.",
+  "displayCurrency": "Tiền tệ hiển thị",
+  "displayCurrencyNone": "Chỉ tiền tệ của cổ phiếu",
+  "labelConverted": "≈ theo {currency}",
+  "fxRateNote": "Tỷ giá: 1 {from} = {rate} {to} (ECB, {date})"
 }

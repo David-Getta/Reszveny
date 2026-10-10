@@ -176,5 +176,9 @@
   "favorites": "Избранное",
   "addToFavorites": "Добавить в избранное",
   "removeFromFavorites": "Удалить из избранного",
-  "noFavorites": "В избранном пока ничего нет. Нажмите на звёздочку рядом с акцией, чтобы добавить её."
+  "noFavorites": "В избранном пока ничего нет. Нажмите на звёздочку рядом с акцией, чтобы добавить её.",
+  "displayCurrency": "Валюта отображения",
+  "displayCurrencyNone": "Только собственная валюта акции",
+  "labelConverted": "≈ в {currency}",
+  "fxRateNote": "Курс: 1 {from} = {rate} {to} (ЕЦБ, {date})"
 }
