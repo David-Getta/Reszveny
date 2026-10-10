@@ -353,25 +353,32 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Сервис за препознавање није могао да обради ову слику.';
+  String get errRecognitionRefused =>
+      'Сервис за препознавање није могао да обради ову слику.';
 
   @override
-  String get errRecognitionTruncated => 'Одговор препознавања је прекинут. Покушајте поново.';
+  String get errRecognitionTruncated =>
+      'Одговор препознавања је прекинут. Покушајте поново.';
 
   @override
-  String get errRecognitionBadResponse => 'Неочекиван одговор сервиса за препознавање.';
+  String get errRecognitionBadResponse =>
+      'Неочекиван одговор сервиса за препознавање.';
 
   @override
-  String get errRecognitionEmpty => 'Сервис за препознавање је вратио празан одговор.';
+  String get errRecognitionEmpty =>
+      'Сервис за препознавање је вратио празан одговор.';
 
   @override
-  String get errMissingFinnhubKey => 'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
+  String get errMarketUnreachable =>
+      'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
 
   @override
-  String get errMarketRateLimited => 'Превише захтева ка сервису тржишних података. Сачекајте минут.';
+  String get errMarketRateLimited =>
+      'Превише захтева ка сервису тржишних података. Сачекајте минут.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +386,8 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Неочекиван одговор сервиса тржишних података.';
+  String get errMarketBadResponse =>
+      'Неочекиван одговор сервиса тржишних података.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +487,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get aiRegenerate => 'Генериши поново';
 
   @override
-  String get aiGenerating => 'Припремамо анализу… ово може потрајати минут или два.';
+  String get aiGenerating =>
+      'Припремамо анализу… ово може потрајати минут или два.';
 
   @override
   String get aiSources => 'Извори';
@@ -494,10 +503,12 @@ class AppLocalizationsSr extends AppLocalizations {
       'Анализа коју је генерисала вештачка интелигенција на основу јавних података и недавних вести. Може садржати грешке или бити застарела и не представља инвестициони савет.';
 
   @override
-  String get errAiNotConfigured => 'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
+  String get errAiUnreachable =>
+      'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +540,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get rangeFiveYears => '5Г';
 
   @override
-  String get chartUnavailable => 'Историја цена није доступна из тренутног извора података.';
+  String get chartUnavailable =>
+      'Историја цена није доступна из тренутног извора података.';
 
   @override
   String get sectionStatements => 'Финансијски извештаји (годишњи)';
@@ -556,7 +568,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Оперативни новчани ток';
 
   @override
-  String get statementsUnavailable => 'Објављени финансијски извештаји нису доступни за ову акцију.';
+  String get statementsUnavailable =>
+      'Објављени финансијски извештаји нису доступни за ову акцију.';
 
   @override
   String get launchAtLogin => 'Покрени при пријављивању';
@@ -565,7 +578,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get hotkeyLabel => 'Глобална пречица';
 
   @override
-  String get hotkeyRecordHint => 'Кликните овде, а затим притисните нову комбинацију тастера';
+  String get hotkeyRecordHint =>
+      'Кликните овде, а затим притисните нову комбинацију тастера';
 
   @override
   String get hotkeyReset => 'Врати на подразумевано';
@@ -586,7 +600,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get removeFromFavorites => 'Уклони из омиљених';
 
   @override
-  String get noFavorites => 'Још нема омиљених. Додирните звездицу поред акције да бисте је додали.';
+  String get noFavorites =>
+      'Још нема омиљених. Додирните звездицу поред акције да бисте је додали.';
 
   @override
   String get displayCurrency => 'Валута приказа';
@@ -633,7 +648,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get updateDownloading => 'Ажурирање се преузима у позадини…';
 
   @override
-  String get updateDownloaded => 'Ажурирање је спремно. Поново покрените апликацију да бисте га инсталирали.';
+  String get updateDownloaded =>
+      'Ажурирање је спремно. Поново покрените апликацију да бисте га инсталирали.';
 
   @override
   String get updateNow => 'Ажурирај';
@@ -642,19 +658,20 @@ class AppLocalizationsSr extends AppLocalizations {
   String get restartNow => 'Поново покрени';
 
   @override
-  String get updatesViaStore => 'Ажурирања стижу аутоматски преко продавнице апликација.';
+  String get updatesViaStore =>
+      'Ажурирања стижу аутоматски преко продавнице апликација.';
 
   @override
   String get updateCheckFailed => 'Није могуће потражити ажурирања.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Претплата';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Пробни';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'Стандард';
 
   @override
   String get planPro => 'Pro';
@@ -666,16 +683,30 @@ class AppLocalizationsSr extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Нема активног плана';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count анализа месечно',
+      few: '$count анализе месечно',
+      one: '$count анализа месечно',
+    );
+    return '$_temp0';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Бесплатни пробни период од $days дана са $count анализа',
+      few: 'Бесплатни пробни период од $days дана са $count анализе',
+      one: 'Бесплатни пробни период од $days дана са $count анализом',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -683,98 +714,111 @@ class AppLocalizationsSr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: 'Преостало је још $days дана пробног периода',
+      few: 'Преостала су још $days дана пробног периода',
+      one: 'Преостао је још $days дан пробног периода',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Ваш бесплатни пробни период је истекао. Изаберите план да бисте наставили са анализама.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return 'Преостало је $remaining од $total анализа у овом периоду';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додатних анализа',
+      few: '$count додатне анализе',
+      one: '$count додатна анализа',
+    );
+    return '$_temp0';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Обнавља се $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Изаберите план';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Тренутни план';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Претплати се';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ месец';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'Потребно вам је више? Купите додатне анализе';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Додатне анализе никада не истичу и користе се након месечне квоте.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Купи';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Врати куповине';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Управљај претплатом';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Хвала! Ваша куповина је активна.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Куповина је у току…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Куповину није било могуће завршити.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Куповина је отказана.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Куповине још нису доступне на овој платформи. Претплатите се на телефону или Mac рачунару; ваш план ће радити на свим уређајима.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Немате више анализа у овом периоду. Надоградите план или купите додатне анализе.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Ваш бесплатни пробни период је истекао. Изаберите план да бисте наставили.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'За AI анализу је потребан активан план.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Прикажи планове';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Потрошња';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Демо наплата: куповине се на овој платформи симулирају.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Најпопуларнији';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Најбоља вредност';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Препознавање фотографија, подаци у реалном времену, графикони, омиљено и сва 44 језика укључени су у сваки план. Квота се односи на AI анализе.';
 }

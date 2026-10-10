@@ -306,7 +306,12 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analis',
+      one: '1 analis',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsId extends AppLocalizations {
       'Pengenalan gambar belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY). Masukkan kode saham secara manual.';
 
   @override
-  String get errRecognitionUnreachable => 'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
+  String get errRecognitionUnreachable =>
+      'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,32 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Layanan pengenalan tidak dapat memproses gambar ini.';
+  String get errRecognitionRefused =>
+      'Layanan pengenalan tidak dapat memproses gambar ini.';
 
   @override
-  String get errRecognitionTruncated => 'Respons pengenalan terpotong. Silakan coba lagi.';
+  String get errRecognitionTruncated =>
+      'Respons pengenalan terpotong. Silakan coba lagi.';
 
   @override
-  String get errRecognitionBadResponse => 'Respons tak terduga dari layanan pengenalan.';
+  String get errRecognitionBadResponse =>
+      'Respons tak terduga dari layanan pengenalan.';
 
   @override
-  String get errRecognitionEmpty => 'Layanan pengenalan mengembalikan respons kosong.';
+  String get errRecognitionEmpty =>
+      'Layanan pengenalan mengembalikan respons kosong.';
 
   @override
-  String get errMissingFinnhubKey => 'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
+  String get errMarketUnreachable =>
+      'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
 
   @override
-  String get errMarketRateLimited => 'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
+  String get errMarketRateLimited =>
+      'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +385,8 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Respons tak terduga dari layanan data pasar.';
+  String get errMarketBadResponse =>
+      'Respons tak terduga dari layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +486,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get aiRegenerate => 'Buat ulang';
 
   @override
-  String get aiGenerating => 'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
+  String get aiGenerating =>
+      'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
 
   @override
   String get aiSources => 'Sumber';
@@ -487,10 +502,12 @@ class AppLocalizationsId extends AppLocalizations {
       'Analisis yang dibuat oleh AI berdasarkan data publik dan berita terbaru. Mungkin berisi kesalahan atau sudah tidak mutakhir, dan bukan merupakan saran investasi.';
 
   @override
-  String get errAiNotConfigured => 'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
+  String get errAiUnreachable =>
+      'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +539,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get rangeFiveYears => '5T';
 
   @override
-  String get chartUnavailable => 'Riwayat harga tidak tersedia dari sumber data saat ini.';
+  String get chartUnavailable =>
+      'Riwayat harga tidak tersedia dari sumber data saat ini.';
 
   @override
   String get sectionStatements => 'Laporan keuangan (tahunan)';
@@ -549,7 +567,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get labelOperatingCashFlow => 'Arus kas operasi';
 
   @override
-  String get statementsUnavailable => 'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
+  String get statementsUnavailable =>
+      'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
 
   @override
   String get launchAtLogin => 'Jalankan saat masuk';
@@ -558,7 +577,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get hotkeyLabel => 'Pintasan global';
 
   @override
-  String get hotkeyRecordHint => 'Klik di sini, lalu tekan kombinasi tombol yang baru';
+  String get hotkeyRecordHint =>
+      'Klik di sini, lalu tekan kombinasi tombol yang baru';
 
   @override
   String get hotkeyReset => 'Setel ulang ke bawaan';
@@ -579,7 +599,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get removeFromFavorites => 'Hapus dari favorit';
 
   @override
-  String get noFavorites => 'Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.';
+  String get noFavorites =>
+      'Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.';
 
   @override
   String get displayCurrency => 'Mata uang tampilan';
@@ -626,7 +647,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get updateDownloading => 'Mengunduh pembaruan di latar belakang…';
 
   @override
-  String get updateDownloaded => 'Pembaruan siap. Mulai ulang untuk memasangnya.';
+  String get updateDownloaded =>
+      'Pembaruan siap. Mulai ulang untuk memasangnya.';
 
   @override
   String get updateNow => 'Perbarui';
@@ -635,16 +657,17 @@ class AppLocalizationsId extends AppLocalizations {
   String get restartNow => 'Mulai ulang';
 
   @override
-  String get updatesViaStore => 'Pembaruan diterima secara otomatis melalui toko aplikasi.';
+  String get updatesViaStore =>
+      'Pembaruan diterima secara otomatis melalui toko aplikasi.';
 
   @override
   String get updateCheckFailed => 'Tidak dapat memeriksa pembaruan.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Langganan';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Uji coba';
 
   @override
   String get planNormal => 'Normal';
@@ -659,16 +682,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Tidak ada paket aktif';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count analisis per bulan';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return 'Uji coba gratis $days hari dengan $count analisis';
   }
 
   @override
@@ -676,98 +699,103 @@ class AppLocalizationsId extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: '$days hari uji coba tersisa',
+      one: '1 hari uji coba tersisa',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Uji coba gratis Anda telah berakhir. Pilih paket untuk terus menganalisis.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return '$remaining dari $total analisis tersisa periode ini';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count analisis tambahan';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Diperpanjang $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Pilih paket';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Paket saat ini';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Berlangganan';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ bulan';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'Butuh lebih banyak? Beli analisis tambahan';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Analisis tambahan tidak pernah kedaluwarsa dan digunakan setelah kuota bulanan Anda habis.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Beli';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Pulihkan pembelian';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Kelola langganan';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Terima kasih! Pembelian Anda sudah aktif.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Pembelian tertunda…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Pembelian tidak dapat diselesaikan.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Pembelian dibatalkan.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Pembelian belum tersedia di platform ini. Berlangganan di ponsel atau Mac Anda; paket Anda akan berfungsi di semua perangkat.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Anda tidak memiliki analisis tersisa untuk periode ini. Tingkatkan paket Anda atau beli analisis tambahan.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Uji coba gratis Anda telah berakhir. Pilih paket untuk melanjutkan.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'Paket aktif diperlukan untuk analisis AI.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Lihat paket';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Penggunaan';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Penagihan demo: pembelian di platform ini hanya simulasi.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Paling populer';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Paling hemat';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.';
 }

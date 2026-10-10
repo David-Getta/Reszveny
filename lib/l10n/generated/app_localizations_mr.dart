@@ -13,7 +13,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'शेअरचा फोटो काढा आणि त्याबद्दल सर्व काही जाणून घ्या.';
+  String get homeTagline =>
+      'शेअरचा फोटो काढा आणि त्याबद्दल सर्व काही जाणून घ्या.';
 
   @override
   String get homeHint =>
@@ -82,7 +83,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get about => 'अ‍ॅपविषयी';
 
   @override
-  String get disclaimer => 'हे अ‍ॅप केवळ माहिती देते आणि हा गुंतवणूक सल्ला नाही. डेटा विलंबित किंवा चुकीचा असू शकतो.';
+  String get disclaimer =>
+      'हे अ‍ॅप केवळ माहिती देते आणि हा गुंतवणूक सल्ला नाही. डेटा विलंबित किंवा चुकीचा असू शकतो.';
 
   @override
   String dataSource(String source) {
@@ -305,7 +307,12 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count विश्लेषक', one: '1 विश्लेषक');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषक',
+      one: '1 विश्लेषक',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +344,8 @@ class AppLocalizationsMr extends AppLocalizations {
       'प्रतिमा ओळख कॉन्फिगर केलेली नाही (ANTHROPIC_API_KEY नाही). टिकर मॅन्युअली टाका.';
 
   @override
-  String get errRecognitionUnreachable => 'ओळख सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
+  String get errRecognitionUnreachable =>
+      'ओळख सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,10 +353,12 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ओळख सेवा ही प्रतिमा प्रोसेस करू शकली नाही.';
+  String get errRecognitionRefused =>
+      'ओळख सेवा ही प्रतिमा प्रोसेस करू शकली नाही.';
 
   @override
-  String get errRecognitionTruncated => 'ओळख प्रतिसाद अपूर्ण राहिला. कृपया पुन्हा प्रयत्न करा.';
+  String get errRecognitionTruncated =>
+      'ओळख प्रतिसाद अपूर्ण राहिला. कृपया पुन्हा प्रयत्न करा.';
 
   @override
   String get errRecognitionBadResponse => 'ओळख सेवेकडून अनपेक्षित प्रतिसाद.';
@@ -357,13 +367,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String get errRecognitionEmpty => 'ओळख सेवेने रिकामा प्रतिसाद परत केला.';
 
   @override
-  String get errMissingFinnhubKey => 'मार्केट डेटा कॉन्फिगर केलेला नाही (FINNHUB_API_KEY नाही).';
+  String get errMissingFinnhubKey =>
+      'मार्केट डेटा कॉन्फिगर केलेला नाही (FINNHUB_API_KEY नाही).';
 
   @override
-  String get errMarketUnreachable => 'मार्केट डेटा सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
+  String get errMarketUnreachable =>
+      'मार्केट डेटा सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
-  String get errMarketRateLimited => 'मार्केट डेटा सेवेला खूप जास्त विनंत्या पाठवल्या गेल्या. कृपया एक मिनिट थांबा.';
+  String get errMarketRateLimited =>
+      'मार्केट डेटा सेवेला खूप जास्त विनंत्या पाठवल्या गेल्या. कृपया एक मिनिट थांबा.';
 
   @override
   String errMarketHttp(String status) {
@@ -371,7 +384,8 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'मार्केट डेटा सेवेकडून अनपेक्षित प्रतिसाद.';
+  String get errMarketBadResponse =>
+      'मार्केट डेटा सेवेकडून अनपेक्षित प्रतिसाद.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,7 +485,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get aiRegenerate => 'पुन्हा तयार करा';
 
   @override
-  String get aiGenerating => 'विश्लेषण तयार होत आहे… यास एक-दोन मिनिटे लागू शकतात.';
+  String get aiGenerating =>
+      'विश्लेषण तयार होत आहे… यास एक-दोन मिनिटे लागू शकतात.';
 
   @override
   String get aiSources => 'स्रोत';
@@ -486,10 +501,12 @@ class AppLocalizationsMr extends AppLocalizations {
       'सार्वजनिक डेटा आणि अलीकडील बातम्यांवर आधारित AI-निर्मित विश्लेषण. यात चुका असू शकतात किंवा ते जुने असू शकते, आणि हा गुंतवणूक सल्ला नाही.';
 
   @override
-  String get errAiNotConfigured => 'AI विश्लेषण कॉन्फिगर केलेले नाही (ANTHROPIC_API_KEY नाही).';
+  String get errAiNotConfigured =>
+      'AI विश्लेषण कॉन्फिगर केलेले नाही (ANTHROPIC_API_KEY नाही).';
 
   @override
-  String get errAiUnreachable => 'AI सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
+  String get errAiUnreachable =>
+      'AI सेवेशी संपर्क होऊ शकला नाही. तुमचे इंटरनेट कनेक्शन तपासा.';
 
   @override
   String errAiHttp(String status) {
@@ -521,7 +538,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'सध्याच्या डेटा स्रोतातून किंमतीचा इतिहास उपलब्ध नाही.';
+  String get chartUnavailable =>
+      'सध्याच्या डेटा स्रोतातून किंमतीचा इतिहास उपलब्ध नाही.';
 
   @override
   String get sectionStatements => 'आर्थिक विवरणपत्रे (वार्षिक)';
@@ -548,7 +566,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get labelOperatingCashFlow => 'ऑपरेटिंग कॅश फ्लो';
 
   @override
-  String get statementsUnavailable => 'या शेअरसाठी नोंदवलेली आर्थिक विवरणपत्रे उपलब्ध नाहीत.';
+  String get statementsUnavailable =>
+      'या शेअरसाठी नोंदवलेली आर्थिक विवरणपत्रे उपलब्ध नाहीत.';
 
   @override
   String get launchAtLogin => 'लॉगइन करताना सुरू करा';
@@ -578,7 +597,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get removeFromFavorites => 'आवडत्यांमधून काढा';
 
   @override
-  String get noFavorites => 'अजून कोणतेही आवडते नाहीत. जोडण्यासाठी शेअरवरील तारा टॅप करा.';
+  String get noFavorites =>
+      'अजून कोणतेही आवडते नाहीत. जोडण्यासाठी शेअरवरील तारा टॅप करा.';
 
   @override
   String get displayCurrency => 'दर्शवण्याचे चलन';
@@ -625,7 +645,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get updateDownloading => 'अपडेट पार्श्वभूमीत डाउनलोड होत आहे…';
 
   @override
-  String get updateDownloaded => 'अपडेट तयार आहे. इंस्टॉल करण्यासाठी रीस्टार्ट करा.';
+  String get updateDownloaded =>
+      'अपडेट तयार आहे. इंस्टॉल करण्यासाठी रीस्टार्ट करा.';
 
   @override
   String get updateNow => 'अपडेट करा';
@@ -640,13 +661,13 @@ class AppLocalizationsMr extends AppLocalizations {
   String get updateCheckFailed => 'अपडेट तपासता आले नाहीत.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'सबस्क्रिप्शन';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'ट्रायल';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'सामान्य';
 
   @override
   String get planPro => 'Pro';
@@ -658,16 +679,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'कोणताही सक्रिय प्लॅन नाही';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return 'दरमहा $count विश्लेषणे';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return '$count विश्लेषणांसह $days दिवसांचे मोफत ट्रायल';
   }
 
   @override
@@ -675,98 +696,103 @@ class AppLocalizationsMr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: 'ट्रायलचे $days दिवस बाकी',
+      one: 'ट्रायलचा 1 दिवस बाकी',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'तुमचे मोफत ट्रायल संपले आहे. विश्लेषण सुरू ठेवण्यासाठी एक प्लॅन निवडा.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return 'या कालावधीत $total पैकी $remaining विश्लेषणे बाकी';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count अतिरिक्त विश्लेषणे';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return '$date रोजी नूतनीकरण';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'प्लॅन निवडा';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'सध्याचा प्लॅन';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'सबस्क्राइब करा';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ महिना';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'अधिक हवे? अतिरिक्त विश्लेषणे खरेदी करा';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'अतिरिक्त विश्लेषणे कधीही संपत नाहीत आणि तुमचा मासिक कोटा संपल्यानंतर वापरली जातात.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'खरेदी करा';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'खरेदी पुनर्संचयित करा';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'सबस्क्रिप्शन व्यवस्थापित करा';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'धन्यवाद! तुमची खरेदी सक्रिय आहे.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'खरेदी प्रलंबित…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'खरेदी पूर्ण होऊ शकली नाही.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'खरेदी रद्द केली.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'या प्लॅटफॉर्मवर खरेदी अजून उपलब्ध नाही. तुमच्या फोन किंवा Mac वर सबस्क्राइब करा; तुमचा प्लॅन प्रत्येक डिव्हाइसवर चालेल.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'या कालावधीसाठी तुमची विश्लेषणे शिल्लक नाहीत. तुमचा प्लॅन अपग्रेड करा किंवा अतिरिक्त विश्लेषणे खरेदी करा.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'तुमचे मोफत ट्रायल संपले आहे. सुरू ठेवण्यासाठी एक प्लॅन निवडा.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'AI विश्लेषणासाठी सक्रिय प्लॅन आवश्यक आहे.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'प्लॅन पहा';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'वापर';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'डेमो बिलिंग: या प्लॅटफॉर्मवर खरेदी सिम्युलेट केली जाते.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'सर्वाधिक लोकप्रिय';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'सर्वोत्तम मूल्य';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'फोटो ओळख, लाइव्ह डेटा, चार्ट, आवडते आणि सर्व 44 भाषा प्रत्येक प्लॅनमध्ये समाविष्ट आहेत. कोटा AI विश्लेषणांसाठी लागू होतो.';
 }

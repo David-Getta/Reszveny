@@ -306,7 +306,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisti', one: '1 analista');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisti',
+      one: '1 analista',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +352,32 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
+  String get errRecognitionRefused =>
+      'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
 
   @override
-  String get errRecognitionTruncated => 'La risposta del riconoscimento è stata interrotta. Riprova.';
+  String get errRecognitionTruncated =>
+      'La risposta del riconoscimento è stata interrotta. Riprova.';
 
   @override
-  String get errRecognitionBadResponse => 'Risposta inattesa dal servizio di riconoscimento.';
+  String get errRecognitionBadResponse =>
+      'Risposta inattesa dal servizio di riconoscimento.';
 
   @override
-  String get errRecognitionEmpty => 'Il servizio di riconoscimento ha restituito una risposta vuota.';
+  String get errRecognitionEmpty =>
+      'Il servizio di riconoscimento ha restituito una risposta vuota.';
 
   @override
-  String get errMissingFinnhubKey => 'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Impossibile raggiungere il servizio dei dati di mercato. Controlla la connessione a internet.';
 
   @override
-  String get errMarketRateLimited => 'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
+  String get errMarketRateLimited =>
+      'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +385,8 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Risposta inattesa dal servizio dei dati di mercato.';
+  String get errMarketBadResponse =>
+      'Risposta inattesa dal servizio dei dati di mercato.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +486,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get aiRegenerate => 'Rigenera';
 
   @override
-  String get aiGenerating => 'Preparazione dell’analisi in corso… può richiedere uno o due minuti.';
+  String get aiGenerating =>
+      'Preparazione dell’analisi in corso… può richiedere uno o due minuti.';
 
   @override
   String get aiSources => 'Fonti';
@@ -489,10 +502,12 @@ class AppLocalizationsIt extends AppLocalizations {
       'Analisi generata dall’IA sulla base di dati pubblici e notizie recenti. Può contenere errori o non essere aggiornata e non costituisce un consiglio di investimento.';
 
   @override
-  String get errAiNotConfigured => 'L’analisi IA non è configurata (manca ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'L’analisi IA non è configurata (manca ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Impossibile raggiungere il servizio di IA. Controlla la connessione a internet.';
+  String get errAiUnreachable =>
+      'Impossibile raggiungere il servizio di IA. Controlla la connessione a internet.';
 
   @override
   String errAiHttp(String status) {
@@ -500,7 +515,8 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Il servizio di IA ha rifiutato di analizzare questa azione.';
+  String get errAiRefused =>
+      'Il servizio di IA ha rifiutato di analizzare questa azione.';
 
   @override
   String get errAiBadResponse => 'Risposta inattesa dal servizio di IA.';
@@ -524,7 +540,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable => 'Lo storico dei prezzi non è disponibile dalla fonte dati attuale.';
+  String get chartUnavailable =>
+      'Lo storico dei prezzi non è disponibile dalla fonte dati attuale.';
 
   @override
   String get sectionStatements => 'Bilanci (annuali)';
@@ -551,7 +568,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flusso di cassa operativo';
 
   @override
-  String get statementsUnavailable => 'Per questa azione non sono disponibili bilanci pubblicati.';
+  String get statementsUnavailable =>
+      'Per questa azione non sono disponibili bilanci pubblicati.';
 
   @override
   String get launchAtLogin => 'Avvia all’accesso';
@@ -560,7 +578,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get hotkeyLabel => 'Scorciatoia globale';
 
   @override
-  String get hotkeyRecordHint => 'Fai clic qui, poi premi la nuova combinazione di tasti';
+  String get hotkeyRecordHint =>
+      'Fai clic qui, poi premi la nuova combinazione di tasti';
 
   @override
   String get hotkeyReset => 'Ripristina predefinita';
@@ -581,7 +600,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get removeFromFavorites => 'Rimuovi dai preferiti';
 
   @override
-  String get noFavorites => 'Nessun preferito. Tocca la stella di un’azione per aggiungerla.';
+  String get noFavorites =>
+      'Nessun preferito. Tocca la stella di un’azione per aggiungerla.';
 
   @override
   String get displayCurrency => 'Valuta di visualizzazione';
@@ -628,7 +648,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get updateDownloading => 'Download dell’aggiornamento in background…';
 
   @override
-  String get updateDownloaded => 'L’aggiornamento è pronto. Riavvia per installarlo.';
+  String get updateDownloaded =>
+      'L’aggiornamento è pronto. Riavvia per installarlo.';
 
   @override
   String get updateNow => 'Aggiorna';
@@ -637,19 +658,20 @@ class AppLocalizationsIt extends AppLocalizations {
   String get restartNow => 'Riavvia';
 
   @override
-  String get updatesViaStore => 'Gli aggiornamenti arrivano automaticamente tramite l’app store.';
+  String get updatesViaStore =>
+      'Gli aggiornamenti arrivano automaticamente tramite l’app store.';
 
   @override
   String get updateCheckFailed => 'Impossibile cercare aggiornamenti.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Abbonamento';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Prova';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'Normale';
 
   @override
   String get planPro => 'Pro';
@@ -661,16 +683,16 @@ class AppLocalizationsIt extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Nessun piano attivo';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count analisi al mese';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return 'Prova gratuita di $days giorni con $count analisi';
   }
 
   @override
@@ -678,98 +700,103 @@ class AppLocalizationsIt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: '$days giorni di prova rimasti',
+      one: '1 giorno di prova rimasto',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'La tua prova gratuita è terminata. Scegli un piano per continuare ad analizzare.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return '$remaining analisi su $total rimaste in questo periodo';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count analisi extra';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Si rinnova il $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Scegli un piano';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Piano attuale';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Abbonati';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ mese';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'Ti servono di più? Acquista analisi extra';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Le analisi extra non scadono mai e vengono usate dopo la tua quota mensile.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Acquista';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Ripristina acquisti';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Gestisci abbonamento';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Grazie! Il tuo acquisto è attivo.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Acquisto in attesa…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Non è stato possibile completare l’acquisto.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Acquisto annullato.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Gli acquisti non sono ancora disponibili su questa piattaforma. Abbonati dal tuo telefono o Mac; il tuo piano funzionerà su tutti i dispositivi.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Non hai più analisi per questo periodo. Passa a un piano superiore o acquista analisi extra.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'La tua prova gratuita è terminata. Scegli un piano per continuare.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'Per l’analisi IA è necessario un piano attivo.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Vedi i piani';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Utilizzo';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Fatturazione demo: su questa piattaforma gli acquisti sono simulati.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Più popolare';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Miglior rapporto qualità-prezzo';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Riconoscimento foto, dati in tempo reale, grafici, preferiti e tutte le 44 lingue sono inclusi in ogni piano. La quota copre le analisi IA.';
 }

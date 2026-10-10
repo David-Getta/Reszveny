@@ -13,7 +13,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'Fotografoni një aksion dhe mësoni gjithçka për të.';
+  String get homeTagline =>
+      'Fotografoni një aksion dhe mësoni gjithçka për të.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistë', one: '1 analist');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analistë',
+      one: '1 analist',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Njohja e imazheve nuk është konfiguruar (mungon ANTHROPIC_API_KEY). Shkruani simbolin manualisht.';
 
   @override
-  String get errRecognitionUnreachable => 'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+  String get errRecognitionUnreachable =>
+      'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,19 +353,24 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
+  String get errRecognitionRefused =>
+      'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
 
   @override
-  String get errRecognitionTruncated => 'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
+  String get errRecognitionTruncated =>
+      'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
 
   @override
-  String get errRecognitionBadResponse => 'Përgjigje e papritur nga shërbimi i njohjes.';
+  String get errRecognitionBadResponse =>
+      'Përgjigje e papritur nga shërbimi i njohjes.';
 
   @override
-  String get errRecognitionEmpty => 'Shërbimi i njohjes ktheu një përgjigje bosh.';
+  String get errRecognitionEmpty =>
+      'Shërbimi i njohjes ktheu një përgjigje bosh.';
 
   @override
-  String get errMissingFinnhubKey => 'Të dhënat e tregut nuk janë konfiguruar (mungon FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Të dhënat e tregut nuk janë konfiguruar (mungon FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
@@ -374,7 +386,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
+  String get errMarketBadResponse =>
+      'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +487,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get aiRegenerate => 'Gjenero përsëri';
 
   @override
-  String get aiGenerating => 'Duke përgatitur analizën… kjo mund të zgjasë një ose dy minuta.';
+  String get aiGenerating =>
+      'Duke përgatitur analizën… kjo mund të zgjasë një ose dy minuta.';
 
   @override
   String get aiSources => 'Burimet';
@@ -489,10 +503,12 @@ class AppLocalizationsSq extends AppLocalizations {
       'Analizë e gjeneruar nga AI bazuar në të dhëna publike dhe lajme të fundit. Mund të përmbajë gabime ose të jetë e vjetruar dhe nuk përbën këshillë investimi.';
 
   @override
-  String get errAiNotConfigured => 'Analiza me AI nuk është konfiguruar (mungon ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Analiza me AI nuk është konfiguruar (mungon ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Shërbimi i AI nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+  String get errAiUnreachable =>
+      'Shërbimi i AI nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
 
   @override
   String errAiHttp(String status) {
@@ -524,7 +540,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get rangeFiveYears => '5V';
 
   @override
-  String get chartUnavailable => 'Historiku i çmimeve nuk është i disponueshëm nga burimi aktual i të dhënave.';
+  String get chartUnavailable =>
+      'Historiku i çmimeve nuk është i disponueshëm nga burimi aktual i të dhënave.';
 
   @override
   String get sectionStatements => 'Pasqyrat financiare (vjetore)';
@@ -548,10 +565,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get labelEquity => 'Kapitali i aksionarëve';
 
   @override
-  String get labelOperatingCashFlow => 'Fluksi i parasë nga veprimtaria operative';
+  String get labelOperatingCashFlow =>
+      'Fluksi i parasë nga veprimtaria operative';
 
   @override
-  String get statementsUnavailable => 'Pasqyrat financiare të raportuara nuk janë të disponueshme për këtë aksion.';
+  String get statementsUnavailable =>
+      'Pasqyrat financiare të raportuara nuk janë të disponueshme për këtë aksion.';
 
   @override
   String get launchAtLogin => 'Nis gjatë hyrjes në sistem';
@@ -560,7 +579,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get hotkeyLabel => 'Shkurtore globale';
 
   @override
-  String get hotkeyRecordHint => 'Klikoni këtu, pastaj shtypni kombinimin e ri të tasteve';
+  String get hotkeyRecordHint =>
+      'Klikoni këtu, pastaj shtypni kombinimin e ri të tasteve';
 
   @override
   String get hotkeyReset => 'Rikthe parazgjedhjen';
@@ -581,7 +601,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get removeFromFavorites => 'Hiq nga të preferuarat';
 
   @override
-  String get noFavorites => 'Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar.';
+  String get noFavorites =>
+      'Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar.';
 
   @override
   String get displayCurrency => 'Monedha e shfaqjes';
@@ -628,7 +649,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get updateDownloading => 'Përditësimi po shkarkohet në sfond…';
 
   @override
-  String get updateDownloaded => 'Përditësimi është gati. Rinisni aplikacionin për ta instaluar.';
+  String get updateDownloaded =>
+      'Përditësimi është gati. Rinisni aplikacionin për ta instaluar.';
 
   @override
   String get updateNow => 'Përditëso';
@@ -637,16 +659,18 @@ class AppLocalizationsSq extends AppLocalizations {
   String get restartNow => 'Rinis';
 
   @override
-  String get updatesViaStore => 'Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.';
+  String get updatesViaStore =>
+      'Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.';
 
   @override
-  String get updateCheckFailed => 'Nuk u arrit të kontrollohej për përditësime.';
+  String get updateCheckFailed =>
+      'Nuk u arrit të kontrollohej për përditësime.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Abonimi';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Provë';
 
   @override
   String get planNormal => 'Normal';
@@ -661,16 +685,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Asnjë plan aktiv';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count analiza në muaj';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return 'Provë falas $days-ditore me $count analiza';
   }
 
   @override
@@ -678,98 +702,104 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: 'Mbeten $days ditë provë',
+      one: 'Mbetet 1 ditë provë',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar analizat.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return 'Kanë mbetur $remaining nga $total analiza në këtë periudhë';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count analiza shtesë';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Rinovohet më $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Zgjidhni një plan';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Plani aktual';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Abonohu';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ muaj';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle =>
+      'Keni nevojë për më shumë? Blini analiza shtesë';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Analizat shtesë nuk skadojnë kurrë dhe përdoren pas kuotës suaj mujore.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Bli';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Rikthe blerjet';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Menaxho abonimin';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Faleminderit! Blerja juaj është aktive.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Blerja në pritje…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Blerja nuk mund të përfundohej.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Blerja u anulua.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Blerjet nuk janë ende të disponueshme në këtë platformë. Abonohuni në telefonin ose Mac-un tuaj; plani juaj do të funksionojë në çdo pajisje.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Nuk keni më analiza për këtë periudhë. Përmirësoni planin ose blini analiza shtesë.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'Për analizën me AI nevojitet një plan aktiv.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Shiko planet';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Përdorimi';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Faturim demo: blerjet simulohen në këtë platformë.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Më i popullarizuari';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Vlera më e mirë';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Njohja e fotove, të dhënat në kohë reale, grafikët, të preferuarat dhe të 44 gjuhët përfshihen në çdo plan. Kuota mbulon analizat me AI.';
 }

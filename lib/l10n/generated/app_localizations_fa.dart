@@ -13,10 +13,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
+  String get homeTagline =>
+      'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
 
   @override
-  String get homeHint => 'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
+  String get homeHint =>
+      'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
 
   @override
   String get takePhoto => 'عکس گرفتن';
@@ -305,7 +307,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تحلیلگر', one: '1 تحلیلگر');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحلیلگر',
+      one: '1 تحلیلگر',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +344,8 @@ class AppLocalizationsFa extends AppLocalizations {
       'شناسایی تصویر تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد). نماد را به‌صورت دستی وارد کنید.';
 
   @override
-  String get errRecognitionUnreachable => 'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errRecognitionUnreachable =>
+      'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,10 +353,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
+  String get errRecognitionRefused =>
+      'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
 
   @override
-  String get errRecognitionTruncated => 'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
+  String get errRecognitionTruncated =>
+      'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
 
   @override
   String get errRecognitionBadResponse => 'پاسخ غیرمنتظره از سرویس شناسایی.';
@@ -357,10 +367,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errRecognitionEmpty => 'سرویس شناسایی پاسخ خالی برگرداند.';
 
   @override
-  String get errMissingFinnhubKey => 'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
+  String get errMissingFinnhubKey =>
+      'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
 
   @override
-  String get errMarketUnreachable => 'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errMarketUnreachable =>
+      'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String get errMarketRateLimited =>
@@ -472,7 +484,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get aiRegenerate => 'تولید دوباره';
 
   @override
-  String get aiGenerating => 'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
+  String get aiGenerating =>
+      'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
 
   @override
   String get aiSources => 'منابع';
@@ -487,10 +500,12 @@ class AppLocalizationsFa extends AppLocalizations {
       'تحلیل تولیدشده با هوش مصنوعی بر اساس داده‌های عمومی و اخبار اخیر. ممکن است خطا داشته باشد یا قدیمی باشد و توصیه سرمایه‌گذاری نیست.';
 
   @override
-  String get errAiNotConfigured => 'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
+  String get errAiNotConfigured =>
+      'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
 
   @override
-  String get errAiUnreachable => 'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errAiUnreachable =>
+      'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +537,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get rangeFiveYears => '5 سال';
 
   @override
-  String get chartUnavailable => 'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
+  String get chartUnavailable =>
+      'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
 
   @override
   String get sectionStatements => 'صورت‌های مالی (سالانه)';
@@ -549,7 +565,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get labelOperatingCashFlow => 'جریان نقدی عملیاتی';
 
   @override
-  String get statementsUnavailable => 'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
+  String get statementsUnavailable =>
+      'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
 
   @override
   String get launchAtLogin => 'اجرا هنگام ورود به سیستم';
@@ -558,7 +575,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get hotkeyLabel => 'کلید میانبر سراسری';
 
   @override
-  String get hotkeyRecordHint => 'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
+  String get hotkeyRecordHint =>
+      'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
 
   @override
   String get hotkeyReset => 'بازنشانی به پیش‌فرض';
@@ -579,7 +597,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get removeFromFavorites => 'حذف از علاقه‌مندی‌ها';
 
   @override
-  String get noFavorites => 'هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.';
+  String get noFavorites =>
+      'هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.';
 
   @override
   String get displayCurrency => 'واحد پول نمایش';
@@ -626,7 +645,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get updateDownloading => 'در حال بارگیری به‌روزرسانی در پس‌زمینه…';
 
   @override
-  String get updateDownloaded => 'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
+  String get updateDownloaded =>
+      'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
 
   @override
   String get updateNow => 'به‌روزرسانی';
@@ -635,19 +655,20 @@ class AppLocalizationsFa extends AppLocalizations {
   String get restartNow => 'راه‌اندازی مجدد';
 
   @override
-  String get updatesViaStore => 'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
+  String get updatesViaStore =>
+      'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
 
   @override
   String get updateCheckFailed => 'بررسی به‌روزرسانی‌ها ممکن نشد.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'اشتراک';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'آزمایشی';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'معمولی';
 
   @override
   String get planPro => 'Pro';
@@ -659,16 +680,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'طرح فعالی وجود ندارد';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count تحلیل در ماه';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return '$days روز آزمایش رایگان با $count تحلیل';
   }
 
   @override
@@ -676,98 +697,103 @@ class AppLocalizationsFa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: '$days روز از دوره آزمایشی باقی مانده',
+      one: '1 روز از دوره آزمایشی باقی مانده',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه تحلیل یک طرح انتخاب کنید.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return '$remaining از $total تحلیل در این دوره باقی مانده';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count تحلیل اضافی';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'تمدید در $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'انتخاب طرح';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'طرح فعلی';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'مشترک شوید';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ ماه';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'بیشتر نیاز دارید؟ تحلیل اضافی بخرید';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'تحلیل‌های اضافی هرگز منقضی نمی‌شوند و پس از سهمیه ماهانه شما استفاده می‌شوند.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'خرید';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'بازیابی خریدها';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'مدیریت اشتراک';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'متشکریم! خرید شما فعال شد.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'خرید در انتظار…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'خرید تکمیل نشد.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'خرید لغو شد.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'خرید هنوز در این پلتفرم در دسترس نیست. در تلفن یا Mac خود مشترک شوید؛ طرح شما در همه دستگاه‌ها کار می‌کند.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'تحلیلی برای این دوره باقی نمانده است. طرح خود را ارتقا دهید یا تحلیل اضافی بخرید.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه یک طرح انتخاب کنید.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'برای تحلیل هوش مصنوعی به یک طرح فعال نیاز است.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'مشاهده طرح‌ها';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'میزان استفاده';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'پرداخت آزمایشی: خریدها در این پلتفرم شبیه‌سازی می‌شوند.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'محبوب‌ترین';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'بهترین ارزش';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'شناسایی عکس، داده‌های زنده، نمودارها، علاقه‌مندی‌ها و همه 44 زبان در هر طرح گنجانده شده‌اند. سهمیه مربوط به تحلیل‌های هوش مصنوعی است.';
 }

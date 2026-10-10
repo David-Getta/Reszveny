@@ -13,7 +13,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
+  String get homeTagline =>
+      'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errorGeneric => 'Κάτι πήγε στραβά.';
 
   @override
-  String get errorSectionUnavailable => 'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
+  String get errorSectionUnavailable =>
+      'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
 
   @override
   String get notAvailable => 'μ/δ';
@@ -306,7 +308,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count αναλυτές', one: '1 αναλυτής');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count αναλυτές',
+      one: '1 αναλυτής',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +354,32 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
+  String get errRecognitionRefused =>
+      'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
 
   @override
-  String get errRecognitionTruncated => 'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
+  String get errRecognitionTruncated =>
+      'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
 
   @override
-  String get errRecognitionBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
+  String get errRecognitionBadResponse =>
+      'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
 
   @override
-  String get errRecognitionEmpty => 'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
+  String get errRecognitionEmpty =>
+      'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
 
   @override
-  String get errMissingFinnhubKey => 'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία δεδομένων αγοράς. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
-  String get errMarketRateLimited => 'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
+  String get errMarketRateLimited =>
+      'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +387,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
+  String get errMarketBadResponse =>
+      'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +488,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiRegenerate => 'Δημιουργία ξανά';
 
   @override
-  String get aiGenerating => 'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
+  String get aiGenerating =>
+      'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
 
   @override
   String get aiSources => 'Πηγές';
@@ -489,10 +504,12 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ανάλυση που δημιουργήθηκε από AI με βάση δημόσια δεδομένα και πρόσφατες ειδήσεις. Μπορεί να περιέχει λάθη ή να μην είναι ενημερωμένη και δεν αποτελεί επενδυτική συμβουλή.';
 
   @override
-  String get errAiNotConfigured => 'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
+  String get errAiUnreachable =>
+      'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
   String errAiHttp(String status) {
@@ -500,7 +517,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
+  String get errAiRefused =>
+      'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
 
   @override
   String get errAiBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία AI.';
@@ -524,7 +542,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get rangeFiveYears => '5 έτη';
 
   @override
-  String get chartUnavailable => 'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
+  String get chartUnavailable =>
+      'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
 
   @override
   String get sectionStatements => 'Οικονομικές καταστάσεις (ετήσιες)';
@@ -561,7 +580,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hotkeyLabel => 'Γενική συντόμευση';
 
   @override
-  String get hotkeyRecordHint => 'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
+  String get hotkeyRecordHint =>
+      'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
 
   @override
   String get hotkeyReset => 'Επαναφορά προεπιλογής';
@@ -582,7 +602,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get removeFromFavorites => 'Αφαίρεση από τα αγαπημένα';
 
   @override
-  String get noFavorites => 'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
+  String get noFavorites =>
+      'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
 
   @override
   String get displayCurrency => 'Νόμισμα εμφάνισης';
@@ -629,7 +650,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get updateDownloading => 'Λήψη της ενημέρωσης στο παρασκήνιο…';
 
   @override
-  String get updateDownloaded => 'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
+  String get updateDownloaded =>
+      'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
 
   @override
   String get updateNow => 'Ενημέρωση';
@@ -638,19 +660,20 @@ class AppLocalizationsEl extends AppLocalizations {
   String get restartNow => 'Επανεκκίνηση';
 
   @override
-  String get updatesViaStore => 'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
+  String get updatesViaStore =>
+      'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
 
   @override
   String get updateCheckFailed => 'Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Συνδρομή';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Δοκιμαστικό';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'Κανονικό';
 
   @override
   String get planPro => 'Pro';
@@ -662,16 +685,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Δεν υπάρχει ενεργό πρόγραμμα';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count αναλύσεις τον μήνα';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return 'Δωρεάν δοκιμή $days ημερών με $count αναλύσεις';
   }
 
   @override
@@ -679,98 +702,104 @@ class AppLocalizationsEl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: 'Απομένουν $days ημέρες δοκιμής',
+      one: 'Απομένει 1 ημέρα δοκιμής',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε τις αναλύσεις.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return 'Απομένουν $remaining από $total αναλύσεις για αυτήν την περίοδο';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count επιπλέον αναλύσεις';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Ανανεώνεται $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Επιλέξτε πρόγραμμα';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Τρέχον πρόγραμμα';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Εγγραφή';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ μήνα';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle =>
+      'Χρειάζεστε περισσότερες; Αγοράστε επιπλέον αναλύσεις';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Οι επιπλέον αναλύσεις δεν λήγουν ποτέ και χρησιμοποιούνται μετά το μηνιαίο όριό σας.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Αγορά';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Επαναφορά αγορών';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Διαχείριση συνδρομής';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Ευχαριστούμε! Η αγορά σας είναι ενεργή.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Η αγορά είναι σε εκκρεμότητα…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Δεν ήταν δυνατή η ολοκλήρωση της αγοράς.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Η αγορά ακυρώθηκε.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Οι αγορές δεν είναι ακόμη διαθέσιμες σε αυτήν την πλατφόρμα. Εγγραφείτε από το τηλέφωνο ή το Mac σας· το πρόγραμμά σας θα λειτουργεί σε κάθε συσκευή.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Δεν σας απομένουν αναλύσεις για αυτήν την περίοδο. Αναβαθμίστε το πρόγραμμά σας ή αγοράστε επιπλέον αναλύσεις.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'Για την ανάλυση AI απαιτείται ενεργό πρόγραμμα.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Προβολή προγραμμάτων';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Χρήση';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Πιο δημοφιλές';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Καλύτερη αξία';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Η αναγνώριση φωτογραφιών, τα ζωντανά δεδομένα, τα διαγράμματα, τα αγαπημένα και όλες οι 44 γλώσσες περιλαμβάνονται σε κάθε πρόγραμμα. Το όριο αφορά τις αναλύσεις AI.';
 }

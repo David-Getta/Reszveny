@@ -343,7 +343,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chưa cấu hình nhận diện ảnh (thiếu ANTHROPIC_API_KEY). Hãy nhập mã cổ phiếu thủ công.';
 
   @override
-  String get errRecognitionUnreachable => 'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
+  String get errRecognitionUnreachable =>
+      'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -351,25 +352,31 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Dịch vụ nhận diện không thể xử lý ảnh này.';
+  String get errRecognitionRefused =>
+      'Dịch vụ nhận diện không thể xử lý ảnh này.';
 
   @override
-  String get errRecognitionTruncated => 'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
+  String get errRecognitionTruncated =>
+      'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
 
   @override
-  String get errRecognitionBadResponse => 'Phản hồi không mong đợi từ dịch vụ nhận diện.';
+  String get errRecognitionBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ nhận diện.';
 
   @override
   String get errRecognitionEmpty => 'Dịch vụ nhận diện trả về phản hồi trống.';
 
   @override
-  String get errMissingFinnhubKey => 'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
+  String get errMarketUnreachable =>
+      'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
 
   @override
-  String get errMarketRateLimited => 'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
+  String get errMarketRateLimited =>
+      'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
 
   @override
   String errMarketHttp(String status) {
@@ -377,7 +384,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
+  String get errMarketBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
 
   @override
   String errNoQuote(String symbol) {
@@ -477,7 +485,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get aiRegenerate => 'Tạo lại';
 
   @override
-  String get aiGenerating => 'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
+  String get aiGenerating =>
+      'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
 
   @override
   String get aiSources => 'Nguồn';
@@ -492,10 +501,12 @@ class AppLocalizationsVi extends AppLocalizations {
       'Phân tích do AI tạo dựa trên dữ liệu công khai và tin tức gần đây. Nội dung có thể sai hoặc lỗi thời và không phải là lời khuyên đầu tư.';
 
   @override
-  String get errAiNotConfigured => 'Chưa cấu hình phân tích AI (thiếu ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Chưa cấu hình phân tích AI (thiếu ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
+  String get errAiUnreachable =>
+      'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
 
   @override
   String errAiHttp(String status) {
@@ -527,7 +538,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get rangeFiveYears => '5N';
 
   @override
-  String get chartUnavailable => 'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
+  String get chartUnavailable =>
+      'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
 
   @override
   String get sectionStatements => 'Báo cáo tài chính (năm)';
@@ -554,7 +566,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get labelOperatingCashFlow => 'Dòng tiền từ hoạt động kinh doanh';
 
   @override
-  String get statementsUnavailable => 'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
+  String get statementsUnavailable =>
+      'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
 
   @override
   String get launchAtLogin => 'Khởi chạy khi đăng nhập';
@@ -584,7 +597,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get removeFromFavorites => 'Xóa khỏi yêu thích';
 
   @override
-  String get noFavorites => 'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
+  String get noFavorites =>
+      'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
 
   @override
   String get displayCurrency => 'Tiền tệ hiển thị';
@@ -631,7 +645,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get updateDownloading => 'Đang tải bản cập nhật trong nền…';
 
   @override
-  String get updateDownloaded => 'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
+  String get updateDownloaded =>
+      'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
 
   @override
   String get updateNow => 'Cập nhật';
@@ -640,19 +655,20 @@ class AppLocalizationsVi extends AppLocalizations {
   String get restartNow => 'Khởi động lại';
 
   @override
-  String get updatesViaStore => 'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
+  String get updatesViaStore =>
+      'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
 
   @override
   String get updateCheckFailed => 'Không thể kiểm tra bản cập nhật.';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'Gói đăng ký';
 
   @override
-  String get planTrial => 'Trial';
+  String get planTrial => 'Dùng thử';
 
   @override
-  String get planNormal => 'Normal';
+  String get planNormal => 'Thường';
 
   @override
   String get planPro => 'Pro';
@@ -664,16 +680,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get planMax2 => 'Max 2';
 
   @override
-  String get planNone => 'No active plan';
+  String get planNone => 'Không có gói đang hoạt động';
 
   @override
   String planAnalysesPerMonth(int count) {
-    return '$count analyses per month';
+    return '$count lượt phân tích mỗi tháng';
   }
 
   @override
   String planTrialDescription(int days, int count) {
-    return '$days-day free trial with $count analyses';
+    return 'Dùng thử miễn phí $days ngày với $count lượt phân tích';
   }
 
   @override
@@ -681,98 +697,103 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days of trial left',
-      one: '1 day of trial left',
+      other: 'Còn $days ngày dùng thử',
+      one: 'Còn 1 ngày dùng thử',
     );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục phân tích.';
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return '$remaining of $total analyses left this period';
+    return 'Còn $remaining/$total lượt phân tích trong kỳ này';
   }
 
   @override
   String extraCredits(int count) {
-    return '$count extra analyses';
+    return '$count lượt phân tích bổ sung';
   }
 
   @override
   String renewsOn(String date) {
-    return 'Renews $date';
+    return 'Gia hạn $date';
   }
 
   @override
-  String get choosePlan => 'Choose a plan';
+  String get choosePlan => 'Chọn gói';
 
   @override
-  String get currentPlan => 'Current plan';
+  String get currentPlan => 'Gói hiện tại';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'Đăng ký';
 
   @override
-  String get perMonth => '/ month';
+  String get perMonth => '/ tháng';
 
   @override
-  String get extraPacksTitle => 'Need more? Buy extra analyses';
+  String get extraPacksTitle => 'Cần thêm? Mua lượt phân tích bổ sung';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Lượt phân tích bổ sung không bao giờ hết hạn và được dùng sau khi hết hạn mức hằng tháng.';
 
   @override
-  String get buy => 'Buy';
+  String get buy => 'Mua';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Khôi phục giao dịch mua';
 
   @override
-  String get manageSubscription => 'Manage subscription';
+  String get manageSubscription => 'Quản lý gói đăng ký';
 
   @override
-  String get purchaseSuccess => 'Thanks! Your purchase is active.';
+  String get purchaseSuccess => 'Cảm ơn bạn! Giao dịch mua đã có hiệu lực.';
 
   @override
-  String get purchasePending => 'Purchase pending…';
+  String get purchasePending => 'Đang xử lý giao dịch mua…';
 
   @override
-  String get purchaseFailed => 'The purchase could not be completed.';
+  String get purchaseFailed => 'Không thể hoàn tất giao dịch mua.';
 
   @override
-  String get purchaseCanceled => 'Purchase canceled.';
+  String get purchaseCanceled => 'Đã hủy giao dịch mua.';
 
   @override
   String get billingUnavailable =>
-      'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
+      'Nền tảng này chưa hỗ trợ mua hàng. Hãy đăng ký trên điện thoại hoặc Mac; gói của bạn sẽ hoạt động trên mọi thiết bị.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'Bạn đã hết lượt phân tích trong kỳ này. Hãy nâng cấp gói hoặc mua lượt phân tích bổ sung.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục.';
 
   @override
-  String get errNoPlan => 'An active plan is needed for AI analysis.';
+  String get errNoPlan => 'Cần có gói đang hoạt động để phân tích AI.';
 
   @override
-  String get viewPlans => 'View plans';
+  String get viewPlans => 'Xem các gói';
 
   @override
-  String get usageTitle => 'Usage';
+  String get usageTitle => 'Mức sử dụng';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.';
 
   @override
-  String get mostPopular => 'Most popular';
+  String get mostPopular => 'Phổ biến nhất';
 
   @override
-  String get bestValue => 'Best value';
+  String get bestValue => 'Đáng giá nhất';
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 44 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI.';
 }
