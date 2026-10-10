@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Facturación de demostración: las compras se simulan en esta plataforma.",
   "mostPopular": "Más popular",
   "bestValue": "Mejor relación calidad-precio",
-  "planFeaturesCommon": "El reconocimiento de fotos, los datos en tiempo real, los gráficos, los favoritos y los 44 idiomas están incluidos en todos los planes. La cuota cubre los análisis con IA."
+  "planFeaturesCommon": "El reconocimiento de fotos, los datos en tiempo real, los gráficos, los favoritos y los 44 idiomas están incluidos en todos los planes. La cuota cubre los análisis con IA.",
+  "searchLanguages": "Buscar idiomas…",
+  "noLanguageMatch": "Ningún idioma coincide."
 }

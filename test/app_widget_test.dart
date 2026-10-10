@@ -183,6 +183,31 @@ void main() {
     expect(find.text('Test headline'), findsNothing);
   });
 
+  testWidgets('language picker opens on tap, filters by search and switches the language', (tester) async {
+    tester.view.physicalSize = const Size(1200, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    // A lista zárva: a 44 nyelv nem látszik, csak az aktuális.
+    expect(find.text('Magyar'), findsNothing);
+    await tester.tap(find.text('System default'));
+    await tester.pumpAndSettle();
+    expect(find.text('English'), findsWidgets);
+    expect(find.text('Deutsch'), findsNothing); // a lista lusta: csak a látható elemek épülnek fel
+    await tester.enterText(find.widgetWithText(TextField, 'Search languages…'), 'magy');
+    await tester.pumpAndSettle();
+    expect(find.text('Magyar'), findsOneWidget);
+    expect(find.text('Deutsch'), findsNothing);
+    await tester.tap(find.text('Magyar'));
+    await tester.pumpAndSettle();
+    expect(s.locale.override, const Locale('hu'));
+    expect(find.text('Beállítások'), findsWidgets);
+  });
+
   testWidgets('recent searches appear in the sidebar on wide screens', (tester) async {
     tester.view.physicalSize = const Size(1400, 900);
     tester.view.devicePixelRatio = 1;

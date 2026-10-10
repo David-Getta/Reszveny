@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demo naplata: kupnje se na ovoj platformi simuliraju.",
   "mostPopular": "Najpopularniji",
   "bestValue": "Najbolja vrijednost",
-  "planFeaturesCommon": "Prepoznavanje fotografija, podaci u stvarnom vremenu, grafikoni, favoriti i sva 44 jezika uključeni su u svaki plan. Kvota se odnosi na AI analize."
+  "planFeaturesCommon": "Prepoznavanje fotografija, podaci u stvarnom vremenu, grafikoni, favoriti i sva 44 jezika uključeni su u svaki plan. Kvota se odnosi na AI analize.",
+  "searchLanguages": "Pretraži jezike…",
+  "noLanguageMatch": "Nijedan jezik ne odgovara."
 }

@@ -230,5 +230,7 @@
   "demoPurchaseNote": "デモ課金：このプラットフォームでの購入はシミュレーションです。",
   "mostPopular": "一番人気",
   "bestValue": "最もお得",
-  "planFeaturesCommon": "写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。"
+  "planFeaturesCommon": "写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。",
+  "searchLanguages": "言語を検索…",
+  "noLanguageMatch": "一致する言語がありません。"
 }

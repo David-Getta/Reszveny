@@ -13,8 +13,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
+  String get homeTagline => 'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count বিশ্লেষক',
-      one: '1 বিশ্লেষক',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count বিশ্লেষক', one: '1 বিশ্লেষক');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsBn extends AppLocalizations {
       'ছবি শনাক্তকরণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)। টিকার ম্যানুয়ালি লিখুন।';
 
   @override
-  String get errRecognitionUnreachable =>
-      'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errRecognitionUnreachable => 'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,28 +346,22 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
+  String get errRecognitionRefused => 'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
 
   @override
-  String get errRecognitionTruncated =>
-      'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
+  String get errRecognitionTruncated => 'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
 
   @override
-  String get errRecognitionBadResponse =>
-      'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errRecognitionBadResponse => 'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
-  String get errRecognitionEmpty =>
-      'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
+  String get errRecognitionEmpty => 'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
 
   @override
-  String get errMissingFinnhubKey =>
-      'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
+  String get errMissingFinnhubKey => 'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
 
   @override
-  String get errMarketUnreachable =>
-      'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errMarketUnreachable => 'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String get errMarketRateLimited =>
@@ -386,8 +373,7 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errMarketBadResponse => 'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
   String errNoQuote(String symbol) {
@@ -487,8 +473,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get aiRegenerate => 'আবার তৈরি করুন';
 
   @override
-  String get aiGenerating =>
-      'বিশ্লেষণ প্রস্তুত করা হচ্ছে… এতে এক-দুই মিনিট লাগতে পারে।';
+  String get aiGenerating => 'বিশ্লেষণ প্রস্তুত করা হচ্ছে… এতে এক-দুই মিনিট লাগতে পারে।';
 
   @override
   String get aiSources => 'উৎস';
@@ -503,12 +488,10 @@ class AppLocalizationsBn extends AppLocalizations {
       'সর্বজনীন ডেটা ও সাম্প্রতিক খবরের ভিত্তিতে AI-তৈরি বিশ্লেষণ। এতে ভুল থাকতে পারে বা এটি পুরোনো হতে পারে, এবং এটি বিনিয়োগ পরামর্শ নয়।';
 
   @override
-  String get errAiNotConfigured =>
-      'AI বিশ্লেষণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)।';
+  String get errAiNotConfigured => 'AI বিশ্লেষণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)।';
 
   @override
-  String get errAiUnreachable =>
-      'AI সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errAiUnreachable => 'AI সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errAiHttp(String status) {
@@ -516,8 +499,7 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'AI সেবা এই শেয়ারটি বিশ্লেষণ করতে অস্বীকার করেছে।';
+  String get errAiRefused => 'AI সেবা এই শেয়ারটি বিশ্লেষণ করতে অস্বীকার করেছে।';
 
   @override
   String get errAiBadResponse => 'AI সেবা থেকে অপ্রত্যাশিত উত্তর।';
@@ -541,8 +523,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'বর্তমান ডেটা উৎস থেকে দামের ইতিহাস পাওয়া যায় না।';
+  String get chartUnavailable => 'বর্তমান ডেটা উৎস থেকে দামের ইতিহাস পাওয়া যায় না।';
 
   @override
   String get sectionStatements => 'আর্থিক বিবরণী (বার্ষিক)';
@@ -569,8 +550,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get labelOperatingCashFlow => 'অপারেটিং ক্যাশ ফ্লো';
 
   @override
-  String get statementsUnavailable =>
-      'এই শেয়ারের জন্য প্রকাশিত আর্থিক বিবরণী পাওয়া যায়নি।';
+  String get statementsUnavailable => 'এই শেয়ারের জন্য প্রকাশিত আর্থিক বিবরণী পাওয়া যায়নি।';
 
   @override
   String get launchAtLogin => 'লগইনের সময় চালু করুন';
@@ -579,8 +559,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hotkeyLabel => 'গ্লোবাল শর্টকাট';
 
   @override
-  String get hotkeyRecordHint =>
-      'এখানে ক্লিক করুন, তারপর নতুন কী কম্বিনেশন চাপুন';
+  String get hotkeyRecordHint => 'এখানে ক্লিক করুন, তারপর নতুন কী কম্বিনেশন চাপুন';
 
   @override
   String get hotkeyReset => 'ডিফল্টে রিসেট করুন';
@@ -601,8 +580,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get removeFromFavorites => 'পছন্দের তালিকা থেকে সরান';
 
   @override
-  String get noFavorites =>
-      'এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।';
+  String get noFavorites => 'এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।';
 
   @override
   String get displayCurrency => 'প্রদর্শনের মুদ্রা';
@@ -649,8 +627,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get updateDownloading => 'ব্যাকগ্রাউন্ডে আপডেট ডাউনলোড হচ্ছে…';
 
   @override
-  String get updateDownloaded =>
-      'আপডেট প্রস্তুত। ইনস্টল করতে পুনরায় চালু করুন।';
+  String get updateDownloaded => 'আপডেট প্রস্তুত। ইনস্টল করতে পুনরায় চালু করুন।';
 
   @override
   String get updateNow => 'আপডেট';
@@ -659,8 +636,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get restartNow => 'পুনরায় চালু করুন';
 
   @override
-  String get updatesViaStore =>
-      'আপডেট অ্যাপ স্টোরের মাধ্যমে স্বয়ংক্রিয়ভাবে আসে।';
+  String get updatesViaStore => 'আপডেট অ্যাপ স্টোরের মাধ্যমে স্বয়ংক্রিয়ভাবে আসে।';
 
   @override
   String get updateCheckFailed => 'আপডেট পরীক্ষা করা যায়নি।';
@@ -708,8 +684,7 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। বিশ্লেষণ চালিয়ে যেতে একটি প্ল্যান বেছে নিন।';
+  String get trialExpired => 'আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। বিশ্লেষণ চালিয়ে যেতে একটি প্ল্যান বেছে নিন।';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -742,8 +717,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get extraPacksTitle => 'আরও চাই? অতিরিক্ত বিশ্লেষণ কিনুন';
 
   @override
-  String get extraPacksHint =>
-      'অতিরিক্ত বিশ্লেষণের মেয়াদ কখনো শেষ হয় না এবং আপনার মাসিক কোটার পরে ব্যবহার হয়।';
+  String get extraPacksHint => 'অতিরিক্ত বিশ্লেষণের মেয়াদ কখনো শেষ হয় না এবং আপনার মাসিক কোটার পরে ব্যবহার হয়।';
 
   @override
   String get buy => 'কিনুন';
@@ -775,8 +749,7 @@ class AppLocalizationsBn extends AppLocalizations {
       'এই মেয়াদে আপনার কোনো বিশ্লেষণ বাকি নেই। আপনার প্ল্যান আপগ্রেড করুন বা অতিরিক্ত বিশ্লেষণ কিনুন।';
 
   @override
-  String get errTrialExpired =>
-      'আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। চালিয়ে যেতে একটি প্ল্যান বেছে নিন।';
+  String get errTrialExpired => 'আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। চালিয়ে যেতে একটি প্ল্যান বেছে নিন।';
 
   @override
   String get errNoPlan => 'AI বিশ্লেষণের জন্য একটি সক্রিয় প্ল্যান প্রয়োজন।';
@@ -788,8 +761,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get usageTitle => 'ব্যবহার';
 
   @override
-  String get demoPurchaseNote =>
-      'ডেমো বিলিং: এই প্ল্যাটফর্মে কেনাকাটা সিমুলেট করা হয়।';
+  String get demoPurchaseNote => 'ডেমো বিলিং: এই প্ল্যাটফর্মে কেনাকাটা সিমুলেট করা হয়।';
 
   @override
   String get mostPopular => 'সবচেয়ে জনপ্রিয়';
@@ -800,4 +772,10 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'ছবি শনাক্তকরণ, লাইভ ডেটা, চার্ট, পছন্দের তালিকা এবং সব 44টি ভাষা প্রতিটি প্ল্যানে অন্তর্ভুক্ত। কোটা AI বিশ্লেষণের জন্য প্রযোজ্য।';
+
+  @override
+  String get searchLanguages => 'ভাষা খুঁজুন…';
+
+  @override
+  String get noLanguageMatch => 'কোনো ভাষা মেলেনি।';
 }

@@ -13,8 +13,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
+  String get homeTagline => 'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count تجزیہ کار',
-      one: '1 تجزیہ کار',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تجزیہ کار', one: '1 تجزیہ کار');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsUr extends AppLocalizations {
       'تصویر کی شناخت ترتیب نہیں دی گئی (ANTHROPIC_API_KEY موجود نہیں)۔ ٹکر دستی طور پر درج کریں۔';
 
   @override
-  String get errRecognitionUnreachable =>
-      'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errRecognitionUnreachable => 'شناختی سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,12 +346,10 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
+  String get errRecognitionRefused => 'شناختی سروس اس تصویر پر کارروائی نہیں کر سکی۔';
 
   @override
-  String get errRecognitionTruncated =>
-      'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
+  String get errRecognitionTruncated => 'شناختی جواب نامکمل رہا۔ براہ کرم دوبارہ کوشش کریں۔';
 
   @override
   String get errRecognitionBadResponse => 'شناختی سروس سے غیر متوقع جواب۔';
@@ -367,12 +358,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errRecognitionEmpty => 'شناختی سروس نے خالی جواب واپس کیا۔';
 
   @override
-  String get errMissingFinnhubKey =>
-      'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
+  String get errMissingFinnhubKey => 'مارکیٹ ڈیٹا ترتیب نہیں دیا گیا (FINNHUB_API_KEY موجود نہیں)۔';
 
   @override
-  String get errMarketUnreachable =>
-      'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errMarketUnreachable => 'مارکیٹ ڈیٹا سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String get errMarketRateLimited =>
@@ -484,8 +473,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get aiRegenerate => 'دوبارہ تیار کریں';
 
   @override
-  String get aiGenerating =>
-      'تجزیہ تیار ہو رہا ہے… اس میں ایک دو منٹ لگ سکتے ہیں۔';
+  String get aiGenerating => 'تجزیہ تیار ہو رہا ہے… اس میں ایک دو منٹ لگ سکتے ہیں۔';
 
   @override
   String get aiSources => 'ماخذ';
@@ -500,12 +488,10 @@ class AppLocalizationsUr extends AppLocalizations {
       'عوامی ڈیٹا اور حالیہ خبروں پر مبنی AI سے تیار کردہ تجزیہ۔ اس میں غلطیاں ہو سکتی ہیں یا یہ پرانا ہو سکتا ہے، اور یہ سرمایہ کاری کا مشورہ نہیں ہے۔';
 
   @override
-  String get errAiNotConfigured =>
-      'AI تجزیہ ترتیب نہیں دیا گیا (ANTHROPIC_API_KEY موجود نہیں)۔';
+  String get errAiNotConfigured => 'AI تجزیہ ترتیب نہیں دیا گیا (ANTHROPIC_API_KEY موجود نہیں)۔';
 
   @override
-  String get errAiUnreachable =>
-      'AI سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
+  String get errAiUnreachable => 'AI سروس سے رابطہ نہیں ہو سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔';
 
   @override
   String errAiHttp(String status) {
@@ -513,8 +499,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'AI سروس نے اس شیئر کا تجزیہ کرنے سے انکار کر دیا۔';
+  String get errAiRefused => 'AI سروس نے اس شیئر کا تجزیہ کرنے سے انکار کر دیا۔';
 
   @override
   String get errAiBadResponse => 'AI سروس سے غیر متوقع جواب۔';
@@ -538,8 +523,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'موجودہ ڈیٹا ماخذ سے قیمت کی تاریخ دستیاب نہیں ہے۔';
+  String get chartUnavailable => 'موجودہ ڈیٹا ماخذ سے قیمت کی تاریخ دستیاب نہیں ہے۔';
 
   @override
   String get sectionStatements => 'مالیاتی گوشوارے (سالانہ)';
@@ -566,8 +550,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get labelOperatingCashFlow => 'آپریٹنگ کیش فلو';
 
   @override
-  String get statementsUnavailable =>
-      'اس شیئر کے لیے رپورٹ شدہ مالیاتی گوشوارے دستیاب نہیں ہیں۔';
+  String get statementsUnavailable => 'اس شیئر کے لیے رپورٹ شدہ مالیاتی گوشوارے دستیاب نہیں ہیں۔';
 
   @override
   String get launchAtLogin => 'لاگ ان پر شروع کریں';
@@ -597,8 +580,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get removeFromFavorites => 'پسندیدہ سے ہٹائیں';
 
   @override
-  String get noFavorites =>
-      'ابھی تک کوئی پسندیدہ نہیں۔ شامل کرنے کے لیے کسی شیئر پر ستارے کو ٹیپ کریں۔';
+  String get noFavorites => 'ابھی تک کوئی پسندیدہ نہیں۔ شامل کرنے کے لیے کسی شیئر پر ستارے کو ٹیپ کریں۔';
 
   @override
   String get displayCurrency => 'ڈسپلے کرنسی';
@@ -645,8 +627,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get updateDownloading => 'اپ ڈیٹ پس منظر میں ڈاؤن لوڈ ہو رہی ہے…';
 
   @override
-  String get updateDownloaded =>
-      'اپ ڈیٹ تیار ہے۔ انسٹال کرنے کے لیے دوبارہ شروع کریں۔';
+  String get updateDownloaded => 'اپ ڈیٹ تیار ہے۔ انسٹال کرنے کے لیے دوبارہ شروع کریں۔';
 
   @override
   String get updateNow => 'اپ ڈیٹ کریں';
@@ -655,8 +636,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get restartNow => 'دوبارہ شروع کریں';
 
   @override
-  String get updatesViaStore =>
-      'اپ ڈیٹس ایپ اسٹور کے ذریعے خودکار طور پر موصول ہوتی ہیں۔';
+  String get updatesViaStore => 'اپ ڈیٹس ایپ اسٹور کے ذریعے خودکار طور پر موصول ہوتی ہیں۔';
 
   @override
   String get updateCheckFailed => 'اپ ڈیٹس چیک نہیں کی جا سکیں۔';
@@ -704,8 +684,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'آپ کا مفت آزمائشی دور ختم ہو گیا ہے۔ تجزیہ جاری رکھنے کے لیے کوئی پلان منتخب کریں۔';
+  String get trialExpired => 'آپ کا مفت آزمائشی دور ختم ہو گیا ہے۔ تجزیہ جاری رکھنے کے لیے کوئی پلان منتخب کریں۔';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -738,8 +717,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get extraPacksTitle => 'مزید چاہیے؟ اضافی تجزیے خریدیں';
 
   @override
-  String get extraPacksHint =>
-      'اضافی تجزیے کبھی ختم نہیں ہوتے اور آپ کے ماہانہ کوٹے کے بعد استعمال ہوتے ہیں۔';
+  String get extraPacksHint => 'اضافی تجزیے کبھی ختم نہیں ہوتے اور آپ کے ماہانہ کوٹے کے بعد استعمال ہوتے ہیں۔';
 
   @override
   String get buy => 'خریدیں';
@@ -771,8 +749,7 @@ class AppLocalizationsUr extends AppLocalizations {
       'اس مدت کے لیے آپ کے تجزیے ختم ہو گئے ہیں۔ اپنا پلان اپگریڈ کریں یا اضافی تجزیے خریدیں۔';
 
   @override
-  String get errTrialExpired =>
-      'آپ کا مفت آزمائشی دور ختم ہو گیا ہے۔ جاری رکھنے کے لیے کوئی پلان منتخب کریں۔';
+  String get errTrialExpired => 'آپ کا مفت آزمائشی دور ختم ہو گیا ہے۔ جاری رکھنے کے لیے کوئی پلان منتخب کریں۔';
 
   @override
   String get errNoPlan => 'AI تجزیے کے لیے فعال پلان درکار ہے۔';
@@ -784,8 +761,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get usageTitle => 'استعمال';
 
   @override
-  String get demoPurchaseNote =>
-      'ڈیمو بلنگ: اس پلیٹ فارم پر خریداریاں نقلی ہیں۔';
+  String get demoPurchaseNote => 'ڈیمو بلنگ: اس پلیٹ فارم پر خریداریاں نقلی ہیں۔';
 
   @override
   String get mostPopular => 'سب سے مقبول';
@@ -796,4 +772,10 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'تصویر کی شناخت، لائیو ڈیٹا، چارٹس، پسندیدہ اور تمام 44 زبانیں ہر پلان میں شامل ہیں۔ کوٹا AI تجزیوں پر لاگو ہوتا ہے۔';
+
+  @override
+  String get searchLanguages => 'زبانیں تلاش کریں…';
+
+  @override
+  String get noLanguageMatch => 'کوئی زبان مطابقت نہیں رکھتی۔';
 }

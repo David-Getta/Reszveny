@@ -230,5 +230,7 @@
   "demoPurchaseNote": "示範計費：此平台上的購買只屬模擬。",
   "mostPopular": "最受歡迎",
   "bestValue": "最抵用",
-  "planFeaturesCommon": "所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。"
+  "planFeaturesCommon": "所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。",
+  "searchLanguages": "搜尋語言…",
+  "noLanguageMatch": "沒有符合的語言。"
 }

@@ -306,12 +306,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analis',
-      one: '1 analis',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Pengenalan gambar belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY). Masukkan kode saham secara manual.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
+  String get errRecognitionUnreachable => 'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Layanan pengenalan tidak dapat memproses gambar ini.';
+  String get errRecognitionRefused => 'Layanan pengenalan tidak dapat memproses gambar ini.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Respons pengenalan terpotong. Silakan coba lagi.';
+  String get errRecognitionTruncated => 'Respons pengenalan terpotong. Silakan coba lagi.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Respons tak terduga dari layanan pengenalan.';
+  String get errRecognitionBadResponse => 'Respons tak terduga dari layanan pengenalan.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Layanan pengenalan mengembalikan respons kosong.';
+  String get errRecognitionEmpty => 'Layanan pengenalan mengembalikan respons kosong.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
+  String get errMarketUnreachable => 'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
 
   @override
-  String get errMarketRateLimited =>
-      'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
+  String get errMarketRateLimited => 'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Respons tak terduga dari layanan data pasar.';
+  String get errMarketBadResponse => 'Respons tak terduga dari layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -486,8 +472,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get aiRegenerate => 'Buat ulang';
 
   @override
-  String get aiGenerating =>
-      'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
+  String get aiGenerating => 'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
 
   @override
   String get aiSources => 'Sumber';
@@ -502,12 +487,10 @@ class AppLocalizationsId extends AppLocalizations {
       'Analisis yang dibuat oleh AI berdasarkan data publik dan berita terbaru. Mungkin berisi kesalahan atau sudah tidak mutakhir, dan bukan merupakan saran investasi.';
 
   @override
-  String get errAiNotConfigured =>
-      'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
+  String get errAiUnreachable => 'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
 
   @override
   String errAiHttp(String status) {
@@ -539,8 +522,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get rangeFiveYears => '5T';
 
   @override
-  String get chartUnavailable =>
-      'Riwayat harga tidak tersedia dari sumber data saat ini.';
+  String get chartUnavailable => 'Riwayat harga tidak tersedia dari sumber data saat ini.';
 
   @override
   String get sectionStatements => 'Laporan keuangan (tahunan)';
@@ -567,8 +549,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get labelOperatingCashFlow => 'Arus kas operasi';
 
   @override
-  String get statementsUnavailable =>
-      'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
+  String get statementsUnavailable => 'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
 
   @override
   String get launchAtLogin => 'Jalankan saat masuk';
@@ -577,8 +558,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get hotkeyLabel => 'Pintasan global';
 
   @override
-  String get hotkeyRecordHint =>
-      'Klik di sini, lalu tekan kombinasi tombol yang baru';
+  String get hotkeyRecordHint => 'Klik di sini, lalu tekan kombinasi tombol yang baru';
 
   @override
   String get hotkeyReset => 'Setel ulang ke bawaan';
@@ -599,8 +579,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get removeFromFavorites => 'Hapus dari favorit';
 
   @override
-  String get noFavorites =>
-      'Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.';
+  String get noFavorites => 'Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.';
 
   @override
   String get displayCurrency => 'Mata uang tampilan';
@@ -647,8 +626,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get updateDownloading => 'Mengunduh pembaruan di latar belakang…';
 
   @override
-  String get updateDownloaded =>
-      'Pembaruan siap. Mulai ulang untuk memasangnya.';
+  String get updateDownloaded => 'Pembaruan siap. Mulai ulang untuk memasangnya.';
 
   @override
   String get updateNow => 'Perbarui';
@@ -657,8 +635,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get restartNow => 'Mulai ulang';
 
   @override
-  String get updatesViaStore =>
-      'Pembaruan diterima secara otomatis melalui toko aplikasi.';
+  String get updatesViaStore => 'Pembaruan diterima secara otomatis melalui toko aplikasi.';
 
   @override
   String get updateCheckFailed => 'Tidak dapat memeriksa pembaruan.';
@@ -706,8 +683,7 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Uji coba gratis Anda telah berakhir. Pilih paket untuk terus menganalisis.';
+  String get trialExpired => 'Uji coba gratis Anda telah berakhir. Pilih paket untuk terus menganalisis.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -773,8 +749,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Anda tidak memiliki analisis tersisa untuk periode ini. Tingkatkan paket Anda atau beli analisis tambahan.';
 
   @override
-  String get errTrialExpired =>
-      'Uji coba gratis Anda telah berakhir. Pilih paket untuk melanjutkan.';
+  String get errTrialExpired => 'Uji coba gratis Anda telah berakhir. Pilih paket untuk melanjutkan.';
 
   @override
   String get errNoPlan => 'Paket aktif diperlukan untuk analisis AI.';
@@ -786,8 +761,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get usageTitle => 'Penggunaan';
 
   @override
-  String get demoPurchaseNote =>
-      'Penagihan demo: pembelian di platform ini hanya simulasi.';
+  String get demoPurchaseNote => 'Penagihan demo: pembelian di platform ini hanya simulasi.';
 
   @override
   String get mostPopular => 'Paling populer';
@@ -798,4 +772,10 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.';
+
+  @override
+  String get searchLanguages => 'Cari bahasa…';
+
+  @override
+  String get noLanguageMatch => 'Tidak ada bahasa yang cocok.';
 }

@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Facturació de demostració: les compres se simulen en aquesta plataforma.",
   "mostPopular": "Més popular",
   "bestValue": "Millor relació qualitat-preu",
-  "planFeaturesCommon": "El reconeixement de fotos, les dades en temps real, els gràfics, els favorits i els 44 idiomes estan inclosos en tots els plans. La quota cobreix les anàlisis amb IA."
+  "planFeaturesCommon": "El reconeixement de fotos, les dades en temps real, els gràfics, els favorits i els 44 idiomes estan inclosos en tots els plans. La quota cobreix les anàlisis amb IA.",
+  "searchLanguages": "Cerca idiomes…",
+  "noLanguageMatch": "Cap idioma no coincideix."
 }

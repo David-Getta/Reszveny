@@ -230,5 +230,7 @@
   "demoPurchaseNote": "演示计费：此平台上的购买为模拟操作。",
   "mostPopular": "最受欢迎",
   "bestValue": "最超值",
-  "planFeaturesCommon": "所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。"
+  "planFeaturesCommon": "所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。",
+  "searchLanguages": "搜索语言…",
+  "noLanguageMatch": "没有匹配的语言。"
 }

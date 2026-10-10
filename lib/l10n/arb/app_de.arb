@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demo-Abrechnung: Käufe werden auf dieser Plattform nur simuliert.",
   "mostPopular": "Am beliebtesten",
   "bestValue": "Bestes Preis-Leistungs-Verhältnis",
-  "planFeaturesCommon": "Fotoerkennung, Live-Daten, Charts, Favoriten und alle 44 Sprachen sind in jedem Tarif enthalten. Das Kontingent gilt für KI-Analysen."
+  "planFeaturesCommon": "Fotoerkennung, Live-Daten, Charts, Favoriten und alle 44 Sprachen sind in jedem Tarif enthalten. Das Kontingent gilt für KI-Analysen.",
+  "searchLanguages": "Sprachen suchen…",
+  "noLanguageMatch": "Keine passende Sprache gefunden."
 }

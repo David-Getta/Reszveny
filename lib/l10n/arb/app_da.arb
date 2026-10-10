@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demofakturering: køb simuleres på denne platform.",
   "mostPopular": "Mest populær",
   "bestValue": "Bedste værdi",
-  "planFeaturesCommon": "Fotogenkendelse, livedata, diagrammer, favoritter og alle 44 sprog er inkluderet i alle planer. Kvoten dækker AI-analyser."
+  "planFeaturesCommon": "Fotogenkendelse, livedata, diagrammer, favoritter og alle 44 sprog er inkluderet i alle planer. Kvoten dækker AI-analyser.",
+  "searchLanguages": "Søg efter sprog…",
+  "noLanguageMatch": "Intet sprog matcher."
 }

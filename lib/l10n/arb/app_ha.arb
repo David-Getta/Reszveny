@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Biyan kuɗi na gwaji: ana kwaikwayon sayayya a wannan dandali.",
   "mostPopular": "Mafi shahara",
   "bestValue": "Mafi daraja",
-  "planFeaturesCommon": "Ganewar hoto, bayanai kai tsaye, jadawalai, abubuwan da aka fi so da duk harsuna 44 suna cikin kowane tsari. Rabon yana shafar nazarin AI ne."
+  "planFeaturesCommon": "Ganewar hoto, bayanai kai tsaye, jadawalai, abubuwan da aka fi so da duk harsuna 44 suna cikin kowane tsari. Rabon yana shafar nazarin AI ne.",
+  "searchLanguages": "Nemi harsuna…",
+  "noLanguageMatch": "Babu harshen da ya dace."
 }

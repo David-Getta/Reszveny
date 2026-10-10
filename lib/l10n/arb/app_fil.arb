@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demo billing: simulated lamang ang mga pagbili sa platform na ito.",
   "mostPopular": "Pinakasikat",
   "bestValue": "Pinakasulit",
-  "planFeaturesCommon": "Kasama sa bawat plan ang pagkilala ng larawan, live na data, mga chart, mga paborito at lahat ng 44 na wika. Para sa mga pagsusuri ng AI ang alokasyon."
+  "planFeaturesCommon": "Kasama sa bawat plan ang pagkilala ng larawan, live na data, mga chart, mga paborito at lahat ng 44 na wika. Para sa mga pagsusuri ng AI ang alokasyon.",
+  "searchLanguages": "Maghanap ng wika…",
+  "noLanguageMatch": "Walang tumutugmang wika."
 }

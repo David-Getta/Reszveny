@@ -306,12 +306,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Wachambuzi $count',
-      one: 'Mchambuzi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Wachambuzi $count', one: 'Mchambuzi 1');
     return '$_temp0';
   }
 
@@ -352,31 +347,25 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Huduma ya utambuzi haikuweza kuchakata picha hii.';
+  String get errRecognitionRefused => 'Huduma ya utambuzi haikuweza kuchakata picha hii.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
+  String get errRecognitionTruncated => 'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
+  String get errRecognitionBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
 
   @override
   String get errRecognitionEmpty => 'Huduma ya utambuzi imerudisha jibu tupu.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
+  String get errMarketUnreachable => 'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
 
   @override
-  String get errMarketRateLimited =>
-      'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
+  String get errMarketRateLimited => 'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +373,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
+  String get errMarketBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -485,8 +473,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get aiRegenerate => 'Tengeneza upya';
 
   @override
-  String get aiGenerating =>
-      'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
+  String get aiGenerating => 'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
 
   @override
   String get aiSources => 'Vyanzo';
@@ -501,12 +488,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Uchambuzi uliotengenezwa na AI kwa kutumia data ya umma na habari za hivi karibuni. Unaweza kuwa na makosa au kuwa umepitwa na wakati, na si ushauri wa uwekezaji.';
 
   @override
-  String get errAiNotConfigured =>
-      'Uchambuzi wa AI haujasanidiwa (hakuna ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Uchambuzi wa AI haujasanidiwa (hakuna ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
+  String get errAiUnreachable => 'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
 
   @override
   String errAiHttp(String status) {
@@ -538,8 +523,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
+  String get chartUnavailable => 'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
 
   @override
   String get sectionStatements => 'Taarifa za fedha (za mwaka)';
@@ -566,8 +550,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelOperatingCashFlow => 'Mtiririko wa fedha wa uendeshaji';
 
   @override
-  String get statementsUnavailable =>
-      'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
+  String get statementsUnavailable => 'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
 
   @override
   String get launchAtLogin => 'Anzisha wakati wa kuingia';
@@ -576,8 +559,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get hotkeyLabel => 'Njia ya mkato ya jumla';
 
   @override
-  String get hotkeyRecordHint =>
-      'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
+  String get hotkeyRecordHint => 'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
 
   @override
   String get hotkeyReset => 'Rejesha chaguo-msingi';
@@ -598,8 +580,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get removeFromFavorites => 'Ondoa kwenye vipendwa';
 
   @override
-  String get noFavorites =>
-      'Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.';
+  String get noFavorites => 'Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.';
 
   @override
   String get displayCurrency => 'Sarafu ya kuonyesha';
@@ -646,8 +627,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get updateDownloading => 'Inapakua sasisho chinichini…';
 
   @override
-  String get updateDownloaded =>
-      'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
+  String get updateDownloaded => 'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
 
   @override
   String get updateNow => 'Sasisha';
@@ -656,8 +636,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get restartNow => 'Anzisha upya';
 
   @override
-  String get updatesViaStore =>
-      'Masasisho hufika kiotomatiki kupitia duka la programu.';
+  String get updatesViaStore => 'Masasisho hufika kiotomatiki kupitia duka la programu.';
 
   @override
   String get updateCheckFailed => 'Imeshindwa kuangalia masasisho.';
@@ -705,8 +684,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.';
+  String get trialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -739,8 +717,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get extraPacksTitle => 'Unahitaji zaidi? Nunua uchambuzi wa ziada';
 
   @override
-  String get extraPacksHint =>
-      'Uchambuzi wa ziada hauishi muda na hutumika baada ya kiasi chako cha mwezi kumalizika.';
+  String get extraPacksHint => 'Uchambuzi wa ziada hauishi muda na hutumika baada ya kiasi chako cha mwezi kumalizika.';
 
   @override
   String get buy => 'Nunua';
@@ -772,8 +749,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Huna uchambuzi uliosalia kwa kipindi hiki. Boresha mpango wako au nunua uchambuzi wa ziada.';
 
   @override
-  String get errTrialExpired =>
-      'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea.';
+  String get errTrialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea.';
 
   @override
   String get errNoPlan => 'Mpango unaotumika unahitajika kwa uchambuzi wa AI.';
@@ -785,8 +761,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get usageTitle => 'Matumizi';
 
   @override
-  String get demoPurchaseNote =>
-      'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
+  String get demoPurchaseNote => 'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
 
   @override
   String get mostPopular => 'Maarufu zaidi';
@@ -797,4 +772,10 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 44 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI.';
+
+  @override
+  String get searchLanguages => 'Tafuta lugha…';
+
+  @override
+  String get noLanguageMatch => 'Hakuna lugha inayolingana.';
 }

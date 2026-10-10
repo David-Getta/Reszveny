@@ -303,12 +303,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析师',
-      one: '1 位分析师',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
     return '$_temp0';
   }
 
@@ -336,8 +331,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -464,8 +458,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
+  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
 
   @override
   String get aiGenerate => '生成分析';
@@ -674,12 +667,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '试用期剩余 $days 天',
-      one: '试用期剩余 1 天',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '试用期剩余 $days 天', one: '试用期剩余 1 天');
     return '$_temp0';
   }
 
@@ -768,8 +756,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bestValue => '最超值';
 
   @override
-  String get planFeaturesCommon =>
-      '所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。';
+  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。';
+
+  @override
+  String get searchLanguages => '搜索语言…';
+
+  @override
+  String get noLanguageMatch => '没有匹配的语言。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1070,12 +1063,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析員',
-      one: '1 位分析員',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
     return '$_temp0';
   }
 
@@ -1103,8 +1091,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -1231,8 +1218,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
+  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
 
   @override
   String get aiGenerate => '產生分析';
@@ -1441,12 +1427,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '試用期尚餘 $days 日',
-      one: '試用期尚餘 1 日',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '試用期尚餘 $days 日', one: '試用期尚餘 1 日');
     return '$_temp0';
   }
 
@@ -1535,6 +1516,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get bestValue => '最抵用';
 
   @override
-  String get planFeaturesCommon =>
-      '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。';
+  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。';
+
+  @override
+  String get searchLanguages => '搜尋語言…';
+
+  @override
+  String get noLanguageMatch => '沒有符合的語言。';
 }

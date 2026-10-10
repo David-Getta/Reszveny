@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demolaskutus: ostokset simuloidaan tällä alustalla.",
   "mostPopular": "Suosituin",
   "bestValue": "Paras vastine rahalle",
-  "planFeaturesCommon": "Kuvantunnistus, reaaliaikaiset tiedot, kaaviot, suosikit ja kaikki 44 kieltä sisältyvät jokaiseen pakettiin. Kiintiö koskee tekoälyanalyyseja."
+  "planFeaturesCommon": "Kuvantunnistus, reaaliaikaiset tiedot, kaaviot, suosikit ja kaikki 44 kieltä sisältyvät jokaiseen pakettiin. Kiintiö koskee tekoälyanalyyseja.",
+  "searchLanguages": "Hae kieliä…",
+  "noLanguageMatch": "Ei vastaavia kieliä."
 }

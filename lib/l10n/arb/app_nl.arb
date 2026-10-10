@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demofacturering: aankopen worden op dit platform gesimuleerd.",
   "mostPopular": "Populairst",
   "bestValue": "Beste prijs-kwaliteit",
-  "planFeaturesCommon": "Fotoherkenning, live gegevens, grafieken, favorieten en alle 44 talen zijn bij elk abonnement inbegrepen. Het tegoed geldt voor AI-analyses."
+  "planFeaturesCommon": "Fotoherkenning, live gegevens, grafieken, favorieten en alle 44 talen zijn bij elk abonnement inbegrepen. Het tegoed geldt voor AI-analyses.",
+  "searchLanguages": "Talen zoeken…",
+  "noLanguageMatch": "Geen taal gevonden."
 }

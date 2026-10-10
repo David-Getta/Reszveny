@@ -206,6 +206,17 @@ void main() {
     await _shot(tester, 'paywall');
   });
 
+  testWidgets('language picker', (tester) async {
+    await pumpApp(tester, _services(), const Size(1200, 900));
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('System default'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.widgetWithText(TextField, 'Search languages…'), 'ma');
+    await tester.pumpAndSettle();
+    await _shot(tester, 'language_picker');
+  });
+
   testWidgets('quick bar', (tester) async {
     tester.view.physicalSize = const Size(680, 84);
     tester.view.devicePixelRatio = 1;

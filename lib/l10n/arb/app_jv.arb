@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Tagihan demo: tukon ing platform iki mung simulasi.",
   "mostPopular": "Paling populer",
   "bestValue": "Paling untung",
-  "planFeaturesCommon": "Pangenalan foto, data langsung, grafik, favorit, lan kabeh 44 basa kalebu ing saben paket. Kuota ditrapake kanggo analisis AI."
+  "planFeaturesCommon": "Pangenalan foto, data langsung, grafik, favorit, lan kabeh 44 basa kalebu ing saben paket. Kuota ditrapake kanggo analisis AI.",
+  "searchLanguages": "Golek basa…",
+  "noLanguageMatch": "Ora ana basa sing cocog."
 }

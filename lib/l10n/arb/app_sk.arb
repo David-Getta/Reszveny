@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demo platby: nákupy sú na tejto platforme iba simulované.",
   "mostPopular": "Najobľúbenejší",
   "bestValue": "Najvýhodnejší",
-  "planFeaturesCommon": "Rozpoznávanie fotiek, živé dáta, grafy, obľúbené a všetkých 44 jazykov sú súčasťou každého tarifu. Limit sa vzťahuje na AI analýzy."
+  "planFeaturesCommon": "Rozpoznávanie fotiek, živé dáta, grafy, obľúbené a všetkých 44 jazykov sú súčasťou každého tarifu. Limit sa vzťahuje na AI analýzy.",
+  "searchLanguages": "Hľadať jazyky…",
+  "noLanguageMatch": "Žiadny jazyk nezodpovedá."
 }

@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demofakturering: köp simuleras på den här plattformen.",
   "mostPopular": "Populärast",
   "bestValue": "Bäst värde",
-  "planFeaturesCommon": "Fotoigenkänning, realtidsdata, diagram, favoriter och alla 44 språk ingår i varje plan. Kvoten gäller AI-analyser."
+  "planFeaturesCommon": "Fotoigenkänning, realtidsdata, diagram, favoriter och alla 44 språk ingår i varje plan. Kvoten gäller AI-analyser.",
+  "searchLanguages": "Sök språk…",
+  "noLanguageMatch": "Inget språk matchar."
 }

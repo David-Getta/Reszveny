@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Penagihan demo: pembelian di platform ini hanya simulasi.",
   "mostPopular": "Paling populer",
   "bestValue": "Paling hemat",
-  "planFeaturesCommon": "Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI."
+  "planFeaturesCommon": "Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.",
+  "searchLanguages": "Cari bahasa…",
+  "noLanguageMatch": "Tidak ada bahasa yang cocok."
 }

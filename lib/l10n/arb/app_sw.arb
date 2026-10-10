@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.",
   "mostPopular": "Maarufu zaidi",
   "bestValue": "Thamani bora",
-  "planFeaturesCommon": "Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 44 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI."
+  "planFeaturesCommon": "Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 44 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI.",
+  "searchLanguages": "Tafuta lugha…",
+  "noLanguageMatch": "Hakuna lugha inayolingana."
 }

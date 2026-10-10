@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demonstracinis atsiskaitymas: šioje platformoje pirkiniai yra imituojami.",
   "mostPopular": "Populiariausias",
   "bestValue": "Geriausias pasirinkimas",
-  "planFeaturesCommon": "Nuotraukų atpažinimas, tikralaikiai duomenys, grafikai, mėgstamiausi ir visos 44 kalbos įtrauktos į kiekvieną planą. Limitas taikomas DI analizėms."
+  "planFeaturesCommon": "Nuotraukų atpažinimas, tikralaikiai duomenys, grafikai, mėgstamiausi ir visos 44 kalbos įtrauktos į kiekvieną planą. Limitas taikomas DI analizėms.",
+  "searchLanguages": "Ieškoti kalbų…",
+  "noLanguageMatch": "Nė viena kalba neatitinka."
 }

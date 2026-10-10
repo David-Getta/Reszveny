@@ -8,6 +8,7 @@ import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
 import '../billing/paywall_page.dart';
 import '../billing/usage_chip.dart';
+import 'language_picker.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
@@ -108,22 +109,23 @@ class SettingsPage extends StatelessWidget {
                   ),
                   sectionTitle(l10n.language),
                   Card(
-                    child: RadioGroup<String?>(
-                      groupValue: current?.toLanguageTag(),
-                      onChanged: (tag) =>
-                          services.locale.setLocale(tag == null ? null : SupportedLocales.byTag(tag)?.locale),
-                      child: Column(
-                        children: [
-                          RadioListTile<String?>(value: null, title: Text(l10n.systemLanguage)),
-                          const Divider(height: 1),
-                          for (final lang in SupportedLocales.all)
-                            RadioListTile<String?>(
-                              value: lang.tag,
-                              title: Text(lang.nativeName),
-                              subtitle: lang.englishName == lang.nativeName ? null : Text(lang.englishName),
-                            ),
-                        ],
+                    child: ListTile(
+                      leading: const Icon(Icons.translate_rounded),
+                      title: Text(
+                        current == null ? l10n.systemLanguage : SupportedLocales.languageFor(current).nativeName,
                       ),
+                      subtitle: current == null
+                          ? Text(SupportedLocales.languageFor(Localizations.localeOf(context)).nativeName)
+                          : (SupportedLocales.languageFor(current).englishName ==
+                                    SupportedLocales.languageFor(current).nativeName
+                                ? null
+                                : Text(SupportedLocales.languageFor(current).englishName)),
+                      trailing: const Icon(Icons.expand_more_rounded),
+                      onTap: () async {
+                        final tag = await showLanguagePicker(context, currentTag: current?.toLanguageTag());
+                        if (tag == null) return;
+                        await services.locale.setLocale(tag.isEmpty ? null : SupportedLocales.byTag(tag)?.locale);
+                      },
                     ),
                   ),
                   sectionTitle(l10n.updates),

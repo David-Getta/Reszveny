@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demo faturalandırma: bu platformda satın alımlar simüle edilir.",
   "mostPopular": "En popüler",
   "bestValue": "En avantajlı",
-  "planFeaturesCommon": "Fotoğraf tanıma, canlı veriler, grafikler, favoriler ve 44 dilin tümü her planda dahildir. Hak, yapay zekâ analizlerini kapsar."
+  "planFeaturesCommon": "Fotoğraf tanıma, canlı veriler, grafikler, favoriler ve 44 dilin tümü her planda dahildir. Hak, yapay zekâ analizlerini kapsar.",
+  "searchLanguages": "Dil ara…",
+  "noLanguageMatch": "Eşleşen dil yok."
 }

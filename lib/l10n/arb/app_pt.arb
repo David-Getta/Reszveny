@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Faturação de demonstração: as compras são simuladas nesta plataforma.",
   "mostPopular": "Mais popular",
   "bestValue": "Melhor valor",
-  "planFeaturesCommon": "O reconhecimento de fotos, os dados em tempo real, os gráficos, os favoritos e os 44 idiomas estão incluídos em todos os planos. A quota cobre as análises com IA."
+  "planFeaturesCommon": "O reconhecimento de fotos, os dados em tempo real, os gráficos, os favoritos e os 44 idiomas estão incluídos em todos os planos. A quota cobre as análises com IA.",
+  "searchLanguages": "Pesquisar idiomas…",
+  "noLanguageMatch": "Nenhum idioma corresponde."
 }

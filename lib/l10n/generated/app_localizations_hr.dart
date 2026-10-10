@@ -111,8 +111,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorGeneric => 'Nešto je pošlo po krivu.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Ovaj odjeljak nije bilo moguće učitati.';
+  String get errorSectionUnavailable => 'Ovaj odjeljak nije bilo moguće učitati.';
 
   @override
   String get notAvailable => 'n/d';
@@ -345,8 +344,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Prepoznavanje slika nije postavljeno (nema ANTHROPIC_API_KEY). Ručno unesite ticker.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Nije moguće dohvatiti servis za prepoznavanje. Provjerite internetsku vezu.';
+  String get errRecognitionUnreachable => 'Nije moguće dohvatiti servis za prepoznavanje. Provjerite internetsku vezu.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -354,32 +352,25 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Servis za prepoznavanje nije mogao obraditi ovu sliku.';
+  String get errRecognitionRefused => 'Servis za prepoznavanje nije mogao obraditi ovu sliku.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odgovor prepoznavanja je prekinut. Pokušajte ponovno.';
+  String get errRecognitionTruncated => 'Odgovor prepoznavanja je prekinut. Pokušajte ponovno.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočekivan odgovor servisa za prepoznavanje.';
+  String get errRecognitionBadResponse => 'Neočekivan odgovor servisa za prepoznavanje.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Servis za prepoznavanje vratio je prazan odgovor.';
+  String get errRecognitionEmpty => 'Servis za prepoznavanje vratio je prazan odgovor.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tržišni podaci nisu postavljeni (nema FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Tržišni podaci nisu postavljeni (nema FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Nije moguće dohvatiti servis tržišnih podataka. Provjerite internetsku vezu.';
+  String get errMarketUnreachable => 'Nije moguće dohvatiti servis tržišnih podataka. Provjerite internetsku vezu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Previše zahtjeva prema servisu tržišnih podataka. Pričekajte minutu.';
+  String get errMarketRateLimited => 'Previše zahtjeva prema servisu tržišnih podataka. Pričekajte minutu.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +378,7 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočekivan odgovor servisa tržišnih podataka.';
+  String get errMarketBadResponse => 'Neočekivan odgovor servisa tržišnih podataka.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +478,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get aiRegenerate => 'Generiraj ponovno';
 
   @override
-  String get aiGenerating =>
-      'Pripremamo analizu… ovo može potrajati minutu ili dvije.';
+  String get aiGenerating => 'Pripremamo analizu… ovo može potrajati minutu ili dvije.';
 
   @override
   String get aiSources => 'Izvori';
@@ -504,12 +493,10 @@ class AppLocalizationsHr extends AppLocalizations {
       'Analiza koju je generirala umjetna inteligencija na temelju javnih podataka i nedavnih vijesti. Može sadržavati greške ili biti zastarjela i nije investicijski savjet.';
 
   @override
-  String get errAiNotConfigured =>
-      'AI analiza nije postavljena (nema ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'AI analiza nije postavljena (nema ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Nije moguće dohvatiti AI servis. Provjerite internetsku vezu.';
+  String get errAiUnreachable => 'Nije moguće dohvatiti AI servis. Provjerite internetsku vezu.';
 
   @override
   String errAiHttp(String status) {
@@ -541,8 +528,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get rangeFiveYears => '5G';
 
   @override
-  String get chartUnavailable =>
-      'Povijest cijena nije dostupna iz trenutnog izvora podataka.';
+  String get chartUnavailable => 'Povijest cijena nije dostupna iz trenutnog izvora podataka.';
 
   @override
   String get sectionStatements => 'Financijski izvještaji (godišnji)';
@@ -569,8 +555,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operativni novčani tok';
 
   @override
-  String get statementsUnavailable =>
-      'Objavljeni financijski izvještaji nisu dostupni za ovu dionicu.';
+  String get statementsUnavailable => 'Objavljeni financijski izvještaji nisu dostupni za ovu dionicu.';
 
   @override
   String get launchAtLogin => 'Pokreni pri prijavi';
@@ -579,8 +564,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get hotkeyLabel => 'Globalni prečac';
 
   @override
-  String get hotkeyRecordHint =>
-      'Kliknite ovdje, a zatim pritisnite novu kombinaciju tipki';
+  String get hotkeyRecordHint => 'Kliknite ovdje, a zatim pritisnite novu kombinaciju tipki';
 
   @override
   String get hotkeyReset => 'Vrati na zadano';
@@ -601,8 +585,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get removeFromFavorites => 'Ukloni iz favorita';
 
   @override
-  String get noFavorites =>
-      'Još nema favorita. Dodirnite zvjezdicu pored dionice da biste je dodali.';
+  String get noFavorites => 'Još nema favorita. Dodirnite zvjezdicu pored dionice da biste je dodali.';
 
   @override
   String get displayCurrency => 'Valuta prikaza';
@@ -649,8 +632,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get updateDownloading => 'Ažuriranje se preuzima u pozadini…';
 
   @override
-  String get updateDownloaded =>
-      'Ažuriranje je spremno. Ponovno pokrenite aplikaciju da biste ga instalirali.';
+  String get updateDownloaded => 'Ažuriranje je spremno. Ponovno pokrenite aplikaciju da biste ga instalirali.';
 
   @override
   String get updateNow => 'Ažuriraj';
@@ -659,8 +641,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get restartNow => 'Ponovno pokreni';
 
   @override
-  String get updatesViaStore =>
-      'Ažuriranja stižu automatski putem trgovine aplikacija.';
+  String get updatesViaStore => 'Ažuriranja stižu automatski putem trgovine aplikacija.';
 
   @override
   String get updateCheckFailed => 'Nije moguće provjeriti ažuriranja.';
@@ -764,8 +745,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get extraPacksTitle => 'Trebate više? Kupite dodatne analize';
 
   @override
-  String get extraPacksHint =>
-      'Dodatne analize nikada ne istječu i koriste se nakon mjesečne kvote.';
+  String get extraPacksHint => 'Dodatne analize nikada ne istječu i koriste se nakon mjesečne kvote.';
 
   @override
   String get buy => 'Kupi';
@@ -793,12 +773,10 @@ class AppLocalizationsHr extends AppLocalizations {
       'Kupnje još nisu dostupne na ovoj platformi. Pretplatite se na telefonu ili Macu; vaš plan radit će na svim uređajima.';
 
   @override
-  String get errQuotaExceeded =>
-      'Nemate više analiza u ovom razdoblju. Nadogradite plan ili kupite dodatne analize.';
+  String get errQuotaExceeded => 'Nemate više analiza u ovom razdoblju. Nadogradite plan ili kupite dodatne analize.';
 
   @override
-  String get errTrialExpired =>
-      'Vaše besplatno probno razdoblje je završilo. Odaberite plan da biste nastavili.';
+  String get errTrialExpired => 'Vaše besplatno probno razdoblje je završilo. Odaberite plan da biste nastavili.';
 
   @override
   String get errNoPlan => 'Za AI analizu potreban je aktivan plan.';
@@ -810,8 +788,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get usageTitle => 'Potrošnja';
 
   @override
-  String get demoPurchaseNote =>
-      'Demo naplata: kupnje se na ovoj platformi simuliraju.';
+  String get demoPurchaseNote => 'Demo naplata: kupnje se na ovoj platformi simuliraju.';
 
   @override
   String get mostPopular => 'Najpopularniji';
@@ -822,4 +799,10 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'Prepoznavanje fotografija, podaci u stvarnom vremenu, grafikoni, favoriti i sva 44 jezika uključeni su u svaki plan. Kvota se odnosi na AI analize.';
+
+  @override
+  String get searchLanguages => 'Pretraži jezike…';
+
+  @override
+  String get noLanguageMatch => 'Nijedan jezik ne odgovara.';
 }

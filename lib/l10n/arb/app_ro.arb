@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Facturare demonstrativă: achizițiile sunt simulate pe această platformă.",
   "mostPopular": "Cel mai popular",
   "bestValue": "Cel mai avantajos",
-  "planFeaturesCommon": "Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 44 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI."
+  "planFeaturesCommon": "Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 44 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI.",
+  "searchLanguages": "Caută limbi…",
+  "noLanguageMatch": "Nicio limbă nu se potrivește."
 }

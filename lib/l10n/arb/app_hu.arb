@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Demó számlázás: ezen a platformon a vásárlások csak szimuláltak.",
   "mostPopular": "Legnépszerűbb",
   "bestValue": "Legjobb ár-érték",
-  "planFeaturesCommon": "A fotófelismerés, az élő adatok, a grafikonok, a kedvencek és mind a 44 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik."
+  "planFeaturesCommon": "A fotófelismerés, az élő adatok, a grafikonok, a kedvencek és mind a 44 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik.",
+  "searchLanguages": "Nyelv keresése…",
+  "noLanguageMatch": "Nincs találat a nyelvek között."
 }

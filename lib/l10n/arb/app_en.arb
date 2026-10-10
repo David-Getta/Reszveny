@@ -434,5 +434,7 @@
   "demoPurchaseNote": "Demo billing: purchases are simulated on this platform.",
   "mostPopular": "Most popular",
   "bestValue": "Best value",
-  "planFeaturesCommon": "Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses."
+  "planFeaturesCommon": "Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.",
+  "searchLanguages": "Search languages…",
+  "noLanguageMatch": "No language matches."
 }

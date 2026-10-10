@@ -354,32 +354,26 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -503,12 +496,10 @@ class AppLocalizationsUk extends AppLocalizations {
       'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
 
   @override
-  String get errAiNotConfigured =>
-      'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
 
   @override
   String errAiHttp(String status) {
@@ -540,8 +531,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get rangeFiveYears => '5Р';
 
   @override
-  String get chartUnavailable =>
-      'Історія цін недоступна в поточному джерелі даних.';
+  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
 
   @override
   String get sectionStatements => 'Фінансова звітність (річна)';
@@ -568,8 +558,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операційний грошовий потік';
 
   @override
-  String get statementsUnavailable =>
-      'Опублікована фінансова звітність для цієї акції недоступна.';
+  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
 
   @override
   String get launchAtLogin => 'Запускати під час входу в систему';
@@ -578,8 +567,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hotkeyLabel => 'Глобальне сполучення клавіш';
 
   @override
-  String get hotkeyRecordHint =>
-      'Натисніть тут, а потім натисніть нове сполучення клавіш';
+  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
 
   @override
   String get hotkeyReset => 'Скинути до типового';
@@ -600,8 +588,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get removeFromFavorites => 'Видалити з обраного';
 
   @override
-  String get noFavorites =>
-      'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+  String get noFavorites => 'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
 
   @override
   String get displayCurrency => 'Валюта відображення';
@@ -648,8 +635,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get updateDownloading => 'Оновлення завантажується у фоновому режимі…';
 
   @override
-  String get updateDownloaded =>
-      'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
+  String get updateDownloaded => 'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
 
   @override
   String get updateNow => 'Оновити';
@@ -658,8 +644,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get restartNow => 'Перезапустити';
 
   @override
-  String get updatesViaStore =>
-      'Оновлення надходять автоматично через магазин застосунків.';
+  String get updatesViaStore => 'Оновлення надходять автоматично через магазин застосунків.';
 
   @override
   String get updateCheckFailed => 'Не вдалося перевірити оновлення.';
@@ -725,8 +710,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити аналізувати.';
+  String get trialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити аналізувати.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -800,8 +784,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'У цьому періоді у вас не залишилося аналізів. Перейдіть на вищий тариф або придбайте додаткові аналізи.';
 
   @override
-  String get errTrialExpired =>
-      'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити.';
+  String get errTrialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити.';
 
   @override
   String get errNoPlan => 'Для ШІ-аналізу потрібен активний тариф.';
@@ -813,8 +796,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get usageTitle => 'Використання';
 
   @override
-  String get demoPurchaseNote =>
-      'Демо-режим оплати: на цій платформі покупки імітуються.';
+  String get demoPurchaseNote => 'Демо-режим оплати: на цій платформі покупки імітуються.';
 
   @override
   String get mostPopular => 'Найпопулярніший';
@@ -825,4 +807,10 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'Розпізнавання фото, дані в реальному часі, графіки, обране та всі 44 мови включені в кожний тариф. Ліміт стосується ШІ-аналізів.';
+
+  @override
+  String get searchLanguages => 'Пошук мов…';
+
+  @override
+  String get noLanguageMatch => 'Жодна мова не знайдена.';
 }

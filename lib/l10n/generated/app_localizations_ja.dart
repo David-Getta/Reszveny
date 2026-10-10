@@ -54,8 +54,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noCandidatesTitle => '銘柄を認識できませんでした';
 
   @override
-  String get noCandidatesBody =>
-      'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
+  String get noCandidatesBody => 'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
 
   @override
   String get whatWeSaw => '認識した内容';
@@ -81,8 +80,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about => 'このアプリについて';
 
   @override
-  String get disclaimer =>
-      'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
+  String get disclaimer => 'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
 
   @override
   String dataSource(String source) {
@@ -305,12 +303,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'アナリスト$count名',
-      one: 'アナリスト1名',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'アナリスト$count名', one: 'アナリスト1名');
     return '$_temp0';
   }
 
@@ -338,12 +331,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recognitionRawText => '画像から読み取ったテキスト';
 
   @override
-  String get errMissingAnthropicKey =>
-      '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
+  String get errMissingAnthropicKey => '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
 
   @override
-  String get errRecognitionUnreachable =>
-      '認識サービスに接続できませんでした。インターネット接続を確認してください。';
+  String get errRecognitionUnreachable => '認識サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errRecognitionHttp(String status) {
@@ -467,8 +458,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、心理・社会・テクニカル・マクロの観点からのシナリオを含む株価見通し、注目ポイント。';
+  String get aiIntro => 'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、心理・社会・テクニカル・マクロの観点からのシナリオを含む株価見通し、注目ポイント。';
 
   @override
   String get aiGenerate => '分析を生成';
@@ -488,8 +478,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer =>
-      '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
+  String get aiDisclaimer => '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
 
   @override
   String get errAiNotConfigured => 'AI 分析が設定されていません（ANTHROPIC_API_KEY がありません）。';
@@ -678,12 +667,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'トライアル残り $days 日',
-      one: 'トライアル残り 1 日',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'トライアル残り $days 日', one: 'トライアル残り 1 日');
     return '$_temp0';
   }
 
@@ -745,12 +729,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get purchaseCanceled => '購入がキャンセルされました。';
 
   @override
-  String get billingUnavailable =>
-      'このプラットフォームではまだ購入できません。スマートフォンまたは Mac で登録すると、プランはすべてのデバイスで利用できます。';
+  String get billingUnavailable => 'このプラットフォームではまだ購入できません。スマートフォンまたは Mac で登録すると、プランはすべてのデバイスで利用できます。';
 
   @override
-  String get errQuotaExceeded =>
-      '今期の分析回数を使い切りました。プランをアップグレードするか、追加分析を購入してください。';
+  String get errQuotaExceeded => '今期の分析回数を使い切りました。プランをアップグレードするか、追加分析を購入してください。';
 
   @override
   String get errTrialExpired => '無料トライアルが終了しました。続けるにはプランを選択してください。';
@@ -774,6 +756,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get bestValue => '最もお得';
 
   @override
-  String get planFeaturesCommon =>
-      '写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
+  String get planFeaturesCommon => '写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
+
+  @override
+  String get searchLanguages => '言語を検索…';
+
+  @override
+  String get noLanguageMatch => '一致する言語がありません。';
 }

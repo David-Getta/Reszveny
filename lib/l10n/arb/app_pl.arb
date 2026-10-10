@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Rozliczenia demo: zakupy na tej platformie są symulowane.",
   "mostPopular": "Najpopularniejszy",
   "bestValue": "Najkorzystniejszy",
-  "planFeaturesCommon": "Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 44 języki są dostępne w każdym planie. Limit dotyczy analiz AI."
+  "planFeaturesCommon": "Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 44 języki są dostępne w każdym planie. Limit dotyczy analiz AI.",
+  "searchLanguages": "Szukaj języków…",
+  "noLanguageMatch": "Brak pasujących języków."
 }

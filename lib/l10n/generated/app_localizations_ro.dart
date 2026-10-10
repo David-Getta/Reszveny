@@ -111,8 +111,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorGeneric => 'Ceva nu a funcționat.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Această secțiune nu a putut fi încărcată.';
+  String get errorSectionUnavailable => 'Această secțiune nu a putut fi încărcată.';
 
   @override
   String get notAvailable => 'n/a';
@@ -354,32 +353,26 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Serviciul de recunoaștere nu a putut procesa această imagine.';
+  String get errRecognitionRefused => 'Serviciul de recunoaștere nu a putut procesa această imagine.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
+  String get errRecognitionTruncated => 'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Răspuns neașteptat de la serviciul de recunoaștere.';
+  String get errRecognitionBadResponse => 'Răspuns neașteptat de la serviciul de recunoaștere.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Serviciul de recunoaștere a returnat un răspuns gol.';
+  String get errRecognitionEmpty => 'Serviciul de recunoaștere a returnat un răspuns gol.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nu s-a putut contacta serviciul de date de piață. Verifică conexiunea la internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
+  String get errMarketRateLimited => 'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +380,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Răspuns neașteptat de la serviciul de date de piață.';
+  String get errMarketBadResponse => 'Răspuns neașteptat de la serviciul de date de piață.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,8 +480,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get aiRegenerate => 'Regenerează';
 
   @override
-  String get aiGenerating =>
-      'Se pregătește analiza… poate dura un minut sau două.';
+  String get aiGenerating => 'Se pregătește analiza… poate dura un minut sau două.';
 
   @override
   String get aiSources => 'Surse';
@@ -504,12 +495,10 @@ class AppLocalizationsRo extends AppLocalizations {
       'Analiză generată de AI pe baza datelor publice și a știrilor recente. Poate conține erori sau poate fi depășită și nu reprezintă un sfat de investiții.';
 
   @override
-  String get errAiNotConfigured =>
-      'Analiza AI nu este configurată (lipsește ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Analiza AI nu este configurată (lipsește ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable =>
-      'Nu s-a putut contacta serviciul AI. Verifică conexiunea la internet.';
+  String get errAiUnreachable => 'Nu s-a putut contacta serviciul AI. Verifică conexiunea la internet.';
 
   @override
   String errAiHttp(String status) {
@@ -517,8 +506,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Serviciul AI a refuzat să analizeze această acțiune.';
+  String get errAiRefused => 'Serviciul AI a refuzat să analizeze această acțiune.';
 
   @override
   String get errAiBadResponse => 'Răspuns neașteptat de la serviciul AI.';
@@ -542,8 +530,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable =>
-      'Istoricul prețurilor nu este disponibil de la sursa de date curentă.';
+  String get chartUnavailable => 'Istoricul prețurilor nu este disponibil de la sursa de date curentă.';
 
   @override
   String get sectionStatements => 'Situații financiare (anuale)';
@@ -570,8 +557,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flux de numerar operațional';
 
   @override
-  String get statementsUnavailable =>
-      'Nu sunt disponibile situații financiare raportate pentru această acțiune.';
+  String get statementsUnavailable => 'Nu sunt disponibile situații financiare raportate pentru această acțiune.';
 
   @override
   String get launchAtLogin => 'Pornește la autentificare';
@@ -580,8 +566,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get hotkeyLabel => 'Scurtătură globală';
 
   @override
-  String get hotkeyRecordHint =>
-      'Dă clic aici, apoi apasă noua combinație de taste';
+  String get hotkeyRecordHint => 'Dă clic aici, apoi apasă noua combinație de taste';
 
   @override
   String get hotkeyReset => 'Resetează la valoarea implicită';
@@ -602,8 +587,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get removeFromFavorites => 'Elimină din favorite';
 
   @override
-  String get noFavorites =>
-      'Nu există favorite încă. Atinge steluța unei acțiuni pentru a o adăuga.';
+  String get noFavorites => 'Nu există favorite încă. Atinge steluța unei acțiuni pentru a o adăuga.';
 
   @override
   String get displayCurrency => 'Monedă de afișare';
@@ -650,8 +634,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get updateDownloading => 'Actualizarea se descarcă în fundal…';
 
   @override
-  String get updateDownloaded =>
-      'Actualizarea este gata. Repornește pentru a o instala.';
+  String get updateDownloaded => 'Actualizarea este gata. Repornește pentru a o instala.';
 
   @override
   String get updateNow => 'Actualizează';
@@ -660,8 +643,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get restartNow => 'Repornește';
 
   @override
-  String get updatesViaStore =>
-      'Actualizările sosesc automat prin magazinul de aplicații.';
+  String get updatesViaStore => 'Actualizările sosesc automat prin magazinul de aplicații.';
 
   @override
   String get updateCheckFailed => 'Nu s-au putut căuta actualizări.';
@@ -717,8 +699,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua analizele.';
+  String get trialExpired => 'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua analizele.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -755,12 +736,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get perMonth => '/ lună';
 
   @override
-  String get extraPacksTitle =>
-      'Ai nevoie de mai multe? Cumpără analize suplimentare';
+  String get extraPacksTitle => 'Ai nevoie de mai multe? Cumpără analize suplimentare';
 
   @override
-  String get extraPacksHint =>
-      'Analizele suplimentare nu expiră niciodată și sunt folosite după cota ta lunară.';
+  String get extraPacksHint => 'Analizele suplimentare nu expiră niciodată și sunt folosite după cota ta lunară.';
 
   @override
   String get buy => 'Cumpără';
@@ -792,8 +771,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Nu mai ai analize în această perioadă. Treci la un plan superior sau cumpără analize suplimentare.';
 
   @override
-  String get errTrialExpired =>
-      'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua.';
+  String get errTrialExpired => 'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua.';
 
   @override
   String get errNoPlan => 'Pentru analiza AI este necesar un plan activ.';
@@ -805,8 +783,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get usageTitle => 'Utilizare';
 
   @override
-  String get demoPurchaseNote =>
-      'Facturare demonstrativă: achizițiile sunt simulate pe această platformă.';
+  String get demoPurchaseNote => 'Facturare demonstrativă: achizițiile sunt simulate pe această platformă.';
 
   @override
   String get mostPopular => 'Cel mai popular';
@@ -817,4 +794,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get planFeaturesCommon =>
       'Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 44 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI.';
+
+  @override
+  String get searchLanguages => 'Caută limbi…';
+
+  @override
+  String get noLanguageMatch => 'Nicio limbă nu se potrivește.';
 }

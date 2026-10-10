@@ -230,5 +230,7 @@
   "demoPurchaseNote": "Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.",
   "mostPopular": "Phổ biến nhất",
   "bestValue": "Đáng giá nhất",
-  "planFeaturesCommon": "Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 44 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI."
+  "planFeaturesCommon": "Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 44 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI.",
+  "searchLanguages": "Tìm ngôn ngữ…",
+  "noLanguageMatch": "Không có ngôn ngữ phù hợp."
 }
