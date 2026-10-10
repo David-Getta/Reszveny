@@ -617,46 +617,47 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'اپ ڈیٹس';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'ورژن $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'اپ ڈیٹس خودکار طور پر انسٹال کریں';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'اپ ڈیٹس چیک کریں';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'اپ ڈیٹس چیک کی جا رہی ہیں…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'آپ تازہ ترین ورژن استعمال کر رہے ہیں۔';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'ورژن $version دستیاب ہے۔';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'اپ ڈیٹ پس منظر میں ڈاؤن لوڈ ہو رہی ہے…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'اپ ڈیٹ تیار ہے۔ انسٹال کرنے کے لیے دوبارہ شروع کریں۔';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'اپ ڈیٹ کریں';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'دوبارہ شروع کریں';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'اپ ڈیٹس ایپ اسٹور کے ذریعے خودکار طور پر موصول ہوتی ہیں۔';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'اپ ڈیٹس چیک نہیں کی جا سکیں۔';
 }

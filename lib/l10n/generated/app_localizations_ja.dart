@@ -603,46 +603,45 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'アップデート';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'バージョン $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'アップデートを自動的にインストール';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'アップデートを確認';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'アップデートを確認中…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => '最新バージョンをご利用中です。';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'バージョン $version が利用可能です。';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'バックグラウンドでアップデートをダウンロード中…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded => 'アップデートの準備ができました。再起動してインストールしてください。';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'アップデート';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => '再起動';
 
   @override
-  String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+  String get updatesViaStore => 'アップデートはアプリストアから自動的に配信されます。';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'アップデートを確認できませんでした。';
 }

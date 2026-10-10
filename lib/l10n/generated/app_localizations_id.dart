@@ -619,46 +619,47 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Pembaruan';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versi $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Pasang pembaruan secara otomatis';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Periksa pembaruan';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Memeriksa pembaruan…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Anda sudah menggunakan versi terbaru.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versi $version tersedia.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Mengunduh pembaruan di latar belakang…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Pembaruan siap. Mulai ulang untuk memasangnya.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Perbarui';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Mulai ulang';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Pembaruan diterima secara otomatis melalui toko aplikasi.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Tidak dapat memeriksa pembaruan.';
 }

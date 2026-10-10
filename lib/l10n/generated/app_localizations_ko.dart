@@ -603,46 +603,45 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => '업데이트';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return '버전 $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => '업데이트 자동 설치';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => '업데이트 확인';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => '업데이트 확인 중…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => '최신 버전을 사용하고 있습니다.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return '$version 버전을 사용할 수 있습니다.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => '백그라운드에서 업데이트를 다운로드하는 중…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded => '업데이트가 준비되었습니다. 설치하려면 다시 시작하세요.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => '업데이트';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => '다시 시작';
 
   @override
-  String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+  String get updatesViaStore => '업데이트는 앱 스토어를 통해 자동으로 제공됩니다.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => '업데이트를 확인할 수 없습니다.';
 }

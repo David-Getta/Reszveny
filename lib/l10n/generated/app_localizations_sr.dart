@@ -620,46 +620,47 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Ажурирања';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Верзија $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Аутоматски инсталирај ажурирања';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Потражи ажурирања';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Тражење ажурирања…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Имате најновију верзију.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Доступна је верзија $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Ажурирање се преузима у позадини…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Ажурирање је спремно. Поново покрените апликацију да бисте га инсталирали.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Ажурирај';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Поново покрени';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Ажурирања стижу аутоматски преко продавнице апликација.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Није могуће потражити ажурирања.';
 }

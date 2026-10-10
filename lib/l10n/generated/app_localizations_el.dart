@@ -622,46 +622,47 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Ενημερώσεις';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Έκδοση $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Αυτόματη εγκατάσταση ενημερώσεων';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Έλεγχος για ενημερώσεις';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Έλεγχος για ενημερώσεις…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Έχετε την πιο πρόσφατη έκδοση.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Η έκδοση $version είναι διαθέσιμη.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Λήψη της ενημέρωσης στο παρασκήνιο…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Ενημέρωση';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Επανεκκίνηση';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις.';
 }

@@ -620,46 +620,48 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'புதுப்பிப்புகள்';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'பதிப்பு $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'புதுப்பிப்புகளைத் தானாக நிறுவு';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'புதுப்பிப்புகளைச் சரிபார்';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'புதுப்பிப்புகளைச் சரிபார்க்கிறது…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'நீங்கள் சமீபத்திய பதிப்பில் உள்ளீர்கள்.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'பதிப்பு $version கிடைக்கிறது.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading =>
+      'புதுப்பிப்பு பின்னணியில் பதிவிறக்கப்படுகிறது…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'புதுப்பிப்பு தயார். நிறுவ மீண்டும் தொடங்குங்கள்.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'புதுப்பி';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'மீண்டும் தொடங்கு';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'புதுப்பிப்புகள் ஆப் ஸ்டோர் வழியாகத் தானாகவே வருகின்றன.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'புதுப்பிப்புகளைச் சரிபார்க்க முடியவில்லை.';
 }

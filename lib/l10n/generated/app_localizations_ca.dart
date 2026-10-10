@@ -622,46 +622,48 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Actualitzacions';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versió $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Instal·la les actualitzacions automàticament';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Cerca actualitzacions';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'S’estan cercant actualitzacions…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Tens la versió més recent.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'La versió $version està disponible.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading =>
+      'S’està baixant l’actualització en segon pla…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'L’actualització està a punt. Reinicia per instal·lar-la.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Actualitza';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Reinicia';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Les actualitzacions arriben automàticament a través de la botiga d’aplicacions.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'No s’han pogut cercar actualitzacions.';
 }

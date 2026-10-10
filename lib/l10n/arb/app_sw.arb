@@ -180,5 +180,18 @@
   "displayCurrency": "Sarafu ya kuonyesha",
   "displayCurrencyNone": "Sarafu ya hisa yenyewe pekee",
   "labelConverted": "≈ kwa {currency}",
-  "fxRateNote": "Kiwango: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kiwango: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Masasisho",
+  "currentVersion": "Toleo {version}",
+  "autoUpdate": "Sakinisha masasisho kiotomatiki",
+  "checkForUpdates": "Angalia masasisho",
+  "updateChecking": "Inaangalia masasisho…",
+  "updateUpToDate": "Unatumia toleo jipya zaidi.",
+  "updateAvailable": "Toleo {version} linapatikana.",
+  "updateDownloading": "Inapakua sasisho chinichini…",
+  "updateDownloaded": "Sasisho liko tayari. Anzisha upya ili kulisakinisha.",
+  "updateNow": "Sasisha",
+  "restartNow": "Anzisha upya",
+  "updatesViaStore": "Masasisho hufika kiotomatiki kupitia duka la programu.",
+  "updateCheckFailed": "Imeshindwa kuangalia masasisho."
 }

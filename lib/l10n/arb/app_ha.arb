@@ -180,5 +180,18 @@
   "displayCurrency": "Nau’in kuɗin nunawa",
   "displayCurrencyNone": "Nau’in kuɗin hannun jarin kaɗai",
   "labelConverted": "≈ a {currency}",
-  "fxRateNote": "Farashin canji: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Farashin canji: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Sabuntawa",
+  "currentVersion": "Sigar {version}",
+  "autoUpdate": "Shigar da sabuntawa ta atomatik",
+  "checkForUpdates": "Duba sabuntawa",
+  "updateChecking": "Ana duba sabuntawa…",
+  "updateUpToDate": "Kana amfani da sabuwar siga.",
+  "updateAvailable": "Sigar {version} tana nan.",
+  "updateDownloading": "Ana sauke sabuntawa a bayan fage…",
+  "updateDownloaded": "Sabuntawa ta shirya. Sake kunna don shigar da ita.",
+  "updateNow": "Sabunta",
+  "restartNow": "Sake kunna",
+  "updatesViaStore": "Sabuntawa suna zuwa ta atomatik ta hanyar shagon manhaja.",
+  "updateCheckFailed": "Ba a iya duba sabuntawa ba."
 }

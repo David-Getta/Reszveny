@@ -620,46 +620,47 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Anyaran';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versi $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Instal anyaran kanthi otomatis';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Priksa anyaran';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Lagi mriksa anyaran…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Sampeyan wis nganggo versi paling anyar.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versi $version wis kasedhiya.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Lagi ngundhuh anyaran ing latar mburi…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Anyaran wis siyap. Wiwiti maneh kanggo nginstal.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Nganyari';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Wiwiti maneh';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Anyaran ditampa kanthi otomatis liwat toko aplikasi.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Ora bisa mriksa anyaran.';
 }

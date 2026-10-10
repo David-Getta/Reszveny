@@ -180,5 +180,18 @@
   "displayCurrency": "表示通貨",
   "displayCurrencyNone": "銘柄の通貨のみ",
   "labelConverted": "≈ {currency}換算",
-  "fxRateNote": "レート：1 {from} = {rate} {to}（ECB、{date}）"
+  "fxRateNote": "レート：1 {from} = {rate} {to}（ECB、{date}）",
+  "updates": "アップデート",
+  "currentVersion": "バージョン {version}",
+  "autoUpdate": "アップデートを自動的にインストール",
+  "checkForUpdates": "アップデートを確認",
+  "updateChecking": "アップデートを確認中…",
+  "updateUpToDate": "最新バージョンをご利用中です。",
+  "updateAvailable": "バージョン {version} が利用可能です。",
+  "updateDownloading": "バックグラウンドでアップデートをダウンロード中…",
+  "updateDownloaded": "アップデートの準備ができました。再起動してインストールしてください。",
+  "updateNow": "アップデート",
+  "restartNow": "再起動",
+  "updatesViaStore": "アップデートはアプリストアから自動的に配信されます。",
+  "updateCheckFailed": "アップデートを確認できませんでした。"
 }

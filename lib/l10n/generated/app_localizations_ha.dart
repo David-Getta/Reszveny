@@ -622,46 +622,47 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Sabuntawa';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Sigar $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Shigar da sabuntawa ta atomatik';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Duba sabuntawa';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Ana duba sabuntawa…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Kana amfani da sabuwar siga.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Sigar $version tana nan.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Ana sauke sabuntawa a bayan fage…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Sabuntawa ta shirya. Sake kunna don shigar da ita.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Sabunta';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Sake kunna';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Sabuntawa suna zuwa ta atomatik ta hanyar shagon manhaja.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Ba a iya duba sabuntawa ba.';
 }

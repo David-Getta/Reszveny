@@ -180,5 +180,18 @@
   "displayCurrency": "ڈسپلے کرنسی",
   "displayCurrencyNone": "صرف شیئر کی اپنی کرنسی",
   "labelConverted": "≈ {currency} میں",
-  "fxRateNote": "شرح: 1 {from} = {rate} {to} (ECB، {date})"
+  "fxRateNote": "شرح: 1 {from} = {rate} {to} (ECB، {date})",
+  "updates": "اپ ڈیٹس",
+  "currentVersion": "ورژن {version}",
+  "autoUpdate": "اپ ڈیٹس خودکار طور پر انسٹال کریں",
+  "checkForUpdates": "اپ ڈیٹس چیک کریں",
+  "updateChecking": "اپ ڈیٹس چیک کی جا رہی ہیں…",
+  "updateUpToDate": "آپ تازہ ترین ورژن استعمال کر رہے ہیں۔",
+  "updateAvailable": "ورژن {version} دستیاب ہے۔",
+  "updateDownloading": "اپ ڈیٹ پس منظر میں ڈاؤن لوڈ ہو رہی ہے…",
+  "updateDownloaded": "اپ ڈیٹ تیار ہے۔ انسٹال کرنے کے لیے دوبارہ شروع کریں۔",
+  "updateNow": "اپ ڈیٹ کریں",
+  "restartNow": "دوبارہ شروع کریں",
+  "updatesViaStore": "اپ ڈیٹس ایپ اسٹور کے ذریعے خودکار طور پر موصول ہوتی ہیں۔",
+  "updateCheckFailed": "اپ ڈیٹس چیک نہیں کی جا سکیں۔"
 }

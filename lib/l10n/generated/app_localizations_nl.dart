@@ -624,42 +624,44 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versie $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Updates automatisch installeren';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Controleren op updates';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Controleren op updates…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Je gebruikt de nieuwste versie.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versie $version is beschikbaar.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading =>
+      'De update wordt op de achtergrond gedownload…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'De update is klaar. Start opnieuw op om deze te installeren.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Bijwerken';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Opnieuw starten';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Updates komen automatisch binnen via de appwinkel.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Kon niet controleren op updates.';
 }

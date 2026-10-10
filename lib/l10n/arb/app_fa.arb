@@ -180,5 +180,18 @@
   "displayCurrency": "واحد پول نمایش",
   "displayCurrencyNone": "فقط واحد پول خود سهم",
   "labelConverted": "≈ به {currency}",
-  "fxRateNote": "نرخ: 1 {from} = {rate} {to} (ECB، {date})"
+  "fxRateNote": "نرخ: 1 {from} = {rate} {to} (ECB، {date})",
+  "updates": "به‌روزرسانی‌ها",
+  "currentVersion": "نسخهٔ {version}",
+  "autoUpdate": "نصب خودکار به‌روزرسانی‌ها",
+  "checkForUpdates": "بررسی به‌روزرسانی‌ها",
+  "updateChecking": "در حال بررسی به‌روزرسانی‌ها…",
+  "updateUpToDate": "شما از آخرین نسخه استفاده می‌کنید.",
+  "updateAvailable": "نسخهٔ {version} در دسترس است.",
+  "updateDownloading": "در حال بارگیری به‌روزرسانی در پس‌زمینه…",
+  "updateDownloaded": "به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.",
+  "updateNow": "به‌روزرسانی",
+  "restartNow": "راه‌اندازی مجدد",
+  "updatesViaStore": "به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.",
+  "updateCheckFailed": "بررسی به‌روزرسانی‌ها ممکن نشد."
 }

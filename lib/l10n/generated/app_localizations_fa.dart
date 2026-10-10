@@ -617,46 +617,47 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'به‌روزرسانی‌ها';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'نسخهٔ $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'نصب خودکار به‌روزرسانی‌ها';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'بررسی به‌روزرسانی‌ها';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'در حال بررسی به‌روزرسانی‌ها…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'شما از آخرین نسخه استفاده می‌کنید.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'نسخهٔ $version در دسترس است.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'در حال بارگیری به‌روزرسانی در پس‌زمینه…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'به‌روزرسانی';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'راه‌اندازی مجدد';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'بررسی به‌روزرسانی‌ها ممکن نشد.';
 }

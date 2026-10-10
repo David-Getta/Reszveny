@@ -620,46 +620,47 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Päivitykset';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versio $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Asenna päivitykset automaattisesti';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Tarkista päivitykset';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Tarkistetaan päivityksiä…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Käytössäsi on uusin versio.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versio $version on saatavilla.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Päivitystä ladataan taustalla…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Päivitys on valmis. Käynnistä sovellus uudelleen asentaaksesi sen.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Päivitä';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Käynnistä uudelleen';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Päivitykset saapuvat automaattisesti sovelluskaupan kautta.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Päivityksiä ei voitu tarkistaa.';
 }

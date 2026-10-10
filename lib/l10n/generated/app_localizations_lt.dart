@@ -622,46 +622,47 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Naujinimai';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versija $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Įdiegti naujinimus automatiškai';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Tikrinti, ar yra naujinimų';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Tikrinama, ar yra naujinimų…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Naudojate naujausią versiją.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Pasiekiama versija $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Naujinimas atsisiunčiamas fone…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Naujinimas paruoštas. Paleiskite programą iš naujo, kad jį įdiegtumėte.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Naujinti';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Paleisti iš naujo';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Naujinimai gaunami automatiškai per programėlių parduotuvę.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Nepavyko patikrinti, ar yra naujinimų.';
 }

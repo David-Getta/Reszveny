@@ -618,46 +618,47 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Oppdateringer';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versjon $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Installer oppdateringer automatisk';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Se etter oppdateringer';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Ser etter oppdateringer…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Du har den nyeste versjonen.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versjon $version er tilgjengelig.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Oppdateringen lastes ned i bakgrunnen…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Oppdateringen er klar. Start på nytt for å installere den.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Oppdater';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Start på nytt';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Oppdateringer kommer automatisk via appbutikken.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Kunne ikke se etter oppdateringer.';
 }

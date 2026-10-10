@@ -619,46 +619,47 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Güncellemeler';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Sürüm $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Güncellemeleri otomatik olarak yükle';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Güncellemeleri denetle';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Güncellemeler denetleniyor…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'En son sürümü kullanıyorsunuz.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return '$version sürümü kullanılabilir.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Güncelleme arka planda indiriliyor…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Güncelleme hazır. Yüklemek için yeniden başlatın.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Güncelle';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Yeniden başlat';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Güncellemeler uygulama mağazası üzerinden otomatik olarak gelir.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Güncellemeler denetlenemedi.';
 }

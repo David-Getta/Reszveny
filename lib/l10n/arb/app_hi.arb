@@ -180,5 +180,18 @@
   "displayCurrency": "प्रदर्शित मुद्रा",
   "displayCurrencyNone": "केवल शेयर की अपनी मुद्रा",
   "labelConverted": "≈ {currency} में",
-  "fxRateNote": "दर: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "दर: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "अपडेट",
+  "currentVersion": "संस्करण {version}",
+  "autoUpdate": "अपडेट स्वचालित रूप से इंस्टॉल करें",
+  "checkForUpdates": "अपडेट जाँचें",
+  "updateChecking": "अपडेट जाँचे जा रहे हैं…",
+  "updateUpToDate": "आप नवीनतम संस्करण पर हैं।",
+  "updateAvailable": "संस्करण {version} उपलब्ध है।",
+  "updateDownloading": "अपडेट बैकग्राउंड में डाउनलोड हो रहा है…",
+  "updateDownloaded": "अपडेट तैयार है। इंस्टॉल करने के लिए पुनः प्रारंभ करें।",
+  "updateNow": "अपडेट करें",
+  "restartNow": "पुनः प्रारंभ करें",
+  "updatesViaStore": "अपडेट ऐप स्टोर के माध्यम से स्वचालित रूप से मिलते हैं।",
+  "updateCheckFailed": "अपडेट की जाँच नहीं की जा सकी।"
 }

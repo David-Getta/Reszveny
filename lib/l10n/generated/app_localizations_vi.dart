@@ -617,46 +617,47 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Cập nhật';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Phiên bản $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Tự động cài đặt bản cập nhật';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Kiểm tra bản cập nhật';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Đang kiểm tra bản cập nhật…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Bạn đang dùng phiên bản mới nhất.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Đã có phiên bản $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Đang tải bản cập nhật trong nền…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Cập nhật';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Khởi động lại';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Không thể kiểm tra bản cập nhật.';
 }

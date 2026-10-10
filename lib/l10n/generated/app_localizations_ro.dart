@@ -622,46 +622,47 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Actualizări';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versiunea $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Instalează actualizările automat';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Caută actualizări';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Se caută actualizări…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Ai cea mai recentă versiune.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versiunea $version este disponibilă.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Actualizarea se descarcă în fundal…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Actualizarea este gata. Repornește pentru a o instala.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Actualizează';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Repornește';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Actualizările sosesc automat prin magazinul de aplicații.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Nu s-au putut căuta actualizări.';
 }

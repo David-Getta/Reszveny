@@ -619,46 +619,45 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'التحديثات';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'الإصدار $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'تثبيت التحديثات تلقائيًا';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'التحقق من التحديثات';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'جارٍ التحقق من التحديثات…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'أنت تستخدم أحدث إصدار.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'الإصدار $version متاح.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'جارٍ تنزيل التحديث في الخلفية…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded => 'التحديث جاهز. أعد التشغيل لتثبيته.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'تحديث';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'إعادة التشغيل';
 
   @override
-  String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+  String get updatesViaStore => 'تصل التحديثات تلقائيًا عبر متجر التطبيقات.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'تعذر التحقق من التحديثات.';
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "दर्शवण्याचे चलन",
   "displayCurrencyNone": "फक्त शेअरचे स्वतःचे चलन",
   "labelConverted": "≈ {currency} मध्ये",
-  "fxRateNote": "दर: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "दर: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "अपडेट",
+  "currentVersion": "आवृत्ती {version}",
+  "autoUpdate": "अपडेट आपोआप इंस्टॉल करा",
+  "checkForUpdates": "अपडेट तपासा",
+  "updateChecking": "अपडेट तपासले जात आहेत…",
+  "updateUpToDate": "तुम्ही नवीनतम आवृत्ती वापरत आहात.",
+  "updateAvailable": "आवृत्ती {version} उपलब्ध आहे.",
+  "updateDownloading": "अपडेट पार्श्वभूमीत डाउनलोड होत आहे…",
+  "updateDownloaded": "अपडेट तयार आहे. इंस्टॉल करण्यासाठी रीस्टार्ट करा.",
+  "updateNow": "अपडेट करा",
+  "restartNow": "रीस्टार्ट करा",
+  "updatesViaStore": "अपडेट अ‍ॅप स्टोअरद्वारे आपोआप मिळतात.",
+  "updateCheckFailed": "अपडेट तपासता आले नाहीत."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "ప్రదర్శన కరెన్సీ",
   "displayCurrencyNone": "స్టాక్ సొంత కరెన్సీ మాత్రమే",
   "labelConverted": "≈ {currency}లో",
-  "fxRateNote": "రేటు: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "రేటు: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "అప్‌డేట్‌లు",
+  "currentVersion": "వెర్షన్ {version}",
+  "autoUpdate": "అప్‌డేట్‌లను ఆటోమేటిక్‌గా ఇన్‌స్టాల్ చేయండి",
+  "checkForUpdates": "అప్‌డేట్‌ల కోసం తనిఖీ చేయండి",
+  "updateChecking": "అప్‌డేట్‌ల కోసం తనిఖీ చేస్తున్నాం…",
+  "updateUpToDate": "మీరు తాజా వెర్షన్‌లో ఉన్నారు.",
+  "updateAvailable": "వెర్షన్ {version} అందుబాటులో ఉంది.",
+  "updateDownloading": "అప్‌డేట్ బ్యాక్‌గ్రౌండ్‌లో డౌన్‌లోడ్ అవుతోంది…",
+  "updateDownloaded": "అప్‌డేట్ సిద్ధంగా ఉంది. ఇన్‌స్టాల్ చేయడానికి పునఃప్రారంభించండి.",
+  "updateNow": "అప్‌డేట్ చేయండి",
+  "restartNow": "పునఃప్రారంభించండి",
+  "updatesViaStore": "అప్‌డేట్‌లు యాప్ స్టోర్ ద్వారా ఆటోమేటిక్‌గా వస్తాయి.",
+  "updateCheckFailed": "అప్‌డేట్‌ల కోసం తనిఖీ చేయలేకపోయాం."
 }

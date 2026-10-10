@@ -623,46 +623,47 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Aktualizacje';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Wersja $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Instaluj aktualizacje automatycznie';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Sprawdź aktualizacje';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Sprawdzanie aktualizacji…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Masz najnowszą wersję.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Dostępna jest wersja $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Aktualizacja jest pobierana w tle…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Aktualizacja jest gotowa. Uruchom ponownie, aby ją zainstalować.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Aktualizuj';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Uruchom ponownie';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Aktualizacje są dostarczane automatycznie przez sklep z aplikacjami.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Nie udało się sprawdzić aktualizacji.';
 }

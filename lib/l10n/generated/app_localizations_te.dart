@@ -621,46 +621,48 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'అప్‌డేట్‌లు';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'వెర్షన్ $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'అప్‌డేట్‌లను ఆటోమేటిక్‌గా ఇన్‌స్టాల్ చేయండి';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'అప్‌డేట్‌ల కోసం తనిఖీ చేయండి';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'అప్‌డేట్‌ల కోసం తనిఖీ చేస్తున్నాం…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'మీరు తాజా వెర్షన్‌లో ఉన్నారు.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'వెర్షన్ $version అందుబాటులో ఉంది.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading =>
+      'అప్‌డేట్ బ్యాక్‌గ్రౌండ్‌లో డౌన్‌లోడ్ అవుతోంది…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'అప్‌డేట్ సిద్ధంగా ఉంది. ఇన్‌స్టాల్ చేయడానికి పునఃప్రారంభించండి.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'అప్‌డేట్ చేయండి';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'పునఃప్రారంభించండి';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'అప్‌డేట్‌లు యాప్ స్టోర్ ద్వారా ఆటోమేటిక్‌గా వస్తాయి.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'అప్‌డేట్‌ల కోసం తనిఖీ చేయలేకపోయాం.';
 }

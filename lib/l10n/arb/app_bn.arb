@@ -180,5 +180,18 @@
   "displayCurrency": "প্রদর্শনের মুদ্রা",
   "displayCurrencyNone": "শুধু শেয়ারের নিজস্ব মুদ্রা",
   "labelConverted": "≈ {currency}-এ",
-  "fxRateNote": "হার: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "হার: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "আপডেট",
+  "currentVersion": "সংস্করণ {version}",
+  "autoUpdate": "আপডেট স্বয়ংক্রিয়ভাবে ইনস্টল করুন",
+  "checkForUpdates": "আপডেট পরীক্ষা করুন",
+  "updateChecking": "আপডেট পরীক্ষা করা হচ্ছে…",
+  "updateUpToDate": "আপনি সর্বশেষ সংস্করণ ব্যবহার করছেন।",
+  "updateAvailable": "সংস্করণ {version} উপলব্ধ।",
+  "updateDownloading": "ব্যাকগ্রাউন্ডে আপডেট ডাউনলোড হচ্ছে…",
+  "updateDownloaded": "আপডেট প্রস্তুত। ইনস্টল করতে পুনরায় চালু করুন।",
+  "updateNow": "আপডেট",
+  "restartNow": "পুনরায় চালু করুন",
+  "updatesViaStore": "আপডেট অ্যাপ স্টোরের মাধ্যমে স্বয়ংক্রিয়ভাবে আসে।",
+  "updateCheckFailed": "আপডেট পরীক্ষা করা যায়নি।"
 }

@@ -620,7 +620,7 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Uppdateringar';
 
   @override
   String currentVersion(String version) {
@@ -628,38 +628,39 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Installera uppdateringar automatiskt';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Sök efter uppdateringar';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Söker efter uppdateringar…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Du har den senaste versionen.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Version $version är tillgänglig.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Uppdateringen hämtas i bakgrunden…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Uppdateringen är klar. Starta om för att installera den.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Uppdatera';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Starta om';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Uppdateringar kommer automatiskt via appbutiken.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Det gick inte att söka efter uppdateringar.';
 }

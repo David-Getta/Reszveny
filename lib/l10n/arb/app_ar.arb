@@ -180,5 +180,18 @@
   "displayCurrency": "عملة العرض",
   "displayCurrencyNone": "عملة السهم الأصلية فقط",
   "labelConverted": "≈ بعملة {currency}",
-  "fxRateNote": "سعر الصرف: 1 {from} = {rate} {to} (ECB، {date})"
+  "fxRateNote": "سعر الصرف: 1 {from} = {rate} {to} (ECB، {date})",
+  "updates": "التحديثات",
+  "currentVersion": "الإصدار {version}",
+  "autoUpdate": "تثبيت التحديثات تلقائيًا",
+  "checkForUpdates": "التحقق من التحديثات",
+  "updateChecking": "جارٍ التحقق من التحديثات…",
+  "updateUpToDate": "أنت تستخدم أحدث إصدار.",
+  "updateAvailable": "الإصدار {version} متاح.",
+  "updateDownloading": "جارٍ تنزيل التحديث في الخلفية…",
+  "updateDownloaded": "التحديث جاهز. أعد التشغيل لتثبيته.",
+  "updateNow": "تحديث",
+  "restartNow": "إعادة التشغيل",
+  "updatesViaStore": "تصل التحديثات تلقائيًا عبر متجر التطبيقات.",
+  "updateCheckFailed": "تعذر التحقق من التحديثات."
 }

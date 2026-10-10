@@ -618,46 +618,47 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Masasisho';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Toleo $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Sakinisha masasisho kiotomatiki';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Angalia masasisho';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Inaangalia masasisho…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Unatumia toleo jipya zaidi.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Toleo $version linapatikana.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Inapakua sasisho chinichini…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Sasisha';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Anzisha upya';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Masasisho hufika kiotomatiki kupitia duka la programu.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Imeshindwa kuangalia masasisho.';
 }

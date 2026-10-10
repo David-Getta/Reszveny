@@ -621,46 +621,47 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Ažuriranja';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Verzija $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Automatski instaliraj ažuriranja';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Provjeri ažuriranja';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Provjera ažuriranja…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Imate najnoviju verziju.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Dostupna je verzija $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Ažuriranje se preuzima u pozadini…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Ažuriranje je spremno. Ponovno pokrenite aplikaciju da biste ga instalirali.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Ažuriraj';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Ponovno pokreni';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Ažuriranja stižu automatski putem trgovine aplikacija.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Nije moguće provjeriti ažuriranja.';
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Νόμισμα εμφάνισης",
   "displayCurrencyNone": "Μόνο το νόμισμα της μετοχής",
   "labelConverted": "≈ σε {currency}",
-  "fxRateNote": "Ισοτιμία: 1 {from} = {rate} {to} (ΕΚΤ, {date})"
+  "fxRateNote": "Ισοτιμία: 1 {from} = {rate} {to} (ΕΚΤ, {date})",
+  "updates": "Ενημερώσεις",
+  "currentVersion": "Έκδοση {version}",
+  "autoUpdate": "Αυτόματη εγκατάσταση ενημερώσεων",
+  "checkForUpdates": "Έλεγχος για ενημερώσεις",
+  "updateChecking": "Έλεγχος για ενημερώσεις…",
+  "updateUpToDate": "Έχετε την πιο πρόσφατη έκδοση.",
+  "updateAvailable": "Η έκδοση {version} είναι διαθέσιμη.",
+  "updateDownloading": "Λήψη της ενημέρωσης στο παρασκήνιο…",
+  "updateDownloaded": "Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.",
+  "updateNow": "Ενημέρωση",
+  "restartNow": "Επανεκκίνηση",
+  "updatesViaStore": "Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.",
+  "updateCheckFailed": "Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις."
 }

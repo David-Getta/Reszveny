@@ -180,5 +180,18 @@
   "displayCurrency": "Currency na ipapakita",
   "displayCurrencyNone": "Sariling currency lang ng stock",
   "labelConverted": "≈ sa {currency}",
-  "fxRateNote": "Rate: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Rate: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Mga update",
+  "currentVersion": "Bersyon {version}",
+  "autoUpdate": "Awtomatikong i-install ang mga update",
+  "checkForUpdates": "Tingnan kung may update",
+  "updateChecking": "Tinitingnan kung may update…",
+  "updateUpToDate": "Nasa pinakabagong bersyon ka na.",
+  "updateAvailable": "Available na ang bersyon {version}.",
+  "updateDownloading": "Dina-download ang update sa background…",
+  "updateDownloaded": "Handa na ang update. I-restart para i-install ito.",
+  "updateNow": "I-update",
+  "restartNow": "I-restart",
+  "updatesViaStore": "Awtomatikong dumarating ang mga update sa pamamagitan ng app store.",
+  "updateCheckFailed": "Hindi matingnan kung may update."
 }

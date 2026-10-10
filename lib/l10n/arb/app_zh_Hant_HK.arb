@@ -180,5 +180,18 @@
   "displayCurrency": "顯示貨幣",
   "displayCurrencyNone": "只顯示股票本身貨幣",
   "labelConverted": "≈ 折合 {currency}",
-  "fxRateNote": "匯率：1 {from} = {rate} {to}（歐洲央行，{date}）"
+  "fxRateNote": "匯率：1 {from} = {rate} {to}（歐洲央行，{date}）",
+  "updates": "更新",
+  "currentVersion": "版本 {version}",
+  "autoUpdate": "自動安裝更新",
+  "checkForUpdates": "檢查更新",
+  "updateChecking": "正在檢查更新…",
+  "updateUpToDate": "已經是最新版本。",
+  "updateAvailable": "版本 {version} 已可供更新。",
+  "updateDownloading": "正在背景下載更新…",
+  "updateDownloaded": "更新已準備好。重新啟動即可安裝。",
+  "updateNow": "更新",
+  "restartNow": "重新啟動",
+  "updatesViaStore": "更新會透過應用程式商店自動送達。",
+  "updateCheckFailed": "無法檢查更新。"
 }

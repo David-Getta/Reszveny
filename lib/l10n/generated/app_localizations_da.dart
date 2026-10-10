@@ -618,7 +618,7 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Opdateringer';
 
   @override
   String currentVersion(String version) {
@@ -626,38 +626,39 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Installer opdateringer automatisk';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Søg efter opdateringer';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Søger efter opdateringer…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Du har den nyeste version.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Version $version er tilgængelig.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Opdateringen downloades i baggrunden…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Opdateringen er klar. Genstart for at installere den.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Opdater';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Genstart';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Opdateringer kommer automatisk via appbutikken.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Kunne ikke søge efter opdateringer.';
 }

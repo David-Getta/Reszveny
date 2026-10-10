@@ -623,46 +623,47 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Frissítések';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return '$version verzió';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Frissítések automatikus telepítése';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Frissítések keresése';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Frissítések keresése…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'A legújabb verziót használod.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Elérhető a $version verzió.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'A frissítés letöltése a háttérben…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'A frissítés készen áll. A telepítéshez indítsd újra az alkalmazást.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Frissítés';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Újraindítás';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'A frissítések automatikusan érkeznek az alkalmazásboltból.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Nem sikerült frissítéseket keresni.';
 }

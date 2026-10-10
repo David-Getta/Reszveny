@@ -180,5 +180,18 @@
   "displayCurrency": "Görüntüleme para birimi",
   "displayCurrencyNone": "Yalnızca hissenin kendi para birimi",
   "labelConverted": "≈ {currency} olarak",
-  "fxRateNote": "Kur: 1 {from} = {rate} {to} (AMB, {date})"
+  "fxRateNote": "Kur: 1 {from} = {rate} {to} (AMB, {date})",
+  "updates": "Güncellemeler",
+  "currentVersion": "Sürüm {version}",
+  "autoUpdate": "Güncellemeleri otomatik olarak yükle",
+  "checkForUpdates": "Güncellemeleri denetle",
+  "updateChecking": "Güncellemeler denetleniyor…",
+  "updateUpToDate": "En son sürümü kullanıyorsunuz.",
+  "updateAvailable": "{version} sürümü kullanılabilir.",
+  "updateDownloading": "Güncelleme arka planda indiriliyor…",
+  "updateDownloaded": "Güncelleme hazır. Yüklemek için yeniden başlatın.",
+  "updateNow": "Güncelle",
+  "restartNow": "Yeniden başlat",
+  "updatesViaStore": "Güncellemeler uygulama mağazası üzerinden otomatik olarak gelir.",
+  "updateCheckFailed": "Güncellemeler denetlenemedi."
 }

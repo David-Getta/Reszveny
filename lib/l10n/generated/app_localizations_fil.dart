@@ -622,46 +622,47 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Mga update';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Bersyon $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Awtomatikong i-install ang mga update';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Tingnan kung may update';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Tinitingnan kung may update…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Nasa pinakabagong bersyon ka na.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Available na ang bersyon $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Dina-download ang update sa background…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Handa na ang update. I-restart para i-install ito.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'I-update';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'I-restart';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Awtomatikong dumarating ang mga update sa pamamagitan ng app store.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Hindi matingnan kung may update.';
 }

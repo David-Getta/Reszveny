@@ -180,5 +180,18 @@
   "displayCurrency": "显示货币",
   "displayCurrencyNone": "仅显示股票自身货币",
   "labelConverted": "≈ 折合 {currency}",
-  "fxRateNote": "汇率：1 {from} = {rate} {to}（欧洲央行，{date}）"
+  "fxRateNote": "汇率：1 {from} = {rate} {to}（欧洲央行，{date}）",
+  "updates": "更新",
+  "currentVersion": "版本 {version}",
+  "autoUpdate": "自动安装更新",
+  "checkForUpdates": "检查更新",
+  "updateChecking": "正在检查更新…",
+  "updateUpToDate": "您已是最新版本。",
+  "updateAvailable": "版本 {version} 已可用。",
+  "updateDownloading": "正在后台下载更新…",
+  "updateDownloaded": "更新已就绪。重新启动以安装。",
+  "updateNow": "更新",
+  "restartNow": "重新启动",
+  "updatesViaStore": "更新会通过应用商店自动推送。",
+  "updateCheckFailed": "无法检查更新。"
 }

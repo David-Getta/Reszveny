@@ -621,46 +621,48 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Përditësimet';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Versioni $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Instalo përditësimet automatikisht';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Kontrollo për përditësime';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Po kontrollohet për përditësime…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Keni versionin më të fundit.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Versioni $version është i disponueshëm.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Përditësimi po shkarkohet në sfond…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Përditësimi është gati. Rinisni aplikacionin për ta instaluar.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Përditëso';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Rinis';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed =>
+      'Nuk u arrit të kontrollohej për përditësime.';
 }

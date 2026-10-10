@@ -599,48 +599,47 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => '更新';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return '版本 $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => '自动安装更新';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => '检查更新';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => '正在检查更新…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => '您已是最新版本。';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return '版本 $version 已可用。';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => '正在后台下载更新…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded => '更新已就绪。重新启动以安装。';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => '更新';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => '重新启动';
 
   @override
-  String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+  String get updatesViaStore => '更新会通过应用商店自动推送。';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => '无法检查更新。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1235,4 +1234,47 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String fxRateNote(String from, String rate, String to, String date) {
     return '匯率：1 $from = $rate $to（歐洲央行，$date）';
   }
+
+  @override
+  String get updates => '更新';
+
+  @override
+  String currentVersion(String version) {
+    return '版本 $version';
+  }
+
+  @override
+  String get autoUpdate => '自動安裝更新';
+
+  @override
+  String get checkForUpdates => '檢查更新';
+
+  @override
+  String get updateChecking => '正在檢查更新…';
+
+  @override
+  String get updateUpToDate => '已經是最新版本。';
+
+  @override
+  String updateAvailable(String version) {
+    return '版本 $version 已可供更新。';
+  }
+
+  @override
+  String get updateDownloading => '正在背景下載更新…';
+
+  @override
+  String get updateDownloaded => '更新已準備好。重新啟動即可安裝。';
+
+  @override
+  String get updateNow => '更新';
+
+  @override
+  String get restartNow => '重新啟動';
+
+  @override
+  String get updatesViaStore => '更新會透過應用程式商店自動送達。';
+
+  @override
+  String get updateCheckFailed => '無法檢查更新。';
 }

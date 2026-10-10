@@ -620,46 +620,47 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Оновлення';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Версія $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Встановлювати оновлення автоматично';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Перевірити оновлення';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Перевірка оновлень…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'У вас найновіша версія.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Доступна версія $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Оновлення завантажується у фоновому режимі…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Оновити';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Перезапустити';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Оновлення надходять автоматично через магазин застосунків.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Не вдалося перевірити оновлення.';
 }

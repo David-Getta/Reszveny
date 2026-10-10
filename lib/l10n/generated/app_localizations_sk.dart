@@ -621,46 +621,47 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get updates => 'Updates';
+  String get updates => 'Aktualizácie';
 
   @override
   String currentVersion(String version) {
-    return 'Version $version';
+    return 'Verzia $version';
   }
 
   @override
-  String get autoUpdate => 'Install updates automatically';
+  String get autoUpdate => 'Inštalovať aktualizácie automaticky';
 
   @override
-  String get checkForUpdates => 'Check for updates';
+  String get checkForUpdates => 'Skontrolovať aktualizácie';
 
   @override
-  String get updateChecking => 'Checking for updates…';
+  String get updateChecking => 'Kontrola aktualizácií…';
 
   @override
-  String get updateUpToDate => 'You’re on the latest version.';
+  String get updateUpToDate => 'Máte najnovšiu verziu.';
 
   @override
   String updateAvailable(String version) {
-    return 'Version $version is available.';
+    return 'Je k dispozícii verzia $version.';
   }
 
   @override
-  String get updateDownloading => 'Downloading the update in the background…';
+  String get updateDownloading => 'Aktualizácia sa sťahuje na pozadí…';
 
   @override
-  String get updateDownloaded => 'The update is ready. Restart to install it.';
+  String get updateDownloaded =>
+      'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
 
   @override
-  String get updateNow => 'Update';
+  String get updateNow => 'Aktualizovať';
 
   @override
-  String get restartNow => 'Restart';
+  String get restartNow => 'Reštartovať';
 
   @override
   String get updatesViaStore =>
-      'Updates arrive automatically through the app store.';
+      'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
 
   @override
-  String get updateCheckFailed => 'Could not check for updates.';
+  String get updateCheckFailed => 'Aktualizácie sa nepodarilo skontrolovať.';
 }

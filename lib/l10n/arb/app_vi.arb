@@ -180,5 +180,18 @@
   "displayCurrency": "Tiền tệ hiển thị",
   "displayCurrencyNone": "Chỉ tiền tệ của cổ phiếu",
   "labelConverted": "≈ theo {currency}",
-  "fxRateNote": "Tỷ giá: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Tỷ giá: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Cập nhật",
+  "currentVersion": "Phiên bản {version}",
+  "autoUpdate": "Tự động cài đặt bản cập nhật",
+  "checkForUpdates": "Kiểm tra bản cập nhật",
+  "updateChecking": "Đang kiểm tra bản cập nhật…",
+  "updateUpToDate": "Bạn đang dùng phiên bản mới nhất.",
+  "updateAvailable": "Đã có phiên bản {version}.",
+  "updateDownloading": "Đang tải bản cập nhật trong nền…",
+  "updateDownloaded": "Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.",
+  "updateNow": "Cập nhật",
+  "restartNow": "Khởi động lại",
+  "updatesViaStore": "Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.",
+  "updateCheckFailed": "Không thể kiểm tra bản cập nhật."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "காட்சி நாணயம்",
   "displayCurrencyNone": "பங்கின் சொந்த நாணயம் மட்டும்",
   "labelConverted": "≈ {currency} இல்",
-  "fxRateNote": "விகிதம்: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "விகிதம்: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "புதுப்பிப்புகள்",
+  "currentVersion": "பதிப்பு {version}",
+  "autoUpdate": "புதுப்பிப்புகளைத் தானாக நிறுவு",
+  "checkForUpdates": "புதுப்பிப்புகளைச் சரிபார்",
+  "updateChecking": "புதுப்பிப்புகளைச் சரிபார்க்கிறது…",
+  "updateUpToDate": "நீங்கள் சமீபத்திய பதிப்பில் உள்ளீர்கள்.",
+  "updateAvailable": "பதிப்பு {version} கிடைக்கிறது.",
+  "updateDownloading": "புதுப்பிப்பு பின்னணியில் பதிவிறக்கப்படுகிறது…",
+  "updateDownloaded": "புதுப்பிப்பு தயார். நிறுவ மீண்டும் தொடங்குங்கள்.",
+  "updateNow": "புதுப்பி",
+  "restartNow": "மீண்டும் தொடங்கு",
+  "updatesViaStore": "புதுப்பிப்புகள் ஆப் ஸ்டோர் வழியாகத் தானாகவே வருகின்றன.",
+  "updateCheckFailed": "புதுப்பிப்புகளைச் சரிபார்க்க முடியவில்லை."
 }

@@ -180,5 +180,18 @@
   "displayCurrency": "Megjelenítési pénznem",
   "displayCurrencyNone": "Csak a részvény saját pénzneme",
   "labelConverted": "≈ átváltva: {currency}",
-  "fxRateNote": "Árfolyam: 1 {from} = {rate} {to} (EKB, {date})"
+  "fxRateNote": "Árfolyam: 1 {from} = {rate} {to} (EKB, {date})",
+  "updates": "Frissítések",
+  "currentVersion": "{version} verzió",
+  "autoUpdate": "Frissítések automatikus telepítése",
+  "checkForUpdates": "Frissítések keresése",
+  "updateChecking": "Frissítések keresése…",
+  "updateUpToDate": "A legújabb verziót használod.",
+  "updateAvailable": "Elérhető a {version} verzió.",
+  "updateDownloading": "A frissítés letöltése a háttérben…",
+  "updateDownloaded": "A frissítés készen áll. A telepítéshez indítsd újra az alkalmazást.",
+  "updateNow": "Frissítés",
+  "restartNow": "Újraindítás",
+  "updatesViaStore": "A frissítések automatikusan érkeznek az alkalmazásboltból.",
+  "updateCheckFailed": "Nem sikerült frissítéseket keresni."
 }

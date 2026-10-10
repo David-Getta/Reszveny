@@ -180,5 +180,18 @@
   "displayCurrency": "Mata uang tampilan",
   "displayCurrencyNone": "Mung mata uang saham dhewe",
   "labelConverted": "≈ ing {currency}",
-  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})"
+  "fxRateNote": "Kurs: 1 {from} = {rate} {to} (ECB, {date})",
+  "updates": "Anyaran",
+  "currentVersion": "Versi {version}",
+  "autoUpdate": "Instal anyaran kanthi otomatis",
+  "checkForUpdates": "Priksa anyaran",
+  "updateChecking": "Lagi mriksa anyaran…",
+  "updateUpToDate": "Sampeyan wis nganggo versi paling anyar.",
+  "updateAvailable": "Versi {version} wis kasedhiya.",
+  "updateDownloading": "Lagi ngundhuh anyaran ing latar mburi…",
+  "updateDownloaded": "Anyaran wis siyap. Wiwiti maneh kanggo nginstal.",
+  "updateNow": "Nganyari",
+  "restartNow": "Wiwiti maneh",
+  "updatesViaStore": "Anyaran ditampa kanthi otomatis liwat toko aplikasi.",
+  "updateCheckFailed": "Ora bisa mriksa anyaran."
 }
