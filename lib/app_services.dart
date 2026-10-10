@@ -40,9 +40,15 @@ class AppServices {
     FxService? fx,
     UpdateService? updates,
   }) : fx = fx ?? FxService(),
-       updates = updates ?? UpdateService(config: config),
-       billing = billing ?? DemoBillingService() {
+       updates = updates ?? UpdateService(config: config) {
+    this.billing = billing ?? _demoBilling(this.fx);
     billingController = BillingController(billing: this.billing, entitlements: entitlements);
+  }
+
+  /// Demó bolt a rendszer régiójának pénznemével és ECB-árfolyammal.
+  DemoBillingService _demoBilling(FxService fx) {
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    return DemoBillingService(fx: fx, locale: device.toString(), currency: () => displayCurrency(device) ?? 'USD');
   }
 
   factory AppServices.fromConfig(
@@ -66,7 +72,7 @@ class AppServices {
         entitlements: entitlements,
       ),
       entitlements: entitlements,
-      billing: storeBilling ? StoreBillingService() : DemoBillingService(),
+      billing: storeBilling ? StoreBillingService() : null,
     );
   }
 
@@ -79,7 +85,7 @@ class AppServices {
   final DesktopIntegration desktop;
   final ReportStore reports;
   final EntitlementService entitlements;
-  final BillingService billing;
+  late final BillingService billing;
   late final BillingController billingController;
   final FxService fx;
   final UpdateService updates;

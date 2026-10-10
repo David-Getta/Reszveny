@@ -1,15 +1,27 @@
 import 'dart:async';
 
+import '../fx/fx_service.dart';
 import 'billing_service.dart';
 import 'plan.dart';
+import 'pricing.dart';
 
 /// Szimulált bolt: asztali gépen, weben és tesztekben a vásárlás azonnal
-/// „sikerül”. Az árak itt csak helykitöltők; élesben a bolt adja őket.
+/// „sikerül”. Az árakat az USD-alapárból számolja a felhasználó pénznemére
+/// (ECB-árfolyam, helyi kerekítés); élesben a bolt adja őket.
 class DemoBillingService implements BillingService {
-  DemoBillingService({this.latency = const Duration(milliseconds: 400), this.currency = 'HUF'});
+  DemoBillingService({
+    this.latency = const Duration(milliseconds: 400),
+    String Function()? currency,
+    this.fx,
+    this.locale = 'en',
+  }) : _currency = currency ?? (() => 'USD');
 
   final Duration latency;
-  final String currency;
+  final String Function() _currency;
+  final FxService? fx;
+
+  /// A formázáshoz használt nyelv (pl. `hu`).
+  final String locale;
   final _events = StreamController<BillingEvent>.broadcast();
 
   @override
@@ -24,44 +36,31 @@ class DemoBillingService implements BillingService {
   @override
   Future<bool> isAvailable() async => true;
 
-  static const Map<String, double> demoPrices = {
-    'stocklens.sub.normal': 2990,
-    'stocklens.sub.pro': 5990,
-    'stocklens.sub.max': 14990,
-    'stocklens.sub.ultra': 24990,
-    'stocklens.pack.5': 1990,
-    'stocklens.pack.20': 6990,
-    'stocklens.pack.50': 14990,
-  };
-
   @override
   Future<List<StoreProduct>> products() async {
     await Future<void>.delayed(latency);
-    return [
-      for (final p in PlanSpec.paid)
-        StoreProduct(
-          id: p.productId,
-          title: p.tier.name,
-          price: _fmt(demoPrices[p.productId]!),
-          rawPrice: demoPrices[p.productId]!,
-          currency: currency,
-          kind: StoreProductKind.subscription,
-        ),
-      for (final p in AddOnPack.all)
-        StoreProduct(
-          id: p.productId,
-          title: '+${p.analyses}',
-          price: _fmt(demoPrices[p.productId]!),
-          rawPrice: demoPrices[p.productId]!,
-          currency: currency,
-          kind: StoreProductKind.pack,
-        ),
-    ];
-  }
+    final currency = _currency().toUpperCase();
+    double? rate;
+    if (currency != 'USD' && fx != null) {
+      rate = (await fx!.rate('USD', currency))?.rate;
+    }
+    final effective = currency == 'USD' || rate != null ? currency : 'USD';
+    StoreProduct make(String id, String title, StoreProductKind kind) {
+      final amount = Pricing.localize(Pricing.baseUsd[id]!, effective, rate);
+      return StoreProduct(
+        id: id,
+        title: title,
+        price: Pricing.format(amount, effective, locale),
+        rawPrice: amount,
+        currency: effective,
+        kind: kind,
+      );
+    }
 
-  String _fmt(double v) {
-    final s = v.toStringAsFixed(0).replaceAllMapped(RegExp(r'(\d)(?=(\d{3})+$)'), (m) => '${m[1]} ');
-    return currency == 'HUF' ? '$s Ft' : '$s $currency';
+    return [
+      for (final p in PlanSpec.paid) make(p.productId, p.tier.name, StoreProductKind.subscription),
+      for (final p in AddOnPack.all) make(p.productId, '+${p.analyses}', StoreProductKind.pack),
+    ];
   }
 
   @override

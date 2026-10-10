@@ -13,9 +13,29 @@
 Extra elemzés-csomagok (fogyó termékek, nem járnak le, a havi keret után fogynak):
 `stocklens.pack.5` (+5), `stocklens.pack.20` (+20), `stocklens.pack.50` (+50).
 
-Az árak a boltokban állítandók be (App Store Connect, Play Console); az app a bolt által adott
-árat mutatja. A demó bolt (asztali gép, web, teszt) helykitöltő forintárakat használ:
-2 990 / 5 990 / 14 990 / 24 990 Ft havonta, csomagok 1 990 / 6 990 / 14 990 Ft.
+## Árazás
+
+Az alapár USD-ben van megadva (`features/billing/pricing.dart`); a boltokban ezeket az
+árszinteket kell beállítani, és a bolt minden régióban a helyi pénznemben mutatja (az App Store
+és a Play ezt automatikusan teszi). A demó bolt és a böngészős előnézet az USD-alapárból számol
+helyi árat az ECB-árfolyammal, a pénznem szokása szerint kerekítve (HUF: „…90”, EUR/GBP: „x,99”).
+
+| Termék | USD | kb. HUF (360 Ft/USD) | EUR | Költség (Sonnet 5.5, 4 keresés) | Költség (Opus 5.5, 6 keresés) |
+|---|---|---|---|---|---|
+| Normál (8) | 7,99 | 2 890 | 7,99 | ≈ 2 USD | ≈ 6 USD |
+| Pro (20) | 15,99 | 5 790 | 14,99 | ≈ 5 USD | ≈ 15 USD |
+| Max (80) | 39,99 | 14 390 | 36,99 | ≈ 20 USD | ≈ 60 USD |
+| Ultra (150) | 64,99 | 23 390 | 59,99 | ≈ 37 USD | ≈ 112 USD |
+| +5 | 4,99 | 1 790 | 4,99 | ≈ 1,3 USD | ≈ 3,8 USD |
+| +20 | 17,99 | 6 490 | 16,99 | ≈ 5 USD | ≈ 15 USD |
+| +50 | 39,99 | 14 390 | 36,99 | ≈ 12,5 USD | ≈ 37 USD |
+
+A bolti jutalék 15–30 %. Az árak akkor termelik ki a költséget, ha az elemzés
+**Sonnet 5.5-tel** fut (kb. 0,25 USD/elemzés webkereséssel): minden csomag nyereséges a keret
+teljes kihasználása mellett is. **Opus 5.5-tel** (kb. 0,75 USD/elemzés) a Max és az Ultra
+veszteséges lenne, ha a felhasználó mindent felhasznál. Javasolt beállítás: Normál és Pro
+Sonnet 5.5 `medium`/`high`; Max és Ultra Sonnet 5.5 `high`; az Opus-alapú mélyelemzés külön
+termék vagy magasabb árú csomag lehet később.
 
 A havi keret az AI-elemzésekre vonatkozik. A fotófelismerés, az élő adatok, a grafikon, a
 kedvencek és a 44 nyelv minden csomagban korlátlan.
