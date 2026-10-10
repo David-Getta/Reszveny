@@ -16,7 +16,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get homeTagline => 'صوّر سهماً وتعرّف على كل شيء عنه.';
 
   @override
-  String get homeHint => 'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
+  String get homeHint =>
+      'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
 
   @override
   String get takePhoto => 'التقاط صورة';
@@ -54,7 +55,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noCandidatesTitle => 'لم يتم التعرف على أي سهم';
 
   @override
-  String get noCandidatesBody => 'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
+  String get noCandidatesBody =>
+      'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
 
   @override
   String get whatWeSaw => 'ما رأيناه';
@@ -345,7 +347,8 @@ class AppLocalizationsAr extends AppLocalizations {
       'لم يتم تكوين التعرف على الصور (لا يوجد ANTHROPIC_API_KEY). أدخل رمز السهم يدوياً.';
 
   @override
-  String get errRecognitionUnreachable => 'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
+  String get errRecognitionUnreachable =>
+      'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,10 +356,12 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
+  String get errRecognitionRefused =>
+      'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
 
   @override
-  String get errRecognitionTruncated => 'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
+  String get errRecognitionTruncated =>
+      'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
 
   @override
   String get errRecognitionBadResponse => 'استجابة غير متوقعة من خدمة التعرف.';
@@ -365,13 +370,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errRecognitionEmpty => 'أعادت خدمة التعرف استجابة فارغة.';
 
   @override
-  String get errMissingFinnhubKey => 'لم يتم تكوين بيانات السوق (لا يوجد FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'لم يتم تكوين بيانات السوق (لا يوجد FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
+  String get errMarketUnreachable =>
+      'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
 
   @override
-  String get errMarketRateLimited => 'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
+  String get errMarketRateLimited =>
+      'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
 
   @override
   String errMarketHttp(String status) {
@@ -479,7 +487,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aiRegenerate => 'إعادة الإنشاء';
 
   @override
-  String get aiGenerating => 'جارٍ إعداد التحليل… قد يستغرق ذلك دقيقة أو دقيقتين.';
+  String get aiGenerating =>
+      'جارٍ إعداد التحليل… قد يستغرق ذلك دقيقة أو دقيقتين.';
 
   @override
   String get aiSources => 'المصادر';
@@ -494,10 +503,12 @@ class AppLocalizationsAr extends AppLocalizations {
       'تحليل مُنشأ بالذكاء الاصطناعي استناداً إلى بيانات عامة وأخبار حديثة. قد يحتوي على أخطاء أو يكون قديماً، ولا يُعدّ نصيحة استثمارية.';
 
   @override
-  String get errAiNotConfigured => 'لم يتم تكوين التحليل بالذكاء الاصطناعي (لا يوجد ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'لم يتم تكوين التحليل بالذكاء الاصطناعي (لا يوجد ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'تعذر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من اتصالك بالإنترنت.';
+  String get errAiUnreachable =>
+      'تعذر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من اتصالك بالإنترنت.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +540,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get rangeFiveYears => '5 سنوات';
 
   @override
-  String get chartUnavailable => 'سجل الأسعار غير متاح من مصدر البيانات الحالي.';
+  String get chartUnavailable =>
+      'سجل الأسعار غير متاح من مصدر البيانات الحالي.';
 
   @override
   String get sectionStatements => 'القوائم المالية (سنوية)';
@@ -556,7 +568,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get labelOperatingCashFlow => 'التدفق النقدي التشغيلي';
 
   @override
-  String get statementsUnavailable => 'القوائم المالية المعلنة غير متاحة لهذا السهم.';
+  String get statementsUnavailable =>
+      'القوائم المالية المعلنة غير متاحة لهذا السهم.';
 
   @override
   String get launchAtLogin => 'التشغيل عند تسجيل الدخول';
@@ -586,21 +599,22 @@ class AppLocalizationsAr extends AppLocalizations {
   String get removeFromFavorites => 'إزالة من المفضلة';
 
   @override
-  String get noFavorites => 'لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.';
+  String get noFavorites =>
+      'لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'عملة العرض';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'عملة السهم الأصلية فقط';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ بعملة $currency';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'سعر الصرف: 1 $from = $rate $to (ECB، $date)';
   }
 }

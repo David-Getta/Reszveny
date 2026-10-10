@@ -13,7 +13,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
+  String get homeTagline =>
+      'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count বিশ্লেষক', one: '1 বিশ্লেষক');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count বিশ্লেষক',
+      one: '1 বিশ্লেষক',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsBn extends AppLocalizations {
       'ছবি শনাক্তকরণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)। টিকার ম্যানুয়ালি লিখুন।';
 
   @override
-  String get errRecognitionUnreachable => 'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errRecognitionUnreachable =>
+      'শনাক্তকরণ সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +353,28 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
+  String get errRecognitionRefused =>
+      'শনাক্তকরণ সেবা এই ছবিটি প্রক্রিয়া করতে পারেনি।';
 
   @override
-  String get errRecognitionTruncated => 'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
+  String get errRecognitionTruncated =>
+      'শনাক্তকরণের উত্তর অসম্পূর্ণ ছিল। অনুগ্রহ করে আবার চেষ্টা করুন।';
 
   @override
-  String get errRecognitionBadResponse => 'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errRecognitionBadResponse =>
+      'শনাক্তকরণ সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
-  String get errRecognitionEmpty => 'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
+  String get errRecognitionEmpty =>
+      'শনাক্তকরণ সেবা একটি খালি উত্তর ফেরত দিয়েছে।';
 
   @override
-  String get errMissingFinnhubKey => 'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
+  String get errMissingFinnhubKey =>
+      'মার্কেট ডেটা কনফিগার করা নেই (FINNHUB_API_KEY নেই)।';
 
   @override
-  String get errMarketUnreachable => 'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errMarketUnreachable =>
+      'মার্কেট ডেটা সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +386,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
+  String get errMarketBadResponse =>
+      'মার্কেট ডেটা সেবা থেকে অপ্রত্যাশিত উত্তর।';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +487,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get aiRegenerate => 'আবার তৈরি করুন';
 
   @override
-  String get aiGenerating => 'বিশ্লেষণ প্রস্তুত করা হচ্ছে… এতে এক-দুই মিনিট লাগতে পারে।';
+  String get aiGenerating =>
+      'বিশ্লেষণ প্রস্তুত করা হচ্ছে… এতে এক-দুই মিনিট লাগতে পারে।';
 
   @override
   String get aiSources => 'উৎস';
@@ -488,10 +503,12 @@ class AppLocalizationsBn extends AppLocalizations {
       'সর্বজনীন ডেটা ও সাম্প্রতিক খবরের ভিত্তিতে AI-তৈরি বিশ্লেষণ। এতে ভুল থাকতে পারে বা এটি পুরোনো হতে পারে, এবং এটি বিনিয়োগ পরামর্শ নয়।';
 
   @override
-  String get errAiNotConfigured => 'AI বিশ্লেষণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)।';
+  String get errAiNotConfigured =>
+      'AI বিশ্লেষণ কনফিগার করা নেই (ANTHROPIC_API_KEY নেই)।';
 
   @override
-  String get errAiUnreachable => 'AI সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
+  String get errAiUnreachable =>
+      'AI সেবার সাথে সংযোগ করা যায়নি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।';
 
   @override
   String errAiHttp(String status) {
@@ -499,7 +516,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI সেবা এই শেয়ারটি বিশ্লেষণ করতে অস্বীকার করেছে।';
+  String get errAiRefused =>
+      'AI সেবা এই শেয়ারটি বিশ্লেষণ করতে অস্বীকার করেছে।';
 
   @override
   String get errAiBadResponse => 'AI সেবা থেকে অপ্রত্যাশিত উত্তর।';
@@ -523,7 +541,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'বর্তমান ডেটা উৎস থেকে দামের ইতিহাস পাওয়া যায় না।';
+  String get chartUnavailable =>
+      'বর্তমান ডেটা উৎস থেকে দামের ইতিহাস পাওয়া যায় না।';
 
   @override
   String get sectionStatements => 'আর্থিক বিবরণী (বার্ষিক)';
@@ -550,7 +569,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get labelOperatingCashFlow => 'অপারেটিং ক্যাশ ফ্লো';
 
   @override
-  String get statementsUnavailable => 'এই শেয়ারের জন্য প্রকাশিত আর্থিক বিবরণী পাওয়া যায়নি।';
+  String get statementsUnavailable =>
+      'এই শেয়ারের জন্য প্রকাশিত আর্থিক বিবরণী পাওয়া যায়নি।';
 
   @override
   String get launchAtLogin => 'লগইনের সময় চালু করুন';
@@ -559,7 +579,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hotkeyLabel => 'গ্লোবাল শর্টকাট';
 
   @override
-  String get hotkeyRecordHint => 'এখানে ক্লিক করুন, তারপর নতুন কী কম্বিনেশন চাপুন';
+  String get hotkeyRecordHint =>
+      'এখানে ক্লিক করুন, তারপর নতুন কী কম্বিনেশন চাপুন';
 
   @override
   String get hotkeyReset => 'ডিফল্টে রিসেট করুন';
@@ -580,21 +601,22 @@ class AppLocalizationsBn extends AppLocalizations {
   String get removeFromFavorites => 'পছন্দের তালিকা থেকে সরান';
 
   @override
-  String get noFavorites => 'এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।';
+  String get noFavorites =>
+      'এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'প্রদর্শনের মুদ্রা';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'শুধু শেয়ারের নিজস্ব মুদ্রা';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ $currency-এ';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'হার: 1 $from = $rate $to (ECB, $date)';
   }
 }

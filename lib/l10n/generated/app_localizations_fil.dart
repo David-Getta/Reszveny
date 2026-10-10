@@ -13,7 +13,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.';
+  String get homeTagline =>
+      'Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analyst', one: '1 analyst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analyst',
+      one: '1 analyst',
+    );
     return '$_temp0';
   }
 
@@ -347,19 +353,24 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Hindi maproseso ng serbisyo ng pagkilala ang larawang ito.';
+  String get errRecognitionRefused =>
+      'Hindi maproseso ng serbisyo ng pagkilala ang larawang ito.';
 
   @override
-  String get errRecognitionTruncated => 'Naputol ang tugon ng pagkilala. Pakisubukang muli.';
+  String get errRecognitionTruncated =>
+      'Naputol ang tugon ng pagkilala. Pakisubukang muli.';
 
   @override
-  String get errRecognitionBadResponse => 'Hindi inaasahang tugon mula sa serbisyo ng pagkilala.';
+  String get errRecognitionBadResponse =>
+      'Hindi inaasahang tugon mula sa serbisyo ng pagkilala.';
 
   @override
-  String get errRecognitionEmpty => 'Nagbalik ng walang lamang tugon ang serbisyo ng pagkilala.';
+  String get errRecognitionEmpty =>
+      'Nagbalik ng walang lamang tugon ang serbisyo ng pagkilala.';
 
   @override
-  String get errMissingFinnhubKey => 'Hindi naka-configure ang market data (walang FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Hindi naka-configure ang market data (walang FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
@@ -375,7 +386,8 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Hindi inaasahang tugon mula sa serbisyo ng market data.';
+  String get errMarketBadResponse =>
+      'Hindi inaasahang tugon mula sa serbisyo ng market data.';
 
   @override
   String errNoQuote(String symbol) {
@@ -475,7 +487,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get aiRegenerate => 'Gumawa muli';
 
   @override
-  String get aiGenerating => 'Inihahanda ang pagsusuri… maaaring tumagal ito ng isa o dalawang minuto.';
+  String get aiGenerating =>
+      'Inihahanda ang pagsusuri… maaaring tumagal ito ng isa o dalawang minuto.';
 
   @override
   String get aiSources => 'Mga pinagmulan';
@@ -490,10 +503,12 @@ class AppLocalizationsFil extends AppLocalizations {
       'Pagsusuring ginawa ng AI batay sa pampublikong data at mga pinakabagong balita. Maaaring may mga pagkakamali o luma na ito, at hindi ito payo sa pamumuhunan.';
 
   @override
-  String get errAiNotConfigured => 'Hindi naka-configure ang pagsusuri ng AI (walang ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Hindi naka-configure ang pagsusuri ng AI (walang ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Hindi ma-contact ang serbisyo ng AI. Suriin ang iyong koneksyon sa internet.';
+  String get errAiUnreachable =>
+      'Hindi ma-contact ang serbisyo ng AI. Suriin ang iyong koneksyon sa internet.';
 
   @override
   String errAiHttp(String status) {
@@ -501,10 +516,12 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Tumanggi ang serbisyo ng AI na suriin ang stock na ito.';
+  String get errAiRefused =>
+      'Tumanggi ang serbisyo ng AI na suriin ang stock na ito.';
 
   @override
-  String get errAiBadResponse => 'Hindi inaasahang tugon mula sa serbisyo ng AI.';
+  String get errAiBadResponse =>
+      'Hindi inaasahang tugon mula sa serbisyo ng AI.';
 
   @override
   String get sectionChart => 'Chart ng presyo';
@@ -525,7 +542,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Hindi available ang kasaysayan ng presyo mula sa kasalukuyang pinagmulan ng data.';
+  String get chartUnavailable =>
+      'Hindi available ang kasaysayan ng presyo mula sa kasalukuyang pinagmulan ng data.';
 
   @override
   String get sectionStatements => 'Mga financial statement (taunan)';
@@ -552,7 +570,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operating cash flow';
 
   @override
-  String get statementsUnavailable => 'Hindi available ang mga iniulat na financial statement para sa stock na ito.';
+  String get statementsUnavailable =>
+      'Hindi available ang mga iniulat na financial statement para sa stock na ito.';
 
   @override
   String get launchAtLogin => 'Buksan sa pag-log in';
@@ -561,7 +580,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get hotkeyLabel => 'Global na shortcut';
 
   @override
-  String get hotkeyRecordHint => 'I-click ito, pagkatapos pindutin ang bagong kombinasyon ng key';
+  String get hotkeyRecordHint =>
+      'I-click ito, pagkatapos pindutin ang bagong kombinasyon ng key';
 
   @override
   String get hotkeyReset => 'I-reset sa default';
@@ -582,17 +602,18 @@ class AppLocalizationsFil extends AppLocalizations {
   String get removeFromFavorites => 'Alisin sa mga paborito';
 
   @override
-  String get noFavorites => 'Wala pang paborito. I-tap ang bituin sa isang stock para idagdag ito.';
+  String get noFavorites =>
+      'Wala pang paborito. I-tap ang bituin sa isang stock para idagdag ito.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'Currency na ipapakita';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'Sariling currency lang ng stock';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ sa $currency';
   }
 
   @override

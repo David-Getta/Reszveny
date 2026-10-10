@@ -306,7 +306,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisti', one: '1 analista');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisti',
+      one: '1 analista',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +352,32 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
+  String get errRecognitionRefused =>
+      'Il servizio di riconoscimento non è riuscito a elaborare questa immagine.';
 
   @override
-  String get errRecognitionTruncated => 'La risposta del riconoscimento è stata interrotta. Riprova.';
+  String get errRecognitionTruncated =>
+      'La risposta del riconoscimento è stata interrotta. Riprova.';
 
   @override
-  String get errRecognitionBadResponse => 'Risposta inattesa dal servizio di riconoscimento.';
+  String get errRecognitionBadResponse =>
+      'Risposta inattesa dal servizio di riconoscimento.';
 
   @override
-  String get errRecognitionEmpty => 'Il servizio di riconoscimento ha restituito una risposta vuota.';
+  String get errRecognitionEmpty =>
+      'Il servizio di riconoscimento ha restituito una risposta vuota.';
 
   @override
-  String get errMissingFinnhubKey => 'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'I dati di mercato non sono configurati (manca FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Impossibile raggiungere il servizio dei dati di mercato. Controlla la connessione a internet.';
 
   @override
-  String get errMarketRateLimited => 'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
+  String get errMarketRateLimited =>
+      'Troppe richieste al servizio dei dati di mercato. Attendi un minuto.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +385,8 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Risposta inattesa dal servizio dei dati di mercato.';
+  String get errMarketBadResponse =>
+      'Risposta inattesa dal servizio dei dati di mercato.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +486,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get aiRegenerate => 'Rigenera';
 
   @override
-  String get aiGenerating => 'Preparazione dell’analisi in corso… può richiedere uno o due minuti.';
+  String get aiGenerating =>
+      'Preparazione dell’analisi in corso… può richiedere uno o due minuti.';
 
   @override
   String get aiSources => 'Fonti';
@@ -489,10 +502,12 @@ class AppLocalizationsIt extends AppLocalizations {
       'Analisi generata dall’IA sulla base di dati pubblici e notizie recenti. Può contenere errori o non essere aggiornata e non costituisce un consiglio di investimento.';
 
   @override
-  String get errAiNotConfigured => 'L’analisi IA non è configurata (manca ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'L’analisi IA non è configurata (manca ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Impossibile raggiungere il servizio di IA. Controlla la connessione a internet.';
+  String get errAiUnreachable =>
+      'Impossibile raggiungere il servizio di IA. Controlla la connessione a internet.';
 
   @override
   String errAiHttp(String status) {
@@ -500,7 +515,8 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Il servizio di IA ha rifiutato di analizzare questa azione.';
+  String get errAiRefused =>
+      'Il servizio di IA ha rifiutato di analizzare questa azione.';
 
   @override
   String get errAiBadResponse => 'Risposta inattesa dal servizio di IA.';
@@ -524,7 +540,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable => 'Lo storico dei prezzi non è disponibile dalla fonte dati attuale.';
+  String get chartUnavailable =>
+      'Lo storico dei prezzi non è disponibile dalla fonte dati attuale.';
 
   @override
   String get sectionStatements => 'Bilanci (annuali)';
@@ -551,7 +568,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flusso di cassa operativo';
 
   @override
-  String get statementsUnavailable => 'Per questa azione non sono disponibili bilanci pubblicati.';
+  String get statementsUnavailable =>
+      'Per questa azione non sono disponibili bilanci pubblicati.';
 
   @override
   String get launchAtLogin => 'Avvia all’accesso';
@@ -560,7 +578,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get hotkeyLabel => 'Scorciatoia globale';
 
   @override
-  String get hotkeyRecordHint => 'Fai clic qui, poi premi la nuova combinazione di tasti';
+  String get hotkeyRecordHint =>
+      'Fai clic qui, poi premi la nuova combinazione di tasti';
 
   @override
   String get hotkeyReset => 'Ripristina predefinita';
@@ -581,13 +600,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get removeFromFavorites => 'Rimuovi dai preferiti';
 
   @override
-  String get noFavorites => 'Nessun preferito. Tocca la stella di un’azione per aggiungerla.';
+  String get noFavorites =>
+      'Nessun preferito. Tocca la stella di un’azione per aggiungerla.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'Valuta di visualizzazione';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'Solo la valuta dell’azione';
 
   @override
   String labelConverted(String currency) {
@@ -596,6 +616,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'Cambio: 1 $from = $rate $to (BCE, $date)';
   }
 }

@@ -13,7 +13,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
+  String get homeTagline =>
+      'Nufotografuokite akciją ir sužinokite apie ją viską.';
 
   @override
   String get homeHint =>
@@ -345,7 +346,8 @@ class AppLocalizationsLt extends AppLocalizations {
       'Vaizdų atpažinimas nesukonfigūruotas (nėra ANTHROPIC_API_KEY). Įveskite simbolį rankiniu būdu.';
 
   @override
-  String get errRecognitionUnreachable => 'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
+  String get errRecognitionUnreachable =>
+      'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,25 +355,32 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
+  String get errRecognitionRefused =>
+      'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
 
   @override
-  String get errRecognitionTruncated => 'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
+  String get errRecognitionTruncated =>
+      'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
 
   @override
-  String get errRecognitionBadResponse => 'Netikėtas atpažinimo paslaugos atsakymas.';
+  String get errRecognitionBadResponse =>
+      'Netikėtas atpažinimo paslaugos atsakymas.';
 
   @override
-  String get errRecognitionEmpty => 'Atpažinimo paslauga grąžino tuščią atsakymą.';
+  String get errRecognitionEmpty =>
+      'Atpažinimo paslauga grąžino tuščią atsakymą.';
 
   @override
-  String get errMissingFinnhubKey => 'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
+  String get errMarketUnreachable =>
+      'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
 
   @override
-  String get errMarketRateLimited => 'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
+  String get errMarketRateLimited =>
+      'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +388,8 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Netikėtas rinkos duomenų paslaugos atsakymas.';
+  String get errMarketBadResponse =>
+      'Netikėtas rinkos duomenų paslaugos atsakymas.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +489,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get aiRegenerate => 'Sukurti iš naujo';
 
   @override
-  String get aiGenerating => 'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
+  String get aiGenerating =>
+      'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
 
   @override
   String get aiSources => 'Šaltiniai';
@@ -494,10 +505,12 @@ class AppLocalizationsLt extends AppLocalizations {
       'DI sukurta analizė, pagrįsta viešais duomenimis ir naujausiomis naujienomis. Joje gali būti klaidų arba ji gali būti pasenusi, ir tai nėra investavimo rekomendacija.';
 
   @override
-  String get errAiNotConfigured => 'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
+  String get errAiUnreachable =>
+      'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +542,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get rangeFiveYears => '5 m.';
 
   @override
-  String get chartUnavailable => 'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
+  String get chartUnavailable =>
+      'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
 
   @override
   String get sectionStatements => 'Finansinės ataskaitos (metinės)';
@@ -556,7 +570,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Pagrindinės veiklos pinigų srautas';
 
   @override
-  String get statementsUnavailable => 'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
+  String get statementsUnavailable =>
+      'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
 
   @override
   String get launchAtLogin => 'Paleisti prisijungus';
@@ -565,7 +580,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get hotkeyLabel => 'Visuotinis spartusis klavišas';
 
   @override
-  String get hotkeyRecordHint => 'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
+  String get hotkeyRecordHint =>
+      'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
 
   @override
   String get hotkeyReset => 'Atkurti numatytąjį';
@@ -586,21 +602,22 @@ class AppLocalizationsLt extends AppLocalizations {
   String get removeFromFavorites => 'Pašalinti iš mėgstamiausių';
 
   @override
-  String get noFavorites => 'Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.';
+  String get noFavorites =>
+      'Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'Rodymo valiuta';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'Tik pačios akcijos valiuta';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ valiuta $currency';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'Kursas: 1 $from = $rate $to (ECB, $date)';
   }
 }

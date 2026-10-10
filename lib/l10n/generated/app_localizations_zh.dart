@@ -303,7 +303,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析师',
+      one: '1 位分析师',
+    );
     return '$_temp0';
   }
 
@@ -331,7 +336,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey =>
+      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -576,19 +582,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noFavorites => '还没有收藏。点击股票上的星标即可添加。';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => '显示货币';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => '仅显示股票自身货币';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ 折合 $currency';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return '汇率：1 $from = $rate $to（欧洲央行，$date）';
   }
 }
 
@@ -890,7 +896,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析員',
+      one: '1 位分析員',
+    );
     return '$_temp0';
   }
 
@@ -918,7 +929,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey =>
+      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -1161,4 +1173,20 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get noFavorites => '暫時未有收藏。點一下股票上的星星即可加入。';
+
+  @override
+  String get displayCurrency => '顯示貨幣';
+
+  @override
+  String get displayCurrencyNone => '只顯示股票本身貨幣';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ 折合 $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return '匯率：1 $from = $rate $to（歐洲央行，$date）';
+  }
 }

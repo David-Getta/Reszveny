@@ -13,7 +13,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
+  String get homeTagline =>
+      'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ஆய்வாளர்கள்', one: '1 ஆய்வாளர்');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ஆய்வாளர்கள்',
+      one: '1 ஆய்வாளர்',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsTa extends AppLocalizations {
       'பட அடையாளம் அமைக்கப்படவில்லை (ANTHROPIC_API_KEY இல்லை). டிக்கரை கைமுறையாக உள்ளிடுக.';
 
   @override
-  String get errRecognitionUnreachable => 'அடையாள சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
+  String get errRecognitionUnreachable =>
+      'அடையாள சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +353,27 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'அடையாள சேவை இந்தப் படத்தைச் செயலாக்க முடியவில்லை.';
+  String get errRecognitionRefused =>
+      'அடையாள சேவை இந்தப் படத்தைச் செயலாக்க முடியவில்லை.';
 
   @override
-  String get errRecognitionTruncated => 'அடையாளப் பதில் முழுமையாகக் கிடைக்கவில்லை. மீண்டும் முயற்சிக்கவும்.';
+  String get errRecognitionTruncated =>
+      'அடையாளப் பதில் முழுமையாகக் கிடைக்கவில்லை. மீண்டும் முயற்சிக்கவும்.';
 
   @override
-  String get errRecognitionBadResponse => 'அடையாள சேவையிலிருந்து எதிர்பாராத பதில்.';
+  String get errRecognitionBadResponse =>
+      'அடையாள சேவையிலிருந்து எதிர்பாராத பதில்.';
 
   @override
   String get errRecognitionEmpty => 'அடையாள சேவை வெற்றுப் பதிலைத் திருப்பியது.';
 
   @override
-  String get errMissingFinnhubKey => 'சந்தைத் தரவு அமைக்கப்படவில்லை (FINNHUB_API_KEY இல்லை).';
+  String get errMissingFinnhubKey =>
+      'சந்தைத் தரவு அமைக்கப்படவில்லை (FINNHUB_API_KEY இல்லை).';
 
   @override
-  String get errMarketUnreachable => 'சந்தைத் தரவு சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
+  String get errMarketUnreachable =>
+      'சந்தைத் தரவு சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +385,8 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'சந்தைத் தரவு சேவையிலிருந்து எதிர்பாராத பதில்.';
+  String get errMarketBadResponse =>
+      'சந்தைத் தரவு சேவையிலிருந்து எதிர்பாராத பதில்.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +486,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiRegenerate => 'மீண்டும் உருவாக்கு';
 
   @override
-  String get aiGenerating => 'பகுப்பாய்வு தயாராகிறது… இதற்கு ஓரிரு நிமிடங்கள் ஆகலாம்.';
+  String get aiGenerating =>
+      'பகுப்பாய்வு தயாராகிறது… இதற்கு ஓரிரு நிமிடங்கள் ஆகலாம்.';
 
   @override
   String get aiSources => 'ஆதாரங்கள்';
@@ -488,10 +502,12 @@ class AppLocalizationsTa extends AppLocalizations {
       'பொதுத் தரவு மற்றும் சமீபத்திய செய்திகளின் அடிப்படையில் AI உருவாக்கிய பகுப்பாய்வு. இதில் பிழைகள் இருக்கலாம் அல்லது காலாவதியானதாக இருக்கலாம்; இது முதலீட்டு ஆலோசனை அல்ல.';
 
   @override
-  String get errAiNotConfigured => 'AI பகுப்பாய்வு அமைக்கப்படவில்லை (ANTHROPIC_API_KEY இல்லை).';
+  String get errAiNotConfigured =>
+      'AI பகுப்பாய்வு அமைக்கப்படவில்லை (ANTHROPIC_API_KEY இல்லை).';
 
   @override
-  String get errAiUnreachable => 'AI சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
+  String get errAiUnreachable =>
+      'AI சேவையை அணுக முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.';
 
   @override
   String errAiHttp(String status) {
@@ -499,7 +515,8 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI சேவை இந்தப் பங்கைப் பகுப்பாய்வு செய்ய மறுத்தது.';
+  String get errAiRefused =>
+      'AI சேவை இந்தப் பங்கைப் பகுப்பாய்வு செய்ய மறுத்தது.';
 
   @override
   String get errAiBadResponse => 'AI சேவையிலிருந்து எதிர்பாராத பதில்.';
@@ -523,7 +540,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'தற்போதைய தரவு மூலத்திலிருந்து விலை வரலாறு கிடைக்கவில்லை.';
+  String get chartUnavailable =>
+      'தற்போதைய தரவு மூலத்திலிருந்து விலை வரலாறு கிடைக்கவில்லை.';
 
   @override
   String get sectionStatements => 'நிதி அறிக்கைகள் (ஆண்டு)';
@@ -550,7 +568,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get labelOperatingCashFlow => 'இயக்க பணப்புழக்கம்';
 
   @override
-  String get statementsUnavailable => 'இந்தப் பங்கிற்கான அறிவிக்கப்பட்ட நிதி அறிக்கைகள் கிடைக்கவில்லை.';
+  String get statementsUnavailable =>
+      'இந்தப் பங்கிற்கான அறிவிக்கப்பட்ட நிதி அறிக்கைகள் கிடைக்கவில்லை.';
 
   @override
   String get launchAtLogin => 'உள்நுழையும்போது தொடங்கு';
@@ -559,7 +578,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get hotkeyLabel => 'குளோபல் ஷார்ட்கட்';
 
   @override
-  String get hotkeyRecordHint => 'இங்கே கிளிக் செய்து, பின்னர் புதிய விசைச் சேர்க்கையை அழுத்துங்கள்';
+  String get hotkeyRecordHint =>
+      'இங்கே கிளிக் செய்து, பின்னர் புதிய விசைச் சேர்க்கையை அழுத்துங்கள்';
 
   @override
   String get hotkeyReset => 'இயல்புநிலைக்கு மீட்டமை';
@@ -580,21 +600,22 @@ class AppLocalizationsTa extends AppLocalizations {
   String get removeFromFavorites => 'பிடித்தவற்றிலிருந்து நீக்கு';
 
   @override
-  String get noFavorites => 'பிடித்தவை இன்னும் இல்லை. சேர்க்க ஒரு பங்கின் நட்சத்திரத்தைத் தட்டுங்கள்.';
+  String get noFavorites =>
+      'பிடித்தவை இன்னும் இல்லை. சேர்க்க ஒரு பங்கின் நட்சத்திரத்தைத் தட்டுங்கள்.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'காட்சி நாணயம்';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'பங்கின் சொந்த நாணயம் மட்டும்';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ $currency இல்';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'விகிதம்: 1 $from = $rate $to (ECB, $date)';
   }
 }

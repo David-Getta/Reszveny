@@ -13,7 +13,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline => 'Sfotografuj akcję i dowiedz się o niej wszystkiego.';
+  String get homeTagline =>
+      'Sfotografuj akcję i dowiedz się o niej wszystkiego.';
 
   @override
   String get homeHint =>
@@ -354,26 +355,32 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Usługa rozpoznawania nie mogła przetworzyć tego obrazu.';
+  String get errRecognitionRefused =>
+      'Usługa rozpoznawania nie mogła przetworzyć tego obrazu.';
 
   @override
-  String get errRecognitionTruncated => 'Odpowiedź usługi rozpoznawania została ucięta. Spróbuj ponownie.';
+  String get errRecognitionTruncated =>
+      'Odpowiedź usługi rozpoznawania została ucięta. Spróbuj ponownie.';
 
   @override
-  String get errRecognitionBadResponse => 'Nieoczekiwana odpowiedź usługi rozpoznawania.';
+  String get errRecognitionBadResponse =>
+      'Nieoczekiwana odpowiedź usługi rozpoznawania.';
 
   @override
-  String get errRecognitionEmpty => 'Usługa rozpoznawania zwróciła pustą odpowiedź.';
+  String get errRecognitionEmpty =>
+      'Usługa rozpoznawania zwróciła pustą odpowiedź.';
 
   @override
-  String get errMissingFinnhubKey => 'Dane rynkowe nie są skonfigurowane (brak FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Dane rynkowe nie są skonfigurowane (brak FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nie udało się połączyć z usługą danych rynkowych. Sprawdź połączenie z internetem.';
 
   @override
-  String get errMarketRateLimited => 'Zbyt wiele zapytań do usługi danych rynkowych. Odczekaj minutę.';
+  String get errMarketRateLimited =>
+      'Zbyt wiele zapytań do usługi danych rynkowych. Odczekaj minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -381,7 +388,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Nieoczekiwana odpowiedź usługi danych rynkowych.';
+  String get errMarketBadResponse =>
+      'Nieoczekiwana odpowiedź usługi danych rynkowych.';
 
   @override
   String errNoQuote(String symbol) {
@@ -481,7 +489,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get aiRegenerate => 'Wygeneruj ponownie';
 
   @override
-  String get aiGenerating => 'Przygotowywanie analizy… może to potrwać minutę lub dwie.';
+  String get aiGenerating =>
+      'Przygotowywanie analizy… może to potrwać minutę lub dwie.';
 
   @override
   String get aiSources => 'Źródła';
@@ -496,10 +505,12 @@ class AppLocalizationsPl extends AppLocalizations {
       'Analiza wygenerowana przez AI na podstawie publicznych danych i ostatnich wiadomości. Może zawierać błędy lub być nieaktualna i nie stanowi porady inwestycyjnej.';
 
   @override
-  String get errAiNotConfigured => 'Analiza AI nie jest skonfigurowana (brak ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Analiza AI nie jest skonfigurowana (brak ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Nie udało się połączyć z usługą AI. Sprawdź połączenie z internetem.';
+  String get errAiUnreachable =>
+      'Nie udało się połączyć z usługą AI. Sprawdź połączenie z internetem.';
 
   @override
   String errAiHttp(String status) {
@@ -531,7 +542,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get rangeFiveYears => '5L';
 
   @override
-  String get chartUnavailable => 'Historia cen nie jest dostępna w bieżącym źródle danych.';
+  String get chartUnavailable =>
+      'Historia cen nie jest dostępna w bieżącym źródle danych.';
 
   @override
   String get sectionStatements => 'Sprawozdania finansowe (roczne)';
@@ -555,10 +567,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get labelEquity => 'Kapitał własny';
 
   @override
-  String get labelOperatingCashFlow => 'Przepływy pieniężne z działalności operacyjnej';
+  String get labelOperatingCashFlow =>
+      'Przepływy pieniężne z działalności operacyjnej';
 
   @override
-  String get statementsUnavailable => 'Raportowane sprawozdania finansowe nie są dostępne dla tej akcji.';
+  String get statementsUnavailable =>
+      'Raportowane sprawozdania finansowe nie są dostępne dla tej akcji.';
 
   @override
   String get launchAtLogin => 'Uruchamiaj przy logowaniu';
@@ -567,7 +581,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get hotkeyLabel => 'Skrót globalny';
 
   @override
-  String get hotkeyRecordHint => 'Kliknij tutaj, a następnie naciśnij nową kombinację klawiszy';
+  String get hotkeyRecordHint =>
+      'Kliknij tutaj, a następnie naciśnij nową kombinację klawiszy';
 
   @override
   String get hotkeyReset => 'Przywróć domyślny';
@@ -588,21 +603,22 @@ class AppLocalizationsPl extends AppLocalizations {
   String get removeFromFavorites => 'Usuń z ulubionych';
 
   @override
-  String get noFavorites => 'Brak ulubionych. Dotknij gwiazdki przy akcji, aby ją dodać.';
+  String get noFavorites =>
+      'Brak ulubionych. Dotknij gwiazdki przy akcji, aby ją dodać.';
 
   @override
-  String get displayCurrency => 'Display currency';
+  String get displayCurrency => 'Waluta wyświetlania';
 
   @override
-  String get displayCurrencyNone => 'Stock’s own currency only';
+  String get displayCurrencyNone => 'Tylko własna waluta akcji';
 
   @override
   String labelConverted(String currency) {
-    return '≈ in $currency';
+    return '≈ w $currency';
   }
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+    return 'Kurs: 1 $from = $rate $to (EBC, $date)';
   }
 }
