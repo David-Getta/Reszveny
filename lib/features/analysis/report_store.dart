@@ -7,13 +7,17 @@ import '../../core/errors.dart';
 import '../../core/models/stock_details.dart';
 import '../billing/entitlement_service.dart';
 import '../../core/models/stock_report.dart';
+import 'analysis_options.dart';
 import 'stock_analyst.dart';
 
 /// Az elemzések állapota és gyorsítótára tickerenként. A kész elemzést
 /// lemezre is menti, hogy újraindítás után se kelljen újra fizetni érte.
 class ReportStore extends ChangeNotifier {
   static bool _isQuotaError(AppErrorCode c) =>
-      c == AppErrorCode.quotaExceeded || c == AppErrorCode.trialExpired || c == AppErrorCode.noPlan;
+      c == AppErrorCode.quotaExceeded ||
+      c == AppErrorCode.trialExpired ||
+      c == AppErrorCode.noPlan ||
+      c == AppErrorCode.notEnoughCredits;
 
   void _notifyQuota() {
     final cb = onQuotaChanged;
@@ -63,19 +67,26 @@ class ReportStore extends ChangeNotifier {
     }
   }
 
-  Future<void> generate(StockDetails details, {required String outputLanguage, bool force = false}) async {
+  Future<void> generate(
+    StockDetails details, {
+    required String outputLanguage,
+    AnalysisOptions options = const AnalysisOptions(),
+    bool force = false,
+  }) async {
     final symbol = details.symbol;
     if (_loading.contains(symbol)) return;
     if (!force && _reports[symbol] != null) return;
     final ent = entitlements;
     if (ent != null) {
-      final q = ent.check();
+      final q = ent.check(cost: options.cost);
       if (q != QuotaCheck.ok) {
-        _errors[symbol] = AnalysisException(switch (q) {
-          QuotaCheck.trialExpired => AppErrorCode.trialExpired,
-          QuotaCheck.noPlan => AppErrorCode.noPlan,
-          _ => AppErrorCode.quotaExceeded,
-        });
+        _errors[symbol] = q == QuotaCheck.insufficient
+            ? AnalysisException(AppErrorCode.notEnoughCredits, detail: '${options.cost}/${ent.available}')
+            : AnalysisException(switch (q) {
+                QuotaCheck.trialExpired => AppErrorCode.trialExpired,
+                QuotaCheck.noPlan => AppErrorCode.noPlan,
+                _ => AppErrorCode.quotaExceeded,
+              });
         notifyListeners();
         return;
       }
@@ -84,9 +95,9 @@ class ReportStore extends ChangeNotifier {
     _errors.remove(symbol);
     notifyListeners();
     try {
-      final r = await analyst.analyze(details, outputLanguage: outputLanguage);
+      final r = await analyst.analyze(details, outputLanguage: outputLanguage, options: options);
       _reports[symbol] = r;
-      await entitlements?.consume();
+      await entitlements?.consume(cost: options.cost);
       _notifyQuota();
       try {
         final prefs = await SharedPreferences.getInstance();

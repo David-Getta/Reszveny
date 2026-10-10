@@ -776,4 +776,108 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'कोणतीही भाषा जुळत नाही.';
+
+  @override
+  String get aiSettings => 'AI विश्लेषण';
+
+  @override
+  String get aiLength => 'लांबी';
+
+  @override
+  String get aiDepthBrief => 'संक्षिप्त';
+
+  @override
+  String get aiDepthStandard => 'मानक';
+
+  @override
+  String get aiDepthDeep => 'सविस्तर';
+
+  @override
+  String get aiDepthBriefDesc => 'महत्त्वाचे मुद्दे, झटपट.';
+
+  @override
+  String get aiDepthStandardDesc => 'सर्व विभागांसह संपूर्ण अहवाल.';
+
+  @override
+  String get aiDepthDeepDesc => 'अधिक वेब शोध, समकक्ष कंपन्यांशी तुलना आणि अधिक सखोल तपशील.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'सुमारे $min–$max शब्द';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषणे वापरली जातात',
+      one: '1 विश्लेषण वापरले जाते',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'वाचक स्तर';
+
+  @override
+  String get aiReaderBeginner => 'नवशिके';
+
+  @override
+  String get aiReaderExperienced => 'अनुभवी';
+
+  @override
+  String get aiReaderBeginnerDesc => 'सोपी भाषा; प्रत्येक तांत्रिक संज्ञा समजावून सांगितली जाते.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'प्रमाणित आर्थिक परिभाषेसह अधिक घन मजकूर.';
+
+  @override
+  String get aiCounterArgument => 'सर्वात भक्कम प्रतिवाद';
+
+  @override
+  String get aiCounterArgumentDesc => 'सारांश नेहमी स्वतःच्याच निष्कर्षाविरुद्धच्या सर्वात भक्कम युक्तिवादाने संपतो.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'तुमच्या प्लॅनमध्ये प्रत्येक विश्लेषणासाठी जास्तीत जास्त $count वेब शोध',
+      one: 'तुमच्या प्लॅनमध्ये प्रत्येक विश्लेषणासाठी जास्तीत जास्त 1 वेब शोध',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'प्लॅननुसार मानक लांबी: सामान्य $normal, Pro $pro, Max $max, Ultra $ultra. संक्षिप्तमध्ये 2 कमी, सविस्तरमध्ये 2 जास्त.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'जास्तीत जास्त $count वेब शोध',
+      one: 'जास्तीत जास्त 1 वेब शोध',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'प्रत्येक विश्लेषणासाठी $count वेब शोध',
+      one: 'प्रत्येक विश्लेषणासाठी 1 वेब शोध',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'या लांबीसाठी $needed विश्लेषणे लागतात, पण फक्त $left शिल्लक आहेत. सेटिंग्जमध्ये कमी लांबी निवडा किंवा अधिक विश्लेषणे मिळवा.';
+  }
 }

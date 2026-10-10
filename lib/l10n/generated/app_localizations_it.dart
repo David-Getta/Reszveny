@@ -779,4 +779,104 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Nessuna lingua corrisponde.';
+
+  @override
+  String get aiSettings => 'Analisi IA';
+
+  @override
+  String get aiLength => 'Lunghezza';
+
+  @override
+  String get aiDepthBrief => 'Breve';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Approfondita';
+
+  @override
+  String get aiDepthBriefDesc => 'L’essenziale, in poco tempo.';
+
+  @override
+  String get aiDepthStandardDesc => 'Report completo con tutte le sezioni.';
+
+  @override
+  String get aiDepthDeepDesc => 'Più ricerche web, confronto con i concorrenti e maggiore dettaglio.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Circa $min–$max parole';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'usa $count analisi', one: 'usa 1 analisi');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Livello del lettore';
+
+  @override
+  String get aiReaderBeginner => 'Principiante';
+
+  @override
+  String get aiReaderExperienced => 'Esperto';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Linguaggio semplice; ogni termine tecnico viene spiegato.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Testo più denso con la terminologia finanziaria standard.';
+
+  @override
+  String get aiCounterArgument => 'Controargomentazione più forte';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'La sintesi si chiude sempre con la migliore argomentazione contro la propria conclusione.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fino a $count ricerche web per analisi con il tuo piano',
+      one: 'Fino a 1 ricerca web per analisi con il tuo piano',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Lunghezza standard per piano: Normale $normal, Pro $pro, Max $max, Ultra $ultra. «Breve» ne usa 2 in meno, «Approfondita» 2 in più.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fino a $count ricerche web',
+      one: 'fino a 1 ricerca web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ricerche web per analisi',
+      one: '1 ricerca web per analisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Questa lunghezza richiede $needed analisi, ma te ne restano solo $left. Scegli una lunghezza più breve nelle Impostazioni o ottieni altre analisi.';
+  }
 }

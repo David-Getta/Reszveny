@@ -779,4 +779,109 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'பொருந்தும் மொழி இல்லை.';
+
+  @override
+  String get aiSettings => 'AI பகுப்பாய்வு';
+
+  @override
+  String get aiLength => 'நீளம்';
+
+  @override
+  String get aiDepthBrief => 'சுருக்கம்';
+
+  @override
+  String get aiDepthStandard => 'நிலையான';
+
+  @override
+  String get aiDepthDeep => 'விரிவான';
+
+  @override
+  String get aiDepthBriefDesc => 'முக்கியமானவை, விரைவாக.';
+
+  @override
+  String get aiDepthStandardDesc => 'அனைத்துப் பிரிவுகளுடன் முழு அறிக்கை.';
+
+  @override
+  String get aiDepthDeepDesc => 'கூடுதல் இணையத் தேடல்கள், ஒத்த நிறுவனங்களுடன் ஒப்பீடு மற்றும் ஆழமான விவரங்கள்.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'சுமார் $min–$max சொற்கள்';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count பகுப்பாய்வுகளைப் பயன்படுத்தும்',
+      one: '1 பகுப்பாய்வைப் பயன்படுத்தும்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'வாசகர் நிலை';
+
+  @override
+  String get aiReaderBeginner => 'தொடக்கநிலை';
+
+  @override
+  String get aiReaderExperienced => 'அனுபவமுள்ளவர்';
+
+  @override
+  String get aiReaderBeginnerDesc => 'எளிய மொழி; ஒவ்வொரு தொழில்நுட்பச் சொல்லும் விளக்கப்படும்.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'நிலையான நிதிச் சொற்களுடன் செறிவான உரை.';
+
+  @override
+  String get aiCounterArgument => 'மிக வலுவான எதிர்வாதம்';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'சுருக்கம் எப்போதும் தனது சொந்த முடிவுக்கு எதிரான மிக வலுவான வாதத்துடன் முடிவடையும்.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'உங்கள் திட்டத்தில் ஒரு பகுப்பாய்விற்கு அதிகபட்சம் $count இணையத் தேடல்கள்',
+      one: 'உங்கள் திட்டத்தில் ஒரு பகுப்பாய்விற்கு அதிகபட்சம் 1 இணையத் தேடல்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'திட்டவாரியாக நிலையான நீளம்: சாதாரண $normal, Pro $pro, Max $max, Ultra $ultra. சுருக்கத்தில் 2 குறைவு, விரிவானதில் 2 அதிகம்.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'அதிகபட்சம் $count இணையத் தேடல்கள்',
+      one: 'அதிகபட்சம் 1 இணையத் தேடல்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ஒரு பகுப்பாய்விற்கு $count இணையத் தேடல்கள்',
+      one: 'ஒரு பகுப்பாய்விற்கு 1 இணையத் தேடல்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'இந்த நீளத்திற்கு $needed பகுப்பாய்வுகள் தேவை, ஆனால் $left மட்டுமே மீதமுள்ளன. அமைப்புகளில் குறைந்த நீளத்தைத் தேர்வுசெய்யவும் அல்லது கூடுதல் பகுப்பாய்வுகளைப் பெறவும்.';
+  }
 }

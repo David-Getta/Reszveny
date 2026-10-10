@@ -777,4 +777,109 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Geen taal gevonden.';
+
+  @override
+  String get aiSettings => 'AI-analyse';
+
+  @override
+  String get aiLength => 'Lengte';
+
+  @override
+  String get aiDepthBrief => 'Kort';
+
+  @override
+  String get aiDepthStandard => 'Standaard';
+
+  @override
+  String get aiDepthDeep => 'Diepgaand';
+
+  @override
+  String get aiDepthBriefDesc => 'De kern, snel.';
+
+  @override
+  String get aiDepthStandardDesc => 'Volledig rapport met alle secties.';
+
+  @override
+  String get aiDepthDeepDesc => 'Meer webzoekopdrachten, vergelijking met sectorgenoten en meer diepgang.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Ongeveer $min–$max woorden';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kost $count analyses',
+      one: 'kost 1 analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Leesniveau';
+
+  @override
+  String get aiReaderBeginner => 'Beginner';
+
+  @override
+  String get aiReaderExperienced => 'Ervaren';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Eenvoudige taal; elke vakterm wordt uitgelegd.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Compactere tekst met gangbare financiële terminologie.';
+
+  @override
+  String get aiCounterArgument => 'Sterkste tegenargument';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'De samenvatting eindigt altijd met het sterkste argument tegen de eigen conclusie.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Maximaal $count webzoekopdrachten per analyse met je abonnement',
+      one: 'Maximaal 1 webzoekopdracht per analyse met je abonnement',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standaardlengte per abonnement: Normaal $normal, Pro $pro, Max $max, Ultra $ultra. Kort gebruikt er 2 minder, Diepgaand 2 meer.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'maximaal $count webzoekopdrachten',
+      one: 'maximaal 1 webzoekopdracht',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count webzoekopdrachten per analyse',
+      one: '1 webzoekopdracht per analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Deze lengte vereist $needed analyses, maar je hebt er nog maar $left. Kies een kortere lengte in Instellingen of koop extra analyses.';
+  }
 }

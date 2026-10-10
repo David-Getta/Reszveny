@@ -778,4 +778,94 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Tidak ada bahasa yang cocok.';
+
+  @override
+  String get aiSettings => 'Analisis AI';
+
+  @override
+  String get aiLength => 'Panjang';
+
+  @override
+  String get aiDepthBrief => 'Ringkas';
+
+  @override
+  String get aiDepthStandard => 'Standar';
+
+  @override
+  String get aiDepthDeep => 'Mendalam';
+
+  @override
+  String get aiDepthBriefDesc => 'Inti informasinya, dengan cepat.';
+
+  @override
+  String get aiDepthStandardDesc => 'Laporan lengkap dengan semua bagian.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Lebih banyak pencarian web, perbandingan dengan perusahaan sejenis, dan detail yang lebih mendalam.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Sekitar $min–$max kata';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'menggunakan $count analisis');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Tingkat pembaca';
+
+  @override
+  String get aiReaderBeginner => 'Pemula';
+
+  @override
+  String get aiReaderExperienced => 'Berpengalaman';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Bahasa sederhana; setiap istilah teknis dijelaskan.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Teks lebih padat dengan terminologi keuangan standar.';
+
+  @override
+  String get aiCounterArgument => 'Argumen tandingan terkuat';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Ringkasan selalu diakhiri dengan argumen terbaik yang menentang kesimpulannya sendiri.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hingga $count pencarian web per analisis dengan paket Anda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Panjang standar per paket: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Ringkas menggunakan 2 lebih sedikit, Mendalam 2 lebih banyak.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'hingga $count pencarian web');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pencarian web per analisis');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Panjang ini memerlukan $needed analisis, tetapi hanya tersisa $left. Pilih panjang yang lebih pendek di Pengaturan atau dapatkan analisis tambahan.';
+  }
 }

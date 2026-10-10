@@ -812,4 +812,116 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Nė viena kalba neatitinka.';
+
+  @override
+  String get aiSettings => 'DI analizė';
+
+  @override
+  String get aiLength => 'Apimtis';
+
+  @override
+  String get aiDepthBrief => 'Trumpa';
+
+  @override
+  String get aiDepthStandard => 'Standartinė';
+
+  @override
+  String get aiDepthDeep => 'Išsami';
+
+  @override
+  String get aiDepthBriefDesc => 'Svarbiausia – greitai.';
+
+  @override
+  String get aiDepthStandardDesc => 'Visa ataskaita su visomis dalimis.';
+
+  @override
+  String get aiDepthDeepDesc => 'Daugiau paieškų internete, palyginimas su konkurentais ir išsamesnė analizė.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Apie $min–$max žodžių';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sunaudoja $count analizių',
+      many: 'sunaudoja $count analizės',
+      few: 'sunaudoja $count analizes',
+      one: 'sunaudoja $count analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Skaitytojo lygis';
+
+  @override
+  String get aiReaderBeginner => 'Pradedantysis';
+
+  @override
+  String get aiReaderExperienced => 'Patyręs';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Paprasta kalba; kiekvienas techninis terminas paaiškinamas.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Glaustesnis tekstas su įprasta finansų terminija.';
+
+  @override
+  String get aiCounterArgument => 'Stipriausias kontrargumentas';
+
+  @override
+  String get aiCounterArgumentDesc => 'Santrauka visada baigiama stipriausiu argumentu prieš jos pačios išvadą.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Su jūsų planu – iki $count paieškų internete per analizę',
+      many: 'Su jūsų planu – iki $count paieškos internete per analizę',
+      few: 'Su jūsų planu – iki $count paieškų internete per analizę',
+      one: 'Su jūsų planu – iki $count paieškos internete per analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standartinė apimtis pagal planą: Standartinis $normal, Pro $pro, Max $max, Ultra $ultra. Trumpa – 2 paieškomis mažiau, Išsami – 2 daugiau.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'iki $count paieškų internete',
+      many: 'iki $count paieškos internete',
+      few: 'iki $count paieškų internete',
+      one: 'iki $count paieškos internete',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paieškų internete per analizę',
+      many: '$count paieškos internete per analizę',
+      few: '$count paieškos internete per analizę',
+      one: '$count paieška internete per analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Šiai apimčiai reikia analizių: $needed, bet liko tik $left. Nustatymuose pasirinkite trumpesnę apimtį arba įsigykite daugiau analizių.';
+  }
 }

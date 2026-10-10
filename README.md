@@ -38,6 +38,15 @@ forráslinkekkel. A modell megkapja a letöltött adatokat, és – ha engedély
 webkereséssel maga is utánanéz a legfrissebb eseményeknek. Az elemzés a felhasználó nyelvén
 készül, és 12 órán át a készüléken tárolódik, hogy ne kelljen újra fizetni érte.
 
+A prompt (v2, [`docs/ELEMZES_PROMPT.md`](docs/ELEMZES_PROMPT.md)) kutatási tervet ad a
+webkeresésekhez, minden számhoz dátumot és forrást kér, külön kezeli a tényt, a becslést és a
+véleményt, minden fontos tény után megmondja, mit jelent a részvényesnek, és egy hosszú
+ellenőrzőlistán végigmegy a rejtett tényezőkön. A modell megkapja az árfolyam-történetből
+számolt statisztikát (hozamok, mozgóátlagok, volatilitás, legnagyobb mozgások) és a többéves
+kimutatásokat is. A beállításokban választható a hossz (Rövid / Alap / Részletes – a részletes két
+elemzést fogyaszt), az olvasói szint (kezdő / tapasztalt) és a „legerősebb ellenérv”; a
+webkeresések száma a csomagtól függ.
+
 Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),
 `ANTHROPIC_WEB_SEARCH` (`true`/`false`, alap `true`).
 

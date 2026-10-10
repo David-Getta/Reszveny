@@ -13,6 +13,7 @@ void main() {
   late Api api;
   late DateTime now;
   var upstreamCalls = 0;
+  Map<String, dynamic>? lastUpstream;
 
   setUp(() {
     now = DateTime.utc(2026, 10, 10, 12);
@@ -21,6 +22,7 @@ void main() {
     final client = MockClient((req) async {
       upstreamCalls++;
       if (req.url.path.endsWith('/v1/messages')) {
+        lastUpstream = req.body.isEmpty ? null : (jsonDecode(req.body) as Map).cast<String, dynamic>();
         expect(req.headers['x-api-key'], 'sk-test');
         return http.Response(
           jsonEncode({
@@ -48,11 +50,17 @@ void main() {
     );
   });
 
-  Future<Map<String, dynamic>> call(String method, String path, {String? token, Object? body}) async {
+  Future<Map<String, dynamic>> call(
+    String method,
+    String path, {
+    String? token,
+    Object? body,
+    Map<String, String> headers = const {},
+  }) async {
     final req = Request(
       method,
       Uri.parse('http://localhost$path'),
-      headers: {if (token != null) 'authorization': 'Bearer $token', 'content-type': 'application/json'},
+      headers: {if (token != null) 'authorization': 'Bearer $token', 'content-type': 'application/json', ...headers},
       body: body == null ? null : jsonEncode(body),
     );
     final res = await api.handler(req);
@@ -153,5 +161,56 @@ void main() {
     final me = await call('GET', '/v1/me', token: token);
     expect(me['body']['entitlements']['used'], 0);
     expect((await call('POST', '/v1/analyze', token: token, body: {}))['status'], 200);
+  });
+
+  test('in-depth analysis costs 2, and 402 insufficient_quota when only 1 is left', () async {
+    final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    const deep = {'x-stocklens-depth': 'deep'};
+    final ok = await call('POST', '/v1/analyze', token: token, body: {}, headers: deep);
+    expect(ok['status'], 200);
+    expect((await call('GET', '/v1/me', token: token))['body']['entitlements']['used'], 2);
+    final blocked = await call('POST', '/v1/analyze', token: token, body: {}, headers: deep);
+    expect(blocked['status'], 402);
+    expect(blocked['body'], {'error': 'insufficient_quota', 'needed': 2, 'available': 1});
+    // Egy rövid még belefér.
+    final brief = await call('POST', '/v1/analyze', token: token, body: {}, headers: {'x-stocklens-depth': 'brief'});
+    expect(brief['status'], 200);
+  });
+
+  test('server caps max_tokens and web searches by plan and depth', () async {
+    final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'stocklens.sub.normal', 'verification_data': 'r-n'},
+    );
+    final greedy = {
+      'max_tokens': 64000,
+      'tools': [
+        {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': 50},
+      ],
+      'messages': [],
+    };
+    await call('POST', '/v1/analyze', token: token, body: greedy);
+    expect(lastUpstream!['max_tokens'], 16000);
+    expect((lastUpstream!['tools'] as List).first['max_uses'], 4); // Normál: 4
+    await call('POST', '/v1/analyze', token: token, body: greedy, headers: {'x-stocklens-depth': 'deep'});
+    expect(lastUpstream!['max_tokens'], 28000);
+    expect((lastUpstream!['tools'] as List).first['max_uses'], 6); // Normál + részletes: 4 + 2
+    // Kisebb kérést nem emel meg.
+    await call(
+      'POST',
+      '/v1/analyze',
+      token: token,
+      body: {
+        'max_tokens': 8000,
+        'tools': [
+          {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': 2},
+        ],
+      },
+    );
+    expect(lastUpstream!['max_tokens'], 8000);
+    expect((lastUpstream!['tools'] as List).first['max_uses'], 2);
   });
 }

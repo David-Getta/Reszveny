@@ -1575,6 +1575,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No language matches.'**
   String get noLanguageMatch;
+
+  /// No description provided for @aiSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis'**
+  String get aiSettings;
+
+  /// No description provided for @aiLength.
+  ///
+  /// In en, this message translates to:
+  /// **'Length'**
+  String get aiLength;
+
+  /// No description provided for @aiDepthBrief.
+  ///
+  /// In en, this message translates to:
+  /// **'Brief'**
+  String get aiDepthBrief;
+
+  /// No description provided for @aiDepthStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get aiDepthStandard;
+
+  /// No description provided for @aiDepthDeep.
+  ///
+  /// In en, this message translates to:
+  /// **'In-depth'**
+  String get aiDepthDeep;
+
+  /// No description provided for @aiDepthBriefDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The essentials, fast.'**
+  String get aiDepthBriefDesc;
+
+  /// No description provided for @aiDepthStandardDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Full report with every section.'**
+  String get aiDepthStandardDesc;
+
+  /// No description provided for @aiDepthDeepDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'More web searches, peer comparison and deeper detail.'**
+  String get aiDepthDeepDesc;
+
+  /// No description provided for @aiDepthWords.
+  ///
+  /// In en, this message translates to:
+  /// **'About {min}–{max} words'**
+  String aiDepthWords(String min, String max);
+
+  /// No description provided for @aiDepthCost.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{uses 1 analysis} other{uses {count} analyses}}'**
+  String aiDepthCost(int count);
+
+  /// No description provided for @aiReaderLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reader level'**
+  String get aiReaderLevel;
+
+  /// No description provided for @aiReaderBeginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get aiReaderBeginner;
+
+  /// No description provided for @aiReaderExperienced.
+  ///
+  /// In en, this message translates to:
+  /// **'Experienced'**
+  String get aiReaderExperienced;
+
+  /// No description provided for @aiReaderBeginnerDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Plain language; every technical term is explained.'**
+  String get aiReaderBeginnerDesc;
+
+  /// No description provided for @aiReaderExperiencedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Denser text with standard financial terminology.'**
+  String get aiReaderExperiencedDesc;
+
+  /// No description provided for @aiCounterArgument.
+  ///
+  /// In en, this message translates to:
+  /// **'Strongest counter-argument'**
+  String get aiCounterArgument;
+
+  /// No description provided for @aiCounterArgumentDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The summary always ends with the best case against its own conclusion.'**
+  String get aiCounterArgumentDesc;
+
+  /// No description provided for @aiWebSearchesInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{Up to 1 web search per analysis with your plan} other{Up to {count} web searches per analysis with your plan}}'**
+  String aiWebSearchesInfo(int count);
+
+  /// No description provided for @aiWebSearchesPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard length by plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Brief uses 2 fewer, In-depth 2 more.'**
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra);
+
+  /// No description provided for @aiWebSearchesShort.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{up to 1 web search} other{up to {count} web searches}}'**
+  String aiWebSearchesShort(int count);
+
+  /// No description provided for @planWebSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{1 web search per analysis} other{{count} web searches per analysis}}'**
+  String planWebSearches(int count);
+
+  /// No description provided for @errNotEnoughCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'This length needs {needed} analyses, but only {left} left. Choose a shorter length in Settings or get more analyses.'**
+  String errNotEnoughCredits(int needed, int left);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -776,4 +776,110 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Babu harshen da ya dace.';
+
+  @override
+  String get aiSettings => 'Nazarin AI';
+
+  @override
+  String get aiLength => 'Tsawo';
+
+  @override
+  String get aiDepthBrief => 'Taƙaitacce';
+
+  @override
+  String get aiDepthStandard => 'Daidaitacce';
+
+  @override
+  String get aiDepthDeep => 'Mai zurfi';
+
+  @override
+  String get aiDepthBriefDesc => 'Muhimman abubuwa, cikin sauri.';
+
+  @override
+  String get aiDepthStandardDesc => 'Cikakken rahoto tare da kowane sashe.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Ƙarin binciken yanar gizo, kwatanta da kamfanoni makamantansu da ƙarin cikakkun bayanai.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Kimanin kalmomi $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'yana amfani da nazari $count',
+      one: 'yana amfani da nazari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Matakin mai karatu';
+
+  @override
+  String get aiReaderBeginner => 'Mafari';
+
+  @override
+  String get aiReaderExperienced => 'Gogagge';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Harshe mai sauƙi; ana bayyana kowace kalmar fasaha.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Rubutu mai cunkoson bayanai tare da kalmomin kuɗi na yau da kullum.';
+
+  @override
+  String get aiCounterArgument => 'Hujja mafi ƙarfi ta adawa';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Taƙaitawar koyaushe tana ƙarewa da hujja mafi ƙarfi da ke adawa da nata ƙarshen.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Har zuwa binciken yanar gizo $count a kowane nazari da tsarin ka',
+      one: 'Har zuwa binciken yanar gizo 1 a kowane nazari da tsarin ka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Daidaitaccen tsawo bisa tsari: Na kullum $normal, Pro $pro, Max $max, Ultra $ultra. Taƙaitacce yana amfani da 2 ƙasa, Mai zurfi 2 fiye.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'har zuwa binciken yanar gizo $count',
+      one: 'har zuwa binciken yanar gizo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Binciken yanar gizo $count a kowane nazari',
+      one: 'Binciken yanar gizo 1 a kowane nazari',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Wannan tsawon yana buƙatar nazari $needed, amma saura $left kawai. Zaɓi gajeren tsawo a Saituna ko sami ƙarin nazari.';
+  }
 }

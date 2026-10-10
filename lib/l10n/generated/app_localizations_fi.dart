@@ -782,4 +782,108 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Ei vastaavia kieliä.';
+
+  @override
+  String get aiSettings => 'Tekoälyanalyysi';
+
+  @override
+  String get aiLength => 'Pituus';
+
+  @override
+  String get aiDepthBrief => 'Lyhyt';
+
+  @override
+  String get aiDepthStandard => 'Vakio';
+
+  @override
+  String get aiDepthDeep => 'Syvällinen';
+
+  @override
+  String get aiDepthBriefDesc => 'Olennaisin, nopeasti.';
+
+  @override
+  String get aiDepthStandardDesc => 'Täysi raportti kaikkine osioineen.';
+
+  @override
+  String get aiDepthDeepDesc => 'Enemmän verkkohakuja, vertailu kilpailijoihin ja syvällisemmät yksityiskohdat.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Noin $min–$max sanaa';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kuluttaa $count analyysia',
+      one: 'kuluttaa 1 analyysin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Lukijan taso';
+
+  @override
+  String get aiReaderBeginner => 'Aloittelija';
+
+  @override
+  String get aiReaderExperienced => 'Kokenut';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Selkeää kieltä; jokainen termi selitetään.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tiiviimpää tekstiä vakiintuneella rahoitusalan terminologialla.';
+
+  @override
+  String get aiCounterArgument => 'Vahvin vasta-argumentti';
+
+  @override
+  String get aiCounterArgumentDesc => 'Yhteenveto päättyy aina vahvimpaan perusteluun omaa johtopäätöstään vastaan.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Enintään $count verkkohakua analyysia kohden paketillasi',
+      one: 'Enintään 1 verkkohaku analyysia kohden paketillasi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Vakiopituus paketeittain: Normaali $normal, Pro $pro, Max $max, Ultra $ultra. Lyhyt käyttää 2 vähemmän, Syvällinen 2 enemmän.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'enintään $count verkkohakua',
+      one: 'enintään 1 verkkohaku',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verkkohakua analyysia kohden',
+      one: '1 verkkohaku analyysia kohden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Tämä pituus vaatii $needed analyysia, mutta jäljellä on vain $left. Valitse lyhyempi pituus Asetuksista tai hanki lisää analyyseja.';
+  }
 }

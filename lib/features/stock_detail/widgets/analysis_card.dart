@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app_services.dart';
 import '../../../core/errors.dart';
+import '../../../features/analysis/analysis_options.dart';
 import '../../../features/billing/paywall_page.dart';
 import '../../../core/models/stock_details.dart';
 import '../../../core/models/stock_report.dart';
@@ -40,12 +41,31 @@ class _AnalysisCardState extends State<AnalysisCard> {
 
   static bool _isQuotaError(Object? e) =>
       e is AppException &&
-      (e.code == AppErrorCode.quotaExceeded || e.code == AppErrorCode.trialExpired || e.code == AppErrorCode.noPlan);
+      (e.code == AppErrorCode.quotaExceeded ||
+          e.code == AppErrorCode.trialExpired ||
+          e.code == AppErrorCode.noPlan ||
+          e.code == AppErrorCode.notEnoughCredits);
+
+  /// „Hossz · fogyasztás · webkeresés” – hogy látszódjon, mibe kerül az elemzés.
+  static String _optionsLine(AppLocalizations l10n, AppServices services) {
+    final o = services.analysisOptions();
+    final depth = switch (o.depth) {
+      AnalysisDepth.brief => l10n.aiDepthBrief,
+      AnalysisDepth.standard => l10n.aiDepthStandard,
+      AnalysisDepth.deep => l10n.aiDepthDeep,
+    };
+    return '$depth · ${l10n.aiDepthCost(o.cost)} · ${l10n.aiWebSearchesShort(o.webSearches)}';
+  }
 
   Future<void> _generate({bool force = false}) {
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
-    return services.reports.generate(widget.details, outputLanguage: language, force: force);
+    return services.reports.generate(
+      widget.details,
+      outputLanguage: language,
+      options: services.analysisOptions(),
+      force: force,
+    );
   }
 
   @override
@@ -79,6 +99,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
             children: [
               if (report == null && !loading) ...[
                 Text(l10n.aiIntro, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
+                const SizedBox(height: 8),
+                Text(_optionsLine(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                 const SizedBox(height: 14),
                 if (error != null) ...[SectionError(errorMessage(l10n, error)), const SizedBox(height: 10)],
                 Wrap(

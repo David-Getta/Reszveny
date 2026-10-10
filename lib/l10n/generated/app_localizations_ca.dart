@@ -778,4 +778,109 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Cap idioma no coincideix.';
+
+  @override
+  String get aiSettings => 'Anàlisi amb IA';
+
+  @override
+  String get aiLength => 'Extensió';
+
+  @override
+  String get aiDepthBrief => 'Breu';
+
+  @override
+  String get aiDepthStandard => 'Estàndard';
+
+  @override
+  String get aiDepthDeep => 'A fons';
+
+  @override
+  String get aiDepthBriefDesc => 'L’essencial, ràpidament.';
+
+  @override
+  String get aiDepthStandardDesc => 'Informe complet amb totes les seccions.';
+
+  @override
+  String get aiDepthDeepDesc => 'Més cerques web, comparació amb competidors i més detall.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Unes $min–$max paraules';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fa servir $count anàlisis',
+      one: 'fa servir 1 anàlisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nivell del lector';
+
+  @override
+  String get aiReaderBeginner => 'Principiant';
+
+  @override
+  String get aiReaderExperienced => 'Experimentat';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Llenguatge senzill; s’explica cada terme tècnic.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Text més dens amb la terminologia financera habitual.';
+
+  @override
+  String get aiCounterArgument => 'Contraargument més sòlid';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'El resum sempre acaba amb el millor argument en contra de la seva pròpia conclusió.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fins a $count cerques web per anàlisi amb el teu pla',
+      one: 'Fins a 1 cerca web per anàlisi amb el teu pla',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Extensió estàndard segons el pla: Normal $normal, Pro $pro, Max $max, Ultra $ultra. «Breu» en fa servir 2 menys i «A fons», 2 més.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fins a $count cerques web',
+      one: 'fins a 1 cerca web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cerques web per anàlisi',
+      one: '1 cerca web per anàlisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Aquesta extensió requereix $needed anàlisis, però només te’n queden $left. Tria una extensió més curta a Configuració o aconsegueix més anàlisis.';
+  }
 }

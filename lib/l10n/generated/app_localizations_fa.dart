@@ -776,4 +776,108 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'زبانی مطابقت ندارد.';
+
+  @override
+  String get aiSettings => 'تحلیل هوش مصنوعی';
+
+  @override
+  String get aiLength => 'طول';
+
+  @override
+  String get aiDepthBrief => 'کوتاه';
+
+  @override
+  String get aiDepthStandard => 'استاندارد';
+
+  @override
+  String get aiDepthDeep => 'عمیق';
+
+  @override
+  String get aiDepthBriefDesc => 'نکات اصلی، سریع.';
+
+  @override
+  String get aiDepthStandardDesc => 'گزارش کامل با همه بخش‌ها.';
+
+  @override
+  String get aiDepthDeepDesc => 'جستجوهای وب بیشتر، مقایسه با رقبا و جزئیات عمیق‌تر.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'حدود $min–$max کلمه';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحلیل مصرف می‌کند',
+      one: '$count تحلیل مصرف می‌کند',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'سطح خواننده';
+
+  @override
+  String get aiReaderBeginner => 'مبتدی';
+
+  @override
+  String get aiReaderExperienced => 'باتجربه';
+
+  @override
+  String get aiReaderBeginnerDesc => 'زبان ساده؛ همه اصطلاحات تخصصی توضیح داده می‌شوند.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'متنی فشرده‌تر با اصطلاحات رایج مالی.';
+
+  @override
+  String get aiCounterArgument => 'قوی‌ترین استدلال مخالف';
+
+  @override
+  String get aiCounterArgumentDesc => 'خلاصه همیشه با قوی‌ترین استدلال علیه نتیجه‌گیری خودش به پایان می‌رسد.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تا $count جستجوی وب برای هر تحلیل با طرح شما',
+      one: 'تا $count جستجوی وب برای هر تحلیل با طرح شما',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'تعداد جستجوی وب در طول استاندارد بر اساس طرح: معمولی $normal، Pro $pro، Max $max، Ultra $ultra. حالت کوتاه 2 جستجوی کمتر و حالت عمیق 2 جستجوی بیشتر دارد.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تا $count جستجوی وب',
+      one: 'تا $count جستجوی وب',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count جستجوی وب برای هر تحلیل',
+      one: '$count جستجوی وب برای هر تحلیل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'این طول به $needed تحلیل نیاز دارد، اما فقط $left تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید.';
+  }
 }

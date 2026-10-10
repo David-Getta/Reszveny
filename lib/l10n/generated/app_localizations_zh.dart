@@ -763,6 +763,90 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noLanguageMatch => '没有匹配的语言。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '篇幅';
+
+  @override
+  String get aiDepthBrief => '简要';
+
+  @override
+  String get aiDepthStandard => '常规';
+
+  @override
+  String get aiDepthDeep => '深入';
+
+  @override
+  String get aiDepthBriefDesc => '快速了解要点。';
+
+  @override
+  String get aiDepthStandardDesc => '包含所有部分的完整报告。';
+
+  @override
+  String get aiDepthDeepDesc => '更多网络搜索、同业比较以及更深入的细节。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '约 $min–$max 词';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '消耗 $count 次分析');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '读者水平';
+
+  @override
+  String get aiReaderBeginner => '新手';
+
+  @override
+  String get aiReaderExperienced => '有经验';
+
+  @override
+  String get aiReaderBeginnerDesc => '语言通俗易懂，每个专业术语都会解释。';
+
+  @override
+  String get aiReaderExperiencedDesc => '内容更紧凑，使用标准金融术语。';
+
+  @override
+  String get aiCounterArgument => '最有力的反方观点';
+
+  @override
+  String get aiCounterArgumentDesc => '摘要的最后总会给出反对其自身结论的最有力论据。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '您的计划每次分析最多可进行 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return '各计划的常规篇幅：标准 $normal、Pro $pro、Max $max、Ultra $ultra。简要少 2 次，深入多 2 次。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return '此篇幅需要 $needed 次分析，但仅剩 $left 次。请在设置中选择更短的篇幅，或获取更多分析。';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1523,4 +1607,88 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get noLanguageMatch => '沒有符合的語言。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '篇幅';
+
+  @override
+  String get aiDepthBrief => '簡要';
+
+  @override
+  String get aiDepthStandard => '常規';
+
+  @override
+  String get aiDepthDeep => '深入';
+
+  @override
+  String get aiDepthBriefDesc => '快速掌握重點。';
+
+  @override
+  String get aiDepthStandardDesc => '包含所有部分的完整報告。';
+
+  @override
+  String get aiDepthDeepDesc => '更多網上搜尋、同業比較及更深入的細節。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '約 $min–$max 字';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '用 $count 次分析');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '讀者程度';
+
+  @override
+  String get aiReaderBeginner => '新手';
+
+  @override
+  String get aiReaderExperienced => '有經驗';
+
+  @override
+  String get aiReaderBeginnerDesc => '用淺白語言，每個專業術語都會解釋。';
+
+  @override
+  String get aiReaderExperiencedDesc => '內容更精簡，使用標準金融術語。';
+
+  @override
+  String get aiCounterArgument => '最有力的反方論點';
+
+  @override
+  String get aiCounterArgumentDesc => '摘要最後一定會提出反駁其自身結論的最有力論據。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '你的計劃每次分析最多可進行 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return '各計劃的常規篇幅：標準 $normal、Pro $pro、Max $max、Ultra $ultra。簡要少 2 次，深入多 2 次。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return '此篇幅需要 $needed 次分析，但只剩 $left 次。請在設定中選擇較短的篇幅，或獲取更多分析。';
+  }
 }

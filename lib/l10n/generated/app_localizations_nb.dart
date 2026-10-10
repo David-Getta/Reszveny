@@ -777,4 +777,109 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Ingen språk samsvarer.';
+
+  @override
+  String get aiSettings => 'AI-analyse';
+
+  @override
+  String get aiLength => 'Lengde';
+
+  @override
+  String get aiDepthBrief => 'Kort';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Grundig';
+
+  @override
+  String get aiDepthBriefDesc => 'Det viktigste, raskt.';
+
+  @override
+  String get aiDepthStandardDesc => 'Full rapport med alle deler.';
+
+  @override
+  String get aiDepthDeepDesc => 'Flere nettsøk, sammenligning med konkurrenter og flere detaljer.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Omtrent $min–$max ord';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bruker $count analyser',
+      one: 'bruker 1 analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Lesernivå';
+
+  @override
+  String get aiReaderBeginner => 'Nybegynner';
+
+  @override
+  String get aiReaderExperienced => 'Erfaren';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Enkelt språk; alle fagbegreper forklares.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tettere tekst med vanlig finansiell terminologi.';
+
+  @override
+  String get aiCounterArgument => 'Sterkeste motargument';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Sammendraget avsluttes alltid med det sterkeste argumentet mot sin egen konklusjon.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Opptil $count nettsøk per analyse med planen din',
+      one: 'Opptil 1 nettsøk per analyse med planen din',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standardlengde per plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Kort bruker 2 færre, Grundig 2 flere.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'opptil $count nettsøk',
+      one: 'opptil 1 nettsøk',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nettsøk per analyse',
+      one: '1 nettsøk per analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Denne lengden krever $needed analyser, men du har bare $left igjen. Velg en kortere lengde i Innstillinger eller kjøp flere analyser.';
+  }
 }

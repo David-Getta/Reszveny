@@ -800,4 +800,113 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Nicio limbă nu se potrivește.';
+
+  @override
+  String get aiSettings => 'Analiză AI';
+
+  @override
+  String get aiLength => 'Lungime';
+
+  @override
+  String get aiDepthBrief => 'Scurtă';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Detaliată';
+
+  @override
+  String get aiDepthBriefDesc => 'Esențialul, rapid.';
+
+  @override
+  String get aiDepthStandardDesc => 'Raport complet, cu toate secțiunile.';
+
+  @override
+  String get aiDepthDeepDesc => 'Mai multe căutări web, comparație cu companii similare și detalii suplimentare.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Aproximativ $min–$max de cuvinte';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'folosește $count de analize',
+      few: 'folosește $count analize',
+      one: 'folosește 1 analiză',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nivelul cititorului';
+
+  @override
+  String get aiReaderBeginner => 'Începător';
+
+  @override
+  String get aiReaderExperienced => 'Experimentat';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Limbaj simplu; fiecare termen tehnic este explicat.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Text mai dens, cu terminologie financiară standard.';
+
+  @override
+  String get aiCounterArgument => 'Cel mai puternic contraargument';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Rezumatul se încheie mereu cu cel mai bun argument împotriva propriei concluzii.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Până la $count de căutări web pe analiză cu planul tău',
+      few: 'Până la $count căutări web pe analiză cu planul tău',
+      one: 'Până la 1 căutare web pe analiză cu planul tău',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Lungimea standard în funcție de plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. „Scurtă” folosește cu 2 mai puține, „Detaliată” cu 2 mai multe.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'până la $count de căutări web',
+      few: 'până la $count căutări web',
+      one: 'până la 1 căutare web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de căutări web pe analiză',
+      few: '$count căutări web pe analiză',
+      one: '1 căutare web pe analiză',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Această lungime necesită $needed analize, dar mai ai doar $left. Alege o lungime mai scurtă în Setări sau obține mai multe analize.';
+  }
 }

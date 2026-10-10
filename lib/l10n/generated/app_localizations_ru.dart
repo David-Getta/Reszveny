@@ -813,4 +813,116 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Ни один язык не найден.';
+
+  @override
+  String get aiSettings => 'ИИ-анализ';
+
+  @override
+  String get aiLength => 'Длина';
+
+  @override
+  String get aiDepthBrief => 'Кратко';
+
+  @override
+  String get aiDepthStandard => 'Стандартно';
+
+  @override
+  String get aiDepthDeep => 'Подробно';
+
+  @override
+  String get aiDepthBriefDesc => 'Главное — быстро.';
+
+  @override
+  String get aiDepthStandardDesc => 'Полный отчёт со всеми разделами.';
+
+  @override
+  String get aiDepthDeepDesc => 'Больше веб-поисков, сравнение с конкурентами и более глубокая детализация.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Примерно $min–$max слов';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'расходует $count анализа',
+      many: 'расходует $count анализов',
+      few: 'расходует $count анализа',
+      one: 'расходует $count анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Уровень читателя';
+
+  @override
+  String get aiReaderBeginner => 'Новичок';
+
+  @override
+  String get aiReaderExperienced => 'Опытный';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Простым языком; каждый специальный термин объясняется.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Более плотный текст со стандартной финансовой терминологией.';
+
+  @override
+  String get aiCounterArgument => 'Самый сильный контраргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Сводка всегда завершается самым весомым аргументом против собственного вывода.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'С вашим тарифом — до $count веб-поиска на анализ',
+      many: 'С вашим тарифом — до $count веб-поисков на анализ',
+      few: 'С вашим тарифом — до $count веб-поисков на анализ',
+      one: 'С вашим тарифом — до $count веб-поиска на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандартная длина по тарифам: Стандарт $normal, Pro $pro, Max $max, Ultra $ultra. «Кратко» — на 2 меньше, «Подробно» — на 2 больше.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count веб-поиска',
+      many: 'до $count веб-поисков',
+      few: 'до $count веб-поисков',
+      one: 'до $count веб-поиска',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count веб-поиска на анализ',
+      many: '$count веб-поисков на анализ',
+      few: '$count веб-поиска на анализ',
+      one: '$count веб-поиск на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Для этой длины нужно анализов: $needed, а осталось: $left. Выберите более короткую длину в Настройках или получите больше анализов.';
+  }
 }

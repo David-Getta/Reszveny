@@ -17,6 +17,7 @@ import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
 import 'package:reszveny/features/billing/demo_billing_service.dart';
@@ -100,7 +101,11 @@ class _FakeAnalyst implements StockAnalyst {
   String get name => 'test';
 
   @override
-  Future<StockReport> analyze(StockDetails details, {String outputLanguage = 'English'}) async => StockReport(
+  Future<StockReport> analyze(
+    StockDetails details, {
+    String outputLanguage = 'English',
+    AnalysisOptions options = const AnalysisOptions(),
+  }) async => StockReport(
     symbol: details.symbol,
     headline: 'Test headline',
     sections: const [
@@ -206,10 +211,32 @@ void main() {
     await _shot(tester, 'paywall');
   });
 
+  testWidgets('settings: AI analysis (hungarian, in-depth)', (tester) async {
+    final s = _services(locale: const Locale('hu'));
+    await pumpApp(tester, s, const Size(1200, 1000));
+    await tester.tap(find.text('Beállítások'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Részletes'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'settings_ai_hu');
+  });
+
+  testWidgets('detail: analysis card shows length and cost (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'));
+    await s.preferences.setAnalysisDepth(AnalysisDepth.deep);
+    await pumpApp(tester, s, const Size(1200, 1000));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Elemzés készítése'), 200, scrollable: find.byType(Scrollable).last);
+    await _shot(tester, 'detail_ai_options_hu');
+  });
+
   testWidgets('language picker', (tester) async {
     await pumpApp(tester, _services(), const Size(1200, 900));
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('System default'), 200, scrollable: find.byType(Scrollable).last);
     await tester.tap(find.text('System default'));
     await tester.pumpAndSettle();
     await tester.enterText(find.widgetWithText(TextField, 'Search languages…'), 'ma');

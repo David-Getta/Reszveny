@@ -104,4 +104,31 @@ void main() {
     expect(back.extraCredits, 3);
     expect(back.periodEnd, DateTime.utc(2026, 10, 31));
   });
+
+  test('an in-depth analysis costs 2: period first, then extra; insufficient when only 1 is left', () async {
+    final now = DateTime(2026, 10, 10);
+    final e = EntitlementService(clock: () => now);
+    await e.activateSubscription(PlanTier.normal);
+    for (var i = 0; i < 7; i++) {
+      expect(await e.consume(), isTrue);
+    }
+    expect(e.available, 1);
+    expect(e.check(cost: 2), QuotaCheck.insufficient);
+    expect(await e.consume(cost: 2), isFalse);
+    await e.addCredits(5);
+    expect(e.check(cost: 2), QuotaCheck.ok);
+    expect(await e.consume(cost: 2), isTrue);
+    // 1 az időszakból, 1 az extrából.
+    expect(e.used, 8);
+    expect(e.extraCredits, 4);
+    expect(e.available, 4);
+  });
+
+  test('plans carry the agreed web search limits', () {
+    expect(PlanSpec.trial.webSearches, 6);
+    expect(PlanSpec.normal.webSearches, 4);
+    expect(PlanSpec.pro.webSearches, 6);
+    expect(PlanSpec.max.webSearches, 8);
+    expect(PlanSpec.ultra.webSearches, 10);
+  });
 }

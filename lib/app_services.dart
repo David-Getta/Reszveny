@@ -8,6 +8,7 @@ import 'core/backend/backend_client.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
+import 'features/analysis/analysis_options.dart';
 import 'features/analysis/claude_stock_analyst.dart';
 import 'features/analysis/report_store.dart';
 import 'features/billing/billing_controller.dart';
@@ -126,6 +127,22 @@ class AppServices {
   late final BillingController billingController;
   final FxService fx;
   final UpdateService updates;
+
+  /// Az elemzés beállításai: a felhasználó választása, a csomag szerinti
+  /// webkeresés-szám és az olvasó régiója.
+  AnalysisOptions analysisOptions() {
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    final depth = preferences.analysisDepth;
+    final appLocale = locale.override ?? device;
+    return AnalysisOptions(
+      depth: depth,
+      readerLevel: preferences.readerLevel,
+      counterArgument: preferences.counterArgument,
+      webSearches: AnalysisOptions.searchesFor(entitlements.state.tier, depth),
+      readerCountry: device.countryCode,
+      readerCurrency: displayCurrency(appLocale),
+    );
+  }
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).
   String? displayCurrency(Locale locale) {

@@ -779,4 +779,108 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Nenhum idioma corresponde.';
+
+  @override
+  String get aiSettings => 'Análise com IA';
+
+  @override
+  String get aiLength => 'Extensão';
+
+  @override
+  String get aiDepthBrief => 'Breve';
+
+  @override
+  String get aiDepthStandard => 'Padrão';
+
+  @override
+  String get aiDepthDeep => 'Detalhada';
+
+  @override
+  String get aiDepthBriefDesc => 'O essencial, de forma rápida.';
+
+  @override
+  String get aiDepthStandardDesc => 'Relatório completo com todas as secções.';
+
+  @override
+  String get aiDepthDeepDesc => 'Mais pesquisas na web, comparação com concorrentes e maior detalhe.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Cerca de $min–$max palavras';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'usa $count análises',
+      one: 'usa 1 análise',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nível do leitor';
+
+  @override
+  String get aiReaderBeginner => 'Iniciante';
+
+  @override
+  String get aiReaderExperienced => 'Experiente';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Linguagem simples; cada termo técnico é explicado.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Texto mais denso, com terminologia financeira padrão.';
+
+  @override
+  String get aiCounterArgument => 'Contra-argumento mais forte';
+
+  @override
+  String get aiCounterArgumentDesc => 'O resumo termina sempre com o melhor argumento contra a sua própria conclusão.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Até $count pesquisas na web por análise com o seu plano',
+      one: 'Até 1 pesquisa na web por análise com o seu plano',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Extensão padrão por plano: Normal $normal, Pro $pro, Max $max, Ultra $ultra. «Breve» usa menos 2 e «Detalhada» mais 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'até $count pesquisas na web',
+      one: 'até 1 pesquisa na web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pesquisas na web por análise',
+      one: '1 pesquisa na web por análise',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Esta extensão requer $needed análises, mas só lhe restam $left. Escolha uma extensão mais curta nas Configurações ou obtenha mais análises.';
+  }
 }

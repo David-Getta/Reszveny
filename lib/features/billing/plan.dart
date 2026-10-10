@@ -3,7 +3,13 @@
 enum PlanTier { trial, normal, pro, max, ultra }
 
 class PlanSpec {
-  const PlanSpec({required this.tier, required this.productId, required this.analysesPerPeriod, this.trialLength});
+  const PlanSpec({
+    required this.tier,
+    required this.productId,
+    required this.analysesPerPeriod,
+    required this.webSearches,
+    this.trialLength,
+  });
 
   final PlanTier tier;
 
@@ -12,6 +18,10 @@ class PlanSpec {
 
   /// Elemzések száma egy számlázási időszakban (próba: a teljes próbaidőre).
   final int analysesPerPeriod;
+
+  /// Legfeljebb ennyi webkeresés egy normál hosszú elemzéshez (a szerver is
+  /// ezt érvényesíti; a rövid kettővel kevesebbet, a mély kettővel többet kap).
+  final int webSearches;
 
   /// Csak a próbaidőnél.
   final Duration? trialLength;
@@ -22,12 +32,33 @@ class PlanSpec {
     tier: PlanTier.trial,
     productId: '',
     analysesPerPeriod: 3,
+    webSearches: 6,
     trialLength: Duration(days: 3),
   );
-  static const normal = PlanSpec(tier: PlanTier.normal, productId: 'stocklens.sub.normal', analysesPerPeriod: 8);
-  static const pro = PlanSpec(tier: PlanTier.pro, productId: 'stocklens.sub.pro', analysesPerPeriod: 20);
-  static const max = PlanSpec(tier: PlanTier.max, productId: 'stocklens.sub.max', analysesPerPeriod: 80);
-  static const ultra = PlanSpec(tier: PlanTier.ultra, productId: 'stocklens.sub.ultra', analysesPerPeriod: 150);
+  static const normal = PlanSpec(
+    tier: PlanTier.normal,
+    productId: 'stocklens.sub.normal',
+    analysesPerPeriod: 8,
+    webSearches: 4,
+  );
+  static const pro = PlanSpec(
+    tier: PlanTier.pro,
+    productId: 'stocklens.sub.pro',
+    analysesPerPeriod: 20,
+    webSearches: 6,
+  );
+  static const max = PlanSpec(
+    tier: PlanTier.max,
+    productId: 'stocklens.sub.max',
+    analysesPerPeriod: 80,
+    webSearches: 8,
+  );
+  static const ultra = PlanSpec(
+    tier: PlanTier.ultra,
+    productId: 'stocklens.sub.ultra',
+    analysesPerPeriod: 150,
+    webSearches: 10,
+  );
 
   static const List<PlanSpec> paid = [normal, pro, max, ultra];
 

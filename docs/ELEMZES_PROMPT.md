@@ -1,10 +1,25 @@
 # A tökéletes AI-elemzés promptja – munkaanyag
 
-Ez a dokumentum az AI-elemzés rendszerpromptjának új változatát tartalmazza, a tervezési
-döntésekkel együtt. A jelenlegi, éles prompt a `lib/features/analysis/claude_stock_analyst.dart`
-fájlban van (`systemPrompt`). Amíg a vázlatot együtt csiszoljuk, a kód nem változik; ha
-elfogadjuk, a kész szöveg kerül a kódba, és az `analysis_parse_test` bővül a hozzá tartozó
-ellenőrzésekkel.
+Ez a dokumentum az AI-elemzés rendszerpromptjának második változatát és a tervezési
+döntéseket tartalmazza.
+
+**Állapot: beépítve.** A prompt a `lib/features/analysis/claude_stock_analyst.dart` fájl
+`buildSystemPrompt` függvényében van, a beállításoktól függő részekkel (hossz, olvasói szint,
+ellenérv, webkeresések száma, az olvasó országa és pénzneme). Az alábbi 3. pont a standard
+változat; a ténylegesen küldött szöveg a beállítások szerint változik. Az
+`analysis_parse_test` ellenőrzi a kötelező elemeket.
+
+## 0. Döntések (2026-10-10)
+
+| Kérdés | Döntés |
+|---|---|
+| Új szekciók (eseménynaptár, versenytársak)? | Nem; a „Mire figyelj” és az „Értékeltség” szekcióban maradnak |
+| Olvasói szint | Kezdő / tapasztalt kapcsoló a beállításokban, a kezdő az alap |
+| Terjedelem | Választható: Rövid (600–900 szó, 1 elemzés), Alap (1 100–1 600 szó, 1 elemzés), Részletes (2 200–3 000 szó, 2 elemzés) |
+| Webkeresés csomagonként | Alap hossznál Próba 6, Normál 4, Pro 6, Max 8, Ultra 10; a rövid 2-vel kevesebb, a részletes 2-vel több (2–12 között). A szerver érvényesíti |
+| Szcenárió-ársáv | Konkrét ár a részvény devizájában, mellette a %-os elmozdulás |
+| Legerősebb ellenérv | Kapcsolható a beállításokban, alapból bekapcsolva |
+| Versenytársak | Alap hossznál név szerint az értékeltségben, részletesnél 3–5 versenytárs mutatókkal |
 
 ## 1. Mi a baj a mostani prompttal?
 

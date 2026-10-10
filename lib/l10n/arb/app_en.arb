@@ -436,5 +436,91 @@
   "bestValue": "Best value",
   "planFeaturesCommon": "Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.",
   "searchLanguages": "Search languages…",
-  "noLanguageMatch": "No language matches."
+  "noLanguageMatch": "No language matches.",
+  "aiSettings": "AI analysis",
+  "aiLength": "Length",
+  "aiDepthBrief": "Brief",
+  "aiDepthStandard": "Standard",
+  "aiDepthDeep": "In-depth",
+  "aiDepthBriefDesc": "The essentials, fast.",
+  "aiDepthStandardDesc": "Full report with every section.",
+  "aiDepthDeepDesc": "More web searches, peer comparison and deeper detail.",
+  "aiDepthWords": "About {min}–{max} words",
+  "@aiDepthWords": {
+    "placeholders": {
+      "min": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "aiDepthCost": "{count, plural, one{uses 1 analysis} other{uses {count} analyses}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aiReaderLevel": "Reader level",
+  "aiReaderBeginner": "Beginner",
+  "aiReaderExperienced": "Experienced",
+  "aiReaderBeginnerDesc": "Plain language; every technical term is explained.",
+  "aiReaderExperiencedDesc": "Denser text with standard financial terminology.",
+  "aiCounterArgument": "Strongest counter-argument",
+  "aiCounterArgumentDesc": "The summary always ends with the best case against its own conclusion.",
+  "aiWebSearchesInfo": "{count, plural, one{Up to 1 web search per analysis with your plan} other{Up to {count} web searches per analysis with your plan}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aiWebSearchesPlans": "Standard length by plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Brief uses 2 fewer, In-depth 2 more.",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int"
+      },
+      "pro": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      },
+      "ultra": {
+        "type": "int"
+      }
+    }
+  },
+  "aiWebSearchesShort": "{count, plural, one{up to 1 web search} other{up to {count} web searches}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planWebSearches": "{count, plural, one{1 web search per analysis} other{{count} web searches per analysis}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "errNotEnoughCredits": "This length needs {needed} analyses, but only {left} left. Choose a shorter length in Settings or get more analyses.",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "left": {
+        "type": "int"
+      }
+    }
+  }
 }

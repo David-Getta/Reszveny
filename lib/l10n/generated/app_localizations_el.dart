@@ -780,4 +780,110 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Δεν βρέθηκε γλώσσα που να ταιριάζει.';
+
+  @override
+  String get aiSettings => 'Ανάλυση AI';
+
+  @override
+  String get aiLength => 'Μήκος';
+
+  @override
+  String get aiDepthBrief => 'Σύντομη';
+
+  @override
+  String get aiDepthStandard => 'Τυπική';
+
+  @override
+  String get aiDepthDeep => 'Εις βάθος';
+
+  @override
+  String get aiDepthBriefDesc => 'Τα βασικά, γρήγορα.';
+
+  @override
+  String get aiDepthStandardDesc => 'Πλήρης αναφορά με όλες τις ενότητες.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Περισσότερες αναζητήσεις στο web, σύγκριση με ομοειδείς εταιρείες και μεγαλύτερη λεπτομέρεια.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Περίπου $min–$max λέξεις';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'χρησιμοποιεί $count αναλύσεις',
+      one: 'χρησιμοποιεί 1 ανάλυση',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Επίπεδο αναγνώστη';
+
+  @override
+  String get aiReaderBeginner => 'Αρχάριος';
+
+  @override
+  String get aiReaderExperienced => 'Έμπειρος';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Απλή γλώσσα· κάθε τεχνικός όρος εξηγείται.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Πιο πυκνό κείμενο με καθιερωμένη χρηματοοικονομική ορολογία.';
+
+  @override
+  String get aiCounterArgument => 'Ισχυρότερο αντεπιχείρημα';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Η σύνοψη κλείνει πάντα με το ισχυρότερο επιχείρημα κατά του δικού της συμπεράσματος.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Έως $count αναζητήσεις στο web ανά ανάλυση με το πρόγραμμά σας',
+      one: 'Έως 1 αναζήτηση στο web ανά ανάλυση με το πρόγραμμά σας',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Τυπικό μήκος ανά πρόγραμμα: Κανονικό $normal, Pro $pro, Max $max, Ultra $ultra. Η «Σύντομη» χρησιμοποιεί 2 λιγότερες αναζητήσεις, η «Εις βάθος» 2 περισσότερες.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'έως $count αναζητήσεις στο web',
+      one: 'έως 1 αναζήτηση στο web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count αναζητήσεις στο web ανά ανάλυση',
+      one: '1 αναζήτηση στο web ανά ανάλυση',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Αυτό το μήκος απαιτεί $needed αναλύσεις, αλλά σας απομένουν μόνο $left. Επιλέξτε μικρότερο μήκος στις Ρυθμίσεις ή αποκτήστε περισσότερες αναλύσεις.';
+  }
 }

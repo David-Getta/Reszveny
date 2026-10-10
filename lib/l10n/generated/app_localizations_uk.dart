@@ -813,4 +813,116 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Жодна мова не знайдена.';
+
+  @override
+  String get aiSettings => 'ШІ-аналіз';
+
+  @override
+  String get aiLength => 'Довжина';
+
+  @override
+  String get aiDepthBrief => 'Коротко';
+
+  @override
+  String get aiDepthStandard => 'Стандартно';
+
+  @override
+  String get aiDepthDeep => 'Детально';
+
+  @override
+  String get aiDepthBriefDesc => 'Головне — швидко.';
+
+  @override
+  String get aiDepthStandardDesc => 'Повний звіт з усіма розділами.';
+
+  @override
+  String get aiDepthDeepDesc => 'Більше вебпошуків, порівняння з конкурентами та глибша деталізація.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Приблизно $min–$max слів';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'витрачає $count аналізу',
+      many: 'витрачає $count аналізів',
+      few: 'витрачає $count аналізи',
+      one: 'витрачає $count аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Рівень читача';
+
+  @override
+  String get aiReaderBeginner => 'Початківець';
+
+  @override
+  String get aiReaderExperienced => 'Досвідчений';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Простою мовою; кожен фаховий термін пояснено.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Щільніший текст зі стандартною фінансовою термінологією.';
+
+  @override
+  String get aiCounterArgument => 'Найсильніший контраргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Підсумок завжди завершується найвагомішим аргументом проти власного висновку.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'З вашим тарифом — до $count вебпошуку на аналіз',
+      many: 'З вашим тарифом — до $count вебпошуків на аналіз',
+      few: 'З вашим тарифом — до $count вебпошуків на аналіз',
+      one: 'З вашим тарифом — до $count вебпошуку на аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандартна довжина за тарифами: Стандарт $normal, Pro $pro, Max $max, Ultra $ultra. «Коротко» — на 2 менше, «Детально» — на 2 більше.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count вебпошуку',
+      many: 'до $count вебпошуків',
+      few: 'до $count вебпошуків',
+      one: 'до $count вебпошуку',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вебпошуку на аналіз',
+      many: '$count вебпошуків на аналіз',
+      few: '$count вебпошуки на аналіз',
+      one: '$count вебпошук на аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Для цієї довжини потрібно аналізів: $needed, а залишилося: $left. Виберіть коротшу довжину в Налаштуваннях або отримайте більше аналізів.';
+  }
 }

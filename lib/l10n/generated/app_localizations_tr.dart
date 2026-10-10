@@ -776,4 +776,108 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Eşleşen dil yok.';
+
+  @override
+  String get aiSettings => 'Yapay zekâ analizi';
+
+  @override
+  String get aiLength => 'Uzunluk';
+
+  @override
+  String get aiDepthBrief => 'Kısa';
+
+  @override
+  String get aiDepthStandard => 'Standart';
+
+  @override
+  String get aiDepthDeep => 'Ayrıntılı';
+
+  @override
+  String get aiDepthBriefDesc => 'Özü, hızlıca.';
+
+  @override
+  String get aiDepthStandardDesc => 'Tüm bölümleri içeren tam rapor.';
+
+  @override
+  String get aiDepthDeepDesc => 'Daha fazla web araması, benzer şirketlerle karşılaştırma ve daha derin ayrıntı.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Yaklaşık $min–$max kelime';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiz kullanır',
+      one: '$count analiz kullanır',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Okuyucu düzeyi';
+
+  @override
+  String get aiReaderBeginner => 'Başlangıç';
+
+  @override
+  String get aiReaderExperienced => 'Deneyimli';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Sade dil; her teknik terim açıklanır.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Yerleşik finans terminolojisiyle daha yoğun metin.';
+
+  @override
+  String get aiCounterArgument => 'En güçlü karşı argüman';
+
+  @override
+  String get aiCounterArgumentDesc => 'Özet her zaman kendi sonucuna karşı en güçlü argümanla biter.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Planınızla analiz başına en fazla $count web araması',
+      one: 'Planınızla analiz başına en fazla $count web araması',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Plana göre standart uzunluk: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Kısa 2 daha az, Ayrıntılı 2 daha fazla kullanır.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'en fazla $count web araması',
+      one: 'en fazla $count web araması',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Analiz başına $count web araması',
+      one: 'Analiz başına $count web araması',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Bu uzunluk $needed analiz gerektiriyor, ancak yalnızca $left analiz hakkınız kaldı. Ayarlar\'dan daha kısa bir uzunluk seçin veya ek analiz alın.';
+  }
 }

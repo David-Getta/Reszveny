@@ -781,4 +781,110 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Walang tumutugmang wika.';
+
+  @override
+  String get aiSettings => 'Pagsusuri ng AI';
+
+  @override
+  String get aiLength => 'Haba';
+
+  @override
+  String get aiDepthBrief => 'Maikli';
+
+  @override
+  String get aiDepthStandard => 'Karaniwan';
+
+  @override
+  String get aiDepthDeep => 'Malalim';
+
+  @override
+  String get aiDepthBriefDesc => 'Ang mahahalaga, mabilis.';
+
+  @override
+  String get aiDepthStandardDesc => 'Buong ulat kasama ang bawat seksyon.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Mas maraming paghahanap sa web, paghahambing sa mga kakumpitensya at mas malalim na detalye.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Mga $min–$max salita';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'gumagamit ng $count pagsusuri',
+      one: 'gumagamit ng $count pagsusuri',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Antas ng mambabasa';
+
+  @override
+  String get aiReaderBeginner => 'Baguhan';
+
+  @override
+  String get aiReaderExperienced => 'May karanasan';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Simpleng wika; ipinapaliwanag ang bawat teknikal na termino.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Mas siksik na teksto na may karaniwang terminolohiyang pampinansyal.';
+
+  @override
+  String get aiCounterArgument => 'Pinakamalakas na kontra-argumento';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Laging nagtatapos ang buod sa pinakamatibay na argumento laban sa sarili nitong konklusyon.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hanggang $count paghahanap sa web bawat pagsusuri sa iyong plan',
+      one: 'Hanggang $count paghahanap sa web bawat pagsusuri sa iyong plan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Karaniwang haba ayon sa plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. 2 mas kaunti ang Maikli, 2 mas marami ang Malalim.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hanggang $count paghahanap sa web',
+      one: 'hanggang $count paghahanap sa web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paghahanap sa web bawat pagsusuri',
+      one: '$count paghahanap sa web bawat pagsusuri',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Kailangan ng habang ito ng $needed pagsusuri, pero $left na lang ang natitira. Pumili ng mas maikling haba sa Mga setting o kumuha ng dagdag na pagsusuri.';
+  }
 }

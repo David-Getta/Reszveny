@@ -54,6 +54,23 @@ kedvencek és a 44 nyelv minden csomagban korlátlan.
 - `ReportStore.generate` elemzés előtt ellenőrzi a keretet, siker után elhasznál egyet;
   kimerült keretnél a kártya a csomagválasztóra visz.
 
+## Elemzés hossza és webkeresések
+
+A beállításokban választható hossz határozza meg, mennyi keretet fogyaszt egy elemzés:
+
+| Hossz | Terjedelem | Fogyasztás | Webkeresés (alap hossz ± 2) |
+|---|---|---|---|
+| Rövid | 600–900 szó | 1 elemzés | csomag − 2 |
+| Alap | 1 100–1 600 szó | 1 elemzés | csomag |
+| Részletes | 2 200–3 000 szó, versenytárs-összevetés | 2 elemzés | csomag + 2 |
+
+Webkeresés alap hossznál: Próba 6, Normál 4, Pro 6, Max 8, Ultra 10. Ha csak 1 elemzés maradt,
+a részletes nem indítható (`notEnoughCredits`, szerveren 402 `insufficient_quota`), a rövid és az
+alap igen. A levonás előbb az időszaki keretből, a maradék az extrából történik. A szerver a
+`x-stocklens-depth` fejlécből számolja a költséget, és a kérésben a `max_tokens`-t és a
+webkeresés `max_uses` értékét a csomag és a hossz szerinti korlátra vágja, így a kliens nem
+kérhet drágább elemzést, mint amiért fizet.
+
 ## Szerveroldal (`server/`)
 
 A kliens önmagában nem bízható meg sem a kulccsal, sem a kvótával, ezért a kiadás a backenddel

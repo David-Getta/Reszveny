@@ -778,4 +778,108 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'کوئی زبان مطابقت نہیں رکھتی۔';
+
+  @override
+  String get aiSettings => 'AI تجزیہ';
+
+  @override
+  String get aiLength => 'طوالت';
+
+  @override
+  String get aiDepthBrief => 'مختصر';
+
+  @override
+  String get aiDepthStandard => 'معیاری';
+
+  @override
+  String get aiDepthDeep => 'تفصیلی';
+
+  @override
+  String get aiDepthBriefDesc => 'اہم نکات، فوراً۔';
+
+  @override
+  String get aiDepthStandardDesc => 'تمام حصوں کے ساتھ مکمل رپورٹ۔';
+
+  @override
+  String get aiDepthDeepDesc => 'زیادہ ویب تلاشیں، حریف کمپنیوں سے موازنہ اور گہری تفصیل۔';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'تقریباً $min–$max الفاظ';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تجزیے استعمال ہوتے ہیں',
+      one: '$count تجزیہ استعمال ہوتا ہے',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'قاری کی سطح';
+
+  @override
+  String get aiReaderBeginner => 'مبتدی';
+
+  @override
+  String get aiReaderExperienced => 'تجربہ کار';
+
+  @override
+  String get aiReaderBeginnerDesc => 'آسان زبان؛ ہر تکنیکی اصطلاح کی وضاحت کی جاتی ہے۔';
+
+  @override
+  String get aiReaderExperiencedDesc => 'معیاری مالیاتی اصطلاحات کے ساتھ زیادہ جامع متن۔';
+
+  @override
+  String get aiCounterArgument => 'سب سے مضبوط جوابی دلیل';
+
+  @override
+  String get aiCounterArgumentDesc => 'خلاصہ ہمیشہ اپنے ہی نتیجے کے خلاف سب سے مضبوط دلیل پر ختم ہوتا ہے۔';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'آپ کے پلان میں فی تجزیہ زیادہ سے زیادہ $count ویب تلاشیں',
+      one: 'آپ کے پلان میں فی تجزیہ زیادہ سے زیادہ $count ویب تلاش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'معیاری طوالت پر پلان کے لحاظ سے ویب تلاشیں: نارمل $normal، Pro $pro، Max $max، Ultra $ultra۔ مختصر میں 2 کم اور تفصیلی میں 2 زیادہ۔';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'زیادہ سے زیادہ $count ویب تلاشیں',
+      one: 'زیادہ سے زیادہ $count ویب تلاش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'فی تجزیہ $count ویب تلاشیں',
+      one: 'فی تجزیہ $count ویب تلاش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'اس طوالت کے لیے $needed تجزیے درکار ہیں، لیکن صرف $left باقی ہیں۔ ترتیبات میں کم طوالت منتخب کریں یا مزید تجزیے حاصل کریں۔';
+  }
 }

@@ -805,4 +805,112 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Ниједан језик не одговара.';
+
+  @override
+  String get aiSettings => 'AI анализа';
+
+  @override
+  String get aiLength => 'Дужина';
+
+  @override
+  String get aiDepthBrief => 'Кратко';
+
+  @override
+  String get aiDepthStandard => 'Стандардно';
+
+  @override
+  String get aiDepthDeep => 'Детаљно';
+
+  @override
+  String get aiDepthBriefDesc => 'Најважније, брзо.';
+
+  @override
+  String get aiDepthStandardDesc => 'Комплетан извештај са свим одељцима.';
+
+  @override
+  String get aiDepthDeepDesc => 'Више веб-претрага, поређење са конкурентима и детаљнија разрада.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Око $min–$max речи';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'троши $count анализа',
+      few: 'троши $count анализе',
+      one: 'троши $count анализу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Ниво читаоца';
+
+  @override
+  String get aiReaderBeginner => 'Почетник';
+
+  @override
+  String get aiReaderExperienced => 'Искусан';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Једноставан језик; сваки стручни термин је објашњен.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Збијенији текст са стандардном финансијском терминологијом.';
+
+  @override
+  String get aiCounterArgument => 'Најјачи контрааргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Резиме се увек завршава најјачим аргументом против сопственог закључка.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Уз ваш план до $count веб-претрага по анализи',
+      few: 'Уз ваш план до $count веб-претраге по анализи',
+      one: 'Уз ваш план до $count веб-претраге по анализи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандардна дужина по плану: Стандард $normal, Pro $pro, Max $max, Ultra $ultra. „Кратко“ користи 2 мање, „Детаљно“ 2 више.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count веб-претрага',
+      few: 'до $count веб-претраге',
+      one: 'до $count веб-претраге',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count веб-претрага по анализи',
+      few: '$count веб-претраге по анализи',
+      one: '$count веб-претрага по анализи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'За ову дужину потребно је анализа: $needed, а преостало је: $left. Изаберите краћу дужину у Подешавањима или набавите још анализа.';
+  }
 }

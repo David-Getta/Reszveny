@@ -8,7 +8,11 @@ import 'package:reszveny/core/models/news_item.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/core/models/financial_statements.dart';
+import 'package:reszveny/core/models/price_history.dart';
+import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/billing/plan.dart';
 
 Map<String, dynamic> response(List<Map<String, dynamic>> content, {String stop = 'end_turn'}) => {
   'id': 'msg',
@@ -114,15 +118,110 @@ void main() {
     );
   });
 
-  test('system prompt demands the multi-lens outlook section with scenarios', () {
-    expect(ClaudeStockAnalyst.systemPrompt, contains('"outlook"'));
-    expect(ClaudeStockAnalyst.systemPrompt, contains('behavioural finance'));
-    expect(ClaudeStockAnalyst.systemPrompt, contains('Sociology'));
-    expect(ClaudeStockAnalyst.systemPrompt, contains('Bull (~30%)'));
+  test('system prompt v2 demands research plan, evidence discipline, hidden factors and the outlook', () {
+    final p = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions());
+    expect(p, contains('"outlook"'));
+    expect(p, contains('behavioural finance'));
+    expect(p, contains('Sociology'));
+    expect(p, contains('Bull (~30%)'));
+    expect(p, contains('at most 6 searches'));
+    expect(p, contains('short-seller reports'));
+    expect(p, contains('Every number carries its date'));
+    expect(p, contains('"so what"'));
+    expect(p, contains('auditor change'));
+    expect(p, contains('covenants'));
+    expect(p, contains('lock-up expiries'));
+    expect(p, contains('concrete indicative price range'));
+    expect(p, contains('1100-1600 words'));
+    expect(p, contains('BEGINNER'));
+    expect(p, contains('Strongest counter-argument'));
     expect(
       (ClaudeStockAnalyst.schema['properties']['sections']['items']['properties']['kind']['enum'] as List),
       contains('outlook'),
     );
+  });
+
+  test('system prompt follows the analysis options', () {
+    final brief = ClaudeStockAnalyst.buildSystemPrompt(
+      const AnalysisOptions(
+        depth: AnalysisDepth.brief,
+        readerLevel: ReaderLevel.experienced,
+        counterArgument: false,
+        webSearches: 4,
+        readerCountry: 'HU',
+        readerCurrency: 'HUF',
+      ),
+    );
+    expect(brief, contains('BRIEF'));
+    expect(brief, contains('600-900 words'));
+    expect(brief, contains('EXPERIENCED'));
+    expect(brief, contains('at most 4 searches'));
+    expect(brief, contains('combine topics'));
+    expect(brief, contains('based in HU'));
+    expect(brief, contains('HUF'));
+    expect(brief, isNot(contains('Strongest counter-argument')));
+    final deep = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions(depth: AnalysisDepth.deep, webSearches: 8));
+    expect(deep, contains('IN-DEPTH'));
+    expect(deep, contains('2200-3000 words'));
+    expect(deep, contains('extra searches'));
+    final offline = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions(), webSearch: false);
+    expect(offline, contains('Web search is not available'));
+  });
+
+  test('analysis options: cost, tokens and web searches by plan', () {
+    expect(const AnalysisOptions(depth: AnalysisDepth.deep).cost, 2);
+    expect(const AnalysisOptions(depth: AnalysisDepth.brief).cost, 1);
+    expect(AnalysisOptions.searchesFor(PlanTier.normal, AnalysisDepth.standard), 4);
+    expect(AnalysisOptions.searchesFor(PlanTier.normal, AnalysisDepth.brief), 2);
+    expect(AnalysisOptions.searchesFor(PlanTier.ultra, AnalysisDepth.deep), 12);
+    expect(AnalysisOptions.searchesFor(null, AnalysisDepth.standard), 6);
+  });
+
+  test('user message carries price statistics, statements, reader and today', () {
+    final points = [
+      for (var i = 0; i < 400; i++)
+        PricePoint(
+          time: DateTime.utc(2025, 9, 1).add(Duration(days: i)),
+          close: 100 + i * 0.1,
+          volume: 1000,
+        ),
+    ];
+    final msg = ClaudeStockAnalyst.buildUserMessage(
+      StockDetails(
+        symbol: 'AAPL',
+        history: PriceHistory(symbol: 'AAPL', points: points),
+        statements: const FinancialStatements(
+          symbol: 'AAPL',
+          years: [
+            AnnualFinancials(fiscalYear: 2025, revenue: 120, netIncome: 30),
+            AnnualFinancials(fiscalYear: 2024, revenue: 100, netIncome: 20),
+          ],
+        ),
+        news: [
+          NewsItem(
+            headline: 'H',
+            source: 'S',
+            url: 'https://x',
+            publishedAt: DateTime.utc(2026, 10, 1),
+            summary: 'y' * 1000,
+          ),
+        ],
+      ),
+      outputLanguage: 'Hungarian',
+      options: const AnalysisOptions(readerCountry: 'HU', readerCurrency: 'HUF'),
+      now: DateTime.utc(2026, 10, 10),
+    );
+    final json = jsonDecode(msg.substring(msg.indexOf('{'))) as Map<String, dynamic>;
+    expect(json['today'], '2026-10-10');
+    expect(json['reader'], {'language': 'Hungarian', 'level': 'beginner', 'country': 'HU', 'currency': 'HUF'});
+    final stats = json['price_statistics'] as Map<String, dynamic>;
+    expect(stats['return_1y_percent'], greaterThan(0));
+    expect(stats.containsKey('sma_200'), isTrue);
+    expect((stats['largest_daily_moves_30d'] as List).length, 3);
+    final fs = json['financial_statements_annual'] as List;
+    expect(fs.first['revenue_growth_percent'], 20.0);
+    expect(fs.first['net_margin_percent'], 25.0);
+    expect((json['recent_news'] as List).first['summary'].length, 300);
   });
 
   test('request body enables web search without forced JSON format, and the reverse', () {

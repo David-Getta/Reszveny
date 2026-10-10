@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
+import 'package:intl/intl.dart';
 
 import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
+import '../analysis/analysis_options.dart';
+import '../billing/plan.dart';
 import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
 import '../billing/paywall_page.dart';
@@ -56,6 +59,8 @@ class SettingsPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  sectionTitle(l10n.aiSettings),
+                  const Card(child: _AnalysisSettings()),
                   sectionTitle(l10n.appearance),
                   Card(
                     child: Padding(
@@ -163,6 +168,109 @@ class SettingsPage extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+}
+
+/// Az AI-elemzés beállításai: hossz (a mély két elemzést fogyaszt), olvasói
+/// szint, ellenérv, és tájékoztatás a csomag webkeresés-keretéről.
+class _AnalysisSettings extends StatelessWidget {
+  const _AnalysisSettings();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final services = AppServices.of(context);
+    final prefs = services.preferences;
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final muted = theme.textTheme.bodySmall?.copyWith(color: p.muted);
+    final fmt = NumberFormat.decimalPattern(Localizations.localeOf(context).toString());
+
+    String depthDesc(AnalysisDepth d) {
+      final (lo, hi) = AnalysisOptions.wordRangeOf(d);
+      final what = switch (d) {
+        AnalysisDepth.brief => l10n.aiDepthBriefDesc,
+        AnalysisDepth.standard => l10n.aiDepthStandardDesc,
+        AnalysisDepth.deep => l10n.aiDepthDeepDesc,
+      };
+      return '$what ${l10n.aiDepthWords(fmt.format(lo), fmt.format(hi))} · ${l10n.aiDepthCost(AnalysisOptions.costOf(d))}';
+    }
+
+    return ListenableBuilder(
+      listenable: Listenable.merge([prefs, services.entitlements]),
+      builder: (context, _) {
+        final depth = prefs.analysisDepth;
+        final searches = AnalysisOptions.searchesFor(services.entitlements.state.tier, depth);
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(16, 14, 16, 6),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.aiLength, style: theme.textTheme.titleSmall),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: SegmentedButton<AnalysisDepth>(
+                  showSelectedIcon: false,
+                  segments: [
+                    ButtonSegment(value: AnalysisDepth.brief, label: Text(l10n.aiDepthBrief)),
+                    ButtonSegment(value: AnalysisDepth.standard, label: Text(l10n.aiDepthStandard)),
+                    ButtonSegment(value: AnalysisDepth.deep, label: Text(l10n.aiDepthDeep)),
+                  ],
+                  selected: {depth},
+                  onSelectionChanged: (s) => prefs.setAnalysisDepth(s.first),
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(depthDesc(depth), style: muted),
+              const SizedBox(height: 16),
+              Text(l10n.aiReaderLevel, style: theme.textTheme.titleSmall),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: SegmentedButton<ReaderLevel>(
+                  showSelectedIcon: false,
+                  segments: [
+                    ButtonSegment(value: ReaderLevel.beginner, label: Text(l10n.aiReaderBeginner)),
+                    ButtonSegment(value: ReaderLevel.experienced, label: Text(l10n.aiReaderExperienced)),
+                  ],
+                  selected: {prefs.readerLevel},
+                  onSelectionChanged: (s) => prefs.setReaderLevel(s.first),
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                prefs.readerLevel == ReaderLevel.beginner ? l10n.aiReaderBeginnerDesc : l10n.aiReaderExperiencedDesc,
+                style: muted,
+              ),
+              const SizedBox(height: 4),
+              SwitchListTile(
+                contentPadding: EdgeInsets.zero,
+                title: Text(l10n.aiCounterArgument),
+                subtitle: Text(l10n.aiCounterArgumentDesc, style: muted),
+                value: prefs.counterArgument,
+                onChanged: prefs.setCounterArgument,
+              ),
+              const Divider(height: 1),
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: Icon(Icons.travel_explore_rounded, color: p.muted),
+                title: Text(l10n.aiWebSearchesInfo(searches)),
+                subtitle: Text(
+                  l10n.aiWebSearchesPlans(
+                    PlanSpec.normal.webSearches,
+                    PlanSpec.pro.webSearches,
+                    PlanSpec.max.webSearches,
+                    PlanSpec.ultra.webSearches,
+                  ),
+                  style: muted,
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

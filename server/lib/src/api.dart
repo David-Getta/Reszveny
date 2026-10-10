@@ -69,7 +69,8 @@ class Api {
         const headers = {
           'access-control-allow-origin': '*',
           'access-control-allow-headers':
-              'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token',
+              'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, '
+              'x-stocklens-depth',
           'access-control-allow-methods': 'GET, POST, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
@@ -114,7 +115,11 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final e = store.entitlement(uid);
-    final q = quota.check(e);
+    final depth = Depth.parse(r.headers['x-stocklens-depth']);
+    final q = quota.check(e, cost: depth.cost);
+    if (q == QuotaResult.insufficient) {
+      return _json({'error': 'insufficient_quota', 'needed': depth.cost, 'available': quota.available(e)}, status: 402);
+    }
     if (q != QuotaResult.ok) {
       return _error(402, switch (q) {
         QuotaResult.trialExpired => 'trial_expired',
@@ -122,20 +127,46 @@ class Api {
         _ => 'quota_exceeded',
       });
     }
-    final raw = await r.readAsString();
+    final raw = limitRequest(await r.readAsString(), depth: depth, tier: e.tier);
     final upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
     if (upstream.statusCode == 200) {
       // Csak a befejezett (nem pause_turn) választ számoljuk el.
       try {
         final j = jsonDecode(upstream.body) as Map<String, dynamic>;
         if (j['stop_reason'] != 'pause_turn') {
-          quota.consume(e);
+          quota.consume(e, cost: depth.cost);
           final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
           store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
         }
       } catch (_) {}
     }
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  /// A csomag és a hossz szerinti korlátok érvényesítése a kérésen: a
+  /// `max_tokens` és a webkeresés `max_uses` nem lehet nagyobb a megengedettnél,
+  /// így a kliens nem tud drágább elemzést kérni, mint amiért fizet.
+  static String limitRequest(String raw, {required Depth depth, required String? tier}) {
+    Map<String, dynamic> body;
+    try {
+      body = (jsonDecode(raw) as Map).cast<String, dynamic>();
+    } catch (_) {
+      return raw;
+    }
+    final maxTokens = body['max_tokens'];
+    body['max_tokens'] = maxTokens is int && maxTokens < depth.maxTokens ? maxTokens : depth.maxTokens;
+    final allowed = depth.searchesFor(tier);
+    final tools = body['tools'];
+    if (tools is List) {
+      body['tools'] = [
+        for (final t in tools)
+          if (t is Map && (t['type'] as String? ?? '').startsWith('web_search'))
+            {...t, 'max_uses': t['max_uses'] is int && (t['max_uses'] as int) < allowed ? t['max_uses'] : allowed}
+          else
+            t,
+      ];
+    }
+    return jsonEncode(body);
   }
 
   Future<Response> _anthropicPassthrough(Request r) async {

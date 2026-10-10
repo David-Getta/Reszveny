@@ -777,4 +777,109 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Nincs találat a nyelvek között.';
+
+  @override
+  String get aiSettings => 'AI-elemzés';
+
+  @override
+  String get aiLength => 'Hossz';
+
+  @override
+  String get aiDepthBrief => 'Rövid';
+
+  @override
+  String get aiDepthStandard => 'Alap';
+
+  @override
+  String get aiDepthDeep => 'Részletes';
+
+  @override
+  String get aiDepthBriefDesc => 'A lényeg, gyorsan.';
+
+  @override
+  String get aiDepthStandardDesc => 'Teljes elemzés minden szakasszal.';
+
+  @override
+  String get aiDepthDeepDesc => 'Több webkeresés, versenytárs-összevetés, mélyebb részletek.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Kb. $min–$max szó';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elemzést fogyaszt',
+      one: '1 elemzést fogyaszt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Olvasói szint';
+
+  @override
+  String get aiReaderBeginner => 'Kezdő';
+
+  @override
+  String get aiReaderExperienced => 'Tapasztalt';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Közérthető nyelv, minden szakkifejezés megmagyarázva.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tömörebb szöveg, szokásos pénzügyi szakkifejezésekkel.';
+
+  @override
+  String get aiCounterArgument => 'Legerősebb ellenérv';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Az összefoglaló mindig a saját következtetésével szembeni legerősebb érvvel zárul.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Elemzésenként legfeljebb $count webkeresés a csomagoddal',
+      one: 'Elemzésenként legfeljebb 1 webkeresés a csomagoddal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Alap hossznál csomagonként: Normál $normal, Pro $pro, Max $max, Ultra $ultra. A rövid 2-vel kevesebbet, a részletes 2-vel többet kap.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'legfeljebb $count webkeresés',
+      one: 'legfeljebb 1 webkeresés',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count webkeresés elemzésenként',
+      one: '1 webkeresés elemzésenként',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Ehhez a hosszhoz $needed elemzés kell, de csak $left maradt. Válassz rövidebbet a Beállításokban, vagy vásárolj még elemzést.';
+  }
 }

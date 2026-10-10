@@ -778,4 +778,109 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'సరిపోలే భాష లేదు.';
+
+  @override
+  String get aiSettings => 'AI విశ్లేషణ';
+
+  @override
+  String get aiLength => 'నిడివి';
+
+  @override
+  String get aiDepthBrief => 'సంక్షిప్తం';
+
+  @override
+  String get aiDepthStandard => 'ప్రామాణికం';
+
+  @override
+  String get aiDepthDeep => 'వివరణాత్మకం';
+
+  @override
+  String get aiDepthBriefDesc => 'ముఖ్యాంశాలు, త్వరగా.';
+
+  @override
+  String get aiDepthStandardDesc => 'అన్ని విభాగాలతో పూర్తి నివేదిక.';
+
+  @override
+  String get aiDepthDeepDesc => 'మరిన్ని వెబ్ శోధనలు, సమాన కంపెనీలతో పోలిక మరియు మరింత లోతైన వివరాలు.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'సుమారు $min–$max పదాలు';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count విశ్లేషణలను వినియోగిస్తుంది',
+      one: '1 విశ్లేషణను వినియోగిస్తుంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'పాఠకుల స్థాయి';
+
+  @override
+  String get aiReaderBeginner => 'ప్రారంభకులు';
+
+  @override
+  String get aiReaderExperienced => 'అనుభవజ్ఞులు';
+
+  @override
+  String get aiReaderBeginnerDesc => 'సరళమైన భాష; ప్రతి సాంకేతిక పదం వివరించబడుతుంది.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'ప్రామాణిక ఆర్థిక పరిభాషతో సాంద్రమైన పాఠ్యం.';
+
+  @override
+  String get aiCounterArgument => 'అత్యంత బలమైన ప్రతివాదం';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'సారాంశం ఎల్లప్పుడూ తన సొంత నిర్ణయానికి వ్యతిరేకంగా ఉన్న అత్యంత బలమైన వాదనతో ముగుస్తుంది.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'మీ ప్లాన్‌తో ఒక్కో విశ్లేషణకు గరిష్టంగా $count వెబ్ శోధనలు',
+      one: 'మీ ప్లాన్‌తో ఒక్కో విశ్లేషణకు గరిష్టంగా 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'ప్లాన్ వారీగా ప్రామాణిక నిడివి: సాధారణ $normal, Pro $pro, Max $max, Ultra $ultra. సంక్షిప్తంలో 2 తక్కువ, వివరణాత్మకంలో 2 ఎక్కువ.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'గరిష్టంగా $count వెబ్ శోధనలు',
+      one: 'గరిష్టంగా 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ఒక్కో విశ్లేషణకు $count వెబ్ శోధనలు',
+      one: 'ఒక్కో విశ్లేషణకు 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'ఈ నిడివికి $needed విశ్లేషణలు అవసరం, కానీ $left మాత్రమే మిగిలి ఉన్నాయి. సెట్టింగ్‌లలో తక్కువ నిడివిని ఎంచుకోండి లేదా మరిన్ని విశ్లేషణలు పొందండి.';
+  }
 }

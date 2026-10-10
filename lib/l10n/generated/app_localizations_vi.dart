@@ -783,4 +783,93 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Không có ngôn ngữ phù hợp.';
+
+  @override
+  String get aiSettings => 'Phân tích AI';
+
+  @override
+  String get aiLength => 'Độ dài';
+
+  @override
+  String get aiDepthBrief => 'Ngắn gọn';
+
+  @override
+  String get aiDepthStandard => 'Tiêu chuẩn';
+
+  @override
+  String get aiDepthDeep => 'Chuyên sâu';
+
+  @override
+  String get aiDepthBriefDesc => 'Những điểm chính, nhanh chóng.';
+
+  @override
+  String get aiDepthStandardDesc => 'Báo cáo đầy đủ với mọi phần.';
+
+  @override
+  String get aiDepthDeepDesc => 'Nhiều lượt tìm kiếm web hơn, so sánh với doanh nghiệp cùng ngành và chi tiết sâu hơn.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Khoảng $min–$max từ';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'dùng $count lượt phân tích');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Trình độ người đọc';
+
+  @override
+  String get aiReaderBeginner => 'Người mới';
+
+  @override
+  String get aiReaderExperienced => 'Có kinh nghiệm';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Ngôn ngữ dễ hiểu; mọi thuật ngữ chuyên môn đều được giải thích.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Văn bản cô đọng hơn với thuật ngữ tài chính tiêu chuẩn.';
+
+  @override
+  String get aiCounterArgument => 'Lập luận phản bác mạnh nhất';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Phần tóm tắt luôn kết thúc bằng lập luận mạnh nhất chống lại chính kết luận của nó.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tối đa $count lượt tìm kiếm web cho mỗi phân tích với gói của bạn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Độ dài tiêu chuẩn theo gói: Thường $normal, Pro $pro, Max $max, Ultra $ultra. Ngắn gọn dùng ít hơn 2, Chuyên sâu nhiều hơn 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'tối đa $count lượt tìm kiếm web');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count lượt tìm kiếm web mỗi phân tích');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Độ dài này cần $needed lượt phân tích, nhưng bạn chỉ còn $left. Hãy chọn độ dài ngắn hơn trong Cài đặt hoặc mua thêm lượt phân tích.';
+  }
 }

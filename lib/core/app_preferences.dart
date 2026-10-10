@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../features/analysis/analysis_options.dart';
+
 /// Felhasználói beállítások: megjelenés (téma) és a legutóbbi keresések.
 class AppPreferences extends ChangeNotifier {
   AppPreferences({
@@ -12,6 +14,9 @@ class AppPreferences extends ChangeNotifier {
     this.hotkeyJson,
     this.displayCurrency,
     this.autoUpdate = true,
+    this.analysisDepth = AnalysisDepth.standard,
+    this.readerLevel = ReaderLevel.beginner,
+    this.counterArgument = true,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -23,6 +28,9 @@ class AppPreferences extends ChangeNotifier {
   static const _favoritesKey = 'favorite_symbols';
   static const _currencyKey = 'display_currency';
   static const _autoUpdateKey = 'auto_update';
+  static const _depthKey = 'analysis_depth';
+  static const _readerKey = 'analysis_reader_level';
+  static const _counterKey = 'analysis_counter_argument';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -34,6 +42,15 @@ class AppPreferences extends ChangeNotifier {
   final List<String> _favorites;
   List<String> get favorites => List.unmodifiable(_favorites);
   bool isFavorite(String symbol) => _favorites.contains(symbol.toUpperCase());
+
+  /// Az AI-elemzés hossza (a mély elemzés két elemzést fogyaszt).
+  AnalysisDepth analysisDepth;
+
+  /// Kezdő (magyarázó) vagy tapasztalt (tömörebb) olvasónak szóljon az elemzés.
+  ReaderLevel readerLevel;
+
+  /// Az összefoglaló végén szerepeljen a tézis legerősebb ellenérve.
+  bool counterArgument;
 
   /// Frissítések automatikus letöltése és telepítése (ahol a platform engedi).
   bool autoUpdate;
@@ -58,6 +75,9 @@ class AppPreferences extends ChangeNotifier {
         hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
         displayCurrency: prefs.getString(_currencyKey) ?? currencyUnset,
         autoUpdate: prefs.getBool(_autoUpdateKey) ?? true,
+        analysisDepth: AnalysisDepth.values.asNameMap()[prefs.getString(_depthKey) ?? ''] ?? AnalysisDepth.standard,
+        readerLevel: ReaderLevel.values.asNameMap()[prefs.getString(_readerKey) ?? ''] ?? ReaderLevel.beginner,
+        counterArgument: prefs.getBool(_counterKey) ?? true,
       );
     } catch (_) {
       return AppPreferences();
@@ -84,6 +104,24 @@ class AppPreferences extends ChangeNotifier {
   /// Jelző: a felhasználó még nem választott; ilyenkor a rendszer nyelvéből
   /// származtatjuk. Az üres sztring = „csak a saját pénznem”.
   static const String currencyUnset = '__unset__';
+
+  Future<void> setAnalysisDepth(AnalysisDepth d) async {
+    analysisDepth = d;
+    notifyListeners();
+    await _save((p) => p.setString(_depthKey, d.name));
+  }
+
+  Future<void> setReaderLevel(ReaderLevel l) async {
+    readerLevel = l;
+    notifyListeners();
+    await _save((p) => p.setString(_readerKey, l.name));
+  }
+
+  Future<void> setCounterArgument(bool enabled) async {
+    counterArgument = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_counterKey, enabled));
+  }
 
   Future<void> setAutoUpdate(bool enabled) async {
     autoUpdate = enabled;

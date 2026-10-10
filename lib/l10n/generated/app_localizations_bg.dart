@@ -778,4 +778,108 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Няма съвпадащ език.';
+
+  @override
+  String get aiSettings => 'AI анализ';
+
+  @override
+  String get aiLength => 'Дължина';
+
+  @override
+  String get aiDepthBrief => 'Кратко';
+
+  @override
+  String get aiDepthStandard => 'Стандартно';
+
+  @override
+  String get aiDepthDeep => 'Подробно';
+
+  @override
+  String get aiDepthBriefDesc => 'Най-важното, бързо.';
+
+  @override
+  String get aiDepthStandardDesc => 'Пълен доклад с всички раздели.';
+
+  @override
+  String get aiDepthDeepDesc => 'Повече търсения в мрежата, сравнение с конкурентите и по-задълбочени подробности.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Около $min–$max думи';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'използва $count анализа',
+      one: 'използва $count анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Ниво на читателя';
+
+  @override
+  String get aiReaderBeginner => 'Начинаещ';
+
+  @override
+  String get aiReaderExperienced => 'Опитен';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Прост език; всеки специализиран термин е обяснен.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'По-наситен текст със стандартна финансова терминология.';
+
+  @override
+  String get aiCounterArgument => 'Най-силният контрааргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Обобщението винаги завършва с най-силния аргумент срещу собствения си извод.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'С вашия план — до $count търсения в мрежата на анализ',
+      one: 'С вашия план — до $count търсене в мрежата на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандартна дължина според плана: Нормален $normal, Pro $pro, Max $max, Ultra $ultra. „Кратко“ използва с 2 по-малко, „Подробно“ – с 2 повече.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count търсения в мрежата',
+      one: 'до $count търсене в мрежата',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count търсения в мрежата на анализ',
+      one: '$count търсене в мрежата на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Тази дължина изисква анализи: $needed, а оставащите са: $left. Изберете по-кратка дължина в Настройки или вземете още анализи.';
+  }
 }

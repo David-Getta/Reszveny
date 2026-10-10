@@ -787,4 +787,124 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'لا توجد لغة مطابقة.';
+
+  @override
+  String get aiSettings => 'تحليل بالذكاء الاصطناعي';
+
+  @override
+  String get aiLength => 'الطول';
+
+  @override
+  String get aiDepthBrief => 'موجز';
+
+  @override
+  String get aiDepthStandard => 'قياسي';
+
+  @override
+  String get aiDepthDeep => 'معمّق';
+
+  @override
+  String get aiDepthBriefDesc => 'الأساسيات بسرعة.';
+
+  @override
+  String get aiDepthStandardDesc => 'تقرير كامل بجميع الأقسام.';
+
+  @override
+  String get aiDepthDeepDesc => 'مزيد من عمليات البحث على الويب، ومقارنة بالشركات المنافسة، وتفاصيل أعمق.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'نحو $min–$max كلمة';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'يستهلك $count تحليل',
+      many: 'يستهلك $count تحليلاً',
+      few: 'يستهلك $count تحليلات',
+      two: 'يستهلك تحليلين',
+      one: 'يستهلك تحليلاً واحداً',
+      zero: 'لا يستهلك أي تحليل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'مستوى القارئ';
+
+  @override
+  String get aiReaderBeginner => 'مبتدئ';
+
+  @override
+  String get aiReaderExperienced => 'متمرّس';
+
+  @override
+  String get aiReaderBeginnerDesc => 'لغة بسيطة، مع شرح كل مصطلح تقني.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'نص أكثر كثافة بالمصطلحات المالية المعتادة.';
+
+  @override
+  String get aiCounterArgument => 'أقوى حجة مضادة';
+
+  @override
+  String get aiCounterArgumentDesc => 'يُختتم الملخص دائماً بأقوى حجة ضد استنتاجه.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'حتى $count عملية بحث على الويب لكل تحليل ضمن خطتك',
+      many: 'حتى $count عملية بحث على الويب لكل تحليل ضمن خطتك',
+      few: 'حتى $count عمليات بحث على الويب لكل تحليل ضمن خطتك',
+      two: 'حتى بحثين على الويب لكل تحليل ضمن خطتك',
+      one: 'حتى بحث واحد على الويب لكل تحليل ضمن خطتك',
+      zero: 'لا يشمل التحليل أي بحث على الويب ضمن خطتك',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'عمليات البحث على الويب في الطول القياسي حسب الخطة: عادي $normal، Pro $pro، Max $max، Ultra $ultra. يستخدم الموجز عمليتين أقل، والمعمّق عمليتين أكثر.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'حتى $count عملية بحث على الويب',
+      many: 'حتى $count عملية بحث على الويب',
+      few: 'حتى $count عمليات بحث على الويب',
+      two: 'حتى بحثين على الويب',
+      one: 'حتى بحث واحد على الويب',
+      zero: 'بدون بحث على الويب',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count عملية بحث على الويب لكل تحليل',
+      many: '$count عملية بحث على الويب لكل تحليل',
+      few: '$count عمليات بحث على الويب لكل تحليل',
+      two: 'بحثان على الويب لكل تحليل',
+      one: 'بحث واحد على الويب لكل تحليل',
+      zero: 'بدون بحث على الويب في التحليل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'يتطلب هذا الطول عدداً من التحليلات قدره $needed، لكن المتبقي لديك $left فقط. اختر طولاً أقصر من الإعدادات أو احصل على مزيد من التحليلات.';
+  }
 }

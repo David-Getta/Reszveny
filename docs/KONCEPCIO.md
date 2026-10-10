@@ -152,6 +152,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
 | 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
 | 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
+| 3e | AI-elemzés v2: kutatási terv, adatfegyelem, „na és?”, bővített rejtett tényezők, konkrét ársávok; árfolyam-statisztika és többéves kimutatások a modellnek; beállítások: hossz (részletes = 2 elemzés), olvasói szint, ellenérv; webkeresés csomagonként | ✅ kész |
 | 4b | OCR fallback offline (ML Kit, mobil), árfolyam-riasztás, portfólió | ⬜ |
 | 4c | Bejelentkezés (Apple / Google), hogy a csomag minden eszközön ugyanaz legyen | ⬜ |
 | 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ |

@@ -763,4 +763,88 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noLanguageMatch => '一致する言語がありません。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '長さ';
+
+  @override
+  String get aiDepthBrief => '簡潔';
+
+  @override
+  String get aiDepthStandard => '標準';
+
+  @override
+  String get aiDepthDeep => '詳細';
+
+  @override
+  String get aiDepthBriefDesc => '要点をすばやく。';
+
+  @override
+  String get aiDepthStandardDesc => 'すべてのセクションを含む完全なレポート。';
+
+  @override
+  String get aiDepthDeepDesc => 'より多くのウェブ検索、同業他社との比較、より踏み込んだ詳細。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '約 $min〜$max 語';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 $count 回分を使用');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '読者レベル';
+
+  @override
+  String get aiReaderBeginner => '初心者';
+
+  @override
+  String get aiReaderExperienced => '経験者';
+
+  @override
+  String get aiReaderBeginnerDesc => '平易な言葉で、専門用語はすべて説明します。';
+
+  @override
+  String get aiReaderExperiencedDesc => '標準的な金融用語を使った、より密度の高い文章。';
+
+  @override
+  String get aiCounterArgument => '最も有力な反論';
+
+  @override
+  String get aiCounterArgumentDesc => 'サマリーの最後には、必ず自らの結論に対する最も有力な反論を示します。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ご利用のプランでは分析 1 回につき最大 $count 回のウェブ検索');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'プラン別の標準の長さ：ノーマル $normal、Pro $pro、Max $max、Ultra $ultra。簡潔は 2 回少なく、詳細は 2 回多くなります。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最大 $count 回のウェブ検索');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 1 回につきウェブ検索 $count 回');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'この長さには分析 $needed 回分が必要ですが、残りは $left 回です。設定で短い長さを選ぶか、追加の分析を入手してください。';
+  }
 }

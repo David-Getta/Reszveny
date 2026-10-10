@@ -28,6 +28,10 @@ enum AppErrorCode {
   quotaExceeded,
   trialExpired,
   noPlan,
+
+  /// Van még keret, de kevesebb, mint amennyit a választott hossz fogyaszt.
+  /// A [AppException.detail] formátuma: `szükséges/maradt`, pl. `2/1`.
+  notEnoughCredits,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés

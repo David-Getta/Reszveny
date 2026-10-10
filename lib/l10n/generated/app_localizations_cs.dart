@@ -810,4 +810,116 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Žádný jazyk neodpovídá.';
+
+  @override
+  String get aiSettings => 'AI analýza';
+
+  @override
+  String get aiLength => 'Délka';
+
+  @override
+  String get aiDepthBrief => 'Stručně';
+
+  @override
+  String get aiDepthStandard => 'Standardně';
+
+  @override
+  String get aiDepthDeep => 'Podrobně';
+
+  @override
+  String get aiDepthBriefDesc => 'To podstatné, rychle.';
+
+  @override
+  String get aiDepthStandardDesc => 'Úplná zpráva se všemi oddíly.';
+
+  @override
+  String get aiDepthDeepDesc => 'Více vyhledávání na webu, srovnání s konkurencí a hlubší detail.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Přibližně $min–$max slov';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'spotřebuje $count analýz',
+      many: 'spotřebuje $count analýzy',
+      few: 'spotřebuje $count analýzy',
+      one: 'spotřebuje $count analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Úroveň čtenáře';
+
+  @override
+  String get aiReaderBeginner => 'Začátečník';
+
+  @override
+  String get aiReaderExperienced => 'Zkušený';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Srozumitelný jazyk; každý odborný termín je vysvětlen.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Hutnější text se standardní finanční terminologií.';
+
+  @override
+  String get aiCounterArgument => 'Nejsilnější protiargument';
+
+  @override
+  String get aiCounterArgumentDesc => 'Shrnutí vždy končí nejsilnějším argumentem proti vlastnímu závěru.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S vaším tarifem až $count vyhledávání na webu pro každou analýzu',
+      many: 'S vaším tarifem až $count vyhledávání na webu pro každou analýzu',
+      few: 'S vaším tarifem až $count vyhledávání na webu pro každou analýzu',
+      one: 'S vaším tarifem až $count vyhledávání na webu pro každou analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standardní délka podle tarifu: Standard $normal, Pro $pro, Max $max, Ultra $ultra. „Stručně“ o 2 méně, „Podrobně“ o 2 více.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'až $count vyhledávání na webu',
+      many: 'až $count vyhledávání na webu',
+      few: 'až $count vyhledávání na webu',
+      one: 'až $count vyhledávání na webu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vyhledávání na webu pro každou analýzu',
+      many: '$count vyhledávání na webu pro každou analýzu',
+      few: '$count vyhledávání na webu pro každou analýzu',
+      one: '$count vyhledávání na webu pro každou analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Tato délka vyžaduje analýz: $needed, zbývá vám však jen: $left. Zvolte v Nastavení kratší délku nebo si pořiďte další analýzy.';
+  }
 }

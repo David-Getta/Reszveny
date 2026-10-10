@@ -778,4 +778,109 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Asnjë gjuhë nuk përputhet.';
+
+  @override
+  String get aiSettings => 'Analiza me AI';
+
+  @override
+  String get aiLength => 'Gjatësia';
+
+  @override
+  String get aiDepthBrief => 'E shkurtër';
+
+  @override
+  String get aiDepthStandard => 'Standarde';
+
+  @override
+  String get aiDepthDeep => 'E thelluar';
+
+  @override
+  String get aiDepthBriefDesc => 'Thelbësorja, shpejt.';
+
+  @override
+  String get aiDepthStandardDesc => 'Raport i plotë me të gjitha seksionet.';
+
+  @override
+  String get aiDepthDeepDesc => 'Më shumë kërkime në ueb, krahasim me konkurrentët dhe detaje më të thella.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Rreth $min–$max fjalë';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'përdor $count analiza',
+      one: 'përdor $count analizë',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Niveli i lexuesit';
+
+  @override
+  String get aiReaderBeginner => 'Fillestar';
+
+  @override
+  String get aiReaderExperienced => 'Me përvojë';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Gjuhë e thjeshtë; çdo term teknik shpjegohet.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tekst më i ngjeshur me terminologji standarde financiare.';
+
+  @override
+  String get aiCounterArgument => 'Kundërargumenti më i fortë';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Përmbledhja përfundon gjithmonë me argumentin më të fortë kundër përfundimit të vet.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Deri në $count kërkime në ueb për analizë me planin tuaj',
+      one: 'Deri në $count kërkim në ueb për analizë me planin tuaj',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Kërkime në ueb për gjatësinë standarde sipas planit: Normal $normal, Pro $pro, Max $max, Ultra $ultra. E shkurtra përdor 2 më pak, e thelluara 2 më shumë.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'deri në $count kërkime në ueb',
+      one: 'deri në $count kërkim në ueb',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kërkime në ueb për analizë',
+      one: '$count kërkim në ueb për analizë',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Kjo gjatësi kërkon më shumë analiza ($needed) se sa ju kanë mbetur ($left). Zgjidhni një gjatësi më të shkurtër te Cilësimet ose merrni më shumë analiza.';
+  }
 }

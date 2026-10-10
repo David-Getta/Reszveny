@@ -764,4 +764,88 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noLanguageMatch => '일치하는 언어가 없습니다.';
+
+  @override
+  String get aiSettings => 'AI 분석';
+
+  @override
+  String get aiLength => '길이';
+
+  @override
+  String get aiDepthBrief => '간략';
+
+  @override
+  String get aiDepthStandard => '표준';
+
+  @override
+  String get aiDepthDeep => '심층';
+
+  @override
+  String get aiDepthBriefDesc => '핵심만 빠르게.';
+
+  @override
+  String get aiDepthStandardDesc => '모든 섹션을 담은 전체 리포트.';
+
+  @override
+  String get aiDepthDeepDesc => '더 많은 웹 검색, 동종 기업 비교, 더 깊이 있는 세부 내용.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '약 $min–$max단어';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '분석 $count회 사용');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '독자 수준';
+
+  @override
+  String get aiReaderBeginner => '초보자';
+
+  @override
+  String get aiReaderExperienced => '숙련자';
+
+  @override
+  String get aiReaderBeginnerDesc => '쉬운 표현을 사용하며 모든 전문 용어를 설명합니다.';
+
+  @override
+  String get aiReaderExperiencedDesc => '표준 금융 용어를 사용한 더 밀도 높은 글.';
+
+  @override
+  String get aiCounterArgument => '가장 강력한 반론';
+
+  @override
+  String get aiCounterArgumentDesc => '요약은 항상 자체 결론에 대한 가장 강력한 반론으로 마무리됩니다.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '현재 요금제로 분석당 최대 $count회 웹 검색');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return '요금제별 표준 길이: 일반 $normal, Pro $pro, Max $max, Ultra $ultra. 간략은 2회 적게, 심층은 2회 많게 사용합니다.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '최대 $count회 웹 검색');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '분석당 웹 검색 $count회');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return '이 길이에는 분석 $needed회가 필요하지만 $left회만 남았습니다. 설정에서 더 짧은 길이를 선택하거나 추가 분석을 구매하세요.';
+  }
 }

@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'plan.dart';
 
 /// Miért nem indítható elemzés.
-enum QuotaCheck { ok, noPlan, trialExpired, exhausted }
+enum QuotaCheck { ok, noPlan, trialExpired, exhausted, insufficient }
 
 /// A felhasználó jogosultságai: csomag, időszak, felhasznált és extra elemzések.
 ///
@@ -128,33 +128,43 @@ class EntitlementService extends ChangeNotifier {
 
   DateTime? get periodEnd => _rolled().periodEnd;
 
-  QuotaCheck check() {
+  /// Indítható-e egy [cost] elemzést fogyasztó elemzés. Ha van keret, de
+  /// kevesebb a szükségesnél, [QuotaCheck.insufficient].
+  QuotaCheck check({int cost = 1}) {
     final s = _rolled();
-    if (s.tier == null) return s.extraCredits > 0 ? QuotaCheck.ok : QuotaCheck.noPlan;
-    if (s.tier == PlanTier.trial && isTrialExpired) {
-      return s.extraCredits > 0 ? QuotaCheck.ok : QuotaCheck.trialExpired;
-    }
-    final q = PlanSpec.of(s.tier!).analysesPerPeriod;
-    if (s.usedInPeriod < q || s.extraCredits > 0) return QuotaCheck.ok;
+    final available = _available(s);
+    if (available >= cost) return QuotaCheck.ok;
+    if (available > 0) return QuotaCheck.insufficient;
+    if (s.tier == null) return QuotaCheck.noPlan;
+    if (s.tier == PlanTier.trial && isTrialExpired) return QuotaCheck.trialExpired;
     return QuotaCheck.exhausted;
+  }
+
+  /// Most felhasználható elemzések: az időszaki maradék (ha él a csomag) + extra.
+  int get available => _available(_rolled());
+
+  int _available(EntitlementState s) {
+    final q = _periodQuota(s);
+    return (q - s.usedInPeriod).clamp(0, q) + s.extraCredits;
+  }
+
+  int _periodQuota(EntitlementState s) {
+    if (s.tier == null) return 0;
+    if (s.tier == PlanTier.trial && isTrialExpired) return 0;
+    return PlanSpec.of(s.tier!).analysesPerPeriod;
   }
 
   bool get canAnalyze => check() == QuotaCheck.ok;
 
   // ---- Műveletek ----
 
-  /// Egy elemzés elhasználása: előbb az időszaki keretből, aztán az extrából.
-  Future<bool> consume() async {
+  /// [cost] elemzés elhasználása: előbb az időszaki keretből, a maradék az
+  /// extrából. Hamis, ha nincs elég keret.
+  Future<bool> consume({int cost = 1}) async {
     final s = _rolled();
-    if (check() != QuotaCheck.ok) return false;
-    final q = s.tier == null || (s.tier == PlanTier.trial && isTrialExpired)
-        ? 0
-        : PlanSpec.of(s.tier!).analysesPerPeriod;
-    if (s.usedInPeriod < q) {
-      _state = s.copyWith(usedInPeriod: s.usedInPeriod + 1);
-    } else {
-      _state = s.copyWith(extraCredits: s.extraCredits - 1);
-    }
+    if (check(cost: cost) != QuotaCheck.ok) return false;
+    final fromPeriod = (_periodQuota(s) - s.usedInPeriod).clamp(0, cost);
+    _state = s.copyWith(usedInPeriod: s.usedInPeriod + fromPeriod, extraCredits: s.extraCredits - (cost - fromPeriod));
     await _persist();
     return true;
   }

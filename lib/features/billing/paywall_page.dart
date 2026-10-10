@@ -277,6 +277,7 @@ class _PlanCard extends StatelessWidget {
             l10n.planAnalysesPerMonth(spec.analysesPerPeriod),
             style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
           ),
+          Text(l10n.planWebSearches(spec.webSearches), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
           const Spacer(),
           if (product != null)
             RichText(

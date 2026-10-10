@@ -9,6 +9,7 @@ import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
 import 'package:reszveny/features/billing/demo_billing_service.dart';
@@ -57,7 +58,11 @@ class _FakeAnalyst implements StockAnalyst {
   String get name => 'test';
 
   @override
-  Future<StockReport> analyze(StockDetails details, {String outputLanguage = 'English'}) async => StockReport(
+  Future<StockReport> analyze(
+    StockDetails details, {
+    String outputLanguage = 'English',
+    AnalysisOptions options = const AnalysisOptions(),
+  }) async => StockReport(
     symbol: details.symbol,
     headline: 'Test headline',
     sections: const [
@@ -194,6 +199,7 @@ void main() {
     await tester.pumpAndSettle();
     // A lista zárva: a 44 nyelv nem látszik, csak az aktuális.
     expect(find.text('Magyar'), findsNothing);
+    await tester.scrollUntilVisible(find.text('System default'), 200, scrollable: find.byType(Scrollable).last);
     await tester.tap(find.text('System default'));
     await tester.pumpAndSettle();
     expect(find.text('English'), findsWidgets);
@@ -240,5 +246,35 @@ void main() {
     await tester.pumpWidget(StockLensApp(services: services(locale: const Locale('ar'))));
     await tester.pumpAndSettle();
     expect(Directionality.of(tester.element(find.byType(TextField))), TextDirection.rtl);
+  });
+
+  testWidgets('AI analysis settings: length shows its cost, reader level and counter-argument persist', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    expect(find.text('AI ANALYSIS'), findsOneWidget);
+    expect(find.textContaining('uses 1 analysis'), findsOneWidget);
+    await tester.tap(find.text('In-depth'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.analysisDepth, AnalysisDepth.deep);
+    expect(find.textContaining('uses 2 analyses'), findsOneWidget);
+    // Pro csomag: 6 + 2 webkeresés a részletes elemzéshez.
+    expect(find.text('Up to 8 web searches per analysis with your plan'), findsOneWidget);
+    await tester.tap(find.text('Experienced'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.readerLevel, ReaderLevel.experienced);
+    await tester.tap(find.text('Strongest counter-argument'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.counterArgument, isFalse);
+    final o = s.analysisOptions();
+    expect(o.cost, 2);
+    expect(o.webSearches, 8);
+    expect(o.readerLevel, ReaderLevel.experienced);
+    expect(o.counterArgument, isFalse);
   });
 }

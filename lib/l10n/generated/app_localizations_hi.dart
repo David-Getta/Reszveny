@@ -776,4 +776,109 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'कोई भाषा मेल नहीं खाती।';
+
+  @override
+  String get aiSettings => 'AI विश्लेषण';
+
+  @override
+  String get aiLength => 'लंबाई';
+
+  @override
+  String get aiDepthBrief => 'संक्षिप्त';
+
+  @override
+  String get aiDepthStandard => 'मानक';
+
+  @override
+  String get aiDepthDeep => 'विस्तृत';
+
+  @override
+  String get aiDepthBriefDesc => 'ज़रूरी बातें, जल्दी।';
+
+  @override
+  String get aiDepthStandardDesc => 'हर अनुभाग के साथ पूरी रिपोर्ट।';
+
+  @override
+  String get aiDepthDeepDesc => 'ज़्यादा वेब खोजें, समकक्ष कंपनियों से तुलना और गहरा विवरण।';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'लगभग $min–$max शब्द';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषण खर्च होते हैं',
+      one: '1 विश्लेषण खर्च होता है',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'पाठक स्तर';
+
+  @override
+  String get aiReaderBeginner => 'शुरुआती';
+
+  @override
+  String get aiReaderExperienced => 'अनुभवी';
+
+  @override
+  String get aiReaderBeginnerDesc => 'सरल भाषा; हर तकनीकी शब्द समझाया जाता है।';
+
+  @override
+  String get aiReaderExperiencedDesc => 'मानक वित्तीय शब्दावली के साथ सघन पाठ।';
+
+  @override
+  String get aiCounterArgument => 'सबसे मज़बूत प्रतितर्क';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'सारांश हमेशा अपने ही निष्कर्ष के विरुद्ध सबसे मज़बूत तर्क के साथ समाप्त होता है।';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'आपके प्लान में प्रति विश्लेषण अधिकतम $count वेब खोजें',
+      one: 'आपके प्लान में प्रति विश्लेषण अधिकतम 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'प्लान के अनुसार मानक लंबाई: सामान्य $normal, Pro $pro, Max $max, Ultra $ultra। संक्षिप्त में 2 कम, विस्तृत में 2 अधिक।';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'अधिकतम $count वेब खोजें',
+      one: 'अधिकतम 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'प्रति विश्लेषण $count वेब खोजें',
+      one: 'प्रति विश्लेषण 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'इस लंबाई के लिए $needed विश्लेषण चाहिए, लेकिन केवल $left बाकी हैं। सेटिंग्स में छोटी लंबाई चुनें या और विश्लेषण लें।';
+  }
 }

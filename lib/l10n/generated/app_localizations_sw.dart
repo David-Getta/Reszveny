@@ -778,4 +778,109 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get noLanguageMatch => 'Hakuna lugha inayolingana.';
+
+  @override
+  String get aiSettings => 'Uchambuzi wa AI';
+
+  @override
+  String get aiLength => 'Urefu';
+
+  @override
+  String get aiDepthBrief => 'Mfupi';
+
+  @override
+  String get aiDepthStandard => 'Wastani';
+
+  @override
+  String get aiDepthDeep => 'Wa kina';
+
+  @override
+  String get aiDepthBriefDesc => 'Mambo muhimu, kwa haraka.';
+
+  @override
+  String get aiDepthStandardDesc => 'Ripoti kamili yenye kila sehemu.';
+
+  @override
+  String get aiDepthDeepDesc => 'Utafutaji zaidi wa wavuti, ulinganisho na washindani na undani zaidi.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Takriban maneno $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hutumia uchambuzi $count',
+      one: 'hutumia uchambuzi $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Kiwango cha msomaji';
+
+  @override
+  String get aiReaderBeginner => 'Anayeanza';
+
+  @override
+  String get aiReaderExperienced => 'Mzoefu';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Lugha rahisi; kila istilahi ya kitaalamu inaelezwa.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Maandishi mazito zaidi yenye istilahi za kawaida za kifedha.';
+
+  @override
+  String get aiCounterArgument => 'Hoja pinzani yenye nguvu zaidi';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Muhtasari daima humalizika kwa hoja yenye nguvu zaidi dhidi ya hitimisho lake lenyewe.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
+      one: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Utafutaji wa wavuti kwa urefu wa wastani kulingana na mpango: Kawaida $normal, Pro $pro, Max $max, Ultra $ultra. Mfupi hutumia 2 pungufu, Wa kina 2 zaidi.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hadi utafutaji $count wa wavuti',
+      one: 'hadi utafutaji $count wa wavuti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Utafutaji $count wa wavuti kwa kila uchambuzi',
+      one: 'Utafutaji $count wa wavuti kwa kila uchambuzi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Urefu huu unahitaji uchambuzi $needed, lakini umesalia na $left tu. Chagua urefu mfupi zaidi katika Mipangilio au pata uchambuzi zaidi.';
+  }
 }
