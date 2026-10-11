@@ -10,7 +10,7 @@ class AppLocalizationsId extends AppLocalizations {
   AppLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Foto sebuah saham dan pelajari semua tentangnya.';
@@ -306,12 +306,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analis',
-      one: '1 analis',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Pengenalan gambar belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY). Masukkan kode saham secara manual.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
+  String get errRecognitionUnreachable => 'Tidak dapat menghubungi layanan pengenalan. Periksa koneksi internet Anda.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Layanan pengenalan tidak dapat memproses gambar ini.';
+  String get errRecognitionRefused => 'Layanan pengenalan tidak dapat memproses gambar ini.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Respons pengenalan terpotong. Silakan coba lagi.';
+  String get errRecognitionTruncated => 'Respons pengenalan terpotong. Silakan coba lagi.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Respons tak terduga dari layanan pengenalan.';
+  String get errRecognitionBadResponse => 'Respons tak terduga dari layanan pengenalan.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Layanan pengenalan mengembalikan respons kosong.';
+  String get errRecognitionEmpty => 'Layanan pengenalan mengembalikan respons kosong.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data pasar belum dikonfigurasi (tidak ada FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
+  String get errMarketUnreachable => 'Tidak dapat menghubungi layanan data pasar. Periksa koneksi internet Anda.';
 
   @override
-  String get errMarketRateLimited =>
-      'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
+  String get errMarketRateLimited => 'Terlalu banyak permintaan ke layanan data pasar. Mohon tunggu satu menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Respons tak terduga dari layanan data pasar.';
+  String get errMarketBadResponse => 'Respons tak terduga dari layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -407,4 +393,529 @@ class AppLocalizationsId extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Terjadi kesalahan: $detail';
   }
+
+  @override
+  String get newSearch => 'Pencarian baru';
+
+  @override
+  String get recentSearches => 'Terbaru';
+
+  @override
+  String get noRecentSearches => 'Belum ada pencarian terbaru.';
+
+  @override
+  String get clearRecent => 'Hapus pencarian terbaru';
+
+  @override
+  String get greeting => 'Saham mana yang akan kita lihat?';
+
+  @override
+  String get searchHint => 'Kode saham atau nama perusahaan';
+
+  @override
+  String get attachImage => 'Lampirkan gambar';
+
+  @override
+  String get searchResultsTitle => 'Hasil pencarian';
+
+  @override
+  String errNoResults(String query) {
+    return 'Tidak ada saham yang ditemukan untuk “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Ketik kode saham atau nama perusahaan…';
+
+  @override
+  String get openFullWindow => 'Buka jendela';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tekan $shortcut di mana saja untuk memanggil StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Buka StockLens';
+
+  @override
+  String get trayQuickSearch => 'Pencarian cepat';
+
+  @override
+  String get trayQuit => 'Keluar';
+
+  @override
+  String get appearance => 'Tampilan';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Gelap';
+
+  @override
+  String get themeLight => 'Terang';
+
+  @override
+  String get back => 'Kembali';
+
+  @override
+  String get aiSectionTitle => 'Analisis AI';
+
+  @override
+  String get aiIntro =>
+      'Ulasan mendetail yang ditulis oleh AI: ringkasan berita terbaru, bisnis, kekuatan, risiko dan faktor tersembunyi, valuasi, prospek harga dengan skenario dari sudut pandang psikologis, sosiologis, teknikal, dan makro, serta hal yang perlu dicermati.';
+
+  @override
+  String get aiGenerate => 'Buat analisis';
+
+  @override
+  String get aiRegenerate => 'Buat ulang';
+
+  @override
+  String get aiGenerating => 'Menyiapkan analisis… ini bisa memakan waktu satu atau dua menit.';
+
+  @override
+  String get aiSources => 'Sumber';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Dibuat $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analisis yang dibuat oleh AI berdasarkan data publik dan berita terbaru. Mungkin berisi kesalahan atau sudah tidak mutakhir, dan bukan merupakan saran investasi.';
+
+  @override
+  String get errAiNotConfigured => 'Analisis AI belum dikonfigurasi (tidak ada ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Tidak dapat menghubungi layanan AI. Periksa koneksi internet Anda.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Layanan AI mengembalikan kesalahan (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Layanan AI menolak menganalisis saham ini.';
+
+  @override
+  String get errAiBadResponse => 'Respons tak terduga dari layanan AI.';
+
+  @override
+  String get sectionChart => 'Grafik harga';
+
+  @override
+  String get rangeOneWeek => '1M';
+
+  @override
+  String get rangeOneMonth => '1B';
+
+  @override
+  String get rangeThreeMonths => '3B';
+
+  @override
+  String get rangeOneYear => '1T';
+
+  @override
+  String get rangeFiveYears => '5T';
+
+  @override
+  String get chartUnavailable => 'Riwayat harga tidak tersedia dari sumber data saat ini.';
+
+  @override
+  String get sectionStatements => 'Laporan keuangan (tahunan)';
+
+  @override
+  String get labelFiscalYear => 'Tahun fiskal';
+
+  @override
+  String get labelRevenue => 'Pendapatan';
+
+  @override
+  String get labelNetIncome => 'Laba bersih';
+
+  @override
+  String get labelTotalAssets => 'Total aset';
+
+  @override
+  String get labelTotalLiabilities => 'Total liabilitas';
+
+  @override
+  String get labelEquity => 'Ekuitas pemegang saham';
+
+  @override
+  String get labelOperatingCashFlow => 'Arus kas operasi';
+
+  @override
+  String get statementsUnavailable => 'Laporan keuangan yang dilaporkan tidak tersedia untuk saham ini.';
+
+  @override
+  String get launchAtLogin => 'Jalankan saat masuk';
+
+  @override
+  String get hotkeyLabel => 'Pintasan global';
+
+  @override
+  String get hotkeyRecordHint => 'Klik di sini, lalu tekan kombinasi tombol yang baru';
+
+  @override
+  String get hotkeyReset => 'Setel ulang ke bawaan';
+
+  @override
+  String get pasteImage => 'Tempel gambar dari papan klip';
+
+  @override
+  String get errClipboardNoImage => 'Tidak ada gambar di papan klip.';
+
+  @override
+  String get favorites => 'Favorit';
+
+  @override
+  String get addToFavorites => 'Tambahkan ke favorit';
+
+  @override
+  String get removeFromFavorites => 'Hapus dari favorit';
+
+  @override
+  String get noFavorites => 'Belum ada favorit. Ketuk bintang pada saham untuk menambahkannya.';
+
+  @override
+  String get displayCurrency => 'Mata uang tampilan';
+
+  @override
+  String get displayCurrencyNone => 'Hanya mata uang saham itu sendiri';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ dalam $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurs: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Pembaruan';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versi $version';
+  }
+
+  @override
+  String get autoUpdate => 'Pasang pembaruan secara otomatis';
+
+  @override
+  String get checkForUpdates => 'Periksa pembaruan';
+
+  @override
+  String get updateChecking => 'Memeriksa pembaruan…';
+
+  @override
+  String get updateUpToDate => 'Anda sudah menggunakan versi terbaru.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Versi $version tersedia.';
+  }
+
+  @override
+  String get updateDownloading => 'Mengunduh pembaruan di latar belakang…';
+
+  @override
+  String get updateDownloaded => 'Pembaruan siap. Mulai ulang untuk memasangnya.';
+
+  @override
+  String get updateNow => 'Perbarui';
+
+  @override
+  String get restartNow => 'Mulai ulang';
+
+  @override
+  String get updatesViaStore => 'Pembaruan diterima secara otomatis melalui toko aplikasi.';
+
+  @override
+  String get updateCheckFailed => 'Tidak dapat memeriksa pembaruan.';
+
+  @override
+  String get subscription => 'Langganan';
+
+  @override
+  String get planTrial => 'Uji coba';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Tidak ada paket aktif';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analisis per bulan';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Uji coba gratis $days hari dengan $count analisis';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days hari uji coba tersisa',
+      one: '1 hari uji coba tersisa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Uji coba gratis Anda telah berakhir. Pilih paket untuk terus menganalisis.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining dari $total analisis tersisa periode ini';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count analisis tambahan';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Diperpanjang $date';
+  }
+
+  @override
+  String get choosePlan => 'Pilih paket';
+
+  @override
+  String get currentPlan => 'Paket saat ini';
+
+  @override
+  String get subscribe => 'Berlangganan';
+
+  @override
+  String get perMonth => '/ bulan';
+
+  @override
+  String get extraPacksTitle => 'Butuh lebih banyak? Beli analisis tambahan';
+
+  @override
+  String get extraPacksHint =>
+      'Analisis tambahan tidak pernah kedaluwarsa dan digunakan setelah kuota bulanan Anda habis.';
+
+  @override
+  String get buy => 'Beli';
+
+  @override
+  String get restorePurchases => 'Pulihkan pembelian';
+
+  @override
+  String get manageSubscription => 'Kelola langganan';
+
+  @override
+  String get purchaseSuccess => 'Terima kasih! Pembelian Anda sudah aktif.';
+
+  @override
+  String get purchasePending => 'Pembelian tertunda…';
+
+  @override
+  String get purchaseFailed => 'Pembelian tidak dapat diselesaikan.';
+
+  @override
+  String get purchaseCanceled => 'Pembelian dibatalkan.';
+
+  @override
+  String get billingUnavailable =>
+      'Pembelian belum tersedia di platform ini. Berlangganan di ponsel atau Mac Anda; paket Anda akan berfungsi di semua perangkat.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Anda tidak memiliki analisis tersisa untuk periode ini. Tingkatkan paket Anda atau beli analisis tambahan.';
+
+  @override
+  String get errTrialExpired => 'Uji coba gratis Anda telah berakhir. Pilih paket untuk melanjutkan.';
+
+  @override
+  String get errNoPlan => 'Paket aktif diperlukan untuk analisis AI.';
+
+  @override
+  String get viewPlans => 'Lihat paket';
+
+  @override
+  String get usageTitle => 'Penggunaan';
+
+  @override
+  String get demoPurchaseNote => 'Penagihan demo: pembelian di platform ini hanya simulasi.';
+
+  @override
+  String get mostPopular => 'Paling populer';
+
+  @override
+  String get bestValue => 'Paling hemat';
+
+  @override
+  String get planFeaturesCommon =>
+      'Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.';
+
+  @override
+  String get searchLanguages => 'Cari bahasa…';
+
+  @override
+  String get noLanguageMatch => 'Tidak ada bahasa yang cocok.';
+
+  @override
+  String get aiSettings => 'Analisis AI';
+
+  @override
+  String get aiLength => 'Panjang';
+
+  @override
+  String get aiDepthBrief => 'Ringkas';
+
+  @override
+  String get aiDepthStandard => 'Standar';
+
+  @override
+  String get aiDepthDeep => 'Mendalam';
+
+  @override
+  String get aiDepthBriefDesc => 'Inti informasinya, dengan cepat.';
+
+  @override
+  String get aiDepthStandardDesc => 'Laporan lengkap dengan semua bagian.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Lebih banyak pencarian web, perbandingan dengan perusahaan sejenis, dan detail yang lebih mendalam.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Sekitar $min–$max kata';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'menggunakan $count analisis');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Tingkat pembaca';
+
+  @override
+  String get aiReaderBeginner => 'Pemula';
+
+  @override
+  String get aiReaderExperienced => 'Berpengalaman';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Bahasa sederhana; setiap istilah teknis dijelaskan.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Teks lebih padat dengan terminologi keuangan standar.';
+
+  @override
+  String get aiCounterArgument => 'Argumen tandingan terkuat';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Ringkasan selalu diakhiri dengan argumen terbaik yang menentang kesimpulannya sendiri.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hingga $count pencarian web per analisis dengan paket Anda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Panjang standar per paket: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Ringkas menggunakan 2 lebih sedikit, Mendalam 2 lebih banyak.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'hingga $count pencarian web');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pencarian web per analisis');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Panjang ini memerlukan $needed analisis, tetapi hanya tersisa $left. Pilih panjang yang lebih pendek di Pengaturan atau dapatkan analisis tambahan.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Sentimen pasar';
+
+  @override
+  String get moodVeryPessimistic => 'Sangat pesimis';
+
+  @override
+  String get moodPessimistic => 'Pesimis';
+
+  @override
+  String get moodNeutral => 'Netral';
+
+  @override
+  String get moodOptimistic => 'Optimis';
+
+  @override
+  String get moodVeryOptimistic => 'Sangat optimis';
+
+  @override
+  String get scenarioBull => 'Skenario optimis';
+
+  @override
+  String get scenarioBase => 'Skenario dasar';
+
+  @override
+  String get scenarioBear => 'Skenario pesimis';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Harga saat ini: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Level kunci';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Harga acuan';
+
+  @override
+  String get upcomingEvents => 'Agenda mendatang';
+
+  @override
+  String get outlookChartNote => 'Rentang bersifat indikatif; probabilitas hanyalah perkiraan kasar, bukan prediksi.';
 }

@@ -6,7 +6,11 @@ import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
+import '../../core/models/analysis_extras.dart';
+import '../../core/models/financial_statements.dart';
 import '../../core/models/news_item.dart';
+import '../../core/models/price_history.dart';
+import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_quote.dart';
 import 'market_data_provider.dart';
@@ -26,17 +30,21 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     if (!config.hasFinnhubKey) {
       throw const MarketDataException(AppErrorCode.missingFinnhubKey);
     }
-    final uri = Uri.parse('${config.finnhubBaseUrl}$path').replace(queryParameters: query);
+    final uri = Uri.parse('${config.effectiveFinnhubBaseUrl}$path').replace(queryParameters: query);
     final http.Response res;
     try {
       res = await _client
-          .get(uri, headers: {'X-Finnhub-Token': config.finnhubApiKey})
+          .get(uri, headers: {if (config.finnhubApiKey.isNotEmpty) 'X-Finnhub-Token': config.finnhubApiKey})
           .timeout(const Duration(seconds: 20));
     } on Exception catch (e) {
       throw MarketDataException(AppErrorCode.marketUnreachable, cause: e);
     }
     if (res.statusCode == 429) {
       throw const MarketDataException(AppErrorCode.marketRateLimited);
+    }
+    if (res.statusCode == 403) {
+      // Az ingyenes csomagban nem elérhető végpont (pl. árfolyam-történet).
+      throw MarketDataException(AppErrorCode.marketHttp, detail: '403', cause: res.body);
     }
     if (res.statusCode != 200) {
       throw MarketDataException(AppErrorCode.marketHttp, detail: '${res.statusCode}', cause: res.body);
@@ -46,6 +54,117 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     } on FormatException catch (e) {
       throw MarketDataException(AppErrorCode.marketBadResponse, cause: e);
     }
+  }
+
+  /// Ingyenes Finnhub-végpontok: `/stock/peers`, `/stock/insider-transactions`,
+  /// `/stock/earnings`, `/calendar/earnings`. Mindegyik külön, hibatűrően.
+  @override
+  Future<AnalysisExtras> analysisExtras(String symbol, {DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    Future<Object?> safe(String path, Map<String, String> q) async {
+      try {
+        return await _get(path, q);
+      } catch (_) {
+        return null;
+      }
+    }
+
+    final r = await Future.wait([
+      safe('/stock/peers', {'symbol': symbol}),
+      safe('/stock/insider-transactions', {
+        'symbol': symbol,
+        'from': d(today.subtract(const Duration(days: 90))),
+        'to': d(today),
+      }),
+      safe('/stock/earnings', {'symbol': symbol, 'limit': '4'}),
+      safe('/calendar/earnings', {'symbol': symbol, 'from': d(today), 'to': d(today.add(const Duration(days: 120)))}),
+    ]);
+    return parseAnalysisExtras(symbol, peers: r[0], insider: r[1], earnings: r[2], calendar: r[3], now: today);
+  }
+
+  /// A négy válaszból az [AnalysisExtras] (tesztelhető, hálózat nélkül).
+  static AnalysisExtras parseAnalysisExtras(
+    String symbol, {
+    Object? peers,
+    Object? insider,
+    Object? earnings,
+    Object? calendar,
+    DateTime? now,
+  }) {
+    double? n(Object? v) => v is num ? v.toDouble() : null;
+
+    final peerList = peers is List
+        ? peers.whereType<String>().where((p) => p != symbol).take(8).toList()
+        : const <String>[];
+
+    InsiderSummary? ins;
+    final data = insider is Map ? insider['data'] : null;
+    if (data is List) {
+      final trades = <InsiderTrade>[];
+      var buys = 0, sells = 0;
+      var net = 0.0;
+      for (final t in data.whereType<Map>()) {
+        final code = (t['transactionCode'] as String? ?? '').trim();
+        final change = n(t['change']) ?? 0;
+        final date = DateTime.tryParse(t['transactionDate'] as String? ?? t['filingDate'] as String? ?? '');
+        if (date == null) continue;
+        if (code == 'P') buys++;
+        if (code == 'S') sells++;
+        if (code == 'P' || code == 'S') net += change;
+        trades.add(
+          InsiderTrade(
+            name: (t['name'] as String? ?? '').trim(),
+            date: date,
+            code: code,
+            change: change,
+            price: n(t['transactionPrice']),
+          ),
+        );
+      }
+      trades.sort((a, b) => b.change.abs().compareTo(a.change.abs()));
+      if (trades.isNotEmpty) {
+        ins = InsiderSummary(
+          windowDays: 90,
+          buys: buys,
+          sells: sells,
+          netShares: net,
+          notable: trades.take(5).toList(),
+        );
+      }
+    }
+
+    final eps = <EarningsSurprise>[
+      if (earnings is List)
+        for (final e in earnings.whereType<Map>())
+          if (DateTime.tryParse(e['period'] as String? ?? '') case final period?)
+            EarningsSurprise(
+              period: period,
+              actual: n(e['actual']),
+              estimate: n(e['estimate']),
+              surprisePercent: n(e['surprisePercent']),
+            ),
+    ]..sort((a, b) => b.period.compareTo(a.period));
+
+    UpcomingEarnings? next;
+    final cal = calendar is Map ? calendar['earningsCalendar'] : null;
+    if (cal is List) {
+      final today = now ?? DateTime.now();
+      final upcoming = [
+        for (final c in cal.whereType<Map>())
+          if (DateTime.tryParse(c['date'] as String? ?? '') case final date?)
+            if (!date.isBefore(DateTime(today.year, today.month, today.day)))
+              UpcomingEarnings(
+                date: date,
+                hour: (c['hour'] as String?)?.isEmpty == true ? null : c['hour'] as String?,
+                epsEstimate: n(c['epsEstimate']),
+                revenueEstimate: n(c['revenueEstimate']),
+              ),
+      ]..sort((a, b) => a.date.compareTo(b.date));
+      if (upcoming.isNotEmpty) next = upcoming.first;
+    }
+
+    return AnalysisExtras(peers: peerList, insider: ins, earnings: eps.take(4).toList(), nextEarnings: next);
   }
 
   @override
@@ -79,6 +198,42 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
   Future<AnalystConsensus?> consensus(String symbol) async {
     final j = await _get('/stock/recommendation', {'symbol': symbol}) as List;
     return parseConsensus(j);
+  }
+
+  @override
+  Future<PriceHistory> history(String symbol, {int years = 5}) async {
+    final to = DateTime.now().toUtc();
+    final from = DateTime.utc(to.year - years, to.month, to.day);
+    try {
+      final j = await _get('/stock/candle', {
+        'symbol': symbol,
+        'resolution': 'D',
+        'from': '${from.millisecondsSinceEpoch ~/ 1000}',
+        'to': '${to.millisecondsSinceEpoch ~/ 1000}',
+      }) as Map<String, dynamic>;
+      return parseCandles(symbol, j);
+    } on MarketDataException catch (e) {
+      if (e.code == AppErrorCode.marketHttp && e.detail == '403') {
+        throw const MarketDataException(AppErrorCode.chartUnavailable);
+      }
+      rethrow;
+    }
+  }
+
+  @override
+  Future<FinancialStatements> statements(String symbol) async {
+    final j = await _get('/stock/financials-reported', {'symbol': symbol, 'freq': 'annual'}) as Map<String, dynamic>;
+    final parsed = parseReportedFinancials(symbol, j);
+    if (parsed.isEmpty) throw const MarketDataException(AppErrorCode.statementsUnavailable);
+    return parsed;
+  }
+
+  @override
+  Future<List<StockCandidate>> search(String query) async {
+    final q = query.trim();
+    if (q.isEmpty) return const [];
+    final j = await _get('/search', {'q': q}) as Map<String, dynamic>;
+    return parseSearch(q, j);
   }
 
   // ---- Parse-olás: tisztán a JSON-ból, hálózat nélkül tesztelhető. ----
@@ -180,6 +335,118 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return items;
   }
 
+  /// A Finnhub `/search` válasza. A pontos ticker-egyezés kerül előre, és a
+  /// származtatott (opció, warrant) típusokat kihagyjuk.
+  static List<StockCandidate> parseSearch(String query, Map<String, dynamic> j) {
+    final upper = query.trim().toUpperCase();
+    final out = <StockCandidate>[];
+    for (final raw in (j['result'] as List?) ?? const []) {
+      final r = (raw as Map).cast<String, dynamic>();
+      final symbol = _s(r['symbol']);
+      final name = _s(r['description']);
+      final type = _s(r['type']) ?? '';
+      if (symbol == null || name == null) continue;
+      if (type.isNotEmpty && type != 'Common Stock' && type != 'ADR' && type != 'ETP' && type != 'REIT') continue;
+      final exact = symbol.toUpperCase() == upper;
+      final nameHit = name.toUpperCase().contains(upper);
+      out.add(StockCandidate(symbol: symbol, companyName: name, confidence: exact ? 1 : (nameHit ? 0.8 : 0.6)));
+    }
+    out.sort((a, b) => b.confidence.compareTo(a.confidence));
+    return out.take(10).toList();
+  }
+
+  /// Finnhub `/stock/candle`: párhuzamos tömbök (`t`, `c`, `o`, `h`, `l`, `v`).
+  static PriceHistory parseCandles(String symbol, Map<String, dynamic> j) {
+    if (j['s'] != 'ok') throw const MarketDataException(AppErrorCode.chartUnavailable);
+    final t = (j['t'] as List?) ?? const [];
+    final c = (j['c'] as List?) ?? const [];
+    final o = (j['o'] as List?) ?? const [];
+    final h = (j['h'] as List?) ?? const [];
+    final l = (j['l'] as List?) ?? const [];
+    final v = (j['v'] as List?) ?? const [];
+    final points = <PricePoint>[];
+    for (var i = 0; i < t.length && i < c.length; i++) {
+      final close = _d(c[i]);
+      final ts = _d(t[i]);
+      if (close == null || ts == null) continue;
+      points.add(
+        PricePoint(
+          time: DateTime.fromMillisecondsSinceEpoch((ts * 1000).round(), isUtc: true),
+          close: close,
+          open: i < o.length ? _d(o[i]) : null,
+          high: i < h.length ? _d(h[i]) : null,
+          low: i < l.length ? _d(l[i]) : null,
+          volume: i < v.length ? _d(v[i]) : null,
+        ),
+      );
+    }
+    points.sort((a, b) => a.time.compareTo(b.time));
+    if (points.isEmpty) throw const MarketDataException(AppErrorCode.chartUnavailable);
+    return PriceHistory(symbol: symbol, points: points);
+  }
+
+  /// Finnhub `/stock/financials-reported`: XBRL-fogalmak szerint keressük a
+  /// főbb tételeket (több lehetséges fogalomnév, az első találat nyer).
+  static FinancialStatements parseReportedFinancials(String symbol, Map<String, dynamic> j) {
+    const revenueConcepts = [
+      'us-gaap_Revenues',
+      'us-gaap_RevenueFromContractWithCustomerExcludingAssessedTax',
+      'us-gaap_SalesRevenueNet',
+      'us-gaap_RevenueFromContractWithCustomerIncludingAssessedTax',
+      'ifrs-full_Revenue',
+    ];
+    const netIncomeConcepts = ['us-gaap_NetIncomeLoss', 'us-gaap_ProfitLoss', 'ifrs-full_ProfitLoss'];
+    const assetsConcepts = ['us-gaap_Assets', 'ifrs-full_Assets'];
+    const liabilitiesConcepts = ['us-gaap_Liabilities', 'ifrs-full_Liabilities'];
+    const equityConcepts = [
+      'us-gaap_StockholdersEquity',
+      'us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest',
+      'ifrs-full_Equity',
+    ];
+    const ocfConcepts = [
+      'us-gaap_NetCashProvidedByUsedInOperatingActivities',
+      'us-gaap_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations',
+      'ifrs-full_CashFlowsFromUsedInOperatingActivities',
+    ];
+
+    double? pick(List rows, List<String> concepts) {
+      for (final concept in concepts) {
+        for (final raw in rows) {
+          final r = (raw as Map).cast<String, dynamic>();
+          if (r['concept'] == concept) return _d(r['value']);
+        }
+      }
+      return null;
+    }
+
+    final years = <AnnualFinancials>[];
+    for (final raw in (j['data'] as List?) ?? const []) {
+      final d = (raw as Map).cast<String, dynamic>();
+      final year = (d['year'] as num?)?.toInt();
+      if (year == null) continue;
+      final report = (d['report'] as Map?)?.cast<String, dynamic>() ?? const {};
+      final ic = (report['ic'] as List?) ?? const [];
+      final bs = (report['bs'] as List?) ?? const [];
+      final cf = (report['cf'] as List?) ?? const [];
+      final y = AnnualFinancials(
+        fiscalYear: year,
+        periodEnd: _date(d['endDate']),
+        revenue: pick(ic, revenueConcepts),
+        netIncome: pick(ic, netIncomeConcepts) ?? pick(cf, netIncomeConcepts),
+        totalAssets: pick(bs, assetsConcepts),
+        totalLiabilities: pick(bs, liabilitiesConcepts),
+        equity: pick(bs, equityConcepts),
+        operatingCashFlow: pick(cf, ocfConcepts),
+      );
+      if (!y.isEmpty) years.add(y);
+    }
+    years.sort((a, b) => b.fiscalYear.compareTo(a.fiscalYear));
+    // Ugyanaz az év többször is szerepelhet (módosított jelentés): az első marad.
+    final seen = <int>{};
+    final unique = years.where((y) => seen.add(y.fiscalYear)).take(5).toList();
+    return FinancialStatements(symbol: symbol, years: unique);
+  }
+
   static AnalystConsensus? parseConsensus(List j) {
     if (j.isEmpty) return null;
     final latest = (j.first as Map).cast<String, dynamic>();
@@ -209,6 +476,6 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
   static DateTime? _date(Object? v) {
     final s = _s(v);
     if (s == null) return null;
-    return DateTime.tryParse(s);
+    return DateTime.tryParse(s) ?? DateTime.tryParse(s.split(' ').first);
   }
 }

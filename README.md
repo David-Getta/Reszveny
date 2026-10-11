@@ -1,10 +1,56 @@
-# Reszveny
+# StockLens
+
+<img src="assets/branding/wordmark_dark.png" alt="StockLens" width="360">
+
+**Név**: a *lens* egyszerre a kamera objektívje (lefotózod a részvényt) és a nagyító, amivel átlátod (minden adat és AI-elemzés). A logó: lencse-gyűrű, amelyből egy emelkedő árfolyamnyíl lép ki.
 
 **Lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 
 Egy kódbázis, öt platform: **iOS, iPadOS, macOS, Android, Windows** (Flutter).
 A felület **44 nyelven** érhető el, az alapértelmezett az angol; a részletes lista és a
 koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
+
+## Kinézet és asztali élmény
+
+- **Claude-stílusú felület**: meleg, sötét alaptéma (világos is választható), oldalsáv
+  „Új keresés / Előzmények / Beállítások” menüvel, nagy üdvözlő sor és egy lekerekített
+  keresősáv (ticker vagy cégnév, kép csatolása, kamera). Apple-szerű részletek: rendszerbetű,
+  1 px-es finom szegélyek, rejtett natív címsor, húzható fejléc.
+- **Előhívás bárhonnan (macOS, Windows)**: `⌥ Space` (Windowson `Ctrl + Alt + Space`) egy
+  lebegő, mindig felül lévő gyorskereső sávot hoz elő – mint a Claude macOS-en. Enter: a
+  találat a teljes ablakban nyílik meg; Esc vagy kattintás máshova: a sáv eltűnik.
+- **Menüsor- / tálcaikon**: Megnyitás, Gyorskeresés, Kilépés.
+- **Cégnév-keresés**: nem csak ticker, cégnév is beírható („Apple”, „OTP”).
+- **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
+- **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
+- **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
+- **Automatikus frissítés**: Sparkle (macOS/Windows), Play rugalmas frissítés (Android), áruház (iOS), JSON-kiáltvány tartalékként; beállításokban verzió, kapcsoló, kézi ellenőrzés.
+- **Deviza-átváltás**: az ár a saját pénznemedben is megjelenik (ECB napi árfolyam, a Frankfurter nyílt API-n át, kulcs nélkül); a pénznem a beállításokban választható, alapból a rendszer nyelvéből/országából jön.
+- **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
+
+## AI-elemzés: hírek összefoglalása és átfogó kép
+
+A részletes nézet tetején egy gombnyomásra elkészül a részvény **AI-elemzése** (Claude):
+a friss hírek dátumozott összefoglalása, az üzleti modell, erősségek, **kockázatok és rejtett
+tényezők** (ügyfél-koncentráció, szabályozás, perek, hígítás, adósság, részvényalapú
+javadalmazás, irányítás…), pénzügyi helyzet, értékeltség, tulajdonosi kör és „mire figyelj”,
+forráslinkekkel. A modell megkapja a letöltött adatokat, és – ha engedélyezett – a beépített
+webkereséssel maga is utánanéz a legfrissebb eseményeknek. Az elemzés a felhasználó nyelvén
+készül, és 12 órán át a készüléken tárolódik, hogy ne kelljen újra fizetni érte.
+
+A prompt (v2, [`docs/ELEMZES_PROMPT.md`](docs/ELEMZES_PROMPT.md)) kutatási tervet ad a
+webkeresésekhez, minden számhoz dátumot és forrást kér, külön kezeli a tényt, a becslést és a
+véleményt, minden fontos tény után megmondja, mit jelent a részvényesnek, és egy hosszú
+ellenőrzőlistán végigmegy a rejtett tényezőkön. A modell megkapja az árfolyam-történetből
+számolt statisztikát (hozamok, mozgóátlagok, volatilitás, legnagyobb mozgások) és a többéves
+kimutatásokat is. A beállításokban választható a hossz (Rövid / Alap / Részletes – a részletes két
+elemzést fogyaszt), az olvasói szint (kezdő / tapasztalt) és a „legerősebb ellenérv”; a
+webkeresések száma a csomagtól függ. A kilátások számszerű része (piaci hangulat, forgatókönyvek
+valószínűséggel és ársávval, kulcsszintek, közelgő események) grafikusan is megjelenik. A prompt
+minőségét a `test/eval` éles eval méri (lásd `docs/ELEMZES_PROMPT.md`).
+
+Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),
+`ANTHROPIC_WEB_SEARCH` (`true`/`false`, alap `true`).
 
 ## Hogyan működik
 
@@ -20,6 +66,52 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 API-kulcs nélkül az app **demó módban** indul (AAPL, MSFT, NVDA, OTP mintaadatokkal), így a
 felület kulcs nélkül is végigjárható.
 
+## Előfizetés
+
+3 napos próbaidő (3 elemzés), majd Normál (8 elemzés/hó), Pro (20), Max (80), Ultra (150), és
+külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés az App Store-on, a Play-en és a Mac
+App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált bolt, amely az USD-alapárat a régió pénznemére váltja (ECB-árfolyam, helyi kerekítés). A havi keret
+az AI-elemzésekre vonatkozik. Éles kiadásban a keretet és a bolti bizonylatokat a saját backend
+([`server/`](server/README.md)) kezeli, a kliens `BACKEND_URL`-lel áll rá; részletek:
+[`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
+
+## Automatikus frissítés
+
+Az app minden platformon a lehető legautomatikusabban frissül; a beállításokban látszik a
+verzió, kapcsolható az automatikus telepítés, és kézzel is lehet ellenőrizni.
+
+| Platform | Csatorna | Mi történik |
+|---|---|---|
+| macOS, Windows (bolton kívül) | Sparkle / WinSparkle (`auto_updater`) | óránként ellenőriz; ha engedélyezett, a háttérben letölt, a következő indításkor telepít |
+| Android (Play) | Play in-app update, rugalmas mód (`in_app_update`) | háttérben letölt, kész állapotban „Újraindítás” gomb telepíti |
+| iOS, iPadOS, Mac App Store | az áruház | az áruház frissít automatikusan; az app csak a verziót mutatja, és újabb kiáltvány esetén az áruház oldalára visz |
+| web, tartalék mindenhol | JSON-kiáltvány | ha újabb verzió van, sáv jelenik meg „Update” gombbal (letöltési / bolti link) |
+
+Beállítás (`--dart-define`):
+
+| Kulcs | Jelentés |
+|---|---|
+| `UPDATE_APPCAST_URL` | Sparkle appcast XML címe (pl. GitHub Releases-ből kiszolgálva) |
+| `UPDATE_MANIFEST_URL` | kiáltvány JSON: `{"version":"0.7.0+8","notes":"…","urls":{"macos":"…","windows":"…","android":"…","ios":"…"}}` |
+| `STORE_URL` | App Store / Play oldal, ha nincs platformspecifikus link |
+
+Sparkle-hez egyszer kulcsot kell generálni (`dart run auto_updater:generate_keys` macOS-en és
+Windowson), a publikus kulcsot a `macos/Runner/Info.plist` `SUPublicEDKey` bejegyzésébe kell
+tenni, és minden kiadást alá kell írni (`dart run auto_updater:sign_update <fájl>`), az
+aláírás az appcast `enclosure` elemébe kerül. Az appcast és a kiáltvány CI-ból generálható
+minden kiadásnál.
+
+## Előnézet a böngészőben
+
+Natív buildet a fejlesztői munkamenetben nem lehet készíteni, ezért minden lezárt lépés után
+a web-build frissül egy privát Artifact-oldalon (a linket a chatben adjuk át). Helyben:
+
+```bash
+flutter build web --release --no-web-resources-cdn
+```
+
+A web csak előnézeti csatorna; a kamera, a gyorsbillentyű és a tálcaikon ott nem elérhető.
+
 ## Fejlesztés
 
 Követelmény: [Flutter](https://docs.flutter.dev/get-started/install) 3.47 vagy újabb.
@@ -32,6 +124,8 @@ flutter test
 
 # futtatás kulcsokkal (a kulcsok soha nem kerülnek a forráskódba)
 flutter run --dart-define=ANTHROPIC_API_KEY=sk-ant-... --dart-define=FINNHUB_API_KEY=...
+# vagy a saját backenddel (kulcsok a szerveren, szerveroldali kvóta – lásd server/README.md)
+flutter run --dart-define=BACKEND_URL=http://localhost:8080
 ```
 
 Platform-célok: `flutter run -d ios|macos|android|windows` – az iPad ugyanazt az iOS-buildet
@@ -39,29 +133,40 @@ kapja adaptív elrendezéssel.
 
 | Beállítás (`--dart-define`) | Jelentés | Alapértelmezés |
 |---|---|---|
+| `BACKEND_URL` | a StockLens backend címe; ha meg van adva, a kulcsok nem kellenek | – (közvetlen hívás) |
 | `ANTHROPIC_API_KEY` | képfelismerés kulcsa | – (nélküle csak kézi ticker) |
 | `ANTHROPIC_MODEL` | használt modell | `claude-opus-5-5` |
 | `ANTHROPIC_BASE_URL` | saját proxy éles kiadáshoz | `https://api.anthropic.com` |
 | `FINNHUB_API_KEY` | piaci adatok kulcsa | – (nélküle demó mód) |
 | `FINNHUB_BASE_URL` | saját proxy éles kiadáshoz | `https://finnhub.io/api/v1` |
+| `ANTHROPIC_REPORT_EFFORT` | AI-elemzés alapossága | `high` |
+| `ANTHROPIC_WEB_SEARCH` | webkeresés az AI-elemzéshez | `true` |
 
 ## Könyvtárszerkezet
 
 ```
 lib/
   main.dart, app.dart, app_services.dart   belépés, téma, nyelvkezelés, szolgáltatások
-  core/        konfiguráció, modellek, hibakódok, formázás, nyelvválasztás tárolása
+  core/        konfiguráció, modellek, hibakódok, formázás, beállítások (téma, előzmények)
+  core/backend backend-kliens: névtelen fiók, token, /v1/me, vásárlás-ellenőrzés
+  core/desktop asztali integráció: ablak, globális gyorsbillentyű, tálcaikon
+  theme/       Claude-stílusú paletta és Material-téma
+  widgets/     húzható fejléc, asztali AppBar
   features/
     capture/       kamera + galéria (image_picker)
     recognition/   StockRecognizer interfész, Claude látás, heurisztikus ticker-kereső
+    analysis/      StockAnalyst interfész, Claude-elemzés (webkereséssel), lemezes gyorsítótár
     market_data/   MarketDataProvider interfész, Finnhub, demó adatok
-    home/          kezdőképernyő, jelölt-választó
-    stock_detail/  részletes nézet szekciói
+    shell/         oldalsávos keret, gyorssáv-mód váltás
+    home/          kezdőképernyő (üdvözlő sor + keresősáv), lebegő gyorssáv, jelölt-választó
+    stock_detail/  részletes nézet: AI-elemzés, grafikon, ár, azonosítás, értékelés, kimutatások, hírek…
     settings/      nyelvválasztó, névjegy
   l10n/
     arb/           app_<nyelv>.arb – 44 nyelv, a sablon az app_en.arb
     generated/     flutter gen-l10n kimenete (verziókezelt, hogy a build ne függjön tőle)
 test/          egységtesztek (parse-olás, ticker-kereső, nyelvfeloldás, ARB-teljesség), widget-tesztek
+server/        Dart (shelf + SQLite) backend: proxy, kvóta, vásárlás-ellenőrzés – saját tesztekkel
+test/screenshots képernyőképek valódi betűkkel: flutter test --tags screenshot --dart-define=SHOTS=<mappa>
 .github/       CI: analyze + test, majd Android / Windows / iOS+macOS build
 ```
 

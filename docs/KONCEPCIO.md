@@ -1,4 +1,4 @@
-# Részvény – koncepció és architektúra
+# StockLens – koncepció és architektúra
 
 > Alapötlet: **lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 > Ez a dokumentum az első, vázlatos leírást bontja ki; a részletes specifikáció később érkezik, és ezt a fájlt kell majd bővíteni.
@@ -35,6 +35,7 @@ A részletes nézet szekciókra bomlik; minden szekció külön-külön tölthet
 12. **Kockázat és technikai mutatók** – volatilitás, RSI, mozgóátlagok, short interest.
 13. **Hasonló részvények / versenytársak**.
 14. **Megjegyzés** – a felismerés nyers eredménye (mit látott a képen), hogy a felhasználó ellenőrizni tudja.
+15. **AI-elemzés** – a részletes nézet tetején, gombnyomásra: a friss hírek dátumozott összefoglalása, üzleti modell, erősségek, kockázatok és rejtett tényezők, pénzügyi helyzet, értékeltség, tulajdonosi kör, „mire figyelj”, forráslinkek. A modell (Claude) a letöltött adatokat kapja kontextusként, és webkereséssel maga is utánanéz a legfrissebb eseményeknek; a felhasználó nyelvén ír, és a kész elemzést 12 órára a készülék tárolja.
 
 Az adatokat a felhasználó devizájában is mutatjuk (pl. HUF átváltás), és **jogi felelősségkizárással**: az app nem ad befektetési tanácsot.
 
@@ -63,7 +64,27 @@ A fordítások forrása az `lib/l10n/arb/app_en.arb` (angol sablon) és az `app_
 Egy automatikus teszt ellenőrzi, hogy minden nyelvben minden kulcs megvan, ugyanazokkal a
 helyőrzőkkel.
 
-## 4. Platformok
+## 4. Kinézet és asztali viselkedés
+
+**Claude-app stílus, Apple-érzet.** Meleg, sötét alap (#1F1E1D), narancs akcentus (#D97757),
+világos változat is. Széles képernyőn oldalsáv: „Új keresés”, „Beállítások”, „Előzmények”;
+a tartalom közepén egy nagy üdvözlő sor („Melyik részvényt nézzük meg?”) és egy lekerekített
+keresősáv, amely tickert és cégnevet is ért, bal oldalán kép csatolása és kamera gombbal.
+Keskeny képernyőn (telefon) ugyanez oldalsáv nélkül. Apple-részletek: rendszerbetű, finom
+1 px-es szegélyek, nagy lekerekítés, rejtett natív címsor, húzható fejléc, macOS-en a
+lámpáknak hagyott hely.
+
+**Előhívás bárhonnan.** macOS-en és Windowson egy globális gyorsbillentyű (`⌥ Space`, illetve
+`Ctrl + Alt + Space`) egy kompakt, lebegő keresősávot hoz elő a képernyő felső harmadában,
+minden más ablak felett – ugyanúgy, ahogy a Claude macOS-es alkalmazása. Enter a teljes
+ablakban nyitja meg a találatot, Esc vagy fókuszvesztés elrejti a sávot. A menüsorban /
+tálcán ikon áll rendelkezésre „Megnyitás / Gyorskeresés / Kilépés” menüvel.
+
+**Technika.** `window_manager` (ablak: rejtett címsor, méret, mindig felül, átlátszó háttér a
+gyorssávhoz), `hotkey_manager` (rendszerszintű gyorsbillentyű), `tray_manager` (ikon és menü).
+Mobilon ezek a részek automatikusan kimaradnak.
+
+## 5. Platformok
 
 | Platform | Megoldás |
 |---|---|
@@ -74,7 +95,7 @@ helyőrzőkkel.
 
 **Miért Flutter?** Egy kódbázisból natív módon fordul mind az öt célplatformra, van kamera- és képválasztó támogatása, és a felület minden platformon azonosan nézhet ki. (A web később opcionálisan hozzáadható.)
 
-## 5. Architektúra
+## 6. Architektúra
 
 ```
 ┌──────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌──────────────────┐
@@ -90,6 +111,7 @@ Rétegek a kódban (`lib/`):
 - `features/recognition` – `StockRecognizer` interfész. Megvalósítások:
   - `ClaudeVisionRecognizer` – a képet a Claude API látás-képességével értelmezi, és **strukturált JSON**-t kér vissza (ticker, tőzsde, cégnév, megbízhatóság, mit látott). Minden platformon ugyanúgy működik, papír részvényt, logót és képernyőfotót is felismer.
   - `OcrRecognizer` (tervezett) – on-device szövegfelismerés (ML Kit) mobilon, offline fallbackként; a kiolvasott szövegből a `TickerExtractor` heurisztikával keres tickert/cégnevet.
+- `features/analysis` – `StockAnalyst` interfész; `ClaudeStockAnalyst` a Messages API-val, webkereséssel, strukturált JSON-nal; `ReportStore` gyorsítótár.
 - `features/market_data` – `MarketDataProvider` interfész. Megvalósítások:
   - `FinnhubMarketDataProvider` – élő adatok (árfolyam, profil, mutatók, hírek) a Finnhub API-ból.
   - `DemoMarketDataProvider` – beégetett mintaadatok, hogy az app kulcs nélkül is kipróbálható legyen.
@@ -104,19 +126,39 @@ Az API-kulcsokat **nem** tesszük a kódba. Fejlesztéskor `--dart-define`-nal a
 flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=...
 ```
 
-Éles kiadásnál a kulcsokat egy saját kis backend (proxy) tartja, az app azzal beszél. A kódban a `AppConfig` központosítja a kulcsok és végpontok elérését, így a proxyra váltás egy helyen történik.
+Éles kiadásnál a kulcsokat a saját backend (`server/`, Dart + shelf + SQLite) tartja, az app azzal beszél:
 
-## 6. Ütemterv
+```
+flutter run --dart-define=BACKEND_URL=https://api.stocklens.app
+```
+
+Ilyenkor a kliensnek nincs kulcsa: a felismerés és a piaci adat a szerver továbbítóján megy
+(`/v1/anthropic`, `/v1/market`), az elemzés pedig a `/v1/analyze` végponton, ami a szerver
+nyilvántartása szerint ellenőrzi és vonja le a keretet (402 → `quota_exceeded`,
+`trial_expired`, `no_plan`). A kliens első indításkor névtelen fiókot nyit (token a készüléken),
+a `/v1/me`-ből frissíti a csomagot, és vásárlás után a `/v1/purchases/verify`-ra küldi a bolti
+bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
+
+## 7. Ütemterv
 
 | Fázis | Tartalom | Állapot |
 |---|---|---|
 | 0 | Repó, Flutter váz, mind az 5 platform target, CI, 44 nyelv | ✅ kész |
+| 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
 | 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
-| 2 | Grafikon, pénzügyi kimutatások, osztalék, elemzők, tulajdonosok | ⬜ |
-| 3 | OCR fallback offline, kedvencek/előzmények, deviza-átváltás, magyar/angol nyelv | ⬜ |
-| 4 | Backend proxy, bejelentkezés, bolti kiadás (App Store, Play, Microsoft Store, Mac App Store) | ⬜ |
+| 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
+| 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
+| 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), StockLens név és logó | ✅ kész |
+| 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
+| 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
+| 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
+| 3e | AI-elemzés v2: kutatási terv, adatfegyelem, „na és?”, bővített rejtett tényezők, konkrét ársávok; árfolyam-statisztika és többéves kimutatások a modellnek; beállítások: hossz (részletes = 2 elemzés), olvasói szint, ellenérv; webkeresés csomagonként | ✅ kész |
+| 3f | AI-elemzés v2.1: gyorsítótárazható prompt, többletadatok (versenytársak, bennfentes ügyletek, EPS-meglepetések, következő gyorsjelentés), számszerű kilátás (hangulat-sáv, forgatókönyv-diagram, kulcsszintek, eseménynaptár), minőség-ellenőrző és éles eval | ✅ kész |
+| 4b | OCR fallback offline (ML Kit, mobil), árfolyam-riasztás, portfólió | ⬜ |
+| 4c | Bejelentkezés (Apple / Google), hogy a csomag minden eszközön ugyanaz legyen | ⬜ |
+| 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ |
 
-## 7. Nyitott kérdések (a részletes leírásból várjuk a választ)
+## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)
 
 - Elsősorban melyik piac a fókusz? (BÉT, amerikai tőzsdék, európai – ez meghatározza az adatforrást.)
 - Kell-e portfólió-kezelés (saját részvények, vételi ár, hozam), vagy csak információ?

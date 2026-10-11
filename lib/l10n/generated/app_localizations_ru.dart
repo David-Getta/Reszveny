@@ -10,7 +10,7 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Сфотографируйте акцию и узнайте о ней всё.';
@@ -354,32 +354,26 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба распознавания не смогла обработать это изображение.';
+  String get errRecognitionRefused => 'Служба распознавания не смогла обработать это изображение.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Ответ службы распознавания был обрезан. Попробуйте ещё раз.';
+  String get errRecognitionTruncated => 'Ответ службы распознавания был обрезан. Попробуйте ещё раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неожиданный ответ от службы распознавания.';
+  String get errRecognitionBadResponse => 'Неожиданный ответ от службы распознавания.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба распознавания вернула пустой ответ.';
+  String get errRecognitionEmpty => 'Служба распознавания вернула пустой ответ.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Рыночные данные не настроены (нет FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Рыночные данные не настроены (нет FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не удалось связаться со службой рыночных данных. Проверьте подключение к интернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Слишком много запросов к службе рыночных данных. Подождите минуту.';
+  String get errMarketRateLimited => 'Слишком много запросов к службе рыночных данных. Подождите минуту.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неожиданный ответ от службы рыночных данных.';
+  String get errMarketBadResponse => 'Неожиданный ответ от службы рыночных данных.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +402,577 @@ class AppLocalizationsRu extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Что-то пошло не так: $detail';
   }
+
+  @override
+  String get newSearch => 'Новый поиск';
+
+  @override
+  String get recentSearches => 'Недавние';
+
+  @override
+  String get noRecentSearches => 'Недавних запросов пока нет.';
+
+  @override
+  String get clearRecent => 'Очистить недавние';
+
+  @override
+  String get greeting => 'Какую акцию посмотрим?';
+
+  @override
+  String get searchHint => 'Тикер или название компании';
+
+  @override
+  String get attachImage => 'Прикрепить изображение';
+
+  @override
+  String get searchResultsTitle => 'Результаты поиска';
+
+  @override
+  String errNoResults(String query) {
+    return 'По запросу «$query» акции не найдены.';
+  }
+
+  @override
+  String get quickBarHint => 'Введите тикер или название компании…';
+
+  @override
+  String get openFullWindow => 'Открыть окно';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Нажмите $shortcut в любом месте, чтобы вызвать StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Открыть StockLens';
+
+  @override
+  String get trayQuickSearch => 'Быстрый поиск';
+
+  @override
+  String get trayQuit => 'Выйти';
+
+  @override
+  String get appearance => 'Внешний вид';
+
+  @override
+  String get themeSystem => 'Системная';
+
+  @override
+  String get themeDark => 'Тёмная';
+
+  @override
+  String get themeLight => 'Светлая';
+
+  @override
+  String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'ИИ-анализ';
+
+  @override
+  String get aiIntro =>
+      'Подробный обзор, написанный ИИ: сводка последних новостей, бизнес, сильные стороны, риски и скрытые факторы, оценка, прогноз цены со сценариями с психологической, социологической, технической и макроэкономической точек зрения, а также за чем следить.';
+
+  @override
+  String get aiGenerate => 'Создать анализ';
+
+  @override
+  String get aiRegenerate => 'Создать заново';
+
+  @override
+  String get aiGenerating => 'Готовим анализ… это может занять минуту-другую.';
+
+  @override
+  String get aiSources => 'Источники';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Создано $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Анализ создан ИИ на основе открытых данных и последних новостей. Он может содержать ошибки или быть устаревшим и не является инвестиционной рекомендацией.';
+
+  @override
+  String get errAiNotConfigured => 'ИИ-анализ не настроен (нет ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Не удалось связаться со службой ИИ. Проверьте подключение к интернету.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Служба ИИ вернула ошибку (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Служба ИИ отказалась анализировать эту акцию.';
+
+  @override
+  String get errAiBadResponse => 'Неожиданный ответ от службы ИИ.';
+
+  @override
+  String get sectionChart => 'График цены';
+
+  @override
+  String get rangeOneWeek => '1Н';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Г';
+
+  @override
+  String get rangeFiveYears => '5Л';
+
+  @override
+  String get chartUnavailable => 'История цен недоступна в текущем источнике данных.';
+
+  @override
+  String get sectionStatements => 'Финансовая отчётность (годовая)';
+
+  @override
+  String get labelFiscalYear => 'Финансовый год';
+
+  @override
+  String get labelRevenue => 'Выручка';
+
+  @override
+  String get labelNetIncome => 'Чистая прибыль';
+
+  @override
+  String get labelTotalAssets => 'Всего активов';
+
+  @override
+  String get labelTotalLiabilities => 'Всего обязательств';
+
+  @override
+  String get labelEquity => 'Собственный капитал';
+
+  @override
+  String get labelOperatingCashFlow => 'Операционный денежный поток';
+
+  @override
+  String get statementsUnavailable => 'Опубликованная финансовая отчётность для этой акции недоступна.';
+
+  @override
+  String get launchAtLogin => 'Запускать при входе в систему';
+
+  @override
+  String get hotkeyLabel => 'Глобальное сочетание клавиш';
+
+  @override
+  String get hotkeyRecordHint => 'Нажмите здесь, затем нажмите новое сочетание клавиш';
+
+  @override
+  String get hotkeyReset => 'Сбросить по умолчанию';
+
+  @override
+  String get pasteImage => 'Вставить изображение из буфера обмена';
+
+  @override
+  String get errClipboardNoImage => 'В буфере обмена нет изображения.';
+
+  @override
+  String get favorites => 'Избранное';
+
+  @override
+  String get addToFavorites => 'Добавить в избранное';
+
+  @override
+  String get removeFromFavorites => 'Удалить из избранного';
+
+  @override
+  String get noFavorites => 'В избранном пока ничего нет. Нажмите на звёздочку рядом с акцией, чтобы добавить её.';
+
+  @override
+  String get displayCurrency => 'Валюта отображения';
+
+  @override
+  String get displayCurrencyNone => 'Только собственная валюта акции';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ в $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Курс: 1 $from = $rate $to (ЕЦБ, $date)';
+  }
+
+  @override
+  String get updates => 'Обновления';
+
+  @override
+  String currentVersion(String version) {
+    return 'Версия $version';
+  }
+
+  @override
+  String get autoUpdate => 'Устанавливать обновления автоматически';
+
+  @override
+  String get checkForUpdates => 'Проверить обновления';
+
+  @override
+  String get updateChecking => 'Проверка обновлений…';
+
+  @override
+  String get updateUpToDate => 'У вас установлена последняя версия.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Доступна версия $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Обновление загружается в фоновом режиме…';
+
+  @override
+  String get updateDownloaded => 'Обновление готово. Перезапустите приложение, чтобы установить его.';
+
+  @override
+  String get updateNow => 'Обновить';
+
+  @override
+  String get restartNow => 'Перезапустить';
+
+  @override
+  String get updatesViaStore => 'Обновления приходят автоматически через магазин приложений.';
+
+  @override
+  String get updateCheckFailed => 'Не удалось проверить обновления.';
+
+  @override
+  String get subscription => 'Подписка';
+
+  @override
+  String get planTrial => 'Пробный';
+
+  @override
+  String get planNormal => 'Стандарт';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Нет активного тарифа';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count анализа в месяц',
+      many: '$count анализов в месяц',
+      few: '$count анализа в месяц',
+      one: '$count анализ в месяц',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Бесплатный пробный период $days дн. с $count анализами',
+      many: 'Бесплатный пробный период $days дн. с $count анализами',
+      few: 'Бесплатный пробный период $days дн. с $count анализами',
+      one: 'Бесплатный пробный период $days дн. с $count анализом',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Осталось $days дня пробного периода',
+      many: 'Осталось $days дней пробного периода',
+      few: 'Осталось $days дня пробного периода',
+      one: 'Остался $days день пробного периода',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired =>
+      'Ваш бесплатный пробный период закончился. Выберите тариф, чтобы продолжить анализировать.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Осталось $remaining из $total анализов в этом периоде';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дополнительного анализа',
+      many: '$count дополнительных анализов',
+      few: '$count дополнительных анализа',
+      one: '$count дополнительный анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Продление $date';
+  }
+
+  @override
+  String get choosePlan => 'Выберите тариф';
+
+  @override
+  String get currentPlan => 'Текущий тариф';
+
+  @override
+  String get subscribe => 'Подписаться';
+
+  @override
+  String get perMonth => '/ мес.';
+
+  @override
+  String get extraPacksTitle => 'Нужно больше? Купите дополнительные анализы';
+
+  @override
+  String get extraPacksHint => 'Дополнительные анализы не сгорают и используются после исчерпания месячного лимита.';
+
+  @override
+  String get buy => 'Купить';
+
+  @override
+  String get restorePurchases => 'Восстановить покупки';
+
+  @override
+  String get manageSubscription => 'Управление подпиской';
+
+  @override
+  String get purchaseSuccess => 'Спасибо! Ваша покупка активна.';
+
+  @override
+  String get purchasePending => 'Покупка ожидает подтверждения…';
+
+  @override
+  String get purchaseFailed => 'Не удалось завершить покупку.';
+
+  @override
+  String get purchaseCanceled => 'Покупка отменена.';
+
+  @override
+  String get billingUnavailable =>
+      'Покупки на этой платформе пока недоступны. Оформите подписку на телефоне или Mac; ваш тариф будет работать на всех устройствах.';
+
+  @override
+  String get errQuotaExceeded =>
+      'В этом периоде у вас не осталось анализов. Перейдите на более высокий тариф или купите дополнительные анализы.';
+
+  @override
+  String get errTrialExpired => 'Ваш бесплатный пробный период закончился. Выберите тариф, чтобы продолжить.';
+
+  @override
+  String get errNoPlan => 'Для ИИ-анализа нужен активный тариф.';
+
+  @override
+  String get viewPlans => 'Посмотреть тарифы';
+
+  @override
+  String get usageTitle => 'Использование';
+
+  @override
+  String get demoPurchaseNote => 'Демо-режим оплаты: на этой платформе покупки имитируются.';
+
+  @override
+  String get mostPopular => 'Самый популярный';
+
+  @override
+  String get bestValue => 'Самый выгодный';
+
+  @override
+  String get planFeaturesCommon =>
+      'Распознавание фото, данные в реальном времени, графики, избранное и все 44 языка включены в каждый тариф. Лимит относится к ИИ-анализам.';
+
+  @override
+  String get searchLanguages => 'Поиск языков…';
+
+  @override
+  String get noLanguageMatch => 'Ни один язык не найден.';
+
+  @override
+  String get aiSettings => 'ИИ-анализ';
+
+  @override
+  String get aiLength => 'Длина';
+
+  @override
+  String get aiDepthBrief => 'Кратко';
+
+  @override
+  String get aiDepthStandard => 'Стандартно';
+
+  @override
+  String get aiDepthDeep => 'Подробно';
+
+  @override
+  String get aiDepthBriefDesc => 'Главное — быстро.';
+
+  @override
+  String get aiDepthStandardDesc => 'Полный отчёт со всеми разделами.';
+
+  @override
+  String get aiDepthDeepDesc => 'Больше веб-поисков, сравнение с конкурентами и более глубокая детализация.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Примерно $min–$max слов';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'расходует $count анализа',
+      many: 'расходует $count анализов',
+      few: 'расходует $count анализа',
+      one: 'расходует $count анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Уровень читателя';
+
+  @override
+  String get aiReaderBeginner => 'Новичок';
+
+  @override
+  String get aiReaderExperienced => 'Опытный';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Простым языком; каждый специальный термин объясняется.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Более плотный текст со стандартной финансовой терминологией.';
+
+  @override
+  String get aiCounterArgument => 'Самый сильный контраргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Сводка всегда завершается самым весомым аргументом против собственного вывода.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'С вашим тарифом — до $count веб-поиска на анализ',
+      many: 'С вашим тарифом — до $count веб-поисков на анализ',
+      few: 'С вашим тарифом — до $count веб-поисков на анализ',
+      one: 'С вашим тарифом — до $count веб-поиска на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандартная длина по тарифам: Стандарт $normal, Pro $pro, Max $max, Ultra $ultra. «Кратко» — на 2 меньше, «Подробно» — на 2 больше.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count веб-поиска',
+      many: 'до $count веб-поисков',
+      few: 'до $count веб-поисков',
+      one: 'до $count веб-поиска',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count веб-поиска на анализ',
+      many: '$count веб-поисков на анализ',
+      few: '$count веб-поиска на анализ',
+      one: '$count веб-поиск на анализ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Для этой длины нужно анализов: $needed, а осталось: $left. Выберите более короткую длину в Настройках или получите больше анализов.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Настроение рынка';
+
+  @override
+  String get moodVeryPessimistic => 'Очень пессимистичное';
+
+  @override
+  String get moodPessimistic => 'Пессимистичное';
+
+  @override
+  String get moodNeutral => 'Нейтральное';
+
+  @override
+  String get moodOptimistic => 'Оптимистичное';
+
+  @override
+  String get moodVeryOptimistic => 'Очень оптимистичное';
+
+  @override
+  String get scenarioBull => 'Оптимистичный сценарий';
+
+  @override
+  String get scenarioBase => 'Базовый сценарий';
+
+  @override
+  String get scenarioBear => 'Пессимистичный сценарий';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Текущая цена: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Ключевые уровни';
+
+  @override
+  String get keyLevelSupport => 'Поддержка';
+
+  @override
+  String get keyLevelResistance => 'Сопротивление';
+
+  @override
+  String get keyLevelAnchor => 'Якорный уровень';
+
+  @override
+  String get upcomingEvents => 'Предстоящие события';
+
+  @override
+  String get outlookChartNote => 'Ориентировочные диапазоны; вероятности — приблизительные оценки, а не прогнозы.';
 }

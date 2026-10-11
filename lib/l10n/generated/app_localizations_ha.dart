@@ -10,11 +10,10 @@ class AppLocalizationsHa extends AppLocalizations {
   AppLocalizationsHa([String locale = 'ha']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
+  String get homeTagline => 'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Manazarta $count',
-      one: 'Manazarci 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Manazarta $count', one: 'Manazarci 1');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsHa extends AppLocalizations {
       'Ba a saita ganewar hoto ba (babu ANTHROPIC_API_KEY). Shigar da ticker da hannu.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Ba a iya kaiwa ga sabis na ganewa ba. Duba haɗin intanet ɗinka.';
+  String get errRecognitionUnreachable => 'Ba a iya kaiwa ga sabis na ganewa ba. Duba haɗin intanet ɗinka.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,32 +346,25 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Sabis na ganewa bai iya aiwatar da wannan hoto ba.';
+  String get errRecognitionRefused => 'Sabis na ganewa bai iya aiwatar da wannan hoto ba.';
 
   @override
-  String get errRecognitionTruncated =>
-      'An katse amsar ganewa. Da fatan a sake gwada.';
+  String get errRecognitionTruncated => 'An katse amsar ganewa. Da fatan a sake gwada.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Amsa da ba a yi tsammani ba daga sabis na ganewa.';
+  String get errRecognitionBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na ganewa.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Sabis na ganewa ya dawo da amsa mara komai.';
+  String get errRecognitionEmpty => 'Sabis na ganewa ya dawo da amsa mara komai.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ba a saita bayanan kasuwa ba (babu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ba a saita bayanan kasuwa ba (babu FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Ba a iya kaiwa ga sabis na bayanan kasuwa ba. Duba haɗin intanet ɗinka.';
+  String get errMarketUnreachable => 'Ba a iya kaiwa ga sabis na bayanan kasuwa ba. Duba haɗin intanet ɗinka.';
 
   @override
-  String get errMarketRateLimited =>
-      'Buƙatu da yawa ga sabis na bayanan kasuwa. Da fatan a jira minti ɗaya.';
+  String get errMarketRateLimited => 'Buƙatu da yawa ga sabis na bayanan kasuwa. Da fatan a jira minti ɗaya.';
 
   @override
   String errMarketHttp(String status) {
@@ -386,8 +372,7 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Amsa da ba a yi tsammani ba daga sabis na bayanan kasuwa.';
+  String get errMarketBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na bayanan kasuwa.';
 
   @override
   String errNoQuote(String symbol) {
@@ -408,4 +393,543 @@ class AppLocalizationsHa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Wani abu ya ɓaci: $detail';
   }
+
+  @override
+  String get newSearch => 'Sabon bincike';
+
+  @override
+  String get recentSearches => 'Na kwanan nan';
+
+  @override
+  String get noRecentSearches => 'Babu binciken kwanan nan tukuna.';
+
+  @override
+  String get clearRecent => 'Share na kwanan nan';
+
+  @override
+  String get greeting => 'Wane hannun jari za mu duba?';
+
+  @override
+  String get searchHint => 'Ticker ko sunan kamfani';
+
+  @override
+  String get attachImage => 'Haɗa hoto';
+
+  @override
+  String get searchResultsTitle => 'Sakamakon bincike';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ba a sami hannun jari don “$query” ba.';
+  }
+
+  @override
+  String get quickBarHint => 'Rubuta ticker ko sunan kamfani…';
+
+  @override
+  String get openFullWindow => 'Buɗe taga';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Danna $shortcut a ko\'ina don kiran StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Buɗe StockLens';
+
+  @override
+  String get trayQuickSearch => 'Bincike cikin sauri';
+
+  @override
+  String get trayQuit => 'Fita';
+
+  @override
+  String get appearance => 'Kamanni';
+
+  @override
+  String get themeSystem => 'Na\'ura';
+
+  @override
+  String get themeDark => 'Duhu';
+
+  @override
+  String get themeLight => 'Haske';
+
+  @override
+  String get back => 'Baya';
+
+  @override
+  String get aiSectionTitle => 'Nazarin AI';
+
+  @override
+  String get aiIntro =>
+      'Cikakken bayani da AI ya rubuta: taƙaitaccen sabbin labarai, kasuwancin, ƙarfi, haɗari da abubuwan da ba a gani, ƙima, hasashen farashi tare da yanayoyi daga mahangar tunani, zamantakewa, fasaha da babban tattalin arziki, da abin da za a sa ido a kai.';
+
+  @override
+  String get aiGenerate => 'Ƙirƙiri nazari';
+
+  @override
+  String get aiRegenerate => 'Sake ƙirƙira';
+
+  @override
+  String get aiGenerating => 'Ana shirya nazarin… wannan na iya ɗaukar minti ɗaya ko biyu.';
+
+  @override
+  String get aiSources => 'Madogara';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'An ƙirƙira $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Nazarin da AI ya ƙirƙira bisa bayanan da ake samu a fili da sabbin labarai. Yana iya ƙunsar kurakurai ko ya zama tsoho, kuma ba shawarar zuba jari ba ne.';
+
+  @override
+  String get errAiNotConfigured => 'Ba a saita nazarin AI ba (babu ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Ba a iya kaiwa ga sabis na AI ba. Duba haɗin intanet ɗinka.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Sabis na AI ya dawo da kuskure (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Sabis na AI ya ƙi yin nazarin wannan hannun jari.';
+
+  @override
+  String get errAiBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na AI.';
+
+  @override
+  String get sectionChart => 'Jadawalin farashi';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Tarihin farashi babu shi daga madogarar bayanai ta yanzu.';
+
+  @override
+  String get sectionStatements => 'Rahotannin kuɗi (na shekara-shekara)';
+
+  @override
+  String get labelFiscalYear => 'Shekarar kuɗi';
+
+  @override
+  String get labelRevenue => 'Kuɗin shiga';
+
+  @override
+  String get labelNetIncome => 'Tsantsar riba';
+
+  @override
+  String get labelTotalAssets => 'Jimillar kadarori';
+
+  @override
+  String get labelTotalLiabilities => 'Jimillar basussuka';
+
+  @override
+  String get labelEquity => 'Jarin masu hannun jari';
+
+  @override
+  String get labelOperatingCashFlow => 'Kwararar kuɗin ayyuka';
+
+  @override
+  String get statementsUnavailable => 'Babu rahotannin kuɗi da aka bayar na wannan hannun jari.';
+
+  @override
+  String get launchAtLogin => 'Buɗe lokacin shiga';
+
+  @override
+  String get hotkeyLabel => 'Gajeriyar hanya ta gabaɗaya';
+
+  @override
+  String get hotkeyRecordHint => 'Danna nan, sannan ka danna sabon haɗin maɓallan';
+
+  @override
+  String get hotkeyReset => 'Mayar da tsoho';
+
+  @override
+  String get pasteImage => 'Liƙa hoto daga clipboard';
+
+  @override
+  String get errClipboardNoImage => 'Babu hoto a clipboard.';
+
+  @override
+  String get favorites => 'Abubuwan da aka fi so';
+
+  @override
+  String get addToFavorites => 'Ƙara zuwa abubuwan da aka fi so';
+
+  @override
+  String get removeFromFavorites => 'Cire daga abubuwan da aka fi so';
+
+  @override
+  String get noFavorites => 'Babu abubuwan da aka fi so tukuna. Taɓa tauraron da ke kan hannun jari don ƙara shi.';
+
+  @override
+  String get displayCurrency => 'Nau’in kuɗin nunawa';
+
+  @override
+  String get displayCurrencyNone => 'Nau’in kuɗin hannun jarin kaɗai';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ a $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Farashin canji: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Sabuntawa';
+
+  @override
+  String currentVersion(String version) {
+    return 'Sigar $version';
+  }
+
+  @override
+  String get autoUpdate => 'Shigar da sabuntawa ta atomatik';
+
+  @override
+  String get checkForUpdates => 'Duba sabuntawa';
+
+  @override
+  String get updateChecking => 'Ana duba sabuntawa…';
+
+  @override
+  String get updateUpToDate => 'Kana amfani da sabuwar siga.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Sigar $version tana nan.';
+  }
+
+  @override
+  String get updateDownloading => 'Ana sauke sabuntawa a bayan fage…';
+
+  @override
+  String get updateDownloaded => 'Sabuntawa ta shirya. Sake kunna don shigar da ita.';
+
+  @override
+  String get updateNow => 'Sabunta';
+
+  @override
+  String get restartNow => 'Sake kunna';
+
+  @override
+  String get updatesViaStore => 'Sabuntawa suna zuwa ta atomatik ta hanyar shagon manhaja.';
+
+  @override
+  String get updateCheckFailed => 'Ba a iya duba sabuntawa ba.';
+
+  @override
+  String get subscription => 'Rajista';
+
+  @override
+  String get planTrial => 'Gwaji';
+
+  @override
+  String get planNormal => 'Na kullum';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Babu tsari mai aiki';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Nazari $count a wata';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Gwaji kyauta na kwana $days tare da nazari $count';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Saura kwanaki $days na gwaji',
+      one: 'Saura kwana 1 na gwaji',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba da nazari.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Saura nazari $remaining cikin $total a wannan lokaci';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return 'Ƙarin nazari $count';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Za a sabunta $date';
+  }
+
+  @override
+  String get choosePlan => 'Zaɓi tsari';
+
+  @override
+  String get currentPlan => 'Tsarin yanzu';
+
+  @override
+  String get subscribe => 'Yi rajista';
+
+  @override
+  String get perMonth => '/ wata';
+
+  @override
+  String get extraPacksTitle => 'Kana buƙatar ƙari? Sayi ƙarin nazari';
+
+  @override
+  String get extraPacksHint => 'Ƙarin nazari ba sa ƙarewa, kuma ana amfani da su bayan rabon ka na wata ya ƙare.';
+
+  @override
+  String get buy => 'Saya';
+
+  @override
+  String get restorePurchases => 'Dawo da abubuwan da aka saya';
+
+  @override
+  String get manageSubscription => 'Sarrafa rajista';
+
+  @override
+  String get purchaseSuccess => 'Mun gode! Sayen ka yana aiki yanzu.';
+
+  @override
+  String get purchasePending => 'Ana jiran sayen…';
+
+  @override
+  String get purchaseFailed => 'Ba a iya kammala sayen ba.';
+
+  @override
+  String get purchaseCanceled => 'An soke sayen.';
+
+  @override
+  String get billingUnavailable =>
+      'Ba a samu sayayya a wannan dandali ba tukuna. Yi rajista a wayarka ko Mac; tsarin ka zai yi aiki a kowace na’ura.';
+
+  @override
+  String get errQuotaExceeded => 'Ba ka da sauran nazari a wannan lokaci. Haɓaka tsarin ka ko sayi ƙarin nazari.';
+
+  @override
+  String get errTrialExpired => 'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba.';
+
+  @override
+  String get errNoPlan => 'Ana buƙatar tsari mai aiki don nazarin AI.';
+
+  @override
+  String get viewPlans => 'Duba tsare-tsare';
+
+  @override
+  String get usageTitle => 'Amfani';
+
+  @override
+  String get demoPurchaseNote => 'Biyan kuɗi na gwaji: ana kwaikwayon sayayya a wannan dandali.';
+
+  @override
+  String get mostPopular => 'Mafi shahara';
+
+  @override
+  String get bestValue => 'Mafi daraja';
+
+  @override
+  String get planFeaturesCommon =>
+      'Ganewar hoto, bayanai kai tsaye, jadawalai, abubuwan da aka fi so da duk harsuna 44 suna cikin kowane tsari. Rabon yana shafar nazarin AI ne.';
+
+  @override
+  String get searchLanguages => 'Nemi harsuna…';
+
+  @override
+  String get noLanguageMatch => 'Babu harshen da ya dace.';
+
+  @override
+  String get aiSettings => 'Nazarin AI';
+
+  @override
+  String get aiLength => 'Tsawo';
+
+  @override
+  String get aiDepthBrief => 'Taƙaitacce';
+
+  @override
+  String get aiDepthStandard => 'Daidaitacce';
+
+  @override
+  String get aiDepthDeep => 'Mai zurfi';
+
+  @override
+  String get aiDepthBriefDesc => 'Muhimman abubuwa, cikin sauri.';
+
+  @override
+  String get aiDepthStandardDesc => 'Cikakken rahoto tare da kowane sashe.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Ƙarin binciken yanar gizo, kwatanta da kamfanoni makamantansu da ƙarin cikakkun bayanai.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Kimanin kalmomi $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'yana amfani da nazari $count',
+      one: 'yana amfani da nazari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Matakin mai karatu';
+
+  @override
+  String get aiReaderBeginner => 'Mafari';
+
+  @override
+  String get aiReaderExperienced => 'Gogagge';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Harshe mai sauƙi; ana bayyana kowace kalmar fasaha.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Rubutu mai cunkoson bayanai tare da kalmomin kuɗi na yau da kullum.';
+
+  @override
+  String get aiCounterArgument => 'Hujja mafi ƙarfi ta adawa';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Taƙaitawar koyaushe tana ƙarewa da hujja mafi ƙarfi da ke adawa da nata ƙarshen.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Har zuwa binciken yanar gizo $count a kowane nazari da tsarin ka',
+      one: 'Har zuwa binciken yanar gizo 1 a kowane nazari da tsarin ka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Daidaitaccen tsawo bisa tsari: Na kullum $normal, Pro $pro, Max $max, Ultra $ultra. Taƙaitacce yana amfani da 2 ƙasa, Mai zurfi 2 fiye.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'har zuwa binciken yanar gizo $count',
+      one: 'har zuwa binciken yanar gizo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Binciken yanar gizo $count a kowane nazari',
+      one: 'Binciken yanar gizo 1 a kowane nazari',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Wannan tsawon yana buƙatar nazari $needed, amma saura $left kawai. Zaɓi gajeren tsawo a Saituna ko sami ƙarin nazari.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Ra\'ayin kasuwa';
+
+  @override
+  String get moodVeryPessimistic => 'Mara kyakkyawan fata sosai';
+
+  @override
+  String get moodPessimistic => 'Mara kyakkyawan fata';
+
+  @override
+  String get moodNeutral => 'Tsaka-tsaki';
+
+  @override
+  String get moodOptimistic => 'Mai kyakkyawan fata';
+
+  @override
+  String get moodVeryOptimistic => 'Mai kyakkyawan fata sosai';
+
+  @override
+  String get scenarioBull => 'Hasashen haɓaka';
+
+  @override
+  String get scenarioBase => 'Hasashen asali';
+
+  @override
+  String get scenarioBear => 'Hasashen faɗuwa';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Farashin yanzu: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Muhimman matakai';
+
+  @override
+  String get keyLevelSupport => 'Tallafi';
+
+  @override
+  String get keyLevelResistance => 'Juriya';
+
+  @override
+  String get keyLevelAnchor => 'Ma\'auni';
+
+  @override
+  String get upcomingEvents => 'Abubuwan da ke tafe';
+
+  @override
+  String get outlookChartNote => 'Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba.';
 }

@@ -10,15 +10,13 @@ class AppLocalizationsFa extends AppLocalizations {
   AppLocalizationsFa([String locale = 'fa']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
+  String get homeTagline => 'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
 
   @override
-  String get homeHint =>
-      'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
+  String get homeHint => 'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
 
   @override
   String get takePhoto => 'عکس گرفتن';
@@ -307,12 +305,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count تحلیلگر',
-      one: '1 تحلیلگر',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تحلیلگر', one: '1 تحلیلگر');
     return '$_temp0';
   }
 
@@ -344,8 +337,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'شناسایی تصویر تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد). نماد را به‌صورت دستی وارد کنید.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errRecognitionUnreachable => 'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,12 +345,10 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
+  String get errRecognitionRefused => 'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
 
   @override
-  String get errRecognitionTruncated =>
-      'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
+  String get errRecognitionTruncated => 'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
 
   @override
   String get errRecognitionBadResponse => 'پاسخ غیرمنتظره از سرویس شناسایی.';
@@ -367,12 +357,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errRecognitionEmpty => 'سرویس شناسایی پاسخ خالی برگرداند.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
+  String get errMissingFinnhubKey => 'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
 
   @override
-  String get errMarketUnreachable =>
-      'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errMarketUnreachable => 'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String get errMarketRateLimited =>
@@ -405,4 +393,541 @@ class AppLocalizationsFa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'مشکلی پیش آمد: $detail';
   }
+
+  @override
+  String get newSearch => 'جستجوی جدید';
+
+  @override
+  String get recentSearches => 'اخیر';
+
+  @override
+  String get noRecentSearches => 'هنوز جستجوی اخیری وجود ندارد.';
+
+  @override
+  String get clearRecent => 'پاک کردن موارد اخیر';
+
+  @override
+  String get greeting => 'کدام سهم را بررسی کنیم؟';
+
+  @override
+  String get searchHint => 'نماد یا نام شرکت';
+
+  @override
+  String get attachImage => 'پیوست تصویر';
+
+  @override
+  String get searchResultsTitle => 'نتایج جستجو';
+
+  @override
+  String errNoResults(String query) {
+    return 'سهمی برای «$query» پیدا نشد.';
+  }
+
+  @override
+  String get quickBarHint => 'نماد یا نام شرکت را وارد کنید…';
+
+  @override
+  String get openFullWindow => 'باز کردن پنجره';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'برای فراخوانی StockLens، در هر جایی $shortcut را فشار دهید.';
+  }
+
+  @override
+  String get trayOpen => 'باز کردن StockLens';
+
+  @override
+  String get trayQuickSearch => 'جستجوی سریع';
+
+  @override
+  String get trayQuit => 'خروج';
+
+  @override
+  String get appearance => 'ظاهر';
+
+  @override
+  String get themeSystem => 'سیستم';
+
+  @override
+  String get themeDark => 'تیره';
+
+  @override
+  String get themeLight => 'روشن';
+
+  @override
+  String get back => 'بازگشت';
+
+  @override
+  String get aiSectionTitle => 'تحلیل هوش مصنوعی';
+
+  @override
+  String get aiIntro =>
+      'مروری جامع نوشته‌شده با هوش مصنوعی: خلاصه اخبار اخیر، کسب‌وکار، نقاط قوت، ریسک‌ها و عوامل پنهان، ارزش‌گذاری، چشم‌انداز قیمت با سناریوهایی از زوایای روان‌شناختی، جامعه‌شناختی، تکنیکال و کلان، و نکاتی که باید دنبال کنید.';
+
+  @override
+  String get aiGenerate => 'تولید تحلیل';
+
+  @override
+  String get aiRegenerate => 'تولید دوباره';
+
+  @override
+  String get aiGenerating => 'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
+
+  @override
+  String get aiSources => 'منابع';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'تولیدشده $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'تحلیل تولیدشده با هوش مصنوعی بر اساس داده‌های عمومی و اخبار اخیر. ممکن است خطا داشته باشد یا قدیمی باشد و توصیه سرمایه‌گذاری نیست.';
+
+  @override
+  String get errAiNotConfigured => 'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
+
+  @override
+  String get errAiUnreachable => 'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'سرویس هوش مصنوعی خطا برگرداند (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'سرویس هوش مصنوعی از تحلیل این سهم خودداری کرد.';
+
+  @override
+  String get errAiBadResponse => 'پاسخ غیرمنتظره از سرویس هوش مصنوعی.';
+
+  @override
+  String get sectionChart => 'نمودار قیمت';
+
+  @override
+  String get rangeOneWeek => '1 هفته';
+
+  @override
+  String get rangeOneMonth => '1 ماه';
+
+  @override
+  String get rangeThreeMonths => '3 ماه';
+
+  @override
+  String get rangeOneYear => '1 سال';
+
+  @override
+  String get rangeFiveYears => '5 سال';
+
+  @override
+  String get chartUnavailable => 'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
+
+  @override
+  String get sectionStatements => 'صورت‌های مالی (سالانه)';
+
+  @override
+  String get labelFiscalYear => 'سال مالی';
+
+  @override
+  String get labelRevenue => 'درآمد';
+
+  @override
+  String get labelNetIncome => 'سود خالص';
+
+  @override
+  String get labelTotalAssets => 'کل دارایی‌ها';
+
+  @override
+  String get labelTotalLiabilities => 'کل بدهی‌ها';
+
+  @override
+  String get labelEquity => 'حقوق صاحبان سهام';
+
+  @override
+  String get labelOperatingCashFlow => 'جریان نقدی عملیاتی';
+
+  @override
+  String get statementsUnavailable => 'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
+
+  @override
+  String get launchAtLogin => 'اجرا هنگام ورود به سیستم';
+
+  @override
+  String get hotkeyLabel => 'کلید میانبر سراسری';
+
+  @override
+  String get hotkeyRecordHint => 'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
+
+  @override
+  String get hotkeyReset => 'بازنشانی به پیش‌فرض';
+
+  @override
+  String get pasteImage => 'چسباندن تصویر از کلیپ‌بورد';
+
+  @override
+  String get errClipboardNoImage => 'تصویری در کلیپ‌بورد وجود ندارد.';
+
+  @override
+  String get favorites => 'علاقه‌مندی‌ها';
+
+  @override
+  String get addToFavorites => 'افزودن به علاقه‌مندی‌ها';
+
+  @override
+  String get removeFromFavorites => 'حذف از علاقه‌مندی‌ها';
+
+  @override
+  String get noFavorites => 'هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.';
+
+  @override
+  String get displayCurrency => 'واحد پول نمایش';
+
+  @override
+  String get displayCurrencyNone => 'فقط واحد پول خود سهم';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ به $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'نرخ: 1 $from = $rate $to (ECB، $date)';
+  }
+
+  @override
+  String get updates => 'به‌روزرسانی‌ها';
+
+  @override
+  String currentVersion(String version) {
+    return 'نسخهٔ $version';
+  }
+
+  @override
+  String get autoUpdate => 'نصب خودکار به‌روزرسانی‌ها';
+
+  @override
+  String get checkForUpdates => 'بررسی به‌روزرسانی‌ها';
+
+  @override
+  String get updateChecking => 'در حال بررسی به‌روزرسانی‌ها…';
+
+  @override
+  String get updateUpToDate => 'شما از آخرین نسخه استفاده می‌کنید.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'نسخهٔ $version در دسترس است.';
+  }
+
+  @override
+  String get updateDownloading => 'در حال بارگیری به‌روزرسانی در پس‌زمینه…';
+
+  @override
+  String get updateDownloaded => 'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
+
+  @override
+  String get updateNow => 'به‌روزرسانی';
+
+  @override
+  String get restartNow => 'راه‌اندازی مجدد';
+
+  @override
+  String get updatesViaStore => 'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
+
+  @override
+  String get updateCheckFailed => 'بررسی به‌روزرسانی‌ها ممکن نشد.';
+
+  @override
+  String get subscription => 'اشتراک';
+
+  @override
+  String get planTrial => 'آزمایشی';
+
+  @override
+  String get planNormal => 'معمولی';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'طرح فعالی وجود ندارد';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count تحلیل در ماه';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days روز آزمایش رایگان با $count تحلیل';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days روز از دوره آزمایشی باقی مانده',
+      one: '1 روز از دوره آزمایشی باقی مانده',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه تحلیل یک طرح انتخاب کنید.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining از $total تحلیل در این دوره باقی مانده';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count تحلیل اضافی';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'تمدید در $date';
+  }
+
+  @override
+  String get choosePlan => 'انتخاب طرح';
+
+  @override
+  String get currentPlan => 'طرح فعلی';
+
+  @override
+  String get subscribe => 'مشترک شوید';
+
+  @override
+  String get perMonth => '/ ماه';
+
+  @override
+  String get extraPacksTitle => 'بیشتر نیاز دارید؟ تحلیل اضافی بخرید';
+
+  @override
+  String get extraPacksHint => 'تحلیل‌های اضافی هرگز منقضی نمی‌شوند و پس از سهمیه ماهانه شما استفاده می‌شوند.';
+
+  @override
+  String get buy => 'خرید';
+
+  @override
+  String get restorePurchases => 'بازیابی خریدها';
+
+  @override
+  String get manageSubscription => 'مدیریت اشتراک';
+
+  @override
+  String get purchaseSuccess => 'متشکریم! خرید شما فعال شد.';
+
+  @override
+  String get purchasePending => 'خرید در انتظار…';
+
+  @override
+  String get purchaseFailed => 'خرید تکمیل نشد.';
+
+  @override
+  String get purchaseCanceled => 'خرید لغو شد.';
+
+  @override
+  String get billingUnavailable =>
+      'خرید هنوز در این پلتفرم در دسترس نیست. در تلفن یا Mac خود مشترک شوید؛ طرح شما در همه دستگاه‌ها کار می‌کند.';
+
+  @override
+  String get errQuotaExceeded => 'تحلیلی برای این دوره باقی نمانده است. طرح خود را ارتقا دهید یا تحلیل اضافی بخرید.';
+
+  @override
+  String get errTrialExpired => 'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه یک طرح انتخاب کنید.';
+
+  @override
+  String get errNoPlan => 'برای تحلیل هوش مصنوعی به یک طرح فعال نیاز است.';
+
+  @override
+  String get viewPlans => 'مشاهده طرح‌ها';
+
+  @override
+  String get usageTitle => 'میزان استفاده';
+
+  @override
+  String get demoPurchaseNote => 'پرداخت آزمایشی: خریدها در این پلتفرم شبیه‌سازی می‌شوند.';
+
+  @override
+  String get mostPopular => 'محبوب‌ترین';
+
+  @override
+  String get bestValue => 'بهترین ارزش';
+
+  @override
+  String get planFeaturesCommon =>
+      'شناسایی عکس، داده‌های زنده، نمودارها، علاقه‌مندی‌ها و همه 44 زبان در هر طرح گنجانده شده‌اند. سهمیه مربوط به تحلیل‌های هوش مصنوعی است.';
+
+  @override
+  String get searchLanguages => 'جستجوی زبان‌ها…';
+
+  @override
+  String get noLanguageMatch => 'زبانی مطابقت ندارد.';
+
+  @override
+  String get aiSettings => 'تحلیل هوش مصنوعی';
+
+  @override
+  String get aiLength => 'طول';
+
+  @override
+  String get aiDepthBrief => 'کوتاه';
+
+  @override
+  String get aiDepthStandard => 'استاندارد';
+
+  @override
+  String get aiDepthDeep => 'عمیق';
+
+  @override
+  String get aiDepthBriefDesc => 'نکات اصلی، سریع.';
+
+  @override
+  String get aiDepthStandardDesc => 'گزارش کامل با همه بخش‌ها.';
+
+  @override
+  String get aiDepthDeepDesc => 'جستجوهای وب بیشتر، مقایسه با رقبا و جزئیات عمیق‌تر.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'حدود $min–$max کلمه';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحلیل مصرف می‌کند',
+      one: '$count تحلیل مصرف می‌کند',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'سطح خواننده';
+
+  @override
+  String get aiReaderBeginner => 'مبتدی';
+
+  @override
+  String get aiReaderExperienced => 'باتجربه';
+
+  @override
+  String get aiReaderBeginnerDesc => 'زبان ساده؛ همه اصطلاحات تخصصی توضیح داده می‌شوند.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'متنی فشرده‌تر با اصطلاحات رایج مالی.';
+
+  @override
+  String get aiCounterArgument => 'قوی‌ترین استدلال مخالف';
+
+  @override
+  String get aiCounterArgumentDesc => 'خلاصه همیشه با قوی‌ترین استدلال علیه نتیجه‌گیری خودش به پایان می‌رسد.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تا $count جستجوی وب برای هر تحلیل با طرح شما',
+      one: 'تا $count جستجوی وب برای هر تحلیل با طرح شما',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'تعداد جستجوی وب در طول استاندارد بر اساس طرح: معمولی $normal، Pro $pro، Max $max، Ultra $ultra. حالت کوتاه 2 جستجوی کمتر و حالت عمیق 2 جستجوی بیشتر دارد.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تا $count جستجوی وب',
+      one: 'تا $count جستجوی وب',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count جستجوی وب برای هر تحلیل',
+      one: '$count جستجوی وب برای هر تحلیل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'این طول به $needed تحلیل نیاز دارد، اما فقط $left تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید.';
+  }
+
+  @override
+  String get outlookMarketMood => 'حال‌وهوای بازار';
+
+  @override
+  String get moodVeryPessimistic => 'بسیار بدبینانه';
+
+  @override
+  String get moodPessimistic => 'بدبینانه';
+
+  @override
+  String get moodNeutral => 'خنثی';
+
+  @override
+  String get moodOptimistic => 'خوش‌بینانه';
+
+  @override
+  String get moodVeryOptimistic => 'بسیار خوش‌بینانه';
+
+  @override
+  String get scenarioBull => 'سناریوی خوش‌بینانه';
+
+  @override
+  String get scenarioBase => 'سناریوی پایه';
+
+  @override
+  String get scenarioBear => 'سناریوی بدبینانه';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'قیمت فعلی: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'سطوح کلیدی';
+
+  @override
+  String get keyLevelSupport => 'حمایت';
+
+  @override
+  String get keyLevelResistance => 'مقاومت';
+
+  @override
+  String get keyLevelAnchor => 'سطح مرجع';
+
+  @override
+  String get upcomingEvents => 'رویدادهای پیش رو';
+
+  @override
+  String get outlookChartNote => 'بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی.';
 }

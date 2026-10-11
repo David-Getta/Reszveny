@@ -10,7 +10,7 @@ class AppLocalizationsNl extends AppLocalizations {
   AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografeer een aandeel en ontdek er alles over.';
@@ -306,12 +306,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analisten',
-      one: '1 analist',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisten', one: '1 analist');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Beeldherkenning is niet ingesteld (geen ANTHROPIC_API_KEY). Voer de ticker handmatig in.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errRecognitionUnreachable => 'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'De herkenningsdienst kon deze afbeelding niet verwerken.';
+  String get errRecognitionRefused => 'De herkenningsdienst kon deze afbeelding niet verwerken.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
+  String get errRecognitionTruncated => 'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Onverwacht antwoord van de herkenningsdienst.';
+  String get errRecognitionBadResponse => 'Onverwacht antwoord van de herkenningsdienst.';
 
   @override
-  String get errRecognitionEmpty =>
-      'De herkenningsdienst gaf een leeg antwoord terug.';
+  String get errRecognitionEmpty => 'De herkenningsdienst gaf een leeg antwoord terug.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errMarketUnreachable => 'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
-  String get errMarketRateLimited =>
-      'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
+  String get errMarketRateLimited => 'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +372,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Onverwacht antwoord van de marktdatadienst.';
+  String get errMarketBadResponse => 'Onverwacht antwoord van de marktdatadienst.';
 
   @override
   String errNoQuote(String symbol) {
@@ -407,4 +393,543 @@ class AppLocalizationsNl extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Er is iets misgegaan: $detail';
   }
+
+  @override
+  String get newSearch => 'Nieuwe zoekopdracht';
+
+  @override
+  String get recentSearches => 'Recent';
+
+  @override
+  String get noRecentSearches => 'Nog geen recente zoekopdrachten.';
+
+  @override
+  String get clearRecent => 'Recente wissen';
+
+  @override
+  String get greeting => 'Welk aandeel bekijken we?';
+
+  @override
+  String get searchHint => 'Ticker of bedrijfsnaam';
+
+  @override
+  String get attachImage => 'Afbeelding bijvoegen';
+
+  @override
+  String get searchResultsTitle => 'Zoekresultaten';
+
+  @override
+  String errNoResults(String query) {
+    return 'Geen aandelen gevonden voor “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Typ een ticker of bedrijfsnaam…';
+
+  @override
+  String get openFullWindow => 'Venster openen';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Druk waar dan ook op $shortcut om StockLens te openen.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens openen';
+
+  @override
+  String get trayQuickSearch => 'Snel zoeken';
+
+  @override
+  String get trayQuit => 'Afsluiten';
+
+  @override
+  String get appearance => 'Weergave';
+
+  @override
+  String get themeSystem => 'Systeem';
+
+  @override
+  String get themeDark => 'Donker';
+
+  @override
+  String get themeLight => 'Licht';
+
+  @override
+  String get back => 'Terug';
+
+  @override
+  String get aiSectionTitle => 'AI-analyse';
+
+  @override
+  String get aiIntro =>
+      'Een gedetailleerd, door AI geschreven overzicht: samenvatting van recent nieuws, het bedrijf, sterke punten, risico’s en verborgen factoren, waardering, een koersvooruitzicht met scenario’s vanuit psychologisch, sociologisch, technisch en macro-economisch perspectief, en waar je op moet letten.';
+
+  @override
+  String get aiGenerate => 'Analyse genereren';
+
+  @override
+  String get aiRegenerate => 'Opnieuw genereren';
+
+  @override
+  String get aiGenerating => 'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
+
+  @override
+  String get aiSources => 'Bronnen';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Gegenereerd $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Door AI gegenereerde analyse op basis van openbare gegevens en recent nieuws. Deze kan fouten bevatten of verouderd zijn en is geen beleggingsadvies.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'De AI-dienst gaf een fout terug (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
+
+  @override
+  String get errAiBadResponse => 'Onverwacht antwoord van de AI-dienst.';
+
+  @override
+  String get sectionChart => 'Koersgrafiek';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1J';
+
+  @override
+  String get rangeFiveYears => '5J';
+
+  @override
+  String get chartUnavailable => 'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
+
+  @override
+  String get sectionStatements => 'Financiële overzichten (jaarlijks)';
+
+  @override
+  String get labelFiscalYear => 'Boekjaar';
+
+  @override
+  String get labelRevenue => 'Omzet';
+
+  @override
+  String get labelNetIncome => 'Nettowinst';
+
+  @override
+  String get labelTotalAssets => 'Totale activa';
+
+  @override
+  String get labelTotalLiabilities => 'Totale verplichtingen';
+
+  @override
+  String get labelEquity => 'Eigen vermogen';
+
+  @override
+  String get labelOperatingCashFlow => 'Operationele kasstroom';
+
+  @override
+  String get statementsUnavailable => 'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
+
+  @override
+  String get launchAtLogin => 'Starten bij aanmelden';
+
+  @override
+  String get hotkeyLabel => 'Globale sneltoets';
+
+  @override
+  String get hotkeyRecordHint => 'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
+
+  @override
+  String get hotkeyReset => 'Standaard herstellen';
+
+  @override
+  String get pasteImage => 'Afbeelding plakken vanaf het klembord';
+
+  @override
+  String get errClipboardNoImage => 'Er staat geen afbeelding op het klembord.';
+
+  @override
+  String get favorites => 'Favorieten';
+
+  @override
+  String get addToFavorites => 'Toevoegen aan favorieten';
+
+  @override
+  String get removeFromFavorites => 'Verwijderen uit favorieten';
+
+  @override
+  String get noFavorites => 'Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.';
+
+  @override
+  String get displayCurrency => 'Weergavevaluta';
+
+  @override
+  String get displayCurrencyNone => 'Alleen de eigen valuta van het aandeel';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ in $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Koers: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versie $version';
+  }
+
+  @override
+  String get autoUpdate => 'Updates automatisch installeren';
+
+  @override
+  String get checkForUpdates => 'Controleren op updates';
+
+  @override
+  String get updateChecking => 'Controleren op updates…';
+
+  @override
+  String get updateUpToDate => 'Je gebruikt de nieuwste versie.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Versie $version is beschikbaar.';
+  }
+
+  @override
+  String get updateDownloading => 'De update wordt op de achtergrond gedownload…';
+
+  @override
+  String get updateDownloaded => 'De update is klaar. Start opnieuw op om deze te installeren.';
+
+  @override
+  String get updateNow => 'Bijwerken';
+
+  @override
+  String get restartNow => 'Opnieuw starten';
+
+  @override
+  String get updatesViaStore => 'Updates komen automatisch binnen via de appwinkel.';
+
+  @override
+  String get updateCheckFailed => 'Kon niet controleren op updates.';
+
+  @override
+  String get subscription => 'Abonnement';
+
+  @override
+  String get planTrial => 'Proefperiode';
+
+  @override
+  String get planNormal => 'Normaal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Geen actief abonnement';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyses per maand';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days dagen gratis proberen met $count analyses';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Nog $days dagen proefperiode',
+      one: 'Nog 1 dag proefperiode',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te analyseren.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Nog $remaining van $total analyses in deze periode';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyses';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Wordt verlengd op $date';
+  }
+
+  @override
+  String get choosePlan => 'Kies een abonnement';
+
+  @override
+  String get currentPlan => 'Huidig abonnement';
+
+  @override
+  String get subscribe => 'Abonneren';
+
+  @override
+  String get perMonth => '/ maand';
+
+  @override
+  String get extraPacksTitle => 'Meer nodig? Koop extra analyses';
+
+  @override
+  String get extraPacksHint => 'Extra analyses verlopen nooit en worden gebruikt na je maandelijkse tegoed.';
+
+  @override
+  String get buy => 'Kopen';
+
+  @override
+  String get restorePurchases => 'Aankopen herstellen';
+
+  @override
+  String get manageSubscription => 'Abonnement beheren';
+
+  @override
+  String get purchaseSuccess => 'Bedankt! Je aankoop is actief.';
+
+  @override
+  String get purchasePending => 'Aankoop in behandeling…';
+
+  @override
+  String get purchaseFailed => 'De aankoop kon niet worden voltooid.';
+
+  @override
+  String get purchaseCanceled => 'Aankoop geannuleerd.';
+
+  @override
+  String get billingUnavailable =>
+      'Aankopen zijn op dit platform nog niet beschikbaar. Abonneer je op je telefoon of Mac; je abonnement werkt op elk apparaat.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Je hebt geen analyses meer voor deze periode. Upgrade je abonnement of koop extra analyses.';
+
+  @override
+  String get errTrialExpired => 'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te gaan.';
+
+  @override
+  String get errNoPlan => 'Voor AI-analyse is een actief abonnement nodig.';
+
+  @override
+  String get viewPlans => 'Abonnementen bekijken';
+
+  @override
+  String get usageTitle => 'Gebruik';
+
+  @override
+  String get demoPurchaseNote => 'Demofacturering: aankopen worden op dit platform gesimuleerd.';
+
+  @override
+  String get mostPopular => 'Populairst';
+
+  @override
+  String get bestValue => 'Beste prijs-kwaliteit';
+
+  @override
+  String get planFeaturesCommon =>
+      'Fotoherkenning, live gegevens, grafieken, favorieten en alle 44 talen zijn bij elk abonnement inbegrepen. Het tegoed geldt voor AI-analyses.';
+
+  @override
+  String get searchLanguages => 'Talen zoeken…';
+
+  @override
+  String get noLanguageMatch => 'Geen taal gevonden.';
+
+  @override
+  String get aiSettings => 'AI-analyse';
+
+  @override
+  String get aiLength => 'Lengte';
+
+  @override
+  String get aiDepthBrief => 'Kort';
+
+  @override
+  String get aiDepthStandard => 'Standaard';
+
+  @override
+  String get aiDepthDeep => 'Diepgaand';
+
+  @override
+  String get aiDepthBriefDesc => 'De kern, snel.';
+
+  @override
+  String get aiDepthStandardDesc => 'Volledig rapport met alle secties.';
+
+  @override
+  String get aiDepthDeepDesc => 'Meer webzoekopdrachten, vergelijking met sectorgenoten en meer diepgang.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Ongeveer $min–$max woorden';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kost $count analyses',
+      one: 'kost 1 analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Leesniveau';
+
+  @override
+  String get aiReaderBeginner => 'Beginner';
+
+  @override
+  String get aiReaderExperienced => 'Ervaren';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Eenvoudige taal; elke vakterm wordt uitgelegd.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Compactere tekst met gangbare financiële terminologie.';
+
+  @override
+  String get aiCounterArgument => 'Sterkste tegenargument';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'De samenvatting eindigt altijd met het sterkste argument tegen de eigen conclusie.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Maximaal $count webzoekopdrachten per analyse met je abonnement',
+      one: 'Maximaal 1 webzoekopdracht per analyse met je abonnement',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standaardlengte per abonnement: Normaal $normal, Pro $pro, Max $max, Ultra $ultra. Kort gebruikt er 2 minder, Diepgaand 2 meer.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'maximaal $count webzoekopdrachten',
+      one: 'maximaal 1 webzoekopdracht',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count webzoekopdrachten per analyse',
+      one: '1 webzoekopdracht per analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Deze lengte vereist $needed analyses, maar je hebt er nog maar $left. Kies een kortere lengte in Instellingen of koop extra analyses.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Marktsentiment';
+
+  @override
+  String get moodVeryPessimistic => 'Zeer pessimistisch';
+
+  @override
+  String get moodPessimistic => 'Pessimistisch';
+
+  @override
+  String get moodNeutral => 'Neutraal';
+
+  @override
+  String get moodOptimistic => 'Optimistisch';
+
+  @override
+  String get moodVeryOptimistic => 'Zeer optimistisch';
+
+  @override
+  String get scenarioBull => 'Optimistisch scenario';
+
+  @override
+  String get scenarioBase => 'Basisscenario';
+
+  @override
+  String get scenarioBear => 'Pessimistisch scenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Huidige koers: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Belangrijke niveaus';
+
+  @override
+  String get keyLevelSupport => 'Steun';
+
+  @override
+  String get keyLevelResistance => 'Weerstand';
+
+  @override
+  String get keyLevelAnchor => 'Ankerniveau';
+
+  @override
+  String get upcomingEvents => 'Komende gebeurtenissen';
+
+  @override
+  String get outlookChartNote => 'Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen.';
 }

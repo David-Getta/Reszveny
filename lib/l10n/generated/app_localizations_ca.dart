@@ -10,11 +10,10 @@ class AppLocalizationsCa extends AppLocalizations {
   AppLocalizationsCa([String locale = 'ca']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Fotografia una acció i descobreix-ho tot sobre ella.';
+  String get homeTagline => 'Fotografia una acció i descobreix-ho tot sobre ella.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorGeneric => 'Alguna cosa ha anat malament.';
 
   @override
-  String get errorSectionUnavailable =>
-      'No s\'ha pogut carregar aquesta secció.';
+  String get errorSectionUnavailable => 'No s\'ha pogut carregar aquesta secció.';
 
   @override
   String get notAvailable => 'n/d';
@@ -308,12 +306,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistes',
-      one: '1 analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistes', one: '1 analista');
     return '$_temp0';
   }
 
@@ -354,32 +347,26 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'El servei de reconeixement no ha pogut processar aquesta imatge.';
+  String get errRecognitionRefused => 'El servei de reconeixement no ha pogut processar aquesta imatge.';
 
   @override
-  String get errRecognitionTruncated =>
-      'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
+  String get errRecognitionTruncated => 'La resposta del reconeixement s\'ha tallat. Torna-ho a provar.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Resposta inesperada del servei de reconeixement.';
+  String get errRecognitionBadResponse => 'Resposta inesperada del servei de reconeixement.';
 
   @override
-  String get errRecognitionEmpty =>
-      'El servei de reconeixement ha retornat una resposta buida.';
+  String get errRecognitionEmpty => 'El servei de reconeixement ha retornat una resposta buida.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Les dades de mercat no estan configurades (falta FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'No s\'ha pogut connectar amb el servei de dades de mercat. Comprova la connexió a internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
+  String get errMarketRateLimited => 'Massa sol·licituds al servei de dades de mercat. Espera un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +374,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Resposta inesperada del servei de dades de mercat.';
+  String get errMarketBadResponse => 'Resposta inesperada del servei de dades de mercat.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +395,542 @@ class AppLocalizationsCa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Alguna cosa ha anat malament: $detail';
   }
+
+  @override
+  String get newSearch => 'Cerca nova';
+
+  @override
+  String get recentSearches => 'Recents';
+
+  @override
+  String get noRecentSearches => 'Encara no hi ha cerques recents.';
+
+  @override
+  String get clearRecent => 'Esborrar les recents';
+
+  @override
+  String get greeting => 'Quina acció mirem?';
+
+  @override
+  String get searchHint => 'Ticker o nom de l’empresa';
+
+  @override
+  String get attachImage => 'Adjuntar una imatge';
+
+  @override
+  String get searchResultsTitle => 'Resultats de la cerca';
+
+  @override
+  String errNoResults(String query) {
+    return 'No s’ha trobat cap acció per a «$query».';
+  }
+
+  @override
+  String get quickBarHint => 'Escriu un ticker o el nom d’una empresa…';
+
+  @override
+  String get openFullWindow => 'Obrir la finestra';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Prem $shortcut des de qualsevol lloc per obrir StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Obrir StockLens';
+
+  @override
+  String get trayQuickSearch => 'Cerca ràpida';
+
+  @override
+  String get trayQuit => 'Sortir';
+
+  @override
+  String get appearance => 'Aparença';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Fosc';
+
+  @override
+  String get themeLight => 'Clar';
+
+  @override
+  String get back => 'Enrere';
+
+  @override
+  String get aiSectionTitle => 'Anàlisi amb IA';
+
+  @override
+  String get aiIntro =>
+      'Una visió general detallada escrita per IA: resum de les notícies recents, el negoci, punts forts, riscos i factors ocults, valoració, una perspectiva de preu amb escenaris des d’angles psicològics, sociològics, tècnics i macroeconòmics, i què cal vigilar.';
+
+  @override
+  String get aiGenerate => 'Generar anàlisi';
+
+  @override
+  String get aiRegenerate => 'Tornar a generar';
+
+  @override
+  String get aiGenerating => 'S’està preparant l’anàlisi… pot trigar un o dos minuts.';
+
+  @override
+  String get aiSources => 'Fonts';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generada $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Anàlisi generada per IA a partir de dades públiques i notícies recents. Pot contenir errors o estar desactualitzada, i no constitueix assessorament d’inversió.';
+
+  @override
+  String get errAiNotConfigured => 'L’anàlisi amb IA no està configurada (falta ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'No s’ha pogut connectar amb el servei d’IA. Comprova la connexió a internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'El servei d’IA ha retornat un error (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'El servei d’IA ha refusat analitzar aquesta acció.';
+
+  @override
+  String get errAiBadResponse => 'Resposta inesperada del servei d’IA.';
+
+  @override
+  String get sectionChart => 'Gràfic de preus';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'L’historial de preus no està disponible a la font de dades actual.';
+
+  @override
+  String get sectionStatements => 'Estats financers (anuals)';
+
+  @override
+  String get labelFiscalYear => 'Exercici fiscal';
+
+  @override
+  String get labelRevenue => 'Ingressos';
+
+  @override
+  String get labelNetIncome => 'Benefici net';
+
+  @override
+  String get labelTotalAssets => 'Actius totals';
+
+  @override
+  String get labelTotalLiabilities => 'Passius totals';
+
+  @override
+  String get labelEquity => 'Patrimoni net';
+
+  @override
+  String get labelOperatingCashFlow => 'Flux de caixa operatiu';
+
+  @override
+  String get statementsUnavailable => 'No hi ha estats financers publicats disponibles per a aquesta acció.';
+
+  @override
+  String get launchAtLogin => 'Obrir en iniciar la sessió';
+
+  @override
+  String get hotkeyLabel => 'Drecera global';
+
+  @override
+  String get hotkeyRecordHint => 'Fes clic aquí i prem la nova combinació de tecles';
+
+  @override
+  String get hotkeyReset => 'Restablir el valor predeterminat';
+
+  @override
+  String get pasteImage => 'Enganxar imatge del porta-retalls';
+
+  @override
+  String get errClipboardNoImage => 'No hi ha cap imatge al porta-retalls.';
+
+  @override
+  String get favorites => 'Favorits';
+
+  @override
+  String get addToFavorites => 'Afegir als favorits';
+
+  @override
+  String get removeFromFavorites => 'Eliminar dels favorits';
+
+  @override
+  String get noFavorites => 'Encara no hi ha favorits. Toca l’estrella d’una acció per afegir-la.';
+
+  @override
+  String get displayCurrency => 'Divisa de visualització';
+
+  @override
+  String get displayCurrencyNone => 'Només la divisa pròpia de l’acció';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ en $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Tipus de canvi: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Actualitzacions';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versió $version';
+  }
+
+  @override
+  String get autoUpdate => 'Instal·la les actualitzacions automàticament';
+
+  @override
+  String get checkForUpdates => 'Cerca actualitzacions';
+
+  @override
+  String get updateChecking => 'S’estan cercant actualitzacions…';
+
+  @override
+  String get updateUpToDate => 'Tens la versió més recent.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'La versió $version està disponible.';
+  }
+
+  @override
+  String get updateDownloading => 'S’està baixant l’actualització en segon pla…';
+
+  @override
+  String get updateDownloaded => 'L’actualització està a punt. Reinicia per instal·lar-la.';
+
+  @override
+  String get updateNow => 'Actualitza';
+
+  @override
+  String get restartNow => 'Reinicia';
+
+  @override
+  String get updatesViaStore => 'Les actualitzacions arriben automàticament a través de la botiga d’aplicacions.';
+
+  @override
+  String get updateCheckFailed => 'No s’han pogut cercar actualitzacions.';
+
+  @override
+  String get subscription => 'Subscripció';
+
+  @override
+  String get planTrial => 'Prova';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Cap pla actiu';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count anàlisis al mes';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Prova gratuïta de $days dies amb $count anàlisis';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Queden $days dies de prova',
+      one: 'Queda 1 dia de prova',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'La teva prova gratuïta s’ha acabat. Tria un pla per continuar analitzant.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Et queden $remaining de $total anàlisis en aquest període';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count anàlisis extra';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Es renova el $date';
+  }
+
+  @override
+  String get choosePlan => 'Tria un pla';
+
+  @override
+  String get currentPlan => 'Pla actual';
+
+  @override
+  String get subscribe => 'Subscriu-te';
+
+  @override
+  String get perMonth => '/ mes';
+
+  @override
+  String get extraPacksTitle => 'Necessites més? Compra anàlisis extra';
+
+  @override
+  String get extraPacksHint => 'Les anàlisis extra no caduquen mai i s’utilitzen després de la teva quota mensual.';
+
+  @override
+  String get buy => 'Comprar';
+
+  @override
+  String get restorePurchases => 'Restaurar compres';
+
+  @override
+  String get manageSubscription => 'Gestionar la subscripció';
+
+  @override
+  String get purchaseSuccess => 'Gràcies! La teva compra està activa.';
+
+  @override
+  String get purchasePending => 'Compra pendent…';
+
+  @override
+  String get purchaseFailed => 'No s’ha pogut completar la compra.';
+
+  @override
+  String get purchaseCanceled => 'Compra cancel·lada.';
+
+  @override
+  String get billingUnavailable =>
+      'Les compres encara no estan disponibles en aquesta plataforma. Subscriu-te des del teu telèfon o Mac; el teu pla funcionarà a tots els dispositius.';
+
+  @override
+  String get errQuotaExceeded => 'No et queden anàlisis en aquest període. Millora el teu pla o compra anàlisis extra.';
+
+  @override
+  String get errTrialExpired => 'La teva prova gratuïta s’ha acabat. Tria un pla per continuar.';
+
+  @override
+  String get errNoPlan => 'Cal un pla actiu per a l’anàlisi amb IA.';
+
+  @override
+  String get viewPlans => 'Veure plans';
+
+  @override
+  String get usageTitle => 'Ús';
+
+  @override
+  String get demoPurchaseNote => 'Facturació de demostració: les compres se simulen en aquesta plataforma.';
+
+  @override
+  String get mostPopular => 'Més popular';
+
+  @override
+  String get bestValue => 'Millor relació qualitat-preu';
+
+  @override
+  String get planFeaturesCommon =>
+      'El reconeixement de fotos, les dades en temps real, els gràfics, els favorits i els 44 idiomes estan inclosos en tots els plans. La quota cobreix les anàlisis amb IA.';
+
+  @override
+  String get searchLanguages => 'Cerca idiomes…';
+
+  @override
+  String get noLanguageMatch => 'Cap idioma no coincideix.';
+
+  @override
+  String get aiSettings => 'Anàlisi amb IA';
+
+  @override
+  String get aiLength => 'Extensió';
+
+  @override
+  String get aiDepthBrief => 'Breu';
+
+  @override
+  String get aiDepthStandard => 'Estàndard';
+
+  @override
+  String get aiDepthDeep => 'A fons';
+
+  @override
+  String get aiDepthBriefDesc => 'L’essencial, ràpidament.';
+
+  @override
+  String get aiDepthStandardDesc => 'Informe complet amb totes les seccions.';
+
+  @override
+  String get aiDepthDeepDesc => 'Més cerques web, comparació amb competidors i més detall.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Unes $min–$max paraules';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fa servir $count anàlisis',
+      one: 'fa servir 1 anàlisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nivell del lector';
+
+  @override
+  String get aiReaderBeginner => 'Principiant';
+
+  @override
+  String get aiReaderExperienced => 'Experimentat';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Llenguatge senzill; s’explica cada terme tècnic.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Text més dens amb la terminologia financera habitual.';
+
+  @override
+  String get aiCounterArgument => 'Contraargument més sòlid';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'El resum sempre acaba amb el millor argument en contra de la seva pròpia conclusió.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fins a $count cerques web per anàlisi amb el teu pla',
+      one: 'Fins a 1 cerca web per anàlisi amb el teu pla',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Extensió estàndard segons el pla: Normal $normal, Pro $pro, Max $max, Ultra $ultra. «Breu» en fa servir 2 menys i «A fons», 2 més.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fins a $count cerques web',
+      one: 'fins a 1 cerca web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cerques web per anàlisi',
+      one: '1 cerca web per anàlisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Aquesta extensió requereix $needed anàlisis, però només te’n queden $left. Tria una extensió més curta a Configuració o aconsegueix més anàlisis.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Sentiment del mercat';
+
+  @override
+  String get moodVeryPessimistic => 'Molt pessimista';
+
+  @override
+  String get moodPessimistic => 'Pessimista';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Molt optimista';
+
+  @override
+  String get scenarioBull => 'Escenari alcista';
+
+  @override
+  String get scenarioBase => 'Escenari base';
+
+  @override
+  String get scenarioBear => 'Escenari baixista';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Preu actual: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Nivells clau';
+
+  @override
+  String get keyLevelSupport => 'Suport';
+
+  @override
+  String get keyLevelResistance => 'Resistència';
+
+  @override
+  String get keyLevelAnchor => 'Àncora';
+
+  @override
+  String get upcomingEvents => 'Propers esdeveniments';
+
+  @override
+  String get outlookChartNote => 'Rangs orientatius; les probabilitats són estimacions aproximades, no prediccions.';
 }

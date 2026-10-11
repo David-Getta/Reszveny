@@ -10,7 +10,7 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.';
@@ -343,8 +343,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chưa cấu hình nhận diện ảnh (thiếu ANTHROPIC_API_KEY). Hãy nhập mã cổ phiếu thủ công.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
+  String get errRecognitionUnreachable => 'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,31 +351,25 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Dịch vụ nhận diện không thể xử lý ảnh này.';
+  String get errRecognitionRefused => 'Dịch vụ nhận diện không thể xử lý ảnh này.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
+  String get errRecognitionTruncated => 'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Phản hồi không mong đợi từ dịch vụ nhận diện.';
+  String get errRecognitionBadResponse => 'Phản hồi không mong đợi từ dịch vụ nhận diện.';
 
   @override
   String get errRecognitionEmpty => 'Dịch vụ nhận diện trả về phản hồi trống.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
+  String get errMarketUnreachable => 'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
+  String get errMarketRateLimited => 'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +377,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
+  String get errMarketBadResponse => 'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
 
   @override
   String errNoQuote(String symbol) {
@@ -406,4 +398,528 @@ class AppLocalizationsVi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Đã xảy ra lỗi: $detail';
   }
+
+  @override
+  String get newSearch => 'Tìm kiếm mới';
+
+  @override
+  String get recentSearches => 'Gần đây';
+
+  @override
+  String get noRecentSearches => 'Chưa có tìm kiếm gần đây.';
+
+  @override
+  String get clearRecent => 'Xóa gần đây';
+
+  @override
+  String get greeting => 'Hôm nay bạn muốn xem cổ phiếu nào?';
+
+  @override
+  String get searchHint => 'Mã cổ phiếu hoặc tên công ty';
+
+  @override
+  String get attachImage => 'Đính kèm ảnh';
+
+  @override
+  String get searchResultsTitle => 'Kết quả tìm kiếm';
+
+  @override
+  String errNoResults(String query) {
+    return 'Không tìm thấy cổ phiếu nào cho “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Nhập mã cổ phiếu hoặc tên công ty…';
+
+  @override
+  String get openFullWindow => 'Mở cửa sổ';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Nhấn $shortcut ở bất kỳ đâu để gọi StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Mở StockLens';
+
+  @override
+  String get trayQuickSearch => 'Tìm kiếm nhanh';
+
+  @override
+  String get trayQuit => 'Thoát';
+
+  @override
+  String get appearance => 'Giao diện';
+
+  @override
+  String get themeSystem => 'Theo hệ thống';
+
+  @override
+  String get themeDark => 'Tối';
+
+  @override
+  String get themeLight => 'Sáng';
+
+  @override
+  String get back => 'Quay lại';
+
+  @override
+  String get aiSectionTitle => 'Phân tích AI';
+
+  @override
+  String get aiIntro =>
+      'Tổng quan chi tiết do AI viết: tóm tắt tin tức gần đây, hoạt động kinh doanh, điểm mạnh, rủi ro và các yếu tố tiềm ẩn, định giá, triển vọng giá với các kịch bản từ góc độ tâm lý, xã hội, kỹ thuật và vĩ mô, và những điều cần theo dõi.';
+
+  @override
+  String get aiGenerate => 'Tạo phân tích';
+
+  @override
+  String get aiRegenerate => 'Tạo lại';
+
+  @override
+  String get aiGenerating => 'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
+
+  @override
+  String get aiSources => 'Nguồn';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Tạo lúc $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Phân tích do AI tạo dựa trên dữ liệu công khai và tin tức gần đây. Nội dung có thể sai hoặc lỗi thời và không phải là lời khuyên đầu tư.';
+
+  @override
+  String get errAiNotConfigured => 'Chưa cấu hình phân tích AI (thiếu ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Dịch vụ AI trả về lỗi (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Dịch vụ AI đã từ chối phân tích cổ phiếu này.';
+
+  @override
+  String get errAiBadResponse => 'Phản hồi không mong đợi từ dịch vụ AI.';
+
+  @override
+  String get sectionChart => 'Biểu đồ giá';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1Th';
+
+  @override
+  String get rangeThreeMonths => '3Th';
+
+  @override
+  String get rangeOneYear => '1N';
+
+  @override
+  String get rangeFiveYears => '5N';
+
+  @override
+  String get chartUnavailable => 'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
+
+  @override
+  String get sectionStatements => 'Báo cáo tài chính (năm)';
+
+  @override
+  String get labelFiscalYear => 'Năm tài chính';
+
+  @override
+  String get labelRevenue => 'Doanh thu';
+
+  @override
+  String get labelNetIncome => 'Lợi nhuận ròng';
+
+  @override
+  String get labelTotalAssets => 'Tổng tài sản';
+
+  @override
+  String get labelTotalLiabilities => 'Tổng nợ phải trả';
+
+  @override
+  String get labelEquity => 'Vốn chủ sở hữu';
+
+  @override
+  String get labelOperatingCashFlow => 'Dòng tiền từ hoạt động kinh doanh';
+
+  @override
+  String get statementsUnavailable => 'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
+
+  @override
+  String get launchAtLogin => 'Khởi chạy khi đăng nhập';
+
+  @override
+  String get hotkeyLabel => 'Phím tắt toàn cục';
+
+  @override
+  String get hotkeyRecordHint => 'Nhấp vào đây, rồi nhấn tổ hợp phím mới';
+
+  @override
+  String get hotkeyReset => 'Đặt lại mặc định';
+
+  @override
+  String get pasteImage => 'Dán ảnh từ bảng tạm';
+
+  @override
+  String get errClipboardNoImage => 'Không có ảnh trong bảng tạm.';
+
+  @override
+  String get favorites => 'Yêu thích';
+
+  @override
+  String get addToFavorites => 'Thêm vào yêu thích';
+
+  @override
+  String get removeFromFavorites => 'Xóa khỏi yêu thích';
+
+  @override
+  String get noFavorites => 'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
+
+  @override
+  String get displayCurrency => 'Tiền tệ hiển thị';
+
+  @override
+  String get displayCurrencyNone => 'Chỉ tiền tệ của cổ phiếu';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ theo $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Tỷ giá: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Cập nhật';
+
+  @override
+  String currentVersion(String version) {
+    return 'Phiên bản $version';
+  }
+
+  @override
+  String get autoUpdate => 'Tự động cài đặt bản cập nhật';
+
+  @override
+  String get checkForUpdates => 'Kiểm tra bản cập nhật';
+
+  @override
+  String get updateChecking => 'Đang kiểm tra bản cập nhật…';
+
+  @override
+  String get updateUpToDate => 'Bạn đang dùng phiên bản mới nhất.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Đã có phiên bản $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Đang tải bản cập nhật trong nền…';
+
+  @override
+  String get updateDownloaded => 'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
+
+  @override
+  String get updateNow => 'Cập nhật';
+
+  @override
+  String get restartNow => 'Khởi động lại';
+
+  @override
+  String get updatesViaStore => 'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
+
+  @override
+  String get updateCheckFailed => 'Không thể kiểm tra bản cập nhật.';
+
+  @override
+  String get subscription => 'Gói đăng ký';
+
+  @override
+  String get planTrial => 'Dùng thử';
+
+  @override
+  String get planNormal => 'Thường';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Không có gói đang hoạt động';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count lượt phân tích mỗi tháng';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Dùng thử miễn phí $days ngày với $count lượt phân tích';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Còn $days ngày dùng thử',
+      one: 'Còn 1 ngày dùng thử',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục phân tích.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Còn $remaining/$total lượt phân tích trong kỳ này';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count lượt phân tích bổ sung';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Gia hạn $date';
+  }
+
+  @override
+  String get choosePlan => 'Chọn gói';
+
+  @override
+  String get currentPlan => 'Gói hiện tại';
+
+  @override
+  String get subscribe => 'Đăng ký';
+
+  @override
+  String get perMonth => '/ tháng';
+
+  @override
+  String get extraPacksTitle => 'Cần thêm? Mua lượt phân tích bổ sung';
+
+  @override
+  String get extraPacksHint =>
+      'Lượt phân tích bổ sung không bao giờ hết hạn và được dùng sau khi hết hạn mức hằng tháng.';
+
+  @override
+  String get buy => 'Mua';
+
+  @override
+  String get restorePurchases => 'Khôi phục giao dịch mua';
+
+  @override
+  String get manageSubscription => 'Quản lý gói đăng ký';
+
+  @override
+  String get purchaseSuccess => 'Cảm ơn bạn! Giao dịch mua đã có hiệu lực.';
+
+  @override
+  String get purchasePending => 'Đang xử lý giao dịch mua…';
+
+  @override
+  String get purchaseFailed => 'Không thể hoàn tất giao dịch mua.';
+
+  @override
+  String get purchaseCanceled => 'Đã hủy giao dịch mua.';
+
+  @override
+  String get billingUnavailable =>
+      'Nền tảng này chưa hỗ trợ mua hàng. Hãy đăng ký trên điện thoại hoặc Mac; gói của bạn sẽ hoạt động trên mọi thiết bị.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Bạn đã hết lượt phân tích trong kỳ này. Hãy nâng cấp gói hoặc mua lượt phân tích bổ sung.';
+
+  @override
+  String get errTrialExpired => 'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục.';
+
+  @override
+  String get errNoPlan => 'Cần có gói đang hoạt động để phân tích AI.';
+
+  @override
+  String get viewPlans => 'Xem các gói';
+
+  @override
+  String get usageTitle => 'Mức sử dụng';
+
+  @override
+  String get demoPurchaseNote => 'Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.';
+
+  @override
+  String get mostPopular => 'Phổ biến nhất';
+
+  @override
+  String get bestValue => 'Đáng giá nhất';
+
+  @override
+  String get planFeaturesCommon =>
+      'Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 44 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI.';
+
+  @override
+  String get searchLanguages => 'Tìm ngôn ngữ…';
+
+  @override
+  String get noLanguageMatch => 'Không có ngôn ngữ phù hợp.';
+
+  @override
+  String get aiSettings => 'Phân tích AI';
+
+  @override
+  String get aiLength => 'Độ dài';
+
+  @override
+  String get aiDepthBrief => 'Ngắn gọn';
+
+  @override
+  String get aiDepthStandard => 'Tiêu chuẩn';
+
+  @override
+  String get aiDepthDeep => 'Chuyên sâu';
+
+  @override
+  String get aiDepthBriefDesc => 'Những điểm chính, nhanh chóng.';
+
+  @override
+  String get aiDepthStandardDesc => 'Báo cáo đầy đủ với mọi phần.';
+
+  @override
+  String get aiDepthDeepDesc => 'Nhiều lượt tìm kiếm web hơn, so sánh với doanh nghiệp cùng ngành và chi tiết sâu hơn.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Khoảng $min–$max từ';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'dùng $count lượt phân tích');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Trình độ người đọc';
+
+  @override
+  String get aiReaderBeginner => 'Người mới';
+
+  @override
+  String get aiReaderExperienced => 'Có kinh nghiệm';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Ngôn ngữ dễ hiểu; mọi thuật ngữ chuyên môn đều được giải thích.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Văn bản cô đọng hơn với thuật ngữ tài chính tiêu chuẩn.';
+
+  @override
+  String get aiCounterArgument => 'Lập luận phản bác mạnh nhất';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Phần tóm tắt luôn kết thúc bằng lập luận mạnh nhất chống lại chính kết luận của nó.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tối đa $count lượt tìm kiếm web cho mỗi phân tích với gói của bạn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Độ dài tiêu chuẩn theo gói: Thường $normal, Pro $pro, Max $max, Ultra $ultra. Ngắn gọn dùng ít hơn 2, Chuyên sâu nhiều hơn 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'tối đa $count lượt tìm kiếm web');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count lượt tìm kiếm web mỗi phân tích');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Độ dài này cần $needed lượt phân tích, nhưng bạn chỉ còn $left. Hãy chọn độ dài ngắn hơn trong Cài đặt hoặc mua thêm lượt phân tích.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Tâm lý thị trường';
+
+  @override
+  String get moodVeryPessimistic => 'Rất bi quan';
+
+  @override
+  String get moodPessimistic => 'Bi quan';
+
+  @override
+  String get moodNeutral => 'Trung lập';
+
+  @override
+  String get moodOptimistic => 'Lạc quan';
+
+  @override
+  String get moodVeryOptimistic => 'Rất lạc quan';
+
+  @override
+  String get scenarioBull => 'Kịch bản lạc quan';
+
+  @override
+  String get scenarioBase => 'Kịch bản cơ sở';
+
+  @override
+  String get scenarioBear => 'Kịch bản bi quan';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Giá hiện tại: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Mức giá then chốt';
+
+  @override
+  String get keyLevelSupport => 'Hỗ trợ';
+
+  @override
+  String get keyLevelResistance => 'Kháng cự';
+
+  @override
+  String get keyLevelAnchor => 'Mức neo';
+
+  @override
+  String get upcomingEvents => 'Sự kiện sắp tới';
+
+  @override
+  String get outlookChartNote => 'Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo.';
 }

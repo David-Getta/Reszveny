@@ -10,7 +10,7 @@ class AppLocalizationsDa extends AppLocalizations {
   AppLocalizationsDa([String locale = 'da']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografér en aktie og lær alt om den.';
@@ -306,12 +306,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analytikere',
-      one: '1 analytiker',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytikere', one: '1 analytiker');
     return '$_temp0';
   }
 
@@ -343,8 +338,7 @@ class AppLocalizationsDa extends AppLocalizations {
       'Billedgenkendelse er ikke konfigureret (ingen ANTHROPIC_API_KEY). Indtast tickeren manuelt.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Kunne ikke nå genkendelsestjenesten. Tjek din internetforbindelse.';
+  String get errRecognitionUnreachable => 'Kunne ikke nå genkendelsestjenesten. Tjek din internetforbindelse.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +346,25 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Genkendelsestjenesten kunne ikke behandle dette billede.';
+  String get errRecognitionRefused => 'Genkendelsestjenesten kunne ikke behandle dette billede.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Svaret fra genkendelsestjenesten blev afbrudt. Prøv igen.';
+  String get errRecognitionTruncated => 'Svaret fra genkendelsestjenesten blev afbrudt. Prøv igen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Uventet svar fra genkendelsestjenesten.';
+  String get errRecognitionBadResponse => 'Uventet svar fra genkendelsestjenesten.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Genkendelsestjenesten returnerede et tomt svar.';
+  String get errRecognitionEmpty => 'Genkendelsestjenesten returnerede et tomt svar.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markedsdata er ikke konfigureret (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markedsdata er ikke konfigureret (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Kunne ikke nå markedsdatatjenesten. Tjek din internetforbindelse.';
+  String get errMarketUnreachable => 'Kunne ikke nå markedsdatatjenesten. Tjek din internetforbindelse.';
 
   @override
-  String get errMarketRateLimited =>
-      'For mange forespørgsler til markedsdatatjenesten. Vent et minut.';
+  String get errMarketRateLimited => 'For mange forespørgsler til markedsdatatjenesten. Vent et minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -406,4 +393,542 @@ class AppLocalizationsDa extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Noget gik galt: $detail';
   }
+
+  @override
+  String get newSearch => 'Ny søgning';
+
+  @override
+  String get recentSearches => 'Seneste';
+
+  @override
+  String get noRecentSearches => 'Ingen seneste søgninger endnu.';
+
+  @override
+  String get clearRecent => 'Ryd seneste';
+
+  @override
+  String get greeting => 'Hvilken aktie skal vi se på?';
+
+  @override
+  String get searchHint => 'Ticker eller firmanavn';
+
+  @override
+  String get attachImage => 'Vedhæft et billede';
+
+  @override
+  String get searchResultsTitle => 'Søgeresultater';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ingen aktier fundet for ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Skriv en ticker eller et firmanavn…';
+
+  @override
+  String get openFullWindow => 'Åbn vindue';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tryk på $shortcut hvor som helst for at åbne StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Åbn StockLens';
+
+  @override
+  String get trayQuickSearch => 'Hurtig søgning';
+
+  @override
+  String get trayQuit => 'Afslut';
+
+  @override
+  String get appearance => 'Udseende';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Mørk';
+
+  @override
+  String get themeLight => 'Lys';
+
+  @override
+  String get back => 'Tilbage';
+
+  @override
+  String get aiSectionTitle => 'AI-analyse';
+
+  @override
+  String get aiIntro =>
+      'Et detaljeret, AI-skrevet overblik: resumé af aktuelle nyheder, forretningen, styrker, risici og skjulte faktorer, værdiansættelse, et kursudsyn med scenarier fra psykologiske, sociologiske, tekniske og makroøkonomiske vinkler samt hvad man skal holde øje med.';
+
+  @override
+  String get aiGenerate => 'Generer analyse';
+
+  @override
+  String get aiRegenerate => 'Generer igen';
+
+  @override
+  String get aiGenerating => 'Analysen forberedes… det kan tage et minut eller to.';
+
+  @override
+  String get aiSources => 'Kilder';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Genereret $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-genereret analyse baseret på offentlige data og aktuelle nyheder. Den kan indeholde fejl eller være forældet og er ikke investeringsrådgivning.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analyse er ikke konfigureret (ingen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Kunne ikke nå AI-tjenesten. Tjek din internetforbindelse.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI-tjenesten returnerede en fejl (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI-tjenesten afviste at analysere denne aktie.';
+
+  @override
+  String get errAiBadResponse => 'Uventet svar fra AI-tjenesten.';
+
+  @override
+  String get sectionChart => 'Kursgraf';
+
+  @override
+  String get rangeOneWeek => '1U';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Å';
+
+  @override
+  String get rangeFiveYears => '5Å';
+
+  @override
+  String get chartUnavailable => 'Kurshistorik er ikke tilgængelig fra den aktuelle datakilde.';
+
+  @override
+  String get sectionStatements => 'Regnskaber (årlige)';
+
+  @override
+  String get labelFiscalYear => 'Regnskabsår';
+
+  @override
+  String get labelRevenue => 'Omsætning';
+
+  @override
+  String get labelNetIncome => 'Nettoresultat';
+
+  @override
+  String get labelTotalAssets => 'Aktiver i alt';
+
+  @override
+  String get labelTotalLiabilities => 'Forpligtelser i alt';
+
+  @override
+  String get labelEquity => 'Egenkapital';
+
+  @override
+  String get labelOperatingCashFlow => 'Pengestrøm fra driften';
+
+  @override
+  String get statementsUnavailable => 'Der er ingen offentliggjorte regnskaber tilgængelige for denne aktie.';
+
+  @override
+  String get launchAtLogin => 'Start ved login';
+
+  @override
+  String get hotkeyLabel => 'Global genvej';
+
+  @override
+  String get hotkeyRecordHint => 'Klik her, og tryk derefter på den nye tastekombination';
+
+  @override
+  String get hotkeyReset => 'Gendan standard';
+
+  @override
+  String get pasteImage => 'Indsæt billede fra udklipsholderen';
+
+  @override
+  String get errClipboardNoImage => 'Der er intet billede i udklipsholderen.';
+
+  @override
+  String get favorites => 'Favoritter';
+
+  @override
+  String get addToFavorites => 'Føj til favoritter';
+
+  @override
+  String get removeFromFavorites => 'Fjern fra favoritter';
+
+  @override
+  String get noFavorites => 'Ingen favoritter endnu. Tryk på stjernen ved en aktie for at tilføje den.';
+
+  @override
+  String get displayCurrency => 'Visningsvaluta';
+
+  @override
+  String get displayCurrencyNone => 'Kun aktiens egen valuta';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ i $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurs: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Opdateringer';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Installer opdateringer automatisk';
+
+  @override
+  String get checkForUpdates => 'Søg efter opdateringer';
+
+  @override
+  String get updateChecking => 'Søger efter opdateringer…';
+
+  @override
+  String get updateUpToDate => 'Du har den nyeste version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version er tilgængelig.';
+  }
+
+  @override
+  String get updateDownloading => 'Opdateringen downloades i baggrunden…';
+
+  @override
+  String get updateDownloaded => 'Opdateringen er klar. Genstart for at installere den.';
+
+  @override
+  String get updateNow => 'Opdater';
+
+  @override
+  String get restartNow => 'Genstart';
+
+  @override
+  String get updatesViaStore => 'Opdateringer kommer automatisk via appbutikken.';
+
+  @override
+  String get updateCheckFailed => 'Kunne ikke søge efter opdateringer.';
+
+  @override
+  String get subscription => 'Abonnement';
+
+  @override
+  String get planTrial => 'Prøveperiode';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Ingen aktiv plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyser pr. måned';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days dages gratis prøveperiode med $count analyser';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dage tilbage af prøveperioden',
+      one: '1 dag tilbage af prøveperioden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte med at analysere.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining af $total analyser tilbage i denne periode';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count ekstra analyser';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Fornyes $date';
+  }
+
+  @override
+  String get choosePlan => 'Vælg en plan';
+
+  @override
+  String get currentPlan => 'Nuværende plan';
+
+  @override
+  String get subscribe => 'Abonnér';
+
+  @override
+  String get perMonth => '/ måned';
+
+  @override
+  String get extraPacksTitle => 'Brug for flere? Køb ekstra analyser';
+
+  @override
+  String get extraPacksHint => 'Ekstra analyser udløber aldrig og bruges efter din månedlige kvote.';
+
+  @override
+  String get buy => 'Køb';
+
+  @override
+  String get restorePurchases => 'Gendan køb';
+
+  @override
+  String get manageSubscription => 'Administrer abonnement';
+
+  @override
+  String get purchaseSuccess => 'Tak! Dit køb er aktivt.';
+
+  @override
+  String get purchasePending => 'Købet afventer…';
+
+  @override
+  String get purchaseFailed => 'Købet kunne ikke gennemføres.';
+
+  @override
+  String get purchaseCanceled => 'Købet blev annulleret.';
+
+  @override
+  String get billingUnavailable =>
+      'Køb er endnu ikke tilgængelige på denne platform. Abonnér på din telefon eller Mac; din plan virker på alle enheder.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Du har ingen analyser tilbage i denne periode. Opgrader din plan, eller køb ekstra analyser.';
+
+  @override
+  String get errTrialExpired => 'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte.';
+
+  @override
+  String get errNoPlan => 'Der kræves en aktiv plan til AI-analyse.';
+
+  @override
+  String get viewPlans => 'Se planer';
+
+  @override
+  String get usageTitle => 'Forbrug';
+
+  @override
+  String get demoPurchaseNote => 'Demofakturering: køb simuleres på denne platform.';
+
+  @override
+  String get mostPopular => 'Mest populær';
+
+  @override
+  String get bestValue => 'Bedste værdi';
+
+  @override
+  String get planFeaturesCommon =>
+      'Fotogenkendelse, livedata, diagrammer, favoritter og alle 44 sprog er inkluderet i alle planer. Kvoten dækker AI-analyser.';
+
+  @override
+  String get searchLanguages => 'Søg efter sprog…';
+
+  @override
+  String get noLanguageMatch => 'Intet sprog matcher.';
+
+  @override
+  String get aiSettings => 'AI-analyse';
+
+  @override
+  String get aiLength => 'Længde';
+
+  @override
+  String get aiDepthBrief => 'Kort';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Dybdegående';
+
+  @override
+  String get aiDepthBriefDesc => 'Det vigtigste, hurtigt.';
+
+  @override
+  String get aiDepthStandardDesc => 'Fuld rapport med alle sektioner.';
+
+  @override
+  String get aiDepthDeepDesc => 'Flere websøgninger, sammenligning med konkurrenter og flere detaljer.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Ca. $min–$max ord';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bruger $count analyser',
+      one: 'bruger 1 analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Læserniveau';
+
+  @override
+  String get aiReaderBeginner => 'Begynder';
+
+  @override
+  String get aiReaderExperienced => 'Erfaren';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Enkelt sprog; alle fagudtryk forklares.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tættere tekst med almindelig finansiel terminologi.';
+
+  @override
+  String get aiCounterArgument => 'Stærkeste modargument';
+
+  @override
+  String get aiCounterArgumentDesc => 'Resuméet slutter altid med det stærkeste argument imod sin egen konklusion.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Op til $count websøgninger pr. analyse med din plan',
+      one: 'Op til 1 websøgning pr. analyse med din plan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standardlængde pr. plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Kort bruger 2 færre, Dybdegående 2 flere.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'op til $count websøgninger',
+      one: 'op til 1 websøgning',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count websøgninger pr. analyse',
+      one: '1 websøgning pr. analyse',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Denne længde kræver $needed analyser, men du har kun $left tilbage. Vælg en kortere længde i Indstillinger, eller køb flere analyser.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Markedsstemning';
+
+  @override
+  String get moodVeryPessimistic => 'Meget pessimistisk';
+
+  @override
+  String get moodPessimistic => 'Pessimistisk';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimistisk';
+
+  @override
+  String get moodVeryOptimistic => 'Meget optimistisk';
+
+  @override
+  String get scenarioBull => 'Positivt scenarie';
+
+  @override
+  String get scenarioBase => 'Basisscenarie';
+
+  @override
+  String get scenarioBear => 'Negativt scenarie';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Aktuel kurs: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Vigtige niveauer';
+
+  @override
+  String get keyLevelSupport => 'Støtte';
+
+  @override
+  String get keyLevelResistance => 'Modstand';
+
+  @override
+  String get keyLevelAnchor => 'Ankerniveau';
+
+  @override
+  String get upcomingEvents => 'Kommende begivenheder';
+
+  @override
+  String get outlookChartNote => 'Vejledende intervaller; sandsynlighederne er grove vurderinger, ikke forudsigelser.';
 }

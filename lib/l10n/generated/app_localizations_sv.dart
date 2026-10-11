@@ -10,7 +10,7 @@ class AppLocalizationsSv extends AppLocalizations {
   AppLocalizationsSv([String locale = 'sv']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografera en aktie och lär dig allt om den.';
@@ -111,8 +111,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get errorGeneric => 'Något gick fel.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Det här avsnittet kunde inte läsas in.';
+  String get errorSectionUnavailable => 'Det här avsnittet kunde inte läsas in.';
 
   @override
   String get notAvailable => 'ej tillg.';
@@ -307,12 +306,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analytiker',
-      one: '1 analytiker',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytiker', one: '1 analytiker');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Bildigenkänning är inte konfigurerad (ingen ANTHROPIC_API_KEY). Ange tickern manuellt.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
+  String get errRecognitionUnreachable => 'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,32 +346,25 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Igenkänningstjänsten kunde inte behandla bilden.';
+  String get errRecognitionRefused => 'Igenkänningstjänsten kunde inte behandla bilden.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Svaret från igenkänningstjänsten avbröts. Försök igen.';
+  String get errRecognitionTruncated => 'Svaret från igenkänningstjänsten avbröts. Försök igen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Oväntat svar från igenkänningstjänsten.';
+  String get errRecognitionBadResponse => 'Oväntat svar från igenkänningstjänsten.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Igenkänningstjänsten returnerade ett tomt svar.';
+  String get errRecognitionEmpty => 'Igenkänningstjänsten returnerade ett tomt svar.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Marknadsdata är inte konfigurerad (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Marknadsdata är inte konfigurerad (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
+  String get errMarketUnreachable => 'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
 
   @override
-  String get errMarketRateLimited =>
-      'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
+  String get errMarketRateLimited => 'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -407,4 +393,543 @@ class AppLocalizationsSv extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Något gick fel: $detail';
   }
+
+  @override
+  String get newSearch => 'Ny sökning';
+
+  @override
+  String get recentSearches => 'Senaste';
+
+  @override
+  String get noRecentSearches => 'Inga senaste sökningar ännu.';
+
+  @override
+  String get clearRecent => 'Rensa senaste';
+
+  @override
+  String get greeting => 'Vilken aktie ska vi titta på?';
+
+  @override
+  String get searchHint => 'Ticker eller företagsnamn';
+
+  @override
+  String get attachImage => 'Bifoga en bild';
+
+  @override
+  String get searchResultsTitle => 'Sökresultat';
+
+  @override
+  String errNoResults(String query) {
+    return 'Inga aktier hittades för ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Skriv en ticker eller ett företagsnamn…';
+
+  @override
+  String get openFullWindow => 'Öppna fönster';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Tryck på $shortcut var som helst för att öppna StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Öppna StockLens';
+
+  @override
+  String get trayQuickSearch => 'Snabbsökning';
+
+  @override
+  String get trayQuit => 'Avsluta';
+
+  @override
+  String get appearance => 'Utseende';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Mörkt';
+
+  @override
+  String get themeLight => 'Ljust';
+
+  @override
+  String get back => 'Tillbaka';
+
+  @override
+  String get aiSectionTitle => 'AI-analys';
+
+  @override
+  String get aiIntro =>
+      'En detaljerad, AI-skriven översikt: sammanfattning av aktuella nyheter, verksamheten, styrkor, risker och dolda faktorer, värdering, en kursutsikt med scenarier ur psykologiska, sociologiska, tekniska och makroekonomiska perspektiv samt vad som är värt att bevaka.';
+
+  @override
+  String get aiGenerate => 'Generera analys';
+
+  @override
+  String get aiRegenerate => 'Generera igen';
+
+  @override
+  String get aiGenerating => 'Analysen förbereds… det kan ta en minut eller två.';
+
+  @override
+  String get aiSources => 'Källor';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Genererad $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI-genererad analys baserad på offentliga data och aktuella nyheter. Den kan innehålla fel eller vara inaktuell och är inte investeringsrådgivning.';
+
+  @override
+  String get errAiNotConfigured => 'AI-analys är inte konfigurerad (ingen ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Kunde inte nå AI-tjänsten. Kontrollera din internetanslutning.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI-tjänsten returnerade ett fel (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI-tjänsten avböjde att analysera den här aktien.';
+
+  @override
+  String get errAiBadResponse => 'Oväntat svar från AI-tjänsten.';
+
+  @override
+  String get sectionChart => 'Kursdiagram';
+
+  @override
+  String get rangeOneWeek => '1V';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Å';
+
+  @override
+  String get rangeFiveYears => '5Å';
+
+  @override
+  String get chartUnavailable => 'Kurshistorik är inte tillgänglig från den aktuella datakällan.';
+
+  @override
+  String get sectionStatements => 'Finansiella rapporter (årliga)';
+
+  @override
+  String get labelFiscalYear => 'Räkenskapsår';
+
+  @override
+  String get labelRevenue => 'Omsättning';
+
+  @override
+  String get labelNetIncome => 'Nettoresultat';
+
+  @override
+  String get labelTotalAssets => 'Totala tillgångar';
+
+  @override
+  String get labelTotalLiabilities => 'Totala skulder';
+
+  @override
+  String get labelEquity => 'Eget kapital';
+
+  @override
+  String get labelOperatingCashFlow => 'Operativt kassaflöde';
+
+  @override
+  String get statementsUnavailable => 'Inga rapporterade finansiella rapporter är tillgängliga för den här aktien.';
+
+  @override
+  String get launchAtLogin => 'Starta vid inloggning';
+
+  @override
+  String get hotkeyLabel => 'Globalt kortkommando';
+
+  @override
+  String get hotkeyRecordHint => 'Klicka här och tryck sedan på den nya tangentkombinationen';
+
+  @override
+  String get hotkeyReset => 'Återställ till standard';
+
+  @override
+  String get pasteImage => 'Klistra in bild från urklipp';
+
+  @override
+  String get errClipboardNoImage => 'Det finns ingen bild i urklipp.';
+
+  @override
+  String get favorites => 'Favoriter';
+
+  @override
+  String get addToFavorites => 'Lägg till i favoriter';
+
+  @override
+  String get removeFromFavorites => 'Ta bort från favoriter';
+
+  @override
+  String get noFavorites => 'Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den.';
+
+  @override
+  String get displayCurrency => 'Visningsvaluta';
+
+  @override
+  String get displayCurrencyNone => 'Endast aktiens egen valuta';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ i $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurs: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Uppdateringar';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Installera uppdateringar automatiskt';
+
+  @override
+  String get checkForUpdates => 'Sök efter uppdateringar';
+
+  @override
+  String get updateChecking => 'Söker efter uppdateringar…';
+
+  @override
+  String get updateUpToDate => 'Du har den senaste versionen.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version är tillgänglig.';
+  }
+
+  @override
+  String get updateDownloading => 'Uppdateringen hämtas i bakgrunden…';
+
+  @override
+  String get updateDownloaded => 'Uppdateringen är klar. Starta om för att installera den.';
+
+  @override
+  String get updateNow => 'Uppdatera';
+
+  @override
+  String get restartNow => 'Starta om';
+
+  @override
+  String get updatesViaStore => 'Uppdateringar kommer automatiskt via appbutiken.';
+
+  @override
+  String get updateCheckFailed => 'Det gick inte att söka efter uppdateringar.';
+
+  @override
+  String get subscription => 'Prenumeration';
+
+  @override
+  String get planTrial => 'Provperiod';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Ingen aktiv plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyser per månad';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days dagars gratis provperiod med $count analyser';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dagar kvar av provperioden',
+      one: '1 dag kvar av provperioden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Din gratis provperiod har gått ut. Välj en plan för att fortsätta analysera.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining av $total analyser kvar denna period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analyser';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Förnyas $date';
+  }
+
+  @override
+  String get choosePlan => 'Välj en plan';
+
+  @override
+  String get currentPlan => 'Nuvarande plan';
+
+  @override
+  String get subscribe => 'Prenumerera';
+
+  @override
+  String get perMonth => '/ månad';
+
+  @override
+  String get extraPacksTitle => 'Behöver du fler? Köp extra analyser';
+
+  @override
+  String get extraPacksHint => 'Extra analyser går aldrig ut och används efter din månatliga kvot.';
+
+  @override
+  String get buy => 'Köp';
+
+  @override
+  String get restorePurchases => 'Återställ köp';
+
+  @override
+  String get manageSubscription => 'Hantera prenumeration';
+
+  @override
+  String get purchaseSuccess => 'Tack! Ditt köp är aktivt.';
+
+  @override
+  String get purchasePending => 'Köpet väntar…';
+
+  @override
+  String get purchaseFailed => 'Köpet kunde inte slutföras.';
+
+  @override
+  String get purchaseCanceled => 'Köpet avbröts.';
+
+  @override
+  String get billingUnavailable =>
+      'Köp är inte tillgängliga på den här plattformen ännu. Prenumerera på din telefon eller Mac; din plan fungerar på alla enheter.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Du har inga analyser kvar för denna period. Uppgradera din plan eller köp extra analyser.';
+
+  @override
+  String get errTrialExpired => 'Din gratis provperiod har gått ut. Välj en plan för att fortsätta.';
+
+  @override
+  String get errNoPlan => 'En aktiv plan krävs för AI-analys.';
+
+  @override
+  String get viewPlans => 'Visa planer';
+
+  @override
+  String get usageTitle => 'Användning';
+
+  @override
+  String get demoPurchaseNote => 'Demofakturering: köp simuleras på den här plattformen.';
+
+  @override
+  String get mostPopular => 'Populärast';
+
+  @override
+  String get bestValue => 'Bäst värde';
+
+  @override
+  String get planFeaturesCommon =>
+      'Fotoigenkänning, realtidsdata, diagram, favoriter och alla 44 språk ingår i varje plan. Kvoten gäller AI-analyser.';
+
+  @override
+  String get searchLanguages => 'Sök språk…';
+
+  @override
+  String get noLanguageMatch => 'Inget språk matchar.';
+
+  @override
+  String get aiSettings => 'AI-analys';
+
+  @override
+  String get aiLength => 'Längd';
+
+  @override
+  String get aiDepthBrief => 'Kort';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Fördjupad';
+
+  @override
+  String get aiDepthBriefDesc => 'Det viktigaste, snabbt.';
+
+  @override
+  String get aiDepthStandardDesc => 'Fullständig rapport med alla avsnitt.';
+
+  @override
+  String get aiDepthDeepDesc => 'Fler webbsökningar, jämförelse med jämförbara bolag och mer detaljer.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Cirka $min–$max ord';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'använder $count analyser',
+      one: 'använder 1 analys',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Läsnivå';
+
+  @override
+  String get aiReaderBeginner => 'Nybörjare';
+
+  @override
+  String get aiReaderExperienced => 'Erfaren';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Enkelt språk; varje fackterm förklaras.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tätare text med vedertagen finansiell terminologi.';
+
+  @override
+  String get aiCounterArgument => 'Starkaste motargumentet';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Sammanfattningen avslutas alltid med det starkaste argumentet mot den egna slutsatsen.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Upp till $count webbsökningar per analys med din plan',
+      one: 'Upp till 1 webbsökning per analys med din plan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standardlängd per plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Kort använder 2 färre, Fördjupad 2 fler.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'upp till $count webbsökningar',
+      one: 'upp till 1 webbsökning',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count webbsökningar per analys',
+      one: '1 webbsökning per analys',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Den här längden kräver $needed analyser, men du har bara $left kvar. Välj en kortare längd i Inställningar eller skaffa fler analyser.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Marknadsstämning';
+
+  @override
+  String get moodVeryPessimistic => 'Mycket pessimistisk';
+
+  @override
+  String get moodPessimistic => 'Pessimistisk';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimistisk';
+
+  @override
+  String get moodVeryOptimistic => 'Mycket optimistisk';
+
+  @override
+  String get scenarioBull => 'Positivt scenario';
+
+  @override
+  String get scenarioBase => 'Basscenario';
+
+  @override
+  String get scenarioBear => 'Negativt scenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Aktuell kurs: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Viktiga nivåer';
+
+  @override
+  String get keyLevelSupport => 'Stöd';
+
+  @override
+  String get keyLevelResistance => 'Motstånd';
+
+  @override
+  String get keyLevelAnchor => 'Ankarnivå';
+
+  @override
+  String get upcomingEvents => 'Kommande händelser';
+
+  @override
+  String get outlookChartNote => 'Vägledande intervall; sannolikheterna är grova bedömningar, inte prognoser.';
 }

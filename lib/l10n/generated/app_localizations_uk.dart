@@ -10,7 +10,7 @@ class AppLocalizationsUk extends AppLocalizations {
   AppLocalizationsUk([String locale = 'uk']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Сфотографуйте акцію та дізнайтеся про неї все.';
@@ -354,32 +354,26 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited =>
-      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +402,577 @@ class AppLocalizationsUk extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Щось пішло не так: $detail';
   }
+
+  @override
+  String get newSearch => 'Новий пошук';
+
+  @override
+  String get recentSearches => 'Недавні';
+
+  @override
+  String get noRecentSearches => 'Недавніх запитів ще немає.';
+
+  @override
+  String get clearRecent => 'Очистити недавні';
+
+  @override
+  String get greeting => 'Яку акцію подивимось?';
+
+  @override
+  String get searchHint => 'Тікер або назва компанії';
+
+  @override
+  String get attachImage => 'Прикріпити зображення';
+
+  @override
+  String get searchResultsTitle => 'Результати пошуку';
+
+  @override
+  String errNoResults(String query) {
+    return 'За запитом «$query» акцій не знайдено.';
+  }
+
+  @override
+  String get quickBarHint => 'Введіть тікер або назву компанії…';
+
+  @override
+  String get openFullWindow => 'Відкрити вікно';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Натисніть $shortcut будь-де, щоб викликати StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Відкрити StockLens';
+
+  @override
+  String get trayQuickSearch => 'Швидкий пошук';
+
+  @override
+  String get trayQuit => 'Вийти';
+
+  @override
+  String get appearance => 'Вигляд';
+
+  @override
+  String get themeSystem => 'Системна';
+
+  @override
+  String get themeDark => 'Темна';
+
+  @override
+  String get themeLight => 'Світла';
+
+  @override
+  String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'ШІ-аналіз';
+
+  @override
+  String get aiIntro =>
+      'Детальний огляд, написаний ШІ: підсумок останніх новин, бізнес, сильні сторони, ризики та приховані фактори, оцінка, прогноз ціни зі сценаріями з психологічного, соціологічного, технічного та макроекономічного поглядів, а також за чим стежити.';
+
+  @override
+  String get aiGenerate => 'Створити аналіз';
+
+  @override
+  String get aiRegenerate => 'Створити заново';
+
+  @override
+  String get aiGenerating => 'Готуємо аналіз… це може зайняти хвилину-дві.';
+
+  @override
+  String get aiSources => 'Джерела';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Створено $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
+
+  @override
+  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Служба ШІ повернула помилку (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Служба ШІ відмовилася аналізувати цю акцію.';
+
+  @override
+  String get errAiBadResponse => 'Неочікувана відповідь від служби ШІ.';
+
+  @override
+  String get sectionChart => 'Графік ціни';
+
+  @override
+  String get rangeOneWeek => '1Т';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Р';
+
+  @override
+  String get rangeFiveYears => '5Р';
+
+  @override
+  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
+
+  @override
+  String get sectionStatements => 'Фінансова звітність (річна)';
+
+  @override
+  String get labelFiscalYear => 'Фінансовий рік';
+
+  @override
+  String get labelRevenue => 'Виручка';
+
+  @override
+  String get labelNetIncome => 'Чистий прибуток';
+
+  @override
+  String get labelTotalAssets => 'Усього активів';
+
+  @override
+  String get labelTotalLiabilities => 'Усього зобов’язань';
+
+  @override
+  String get labelEquity => 'Власний капітал';
+
+  @override
+  String get labelOperatingCashFlow => 'Операційний грошовий потік';
+
+  @override
+  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
+
+  @override
+  String get launchAtLogin => 'Запускати під час входу в систему';
+
+  @override
+  String get hotkeyLabel => 'Глобальне сполучення клавіш';
+
+  @override
+  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
+
+  @override
+  String get hotkeyReset => 'Скинути до типового';
+
+  @override
+  String get pasteImage => 'Вставити зображення з буфера обміну';
+
+  @override
+  String get errClipboardNoImage => 'У буфері обміну немає зображення.';
+
+  @override
+  String get favorites => 'Обране';
+
+  @override
+  String get addToFavorites => 'Додати до обраного';
+
+  @override
+  String get removeFromFavorites => 'Видалити з обраного';
+
+  @override
+  String get noFavorites => 'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+
+  @override
+  String get displayCurrency => 'Валюта відображення';
+
+  @override
+  String get displayCurrencyNone => 'Лише власна валюта акції';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ у $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Курс: 1 $from = $rate $to (ЄЦБ, $date)';
+  }
+
+  @override
+  String get updates => 'Оновлення';
+
+  @override
+  String currentVersion(String version) {
+    return 'Версія $version';
+  }
+
+  @override
+  String get autoUpdate => 'Встановлювати оновлення автоматично';
+
+  @override
+  String get checkForUpdates => 'Перевірити оновлення';
+
+  @override
+  String get updateChecking => 'Перевірка оновлень…';
+
+  @override
+  String get updateUpToDate => 'У вас найновіша версія.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Доступна версія $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Оновлення завантажується у фоновому режимі…';
+
+  @override
+  String get updateDownloaded => 'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
+
+  @override
+  String get updateNow => 'Оновити';
+
+  @override
+  String get restartNow => 'Перезапустити';
+
+  @override
+  String get updatesViaStore => 'Оновлення надходять автоматично через магазин застосунків.';
+
+  @override
+  String get updateCheckFailed => 'Не вдалося перевірити оновлення.';
+
+  @override
+  String get subscription => 'Підписка';
+
+  @override
+  String get planTrial => 'Пробний';
+
+  @override
+  String get planNormal => 'Стандарт';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Немає активного тарифу';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count аналізу на місяць',
+      many: '$count аналізів на місяць',
+      few: '$count аналізи на місяць',
+      one: '$count аналіз на місяць',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Безкоштовний пробний період $days дн. з $count аналізами',
+      many: 'Безкоштовний пробний період $days дн. з $count аналізами',
+      few: 'Безкоштовний пробний період $days дн. з $count аналізами',
+      one: 'Безкоштовний пробний період $days дн. з $count аналізом',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Залишилося $days дня пробного періоду',
+      many: 'Залишилося $days днів пробного періоду',
+      few: 'Залишилося $days дні пробного періоду',
+      one: 'Залишився $days день пробного періоду',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити аналізувати.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Залишилося $remaining з $total аналізів у цьому періоді';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додаткового аналізу',
+      many: '$count додаткових аналізів',
+      few: '$count додаткові аналізи',
+      one: '$count додатковий аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Поновлення $date';
+  }
+
+  @override
+  String get choosePlan => 'Оберіть тариф';
+
+  @override
+  String get currentPlan => 'Поточний тариф';
+
+  @override
+  String get subscribe => 'Підписатися';
+
+  @override
+  String get perMonth => '/ міс.';
+
+  @override
+  String get extraPacksTitle => 'Потрібно більше? Придбайте додаткові аналізи';
+
+  @override
+  String get extraPacksHint =>
+      'Додаткові аналізи ніколи не згорають і використовуються після вичерпання місячного ліміту.';
+
+  @override
+  String get buy => 'Придбати';
+
+  @override
+  String get restorePurchases => 'Відновити покупки';
+
+  @override
+  String get manageSubscription => 'Керувати підпискою';
+
+  @override
+  String get purchaseSuccess => 'Дякуємо! Ваша покупка активна.';
+
+  @override
+  String get purchasePending => 'Покупка очікує підтвердження…';
+
+  @override
+  String get purchaseFailed => 'Не вдалося завершити покупку.';
+
+  @override
+  String get purchaseCanceled => 'Покупку скасовано.';
+
+  @override
+  String get billingUnavailable =>
+      'Покупки на цій платформі поки недоступні. Оформіть підписку на телефоні або Mac; ваш тариф працюватиме на всіх пристроях.';
+
+  @override
+  String get errQuotaExceeded =>
+      'У цьому періоді у вас не залишилося аналізів. Перейдіть на вищий тариф або придбайте додаткові аналізи.';
+
+  @override
+  String get errTrialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити.';
+
+  @override
+  String get errNoPlan => 'Для ШІ-аналізу потрібен активний тариф.';
+
+  @override
+  String get viewPlans => 'Переглянути тарифи';
+
+  @override
+  String get usageTitle => 'Використання';
+
+  @override
+  String get demoPurchaseNote => 'Демо-режим оплати: на цій платформі покупки імітуються.';
+
+  @override
+  String get mostPopular => 'Найпопулярніший';
+
+  @override
+  String get bestValue => 'Найвигідніший';
+
+  @override
+  String get planFeaturesCommon =>
+      'Розпізнавання фото, дані в реальному часі, графіки, обране та всі 44 мови включені в кожний тариф. Ліміт стосується ШІ-аналізів.';
+
+  @override
+  String get searchLanguages => 'Пошук мов…';
+
+  @override
+  String get noLanguageMatch => 'Жодна мова не знайдена.';
+
+  @override
+  String get aiSettings => 'ШІ-аналіз';
+
+  @override
+  String get aiLength => 'Довжина';
+
+  @override
+  String get aiDepthBrief => 'Коротко';
+
+  @override
+  String get aiDepthStandard => 'Стандартно';
+
+  @override
+  String get aiDepthDeep => 'Детально';
+
+  @override
+  String get aiDepthBriefDesc => 'Головне — швидко.';
+
+  @override
+  String get aiDepthStandardDesc => 'Повний звіт з усіма розділами.';
+
+  @override
+  String get aiDepthDeepDesc => 'Більше вебпошуків, порівняння з конкурентами та глибша деталізація.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Приблизно $min–$max слів';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'витрачає $count аналізу',
+      many: 'витрачає $count аналізів',
+      few: 'витрачає $count аналізи',
+      one: 'витрачає $count аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Рівень читача';
+
+  @override
+  String get aiReaderBeginner => 'Початківець';
+
+  @override
+  String get aiReaderExperienced => 'Досвідчений';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Простою мовою; кожен фаховий термін пояснено.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Щільніший текст зі стандартною фінансовою термінологією.';
+
+  @override
+  String get aiCounterArgument => 'Найсильніший контраргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Підсумок завжди завершується найвагомішим аргументом проти власного висновку.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'З вашим тарифом — до $count вебпошуку на аналіз',
+      many: 'З вашим тарифом — до $count вебпошуків на аналіз',
+      few: 'З вашим тарифом — до $count вебпошуків на аналіз',
+      one: 'З вашим тарифом — до $count вебпошуку на аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандартна довжина за тарифами: Стандарт $normal, Pro $pro, Max $max, Ultra $ultra. «Коротко» — на 2 менше, «Детально» — на 2 більше.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count вебпошуку',
+      many: 'до $count вебпошуків',
+      few: 'до $count вебпошуків',
+      one: 'до $count вебпошуку',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вебпошуку на аналіз',
+      many: '$count вебпошуків на аналіз',
+      few: '$count вебпошуки на аналіз',
+      one: '$count вебпошук на аналіз',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Для цієї довжини потрібно аналізів: $needed, а залишилося: $left. Виберіть коротшу довжину в Налаштуваннях або отримайте більше аналізів.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Настрій ринку';
+
+  @override
+  String get moodVeryPessimistic => 'Дуже песимістичний';
+
+  @override
+  String get moodPessimistic => 'Песимістичний';
+
+  @override
+  String get moodNeutral => 'Нейтральний';
+
+  @override
+  String get moodOptimistic => 'Оптимістичний';
+
+  @override
+  String get moodVeryOptimistic => 'Дуже оптимістичний';
+
+  @override
+  String get scenarioBull => 'Оптимістичний сценарій';
+
+  @override
+  String get scenarioBase => 'Базовий сценарій';
+
+  @override
+  String get scenarioBear => 'Песимістичний сценарій';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Поточна ціна: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Ключові рівні';
+
+  @override
+  String get keyLevelSupport => 'Підтримка';
+
+  @override
+  String get keyLevelResistance => 'Опір';
+
+  @override
+  String get keyLevelAnchor => 'Якірний рівень';
+
+  @override
+  String get upcomingEvents => 'Найближчі події';
+
+  @override
+  String get outlookChartNote => 'Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози.';
 }

@@ -10,11 +10,10 @@ class AppLocalizationsHu extends AppLocalizations {
   AppLocalizationsHu([String locale = 'hu']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Fotózz le egy részvényt, és tudj meg róla mindent.';
+  String get homeTagline => 'Fotózz le egy részvényt, és tudj meg róla mindent.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorGeneric => 'Hiba történt.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Ezt a szakaszt nem sikerült betölteni.';
+  String get errorSectionUnavailable => 'Ezt a szakaszt nem sikerült betölteni.';
 
   @override
   String get notAvailable => 'n/a';
@@ -308,12 +306,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count elemző',
-      one: '1 elemző',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count elemző', one: '1 elemző');
     return '$_temp0';
   }
 
@@ -345,8 +338,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'A képfelismerés nincs beállítva (nincs ANTHROPIC_API_KEY). Add meg a tickert kézzel.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errRecognitionUnreachable => 'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -354,32 +346,25 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
+  String get errRecognitionRefused => 'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
 
   @override
-  String get errRecognitionTruncated =>
-      'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
+  String get errRecognitionTruncated => 'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Váratlan válasz érkezett a felismerő szolgáltatástól.';
+  String get errRecognitionBadResponse => 'Váratlan válasz érkezett a felismerő szolgáltatástól.';
 
   @override
-  String get errRecognitionEmpty =>
-      'A felismerő szolgáltatás üres választ adott.';
+  String get errRecognitionEmpty => 'A felismerő szolgáltatás üres választ adott.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'A piaci adatok nincsenek beállítva (nincs FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'A piaci adatok nincsenek beállítva (nincs FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errMarketUnreachable => 'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
-  String get errMarketRateLimited =>
-      'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
+  String get errMarketRateLimited => 'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +372,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
+  String get errMarketBadResponse => 'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +393,543 @@ class AppLocalizationsHu extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Hiba történt: $detail';
   }
+
+  @override
+  String get newSearch => 'Új keresés';
+
+  @override
+  String get recentSearches => 'Legutóbbiak';
+
+  @override
+  String get noRecentSearches => 'Még nincsenek korábbi keresések.';
+
+  @override
+  String get clearRecent => 'Legutóbbiak törlése';
+
+  @override
+  String get greeting => 'Melyik részvényt nézzük meg?';
+
+  @override
+  String get searchHint => 'Ticker vagy cégnév';
+
+  @override
+  String get attachImage => 'Kép csatolása';
+
+  @override
+  String get searchResultsTitle => 'Keresési találatok';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nincs találat a „$query” kifejezésre.';
+  }
+
+  @override
+  String get quickBarHint => 'Írj be egy tickert vagy cégnevet…';
+
+  @override
+  String get openFullWindow => 'Ablak megnyitása';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens megnyitása';
+
+  @override
+  String get trayQuickSearch => 'Gyorskeresés';
+
+  @override
+  String get trayQuit => 'Kilépés';
+
+  @override
+  String get appearance => 'Megjelenés';
+
+  @override
+  String get themeSystem => 'Rendszer';
+
+  @override
+  String get themeDark => 'Sötét';
+
+  @override
+  String get themeLight => 'Világos';
+
+  @override
+  String get back => 'Vissza';
+
+  @override
+  String get aiSectionTitle => 'AI-elemzés';
+
+  @override
+  String get aiIntro =>
+      'Részletes, AI által írt áttekintés: a friss hírek összefoglalója, az üzleti modell, az erősségek, a kockázatok és a rejtett tényezők, az értékeltség, egy árfolyam-kilátás pszichológiai, szociológiai, technikai és makro szempontú szcenáriókkal, valamint hogy mire érdemes figyelni.';
+
+  @override
+  String get aiGenerate => 'Elemzés készítése';
+
+  @override
+  String get aiRegenerate => 'Újragenerálás';
+
+  @override
+  String get aiGenerating => 'Az elemzés készül… ez egy-két percet is igénybe vehet.';
+
+  @override
+  String get aiSources => 'Források';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Készült: $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI által készített elemzés nyilvános adatok és friss hírek alapján. Hibákat tartalmazhat vagy elavult lehet, és nem minősül befektetési tanácsadásnak.';
+
+  @override
+  String get errAiNotConfigured => 'Az AI-elemzés nincs beállítva (nincs ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Az AI-szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Az AI-szolgáltatás hibát adott vissza (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Az AI-szolgáltatás nem vállalta ennek a részvénynek az elemzését.';
+
+  @override
+  String get errAiBadResponse => 'Váratlan válasz érkezett az AI-szolgáltatástól.';
+
+  @override
+  String get sectionChart => 'Árfolyamgrafikon';
+
+  @override
+  String get rangeOneWeek => '1H';
+
+  @override
+  String get rangeOneMonth => '1Hó';
+
+  @override
+  String get rangeThreeMonths => '3Hó';
+
+  @override
+  String get rangeOneYear => '1É';
+
+  @override
+  String get rangeFiveYears => '5É';
+
+  @override
+  String get chartUnavailable => 'Az árfolyamtörténet nem érhető el a jelenlegi adatforrásból.';
+
+  @override
+  String get sectionStatements => 'Pénzügyi kimutatások (éves)';
+
+  @override
+  String get labelFiscalYear => 'Pénzügyi év';
+
+  @override
+  String get labelRevenue => 'Árbevétel';
+
+  @override
+  String get labelNetIncome => 'Nettó eredmény';
+
+  @override
+  String get labelTotalAssets => 'Összes eszköz';
+
+  @override
+  String get labelTotalLiabilities => 'Összes kötelezettség';
+
+  @override
+  String get labelEquity => 'Saját tőke';
+
+  @override
+  String get labelOperatingCashFlow => 'Működési cash flow';
+
+  @override
+  String get statementsUnavailable => 'Ehhez a részvényhez nem érhetők el közzétett pénzügyi kimutatások.';
+
+  @override
+  String get launchAtLogin => 'Indítás bejelentkezéskor';
+
+  @override
+  String get hotkeyLabel => 'Globális gyorsbillentyű';
+
+  @override
+  String get hotkeyRecordHint => 'Kattints ide, majd nyomd le az új billentyűkombinációt';
+
+  @override
+  String get hotkeyReset => 'Alapértelmezés visszaállítása';
+
+  @override
+  String get pasteImage => 'Kép beillesztése a vágólapról';
+
+  @override
+  String get errClipboardNoImage => 'A vágólapon nincs kép.';
+
+  @override
+  String get favorites => 'Kedvencek';
+
+  @override
+  String get addToFavorites => 'Hozzáadás a kedvencekhez';
+
+  @override
+  String get removeFromFavorites => 'Eltávolítás a kedvencek közül';
+
+  @override
+  String get noFavorites => 'Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.';
+
+  @override
+  String get displayCurrency => 'Megjelenítési pénznem';
+
+  @override
+  String get displayCurrencyNone => 'Csak a részvény saját pénzneme';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ átváltva: $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Árfolyam: 1 $from = $rate $to (EKB, $date)';
+  }
+
+  @override
+  String get updates => 'Frissítések';
+
+  @override
+  String currentVersion(String version) {
+    return '$version verzió';
+  }
+
+  @override
+  String get autoUpdate => 'Frissítések automatikus telepítése';
+
+  @override
+  String get checkForUpdates => 'Frissítések keresése';
+
+  @override
+  String get updateChecking => 'Frissítések keresése…';
+
+  @override
+  String get updateUpToDate => 'A legújabb verziót használod.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Elérhető a $version verzió.';
+  }
+
+  @override
+  String get updateDownloading => 'A frissítés letöltése a háttérben…';
+
+  @override
+  String get updateDownloaded => 'A frissítés készen áll. A telepítéshez indítsd újra az alkalmazást.';
+
+  @override
+  String get updateNow => 'Frissítés';
+
+  @override
+  String get restartNow => 'Újraindítás';
+
+  @override
+  String get updatesViaStore => 'A frissítések automatikusan érkeznek az alkalmazásboltból.';
+
+  @override
+  String get updateCheckFailed => 'Nem sikerült frissítéseket keresni.';
+
+  @override
+  String get subscription => 'Előfizetés';
+
+  @override
+  String get planTrial => 'Próbaidő';
+
+  @override
+  String get planNormal => 'Normál';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Nincs aktív csomag';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count elemzés havonta';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days napos ingyenes próbaidő $count elemzéssel';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nap van hátra a próbaidőből',
+      one: '1 nap van hátra a próbaidőből',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Az ingyenes próbaidő lejárt. Válassz csomagot, hogy tovább elemezhess.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining / $total elemzés maradt ebben az időszakban';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra elemzés';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Megújul: $date';
+  }
+
+  @override
+  String get choosePlan => 'Válassz csomagot';
+
+  @override
+  String get currentPlan => 'Jelenlegi csomag';
+
+  @override
+  String get subscribe => 'Előfizetek';
+
+  @override
+  String get perMonth => '/ hó';
+
+  @override
+  String get extraPacksTitle => 'Többre van szükséged? Vásárolj extra elemzéseket';
+
+  @override
+  String get extraPacksHint => 'Az extra elemzések nem járnak le, és a havi keret kimerülése után használódnak fel.';
+
+  @override
+  String get buy => 'Vásárlás';
+
+  @override
+  String get restorePurchases => 'Vásárlások visszaállítása';
+
+  @override
+  String get manageSubscription => 'Előfizetés kezelése';
+
+  @override
+  String get purchaseSuccess => 'Köszönjük! A vásárlásod aktív.';
+
+  @override
+  String get purchasePending => 'A vásárlás folyamatban…';
+
+  @override
+  String get purchaseFailed => 'A vásárlást nem sikerült befejezni.';
+
+  @override
+  String get purchaseCanceled => 'A vásárlás megszakítva.';
+
+  @override
+  String get billingUnavailable =>
+      'Ezen a platformon még nem lehet vásárolni. Fizess elő a telefonodon vagy Macen; a csomagod minden eszközön működni fog.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Ebben az időszakban nem maradt több elemzésed. Válts nagyobb csomagra, vagy vásárolj extra elemzéseket.';
+
+  @override
+  String get errTrialExpired => 'Az ingyenes próbaidő lejárt. Válassz csomagot a folytatáshoz.';
+
+  @override
+  String get errNoPlan => 'Az AI-elemzéshez aktív csomag szükséges.';
+
+  @override
+  String get viewPlans => 'Csomagok megtekintése';
+
+  @override
+  String get usageTitle => 'Felhasználás';
+
+  @override
+  String get demoPurchaseNote => 'Demó számlázás: ezen a platformon a vásárlások csak szimuláltak.';
+
+  @override
+  String get mostPopular => 'Legnépszerűbb';
+
+  @override
+  String get bestValue => 'Legjobb ár-érték';
+
+  @override
+  String get planFeaturesCommon =>
+      'A fotófelismerés, az élő adatok, a grafikonok, a kedvencek és mind a 44 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik.';
+
+  @override
+  String get searchLanguages => 'Nyelv keresése…';
+
+  @override
+  String get noLanguageMatch => 'Nincs találat a nyelvek között.';
+
+  @override
+  String get aiSettings => 'AI-elemzés';
+
+  @override
+  String get aiLength => 'Hossz';
+
+  @override
+  String get aiDepthBrief => 'Rövid';
+
+  @override
+  String get aiDepthStandard => 'Alap';
+
+  @override
+  String get aiDepthDeep => 'Részletes';
+
+  @override
+  String get aiDepthBriefDesc => 'A lényeg, gyorsan.';
+
+  @override
+  String get aiDepthStandardDesc => 'Teljes elemzés minden szakasszal.';
+
+  @override
+  String get aiDepthDeepDesc => 'Több webkeresés, versenytárs-összevetés, mélyebb részletek.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Kb. $min–$max szó';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elemzést fogyaszt',
+      one: '1 elemzést fogyaszt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Olvasói szint';
+
+  @override
+  String get aiReaderBeginner => 'Kezdő';
+
+  @override
+  String get aiReaderExperienced => 'Tapasztalt';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Közérthető nyelv, minden szakkifejezés megmagyarázva.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tömörebb szöveg, szokásos pénzügyi szakkifejezésekkel.';
+
+  @override
+  String get aiCounterArgument => 'Legerősebb ellenérv';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Az összefoglaló mindig a saját következtetésével szembeni legerősebb érvvel zárul.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Elemzésenként legfeljebb $count webkeresés a csomagoddal',
+      one: 'Elemzésenként legfeljebb 1 webkeresés a csomagoddal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Alap hossznál csomagonként: Normál $normal, Pro $pro, Max $max, Ultra $ultra. A rövid 2-vel kevesebbet, a részletes 2-vel többet kap.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'legfeljebb $count webkeresés',
+      one: 'legfeljebb 1 webkeresés',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count webkeresés elemzésenként',
+      one: '1 webkeresés elemzésenként',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Ehhez a hosszhoz $needed elemzés kell, de csak $left maradt. Válassz rövidebbet a Beállításokban, vagy vásárolj még elemzést.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Piaci hangulat';
+
+  @override
+  String get moodVeryPessimistic => 'Nagyon pesszimista';
+
+  @override
+  String get moodPessimistic => 'Pesszimista';
+
+  @override
+  String get moodNeutral => 'Semleges';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Nagyon optimista';
+
+  @override
+  String get scenarioBull => 'Optimista forgatókönyv';
+
+  @override
+  String get scenarioBase => 'Alapforgatókönyv';
+
+  @override
+  String get scenarioBear => 'Pesszimista forgatókönyv';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Jelenlegi ár: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Kulcsszintek';
+
+  @override
+  String get keyLevelSupport => 'Támasz';
+
+  @override
+  String get keyLevelResistance => 'Ellenállás';
+
+  @override
+  String get keyLevelAnchor => 'Horgony';
+
+  @override
+  String get upcomingEvents => 'Közelgő események';
+
+  @override
+  String get outlookChartNote => 'Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések.';
 }

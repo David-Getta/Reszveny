@@ -1,8 +1,12 @@
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
+import '../../core/models/financial_statements.dart';
 import '../../core/models/news_item.dart';
+import '../../core/models/price_history.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/models/stock_metrics.dart';
+import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
 
 /// Ticker → adatok. A konkrét adatforrás (Finnhub, demó, később saját
@@ -15,6 +19,20 @@ abstract class MarketDataProvider {
   Future<StockMetrics> metrics(String symbol);
   Future<List<NewsItem>> news(String symbol, {int limit = 20});
   Future<AnalystConsensus?> consensus(String symbol);
+
+  /// Napi árfolyam-történet, legfeljebb [years] évre visszamenőleg.
+  Future<PriceHistory> history(String symbol, {int years = 5});
+
+  /// Jelentett éves pénzügyi kimutatások főbb tételei.
+  Future<FinancialStatements> statements(String symbol);
+
+  /// Ticker vagy cégnév keresése; a találatok megbízhatóság szerint.
+  Future<List<StockCandidate>> search(String query);
+
+  /// Az AI-elemzéshez külön letöltött többletadatok (versenytársak, bennfentes
+  /// ügyletek, EPS-meglepetések, következő gyorsjelentés). Hiba esetén a
+  /// hiányzó rész egyszerűen kimarad; alapból üres.
+  Future<AnalysisExtras> analysisExtras(String symbol) async => const AnalysisExtras();
 
   /// Minden szekciót párhuzamosan tölt le; egy szekció hibája nem dönti be
   /// a többit, hanem a [StockDetails.errors] térképbe kerül.
@@ -36,6 +54,8 @@ abstract class MarketDataProvider {
       guard(DetailSection.metrics, () => metrics(symbol)),
       guard(DetailSection.news, () => news(symbol)),
       guard(DetailSection.consensus, () => consensus(symbol)),
+      guard(DetailSection.chart, () => history(symbol)),
+      guard(DetailSection.statements, () => statements(symbol)),
     ]);
 
     return StockDetails(
@@ -45,6 +65,8 @@ abstract class MarketDataProvider {
       metrics: results[2] as StockMetrics?,
       news: (results[3] as List<NewsItem>?) ?? const [],
       consensus: results[4] as AnalystConsensus?,
+      history: results[5] as PriceHistory?,
+      statements: results[6] as FinancialStatements?,
       errors: errors,
       fetchedAt: DateTime.now(),
     );

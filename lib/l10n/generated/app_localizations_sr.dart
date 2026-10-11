@@ -10,7 +10,7 @@ class AppLocalizationsSr extends AppLocalizations {
   AppLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Фотографишите акцију и сазнајте све о њој.';
@@ -353,32 +353,25 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Сервис за препознавање није могао да обради ову слику.';
+  String get errRecognitionRefused => 'Сервис за препознавање није могао да обради ову слику.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Одговор препознавања је прекинут. Покушајте поново.';
+  String get errRecognitionTruncated => 'Одговор препознавања је прекинут. Покушајте поново.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Неочекиван одговор сервиса за препознавање.';
+  String get errRecognitionBadResponse => 'Неочекиван одговор сервиса за препознавање.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Сервис за препознавање је вратио празан одговор.';
+  String get errRecognitionEmpty => 'Сервис за препознавање је вратио празан одговор.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Тржишни подаци нису подешени (нема FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
+  String get errMarketUnreachable => 'Није могуће повезати се са сервисом тржишних података. Проверите интернет везу.';
 
   @override
-  String get errMarketRateLimited =>
-      'Превише захтева ка сервису тржишних података. Сачекајте минут.';
+  String get errMarketRateLimited => 'Превише захтева ка сервису тржишних података. Сачекајте минут.';
 
   @override
   String errMarketHttp(String status) {
@@ -386,8 +379,7 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Неочекиван одговор сервиса тржишних података.';
+  String get errMarketBadResponse => 'Неочекиван одговор сервиса тржишних података.';
 
   @override
   String errNoQuote(String symbol) {
@@ -408,4 +400,567 @@ class AppLocalizationsSr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Нешто је пошло наопако: $detail';
   }
+
+  @override
+  String get newSearch => 'Нова претрага';
+
+  @override
+  String get recentSearches => 'Недавне';
+
+  @override
+  String get noRecentSearches => 'Још нема недавних претрага.';
+
+  @override
+  String get clearRecent => 'Обриши недавне';
+
+  @override
+  String get greeting => 'Коју акцију да погледамо?';
+
+  @override
+  String get searchHint => 'Тикер или назив компаније';
+
+  @override
+  String get attachImage => 'Приложи слику';
+
+  @override
+  String get searchResultsTitle => 'Резултати претраге';
+
+  @override
+  String errNoResults(String query) {
+    return 'Нису пронађене акције за „$query“.';
+  }
+
+  @override
+  String get quickBarHint => 'Унесите тикер или назив компаније…';
+
+  @override
+  String get openFullWindow => 'Отвори прозор';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Притисните $shortcut било где да позовете StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Отвори StockLens';
+
+  @override
+  String get trayQuickSearch => 'Брза претрага';
+
+  @override
+  String get trayQuit => 'Изађи';
+
+  @override
+  String get appearance => 'Изглед';
+
+  @override
+  String get themeSystem => 'Системска';
+
+  @override
+  String get themeDark => 'Тамна';
+
+  @override
+  String get themeLight => 'Светла';
+
+  @override
+  String get back => 'Назад';
+
+  @override
+  String get aiSectionTitle => 'AI анализа';
+
+  @override
+  String get aiIntro =>
+      'Детаљан преглед који је написала вештачка интелигенција: резиме недавних вести, пословање, снаге, ризици и скривени фактори, вредновање, изгледи цене са сценаријима из психолошког, социолошког, техничког и макроекономског угла и шта пратити.';
+
+  @override
+  String get aiGenerate => 'Генериши анализу';
+
+  @override
+  String get aiRegenerate => 'Генериши поново';
+
+  @override
+  String get aiGenerating => 'Припремамо анализу… ово може потрајати минут или два.';
+
+  @override
+  String get aiSources => 'Извори';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Генерисано $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Анализа коју је генерисала вештачка интелигенција на основу јавних података и недавних вести. Може садржати грешке или бити застарела и не представља инвестициони савет.';
+
+  @override
+  String get errAiNotConfigured => 'AI анализа није подешена (нема ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Није могуће повезати се са AI сервисом. Проверите интернет везу.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI сервис је вратио грешку (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI сервис је одбио да анализира ову акцију.';
+
+  @override
+  String get errAiBadResponse => 'Неочекиван одговор AI сервиса.';
+
+  @override
+  String get sectionChart => 'Графикон цене';
+
+  @override
+  String get rangeOneWeek => '1Н';
+
+  @override
+  String get rangeOneMonth => '1М';
+
+  @override
+  String get rangeThreeMonths => '3М';
+
+  @override
+  String get rangeOneYear => '1Г';
+
+  @override
+  String get rangeFiveYears => '5Г';
+
+  @override
+  String get chartUnavailable => 'Историја цена није доступна из тренутног извора података.';
+
+  @override
+  String get sectionStatements => 'Финансијски извештаји (годишњи)';
+
+  @override
+  String get labelFiscalYear => 'Фискална година';
+
+  @override
+  String get labelRevenue => 'Приходи';
+
+  @override
+  String get labelNetIncome => 'Нето добит';
+
+  @override
+  String get labelTotalAssets => 'Укупна имовина';
+
+  @override
+  String get labelTotalLiabilities => 'Укупне обавезе';
+
+  @override
+  String get labelEquity => 'Акционарски капитал';
+
+  @override
+  String get labelOperatingCashFlow => 'Оперативни новчани ток';
+
+  @override
+  String get statementsUnavailable => 'Објављени финансијски извештаји нису доступни за ову акцију.';
+
+  @override
+  String get launchAtLogin => 'Покрени при пријављивању';
+
+  @override
+  String get hotkeyLabel => 'Глобална пречица';
+
+  @override
+  String get hotkeyRecordHint => 'Кликните овде, а затим притисните нову комбинацију тастера';
+
+  @override
+  String get hotkeyReset => 'Врати на подразумевано';
+
+  @override
+  String get pasteImage => 'Налепи слику из клипборда';
+
+  @override
+  String get errClipboardNoImage => 'У клипборду нема слике.';
+
+  @override
+  String get favorites => 'Омиљено';
+
+  @override
+  String get addToFavorites => 'Додај у омиљене';
+
+  @override
+  String get removeFromFavorites => 'Уклони из омиљених';
+
+  @override
+  String get noFavorites => 'Још нема омиљених. Додирните звездицу поред акције да бисте је додали.';
+
+  @override
+  String get displayCurrency => 'Валута приказа';
+
+  @override
+  String get displayCurrencyNone => 'Само сопствена валута акције';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ у $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Курс: 1 $from = $rate $to (ЕЦБ, $date)';
+  }
+
+  @override
+  String get updates => 'Ажурирања';
+
+  @override
+  String currentVersion(String version) {
+    return 'Верзија $version';
+  }
+
+  @override
+  String get autoUpdate => 'Аутоматски инсталирај ажурирања';
+
+  @override
+  String get checkForUpdates => 'Потражи ажурирања';
+
+  @override
+  String get updateChecking => 'Тражење ажурирања…';
+
+  @override
+  String get updateUpToDate => 'Имате најновију верзију.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Доступна је верзија $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Ажурирање се преузима у позадини…';
+
+  @override
+  String get updateDownloaded => 'Ажурирање је спремно. Поново покрените апликацију да бисте га инсталирали.';
+
+  @override
+  String get updateNow => 'Ажурирај';
+
+  @override
+  String get restartNow => 'Поново покрени';
+
+  @override
+  String get updatesViaStore => 'Ажурирања стижу аутоматски преко продавнице апликација.';
+
+  @override
+  String get updateCheckFailed => 'Није могуће потражити ажурирања.';
+
+  @override
+  String get subscription => 'Претплата';
+
+  @override
+  String get planTrial => 'Пробни';
+
+  @override
+  String get planNormal => 'Стандард';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Нема активног плана';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count анализа месечно',
+      few: '$count анализе месечно',
+      one: '$count анализа месечно',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Бесплатни пробни период од $days дана са $count анализа',
+      few: 'Бесплатни пробни период од $days дана са $count анализе',
+      one: 'Бесплатни пробни период од $days дана са $count анализом',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Преостало је још $days дана пробног периода',
+      few: 'Преостала су још $days дана пробног периода',
+      one: 'Преостао је још $days дан пробног периода',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Ваш бесплатни пробни период је истекао. Изаберите план да бисте наставили са анализама.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Преостало је $remaining од $total анализа у овом периоду';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додатних анализа',
+      few: '$count додатне анализе',
+      one: '$count додатна анализа',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Обнавља се $date';
+  }
+
+  @override
+  String get choosePlan => 'Изаберите план';
+
+  @override
+  String get currentPlan => 'Тренутни план';
+
+  @override
+  String get subscribe => 'Претплати се';
+
+  @override
+  String get perMonth => '/ месец';
+
+  @override
+  String get extraPacksTitle => 'Потребно вам је више? Купите додатне анализе';
+
+  @override
+  String get extraPacksHint => 'Додатне анализе никада не истичу и користе се након месечне квоте.';
+
+  @override
+  String get buy => 'Купи';
+
+  @override
+  String get restorePurchases => 'Врати куповине';
+
+  @override
+  String get manageSubscription => 'Управљај претплатом';
+
+  @override
+  String get purchaseSuccess => 'Хвала! Ваша куповина је активна.';
+
+  @override
+  String get purchasePending => 'Куповина је у току…';
+
+  @override
+  String get purchaseFailed => 'Куповину није било могуће завршити.';
+
+  @override
+  String get purchaseCanceled => 'Куповина је отказана.';
+
+  @override
+  String get billingUnavailable =>
+      'Куповине још нису доступне на овој платформи. Претплатите се на телефону или Mac рачунару; ваш план ће радити на свим уређајима.';
+
+  @override
+  String get errQuotaExceeded => 'Немате више анализа у овом периоду. Надоградите план или купите додатне анализе.';
+
+  @override
+  String get errTrialExpired => 'Ваш бесплатни пробни период је истекао. Изаберите план да бисте наставили.';
+
+  @override
+  String get errNoPlan => 'За AI анализу је потребан активан план.';
+
+  @override
+  String get viewPlans => 'Прикажи планове';
+
+  @override
+  String get usageTitle => 'Потрошња';
+
+  @override
+  String get demoPurchaseNote => 'Демо наплата: куповине се на овој платформи симулирају.';
+
+  @override
+  String get mostPopular => 'Најпопуларнији';
+
+  @override
+  String get bestValue => 'Најбоља вредност';
+
+  @override
+  String get planFeaturesCommon =>
+      'Препознавање фотографија, подаци у реалном времену, графикони, омиљено и сва 44 језика укључени су у сваки план. Квота се односи на AI анализе.';
+
+  @override
+  String get searchLanguages => 'Претрага језика…';
+
+  @override
+  String get noLanguageMatch => 'Ниједан језик не одговара.';
+
+  @override
+  String get aiSettings => 'AI анализа';
+
+  @override
+  String get aiLength => 'Дужина';
+
+  @override
+  String get aiDepthBrief => 'Кратко';
+
+  @override
+  String get aiDepthStandard => 'Стандардно';
+
+  @override
+  String get aiDepthDeep => 'Детаљно';
+
+  @override
+  String get aiDepthBriefDesc => 'Најважније, брзо.';
+
+  @override
+  String get aiDepthStandardDesc => 'Комплетан извештај са свим одељцима.';
+
+  @override
+  String get aiDepthDeepDesc => 'Више веб-претрага, поређење са конкурентима и детаљнија разрада.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Око $min–$max речи';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'троши $count анализа',
+      few: 'троши $count анализе',
+      one: 'троши $count анализу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Ниво читаоца';
+
+  @override
+  String get aiReaderBeginner => 'Почетник';
+
+  @override
+  String get aiReaderExperienced => 'Искусан';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Једноставан језик; сваки стручни термин је објашњен.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Збијенији текст са стандардном финансијском терминологијом.';
+
+  @override
+  String get aiCounterArgument => 'Најјачи контрааргумент';
+
+  @override
+  String get aiCounterArgumentDesc => 'Резиме се увек завршава најјачим аргументом против сопственог закључка.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Уз ваш план до $count веб-претрага по анализи',
+      few: 'Уз ваш план до $count веб-претраге по анализи',
+      one: 'Уз ваш план до $count веб-претраге по анализи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Стандардна дужина по плану: Стандард $normal, Pro $pro, Max $max, Ultra $ultra. „Кратко“ користи 2 мање, „Детаљно“ 2 више.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'до $count веб-претрага',
+      few: 'до $count веб-претраге',
+      one: 'до $count веб-претраге',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count веб-претрага по анализи',
+      few: '$count веб-претраге по анализи',
+      one: '$count веб-претрага по анализи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'За ову дужину потребно је анализа: $needed, а преостало је: $left. Изаберите краћу дужину у Подешавањима или набавите још анализа.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Расположење тржишта';
+
+  @override
+  String get moodVeryPessimistic => 'Веома песимистично';
+
+  @override
+  String get moodPessimistic => 'Песимистично';
+
+  @override
+  String get moodNeutral => 'Неутрално';
+
+  @override
+  String get moodOptimistic => 'Оптимистично';
+
+  @override
+  String get moodVeryOptimistic => 'Веома оптимистично';
+
+  @override
+  String get scenarioBull => 'Оптимистички сценарио';
+
+  @override
+  String get scenarioBase => 'Основни сценарио';
+
+  @override
+  String get scenarioBear => 'Песимистички сценарио';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Тренутна цена: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Кључни нивои';
+
+  @override
+  String get keyLevelSupport => 'Подршка';
+
+  @override
+  String get keyLevelResistance => 'Отпор';
+
+  @override
+  String get keyLevelAnchor => 'Ценовно сидро';
+
+  @override
+  String get upcomingEvents => 'Предстојећи догађаји';
+
+  @override
+  String get outlookChartNote => 'Оквирни распони; вероватноће су грубе процене, а не предвиђања.';
 }

@@ -10,11 +10,10 @@ class AppLocalizationsTe extends AppLocalizations {
   AppLocalizationsTe([String locale = 'te']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'ఒక స్టాక్ ఫోటో తీయండి, దాని గురించి అన్నీ తెలుసుకోండి.';
+  String get homeTagline => 'ఒక స్టాక్ ఫోటో తీయండి, దాని గురించి అన్నీ తెలుసుకోండి.';
 
   @override
   String get homeHint =>
@@ -307,12 +306,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count విశ్లేషకులు',
-      one: '1 విశ్లేషకుడు',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count విశ్లేషకులు', one: '1 విశ్లేషకుడు');
     return '$_temp0';
   }
 
@@ -344,8 +338,7 @@ class AppLocalizationsTe extends AppLocalizations {
       'చిత్ర గుర్తింపు కాన్ఫిగర్ చేయలేదు (ANTHROPIC_API_KEY లేదు). టికర్‌ను మాన్యువల్‌గా నమోదు చేయండి.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'గుర్తింపు సేవను చేరుకోలేకపోయాం. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.';
+  String get errRecognitionUnreachable => 'గుర్తింపు సేవను చేరుకోలేకపోయాం. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,28 +346,22 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'గుర్తింపు సేవ ఈ చిత్రాన్ని ప్రాసెస్ చేయలేకపోయింది.';
+  String get errRecognitionRefused => 'గుర్తింపు సేవ ఈ చిత్రాన్ని ప్రాసెస్ చేయలేకపోయింది.';
 
   @override
-  String get errRecognitionTruncated =>
-      'గుర్తింపు ప్రతిస్పందన అసంపూర్ణంగా ఉంది. దయచేసి మళ్లీ ప్రయత్నించండి.';
+  String get errRecognitionTruncated => 'గుర్తింపు ప్రతిస్పందన అసంపూర్ణంగా ఉంది. దయచేసి మళ్లీ ప్రయత్నించండి.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'గుర్తింపు సేవ నుండి ఊహించని ప్రతిస్పందన.';
+  String get errRecognitionBadResponse => 'గుర్తింపు సేవ నుండి ఊహించని ప్రతిస్పందన.';
 
   @override
-  String get errRecognitionEmpty =>
-      'గుర్తింపు సేవ ఖాళీ ప్రతిస్పందనను తిరిగి ఇచ్చింది.';
+  String get errRecognitionEmpty => 'గుర్తింపు సేవ ఖాళీ ప్రతిస్పందనను తిరిగి ఇచ్చింది.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'మార్కెట్ డేటా కాన్ఫిగర్ చేయలేదు (FINNHUB_API_KEY లేదు).';
+  String get errMissingFinnhubKey => 'మార్కెట్ డేటా కాన్ఫిగర్ చేయలేదు (FINNHUB_API_KEY లేదు).';
 
   @override
-  String get errMarketUnreachable =>
-      'మార్కెట్ డేటా సేవను చేరుకోలేకపోయాం. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.';
+  String get errMarketUnreachable => 'మార్కెట్ డేటా సేవను చేరుకోలేకపోయాం. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.';
 
   @override
   String get errMarketRateLimited =>
@@ -386,8 +373,7 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'మార్కెట్ డేటా సేవ నుండి ఊహించని ప్రతిస్పందన.';
+  String get errMarketBadResponse => 'మార్కెట్ డేటా సేవ నుండి ఊహించని ప్రతిస్పందన.';
 
   @override
   String errNoQuote(String symbol) {
@@ -408,4 +394,543 @@ class AppLocalizationsTe extends AppLocalizations {
   String errUnknown(String detail) {
     return 'ఏదో తప్పు జరిగింది: $detail';
   }
+
+  @override
+  String get newSearch => 'కొత్త శోధన';
+
+  @override
+  String get recentSearches => 'ఇటీవలివి';
+
+  @override
+  String get noRecentSearches => 'ఇంకా ఇటీవలి శోధనలు లేవు.';
+
+  @override
+  String get clearRecent => 'ఇటీవలివి తీసివేయండి';
+
+  @override
+  String get greeting => 'ఈరోజు ఏ స్టాక్ చూద్దాం?';
+
+  @override
+  String get searchHint => 'టికర్ లేదా కంపెనీ పేరు';
+
+  @override
+  String get attachImage => 'చిత్రాన్ని జోడించండి';
+
+  @override
+  String get searchResultsTitle => 'శోధన ఫలితాలు';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” కోసం స్టాక్‌లు ఏవీ కనుగొనబడలేదు.';
+  }
+
+  @override
+  String get quickBarHint => 'టికర్ లేదా కంపెనీ పేరు టైప్ చేయండి…';
+
+  @override
+  String get openFullWindow => 'విండో తెరవండి';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'ఎక్కడి నుంచైనా StockLens ని తెరవడానికి $shortcut నొక్కండి.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens తెరవండి';
+
+  @override
+  String get trayQuickSearch => 'త్వరిత శోధన';
+
+  @override
+  String get trayQuit => 'నిష్క్రమించండి';
+
+  @override
+  String get appearance => 'రూపం';
+
+  @override
+  String get themeSystem => 'సిస్టమ్';
+
+  @override
+  String get themeDark => 'డార్క్';
+
+  @override
+  String get themeLight => 'లైట్';
+
+  @override
+  String get back => 'వెనుకకు';
+
+  @override
+  String get aiSectionTitle => 'AI విశ్లేషణ';
+
+  @override
+  String get aiIntro =>
+      'AI రాసిన వివరణాత్మక అవలోకనం: ఇటీవలి వార్తల సారాంశం, వ్యాపారం, బలాలు, రిస్క్‌లు మరియు దాగి ఉన్న అంశాలు, వాల్యుయేషన్, మానసిక, సామాజిక, సాంకేతిక మరియు స్థూల ఆర్థిక కోణాల నుండి సన్నివేశాలతో కూడిన ధర అంచనా మరియు గమనించవలసిన విషయాలు.';
+
+  @override
+  String get aiGenerate => 'విశ్లేషణను రూపొందించండి';
+
+  @override
+  String get aiRegenerate => 'మళ్లీ రూపొందించండి';
+
+  @override
+  String get aiGenerating => 'విశ్లేషణ సిద్ధమవుతోంది… దీనికి ఒకటి లేదా రెండు నిమిషాలు పట్టవచ్చు.';
+
+  @override
+  String get aiSources => 'మూలాలు';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'రూపొందించినది $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'బహిరంగ డేటా మరియు ఇటీవలి వార్తల ఆధారంగా AI రూపొందించిన విశ్లేషణ. ఇందులో తప్పులు ఉండవచ్చు లేదా ఇది పాతదై ఉండవచ్చు, ఇది పెట్టుబడి సలహా కాదు.';
+
+  @override
+  String get errAiNotConfigured => 'AI విశ్లేషణ కాన్ఫిగర్ చేయలేదు (ANTHROPIC_API_KEY లేదు).';
+
+  @override
+  String get errAiUnreachable => 'AI సేవను చేరుకోలేకపోయాం. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI సేవ లోపాన్ని తిరిగి ఇచ్చింది (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI సేవ ఈ స్టాక్‌ను విశ్లేషించడానికి నిరాకరించింది.';
+
+  @override
+  String get errAiBadResponse => 'AI సేవ నుండి ఊహించని ప్రతిస్పందన.';
+
+  @override
+  String get sectionChart => 'ధర చార్ట్';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'ప్రస్తుత డేటా మూలం నుండి ధర చరిత్ర అందుబాటులో లేదు.';
+
+  @override
+  String get sectionStatements => 'ఆర్థిక నివేదికలు (వార్షిక)';
+
+  @override
+  String get labelFiscalYear => 'ఆర్థిక సంవత్సరం';
+
+  @override
+  String get labelRevenue => 'ఆదాయం';
+
+  @override
+  String get labelNetIncome => 'నికర లాభం';
+
+  @override
+  String get labelTotalAssets => 'మొత్తం ఆస్తులు';
+
+  @override
+  String get labelTotalLiabilities => 'మొత్తం అప్పులు';
+
+  @override
+  String get labelEquity => 'షేర్‌హోల్డర్ల ఈక్విటీ';
+
+  @override
+  String get labelOperatingCashFlow => 'ఆపరేటింగ్ క్యాష్ ఫ్లో';
+
+  @override
+  String get statementsUnavailable => 'ఈ స్టాక్‌కు నివేదించిన ఆర్థిక నివేదికలు అందుబాటులో లేవు.';
+
+  @override
+  String get launchAtLogin => 'లాగిన్ అయినప్పుడు ప్రారంభించండి';
+
+  @override
+  String get hotkeyLabel => 'గ్లోబల్ షార్ట్‌కట్';
+
+  @override
+  String get hotkeyRecordHint => 'ఇక్కడ క్లిక్ చేసి, ఆపై కొత్త కీ కాంబినేషన్‌ను నొక్కండి';
+
+  @override
+  String get hotkeyReset => 'డిఫాల్ట్‌కు రీసెట్ చేయండి';
+
+  @override
+  String get pasteImage => 'క్లిప్‌బోర్డ్ నుండి చిత్రాన్ని పేస్ట్ చేయండి';
+
+  @override
+  String get errClipboardNoImage => 'క్లిప్‌బోర్డ్‌లో చిత్రం లేదు.';
+
+  @override
+  String get favorites => 'ఇష్టమైనవి';
+
+  @override
+  String get addToFavorites => 'ఇష్టమైనవాటికి జోడించండి';
+
+  @override
+  String get removeFromFavorites => 'ఇష్టమైనవాటి నుండి తీసివేయండి';
+
+  @override
+  String get noFavorites => 'ఇంకా ఇష్టమైనవి ఏవీ లేవు. జోడించడానికి స్టాక్‌పై ఉన్న నక్షత్రాన్ని నొక్కండి.';
+
+  @override
+  String get displayCurrency => 'ప్రదర్శన కరెన్సీ';
+
+  @override
+  String get displayCurrencyNone => 'స్టాక్ సొంత కరెన్సీ మాత్రమే';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currencyలో';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'రేటు: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'అప్‌డేట్‌లు';
+
+  @override
+  String currentVersion(String version) {
+    return 'వెర్షన్ $version';
+  }
+
+  @override
+  String get autoUpdate => 'అప్‌డేట్‌లను ఆటోమేటిక్‌గా ఇన్‌స్టాల్ చేయండి';
+
+  @override
+  String get checkForUpdates => 'అప్‌డేట్‌ల కోసం తనిఖీ చేయండి';
+
+  @override
+  String get updateChecking => 'అప్‌డేట్‌ల కోసం తనిఖీ చేస్తున్నాం…';
+
+  @override
+  String get updateUpToDate => 'మీరు తాజా వెర్షన్‌లో ఉన్నారు.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'వెర్షన్ $version అందుబాటులో ఉంది.';
+  }
+
+  @override
+  String get updateDownloading => 'అప్‌డేట్ బ్యాక్‌గ్రౌండ్‌లో డౌన్‌లోడ్ అవుతోంది…';
+
+  @override
+  String get updateDownloaded => 'అప్‌డేట్ సిద్ధంగా ఉంది. ఇన్‌స్టాల్ చేయడానికి పునఃప్రారంభించండి.';
+
+  @override
+  String get updateNow => 'అప్‌డేట్ చేయండి';
+
+  @override
+  String get restartNow => 'పునఃప్రారంభించండి';
+
+  @override
+  String get updatesViaStore => 'అప్‌డేట్‌లు యాప్ స్టోర్ ద్వారా ఆటోమేటిక్‌గా వస్తాయి.';
+
+  @override
+  String get updateCheckFailed => 'అప్‌డేట్‌ల కోసం తనిఖీ చేయలేకపోయాం.';
+
+  @override
+  String get subscription => 'సబ్‌స్క్రిప్షన్';
+
+  @override
+  String get planTrial => 'ట్రయల్';
+
+  @override
+  String get planNormal => 'సాధారణ';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'యాక్టివ్ ప్లాన్ లేదు';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'నెలకు $count విశ్లేషణలు';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$count విశ్లేషణలతో $days రోజుల ఉచిత ట్రయల్';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ట్రయల్‌లో $days రోజులు మిగిలాయి',
+      one: 'ట్రయల్‌లో 1 రోజు మిగిలింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'మీ ఉచిత ట్రయల్ ముగిసింది. విశ్లేషణ కొనసాగించడానికి ఒక ప్లాన్ ఎంచుకోండి.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'ఈ కాలంలో $totalలో $remaining విశ్లేషణలు మిగిలాయి';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count అదనపు విశ్లేషణలు';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$dateన పునరుద్ధరణ';
+  }
+
+  @override
+  String get choosePlan => 'ప్లాన్ ఎంచుకోండి';
+
+  @override
+  String get currentPlan => 'ప్రస్తుత ప్లాన్';
+
+  @override
+  String get subscribe => 'సబ్‌స్క్రైబ్ చేయండి';
+
+  @override
+  String get perMonth => '/ నెల';
+
+  @override
+  String get extraPacksTitle => 'ఇంకా కావాలా? అదనపు విశ్లేషణలు కొనండి';
+
+  @override
+  String get extraPacksHint => 'అదనపు విశ్లేషణలకు గడువు ఉండదు, మీ నెలవారీ కోటా తర్వాత ఉపయోగించబడతాయి.';
+
+  @override
+  String get buy => 'కొనండి';
+
+  @override
+  String get restorePurchases => 'కొనుగోళ్లను పునరుద్ధరించండి';
+
+  @override
+  String get manageSubscription => 'సబ్‌స్క్రిప్షన్ నిర్వహించండి';
+
+  @override
+  String get purchaseSuccess => 'ధన్యవాదాలు! మీ కొనుగోలు యాక్టివ్‌గా ఉంది.';
+
+  @override
+  String get purchasePending => 'కొనుగోలు పెండింగ్‌లో ఉంది…';
+
+  @override
+  String get purchaseFailed => 'కొనుగోలు పూర్తి చేయలేకపోయాం.';
+
+  @override
+  String get purchaseCanceled => 'కొనుగోలు రద్దు చేయబడింది.';
+
+  @override
+  String get billingUnavailable =>
+      'ఈ ప్లాట్‌ఫారమ్‌లో కొనుగోళ్లు ఇంకా అందుబాటులో లేవు. మీ ఫోన్ లేదా Mac లో సబ్‌స్క్రైబ్ చేయండి; మీ ప్లాన్ ప్రతి పరికరంలో పని చేస్తుంది.';
+
+  @override
+  String get errQuotaExceeded =>
+      'ఈ కాలానికి మీకు విశ్లేషణలు మిగలలేదు. మీ ప్లాన్‌ను అప్‌గ్రేడ్ చేయండి లేదా అదనపు విశ్లేషణలు కొనండి.';
+
+  @override
+  String get errTrialExpired => 'మీ ఉచిత ట్రయల్ ముగిసింది. కొనసాగించడానికి ఒక ప్లాన్ ఎంచుకోండి.';
+
+  @override
+  String get errNoPlan => 'AI విశ్లేషణకు యాక్టివ్ ప్లాన్ అవసరం.';
+
+  @override
+  String get viewPlans => 'ప్లాన్‌లను చూడండి';
+
+  @override
+  String get usageTitle => 'వినియోగం';
+
+  @override
+  String get demoPurchaseNote => 'డెమో బిల్లింగ్: ఈ ప్లాట్‌ఫారమ్‌లో కొనుగోళ్లు సిమ్యులేట్ చేయబడతాయి.';
+
+  @override
+  String get mostPopular => 'అత్యంత ప్రజాదరణ';
+
+  @override
+  String get bestValue => 'ఉత్తమ విలువ';
+
+  @override
+  String get planFeaturesCommon =>
+      'ఫోటో గుర్తింపు, లైవ్ డేటా, చార్ట్‌లు, ఇష్టమైనవి మరియు మొత్తం 44 భాషలు ప్రతి ప్లాన్‌లో ఉంటాయి. కోటా AI విశ్లేషణలకు వర్తిస్తుంది.';
+
+  @override
+  String get searchLanguages => 'భాషలను వెతకండి…';
+
+  @override
+  String get noLanguageMatch => 'సరిపోలే భాష లేదు.';
+
+  @override
+  String get aiSettings => 'AI విశ్లేషణ';
+
+  @override
+  String get aiLength => 'నిడివి';
+
+  @override
+  String get aiDepthBrief => 'సంక్షిప్తం';
+
+  @override
+  String get aiDepthStandard => 'ప్రామాణికం';
+
+  @override
+  String get aiDepthDeep => 'వివరణాత్మకం';
+
+  @override
+  String get aiDepthBriefDesc => 'ముఖ్యాంశాలు, త్వరగా.';
+
+  @override
+  String get aiDepthStandardDesc => 'అన్ని విభాగాలతో పూర్తి నివేదిక.';
+
+  @override
+  String get aiDepthDeepDesc => 'మరిన్ని వెబ్ శోధనలు, సమాన కంపెనీలతో పోలిక మరియు మరింత లోతైన వివరాలు.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'సుమారు $min–$max పదాలు';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count విశ్లేషణలను వినియోగిస్తుంది',
+      one: '1 విశ్లేషణను వినియోగిస్తుంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'పాఠకుల స్థాయి';
+
+  @override
+  String get aiReaderBeginner => 'ప్రారంభకులు';
+
+  @override
+  String get aiReaderExperienced => 'అనుభవజ్ఞులు';
+
+  @override
+  String get aiReaderBeginnerDesc => 'సరళమైన భాష; ప్రతి సాంకేతిక పదం వివరించబడుతుంది.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'ప్రామాణిక ఆర్థిక పరిభాషతో సాంద్రమైన పాఠ్యం.';
+
+  @override
+  String get aiCounterArgument => 'అత్యంత బలమైన ప్రతివాదం';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'సారాంశం ఎల్లప్పుడూ తన సొంత నిర్ణయానికి వ్యతిరేకంగా ఉన్న అత్యంత బలమైన వాదనతో ముగుస్తుంది.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'మీ ప్లాన్‌తో ఒక్కో విశ్లేషణకు గరిష్టంగా $count వెబ్ శోధనలు',
+      one: 'మీ ప్లాన్‌తో ఒక్కో విశ్లేషణకు గరిష్టంగా 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'ప్లాన్ వారీగా ప్రామాణిక నిడివి: సాధారణ $normal, Pro $pro, Max $max, Ultra $ultra. సంక్షిప్తంలో 2 తక్కువ, వివరణాత్మకంలో 2 ఎక్కువ.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'గరిష్టంగా $count వెబ్ శోధనలు',
+      one: 'గరిష్టంగా 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ఒక్కో విశ్లేషణకు $count వెబ్ శోధనలు',
+      one: 'ఒక్కో విశ్లేషణకు 1 వెబ్ శోధన',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'ఈ నిడివికి $needed విశ్లేషణలు అవసరం, కానీ $left మాత్రమే మిగిలి ఉన్నాయి. సెట్టింగ్‌లలో తక్కువ నిడివిని ఎంచుకోండి లేదా మరిన్ని విశ్లేషణలు పొందండి.';
+  }
+
+  @override
+  String get outlookMarketMood => 'మార్కెట్ మూడ్';
+
+  @override
+  String get moodVeryPessimistic => 'చాలా నిరాశావాదం';
+
+  @override
+  String get moodPessimistic => 'నిరాశావాదం';
+
+  @override
+  String get moodNeutral => 'తటస్థం';
+
+  @override
+  String get moodOptimistic => 'ఆశావాదం';
+
+  @override
+  String get moodVeryOptimistic => 'చాలా ఆశావాదం';
+
+  @override
+  String get scenarioBull => 'బుల్ దృశ్యం';
+
+  @override
+  String get scenarioBase => 'ప్రాథమిక దృశ్యం';
+
+  @override
+  String get scenarioBear => 'బేర్ దృశ్యం';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'ప్రస్తుత ధర: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'కీలక స్థాయిలు';
+
+  @override
+  String get keyLevelSupport => 'సపోర్ట్';
+
+  @override
+  String get keyLevelResistance => 'రెసిస్టెన్స్';
+
+  @override
+  String get keyLevelAnchor => 'యాంకర్ స్థాయి';
+
+  @override
+  String get upcomingEvents => 'రాబోయే ఈవెంట్‌లు';
+
+  @override
+  String get outlookChartNote => 'సూచనాత్మక శ్రేణులు; సంభావ్యతలు స్థూల అంచనాలు మాత్రమే, జోస్యాలు కావు.';
 }

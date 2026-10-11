@@ -8,9 +8,15 @@ import '../../core/models/stock_details.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../../theme/app_theme.dart';
+import '../../widgets/desktop_chrome.dart';
 import '../recognition/stock_recognizer.dart';
+import 'widgets/analysis_card.dart';
+import 'widgets/converted_price.dart';
 import 'widgets/kv_table.dart';
+import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
+import 'widgets/statements_table.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
 class StockDetailPage extends StatefulWidget {
@@ -45,7 +51,15 @@ class _StockDetailPageState extends State<StockDetailPage> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(widget.candidate.symbol)),
+      appBar: desktopAppBar(
+        context,
+        title: Text(widget.candidate.symbol),
+        hasSidebar: MediaQuery.sizeOf(context).width >= 860,
+        actions: [
+          _FavoriteButton(symbol: widget.candidate.symbol),
+          const SizedBox(width: 4),
+        ],
+      ),
       body: FutureBuilder<StockDetails>(
         future: _future,
         builder: (context, snapshot) {
@@ -94,6 +108,7 @@ class _DetailsBody extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final theme = Theme.of(context);
+    final palette = AppPalette.of(context);
     final d = details;
     final q = d.quote;
     final p = d.profile;
@@ -142,14 +157,28 @@ class _DetailsBody extends StatelessWidget {
                   Text(
                     '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
                     style: theme.textTheme.bodyMedium?.copyWith(
-                      color: q.isUp ? Colors.green.shade700 : theme.colorScheme.error,
+                      color: q.isUp ? palette.positive : palette.negative,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                  ConvertedPrice(amount: q.price, fromCurrency: cur, withRate: true),
                 ],
               ),
           ],
         ),
+      ),
+
+      // AI-elemzés
+      AnalysisCard(details: d),
+
+      // Grafikon
+      SectionCard(
+        title: l10n.sectionChart,
+        child: err(DetailSection.chart) != null
+            ? SectionError(err(DetailSection.chart)!)
+            : d.history == null
+            ? Text(l10n.notAvailable)
+            : PriceChart(history: d.history!, fmt: fmt, currency: cur),
       ),
 
       // Árfolyam
@@ -262,6 +291,16 @@ class _DetailsBody extends StatelessWidget {
                   (l10n.labelEpsGrowth, m?.epsGrowth == null ? null : fmt.percent(m!.epsGrowth, withSign: true)),
                 ],
               ),
+      ),
+
+      // Éves kimutatások
+      SectionCard(
+        title: l10n.sectionStatements,
+        child: err(DetailSection.statements) != null
+            ? SectionError(err(DetailSection.statements)!)
+            : d.statements == null || d.statements!.isEmpty
+            ? Text(l10n.notAvailable)
+            : StatementsTable(statements: d.statements!, fmt: fmt, currency: cur),
       ),
 
       // Osztalék
@@ -407,12 +446,13 @@ class _ConsensusView extends StatelessWidget {
       Rating.strongSell => l10n.ratingStrongSell,
       null => l10n.notAvailable,
     };
+    final palette = AppPalette.of(context);
     final bars = [
-      (l10n.ratingStrongBuy, c.strongBuy, Colors.green.shade800),
-      (l10n.ratingBuy, c.buy, Colors.green.shade500),
-      (l10n.ratingHold, c.hold, Colors.amber.shade700),
-      (l10n.ratingSell, c.sell, Colors.orange.shade800),
-      (l10n.ratingStrongSell, c.strongSell, Colors.red.shade700),
+      (l10n.ratingStrongBuy, c.strongBuy, palette.positive),
+      (l10n.ratingBuy, c.buy, palette.positive.withValues(alpha: 0.65)),
+      (l10n.ratingHold, c.hold, palette.accent),
+      (l10n.ratingSell, c.sell, palette.negative.withValues(alpha: 0.65)),
+      (l10n.ratingStrongSell, c.strongSell, palette.negative),
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -453,6 +493,31 @@ class _ConsensusView extends StatelessWidget {
             ),
           ),
       ],
+    );
+  }
+}
+
+/// Csillag az AppBarban: kedvencekhez ad / onnan elvesz.
+class _FavoriteButton extends StatelessWidget {
+  const _FavoriteButton({required this.symbol});
+
+  final String symbol;
+
+  @override
+  Widget build(BuildContext context) {
+    final prefs = AppServices.of(context).preferences;
+    final l10n = AppLocalizations.of(context);
+    final palette = AppPalette.of(context);
+    return ListenableBuilder(
+      listenable: prefs,
+      builder: (context, _) {
+        final fav = prefs.isFavorite(symbol);
+        return IconButton(
+          tooltip: fav ? l10n.removeFromFavorites : l10n.addToFavorites,
+          icon: Icon(fav ? Icons.star_rounded : Icons.star_outline_rounded, color: fav ? palette.accent : null),
+          onPressed: () => prefs.toggleFavorite(symbol),
+        );
+      },
     );
   }
 }

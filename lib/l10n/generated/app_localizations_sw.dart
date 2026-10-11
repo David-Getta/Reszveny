@@ -10,7 +10,7 @@ class AppLocalizationsSw extends AppLocalizations {
   AppLocalizationsSw([String locale = 'sw']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Piga picha ya hisa na ujifunze kila kitu kuihusu.';
@@ -306,12 +306,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Wachambuzi $count',
-      one: 'Mchambuzi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Wachambuzi $count', one: 'Mchambuzi 1');
     return '$_temp0';
   }
 
@@ -352,31 +347,25 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Huduma ya utambuzi haikuweza kuchakata picha hii.';
+  String get errRecognitionRefused => 'Huduma ya utambuzi haikuweza kuchakata picha hii.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
+  String get errRecognitionTruncated => 'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
+  String get errRecognitionBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
 
   @override
   String get errRecognitionEmpty => 'Huduma ya utambuzi imerudisha jibu tupu.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Data ya soko haijasanidiwa (hakuna FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
+  String get errMarketUnreachable => 'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
 
   @override
-  String get errMarketRateLimited =>
-      'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
+  String get errMarketRateLimited => 'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,8 +373,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
+  String get errMarketBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -406,4 +394,543 @@ class AppLocalizationsSw extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Hitilafu imetokea: $detail';
   }
+
+  @override
+  String get newSearch => 'Utafutaji mpya';
+
+  @override
+  String get recentSearches => 'Hivi karibuni';
+
+  @override
+  String get noRecentSearches => 'Bado hakuna utafutaji wa hivi karibuni.';
+
+  @override
+  String get clearRecent => 'Futa za hivi karibuni';
+
+  @override
+  String get greeting => 'Tuangalie hisa gani?';
+
+  @override
+  String get searchHint => 'Ticker au jina la kampuni';
+
+  @override
+  String get attachImage => 'Ambatisha picha';
+
+  @override
+  String get searchResultsTitle => 'Matokeo ya utafutaji';
+
+  @override
+  String errNoResults(String query) {
+    return 'Hakuna hisa zilizopatikana kwa “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Andika ticker au jina la kampuni…';
+
+  @override
+  String get openFullWindow => 'Fungua dirisha';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Bonyeza $shortcut mahali popote kuita StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Fungua StockLens';
+
+  @override
+  String get trayQuickSearch => 'Utafutaji wa haraka';
+
+  @override
+  String get trayQuit => 'Ondoka';
+
+  @override
+  String get appearance => 'Mwonekano';
+
+  @override
+  String get themeSystem => 'Mfumo';
+
+  @override
+  String get themeDark => 'Giza';
+
+  @override
+  String get themeLight => 'Mwanga';
+
+  @override
+  String get back => 'Rudi';
+
+  @override
+  String get aiSectionTitle => 'Uchambuzi wa AI';
+
+  @override
+  String get aiIntro =>
+      'Muhtasari wa kina ulioandikwa na AI: muhtasari wa habari za hivi karibuni, biashara, uimara, hatari na mambo yaliyofichika, uthamini, mtazamo wa bei ukiwa na matukio yanayowezekana kutoka mitazamo ya kisaikolojia, kijamii, kiufundi na kiuchumi mpana, na mambo ya kufuatilia.';
+
+  @override
+  String get aiGenerate => 'Tengeneza uchambuzi';
+
+  @override
+  String get aiRegenerate => 'Tengeneza upya';
+
+  @override
+  String get aiGenerating => 'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
+
+  @override
+  String get aiSources => 'Vyanzo';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Imetengenezwa $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Uchambuzi uliotengenezwa na AI kwa kutumia data ya umma na habari za hivi karibuni. Unaweza kuwa na makosa au kuwa umepitwa na wakati, na si ushauri wa uwekezaji.';
+
+  @override
+  String get errAiNotConfigured => 'Uchambuzi wa AI haujasanidiwa (hakuna ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Huduma ya AI imerudisha hitilafu (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Huduma ya AI imekataa kuchambua hisa hii.';
+
+  @override
+  String get errAiBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya AI.';
+
+  @override
+  String get sectionChart => 'Chati ya bei';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
+
+  @override
+  String get sectionStatements => 'Taarifa za fedha (za mwaka)';
+
+  @override
+  String get labelFiscalYear => 'Mwaka wa fedha';
+
+  @override
+  String get labelRevenue => 'Mapato';
+
+  @override
+  String get labelNetIncome => 'Faida halisi';
+
+  @override
+  String get labelTotalAssets => 'Jumla ya mali';
+
+  @override
+  String get labelTotalLiabilities => 'Jumla ya madeni';
+
+  @override
+  String get labelEquity => 'Mtaji wa wanahisa';
+
+  @override
+  String get labelOperatingCashFlow => 'Mtiririko wa fedha wa uendeshaji';
+
+  @override
+  String get statementsUnavailable => 'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
+
+  @override
+  String get launchAtLogin => 'Anzisha wakati wa kuingia';
+
+  @override
+  String get hotkeyLabel => 'Njia ya mkato ya jumla';
+
+  @override
+  String get hotkeyRecordHint => 'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
+
+  @override
+  String get hotkeyReset => 'Rejesha chaguo-msingi';
+
+  @override
+  String get pasteImage => 'Bandika picha kutoka ubao wa kunakili';
+
+  @override
+  String get errClipboardNoImage => 'Hakuna picha kwenye ubao wa kunakili.';
+
+  @override
+  String get favorites => 'Vipendwa';
+
+  @override
+  String get addToFavorites => 'Ongeza kwenye vipendwa';
+
+  @override
+  String get removeFromFavorites => 'Ondoa kwenye vipendwa';
+
+  @override
+  String get noFavorites => 'Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.';
+
+  @override
+  String get displayCurrency => 'Sarafu ya kuonyesha';
+
+  @override
+  String get displayCurrencyNone => 'Sarafu ya hisa yenyewe pekee';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ kwa $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kiwango: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Masasisho';
+
+  @override
+  String currentVersion(String version) {
+    return 'Toleo $version';
+  }
+
+  @override
+  String get autoUpdate => 'Sakinisha masasisho kiotomatiki';
+
+  @override
+  String get checkForUpdates => 'Angalia masasisho';
+
+  @override
+  String get updateChecking => 'Inaangalia masasisho…';
+
+  @override
+  String get updateUpToDate => 'Unatumia toleo jipya zaidi.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Toleo $version linapatikana.';
+  }
+
+  @override
+  String get updateDownloading => 'Inapakua sasisho chinichini…';
+
+  @override
+  String get updateDownloaded => 'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
+
+  @override
+  String get updateNow => 'Sasisha';
+
+  @override
+  String get restartNow => 'Anzisha upya';
+
+  @override
+  String get updatesViaStore => 'Masasisho hufika kiotomatiki kupitia duka la programu.';
+
+  @override
+  String get updateCheckFailed => 'Imeshindwa kuangalia masasisho.';
+
+  @override
+  String get subscription => 'Usajili';
+
+  @override
+  String get planTrial => 'Jaribio';
+
+  @override
+  String get planNormal => 'Kawaida';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Hakuna mpango unaotumika';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Uchambuzi $count kwa mwezi';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Jaribio la bila malipo la siku $days lenye uchambuzi $count';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Zimesalia siku $days za jaribio',
+      one: 'Imesalia siku 1 ya jaribio',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Umesalia na uchambuzi $remaining kati ya $total katika kipindi hiki';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return 'Uchambuzi $count wa ziada';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Husasishwa $date';
+  }
+
+  @override
+  String get choosePlan => 'Chagua mpango';
+
+  @override
+  String get currentPlan => 'Mpango wa sasa';
+
+  @override
+  String get subscribe => 'Jisajili';
+
+  @override
+  String get perMonth => '/ mwezi';
+
+  @override
+  String get extraPacksTitle => 'Unahitaji zaidi? Nunua uchambuzi wa ziada';
+
+  @override
+  String get extraPacksHint => 'Uchambuzi wa ziada hauishi muda na hutumika baada ya kiasi chako cha mwezi kumalizika.';
+
+  @override
+  String get buy => 'Nunua';
+
+  @override
+  String get restorePurchases => 'Rejesha manunuzi';
+
+  @override
+  String get manageSubscription => 'Dhibiti usajili';
+
+  @override
+  String get purchaseSuccess => 'Asante! Ununuzi wako unatumika.';
+
+  @override
+  String get purchasePending => 'Ununuzi unasubiri…';
+
+  @override
+  String get purchaseFailed => 'Ununuzi haukuweza kukamilika.';
+
+  @override
+  String get purchaseCanceled => 'Ununuzi umeghairiwa.';
+
+  @override
+  String get billingUnavailable =>
+      'Manunuzi hayapatikani bado kwenye jukwaa hili. Jisajili kwenye simu yako au Mac; mpango wako utafanya kazi kwenye kila kifaa.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Huna uchambuzi uliosalia kwa kipindi hiki. Boresha mpango wako au nunua uchambuzi wa ziada.';
+
+  @override
+  String get errTrialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea.';
+
+  @override
+  String get errNoPlan => 'Mpango unaotumika unahitajika kwa uchambuzi wa AI.';
+
+  @override
+  String get viewPlans => 'Tazama mipango';
+
+  @override
+  String get usageTitle => 'Matumizi';
+
+  @override
+  String get demoPurchaseNote => 'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
+
+  @override
+  String get mostPopular => 'Maarufu zaidi';
+
+  @override
+  String get bestValue => 'Thamani bora';
+
+  @override
+  String get planFeaturesCommon =>
+      'Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 44 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI.';
+
+  @override
+  String get searchLanguages => 'Tafuta lugha…';
+
+  @override
+  String get noLanguageMatch => 'Hakuna lugha inayolingana.';
+
+  @override
+  String get aiSettings => 'Uchambuzi wa AI';
+
+  @override
+  String get aiLength => 'Urefu';
+
+  @override
+  String get aiDepthBrief => 'Mfupi';
+
+  @override
+  String get aiDepthStandard => 'Wastani';
+
+  @override
+  String get aiDepthDeep => 'Wa kina';
+
+  @override
+  String get aiDepthBriefDesc => 'Mambo muhimu, kwa haraka.';
+
+  @override
+  String get aiDepthStandardDesc => 'Ripoti kamili yenye kila sehemu.';
+
+  @override
+  String get aiDepthDeepDesc => 'Utafutaji zaidi wa wavuti, ulinganisho na washindani na undani zaidi.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Takriban maneno $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hutumia uchambuzi $count',
+      one: 'hutumia uchambuzi $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Kiwango cha msomaji';
+
+  @override
+  String get aiReaderBeginner => 'Anayeanza';
+
+  @override
+  String get aiReaderExperienced => 'Mzoefu';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Lugha rahisi; kila istilahi ya kitaalamu inaelezwa.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Maandishi mazito zaidi yenye istilahi za kawaida za kifedha.';
+
+  @override
+  String get aiCounterArgument => 'Hoja pinzani yenye nguvu zaidi';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Muhtasari daima humalizika kwa hoja yenye nguvu zaidi dhidi ya hitimisho lake lenyewe.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
+      one: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Utafutaji wa wavuti kwa urefu wa wastani kulingana na mpango: Kawaida $normal, Pro $pro, Max $max, Ultra $ultra. Mfupi hutumia 2 pungufu, Wa kina 2 zaidi.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hadi utafutaji $count wa wavuti',
+      one: 'hadi utafutaji $count wa wavuti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Utafutaji $count wa wavuti kwa kila uchambuzi',
+      one: 'Utafutaji $count wa wavuti kwa kila uchambuzi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Urefu huu unahitaji uchambuzi $needed, lakini umesalia na $left tu. Chagua urefu mfupi zaidi katika Mipangilio au pata uchambuzi zaidi.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Hali ya soko';
+
+  @override
+  String get moodVeryPessimistic => 'Hasi sana';
+
+  @override
+  String get moodPessimistic => 'Hasi';
+
+  @override
+  String get moodNeutral => 'Ya wastani';
+
+  @override
+  String get moodOptimistic => 'Chanya';
+
+  @override
+  String get moodVeryOptimistic => 'Chanya sana';
+
+  @override
+  String get scenarioBull => 'Hali ya matumaini';
+
+  @override
+  String get scenarioBase => 'Hali ya msingi';
+
+  @override
+  String get scenarioBear => 'Hali ya kukata tamaa';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Bei ya sasa: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Viwango muhimu';
+
+  @override
+  String get keyLevelSupport => 'Kiwango cha usaidizi';
+
+  @override
+  String get keyLevelResistance => 'Kiwango cha upinzani';
+
+  @override
+  String get keyLevelAnchor => 'Kiwango cha nanga';
+
+  @override
+  String get upcomingEvents => 'Matukio yajayo';
+
+  @override
+  String get outlookChartNote => 'Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri.';
 }

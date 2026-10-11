@@ -10,7 +10,7 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografiază o acțiune și află totul despre ea.';
@@ -111,8 +111,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorGeneric => 'Ceva nu a funcționat.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Această secțiune nu a putut fi încărcată.';
+  String get errorSectionUnavailable => 'Această secțiune nu a putut fi încărcată.';
 
   @override
   String get notAvailable => 'n/a';
@@ -354,32 +353,26 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Serviciul de recunoaștere nu a putut procesa această imagine.';
+  String get errRecognitionRefused => 'Serviciul de recunoaștere nu a putut procesa această imagine.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
+  String get errRecognitionTruncated => 'Răspunsul serviciului de recunoaștere a fost întrerupt. Încearcă din nou.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Răspuns neașteptat de la serviciul de recunoaștere.';
+  String get errRecognitionBadResponse => 'Răspuns neașteptat de la serviciul de recunoaștere.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Serviciul de recunoaștere a returnat un răspuns gol.';
+  String get errRecognitionEmpty => 'Serviciul de recunoaștere a returnat un răspuns gol.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Datele de piață nu sunt configurate (lipsește FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nu s-a putut contacta serviciul de date de piață. Verifică conexiunea la internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
+  String get errMarketRateLimited => 'Prea multe solicitări către serviciul de date de piață. Așteaptă un minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +380,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Răspuns neașteptat de la serviciul de date de piață.';
+  String get errMarketBadResponse => 'Răspuns neașteptat de la serviciul de date de piață.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +401,562 @@ class AppLocalizationsRo extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Ceva nu a funcționat: $detail';
   }
+
+  @override
+  String get newSearch => 'Căutare nouă';
+
+  @override
+  String get recentSearches => 'Recente';
+
+  @override
+  String get noRecentSearches => 'Nu există căutări recente încă.';
+
+  @override
+  String get clearRecent => 'Șterge recentele';
+
+  @override
+  String get greeting => 'La ce acțiune ne uităm?';
+
+  @override
+  String get searchHint => 'Simbol sau numele companiei';
+
+  @override
+  String get attachImage => 'Atașează o imagine';
+
+  @override
+  String get searchResultsTitle => 'Rezultatele căutării';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nu s-au găsit acțiuni pentru „$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Scrie un simbol sau numele unei companii…';
+
+  @override
+  String get openFullWindow => 'Deschide fereastra';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Apasă $shortcut oriunde pentru a deschide StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Deschide StockLens';
+
+  @override
+  String get trayQuickSearch => 'Căutare rapidă';
+
+  @override
+  String get trayQuit => 'Ieșire';
+
+  @override
+  String get appearance => 'Aspect';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Întunecat';
+
+  @override
+  String get themeLight => 'Luminos';
+
+  @override
+  String get back => 'Înapoi';
+
+  @override
+  String get aiSectionTitle => 'Analiză AI';
+
+  @override
+  String get aiIntro =>
+      'O prezentare detaliată scrisă de AI: rezumatul știrilor recente, afacerea, punctele forte, riscurile și factorii ascunși, evaluarea, o perspectivă a prețului cu scenarii din unghiuri psihologice, sociologice, tehnice și macroeconomice, și ce trebuie urmărit.';
+
+  @override
+  String get aiGenerate => 'Generează analiza';
+
+  @override
+  String get aiRegenerate => 'Regenerează';
+
+  @override
+  String get aiGenerating => 'Se pregătește analiza… poate dura un minut sau două.';
+
+  @override
+  String get aiSources => 'Surse';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Generată $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analiză generată de AI pe baza datelor publice și a știrilor recente. Poate conține erori sau poate fi depășită și nu reprezintă un sfat de investiții.';
+
+  @override
+  String get errAiNotConfigured => 'Analiza AI nu este configurată (lipsește ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nu s-a putut contacta serviciul AI. Verifică conexiunea la internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Serviciul AI a returnat o eroare (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Serviciul AI a refuzat să analizeze această acțiune.';
+
+  @override
+  String get errAiBadResponse => 'Răspuns neașteptat de la serviciul AI.';
+
+  @override
+  String get sectionChart => 'Graficul prețului';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1L';
+
+  @override
+  String get rangeThreeMonths => '3L';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'Istoricul prețurilor nu este disponibil de la sursa de date curentă.';
+
+  @override
+  String get sectionStatements => 'Situații financiare (anuale)';
+
+  @override
+  String get labelFiscalYear => 'An fiscal';
+
+  @override
+  String get labelRevenue => 'Venituri';
+
+  @override
+  String get labelNetIncome => 'Profit net';
+
+  @override
+  String get labelTotalAssets => 'Total active';
+
+  @override
+  String get labelTotalLiabilities => 'Total datorii';
+
+  @override
+  String get labelEquity => 'Capital propriu';
+
+  @override
+  String get labelOperatingCashFlow => 'Flux de numerar operațional';
+
+  @override
+  String get statementsUnavailable => 'Nu sunt disponibile situații financiare raportate pentru această acțiune.';
+
+  @override
+  String get launchAtLogin => 'Pornește la autentificare';
+
+  @override
+  String get hotkeyLabel => 'Scurtătură globală';
+
+  @override
+  String get hotkeyRecordHint => 'Dă clic aici, apoi apasă noua combinație de taste';
+
+  @override
+  String get hotkeyReset => 'Resetează la valoarea implicită';
+
+  @override
+  String get pasteImage => 'Lipește imaginea din clipboard';
+
+  @override
+  String get errClipboardNoImage => 'Nu există nicio imagine în clipboard.';
+
+  @override
+  String get favorites => 'Favorite';
+
+  @override
+  String get addToFavorites => 'Adaugă la favorite';
+
+  @override
+  String get removeFromFavorites => 'Elimină din favorite';
+
+  @override
+  String get noFavorites => 'Nu există favorite încă. Atinge steluța unei acțiuni pentru a o adăuga.';
+
+  @override
+  String get displayCurrency => 'Monedă de afișare';
+
+  @override
+  String get displayCurrencyNone => 'Doar moneda proprie a acțiunii';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ în $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Curs: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Actualizări';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versiunea $version';
+  }
+
+  @override
+  String get autoUpdate => 'Instalează actualizările automat';
+
+  @override
+  String get checkForUpdates => 'Caută actualizări';
+
+  @override
+  String get updateChecking => 'Se caută actualizări…';
+
+  @override
+  String get updateUpToDate => 'Ai cea mai recentă versiune.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Versiunea $version este disponibilă.';
+  }
+
+  @override
+  String get updateDownloading => 'Actualizarea se descarcă în fundal…';
+
+  @override
+  String get updateDownloaded => 'Actualizarea este gata. Repornește pentru a o instala.';
+
+  @override
+  String get updateNow => 'Actualizează';
+
+  @override
+  String get restartNow => 'Repornește';
+
+  @override
+  String get updatesViaStore => 'Actualizările sosesc automat prin magazinul de aplicații.';
+
+  @override
+  String get updateCheckFailed => 'Nu s-au putut căuta actualizări.';
+
+  @override
+  String get subscription => 'Abonament';
+
+  @override
+  String get planTrial => 'Probă';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Niciun plan activ';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de analize pe lună',
+      few: '$count analize pe lună',
+      one: '$count analiză pe lună',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Probă gratuită de $days zile cu $count analize';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Au mai rămas $days de zile de probă',
+      few: 'Au mai rămas $days zile de probă',
+      one: 'A mai rămas 1 zi de probă',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua analizele.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining din $total analize rămase în această perioadă';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de analize suplimentare',
+      few: '$count analize suplimentare',
+      one: '$count analiză suplimentară',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Se reînnoiește pe $date';
+  }
+
+  @override
+  String get choosePlan => 'Alege un plan';
+
+  @override
+  String get currentPlan => 'Planul actual';
+
+  @override
+  String get subscribe => 'Abonează-te';
+
+  @override
+  String get perMonth => '/ lună';
+
+  @override
+  String get extraPacksTitle => 'Ai nevoie de mai multe? Cumpără analize suplimentare';
+
+  @override
+  String get extraPacksHint => 'Analizele suplimentare nu expiră niciodată și sunt folosite după cota ta lunară.';
+
+  @override
+  String get buy => 'Cumpără';
+
+  @override
+  String get restorePurchases => 'Restabilește achizițiile';
+
+  @override
+  String get manageSubscription => 'Gestionează abonamentul';
+
+  @override
+  String get purchaseSuccess => 'Mulțumim! Achiziția ta este activă.';
+
+  @override
+  String get purchasePending => 'Achiziție în așteptare…';
+
+  @override
+  String get purchaseFailed => 'Achiziția nu a putut fi finalizată.';
+
+  @override
+  String get purchaseCanceled => 'Achiziție anulată.';
+
+  @override
+  String get billingUnavailable =>
+      'Achizițiile nu sunt încă disponibile pe această platformă. Abonează-te de pe telefon sau Mac; planul tău va funcționa pe toate dispozitivele.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Nu mai ai analize în această perioadă. Treci la un plan superior sau cumpără analize suplimentare.';
+
+  @override
+  String get errTrialExpired => 'Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua.';
+
+  @override
+  String get errNoPlan => 'Pentru analiza AI este necesar un plan activ.';
+
+  @override
+  String get viewPlans => 'Vezi planurile';
+
+  @override
+  String get usageTitle => 'Utilizare';
+
+  @override
+  String get demoPurchaseNote => 'Facturare demonstrativă: achizițiile sunt simulate pe această platformă.';
+
+  @override
+  String get mostPopular => 'Cel mai popular';
+
+  @override
+  String get bestValue => 'Cel mai avantajos';
+
+  @override
+  String get planFeaturesCommon =>
+      'Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 44 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI.';
+
+  @override
+  String get searchLanguages => 'Caută limbi…';
+
+  @override
+  String get noLanguageMatch => 'Nicio limbă nu se potrivește.';
+
+  @override
+  String get aiSettings => 'Analiză AI';
+
+  @override
+  String get aiLength => 'Lungime';
+
+  @override
+  String get aiDepthBrief => 'Scurtă';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Detaliată';
+
+  @override
+  String get aiDepthBriefDesc => 'Esențialul, rapid.';
+
+  @override
+  String get aiDepthStandardDesc => 'Raport complet, cu toate secțiunile.';
+
+  @override
+  String get aiDepthDeepDesc => 'Mai multe căutări web, comparație cu companii similare și detalii suplimentare.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Aproximativ $min–$max de cuvinte';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'folosește $count de analize',
+      few: 'folosește $count analize',
+      one: 'folosește 1 analiză',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nivelul cititorului';
+
+  @override
+  String get aiReaderBeginner => 'Începător';
+
+  @override
+  String get aiReaderExperienced => 'Experimentat';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Limbaj simplu; fiecare termen tehnic este explicat.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Text mai dens, cu terminologie financiară standard.';
+
+  @override
+  String get aiCounterArgument => 'Cel mai puternic contraargument';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Rezumatul se încheie mereu cu cel mai bun argument împotriva propriei concluzii.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Până la $count de căutări web pe analiză cu planul tău',
+      few: 'Până la $count căutări web pe analiză cu planul tău',
+      one: 'Până la 1 căutare web pe analiză cu planul tău',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Lungimea standard în funcție de plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. „Scurtă” folosește cu 2 mai puține, „Detaliată” cu 2 mai multe.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'până la $count de căutări web',
+      few: 'până la $count căutări web',
+      one: 'până la 1 căutare web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de căutări web pe analiză',
+      few: '$count căutări web pe analiză',
+      one: '1 căutare web pe analiză',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Această lungime necesită $needed analize, dar mai ai doar $left. Alege o lungime mai scurtă în Setări sau obține mai multe analize.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Sentimentul pieței';
+
+  @override
+  String get moodVeryPessimistic => 'Foarte pesimist';
+
+  @override
+  String get moodPessimistic => 'Pesimist';
+
+  @override
+  String get moodNeutral => 'Neutru';
+
+  @override
+  String get moodOptimistic => 'Optimist';
+
+  @override
+  String get moodVeryOptimistic => 'Foarte optimist';
+
+  @override
+  String get scenarioBull => 'Scenariu optimist';
+
+  @override
+  String get scenarioBase => 'Scenariu de bază';
+
+  @override
+  String get scenarioBear => 'Scenariu pesimist';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Preț curent: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Niveluri cheie';
+
+  @override
+  String get keyLevelSupport => 'Suport';
+
+  @override
+  String get keyLevelResistance => 'Rezistență';
+
+  @override
+  String get keyLevelAnchor => 'Ancoră';
+
+  @override
+  String get upcomingEvents => 'Evenimente viitoare';
+
+  @override
+  String get outlookChartNote => 'Intervale orientative; probabilitățile sunt estimări aproximative, nu predicții.';
 }

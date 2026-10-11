@@ -10,7 +10,7 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '株式を撮影して、その銘柄のすべてを知る。';
@@ -54,8 +54,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noCandidatesTitle => '銘柄を認識できませんでした';
 
   @override
-  String get noCandidatesBody =>
-      'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
+  String get noCandidatesBody => 'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
 
   @override
   String get whatWeSaw => '認識した内容';
@@ -81,8 +80,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about => 'このアプリについて';
 
   @override
-  String get disclaimer =>
-      'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
+  String get disclaimer => 'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
 
   @override
   String dataSource(String source) {
@@ -305,12 +303,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'アナリスト$count名',
-      one: 'アナリスト1名',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'アナリスト$count名', one: 'アナリスト1名');
     return '$_temp0';
   }
 
@@ -338,12 +331,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recognitionRawText => '画像から読み取ったテキスト';
 
   @override
-  String get errMissingAnthropicKey =>
-      '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
+  String get errMissingAnthropicKey => '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
 
   @override
-  String get errRecognitionUnreachable =>
-      '認識サービスに接続できませんでした。インターネット接続を確認してください。';
+  String get errRecognitionUnreachable => '認識サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errRecognitionHttp(String status) {
@@ -398,4 +389,512 @@ class AppLocalizationsJa extends AppLocalizations {
   String errUnknown(String detail) {
     return '問題が発生しました：$detail';
   }
+
+  @override
+  String get newSearch => '新しい検索';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '最近の検索はまだありません。';
+
+  @override
+  String get clearRecent => '履歴を消去';
+
+  @override
+  String get greeting => 'どの銘柄を見てみましょうか？';
+
+  @override
+  String get searchHint => 'ティッカーまたは会社名';
+
+  @override
+  String get attachImage => '画像を添付';
+
+  @override
+  String get searchResultsTitle => '検索結果';
+
+  @override
+  String errNoResults(String query) {
+    return '「$query」に該当する銘柄は見つかりませんでした。';
+  }
+
+  @override
+  String get quickBarHint => 'ティッカーまたは会社名を入力…';
+
+  @override
+  String get openFullWindow => 'ウィンドウを開く';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'どこからでも $shortcut を押すと StockLens を呼び出せます。';
+  }
+
+  @override
+  String get trayOpen => 'StockLens を開く';
+
+  @override
+  String get trayQuickSearch => 'クイック検索';
+
+  @override
+  String get trayQuit => '終了';
+
+  @override
+  String get appearance => '外観';
+
+  @override
+  String get themeSystem => 'システム';
+
+  @override
+  String get themeDark => 'ダーク';
+
+  @override
+  String get themeLight => 'ライト';
+
+  @override
+  String get back => '戻る';
+
+  @override
+  String get aiSectionTitle => 'AI 分析';
+
+  @override
+  String get aiIntro => 'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、心理・社会・テクニカル・マクロの観点からのシナリオを含む株価見通し、注目ポイント。';
+
+  @override
+  String get aiGenerate => '分析を生成';
+
+  @override
+  String get aiRegenerate => '再生成';
+
+  @override
+  String get aiGenerating => '分析を準備中…1〜2分かかることがあります。';
+
+  @override
+  String get aiSources => '情報源';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return '生成：$time';
+  }
+
+  @override
+  String get aiDisclaimer => '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
+
+  @override
+  String get errAiNotConfigured => 'AI 分析が設定されていません（ANTHROPIC_API_KEY がありません）。';
+
+  @override
+  String get errAiUnreachable => 'AI サービスに接続できませんでした。インターネット接続を確認してください。';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI サービスがエラーを返しました（HTTP $status）。';
+  }
+
+  @override
+  String get errAiRefused => 'AI サービスがこの銘柄の分析を拒否しました。';
+
+  @override
+  String get errAiBadResponse => 'AI サービスから予期しない応答がありました。';
+
+  @override
+  String get sectionChart => '株価チャート';
+
+  @override
+  String get rangeOneWeek => '1週';
+
+  @override
+  String get rangeOneMonth => '1月';
+
+  @override
+  String get rangeThreeMonths => '3月';
+
+  @override
+  String get rangeOneYear => '1年';
+
+  @override
+  String get rangeFiveYears => '5年';
+
+  @override
+  String get chartUnavailable => '現在のデータ提供元では株価の履歴を取得できません。';
+
+  @override
+  String get sectionStatements => '財務諸表（年次）';
+
+  @override
+  String get labelFiscalYear => '会計年度';
+
+  @override
+  String get labelRevenue => '売上高';
+
+  @override
+  String get labelNetIncome => '純利益';
+
+  @override
+  String get labelTotalAssets => '総資産';
+
+  @override
+  String get labelTotalLiabilities => '負債合計';
+
+  @override
+  String get labelEquity => '株主資本';
+
+  @override
+  String get labelOperatingCashFlow => '営業キャッシュフロー';
+
+  @override
+  String get statementsUnavailable => 'この銘柄の財務諸表は利用できません。';
+
+  @override
+  String get launchAtLogin => 'ログイン時に起動';
+
+  @override
+  String get hotkeyLabel => 'グローバルショートカット';
+
+  @override
+  String get hotkeyRecordHint => 'ここをクリックして、新しいキーの組み合わせを押してください';
+
+  @override
+  String get hotkeyReset => '既定値に戻す';
+
+  @override
+  String get pasteImage => 'クリップボードから画像を貼り付け';
+
+  @override
+  String get errClipboardNoImage => 'クリップボードに画像がありません。';
+
+  @override
+  String get favorites => 'お気に入り';
+
+  @override
+  String get addToFavorites => 'お気に入りに追加';
+
+  @override
+  String get removeFromFavorites => 'お気に入りから削除';
+
+  @override
+  String get noFavorites => 'お気に入りはまだありません。銘柄の星をタップして追加してください。';
+
+  @override
+  String get displayCurrency => '表示通貨';
+
+  @override
+  String get displayCurrencyNone => '銘柄の通貨のみ';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency換算';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'レート：1 $from = $rate $to（ECB、$date）';
+  }
+
+  @override
+  String get updates => 'アップデート';
+
+  @override
+  String currentVersion(String version) {
+    return 'バージョン $version';
+  }
+
+  @override
+  String get autoUpdate => 'アップデートを自動的にインストール';
+
+  @override
+  String get checkForUpdates => 'アップデートを確認';
+
+  @override
+  String get updateChecking => 'アップデートを確認中…';
+
+  @override
+  String get updateUpToDate => '最新バージョンをご利用中です。';
+
+  @override
+  String updateAvailable(String version) {
+    return 'バージョン $version が利用可能です。';
+  }
+
+  @override
+  String get updateDownloading => 'バックグラウンドでアップデートをダウンロード中…';
+
+  @override
+  String get updateDownloaded => 'アップデートの準備ができました。再起動してインストールしてください。';
+
+  @override
+  String get updateNow => 'アップデート';
+
+  @override
+  String get restartNow => '再起動';
+
+  @override
+  String get updatesViaStore => 'アップデートはアプリストアから自動的に配信されます。';
+
+  @override
+  String get updateCheckFailed => 'アップデートを確認できませんでした。';
+
+  @override
+  String get subscription => 'サブスクリプション';
+
+  @override
+  String get planTrial => 'トライアル';
+
+  @override
+  String get planNormal => 'ノーマル';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => '有効なプランがありません';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '月 $count 回の分析';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days 日間の無料トライアル（分析 $count 回付き）';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'トライアル残り $days 日', one: 'トライアル残り 1 日');
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => '無料トライアルが終了しました。分析を続けるにはプランを選択してください。';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '今期の分析は残り $remaining / $total 回';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '追加分析 $count 回';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date に更新';
+  }
+
+  @override
+  String get choosePlan => 'プランを選択';
+
+  @override
+  String get currentPlan => '現在のプラン';
+
+  @override
+  String get subscribe => '登録する';
+
+  @override
+  String get perMonth => '/ 月';
+
+  @override
+  String get extraPacksTitle => 'もっと必要ですか？追加分析を購入';
+
+  @override
+  String get extraPacksHint => '追加分析に有効期限はなく、月間の割り当てを使い切った後に使用されます。';
+
+  @override
+  String get buy => '購入';
+
+  @override
+  String get restorePurchases => '購入を復元';
+
+  @override
+  String get manageSubscription => 'サブスクリプションを管理';
+
+  @override
+  String get purchaseSuccess => 'ありがとうございます！購入が有効になりました。';
+
+  @override
+  String get purchasePending => '購入処理中…';
+
+  @override
+  String get purchaseFailed => '購入を完了できませんでした。';
+
+  @override
+  String get purchaseCanceled => '購入がキャンセルされました。';
+
+  @override
+  String get billingUnavailable => 'このプラットフォームではまだ購入できません。スマートフォンまたは Mac で登録すると、プランはすべてのデバイスで利用できます。';
+
+  @override
+  String get errQuotaExceeded => '今期の分析回数を使い切りました。プランをアップグレードするか、追加分析を購入してください。';
+
+  @override
+  String get errTrialExpired => '無料トライアルが終了しました。続けるにはプランを選択してください。';
+
+  @override
+  String get errNoPlan => 'AI 分析には有効なプランが必要です。';
+
+  @override
+  String get viewPlans => 'プランを見る';
+
+  @override
+  String get usageTitle => '使用状況';
+
+  @override
+  String get demoPurchaseNote => 'デモ課金：このプラットフォームでの購入はシミュレーションです。';
+
+  @override
+  String get mostPopular => '一番人気';
+
+  @override
+  String get bestValue => '最もお得';
+
+  @override
+  String get planFeaturesCommon => '写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
+
+  @override
+  String get searchLanguages => '言語を検索…';
+
+  @override
+  String get noLanguageMatch => '一致する言語がありません。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '長さ';
+
+  @override
+  String get aiDepthBrief => '簡潔';
+
+  @override
+  String get aiDepthStandard => '標準';
+
+  @override
+  String get aiDepthDeep => '詳細';
+
+  @override
+  String get aiDepthBriefDesc => '要点をすばやく。';
+
+  @override
+  String get aiDepthStandardDesc => 'すべてのセクションを含む完全なレポート。';
+
+  @override
+  String get aiDepthDeepDesc => 'より多くのウェブ検索、同業他社との比較、より踏み込んだ詳細。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '約 $min〜$max 語';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 $count 回分を使用');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '読者レベル';
+
+  @override
+  String get aiReaderBeginner => '初心者';
+
+  @override
+  String get aiReaderExperienced => '経験者';
+
+  @override
+  String get aiReaderBeginnerDesc => '平易な言葉で、専門用語はすべて説明します。';
+
+  @override
+  String get aiReaderExperiencedDesc => '標準的な金融用語を使った、より密度の高い文章。';
+
+  @override
+  String get aiCounterArgument => '最も有力な反論';
+
+  @override
+  String get aiCounterArgumentDesc => 'サマリーの最後には、必ず自らの結論に対する最も有力な反論を示します。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ご利用のプランでは分析 1 回につき最大 $count 回のウェブ検索');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'プラン別の標準の長さ：ノーマル $normal、Pro $pro、Max $max、Ultra $ultra。簡潔は 2 回少なく、詳細は 2 回多くなります。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最大 $count 回のウェブ検索');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 1 回につきウェブ検索 $count 回');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'この長さには分析 $needed 回分が必要ですが、残りは $left 回です。設定で短い長さを選ぶか、追加の分析を入手してください。';
+  }
+
+  @override
+  String get outlookMarketMood => '市場センチメント';
+
+  @override
+  String get moodVeryPessimistic => '非常に悲観的';
+
+  @override
+  String get moodPessimistic => '悲観的';
+
+  @override
+  String get moodNeutral => '中立';
+
+  @override
+  String get moodOptimistic => '楽観的';
+
+  @override
+  String get moodVeryOptimistic => '非常に楽観的';
+
+  @override
+  String get scenarioBull => '強気シナリオ';
+
+  @override
+  String get scenarioBase => '基本シナリオ';
+
+  @override
+  String get scenarioBear => '弱気シナリオ';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '現在値：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '重要な価格水準';
+
+  @override
+  String get keyLevelSupport => 'サポート';
+
+  @override
+  String get keyLevelResistance => 'レジスタンス';
+
+  @override
+  String get keyLevelAnchor => '基準価格';
+
+  @override
+  String get upcomingEvents => '今後のイベント';
+
+  @override
+  String get outlookChartNote => '価格帯は目安です。確率は大まかな見立てであり、予測ではありません。';
 }

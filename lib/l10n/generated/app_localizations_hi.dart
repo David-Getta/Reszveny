@@ -10,11 +10,10 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'किसी शेयर की फ़ोटो लें और उसके बारे में सब कुछ जानें।';
+  String get homeTagline => 'किसी शेयर की फ़ोटो लें और उसके बारे में सब कुछ जानें।';
 
   @override
   String get homeHint =>
@@ -83,8 +82,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get about => 'ऐप के बारे में';
 
   @override
-  String get disclaimer =>
-      'यह ऐप केवल जानकारी देता है और निवेश सलाह नहीं है। डेटा विलंबित या अशुद्ध हो सकता है।';
+  String get disclaimer => 'यह ऐप केवल जानकारी देता है और निवेश सलाह नहीं है। डेटा विलंबित या अशुद्ध हो सकता है।';
 
   @override
   String dataSource(String source) {
@@ -307,12 +305,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count विश्लेषक',
-      one: '1 विश्लेषक',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count विश्लेषक', one: '1 विश्लेषक');
     return '$_temp0';
   }
 
@@ -344,8 +337,7 @@ class AppLocalizationsHi extends AppLocalizations {
       'छवि पहचान कॉन्फ़िगर नहीं है (ANTHROPIC_API_KEY नहीं है)। टिकर मैन्युअल रूप से दर्ज करें।';
 
   @override
-  String get errRecognitionUnreachable =>
-      'पहचान सेवा से संपर्क नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें।';
+  String get errRecognitionUnreachable => 'पहचान सेवा से संपर्क नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,31 +345,25 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'पहचान सेवा इस छवि को प्रोसेस नहीं कर सकी।';
+  String get errRecognitionRefused => 'पहचान सेवा इस छवि को प्रोसेस नहीं कर सकी।';
 
   @override
-  String get errRecognitionTruncated =>
-      'पहचान प्रतिक्रिया अधूरी रह गई। कृपया पुनः प्रयास करें।';
+  String get errRecognitionTruncated => 'पहचान प्रतिक्रिया अधूरी रह गई। कृपया पुनः प्रयास करें।';
 
   @override
-  String get errRecognitionBadResponse =>
-      'पहचान सेवा से अनपेक्षित प्रतिक्रिया।';
+  String get errRecognitionBadResponse => 'पहचान सेवा से अनपेक्षित प्रतिक्रिया।';
 
   @override
   String get errRecognitionEmpty => 'पहचान सेवा ने खाली प्रतिक्रिया लौटाई।';
 
   @override
-  String get errMissingFinnhubKey =>
-      'मार्केट डेटा कॉन्फ़िगर नहीं है (FINNHUB_API_KEY नहीं है)।';
+  String get errMissingFinnhubKey => 'मार्केट डेटा कॉन्फ़िगर नहीं है (FINNHUB_API_KEY नहीं है)।';
 
   @override
-  String get errMarketUnreachable =>
-      'मार्केट डेटा सेवा से संपर्क नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें।';
+  String get errMarketUnreachable => 'मार्केट डेटा सेवा से संपर्क नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें।';
 
   @override
-  String get errMarketRateLimited =>
-      'मार्केट डेटा सेवा को बहुत अधिक अनुरोध भेजे गए। कृपया एक मिनट प्रतीक्षा करें।';
+  String get errMarketRateLimited => 'मार्केट डेटा सेवा को बहुत अधिक अनुरोध भेजे गए। कृपया एक मिनट प्रतीक्षा करें।';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +371,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'मार्केट डेटा सेवा से अनपेक्षित प्रतिक्रिया।';
+  String get errMarketBadResponse => 'मार्केट डेटा सेवा से अनपेक्षित प्रतिक्रिया।';
 
   @override
   String errNoQuote(String symbol) {
@@ -407,4 +392,543 @@ class AppLocalizationsHi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'कुछ गलत हो गया: $detail';
   }
+
+  @override
+  String get newSearch => 'नई खोज';
+
+  @override
+  String get recentSearches => 'हाल के';
+
+  @override
+  String get noRecentSearches => 'अभी तक कोई हाल की खोज नहीं।';
+
+  @override
+  String get clearRecent => 'हाल के साफ़ करें';
+
+  @override
+  String get greeting => 'आज कौन-सा शेयर देखें?';
+
+  @override
+  String get searchHint => 'टिकर या कंपनी का नाम';
+
+  @override
+  String get attachImage => 'छवि संलग्न करें';
+
+  @override
+  String get searchResultsTitle => 'खोज परिणाम';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” के लिए कोई शेयर नहीं मिला।';
+  }
+
+  @override
+  String get quickBarHint => 'टिकर या कंपनी का नाम टाइप करें…';
+
+  @override
+  String get openFullWindow => 'विंडो खोलें';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'StockLens को कहीं से भी खोलने के लिए $shortcut दबाएँ।';
+  }
+
+  @override
+  String get trayOpen => 'StockLens खोलें';
+
+  @override
+  String get trayQuickSearch => 'त्वरित खोज';
+
+  @override
+  String get trayQuit => 'बाहर निकलें';
+
+  @override
+  String get appearance => 'दिखावट';
+
+  @override
+  String get themeSystem => 'सिस्टम';
+
+  @override
+  String get themeDark => 'डार्क';
+
+  @override
+  String get themeLight => 'लाइट';
+
+  @override
+  String get back => 'वापस';
+
+  @override
+  String get aiSectionTitle => 'AI विश्लेषण';
+
+  @override
+  String get aiIntro =>
+      'AI द्वारा लिखा गया विस्तृत अवलोकन: हाल के समाचारों का सारांश, कारोबार, मज़बूतियाँ, जोखिम और छिपे कारक, मूल्यांकन, मनोवैज्ञानिक, सामाजिक, तकनीकी और समष्टि-आर्थिक दृष्टिकोण से परिदृश्यों के साथ कीमत का पूर्वानुमान, और किन बातों पर नज़र रखें।';
+
+  @override
+  String get aiGenerate => 'विश्लेषण बनाएँ';
+
+  @override
+  String get aiRegenerate => 'फिर से बनाएँ';
+
+  @override
+  String get aiGenerating => 'विश्लेषण तैयार हो रहा है… इसमें एक-दो मिनट लग सकते हैं।';
+
+  @override
+  String get aiSources => 'स्रोत';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'बनाया गया $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'सार्वजनिक डेटा और हाल के समाचारों पर आधारित AI-जनित विश्लेषण। इसमें त्रुटियाँ हो सकती हैं या यह पुराना हो सकता है, और यह निवेश सलाह नहीं है।';
+
+  @override
+  String get errAiNotConfigured => 'AI विश्लेषण कॉन्फ़िगर नहीं है (ANTHROPIC_API_KEY नहीं है)।';
+
+  @override
+  String get errAiUnreachable => 'AI सेवा से संपर्क नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें।';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI सेवा ने एक त्रुटि लौटाई (HTTP $status)।';
+  }
+
+  @override
+  String get errAiRefused => 'AI सेवा ने इस शेयर का विश्लेषण करने से इनकार कर दिया।';
+
+  @override
+  String get errAiBadResponse => 'AI सेवा से अनपेक्षित प्रतिक्रिया।';
+
+  @override
+  String get sectionChart => 'कीमत चार्ट';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'वर्तमान डेटा स्रोत से कीमत का इतिहास उपलब्ध नहीं है।';
+
+  @override
+  String get sectionStatements => 'वित्तीय विवरण (वार्षिक)';
+
+  @override
+  String get labelFiscalYear => 'वित्त वर्ष';
+
+  @override
+  String get labelRevenue => 'राजस्व';
+
+  @override
+  String get labelNetIncome => 'शुद्ध आय';
+
+  @override
+  String get labelTotalAssets => 'कुल संपत्ति';
+
+  @override
+  String get labelTotalLiabilities => 'कुल देनदारियाँ';
+
+  @override
+  String get labelEquity => 'शेयरधारकों की इक्विटी';
+
+  @override
+  String get labelOperatingCashFlow => 'परिचालन कैश फ़्लो';
+
+  @override
+  String get statementsUnavailable => 'इस शेयर के लिए रिपोर्ट किए गए वित्तीय विवरण उपलब्ध नहीं हैं।';
+
+  @override
+  String get launchAtLogin => 'लॉगइन पर लॉन्च करें';
+
+  @override
+  String get hotkeyLabel => 'ग्लोबल शॉर्टकट';
+
+  @override
+  String get hotkeyRecordHint => 'यहाँ क्लिक करें, फिर नया कुंजी संयोजन दबाएँ';
+
+  @override
+  String get hotkeyReset => 'डिफ़ॉल्ट पर रीसेट करें';
+
+  @override
+  String get pasteImage => 'क्लिपबोर्ड से छवि पेस्ट करें';
+
+  @override
+  String get errClipboardNoImage => 'क्लिपबोर्ड में कोई छवि नहीं है।';
+
+  @override
+  String get favorites => 'पसंदीदा';
+
+  @override
+  String get addToFavorites => 'पसंदीदा में जोड़ें';
+
+  @override
+  String get removeFromFavorites => 'पसंदीदा से हटाएँ';
+
+  @override
+  String get noFavorites => 'अभी तक कोई पसंदीदा नहीं। जोड़ने के लिए किसी शेयर पर स्टार टैप करें।';
+
+  @override
+  String get displayCurrency => 'प्रदर्शित मुद्रा';
+
+  @override
+  String get displayCurrencyNone => 'केवल शेयर की अपनी मुद्रा';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency में';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'दर: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'अपडेट';
+
+  @override
+  String currentVersion(String version) {
+    return 'संस्करण $version';
+  }
+
+  @override
+  String get autoUpdate => 'अपडेट स्वचालित रूप से इंस्टॉल करें';
+
+  @override
+  String get checkForUpdates => 'अपडेट जाँचें';
+
+  @override
+  String get updateChecking => 'अपडेट जाँचे जा रहे हैं…';
+
+  @override
+  String get updateUpToDate => 'आप नवीनतम संस्करण पर हैं।';
+
+  @override
+  String updateAvailable(String version) {
+    return 'संस्करण $version उपलब्ध है।';
+  }
+
+  @override
+  String get updateDownloading => 'अपडेट बैकग्राउंड में डाउनलोड हो रहा है…';
+
+  @override
+  String get updateDownloaded => 'अपडेट तैयार है। इंस्टॉल करने के लिए पुनः प्रारंभ करें।';
+
+  @override
+  String get updateNow => 'अपडेट करें';
+
+  @override
+  String get restartNow => 'पुनः प्रारंभ करें';
+
+  @override
+  String get updatesViaStore => 'अपडेट ऐप स्टोर के माध्यम से स्वचालित रूप से मिलते हैं।';
+
+  @override
+  String get updateCheckFailed => 'अपडेट की जाँच नहीं की जा सकी।';
+
+  @override
+  String get subscription => 'सदस्यता';
+
+  @override
+  String get planTrial => 'ट्रायल';
+
+  @override
+  String get planNormal => 'सामान्य';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'कोई सक्रिय प्लान नहीं';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'प्रति माह $count विश्लेषण';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$count विश्लेषणों के साथ $days दिन का निःशुल्क ट्रायल';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ट्रायल के $days दिन बाकी',
+      one: 'ट्रायल का 1 दिन बाकी',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'आपका निःशुल्क ट्रायल समाप्त हो गया है। विश्लेषण जारी रखने के लिए कोई प्लान चुनें।';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'इस अवधि में $total में से $remaining विश्लेषण बाकी';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count अतिरिक्त विश्लेषण';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date को नवीनीकरण';
+  }
+
+  @override
+  String get choosePlan => 'प्लान चुनें';
+
+  @override
+  String get currentPlan => 'वर्तमान प्लान';
+
+  @override
+  String get subscribe => 'सदस्यता लें';
+
+  @override
+  String get perMonth => '/ माह';
+
+  @override
+  String get extraPacksTitle => 'और चाहिए? अतिरिक्त विश्लेषण खरीदें';
+
+  @override
+  String get extraPacksHint => 'अतिरिक्त विश्लेषण कभी समाप्त नहीं होते और आपके मासिक कोटे के बाद उपयोग होते हैं।';
+
+  @override
+  String get buy => 'खरीदें';
+
+  @override
+  String get restorePurchases => 'खरीदारी पुनर्स्थापित करें';
+
+  @override
+  String get manageSubscription => 'सदस्यता प्रबंधित करें';
+
+  @override
+  String get purchaseSuccess => 'धन्यवाद! आपकी खरीदारी सक्रिय है।';
+
+  @override
+  String get purchasePending => 'खरीदारी लंबित है…';
+
+  @override
+  String get purchaseFailed => 'खरीदारी पूरी नहीं हो सकी।';
+
+  @override
+  String get purchaseCanceled => 'खरीदारी रद्द कर दी गई।';
+
+  @override
+  String get billingUnavailable =>
+      'इस प्लैटफ़ॉर्म पर खरीदारी अभी उपलब्ध नहीं है। अपने फ़ोन या Mac पर सदस्यता लें; आपका प्लान हर डिवाइस पर काम करेगा।';
+
+  @override
+  String get errQuotaExceeded =>
+      'इस अवधि के लिए आपके पास कोई विश्लेषण बाकी नहीं है। अपना प्लान अपग्रेड करें या अतिरिक्त विश्लेषण खरीदें।';
+
+  @override
+  String get errTrialExpired => 'आपका निःशुल्क ट्रायल समाप्त हो गया है। जारी रखने के लिए कोई प्लान चुनें।';
+
+  @override
+  String get errNoPlan => 'AI विश्लेषण के लिए एक सक्रिय प्लान आवश्यक है।';
+
+  @override
+  String get viewPlans => 'प्लान देखें';
+
+  @override
+  String get usageTitle => 'उपयोग';
+
+  @override
+  String get demoPurchaseNote => 'डेमो बिलिंग: इस प्लैटफ़ॉर्म पर खरीदारी सिम्युलेट की जाती है।';
+
+  @override
+  String get mostPopular => 'सबसे लोकप्रिय';
+
+  @override
+  String get bestValue => 'सर्वोत्तम मूल्य';
+
+  @override
+  String get planFeaturesCommon =>
+      'फ़ोटो पहचान, लाइव डेटा, चार्ट, पसंदीदा और सभी 44 भाषाएँ हर प्लान में शामिल हैं। कोटा AI विश्लेषणों पर लागू होता है।';
+
+  @override
+  String get searchLanguages => 'भाषाएँ खोजें…';
+
+  @override
+  String get noLanguageMatch => 'कोई भाषा मेल नहीं खाती।';
+
+  @override
+  String get aiSettings => 'AI विश्लेषण';
+
+  @override
+  String get aiLength => 'लंबाई';
+
+  @override
+  String get aiDepthBrief => 'संक्षिप्त';
+
+  @override
+  String get aiDepthStandard => 'मानक';
+
+  @override
+  String get aiDepthDeep => 'विस्तृत';
+
+  @override
+  String get aiDepthBriefDesc => 'ज़रूरी बातें, जल्दी।';
+
+  @override
+  String get aiDepthStandardDesc => 'हर अनुभाग के साथ पूरी रिपोर्ट।';
+
+  @override
+  String get aiDepthDeepDesc => 'ज़्यादा वेब खोजें, समकक्ष कंपनियों से तुलना और गहरा विवरण।';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'लगभग $min–$max शब्द';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषण खर्च होते हैं',
+      one: '1 विश्लेषण खर्च होता है',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'पाठक स्तर';
+
+  @override
+  String get aiReaderBeginner => 'शुरुआती';
+
+  @override
+  String get aiReaderExperienced => 'अनुभवी';
+
+  @override
+  String get aiReaderBeginnerDesc => 'सरल भाषा; हर तकनीकी शब्द समझाया जाता है।';
+
+  @override
+  String get aiReaderExperiencedDesc => 'मानक वित्तीय शब्दावली के साथ सघन पाठ।';
+
+  @override
+  String get aiCounterArgument => 'सबसे मज़बूत प्रतितर्क';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'सारांश हमेशा अपने ही निष्कर्ष के विरुद्ध सबसे मज़बूत तर्क के साथ समाप्त होता है।';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'आपके प्लान में प्रति विश्लेषण अधिकतम $count वेब खोजें',
+      one: 'आपके प्लान में प्रति विश्लेषण अधिकतम 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'प्लान के अनुसार मानक लंबाई: सामान्य $normal, Pro $pro, Max $max, Ultra $ultra। संक्षिप्त में 2 कम, विस्तृत में 2 अधिक।';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'अधिकतम $count वेब खोजें',
+      one: 'अधिकतम 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'प्रति विश्लेषण $count वेब खोजें',
+      one: 'प्रति विश्लेषण 1 वेब खोज',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'इस लंबाई के लिए $needed विश्लेषण चाहिए, लेकिन केवल $left बाकी हैं। सेटिंग्स में छोटी लंबाई चुनें या और विश्लेषण लें।';
+  }
+
+  @override
+  String get outlookMarketMood => 'बाज़ार का मूड';
+
+  @override
+  String get moodVeryPessimistic => 'बहुत निराशावादी';
+
+  @override
+  String get moodPessimistic => 'निराशावादी';
+
+  @override
+  String get moodNeutral => 'तटस्थ';
+
+  @override
+  String get moodOptimistic => 'आशावादी';
+
+  @override
+  String get moodVeryOptimistic => 'बहुत आशावादी';
+
+  @override
+  String get scenarioBull => 'तेज़ी परिदृश्य';
+
+  @override
+  String get scenarioBase => 'आधार परिदृश्य';
+
+  @override
+  String get scenarioBear => 'मंदी परिदृश्य';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'वर्तमान कीमत: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'प्रमुख स्तर';
+
+  @override
+  String get keyLevelSupport => 'सपोर्ट';
+
+  @override
+  String get keyLevelResistance => 'रेज़िस्टेंस';
+
+  @override
+  String get keyLevelAnchor => 'एंकर स्तर';
+
+  @override
+  String get upcomingEvents => 'आगामी घटनाएँ';
+
+  @override
+  String get outlookChartNote => 'सांकेतिक दायरे; संभावनाएँ मोटे अनुमान हैं, भविष्यवाणियाँ नहीं।';
 }

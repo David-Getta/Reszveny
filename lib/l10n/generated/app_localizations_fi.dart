@@ -10,7 +10,7 @@ class AppLocalizationsFi extends AppLocalizations {
   AppLocalizationsFi([String locale = 'fi']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Kuvaa osake ja opi siitä kaikki.';
@@ -343,8 +343,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Kuvantunnistusta ei ole määritetty (ei ANTHROPIC_API_KEY). Syötä tunnus manuaalisesti.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errRecognitionUnreachable => 'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -352,32 +351,25 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
+  String get errRecognitionRefused => 'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
+  String get errRecognitionTruncated => 'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Odottamaton vastaus tunnistuspalvelulta.';
+  String get errRecognitionBadResponse => 'Odottamaton vastaus tunnistuspalvelulta.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Tunnistuspalvelu palautti tyhjän vastauksen.';
+  String get errRecognitionEmpty => 'Tunnistuspalvelu palautti tyhjän vastauksen.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errMarketUnreachable => 'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
-  String get errMarketRateLimited =>
-      'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
+  String get errMarketRateLimited => 'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,8 +377,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Odottamaton vastaus markkinadatapalvelulta.';
+  String get errMarketBadResponse => 'Odottamaton vastaus markkinadatapalvelulta.';
 
   @override
   String errNoQuote(String symbol) {
@@ -407,4 +398,543 @@ class AppLocalizationsFi extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Jokin meni vikaan: $detail';
   }
+
+  @override
+  String get newSearch => 'Uusi haku';
+
+  @override
+  String get recentSearches => 'Viimeisimmät';
+
+  @override
+  String get noRecentSearches => 'Ei viimeaikaisia hakuja.';
+
+  @override
+  String get clearRecent => 'Tyhjennä viimeisimmät';
+
+  @override
+  String get greeting => 'Mitä osaketta tarkastellaan?';
+
+  @override
+  String get searchHint => 'Tunnus tai yrityksen nimi';
+
+  @override
+  String get attachImage => 'Liitä kuva';
+
+  @override
+  String get searchResultsTitle => 'Hakutulokset';
+
+  @override
+  String errNoResults(String query) {
+    return 'Osakkeita ei löytynyt haulla ”$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Kirjoita tunnus tai yrityksen nimi…';
+
+  @override
+  String get openFullWindow => 'Avaa ikkuna';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Paina $shortcut missä tahansa, niin StockLens avautuu.';
+  }
+
+  @override
+  String get trayOpen => 'Avaa StockLens';
+
+  @override
+  String get trayQuickSearch => 'Pikahaku';
+
+  @override
+  String get trayQuit => 'Lopeta';
+
+  @override
+  String get appearance => 'Ulkoasu';
+
+  @override
+  String get themeSystem => 'Järjestelmä';
+
+  @override
+  String get themeDark => 'Tumma';
+
+  @override
+  String get themeLight => 'Vaalea';
+
+  @override
+  String get back => 'Takaisin';
+
+  @override
+  String get aiSectionTitle => 'Tekoälyanalyysi';
+
+  @override
+  String get aiIntro =>
+      'Yksityiskohtainen, tekoälyn kirjoittama katsaus: tuoreiden uutisten yhteenveto, liiketoiminta, vahvuudet, riskit ja piilevät tekijät, arvostus, hintanäkymä skenaarioineen psykologisesta, sosiologisesta, teknisestä ja makrotalouden näkökulmasta sekä mitä seurata.';
+
+  @override
+  String get aiGenerate => 'Luo analyysi';
+
+  @override
+  String get aiRegenerate => 'Luo uudelleen';
+
+  @override
+  String get aiGenerating => 'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
+
+  @override
+  String get aiSources => 'Lähteet';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Luotu $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Tekoälyn tuottama analyysi, joka perustuu julkisiin tietoihin ja tuoreisiin uutisiin. Se voi sisältää virheitä tai olla vanhentunut, eikä se ole sijoitusneuvontaa.';
+
+  @override
+  String get errAiNotConfigured => 'Tekoälyanalyysia ei ole määritetty (ei ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Tekoälypalvelu palautti virheen (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
+
+  @override
+  String get errAiBadResponse => 'Odottamaton vastaus tekoälypalvelulta.';
+
+  @override
+  String get sectionChart => 'Kurssikaavio';
+
+  @override
+  String get rangeOneWeek => '1vk';
+
+  @override
+  String get rangeOneMonth => '1kk';
+
+  @override
+  String get rangeThreeMonths => '3kk';
+
+  @override
+  String get rangeOneYear => '1v';
+
+  @override
+  String get rangeFiveYears => '5v';
+
+  @override
+  String get chartUnavailable => 'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
+
+  @override
+  String get sectionStatements => 'Tilinpäätöstiedot (vuosittain)';
+
+  @override
+  String get labelFiscalYear => 'Tilikausi';
+
+  @override
+  String get labelRevenue => 'Liikevaihto';
+
+  @override
+  String get labelNetIncome => 'Nettotulos';
+
+  @override
+  String get labelTotalAssets => 'Varat yhteensä';
+
+  @override
+  String get labelTotalLiabilities => 'Velat yhteensä';
+
+  @override
+  String get labelEquity => 'Oma pääoma';
+
+  @override
+  String get labelOperatingCashFlow => 'Liiketoiminnan rahavirta';
+
+  @override
+  String get statementsUnavailable => 'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
+
+  @override
+  String get launchAtLogin => 'Käynnistä sisäänkirjautuessa';
+
+  @override
+  String get hotkeyLabel => 'Yleinen pikanäppäin';
+
+  @override
+  String get hotkeyRecordHint => 'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
+
+  @override
+  String get hotkeyReset => 'Palauta oletus';
+
+  @override
+  String get pasteImage => 'Liitä kuva leikepöydältä';
+
+  @override
+  String get errClipboardNoImage => 'Leikepöydällä ei ole kuvaa.';
+
+  @override
+  String get favorites => 'Suosikit';
+
+  @override
+  String get addToFavorites => 'Lisää suosikkeihin';
+
+  @override
+  String get removeFromFavorites => 'Poista suosikeista';
+
+  @override
+  String get noFavorites => 'Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.';
+
+  @override
+  String get displayCurrency => 'Näyttövaluutta';
+
+  @override
+  String get displayCurrencyNone => 'Vain osakkeen oma valuutta';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ valuutassa $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurssi: 1 $from = $rate $to (EKP, $date)';
+  }
+
+  @override
+  String get updates => 'Päivitykset';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versio $version';
+  }
+
+  @override
+  String get autoUpdate => 'Asenna päivitykset automaattisesti';
+
+  @override
+  String get checkForUpdates => 'Tarkista päivitykset';
+
+  @override
+  String get updateChecking => 'Tarkistetaan päivityksiä…';
+
+  @override
+  String get updateUpToDate => 'Käytössäsi on uusin versio.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Versio $version on saatavilla.';
+  }
+
+  @override
+  String get updateDownloading => 'Päivitystä ladataan taustalla…';
+
+  @override
+  String get updateDownloaded => 'Päivitys on valmis. Käynnistä sovellus uudelleen asentaaksesi sen.';
+
+  @override
+  String get updateNow => 'Päivitä';
+
+  @override
+  String get restartNow => 'Käynnistä uudelleen';
+
+  @override
+  String get updatesViaStore => 'Päivitykset saapuvat automaattisesti sovelluskaupan kautta.';
+
+  @override
+  String get updateCheckFailed => 'Päivityksiä ei voitu tarkistaa.';
+
+  @override
+  String get subscription => 'Tilaus';
+
+  @override
+  String get planTrial => 'Kokeilu';
+
+  @override
+  String get planNormal => 'Normaali';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Ei aktiivista pakettia';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analyysia kuukaudessa';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days päivän ilmainen kokeilu, $count analyysia';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Kokeilua jäljellä $days päivää',
+      one: 'Kokeilua jäljellä 1 päivä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi analysointia.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining/$total analyysia jäljellä tällä jaksolla';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count lisäanalyysia';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Uusiutuu $date';
+  }
+
+  @override
+  String get choosePlan => 'Valitse paketti';
+
+  @override
+  String get currentPlan => 'Nykyinen paketti';
+
+  @override
+  String get subscribe => 'Tilaa';
+
+  @override
+  String get perMonth => '/ kk';
+
+  @override
+  String get extraPacksTitle => 'Tarvitsetko lisää? Osta lisäanalyyseja';
+
+  @override
+  String get extraPacksHint => 'Lisäanalyysit eivät vanhene koskaan, ja ne käytetään kuukausikiintiön jälkeen.';
+
+  @override
+  String get buy => 'Osta';
+
+  @override
+  String get restorePurchases => 'Palauta ostokset';
+
+  @override
+  String get manageSubscription => 'Hallitse tilausta';
+
+  @override
+  String get purchaseSuccess => 'Kiitos! Ostoksesi on aktiivinen.';
+
+  @override
+  String get purchasePending => 'Ostos odottaa…';
+
+  @override
+  String get purchaseFailed => 'Ostosta ei voitu viedä loppuun.';
+
+  @override
+  String get purchaseCanceled => 'Ostos peruutettiin.';
+
+  @override
+  String get billingUnavailable =>
+      'Ostokset eivät ole vielä saatavilla tällä alustalla. Tilaa puhelimella tai Macilla; pakettisi toimii kaikilla laitteilla.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Analyyseja ei ole jäljellä tällä jaksolla. Päivitä pakettisi tai osta lisäanalyyseja.';
+
+  @override
+  String get errTrialExpired => 'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi.';
+
+  @override
+  String get errNoPlan => 'Tekoälyanalyysi edellyttää aktiivista pakettia.';
+
+  @override
+  String get viewPlans => 'Näytä paketit';
+
+  @override
+  String get usageTitle => 'Käyttö';
+
+  @override
+  String get demoPurchaseNote => 'Demolaskutus: ostokset simuloidaan tällä alustalla.';
+
+  @override
+  String get mostPopular => 'Suosituin';
+
+  @override
+  String get bestValue => 'Paras vastine rahalle';
+
+  @override
+  String get planFeaturesCommon =>
+      'Kuvantunnistus, reaaliaikaiset tiedot, kaaviot, suosikit ja kaikki 44 kieltä sisältyvät jokaiseen pakettiin. Kiintiö koskee tekoälyanalyyseja.';
+
+  @override
+  String get searchLanguages => 'Hae kieliä…';
+
+  @override
+  String get noLanguageMatch => 'Ei vastaavia kieliä.';
+
+  @override
+  String get aiSettings => 'Tekoälyanalyysi';
+
+  @override
+  String get aiLength => 'Pituus';
+
+  @override
+  String get aiDepthBrief => 'Lyhyt';
+
+  @override
+  String get aiDepthStandard => 'Vakio';
+
+  @override
+  String get aiDepthDeep => 'Syvällinen';
+
+  @override
+  String get aiDepthBriefDesc => 'Olennaisin, nopeasti.';
+
+  @override
+  String get aiDepthStandardDesc => 'Täysi raportti kaikkine osioineen.';
+
+  @override
+  String get aiDepthDeepDesc => 'Enemmän verkkohakuja, vertailu kilpailijoihin ja syvällisemmät yksityiskohdat.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Noin $min–$max sanaa';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kuluttaa $count analyysia',
+      one: 'kuluttaa 1 analyysin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Lukijan taso';
+
+  @override
+  String get aiReaderBeginner => 'Aloittelija';
+
+  @override
+  String get aiReaderExperienced => 'Kokenut';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Selkeää kieltä; jokainen termi selitetään.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Tiiviimpää tekstiä vakiintuneella rahoitusalan terminologialla.';
+
+  @override
+  String get aiCounterArgument => 'Vahvin vasta-argumentti';
+
+  @override
+  String get aiCounterArgumentDesc => 'Yhteenveto päättyy aina vahvimpaan perusteluun omaa johtopäätöstään vastaan.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Enintään $count verkkohakua analyysia kohden paketillasi',
+      one: 'Enintään 1 verkkohaku analyysia kohden paketillasi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Vakiopituus paketeittain: Normaali $normal, Pro $pro, Max $max, Ultra $ultra. Lyhyt käyttää 2 vähemmän, Syvällinen 2 enemmän.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'enintään $count verkkohakua',
+      one: 'enintään 1 verkkohaku',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verkkohakua analyysia kohden',
+      one: '1 verkkohaku analyysia kohden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Tämä pituus vaatii $needed analyysia, mutta jäljellä on vain $left. Valitse lyhyempi pituus Asetuksista tai hanki lisää analyyseja.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Markkinatunnelma';
+
+  @override
+  String get moodVeryPessimistic => 'Erittäin pessimistinen';
+
+  @override
+  String get moodPessimistic => 'Pessimistinen';
+
+  @override
+  String get moodNeutral => 'Neutraali';
+
+  @override
+  String get moodOptimistic => 'Optimistinen';
+
+  @override
+  String get moodVeryOptimistic => 'Erittäin optimistinen';
+
+  @override
+  String get scenarioBull => 'Optimistinen skenaario';
+
+  @override
+  String get scenarioBase => 'Perusskenaario';
+
+  @override
+  String get scenarioBear => 'Pessimistinen skenaario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Nykyinen kurssi: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Keskeiset tasot';
+
+  @override
+  String get keyLevelSupport => 'Tuki';
+
+  @override
+  String get keyLevelResistance => 'Vastus';
+
+  @override
+  String get keyLevelAnchor => 'Ankkuritaso';
+
+  @override
+  String get upcomingEvents => 'Tulevat tapahtumat';
+
+  @override
+  String get outlookChartNote =>
+      'Suuntaa antavat vaihteluvälit; todennäköisyydet ovat karkeita arvioita, eivät ennusteita.';
 }

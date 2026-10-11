@@ -1,6 +1,9 @@
 import 'dart:typed_data';
 
 import 'package:image_picker/image_picker.dart';
+import 'package:pasteboard/pasteboard.dart';
+
+import '../../core/errors.dart';
 
 /// Egy elkészített vagy kiválasztott kép.
 class CapturedImage {
@@ -33,6 +36,21 @@ class CaptureService {
   Future<CapturedImage?> fromCamera() => _pick(ImageSource.camera);
 
   Future<CapturedImage?> fromGallery() => _pick(ImageSource.gallery);
+
+  /// Kép a vágólapról (pl. képernyőfotó ⌘⇧4 után). Hiba, ha nincs kép.
+  Future<CapturedImage> fromClipboard() async {
+    final bytes = await Pasteboard.image;
+    if (bytes == null || bytes.isEmpty) throw const AppException(AppErrorCode.clipboardNoImage);
+    return CapturedImage(bytes: bytes, mimeType: _sniff(bytes));
+  }
+
+  static String _sniff(Uint8List b) {
+    if (b.length > 8 && b[0] == 0x89 && b[1] == 0x50 && b[2] == 0x4E && b[3] == 0x47) return 'image/png';
+    if (b.length > 3 && b[0] == 0xFF && b[1] == 0xD8) return 'image/jpeg';
+    if (b.length > 12 && b[8] == 0x57 && b[9] == 0x45 && b[10] == 0x42 && b[11] == 0x50) return 'image/webp';
+    if (b.length > 3 && b[0] == 0x47 && b[1] == 0x49 && b[2] == 0x46) return 'image/gif';
+    return 'image/png';
+  }
 
   Future<CapturedImage?> _pick(ImageSource source) async {
     final file = await _picker.pickImage(

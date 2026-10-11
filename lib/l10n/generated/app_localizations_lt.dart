@@ -10,11 +10,10 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
-  String get homeTagline =>
-      'Nufotografuokite akciją ir sužinokite apie ją viską.';
+  String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
 
   @override
   String get homeHint =>
@@ -346,8 +345,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Vaizdų atpažinimas nesukonfigūruotas (nėra ANTHROPIC_API_KEY). Įveskite simbolį rankiniu būdu.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
+  String get errRecognitionUnreachable => 'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -355,32 +353,25 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
+  String get errRecognitionRefused => 'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
+  String get errRecognitionTruncated => 'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Netikėtas atpažinimo paslaugos atsakymas.';
+  String get errRecognitionBadResponse => 'Netikėtas atpažinimo paslaugos atsakymas.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Atpažinimo paslauga grąžino tuščią atsakymą.';
+  String get errRecognitionEmpty => 'Atpažinimo paslauga grąžino tuščią atsakymą.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
+  String get errMarketUnreachable => 'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
 
   @override
-  String get errMarketRateLimited =>
-      'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
+  String get errMarketRateLimited => 'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -388,8 +379,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Netikėtas rinkos duomenų paslaugos atsakymas.';
+  String get errMarketBadResponse => 'Netikėtas rinkos duomenų paslaugos atsakymas.';
 
   @override
   String errNoQuote(String symbol) {
@@ -410,4 +400,578 @@ class AppLocalizationsLt extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Kažkas nutiko ne taip: $detail';
   }
+
+  @override
+  String get newSearch => 'Nauja paieška';
+
+  @override
+  String get recentSearches => 'Naujausios';
+
+  @override
+  String get noRecentSearches => 'Naujausių paieškų dar nėra.';
+
+  @override
+  String get clearRecent => 'Išvalyti naujausias';
+
+  @override
+  String get greeting => 'Kurią akciją pažiūrėsime?';
+
+  @override
+  String get searchHint => 'Simbolis arba įmonės pavadinimas';
+
+  @override
+  String get attachImage => 'Pridėti vaizdą';
+
+  @override
+  String get searchResultsTitle => 'Paieškos rezultatai';
+
+  @override
+  String errNoResults(String query) {
+    return 'Pagal „$query“ akcijų nerasta.';
+  }
+
+  @override
+  String get quickBarHint => 'Įveskite simbolį arba įmonės pavadinimą…';
+
+  @override
+  String get openFullWindow => 'Atverti langą';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Paspauskite $shortcut bet kur, kad iškviestumėte StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Atverti StockLens';
+
+  @override
+  String get trayQuickSearch => 'Greitoji paieška';
+
+  @override
+  String get trayQuit => 'Baigti darbą';
+
+  @override
+  String get appearance => 'Išvaizda';
+
+  @override
+  String get themeSystem => 'Sistemos';
+
+  @override
+  String get themeDark => 'Tamsi';
+
+  @override
+  String get themeLight => 'Šviesi';
+
+  @override
+  String get back => 'Atgal';
+
+  @override
+  String get aiSectionTitle => 'DI analizė';
+
+  @override
+  String get aiIntro =>
+      'Išsami DI parengta apžvalga: naujausių naujienų santrauka, veikla, stiprybės, rizikos ir paslėpti veiksniai, vertinimas, kainos perspektyva su scenarijais iš psichologinio, sociologinio, techninio ir makroekonominio požiūrio ir į ką atkreipti dėmesį.';
+
+  @override
+  String get aiGenerate => 'Sukurti analizę';
+
+  @override
+  String get aiRegenerate => 'Sukurti iš naujo';
+
+  @override
+  String get aiGenerating => 'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
+
+  @override
+  String get aiSources => 'Šaltiniai';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Sukurta $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'DI sukurta analizė, pagrįsta viešais duomenimis ir naujausiomis naujienomis. Joje gali būti klaidų arba ji gali būti pasenusi, ir tai nėra investavimo rekomendacija.';
+
+  @override
+  String get errAiNotConfigured => 'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'DI paslauga grąžino klaidą (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'DI paslauga atsisakė analizuoti šią akciją.';
+
+  @override
+  String get errAiBadResponse => 'Netikėtas DI paslaugos atsakymas.';
+
+  @override
+  String get sectionChart => 'Kainos grafikas';
+
+  @override
+  String get rangeOneWeek => '1 sav.';
+
+  @override
+  String get rangeOneMonth => '1 mėn.';
+
+  @override
+  String get rangeThreeMonths => '3 mėn.';
+
+  @override
+  String get rangeOneYear => '1 m.';
+
+  @override
+  String get rangeFiveYears => '5 m.';
+
+  @override
+  String get chartUnavailable => 'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
+
+  @override
+  String get sectionStatements => 'Finansinės ataskaitos (metinės)';
+
+  @override
+  String get labelFiscalYear => 'Finansiniai metai';
+
+  @override
+  String get labelRevenue => 'Pajamos';
+
+  @override
+  String get labelNetIncome => 'Grynasis pelnas';
+
+  @override
+  String get labelTotalAssets => 'Visas turtas';
+
+  @override
+  String get labelTotalLiabilities => 'Visi įsipareigojimai';
+
+  @override
+  String get labelEquity => 'Nuosavas kapitalas';
+
+  @override
+  String get labelOperatingCashFlow => 'Pagrindinės veiklos pinigų srautas';
+
+  @override
+  String get statementsUnavailable => 'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
+
+  @override
+  String get launchAtLogin => 'Paleisti prisijungus';
+
+  @override
+  String get hotkeyLabel => 'Visuotinis spartusis klavišas';
+
+  @override
+  String get hotkeyRecordHint => 'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
+
+  @override
+  String get hotkeyReset => 'Atkurti numatytąjį';
+
+  @override
+  String get pasteImage => 'Įklijuoti vaizdą iš iškarpinės';
+
+  @override
+  String get errClipboardNoImage => 'Iškarpinėje nėra vaizdo.';
+
+  @override
+  String get favorites => 'Mėgstamiausi';
+
+  @override
+  String get addToFavorites => 'Pridėti į mėgstamiausius';
+
+  @override
+  String get removeFromFavorites => 'Pašalinti iš mėgstamiausių';
+
+  @override
+  String get noFavorites => 'Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.';
+
+  @override
+  String get displayCurrency => 'Rodymo valiuta';
+
+  @override
+  String get displayCurrencyNone => 'Tik pačios akcijos valiuta';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ valiuta $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kursas: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Naujinimai';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versija $version';
+  }
+
+  @override
+  String get autoUpdate => 'Įdiegti naujinimus automatiškai';
+
+  @override
+  String get checkForUpdates => 'Tikrinti, ar yra naujinimų';
+
+  @override
+  String get updateChecking => 'Tikrinama, ar yra naujinimų…';
+
+  @override
+  String get updateUpToDate => 'Naudojate naujausią versiją.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Pasiekiama versija $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Naujinimas atsisiunčiamas fone…';
+
+  @override
+  String get updateDownloaded => 'Naujinimas paruoštas. Paleiskite programą iš naujo, kad jį įdiegtumėte.';
+
+  @override
+  String get updateNow => 'Naujinti';
+
+  @override
+  String get restartNow => 'Paleisti iš naujo';
+
+  @override
+  String get updatesViaStore => 'Naujinimai gaunami automatiškai per programėlių parduotuvę.';
+
+  @override
+  String get updateCheckFailed => 'Nepavyko patikrinti, ar yra naujinimų.';
+
+  @override
+  String get subscription => 'Prenumerata';
+
+  @override
+  String get planTrial => 'Bandomasis';
+
+  @override
+  String get planNormal => 'Standartinis';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Nėra aktyvaus plano';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analizių per mėnesį',
+      many: '$count analizės per mėnesį',
+      few: '$count analizės per mėnesį',
+      one: '$count analizė per mėnesį',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$days d. nemokamas bandomasis laikotarpis su $count analizių',
+      many: '$days d. nemokamas bandomasis laikotarpis su $count analizėmis',
+      few: '$days d. nemokamas bandomasis laikotarpis su $count analizėmis',
+      one: '$days d. nemokamas bandomasis laikotarpis su $count analize',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Liko $days bandomojo laikotarpio dienų',
+      many: 'Liko $days bandomojo laikotarpio dienos',
+      few: 'Liko $days bandomojo laikotarpio dienos',
+      one: 'Liko $days bandomojo laikotarpio diena',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired =>
+      'Jūsų nemokamas bandomasis laikotarpis baigėsi. Pasirinkite planą, kad galėtumėte toliau analizuoti.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Šį laikotarpį liko $remaining iš $total analizių';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count papildomų analizių',
+      many: '$count papildomos analizės',
+      few: '$count papildomos analizės',
+      one: '$count papildoma analizė',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Atsinaujina $date';
+  }
+
+  @override
+  String get choosePlan => 'Pasirinkite planą';
+
+  @override
+  String get currentPlan => 'Dabartinis planas';
+
+  @override
+  String get subscribe => 'Prenumeruoti';
+
+  @override
+  String get perMonth => '/ mėn.';
+
+  @override
+  String get extraPacksTitle => 'Reikia daugiau? Įsigykite papildomų analizių';
+
+  @override
+  String get extraPacksHint => 'Papildomos analizės niekada nenustoja galioti ir naudojamos išnaudojus mėnesio limitą.';
+
+  @override
+  String get buy => 'Pirkti';
+
+  @override
+  String get restorePurchases => 'Atkurti pirkinius';
+
+  @override
+  String get manageSubscription => 'Tvarkyti prenumeratą';
+
+  @override
+  String get purchaseSuccess => 'Ačiū! Jūsų pirkinys aktyvus.';
+
+  @override
+  String get purchasePending => 'Pirkinys laukia patvirtinimo…';
+
+  @override
+  String get purchaseFailed => 'Pirkimo nepavyko užbaigti.';
+
+  @override
+  String get purchaseCanceled => 'Pirkimas atšauktas.';
+
+  @override
+  String get billingUnavailable =>
+      'Pirkiniai šioje platformoje dar negalimi. Užsiprenumeruokite telefone arba Mac kompiuteryje; jūsų planas veiks visuose įrenginiuose.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Šį laikotarpį analizių nebeliko. Pakeiskite planą į aukštesnį arba įsigykite papildomų analizių.';
+
+  @override
+  String get errTrialExpired =>
+      'Jūsų nemokamas bandomasis laikotarpis baigėsi. Pasirinkite planą, kad galėtumėte tęsti.';
+
+  @override
+  String get errNoPlan => 'DI analizei reikalingas aktyvus planas.';
+
+  @override
+  String get viewPlans => 'Peržiūrėti planus';
+
+  @override
+  String get usageTitle => 'Naudojimas';
+
+  @override
+  String get demoPurchaseNote => 'Demonstracinis atsiskaitymas: šioje platformoje pirkiniai yra imituojami.';
+
+  @override
+  String get mostPopular => 'Populiariausias';
+
+  @override
+  String get bestValue => 'Geriausias pasirinkimas';
+
+  @override
+  String get planFeaturesCommon =>
+      'Nuotraukų atpažinimas, tikralaikiai duomenys, grafikai, mėgstamiausi ir visos 44 kalbos įtrauktos į kiekvieną planą. Limitas taikomas DI analizėms.';
+
+  @override
+  String get searchLanguages => 'Ieškoti kalbų…';
+
+  @override
+  String get noLanguageMatch => 'Nė viena kalba neatitinka.';
+
+  @override
+  String get aiSettings => 'DI analizė';
+
+  @override
+  String get aiLength => 'Apimtis';
+
+  @override
+  String get aiDepthBrief => 'Trumpa';
+
+  @override
+  String get aiDepthStandard => 'Standartinė';
+
+  @override
+  String get aiDepthDeep => 'Išsami';
+
+  @override
+  String get aiDepthBriefDesc => 'Svarbiausia – greitai.';
+
+  @override
+  String get aiDepthStandardDesc => 'Visa ataskaita su visomis dalimis.';
+
+  @override
+  String get aiDepthDeepDesc => 'Daugiau paieškų internete, palyginimas su konkurentais ir išsamesnė analizė.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Apie $min–$max žodžių';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sunaudoja $count analizių',
+      many: 'sunaudoja $count analizės',
+      few: 'sunaudoja $count analizes',
+      one: 'sunaudoja $count analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Skaitytojo lygis';
+
+  @override
+  String get aiReaderBeginner => 'Pradedantysis';
+
+  @override
+  String get aiReaderExperienced => 'Patyręs';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Paprasta kalba; kiekvienas techninis terminas paaiškinamas.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Glaustesnis tekstas su įprasta finansų terminija.';
+
+  @override
+  String get aiCounterArgument => 'Stipriausias kontrargumentas';
+
+  @override
+  String get aiCounterArgumentDesc => 'Santrauka visada baigiama stipriausiu argumentu prieš jos pačios išvadą.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Su jūsų planu – iki $count paieškų internete per analizę',
+      many: 'Su jūsų planu – iki $count paieškos internete per analizę',
+      few: 'Su jūsų planu – iki $count paieškų internete per analizę',
+      one: 'Su jūsų planu – iki $count paieškos internete per analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standartinė apimtis pagal planą: Standartinis $normal, Pro $pro, Max $max, Ultra $ultra. Trumpa – 2 paieškomis mažiau, Išsami – 2 daugiau.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'iki $count paieškų internete',
+      many: 'iki $count paieškos internete',
+      few: 'iki $count paieškų internete',
+      one: 'iki $count paieškos internete',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paieškų internete per analizę',
+      many: '$count paieškos internete per analizę',
+      few: '$count paieškos internete per analizę',
+      one: '$count paieška internete per analizę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Šiai apimčiai reikia analizių: $needed, bet liko tik $left. Nustatymuose pasirinkite trumpesnę apimtį arba įsigykite daugiau analizių.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Rinkos nuotaika';
+
+  @override
+  String get moodVeryPessimistic => 'Labai pesimistinė';
+
+  @override
+  String get moodPessimistic => 'Pesimistinė';
+
+  @override
+  String get moodNeutral => 'Neutrali';
+
+  @override
+  String get moodOptimistic => 'Optimistinė';
+
+  @override
+  String get moodVeryOptimistic => 'Labai optimistinė';
+
+  @override
+  String get scenarioBull => 'Optimistinis scenarijus';
+
+  @override
+  String get scenarioBase => 'Bazinis scenarijus';
+
+  @override
+  String get scenarioBear => 'Pesimistinis scenarijus';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Dabartinė kaina: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Svarbiausi lygiai';
+
+  @override
+  String get keyLevelSupport => 'Palaikymas';
+
+  @override
+  String get keyLevelResistance => 'Pasipriešinimas';
+
+  @override
+  String get keyLevelAnchor => 'Inkaras';
+
+  @override
+  String get upcomingEvents => 'Artėjantys įvykiai';
+
+  @override
+  String get outlookChartNote => 'Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės.';
 }

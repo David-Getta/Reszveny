@@ -10,7 +10,7 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '拍下一只股票，了解它的一切。';
@@ -303,12 +303,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析师',
-      one: '1 位分析师',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
     return '$_temp0';
   }
 
@@ -336,8 +331,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -395,6 +389,514 @@ class AppLocalizationsZh extends AppLocalizations {
   String errUnknown(String detail) {
     return '出了点问题：$detail';
   }
+
+  @override
+  String get newSearch => '新搜索';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '还没有最近的搜索。';
+
+  @override
+  String get clearRecent => '清除最近记录';
+
+  @override
+  String get greeting => '今天想看哪只股票？';
+
+  @override
+  String get searchHint => '股票代码或公司名称';
+
+  @override
+  String get attachImage => '添加图片';
+
+  @override
+  String get searchResultsTitle => '搜索结果';
+
+  @override
+  String errNoResults(String query) {
+    return '未找到与“$query”相关的股票。';
+  }
+
+  @override
+  String get quickBarHint => '输入股票代码或公司名称…';
+
+  @override
+  String get openFullWindow => '打开窗口';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return '在任意位置按 $shortcut 即可呼出 StockLens。';
+  }
+
+  @override
+  String get trayOpen => '打开 StockLens';
+
+  @override
+  String get trayQuickSearch => '快速搜索';
+
+  @override
+  String get trayQuit => '退出';
+
+  @override
+  String get appearance => '外观';
+
+  @override
+  String get themeSystem => '跟随系统';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get themeLight => '浅色';
+
+  @override
+  String get back => '返回';
+
+  @override
+  String get aiSectionTitle => 'AI 分析';
+
+  @override
+  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
+
+  @override
+  String get aiGenerate => '生成分析';
+
+  @override
+  String get aiRegenerate => '重新生成';
+
+  @override
+  String get aiGenerating => '正在准备分析…这可能需要一到两分钟。';
+
+  @override
+  String get aiSources => '来源';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return '生成于 $time';
+  }
+
+  @override
+  String get aiDisclaimer => '基于公开数据和近期新闻由 AI 生成的分析。内容可能有误或已过时，不构成投资建议。';
+
+  @override
+  String get errAiNotConfigured => 'AI 分析未配置（缺少 ANTHROPIC_API_KEY）。';
+
+  @override
+  String get errAiUnreachable => '无法连接 AI 服务。请检查网络连接。';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI 服务返回错误（HTTP $status）。';
+  }
+
+  @override
+  String get errAiRefused => 'AI 服务拒绝分析这只股票。';
+
+  @override
+  String get errAiBadResponse => 'AI 服务返回了意外的响应。';
+
+  @override
+  String get sectionChart => '价格走势';
+
+  @override
+  String get rangeOneWeek => '1周';
+
+  @override
+  String get rangeOneMonth => '1月';
+
+  @override
+  String get rangeThreeMonths => '3月';
+
+  @override
+  String get rangeOneYear => '1年';
+
+  @override
+  String get rangeFiveYears => '5年';
+
+  @override
+  String get chartUnavailable => '当前数据来源不提供历史价格。';
+
+  @override
+  String get sectionStatements => '财务报表（年度）';
+
+  @override
+  String get labelFiscalYear => '财年';
+
+  @override
+  String get labelRevenue => '营业收入';
+
+  @override
+  String get labelNetIncome => '净利润';
+
+  @override
+  String get labelTotalAssets => '总资产';
+
+  @override
+  String get labelTotalLiabilities => '总负债';
+
+  @override
+  String get labelEquity => '股东权益';
+
+  @override
+  String get labelOperatingCashFlow => '经营现金流';
+
+  @override
+  String get statementsUnavailable => '暂无这只股票的已披露财务报表。';
+
+  @override
+  String get launchAtLogin => '登录时启动';
+
+  @override
+  String get hotkeyLabel => '全局快捷键';
+
+  @override
+  String get hotkeyRecordHint => '点击此处，然后按下新的组合键';
+
+  @override
+  String get hotkeyReset => '恢复默认';
+
+  @override
+  String get pasteImage => '从剪贴板粘贴图片';
+
+  @override
+  String get errClipboardNoImage => '剪贴板中没有图片。';
+
+  @override
+  String get favorites => '收藏';
+
+  @override
+  String get addToFavorites => '添加到收藏';
+
+  @override
+  String get removeFromFavorites => '从收藏中移除';
+
+  @override
+  String get noFavorites => '还没有收藏。点击股票上的星标即可添加。';
+
+  @override
+  String get displayCurrency => '显示货币';
+
+  @override
+  String get displayCurrencyNone => '仅显示股票自身货币';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ 折合 $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return '汇率：1 $from = $rate $to（欧洲央行，$date）';
+  }
+
+  @override
+  String get updates => '更新';
+
+  @override
+  String currentVersion(String version) {
+    return '版本 $version';
+  }
+
+  @override
+  String get autoUpdate => '自动安装更新';
+
+  @override
+  String get checkForUpdates => '检查更新';
+
+  @override
+  String get updateChecking => '正在检查更新…';
+
+  @override
+  String get updateUpToDate => '您已是最新版本。';
+
+  @override
+  String updateAvailable(String version) {
+    return '版本 $version 已可用。';
+  }
+
+  @override
+  String get updateDownloading => '正在后台下载更新…';
+
+  @override
+  String get updateDownloaded => '更新已就绪。重新启动以安装。';
+
+  @override
+  String get updateNow => '更新';
+
+  @override
+  String get restartNow => '重新启动';
+
+  @override
+  String get updatesViaStore => '更新会通过应用商店自动推送。';
+
+  @override
+  String get updateCheckFailed => '无法检查更新。';
+
+  @override
+  String get subscription => '订阅';
+
+  @override
+  String get planTrial => '试用';
+
+  @override
+  String get planNormal => '标准';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => '没有有效的计划';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '每月 $count 次分析';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days 天免费试用，含 $count 次分析';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '试用期剩余 $days 天', one: '试用期剩余 1 天');
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => '您的免费试用已结束。请选择一个计划以继续分析。';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '本周期还剩 $remaining 次分析（共 $total 次）';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count 次额外分析';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date 续订';
+  }
+
+  @override
+  String get choosePlan => '选择计划';
+
+  @override
+  String get currentPlan => '当前计划';
+
+  @override
+  String get subscribe => '订阅';
+
+  @override
+  String get perMonth => '/ 月';
+
+  @override
+  String get extraPacksTitle => '还需要更多？购买额外分析';
+
+  @override
+  String get extraPacksHint => '额外分析永不过期，并在每月配额用完后使用。';
+
+  @override
+  String get buy => '购买';
+
+  @override
+  String get restorePurchases => '恢复购买';
+
+  @override
+  String get manageSubscription => '管理订阅';
+
+  @override
+  String get purchaseSuccess => '感谢！您的购买已生效。';
+
+  @override
+  String get purchasePending => '购买处理中…';
+
+  @override
+  String get purchaseFailed => '无法完成购买。';
+
+  @override
+  String get purchaseCanceled => '购买已取消。';
+
+  @override
+  String get billingUnavailable => '此平台暂不支持购买。请在手机或 Mac 上订阅，您的计划将在所有设备上生效。';
+
+  @override
+  String get errQuotaExceeded => '本周期的分析次数已用完。请升级计划或购买额外分析。';
+
+  @override
+  String get errTrialExpired => '您的免费试用已结束。请选择一个计划以继续。';
+
+  @override
+  String get errNoPlan => 'AI 分析需要有效的计划。';
+
+  @override
+  String get viewPlans => '查看计划';
+
+  @override
+  String get usageTitle => '使用情况';
+
+  @override
+  String get demoPurchaseNote => '演示计费：此平台上的购买为模拟操作。';
+
+  @override
+  String get mostPopular => '最受欢迎';
+
+  @override
+  String get bestValue => '最超值';
+
+  @override
+  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。';
+
+  @override
+  String get searchLanguages => '搜索语言…';
+
+  @override
+  String get noLanguageMatch => '没有匹配的语言。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '篇幅';
+
+  @override
+  String get aiDepthBrief => '简要';
+
+  @override
+  String get aiDepthStandard => '常规';
+
+  @override
+  String get aiDepthDeep => '深入';
+
+  @override
+  String get aiDepthBriefDesc => '快速了解要点。';
+
+  @override
+  String get aiDepthStandardDesc => '包含所有部分的完整报告。';
+
+  @override
+  String get aiDepthDeepDesc => '更多网络搜索、同业比较以及更深入的细节。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '约 $min–$max 词';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '消耗 $count 次分析');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '读者水平';
+
+  @override
+  String get aiReaderBeginner => '新手';
+
+  @override
+  String get aiReaderExperienced => '有经验';
+
+  @override
+  String get aiReaderBeginnerDesc => '语言通俗易懂，每个专业术语都会解释。';
+
+  @override
+  String get aiReaderExperiencedDesc => '内容更紧凑，使用标准金融术语。';
+
+  @override
+  String get aiCounterArgument => '最有力的反方观点';
+
+  @override
+  String get aiCounterArgumentDesc => '摘要的最后总会给出反对其自身结论的最有力论据。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '您的计划每次分析最多可进行 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return '各计划的常规篇幅：标准 $normal、Pro $pro、Max $max、Ultra $ultra。简要少 2 次，深入多 2 次。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次网络搜索');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return '此篇幅需要 $needed 次分析，但仅剩 $left 次。请在设置中选择更短的篇幅，或获取更多分析。';
+  }
+
+  @override
+  String get outlookMarketMood => '市场情绪';
+
+  @override
+  String get moodVeryPessimistic => '非常悲观';
+
+  @override
+  String get moodPessimistic => '悲观';
+
+  @override
+  String get moodNeutral => '中性';
+
+  @override
+  String get moodOptimistic => '乐观';
+
+  @override
+  String get moodVeryOptimistic => '非常乐观';
+
+  @override
+  String get scenarioBull => '乐观情景';
+
+  @override
+  String get scenarioBase => '基准情景';
+
+  @override
+  String get scenarioBear => '悲观情景';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '当前价格：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '关键价位';
+
+  @override
+  String get keyLevelSupport => '支撑位';
+
+  @override
+  String get keyLevelResistance => '阻力位';
+
+  @override
+  String get keyLevelAnchor => '锚定价位';
+
+  @override
+  String get upcomingEvents => '近期事件';
+
+  @override
+  String get outlookChartNote => '区间仅供参考；概率为粗略判断，并非预测。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -402,7 +904,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   AppLocalizationsZhHantHk() : super('zh_Hant_HK');
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => '拍一張股票相片，全面了解該股。';
@@ -695,12 +1197,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析員',
-      one: '1 位分析員',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
     return '$_temp0';
   }
 
@@ -728,8 +1225,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey =>
-      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -787,4 +1283,512 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String errUnknown(String detail) {
     return '出現問題：$detail';
   }
+
+  @override
+  String get newSearch => '新搜尋';
+
+  @override
+  String get recentSearches => '最近';
+
+  @override
+  String get noRecentSearches => '暫時未有最近搜尋。';
+
+  @override
+  String get clearRecent => '清除最近記錄';
+
+  @override
+  String get greeting => '今天想看哪隻股票？';
+
+  @override
+  String get searchHint => '股票代號或公司名稱';
+
+  @override
+  String get attachImage => '附加圖片';
+
+  @override
+  String get searchResultsTitle => '搜尋結果';
+
+  @override
+  String errNoResults(String query) {
+    return '找不到與「$query」相關的股票。';
+  }
+
+  @override
+  String get quickBarHint => '輸入股票代號或公司名稱…';
+
+  @override
+  String get openFullWindow => '開啟視窗';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return '在任何地方按 $shortcut 即可呼出 StockLens。';
+  }
+
+  @override
+  String get trayOpen => '開啟 StockLens';
+
+  @override
+  String get trayQuickSearch => '快速搜尋';
+
+  @override
+  String get trayQuit => '結束';
+
+  @override
+  String get appearance => '外觀';
+
+  @override
+  String get themeSystem => '跟隨系統';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get themeLight => '淺色';
+
+  @override
+  String get back => '返回';
+
+  @override
+  String get aiSectionTitle => 'AI 分析';
+
+  @override
+  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
+
+  @override
+  String get aiGenerate => '產生分析';
+
+  @override
+  String get aiRegenerate => '重新產生';
+
+  @override
+  String get aiGenerating => '正在準備分析…可能需要一至兩分鐘。';
+
+  @override
+  String get aiSources => '來源';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return '產生時間：$time';
+  }
+
+  @override
+  String get aiDisclaimer => '由 AI 根據公開數據及近期新聞產生的分析。內容可能有誤或已過時，並不構成投資建議。';
+
+  @override
+  String get errAiNotConfigured => '尚未設定 AI 分析（缺少 ANTHROPIC_API_KEY）。';
+
+  @override
+  String get errAiUnreachable => '無法連接 AI 服務。請檢查網絡連線。';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI 服務回傳錯誤（HTTP $status）。';
+  }
+
+  @override
+  String get errAiRefused => 'AI 服務拒絕分析這隻股票。';
+
+  @override
+  String get errAiBadResponse => 'AI 服務回傳了預期以外的回應。';
+
+  @override
+  String get sectionChart => '股價走勢';
+
+  @override
+  String get rangeOneWeek => '1週';
+
+  @override
+  String get rangeOneMonth => '1月';
+
+  @override
+  String get rangeThreeMonths => '3月';
+
+  @override
+  String get rangeOneYear => '1年';
+
+  @override
+  String get rangeFiveYears => '5年';
+
+  @override
+  String get chartUnavailable => '目前的數據來源不提供股價歷史。';
+
+  @override
+  String get sectionStatements => '財務報表（年度）';
+
+  @override
+  String get labelFiscalYear => '財政年度';
+
+  @override
+  String get labelRevenue => '收入';
+
+  @override
+  String get labelNetIncome => '純利';
+
+  @override
+  String get labelTotalAssets => '總資產';
+
+  @override
+  String get labelTotalLiabilities => '總負債';
+
+  @override
+  String get labelEquity => '股東權益';
+
+  @override
+  String get labelOperatingCashFlow => '經營現金流';
+
+  @override
+  String get statementsUnavailable => '沒有這隻股票的已公布財務報表。';
+
+  @override
+  String get launchAtLogin => '登入時啟動';
+
+  @override
+  String get hotkeyLabel => '全域快速鍵';
+
+  @override
+  String get hotkeyRecordHint => '按一下此處，然後按下新的組合鍵';
+
+  @override
+  String get hotkeyReset => '重設為預設值';
+
+  @override
+  String get pasteImage => '從剪貼簿貼上圖片';
+
+  @override
+  String get errClipboardNoImage => '剪貼簿中沒有圖片。';
+
+  @override
+  String get favorites => '收藏';
+
+  @override
+  String get addToFavorites => '加入收藏';
+
+  @override
+  String get removeFromFavorites => '從收藏中移除';
+
+  @override
+  String get noFavorites => '暫時未有收藏。點一下股票上的星星即可加入。';
+
+  @override
+  String get displayCurrency => '顯示貨幣';
+
+  @override
+  String get displayCurrencyNone => '只顯示股票本身貨幣';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ 折合 $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return '匯率：1 $from = $rate $to（歐洲央行，$date）';
+  }
+
+  @override
+  String get updates => '更新';
+
+  @override
+  String currentVersion(String version) {
+    return '版本 $version';
+  }
+
+  @override
+  String get autoUpdate => '自動安裝更新';
+
+  @override
+  String get checkForUpdates => '檢查更新';
+
+  @override
+  String get updateChecking => '正在檢查更新…';
+
+  @override
+  String get updateUpToDate => '已經是最新版本。';
+
+  @override
+  String updateAvailable(String version) {
+    return '版本 $version 已可供更新。';
+  }
+
+  @override
+  String get updateDownloading => '正在背景下載更新…';
+
+  @override
+  String get updateDownloaded => '更新已準備好。重新啟動即可安裝。';
+
+  @override
+  String get updateNow => '更新';
+
+  @override
+  String get restartNow => '重新啟動';
+
+  @override
+  String get updatesViaStore => '更新會透過應用程式商店自動送達。';
+
+  @override
+  String get updateCheckFailed => '無法檢查更新。';
+
+  @override
+  String get subscription => '訂閱';
+
+  @override
+  String get planTrial => '試用';
+
+  @override
+  String get planNormal => '標準';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => '沒有生效的計劃';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '每月 $count 次分析';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days 日免費試用，包含 $count 次分析';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '試用期尚餘 $days 日', one: '試用期尚餘 1 日');
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => '你的免費試用已結束。請選擇計劃以繼續分析。';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '本期尚餘 $remaining 次分析（共 $total 次）';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count 次額外分析';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date 續訂';
+  }
+
+  @override
+  String get choosePlan => '選擇計劃';
+
+  @override
+  String get currentPlan => '目前計劃';
+
+  @override
+  String get subscribe => '訂閱';
+
+  @override
+  String get perMonth => '/ 月';
+
+  @override
+  String get extraPacksTitle => '需要更多？購買額外分析';
+
+  @override
+  String get extraPacksHint => '額外分析永不過期，會在每月配額用完後才使用。';
+
+  @override
+  String get buy => '購買';
+
+  @override
+  String get restorePurchases => '恢復購買';
+
+  @override
+  String get manageSubscription => '管理訂閱';
+
+  @override
+  String get purchaseSuccess => '多謝！你的購買已生效。';
+
+  @override
+  String get purchasePending => '購買處理中…';
+
+  @override
+  String get purchaseFailed => '無法完成購買。';
+
+  @override
+  String get purchaseCanceled => '購買已取消。';
+
+  @override
+  String get billingUnavailable => '此平台暫未支援購買。請在手機或 Mac 上訂閱，你的計劃可在所有裝置使用。';
+
+  @override
+  String get errQuotaExceeded => '本期的分析次數已用完。請升級計劃或購買額外分析。';
+
+  @override
+  String get errTrialExpired => '你的免費試用已結束。請選擇計劃以繼續。';
+
+  @override
+  String get errNoPlan => 'AI 分析需要生效的計劃。';
+
+  @override
+  String get viewPlans => '查看計劃';
+
+  @override
+  String get usageTitle => '用量';
+
+  @override
+  String get demoPurchaseNote => '示範計費：此平台上的購買只屬模擬。';
+
+  @override
+  String get mostPopular => '最受歡迎';
+
+  @override
+  String get bestValue => '最抵用';
+
+  @override
+  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。';
+
+  @override
+  String get searchLanguages => '搜尋語言…';
+
+  @override
+  String get noLanguageMatch => '沒有符合的語言。';
+
+  @override
+  String get aiSettings => 'AI 分析';
+
+  @override
+  String get aiLength => '篇幅';
+
+  @override
+  String get aiDepthBrief => '簡要';
+
+  @override
+  String get aiDepthStandard => '常規';
+
+  @override
+  String get aiDepthDeep => '深入';
+
+  @override
+  String get aiDepthBriefDesc => '快速掌握重點。';
+
+  @override
+  String get aiDepthStandardDesc => '包含所有部分的完整報告。';
+
+  @override
+  String get aiDepthDeepDesc => '更多網上搜尋、同業比較及更深入的細節。';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '約 $min–$max 字';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '用 $count 次分析');
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => '讀者程度';
+
+  @override
+  String get aiReaderBeginner => '新手';
+
+  @override
+  String get aiReaderExperienced => '有經驗';
+
+  @override
+  String get aiReaderBeginnerDesc => '用淺白語言，每個專業術語都會解釋。';
+
+  @override
+  String get aiReaderExperiencedDesc => '內容更精簡，使用標準金融術語。';
+
+  @override
+  String get aiCounterArgument => '最有力的反方論點';
+
+  @override
+  String get aiCounterArgumentDesc => '摘要最後一定會提出反駁其自身結論的最有力論據。';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '你的計劃每次分析最多可進行 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return '各計劃的常規篇幅：標準 $normal、Pro $pro、Max $max、Ultra $ultra。簡要少 2 次，深入多 2 次。';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次網上搜尋');
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return '此篇幅需要 $needed 次分析，但只剩 $left 次。請在設定中選擇較短的篇幅，或獲取更多分析。';
+  }
+
+  @override
+  String get outlookMarketMood => '市場情緒';
+
+  @override
+  String get moodVeryPessimistic => '非常悲觀';
+
+  @override
+  String get moodPessimistic => '悲觀';
+
+  @override
+  String get moodNeutral => '中性';
+
+  @override
+  String get moodOptimistic => '樂觀';
+
+  @override
+  String get moodVeryOptimistic => '非常樂觀';
+
+  @override
+  String get scenarioBull => '樂觀情景';
+
+  @override
+  String get scenarioBase => '基本情景';
+
+  @override
+  String get scenarioBear => '悲觀情景';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '現價：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '關鍵價位';
+
+  @override
+  String get keyLevelSupport => '支持位';
+
+  @override
+  String get keyLevelResistance => '阻力位';
+
+  @override
+  String get keyLevelAnchor => '錨定價位';
+
+  @override
+  String get upcomingEvents => '近期事件';
+
+  @override
+  String get outlookChartNote => '區間僅供參考；概率只屬粗略判斷，並非預測。';
 }

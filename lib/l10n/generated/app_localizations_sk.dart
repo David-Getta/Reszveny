@@ -10,7 +10,7 @@ class AppLocalizationsSk extends AppLocalizations {
   AppLocalizationsSk([String locale = 'sk']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Odfoťte akciu a zistite o nej všetko.';
@@ -354,32 +354,26 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávania nedokázala tento obrázok spracovať.';
+  String get errRecognitionRefused => 'Služba rozpoznávania nedokázala tento obrázok spracovať.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
+  String get errRecognitionTruncated => 'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočakávaná odpoveď služby rozpoznávania.';
+  String get errRecognitionBadResponse => 'Neočakávaná odpoveď služby rozpoznávania.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávania vrátila prázdnu odpoveď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávania vrátila prázdnu odpoveď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodarilo sa pripojiť k službe trhových údajov. Skontrolujte pripojenie na internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
+  String get errMarketRateLimited => 'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
 
   @override
   String errMarketHttp(String status) {
@@ -387,8 +381,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočakávaná odpoveď služby trhových údajov.';
+  String get errMarketBadResponse => 'Neočakávaná odpoveď služby trhových údajov.';
 
   @override
   String errNoQuote(String symbol) {
@@ -409,4 +402,574 @@ class AppLocalizationsSk extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Niečo sa pokazilo: $detail';
   }
+
+  @override
+  String get newSearch => 'Nové vyhľadávanie';
+
+  @override
+  String get recentSearches => 'Nedávne';
+
+  @override
+  String get noRecentSearches => 'Zatiaľ žiadne nedávne vyhľadávania.';
+
+  @override
+  String get clearRecent => 'Vymazať nedávne';
+
+  @override
+  String get greeting => 'Na ktorú akciu sa pozrieme?';
+
+  @override
+  String get searchHint => 'Ticker alebo názov spoločnosti';
+
+  @override
+  String get attachImage => 'Priložiť obrázok';
+
+  @override
+  String get searchResultsTitle => 'Výsledky vyhľadávania';
+
+  @override
+  String errNoResults(String query) {
+    return 'Pre „$query“ sa nenašli žiadne akcie.';
+  }
+
+  @override
+  String get quickBarHint => 'Zadajte ticker alebo názov spoločnosti…';
+
+  @override
+  String get openFullWindow => 'Otvoriť okno';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Stlačte $shortcut kdekoľvek a vyvolajte StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Otvoriť StockLens';
+
+  @override
+  String get trayQuickSearch => 'Rýchle vyhľadávanie';
+
+  @override
+  String get trayQuit => 'Ukončiť';
+
+  @override
+  String get appearance => 'Vzhľad';
+
+  @override
+  String get themeSystem => 'Systémový';
+
+  @override
+  String get themeDark => 'Tmavý';
+
+  @override
+  String get themeLight => 'Svetlý';
+
+  @override
+  String get back => 'Späť';
+
+  @override
+  String get aiSectionTitle => 'AI analýza';
+
+  @override
+  String get aiIntro =>
+      'Podrobný prehľad napísaný AI: zhrnutie aktuálnych správ, podnikanie, silné stránky, riziká a skryté faktory, ocenenie, výhľad ceny so scenármi z psychologického, sociologického, technického a makroekonomického hľadiska a čo sledovať.';
+
+  @override
+  String get aiGenerate => 'Vygenerovať analýzu';
+
+  @override
+  String get aiRegenerate => 'Vygenerovať znova';
+
+  @override
+  String get aiGenerating => 'Pripravujem analýzu… môže to trvať minútu či dve.';
+
+  @override
+  String get aiSources => 'Zdroje';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Vygenerované $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analýza vygenerovaná AI na základe verejných údajov a aktuálnych správ. Môže obsahovať chyby alebo byť zastaraná a nie je investičným odporúčaním.';
+
+  @override
+  String get errAiNotConfigured => 'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Služba AI vrátila chybu (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Služba AI odmietla túto akciu analyzovať.';
+
+  @override
+  String get errAiBadResponse => 'Neočakávaná odpoveď služby AI.';
+
+  @override
+  String get sectionChart => 'Graf ceny';
+
+  @override
+  String get rangeOneWeek => '1T';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1R';
+
+  @override
+  String get rangeFiveYears => '5R';
+
+  @override
+  String get chartUnavailable => 'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
+
+  @override
+  String get sectionStatements => 'Finančné výkazy (ročné)';
+
+  @override
+  String get labelFiscalYear => 'Fiškálny rok';
+
+  @override
+  String get labelRevenue => 'Tržby';
+
+  @override
+  String get labelNetIncome => 'Čistý zisk';
+
+  @override
+  String get labelTotalAssets => 'Aktíva spolu';
+
+  @override
+  String get labelTotalLiabilities => 'Záväzky spolu';
+
+  @override
+  String get labelEquity => 'Vlastný kapitál';
+
+  @override
+  String get labelOperatingCashFlow => 'Prevádzkový peňažný tok';
+
+  @override
+  String get statementsUnavailable => 'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
+
+  @override
+  String get launchAtLogin => 'Spustiť pri prihlásení';
+
+  @override
+  String get hotkeyLabel => 'Globálna skratka';
+
+  @override
+  String get hotkeyRecordHint => 'Kliknite sem a potom stlačte novú kombináciu klávesov';
+
+  @override
+  String get hotkeyReset => 'Obnoviť predvolené';
+
+  @override
+  String get pasteImage => 'Prilepiť obrázok zo schránky';
+
+  @override
+  String get errClipboardNoImage => 'V schránke nie je žiadny obrázok.';
+
+  @override
+  String get favorites => 'Obľúbené';
+
+  @override
+  String get addToFavorites => 'Pridať do obľúbených';
+
+  @override
+  String get removeFromFavorites => 'Odstrániť z obľúbených';
+
+  @override
+  String get noFavorites => 'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
+
+  @override
+  String get displayCurrency => 'Mena zobrazenia';
+
+  @override
+  String get displayCurrencyNone => 'Iba vlastná mena akcie';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ v $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurz: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Aktualizácie';
+
+  @override
+  String currentVersion(String version) {
+    return 'Verzia $version';
+  }
+
+  @override
+  String get autoUpdate => 'Inštalovať aktualizácie automaticky';
+
+  @override
+  String get checkForUpdates => 'Skontrolovať aktualizácie';
+
+  @override
+  String get updateChecking => 'Kontrola aktualizácií…';
+
+  @override
+  String get updateUpToDate => 'Máte najnovšiu verziu.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Je k dispozícii verzia $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Aktualizácia sa sťahuje na pozadí…';
+
+  @override
+  String get updateDownloaded => 'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
+
+  @override
+  String get updateNow => 'Aktualizovať';
+
+  @override
+  String get restartNow => 'Reštartovať';
+
+  @override
+  String get updatesViaStore => 'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
+
+  @override
+  String get updateCheckFailed => 'Aktualizácie sa nepodarilo skontrolovať.';
+
+  @override
+  String get subscription => 'Predplatné';
+
+  @override
+  String get planTrial => 'Skúšobný';
+
+  @override
+  String get planNormal => 'Štandard';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Žiadny aktívny tarif';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz mesačne',
+      many: '$count analýzy mesačne',
+      few: '$count analýzy mesačne',
+      one: '1 analýza mesačne',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bezplatná skúšobná verzia na $days dní s $count analýzami',
+      one: 'Bezplatná skúšobná verzia na $days dní s 1 analýzou',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Zostáva $days dní skúšobnej verzie',
+      many: 'Zostáva $days dňa skúšobnej verzie',
+      few: 'Zostávajú $days dni skúšobnej verzie',
+      one: 'Zostáva 1 deň skúšobnej verzie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte v analýzach.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'V tomto období zostáva $remaining z $total analýz';
+  }
+
+  @override
+  String extraCredits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz navyše',
+      many: '$count analýzy navyše',
+      few: '$count analýzy navyše',
+      one: '1 analýza navyše',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Obnoví sa $date';
+  }
+
+  @override
+  String get choosePlan => 'Vyberte tarif';
+
+  @override
+  String get currentPlan => 'Aktuálny tarif';
+
+  @override
+  String get subscribe => 'Predplatiť';
+
+  @override
+  String get perMonth => '/ mesiac';
+
+  @override
+  String get extraPacksTitle => 'Potrebujete viac? Kúpte si analýzy navyše';
+
+  @override
+  String get extraPacksHint => 'Analýzy navyše nikdy nevypršia a použijú sa po vyčerpaní mesačného limitu.';
+
+  @override
+  String get buy => 'Kúpiť';
+
+  @override
+  String get restorePurchases => 'Obnoviť nákupy';
+
+  @override
+  String get manageSubscription => 'Spravovať predplatné';
+
+  @override
+  String get purchaseSuccess => 'Ďakujeme! Váš nákup je aktívny.';
+
+  @override
+  String get purchasePending => 'Nákup čaká na spracovanie…';
+
+  @override
+  String get purchaseFailed => 'Nákup sa nepodarilo dokončiť.';
+
+  @override
+  String get purchaseCanceled => 'Nákup bol zrušený.';
+
+  @override
+  String get billingUnavailable =>
+      'Nákupy na tejto platforme zatiaľ nie sú dostupné. Predplaťte si tarif na telefóne alebo Macu; bude fungovať na všetkých zariadeniach.';
+
+  @override
+  String get errQuotaExceeded =>
+      'V tomto období vám nezostávajú žiadne analýzy. Prejdite na vyšší tarif alebo si kúpte analýzy navyše.';
+
+  @override
+  String get errTrialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte.';
+
+  @override
+  String get errNoPlan => 'Na AI analýzu je potrebný aktívny tarif.';
+
+  @override
+  String get viewPlans => 'Zobraziť tarify';
+
+  @override
+  String get usageTitle => 'Využitie';
+
+  @override
+  String get demoPurchaseNote => 'Demo platby: nákupy sú na tejto platforme iba simulované.';
+
+  @override
+  String get mostPopular => 'Najobľúbenejší';
+
+  @override
+  String get bestValue => 'Najvýhodnejší';
+
+  @override
+  String get planFeaturesCommon =>
+      'Rozpoznávanie fotiek, živé dáta, grafy, obľúbené a všetkých 44 jazykov sú súčasťou každého tarifu. Limit sa vzťahuje na AI analýzy.';
+
+  @override
+  String get searchLanguages => 'Hľadať jazyky…';
+
+  @override
+  String get noLanguageMatch => 'Žiadny jazyk nezodpovedá.';
+
+  @override
+  String get aiSettings => 'AI analýza';
+
+  @override
+  String get aiLength => 'Dĺžka';
+
+  @override
+  String get aiDepthBrief => 'Stručne';
+
+  @override
+  String get aiDepthStandard => 'Štandardne';
+
+  @override
+  String get aiDepthDeep => 'Podrobne';
+
+  @override
+  String get aiDepthBriefDesc => 'To podstatné, rýchlo.';
+
+  @override
+  String get aiDepthStandardDesc => 'Úplná správa so všetkými časťami.';
+
+  @override
+  String get aiDepthDeepDesc => 'Viac vyhľadávaní na webe, porovnanie s konkurenciou a hlbšie detaily.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Približne $min–$max slov';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'spotrebuje $count analýz',
+      many: 'spotrebuje $count analýzy',
+      few: 'spotrebuje $count analýzy',
+      one: 'spotrebuje $count analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Úroveň čitateľa';
+
+  @override
+  String get aiReaderBeginner => 'Začiatočník';
+
+  @override
+  String get aiReaderExperienced => 'Skúsený';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Jednoduchý jazyk; každý odborný pojem je vysvetlený.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Hutnejší text so štandardnou finančnou terminológiou.';
+
+  @override
+  String get aiCounterArgument => 'Najsilnejší protiargument';
+
+  @override
+  String get aiCounterArgumentDesc => 'Zhrnutie vždy končí najsilnejším argumentom proti vlastnému záveru.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S vaším tarifom až $count vyhľadávaní na webe pre každú analýzu',
+      many: 'S vaším tarifom až $count vyhľadávania na webe pre každú analýzu',
+      few: 'S vaším tarifom až $count vyhľadávania na webe pre každú analýzu',
+      one: 'S vaším tarifom až $count vyhľadávanie na webe pre každú analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Štandardná dĺžka podľa tarifu: Štandard $normal, Pro $pro, Max $max, Ultra $ultra. „Stručne“ o 2 menej, „Podrobne“ o 2 viac.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'až $count vyhľadávaní na webe',
+      many: 'až $count vyhľadávania na webe',
+      few: 'až $count vyhľadávania na webe',
+      one: 'až $count vyhľadávanie na webe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vyhľadávaní na webe pre každú analýzu',
+      many: '$count vyhľadávania na webe pre každú analýzu',
+      few: '$count vyhľadávania na webe pre každú analýzu',
+      one: '$count vyhľadávanie na webe pre každú analýzu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Táto dĺžka vyžaduje analýz: $needed, zostáva vám však len: $left. Zvoľte v Nastaveniach kratšiu dĺžku alebo si zaobstarajte ďalšie analýzy.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Nálada na trhu';
+
+  @override
+  String get moodVeryPessimistic => 'Veľmi pesimistická';
+
+  @override
+  String get moodPessimistic => 'Pesimistická';
+
+  @override
+  String get moodNeutral => 'Neutrálna';
+
+  @override
+  String get moodOptimistic => 'Optimistická';
+
+  @override
+  String get moodVeryOptimistic => 'Veľmi optimistická';
+
+  @override
+  String get scenarioBull => 'Optimistický scenár';
+
+  @override
+  String get scenarioBase => 'Základný scenár';
+
+  @override
+  String get scenarioBear => 'Pesimistický scenár';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Aktuálna cena: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Kľúčové úrovne';
+
+  @override
+  String get keyLevelSupport => 'Podpora';
+
+  @override
+  String get keyLevelResistance => 'Odpor';
+
+  @override
+  String get keyLevelAnchor => 'Cenová kotva';
+
+  @override
+  String get upcomingEvents => 'Nadchádzajúce udalosti';
+
+  @override
+  String get outlookChartNote => 'Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede.';
 }

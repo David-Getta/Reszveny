@@ -10,7 +10,7 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'Fotografe uma ação e saiba tudo sobre ela.';
@@ -111,8 +111,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get errorGeneric => 'Ocorreu um erro.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Não foi possível carregar esta secção.';
+  String get errorSectionUnavailable => 'Não foi possível carregar esta secção.';
 
   @override
   String get notAvailable => 'n/d';
@@ -307,12 +306,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistas',
-      one: '1 analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistas', one: '1 analista');
     return '$_temp0';
   }
 
@@ -353,32 +347,26 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'O serviço de reconhecimento não conseguiu processar esta imagem.';
+  String get errRecognitionRefused => 'O serviço de reconhecimento não conseguiu processar esta imagem.';
 
   @override
-  String get errRecognitionTruncated =>
-      'A resposta do reconhecimento foi interrompida. Tente novamente.';
+  String get errRecognitionTruncated => 'A resposta do reconhecimento foi interrompida. Tente novamente.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Resposta inesperada do serviço de reconhecimento.';
+  String get errRecognitionBadResponse => 'Resposta inesperada do serviço de reconhecimento.';
 
   @override
-  String get errRecognitionEmpty =>
-      'O serviço de reconhecimento devolveu uma resposta vazia.';
+  String get errRecognitionEmpty => 'O serviço de reconhecimento devolveu uma resposta vazia.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Os dados de mercado não estão configurados (falta FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Os dados de mercado não estão configurados (falta FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Não foi possível contactar o serviço de dados de mercado. Verifique a sua conexão à internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Demasiados pedidos ao serviço de dados de mercado. Aguarde um minuto.';
+  String get errMarketRateLimited => 'Demasiados pedidos ao serviço de dados de mercado. Aguarde um minuto.';
 
   @override
   String errMarketHttp(String status) {
@@ -386,8 +374,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Resposta inesperada do serviço de dados de mercado.';
+  String get errMarketBadResponse => 'Resposta inesperada do serviço de dados de mercado.';
 
   @override
   String errNoQuote(String symbol) {
@@ -408,4 +395,543 @@ class AppLocalizationsPt extends AppLocalizations {
   String errUnknown(String detail) {
     return 'Ocorreu um erro: $detail';
   }
+
+  @override
+  String get newSearch => 'Nova pesquisa';
+
+  @override
+  String get recentSearches => 'Recentes';
+
+  @override
+  String get noRecentSearches => 'Ainda não há pesquisas recentes.';
+
+  @override
+  String get clearRecent => 'Limpar recentes';
+
+  @override
+  String get greeting => 'Que ação vamos ver?';
+
+  @override
+  String get searchHint => 'Ticker ou nome da empresa';
+
+  @override
+  String get attachImage => 'Anexar uma imagem';
+
+  @override
+  String get searchResultsTitle => 'Resultados da pesquisa';
+
+  @override
+  String errNoResults(String query) {
+    return 'Nenhuma ação encontrada para “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Introduza um ticker ou o nome de uma empresa…';
+
+  @override
+  String get openFullWindow => 'Abrir janela';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Pressione $shortcut em qualquer lugar para abrir o StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Abrir o StockLens';
+
+  @override
+  String get trayQuickSearch => 'Pesquisa rápida';
+
+  @override
+  String get trayQuit => 'Sair';
+
+  @override
+  String get appearance => 'Aparência';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Escuro';
+
+  @override
+  String get themeLight => 'Claro';
+
+  @override
+  String get back => 'Voltar';
+
+  @override
+  String get aiSectionTitle => 'Análise com IA';
+
+  @override
+  String get aiIntro =>
+      'Uma visão geral detalhada escrita por IA: resumo das notícias recentes, o negócio, pontos fortes, riscos e fatores ocultos, avaliação, uma perspectiva de preço com cenários sob ângulos psicológicos, sociológicos, técnicos e macroeconômicos, e o que acompanhar.';
+
+  @override
+  String get aiGenerate => 'Gerar análise';
+
+  @override
+  String get aiRegenerate => 'Gerar novamente';
+
+  @override
+  String get aiGenerating => 'Preparando a análise… pode demorar um ou dois minutos.';
+
+  @override
+  String get aiSources => 'Fontes';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Gerado $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Análise gerada por IA com base em dados públicos e notícias recentes. Pode conter erros ou estar desatualizada e não constitui aconselhamento de investimento.';
+
+  @override
+  String get errAiNotConfigured => 'A análise com IA não está configurada (falta ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Não foi possível contactar o serviço de IA. Verifique a sua conexão à internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'O serviço de IA devolveu um erro (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'O serviço de IA recusou analisar esta ação.';
+
+  @override
+  String get errAiBadResponse => 'Resposta inesperada do serviço de IA.';
+
+  @override
+  String get sectionChart => 'Gráfico de preços';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1A';
+
+  @override
+  String get rangeFiveYears => '5A';
+
+  @override
+  String get chartUnavailable => 'O histórico de preços não está disponível na fonte de dados atual.';
+
+  @override
+  String get sectionStatements => 'Demonstrações financeiras (anuais)';
+
+  @override
+  String get labelFiscalYear => 'Ano fiscal';
+
+  @override
+  String get labelRevenue => 'Receita';
+
+  @override
+  String get labelNetIncome => 'Lucro líquido';
+
+  @override
+  String get labelTotalAssets => 'Ativo total';
+
+  @override
+  String get labelTotalLiabilities => 'Passivo total';
+
+  @override
+  String get labelEquity => 'Capital próprio';
+
+  @override
+  String get labelOperatingCashFlow => 'Fluxo de caixa operacional';
+
+  @override
+  String get statementsUnavailable => 'Não há demonstrações financeiras publicadas disponíveis para esta ação.';
+
+  @override
+  String get launchAtLogin => 'Abrir ao iniciar sessão';
+
+  @override
+  String get hotkeyLabel => 'Atalho global';
+
+  @override
+  String get hotkeyRecordHint => 'Clique aqui e, em seguida, pressione a nova combinação de teclas';
+
+  @override
+  String get hotkeyReset => 'Restaurar predefinição';
+
+  @override
+  String get pasteImage => 'Colar imagem da área de transferência';
+
+  @override
+  String get errClipboardNoImage => 'Não há nenhuma imagem na área de transferência.';
+
+  @override
+  String get favorites => 'Favoritos';
+
+  @override
+  String get addToFavorites => 'Adicionar aos favoritos';
+
+  @override
+  String get removeFromFavorites => 'Remover dos favoritos';
+
+  @override
+  String get noFavorites => 'Ainda não há favoritos. Toque na estrela de uma ação para a adicionar.';
+
+  @override
+  String get displayCurrency => 'Moeda de exibição';
+
+  @override
+  String get displayCurrencyNone => 'Apenas a moeda da própria ação';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ em $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Câmbio: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Atualizações';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versão $version';
+  }
+
+  @override
+  String get autoUpdate => 'Instalar atualizações automaticamente';
+
+  @override
+  String get checkForUpdates => 'Procurar atualizações';
+
+  @override
+  String get updateChecking => 'A procurar atualizações…';
+
+  @override
+  String get updateUpToDate => 'Está na versão mais recente.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'A versão $version está disponível.';
+  }
+
+  @override
+  String get updateDownloading => 'A transferir a atualização em segundo plano…';
+
+  @override
+  String get updateDownloaded => 'A atualização está pronta. Reinicie para a instalar.';
+
+  @override
+  String get updateNow => 'Atualizar';
+
+  @override
+  String get restartNow => 'Reiniciar';
+
+  @override
+  String get updatesViaStore => 'As atualizações chegam automaticamente através da loja de aplicações.';
+
+  @override
+  String get updateCheckFailed => 'Não foi possível procurar atualizações.';
+
+  @override
+  String get subscription => 'Subscrição';
+
+  @override
+  String get planTrial => 'Teste';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Sem plano ativo';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count análises por mês';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Teste gratuito de $days dias com $count análises';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Faltam $days dias de teste',
+      one: 'Falta 1 dia de teste',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'O seu teste gratuito terminou. Escolha um plano para continuar a analisar.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Restam $remaining de $total análises neste período';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count análises extra';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Renova a $date';
+  }
+
+  @override
+  String get choosePlan => 'Escolha um plano';
+
+  @override
+  String get currentPlan => 'Plano atual';
+
+  @override
+  String get subscribe => 'Subscrever';
+
+  @override
+  String get perMonth => '/ mês';
+
+  @override
+  String get extraPacksTitle => 'Precisa de mais? Compre análises extra';
+
+  @override
+  String get extraPacksHint => 'As análises extra nunca expiram e são usadas depois da sua quota mensal.';
+
+  @override
+  String get buy => 'Comprar';
+
+  @override
+  String get restorePurchases => 'Restaurar compras';
+
+  @override
+  String get manageSubscription => 'Gerir subscrição';
+
+  @override
+  String get purchaseSuccess => 'Obrigado! A sua compra está ativa.';
+
+  @override
+  String get purchasePending => 'Compra pendente…';
+
+  @override
+  String get purchaseFailed => 'Não foi possível concluir a compra.';
+
+  @override
+  String get purchaseCanceled => 'Compra cancelada.';
+
+  @override
+  String get billingUnavailable =>
+      'As compras ainda não estão disponíveis nesta plataforma. Subscreva no seu telemóvel ou Mac; o seu plano funcionará em todos os dispositivos.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Não lhe restam análises neste período. Atualize o seu plano ou compre análises extra.';
+
+  @override
+  String get errTrialExpired => 'O seu teste gratuito terminou. Escolha um plano para continuar.';
+
+  @override
+  String get errNoPlan => 'É necessário um plano ativo para a análise com IA.';
+
+  @override
+  String get viewPlans => 'Ver planos';
+
+  @override
+  String get usageTitle => 'Utilização';
+
+  @override
+  String get demoPurchaseNote => 'Faturação de demonstração: as compras são simuladas nesta plataforma.';
+
+  @override
+  String get mostPopular => 'Mais popular';
+
+  @override
+  String get bestValue => 'Melhor valor';
+
+  @override
+  String get planFeaturesCommon =>
+      'O reconhecimento de fotos, os dados em tempo real, os gráficos, os favoritos e os 44 idiomas estão incluídos em todos os planos. A quota cobre as análises com IA.';
+
+  @override
+  String get searchLanguages => 'Pesquisar idiomas…';
+
+  @override
+  String get noLanguageMatch => 'Nenhum idioma corresponde.';
+
+  @override
+  String get aiSettings => 'Análise com IA';
+
+  @override
+  String get aiLength => 'Extensão';
+
+  @override
+  String get aiDepthBrief => 'Breve';
+
+  @override
+  String get aiDepthStandard => 'Padrão';
+
+  @override
+  String get aiDepthDeep => 'Detalhada';
+
+  @override
+  String get aiDepthBriefDesc => 'O essencial, de forma rápida.';
+
+  @override
+  String get aiDepthStandardDesc => 'Relatório completo com todas as secções.';
+
+  @override
+  String get aiDepthDeepDesc => 'Mais pesquisas na web, comparação com concorrentes e maior detalhe.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Cerca de $min–$max palavras';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'usa $count análises',
+      one: 'usa 1 análise',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Nível do leitor';
+
+  @override
+  String get aiReaderBeginner => 'Iniciante';
+
+  @override
+  String get aiReaderExperienced => 'Experiente';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Linguagem simples; cada termo técnico é explicado.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Texto mais denso, com terminologia financeira padrão.';
+
+  @override
+  String get aiCounterArgument => 'Contra-argumento mais forte';
+
+  @override
+  String get aiCounterArgumentDesc => 'O resumo termina sempre com o melhor argumento contra a sua própria conclusão.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Até $count pesquisas na web por análise com o seu plano',
+      one: 'Até 1 pesquisa na web por análise com o seu plano',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Extensão padrão por plano: Normal $normal, Pro $pro, Max $max, Ultra $ultra. «Breve» usa menos 2 e «Detalhada» mais 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'até $count pesquisas na web',
+      one: 'até 1 pesquisa na web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pesquisas na web por análise',
+      one: '1 pesquisa na web por análise',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Esta extensão requer $needed análises, mas só lhe restam $left. Escolha uma extensão mais curta nas Configurações ou obtenha mais análises.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Sentimento do mercado';
+
+  @override
+  String get moodVeryPessimistic => 'Muito pessimista';
+
+  @override
+  String get moodPessimistic => 'Pessimista';
+
+  @override
+  String get moodNeutral => 'Neutro';
+
+  @override
+  String get moodOptimistic => 'Otimista';
+
+  @override
+  String get moodVeryOptimistic => 'Muito otimista';
+
+  @override
+  String get scenarioBull => 'Cenário otimista';
+
+  @override
+  String get scenarioBase => 'Cenário base';
+
+  @override
+  String get scenarioBear => 'Cenário pessimista';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Preço atual: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Níveis-chave';
+
+  @override
+  String get keyLevelSupport => 'Suporte';
+
+  @override
+  String get keyLevelResistance => 'Resistência';
+
+  @override
+  String get keyLevelAnchor => 'Âncora';
+
+  @override
+  String get upcomingEvents => 'Próximos eventos';
+
+  @override
+  String get outlookChartNote =>
+      'Intervalos indicativos; as probabilidades são estimativas aproximadas, não previsões.';
 }

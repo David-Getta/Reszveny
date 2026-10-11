@@ -16,6 +16,22 @@ enum AppErrorCode {
   noQuote,
   noProfile,
   demoUnsupportedSymbol,
+  noResults,
+  aiNotConfigured,
+  aiUnreachable,
+  aiHttp,
+  aiRefused,
+  aiBadResponse,
+  clipboardNoImage,
+  chartUnavailable,
+  statementsUnavailable,
+  quotaExceeded,
+  trialExpired,
+  noPlan,
+
+  /// Van még keret, de kevesebb, mint amennyit a választott hossz fogyaszt.
+  /// A [AppException.detail] formátuma: `szükséges/maradt`, pl. `2/1`.
+  notEnoughCredits,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés
@@ -37,4 +53,8 @@ class RecognitionException extends AppException {
 
 class MarketDataException extends AppException {
   const MarketDataException(super.code, {super.detail, super.cause});
+}
+
+class AnalysisException extends AppException {
+  const AnalysisException(super.code, {super.detail, super.cause});
 }

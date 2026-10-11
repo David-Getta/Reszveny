@@ -10,14 +10,13 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appTitle => 'Reszveny';
+  String get appTitle => 'StockLens';
 
   @override
   String get homeTagline => 'صوّر سهماً وتعرّف على كل شيء عنه.';
 
   @override
-  String get homeHint =>
-      'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
+  String get homeHint => 'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
 
   @override
   String get takePhoto => 'التقاط صورة';
@@ -55,8 +54,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noCandidatesTitle => 'لم يتم التعرف على أي سهم';
 
   @override
-  String get noCandidatesBody =>
-      'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
+  String get noCandidatesBody => 'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
 
   @override
   String get whatWeSaw => 'ما رأيناه';
@@ -347,8 +345,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'لم يتم تكوين التعرف على الصور (لا يوجد ANTHROPIC_API_KEY). أدخل رمز السهم يدوياً.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
+  String get errRecognitionUnreachable => 'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -356,12 +353,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
+  String get errRecognitionRefused => 'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
 
   @override
-  String get errRecognitionTruncated =>
-      'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
+  String get errRecognitionTruncated => 'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
 
   @override
   String get errRecognitionBadResponse => 'استجابة غير متوقعة من خدمة التعرف.';
@@ -370,16 +365,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errRecognitionEmpty => 'أعادت خدمة التعرف استجابة فارغة.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'لم يتم تكوين بيانات السوق (لا يوجد FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'لم يتم تكوين بيانات السوق (لا يوجد FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable =>
-      'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
+  String get errMarketUnreachable => 'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
 
   @override
-  String get errMarketRateLimited =>
-      'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
+  String get errMarketRateLimited => 'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
 
   @override
   String errMarketHttp(String status) {
@@ -408,4 +400,561 @@ class AppLocalizationsAr extends AppLocalizations {
   String errUnknown(String detail) {
     return 'حدث خطأ ما: $detail';
   }
+
+  @override
+  String get newSearch => 'بحث جديد';
+
+  @override
+  String get recentSearches => 'الأخيرة';
+
+  @override
+  String get noRecentSearches => 'لا توجد عمليات بحث أخيرة بعد.';
+
+  @override
+  String get clearRecent => 'مسح الأخيرة';
+
+  @override
+  String get greeting => 'أي سهم نلقي نظرة عليه؟';
+
+  @override
+  String get searchHint => 'رمز السهم أو اسم الشركة';
+
+  @override
+  String get attachImage => 'إرفاق صورة';
+
+  @override
+  String get searchResultsTitle => 'نتائج البحث';
+
+  @override
+  String errNoResults(String query) {
+    return 'لم يتم العثور على أسهم لـ “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'اكتب رمز السهم أو اسم الشركة…';
+
+  @override
+  String get openFullWindow => 'فتح النافذة';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'اضغط $shortcut في أي مكان لاستدعاء StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'فتح StockLens';
+
+  @override
+  String get trayQuickSearch => 'بحث سريع';
+
+  @override
+  String get trayQuit => 'إنهاء';
+
+  @override
+  String get appearance => 'المظهر';
+
+  @override
+  String get themeSystem => 'النظام';
+
+  @override
+  String get themeDark => 'داكن';
+
+  @override
+  String get themeLight => 'فاتح';
+
+  @override
+  String get back => 'رجوع';
+
+  @override
+  String get aiSectionTitle => 'تحليل بالذكاء الاصطناعي';
+
+  @override
+  String get aiIntro =>
+      'نظرة عامة مفصّلة مكتوبة بالذكاء الاصطناعي: ملخص لآخر الأخبار، ونشاط الشركة، ونقاط القوة، والمخاطر والعوامل الخفية، والتقييم، وتوقعات للسعر مع سيناريوهات من زوايا نفسية واجتماعية وتقنية وكلية، وما يجب متابعته.';
+
+  @override
+  String get aiGenerate => 'إنشاء التحليل';
+
+  @override
+  String get aiRegenerate => 'إعادة الإنشاء';
+
+  @override
+  String get aiGenerating => 'جارٍ إعداد التحليل… قد يستغرق ذلك دقيقة أو دقيقتين.';
+
+  @override
+  String get aiSources => 'المصادر';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'تم الإنشاء $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'تحليل مُنشأ بالذكاء الاصطناعي استناداً إلى بيانات عامة وأخبار حديثة. قد يحتوي على أخطاء أو يكون قديماً، ولا يُعدّ نصيحة استثمارية.';
+
+  @override
+  String get errAiNotConfigured => 'لم يتم تكوين التحليل بالذكاء الاصطناعي (لا يوجد ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'تعذر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من اتصالك بالإنترنت.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'أعادت خدمة الذكاء الاصطناعي خطأً (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'رفضت خدمة الذكاء الاصطناعي تحليل هذا السهم.';
+
+  @override
+  String get errAiBadResponse => 'استجابة غير متوقعة من خدمة الذكاء الاصطناعي.';
+
+  @override
+  String get sectionChart => 'الرسم البياني للسعر';
+
+  @override
+  String get rangeOneWeek => 'أسبوع';
+
+  @override
+  String get rangeOneMonth => 'شهر';
+
+  @override
+  String get rangeThreeMonths => '3 أشهر';
+
+  @override
+  String get rangeOneYear => 'سنة';
+
+  @override
+  String get rangeFiveYears => '5 سنوات';
+
+  @override
+  String get chartUnavailable => 'سجل الأسعار غير متاح من مصدر البيانات الحالي.';
+
+  @override
+  String get sectionStatements => 'القوائم المالية (سنوية)';
+
+  @override
+  String get labelFiscalYear => 'السنة المالية';
+
+  @override
+  String get labelRevenue => 'الإيرادات';
+
+  @override
+  String get labelNetIncome => 'صافي الدخل';
+
+  @override
+  String get labelTotalAssets => 'إجمالي الأصول';
+
+  @override
+  String get labelTotalLiabilities => 'إجمالي الالتزامات';
+
+  @override
+  String get labelEquity => 'حقوق المساهمين';
+
+  @override
+  String get labelOperatingCashFlow => 'التدفق النقدي التشغيلي';
+
+  @override
+  String get statementsUnavailable => 'القوائم المالية المعلنة غير متاحة لهذا السهم.';
+
+  @override
+  String get launchAtLogin => 'التشغيل عند تسجيل الدخول';
+
+  @override
+  String get hotkeyLabel => 'اختصار عام';
+
+  @override
+  String get hotkeyRecordHint => 'انقر هنا ثم اضغط على مجموعة المفاتيح الجديدة';
+
+  @override
+  String get hotkeyReset => 'إعادة التعيين إلى الافتراضي';
+
+  @override
+  String get pasteImage => 'لصق صورة من الحافظة';
+
+  @override
+  String get errClipboardNoImage => 'لا توجد صورة في الحافظة.';
+
+  @override
+  String get favorites => 'المفضلة';
+
+  @override
+  String get addToFavorites => 'إضافة إلى المفضلة';
+
+  @override
+  String get removeFromFavorites => 'إزالة من المفضلة';
+
+  @override
+  String get noFavorites => 'لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.';
+
+  @override
+  String get displayCurrency => 'عملة العرض';
+
+  @override
+  String get displayCurrencyNone => 'عملة السهم الأصلية فقط';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ بعملة $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'سعر الصرف: 1 $from = $rate $to (ECB، $date)';
+  }
+
+  @override
+  String get updates => 'التحديثات';
+
+  @override
+  String currentVersion(String version) {
+    return 'الإصدار $version';
+  }
+
+  @override
+  String get autoUpdate => 'تثبيت التحديثات تلقائيًا';
+
+  @override
+  String get checkForUpdates => 'التحقق من التحديثات';
+
+  @override
+  String get updateChecking => 'جارٍ التحقق من التحديثات…';
+
+  @override
+  String get updateUpToDate => 'أنت تستخدم أحدث إصدار.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'الإصدار $version متاح.';
+  }
+
+  @override
+  String get updateDownloading => 'جارٍ تنزيل التحديث في الخلفية…';
+
+  @override
+  String get updateDownloaded => 'التحديث جاهز. أعد التشغيل لتثبيته.';
+
+  @override
+  String get updateNow => 'تحديث';
+
+  @override
+  String get restartNow => 'إعادة التشغيل';
+
+  @override
+  String get updatesViaStore => 'تصل التحديثات تلقائيًا عبر متجر التطبيقات.';
+
+  @override
+  String get updateCheckFailed => 'تعذر التحقق من التحديثات.';
+
+  @override
+  String get subscription => 'الاشتراك';
+
+  @override
+  String get planTrial => 'تجريبي';
+
+  @override
+  String get planNormal => 'عادي';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'لا توجد خطة نشطة';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count تحليل في الشهر';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'تجربة مجانية لمدة $days يوم تتضمن $count تحليل';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'بقي $days يوم من الفترة التجريبية',
+      many: 'بقي $days يوماً من الفترة التجريبية',
+      few: 'بقيت $days أيام من الفترة التجريبية',
+      two: 'بقي يومان من الفترة التجريبية',
+      one: 'بقي يوم واحد من الفترة التجريبية',
+      zero: 'لم يبقَ أي يوم من الفترة التجريبية',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'انتهت فترتك التجريبية المجانية. اختر خطة لمتابعة التحليل.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'بقي $remaining من $total تحليل في هذه الفترة';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count تحليل إضافي';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'يتجدد في $date';
+  }
+
+  @override
+  String get choosePlan => 'اختر خطة';
+
+  @override
+  String get currentPlan => 'الخطة الحالية';
+
+  @override
+  String get subscribe => 'اشترك';
+
+  @override
+  String get perMonth => '/ شهر';
+
+  @override
+  String get extraPacksTitle => 'تحتاج إلى المزيد؟ اشترِ تحليلات إضافية';
+
+  @override
+  String get extraPacksHint => 'التحليلات الإضافية لا تنتهي صلاحيتها أبداً وتُستخدم بعد استهلاك حصتك الشهرية.';
+
+  @override
+  String get buy => 'شراء';
+
+  @override
+  String get restorePurchases => 'استعادة المشتريات';
+
+  @override
+  String get manageSubscription => 'إدارة الاشتراك';
+
+  @override
+  String get purchaseSuccess => 'شكراً! عملية الشراء نشطة الآن.';
+
+  @override
+  String get purchasePending => 'عملية الشراء قيد الانتظار…';
+
+  @override
+  String get purchaseFailed => 'تعذر إكمال عملية الشراء.';
+
+  @override
+  String get purchaseCanceled => 'تم إلغاء عملية الشراء.';
+
+  @override
+  String get billingUnavailable =>
+      'المشتريات غير متاحة على هذه المنصة حتى الآن. اشترك من هاتفك أو جهاز Mac؛ ستعمل خطتك على جميع الأجهزة.';
+
+  @override
+  String get errQuotaExceeded => 'لم يبقَ لديك أي تحليلات لهذه الفترة. قم بترقية خطتك أو اشترِ تحليلات إضافية.';
+
+  @override
+  String get errTrialExpired => 'انتهت فترتك التجريبية المجانية. اختر خطة للمتابعة.';
+
+  @override
+  String get errNoPlan => 'يلزم وجود خطة نشطة للتحليل بالذكاء الاصطناعي.';
+
+  @override
+  String get viewPlans => 'عرض الخطط';
+
+  @override
+  String get usageTitle => 'الاستخدام';
+
+  @override
+  String get demoPurchaseNote => 'فوترة تجريبية: عمليات الشراء على هذه المنصة محاكاة فقط.';
+
+  @override
+  String get mostPopular => 'الأكثر شيوعاً';
+
+  @override
+  String get bestValue => 'أفضل قيمة';
+
+  @override
+  String get planFeaturesCommon =>
+      'التعرف على الصور والبيانات المباشرة والرسوم البيانية والمفضلة وجميع اللغات الـ44 مضمّنة في كل خطة. تغطي الحصة التحليلات بالذكاء الاصطناعي.';
+
+  @override
+  String get searchLanguages => 'ابحث عن لغة…';
+
+  @override
+  String get noLanguageMatch => 'لا توجد لغة مطابقة.';
+
+  @override
+  String get aiSettings => 'تحليل بالذكاء الاصطناعي';
+
+  @override
+  String get aiLength => 'الطول';
+
+  @override
+  String get aiDepthBrief => 'موجز';
+
+  @override
+  String get aiDepthStandard => 'قياسي';
+
+  @override
+  String get aiDepthDeep => 'معمّق';
+
+  @override
+  String get aiDepthBriefDesc => 'الأساسيات بسرعة.';
+
+  @override
+  String get aiDepthStandardDesc => 'تقرير كامل بجميع الأقسام.';
+
+  @override
+  String get aiDepthDeepDesc => 'مزيد من عمليات البحث على الويب، ومقارنة بالشركات المنافسة، وتفاصيل أعمق.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'نحو $min–$max كلمة';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'يستهلك $count تحليل',
+      many: 'يستهلك $count تحليلاً',
+      few: 'يستهلك $count تحليلات',
+      two: 'يستهلك تحليلين',
+      one: 'يستهلك تحليلاً واحداً',
+      zero: 'لا يستهلك أي تحليل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'مستوى القارئ';
+
+  @override
+  String get aiReaderBeginner => 'مبتدئ';
+
+  @override
+  String get aiReaderExperienced => 'متمرّس';
+
+  @override
+  String get aiReaderBeginnerDesc => 'لغة بسيطة، مع شرح كل مصطلح تقني.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'نص أكثر كثافة بالمصطلحات المالية المعتادة.';
+
+  @override
+  String get aiCounterArgument => 'أقوى حجة مضادة';
+
+  @override
+  String get aiCounterArgumentDesc => 'يُختتم الملخص دائماً بأقوى حجة ضد استنتاجه.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'حتى $count عملية بحث على الويب لكل تحليل ضمن خطتك',
+      many: 'حتى $count عملية بحث على الويب لكل تحليل ضمن خطتك',
+      few: 'حتى $count عمليات بحث على الويب لكل تحليل ضمن خطتك',
+      two: 'حتى بحثين على الويب لكل تحليل ضمن خطتك',
+      one: 'حتى بحث واحد على الويب لكل تحليل ضمن خطتك',
+      zero: 'لا يشمل التحليل أي بحث على الويب ضمن خطتك',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'عمليات البحث على الويب في الطول القياسي حسب الخطة: عادي $normal، Pro $pro، Max $max، Ultra $ultra. يستخدم الموجز عمليتين أقل، والمعمّق عمليتين أكثر.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'حتى $count عملية بحث على الويب',
+      many: 'حتى $count عملية بحث على الويب',
+      few: 'حتى $count عمليات بحث على الويب',
+      two: 'حتى بحثين على الويب',
+      one: 'حتى بحث واحد على الويب',
+      zero: 'بدون بحث على الويب',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count عملية بحث على الويب لكل تحليل',
+      many: '$count عملية بحث على الويب لكل تحليل',
+      few: '$count عمليات بحث على الويب لكل تحليل',
+      two: 'بحثان على الويب لكل تحليل',
+      one: 'بحث واحد على الويب لكل تحليل',
+      zero: 'بدون بحث على الويب في التحليل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'يتطلب هذا الطول عدداً من التحليلات قدره $needed، لكن المتبقي لديك $left فقط. اختر طولاً أقصر من الإعدادات أو احصل على مزيد من التحليلات.';
+  }
+
+  @override
+  String get outlookMarketMood => 'مزاج السوق';
+
+  @override
+  String get moodVeryPessimistic => 'متشائم جداً';
+
+  @override
+  String get moodPessimistic => 'متشائم';
+
+  @override
+  String get moodNeutral => 'محايد';
+
+  @override
+  String get moodOptimistic => 'متفائل';
+
+  @override
+  String get moodVeryOptimistic => 'متفائل جداً';
+
+  @override
+  String get scenarioBull => 'السيناريو المتفائل';
+
+  @override
+  String get scenarioBase => 'السيناريو الأساسي';
+
+  @override
+  String get scenarioBear => 'السيناريو المتشائم';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'السعر الحالي: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'المستويات الرئيسية';
+
+  @override
+  String get keyLevelSupport => 'الدعم';
+
+  @override
+  String get keyLevelResistance => 'المقاومة';
+
+  @override
+  String get keyLevelAnchor => 'المستوى المرجعي';
+
+  @override
+  String get upcomingEvents => 'الأحداث القادمة';
+
+  @override
+  String get outlookChartNote => 'نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات.';
 }

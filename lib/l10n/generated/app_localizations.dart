@@ -103,8 +103,7 @@ import 'app_localizations_zh.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -112,8 +111,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -125,13 +123,12 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -178,17 +175,13 @@ abstract class AppLocalizations {
     Locale('ur'),
     Locale('vi'),
     Locale('zh'),
-    Locale.fromSubtags(
-      languageCode: 'zh',
-      countryCode: 'HK',
-      scriptCode: 'Hant',
-    ),
+    Locale.fromSubtags(languageCode: 'zh', countryCode: 'HK', scriptCode: 'Hant'),
   ];
 
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Reszveny'**
+  /// **'StockLens'**
   String get appTitle;
 
   /// No description provided for @homeTagline.
@@ -892,10 +885,927 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Something went wrong: {detail}'**
   String errUnknown(String detail);
+
+  /// No description provided for @newSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'New search'**
+  String get newSearch;
+
+  /// No description provided for @recentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent'**
+  String get recentSearches;
+
+  /// No description provided for @noRecentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'No recent searches yet.'**
+  String get noRecentSearches;
+
+  /// No description provided for @clearRecent.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear recent'**
+  String get clearRecent;
+
+  /// No description provided for @greeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Which stock shall we look at?'**
+  String get greeting;
+
+  /// No description provided for @searchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticker or company name'**
+  String get searchHint;
+
+  /// No description provided for @attachImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach an image'**
+  String get attachImage;
+
+  /// No description provided for @searchResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search results'**
+  String get searchResultsTitle;
+
+  /// No description provided for @errNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No stocks found for “{query}”.'**
+  String errNoResults(String query);
+
+  /// No description provided for @quickBarHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a ticker or company name…'**
+  String get quickBarHint;
+
+  /// No description provided for @openFullWindow.
+  ///
+  /// In en, this message translates to:
+  /// **'Open window'**
+  String get openFullWindow;
+
+  /// No description provided for @hotkeyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Press {shortcut} anywhere to summon StockLens.'**
+  String hotkeyHint(String shortcut);
+
+  /// No description provided for @trayOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open StockLens'**
+  String get trayOpen;
+
+  /// No description provided for @trayQuickSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick search'**
+  String get trayQuickSearch;
+
+  /// No description provided for @trayQuit.
+  ///
+  /// In en, this message translates to:
+  /// **'Quit'**
+  String get trayQuit;
+
+  /// No description provided for @appearance.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get appearance;
+
+  /// No description provided for @themeSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get themeSystem;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get themeDark;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get themeLight;
+
+  /// No description provided for @back.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// No description provided for @aiSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis'**
+  String get aiSectionTitle;
+
+  /// No description provided for @aiIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'A detailed, AI-written overview: summary of recent news, the business, strengths, risks and hidden factors, valuation, a price outlook with scenarios from psychological, sociological, technical and macro angles, and what to watch.'**
+  String get aiIntro;
+
+  /// No description provided for @aiGenerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Generate analysis'**
+  String get aiGenerate;
+
+  /// No description provided for @aiRegenerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Regenerate'**
+  String get aiRegenerate;
+
+  /// No description provided for @aiGenerating.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the analysis… this can take a minute or two.'**
+  String get aiGenerating;
+
+  /// No description provided for @aiSources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get aiSources;
+
+  /// No description provided for @aiGeneratedAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Generated {time}'**
+  String aiGeneratedAt(String time);
+
+  /// No description provided for @aiDisclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.'**
+  String get aiDisclaimer;
+
+  /// No description provided for @errAiNotConfigured.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis is not configured (no ANTHROPIC_API_KEY).'**
+  String get errAiNotConfigured;
+
+  /// No description provided for @errAiUnreachable.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not reach the AI service. Check your internet connection.'**
+  String get errAiUnreachable;
+
+  /// No description provided for @errAiHttp.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service returned an error (HTTP {status}).'**
+  String errAiHttp(String status);
+
+  /// No description provided for @errAiRefused.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service declined to analyse this stock.'**
+  String get errAiRefused;
+
+  /// No description provided for @errAiBadResponse.
+  ///
+  /// In en, this message translates to:
+  /// **'Unexpected response from the AI service.'**
+  String get errAiBadResponse;
+
+  /// No description provided for @sectionChart.
+  ///
+  /// In en, this message translates to:
+  /// **'Price chart'**
+  String get sectionChart;
+
+  /// No description provided for @rangeOneWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'1W'**
+  String get rangeOneWeek;
+
+  /// No description provided for @rangeOneMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'1M'**
+  String get rangeOneMonth;
+
+  /// No description provided for @rangeThreeMonths.
+  ///
+  /// In en, this message translates to:
+  /// **'3M'**
+  String get rangeThreeMonths;
+
+  /// No description provided for @rangeOneYear.
+  ///
+  /// In en, this message translates to:
+  /// **'1Y'**
+  String get rangeOneYear;
+
+  /// No description provided for @rangeFiveYears.
+  ///
+  /// In en, this message translates to:
+  /// **'5Y'**
+  String get rangeFiveYears;
+
+  /// No description provided for @chartUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Price history is not available from the current data source.'**
+  String get chartUnavailable;
+
+  /// No description provided for @sectionStatements.
+  ///
+  /// In en, this message translates to:
+  /// **'Financial statements (annual)'**
+  String get sectionStatements;
+
+  /// No description provided for @labelFiscalYear.
+  ///
+  /// In en, this message translates to:
+  /// **'Fiscal year'**
+  String get labelFiscalYear;
+
+  /// No description provided for @labelRevenue.
+  ///
+  /// In en, this message translates to:
+  /// **'Revenue'**
+  String get labelRevenue;
+
+  /// No description provided for @labelNetIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Net income'**
+  String get labelNetIncome;
+
+  /// No description provided for @labelTotalAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'Total assets'**
+  String get labelTotalAssets;
+
+  /// No description provided for @labelTotalLiabilities.
+  ///
+  /// In en, this message translates to:
+  /// **'Total liabilities'**
+  String get labelTotalLiabilities;
+
+  /// No description provided for @labelEquity.
+  ///
+  /// In en, this message translates to:
+  /// **'Shareholders’ equity'**
+  String get labelEquity;
+
+  /// No description provided for @labelOperatingCashFlow.
+  ///
+  /// In en, this message translates to:
+  /// **'Operating cash flow'**
+  String get labelOperatingCashFlow;
+
+  /// No description provided for @statementsUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported financial statements are not available for this stock.'**
+  String get statementsUnavailable;
+
+  /// No description provided for @launchAtLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Launch at login'**
+  String get launchAtLogin;
+
+  /// No description provided for @hotkeyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Global shortcut'**
+  String get hotkeyLabel;
+
+  /// No description provided for @hotkeyRecordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Click here, then press the new key combination'**
+  String get hotkeyRecordHint;
+
+  /// No description provided for @hotkeyReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset to default'**
+  String get hotkeyReset;
+
+  /// No description provided for @pasteImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste image from clipboard'**
+  String get pasteImage;
+
+  /// No description provided for @errClipboardNoImage.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no image on the clipboard.'**
+  String get errClipboardNoImage;
+
+  /// No description provided for @favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get favorites;
+
+  /// No description provided for @addToFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to favorites'**
+  String get addToFavorites;
+
+  /// No description provided for @removeFromFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from favorites'**
+  String get removeFromFavorites;
+
+  /// No description provided for @noFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'No favorites yet. Tap the star on a stock to add it.'**
+  String get noFavorites;
+
+  /// No description provided for @displayCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Display currency'**
+  String get displayCurrency;
+
+  /// No description provided for @displayCurrencyNone.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock’s own currency only'**
+  String get displayCurrencyNone;
+
+  /// No description provided for @labelConverted.
+  ///
+  /// In en, this message translates to:
+  /// **'≈ in {currency}'**
+  String labelConverted(String currency);
+
+  /// No description provided for @fxRateNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate: 1 {from} = {rate} {to} (ECB, {date})'**
+  String fxRateNote(String from, String rate, String to, String date);
+
+  /// No description provided for @updates.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates'**
+  String get updates;
+
+  /// No description provided for @currentVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version}'**
+  String currentVersion(String version);
+
+  /// No description provided for @autoUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Install updates automatically'**
+  String get autoUpdate;
+
+  /// No description provided for @checkForUpdates.
+  ///
+  /// In en, this message translates to:
+  /// **'Check for updates'**
+  String get checkForUpdates;
+
+  /// No description provided for @updateChecking.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking for updates…'**
+  String get updateChecking;
+
+  /// No description provided for @updateUpToDate.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re on the latest version.'**
+  String get updateUpToDate;
+
+  /// No description provided for @updateAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version} is available.'**
+  String updateAvailable(String version);
+
+  /// No description provided for @updateDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading the update in the background…'**
+  String get updateDownloading;
+
+  /// No description provided for @updateDownloaded.
+  ///
+  /// In en, this message translates to:
+  /// **'The update is ready. Restart to install it.'**
+  String get updateDownloaded;
+
+  /// No description provided for @updateNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get updateNow;
+
+  /// No description provided for @restartNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Restart'**
+  String get restartNow;
+
+  /// No description provided for @updatesViaStore.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates arrive automatically through the app store.'**
+  String get updatesViaStore;
+
+  /// No description provided for @updateCheckFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not check for updates.'**
+  String get updateCheckFailed;
+
+  /// No description provided for @subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get subscription;
+
+  /// No description provided for @planTrial.
+  ///
+  /// In en, this message translates to:
+  /// **'Trial'**
+  String get planTrial;
+
+  /// No description provided for @planNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get planNormal;
+
+  /// No description provided for @planPro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro'**
+  String get planPro;
+
+  /// No description provided for @planMax1.
+  ///
+  /// In en, this message translates to:
+  /// **'Max'**
+  String get planMax1;
+
+  /// No description provided for @planMax2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ultra'**
+  String get planMax2;
+
+  /// No description provided for @planNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No active plan'**
+  String get planNone;
+
+  /// No description provided for @planAnalysesPerMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} analyses per month'**
+  String planAnalysesPerMonth(int count);
+
+  /// No description provided for @planTrialDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'{days}-day free trial with {count} analyses'**
+  String planTrialDescription(int days, int count);
+
+  /// No description provided for @trialDaysLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{1 day of trial left} other{{days} days of trial left}}'**
+  String trialDaysLeft(int days);
+
+  /// No description provided for @trialExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your free trial has ended. Choose a plan to keep analysing.'**
+  String get trialExpired;
+
+  /// No description provided for @analysesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{remaining} of {total} analyses left this period'**
+  String analysesRemaining(int remaining, int total);
+
+  /// No description provided for @extraCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} extra analyses'**
+  String extraCredits(int count);
+
+  /// No description provided for @renewsOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Renews {date}'**
+  String renewsOn(String date);
+
+  /// No description provided for @choosePlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a plan'**
+  String get choosePlan;
+
+  /// No description provided for @currentPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Current plan'**
+  String get currentPlan;
+
+  /// No description provided for @subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe'**
+  String get subscribe;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/ month'**
+  String get perMonth;
+
+  /// No description provided for @extraPacksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Need more? Buy extra analyses'**
+  String get extraPacksTitle;
+
+  /// No description provided for @extraPacksHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Extra analyses never expire and are used after your monthly allowance.'**
+  String get extraPacksHint;
+
+  /// No description provided for @buy.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy'**
+  String get buy;
+
+  /// No description provided for @restorePurchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchases'**
+  String get restorePurchases;
+
+  /// No description provided for @manageSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get manageSubscription;
+
+  /// No description provided for @purchaseSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks! Your purchase is active.'**
+  String get purchaseSuccess;
+
+  /// No description provided for @purchasePending.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase pending…'**
+  String get purchasePending;
+
+  /// No description provided for @purchaseFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase could not be completed.'**
+  String get purchaseFailed;
+
+  /// No description provided for @purchaseCanceled.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase canceled.'**
+  String get purchaseCanceled;
+
+  /// No description provided for @billingUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.'**
+  String get billingUnavailable;
+
+  /// No description provided for @errQuotaExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no analyses left for this period. Upgrade your plan or buy extra analyses.'**
+  String get errQuotaExceeded;
+
+  /// No description provided for @errTrialExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your free trial has ended. Choose a plan to continue.'**
+  String get errTrialExpired;
+
+  /// No description provided for @errNoPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'An active plan is needed for AI analysis.'**
+  String get errNoPlan;
+
+  /// No description provided for @viewPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'View plans'**
+  String get viewPlans;
+
+  /// No description provided for @usageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Usage'**
+  String get usageTitle;
+
+  /// No description provided for @demoPurchaseNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Demo billing: purchases are simulated on this platform.'**
+  String get demoPurchaseNote;
+
+  /// No description provided for @mostPopular.
+  ///
+  /// In en, this message translates to:
+  /// **'Most popular'**
+  String get mostPopular;
+
+  /// No description provided for @bestValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Best value'**
+  String get bestValue;
+
+  /// No description provided for @planFeaturesCommon.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.'**
+  String get planFeaturesCommon;
+
+  /// No description provided for @searchLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Search languages…'**
+  String get searchLanguages;
+
+  /// No description provided for @noLanguageMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'No language matches.'**
+  String get noLanguageMatch;
+
+  /// No description provided for @aiSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis'**
+  String get aiSettings;
+
+  /// No description provided for @aiLength.
+  ///
+  /// In en, this message translates to:
+  /// **'Length'**
+  String get aiLength;
+
+  /// No description provided for @aiDepthBrief.
+  ///
+  /// In en, this message translates to:
+  /// **'Brief'**
+  String get aiDepthBrief;
+
+  /// No description provided for @aiDepthStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get aiDepthStandard;
+
+  /// No description provided for @aiDepthDeep.
+  ///
+  /// In en, this message translates to:
+  /// **'In-depth'**
+  String get aiDepthDeep;
+
+  /// No description provided for @aiDepthBriefDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The essentials, fast.'**
+  String get aiDepthBriefDesc;
+
+  /// No description provided for @aiDepthStandardDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Full report with every section.'**
+  String get aiDepthStandardDesc;
+
+  /// No description provided for @aiDepthDeepDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'More web searches, peer comparison and deeper detail.'**
+  String get aiDepthDeepDesc;
+
+  /// No description provided for @aiDepthWords.
+  ///
+  /// In en, this message translates to:
+  /// **'About {min}–{max} words'**
+  String aiDepthWords(String min, String max);
+
+  /// No description provided for @aiDepthCost.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{uses 1 analysis} other{uses {count} analyses}}'**
+  String aiDepthCost(int count);
+
+  /// No description provided for @aiReaderLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reader level'**
+  String get aiReaderLevel;
+
+  /// No description provided for @aiReaderBeginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get aiReaderBeginner;
+
+  /// No description provided for @aiReaderExperienced.
+  ///
+  /// In en, this message translates to:
+  /// **'Experienced'**
+  String get aiReaderExperienced;
+
+  /// No description provided for @aiReaderBeginnerDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Plain language; every technical term is explained.'**
+  String get aiReaderBeginnerDesc;
+
+  /// No description provided for @aiReaderExperiencedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Denser text with standard financial terminology.'**
+  String get aiReaderExperiencedDesc;
+
+  /// No description provided for @aiCounterArgument.
+  ///
+  /// In en, this message translates to:
+  /// **'Strongest counter-argument'**
+  String get aiCounterArgument;
+
+  /// No description provided for @aiCounterArgumentDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The summary always ends with the best case against its own conclusion.'**
+  String get aiCounterArgumentDesc;
+
+  /// No description provided for @aiWebSearchesInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{Up to 1 web search per analysis with your plan} other{Up to {count} web searches per analysis with your plan}}'**
+  String aiWebSearchesInfo(int count);
+
+  /// No description provided for @aiWebSearchesPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard length by plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Brief uses 2 fewer, In-depth 2 more.'**
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra);
+
+  /// No description provided for @aiWebSearchesShort.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{up to 1 web search} other{up to {count} web searches}}'**
+  String aiWebSearchesShort(int count);
+
+  /// No description provided for @planWebSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{1 web search per analysis} other{{count} web searches per analysis}}'**
+  String planWebSearches(int count);
+
+  /// No description provided for @errNotEnoughCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'This length needs {needed} analyses, but only {left} left. Choose a shorter length in Settings or get more analyses.'**
+  String errNotEnoughCredits(int needed, int left);
+
+  /// No description provided for @outlookMarketMood.
+  ///
+  /// In en, this message translates to:
+  /// **'Market mood'**
+  String get outlookMarketMood;
+
+  /// No description provided for @moodVeryPessimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Very pessimistic'**
+  String get moodVeryPessimistic;
+
+  /// No description provided for @moodPessimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Pessimistic'**
+  String get moodPessimistic;
+
+  /// No description provided for @moodNeutral.
+  ///
+  /// In en, this message translates to:
+  /// **'Neutral'**
+  String get moodNeutral;
+
+  /// No description provided for @moodOptimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Optimistic'**
+  String get moodOptimistic;
+
+  /// No description provided for @moodVeryOptimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Very optimistic'**
+  String get moodVeryOptimistic;
+
+  /// No description provided for @scenarioBull.
+  ///
+  /// In en, this message translates to:
+  /// **'Bull case'**
+  String get scenarioBull;
+
+  /// No description provided for @scenarioBase.
+  ///
+  /// In en, this message translates to:
+  /// **'Base case'**
+  String get scenarioBase;
+
+  /// No description provided for @scenarioBear.
+  ///
+  /// In en, this message translates to:
+  /// **'Bear case'**
+  String get scenarioBear;
+
+  /// No description provided for @outlookCurrentPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Current price: {price}'**
+  String outlookCurrentPrice(String price);
+
+  /// No description provided for @outlookKeyLevels.
+  ///
+  /// In en, this message translates to:
+  /// **'Key levels'**
+  String get outlookKeyLevels;
+
+  /// No description provided for @keyLevelSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Support'**
+  String get keyLevelSupport;
+
+  /// No description provided for @keyLevelResistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Resistance'**
+  String get keyLevelResistance;
+
+  /// No description provided for @keyLevelAnchor.
+  ///
+  /// In en, this message translates to:
+  /// **'Anchor'**
+  String get keyLevelAnchor;
+
+  /// No description provided for @upcomingEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming events'**
+  String get upcomingEvents;
+
+  /// No description provided for @outlookChartNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Indicative ranges; probabilities are rough judgements, not predictions.'**
+  String get outlookChartNote;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override

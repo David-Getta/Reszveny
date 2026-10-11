@@ -93,4 +93,57 @@ void main() {
     expect(c.score, closeTo(4.08, 0.01));
     expect(FinnhubMarketDataProvider.parseConsensus([]), isNull);
   });
+
+  test('analysis extras: peers, insider summary, earnings surprises, next earnings', () {
+    final e = FinnhubMarketDataProvider.parseAnalysisExtras(
+      'AAPL',
+      now: DateTime(2026, 10, 10),
+      peers: ['AAPL', 'DELL', 'HPQ'],
+      insider: {
+        'data': [
+          {'name': 'COOK TIMOTHY D', 'change': -50000, 'transactionDate': '2026-09-01', 'transactionCode': 'S'},
+          {
+            'name': 'LEVINSON ARTHUR',
+            'change': 2000,
+            'transactionDate': '2026-09-15',
+            'transactionCode': 'P',
+            'transactionPrice': 210.5,
+          },
+          {'name': 'X', 'change': 90000, 'transactionDate': '2026-08-20', 'transactionCode': 'M'},
+        ],
+      },
+      earnings: [
+        {'actual': 1.65, 'estimate': 1.6, 'period': '2026-06-30', 'surprisePercent': 3.1},
+        {'actual': 1.5, 'estimate': 1.55, 'period': '2026-03-31', 'surprisePercent': -3.2},
+      ],
+      calendar: {
+        'earningsCalendar': [
+          {'date': '2026-10-30', 'hour': 'amc', 'epsEstimate': 1.7, 'revenueEstimate': 98000000000},
+          {'date': '2026-10-01', 'hour': 'amc'},
+        ],
+      },
+    );
+    expect(e.peers, ['DELL', 'HPQ']);
+    final ins = e.insider!;
+    expect(ins.buys, 1);
+    expect(ins.sells, 1);
+    expect(ins.netShares, -48000);
+    expect(ins.notable.first.code, 'M'); // a legnagyobb mozgás elöl
+    expect(e.earnings.first.period, DateTime(2026, 6, 30));
+    expect(e.nextEarnings!.date, DateTime(2026, 10, 30));
+    expect(e.nextEarnings!.hour, 'amc');
+    expect(e.toJson()['earnings_history'], hasLength(2));
+  });
+
+  test('analysis extras tolerate missing or broken responses', () {
+    final e = FinnhubMarketDataProvider.parseAnalysisExtras(
+      'AAPL',
+      peers: null,
+      insider: 'x',
+      earnings: {},
+      calendar: [],
+    );
+    expect(e.isEmpty, isTrue);
+    expect(e.toJson(), isEmpty);
+  });
 }

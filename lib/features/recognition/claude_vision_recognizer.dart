@@ -82,10 +82,10 @@ Your task: identify which exchange-listed stock(s) it refers to.
     try {
       response = await _client
           .post(
-            Uri.parse('${config.anthropicBaseUrl}/v1/messages'),
+            Uri.parse('${config.effectiveAnthropicBaseUrl}/v1/messages'),
             headers: {
               'content-type': 'application/json',
-              'x-api-key': config.anthropicApiKey,
+              if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
               'anthropic-version': anthropicVersion,
               // Ha a biztonsági osztályozó elutasítja a kérést, a szerver
               // ugyanabban a hívásban egy tartalék modellen futtatja újra.

@@ -21,5 +21,21 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.noQuote => l10n.errNoQuote(d),
     AppErrorCode.noProfile => l10n.errNoProfile(d),
     AppErrorCode.demoUnsupportedSymbol => l10n.errDemoUnsupportedSymbol(d),
+    AppErrorCode.noResults => l10n.errNoResults(d),
+    AppErrorCode.aiNotConfigured => l10n.errAiNotConfigured,
+    AppErrorCode.aiUnreachable => l10n.errAiUnreachable,
+    AppErrorCode.aiHttp => l10n.errAiHttp(d),
+    AppErrorCode.aiRefused => l10n.errAiRefused,
+    AppErrorCode.aiBadResponse => l10n.errAiBadResponse,
+    AppErrorCode.clipboardNoImage => l10n.errClipboardNoImage,
+    AppErrorCode.chartUnavailable => l10n.chartUnavailable,
+    AppErrorCode.statementsUnavailable => l10n.statementsUnavailable,
+    AppErrorCode.quotaExceeded => l10n.errQuotaExceeded,
+    AppErrorCode.trialExpired => l10n.errTrialExpired,
+    AppErrorCode.noPlan => l10n.errNoPlan,
+    AppErrorCode.notEnoughCredits => l10n.errNotEnoughCredits(
+      int.tryParse(d.split('/').first) ?? 2,
+      int.tryParse(d.split('/').last) ?? 0,
+    ),
   };
 }
