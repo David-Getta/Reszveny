@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
@@ -276,5 +277,28 @@ void main() {
     expect(o.webSearches, 8);
     expect(o.readerLevel, ReaderLevel.experienced);
     expect(o.counterArgument, isFalse);
+  });
+
+  testWidgets('the bottom of the settings shows the app version', (tester) async {
+    PackageInfo.setMockInitialValues(
+      appName: 'StockLens',
+      packageName: 'hu.reszveny.reszveny',
+      version: '0.2.4',
+      buildNumber: '7',
+      buildSignature: '',
+    );
+    tester.view.physicalSize = const Size(1200, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    final version = find.byKey(const ValueKey('settings-version'));
+    await tester.scrollUntilVisible(version, 300, scrollable: find.byType(Scrollable).last);
+    await tester.pumpAndSettle();
+    expect(find.text('Version 0.2.4 (7)'), findsWidgets);
+    expect(tester.widget<SelectableText>(version).data, 'Version 0.2.4 (7)');
   });
 }

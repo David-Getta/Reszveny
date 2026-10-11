@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
@@ -277,6 +278,23 @@ void main() {
     await tester.pumpAndSettle();
     await tester.scrollUntilVisible(find.text('Elemzés készítése'), 200, scrollable: find.byType(Scrollable).last);
     await _shot(tester, 'detail_ai_options_hu');
+  });
+
+  testWidgets('settings bottom with version (hungarian)', (tester) async {
+    PackageInfo.setMockInitialValues(
+      appName: 'StockLens',
+      packageName: 'hu.reszveny.reszveny',
+      version: '0.2.4',
+      buildNumber: '7',
+      buildSignature: '',
+    );
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(1200, 900));
+    await tester.tap(find.text('Beállítások'));
+    await tester.pumpAndSettle();
+    final version = find.byKey(const ValueKey('settings-version'));
+    await tester.scrollUntilVisible(version, 300, scrollable: find.byType(Scrollable).last);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'settings_version_hu');
   });
 
   testWidgets('language picker', (tester) async {
