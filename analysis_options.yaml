@@ -8,4 +8,6 @@ analyzer:
     - windows/**
     - macos/**
     - lib/l10n/generated/**
+    # A szerver külön Dart-csomag, saját CI-joba elemzi (`server/`).
+    - server/**
     - web/**

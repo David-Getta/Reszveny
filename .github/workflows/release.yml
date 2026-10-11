@@ -1,0 +1,126 @@
+name: Release
+
+# Letölthető kiadás: egy `v*` tag (pl. v0.2.0) feltöltésekor megépíti az
+# Android APK-t, a Windows és a macOS asztali appot és a webes változatot,
+# majd GitHub Release-be teszi őket. Kézzel is indítható (Actions → Release).
+#
+# Kulcsok nem kerülnek a buildbe. Ha a repó „BACKEND_URL” változója
+# (Settings → Secrets and variables → Actions → Variables) be van állítva, az
+# app a backenden át dolgozik; különben demó módban indul.
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FLUTTER_VERSION: 3.47.7
+  DEFINES: --dart-define=BACKEND_URL=${{ vars.BACKEND_URL }}
+
+jobs:
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build apk --release ${{ env.DEFINES }}
+      - run: mv build/app/outputs/flutter-apk/app-release.apk StockLens-android.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: StockLens-android.apk
+
+  windows:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build windows --release ${{ env.DEFINES }}
+      - name: Zip
+        shell: pwsh
+        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath StockLens-windows-x64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: StockLens-windows-x64.zip
+
+  macos:
+    name: macOS
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build macos --release ${{ env.DEFINES }}
+      - name: Zip
+        run: ditto -c -k --sequesterRsrc --keepParent build/macos/Build/Products/Release/StockLens.app StockLens-macos.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos
+          path: StockLens-macos.zip
+
+  web:
+    name: Web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release --no-web-resources-cdn ${{ env.DEFINES }}
+      - run: cd build/web && zip -qr ../../StockLens-web.zip .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: StockLens-web.zip
+
+  release:
+    name: GitHub Release
+    needs: [android, windows, macos, web]
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: StockLens ${{ github.ref_name }}
+          prerelease: true
+          files: dist/*
+          body: |
+            Kipróbálható előzetes kiadás. Kulcs nélkül demó módban fut: AAPL, MSFT, NVDA és OTP mintaadatokkal.
+
+            **Telepítés**
+            - **Android:** töltsd le a `StockLens-android.apk` fájlt a telefonra, nyisd meg, és engedélyezd az ismeretlen forrásból való telepítést.
+            - **Windows:** csomagold ki a `StockLens-windows-x64.zip` fájlt, és indítsd el a `StockLens.exe`-t. A SmartScreen figyelmeztetésnél válaszd a „További információ”, majd a „Futtatás mindenképp” lehetőséget.
+            - **macOS:** csomagold ki a `StockLens-macos.zip` fájlt, húzd az appot a Programok mappába, majd jobb klikk → Megnyitás (az app nincs aláírva).
+            - **Web:** a `StockLens-web.zip` bármilyen statikus tárhelyre feltölthető.
+            - **iOS / iPadOS:** aláírás nélkül nem telepíthető; ehhez Apple fejlesztői fiók és TestFlight kell.
