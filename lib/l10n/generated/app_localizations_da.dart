@@ -931,4 +931,65 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Vejledende intervaller; sandsynlighederne er grove vurderinger, ikke forudsigelser.';
+
+  @override
+  String get accountTitle => 'Konto';
+
+  @override
+  String get signIn => 'Log ind';
+
+  @override
+  String get signOut => 'Log ud';
+
+  @override
+  String get notSignedIn => 'Ikke logget ind';
+
+  @override
+  String get accountBenefit => 'Log ind, så dit abonnement virker på alle dine enheder.';
+
+  @override
+  String get accountSyncedNote => 'Dit abonnement og dine resterende analyser er de samme på alle enheder.';
+
+  @override
+  String get signInTitle => 'Log ind på StockLens';
+
+  @override
+  String get emailLabel => 'E-mailadresse';
+
+  @override
+  String get continueWithEmail => 'Fortsæt med e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Vi har sendt en 6-cifret kode til $email. Den er gyldig i 10 minutter.';
+  }
+
+  @override
+  String get codeLabel => 'Login-kode';
+
+  @override
+  String get resendCode => 'Send en ny kode';
+
+  @override
+  String get useDifferentEmail => 'Brug en anden e-mail';
+
+  @override
+  String get errInvalidCode => 'Koden er forkert eller udløbet.';
+
+  @override
+  String get errInvalidEmail => 'Indtast en gyldig e-mailadresse.';
+
+  @override
+  String get errSignInFailed => 'Login mislykkedes. Tjek din forbindelse, og prøv igen.';
+
+  @override
+  String get checkoutWaiting =>
+      'Gennemfør betalingen i din browser. Appen opdateres automatisk, når den er gennemført.';
+
+  @override
+  String get paymentViaStripe => 'Sikker betaling i din browser via Stripe. Kan opsiges når som helst.';
+
+  @override
+  String get paymentViaStore =>
+      'Opkræves via din App Store- eller Google Play-konto. Kan opsiges når som helst i butikkens indstillinger.';
 }

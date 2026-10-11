@@ -975,4 +975,65 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Ориентировочные диапазоны; вероятности — приблизительные оценки, а не прогнозы.';
+
+  @override
+  String get accountTitle => 'Аккаунт';
+
+  @override
+  String get signIn => 'Войти';
+
+  @override
+  String get signOut => 'Выйти';
+
+  @override
+  String get notSignedIn => 'Вход не выполнен';
+
+  @override
+  String get accountBenefit => 'Войдите, чтобы ваша подписка работала на всех ваших устройствах.';
+
+  @override
+  String get accountSyncedNote => 'Ваша подписка и оставшиеся анализы одинаковы на всех устройствах.';
+
+  @override
+  String get signInTitle => 'Вход в StockLens';
+
+  @override
+  String get emailLabel => 'Адрес электронной почты';
+
+  @override
+  String get continueWithEmail => 'Продолжить с email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Мы отправили 6-значный код на $email. Он действителен 10 минут.';
+  }
+
+  @override
+  String get codeLabel => 'Код для входа';
+
+  @override
+  String get resendCode => 'Отправить новый код';
+
+  @override
+  String get useDifferentEmail => 'Использовать другой email';
+
+  @override
+  String get errInvalidCode => 'Неверный код или истёк срок его действия.';
+
+  @override
+  String get errInvalidEmail => 'Введите действительный адрес электронной почты.';
+
+  @override
+  String get errSignInFailed => 'Не удалось войти. Проверьте подключение к интернету и попробуйте ещё раз.';
+
+  @override
+  String get checkoutWaiting =>
+      'Завершите оплату в браузере. Приложение обновится автоматически, когда всё будет готово.';
+
+  @override
+  String get paymentViaStripe => 'Безопасная оплата в браузере через Stripe. Отменить можно в любой момент.';
+
+  @override
+  String get paymentViaStore =>
+      'Оплата через ваш аккаунт App Store или Google Play. Отменить можно в любой момент в настройках магазина.';
 }

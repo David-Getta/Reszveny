@@ -7,6 +7,7 @@ import 'core/app_preferences.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
+import 'features/account/account_controller.dart';
 import 'features/billing/entitlement_service.dart';
 
 Future<void> main() async {
@@ -25,6 +26,7 @@ Future<void> main() async {
     preferences: preferences,
     entitlements: entitlements,
     desktop: desktop,
+    accountEmail: await AccountController.loadStoredEmail(),
   );
   runApp(StockLensApp(services: services));
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.

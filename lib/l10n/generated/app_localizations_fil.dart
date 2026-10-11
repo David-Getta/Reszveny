@@ -938,4 +938,66 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get outlookChartNote =>
       'Tinatayang saklaw lamang; ang mga probabilidad ay magaspang na pagtataya, hindi hula.';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get signIn => 'Mag-sign in';
+
+  @override
+  String get signOut => 'Mag-sign out';
+
+  @override
+  String get notSignedIn => 'Hindi naka-sign in';
+
+  @override
+  String get accountBenefit => 'Mag-sign in para gumana ang iyong subscription sa lahat ng iyong device.';
+
+  @override
+  String get accountSyncedNote => 'Pareho ang iyong subscription at natitirang pagsusuri sa bawat device.';
+
+  @override
+  String get signInTitle => 'Mag-sign in sa StockLens';
+
+  @override
+  String get emailLabel => 'Email address';
+
+  @override
+  String get continueWithEmail => 'Magpatuloy gamit ang email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Nagpadala kami ng 6-digit na code sa $email. Valid ito sa loob ng 10 minuto.';
+  }
+
+  @override
+  String get codeLabel => 'Code sa pag-sign in';
+
+  @override
+  String get resendCode => 'Magpadala ng bagong code';
+
+  @override
+  String get useDifferentEmail => 'Gumamit ng ibang email';
+
+  @override
+  String get errInvalidCode => 'Mali o expired na ang code.';
+
+  @override
+  String get errInvalidEmail => 'Maglagay ng valid na email address.';
+
+  @override
+  String get errSignInFailed => 'Hindi nakapag-sign in. Suriin ang iyong koneksyon at subukang muli.';
+
+  @override
+  String get checkoutWaiting =>
+      'Kumpletuhin ang pagbabayad sa iyong browser. Awtomatikong mag-a-update ang app kapag tapos na.';
+
+  @override
+  String get paymentViaStripe =>
+      'Ligtas na pagbabayad sa iyong browser sa pamamagitan ng Stripe. Puwedeng kanselahin anumang oras.';
+
+  @override
+  String get paymentViaStore =>
+      'Sinisingil sa iyong App Store o Google Play account. Puwedeng kanselahin anumang oras sa mga setting ng store.';
 }

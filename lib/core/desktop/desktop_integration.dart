@@ -73,14 +73,45 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
       });
     }
     final key = hk.key;
-    var name = key is PhysicalKeyboardKey
-        ? key.debugName ?? ''
-        : key is LogicalKeyboardKey
-        ? key.keyLabel
-        : '';
-    if (name.isEmpty) name = key.toString();
-    parts.add(name);
+    parts.add(switch (key) {
+      PhysicalKeyboardKey k => physicalKeyLabel(k, mac: mac),
+      LogicalKeyboardKey k when k.keyLabel.isNotEmpty => k.keyLabel.toUpperCase(),
+      _ => '?',
+    });
     return parts.join(mac ? ' ' : ' + ');
+  }
+
+  /// Fizikai billentyű neve a USB HID-kódból. Kiadási buildben a Flutter
+  /// hibakereső nevei (`debugName`) nem érhetők el, ezért saját táblát használunk.
+  static String physicalKeyLabel(PhysicalKeyboardKey k, {bool mac = false}) {
+    final u = k.usbHidUsage;
+    if (u >= 0x00070004 && u <= 0x0007001d) return String.fromCharCode(0x41 + u - 0x00070004); // A–Z
+    if (u >= 0x0007001e && u <= 0x00070026) return '${u - 0x0007001e + 1}'; // 1–9
+    if (u == 0x00070027) return '0';
+    if (u >= 0x0007003a && u <= 0x00070045) return 'F${u - 0x0007003a + 1}'; // F1–F12
+    return switch (u) {
+      0x0007002c => mac ? 'Space' : 'Space',
+      0x00070028 => mac ? '↩' : 'Enter',
+      0x00070029 => 'Esc',
+      0x0007002b => mac ? '⇥' : 'Tab',
+      0x0007002a => mac ? '⌫' : 'Backspace',
+      0x0007002d => '-',
+      0x0007002e => '=',
+      0x0007002f => '[',
+      0x00070030 => ']',
+      0x00070031 => '\\',
+      0x00070033 => ';',
+      0x00070034 => "'",
+      0x00070035 => '`',
+      0x00070036 => ',',
+      0x00070037 => '.',
+      0x00070038 => '/',
+      0x0007004f => '→',
+      0x00070050 => '←',
+      0x00070051 => '↓',
+      0x00070052 => '↑',
+      _ => k.debugName ?? '?',
+    };
   }
 
   /// Az ablak előkészítése még az első képkocka előtt. [title] és a tálca-

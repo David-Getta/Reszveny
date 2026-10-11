@@ -918,4 +918,65 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Rentang bersifat indikatif; probabilitas hanyalah perkiraan kasar, bukan prediksi.';
+
+  @override
+  String get accountTitle => 'Akun';
+
+  @override
+  String get signIn => 'Masuk';
+
+  @override
+  String get signOut => 'Keluar';
+
+  @override
+  String get notSignedIn => 'Belum masuk';
+
+  @override
+  String get accountBenefit => 'Masuk agar langganan Anda berlaku di semua perangkat Anda.';
+
+  @override
+  String get accountSyncedNote => 'Langganan dan sisa analisis Anda sama di setiap perangkat.';
+
+  @override
+  String get signInTitle => 'Masuk ke StockLens';
+
+  @override
+  String get emailLabel => 'Alamat email';
+
+  @override
+  String get continueWithEmail => 'Lanjutkan dengan email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Kami telah mengirim kode 6 digit ke $email. Kode berlaku selama 10 menit.';
+  }
+
+  @override
+  String get codeLabel => 'Kode masuk';
+
+  @override
+  String get resendCode => 'Kirim kode baru';
+
+  @override
+  String get useDifferentEmail => 'Gunakan email lain';
+
+  @override
+  String get errInvalidCode => 'Kode salah atau sudah kedaluwarsa.';
+
+  @override
+  String get errInvalidEmail => 'Masukkan alamat email yang valid.';
+
+  @override
+  String get errSignInFailed => 'Gagal masuk. Periksa koneksi Anda, lalu coba lagi.';
+
+  @override
+  String get checkoutWaiting =>
+      'Selesaikan pembayaran di browser Anda. Aplikasi akan diperbarui secara otomatis setelah selesai.';
+
+  @override
+  String get paymentViaStripe => 'Pembayaran aman di browser Anda melalui Stripe. Batalkan kapan saja.';
+
+  @override
+  String get paymentViaStore =>
+      'Ditagih melalui akun App Store atau Google Play Anda. Batalkan kapan saja di pengaturan toko Anda.';
 }

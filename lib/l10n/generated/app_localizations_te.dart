@@ -933,4 +933,65 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'సూచనాత్మక శ్రేణులు; సంభావ్యతలు స్థూల అంచనాలు మాత్రమే, జోస్యాలు కావు.';
+
+  @override
+  String get accountTitle => 'ఖాతా';
+
+  @override
+  String get signIn => 'సైన్ ఇన్';
+
+  @override
+  String get signOut => 'సైన్ అవుట్';
+
+  @override
+  String get notSignedIn => 'సైన్ ఇన్ చేయలేదు';
+
+  @override
+  String get accountBenefit => 'మీ సబ్‌స్క్రిప్షన్ మీ అన్ని పరికరాల్లో పని చేయాలంటే సైన్ ఇన్ చేయండి.';
+
+  @override
+  String get accountSyncedNote => 'మీ సబ్‌స్క్రిప్షన్ మరియు మిగిలిన విశ్లేషణలు ప్రతి పరికరంలోనూ ఒకేలా ఉంటాయి.';
+
+  @override
+  String get signInTitle => 'StockLensకు సైన్ ఇన్ చేయండి';
+
+  @override
+  String get emailLabel => 'ఇమెయిల్ చిరునామా';
+
+  @override
+  String get continueWithEmail => 'ఇమెయిల్‌తో కొనసాగండి';
+
+  @override
+  String codeSentTo(String email) {
+    return 'మేము $emailకు 6 అంకెల కోడ్ పంపాము. ఇది 10 నిమిషాల పాటు చెల్లుబాటులో ఉంటుంది.';
+  }
+
+  @override
+  String get codeLabel => 'సైన్-ఇన్ కోడ్';
+
+  @override
+  String get resendCode => 'కొత్త కోడ్ పంపండి';
+
+  @override
+  String get useDifferentEmail => 'వేరే ఇమెయిల్ ఉపయోగించండి';
+
+  @override
+  String get errInvalidCode => 'కోడ్ తప్పు లేదా దాని గడువు ముగిసింది.';
+
+  @override
+  String get errInvalidEmail => 'దయచేసి సరైన ఇమెయిల్ చిరునామాను నమోదు చేయండి.';
+
+  @override
+  String get errSignInFailed => 'సైన్ ఇన్ విఫలమైంది. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get checkoutWaiting =>
+      'మీ బ్రౌజర్‌లో చెల్లింపును పూర్తి చేయండి. పూర్తయిన వెంటనే యాప్ ఆటోమేటిక్‌గా అప్‌డేట్ అవుతుంది.';
+
+  @override
+  String get paymentViaStripe => 'Stripe ద్వారా మీ బ్రౌజర్‌లో సురక్షిత చెల్లింపు. ఎప్పుడైనా రద్దు చేయవచ్చు.';
+
+  @override
+  String get paymentViaStore =>
+      'మీ App Store లేదా Google Play ఖాతా ద్వారా బిల్ చేయబడుతుంది. స్టోర్ సెట్టింగ్‌లలో ఎప్పుడైనా రద్దు చేయవచ్చు.';
 }

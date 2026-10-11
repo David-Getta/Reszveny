@@ -932,4 +932,65 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba.';
+
+  @override
+  String get accountTitle => 'Asusu';
+
+  @override
+  String get signIn => 'Shiga';
+
+  @override
+  String get signOut => 'Fita';
+
+  @override
+  String get notSignedIn => 'Ba ka shiga ba';
+
+  @override
+  String get accountBenefit => 'Shiga domin rajistarka ta yi aiki a duk na\'urorinka.';
+
+  @override
+  String get accountSyncedNote => 'Rajistarka da sauran nazarinka iri ɗaya ne a kowace na\'ura.';
+
+  @override
+  String get signInTitle => 'Shiga StockLens';
+
+  @override
+  String get emailLabel => 'Adireshin imel';
+
+  @override
+  String get continueWithEmail => 'Ci gaba da imel';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Mun aika lamba mai lambobi 6 zuwa $email. Tana aiki na minti 10.';
+  }
+
+  @override
+  String get codeLabel => 'Lambar shiga';
+
+  @override
+  String get resendCode => 'Aika sabuwar lamba';
+
+  @override
+  String get useDifferentEmail => 'Yi amfani da wani imel';
+
+  @override
+  String get errInvalidCode => 'Lambar ba daidai ba ce ko ta ƙare.';
+
+  @override
+  String get errInvalidEmail => 'Da fatan za a shigar da adireshin imel mai inganci.';
+
+  @override
+  String get errSignInFailed => 'Shiga ya gaza. Duba haɗin intanet ɗinka sannan ka sake gwadawa.';
+
+  @override
+  String get checkoutWaiting =>
+      'Kammala biyan kuɗi a cikin burauzarka. Manhajar za ta sabunta kanta ta atomatik idan an gama.';
+
+  @override
+  String get paymentViaStripe => 'Biyan kuɗi mai tsaro a cikin burauzarka ta hanyar Stripe. Soke a kowane lokaci.';
+
+  @override
+  String get paymentViaStore =>
+      'Ana cajin kuɗi ta asusunka na App Store ko Google Play. Soke a kowane lokaci a cikin saitunan shago.';
 }

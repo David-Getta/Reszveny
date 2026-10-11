@@ -930,4 +930,64 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی.';
+
+  @override
+  String get accountTitle => 'حساب کاربری';
+
+  @override
+  String get signIn => 'ورود';
+
+  @override
+  String get signOut => 'خروج';
+
+  @override
+  String get notSignedIn => 'وارد نشده‌اید';
+
+  @override
+  String get accountBenefit => 'وارد شوید تا اشتراک شما روی همه دستگاه‌هایتان کار کند.';
+
+  @override
+  String get accountSyncedNote => 'اشتراک و تحلیل‌های باقی‌مانده شما در همه دستگاه‌ها یکسان است.';
+
+  @override
+  String get signInTitle => 'ورود به StockLens';
+
+  @override
+  String get emailLabel => 'نشانی ایمیل';
+
+  @override
+  String get continueWithEmail => 'ادامه با ایمیل';
+
+  @override
+  String codeSentTo(String email) {
+    return 'یک کد 6 رقمی به $email فرستادیم. این کد 10 دقیقه اعتبار دارد.';
+  }
+
+  @override
+  String get codeLabel => 'کد ورود';
+
+  @override
+  String get resendCode => 'ارسال کد جدید';
+
+  @override
+  String get useDifferentEmail => 'استفاده از ایمیل دیگر';
+
+  @override
+  String get errInvalidCode => 'کد نادرست است یا منقضی شده است.';
+
+  @override
+  String get errInvalidEmail => 'لطفاً یک نشانی ایمیل معتبر وارد کنید.';
+
+  @override
+  String get errSignInFailed => 'ورود ناموفق بود. اتصال خود را بررسی کنید و دوباره تلاش کنید.';
+
+  @override
+  String get checkoutWaiting => 'پرداخت را در مرورگر کامل کنید. برنامه پس از پایان به‌طور خودکار به‌روز می‌شود.';
+
+  @override
+  String get paymentViaStripe => 'پرداخت امن در مرورگر از طریق Stripe. هر زمان بخواهید می‌توانید لغو کنید.';
+
+  @override
+  String get paymentViaStore =>
+      'هزینه از طریق حساب App Store یا Google Play شما دریافت می‌شود. هر زمان بخواهید می‌توانید از تنظیمات فروشگاه لغو کنید.';
 }

@@ -963,4 +963,65 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Оквирни распони; вероватноће су грубе процене, а не предвиђања.';
+
+  @override
+  String get accountTitle => 'Налог';
+
+  @override
+  String get signIn => 'Пријави се';
+
+  @override
+  String get signOut => 'Одјави се';
+
+  @override
+  String get notSignedIn => 'Нисте пријављени';
+
+  @override
+  String get accountBenefit => 'Пријавите се да би ваша претплата радила на свим вашим уређајима.';
+
+  @override
+  String get accountSyncedNote => 'Ваша претплата и преостале анализе су исте на сваком уређају.';
+
+  @override
+  String get signInTitle => 'Пријава на StockLens';
+
+  @override
+  String get emailLabel => 'Имејл адреса';
+
+  @override
+  String get continueWithEmail => 'Настави путем имејла';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Послали смо шестоцифрени код на $email. Важи 10 минута.';
+  }
+
+  @override
+  String get codeLabel => 'Код за пријаву';
+
+  @override
+  String get resendCode => 'Пошаљи нови код';
+
+  @override
+  String get useDifferentEmail => 'Користи други имејл';
+
+  @override
+  String get errInvalidCode => 'Код је погрешан или је истекао.';
+
+  @override
+  String get errInvalidEmail => 'Унесите исправну имејл адресу.';
+
+  @override
+  String get errSignInFailed => 'Пријава није успела. Проверите интернет везу и покушајте поново.';
+
+  @override
+  String get checkoutWaiting =>
+      'Довршите плаћање у прегледачу. Апликација ће се аутоматски ажурирати када буде готово.';
+
+  @override
+  String get paymentViaStripe => 'Безбедно плаћање у прегледачу преко Stripe-а. Откажите кад год желите.';
+
+  @override
+  String get paymentViaStore =>
+      'Наплаћује се преко вашег App Store или Google Play налога. Откажите кад год желите у подешавањима продавнице.';
 }

@@ -937,4 +937,65 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get outlookChartNote =>
       'Suuntaa antavat vaihteluvälit; todennäköisyydet ovat karkeita arvioita, eivät ennusteita.';
+
+  @override
+  String get accountTitle => 'Tili';
+
+  @override
+  String get signIn => 'Kirjaudu sisään';
+
+  @override
+  String get signOut => 'Kirjaudu ulos';
+
+  @override
+  String get notSignedIn => 'Et ole kirjautunut';
+
+  @override
+  String get accountBenefit => 'Kirjaudu sisään, niin tilauksesi toimii kaikilla laitteillasi.';
+
+  @override
+  String get accountSyncedNote => 'Tilauksesi ja jäljellä olevat analyysisi ovat samat kaikilla laitteilla.';
+
+  @override
+  String get signInTitle => 'Kirjaudu StockLensiin';
+
+  @override
+  String get emailLabel => 'Sähköpostiosoite';
+
+  @override
+  String get continueWithEmail => 'Jatka sähköpostilla';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Lähetimme 6-numeroisen koodin osoitteeseen $email. Se on voimassa 10 minuuttia.';
+  }
+
+  @override
+  String get codeLabel => 'Kirjautumiskoodi';
+
+  @override
+  String get resendCode => 'Lähetä uusi koodi';
+
+  @override
+  String get useDifferentEmail => 'Käytä toista sähköpostiosoitetta';
+
+  @override
+  String get errInvalidCode => 'Koodi on väärä tai vanhentunut.';
+
+  @override
+  String get errInvalidEmail => 'Anna kelvollinen sähköpostiosoite.';
+
+  @override
+  String get errSignInFailed => 'Kirjautuminen epäonnistui. Tarkista yhteytesi ja yritä uudelleen.';
+
+  @override
+  String get checkoutWaiting =>
+      'Viimeistele maksu selaimessa. Sovellus päivittyy automaattisesti, kun maksu on valmis.';
+
+  @override
+  String get paymentViaStripe => 'Turvallinen maksu selaimessa Stripen kautta. Voit perua milloin tahansa.';
+
+  @override
+  String get paymentViaStore =>
+      'Laskutetaan App Store- tai Google Play -tilisi kautta. Voit perua milloin tahansa kaupan asetuksista.';
 }

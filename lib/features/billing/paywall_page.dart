@@ -6,9 +6,12 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../account/sign_in_sheet.dart';
 import 'billing_service.dart';
 import 'entitlement_service.dart';
+import 'fallback_billing_service.dart';
 import 'plan.dart';
+import 'web_checkout_billing_service.dart';
 
 /// Csomagválasztó: próbaidő-állapot, négy előfizetés, extra csomagok,
 /// visszaállítás és előfizetés-kezelés.
@@ -22,15 +25,75 @@ class PaywallPage extends StatefulWidget {
   State<PaywallPage> createState() => _PaywallPageState();
 }
 
-class _PaywallPageState extends State<PaywallPage> {
+class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
   bool _loaded = false;
+  StoreProduct? _afterLogin;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  /// Visszatérés a böngészőből: a fiók azonnali frissítése (nem kell megvárni
+  /// a következő lekérdezést).
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && mounted) AppServices.of(context).syncEntitlements();
+  }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     if (_loaded) return;
     _loaded = true;
-    AppServices.of(context).billingController.loadProducts();
+    final services = AppServices.of(context);
+    services.billingController.loadProducts();
+    services.billingController.addListener(_onBilling);
+  }
+
+  @override
+  void deactivate() {
+    AppServices.of(context).billingController.removeListener(_onBilling);
+    super.deactivate();
+  }
+
+  @override
+  void activate() {
+    super.activate();
+    AppServices.of(context).billingController.addListener(_onBilling);
+  }
+
+  /// A böngészős fizetéshez fiók kell: belépés, majd a vásárlás folytatása.
+  Future<void> _onBilling() async {
+    final services = AppServices.of(context);
+    final bc = services.billingController;
+    final e = bc.lastEvent;
+    final account = services.account;
+    if (e == null || e.status != BillingStatus.needsLogin || account == null) return;
+    final product = bc.products.where((p) => p.id == e.productId).firstOrNull;
+    bc.clearLastEvent();
+    if (_afterLogin != null) return;
+    _afterLogin = product;
+    final ok = await showSignInSheet(context, account);
+    final again = _afterLogin;
+    _afterLogin = null;
+    if (ok && again != null) await bc.buy(again);
+  }
+
+  /// Fizetési mód a lap alján (mint a Claude-nál: asztali gépen böngészős
+  /// fizetés, telefonon a bolt).
+  String? _paymentNote(AppLocalizations l10n, BillingService b) {
+    final active = b is FallbackBillingService ? b.active : b;
+    if (active.isDemo) return l10n.demoPurchaseNote;
+    if (active is WebCheckoutBillingService) return l10n.paymentViaStripe;
+    return l10n.paymentViaStore;
   }
 
   String _planName(AppLocalizations l10n, PlanTier t) => switch (t) {
@@ -83,13 +146,17 @@ class _PaywallPageState extends State<PaywallPage> {
                       child: Padding(padding: const EdgeInsets.all(16), child: Text(l10n.billingUnavailable)),
                     )
                   else
-                    GridView.count(
-                      crossAxisCount: wide ? 4 : 2,
+                    GridView(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      childAspectRatio: wide ? 0.82 : 0.9,
+                      // Rögzített kártyamagasság: a pipás lista és a gomb minden
+                      // nyelven és betűméretnél elfér.
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: wide ? 4 : 2,
+                        mainAxisSpacing: 12,
+                        crossAxisSpacing: 12,
+                        mainAxisExtent: 300 * MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6),
+                      ),
                       children: [
                         for (final spec in PlanSpec.paid)
                           _PlanCard(
@@ -123,7 +190,21 @@ class _PaywallPageState extends State<PaywallPage> {
                     ),
                   ],
                   const SizedBox(height: 20),
-                  if (event != null) _EventNote(event: event),
+                  if (event != null && event.status == BillingStatus.pending && event.platform == 'stripe')
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(14),
+                        child: Row(
+                          children: [
+                            const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
+                            const SizedBox(width: 12),
+                            Expanded(child: Text(l10n.checkoutWaiting)),
+                          ],
+                        ),
+                      ),
+                    )
+                  else if (event != null && event.status != BillingStatus.needsLogin)
+                    _EventNote(event: event),
                   Wrap(
                     spacing: 8,
                     children: [
@@ -139,10 +220,18 @@ class _PaywallPageState extends State<PaywallPage> {
                       ),
                     ],
                   ),
-                  if (bc.billing.isDemo)
+                  if (_paymentNote(l10n, bc.billing) case final note?)
                     Padding(
                       padding: const EdgeInsets.only(top: 8),
-                      child: Text(l10n.demoPurchaseNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                      child: Row(
+                        children: [
+                          Icon(Icons.lock_outline_rounded, size: 14, color: p.muted),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(note, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                          ),
+                        ],
+                      ),
                     ),
                 ],
               ),
@@ -155,6 +244,15 @@ class _PaywallPageState extends State<PaywallPage> {
 
   Future<void> _manage(BuildContext context) async {
     final theme = Theme.of(context);
+    final billing = AppServices.of(context).billing;
+    if (billing is WebCheckoutBillingService) {
+      try {
+        await billing.manage();
+      } catch (e) {
+        debugPrint('Ügyfélportál nem nyitható: $e');
+      }
+      return;
+    }
     final url = switch (theme.platform) {
       TargetPlatform.iOS || TargetPlatform.macOS => 'https://apps.apple.com/account/subscriptions',
       TargetPlatform.android => 'https://play.google.com/store/account/subscriptions',
@@ -273,11 +371,19 @@ class _PlanCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(name, style: theme.textTheme.titleLarge),
           const SizedBox(height: 4),
-          Text(
-            l10n.planAnalysesPerMonth(spec.analysesPerPeriod),
-            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-          ),
-          Text(l10n.planWebSearches(spec.webSearches), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+          const SizedBox(height: 6),
+          for (final f in [l10n.planAnalysesPerMonth(spec.analysesPerPeriod), l10n.planWebSearches(spec.webSearches)])
+            Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Icons.check_rounded, size: 16, color: p.accent),
+                  const SizedBox(width: 6),
+                  Expanded(child: Text(f, style: theme.textTheme.bodySmall)),
+                ],
+              ),
+            ),
           const Spacer(),
           if (product != null)
             RichText(
@@ -367,7 +473,7 @@ class _EventNote extends StatelessWidget {
       BillingStatus.purchased || BillingStatus.restored => (l10n.purchaseSuccess, p.positive),
       BillingStatus.pending => (l10n.purchasePending, p.muted),
       BillingStatus.error => (l10n.purchaseFailed, p.negative),
-      BillingStatus.canceled => (l10n.purchaseCanceled, p.muted),
+      BillingStatus.canceled || BillingStatus.needsLogin => (l10n.purchaseCanceled, p.muted),
     };
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

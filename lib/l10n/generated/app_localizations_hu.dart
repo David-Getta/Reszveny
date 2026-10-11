@@ -932,4 +932,64 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések.';
+
+  @override
+  String get accountTitle => 'Fiók';
+
+  @override
+  String get signIn => 'Bejelentkezés';
+
+  @override
+  String get signOut => 'Kijelentkezés';
+
+  @override
+  String get notSignedIn => 'Nincs bejelentkezve';
+
+  @override
+  String get accountBenefit => 'Jelentkezz be, hogy az előfizetésed minden eszközödön működjön.';
+
+  @override
+  String get accountSyncedNote => 'Az előfizetésed és a hátralévő elemzéseid minden eszközön ugyanazok.';
+
+  @override
+  String get signInTitle => 'Bejelentkezés a StockLensbe';
+
+  @override
+  String get emailLabel => 'E-mail-cím';
+
+  @override
+  String get continueWithEmail => 'Folytatás e-maillel';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Küldtünk egy 6 jegyű kódot a(z) $email címre. 10 percig érvényes.';
+  }
+
+  @override
+  String get codeLabel => 'Belépőkód';
+
+  @override
+  String get resendCode => 'Új kód küldése';
+
+  @override
+  String get useDifferentEmail => 'Másik e-mail-cím';
+
+  @override
+  String get errInvalidCode => 'A kód hibás vagy lejárt.';
+
+  @override
+  String get errInvalidEmail => 'Adj meg egy érvényes e-mail-címet.';
+
+  @override
+  String get errSignInFailed => 'A bejelentkezés nem sikerült. Ellenőrizd a kapcsolatot, és próbáld újra.';
+
+  @override
+  String get checkoutWaiting => 'Fejezd be a fizetést a böngészőben. Az app automatikusan frissül, amint kész.';
+
+  @override
+  String get paymentViaStripe => 'Biztonságos fizetés a böngészőben, Stripe-on keresztül. Bármikor lemondható.';
+
+  @override
+  String get paymentViaStore =>
+      'A számlázás az App Store- vagy Google Play-fiókodon keresztül történik. Bármikor lemondható a bolt beállításaiban.';
 }

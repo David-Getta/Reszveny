@@ -930,4 +930,64 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Göstergesel aralıklar; olasılıklar kaba tahminlerdir, öngörü değildir.';
+
+  @override
+  String get accountTitle => 'Hesap';
+
+  @override
+  String get signIn => 'Giriş yap';
+
+  @override
+  String get signOut => 'Çıkış yap';
+
+  @override
+  String get notSignedIn => 'Giriş yapılmadı';
+
+  @override
+  String get accountBenefit => 'Aboneliğinizin tüm cihazlarınızda çalışması için giriş yapın.';
+
+  @override
+  String get accountSyncedNote => 'Aboneliğiniz ve kalan analizleriniz her cihazda aynıdır.';
+
+  @override
+  String get signInTitle => 'StockLens\'e giriş yapın';
+
+  @override
+  String get emailLabel => 'E-posta adresi';
+
+  @override
+  String get continueWithEmail => 'E-postayla devam et';
+
+  @override
+  String codeSentTo(String email) {
+    return '$email adresine 6 haneli bir kod gönderdik. Kod 10 dakika geçerlidir.';
+  }
+
+  @override
+  String get codeLabel => 'Giriş kodu';
+
+  @override
+  String get resendCode => 'Yeni kod gönder';
+
+  @override
+  String get useDifferentEmail => 'Başka bir e-posta kullan';
+
+  @override
+  String get errInvalidCode => 'Kod yanlış veya süresi dolmuş.';
+
+  @override
+  String get errInvalidEmail => 'Lütfen geçerli bir e-posta adresi girin.';
+
+  @override
+  String get errSignInFailed => 'Giriş başarısız oldu. Bağlantınızı kontrol edip tekrar deneyin.';
+
+  @override
+  String get checkoutWaiting => 'Ödemeyi tarayıcınızda tamamlayın. İşlem bitince uygulama otomatik olarak güncellenir.';
+
+  @override
+  String get paymentViaStripe => 'Stripe üzerinden tarayıcınızda güvenli ödeme. İstediğiniz zaman iptal edin.';
+
+  @override
+  String get paymentViaStore =>
+      'App Store veya Google Play hesabınız üzerinden faturalandırılır. İstediğiniz zaman mağaza ayarlarından iptal edin.';
 }

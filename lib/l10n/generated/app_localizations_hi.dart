@@ -931,4 +931,64 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'सांकेतिक दायरे; संभावनाएँ मोटे अनुमान हैं, भविष्यवाणियाँ नहीं।';
+
+  @override
+  String get accountTitle => 'खाता';
+
+  @override
+  String get signIn => 'साइन इन करें';
+
+  @override
+  String get signOut => 'साइन आउट करें';
+
+  @override
+  String get notSignedIn => 'साइन इन नहीं है';
+
+  @override
+  String get accountBenefit => 'साइन इन करें ताकि आपकी सदस्यता आपके सभी डिवाइस पर काम करे।';
+
+  @override
+  String get accountSyncedNote => 'आपकी सदस्यता और बाकी विश्लेषण हर डिवाइस पर एक जैसे रहते हैं।';
+
+  @override
+  String get signInTitle => 'StockLens में साइन इन करें';
+
+  @override
+  String get emailLabel => 'ईमेल पता';
+
+  @override
+  String get continueWithEmail => 'ईमेल से जारी रखें';
+
+  @override
+  String codeSentTo(String email) {
+    return 'हमने $email पर 6 अंकों का कोड भेजा है। यह 10 मिनट तक मान्य है।';
+  }
+
+  @override
+  String get codeLabel => 'साइन-इन कोड';
+
+  @override
+  String get resendCode => 'नया कोड भेजें';
+
+  @override
+  String get useDifferentEmail => 'दूसरा ईमेल इस्तेमाल करें';
+
+  @override
+  String get errInvalidCode => 'कोड गलत है या उसकी समय-सीमा समाप्त हो गई है।';
+
+  @override
+  String get errInvalidEmail => 'कृपया एक मान्य ईमेल पता दर्ज करें।';
+
+  @override
+  String get errSignInFailed => 'साइन इन नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें।';
+
+  @override
+  String get checkoutWaiting => 'अपने ब्राउज़र में भुगतान पूरा करें। पूरा होते ही ऐप अपने आप अपडेट हो जाएगा।';
+
+  @override
+  String get paymentViaStripe => 'Stripe के माध्यम से आपके ब्राउज़र में सुरक्षित भुगतान। कभी भी रद्द करें।';
+
+  @override
+  String get paymentViaStore =>
+      'भुगतान आपके App Store या Google Play खाते से होता है। स्टोर सेटिंग्स में कभी भी रद्द करें।';
 }

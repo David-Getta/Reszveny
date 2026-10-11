@@ -6,6 +6,7 @@ import '../../core/models/analyst_consensus.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/util/formatters.dart';
+import '../../l10n/terms.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
@@ -230,9 +231,9 @@ class _DetailsBody extends StatelessWidget {
                   (l10n.labelExchange, p?.exchange ?? candidate.exchange),
                   (l10n.labelIsin, p?.isin),
                   (l10n.labelCurrency, p?.currency),
-                  (l10n.labelCountry, p?.country),
-                  (l10n.labelSector, p?.sector),
-                  (l10n.labelIndustry, p?.industry),
+                  (l10n.labelCountry, Terms.country(p?.country, Localizations.localeOf(context))),
+                  (l10n.labelSector, Terms.industry(p?.sector, Localizations.localeOf(context))),
+                  (l10n.labelIndustry, Terms.industry(p?.industry, Localizations.localeOf(context))),
                   (l10n.labelIpoDate, p?.ipoDate == null ? null : fmt.date(p!.ipoDate)),
                   (l10n.labelWebsite, p?.website),
                 ],

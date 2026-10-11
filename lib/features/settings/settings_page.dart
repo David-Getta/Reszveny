@@ -9,6 +9,7 @@ import '../analysis/analysis_options.dart';
 import '../billing/plan.dart';
 import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
+import '../account/sign_in_sheet.dart';
 import '../billing/paywall_page.dart';
 import '../billing/usage_chip.dart';
 import 'language_picker.dart';
@@ -46,6 +47,31 @@ class SettingsPage extends StatelessWidget {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
                 children: [
+                  if (services.account case final account?) ...[
+                    sectionTitle(l10n.accountTitle),
+                    Card(
+                      child: ListenableBuilder(
+                        listenable: account,
+                        builder: (context, _) => ListTile(
+                          leading: CircleAvatar(
+                            backgroundColor: p.accent.withValues(alpha: 0.18),
+                            child: Text(
+                              account.isSignedIn ? account.email!.substring(0, 1).toUpperCase() : '?',
+                              style: TextStyle(color: p.accent, fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                          title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
+                          subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
+                          trailing: account.isSignedIn
+                              ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
+                              : FilledButton.tonal(
+                                  onPressed: () => showSignInSheet(context, account),
+                                  child: Text(l10n.signIn),
+                                ),
+                        ),
+                      ),
+                    ),
+                  ],
                   sectionTitle(l10n.subscription),
                   Card(
                     child: Padding(

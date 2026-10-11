@@ -934,4 +934,65 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Richtwerte; die Wahrscheinlichkeiten sind grobe Einschätzungen, keine Prognosen.';
+
+  @override
+  String get accountTitle => 'Konto';
+
+  @override
+  String get signIn => 'Anmelden';
+
+  @override
+  String get signOut => 'Abmelden';
+
+  @override
+  String get notSignedIn => 'Nicht angemeldet';
+
+  @override
+  String get accountBenefit => 'Melde dich an, damit dein Abonnement auf all deinen Geräten funktioniert.';
+
+  @override
+  String get accountSyncedNote => 'Dein Abonnement und deine verbleibenden Analysen sind auf jedem Gerät gleich.';
+
+  @override
+  String get signInTitle => 'Bei StockLens anmelden';
+
+  @override
+  String get emailLabel => 'E-Mail-Adresse';
+
+  @override
+  String get continueWithEmail => 'Weiter mit E-Mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Wir haben einen 6-stelligen Code an $email gesendet. Er ist 10 Minuten lang gültig.';
+  }
+
+  @override
+  String get codeLabel => 'Anmeldecode';
+
+  @override
+  String get resendCode => 'Neuen Code senden';
+
+  @override
+  String get useDifferentEmail => 'Andere E-Mail-Adresse verwenden';
+
+  @override
+  String get errInvalidCode => 'Der Code ist falsch oder abgelaufen.';
+
+  @override
+  String get errInvalidEmail => 'Bitte gib eine gültige E-Mail-Adresse ein.';
+
+  @override
+  String get errSignInFailed => 'Anmeldung fehlgeschlagen. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get checkoutWaiting =>
+      'Schließe die Zahlung in deinem Browser ab. Die App aktualisiert sich automatisch, sobald sie erledigt ist.';
+
+  @override
+  String get paymentViaStripe => 'Sichere Zahlung in deinem Browser über Stripe. Jederzeit kündbar.';
+
+  @override
+  String get paymentViaStore =>
+      'Die Abrechnung erfolgt über dein App-Store- oder Google-Play-Konto. Jederzeit in den Einstellungen deines Stores kündbar.';
 }

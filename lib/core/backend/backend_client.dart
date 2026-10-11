@@ -17,6 +17,16 @@ class BackendException implements Exception {
   String toString() => 'BackendException($status $code${message == null ? '' : ': $message'})';
 }
 
+/// A fiók a szerver szerint: e-mail (ha be van jelentkezve) és jogosultság.
+class Account {
+  const Account({this.email, required this.entitlements});
+
+  final String? email;
+  final EntitlementState entitlements;
+
+  bool get isSignedIn => email != null && email!.isNotEmpty;
+}
+
 /// A StockLens backend kliense: névtelen fiók (token), jogosultság-lekérés,
 /// vásárlás-ellenőrzés, és egy hitelesített [http.Client] a továbbított
 /// Anthropic/Finnhub hívásokhoz.
@@ -86,9 +96,74 @@ class BackendClient {
   }
 
   /// `GET /v1/me` → a szerver szerinti jogosultság.
-  Future<EntitlementState> me() async {
+  Future<EntitlementState> me() async => (await account()).entitlements;
+
+  /// `GET /v1/me` → fiók (e-mail) és jogosultság.
+  Future<Account> account() async {
     final res = await _authorized((h) => _inner.get(Uri.parse('$baseUrl/v1/me'), headers: h));
-    return _entitlements(_decode(res));
+    final body = _decode(res);
+    return Account(email: body['email'] as String?, entitlements: _entitlements(body));
+  }
+
+  /// Belépőkód kérése e-mailben (`POST /v1/auth/email/start`).
+  Future<void> startEmailLogin(String email) async {
+    final res = await _inner
+        .post(
+          Uri.parse('$baseUrl/v1/auth/email/start'),
+          headers: const {'content-type': 'application/json'},
+          body: jsonEncode({'email': email.trim()}),
+        )
+        .timeout(const Duration(seconds: 30));
+    _decode(res);
+  }
+
+  /// A kód ellenőrzése; siker esetén a fiók tokenjét menti (az előfizetés
+  /// innentől minden eszközön ugyanaz).
+  Future<Account> verifyEmailLogin(String email, String code) async {
+    final res = await _inner
+        .post(
+          Uri.parse('$baseUrl/v1/auth/email/verify'),
+          headers: {...await authHeaders(), 'content-type': 'application/json'},
+          body: jsonEncode({'email': email.trim(), 'code': code.trim()}),
+        )
+        .timeout(const Duration(seconds: 30));
+    final body = _decode(res);
+    final token = body['token'] as String?;
+    if (token != null && token.isNotEmpty) {
+      _token = token;
+      _storedRejected = false;
+      await _writeStored(_tokenKey, token);
+    }
+    return Account(email: body['email'] as String?, entitlements: _entitlements(body));
+  }
+
+  /// Kijelentkezés: a token visszavonása; a következő hívás új, névtelen
+  /// munkamenetet nyit.
+  Future<void> logout() async {
+    try {
+      await _inner.post(Uri.parse('$baseUrl/v1/auth/logout'), headers: await authHeaders());
+    } catch (_) {
+      // Hálózati hiba esetén is kijelentkeztetjük az eszközt.
+    }
+    await resetToken();
+  }
+
+  /// Böngészős fizetés (Stripe Checkout) címe. 403 `login_required`, ha nincs fiók.
+  Future<String> checkoutUrl(String productId) async {
+    final res = await _authorized(
+      (h) => _inner.post(
+        Uri.parse('$baseUrl/v1/billing/checkout'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode({'product_id': productId}),
+      ),
+    );
+    return _decode(res)['url'] as String;
+  }
+
+  /// Az előfizetés kezelése a Stripe ügyfélportálján (csomagváltás, lemondás, számlák).
+  Future<String> portalUrl() async {
+    final res = await _authorized((h) => _inner.post(Uri.parse('$baseUrl/v1/billing/portal'), headers: h));
+    return _decode(res)['url'] as String;
   }
 
   /// `POST /v1/purchases/verify` → a szerver ellenőrzi a bolti bizonylatot és

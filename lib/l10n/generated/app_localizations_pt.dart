@@ -934,4 +934,65 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get outlookChartNote =>
       'Intervalos indicativos; as probabilidades são estimativas aproximadas, não previsões.';
+
+  @override
+  String get accountTitle => 'Conta';
+
+  @override
+  String get signIn => 'Iniciar sessão';
+
+  @override
+  String get signOut => 'Terminar sessão';
+
+  @override
+  String get notSignedIn => 'Sessão não iniciada';
+
+  @override
+  String get accountBenefit => 'Inicie sessão para que a sua subscrição funcione em todos os seus dispositivos.';
+
+  @override
+  String get accountSyncedNote => 'A sua subscrição e as análises restantes são as mesmas em todos os dispositivos.';
+
+  @override
+  String get signInTitle => 'Iniciar sessão no StockLens';
+
+  @override
+  String get emailLabel => 'Endereço de e-mail';
+
+  @override
+  String get continueWithEmail => 'Continuar com e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Enviámos um código de 6 dígitos para $email. É válido durante 10 minutos.';
+  }
+
+  @override
+  String get codeLabel => 'Código de acesso';
+
+  @override
+  String get resendCode => 'Enviar novo código';
+
+  @override
+  String get useDifferentEmail => 'Usar outro e-mail';
+
+  @override
+  String get errInvalidCode => 'O código está errado ou expirou.';
+
+  @override
+  String get errInvalidEmail => 'Introduza um endereço de e-mail válido.';
+
+  @override
+  String get errSignInFailed => 'Não foi possível iniciar sessão. Verifique a ligação e tente novamente.';
+
+  @override
+  String get checkoutWaiting =>
+      'Conclua o pagamento no seu navegador. A app é atualizada automaticamente quando terminar.';
+
+  @override
+  String get paymentViaStripe => 'Pagamento seguro no seu navegador através da Stripe. Cancele quando quiser.';
+
+  @override
+  String get paymentViaStore =>
+      'Cobrado através da sua conta App Store ou Google Play. Cancele a qualquer momento nas definições da loja.';
 }

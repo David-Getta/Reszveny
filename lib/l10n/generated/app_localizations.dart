@@ -1803,6 +1803,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Indicative ranges; probabilities are rough judgements, not predictions.'**
   String get outlookChartNote;
+
+  /// No description provided for @accountTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get accountTitle;
+
+  /// No description provided for @signIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get signIn;
+
+  /// No description provided for @signOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get signOut;
+
+  /// No description provided for @notSignedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Not signed in'**
+  String get notSignedIn;
+
+  /// No description provided for @accountBenefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in so your subscription works on all your devices.'**
+  String get accountBenefit;
+
+  /// No description provided for @accountSyncedNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your subscription and remaining analyses are the same on every device.'**
+  String get accountSyncedNote;
+
+  /// No description provided for @signInTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to StockLens'**
+  String get signInTitle;
+
+  /// No description provided for @emailLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Email address'**
+  String get emailLabel;
+
+  /// No description provided for @continueWithEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with email'**
+  String get continueWithEmail;
+
+  /// No description provided for @codeSentTo.
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a 6-digit code to {email}. It is valid for 10 minutes.'**
+  String codeSentTo(String email);
+
+  /// No description provided for @codeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in code'**
+  String get codeLabel;
+
+  /// No description provided for @resendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a new code'**
+  String get resendCode;
+
+  /// No description provided for @useDifferentEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a different email'**
+  String get useDifferentEmail;
+
+  /// No description provided for @errInvalidCode.
+  ///
+  /// In en, this message translates to:
+  /// **'The code is wrong or has expired.'**
+  String get errInvalidCode;
+
+  /// No description provided for @errInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address.'**
+  String get errInvalidEmail;
+
+  /// No description provided for @errSignInFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in failed. Check your connection and try again.'**
+  String get errSignInFailed;
+
+  /// No description provided for @checkoutWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete the payment in your browser. The app updates automatically when it is done.'**
+  String get checkoutWaiting;
+
+  /// No description provided for @paymentViaStripe.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure payment in your browser via Stripe. Cancel anytime.'**
+  String get paymentViaStripe;
+
+  /// No description provided for @paymentViaStore.
+  ///
+  /// In en, this message translates to:
+  /// **'Billed through your App Store or Google Play account. Cancel anytime in your store settings.'**
+  String get paymentViaStore;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

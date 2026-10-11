@@ -975,4 +975,64 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози.';
+
+  @override
+  String get accountTitle => 'Обліковий запис';
+
+  @override
+  String get signIn => 'Увійти';
+
+  @override
+  String get signOut => 'Вийти';
+
+  @override
+  String get notSignedIn => 'Вхід не виконано';
+
+  @override
+  String get accountBenefit => 'Увійдіть, щоб ваша підписка працювала на всіх ваших пристроях.';
+
+  @override
+  String get accountSyncedNote => 'Ваша підписка та залишок аналізів однакові на всіх пристроях.';
+
+  @override
+  String get signInTitle => 'Вхід у StockLens';
+
+  @override
+  String get emailLabel => 'Адреса електронної пошти';
+
+  @override
+  String get continueWithEmail => 'Продовжити з email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Ми надіслали 6-значний код на $email. Він дійсний 10 хвилин.';
+  }
+
+  @override
+  String get codeLabel => 'Код для входу';
+
+  @override
+  String get resendCode => 'Надіслати новий код';
+
+  @override
+  String get useDifferentEmail => 'Використати іншу адресу';
+
+  @override
+  String get errInvalidCode => 'Код неправильний або термін його дії минув.';
+
+  @override
+  String get errInvalidEmail => 'Введіть дійсну адресу електронної пошти.';
+
+  @override
+  String get errSignInFailed => 'Не вдалося увійти. Перевірте підключення до інтернету та спробуйте ще раз.';
+
+  @override
+  String get checkoutWaiting => 'Завершіть оплату в браузері. Застосунок оновиться автоматично, щойно все буде готово.';
+
+  @override
+  String get paymentViaStripe => 'Безпечна оплата в браузері через Stripe. Скасувати можна будь-коли.';
+
+  @override
+  String get paymentViaStore =>
+      'Оплата через ваш обліковий запис App Store або Google Play. Скасувати можна будь-коли в налаштуваннях магазину.';
 }

@@ -936,4 +936,65 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
+
+  @override
+  String get accountTitle => 'Λογαριασμός';
+
+  @override
+  String get signIn => 'Σύνδεση';
+
+  @override
+  String get signOut => 'Αποσύνδεση';
+
+  @override
+  String get notSignedIn => 'Δεν έχετε συνδεθεί';
+
+  @override
+  String get accountBenefit => 'Συνδεθείτε για να λειτουργεί η συνδρομή σας σε όλες τις συσκευές σας.';
+
+  @override
+  String get accountSyncedNote => 'Η συνδρομή σας και οι αναλύσεις που απομένουν είναι ίδιες σε κάθε συσκευή.';
+
+  @override
+  String get signInTitle => 'Σύνδεση στο StockLens';
+
+  @override
+  String get emailLabel => 'Διεύθυνση email';
+
+  @override
+  String get continueWithEmail => 'Συνέχεια με email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Στείλαμε έναν 6ψήφιο κωδικό στο $email. Ισχύει για 10 λεπτά.';
+  }
+
+  @override
+  String get codeLabel => 'Κωδικός σύνδεσης';
+
+  @override
+  String get resendCode => 'Αποστολή νέου κωδικού';
+
+  @override
+  String get useDifferentEmail => 'Χρήση άλλου email';
+
+  @override
+  String get errInvalidCode => 'Ο κωδικός είναι λανθασμένος ή έχει λήξει.';
+
+  @override
+  String get errInvalidEmail => 'Εισαγάγετε μια έγκυρη διεύθυνση email.';
+
+  @override
+  String get errSignInFailed => 'Η σύνδεση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+
+  @override
+  String get checkoutWaiting =>
+      'Ολοκληρώστε την πληρωμή στο πρόγραμμα περιήγησης. Η εφαρμογή θα ενημερωθεί αυτόματα μόλις ολοκληρωθεί.';
+
+  @override
+  String get paymentViaStripe => 'Ασφαλής πληρωμή στο πρόγραμμα περιήγησης μέσω Stripe. Ακύρωση οποιαδήποτε στιγμή.';
+
+  @override
+  String get paymentViaStore =>
+      'Η χρέωση γίνεται μέσω του λογαριασμού σας στο App Store ή στο Google Play. Ακύρωση οποιαδήποτε στιγμή από τις ρυθμίσεις του καταστήματος.';
 }

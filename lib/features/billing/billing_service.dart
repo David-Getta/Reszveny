@@ -1,3 +1,4 @@
+import 'entitlement_service.dart';
 import 'plan.dart';
 
 enum StoreProductKind { subscription, pack }
@@ -26,7 +27,16 @@ class StoreProduct {
   AddOnPack? get pack => AddOnPack.byProductId(id);
 }
 
-enum BillingStatus { purchased, restored, pending, error, canceled }
+enum BillingStatus {
+  purchased,
+  restored,
+  pending,
+  error,
+  canceled,
+
+  /// A böngészős fizetéshez fiók kell: a felület a belépést kéri, aztán újrapróbálja.
+  needsLogin,
+}
 
 class BillingEvent {
   const BillingEvent({
@@ -35,6 +45,7 @@ class BillingEvent {
     this.message,
     this.platform,
     this.verificationData,
+    this.entitlements,
   });
 
   final String productId;
@@ -46,6 +57,9 @@ class BillingEvent {
 
   /// A bolt bizonylata (`serverVerificationData`), amit a backend ellenőriz.
   final String? verificationData;
+
+  /// Ha a szerver már jóváírta (böngészős fizetés), a friss jogosultság.
+  final EntitlementState? entitlements;
 }
 
 /// Fizetés a platform boltján keresztül. A jogosultságot a [BillingController]

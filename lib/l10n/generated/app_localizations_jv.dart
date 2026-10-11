@@ -935,4 +935,65 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Kisaran indikatif; probabilitas mung pambiji kasar, dudu ramalan.';
+
+  @override
+  String get accountTitle => 'Akun';
+
+  @override
+  String get signIn => 'Mlebu';
+
+  @override
+  String get signOut => 'Metu';
+
+  @override
+  String get notSignedIn => 'Durung mlebu';
+
+  @override
+  String get accountBenefit => 'Mlebu supaya langganan sampeyan bisa digunakake ing kabeh piranti sampeyan.';
+
+  @override
+  String get accountSyncedNote => 'Langganan lan sisa analisis sampeyan padha ing saben piranti.';
+
+  @override
+  String get signInTitle => 'Mlebu menyang StockLens';
+
+  @override
+  String get emailLabel => 'Alamat email';
+
+  @override
+  String get continueWithEmail => 'Terusake nganggo email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Kita wis ngirim kode 6 digit menyang $email. Kode iki laku nganti 10 menit.';
+  }
+
+  @override
+  String get codeLabel => 'Kode mlebu';
+
+  @override
+  String get resendCode => 'Kirim kode anyar';
+
+  @override
+  String get useDifferentEmail => 'Nganggo email liya';
+
+  @override
+  String get errInvalidCode => 'Kode salah utawa wis kadaluwarsa.';
+
+  @override
+  String get errInvalidEmail => 'Mangga lebokake alamat email sing bener.';
+
+  @override
+  String get errSignInFailed => 'Gagal mlebu. Priksa sambungan internet sampeyan lan jajal maneh.';
+
+  @override
+  String get checkoutWaiting =>
+      'Rampungake pambayaran ing browser sampeyan. Aplikasi bakal nganyari kanthi otomatis yen wis rampung.';
+
+  @override
+  String get paymentViaStripe => 'Pambayaran aman ing browser sampeyan liwat Stripe. Bisa dibatalake kapan wae.';
+
+  @override
+  String get paymentViaStore =>
+      'Ditagih liwat akun App Store utawa Google Play sampeyan. Bisa dibatalake kapan wae ing setelan toko.';
 }
