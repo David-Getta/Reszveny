@@ -1,0 +1,1262 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Kazakh (`kk`).
+class AppLocalizationsKk extends AppLocalizations {
+  AppLocalizationsKk([String locale = 'kk']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Акцияны суретке түсіріп, ол туралы бәрін біліңіз.';
+
+  @override
+  String get homeHint =>
+      'Акция сертификаты, брокерлік қолданба экраны, газет немесе компания логотипі – акцияны анықтауға көмектесетін кез келген нәрсе.';
+
+  @override
+  String get takePhoto => 'Суретке түсіру';
+
+  @override
+  String get chooseFromGallery => 'Галереядан таңдау';
+
+  @override
+  String get chooseImage => 'Сурет таңдау';
+
+  @override
+  String get enterTickerManually => 'Тикерді қолмен енгізу';
+
+  @override
+  String get tickerInputLabel => 'Тикер';
+
+  @override
+  String get tickerInputHint => 'мысалы, AAPL';
+
+  @override
+  String get lookUp => 'Іздеу';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Демо режим – нарықтық деректер кілті бапталмаған. Үлгі деректер мыналар үшін қолжетімді: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Сурет талдануда…';
+
+  @override
+  String get loadingData => 'Деректер жүктелуде…';
+
+  @override
+  String get noCandidatesTitle => 'Акция танылмады';
+
+  @override
+  String get noCandidatesBody =>
+      'Бұл суреттен акцияны анықтай алмадық. Анығырақ фото түсіріп көріңіз немесе тикерді қолмен енгізіңіз.';
+
+  @override
+  String get whatWeSaw => 'Біз не көрдік';
+
+  @override
+  String get chooseCandidateTitle => 'Қай акцияны меңзедіңіз?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% сенімділік';
+  }
+
+  @override
+  String get settings => 'Параметрлер';
+
+  @override
+  String get language => 'Тіл';
+
+  @override
+  String get systemLanguage => 'Жүйе тілі';
+
+  @override
+  String get about => 'Қолданба туралы';
+
+  @override
+  String get disclaimer =>
+      'Бұл қолданба тек ақпарат береді және инвестициялық кеңес болып табылмайды. Деректер кешігуі немесе дәл болмауы мүмкін.';
+
+  @override
+  String dataSource(String source) {
+    return 'Дерек көзі: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Тану: $source';
+  }
+
+  @override
+  String get retry => 'Қайталау';
+
+  @override
+  String get cancel => 'Бас тарту';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Жабу';
+
+  @override
+  String get errorGeneric => 'Бірдеңе дұрыс болмады.';
+
+  @override
+  String get errorSectionUnavailable => 'Бұл бөлімді жүктеу мүмкін болмады.';
+
+  @override
+  String get notAvailable => 'жоқ';
+
+  @override
+  String get sectionIdentity => 'Сәйкестендіру';
+
+  @override
+  String get sectionPrice => 'Баға';
+
+  @override
+  String get sectionValuation => 'Бағалау';
+
+  @override
+  String get sectionFinancials => 'Қаржылық көрсеткіштер';
+
+  @override
+  String get sectionDividend => 'Дивиденд';
+
+  @override
+  String get sectionProfile => 'Компания профилі';
+
+  @override
+  String get sectionAnalysts => 'Талдаушылар рейтингтері';
+
+  @override
+  String get sectionNews => 'Жаңалықтар';
+
+  @override
+  String get sectionRecognition => 'Тану мәліметтері';
+
+  @override
+  String get labelSymbol => 'Тикер';
+
+  @override
+  String get labelExchange => 'Биржа';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Валюта';
+
+  @override
+  String get labelCountry => 'Ел';
+
+  @override
+  String get labelIndustry => 'Сала';
+
+  @override
+  String get labelSector => 'Сектор';
+
+  @override
+  String get labelWebsite => 'Веб-сайт';
+
+  @override
+  String get labelIpoDate => 'IPO күні';
+
+  @override
+  String get labelMarketCap => 'Нарықтық капиталдандыру';
+
+  @override
+  String get labelSharesOutstanding => 'Айналымдағы акциялар';
+
+  @override
+  String get labelEmployees => 'Қызметкерлер';
+
+  @override
+  String get labelCeo => 'Бас директор';
+
+  @override
+  String get labelHeadquarters => 'Бас кеңсе';
+
+  @override
+  String get labelDescription => 'Сипаттама';
+
+  @override
+  String get labelLastPrice => 'Соңғы баға';
+
+  @override
+  String get labelChange => 'Өзгеріс';
+
+  @override
+  String get labelOpen => 'Ашылу';
+
+  @override
+  String get labelDayHigh => 'Күн максимумы';
+
+  @override
+  String get labelDayLow => 'Күн минимумы';
+
+  @override
+  String get labelPreviousClose => 'Алдыңғы жабылу';
+
+  @override
+  String get labelWeek52High => '52 апталық максимум';
+
+  @override
+  String get labelWeek52Low => '52 апталық минимум';
+
+  @override
+  String get labelAverageVolume10d => 'Орт. көлем (10 күн)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Жаңартылды: $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (өткен кезең)';
+
+  @override
+  String get labelPeForward => 'P/E (болжам)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / еркін ақша ағыны';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Бета';
+
+  @override
+  String get labelRevenueTtm => 'Түсім (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Таза пайда (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Жалпы маржа';
+
+  @override
+  String get labelOperatingMargin => 'Операциялық маржа';
+
+  @override
+  String get labelNetMargin => 'Таза маржа';
+
+  @override
+  String get labelRoe => 'Капитал рентабельділігі';
+
+  @override
+  String get labelRoa => 'Активтер рентабельділігі';
+
+  @override
+  String get labelDebtToEquity => 'Қарыз / капитал';
+
+  @override
+  String get labelCurrentRatio => 'Ағымдағы өтімділік коэффициенті';
+
+  @override
+  String get labelRevenueGrowth => 'Түсім өсімі (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'EPS өсімі (YoY)';
+
+  @override
+  String get labelDividendYield => 'Дивидендтік кірістілік';
+
+  @override
+  String get labelDividendPerShare => 'Бір акцияға дивиденд';
+
+  @override
+  String get labelPayoutRatio => 'Дивиденд төлеу коэффициенті';
+
+  @override
+  String get labelConsensus => 'Консенсус';
+
+  @override
+  String get ratingStrongBuy => 'Белсенді сатып алу';
+
+  @override
+  String get ratingBuy => 'Сатып алу';
+
+  @override
+  String get ratingHold => 'Ұстау';
+
+  @override
+  String get ratingSell => 'Сату';
+
+  @override
+  String get ratingStrongSell => 'Белсенді сату';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count талдаушы', one: '1 талдаушы');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Кезең: $period';
+  }
+
+  @override
+  String get noNews => 'Соңғы жаңалықтар жоқ.';
+
+  @override
+  String get openArticle => 'Мақаланы ашу';
+
+  @override
+  String get openLinkFailed => 'Сілтемені ашу мүмкін болмады.';
+
+  @override
+  String get recognitionSummary => 'Қорытынды';
+
+  @override
+  String get recognitionEvidence => 'Неге солай ойлаймыз';
+
+  @override
+  String get recognitionRawText => 'Суреттен оқылған мәтін';
+
+  @override
+  String get errMissingAnthropicKey => 'Суретті тану бапталмаған (ANTHROPIC_API_KEY жоқ). Тикерді қолмен енгізіңіз.';
+
+  @override
+  String get errRecognitionUnreachable => 'Тану қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Тану қызметі қате қайтарды (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Тану қызметі бұл суретті өңдей алмады.';
+
+  @override
+  String get errRecognitionTruncated => 'Тану қызметінің жауабы үзіліп қалды. Қайталап көріңіз.';
+
+  @override
+  String get errRecognitionBadResponse => 'Тану қызметінен күтпеген жауап келді.';
+
+  @override
+  String get errRecognitionEmpty => 'Тану қызметі бос жауап қайтарды.';
+
+  @override
+  String get errMissingFinnhubKey => 'Нарықтық деректер бапталмаған (FINNHUB_API_KEY жоқ).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Нарықтық деректер қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
+
+  @override
+  String get errMarketRateLimited => 'Нарықтық деректер қызметіне тым көп сұрау жіберілді. Бір минут күтіңіз.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Нарықтық деректер қызметі қате қайтарды (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Нарықтық деректер қызметінен күтпеген жауап келді.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return '$symbol үшін баға деректері табылмады.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return '$symbol үшін компания профилі табылмады.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Демо режим тек мыналарды қолдайды: $symbols. Нақты уақыттағы деректер үшін FINNHUB_API_KEY қосыңыз.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Бірдеңе дұрыс болмады: $detail';
+  }
+
+  @override
+  String get newSearch => 'Жаңа іздеу';
+
+  @override
+  String get recentSearches => 'Соңғылар';
+
+  @override
+  String get noRecentSearches => 'Әзірге соңғы іздеулер жоқ.';
+
+  @override
+  String get clearRecent => 'Соңғыларды тазалау';
+
+  @override
+  String get greeting => 'Қай акцияны қарастырамыз?';
+
+  @override
+  String get searchHint => 'Тикер немесе компания атауы';
+
+  @override
+  String get attachImage => 'Сурет тіркеу';
+
+  @override
+  String get searchResultsTitle => 'Іздеу нәтижелері';
+
+  @override
+  String errNoResults(String query) {
+    return '«$query» бойынша акция табылмады.';
+  }
+
+  @override
+  String get quickBarHint => 'Тикер немесе компания атауын енгізіңіз…';
+
+  @override
+  String get openFullWindow => 'Терезені ашу';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'StockLens-ті шақыру үшін кез келген жерде $shortcut пернелерін басыңыз.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens-ті ашу';
+
+  @override
+  String get trayQuickSearch => 'Жылдам іздеу';
+
+  @override
+  String get trayQuit => 'Шығу';
+
+  @override
+  String get appearance => 'Сыртқы түрі';
+
+  @override
+  String get themeSystem => 'Жүйелік';
+
+  @override
+  String get themeDark => 'Қараңғы';
+
+  @override
+  String get themeLight => 'Ашық';
+
+  @override
+  String get back => 'Артқа';
+
+  @override
+  String get aiSectionTitle => 'AI талдауы';
+
+  @override
+  String get aiIntro =>
+      'AI жазған толық шолу: соңғы жаңалықтардың қысқаша мазмұны, бизнес, күшті жақтары, тәуекелдер мен жасырын факторлар, бағалау, психологиялық, әлеуметтанулық, техникалық және макро тұрғыдан сценарийлері бар баға болжамы, сондай-ақ неге назар аудару керектігі.';
+
+  @override
+  String get aiGenerate => 'Талдау жасау';
+
+  @override
+  String get aiRegenerate => 'Қайта жасау';
+
+  @override
+  String get aiGenerating => 'Талдау дайындалуда… бұл бір-екі минутқа созылуы мүмкін.';
+
+  @override
+  String get aiSources => 'Дереккөздер';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Жасалды: $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Ашық деректер мен соңғы жаңалықтарға негізделген, AI жасаған талдау. Онда қателер болуы немесе ол ескіруі мүмкін және ол инвестициялық кеңес болып табылмайды.';
+
+  @override
+  String get errAiNotConfigured => 'AI талдауы бапталмаған (ANTHROPIC_API_KEY жоқ).';
+
+  @override
+  String get errAiUnreachable => 'AI қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI қызметі қате қайтарды (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI қызметі бұл акцияны талдаудан бас тартты.';
+
+  @override
+  String get errAiBadResponse => 'AI қызметінен күтпеген жауап келді.';
+
+  @override
+  String get sectionChart => 'Баға графигі';
+
+  @override
+  String get rangeOneWeek => '1Ап';
+
+  @override
+  String get rangeOneMonth => '1Ай';
+
+  @override
+  String get rangeThreeMonths => '3Ай';
+
+  @override
+  String get rangeOneYear => '1Ж';
+
+  @override
+  String get rangeFiveYears => '5Ж';
+
+  @override
+  String get chartUnavailable => 'Ағымдағы дерек көзінде баға тарихы қолжетімсіз.';
+
+  @override
+  String get sectionStatements => 'Қаржылық есептілік (жылдық)';
+
+  @override
+  String get labelFiscalYear => 'Қаржы жылы';
+
+  @override
+  String get labelRevenue => 'Түсім';
+
+  @override
+  String get labelNetIncome => 'Таза пайда';
+
+  @override
+  String get labelTotalAssets => 'Активтер жиыны';
+
+  @override
+  String get labelTotalLiabilities => 'Міндеттемелер жиыны';
+
+  @override
+  String get labelEquity => 'Меншікті капитал';
+
+  @override
+  String get labelOperatingCashFlow => 'Операциялық ақша ағыны';
+
+  @override
+  String get statementsUnavailable => 'Бұл акция үшін жарияланған қаржылық есептілік қолжетімсіз.';
+
+  @override
+  String get launchAtLogin => 'Жүйеге кіргенде іске қосу';
+
+  @override
+  String get hotkeyLabel => 'Ғаламдық пернелер тіркесімі';
+
+  @override
+  String get hotkeyRecordHint => 'Осы жерді басып, жаңа пернелер тіркесімін басыңыз';
+
+  @override
+  String get hotkeyReset => 'Әдепкі мәнге қайтару';
+
+  @override
+  String get pasteImage => 'Алмасу буферінен сурет қою';
+
+  @override
+  String get errClipboardNoImage => 'Алмасу буферінде сурет жоқ.';
+
+  @override
+  String get favorites => 'Таңдаулылар';
+
+  @override
+  String get addToFavorites => 'Таңдаулыларға қосу';
+
+  @override
+  String get removeFromFavorites => 'Таңдаулылардан алып тастау';
+
+  @override
+  String get noFavorites => 'Әзірге таңдаулылар жоқ. Қосу үшін акциядағы жұлдызшаны түртіңіз.';
+
+  @override
+  String get displayCurrency => 'Көрсету валютасы';
+
+  @override
+  String get displayCurrencyNone => 'Тек акцияның өз валютасы';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency есебімен';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Бағам: 1 $from = $rate $to (ЕОБ, $date)';
+  }
+
+  @override
+  String get updates => 'Жаңартулар';
+
+  @override
+  String currentVersion(String version) {
+    return 'Нұсқа $version';
+  }
+
+  @override
+  String get autoUpdate => 'Жаңартуларды автоматты түрде орнату';
+
+  @override
+  String get checkForUpdates => 'Жаңартуларды тексеру';
+
+  @override
+  String get updateChecking => 'Жаңартулар тексерілуде…';
+
+  @override
+  String get updateUpToDate => 'Сізде ең соңғы нұсқа орнатылған.';
+
+  @override
+  String updateAvailable(String version) {
+    return '$version нұсқасы қолжетімді.';
+  }
+
+  @override
+  String get updateDownloading => 'Жаңарту фондық режимде жүктелуде…';
+
+  @override
+  String get updateDownloaded => 'Жаңарту дайын. Орнату үшін қолданбаны қайта іске қосыңыз.';
+
+  @override
+  String get updateNow => 'Жаңарту';
+
+  @override
+  String get restartNow => 'Қайта іске қосу';
+
+  @override
+  String get updatesViaStore => 'Жаңартулар қолданбалар дүкені арқылы автоматты түрде келеді.';
+
+  @override
+  String get updateCheckFailed => 'Жаңартуларды тексеру мүмкін болмады.';
+
+  @override
+  String get subscription => 'Жазылым';
+
+  @override
+  String get planTrial => 'Сынақ';
+
+  @override
+  String get planNormal => 'Қалыпты';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Белсенді тариф жоқ';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Айына $count талдау';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$count талдауы бар $days күндік тегін сынақ';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Сынақ мерзімінің аяқталуына $days күн қалды',
+      one: 'Сынақ мерзімінің аяқталуына 1 күн қалды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Тегін сынақ мерзіміңіз аяқталды. Талдауды жалғастыру үшін тариф таңдаңыз.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Осы кезеңде $total талдаудың $remaining қалды';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count қосымша талдау';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date күні жаңартылады';
+  }
+
+  @override
+  String get choosePlan => 'Тариф таңдаңыз';
+
+  @override
+  String get currentPlan => 'Ағымдағы тариф';
+
+  @override
+  String get subscribe => 'Жазылу';
+
+  @override
+  String get perMonth => '/ ай';
+
+  @override
+  String get extraPacksTitle => 'Көбірек керек пе? Қосымша талдаулар сатып алыңыз';
+
+  @override
+  String get extraPacksHint =>
+      'Қосымша талдаулардың мерзімі ешқашан бітпейді және олар айлық лимитіңізден кейін пайдаланылады.';
+
+  @override
+  String get buy => 'Сатып алу';
+
+  @override
+  String get restorePurchases => 'Сатып алуларды қалпына келтіру';
+
+  @override
+  String get manageSubscription => 'Жазылымды басқару';
+
+  @override
+  String get purchaseSuccess => 'Рақмет! Сатып алуыңыз белсендірілді.';
+
+  @override
+  String get purchasePending => 'Сатып алу күтілуде…';
+
+  @override
+  String get purchaseFailed => 'Сатып алуды аяқтау мүмкін болмады.';
+
+  @override
+  String get purchaseCanceled => 'Сатып алудан бас тартылды.';
+
+  @override
+  String get billingUnavailable =>
+      'Бұл платформада сатып алу әзірге қолжетімсіз. Телефоныңызда немесе Mac-те жазылыңыз – тарифіңіз барлық құрылғыда жұмыс істейді.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Бұл кезеңге талдауларыңыз қалмады. Жоғарырақ тарифке өтіңіз немесе қосымша талдаулар сатып алыңыз.';
+
+  @override
+  String get errTrialExpired => 'Тегін сынақ мерзіміңіз аяқталды. Жалғастыру үшін тариф таңдаңыз.';
+
+  @override
+  String get errNoPlan => 'AI талдауы үшін белсенді тариф қажет.';
+
+  @override
+  String get viewPlans => 'Тарифтерді көру';
+
+  @override
+  String get usageTitle => 'Пайдалану';
+
+  @override
+  String get demoPurchaseNote => 'Демо төлем: бұл платформада сатып алулар симуляцияланады.';
+
+  @override
+  String get mostPopular => 'Ең танымал';
+
+  @override
+  String get bestValue => 'Ең тиімді';
+
+  @override
+  String get planFeaturesCommon =>
+      'Суреттен тану, нақты уақыттағы деректер, графиктер, таңдаулылар және барлық 120 тіл әр тарифке кіреді. Лимит AI талдауларына қатысты.';
+
+  @override
+  String get searchLanguages => 'Тілдерді іздеу…';
+
+  @override
+  String get noLanguageMatch => 'Сәйкес тіл табылмады.';
+
+  @override
+  String get aiSettings => 'AI талдауы';
+
+  @override
+  String get aiLength => 'Көлемі';
+
+  @override
+  String get aiDepthBrief => 'Қысқа';
+
+  @override
+  String get aiDepthStandard => 'Стандартты';
+
+  @override
+  String get aiDepthDeep => 'Терең';
+
+  @override
+  String get aiDepthBriefDesc => 'Ең маңыздысы, жылдам.';
+
+  @override
+  String get aiDepthStandardDesc => 'Барлық бөлімі бар толық есеп.';
+
+  @override
+  String get aiDepthDeepDesc => 'Көбірек веб-іздеу, бәсекелестермен салыстыру және тереңірек мәліметтер.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Шамамен $min–$max сөз';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count талдау жұмсалады',
+      one: '1 талдау жұмсалады',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Оқырман деңгейі';
+
+  @override
+  String get aiReaderBeginner => 'Бастаушы';
+
+  @override
+  String get aiReaderExperienced => 'Тәжірибелі';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Қарапайым тіл; әр арнайы термин түсіндіріледі.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Стандартты қаржы терминологиясы бар тығызырақ мәтін.';
+
+  @override
+  String get aiCounterArgument => 'Ең күшті қарсы дәлел';
+
+  @override
+  String get aiCounterArgumentDesc => 'Қорытынды әрқашан өз тұжырымына қарсы ең күшті дәлелмен аяқталады.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Тарифіңіз бойынша әр талдауға $count веб-іздеуге дейін',
+      one: 'Тарифіңіз бойынша әр талдауға 1 веб-іздеуге дейін',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Тарифтер бойынша стандартты көлем: Қалыпты $normal, Pro $pro, Max $max, Ultra $ultra. Қысқа көлем 2-ге аз, Терең көлем 2-ге көп пайдаланады.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count веб-іздеуге дейін',
+      one: '1 веб-іздеуге дейін',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Әр талдауға $count веб-іздеу',
+      one: 'Әр талдауға 1 веб-іздеу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Бұл көлемге $needed талдау қажет, бірақ тек $left қалды. Параметрлерден қысқарақ көлемді таңдаңыз немесе қосымша талдау алыңыз.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Нарық көңіл-күйі';
+
+  @override
+  String get moodVeryPessimistic => 'Өте пессимистік';
+
+  @override
+  String get moodPessimistic => 'Пессимистік';
+
+  @override
+  String get moodNeutral => 'Бейтарап';
+
+  @override
+  String get moodOptimistic => 'Оптимистік';
+
+  @override
+  String get moodVeryOptimistic => 'Өте оптимистік';
+
+  @override
+  String get scenarioBull => 'Оптимистік сценарий';
+
+  @override
+  String get scenarioBase => 'Базалық сценарий';
+
+  @override
+  String get scenarioBear => 'Пессимистік сценарий';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Ағымдағы баға: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Негізгі деңгейлер';
+
+  @override
+  String get keyLevelSupport => 'Қолдау';
+
+  @override
+  String get keyLevelResistance => 'Қарсылық';
+
+  @override
+  String get keyLevelAnchor => 'Зәкір деңгейі';
+
+  @override
+  String get upcomingEvents => 'Алдағы оқиғалар';
+
+  @override
+  String get outlookChartNote => 'Шамамен алынған аралықтар; ықтималдықтар – болжам емес, шамалап берілген бағалар.';
+
+  @override
+  String get accountTitle => 'Аккаунт';
+
+  @override
+  String get signIn => 'Кіру';
+
+  @override
+  String get signOut => 'Шығу';
+
+  @override
+  String get notSignedIn => 'Аккаунтқа кірмегенсіз';
+
+  @override
+  String get accountBenefit => 'Жазылымыңыз барлық құрылғыңызда жұмыс істеуі үшін аккаунтқа кіріңіз.';
+
+  @override
+  String get accountSyncedNote => 'Жазылымыңыз бен қалған талдауларыңыз барлық құрылғыда бірдей.';
+
+  @override
+  String get signInTitle => 'StockLens-ке кіру';
+
+  @override
+  String get emailLabel => 'Электрондық пошта мекенжайы';
+
+  @override
+  String get continueWithEmail => 'Email арқылы жалғастыру';
+
+  @override
+  String codeSentTo(String email) {
+    return '$email мекенжайына 6 таңбалы код жібердік. Ол 10 минут жарамды.';
+  }
+
+  @override
+  String get codeLabel => 'Кіру коды';
+
+  @override
+  String get resendCode => 'Жаңа код жіберу';
+
+  @override
+  String get useDifferentEmail => 'Басқа email пайдалану';
+
+  @override
+  String get errInvalidCode => 'Код қате немесе оның мерзімі өтіп кеткен.';
+
+  @override
+  String get errInvalidEmail => 'Жарамды электрондық пошта мекенжайын енгізіңіз.';
+
+  @override
+  String get errSignInFailed => 'Кіру сәтсіз аяқталды. Байланысты тексеріп, қайталап көріңіз.';
+
+  @override
+  String get checkoutWaiting => 'Төлемді браузерде аяқтаңыз. Төлем аяқталғанда қолданба автоматты түрде жаңартылады.';
+
+  @override
+  String get paymentViaStripe => 'Stripe арқылы браузерде қауіпсіз төлем. Кез келген уақытта бас тартуға болады.';
+
+  @override
+  String get paymentViaStore =>
+      'Төлем App Store немесе Google Play аккаунтыңыз арқылы алынады. Кез келген уақытта дүкен параметрлерінде бас тартуға болады.';
+
+  @override
+  String get keySpace => 'Бос орын';
+
+  @override
+  String get doubleOptionTitle => 'Option пернесін екі рет басу';
+
+  @override
+  String get doubleOptionSubtitle => 'Option пернесін жылдам екі рет басу да StockLens-ті шақырады.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Бұл басқа қолданбаларда да жұмыс істеуі үшін «Жүйе параметрлері» → «Құпиялылық және қауіпсіздік» → «Енгізуді бақылау» бөлімінде StockLens-ке рұқсат беріп, қолданбаны қайта ашыңыз.';
+
+  @override
+  String get openSystemSettings => 'Жүйе параметрлерін ашу';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'StockLens-ті шақыру үшін кез келген жерде $shortcut пернелерін басыңыз немесе Option пернесін екі рет басыңыз.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Ең ықтимал';
+
+  @override
+  String get longTermToday => 'Бүгін';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years жыл', one: '1 жыл');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'жылына $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'ең ықтимал $price';
+  }
+
+  @override
+  String get confidenceLow => 'Төмен сенімділік';
+
+  @override
+  String get confidenceMedium => 'Орташа сенімділік';
+
+  @override
+  String get confidenceHigh => 'Жоғары сенімділік';
+
+  @override
+  String get longTermNote =>
+      'Ұзақ мерзімді аралықтар көрсетілген жорамалдарға негізделеді және уақыт өте келе кеңейеді. Бағаларға дивидендтер кірмейді. Бұл – болжам емес, шамалап берілген бағалар.';
+
+  @override
+  String get portfolio => 'Портфель';
+
+  @override
+  String get portfolioEmpty =>
+      'Әзірге бос. Иелігіңіздегі акцияларды бақылау үшін акцияны ашып, «Портфельге қосу» түймесін түртіңіз.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Тек осы құрылғыда сақталады. Жиынтықтар ЕОБ анықтамалық бағамдары бойынша есептеледі; бағалар кешігуі мүмкін.';
+
+  @override
+  String get addToPortfolio => 'Портфельге қосу';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol қосу';
+  }
+
+  @override
+  String get portfolioQuantity => 'Акциялар саны';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Бір акция бағасы ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Сатып алу күні';
+
+  @override
+  String get portfolioAdd => 'Қосу';
+
+  @override
+  String get portfolioInvalidNumber => 'Нөлден үлкен сан енгізіңіз.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol портфельге қосылды.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Жалпы құны';
+
+  @override
+  String get portfolioToday => 'Бүгін';
+
+  @override
+  String get portfolioGainLoss => 'Пайда/шығын';
+
+  @override
+  String get portfolioInvested => 'Салынған қаражат';
+
+  @override
+  String get portfolioAllocation => 'Құрылым';
+
+  @override
+  String get portfolioPositions => 'Позициялар';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'орт. баға $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Сіздің позицияңыз';
+
+  @override
+  String get portfolioPurchases => 'Сатып алулар';
+
+  @override
+  String get portfolioRemove => 'Жою';
+
+  @override
+  String get portfolioExcluded => 'Бағасы немесе валюта бағамы жоқ позициялар жиынтыққа кірмейді.';
+
+  @override
+  String get priceAlerts => 'Баға ескертулері';
+
+  @override
+  String get setPriceAlert => 'Баға ескертуін орнату';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Баға ескертуі · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Жоғары көтерілсе';
+
+  @override
+  String get alertKindBelow => 'Төмен түссе';
+
+  @override
+  String get alertKindMove => 'Бір күнде қатты өзгерсе';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Баға ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Күндік өзгеріс (%)';
+
+  @override
+  String get alertAlreadyMet => 'Баға бұл деңгейден әлдеқашан өтіп кетті.';
+
+  @override
+  String get alertSave => 'Ескерту орнату';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol үшін ескерту орнатылды.';
+  }
+
+  @override
+  String get alertsEmpty => 'Әзірге баға ескертулері жоқ. Ескерту орнату үшін акцияны ашып, қоңырауды түртіңіз.';
+
+  @override
+  String get alertsNote =>
+      'StockLens жұмыс істеп тұрғанда ескертулер әр 5 минут сайын тексеріледі. Компьютерде қолданба мәзір жолағында немесе хабарландыру аймағында жұмысын жалғастырады; телефонда әзірге ескертулер тек қолданба ашық тұрғанда келеді.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price деңгейінен жоғары';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price деңгейінен төмен';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Күндік өзгеріс ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date күні $price бағасында іске қосылды';
+  }
+
+  @override
+  String get alertRearm => 'Қайта қосу';
+
+  @override
+  String get alertDelete => 'Жою';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price деңгейінен жоғары көтерілді';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price деңгейінен төмен түсті';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol бүгін $percent өзгерді';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Ағымдағы баға: $price';
+  }
+
+  @override
+  String get alertOpen => 'Ашу';
+
+  @override
+  String get keepInTrayTitle => 'Терезе жабылғанда да жұмыс істеу';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens мәзір жолағында немесе хабарландыру аймағында қалады, сондықтан пернелер тіркесімі мен баға ескертулері жұмысын жалғастырады.';
+
+  @override
+  String get termsOfUse => 'Пайдалану шарттары';
+
+  @override
+  String get privacyPolicy => 'Құпиялылық саясаты';
+
+  @override
+  String get subscriptionLegal =>
+      'Жазылым сіз одан бас тартқанша ай сайын автоматты түрде ұзартылады. Жазылу арқылы сіз Пайдалану шарттары мен Құпиялылық саясатын қабылдайсыз.';
+
+  @override
+  String get deleteAccount => 'Аккаунтты жою';
+
+  @override
+  String get deleteAccountTitle => 'Аккаунтыңызды жою керек пе?';
+
+  @override
+  String get deleteAccountBody =>
+      'Аккаунтыңыз және серверімізде сақталған барлық дерек (email, лимит, пайдалану) біржола жойылады, ал пайдаланылмаған талдаулар жоғалады. Браузерде төленген жазылым бірден тоқтатылады; App Store немесе Google Play жазылымынан дүкен параметрлерінде бас тарту керек.';
+
+  @override
+  String get deleteLocalData =>
+      'Осы құрылғыдағы деректерді де жою (портфель, ескертулер, таңдаулылар, тарих, сақталған талдаулар)';
+
+  @override
+  String get deleteAccountConfirm => 'Біржола жою';
+
+  @override
+  String get accountDeleted => 'Аккаунтыңыз жойылды.';
+
+  @override
+  String get errDeleteAccount => 'Аккаунтты жою мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
+}

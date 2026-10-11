@@ -6,8 +6,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_af.dart';
+import 'app_localizations_am.dart';
 import 'app_localizations_ar.dart';
 import 'app_localizations_as.dart';
+import 'app_localizations_az.dart';
 import 'app_localizations_bg.dart';
 import 'app_localizations_bn.dart';
 import 'app_localizations_bs.dart';
@@ -33,13 +35,17 @@ import 'app_localizations_hr.dart';
 import 'app_localizations_ht.dart';
 import 'app_localizations_hu.dart';
 import 'app_localizations_id.dart';
+import 'app_localizations_ilo.dart';
 import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
 import 'app_localizations_jv.dart';
+import 'app_localizations_kk.dart';
+import 'app_localizations_kn.dart';
 import 'app_localizations_ko.dart';
 import 'app_localizations_ky.dart';
 import 'app_localizations_lt.dart';
 import 'app_localizations_lv.dart';
+import 'app_localizations_mai.dart';
 import 'app_localizations_mg.dart';
 import 'app_localizations_mr.dart';
 import 'app_localizations_ms.dart';
@@ -61,12 +67,15 @@ import 'app_localizations_sw.dart';
 import 'app_localizations_ta.dart';
 import 'app_localizations_te.dart';
 import 'app_localizations_th.dart';
+import 'app_localizations_tk.dart';
 import 'app_localizations_tr.dart';
+import 'app_localizations_tt.dart';
 import 'app_localizations_uk.dart';
 import 'app_localizations_ur.dart';
 import 'app_localizations_uz.dart';
 import 'app_localizations_vi.dart';
 import 'app_localizations_zh.dart';
+import 'app_localizations_zu.dart';
 
 // ignore_for_file: type=lint
 
@@ -152,8 +161,10 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('af'),
+    Locale('am'),
     Locale('ar'),
     Locale('as'),
+    Locale('az'),
     Locale('bg'),
     Locale('bn'),
     Locale('bs'),
@@ -179,13 +190,17 @@ abstract class AppLocalizations {
     Locale('ht'),
     Locale('hu'),
     Locale('id'),
+    Locale('ilo'),
     Locale('it'),
     Locale('ja'),
     Locale('jv'),
+    Locale('kk'),
+    Locale('kn'),
     Locale('ko'),
     Locale('ky'),
     Locale('lt'),
     Locale('lv'),
+    Locale('mai'),
     Locale('mg'),
     Locale('mr'),
     Locale('ms'),
@@ -207,13 +222,16 @@ abstract class AppLocalizations {
     Locale('ta'),
     Locale('te'),
     Locale('th'),
+    Locale('tk'),
     Locale('tr'),
+    Locale('tt'),
     Locale('uk'),
     Locale('ur'),
     Locale('uz'),
     Locale('vi'),
     Locale('zh'),
     Locale.fromSubtags(languageCode: 'zh', countryCode: 'HK', scriptCode: 'Hant'),
+    Locale('zu'),
   ];
 
   /// No description provided for @appTitle.
@@ -2406,8 +2424,10 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   @override
   bool isSupported(Locale locale) => <String>[
     'af',
+    'am',
     'ar',
     'as',
+    'az',
     'bg',
     'bn',
     'bs',
@@ -2433,13 +2453,17 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ht',
     'hu',
     'id',
+    'ilo',
     'it',
     'ja',
     'jv',
+    'kk',
+    'kn',
     'ko',
     'ky',
     'lt',
     'lv',
+    'mai',
     'mg',
     'mr',
     'ms',
@@ -2461,12 +2485,15 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ta',
     'te',
     'th',
+    'tk',
     'tr',
+    'tt',
     'uk',
     'ur',
     'uz',
     'vi',
     'zh',
+    'zu',
   ].contains(locale.languageCode);
 
   @override
@@ -2484,10 +2511,14 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'af':
       return AppLocalizationsAf();
+    case 'am':
+      return AppLocalizationsAm();
     case 'ar':
       return AppLocalizationsAr();
     case 'as':
       return AppLocalizationsAs();
+    case 'az':
+      return AppLocalizationsAz();
     case 'bg':
       return AppLocalizationsBg();
     case 'bn':
@@ -2538,12 +2569,18 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsHu();
     case 'id':
       return AppLocalizationsId();
+    case 'ilo':
+      return AppLocalizationsIlo();
     case 'it':
       return AppLocalizationsIt();
     case 'ja':
       return AppLocalizationsJa();
     case 'jv':
       return AppLocalizationsJv();
+    case 'kk':
+      return AppLocalizationsKk();
+    case 'kn':
+      return AppLocalizationsKn();
     case 'ko':
       return AppLocalizationsKo();
     case 'ky':
@@ -2552,6 +2589,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsLt();
     case 'lv':
       return AppLocalizationsLv();
+    case 'mai':
+      return AppLocalizationsMai();
     case 'mg':
       return AppLocalizationsMg();
     case 'mr':
@@ -2594,8 +2633,12 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsTe();
     case 'th':
       return AppLocalizationsTh();
+    case 'tk':
+      return AppLocalizationsTk();
     case 'tr':
       return AppLocalizationsTr();
+    case 'tt':
+      return AppLocalizationsTt();
     case 'uk':
       return AppLocalizationsUk();
     case 'ur':
@@ -2606,6 +2649,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsVi();
     case 'zh':
       return AppLocalizationsZh();
+    case 'zu':
+      return AppLocalizationsZu();
   }
 
   throw FlutterError(
