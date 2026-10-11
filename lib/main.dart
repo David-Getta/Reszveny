@@ -20,6 +20,12 @@ Future<void> main() async {
   await entitlements.ensureTrial();
   final desktop = DesktopIntegration();
   await desktop.initialize(title: 'StockLens', hotkeyJson: preferences.hotkeyJson);
+  // macOS: dupla Option-nyomás; az engedélyt csak egyszer kérjük, utána a
+  // beállításokból nyitható meg.
+  if (DesktopIntegration.supportsDoubleOption && preferences.doubleOption) {
+    await desktop.setDoubleOption(true, askPermission: !preferences.doubleOptionAsked);
+    if (!preferences.doubleOptionAsked) await preferences.markDoubleOptionAsked();
+  }
   final services = AppServices.fromConfig(
     const AppConfig(),
     locale: locale,

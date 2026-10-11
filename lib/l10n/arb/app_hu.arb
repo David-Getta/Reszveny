@@ -289,5 +289,11 @@
   "errSignInFailed": "A bejelentkezés nem sikerült. Ellenőrizd a kapcsolatot, és próbáld újra.",
   "checkoutWaiting": "Fejezd be a fizetést a böngészőben. Az app automatikusan frissül, amint kész.",
   "paymentViaStripe": "Biztonságos fizetés a böngészőben, Stripe-on keresztül. Bármikor lemondható.",
-  "paymentViaStore": "A számlázás az App Store- vagy Google Play-fiókodon keresztül történik. Bármikor lemondható a bolt beállításaiban."
+  "paymentViaStore": "A számlázás az App Store- vagy Google Play-fiókodon keresztül történik. Bármikor lemondható a bolt beállításaiban.",
+  "keySpace": "Szóköz",
+  "doubleOptionTitle": "Dupla Option-nyomás",
+  "doubleOptionSubtitle": "Az Option gomb kétszeri gyors lenyomása is előhozza a StockLenst.",
+  "doubleOptionPermission": "Hogy más appokban is működjön, engedélyezd a StockLenst a Rendszerbeállítások → Adatvédelem és biztonság → Bemenetfigyelés alatt, majd nyisd meg újra az appot.",
+  "openSystemSettings": "Rendszerbeállítások megnyitása",
+  "hotkeyHintDoubleOption": "Nyomd le bárhol a {shortcut} billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens."
 }

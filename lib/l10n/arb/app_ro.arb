@@ -289,5 +289,11 @@
   "errSignInFailed": "Conectarea a eșuat. Verifică-ți conexiunea și încearcă din nou.",
   "checkoutWaiting": "Finalizează plata în browser. Aplicația se actualizează automat când plata este gata.",
   "paymentViaStripe": "Plată securizată în browser prin Stripe. Poți anula oricând.",
-  "paymentViaStore": "Facturat prin contul tău App Store sau Google Play. Poți anula oricând din setările magazinului."
+  "paymentViaStore": "Facturat prin contul tău App Store sau Google Play. Poți anula oricând din setările magazinului.",
+  "keySpace": "Spațiu",
+  "doubleOptionTitle": "Apăsare dublă pe Opțiune",
+  "doubleOptionSubtitle": "Și apăsarea rapidă de două ori a tastei Opțiune deschide StockLens.",
+  "doubleOptionPermission": "Pentru ca funcția să meargă și în alte aplicații, permite StockLens în Configurări sistem → Intimitate și securitate → Monitorizare intrare, apoi redeschide aplicația.",
+  "openSystemSettings": "Deschide Configurări sistem",
+  "hotkeyHintDoubleOption": "Apasă {shortcut} sau de două ori tasta Opțiune oriunde pentru a deschide StockLens."
 }

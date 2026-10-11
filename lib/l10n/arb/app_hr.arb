@@ -289,5 +289,11 @@
   "errSignInFailed": "Prijava nije uspjela. Provjerite vezu i pokušajte ponovno.",
   "checkoutWaiting": "Dovršite plaćanje u pregledniku. Aplikacija će se automatski ažurirati kada završite.",
   "paymentViaStripe": "Sigurno plaćanje u pregledniku putem Stripea. Otkažite u bilo kojem trenutku.",
-  "paymentViaStore": "Naplaćuje se putem vašeg App Store ili Google Play računa. Otkažite u bilo kojem trenutku u postavkama trgovine."
+  "paymentViaStore": "Naplaćuje se putem vašeg App Store ili Google Play računa. Otkažite u bilo kojem trenutku u postavkama trgovine.",
+  "keySpace": "Razmaknica",
+  "doubleOptionTitle": "Dvostruki pritisak tipke Option",
+  "doubleOptionSubtitle": "Brzim dvostrukim pritiskom tipke Option također otvarate StockLens.",
+  "doubleOptionPermission": "Da bi radilo i u drugim aplikacijama, dopustite pristup aplikaciji StockLens u odjeljku Postavke sustava → Privatnost i sigurnost → Nadzor unosa, a zatim ponovno otvorite aplikaciju.",
+  "openSystemSettings": "Otvori Postavke sustava",
+  "hotkeyHintDoubleOption": "Pritisnite {shortcut} ili dvaput pritisnite Option bilo gdje da otvorite StockLens."
 }

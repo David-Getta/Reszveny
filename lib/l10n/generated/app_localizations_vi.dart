@@ -982,4 +982,25 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Thanh toán qua tài khoản App Store hoặc Google Play của bạn. Hủy bất cứ lúc nào trong phần cài đặt của cửa hàng.';
+
+  @override
+  String get keySpace => 'Phím cách';
+
+  @override
+  String get doubleOptionTitle => 'Nhấn Option hai lần';
+
+  @override
+  String get doubleOptionSubtitle => 'Nhấn nhanh phím Option hai lần cũng sẽ gọi StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Để tính năng này hoạt động cả trong các ứng dụng khác, hãy cho phép StockLens trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Giám sát đầu vào, sau đó mở lại ứng dụng.';
+
+  @override
+  String get openSystemSettings => 'Mở Cài đặt hệ thống';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Nhấn $shortcut hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens.';
+  }
 }

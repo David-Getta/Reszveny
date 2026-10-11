@@ -289,5 +289,11 @@
   "errSignInFailed": "Hyrja dështoi. Kontrolloni lidhjen dhe provoni përsëri.",
   "checkoutWaiting": "Përfundoni pagesën në shfletues. Aplikacioni përditësohet automatikisht kur të mbarojë.",
   "paymentViaStripe": "Pagesë e sigurt në shfletues përmes Stripe. Anuloni në çdo kohë.",
-  "paymentViaStore": "Faturohet përmes llogarisë suaj App Store ose Google Play. Anuloni në çdo kohë te cilësimet e dyqanit."
+  "paymentViaStore": "Faturohet përmes llogarisë suaj App Store ose Google Play. Anuloni në çdo kohë te cilësimet e dyqanit.",
+  "keySpace": "Hapësirë",
+  "doubleOptionTitle": "Shtypje e dyfishtë e Option",
+  "doubleOptionSubtitle": "Edhe shtypja e shpejtë dy herë e tastit Option hap StockLens.",
+  "doubleOptionPermission": "Që të funksionojë edhe në aplikacione të tjera, lejoni StockLens te Cilësimet e sistemit → Privatësia dhe siguria → Monitorimi i hyrjes, pastaj rihapni aplikacionin.",
+  "openSystemSettings": "Hap Cilësimet e sistemit",
+  "hotkeyHintDoubleOption": "Shtypni {shortcut} ose shtypni dy herë Option kudo për të hapur StockLens."
 }

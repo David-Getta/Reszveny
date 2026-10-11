@@ -1033,4 +1033,25 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Účtováno přes váš účet App Store nebo Google Play. Zrušit můžete kdykoli v nastavení obchodu.';
+
+  @override
+  String get keySpace => 'Mezerník';
+
+  @override
+  String get doubleOptionTitle => 'Dvojité stisknutí Option';
+
+  @override
+  String get doubleOptionSubtitle => 'StockLens vyvoláte také rychlým dvojitým stisknutím klávesy Option.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Aby to fungovalo i v jiných aplikacích, povolte StockLens v Nastavení systému → Soukromí a zabezpečení → Sledování vstupu a poté aplikaci znovu otevřete.';
+
+  @override
+  String get openSystemSettings => 'Otevřít Nastavení systému';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Stiskněte $shortcut nebo dvakrát stiskněte Option kdekoli a vyvolejte StockLens.';
+  }
 }

@@ -994,4 +994,25 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'మీ App Store లేదా Google Play ఖాతా ద్వారా బిల్ చేయబడుతుంది. స్టోర్ సెట్టింగ్‌లలో ఎప్పుడైనా రద్దు చేయవచ్చు.';
+
+  @override
+  String get keySpace => 'స్పేస్';
+
+  @override
+  String get doubleOptionTitle => 'Option ని రెండుసార్లు నొక్కండి';
+
+  @override
+  String get doubleOptionSubtitle => 'Option కీని వేగంగా రెండుసార్లు నొక్కినా కూడా StockLens తెరుచుకుంటుంది.';
+
+  @override
+  String get doubleOptionPermission =>
+      'ఇతర యాప్‌లలో కూడా ఇది పని చేయాలంటే, సిస్టమ్ సెట్టింగ్‌లు → గోప్యత & భద్రత → ఇన్‌పుట్ మానిటరింగ్‌లో StockLens ని అనుమతించి, ఆపై యాప్‌ను మళ్లీ తెరవండి.';
+
+  @override
+  String get openSystemSettings => 'సిస్టమ్ సెట్టింగ్‌లను తెరవండి';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'ఎక్కడి నుంచైనా StockLens ని తెరవడానికి $shortcut నొక్కండి లేదా Option ని రెండుసార్లు నొక్కండి.';
+  }
 }

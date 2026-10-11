@@ -289,5 +289,11 @@
   "errSignInFailed": "Kuingia kumeshindwa. Angalia muunganisho wako kisha ujaribu tena.",
   "checkoutWaiting": "Kamilisha malipo kwenye kivinjari chako. Programu itasasishwa kiotomatiki ukimaliza.",
   "paymentViaStripe": "Malipo salama kwenye kivinjari kupitia Stripe. Ghairi wakati wowote.",
-  "paymentViaStore": "Utatozwa kupitia akaunti yako ya App Store au Google Play. Ghairi wakati wowote kwenye mipangilio ya duka."
+  "paymentViaStore": "Utatozwa kupitia akaunti yako ya App Store au Google Play. Ghairi wakati wowote kwenye mipangilio ya duka.",
+  "keySpace": "Nafasi",
+  "doubleOptionTitle": "Bonyeza Option mara mbili",
+  "doubleOptionSubtitle": "Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita StockLens.",
+  "doubleOptionPermission": "Ili ifanye kazi pia katika programu nyingine, ruhusu StockLens katika Mipangilio ya Mfumo → Faragha na Usalama → Ufuatiliaji wa Ingizo, kisha fungua programu tena.",
+  "openSystemSettings": "Fungua Mipangilio ya Mfumo",
+  "hotkeyHintDoubleOption": "Bonyeza {shortcut} au bonyeza Option mara mbili mahali popote kuita StockLens."
 }

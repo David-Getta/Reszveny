@@ -1019,4 +1019,25 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Facturat prin contul tău App Store sau Google Play. Poți anula oricând din setările magazinului.';
+
+  @override
+  String get keySpace => 'Spațiu';
+
+  @override
+  String get doubleOptionTitle => 'Apăsare dublă pe Opțiune';
+
+  @override
+  String get doubleOptionSubtitle => 'Și apăsarea rapidă de două ori a tastei Opțiune deschide StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Pentru ca funcția să meargă și în alte aplicații, permite StockLens în Configurări sistem → Intimitate și securitate → Monitorizare intrare, apoi redeschide aplicația.';
+
+  @override
+  String get openSystemSettings => 'Deschide Configurări sistem';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Apasă $shortcut sau de două ori tasta Opțiune oriunde pentru a deschide StockLens.';
+  }
 }

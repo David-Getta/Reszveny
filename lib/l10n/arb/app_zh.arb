@@ -289,5 +289,11 @@
   "errSignInFailed": "登录失败。请检查网络连接后重试。",
   "checkoutWaiting": "请在浏览器中完成付款。完成后应用会自动更新。",
   "paymentViaStripe": "通过 Stripe 在浏览器中安全付款。可随时取消。",
-  "paymentViaStore": "通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。"
+  "paymentViaStore": "通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。",
+  "keySpace": "空格键",
+  "doubleOptionTitle": "连按两下 Option 键",
+  "doubleOptionSubtitle": "快速连按两下 Option 键也可呼出 StockLens。",
+  "doubleOptionPermission": "如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 StockLens，然后重新打开本应用。",
+  "openSystemSettings": "打开系统设置",
+  "hotkeyHintDoubleOption": "在任意位置按 {shortcut} 或连按两下 Option 键即可呼出 StockLens。"
 }

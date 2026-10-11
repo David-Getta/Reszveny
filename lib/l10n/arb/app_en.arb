@@ -571,5 +571,21 @@
   "errSignInFailed": "Sign-in failed. Check your connection and try again.",
   "checkoutWaiting": "Complete the payment in your browser. The app updates automatically when it is done.",
   "paymentViaStripe": "Secure payment in your browser via Stripe. Cancel anytime.",
-  "paymentViaStore": "Billed through your App Store or Google Play account. Cancel anytime in your store settings."
+  "paymentViaStore": "Billed through your App Store or Google Play account. Cancel anytime in your store settings.",
+  "keySpace": "Space",
+  "@keySpace": {
+    "description": "Name of the space bar key, as printed in keyboard shortcuts."
+  },
+  "doubleOptionTitle": "Double-press Option",
+  "doubleOptionSubtitle": "Pressing the Option key twice quickly also summons StockLens.",
+  "doubleOptionPermission": "To make it work in other apps too, allow StockLens under System Settings → Privacy & Security → Input Monitoring, then reopen the app.",
+  "openSystemSettings": "Open System Settings",
+  "hotkeyHintDoubleOption": "Press {shortcut} or double-press Option anywhere to summon StockLens.",
+  "@hotkeyHintDoubleOption": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  }
 }

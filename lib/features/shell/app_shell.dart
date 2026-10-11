@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import '../../widgets/hotkey_hint.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
@@ -193,10 +195,7 @@ class _Sidebar extends StatelessWidget {
           if (DesktopIntegration.isSupported)
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 8, 16, 16),
-              child: Text(
-                l10n.hotkeyHint(services.desktop.shortcutLabel),
-                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-              ),
+              child: Text(hotkeyHintText(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
             ),
         ],
       ),

@@ -289,5 +289,11 @@
   "errSignInFailed": "Prihlásenie zlyhalo. Skontrolujte pripojenie na internet a skúste to znova.",
   "checkoutWaiting": "Dokončite platbu v prehliadači. Aplikácia sa po jej dokončení automaticky aktualizuje.",
   "paymentViaStripe": "Bezpečná platba v prehliadači cez Stripe. Zrušiť môžete kedykoľvek.",
-  "paymentViaStore": "Účtované cez váš účet App Store alebo Google Play. Zrušiť môžete kedykoľvek v nastaveniach obchodu."
+  "paymentViaStore": "Účtované cez váš účet App Store alebo Google Play. Zrušiť môžete kedykoľvek v nastaveniach obchodu.",
+  "keySpace": "Medzerník",
+  "doubleOptionTitle": "Dvojité stlačenie Option",
+  "doubleOptionSubtitle": "StockLens vyvoláte aj rýchlym dvojitým stlačením klávesu Option.",
+  "doubleOptionPermission": "Aby to fungovalo aj v iných aplikáciách, povoľte StockLens v Systémových nastaveniach → Súkromie a bezpečnosť → Monitorovanie vstupu a potom aplikáciu znova otvorte.",
+  "openSystemSettings": "Otvoriť Systémové nastavenia",
+  "hotkeyHintDoubleOption": "Stlačte {shortcut} alebo dvakrát stlačte Option kdekoľvek a vyvolajte StockLens."
 }

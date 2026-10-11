@@ -289,5 +289,11 @@
   "errSignInFailed": "Gagal masuk. Periksa koneksi Anda, lalu coba lagi.",
   "checkoutWaiting": "Selesaikan pembayaran di browser Anda. Aplikasi akan diperbarui secara otomatis setelah selesai.",
   "paymentViaStripe": "Pembayaran aman di browser Anda melalui Stripe. Batalkan kapan saja.",
-  "paymentViaStore": "Ditagih melalui akun App Store atau Google Play Anda. Batalkan kapan saja di pengaturan toko Anda."
+  "paymentViaStore": "Ditagih melalui akun App Store atau Google Play Anda. Batalkan kapan saja di pengaturan toko Anda.",
+  "keySpace": "Spasi",
+  "doubleOptionTitle": "Tekan Option dua kali",
+  "doubleOptionSubtitle": "Menekan tombol Option dua kali dengan cepat juga akan memanggil StockLens.",
+  "doubleOptionPermission": "Agar berfungsi juga di aplikasi lain, izinkan StockLens di Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, lalu buka kembali aplikasi.",
+  "openSystemSettings": "Buka Pengaturan Sistem",
+  "hotkeyHintDoubleOption": "Tekan {shortcut} atau tekan Option dua kali di mana saja untuk memanggil StockLens."
 }

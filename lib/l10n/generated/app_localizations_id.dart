@@ -979,4 +979,25 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Ditagih melalui akun App Store atau Google Play Anda. Batalkan kapan saja di pengaturan toko Anda.';
+
+  @override
+  String get keySpace => 'Spasi';
+
+  @override
+  String get doubleOptionTitle => 'Tekan Option dua kali';
+
+  @override
+  String get doubleOptionSubtitle => 'Menekan tombol Option dua kali dengan cepat juga akan memanggil StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Agar berfungsi juga di aplikasi lain, izinkan StockLens di Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, lalu buka kembali aplikasi.';
+
+  @override
+  String get openSystemSettings => 'Buka Pengaturan Sistem';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Tekan $shortcut atau tekan Option dua kali di mana saja untuk memanggil StockLens.';
+  }
 }

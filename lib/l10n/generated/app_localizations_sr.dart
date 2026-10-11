@@ -1024,4 +1024,25 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Наплаћује се преко вашег App Store или Google Play налога. Откажите кад год желите у подешавањима продавнице.';
+
+  @override
+  String get keySpace => 'Размак';
+
+  @override
+  String get doubleOptionTitle => 'Двоструки притисак на Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Брзи двоструки притисак тастера Option такође позива StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Да би радило и у другим апликацијама, дозволите приступ апликацији StockLens у одељку Подешавања система → Приватност и безбедност → Праћење уноса, а затим поново отворите апликацију.';
+
+  @override
+  String get openSystemSettings => 'Отвори Подешавања система';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Притисните $shortcut или двапут притисните Option било где да позовете StockLens.';
+  }
 }

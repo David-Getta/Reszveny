@@ -990,4 +990,25 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'App Store veya Google Play hesabınız üzerinden faturalandırılır. İstediğiniz zaman mağaza ayarlarından iptal edin.';
+
+  @override
+  String get keySpace => 'Boşluk';
+
+  @override
+  String get doubleOptionTitle => 'Option tuşuna çift basma';
+
+  @override
+  String get doubleOptionSubtitle => 'Option tuşuna hızlıca iki kez basmak da StockLens\'i çağırır.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Bunun diğer uygulamalarda da çalışması için Sistem Ayarları → Gizlilik ve Güvenlik → Girdi İzleme bölümünde StockLens\'e izin verin, ardından uygulamayı yeniden açın.';
+
+  @override
+  String get openSystemSettings => 'Sistem Ayarları\'nı aç';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'StockLens\'i çağırmak için herhangi bir yerde $shortcut tuşlarına veya iki kez Option tuşuna basın.';
+  }
 }

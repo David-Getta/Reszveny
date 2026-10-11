@@ -289,5 +289,11 @@
   "errSignInFailed": "Gagal mlebu. Priksa sambungan internet sampeyan lan jajal maneh.",
   "checkoutWaiting": "Rampungake pambayaran ing browser sampeyan. Aplikasi bakal nganyari kanthi otomatis yen wis rampung.",
   "paymentViaStripe": "Pambayaran aman ing browser sampeyan liwat Stripe. Bisa dibatalake kapan wae.",
-  "paymentViaStore": "Ditagih liwat akun App Store utawa Google Play sampeyan. Bisa dibatalake kapan wae ing setelan toko."
+  "paymentViaStore": "Ditagih liwat akun App Store utawa Google Play sampeyan. Bisa dibatalake kapan wae ing setelan toko.",
+  "keySpace": "Spasi",
+  "doubleOptionTitle": "Tekan Option kaping pindho",
+  "doubleOptionSubtitle": "Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali StockLens.",
+  "doubleOptionPermission": "Supaya bisa mlaku ing aplikasi liyane uga, wenehana idin marang StockLens ing Setelan Sistem → Privasi & Keamanan → Pemantauan Input, banjur bukak maneh aplikasine.",
+  "openSystemSettings": "Bukak Setelan Sistem",
+  "hotkeyHintDoubleOption": "Tekan {shortcut} utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens."
 }

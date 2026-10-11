@@ -992,4 +992,25 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Opkræves via din App Store- eller Google Play-konto. Kan opsiges når som helst i butikkens indstillinger.';
+
+  @override
+  String get keySpace => 'Mellemrum';
+
+  @override
+  String get doubleOptionTitle => 'Dobbelttryk på alternativtasten';
+
+  @override
+  String get doubleOptionSubtitle => 'Du kan også åbne StockLens ved hurtigt at trykke to gange på alternativtasten.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Hvis det også skal virke i andre apps, skal du tillade StockLens under Systemindstillinger → Anonymitet og sikkerhed → Inputovervågning og derefter åbne appen igen.';
+
+  @override
+  String get openSystemSettings => 'Åbn Systemindstillinger';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Tryk på $shortcut eller dobbelttryk på alternativtasten hvor som helst for at åbne StockLens.';
+  }
 }

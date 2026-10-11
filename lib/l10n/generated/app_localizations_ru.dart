@@ -1036,4 +1036,25 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Оплата через ваш аккаунт App Store или Google Play. Отменить можно в любой момент в настройках магазина.';
+
+  @override
+  String get keySpace => 'Пробел';
+
+  @override
+  String get doubleOptionTitle => 'Двойное нажатие Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Быстрое двойное нажатие клавиши Option тоже вызывает StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Чтобы это работало и в других приложениях, разрешите доступ для StockLens в разделе «Системные настройки» → «Конфиденциальность и безопасность» → «Мониторинг ввода», а затем снова откройте приложение.';
+
+  @override
+  String get openSystemSettings => 'Открыть «Системные настройки»';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Нажмите $shortcut или дважды нажмите Option в любом месте, чтобы вызвать StockLens.';
+  }
 }

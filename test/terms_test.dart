@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:hotkey_manager/hotkey_manager.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/l10n/supported_locales.dart';
 import 'package:reszveny/l10n/terms.dart';
@@ -41,10 +42,22 @@ void main() {
 
   test('hotkey labels do not depend on debug names (release builds)', () {
     expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.space, mac: true), 'Space');
+    expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.space, space: 'Szóköz'), 'Szóköz');
     expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.keyK), 'K');
     expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.digit0), '0');
     expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.digit5), '5');
     expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.f12), 'F12');
-    expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.enter, mac: true), '↩');
+    expect(DesktopIntegration.physicalKeyLabel(PhysicalKeyboardKey.enter, mac: true), '↩ Return');
+  });
+
+  test('the shortcut names the modifier keys and the localized space bar', () {
+    final hk = HotKey(key: PhysicalKeyboardKey.space, modifiers: [HotKeyModifier.alt], scope: HotKeyScope.system);
+    expect(DesktopIntegration.describeHotKey(hk, space: 'Szóköz', mac: true), '⌥ Option + Szóköz');
+    final win = HotKey(
+      key: PhysicalKeyboardKey.space,
+      modifiers: [HotKeyModifier.control, HotKeyModifier.alt],
+      scope: HotKeyScope.system,
+    );
+    expect(DesktopIntegration.describeHotKey(win, space: 'Leertaste', mac: false), 'Ctrl + Alt + Leertaste');
   });
 }

@@ -1035,4 +1035,25 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Mokestis nuskaitomas per jūsų App Store arba Google Play paskyrą. Atšaukti galite bet kada parduotuvės nustatymuose.';
+
+  @override
+  String get keySpace => 'Tarpas';
+
+  @override
+  String get doubleOptionTitle => 'Dukart paspausti Option';
+
+  @override
+  String get doubleOptionSubtitle => 'StockLens taip pat iškviesite greitai dukart paspaudę klavišą Option.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Kad tai veiktų ir kitose programose, leiskite StockLens skiltyje Sistemos nustatymai → Privatumas ir sauga → Įvesties stebėjimas, tada iš naujo atidarykite programą.';
+
+  @override
+  String get openSystemSettings => 'Atidaryti Sistemos nustatymus';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Paspauskite $shortcut arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens.';
+  }
 }

@@ -995,4 +995,25 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Die Abrechnung erfolgt über dein App-Store- oder Google-Play-Konto. Jederzeit in den Einstellungen deines Stores kündbar.';
+
+  @override
+  String get keySpace => 'Leertaste';
+
+  @override
+  String get doubleOptionTitle => 'Wahltaste zweimal drücken';
+
+  @override
+  String get doubleOptionSubtitle => 'Auch zweimaliges schnelles Drücken der Wahltaste ruft StockLens auf.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Damit das auch in anderen Apps funktioniert, erlaube StockLens unter Systemeinstellungen → Datenschutz & Sicherheit → Eingabeüberwachung und öffne die App danach erneut.';
+
+  @override
+  String get openSystemSettings => 'Systemeinstellungen öffnen';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Drücke $shortcut oder zweimal die Wahltaste an beliebiger Stelle, um StockLens aufzurufen.';
+  }
 }

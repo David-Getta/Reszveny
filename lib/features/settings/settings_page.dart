@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
 import 'package:intl/intl.dart';
 
+import '../../widgets/hotkey_hint.dart';
+
 import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
@@ -117,7 +119,19 @@ class SettingsPage extends StatelessWidget {
                   ),
                   if (DesktopIntegration.isSupported) ...[
                     sectionTitle(l10n.hotkeyLabel),
-                    Card(child: Column(children: [_HotkeyTile(), const Divider(height: 1), _LaunchAtLoginTile()])),
+                    Card(
+                      child: Column(
+                        children: [
+                          _HotkeyTile(),
+                          if (DesktopIntegration.supportsDoubleOption) ...[
+                            const Divider(height: 1),
+                            const _DoubleOptionTile(),
+                          ],
+                          const Divider(height: 1),
+                          _LaunchAtLoginTile(),
+                        ],
+                      ),
+                    ),
                   ],
                   sectionTitle(l10n.displayCurrency),
                   Card(
@@ -178,7 +192,7 @@ class SettingsPage extends StatelessWidget {
                           const Divider(height: 1),
                           ListTile(
                             leading: const Icon(Icons.keyboard_command_key_rounded),
-                            title: Text(l10n.hotkeyHint(services.desktop.shortcutLabel)),
+                            title: Text(hotkeyHintText(l10n, services)),
                           ),
                         ],
                       ],
@@ -325,7 +339,7 @@ class _HotkeyTileState extends State<_HotkeyTile> {
           title: Text(l10n.hotkeyLabel),
           subtitle: _recording
               ? Text(l10n.hotkeyRecordHint, style: TextStyle(color: p.accent))
-              : Text(services.desktop.shortcutLabel),
+              : Text(services.desktop.shortcutLabelFor(space: l10n.keySpace)),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -488,6 +502,56 @@ class _VersionFooterState extends State<_VersionFooter> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// macOS: a dupla Option-nyomás kapcsolója, és ha kell, az engedély megadásának útja.
+class _DoubleOptionTile extends StatelessWidget {
+  const _DoubleOptionTile();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final services = AppServices.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return ListenableBuilder(
+      listenable: Listenable.merge([services.desktop, services.preferences]),
+      builder: (context, _) {
+        final on = services.preferences.doubleOption;
+        return Column(
+          children: [
+            SwitchListTile(
+              secondary: const Icon(Icons.keyboard_double_arrow_up_rounded),
+              title: Text(l10n.doubleOptionTitle),
+              subtitle: Text(l10n.doubleOptionSubtitle, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              value: on,
+              onChanged: (v) async {
+                await services.preferences.setDoubleOption(v);
+                await services.desktop.setDoubleOption(v, askPermission: true);
+              },
+            ),
+            if (on && !services.desktop.doubleOptionGlobal)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.info_outline_rounded, size: 18, color: p.accent),
+                    const SizedBox(width: 8),
+                    Expanded(child: Text(l10n.doubleOptionPermission, style: theme.textTheme.bodySmall)),
+                    const SizedBox(width: 8),
+                    TextButton(
+                      onPressed: services.desktop.openInputMonitoringSettings,
+                      child: Text(l10n.openSystemSettings),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }

@@ -289,5 +289,11 @@
   "errSignInFailed": "Kirjautuminen epäonnistui. Tarkista yhteytesi ja yritä uudelleen.",
   "checkoutWaiting": "Viimeistele maksu selaimessa. Sovellus päivittyy automaattisesti, kun maksu on valmis.",
   "paymentViaStripe": "Turvallinen maksu selaimessa Stripen kautta. Voit perua milloin tahansa.",
-  "paymentViaStore": "Laskutetaan App Store- tai Google Play -tilisi kautta. Voit perua milloin tahansa kaupan asetuksista."
+  "paymentViaStore": "Laskutetaan App Store- tai Google Play -tilisi kautta. Voit perua milloin tahansa kaupan asetuksista.",
+  "keySpace": "Välilyönti",
+  "doubleOptionTitle": "Optio-näppäimen kaksoispainallus",
+  "doubleOptionSubtitle": "StockLens avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.",
+  "doubleOptionPermission": "Jotta tämä toimisi myös muissa sovelluksissa, salli StockLens kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Syötteen valvonta ja avaa sovellus sitten uudelleen.",
+  "openSystemSettings": "Avaa Järjestelmäasetukset",
+  "hotkeyHintDoubleOption": "Paina missä tahansa {shortcut} tai Optio-näppäintä kahdesti, niin StockLens avautuu."
 }

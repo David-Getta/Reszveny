@@ -1033,4 +1033,25 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Účtované cez váš účet App Store alebo Google Play. Zrušiť môžete kedykoľvek v nastaveniach obchodu.';
+
+  @override
+  String get keySpace => 'Medzerník';
+
+  @override
+  String get doubleOptionTitle => 'Dvojité stlačenie Option';
+
+  @override
+  String get doubleOptionSubtitle => 'StockLens vyvoláte aj rýchlym dvojitým stlačením klávesu Option.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Aby to fungovalo aj v iných aplikáciách, povoľte StockLens v Systémových nastaveniach → Súkromie a bezpečnosť → Monitorovanie vstupu a potom aplikáciu znova otvorte.';
+
+  @override
+  String get openSystemSettings => 'Otvoriť Systémové nastavenia';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Stlačte $shortcut alebo dvakrát stlačte Option kdekoľvek a vyvolajte StockLens.';
+  }
 }

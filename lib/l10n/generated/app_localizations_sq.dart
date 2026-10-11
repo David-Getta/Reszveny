@@ -994,4 +994,25 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Faturohet përmes llogarisë suaj App Store ose Google Play. Anuloni në çdo kohë te cilësimet e dyqanit.';
+
+  @override
+  String get keySpace => 'Hapësirë';
+
+  @override
+  String get doubleOptionTitle => 'Shtypje e dyfishtë e Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Edhe shtypja e shpejtë dy herë e tastit Option hap StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Që të funksionojë edhe në aplikacione të tjera, lejoni StockLens te Cilësimet e sistemit → Privatësia dhe siguria → Monitorimi i hyrjes, pastaj rihapni aplikacionin.';
+
+  @override
+  String get openSystemSettings => 'Hap Cilësimet e sistemit';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Shtypni $shortcut ose shtypni dy herë Option kudo për të hapur StockLens.';
+  }
 }

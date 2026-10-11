@@ -289,5 +289,11 @@
   "errSignInFailed": "Đăng nhập không thành công. Hãy kiểm tra kết nối rồi thử lại.",
   "checkoutWaiting": "Hãy hoàn tất thanh toán trong trình duyệt. Ứng dụng sẽ tự động cập nhật khi xong.",
   "paymentViaStripe": "Thanh toán an toàn trong trình duyệt qua Stripe. Hủy bất cứ lúc nào.",
-  "paymentViaStore": "Thanh toán qua tài khoản App Store hoặc Google Play của bạn. Hủy bất cứ lúc nào trong phần cài đặt của cửa hàng."
+  "paymentViaStore": "Thanh toán qua tài khoản App Store hoặc Google Play của bạn. Hủy bất cứ lúc nào trong phần cài đặt của cửa hàng.",
+  "keySpace": "Phím cách",
+  "doubleOptionTitle": "Nhấn Option hai lần",
+  "doubleOptionSubtitle": "Nhấn nhanh phím Option hai lần cũng sẽ gọi StockLens.",
+  "doubleOptionPermission": "Để tính năng này hoạt động cả trong các ứng dụng khác, hãy cho phép StockLens trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Giám sát đầu vào, sau đó mở lại ứng dụng.",
+  "openSystemSettings": "Mở Cài đặt hệ thống",
+  "hotkeyHintDoubleOption": "Nhấn {shortcut} hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens."
 }

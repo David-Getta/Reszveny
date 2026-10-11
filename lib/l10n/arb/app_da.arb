@@ -289,5 +289,11 @@
   "errSignInFailed": "Login mislykkedes. Tjek din forbindelse, og prøv igen.",
   "checkoutWaiting": "Gennemfør betalingen i din browser. Appen opdateres automatisk, når den er gennemført.",
   "paymentViaStripe": "Sikker betaling i din browser via Stripe. Kan opsiges når som helst.",
-  "paymentViaStore": "Opkræves via din App Store- eller Google Play-konto. Kan opsiges når som helst i butikkens indstillinger."
+  "paymentViaStore": "Opkræves via din App Store- eller Google Play-konto. Kan opsiges når som helst i butikkens indstillinger.",
+  "keySpace": "Mellemrum",
+  "doubleOptionTitle": "Dobbelttryk på alternativtasten",
+  "doubleOptionSubtitle": "Du kan også åbne StockLens ved hurtigt at trykke to gange på alternativtasten.",
+  "doubleOptionPermission": "Hvis det også skal virke i andre apps, skal du tillade StockLens under Systemindstillinger → Anonymitet og sikkerhed → Inputovervågning og derefter åbne appen igen.",
+  "openSystemSettings": "Åbn Systemindstillinger",
+  "hotkeyHintDoubleOption": "Tryk på {shortcut} eller dobbelttryk på alternativtasten hvor som helst for at åbne StockLens."
 }

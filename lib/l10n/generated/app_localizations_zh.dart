@@ -956,6 +956,26 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get paymentViaStore => '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
+
+  @override
+  String get keySpace => '空格键';
+
+  @override
+  String get doubleOptionTitle => '连按两下 Option 键';
+
+  @override
+  String get doubleOptionSubtitle => '快速连按两下 Option 键也可呼出 StockLens。';
+
+  @override
+  String get doubleOptionPermission => '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 StockLens，然后重新打开本应用。';
+
+  @override
+  String get openSystemSettings => '打开系统设置';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return '在任意位置按 $shortcut 或连按两下 Option 键即可呼出 StockLens。';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1909,4 +1929,24 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get paymentViaStore => '經你的 App Store 或 Google Play 帳戶收費。可隨時在商店設定中取消。';
+
+  @override
+  String get keySpace => '空白鍵';
+
+  @override
+  String get doubleOptionTitle => '連按兩下 Option 鍵';
+
+  @override
+  String get doubleOptionSubtitle => '快速連按兩下 Option 鍵亦可呼出 StockLens。';
+
+  @override
+  String get doubleOptionPermission => '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 StockLens，然後重新開啟此 App。';
+
+  @override
+  String get openSystemSettings => '開啟系統設定';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return '在任何地方按 $shortcut 或連按兩下 Option 鍵即可呼出 StockLens。';
+  }
 }

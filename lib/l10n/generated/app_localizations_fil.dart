@@ -1000,4 +1000,26 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Sinisingil sa iyong App Store o Google Play account. Puwedeng kanselahin anumang oras sa mga setting ng store.';
+
+  @override
+  String get keySpace => 'Space';
+
+  @override
+  String get doubleOptionTitle => 'Pindutin nang dalawang beses ang Option';
+
+  @override
+  String get doubleOptionSubtitle =>
+      'Natatawag din ang StockLens kapag mabilis na pinindot nang dalawang beses ang Option key.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Para gumana rin ito sa ibang app, payagan ang StockLens sa System Settings → Privacy & Security → Input Monitoring, pagkatapos ay buksan muli ang app.';
+
+  @override
+  String get openSystemSettings => 'Buksan ang System Settings';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Pindutin ang $shortcut o pindutin nang dalawang beses ang Option kahit saan para tawagin ang StockLens.';
+  }
 }

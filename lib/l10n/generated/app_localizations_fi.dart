@@ -998,4 +998,25 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Laskutetaan App Store- tai Google Play -tilisi kautta. Voit perua milloin tahansa kaupan asetuksista.';
+
+  @override
+  String get keySpace => 'Välilyönti';
+
+  @override
+  String get doubleOptionTitle => 'Optio-näppäimen kaksoispainallus';
+
+  @override
+  String get doubleOptionSubtitle => 'StockLens avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Jotta tämä toimisi myös muissa sovelluksissa, salli StockLens kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Syötteen valvonta ja avaa sovellus sitten uudelleen.';
+
+  @override
+  String get openSystemSettings => 'Avaa Järjestelmäasetukset';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Paina missä tahansa $shortcut tai Optio-näppäintä kahdesti, niin StockLens avautuu.';
+  }
 }

@@ -289,5 +289,11 @@
   "errSignInFailed": "साइन इन नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें।",
   "checkoutWaiting": "अपने ब्राउज़र में भुगतान पूरा करें। पूरा होते ही ऐप अपने आप अपडेट हो जाएगा।",
   "paymentViaStripe": "Stripe के माध्यम से आपके ब्राउज़र में सुरक्षित भुगतान। कभी भी रद्द करें।",
-  "paymentViaStore": "भुगतान आपके App Store या Google Play खाते से होता है। स्टोर सेटिंग्स में कभी भी रद्द करें।"
+  "paymentViaStore": "भुगतान आपके App Store या Google Play खाते से होता है। स्टोर सेटिंग्स में कभी भी रद्द करें।",
+  "keySpace": "स्पेस",
+  "doubleOptionTitle": "Option को दो बार दबाएँ",
+  "doubleOptionSubtitle": "Option कुंजी को जल्दी-जल्दी दो बार दबाने से भी StockLens खुल जाता है।",
+  "doubleOptionPermission": "दूसरे ऐप्स में भी यह काम करे, इसके लिए सिस्टम सेटिंग्ज़ → गोपनीयता और सुरक्षा → इनपुट मॉनिटरिंग में StockLens को अनुमति दें, फिर ऐप को दोबारा खोलें।",
+  "openSystemSettings": "सिस्टम सेटिंग्ज़ खोलें",
+  "hotkeyHintDoubleOption": "StockLens को कहीं से भी खोलने के लिए {shortcut} दबाएँ या Option को दो बार दबाएँ।"
 }
