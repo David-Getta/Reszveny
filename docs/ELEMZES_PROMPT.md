@@ -312,5 +312,6 @@ Mérés: a valódi minőségjavulás az éles evallal mérhető (lásd fent, kul
 | Minőség-ellenőrző: megvan-e a 3/5/10 év, tágulnak-e a sávok, a legvalószínűbb ár a sávon belül van-e, van-e számítás és indoklás | Az eval ezeket is pontozza |
 | Terjedelem: Rövid 700–1 000, Alap 1 250–1 800, Részletes 2 400–3 300 szó; `max_tokens` 12k / 18k / 32k (a szerver is) | Az új szekció helyet kap anélkül, hogy a többi rövidülne |
 
-A javított hiba: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
-kilógott a sorból; most tördelődik.
+Javított hibák: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
+kilógott a sorból, és a kártyák fejlécében a jobb oldali kiegészítő (frissítés ideje, „Újragenerálás”)
+nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, illetve tördelődik.
