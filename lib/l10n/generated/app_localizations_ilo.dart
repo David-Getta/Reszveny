@@ -1,0 +1,1269 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Iloko (`ilo`).
+class AppLocalizationsIlo extends AppLocalizations {
+  AppLocalizationsIlo([String locale = 'ilo']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Retratuem ti maysa a stock ket ammuem ti amin a maipapan iti dayta.';
+
+  @override
+  String get homeHint =>
+      'Share certificate, screen ti brokerage app, pagiwarnak wenno logo ti kompania – aniaman a mangbigbig iti maysa a stock.';
+
+  @override
+  String get takePhoto => 'Agala iti retrato';
+
+  @override
+  String get chooseFromGallery => 'Agpili manipud iti gallery';
+
+  @override
+  String get chooseImage => 'Agpili iti ladawan';
+
+  @override
+  String get enterTickerManually => 'Iserrek a manual ti ticker';
+
+  @override
+  String get tickerInputLabel => 'Simbolo ti ticker';
+
+  @override
+  String get tickerInputHint => 'kas iti AAPL';
+
+  @override
+  String get lookUp => 'Biruken';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Demo mode – awan ti naka-configure a market data key. Adda sample data para iti: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Suksukimaten ti ladawan…';
+
+  @override
+  String get loadingData => 'Ikarkarga ti data…';
+
+  @override
+  String get noCandidatesTitle => 'Awan ti nabigbig a stock';
+
+  @override
+  String get noCandidatesBody =>
+      'Saanmi a mabigbig ti stock iti daytoy a ladawan. Padasem ti nalinlinaw a retrato, wenno iserrekmo a manual ti ticker.';
+
+  @override
+  String get whatWeSaw => 'Ti nakitami';
+
+  @override
+  String get chooseCandidateTitle => 'Ania a stock ti kayatmo a sawen?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% a kinasigurado';
+  }
+
+  @override
+  String get settings => 'Dagiti Setting';
+
+  @override
+  String get language => 'Pagsasao';
+
+  @override
+  String get systemLanguage => 'Default ti sistema';
+
+  @override
+  String get about => 'Maipapan';
+
+  @override
+  String get disclaimer =>
+      'Mangted laeng iti impormasion daytoy nga app ket saan a balakad iti panagpuonan. Mabalin a naladaw wenno saan a husto ti data.';
+
+  @override
+  String dataSource(String source) {
+    return 'Taudan ti data: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Panangbigbig: $source';
+  }
+
+  @override
+  String get retry => 'Padasen manen';
+
+  @override
+  String get cancel => 'Ikansela';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Irikep';
+
+  @override
+  String get errorGeneric => 'Adda biddut a napasamak.';
+
+  @override
+  String get errorSectionUnavailable => 'Saan a mai-load daytoy a seksion.';
+
+  @override
+  String get notAvailable => 'awan';
+
+  @override
+  String get sectionIdentity => 'Pannakabigbig';
+
+  @override
+  String get sectionPrice => 'Presio';
+
+  @override
+  String get sectionValuation => 'Valuation';
+
+  @override
+  String get sectionFinancials => 'Pinansial';
+
+  @override
+  String get sectionDividend => 'Dibidendo';
+
+  @override
+  String get sectionProfile => 'Profile ti kompania';
+
+  @override
+  String get sectionAnalysts => 'Rating dagiti analyst';
+
+  @override
+  String get sectionNews => 'Damag';
+
+  @override
+  String get sectionRecognition => 'Detalye ti panangbigbig';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Exchange';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Currency';
+
+  @override
+  String get labelCountry => 'Pagilian';
+
+  @override
+  String get labelIndustry => 'Industria';
+
+  @override
+  String get labelSector => 'Sektor';
+
+  @override
+  String get labelWebsite => 'Website';
+
+  @override
+  String get labelIpoDate => 'Petsa ti IPO';
+
+  @override
+  String get labelMarketCap => 'Market cap';
+
+  @override
+  String get labelSharesOutstanding => 'Dagiti outstanding a share';
+
+  @override
+  String get labelEmployees => 'Dagiti empleado';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Kangrunaan nga opisina';
+
+  @override
+  String get labelDescription => 'Deskripsion';
+
+  @override
+  String get labelLastPrice => 'Maudi a presio';
+
+  @override
+  String get labelChange => 'Panagbaliw';
+
+  @override
+  String get labelOpen => 'Panaglukat';
+
+  @override
+  String get labelDayHigh => 'Kangatuan ita nga aldaw';
+
+  @override
+  String get labelDayLow => 'Kababaan ita nga aldaw';
+
+  @override
+  String get labelPreviousClose => 'Napalabas a panagrikep';
+
+  @override
+  String get labelWeek52High => 'Kangatuan iti 52 a lawas';
+
+  @override
+  String get labelWeek52Low => 'Kababaan iti 52 a lawas';
+
+  @override
+  String get labelAverageVolume10d => 'Avg. a volume (10 nga aldaw)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Na-update $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (trailing)';
+
+  @override
+  String get labelPeForward => 'P/E (forward)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / libre a cash flow';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Sapul (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Net a ganansia (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Gross margin';
+
+  @override
+  String get labelOperatingMargin => 'Margin ti operasion';
+
+  @override
+  String get labelNetMargin => 'Net a margin';
+
+  @override
+  String get labelRoe => 'Return iti equity';
+
+  @override
+  String get labelRoa => 'Return iti assets';
+
+  @override
+  String get labelDebtToEquity => 'Utang / equity';
+
+  @override
+  String get labelCurrentRatio => 'Current ratio';
+
+  @override
+  String get labelRevenueGrowth => 'Panagdakkel ti sapul (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Panagdakkel ti EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Dividend yield';
+
+  @override
+  String get labelDividendPerShare => 'Dibidendo iti tunggal share';
+
+  @override
+  String get labelPayoutRatio => 'Payout ratio';
+
+  @override
+  String get labelConsensus => 'Konsensus';
+
+  @override
+  String get ratingStrongBuy => 'Gatangen a dagus';
+
+  @override
+  String get ratingBuy => 'Gatangen';
+
+  @override
+  String get ratingHold => 'Iggaman';
+
+  @override
+  String get ratingSell => 'Ilako';
+
+  @override
+  String get ratingStrongSell => 'Ilako a dagus';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count nga analyst', one: '1 nga analyst');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Periodo: $period';
+  }
+
+  @override
+  String get noNews => 'Awan ti baro a damag.';
+
+  @override
+  String get openArticle => 'Lukatan ti artikulo';
+
+  @override
+  String get openLinkFailed => 'Saan a malukatan ti link.';
+
+  @override
+  String get recognitionSummary => 'Pakabuklan';
+
+  @override
+  String get recognitionEvidence => 'Apay a kasta ti panagkunami';
+
+  @override
+  String get recognitionRawText => 'Teksto a nabasa manipud iti ladawan';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Saan a naka-configure ti panangbigbig iti ladawan (awan ti ANTHROPIC_API_KEY). Iserrek a manual ti ticker.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Saan a makontak ti serbisio ti panangbigbig. Kitaem ti koneksionmo iti internet.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Nangisubli iti error ti serbisio ti panangbigbig (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Saan a maproseso ti serbisio ti panangbigbig daytoy a ladawan.';
+
+  @override
+  String get errRecognitionTruncated => 'Naputed ti sungbat ti panangbigbig. Pangngaasim ta padasem manen.';
+
+  @override
+  String get errRecognitionBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti panangbigbig.';
+
+  @override
+  String get errRecognitionEmpty => 'Awan ti linaon ti sungbat nga insubli ti serbisio ti panangbigbig.';
+
+  @override
+  String get errMissingFinnhubKey => 'Saan a naka-configure ti market data (awan ti FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable => 'Saan a makontak ti serbisio ti market data. Kitaem ti koneksionmo iti internet.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Adu unay ti request iti serbisio ti market data. Pangngaasim ta agurayka iti maysa a minuto.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Nangisubli iti error ti serbisio ti market data (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti market data.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Awan ti nasarakan a data ti presio para iti $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Awan ti nasarakan a profile ti kompania para iti $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Suportaran laeng ti demo mode ti $symbols. Agnayon iti FINNHUB_API_KEY para iti live data.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Adda biddut: $detail';
+  }
+
+  @override
+  String get newSearch => 'Baro a panagbiruk';
+
+  @override
+  String get recentSearches => 'Kaudian';
+
+  @override
+  String get noRecentSearches => 'Awan pay ti kaudian a panagbiruk.';
+
+  @override
+  String get clearRecent => 'Punasen ti kaudian';
+
+  @override
+  String get greeting => 'Ania a stock ti kitaentayo?';
+
+  @override
+  String get searchHint => 'Ticker wenno nagan ti kompania';
+
+  @override
+  String get attachImage => 'Ikabit ti ladawan';
+
+  @override
+  String get searchResultsTitle => 'Dagiti resulta ti panagbiruk';
+
+  @override
+  String errNoResults(String query) {
+    return 'Awan ti nasarakan a stock para iti “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Ag-type iti ticker wenno nagan ti kompania…';
+
+  @override
+  String get openFullWindow => 'Lukatan ti window';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Pindutem ti $shortcut uray sadino tapno ayaban ti StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Lukatan ti StockLens';
+
+  @override
+  String get trayQuickSearch => 'Napardas a panagbiruk';
+
+  @override
+  String get trayQuit => 'Rummuar';
+
+  @override
+  String get appearance => 'Langa';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Nasipnget';
+
+  @override
+  String get themeLight => 'Nalawag';
+
+  @override
+  String get back => 'Agsubli';
+
+  @override
+  String get aiSectionTitle => 'Panangsukimat ti AI';
+
+  @override
+  String get aiIntro =>
+      'Detalyado a panangsukimat a sinurat ti AI: pakabuklan dagiti kaudian a damag, ti negosio, dagiti kabileg, peggad ken nailemmeng a banag, valuation, panangkita iti presio nga addaan kadagiti senario manipud iti sikolohikal, sosiolohikal, teknikal ken macro a pagkitaan, ken dagiti rumbeng a bantayan.';
+
+  @override
+  String get aiGenerate => 'Mangaramid iti panangsukimat';
+
+  @override
+  String get aiRegenerate => 'Aramiden manen';
+
+  @override
+  String get aiGenerating => 'Isagsagana ti panangsukimat… mabalin nga agpaut daytoy iti maysa wenno dua a minuto.';
+
+  @override
+  String get aiSources => 'Dagiti taudan';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Naaramid $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Panangsukimat nga inaramid ti AI a naibatay iti publiko a data ken kaudian a damag. Mabalin nga adda biddutna wenno daanen, ken saan a balakad iti panagpuonan.';
+
+  @override
+  String get errAiNotConfigured => 'Saan a naka-configure ti panangsukimat ti AI (awan ti ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Saan a makontak ti serbisio ti AI. Kitaem ti koneksionmo iti internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Nangisubli iti error ti serbisio ti AI (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Nagkedked ti serbisio ti AI a mangsukimat iti daytoy a stock.';
+
+  @override
+  String get errAiBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti AI.';
+
+  @override
+  String get sectionChart => 'Chart ti presio';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Awan ti pakasaritaan ti presio manipud iti agdama a taudan ti data.';
+
+  @override
+  String get sectionStatements => 'Dagiti financial statement (tinawen)';
+
+  @override
+  String get labelFiscalYear => 'Fiscal a tawen';
+
+  @override
+  String get labelRevenue => 'Sapul';
+
+  @override
+  String get labelNetIncome => 'Net a ganansia';
+
+  @override
+  String get labelTotalAssets => 'Dagup dagiti asset';
+
+  @override
+  String get labelTotalLiabilities => 'Dagup dagiti liability';
+
+  @override
+  String get labelEquity => 'Equity dagiti shareholder';
+
+  @override
+  String get labelOperatingCashFlow => 'Cash flow ti operasion';
+
+  @override
+  String get statementsUnavailable => 'Awan ti naireport a financial statement para iti daytoy a stock.';
+
+  @override
+  String get launchAtLogin => 'Agrugi iti panag-log in';
+
+  @override
+  String get hotkeyLabel => 'Global a shortcut';
+
+  @override
+  String get hotkeyRecordHint => 'I-klik ditoy, sa pindutem ti baro a kombinasion ti key';
+
+  @override
+  String get hotkeyReset => 'Isubli iti default';
+
+  @override
+  String get pasteImage => 'I-paste ti ladawan manipud iti clipboard';
+
+  @override
+  String get errClipboardNoImage => 'Awan ti ladawan iti clipboard.';
+
+  @override
+  String get favorites => 'Dagiti paborito';
+
+  @override
+  String get addToFavorites => 'Inayon kadagiti paborito';
+
+  @override
+  String get removeFromFavorites => 'Ikkaten kadagiti paborito';
+
+  @override
+  String get noFavorites => 'Awan pay ti paborito. I-tap ti bituen iti maysa a stock tapno mainayon.';
+
+  @override
+  String get displayCurrency => 'Currency a maipakita';
+
+  @override
+  String get displayCurrencyNone => 'Ti mismo a currency laeng ti stock';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ iti $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rate: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Dagiti update';
+
+  @override
+  String currentVersion(String version) {
+    return 'Bersion $version';
+  }
+
+  @override
+  String get autoUpdate => 'Automatiko nga i-install dagiti update';
+
+  @override
+  String get checkForUpdates => 'Kitaen no adda update';
+
+  @override
+  String get updateChecking => 'Kitkitaen no adda update…';
+
+  @override
+  String get updateUpToDate => 'Adda kan iti kabaruan a bersion.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Adda ti bersion $version.';
+  }
+
+  @override
+  String get updateDownloading => 'Ida-download ti update iti background…';
+
+  @override
+  String get updateDownloaded => 'Nakasagana ti update. I-restart tapno mai-install.';
+
+  @override
+  String get updateNow => 'I-update';
+
+  @override
+  String get restartNow => 'I-restart';
+
+  @override
+  String get updatesViaStore => 'Automatiko nga umay dagiti update babaen ti app store.';
+
+  @override
+  String get updateCheckFailed => 'Saan a makita no adda update.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Awan ti aktibo a plan';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count a panangsukimat iti tunggal bulan';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days nga aldaw a libre a trial nga addaan iti $count a panangsukimat';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nga aldaw ti nabati iti trial',
+      one: '1 nga aldaw ti nabati iti trial',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy ti panangsukimat.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining iti $total a panangsukimat ti nabati iti daytoy a periodo';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count a nayon a panangsukimat';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Mairenew inton $date';
+  }
+
+  @override
+  String get choosePlan => 'Agpili iti plan';
+
+  @override
+  String get currentPlan => 'Agdama a plan';
+
+  @override
+  String get subscribe => 'Ag-subscribe';
+
+  @override
+  String get perMonth => '/ bulan';
+
+  @override
+  String get extraPacksTitle => 'Masapulmo pay? Gumatang iti nayon a panangsukimat';
+
+  @override
+  String get extraPacksHint =>
+      'Saan nga ag-expire ti nayon a panangsukimat ket mausar kalpasan ti binulan nga alokasionmo.';
+
+  @override
+  String get buy => 'Gatangen';
+
+  @override
+  String get restorePurchases => 'Isubli dagiti nagatang';
+
+  @override
+  String get manageSubscription => 'Imaneho ti subscription';
+
+  @override
+  String get purchaseSuccess => 'Agyamanak! Aktibon ti gatangmo.';
+
+  @override
+  String get purchasePending => 'Agur-uray ti panaggatang…';
+
+  @override
+  String get purchaseFailed => 'Saan a nalpas ti panaggatang.';
+
+  @override
+  String get purchaseCanceled => 'Nakansela ti panaggatang.';
+
+  @override
+  String get billingUnavailable =>
+      'Saan pay a mabalin ti panaggatang iti daytoy a platform. Ag-subscribe iti teleponom wenno Mac; agandar ti planmo iti tunggal device.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Awanen ti nabati a panangsukimatmo iti daytoy a periodo. I-upgrade ti planmo wenno gumatang iti nayon a panangsukimat.';
+
+  @override
+  String get errTrialExpired => 'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy.';
+
+  @override
+  String get errNoPlan => 'Masapul ti aktibo a plan para iti panangsukimat ti AI.';
+
+  @override
+  String get viewPlans => 'Kitaen dagiti plan';
+
+  @override
+  String get usageTitle => 'Panangusar';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: simulated laeng dagiti panaggatang iti daytoy a platform.';
+
+  @override
+  String get mostPopular => 'Kalatakan';
+
+  @override
+  String get bestValue => 'Kasayaatan a pateg';
+
+  @override
+  String get planFeaturesCommon =>
+      'Ramanen ti tunggal plan ti panangbigbig iti retrato, live data, chart, paborito ken amin a 120 a pagsasao. Para iti panangsukimat ti AI ti alokasion.';
+
+  @override
+  String get searchLanguages => 'Agbiruk iti pagsasao…';
+
+  @override
+  String get noLanguageMatch => 'Awan ti maitutop a pagsasao.';
+
+  @override
+  String get aiSettings => 'Panangsukimat ti AI';
+
+  @override
+  String get aiLength => 'Kaatiddog';
+
+  @override
+  String get aiDepthBrief => 'Ababa';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Nauneg';
+
+  @override
+  String get aiDepthBriefDesc => 'Dagiti napateg, napardas.';
+
+  @override
+  String get aiDepthStandardDesc => 'Naan-anay a report nga addaan iti tunggal seksion.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Ad-adu a panagbiruk iti web, panangiyasping kadagiti kakompetensia ken nauneg-uneg a detalye.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Agarup $min–$max a sao';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'agusar iti $count a panangsukimat',
+      one: 'agusar iti 1 a panangsukimat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Tukad ti agbasbasa';
+
+  @override
+  String get aiReaderBeginner => 'Baro pay';
+
+  @override
+  String get aiReaderExperienced => 'Nasanay';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Nalaka a pagsasao; mailawlawag ti tunggal teknikal a termino.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Napuspuskol a teksto nga addaan iti standard a terminolohia ti pinansia.';
+
+  @override
+  String get aiCounterArgument => 'Kapigsaan a kontra-argumento';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Kanayon a maileppas ti pakabuklan iti kasayaatan nga argumento a maibusor iti bukodna a konklusion.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Agingga iti $count a panagbiruk iti web iti tunggal panangsukimat iti planmo',
+      one: 'Agingga iti 1 a panagbiruk iti web iti tunggal panangsukimat iti planmo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standard a kaatiddog segun iti plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. 2 a basbassit ti Ababa, 2 nga ad-adu ti Nauneg.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'agingga iti $count a panagbiruk iti web',
+      one: 'agingga iti 1 a panagbiruk iti web',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a panagbiruk iti web iti tunggal panangsukimat',
+      one: '1 a panagbiruk iti web iti tunggal panangsukimat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Masapul daytoy a kaatiddog ti $needed a panangsukimat, ngem $left laengen ti nabati. Agpili iti ababbaba a kaatiddog iti Dagiti Setting wenno agala iti ad-adu a panangsukimat.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Rikna ti merkado';
+
+  @override
+  String get moodVeryPessimistic => 'Pesimista unay';
+
+  @override
+  String get moodPessimistic => 'Pesimista';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Optimista unay';
+
+  @override
+  String get scenarioBull => 'Optimista a senario';
+
+  @override
+  String get scenarioBase => 'Gagangay a senario';
+
+  @override
+  String get scenarioBear => 'Pesimista a senario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Agdama a presio: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Napateg a tukad';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Angkla';
+
+  @override
+  String get upcomingEvents => 'Dumteng a pasamak';
+
+  @override
+  String get outlookChartNote => 'Pattapatta a sakup; dagiti probabilidad ket nalawa a pattapatta, saan a padto.';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get signIn => 'Ag-sign in';
+
+  @override
+  String get signOut => 'Ag-sign out';
+
+  @override
+  String get notSignedIn => 'Saan a naka-sign in';
+
+  @override
+  String get accountBenefit => 'Ag-sign in tapno agandar ti subscriptionmo iti amin a devicem.';
+
+  @override
+  String get accountSyncedNote => 'Agpada ti subscriptionmo ken nabati a panangsukimat iti tunggal device.';
+
+  @override
+  String get signInTitle => 'Ag-sign in iti StockLens';
+
+  @override
+  String get emailLabel => 'Adres ti email';
+
+  @override
+  String get continueWithEmail => 'Agtuloy babaen ti email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Nangipatulodkami iti 6-digit a code iti $email. Balido daytoy iti 10 a minuto.';
+  }
+
+  @override
+  String get codeLabel => 'Code ti panag-sign in';
+
+  @override
+  String get resendCode => 'Mangipatulod iti baro a code';
+
+  @override
+  String get useDifferentEmail => 'Agusar iti sabali nga email';
+
+  @override
+  String get errInvalidCode => 'Biddut wenno nag-expire ti code.';
+
+  @override
+  String get errInvalidEmail => 'Pangngaasim ta iserrekmo ti umiso nga email address.';
+
+  @override
+  String get errSignInFailed => 'Saan a nakapag-sign in. Kitaem ti koneksionmo ket padasem manen.';
+
+  @override
+  String get checkoutWaiting => 'Leppasem ti panagbayad iti browsermo. Automatiko nga ag-update ti app no nalpas.';
+
+  @override
+  String get paymentViaStripe =>
+      'Natalged a panagbayad iti browsermo babaen ti Stripe. Mabalin nga ikansela iti aniaman nga oras.';
+
+  @override
+  String get paymentViaStore =>
+      'Masingir babaen ti App Store wenno Google Play accountmo. Mabalin nga ikansela iti aniaman nga oras iti setting ti store.';
+
+  @override
+  String get keySpace => 'Space';
+
+  @override
+  String get doubleOptionTitle => 'Mamindua a pindutem ti Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Ti napardas a mamindua a panangpindut iti Option key ket umaw met iti StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Tapno agandar met daytoy kadagiti sabali nga app, palubosam ti StockLens iti System Settings → Privacy & Security → Input Monitoring, sa lukatam manen ti app.';
+
+  @override
+  String get openSystemSettings => 'Lukatan ti System Settings';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Pindutem ti $shortcut wenno mamindua a pindutem ti Option uray sadino tapno ayaban ti StockLens.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Kangatuan a posibilidad';
+
+  @override
+  String get longTermToday => 'Ita nga aldaw';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years a tawen', one: '1 a tawen');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range iti tawen';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'nalabit $price';
+  }
+
+  @override
+  String get confidenceLow => 'Nababa a kinasigurado';
+
+  @override
+  String get confidenceMedium => 'Katengngaan a kinasigurado';
+
+  @override
+  String get confidenceHigh => 'Nangato a kinasigurado';
+
+  @override
+  String get longTermNote =>
+      'Dagiti atiddog a sakup ket naibatay kadagiti naisao a pattapatta ken lumawlawa bayat ti panaglabas ti tiempo. Saan a karaman ti dibidendo kadagiti presio. Nalawa a pattapatta, saan a padto.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Awan pay ti linaonna. Lukatan ti maysa a stock ket i-tap ti “Inayon iti portfolio” tapno masurotmo dagiti kukuam.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Naidulin laeng iti daytoy a device. Mai-convert dagiti dagup babaen ti reference rate ti ECB; mabalin a naladaw dagiti presio.';
+
+  @override
+  String get addToPortfolio => 'Inayon iti portfolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Inayon ti $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Bilang dagiti share';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Presio iti tunggal share ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Petsa ti panaggatang';
+
+  @override
+  String get portfolioAdd => 'Inayon';
+
+  @override
+  String get portfolioInvalidNumber => 'Iserrek ti numero a nangatngato ngem zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Nainayon ti $symbol iti portfoliom.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Dagup a pateg';
+
+  @override
+  String get portfolioToday => 'Ita nga aldaw';
+
+  @override
+  String get portfolioGainLoss => 'Ganansia/pukaw';
+
+  @override
+  String get portfolioInvested => 'Naipuonan';
+
+  @override
+  String get portfolioAllocation => 'Panangbingay';
+
+  @override
+  String get portfolioPositions => 'Dagiti posision';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'avg. a gastos $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ti posisionmo';
+
+  @override
+  String get portfolioPurchases => 'Dagiti gatang';
+
+  @override
+  String get portfolioRemove => 'Ikkaten';
+
+  @override
+  String get portfolioExcluded =>
+      'Saan a mairaman kadagiti dagup dagiti posision nga awan ti presio wenno exchange rate.';
+
+  @override
+  String get priceAlerts => 'Dagiti alerto ti presio';
+
+  @override
+  String get setPriceAlert => 'Mangisaad iti alerto ti presio';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alerto ti presio · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Ngumato ngem';
+
+  @override
+  String get alertKindBelow => 'Bumaba ngem';
+
+  @override
+  String get alertKindMove => 'Dakkel ti garaw iti maysa nga aldaw';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Presio ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Inaldaw a garaw (%)';
+
+  @override
+  String get alertAlreadyMet => 'Nalabsan ti presio daytoy a tukad.';
+
+  @override
+  String get alertSave => 'Isaad ti alerto';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Naisaad ti alerto para iti $symbol.';
+  }
+
+  @override
+  String get alertsEmpty =>
+      'Awan pay ti alerto ti presio. Lukatan ti maysa a stock ket i-tap ti kampana tapno mangisaad.';
+
+  @override
+  String get alertsNote =>
+      'Kitaen dagiti alerto iti tunggal 5 a minuto bayat nga agandar ti StockLens. Iti computer, agtultuloy nga agandar daytoy iti menu bar wenno system tray; iti telepono, ita ket dumteng laeng dagiti alerto bayat a nakalukat ti app.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Nangatngato ngem $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Nababbaba ngem $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Inaldaw a garaw ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Na-trigger idi $date iti $price';
+  }
+
+  @override
+  String get alertRearm => 'I-activate manen';
+
+  @override
+  String get alertDelete => 'Punasen';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return 'Ngimmato ti $symbol ngem $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return 'Bimmaba ti $symbol ngem $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return 'Gimmaraw ti $symbol iti $percent ita nga aldaw';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Agdama a presio: $price';
+  }
+
+  @override
+  String get alertOpen => 'Lukatan';
+
+  @override
+  String get keepInTrayTitle => 'Agtultuloy nga agandar uray nakarikep ti window';
+
+  @override
+  String get keepInTraySubtitle =>
+      'Agtalinaed ti StockLens iti menu bar wenno system tray, isu nga agandar latta ti shortcut ken dagiti alerto ti presio.';
+
+  @override
+  String get termsOfUse => 'Dagiti Termino ti Panangusar';
+
+  @override
+  String get privacyPolicy => 'Annuroten iti Privacy';
+
+  @override
+  String get subscriptionLegal =>
+      'Automatiko a mairenew ti subscription iti tunggal bulan agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy.';
+
+  @override
+  String get deleteAccount => 'Punasen ti account';
+
+  @override
+  String get deleteAccountTitle => 'Punasen ti accountmo?';
+
+  @override
+  String get deleteAccountBody =>
+      'Permanente a mapunas ti accountmo ken amin a naidulin iti servermi (email, alokasion, panangusar), ket mapukaw dagiti saan a nausar a panangsukimat. Dagus a makansela ti subscription a binayadan iti browser; ti subscription iti App Store wenno Google Play ket masapul nga ikansela iti setting ti store.';
+
+  @override
+  String get deleteLocalData =>
+      'Punasen met ti data iti daytoy a device (portfolio, alerto, paborito, pakasaritaan, naidulin a panangsukimat)';
+
+  @override
+  String get deleteAccountConfirm => 'Punasen a permanente';
+
+  @override
+  String get accountDeleted => 'Napunasen ti accountmo.';
+
+  @override
+  String get errDeleteAccount => 'Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen.';
+}
