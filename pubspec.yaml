@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.17+20
+version: 0.2.18+21
 
 environment:
   sdk: ^3.13.5

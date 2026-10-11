@@ -8,12 +8,14 @@
 | Normál | `whatstock.sub.normal` | 8 | |
 | Pro | `whatstock.sub.pro` | 18 | „Legnépszerűbb” jelölés |
 | Max | `whatstock.sub.max` | 40 | |
-| Ultra | `whatstock.sub.ultra` | 70 | |
+| Ultra | `whatstock.sub.ultra` | 70 | havi nézetben „Legjobb ár/érték” (elemzésenként a legolcsóbb havi csomag) |
 | Pro, éves | `whatstock.sub.pro.year` | 18 / hó | 10 havi díj egy évre („2 hónap ingyen”) |
-| Max, éves | `whatstock.sub.max.year` | 40 / hó | 10 havi díj egy évre; „Legjobb ár/érték” jelölés |
+| Max, éves | `whatstock.sub.max.year` | 40 / hó | 10 havi díj egy évre; éves nézetben „Legjobb ár/érték”, és az összes csomag közül ez a legolcsóbb elemzésenként |
 
 Az éves előfizetés keretét a szerver ugyanúgy havonta újítja. A csomagválasztó tetején Havi / Éves
-kapcsoló van; az éves nézetben a Pro és a Max látszik, az ár alatt a havi megfelelővel.
+kapcsoló van; az éves nézetben a Pro és a Max látszik, az ár alatt a havi megfelelővel. A „Legjobb
+ár/érték” jelölést az app a bolt valódi, helyi áraiból számolja: az a csomag kapja, amelyik az adott
+nézetben elemzésenként a legolcsóbb (havi nézetben most az Ultra, éves nézetben a Max).
 
 Extra elemzés-csomagok (fogyó termékek, nem járnak le, a havi keret után fogynak):
 `whatstock.pack.5` (+5), `whatstock.pack.20` (+20), `whatstock.pack.50` (+50).
@@ -28,21 +30,23 @@ helyi árat az ECB-árfolyammal, a pénznem szokása szerint kerekítve (HUF: �
 | Termék | USD | kb. HUF (360 Ft/USD) | EUR | Költség teljes kihasználásnál (Opus 5.5, ≈ 0,60 USD/elemzés) |
 |---|---|---|---|---|
 | Normál (8) | 7,99 | 2 890 | 7,99 | ≈ 4,80 USD |
-| Pro (18) | 15,99 | 5 790 | 14,99 | ≈ 10,80 USD |
-| Max (40) | 34,99 | 12 590 | 32,99 | ≈ 24 USD |
-| Pro éves (18/hó) | 159,99 | 57 590 | 147,99 | ≈ 130 USD/év |
-| Max éves (40/hó) | 349,99 | 125 990 | 321,99 | ≈ 288 USD/év |
+| Pro (18) | 18,99 | 6 890 | 17,99 | ≈ 10,80 USD |
+| Max (40) | 41,99 | 15 190 | 38,99 | ≈ 24 USD |
+| Pro éves (18/hó) | 189,99 | 68 390 | 175,99 | ≈ 130 USD/év |
+| Max éves (40/hó) | 419,99 | 151 190 | 388,99 | ≈ 288 USD/év |
 | Ultra (70) | 64,99 | 23 390 | 59,99 | ≈ 42 USD |
 | +5 | 4,99 | 1 790 | 4,99 | ≈ 3 USD |
 | +20 | 17,99 | 6 490 | 16,99 | ≈ 12 USD |
 | +50 | 39,99 | 14 390 | 36,99 | ≈ 30 USD |
 
-**Ár/érték (2026-10-11):** elemzésenként a Max a legolcsóbb (34,99 / 40 = 0,875 USD; Pro
-15,99 / 18 = 0,888; éves: Max 0,729, Pro 0,741), ezért a Max kapja a „Legjobb ár/érték”
-jelölést. A Max havi ára 39,99-ről 34,99 USD-re csökkent; teljes kihasználásnál így is nyereséges
-(+0,58 USD). Az éves Pro és Max teljes kihasználásnál havi −1,43 / −3,51 USD, átlagos (40 %)
-használatnál +5,05 / +10,89 USD (≈ 54 %); cserébe az éves előfizetők jóval tovább maradnak (egy év
-után 20–40 %, a havi előfizetéseknél 6–14 %), és az egész évet előre fizetik.
+**Ár/érték (2026-10-11, második kör):** az éves díj havi része a korábbi havi ár (Pro 15,83, Max
+35,00 USD), a havi díj ennél kb. 20 %-kal több (Pro 15,99 → 18,99, Max 34,99 → 41,99 USD), így az
+éves pontosan 10 havi díj, „2 hónap ingyen”. Elemzésenként (USD): Normál 0,999, Pro 1,055, Max 1,050,
+Ultra 0,928; éves Pro 0,880, éves **Max 0,875 – ez a legolcsóbb az összes csomag közül**. Az éves
+csomagok így teljes kihasználásnál sem veszteségesek (Pro +0,32, Max +0,59 USD/hó; az előző,
+159,99 / 349,99 USD-s éves áraknál −1,43 / −3,51 volt). Az éves előfizetők jóval tovább maradnak
+(egy év után 20–40 %, a havi előfizetéseknél 6–14 %), és az egész évet előre fizetik. A drágább
+havi díj kicsit ronthatja a havi konverziót; ezt az első hónapok adatai mutatják meg.
 
 **A-terv (2026-10-11):** minden csomag Opus 5.5-tel fut (a szerver rögzíti a modellt), az árak
 maradnak, a Max 80 helyett 40, az Ultra 150 helyett 70 elemzést ad. Így a Normál, a Max és az
@@ -156,7 +160,7 @@ megléte után készül el. Az eredeti terv, viszonyításként:
 
 ## Boltok beállítása
 
-Éves termékek: `whatstock.sub.pro.year` (159,99 USD) és `whatstock.sub.max.year` (349,99 USD),
+Éves termékek: `whatstock.sub.pro.year` (189,99 USD) és `whatstock.sub.max.year` (419,99 USD),
 ugyanabban az előfizetési csoportban, mint a havi Pro és Max (így a felhasználó válthat közöttük).
 A Stripe-on éves ismétlődésű árat kell felvenni, és a `STRIPE_PRICES`-ba betenni.
 
@@ -200,18 +204,22 @@ Programmal, 1 millió USD éves bevétel alatt; Stripe ≈ 3,5 % + 0,30 USD):
 | Csomag (A-terv) | Ár | Nettó (bolt) | Nettó (Stripe) | Költség teljes kihasználásnál (Opus) |
 |---|---|---|---|---|
 | Normál (8) | 7,99 | 5,61 | 6,07 | 4,80 |
-| Pro (18) | 15,99 | 11,23 | 12,45 | 10,80 |
-| Max (40) | 34,99 | 24,58 | 27,61 | 24,00 |
+| Pro (18) | 18,99 | 13,34 | 14,84 | 10,80 |
+| Max (40) | 41,99 | 29,50 | 33,19 | 24,00 |
 | Ultra (70) | 64,99 | 45,65 | 51,53 | 42,00 |
+| Pro éves (havi része) | 15,83 | 11,12 | 12,60 | 10,80 |
+| Max éves (havi része) | 35,00 | 24,59 | 27,89 | 24,00 |
 
 **Haszon havonta és előfizetőnként, bolti eladásnál, Opus 5.5** (USD):
 
 | Csomag | Teljes keret | 40 % kihasználás |
 |---|---|---|
 | Normál (8) | +0,81 | +3,69 |
-| Pro (18) | +0,43 | +6,91 |
-| Max (40) | +0,58 | +14,98 |
+| Pro (18) | +2,54 | +9,02 |
+| Max (40) | +5,50 | +19,90 |
 | Ultra (70) | +3,65 | +28,85 |
+| Pro éves | +0,32 | +6,80 |
+| Max éves | +0,59 | +14,99 |
 
 Az előfizetők jellemzően a keret 30–50 %-át használják el. Az eredeti keretekkel (Max 80, Ultra 150)
 teljes kihasználásnál a Max −19,91, az Ultra −44,35 USD lett volna; ezért váltottunk az A-tervre. Extra csomagok (ezeket mindig elhasználják), Opus: +5 → +0,51, +20 → +0,64, +50 → −1,91
@@ -225,10 +233,12 @@ beállításokban és a részvény oldalán is kiírja, hogy előfizetéssel a l
 kutatás és hosszabb elemzés jár.
 
 **Haszon a próbák után** (vegyes mix: 40 % Normál, 40 % Pro, 15 % Max, 5 % Ultra; 70 % bolt,
-30 % Stripe; 40 %-os kihasználás): nettó bevétel 13,10 USD/hó, API-költség 4,78, haszon 8,32
-(64 %); a próbaköltség 6 hónapos átlagos előfizetésnél −2,20/hó → **6,16 USD/hó (47 %)**; a
-jellemzőbb ≈ 4,3 hónapos élettartammal 5,30 USD/hó. (A Max 34,99 USD-s ára előtt 6,80 volt; a
-korábbi Opus-próbával és Pro 20-szal 2,90.)
+30 % Stripe; 40 %-os kihasználás), csak havi előfizetéssel: nettó bevétel 14,78 USD/hó, API-költség
+4,78, haszon 10,00 (68 %); a próbaköltség 6 hónapos átlagos előfizetésnél −2,20/hó → **7,80 USD/hó
+(53 %)**; a jellemzőbb ≈ 4,3 hónapos élettartammal 6,98 USD/hó. Ha a Pro és a Max előfizetők harmada
+évest választ: 7,25 USD/hó (cserébe az éves előfizetők az egész évet előre fizetik, és tovább
+maradnak). (Az előző árakkal – Max 34,99, éves 159,99 / 349,99 – 6,16 volt; a korábbi
+Opus-próbával és Pro 20-szal 2,90.)
 
 Fix költségek: szerver (5–20 USD/hó), Apple Developer Program (99 USD/év), Google Play (25 USD
 egyszer), domain, e-mail (Resend: havi 3000 levélig ingyenes), és a piaci adat: a Finnhub ingyenes

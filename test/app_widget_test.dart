@@ -17,7 +17,6 @@ import 'package:reszveny/features/analysis/stock_analyst.dart';
 import 'package:reszveny/features/billing/demo_billing_service.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
-import 'package:reszveny/features/billing/pricing.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -186,9 +185,7 @@ void main() {
     expect(find.text('Thanks! Your purchase is active.'), findsOneWidget);
   });
 
-  testWidgets('yearly billing: Pro and Max for 10 months, Max is the best value, purchase activates Max', (
-    tester,
-  ) async {
+  testWidgets('yearly billing: Pro and Max for 10 months, the cheapest per analysis is the best value', (tester) async {
     tester.view.physicalSize = const Size(1200, 1400);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
@@ -199,20 +196,26 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('View plans').first);
     await tester.pumpAndSettle();
-    // Havi nézet: a Max a legjobb ár/érték, elemzésenként olcsóbb a Pro-nál.
-    expect(find.text('Best value'), findsOneWidget);
-    expect(Pricing.baseUsd['whatstock.sub.max']! / 40, lessThan(Pricing.baseUsd['whatstock.sub.pro']! / 18));
-    expect(
-      Pricing.baseUsd['whatstock.sub.max.year']! / 480,
-      lessThan(Pricing.baseUsd['whatstock.sub.pro.year']! / 216),
+    Finder card(String name) => find.ancestor(
+      of: find.text(name),
+      matching: find.byWidgetPredicate((w) => w.runtimeType.toString() == '_PlanCard'),
     );
+    // Havi nézet: elemzésenként az Ultra a legolcsóbb, a Pro a legnépszerűbb.
+    expect(find.text('Best value'), findsOneWidget);
+    expect(find.descendant(of: card('Ultra'), matching: find.text('Best value')), findsOneWidget);
+    expect(find.descendant(of: card('Pro'), matching: find.text('Most popular')), findsOneWidget);
+    expect(find.textContaining('\$18.99', findRichText: true), findsOneWidget);
+    expect(find.textContaining('\$41.99', findRichText: true), findsOneWidget);
     await tester.tap(find.textContaining('Yearly', findRichText: true));
     await tester.pumpAndSettle();
     expect(find.text('Normal'), findsNothing);
     expect(find.text('Ultra'), findsNothing);
-    expect(find.textContaining('\$159.99', findRichText: true), findsOneWidget);
-    expect(find.textContaining('\$349.99', findRichText: true), findsOneWidget);
-    expect(find.text('≈ \$29.17 per month'), findsOneWidget);
+    // Éves nézet: havonta a korábbi havi ár, és a Max a legjobb ár/érték.
+    expect(find.textContaining('\$189.99', findRichText: true), findsOneWidget);
+    expect(find.textContaining('\$419.99', findRichText: true), findsOneWidget);
+    expect(find.text('≈ \$15.83 per month'), findsOneWidget);
+    expect(find.text('≈ \$35.00 per month'), findsOneWidget);
+    expect(find.descendant(of: card('Max'), matching: find.text('Best value')), findsOneWidget);
     await tester.tap(find.widgetWithText(FilledButton, 'Subscribe').last);
     await tester.pumpAndSettle();
     expect(s.entitlements.plan?.tier, PlanTier.max);

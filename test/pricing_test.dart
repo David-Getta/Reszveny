@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:reszveny/features/billing/billing_service.dart';
 import 'package:reszveny/features/billing/demo_billing_service.dart';
+import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/billing/pricing.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:http/http.dart' as http;
@@ -43,5 +44,21 @@ void main() {
     final p = (await usd.products()).first;
     expect(p.currency, 'USD');
     expect(p.price, r'$7.99');
+  });
+
+  test('price ladder: yearly is 10 monthly fees, the yearly Max is the cheapest per analysis', () {
+    final b = Pricing.baseUsd;
+    final perAnalysis = <String, double>{};
+    for (final spec in PlanSpec.paid) {
+      perAnalysis[spec.productId] = b[spec.productId]! / spec.analysesPerPeriod;
+      if (spec.yearlyProductId case final y?) {
+        // „2 hónap ingyen”: az éves díj 10 havi díj (centes kerekítéssel).
+        expect(b[y]!, closeTo(b[spec.productId]! * 10, 0.10), reason: y);
+        perAnalysis[y] = b[y]! / (spec.analysesPerPeriod * 12);
+      }
+    }
+    final cheapest = perAnalysis.entries.reduce((a, c) => c.value < a.value ? c : a).key;
+    expect(cheapest, 'whatstock.sub.max.year');
+    expect(perAnalysis['whatstock.sub.max']!, lessThan(perAnalysis['whatstock.sub.pro']!));
   });
 }

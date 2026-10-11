@@ -108,6 +108,25 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
     PlanTier.ultra => l10n.planMax2,
   };
 
+  /// „Legjobb ár/érték”: a látható csomagok közül az, amelyik elemzésenként a
+  /// legolcsóbb, a bolt valódi (helyi) áraiból számolva. Egyenlőségnél a nagyobb
+  /// csomag nyer. Havi nézetben ez most az Ultra, éves nézetben a Max.
+  static PlanTier? _bestValueTier(List<PlanSpec> specs, List<StoreProduct> subs, {required bool yearly}) {
+    PlanTier? best;
+    double? bestUnit;
+    for (final spec in specs) {
+      final id = yearly ? spec.yearlyProductId : spec.productId;
+      final prod = subs.where((x) => x.id == id).firstOrNull;
+      if (prod == null || prod.rawPrice <= 0) continue;
+      final unit = prod.rawPrice / (spec.analysesPerPeriod * (yearly ? 12 : 1));
+      if (bestUnit == null || unit <= bestUnit) {
+        bestUnit = unit;
+        best = spec.tier;
+      }
+    }
+    return best;
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -131,6 +150,7 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
           final hasYearly = subs.any((x) => x.isYearly);
           final yearly = _yearly && hasYearly;
           final specs = yearly ? PlanSpec.withYearly : PlanSpec.paid;
+          final best = _bestValueTier(specs, subs, yearly: yearly);
 
           return Center(
             child: ConstrainedBox(
@@ -203,13 +223,9 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                               yearly: yearly,
                               // Éves nézetben a havi előfizetésről is lehet évesre váltani.
                               current: !yearly && ent.plan?.tier == spec.tier && !ent.isTrialExpired,
-                              // A Max elemzésenként a legolcsóbb (havi és éves árral is), a Pro a
-                              // legnépszerűbb.
-                              badge: switch (spec.tier) {
-                                PlanTier.pro => l10n.mostPopular,
-                                PlanTier.max => l10n.bestValue,
-                                _ => null,
-                              },
+                              badge: spec.tier == best
+                                  ? l10n.bestValue
+                                  : (spec.tier == PlanTier.pro ? l10n.mostPopular : null),
                               busy: bc.busyProductId == id,
                               onBuy: (prod) => bc.buy(prod),
                             ),
