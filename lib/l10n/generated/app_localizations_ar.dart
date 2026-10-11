@@ -957,4 +957,64 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات.';
+
+  @override
+  String get accountTitle => 'الحساب';
+
+  @override
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get signOut => 'تسجيل الخروج';
+
+  @override
+  String get notSignedIn => 'لم تسجّل الدخول';
+
+  @override
+  String get accountBenefit => 'سجّل الدخول ليعمل اشتراكك على جميع أجهزتك.';
+
+  @override
+  String get accountSyncedNote => 'اشتراكك والتحليلات المتبقية متطابقة على كل جهاز.';
+
+  @override
+  String get signInTitle => 'تسجيل الدخول إلى StockLens';
+
+  @override
+  String get emailLabel => 'البريد الإلكتروني';
+
+  @override
+  String get continueWithEmail => 'المتابعة بالبريد الإلكتروني';
+
+  @override
+  String codeSentTo(String email) {
+    return 'أرسلنا رمزًا مكوّنًا من 6 أرقام إلى $email. وهو صالح لمدة 10 دقائق.';
+  }
+
+  @override
+  String get codeLabel => 'رمز تسجيل الدخول';
+
+  @override
+  String get resendCode => 'إرسال رمز جديد';
+
+  @override
+  String get useDifferentEmail => 'استخدام بريد إلكتروني آخر';
+
+  @override
+  String get errInvalidCode => 'الرمز غير صحيح أو انتهت صلاحيته.';
+
+  @override
+  String get errInvalidEmail => 'يرجى إدخال عنوان بريد إلكتروني صالح.';
+
+  @override
+  String get errSignInFailed => 'تعذّر تسجيل الدخول. تحقق من اتصالك وحاول مرة أخرى.';
+
+  @override
+  String get checkoutWaiting => 'أكمل الدفع في المتصفح. سيتم تحديث التطبيق تلقائيًا عند الانتهاء.';
+
+  @override
+  String get paymentViaStripe => 'دفع آمن في المتصفح عبر Stripe. يمكنك الإلغاء في أي وقت.';
+
+  @override
+  String get paymentViaStore =>
+      'تتم الفوترة عبر حسابك في App Store أو Google Play. يمكنك الإلغاء في أي وقت من إعدادات المتجر.';
 }

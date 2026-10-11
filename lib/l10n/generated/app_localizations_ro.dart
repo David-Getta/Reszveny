@@ -959,4 +959,64 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Intervale orientative; probabilitățile sunt estimări aproximative, nu predicții.';
+
+  @override
+  String get accountTitle => 'Cont';
+
+  @override
+  String get signIn => 'Conectează-te';
+
+  @override
+  String get signOut => 'Deconectează-te';
+
+  @override
+  String get notSignedIn => 'Neconectat';
+
+  @override
+  String get accountBenefit => 'Conectează-te ca abonamentul tău să funcționeze pe toate dispozitivele tale.';
+
+  @override
+  String get accountSyncedNote => 'Abonamentul tău și analizele rămase sunt aceleași pe fiecare dispozitiv.';
+
+  @override
+  String get signInTitle => 'Conectează-te la StockLens';
+
+  @override
+  String get emailLabel => 'Adresă de e-mail';
+
+  @override
+  String get continueWithEmail => 'Continuă cu e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Am trimis un cod din 6 cifre la $email. Este valabil 10 minute.';
+  }
+
+  @override
+  String get codeLabel => 'Cod de conectare';
+
+  @override
+  String get resendCode => 'Trimite un cod nou';
+
+  @override
+  String get useDifferentEmail => 'Folosește alt e-mail';
+
+  @override
+  String get errInvalidCode => 'Codul este greșit sau a expirat.';
+
+  @override
+  String get errInvalidEmail => 'Introdu o adresă de e-mail validă.';
+
+  @override
+  String get errSignInFailed => 'Conectarea a eșuat. Verifică-ți conexiunea și încearcă din nou.';
+
+  @override
+  String get checkoutWaiting => 'Finalizează plata în browser. Aplicația se actualizează automat când plata este gata.';
+
+  @override
+  String get paymentViaStripe => 'Plată securizată în browser prin Stripe. Poți anula oricând.';
+
+  @override
+  String get paymentViaStore =>
+      'Facturat prin contul tău App Store sau Google Play. Poți anula oricând din setările magazinului.';
 }

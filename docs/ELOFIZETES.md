@@ -54,6 +54,29 @@ kedvencek és a 44 nyelv minden csomagban korlátlan.
 - `ReportStore.generate` elemzés előtt ellenőrzi a keretet, siker után elhasznál egyet;
   kimerült keretnél a kártya a csomagválasztóra visz.
 
+## Fizetés, mint a Claude-nál
+
+Az előfizetés a **fiókhoz** tartozik, nem az eszközhöz: belépés e-mail címmel és egy 6 jegyű,
+10 percig érvényes kóddal (Beállítások → Fiók). Belépés után a csomag és a hátralévő elemzések
+minden eszközön ugyanazok; az eszközön korábban gyűlt extra elemzések és fizetős csomag a fiókba
+kerülnek.
+
+| Platform | Fizetés | Kezelés (csomagváltás, lemondás) |
+|---|---|---|
+| macOS, Windows, web | Böngészőben, Stripe Checkouton (a Stripe a helyi pénznemet kínálja) | Stripe ügyfélportál („Előfizetés kezelése”) |
+| iOS, iPadOS | App Store (a bolt szabálya szerint) | App Store előfizetések |
+| Android | Google Play | Play előfizetések |
+
+Böngészős fizetésnél az app megnyitja a Checkout oldalt, a szerver a Stripe webhookjából írja
+jóvá a csomagot, az app pedig figyeli a fiókot (és visszatéréskor azonnal frissít). Ha a platform
+boltjában még nincs felvett termék, vagy nincs backend, a demó bolt fut.
+
+Szerver-beállítás: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
+(`stocklens.sub.pro=price_…,…`), `PUBLIC_URL`; a belépőkódhoz `RESEND_API_KEY` és `MAIL_FROM`
+(nélkülük a kód a szerver naplójába kerül). A Stripe-ban a webhook eseményei:
+`checkout.session.completed`, `invoice.paid`, `customer.subscription.updated`,
+`customer.subscription.deleted`.
+
 ## Elemzés hossza és webkeresések
 
 A beállításokban választható hossz határozza meg, mennyi keretet fogyaszt egy elemzés:

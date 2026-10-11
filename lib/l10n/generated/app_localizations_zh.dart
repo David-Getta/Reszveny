@@ -897,6 +897,65 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get outlookChartNote => '区间仅供参考；概率为粗略判断，并非预测。';
+
+  @override
+  String get accountTitle => '账户';
+
+  @override
+  String get signIn => '登录';
+
+  @override
+  String get signOut => '退出登录';
+
+  @override
+  String get notSignedIn => '未登录';
+
+  @override
+  String get accountBenefit => '登录后，你的订阅可在所有设备上使用。';
+
+  @override
+  String get accountSyncedNote => '你的订阅和剩余分析次数在每台设备上都相同。';
+
+  @override
+  String get signInTitle => '登录 StockLens';
+
+  @override
+  String get emailLabel => '邮箱地址';
+
+  @override
+  String get continueWithEmail => '使用邮箱继续';
+
+  @override
+  String codeSentTo(String email) {
+    return '我们已向 $email 发送 6 位验证码，10 分钟内有效。';
+  }
+
+  @override
+  String get codeLabel => '登录验证码';
+
+  @override
+  String get resendCode => '重新发送验证码';
+
+  @override
+  String get useDifferentEmail => '使用其他邮箱';
+
+  @override
+  String get errInvalidCode => '验证码错误或已过期。';
+
+  @override
+  String get errInvalidEmail => '请输入有效的邮箱地址。';
+
+  @override
+  String get errSignInFailed => '登录失败。请检查网络连接后重试。';
+
+  @override
+  String get checkoutWaiting => '请在浏览器中完成付款。完成后应用会自动更新。';
+
+  @override
+  String get paymentViaStripe => '通过 Stripe 在浏览器中安全付款。可随时取消。';
+
+  @override
+  String get paymentViaStore => '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1791,4 +1850,63 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get outlookChartNote => '區間僅供參考；概率只屬粗略判斷，並非預測。';
+
+  @override
+  String get accountTitle => '帳戶';
+
+  @override
+  String get signIn => '登入';
+
+  @override
+  String get signOut => '登出';
+
+  @override
+  String get notSignedIn => '未登入';
+
+  @override
+  String get accountBenefit => '登入後，你的訂閱可在所有裝置使用。';
+
+  @override
+  String get accountSyncedNote => '你的訂閱及剩餘分析次數在每部裝置上都相同。';
+
+  @override
+  String get signInTitle => '登入 StockLens';
+
+  @override
+  String get emailLabel => '電郵地址';
+
+  @override
+  String get continueWithEmail => '以電郵繼續';
+
+  @override
+  String codeSentTo(String email) {
+    return '我們已將 6 位數字驗證碼傳送至 $email，10 分鐘內有效。';
+  }
+
+  @override
+  String get codeLabel => '登入驗證碼';
+
+  @override
+  String get resendCode => '重新傳送驗證碼';
+
+  @override
+  String get useDifferentEmail => '使用其他電郵';
+
+  @override
+  String get errInvalidCode => '驗證碼錯誤或已過期。';
+
+  @override
+  String get errInvalidEmail => '請輸入有效的電郵地址。';
+
+  @override
+  String get errSignInFailed => '登入失敗。請檢查網絡連線後再試。';
+
+  @override
+  String get checkoutWaiting => '請在瀏覽器中完成付款。完成後，應用程式會自動更新。';
+
+  @override
+  String get paymentViaStripe => '透過 Stripe 在瀏覽器中安全付款。可隨時取消。';
+
+  @override
+  String get paymentViaStore => '經你的 App Store 或 Google Play 帳戶收費。可隨時在商店設定中取消。';
 }

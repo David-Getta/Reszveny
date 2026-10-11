@@ -937,4 +937,65 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get outlookChartNote =>
       'Fourchettes indicatives ; les probabilités sont des estimations approximatives, pas des prévisions.';
+
+  @override
+  String get accountTitle => 'Compte';
+
+  @override
+  String get signIn => 'Se connecter';
+
+  @override
+  String get signOut => 'Se déconnecter';
+
+  @override
+  String get notSignedIn => 'Non connecté';
+
+  @override
+  String get accountBenefit => 'Connectez-vous pour que votre abonnement fonctionne sur tous vos appareils.';
+
+  @override
+  String get accountSyncedNote => 'Votre abonnement et vos analyses restantes sont les mêmes sur tous vos appareils.';
+
+  @override
+  String get signInTitle => 'Se connecter à StockLens';
+
+  @override
+  String get emailLabel => 'Adresse e-mail';
+
+  @override
+  String get continueWithEmail => 'Continuer avec l’e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Nous avons envoyé un code à 6 chiffres à $email. Il est valable 10 minutes.';
+  }
+
+  @override
+  String get codeLabel => 'Code de connexion';
+
+  @override
+  String get resendCode => 'Renvoyer un code';
+
+  @override
+  String get useDifferentEmail => 'Utiliser une autre adresse e-mail';
+
+  @override
+  String get errInvalidCode => 'Le code est incorrect ou a expiré.';
+
+  @override
+  String get errInvalidEmail => 'Veuillez saisir une adresse e-mail valide.';
+
+  @override
+  String get errSignInFailed => 'La connexion a échoué. Vérifiez votre connexion Internet et réessayez.';
+
+  @override
+  String get checkoutWaiting =>
+      'Finalisez le paiement dans votre navigateur. L’app se mettra à jour automatiquement une fois le paiement effectué.';
+
+  @override
+  String get paymentViaStripe => 'Paiement sécurisé dans votre navigateur via Stripe. Résiliable à tout moment.';
+
+  @override
+  String get paymentViaStore =>
+      'Facturé via votre compte App Store ou Google Play. Résiliable à tout moment dans les réglages de votre store.';
 }

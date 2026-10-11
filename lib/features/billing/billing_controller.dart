@@ -82,7 +82,12 @@ class BillingController extends ChangeNotifier {
 
   Future<void> _onEvent(BillingEvent e) async {
     _lastEvent = e;
-    if (e.status == BillingStatus.purchased || e.status == BillingStatus.restored) {
+    final granted = e.entitlements;
+    if (granted != null) {
+      // A szerver már jóváírta (böngészős fizetés): csak átvesszük.
+      await entitlements.replace(granted);
+      _busyProductId = null;
+    } else if (e.status == BillingStatus.purchased || e.status == BillingStatus.restored) {
       final v = verifier;
       if (v != null) {
         try {
@@ -104,6 +109,9 @@ class BillingController extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  /// Belépés után újrapróbálja a megszakadt vásárlást.
+  Future<void> retry(StoreProduct p) => buy(p);
 
   void clearLastEvent() {
     _lastEvent = null;

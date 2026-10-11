@@ -933,4 +933,64 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'আনুমানিক পরিসর; সম্ভাবনাগুলি মোটামুটি অনুমান, পূর্বাভাস নয়।';
+
+  @override
+  String get accountTitle => 'অ্যাকাউন্ট';
+
+  @override
+  String get signIn => 'সাইন ইন';
+
+  @override
+  String get signOut => 'সাইন আউট';
+
+  @override
+  String get notSignedIn => 'সাইন ইন করা নেই';
+
+  @override
+  String get accountBenefit => 'সাইন ইন করুন, যাতে আপনার সাবস্ক্রিপশন আপনার সব ডিভাইসে কাজ করে।';
+
+  @override
+  String get accountSyncedNote => 'আপনার সাবস্ক্রিপশন ও বাকি বিশ্লেষণ প্রতিটি ডিভাইসে একই থাকে।';
+
+  @override
+  String get signInTitle => 'StockLens-এ সাইন ইন করুন';
+
+  @override
+  String get emailLabel => 'ইমেল ঠিকানা';
+
+  @override
+  String get continueWithEmail => 'ইমেল দিয়ে চালিয়ে যান';
+
+  @override
+  String codeSentTo(String email) {
+    return 'আমরা $email-এ একটি 6 সংখ্যার কোড পাঠিয়েছি। এটি 10 মিনিট বৈধ থাকবে।';
+  }
+
+  @override
+  String get codeLabel => 'সাইন-ইন কোড';
+
+  @override
+  String get resendCode => 'নতুন কোড পাঠান';
+
+  @override
+  String get useDifferentEmail => 'অন্য ইমেল ব্যবহার করুন';
+
+  @override
+  String get errInvalidCode => 'কোডটি ভুল বা এর মেয়াদ শেষ হয়ে গেছে।';
+
+  @override
+  String get errInvalidEmail => 'অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন।';
+
+  @override
+  String get errSignInFailed => 'সাইন ইন ব্যর্থ হয়েছে। আপনার ইন্টারনেট সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।';
+
+  @override
+  String get checkoutWaiting => 'আপনার ব্রাউজারে পেমেন্ট সম্পূর্ণ করুন। শেষ হলে অ্যাপটি স্বয়ংক্রিয়ভাবে আপডেট হবে।';
+
+  @override
+  String get paymentViaStripe => 'Stripe-এর মাধ্যমে আপনার ব্রাউজারে নিরাপদ পেমেন্ট। যেকোনো সময় বাতিল করতে পারেন।';
+
+  @override
+  String get paymentViaStore =>
+      'আপনার App Store বা Google Play অ্যাকাউন্টের মাধ্যমে বিল করা হয়। স্টোরের সেটিংসে যেকোনো সময় বাতিল করতে পারেন।';
 }

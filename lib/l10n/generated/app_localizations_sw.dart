@@ -933,4 +933,64 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri.';
+
+  @override
+  String get accountTitle => 'Akaunti';
+
+  @override
+  String get signIn => 'Ingia';
+
+  @override
+  String get signOut => 'Toka';
+
+  @override
+  String get notSignedIn => 'Hujaingia';
+
+  @override
+  String get accountBenefit => 'Ingia ili usajili wako ufanye kazi kwenye vifaa vyako vyote.';
+
+  @override
+  String get accountSyncedNote => 'Usajili wako na uchambuzi uliobaki ni sawa kwenye kila kifaa.';
+
+  @override
+  String get signInTitle => 'Ingia kwenye StockLens';
+
+  @override
+  String get emailLabel => 'Anwani ya barua pepe';
+
+  @override
+  String get continueWithEmail => 'Endelea kwa barua pepe';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Tumetuma msimbo wa tarakimu 6 kwa $email. Ni halali kwa dakika 10.';
+  }
+
+  @override
+  String get codeLabel => 'Msimbo wa kuingia';
+
+  @override
+  String get resendCode => 'Tuma msimbo mpya';
+
+  @override
+  String get useDifferentEmail => 'Tumia barua pepe nyingine';
+
+  @override
+  String get errInvalidCode => 'Msimbo si sahihi au muda wake umekwisha.';
+
+  @override
+  String get errInvalidEmail => 'Tafadhali weka anwani sahihi ya barua pepe.';
+
+  @override
+  String get errSignInFailed => 'Kuingia kumeshindwa. Angalia muunganisho wako kisha ujaribu tena.';
+
+  @override
+  String get checkoutWaiting => 'Kamilisha malipo kwenye kivinjari chako. Programu itasasishwa kiotomatiki ukimaliza.';
+
+  @override
+  String get paymentViaStripe => 'Malipo salama kwenye kivinjari kupitia Stripe. Ghairi wakati wowote.';
+
+  @override
+  String get paymentViaStore =>
+      'Utatozwa kupitia akaunti yako ya App Store au Google Play. Ghairi wakati wowote kwenye mipangilio ya duka.';
 }

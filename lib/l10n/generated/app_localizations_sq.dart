@@ -933,4 +933,65 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Intervale orientuese; probabilitetet janë vlerësime të përafërta, jo parashikime.';
+
+  @override
+  String get accountTitle => 'Llogaria';
+
+  @override
+  String get signIn => 'Hyr';
+
+  @override
+  String get signOut => 'Dil';
+
+  @override
+  String get notSignedIn => 'Nuk keni hyrë';
+
+  @override
+  String get accountBenefit => 'Hyni që abonimi juaj të funksionojë në të gjitha pajisjet tuaja.';
+
+  @override
+  String get accountSyncedNote => 'Abonimi juaj dhe analizat e mbetura janë të njëjta në çdo pajisje.';
+
+  @override
+  String get signInTitle => 'Hyni në StockLens';
+
+  @override
+  String get emailLabel => 'Adresa e email-it';
+
+  @override
+  String get continueWithEmail => 'Vazhdo me email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Dërguam një kod 6-shifror te $email. Është i vlefshëm për 10 minuta.';
+  }
+
+  @override
+  String get codeLabel => 'Kodi i hyrjes';
+
+  @override
+  String get resendCode => 'Dërgo një kod të ri';
+
+  @override
+  String get useDifferentEmail => 'Përdor një email tjetër';
+
+  @override
+  String get errInvalidCode => 'Kodi është i gabuar ose ka skaduar.';
+
+  @override
+  String get errInvalidEmail => 'Ju lutemi vendosni një adresë email-i të vlefshme.';
+
+  @override
+  String get errSignInFailed => 'Hyrja dështoi. Kontrolloni lidhjen dhe provoni përsëri.';
+
+  @override
+  String get checkoutWaiting =>
+      'Përfundoni pagesën në shfletues. Aplikacioni përditësohet automatikisht kur të mbarojë.';
+
+  @override
+  String get paymentViaStripe => 'Pagesë e sigurt në shfletues përmes Stripe. Anuloni në çdo kohë.';
+
+  @override
+  String get paymentViaStore =>
+      'Faturohet përmes llogarisë suaj App Store ose Google Play. Anuloni në çdo kohë te cilësimet e dyqanit.';
 }

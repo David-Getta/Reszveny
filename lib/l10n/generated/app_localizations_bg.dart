@@ -932,4 +932,65 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Ориентировъчни диапазони; вероятностите са груби оценки, а не прогнози.';
+
+  @override
+  String get accountTitle => 'Акаунт';
+
+  @override
+  String get signIn => 'Вход';
+
+  @override
+  String get signOut => 'Изход';
+
+  @override
+  String get notSignedIn => 'Не сте влезли';
+
+  @override
+  String get accountBenefit => 'Влезте, за да работи абонаментът ви на всичките ви устройства.';
+
+  @override
+  String get accountSyncedNote => 'Абонаментът ви и оставащите анализи са едни и същи на всяко устройство.';
+
+  @override
+  String get signInTitle => 'Вход в StockLens';
+
+  @override
+  String get emailLabel => 'Имейл адрес';
+
+  @override
+  String get continueWithEmail => 'Продължете с имейл';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Изпратихме 6-цифрен код на $email. Той е валиден 10 минути.';
+  }
+
+  @override
+  String get codeLabel => 'Код за вход';
+
+  @override
+  String get resendCode => 'Изпрати нов код';
+
+  @override
+  String get useDifferentEmail => 'Използвай друг имейл';
+
+  @override
+  String get errInvalidCode => 'Кодът е грешен или е изтекъл.';
+
+  @override
+  String get errInvalidEmail => 'Моля, въведете валиден имейл адрес.';
+
+  @override
+  String get errSignInFailed => 'Входът не бе успешен. Проверете интернет връзката си и опитайте отново.';
+
+  @override
+  String get checkoutWaiting =>
+      'Завършете плащането в браузъра. Приложението ще се обнови автоматично, когато е готово.';
+
+  @override
+  String get paymentViaStripe => 'Сигурно плащане в браузъра чрез Stripe. Можете да откажете по всяко време.';
+
+  @override
+  String get paymentViaStore =>
+      'Плащането е чрез акаунта ви в App Store или Google Play. Можете да откажете по всяко време от настройките на магазина.';
 }

@@ -932,4 +932,65 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen.';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get signIn => 'Inloggen';
+
+  @override
+  String get signOut => 'Uitloggen';
+
+  @override
+  String get notSignedIn => 'Niet ingelogd';
+
+  @override
+  String get accountBenefit => 'Log in zodat je abonnement op al je apparaten werkt.';
+
+  @override
+  String get accountSyncedNote => 'Je abonnement en resterende analyses zijn op elk apparaat hetzelfde.';
+
+  @override
+  String get signInTitle => 'Inloggen bij StockLens';
+
+  @override
+  String get emailLabel => 'E-mailadres';
+
+  @override
+  String get continueWithEmail => 'Doorgaan met e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'We hebben een 6-cijferige code naar $email gestuurd. Deze is 10 minuten geldig.';
+  }
+
+  @override
+  String get codeLabel => 'Inlogcode';
+
+  @override
+  String get resendCode => 'Nieuwe code sturen';
+
+  @override
+  String get useDifferentEmail => 'Ander e-mailadres gebruiken';
+
+  @override
+  String get errInvalidCode => 'De code is onjuist of verlopen.';
+
+  @override
+  String get errInvalidEmail => 'Voer een geldig e-mailadres in.';
+
+  @override
+  String get errSignInFailed => 'Inloggen mislukt. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
+  String get checkoutWaiting =>
+      'Rond de betaling af in je browser. De app wordt automatisch bijgewerkt zodra dat klaar is.';
+
+  @override
+  String get paymentViaStripe => 'Veilig betalen in je browser via Stripe. Altijd opzegbaar.';
+
+  @override
+  String get paymentViaStore =>
+      'Gefactureerd via je App Store- of Google Play-account. Altijd opzegbaar in de instellingen van je store.';
 }

@@ -932,4 +932,64 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Vägledande intervall; sannolikheterna är grova bedömningar, inte prognoser.';
+
+  @override
+  String get accountTitle => 'Konto';
+
+  @override
+  String get signIn => 'Logga in';
+
+  @override
+  String get signOut => 'Logga ut';
+
+  @override
+  String get notSignedIn => 'Inte inloggad';
+
+  @override
+  String get accountBenefit => 'Logga in så fungerar din prenumeration på alla dina enheter.';
+
+  @override
+  String get accountSyncedNote => 'Din prenumeration och dina återstående analyser är desamma på alla enheter.';
+
+  @override
+  String get signInTitle => 'Logga in på StockLens';
+
+  @override
+  String get emailLabel => 'E-postadress';
+
+  @override
+  String get continueWithEmail => 'Fortsätt med e-post';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Vi har skickat en sexsiffrig kod till $email. Den gäller i 10 minuter.';
+  }
+
+  @override
+  String get codeLabel => 'Inloggningskod';
+
+  @override
+  String get resendCode => 'Skicka ny kod';
+
+  @override
+  String get useDifferentEmail => 'Använd en annan e-postadress';
+
+  @override
+  String get errInvalidCode => 'Koden är fel eller har gått ut.';
+
+  @override
+  String get errInvalidEmail => 'Ange en giltig e-postadress.';
+
+  @override
+  String get errSignInFailed => 'Inloggningen misslyckades. Kontrollera anslutningen och försök igen.';
+
+  @override
+  String get checkoutWaiting => 'Slutför betalningen i webbläsaren. Appen uppdateras automatiskt när den är klar.';
+
+  @override
+  String get paymentViaStripe => 'Säker betalning i webbläsaren via Stripe. Avsluta när du vill.';
+
+  @override
+  String get paymentViaStore =>
+      'Debiteras via ditt App Store- eller Google Play-konto. Avsluta när du vill i butikens inställningar.';
 }

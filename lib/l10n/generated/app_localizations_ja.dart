@@ -897,4 +897,63 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get outlookChartNote => '価格帯は目安です。確率は大まかな見立てであり、予測ではありません。';
+
+  @override
+  String get accountTitle => 'アカウント';
+
+  @override
+  String get signIn => 'サインイン';
+
+  @override
+  String get signOut => 'サインアウト';
+
+  @override
+  String get notSignedIn => 'サインインしていません';
+
+  @override
+  String get accountBenefit => 'サインインすると、サブスクリプションをすべてのデバイスで利用できます。';
+
+  @override
+  String get accountSyncedNote => 'サブスクリプションと残りの分析回数は、どのデバイスでも共通です。';
+
+  @override
+  String get signInTitle => 'StockLens にサインイン';
+
+  @override
+  String get emailLabel => 'メールアドレス';
+
+  @override
+  String get continueWithEmail => 'メールで続ける';
+
+  @override
+  String codeSentTo(String email) {
+    return '$email に 6 桁のコードを送信しました。有効期限は 10 分です。';
+  }
+
+  @override
+  String get codeLabel => 'サインインコード';
+
+  @override
+  String get resendCode => 'コードを再送信';
+
+  @override
+  String get useDifferentEmail => '別のメールアドレスを使う';
+
+  @override
+  String get errInvalidCode => 'コードが正しくないか、有効期限が切れています。';
+
+  @override
+  String get errInvalidEmail => '有効なメールアドレスを入力してください。';
+
+  @override
+  String get errSignInFailed => 'サインインできませんでした。接続を確認して、もう一度お試しください。';
+
+  @override
+  String get checkoutWaiting => 'ブラウザでお支払いを完了してください。完了するとアプリは自動的に更新されます。';
+
+  @override
+  String get paymentViaStripe => 'Stripe を通じてブラウザで安全にお支払いいただけます。いつでも解約できます。';
+
+  @override
+  String get paymentViaStore => 'App Store または Google Play のアカウントで請求されます。ストアの設定からいつでも解約できます。';
 }

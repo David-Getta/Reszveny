@@ -545,5 +545,31 @@
   "keyLevelResistance": "Resistance",
   "keyLevelAnchor": "Anchor",
   "upcomingEvents": "Upcoming events",
-  "outlookChartNote": "Indicative ranges; probabilities are rough judgements, not predictions."
+  "outlookChartNote": "Indicative ranges; probabilities are rough judgements, not predictions.",
+  "accountTitle": "Account",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "notSignedIn": "Not signed in",
+  "accountBenefit": "Sign in so your subscription works on all your devices.",
+  "accountSyncedNote": "Your subscription and remaining analyses are the same on every device.",
+  "signInTitle": "Sign in to StockLens",
+  "emailLabel": "Email address",
+  "continueWithEmail": "Continue with email",
+  "codeSentTo": "We sent a 6-digit code to {email}. It is valid for 10 minutes.",
+  "@codeSentTo": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "codeLabel": "Sign-in code",
+  "resendCode": "Send a new code",
+  "useDifferentEmail": "Use a different email",
+  "errInvalidCode": "The code is wrong or has expired.",
+  "errInvalidEmail": "Please enter a valid email address.",
+  "errSignInFailed": "Sign-in failed. Check your connection and try again.",
+  "checkoutWaiting": "Complete the payment in your browser. The app updates automatically when it is done.",
+  "paymentViaStripe": "Secure payment in your browser via Stripe. Cancel anytime.",
+  "paymentViaStore": "Billed through your App Store or Google Play account. Cancel anytime in your store settings."
 }

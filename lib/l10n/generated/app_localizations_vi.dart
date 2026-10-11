@@ -922,4 +922,64 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo.';
+
+  @override
+  String get accountTitle => 'Tài khoản';
+
+  @override
+  String get signIn => 'Đăng nhập';
+
+  @override
+  String get signOut => 'Đăng xuất';
+
+  @override
+  String get notSignedIn => 'Chưa đăng nhập';
+
+  @override
+  String get accountBenefit => 'Đăng nhập để gói đăng ký của bạn dùng được trên mọi thiết bị.';
+
+  @override
+  String get accountSyncedNote => 'Gói đăng ký và số lượt phân tích còn lại của bạn giống nhau trên mọi thiết bị.';
+
+  @override
+  String get signInTitle => 'Đăng nhập vào StockLens';
+
+  @override
+  String get emailLabel => 'Địa chỉ email';
+
+  @override
+  String get continueWithEmail => 'Tiếp tục bằng email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Chúng tôi đã gửi mã 6 chữ số đến $email. Mã có hiệu lực trong 10 phút.';
+  }
+
+  @override
+  String get codeLabel => 'Mã đăng nhập';
+
+  @override
+  String get resendCode => 'Gửi mã mới';
+
+  @override
+  String get useDifferentEmail => 'Dùng email khác';
+
+  @override
+  String get errInvalidCode => 'Mã không đúng hoặc đã hết hạn.';
+
+  @override
+  String get errInvalidEmail => 'Vui lòng nhập địa chỉ email hợp lệ.';
+
+  @override
+  String get errSignInFailed => 'Đăng nhập không thành công. Hãy kiểm tra kết nối rồi thử lại.';
+
+  @override
+  String get checkoutWaiting => 'Hãy hoàn tất thanh toán trong trình duyệt. Ứng dụng sẽ tự động cập nhật khi xong.';
+
+  @override
+  String get paymentViaStripe => 'Thanh toán an toàn trong trình duyệt qua Stripe. Hủy bất cứ lúc nào.';
+
+  @override
+  String get paymentViaStore =>
+      'Thanh toán qua tài khoản App Store hoặc Google Play của bạn. Hủy bất cứ lúc nào trong phần cài đặt của cửa hàng.';
 }

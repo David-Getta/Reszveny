@@ -934,4 +934,66 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'குறிப்பான வரம்புகள்; நிகழ்தகவுகள் தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல.';
+
+  @override
+  String get accountTitle => 'கணக்கு';
+
+  @override
+  String get signIn => 'உள்நுழை';
+
+  @override
+  String get signOut => 'வெளியேறு';
+
+  @override
+  String get notSignedIn => 'உள்நுழையவில்லை';
+
+  @override
+  String get accountBenefit => 'உங்கள் சந்தா உங்கள் எல்லாச் சாதனங்களிலும் செயல்பட உள்நுழையவும்.';
+
+  @override
+  String get accountSyncedNote =>
+      'உங்கள் சந்தாவும் மீதமுள்ள பகுப்பாய்வுகளும் ஒவ்வொரு சாதனத்திலும் ஒரே மாதிரி இருக்கும்.';
+
+  @override
+  String get signInTitle => 'StockLens-இல் உள்நுழையவும்';
+
+  @override
+  String get emailLabel => 'மின்னஞ்சல் முகவரி';
+
+  @override
+  String get continueWithEmail => 'மின்னஞ்சல் மூலம் தொடர்க';
+
+  @override
+  String codeSentTo(String email) {
+    return '$email க்கு 6 இலக்கக் குறியீட்டை அனுப்பியுள்ளோம். இது 10 நிமிடங்களுக்குச் செல்லுபடியாகும்.';
+  }
+
+  @override
+  String get codeLabel => 'உள்நுழைவுக் குறியீடு';
+
+  @override
+  String get resendCode => 'புதிய குறியீட்டை அனுப்பு';
+
+  @override
+  String get useDifferentEmail => 'வேறு மின்னஞ்சலைப் பயன்படுத்து';
+
+  @override
+  String get errInvalidCode => 'குறியீடு தவறானது அல்லது காலாவதியாகிவிட்டது.';
+
+  @override
+  String get errInvalidEmail => 'சரியான மின்னஞ்சல் முகவரியை உள்ளிடவும்.';
+
+  @override
+  String get errSignInFailed => 'உள்நுழைவு தோல்வியடைந்தது. உங்கள் இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get checkoutWaiting => 'உங்கள் உலாவியில் கட்டணத்தை முடிக்கவும். முடிந்ததும் ஆப் தானாகவே புதுப்பிக்கப்படும்.';
+
+  @override
+  String get paymentViaStripe =>
+      'Stripe வழியாக உங்கள் உலாவியில் பாதுகாப்பான கட்டணம். எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.';
+
+  @override
+  String get paymentViaStore =>
+      'உங்கள் App Store அல்லது Google Play கணக்கின் மூலம் கட்டணம் வசூலிக்கப்படும். ஸ்டோர் அமைப்புகளில் எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.';
 }

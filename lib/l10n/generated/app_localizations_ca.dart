@@ -933,4 +933,66 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Rangs orientatius; les probabilitats són estimacions aproximades, no prediccions.';
+
+  @override
+  String get accountTitle => 'Compte';
+
+  @override
+  String get signIn => 'Inicia la sessió';
+
+  @override
+  String get signOut => 'Tanca la sessió';
+
+  @override
+  String get notSignedIn => 'No has iniciat la sessió';
+
+  @override
+  String get accountBenefit => 'Inicia la sessió perquè la teva subscripció funcioni a tots els teus dispositius.';
+
+  @override
+  String get accountSyncedNote =>
+      'La teva subscripció i les anàlisis que et queden són les mateixes a tots els dispositius.';
+
+  @override
+  String get signInTitle => 'Inicia la sessió a StockLens';
+
+  @override
+  String get emailLabel => 'Adreça electrònica';
+
+  @override
+  String get continueWithEmail => 'Continua amb el correu';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Hem enviat un codi de 6 xifres a $email. És vàlid durant 10 minuts.';
+  }
+
+  @override
+  String get codeLabel => 'Codi d’accés';
+
+  @override
+  String get resendCode => 'Envia un codi nou';
+
+  @override
+  String get useDifferentEmail => 'Fes servir un altre correu';
+
+  @override
+  String get errInvalidCode => 'El codi és incorrecte o ha caducat.';
+
+  @override
+  String get errInvalidEmail => 'Introdueix una adreça electrònica vàlida.';
+
+  @override
+  String get errSignInFailed => 'No s’ha pogut iniciar la sessió. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String get checkoutWaiting =>
+      'Completa el pagament al navegador. L’app s’actualitzarà automàticament quan s’hagi fet.';
+
+  @override
+  String get paymentViaStripe => 'Pagament segur al navegador mitjançant Stripe. Cancel·la quan vulguis.';
+
+  @override
+  String get paymentViaStore =>
+      'Es factura a través del teu compte d’App Store o Google Play. Cancel·la quan vulguis a la configuració de la botiga.';
 }

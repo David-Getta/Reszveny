@@ -974,4 +974,65 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės.';
+
+  @override
+  String get accountTitle => 'Paskyra';
+
+  @override
+  String get signIn => 'Prisijungti';
+
+  @override
+  String get signOut => 'Atsijungti';
+
+  @override
+  String get notSignedIn => 'Neprisijungta';
+
+  @override
+  String get accountBenefit => 'Prisijunkite, kad jūsų prenumerata veiktų visuose jūsų įrenginiuose.';
+
+  @override
+  String get accountSyncedNote => 'Jūsų prenumerata ir likusios analizės yra vienodos kiekviename įrenginyje.';
+
+  @override
+  String get signInTitle => 'Prisijunkite prie StockLens';
+
+  @override
+  String get emailLabel => 'El. pašto adresas';
+
+  @override
+  String get continueWithEmail => 'Tęsti su el. paštu';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Išsiuntėme 6 skaitmenų kodą adresu $email. Jis galioja 10 minučių.';
+  }
+
+  @override
+  String get codeLabel => 'Prisijungimo kodas';
+
+  @override
+  String get resendCode => 'Siųsti naują kodą';
+
+  @override
+  String get useDifferentEmail => 'Naudoti kitą el. paštą';
+
+  @override
+  String get errInvalidCode => 'Kodas neteisingas arba nebegalioja.';
+
+  @override
+  String get errInvalidEmail => 'Įveskite galiojantį el. pašto adresą.';
+
+  @override
+  String get errSignInFailed => 'Prisijungti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
+
+  @override
+  String get checkoutWaiting =>
+      'Užbaikite mokėjimą naršyklėje. Programa atsinaujins automatiškai, kai tai bus padaryta.';
+
+  @override
+  String get paymentViaStripe => 'Saugus mokėjimas naršyklėje per Stripe. Atšaukti galite bet kada.';
+
+  @override
+  String get paymentViaStore =>
+      'Mokestis nuskaitomas per jūsų App Store arba Google Play paskyrą. Atšaukti galite bet kada parduotuvės nustatymuose.';
 }

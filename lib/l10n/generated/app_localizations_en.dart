@@ -930,4 +930,64 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Indicative ranges; probabilities are rough judgements, not predictions.';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get signIn => 'Sign in';
+
+  @override
+  String get signOut => 'Sign out';
+
+  @override
+  String get notSignedIn => 'Not signed in';
+
+  @override
+  String get accountBenefit => 'Sign in so your subscription works on all your devices.';
+
+  @override
+  String get accountSyncedNote => 'Your subscription and remaining analyses are the same on every device.';
+
+  @override
+  String get signInTitle => 'Sign in to StockLens';
+
+  @override
+  String get emailLabel => 'Email address';
+
+  @override
+  String get continueWithEmail => 'Continue with email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'We sent a 6-digit code to $email. It is valid for 10 minutes.';
+  }
+
+  @override
+  String get codeLabel => 'Sign-in code';
+
+  @override
+  String get resendCode => 'Send a new code';
+
+  @override
+  String get useDifferentEmail => 'Use a different email';
+
+  @override
+  String get errInvalidCode => 'The code is wrong or has expired.';
+
+  @override
+  String get errInvalidEmail => 'Please enter a valid email address.';
+
+  @override
+  String get errSignInFailed => 'Sign-in failed. Check your connection and try again.';
+
+  @override
+  String get checkoutWaiting => 'Complete the payment in your browser. The app updates automatically when it is done.';
+
+  @override
+  String get paymentViaStripe => 'Secure payment in your browser via Stripe. Cancel anytime.';
+
+  @override
+  String get paymentViaStore =>
+      'Billed through your App Store or Google Play account. Cancel anytime in your store settings.';
 }

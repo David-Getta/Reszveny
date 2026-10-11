@@ -2,12 +2,14 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'core/app_preferences.dart';
 import 'core/backend/backend_client.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
+import 'features/account/account_controller.dart';
 import 'features/analysis/analysis_options.dart';
 import 'features/analysis/claude_stock_analyst.dart';
 import 'features/analysis/report_store.dart';
@@ -17,6 +19,7 @@ import 'features/billing/demo_billing_service.dart';
 import 'features/billing/entitlement_service.dart';
 import 'features/billing/fallback_billing_service.dart';
 import 'features/billing/store_billing_service.dart';
+import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
 import 'features/fx/fx_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
@@ -40,18 +43,30 @@ class AppServices {
     required this.reports,
     required this.entitlements,
     this.backend,
+    String? accountEmail,
     BillingService? billing,
     bool platformStore = false,
     FxService? fx,
     UpdateService? updates,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config) {
-    // A platform boltja demó tartalékkal: amíg a boltban nincsenek termékek,
-    // a szimulált bolt fut, így az app ilyenkor is kipróbálható.
+    final b0 = backend;
+    account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
+    // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
+    // Play, demó tartalékkal, amíg nincs felvett termék), asztali gépen és
+    // weben böngészős fizetés a fiókhoz (Stripe), backend nélkül demó bolt.
+    final acc = account;
     this.billing =
         billing ??
         (platformStore
             ? FallbackBillingService(primary: StoreBillingService(), fallback: _demoBilling(this.fx))
+            : (b0 != null && acc != null)
+            ? WebCheckoutBillingService(
+                backend: b0,
+                account: acc,
+                prices: _demoBilling(this.fx),
+                openUrl: (u) => launchUrl(u, mode: LaunchMode.externalApplication),
+              )
             : _demoBilling(this.fx));
     final b = backend;
     billingController = BillingController(
@@ -70,10 +85,10 @@ class AppServices {
   /// Backend-módban a szerver szerinti jogosultság átvétele (indításkor,
   /// elemzés után, vásárlás után). Hálózati hiba esetén a helyi kép marad.
   Future<void> syncEntitlements() async {
-    final b = backend;
-    if (b == null) return;
+    final a = account;
+    if (a == null) return;
     try {
-      await entitlements.replace(await b.me());
+      await a.refresh();
     } catch (e) {
       debugPrint('Jogosultság szinkron nem sikerült: $e');
     }
@@ -91,8 +106,11 @@ class AppServices {
     required AppPreferences preferences,
     required EntitlementService entitlements,
     DesktopIntegration? desktop,
+    String? accountEmail,
   }) {
-    final storeBilling = !kIsWeb && (Platform.isIOS || Platform.isAndroid || Platform.isMacOS);
+    // A Mac-es app a weboldalról terjesztett (nem Mac App Store-os), ezért ott
+    // is a böngészős fizetés fut, mint a Claude asztali appjában.
+    final storeBilling = !kIsWeb && (Platform.isIOS || Platform.isAndroid);
     // Backend-módban minden külső hívás a hitelesített kliensen, a szerveren át megy.
     final backend = config.hasBackend ? BackendClient(baseUrl: config.backend) : null;
     final client = backend?.authenticated;
@@ -116,6 +134,7 @@ class AppServices {
       ),
       entitlements: entitlements,
       backend: backend,
+      accountEmail: accountEmail,
       platformStore: storeBilling,
     );
     return services;
@@ -133,6 +152,9 @@ class AppServices {
 
   /// A StockLens backend kliense, vagy `null` közvetlen (kulcsos/demó) módban.
   final BackendClient? backend;
+
+  /// Fiók (belépés e-mail kóddal); csak backend-módban.
+  late final AccountController? account;
   late final BillingService billing;
   late final BillingController billingController;
   final FxService fx;

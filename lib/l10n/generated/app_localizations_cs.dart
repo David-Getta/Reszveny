@@ -972,4 +972,65 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get outlookChartNote => 'Orientační rozpětí; pravděpodobnosti jsou hrubé odhady, nikoli předpovědi.';
+
+  @override
+  String get accountTitle => 'Účet';
+
+  @override
+  String get signIn => 'Přihlásit se';
+
+  @override
+  String get signOut => 'Odhlásit se';
+
+  @override
+  String get notSignedIn => 'Nepřihlášeno';
+
+  @override
+  String get accountBenefit => 'Přihlaste se, aby vaše předplatné fungovalo na všech vašich zařízeních.';
+
+  @override
+  String get accountSyncedNote => 'Vaše předplatné a zbývající analýzy jsou stejné na každém zařízení.';
+
+  @override
+  String get signInTitle => 'Přihlášení do StockLens';
+
+  @override
+  String get emailLabel => 'E-mailová adresa';
+
+  @override
+  String get continueWithEmail => 'Pokračovat přes e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Na adresu $email jsme poslali 6místný kód. Platí 10 minut.';
+  }
+
+  @override
+  String get codeLabel => 'Přihlašovací kód';
+
+  @override
+  String get resendCode => 'Poslat nový kód';
+
+  @override
+  String get useDifferentEmail => 'Použít jiný e-mail';
+
+  @override
+  String get errInvalidCode => 'Kód je nesprávný nebo vypršela jeho platnost.';
+
+  @override
+  String get errInvalidEmail => 'Zadejte platnou e-mailovou adresu.';
+
+  @override
+  String get errSignInFailed => 'Přihlášení se nezdařilo. Zkontrolujte připojení k internetu a zkuste to znovu.';
+
+  @override
+  String get checkoutWaiting =>
+      'Dokončete platbu v prohlížeči. Aplikace se po jejím dokončení automaticky aktualizuje.';
+
+  @override
+  String get paymentViaStripe => 'Bezpečná platba v prohlížeči přes Stripe. Zrušit můžete kdykoli.';
+
+  @override
+  String get paymentViaStore =>
+      'Účtováno přes váš účet App Store nebo Google Play. Zrušit můžete kdykoli v nastavení obchodu.';
 }
