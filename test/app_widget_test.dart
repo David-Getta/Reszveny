@@ -279,6 +279,24 @@ void main() {
     expect(find.widgetWithText(InkWell, 'NVDA'), findsWidgets);
   });
 
+  testWidgets('the logo and name in the sidebar lead back to the home page', (tester) async {
+    tester.view.physicalSize = const Size(1400, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('View plans').first);
+    await tester.pumpAndSettle();
+    expect(find.text('Choose a plan'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('sidebar-home')));
+    await tester.pumpAndSettle();
+    expect(find.text('Choose a plan'), findsNothing);
+    expect(find.text('View plans'), findsNothing);
+    expect(find.byType(TextField), findsOneWidget);
+  });
+
   testWidgets('hungarian locale renders translated strings', (tester) async {
     await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('hu'))));
     await tester.pumpAndSettle();

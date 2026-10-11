@@ -151,6 +151,7 @@ class _AppShellState extends State<AppShell> {
               body: Row(
                 children: [
                   _Sidebar(
+                    onHome: _goHome,
                     onNewSearch: _goHome,
                     onOpenSymbol: _openSymbol,
                     onOpenSettings: _openSettings,
@@ -170,6 +171,7 @@ class _AppShellState extends State<AppShell> {
 
 class _Sidebar extends StatelessWidget {
   const _Sidebar({
+    required this.onHome,
     required this.onNewSearch,
     required this.onOpenSymbol,
     required this.onOpenSettings,
@@ -177,6 +179,7 @@ class _Sidebar extends StatelessWidget {
     required this.onOpenAlerts,
   });
 
+  final VoidCallback onHome;
   final VoidCallback onNewSearch;
   final ValueChanged<StockCandidate> onOpenSymbol;
   final VoidCallback onOpenSettings;
@@ -200,18 +203,41 @@ class _Sidebar extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Húzható fejléc: macOS-en helyet hagy a lámpáknak.
-          _DragArea(
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(macTrafficLights ? 84 : 16, 14, 12, 8),
-              child: Row(
-                children: [
-                  Image.asset('assets/branding/logo_128.png', width: 22, height: 22),
-                  const SizedBox(width: 8),
-                  Text(l10n.appTitle, style: theme.textTheme.titleMedium),
-                ],
+          // Fejléc: macOS-en helyet hagy a lámpáknak. A logó és a név a főoldalra
+          // visz; a fejléc többi része az ablak mozgatására való (alul, külön
+          // rétegen, hogy a dupla kattintásra váró húzás ne késleltesse a kattintást).
+          Stack(
+            children: [
+              const Positioned.fill(child: _DragArea(child: SizedBox.expand())),
+              Padding(
+                padding: EdgeInsets.fromLTRB(macTrafficLights ? 80 : 12, 12, 12, 6),
+                child: Row(
+                  children: [
+                    Semantics(
+                      button: true,
+                      child: InkWell(
+                        key: const ValueKey('sidebar-home'),
+                        onTap: onHome,
+                        borderRadius: BorderRadius.circular(8),
+                        hoverColor: p.surface,
+                        mouseCursor: SystemMouseCursors.click,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Image.asset('assets/branding/logo_128.png', width: 22, height: 22),
+                              const SizedBox(width: 8),
+                              Text(l10n.appTitle, style: theme.textTheme.titleMedium),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
+            ],
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
