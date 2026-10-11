@@ -1707,6 +1707,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This length needs {needed} analyses, but only {left} left. Choose a shorter length in Settings or get more analyses.'**
   String errNotEnoughCredits(int needed, int left);
+
+  /// No description provided for @outlookMarketMood.
+  ///
+  /// In en, this message translates to:
+  /// **'Market mood'**
+  String get outlookMarketMood;
+
+  /// No description provided for @moodVeryPessimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Very pessimistic'**
+  String get moodVeryPessimistic;
+
+  /// No description provided for @moodPessimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Pessimistic'**
+  String get moodPessimistic;
+
+  /// No description provided for @moodNeutral.
+  ///
+  /// In en, this message translates to:
+  /// **'Neutral'**
+  String get moodNeutral;
+
+  /// No description provided for @moodOptimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Optimistic'**
+  String get moodOptimistic;
+
+  /// No description provided for @moodVeryOptimistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Very optimistic'**
+  String get moodVeryOptimistic;
+
+  /// No description provided for @scenarioBull.
+  ///
+  /// In en, this message translates to:
+  /// **'Bull case'**
+  String get scenarioBull;
+
+  /// No description provided for @scenarioBase.
+  ///
+  /// In en, this message translates to:
+  /// **'Base case'**
+  String get scenarioBase;
+
+  /// No description provided for @scenarioBear.
+  ///
+  /// In en, this message translates to:
+  /// **'Bear case'**
+  String get scenarioBear;
+
+  /// No description provided for @outlookCurrentPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Current price: {price}'**
+  String outlookCurrentPrice(String price);
+
+  /// No description provided for @outlookKeyLevels.
+  ///
+  /// In en, this message translates to:
+  /// **'Key levels'**
+  String get outlookKeyLevels;
+
+  /// No description provided for @keyLevelSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Support'**
+  String get keyLevelSupport;
+
+  /// No description provided for @keyLevelResistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Resistance'**
+  String get keyLevelResistance;
+
+  /// No description provided for @keyLevelAnchor.
+  ///
+  /// In en, this message translates to:
+  /// **'Anchor'**
+  String get keyLevelAnchor;
+
+  /// No description provided for @upcomingEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming events'**
+  String get upcomingEvents;
+
+  /// No description provided for @outlookChartNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Indicative ranges; probabilities are rough judgements, not predictions.'**
+  String get outlookChartNote;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

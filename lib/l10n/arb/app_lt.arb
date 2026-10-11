@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Standartinė apimtis pagal planą: Standartinis {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Trumpa – 2 paieškomis mažiau, Išsami – 2 daugiau.",
   "aiWebSearchesShort": "{count, plural, one{iki {count} paieškos internete} few{iki {count} paieškų internete} many{iki {count} paieškos internete} other{iki {count} paieškų internete}}",
   "planWebSearches": "{count, plural, one{{count} paieška internete per analizę} few{{count} paieškos internete per analizę} many{{count} paieškos internete per analizę} other{{count} paieškų internete per analizę}}",
-  "errNotEnoughCredits": "Šiai apimčiai reikia analizių: {needed}, bet liko tik {left}. Nustatymuose pasirinkite trumpesnę apimtį arba įsigykite daugiau analizių."
+  "errNotEnoughCredits": "Šiai apimčiai reikia analizių: {needed}, bet liko tik {left}. Nustatymuose pasirinkite trumpesnę apimtį arba įsigykite daugiau analizių.",
+  "outlookMarketMood": "Rinkos nuotaika",
+  "moodVeryPessimistic": "Labai pesimistinė",
+  "moodPessimistic": "Pesimistinė",
+  "moodNeutral": "Neutrali",
+  "moodOptimistic": "Optimistinė",
+  "moodVeryOptimistic": "Labai optimistinė",
+  "scenarioBull": "Optimistinis scenarijus",
+  "scenarioBase": "Bazinis scenarijus",
+  "scenarioBear": "Pesimistinis scenarijus",
+  "outlookCurrentPrice": "Dabartinė kaina: {price}",
+  "outlookKeyLevels": "Svarbiausi lygiai",
+  "keyLevelSupport": "Palaikymas",
+  "keyLevelResistance": "Pasipriešinimas",
+  "keyLevelAnchor": "Inkaras",
+  "upcomingEvents": "Artėjantys įvykiai",
+  "outlookChartNote": "Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės."
 }

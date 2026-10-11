@@ -882,4 +882,54 @@ class AppLocalizationsSv extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Den här längden kräver $needed analyser, men du har bara $left kvar. Välj en kortare längd i Inställningar eller skaffa fler analyser.';
   }
+
+  @override
+  String get outlookMarketMood => 'Marknadsstämning';
+
+  @override
+  String get moodVeryPessimistic => 'Mycket pessimistisk';
+
+  @override
+  String get moodPessimistic => 'Pessimistisk';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimistisk';
+
+  @override
+  String get moodVeryOptimistic => 'Mycket optimistisk';
+
+  @override
+  String get scenarioBull => 'Positivt scenario';
+
+  @override
+  String get scenarioBase => 'Basscenario';
+
+  @override
+  String get scenarioBear => 'Negativt scenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Aktuell kurs: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Viktiga nivåer';
+
+  @override
+  String get keyLevelSupport => 'Stöd';
+
+  @override
+  String get keyLevelResistance => 'Motstånd';
+
+  @override
+  String get keyLevelAnchor => 'Ankarnivå';
+
+  @override
+  String get upcomingEvents => 'Kommande händelser';
+
+  @override
+  String get outlookChartNote => 'Vägledande intervall; sannolikheterna är grova bedömningar, inte prognoser.';
 }

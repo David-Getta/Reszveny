@@ -1,3 +1,4 @@
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
 import '../../core/models/financial_statements.dart';
@@ -27,6 +28,11 @@ abstract class MarketDataProvider {
 
   /// Ticker vagy cégnév keresése; a találatok megbízhatóság szerint.
   Future<List<StockCandidate>> search(String query);
+
+  /// Az AI-elemzéshez külön letöltött többletadatok (versenytársak, bennfentes
+  /// ügyletek, EPS-meglepetések, következő gyorsjelentés). Hiba esetén a
+  /// hiányzó rész egyszerűen kimarad; alapból üres.
+  Future<AnalysisExtras> analysisExtras(String symbol) async => const AnalysisExtras();
 
   /// Minden szekciót párhuzamosan tölt le; egy szekció hibája nem dönti be
   /// a többit, hanem a [StockDetails.errors] térképbe kerül.

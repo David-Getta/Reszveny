@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Alap hossznál csomagonként: Normál {normal}, Pro {pro}, Max {max}, Ultra {ultra}. A rövid 2-vel kevesebbet, a részletes 2-vel többet kap.",
   "aiWebSearchesShort": "{count, plural, one{legfeljebb 1 webkeresés} other{legfeljebb {count} webkeresés}}",
   "planWebSearches": "{count, plural, one{1 webkeresés elemzésenként} other{{count} webkeresés elemzésenként}}",
-  "errNotEnoughCredits": "Ehhez a hosszhoz {needed} elemzés kell, de csak {left} maradt. Válassz rövidebbet a Beállításokban, vagy vásárolj még elemzést."
+  "errNotEnoughCredits": "Ehhez a hosszhoz {needed} elemzés kell, de csak {left} maradt. Válassz rövidebbet a Beállításokban, vagy vásárolj még elemzést.",
+  "outlookMarketMood": "Piaci hangulat",
+  "moodVeryPessimistic": "Nagyon pesszimista",
+  "moodPessimistic": "Pesszimista",
+  "moodNeutral": "Semleges",
+  "moodOptimistic": "Optimista",
+  "moodVeryOptimistic": "Nagyon optimista",
+  "scenarioBull": "Optimista forgatókönyv",
+  "scenarioBase": "Alapforgatókönyv",
+  "scenarioBear": "Pesszimista forgatókönyv",
+  "outlookCurrentPrice": "Jelenlegi ár: {price}",
+  "outlookKeyLevels": "Kulcsszintek",
+  "keyLevelSupport": "Támasz",
+  "keyLevelResistance": "Ellenállás",
+  "keyLevelAnchor": "Horgony",
+  "upcomingEvents": "Közelgő események",
+  "outlookChartNote": "Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések."
 }

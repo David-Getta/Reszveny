@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Extensió estàndard segons el pla: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. «Breu» en fa servir 2 menys i «A fons», 2 més.",
   "aiWebSearchesShort": "{count, plural, one{fins a 1 cerca web} other{fins a {count} cerques web}}",
   "planWebSearches": "{count, plural, one{1 cerca web per anàlisi} other{{count} cerques web per anàlisi}}",
-  "errNotEnoughCredits": "Aquesta extensió requereix {needed} anàlisis, però només te’n queden {left}. Tria una extensió més curta a Configuració o aconsegueix més anàlisis."
+  "errNotEnoughCredits": "Aquesta extensió requereix {needed} anàlisis, però només te’n queden {left}. Tria una extensió més curta a Configuració o aconsegueix més anàlisis.",
+  "outlookMarketMood": "Sentiment del mercat",
+  "moodVeryPessimistic": "Molt pessimista",
+  "moodPessimistic": "Pessimista",
+  "moodNeutral": "Neutral",
+  "moodOptimistic": "Optimista",
+  "moodVeryOptimistic": "Molt optimista",
+  "scenarioBull": "Escenari alcista",
+  "scenarioBase": "Escenari base",
+  "scenarioBear": "Escenari baixista",
+  "outlookCurrentPrice": "Preu actual: {price}",
+  "outlookKeyLevels": "Nivells clau",
+  "keyLevelSupport": "Suport",
+  "keyLevelResistance": "Resistència",
+  "keyLevelAnchor": "Àncora",
+  "upcomingEvents": "Propers esdeveniments",
+  "outlookChartNote": "Rangs orientatius; les probabilitats són estimacions aproximades, no prediccions."
 }

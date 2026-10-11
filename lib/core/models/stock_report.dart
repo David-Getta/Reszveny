@@ -8,6 +8,8 @@ class StockReport {
     required this.generatedAt,
     this.sources = const [],
     this.language,
+    this.outlook,
+    this.promptVersion,
   });
 
   final String symbol;
@@ -21,6 +23,13 @@ class StockReport {
   /// A nyelv angol neve, amin az elemzés készült (pl. `Hungarian`).
   final String? language;
 
+  /// A kilátások számszerű része (forgatókönyvek, kulcsszintek, események,
+  /// piaci hangulat), amit a felület grafikusan is megjelenít.
+  final ReportOutlook? outlook;
+
+  /// A prompt verziója, amivel az elemzés készült (pl. `v2.1`).
+  final String? promptVersion;
+
   Map<String, dynamic> toJson() => {
     'symbol': symbol,
     'headline': headline,
@@ -28,6 +37,8 @@ class StockReport {
     'sources': sources.map((s) => s.toJson()).toList(),
     'generated_at': generatedAt.toUtc().toIso8601String(),
     'language': language,
+    if (outlook != null) 'outlook_data': outlook!.toJson(),
+    'prompt_version': ?promptVersion,
   };
 
   factory StockReport.fromJson(Map<String, dynamic> j) => StockReport(
@@ -41,7 +52,177 @@ class StockReport {
         .toList(),
     generatedAt: DateTime.tryParse(j['generated_at'] as String? ?? '') ?? DateTime.now(),
     language: j['language'] as String?,
+    outlook: j['outlook_data'] is Map
+        ? ReportOutlook.fromJson((j['outlook_data'] as Map).cast<String, dynamic>())
+        : null,
+    promptVersion: j['prompt_version'] as String?,
   );
+}
+
+double? _num(Object? v) => v is num ? v.toDouble() : (v is String ? double.tryParse(v) : null);
+
+enum ScenarioKind {
+  bull,
+  base,
+  bear;
+
+  static ScenarioKind? parse(Object? s) => ScenarioKind.values.asNameMap()[s.toString().trim().toLowerCase()];
+}
+
+/// Egy forgatókönyv: valószínűség, ársáv a részvény devizájában, időtáv.
+class Scenario {
+  const Scenario({
+    required this.kind,
+    required this.probability,
+    this.priceLow,
+    this.priceHigh,
+    this.horizon = '',
+    this.summary = '',
+  });
+
+  final ScenarioKind kind;
+
+  /// Százalék (0–100).
+  final double probability;
+  final double? priceLow;
+  final double? priceHigh;
+  final String horizon;
+  final String summary;
+
+  Map<String, dynamic> toJson() => {
+    'kind': kind.name,
+    'probability': probability,
+    'price_low': priceLow,
+    'price_high': priceHigh,
+    'horizon': horizon,
+    'summary': summary,
+  };
+
+  static Scenario? fromJson(Map<String, dynamic> j) {
+    final kind = ScenarioKind.parse(j['kind']);
+    final p = _num(j['probability']);
+    if (kind == null || p == null) return null;
+    var lo = _num(j['price_low']);
+    var hi = _num(j['price_high']);
+    if (lo != null && hi != null && lo > hi) (lo, hi) = (hi, lo);
+    return Scenario(
+      kind: kind,
+      probability: p.clamp(0, 100).toDouble(),
+      priceLow: lo,
+      priceHigh: hi,
+      horizon: (j['horizon'] as String? ?? '').trim(),
+      summary: (j['summary'] as String? ?? '').trim(),
+    );
+  }
+}
+
+enum KeyLevelKind {
+  support,
+  resistance,
+  anchor;
+
+  static KeyLevelKind parse(Object? s) =>
+      KeyLevelKind.values.asNameMap()[s.toString().trim().toLowerCase()] ?? KeyLevelKind.anchor;
+}
+
+class KeyLevel {
+  const KeyLevel({required this.price, required this.kind, this.label = ''});
+
+  final double price;
+  final KeyLevelKind kind;
+  final String label;
+
+  Map<String, dynamic> toJson() => {'price': price, 'kind': kind.name, 'label': label};
+
+  static KeyLevel? fromJson(Map<String, dynamic> j) {
+    final p = _num(j['price']);
+    if (p == null || p <= 0) return null;
+    return KeyLevel(price: p, kind: KeyLevelKind.parse(j['kind']), label: (j['label'] as String? ?? '').trim());
+  }
+}
+
+/// Közelgő esemény; a dátum lehet pontos (`2026-10-28`) vagy hozzávetőleges.
+class Catalyst {
+  const Catalyst({required this.date, required this.event});
+
+  final String date;
+  final String event;
+
+  /// Rendezéshez: a pontos dátum, ha értelmezhető.
+  DateTime? get parsedDate => DateTime.tryParse(date);
+
+  Map<String, dynamic> toJson() => {'date': date, 'event': event};
+
+  static Catalyst? fromJson(Map<String, dynamic> j) {
+    final event = (j['event'] as String? ?? '').trim();
+    if (event.isEmpty) return null;
+    return Catalyst(date: (j['date'] as String? ?? '').trim(), event: event);
+  }
+}
+
+class ReportOutlook {
+  const ReportOutlook({
+    this.currentPrice,
+    this.currency,
+    this.scenarios = const [],
+    this.keyLevels = const [],
+    this.catalysts = const [],
+    this.marketMood,
+    this.marketMoodReason = '',
+  });
+
+  final double? currentPrice;
+  final String? currency;
+  final List<Scenario> scenarios;
+  final List<KeyLevel> keyLevels;
+  final List<Catalyst> catalysts;
+
+  /// −2 (nagyon pesszimista) … +2 (nagyon optimista).
+  final int? marketMood;
+  final String marketMoodReason;
+
+  bool get isEmpty => scenarios.isEmpty && keyLevels.isEmpty && catalysts.isEmpty && marketMood == null;
+
+  /// A forgatókönyvek valószínűségeinek összege (ideálisan ~100).
+  double get probabilitySum => scenarios.fold(0, (s, e) => s + e.probability);
+
+  Map<String, dynamic> toJson() => {
+    'current_price': currentPrice,
+    'currency': currency,
+    'scenarios': scenarios.map((s) => s.toJson()).toList(),
+    'key_levels': keyLevels.map((k) => k.toJson()).toList(),
+    'catalysts': catalysts.map((c) => c.toJson()).toList(),
+    'market_mood': marketMood,
+    'market_mood_reason': marketMoodReason,
+  };
+
+  static List<T> _list<T>(Object? v, T? Function(Map<String, dynamic>) f) => [
+    for (final e in (v is List ? v : const []))
+      if (e is Map) ?f(e.cast<String, dynamic>()),
+  ];
+
+  factory ReportOutlook.fromJson(Map<String, dynamic> j) {
+    final mood = _num(j['market_mood']);
+    final cur = (j['currency'] as String?)?.trim();
+    final scenarios = _list(j['scenarios'], Scenario.fromJson)..sort((a, b) => a.kind.index.compareTo(b.kind.index));
+    final catalysts = _list(j['catalysts'], Catalyst.fromJson)
+      ..sort((a, b) {
+        final da = a.parsedDate, db = b.parsedDate;
+        if (da == null && db == null) return 0;
+        if (da == null) return 1;
+        if (db == null) return -1;
+        return da.compareTo(db);
+      });
+    return ReportOutlook(
+      currentPrice: _num(j['current_price']),
+      currency: cur == null || cur.isEmpty ? null : cur,
+      scenarios: scenarios,
+      keyLevels: _list(j['key_levels'], KeyLevel.fromJson)..sort((a, b) => a.price.compareTo(b.price)),
+      catalysts: catalysts,
+      marketMood: mood?.round().clamp(-2, 2),
+      marketMoodReason: (j['market_mood_reason'] as String? ?? '').trim(),
+    );
+  }
 }
 
 /// A szekciók rögzített azonosítói: ezek adják a sorrendet és az ikont; a

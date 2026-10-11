@@ -922,4 +922,54 @@ class AppLocalizationsCs extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Tato délka vyžaduje analýz: $needed, zbývá vám však jen: $left. Zvolte v Nastavení kratší délku nebo si pořiďte další analýzy.';
   }
+
+  @override
+  String get outlookMarketMood => 'Nálada na trhu';
+
+  @override
+  String get moodVeryPessimistic => 'Velmi pesimistická';
+
+  @override
+  String get moodPessimistic => 'Pesimistická';
+
+  @override
+  String get moodNeutral => 'Neutrální';
+
+  @override
+  String get moodOptimistic => 'Optimistická';
+
+  @override
+  String get moodVeryOptimistic => 'Velmi optimistická';
+
+  @override
+  String get scenarioBull => 'Optimistický scénář';
+
+  @override
+  String get scenarioBase => 'Základní scénář';
+
+  @override
+  String get scenarioBear => 'Pesimistický scénář';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Aktuální cena: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Klíčové úrovně';
+
+  @override
+  String get keyLevelSupport => 'Podpora';
+
+  @override
+  String get keyLevelResistance => 'Odpor';
+
+  @override
+  String get keyLevelAnchor => 'Cenová kotva';
+
+  @override
+  String get upcomingEvents => 'Nadcházející události';
+
+  @override
+  String get outlookChartNote => 'Orientační rozpětí; pravděpodobnosti jsou hrubé odhady, nikoli předpovědi.';
 }

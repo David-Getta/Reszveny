@@ -880,4 +880,54 @@ class AppLocalizationsMr extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'या लांबीसाठी $needed विश्लेषणे लागतात, पण फक्त $left शिल्लक आहेत. सेटिंग्जमध्ये कमी लांबी निवडा किंवा अधिक विश्लेषणे मिळवा.';
   }
+
+  @override
+  String get outlookMarketMood => 'बाजाराचा मूड';
+
+  @override
+  String get moodVeryPessimistic => 'अतिशय निराशावादी';
+
+  @override
+  String get moodPessimistic => 'निराशावादी';
+
+  @override
+  String get moodNeutral => 'तटस्थ';
+
+  @override
+  String get moodOptimistic => 'आशावादी';
+
+  @override
+  String get moodVeryOptimistic => 'अतिशय आशावादी';
+
+  @override
+  String get scenarioBull => 'तेजीची परिस्थिती';
+
+  @override
+  String get scenarioBase => 'मूळ परिस्थिती';
+
+  @override
+  String get scenarioBear => 'मंदीची परिस्थिती';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'सध्याची किंमत: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'महत्त्वाचे स्तर';
+
+  @override
+  String get keyLevelSupport => 'सपोर्ट';
+
+  @override
+  String get keyLevelResistance => 'रेझिस्टन्स';
+
+  @override
+  String get keyLevelAnchor => 'अँकर स्तर';
+
+  @override
+  String get upcomingEvents => 'आगामी घटना';
+
+  @override
+  String get outlookChartNote => 'सूचक श्रेणी; संभाव्यता हे ढोबळ अंदाज आहेत, भाकिते नव्हेत.';
 }

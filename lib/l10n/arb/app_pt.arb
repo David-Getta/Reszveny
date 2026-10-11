@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Extensão padrão por plano: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. «Breve» usa menos 2 e «Detalhada» mais 2.",
   "aiWebSearchesShort": "{count, plural, one{até 1 pesquisa na web} other{até {count} pesquisas na web}}",
   "planWebSearches": "{count, plural, one{1 pesquisa na web por análise} other{{count} pesquisas na web por análise}}",
-  "errNotEnoughCredits": "Esta extensão requer {needed} análises, mas só lhe restam {left}. Escolha uma extensão mais curta nas Configurações ou obtenha mais análises."
+  "errNotEnoughCredits": "Esta extensão requer {needed} análises, mas só lhe restam {left}. Escolha uma extensão mais curta nas Configurações ou obtenha mais análises.",
+  "outlookMarketMood": "Sentimento do mercado",
+  "moodVeryPessimistic": "Muito pessimista",
+  "moodPessimistic": "Pessimista",
+  "moodNeutral": "Neutro",
+  "moodOptimistic": "Otimista",
+  "moodVeryOptimistic": "Muito otimista",
+  "scenarioBull": "Cenário otimista",
+  "scenarioBase": "Cenário base",
+  "scenarioBear": "Cenário pessimista",
+  "outlookCurrentPrice": "Preço atual: {price}",
+  "outlookKeyLevels": "Níveis-chave",
+  "keyLevelSupport": "Suporte",
+  "keyLevelResistance": "Resistência",
+  "keyLevelAnchor": "Âncora",
+  "upcomingEvents": "Próximos eventos",
+  "outlookChartNote": "Intervalos indicativos; as probabilidades são estimativas aproximadas, não previsões."
 }

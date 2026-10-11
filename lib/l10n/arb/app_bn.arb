@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "প্ল্যান অনুযায়ী স্ট্যান্ডার্ড দৈর্ঘ্য: সাধারণ {normal}, Pro {pro}, Max {max}, Ultra {ultra}। সংক্ষিপ্তে 2টি কম, বিস্তারিতে 2টি বেশি।",
   "aiWebSearchesShort": "{count, plural, =1{সর্বোচ্চ 1টি ওয়েব অনুসন্ধান} other{সর্বোচ্চ {count}টি ওয়েব অনুসন্ধান}}",
   "planWebSearches": "{count, plural, =1{প্রতি বিশ্লেষণে 1টি ওয়েব অনুসন্ধান} other{প্রতি বিশ্লেষণে {count}টি ওয়েব অনুসন্ধান}}",
-  "errNotEnoughCredits": "এই দৈর্ঘ্যের জন্য {needed}টি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র {left}টি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।"
+  "errNotEnoughCredits": "এই দৈর্ঘ্যের জন্য {needed}টি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র {left}টি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।",
+  "outlookMarketMood": "বাজারের মেজাজ",
+  "moodVeryPessimistic": "অত্যন্ত হতাশাবাদী",
+  "moodPessimistic": "হতাশাবাদী",
+  "moodNeutral": "নিরপেক্ষ",
+  "moodOptimistic": "আশাবাদী",
+  "moodVeryOptimistic": "অত্যন্ত আশাবাদী",
+  "scenarioBull": "তেজি পরিস্থিতি",
+  "scenarioBase": "ভিত্তি পরিস্থিতি",
+  "scenarioBear": "মন্দা পরিস্থিতি",
+  "outlookCurrentPrice": "বর্তমান দাম: {price}",
+  "outlookKeyLevels": "গুরুত্বপূর্ণ স্তর",
+  "keyLevelSupport": "সাপোর্ট",
+  "keyLevelResistance": "রেজিস্ট্যান্স",
+  "keyLevelAnchor": "অ্যাঙ্কর স্তর",
+  "upcomingEvents": "আসন্ন ঘটনা",
+  "outlookChartNote": "আনুমানিক পরিসর; সম্ভাবনাগুলি মোটামুটি অনুমান, পূর্বাভাস নয়।"
 }

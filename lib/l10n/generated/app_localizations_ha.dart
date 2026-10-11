@@ -882,4 +882,54 @@ class AppLocalizationsHa extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Wannan tsawon yana buƙatar nazari $needed, amma saura $left kawai. Zaɓi gajeren tsawo a Saituna ko sami ƙarin nazari.';
   }
+
+  @override
+  String get outlookMarketMood => 'Ra\'ayin kasuwa';
+
+  @override
+  String get moodVeryPessimistic => 'Mara kyakkyawan fata sosai';
+
+  @override
+  String get moodPessimistic => 'Mara kyakkyawan fata';
+
+  @override
+  String get moodNeutral => 'Tsaka-tsaki';
+
+  @override
+  String get moodOptimistic => 'Mai kyakkyawan fata';
+
+  @override
+  String get moodVeryOptimistic => 'Mai kyakkyawan fata sosai';
+
+  @override
+  String get scenarioBull => 'Hasashen haɓaka';
+
+  @override
+  String get scenarioBase => 'Hasashen asali';
+
+  @override
+  String get scenarioBear => 'Hasashen faɗuwa';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Farashin yanzu: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Muhimman matakai';
+
+  @override
+  String get keyLevelSupport => 'Tallafi';
+
+  @override
+  String get keyLevelResistance => 'Juriya';
+
+  @override
+  String get keyLevelAnchor => 'Ma\'auni';
+
+  @override
+  String get upcomingEvents => 'Abubuwan da ke tafe';
+
+  @override
+  String get outlookChartNote => 'Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba.';
 }

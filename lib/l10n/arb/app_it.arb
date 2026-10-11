@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Lunghezza standard per piano: Normale {normal}, Pro {pro}, Max {max}, Ultra {ultra}. «Breve» ne usa 2 in meno, «Approfondita» 2 in più.",
   "aiWebSearchesShort": "{count, plural, one{fino a 1 ricerca web} other{fino a {count} ricerche web}}",
   "planWebSearches": "{count, plural, one{1 ricerca web per analisi} other{{count} ricerche web per analisi}}",
-  "errNotEnoughCredits": "Questa lunghezza richiede {needed} analisi, ma te ne restano solo {left}. Scegli una lunghezza più breve nelle Impostazioni o ottieni altre analisi."
+  "errNotEnoughCredits": "Questa lunghezza richiede {needed} analisi, ma te ne restano solo {left}. Scegli una lunghezza più breve nelle Impostazioni o ottieni altre analisi.",
+  "outlookMarketMood": "Sentiment di mercato",
+  "moodVeryPessimistic": "Molto pessimista",
+  "moodPessimistic": "Pessimista",
+  "moodNeutral": "Neutrale",
+  "moodOptimistic": "Ottimista",
+  "moodVeryOptimistic": "Molto ottimista",
+  "scenarioBull": "Scenario rialzista",
+  "scenarioBase": "Scenario base",
+  "scenarioBear": "Scenario ribassista",
+  "outlookCurrentPrice": "Prezzo attuale: {price}",
+  "outlookKeyLevels": "Livelli chiave",
+  "keyLevelSupport": "Supporto",
+  "keyLevelResistance": "Resistenza",
+  "keyLevelAnchor": "Ancoraggio",
+  "upcomingEvents": "Prossimi eventi",
+  "outlookChartNote": "Intervalli indicativi; le probabilità sono stime approssimative, non previsioni."
 }

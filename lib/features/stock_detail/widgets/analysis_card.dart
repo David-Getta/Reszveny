@@ -12,6 +12,7 @@ import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
+import 'outlook_view.dart';
 import 'section_card.dart';
 
 /// Az AI-elemzés kártyája: gombnyomásra készül (tokenköltség), utána a
@@ -148,7 +149,11 @@ class _AnalysisCardState extends State<AnalysisCard> {
                       style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
                     ),
                   ),
-                for (final s in report.sections) _ReportSectionView(section: s),
+                if (report.outlook?.marketMood case final mood?) ...[
+                  const SizedBox(height: 12),
+                  MarketMoodBar(mood: mood, reason: report.outlook!.marketMoodReason),
+                ],
+                for (final s in report.sections) _ReportSectionView(section: s, outlook: report.outlook, fmt: fmt),
                 if (report.sources.isNotEmpty) ...[
                   const SizedBox(height: 16),
                   Text(l10n.aiSources, style: theme.textTheme.titleSmall),
@@ -191,9 +196,11 @@ class _AnalysisCardState extends State<AnalysisCard> {
 }
 
 class _ReportSectionView extends StatelessWidget {
-  const _ReportSectionView({required this.section});
+  const _ReportSectionView({required this.section, this.outlook, required this.fmt});
 
   final ReportSection section;
+  final ReportOutlook? outlook;
+  final Fmt fmt;
 
   IconData get _icon => switch (section.kind) {
     ReportSectionKind.summary => Icons.notes_rounded,
@@ -227,6 +234,14 @@ class _ReportSectionView extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 8),
+          if (section.kind == ReportSectionKind.outlook && outlook != null && outlook!.scenarios.isNotEmpty) ...[
+            ScenarioChart(outlook: outlook!, fmt: fmt),
+            const SizedBox(height: 14),
+          ],
+          if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty) ...[
+            CatalystTimeline(catalysts: outlook!.catalysts, fmt: fmt),
+            const SizedBox(height: 10),
+          ],
           for (final para in section.paragraphs)
             Padding(
               padding: const EdgeInsets.only(bottom: 8),

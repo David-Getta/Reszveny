@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Độ dài tiêu chuẩn theo gói: Thường {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Ngắn gọn dùng ít hơn 2, Chuyên sâu nhiều hơn 2.",
   "aiWebSearchesShort": "{count, plural, other{tối đa {count} lượt tìm kiếm web}}",
   "planWebSearches": "{count, plural, other{{count} lượt tìm kiếm web mỗi phân tích}}",
-  "errNotEnoughCredits": "Độ dài này cần {needed} lượt phân tích, nhưng bạn chỉ còn {left}. Hãy chọn độ dài ngắn hơn trong Cài đặt hoặc mua thêm lượt phân tích."
+  "errNotEnoughCredits": "Độ dài này cần {needed} lượt phân tích, nhưng bạn chỉ còn {left}. Hãy chọn độ dài ngắn hơn trong Cài đặt hoặc mua thêm lượt phân tích.",
+  "outlookMarketMood": "Tâm lý thị trường",
+  "moodVeryPessimistic": "Rất bi quan",
+  "moodPessimistic": "Bi quan",
+  "moodNeutral": "Trung lập",
+  "moodOptimistic": "Lạc quan",
+  "moodVeryOptimistic": "Rất lạc quan",
+  "scenarioBull": "Kịch bản lạc quan",
+  "scenarioBase": "Kịch bản cơ sở",
+  "scenarioBear": "Kịch bản bi quan",
+  "outlookCurrentPrice": "Giá hiện tại: {price}",
+  "outlookKeyLevels": "Mức giá then chốt",
+  "keyLevelSupport": "Hỗ trợ",
+  "keyLevelResistance": "Kháng cự",
+  "keyLevelAnchor": "Mức neo",
+  "upcomingEvents": "Sự kiện sắp tới",
+  "outlookChartNote": "Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo."
 }

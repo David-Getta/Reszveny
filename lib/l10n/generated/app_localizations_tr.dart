@@ -880,4 +880,54 @@ class AppLocalizationsTr extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Bu uzunluk $needed analiz gerektiriyor, ancak yalnızca $left analiz hakkınız kaldı. Ayarlar\'dan daha kısa bir uzunluk seçin veya ek analiz alın.';
   }
+
+  @override
+  String get outlookMarketMood => 'Piyasa duyarlılığı';
+
+  @override
+  String get moodVeryPessimistic => 'Çok kötümser';
+
+  @override
+  String get moodPessimistic => 'Kötümser';
+
+  @override
+  String get moodNeutral => 'Nötr';
+
+  @override
+  String get moodOptimistic => 'İyimser';
+
+  @override
+  String get moodVeryOptimistic => 'Çok iyimser';
+
+  @override
+  String get scenarioBull => 'İyimser senaryo';
+
+  @override
+  String get scenarioBase => 'Baz senaryo';
+
+  @override
+  String get scenarioBear => 'Kötümser senaryo';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Güncel fiyat: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Kilit seviyeler';
+
+  @override
+  String get keyLevelSupport => 'Destek';
+
+  @override
+  String get keyLevelResistance => 'Direnç';
+
+  @override
+  String get keyLevelAnchor => 'Çapa seviyesi';
+
+  @override
+  String get upcomingEvents => 'Yaklaşan olaylar';
+
+  @override
+  String get outlookChartNote => 'Göstergesel aralıklar; olasılıklar kaba tahminlerdir, öngörü değildir.';
 }

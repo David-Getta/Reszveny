@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Dawa standar miturut paket: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Ringkes nggunakake 2 luwih sithik, Jero 2 luwih akeh.",
   "aiWebSearchesShort": "{count, plural, =1{nganti 1 telusuran web} other{nganti {count} telusuran web}}",
   "planWebSearches": "{count, plural, =1{1 telusuran web saben analisis} other{{count} telusuran web saben analisis}}",
-  "errNotEnoughCredits": "Dawa iki mbutuhake {needed} analisis, nanging mung kari {left}. Pilih dawa sing luwih cendhak ing Setelan utawa entuk analisis tambahan."
+  "errNotEnoughCredits": "Dawa iki mbutuhake {needed} analisis, nanging mung kari {left}. Pilih dawa sing luwih cendhak ing Setelan utawa entuk analisis tambahan.",
+  "outlookMarketMood": "Swasana pasar",
+  "moodVeryPessimistic": "Pesimis banget",
+  "moodPessimistic": "Pesimis",
+  "moodNeutral": "Netral",
+  "moodOptimistic": "Optimis",
+  "moodVeryOptimistic": "Optimis banget",
+  "scenarioBull": "Skenario optimis",
+  "scenarioBase": "Skenario dhasar",
+  "scenarioBear": "Skenario pesimis",
+  "outlookCurrentPrice": "Rega saiki: {price}",
+  "outlookKeyLevels": "Level penting",
+  "keyLevelSupport": "Support",
+  "keyLevelResistance": "Resistance",
+  "keyLevelAnchor": "Jangkar",
+  "upcomingEvents": "Acara sing bakal teka",
+  "outlookChartNote": "Kisaran indikatif; probabilitas mung pambiji kasar, dudu ramalan."
 }

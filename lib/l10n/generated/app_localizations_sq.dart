@@ -883,4 +883,54 @@ class AppLocalizationsSq extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Kjo gjatësi kërkon më shumë analiza ($needed) se sa ju kanë mbetur ($left). Zgjidhni një gjatësi më të shkurtër te Cilësimet ose merrni më shumë analiza.';
   }
+
+  @override
+  String get outlookMarketMood => 'Disponimi i tregut';
+
+  @override
+  String get moodVeryPessimistic => 'Shumë pesimist';
+
+  @override
+  String get moodPessimistic => 'Pesimist';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimist';
+
+  @override
+  String get moodVeryOptimistic => 'Shumë optimist';
+
+  @override
+  String get scenarioBull => 'Skenari optimist';
+
+  @override
+  String get scenarioBase => 'Skenari bazë';
+
+  @override
+  String get scenarioBear => 'Skenari pesimist';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Çmimi aktual: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Nivelet kyçe';
+
+  @override
+  String get keyLevelSupport => 'Mbështetja';
+
+  @override
+  String get keyLevelResistance => 'Rezistenca';
+
+  @override
+  String get keyLevelAnchor => 'Spiranca';
+
+  @override
+  String get upcomingEvents => 'Ngjarjet e ardhshme';
+
+  @override
+  String get outlookChartNote => 'Intervale orientuese; probabilitetet janë vlerësime të përafërta, jo parashikime.';
 }

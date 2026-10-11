@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "プラン別の標準の長さ：ノーマル {normal}、Pro {pro}、Max {max}、Ultra {ultra}。簡潔は 2 回少なく、詳細は 2 回多くなります。",
   "aiWebSearchesShort": "{count, plural, other{最大 {count} 回のウェブ検索}}",
   "planWebSearches": "{count, plural, other{分析 1 回につきウェブ検索 {count} 回}}",
-  "errNotEnoughCredits": "この長さには分析 {needed} 回分が必要ですが、残りは {left} 回です。設定で短い長さを選ぶか、追加の分析を入手してください。"
+  "errNotEnoughCredits": "この長さには分析 {needed} 回分が必要ですが、残りは {left} 回です。設定で短い長さを選ぶか、追加の分析を入手してください。",
+  "outlookMarketMood": "市場センチメント",
+  "moodVeryPessimistic": "非常に悲観的",
+  "moodPessimistic": "悲観的",
+  "moodNeutral": "中立",
+  "moodOptimistic": "楽観的",
+  "moodVeryOptimistic": "非常に楽観的",
+  "scenarioBull": "強気シナリオ",
+  "scenarioBase": "基本シナリオ",
+  "scenarioBear": "弱気シナリオ",
+  "outlookCurrentPrice": "現在値：{price}",
+  "outlookKeyLevels": "重要な価格水準",
+  "keyLevelSupport": "サポート",
+  "keyLevelResistance": "レジスタンス",
+  "keyLevelAnchor": "基準価格",
+  "upcomingEvents": "今後のイベント",
+  "outlookChartNote": "価格帯は目安です。確率は大まかな見立てであり、予測ではありません。"
 }

@@ -3,11 +3,12 @@
 Ez a dokumentum az AI-elemzés rendszerpromptjának második változatát és a tervezési
 döntéseket tartalmazza.
 
-**Állapot: beépítve.** A prompt a `lib/features/analysis/claude_stock_analyst.dart` fájl
-`buildSystemPrompt` függvényében van, a beállításoktól függő részekkel (hossz, olvasói szint,
-ellenérv, webkeresések száma, az olvasó országa és pénzneme). Az alábbi 3. pont a standard
-változat; a ténylegesen küldött szöveg a beállítások szerint változik. Az
-`analysis_parse_test` ellenőrzi a kötelező elemeket.
+**Állapot: v2.1 beépítve.** A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
+fájlban van (`systemPrompt`), és minden felhasználónál bájtra azonos, így gyorsítótárazható. A
+beállításoktól függő részek (webkeresés-keret, hossz, olvasói szint, ellenérv, helyi szemszög) a
+felhasználói üzenet elején, a „Report settings” blokkban mennek (`buildSettings`). Az alábbi 3. pont
+a v2 vázlat; a v2.1 változásait a 7. pont sorolja fel. Az `analysis_parse_test` ellenőrzi a kötelező
+elemeket.
 
 ## 0. Döntések (2026-10-10)
 
@@ -250,3 +251,30 @@ a bemenet ne nőjön túl; a részletekért a modell úgyis a webre megy.
 - Pontozás 1–5 skálán: konkrétság, források és dátumok, rejtett tényezők találata, a kilátás
   használhatósága, nyelvi minőség a kért nyelven, JSON-hibák száma.
 - A tesztjelentéseket a `docs/elemzes-minta/` mappába tesszük, hogy visszanézhetők legyenek.
+
+## 7. v2.1 (2026-10-11)
+
+| Változás | Miért |
+|---|---|
+| A rendszerprompt állandó, a beállítások a felhasználói üzenetbe kerültek; explicit gyorsítótár-töréspont a rendszerpromptra, automatikus gyorsítótár a beszélgetés végére | A ~3 000 tokenes rendszerprompt minden elemzésnél gyorsítótárból jön (a normál ár 10 %-a), és a `pause_turn` utáni folytatások a keresési találatokat sem fizetik ki újra |
+| A modell megkapja a versenytársakat, az utolsó 90 nap bennfentes ügyleteit, az utolsó 4 negyedév EPS-meglepetéseit és a következő gyorsjelentés dátumát (ingyenes Finnhub-végpontok) | Kevesebb webkeresés megy el alapadatokra; a bennfentes jelzést a prompt külön értelmezi (a P vétel erősebb jel, mint az S eladás) |
+| Új kötelező `outlook_data` mező: jelenlegi ár, három forgatókönyv valószínűséggel és ársávval, 2–5 kulcsszint, legfeljebb 6 dátumozott esemény, piaci hangulat (−2…+2) indoklással | A felület grafikusan mutatja: hangulat-sáv, forgatókönyv-sávok közös ártengelyen a jelenlegi ár vonalával, kulcsszint-címkék, eseménynaptár |
+| A források a `pause_turn` előtti keresési találatokból is összegyűlnek | Eddig csak az utolsó válaszrész találatai kerültek be |
+| Prompt-verzió az elemzésben (`prompt_version`) és tokenhasználat-összesítés (`lastUsage`) | A minták összevethetők, a költség és a gyorsítótár-találat mérhető |
+| Gépi minőség-ellenőrző (`ReportQuality`) | Szekciók és sorrend, dátumozott hírek, 100 %-os valószínűség-összeg, ársávok, a bull a jelenlegi ár fölött és a bear alatta, források száma, terjedelem |
+
+### Éles eval futtatása
+
+Kulccsal, kézzel (pénzbe kerül, részvényenként kb. 0,3–1 USD):
+
+```
+flutter test --tags eval test/eval \
+  --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=... \
+  --dart-define=EVAL_SYMBOLS=AAPL,ASML,OTP.BD,BABA,MRNA,KO,SMCI \
+  --dart-define=EVAL_LANGUAGE=Hungarian --dart-define=EVAL_DEPTH=standard
+```
+
+Az eredmény a `docs/elemzes-minta/v2.1/` mappába kerül: részvényenként JSON és olvasható Markdown,
+valamint egy `SUMMARY.md` táblázat a minőségpontszámmal, a hibákkal, a szószámmal, a tokenekkel, a
+gyorsítótár-olvasással és a keresések számával.
+

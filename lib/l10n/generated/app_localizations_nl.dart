@@ -882,4 +882,54 @@ class AppLocalizationsNl extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Deze lengte vereist $needed analyses, maar je hebt er nog maar $left. Kies een kortere lengte in Instellingen of koop extra analyses.';
   }
+
+  @override
+  String get outlookMarketMood => 'Marktsentiment';
+
+  @override
+  String get moodVeryPessimistic => 'Zeer pessimistisch';
+
+  @override
+  String get moodPessimistic => 'Pessimistisch';
+
+  @override
+  String get moodNeutral => 'Neutraal';
+
+  @override
+  String get moodOptimistic => 'Optimistisch';
+
+  @override
+  String get moodVeryOptimistic => 'Zeer optimistisch';
+
+  @override
+  String get scenarioBull => 'Optimistisch scenario';
+
+  @override
+  String get scenarioBase => 'Basisscenario';
+
+  @override
+  String get scenarioBear => 'Pessimistisch scenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Huidige koers: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Belangrijke niveaus';
+
+  @override
+  String get keyLevelSupport => 'Steun';
+
+  @override
+  String get keyLevelResistance => 'Weerstand';
+
+  @override
+  String get keyLevelAnchor => 'Ankerniveau';
+
+  @override
+  String get upcomingEvents => 'Komende gebeurtenissen';
+
+  @override
+  String get outlookChartNote => 'Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen.';
 }

@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Стандартна дължина според плана: Нормален {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Кратко“ използва с 2 по-малко, „Подробно“ – с 2 повече.",
   "aiWebSearchesShort": "{count, plural, one{до {count} търсене в мрежата} other{до {count} търсения в мрежата}}",
   "planWebSearches": "{count, plural, one{{count} търсене в мрежата на анализ} other{{count} търсения в мрежата на анализ}}",
-  "errNotEnoughCredits": "Тази дължина изисква анализи: {needed}, а оставащите са: {left}. Изберете по-кратка дължина в Настройки или вземете още анализи."
+  "errNotEnoughCredits": "Тази дължина изисква анализи: {needed}, а оставащите са: {left}. Изберете по-кратка дължина в Настройки или вземете още анализи.",
+  "outlookMarketMood": "Пазарни настроения",
+  "moodVeryPessimistic": "Много песимистични",
+  "moodPessimistic": "Песимистични",
+  "moodNeutral": "Неутрални",
+  "moodOptimistic": "Оптимистични",
+  "moodVeryOptimistic": "Много оптимистични",
+  "scenarioBull": "Оптимистичен сценарий",
+  "scenarioBase": "Базов сценарий",
+  "scenarioBear": "Песимистичен сценарий",
+  "outlookCurrentPrice": "Текуща цена: {price}",
+  "outlookKeyLevels": "Ключови нива",
+  "keyLevelSupport": "Подкрепа",
+  "keyLevelResistance": "Съпротива",
+  "keyLevelAnchor": "Ценова котва",
+  "upcomingEvents": "Предстоящи събития",
+  "outlookChartNote": "Ориентировъчни диапазони; вероятностите са груби оценки, а не прогнози."
 }

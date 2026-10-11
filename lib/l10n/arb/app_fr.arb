@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Longueur standard selon le forfait : Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. « Brève » en utilise 2 de moins, « Approfondie » 2 de plus.",
   "aiWebSearchesShort": "{count, plural, one{jusqu’à 1 recherche web} other{jusqu’à {count} recherches web}}",
   "planWebSearches": "{count, plural, one{1 recherche web par analyse} other{{count} recherches web par analyse}}",
-  "errNotEnoughCredits": "Cette longueur nécessite {needed} analyses, mais il ne vous en reste que {left}. Choisissez une longueur plus courte dans les Paramètres ou obtenez des analyses supplémentaires."
+  "errNotEnoughCredits": "Cette longueur nécessite {needed} analyses, mais il ne vous en reste que {left}. Choisissez une longueur plus courte dans les Paramètres ou obtenez des analyses supplémentaires.",
+  "outlookMarketMood": "Sentiment du marché",
+  "moodVeryPessimistic": "Très pessimiste",
+  "moodPessimistic": "Pessimiste",
+  "moodNeutral": "Neutre",
+  "moodOptimistic": "Optimiste",
+  "moodVeryOptimistic": "Très optimiste",
+  "scenarioBull": "Scénario haussier",
+  "scenarioBase": "Scénario central",
+  "scenarioBear": "Scénario baissier",
+  "outlookCurrentPrice": "Cours actuel : {price}",
+  "outlookKeyLevels": "Niveaux clés",
+  "keyLevelSupport": "Support",
+  "keyLevelResistance": "Résistance",
+  "keyLevelAnchor": "Ancrage",
+  "upcomingEvents": "Événements à venir",
+  "outlookChartNote": "Fourchettes indicatives ; les probabilités sont des estimations approximatives, pas des prévisions."
 }

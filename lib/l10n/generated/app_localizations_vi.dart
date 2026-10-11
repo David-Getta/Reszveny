@@ -872,4 +872,54 @@ class AppLocalizationsVi extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Độ dài này cần $needed lượt phân tích, nhưng bạn chỉ còn $left. Hãy chọn độ dài ngắn hơn trong Cài đặt hoặc mua thêm lượt phân tích.';
   }
+
+  @override
+  String get outlookMarketMood => 'Tâm lý thị trường';
+
+  @override
+  String get moodVeryPessimistic => 'Rất bi quan';
+
+  @override
+  String get moodPessimistic => 'Bi quan';
+
+  @override
+  String get moodNeutral => 'Trung lập';
+
+  @override
+  String get moodOptimistic => 'Lạc quan';
+
+  @override
+  String get moodVeryOptimistic => 'Rất lạc quan';
+
+  @override
+  String get scenarioBull => 'Kịch bản lạc quan';
+
+  @override
+  String get scenarioBase => 'Kịch bản cơ sở';
+
+  @override
+  String get scenarioBear => 'Kịch bản bi quan';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Giá hiện tại: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Mức giá then chốt';
+
+  @override
+  String get keyLevelSupport => 'Hỗ trợ';
+
+  @override
+  String get keyLevelResistance => 'Kháng cự';
+
+  @override
+  String get keyLevelAnchor => 'Mức neo';
+
+  @override
+  String get upcomingEvents => 'Sự kiện sắp tới';
+
+  @override
+  String get outlookChartNote => 'Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo.';
 }

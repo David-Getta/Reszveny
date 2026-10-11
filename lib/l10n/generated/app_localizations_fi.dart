@@ -886,4 +886,55 @@ class AppLocalizationsFi extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Tämä pituus vaatii $needed analyysia, mutta jäljellä on vain $left. Valitse lyhyempi pituus Asetuksista tai hanki lisää analyyseja.';
   }
+
+  @override
+  String get outlookMarketMood => 'Markkinatunnelma';
+
+  @override
+  String get moodVeryPessimistic => 'Erittäin pessimistinen';
+
+  @override
+  String get moodPessimistic => 'Pessimistinen';
+
+  @override
+  String get moodNeutral => 'Neutraali';
+
+  @override
+  String get moodOptimistic => 'Optimistinen';
+
+  @override
+  String get moodVeryOptimistic => 'Erittäin optimistinen';
+
+  @override
+  String get scenarioBull => 'Optimistinen skenaario';
+
+  @override
+  String get scenarioBase => 'Perusskenaario';
+
+  @override
+  String get scenarioBear => 'Pessimistinen skenaario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Nykyinen kurssi: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Keskeiset tasot';
+
+  @override
+  String get keyLevelSupport => 'Tuki';
+
+  @override
+  String get keyLevelResistance => 'Vastus';
+
+  @override
+  String get keyLevelAnchor => 'Ankkuritaso';
+
+  @override
+  String get upcomingEvents => 'Tulevat tapahtumat';
+
+  @override
+  String get outlookChartNote =>
+      'Suuntaa antavat vaihteluvälit; todennäköisyydet ovat karkeita arvioita, eivät ennusteita.';
 }

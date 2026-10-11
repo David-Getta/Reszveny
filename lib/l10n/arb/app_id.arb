@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Panjang standar per paket: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Ringkas menggunakan 2 lebih sedikit, Mendalam 2 lebih banyak.",
   "aiWebSearchesShort": "{count, plural, other{hingga {count} pencarian web}}",
   "planWebSearches": "{count, plural, other{{count} pencarian web per analisis}}",
-  "errNotEnoughCredits": "Panjang ini memerlukan {needed} analisis, tetapi hanya tersisa {left}. Pilih panjang yang lebih pendek di Pengaturan atau dapatkan analisis tambahan."
+  "errNotEnoughCredits": "Panjang ini memerlukan {needed} analisis, tetapi hanya tersisa {left}. Pilih panjang yang lebih pendek di Pengaturan atau dapatkan analisis tambahan.",
+  "outlookMarketMood": "Sentimen pasar",
+  "moodVeryPessimistic": "Sangat pesimis",
+  "moodPessimistic": "Pesimis",
+  "moodNeutral": "Netral",
+  "moodOptimistic": "Optimis",
+  "moodVeryOptimistic": "Sangat optimis",
+  "scenarioBull": "Skenario optimis",
+  "scenarioBase": "Skenario dasar",
+  "scenarioBear": "Skenario pesimis",
+  "outlookCurrentPrice": "Harga saat ini: {price}",
+  "outlookKeyLevels": "Level kunci",
+  "keyLevelSupport": "Support",
+  "keyLevelResistance": "Resistance",
+  "keyLevelAnchor": "Harga acuan",
+  "upcomingEvents": "Agenda mendatang",
+  "outlookChartNote": "Rentang bersifat indikatif; probabilitas hanyalah perkiraan kasar, bukan prediksi."
 }

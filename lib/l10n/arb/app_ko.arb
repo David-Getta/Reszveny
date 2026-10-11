@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "요금제별 표준 길이: 일반 {normal}, Pro {pro}, Max {max}, Ultra {ultra}. 간략은 2회 적게, 심층은 2회 많게 사용합니다.",
   "aiWebSearchesShort": "{count, plural, other{최대 {count}회 웹 검색}}",
   "planWebSearches": "{count, plural, other{분석당 웹 검색 {count}회}}",
-  "errNotEnoughCredits": "이 길이에는 분석 {needed}회가 필요하지만 {left}회만 남았습니다. 설정에서 더 짧은 길이를 선택하거나 추가 분석을 구매하세요."
+  "errNotEnoughCredits": "이 길이에는 분석 {needed}회가 필요하지만 {left}회만 남았습니다. 설정에서 더 짧은 길이를 선택하거나 추가 분석을 구매하세요.",
+  "outlookMarketMood": "시장 심리",
+  "moodVeryPessimistic": "매우 비관적",
+  "moodPessimistic": "비관적",
+  "moodNeutral": "중립",
+  "moodOptimistic": "낙관적",
+  "moodVeryOptimistic": "매우 낙관적",
+  "scenarioBull": "강세 시나리오",
+  "scenarioBase": "기본 시나리오",
+  "scenarioBear": "약세 시나리오",
+  "outlookCurrentPrice": "현재가: {price}",
+  "outlookKeyLevels": "주요 가격대",
+  "keyLevelSupport": "지지선",
+  "keyLevelResistance": "저항선",
+  "keyLevelAnchor": "기준가",
+  "upcomingEvents": "예정된 이벤트",
+  "outlookChartNote": "가격 범위는 참고용이며, 확률은 대략적인 판단일 뿐 예측이 아닙니다."
 }

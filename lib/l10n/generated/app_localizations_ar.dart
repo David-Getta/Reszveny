@@ -907,4 +907,54 @@ class AppLocalizationsAr extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'يتطلب هذا الطول عدداً من التحليلات قدره $needed، لكن المتبقي لديك $left فقط. اختر طولاً أقصر من الإعدادات أو احصل على مزيد من التحليلات.';
   }
+
+  @override
+  String get outlookMarketMood => 'مزاج السوق';
+
+  @override
+  String get moodVeryPessimistic => 'متشائم جداً';
+
+  @override
+  String get moodPessimistic => 'متشائم';
+
+  @override
+  String get moodNeutral => 'محايد';
+
+  @override
+  String get moodOptimistic => 'متفائل';
+
+  @override
+  String get moodVeryOptimistic => 'متفائل جداً';
+
+  @override
+  String get scenarioBull => 'السيناريو المتفائل';
+
+  @override
+  String get scenarioBase => 'السيناريو الأساسي';
+
+  @override
+  String get scenarioBear => 'السيناريو المتشائم';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'السعر الحالي: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'المستويات الرئيسية';
+
+  @override
+  String get keyLevelSupport => 'الدعم';
+
+  @override
+  String get keyLevelResistance => 'المقاومة';
+
+  @override
+  String get keyLevelAnchor => 'المستوى المرجعي';
+
+  @override
+  String get upcomingEvents => 'الأحداث القادمة';
+
+  @override
+  String get outlookChartNote => 'نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات.';
 }

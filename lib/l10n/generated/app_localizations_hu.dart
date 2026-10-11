@@ -882,4 +882,54 @@ class AppLocalizationsHu extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Ehhez a hosszhoz $needed elemzés kell, de csak $left maradt. Válassz rövidebbet a Beállításokban, vagy vásárolj még elemzést.';
   }
+
+  @override
+  String get outlookMarketMood => 'Piaci hangulat';
+
+  @override
+  String get moodVeryPessimistic => 'Nagyon pesszimista';
+
+  @override
+  String get moodPessimistic => 'Pesszimista';
+
+  @override
+  String get moodNeutral => 'Semleges';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Nagyon optimista';
+
+  @override
+  String get scenarioBull => 'Optimista forgatókönyv';
+
+  @override
+  String get scenarioBase => 'Alapforgatókönyv';
+
+  @override
+  String get scenarioBear => 'Pesszimista forgatókönyv';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Jelenlegi ár: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Kulcsszintek';
+
+  @override
+  String get keyLevelSupport => 'Támasz';
+
+  @override
+  String get keyLevelResistance => 'Ellenállás';
+
+  @override
+  String get keyLevelAnchor => 'Horgony';
+
+  @override
+  String get upcomingEvents => 'Közelgő események';
+
+  @override
+  String get outlookChartNote => 'Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések.';
 }

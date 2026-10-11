@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "تعداد جستجوی وب در طول استاندارد بر اساس طرح: معمولی {normal}، Pro {pro}، Max {max}، Ultra {ultra}. حالت کوتاه 2 جستجوی کمتر و حالت عمیق 2 جستجوی بیشتر دارد.",
   "aiWebSearchesShort": "{count, plural, one{تا {count} جستجوی وب} other{تا {count} جستجوی وب}}",
   "planWebSearches": "{count, plural, one{{count} جستجوی وب برای هر تحلیل} other{{count} جستجوی وب برای هر تحلیل}}",
-  "errNotEnoughCredits": "این طول به {needed} تحلیل نیاز دارد، اما فقط {left} تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید."
+  "errNotEnoughCredits": "این طول به {needed} تحلیل نیاز دارد، اما فقط {left} تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید.",
+  "outlookMarketMood": "حال‌وهوای بازار",
+  "moodVeryPessimistic": "بسیار بدبینانه",
+  "moodPessimistic": "بدبینانه",
+  "moodNeutral": "خنثی",
+  "moodOptimistic": "خوش‌بینانه",
+  "moodVeryOptimistic": "بسیار خوش‌بینانه",
+  "scenarioBull": "سناریوی خوش‌بینانه",
+  "scenarioBase": "سناریوی پایه",
+  "scenarioBear": "سناریوی بدبینانه",
+  "outlookCurrentPrice": "قیمت فعلی: {price}",
+  "outlookKeyLevels": "سطوح کلیدی",
+  "keyLevelSupport": "حمایت",
+  "keyLevelResistance": "مقاومت",
+  "keyLevelAnchor": "سطح مرجع",
+  "upcomingEvents": "رویدادهای پیش رو",
+  "outlookChartNote": "بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی."
 }

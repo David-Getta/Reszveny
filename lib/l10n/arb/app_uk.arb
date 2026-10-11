@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Стандартна довжина за тарифами: Стандарт {normal}, Pro {pro}, Max {max}, Ultra {ultra}. «Коротко» — на 2 менше, «Детально» — на 2 більше.",
   "aiWebSearchesShort": "{count, plural, one{до {count} вебпошуку} few{до {count} вебпошуків} many{до {count} вебпошуків} other{до {count} вебпошуку}}",
   "planWebSearches": "{count, plural, one{{count} вебпошук на аналіз} few{{count} вебпошуки на аналіз} many{{count} вебпошуків на аналіз} other{{count} вебпошуку на аналіз}}",
-  "errNotEnoughCredits": "Для цієї довжини потрібно аналізів: {needed}, а залишилося: {left}. Виберіть коротшу довжину в Налаштуваннях або отримайте більше аналізів."
+  "errNotEnoughCredits": "Для цієї довжини потрібно аналізів: {needed}, а залишилося: {left}. Виберіть коротшу довжину в Налаштуваннях або отримайте більше аналізів.",
+  "outlookMarketMood": "Настрій ринку",
+  "moodVeryPessimistic": "Дуже песимістичний",
+  "moodPessimistic": "Песимістичний",
+  "moodNeutral": "Нейтральний",
+  "moodOptimistic": "Оптимістичний",
+  "moodVeryOptimistic": "Дуже оптимістичний",
+  "scenarioBull": "Оптимістичний сценарій",
+  "scenarioBase": "Базовий сценарій",
+  "scenarioBear": "Песимістичний сценарій",
+  "outlookCurrentPrice": "Поточна ціна: {price}",
+  "outlookKeyLevels": "Ключові рівні",
+  "keyLevelSupport": "Підтримка",
+  "keyLevelResistance": "Опір",
+  "keyLevelAnchor": "Якірний рівень",
+  "upcomingEvents": "Найближчі події",
+  "outlookChartNote": "Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози."
 }

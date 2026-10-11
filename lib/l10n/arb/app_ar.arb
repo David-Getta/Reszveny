@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "عمليات البحث على الويب في الطول القياسي حسب الخطة: عادي {normal}، Pro {pro}، Max {max}، Ultra {ultra}. يستخدم الموجز عمليتين أقل، والمعمّق عمليتين أكثر.",
   "aiWebSearchesShort": "{count, plural, zero{بدون بحث على الويب} one{حتى بحث واحد على الويب} two{حتى بحثين على الويب} few{حتى {count} عمليات بحث على الويب} many{حتى {count} عملية بحث على الويب} other{حتى {count} عملية بحث على الويب}}",
   "planWebSearches": "{count, plural, zero{بدون بحث على الويب في التحليل} one{بحث واحد على الويب لكل تحليل} two{بحثان على الويب لكل تحليل} few{{count} عمليات بحث على الويب لكل تحليل} many{{count} عملية بحث على الويب لكل تحليل} other{{count} عملية بحث على الويب لكل تحليل}}",
-  "errNotEnoughCredits": "يتطلب هذا الطول عدداً من التحليلات قدره {needed}، لكن المتبقي لديك {left} فقط. اختر طولاً أقصر من الإعدادات أو احصل على مزيد من التحليلات."
+  "errNotEnoughCredits": "يتطلب هذا الطول عدداً من التحليلات قدره {needed}، لكن المتبقي لديك {left} فقط. اختر طولاً أقصر من الإعدادات أو احصل على مزيد من التحليلات.",
+  "outlookMarketMood": "مزاج السوق",
+  "moodVeryPessimistic": "متشائم جداً",
+  "moodPessimistic": "متشائم",
+  "moodNeutral": "محايد",
+  "moodOptimistic": "متفائل",
+  "moodVeryOptimistic": "متفائل جداً",
+  "scenarioBull": "السيناريو المتفائل",
+  "scenarioBase": "السيناريو الأساسي",
+  "scenarioBear": "السيناريو المتشائم",
+  "outlookCurrentPrice": "السعر الحالي: {price}",
+  "outlookKeyLevels": "المستويات الرئيسية",
+  "keyLevelSupport": "الدعم",
+  "keyLevelResistance": "المقاومة",
+  "keyLevelAnchor": "المستوى المرجعي",
+  "upcomingEvents": "الأحداث القادمة",
+  "outlookChartNote": "نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات."
 }

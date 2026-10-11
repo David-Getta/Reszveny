@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Lungimea standard în funcție de plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Scurtă” folosește cu 2 mai puține, „Detaliată” cu 2 mai multe.",
   "aiWebSearchesShort": "{count, plural, one{până la 1 căutare web} few{până la {count} căutări web} other{până la {count} de căutări web}}",
   "planWebSearches": "{count, plural, one{1 căutare web pe analiză} few{{count} căutări web pe analiză} other{{count} de căutări web pe analiză}}",
-  "errNotEnoughCredits": "Această lungime necesită {needed} analize, dar mai ai doar {left}. Alege o lungime mai scurtă în Setări sau obține mai multe analize."
+  "errNotEnoughCredits": "Această lungime necesită {needed} analize, dar mai ai doar {left}. Alege o lungime mai scurtă în Setări sau obține mai multe analize.",
+  "outlookMarketMood": "Sentimentul pieței",
+  "moodVeryPessimistic": "Foarte pesimist",
+  "moodPessimistic": "Pesimist",
+  "moodNeutral": "Neutru",
+  "moodOptimistic": "Optimist",
+  "moodVeryOptimistic": "Foarte optimist",
+  "scenarioBull": "Scenariu optimist",
+  "scenarioBase": "Scenariu de bază",
+  "scenarioBear": "Scenariu pesimist",
+  "outlookCurrentPrice": "Preț curent: {price}",
+  "outlookKeyLevels": "Niveluri cheie",
+  "keyLevelSupport": "Suport",
+  "keyLevelResistance": "Rezistență",
+  "keyLevelAnchor": "Ancoră",
+  "upcomingEvents": "Evenimente viitoare",
+  "outlookChartNote": "Intervale orientative; probabilitățile sunt estimări aproximative, nu predicții."
 }

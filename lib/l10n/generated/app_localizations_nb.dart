@@ -882,4 +882,54 @@ class AppLocalizationsNb extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Denne lengden krever $needed analyser, men du har bare $left igjen. Velg en kortere lengde i Innstillinger eller kjøp flere analyser.';
   }
+
+  @override
+  String get outlookMarketMood => 'Markedsstemning';
+
+  @override
+  String get moodVeryPessimistic => 'Svært pessimistisk';
+
+  @override
+  String get moodPessimistic => 'Pessimistisk';
+
+  @override
+  String get moodNeutral => 'Nøytral';
+
+  @override
+  String get moodOptimistic => 'Optimistisk';
+
+  @override
+  String get moodVeryOptimistic => 'Svært optimistisk';
+
+  @override
+  String get scenarioBull => 'Positivt scenario';
+
+  @override
+  String get scenarioBase => 'Basisscenario';
+
+  @override
+  String get scenarioBear => 'Negativt scenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Nåværende kurs: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Viktige nivåer';
+
+  @override
+  String get keyLevelSupport => 'Støtte';
+
+  @override
+  String get keyLevelResistance => 'Motstand';
+
+  @override
+  String get keyLevelAnchor => 'Ankernivå';
+
+  @override
+  String get upcomingEvents => 'Kommende hendelser';
+
+  @override
+  String get outlookChartNote => 'Veiledende intervaller; sannsynlighetene er grove anslag, ikke prognoser.';
 }

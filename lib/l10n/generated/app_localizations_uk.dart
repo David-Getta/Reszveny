@@ -925,4 +925,54 @@ class AppLocalizationsUk extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Для цієї довжини потрібно аналізів: $needed, а залишилося: $left. Виберіть коротшу довжину в Налаштуваннях або отримайте більше аналізів.';
   }
+
+  @override
+  String get outlookMarketMood => 'Настрій ринку';
+
+  @override
+  String get moodVeryPessimistic => 'Дуже песимістичний';
+
+  @override
+  String get moodPessimistic => 'Песимістичний';
+
+  @override
+  String get moodNeutral => 'Нейтральний';
+
+  @override
+  String get moodOptimistic => 'Оптимістичний';
+
+  @override
+  String get moodVeryOptimistic => 'Дуже оптимістичний';
+
+  @override
+  String get scenarioBull => 'Оптимістичний сценарій';
+
+  @override
+  String get scenarioBase => 'Базовий сценарій';
+
+  @override
+  String get scenarioBear => 'Песимістичний сценарій';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Поточна ціна: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Ключові рівні';
+
+  @override
+  String get keyLevelSupport => 'Підтримка';
+
+  @override
+  String get keyLevelResistance => 'Опір';
+
+  @override
+  String get keyLevelAnchor => 'Якірний рівень';
+
+  @override
+  String get upcomingEvents => 'Найближчі події';
+
+  @override
+  String get outlookChartNote => 'Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози.';
 }

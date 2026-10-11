@@ -887,4 +887,55 @@ class AppLocalizationsFil extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Kailangan ng habang ito ng $needed pagsusuri, pero $left na lang ang natitira. Pumili ng mas maikling haba sa Mga setting o kumuha ng dagdag na pagsusuri.';
   }
+
+  @override
+  String get outlookMarketMood => 'Sentimyento ng merkado';
+
+  @override
+  String get moodVeryPessimistic => 'Napaka-pesimista';
+
+  @override
+  String get moodPessimistic => 'Pesimista';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Napaka-optimista';
+
+  @override
+  String get scenarioBull => 'Optimistang senaryo';
+
+  @override
+  String get scenarioBase => 'Batayang senaryo';
+
+  @override
+  String get scenarioBear => 'Pesimistang senaryo';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Kasalukuyang presyo: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Mahahalagang antas';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Angkla';
+
+  @override
+  String get upcomingEvents => 'Mga paparating na kaganapan';
+
+  @override
+  String get outlookChartNote =>
+      'Tinatayang saklaw lamang; ang mga probabilidad ay magaspang na pagtataya, hindi hula.';
 }

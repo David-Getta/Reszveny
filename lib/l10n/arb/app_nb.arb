@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Standardlengde per plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Kort bruker 2 færre, Grundig 2 flere.",
   "aiWebSearchesShort": "{count, plural, one{opptil 1 nettsøk} other{opptil {count} nettsøk}}",
   "planWebSearches": "{count, plural, one{1 nettsøk per analyse} other{{count} nettsøk per analyse}}",
-  "errNotEnoughCredits": "Denne lengden krever {needed} analyser, men du har bare {left} igjen. Velg en kortere lengde i Innstillinger eller kjøp flere analyser."
+  "errNotEnoughCredits": "Denne lengden krever {needed} analyser, men du har bare {left} igjen. Velg en kortere lengde i Innstillinger eller kjøp flere analyser.",
+  "outlookMarketMood": "Markedsstemning",
+  "moodVeryPessimistic": "Svært pessimistisk",
+  "moodPessimistic": "Pessimistisk",
+  "moodNeutral": "Nøytral",
+  "moodOptimistic": "Optimistisk",
+  "moodVeryOptimistic": "Svært optimistisk",
+  "scenarioBull": "Positivt scenario",
+  "scenarioBase": "Basisscenario",
+  "scenarioBear": "Negativt scenario",
+  "outlookCurrentPrice": "Nåværende kurs: {price}",
+  "outlookKeyLevels": "Viktige nivåer",
+  "keyLevelSupport": "Støtte",
+  "keyLevelResistance": "Motstand",
+  "keyLevelAnchor": "Ankernivå",
+  "upcomingEvents": "Kommende hendelser",
+  "outlookChartNote": "Veiledende intervaller; sannsynlighetene er grove anslag, ikke prognoser."
 }

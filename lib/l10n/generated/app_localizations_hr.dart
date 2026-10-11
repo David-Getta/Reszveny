@@ -913,4 +913,54 @@ class AppLocalizationsHr extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Za ovu duljinu potrebno je analiza: $needed, a preostalo ih je samo $left. Odaberite kraću duljinu u Postavkama ili nabavite još analiza.';
   }
+
+  @override
+  String get outlookMarketMood => 'Raspoloženje tržišta';
+
+  @override
+  String get moodVeryPessimistic => 'Vrlo pesimistično';
+
+  @override
+  String get moodPessimistic => 'Pesimistično';
+
+  @override
+  String get moodNeutral => 'Neutralno';
+
+  @override
+  String get moodOptimistic => 'Optimistično';
+
+  @override
+  String get moodVeryOptimistic => 'Vrlo optimistično';
+
+  @override
+  String get scenarioBull => 'Optimistični scenarij';
+
+  @override
+  String get scenarioBase => 'Osnovni scenarij';
+
+  @override
+  String get scenarioBear => 'Pesimistični scenarij';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Trenutna cijena: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Ključne razine';
+
+  @override
+  String get keyLevelSupport => 'Podrška';
+
+  @override
+  String get keyLevelResistance => 'Otpor';
+
+  @override
+  String get keyLevelAnchor => 'Sidro';
+
+  @override
+  String get upcomingEvents => 'Nadolazeći događaji';
+
+  @override
+  String get outlookChartNote => 'Okvirni rasponi; vjerojatnosti su gruba procjena, a ne predviđanja.';
 }

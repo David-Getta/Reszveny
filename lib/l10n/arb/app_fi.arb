@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Vakiopituus paketeittain: Normaali {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Lyhyt käyttää 2 vähemmän, Syvällinen 2 enemmän.",
   "aiWebSearchesShort": "{count, plural, one{enintään 1 verkkohaku} other{enintään {count} verkkohakua}}",
   "planWebSearches": "{count, plural, one{1 verkkohaku analyysia kohden} other{{count} verkkohakua analyysia kohden}}",
-  "errNotEnoughCredits": "Tämä pituus vaatii {needed} analyysia, mutta jäljellä on vain {left}. Valitse lyhyempi pituus Asetuksista tai hanki lisää analyyseja."
+  "errNotEnoughCredits": "Tämä pituus vaatii {needed} analyysia, mutta jäljellä on vain {left}. Valitse lyhyempi pituus Asetuksista tai hanki lisää analyyseja.",
+  "outlookMarketMood": "Markkinatunnelma",
+  "moodVeryPessimistic": "Erittäin pessimistinen",
+  "moodPessimistic": "Pessimistinen",
+  "moodNeutral": "Neutraali",
+  "moodOptimistic": "Optimistinen",
+  "moodVeryOptimistic": "Erittäin optimistinen",
+  "scenarioBull": "Optimistinen skenaario",
+  "scenarioBase": "Perusskenaario",
+  "scenarioBear": "Pessimistinen skenaario",
+  "outlookCurrentPrice": "Nykyinen kurssi: {price}",
+  "outlookKeyLevels": "Keskeiset tasot",
+  "keyLevelSupport": "Tuki",
+  "keyLevelResistance": "Vastus",
+  "keyLevelAnchor": "Ankkuritaso",
+  "upcomingEvents": "Tulevat tapahtumat",
+  "outlookChartNote": "Suuntaa antavat vaihteluvälit; todennäköisyydet ovat karkeita arvioita, eivät ennusteita."
 }

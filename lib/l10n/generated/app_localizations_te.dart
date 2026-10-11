@@ -883,4 +883,54 @@ class AppLocalizationsTe extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'ఈ నిడివికి $needed విశ్లేషణలు అవసరం, కానీ $left మాత్రమే మిగిలి ఉన్నాయి. సెట్టింగ్‌లలో తక్కువ నిడివిని ఎంచుకోండి లేదా మరిన్ని విశ్లేషణలు పొందండి.';
   }
+
+  @override
+  String get outlookMarketMood => 'మార్కెట్ మూడ్';
+
+  @override
+  String get moodVeryPessimistic => 'చాలా నిరాశావాదం';
+
+  @override
+  String get moodPessimistic => 'నిరాశావాదం';
+
+  @override
+  String get moodNeutral => 'తటస్థం';
+
+  @override
+  String get moodOptimistic => 'ఆశావాదం';
+
+  @override
+  String get moodVeryOptimistic => 'చాలా ఆశావాదం';
+
+  @override
+  String get scenarioBull => 'బుల్ దృశ్యం';
+
+  @override
+  String get scenarioBase => 'ప్రాథమిక దృశ్యం';
+
+  @override
+  String get scenarioBear => 'బేర్ దృశ్యం';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'ప్రస్తుత ధర: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'కీలక స్థాయిలు';
+
+  @override
+  String get keyLevelSupport => 'సపోర్ట్';
+
+  @override
+  String get keyLevelResistance => 'రెసిస్టెన్స్';
+
+  @override
+  String get keyLevelAnchor => 'యాంకర్ స్థాయి';
+
+  @override
+  String get upcomingEvents => 'రాబోయే ఈవెంట్‌లు';
+
+  @override
+  String get outlookChartNote => 'సూచనాత్మక శ్రేణులు; సంభావ్యతలు స్థూల అంచనాలు మాత్రమే, జోస్యాలు కావు.';
 }

@@ -6,6 +6,7 @@ import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/financial_statements.dart';
 import '../../core/models/news_item.dart';
 import '../../core/models/price_history.dart';
@@ -53,6 +54,117 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     } on FormatException catch (e) {
       throw MarketDataException(AppErrorCode.marketBadResponse, cause: e);
     }
+  }
+
+  /// Ingyenes Finnhub-végpontok: `/stock/peers`, `/stock/insider-transactions`,
+  /// `/stock/earnings`, `/calendar/earnings`. Mindegyik külön, hibatűrően.
+  @override
+  Future<AnalysisExtras> analysisExtras(String symbol, {DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    Future<Object?> safe(String path, Map<String, String> q) async {
+      try {
+        return await _get(path, q);
+      } catch (_) {
+        return null;
+      }
+    }
+
+    final r = await Future.wait([
+      safe('/stock/peers', {'symbol': symbol}),
+      safe('/stock/insider-transactions', {
+        'symbol': symbol,
+        'from': d(today.subtract(const Duration(days: 90))),
+        'to': d(today),
+      }),
+      safe('/stock/earnings', {'symbol': symbol, 'limit': '4'}),
+      safe('/calendar/earnings', {'symbol': symbol, 'from': d(today), 'to': d(today.add(const Duration(days: 120)))}),
+    ]);
+    return parseAnalysisExtras(symbol, peers: r[0], insider: r[1], earnings: r[2], calendar: r[3], now: today);
+  }
+
+  /// A négy válaszból az [AnalysisExtras] (tesztelhető, hálózat nélkül).
+  static AnalysisExtras parseAnalysisExtras(
+    String symbol, {
+    Object? peers,
+    Object? insider,
+    Object? earnings,
+    Object? calendar,
+    DateTime? now,
+  }) {
+    double? n(Object? v) => v is num ? v.toDouble() : null;
+
+    final peerList = peers is List
+        ? peers.whereType<String>().where((p) => p != symbol).take(8).toList()
+        : const <String>[];
+
+    InsiderSummary? ins;
+    final data = insider is Map ? insider['data'] : null;
+    if (data is List) {
+      final trades = <InsiderTrade>[];
+      var buys = 0, sells = 0;
+      var net = 0.0;
+      for (final t in data.whereType<Map>()) {
+        final code = (t['transactionCode'] as String? ?? '').trim();
+        final change = n(t['change']) ?? 0;
+        final date = DateTime.tryParse(t['transactionDate'] as String? ?? t['filingDate'] as String? ?? '');
+        if (date == null) continue;
+        if (code == 'P') buys++;
+        if (code == 'S') sells++;
+        if (code == 'P' || code == 'S') net += change;
+        trades.add(
+          InsiderTrade(
+            name: (t['name'] as String? ?? '').trim(),
+            date: date,
+            code: code,
+            change: change,
+            price: n(t['transactionPrice']),
+          ),
+        );
+      }
+      trades.sort((a, b) => b.change.abs().compareTo(a.change.abs()));
+      if (trades.isNotEmpty) {
+        ins = InsiderSummary(
+          windowDays: 90,
+          buys: buys,
+          sells: sells,
+          netShares: net,
+          notable: trades.take(5).toList(),
+        );
+      }
+    }
+
+    final eps = <EarningsSurprise>[
+      if (earnings is List)
+        for (final e in earnings.whereType<Map>())
+          if (DateTime.tryParse(e['period'] as String? ?? '') case final period?)
+            EarningsSurprise(
+              period: period,
+              actual: n(e['actual']),
+              estimate: n(e['estimate']),
+              surprisePercent: n(e['surprisePercent']),
+            ),
+    ]..sort((a, b) => b.period.compareTo(a.period));
+
+    UpcomingEarnings? next;
+    final cal = calendar is Map ? calendar['earningsCalendar'] : null;
+    if (cal is List) {
+      final today = now ?? DateTime.now();
+      final upcoming = [
+        for (final c in cal.whereType<Map>())
+          if (DateTime.tryParse(c['date'] as String? ?? '') case final date?)
+            if (!date.isBefore(DateTime(today.year, today.month, today.day)))
+              UpcomingEarnings(
+                date: date,
+                hour: (c['hour'] as String?)?.isEmpty == true ? null : c['hour'] as String?,
+                epsEstimate: n(c['epsEstimate']),
+                revenueEstimate: n(c['revenueEstimate']),
+              ),
+      ]..sort((a, b) => a.date.compareTo(b.date));
+      if (upcoming.isNotEmpty) next = upcoming.first;
+    }
+
+    return AnalysisExtras(peers: peerList, insider: ins, earnings: eps.take(4).toList(), nextEarnings: next);
   }
 
   @override

@@ -847,4 +847,54 @@ class AppLocalizationsJa extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'この長さには分析 $needed 回分が必要ですが、残りは $left 回です。設定で短い長さを選ぶか、追加の分析を入手してください。';
   }
+
+  @override
+  String get outlookMarketMood => '市場センチメント';
+
+  @override
+  String get moodVeryPessimistic => '非常に悲観的';
+
+  @override
+  String get moodPessimistic => '悲観的';
+
+  @override
+  String get moodNeutral => '中立';
+
+  @override
+  String get moodOptimistic => '楽観的';
+
+  @override
+  String get moodVeryOptimistic => '非常に楽観的';
+
+  @override
+  String get scenarioBull => '強気シナリオ';
+
+  @override
+  String get scenarioBase => '基本シナリオ';
+
+  @override
+  String get scenarioBear => '弱気シナリオ';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '現在値：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '重要な価格水準';
+
+  @override
+  String get keyLevelSupport => 'サポート';
+
+  @override
+  String get keyLevelResistance => 'レジスタンス';
+
+  @override
+  String get keyLevelAnchor => '基準価格';
+
+  @override
+  String get upcomingEvents => '今後のイベント';
+
+  @override
+  String get outlookChartNote => '価格帯は目安です。確率は大まかな見立てであり、予測ではありません。';
 }

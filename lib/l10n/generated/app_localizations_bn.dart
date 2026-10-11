@@ -883,4 +883,54 @@ class AppLocalizationsBn extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'এই দৈর্ঘ্যের জন্য $neededটি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র $leftটি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।';
   }
+
+  @override
+  String get outlookMarketMood => 'বাজারের মেজাজ';
+
+  @override
+  String get moodVeryPessimistic => 'অত্যন্ত হতাশাবাদী';
+
+  @override
+  String get moodPessimistic => 'হতাশাবাদী';
+
+  @override
+  String get moodNeutral => 'নিরপেক্ষ';
+
+  @override
+  String get moodOptimistic => 'আশাবাদী';
+
+  @override
+  String get moodVeryOptimistic => 'অত্যন্ত আশাবাদী';
+
+  @override
+  String get scenarioBull => 'তেজি পরিস্থিতি';
+
+  @override
+  String get scenarioBase => 'ভিত্তি পরিস্থিতি';
+
+  @override
+  String get scenarioBear => 'মন্দা পরিস্থিতি';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'বর্তমান দাম: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'গুরুত্বপূর্ণ স্তর';
+
+  @override
+  String get keyLevelSupport => 'সাপোর্ট';
+
+  @override
+  String get keyLevelResistance => 'রেজিস্ট্যান্স';
+
+  @override
+  String get keyLevelAnchor => 'অ্যাঙ্কর স্তর';
+
+  @override
+  String get upcomingEvents => 'আসন্ন ঘটনা';
+
+  @override
+  String get outlookChartNote => 'আনুমানিক পরিসর; সম্ভাবনাগুলি মোটামুটি অনুমান, পূর্বাভাস নয়।';
 }

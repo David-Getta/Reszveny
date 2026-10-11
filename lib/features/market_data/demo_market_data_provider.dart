@@ -1,4 +1,5 @@
 import '../../core/errors.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/company_profile.dart';
 import '../../core/models/financial_statements.dart';
@@ -27,6 +28,42 @@ class DemoMarketDataProvider extends MarketDataProvider {
     if (!supportedSymbols.contains(symbol)) {
       throw MarketDataException(AppErrorCode.demoUnsupportedSymbol, detail: supportedSymbols.join(', '));
     }
+  }
+
+  /// Minta-többletadatok az elemzéshez (nem valós adatok).
+  @override
+  Future<AnalysisExtras> analysisExtras(String symbol) async {
+    await _wait();
+    _check(symbol);
+    final peers = switch (symbol) {
+      'AAPL' => ['MSFT', 'GOOGL', 'DELL', 'HPQ'],
+      'MSFT' => ['AAPL', 'GOOGL', 'ORCL', 'CRM'],
+      'NVDA' => ['AMD', 'AVGO', 'INTC', 'QCOM'],
+      _ => ['MOL', 'RICHTER', 'MTELEKOM'],
+    };
+    final now = DateTime.now();
+    return AnalysisExtras(
+      peers: peers,
+      insider: InsiderSummary(
+        windowDays: 90,
+        buys: 0,
+        sells: 3,
+        netShares: -42000,
+        notable: [
+          InsiderTrade(name: 'Demo Insider', date: now.subtract(const Duration(days: 20)), code: 'S', change: -30000),
+        ],
+      ),
+      earnings: [
+        for (var i = 0; i < 4; i++)
+          EarningsSurprise(
+            period: DateTime(now.year, now.month - 3 * (i + 1), 1),
+            actual: 1.0 + i * 0.05,
+            estimate: 0.97 + i * 0.05,
+            surprisePercent: 3.1,
+          ),
+      ],
+      nextEarnings: UpcomingEarnings(date: now.add(const Duration(days: 18)), hour: 'amc'),
+    );
   }
 
   @override

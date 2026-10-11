@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Daidaitaccen tsawo bisa tsari: Na kullum {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Taƙaitacce yana amfani da 2 ƙasa, Mai zurfi 2 fiye.",
   "aiWebSearchesShort": "{count, plural, =1{har zuwa binciken yanar gizo 1} other{har zuwa binciken yanar gizo {count}}}",
   "planWebSearches": "{count, plural, =1{Binciken yanar gizo 1 a kowane nazari} other{Binciken yanar gizo {count} a kowane nazari}}",
-  "errNotEnoughCredits": "Wannan tsawon yana buƙatar nazari {needed}, amma saura {left} kawai. Zaɓi gajeren tsawo a Saituna ko sami ƙarin nazari."
+  "errNotEnoughCredits": "Wannan tsawon yana buƙatar nazari {needed}, amma saura {left} kawai. Zaɓi gajeren tsawo a Saituna ko sami ƙarin nazari.",
+  "outlookMarketMood": "Ra'ayin kasuwa",
+  "moodVeryPessimistic": "Mara kyakkyawan fata sosai",
+  "moodPessimistic": "Mara kyakkyawan fata",
+  "moodNeutral": "Tsaka-tsaki",
+  "moodOptimistic": "Mai kyakkyawan fata",
+  "moodVeryOptimistic": "Mai kyakkyawan fata sosai",
+  "scenarioBull": "Hasashen haɓaka",
+  "scenarioBase": "Hasashen asali",
+  "scenarioBear": "Hasashen faɗuwa",
+  "outlookCurrentPrice": "Farashin yanzu: {price}",
+  "outlookKeyLevels": "Muhimman matakai",
+  "keyLevelSupport": "Tallafi",
+  "keyLevelResistance": "Juriya",
+  "keyLevelAnchor": "Ma'auni",
+  "upcomingEvents": "Abubuwan da ke tafe",
+  "outlookChartNote": "Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba."
 }

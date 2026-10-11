@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Стандартная длина по тарифам: Стандарт {normal}, Pro {pro}, Max {max}, Ultra {ultra}. «Кратко» — на 2 меньше, «Подробно» — на 2 больше.",
   "aiWebSearchesShort": "{count, plural, one{до {count} веб-поиска} few{до {count} веб-поисков} many{до {count} веб-поисков} other{до {count} веб-поиска}}",
   "planWebSearches": "{count, plural, one{{count} веб-поиск на анализ} few{{count} веб-поиска на анализ} many{{count} веб-поисков на анализ} other{{count} веб-поиска на анализ}}",
-  "errNotEnoughCredits": "Для этой длины нужно анализов: {needed}, а осталось: {left}. Выберите более короткую длину в Настройках или получите больше анализов."
+  "errNotEnoughCredits": "Для этой длины нужно анализов: {needed}, а осталось: {left}. Выберите более короткую длину в Настройках или получите больше анализов.",
+  "outlookMarketMood": "Настроение рынка",
+  "moodVeryPessimistic": "Очень пессимистичное",
+  "moodPessimistic": "Пессимистичное",
+  "moodNeutral": "Нейтральное",
+  "moodOptimistic": "Оптимистичное",
+  "moodVeryOptimistic": "Очень оптимистичное",
+  "scenarioBull": "Оптимистичный сценарий",
+  "scenarioBase": "Базовый сценарий",
+  "scenarioBear": "Пессимистичный сценарий",
+  "outlookCurrentPrice": "Текущая цена: {price}",
+  "outlookKeyLevels": "Ключевые уровни",
+  "keyLevelSupport": "Поддержка",
+  "keyLevelResistance": "Сопротивление",
+  "keyLevelAnchor": "Якорный уровень",
+  "upcomingEvents": "Предстоящие события",
+  "outlookChartNote": "Ориентировочные диапазоны; вероятности — приблизительные оценки, а не прогнозы."
 }

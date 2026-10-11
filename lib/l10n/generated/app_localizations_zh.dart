@@ -847,6 +847,56 @@ class AppLocalizationsZh extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return '此篇幅需要 $needed 次分析，但仅剩 $left 次。请在设置中选择更短的篇幅，或获取更多分析。';
   }
+
+  @override
+  String get outlookMarketMood => '市场情绪';
+
+  @override
+  String get moodVeryPessimistic => '非常悲观';
+
+  @override
+  String get moodPessimistic => '悲观';
+
+  @override
+  String get moodNeutral => '中性';
+
+  @override
+  String get moodOptimistic => '乐观';
+
+  @override
+  String get moodVeryOptimistic => '非常乐观';
+
+  @override
+  String get scenarioBull => '乐观情景';
+
+  @override
+  String get scenarioBase => '基准情景';
+
+  @override
+  String get scenarioBear => '悲观情景';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '当前价格：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '关键价位';
+
+  @override
+  String get keyLevelSupport => '支撑位';
+
+  @override
+  String get keyLevelResistance => '阻力位';
+
+  @override
+  String get keyLevelAnchor => '锚定价位';
+
+  @override
+  String get upcomingEvents => '近期事件';
+
+  @override
+  String get outlookChartNote => '区间仅供参考；概率为粗略判断，并非预测。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1691,4 +1741,54 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String errNotEnoughCredits(int needed, int left) {
     return '此篇幅需要 $needed 次分析，但只剩 $left 次。請在設定中選擇較短的篇幅，或獲取更多分析。';
   }
+
+  @override
+  String get outlookMarketMood => '市場情緒';
+
+  @override
+  String get moodVeryPessimistic => '非常悲觀';
+
+  @override
+  String get moodPessimistic => '悲觀';
+
+  @override
+  String get moodNeutral => '中性';
+
+  @override
+  String get moodOptimistic => '樂觀';
+
+  @override
+  String get moodVeryOptimistic => '非常樂觀';
+
+  @override
+  String get scenarioBull => '樂觀情景';
+
+  @override
+  String get scenarioBase => '基本情景';
+
+  @override
+  String get scenarioBear => '悲觀情景';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '現價：$price';
+  }
+
+  @override
+  String get outlookKeyLevels => '關鍵價位';
+
+  @override
+  String get keyLevelSupport => '支持位';
+
+  @override
+  String get keyLevelResistance => '阻力位';
+
+  @override
+  String get keyLevelAnchor => '錨定價位';
+
+  @override
+  String get upcomingEvents => '近期事件';
+
+  @override
+  String get outlookChartNote => '區間僅供參考；概率只屬粗略判斷，並非預測。';
 }

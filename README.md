@@ -45,7 +45,9 @@ ellenőrzőlistán végigmegy a rejtett tényezőkön. A modell megkapja az árf
 számolt statisztikát (hozamok, mozgóátlagok, volatilitás, legnagyobb mozgások) és a többéves
 kimutatásokat is. A beállításokban választható a hossz (Rövid / Alap / Részletes – a részletes két
 elemzést fogyaszt), az olvasói szint (kezdő / tapasztalt) és a „legerősebb ellenérv”; a
-webkeresések száma a csomagtól függ.
+webkeresések száma a csomagtól függ. A kilátások számszerű része (piaci hangulat, forgatókönyvek
+valószínűséggel és ársávval, kulcsszintek, közelgő események) grafikusan is megjelenik. A prompt
+minőségét a `test/eval` éles eval méri (lásd `docs/ELEMZES_PROMPT.md`).
 
 Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),
 `ANTHROPIC_WEB_SEARCH` (`true`/`false`, alap `true`).

@@ -909,4 +909,54 @@ class AppLocalizationsRo extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Această lungime necesită $needed analize, dar mai ai doar $left. Alege o lungime mai scurtă în Setări sau obține mai multe analize.';
   }
+
+  @override
+  String get outlookMarketMood => 'Sentimentul pieței';
+
+  @override
+  String get moodVeryPessimistic => 'Foarte pesimist';
+
+  @override
+  String get moodPessimistic => 'Pesimist';
+
+  @override
+  String get moodNeutral => 'Neutru';
+
+  @override
+  String get moodOptimistic => 'Optimist';
+
+  @override
+  String get moodVeryOptimistic => 'Foarte optimist';
+
+  @override
+  String get scenarioBull => 'Scenariu optimist';
+
+  @override
+  String get scenarioBase => 'Scenariu de bază';
+
+  @override
+  String get scenarioBear => 'Scenariu pesimist';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Preț curent: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Niveluri cheie';
+
+  @override
+  String get keyLevelSupport => 'Suport';
+
+  @override
+  String get keyLevelResistance => 'Rezistență';
+
+  @override
+  String get keyLevelAnchor => 'Ancoră';
+
+  @override
+  String get upcomingEvents => 'Evenimente viitoare';
+
+  @override
+  String get outlookChartNote => 'Intervale orientative; probabilitățile sunt estimări aproximative, nu predicții.';
 }

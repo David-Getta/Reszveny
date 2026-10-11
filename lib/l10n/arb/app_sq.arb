@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Kërkime në ueb për gjatësinë standarde sipas planit: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. E shkurtra përdor 2 më pak, e thelluara 2 më shumë.",
   "aiWebSearchesShort": "{count, plural, one{deri në {count} kërkim në ueb} other{deri në {count} kërkime në ueb}}",
   "planWebSearches": "{count, plural, one{{count} kërkim në ueb për analizë} other{{count} kërkime në ueb për analizë}}",
-  "errNotEnoughCredits": "Kjo gjatësi kërkon më shumë analiza ({needed}) se sa ju kanë mbetur ({left}). Zgjidhni një gjatësi më të shkurtër te Cilësimet ose merrni më shumë analiza."
+  "errNotEnoughCredits": "Kjo gjatësi kërkon më shumë analiza ({needed}) se sa ju kanë mbetur ({left}). Zgjidhni një gjatësi më të shkurtër te Cilësimet ose merrni më shumë analiza.",
+  "outlookMarketMood": "Disponimi i tregut",
+  "moodVeryPessimistic": "Shumë pesimist",
+  "moodPessimistic": "Pesimist",
+  "moodNeutral": "Neutral",
+  "moodOptimistic": "Optimist",
+  "moodVeryOptimistic": "Shumë optimist",
+  "scenarioBull": "Skenari optimist",
+  "scenarioBase": "Skenari bazë",
+  "scenarioBear": "Skenari pesimist",
+  "outlookCurrentPrice": "Çmimi aktual: {price}",
+  "outlookKeyLevels": "Nivelet kyçe",
+  "keyLevelSupport": "Mbështetja",
+  "keyLevelResistance": "Rezistenca",
+  "keyLevelAnchor": "Spiranca",
+  "upcomingEvents": "Ngjarjet e ardhshme",
+  "outlookChartNote": "Intervale orientuese; probabilitetet janë vlerësime të përafërta, jo parashikime."
 }

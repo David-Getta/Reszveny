@@ -883,4 +883,54 @@ class AppLocalizationsSw extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Urefu huu unahitaji uchambuzi $needed, lakini umesalia na $left tu. Chagua urefu mfupi zaidi katika Mipangilio au pata uchambuzi zaidi.';
   }
+
+  @override
+  String get outlookMarketMood => 'Hali ya soko';
+
+  @override
+  String get moodVeryPessimistic => 'Hasi sana';
+
+  @override
+  String get moodPessimistic => 'Hasi';
+
+  @override
+  String get moodNeutral => 'Ya wastani';
+
+  @override
+  String get moodOptimistic => 'Chanya';
+
+  @override
+  String get moodVeryOptimistic => 'Chanya sana';
+
+  @override
+  String get scenarioBull => 'Hali ya matumaini';
+
+  @override
+  String get scenarioBase => 'Hali ya msingi';
+
+  @override
+  String get scenarioBear => 'Hali ya kukata tamaa';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Bei ya sasa: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Viwango muhimu';
+
+  @override
+  String get keyLevelSupport => 'Kiwango cha usaidizi';
+
+  @override
+  String get keyLevelResistance => 'Kiwango cha upinzani';
+
+  @override
+  String get keyLevelAnchor => 'Kiwango cha nanga';
+
+  @override
+  String get upcomingEvents => 'Matukio yajayo';
+
+  @override
+  String get outlookChartNote => 'Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri.';
 }

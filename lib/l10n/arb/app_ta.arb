@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "திட்டவாரியாக நிலையான நீளம்: சாதாரண {normal}, Pro {pro}, Max {max}, Ultra {ultra}. சுருக்கத்தில் 2 குறைவு, விரிவானதில் 2 அதிகம்.",
   "aiWebSearchesShort": "{count, plural, =1{அதிகபட்சம் 1 இணையத் தேடல்} other{அதிகபட்சம் {count} இணையத் தேடல்கள்}}",
   "planWebSearches": "{count, plural, =1{ஒரு பகுப்பாய்விற்கு 1 இணையத் தேடல்} other{ஒரு பகுப்பாய்விற்கு {count} இணையத் தேடல்கள்}}",
-  "errNotEnoughCredits": "இந்த நீளத்திற்கு {needed} பகுப்பாய்வுகள் தேவை, ஆனால் {left} மட்டுமே மீதமுள்ளன. அமைப்புகளில் குறைந்த நீளத்தைத் தேர்வுசெய்யவும் அல்லது கூடுதல் பகுப்பாய்வுகளைப் பெறவும்."
+  "errNotEnoughCredits": "இந்த நீளத்திற்கு {needed} பகுப்பாய்வுகள் தேவை, ஆனால் {left} மட்டுமே மீதமுள்ளன. அமைப்புகளில் குறைந்த நீளத்தைத் தேர்வுசெய்யவும் அல்லது கூடுதல் பகுப்பாய்வுகளைப் பெறவும்.",
+  "outlookMarketMood": "சந்தை மனநிலை",
+  "moodVeryPessimistic": "மிகவும் அவநம்பிக்கை",
+  "moodPessimistic": "அவநம்பிக்கை",
+  "moodNeutral": "நடுநிலை",
+  "moodOptimistic": "நம்பிக்கை",
+  "moodVeryOptimistic": "மிகவும் நம்பிக்கை",
+  "scenarioBull": "ஏற்றச் சூழ்நிலை",
+  "scenarioBase": "அடிப்படைச் சூழ்நிலை",
+  "scenarioBear": "இறக்கச் சூழ்நிலை",
+  "outlookCurrentPrice": "தற்போதைய விலை: {price}",
+  "outlookKeyLevels": "முக்கிய நிலைகள்",
+  "keyLevelSupport": "ஆதரவு",
+  "keyLevelResistance": "எதிர்ப்பு",
+  "keyLevelAnchor": "நங்கூர நிலை",
+  "upcomingEvents": "வரவிருக்கும் நிகழ்வுகள்",
+  "outlookChartNote": "குறிப்பான வரம்புகள்; நிகழ்தகவுகள் தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல."
 }

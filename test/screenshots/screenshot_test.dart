@@ -141,9 +141,56 @@ class _FakeAnalyst implements StockAnalyst {
           'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.',
         ],
       ),
+      ReportSection(
+        kind: ReportSectionKind.watch,
+        title: 'What to watch',
+        bullets: ['Data-center revenue growth below 20% q/q would weaken the base case.'],
+      ),
     ],
     sources: const [ReportSource(title: 'NVIDIA investor relations', url: 'https://investor.nvidia.com')],
     generatedAt: DateTime.now(),
+    outlook: const ReportOutlook(
+      currentPrice: 187.6,
+      currency: 'USD',
+      scenarios: [
+        Scenario(
+          kind: ScenarioKind.bull,
+          probability: 30,
+          priceLow: 215,
+          priceHigh: 240,
+          horizon: '6–12 months',
+          summary: 'Guidance beat and China relief.',
+        ),
+        Scenario(
+          kind: ScenarioKind.base,
+          probability: 45,
+          priceLow: 175,
+          priceHigh: 205,
+          horizon: '6–12 months',
+          summary: 'Growth normalises, multiple holds.',
+        ),
+        Scenario(
+          kind: ScenarioKind.bear,
+          probability: 25,
+          priceLow: 130,
+          priceHigh: 160,
+          horizon: '6–12 months',
+          summary: 'Capex digestion at hyperscalers.',
+        ),
+      ],
+      keyLevels: [
+        KeyLevel(price: 170, kind: KeyLevelKind.support, label: '200-day average'),
+        KeyLevel(price: 200, kind: KeyLevelKind.anchor, label: 'round number'),
+        KeyLevel(price: 212, kind: KeyLevelKind.resistance, label: 'all-time high'),
+      ],
+      catalysts: [
+        Catalyst(date: '2026-11-19', event: 'Q3 FY27 earnings'),
+        Catalyst(date: '2026-12-05', event: 'Ex-dividend date'),
+        Catalyst(date: '2027-03', event: 'GTC developer conference'),
+      ],
+      marketMood: 1,
+      marketMoodReason: 'AI demand narrative is strong, but positioning is crowded.',
+    ),
   );
 }
 
@@ -193,7 +240,7 @@ void main() {
   });
 
   testWidgets('detail with AI report', (tester) async {
-    await pumpApp(tester, _services(), const Size(1200, 1500));
+    await pumpApp(tester, _services(), const Size(1200, 2300));
     await tester.enterText(find.byType(TextField), 'NVDA');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();

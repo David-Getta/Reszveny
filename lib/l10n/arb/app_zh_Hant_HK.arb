@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "各計劃的常規篇幅：標準 {normal}、Pro {pro}、Max {max}、Ultra {ultra}。簡要少 2 次，深入多 2 次。",
   "aiWebSearchesShort": "{count, plural, other{最多 {count} 次網上搜尋}}",
   "planWebSearches": "{count, plural, other{每次分析 {count} 次網上搜尋}}",
-  "errNotEnoughCredits": "此篇幅需要 {needed} 次分析，但只剩 {left} 次。請在設定中選擇較短的篇幅，或獲取更多分析。"
+  "errNotEnoughCredits": "此篇幅需要 {needed} 次分析，但只剩 {left} 次。請在設定中選擇較短的篇幅，或獲取更多分析。",
+  "outlookMarketMood": "市場情緒",
+  "moodVeryPessimistic": "非常悲觀",
+  "moodPessimistic": "悲觀",
+  "moodNeutral": "中性",
+  "moodOptimistic": "樂觀",
+  "moodVeryOptimistic": "非常樂觀",
+  "scenarioBull": "樂觀情景",
+  "scenarioBase": "基本情景",
+  "scenarioBear": "悲觀情景",
+  "outlookCurrentPrice": "現價：{price}",
+  "outlookKeyLevels": "關鍵價位",
+  "keyLevelSupport": "支持位",
+  "keyLevelResistance": "阻力位",
+  "keyLevelAnchor": "錨定價位",
+  "upcomingEvents": "近期事件",
+  "outlookChartNote": "區間僅供參考；概率只屬粗略判斷，並非預測。"
 }

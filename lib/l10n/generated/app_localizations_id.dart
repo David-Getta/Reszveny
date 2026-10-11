@@ -868,4 +868,54 @@ class AppLocalizationsId extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Panjang ini memerlukan $needed analisis, tetapi hanya tersisa $left. Pilih panjang yang lebih pendek di Pengaturan atau dapatkan analisis tambahan.';
   }
+
+  @override
+  String get outlookMarketMood => 'Sentimen pasar';
+
+  @override
+  String get moodVeryPessimistic => 'Sangat pesimis';
+
+  @override
+  String get moodPessimistic => 'Pesimis';
+
+  @override
+  String get moodNeutral => 'Netral';
+
+  @override
+  String get moodOptimistic => 'Optimis';
+
+  @override
+  String get moodVeryOptimistic => 'Sangat optimis';
+
+  @override
+  String get scenarioBull => 'Skenario optimis';
+
+  @override
+  String get scenarioBase => 'Skenario dasar';
+
+  @override
+  String get scenarioBear => 'Skenario pesimis';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Harga saat ini: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Level kunci';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Harga acuan';
+
+  @override
+  String get upcomingEvents => 'Agenda mendatang';
+
+  @override
+  String get outlookChartNote => 'Rentang bersifat indikatif; probabilitas hanyalah perkiraan kasar, bukan prediksi.';
 }

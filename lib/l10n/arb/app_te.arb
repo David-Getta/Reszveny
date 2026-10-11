@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "ప్లాన్ వారీగా ప్రామాణిక నిడివి: సాధారణ {normal}, Pro {pro}, Max {max}, Ultra {ultra}. సంక్షిప్తంలో 2 తక్కువ, వివరణాత్మకంలో 2 ఎక్కువ.",
   "aiWebSearchesShort": "{count, plural, =1{గరిష్టంగా 1 వెబ్ శోధన} other{గరిష్టంగా {count} వెబ్ శోధనలు}}",
   "planWebSearches": "{count, plural, =1{ఒక్కో విశ్లేషణకు 1 వెబ్ శోధన} other{ఒక్కో విశ్లేషణకు {count} వెబ్ శోధనలు}}",
-  "errNotEnoughCredits": "ఈ నిడివికి {needed} విశ్లేషణలు అవసరం, కానీ {left} మాత్రమే మిగిలి ఉన్నాయి. సెట్టింగ్‌లలో తక్కువ నిడివిని ఎంచుకోండి లేదా మరిన్ని విశ్లేషణలు పొందండి."
+  "errNotEnoughCredits": "ఈ నిడివికి {needed} విశ్లేషణలు అవసరం, కానీ {left} మాత్రమే మిగిలి ఉన్నాయి. సెట్టింగ్‌లలో తక్కువ నిడివిని ఎంచుకోండి లేదా మరిన్ని విశ్లేషణలు పొందండి.",
+  "outlookMarketMood": "మార్కెట్ మూడ్",
+  "moodVeryPessimistic": "చాలా నిరాశావాదం",
+  "moodPessimistic": "నిరాశావాదం",
+  "moodNeutral": "తటస్థం",
+  "moodOptimistic": "ఆశావాదం",
+  "moodVeryOptimistic": "చాలా ఆశావాదం",
+  "scenarioBull": "బుల్ దృశ్యం",
+  "scenarioBase": "ప్రాథమిక దృశ్యం",
+  "scenarioBear": "బేర్ దృశ్యం",
+  "outlookCurrentPrice": "ప్రస్తుత ధర: {price}",
+  "outlookKeyLevels": "కీలక స్థాయిలు",
+  "keyLevelSupport": "సపోర్ట్",
+  "keyLevelResistance": "రెసిస్టెన్స్",
+  "keyLevelAnchor": "యాంకర్ స్థాయి",
+  "upcomingEvents": "రాబోయే ఈవెంట్‌లు",
+  "outlookChartNote": "సూచనాత్మక శ్రేణులు; సంభావ్యతలు స్థూల అంచనాలు మాత్రమే, జోస్యాలు కావు."
 }

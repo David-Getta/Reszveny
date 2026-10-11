@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Standardlänge je Tarif: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Kurz“ nutzt 2 weniger, „Ausführlich“ 2 mehr.",
   "aiWebSearchesShort": "{count, plural, one{bis zu 1 Websuche} other{bis zu {count} Websuchen}}",
   "planWebSearches": "{count, plural, one{1 Websuche pro Analyse} other{{count} Websuchen pro Analyse}}",
-  "errNotEnoughCredits": "Diese Länge benötigt {needed} Analysen, du hast aber nur noch {left}. Wähle in den Einstellungen eine kürzere Länge oder hol dir weitere Analysen."
+  "errNotEnoughCredits": "Diese Länge benötigt {needed} Analysen, du hast aber nur noch {left}. Wähle in den Einstellungen eine kürzere Länge oder hol dir weitere Analysen.",
+  "outlookMarketMood": "Marktstimmung",
+  "moodVeryPessimistic": "Sehr pessimistisch",
+  "moodPessimistic": "Pessimistisch",
+  "moodNeutral": "Neutral",
+  "moodOptimistic": "Optimistisch",
+  "moodVeryOptimistic": "Sehr optimistisch",
+  "scenarioBull": "Bull-Szenario",
+  "scenarioBase": "Basisszenario",
+  "scenarioBear": "Bear-Szenario",
+  "outlookCurrentPrice": "Aktueller Kurs: {price}",
+  "outlookKeyLevels": "Wichtige Kursmarken",
+  "keyLevelSupport": "Unterstützung",
+  "keyLevelResistance": "Widerstand",
+  "keyLevelAnchor": "Anker",
+  "upcomingEvents": "Anstehende Termine",
+  "outlookChartNote": "Richtwerte; die Wahrscheinlichkeiten sind grobe Einschätzungen, keine Prognosen."
 }

@@ -88,14 +88,15 @@ class AppServices {
     // Backend-módban minden külső hívás a hitelesített kliensen, a szerveren át megy.
     final backend = config.hasBackend ? BackendClient(baseUrl: config.backend) : null;
     final client = backend?.authenticated;
+    final MarketDataProvider marketData = config.hasFinnhubKey
+        ? FinnhubMarketDataProvider(config: config, client: client)
+        : DemoMarketDataProvider();
     late final AppServices services;
     services = AppServices(
       config: config,
       capture: CaptureService(),
       recognizer: ClaudeVisionRecognizer(config: config, client: client),
-      marketData: config.hasFinnhubKey
-          ? FinnhubMarketDataProvider(config: config, client: client)
-          : DemoMarketDataProvider(),
+      marketData: marketData,
       locale: locale,
       preferences: preferences,
       desktop: desktop ?? DesktopIntegration(),
@@ -103,6 +104,7 @@ class AppServices {
         analyst: ClaudeStockAnalyst(config: config, client: client),
         entitlements: entitlements,
         onQuotaChanged: backend == null ? null : () => services.syncEntitlements(),
+        extrasLoader: marketData.analysisExtras,
       ),
       entitlements: entitlements,
       backend: backend,

@@ -848,4 +848,54 @@ class AppLocalizationsKo extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return '이 길이에는 분석 $needed회가 필요하지만 $left회만 남았습니다. 설정에서 더 짧은 길이를 선택하거나 추가 분석을 구매하세요.';
   }
+
+  @override
+  String get outlookMarketMood => '시장 심리';
+
+  @override
+  String get moodVeryPessimistic => '매우 비관적';
+
+  @override
+  String get moodPessimistic => '비관적';
+
+  @override
+  String get moodNeutral => '중립';
+
+  @override
+  String get moodOptimistic => '낙관적';
+
+  @override
+  String get moodVeryOptimistic => '매우 낙관적';
+
+  @override
+  String get scenarioBull => '강세 시나리오';
+
+  @override
+  String get scenarioBase => '기본 시나리오';
+
+  @override
+  String get scenarioBear => '약세 시나리오';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return '현재가: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => '주요 가격대';
+
+  @override
+  String get keyLevelSupport => '지지선';
+
+  @override
+  String get keyLevelResistance => '저항선';
+
+  @override
+  String get keyLevelAnchor => '기준가';
+
+  @override
+  String get upcomingEvents => '예정된 이벤트';
+
+  @override
+  String get outlookChartNote => '가격 범위는 참고용이며, 확률은 대략적인 판단일 뿐 예측이 아닙니다.';
 }

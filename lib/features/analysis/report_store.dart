@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/errors.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_details.dart';
 import '../billing/entitlement_service.dart';
 import '../../core/models/stock_report.dart';
@@ -19,13 +20,36 @@ class ReportStore extends ChangeNotifier {
       c == AppErrorCode.noPlan ||
       c == AppErrorCode.notEnoughCredits;
 
+  Future<AnalysisExtras?> _loadExtras(String symbol) async {
+    final load = extrasLoader;
+    if (load == null) return null;
+    try {
+      final e = await load(symbol).timeout(const Duration(seconds: 15));
+      return e.isEmpty ? null : e;
+    } catch (e) {
+      debugPrint('Többletadatok nem tölthetők: $e');
+      return null;
+    }
+  }
+
   void _notifyQuota() {
     final cb = onQuotaChanged;
     if (cb == null) return;
     cb().then((_) => notifyListeners()).catchError((Object e) => debugPrint('Jogosultság frissítése nem sikerült: $e'));
   }
 
-  ReportStore({required this.analyst, this.entitlements, this.onQuotaChanged, this.ttl = const Duration(hours: 12)});
+  ReportStore({
+    required this.analyst,
+    this.entitlements,
+    this.onQuotaChanged,
+    this.extrasLoader,
+    this.ttl = const Duration(hours: 12),
+  });
+
+  /// Az elemzés előtt letöltendő többletadatok (versenytársak, bennfentes
+  /// ügyletek, EPS-meglepetések, következő gyorsjelentés). Hiba vagy lassúság
+  /// esetén az elemzés nélkülük fut.
+  final Future<AnalysisExtras> Function(String symbol)? extrasLoader;
 
   final StockAnalyst analyst;
 
@@ -95,7 +119,12 @@ class ReportStore extends ChangeNotifier {
     _errors.remove(symbol);
     notifyListeners();
     try {
-      final r = await analyst.analyze(details, outputLanguage: outputLanguage, options: options);
+      final extras = await _loadExtras(symbol);
+      final r = await analyst.analyze(
+        extras == null ? details : details.withExtras(extras),
+        outputLanguage: outputLanguage,
+        options: options,
+      );
       _reports[symbol] = r;
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();

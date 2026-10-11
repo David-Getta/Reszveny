@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Utafutaji wa wavuti kwa urefu wa wastani kulingana na mpango: Kawaida {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Mfupi hutumia 2 pungufu, Wa kina 2 zaidi.",
   "aiWebSearchesShort": "{count, plural, one{hadi utafutaji {count} wa wavuti} other{hadi utafutaji {count} wa wavuti}}",
   "planWebSearches": "{count, plural, one{Utafutaji {count} wa wavuti kwa kila uchambuzi} other{Utafutaji {count} wa wavuti kwa kila uchambuzi}}",
-  "errNotEnoughCredits": "Urefu huu unahitaji uchambuzi {needed}, lakini umesalia na {left} tu. Chagua urefu mfupi zaidi katika Mipangilio au pata uchambuzi zaidi."
+  "errNotEnoughCredits": "Urefu huu unahitaji uchambuzi {needed}, lakini umesalia na {left} tu. Chagua urefu mfupi zaidi katika Mipangilio au pata uchambuzi zaidi.",
+  "outlookMarketMood": "Hali ya soko",
+  "moodVeryPessimistic": "Hasi sana",
+  "moodPessimistic": "Hasi",
+  "moodNeutral": "Ya wastani",
+  "moodOptimistic": "Chanya",
+  "moodVeryOptimistic": "Chanya sana",
+  "scenarioBull": "Hali ya matumaini",
+  "scenarioBase": "Hali ya msingi",
+  "scenarioBear": "Hali ya kukata tamaa",
+  "outlookCurrentPrice": "Bei ya sasa: {price}",
+  "outlookKeyLevels": "Viwango muhimu",
+  "keyLevelSupport": "Kiwango cha usaidizi",
+  "keyLevelResistance": "Kiwango cha upinzani",
+  "keyLevelAnchor": "Kiwango cha nanga",
+  "upcomingEvents": "Matukio yajayo",
+  "outlookChartNote": "Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri."
 }

@@ -882,4 +882,54 @@ class AppLocalizationsUr extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'اس طوالت کے لیے $needed تجزیے درکار ہیں، لیکن صرف $left باقی ہیں۔ ترتیبات میں کم طوالت منتخب کریں یا مزید تجزیے حاصل کریں۔';
   }
+
+  @override
+  String get outlookMarketMood => 'مارکیٹ کا مزاج';
+
+  @override
+  String get moodVeryPessimistic => 'بہت مایوس کن';
+
+  @override
+  String get moodPessimistic => 'مایوس کن';
+
+  @override
+  String get moodNeutral => 'غیر جانبدار';
+
+  @override
+  String get moodOptimistic => 'پُرامید';
+
+  @override
+  String get moodVeryOptimistic => 'بہت پُرامید';
+
+  @override
+  String get scenarioBull => 'پُرامید منظرنامہ';
+
+  @override
+  String get scenarioBase => 'بنیادی منظرنامہ';
+
+  @override
+  String get scenarioBear => 'مایوس کن منظرنامہ';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'موجودہ قیمت: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'اہم سطحیں';
+
+  @override
+  String get keyLevelSupport => 'سپورٹ';
+
+  @override
+  String get keyLevelResistance => 'مزاحمت';
+
+  @override
+  String get keyLevelAnchor => 'حوالہ جاتی سطح';
+
+  @override
+  String get upcomingEvents => 'آنے والے واقعات';
+
+  @override
+  String get outlookChartNote => 'تخمینی حدود؛ امکانات محض موٹے اندازے ہیں، پیش گوئیاں نہیں۔';
 }

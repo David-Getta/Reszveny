@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "प्लॅननुसार मानक लांबी: सामान्य {normal}, Pro {pro}, Max {max}, Ultra {ultra}. संक्षिप्तमध्ये 2 कमी, सविस्तरमध्ये 2 जास्त.",
   "aiWebSearchesShort": "{count, plural, =1{जास्तीत जास्त 1 वेब शोध} other{जास्तीत जास्त {count} वेब शोध}}",
   "planWebSearches": "{count, plural, =1{प्रत्येक विश्लेषणासाठी 1 वेब शोध} other{प्रत्येक विश्लेषणासाठी {count} वेब शोध}}",
-  "errNotEnoughCredits": "या लांबीसाठी {needed} विश्लेषणे लागतात, पण फक्त {left} शिल्लक आहेत. सेटिंग्जमध्ये कमी लांबी निवडा किंवा अधिक विश्लेषणे मिळवा."
+  "errNotEnoughCredits": "या लांबीसाठी {needed} विश्लेषणे लागतात, पण फक्त {left} शिल्लक आहेत. सेटिंग्जमध्ये कमी लांबी निवडा किंवा अधिक विश्लेषणे मिळवा.",
+  "outlookMarketMood": "बाजाराचा मूड",
+  "moodVeryPessimistic": "अतिशय निराशावादी",
+  "moodPessimistic": "निराशावादी",
+  "moodNeutral": "तटस्थ",
+  "moodOptimistic": "आशावादी",
+  "moodVeryOptimistic": "अतिशय आशावादी",
+  "scenarioBull": "तेजीची परिस्थिती",
+  "scenarioBase": "मूळ परिस्थिती",
+  "scenarioBear": "मंदीची परिस्थिती",
+  "outlookCurrentPrice": "सध्याची किंमत: {price}",
+  "outlookKeyLevels": "महत्त्वाचे स्तर",
+  "keyLevelSupport": "सपोर्ट",
+  "keyLevelResistance": "रेझिस्टन्स",
+  "keyLevelAnchor": "अँकर स्तर",
+  "upcomingEvents": "आगामी घटना",
+  "outlookChartNote": "सूचक श्रेणी; संभाव्यता हे ढोबळ अंदाज आहेत, भाकिते नव्हेत."
 }

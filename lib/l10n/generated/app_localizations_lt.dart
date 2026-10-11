@@ -924,4 +924,54 @@ class AppLocalizationsLt extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Šiai apimčiai reikia analizių: $needed, bet liko tik $left. Nustatymuose pasirinkite trumpesnę apimtį arba įsigykite daugiau analizių.';
   }
+
+  @override
+  String get outlookMarketMood => 'Rinkos nuotaika';
+
+  @override
+  String get moodVeryPessimistic => 'Labai pesimistinė';
+
+  @override
+  String get moodPessimistic => 'Pesimistinė';
+
+  @override
+  String get moodNeutral => 'Neutrali';
+
+  @override
+  String get moodOptimistic => 'Optimistinė';
+
+  @override
+  String get moodVeryOptimistic => 'Labai optimistinė';
+
+  @override
+  String get scenarioBull => 'Optimistinis scenarijus';
+
+  @override
+  String get scenarioBase => 'Bazinis scenarijus';
+
+  @override
+  String get scenarioBear => 'Pesimistinis scenarijus';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Dabartinė kaina: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Svarbiausi lygiai';
+
+  @override
+  String get keyLevelSupport => 'Palaikymas';
+
+  @override
+  String get keyLevelResistance => 'Pasipriešinimas';
+
+  @override
+  String get keyLevelAnchor => 'Inkaras';
+
+  @override
+  String get upcomingEvents => 'Artėjantys įvykiai';
+
+  @override
+  String get outlookChartNote => 'Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės.';
 }

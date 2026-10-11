@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Standaardlengte per abonnement: Normaal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Kort gebruikt er 2 minder, Diepgaand 2 meer.",
   "aiWebSearchesShort": "{count, plural, one{maximaal 1 webzoekopdracht} other{maximaal {count} webzoekopdrachten}}",
   "planWebSearches": "{count, plural, one{1 webzoekopdracht per analyse} other{{count} webzoekopdrachten per analyse}}",
-  "errNotEnoughCredits": "Deze lengte vereist {needed} analyses, maar je hebt er nog maar {left}. Kies een kortere lengte in Instellingen of koop extra analyses."
+  "errNotEnoughCredits": "Deze lengte vereist {needed} analyses, maar je hebt er nog maar {left}. Kies een kortere lengte in Instellingen of koop extra analyses.",
+  "outlookMarketMood": "Marktsentiment",
+  "moodVeryPessimistic": "Zeer pessimistisch",
+  "moodPessimistic": "Pessimistisch",
+  "moodNeutral": "Neutraal",
+  "moodOptimistic": "Optimistisch",
+  "moodVeryOptimistic": "Zeer optimistisch",
+  "scenarioBull": "Optimistisch scenario",
+  "scenarioBase": "Basisscenario",
+  "scenarioBear": "Pessimistisch scenario",
+  "outlookCurrentPrice": "Huidige koers: {price}",
+  "outlookKeyLevels": "Belangrijke niveaus",
+  "keyLevelSupport": "Steun",
+  "keyLevelResistance": "Weerstand",
+  "keyLevelAnchor": "Ankerniveau",
+  "upcomingEvents": "Komende gebeurtenissen",
+  "outlookChartNote": "Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen."
 }

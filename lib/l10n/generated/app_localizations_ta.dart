@@ -884,4 +884,54 @@ class AppLocalizationsTa extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'இந்த நீளத்திற்கு $needed பகுப்பாய்வுகள் தேவை, ஆனால் $left மட்டுமே மீதமுள்ளன. அமைப்புகளில் குறைந்த நீளத்தைத் தேர்வுசெய்யவும் அல்லது கூடுதல் பகுப்பாய்வுகளைப் பெறவும்.';
   }
+
+  @override
+  String get outlookMarketMood => 'சந்தை மனநிலை';
+
+  @override
+  String get moodVeryPessimistic => 'மிகவும் அவநம்பிக்கை';
+
+  @override
+  String get moodPessimistic => 'அவநம்பிக்கை';
+
+  @override
+  String get moodNeutral => 'நடுநிலை';
+
+  @override
+  String get moodOptimistic => 'நம்பிக்கை';
+
+  @override
+  String get moodVeryOptimistic => 'மிகவும் நம்பிக்கை';
+
+  @override
+  String get scenarioBull => 'ஏற்றச் சூழ்நிலை';
+
+  @override
+  String get scenarioBase => 'அடிப்படைச் சூழ்நிலை';
+
+  @override
+  String get scenarioBear => 'இறக்கச் சூழ்நிலை';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'தற்போதைய விலை: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'முக்கிய நிலைகள்';
+
+  @override
+  String get keyLevelSupport => 'ஆதரவு';
+
+  @override
+  String get keyLevelResistance => 'எதிர்ப்பு';
+
+  @override
+  String get keyLevelAnchor => 'நங்கூர நிலை';
+
+  @override
+  String get upcomingEvents => 'வரவிருக்கும் நிகழ்வுகள்';
+
+  @override
+  String get outlookChartNote => 'குறிப்பான வரம்புகள்; நிகழ்தகவுகள் தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல.';
 }

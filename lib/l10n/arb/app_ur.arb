@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "معیاری طوالت پر پلان کے لحاظ سے ویب تلاشیں: نارمل {normal}، Pro {pro}، Max {max}، Ultra {ultra}۔ مختصر میں 2 کم اور تفصیلی میں 2 زیادہ۔",
   "aiWebSearchesShort": "{count, plural, one{زیادہ سے زیادہ {count} ویب تلاش} other{زیادہ سے زیادہ {count} ویب تلاشیں}}",
   "planWebSearches": "{count, plural, one{فی تجزیہ {count} ویب تلاش} other{فی تجزیہ {count} ویب تلاشیں}}",
-  "errNotEnoughCredits": "اس طوالت کے لیے {needed} تجزیے درکار ہیں، لیکن صرف {left} باقی ہیں۔ ترتیبات میں کم طوالت منتخب کریں یا مزید تجزیے حاصل کریں۔"
+  "errNotEnoughCredits": "اس طوالت کے لیے {needed} تجزیے درکار ہیں، لیکن صرف {left} باقی ہیں۔ ترتیبات میں کم طوالت منتخب کریں یا مزید تجزیے حاصل کریں۔",
+  "outlookMarketMood": "مارکیٹ کا مزاج",
+  "moodVeryPessimistic": "بہت مایوس کن",
+  "moodPessimistic": "مایوس کن",
+  "moodNeutral": "غیر جانبدار",
+  "moodOptimistic": "پُرامید",
+  "moodVeryOptimistic": "بہت پُرامید",
+  "scenarioBull": "پُرامید منظرنامہ",
+  "scenarioBase": "بنیادی منظرنامہ",
+  "scenarioBear": "مایوس کن منظرنامہ",
+  "outlookCurrentPrice": "موجودہ قیمت: {price}",
+  "outlookKeyLevels": "اہم سطحیں",
+  "keyLevelSupport": "سپورٹ",
+  "keyLevelResistance": "مزاحمت",
+  "keyLevelAnchor": "حوالہ جاتی سطح",
+  "upcomingEvents": "آنے والے واقعات",
+  "outlookChartNote": "تخمینی حدود؛ امکانات محض موٹے اندازے ہیں، پیش گوئیاں نہیں۔"
 }

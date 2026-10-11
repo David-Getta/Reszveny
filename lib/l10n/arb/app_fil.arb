@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Karaniwang haba ayon sa plan: Normal {normal}, Pro {pro}, Max {max}, Ultra {ultra}. 2 mas kaunti ang Maikli, 2 mas marami ang Malalim.",
   "aiWebSearchesShort": "{count, plural, one{hanggang {count} paghahanap sa web} other{hanggang {count} paghahanap sa web}}",
   "planWebSearches": "{count, plural, one{{count} paghahanap sa web bawat pagsusuri} other{{count} paghahanap sa web bawat pagsusuri}}",
-  "errNotEnoughCredits": "Kailangan ng habang ito ng {needed} pagsusuri, pero {left} na lang ang natitira. Pumili ng mas maikling haba sa Mga setting o kumuha ng dagdag na pagsusuri."
+  "errNotEnoughCredits": "Kailangan ng habang ito ng {needed} pagsusuri, pero {left} na lang ang natitira. Pumili ng mas maikling haba sa Mga setting o kumuha ng dagdag na pagsusuri.",
+  "outlookMarketMood": "Sentimyento ng merkado",
+  "moodVeryPessimistic": "Napaka-pesimista",
+  "moodPessimistic": "Pesimista",
+  "moodNeutral": "Neutral",
+  "moodOptimistic": "Optimista",
+  "moodVeryOptimistic": "Napaka-optimista",
+  "scenarioBull": "Optimistang senaryo",
+  "scenarioBase": "Batayang senaryo",
+  "scenarioBear": "Pesimistang senaryo",
+  "outlookCurrentPrice": "Kasalukuyang presyo: {price}",
+  "outlookKeyLevels": "Mahahalagang antas",
+  "keyLevelSupport": "Support",
+  "keyLevelResistance": "Resistance",
+  "keyLevelAnchor": "Angkla",
+  "upcomingEvents": "Mga paparating na kaganapan",
+  "outlookChartNote": "Tinatayang saklaw lamang; ang mga probabilidad ay magaspang na pagtataya, hindi hula."
 }

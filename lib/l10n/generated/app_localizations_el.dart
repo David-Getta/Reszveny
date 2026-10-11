@@ -886,4 +886,54 @@ class AppLocalizationsEl extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'Αυτό το μήκος απαιτεί $needed αναλύσεις, αλλά σας απομένουν μόνο $left. Επιλέξτε μικρότερο μήκος στις Ρυθμίσεις ή αποκτήστε περισσότερες αναλύσεις.';
   }
+
+  @override
+  String get outlookMarketMood => 'Κλίμα αγοράς';
+
+  @override
+  String get moodVeryPessimistic => 'Πολύ απαισιόδοξο';
+
+  @override
+  String get moodPessimistic => 'Απαισιόδοξο';
+
+  @override
+  String get moodNeutral => 'Ουδέτερο';
+
+  @override
+  String get moodOptimistic => 'Αισιόδοξο';
+
+  @override
+  String get moodVeryOptimistic => 'Πολύ αισιόδοξο';
+
+  @override
+  String get scenarioBull => 'Αισιόδοξο σενάριο';
+
+  @override
+  String get scenarioBase => 'Βασικό σενάριο';
+
+  @override
+  String get scenarioBear => 'Απαισιόδοξο σενάριο';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Τρέχουσα τιμή: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Βασικά επίπεδα';
+
+  @override
+  String get keyLevelSupport => 'Στήριξη';
+
+  @override
+  String get keyLevelResistance => 'Αντίσταση';
+
+  @override
+  String get keyLevelAnchor => 'Επίπεδο αναφοράς';
+
+  @override
+  String get upcomingEvents => 'Επερχόμενα γεγονότα';
+
+  @override
+  String get outlookChartNote => 'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
 }

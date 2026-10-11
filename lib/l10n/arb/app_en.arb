@@ -522,5 +522,28 @@
         "type": "int"
       }
     }
-  }
+  },
+  "outlookMarketMood": "Market mood",
+  "moodVeryPessimistic": "Very pessimistic",
+  "moodPessimistic": "Pessimistic",
+  "moodNeutral": "Neutral",
+  "moodOptimistic": "Optimistic",
+  "moodVeryOptimistic": "Very optimistic",
+  "scenarioBull": "Bull case",
+  "scenarioBase": "Base case",
+  "scenarioBear": "Bear case",
+  "outlookCurrentPrice": "Current price: {price}",
+  "@outlookCurrentPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "outlookKeyLevels": "Key levels",
+  "keyLevelSupport": "Support",
+  "keyLevelResistance": "Resistance",
+  "keyLevelAnchor": "Anchor",
+  "upcomingEvents": "Upcoming events",
+  "outlookChartNote": "Indicative ranges; probabilities are rough judgements, not predictions."
 }

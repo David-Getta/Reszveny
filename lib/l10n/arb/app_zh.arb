@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "各计划的常规篇幅：标准 {normal}、Pro {pro}、Max {max}、Ultra {ultra}。简要少 2 次，深入多 2 次。",
   "aiWebSearchesShort": "{count, plural, other{最多 {count} 次网络搜索}}",
   "planWebSearches": "{count, plural, other{每次分析 {count} 次网络搜索}}",
-  "errNotEnoughCredits": "此篇幅需要 {needed} 次分析，但仅剩 {left} 次。请在设置中选择更短的篇幅，或获取更多分析。"
+  "errNotEnoughCredits": "此篇幅需要 {needed} 次分析，但仅剩 {left} 次。请在设置中选择更短的篇幅，或获取更多分析。",
+  "outlookMarketMood": "市场情绪",
+  "moodVeryPessimistic": "非常悲观",
+  "moodPessimistic": "悲观",
+  "moodNeutral": "中性",
+  "moodOptimistic": "乐观",
+  "moodVeryOptimistic": "非常乐观",
+  "scenarioBull": "乐观情景",
+  "scenarioBase": "基准情景",
+  "scenarioBear": "悲观情景",
+  "outlookCurrentPrice": "当前价格：{price}",
+  "outlookKeyLevels": "关键价位",
+  "keyLevelSupport": "支撑位",
+  "keyLevelResistance": "阻力位",
+  "keyLevelAnchor": "锚定价位",
+  "upcomingEvents": "近期事件",
+  "outlookChartNote": "区间仅供参考；概率为粗略判断，并非预测。"
 }

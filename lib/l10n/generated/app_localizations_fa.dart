@@ -880,4 +880,54 @@ class AppLocalizationsFa extends AppLocalizations {
   String errNotEnoughCredits(int needed, int left) {
     return 'این طول به $needed تحلیل نیاز دارد، اما فقط $left تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید.';
   }
+
+  @override
+  String get outlookMarketMood => 'حال‌وهوای بازار';
+
+  @override
+  String get moodVeryPessimistic => 'بسیار بدبینانه';
+
+  @override
+  String get moodPessimistic => 'بدبینانه';
+
+  @override
+  String get moodNeutral => 'خنثی';
+
+  @override
+  String get moodOptimistic => 'خوش‌بینانه';
+
+  @override
+  String get moodVeryOptimistic => 'بسیار خوش‌بینانه';
+
+  @override
+  String get scenarioBull => 'سناریوی خوش‌بینانه';
+
+  @override
+  String get scenarioBase => 'سناریوی پایه';
+
+  @override
+  String get scenarioBear => 'سناریوی بدبینانه';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'قیمت فعلی: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'سطوح کلیدی';
+
+  @override
+  String get keyLevelSupport => 'حمایت';
+
+  @override
+  String get keyLevelResistance => 'مقاومت';
+
+  @override
+  String get keyLevelAnchor => 'سطح مرجع';
+
+  @override
+  String get upcomingEvents => 'رویدادهای پیش رو';
+
+  @override
+  String get outlookChartNote => 'بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی.';
 }

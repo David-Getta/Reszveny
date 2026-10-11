@@ -8,10 +8,12 @@ import 'package:reszveny/core/models/news_item.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/core/models/analysis_extras.dart';
 import 'package:reszveny/core/models/financial_statements.dart';
 import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/analysis/report_quality.dart';
 import 'package:reszveny/features/billing/plan.dart';
 
 Map<String, dynamic> response(List<Map<String, dynamic>> content, {String stop = 'end_turn'}) => {
@@ -118,13 +120,12 @@ void main() {
     );
   });
 
-  test('system prompt v2 demands research plan, evidence discipline, hidden factors and the outlook', () {
-    final p = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions());
+  test('system prompt v2.1 demands research plan, evidence discipline, hidden factors and the outlook', () {
+    const p = ClaudeStockAnalyst.systemPrompt;
     expect(p, contains('"outlook"'));
     expect(p, contains('behavioural finance'));
     expect(p, contains('Sociology'));
     expect(p, contains('Bull (~30%)'));
-    expect(p, contains('at most 6 searches'));
     expect(p, contains('short-seller reports'));
     expect(p, contains('Every number carries its date'));
     expect(p, contains('"so what"'));
@@ -132,17 +133,23 @@ void main() {
     expect(p, contains('covenants'));
     expect(p, contains('lock-up expiries'));
     expect(p, contains('concrete indicative price range'));
-    expect(p, contains('1100-1600 words'));
-    expect(p, contains('BEGINNER'));
-    expect(p, contains('Strongest counter-argument'));
+    expect(p, contains('"outlook_data"'));
+    expect(p, contains('market_mood'));
+    expect(p, contains('insider transactions'));
     expect(
       (ClaudeStockAnalyst.schema['properties']['sections']['items']['properties']['kind']['enum'] as List),
       contains('outlook'),
     );
+    expect((ClaudeStockAnalyst.schema['required'] as List), contains('outlook_data'));
   });
 
-  test('system prompt follows the analysis options', () {
-    final brief = ClaudeStockAnalyst.buildSystemPrompt(
+  test('settings block follows the analysis options', () {
+    final std = ClaudeStockAnalyst.buildSettings(const AnalysisOptions());
+    expect(std, contains('at most 6 searches'));
+    expect(std, contains('STANDARD, 1100-1600 words'));
+    expect(std, contains('BEGINNER'));
+    expect(std, contains('Counter-argument: ON'));
+    final brief = ClaudeStockAnalyst.buildSettings(
       const AnalysisOptions(
         depth: AnalysisDepth.brief,
         readerLevel: ReaderLevel.experienced,
@@ -152,20 +159,36 @@ void main() {
         readerCurrency: 'HUF',
       ),
     );
-    expect(brief, contains('BRIEF'));
-    expect(brief, contains('600-900 words'));
+    expect(brief, contains('BRIEF, 600-900 words'));
     expect(brief, contains('EXPERIENCED'));
     expect(brief, contains('at most 4 searches'));
     expect(brief, contains('combine topics'));
     expect(brief, contains('based in HU'));
     expect(brief, contains('HUF'));
-    expect(brief, isNot(contains('Strongest counter-argument')));
-    final deep = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions(depth: AnalysisDepth.deep, webSearches: 8));
-    expect(deep, contains('IN-DEPTH'));
-    expect(deep, contains('2200-3000 words'));
+    expect(brief, contains('Counter-argument: OFF'));
+    final deep = ClaudeStockAnalyst.buildSettings(const AnalysisOptions(depth: AnalysisDepth.deep, webSearches: 8));
+    expect(deep, contains('IN-DEPTH, 2200-3000 words'));
     expect(deep, contains('extra searches'));
-    final offline = ClaudeStockAnalyst.buildSystemPrompt(const AnalysisOptions(), webSearch: false);
-    expect(offline, contains('Web search is not available'));
+    final offline = ClaudeStockAnalyst.buildSettings(const AnalysisOptions(), webSearch: false);
+    expect(offline, contains('NOT available'));
+  });
+
+  test('the system prompt is identical for every setting, so it can be cached', () {
+    final analyst = ClaudeStockAnalyst(config: const AppConfig(anthropicApiKey: 'k'));
+    final msgs = [
+      {'role': 'user', 'content': 'x'},
+    ];
+    final a = analyst.buildRequestBody(msgs, webSearch: true);
+    final b = analyst.buildRequestBody(
+      msgs,
+      webSearch: true,
+      options: const AnalysisOptions(depth: AnalysisDepth.deep, readerLevel: ReaderLevel.experienced),
+    );
+    expect(jsonEncode(a['system']), jsonEncode(b['system']));
+    final sys = (a['system'] as List).single as Map;
+    expect(sys['cache_control'], {'type': 'ephemeral'});
+    expect(a['cache_control'], {'type': 'ephemeral'});
+    expect(b['max_tokens'], 28000);
   });
 
   test('analysis options: cost, tokens and web searches by plan', () {
@@ -189,6 +212,11 @@ void main() {
     final msg = ClaudeStockAnalyst.buildUserMessage(
       StockDetails(
         symbol: 'AAPL',
+        extras: AnalysisExtras(
+          peers: const ['MSFT', 'GOOGL'],
+          insider: InsiderSummary(windowDays: 90, buys: 0, sells: 2, netShares: -5000),
+          nextEarnings: UpcomingEarnings(date: DateTime.utc(2026, 10, 30), hour: 'amc', epsEstimate: 1.6),
+        ),
         history: PriceHistory(symbol: 'AAPL', points: points),
         statements: const FinancialStatements(
           symbol: 'AAPL',
@@ -211,7 +239,12 @@ void main() {
       options: const AnalysisOptions(readerCountry: 'HU', readerCurrency: 'HUF'),
       now: DateTime.utc(2026, 10, 10),
     );
+    expect(msg, startsWith('Report settings:'));
+    expect(msg, contains('based in HU'));
     final json = jsonDecode(msg.substring(msg.indexOf('{'))) as Map<String, dynamic>;
+    expect(json['peers'], ['MSFT', 'GOOGL']);
+    expect(json['next_earnings'], {'date': '2026-10-30', 'hour': 'amc', 'eps_estimate': 1.6});
+    expect((json['insider_transactions'] as Map)['open_market_sells'], 2);
     expect(json['today'], '2026-10-10');
     expect(json['reader'], {'language': 'Hungarian', 'level': 'beginner', 'country': 'HU', 'currency': 'HUF'});
     final stats = json['price_statistics'] as Map<String, dynamic>;
@@ -273,5 +306,127 @@ void main() {
     final back = StockReport.fromJson(jsonDecode(jsonEncode(r.toJson())) as Map<String, dynamic>);
     expect(back.sections.length, r.sections.length);
     expect(back.headline, r.headline);
+  });
+
+  group('outlook_data', () {
+    final outlookJson = {
+      'current_price': 100,
+      'currency': 'USD',
+      'scenarios': [
+        {'kind': 'bear', 'probability': 25, 'price_low': 70, 'price_high': 85, 'horizon': '6-12 hó', 'summary': 'b'},
+        {'kind': 'bull', 'probability': 30, 'price_low': 125, 'price_high': 115, 'horizon': '6-12 hó', 'summary': 'u'},
+        {'kind': 'base', 'probability': 45, 'price_low': 95, 'price_high': 110, 'horizon': '6-12 hó', 'summary': 'm'},
+        {'kind': 'moon', 'probability': 5},
+      ],
+      'key_levels': [
+        {'price': 120, 'kind': 'resistance', 'label': 'csúcs'},
+        {'price': 90, 'kind': 'support', 'label': '200 napos'},
+        {'price': -1, 'kind': 'support', 'label': 'rossz'},
+      ],
+      'catalysts': [
+        {'date': '2026-11-20', 'event': 'Befektetői nap'},
+        {'date': '2026-10-28', 'event': 'Gyorsjelentés'},
+        {'date': '2027-Q1', 'event': 'Termékbejelentés'},
+      ],
+      'market_mood': 1.4,
+      'market_mood_reason': 'Az AI-narratíva erős.',
+    };
+
+    test('parses, sorts and sanitises the structured outlook', () {
+      final r = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {
+            'type': 'text',
+            'text': jsonEncode({...sample, 'outlook_data': outlookJson}),
+          },
+        ]),
+      );
+      final o = r.outlook!;
+      expect(o.scenarios.map((s) => s.kind), [ScenarioKind.bull, ScenarioKind.base, ScenarioKind.bear]);
+      expect(o.scenarios.first.priceLow, 115); // felcserélt sáv rendezve
+      expect(o.scenarios.first.priceHigh, 125);
+      expect(o.probabilitySum, 100);
+      expect(o.keyLevels.map((k) => k.price), [90, 120]);
+      expect(o.catalysts.map((c) => c.event), ['Gyorsjelentés', 'Befektetői nap', 'Termékbejelentés']);
+      expect(o.marketMood, 1);
+      expect(r.promptVersion, ClaudeStockAnalyst.promptVersion);
+      // Lemezre mentés és visszaolvasás után is megmarad.
+      final back = StockReport.fromJson(jsonDecode(jsonEncode(r.toJson())) as Map<String, dynamic>);
+      expect(back.outlook!.scenarios.length, 3);
+      expect(back.outlook!.marketMoodReason, 'Az AI-narratíva erős.');
+    });
+
+    test('a broken outlook_data does not break the report', () {
+      final r = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {
+            'type': 'text',
+            'text': jsonEncode({...sample, 'outlook_data': 'nope'}),
+          },
+        ]),
+      );
+      expect(r.outlook, isNull);
+      expect(r.sections, isNotEmpty);
+    });
+
+    test('quality check scores a complete report high and flags problems', () {
+      final full = <String, dynamic>{
+        'headline': 'H',
+        'sections': [
+          for (final k in ReportQuality.requiredOrder)
+            {
+              'kind': k.name,
+              'title': k.name,
+              'paragraphs': [List.filled(120, 'szó').join(' ')],
+              'bullets': k == ReportSectionKind.news ? ['2026-10-01: hír', '2026-09-20: másik'] : <String>[],
+            },
+        ],
+        'outlook_data': outlookJson,
+        'sources': [
+          for (var i = 0; i < 4; i++) {'title': 't$i', 'url': 'https://e.com/$i'},
+        ],
+      };
+      final good = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {'type': 'text', 'text': jsonEncode(full)},
+        ]),
+      );
+      final q = ReportQuality.check(good);
+      expect(q.issues, isEmpty, reason: q.issues.join('; '));
+      expect(q.score, 100);
+
+      final bad = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {'type': 'text', 'text': jsonEncode(sample)},
+        ]),
+      );
+      final qb = ReportQuality.check(bad);
+      expect(qb.score, lessThan(60));
+      expect(qb.issues.join(' '), contains('missing sections'));
+      expect(qb.issues.join(' '), contains('no outlook_data'));
+      expect(qb.issues.join(' '), contains('too short'));
+    });
+  });
+
+  test('sources from search results before a pause_turn are kept', () {
+    final r = ClaudeStockAnalyst.parseResponse(
+      'AAPL',
+      response([
+        {'type': 'text', 'text': jsonEncode(sample)},
+      ]),
+      earlierContent: [
+        {
+          'type': 'web_search_tool_result',
+          'content': [
+            {'type': 'web_search_result', 'url': 'https://early.example/a', 'title': 'Early'},
+          ],
+        },
+      ],
+    );
+    expect(r.sources.map((s) => s.url), contains('https://early.example/a'));
   });
 }

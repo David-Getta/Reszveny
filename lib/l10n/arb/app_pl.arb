@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Standardowa długość według planu: Standard {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Krótko” – o 2 mniej, „Szczegółowo” – o 2 więcej.",
   "aiWebSearchesShort": "{count, plural, one{do {count} wyszukiwania w sieci} few{do {count} wyszukiwań w sieci} many{do {count} wyszukiwań w sieci} other{do {count} wyszukiwania w sieci}}",
   "planWebSearches": "{count, plural, one{{count} wyszukiwanie w sieci na analizę} few{{count} wyszukiwania w sieci na analizę} many{{count} wyszukiwań w sieci na analizę} other{{count} wyszukiwania w sieci na analizę}}",
-  "errNotEnoughCredits": "Ta długość wymaga analiz: {needed}, a pozostało: {left}. Wybierz krótszą długość w Ustawieniach lub zdobądź więcej analiz."
+  "errNotEnoughCredits": "Ta długość wymaga analiz: {needed}, a pozostało: {left}. Wybierz krótszą długość w Ustawieniach lub zdobądź więcej analiz.",
+  "outlookMarketMood": "Nastroje rynkowe",
+  "moodVeryPessimistic": "Bardzo pesymistyczne",
+  "moodPessimistic": "Pesymistyczne",
+  "moodNeutral": "Neutralne",
+  "moodOptimistic": "Optymistyczne",
+  "moodVeryOptimistic": "Bardzo optymistyczne",
+  "scenarioBull": "Scenariusz optymistyczny",
+  "scenarioBase": "Scenariusz bazowy",
+  "scenarioBear": "Scenariusz pesymistyczny",
+  "outlookCurrentPrice": "Aktualna cena: {price}",
+  "outlookKeyLevels": "Kluczowe poziomy",
+  "keyLevelSupport": "Wsparcie",
+  "keyLevelResistance": "Opór",
+  "keyLevelAnchor": "Kotwica cenowa",
+  "upcomingEvents": "Nadchodzące wydarzenia",
+  "outlookChartNote": "Zakresy orientacyjne; prawdopodobieństwa to przybliżone oceny, a nie prognozy."
 }

@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Štandardná dĺžka podľa tarifu: Štandard {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Stručne“ o 2 menej, „Podrobne“ o 2 viac.",
   "aiWebSearchesShort": "{count, plural, one{až {count} vyhľadávanie na webe} few{až {count} vyhľadávania na webe} many{až {count} vyhľadávania na webe} other{až {count} vyhľadávaní na webe}}",
   "planWebSearches": "{count, plural, one{{count} vyhľadávanie na webe pre každú analýzu} few{{count} vyhľadávania na webe pre každú analýzu} many{{count} vyhľadávania na webe pre každú analýzu} other{{count} vyhľadávaní na webe pre každú analýzu}}",
-  "errNotEnoughCredits": "Táto dĺžka vyžaduje analýz: {needed}, zostáva vám však len: {left}. Zvoľte v Nastaveniach kratšiu dĺžku alebo si zaobstarajte ďalšie analýzy."
+  "errNotEnoughCredits": "Táto dĺžka vyžaduje analýz: {needed}, zostáva vám však len: {left}. Zvoľte v Nastaveniach kratšiu dĺžku alebo si zaobstarajte ďalšie analýzy.",
+  "outlookMarketMood": "Nálada na trhu",
+  "moodVeryPessimistic": "Veľmi pesimistická",
+  "moodPessimistic": "Pesimistická",
+  "moodNeutral": "Neutrálna",
+  "moodOptimistic": "Optimistická",
+  "moodVeryOptimistic": "Veľmi optimistická",
+  "scenarioBull": "Optimistický scenár",
+  "scenarioBase": "Základný scenár",
+  "scenarioBear": "Pesimistický scenár",
+  "outlookCurrentPrice": "Aktuálna cena: {price}",
+  "outlookKeyLevels": "Kľúčové úrovne",
+  "keyLevelSupport": "Podpora",
+  "keyLevelResistance": "Odpor",
+  "keyLevelAnchor": "Cenová kotva",
+  "upcomingEvents": "Nadchádzajúce udalosti",
+  "outlookChartNote": "Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede."
 }

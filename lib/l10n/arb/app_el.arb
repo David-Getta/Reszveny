@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Τυπικό μήκος ανά πρόγραμμα: Κανονικό {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Η «Σύντομη» χρησιμοποιεί 2 λιγότερες αναζητήσεις, η «Εις βάθος» 2 περισσότερες.",
   "aiWebSearchesShort": "{count, plural, one{έως 1 αναζήτηση στο web} other{έως {count} αναζητήσεις στο web}}",
   "planWebSearches": "{count, plural, one{1 αναζήτηση στο web ανά ανάλυση} other{{count} αναζητήσεις στο web ανά ανάλυση}}",
-  "errNotEnoughCredits": "Αυτό το μήκος απαιτεί {needed} αναλύσεις, αλλά σας απομένουν μόνο {left}. Επιλέξτε μικρότερο μήκος στις Ρυθμίσεις ή αποκτήστε περισσότερες αναλύσεις."
+  "errNotEnoughCredits": "Αυτό το μήκος απαιτεί {needed} αναλύσεις, αλλά σας απομένουν μόνο {left}. Επιλέξτε μικρότερο μήκος στις Ρυθμίσεις ή αποκτήστε περισσότερες αναλύσεις.",
+  "outlookMarketMood": "Κλίμα αγοράς",
+  "moodVeryPessimistic": "Πολύ απαισιόδοξο",
+  "moodPessimistic": "Απαισιόδοξο",
+  "moodNeutral": "Ουδέτερο",
+  "moodOptimistic": "Αισιόδοξο",
+  "moodVeryOptimistic": "Πολύ αισιόδοξο",
+  "scenarioBull": "Αισιόδοξο σενάριο",
+  "scenarioBase": "Βασικό σενάριο",
+  "scenarioBear": "Απαισιόδοξο σενάριο",
+  "outlookCurrentPrice": "Τρέχουσα τιμή: {price}",
+  "outlookKeyLevels": "Βασικά επίπεδα",
+  "keyLevelSupport": "Στήριξη",
+  "keyLevelResistance": "Αντίσταση",
+  "keyLevelAnchor": "Επίπεδο αναφοράς",
+  "upcomingEvents": "Επερχόμενα γεγονότα",
+  "outlookChartNote": "Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις."
 }

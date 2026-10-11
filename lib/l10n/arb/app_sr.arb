@@ -254,5 +254,21 @@
   "aiWebSearchesPlans": "Стандардна дужина по плану: Стандард {normal}, Pro {pro}, Max {max}, Ultra {ultra}. „Кратко“ користи 2 мање, „Детаљно“ 2 више.",
   "aiWebSearchesShort": "{count, plural, one{до {count} веб-претраге} few{до {count} веб-претраге} other{до {count} веб-претрага}}",
   "planWebSearches": "{count, plural, one{{count} веб-претрага по анализи} few{{count} веб-претраге по анализи} other{{count} веб-претрага по анализи}}",
-  "errNotEnoughCredits": "За ову дужину потребно је анализа: {needed}, а преостало је: {left}. Изаберите краћу дужину у Подешавањима или набавите још анализа."
+  "errNotEnoughCredits": "За ову дужину потребно је анализа: {needed}, а преостало је: {left}. Изаберите краћу дужину у Подешавањима или набавите још анализа.",
+  "outlookMarketMood": "Расположење тржишта",
+  "moodVeryPessimistic": "Веома песимистично",
+  "moodPessimistic": "Песимистично",
+  "moodNeutral": "Неутрално",
+  "moodOptimistic": "Оптимистично",
+  "moodVeryOptimistic": "Веома оптимистично",
+  "scenarioBull": "Оптимистички сценарио",
+  "scenarioBase": "Основни сценарио",
+  "scenarioBear": "Песимистички сценарио",
+  "outlookCurrentPrice": "Тренутна цена: {price}",
+  "outlookKeyLevels": "Кључни нивои",
+  "keyLevelSupport": "Подршка",
+  "keyLevelResistance": "Отпор",
+  "keyLevelAnchor": "Ценовно сидро",
+  "upcomingEvents": "Предстојећи догађаји",
+  "outlookChartNote": "Оквирни распони; вероватноће су грубе процене, а не предвиђања."
 }
