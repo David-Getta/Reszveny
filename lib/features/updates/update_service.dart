@@ -52,6 +52,28 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
   String? _currentVersion;
   String? get currentVersion => _currentVersion;
 
+  /// Emberi olvasásra: `0.2.3 (6)` – verzió és buildszám.
+  String? get displayVersion {
+    final v = _currentVersion;
+    if (v == null) return null;
+    final parts = v.split('+');
+    return parts.length == 2 && parts[1].isNotEmpty ? '${parts[0]} (${parts[1]})' : parts[0];
+  }
+
+  Future<void>? _versionLoad;
+
+  /// Az app saját verziójának beolvasása (egyszer); a frissítés-ellenőrzéstől
+  /// függetlenül is hívható, pl. a beállítások aljáról.
+  Future<void> loadVersion() => _versionLoad ??= () async {
+    try {
+      final info = await PackageInfo.fromPlatform();
+      _currentVersion = info.buildNumber.isEmpty ? info.version : '${info.version}+${info.buildNumber}';
+    } catch (_) {
+      _currentVersion = null;
+    }
+    notifyListeners();
+  }();
+
   String? _latestVersion;
   String? get latestVersion => _latestVersion;
 
@@ -77,13 +99,7 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
     if (_initialized) return;
     _initialized = true;
     _autoInstall = autoInstall;
-    try {
-      final info = await PackageInfo.fromPlatform();
-      _currentVersion = info.buildNumber.isEmpty ? info.version : '${info.version}+${info.buildNumber}';
-    } catch (_) {
-      _currentVersion = null;
-    }
-    notifyListeners();
+    await loadVersion();
 
     if (channel == UpdateChannel.sparkle) {
       try {

@@ -188,6 +188,7 @@ class SettingsPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16),
                     child: Text(l10n.disclaimer, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                   ),
+                  const _VersionFooter(),
                 ],
               ),
             ),
@@ -420,7 +421,7 @@ class _UpdatesTile extends StatelessWidget {
           children: [
             ListTile(
               leading: const Icon(Icons.info_outline_rounded),
-              title: Text(l10n.currentVersion(u.currentVersion ?? '–')),
+              title: Text(l10n.currentVersion(u.displayVersion ?? '–')),
               subtitle: statusText.isEmpty ? null : Text(statusText, style: TextStyle(color: p.muted)),
               trailing: storeOnly
                   ? null
@@ -444,6 +445,49 @@ class _UpdatesTile extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+/// A beállítások legalja: logó, név és a használt verzió (kijelölhető, másolható).
+class _VersionFooter extends StatefulWidget {
+  const _VersionFooter();
+
+  @override
+  State<_VersionFooter> createState() => _VersionFooterState();
+}
+
+class _VersionFooterState extends State<_VersionFooter> {
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    AppServices.of(context).updates.loadVersion();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final updates = AppServices.of(context).updates;
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return ListenableBuilder(
+      listenable: updates,
+      builder: (context, _) => Padding(
+        padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
+        child: Column(
+          children: [
+            Image.asset('assets/branding/logo_128.png', height: 28),
+            const SizedBox(height: 6),
+            Text('StockLens', style: theme.textTheme.titleSmall),
+            const SizedBox(height: 2),
+            SelectableText(
+              l10n.currentVersion(updates.displayVersion ?? '–'),
+              key: const ValueKey('settings-version'),
+              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
