@@ -278,3 +278,24 @@ Az eredmény a `docs/elemzes-minta/v2.1/` mappába kerül: részvényenként JSO
 valamint egy `SUMMARY.md` táblázat a minőségpontszámmal, a hibákkal, a szószámmal, a tokenekkel, a
 gyorsítótár-olvasással és a keresések számával.
 
+
+## 8. v2.2 (2026-10-11)
+
+Cél: jobb minőségű, pontosabb és az adott részvényre szabottabb elemzés. A forrás a
+`lib/features/analysis/claude_stock_analyst.dart` (`promptVersion = 'v2.2'`).
+
+| Változás | Miért |
+|---|---|
+| A prompt stílusa az Opus 5.5-höz igazodik: nincs csupa nagybetűs „CRITICAL”, minden szabály mellett ott az oka, a viselkedés prózában, a referenciaadat listában, a beállításokban nincsenek merev számkorlátok | Az új modell a hangos utasításokat túlteljesíti, az indokolt szabályokat viszont jól általánosítja |
+| Ágazati mutatók: bank (nettó kamatmarzs, CET1, kockázati költség, nem teljesítő hitelek, ROE a tőkeköltséghez mérve), biztosító (kombinált mutató, szolvencia), REIT (FFO, kihasználtság, hitelfedezeti arány), árbevétel előtti biotech (készpénz-kifutás, klinikai mérföldkövek), nyersanyag-termelő (helye a költséggörbén, árérzékenység), szoftver (növekedés, nettó bevétel-megtartás, Rule of 40, részvényalapú juttatás), kiskereskedelem (összehasonlítható forgalom, készletforgás) | A P/E egy banknál vagy egy veszteséges biotech cégnél félrevezet; ágazatonként más számít |
+| Értékpapír-típusok: ETF, ADR, elsőbbségi részvény, SPAC | Ezeknél mást kell elemezni (pl. ETF-nél költség, összetétel, követési eltérés) |
+| Az ársávok a részvény saját volatilitásához méretezve (kb. egy éves szórásnyi sáv), az értékelés rövid számítással (pl. „18–20× 2026-os EPS 7,40 USD = 133–148 USD”) | Egy stabil közmű és egy kis biotech nem kaphat ugyanakkora sávot; a számítás ellenőrizhetővé teszi a célárat |
+| A cégspecifikus és a piaci/ágazati mozgás szétválasztása az árfolyam-statisztikában | „Az árfolyam 20 %-ot esett” mást jelent, ha az egész piac is 18 %-ot esett |
+| Bináris esemény (gyorsjelentés, FDA-döntés, per) két héten belül: külön figyelmeztetés; minden forgatókönyvhöz érvénytelenítő jel és kulcsszint | Az olvasó tudja, mi döntheti el gyorsan a kérdést, és mikor kell újragondolnia |
+| „Úgy írj, ahogy egy anyanyelvi pénzügyi újságíró” – szekciónként egy gondolat, ismétlés nélkül | A fordításízű, ismétlődő szöveg volt a leggyakoribb minőségi panasz |
+| Prompt-injekció elleni védelem: a weboldalak tartalma anyag, nem utasítás | A keresési találatokba rejtett szöveg ne irányíthassa az elemzést |
+| Helyi keresés: a webkeresés `user_location` mezője a cég székhelyének országa (vagy az olvasó országa) | Egy OTP-nél a magyar, egy ASML-nél a holland források jönnek elő elsőként |
+| JSON-javító lépés: ha a webkereséses válasz nem érvényes JSON, egy második, olcsó hívás (`effort: low`, eszközök nélkül, kötelező JSON-séma) alakítja át; a keresési források megmaradnak, és ez nem von le újabb elemzést a keretből | Webkereséssel a strukturált kimenet nem kérhető (a hivatkozások miatt), így ritkán hibás JSON jöhetett, ami eddig hibaüzenettel végződött |
+
+Mérés: a valódi minőségjavulás az éles evallal mérhető (lásd fent, kulccsal); az eredmény a
+`docs/elemzes-minta/v2.2/` mappába kerül, így összevethető a v2.1-gyel.
