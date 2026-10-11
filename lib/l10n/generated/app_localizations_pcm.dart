@@ -1,0 +1,1261 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Nigerian Pidgin (`pcm`).
+class AppLocalizationsPcm extends AppLocalizations {
+  AppLocalizationsPcm([String locale = 'pcm']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Snap stock picture, make you sabi evritin about am.';
+
+  @override
+  String get homeHint =>
+      'Share certificate, broker app screen, newspaper or company logo – anytin wey fit show which stock e be.';
+
+  @override
+  String get takePhoto => 'Snap foto';
+
+  @override
+  String get chooseFromGallery => 'Pick from gallery';
+
+  @override
+  String get chooseImage => 'Pick picture';
+
+  @override
+  String get enterTickerManually => 'Type ticker by hand';
+
+  @override
+  String get tickerInputLabel => 'Di ticker';
+
+  @override
+  String get tickerInputHint => 'like AAPL';
+
+  @override
+  String get lookUp => 'Find am';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Demo mode – no market data key dey. Sample data dey for: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'We dey check di picture…';
+
+  @override
+  String get loadingData => 'Data dey load…';
+
+  @override
+  String get noCandidatesTitle => 'We no fit know di stock';
+
+  @override
+  String get noCandidatesBody =>
+      'We no fit find any stock for dis picture. Snap am again make e clear well, or type di ticker by hand.';
+
+  @override
+  String get whatWeSaw => 'Wetin we see';
+
+  @override
+  String get chooseCandidateTitle => 'Which stock you mean?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% sure';
+  }
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get systemLanguage => 'Di one wey system dey use';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get disclaimer =>
+      'Na only information dis app dey give, e no be investment advice. Data fit late or no correct.';
+
+  @override
+  String dataSource(String source) {
+    return 'Data from: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Wetin recognise am: $source';
+  }
+
+  @override
+  String get retry => 'Try again';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Close';
+
+  @override
+  String get errorGeneric => 'Sometin no go well.';
+
+  @override
+  String get errorSectionUnavailable => 'Dis section no gree load.';
+
+  @override
+  String get notAvailable => 'no dey';
+
+  @override
+  String get sectionIdentity => 'Stock ID';
+
+  @override
+  String get sectionPrice => 'Price';
+
+  @override
+  String get sectionValuation => 'How dem value am';
+
+  @override
+  String get sectionFinancials => 'Company moni';
+
+  @override
+  String get sectionDividend => 'Dividend';
+
+  @override
+  String get sectionProfile => 'About di company';
+
+  @override
+  String get sectionAnalysts => 'Wetin analysts tok';
+
+  @override
+  String get sectionNews => 'Tori';
+
+  @override
+  String get sectionRecognition => 'How we take sabi am';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Exchange';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Currency';
+
+  @override
+  String get labelCountry => 'Kontri';
+
+  @override
+  String get labelIndustry => 'Industry';
+
+  @override
+  String get labelSector => 'Sector';
+
+  @override
+  String get labelWebsite => 'Website';
+
+  @override
+  String get labelIpoDate => 'IPO date';
+
+  @override
+  String get labelMarketCap => 'Market cap';
+
+  @override
+  String get labelSharesOutstanding => 'Shares wey dey market';
+
+  @override
+  String get labelEmployees => 'Workers';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Head office';
+
+  @override
+  String get labelDescription => 'Wetin dem dey do';
+
+  @override
+  String get labelLastPrice => 'Last price';
+
+  @override
+  String get labelChange => 'Change';
+
+  @override
+  String get labelOpen => 'Open';
+
+  @override
+  String get labelDayHigh => 'Highest today';
+
+  @override
+  String get labelDayLow => 'Lowest today';
+
+  @override
+  String get labelPreviousClose => 'Last close';
+
+  @override
+  String get labelWeek52High => 'Highest for 52 weeks';
+
+  @override
+  String get labelWeek52Low => 'Lowest for 52 weeks';
+
+  @override
+  String get labelAverageVolume10d => 'Average volume (10 days)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Last update $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (last 12 months)';
+
+  @override
+  String get labelPeForward => 'P/E (next 12 months)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / free cash flow';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Total sales (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Net profit (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Gross margin';
+
+  @override
+  String get labelOperatingMargin => 'Operating margin';
+
+  @override
+  String get labelNetMargin => 'Net margin';
+
+  @override
+  String get labelRoe => 'Profit on equity (ROE)';
+
+  @override
+  String get labelRoa => 'Profit on assets (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Debt / equity';
+
+  @override
+  String get labelCurrentRatio => 'Current ratio';
+
+  @override
+  String get labelRevenueGrowth => 'Sales growth (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'How EPS grow (YoY)';
+
+  @override
+  String get labelDividendYield => 'Dividend yield';
+
+  @override
+  String get labelDividendPerShare => 'Dividend for each share';
+
+  @override
+  String get labelPayoutRatio => 'Payout ratio';
+
+  @override
+  String get labelConsensus => 'Wetin most of dem tok';
+
+  @override
+  String get ratingStrongBuy => 'Buy am well well';
+
+  @override
+  String get ratingBuy => 'Buy';
+
+  @override
+  String get ratingHold => 'Hold am';
+
+  @override
+  String get ratingSell => 'Sell';
+
+  @override
+  String get ratingStrongSell => 'Sell am well well';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analysts', one: '$count analyst');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Time: $period';
+  }
+
+  @override
+  String get noNews => 'No fresh tori.';
+
+  @override
+  String get openArticle => 'Open di tori';
+
+  @override
+  String get openLinkFailed => 'Di link no gree open.';
+
+  @override
+  String get recognitionSummary => 'Summary';
+
+  @override
+  String get recognitionEvidence => 'Why we tink so';
+
+  @override
+  String get recognitionRawText => 'Wetin we read from di picture';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Picture recognition never dey set (no ANTHROPIC_API_KEY). Type di ticker by hand.';
+
+  @override
+  String get errRecognitionUnreachable => 'We no fit reach di recognition service. Check your internet connection.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Di recognition service return error (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Di recognition service no fit work on dis picture.';
+
+  @override
+  String get errRecognitionTruncated => 'Di recognition answer cut for middle. Abeg try again.';
+
+  @override
+  String get errRecognitionBadResponse => 'Di recognition service give answer wey we no expect.';
+
+  @override
+  String get errRecognitionEmpty => 'Di recognition service return empty answer.';
+
+  @override
+  String get errMissingFinnhubKey => 'Market data never dey set (no FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable => 'We no fit reach di market data service. Check your internet connection.';
+
+  @override
+  String get errMarketRateLimited => 'Too many request don go di market data service. Abeg wait one minute.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Di market data service return error (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Di market data service give answer wey we no expect.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'We no find price data for $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'We no find company profile for $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Demo mode dey work only for $symbols. Add FINNHUB_API_KEY to get live data.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Sometin no go well: $detail';
+  }
+
+  @override
+  String get newSearch => 'New search';
+
+  @override
+  String get recentSearches => 'Recent';
+
+  @override
+  String get noRecentSearches => 'You never search anytin yet.';
+
+  @override
+  String get clearRecent => 'Clear recent';
+
+  @override
+  String get greeting => 'Which stock we go look?';
+
+  @override
+  String get searchHint => 'Ticker or di company name';
+
+  @override
+  String get attachImage => 'Add picture';
+
+  @override
+  String get searchResultsTitle => 'Wetin we find';
+
+  @override
+  String errNoResults(String query) {
+    return 'We no find any stock for “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Type ticker or company name…';
+
+  @override
+  String get openFullWindow => 'Open window';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Press $shortcut anywhere to call StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Open StockLens';
+
+  @override
+  String get trayQuickSearch => 'Quick search';
+
+  @override
+  String get trayQuit => 'Comot';
+
+  @override
+  String get appearance => 'How e go look';
+
+  @override
+  String get themeSystem => 'System';
+
+  @override
+  String get themeDark => 'Dark';
+
+  @override
+  String get themeLight => 'Light';
+
+  @override
+  String get back => 'Go back';
+
+  @override
+  String get aiSectionTitle => 'AI analysis';
+
+  @override
+  String get aiIntro =>
+      'Full gist wey AI write: summary of di latest news, di business, where e strong, di risk dem and hidden tins, how dem value am, how price fit move wit different scenarios from mind, society, technical and big economy side, plus wetin you suppose dey watch.';
+
+  @override
+  String get aiGenerate => 'Make analysis';
+
+  @override
+  String get aiRegenerate => 'Make am again';
+
+  @override
+  String get aiGenerating => 'We dey prepare di analysis… e fit take one or two minutes.';
+
+  @override
+  String get aiSources => 'Sources';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Dem make am $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Na AI make dis analysis from public data and latest news. E fit get mistake or don old, and e no be investment advice.';
+
+  @override
+  String get errAiNotConfigured => 'AI analysis never dey set (no ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'We no fit reach di AI service. Check your internet connection.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Di AI service return error (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Di AI service no gree analyse dis stock.';
+
+  @override
+  String get errAiBadResponse => 'Di AI service give answer wey we no expect.';
+
+  @override
+  String get sectionChart => 'Price chart';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Price history no dey from di data source wey we dey use now.';
+
+  @override
+  String get sectionStatements => 'Financial statements (every year)';
+
+  @override
+  String get labelFiscalYear => 'Financial year';
+
+  @override
+  String get labelRevenue => 'Total sales';
+
+  @override
+  String get labelNetIncome => 'Net profit';
+
+  @override
+  String get labelTotalAssets => 'Total assets';
+
+  @override
+  String get labelTotalLiabilities => 'Total wetin dem owe';
+
+  @override
+  String get labelEquity => 'Equity for shareholders';
+
+  @override
+  String get labelOperatingCashFlow => 'Cash from operations';
+
+  @override
+  String get statementsUnavailable => 'Financial statements no dey for dis stock.';
+
+  @override
+  String get launchAtLogin => 'Start am when you log in';
+
+  @override
+  String get hotkeyLabel => 'Shortcut wey work everywhere';
+
+  @override
+  String get hotkeyRecordHint => 'Click here, then press di new key combination';
+
+  @override
+  String get hotkeyReset => 'Go back to default';
+
+  @override
+  String get pasteImage => 'Paste picture from clipboard';
+
+  @override
+  String get errClipboardNoImage => 'No picture dey for clipboard.';
+
+  @override
+  String get favorites => 'Favourites';
+
+  @override
+  String get addToFavorites => 'Add am to favourites';
+
+  @override
+  String get removeFromFavorites => 'Comot am from favourites';
+
+  @override
+  String get noFavorites => 'No favourite yet. Tap di star for any stock to add am.';
+
+  @override
+  String get displayCurrency => 'Currency to show';
+
+  @override
+  String get displayCurrencyNone => 'Only di stock own currency';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ for $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Exchange rate: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Updates';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Install updates by demsef';
+
+  @override
+  String get checkForUpdates => 'Check for update';
+
+  @override
+  String get updateChecking => 'We dey check for update…';
+
+  @override
+  String get updateUpToDate => 'You dey use di latest version.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version don land.';
+  }
+
+  @override
+  String get updateDownloading => 'Di update dey download for background…';
+
+  @override
+  String get updateDownloaded => 'Di update don ready. Restart make e install.';
+
+  @override
+  String get updateNow => 'Update';
+
+  @override
+  String get restartNow => 'Restart';
+
+  @override
+  String get updatesViaStore => 'Updates go dey come by demsef through di app store.';
+
+  @override
+  String get updateCheckFailed => 'We no fit check for update.';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get planTrial => 'Trial';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'No plan dey active';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analysis every month';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Free trial for $days days wit $count analysis';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days remain for your trial',
+      one: '$days day remain for your trial',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Your free trial don finish. Choose plan make you continue to dey analyse.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return '$remaining out of $total analysis remain for dis period';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count extra analysis';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'E go renew $date';
+  }
+
+  @override
+  String get choosePlan => 'Choose plan';
+
+  @override
+  String get currentPlan => 'Your plan now';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get extraPacksTitle => 'You need more? Buy extra analysis';
+
+  @override
+  String get extraPacksHint => 'Extra analysis no dey expire, and we go use dem afta your monthly allowance finish.';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get restorePurchases => 'Bring back wetin you buy';
+
+  @override
+  String get manageSubscription => 'Manage your subscription';
+
+  @override
+  String get purchaseSuccess => 'Thank you! Wetin you buy don dey work.';
+
+  @override
+  String get purchasePending => 'Di payment dey wait…';
+
+  @override
+  String get purchaseFailed => 'Di purchase no go through.';
+
+  @override
+  String get purchaseCanceled => 'Purchase don cancel.';
+
+  @override
+  String get billingUnavailable =>
+      'You no fit buy anytin for dis platform yet. Subscribe for your phone or Mac; your plan go work for every device.';
+
+  @override
+  String get errQuotaExceeded =>
+      'You no get any analysis remain for dis period. Upgrade your plan or buy extra analysis.';
+
+  @override
+  String get errTrialExpired => 'Your free trial don finish. Choose plan make you continue.';
+
+  @override
+  String get errNoPlan => 'You need active plan for AI analysis.';
+
+  @override
+  String get viewPlans => 'See plans';
+
+  @override
+  String get usageTitle => 'How you don use am';
+
+  @override
+  String get demoPurchaseNote => 'Demo billing: na pretend purchase for dis platform.';
+
+  @override
+  String get mostPopular => 'Pipo like am pass';
+
+  @override
+  String get bestValue => 'E worth am pass';
+
+  @override
+  String get planFeaturesCommon =>
+      'Photo recognition, live data, charts, favourites and all 120 languages dey inside every plan. Di allowance na for AI analysis.';
+
+  @override
+  String get searchLanguages => 'Search language…';
+
+  @override
+  String get noLanguageMatch => 'No language match.';
+
+  @override
+  String get aiSettings => 'AI analysis';
+
+  @override
+  String get aiLength => 'How long';
+
+  @override
+  String get aiDepthBrief => 'Short';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Deep';
+
+  @override
+  String get aiDepthBriefDesc => 'Di main tins, sharp sharp.';
+
+  @override
+  String get aiDepthStandardDesc => 'Full report wey get every section.';
+
+  @override
+  String get aiDepthDeepDesc => 'More web search, comparison wit similar companies and more details.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Around $min–$max words';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'e go use $count analysis',
+      one: 'e go use $count analysis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Your level';
+
+  @override
+  String get aiReaderBeginner => 'Beginner';
+
+  @override
+  String get aiReaderExperienced => 'Sabi pesin';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Simple language; we go explain every technical word.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Text wey pack well wit normal finance words.';
+
+  @override
+  String get aiCounterArgument => 'Di strongest argument against am';
+
+  @override
+  String get aiCounterArgumentDesc => 'Di summary go always end wit di best case against im own conclusion.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Up to $count web search for each analysis wit your plan',
+      one: 'Up to $count web search for each analysis wit your plan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Standard length by plan: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Short dey use 2 less, Deep dey use 2 more.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'up to $count web search',
+      one: 'up to $count web search',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count web search for each analysis',
+      one: '$count web search for each analysis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Dis length need $needed analysis, but na only $left remain. Choose shorter length for Settings or get more analysis.';
+  }
+
+  @override
+  String get outlookMarketMood => 'How market dey feel';
+
+  @override
+  String get moodVeryPessimistic => 'Fear plenty';
+
+  @override
+  String get moodPessimistic => 'Fear dey';
+
+  @override
+  String get moodNeutral => 'E dey middle';
+
+  @override
+  String get moodOptimistic => 'Hope dey';
+
+  @override
+  String get moodVeryOptimistic => 'Hope plenty';
+
+  @override
+  String get scenarioBull => 'If price go up';
+
+  @override
+  String get scenarioBase => 'Normal case';
+
+  @override
+  String get scenarioBear => 'If price go down';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Price now: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Important levels';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Anchor';
+
+  @override
+  String get upcomingEvents => 'Wetin dey come';
+
+  @override
+  String get outlookChartNote => 'Na rough range dem be; di chances na just estimate, no be prediction.';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get signIn => 'Sign in';
+
+  @override
+  String get signOut => 'Sign out';
+
+  @override
+  String get notSignedIn => 'You never sign in';
+
+  @override
+  String get accountBenefit => 'Sign in make your subscription work for all your devices.';
+
+  @override
+  String get accountSyncedNote => 'Your subscription and di analysis wey remain na di same for every device.';
+
+  @override
+  String get signInTitle => 'Sign in for StockLens';
+
+  @override
+  String get emailLabel => 'Your email address';
+
+  @override
+  String get continueWithEmail => 'Continue wit email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'We don send 6-digit code to $email. E go work for 10 minutes.';
+  }
+
+  @override
+  String get codeLabel => 'Sign-in code';
+
+  @override
+  String get resendCode => 'Send new code';
+
+  @override
+  String get useDifferentEmail => 'Use anoda email';
+
+  @override
+  String get errInvalidCode => 'Di code no correct or e don expire.';
+
+  @override
+  String get errInvalidEmail => 'Abeg put correct email address.';
+
+  @override
+  String get errSignInFailed => 'Sign-in no work. Check your connection and try again.';
+
+  @override
+  String get checkoutWaiting => 'Finish di payment for your browser. Di app go update by imsef when e don finish.';
+
+  @override
+  String get paymentViaStripe => 'Safe payment for your browser through Stripe. Cancel anytime.';
+
+  @override
+  String get paymentViaStore =>
+      'Dem go charge you through your App Store or Google Play account. Cancel anytime for your store settings.';
+
+  @override
+  String get keySpace => 'Space';
+
+  @override
+  String get doubleOptionTitle => 'Press Option two times';
+
+  @override
+  String get doubleOptionSubtitle => 'If you press Option key two times quick quick, e go still call StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Make e work for oda apps too, allow StockLens for System Settings → Privacy & Security → Input Monitoring, then open di app again.';
+
+  @override
+  String get openSystemSettings => 'Open System Settings';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Press $shortcut or press Option two times anywhere to call StockLens.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Wetin fit happen pass';
+
+  @override
+  String get longTermToday => 'Today';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years years', one: '$years year');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range every year';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'e fit reach $price pass';
+  }
+
+  @override
+  String get confidenceLow => 'We no too sure';
+
+  @override
+  String get confidenceMedium => 'We sure small';
+
+  @override
+  String get confidenceHigh => 'We sure well well';
+
+  @override
+  String get longTermNote =>
+      'Long-term range dey depend on di assumptions wey we tok, and e dey wide pass as time dey go. Price no include dividend. Na rough estimate, no be prediction.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Notin dey here yet. Open one stock and tap “Put am for portfolio” to follow wetin you get.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Na only dis device e dey. We convert di totals wit ECB reference rate; price fit late.';
+
+  @override
+  String get addToPortfolio => 'Put am for portfolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Add $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'How many shares';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Price for each share ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Day wey you buy';
+
+  @override
+  String get portfolioAdd => 'Add';
+
+  @override
+  String get portfolioInvalidNumber => 'Put number wey pass zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol don enter your portfolio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Total value';
+
+  @override
+  String get portfolioToday => 'Today';
+
+  @override
+  String get portfolioGainLoss => 'Profit/loss';
+
+  @override
+  String get portfolioInvested => 'Moni wey you put';
+
+  @override
+  String get portfolioAllocation => 'How e share';
+
+  @override
+  String get portfolioPositions => 'Your stocks';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'average price $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Wetin you get';
+
+  @override
+  String get portfolioPurchases => 'Wetin you buy';
+
+  @override
+  String get portfolioRemove => 'Comot';
+
+  @override
+  String get portfolioExcluded => 'Stocks wey no get price or exchange rate no dey inside di totals.';
+
+  @override
+  String get priceAlerts => 'Price alerts';
+
+  @override
+  String get setPriceAlert => 'Put price alert';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Price alert · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Climb pass';
+
+  @override
+  String get alertKindBelow => 'Fall below';
+
+  @override
+  String get alertKindMove => 'Move well well for one day';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Price ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Move for one day (%)';
+
+  @override
+  String get alertAlreadyMet => 'Di price don already pass dis level.';
+
+  @override
+  String get alertSave => 'Put alert';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alert don set for $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'No price alert yet. Open one stock and tap di bell to set one.';
+
+  @override
+  String get alertsNote =>
+      'We dey check alerts every 5 minutes as StockLens dey run. For computer, e go dey run for menu bar or tray; for phone, for now alerts go come only when di app dey open.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Pass $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Under $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Move for one day ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'E ring $date for $price';
+  }
+
+  @override
+  String get alertRearm => 'Set am again';
+
+  @override
+  String get alertDelete => 'Delete';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol don climb pass $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol don fall below $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol don move $percent today';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Price now: $price';
+  }
+
+  @override
+  String get alertOpen => 'Open';
+
+  @override
+  String get keepInTrayTitle => 'Make e dey run when you close di window';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens go stay for menu bar or tray, so di hotkey and price alerts go still dey work.';
+
+  @override
+  String get termsOfUse => 'Terms of Use';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get subscriptionLegal =>
+      'Subscription go dey renew by imsef every month until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy.';
+
+  @override
+  String get deleteAccount => 'Delete di account';
+
+  @override
+  String get deleteAccountTitle => 'You wan delete your account?';
+
+  @override
+  String get deleteAccountBody =>
+      'Your account and evritin wey dey our server (email, allowance, usage) go delete forever, and analysis wey you never use go loss. Subscription wey you pay for browser go cancel sharp sharp; App Store or Google Play subscription, you must cancel am for di store settings.';
+
+  @override
+  String get deleteLocalData =>
+      'Delete di data for dis device too (portfolio, alerts, favourites, history, saved analysis)';
+
+  @override
+  String get deleteAccountConfirm => 'Delete am forever';
+
+  @override
+  String get accountDeleted => 'Your account don delete.';
+
+  @override
+  String get errDeleteAccount => 'We no fit delete di account. Check your connection and try again.';
+}
