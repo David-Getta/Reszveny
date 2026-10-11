@@ -2,7 +2,7 @@
 
 <img src="assets/branding/wordmark_dark.png" alt="StockLens" width="360">
 
-**Név**: a *lens* egyszerre a kamera objektívje (lefotózod a részvényt) és a nagyító, amivel átlátod (minden adat és AI-elemzés). A logó: lencse-gyűrű, amelyből egy emelkedő árfolyamnyíl lép ki.
+**Név**: a *lens* egyszerre a kamera objektívje (lefotózod a részvényt) és a nagyító, amivel átlátod (minden adat és AI-elemzés). A logó: fényképező-kereső sarkai, benne három emelkedő gyertya (lefotózod, és látod az árfolyamot). Saját, programból rajzolt jel: `tool/make_logo.py` (újragenerálás: `python3 tool/make_logo.py`, majd `dart run flutter_launcher_icons`).
 
 **Lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 
