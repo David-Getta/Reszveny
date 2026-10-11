@@ -54,7 +54,7 @@ final class AlertNotifications: NSObject, UNUserNotificationCenterDelegate {
 ///
 /// Listen-only event tap a módosítókra: a homokozóban (App Sandbox) is működik,
 /// ha a felhasználó megadja a „Bemenetfigyelés” (Input Monitoring) engedélyt.
-/// Engedély nélkül csak akkor jelez, amikor a StockLens van előtérben.
+/// Engedély nélkül csak akkor jelez, amikor a WhatStock van előtérben.
 /// A dupla nyomás felismerése a Dart oldalon történik (`DoubleTapDetector`);
 /// ez az osztály csak eseményeket küld: `down`, `downWithOthers`, `up`, `other`.
 final class OptionKeyMonitor {
@@ -166,7 +166,7 @@ class MainFlutterWindow: NSWindow {
     RegisterGeneratedPlugins(registry: flutterViewController)
 
     let channel = FlutterMethodChannel(
-      name: "stocklens/option_key",
+      name: "whatstock/option_key",
       binaryMessenger: flutterViewController.engine.binaryMessenger
     )
     let monitor = OptionKeyMonitor.shared
@@ -193,7 +193,7 @@ class MainFlutterWindow: NSWindow {
     }
 
     let notifications = FlutterMethodChannel(
-      name: "stocklens/notifications",
+      name: "whatstock/notifications",
       binaryMessenger: flutterViewController.engine.binaryMessenger
     )
     let notifier = AlertNotifications.shared

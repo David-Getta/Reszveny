@@ -1,4 +1,4 @@
-# StockLens backend
+# WhatStock backend
 
 Kis Dart (shelf) szerver, amely a kliens helyett tartja az API-kulcsokat, ellenőrzi a
 vásárlásokat és vezeti az elemzés-kvótát.
@@ -34,11 +34,11 @@ a `/v1/me`-ből frissül.
 | `GET /legal/terms`, `GET /legal/privacy` | a felhasználási feltételek és az adatkezelési tájékoztató HTML-ben, `?lang=hu\|en` vagy `Accept-Language` szerint; forrás: `legal/<név>.<nyelv>.md` (lásd [`legal/README.md`](legal/README.md)) |
 
 Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude-opus-5-5`; minden hívás ezen fut, a kliens nem választhat mást), `FINNHUB_API_KEY`, `PORT` (8080), `DATABASE_PATH`
-(`stocklens.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
+(`whatstock.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
 Server API / Play Developer API – a bolti fiókok után készül el), `PUBLIC_URL` (a szerver nyilvános
 címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
-(`stocklens.sub.normal=price_…,stocklens.sub.pro=price_…,…,stocklens.pack.5=price_…`),
+(`whatstock.sub.normal=price_…,whatstock.sub.pro=price_…,…,whatstock.pack.5=price_…`),
 `RESEND_API_KEY` és `MAIL_FROM` (belépőkód e-mailben; nélkülük a kód a naplóba kerül), `LEGAL_DIR`
 (a jogi szövegek mappája, alapból `legal`; a Docker-képben `/legal`).
 
-Docker: `docker build -t stocklens-server . && docker run -p 8080:8080 -v stocklens-data:/data -e ANTHROPIC_API_KEY=… -e FINNHUB_API_KEY=… stocklens-server`
+Docker: `docker build -t whatstock-server . && docker run -p 8080:8080 -v whatstock-data:/data -e ANTHROPIC_API_KEY=… -e FINNHUB_API_KEY=… whatstock-server`

@@ -13,7 +13,7 @@ import 'purchase_verifier.dart';
 import 'quota.dart';
 import 'stripe.dart';
 
-/// A StockLens backend útvonalai.
+/// A WhatStock backend útvonalai.
 ///
 /// - `POST /v1/auth/anonymous` → `{token, user_id}` (próbaidő indul)
 /// - `GET  /v1/me` → jogosultság (a kliens `EntitlementState` formátuma)
@@ -128,10 +128,10 @@ class Api {
 
   static Response _page(String mark, String text) => Response.ok(
     '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
-    '<title>StockLens</title><body style="background:#1F1E1D;color:#F5F4EF;font-family:-apple-system,system-ui,sans-serif;'
+    '<title>WhatStock</title><body style="background:#1F1E1D;color:#F5F4EF;font-family:-apple-system,system-ui,sans-serif;'
     'display:grid;place-items:center;height:100vh;margin:0;text-align:center">'
     '<div><div style="font-size:48px;color:#D97757">$mark</div><h2>$text</h2>'
-    '<p style="color:#A8A49B">Visszatérhetsz a StockLens appba. · You can return to the StockLens app.</p></div>',
+    '<p style="color:#A8A49B">Visszatérhetsz a WhatStock appba. · You can return to the WhatStock app.</p></div>',
     headers: {'content-type': 'text/html; charset=utf-8'},
   );
 
@@ -147,7 +147,7 @@ class Api {
           'access-control-allow-origin': '*',
           'access-control-allow-headers':
               'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
-              'x-stocklens-depth',
+              'x-whatstock-depth',
           'access-control-allow-methods': 'GET, POST, DELETE, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
@@ -279,14 +279,14 @@ class Api {
       return Response.ok(_legalPage(body, lang), headers: {'content-type': 'text/html; charset=utf-8'});
     }
     return Response.notFound(
-      _legalPage('<h1>StockLens</h1><p>Ez a dokumentum még nincs közzétéve. · Not published yet.</p>', 'hu'),
+      _legalPage('<h1>WhatStock</h1><p>Ez a dokumentum még nincs közzétéve. · Not published yet.</p>', 'hu'),
       headers: {'content-type': 'text/html; charset=utf-8'},
     );
   }
 
   static String _legalPage(String body, String lang) =>
       '<!doctype html><html lang="$lang"><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
-      '<title>StockLens</title><style>body{max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.55;'
+      '<title>WhatStock</title><style>body{max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.55;'
       'font-family:-apple-system,system-ui,sans-serif;color:#1F1E1D;background:#FAF9F5}'
       'table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #DDD9CE;padding:6px;'
       'vertical-align:top;text-align:left}a{color:#C96442}'
@@ -438,7 +438,7 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final e = store.entitlement(uid);
-    final depth = Depth.parse(r.headers['x-stocklens-depth']);
+    final depth = Depth.parse(r.headers['x-whatstock-depth']);
     final q = quota.check(e, cost: depth.cost);
     if (q == QuotaResult.insufficient) {
       return _json({'error': 'insufficient_quota', 'needed': depth.cost, 'available': quota.available(e)}, status: 402);

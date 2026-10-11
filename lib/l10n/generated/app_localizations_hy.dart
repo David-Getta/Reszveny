@@ -10,7 +10,7 @@ class AppLocalizationsHy extends AppLocalizations {
   AppLocalizationsHy([String locale = 'hy']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Լուսանկարեք բաժնետոմսը և իմացեք դրա մասին ամեն ինչ։';
@@ -438,11 +438,11 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Սեղմեք $shortcut ցանկացած տեղից՝ StockLens-ը բացելու համար։';
+    return 'Սեղմեք $shortcut ցանկացած տեղից՝ WhatStock-ը բացելու համար։';
   }
 
   @override
-  String get trayOpen => 'Բացել StockLens-ը';
+  String get trayOpen => 'Բացել WhatStock-ը';
 
   @override
   String get trayQuickSearch => 'Արագ որոնում';
@@ -960,7 +960,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get accountSyncedNote => 'Ձեր բաժանորդագրությունը և մնացած վերլուծությունները նույնն են բոլոր սարքերում։';
 
   @override
-  String get signInTitle => 'Մուտք StockLens';
+  String get signInTitle => 'Մուտք WhatStock';
 
   @override
   String get emailLabel => 'Էլ. փոստի հասցե';
@@ -1008,18 +1008,18 @@ class AppLocalizationsHy extends AppLocalizations {
   String get doubleOptionTitle => 'Option-ի կրկնակի սեղմում';
 
   @override
-  String get doubleOptionSubtitle => 'Option ստեղնի արագ կրկնակի սեղմումը նույնպես բացում է StockLens-ը։';
+  String get doubleOptionSubtitle => 'Option ստեղնի արագ կրկնակի սեղմումը նույնպես բացում է WhatStock-ը։';
 
   @override
   String get doubleOptionPermission =>
-      'Որպեսզի սա աշխատի նաև այլ հավելվածներում, թույլատրեք StockLens-ը «Համակարգի կարգավորումներ» → «Գաղտնիություն և անվտանգություն» → «Ներածման մոնիտորինգ» բաժնում, ապա վերաբացեք հավելվածը։';
+      'Որպեսզի սա աշխատի նաև այլ հավելվածներում, թույլատրեք WhatStock-ը «Համակարգի կարգավորումներ» → «Գաղտնիություն և անվտանգություն» → «Ներածման մոնիտորինգ» բաժնում, ապա վերաբացեք հավելվածը։';
 
   @override
   String get openSystemSettings => 'Բացել համակարգի կարգավորումները';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Սեղմեք $shortcut կամ կրկնակի սեղմեք Option ցանկացած տեղից՝ StockLens-ը բացելու համար։';
+    return 'Սեղմեք $shortcut կամ կրկնակի սեղմեք Option ցանկացած տեղից՝ WhatStock-ը բացելու համար։';
   }
 
   @override
@@ -1178,7 +1178,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ծանուցումները ստուգվում են 5 րոպեն մեկ, քանի դեռ StockLens-ն աշխատում է։ Համակարգչում այն շարունակում է աշխատել ընտրացանկի տողում կամ ծանուցումների գոտում, իսկ հեռախոսում ծանուցումները առայժմ ստացվում են միայն այն ժամանակ, երբ հավելվածը բաց է։';
+      'Ծանուցումները ստուգվում են 5 րոպեն մեկ, քանի դեռ WhatStock-ն աշխատում է։ Համակարգչում այն շարունակում է աշխատել ընտրացանկի տողում կամ ծանուցումների գոտում, իսկ հեռախոսում ծանուցումները առայժմ ստացվում են միայն այն ժամանակ, երբ հավելվածը բաց է։';
 
   @override
   String alertDescAbove(String price) {
@@ -1234,7 +1234,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens-ը մնում է ընտրացանկի տողում կամ ծանուցումների գոտում, ուստի ստեղնային դյուրանցումը և գնային ծանուցումները շարունակում են աշխատել։';
+      'WhatStock-ը մնում է ընտրացանկի տողում կամ ծանուցումների գոտում, ուստի ստեղնային դյուրանցումը և գնային ծանուցումները շարունակում են աշխատել։';
 
   @override
   String get termsOfUse => 'Օգտագործման պայմաններ';

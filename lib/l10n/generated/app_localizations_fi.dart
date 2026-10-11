@@ -10,7 +10,7 @@ class AppLocalizationsFi extends AppLocalizations {
   AppLocalizationsFi([String locale = 'fi']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Kuvaa osake ja opi siitä kaikki.';
@@ -436,11 +436,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Paina $shortcut missä tahansa, niin StockLens avautuu.';
+    return 'Paina $shortcut missä tahansa, niin WhatStock avautuu.';
   }
 
   @override
-  String get trayOpen => 'Avaa StockLens';
+  String get trayOpen => 'Avaa WhatStock';
 
   @override
   String get trayQuickSearch => 'Pikahaku';
@@ -957,7 +957,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get accountSyncedNote => 'Tilauksesi ja jäljellä olevat analyysisi ovat samat kaikilla laitteilla.';
 
   @override
-  String get signInTitle => 'Kirjaudu StockLensiin';
+  String get signInTitle => 'Kirjaudu WhatStockiin';
 
   @override
   String get emailLabel => 'Sähköpostiosoite';
@@ -1006,18 +1006,18 @@ class AppLocalizationsFi extends AppLocalizations {
   String get doubleOptionTitle => 'Optio-näppäimen kaksoispainallus';
 
   @override
-  String get doubleOptionSubtitle => 'StockLens avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.';
+  String get doubleOptionSubtitle => 'WhatStock avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.';
 
   @override
   String get doubleOptionPermission =>
-      'Jotta tämä toimisi myös muissa sovelluksissa, salli StockLens kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Syötteen valvonta ja avaa sovellus sitten uudelleen.';
+      'Jotta tämä toimisi myös muissa sovelluksissa, salli WhatStock kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Syötteen valvonta ja avaa sovellus sitten uudelleen.';
 
   @override
   String get openSystemSettings => 'Avaa Järjestelmäasetukset';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Paina missä tahansa $shortcut tai Optio-näppäintä kahdesti, niin StockLens avautuu.';
+    return 'Paina missä tahansa $shortcut tai Optio-näppäintä kahdesti, niin WhatStock avautuu.';
   }
 
   @override
@@ -1175,7 +1175,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Hälytykset tarkistetaan 5 minuutin välein, kun StockLens on käynnissä. Tietokoneella sovellus jatkaa valikkorivillä tai ilmaisinalueella; puhelimessa hälytykset tulevat toistaiseksi vain sovelluksen ollessa auki.';
+      'Hälytykset tarkistetaan 5 minuutin välein, kun WhatStock on käynnissä. Tietokoneella sovellus jatkaa valikkorivillä tai ilmaisinalueella; puhelimessa hälytykset tulevat toistaiseksi vain sovelluksen ollessa auki.';
 
   @override
   String alertDescAbove(String price) {
@@ -1231,7 +1231,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen.';
+      'WhatStock pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen.';
 
   @override
   String get termsOfUse => 'Käyttöehdot';

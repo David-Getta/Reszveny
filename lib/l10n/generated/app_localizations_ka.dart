@@ -10,7 +10,7 @@ class AppLocalizationsKa extends AppLocalizations {
   AppLocalizationsKa([String locale = 'ka']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'გადაუღეთ ფოტო აქციას და გაიგეთ მასზე ყველაფერი.';
@@ -437,11 +437,11 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens-ის გამოსაძახებლად ნებისმიერ ადგილას დააჭირეთ $shortcut-ს.';
+    return 'WhatStock-ის გამოსაძახებლად ნებისმიერ ადგილას დააჭირეთ $shortcut-ს.';
   }
 
   @override
-  String get trayOpen => 'StockLens-ის გახსნა';
+  String get trayOpen => 'WhatStock-ის გახსნა';
 
   @override
   String get trayQuickSearch => 'სწრაფი ძიება';
@@ -959,7 +959,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get accountSyncedNote => 'თქვენი გამოწერა და დარჩენილი ანალიზები ყველა მოწყობილობაზე ერთნაირია.';
 
   @override
-  String get signInTitle => 'StockLens-ში შესვლა';
+  String get signInTitle => 'WhatStock-ში შესვლა';
 
   @override
   String get emailLabel => 'ელფოსტის მისამართი';
@@ -1007,18 +1007,18 @@ class AppLocalizationsKa extends AppLocalizations {
   String get doubleOptionTitle => 'Option-ზე ორჯერ დაჭერა';
 
   @override
-  String get doubleOptionSubtitle => 'Option კლავიშზე სწრაფად ორჯერ დაჭერაც იძახებს StockLens-ს.';
+  String get doubleOptionSubtitle => 'Option კლავიშზე სწრაფად ორჯერ დაჭერაც იძახებს WhatStock-ს.';
 
   @override
   String get doubleOptionPermission =>
-      'იმისთვის, რომ ეს სხვა აპებშიც იმუშაოს, მიეცით StockLens-ს ნებართვა აქ: „სისტემის პარამეტრები“ → „კონფიდენციალურობა და უსაფრთხოება“ → „შეყვანის მონიტორინგი“, შემდეგ კი ხელახლა გახსენით აპი.';
+      'იმისთვის, რომ ეს სხვა აპებშიც იმუშაოს, მიეცით WhatStock-ს ნებართვა აქ: „სისტემის პარამეტრები“ → „კონფიდენციალურობა და უსაფრთხოება“ → „შეყვანის მონიტორინგი“, შემდეგ კი ხელახლა გახსენით აპი.';
 
   @override
   String get openSystemSettings => 'სისტემის პარამეტრების გახსნა';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens-ის გამოსაძახებლად ნებისმიერ ადგილას დააჭირეთ $shortcut-ს ან ორჯერ დააჭირეთ Option-ს.';
+    return 'WhatStock-ის გამოსაძახებლად ნებისმიერ ადგილას დააჭირეთ $shortcut-ს ან ორჯერ დააჭირეთ Option-ს.';
   }
 
   @override
@@ -1176,7 +1176,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'შეტყობინებები მოწმდება ყოველ 5 წუთში, სანამ StockLens მუშაობს. კომპიუტერზე ის მენიუს ზოლში ან სისტემურ უჯრაში აგრძელებს მუშაობას; ტელეფონზე კი შეტყობინებები ჯერჯერობით მხოლოდ მაშინ მოდის, როცა აპი გახსნილია.';
+      'შეტყობინებები მოწმდება ყოველ 5 წუთში, სანამ WhatStock მუშაობს. კომპიუტერზე ის მენიუს ზოლში ან სისტემურ უჯრაში აგრძელებს მუშაობას; ტელეფონზე კი შეტყობინებები ჯერჯერობით მხოლოდ მაშინ მოდის, როცა აპი გახსნილია.';
 
   @override
   String alertDescAbove(String price) {
@@ -1232,7 +1232,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens რჩება მენიუს ზოლში ან სისტემურ უჯრაში, ასე რომ მალსახმობი და ფასის შეტყობინებები მუშაობას განაგრძობს.';
+      'WhatStock რჩება მენიუს ზოლში ან სისტემურ უჯრაში, ასე რომ მალსახმობი და ფასის შეტყობინებები მუშაობას განაგრძობს.';
 
   @override
   String get termsOfUse => 'გამოყენების პირობები';

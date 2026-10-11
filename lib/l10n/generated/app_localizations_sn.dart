@@ -10,7 +10,7 @@ class AppLocalizationsSn extends AppLocalizations {
   AppLocalizationsSn([String locale = 'sn']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Tora mufananidzo wesheya uzive zvese nezvayo.';
@@ -433,11 +433,11 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Dzvanya $shortcut chero kupi kuti udaidze StockLens.';
+    return 'Dzvanya $shortcut chero kupi kuti udaidze WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Vhura StockLens';
+  String get trayOpen => 'Vhura WhatStock';
 
   @override
   String get trayQuickSearch => 'Kutsvaga nekukurumidza';
@@ -956,7 +956,7 @@ class AppLocalizationsSn extends AppLocalizations {
   String get accountSyncedNote => 'Kunyoresa kwako neongororo dzasara zvakafanana pamudziyo wese.';
 
   @override
-  String get signInTitle => 'Pinda muStockLens';
+  String get signInTitle => 'Pinda muWhatStock';
 
   @override
   String get emailLabel => 'Kero ye-email';
@@ -1004,18 +1004,18 @@ class AppLocalizationsSn extends AppLocalizations {
   String get doubleOptionTitle => 'Dzvanya Option kaviri';
 
   @override
-  String get doubleOptionSubtitle => 'Kudzvanya kiyi yeOption kaviri nekukurumidza kunodaidzawo StockLens.';
+  String get doubleOptionSubtitle => 'Kudzvanya kiyi yeOption kaviri nekukurumidza kunodaidzawo WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Kuti zvishande nemumamwe maapp, bvumira StockLens pa System Settings → Privacy & Security → Input Monitoring, wozovhurazve app.';
+      'Kuti zvishande nemumamwe maapp, bvumira WhatStock pa System Settings → Privacy & Security → Input Monitoring, wozovhurazve app.';
 
   @override
   String get openSystemSettings => 'Vhura System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Dzvanya $shortcut kana dzvanya Option kaviri chero kupi kuti udaidze StockLens.';
+    return 'Dzvanya $shortcut kana dzvanya Option kaviri chero kupi kuti udaidze WhatStock.';
   }
 
   @override
@@ -1174,7 +1174,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Zviziviso zvinotariswa maminiti 5 ega ega StockLens ichiri kushanda. Pakombiyuta inoramba ichishanda pamenu bar kana patray; pafoni, parizvino zviziviso zvinosvika chete kana app yakavhurwa.';
+      'Zviziviso zvinotariswa maminiti 5 ega ega WhatStock ichiri kushanda. Pakombiyuta inoramba ichishanda pamenu bar kana patray; pafoni, parizvino zviziviso zvinosvika chete kana app yakavhurwa.';
 
   @override
   String alertDescAbove(String price) {
@@ -1230,7 +1230,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens inogara pamenu bar kana patray, saka nzira pfupi nezviziviso zvemutengo zvinoramba zvichishanda.';
+      'WhatStock inogara pamenu bar kana patray, saka nzira pfupi nezviziviso zvemutengo zvinoramba zvichishanda.';
 
   @override
   String get termsOfUse => 'Mitemo Yekushandisa';

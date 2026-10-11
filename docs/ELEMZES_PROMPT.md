@@ -227,7 +227,7 @@ a bemenet ne nőjön túl; a részletekért a modell úgyis a webre megy.
 
 1. **Új szekciófajták?** Most a `watch` szekcióban van a katalizátor-naptár és a figyelendő
    mutatók. Lehetne külön `catalysts` (naptár) és `peers` (versenytársak táblázat) szekció.
-   Ár: új `ReportSectionKind`, ikon, cím, 44 nyelvre fordítás. Javaslat: először a mostani
+   Ár: új `ReportSectionKind`, ikon, cím, 120 nyelvre fordítás. Javaslat: először a mostani
    szekciókkal, és ha a kimenet túl zsúfolt, akkor bontjuk.
 2. **Olvasó-szint**: kezdő / tapasztalt kapcsoló a beállításokban, ami a hangnemet állítja
    (több magyarázat vs. tömörebb, szakmaibb). Javaslat: igen, egy sor a promptban és egy

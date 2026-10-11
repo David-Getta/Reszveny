@@ -10,7 +10,7 @@ class AppLocalizationsTg extends AppLocalizations {
   AppLocalizationsTg([String locale = 'tg']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Аз саҳмия акс гиред ва ҳама чизро дар бораи он бифаҳмед.';
@@ -433,11 +433,11 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Дар ҳар ҷо $shortcut пахш кунед, то StockLens кушода шавад.';
+    return 'Дар ҳар ҷо $shortcut пахш кунед, то WhatStock кушода шавад.';
   }
 
   @override
-  String get trayOpen => 'Кушодани StockLens';
+  String get trayOpen => 'Кушодани WhatStock';
 
   @override
   String get trayQuickSearch => 'Ҷустуҷӯи зуд';
@@ -954,7 +954,7 @@ class AppLocalizationsTg extends AppLocalizations {
   String get accountSyncedNote => 'Обуна ва таҳлилҳои боқимондаи шумо дар ҳама дастгоҳҳо якхела мебошанд.';
 
   @override
-  String get signInTitle => 'Ворид шудан ба StockLens';
+  String get signInTitle => 'Ворид шудан ба WhatStock';
 
   @override
   String get emailLabel => 'Суроғаи почтаи электронӣ';
@@ -1002,18 +1002,18 @@ class AppLocalizationsTg extends AppLocalizations {
   String get doubleOptionTitle => 'Ду бор пахш кардани Option';
 
   @override
-  String get doubleOptionSubtitle => 'Бо зуд ду бор пахш кардани тугмаи Option низ StockLens кушода мешавад.';
+  String get doubleOptionSubtitle => 'Бо зуд ду бор пахш кардани тугмаи Option низ WhatStock кушода мешавад.';
 
   @override
   String get doubleOptionPermission =>
-      'Барои он ки ин дар барномаҳои дигар низ кор кунад, дар «Танзимоти система» → «Махфият ва амният» → «Назорати воридот» ба StockLens иҷозат диҳед ва сипас барномаро аз нав кушоед.';
+      'Барои он ки ин дар барномаҳои дигар низ кор кунад, дар «Танзимоти система» → «Махфият ва амният» → «Назорати воридот» ба WhatStock иҷозат диҳед ва сипас барномаро аз нав кушоед.';
 
   @override
   String get openSystemSettings => 'Кушодани «Танзимоти система»';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Дар ҳар ҷо $shortcut пахш кунед ё тугмаи Option-ро ду бор пахш кунед, то StockLens кушода шавад.';
+    return 'Дар ҳар ҷо $shortcut пахш кунед ё тугмаи Option-ро ду бор пахш кунед, то WhatStock кушода шавад.';
   }
 
   @override
@@ -1171,7 +1171,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'То даме ки StockLens кор мекунад, огоҳиҳо ҳар 5 дақиқа санҷида мешаванд. Дар компютер он дар сатри меню ё трей кор карданро идома медиҳад; дар телефон огоҳиҳо ҳоло танҳо ҳангоми кушода будани барнома меоянд.';
+      'То даме ки WhatStock кор мекунад, огоҳиҳо ҳар 5 дақиқа санҷида мешаванд. Дар компютер он дар сатри меню ё трей кор карданро идома медиҳад; дар телефон огоҳиҳо ҳоло танҳо ҳангоми кушода будани барнома меоянд.';
 
   @override
   String alertDescAbove(String price) {
@@ -1227,7 +1227,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens дар сатри меню ё трей мемонад, бинобар ин миёнбур ва огоҳиҳои нарх кор карданро идома медиҳанд.';
+      'WhatStock дар сатри меню ё трей мемонад, бинобар ин миёнбур ва огоҳиҳои нарх кор карданро идома медиҳанд.';
 
   @override
   String get termsOfUse => 'Шартҳои истифода';

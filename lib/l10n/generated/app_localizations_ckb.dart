@@ -10,7 +10,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   AppLocalizationsCkb([String locale = 'ckb']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'وێنەی پشکێک بگرە و هەموو شتێک دەربارەی بزانە.';
@@ -430,11 +430,11 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'بۆ بانگکردنی StockLens لە هەر شوێنێک $shortcut دابگرە.';
+    return 'بۆ بانگکردنی WhatStock لە هەر شوێنێک $shortcut دابگرە.';
   }
 
   @override
-  String get trayOpen => 'کردنەوەی StockLens';
+  String get trayOpen => 'کردنەوەی WhatStock';
 
   @override
   String get trayQuickSearch => 'گەڕانی خێرا';
@@ -949,7 +949,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get accountSyncedNote => 'ئابوونە و شیکارییە ماوەکانت لەسەر هەموو ئامێرێک وەک یەکن.';
 
   @override
-  String get signInTitle => 'چوونەژوورەوە بۆ StockLens';
+  String get signInTitle => 'چوونەژوورەوە بۆ WhatStock';
 
   @override
   String get emailLabel => 'ناونیشانی ئیمەیڵ';
@@ -997,18 +997,18 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get doubleOptionTitle => 'دوو جار Option داگرە';
 
   @override
-  String get doubleOptionSubtitle => 'دوو جار داگرتنی خێرای کلیلی Option هەروەها StockLens بانگ دەکات.';
+  String get doubleOptionSubtitle => 'دوو جار داگرتنی خێرای کلیلی Option هەروەها WhatStock بانگ دەکات.';
 
   @override
   String get doubleOptionPermission =>
-      'بۆ ئەوەی لە ئەپەکانی تریشدا کار بکات، لە ڕێکخستنەکانی سیستەم ← تایبەتێتی و ئاسایش ← چاودێریی تێخستن ڕێگە بە StockLens بدە، پاشان ئەپەکە دووبارە بکەرەوە.';
+      'بۆ ئەوەی لە ئەپەکانی تریشدا کار بکات، لە ڕێکخستنەکانی سیستەم ← تایبەتێتی و ئاسایش ← چاودێریی تێخستن ڕێگە بە WhatStock بدە، پاشان ئەپەکە دووبارە بکەرەوە.';
 
   @override
   String get openSystemSettings => 'کردنەوەی ڕێکخستنەکانی سیستەم';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'بۆ بانگکردنی StockLens لە هەر شوێنێک $shortcut دابگرە یان دوو جار Option دابگرە.';
+    return 'بۆ بانگکردنی WhatStock لە هەر شوێنێک $shortcut دابگرە یان دوو جار Option دابگرە.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'تا StockLens کار بکات، ئاگادارکەرەوەکان هەر 5 خولەک جارێک دەپشکنرێن. لەسەر کۆمپیوتەر لە شریتی مێنو یان سینیی سیستەمدا بەردەوام دەبێت؛ لەسەر مۆبایل، بۆ ئێستا ئاگادارکەرەوەکان تەنها کاتێک دێن کە ئەپەکە کراوەیە.';
+      'تا WhatStock کار بکات، ئاگادارکەرەوەکان هەر 5 خولەک جارێک دەپشکنرێن. لەسەر کۆمپیوتەر لە شریتی مێنو یان سینیی سیستەمدا بەردەوام دەبێت؛ لەسەر مۆبایل، بۆ ئێستا ئاگادارکەرەوەکان تەنها کاتێک دێن کە ئەپەکە کراوەیە.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens لە شریتی مێنو یان سینیی سیستەمدا دەمێنێتەوە، بۆیە کورتەڕێ و ئاگادارکەرەوەکانی نرخ بەردەوام کار دەکەن.';
+      'WhatStock لە شریتی مێنو یان سینیی سیستەمدا دەمێنێتەوە، بۆیە کورتەڕێ و ئاگادارکەرەوەکانی نرخ بەردەوام کار دەکەن.';
 
   @override
   String get termsOfUse => 'مەرجەکانی بەکارهێنان';

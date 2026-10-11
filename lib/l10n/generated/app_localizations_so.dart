@@ -10,7 +10,7 @@ class AppLocalizationsSo extends AppLocalizations {
   AppLocalizationsSo([String locale = 'so']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Sawir saami oo wax walba ka baro.';
@@ -431,11 +431,11 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Meel kasta ka riix $shortcut si aad u furto StockLens.';
+    return 'Meel kasta ka riix $shortcut si aad u furto WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Fur StockLens';
+  String get trayOpen => 'Fur WhatStock';
 
   @override
   String get trayQuickSearch => 'Raadin degdeg ah';
@@ -954,7 +954,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get accountSyncedNote => 'Rukummadaada iyo falanqaynta kuu harsan waa isku mid qalab kasta.';
 
   @override
-  String get signInTitle => 'Gal StockLens';
+  String get signInTitle => 'Gal WhatStock';
 
   @override
   String get emailLabel => 'Ciwaanka iimaylka';
@@ -1004,18 +1004,18 @@ class AppLocalizationsSo extends AppLocalizations {
   String get doubleOptionTitle => 'Laba jeer riix Option';
 
   @override
-  String get doubleOptionSubtitle => 'Riixidda furaha Option laba jeer oo degdeg ah ayaa sidoo kale furaysa StockLens.';
+  String get doubleOptionSubtitle => 'Riixidda furaha Option laba jeer oo degdeg ah ayaa sidoo kale furaysa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Si ay ugu shaqayso apps-ka kale sidoo kale, u oggolow StockLens gudaha System Settings → Privacy & Security → Input Monitoring, kadibna dib u fur app-ka.';
+      'Si ay ugu shaqayso apps-ka kale sidoo kale, u oggolow WhatStock gudaha System Settings → Privacy & Security → Input Monitoring, kadibna dib u fur app-ka.';
 
   @override
   String get openSystemSettings => 'Fur dejinta nidaamka';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Meel kasta ka riix $shortcut ama laba jeer riix Option si aad u furto StockLens.';
+    return 'Meel kasta ka riix $shortcut ama laba jeer riix Option si aad u furto WhatStock.';
   }
 
   @override
@@ -1173,7 +1173,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Digniinaha waxaa la hubiyaa 5-tii daqiiqoba mar inta StockLens shaqaynayo. Kombiyuutarka wuxuu ku sii shaqeeyaa menu bar-ka ama tray-ga; taleefanka, hadda digniinuhu waxay yimaadaan oo keliya marka app-ku furan yahay.';
+      'Digniinaha waxaa la hubiyaa 5-tii daqiiqoba mar inta WhatStock shaqaynayo. Kombiyuutarka wuxuu ku sii shaqeeyaa menu bar-ka ama tray-ga; taleefanka, hadda digniinuhu waxay yimaadaan oo keliya marka app-ku furan yahay.';
 
   @override
   String alertDescAbove(String price) {
@@ -1229,7 +1229,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens wuxuu ku sii jiraa menu bar-ka ama tray-ga, sidaas darteed furaha gaaban iyo digniinaha qiimuhu way sii shaqeeyaan.';
+      'WhatStock wuxuu ku sii jiraa menu bar-ka ama tray-ga, sidaas darteed furaha gaaban iyo digniinaha qiimuhu way sii shaqeeyaan.';
 
   @override
   String get termsOfUse => 'Shuruudaha Isticmaalka';

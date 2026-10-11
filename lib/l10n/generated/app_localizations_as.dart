@@ -10,7 +10,7 @@ class AppLocalizationsAs extends AppLocalizations {
   AppLocalizationsAs([String locale = 'as']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'এটা শ্বেয়াৰৰ ফটো তোলক আৰু ইয়াৰ বিষয়ে সকলো জানক।';
@@ -431,11 +431,11 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'যিকোনো ঠাইৰ পৰা StockLens খুলিবলৈ $shortcut টিপক।';
+    return 'যিকোনো ঠাইৰ পৰা WhatStock খুলিবলৈ $shortcut টিপক।';
   }
 
   @override
-  String get trayOpen => 'StockLens খোলক';
+  String get trayOpen => 'WhatStock খোলক';
 
   @override
   String get trayQuickSearch => 'দ্ৰুত সন্ধান';
@@ -952,7 +952,7 @@ class AppLocalizationsAs extends AppLocalizations {
   String get accountSyncedNote => 'আপোনাৰ ছাবস্ক্ৰিপশ্বন আৰু বাকী থকা বিশ্লেষণ প্ৰতিটো ডিভাইচত একে থাকে।';
 
   @override
-  String get signInTitle => 'StockLensত ছাইন ইন কৰক';
+  String get signInTitle => 'WhatStockত ছাইন ইন কৰক';
 
   @override
   String get emailLabel => 'ইমেইল ঠিকনা';
@@ -1001,18 +1001,18 @@ class AppLocalizationsAs extends AppLocalizations {
   String get doubleOptionTitle => 'Option দুবাৰ টিপক';
 
   @override
-  String get doubleOptionSubtitle => 'Option কীটো সোনকালে দুবাৰ টিপিলেও StockLens খোল খায়।';
+  String get doubleOptionSubtitle => 'Option কীটো সোনকালে দুবাৰ টিপিলেও WhatStock খোল খায়।';
 
   @override
   String get doubleOptionPermission =>
-      'আন এপতো এইটো কাম কৰিবলৈ, ছিষ্টেম ছেটিংছ → গোপনীয়তা আৰু সুৰক্ষা → ইনপুট মনিটৰিংত StockLensক অনুমতি দিয়ক, তাৰপিছত এপটো পুনৰ খোলক।';
+      'আন এপতো এইটো কাম কৰিবলৈ, ছিষ্টেম ছেটিংছ → গোপনীয়তা আৰু সুৰক্ষা → ইনপুট মনিটৰিংত WhatStockক অনুমতি দিয়ক, তাৰপিছত এপটো পুনৰ খোলক।';
 
   @override
   String get openSystemSettings => 'ছিষ্টেম ছেটিংছ খোলক';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'যিকোনো ঠাইৰ পৰা StockLens খুলিবলৈ $shortcut টিপক বা Option দুবাৰ টিপক।';
+    return 'যিকোনো ঠাইৰ পৰা WhatStock খুলিবলৈ $shortcut টিপক বা Option দুবাৰ টিপক।';
   }
 
   @override
@@ -1170,7 +1170,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens চলি থকা সময়ত প্ৰতি 5 মিনিটত সতৰ্কবাণী পৰীক্ষা কৰা হয়। কম্পিউটাৰত ই মেনু বাৰ বা ট্ৰেত চলি থাকে; ফোনত বৰ্তমান এপ খোলা থাকিলেহে সতৰ্কবাণী আহে।';
+      'WhatStock চলি থকা সময়ত প্ৰতি 5 মিনিটত সতৰ্কবাণী পৰীক্ষা কৰা হয়। কম্পিউটাৰত ই মেনু বাৰ বা ট্ৰেত চলি থাকে; ফোনত বৰ্তমান এপ খোলা থাকিলেহে সতৰ্কবাণী আহে।';
 
   @override
   String alertDescAbove(String price) {
@@ -1226,7 +1226,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens মেনু বাৰ বা ট্ৰেত থাকে, যাতে শ্বৰ্টকাট আৰু দামৰ সতৰ্কবাণীয়ে কাম কৰি থাকে।';
+      'WhatStock মেনু বাৰ বা ট্ৰেত থাকে, যাতে শ্বৰ্টকাট আৰু দামৰ সতৰ্কবাণীয়ে কাম কৰি থাকে।';
 
   @override
   String get termsOfUse => 'ব্যৱহাৰৰ চৰ্তাৱলী';

@@ -35,9 +35,9 @@ class ResendMailer implements Mailer {
       body: jsonEncode({
         'from': from,
         'to': [email],
-        'subject': 'StockLens belépőkód: $code',
+        'subject': 'WhatStock belépőkód: $code',
         'text':
-            'A StockLens belépőkódod: $code\n\nYour StockLens sign-in code: $code\n\n'
+            'A WhatStock belépőkódod: $code\n\nYour WhatStock sign-in code: $code\n\n'
             'A kód 10 percig érvényes. / The code is valid for 10 minutes.',
       }),
     );

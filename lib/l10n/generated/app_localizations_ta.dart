@@ -10,7 +10,7 @@ class AppLocalizationsTa extends AppLocalizations {
   AppLocalizationsTa([String locale = 'ta']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
@@ -432,11 +432,11 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'எங்கிருந்தும் StockLens ஐ அழைக்க $shortcut ஐ அழுத்துங்கள்.';
+    return 'எங்கிருந்தும் WhatStock ஐ அழைக்க $shortcut ஐ அழுத்துங்கள்.';
   }
 
   @override
-  String get trayOpen => 'StockLens ஐ திற';
+  String get trayOpen => 'WhatStock ஐ திற';
 
   @override
   String get trayQuickSearch => 'விரைவு தேடல்';
@@ -955,7 +955,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'உங்கள் சந்தாவும் மீதமுள்ள பகுப்பாய்வுகளும் ஒவ்வொரு சாதனத்திலும் ஒரே மாதிரி இருக்கும்.';
 
   @override
-  String get signInTitle => 'StockLens-இல் உள்நுழையவும்';
+  String get signInTitle => 'WhatStock-இல் உள்நுழையவும்';
 
   @override
   String get emailLabel => 'மின்னஞ்சல் முகவரி';
@@ -1004,18 +1004,18 @@ class AppLocalizationsTa extends AppLocalizations {
   String get doubleOptionTitle => 'Option ஐ இருமுறை அழுத்துங்கள்';
 
   @override
-  String get doubleOptionSubtitle => 'Option விசையை வேகமாக இருமுறை அழுத்தினாலும் StockLens ஐ அழைக்கலாம்.';
+  String get doubleOptionSubtitle => 'Option விசையை வேகமாக இருமுறை அழுத்தினாலும் WhatStock ஐ அழைக்கலாம்.';
 
   @override
   String get doubleOptionPermission =>
-      'பிற ஆப்களிலும் இது வேலை செய்ய, சிஸ்டம் அமைப்புகள் → தனியுரிமை & பாதுகாப்பு → உள்ளீட்டுக் கண்காணிப்பு என்பதில் StockLens ஐ அனுமதித்து, பின்னர் ஆப்பை மீண்டும் திறங்கள்.';
+      'பிற ஆப்களிலும் இது வேலை செய்ய, சிஸ்டம் அமைப்புகள் → தனியுரிமை & பாதுகாப்பு → உள்ளீட்டுக் கண்காணிப்பு என்பதில் WhatStock ஐ அனுமதித்து, பின்னர் ஆப்பை மீண்டும் திறங்கள்.';
 
   @override
   String get openSystemSettings => 'சிஸ்டம் அமைப்புகளைத் திற';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'எங்கிருந்தும் StockLens ஐ அழைக்க $shortcut ஐ அழுத்துங்கள் அல்லது Option ஐ இருமுறை அழுத்துங்கள்.';
+    return 'எங்கிருந்தும் WhatStock ஐ அழைக்க $shortcut ஐ அழுத்துங்கள் அல்லது Option ஐ இருமுறை அழுத்துங்கள்.';
   }
 
   @override
@@ -1173,7 +1173,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens இயங்கும் வரை ஒவ்வொரு 5 நிமிடத்திற்கும் எச்சரிக்கைகள் சரிபார்க்கப்படும். கணினியில் ஆப் மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் தொடர்ந்து இயங்கும்; தொலைபேசியில் தற்போது ஆப் திறந்திருக்கும்போது மட்டுமே எச்சரிக்கும்.';
+      'WhatStock இயங்கும் வரை ஒவ்வொரு 5 நிமிடத்திற்கும் எச்சரிக்கைகள் சரிபார்க்கப்படும். கணினியில் ஆப் மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் தொடர்ந்து இயங்கும்; தொலைபேசியில் தற்போது ஆப் திறந்திருக்கும்போது மட்டுமே எச்சரிக்கும்.';
 
   @override
   String alertDescAbove(String price) {
@@ -1229,7 +1229,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் இருக்கும், எனவே குறுக்குவிசையும் விலை எச்சரிக்கைகளும் தொடர்ந்து செயல்படும்.';
+      'WhatStock மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் இருக்கும், எனவே குறுக்குவிசையும் விலை எச்சரிக்கைகளும் தொடர்ந்து செயல்படும்.';
 
   @override
   String get termsOfUse => 'பயன்பாட்டு விதிமுறைகள்';

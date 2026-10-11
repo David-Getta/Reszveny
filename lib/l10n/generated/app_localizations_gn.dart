@@ -10,7 +10,7 @@ class AppLocalizationsGn extends AppLocalizations {
   AppLocalizationsGn([String locale = 'gn']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Ejapyhy peteĩ acción raʼãnga ha eikuaa opa mbaʼe hese.';
@@ -79,7 +79,7 @@ class AppLocalizationsGn extends AppLocalizations {
   String get systemLanguage => 'Apopyvusu ñeʼẽ';
 
   @override
-  String get about => 'StockLens rehegua';
+  String get about => 'WhatStock rehegua';
 
   @override
   String get disclaimer =>
@@ -434,11 +434,11 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Ejopy $shortcut oimeraẽ hendápe ehenói hag̃ua StockLens.';
+    return 'Ejopy $shortcut oimeraẽ hendápe ehenói hag̃ua WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Embojuruja StockLens';
+  String get trayOpen => 'Embojuruja WhatStock';
 
   @override
   String get trayQuickSearch => 'Jeheka pyaʼe';
@@ -955,7 +955,7 @@ class AppLocalizationsGn extends AppLocalizations {
   String get accountSyncedNote => 'Nde ñemboheraguapy ha jehesaʼỹijo opytáva peteĩchaguánte opa mbaʼeʼokápe.';
 
   @override
-  String get signInTitle => 'Eike StockLens-pe';
+  String get signInTitle => 'Eike WhatStock-pe';
 
   @override
   String get emailLabel => 'Ñanduti veve kundaharape';
@@ -1003,18 +1003,18 @@ class AppLocalizationsGn extends AppLocalizations {
   String get doubleOptionTitle => 'Ejopy mokõi jey Option';
 
   @override
-  String get doubleOptionSubtitle => 'Ejopývo pyaʼe mokõi jey tairenda Option, ojuruja avei StockLens.';
+  String get doubleOptionSubtitle => 'Ejopývo pyaʼe mokõi jey tairenda Option, ojuruja avei WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Ombaʼapo hag̃ua ambue tembiporuʼípe avei, emoneĩ StockLens Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada-pe, ha upéi embojuruja jey tembiporuʼi.';
+      'Ombaʼapo hag̃ua ambue tembiporuʼípe avei, emoneĩ WhatStock Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada-pe, ha upéi embojuruja jey tembiporuʼi.';
 
   @override
   String get openSystemSettings => 'Embojuruja Ajustes del Sistema';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Ejopy $shortcut térã ejopy mokõi jey Option oimeraẽ hendápe ehenói hag̃ua StockLens.';
+    return 'Ejopy $shortcut térã ejopy mokõi jey Option oimeraẽ hendápe ehenói hag̃ua WhatStock.';
   }
 
   @override
@@ -1173,7 +1173,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Maranduʼi oñehechajey 5 aravoʼi ñavõ StockLens ombaʼapo aja. Mohendahápe, osegi ombaʼapo poravorã rendápe térã apopyvusu bandejápe; pumbyrýpe, koʼag̃aite maranduʼi og̃uahẽ tembiporuʼi ijurujáramo añoite.';
+      'Maranduʼi oñehechajey 5 aravoʼi ñavõ WhatStock ombaʼapo aja. Mohendahápe, osegi ombaʼapo poravorã rendápe térã apopyvusu bandejápe; pumbyrýpe, koʼag̃aite maranduʼi og̃uahẽ tembiporuʼi ijurujáramo añoite.';
 
   @override
   String alertDescAbove(String price) {
@@ -1229,7 +1229,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens opyta poravorã rendápe térã apopyvusu bandejápe, upévare mbopyaʼeha ha tepy maranduʼi osegi ombaʼapo.';
+      'WhatStock opyta poravorã rendápe térã apopyvusu bandejápe, upévare mbopyaʼeha ha tepy maranduʼi osegi ombaʼapo.';
 
   @override
   String get termsOfUse => 'Jeporurã reko';

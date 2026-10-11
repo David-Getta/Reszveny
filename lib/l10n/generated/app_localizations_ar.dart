@@ -10,7 +10,7 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'صوّر سهماً وتعرّف على كل شيء عنه.';
@@ -438,11 +438,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'اضغط $shortcut في أي مكان لاستدعاء StockLens.';
+    return 'اضغط $shortcut في أي مكان لاستدعاء WhatStock.';
   }
 
   @override
-  String get trayOpen => 'فتح StockLens';
+  String get trayOpen => 'فتح WhatStock';
 
   @override
   String get trayQuickSearch => 'بحث سريع';
@@ -977,7 +977,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get accountSyncedNote => 'اشتراكك والتحليلات المتبقية متطابقة على كل جهاز.';
 
   @override
-  String get signInTitle => 'تسجيل الدخول إلى StockLens';
+  String get signInTitle => 'تسجيل الدخول إلى WhatStock';
 
   @override
   String get emailLabel => 'البريد الإلكتروني';
@@ -1025,18 +1025,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get doubleOptionTitle => 'الضغط مرتين على Option';
 
   @override
-  String get doubleOptionSubtitle => 'يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء StockLens.';
+  String get doubleOptionSubtitle => 'يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'لكي تعمل هذه الميزة في التطبيقات الأخرى أيضًا، اسمح لـ StockLens من إعدادات النظام ← الخصوصية والأمن ← مراقبة الإدخال، ثم أعد فتح التطبيق.';
+      'لكي تعمل هذه الميزة في التطبيقات الأخرى أيضًا، اسمح لـ WhatStock من إعدادات النظام ← الخصوصية والأمن ← مراقبة الإدخال، ثم أعد فتح التطبيق.';
 
   @override
   String get openSystemSettings => 'فتح إعدادات النظام';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'اضغط $shortcut أو اضغط Option مرتين في أي مكان لاستدعاء StockLens.';
+    return 'اضغط $shortcut أو اضغط Option مرتين في أي مكان لاستدعاء WhatStock.';
   }
 
   @override
@@ -1201,7 +1201,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'تُفحص التنبيهات كل 5 دقائق أثناء تشغيل StockLens. على الكمبيوتر يستمر التطبيق في شريط القوائم أو علبة النظام؛ وعلى الهاتف تصل التنبيهات حاليًا عندما يكون التطبيق مفتوحًا فقط.';
+      'تُفحص التنبيهات كل 5 دقائق أثناء تشغيل WhatStock. على الكمبيوتر يستمر التطبيق في شريط القوائم أو علبة النظام؛ وعلى الهاتف تصل التنبيهات حاليًا عندما يكون التطبيق مفتوحًا فقط.';
 
   @override
   String alertDescAbove(String price) {
@@ -1257,7 +1257,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'يبقى StockLens في شريط القوائم أو علبة النظام، لذلك يستمر عمل الاختصار وتنبيهات السعر.';
+      'يبقى WhatStock في شريط القوائم أو علبة النظام، لذلك يستمر عمل الاختصار وتنبيهات السعر.';
 
   @override
   String get termsOfUse => 'شروط الاستخدام';

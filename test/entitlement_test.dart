@@ -82,7 +82,7 @@ void main() {
     expect(e.plan?.tier, PlanTier.pro);
     expect(e.remainingInPeriod, 20);
 
-    final pack = c.products.firstWhere((p) => p.id == 'stocklens.pack.20');
+    final pack = c.products.firstWhere((p) => p.id == 'whatstock.pack.20');
     await c.buy(pack);
     await Future<void>.delayed(const Duration(milliseconds: 20));
     expect(e.extraCredits, 20);

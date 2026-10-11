@@ -10,7 +10,7 @@ class AppLocalizationsAf extends AppLocalizations {
   AppLocalizationsAf([String locale = 'af']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Neem ’n foto van ’n aandeel en leer alles daaroor.';
@@ -431,11 +431,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Druk $shortcut enige plek om StockLens op te roep.';
+    return 'Druk $shortcut enige plek om WhatStock op te roep.';
   }
 
   @override
-  String get trayOpen => 'Maak StockLens oop';
+  String get trayOpen => 'Maak WhatStock oop';
 
   @override
   String get trayQuickSearch => 'Vinnige soektog';
@@ -952,7 +952,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get accountSyncedNote => 'Jou intekening en oorblywende ontledings is dieselfde op elke toestel.';
 
   @override
-  String get signInTitle => 'Meld aan by StockLens';
+  String get signInTitle => 'Meld aan by WhatStock';
 
   @override
   String get emailLabel => 'E-posadres';
@@ -1000,18 +1000,18 @@ class AppLocalizationsAf extends AppLocalizations {
   String get doubleOptionTitle => 'Druk Option twee keer';
 
   @override
-  String get doubleOptionSubtitle => 'As jy die Option-sleutel vinnig twee keer druk, roep dit ook StockLens op.';
+  String get doubleOptionSubtitle => 'As jy die Option-sleutel vinnig twee keer druk, roep dit ook WhatStock op.';
 
   @override
   String get doubleOptionPermission =>
-      'Om dit ook in ander apps te laat werk, gee StockLens toestemming onder Stelselinstellings → Privaatheid en sekuriteit → Invoermonitering, en maak dan die app weer oop.';
+      'Om dit ook in ander apps te laat werk, gee WhatStock toestemming onder Stelselinstellings → Privaatheid en sekuriteit → Invoermonitering, en maak dan die app weer oop.';
 
   @override
   String get openSystemSettings => 'Maak Stelselinstellings oop';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Druk $shortcut of druk Option twee keer enige plek om StockLens op te roep.';
+    return 'Druk $shortcut of druk Option twee keer enige plek om WhatStock op te roep.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Waarskuwings word elke 5 minute nagegaan terwyl StockLens loop. Op ’n rekenaar bly dit in die kieslysbalk of stelselbalk loop; op ’n foon kom waarskuwings voorlopig net terwyl die app oop is.';
+      'Waarskuwings word elke 5 minute nagegaan terwyl WhatStock loop. Op ’n rekenaar bly dit in die kieslysbalk of stelselbalk loop; op ’n foon kom waarskuwings voorlopig net terwyl die app oop is.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens bly in die kieslysbalk of stelselbalk, sodat die kortpad en pryswaarskuwings aanhou werk.';
+      'WhatStock bly in die kieslysbalk of stelselbalk, sodat die kortpad en pryswaarskuwings aanhou werk.';
 
   @override
   String get termsOfUse => 'Gebruiksvoorwaardes';

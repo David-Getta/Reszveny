@@ -10,7 +10,7 @@ class AppLocalizationsHe extends AppLocalizations {
   AppLocalizationsHe([String locale = 'he']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'צלמו מניה וגלו עליה הכול.';
@@ -434,11 +434,11 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'הקישו $shortcut מכל מקום כדי לפתוח את StockLens.';
+    return 'הקישו $shortcut מכל מקום כדי לפתוח את WhatStock.';
   }
 
   @override
-  String get trayOpen => 'פתיחת StockLens';
+  String get trayOpen => 'פתיחת WhatStock';
 
   @override
   String get trayQuickSearch => 'חיפוש מהיר';
@@ -958,7 +958,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get accountSyncedNote => 'המינוי שלך והניתוחים שנשארו זהים בכל מכשיר.';
 
   @override
-  String get signInTitle => 'כניסה ל-StockLens';
+  String get signInTitle => 'כניסה ל-WhatStock';
 
   @override
   String get emailLabel => 'כתובת אימייל';
@@ -1005,18 +1005,18 @@ class AppLocalizationsHe extends AppLocalizations {
   String get doubleOptionTitle => 'הקשה כפולה על Option';
 
   @override
-  String get doubleOptionSubtitle => 'גם הקשה מהירה פעמיים על מקש Option פותחת את StockLens.';
+  String get doubleOptionSubtitle => 'גם הקשה מהירה פעמיים על מקש Option פותחת את WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'כדי שזה יעבוד גם באפליקציות אחרות, אשרו את StockLens בהגדרות המערכת ← פרטיות ואבטחה ← ניטור קלט, ואז פתחו את האפליקציה מחדש.';
+      'כדי שזה יעבוד גם באפליקציות אחרות, אשרו את WhatStock בהגדרות המערכת ← פרטיות ואבטחה ← ניטור קלט, ואז פתחו את האפליקציה מחדש.';
 
   @override
   String get openSystemSettings => 'פתיחת הגדרות המערכת';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'הקישו $shortcut או הקישו פעמיים על Option מכל מקום כדי לפתוח את StockLens.';
+    return 'הקישו $shortcut או הקישו פעמיים על Option מכל מקום כדי לפתוח את WhatStock.';
   }
 
   @override
@@ -1179,7 +1179,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'ההתראות נבדקות כל 5 דקות כל עוד StockLens פועלת. במחשב היא ממשיכה לפעול בשורת התפריטים או במגש המערכת; בטלפון, בינתיים ההתראות מגיעות רק כשהאפליקציה פתוחה.';
+      'ההתראות נבדקות כל 5 דקות כל עוד WhatStock פועלת. במחשב היא ממשיכה לפעול בשורת התפריטים או במגש המערכת; בטלפון, בינתיים ההתראות מגיעות רק כשהאפליקציה פתוחה.';
 
   @override
   String alertDescAbove(String price) {
@@ -1235,7 +1235,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens נשארת בשורת התפריטים או במגש המערכת, כך שקיצור המקשים והתראות המחיר ממשיכים לעבוד.';
+      'WhatStock נשארת בשורת התפריטים או במגש המערכת, כך שקיצור המקשים והתראות המחיר ממשיכים לעבוד.';
 
   @override
   String get termsOfUse => 'תנאי שימוש';

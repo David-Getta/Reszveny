@@ -27,7 +27,7 @@ class Account {
   bool get isSignedIn => email != null && email!.isNotEmpty;
 }
 
-/// A StockLens backend kliense: névtelen fiók (token), jogosultság-lekérés,
+/// A WhatStock backend kliense: névtelen fiók (token), jogosultság-lekérés,
 /// vásárlás-ellenőrzés, és egy hitelesített [http.Client] a továbbított
 /// Anthropic/Finnhub hívásokhoz.
 ///

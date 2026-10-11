@@ -15,13 +15,13 @@ class PlanSpec {
   static const periodDays = 30;
 
   static const paid = [
-    PlanSpec('normal', 'stocklens.sub.normal', 8, 4),
-    PlanSpec('pro', 'stocklens.sub.pro', 20, 6),
-    PlanSpec('max', 'stocklens.sub.max', 40, 8),
-    PlanSpec('ultra', 'stocklens.sub.ultra', 70, 10),
+    PlanSpec('normal', 'whatstock.sub.normal', 8, 4),
+    PlanSpec('pro', 'whatstock.sub.pro', 20, 6),
+    PlanSpec('max', 'whatstock.sub.max', 40, 8),
+    PlanSpec('ultra', 'whatstock.sub.ultra', 70, 10),
   ];
 
-  static const packs = {'stocklens.pack.5': 5, 'stocklens.pack.20': 20, 'stocklens.pack.50': 50};
+  static const packs = {'whatstock.pack.5': 5, 'whatstock.pack.20': 20, 'whatstock.pack.50': 50};
 
   static PlanSpec? byTier(String? tier) {
     if (tier == 'trial') return const PlanSpec('trial', '', trialAnalyses, 6);

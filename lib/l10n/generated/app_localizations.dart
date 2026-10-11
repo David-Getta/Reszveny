@@ -29,6 +29,7 @@ import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
 import 'app_localizations_fa.dart';
+import 'app_localizations_ff.dart';
 import 'app_localizations_fi.dart';
 import 'app_localizations_fil.dart';
 import 'app_localizations_fr.dart';
@@ -52,6 +53,7 @@ import 'app_localizations_jv.dart';
 import 'app_localizations_ka.dart';
 import 'app_localizations_kab.dart';
 import 'app_localizations_kg.dart';
+import 'app_localizations_ki.dart';
 import 'app_localizations_kk.dart';
 import 'app_localizations_km.dart';
 import 'app_localizations_kn.dart';
@@ -62,12 +64,14 @@ import 'app_localizations_lg.dart';
 import 'app_localizations_ln.dart';
 import 'app_localizations_lo.dart';
 import 'app_localizations_lt.dart';
+import 'app_localizations_lua.dart';
 import 'app_localizations_lv.dart';
 import 'app_localizations_mai.dart';
 import 'app_localizations_mg.dart';
 import 'app_localizations_mk.dart';
 import 'app_localizations_ml.dart';
 import 'app_localizations_mn.dart';
+import 'app_localizations_mos.dart';
 import 'app_localizations_mr.dart';
 import 'app_localizations_ms.dart';
 import 'app_localizations_my.dart';
@@ -228,6 +232,7 @@ abstract class AppLocalizations {
     Locale('en'),
     Locale('es'),
     Locale('fa'),
+    Locale('ff'),
     Locale('fi'),
     Locale('fil'),
     Locale('fr'),
@@ -251,6 +256,7 @@ abstract class AppLocalizations {
     Locale('ka'),
     Locale('kab'),
     Locale('kg'),
+    Locale('ki'),
     Locale('kk'),
     Locale('km'),
     Locale('kn'),
@@ -261,12 +267,14 @@ abstract class AppLocalizations {
     Locale('ln'),
     Locale('lo'),
     Locale('lt'),
+    Locale('lua'),
     Locale('lv'),
     Locale('mai'),
     Locale('mg'),
     Locale('mk'),
     Locale('ml'),
     Locale('mn'),
+    Locale('mos'),
     Locale('mr'),
     Locale('ms'),
     Locale('my'),
@@ -325,7 +333,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'StockLens'**
+  /// **'WhatStock'**
   String get appTitle;
 
   /// No description provided for @homeTagline.
@@ -1099,13 +1107,13 @@ abstract class AppLocalizations {
   /// No description provided for @hotkeyHint.
   ///
   /// In en, this message translates to:
-  /// **'Press {shortcut} anywhere to summon StockLens.'**
+  /// **'Press {shortcut} anywhere to summon WhatStock.'**
   String hotkeyHint(String shortcut);
 
   /// No description provided for @trayOpen.
   ///
   /// In en, this message translates to:
-  /// **'Open StockLens'**
+  /// **'Open WhatStock'**
   String get trayOpen;
 
   /// No description provided for @trayQuickSearch.
@@ -1987,7 +1995,7 @@ abstract class AppLocalizations {
   /// No description provided for @signInTitle.
   ///
   /// In en, this message translates to:
-  /// **'Sign in to StockLens'**
+  /// **'Sign in to WhatStock'**
   String get signInTitle;
 
   /// No description provided for @emailLabel.
@@ -2077,13 +2085,13 @@ abstract class AppLocalizations {
   /// No description provided for @doubleOptionSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Pressing the Option key twice quickly also summons StockLens.'**
+  /// **'Pressing the Option key twice quickly also summons WhatStock.'**
   String get doubleOptionSubtitle;
 
   /// No description provided for @doubleOptionPermission.
   ///
   /// In en, this message translates to:
-  /// **'To make it work in other apps too, allow StockLens under System Settings → Privacy & Security → Input Monitoring, then reopen the app.'**
+  /// **'To make it work in other apps too, allow WhatStock under System Settings → Privacy & Security → Input Monitoring, then reopen the app.'**
   String get doubleOptionPermission;
 
   /// No description provided for @openSystemSettings.
@@ -2095,7 +2103,7 @@ abstract class AppLocalizations {
   /// No description provided for @hotkeyHintDoubleOption.
   ///
   /// In en, this message translates to:
-  /// **'Press {shortcut} or double-press Option anywhere to summon StockLens.'**
+  /// **'Press {shortcut} or double-press Option anywhere to summon WhatStock.'**
   String hotkeyHintDoubleOption(String shortcut);
 
   /// No description provided for @scenarioMostLikely.
@@ -2359,7 +2367,7 @@ abstract class AppLocalizations {
   /// No description provided for @alertsNote.
   ///
   /// In en, this message translates to:
-  /// **'Alerts are checked every 5 minutes while StockLens is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.'**
+  /// **'Alerts are checked every 5 minutes while WhatStock is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.'**
   String get alertsNote;
 
   /// No description provided for @alertDescAbove.
@@ -2437,7 +2445,7 @@ abstract class AppLocalizations {
   /// No description provided for @keepInTraySubtitle.
   ///
   /// In en, this message translates to:
-  /// **'StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.'**
+  /// **'WhatStock stays in the menu bar or tray, so the hotkey and price alerts keep working.'**
   String get keepInTraySubtitle;
 
   /// No description provided for @termsOfUse.
@@ -2535,6 +2543,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'en',
     'es',
     'fa',
+    'ff',
     'fi',
     'fil',
     'fr',
@@ -2558,6 +2567,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ka',
     'kab',
     'kg',
+    'ki',
     'kk',
     'km',
     'kn',
@@ -2568,12 +2578,14 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ln',
     'lo',
     'lt',
+    'lua',
     'lv',
     'mai',
     'mg',
     'mk',
     'ml',
     'mn',
+    'mos',
     'mr',
     'ms',
     'my',
@@ -2689,6 +2701,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsEs();
     case 'fa':
       return AppLocalizationsFa();
+    case 'ff':
+      return AppLocalizationsFf();
     case 'fi':
       return AppLocalizationsFi();
     case 'fil':
@@ -2735,6 +2749,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsKab();
     case 'kg':
       return AppLocalizationsKg();
+    case 'ki':
+      return AppLocalizationsKi();
     case 'kk':
       return AppLocalizationsKk();
     case 'km':
@@ -2755,6 +2771,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsLo();
     case 'lt':
       return AppLocalizationsLt();
+    case 'lua':
+      return AppLocalizationsLua();
     case 'lv':
       return AppLocalizationsLv();
     case 'mai':
@@ -2767,6 +2785,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsMl();
     case 'mn':
       return AppLocalizationsMn();
+    case 'mos':
+      return AppLocalizationsMos();
     case 'mr':
       return AppLocalizationsMr();
     case 'ms':

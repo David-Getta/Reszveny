@@ -10,7 +10,7 @@ class AppLocalizationsAm extends AppLocalizations {
   AppLocalizationsAm([String locale = 'am']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'አክሲዮንን ፎቶ ያንሱ፤ ስለሱ ሁሉንም ነገር ይወቁ።';
@@ -427,11 +427,11 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLensን ለመጥራት በየትኛውም ቦታ $shortcut ይጫኑ።';
+    return 'WhatStockን ለመጥራት በየትኛውም ቦታ $shortcut ይጫኑ።';
   }
 
   @override
-  String get trayOpen => 'StockLensን ክፈት';
+  String get trayOpen => 'WhatStockን ክፈት';
 
   @override
   String get trayQuickSearch => 'ፈጣን ፍለጋ';
@@ -940,7 +940,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accountSyncedNote => 'የደንበኝነት ምዝገባዎ እና የቀሩት ትንተናዎች በሁሉም መሣሪያ ላይ አንድ ናቸው።';
 
   @override
-  String get signInTitle => 'ወደ StockLens ይግቡ';
+  String get signInTitle => 'ወደ WhatStock ይግቡ';
 
   @override
   String get emailLabel => 'የኢሜይል አድራሻ';
@@ -987,18 +987,18 @@ class AppLocalizationsAm extends AppLocalizations {
   String get doubleOptionTitle => 'Optionን ሁለቴ ተጫን';
 
   @override
-  String get doubleOptionSubtitle => 'የOption ቁልፍን በፍጥነት ሁለቴ መጫንም StockLensን ይጠራል።';
+  String get doubleOptionSubtitle => 'የOption ቁልፍን በፍጥነት ሁለቴ መጫንም WhatStockን ይጠራል።';
 
   @override
   String get doubleOptionPermission =>
-      'በሌሎች መተግበሪያዎችም ውስጥ እንዲሠራ StockLensን በSystem Settings → Privacy & Security → Input Monitoring ስር ይፍቀዱ፣ ከዚያ መተግበሪያውን እንደገና ይክፈቱ።';
+      'በሌሎች መተግበሪያዎችም ውስጥ እንዲሠራ WhatStockን በSystem Settings → Privacy & Security → Input Monitoring ስር ይፍቀዱ፣ ከዚያ መተግበሪያውን እንደገና ይክፈቱ።';
 
   @override
   String get openSystemSettings => 'የሥርዓት ቅንብሮችን ክፈት';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLensን ለመጥራት በየትኛውም ቦታ $shortcut ይጫኑ ወይም Optionን ሁለቴ ይጫኑ።';
+    return 'WhatStockን ለመጥራት በየትኛውም ቦታ $shortcut ይጫኑ ወይም Optionን ሁለቴ ይጫኑ።';
   }
 
   @override
@@ -1154,7 +1154,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens በሚሠራበት ጊዜ ማንቂያዎች በየ5 ደቂቃው ይፈተሻሉ። በኮምፒውተር ላይ በምናሌ አሞሌው ወይም በሲስተም ትሬይ ውስጥ መሥራቱን ይቀጥላል፤ በስልክ ላይ ግን ለጊዜው ማንቂያዎች የሚደርሱት መተግበሪያው ክፍት ሲሆን ብቻ ነው።';
+      'WhatStock በሚሠራበት ጊዜ ማንቂያዎች በየ5 ደቂቃው ይፈተሻሉ። በኮምፒውተር ላይ በምናሌ አሞሌው ወይም በሲስተም ትሬይ ውስጥ መሥራቱን ይቀጥላል፤ በስልክ ላይ ግን ለጊዜው ማንቂያዎች የሚደርሱት መተግበሪያው ክፍት ሲሆን ብቻ ነው።';
 
   @override
   String alertDescAbove(String price) {
@@ -1210,7 +1210,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens በምናሌ አሞሌው ወይም በሲስተም ትሬይ ውስጥ ይቆያል፤ ስለዚህ አቋራጭ ቁልፉ እና የዋጋ ማንቂያዎች መሥራታቸውን ይቀጥላሉ።';
+      'WhatStock በምናሌ አሞሌው ወይም በሲስተም ትሬይ ውስጥ ይቆያል፤ ስለዚህ አቋራጭ ቁልፉ እና የዋጋ ማንቂያዎች መሥራታቸውን ይቀጥላሉ።';
 
   @override
   String get termsOfUse => 'የአጠቃቀም ውል';

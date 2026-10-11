@@ -172,7 +172,7 @@ class AppServices {
   final ReportStore reports;
   final EntitlementService entitlements;
 
-  /// A StockLens backend kliense, vagy `null` közvetlen (kulcsos/demó) módban.
+  /// A WhatStock backend kliense, vagy `null` közvetlen (kulcsos/demó) módban.
   final BackendClient? backend;
 
   /// Fiók (belépés e-mail kóddal); csak backend-módban.

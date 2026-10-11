@@ -221,11 +221,11 @@ void main() {
     });
 
     test('saját cím felülírja, backend nélkül nincs link', () {
-      const own = AppConfig(termsUrlOverride: 'https://stocklens.app/terms?v=2');
-      expect(own.termsUrl, 'https://stocklens.app/terms?v=2');
+      const own = AppConfig(termsUrlOverride: 'https://whatstock.app/terms?v=2');
+      expect(own.termsUrl, 'https://whatstock.app/terms?v=2');
       expect(own.privacyUrl, isEmpty);
       final s = _services(_FakeServer());
-      expect(s.legalUri(own.termsUrl, const Locale('hu')).toString(), 'https://stocklens.app/terms?v=2&lang=hu');
+      expect(s.legalUri(own.termsUrl, const Locale('hu')).toString(), 'https://whatstock.app/terms?v=2&lang=hu');
       expect(s.legalUri(own.privacyUrl, const Locale('hu')), isNull);
     });
   });
@@ -237,7 +237,7 @@ void main() {
     final server = _FakeServer();
     final s = _services(server, email: 'a@b.hu');
     await tester.runAsync(() => _fillLocalData(s));
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();

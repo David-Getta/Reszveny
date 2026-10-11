@@ -153,7 +153,7 @@ void main() {
 
   testWidgets('a purchase added on the detail page shows as a position and in the portfolio', (tester) async {
     final s = services();
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);

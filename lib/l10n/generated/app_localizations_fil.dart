@@ -10,7 +10,7 @@ class AppLocalizationsFil extends AppLocalizations {
   AppLocalizationsFil([String locale = 'fil']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.';
@@ -434,11 +434,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Pindutin ang $shortcut kahit saan para tawagin ang StockLens.';
+    return 'Pindutin ang $shortcut kahit saan para tawagin ang WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Buksan ang StockLens';
+  String get trayOpen => 'Buksan ang WhatStock';
 
   @override
   String get trayQuickSearch => 'Mabilisang paghahanap';
@@ -958,7 +958,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get accountSyncedNote => 'Pareho ang iyong subscription at natitirang pagsusuri sa bawat device.';
 
   @override
-  String get signInTitle => 'Mag-sign in sa StockLens';
+  String get signInTitle => 'Mag-sign in sa WhatStock';
 
   @override
   String get emailLabel => 'Email address';
@@ -1009,18 +1009,18 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get doubleOptionSubtitle =>
-      'Natatawag din ang StockLens kapag mabilis na pinindot nang dalawang beses ang Option key.';
+      'Natatawag din ang WhatStock kapag mabilis na pinindot nang dalawang beses ang Option key.';
 
   @override
   String get doubleOptionPermission =>
-      'Para gumana rin ito sa ibang app, payagan ang StockLens sa System Settings → Privacy & Security → Input Monitoring, pagkatapos ay buksan muli ang app.';
+      'Para gumana rin ito sa ibang app, payagan ang WhatStock sa System Settings → Privacy & Security → Input Monitoring, pagkatapos ay buksan muli ang app.';
 
   @override
   String get openSystemSettings => 'Buksan ang System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Pindutin ang $shortcut o pindutin nang dalawang beses ang Option kahit saan para tawagin ang StockLens.';
+    return 'Pindutin ang $shortcut o pindutin nang dalawang beses ang Option kahit saan para tawagin ang WhatStock.';
   }
 
   @override
@@ -1178,7 +1178,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Sinusuri ang mga alerto bawat 5 minuto habang tumatakbo ang StockLens. Sa computer, patuloy itong tumatakbo sa menu bar o system tray; sa telepono, sa ngayon ay nag-aalerto lang kapag bukas ang app.';
+      'Sinusuri ang mga alerto bawat 5 minuto habang tumatakbo ang WhatStock. Sa computer, patuloy itong tumatakbo sa menu bar o system tray; sa telepono, sa ngayon ay nag-aalerto lang kapag bukas ang app.';
 
   @override
   String alertDescAbove(String price) {
@@ -1234,7 +1234,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'Nananatili ang StockLens sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo.';
+      'Nananatili ang WhatStock sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo.';
 
   @override
   String get termsOfUse => 'Mga Tuntunin ng Paggamit';

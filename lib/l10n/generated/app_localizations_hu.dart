@@ -10,7 +10,7 @@ class AppLocalizationsHu extends AppLocalizations {
   AppLocalizationsHu([String locale = 'hu']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fotózz le egy részvényt, és tudj meg róla mindent.';
@@ -431,11 +431,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a StockLens.';
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a WhatStock.';
   }
 
   @override
-  String get trayOpen => 'StockLens megnyitása';
+  String get trayOpen => 'WhatStock megnyitása';
 
   @override
   String get trayQuickSearch => 'Gyorskeresés';
@@ -952,7 +952,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get accountSyncedNote => 'Az előfizetésed és a hátralévő elemzéseid minden eszközön ugyanazok.';
 
   @override
-  String get signInTitle => 'Bejelentkezés a StockLensbe';
+  String get signInTitle => 'Bejelentkezés a WhatStockba';
 
   @override
   String get emailLabel => 'E-mail-cím';
@@ -1000,18 +1000,18 @@ class AppLocalizationsHu extends AppLocalizations {
   String get doubleOptionTitle => 'Dupla Option-nyomás';
 
   @override
-  String get doubleOptionSubtitle => 'Az Option gomb kétszeri gyors lenyomása is előhozza a StockLenst.';
+  String get doubleOptionSubtitle => 'Az Option gomb kétszeri gyors lenyomása is előhozza a WhatStockot.';
 
   @override
   String get doubleOptionPermission =>
-      'Hogy más appokban is működjön, engedélyezd a StockLenst a Rendszerbeállítások → Adatvédelem és biztonság → Bemenetfigyelés alatt, majd nyisd meg újra az appot.';
+      'Hogy más appokban is működjön, engedélyezd a WhatStockot a Rendszerbeállítások → Adatvédelem és biztonság → Bemenetfigyelés alatt, majd nyisd meg újra az appot.';
 
   @override
   String get openSystemSettings => 'Rendszerbeállítások megnyitása';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens.';
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a WhatStock.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'A StockLens 5 percenként ellenőrzi a riasztásokat, amíg fut. Számítógépen a menüsorban vagy a tálcán fut tovább; telefonon egyelőre akkor jelez, amikor az app nyitva van.';
+      'A WhatStock 5 percenként ellenőrzi a riasztásokat, amíg fut. Számítógépen a menüsorban vagy a tálcán fut tovább; telefonon egyelőre akkor jelez, amikor az app nyitva van.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'A StockLens a menüsorban vagy a tálcán marad, így a gyorsbillentyű és az árfolyam-riasztás is működik.';
+      'A WhatStock a menüsorban vagy a tálcán marad, így a gyorsbillentyű és az árfolyam-riasztás is működik.';
 
   @override
   String get termsOfUse => 'Felhasználási feltételek';

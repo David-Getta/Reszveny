@@ -19,7 +19,7 @@ class SystemNotifier implements AlertNotifier {
   /// Koppintás az értesítésre: a riasztás azonosítójával.
   void Function(String id)? onClick;
 
-  static const _channel = MethodChannel('stocklens/notifications');
+  static const _channel = MethodChannel('whatstock/notifications');
   bool _ready = false;
 
   static bool get isSupported => !kIsWeb && (Platform.isMacOS || Platform.isWindows || Platform.isLinux);
@@ -32,7 +32,7 @@ class SystemNotifier implements AlertNotifier {
         if (call.method == 'clicked') onClick?.call(call.arguments as String? ?? '');
       });
     } else {
-      await localNotifier.setup(appName: 'StockLens', shortcutPolicy: ShortcutPolicy.requireCreate);
+      await localNotifier.setup(appName: 'WhatStock', shortcutPolicy: ShortcutPolicy.requireCreate);
     }
   }
 

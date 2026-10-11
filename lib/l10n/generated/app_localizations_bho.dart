@@ -10,7 +10,7 @@ class AppLocalizationsBho extends AppLocalizations {
   AppLocalizationsBho([String locale = 'bho']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'कवनो शेयर के फोटो खींचीं आ ओकरा बारे में सब कुछ जानीं।';
@@ -428,11 +428,11 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'कहीं से StockLens खोले खातिर $shortcut दबाईं।';
+    return 'कहीं से WhatStock खोले खातिर $shortcut दबाईं।';
   }
 
   @override
-  String get trayOpen => 'StockLens खोलीं';
+  String get trayOpen => 'WhatStock खोलीं';
 
   @override
   String get trayQuickSearch => 'झटपट खोज';
@@ -948,7 +948,7 @@ class AppLocalizationsBho extends AppLocalizations {
   String get accountSyncedNote => 'राउर सदस्यता आ बाकी विश्लेषण हर डिवाइस पर एके जइसन रहेला।';
 
   @override
-  String get signInTitle => 'StockLens में साइन इन करीं';
+  String get signInTitle => 'WhatStock में साइन इन करीं';
 
   @override
   String get emailLabel => 'ईमेल पता';
@@ -996,18 +996,18 @@ class AppLocalizationsBho extends AppLocalizations {
   String get doubleOptionTitle => 'Option दू बेर दबाईं';
 
   @override
-  String get doubleOptionSubtitle => 'Option कुंजी के जल्दी-जल्दी दू बेर दबवला से भी StockLens खुल जाला।';
+  String get doubleOptionSubtitle => 'Option कुंजी के जल्दी-जल्दी दू बेर दबवला से भी WhatStock खुल जाला।';
 
   @override
   String get doubleOptionPermission =>
-      'दोसरो ऐप में ई काम करे, एह खातिर सिस्टम सेटिंग्स → गोपनीयता आ सुरक्षा → इनपुट मॉनिटरिंग में StockLens के अनुमति दीं, फेर ऐप दोबारा खोलीं।';
+      'दोसरो ऐप में ई काम करे, एह खातिर सिस्टम सेटिंग्स → गोपनीयता आ सुरक्षा → इनपुट मॉनिटरिंग में WhatStock के अनुमति दीं, फेर ऐप दोबारा खोलीं।';
 
   @override
   String get openSystemSettings => 'सिस्टम सेटिंग्स खोलीं';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'कहीं से StockLens खोले खातिर $shortcut दबाईं भा Option दू बेर दबाईं।';
+    return 'कहीं से WhatStock खोले खातिर $shortcut दबाईं भा Option दू बेर दबाईं।';
   }
 
   @override
@@ -1165,7 +1165,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'जब ले StockLens चलत बा, अलर्ट हर 5 मिनट पर जाँचल जाला। कंप्यूटर पर ई मेनू बार भा ट्रे में चलत रहेला; फोन पर फिलहाल अलर्ट तबे आवेला जब ऐप खुलल रहे।';
+      'जब ले WhatStock चलत बा, अलर्ट हर 5 मिनट पर जाँचल जाला। कंप्यूटर पर ई मेनू बार भा ट्रे में चलत रहेला; फोन पर फिलहाल अलर्ट तबे आवेला जब ऐप खुलल रहे।';
 
   @override
   String alertDescAbove(String price) {
@@ -1220,7 +1220,7 @@ class AppLocalizationsBho extends AppLocalizations {
   String get keepInTrayTitle => 'विंडो बंद भइला पर भी चलत रहे';
 
   @override
-  String get keepInTraySubtitle => 'StockLens मेनू बार भा ट्रे में रहेला, जेसे शॉर्टकट आ दाम अलर्ट काम करत रहे।';
+  String get keepInTraySubtitle => 'WhatStock मेनू बार भा ट्रे में रहेला, जेसे शॉर्टकट आ दाम अलर्ट काम करत रहे।';
 
   @override
   String get termsOfUse => 'इस्तेमाल के शर्त';

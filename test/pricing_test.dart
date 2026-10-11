@@ -33,7 +33,7 @@ void main() {
     final fx = FxService(client: client);
     final demo = DemoBillingService(latency: Duration.zero, fx: fx, locale: 'hu', currency: () => 'HUF');
     final products = await demo.products();
-    final normal = products.firstWhere((p) => p.id == 'stocklens.sub.normal');
+    final normal = products.firstWhere((p) => p.id == 'whatstock.sub.normal');
     expect(normal.currency, 'HUF');
     expect(normal.rawPrice, 2890);
     expect(normal.price, contains('Ft'));

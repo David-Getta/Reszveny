@@ -10,7 +10,7 @@ class AppLocalizationsMg extends AppLocalizations {
   AppLocalizationsMg([String locale = 'mg']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Makà sarin\'ny aksiona iray ary fantaro ny momba azy rehetra.';
@@ -439,11 +439,11 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tsindrio $shortcut na aiza na aiza mba hiantsoana ny StockLens.';
+    return 'Tsindrio $shortcut na aiza na aiza mba hiantsoana ny WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Sokafy ny StockLens';
+  String get trayOpen => 'Sokafy ny WhatStock';
 
   @override
   String get trayQuickSearch => 'Fikarohana haingana';
@@ -966,7 +966,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get accountSyncedNote => 'Mitovy amin\'ny fitaovana rehetra ny famandrihanao sy ny fandalinana sisa.';
 
   @override
-  String get signInTitle => 'Hiditra amin\'ny StockLens';
+  String get signInTitle => 'Hiditra amin\'ny WhatStock';
 
   @override
   String get emailLabel => 'Adiresy mailaka';
@@ -1016,18 +1016,18 @@ class AppLocalizationsMg extends AppLocalizations {
   String get doubleOptionTitle => 'Tsindrio indroa ny Option';
 
   @override
-  String get doubleOptionSubtitle => 'Miantso ny StockLens koa ny fanindriana haingana indroa ny kitendry Option.';
+  String get doubleOptionSubtitle => 'Miantso ny WhatStock koa ny fanindriana haingana indroa ny kitendry Option.';
 
   @override
   String get doubleOptionPermission =>
-      'Mba handeha amin\'ny fampiharana hafa koa izany, avelao ny StockLens ao amin\'ny Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, dia sokafy indray ny fampiharana.';
+      'Mba handeha amin\'ny fampiharana hafa koa izany, avelao ny WhatStock ao amin\'ny Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, dia sokafy indray ny fampiharana.';
 
   @override
   String get openSystemSettings => 'Sokafy ny Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tsindrio $shortcut na tsindrio indroa ny Option na aiza na aiza mba hiantsoana ny StockLens.';
+    return 'Tsindrio $shortcut na tsindrio indroa ny Option na aiza na aiza mba hiantsoana ny WhatStock.';
   }
 
   @override
@@ -1186,7 +1186,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Hamarinina isaky ny 5 minitra ny fanairana raha mandeha ny StockLens. Amin\'ny solosaina dia mijanona mandeha ao amin\'ny bara menio na tray izy; amin\'ny finday kosa, amin\'izao fotoana izao dia tonga ihany ny fanairana raha misokatra ny fampiharana.';
+      'Hamarinina isaky ny 5 minitra ny fanairana raha mandeha ny WhatStock. Amin\'ny solosaina dia mijanona mandeha ao amin\'ny bara menio na tray izy; amin\'ny finday kosa, amin\'izao fotoana izao dia tonga ihany ny fanairana raha misokatra ny fampiharana.';
 
   @override
   String alertDescAbove(String price) {
@@ -1242,7 +1242,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'Mijanona ao amin\'ny bara menio na tray ny StockLens, ka mbola mandeha ny hitsin-dalana sy ny fanairana vidiny.';
+      'Mijanona ao amin\'ny bara menio na tray ny WhatStock, ka mbola mandeha ny hitsin-dalana sy ny fanairana vidiny.';
 
   @override
   String get termsOfUse => 'Fepetra fampiasana';

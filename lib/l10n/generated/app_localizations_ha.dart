@@ -10,7 +10,7 @@ class AppLocalizationsHa extends AppLocalizations {
   AppLocalizationsHa([String locale = 'ha']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
@@ -431,11 +431,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Danna $shortcut a ko\'ina don kiran StockLens.';
+    return 'Danna $shortcut a ko\'ina don kiran WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Buɗe StockLens';
+  String get trayOpen => 'Buɗe WhatStock';
 
   @override
   String get trayQuickSearch => 'Bincike cikin sauri';
@@ -952,7 +952,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get accountSyncedNote => 'Rajistarka da sauran nazarinka iri ɗaya ne a kowace na\'ura.';
 
   @override
-  String get signInTitle => 'Shiga StockLens';
+  String get signInTitle => 'Shiga WhatStock';
 
   @override
   String get emailLabel => 'Adireshin imel';
@@ -1001,18 +1001,18 @@ class AppLocalizationsHa extends AppLocalizations {
   String get doubleOptionTitle => 'Danna Option sau biyu';
 
   @override
-  String get doubleOptionSubtitle => 'Danna maɓallin Option sau biyu da sauri ma zai kira StockLens.';
+  String get doubleOptionSubtitle => 'Danna maɓallin Option sau biyu da sauri ma zai kira WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Don ya yi aiki a cikin sauran manhajoji ma, ka ba StockLens izini a Saitunan Tsari → Sirri da Tsaro → Sa Ido kan Shigarwa, sannan ka sake buɗe manhajar.';
+      'Don ya yi aiki a cikin sauran manhajoji ma, ka ba WhatStock izini a Saitunan Tsari → Sirri da Tsaro → Sa Ido kan Shigarwa, sannan ka sake buɗe manhajar.';
 
   @override
   String get openSystemSettings => 'Buɗe Saitunan Tsari';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Danna $shortcut ko ka danna Option sau biyu a ko\'ina don kiran StockLens.';
+    return 'Danna $shortcut ko ka danna Option sau biyu a ko\'ina don kiran WhatStock.';
   }
 
   @override
@@ -1170,7 +1170,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ana duba faɗakarwa kowane minti 5 yayin da StockLens ke aiki. A kwamfuta manhajar na ci gaba a sandar menu ko tiren tsarin; a waya, a yanzu tana faɗakarwa ne kawai idan manhajar a buɗe take.';
+      'Ana duba faɗakarwa kowane minti 5 yayin da WhatStock ke aiki. A kwamfuta manhajar na ci gaba a sandar menu ko tiren tsarin; a waya, a yanzu tana faɗakarwa ne kawai idan manhajar a buɗe take.';
 
   @override
   String alertDescAbove(String price) {
@@ -1226,7 +1226,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki.';
+      'WhatStock na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki.';
 
   @override
   String get termsOfUse => 'Sharuɗɗan Amfani';

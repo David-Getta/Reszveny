@@ -10,7 +10,7 @@ class AppLocalizationsKy extends AppLocalizations {
   AppLocalizationsKy([String locale = 'ky']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Акцияны сүрөткө тартып, ал тууралуу баарын билиңиз.';
@@ -434,11 +434,11 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens колдонмосун чакыруу үчүн каалаган жерден $shortcut басыңыз.';
+    return 'WhatStock колдонмосун чакыруу үчүн каалаган жерден $shortcut басыңыз.';
   }
 
   @override
-  String get trayOpen => 'StockLens колдонмосун ачуу';
+  String get trayOpen => 'WhatStock колдонмосун ачуу';
 
   @override
   String get trayQuickSearch => 'Тез издөө';
@@ -956,7 +956,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get accountSyncedNote => 'Жазылууңуз жана калган талдоолоруңуз бардык түзмөктө бирдей.';
 
   @override
-  String get signInTitle => 'StockLens аккаунтуна кирүү';
+  String get signInTitle => 'WhatStock аккаунтуна кирүү';
 
   @override
   String get emailLabel => 'Электрондук почта дареги';
@@ -1004,18 +1004,18 @@ class AppLocalizationsKy extends AppLocalizations {
   String get doubleOptionTitle => 'Option баскычын эки жолу басуу';
 
   @override
-  String get doubleOptionSubtitle => 'Option баскычын тез эки жолу басуу да StockLens колдонмосун чакырат.';
+  String get doubleOptionSubtitle => 'Option баскычын тез эки жолу басуу да WhatStock колдонмосун чакырат.';
 
   @override
   String get doubleOptionPermission =>
-      'Бул башка колдонмолордо да иштеши үчүн «Системалык жөндөөлөр» → «Купуялык жана коопсуздук» → «Киргизүүнү көзөмөлдөө» бөлүмүндө StockLens колдонмосуна уруксат берип, колдонмону кайра ачыңыз.';
+      'Бул башка колдонмолордо да иштеши үчүн «Системалык жөндөөлөр» → «Купуялык жана коопсуздук» → «Киргизүүнү көзөмөлдөө» бөлүмүндө WhatStock колдонмосуна уруксат берип, колдонмону кайра ачыңыз.';
 
   @override
   String get openSystemSettings => 'Системалык жөндөөлөрдү ачуу';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens колдонмосун чакыруу үчүн каалаган жерден $shortcut басыңыз же Option баскычын эки жолу басыңыз.';
+    return 'WhatStock колдонмосун чакыруу үчүн каалаган жерден $shortcut басыңыз же Option баскычын эки жолу басыңыз.';
   }
 
   @override
@@ -1173,7 +1173,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens иштеп турганда эскертмелер ар 5 мүнөт сайын текшерилет. Компьютерде ал меню тилкесинде же трейде иштей берет; телефондо азырынча эскертмелер колдонмо ачык турганда гана келет.';
+      'WhatStock иштеп турганда эскертмелер ар 5 мүнөт сайын текшерилет. Компьютерде ал меню тилкесинде же трейде иштей берет; телефондо азырынча эскертмелер колдонмо ачык турганда гана келет.';
 
   @override
   String alertDescAbove(String price) {
@@ -1229,7 +1229,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens меню тилкесинде же трейде калат, ошондуктан ыкчам баскыч жана баа эскертмелери иштей берет.';
+      'WhatStock меню тилкесинде же трейде калат, ошондуктан ыкчам баскыч жана баа эскертмелери иштей берет.';
 
   @override
   String get termsOfUse => 'Колдонуу шарттары';

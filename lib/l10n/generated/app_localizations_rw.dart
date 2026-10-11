@@ -10,7 +10,7 @@ class AppLocalizationsRw extends AppLocalizations {
   AppLocalizationsRw([String locale = 'rw']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fata ifoto y\'umugabane, umenye byose biwerekeyeho.';
@@ -438,11 +438,11 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Kanda $shortcut aho uri hose ngo uhamagare StockLens.';
+    return 'Kanda $shortcut aho uri hose ngo uhamagare WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Fungura StockLens';
+  String get trayOpen => 'Fungura WhatStock';
 
   @override
   String get trayQuickSearch => 'Ishakisha ryihuse';
@@ -960,7 +960,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get accountSyncedNote => 'Ifatabuguzi ryawe n\'amasesengura agusigaranye ni bimwe ku bikoresho byose.';
 
   @override
-  String get signInTitle => 'Injira muri StockLens';
+  String get signInTitle => 'Injira muri WhatStock';
 
   @override
   String get emailLabel => 'Aderesi ya imeri';
@@ -1009,18 +1009,18 @@ class AppLocalizationsRw extends AppLocalizations {
   String get doubleOptionTitle => 'Kanda Option kabiri';
 
   @override
-  String get doubleOptionSubtitle => 'Gukanda Option kabiri vuba na byo bihamagara StockLens.';
+  String get doubleOptionSubtitle => 'Gukanda Option kabiri vuba na byo bihamagara WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Kugira ngo bikore no mu zindi porogaramu, emerera StockLens muri System Settings → Privacy & Security → Input Monitoring, hanyuma wongere ufungure porogaramu.';
+      'Kugira ngo bikore no mu zindi porogaramu, emerera WhatStock muri System Settings → Privacy & Security → Input Monitoring, hanyuma wongere ufungure porogaramu.';
 
   @override
   String get openSystemSettings => 'Fungura System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Kanda $shortcut cyangwa ukande Option kabiri aho uri hose ngo uhamagare StockLens.';
+    return 'Kanda $shortcut cyangwa ukande Option kabiri aho uri hose ngo uhamagare WhatStock.';
   }
 
   @override
@@ -1178,7 +1178,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Imenyesha rigenzurwa buri minota 5 igihe StockLens ikora. Kuri mudasobwa ikomeza gukora iri mu murongo wa menu cyangwa mu gice cy\'imenyesha; kuri terefone, ubu imenyesha riza gusa iyo porogaramu ifunguye.';
+      'Imenyesha rigenzurwa buri minota 5 igihe WhatStock ikora. Kuri mudasobwa ikomeza gukora iri mu murongo wa menu cyangwa mu gice cy\'imenyesha; kuri terefone, ubu imenyesha riza gusa iyo porogaramu ifunguye.';
 
   @override
   String alertDescAbove(String price) {
@@ -1234,7 +1234,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens iguma mu murongo wa menu cyangwa mu gice cy\'imenyesha, bityo inzira y\'ubusamo n\'imenyesha ry\'ibiciro bigakomeza gukora.';
+      'WhatStock iguma mu murongo wa menu cyangwa mu gice cy\'imenyesha, bityo inzira y\'ubusamo n\'imenyesha ry\'ibiciro bigakomeza gukora.';
 
   @override
   String get termsOfUse => 'Amabwiriza yo gukoresha';

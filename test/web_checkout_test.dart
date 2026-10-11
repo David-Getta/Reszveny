@@ -63,7 +63,7 @@ void main() {
     );
     final bc = BillingController(billing: billing, entitlements: ent);
     await bc.loadProducts();
-    final pro = bc.products.firstWhere((p) => p.id == 'stocklens.sub.pro');
+    final pro = bc.products.firstWhere((p) => p.id == 'whatstock.sub.pro');
 
     // Fiók nélkül belépést kér.
     await bc.buy(pro);

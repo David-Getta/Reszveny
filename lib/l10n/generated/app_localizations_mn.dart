@@ -10,7 +10,7 @@ class AppLocalizationsMn extends AppLocalizations {
   AppLocalizationsMn([String locale = 'mn']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Хувьцааны зургийг аваад, түүний талаар бүгдийг мэдээрэй.';
@@ -433,11 +433,11 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens-ийг дуудахын тулд хаанаас ч $shortcut дарна уу.';
+    return 'WhatStock-ийг дуудахын тулд хаанаас ч $shortcut дарна уу.';
   }
 
   @override
-  String get trayOpen => 'StockLens нээх';
+  String get trayOpen => 'WhatStock нээх';
 
   @override
   String get trayQuickSearch => 'Шуурхай хайлт';
@@ -954,7 +954,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get accountSyncedNote => 'Таны захиалга болон үлдсэн шинжилгээ бүх төхөөрөмж дээр ижил байна.';
 
   @override
-  String get signInTitle => 'StockLens-д нэвтрэх';
+  String get signInTitle => 'WhatStock-д нэвтрэх';
 
   @override
   String get emailLabel => 'Имэйл хаяг';
@@ -1003,18 +1003,18 @@ class AppLocalizationsMn extends AppLocalizations {
   String get doubleOptionTitle => 'Option товчийг давхар дарах';
 
   @override
-  String get doubleOptionSubtitle => 'Option товчийг хурдан хоёр удаа дарахад мөн StockLens дуудагдана.';
+  String get doubleOptionSubtitle => 'Option товчийг хурдан хоёр удаа дарахад мөн WhatStock дуудагдана.';
 
   @override
   String get doubleOptionPermission =>
-      'Бусад апп дээр ч ажиллуулахын тулд «Системийн тохиргоо» → «Нууцлал ба аюулгүй байдал» → «Оролтын хяналт» хэсэгт StockLens-д зөвшөөрөл олгоод, аппыг дахин нээнэ үү.';
+      'Бусад апп дээр ч ажиллуулахын тулд «Системийн тохиргоо» → «Нууцлал ба аюулгүй байдал» → «Оролтын хяналт» хэсэгт WhatStock-д зөвшөөрөл олгоод, аппыг дахин нээнэ үү.';
 
   @override
   String get openSystemSettings => 'Системийн тохиргоог нээх';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens-ийг дуудахын тулд хаанаас ч $shortcut дарах эсвэл Option товчийг хоёр удаа дарна уу.';
+    return 'WhatStock-ийг дуудахын тулд хаанаас ч $shortcut дарах эсвэл Option товчийг хоёр удаа дарна уу.';
   }
 
   @override
@@ -1172,7 +1172,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ажиллаж байх үед сэрэмжлүүлгийг 5 минут тутамд шалгана. Компьютер дээр апп цэсний мөр эсвэл системийн тавиурт үргэлжлүүлэн ажиллана; утсан дээр одоогоор зөвхөн апп нээлттэй үед сэрэмжлүүлэг ирнэ.';
+      'WhatStock ажиллаж байх үед сэрэмжлүүлгийг 5 минут тутамд шалгана. Компьютер дээр апп цэсний мөр эсвэл системийн тавиурт үргэлжлүүлэн ажиллана; утсан дээр одоогоор зөвхөн апп нээлттэй үед сэрэмжлүүлэг ирнэ.';
 
   @override
   String alertDescAbove(String price) {
@@ -1228,7 +1228,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens цэсний мөр эсвэл системийн тавиурт үлдэх тул товчлол болон үнийн сэрэмжлүүлэг үргэлжлэн ажиллана.';
+      'WhatStock цэсний мөр эсвэл системийн тавиурт үлдэх тул товчлол болон үнийн сэрэмжлүүлэг үргэлжлэн ажиллана.';
 
   @override
   String get termsOfUse => 'Үйлчилгээний нөхцөл';

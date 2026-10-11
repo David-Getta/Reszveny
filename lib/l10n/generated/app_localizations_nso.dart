@@ -10,7 +10,7 @@ class AppLocalizationsNso extends AppLocalizations {
   AppLocalizationsNso([String locale = 'nso']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Tšea seswantšho sa šere gomme o ithute tšohle ka yona.';
@@ -438,11 +438,11 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tobetša $shortcut kae le kae go bitša StockLens.';
+    return 'Tobetša $shortcut kae le kae go bitša WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Bula StockLens';
+  String get trayOpen => 'Bula WhatStock';
 
   @override
   String get trayQuickSearch => 'Nyakišišo ya ka pela';
@@ -962,7 +962,7 @@ class AppLocalizationsNso extends AppLocalizations {
       'Ngwadišo ya gago le ditshekatsheko tše di šetšego di a swana sedirišweng se sengwe le se sengwe.';
 
   @override
-  String get signInTitle => 'Tsena go StockLens';
+  String get signInTitle => 'Tsena go WhatStock';
 
   @override
   String get emailLabel => 'Aterese ya imeile';
@@ -1010,18 +1010,18 @@ class AppLocalizationsNso extends AppLocalizations {
   String get doubleOptionTitle => 'Tobetša Option gabedi';
 
   @override
-  String get doubleOptionSubtitle => 'Go tobetša konopo ya Option gabedi ka pela le gona go bitša StockLens.';
+  String get doubleOptionSubtitle => 'Go tobetša konopo ya Option gabedi ka pela le gona go bitša WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Gore e šome le ka di-app tše dingwe, dumelela StockLens go Dipeakanyo tša Sistemo → Sephiri le Tšhireletšo → Tlhokomelo ya Tsenyo, ke moka o bule app gape.';
+      'Gore e šome le ka di-app tše dingwe, dumelela WhatStock go Dipeakanyo tša Sistemo → Sephiri le Tšhireletšo → Tlhokomelo ya Tsenyo, ke moka o bule app gape.';
 
   @override
   String get openSystemSettings => 'Bula Dipeakanyo tša Sistemo';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tobetša $shortcut goba o tobetše Option gabedi kae le kae go bitša StockLens.';
+    return 'Tobetša $shortcut goba o tobetše Option gabedi kae le kae go bitša WhatStock.';
   }
 
   @override
@@ -1181,7 +1181,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ditemošo di lekolwa metsotso ye 5 ye nngwe le ye nngwe ge StockLens e šoma. Khomphutheng e dula e šoma bareng ya menyu goba thereing; mogaleng, ga bjale ditemošo di fihla fela ge app e butšwe.';
+      'Ditemošo di lekolwa metsotso ye 5 ye nngwe le ye nngwe ge WhatStock e šoma. Khomphutheng e dula e šoma bareng ya menyu goba thereing; mogaleng, ga bjale ditemošo di fihla fela ge app e butšwe.';
 
   @override
   String alertDescAbove(String price) {
@@ -1237,7 +1237,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens e dula bareng ya menyu goba thereing, gore tsela ye kopana le ditemošo tša theko di tšwele pele di šoma.';
+      'WhatStock e dula bareng ya menyu goba thereing, gore tsela ye kopana le ditemošo tša theko di tšwele pele di šoma.';
 
   @override
   String get termsOfUse => 'Mabaka a Tšhomišo';

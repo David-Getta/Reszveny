@@ -37,7 +37,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   // ---- Dupla Option-nyomás (csak macOS) ----
 
-  static const _optionChannel = MethodChannel('stocklens/option_key');
+  static const _optionChannel = MethodChannel('whatstock/option_key');
 
   /// A dupla Option-nyomás csak macOS-en érhető el (natív figyelő kell hozzá).
   static bool get supportsDoubleOption => !kIsWeb && Platform.isMacOS;
@@ -49,7 +49,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   bool get doubleOptionEnabled => _doubleOptionEnabled;
 
   /// Igaz, ha más appok használata közben is figyel (megvan a „Bemenetfigyelés”
-  /// engedély); hamis esetén csak a StockLens előtérben lévő ablakában működik.
+  /// engedély); hamis esetén csak a WhatStock előtérben lévő ablakában működik.
   bool get doubleOptionGlobal => _doubleOptionGlobal;
 
   /// Be- vagy kikapcsolás. [askPermission]: engedély híján kérje-e a rendszer

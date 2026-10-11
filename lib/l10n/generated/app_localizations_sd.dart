@@ -10,7 +10,7 @@ class AppLocalizationsSd extends AppLocalizations {
   AppLocalizationsSd([String locale = 'sd']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ڪنهن شيئر جي تصوير ڪڍو ۽ ان بابت سڀ ڪجهه ڄاڻو.';
@@ -431,11 +431,11 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens کي ڪٿان به کولڻ لاءِ $shortcut دٻايو.';
+    return 'WhatStock کي ڪٿان به کولڻ لاءِ $shortcut دٻايو.';
   }
 
   @override
-  String get trayOpen => 'StockLens کوليو';
+  String get trayOpen => 'WhatStock کوليو';
 
   @override
   String get trayQuickSearch => 'تڪڙي ڳولا';
@@ -952,7 +952,7 @@ class AppLocalizationsSd extends AppLocalizations {
   String get accountSyncedNote => 'توهان جي سبسڪرپشن ۽ باقي تجزيا هر ڊوائيس تي ساڳيا آهن.';
 
   @override
-  String get signInTitle => 'StockLens ۾ سائن ان ڪريو';
+  String get signInTitle => 'WhatStock ۾ سائن ان ڪريو';
 
   @override
   String get emailLabel => 'اي ميل پتو';
@@ -1000,18 +1000,18 @@ class AppLocalizationsSd extends AppLocalizations {
   String get doubleOptionTitle => 'Option ٻه ڀيرا دٻايو';
 
   @override
-  String get doubleOptionSubtitle => 'Option بٽڻ کي جلدي ٻه ڀيرا دٻائڻ سان به StockLens کلي ٿو.';
+  String get doubleOptionSubtitle => 'Option بٽڻ کي جلدي ٻه ڀيرا دٻائڻ سان به WhatStock کلي ٿو.';
 
   @override
   String get doubleOptionPermission =>
-      'ٻين ايپس ۾ به ڪم ڪرڻ لاءِ، System Settings → Privacy & Security → Input Monitoring ۾ StockLens کي اجازت ڏيو، پوءِ ايپ ٻيهر کوليو.';
+      'ٻين ايپس ۾ به ڪم ڪرڻ لاءِ، System Settings → Privacy & Security → Input Monitoring ۾ WhatStock کي اجازت ڏيو، پوءِ ايپ ٻيهر کوليو.';
 
   @override
   String get openSystemSettings => 'سسٽم سيٽنگون کوليو';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens کي ڪٿان به کولڻ لاءِ $shortcut دٻايو يا Option ٻه ڀيرا دٻايو.';
+    return 'WhatStock کي ڪٿان به کولڻ لاءِ $shortcut دٻايو يا Option ٻه ڀيرا دٻايو.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'جيستائين StockLens هلي رهي آهي، الرٽ هر 5 منٽن کان پوءِ چيڪ ٿين ٿا. ڪمپيوٽر تي اها مينيو بار يا سسٽم ٽري ۾ هلندي رهي ٿي؛ فون تي في الحال الرٽ تڏهن ئي اچن ٿا جڏهن ايپ کليل هجي.';
+      'جيستائين WhatStock هلي رهي آهي، الرٽ هر 5 منٽن کان پوءِ چيڪ ٿين ٿا. ڪمپيوٽر تي اها مينيو بار يا سسٽم ٽري ۾ هلندي رهي ٿي؛ فون تي في الحال الرٽ تڏهن ئي اچن ٿا جڏهن ايپ کليل هجي.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens مينيو بار يا سسٽم ٽري ۾ رهي ٿي، تنهنڪري شارٽ ڪٽ ۽ قيمت جا الرٽ ڪم ڪندا رهن ٿا.';
+      'WhatStock مينيو بار يا سسٽم ٽري ۾ رهي ٿي، تنهنڪري شارٽ ڪٽ ۽ قيمت جا الرٽ ڪم ڪندا رهن ٿا.';
 
   @override
   String get termsOfUse => 'استعمال جا شرط';

@@ -3,11 +3,11 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shelf/shelf.dart';
-import 'package:stocklens_server/src/api.dart';
-import 'package:stocklens_server/src/db.dart';
-import 'package:stocklens_server/src/mailer.dart';
-import 'package:stocklens_server/src/purchase_verifier.dart';
-import 'package:stocklens_server/src/stripe.dart';
+import 'package:whatstock_server/src/api.dart';
+import 'package:whatstock_server/src/db.dart';
+import 'package:whatstock_server/src/mailer.dart';
+import 'package:whatstock_server/src/purchase_verifier.dart';
+import 'package:whatstock_server/src/stripe.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -40,7 +40,7 @@ void main() {
       secretKey: 'sk_test',
       webhookSecret: 'whsec_test',
       prices: StripeClient.parsePrices(
-        'stocklens.sub.pro=price_pro,stocklens.sub.max=price_max,stocklens.pack.5=price_p5',
+        'whatstock.sub.pro=price_pro,whatstock.sub.max=price_max,whatstock.pack.5=price_p5',
       ),
       client: stripeHttp,
     );
@@ -51,7 +51,7 @@ void main() {
       verifier: const DevVerifier(),
       mailer: mailer,
       stripe: stripe,
-      publicUrl: 'https://api.stocklens.app',
+      publicUrl: 'https://api.whatstock.app',
       client: MockClient((_) async => http.Response('{}', 404)),
     );
   });
@@ -136,19 +136,19 @@ void main() {
         'POST',
         '/v1/billing/checkout',
         token: t,
-        body: {'product_id': 'stocklens.sub.pro'},
+        body: {'product_id': 'whatstock.sub.pro'},
       ))['body']['error'],
       'login_required',
     );
     await login('pay@example.com', token: t);
-    final r = await call('POST', '/v1/billing/checkout', token: t, body: {'product_id': 'stocklens.sub.pro'});
+    final r = await call('POST', '/v1/billing/checkout', token: t, body: {'product_id': 'whatstock.sub.pro'});
     expect(r['body']['url'], 'https://checkout.stripe.com/c/cs_1');
     final form = stripeCalls['/v1/checkout/sessions']!;
     expect(form['mode'], 'subscription');
     expect(form['line_items[0][price]'], 'price_pro');
     expect(form['customer_email'], 'pay@example.com');
-    expect(form['success_url'], 'https://api.stocklens.app/billing/success');
-    final pack = await call('POST', '/v1/billing/checkout', token: t, body: {'product_id': 'stocklens.pack.5'});
+    expect(form['success_url'], 'https://api.whatstock.app/billing/success');
+    final pack = await call('POST', '/v1/billing/checkout', token: t, body: {'product_id': 'whatstock.pack.5'});
     expect(pack['status'], 200);
     expect(stripeCalls['/v1/checkout/sessions']!['mode'], 'payment');
   });
@@ -165,7 +165,7 @@ void main() {
           'client_reference_id': uid,
           'customer': 'cus_1',
           'subscription': 'sub_1',
-          'metadata': {'product_id': 'stocklens.sub.pro'},
+          'metadata': {'product_id': 'whatstock.sub.pro'},
         },
       },
     };
@@ -255,7 +255,7 @@ void main() {
           'client_reference_id': uid,
           'customer': 'cus_1',
           'subscription': 'sub_1',
-          'metadata': {'product_id': 'stocklens.sub.pro'},
+          'metadata': {'product_id': 'whatstock.sub.pro'},
         },
       },
     });
@@ -263,7 +263,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'ios', 'product_id': 'stocklens.pack.5', 'verification_data': 'txn-del'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.pack.5', 'verification_data': 'txn-del'},
     );
     expect(store.entitlement(uid).tier, 'pro');
 
@@ -280,7 +280,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: fresh,
-      body: {'platform': 'ios', 'product_id': 'stocklens.pack.5', 'verification_data': 'txn-del'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.pack.5', 'verification_data': 'txn-del'},
     );
     expect(again['body']['applied'], isFalse);
     // Ugyanazzal az e-maillel újra lehet regisztrálni, de üres fiókkal.
@@ -308,7 +308,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: device,
-      body: {'platform': 'ios', 'product_id': 'stocklens.pack.5', 'verification_data': 'r1'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.pack.5', 'verification_data': 'r1'},
     );
     final r = await login('pack@example.com', token: device);
     expect(r['body']['entitlements']['extra'], 5);

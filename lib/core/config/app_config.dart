@@ -10,7 +10,7 @@
 /// vásárlás-ellenőrzéssel), és a kulcsokra nincs szükség:
 ///
 /// ```
-/// flutter run --dart-define=BACKEND_URL=https://api.stocklens.app
+/// flutter run --dart-define=BACKEND_URL=https://api.whatstock.app
 /// ```
 class AppConfig {
   const AppConfig({
@@ -32,7 +32,7 @@ class AppConfig {
     this.privacyUrlOverride = const String.fromEnvironment('PRIVACY_URL'),
   });
 
-  /// A StockLens backend címe (üres: a kliens közvetlenül, saját kulcsokkal hív).
+  /// A WhatStock backend címe (üres: a kliens közvetlenül, saját kulcsokkal hív).
   final String backendUrl;
 
   final String anthropicApiKey;

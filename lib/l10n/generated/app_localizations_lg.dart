@@ -10,7 +10,7 @@ class AppLocalizationsLg extends AppLocalizations {
   AppLocalizationsLg([String locale = 'lg']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Kuba ekifaananyi ky\'omugabo omanye buli kimu ku gwo.';
@@ -437,11 +437,11 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nyiga $shortcut wonna w\'oli okuyita StockLens.';
+    return 'Nyiga $shortcut wonna w\'oli okuyita WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Ggulawo StockLens';
+  String get trayOpen => 'Ggulawo WhatStock';
 
   @override
   String get trayQuickSearch => 'Okunoonya okw\'amangu';
@@ -960,7 +960,7 @@ class AppLocalizationsLg extends AppLocalizations {
   String get accountSyncedNote => 'Okwewandiisa kwo n\'okwekenneenya okusigaddeyo bye bimu ku buli kyuma.';
 
   @override
-  String get signInTitle => 'Yingira mu StockLens';
+  String get signInTitle => 'Yingira mu WhatStock';
 
   @override
   String get emailLabel => 'Endagiriro ya email';
@@ -1008,18 +1008,18 @@ class AppLocalizationsLg extends AppLocalizations {
   String get doubleOptionTitle => 'Nyiga Option emirundi ebiri';
 
   @override
-  String get doubleOptionSubtitle => 'Okunyiga Option emirundi ebiri amangu nakyo kiyita StockLens.';
+  String get doubleOptionSubtitle => 'Okunyiga Option emirundi ebiri amangu nakyo kiyita WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Okukisobozesa okukola ne mu apps endala, kkiriza StockLens mu System Settings → Privacy & Security → Input Monitoring, olwo oddemu oggulewo app.';
+      'Okukisobozesa okukola ne mu apps endala, kkiriza WhatStock mu System Settings → Privacy & Security → Input Monitoring, olwo oddemu oggulewo app.';
 
   @override
   String get openSystemSettings => 'Ggulawo System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Nyiga $shortcut oba nyiga Option emirundi ebiri wonna w\'oli okuyita StockLens.';
+    return 'Nyiga $shortcut oba nyiga Option emirundi ebiri wonna w\'oli okuyita WhatStock.';
   }
 
   @override
@@ -1178,7 +1178,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Okulabula kukeberebwa buli ddakiika 5 nga StockLens ekola. Ku kompyuta esigala ekola mu menu bar oba tray; ku ssimu, kati okulabula kujja nga app eggule.';
+      'Okulabula kukeberebwa buli ddakiika 5 nga WhatStock ekola. Ku kompyuta esigala ekola mu menu bar oba tray; ku ssimu, kati okulabula kujja nga app eggule.';
 
   @override
   String alertDescAbove(String price) {
@@ -1234,7 +1234,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens esigala mu menu bar oba tray, n\'olwekyo shortcut n\'okulabula ku bbeeyi bisigala nga bikola.';
+      'WhatStock esigala mu menu bar oba tray, n\'olwekyo shortcut n\'okulabula ku bbeeyi bisigala nga bikola.';
 
   @override
   String get termsOfUse => 'Amateeka g\'okukozesa';

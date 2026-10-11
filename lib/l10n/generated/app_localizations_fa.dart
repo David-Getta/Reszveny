@@ -10,7 +10,7 @@ class AppLocalizationsFa extends AppLocalizations {
   AppLocalizationsFa([String locale = 'fa']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
@@ -431,11 +431,11 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'برای فراخوانی StockLens، در هر جایی $shortcut را فشار دهید.';
+    return 'برای فراخوانی WhatStock، در هر جایی $shortcut را فشار دهید.';
   }
 
   @override
-  String get trayOpen => 'باز کردن StockLens';
+  String get trayOpen => 'باز کردن WhatStock';
 
   @override
   String get trayQuickSearch => 'جستجوی سریع';
@@ -950,7 +950,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get accountSyncedNote => 'اشتراک و تحلیل‌های باقی‌مانده شما در همه دستگاه‌ها یکسان است.';
 
   @override
-  String get signInTitle => 'ورود به StockLens';
+  String get signInTitle => 'ورود به WhatStock';
 
   @override
   String get emailLabel => 'نشانی ایمیل';
@@ -998,18 +998,18 @@ class AppLocalizationsFa extends AppLocalizations {
   String get doubleOptionTitle => 'دو بار فشار دادن Option';
 
   @override
-  String get doubleOptionSubtitle => 'دو بار فشار دادن سریع کلید Option نیز StockLens را فرا می‌خواند.';
+  String get doubleOptionSubtitle => 'دو بار فشار دادن سریع کلید Option نیز WhatStock را فرا می‌خواند.';
 
   @override
   String get doubleOptionPermission =>
-      'برای اینکه در برنامه‌های دیگر هم کار کند، در تنظیمات سیستم ← حریم خصوصی و امنیت ← نظارت بر ورودی به StockLens اجازه دهید و سپس برنامه را دوباره باز کنید.';
+      'برای اینکه در برنامه‌های دیگر هم کار کند، در تنظیمات سیستم ← حریم خصوصی و امنیت ← نظارت بر ورودی به WhatStock اجازه دهید و سپس برنامه را دوباره باز کنید.';
 
   @override
   String get openSystemSettings => 'باز کردن تنظیمات سیستم';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'برای فراخوانی StockLens، در هر جایی $shortcut را فشار دهید یا Option را دو بار فشار دهید.';
+    return 'برای فراخوانی WhatStock، در هر جایی $shortcut را فشار دهید یا Option را دو بار فشار دهید.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'هشدارها تا زمانی که StockLens در حال اجراست هر ۵ دقیقه بررسی می‌شوند. روی رایانه، برنامه در نوار منو یا سینی سیستم ادامه می‌دهد؛ روی گوشی فعلاً فقط وقتی برنامه باز است هشدار می‌دهد.';
+      'هشدارها تا زمانی که WhatStock در حال اجراست هر ۵ دقیقه بررسی می‌شوند. روی رایانه، برنامه در نوار منو یا سینی سیستم ادامه می‌دهد؛ روی گوشی فعلاً فقط وقتی برنامه باز است هشدار می‌دهد.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens در نوار منو یا سینی سیستم می‌ماند تا میان‌بر و هشدارهای قیمت همچنان کار کنند.';
+      'WhatStock در نوار منو یا سینی سیستم می‌ماند تا میان‌بر و هشدارهای قیمت همچنان کار کنند.';
 
   @override
   String get termsOfUse => 'شرایط استفاده';

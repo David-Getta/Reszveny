@@ -59,7 +59,7 @@ void main() {
 
   test('a store with subscriptions is used as is', () async {
     const sub = StoreProduct(
-      id: 'stocklens.sub.pro',
+      id: 'whatstock.sub.pro',
       title: 'Pro',
       price: '\$15.99',
       rawPrice: 15.99,
@@ -74,6 +74,6 @@ void main() {
     expect(await s.products(), [sub]);
     expect(s.isDemo, isFalse);
     await s.buy(sub);
-    expect(store.bought, ['stocklens.sub.pro']);
+    expect(store.bought, ['whatstock.sub.pro']);
   });
 }

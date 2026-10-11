@@ -37,25 +37,25 @@ class PlanSpec {
   );
   static const normal = PlanSpec(
     tier: PlanTier.normal,
-    productId: 'stocklens.sub.normal',
+    productId: 'whatstock.sub.normal',
     analysesPerPeriod: 8,
     webSearches: 4,
   );
   static const pro = PlanSpec(
     tier: PlanTier.pro,
-    productId: 'stocklens.sub.pro',
+    productId: 'whatstock.sub.pro',
     analysesPerPeriod: 20,
     webSearches: 6,
   );
   static const max = PlanSpec(
     tier: PlanTier.max,
-    productId: 'stocklens.sub.max',
+    productId: 'whatstock.sub.max',
     analysesPerPeriod: 40,
     webSearches: 8,
   );
   static const ultra = PlanSpec(
     tier: PlanTier.ultra,
-    productId: 'stocklens.sub.ultra',
+    productId: 'whatstock.sub.ultra',
     analysesPerPeriod: 70,
     webSearches: 10,
   );
@@ -89,9 +89,9 @@ class AddOnPack {
   final int analyses;
 
   static const List<AddOnPack> all = [
-    AddOnPack(productId: 'stocklens.pack.5', analyses: 5),
-    AddOnPack(productId: 'stocklens.pack.20', analyses: 20),
-    AddOnPack(productId: 'stocklens.pack.50', analyses: 50),
+    AddOnPack(productId: 'whatstock.pack.5', analyses: 5),
+    AddOnPack(productId: 'whatstock.pack.20', analyses: 20),
+    AddOnPack(productId: 'whatstock.pack.50', analyses: 50),
   ];
 
   static AddOnPack? byProductId(String id) {

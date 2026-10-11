@@ -7,13 +7,13 @@ class Pricing {
   Pricing._();
 
   static const Map<String, double> baseUsd = {
-    'stocklens.sub.normal': 7.99,
-    'stocklens.sub.pro': 15.99,
-    'stocklens.sub.max': 39.99,
-    'stocklens.sub.ultra': 64.99,
-    'stocklens.pack.5': 4.99,
-    'stocklens.pack.20': 17.99,
-    'stocklens.pack.50': 39.99,
+    'whatstock.sub.normal': 7.99,
+    'whatstock.sub.pro': 15.99,
+    'whatstock.sub.max': 39.99,
+    'whatstock.sub.ultra': 64.99,
+    'whatstock.pack.5': 4.99,
+    'whatstock.pack.20': 17.99,
+    'whatstock.pack.50': 39.99,
   };
 
   /// Pénznemek, ahol nincs tizedes (egész összegek, „szép” kerekítéssel).

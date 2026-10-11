@@ -637,7 +637,7 @@ void main() {
     expect(requests.first.url.path, '/v1/analyze');
     // A javítás a kvóta nélküli továbbítón megy, keresés nélkül, sémára kényszerítve.
     expect(requests.last.url.path, '/v1/anthropic/v1/messages');
-    expect(requests.last.headers.containsKey('x-stocklens-depth'), isFalse);
+    expect(requests.last.headers.containsKey('x-whatstock-depth'), isFalse);
     final body = jsonDecode(requests.last.body) as Map<String, dynamic>;
     expect(body.containsKey('tools'), isFalse);
     expect((body['output_config'] as Map)['format'], isNotNull);

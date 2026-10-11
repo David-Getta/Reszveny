@@ -10,7 +10,7 @@ class AppLocalizationsTt extends AppLocalizations {
   AppLocalizationsTt([String locale = 'tt']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Акцияне фотога төшерегез һәм аның турында барысын да белегез.';
@@ -431,11 +431,11 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens кушымтасын чакыру өчен теләсә кайда $shortcut басыгыз.';
+    return 'WhatStock кушымтасын чакыру өчен теләсә кайда $shortcut басыгыз.';
   }
 
   @override
-  String get trayOpen => 'StockLens кушымтасын ачу';
+  String get trayOpen => 'WhatStock кушымтасын ачу';
 
   @override
   String get trayQuickSearch => 'Тиз эзләү';
@@ -951,7 +951,7 @@ class AppLocalizationsTt extends AppLocalizations {
   String get accountSyncedNote => 'Язылуыгыз һәм калган анализларыгыз һәр җайланмада бертөрле.';
 
   @override
-  String get signInTitle => 'StockLens аккаунтына керү';
+  String get signInTitle => 'WhatStock аккаунтына керү';
 
   @override
   String get emailLabel => 'Электрон почта адресы';
@@ -999,18 +999,18 @@ class AppLocalizationsTt extends AppLocalizations {
   String get doubleOptionTitle => 'Option төймәсенә ике тапкыр басу';
 
   @override
-  String get doubleOptionSubtitle => 'Option төймәсенә тиз генә ике тапкыр басу да StockLens кушымтасын чакыра.';
+  String get doubleOptionSubtitle => 'Option төймәсенә тиз генә ике тапкыр басу да WhatStock кушымтасын чакыра.';
 
   @override
   String get doubleOptionPermission =>
-      'Бу башка кушымталарда да эшләсен өчен, «Система көйләүләре» → «Хосусыйлык һәм куркынычсызлык» → «Кертүне күзәтү» бүлегендә StockLens кушымтасына рөхсәт бирегез, аннары кушымтаны яңадан ачыгыз.';
+      'Бу башка кушымталарда да эшләсен өчен, «Система көйләүләре» → «Хосусыйлык һәм куркынычсызлык» → «Кертүне күзәтү» бүлегендә WhatStock кушымтасына рөхсәт бирегез, аннары кушымтаны яңадан ачыгыз.';
 
   @override
   String get openSystemSettings => 'Система көйләүләрен ачу';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens кушымтасын чакыру өчен теләсә кайда $shortcut басыгыз яки Option төймәсенә ике тапкыр басыгыз.';
+    return 'WhatStock кушымтасын чакыру өчен теләсә кайда $shortcut басыгыз яки Option төймәсенә ике тапкыр басыгыз.';
   }
 
   @override
@@ -1168,7 +1168,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens эшләгәндә искәртүләр һәр 5 минут саен тикшерелә. Компьютерда ул меню юлында яки трейда эшләвен дәвам итә; телефонда исә искәртүләр әлегә кушымта ачык булганда гына килә.';
+      'WhatStock эшләгәндә искәртүләр һәр 5 минут саен тикшерелә. Компьютерда ул меню юлында яки трейда эшләвен дәвам итә; телефонда исә искәртүләр әлегә кушымта ачык булганда гына килә.';
 
   @override
   String alertDescAbove(String price) {
@@ -1224,7 +1224,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens меню юлында яки трейда кала, шуңа күрә тиз төймәләр һәм бәя искәртүләре эшләвен дәвам итә.';
+      'WhatStock меню юлында яки трейда кала, шуңа күрә тиз төймәләр һәм бәя искәртүләре эшләвен дәвам итә.';
 
   @override
   String get termsOfUse => 'Куллану шартлары';

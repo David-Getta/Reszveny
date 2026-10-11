@@ -1,4 +1,4 @@
-# StockLens – koncepció és architektúra
+# WhatStock – koncepció és architektúra
 
 > Alapötlet: **lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 > Ez a dokumentum az első, vázlatos leírást bontja ki; a részletes specifikáció később érkezik, és ezt a fájlt kell majd bővíteni.
@@ -41,22 +41,33 @@ Az adatokat a felhasználó devizájában is mutatjuk (pl. HUF átváltás), és
 
 ## 3. Nyelvek
 
-Az app felülete **44 nyelven** érhető el; az **alapértelmezett az angol**. Induláskor a rendszer
+Az app felülete **120 nyelven** érhető el; az **alapértelmezett az angol**. Induláskor a rendszer
 nyelvét választja (ha támogatott), a beállításokban bárki átválthat – a nyelvválasztó minden
-nyelvet a saját nevén mutat. A jobbról balra író nyelveknél (arab, perzsa, urdu) a teljes
-elrendezés tükröződik.
+nyelvet a saját nevén mutat, és kereshető. A jobbról balra író nyelveknél (arab, perzsa, urdu,
+héber, pastu, szindhi, ujgur, szoráni kurd) a teljes elrendezés tükröződik.
+
+A lista a **legtöbbet beszélt nyelvek** (anyanyelvi + második nyelvi beszélők) közül azokat
+tartalmazza, amelyeknek saját írott változata van. A nyelvjárások és a más írott nyelvet használó
+változatok a sztenderd nyelvhez tartoznak (pl. az arab dialektusok → modern standard arab, a kínai
+változatok → kínai, a hindi övezet nyelvei → hindi, kivéve a maithilit és a bhodzspurit). A lista
+vége (2–5 millió beszélő) körül a források számai bizonytalanok; ott az írott használat döntött.
 
 | Csoport | Nyelvek |
 |---|---|
 | Alap | angol |
-| Világnyelvek | mandarin kínai (egyszerűsített), kantoni (hagyományos, Hongkong), hindi, spanyol, francia, arab (modern standard), bengáli, orosz, portugál, urdu, indonéz, német, japán, maráthi, telugu, török, tamil, vietnámi, filippínó (tagalog), koreai, perzsa (fárszi), jávai, hausza, szuahéli |
-| Európa | magyar, olasz, lengyel, ukrán, román, holland, görög, cseh, svéd, katalán, szerb, bolgár, albán, horvát, dán, finn, norvég, szlovák, litván |
+| Világnyelvek (44-ből) | mandarin kínai (egyszerűsített), kantoni (hagyományos, Hongkong), hindi, spanyol, francia, arab (modern standard), bengáli, orosz, portugál, urdu, indonéz, német, japán, maráthi, telugu, török, tamil, vietnámi, filippínó (tagalog), koreai, perzsa (fárszi), jávai, hausza, szuahéli |
+| Új világnyelvek (0.2.15) | pandzsábi (gurmukhi), maláj, nigériai pidzsin, gudzsaráti, thai, kannada, amhara, bhodzspuri, joruba, pastu, üzbég, burmai, malajálam, orija, szundanéz, oromo, maithili, nepáli, szindhi, igbo, azerbajdzsáni, zulu, szebuano, malgas, asszámi, lingala, szomáli, fulfulde, xhosza, khmer, szingaléz, afrikaans, kazah, kinyarvanda, csicseva, sona, bambara, csvana, szotó, haiti kreol, kirundi, volof, akan (twi), luganda, ilokano, tigrinya, ujgur, kurd (kurmandzsi), északi szotó, héber, hiligaynon, tádzsik, kecsua, kikuju, lao, türkmén, eve, guarani, conga, mooré, kurd (szoráni), mongol, kirgiz, tatár, tibeti, kongó, csiluba, kabil |
+| Európa | magyar, olasz, lengyel, ukrán, román, holland, görög, cseh, svéd, katalán, szerb, bolgár, albán, horvát, dán, finn, norvég, szlovák, litván; új: belarusz, grúz, örmény, szlovén, bosnyák, macedón, galíciai, lett |
 
 Megjegyzések:
 - A **wu kínainak** nincs általánosan használt írott formája; a wu nyelvű eszközbeállítás az
   egyszerűsített kínai felületet kapja. A **kantoni** a hongkongi hagyományos írást használja.
-- A **jávai** és a **hausza** nyelvet a Flutter beépített rendszer-szövegei (pl. dátumválasztó)
-  nem ismerik; ott ezek angolul jelennek meg, az app saját szövegei a kívánt nyelven.
+- A Flutter beépített rendszer-szövegei (pl. dátumválasztó) kb. 80 nyelvet ismernek; a többinél
+  (pl. jávai, hausza, joruba, igbo) ezek angolul jelennek meg, az app saját szövegei a kívánt
+  nyelven. A szövegirányt a `SupportedLocales.rtlLanguages` dönti el (a Flutter az ujgurt
+  balról jobbra írná, a szindhit és a szoráni kurdot nem ismeri).
+- Az arab írású pandzsábi és szaraiki beszélők az urdu, az iráni azerbajdzsáni beszélők a
+  perzsa felületet kapják; a héber régi kódja (`iw`) a hébert.
 - A felismerő (Claude) a leírást és a bizonyítékot is a felhasználó nyelvén írja.
 - Számok, pénznemek és dátumok a nyelv szokásai szerint formázódnak (pl. `1 234,50` vs `1,234.50`).
 
@@ -107,7 +118,7 @@ Mobilon ezek a részek automatikusan kimaradnak.
 Rétegek a kódban (`lib/`):
 
 - `features/capture` – kép készítése / kiválasztása (`image_picker`, minden platformon működik).
-- `l10n/` – 44 nyelv ARB-fájljai, nyelvfeloldás, tartalék-delegate a Flutter által nem ismert nyelvekre.
+- `l10n/` – 120 nyelv ARB-fájljai, nyelvfeloldás, tartalék-delegate a Flutter által nem ismert nyelvekre.
 - `features/recognition` – `StockRecognizer` interfész. Megvalósítások:
   - `ClaudeVisionRecognizer` – a képet a Claude API látás-képességével értelmezi, és **strukturált JSON**-t kér vissza (ticker, tőzsde, cégnév, megbízhatóság, mit látott). Minden platformon ugyanúgy működik, papír részvényt, logót és képernyőfotót is felismer.
   - `OcrRecognizer` (tervezett) – on-device szövegfelismerés (ML Kit) mobilon, offline fallbackként; a kiolvasott szövegből a `TickerExtractor` heurisztikával keres tickert/cégnevet.
@@ -129,7 +140,7 @@ flutter run --dart-define=ANTHROPIC_API_KEY=... --dart-define=FINNHUB_API_KEY=..
 Éles kiadásnál a kulcsokat a saját backend (`server/`, Dart + shelf + SQLite) tartja, az app azzal beszél:
 
 ```
-flutter run --dart-define=BACKEND_URL=https://api.stocklens.app
+flutter run --dart-define=BACKEND_URL=https://api.whatstock.app
 ```
 
 Ilyenkor a kliensnek nincs kulcsa: a felismerés és a piaci adat a szerver továbbítóján megy
@@ -145,10 +156,12 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 |---|---|---|
 | 0 | Repó, Flutter váz, mind az 5 platform target, CI, 44 nyelv | ✅ kész |
 | 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
+| 0c | 120 nyelv: a legtöbbet beszélt, saját írott változattal rendelkező nyelvek, kereshető nyelvválasztó, jobbról balra író nyelvek (ujgur, szindhi, szoráni kurd is), lefordított iparág- és országnevek | ✅ kész |
 | 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
 | 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
 | 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
-| 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), StockLens név és logó | ✅ kész |
+| 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), név és logó | ✅ kész |
+| 3b2 | Átnevezés: WhatStock → **WhatStock** (a whatstock.com egy másik részvényelemző szolgáltatás, Kanadában bejegyzett védjeggyel); toldalékok igazítva a toldalékoló nyelvekben (magyar, török, azerbajdzsáni, kazah, türkmén, üzbég, koreai); termékazonosítók `whatstock.*` | ✅ kész (domain és védjegy: tulajdonosi teendő) |
 | 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
 | 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
 | 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
@@ -171,7 +184,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5h | Weboldal: letöltés, árak, minta-elemzések, népszerű részvények oldalai (SEO) | ⬜ |
 | 5i | Első indítás: rövid bemutató, ingyenes minta-elemzés, értékelés-kérés jó élmény után | ⬜ |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
-| 5k | Bolti adatlapok 44 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
+| 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 
 **Nem kód, a tulajdonos intézi:** vállalkozási forma és adószám, könyvelő; Apple Developer (99 USD/év),
 Google Play Console (25 USD), Stripe, Anthropic Console (költéskorláttal), Resend, domain; piaci adat

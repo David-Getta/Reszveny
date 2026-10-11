@@ -10,7 +10,7 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => '拍下一只股票，了解它的一切。';
@@ -427,11 +427,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '在任意位置按 $shortcut 即可呼出 StockLens。';
+    return '在任意位置按 $shortcut 即可呼出 WhatStock。';
   }
 
   @override
-  String get trayOpen => '打开 StockLens';
+  String get trayOpen => '打开 WhatStock';
 
   @override
   String get trayQuickSearch => '快速搜索';
@@ -917,7 +917,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get accountSyncedNote => '你的订阅和剩余分析次数在每台设备上都相同。';
 
   @override
-  String get signInTitle => '登录 StockLens';
+  String get signInTitle => '登录 WhatStock';
 
   @override
   String get emailLabel => '邮箱地址';
@@ -964,17 +964,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get doubleOptionTitle => '连按两下 Option 键';
 
   @override
-  String get doubleOptionSubtitle => '快速连按两下 Option 键也可呼出 StockLens。';
+  String get doubleOptionSubtitle => '快速连按两下 Option 键也可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission => '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 StockLens，然后重新打开本应用。';
+  String get doubleOptionPermission => '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 WhatStock，然后重新打开本应用。';
 
   @override
   String get openSystemSettings => '打开系统设置';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return '在任意位置按 $shortcut 或连按两下 Option 键即可呼出 StockLens。';
+    return '在任意位置按 $shortcut 或连按两下 Option 键即可呼出 WhatStock。';
   }
 
   @override
@@ -1128,7 +1128,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get alertsEmpty => '还没有提醒。打开一只股票并点按铃铛即可设置。';
 
   @override
-  String get alertsNote => 'StockLens 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
+  String get alertsNote => 'WhatStock 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
 
   @override
   String alertDescAbove(String price) {
@@ -1183,7 +1183,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get keepInTrayTitle => '关闭窗口后继续运行';
 
   @override
-  String get keepInTraySubtitle => 'StockLens 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。';
+  String get keepInTraySubtitle => 'WhatStock 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。';
 
   @override
   String get termsOfUse => '使用条款';
@@ -1222,7 +1222,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   AppLocalizationsZhHantHk() : super('zh_Hant_HK');
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => '拍一張股票相片，全面了解該股。';
@@ -1639,11 +1639,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '在任何地方按 $shortcut 即可呼出 StockLens。';
+    return '在任何地方按 $shortcut 即可呼出 WhatStock。';
   }
 
   @override
-  String get trayOpen => '開啟 StockLens';
+  String get trayOpen => '開啟 WhatStock';
 
   @override
   String get trayQuickSearch => '快速搜尋';
@@ -2129,7 +2129,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get accountSyncedNote => '你的訂閱及剩餘分析次數在每部裝置上都相同。';
 
   @override
-  String get signInTitle => '登入 StockLens';
+  String get signInTitle => '登入 WhatStock';
 
   @override
   String get emailLabel => '電郵地址';
@@ -2176,17 +2176,17 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get doubleOptionTitle => '連按兩下 Option 鍵';
 
   @override
-  String get doubleOptionSubtitle => '快速連按兩下 Option 鍵亦可呼出 StockLens。';
+  String get doubleOptionSubtitle => '快速連按兩下 Option 鍵亦可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission => '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 StockLens，然後重新開啟此 App。';
+  String get doubleOptionPermission => '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 WhatStock，然後重新開啟此 App。';
 
   @override
   String get openSystemSettings => '開啟系統設定';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return '在任何地方按 $shortcut 或連按兩下 Option 鍵即可呼出 StockLens。';
+    return '在任何地方按 $shortcut 或連按兩下 Option 鍵即可呼出 WhatStock。';
   }
 
   @override
@@ -2340,7 +2340,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get alertsEmpty => '暫時未有提示。打開一隻股票並點一下鈴鐺即可設定。';
 
   @override
-  String get alertsNote => 'StockLens 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
+  String get alertsNote => 'WhatStock 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
 
   @override
   String alertDescAbove(String price) {
@@ -2395,7 +2395,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get keepInTrayTitle => '關閉視窗後繼續運行';
 
   @override
-  String get keepInTraySubtitle => 'StockLens 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。';
+  String get keepInTraySubtitle => 'WhatStock 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。';
 
   @override
   String get termsOfUse => '使用條款';

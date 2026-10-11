@@ -10,7 +10,7 @@ class AppLocalizationsOm extends AppLocalizations {
   AppLocalizationsOm([String locale = 'om']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Suuraa aksiyoonaa kaasi, waa\'ee isaa waan hunda baradhu.';
@@ -434,11 +434,11 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens waamuuf iddoo kamittuu $shortcut dhiibi.';
+    return 'WhatStock waamuuf iddoo kamittuu $shortcut dhiibi.';
   }
 
   @override
-  String get trayOpen => 'StockLens bani';
+  String get trayOpen => 'WhatStock bani';
 
   @override
   String get trayQuickSearch => 'Barbaacha ariifataa';
@@ -955,7 +955,7 @@ class AppLocalizationsOm extends AppLocalizations {
   String get accountSyncedNote => 'Miseensummaan kee fi xiinxalli siif hafe meeshaa hunda irratti tokkuma.';
 
   @override
-  String get signInTitle => 'StockLens seeni';
+  String get signInTitle => 'WhatStock seeni';
 
   @override
   String get emailLabel => 'Teessoo imeelii';
@@ -1005,18 +1005,18 @@ class AppLocalizationsOm extends AppLocalizations {
   String get doubleOptionTitle => 'Option si\'a lama dhiibi';
 
   @override
-  String get doubleOptionSubtitle => 'Furtuu Option si\'a lama saffisaan dhiibuunis StockLens ni waama.';
+  String get doubleOptionSubtitle => 'Furtuu Option si\'a lama saffisaan dhiibuunis WhatStock ni waama.';
 
   @override
   String get doubleOptionPermission =>
-      'Appota biroo keessattis akka hojjetuuf, System Settings → Privacy & Security → Input Monitoring jalatti StockLens hayyami, sana booda appicha irra deebi\'ii bani.';
+      'Appota biroo keessattis akka hojjetuuf, System Settings → Privacy & Security → Input Monitoring jalatti WhatStock hayyami, sana booda appicha irra deebi\'ii bani.';
 
   @override
   String get openSystemSettings => 'Qindaa\'ina sirnaa bani';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens waamuuf iddoo kamittuu $shortcut dhiibi ykn Option si\'a lama dhiibi.';
+    return 'WhatStock waamuuf iddoo kamittuu $shortcut dhiibi ykn Option si\'a lama dhiibi.';
   }
 
   @override
@@ -1175,7 +1175,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Yeroo StockLens hojjetu, akeekkachiisni daqiiqaa 5 hunda ni ilaalama. Kompiitara irratti baara meenuu ykn tireey keessatti hojjechuu itti fufa; bilbila irratti garuu, ammaaf akeekkachiisni kan dhufu yeroo appiin banaa ta\'e qofa.';
+      'Yeroo WhatStock hojjetu, akeekkachiisni daqiiqaa 5 hunda ni ilaalama. Kompiitara irratti baara meenuu ykn tireey keessatti hojjechuu itti fufa; bilbila irratti garuu, ammaaf akeekkachiisni kan dhufu yeroo appiin banaa ta\'e qofa.';
 
   @override
   String alertDescAbove(String price) {
@@ -1231,7 +1231,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens baara meenuu ykn tireey keessa tura, kanaaf furtuun gabaabaa fi akeekkachiisni gatii hojjechuu itti fufu.';
+      'WhatStock baara meenuu ykn tireey keessa tura, kanaaf furtuun gabaabaa fi akeekkachiisni gatii hojjechuu itti fufu.';
 
   @override
   String get termsOfUse => 'Haalota Itti Fayyadamaa';

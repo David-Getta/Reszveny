@@ -10,7 +10,7 @@ class AppLocalizationsSi extends AppLocalizations {
   AppLocalizationsSi([String locale = 'si']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'කොටසක ඡායාරූපයක් ගෙන ඒ ගැන සියල්ල දැනගන්න.';
@@ -438,11 +438,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'ඕනෑම තැනක සිට StockLens කැඳවීමට $shortcut ඔබන්න.';
+    return 'ඕනෑම තැනක සිට WhatStock කැඳවීමට $shortcut ඔබන්න.';
   }
 
   @override
-  String get trayOpen => 'StockLens විවෘත කරන්න';
+  String get trayOpen => 'WhatStock විවෘත කරන්න';
 
   @override
   String get trayQuickSearch => 'ඉක්මන් සෙවීම';
@@ -958,7 +958,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get accountSyncedNote => 'ඔබේ දායකත්වය සහ ඉතිරි විශ්ලේෂණ සෑම උපාංගයකම සමානයි.';
 
   @override
-  String get signInTitle => 'StockLens වෙත පුරන්න';
+  String get signInTitle => 'WhatStock වෙත පුරන්න';
 
   @override
   String get emailLabel => 'ඊමේල් ලිපිනය';
@@ -1007,18 +1007,18 @@ class AppLocalizationsSi extends AppLocalizations {
   String get doubleOptionTitle => 'Option දෙවරක් ඔබන්න';
 
   @override
-  String get doubleOptionSubtitle => 'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද StockLens කැඳවිය හැක.';
+  String get doubleOptionSubtitle => 'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද WhatStock කැඳවිය හැක.';
 
   @override
   String get doubleOptionPermission =>
-      'අනෙක් යෙදුම්වලද මෙය ක්‍රියා කිරීමට, System Settings → Privacy & Security → Input Monitoring යටතේ StockLens වෙත අවසර දී, පසුව යෙදුම නැවත විවෘත කරන්න.';
+      'අනෙක් යෙදුම්වලද මෙය ක්‍රියා කිරීමට, System Settings → Privacy & Security → Input Monitoring යටතේ WhatStock වෙත අවසර දී, පසුව යෙදුම නැවත විවෘත කරන්න.';
 
   @override
   String get openSystemSettings => 'පද්ධති සැකසීම් විවෘත කරන්න';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'ඕනෑම තැනක සිට StockLens කැඳවීමට $shortcut ඔබන්න හෝ Option දෙවරක් ඔබන්න.';
+    return 'ඕනෑම තැනක සිට WhatStock කැඳවීමට $shortcut ඔබන්න හෝ Option දෙවරක් ඔබන්න.';
   }
 
   @override
@@ -1176,7 +1176,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ක්‍රියාත්මක වන අතරතුර සෑම මිනිත්තු 5කට වරක් ඇඟවීම් පරීක්ෂා කෙරේ. පරිගණකයක එය මෙනු තීරුවේ හෝ පද්ධති තැටියේ දිගටම ක්‍රියා කරයි; දුරකථනයක දැනට ඇඟවීම් ලැබෙන්නේ යෙදුම විවෘතව ඇති විට පමණි.';
+      'WhatStock ක්‍රියාත්මක වන අතරතුර සෑම මිනිත්තු 5කට වරක් ඇඟවීම් පරීක්ෂා කෙරේ. පරිගණකයක එය මෙනු තීරුවේ හෝ පද්ධති තැටියේ දිගටම ක්‍රියා කරයි; දුරකථනයක දැනට ඇඟවීම් ලැබෙන්නේ යෙදුම විවෘතව ඇති විට පමණි.';
 
   @override
   String alertDescAbove(String price) {
@@ -1232,7 +1232,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens මෙනු තීරුවේ හෝ පද්ධති තැටියේ රැඳී සිටින නිසා කෙටිමඟ සහ මිල ඇඟවීම් දිගටම ක්‍රියා කරයි.';
+      'WhatStock මෙනු තීරුවේ හෝ පද්ධති තැටියේ රැඳී සිටින නිසා කෙටිමඟ සහ මිල ඇඟවීම් දිගටම ක්‍රියා කරයි.';
 
   @override
   String get termsOfUse => 'භාවිත නියම';

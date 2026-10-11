@@ -10,7 +10,7 @@ class AppLocalizationsSw extends AppLocalizations {
   AppLocalizationsSw([String locale = 'sw']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Piga picha ya hisa na ujifunze kila kitu kuihusu.';
@@ -432,11 +432,11 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Bonyeza $shortcut mahali popote kuita StockLens.';
+    return 'Bonyeza $shortcut mahali popote kuita WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Fungua StockLens';
+  String get trayOpen => 'Fungua WhatStock';
 
   @override
   String get trayQuickSearch => 'Utafutaji wa haraka';
@@ -953,7 +953,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get accountSyncedNote => 'Usajili wako na uchambuzi uliobaki ni sawa kwenye kila kifaa.';
 
   @override
-  String get signInTitle => 'Ingia kwenye StockLens';
+  String get signInTitle => 'Ingia kwenye WhatStock';
 
   @override
   String get emailLabel => 'Anwani ya barua pepe';
@@ -1001,18 +1001,18 @@ class AppLocalizationsSw extends AppLocalizations {
   String get doubleOptionTitle => 'Bonyeza Option mara mbili';
 
   @override
-  String get doubleOptionSubtitle => 'Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita StockLens.';
+  String get doubleOptionSubtitle => 'Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Ili ifanye kazi pia katika programu nyingine, ruhusu StockLens katika Mipangilio ya Mfumo → Faragha na Usalama → Ufuatiliaji wa Ingizo, kisha fungua programu tena.';
+      'Ili ifanye kazi pia katika programu nyingine, ruhusu WhatStock katika Mipangilio ya Mfumo → Faragha na Usalama → Ufuatiliaji wa Ingizo, kisha fungua programu tena.';
 
   @override
   String get openSystemSettings => 'Fungua Mipangilio ya Mfumo';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Bonyeza $shortcut au bonyeza Option mara mbili mahali popote kuita StockLens.';
+    return 'Bonyeza $shortcut au bonyeza Option mara mbili mahali popote kuita WhatStock.';
   }
 
   @override
@@ -1170,7 +1170,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Arifa hukaguliwa kila dakika 5 wakati StockLens inaendeshwa. Kwenye kompyuta programu huendelea kwenye upau wa menyu au trei ya mfumo; kwenye simu, kwa sasa arifa huja tu programu ikiwa wazi.';
+      'Arifa hukaguliwa kila dakika 5 wakati WhatStock inaendeshwa. Kwenye kompyuta programu huendelea kwenye upau wa menyu au trei ya mfumo; kwenye simu, kwa sasa arifa huja tu programu ikiwa wazi.';
 
   @override
   String alertDescAbove(String price) {
@@ -1226,7 +1226,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens hubaki kwenye upau wa menyu au trei ya mfumo, hivyo njia ya mkato na arifa za bei huendelea kufanya kazi.';
+      'WhatStock hubaki kwenye upau wa menyu au trei ya mfumo, hivyo njia ya mkato na arifa za bei huendelea kufanya kazi.';
 
   @override
   String get termsOfUse => 'Masharti ya Matumizi';

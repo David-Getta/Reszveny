@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "StockLens",
+  "appTitle": "WhatStock",
   "homeTagline": "Photograph a stock and learn everything about it.",
   "homeHint": "A share certificate, a brokerage app screen, a newspaper or a company logo – anything that identifies a stock.",
   "takePhoto": "Take a photo",
@@ -227,7 +227,7 @@
   },
   "quickBarHint": "Type a ticker or company name…",
   "openFullWindow": "Open window",
-  "hotkeyHint": "Press {shortcut} anywhere to summon StockLens.",
+  "hotkeyHint": "Press {shortcut} anywhere to summon WhatStock.",
   "@hotkeyHint": {
     "placeholders": {
       "shortcut": {
@@ -235,7 +235,7 @@
       }
     }
   },
-  "trayOpen": "Open StockLens",
+  "trayOpen": "Open WhatStock",
   "trayQuickSearch": "Quick search",
   "trayQuit": "Quit",
   "appearance": "Appearance",
@@ -552,7 +552,7 @@
   "notSignedIn": "Not signed in",
   "accountBenefit": "Sign in so your subscription works on all your devices.",
   "accountSyncedNote": "Your subscription and remaining analyses are the same on every device.",
-  "signInTitle": "Sign in to StockLens",
+  "signInTitle": "Sign in to WhatStock",
   "emailLabel": "Email address",
   "continueWithEmail": "Continue with email",
   "codeSentTo": "We sent a 6-digit code to {email}. It is valid for 10 minutes.",
@@ -577,10 +577,10 @@
     "description": "Name of the space bar key, as printed in keyboard shortcuts."
   },
   "doubleOptionTitle": "Double-press Option",
-  "doubleOptionSubtitle": "Pressing the Option key twice quickly also summons StockLens.",
-  "doubleOptionPermission": "To make it work in other apps too, allow StockLens under System Settings → Privacy & Security → Input Monitoring, then reopen the app.",
+  "doubleOptionSubtitle": "Pressing the Option key twice quickly also summons WhatStock.",
+  "doubleOptionPermission": "To make it work in other apps too, allow WhatStock under System Settings → Privacy & Security → Input Monitoring, then reopen the app.",
   "openSystemSettings": "Open System Settings",
-  "hotkeyHintDoubleOption": "Press {shortcut} or double-press Option anywhere to summon StockLens.",
+  "hotkeyHintDoubleOption": "Press {shortcut} or double-press Option anywhere to summon WhatStock.",
   "@hotkeyHintDoubleOption": {
     "placeholders": {
       "shortcut": {
@@ -711,7 +711,7 @@
     }
   },
   "alertsEmpty": "No price alerts yet. Open a stock and tap the bell to set one.",
-  "alertsNote": "Alerts are checked every 5 minutes while StockLens is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.",
+  "alertsNote": "Alerts are checked every 5 minutes while WhatStock is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.",
   "alertDescAbove": "Above {price}",
   "@alertDescAbove": {
     "placeholders": {
@@ -793,7 +793,7 @@
   },
   "alertOpen": "Open",
   "keepInTrayTitle": "Keep running when the window is closed",
-  "keepInTraySubtitle": "StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.",
+  "keepInTraySubtitle": "WhatStock stays in the menu bar or tray, so the hotkey and price alerts keep working.",
   "termsOfUse": "Terms of Use",
   "privacyPolicy": "Privacy Policy",
   "subscriptionLegal": "Subscriptions renew automatically every month until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.",

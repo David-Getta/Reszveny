@@ -10,7 +10,7 @@ class AppLocalizationsBo extends AppLocalizations {
   AppLocalizationsBo([String locale = 'bo']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ཧུར་ཁག་ཅིག་གི་པར་བླངས་ནས་དེའི་སྐོར་ཚང་མ་ཤེས་རྟོགས་གནང་།';
@@ -433,11 +433,11 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens འབོད་པར་གནས་གང་དུ་ཡང་ $shortcut མནན།';
+    return 'WhatStock འབོད་པར་གནས་གང་དུ་ཡང་ $shortcut མནན།';
   }
 
   @override
-  String get trayOpen => 'StockLens ཁ་ཕྱེ';
+  String get trayOpen => 'WhatStock ཁ་ཕྱེ';
 
   @override
   String get trayQuickSearch => 'མྱུར་འཚོལ';
@@ -932,7 +932,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get accountSyncedNote => 'ཁྱེད་ཀྱི་མཁོ་ཉོ་དང་ལྷག་མའི་དབྱེ་ཞིབ་སྒྲིག་ཆས་ཚང་མའི་ཐོག་གཅིག་མཚུངས་ཡིན།';
 
   @override
-  String get signInTitle => 'StockLens ལ་ནང་འཛུལ';
+  String get signInTitle => 'WhatStock ལ་ནང་འཛུལ';
 
   @override
   String get emailLabel => 'གློག་འཕྲིན་ཁ་བྱང';
@@ -981,18 +981,18 @@ class AppLocalizationsBo extends AppLocalizations {
   String get doubleOptionTitle => 'Option ཐེངས་གཉིས་མནན';
 
   @override
-  String get doubleOptionSubtitle => 'Option མཐེབ་མགྱོགས་པོར་ཐེངས་གཉིས་མནན་ནའང་ StockLens འབོད་ཐུབ།';
+  String get doubleOptionSubtitle => 'Option མཐེབ་མགྱོགས་པོར་ཐེངས་གཉིས་མནན་ནའང་ WhatStock འབོད་ཐུབ།';
 
   @override
   String get doubleOptionPermission =>
-      'ཉེར་སྤྱོད་གཞན་དག་ནང་ཡང་སྤྱོད་ཐུབ་ཆེད། མ་ལག་སྒྲིག་འགོད → སྒེར་གསང་དང་བདེ་འཇགས → ནང་འཇུག་ལྟ་ཞིབ་ནང་ StockLens ལ་ཆོག་མཆན་སྤྲོད་རྗེས་ཉེར་སྤྱོད་བསྐྱར་དུ་ཁ་ཕྱེ་རོགས།';
+      'ཉེར་སྤྱོད་གཞན་དག་ནང་ཡང་སྤྱོད་ཐུབ་ཆེད། མ་ལག་སྒྲིག་འགོད → སྒེར་གསང་དང་བདེ་འཇགས → ནང་འཇུག་ལྟ་ཞིབ་ནང་ WhatStock ལ་ཆོག་མཆན་སྤྲོད་རྗེས་ཉེར་སྤྱོད་བསྐྱར་དུ་ཁ་ཕྱེ་རོགས།';
 
   @override
   String get openSystemSettings => 'མ་ལག་སྒྲིག་འགོད་ཁ་ཕྱེ';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens འབོད་པར་གནས་གང་དུ་ཡང་ $shortcut མནན་པའམ་ Option ཐེངས་གཉིས་མནན།';
+    return 'WhatStock འབོད་པར་གནས་གང་དུ་ཡང་ $shortcut མནན་པའམ་ Option ཐེངས་གཉིས་མནན།';
   }
 
   @override
@@ -1150,7 +1150,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens འཁོར་བཞིན་པའི་སྐབས་ཉེན་བརྡ་རྣམས་སྐར་མ་ 5 རེར་ཞིབ་བཤེར་བྱེད། རྩིས་འཁོར་ཐོག་དེ་འདེམས་ཐོ་ཕྲེང་ངམ་མ་ལག་སྡེར་མའི་ནང་མུ་མཐུད་འཁོར། ཁ་པར་ཐོག་ད་ལྟ་ཉེར་སྤྱོད་ཁ་ཕྱེ་ཡོད་སྐབས་ཁོ་ནར་ཉེན་བརྡ་ཡོང་།';
+      'WhatStock འཁོར་བཞིན་པའི་སྐབས་ཉེན་བརྡ་རྣམས་སྐར་མ་ 5 རེར་ཞིབ་བཤེར་བྱེད། རྩིས་འཁོར་ཐོག་དེ་འདེམས་ཐོ་ཕྲེང་ངམ་མ་ལག་སྡེར་མའི་ནང་མུ་མཐུད་འཁོར། ཁ་པར་ཐོག་ད་ལྟ་ཉེར་སྤྱོད་ཁ་ཕྱེ་ཡོད་སྐབས་ཁོ་ནར་ཉེན་བརྡ་ཡོང་།';
 
   @override
   String alertDescAbove(String price) {
@@ -1206,7 +1206,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens འདེམས་ཐོ་ཕྲེང་ངམ་མ་ལག་སྡེར་མའི་ནང་སྡོད་པས། མྱུར་མཐེབ་དང་གོང་ཚད་ཉེན་བརྡ་མུ་མཐུད་སྤྱོད་ཐུབ།';
+      'WhatStock འདེམས་ཐོ་ཕྲེང་ངམ་མ་ལག་སྡེར་མའི་ནང་སྡོད་པས། མྱུར་མཐེབ་དང་གོང་ཚད་ཉེན་བརྡ་མུ་མཐུད་སྤྱོད་ཐུབ།';
 
   @override
   String get termsOfUse => 'བེད་སྤྱོད་ཆ་རྐྱེན';
