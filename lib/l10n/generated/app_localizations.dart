@@ -2513,6 +2513,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Trial analyses are brief and made with a faster AI model. With a plan you get our most capable AI, more web research, and the Standard and In-depth lengths.'**
   String get aiTrialBriefNote;
+
+  /// No description provided for @billingMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get billingMonthly;
+
+  /// No description provided for @billingYearly.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get billingYearly;
+
+  /// Badge next to Yearly in the billing period switch: yearly costs 10 months' price.
+  ///
+  /// In en, this message translates to:
+  /// **'2 months free'**
+  String get yearlyDiscount;
+
+  /// No description provided for @perYear.
+  ///
+  /// In en, this message translates to:
+  /// **'/ year'**
+  String get perYear;
+
+  /// Under a yearly price: the per-month equivalent.
+  ///
+  /// In en, this message translates to:
+  /// **'≈ {price} per month'**
+  String pricePerMonthApprox(String price);
+
+  /// Under the plans when the Yearly billing period is selected (yearly counterpart of subscriptionLegal; required by the App Store).
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly subscriptions renew automatically every year until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.'**
+  String get subscriptionLegalYearly;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

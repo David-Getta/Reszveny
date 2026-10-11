@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Embogue opa árape g̃uarã",
   "accountDeleted": "Ne mbaʼete oñembogue.",
   "errDeleteAccount": "Ndaikatúi oñembogue mbaʼete. Ehecha ne ñanduti ha ehaʼã jey.",
-  "aiTrialBriefNote": "Umi jehesaʼỹijo ñehaʼãme mbykymi ha ojejapo peteĩ AI modelo pyaʼevévape. Plan reheve rehupyty ore AI ipokatuvéva, hetave jeheka ñandutípe ha pukukue Mbytegua ha Pypuku."
+  "aiTrialBriefNote": "Umi jehesaʼỹijo ñehaʼãme mbykymi ha ojejapo peteĩ AI modelo pyaʼevévape. Plan reheve rehupyty ore AI ipokatuvéva, hetave jeheka ñandutípe ha pukukue Mbytegua ha Pypuku.",
+  "billingMonthly": "Jasykue",
+  "billingYearly": "Arykue",
+  "yearlyDiscount": "2 jasy rei",
+  "perYear": "/ ary",
+  "pricePerMonthApprox": "≈ {price} jasy ñavõ",
+  "subscriptionLegalYearly": "Ñemboheraguapy oñembopyahu ijeheguiete ary ñavõ ejoko peve. Eñemboheraguapývo, emoneĩ Jeporurã reko ha Temiñemi porureko."
 }

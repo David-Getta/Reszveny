@@ -1258,4 +1258,25 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ट्रायलक विश्लेषण संक्षिप्त होइत अछि आ तेज AI मॉडलसँ बनैत अछि। प्लानक संग अहाँकेँ हमर सभसँ सक्षम AI, बेसी वेब खोज तथा मानक आ विस्तृत लंबाई भेटत।';
+
+  @override
+  String get billingMonthly => 'मासिक';
+
+  @override
+  String get billingYearly => 'वार्षिक';
+
+  @override
+  String get yearlyDiscount => '2 मास निःशुल्क';
+
+  @override
+  String get perYear => '/ वर्ष';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price प्रति मास';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'वार्षिक सदस्यता हर बरख स्वतः नवीकृत होइत अछि, जाधरि अहाँ ओकरा रद्द नहि करब। सदस्यता लैत अहाँ उपयोगक शर्त आ गोपनीयता नीति स्वीकार करैत छी।';
 }

@@ -1267,4 +1267,25 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Falanqaynta tijaabadu waa kooban, waxaana lagu sameeyaa nooc AI ah oo degdeg ah. Qorshe ayaad ku helaysaa AI-gayaga ugu awoodda badan, raadin web oo badan, iyo dhererka Caadi iyo Qoto dheer.';
+
+  @override
+  String get billingMonthly => 'Bishii';
+
+  @override
+  String get billingYearly => 'Sannadkii';
+
+  @override
+  String get yearlyDiscount => '2 bilood oo bilaash ah';
+
+  @override
+  String get perYear => '/ sannadkii';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price bishii';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Rukummooyinka sannadlaha ah si toos ah ayay u cusboonaadaan sannad kasta ilaa aad joojiso. Markaad rukunto waxaad aqbashaa Shuruudaha Isticmaalka iyo Siyaasadda Qarsoodiga.';
 }

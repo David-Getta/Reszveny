@@ -1261,4 +1261,25 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Deneme analizleri kısadır ve daha hızlı bir yapay zekâ modeliyle hazırlanır. Bir planla en yetenekli yapay zekâmızı, daha fazla web araştırmasını ve Standart ile Ayrıntılı uzunlukları elde edersiniz.';
+
+  @override
+  String get billingMonthly => 'Aylık';
+
+  @override
+  String get billingYearly => 'Yıllık';
+
+  @override
+  String get yearlyDiscount => '2 ay ücretsiz';
+
+  @override
+  String get perYear => '/ yıl';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Ayda ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Yıllık abonelik, iptal edene kadar her yıl otomatik olarak yenilenir. Abone olarak Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul etmiş olursunuz.';
 }

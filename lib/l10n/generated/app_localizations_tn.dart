@@ -1280,4 +1280,25 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ditshekatsheko tsa teko di khutshwe e bile di dirwa ka mofuta wa AI o o bonako. Ka leano o bona AI ya rona e e nonofileng go gaisa, dipatlo tse dintsi tsa inthanete, le boleele jwa Magareng le E e tseneletseng.';
+
+  @override
+  String get billingMonthly => 'Ka kgwedi';
+
+  @override
+  String get billingYearly => 'Ka ngwaga';
+
+  @override
+  String get yearlyDiscount => 'Dikgwedi di le 2 mahala';
+
+  @override
+  String get perYear => '/ ngwaga';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ka kgwedi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ikwadisetso ya ngwaga e ntšhwafala ka boiketsetso ngwaga le ngwaga go fitlha o e khansela. Ka go ikwadisa o amogela Melawana ya Tiriso le Pholisi ya Sephiri.';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Natrvalo odstrániť",
   "accountDeleted": "Váš účet bol odstránený.",
   "errDeleteAccount": "Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.",
-  "aiTrialBriefNote": "Skúšobné analýzy sú stručné a vytvára ich rýchlejší model AI. S tarifom získate náš najvýkonnejší model AI, viac vyhľadávaní na webe a štandardnú aj podrobnú dĺžku."
+  "aiTrialBriefNote": "Skúšobné analýzy sú stručné a vytvára ich rýchlejší model AI. S tarifom získate náš najvýkonnejší model AI, viac vyhľadávaní na webe a štandardnú aj podrobnú dĺžku.",
+  "billingMonthly": "Mesačne",
+  "billingYearly": "Ročne",
+  "yearlyDiscount": "2 mesiace zadarmo",
+  "perYear": "/ rok",
+  "pricePerMonthApprox": "≈ {price} mesačne",
+  "subscriptionLegalYearly": "Ročné predplatné sa každý rok automaticky obnovuje, kým ho nezrušíte. Predplatením súhlasíte s Podmienkami používania a Zásadami ochrany osobných údajov."
 }

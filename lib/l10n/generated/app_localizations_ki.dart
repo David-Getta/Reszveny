@@ -1266,4 +1266,25 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Mathuthuria ma kũgeria nĩ makuhĩ na mathondekagwo na AI model ya ihenya makĩria. Na mũbango, nĩ ũkũgĩa na AI iitũ njega makĩria, ũcaria mũingĩ wa internet, na ũraihu wa Wa gatagatĩ na Mũriku.';
+
+  @override
+  String get billingMonthly => 'O mweri';
+
+  @override
+  String get billingYearly => 'O mwaka';
+
+  @override
+  String get yearlyDiscount => 'Mĩeri 2 ya tũhũ';
+
+  @override
+  String get perYear => '/ mwaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price o mweri';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ũiyandĩkithio wa mwaka werũhagio o ũguo o mwaka nginya ũũtige. Na gwĩyandĩkithia, nĩwetĩkĩra Mawatho ma Ũhũthĩri na Mawatho ma Kũgitĩra Ũhoro Waku.';
 }

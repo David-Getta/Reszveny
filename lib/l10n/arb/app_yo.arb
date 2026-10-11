@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Pa á rẹ́ pátápátá",
   "accountDeleted": "A ti pa àkáǹtì rẹ rẹ́.",
   "errDeleteAccount": "A kò lè pa àkáǹtì náà rẹ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.",
-  "aiTrialBriefNote": "Àwọn ìtúpalẹ̀ ìdánwò jẹ́ ṣókí, a sì ń fi àwòṣe AI tó yára jù ṣe wọ́n. Pẹ̀lú ìpele kan, o máa rí AI wa tó lágbára jùlọ, ìwádìí wẹ́ẹ̀bù púpọ̀ sí i, àti gígùn Àgbedeméjì àti Jinlẹ̀."
+  "aiTrialBriefNote": "Àwọn ìtúpalẹ̀ ìdánwò jẹ́ ṣókí, a sì ń fi àwòṣe AI tó yára jù ṣe wọ́n. Pẹ̀lú ìpele kan, o máa rí AI wa tó lágbára jùlọ, ìwádìí wẹ́ẹ̀bù púpọ̀ sí i, àti gígùn Àgbedeméjì àti Jinlẹ̀.",
+  "billingMonthly": "Lóṣooṣù",
+  "billingYearly": "Lọ́dọọdún",
+  "yearlyDiscount": "Oṣù 2 lọ́fẹ̀ẹ́",
+  "perYear": "/ ọdún",
+  "pricePerMonthApprox": "≈ {price} lóṣù",
+  "subscriptionLegalYearly": "Àsansílẹ̀ ọdọọdún máa ń sọ ara rẹ̀ dọ̀tun láìfọwọ́yí lọ́dọọdún títí tí o fi fagilé e. Nípa ṣíṣe àsansílẹ̀, o gba Òfin Ìlò àti Ìlànà Ìpamọ́."
 }

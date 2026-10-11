@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Hemişelik poz",
   "accountDeleted": "Hasabyňyz pozuldy.",
   "errDeleteAccount": "Hasaby pozup bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.",
-  "aiTrialBriefNote": "Synag seljermeleri gysga bolýar we has çalt AI modeli bilen taýýarlanýar. Tarif bilen iň ukyply AI-ymyzy, has köp web gözlegini hem-de Standart we Jikme-jik uzynlyklary alýarsyňyz."
+  "aiTrialBriefNote": "Synag seljermeleri gysga bolýar we has çalt AI modeli bilen taýýarlanýar. Tarif bilen iň ukyply AI-ymyzy, has köp web gözlegini hem-de Standart we Jikme-jik uzynlyklary alýarsyňyz.",
+  "billingMonthly": "Aýlyk",
+  "billingYearly": "Ýyllyk",
+  "yearlyDiscount": "2 aý mugt",
+  "perYear": "/ ýyl",
+  "pricePerMonthApprox": "Aýda ≈ {price}",
+  "subscriptionLegalYearly": "Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz."
 }

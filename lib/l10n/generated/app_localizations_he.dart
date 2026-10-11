@@ -1272,4 +1272,25 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ניתוחי הניסיון קצרים ומופקים במודל AI מהיר יותר. עם מסלול תקבלו את ה-AI החזק ביותר שלנו, יותר חיפושים ברשת ואת האורכים רגיל ומעמיק.';
+
+  @override
+  String get billingMonthly => 'חודשי';
+
+  @override
+  String get billingYearly => 'שנתי';
+
+  @override
+  String get yearlyDiscount => '2 חודשים חינם';
+
+  @override
+  String get perYear => '/ שנה';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price לחודש';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'המינוי השנתי מתחדש אוטומטית מדי שנה עד שמבטלים אותו. ההצטרפות למינוי מהווה הסכמה לתנאי השימוש ולמדיניות הפרטיות.';
 }

@@ -1265,4 +1265,25 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analizat e provës janë të shkurtra dhe kryhen me një model AI më të shpejtë. Me një plan merrni AI-në tonë më të aftë, më shumë kërkime në ueb dhe gjatësitë Standarde dhe E thelluar.';
+
+  @override
+  String get billingMonthly => 'Mujore';
+
+  @override
+  String get billingYearly => 'Vjetore';
+
+  @override
+  String get yearlyDiscount => '2 muaj falas';
+
+  @override
+  String get perYear => '/ vit';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price në muaj';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonimi vjetor rinovohet automatikisht çdo vit derisa ta anuloni. Duke u abonuar pranoni Kushtet e përdorimit dhe Politikën e privatësisë.';
 }

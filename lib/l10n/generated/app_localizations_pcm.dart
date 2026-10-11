@@ -1262,4 +1262,25 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Trial analysis dey short and na faster AI model dey make am. Wit plan, you go get our best AI, more web search, plus Standard and Deep length.';
+
+  @override
+  String get billingMonthly => 'Every month';
+
+  @override
+  String get billingYearly => 'Every year';
+
+  @override
+  String get yearlyDiscount => '2 month free';
+
+  @override
+  String get perYear => '/ year';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price every month';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Yearly subscription go dey renew by imsef every year until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy.';
 }

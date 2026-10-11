@@ -1269,4 +1269,25 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'අත්හදා බැලීමේ විශ්ලේෂණ කෙටි වන අතර වේගවත් AI මාදිලියකින් සකසනු ලැබේ. සැලසුමක් සමඟ ඔබට අපගේ වඩාත්ම බලවත් AI, වැඩි වෙබ් සෙවීම් සහ සම්මත හා ගැඹුරු දිග ලැබේ.';
+
+  @override
+  String get billingMonthly => 'මාසිකව';
+
+  @override
+  String get billingYearly => 'වාර්ෂිකව';
+
+  @override
+  String get yearlyDiscount => 'මාස 2ක් නොමිලේ';
+
+  @override
+  String get perYear => '/ වසරකට';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'මසකට ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ඔබ අවලංගු කරන තුරු වාර්ෂික දායකත්ව සෑම වසරකම ස්වයංක්‍රීයව අලුත් වේ. දායක වීමෙන් ඔබ භාවිත නියම සහ රහස්‍යතා ප්‍රතිපත්තිය පිළිගනී.';
 }

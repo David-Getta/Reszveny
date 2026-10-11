@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Trvale smazat",
   "accountDeleted": "Váš účet byl smazán.",
   "errDeleteAccount": "Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu.",
-  "aiTrialBriefNote": "Zkušební analýzy jsou stručné a vytváří je rychlejší model AI. S tarifem získáte naši nejschopnější AI, více vyhledávání na webu a délky Standardně a Podrobně."
+  "aiTrialBriefNote": "Zkušební analýzy jsou stručné a vytváří je rychlejší model AI. S tarifem získáte naši nejschopnější AI, více vyhledávání na webu a délky Standardně a Podrobně.",
+  "billingMonthly": "Měsíčně",
+  "billingYearly": "Ročně",
+  "yearlyDiscount": "2 měsíce zdarma",
+  "perYear": "/ rok",
+  "pricePerMonthApprox": "≈ {price} měsíčně",
+  "subscriptionLegalYearly": "Roční předplatné se každý rok automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů."
 }

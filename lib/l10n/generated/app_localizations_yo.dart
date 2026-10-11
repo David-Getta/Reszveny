@@ -1261,4 +1261,25 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Àwọn ìtúpalẹ̀ ìdánwò jẹ́ ṣókí, a sì ń fi àwòṣe AI tó yára jù ṣe wọ́n. Pẹ̀lú ìpele kan, o máa rí AI wa tó lágbára jùlọ, ìwádìí wẹ́ẹ̀bù púpọ̀ sí i, àti gígùn Àgbedeméjì àti Jinlẹ̀.';
+
+  @override
+  String get billingMonthly => 'Lóṣooṣù';
+
+  @override
+  String get billingYearly => 'Lọ́dọọdún';
+
+  @override
+  String get yearlyDiscount => 'Oṣù 2 lọ́fẹ̀ẹ́';
+
+  @override
+  String get perYear => '/ ọdún';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price lóṣù';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Àsansílẹ̀ ọdọọdún máa ń sọ ara rẹ̀ dọ̀tun láìfọwọ́yí lọ́dọọdún títí tí o fi fagilé e. Nípa ṣíṣe àsansílẹ̀, o gba Òfin Ìlò àti Ìlànà Ìpamọ́.';
 }

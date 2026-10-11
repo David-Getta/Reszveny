@@ -1301,4 +1301,25 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Пробне анализе су кратке и израђује их бржи AI модел. Уз план добијате наш најмоћнији AI, више веб-претрага и дужине „Стандардно“ и „Детаљно“.';
+
+  @override
+  String get billingMonthly => 'Месечно';
+
+  @override
+  String get billingYearly => 'Годишње';
+
+  @override
+  String get yearlyDiscount => '2 месеца бесплатно';
+
+  @override
+  String get perYear => '/ година';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price месечно';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Годишња претплата се аутоматски обнавља сваке године док је не откажете. Претплатом прихватате Услове коришћења и Политику приватности.';
 }

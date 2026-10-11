@@ -1272,4 +1272,25 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Amasesengura y\'igerageza ni magufi kandi akorwa na moderi ya AI yihuta. Ufite gahunda, ubona AI yacu ifite ubushobozi buruta ubundi, ishakisha ryinshi kuri murandasi, n\'uburebure busanzwe n\'ubwimbitse.';
+
+  @override
+  String get billingMonthly => 'Buri kwezi';
+
+  @override
+  String get billingYearly => 'Buri mwaka';
+
+  @override
+  String get yearlyDiscount => 'Amezi 2 y\'ubuntu';
+
+  @override
+  String get perYear => '/ umwaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ku kwezi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ifatabuguzi ry\'umwaka ryivugurura buri mwaka kugeza urihagaritse. Iyo wiyandikishije uba wemeye Amabwiriza yo gukoresha na Politiki y\'ibanga.';
 }

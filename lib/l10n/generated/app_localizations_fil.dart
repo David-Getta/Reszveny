@@ -1272,4 +1272,25 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Maikli ang mga pagsusuri sa trial at ginagawa gamit ang mas mabilis na AI model. Sa isang plan, makukuha mo ang aming pinakamahusay na AI, mas maraming paghahanap sa web, at ang Karaniwan at Malalim na haba.';
+
+  @override
+  String get billingMonthly => 'Buwanan';
+
+  @override
+  String get billingYearly => 'Taunan';
+
+  @override
+  String get yearlyDiscount => '2 buwang libre';
+
+  @override
+  String get perYear => '/ taon';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price bawat buwan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Awtomatikong nire-renew ang taunang subscription bawat taon hanggang kanselahin mo. Sa pag-subscribe, tinatanggap mo ang Mga Tuntunin ng Paggamit at ang Patakaran sa Privacy.';
 }

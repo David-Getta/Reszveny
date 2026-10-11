@@ -1235,4 +1235,25 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ການວິເຄາະໃນໄລຍະທົດລອງເປັນແບບສັ້ນ ແລະ ສ້າງດ້ວຍໂມເດວ AI ທີ່ໄວກວ່າ ເມື່ອມີແພັກເກັດ ທ່ານຈະໄດ້ AI ທີ່ມີຄວາມສາມາດສູງສຸດຂອງພວກເຮົາ ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ແລະ ຄວາມຍາວມາດຕະຖານ ແລະ ເຈາະເລິກ';
+
+  @override
+  String get billingMonthly => 'ລາຍເດືອນ';
+
+  @override
+  String get billingYearly => 'ລາຍປີ';
+
+  @override
+  String get yearlyDiscount => 'ຟຣີ 2 ເດືອນ';
+
+  @override
+  String get perYear => '/ ປີ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ຕໍ່ເດືອນ';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ການສະໝັກສະມາຊິກລາຍປີຈະຕໍ່ອາຍຸອັດຕະໂນມັດທຸກປີຈົນກວ່າທ່ານຈະຍົກເລີກ ການສະໝັກສະມາຊິກຖືວ່າທ່ານຍອມຮັບຂໍ້ກຳນົດການນຳໃຊ້ ແລະ ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ';
 }

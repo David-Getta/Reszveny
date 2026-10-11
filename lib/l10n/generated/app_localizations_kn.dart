@@ -1267,4 +1267,25 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ಪ್ರಾಯೋಗಿಕ ವಿಶ್ಲೇಷಣೆಗಳು ಸಂಕ್ಷಿಪ್ತವಾಗಿದ್ದು, ವೇಗವಾದ AI ಮಾದರಿಯಿಂದ ತಯಾರಾಗುತ್ತವೆ. ಪ್ಲಾನ್‌ನೊಂದಿಗೆ ನಿಮಗೆ ನಮ್ಮ ಅತ್ಯಂತ ಸಮರ್ಥ AI, ಹೆಚ್ಚಿನ ವೆಬ್ ಹುಡುಕಾಟಗಳು ಮತ್ತು ಪ್ರಮಾಣಿತ ಹಾಗೂ ಆಳವಾದ ಉದ್ದಗಳು ಸಿಗುತ್ತವೆ.';
+
+  @override
+  String get billingMonthly => 'ಮಾಸಿಕ';
+
+  @override
+  String get billingYearly => 'ವಾರ್ಷಿಕ';
+
+  @override
+  String get yearlyDiscount => '2 ತಿಂಗಳು ಉಚಿತ';
+
+  @override
+  String get perYear => '/ ವರ್ಷ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ತಿಂಗಳಿಗೆ ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ನೀವು ರದ್ದುಮಾಡುವವರೆಗೆ ವಾರ್ಷಿಕ ಚಂದಾದಾರಿಕೆಗಳು ಪ್ರತಿ ವರ್ಷ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನವೀಕರಣಗೊಳ್ಳುತ್ತವೆ. ಚಂದಾದಾರರಾಗುವ ಮೂಲಕ ನೀವು ಬಳಕೆಯ ನಿಯಮಗಳು ಮತ್ತು ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಒಪ್ಪುತ್ತೀರಿ.';
 }

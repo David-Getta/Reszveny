@@ -139,6 +139,22 @@ void main() {
     expect(bad['status'], 400);
   });
 
+  test('a yearly plan gives the same monthly allowance as the monthly one', () async {
+    final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    final r = await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.max.year', 'verification_data': 'r-year'},
+    );
+    expect(r['status'], 200);
+    final e = r['body']['entitlements'];
+    expect(e['tier'], 'max');
+    // Fizető csomag: az elemzés a teljes értékű modellen fut.
+    await call('POST', '/v1/analyze', token: token, body: {'messages': []});
+    expect(lastUpstream!['model'], 'claude-opus-5-5');
+  });
+
   test('market proxy adds the Finnhub key', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     final r = await call('GET', '/v1/market/quote?symbol=AAPL', token: token);

@@ -1260,4 +1260,25 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Trial analyses are brief and made with a faster AI model. With a plan you get our most capable AI, more web research, and the Standard and In-depth lengths.';
+
+  @override
+  String get billingMonthly => 'Monthly';
+
+  @override
+  String get billingYearly => 'Yearly';
+
+  @override
+  String get yearlyDiscount => '2 months free';
+
+  @override
+  String get perYear => '/ year';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price per month';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Yearly subscriptions renew automatically every year until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.';
 }

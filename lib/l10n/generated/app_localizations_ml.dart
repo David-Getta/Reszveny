@@ -1271,4 +1271,25 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ട്രയൽ വിശകലനങ്ങൾ ചുരുക്കമാണ്, വേഗതയേറിയ ഒരു AI മോഡൽ ഉപയോഗിച്ചാണ് തയ്യാറാക്കുന്നത്. ഒരു പ്ലാനിലൂടെ ഞങ്ങളുടെ ഏറ്റവും കഴിവുള്ള AI, കൂടുതൽ വെബ് തിരയലുകൾ, സ്റ്റാൻഡേർഡ്, വിശദം ദൈർഘ്യങ്ങൾ എന്നിവ ലഭിക്കും.';
+
+  @override
+  String get billingMonthly => 'പ്രതിമാസം';
+
+  @override
+  String get billingYearly => 'വാർഷികം';
+
+  @override
+  String get yearlyDiscount => '2 മാസം സൗജന്യം';
+
+  @override
+  String get perYear => '/ വർഷം';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'പ്രതിമാസം ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'നിങ്ങൾ റദ്ദാക്കുന്നതുവരെ വാർഷിക സബ്സ്ക്രിപ്ഷനുകൾ എല്ലാ വർഷവും സ്വയമേവ പുതുക്കും. സബ്സ്ക്രൈബ് ചെയ്യുന്നതിലൂടെ നിങ്ങൾ ഉപയോഗ നിബന്ധനകളും സ്വകാര്യതാ നയവും അംഗീകരിക്കുന്നു.';
 }

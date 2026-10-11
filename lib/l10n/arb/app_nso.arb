@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Phumola ka mo go sa felego",
   "accountDeleted": "Akhaonto ya gago e phumotšwe.",
   "errDeleteAccount": "Akhaonto ga e a kgona go phumolwa. Lekola kgokagano ya gago gomme o leke gape.",
-  "aiTrialBriefNote": "Ditshekatsheko tša teko di kopana gomme di dirwa ka mmotlolo wa AI wo o akgofago. Ka leano o hwetša AI ya rena ye e nago le bokgoni bjo bogolo, dinyakišišo tše dintši tša wepe, le botelele bja Ya tlwaelo le Ye e tseneletšego."
+  "aiTrialBriefNote": "Ditshekatsheko tša teko di kopana gomme di dirwa ka mmotlolo wa AI wo o akgofago. Ka leano o hwetša AI ya rena ye e nago le bokgoni bjo bogolo, dinyakišišo tše dintši tša wepe, le botelele bja Ya tlwaelo le Ye e tseneletšego.",
+  "billingMonthly": "Ka kgwedi",
+  "billingYearly": "Ka ngwaga",
+  "yearlyDiscount": "Dikgwedi tše 2 mahala",
+  "perYear": "/ ngwaga",
+  "pricePerMonthApprox": "≈ {price} ka kgwedi",
+  "subscriptionLegalYearly": "Dingwadišo tša ngwaga di mpshafatšwa ka go itiragalela ngwaga le ngwaga go fihlela o di khansela. Ka go ingwadiša o amogela Mabaka a Tšhomišo le Pholisi ya Sephiri."
 }

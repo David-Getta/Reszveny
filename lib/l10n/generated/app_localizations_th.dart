@@ -1233,4 +1233,25 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'การวิเคราะห์ช่วงทดลองใช้เป็นแบบกระชับและใช้โมเดล AI ที่เร็วกว่า เมื่อมีแพ็กเกจ คุณจะได้ AI ที่มีความสามารถสูงสุดของเรา การค้นหาเว็บมากขึ้น และความยาวแบบมาตรฐานและเจาะลึก';
+
+  @override
+  String get billingMonthly => 'รายเดือน';
+
+  @override
+  String get billingYearly => 'รายปี';
+
+  @override
+  String get yearlyDiscount => 'ฟรี 2 เดือน';
+
+  @override
+  String get perYear => '/ ปี';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ต่อเดือน';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'การสมัครสมาชิกรายปีจะต่ออายุโดยอัตโนมัติทุกปีจนกว่าคุณจะยกเลิก การสมัครสมาชิกถือว่าคุณยอมรับข้อกำหนดการใช้งานและนโยบายความเป็นส่วนตัว';
 }

@@ -37,7 +37,7 @@ Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude
 (`whatstock.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
 Server API / Play Developer API – a bolti fiókok után készül el), `PUBLIC_URL` (a szerver nyilvános
 címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
-(`whatstock.sub.normal=price_…,whatstock.sub.pro=price_…,…,whatstock.pack.5=price_…`),
+(`whatstock.sub.normal=price_…,whatstock.sub.pro=price_…,whatstock.sub.pro.year=price_…,…,whatstock.pack.5=price_…`; az éves termékekhez éves ismétlődésű Stripe-ár),
 `RESEND_API_KEY` és `MAIL_FROM` (belépőkód e-mailben; nélkülük a kód a naplóba kerül), `LEGAL_DIR`
 (a jogi szövegek mappája, alapból `legal`; a Docker-képben `/legal`).
 

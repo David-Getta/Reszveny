@@ -1275,4 +1275,25 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Izinhlaziyo zokuzama zifushane futhi zenziwa ngemodeli ye-AI esheshayo. Ngohlelo uthola i-AI yethu enekhono kakhulu, usesho lwewebhu olwengeziwe, nobude obuvamile nobujulile.';
+
+  @override
+  String get billingMonthly => 'Ngenyanga';
+
+  @override
+  String get billingYearly => 'Ngonyaka';
+
+  @override
+  String get yearlyDiscount => 'Izinyanga ezi-2 mahhala';
+
+  @override
+  String get perYear => '/ unyaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ngenyanga';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ukubhalisa konyaka kuvuselelwa ngokuzenzakalelayo njalo ngonyaka uze ukukhansele. Ngokubhalisa wamukela Imigomo Yokusetshenziswa kanye Nenqubomgomo Yobumfihlo.';
 }

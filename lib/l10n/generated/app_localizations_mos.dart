@@ -1258,4 +1258,25 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Makr vɛɛse yaa kʋɩɩlga, la b maanda-b ne AI sẽn yaa tao-tao. Ne forfɛ, f paamda d AI sẽn yaa sõma n yɩɩd fãa, ẽntɛrnɛt baoob wʋsg, la woglem Sʋka ne Zulungu.';
+
+  @override
+  String get billingMonthly => 'Kiuug fãa';
+
+  @override
+  String get billingYearly => 'Yʋʋmd fãa';
+
+  @override
+  String get yearlyDiscount => 'Kiuud 2 zaalem';
+
+  @override
+  String get perYear => '/ yʋʋmde';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kiuug fãa';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonmã le sɩngd a meng yʋʋmd fãa n tãag f sã n bas-a. F sã n kẽ abonmã, f sakda Tʋʋm noy la Solgr noy.';
 }

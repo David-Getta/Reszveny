@@ -1270,4 +1270,25 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Les analyses d’essai sont brèves et réalisées avec un modèle d’IA plus rapide. Avec un forfait, vous profitez de notre IA la plus performante, de davantage de recherches web et des longueurs Standard et Approfondie.';
+
+  @override
+  String get billingMonthly => 'Mensuel';
+
+  @override
+  String get billingYearly => 'Annuel';
+
+  @override
+  String get yearlyDiscount => '2 mois offerts';
+
+  @override
+  String get perYear => '/ an';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price par mois';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'L’abonnement annuel se renouvelle automatiquement chaque année jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité.';
 }

@@ -1264,4 +1264,25 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ba analyse ya kumeka ikele nkufi mpi bo ke salaka yo ti modele ya AI ya nswalu. Ti forfait, nge ta baka AI na beto ya kuluta mbote, kutomba mingi mu internet, ye unda Ya kati ye Ya nda.';
+
+  @override
+  String get billingMonthly => 'Konso ngonda';
+
+  @override
+  String get billingYearly => 'Konso mvu';
+
+  @override
+  String get yearlyDiscount => 'Ngonda 2 ya mpamba';
+
+  @override
+  String get perYear => '/ mvu';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price mu ngonda';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku.';
 }

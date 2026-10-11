@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Panasa sing permanente",
   "accountDeleted": "Napanas na ang imo account.",
   "errDeleteAccount": "Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat.",
-  "aiTrialBriefNote": "Ang mga analisis sa pagtilaw malip-ot kag ginahimo sang mas dasig nga AI model. Kon may plan ka, makuha mo ang amon pinakamaayo nga AI, mas madamo nga pagpangita sa web, kag ang Kinaandan kag Madalom nga kalabaon."
+  "aiTrialBriefNote": "Ang mga analisis sa pagtilaw malip-ot kag ginahimo sang mas dasig nga AI model. Kon may plan ka, makuha mo ang amon pinakamaayo nga AI, mas madamo nga pagpangita sa web, kag ang Kinaandan kag Madalom nga kalabaon.",
+  "billingMonthly": "Binulan",
+  "billingYearly": "Tinuig",
+  "yearlyDiscount": "2 ka bulan libre",
+  "perYear": "/ tuig",
+  "pricePerMonthApprox": "≈ {price} kada bulan",
+  "subscriptionLegalYearly": "Ang tinuig nga subscription awtomatiko nga nagare-renew kada tuig tubtob nga i-kansela mo. Sa pag-subscribe, ginabaton mo ang Mga Termino sang Paggamit kag ang Palisiya sa Privacy."
 }

@@ -37,7 +37,7 @@ void main() {
       fallback: DemoBillingService(latency: Duration.zero),
     );
     final products = await s.products();
-    expect(products.where((p) => p.kind == StoreProductKind.subscription), hasLength(4));
+    expect(products.where((p) => p.kind == StoreProductKind.subscription), hasLength(6)); // 4 havi + 2 éves (Pro, Max)
     expect(s.isDemo, isTrue);
     final events = <BillingEvent>[];
     final sub = s.events.listen(events.add);

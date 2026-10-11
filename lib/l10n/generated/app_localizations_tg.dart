@@ -1265,4 +1265,25 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Таҳлилҳои озмоишӣ мухтасаранд ва бо модели тезтари AI сохта мешаванд. Бо тариф шумо AI-и пурқувваттарини моро, ҷустуҷӯҳои бештари веб ва дарозиҳои Стандартӣ ва Муфассалро мегиред.';
+
+  @override
+  String get billingMonthly => 'Ҳармоҳа';
+
+  @override
+  String get billingYearly => 'Ҳарсола';
+
+  @override
+  String get yearlyDiscount => '2 моҳ ройгон';
+
+  @override
+  String get perYear => '/ сол';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price дар як моҳ';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Обунаи солона то он даме ки шумо онро бекор накунед, ҳар сол худкор тамдид мешавад. Бо обуна шудан шумо Шартҳои истифода ва Сиёсати махфиятро қабул мекунед.';
 }

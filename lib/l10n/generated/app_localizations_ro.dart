@@ -1296,4 +1296,25 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analizele din perioada de probă sunt scurte și realizate cu un model AI mai rapid. Cu un plan primești cel mai capabil AI al nostru, mai multe căutări web și lungimile Standard și Detaliată.';
+
+  @override
+  String get billingMonthly => 'Lunar';
+
+  @override
+  String get billingYearly => 'Anual';
+
+  @override
+  String get yearlyDiscount => '2 luni gratuit';
+
+  @override
+  String get perYear => '/ an';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price pe lună';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonamentul anual se reînnoiește automat în fiecare an până îl anulezi. Prin abonare accepți Termenii de utilizare și Politica de confidențialitate.';
 }

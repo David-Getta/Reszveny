@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Dzēst neatgriezeniski",
   "accountDeleted": "Jūsu konts ir dzēsts.",
   "errDeleteAccount": "Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
-  "aiTrialBriefNote": "Izmēģinājuma analīzes ir īsas, un tās veido ātrāks AI modelis. Ar plānu jūs saņemat mūsu spēcīgāko AI, vairāk meklējumu tīmeklī, kā arī standarta un padziļināto garumu."
+  "aiTrialBriefNote": "Izmēģinājuma analīzes ir īsas, un tās veido ātrāks AI modelis. Ar plānu jūs saņemat mūsu spēcīgāko AI, vairāk meklējumu tīmeklī, kā arī standarta un padziļināto garumu.",
+  "billingMonthly": "Ik mēnesi",
+  "billingYearly": "Ik gadu",
+  "yearlyDiscount": "2 mēneši bez maksas",
+  "perYear": "/ gadā",
+  "pricePerMonthApprox": "≈ {price} mēnesī",
+  "subscriptionLegalYearly": "Gada abonements tiek automātiski atjaunots katru gadu, līdz to atceļat. Abonējot jūs piekrītat Lietošanas noteikumiem un Privātuma politikai."
 }

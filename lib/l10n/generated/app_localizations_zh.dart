@@ -1218,6 +1218,26 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get aiTrialBriefNote => '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
+
+  @override
+  String get billingMonthly => '按月';
+
+  @override
+  String get billingYearly => '按年';
+
+  @override
+  String get yearlyDiscount => '免费 2 个月';
+
+  @override
+  String get perYear => '/ 年';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '每月约 $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly => '年度订阅会每年自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2433,4 +2453,24 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get aiTrialBriefNote => '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
+
+  @override
+  String get billingMonthly => '按月';
+
+  @override
+  String get billingYearly => '按年';
+
+  @override
+  String get yearlyDiscount => '免費 2 個月';
+
+  @override
+  String get perYear => '/ 年';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '每月約 $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly => '年度訂閱會每年自動續期，直至你取消。訂閱即表示你接受使用條款及私隱政策。';
 }

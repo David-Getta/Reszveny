@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Efase nèt",
   "accountDeleted": "Kont ou efase.",
   "errDeleteAccount": "Nou pa t ka efase kont lan. Verifye koneksyon entènèt ou epi eseye ankò.",
-  "aiTrialBriefNote": "Analiz esè yo kout epi se yon modèl AI ki pi rapid ki fè yo. Avèk yon plan, ou jwenn AI ki pi pwisan nou an, plis rechèch sou entènèt, ak longè Estanda ak An pwofondè."
+  "aiTrialBriefNote": "Analiz esè yo kout epi se yon modèl AI ki pi rapid ki fè yo. Avèk yon plan, ou jwenn AI ki pi pwisan nou an, plis rechèch sou entènèt, ak longè Estanda ak An pwofondè.",
+  "billingMonthly": "Chak mwa",
+  "billingYearly": "Chak ane",
+  "yearlyDiscount": "2 mwa gratis",
+  "perYear": "/ ane",
+  "pricePerMonthApprox": "≈ {price} pa mwa",
+  "subscriptionLegalYearly": "Abònman anyèl yo renouvle otomatikman chak ane jiskaske ou anile. Lè w abòne, ou aksepte Kondisyon itilizasyon yo ak Politik konfidansyalite a."
 }

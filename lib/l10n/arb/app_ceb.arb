@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Papasa nga permanente",
   "accountDeleted": "Napapas na ang imong account.",
   "errDeleteAccount": "Dili mapapas ang account. Susiha ang imong koneksyon ug sulayi pag-usab.",
-  "aiTrialBriefNote": "Mubo ang mga pagtuki sa trial ug gihimo kini gamit ang mas paspas nga AI model. Sa usa ka plan, makuha nimo ang among labing maayong AI, mas daghang pagpangita sa web, ug ang Standard ug Lawom nga gitas-on."
+  "aiTrialBriefNote": "Mubo ang mga pagtuki sa trial ug gihimo kini gamit ang mas paspas nga AI model. Sa usa ka plan, makuha nimo ang among labing maayong AI, mas daghang pagpangita sa web, ug ang Standard ug Lawom nga gitas-on.",
+  "billingMonthly": "Binulan",
+  "billingYearly": "Tinuig",
+  "yearlyDiscount": "2 ka bulan libre",
+  "perYear": "/ tuig",
+  "pricePerMonthApprox": "≈ {price} matag bulan",
+  "subscriptionLegalYearly": "Awtomatikong ma-renew ang tinuig nga subscription matag tuig hangtod nimo kini kanselahon. Pinaagi sa pag-subscribe, gidawat nimo ang Mga Termino sa Paggamit ug ang Palisiya sa Privacy."
 }

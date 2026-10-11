@@ -1280,4 +1280,25 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Fohy ny fandalinana mandritra ny fanandramana ary atao amin\'ny modely AI haingana kokoa. Miaraka amin\'ny tolotra, mahazo ny AI matanjaka indrindra ananay ianao, fikarohana an-tranonkala bebe kokoa ary ny halavany Antonony sy Lalina.';
+
+  @override
+  String get billingMonthly => 'Isam-bolana';
+
+  @override
+  String get billingYearly => 'Isan-taona';
+
+  @override
+  String get yearlyDiscount => '2 volana maimaim-poana';
+
+  @override
+  String get perYear => '/ taona';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price isam-bolana';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Havaozina ho azy isan-taona ny famandrihana mandra-pahafoananao azy. Amin\'ny fanaovana famandrihana dia manaiky ny Fepetra fampiasana sy ny Politikan\'ny fiainana manokana ianao.';
 }

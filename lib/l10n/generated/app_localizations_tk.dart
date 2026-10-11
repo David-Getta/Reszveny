@@ -1262,4 +1262,25 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Synag seljermeleri gysga bolýar we has çalt AI modeli bilen taýýarlanýar. Tarif bilen iň ukyply AI-ymyzy, has köp web gözlegini hem-de Standart we Jikme-jik uzynlyklary alýarsyňyz.';
+
+  @override
+  String get billingMonthly => 'Aýlyk';
+
+  @override
+  String get billingYearly => 'Ýyllyk';
+
+  @override
+  String get yearlyDiscount => '2 aý mugt';
+
+  @override
+  String get perYear => '/ ýyl';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Aýda ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz.';
 }

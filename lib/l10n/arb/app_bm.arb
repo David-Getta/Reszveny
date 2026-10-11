@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "A jɔsi pewu",
   "accountDeleted": "I ka kɔnti jɔsira.",
   "errDeleteAccount": "Kɔnti ma se ka jɔsi. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.",
-  "aiTrialBriefNote": "Kɔrɔbɔli sɛgɛsɛgɛliw ka surun, u bɛ kɛ ni AI modɛli teliman ye. Ni pilan bɛ i fɛ, i bɛ an ka AI ɲuman bɛɛ la sɔrɔ, ɛntɛrinɛti ɲinini caman, ani janya Cɛmancɛ ni Dunba."
+  "aiTrialBriefNote": "Kɔrɔbɔli sɛgɛsɛgɛliw ka surun, u bɛ kɛ ni AI modɛli teliman ye. Ni pilan bɛ i fɛ, i bɛ an ka AI ɲuman bɛɛ la sɔrɔ, ɛntɛrinɛti ɲinini caman, ani janya Cɛmancɛ ni Dunba.",
+  "billingMonthly": "Kalo o kalo",
+  "billingYearly": "San o san",
+  "yearlyDiscount": "Kalo 2 fu",
+  "perYear": "/ san",
+  "pricePerMonthApprox": "≈ {price} kalo o kalo",
+  "subscriptionLegalYearly": "Abɔnɛmanw bɛ kuraya u yɛrɛ ma san o san fo i k’u dabila. Ni i ye abɔnɛ kɛ, i sɔnna Baarakɛcogo sariyaw ni Gundo marali sariyaw ma."
 }

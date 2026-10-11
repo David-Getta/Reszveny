@@ -1260,4 +1260,25 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ଟ୍ରାଏଲ ବିଶ୍ଳେଷଣ ସଂକ୍ଷିପ୍ତ ଏବଂ ଏକ ଦ୍ରୁତ AI ମଡେଲରେ ତିଆରି ହୁଏ। ପ୍ଲାନ ସହ ଆପଣ ଆମର ସବୁଠାରୁ ସକ୍ଷମ AI, ଅଧିକ ୱେବ ସନ୍ଧାନ ଏବଂ ମାନକ ଓ ବିସ୍ତୃତ ଦୈର୍ଘ୍ୟ ପାଆନ୍ତି।';
+
+  @override
+  String get billingMonthly => 'ମାସିକ';
+
+  @override
+  String get billingYearly => 'ବାର୍ଷିକ';
+
+  @override
+  String get yearlyDiscount => '2 ମାସ ମାଗଣା';
+
+  @override
+  String get perYear => '/ ବର୍ଷ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ମାସକୁ ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ଆପଣ ବାତିଲ ନକରିବା ପର୍ଯ୍ୟନ୍ତ ବାର୍ଷିକ ସବସ୍କ୍ରିପସନ ପ୍ରତି ବର୍ଷ ସ୍ୱୟଂଚାଳିତ ଭାବେ ନବୀକରଣ ହୁଏ। ସବସ୍କ୍ରାଇବ କରି ଆପଣ ବ୍ୟବହାର ସର୍ତ୍ତାବଳୀ ଓ ଗୋପନୀୟତା ନୀତି ଗ୍ରହଣ କରୁଛନ୍ତି।';
 }

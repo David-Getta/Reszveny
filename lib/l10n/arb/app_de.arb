@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Endgültig löschen",
   "accountDeleted": "Dein Konto wurde gelöscht.",
   "errDeleteAccount": "Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut.",
-  "aiTrialBriefNote": "Analysen in der Testphase sind kurz und werden mit einem schnelleren KI-Modell erstellt. Mit einem Tarif bekommst du unsere leistungsfähigste KI, mehr Websuchen und die Längen Standard und Ausführlich."
+  "aiTrialBriefNote": "Analysen in der Testphase sind kurz und werden mit einem schnelleren KI-Modell erstellt. Mit einem Tarif bekommst du unsere leistungsfähigste KI, mehr Websuchen und die Längen Standard und Ausführlich.",
+  "billingMonthly": "Monatlich",
+  "billingYearly": "Jährlich",
+  "yearlyDiscount": "2 Monate gratis",
+  "perYear": "/ Jahr",
+  "pricePerMonthApprox": "≈ {price} pro Monat",
+  "subscriptionLegalYearly": "Jahresabos verlängern sich jährlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung."
 }

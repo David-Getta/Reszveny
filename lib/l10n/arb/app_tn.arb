@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Phimola ka bosakhutleng",
   "accountDeleted": "Akhaonto ya gago e phimotswe.",
   "errDeleteAccount": "Akhaonto ga e a kgona go phimolwa. Tlhola kgolagano ya gago mme o leke gape.",
-  "aiTrialBriefNote": "Ditshekatsheko tsa teko di khutshwe e bile di dirwa ka mofuta wa AI o o bonako. Ka leano o bona AI ya rona e e nonofileng go gaisa, dipatlo tse dintsi tsa inthanete, le boleele jwa Magareng le E e tseneletseng."
+  "aiTrialBriefNote": "Ditshekatsheko tsa teko di khutshwe e bile di dirwa ka mofuta wa AI o o bonako. Ka leano o bona AI ya rona e e nonofileng go gaisa, dipatlo tse dintsi tsa inthanete, le boleele jwa Magareng le E e tseneletseng.",
+  "billingMonthly": "Ka kgwedi",
+  "billingYearly": "Ka ngwaga",
+  "yearlyDiscount": "Dikgwedi di le 2 mahala",
+  "perYear": "/ ngwaga",
+  "pricePerMonthApprox": "≈ {price} ka kgwedi",
+  "subscriptionLegalYearly": "Ikwadisetso ya ngwaga e ntšhwafala ka boiketsetso ngwaga le ngwaga go fitlha o e khansela. Ka go ikwadisa o amogela Melawana ya Tiriso le Pholisi ya Sephiri."
 }

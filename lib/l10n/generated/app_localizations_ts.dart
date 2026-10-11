@@ -1277,4 +1277,25 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Minxopaxopo ya ndzingeto yi komile naswona yi endliwa hi modlele wa AI wo hatlisa. Hi kungu u kuma AI ya hina leyi nga ni vuswikoti swinene, mindzavisiso yo tala ya inthanete, ni ku leha ka Wa xikarhi na Wo enta.';
+
+  @override
+  String get billingMonthly => 'Hi n\'hweti';
+
+  @override
+  String get billingYearly => 'Hi lembe';
+
+  @override
+  String get yearlyDiscount => 'Tin\'hweti ta 2 mahala';
+
+  @override
+  String get perYear => '/ lembe';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price hi n\'hweti';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Mintsariso ya lembe yi tipfuxeta hi ku tiendlekela lembe rin\'wana na rin\'wana ku kondza u yi khansela. Hi ku tsarisa u amukela Swipimelo swa Matirhiselo na Pholisi ya Xihundla.';
 }

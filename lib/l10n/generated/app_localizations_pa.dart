@@ -1263,4 +1263,25 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ਟ੍ਰਾਇਲ ਵਿਸ਼ਲੇਸ਼ਣ ਸੰਖੇਪ ਹੁੰਦੇ ਹਨ ਅਤੇ ਤੇਜ਼ AI ਮਾਡਲ ਨਾਲ ਬਣਾਏ ਜਾਂਦੇ ਹਨ। ਪਲਾਨ ਨਾਲ ਤੁਹਾਨੂੰ ਸਾਡਾ ਸਭ ਤੋਂ ਸਮਰੱਥ AI, ਵੱਧ ਵੈੱਬ ਖੋਜਾਂ, ਅਤੇ ਮਿਆਰੀ ਤੇ ਵਿਸਤ੍ਰਿਤ ਲੰਬਾਈ ਮਿਲਦੀ ਹੈ।';
+
+  @override
+  String get billingMonthly => 'ਮਹੀਨਾਵਾਰ';
+
+  @override
+  String get billingYearly => 'ਸਾਲਾਨਾ';
+
+  @override
+  String get yearlyDiscount => '2 ਮਹੀਨੇ ਮੁਫ਼ਤ';
+
+  @override
+  String get perYear => '/ ਸਾਲ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ਪ੍ਰਤੀ ਮਹੀਨਾ ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ਸਾਲਾਨਾ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹਰ ਸਾਲ ਆਪਣੇ-ਆਪ ਨਵਿਆਈ ਜਾਂਦੀ ਹੈ, ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਇਸਨੂੰ ਰੱਦ ਨਹੀਂ ਕਰਦੇ। ਸਬਸਕ੍ਰਾਈਬ ਕਰਕੇ ਤੁਸੀਂ ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਪਰਦੇਦਾਰੀ ਨੀਤੀ ਸਵੀਕਾਰ ਕਰਦੇ ਹੋ।';
 }

@@ -1266,4 +1266,25 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Туршилтын шинжилгээ товч бөгөөд илүү хурдан AI загвараар хийгддэг. Багц авбал та манай хамгийн чадварлаг AI, илүү олон вэб хайлт болон Стандарт, Гүнзгий уртыг авна.';
+
+  @override
+  String get billingMonthly => 'Сараар';
+
+  @override
+  String get billingYearly => 'Жилээр';
+
+  @override
+  String get yearlyDiscount => '2 сар үнэгүй';
+
+  @override
+  String get perYear => '/ жил';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Сард ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Жилийн захиалга таныг цуцлах хүртэл жил бүр автоматаар сунгагдана. Захиалснаар та Үйлчилгээний нөхцөл болон Нууцлалын бодлогыг хүлээн зөвшөөрнө.';
 }

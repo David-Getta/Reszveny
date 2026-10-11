@@ -1261,4 +1261,25 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'سىناق تەھلىللىرى قىسقا بولۇپ، تېزرەك AI مودېلى بىلەن ئىشلىنىدۇ. پىلان بىلەن ئەڭ ئىقتىدارلىق AI مودېلىمىزنى، تېخىمۇ كۆپ تور ئىزدەشنى ۋە ئۆلچەملىك ھەم چوڭقۇر ئۇزۇنلۇقلارنى قولغا كەلتۈرىسىز.';
+
+  @override
+  String get billingMonthly => 'ئايلىق';
+
+  @override
+  String get billingYearly => 'يىللىق';
+
+  @override
+  String get yearlyDiscount => '2 ئاي ھەقسىز';
+
+  @override
+  String get perYear => '/ يىل';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ئايدا ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'يىللىق مۇشتەرىلىك سىز بىكار قىلمىغۇچە ھەر يىلى ئاپتوماتىك ئۇزارتىلىدۇ. مۇشتەرى بولۇش ئارقىلىق ئىشلىتىش شەرتلىرى ۋە شەخسىيەت سىياسىتىنى قوبۇل قىلغان بولىسىز.';
 }

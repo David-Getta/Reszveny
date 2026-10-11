@@ -1314,4 +1314,25 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Пробные анализы краткие и создаются более быстрой моделью ИИ. С тарифом вы получаете наш самый мощный ИИ, больше веб-поисков, а также стандартную и подробную длину.';
+
+  @override
+  String get billingMonthly => 'Ежемесячно';
+
+  @override
+  String get billingYearly => 'Ежегодно';
+
+  @override
+  String get yearlyDiscount => '2 месяца бесплатно';
+
+  @override
+  String get perYear => '/ год';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price в месяц';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Годовая подписка автоматически продлевается каждый год, пока вы её не отмените. Оформляя подписку, вы принимаете Условия использования и Политику конфиденциальности.';
 }

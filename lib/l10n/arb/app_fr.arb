@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Supprimer définitivement",
   "accountDeleted": "Votre compte a été supprimé.",
   "errDeleteAccount": "Impossible de supprimer le compte. Vérifiez votre connexion et réessayez.",
-  "aiTrialBriefNote": "Les analyses d’essai sont brèves et réalisées avec un modèle d’IA plus rapide. Avec un forfait, vous profitez de notre IA la plus performante, de davantage de recherches web et des longueurs Standard et Approfondie."
+  "aiTrialBriefNote": "Les analyses d’essai sont brèves et réalisées avec un modèle d’IA plus rapide. Avec un forfait, vous profitez de notre IA la plus performante, de davantage de recherches web et des longueurs Standard et Approfondie.",
+  "billingMonthly": "Mensuel",
+  "billingYearly": "Annuel",
+  "yearlyDiscount": "2 mois offerts",
+  "perYear": "/ an",
+  "pricePerMonthApprox": "≈ {price} par mois",
+  "subscriptionLegalYearly": "L’abonnement annuel se renouvelle automatiquement chaque année jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité."
 }

@@ -1270,4 +1270,25 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'საცდელი ანალიზები მოკლეა და იქმნება უფრო სწრაფი AI მოდელით. გეგმით მიიღებთ ჩვენს ყველაზე ძლიერ AI-ს, მეტ ვებძიებას და სტანდარტულ და სიღრმისეულ სიგრძეს.';
+
+  @override
+  String get billingMonthly => 'თვიური';
+
+  @override
+  String get billingYearly => 'წლიური';
+
+  @override
+  String get yearlyDiscount => '2 თვე უფასოდ';
+
+  @override
+  String get perYear => '/ წელი';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price თვეში';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'წლიური გამოწერა ავტომატურად განახლდება ყოველწლიურად, სანამ არ გააუქმებთ. გამოწერით თქვენ ეთანხმებით გამოყენების პირობებსა და კონფიდენციალურობის პოლიტიკას.';
 }

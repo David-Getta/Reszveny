@@ -1265,4 +1265,25 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ba-analyse ya komeka ezali mokuse mpe esalemaka na modèle ya AI oyo ekendaka noki. Na forfait, ozwaka AI na biso ya makasi koleka, boluki mingi na internet, mpe bolai Ya katikati mpe Ya mozindo.';
+
+  @override
+  String get billingMonthly => 'Sanza na sanza';
+
+  @override
+  String get billingYearly => 'Mobu na mobu';
+
+  @override
+  String get yearlyDiscount => 'Sanza 2 ofele';
+
+  @override
+  String get perYear => '/ mobu';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price na sanza';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonnement ya mbula ezongisamaka yango moko mbula nyɔnsɔ tii okotika yango. Na komikomisa, ondimi Mibeko ya bosaleli mpe Mibeko ya kobatela ba-donnée.';
 }

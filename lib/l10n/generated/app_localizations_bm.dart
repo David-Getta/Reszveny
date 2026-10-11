@@ -1268,4 +1268,25 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Kɔrɔbɔli sɛgɛsɛgɛliw ka surun, u bɛ kɛ ni AI modɛli teliman ye. Ni pilan bɛ i fɛ, i bɛ an ka AI ɲuman bɛɛ la sɔrɔ, ɛntɛrinɛti ɲinini caman, ani janya Cɛmancɛ ni Dunba.';
+
+  @override
+  String get billingMonthly => 'Kalo o kalo';
+
+  @override
+  String get billingYearly => 'San o san';
+
+  @override
+  String get yearlyDiscount => 'Kalo 2 fu';
+
+  @override
+  String get perYear => '/ san';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kalo o kalo';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abɔnɛmanw bɛ kuraya u yɛrɛ ma san o san fo i k’u dabila. Ni i ye abɔnɛ kɛ, i sɔnna Baarakɛcogo sariyaw ni Gundo marali sariyaw ma.';
 }

@@ -1253,4 +1253,25 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Phân tích trong thời gian dùng thử ở mức Ngắn gọn và dùng mô hình AI nhanh hơn. Khi đăng ký gói, bạn có AI mạnh nhất của chúng tôi, nhiều lượt tìm kiếm web hơn cùng độ dài Tiêu chuẩn và Chuyên sâu.';
+
+  @override
+  String get billingMonthly => 'Hàng tháng';
+
+  @override
+  String get billingYearly => 'Hàng năm';
+
+  @override
+  String get yearlyDiscount => 'Miễn phí 2 tháng';
+
+  @override
+  String get perYear => '/ năm';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price mỗi tháng';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Gói đăng ký theo năm tự động gia hạn hằng năm cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư.';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Trajno izbriši",
   "accountDeleted": "Vaš račun je izbrisan.",
   "errDeleteAccount": "Računa ni bilo mogoče izbrisati. Preverite povezavo in poskusite znova.",
-  "aiTrialBriefNote": "Preizkusne analize so kratke in jih pripravi hitrejši model AI. S paketom dobite naš najzmogljivejši model AI, več spletnih iskanj ter standardno in poglobljeno dolžino."
+  "aiTrialBriefNote": "Preizkusne analize so kratke in jih pripravi hitrejši model AI. S paketom dobite naš najzmogljivejši model AI, več spletnih iskanj ter standardno in poglobljeno dolžino.",
+  "billingMonthly": "Mesečno",
+  "billingYearly": "Letno",
+  "yearlyDiscount": "2 meseca brezplačno",
+  "perYear": "/ leto",
+  "pricePerMonthApprox": "≈ {price} na mesec",
+  "subscriptionLegalYearly": "Letna naročnina se samodejno podaljša vsako leto, dokler je ne prekličete. Z naročnino sprejemate Pogoje uporabe in Pravilnik o zasebnosti."
 }

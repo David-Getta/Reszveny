@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Sula hi laha ku nga heriki",
   "accountDeleted": "Akhawunti ya wena yi suriwile.",
   "errDeleteAccount": "A swi kotekanga ku sula akhawunti. Kambela vuhlanganisi bya wena u ringeta nakambe.",
-  "aiTrialBriefNote": "Minxopaxopo ya ndzingeto yi komile naswona yi endliwa hi modlele wa AI wo hatlisa. Hi kungu u kuma AI ya hina leyi nga ni vuswikoti swinene, mindzavisiso yo tala ya inthanete, ni ku leha ka Wa xikarhi na Wo enta."
+  "aiTrialBriefNote": "Minxopaxopo ya ndzingeto yi komile naswona yi endliwa hi modlele wa AI wo hatlisa. Hi kungu u kuma AI ya hina leyi nga ni vuswikoti swinene, mindzavisiso yo tala ya inthanete, ni ku leha ka Wa xikarhi na Wo enta.",
+  "billingMonthly": "Hi n'hweti",
+  "billingYearly": "Hi lembe",
+  "yearlyDiscount": "Tin'hweti ta 2 mahala",
+  "perYear": "/ lembe",
+  "pricePerMonthApprox": "≈ {price} hi n'hweti",
+  "subscriptionLegalYearly": "Mintsariso ya lembe yi tipfuxeta hi ku tiendlekela lembe rin'wana na rin'wana ku kondza u yi khansela. Hi ku tsarisa u amukela Swipimelo swa Matirhiselo na Pholisi ya Xihundla."
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Jimija tshiendelele",
   "accountDeleted": "Tuajimija compte webe.",
   "errDeleteAccount": "Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.",
-  "aiTrialBriefNote": "Makonkonona a diteta adi mîpi ne adi enzeka ne modele wa AI wa lukasa. Ne forfait, udi upeta AI wetu mupite bukole, makeba a bungi ku internet, ne bule bua Wa pankatshi ne Mule."
+  "aiTrialBriefNote": "Makonkonona a diteta adi mîpi ne adi enzeka ne modele wa AI wa lukasa. Ne forfait, udi upeta AI wetu mupite bukole, makeba a bungi ku internet, ne bule bua Wa pankatshi ne Mule.",
+  "billingMonthly": "Ku ngondo",
+  "billingYearly": "Ku tshidimu",
+  "yearlyDiscount": "Ngondo 2 patupu",
+  "perYear": "/ tshidimu",
+  "pricePerMonthApprox": "≈ {price} ku ngondo",
+  "subscriptionLegalYearly": "Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe."
 }

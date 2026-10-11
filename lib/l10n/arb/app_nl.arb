@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Definitief verwijderen",
   "accountDeleted": "Je account is verwijderd.",
   "errDeleteAccount": "Het account kon niet worden verwijderd. Controleer je verbinding en probeer het opnieuw.",
-  "aiTrialBriefNote": "Analyses in de proefperiode zijn kort en worden gemaakt met een sneller AI-model. Met een abonnement krijg je ons krachtigste AI-model, meer webzoekopdrachten en de lengtes Standaard en Diepgaand."
+  "aiTrialBriefNote": "Analyses in de proefperiode zijn kort en worden gemaakt met een sneller AI-model. Met een abonnement krijg je ons krachtigste AI-model, meer webzoekopdrachten en de lengtes Standaard en Diepgaand.",
+  "billingMonthly": "Maandelijks",
+  "billingYearly": "Jaarlijks",
+  "yearlyDiscount": "2 maanden gratis",
+  "perYear": "/ jaar",
+  "pricePerMonthApprox": "≈ {price} per maand",
+  "subscriptionLegalYearly": "Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid."
 }

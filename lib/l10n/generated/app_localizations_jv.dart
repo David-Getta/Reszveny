@@ -1267,4 +1267,25 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analisis nyoba iku ringkes lan digawe nganggo model AI sing luwih cepet. Kanthi paket, sampeyan entuk AI paling canggih saka kita, luwih akeh telusuran web, lan dawa Standar lan Jero.';
+
+  @override
+  String get billingMonthly => 'Saben sasi';
+
+  @override
+  String get billingYearly => 'Saben taun';
+
+  @override
+  String get yearlyDiscount => 'Gratis 2 sasi';
+
+  @override
+  String get perYear => '/ taun';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price saben sasi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Langganan taunan otomatis dianyari saben taun nganti sampeyan mbatalake. Kanthi langganan, sampeyan nampa Katemtuan Panganggo lan Kawicaksanan Privasi.';
 }

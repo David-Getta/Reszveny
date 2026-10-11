@@ -1274,4 +1274,25 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Iintlalutyo zovavanyo zimfutshane kwaye zenziwa ngemodeli ye-AI ekhawulezayo ngakumbi. Ngesicwangciso ufumana i-AI yethu enamandla kakhulu, ukhangelo olungakumbi lwewebhu, nobude obusemgangathweni nobunzulu.';
+
+  @override
+  String get billingMonthly => 'Ngenyanga';
+
+  @override
+  String get billingYearly => 'Ngonyaka';
+
+  @override
+  String get yearlyDiscount => 'Iinyanga ezi-2 simahla';
+
+  @override
+  String get perYear => '/ ngonyaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ngenyanga';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Imirhumo yonyaka ihlaziywa ngokuzenzekelayo unyaka ngamnye de uyirhoxise. Ngokubhalisa uyayamkela Imiqathango Yokusetyenziswa noMgaqo-nkqubo Wabucala.';
 }

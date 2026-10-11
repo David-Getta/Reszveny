@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Momtu haa abada",
   "accountDeleted": "Konte maa momtaama.",
   "errDeleteAccount": "Horiima momtude konte maa. Ƴeewto ceŋagol maa refti eto goɗngol.",
-  "aiTrialBriefNote": "Ƴeewndooji etagol ngoni rabbiɗi, ina waɗee e modeel AI ɓurngel yaawde. So a jogii feere, a heɓan AI amen ɓurɗo baawde, ɓeydagol njiilaw geese, e njuuteendi Hakkundeejum e Luggiɗum."
+  "aiTrialBriefNote": "Ƴeewndooji etagol ngoni rabbiɗi, ina waɗee e modeel AI ɓurngel yaawde. So a jogii feere, a heɓan AI amen ɓurɗo baawde, ɓeydagol njiilaw geese, e njuuteendi Hakkundeejum e Luggiɗum.",
+  "billingMonthly": "Lewru kala",
+  "billingYearly": "Hitaande kala",
+  "yearlyDiscount": "Lebbi 2 mehe",
+  "perYear": "/ hitaande",
+  "pricePerMonthApprox": "≈ {price} e lewru",
+  "subscriptionLegalYearly": "Abonmaa ina hesɗitinee e jaajol hitaande kala haa a haaytii. So a ƴettii abonmaa, a jaɓii Sarɗiiji kuutorgol e Dawrugol suturo."
 }

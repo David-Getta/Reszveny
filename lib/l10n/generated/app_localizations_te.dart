@@ -1265,4 +1265,25 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ట్రయల్ విశ్లేషణలు సంక్షిప్తంగా ఉంటాయి, వేగవంతమైన AI మోడల్‌తో రూపొందుతాయి. ప్లాన్‌తో మా అత్యంత సమర్థమైన AI, మరిన్ని వెబ్ శోధనలు, ప్రామాణికం మరియు వివరణాత్మకం నిడివిలు మీకు లభిస్తాయి.';
+
+  @override
+  String get billingMonthly => 'నెలవారీ';
+
+  @override
+  String get billingYearly => 'వార్షికం';
+
+  @override
+  String get yearlyDiscount => '2 నెలలు ఉచితం';
+
+  @override
+  String get perYear => '/ సంవత్సరం';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'నెలకు ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'మీరు రద్దు చేసే వరకు వార్షిక సభ్యత్వం ప్రతి సంవత్సరం ఆటోమేటిక్‌గా పునరుద్ధరించబడుతుంది. సభ్యత్వం తీసుకోవడం ద్వారా మీరు వినియోగ నిబంధనలు మరియు గోప్యతా విధానాన్ని అంగీకరిస్తారు.';
 }

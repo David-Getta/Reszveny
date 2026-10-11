@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Wiñaypaq qulluy",
   "accountDeleted": "Cuentaykiqa qullusqañam.",
   "errDeleteAccount": "Cuentataqa mana qulluyta atirqanchu. T'inkiyniykita qhaway, huktawan ruway.",
-  "aiTrialBriefNote": "Malliy t'aqwiykunaqa pisillam, aswan utqay AI modelowanmi ruwasqa. Huk planwanqa aswan atiyniyuq AI-ykuta, astawan web maskaykunata, Chawpi, Ukhu sunikunatapas hap'inki."
+  "aiTrialBriefNote": "Malliy t'aqwiykunaqa pisillam, aswan utqay AI modelowanmi ruwasqa. Huk planwanqa aswan atiyniyuq AI-ykuta, astawan web maskaykunata, Chawpi, Ukhu sunikunatapas hap'inki.",
+  "billingMonthly": "Sapa killa",
+  "billingYearly": "Sapa wata",
+  "yearlyDiscount": "2 killa gratis",
+  "perYear": "/ wata",
+  "pricePerMonthApprox": "Sapa killa ≈ {price}",
+  "subscriptionLegalYearly": "Watapaq suscripciónkunaqa sapa wata kikinmanta musuqchakunku cancelanaykikama. Suscribikuspaqa Llamk'achiypa kamachiykunanta Privacidad kamachiytapas chaskinki."
 }

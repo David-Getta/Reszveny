@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Pupus salamina",
   "accountDeleted": "Akun anjeun geus dipupus.",
   "errDeleteAccount": "Akun teu bisa dipupus. Pariksa sambungan anjeun terus cobaan deui.",
-  "aiTrialBriefNote": "Analisis uji coba téh ringkes sarta dijieun ku modél AI nu leuwih gancang. Ku pakét, anjeun meunang AI kami nu pangpinterna, leuwih loba panéangan wéb, sarta panjang Standar jeung Jero."
+  "aiTrialBriefNote": "Analisis uji coba téh ringkes sarta dijieun ku modél AI nu leuwih gancang. Ku pakét, anjeun meunang AI kami nu pangpinterna, leuwih loba panéangan wéb, sarta panjang Standar jeung Jero.",
+  "billingMonthly": "Bulanan",
+  "billingYearly": "Taunan",
+  "yearlyDiscount": "2 bulan gratis",
+  "perYear": "/ taun",
+  "pricePerMonthApprox": "≈ {price} per bulan",
+  "subscriptionLegalYearly": "Langganan taunan diperpanjang sacara otomatis unggal taun nepi ka anjeun ngabolaykeunana. Ku langganan, anjeun narima Katangtuan Pamakéan jeung Kawijakan Privasi."
 }

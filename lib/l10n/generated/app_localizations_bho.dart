@@ -1257,4 +1257,25 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ट्रायल के विश्लेषण छोट होला आ जादे तेज AI मॉडल से बनेला। प्लान लेला पर रउआ के हमनी के सबसे सक्षम AI, अउरी वेब खोज, साथे मानक आ विस्तार से वाला लंबाई मिलेला।';
+
+  @override
+  String get billingMonthly => 'मासिक';
+
+  @override
+  String get billingYearly => 'सालाना';
+
+  @override
+  String get yearlyDiscount => '2 महीना मुफ्त';
+
+  @override
+  String get perYear => '/ साल';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'हर महीना ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'जब ले रउआ रद्द ना करब, सालाना सदस्यता हर साल अपने आप नया हो जाला। सदस्यता लेके रउआ इस्तेमाल के शर्त आ गोपनीयता नीति मान लेत बानी।';
 }

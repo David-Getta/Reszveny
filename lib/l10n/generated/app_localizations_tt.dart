@@ -1262,4 +1262,25 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Сынау анализлары кыска һәм тизрәк AI модель ярдәмендә ясала. Тариф белән сез иң көчле AI-ыбызны, күбрәк веб-эзләүне һәм Стандарт белән Җентекле озынлыкларны аласыз.';
+
+  @override
+  String get billingMonthly => 'Айлык';
+
+  @override
+  String get billingYearly => 'Еллык';
+
+  @override
+  String get yearlyDiscount => '2 ай бушлай';
+
+  @override
+  String get perYear => '/ ел';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Айга ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Еллык язылу сез аннан баш тартканчы һәр ел саен автоматик рәвештә озайтыла. Язылып, сез Куллану шартларын һәм Хосусыйлык сәясәтен кабул итәсез.';
 }

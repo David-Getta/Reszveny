@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Sangula ddala",
   "accountDeleted": "Akawunti yo esanguddwa.",
   "errDeleteAccount": "Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.",
-  "aiTrialBriefNote": "Okwekenneenya okw'okugezesa kuba mu bufunze era kukolebwa AI model ey'amangu. Ng'olina enteekateeka, ofuna AI yaffe esinga obusobozi, okunoonya okusingawo ku yintaneeti, n'obuwanvu Bwa bulijjo ne Mu bujjuvu."
+  "aiTrialBriefNote": "Okwekenneenya okw'okugezesa kuba mu bufunze era kukolebwa AI model ey'amangu. Ng'olina enteekateeka, ofuna AI yaffe esinga obusobozi, okunoonya okusingawo ku yintaneeti, n'obuwanvu Bwa bulijjo ne Mu bujjuvu.",
+  "billingMonthly": "Buli mwezi",
+  "billingYearly": "Buli mwaka",
+  "yearlyDiscount": "Emyezi 2 bwereere",
+  "perYear": "/ omwaka",
+  "pricePerMonthApprox": "≈ {price} buli mwezi",
+  "subscriptionLegalYearly": "Okwewandiisa okw'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw'okusazaamu. Bw'owewandiisa, oba okkirizza Amateeka g'okukozesa n'Enkola y'ebyama."
 }

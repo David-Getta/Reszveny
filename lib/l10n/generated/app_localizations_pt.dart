@@ -1266,4 +1266,25 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'As análises do período de teste são breves e feitas com um modelo de IA mais rápido. Com um plano, obtém a nossa IA mais capaz, mais pesquisas na web e as extensões Padrão e Detalhada.';
+
+  @override
+  String get billingMonthly => 'Mensal';
+
+  @override
+  String get billingYearly => 'Anual';
+
+  @override
+  String get yearlyDiscount => '2 meses grátis';
+
+  @override
+  String get perYear => '/ ano';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price por mês';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'A subscrição anual renova-se automaticamente todos os anos até a cancelar. Ao subscrever, aceita os Termos de utilização e a Política de privacidade.';
 }

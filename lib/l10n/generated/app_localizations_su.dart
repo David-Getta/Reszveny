@@ -1265,4 +1265,25 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analisis uji coba téh ringkes sarta dijieun ku modél AI nu leuwih gancang. Ku pakét, anjeun meunang AI kami nu pangpinterna, leuwih loba panéangan wéb, sarta panjang Standar jeung Jero.';
+
+  @override
+  String get billingMonthly => 'Bulanan';
+
+  @override
+  String get billingYearly => 'Taunan';
+
+  @override
+  String get yearlyDiscount => '2 bulan gratis';
+
+  @override
+  String get perYear => '/ taun';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price per bulan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Langganan taunan diperpanjang sacara otomatis unggal taun nepi ka anjeun ngabolaykeunana. Ku langganan, anjeun narima Katangtuan Pamakéan jeung Kawijakan Privasi.';
 }

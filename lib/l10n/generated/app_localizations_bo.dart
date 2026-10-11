@@ -1244,4 +1244,25 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ཚོད་ལྟའི་དབྱེ་ཞིབ་ནི་མདོར་བསྡུས་ཡིན་ཞིང་ AI དཔེ་དབྱིབས་མགྱོགས་པ་ཞིག་གིས་བཟོས་པ་ཡིན། འཆར་གཞི་ཡོད་ན་ང་ཚོའི་ནུས་པ་ཆེ་ཤོས་ཀྱི་ AI དང་། དྲ་རྒྱའི་འཚོལ་ཞིབ་མང་བ། ཚད་ལྡན་དང་ཞིབ་ཕྲའི་རིང་ཚད་བཅས་ཐོབ།';
+
+  @override
+  String get billingMonthly => 'ཟླ་རེ';
+
+  @override
+  String get billingYearly => 'ལོ་རེ';
+
+  @override
+  String get yearlyDiscount => 'ཟླ་བ་ 2 རིན་མེད';
+
+  @override
+  String get perYear => '/ ལོ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ཟླ་རེར་ ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ཁྱེད་ཀྱིས་ཕྱིར་མ་འཐེན་བར་དུ་མཁོ་ཉོ་ལོ་རེར་རང་འགུལ་གྱིས་བསྐྱར་གསོ་བྱེད། མཁོ་ཉོ་བྱས་ན་བེད་སྤྱོད་ཆ་རྐྱེན་དང་སྒེར་གསང་སྲིད་ཇུས་ཁས་ལེན་པ་ཡིན།';
 }

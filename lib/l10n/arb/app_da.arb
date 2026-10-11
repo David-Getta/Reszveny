@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Slet permanent",
   "accountDeleted": "Din konto er slettet.",
   "errDeleteAccount": "Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen.",
-  "aiTrialBriefNote": "Analyser i prøveperioden er korte og laves med en hurtigere AI-model. Med en plan får du vores mest avancerede AI, flere websøgninger og længderne Standard og Dybdegående."
+  "aiTrialBriefNote": "Analyser i prøveperioden er korte og laves med en hurtigere AI-model. Med en plan får du vores mest avancerede AI, flere websøgninger og længderne Standard og Dybdegående.",
+  "billingMonthly": "Månedlig",
+  "billingYearly": "Årlig",
+  "yearlyDiscount": "2 måneder gratis",
+  "perYear": "/ år",
+  "pricePerMonthApprox": "≈ {price} pr. måned",
+  "subscriptionLegalYearly": "Årsabonnementet fornyes automatisk hvert år, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken."
 }

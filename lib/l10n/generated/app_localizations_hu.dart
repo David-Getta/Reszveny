@@ -1263,4 +1263,25 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'A próbaidős elemzések rövidek, és egy gyorsabb AI-modell készíti őket. Csomaggal a legerősebb AI-unk dolgozik, több webkereséssel, és választhatod az alap és a részletes hosszt is.';
+
+  @override
+  String get billingMonthly => 'Havi';
+
+  @override
+  String get billingYearly => 'Éves';
+
+  @override
+  String get yearlyDiscount => '2 hónap ingyen';
+
+  @override
+  String get perYear => '/ év';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price havonta';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Az éves előfizetés évente automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót.';
 }

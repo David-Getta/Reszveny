@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "ንሓዋሩ ሰርዝ",
   "accountDeleted": "ሕሳብኩም ተሰሪዙ።",
   "errDeleteAccount": "እቲ ሕሳብ ክስረዝ ኣይከኣለን። ርክብኩም ኣረጋግጹ እሞ ዳግማይ ፈትኑ።",
-  "aiTrialBriefNote": "ትንተናታት ፈተነ ሓጺራት እዮም፣ ብቕልጡፍ ሞዴል AI ድማ ይዳለዉ። ብመደብ ኣዝዩ ብቑዕ AI ናትና፣ ተወሳኺ ምድላያት መርበብ፣ ንቡርን ዕሙቕን ንውሓት ትረኽቡ።"
+  "aiTrialBriefNote": "ትንተናታት ፈተነ ሓጺራት እዮም፣ ብቕልጡፍ ሞዴል AI ድማ ይዳለዉ። ብመደብ ኣዝዩ ብቑዕ AI ናትና፣ ተወሳኺ ምድላያት መርበብ፣ ንቡርን ዕሙቕን ንውሓት ትረኽቡ።",
+  "billingMonthly": "ወርሓዊ",
+  "billingYearly": "ዓመታዊ",
+  "yearlyDiscount": "2 ወርሒ ብነጻ",
+  "perYear": "/ ዓመት",
+  "pricePerMonthApprox": "ኣብ ወርሒ ≈ {price}",
+  "subscriptionLegalYearly": "ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።"
 }

@@ -1275,4 +1275,25 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ditshekatsheko tša teko di kopana gomme di dirwa ka mmotlolo wa AI wo o akgofago. Ka leano o hwetša AI ya rena ye e nago le bokgoni bjo bogolo, dinyakišišo tše dintši tša wepe, le botelele bja Ya tlwaelo le Ye e tseneletšego.';
+
+  @override
+  String get billingMonthly => 'Ka kgwedi';
+
+  @override
+  String get billingYearly => 'Ka ngwaga';
+
+  @override
+  String get yearlyDiscount => 'Dikgwedi tše 2 mahala';
+
+  @override
+  String get perYear => '/ ngwaga';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ka kgwedi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Dingwadišo tša ngwaga di mpshafatšwa ka go itiragalela ngwaga le ngwaga go fihlela o di khansela. Ka go ingwadiša o amogela Mabaka a Tšhomišo le Pholisi ya Sephiri.';
 }

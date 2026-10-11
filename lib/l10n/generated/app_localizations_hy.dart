@@ -1272,4 +1272,25 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Փորձնական վերլուծությունները համառոտ են և կատարվում են ավելի արագ AI մոդելով։ Պլանով դուք ստանում եք մեր ամենահզոր AI-ն, ավելի շատ վեբ որոնումներ և Ստանդարտ ու Խորքային երկարությունները։';
+
+  @override
+  String get billingMonthly => 'Ամսական';
+
+  @override
+  String get billingYearly => 'Տարեկան';
+
+  @override
+  String get yearlyDiscount => '2 ամիս անվճար';
+
+  @override
+  String get perYear => '/ տարի';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ամսական';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Տարեկան բաժանորդագրությունն ավտոմատ երկարաձգվում է ամեն տարի, մինչև այն չեղարկեք։ Բաժանորդագրվելով՝ դուք ընդունում եք Օգտագործման պայմանները և Գաղտնիության քաղաքականությունը։';
 }

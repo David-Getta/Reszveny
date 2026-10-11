@@ -1263,4 +1263,25 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analyser i prøveperioden er korte og laves med en hurtigere AI-model. Med en plan får du vores mest avancerede AI, flere websøgninger og længderne Standard og Dybdegående.';
+
+  @override
+  String get billingMonthly => 'Månedlig';
+
+  @override
+  String get billingYearly => 'Årlig';
+
+  @override
+  String get yearlyDiscount => '2 måneder gratis';
+
+  @override
+  String get perYear => '/ år';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price pr. måned';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Årsabonnementet fornyes automatisk hvert år, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken.';
 }

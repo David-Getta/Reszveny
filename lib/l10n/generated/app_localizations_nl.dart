@@ -1265,4 +1265,25 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analyses in de proefperiode zijn kort en worden gemaakt met een sneller AI-model. Met een abonnement krijg je ons krachtigste AI-model, meer webzoekopdrachten en de lengtes Standaard en Diepgaand.';
+
+  @override
+  String get billingMonthly => 'Maandelijks';
+
+  @override
+  String get billingYearly => 'Jaarlijks';
+
+  @override
+  String get yearlyDiscount => '2 maanden gratis';
+
+  @override
+  String get perYear => '/ jaar';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price per maand';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid.';
 }

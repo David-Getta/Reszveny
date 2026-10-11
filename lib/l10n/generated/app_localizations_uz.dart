@@ -1263,4 +1263,25 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Sinov tahlillari qisqa va tezroq AI modeli bilan tayyorlanadi. Tarif bilan eng kuchli AI modelimiz, koʻproq veb-qidiruv hamda Standart va Batafsil uzunliklarni olasiz.';
+
+  @override
+  String get billingMonthly => 'Oylik';
+
+  @override
+  String get billingYearly => 'Yillik';
+
+  @override
+  String get yearlyDiscount => '2 oy bepul';
+
+  @override
+  String get perYear => '/ yil';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Oyiga ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Yillik obuna bekor qilinmaguncha har yili avtomatik ravishda yangilanadi. Obuna boʻlish orqali siz Foydalanish shartlari va Maxfiylik siyosatini qabul qilasiz.';
 }

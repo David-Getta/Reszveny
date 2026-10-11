@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Futa kabisa",
   "accountDeleted": "Akaunti yako imefutwa.",
   "errDeleteAccount": "Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.",
-  "aiTrialBriefNote": "Uchambuzi wa jaribio ni mfupi na hufanywa kwa modeli ya AI yenye kasi zaidi. Ukiwa na mpango, unapata AI yetu yenye uwezo mkubwa zaidi, utafutaji zaidi wa wavuti, na urefu wa Wastani na Wa kina."
+  "aiTrialBriefNote": "Uchambuzi wa jaribio ni mfupi na hufanywa kwa modeli ya AI yenye kasi zaidi. Ukiwa na mpango, unapata AI yetu yenye uwezo mkubwa zaidi, utafutaji zaidi wa wavuti, na urefu wa Wastani na Wa kina.",
+  "billingMonthly": "Kila mwezi",
+  "billingYearly": "Kila mwaka",
+  "yearlyDiscount": "Miezi 2 bure",
+  "perYear": "/ mwaka",
+  "pricePerMonthApprox": "≈ {price} kwa mwezi",
+  "subscriptionLegalYearly": "Usajili wa mwaka hujisasisha kiotomatiki kila mwaka hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha."
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Trajno izbriši",
   "accountDeleted": "Vaš je račun izbrisan.",
   "errDeleteAccount": "Račun nije moguće izbrisati. Provjerite vezu i pokušajte ponovno.",
-  "aiTrialBriefNote": "Probne analize su kratke i izrađuje ih brži AI model. Uz plan dobivate naš najsposobniji AI, više web-pretraživanja te standardnu i detaljnu duljinu."
+  "aiTrialBriefNote": "Probne analize su kratke i izrađuje ih brži AI model. Uz plan dobivate naš najsposobniji AI, više web-pretraživanja te standardnu i detaljnu duljinu.",
+  "billingMonthly": "Mjesečno",
+  "billingYearly": "Godišnje",
+  "yearlyDiscount": "2 mjeseca besplatno",
+  "perYear": "/ godina",
+  "pricePerMonthApprox": "≈ {price} mjesečno",
+  "subscriptionLegalYearly": "Godišnja pretplata se automatski obnavlja svake godine dok je ne otkažete. Pretplatom prihvaćate Uvjete korištenja i Pravila privatnosti."
 }

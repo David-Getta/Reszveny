@@ -1265,4 +1265,25 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Tetekpɔ numekukuwo le kpui eye AI model si wɔa dɔ kabakaba wu la wɔa wo. Ne plan le asiwò la, àxɔ míaƒe AI si ŋu ŋutete le wu, internet dzi didi geɖe wu, kple didime Titina kple Goglo.';
+
+  @override
+  String get billingMonthly => 'Ɣleti sia ɣleti';
+
+  @override
+  String get billingYearly => 'Ƒe sia ƒe';
+
+  @override
+  String get yearlyDiscount => 'Ɣleti 2 femaxee';
+
+  @override
+  String get perYear => '/ ƒe';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ɣleti sia ɣleti';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Subscription wɔa eɖokui yeye ƒe sia ƒe va se ɖe esime nàɖe asi le eŋu. Ne èŋlɔ ŋkɔ la, èlɔ̃ ɖe Zãzã ƒe Sewo kple Adzamenyawo ƒe Ɖoɖo dzi.';
 }

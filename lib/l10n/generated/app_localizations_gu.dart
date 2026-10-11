@@ -1260,4 +1260,25 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ટ્રાયલનાં વિશ્લેષણ ટૂંકાં હોય છે અને વધુ ઝડપી AI મોડલથી બને છે. પ્લાન સાથે તમને અમારું સૌથી સક્ષમ AI, વધુ વેબ શોધ અને માનક તથા વિગતવાર લંબાઈ મળે છે.';
+
+  @override
+  String get billingMonthly => 'માસિક';
+
+  @override
+  String get billingYearly => 'વાર્ષિક';
+
+  @override
+  String get yearlyDiscount => '2 મહિના મફત';
+
+  @override
+  String get perYear => '/ વર્ષે';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'દર મહિને ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'તમે રદ ન કરો ત્યાં સુધી વાર્ષિક સબ્સ્ક્રિપ્શન દર વર્ષે આપમેળે રિન્યૂ થાય છે. સબ્સ્ક્રાઇબ કરીને તમે ઉપયોગની શરતો અને ગોપનીયતા નીતિ સ્વીકારો છો.';
 }

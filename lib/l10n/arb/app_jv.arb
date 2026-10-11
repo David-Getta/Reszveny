@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Busak permanen",
   "accountDeleted": "Akun sampeyan wis dibusak.",
   "errDeleteAccount": "Akun ora bisa dibusak. Priksa sambungan lan coba manèh.",
-  "aiTrialBriefNote": "Analisis nyoba iku ringkes lan digawe nganggo model AI sing luwih cepet. Kanthi paket, sampeyan entuk AI paling canggih saka kita, luwih akeh telusuran web, lan dawa Standar lan Jero."
+  "aiTrialBriefNote": "Analisis nyoba iku ringkes lan digawe nganggo model AI sing luwih cepet. Kanthi paket, sampeyan entuk AI paling canggih saka kita, luwih akeh telusuran web, lan dawa Standar lan Jero.",
+  "billingMonthly": "Saben sasi",
+  "billingYearly": "Saben taun",
+  "yearlyDiscount": "Gratis 2 sasi",
+  "perYear": "/ taun",
+  "pricePerMonthApprox": "≈ {price} saben sasi",
+  "subscriptionLegalYearly": "Langganan taunan otomatis dianyari saben taun nganti sampeyan mbatalake. Kanthi langganan, sampeyan nampa Katemtuan Panganggo lan Kawicaksanan Privasi."
 }

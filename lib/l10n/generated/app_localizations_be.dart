@@ -1314,4 +1314,25 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Пробныя аналізы кароткія і ствараюцца больш хуткай мадэллю AI. З тарыфам вы атрымліваеце наш самы магутны AI, больш вэб-пошукаў, а таксама даўжыні «Стандартна» і «Падрабязна».';
+
+  @override
+  String get billingMonthly => 'Штомесяц';
+
+  @override
+  String get billingYearly => 'Штогод';
+
+  @override
+  String get yearlyDiscount => '2 месяцы бясплатна';
+
+  @override
+  String get perYear => '/ год';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price у месяц';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Гадавая падпіска аўтаматычна падаўжаецца кожны год, пакуль вы яе не скасуеце. Афармляючы падпіску, вы згаджаецеся з Умовамі выкарыстання і Палітыкай прыватнасці.';
 }

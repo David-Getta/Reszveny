@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Bara baraan haqi",
   "accountDeleted": "Herregni kee haqameera.",
   "errDeleteAccount": "Herregni haqamuu hin dandeenye. Walqunnamtii kee mirkaneeffadhuu irra deebi'ii yaali.",
-  "aiTrialBriefNote": "Xiinxalli yaalii gabaabaa dha, moodeela AI saffisaa ta'eenis hojjetama. Karooraan AI keenya isa hunda caalaa cimu, barbaacha weebii dabalataa, akkasumas dheerina Idilee fi Gadi fagoo argatta."
+  "aiTrialBriefNote": "Xiinxalli yaalii gabaabaa dha, moodeela AI saffisaa ta'eenis hojjetama. Karooraan AI keenya isa hunda caalaa cimu, barbaacha weebii dabalataa, akkasumas dheerina Idilee fi Gadi fagoo argatta.",
+  "billingMonthly": "Ji'aan",
+  "billingYearly": "Waggaan",
+  "yearlyDiscount": "Ji'a 2 bilisaa",
+  "perYear": "/ waggaa",
+  "pricePerMonthApprox": "Ji'atti ≈ {price}",
+  "subscriptionLegalYearly": "Miseensummaan waggaa hanga ati haqxutti waggaa waggaan ofumaan haaromfama. Miseensa ta'uudhaan Haalota Itti Fayyadamaa fi Imaammata Dhuunfaa fudhatta."
 }

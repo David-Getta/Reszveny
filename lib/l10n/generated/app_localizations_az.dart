@@ -1263,4 +1263,25 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Sınaq təhlilləri qısadır və daha sürətli AI modeli ilə hazırlanır. Planla ən güclü AI modelimizi, daha çox veb axtarışını, həmçinin Standart və Ətraflı həcmləri əldə edirsiniz.';
+
+  @override
+  String get billingMonthly => 'Aylıq';
+
+  @override
+  String get billingYearly => 'İllik';
+
+  @override
+  String get yearlyDiscount => '2 ay pulsuz';
+
+  @override
+  String get perYear => '/ il';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Ayda ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz.';
 }

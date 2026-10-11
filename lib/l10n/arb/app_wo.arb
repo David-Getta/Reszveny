@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Far ba fàww",
   "accountDeleted": "Far nañu sa kont.",
   "errDeleteAccount": "Mënuñu far kont bi. Seetal sa internet te jéemaat.",
-  "aiTrialBriefNote": "Saytu yi ci jéem bi gàtt lañu, te ab modèl AI bu gën a gaaw lañu leen di defe. Ak benn formil, dinga am sunu AI bi gën a mën, seet yu ëpp ci internet, ak guddaay Digg ak Bu xóot."
+  "aiTrialBriefNote": "Saytu yi ci jéem bi gàtt lañu, te ab modèl AI bu gën a gaaw lañu leen di defe. Ak benn formil, dinga am sunu AI bi gën a mën, seet yu ëpp ci internet, ak guddaay Digg ak Bu xóot.",
+  "billingMonthly": "Weer wu nekk",
+  "billingYearly": "At mu nekk",
+  "yearlyDiscount": "2 weer yu amul fey",
+  "perYear": "/ at",
+  "pricePerMonthApprox": "≈ {price} ci weer wi",
+  "subscriptionLegalYearly": "Abonmaa yu at yi dañuy yeesu ci seen bopp at mu nekk ba nga neenal. Su nga bindoo, nangu nga Sàrti jëfandikoo ak Politigu sutura."
 }

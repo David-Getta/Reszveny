@@ -1266,4 +1266,25 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analysen in der Testphase sind kurz und werden mit einem schnelleren KI-Modell erstellt. Mit einem Tarif bekommst du unsere leistungsfähigste KI, mehr Websuchen und die Längen Standard und Ausführlich.';
+
+  @override
+  String get billingMonthly => 'Monatlich';
+
+  @override
+  String get billingYearly => 'Jährlich';
+
+  @override
+  String get yearlyDiscount => '2 Monate gratis';
+
+  @override
+  String get perYear => '/ Jahr';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price pro Monat';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Jahresabos verlängern sich jährlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung.';
 }

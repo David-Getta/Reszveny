@@ -1311,4 +1311,25 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Skúšobné analýzy sú stručné a vytvára ich rýchlejší model AI. S tarifom získate náš najvýkonnejší model AI, viac vyhľadávaní na webe a štandardnú aj podrobnú dĺžku.';
+
+  @override
+  String get billingMonthly => 'Mesačne';
+
+  @override
+  String get billingYearly => 'Ročne';
+
+  @override
+  String get yearlyDiscount => '2 mesiace zadarmo';
+
+  @override
+  String get perYear => '/ rok';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price mesačne';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ročné predplatné sa každý rok automaticky obnovuje, kým ho nezrušíte. Predplatením súhlasíte s Podmienkami používania a Zásadami ochrany osobných údajov.';
 }

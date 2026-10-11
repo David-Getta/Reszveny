@@ -1263,4 +1263,25 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Tiselḍin n tirmit d tiwezlanin, ttwaxedment s umudil n AI yettxeddmen s zzerb ugar. S uɣawas, tesɛiḍ AI-nneɣ yifen akk, ugar n yinadiyen deg web, akked teɣzi Alugan d S telqayt.';
+
+  @override
+  String get billingMonthly => 'Yal ayyur';
+
+  @override
+  String get billingYearly => 'Yal aseggas';
+
+  @override
+  String get yearlyDiscount => '2 n wayyuren baṭel';
+
+  @override
+  String get perYear => '/ aseggas';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price deg wayyur';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ajerred aseggasan yettwajedded s wudem awurman yal aseggas alamma tsefsxeḍ-t. Mi ara tjerrdeḍ, ad tqebleḍ Tiwtilin n useqdec akked Tasertit n tbaḍnit.';
 }

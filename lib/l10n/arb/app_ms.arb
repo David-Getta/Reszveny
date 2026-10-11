@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Padam secara kekal",
   "accountDeleted": "Akaun anda telah dipadam.",
   "errDeleteAccount": "Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi.",
-  "aiTrialBriefNote": "Analisis percubaan adalah ringkas dan dihasilkan dengan model AI yang lebih pantas. Dengan pelan, anda mendapat AI kami yang paling canggih, lebih banyak carian web, serta panjang Standard dan Mendalam."
+  "aiTrialBriefNote": "Analisis percubaan adalah ringkas dan dihasilkan dengan model AI yang lebih pantas. Dengan pelan, anda mendapat AI kami yang paling canggih, lebih banyak carian web, serta panjang Standard dan Mendalam.",
+  "billingMonthly": "Bulanan",
+  "billingYearly": "Tahunan",
+  "yearlyDiscount": "2 bulan percuma",
+  "perYear": "/ tahun",
+  "pricePerMonthApprox": "≈ {price} sebulan",
+  "subscriptionLegalYearly": "Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi."
 }

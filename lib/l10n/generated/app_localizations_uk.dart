@@ -1313,4 +1313,25 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Пробні аналізи короткі й створюються швидшою моделлю ШІ. З тарифом ви отримуєте наш найпотужніший ШІ, більше вебпошуку та довжини «Стандартно» і «Детально».';
+
+  @override
+  String get billingMonthly => 'Щомісяця';
+
+  @override
+  String get billingYearly => 'Щороку';
+
+  @override
+  String get yearlyDiscount => '2 місяці безкоштовно';
+
+  @override
+  String get perYear => '/ рік';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price на місяць';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Річна підписка автоматично поновлюється щороку, доки ви її не скасуєте. Оформлюючи підписку, ви приймаєте Умови використання та Політику конфіденційності.';
 }

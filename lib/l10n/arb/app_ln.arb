@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Limwisa mpo na libela",
   "accountDeleted": "Compte na yo elimwisami.",
   "errDeleteAccount": "Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu.",
-  "aiTrialBriefNote": "Ba-analyse ya komeka ezali mokuse mpe esalemaka na modèle ya AI oyo ekendaka noki. Na forfait, ozwaka AI na biso ya makasi koleka, boluki mingi na internet, mpe bolai Ya katikati mpe Ya mozindo."
+  "aiTrialBriefNote": "Ba-analyse ya komeka ezali mokuse mpe esalemaka na modèle ya AI oyo ekendaka noki. Na forfait, ozwaka AI na biso ya makasi koleka, boluki mingi na internet, mpe bolai Ya katikati mpe Ya mozindo.",
+  "billingMonthly": "Sanza na sanza",
+  "billingYearly": "Mobu na mobu",
+  "yearlyDiscount": "Sanza 2 ofele",
+  "perYear": "/ mobu",
+  "pricePerMonthApprox": "≈ {price} na sanza",
+  "subscriptionLegalYearly": "Abonnement ya mbula ezongisamaka yango moko mbula nyɔnsɔ tii okotika yango. Na komikomisa, ondimi Mibeko ya bosaleli mpe Mibeko ya kobatela ba-donnée."
 }

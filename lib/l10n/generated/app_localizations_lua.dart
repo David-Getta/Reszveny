@@ -1273,4 +1273,25 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Makonkonona a diteta adi mîpi ne adi enzeka ne modele wa AI wa lukasa. Ne forfait, udi upeta AI wetu mupite bukole, makeba a bungi ku internet, ne bule bua Wa pankatshi ne Mule.';
+
+  @override
+  String get billingMonthly => 'Ku ngondo';
+
+  @override
+  String get billingYearly => 'Ku tshidimu';
+
+  @override
+  String get yearlyDiscount => 'Ngondo 2 patupu';
+
+  @override
+  String get perYear => '/ tshidimu';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ku ngondo';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe.';
 }

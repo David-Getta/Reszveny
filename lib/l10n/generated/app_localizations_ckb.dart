@@ -1261,4 +1261,25 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'شیکارییەکانی تاقیکردنەوە کورتن و بە مۆدێلێکی AIی خێراتر دروست دەکرێن. بە پلانێک بەهێزترین AIی ئێمە، گەڕانی وێبی زیاتر و درێژیی ستاندارد و قووڵ وەردەگریت.';
+
+  @override
+  String get billingMonthly => 'مانگانە';
+
+  @override
+  String get billingYearly => 'ساڵانە';
+
+  @override
+  String get yearlyDiscount => '2 مانگ بێبەرامبەر';
+
+  @override
+  String get perYear => '/ ساڵ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price لە مانگێکدا';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ئابوونە ساڵانەکان هەموو ساڵێک بە خۆکاری نوێ دەبنەوە تا هەڵیان دەوەشێنیتەوە. بە ئابوونەبوون، مەرجەکانی بەکارهێنان و سیاسەتی تایبەتێتی قبووڵ دەکەیت.';
 }

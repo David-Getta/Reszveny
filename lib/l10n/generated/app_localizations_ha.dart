@@ -1264,4 +1264,25 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Nazarin gwaji taƙaitacce ne kuma ana yin su da samfurin AI mai sauri. Da tsari za ka sami AI ɗinmu mafi ƙarfi, ƙarin binciken yanar gizo, da tsawon Daidaitacce da Mai zurfi.';
+
+  @override
+  String get billingMonthly => 'Wata-wata';
+
+  @override
+  String get billingYearly => 'Shekara-shekara';
+
+  @override
+  String get yearlyDiscount => 'Wata 2 kyauta';
+
+  @override
+  String get perYear => '/ shekara';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price a wata';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Biyan kuɗin shekara-shekara yana sabunta kansa kowace shekara har sai ka soke. Ta hanyar biyan kuɗi ka yarda da Sharuɗɗan Amfani da Manufar Sirri.';
 }

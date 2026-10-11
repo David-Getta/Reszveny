@@ -1220,4 +1220,24 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get aiTrialBriefNote => 'トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。';
+
+  @override
+  String get billingMonthly => '月払い';
+
+  @override
+  String get billingYearly => '年払い';
+
+  @override
+  String get yearlyDiscount => '2か月分無料';
+
+  @override
+  String get perYear => '/ 年';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '月あたり約 $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly => '年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
 }

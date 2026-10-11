@@ -1269,4 +1269,25 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Kokeilun analyysit ovat lyhyitä, ja ne tehdään nopeammalla tekoälymallilla. Paketilla saat kyvykkäimmän tekoälymme, enemmän verkkohakuja sekä pituudet Vakio ja Syvällinen.';
+
+  @override
+  String get billingMonthly => 'Kuukausittain';
+
+  @override
+  String get billingYearly => 'Vuosittain';
+
+  @override
+  String get yearlyDiscount => '2 kk ilmaiseksi';
+
+  @override
+  String get perYear => '/ vuosi';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kuukaudessa';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Vuositilaus uusiutuu automaattisesti joka vuosi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen.';
 }

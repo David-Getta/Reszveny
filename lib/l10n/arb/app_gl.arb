@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Eliminar para sempre",
   "accountDeleted": "A túa conta eliminouse.",
   "errDeleteAccount": "Non se puido eliminar a conta. Comproba a conexión e téntao de novo.",
-  "aiTrialBriefNote": "As análises de proba son breves e fanse cun modelo de IA máis rápido. Cun plan obtés a nosa IA máis capaz, máis buscas web e as extensións Estándar e A fondo."
+  "aiTrialBriefNote": "As análises de proba son breves e fanse cun modelo de IA máis rápido. Cun plan obtés a nosa IA máis capaz, máis buscas web e as extensións Estándar e A fondo.",
+  "billingMonthly": "Mensual",
+  "billingYearly": "Anual",
+  "yearlyDiscount": "2 meses de balde",
+  "perYear": "/ ano",
+  "pricePerMonthApprox": "≈ {price} ao mes",
+  "subscriptionLegalYearly": "A subscrición anual renóvase automaticamente cada ano ata que a canceles. Ao subscribirte aceptas as Condicións de uso e a Política de privacidade."
 }

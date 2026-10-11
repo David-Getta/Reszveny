@@ -1313,4 +1313,25 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Bandomosios analizės yra trumpos ir rengiamos greitesniu DI modeliu. Su planu gaunate pajėgiausią mūsų DI, daugiau paieškų internete ir standartinę bei išsamią apimtį.';
+
+  @override
+  String get billingMonthly => 'Kas mėnesį';
+
+  @override
+  String get billingYearly => 'Kasmet';
+
+  @override
+  String get yearlyDiscount => '2 mėn. nemokamai';
+
+  @override
+  String get perYear => '/ metus';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price per mėnesį';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Metinė prenumerata kasmet automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika.';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Fafao tanteraka",
   "accountDeleted": "Voafafa ny kaontinao.",
   "errDeleteAccount": "Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray.",
-  "aiTrialBriefNote": "Fohy ny fandalinana mandritra ny fanandramana ary atao amin'ny modely AI haingana kokoa. Miaraka amin'ny tolotra, mahazo ny AI matanjaka indrindra ananay ianao, fikarohana an-tranonkala bebe kokoa ary ny halavany Antonony sy Lalina."
+  "aiTrialBriefNote": "Fohy ny fandalinana mandritra ny fanandramana ary atao amin'ny modely AI haingana kokoa. Miaraka amin'ny tolotra, mahazo ny AI matanjaka indrindra ananay ianao, fikarohana an-tranonkala bebe kokoa ary ny halavany Antonony sy Lalina.",
+  "billingMonthly": "Isam-bolana",
+  "billingYearly": "Isan-taona",
+  "yearlyDiscount": "2 volana maimaim-poana",
+  "perYear": "/ taona",
+  "pricePerMonthApprox": "≈ {price} isam-bolana",
+  "subscriptionLegalYearly": "Havaozina ho azy isan-taona ny famandrihana mandra-pahafoananao azy. Amin'ny fanaovana famandrihana dia manaiky ny Fepetra fampiasana sy ny Politikan'ny fiainana manokana ianao."
 }

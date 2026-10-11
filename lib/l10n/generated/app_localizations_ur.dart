@@ -1262,4 +1262,25 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'آزمائشی تجزیے مختصر ہوتے ہیں اور تیز تر AI ماڈل سے بنائے جاتے ہیں۔ پلان کے ساتھ آپ کو ہمارا سب سے قابل AI، زیادہ ویب تحقیق، اور معیاری و تفصیلی طوالت ملتی ہے۔';
+
+  @override
+  String get billingMonthly => 'ماہانہ';
+
+  @override
+  String get billingYearly => 'سالانہ';
+
+  @override
+  String get yearlyDiscount => '2 ماہ مفت';
+
+  @override
+  String get perYear => '/ سال';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ماہانہ';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'سالانہ سبسکرپشن ہر سال خودبخود تجدید ہوتی ہے جب تک آپ اسے منسوخ نہ کریں۔ سبسکرائب کر کے آپ شرائطِ استعمال اور رازداری کی پالیسی قبول کرتے ہیں۔';
 }

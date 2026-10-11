@@ -1245,4 +1245,25 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ትንተናታት ፈተነ ሓጺራት እዮም፣ ብቕልጡፍ ሞዴል AI ድማ ይዳለዉ። ብመደብ ኣዝዩ ብቑዕ AI ናትና፣ ተወሳኺ ምድላያት መርበብ፣ ንቡርን ዕሙቕን ንውሓት ትረኽቡ።';
+
+  @override
+  String get billingMonthly => 'ወርሓዊ';
+
+  @override
+  String get billingYearly => 'ዓመታዊ';
+
+  @override
+  String get yearlyDiscount => '2 ወርሒ ብነጻ';
+
+  @override
+  String get perYear => '/ ዓመት';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'ኣብ ወርሒ ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "完全に削除",
   "accountDeleted": "アカウントを削除しました。",
   "errDeleteAccount": "アカウントを削除できませんでした。接続を確認してもう一度お試しください。",
-  "aiTrialBriefNote": "トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。"
+  "aiTrialBriefNote": "トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。",
+  "billingMonthly": "月払い",
+  "billingYearly": "年払い",
+  "yearlyDiscount": "2か月分無料",
+  "perYear": "/ 年",
+  "pricePerMonthApprox": "月あたり約 {price}",
+  "subscriptionLegalYearly": "年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。"
 }

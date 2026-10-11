@@ -1279,4 +1279,25 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ditlhahlobo tsa teko di kgutshwanyane mme di etswa ka mofuta wa AI o potlakileng. Ka moralo o fumana AI ya rona e matla ka ho fetisisa, dipatlo tse ngata tsa inthanete, le bolelele ba Mahareng le E qaqileng.';
+
+  @override
+  String get billingMonthly => 'Ka kgwedi';
+
+  @override
+  String get billingYearly => 'Ka selemo';
+
+  @override
+  String get yearlyDiscount => 'Dikgwedi tse 2 mahala';
+
+  @override
+  String get perYear => '/ selemo';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ka kgwedi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Dingodiso tsa selemo di ntjhafala ka boiketsetso selemo le selemo ho fihlela o di khansela. Ka ho ingodisa o amohela Dipehelo tsa Tshebediso le Pholisi ya Lekunutu.';
 }

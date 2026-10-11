@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Popa koraa",
   "accountDeleted": "Wɔapopa w’akawnt.",
   "errDeleteAccount": "Yɛantumi ampopa akawnt no. Hwɛ wo nkitahodi na sɔ hwɛ bio.",
-  "aiTrialBriefNote": "Sɔhwɛ nhwehwɛmu yɛ tiawa, na AI model a ɛyɛ ntɛm na ɛyɛ. Sɛ wowɔ plan a, wunya yɛn AI a ɛyɛ papa sen biara, intanɛt so nhwehwɛ pii, ne tenten Mfinimfini ne Emu dɔ."
+  "aiTrialBriefNote": "Sɔhwɛ nhwehwɛmu yɛ tiawa, na AI model a ɛyɛ ntɛm na ɛyɛ. Sɛ wowɔ plan a, wunya yɛn AI a ɛyɛ papa sen biara, intanɛt so nhwehwɛ pii, ne tenten Mfinimfini ne Emu dɔ.",
+  "billingMonthly": "Bosome biara",
+  "billingYearly": "Afe biara",
+  "yearlyDiscount": "Bosome 2 kwa",
+  "perYear": "/ afe",
+  "pricePerMonthApprox": "≈ {price} bosome biara",
+  "subscriptionLegalYearly": "Subscription yɛ foforo ankasa afe biara kosi sɛ wobɛtwa mu. Sɛ wokyerɛw wo din a, wopene Dwumadi Mmara ne Kokoam Nhyehyɛe no so."
 }

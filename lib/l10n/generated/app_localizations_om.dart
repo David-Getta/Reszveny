@@ -1270,4 +1270,25 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Xiinxalli yaalii gabaabaa dha, moodeela AI saffisaa ta\'eenis hojjetama. Karooraan AI keenya isa hunda caalaa cimu, barbaacha weebii dabalataa, akkasumas dheerina Idilee fi Gadi fagoo argatta.';
+
+  @override
+  String get billingMonthly => 'Ji\'aan';
+
+  @override
+  String get billingYearly => 'Waggaan';
+
+  @override
+  String get yearlyDiscount => 'Ji\'a 2 bilisaa';
+
+  @override
+  String get perYear => '/ waggaa';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Ji\'atti ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Miseensummaan waggaa hanga ati haqxutti waggaa waggaan ofumaan haaromfama. Miseensa ta\'uudhaan Haalota Itti Fayyadamaa fi Imaammata Dhuunfaa fudhatta.';
 }

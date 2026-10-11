@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Fufutani kotheratu",
   "accountDeleted": "Akaunti yanu yafufutidwa.",
   "errDeleteAccount": "Akaunti sinathe kufufutidwa. Onani intaneti yanu ndipo yesaninso.",
-  "aiTrialBriefNote": "Kusanthula kwa nthawi yoyesera kumakhala kwachidule ndipo kumapangidwa ndi mtundu wa AI wothamanga kwambiri. Ndi dongosolo, mumapeza AI yathu yamphamvu kwambiri, kusaka kwambiri pa intaneti, komanso kutalika kwa Kwanthawi zonse ndi Kwatsatanetsatane."
+  "aiTrialBriefNote": "Kusanthula kwa nthawi yoyesera kumakhala kwachidule ndipo kumapangidwa ndi mtundu wa AI wothamanga kwambiri. Ndi dongosolo, mumapeza AI yathu yamphamvu kwambiri, kusaka kwambiri pa intaneti, komanso kutalika kwa Kwanthawi zonse ndi Kwatsatanetsatane.",
+  "billingMonthly": "Pamwezi",
+  "billingYearly": "Pachaka",
+  "yearlyDiscount": "Miyezi 2 yaulere",
+  "perYear": "/ chaka",
+  "pricePerMonthApprox": "≈ {price} pamwezi",
+  "subscriptionLegalYearly": "Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi."
 }

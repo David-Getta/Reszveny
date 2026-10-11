@@ -1247,4 +1247,25 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'የሙከራ ትንተናዎች አጭር ናቸው፤ በፈጣን የAI ሞዴል ይዘጋጃሉ። በዕቅድ ምርጡን የAI ሞዴላችንን፣ ተጨማሪ የድር ፍለጋዎችን እንዲሁም መደበኛ እና ጥልቅ ርዝመቶችን ያገኛሉ።';
+
+  @override
+  String get billingMonthly => 'ወርሃዊ';
+
+  @override
+  String get billingYearly => 'ዓመታዊ';
+
+  @override
+  String get yearlyDiscount => '2 ወር ነፃ';
+
+  @override
+  String get perYear => '/ ዓመት';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ በወር $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ዓመታዊ የደንበኝነት ምዝገባዎች እስኪሰርዟቸው ድረስ በየዓመቱ በራስ-ሰር ይታደሳሉ። በመመዝገብ የአጠቃቀም ውሉን እና የግላዊነት መመሪያውን ይቀበላሉ።';
 }

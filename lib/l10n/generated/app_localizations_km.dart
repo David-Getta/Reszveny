@@ -1248,4 +1248,25 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ការវិភាគសាកល្បងមានលក្ខណៈសង្ខេប និងបង្កើតដោយម៉ូដែល AI ដែលលឿនជាង។ ជាមួយគម្រោង អ្នកទទួលបាន AI ដែលមានសមត្ថភាពខ្លាំងបំផុតរបស់យើង ការស្វែងរកលើបណ្ដាញច្រើនជាង និងប្រវែងស្តង់ដារ និងស៊ីជម្រៅ។';
+
+  @override
+  String get billingMonthly => 'ប្រចាំខែ';
+
+  @override
+  String get billingYearly => 'ប្រចាំឆ្នាំ';
+
+  @override
+  String get yearlyDiscount => 'ឥតគិតថ្លៃ 2 ខែ';
+
+  @override
+  String get perYear => '/ ឆ្នាំ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ក្នុងមួយខែ';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'ការជាវប្រចាំឆ្នាំបន្តដោយស្វ័យប្រវត្តិរៀងរាល់ឆ្នាំ រហូតដល់អ្នកបោះបង់។ ដោយការជាវ អ្នកយល់ព្រមលើលក្ខខណ្ឌប្រើប្រាស់ និងគោលការណ៍ឯកជនភាព។';
 }

@@ -9,8 +9,12 @@ class Pricing {
   static const Map<String, double> baseUsd = {
     'whatstock.sub.normal': 7.99,
     'whatstock.sub.pro': 15.99,
-    'whatstock.sub.max': 39.99,
+    // A Max elemzésenként olcsóbb a Pro-nál (34,99 / 40 < 15,99 / 18): ez a legjobb ár/érték.
+    'whatstock.sub.max': 34.99,
     'whatstock.sub.ultra': 64.99,
+    // Éves: 10 havi díj (2 hónap ingyen).
+    'whatstock.sub.pro.year': 159.99,
+    'whatstock.sub.max.year': 349.99,
     'whatstock.pack.5': 4.99,
     'whatstock.pack.20': 17.99,
     'whatstock.pack.50': 39.99,

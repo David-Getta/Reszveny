@@ -1260,4 +1260,25 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Saytu yi ci jéem bi gàtt lañu, te ab modèl AI bu gën a gaaw lañu leen di defe. Ak benn formil, dinga am sunu AI bi gën a mën, seet yu ëpp ci internet, ak guddaay Digg ak Bu xóot.';
+
+  @override
+  String get billingMonthly => 'Weer wu nekk';
+
+  @override
+  String get billingYearly => 'At mu nekk';
+
+  @override
+  String get yearlyDiscount => '2 weer yu amul fey';
+
+  @override
+  String get perYear => '/ at';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price ci weer wi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonmaa yu at yi dañuy yeesu ci seen bopp at mu nekk ba nga neenal. Su nga bindoo, nangu nga Sàrti jëfandikoo ak Politigu sutura.';
 }

@@ -1262,4 +1262,25 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'آزمائشي تجزيا مختصر هوندا آهن ۽ تيز AI ماڊل سان ٺهندا آهن. پلان سان توهان کي اسان جو سڀ کان قابل AI، وڌيڪ ويب ڳولائون، ۽ معياري توڙي تفصيلي ڊيگهه ملي ٿي.';
+
+  @override
+  String get billingMonthly => 'ماهوار';
+
+  @override
+  String get billingYearly => 'سالياني';
+
+  @override
+  String get yearlyDiscount => '2 مهينا مفت';
+
+  @override
+  String get perYear => '/ سال';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'هر مهيني ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'سالياني سبسڪرپشن هر سال پاڻمرادو تجديد ٿيندي رهندي جيستائين توهان ان کي منسوخ نه ڪريو. سبسڪرائيب ڪري توهان استعمال جا شرط ۽ رازداري پاليسي قبول ڪريو ٿا.';
 }

@@ -1267,4 +1267,25 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'சோதனைப் பகுப்பாய்வுகள் சுருக்கமானவை, வேகமான AI மாடலால் உருவாக்கப்படுகின்றன. திட்டத்துடன் எங்களின் மிகத் திறன்வாய்ந்த AI, கூடுதல் இணையத் தேடல்கள், நிலையான மற்றும் விரிவான நீளங்கள் உங்களுக்குக் கிடைக்கும்.';
+
+  @override
+  String get billingMonthly => 'மாதாந்திரம்';
+
+  @override
+  String get billingYearly => 'ஆண்டுதோறும்';
+
+  @override
+  String get yearlyDiscount => '2 மாதங்கள் இலவசம்';
+
+  @override
+  String get perYear => '/ ஆண்டு';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'மாதத்திற்கு ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'நீங்கள் ரத்து செய்யும் வரை ஆண்டுச் சந்தா ஒவ்வொரு ஆண்டும் தானாகப் புதுப்பிக்கப்படும். சந்தா செலுத்துவதன் மூலம் பயன்பாட்டு விதிமுறைகளையும் தனியுரிமைக் கொள்கையையும் ஏற்கிறீர்கள்.';
 }

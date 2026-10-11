@@ -1261,4 +1261,25 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ट्रायल के विश्लेषण संक्षिप्त होते हैं और एक तेज़ AI मॉडल से बनते हैं। प्लान के साथ आपको हमारा सबसे सक्षम AI, ज़्यादा वेब खोजें और मानक व विस्तृत लंबाई मिलती है।';
+
+  @override
+  String get billingMonthly => 'मासिक';
+
+  @override
+  String get billingYearly => 'वार्षिक';
+
+  @override
+  String get yearlyDiscount => '2 महीने मुफ़्त';
+
+  @override
+  String get perYear => '/ वर्ष';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price प्रति माह';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'वार्षिक सदस्यता हर साल अपने आप नवीनीकृत होती है, जब तक आप इसे रद्द न करें। सदस्यता लेकर आप उपयोग की शर्तें और गोपनीयता नीति स्वीकार करते हैं।';
 }

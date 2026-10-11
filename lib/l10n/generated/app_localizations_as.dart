@@ -1263,4 +1263,25 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ট্ৰায়েলৰ বিশ্লেষণসমূহ চমু আৰু এটা অধিক দ্ৰুত AI মডেলেৰে প্ৰস্তুত কৰা হয়। প্লানৰ সৈতে আপুনি আমাৰ আটাইতকৈ সক্ষম AI, অধিক ৱেব সন্ধান, লগতে মানক আৰু বিতং দৈৰ্ঘ্য পাব।';
+
+  @override
+  String get billingMonthly => 'মাহেকীয়া';
+
+  @override
+  String get billingYearly => 'বাৰ্ষিক';
+
+  @override
+  String get yearlyDiscount => '2 মাহ বিনামূলীয়া';
+
+  @override
+  String get perYear => '/ বছৰ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'প্ৰতি মাহে ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'আপুনি বাতিল নকৰালৈকে বাৰ্ষিক ছাবস্ক্ৰিপশ্বন প্ৰতি বছৰে স্বয়ংক্ৰিয়ভাৱে নবীকৰণ হয়। ছাবস্ক্ৰাইব কৰি আপুনি ব্যৱহাৰৰ চৰ্তাৱলী আৰু গোপনীয়তা নীতি গ্ৰহণ কৰে।';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Usuń trwale",
   "accountDeleted": "Twoje konto zostało usunięte.",
   "errDeleteAccount": "Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie.",
-  "aiTrialBriefNote": "Analizy w okresie próbnym są krótkie i powstają z użyciem szybszego modelu AI. Z planem otrzymujesz nasz najbardziej zaawansowany model AI, więcej wyszukiwań w sieci oraz standardową i szczegółową długość analiz."
+  "aiTrialBriefNote": "Analizy w okresie próbnym są krótkie i powstają z użyciem szybszego modelu AI. Z planem otrzymujesz nasz najbardziej zaawansowany model AI, więcej wyszukiwań w sieci oraz standardową i szczegółową długość analiz.",
+  "billingMonthly": "Miesięcznie",
+  "billingYearly": "Rocznie",
+  "yearlyDiscount": "2 miesiące gratis",
+  "perYear": "/ rok",
+  "pricePerMonthApprox": "≈ {price} miesięcznie",
+  "subscriptionLegalYearly": "Subskrypcja roczna odnawia się automatycznie co roku, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności."
 }

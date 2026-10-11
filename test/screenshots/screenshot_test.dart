@@ -455,6 +455,9 @@ void main() {
     await tester.tap(find.text('View plans').first);
     await tester.pumpAndSettle();
     await _shot(tester, 'paywall');
+    await tester.tap(find.textContaining('Yearly', findRichText: true));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'paywall_yearly');
   });
 
   testWidgets('settings: account with delete, legal links (hungarian)', (tester) async {

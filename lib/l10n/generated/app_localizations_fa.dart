@@ -1261,4 +1261,25 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'تحلیل‌های دوره آزمایشی کوتاه هستند و با یک مدل هوش مصنوعی سریع‌تر تهیه می‌شوند. با یک طرح، تواناترین هوش مصنوعی ما، جستجوی وب بیشتر و طول‌های استاندارد و عمیق را دریافت می‌کنید.';
+
+  @override
+  String get billingMonthly => 'ماهانه';
+
+  @override
+  String get billingYearly => 'سالانه';
+
+  @override
+  String get yearlyDiscount => '2 ماه رایگان';
+
+  @override
+  String get perYear => '/ سال';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price در ماه';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'اشتراک سالانه تا زمانی که لغوش نکنید هر سال به‌طور خودکار تمدید می‌شود. با خرید اشتراک، شرایط استفاده و سیاست حریم خصوصی را می‌پذیرید.';
 }

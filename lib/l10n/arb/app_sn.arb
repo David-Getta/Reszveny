@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Dzima zvachose",
   "accountDeleted": "Akaundi yako yadzimwa.",
   "errDeleteAccount": "Akaundi haina kukwanisa kudzimwa. Tarisa kubatana kwako wozoedza zvakare.",
-  "aiTrialBriefNote": "Ongororo dzemuedzo ipfupi uye dzinoitwa nemodhi yeAI inokurumidza. Nechirongwa unowana AI yedu ine simba kwazvo, kutsvaga kwakawanda paindaneti, uye kureba kweYepakati neYakadzama."
+  "aiTrialBriefNote": "Ongororo dzemuedzo ipfupi uye dzinoitwa nemodhi yeAI inokurumidza. Nechirongwa unowana AI yedu ine simba kwazvo, kutsvaga kwakawanda paindaneti, uye kureba kweYepakati neYakadzama.",
+  "billingMonthly": "Pamwedzi",
+  "billingYearly": "Pagore",
+  "yearlyDiscount": "Mwedzi 2 mahara",
+  "perYear": "/ gore",
+  "pricePerMonthApprox": "≈ {price} pamwedzi",
+  "subscriptionLegalYearly": "Kunyoresa kwegore kunovandudzwa kwega gore rega rega kusvika wakanzura. Nekunyoresa unobvuma Mitemo Yekushandisa neMutemo Wekuvanzika."
 }

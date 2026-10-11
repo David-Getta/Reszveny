@@ -1260,4 +1260,25 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Nyocha nnwale dị nkenke, a na-ejikwa ụdị AI dị ọsọ karịa eme ha. Site n\'atụmatụ, ị na-enweta AI anyị kacha sie ike, ọchụchọ web karịa, yana ogologo Ọkọlọtọ na Miri emi.';
+
+  @override
+  String get billingMonthly => 'Kwa ọnwa';
+
+  @override
+  String get billingYearly => 'Kwa afọ';
+
+  @override
+  String get yearlyDiscount => 'Ọnwa 2 n\'efu';
+
+  @override
+  String get perYear => '/ afọ';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kwa ọnwa';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ndenye aha nke afọ na-emeghari onwe ya kwa afọ ruo mgbe ị kagbuo ya. Site n\'idenye aha, ị nabatara Usoro Ojiji na Iwu Nzuzo.';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Skrap permanent",
   "accountDeleted": "Jou rekening is geskrap.",
   "errDeleteAccount": "Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer.",
-  "aiTrialBriefNote": "Proeftydperk-ontledings is kort en word met ’n vinniger AI-model gemaak. Met ’n plan kry jy ons mees gevorderde AI, meer websoektogte en die lengtes Standaard en Diepgaande."
+  "aiTrialBriefNote": "Proeftydperk-ontledings is kort en word met ’n vinniger AI-model gemaak. Met ’n plan kry jy ons mees gevorderde AI, meer websoektogte en die lengtes Standaard en Diepgaande.",
+  "billingMonthly": "Maandeliks",
+  "billingYearly": "Jaarliks",
+  "yearlyDiscount": "2 maande gratis",
+  "perYear": "/ jaar",
+  "pricePerMonthApprox": "≈ {price} per maand",
+  "subscriptionLegalYearly": "Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid."
 }

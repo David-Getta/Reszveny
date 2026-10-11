@@ -1260,4 +1260,25 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analiz esè yo kout epi se yon modèl AI ki pi rapid ki fè yo. Avèk yon plan, ou jwenn AI ki pi pwisan nou an, plis rechèch sou entènèt, ak longè Estanda ak An pwofondè.';
+
+  @override
+  String get billingMonthly => 'Chak mwa';
+
+  @override
+  String get billingYearly => 'Chak ane';
+
+  @override
+  String get yearlyDiscount => '2 mwa gratis';
+
+  @override
+  String get perYear => '/ ane';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price pa mwa';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abònman anyèl yo renouvle otomatikman chak ane jiskaske ou anile. Lè w abòne, ou aksepte Kondisyon itilizasyon yo ak Politik konfidansyalite a.';
 }

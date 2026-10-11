@@ -807,5 +807,25 @@
   "aiTrialBriefNote": "Trial analyses are brief and made with a faster AI model. With a plan you get our most capable AI, more web research, and the Standard and In-depth lengths.",
   "@aiTrialBriefNote": {
     "description": "Shown during the free trial in Settings (under the analysis length selector) and on the stock page: subscribers get a better analysis because more is spent on it. Standard / In-depth = aiDepthStandard / aiDepthDeep."
+  },
+  "billingMonthly": "Monthly",
+  "billingYearly": "Yearly",
+  "yearlyDiscount": "2 months free",
+  "perYear": "/ year",
+  "pricePerMonthApprox": "≈ {price} per month",
+  "@pricePerMonthApprox": {
+    "description": "Under a yearly price: the per-month equivalent.",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@yearlyDiscount": {
+    "description": "Badge next to Yearly in the billing period switch: yearly costs 10 months' price."
+  },
+  "subscriptionLegalYearly": "Yearly subscriptions renew automatically every year until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.",
+  "@subscriptionLegalYearly": {
+    "description": "Under the plans when the Yearly billing period is selected (yearly counterpart of subscriptionLegal; required by the App Store)."
   }
 }

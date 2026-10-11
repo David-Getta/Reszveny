@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Share har abada",
   "accountDeleted": "An share asusunka.",
   "errDeleteAccount": "Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.",
-  "aiTrialBriefNote": "Nazarin gwaji taƙaitacce ne kuma ana yin su da samfurin AI mai sauri. Da tsari za ka sami AI ɗinmu mafi ƙarfi, ƙarin binciken yanar gizo, da tsawon Daidaitacce da Mai zurfi."
+  "aiTrialBriefNote": "Nazarin gwaji taƙaitacce ne kuma ana yin su da samfurin AI mai sauri. Da tsari za ka sami AI ɗinmu mafi ƙarfi, ƙarin binciken yanar gizo, da tsawon Daidaitacce da Mai zurfi.",
+  "billingMonthly": "Wata-wata",
+  "billingYearly": "Shekara-shekara",
+  "yearlyDiscount": "Wata 2 kyauta",
+  "perYear": "/ shekara",
+  "pricePerMonthApprox": "≈ {price} a wata",
+  "subscriptionLegalYearly": "Biyan kuɗin shekara-shekara yana sabunta kansa kowace shekara har sai ka soke. Ta hanyar biyan kuɗi ka yarda da Sharuɗɗan Amfani da Manufar Sirri."
 }

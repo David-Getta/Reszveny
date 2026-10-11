@@ -1289,4 +1289,25 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Пробните анализи се кратки и се изработуваат со побрз AI-модел. Со план го добивате нашиот најспособен AI, повеќе веб-пребарувања и стандардна и детална должина.';
+
+  @override
+  String get billingMonthly => 'Месечно';
+
+  @override
+  String get billingYearly => 'Годишно';
+
+  @override
+  String get yearlyDiscount => '2 месеци бесплатно';
+
+  @override
+  String get perYear => '/ година';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price месечно';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Годишната претплата автоматски се обновува секоја година додека не ја откажете. Со претплатата ги прифаќате Условите за користење и Политиката за приватност.';
 }

@@ -1222,4 +1222,24 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       '체험 분석은 간략하며 더 빠른 AI 모델로 작성됩니다. 요금제를 이용하면 가장 뛰어난 AI, 더 많은 웹 검색, 표준 및 심층 길이를 이용할 수 있습니다.';
+
+  @override
+  String get billingMonthly => '월간';
+
+  @override
+  String get billingYearly => '연간';
+
+  @override
+  String get yearlyDiscount => '2개월 무료';
+
+  @override
+  String get perYear => '/ 년';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '월 약 $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly => '연간 구독은 해지할 때까지 매년 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.';
 }

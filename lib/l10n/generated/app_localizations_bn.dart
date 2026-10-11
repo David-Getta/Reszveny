@@ -1264,4 +1264,25 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'ট্রায়ালের বিশ্লেষণগুলি সংক্ষিপ্ত এবং একটি দ্রুততর AI মডেল দিয়ে তৈরি। প্ল্যান নিলে আপনি পাবেন আমাদের সবচেয়ে সক্ষম AI, আরও বেশি ওয়েব অনুসন্ধান এবং স্ট্যান্ডার্ড ও বিস্তারিত দৈর্ঘ্য।';
+
+  @override
+  String get billingMonthly => 'মাসিক';
+
+  @override
+  String get billingYearly => 'বার্ষিক';
+
+  @override
+  String get yearlyDiscount => '2 মাস ফ্রি';
+
+  @override
+  String get perYear => '/ বছর';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'প্রতি মাসে ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'আপনি বাতিল না করা পর্যন্ত বার্ষিক সাবস্ক্রিপশন প্রতি বছর নিজে থেকে নবায়ন হয়। সাবস্ক্রাইব করে আপনি ব্যবহারের শর্তাবলি ও গোপনীয়তা নীতি মেনে নেন।';
 }

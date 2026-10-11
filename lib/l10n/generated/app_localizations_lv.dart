@@ -1304,4 +1304,25 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Izmēģinājuma analīzes ir īsas, un tās veido ātrāks AI modelis. Ar plānu jūs saņemat mūsu spēcīgāko AI, vairāk meklējumu tīmeklī, kā arī standarta un padziļināto garumu.';
+
+  @override
+  String get billingMonthly => 'Ik mēnesi';
+
+  @override
+  String get billingYearly => 'Ik gadu';
+
+  @override
+  String get yearlyDiscount => '2 mēneši bez maksas';
+
+  @override
+  String get perYear => '/ gadā';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price mēnesī';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Gada abonements tiek automātiski atjaunots katru gadu, līdz to atceļat. Abonējot jūs piekrītat Lietošanas noteikumiem un Privātuma politikai.';
 }

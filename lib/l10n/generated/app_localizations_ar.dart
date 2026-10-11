@@ -1295,4 +1295,25 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'تحليلات الفترة التجريبية موجزة وتُنجز بنموذج ذكاء اصطناعي أسرع. مع خطة، تحصل على أقوى نموذج ذكاء اصطناعي لدينا، ومزيد من البحث على الويب، وطولَي «قياسي» و«معمّق».';
+
+  @override
+  String get billingMonthly => 'شهري';
+
+  @override
+  String get billingYearly => 'سنوي';
+
+  @override
+  String get yearlyDiscount => 'شهران مجاناً';
+
+  @override
+  String get perYear => '/ سنة';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price شهرياً';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'يتجدد الاشتراك السنوي تلقائيًا كل سنة حتى تلغيه. بالاشتراك فإنك توافق على شروط الاستخدام وسياسة الخصوصية.';
 }

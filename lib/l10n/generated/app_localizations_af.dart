@@ -1263,4 +1263,25 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Proeftydperk-ontledings is kort en word met ’n vinniger AI-model gemaak. Met ’n plan kry jy ons mees gevorderde AI, meer websoektogte en die lengtes Standaard en Diepgaande.';
+
+  @override
+  String get billingMonthly => 'Maandeliks';
+
+  @override
+  String get billingYearly => 'Jaarliks';
+
+  @override
+  String get yearlyDiscount => '2 maande gratis';
+
+  @override
+  String get perYear => '/ jaar';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price per maand';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid.';
 }

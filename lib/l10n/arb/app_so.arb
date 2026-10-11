@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Tirtir si joogto ah",
   "accountDeleted": "Akoonkaaga waa la tirtiray.",
   "errDeleteAccount": "Akoonka lama tirtiri karin. Hubi xiriirkaaga oo isku day mar kale.",
-  "aiTrialBriefNote": "Falanqaynta tijaabadu waa kooban, waxaana lagu sameeyaa nooc AI ah oo degdeg ah. Qorshe ayaad ku helaysaa AI-gayaga ugu awoodda badan, raadin web oo badan, iyo dhererka Caadi iyo Qoto dheer."
+  "aiTrialBriefNote": "Falanqaynta tijaabadu waa kooban, waxaana lagu sameeyaa nooc AI ah oo degdeg ah. Qorshe ayaad ku helaysaa AI-gayaga ugu awoodda badan, raadin web oo badan, iyo dhererka Caadi iyo Qoto dheer.",
+  "billingMonthly": "Bishii",
+  "billingYearly": "Sannadkii",
+  "yearlyDiscount": "2 bilood oo bilaash ah",
+  "perYear": "/ sannadkii",
+  "pricePerMonthApprox": "≈ {price} bishii",
+  "subscriptionLegalYearly": "Rukummooyinka sannadlaha ah si toos ah ayay u cusboonaadaan sannad kasta ilaa aad joojiso. Markaad rukunto waxaad aqbashaa Shuruudaha Isticmaalka iyo Siyaasadda Qarsoodiga."
 }

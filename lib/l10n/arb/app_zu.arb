@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Susa unomphela",
   "accountDeleted": "I-akhawunti yakho isusiwe.",
   "errDeleteAccount": "I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi.",
-  "aiTrialBriefNote": "Izinhlaziyo zokuzama zifushane futhi zenziwa ngemodeli ye-AI esheshayo. Ngohlelo uthola i-AI yethu enekhono kakhulu, usesho lwewebhu olwengeziwe, nobude obuvamile nobujulile."
+  "aiTrialBriefNote": "Izinhlaziyo zokuzama zifushane futhi zenziwa ngemodeli ye-AI esheshayo. Ngohlelo uthola i-AI yethu enekhono kakhulu, usesho lwewebhu olwengeziwe, nobude obuvamile nobujulile.",
+  "billingMonthly": "Ngenyanga",
+  "billingYearly": "Ngonyaka",
+  "yearlyDiscount": "Izinyanga ezi-2 mahhala",
+  "perYear": "/ unyaka",
+  "pricePerMonthApprox": "≈ {price} ngenyanga",
+  "subscriptionLegalYearly": "Ukubhalisa konyaka kuvuselelwa ngokuzenzakalelayo njalo ngonyaka uze ukukhansele. Ngokubhalisa wamukela Imigomo Yokusetshenziswa kanye Nenqubomgomo Yobumfihlo."
 }

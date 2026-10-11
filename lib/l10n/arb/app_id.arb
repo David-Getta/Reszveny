@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Hapus permanen",
   "accountDeleted": "Akun Anda telah dihapus.",
   "errDeleteAccount": "Akun tidak dapat dihapus. Periksa koneksi dan coba lagi.",
-  "aiTrialBriefNote": "Analisis uji coba bersifat ringkas dan dibuat dengan model AI yang lebih cepat. Dengan paket, Anda mendapatkan AI kami yang paling canggih, lebih banyak pencarian web, serta panjang Standar dan Mendalam."
+  "aiTrialBriefNote": "Analisis uji coba bersifat ringkas dan dibuat dengan model AI yang lebih cepat. Dengan paket, Anda mendapatkan AI kami yang paling canggih, lebih banyak pencarian web, serta panjang Standar dan Mendalam.",
+  "billingMonthly": "Bulanan",
+  "billingYearly": "Tahunan",
+  "yearlyDiscount": "Gratis 2 bulan",
+  "perYear": "/ tahun",
+  "pricePerMonthApprox": "≈ {price} per bulan",
+  "subscriptionLegalYearly": "Langganan tahunan diperpanjang otomatis setiap tahun sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi."
 }

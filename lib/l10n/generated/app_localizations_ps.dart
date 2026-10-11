@@ -1258,4 +1258,25 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'آزمېښتي تحلیلونه لنډ دي او په یوه چټک AI ماډل جوړېږي. له پلان سره تاسو زموږ تر ټولو پیاوړی AI، ډېر وېب لټونونه، او معیاري او ژور اوږدوالی ترلاسه کوئ.';
+
+  @override
+  String get billingMonthly => 'میاشتنی';
+
+  @override
+  String get billingYearly => 'کلنی';
+
+  @override
+  String get yearlyDiscount => '2 میاشتې وړیا';
+
+  @override
+  String get perYear => '/ کال';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'په میاشت کې ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'کلني ګډونونه هر کال پخپله نوي کېږي تر هغه چې تاسو یې لغوه کړئ. د ګډون په کولو سره تاسو د کارونې شرایط او د محرمیت تګلاره منئ.';
 }

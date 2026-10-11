@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Xóa vĩnh viễn",
   "accountDeleted": "Tài khoản của bạn đã bị xóa.",
   "errDeleteAccount": "Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.",
-  "aiTrialBriefNote": "Phân tích trong thời gian dùng thử ở mức Ngắn gọn và dùng mô hình AI nhanh hơn. Khi đăng ký gói, bạn có AI mạnh nhất của chúng tôi, nhiều lượt tìm kiếm web hơn cùng độ dài Tiêu chuẩn và Chuyên sâu."
+  "aiTrialBriefNote": "Phân tích trong thời gian dùng thử ở mức Ngắn gọn và dùng mô hình AI nhanh hơn. Khi đăng ký gói, bạn có AI mạnh nhất của chúng tôi, nhiều lượt tìm kiếm web hơn cùng độ dài Tiêu chuẩn và Chuyên sâu.",
+  "billingMonthly": "Hàng tháng",
+  "billingYearly": "Hàng năm",
+  "yearlyDiscount": "Miễn phí 2 tháng",
+  "perYear": "/ năm",
+  "pricePerMonthApprox": "≈ {price} mỗi tháng",
+  "subscriptionLegalYearly": "Gói đăng ký theo năm tự động gia hạn hằng năm cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư."
 }

@@ -1270,4 +1270,25 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ababa dagiti panangsukimat iti trial ken naaramid babaen ti napartak a modelo ti AI. No addaanka iti plan, magun-odmo ti kasayaatan nga AI-mi, ad-adu a panagbiruk iti web, ken ti Standard ken Nauneg a kaatiddog.';
+
+  @override
+  String get billingMonthly => 'Binulan';
+
+  @override
+  String get billingYearly => 'Tinawen';
+
+  @override
+  String get yearlyDiscount => '2 a bulan a libre';
+
+  @override
+  String get perYear => '/ tawen';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price iti tunggal bulan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Automatiko a mairenew ti tinawen a subscription iti tunggal tawen agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy.';
 }

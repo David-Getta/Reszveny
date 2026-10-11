@@ -1264,4 +1264,25 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Uchambuzi wa jaribio ni mfupi na hufanywa kwa modeli ya AI yenye kasi zaidi. Ukiwa na mpango, unapata AI yetu yenye uwezo mkubwa zaidi, utafutaji zaidi wa wavuti, na urefu wa Wastani na Wa kina.';
+
+  @override
+  String get billingMonthly => 'Kila mwezi';
+
+  @override
+  String get billingYearly => 'Kila mwaka';
+
+  @override
+  String get yearlyDiscount => 'Miezi 2 bure';
+
+  @override
+  String get perYear => '/ mwaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kwa mwezi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Usajili wa mwaka hujisasisha kiotomatiki kila mwaka hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha.';
 }

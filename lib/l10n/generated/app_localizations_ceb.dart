@@ -1271,4 +1271,25 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Mubo ang mga pagtuki sa trial ug gihimo kini gamit ang mas paspas nga AI model. Sa usa ka plan, makuha nimo ang among labing maayong AI, mas daghang pagpangita sa web, ug ang Standard ug Lawom nga gitas-on.';
+
+  @override
+  String get billingMonthly => 'Binulan';
+
+  @override
+  String get billingYearly => 'Tinuig';
+
+  @override
+  String get yearlyDiscount => '2 ka bulan libre';
+
+  @override
+  String get perYear => '/ tuig';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price matag bulan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Awtomatikong ma-renew ang tinuig nga subscription matag tuig hangtod nimo kini kanselahon. Pinaagi sa pag-subscribe, gidawat nimo ang Mga Termino sa Paggamit ug ang Palisiya sa Privacy.';
 }

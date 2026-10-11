@@ -1272,4 +1272,25 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Malliy t\'aqwiykunaqa pisillam, aswan utqay AI modelowanmi ruwasqa. Huk planwanqa aswan atiyniyuq AI-ykuta, astawan web maskaykunata, Chawpi, Ukhu sunikunatapas hap\'inki.';
+
+  @override
+  String get billingMonthly => 'Sapa killa';
+
+  @override
+  String get billingYearly => 'Sapa wata';
+
+  @override
+  String get yearlyDiscount => '2 killa gratis';
+
+  @override
+  String get perYear => '/ wata';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'Sapa killa ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Watapaq suscripciónkunaqa sapa wata kikinmanta musuqchakunku cancelanaykikama. Suscribikuspaqa Llamk\'achiypa kamachiykunanta Privacidad kamachiytapas chaskinki.';
 }

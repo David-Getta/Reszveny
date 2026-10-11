@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Radera permanent",
   "accountDeleted": "Ditt konto har raderats.",
   "errDeleteAccount": "Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.",
-  "aiTrialBriefNote": "Analyser under provperioden är korta och görs med en snabbare AI-modell. Med en plan får du vår mest kapabla AI, fler webbsökningar och längderna Standard och Fördjupad."
+  "aiTrialBriefNote": "Analyser under provperioden är korta och görs med en snabbare AI-modell. Med en plan får du vår mest kapabla AI, fler webbsökningar och längderna Standard och Fördjupad.",
+  "billingMonthly": "Månadsvis",
+  "billingYearly": "Årsvis",
+  "yearlyDiscount": "2 månader gratis",
+  "perYear": "/ år",
+  "pricePerMonthApprox": "≈ {price} per månad",
+  "subscriptionLegalYearly": "Årsprenumerationen förnyas automatiskt varje år tills du säger upp den. Genom att prenumerera godkänner du användarvillkoren och integritetspolicyn."
 }

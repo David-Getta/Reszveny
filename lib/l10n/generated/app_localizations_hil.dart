@@ -1276,4 +1276,25 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ang mga analisis sa pagtilaw malip-ot kag ginahimo sang mas dasig nga AI model. Kon may plan ka, makuha mo ang amon pinakamaayo nga AI, mas madamo nga pagpangita sa web, kag ang Kinaandan kag Madalom nga kalabaon.';
+
+  @override
+  String get billingMonthly => 'Binulan';
+
+  @override
+  String get billingYearly => 'Tinuig';
+
+  @override
+  String get yearlyDiscount => '2 ka bulan libre';
+
+  @override
+  String get perYear => '/ tuig';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price kada bulan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ang tinuig nga subscription awtomatiko nga nagare-renew kada tuig tubtob nga i-kansela mo. Sa pag-subscribe, ginabaton mo ang Mga Termino sang Paggamit kag ang Palisiya sa Privacy.';
 }

@@ -1268,4 +1268,25 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Οι δοκιμαστικές αναλύσεις είναι σύντομες και γίνονται με ένα ταχύτερο μοντέλο AI. Με ένα πρόγραμμα αποκτάτε το πιο ισχυρό μοντέλο AI μας, περισσότερες αναζητήσεις στο web και τα μήκη «Τυπική» και «Εις βάθος».';
+
+  @override
+  String get billingMonthly => 'Μηνιαία';
+
+  @override
+  String get billingYearly => 'Ετήσια';
+
+  @override
+  String get yearlyDiscount => '2 μήνες δωρεάν';
+
+  @override
+  String get perYear => '/ έτος';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price τον μήνα';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Η ετήσια συνδρομή ανανεώνεται αυτόματα κάθε χρόνο μέχρι να την ακυρώσετε. Με τη συνδρομή αποδέχεστε τους Όρους χρήσης και την Πολιτική απορρήτου.';
 }

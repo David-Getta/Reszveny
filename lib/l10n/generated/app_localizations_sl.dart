@@ -1312,4 +1312,25 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Preizkusne analize so kratke in jih pripravi hitrejši model AI. S paketom dobite naš najzmogljivejši model AI, več spletnih iskanj ter standardno in poglobljeno dolžino.';
+
+  @override
+  String get billingMonthly => 'Mesečno';
+
+  @override
+  String get billingYearly => 'Letno';
+
+  @override
+  String get yearlyDiscount => '2 meseca brezplačno';
+
+  @override
+  String get perYear => '/ leto';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price na mesec';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Letna naročnina se samodejno podaljša vsako leto, dokler je ne prekličete. Z naročnino sprejemate Pogoje uporabe in Pravilnik o zasebnosti.';
 }

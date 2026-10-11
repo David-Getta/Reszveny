@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Bi temamî jê bibe",
   "accountDeleted": "Hesabê te hate jêbirin.",
   "errDeleteAccount": "Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.",
-  "aiTrialBriefNote": "Analîzên ceribandinê kurt in û bi modeleke AI ya bileztir têne çêkirin. Bi planekê tu AI-ya me ya herî jêhatî, lêgerînên webê yên zêdetir û dirêjahiyên Standard û Kûr distînî."
+  "aiTrialBriefNote": "Analîzên ceribandinê kurt in û bi modeleke AI ya bileztir têne çêkirin. Bi planekê tu AI-ya me ya herî jêhatî, lêgerînên webê yên zêdetir û dirêjahiyên Standard û Kûr distînî.",
+  "billingMonthly": "Mehane",
+  "billingYearly": "Salane",
+  "yearlyDiscount": "2 meh belaş",
+  "perYear": "/ sal",
+  "pricePerMonthApprox": "≈ {price} di mehê de",
+  "subscriptionLegalYearly": "Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî."
 }

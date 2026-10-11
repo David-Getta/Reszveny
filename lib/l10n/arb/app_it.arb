@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Elimina definitivamente",
   "accountDeleted": "Il tuo account è stato eliminato.",
   "errDeleteAccount": "Impossibile eliminare l’account. Controlla la connessione e riprova.",
-  "aiTrialBriefNote": "Le analisi di prova sono brevi e create con un modello di IA più veloce. Con un piano ottieni la nostra IA più potente, più ricerche web e le lunghezze Standard e Approfondita."
+  "aiTrialBriefNote": "Le analisi di prova sono brevi e create con un modello di IA più veloce. Con un piano ottieni la nostra IA più potente, più ricerche web e le lunghezze Standard e Approfondita.",
+  "billingMonthly": "Mensile",
+  "billingYearly": "Annuale",
+  "yearlyDiscount": "2 mesi gratis",
+  "perYear": "/ anno",
+  "pricePerMonthApprox": "≈ {price} al mese",
+  "subscriptionLegalYearly": "L’abbonamento annuale si rinnova automaticamente ogni anno finché non lo disdici. Abbonandoti accetti le Condizioni d’uso e l’Informativa sulla privacy."
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Elimina per sempre",
   "accountDeleted": "S’ha eliminat el teu compte.",
   "errDeleteAccount": "No s’ha pogut eliminar el compte. Comprova la connexió i torna-ho a provar.",
-  "aiTrialBriefNote": "Les anàlisis de prova són breus i es fan amb un model d’IA més ràpid. Amb un pla obtens la nostra IA més capaç, més cerques web i les extensions Estàndard i A fons."
+  "aiTrialBriefNote": "Les anàlisis de prova són breus i es fan amb un model d’IA més ràpid. Amb un pla obtens la nostra IA més capaç, més cerques web i les extensions Estàndard i A fons.",
+  "billingMonthly": "Mensual",
+  "billingYearly": "Anual",
+  "yearlyDiscount": "2 mesos gratis",
+  "perYear": "/ any",
+  "pricePerMonthApprox": "≈ {price} al mes",
+  "subscriptionLegalYearly": "La subscripció anual es renova automàticament cada any fins que la cancel·lis. En subscriure’t acceptes les Condicions d’ús i la Política de privadesa."
 }

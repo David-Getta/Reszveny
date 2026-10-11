@@ -1273,4 +1273,25 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analisis percubaan adalah ringkas dan dihasilkan dengan model AI yang lebih pantas. Dengan pelan, anda mendapat AI kami yang paling canggih, lebih banyak carian web, serta panjang Standard dan Mendalam.';
+
+  @override
+  String get billingMonthly => 'Bulanan';
+
+  @override
+  String get billingYearly => 'Tahunan';
+
+  @override
+  String get yearlyDiscount => '2 bulan percuma';
+
+  @override
+  String get perYear => '/ tahun';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price sebulan';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi.';
 }

@@ -1262,4 +1262,25 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Analîzên ceribandinê kurt in û bi modeleke AI ya bileztir têne çêkirin. Bi planekê tu AI-ya me ya herî jêhatî, lêgerînên webê yên zêdetir û dirêjahiyên Standard û Kûr distînî.';
+
+  @override
+  String get billingMonthly => 'Mehane';
+
+  @override
+  String get billingYearly => 'Salane';
+
+  @override
+  String get yearlyDiscount => '2 meh belaş';
+
+  @override
+  String get perYear => '/ sal';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price di mehê de';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî.';
 }

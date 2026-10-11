@@ -1272,4 +1272,25 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Okwekenneenya okw\'okugezesa kuba mu bufunze era kukolebwa AI model ey\'amangu. Ng\'olina enteekateeka, ofuna AI yaffe esinga obusobozi, okunoonya okusingawo ku yintaneeti, n\'obuwanvu Bwa bulijjo ne Mu bujjuvu.';
+
+  @override
+  String get billingMonthly => 'Buli mwezi';
+
+  @override
+  String get billingYearly => 'Buli mwaka';
+
+  @override
+  String get yearlyDiscount => 'Emyezi 2 bwereere';
+
+  @override
+  String get perYear => '/ omwaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price buli mwezi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Okwewandiisa okw\'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw\'okusazaamu. Bw\'owewandiisa, oba okkirizza Amateeka g\'okukozesa n\'Enkola y\'ebyama.';
 }

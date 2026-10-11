@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Kalıcı olarak sil",
   "accountDeleted": "Hesabınız silindi.",
   "errDeleteAccount": "Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin.",
-  "aiTrialBriefNote": "Deneme analizleri kısadır ve daha hızlı bir yapay zekâ modeliyle hazırlanır. Bir planla en yetenekli yapay zekâmızı, daha fazla web araştırmasını ve Standart ile Ayrıntılı uzunlukları elde edersiniz."
+  "aiTrialBriefNote": "Deneme analizleri kısadır ve daha hızlı bir yapay zekâ modeliyle hazırlanır. Bir planla en yetenekli yapay zekâmızı, daha fazla web araştırmasını ve Standart ile Ayrıntılı uzunlukları elde edersiniz.",
+  "billingMonthly": "Aylık",
+  "billingYearly": "Yıllık",
+  "yearlyDiscount": "2 ay ücretsiz",
+  "perYear": "/ yıl",
+  "pricePerMonthApprox": "Ayda ≈ {price}",
+  "subscriptionLegalYearly": "Yıllık abonelik, iptal edene kadar her yıl otomatik olarak yenilenir. Abone olarak Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul etmiş olursunuz."
 }

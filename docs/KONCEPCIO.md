@@ -174,6 +174,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 4b3 | OCR fallback offline (ML Kit, mobil) | ⬜ |
 | 4c | Fiók és fizetés, mint a Claude-nál: belépés e-mail kóddal, fiókhoz kötött előfizetés; asztali gépen és weben Stripe Checkout + ügyfélportál, telefonon App Store / Play; lefordított iparág- és országnevek | ✅ kész (Apple / Google belépés később) |
 | 4c2 | Haszon: a próbaidő rövid elemzései gyorsabb modellel (Sonnet 5.5) futnak, az app kiírja, mit ad az előfizetés; a Pro 18 elemzést ad (20 helyett), így teljes kihasználásnál sem veszteséges | ✅ kész |
+| 4c3 | Éves előfizetés a Pro és a Max csomaghoz (10 havi díj, „2 hónap ingyen”), Havi/Éves kapcsoló; a Max elemzésenként a legolcsóbb (havi ára 34,99 USD), „Legjobb ár/érték” jelöléssel | ✅ kész |
 | 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ (lásd 5. szakasz) |
 | 5a | Fiók törlése az appból és a szerveren (App Store-követelmény): a böngészős előfizetés lemondása, a szerveren tárolt adatok törlése, választhatóan a készüléken tároltaké is; ÁSZF és adatkezelési tájékoztató a beállításokban és a csomagválasztó alján (automatikus megújulás, elfogadás vásárláskor), a szerver `/legal` oldalain magyarul és angolul | ✅ kész (a szöveg véglegesítése jogásszal: tulajdonosi teendő) |
 | 5b | Valódi bolti vásárlás-ellenőrzés (App Store Server API, Google Play Developer API) – most fejlesztői módban minden vásárlást elfogad | ⬜ |

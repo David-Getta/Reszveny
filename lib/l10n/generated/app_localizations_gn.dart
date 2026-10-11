@@ -1267,4 +1267,25 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Umi jehesaʼỹijo ñehaʼãme mbykymi ha ojejapo peteĩ AI modelo pyaʼevévape. Plan reheve rehupyty ore AI ipokatuvéva, hetave jeheka ñandutípe ha pukukue Mbytegua ha Pypuku.';
+
+  @override
+  String get billingMonthly => 'Jasykue';
+
+  @override
+  String get billingYearly => 'Arykue';
+
+  @override
+  String get yearlyDiscount => '2 jasy rei';
+
+  @override
+  String get perYear => '/ ary';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price jasy ñavõ';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Ñemboheraguapy oñembopyahu ijeheguiete ary ñavõ ejoko peve. Eñemboheraguapývo, emoneĩ Jeporurã reko ha Temiñemi porureko.';
 }

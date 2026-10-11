@@ -1262,4 +1262,25 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Ƴeewndooji etagol ngoni rabbiɗi, ina waɗee e modeel AI ɓurngel yaawde. So a jogii feere, a heɓan AI amen ɓurɗo baawde, ɓeydagol njiilaw geese, e njuuteendi Hakkundeejum e Luggiɗum.';
+
+  @override
+  String get billingMonthly => 'Lewru kala';
+
+  @override
+  String get billingYearly => 'Hitaande kala';
+
+  @override
+  String get yearlyDiscount => 'Lebbi 2 mehe';
+
+  @override
+  String get perYear => '/ hitaande';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price e lewru';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Abonmaa ina hesɗitinee e jaajol hitaande kala haa a haaytii. So a ƴettii abonmaa, a jaɓii Sarɗiiji kuutorgol e Dawrugol suturo.';
 }

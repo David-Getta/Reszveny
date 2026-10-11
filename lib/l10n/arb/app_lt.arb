@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Ištrinti visam laikui",
   "accountDeleted": "Jūsų paskyra ištrinta.",
   "errDeleteAccount": "Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.",
-  "aiTrialBriefNote": "Bandomosios analizės yra trumpos ir rengiamos greitesniu DI modeliu. Su planu gaunate pajėgiausią mūsų DI, daugiau paieškų internete ir standartinę bei išsamią apimtį."
+  "aiTrialBriefNote": "Bandomosios analizės yra trumpos ir rengiamos greitesniu DI modeliu. Su planu gaunate pajėgiausią mūsų DI, daugiau paieškų internete ir standartinę bei išsamią apimtį.",
+  "billingMonthly": "Kas mėnesį",
+  "billingYearly": "Kasmet",
+  "yearlyDiscount": "2 mėn. nemokamai",
+  "perYear": "/ metus",
+  "pricePerMonthApprox": "≈ {price} per mėnesį",
+  "subscriptionLegalYearly": "Metinė prenumerata kasmet automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika."
 }

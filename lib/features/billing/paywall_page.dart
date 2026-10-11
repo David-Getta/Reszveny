@@ -11,10 +11,11 @@ import 'billing_service.dart';
 import 'entitlement_service.dart';
 import 'fallback_billing_service.dart';
 import 'plan.dart';
+import 'pricing.dart';
 import 'web_checkout_billing_service.dart';
 
-/// Csomagválasztó: próbaidő-állapot, négy előfizetés, extra csomagok,
-/// visszaállítás és előfizetés-kezelés.
+/// Csomagválasztó: próbaidő-állapot, négy előfizetés (a Pro és a Max évesen
+/// is), extra csomagok, visszaállítás és előfizetés-kezelés.
 class PaywallPage extends StatefulWidget {
   const PaywallPage({super.key});
 
@@ -28,6 +29,9 @@ class PaywallPage extends StatefulWidget {
 class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
   bool _loaded = false;
   StoreProduct? _afterLogin;
+
+  /// Éves számlázás látszik (a Pro és a Max éves termékei).
+  bool _yearly = false;
 
   @override
   void initState() {
@@ -124,6 +128,9 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
           final subs = bc.products.where((x) => x.kind == StoreProductKind.subscription).toList();
           final packs = bc.products.where((x) => x.kind == StoreProductKind.pack).toList();
           final wide = MediaQuery.sizeOf(context).width >= 980;
+          final hasYearly = subs.any((x) => x.isYearly);
+          final yearly = _yearly && hasYearly;
+          final specs = yearly ? PlanSpec.withYearly : PlanSpec.paid;
 
           return Center(
             child: ConstrainedBox(
@@ -137,6 +144,35 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                   const SizedBox(height: 6),
                   Text(l10n.planFeaturesCommon, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                   const SizedBox(height: 14),
+                  if (hasYearly && bc.available && !bc.loading) ...[
+                    Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: SegmentedButton<bool>(
+                        key: const ValueKey('billing-period'),
+                        showSelectedIcon: false,
+                        segments: [
+                          ButtonSegment(value: false, label: Text(l10n.billingMonthly)),
+                          ButtonSegment(
+                            value: true,
+                            label: Text.rich(
+                              TextSpan(
+                                text: l10n.billingYearly,
+                                children: [
+                                  TextSpan(
+                                    text: '  ${l10n.yearlyDiscount}',
+                                    style: TextStyle(color: p.accent, fontWeight: FontWeight.w700, fontSize: 12),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                        selected: {yearly},
+                        onSelectionChanged: (s) => setState(() => _yearly = s.first),
+                      ),
+                    ),
+                    const SizedBox(height: 14),
+                  ],
                   if (bc.loading)
                     const Center(
                       child: Padding(padding: EdgeInsets.all(24), child: CircularProgressIndicator()),
@@ -152,24 +188,31 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                       // Rögzített kártyamagasság: a pipás lista és a gomb minden
                       // nyelven és betűméretnél elfér.
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: wide ? 4 : 2,
+                        crossAxisCount: yearly ? 2 : (wide ? 4 : 2),
                         mainAxisSpacing: 12,
                         crossAxisSpacing: 12,
                         mainAxisExtent: 300 * MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6),
                       ),
                       children: [
-                        for (final spec in PlanSpec.paid)
-                          _PlanCard(
-                            spec: spec,
-                            name: _planName(l10n, spec.tier),
-                            product: subs.where((x) => x.id == spec.productId).firstOrNull,
-                            current: ent.plan?.tier == spec.tier && !ent.isTrialExpired,
-                            // „Legjobb ár/érték” jelölés nincs: a Max és az Ultra elemzésenként
-                            // nem olcsóbb a Pro-nál (2026-10, A-terv), így félrevezető lenne.
-                            badge: spec.tier == PlanTier.pro ? l10n.mostPopular : null,
-                            busy: bc.busyProductId == spec.productId,
-                            onBuy: (prod) => bc.buy(prod),
-                          ),
+                        for (final spec in specs)
+                          if ((yearly ? spec.yearlyProductId : spec.productId) case final id?)
+                            _PlanCard(
+                              spec: spec,
+                              name: _planName(l10n, spec.tier),
+                              product: subs.where((x) => x.id == id).firstOrNull,
+                              yearly: yearly,
+                              // Éves nézetben a havi előfizetésről is lehet évesre váltani.
+                              current: !yearly && ent.plan?.tier == spec.tier && !ent.isTrialExpired,
+                              // A Max elemzésenként a legolcsóbb (havi és éves árral is), a Pro a
+                              // legnépszerűbb.
+                              badge: switch (spec.tier) {
+                                PlanTier.pro => l10n.mostPopular,
+                                PlanTier.max => l10n.bestValue,
+                                _ => null,
+                              },
+                              busy: bc.busyProductId == id,
+                              onBuy: (prod) => bc.buy(prod),
+                            ),
                       ],
                     ),
                   if (bc.available && packs.isNotEmpty) ...[
@@ -222,7 +265,10 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                   // megújulás, és a feltételek elérhetők a vásárlás helyén.
                   Padding(
                     padding: const EdgeInsets.only(top: 8),
-                    child: Text(l10n.subscriptionLegal, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                    child: Text(
+                      yearly ? l10n.subscriptionLegalYearly : l10n.subscriptionLegal,
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
                   ),
                   Wrap(
                     spacing: 4,
@@ -346,9 +392,13 @@ class _PlanCard extends StatelessWidget {
     required this.busy,
     required this.onBuy,
     this.badge,
+    this.yearly = false,
   });
 
   final PlanSpec spec;
+
+  /// Éves ár: „/ év”, alatta a havi megfelelő.
+  final bool yearly;
   final String name;
   final StoreProduct? product;
   final bool current;
@@ -403,22 +453,30 @@ class _PlanCard extends StatelessWidget {
               ),
             ),
           const Spacer(),
-          if (product != null)
+          if (product case final prod?) ...[
             RichText(
               text: TextSpan(
                 style: theme.textTheme.titleMedium,
                 children: [
                   TextSpan(
-                    text: product!.price,
+                    text: prod.price,
                     style: const TextStyle(fontWeight: FontWeight.w700),
                   ),
                   TextSpan(
-                    text: ' ${l10n.perMonth}',
+                    text: ' ${yearly ? l10n.perYear : l10n.perMonth}',
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),
                 ],
               ),
             ),
+            if (yearly)
+              Text(
+                l10n.pricePerMonthApprox(
+                  Pricing.format(prod.rawPrice / 12, prod.currency, Localizations.localeOf(context).toString()),
+                ),
+                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+              ),
+          ],
           const SizedBox(height: 10),
           SizedBox(
             width: double.infinity,

@@ -1267,4 +1267,25 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Сыноо талдоолору кыскача жана ылдамыраак AI модели менен түзүлөт. Тариф менен эң күчтүү AI, көбүрөөк веб-издөө жана стандарттуу, кеңири көлөм жеткиликтүү болот.';
+
+  @override
+  String get billingMonthly => 'Айлык';
+
+  @override
+  String get billingYearly => 'Жылдык';
+
+  @override
+  String get yearlyDiscount => '2 ай акысыз';
+
+  @override
+  String get perYear => '/ жыл';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'айына ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Жылдык жазылуу сиз жокко чыгармайынча жыл сайын автоматтык түрдө узартылат. Жазылуу менен сиз Колдонуу шарттарын жана Купуялык саясатын кабыл аласыз.';
 }

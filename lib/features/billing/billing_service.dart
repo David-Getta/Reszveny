@@ -24,6 +24,7 @@ class StoreProduct {
   final StoreProductKind kind;
 
   PlanSpec? get plan => PlanSpec.byProductId(id);
+  bool get isYearly => PlanSpec.isYearlyProduct(id);
   AddOnPack? get pack => AddOnPack.byProductId(id);
 }
 
@@ -79,6 +80,7 @@ abstract interface class BillingService {
   /// Az összes termékazonosító, amit a boltból lekérünk.
   static Set<String> get allProductIds => {
     for (final p in PlanSpec.paid) p.productId,
+    for (final p in PlanSpec.withYearly) p.yearlyProductId!,
     for (final p in AddOnPack.all) p.productId,
   };
 }

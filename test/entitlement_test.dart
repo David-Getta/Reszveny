@@ -73,7 +73,7 @@ void main() {
     final billing = DemoBillingService(latency: Duration.zero);
     final c = BillingController(billing: billing, entitlements: e);
     await c.loadProducts();
-    expect(c.products.where((p) => p.kind == StoreProductKind.subscription).length, 4);
+    expect(c.products.where((p) => p.kind == StoreProductKind.subscription).length, 6); // 4 havi + 2 éves
     expect(c.products.where((p) => p.kind == StoreProductKind.pack).length, 3);
 
     final pro = c.products.firstWhere((p) => p.id == PlanSpec.pro.productId);

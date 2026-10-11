@@ -59,6 +59,8 @@ class DemoBillingService implements BillingService {
 
     return [
       for (final p in PlanSpec.paid) make(p.productId, p.tier.name, StoreProductKind.subscription),
+      for (final p in PlanSpec.withYearly)
+        make(p.yearlyProductId!, '${p.tier.name} (year)', StoreProductKind.subscription),
       for (final p in AddOnPack.all) make(p.productId, '+${p.analyses}', StoreProductKind.pack),
     ];
   }

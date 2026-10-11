@@ -9,6 +9,7 @@ class PlanSpec {
     required this.analysesPerPeriod,
     required this.webSearches,
     this.trialLength,
+    this.yearlyProductId,
   });
 
   final PlanTier tier;
@@ -25,6 +26,10 @@ class PlanSpec {
 
   /// Csak a próbaidőnél.
   final Duration? trialLength;
+
+  /// Éves előfizetés termékazonosítója (a Pro-nál és a Max-nál): 10 havi díj
+  /// egy évre, a keret ugyanúgy havonta újul.
+  final String? yearlyProductId;
 
   bool get isPaid => trialLength == null;
 
@@ -46,12 +51,14 @@ class PlanSpec {
     productId: 'whatstock.sub.pro',
     analysesPerPeriod: 18,
     webSearches: 6,
+    yearlyProductId: 'whatstock.sub.pro.year',
   );
   static const max = PlanSpec(
     tier: PlanTier.max,
     productId: 'whatstock.sub.max',
     analysesPerPeriod: 40,
     webSearches: 8,
+    yearlyProductId: 'whatstock.sub.max.year',
   );
   static const ultra = PlanSpec(
     tier: PlanTier.ultra,
@@ -70,12 +77,22 @@ class PlanSpec {
     PlanTier.ultra => ultra,
   };
 
+  /// A csomag a havi vagy az éves termékazonosító alapján.
   static PlanSpec? byProductId(String id) {
     for (final p in paid) {
-      if (p.productId == id) return p;
+      if (p.productId == id || p.yearlyProductId == id) return p;
     }
     return null;
   }
+
+  /// Éves előfizetés-e a termék.
+  static bool isYearlyProduct(String id) => paid.any((p) => p.yearlyProductId == id);
+
+  /// Csomagok éves előfizetéssel.
+  static List<PlanSpec> get withYearly => [
+    for (final p in paid)
+      if (p.yearlyProductId != null) p,
+  ];
 
   /// Egy előfizetési időszak hossza (a boltok havonta újítják).
   static const Duration period = Duration(days: 30);

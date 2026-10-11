@@ -1261,4 +1261,25 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Sɔhwɛ nhwehwɛmu yɛ tiawa, na AI model a ɛyɛ ntɛm na ɛyɛ. Sɛ wowɔ plan a, wunya yɛn AI a ɛyɛ papa sen biara, intanɛt so nhwehwɛ pii, ne tenten Mfinimfini ne Emu dɔ.';
+
+  @override
+  String get billingMonthly => 'Bosome biara';
+
+  @override
+  String get billingYearly => 'Afe biara';
+
+  @override
+  String get yearlyDiscount => 'Bosome 2 kwa';
+
+  @override
+  String get perYear => '/ afe';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price bosome biara';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Subscription yɛ foforo ankasa afe biara kosi sɛ wobɛtwa mu. Sɛ wokyerɛw wo din a, wopene Dwumadi Mmara ne Kokoam Nhyehyɛe no so.';
 }

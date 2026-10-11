@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Futa burundu",
   "accountDeleted": "Konti yawe yafuswe.",
   "errDeleteAccount": "Konti ntiyashoboye gufutwa. Raba interineti yawe usubire ugerageze.",
-  "aiTrialBriefNote": "Amasesangura y'igeragezwa ni magufi kandi akorwa na AI yihuta kurushiriza. Ufise ipaki, uronka AI yacu ishoboye kuruta izindi, ukurondera kwinshi kuri interineti n'uburebure Risanzwe na Ryimbitse."
+  "aiTrialBriefNote": "Amasesangura y'igeragezwa ni magufi kandi akorwa na AI yihuta kurushiriza. Ufise ipaki, uronka AI yacu ishoboye kuruta izindi, ukurondera kwinshi kuri interineti n'uburebure Risanzwe na Ryimbitse.",
+  "billingMonthly": "Ku kwezi",
+  "billingYearly": "Ku mwaka",
+  "yearlyDiscount": "Amezi 2 y'ubuntu",
+  "perYear": "/ umwaka",
+  "pricePerMonthApprox": "≈ {price} ku kwezi",
+  "subscriptionLegalYearly": "Iyandikisha ry'umwaka rivugururwa ubwaryo buri mwaka gushika uhagaritse. Mu kwiyandikisha wemera Amategeko y'ikoreshwa na Politike y'ibanga."
 }

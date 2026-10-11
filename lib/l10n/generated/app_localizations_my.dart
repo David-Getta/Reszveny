@@ -1253,4 +1253,25 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'အစမ်းသုံး သုံးသပ်ချက်များသည် အကျဉ်းဖြစ်ပြီး ပိုမြန်သော AI မော်ဒယ်ဖြင့် ပြုလုပ်ထားပါသည်။ အစီအစဉ်တစ်ခုဖြင့် ကျွန်ုပ်တို့၏ အစွမ်းအထက်ဆုံး AI၊ ဝဘ်ရှာဖွေမှု ပိုများခြင်းနှင့် စံ နှင့် အသေးစိတ် အရှည်များကို ရရှိပါမည်။';
+
+  @override
+  String get billingMonthly => 'လစဉ်';
+
+  @override
+  String get billingYearly => 'နှစ်စဉ်';
+
+  @override
+  String get yearlyDiscount => '2 လ အခမဲ့';
+
+  @override
+  String get perYear => '/ နှစ်';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return 'တစ်လလျှင် ≈ $price';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'နှစ်စဉ် စာရင်းသွင်းမှုများသည် သင် ပယ်ဖျက်သည်အထိ နှစ်တိုင်း အလိုအလျောက် သက်တမ်းတိုးသည်။ စာရင်းသွင်းခြင်းဖြင့် အသုံးပြုမှု စည်းမျဉ်းများနှင့် ကိုယ်ရေးအချက်အလက် မူဝါဒကို လက်ခံပါသည်။';
 }

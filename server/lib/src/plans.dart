@@ -1,10 +1,13 @@
 /// Csomagok és keretek – ugyanaz, mint a kliensben (`lib/features/billing/plan.dart`).
 /// A szerver a forrása az igazságnak; a kliens csak tükrözi.
 class PlanSpec {
-  const PlanSpec(this.tier, this.productId, this.analysesPerPeriod, this.webSearches);
+  const PlanSpec(this.tier, this.productId, this.analysesPerPeriod, this.webSearches, {this.yearlyProductId});
 
   final String tier;
   final String productId;
+
+  /// Éves előfizetés (Pro, Max): ugyanaz a havi keret, egy évre fizetve.
+  final String? yearlyProductId;
   final int analysesPerPeriod;
 
   /// Webkeresések egy alap hosszú elemzéshez (a kliens `PlanSpec.webSearches`).
@@ -16,8 +19,8 @@ class PlanSpec {
 
   static const paid = [
     PlanSpec('normal', 'whatstock.sub.normal', 8, 4),
-    PlanSpec('pro', 'whatstock.sub.pro', 18, 6),
-    PlanSpec('max', 'whatstock.sub.max', 40, 8),
+    PlanSpec('pro', 'whatstock.sub.pro', 18, 6, yearlyProductId: 'whatstock.sub.pro.year'),
+    PlanSpec('max', 'whatstock.sub.max', 40, 8, yearlyProductId: 'whatstock.sub.max.year'),
     PlanSpec('ultra', 'whatstock.sub.ultra', 70, 10),
   ];
 
@@ -33,7 +36,7 @@ class PlanSpec {
 
   static PlanSpec? byProductId(String id) {
     for (final p in paid) {
-      if (p.productId == id) return p;
+      if (p.productId == id || p.yearlyProductId == id) return p;
     }
     return null;
   }

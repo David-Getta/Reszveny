@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Həmişəlik sil",
   "accountDeleted": "Hesabınız silindi.",
   "errDeleteAccount": "Hesabı silmək mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.",
-  "aiTrialBriefNote": "Sınaq təhlilləri qısadır və daha sürətli AI modeli ilə hazırlanır. Planla ən güclü AI modelimizi, daha çox veb axtarışını, həmçinin Standart və Ətraflı həcmləri əldə edirsiniz."
+  "aiTrialBriefNote": "Sınaq təhlilləri qısadır və daha sürətli AI modeli ilə hazırlanır. Planla ən güclü AI modelimizi, daha çox veb axtarışını, həmçinin Standart və Ətraflı həcmləri əldə edirsiniz.",
+  "billingMonthly": "Aylıq",
+  "billingYearly": "İllik",
+  "yearlyDiscount": "2 ay pulsuz",
+  "perYear": "/ il",
+  "pricePerMonthApprox": "Ayda ≈ {price}",
+  "subscriptionLegalYearly": "İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz."
 }

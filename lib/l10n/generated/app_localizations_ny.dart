@@ -1268,4 +1268,25 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get aiTrialBriefNote =>
       'Kusanthula kwa nthawi yoyesera kumakhala kwachidule ndipo kumapangidwa ndi mtundu wa AI wothamanga kwambiri. Ndi dongosolo, mumapeza AI yathu yamphamvu kwambiri, kusaka kwambiri pa intaneti, komanso kutalika kwa Kwanthawi zonse ndi Kwatsatanetsatane.';
+
+  @override
+  String get billingMonthly => 'Pamwezi';
+
+  @override
+  String get billingYearly => 'Pachaka';
+
+  @override
+  String get yearlyDiscount => 'Miyezi 2 yaulere';
+
+  @override
+  String get perYear => '/ chaka';
+
+  @override
+  String pricePerMonthApprox(String price) {
+    return '≈ $price pamwezi';
+  }
+
+  @override
+  String get subscriptionLegalYearly =>
+      'Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi.';
 }

@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Zimbisa mvu ya mvu",
   "accountDeleted": "Compte aku izimbiswa.",
   "errDeleteAccount": "Ka tulendi zimbisa compte ko. Tala vo internet aku isalanga, bosi meka diaka.",
-  "aiTrialBriefNote": "Ba analyse ya kumeka ikele nkufi mpi bo ke salaka yo ti modele ya AI ya nswalu. Ti forfait, nge ta baka AI na beto ya kuluta mbote, kutomba mingi mu internet, ye unda Ya kati ye Ya nda."
+  "aiTrialBriefNote": "Ba analyse ya kumeka ikele nkufi mpi bo ke salaka yo ti modele ya AI ya nswalu. Ti forfait, nge ta baka AI na beto ya kuluta mbote, kutomba mingi mu internet, ye unda Ya kati ye Ya nda.",
+  "billingMonthly": "Konso ngonda",
+  "billingYearly": "Konso mvu",
+  "yearlyDiscount": "Ngonda 2 ya mpamba",
+  "perYear": "/ mvu",
+  "pricePerMonthApprox": "≈ {price} mu ngonda",
+  "subscriptionLegalYearly": "Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku."
 }

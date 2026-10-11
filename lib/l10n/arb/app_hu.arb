@@ -363,5 +363,11 @@
   "deleteAccountConfirm": "Végleges törlés",
   "accountDeleted": "A fiókodat töröltük.",
   "errDeleteAccount": "A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.",
-  "aiTrialBriefNote": "A próbaidős elemzések rövidek, és egy gyorsabb AI-modell készíti őket. Csomaggal a legerősebb AI-unk dolgozik, több webkereséssel, és választhatod az alap és a részletes hosszt is."
+  "aiTrialBriefNote": "A próbaidős elemzések rövidek, és egy gyorsabb AI-modell készíti őket. Csomaggal a legerősebb AI-unk dolgozik, több webkereséssel, és választhatod az alap és a részletes hosszt is.",
+  "billingMonthly": "Havi",
+  "billingYearly": "Éves",
+  "yearlyDiscount": "2 hónap ingyen",
+  "perYear": "/ év",
+  "pricePerMonthApprox": "≈ {price} havonta",
+  "subscriptionLegalYearly": "Az éves előfizetés évente automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót."
 }
