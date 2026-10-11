@@ -1216,4 +1216,37 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens ở lại thanh menu hoặc khay hệ thống để phím tắt và cảnh báo giá vẫn hoạt động.';
+
+  @override
+  String get termsOfUse => 'Điều khoản sử dụng';
+
+  @override
+  String get privacyPolicy => 'Chính sách quyền riêng tư';
+
+  @override
+  String get subscriptionLegal =>
+      'Gói đăng ký tự động gia hạn hằng tháng cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư.';
+
+  @override
+  String get deleteAccount => 'Xóa tài khoản';
+
+  @override
+  String get deleteAccountTitle => 'Xóa tài khoản của bạn?';
+
+  @override
+  String get deleteAccountBody =>
+      'Tài khoản và mọi thứ lưu trên máy chủ của chúng tôi (email, hạn mức, lịch sử sử dụng) sẽ bị xóa vĩnh viễn, và các phân tích chưa dùng sẽ mất. Gói trả tiền trong trình duyệt được hủy ngay; gói qua App Store hoặc Google Play phải hủy trong phần cài đặt của cửa hàng.';
+
+  @override
+  String get deleteLocalData =>
+      'Xóa cả dữ liệu trên thiết bị này (danh mục, cảnh báo, yêu thích, lịch sử, phân tích đã lưu)';
+
+  @override
+  String get deleteAccountConfirm => 'Xóa vĩnh viễn';
+
+  @override
+  String get accountDeleted => 'Tài khoản của bạn đã bị xóa.';
+
+  @override
+  String get errDeleteAccount => 'Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.';
 }

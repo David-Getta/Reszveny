@@ -1228,4 +1228,37 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens మెనూ బార్ లేదా సిస్టమ్ ట్రేలో ఉంటుంది, కాబట్టి షార్ట్‌కట్ మరియు ధర హెచ్చరికలు పనిచేస్తూనే ఉంటాయి.';
+
+  @override
+  String get termsOfUse => 'వినియోగ నిబంధనలు';
+
+  @override
+  String get privacyPolicy => 'గోప్యతా విధానం';
+
+  @override
+  String get subscriptionLegal =>
+      'మీరు రద్దు చేసే వరకు సభ్యత్వం ప్రతి నెలా ఆటోమేటిక్‌గా పునరుద్ధరించబడుతుంది. సభ్యత్వం తీసుకోవడం ద్వారా మీరు వినియోగ నిబంధనలు మరియు గోప్యతా విధానాన్ని అంగీకరిస్తారు.';
+
+  @override
+  String get deleteAccount => 'ఖాతాను తొలగించండి';
+
+  @override
+  String get deleteAccountTitle => 'మీ ఖాతాను తొలగించాలా?';
+
+  @override
+  String get deleteAccountBody =>
+      'మీ ఖాతా మరియు మా సర్వర్‌లో నిల్వ చేసినవన్నీ (ఇమెయిల్, పరిమితి, వినియోగం) శాశ్వతంగా తొలగించబడతాయి, ఉపయోగించని విశ్లేషణలు కోల్పోతారు. బ్రౌజర్‌లో చెల్లించిన సభ్యత్వం వెంటనే రద్దవుతుంది; App Store లేదా Google Play సభ్యత్వాన్ని స్టోర్ సెట్టింగ్‌లలో రద్దు చేయాలి.';
+
+  @override
+  String get deleteLocalData =>
+      'ఈ పరికరంలోని డేటాను కూడా తొలగించండి (పోర్ట్‌ఫోలియో, హెచ్చరికలు, ఇష్టమైనవి, చరిత్ర, సేవ్ చేసిన విశ్లేషణలు)';
+
+  @override
+  String get deleteAccountConfirm => 'శాశ్వతంగా తొలగించండి';
+
+  @override
+  String get accountDeleted => 'మీ ఖాతా తొలగించబడింది.';
+
+  @override
+  String get errDeleteAccount => 'ఖాతాను తొలగించలేకపోయాము. కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
 }

@@ -1227,4 +1227,37 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens stannar i menyraden eller systemfältet, så att kortkommandot och kurslarmen fortsätter att fungera.';
+
+  @override
+  String get termsOfUse => 'Användarvillkor';
+
+  @override
+  String get privacyPolicy => 'Integritetspolicy';
+
+  @override
+  String get subscriptionLegal =>
+      'Prenumerationen förnyas automatiskt varje månad tills du säger upp den. Genom att prenumerera godkänner du användarvillkoren och integritetspolicyn.';
+
+  @override
+  String get deleteAccount => 'Radera konto';
+
+  @override
+  String get deleteAccountTitle => 'Radera ditt konto?';
+
+  @override
+  String get deleteAccountBody =>
+      'Ditt konto och allt som lagras på vår server (e-post, kvot, användning) raderas permanent, och oanvända analyser går förlorade. En prenumeration som betalats i webbläsaren sägs upp direkt; en prenumeration via App Store eller Google Play måste sägas upp i butikens inställningar.';
+
+  @override
+  String get deleteLocalData =>
+      'Radera även data på den här enheten (portfölj, larm, favoriter, historik, sparade analyser)';
+
+  @override
+  String get deleteAccountConfirm => 'Radera permanent';
+
+  @override
+  String get accountDeleted => 'Ditt konto har raderats.';
+
+  @override
+  String get errDeleteAccount => 'Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.';
 }

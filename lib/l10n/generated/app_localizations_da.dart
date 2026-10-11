@@ -1226,4 +1226,37 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens bliver i menulinjen eller proceslinjen, så genvejen og kursalarmerne fortsat virker.';
+
+  @override
+  String get termsOfUse => 'Brugsvilkår';
+
+  @override
+  String get privacyPolicy => 'Privatlivspolitik';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonnementet fornyes automatisk hver måned, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken.';
+
+  @override
+  String get deleteAccount => 'Slet konto';
+
+  @override
+  String get deleteAccountTitle => 'Slet din konto?';
+
+  @override
+  String get deleteAccountBody =>
+      'Din konto og alt, hvad der er gemt på vores server (e-mail, kvote, forbrug), slettes permanent, og ubrugte analyser går tabt. Et abonnement betalt i browseren opsiges med det samme; et abonnement via App Store eller Google Play skal opsiges i butikkens indstillinger.';
+
+  @override
+  String get deleteLocalData =>
+      'Slet også data på denne enhed (portefølje, alarmer, favoritter, historik, gemte analyser)';
+
+  @override
+  String get deleteAccountConfirm => 'Slet permanent';
+
+  @override
+  String get accountDeleted => 'Din konto er slettet.';
+
+  @override
+  String get errDeleteAccount => 'Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen.';
 }

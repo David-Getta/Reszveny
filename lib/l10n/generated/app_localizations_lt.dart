@@ -1276,4 +1276,37 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia.';
+
+  @override
+  String get termsOfUse => 'Naudojimo sąlygos';
+
+  @override
+  String get privacyPolicy => 'Privatumo politika';
+
+  @override
+  String get subscriptionLegal =>
+      'Prenumerata kas mėnesį automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika.';
+
+  @override
+  String get deleteAccount => 'Ištrinti paskyrą';
+
+  @override
+  String get deleteAccountTitle => 'Ištrinti paskyrą?';
+
+  @override
+  String get deleteAccountBody =>
+      'Jūsų paskyra ir viskas, kas saugoma mūsų serveryje (el. paštas, limitas, naudojimas), bus ištrinta visam laikui, o nepanaudotos analizės prarandamos. Naršyklėje apmokėta prenumerata atšaukiama iš karto; App Store ar Google Play prenumeratą reikia atšaukti parduotuvės nustatymuose.';
+
+  @override
+  String get deleteLocalData =>
+      'Ištrinti ir šio įrenginio duomenis (portfelis, įspėjimai, mėgstamiausi, istorija, išsaugotos analizės)';
+
+  @override
+  String get deleteAccountConfirm => 'Ištrinti visam laikui';
+
+  @override
+  String get accountDeleted => 'Jūsų paskyra ištrinta.';
+
+  @override
+  String get errDeleteAccount => 'Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
 }

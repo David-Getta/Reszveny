@@ -1264,4 +1264,37 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens остаје у траци менија или системској палети, па пречица и обавештења о цени и даље раде.';
+
+  @override
+  String get termsOfUse => 'Услови коришћења';
+
+  @override
+  String get privacyPolicy => 'Политика приватности';
+
+  @override
+  String get subscriptionLegal =>
+      'Претплата се аутоматски обнавља сваког месеца док је не откажете. Претплатом прихватате Услове коришћења и Политику приватности.';
+
+  @override
+  String get deleteAccount => 'Обриши налог';
+
+  @override
+  String get deleteAccountTitle => 'Обрисати налог?';
+
+  @override
+  String get deleteAccountBody =>
+      'Ваш налог и све што чувамо на серверу (имејл, лимит, коришћење) биће трајно обрисани, а неискоришћене анализе пропадају. Претплату плаћену у прегледачу одмах отказујемо; претплату преко App Store-а или Google Play-а морате да откажете у подешавањима продавнице.';
+
+  @override
+  String get deleteLocalData =>
+      'Обриши и податке на овом уређају (портфолио, обавештења, омиљене, историја, сачуване анализе)';
+
+  @override
+  String get deleteAccountConfirm => 'Трајно обриши';
+
+  @override
+  String get accountDeleted => 'Ваш налог је обрисан.';
+
+  @override
+  String get errDeleteAccount => 'Налог није могао да се обрише. Проверите везу и покушајте поново.';
 }

@@ -1,6 +1,7 @@
 @Tags(['screenshot'])
 library;
 
+import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
 
@@ -15,6 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/core/backend/backend_client.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
@@ -103,13 +105,21 @@ AppServices _services({
   PortfolioStore? portfolio,
   String? currency,
   AlertStore? alerts,
+  bool backend = false,
+  String? email,
 }) {
   final ent = _entitlements();
+  // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
+  final config = backend ? const AppConfig(backendUrl: 'https://api.stocklens.app') : const AppConfig();
   return AppServices(
     portfolio: portfolio,
     alerts: alerts,
     fx: _fx(),
-    config: const AppConfig(),
+    config: config,
+    backend: backend
+        ? BackendClient(baseUrl: config.backend, inner: _fakeBackend(), tokenLoader: () async => 'tok')
+        : null,
+    accountEmail: email,
     capture: CaptureService(),
     recognizer: _NoRecognizer(),
     marketData: DemoMarketDataProvider(latency: Duration.zero),
@@ -126,6 +136,22 @@ AppServices _services({
     billing: DemoBillingService(latency: Duration.zero),
   );
 }
+
+/// A backend utánzata: a fiók Pro csomagon van, a törlés sikerül.
+http.Client _fakeBackend() => MockClient((req) async {
+  final ent = {
+    'tier': 'pro',
+    'period_start': DateTime.now().subtract(const Duration(days: 3)).toUtc().toIso8601String(),
+    'period_end': DateTime.now().add(const Duration(days: 27)).toUtc().toIso8601String(),
+    'used': 5,
+    'extra': 0,
+  };
+  return http.Response(
+    jsonEncode(req.method == 'DELETE' ? {'deleted': true} : {'token': 'tok', 'entitlements': ent}),
+    200,
+    headers: {'content-type': 'application/json'},
+  );
+});
 
 EntitlementService _entitlements() => EntitlementService(
   initial: EntitlementState(
@@ -423,12 +449,29 @@ void main() {
   });
 
   testWidgets('paywall', (tester) async {
-    await pumpApp(tester, _services(), const Size(1200, 900));
+    await pumpApp(tester, _services(backend: true), const Size(1200, 1100));
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('View plans').first);
     await tester.pumpAndSettle();
     await _shot(tester, 'paywall');
+  });
+
+  testWidgets('settings: account with delete, legal links (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), backend: true, email: 'david@example.com');
+    await pumpApp(tester, s, const Size(1200, 900));
+    await tester.tap(find.text('Beállítások'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'settings_account_hu');
+    await tester.tap(find.text('Fiók törlése'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'delete_account_dialog_hu');
+    await tester.tap(find.text('Mégse'));
+    await tester.pumpAndSettle();
+    final privacy = find.text('Adatkezelési tájékoztató');
+    await tester.scrollUntilVisible(privacy, 300, scrollable: find.byType(Scrollable).last);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'settings_legal_hu');
   });
 
   testWidgets('settings: AI analysis (hungarian, in-depth)', (tester) async {

@@ -1224,4 +1224,36 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens मेनू बार किंवा सिस्टम ट्रेमध्ये राहते, त्यामुळे शॉर्टकट आणि किंमत सूचना चालू राहतात.';
+
+  @override
+  String get termsOfUse => 'वापराच्या अटी';
+
+  @override
+  String get privacyPolicy => 'गोपनीयता धोरण';
+
+  @override
+  String get subscriptionLegal =>
+      'तुम्ही रद्द करेपर्यंत सदस्यता दर महिन्याला आपोआप नूतनीकृत होते. सदस्यता घेऊन तुम्ही वापराच्या अटी आणि गोपनीयता धोरण स्वीकारता.';
+
+  @override
+  String get deleteAccount => 'खाते हटवा';
+
+  @override
+  String get deleteAccountTitle => 'तुमचे खाते हटवायचे?';
+
+  @override
+  String get deleteAccountBody =>
+      'तुमचे खाते आणि आमच्या सर्व्हरवर साठवलेले सर्व (ईमेल, मर्यादा, वापर) कायमचे हटवले जाईल आणि न वापरलेली विश्लेषणे गमावली जातील. ब्राउझरमध्ये भरलेली सदस्यता लगेच रद्द होते; App Store किंवा Google Play ची सदस्यता स्टोअरच्या सेटिंग्जमध्ये रद्द करावी लागेल.';
+
+  @override
+  String get deleteLocalData => 'या डिव्हाइसवरील डेटाही हटवा (पोर्टफोलिओ, सूचना, आवडते, इतिहास, जतन केलेली विश्लेषणे)';
+
+  @override
+  String get deleteAccountConfirm => 'कायमचे हटवा';
+
+  @override
+  String get accountDeleted => 'तुमचे खाते हटवले गेले.';
+
+  @override
+  String get errDeleteAccount => 'खाते हटवता आले नाही. कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.';
 }

@@ -159,6 +159,12 @@ class AlertStore extends ChangeNotifier {
     return alert;
   }
 
+  /// Minden riasztás törlése (fióktörléskor, ha a felhasználó ezt is kéri).
+  Future<void> clear() async {
+    _alerts.clear();
+    await _changed();
+  }
+
   Future<void> remove(String id) async {
     _alerts.removeWhere((a) => a.id == id);
     await _changed();

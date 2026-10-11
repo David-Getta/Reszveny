@@ -793,5 +793,15 @@
   },
   "alertOpen": "Open",
   "keepInTrayTitle": "Keep running when the window is closed",
-  "keepInTraySubtitle": "StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working."
+  "keepInTraySubtitle": "StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.",
+  "termsOfUse": "Terms of Use",
+  "privacyPolicy": "Privacy Policy",
+  "subscriptionLegal": "Subscriptions renew automatically every month until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.",
+  "deleteAccount": "Delete account",
+  "deleteAccountTitle": "Delete your account?",
+  "deleteAccountBody": "Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. A subscription paid in the browser is cancelled right away; an App Store or Google Play subscription must be cancelled in the store's settings.",
+  "deleteLocalData": "Also delete the data on this device (portfolio, alerts, favorites, history, saved analyses)",
+  "deleteAccountConfirm": "Delete for good",
+  "accountDeleted": "Your account has been deleted.",
+  "errDeleteAccount": "The account could not be deleted. Check your connection and try again."
 }

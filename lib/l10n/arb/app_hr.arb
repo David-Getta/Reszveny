@@ -352,5 +352,15 @@
   "alertHitBody": "Trenutačna cijena: {price}",
   "alertOpen": "Otvori",
   "keepInTrayTitle": "Radi i nakon zatvaranja prozora",
-  "keepInTraySubtitle": "StockLens ostaje u traci izbornika ili na programskoj traci, pa prečac i obavijesti o cijeni i dalje rade."
+  "keepInTraySubtitle": "StockLens ostaje u traci izbornika ili na programskoj traci, pa prečac i obavijesti o cijeni i dalje rade.",
+  "termsOfUse": "Uvjeti korištenja",
+  "privacyPolicy": "Pravila privatnosti",
+  "subscriptionLegal": "Pretplata se automatski obnavlja svakog mjeseca dok je ne otkažete. Pretplatom prihvaćate Uvjete korištenja i Pravila privatnosti.",
+  "deleteAccount": "Izbriši račun",
+  "deleteAccountTitle": "Izbrisati račun?",
+  "deleteAccountBody": "Vaš račun i sve što čuvamo na poslužitelju (e-pošta, limit, korištenje) bit će trajno izbrisani, a neiskorištene analize propadaju. Pretplatu plaćenu u pregledniku odmah otkazujemo; pretplatu putem App Storea ili Google Playa morate otkazati u postavkama trgovine.",
+  "deleteLocalData": "Izbriši i podatke na ovom uređaju (portfelj, obavijesti, favoriti, povijest, spremljene analize)",
+  "deleteAccountConfirm": "Trajno izbriši",
+  "accountDeleted": "Vaš je račun izbrisan.",
+  "errDeleteAccount": "Račun nije moguće izbrisati. Provjerite vezu i pokušajte ponovno."
 }

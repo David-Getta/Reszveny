@@ -352,5 +352,15 @@
   "alertHitBody": "Çmimi aktual: {price}",
   "alertOpen": "Hap",
   "keepInTrayTitle": "Vazhdo pasi mbyllet dritarja",
-  "keepInTraySubtitle": "StockLens mbetet në shiritin e menysë ose në tabaka, kështu shkurtorja dhe alarmet e çmimit vazhdojnë të punojnë."
+  "keepInTraySubtitle": "StockLens mbetet në shiritin e menysë ose në tabaka, kështu shkurtorja dhe alarmet e çmimit vazhdojnë të punojnë.",
+  "termsOfUse": "Kushtet e përdorimit",
+  "privacyPolicy": "Politika e privatësisë",
+  "subscriptionLegal": "Abonimi rinovohet automatikisht çdo muaj derisa ta anuloni. Duke u abonuar pranoni Kushtet e përdorimit dhe Politikën e privatësisë.",
+  "deleteAccount": "Fshi llogarinë",
+  "deleteAccountTitle": "Të fshihet llogaria juaj?",
+  "deleteAccountBody": "Llogaria juaj dhe gjithçka e ruajtur në serverin tonë (email, kuota, përdorimi) do të fshihen përgjithmonë, dhe analizat e papërdorura humbasin. Abonimi i paguar në shfletues anulohet menjëherë; abonimi përmes App Store ose Google Play duhet anuluar te cilësimet e dyqanit.",
+  "deleteLocalData": "Fshi edhe të dhënat në këtë pajisje (portofoli, alarmet, të preferuarat, historiku, analizat e ruajtura)",
+  "deleteAccountConfirm": "Fshi përgjithmonë",
+  "accountDeleted": "Llogaria juaj u fshi.",
+  "errDeleteAccount": "Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish."
 }

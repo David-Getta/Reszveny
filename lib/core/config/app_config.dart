@@ -28,6 +28,8 @@ class AppConfig {
     this.updateAppcastUrl = const String.fromEnvironment('UPDATE_APPCAST_URL'),
     this.updateManifestUrl = const String.fromEnvironment('UPDATE_MANIFEST_URL'),
     this.storeUrl = const String.fromEnvironment('STORE_URL'),
+    this.termsUrlOverride = const String.fromEnvironment('TERMS_URL'),
+    this.privacyUrlOverride = const String.fromEnvironment('PRIVACY_URL'),
   });
 
   /// A StockLens backend címe (üres: a kliens közvetlenül, saját kulcsokkal hív).
@@ -53,6 +55,15 @@ class AppConfig {
 
   /// Bolti oldal (App Store / Play) – ide visz az „Update” gomb, ha nincs más.
   final String storeUrl;
+
+  /// A felhasználási feltételek és az adatkezelési tájékoztató saját címe; ha
+  /// üres, a backend szolgálja ki (`/legal/terms`, `/legal/privacy`).
+  final String termsUrlOverride;
+  final String privacyUrlOverride;
+
+  String get termsUrl => termsUrlOverride.isNotEmpty ? termsUrlOverride : (hasBackend ? '$backend/legal/terms' : '');
+  String get privacyUrl =>
+      privacyUrlOverride.isNotEmpty ? privacyUrlOverride : (hasBackend ? '$backend/legal/privacy' : '');
 
   /// Backend-módban fut az app: a kulcsokat és a kvótát a szerver kezeli.
   bool get hasBackend => backendUrl.isNotEmpty;

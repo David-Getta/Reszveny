@@ -1274,4 +1274,37 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens zůstane v řádku nabídek nebo v oznamovací oblasti, takže klávesová zkratka i cenová upozornění dál fungují.';
+
+  @override
+  String get termsOfUse => 'Podmínky používání';
+
+  @override
+  String get privacyPolicy => 'Zásady ochrany osobních údajů';
+
+  @override
+  String get subscriptionLegal =>
+      'Předplatné se každý měsíc automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů.';
+
+  @override
+  String get deleteAccount => 'Smazat účet';
+
+  @override
+  String get deleteAccountTitle => 'Smazat váš účet?';
+
+  @override
+  String get deleteAccountBody =>
+      'Váš účet a vše, co máme uložené na serveru (e-mail, limit, využití), bude trvale smazáno a nevyužité analýzy propadnou. Předplatné placené v prohlížeči hned zrušíme; předplatné z App Storu nebo Google Play je třeba zrušit v nastavení obchodu.';
+
+  @override
+  String get deleteLocalData =>
+      'Smazat i data v tomto zařízení (portfolio, upozornění, oblíbené, historie, uložené analýzy)';
+
+  @override
+  String get deleteAccountConfirm => 'Trvale smazat';
+
+  @override
+  String get accountDeleted => 'Váš účet byl smazán.';
+
+  @override
+  String get errDeleteAccount => 'Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu.';
 }

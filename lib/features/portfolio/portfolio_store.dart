@@ -141,6 +141,13 @@ class PortfolioStore extends ChangeNotifier {
     return lot;
   }
 
+  /// Minden vétel törlése (fióktörléskor, ha a felhasználó ezt is kéri).
+  Future<void> clear() async {
+    _lots.clear();
+    notifyListeners();
+    await _save();
+  }
+
   Future<void> remove(String id) async {
     _lots.removeWhere((l) => l.id == id);
     notifyListeners();

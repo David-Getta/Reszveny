@@ -86,6 +86,18 @@ class StripeClient {
     return s['url'] as String;
   }
 
+  /// Előfizetés azonnali lemondása (fióktörléskor, hogy ne terheljük tovább a kártyát).
+  Future<void> cancelSubscription(String subscriptionId) async {
+    final res = await _client.delete(
+      Uri.parse('$apiBase/subscriptions/$subscriptionId'),
+      headers: {'authorization': 'Bearer $secretKey'},
+    );
+    if (res.statusCode >= 300 && res.statusCode != 404) {
+      final body = jsonDecode(res.body) as Map<String, dynamic>;
+      throw StripeException((body['error'] as Map?)?['message'] as String? ?? 'stripe ${res.statusCode}');
+    }
+  }
+
   /// `Stripe-Signature: t=…,v1=…` ellenőrzése (HMAC-SHA256, 5 perces tűréssel).
   bool verifySignature(String payload, String? header, {DateTime? now}) {
     if (header == null || webhookSecret.isEmpty) return false;

@@ -1224,4 +1224,37 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens menü çubuğunda veya sistem tepsisinde kalır; böylece kısayol ve fiyat alarmları çalışmaya devam eder.';
+
+  @override
+  String get termsOfUse => 'Kullanım Koşulları';
+
+  @override
+  String get privacyPolicy => 'Gizlilik Politikası';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonelik, iptal edene kadar her ay otomatik olarak yenilenir. Abone olarak Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul etmiş olursunuz.';
+
+  @override
+  String get deleteAccount => 'Hesabı sil';
+
+  @override
+  String get deleteAccountTitle => 'Hesabınız silinsin mi?';
+
+  @override
+  String get deleteAccountBody =>
+      'Hesabınız ve sunucumuzda saklanan her şey (e-posta, kota, kullanım) kalıcı olarak silinir; kullanılmayan analizler kaybolur. Tarayıcıda ödenen abonelik hemen iptal edilir; App Store veya Google Play aboneliğini mağaza ayarlarından iptal etmeniz gerekir.';
+
+  @override
+  String get deleteLocalData =>
+      'Bu cihazdaki verileri de sil (portföy, alarmlar, favoriler, geçmiş, kaydedilen analizler)';
+
+  @override
+  String get deleteAccountConfirm => 'Kalıcı olarak sil';
+
+  @override
+  String get accountDeleted => 'Hesabınız silindi.';
+
+  @override
+  String get errDeleteAccount => 'Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin.';
 }

@@ -352,5 +352,15 @@
   "alertHitBody": "Aktualna cena: {price}",
   "alertOpen": "Otwórz",
   "keepInTrayTitle": "Działaj po zamknięciu okna",
-  "keepInTraySubtitle": "StockLens zostaje na pasku menu lub w zasobniku, więc skrót klawiszowy i alerty cenowe nadal działają."
+  "keepInTraySubtitle": "StockLens zostaje na pasku menu lub w zasobniku, więc skrót klawiszowy i alerty cenowe nadal działają.",
+  "termsOfUse": "Warunki korzystania",
+  "privacyPolicy": "Polityka prywatności",
+  "subscriptionLegal": "Subskrypcja odnawia się automatycznie co miesiąc, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności.",
+  "deleteAccount": "Usuń konto",
+  "deleteAccountTitle": "Usunąć konto?",
+  "deleteAccountBody": "Twoje konto i wszystko, co przechowujemy na serwerze (e-mail, limit, użycie), zostanie trwale usunięte, a niewykorzystane analizy przepadną. Subskrypcja opłacona w przeglądarce zostanie od razu anulowana; subskrypcję z App Store lub Google Play anulujesz w ustawieniach sklepu.",
+  "deleteLocalData": "Usuń też dane na tym urządzeniu (portfel, alerty, ulubione, historia, zapisane analizy)",
+  "deleteAccountConfirm": "Usuń trwale",
+  "accountDeleted": "Twoje konto zostało usunięte.",
+  "errDeleteAccount": "Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie."
 }

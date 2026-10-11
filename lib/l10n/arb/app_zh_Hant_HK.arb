@@ -352,5 +352,15 @@
   "alertHitBody": "現價：{price}",
   "alertOpen": "打開",
   "keepInTrayTitle": "關閉視窗後繼續運行",
-  "keepInTraySubtitle": "StockLens 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。"
+  "keepInTraySubtitle": "StockLens 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。",
+  "termsOfUse": "使用條款",
+  "privacyPolicy": "私隱政策",
+  "subscriptionLegal": "訂閱會每月自動續期，直至你取消。訂閱即表示你接受使用條款及私隱政策。",
+  "deleteAccount": "刪除帳戶",
+  "deleteAccountTitle": "要刪除你的帳戶嗎？",
+  "deleteAccountBody": "你的帳戶及我們伺服器上儲存的所有內容（電郵、額度、使用記錄）將被永久刪除，未使用的分析將會失效。於瀏覽器付款的訂閱會即時取消；App Store 或 Google Play 的訂閱需於商店設定中取消。",
+  "deleteLocalData": "同時刪除此裝置上的資料（投資組合、提示、收藏、記錄、已儲存的分析）",
+  "deleteAccountConfirm": "永久刪除",
+  "accountDeleted": "你的帳戶已刪除。",
+  "errDeleteAccount": "未能刪除帳戶。請檢查網絡連線後再試。"
 }

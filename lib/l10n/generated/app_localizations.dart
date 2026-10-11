@@ -2295,6 +2295,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.'**
   String get keepInTraySubtitle;
+
+  /// No description provided for @termsOfUse.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Use'**
+  String get termsOfUse;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @subscriptionLegal.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically every month until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.'**
+  String get subscriptionLegal;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account'**
+  String get deleteAccount;
+
+  /// No description provided for @deleteAccountTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your account?'**
+  String get deleteAccountTitle;
+
+  /// No description provided for @deleteAccountBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. A subscription paid in the browser is cancelled right away; an App Store or Google Play subscription must be cancelled in the store\'s settings.'**
+  String get deleteAccountBody;
+
+  /// No description provided for @deleteLocalData.
+  ///
+  /// In en, this message translates to:
+  /// **'Also delete the data on this device (portfolio, alerts, favorites, history, saved analyses)'**
+  String get deleteLocalData;
+
+  /// No description provided for @deleteAccountConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete for good'**
+  String get deleteAccountConfirm;
+
+  /// No description provided for @accountDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been deleted.'**
+  String get accountDeleted;
+
+  /// No description provided for @errDeleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'The account could not be deleted. Check your connection and try again.'**
+  String get errDeleteAccount;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

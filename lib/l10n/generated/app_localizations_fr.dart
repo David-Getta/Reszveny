@@ -1233,4 +1233,37 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens reste dans la barre des menus ou la zone de notification : le raccourci et les alertes de cours continuent de fonctionner.';
+
+  @override
+  String get termsOfUse => 'Conditions d’utilisation';
+
+  @override
+  String get privacyPolicy => 'Politique de confidentialité';
+
+  @override
+  String get subscriptionLegal =>
+      'L’abonnement se renouvelle automatiquement chaque mois jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité.';
+
+  @override
+  String get deleteAccount => 'Supprimer le compte';
+
+  @override
+  String get deleteAccountTitle => 'Supprimer votre compte ?';
+
+  @override
+  String get deleteAccountBody =>
+      'Votre compte et tout ce qui est stocké sur notre serveur (e-mail, quota, utilisation) seront définitivement supprimés ; les analyses non utilisées sont perdues. Un abonnement payé dans le navigateur est résilié immédiatement ; un abonnement App Store ou Google Play doit être résilié dans les réglages de la boutique.';
+
+  @override
+  String get deleteLocalData =>
+      'Supprimer aussi les données de cet appareil (portefeuille, alertes, favoris, historique, analyses enregistrées)';
+
+  @override
+  String get deleteAccountConfirm => 'Supprimer définitivement';
+
+  @override
+  String get accountDeleted => 'Votre compte a été supprimé.';
+
+  @override
+  String get errDeleteAccount => 'Impossible de supprimer le compte. Vérifiez votre connexion et réessayez.';
 }

@@ -148,6 +148,18 @@ class BackendClient {
     await resetToken();
   }
 
+  /// `DELETE /v1/account`: a fiók és a szerveren tárolt adatok törlése (a böngészős
+  /// előfizetést a szerver lemondja). Nem az [_authorized] úton megy, mert az 401-re
+  /// új fiókot nyitna – itt a 401 azt jelenti, hogy a fiók már nincs meg. Utána a
+  /// token elfelejtődik; a következő hívás új, névtelen fiókot nyit.
+  Future<void> deleteAccount() async {
+    final res = await _inner
+        .delete(Uri.parse('$baseUrl/v1/account'), headers: await authHeaders())
+        .timeout(const Duration(seconds: 30));
+    if (res.statusCode != 401) _decode(res);
+    await resetToken();
+  }
+
   /// Böngészős fizetés (Stripe Checkout) címe. 403 `login_required`, ha nincs fiók.
   Future<String> checkoutUrl(String productId) async {
     final res = await _authorized(

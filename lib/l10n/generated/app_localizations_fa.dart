@@ -1224,4 +1224,37 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens در نوار منو یا سینی سیستم می‌ماند تا میان‌بر و هشدارهای قیمت همچنان کار کنند.';
+
+  @override
+  String get termsOfUse => 'شرایط استفاده';
+
+  @override
+  String get privacyPolicy => 'سیاست حریم خصوصی';
+
+  @override
+  String get subscriptionLegal =>
+      'اشتراک تا زمانی که لغوش نکنید هر ماه به‌طور خودکار تمدید می‌شود. با خرید اشتراک، شرایط استفاده و سیاست حریم خصوصی را می‌پذیرید.';
+
+  @override
+  String get deleteAccount => 'حذف حساب';
+
+  @override
+  String get deleteAccountTitle => 'حسابتان حذف شود؟';
+
+  @override
+  String get deleteAccountBody =>
+      'حساب شما و همهٔ آنچه روی سرور ما ذخیره شده (ایمیل، سهمیه، استفاده) برای همیشه حذف می‌شود و تحلیل‌های استفاده‌نشده از بین می‌روند. اشتراکی که در مرورگر پرداخت شده فوراً لغو می‌شود؛ اشتراک App Store یا Google Play را باید در تنظیمات فروشگاه لغو کنید.';
+
+  @override
+  String get deleteLocalData =>
+      'داده‌های این دستگاه هم حذف شود (سبد سهام، هشدارها، علاقه‌مندی‌ها، سابقه، تحلیل‌های ذخیره‌شده)';
+
+  @override
+  String get deleteAccountConfirm => 'حذف دائمی';
+
+  @override
+  String get accountDeleted => 'حساب شما حذف شد.';
+
+  @override
+  String get errDeleteAccount => 'حذف حساب ممکن نشد. اتصال را بررسی کنید و دوباره تلاش کنید.';
 }

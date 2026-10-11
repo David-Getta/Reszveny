@@ -1232,4 +1232,37 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen.';
+
+  @override
+  String get termsOfUse => 'Käyttöehdot';
+
+  @override
+  String get privacyPolicy => 'Tietosuojaseloste';
+
+  @override
+  String get subscriptionLegal =>
+      'Tilaus uusiutuu automaattisesti joka kuukausi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen.';
+
+  @override
+  String get deleteAccount => 'Poista tili';
+
+  @override
+  String get deleteAccountTitle => 'Poistetaanko tilisi?';
+
+  @override
+  String get deleteAccountBody =>
+      'Tilisi ja kaikki palvelimellamme oleva (sähköposti, kiintiö, käyttö) poistetaan pysyvästi, ja käyttämättömät analyysit menetetään. Selaimessa maksettu tilaus perutaan heti; App Storen tai Google Playn tilaus on peruttava kaupan asetuksista.';
+
+  @override
+  String get deleteLocalData =>
+      'Poista myös tämän laitteen tiedot (salkku, hälytykset, suosikit, historia, tallennetut analyysit)';
+
+  @override
+  String get deleteAccountConfirm => 'Poista pysyvästi';
+
+  @override
+  String get accountDeleted => 'Tilisi on poistettu.';
+
+  @override
+  String get errDeleteAccount => 'Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen.';
 }

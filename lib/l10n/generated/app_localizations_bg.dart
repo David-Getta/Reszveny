@@ -1227,4 +1227,37 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens остава в лентата с менюта или в системната област, така клавишната комбинация и ценовите известия продължават да работят.';
+
+  @override
+  String get termsOfUse => 'Условия за ползване';
+
+  @override
+  String get privacyPolicy => 'Политика за поверителност';
+
+  @override
+  String get subscriptionLegal =>
+      'Абонаментът се подновява автоматично всеки месец, докато не го прекратите. С абонамента приемате Условията за ползване и Политиката за поверителност.';
+
+  @override
+  String get deleteAccount => 'Изтриване на акаунта';
+
+  @override
+  String get deleteAccountTitle => 'Да изтрием ли акаунта ви?';
+
+  @override
+  String get deleteAccountBody =>
+      'Акаунтът ви и всичко, съхранено на сървъра ни (имейл, лимит, използване), ще бъдат изтрити окончателно, а неизползваните анализи се губят. Абонамент, платен в браузъра, се прекратява веднага; абонамент през App Store или Google Play трябва да прекратите в настройките на магазина.';
+
+  @override
+  String get deleteLocalData =>
+      'Изтрий и данните на това устройство (портфейл, известия, любими, история, запазени анализи)';
+
+  @override
+  String get deleteAccountConfirm => 'Изтрий окончателно';
+
+  @override
+  String get accountDeleted => 'Акаунтът ви е изтрит.';
+
+  @override
+  String get errDeleteAccount => 'Акаунтът не можа да бъде изтрит. Проверете връзката и опитайте отново.';
 }

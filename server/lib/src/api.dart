@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:http/http.dart' as http;
+import 'package:markdown/markdown.dart' as md;
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
@@ -23,6 +25,8 @@ import 'stripe.dart';
 /// - `POST /v1/auth/email/start` `{email}` → 6 jegyű belépőkód e-mailben
 /// - `POST /v1/auth/email/verify` `{email, code}` → fiókhoz kötött token (az előfizetés minden eszközön ugyanaz)
 /// - `POST /v1/auth/logout` → a token visszavonása
+/// - `DELETE /v1/account` → a fiók és a szerveren tárolt adatok törlése (a Stripe-előfizetést lemondja)
+/// - `GET  /legal/terms`, `/legal/privacy` → ÁSZF és adatkezelési tájékoztató a `legal/` mappa markdownjából
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
 /// - `POST /v1/billing/portal` → Stripe ügyfélportál URL (csomagváltás, lemondás, számlák)
 /// - `POST /v1/stripe/webhook` → a Stripe eseményei (aláírás-ellenőrzéssel)
@@ -39,6 +43,7 @@ class Api {
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
     this.anthropicModel = 'claude-opus-5-5',
+    this.legalDir = 'legal',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store);
@@ -62,6 +67,9 @@ class Api {
 
   /// A modell, amin minden hívás fut; a kliens nem választhat drágábbat.
   final String anthropicModel;
+
+  /// A jogi szövegek mappája: `terms.hu.md`, `privacy.hu.md`, `terms.en.md`…
+  final String legalDir;
 
   /// A segéd-hívások korlátai felhasználónként. Egy elemzéshez legfeljebb egy
   /// javítás, egy fotóhoz egy felismerés tartozik, így ez bőven elég.
@@ -88,6 +96,8 @@ class Api {
       ..post('/v1/auth/email/start', _emailStart)
       ..post('/v1/auth/email/verify', _emailVerify)
       ..post('/v1/auth/logout', _logout)
+      ..delete('/v1/account', _deleteAccount)
+      ..get('/legal/<name>', _legal)
       ..post('/v1/billing/checkout', _checkout)
       ..post('/v1/billing/portal', _portal)
       ..post('/v1/stripe/webhook', _stripeWebhook)
@@ -138,7 +148,7 @@ class Api {
           'access-control-allow-headers':
               'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
               'x-stocklens-depth',
-          'access-control-allow-methods': 'GET, POST, OPTIONS',
+          'access-control-allow-methods': 'GET, POST, DELETE, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
         final res = await inner(req);
@@ -233,6 +243,55 @@ class Api {
     if (t != null) store.revokeToken(t);
     return _json({'ok': true});
   }
+
+  /// Fiók törlése: előbb a böngészős (Stripe) előfizetés lemondása – ha ez nem
+  /// sikerül, nem törlünk, különben a kártyát tovább terhelnénk fiók nélkül –,
+  /// majd minden szerveren tárolt adat törlése. A bolti előfizetést a felhasználó
+  /// a boltban mondja le (az app ezt meg is mondja).
+  Future<Response> _deleteAccount(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final subscription = store.stripeOf(uid).subscriptionId;
+    final s = stripe;
+    var cancelled = false;
+    if (subscription != null && s != null) {
+      try {
+        await s.cancelSubscription(subscription);
+        cancelled = true;
+      } catch (e) {
+        return _error(502, 'stripe_cancel_failed', '$e');
+      }
+    }
+    store.deleteUser(uid);
+    return _json({'deleted': true, 'stripe_subscription_cancelled': cancelled});
+  }
+
+  /// ÁSZF és adatkezelési tájékoztató HTML-ben, a kért (vagy a böngésző szerinti)
+  /// nyelven, magyar / angol tartalékkal. Ha még nincs közzétéve, 404.
+  Future<Response> _legal(Request r, String name) async {
+    if (!const {'terms', 'privacy'}.contains(name)) return Response.notFound('not found');
+    final asked = (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase();
+    final first = asked.startsWith('hu') ? 'hu' : 'en';
+    for (final lang in {first, 'hu', 'en'}) {
+      final f = File('$legalDir/$name.$lang.md');
+      if (!f.existsSync()) continue;
+      final body = md.markdownToHtml(await f.readAsString(), extensionSet: md.ExtensionSet.gitHubWeb);
+      return Response.ok(_legalPage(body, lang), headers: {'content-type': 'text/html; charset=utf-8'});
+    }
+    return Response.notFound(
+      _legalPage('<h1>StockLens</h1><p>Ez a dokumentum még nincs közzétéve. · Not published yet.</p>', 'hu'),
+      headers: {'content-type': 'text/html; charset=utf-8'},
+    );
+  }
+
+  static String _legalPage(String body, String lang) =>
+      '<!doctype html><html lang="$lang"><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+      '<title>StockLens</title><style>body{max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.55;'
+      'font-family:-apple-system,system-ui,sans-serif;color:#1F1E1D;background:#FAF9F5}'
+      'table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #DDD9CE;padding:6px;'
+      'vertical-align:top;text-align:left}a{color:#C96442}'
+      '@media(prefers-color-scheme:dark){body{background:#1F1E1D;color:#F0EEE6}td,th{border-color:#3A3835}'
+      'a{color:#D97757}}</style><body>$body</body></html>';
 
   // ---- Böngészős fizetés (Stripe) ----
 

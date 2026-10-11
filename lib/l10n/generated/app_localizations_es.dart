@@ -1229,4 +1229,37 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens se queda en la barra de menús o la bandeja, así el atajo y las alertas de precio siguen funcionando.';
+
+  @override
+  String get termsOfUse => 'Condiciones de uso';
+
+  @override
+  String get privacyPolicy => 'Política de privacidad';
+
+  @override
+  String get subscriptionLegal =>
+      'La suscripción se renueva automáticamente cada mes hasta que la canceles. Al suscribirte aceptas las Condiciones de uso y la Política de privacidad.';
+
+  @override
+  String get deleteAccount => 'Eliminar cuenta';
+
+  @override
+  String get deleteAccountTitle => '¿Eliminar tu cuenta?';
+
+  @override
+  String get deleteAccountBody =>
+      'Tu cuenta y todo lo guardado en nuestro servidor (correo, cupo, uso) se eliminarán para siempre, y los análisis no usados se pierden. Una suscripción pagada en el navegador se cancela al instante; una de App Store o Google Play debes cancelarla en los ajustes de la tienda.';
+
+  @override
+  String get deleteLocalData =>
+      'Eliminar también los datos de este dispositivo (cartera, alertas, favoritos, historial, análisis guardados)';
+
+  @override
+  String get deleteAccountConfirm => 'Eliminar para siempre';
+
+  @override
+  String get accountDeleted => 'Tu cuenta se ha eliminado.';
+
+  @override
+  String get errDeleteAccount => 'No se pudo eliminar la cuenta. Comprueba la conexión e inténtalo de nuevo.';
 }

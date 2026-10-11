@@ -1186,4 +1186,35 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle => 'StockLensはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
+
+  @override
+  String get termsOfUse => '利用規約';
+
+  @override
+  String get privacyPolicy => 'プライバシーポリシー';
+
+  @override
+  String get subscriptionLegal => 'サブスクリプションは解約するまで毎月自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
+
+  @override
+  String get deleteAccount => 'アカウントを削除';
+
+  @override
+  String get deleteAccountTitle => 'アカウントを削除しますか？';
+
+  @override
+  String get deleteAccountBody =>
+      'アカウントとサーバーに保存されているすべてのデータ（メールアドレス、利用枠、利用履歴）が完全に削除され、未使用の分析は失われます。ブラウザで支払ったサブスクリプションはすぐに解約されます。App StoreまたはGoogle Playのサブスクリプションはストアの設定で解約してください。';
+
+  @override
+  String get deleteLocalData => 'この端末のデータも削除する（ポートフォリオ、アラート、お気に入り、履歴、保存した分析）';
+
+  @override
+  String get deleteAccountConfirm => '完全に削除';
+
+  @override
+  String get accountDeleted => 'アカウントを削除しました。';
+
+  @override
+  String get errDeleteAccount => 'アカウントを削除できませんでした。接続を確認してもう一度お試しください。';
 }

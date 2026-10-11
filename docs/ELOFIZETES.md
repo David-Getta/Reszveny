@@ -106,12 +106,20 @@ történik. A `server/` mappában egy kis Dart (shelf + SQLite) szerver van, Doc
 | `POST /v1/analyze` | Anthropic-továbbítás kvóta-ellenőrzéssel; 402 ha nincs keret; befejezett válasz után levonás és napló |
 | `POST /v1/anthropic/v1/messages` | Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést; rögzített modell, legfeljebb 16 000 token, eszközök nélkül, 120 000 karakter és 1 kép, felhasználónként óránként 20 / naponta 60 hívás |
 | `GET /v1/market/*` | Finnhub-továbbítás a szerver kulcsával |
+| `DELETE /v1/account` | Fiók törlése: a böngészős (Stripe) előfizetés lemondása, majd a szerveren tárolt adatok törlése; a vásárlási sorok névtelenítve maradnak |
+| `GET /legal/terms`, `/legal/privacy` | Felhasználási feltételek és adatkezelési tájékoztató (magyar / angol) |
 
 Kliens oldalon elég a `--dart-define=BACKEND_URL=https://…`: az `AppConfig` ekkor a szerver
 továbbítóira irányít, a `BackendClient` kezeli a tokent (401-re új fiókot nyit), a
 `BillingController` a bolt bizonylatát a szerverrel ellenőrzi (ha a szerver nem érhető el, helyben
 írja jóvá és a visszaállítás később újrapróbálja), a `ReportStore` pedig minden elemzés és
 kvóta-hiba után a `/v1/me`-ből frissíti a keretet.
+
+A csomagválasztó alján ott áll, hogy az előfizetés havonta automatikusan megújul, amíg le nem
+mondják, és hogy a vásárlással a felhasználó elfogadja a feltételeket – a két dokumentum linkjével
+(App Store 3.1.2 és fogyasztóvédelmi követelmény). A fiók a beállításokban törölhető (App Store
+5.1.1(v)); az App Store-os és Play-es előfizetést a bolt beállításaiban kell lemondani, ezt a
+megerősítő ablak is elmondja.
 
 A bolti bizonylat ellenőrzése jelenleg fejlesztői módban (`VERIFY_MODE=dev`) minden vásárlást
 elfogad; az App Store Server API / Play Developer API hívás (`VERIFY_MODE=store`) a bolti fiókok

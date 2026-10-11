@@ -1223,4 +1223,37 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.';
+
+  @override
+  String get termsOfUse => 'Terms of Use';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get subscriptionLegal =>
+      'Subscriptions renew automatically every month until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get deleteAccount => 'Delete account';
+
+  @override
+  String get deleteAccountTitle => 'Delete your account?';
+
+  @override
+  String get deleteAccountBody =>
+      'Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. A subscription paid in the browser is cancelled right away; an App Store or Google Play subscription must be cancelled in the store\'s settings.';
+
+  @override
+  String get deleteLocalData =>
+      'Also delete the data on this device (portfolio, alerts, favorites, history, saved analyses)';
+
+  @override
+  String get deleteAccountConfirm => 'Delete for good';
+
+  @override
+  String get accountDeleted => 'Your account has been deleted.';
+
+  @override
+  String get errDeleteAccount => 'The account could not be deleted. Check your connection and try again.';
 }

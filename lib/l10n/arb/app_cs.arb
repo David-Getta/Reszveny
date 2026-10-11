@@ -352,5 +352,15 @@
   "alertHitBody": "Aktuální cena: {price}",
   "alertOpen": "Otevřít",
   "keepInTrayTitle": "Běžet i po zavření okna",
-  "keepInTraySubtitle": "StockLens zůstane v řádku nabídek nebo v oznamovací oblasti, takže klávesová zkratka i cenová upozornění dál fungují."
+  "keepInTraySubtitle": "StockLens zůstane v řádku nabídek nebo v oznamovací oblasti, takže klávesová zkratka i cenová upozornění dál fungují.",
+  "termsOfUse": "Podmínky používání",
+  "privacyPolicy": "Zásady ochrany osobních údajů",
+  "subscriptionLegal": "Předplatné se každý měsíc automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů.",
+  "deleteAccount": "Smazat účet",
+  "deleteAccountTitle": "Smazat váš účet?",
+  "deleteAccountBody": "Váš účet a vše, co máme uložené na serveru (e-mail, limit, využití), bude trvale smazáno a nevyužité analýzy propadnou. Předplatné placené v prohlížeči hned zrušíme; předplatné z App Storu nebo Google Play je třeba zrušit v nastavení obchodu.",
+  "deleteLocalData": "Smazat i data v tomto zařízení (portfolio, upozornění, oblíbené, historie, uložené analýzy)",
+  "deleteAccountConfirm": "Trvale smazat",
+  "accountDeleted": "Váš účet byl smazán.",
+  "errDeleteAccount": "Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu."
 }

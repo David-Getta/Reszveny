@@ -218,6 +218,26 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                       ),
                     ],
                   ),
+                  // Az App Store és a fogyasztóvédelem is megköveteli: automatikus
+                  // megújulás, és a feltételek elérhetők a vásárlás helyén.
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Text(l10n.subscriptionLegal, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  ),
+                  Wrap(
+                    spacing: 4,
+                    children: [
+                      for (final (label, url) in [
+                        (l10n.termsOfUse, services.config.termsUrl),
+                        (l10n.privacyPolicy, services.config.privacyUrl),
+                      ])
+                        if (services.legalUri(url, Localizations.localeOf(context)) case final uri?)
+                          TextButton(
+                            onPressed: () => launchUrl(uri, mode: LaunchMode.externalApplication),
+                            child: Text(label),
+                          ),
+                    ],
+                  ),
                   if (_paymentNote(l10n, bc.billing) case final note?)
                     Padding(
                       padding: const EdgeInsets.only(top: 8),

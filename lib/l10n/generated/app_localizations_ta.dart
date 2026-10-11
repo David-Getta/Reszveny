@@ -1230,4 +1230,37 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் இருக்கும், எனவே குறுக்குவிசையும் விலை எச்சரிக்கைகளும் தொடர்ந்து செயல்படும்.';
+
+  @override
+  String get termsOfUse => 'பயன்பாட்டு விதிமுறைகள்';
+
+  @override
+  String get privacyPolicy => 'தனியுரிமைக் கொள்கை';
+
+  @override
+  String get subscriptionLegal =>
+      'நீங்கள் ரத்து செய்யும் வரை சந்தா ஒவ்வொரு மாதமும் தானாகப் புதுப்பிக்கப்படும். சந்தா செலுத்துவதன் மூலம் பயன்பாட்டு விதிமுறைகளையும் தனியுரிமைக் கொள்கையையும் ஏற்கிறீர்கள்.';
+
+  @override
+  String get deleteAccount => 'கணக்கை நீக்கு';
+
+  @override
+  String get deleteAccountTitle => 'உங்கள் கணக்கை நீக்கவா?';
+
+  @override
+  String get deleteAccountBody =>
+      'உங்கள் கணக்கும் எங்கள் சேவையகத்தில் சேமிக்கப்பட்ட அனைத்தும் (மின்னஞ்சல், வரம்பு, பயன்பாடு) நிரந்தரமாக நீக்கப்படும்; பயன்படுத்தாத பகுப்பாய்வுகள் இழக்கப்படும். உலாவியில் செலுத்திய சந்தா உடனே ரத்து செய்யப்படும்; App Store அல்லது Google Play சந்தாவை கடையின் அமைப்புகளில் ரத்து செய்ய வேண்டும்.';
+
+  @override
+  String get deleteLocalData =>
+      'இந்தச் சாதனத்தின் தரவையும் நீக்கு (போர்ட்ஃபோலியோ, எச்சரிக்கைகள், பிடித்தவை, வரலாறு, சேமித்த பகுப்பாய்வுகள்)';
+
+  @override
+  String get deleteAccountConfirm => 'நிரந்தரமாக நீக்கு';
+
+  @override
+  String get accountDeleted => 'உங்கள் கணக்கு நீக்கப்பட்டது.';
+
+  @override
+  String get errDeleteAccount => 'கணக்கை நீக்க முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.';
 }

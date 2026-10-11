@@ -1213,4 +1213,37 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens tetap ada di bilah menu atau baki sistem, sehingga pintasan dan peringatan harga tetap berfungsi.';
+
+  @override
+  String get termsOfUse => 'Ketentuan Penggunaan';
+
+  @override
+  String get privacyPolicy => 'Kebijakan Privasi';
+
+  @override
+  String get subscriptionLegal =>
+      'Langganan diperpanjang otomatis setiap bulan sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi.';
+
+  @override
+  String get deleteAccount => 'Hapus akun';
+
+  @override
+  String get deleteAccountTitle => 'Hapus akun Anda?';
+
+  @override
+  String get deleteAccountBody =>
+      'Akun Anda dan semua yang tersimpan di server kami (email, kuota, penggunaan) akan dihapus permanen, dan analisis yang belum dipakai akan hilang. Langganan yang dibayar di peramban langsung dibatalkan; langganan App Store atau Google Play harus dibatalkan di pengaturan toko.';
+
+  @override
+  String get deleteLocalData =>
+      'Hapus juga data di perangkat ini (portofolio, peringatan, favorit, riwayat, analisis tersimpan)';
+
+  @override
+  String get deleteAccountConfirm => 'Hapus permanen';
+
+  @override
+  String get accountDeleted => 'Akun Anda telah dihapus.';
+
+  @override
+  String get errDeleteAccount => 'Akun tidak dapat dihapus. Periksa koneksi dan coba lagi.';
 }

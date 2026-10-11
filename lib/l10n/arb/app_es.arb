@@ -352,5 +352,15 @@
   "alertHitBody": "Precio actual: {price}",
   "alertOpen": "Abrir",
   "keepInTrayTitle": "Seguir funcionando al cerrar la ventana",
-  "keepInTraySubtitle": "StockLens se queda en la barra de menús o la bandeja, así el atajo y las alertas de precio siguen funcionando."
+  "keepInTraySubtitle": "StockLens se queda en la barra de menús o la bandeja, así el atajo y las alertas de precio siguen funcionando.",
+  "termsOfUse": "Condiciones de uso",
+  "privacyPolicy": "Política de privacidad",
+  "subscriptionLegal": "La suscripción se renueva automáticamente cada mes hasta que la canceles. Al suscribirte aceptas las Condiciones de uso y la Política de privacidad.",
+  "deleteAccount": "Eliminar cuenta",
+  "deleteAccountTitle": "¿Eliminar tu cuenta?",
+  "deleteAccountBody": "Tu cuenta y todo lo guardado en nuestro servidor (correo, cupo, uso) se eliminarán para siempre, y los análisis no usados se pierden. Una suscripción pagada en el navegador se cancela al instante; una de App Store o Google Play debes cancelarla en los ajustes de la tienda.",
+  "deleteLocalData": "Eliminar también los datos de este dispositivo (cartera, alertas, favoritos, historial, análisis guardados)",
+  "deleteAccountConfirm": "Eliminar para siempre",
+  "accountDeleted": "Tu cuenta se ha eliminado.",
+  "errDeleteAccount": "No se pudo eliminar la cuenta. Comprueba la conexión e inténtalo de nuevo."
 }

@@ -352,5 +352,15 @@
   "alertHitBody": "Aktuel kurs: {price}",
   "alertOpen": "Åbn",
   "keepInTrayTitle": "Bliv ved med at køre, når vinduet lukkes",
-  "keepInTraySubtitle": "StockLens bliver i menulinjen eller proceslinjen, så genvejen og kursalarmerne fortsat virker."
+  "keepInTraySubtitle": "StockLens bliver i menulinjen eller proceslinjen, så genvejen og kursalarmerne fortsat virker.",
+  "termsOfUse": "Brugsvilkår",
+  "privacyPolicy": "Privatlivspolitik",
+  "subscriptionLegal": "Abonnementet fornyes automatisk hver måned, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken.",
+  "deleteAccount": "Slet konto",
+  "deleteAccountTitle": "Slet din konto?",
+  "deleteAccountBody": "Din konto og alt, hvad der er gemt på vores server (e-mail, kvote, forbrug), slettes permanent, og ubrugte analyser går tabt. Et abonnement betalt i browseren opsiges med det samme; et abonnement via App Store eller Google Play skal opsiges i butikkens indstillinger.",
+  "deleteLocalData": "Slet også data på denne enhed (portefølje, alarmer, favoritter, historik, gemte analyser)",
+  "deleteAccountConfirm": "Slet permanent",
+  "accountDeleted": "Din konto er slettet.",
+  "errDeleteAccount": "Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen."
 }

@@ -1227,4 +1227,37 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens hubaki kwenye upau wa menyu au trei ya mfumo, hivyo njia ya mkato na arifa za bei huendelea kufanya kazi.';
+
+  @override
+  String get termsOfUse => 'Masharti ya Matumizi';
+
+  @override
+  String get privacyPolicy => 'Sera ya Faragha';
+
+  @override
+  String get subscriptionLegal =>
+      'Usajili hujisasisha kiotomatiki kila mwezi hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha.';
+
+  @override
+  String get deleteAccount => 'Futa akaunti';
+
+  @override
+  String get deleteAccountTitle => 'Ungependa kufuta akaunti yako?';
+
+  @override
+  String get deleteAccountBody =>
+      'Akaunti yako na kila kitu kilichohifadhiwa kwenye seva yetu (barua pepe, kiwango, matumizi) vitafutwa kabisa, na uchambuzi ambao haujatumika utapotea. Usajili uliolipwa kwenye kivinjari unaghairiwa mara moja; usajili wa App Store au Google Play lazima ughairiwe kwenye mipangilio ya duka.';
+
+  @override
+  String get deleteLocalData =>
+      'Futa pia data kwenye kifaa hiki (jalada, arifa, vipendwa, historia, uchambuzi uliohifadhiwa)';
+
+  @override
+  String get deleteAccountConfirm => 'Futa kabisa';
+
+  @override
+  String get accountDeleted => 'Akaunti yako imefutwa.';
+
+  @override
+  String get errDeleteAccount => 'Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.';
 }

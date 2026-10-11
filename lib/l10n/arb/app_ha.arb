@@ -352,5 +352,15 @@
   "alertHitBody": "Farashin yanzu: {price}",
   "alertOpen": "Buɗe",
   "keepInTrayTitle": "Ci gaba da aiki idan an rufe taga",
-  "keepInTraySubtitle": "StockLens na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki."
+  "keepInTraySubtitle": "StockLens na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki.",
+  "termsOfUse": "Sharuɗɗan Amfani",
+  "privacyPolicy": "Manufar Sirri",
+  "subscriptionLegal": "Biyan kuɗin wata-wata yana sabunta kansa kowane wata har sai ka soke. Ta hanyar biyan kuɗi ka yarda da Sharuɗɗan Amfani da Manufar Sirri.",
+  "deleteAccount": "Share asusu",
+  "deleteAccountTitle": "Za a share asusunka?",
+  "deleteAccountBody": "Za a share asusunka da duk abin da muka adana a sabar mu (imel, iyaka, amfani) har abada, kuma nazarin da ba a yi amfani da shi ba zai ɓace. Biyan kuɗin da aka yi a burauza ana soke shi nan take; biyan kuɗin App Store ko Google Play dole ne ka soke shi a saitunan shagon.",
+  "deleteLocalData": "Share bayanan da ke wannan na’ura ma (jaka, faɗakarwa, abubuwan da aka fi so, tarihi, nazarin da aka adana)",
+  "deleteAccountConfirm": "Share har abada",
+  "accountDeleted": "An share asusunka.",
+  "errDeleteAccount": "Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa."
 }

@@ -1259,4 +1259,37 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens rămâne în bara de meniu sau în bara de sistem, astfel încât scurtătura și alertele de preț funcționează în continuare.';
+
+  @override
+  String get termsOfUse => 'Termeni de utilizare';
+
+  @override
+  String get privacyPolicy => 'Politica de confidențialitate';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonamentul se reînnoiește automat în fiecare lună până îl anulezi. Prin abonare accepți Termenii de utilizare și Politica de confidențialitate.';
+
+  @override
+  String get deleteAccount => 'Șterge contul';
+
+  @override
+  String get deleteAccountTitle => 'Ștergi contul?';
+
+  @override
+  String get deleteAccountBody =>
+      'Contul tău și tot ce stocăm pe server (e-mail, cotă, utilizare) vor fi șterse definitiv, iar analizele nefolosite se pierd. Un abonament plătit în browser este anulat imediat; un abonament prin App Store sau Google Play trebuie anulat din setările magazinului.';
+
+  @override
+  String get deleteLocalData =>
+      'Șterge și datele de pe acest dispozitiv (portofoliu, alerte, favorite, istoric, analize salvate)';
+
+  @override
+  String get deleteAccountConfirm => 'Șterge definitiv';
+
+  @override
+  String get accountDeleted => 'Contul tău a fost șters.';
+
+  @override
+  String get errDeleteAccount => 'Contul nu a putut fi șters. Verifică conexiunea și încearcă din nou.';
 }

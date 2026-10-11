@@ -215,6 +215,27 @@ class Store {
     return false;
   }
 
+  /// A fiók és minden hozzá tartozó adat törlése (GDPR 17. cikk). A vásárlások
+  /// felhasználó nélkül maradnak meg (`deleted`), hogy ugyanaz a bolti bizonylat
+  /// ne legyen újra beváltható; a számviteli bizonylat a boltnál / a Stripe-nál van.
+  void deleteUser(String userId) {
+    final email = emailOf(userId);
+    _db.execute('BEGIN');
+    try {
+      _db.execute('DELETE FROM sessions WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM entitlements WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [userId]);
+      if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
+      _db.execute("UPDATE purchases SET user_id = 'deleted' WHERE user_id = ?", [userId]);
+      _db.execute('DELETE FROM users WHERE id = ?', [userId]);
+      _db.execute('COMMIT');
+    } catch (_) {
+      _db.execute('ROLLBACK');
+      rethrow;
+    }
+  }
+
   // ---- Stripe ----
 
   ({String? customerId, String? subscriptionId}) stripeOf(String userId) {

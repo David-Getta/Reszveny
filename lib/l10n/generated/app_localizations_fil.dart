@@ -1235,4 +1235,37 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'Nananatili ang StockLens sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo.';
+
+  @override
+  String get termsOfUse => 'Mga Tuntunin ng Paggamit';
+
+  @override
+  String get privacyPolicy => 'Patakaran sa Privacy';
+
+  @override
+  String get subscriptionLegal =>
+      'Awtomatikong nire-renew ang subscription bawat buwan hanggang kanselahin mo. Sa pag-subscribe, tinatanggap mo ang Mga Tuntunin ng Paggamit at ang Patakaran sa Privacy.';
+
+  @override
+  String get deleteAccount => 'Burahin ang account';
+
+  @override
+  String get deleteAccountTitle => 'Burahin ang iyong account?';
+
+  @override
+  String get deleteAccountBody =>
+      'Permanenteng mabubura ang iyong account at lahat ng nakaimbak sa aming server (email, quota, paggamit), at mawawala ang mga hindi nagamit na pagsusuri. Agad na kinakansela ang subscription na binayaran sa browser; ang subscription sa App Store o Google Play ay kailangang kanselahin sa settings ng store.';
+
+  @override
+  String get deleteLocalData =>
+      'Burahin din ang data sa device na ito (portfolio, alerto, paborito, history, naka-save na pagsusuri)';
+
+  @override
+  String get deleteAccountConfirm => 'Burahin nang permanente';
+
+  @override
+  String get accountDeleted => 'Nabura na ang iyong account.';
+
+  @override
+  String get errDeleteAccount => 'Hindi nabura ang account. Tingnan ang koneksyon at subukang muli.';
 }

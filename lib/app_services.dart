@@ -189,6 +189,27 @@ class AppServices {
   final AlertStore alerts;
   late final AlertMonitor alertMonitor;
 
+  /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
+  /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).
+  Future<void> deleteAccount({required bool wipeLocalData}) async {
+    await account?.deleteAccount();
+    if (wipeLocalData) {
+      await portfolio.clear();
+      await alerts.clear();
+      await preferences.clearPersonalData();
+      await reports.clearCache();
+    }
+    // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
+    await syncEntitlements();
+  }
+
+  /// A jogi szöveg címe az app nyelvén (`?lang=hu|en`); üres, ha nincs ilyen cím.
+  Uri? legalUri(String url, Locale locale) {
+    if (url.isEmpty) return null;
+    final u = Uri.parse(url);
+    return u.replace(queryParameters: {...u.queryParameters, 'lang': locale.languageCode == 'hu' ? 'hu' : 'en'});
+  }
+
   /// Értesítésre koppintás: a riasztás részvénye nyíljon meg.
   void _openAlert(String id) {
     final alert = alerts.alerts.where((a) => a.id == id).firstOrNull;

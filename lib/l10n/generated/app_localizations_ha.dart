@@ -1227,4 +1227,37 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki.';
+
+  @override
+  String get termsOfUse => 'Sharuɗɗan Amfani';
+
+  @override
+  String get privacyPolicy => 'Manufar Sirri';
+
+  @override
+  String get subscriptionLegal =>
+      'Biyan kuɗin wata-wata yana sabunta kansa kowane wata har sai ka soke. Ta hanyar biyan kuɗi ka yarda da Sharuɗɗan Amfani da Manufar Sirri.';
+
+  @override
+  String get deleteAccount => 'Share asusu';
+
+  @override
+  String get deleteAccountTitle => 'Za a share asusunka?';
+
+  @override
+  String get deleteAccountBody =>
+      'Za a share asusunka da duk abin da muka adana a sabar mu (imel, iyaka, amfani) har abada, kuma nazarin da ba a yi amfani da shi ba zai ɓace. Biyan kuɗin da aka yi a burauza ana soke shi nan take; biyan kuɗin App Store ko Google Play dole ne ka soke shi a saitunan shagon.';
+
+  @override
+  String get deleteLocalData =>
+      'Share bayanan da ke wannan na’ura ma (jaka, faɗakarwa, abubuwan da aka fi so, tarihi, nazarin da aka adana)';
+
+  @override
+  String get deleteAccountConfirm => 'Share har abada';
+
+  @override
+  String get accountDeleted => 'An share asusunka.';
+
+  @override
+  String get errDeleteAccount => 'Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.';
 }

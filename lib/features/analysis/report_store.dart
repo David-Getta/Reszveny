@@ -32,6 +32,20 @@ class ReportStore extends ChangeNotifier {
     }
   }
 
+  /// Minden elmentett elemzés törlése a memóriából és a lemezről.
+  Future<void> clearCache() async {
+    _reports.clear();
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      for (final k in prefs.getKeys().where((k) => k.startsWith(_prefix)).toList()) {
+        await prefs.remove(k);
+      }
+    } catch (_) {
+      // A tárolás hibája nem akadályozza a működést.
+    }
+  }
+
   void _notifyQuota() {
     final cb = onQuotaChanged;
     if (cb == null) return;
