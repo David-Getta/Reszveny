@@ -604,7 +604,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String fxRateNote(String from, String rate, String to, String date) {
-    return 'Sandam-bola: 1 $from = $rate $to (ECB, $date)';
+    return 'Sandam-bola: 1 $from = $rate $to (BCE, $date)';
   }
 
   @override
@@ -1074,7 +1074,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Voatahiry amin\'ity fitaovana ity ihany. Novaina araka ny sandam-bola fanondroan\'ny ECB ny fitambarany; mety ho tara ny vidiny.';
+      'Voatahiry amin\'ity fitaovana ity ihany. Novaina araka ny sandam-bola fanondroan\'ny BCE ny fitambarany; mety ho tara ny vidiny.';
 
   @override
   String get addToPortfolio => 'Ampio amin\'ny kitapom-bola';
