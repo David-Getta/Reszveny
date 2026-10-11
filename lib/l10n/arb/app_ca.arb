@@ -289,5 +289,11 @@
   "errSignInFailed": "No s’ha pogut iniciar la sessió. Comprova la connexió i torna-ho a provar.",
   "checkoutWaiting": "Completa el pagament al navegador. L’app s’actualitzarà automàticament quan s’hagi fet.",
   "paymentViaStripe": "Pagament segur al navegador mitjançant Stripe. Cancel·la quan vulguis.",
-  "paymentViaStore": "Es factura a través del teu compte d’App Store o Google Play. Cancel·la quan vulguis a la configuració de la botiga."
+  "paymentViaStore": "Es factura a través del teu compte d’App Store o Google Play. Cancel·la quan vulguis a la configuració de la botiga.",
+  "keySpace": "Espai",
+  "doubleOptionTitle": "Doble pulsació d’Opció",
+  "doubleOptionSubtitle": "Prémer ràpidament dues vegades la tecla Opció també obre StockLens.",
+  "doubleOptionPermission": "Perquè també funcioni en altres apps, permet StockLens a Configuració del Sistema → Privacitat i seguretat → Monitoratge de l’entrada i després torna a obrir l’app.",
+  "openSystemSettings": "Obrir Configuració del Sistema",
+  "hotkeyHintDoubleOption": "Prem {shortcut} o dues vegades la tecla Opció des de qualsevol lloc per obrir StockLens."
 }

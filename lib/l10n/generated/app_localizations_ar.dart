@@ -1017,4 +1017,25 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'تتم الفوترة عبر حسابك في App Store أو Google Play. يمكنك الإلغاء في أي وقت من إعدادات المتجر.';
+
+  @override
+  String get keySpace => 'مسافة';
+
+  @override
+  String get doubleOptionTitle => 'الضغط مرتين على Option';
+
+  @override
+  String get doubleOptionSubtitle => 'يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'لكي تعمل هذه الميزة في التطبيقات الأخرى أيضًا، اسمح لـ StockLens من إعدادات النظام ← الخصوصية والأمن ← مراقبة الإدخال، ثم أعد فتح التطبيق.';
+
+  @override
+  String get openSystemSettings => 'فتح إعدادات النظام';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'اضغط $shortcut أو اضغط Option مرتين في أي مكان لاستدعاء StockLens.';
+  }
 }

@@ -990,4 +990,25 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Billed through your App Store or Google Play account. Cancel anytime in your store settings.';
+
+  @override
+  String get keySpace => 'Space';
+
+  @override
+  String get doubleOptionTitle => 'Double-press Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Pressing the Option key twice quickly also summons StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'To make it work in other apps too, allow StockLens under System Settings → Privacy & Security → Input Monitoring, then reopen the app.';
+
+  @override
+  String get openSystemSettings => 'Open System Settings';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Press $shortcut or double-press Option anywhere to summon StockLens.';
+  }
 }

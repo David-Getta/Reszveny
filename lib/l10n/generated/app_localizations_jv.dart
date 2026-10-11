@@ -996,4 +996,25 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Ditagih liwat akun App Store utawa Google Play sampeyan. Bisa dibatalake kapan wae ing setelan toko.';
+
+  @override
+  String get keySpace => 'Spasi';
+
+  @override
+  String get doubleOptionTitle => 'Tekan Option kaping pindho';
+
+  @override
+  String get doubleOptionSubtitle => 'Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Supaya bisa mlaku ing aplikasi liyane uga, wenehana idin marang StockLens ing Setelan Sistem → Privasi & Keamanan → Pemantauan Input, banjur bukak maneh aplikasine.';
+
+  @override
+  String get openSystemSettings => 'Bukak Setelan Sistem';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Tekan $shortcut utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens.';
+  }
 }

@@ -289,5 +289,11 @@
   "errSignInFailed": "Logowanie nie powiodło się. Sprawdź połączenie z internetem i spróbuj ponownie.",
   "checkoutWaiting": "Dokończ płatność w przeglądarce. Aplikacja zaktualizuje się automatycznie po jej zakończeniu.",
   "paymentViaStripe": "Bezpieczna płatność w przeglądarce przez Stripe. Możesz anulować w dowolnym momencie.",
-  "paymentViaStore": "Płatność przez Twoje konto App Store lub Google Play. Możesz anulować w dowolnym momencie w ustawieniach sklepu."
+  "paymentViaStore": "Płatność przez Twoje konto App Store lub Google Play. Możesz anulować w dowolnym momencie w ustawieniach sklepu.",
+  "keySpace": "Spacja",
+  "doubleOptionTitle": "Dwukrotne naciśnięcie Option",
+  "doubleOptionSubtitle": "Szybkie dwukrotne naciśnięcie klawisza Option również przywołuje StockLens.",
+  "doubleOptionPermission": "Aby działało to również w innych aplikacjach, zezwól StockLens na dostęp w sekcji Ustawienia systemowe → Prywatność i ochrona → Monitorowanie wprowadzania, a następnie ponownie otwórz aplikację.",
+  "openSystemSettings": "Otwórz Ustawienia systemowe",
+  "hotkeyHintDoubleOption": "Naciśnij {shortcut} lub dwukrotnie naciśnij Option w dowolnym miejscu, aby przywołać StockLens."
 }

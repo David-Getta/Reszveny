@@ -993,4 +993,25 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Utatozwa kupitia akaunti yako ya App Store au Google Play. Ghairi wakati wowote kwenye mipangilio ya duka.';
+
+  @override
+  String get keySpace => 'Nafasi';
+
+  @override
+  String get doubleOptionTitle => 'Bonyeza Option mara mbili';
+
+  @override
+  String get doubleOptionSubtitle => 'Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Ili ifanye kazi pia katika programu nyingine, ruhusu StockLens katika Mipangilio ya Mfumo → Faragha na Usalama → Ufuatiliaji wa Ingizo, kisha fungua programu tena.';
+
+  @override
+  String get openSystemSettings => 'Fungua Mipangilio ya Mfumo';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Bonyeza $shortcut au bonyeza Option mara mbili mahali popote kuita StockLens.';
+  }
 }

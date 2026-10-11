@@ -8,6 +8,8 @@ import 'package:launch_at_startup/launch_at_startup.dart';
 import 'package:tray_manager/tray_manager.dart';
 import 'package:window_manager/window_manager.dart';
 
+import 'double_tap_detector.dart';
+
 /// Asztali (macOS, Windows) integráció:
 /// - ablak: rejtett címsor, minimális méret, középre igazítás;
 /// - globális gyorsbillentyű (⌥ Space / Ctrl+Alt+Space), ami bárhonnan
@@ -33,6 +35,60 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   bool _quickBar = false;
 
+  // ---- Dupla Option-nyomás (csak macOS) ----
+
+  static const _optionChannel = MethodChannel('stocklens/option_key');
+
+  /// A dupla Option-nyomás csak macOS-en érhető el (natív figyelő kell hozzá).
+  static bool get supportsDoubleOption => !kIsWeb && Platform.isMacOS;
+
+  final DoubleTapDetector _doubleTap = DoubleTapDetector();
+  bool _doubleOptionEnabled = false;
+  bool _doubleOptionGlobal = false;
+
+  bool get doubleOptionEnabled => _doubleOptionEnabled;
+
+  /// Igaz, ha más appok használata közben is figyel (megvan a „Bemenetfigyelés”
+  /// engedély); hamis esetén csak a StockLens előtérben lévő ablakában működik.
+  bool get doubleOptionGlobal => _doubleOptionGlobal;
+
+  /// Be- vagy kikapcsolás. [askPermission]: engedély híján kérje-e a rendszer
+  /// „Bemenetfigyelés” párbeszédablakát.
+  Future<void> setDoubleOption(bool enabled, {bool askPermission = false}) async {
+    if (!supportsDoubleOption) return;
+    _doubleOptionEnabled = enabled;
+    try {
+      if (!enabled) {
+        await _optionChannel.invokeMethod<void>('stop');
+        _doubleOptionGlobal = false;
+      } else {
+        _optionChannel.setMethodCallHandler(_onOptionEvent);
+        var global = await _optionChannel.invokeMethod<bool>('start') ?? false;
+        if (!global && askPermission) {
+          await _optionChannel.invokeMethod<bool>('requestPermission');
+          global = await _optionChannel.invokeMethod<bool>('start') ?? false;
+        }
+        _doubleOptionGlobal = global;
+      }
+    } catch (e) {
+      debugPrint('Dupla Option-figyelés nem indítható: $e');
+    }
+    notifyListeners();
+  }
+
+  /// A Rendszerbeállítások „Bemenetfigyelés” paneljének megnyitása.
+  Future<void> openInputMonitoringSettings() async {
+    try {
+      await _optionChannel.invokeMethod<void>('openSettings');
+    } catch (e) {
+      debugPrint('Rendszerbeállítások nem nyithatók meg: $e');
+    }
+  }
+
+  Future<dynamic> _onOptionEvent(MethodCall call) async {
+    if (call.method == 'option' && _doubleTap.add('${call.arguments}')) await toggleQuickBar();
+  }
+
   /// Igaz, amíg az ablak a kompakt, lebegő gyorssáv módban van.
   bool get isQuickBar => _quickBar;
 
@@ -52,46 +108,52 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   /// Az éppen érvényes gyorsbillentyű.
   HotKey? get hotKey => _hotKey;
 
-  /// Ember által olvasható gyorsbillentyű a beállításokhoz.
-  String get shortcutLabel {
+  /// Ember által olvasható gyorsbillentyű (angol szóköz-névvel). A felületen a
+  /// [shortcutLabelFor]-t használjuk, hogy a szóköz neve le legyen fordítva.
+  String get shortcutLabel => shortcutLabelFor();
+
+  /// Gyorsbillentyű a felület nyelvén, pl. macOS-en „⌥ Option + Szóköz”,
+  /// Windowson „Ctrl + Alt + Szóköz”. [space]: a szóköz billentyű neve.
+  String shortcutLabelFor({String space = 'Space'}) {
     if (!isSupported) return '';
-    final hk = _hotKey ?? defaultHotKey;
-    return describeHotKey(hk);
+    return describeHotKey(_hotKey ?? defaultHotKey, space: space);
   }
 
-  static String describeHotKey(HotKey hk) {
-    final mac = Platform.isMacOS;
+  /// A módosítók macOS-en jellel és névvel („⌥ Option”), hogy egyértelmű
+  /// legyen, melyik gombot kell lenyomni; a részek között mindig „+”.
+  static String describeHotKey(HotKey hk, {String space = 'Space', bool? mac}) {
+    final isMac = mac ?? Platform.isMacOS;
     final parts = <String>[];
     for (final m in hk.modifiers ?? const <HotKeyModifier>[]) {
       parts.add(switch (m) {
-        HotKeyModifier.alt => mac ? '⌥' : 'Alt',
-        HotKeyModifier.control => mac ? '⌃' : 'Ctrl',
-        HotKeyModifier.shift => mac ? '⇧' : 'Shift',
-        HotKeyModifier.meta => mac ? '⌘' : 'Win',
-        HotKeyModifier.capsLock => 'Caps',
+        HotKeyModifier.alt => isMac ? '⌥ Option' : 'Alt',
+        HotKeyModifier.control => isMac ? '⌃ Control' : 'Ctrl',
+        HotKeyModifier.shift => isMac ? '⇧ Shift' : 'Shift',
+        HotKeyModifier.meta => isMac ? '⌘ Command' : 'Win',
+        HotKeyModifier.capsLock => 'Caps Lock',
         HotKeyModifier.fn => 'Fn',
       });
     }
     final key = hk.key;
     parts.add(switch (key) {
-      PhysicalKeyboardKey k => physicalKeyLabel(k, mac: mac),
+      PhysicalKeyboardKey k => physicalKeyLabel(k, mac: isMac, space: space),
       LogicalKeyboardKey k when k.keyLabel.isNotEmpty => k.keyLabel.toUpperCase(),
       _ => '?',
     });
-    return parts.join(mac ? ' ' : ' + ');
+    return parts.join(' + ');
   }
 
   /// Fizikai billentyű neve a USB HID-kódból. Kiadási buildben a Flutter
   /// hibakereső nevei (`debugName`) nem érhetők el, ezért saját táblát használunk.
-  static String physicalKeyLabel(PhysicalKeyboardKey k, {bool mac = false}) {
+  static String physicalKeyLabel(PhysicalKeyboardKey k, {bool mac = false, String space = 'Space'}) {
     final u = k.usbHidUsage;
     if (u >= 0x00070004 && u <= 0x0007001d) return String.fromCharCode(0x41 + u - 0x00070004); // A–Z
     if (u >= 0x0007001e && u <= 0x00070026) return '${u - 0x0007001e + 1}'; // 1–9
     if (u == 0x00070027) return '0';
     if (u >= 0x0007003a && u <= 0x00070045) return 'F${u - 0x0007003a + 1}'; // F1–F12
     return switch (u) {
-      0x0007002c => mac ? 'Space' : 'Space',
-      0x00070028 => mac ? '↩' : 'Enter',
+      0x0007002c => space,
+      0x00070028 => mac ? '↩ Return' : 'Enter',
       0x00070029 => 'Esc',
       0x0007002b => mac ? '⇥' : 'Tab',
       0x0007002a => mac ? '⌫' : 'Backspace',
@@ -294,6 +356,12 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
     }
     await windowManager.show();
     await windowManager.focus();
+  }
+
+  /// Ha közben megadták az engedélyt, a figyelést rendszerszintűre váltjuk.
+  @override
+  void onWindowFocus() {
+    if (_doubleOptionEnabled && !_doubleOptionGlobal) setDoubleOption(true);
   }
 
   @override

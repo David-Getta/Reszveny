@@ -17,6 +17,8 @@ class AppPreferences extends ChangeNotifier {
     this.analysisDepth = AnalysisDepth.standard,
     this.readerLevel = ReaderLevel.beginner,
     this.counterArgument = true,
+    this.doubleOption = true,
+    this.doubleOptionAsked = false,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -29,6 +31,8 @@ class AppPreferences extends ChangeNotifier {
   static const _currencyKey = 'display_currency';
   static const _autoUpdateKey = 'auto_update';
   static const _depthKey = 'analysis_depth';
+  static const _doubleOptionKey = 'double_option';
+  static const _doubleOptionAskedKey = 'double_option_asked';
   static const _readerKey = 'analysis_reader_level';
   static const _counterKey = 'analysis_counter_argument';
   static const maxRecent = 20;
@@ -51,6 +55,12 @@ class AppPreferences extends ChangeNotifier {
 
   /// Az összefoglaló végén szerepeljen a tézis legerősebb ellenérve.
   bool counterArgument;
+
+  /// macOS: a dupla Option-nyomás is előhívja az appot.
+  bool doubleOption;
+
+  /// Kértük-e már egyszer a „Bemenetfigyelés” engedélyt (csak egyszer kérdezünk).
+  bool doubleOptionAsked;
 
   /// Frissítések automatikus letöltése és telepítése (ahol a platform engedi).
   bool autoUpdate;
@@ -78,6 +88,8 @@ class AppPreferences extends ChangeNotifier {
         analysisDepth: AnalysisDepth.values.asNameMap()[prefs.getString(_depthKey) ?? ''] ?? AnalysisDepth.standard,
         readerLevel: ReaderLevel.values.asNameMap()[prefs.getString(_readerKey) ?? ''] ?? ReaderLevel.beginner,
         counterArgument: prefs.getBool(_counterKey) ?? true,
+        doubleOption: prefs.getBool(_doubleOptionKey) ?? true,
+        doubleOptionAsked: prefs.getBool(_doubleOptionAskedKey) ?? false,
       );
     } catch (_) {
       return AppPreferences();
@@ -121,6 +133,17 @@ class AppPreferences extends ChangeNotifier {
     counterArgument = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_counterKey, enabled));
+  }
+
+  Future<void> setDoubleOption(bool enabled) async {
+    doubleOption = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_doubleOptionKey, enabled));
+  }
+
+  Future<void> markDoubleOptionAsked() async {
+    doubleOptionAsked = true;
+    await _save((p) => p.setBool(_doubleOptionAskedKey, true));
   }
 
   Future<void> setAutoUpdate(bool enabled) async {

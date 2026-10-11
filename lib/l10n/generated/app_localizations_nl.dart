@@ -993,4 +993,25 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Gefactureerd via je App Store- of Google Play-account. Altijd opzegbaar in de instellingen van je store.';
+
+  @override
+  String get keySpace => 'Spatie';
+
+  @override
+  String get doubleOptionTitle => 'Twee keer op Option drukken';
+
+  @override
+  String get doubleOptionSubtitle => 'Ook snel twee keer op de Option-toets drukken opent StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Wil je dat dit ook in andere apps werkt, sta StockLens dan toe via Systeeminstellingen → Privacy en beveiliging → Invoermonitoring en open de app daarna opnieuw.';
+
+  @override
+  String get openSystemSettings => 'Systeeminstellingen openen';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Druk waar dan ook op $shortcut of twee keer op Option om StockLens te openen.';
+  }
 }

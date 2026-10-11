@@ -1917,6 +1917,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Billed through your App Store or Google Play account. Cancel anytime in your store settings.'**
   String get paymentViaStore;
+
+  /// Name of the space bar key, as printed in keyboard shortcuts.
+  ///
+  /// In en, this message translates to:
+  /// **'Space'**
+  String get keySpace;
+
+  /// No description provided for @doubleOptionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-press Option'**
+  String get doubleOptionTitle;
+
+  /// No description provided for @doubleOptionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pressing the Option key twice quickly also summons StockLens.'**
+  String get doubleOptionSubtitle;
+
+  /// No description provided for @doubleOptionPermission.
+  ///
+  /// In en, this message translates to:
+  /// **'To make it work in other apps too, allow StockLens under System Settings → Privacy & Security → Input Monitoring, then reopen the app.'**
+  String get doubleOptionPermission;
+
+  /// No description provided for @openSystemSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Open System Settings'**
+  String get openSystemSettings;
+
+  /// No description provided for @hotkeyHintDoubleOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Press {shortcut} or double-press Option anywhere to summon StockLens.'**
+  String hotkeyHintDoubleOption(String shortcut);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

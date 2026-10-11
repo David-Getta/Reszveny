@@ -289,5 +289,11 @@
   "errSignInFailed": "साइन इन अयशस्वी झाले. तुमचे इंटरनेट कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.",
   "checkoutWaiting": "तुमच्या ब्राउझरमध्ये पेमेंट पूर्ण करा. ते पूर्ण झाल्यावर अ‍ॅप आपोआप अपडेट होईल.",
   "paymentViaStripe": "Stripe द्वारे तुमच्या ब्राउझरमध्ये सुरक्षित पेमेंट. कधीही रद्द करा.",
-  "paymentViaStore": "बिलिंग तुमच्या App Store किंवा Google Play खात्याद्वारे होते. स्टोअर सेटिंग्जमध्ये कधीही रद्द करा."
+  "paymentViaStore": "बिलिंग तुमच्या App Store किंवा Google Play खात्याद्वारे होते. स्टोअर सेटिंग्जमध्ये कधीही रद्द करा.",
+  "keySpace": "स्पेस",
+  "doubleOptionTitle": "Option दोनदा दाबा",
+  "doubleOptionSubtitle": "Option की पटकन दोनदा दाबल्यानेही StockLens उघडते.",
+  "doubleOptionPermission": "इतर अ‍ॅप्समध्येही हे काम करावे यासाठी सिस्टम सेटिंग्ज → गोपनीयता आणि सुरक्षा → इनपुट मॉनिटरिंग येथे StockLens ला परवानगी द्या, मग अ‍ॅप पुन्हा उघडा.",
+  "openSystemSettings": "सिस्टम सेटिंग्ज उघडा",
+  "hotkeyHintDoubleOption": "StockLens कुठूनही उघडण्यासाठी {shortcut} दाबा किंवा Option दोनदा दाबा."
 }

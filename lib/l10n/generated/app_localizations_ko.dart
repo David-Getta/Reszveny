@@ -957,4 +957,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get paymentViaStore => 'App Store 또는 Google Play 계정으로 청구됩니다. 스토어 설정에서 언제든지 해지할 수 있습니다.';
+
+  @override
+  String get keySpace => '스페이스';
+
+  @override
+  String get doubleOptionTitle => 'Option 키 두 번 누르기';
+
+  @override
+  String get doubleOptionSubtitle => 'Option 키를 빠르게 두 번 눌러도 StockLens를 불러올 수 있습니다.';
+
+  @override
+  String get doubleOptionPermission =>
+      '다른 앱에서도 작동하게 하려면 시스템 설정 → 개인정보 보호 및 보안 → 입력 모니터링에서 StockLens를 허용한 다음 앱을 다시 여세요.';
+
+  @override
+  String get openSystemSettings => '시스템 설정 열기';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return '어디서든 $shortcut 키를 누르거나 Option 키를 두 번 눌러 StockLens를 불러오세요.';
+  }
 }

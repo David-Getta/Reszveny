@@ -1037,4 +1037,25 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Płatność przez Twoje konto App Store lub Google Play. Możesz anulować w dowolnym momencie w ustawieniach sklepu.';
+
+  @override
+  String get keySpace => 'Spacja';
+
+  @override
+  String get doubleOptionTitle => 'Dwukrotne naciśnięcie Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Szybkie dwukrotne naciśnięcie klawisza Option również przywołuje StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Aby działało to również w innych aplikacjach, zezwól StockLens na dostęp w sekcji Ustawienia systemowe → Prywatność i ochrona → Monitorowanie wprowadzania, a następnie ponownie otwórz aplikację.';
+
+  @override
+  String get openSystemSettings => 'Otwórz Ustawienia systemowe';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Naciśnij $shortcut lub dwukrotnie naciśnij Option w dowolnym miejscu, aby przywołać StockLens.';
+  }
 }

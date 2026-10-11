@@ -289,5 +289,11 @@
   "errSignInFailed": "Shiga ya gaza. Duba haɗin intanet ɗinka sannan ka sake gwadawa.",
   "checkoutWaiting": "Kammala biyan kuɗi a cikin burauzarka. Manhajar za ta sabunta kanta ta atomatik idan an gama.",
   "paymentViaStripe": "Biyan kuɗi mai tsaro a cikin burauzarka ta hanyar Stripe. Soke a kowane lokaci.",
-  "paymentViaStore": "Ana cajin kuɗi ta asusunka na App Store ko Google Play. Soke a kowane lokaci a cikin saitunan shago."
+  "paymentViaStore": "Ana cajin kuɗi ta asusunka na App Store ko Google Play. Soke a kowane lokaci a cikin saitunan shago.",
+  "keySpace": "Sarari",
+  "doubleOptionTitle": "Danna Option sau biyu",
+  "doubleOptionSubtitle": "Danna maɓallin Option sau biyu da sauri ma zai kira StockLens.",
+  "doubleOptionPermission": "Don ya yi aiki a cikin sauran manhajoji ma, ka ba StockLens izini a Saitunan Tsari → Sirri da Tsaro → Sa Ido kan Shigarwa, sannan ka sake buɗe manhajar.",
+  "openSystemSettings": "Buɗe Saitunan Tsari",
+  "hotkeyHintDoubleOption": "Danna {shortcut} ko ka danna Option sau biyu a ko'ina don kiran StockLens."
 }

@@ -993,4 +993,25 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'আপনার App Store বা Google Play অ্যাকাউন্টের মাধ্যমে বিল করা হয়। স্টোরের সেটিংসে যেকোনো সময় বাতিল করতে পারেন।';
+
+  @override
+  String get keySpace => 'স্পেস';
+
+  @override
+  String get doubleOptionTitle => 'Option দুবার চাপুন';
+
+  @override
+  String get doubleOptionSubtitle => 'Option কী দ্রুত দুবার চাপলেও StockLens খুলে যায়।';
+
+  @override
+  String get doubleOptionPermission =>
+      'অন্য অ্যাপেও এটি কাজ করাতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → ইনপুট মনিটরিং-এ StockLens-কে অনুমতি দিন, তারপর অ্যাপটি আবার খুলুন।';
+
+  @override
+  String get openSystemSettings => 'সিস্টেম সেটিংস খুলুন';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'যেকোনো জায়গা থেকে StockLens খুলতে $shortcut চাপুন বা Option দুবার চাপুন।';
+  }
 }

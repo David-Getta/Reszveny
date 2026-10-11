@@ -289,5 +289,11 @@
   "errSignInFailed": "Inloggningen misslyckades. Kontrollera anslutningen och försök igen.",
   "checkoutWaiting": "Slutför betalningen i webbläsaren. Appen uppdateras automatiskt när den är klar.",
   "paymentViaStripe": "Säker betalning i webbläsaren via Stripe. Avsluta när du vill.",
-  "paymentViaStore": "Debiteras via ditt App Store- eller Google Play-konto. Avsluta när du vill i butikens inställningar."
+  "paymentViaStore": "Debiteras via ditt App Store- eller Google Play-konto. Avsluta när du vill i butikens inställningar.",
+  "keySpace": "Mellanslag",
+  "doubleOptionTitle": "Dubbeltryck på alternativtangenten",
+  "doubleOptionSubtitle": "Du kan också öppna StockLens genom att snabbt trycka två gånger på alternativtangenten.",
+  "doubleOptionPermission": "Om det ska fungera även i andra appar måste du tillåta StockLens under Systeminställningar → Integritet och säkerhet → Inmatningsövervakning och sedan öppna appen igen.",
+  "openSystemSettings": "Öppna Systeminställningar",
+  "hotkeyHintDoubleOption": "Tryck på {shortcut} eller dubbeltryck på alternativtangenten var som helst för att öppna StockLens."
 }

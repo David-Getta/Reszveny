@@ -289,5 +289,11 @@
   "errSignInFailed": "Giriş başarısız oldu. Bağlantınızı kontrol edip tekrar deneyin.",
   "checkoutWaiting": "Ödemeyi tarayıcınızda tamamlayın. İşlem bitince uygulama otomatik olarak güncellenir.",
   "paymentViaStripe": "Stripe üzerinden tarayıcınızda güvenli ödeme. İstediğiniz zaman iptal edin.",
-  "paymentViaStore": "App Store veya Google Play hesabınız üzerinden faturalandırılır. İstediğiniz zaman mağaza ayarlarından iptal edin."
+  "paymentViaStore": "App Store veya Google Play hesabınız üzerinden faturalandırılır. İstediğiniz zaman mağaza ayarlarından iptal edin.",
+  "keySpace": "Boşluk",
+  "doubleOptionTitle": "Option tuşuna çift basma",
+  "doubleOptionSubtitle": "Option tuşuna hızlıca iki kez basmak da StockLens'i çağırır.",
+  "doubleOptionPermission": "Bunun diğer uygulamalarda da çalışması için Sistem Ayarları → Gizlilik ve Güvenlik → Girdi İzleme bölümünde StockLens'e izin verin, ardından uygulamayı yeniden açın.",
+  "openSystemSettings": "Sistem Ayarları'nı aç",
+  "hotkeyHintDoubleOption": "StockLens'i çağırmak için herhangi bir yerde {shortcut} tuşlarına veya iki kez Option tuşuna basın."
 }

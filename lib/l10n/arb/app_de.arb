@@ -289,5 +289,11 @@
   "errSignInFailed": "Anmeldung fehlgeschlagen. Prüfe deine Verbindung und versuche es erneut.",
   "checkoutWaiting": "Schließe die Zahlung in deinem Browser ab. Die App aktualisiert sich automatisch, sobald sie erledigt ist.",
   "paymentViaStripe": "Sichere Zahlung in deinem Browser über Stripe. Jederzeit kündbar.",
-  "paymentViaStore": "Die Abrechnung erfolgt über dein App-Store- oder Google-Play-Konto. Jederzeit in den Einstellungen deines Stores kündbar."
+  "paymentViaStore": "Die Abrechnung erfolgt über dein App-Store- oder Google-Play-Konto. Jederzeit in den Einstellungen deines Stores kündbar.",
+  "keySpace": "Leertaste",
+  "doubleOptionTitle": "Wahltaste zweimal drücken",
+  "doubleOptionSubtitle": "Auch zweimaliges schnelles Drücken der Wahltaste ruft StockLens auf.",
+  "doubleOptionPermission": "Damit das auch in anderen Apps funktioniert, erlaube StockLens unter Systemeinstellungen → Datenschutz & Sicherheit → Eingabeüberwachung und öffne die App danach erneut.",
+  "openSystemSettings": "Systemeinstellungen öffnen",
+  "hotkeyHintDoubleOption": "Drücke {shortcut} oder zweimal die Wahltaste an beliebiger Stelle, um StockLens aufzurufen."
 }

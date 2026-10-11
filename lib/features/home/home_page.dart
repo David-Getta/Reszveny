@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../widgets/hotkey_hint.dart';
+
 import '../../app_services.dart';
 import '../../core/desktop/desktop_integration.dart';
 import '../../core/errors.dart';
@@ -268,7 +270,7 @@ class _HomePageState extends State<HomePage> {
                     if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
                       const SizedBox(height: 24),
                       Text(
-                        l10n.hotkeyHint(services.desktop.shortcutLabel),
+                        hotkeyHintText(l10n, services),
                         textAlign: TextAlign.center,
                         style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                       ),

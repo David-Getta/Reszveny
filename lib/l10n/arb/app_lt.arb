@@ -289,5 +289,11 @@
   "errSignInFailed": "Prisijungti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.",
   "checkoutWaiting": "Užbaikite mokėjimą naršyklėje. Programa atsinaujins automatiškai, kai tai bus padaryta.",
   "paymentViaStripe": "Saugus mokėjimas naršyklėje per Stripe. Atšaukti galite bet kada.",
-  "paymentViaStore": "Mokestis nuskaitomas per jūsų App Store arba Google Play paskyrą. Atšaukti galite bet kada parduotuvės nustatymuose."
+  "paymentViaStore": "Mokestis nuskaitomas per jūsų App Store arba Google Play paskyrą. Atšaukti galite bet kada parduotuvės nustatymuose.",
+  "keySpace": "Tarpas",
+  "doubleOptionTitle": "Dukart paspausti Option",
+  "doubleOptionSubtitle": "StockLens taip pat iškviesite greitai dukart paspaudę klavišą Option.",
+  "doubleOptionPermission": "Kad tai veiktų ir kitose programose, leiskite StockLens skiltyje Sistemos nustatymai → Privatumas ir sauga → Įvesties stebėjimas, tada iš naujo atidarykite programą.",
+  "openSystemSettings": "Atidaryti Sistemos nustatymus",
+  "hotkeyHintDoubleOption": "Paspauskite {shortcut} arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens."
 }

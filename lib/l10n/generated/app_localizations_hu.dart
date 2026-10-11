@@ -992,4 +992,25 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'A számlázás az App Store- vagy Google Play-fiókodon keresztül történik. Bármikor lemondható a bolt beállításaiban.';
+
+  @override
+  String get keySpace => 'Szóköz';
+
+  @override
+  String get doubleOptionTitle => 'Dupla Option-nyomás';
+
+  @override
+  String get doubleOptionSubtitle => 'Az Option gomb kétszeri gyors lenyomása is előhozza a StockLenst.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Hogy más appokban is működjön, engedélyezd a StockLenst a Rendszerbeállítások → Adatvédelem és biztonság → Bemenetfigyelés alatt, majd nyisd meg újra az appot.';
+
+  @override
+  String get openSystemSettings => 'Rendszerbeállítások megnyitása';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens.';
+  }
 }

@@ -289,5 +289,11 @@
   "errSignInFailed": "Inloggen mislukt. Controleer je verbinding en probeer het opnieuw.",
   "checkoutWaiting": "Rond de betaling af in je browser. De app wordt automatisch bijgewerkt zodra dat klaar is.",
   "paymentViaStripe": "Veilig betalen in je browser via Stripe. Altijd opzegbaar.",
-  "paymentViaStore": "Gefactureerd via je App Store- of Google Play-account. Altijd opzegbaar in de instellingen van je store."
+  "paymentViaStore": "Gefactureerd via je App Store- of Google Play-account. Altijd opzegbaar in de instellingen van je store.",
+  "keySpace": "Spatie",
+  "doubleOptionTitle": "Twee keer op Option drukken",
+  "doubleOptionSubtitle": "Ook snel twee keer op de Option-toets drukken opent StockLens.",
+  "doubleOptionPermission": "Wil je dat dit ook in andere apps werkt, sta StockLens dan toe via Systeeminstellingen → Privacy en beveiliging → Invoermonitoring en open de app daarna opnieuw.",
+  "openSystemSettings": "Systeeminstellingen openen",
+  "hotkeyHintDoubleOption": "Druk waar dan ook op {shortcut} of twee keer op Option om StockLens te openen."
 }

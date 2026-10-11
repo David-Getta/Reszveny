@@ -993,4 +993,25 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get paymentViaStore =>
       'Ana cajin kuɗi ta asusunka na App Store ko Google Play. Soke a kowane lokaci a cikin saitunan shago.';
+
+  @override
+  String get keySpace => 'Sarari';
+
+  @override
+  String get doubleOptionTitle => 'Danna Option sau biyu';
+
+  @override
+  String get doubleOptionSubtitle => 'Danna maɓallin Option sau biyu da sauri ma zai kira StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Don ya yi aiki a cikin sauran manhajoji ma, ka ba StockLens izini a Saitunan Tsari → Sirri da Tsaro → Sa Ido kan Shigarwa, sannan ka sake buɗe manhajar.';
+
+  @override
+  String get openSystemSettings => 'Buɗe Saitunan Tsari';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Danna $shortcut ko ka danna Option sau biyu a ko\'ina don kiran StockLens.';
+  }
 }
