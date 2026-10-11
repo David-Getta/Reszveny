@@ -51,6 +51,7 @@ import 'app_localizations_ja.dart';
 import 'app_localizations_jv.dart';
 import 'app_localizations_ka.dart';
 import 'app_localizations_kab.dart';
+import 'app_localizations_kg.dart';
 import 'app_localizations_kk.dart';
 import 'app_localizations_km.dart';
 import 'app_localizations_kn.dart';
@@ -58,6 +59,7 @@ import 'app_localizations_ko.dart';
 import 'app_localizations_ku.dart';
 import 'app_localizations_ky.dart';
 import 'app_localizations_lg.dart';
+import 'app_localizations_ln.dart';
 import 'app_localizations_lo.dart';
 import 'app_localizations_lt.dart';
 import 'app_localizations_lv.dart';
@@ -77,6 +79,7 @@ import 'app_localizations_ny.dart';
 import 'app_localizations_om.dart';
 import 'app_localizations_or.dart';
 import 'app_localizations_pa.dart';
+import 'app_localizations_pcm.dart';
 import 'app_localizations_pl.dart';
 import 'app_localizations_ps.dart';
 import 'app_localizations_pt.dart';
@@ -247,6 +250,7 @@ abstract class AppLocalizations {
     Locale('jv'),
     Locale('ka'),
     Locale('kab'),
+    Locale('kg'),
     Locale('kk'),
     Locale('km'),
     Locale('kn'),
@@ -254,6 +258,7 @@ abstract class AppLocalizations {
     Locale('ku'),
     Locale('ky'),
     Locale('lg'),
+    Locale('ln'),
     Locale('lo'),
     Locale('lt'),
     Locale('lv'),
@@ -273,6 +278,7 @@ abstract class AppLocalizations {
     Locale('om'),
     Locale('or'),
     Locale('pa'),
+    Locale('pcm'),
     Locale('pl'),
     Locale('ps'),
     Locale('pt'),
@@ -2551,6 +2557,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'jv',
     'ka',
     'kab',
+    'kg',
     'kk',
     'km',
     'kn',
@@ -2558,6 +2565,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ku',
     'ky',
     'lg',
+    'ln',
     'lo',
     'lt',
     'lv',
@@ -2577,6 +2585,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'om',
     'or',
     'pa',
+    'pcm',
     'pl',
     'ps',
     'pt',
@@ -2724,6 +2733,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsKa();
     case 'kab':
       return AppLocalizationsKab();
+    case 'kg':
+      return AppLocalizationsKg();
     case 'kk':
       return AppLocalizationsKk();
     case 'km':
@@ -2738,6 +2749,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsKy();
     case 'lg':
       return AppLocalizationsLg();
+    case 'ln':
+      return AppLocalizationsLn();
     case 'lo':
       return AppLocalizationsLo();
     case 'lt':
@@ -2776,6 +2789,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsOr();
     case 'pa':
       return AppLocalizationsPa();
+    case 'pcm':
+      return AppLocalizationsPcm();
     case 'pl':
       return AppLocalizationsPl();
     case 'ps':
