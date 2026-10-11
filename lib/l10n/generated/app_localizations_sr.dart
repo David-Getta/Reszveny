@@ -1086,4 +1086,80 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get longTermNote =>
       'Дугорочни распони почивају на наведеним претпоставкама и шире се с временом. Цене без дивиденди. Грубе процене, а не предвиђања.';
+
+  @override
+  String get portfolio => 'Портфолио';
+
+  @override
+  String get portfolioEmpty =>
+      'Још је празно. Отворите акцију и додирните „Додај у портфолио“ да бисте пратили шта поседујете.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Чува се само на овом уређају. Збирови се прерачунавају по референтним курсевима ЕЦБ; цене могу каснити.';
+
+  @override
+  String get addToPortfolio => 'Додај у портфолио';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Додај $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Број акција';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Цена по акцији ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Датум куповине';
+
+  @override
+  String get portfolioAdd => 'Додај';
+
+  @override
+  String get portfolioInvalidNumber => 'Унесите број већи од нуле.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol је додата у портфолио.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Укупна вредност';
+
+  @override
+  String get portfolioToday => 'Данас';
+
+  @override
+  String get portfolioGainLoss => 'Добит/губитак';
+
+  @override
+  String get portfolioInvested => 'Уложено';
+
+  @override
+  String get portfolioAllocation => 'Расподела';
+
+  @override
+  String get portfolioPositions => 'Позиције';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'просечна цена $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ваша позиција';
+
+  @override
+  String get portfolioPurchases => 'Куповине';
+
+  @override
+  String get portfolioRemove => 'Уклони';
+
+  @override
+  String get portfolioExcluded => 'Позиције без цене или девизног курса нису урачунате у збирове.';
 }

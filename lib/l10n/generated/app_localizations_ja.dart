@@ -1011,4 +1011,78 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get longTermNote => '長期の価格帯は示した前提に基づき、期間が長いほど広がります。価格は配当を含みません。大まかな見立てであり、予測ではありません。';
+
+  @override
+  String get portfolio => 'ポートフォリオ';
+
+  @override
+  String get portfolioEmpty => 'まだ何もありません。銘柄を開いて「ポートフォリオに追加」をタップすると、保有銘柄を管理できます。';
+
+  @override
+  String get portfolioLocalNote => 'この端末にのみ保存されます。合計はECBの参照レートで換算され、株価は遅延している場合があります。';
+
+  @override
+  String get addToPortfolio => 'ポートフォリオに追加';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbolを追加';
+  }
+
+  @override
+  String get portfolioQuantity => '株数';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return '1株あたりの価格（$currency）';
+  }
+
+  @override
+  String get portfolioBuyDate => '購入日';
+
+  @override
+  String get portfolioAdd => '追加';
+
+  @override
+  String get portfolioInvalidNumber => '0より大きい数値を入力してください。';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbolをポートフォリオに追加しました。';
+  }
+
+  @override
+  String get portfolioTotalValue => '評価額合計';
+
+  @override
+  String get portfolioToday => '本日';
+
+  @override
+  String get portfolioGainLoss => '損益';
+
+  @override
+  String get portfolioInvested => '投資額';
+
+  @override
+  String get portfolioAllocation => '構成';
+
+  @override
+  String get portfolioPositions => '保有銘柄';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return '平均取得単価 $price';
+  }
+
+  @override
+  String get portfolioYourPosition => '保有状況';
+
+  @override
+  String get portfolioPurchases => '購入履歴';
+
+  @override
+  String get portfolioRemove => '削除';
+
+  @override
+  String get portfolioExcluded => '株価または為替レートがない銘柄は合計に含まれません。';
 }

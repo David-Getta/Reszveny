@@ -1045,4 +1045,80 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get longTermNote =>
       'Gli intervalli di lungo periodo si basano sulle ipotesi indicate e si allargano col tempo. Prezzi esclusi i dividendi. Stime approssimative, non previsioni.';
+
+  @override
+  String get portfolio => 'Portafoglio';
+
+  @override
+  String get portfolioEmpty =>
+      'Ancora vuoto. Apri un’azione e tocca “Aggiungi al portafoglio” per seguire ciò che possiedi.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Salvato solo su questo dispositivo. I totali sono convertiti ai cambi di riferimento BCE; i prezzi possono essere ritardati.';
+
+  @override
+  String get addToPortfolio => 'Aggiungi al portafoglio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Aggiungi $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Numero di azioni';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Prezzo per azione ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data di acquisto';
+
+  @override
+  String get portfolioAdd => 'Aggiungi';
+
+  @override
+  String get portfolioInvalidNumber => 'Inserisci un numero maggiore di zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol aggiunto al portafoglio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valore totale';
+
+  @override
+  String get portfolioToday => 'Oggi';
+
+  @override
+  String get portfolioGainLoss => 'Guadagno/perdita';
+
+  @override
+  String get portfolioInvested => 'Investito';
+
+  @override
+  String get portfolioAllocation => 'Ripartizione';
+
+  @override
+  String get portfolioPositions => 'Posizioni';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'prezzo medio $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'La tua posizione';
+
+  @override
+  String get portfolioPurchases => 'Acquisti';
+
+  @override
+  String get portfolioRemove => 'Rimuovi';
+
+  @override
+  String get portfolioExcluded => 'Le posizioni senza prezzo o tasso di cambio sono escluse dai totali.';
 }

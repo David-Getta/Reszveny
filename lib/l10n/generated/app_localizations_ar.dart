@@ -1081,4 +1081,79 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get longTermNote =>
       'تستند النطاقات طويلة الأجل إلى الافتراضات المذكورة وتتسع مع مرور الوقت. الأسعار لا تشمل توزيعات الأرباح. تقديرات تقريبية وليست تنبؤات.';
+
+  @override
+  String get portfolio => 'المحفظة';
+
+  @override
+  String get portfolioEmpty => 'لا شيء هنا بعد. افتح سهمًا وانقر على «إضافة إلى المحفظة» لمتابعة ما تملكه.';
+
+  @override
+  String get portfolioLocalNote =>
+      'تُحفظ على هذا الجهاز فقط. تُحوَّل الإجماليات بأسعار الصرف المرجعية للبنك المركزي الأوروبي؛ وقد تتأخر الأسعار.';
+
+  @override
+  String get addToPortfolio => 'إضافة إلى المحفظة';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'إضافة $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'عدد الأسهم';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'سعر السهم ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'تاريخ الشراء';
+
+  @override
+  String get portfolioAdd => 'إضافة';
+
+  @override
+  String get portfolioInvalidNumber => 'أدخل رقمًا أكبر من صفر.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'تمت إضافة $symbol إلى المحفظة.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'القيمة الإجمالية';
+
+  @override
+  String get portfolioToday => 'اليوم';
+
+  @override
+  String get portfolioGainLoss => 'الربح/الخسارة';
+
+  @override
+  String get portfolioInvested => 'المبلغ المستثمر';
+
+  @override
+  String get portfolioAllocation => 'التوزيع';
+
+  @override
+  String get portfolioPositions => 'المراكز';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'متوسط التكلفة $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'مركزك';
+
+  @override
+  String get portfolioPurchases => 'عمليات الشراء';
+
+  @override
+  String get portfolioRemove => 'إزالة';
+
+  @override
+  String get portfolioExcluded => 'لا تُحتسب في الإجماليات المراكز التي ليس لها سعر أو سعر صرف.';
 }

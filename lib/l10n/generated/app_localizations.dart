@@ -2007,6 +2007,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions.'**
   String get longTermNote;
+
+  /// No description provided for @portfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio'**
+  String get portfolio;
+
+  /// No description provided for @portfolioEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.'**
+  String get portfolioEmpty;
+
+  /// No description provided for @portfolioLocalNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.'**
+  String get portfolioLocalNote;
+
+  /// No description provided for @addToPortfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to portfolio'**
+  String get addToPortfolio;
+
+  /// No description provided for @portfolioAddTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Add {symbol}'**
+  String portfolioAddTitle(String symbol);
+
+  /// No description provided for @portfolioQuantity.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of shares'**
+  String get portfolioQuantity;
+
+  /// No description provided for @portfolioBuyPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Price per share ({currency})'**
+  String portfolioBuyPrice(String currency);
+
+  /// No description provided for @portfolioBuyDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase date'**
+  String get portfolioBuyDate;
+
+  /// No description provided for @portfolioAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get portfolioAdd;
+
+  /// No description provided for @portfolioInvalidNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a number greater than zero.'**
+  String get portfolioInvalidNumber;
+
+  /// No description provided for @portfolioAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} added to your portfolio.'**
+  String portfolioAdded(String symbol);
+
+  /// No description provided for @portfolioTotalValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Total value'**
+  String get portfolioTotalValue;
+
+  /// Today's change in value of the portfolio or position.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get portfolioToday;
+
+  /// No description provided for @portfolioGainLoss.
+  ///
+  /// In en, this message translates to:
+  /// **'Gain/loss'**
+  String get portfolioGainLoss;
+
+  /// No description provided for @portfolioInvested.
+  ///
+  /// In en, this message translates to:
+  /// **'Invested'**
+  String get portfolioInvested;
+
+  /// No description provided for @portfolioAllocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Allocation'**
+  String get portfolioAllocation;
+
+  /// No description provided for @portfolioPositions.
+  ///
+  /// In en, this message translates to:
+  /// **'Positions'**
+  String get portfolioPositions;
+
+  /// Average purchase price of a position, e.g. "avg. cost 150.00".
+  ///
+  /// In en, this message translates to:
+  /// **'avg. cost {price}'**
+  String portfolioAvgCost(String price);
+
+  /// No description provided for @portfolioYourPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Your position'**
+  String get portfolioYourPosition;
+
+  /// No description provided for @portfolioPurchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases'**
+  String get portfolioPurchases;
+
+  /// No description provided for @portfolioRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get portfolioRemove;
+
+  /// No description provided for @portfolioExcluded.
+  ///
+  /// In en, this message translates to:
+  /// **'Positions without a price or exchange rate are left out of the totals.'**
+  String get portfolioExcluded;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

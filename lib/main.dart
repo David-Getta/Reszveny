@@ -9,6 +9,7 @@ import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
 import 'features/billing/entitlement_service.dart';
+import 'features/portfolio/portfolio_store.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +34,7 @@ Future<void> main() async {
     entitlements: entitlements,
     desktop: desktop,
     accountEmail: await AccountController.loadStoredEmail(),
+    portfolio: await PortfolioStore.load(),
   );
   runApp(StockLensApp(services: services));
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.

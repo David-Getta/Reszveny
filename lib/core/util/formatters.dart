@@ -38,6 +38,19 @@ class Fmt {
     return NumberFormat.decimalPatternDigits(locale: numberLocale, decimalDigits: decimals).format(v);
   }
 
+  /// Pénznemek, amelyeket egész egységben szokás kiírni (forint, jen, won…).
+  static const wholeUnitCurrencies = {'HUF', 'JPY', 'KRW', 'IDR', 'ISK', 'CLP', 'VND', 'TWD'};
+
+  /// Pénzösszeg (érték, nyereség): egész egységű pénznemben 100 fölött tizedes
+  /// nélkül („1 707 000 HUF”), máskor két tizedessel.
+  String money(num? v, String? currency, {bool withSign = false, bool showCurrency = true}) {
+    if (v == null) return na;
+    final whole = currency != null && wholeUnitCurrencies.contains(currency.toUpperCase()) && v.abs() >= 100;
+    final n = number(v, decimals: whole ? 0 : 2);
+    final s = withSign && v > 0 ? '+$n' : n;
+    return currency == null || !showCurrency ? s : '$s $currency';
+  }
+
   String price(num? v, String? currency) {
     if (v == null) return na;
     final n = number(v, decimals: v.abs() < 1 ? 4 : 2);

@@ -1050,4 +1050,80 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get longTermNote =>
       'Intervalet afatgjata bazohen në supozimet e dhëna dhe zgjerohen me kohën. Çmimet pa dividendë. Vlerësime të përafërta, jo parashikime.';
+
+  @override
+  String get portfolio => 'Portofoli';
+
+  @override
+  String get portfolioEmpty =>
+      'Ende bosh. Hapni një aksion dhe prekni “Shto në portofol” për të ndjekur atë që zotëroni.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Ruhet vetëm në këtë pajisje. Totalet konvertohen me kurset e referencës së BQE-së; çmimet mund të vonohen.';
+
+  @override
+  String get addToPortfolio => 'Shto në portofol';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Shto $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Numri i aksioneve';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Çmimi për aksion ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data e blerjes';
+
+  @override
+  String get portfolioAdd => 'Shto';
+
+  @override
+  String get portfolioInvalidNumber => 'Vendosni një numër më të madh se zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol u shtua në portofol.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Vlera totale';
+
+  @override
+  String get portfolioToday => 'Sot';
+
+  @override
+  String get portfolioGainLoss => 'Fitim/humbje';
+
+  @override
+  String get portfolioInvested => 'Investuar';
+
+  @override
+  String get portfolioAllocation => 'Shpërndarja';
+
+  @override
+  String get portfolioPositions => 'Pozicionet';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'kosto mesatare $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Pozicioni juaj';
+
+  @override
+  String get portfolioPurchases => 'Blerjet';
+
+  @override
+  String get portfolioRemove => 'Hiq';
+
+  @override
+  String get portfolioExcluded => 'Pozicionet pa çmim ose kurs këmbimi nuk përfshihen në totale.';
 }

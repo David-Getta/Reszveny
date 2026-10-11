@@ -1052,4 +1052,80 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get longTermNote =>
       'நீண்டகால வரம்புகள் குறிப்பிடப்பட்ட அனுமானங்களை அடிப்படையாகக் கொண்டவை; காலப்போக்கில் அகலமாகும். விலைகளில் ஈவுத்தொகை சேர்க்கப்படவில்லை. தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல.';
+
+  @override
+  String get portfolio => 'போர்ட்ஃபோலியோ';
+
+  @override
+  String get portfolioEmpty =>
+      'இன்னும் எதுவும் இல்லை. ஒரு பங்கைத் திறந்து, உங்களிடம் உள்ளவற்றைக் கண்காணிக்க “போர்ட்ஃபோலியோவில் சேர்” என்பதைத் தட்டுங்கள்.';
+
+  @override
+  String get portfolioLocalNote =>
+      'இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும். மொத்தங்கள் ECB குறிப்பு விகிதங்களில் மாற்றப்படும்; விலைகள் தாமதமாக இருக்கலாம்.';
+
+  @override
+  String get addToPortfolio => 'போர்ட்ஃபோலியோவில் சேர்';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol சேர்';
+  }
+
+  @override
+  String get portfolioQuantity => 'பங்குகளின் எண்ணிக்கை';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'ஒரு பங்கின் விலை ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'வாங்கிய தேதி';
+
+  @override
+  String get portfolioAdd => 'சேர்';
+
+  @override
+  String get portfolioInvalidNumber => 'பூஜ்ஜியத்தை விடப் பெரிய எண்ணை உள்ளிடுங்கள்.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol போர்ட்ஃபோலியோவில் சேர்க்கப்பட்டது.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'மொத்த மதிப்பு';
+
+  @override
+  String get portfolioToday => 'இன்று';
+
+  @override
+  String get portfolioGainLoss => 'லாபம்/நஷ்டம்';
+
+  @override
+  String get portfolioInvested => 'முதலீடு';
+
+  @override
+  String get portfolioAllocation => 'பங்கீடு';
+
+  @override
+  String get portfolioPositions => 'நிலைகள்';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'சராசரி விலை $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'உங்கள் நிலை';
+
+  @override
+  String get portfolioPurchases => 'வாங்குதல்கள்';
+
+  @override
+  String get portfolioRemove => 'நீக்கு';
+
+  @override
+  String get portfolioExcluded => 'விலை அல்லது மாற்று விகிதம் இல்லாத நிலைகள் மொத்தத்தில் சேர்க்கப்படவில்லை.';
 }

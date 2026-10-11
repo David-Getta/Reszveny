@@ -1012,4 +1012,78 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get longTermNote => '장기 범위는 제시된 가정에 근거하며 기간이 길수록 넓어집니다. 가격에는 배당이 포함되지 않습니다. 대략적인 판단이며 예측이 아닙니다.';
+
+  @override
+  String get portfolio => '포트폴리오';
+
+  @override
+  String get portfolioEmpty => '아직 비어 있습니다. 종목을 열고 ‘포트폴리오에 추가’를 탭하면 보유 종목을 추적할 수 있습니다.';
+
+  @override
+  String get portfolioLocalNote => '이 기기에만 저장됩니다. 합계는 ECB 기준 환율로 환산되며, 가격은 지연될 수 있습니다.';
+
+  @override
+  String get addToPortfolio => '포트폴리오에 추가';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol 추가';
+  }
+
+  @override
+  String get portfolioQuantity => '주식 수';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return '주당 가격($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => '매수일';
+
+  @override
+  String get portfolioAdd => '추가';
+
+  @override
+  String get portfolioInvalidNumber => '0보다 큰 숫자를 입력하세요.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol을(를) 포트폴리오에 추가했습니다.';
+  }
+
+  @override
+  String get portfolioTotalValue => '총평가액';
+
+  @override
+  String get portfolioToday => '오늘';
+
+  @override
+  String get portfolioGainLoss => '손익';
+
+  @override
+  String get portfolioInvested => '투자 금액';
+
+  @override
+  String get portfolioAllocation => '비중';
+
+  @override
+  String get portfolioPositions => '보유 종목';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return '평균 단가 $price';
+  }
+
+  @override
+  String get portfolioYourPosition => '내 보유 현황';
+
+  @override
+  String get portfolioPurchases => '매수 내역';
+
+  @override
+  String get portfolioRemove => '삭제';
+
+  @override
+  String get portfolioExcluded => '가격이나 환율이 없는 종목은 합계에서 제외됩니다.';
 }

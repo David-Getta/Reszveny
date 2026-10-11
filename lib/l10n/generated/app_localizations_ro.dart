@@ -1081,4 +1081,80 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get longTermNote =>
       'Intervalele pe termen lung se bazează pe ipotezele indicate și se lărgesc în timp. Prețuri fără dividende. Estimări aproximative, nu previziuni.';
+
+  @override
+  String get portfolio => 'Portofoliu';
+
+  @override
+  String get portfolioEmpty =>
+      'Deocamdată e gol. Deschide o acțiune și atinge „Adaugă în portofoliu” ca să urmărești ce deții.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Salvat doar pe acest dispozitiv. Totalurile sunt convertite la cursurile de referință BCE; prețurile pot fi întârziate.';
+
+  @override
+  String get addToPortfolio => 'Adaugă în portofoliu';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Adaugă $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Număr de acțiuni';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Preț pe acțiune ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data cumpărării';
+
+  @override
+  String get portfolioAdd => 'Adaugă';
+
+  @override
+  String get portfolioInvalidNumber => 'Introdu un număr mai mare decât zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol a fost adăugată în portofoliu.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valoare totală';
+
+  @override
+  String get portfolioToday => 'Azi';
+
+  @override
+  String get portfolioGainLoss => 'Câștig/pierdere';
+
+  @override
+  String get portfolioInvested => 'Investit';
+
+  @override
+  String get portfolioAllocation => 'Distribuție';
+
+  @override
+  String get portfolioPositions => 'Poziții';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'preț mediu $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Poziția ta';
+
+  @override
+  String get portfolioPurchases => 'Cumpărări';
+
+  @override
+  String get portfolioRemove => 'Elimină';
+
+  @override
+  String get portfolioExcluded => 'Pozițiile fără preț sau curs de schimb nu sunt incluse în totaluri.';
 }

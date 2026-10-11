@@ -1053,4 +1053,80 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get longTermNote =>
       'Τα μακροπρόθεσμα εύρη βασίζονται στις αναφερόμενες παραδοχές και διευρύνονται με τον χρόνο. Τιμές χωρίς μερίσματα. Χονδρικές εκτιμήσεις, όχι προβλέψεις.';
+
+  @override
+  String get portfolio => 'Χαρτοφυλάκιο';
+
+  @override
+  String get portfolioEmpty =>
+      'Είναι ακόμη άδειο. Ανοίξτε μια μετοχή και πατήστε «Προσθήκη στο χαρτοφυλάκιο» για να παρακολουθείτε ό,τι κατέχετε.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Αποθηκεύεται μόνο σε αυτή τη συσκευή. Τα σύνολα μετατρέπονται με τις ισοτιμίες αναφοράς της ΕΚΤ· οι τιμές μπορεί να καθυστερούν.';
+
+  @override
+  String get addToPortfolio => 'Προσθήκη στο χαρτοφυλάκιο';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Προσθήκη $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Αριθμός μετοχών';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Τιμή ανά μετοχή ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Ημερομηνία αγοράς';
+
+  @override
+  String get portfolioAdd => 'Προσθήκη';
+
+  @override
+  String get portfolioInvalidNumber => 'Εισαγάγετε αριθμό μεγαλύτερο από το μηδέν.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Η $symbol προστέθηκε στο χαρτοφυλάκιο.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Συνολική αξία';
+
+  @override
+  String get portfolioToday => 'Σήμερα';
+
+  @override
+  String get portfolioGainLoss => 'Κέρδος/ζημία';
+
+  @override
+  String get portfolioInvested => 'Επενδυμένα';
+
+  @override
+  String get portfolioAllocation => 'Κατανομή';
+
+  @override
+  String get portfolioPositions => 'Θέσεις';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'μέση τιμή $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Η θέση σας';
+
+  @override
+  String get portfolioPurchases => 'Αγορές';
+
+  @override
+  String get portfolioRemove => 'Αφαίρεση';
+
+  @override
+  String get portfolioExcluded => 'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
 }

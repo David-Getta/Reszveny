@@ -1049,4 +1049,80 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get longTermNote =>
       'Langetermijnbandbreedtes berusten op de genoemde aannames en worden met de tijd breder. Koersen zonder dividend. Ruwe inschattingen, geen voorspellingen.';
+
+  @override
+  String get portfolio => 'Portefeuille';
+
+  @override
+  String get portfolioEmpty =>
+      'Nog leeg. Open een aandeel en tik op ‘Toevoegen aan portefeuille’ om te volgen wat je bezit.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Alleen op dit apparaat opgeslagen. Totalen worden omgerekend tegen ECB-referentiekoersen; koersen kunnen vertraagd zijn.';
+
+  @override
+  String get addToPortfolio => 'Toevoegen aan portefeuille';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol toevoegen';
+  }
+
+  @override
+  String get portfolioQuantity => 'Aantal aandelen';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Prijs per aandeel ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Aankoopdatum';
+
+  @override
+  String get portfolioAdd => 'Toevoegen';
+
+  @override
+  String get portfolioInvalidNumber => 'Voer een getal groter dan nul in.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol is toegevoegd aan je portefeuille.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Totale waarde';
+
+  @override
+  String get portfolioToday => 'Vandaag';
+
+  @override
+  String get portfolioGainLoss => 'Winst/verlies';
+
+  @override
+  String get portfolioInvested => 'Geïnvesteerd';
+
+  @override
+  String get portfolioAllocation => 'Verdeling';
+
+  @override
+  String get portfolioPositions => 'Posities';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'gem. aankoopprijs $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Jouw positie';
+
+  @override
+  String get portfolioPurchases => 'Aankopen';
+
+  @override
+  String get portfolioRemove => 'Verwijderen';
+
+  @override
+  String get portfolioExcluded => 'Posities zonder koers of wisselkoers tellen niet mee in de totalen.';
 }

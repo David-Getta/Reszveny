@@ -1098,4 +1098,80 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get longTermNote =>
       'Довгострокові діапазони ґрунтуються на зазначених припущеннях і з часом розширюються. Ціни без урахування дивідендів. Грубі оцінки, а не прогнози.';
+
+  @override
+  String get portfolio => 'Портфель';
+
+  @override
+  String get portfolioEmpty =>
+      'Поки що порожньо. Відкрийте акцію й натисніть «Додати до портфеля», щоб стежити за своїми паперами.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Зберігається лише на цьому пристрої. Підсумки перераховуються за довідковими курсами ЄЦБ; ціни можуть надходити із затримкою.';
+
+  @override
+  String get addToPortfolio => 'Додати до портфеля';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Додати $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Кількість акцій';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Ціна за акцію ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Дата купівлі';
+
+  @override
+  String get portfolioAdd => 'Додати';
+
+  @override
+  String get portfolioInvalidNumber => 'Введіть число, більше за нуль.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol додано до портфеля.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Загальна вартість';
+
+  @override
+  String get portfolioToday => 'Сьогодні';
+
+  @override
+  String get portfolioGainLoss => 'Прибуток/збиток';
+
+  @override
+  String get portfolioInvested => 'Вкладено';
+
+  @override
+  String get portfolioAllocation => 'Структура';
+
+  @override
+  String get portfolioPositions => 'Позиції';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'сер. ціна купівлі $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ваша позиція';
+
+  @override
+  String get portfolioPurchases => 'Купівлі';
+
+  @override
+  String get portfolioRemove => 'Видалити';
+
+  @override
+  String get portfolioExcluded => 'Позиції без ціни або курсу валют не враховуються в підсумках.';
 }

@@ -1096,4 +1096,80 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get longTermNote =>
       'Dlouhodobá pásma vycházejí z uvedených předpokladů a s časem se rozšiřují. Ceny bez dividend. Hrubé odhady, nikoli předpovědi.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Zatím prázdné. Otevřete akcii a klepněte na „Přidat do portfolia“, abyste mohli sledovat, co vlastníte.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Ukládá se pouze v tomto zařízení. Součty se přepočítávají referenčními kurzy ECB; ceny mohou být zpožděné.';
+
+  @override
+  String get addToPortfolio => 'Přidat do portfolia';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Přidat $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Počet akcií';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Cena za akcii ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Datum nákupu';
+
+  @override
+  String get portfolioAdd => 'Přidat';
+
+  @override
+  String get portfolioInvalidNumber => 'Zadejte číslo větší než nula.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol byla přidána do portfolia.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Celková hodnota';
+
+  @override
+  String get portfolioToday => 'Dnes';
+
+  @override
+  String get portfolioGainLoss => 'Zisk/ztráta';
+
+  @override
+  String get portfolioInvested => 'Investováno';
+
+  @override
+  String get portfolioAllocation => 'Rozložení';
+
+  @override
+  String get portfolioPositions => 'Pozice';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'prům. nákupní cena $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Vaše pozice';
+
+  @override
+  String get portfolioPurchases => 'Nákupy';
+
+  @override
+  String get portfolioRemove => 'Odebrat';
+
+  @override
+  String get portfolioExcluded => 'Pozice bez ceny nebo směnného kurzu nejsou v součtech zahrnuty.';
 }

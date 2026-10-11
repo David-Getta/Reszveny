@@ -1051,4 +1051,80 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get longTermNote =>
       'Langfristige Spannen beruhen auf den genannten Annahmen und werden mit der Zeit breiter. Kurse ohne Dividenden. Grobe Einschätzungen, keine Prognosen.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Noch leer. Öffne eine Aktie und tippe auf „Zum Portfolio hinzufügen“, um deine Bestände zu verfolgen.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Nur auf diesem Gerät gespeichert. Summen werden zu EZB-Referenzkursen umgerechnet; Kurse können verzögert sein.';
+
+  @override
+  String get addToPortfolio => 'Zum Portfolio hinzufügen';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol hinzufügen';
+  }
+
+  @override
+  String get portfolioQuantity => 'Anzahl der Aktien';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Preis pro Aktie ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Kaufdatum';
+
+  @override
+  String get portfolioAdd => 'Hinzufügen';
+
+  @override
+  String get portfolioInvalidNumber => 'Gib eine Zahl größer als null ein.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol wurde zum Portfolio hinzugefügt.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Gesamtwert';
+
+  @override
+  String get portfolioToday => 'Heute';
+
+  @override
+  String get portfolioGainLoss => 'Gewinn/Verlust';
+
+  @override
+  String get portfolioInvested => 'Investiert';
+
+  @override
+  String get portfolioAllocation => 'Aufteilung';
+
+  @override
+  String get portfolioPositions => 'Positionen';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'Ø Kaufpreis $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Deine Position';
+
+  @override
+  String get portfolioPurchases => 'Käufe';
+
+  @override
+  String get portfolioRemove => 'Entfernen';
+
+  @override
+  String get portfolioExcluded => 'Positionen ohne Kurs oder Wechselkurs sind in den Summen nicht enthalten.';
 }

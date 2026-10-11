@@ -1051,4 +1051,79 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get longTermNote =>
       'Els intervals a llarg termini es basen en els supòsits indicats i s\'eixamplen amb el temps. Preus sense dividends. Estimacions aproximades, no prediccions.';
+
+  @override
+  String get portfolio => 'Cartera';
+
+  @override
+  String get portfolioEmpty => 'Encara és buida. Obre una acció i toca «Afegeix a la cartera» per seguir el que tens.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Es desa només en aquest dispositiu. Els totals es converteixen als tipus de referència del BCE; els preus poden anar amb retard.';
+
+  @override
+  String get addToPortfolio => 'Afegeix a la cartera';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Afegeix $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Nombre d’accions';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Preu per acció ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data de compra';
+
+  @override
+  String get portfolioAdd => 'Afegeix';
+
+  @override
+  String get portfolioInvalidNumber => 'Introdueix un nombre més gran que zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'S’ha afegit $symbol a la cartera.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valor total';
+
+  @override
+  String get portfolioToday => 'Avui';
+
+  @override
+  String get portfolioGainLoss => 'Guany/pèrdua';
+
+  @override
+  String get portfolioInvested => 'Invertit';
+
+  @override
+  String get portfolioAllocation => 'Distribució';
+
+  @override
+  String get portfolioPositions => 'Posicions';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'cost mitjà $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'La teva posició';
+
+  @override
+  String get portfolioPurchases => 'Compres';
+
+  @override
+  String get portfolioRemove => 'Elimina';
+
+  @override
+  String get portfolioExcluded => 'Les posicions sense preu o sense tipus de canvi queden fora dels totals.';
 }

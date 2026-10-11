@@ -1048,4 +1048,80 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get longTermNote =>
       'De langsiktige intervallene bygger på de oppgitte forutsetningene og blir bredere over tid. Kurser uten utbytte. Grove anslag, ikke prognoser.';
+
+  @override
+  String get portfolio => 'Portefølje';
+
+  @override
+  String get portfolioEmpty =>
+      'Ingenting her ennå. Åpne en aksje og trykk på «Legg til i porteføljen» for å følge beholdningen din.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Lagres bare på denne enheten. Summene regnes om til ECBs referansekurser; kursene kan være forsinket.';
+
+  @override
+  String get addToPortfolio => 'Legg til i porteføljen';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Legg til $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Antall aksjer';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Pris per aksje ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Kjøpsdato';
+
+  @override
+  String get portfolioAdd => 'Legg til';
+
+  @override
+  String get portfolioInvalidNumber => 'Skriv inn et tall større enn null.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol er lagt til i porteføljen.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Samlet verdi';
+
+  @override
+  String get portfolioToday => 'I dag';
+
+  @override
+  String get portfolioGainLoss => 'Gevinst/tap';
+
+  @override
+  String get portfolioInvested => 'Investert';
+
+  @override
+  String get portfolioAllocation => 'Fordeling';
+
+  @override
+  String get portfolioPositions => 'Beholdninger';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'snittkurs $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Din beholdning';
+
+  @override
+  String get portfolioPurchases => 'Kjøp';
+
+  @override
+  String get portfolioRemove => 'Fjern';
+
+  @override
+  String get portfolioExcluded => 'Beholdninger uten kurs eller valutakurs er ikke med i summene.';
 }

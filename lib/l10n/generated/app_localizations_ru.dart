@@ -1099,4 +1099,80 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get longTermNote =>
       'Долгосрочные диапазоны основаны на указанных допущениях и расширяются со временем. Цены без учёта дивидендов. Грубые оценки, а не прогнозы.';
+
+  @override
+  String get portfolio => 'Портфель';
+
+  @override
+  String get portfolioEmpty =>
+      'Пока пусто. Откройте акцию и нажмите «Добавить в портфель», чтобы следить за своими бумагами.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Хранится только на этом устройстве. Итоги пересчитываются по справочным курсам ЕЦБ; цены могут быть с задержкой.';
+
+  @override
+  String get addToPortfolio => 'Добавить в портфель';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Добавить $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Количество акций';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Цена за акцию ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Дата покупки';
+
+  @override
+  String get portfolioAdd => 'Добавить';
+
+  @override
+  String get portfolioInvalidNumber => 'Введите число больше нуля.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol добавлена в портфель.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Общая стоимость';
+
+  @override
+  String get portfolioToday => 'Сегодня';
+
+  @override
+  String get portfolioGainLoss => 'Прибыль/убыток';
+
+  @override
+  String get portfolioInvested => 'Вложено';
+
+  @override
+  String get portfolioAllocation => 'Структура';
+
+  @override
+  String get portfolioPositions => 'Позиции';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'ср. цена покупки $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ваша позиция';
+
+  @override
+  String get portfolioPurchases => 'Покупки';
+
+  @override
+  String get portfolioRemove => 'Удалить';
+
+  @override
+  String get portfolioExcluded => 'Позиции без цены или курса валют не учитываются в итогах.';
 }

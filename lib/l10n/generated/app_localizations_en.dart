@@ -1046,4 +1046,79 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get longTermNote =>
       'Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty => 'Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.';
+
+  @override
+  String get addToPortfolio => 'Add to portfolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Add $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Number of shares';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Price per share ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Purchase date';
+
+  @override
+  String get portfolioAdd => 'Add';
+
+  @override
+  String get portfolioInvalidNumber => 'Enter a number greater than zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol added to your portfolio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Total value';
+
+  @override
+  String get portfolioToday => 'Today';
+
+  @override
+  String get portfolioGainLoss => 'Gain/loss';
+
+  @override
+  String get portfolioInvested => 'Invested';
+
+  @override
+  String get portfolioAllocation => 'Allocation';
+
+  @override
+  String get portfolioPositions => 'Positions';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'avg. cost $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Your position';
+
+  @override
+  String get portfolioPurchases => 'Purchases';
+
+  @override
+  String get portfolioRemove => 'Remove';
+
+  @override
+  String get portfolioExcluded => 'Positions without a price or exchange rate are left out of the totals.';
 }

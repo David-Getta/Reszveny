@@ -1049,4 +1049,80 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get longTermNote =>
       'Дългосрочните диапазони се основават на посочените допускания и се разширяват с времето. Цени без дивиденти. Груби преценки, не прогнози.';
+
+  @override
+  String get portfolio => 'Портфейл';
+
+  @override
+  String get portfolioEmpty =>
+      'Все още е празен. Отворете акция и докоснете „Добави към портфейла“, за да следите какво притежавате.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Съхранява се само на това устройство. Сборовете се преизчисляват по референтните курсове на ЕЦБ; цените може да са със закъснение.';
+
+  @override
+  String get addToPortfolio => 'Добави към портфейла';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Добави $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Брой акции';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Цена за акция ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Дата на покупка';
+
+  @override
+  String get portfolioAdd => 'Добави';
+
+  @override
+  String get portfolioInvalidNumber => 'Въведете число, по-голямо от нула.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol е добавена към портфейла.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Обща стойност';
+
+  @override
+  String get portfolioToday => 'Днес';
+
+  @override
+  String get portfolioGainLoss => 'Печалба/загуба';
+
+  @override
+  String get portfolioInvested => 'Инвестирано';
+
+  @override
+  String get portfolioAllocation => 'Разпределение';
+
+  @override
+  String get portfolioPositions => 'Позиции';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'ср. покупна цена $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Вашата позиция';
+
+  @override
+  String get portfolioPurchases => 'Покупки';
+
+  @override
+  String get portfolioRemove => 'Премахни';
+
+  @override
+  String get portfolioExcluded => 'Позициите без цена или валутен курс не са включени в сборовете.';
 }

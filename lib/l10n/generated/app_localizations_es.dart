@@ -1051,4 +1051,80 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get longTermNote =>
       'Los rangos a largo plazo se basan en los supuestos indicados y se amplían con el tiempo. Precios sin dividendos. Estimaciones aproximadas, no predicciones.';
+
+  @override
+  String get portfolio => 'Cartera';
+
+  @override
+  String get portfolioEmpty =>
+      'Aún está vacía. Abre una acción y toca «Añadir a la cartera» para seguir lo que tienes.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Se guarda solo en este dispositivo. Los totales se convierten a los tipos de referencia del BCE; los precios pueden ir con retraso.';
+
+  @override
+  String get addToPortfolio => 'Añadir a la cartera';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Añadir $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Número de acciones';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Precio por acción ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Fecha de compra';
+
+  @override
+  String get portfolioAdd => 'Añadir';
+
+  @override
+  String get portfolioInvalidNumber => 'Introduce un número mayor que cero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol se ha añadido a la cartera.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valor total';
+
+  @override
+  String get portfolioToday => 'Hoy';
+
+  @override
+  String get portfolioGainLoss => 'Ganancia/pérdida';
+
+  @override
+  String get portfolioInvested => 'Invertido';
+
+  @override
+  String get portfolioAllocation => 'Distribución';
+
+  @override
+  String get portfolioPositions => 'Posiciones';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'coste medio $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Tu posición';
+
+  @override
+  String get portfolioPurchases => 'Compras';
+
+  @override
+  String get portfolioRemove => 'Eliminar';
+
+  @override
+  String get portfolioExcluded => 'Las posiciones sin precio o sin tipo de cambio quedan fuera de los totales.';
 }

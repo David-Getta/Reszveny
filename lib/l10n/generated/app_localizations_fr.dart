@@ -1054,4 +1054,81 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get longTermNote =>
       'Les fourchettes à long terme reposent sur les hypothèses indiquées et s\'élargissent avec le temps. Cours hors dividendes. Estimations grossières, pas des prévisions.';
+
+  @override
+  String get portfolio => 'Portefeuille';
+
+  @override
+  String get portfolioEmpty =>
+      'Rien pour l’instant. Ouvrez une action et appuyez sur « Ajouter au portefeuille » pour suivre ce que vous détenez.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Enregistré uniquement sur cet appareil. Les totaux sont convertis aux cours de référence de la BCE ; les cours peuvent être différés.';
+
+  @override
+  String get addToPortfolio => 'Ajouter au portefeuille';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Ajouter $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Nombre d’actions';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Prix par action ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Date d’achat';
+
+  @override
+  String get portfolioAdd => 'Ajouter';
+
+  @override
+  String get portfolioInvalidNumber => 'Saisissez un nombre supérieur à zéro.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol a été ajouté au portefeuille.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valeur totale';
+
+  @override
+  String get portfolioToday => 'Aujourd’hui';
+
+  @override
+  String get portfolioGainLoss => 'Plus/moins-value';
+
+  @override
+  String get portfolioInvested => 'Investi';
+
+  @override
+  String get portfolioAllocation => 'Répartition';
+
+  @override
+  String get portfolioPositions => 'Positions';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'PRU $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Votre position';
+
+  @override
+  String get portfolioPurchases => 'Achats';
+
+  @override
+  String get portfolioRemove => 'Supprimer';
+
+  @override
+  String get portfolioExcluded =>
+      'Les positions sans cours ou sans taux de change ne sont pas comptées dans les totaux.';
 }

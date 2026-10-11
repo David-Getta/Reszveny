@@ -1048,4 +1048,80 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get longTermNote =>
       'طویل مدتی حدود بیان کردہ مفروضات پر مبنی ہیں اور وقت کے ساتھ وسیع ہوتی جاتی ہیں۔ قیمتوں میں منافع منقسمہ شامل نہیں۔ موٹے اندازے ہیں، پیش گوئیاں نہیں۔';
+
+  @override
+  String get portfolio => 'پورٹ فولیو';
+
+  @override
+  String get portfolioEmpty =>
+      'ابھی کچھ نہیں۔ کوئی شیئر کھولیں اور اپنی ملکیت پر نظر رکھنے کے لیے “پورٹ فولیو میں شامل کریں” پر ٹیپ کریں۔';
+
+  @override
+  String get portfolioLocalNote =>
+      'صرف اسی ڈیوائس پر محفوظ ہوتا ہے۔ مجموعے ای سی بی کے حوالہ جاتی نرخوں پر تبدیل کیے جاتے ہیں؛ قیمتوں میں تاخیر ہو سکتی ہے۔';
+
+  @override
+  String get addToPortfolio => 'پورٹ فولیو میں شامل کریں';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol شامل کریں';
+  }
+
+  @override
+  String get portfolioQuantity => 'شیئرز کی تعداد';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'فی شیئر قیمت ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'خریداری کی تاریخ';
+
+  @override
+  String get portfolioAdd => 'شامل کریں';
+
+  @override
+  String get portfolioInvalidNumber => 'صفر سے بڑا عدد درج کریں۔';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol پورٹ فولیو میں شامل ہو گیا۔';
+  }
+
+  @override
+  String get portfolioTotalValue => 'کل مالیت';
+
+  @override
+  String get portfolioToday => 'آج';
+
+  @override
+  String get portfolioGainLoss => 'نفع/نقصان';
+
+  @override
+  String get portfolioInvested => 'سرمایہ کاری';
+
+  @override
+  String get portfolioAllocation => 'تقسیم';
+
+  @override
+  String get portfolioPositions => 'پوزیشنز';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'اوسط لاگت $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'آپ کی پوزیشن';
+
+  @override
+  String get portfolioPurchases => 'خریداریاں';
+
+  @override
+  String get portfolioRemove => 'ہٹائیں';
+
+  @override
+  String get portfolioExcluded => 'جن پوزیشنز کی قیمت یا شرح تبادلہ دستیاب نہیں وہ مجموعوں میں شامل نہیں۔';
 }

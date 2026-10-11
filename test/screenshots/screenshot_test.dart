@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
@@ -26,7 +28,10 @@ import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
+import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart';
+import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 import 'package:reszveny/features/stock_detail/widgets/outlook_view.dart';
 import 'package:reszveny/theme/app_theme.dart';
@@ -44,9 +49,33 @@ class _NoRecognizer implements StockRecognizer {
       const RecognitionResult(candidates: []);
 }
 
-AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) {
+/// Rögzített ECB-árfolyamok (USD-ben), hogy a képek hálózat nélkül is ugyanazok legyenek.
+const _usdPer = {'USD': 1.0, 'HUF': 1 / 362.4, 'EUR': 1.092};
+
+FxService _fx() => FxService(
+  client: MockClient((req) async {
+    final from = req.url.queryParameters['from']!, to = req.url.queryParameters['to']!;
+    final rate = _usdPer[from]! / _usdPer[to]!;
+    return http.Response('{"amount":1,"base":"$from","date":"2026-10-09","rates":{"$to":$rate}}', 200);
+  }),
+);
+
+/// Minta-portfólió a képekhez.
+PortfolioStore _samplePortfolio() => PortfolioStore(
+  lots: [
+    PortfolioLot(id: 'a1', symbol: 'AAPL', quantity: 12, price: 168.40, currency: 'USD', date: DateTime(2024, 11, 4)),
+    PortfolioLot(id: 'a2', symbol: 'AAPL', quantity: 6, price: 205.10, currency: 'USD', date: DateTime(2025, 8, 19)),
+    PortfolioLot(id: 'n1', symbol: 'NVDA', quantity: 20, price: 121.80, currency: 'USD', date: DateTime(2025, 2, 3)),
+    PortfolioLot(id: 'm1', symbol: 'MSFT', quantity: 4, price: 530.00, currency: 'USD', date: DateTime(2026, 7, 21)),
+    PortfolioLot(id: 'o1', symbol: 'OTP', quantity: 60, price: 24150, currency: 'HUF', date: DateTime(2025, 5, 12)),
+  ],
+);
+
+AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale, PortfolioStore? portfolio, String? currency}) {
   final ent = _entitlements();
   return AppServices(
+    portfolio: portfolio,
+    fx: _fx(),
     config: const AppConfig(),
     capture: CaptureService(),
     recognizer: _NoRecognizer(),
@@ -56,6 +85,7 @@ AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale}) {
       themeMode: mode,
       recent: const ['AAPL', 'NVDA', 'OTP'],
       favorites: const ['AAPL', 'MSFT'],
+      displayCurrency: currency,
     ),
     desktop: DesktopIntegration(),
     reports: ReportStore(analyst: _FakeAnalyst(), entitlements: ent),
@@ -307,6 +337,33 @@ void main() {
     Scrollable.ensureVisible(tester.element(chart), alignment: 0.02);
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_longterm_phone_hu');
+  });
+
+  testWidgets('portfolio wide', (tester) async {
+    await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 1000));
+    await tester.tap(find.text('Portfolio').first); // az oldalsáv gombja
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_wide');
+  });
+
+  testWidgets('portfolio on a phone (hungarian, HUF totals)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await _shot(tester, 'home_portfolio_phone_hu');
+    await tester.tap(find.byType(PortfolioSummaryCard));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_phone_hu');
+  });
+
+  testWidgets('detail with own position', (tester) async {
+    await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 900));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_position');
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'add_to_portfolio');
   });
 
   testWidgets('paywall', (tester) async {

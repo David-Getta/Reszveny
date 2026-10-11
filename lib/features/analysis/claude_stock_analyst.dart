@@ -275,8 +275,23 @@ class ClaudeStockAnalyst implements StockAnalyst {
             '${o.readerCurrency != null ? ' and thinks in ${o.readerCurrency}' : ''}. In the summary or valuation section '
             'add a short local angle where it matters: currency effect on returns, dividend withholding tax, whether the '
             'stock is also listed or tradable locally.',
+      if (o.position case final p?)
+        '- Reader\'s position: holds ${_num(p.quantity)} shares at an average cost of ${_num(p.averageCost)} ${p.currency}'
+            '${_period(p.firstDate, p.lastDate)}. Where it adds insight, relate the scenarios and the long-term ranges to '
+            'this cost basis (where each one would leave the position in gain or loss, in % and per share). This is '
+            'context, not a request for advice: do not tell the reader whether to buy more, hold or sell.',
     ];
     return lines.join('\n');
+  }
+
+  static String _num(double v) =>
+      v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v.abs() < 1 ? 4 : 2);
+
+  static String _period(DateTime? first, DateTime? last) {
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    if (first == null) return '';
+    if (last == null || d(first) == d(last)) return ', bought on ${d(first)}';
+    return ', bought between ${d(first)} and ${d(last)}';
   }
 
   /// A rendszerprompt (v2.3, lásd `docs/ELEMZES_PROMPT.md`). Állandó szöveg: a

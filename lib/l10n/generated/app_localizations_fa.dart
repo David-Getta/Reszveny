@@ -1046,4 +1046,80 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get longTermNote =>
       'بازه‌های بلندمدت بر فرض‌های ذکرشده استوارند و با گذشت زمان گسترده‌تر می‌شوند. قیمت‌ها بدون سود سهام است. برآوردهای تقریبی‌اند، نه پیش‌بینی.';
+
+  @override
+  String get portfolio => 'سبد سهام';
+
+  @override
+  String get portfolioEmpty =>
+      'هنوز خالی است. یک سهم را باز کنید و روی «افزودن به سبد» بزنید تا دارایی‌هایتان را دنبال کنید.';
+
+  @override
+  String get portfolioLocalNote =>
+      'فقط روی همین دستگاه ذخیره می‌شود. جمع‌ها با نرخ‌های مرجع بانک مرکزی اروپا تبدیل می‌شوند؛ قیمت‌ها ممکن است با تأخیر باشند.';
+
+  @override
+  String get addToPortfolio => 'افزودن به سبد';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'افزودن $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'تعداد سهم';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'قیمت هر سهم ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'تاریخ خرید';
+
+  @override
+  String get portfolioAdd => 'افزودن';
+
+  @override
+  String get portfolioInvalidNumber => 'عددی بزرگ‌تر از صفر وارد کنید.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol به سبد افزوده شد.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'ارزش کل';
+
+  @override
+  String get portfolioToday => 'امروز';
+
+  @override
+  String get portfolioGainLoss => 'سود/زیان';
+
+  @override
+  String get portfolioInvested => 'سرمایه‌گذاری‌شده';
+
+  @override
+  String get portfolioAllocation => 'ترکیب';
+
+  @override
+  String get portfolioPositions => 'موقعیت‌ها';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'میانگین بهای خرید $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'موقعیت شما';
+
+  @override
+  String get portfolioPurchases => 'خریدها';
+
+  @override
+  String get portfolioRemove => 'حذف';
+
+  @override
+  String get portfolioExcluded => 'موقعیت‌های بدون قیمت یا نرخ ارز در جمع‌ها لحاظ نمی‌شوند.';
 }

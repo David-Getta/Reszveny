@@ -312,6 +312,12 @@ Mérés: a valódi minőségjavulás az éles evallal mérhető (lásd fent, kul
 | Minőség-ellenőrző: megvan-e a 3/5/10 év, tágulnak-e a sávok, a legvalószínűbb ár a sávon belül van-e, van-e számítás és indoklás | Az eval ezeket is pontozza |
 | Terjedelem: Rövid 700–1 000, Alap 1 250–1 800, Részletes 2 400–3 300 szó; `max_tokens` 12k / 18k / 32k (a szerver is) | Az új szekció helyet kap anélkül, hogy a többi rövidülne |
 
+**Saját pozíció (2026-10-11):** ha az elemzett részvény a portfólióban van, a „Report settings”
+blokkba egy sor kerül: hány darab, milyen átlagáron, mikor vett. A modell ahol hasznos, a
+forgatókönyveket és a hosszú távú sávokat ehhez az átlagárhoz is viszonyítja (nyereség vagy
+veszteség darabonként és %-ban), de nem mondja meg, hogy vegyen, tartson vagy adjon el. A
+rendszerprompt nem változott, így a gyorsítótár is megmarad.
+
 Javított hibák: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
 kilógott a sorból, és a kártyák fejlécében a jobb oldali kiegészítő (frissítés ideje, „Újragenerálás”)
 nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, illetve tördelődik.

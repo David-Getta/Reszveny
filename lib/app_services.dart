@@ -25,6 +25,7 @@ import 'features/fx/fx_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
+import 'features/portfolio/portfolio_store.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
 import 'features/updates/update_service.dart';
@@ -48,8 +49,10 @@ class AppServices {
     bool platformStore = false,
     FxService? fx,
     UpdateService? updates,
+    PortfolioStore? portfolio,
   }) : fx = fx ?? FxService(),
-       updates = updates ?? UpdateService(config: config) {
+       updates = updates ?? UpdateService(config: config),
+       portfolio = portfolio ?? PortfolioStore() {
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
@@ -107,6 +110,7 @@ class AppServices {
     required EntitlementService entitlements,
     DesktopIntegration? desktop,
     String? accountEmail,
+    PortfolioStore? portfolio,
   }) {
     // A Mac-es app a weboldalról terjesztett (nem Mac App Store-os), ezért ott
     // is a böngészős fizetés fut, mint a Claude asztali appjában.
@@ -136,6 +140,7 @@ class AppServices {
       backend: backend,
       accountEmail: accountEmail,
       platformStore: storeBilling,
+      portfolio: portfolio,
     );
     return services;
   }
@@ -160,9 +165,13 @@ class AppServices {
   final FxService fx;
   final UpdateService updates;
 
+  /// A saját részvények (csak a készüléken tárolva).
+  final PortfolioStore portfolio;
+
   /// Az elemzés beállításai: a felhasználó választása, a csomag szerinti
-  /// webkeresés-szám és az olvasó régiója.
-  AnalysisOptions analysisOptions() {
+  /// webkeresés-szám, az olvasó régiója és – ha van – a pozíciója a [symbol]-ban.
+  AnalysisOptions analysisOptions({String? symbol}) {
+    final held = symbol == null ? null : portfolio.positionOf(symbol);
     final device = WidgetsBinding.instance.platformDispatcher.locale;
     final depth = preferences.analysisDepth;
     final appLocale = locale.override ?? device;
@@ -173,6 +182,15 @@ class AppServices {
       webSearches: AnalysisOptions.searchesFor(entitlements.state.tier, depth),
       readerCountry: device.countryCode,
       readerCurrency: displayCurrency(appLocale),
+      position: held == null
+          ? null
+          : PositionContext(
+              quantity: held.quantity,
+              averageCost: held.averageCost,
+              currency: held.currency,
+              firstDate: held.firstDate,
+              lastDate: held.lastDate,
+            ),
     );
   }
 

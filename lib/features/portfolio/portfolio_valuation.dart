@@ -1,0 +1,128 @@
+import '../../core/models/stock_quote.dart';
+import '../fx/fx_service.dart';
+import '../market_data/market_data_provider.dart';
+import 'portfolio_store.dart';
+
+/// Egy pozíció értékelése az aktuális árral.
+class PositionValue {
+  const PositionValue({required this.position, this.price, this.dayChange, this.rate, this.weight = 0});
+
+  final Position position;
+
+  /// Aktuális ár a részvény pénznemében (`null`, ha nem érhető el).
+  final double? price;
+
+  /// Napi változás darabonként a részvény pénznemében.
+  final double? dayChange;
+
+  /// Átváltási árfolyam az összesítés pénznemébe (`null`, ha nincs).
+  final double? rate;
+
+  /// Súly a portfólióban (0–1), az összesítés pénznemében számolt értékből.
+  final double weight;
+
+  double? get value => price == null ? null : price! * position.quantity;
+  double? get gain => value == null ? null : value! - position.cost;
+  double? get gainPercent => gain == null || position.cost == 0 ? null : gain! / position.cost * 100;
+  double? get dayGain => dayChange == null ? null : dayChange! * position.quantity;
+
+  /// Benne van-e az összesítésben (van ár és árfolyam).
+  bool get inTotal => value != null && rate != null;
+}
+
+/// A portfólió pillanatképe az összesítés pénznemében.
+class PortfolioSnapshot {
+  const PortfolioSnapshot({
+    required this.currency,
+    required this.rows,
+    required this.value,
+    required this.cost,
+    required this.dayGain,
+  });
+
+  final String currency;
+  final List<PositionValue> rows;
+  final double value;
+  final double cost;
+  final double dayGain;
+
+  double get gain => value - cost;
+  double? get gainPercent => cost == 0 ? null : gain / cost * 100;
+
+  /// Napi változás százalékban a tegnapi záró értékhez képest.
+  double? get dayGainPercent => value - dayGain == 0 ? null : dayGain / (value - dayGain) * 100;
+
+  /// Vannak-e pozíciók, amelyek ár vagy árfolyam híján kimaradtak az összesítésből.
+  bool get hasExcluded => rows.any((r) => !r.inTotal);
+
+  /// Összesítés: minden pozíció értéke, bekerülési értéke és napi változása
+  /// átváltva [currency]-be. A [rate] `null`-t ad, ha nincs árfolyam.
+  static PortfolioSnapshot compute(
+    List<Position> positions, {
+    required Map<String, StockQuote> quotes,
+    required double? Function(String from, String to) rate,
+    required String currency,
+  }) {
+    final rows = <PositionValue>[];
+    var value = 0.0, cost = 0.0, day = 0.0;
+    for (final p in positions) {
+      final q = quotes[p.symbol];
+      final r = p.currency == currency ? 1.0 : rate(p.currency, currency);
+      final row = PositionValue(position: p, price: q?.price, dayChange: q?.change, rate: r);
+      rows.add(row);
+      if (!row.inTotal) continue;
+      value += row.value! * r!;
+      cost += p.cost * r;
+      day += (row.dayGain ?? 0) * r;
+    }
+    final weighted = [
+      for (final r in rows)
+        PositionValue(
+          position: r.position,
+          price: r.price,
+          dayChange: r.dayChange,
+          rate: r.rate,
+          weight: r.inTotal && value > 0 ? r.value! * r.rate! / value : 0,
+        ),
+    ]..sort((a, b) => b.weight.compareTo(a.weight));
+    return PortfolioSnapshot(currency: currency, rows: weighted, value: value, cost: cost, dayGain: day);
+  }
+
+  /// Árak és árfolyamok letöltése, majd összesítés. Egy-egy hiányzó ár vagy
+  /// árfolyam nem állítja meg: az a pozíció kimarad az összegből.
+  static Future<PortfolioSnapshot> load(
+    List<Position> positions, {
+    required MarketDataProvider marketData,
+    required FxService fx,
+    required String currency,
+  }) async {
+    final quotes = <String, StockQuote>{};
+    final rates = <String, double>{};
+    Future<void> quote(String symbol) async {
+      try {
+        quotes[symbol] = await marketData.quote(symbol);
+      } catch (_) {
+        // Ár nélkül a pozíció kimarad az összegből.
+      }
+    }
+
+    Future<void> fxRate(String from) async {
+      final r = await fx.rate(from, currency);
+      if (r != null) rates[from] = r.rate;
+    }
+
+    await Future.wait([
+      for (final p in positions) quote(p.symbol),
+      for (final c in {for (final p in positions) p.currency}.where((c) => c != currency)) fxRate(c),
+    ]);
+    return compute(positions, quotes: quotes, rate: (from, _) => rates[from], currency: currency);
+  }
+
+  /// Az összesítés pénzneme: a megjelenítési pénznem, különben a pozíciók
+  /// közös pénzneme, végső esetben USD.
+  static String totalCurrency(List<Position> positions, String? displayCurrency) {
+    if (displayCurrency != null && displayCurrency.isNotEmpty) return displayCurrency;
+    final all = {for (final p in positions) p.currency};
+    return all.length == 1 ? all.first : 'USD';
+  }
+}

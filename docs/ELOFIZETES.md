@@ -142,3 +142,62 @@ megléte után készül el. Az eredeti terv, viszonyításként:
   használja. A visszaállítás a `restorePurchases` hívással történik.
 - Windows (bolton kívül) és web: még nincs fizetés; a demó bolt fut. Megoldás: Stripe Checkout
   böngészőben + a fiókhoz kötött jogosultság a szerveren.
+
+## Pénzügyi modell (becslés, 2026-10-11)
+
+**Hogyan folyik a pénz.** A felhasználó a StockLensnek fizet, nem az Anthropicnak:
+telefonon az App Store / Google Play szedi be (ők a kereskedők, ők kezelik az ÁFÁ-t, levonják a
+jutalékot, és havonta utalnak a bankszámládra: az Apple kb. 33–45 nappal a hónap vége után, a Google a
+következő hónap 15-e körül), asztali gépen és weben a Stripe (2–7 napon belül utal; itt te
+vagy a kereskedő, az EU-s ÁFÁ-t neked kell bevallani, pl. OSS-en; Stripe Tax vagy egy Merchant of
+Record szolgáltató, pl. Paddle, ezt átveheti). Az Anthropic API-t a saját Claude Console-fiókod
+fizeti: bankkártya vagy előre feltöltött kredit (automatikus feltöltéssel), havi költéskorláttal. Az
+API-kulcs csak a szerveren van, minden elemzés erre a fiókra terhelődik. Az API előre fizetős, a
+boltok utólag utalnak, ezért az első 1–2 hónapra kell forgóeszköz.
+
+**Egy elemzés költsége** (Opus 5.5: 4 USD / 20 USD per millió bemeneti / kimeneti token, gyorsítótár-olvasás
+0,20 USD, webkeresés 10 USD / 1000 keresés; Sonnet 5.5 ennek a fele):
+
+| | Opus 5.5 | Sonnet 5.5 |
+|---|---|---|
+| Rövid (4 keresés) | ≈ 0,40 USD | ≈ 0,20 USD |
+| Alap (6 keresés, v2.3) | ≈ 0,45–0,75, tervezéshez 0,60 USD | ≈ 0,30 USD |
+| Részletes (8 keresés, 2 elemzés) | ≈ 1,00–1,30 USD | ≈ 0,55 USD |
+| Fotófelismerés | ≈ 0,02 USD | ≈ 0,01 USD |
+
+Becslés: a pontos számot a szerver naplója (`usage`) és az éles eval adja meg, ezt az első
+élesítés előtt 10–20 valódi elemzéssel érdemes lemérni.
+
+**Nettó bevétel csomagonként** (EU-s átlag 21 % ÁFA levonva; bolti jutalék 15 % a Small Business
+Programmal, 1 millió USD éves bevétel alatt; Stripe ≈ 3,5 % + 0,30 USD):
+
+| Csomag | Ár | Nettó (bolt) | Nettó (Stripe) | Költség teljes kihasználásnál (Opus / Sonnet) |
+|---|---|---|---|---|
+| Normál (8) | 7,99 | 5,61 | 6,07 | 4,80 / 2,40 |
+| Pro (20) | 15,99 | 11,23 | 12,45 | 12,00 / 6,00 |
+| Max (80) | 39,99 | 28,09 | 31,59 | 48,00 / 24,00 |
+| Ultra (150) | 64,99 | 45,65 | 51,53 | 90,00 / 45,00 |
+
+**Haszon havonta és előfizetőnként, bolti eladásnál** (USD):
+
+| Csomag | Opus, teljes keret | Opus, 40 % kihasználás | Sonnet, teljes keret | Sonnet, 40 % |
+|---|---|---|---|---|
+| Normál | +0,81 | +3,69 | +3,21 | +4,65 |
+| Pro | −0,77 | +6,43 | +5,23 | +8,83 |
+| Max | −19,91 | +8,89 | +4,09 | +18,49 |
+| Ultra | −44,35 | +9,65 | +0,65 | +27,65 |
+
+Az előfizetők jellemzően a keret 30–50 %-át használják el, de a Max és az Ultra vevői éppen a sokat
+használók. Extra csomagok (ezeket mindig elhasználják), Opus: +5 → +0,51, +20 → +0,64, +50 → −1,91
+USD; Sonnet: +2,01 / +6,64 / +13,09 USD. A próbaidő (3 elemzés) Opusszal ≈ 1,80 USD
+telepítésenként; 5 %-os konverziónál ez ≈ 36 USD egy fizető előfizetőre vetítve.
+
+Fix költségek: szerver (5–20 USD/hó), Apple Developer Program (99 USD/év), Google Play (25 USD
+egyszer), domain, e-mail (Resend: havi 3000 levélig ingyenes), és a piaci adat: a Finnhub ingyenes
+csomagja nem kereskedelmi célra szól, üzleti használathoz fizetős licenc kell (ezt a Finnhubbal kell
+egyeztetni). Az adózás (társasági adó, KIVA vagy egyéni vállalkozás) könyvelővel egyeztetendő.
+
+**Teendők a nyereséges induláshoz:** a továbbító végpont (`/v1/anthropic/v1/messages`) lezárása
+(most kvóta nélkül bármit továbbít), a valódi elemzésköltség lemérése, majd a következők egyike:
+(a) Opus mindenhol, de Max 40 és Ultra 70 elemzés; (b) Normál és Pro Opusszal, Max és Ultra
+Sonnettel (a Részletes marad Opus); (c) magasabb ár a Max (59,99) és az Ultra (99,99) csomagra.

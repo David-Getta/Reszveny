@@ -24,6 +24,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 - **Vágólapról kép**: ⌘V / Ctrl+V a kezdőképernyőn vagy a gyorssávban egy képernyőfotót azonnal felismertet.
 - **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
 - **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
+- **Portfólió**: a részvény oldalán „Hozzáadás a portfólióhoz” (darab, ár, dátum); a portfólió oldalon összérték a saját pénznemedben, napi változás, nyereség/veszteség, megoszlás-sáv és a pozíciók; a részvény oldalán „A pozícióm” kártya. Csak a készüléken tárolódik. Ha a részvény a portfóliódban van, az AI-elemzés a forgatókönyveket az átlagáradhoz is viszonyítja (tanácsadás nélkül).
 - **Automatikus frissítés**: Sparkle (macOS/Windows), Play rugalmas frissítés (Android), áruház (iOS), JSON-kiáltvány tartalékként; beállításokban verzió, kapcsoló, kézi ellenőrzés.
 - **Deviza-átváltás**: az ár a saját pénznemedben is megjelenik (ECB napi árfolyam, a Frankfurter nyílt API-n át, kulcs nélkül); a pénznem a beállításokban választható, alapból a rendszer nyelvéből/országából jön.
 - **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
@@ -165,6 +166,7 @@ lib/
     market_data/   MarketDataProvider interfész, Finnhub, demó adatok
     shell/         oldalsávos keret, gyorssáv-mód váltás
     home/          kezdőképernyő (üdvözlő sor + keresősáv), lebegő gyorssáv, jelölt-választó
+    portfolio/     vételek tárolása, értékelés (árfolyam-átváltással), portfólió oldal, „A pozícióm”
     stock_detail/  részletes nézet: AI-elemzés, grafikon, ár, azonosítás, értékelés, kimutatások, hírek…
     settings/      nyelvválasztó, névjegy
   l10n/
