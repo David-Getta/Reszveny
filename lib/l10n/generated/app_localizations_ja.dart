@@ -1085,4 +1085,105 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioExcluded => '株価または為替レートがない銘柄は合計に含まれません。';
+
+  @override
+  String get priceAlerts => '価格アラート';
+
+  @override
+  String get setPriceAlert => '価格アラートを設定';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return '価格アラート · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => '上回ったら';
+
+  @override
+  String get alertKindBelow => '下回ったら';
+
+  @override
+  String get alertKindMove => '1日で大きく動いたら';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return '価格（$currency）';
+  }
+
+  @override
+  String get alertMovePercent => '1日の変動（%）';
+
+  @override
+  String get alertAlreadyMet => '株価はすでにこの水準を超えています。';
+
+  @override
+  String get alertSave => 'アラートを設定';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbolのアラートを設定しました。';
+  }
+
+  @override
+  String get alertsEmpty => 'アラートはまだありません。銘柄を開いてベルをタップしてください。';
+
+  @override
+  String get alertsNote =>
+      'StockLensの実行中は5分ごとにアラートを確認します。パソコンではメニューバーまたはタスクトレイで動作を続けます。スマートフォンでは現在、アプリを開いているときのみ通知します。';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price以上';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price以下';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return '1日の変動 ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$dateに$priceで発動';
+  }
+
+  @override
+  String get alertRearm => '再設定';
+
+  @override
+  String get alertDelete => '削除';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbolが$priceを上回りました';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbolが$priceを下回りました';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbolは本日$percent動きました';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return '現在値：$price';
+  }
+
+  @override
+  String get alertOpen => '開く';
+
+  @override
+  String get keepInTrayTitle => 'ウィンドウを閉じても実行を続ける';
+
+  @override
+  String get keepInTraySubtitle => 'StockLensはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
 }

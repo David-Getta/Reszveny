@@ -1125,4 +1125,106 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Позициите без цена или валутен курс не са включени в сборовете.';
+
+  @override
+  String get priceAlerts => 'Ценови известия';
+
+  @override
+  String get setPriceAlert => 'Задай ценово известие';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Ценово известие · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Покачи се над';
+
+  @override
+  String get alertKindBelow => 'Падне под';
+
+  @override
+  String get alertKindMove => 'Се движи силно за ден';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Цена ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Дневно движение (%)';
+
+  @override
+  String get alertAlreadyMet => 'Цената вече е преминала това ниво.';
+
+  @override
+  String get alertSave => 'Задай известие';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Известието за $symbol е зададено.';
+  }
+
+  @override
+  String get alertsEmpty => 'Още няма известия. Отворете акция и докоснете звънчето.';
+
+  @override
+  String get alertsNote =>
+      'Известията се проверяват на всеки 5 минути, докато StockLens работи. На компютър приложението продължава в лентата с менюта или в системната област; на телефон засега известява само докато приложението е отворено.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Над $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Под $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Дневно движение ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Задействано на $date при $price';
+  }
+
+  @override
+  String get alertRearm => 'Активирай отново';
+
+  @override
+  String get alertDelete => 'Изтрий';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol се покачи над $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol падна под $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol се движи с $percent днес';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Текуща цена: $price';
+  }
+
+  @override
+  String get alertOpen => 'Отвори';
+
+  @override
+  String get keepInTrayTitle => 'Работи и след затваряне на прозореца';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens остава в лентата с менюта или в системната област, така клавишната комбинация и ценовите известия продължават да работят.';
 }

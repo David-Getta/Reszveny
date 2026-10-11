@@ -1126,4 +1126,106 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Les posicions sense preu o sense tipus de canvi queden fora dels totals.';
+
+  @override
+  String get priceAlerts => 'Alertes de preu';
+
+  @override
+  String get setPriceAlert => 'Crea una alerta de preu';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alerta de preu · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Puja per sobre de';
+
+  @override
+  String get alertKindBelow => 'Baixa per sota de';
+
+  @override
+  String get alertKindMove => 'Es mou molt en un dia';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Preu ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Moviment diari (%)';
+
+  @override
+  String get alertAlreadyMet => 'El preu ja ha superat aquest nivell.';
+
+  @override
+  String get alertSave => 'Crea l’alerta';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alerta creada per a $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Encara no hi ha alertes. Obre una acció i toca la campana.';
+
+  @override
+  String get alertsNote =>
+      'Les alertes es comproven cada 5 minuts mentre StockLens està en marxa. A l’ordinador continua a la barra de menús o a la safata; al mòbil, de moment avisa quan l’app està oberta.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Per sobre de $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Per sota de $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Moviment diari ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Activada el $date a $price';
+  }
+
+  @override
+  String get alertRearm => 'Reactiva';
+
+  @override
+  String get alertDelete => 'Elimina';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol ha pujat per sobre de $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol ha baixat per sota de $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol s’ha mogut un $percent avui';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Preu actual: $price';
+  }
+
+  @override
+  String get alertOpen => 'Obre';
+
+  @override
+  String get keepInTrayTitle => 'Continua en tancar la finestra';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens es queda a la barra de menús o a la safata, així la drecera i les alertes de preu continuen funcionant.';
 }

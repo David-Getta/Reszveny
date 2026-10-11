@@ -8,8 +8,12 @@ import 'core/app_preferences.dart';
 import 'core/backend/backend_client.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
+import 'core/desktop/system_notifier.dart';
+import 'core/util/formatters.dart';
 import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
+import 'features/alerts/alert_monitor.dart';
+import 'features/alerts/price_alert.dart';
 import 'features/analysis/analysis_options.dart';
 import 'features/analysis/claude_stock_analyst.dart';
 import 'features/analysis/report_store.dart';
@@ -29,6 +33,8 @@ import 'features/portfolio/portfolio_store.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
 import 'features/updates/update_service.dart';
+import 'l10n/generated/app_localizations.dart';
+import 'l10n/supported_locales.dart';
 
 /// Az app szolgáltatásainak egy helyen összerakott példányai. Egyszerű
 /// függőség-befecskendezés: a widgetek `AppServices.of(context)`-tel érik el.
@@ -50,9 +56,18 @@ class AppServices {
     FxService? fx,
     UpdateService? updates,
     PortfolioStore? portfolio,
+    AlertStore? alerts,
+    AlertNotifier? alertNotifier,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
-       portfolio = portfolio ?? PortfolioStore() {
+       portfolio = portfolio ?? PortfolioStore(),
+       alerts = alerts ?? AlertStore() {
+    alertMonitor = AlertMonitor(
+      store: this.alerts,
+      marketData: marketData,
+      notifier: alertNotifier ?? SystemNotifier(onClick: _openAlert),
+      describe: describeAlertHit,
+    );
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
@@ -111,6 +126,7 @@ class AppServices {
     DesktopIntegration? desktop,
     String? accountEmail,
     PortfolioStore? portfolio,
+    AlertStore? alerts,
   }) {
     // A Mac-es app a weboldalról terjesztett (nem Mac App Store-os), ezért ott
     // is a böngészős fizetés fut, mint a Claude asztali appjában.
@@ -141,6 +157,7 @@ class AppServices {
       accountEmail: accountEmail,
       platformStore: storeBilling,
       portfolio: portfolio,
+      alerts: alerts,
     );
     return services;
   }
@@ -167,6 +184,40 @@ class AppServices {
 
   /// A saját részvények (csak a készüléken tárolva).
   final PortfolioStore portfolio;
+
+  /// Árfolyam-riasztások és a figyelőjük.
+  final AlertStore alerts;
+  late final AlertMonitor alertMonitor;
+
+  /// Értesítésre koppintás: a riasztás részvénye nyíljon meg.
+  void _openAlert(String id) {
+    final alert = alerts.alerts.where((a) => a.id == id).firstOrNull;
+    if (alert != null) alertMonitor.requestOpen(alert.symbol);
+  }
+
+  /// A riasztás értesítésének szövege a felhasználó nyelvén.
+  ({String title, String body}) describeAlertHit(AlertHit hit) {
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    final appLocale = locale.effective(device);
+    AppLocalizations l10n;
+    try {
+      l10n = lookupAppLocalizations(appLocale);
+    } catch (_) {
+      l10n = lookupAppLocalizations(SupportedLocales.fallback);
+    }
+    final fmt = Fmt(appLocale.toString(), na: l10n.notAvailable);
+    final a = hit.alert;
+    final q = hit.quote;
+    final change = fmt.percent(q.changePercent, decimals: 1, withSign: true);
+    return (
+      title: switch (a.kind) {
+        AlertKind.above => l10n.alertHitAbove(a.symbol, fmt.price(a.value, a.currency)),
+        AlertKind.below => l10n.alertHitBelow(a.symbol, fmt.price(a.value, a.currency)),
+        AlertKind.move => l10n.alertHitMove(a.symbol, change),
+      },
+      body: '${l10n.alertHitBody(fmt.price(q.price, a.currency))} ($change)',
+    );
+  }
 
   /// Az elemzés beállításai: a felhasználó választása, a csomag szerinti
   /// webkeresés-szám, az olvasó régiója és – ha van – a pozíciója a [symbol]-ban.

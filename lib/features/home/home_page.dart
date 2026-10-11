@@ -15,6 +15,7 @@ import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
+import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
@@ -177,6 +178,13 @@ class _HomePageState extends State<HomePage> {
                   tooltip: l10n.portfolio,
                   onPressed: () => Navigator.of(context)
                       .push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: widget.onOpenSymbol))),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.notifications_none_rounded),
+                  tooltip: l10n.priceAlerts,
+                  onPressed: () =>
+                      Navigator.of(context)
+                          .push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: widget.onOpenSymbol))),
                 ),
                 IconButton(
                   icon: const Icon(Icons.tune_rounded),

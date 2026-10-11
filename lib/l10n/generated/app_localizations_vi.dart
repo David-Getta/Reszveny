@@ -1114,4 +1114,106 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Các vị thế không có giá hoặc tỷ giá sẽ không được tính vào tổng.';
+
+  @override
+  String get priceAlerts => 'Cảnh báo giá';
+
+  @override
+  String get setPriceAlert => 'Đặt cảnh báo giá';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Cảnh báo giá · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Tăng vượt';
+
+  @override
+  String get alertKindBelow => 'Giảm dưới';
+
+  @override
+  String get alertKindMove => 'Biến động mạnh trong ngày';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Giá ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Biến động trong ngày (%)';
+
+  @override
+  String get alertAlreadyMet => 'Giá đã vượt qua mức này.';
+
+  @override
+  String get alertSave => 'Đặt cảnh báo';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Đã đặt cảnh báo cho $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Chưa có cảnh báo nào. Mở một cổ phiếu và nhấn vào biểu tượng chuông.';
+
+  @override
+  String get alertsNote =>
+      'Cảnh báo được kiểm tra mỗi 5 phút khi StockLens đang chạy. Trên máy tính, ứng dụng tiếp tục chạy ở thanh menu hoặc khay hệ thống; trên điện thoại, hiện chỉ báo khi ứng dụng đang mở.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Trên $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Dưới $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Biến động ngày ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Đã kích hoạt ngày $date ở giá $price';
+  }
+
+  @override
+  String get alertRearm => 'Bật lại';
+
+  @override
+  String get alertDelete => 'Xóa';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol đã tăng vượt $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol đã giảm dưới $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol hôm nay biến động $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Giá hiện tại: $price';
+  }
+
+  @override
+  String get alertOpen => 'Mở';
+
+  @override
+  String get keepInTrayTitle => 'Tiếp tục chạy khi đóng cửa sổ';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens ở lại thanh menu hoặc khay hệ thống để phím tắt và cảnh báo giá vẫn hoạt động.';
 }

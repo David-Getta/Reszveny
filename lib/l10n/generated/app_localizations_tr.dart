@@ -1122,4 +1122,106 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Fiyatı veya döviz kuru olmayan pozisyonlar toplamlara dahil edilmez.';
+
+  @override
+  String get priceAlerts => 'Fiyat alarmları';
+
+  @override
+  String get setPriceAlert => 'Fiyat alarmı kur';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Fiyat alarmı · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Şunun üstüne çıkarsa';
+
+  @override
+  String get alertKindBelow => 'Şunun altına düşerse';
+
+  @override
+  String get alertKindMove => 'Bir günde çok hareket ederse';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Fiyat ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Günlük hareket (%)';
+
+  @override
+  String get alertAlreadyMet => 'Fiyat bu seviyeyi zaten geçti.';
+
+  @override
+  String get alertSave => 'Alarm kur';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol için alarm kuruldu.';
+  }
+
+  @override
+  String get alertsEmpty => 'Henüz alarm yok. Bir hisse açın ve zile dokunun.';
+
+  @override
+  String get alertsNote =>
+      'Alarmlar, StockLens çalıştığı sürece 5 dakikada bir kontrol edilir. Bilgisayarda uygulama menü çubuğunda veya sistem tepsisinde çalışmaya devam eder; telefonda şimdilik yalnızca uygulama açıkken bildirir.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price üstünde';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price altında';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Günlük hareket ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date tarihinde $price fiyatında tetiklendi';
+  }
+
+  @override
+  String get alertRearm => 'Yeniden kur';
+
+  @override
+  String get alertDelete => 'Sil';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price üstüne çıktı';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price altına düştü';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol bugün $percent hareket etti';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Güncel fiyat: $price';
+  }
+
+  @override
+  String get alertOpen => 'Aç';
+
+  @override
+  String get keepInTrayTitle => 'Pencere kapanınca da çalışsın';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens menü çubuğunda veya sistem tepsisinde kalır; böylece kısayol ve fiyat alarmları çalışmaya devam eder.';
 }

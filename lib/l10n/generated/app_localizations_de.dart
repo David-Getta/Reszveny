@@ -1127,4 +1127,106 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Positionen ohne Kurs oder Wechselkurs sind in den Summen nicht enthalten.';
+
+  @override
+  String get priceAlerts => 'Kursalarme';
+
+  @override
+  String get setPriceAlert => 'Kursalarm einrichten';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Kursalarm · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Steigt über';
+
+  @override
+  String get alertKindBelow => 'Fällt unter';
+
+  @override
+  String get alertKindMove => 'Bewegt sich stark an einem Tag';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Kurs ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Tagesbewegung (%)';
+
+  @override
+  String get alertAlreadyMet => 'Der Kurs liegt bereits jenseits dieser Marke.';
+
+  @override
+  String get alertSave => 'Alarm einrichten';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alarm für $symbol eingerichtet.';
+  }
+
+  @override
+  String get alertsEmpty => 'Noch keine Kursalarme. Öffne eine Aktie und tippe auf die Glocke.';
+
+  @override
+  String get alertsNote =>
+      'Alarme werden alle 5 Minuten geprüft, solange StockLens läuft. Am Computer läuft die App in der Menüleiste oder im Infobereich weiter; auf dem Handy melden sich Alarme vorerst nur bei geöffneter App.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Über $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Unter $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Tagesbewegung ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Ausgelöst am $date bei $price';
+  }
+
+  @override
+  String get alertRearm => 'Erneut aktivieren';
+
+  @override
+  String get alertDelete => 'Löschen';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol ist über $price gestiegen';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol ist unter $price gefallen';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol hat sich heute um $percent bewegt';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Aktueller Kurs: $price';
+  }
+
+  @override
+  String get alertOpen => 'Öffnen';
+
+  @override
+  String get keepInTrayTitle => 'Nach dem Schließen des Fensters weiterlaufen';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens bleibt in der Menüleiste bzw. im Infobereich, damit Tastenkürzel und Kursalarme weiter funktionieren.';
 }

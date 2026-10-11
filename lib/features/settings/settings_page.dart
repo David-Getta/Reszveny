@@ -129,6 +129,20 @@ class SettingsPage extends StatelessWidget {
                           ],
                           const Divider(height: 1),
                           _LaunchAtLoginTile(),
+                          const Divider(height: 1),
+                          ListenableBuilder(
+                            listenable: services.preferences,
+                            builder: (context, _) => SwitchListTile(
+                              secondary: const Icon(Icons.notifications_none_rounded),
+                              title: Text(l10n.keepInTrayTitle),
+                              subtitle: Text(l10n.keepInTraySubtitle),
+                              value: services.preferences.keepInTray,
+                              onChanged: (v) {
+                                services.preferences.setKeepInTray(v);
+                                services.desktop.setKeepInTray(v);
+                              },
+                            ),
+                          ),
                         ],
                       ),
                     ),

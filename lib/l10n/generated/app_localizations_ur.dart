@@ -1124,4 +1124,106 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'جن پوزیشنز کی قیمت یا شرح تبادلہ دستیاب نہیں وہ مجموعوں میں شامل نہیں۔';
+
+  @override
+  String get priceAlerts => 'قیمت کے الرٹس';
+
+  @override
+  String get setPriceAlert => 'قیمت کا الرٹ لگائیں';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'قیمت کا الرٹ · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'اس سے اوپر جائے';
+
+  @override
+  String get alertKindBelow => 'اس سے نیچے آئے';
+
+  @override
+  String get alertKindMove => 'ایک دن میں بہت ہلے';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'قیمت ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'روزانہ تبدیلی (%)';
+
+  @override
+  String get alertAlreadyMet => 'قیمت پہلے ہی اس سطح سے آگے ہے۔';
+
+  @override
+  String get alertSave => 'الرٹ لگائیں';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol کے لیے الرٹ لگ گیا۔';
+  }
+
+  @override
+  String get alertsEmpty => 'ابھی کوئی الرٹ نہیں۔ کوئی شیئر کھولیں اور گھنٹی پر ٹیپ کریں۔';
+
+  @override
+  String get alertsNote =>
+      'جب تک StockLens چل رہا ہے، الرٹس ہر 5 منٹ بعد چیک ہوتے ہیں۔ کمپیوٹر پر ایپ مینو بار یا سسٹم ٹرے میں چلتی رہتی ہے؛ فون پر فی الحال الرٹس صرف ایپ کھلی ہونے پر آتے ہیں۔';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price سے اوپر';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price سے نیچے';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'روزانہ تبدیلی ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date کو $price پر فعال ہوا';
+  }
+
+  @override
+  String get alertRearm => 'دوبارہ فعال کریں';
+
+  @override
+  String get alertDelete => 'حذف کریں';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price سے اوپر گیا';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price سے نیچے آیا';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol آج $percent ہلا';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'موجودہ قیمت: $price';
+  }
+
+  @override
+  String get alertOpen => 'کھولیں';
+
+  @override
+  String get keepInTrayTitle => 'ونڈو بند ہونے کے بعد بھی چلتی رہے';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens مینو بار یا سسٹم ٹرے میں رہتی ہے تاکہ شارٹ کٹ اور قیمت کے الرٹس کام کرتے رہیں۔';
 }

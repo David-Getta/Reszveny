@@ -1124,4 +1124,106 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Az ár vagy árfolyam nélküli pozíciók kimaradnak az összesítésből.';
+
+  @override
+  String get priceAlerts => 'Árfolyam-riasztások';
+
+  @override
+  String get setPriceAlert => 'Árfolyam-riasztás beállítása';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Árfolyam-riasztás · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Emelkedik e fölé';
+
+  @override
+  String get alertKindBelow => 'Esik e alá';
+
+  @override
+  String get alertKindMove => 'Nagyot mozdul egy nap alatt';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Ár ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Napi elmozdulás (%)';
+
+  @override
+  String get alertAlreadyMet => 'Az ár már túl van ezen a szinten.';
+
+  @override
+  String get alertSave => 'Riasztás beállítása';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Riasztás beállítva: $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Még nincs riasztás. Nyiss meg egy részvényt, és koppints a csengőre.';
+
+  @override
+  String get alertsNote =>
+      'A StockLens 5 percenként ellenőrzi a riasztásokat, amíg fut. Számítógépen a menüsorban vagy a tálcán fut tovább; telefonon egyelőre akkor jelez, amikor az app nyitva van.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price fölött';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price alatt';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Napi ±$percent elmozdulás';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Teljesült: $date, $price áron';
+  }
+
+  @override
+  String get alertRearm => 'Újraélesítés';
+
+  @override
+  String get alertDelete => 'Törlés';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price fölé emelkedett';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price alá esett';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol ma $percent mozdult';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Jelenlegi ár: $price';
+  }
+
+  @override
+  String get alertOpen => 'Megnyitás';
+
+  @override
+  String get keepInTrayTitle => 'Fusson tovább az ablak bezárása után is';
+
+  @override
+  String get keepInTraySubtitle =>
+      'A StockLens a menüsorban vagy a tálcán marad, így a gyorsbillentyű és az árfolyam-riasztás is működik.';
 }

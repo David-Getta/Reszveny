@@ -1126,4 +1126,106 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'ధర లేదా మారకపు రేటు లేని పొజిషన్లు మొత్తాల్లో చేర్చబడవు.';
+
+  @override
+  String get priceAlerts => 'ధర హెచ్చరికలు';
+
+  @override
+  String get setPriceAlert => 'ధర హెచ్చరిక సెట్ చేయండి';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'ధర హెచ్చరిక · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'దీని పైకి వెళ్తే';
+
+  @override
+  String get alertKindBelow => 'దీని కిందకు పడితే';
+
+  @override
+  String get alertKindMove => 'ఒక్క రోజులో బాగా కదిలితే';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'ధర ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'రోజువారీ మార్పు (%)';
+
+  @override
+  String get alertAlreadyMet => 'ధర ఇప్పటికే ఈ స్థాయిని దాటింది.';
+
+  @override
+  String get alertSave => 'హెచ్చరిక సెట్ చేయండి';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbolకు హెచ్చరిక సెట్ అయింది.';
+  }
+
+  @override
+  String get alertsEmpty => 'ఇంకా హెచ్చరికలు లేవు. ఒక స్టాక్‌ను తెరిచి గంటను నొక్కండి.';
+
+  @override
+  String get alertsNote =>
+      'StockLens నడుస్తున్నంత వరకు ప్రతి 5 నిమిషాలకు హెచ్చరికలు తనిఖీ అవుతాయి. కంప్యూటర్‌లో యాప్ మెనూ బార్ లేదా సిస్టమ్ ట్రేలో నడుస్తూనే ఉంటుంది; ఫోన్‌లో ప్రస్తుతానికి యాప్ తెరిచి ఉన్నప్పుడే హెచ్చరిస్తుంది.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price పైన';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price కింద';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'రోజువారీ మార్పు ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$dateన $price వద్ద సక్రియమైంది';
+  }
+
+  @override
+  String get alertRearm => 'మళ్లీ ఆన్ చేయండి';
+
+  @override
+  String get alertDelete => 'తొలగించండి';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price పైకి వెళ్లింది';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price కిందకు పడింది';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol ఈ రోజు $percent కదిలింది';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'ప్రస్తుత ధర: $price';
+  }
+
+  @override
+  String get alertOpen => 'తెరవండి';
+
+  @override
+  String get keepInTrayTitle => 'విండో మూసినా నడుస్తూనే ఉండాలి';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens మెనూ బార్ లేదా సిస్టమ్ ట్రేలో ఉంటుంది, కాబట్టి షార్ట్‌కట్ మరియు ధర హెచ్చరికలు పనిచేస్తూనే ఉంటాయి.';
 }

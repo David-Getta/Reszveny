@@ -1157,4 +1157,106 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Pozițiile fără preț sau curs de schimb nu sunt incluse în totaluri.';
+
+  @override
+  String get priceAlerts => 'Alerte de preț';
+
+  @override
+  String get setPriceAlert => 'Setează o alertă de preț';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alertă de preț · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Urcă peste';
+
+  @override
+  String get alertKindBelow => 'Scade sub';
+
+  @override
+  String get alertKindMove => 'Se mișcă mult într-o zi';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Preț ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Variație zilnică (%)';
+
+  @override
+  String get alertAlreadyMet => 'Prețul a depășit deja acest nivel.';
+
+  @override
+  String get alertSave => 'Setează alerta';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alertă setată pentru $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Nicio alertă încă. Deschide o acțiune și atinge clopoțelul.';
+
+  @override
+  String get alertsNote =>
+      'Alertele sunt verificate la fiecare 5 minute cât timp StockLens rulează. Pe calculator aplicația continuă în bara de meniu sau în bara de sistem; pe telefon, deocamdată alertele vin doar când aplicația e deschisă.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Peste $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Sub $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Variație zilnică ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Declanșată pe $date la $price';
+  }
+
+  @override
+  String get alertRearm => 'Reactivează';
+
+  @override
+  String get alertDelete => 'Șterge';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol a urcat peste $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol a scăzut sub $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol s-a mișcat azi cu $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Preț curent: $price';
+  }
+
+  @override
+  String get alertOpen => 'Deschide';
+
+  @override
+  String get keepInTrayTitle => 'Continuă după închiderea ferestrei';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens rămâne în bara de meniu sau în bara de sistem, astfel încât scurtătura și alertele de preț funcționează în continuare.';
 }

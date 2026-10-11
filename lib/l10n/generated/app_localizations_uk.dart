@@ -1174,4 +1174,106 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Позиції без ціни або курсу валют не враховуються в підсумках.';
+
+  @override
+  String get priceAlerts => 'Цінові сповіщення';
+
+  @override
+  String get setPriceAlert => 'Створити цінове сповіщення';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Цінове сповіщення · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Підніметься вище';
+
+  @override
+  String get alertKindBelow => 'Опуститься нижче';
+
+  @override
+  String get alertKindMove => 'Сильно зміниться за день';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Ціна ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Зміна за день (%)';
+
+  @override
+  String get alertAlreadyMet => 'Ціна вже пройшла цей рівень.';
+
+  @override
+  String get alertSave => 'Створити сповіщення';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Сповіщення для $symbol створено.';
+  }
+
+  @override
+  String get alertsEmpty => 'Сповіщень поки немає. Відкрийте акцію й натисніть на дзвіночок.';
+
+  @override
+  String get alertsNote =>
+      'Сповіщення перевіряються кожні 5 хвилин, поки StockLens працює. На комп’ютері застосунок працює далі в рядку меню або в треї; на телефоні сповіщення поки надходять, лише коли застосунок відкритий.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Вище $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Нижче $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Зміна за день ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Спрацювало $date за ціною $price';
+  }
+
+  @override
+  String get alertRearm => 'Увімкнути знову';
+
+  @override
+  String get alertDelete => 'Видалити';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol піднялася вище $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol опустилася нижче $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol сьогодні змінилася на $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Поточна ціна: $price';
+  }
+
+  @override
+  String get alertOpen => 'Відкрити';
+
+  @override
+  String get keepInTrayTitle => 'Працювати після закриття вікна';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens залишається в рядку меню або в треї, тож комбінація клавіш і цінові сповіщення працюють далі.';
 }

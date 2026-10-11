@@ -1125,4 +1125,106 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Posities zonder koers of wisselkoers tellen niet mee in de totalen.';
+
+  @override
+  String get priceAlerts => 'Koersalerts';
+
+  @override
+  String get setPriceAlert => 'Koersalert instellen';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Koersalert · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Stijgt boven';
+
+  @override
+  String get alertKindBelow => 'Daalt onder';
+
+  @override
+  String get alertKindMove => 'Beweegt sterk op één dag';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Koers ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Dagbeweging (%)';
+
+  @override
+  String get alertAlreadyMet => 'De koers is dit niveau al voorbij.';
+
+  @override
+  String get alertSave => 'Alert instellen';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alert ingesteld voor $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Nog geen koersalerts. Open een aandeel en tik op de bel.';
+
+  @override
+  String get alertsNote =>
+      'Alerts worden elke 5 minuten gecontroleerd zolang StockLens draait. Op een computer blijft de app actief in de menubalk of het systeemvak; op een telefoon komen alerts voorlopig alleen als de app open is.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Boven $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Onder $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Dagbeweging ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Afgegaan op $date bij $price';
+  }
+
+  @override
+  String get alertRearm => 'Opnieuw activeren';
+
+  @override
+  String get alertDelete => 'Verwijderen';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol is boven $price gestegen';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol is onder $price gedaald';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol bewoog vandaag $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Huidige koers: $price';
+  }
+
+  @override
+  String get alertOpen => 'Openen';
+
+  @override
+  String get keepInTrayTitle => 'Blijven draaien als het venster sluit';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens blijft in de menubalk of het systeemvak, zodat de sneltoets en koersalerts blijven werken.';
 }

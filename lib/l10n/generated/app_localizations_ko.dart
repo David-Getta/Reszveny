@@ -1086,4 +1086,105 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioExcluded => '가격이나 환율이 없는 종목은 합계에서 제외됩니다.';
+
+  @override
+  String get priceAlerts => '가격 알림';
+
+  @override
+  String get setPriceAlert => '가격 알림 설정';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return '가격 알림 · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => '이 가격 이상으로 오르면';
+
+  @override
+  String get alertKindBelow => '이 가격 이하로 내리면';
+
+  @override
+  String get alertKindMove => '하루에 크게 움직이면';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return '가격($currency)';
+  }
+
+  @override
+  String get alertMovePercent => '일일 변동(%)';
+
+  @override
+  String get alertAlreadyMet => '가격이 이미 이 수준을 넘었습니다.';
+
+  @override
+  String get alertSave => '알림 설정';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol 알림을 설정했습니다.';
+  }
+
+  @override
+  String get alertsEmpty => '아직 알림이 없습니다. 종목을 열고 종 아이콘을 탭하세요.';
+
+  @override
+  String get alertsNote =>
+      'StockLens가 실행 중인 동안 5분마다 알림을 확인합니다. 컴퓨터에서는 메뉴 막대나 시스템 트레이에서 계속 실행되며, 휴대폰에서는 현재 앱이 열려 있을 때만 알립니다.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price 이상';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price 이하';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return '일일 변동 ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date에 $price에서 발동';
+  }
+
+  @override
+  String get alertRearm => '다시 켜기';
+
+  @override
+  String get alertDelete => '삭제';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol이(가) $price 위로 올랐습니다';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol이(가) $price 아래로 내렸습니다';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol이(가) 오늘 $percent 움직였습니다';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return '현재가: $price';
+  }
+
+  @override
+  String get alertOpen => '열기';
+
+  @override
+  String get keepInTrayTitle => '창을 닫아도 계속 실행';
+
+  @override
+  String get keepInTraySubtitle => 'StockLens가 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.';
 }

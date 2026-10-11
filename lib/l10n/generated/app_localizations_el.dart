@@ -1129,4 +1129,106 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
+
+  @override
+  String get priceAlerts => 'Ειδοποιήσεις τιμής';
+
+  @override
+  String get setPriceAlert => 'Ορισμός ειδοποίησης τιμής';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Ειδοποίηση τιμής · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Ανέβει πάνω από';
+
+  @override
+  String get alertKindBelow => 'Πέσει κάτω από';
+
+  @override
+  String get alertKindMove => 'Κινηθεί έντονα μέσα στη μέρα';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Τιμή ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Ημερήσια μεταβολή (%)';
+
+  @override
+  String get alertAlreadyMet => 'Η τιμή έχει ήδη περάσει αυτό το επίπεδο.';
+
+  @override
+  String get alertSave => 'Ορισμός ειδοποίησης';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Η ειδοποίηση για $symbol ορίστηκε.';
+  }
+
+  @override
+  String get alertsEmpty => 'Δεν υπάρχουν ακόμη ειδοποιήσεις. Ανοίξτε μια μετοχή και πατήστε το καμπανάκι.';
+
+  @override
+  String get alertsNote =>
+      'Οι ειδοποιήσεις ελέγχονται κάθε 5 λεπτά όσο το StockLens εκτελείται. Στον υπολογιστή συνεχίζει στη γραμμή μενού ή στην περιοχή ειδοποιήσεων· στο κινητό, προς το παρόν ειδοποιεί μόνο όταν η εφαρμογή είναι ανοιχτή.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Πάνω από $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Κάτω από $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Ημερήσια μεταβολή ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Ενεργοποιήθηκε $date στα $price';
+  }
+
+  @override
+  String get alertRearm => 'Επανενεργοποίηση';
+
+  @override
+  String get alertDelete => 'Διαγραφή';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return 'Η $symbol ανέβηκε πάνω από $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return 'Η $symbol έπεσε κάτω από $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return 'Η $symbol κινήθηκε $percent σήμερα';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Τρέχουσα τιμή: $price';
+  }
+
+  @override
+  String get alertOpen => 'Άνοιγμα';
+
+  @override
+  String get keepInTrayTitle => 'Συνέχεια μετά το κλείσιμο του παραθύρου';
+
+  @override
+  String get keepInTraySubtitle =>
+      'Το StockLens μένει στη γραμμή μενού ή στην περιοχή ειδοποιήσεων, ώστε η συντόμευση και οι ειδοποιήσεις τιμής να λειτουργούν.';
 }

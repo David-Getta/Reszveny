@@ -157,10 +157,26 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 3g | AI-elemzés v2.2: Opus 5.5-höz igazított prompt, ágazati mutatók és értékpapír-típusok, volatilitáshoz méretezett ársávok, számolt értékelés, helyi webkeresés, injekció elleni védelem, JSON-javító lépés | ✅ kész |
 | 3h | AI-elemzés v2.3: a legvalószínűbb forgatókönyv kiemelve, indoklással; hosszú távú kilátás 3, 5 és 10 évre (ársáv, legvalószínűbb ár, számítás, bizonyosság, legyező-diagram) | ✅ kész |
 | 4b1 | Portfólió: vételek (darab, ár, dátum), összérték a megjelenítési pénznemben, napi változás, nyereség/veszteség, megoszlás, „A pozícióm” a részvény oldalán; az AI-elemzés a saját átlagárhoz is viszonyít | ✅ kész (csak a készüléken; fiókos szinkron később) |
-| 4b2 | Árfolyam-riasztás (asztali gépen a tálcában futó app, telefonon szerveres értesítés) | ⬜ |
+| 4b2 | Árfolyam-riasztás: fölé / alá / napi mozgás, 5 percenkénti ellenőrzés, asztali rendszerértesítés (macOS: UNUserNotificationCenter, Windows/Linux: local_notifier), az appon belüli jelzés „Megnyitás” gombbal; asztali gépen az app bezárt ablaknál a menüsorban / tálcán fut tovább (kapcsolható) | ✅ kész (telefonos háttér-értesítés: 5j) |
 | 4b3 | OCR fallback offline (ML Kit, mobil) | ⬜ |
 | 4c | Fiók és fizetés, mint a Claude-nál: belépés e-mail kóddal, fiókhoz kötött előfizetés; asztali gépen és weben Stripe Checkout + ügyfélportál, telefonon App Store / Play; lefordított iparág- és országnevek | ✅ kész (Apple / Google belépés később) |
-| 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ |
+| 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ (lásd 5. szakasz) |
+| 5a | Fiók törlése az appból és a szerveren (App Store-követelmény); ÁSZF és adatkezelési tájékoztató az appban, elfogadás vásárlás előtt | ⬜ |
+| 5b | Valódi bolti vásárlás-ellenőrzés (App Store Server API, Google Play Developer API) – most fejlesztői módban minden vásárlást elfogad | ⬜ |
+| 5c | Próbaidő-visszaélés elleni védelem (e-mailes belépés vagy eszköz-ellenőrzés – döntés kell) | ⬜ |
+| 5d | Szerver élesítése: telepítési konfiguráció, HTTPS, mentés, figyelés, naplók automatikus törlése | ⬜ |
+| 5e | Hibakövetés és adatvédelem-barát analitika hozzájárulással (telepítés → próba → elemzés → előfizetés tölcsér) | ⬜ |
+| 5f | Elemzés megosztása: kép-kártya (fejléc, hangulat, forgatókönyvek, link) és nyilvános link előnézettel – a virális hurok alapja | ⬜ |
+| 5g | Ajánlói program: meghívó kód, mindkét fél +5 elemzést kap | ⬜ |
+| 5h | Weboldal: letöltés, árak, minta-elemzések, népszerű részvények oldalai (SEO) | ⬜ |
+| 5i | Első indítás: rövid bemutató, ingyenes minta-elemzés, értékelés-kérés jó élmény után | ⬜ |
+| 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
+| 5k | Bolti adatlapok 44 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
+
+**Nem kód, a tulajdonos intézi:** vállalkozási forma és adószám, könyvelő; Apple Developer (99 USD/év),
+Google Play Console (25 USD), Stripe, Anthropic Console (költéskorláttal), Resend, domain; piaci adat
+kereskedelmi licence; jogász az ÁSZF-hez és a tájékoztatóhoz; EU-s tárhely a szervernek; macOS-aláírás
+(Developer ID, notarizáció) és Windows kódaláírás, különben a letöltéskor biztonsági figyelmeztetés jelenik meg.
 
 ## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)
 

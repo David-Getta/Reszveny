@@ -1126,4 +1126,106 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Pozicionet pa çmim ose kurs këmbimi nuk përfshihen në totale.';
+
+  @override
+  String get priceAlerts => 'Alarmet e çmimit';
+
+  @override
+  String get setPriceAlert => 'Vendos alarm çmimi';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alarm çmimi · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Ngjitet mbi';
+
+  @override
+  String get alertKindBelow => 'Bie nën';
+
+  @override
+  String get alertKindMove => 'Lëviz shumë brenda ditës';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Çmimi ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Lëvizja ditore (%)';
+
+  @override
+  String get alertAlreadyMet => 'Çmimi e ka kaluar tashmë këtë nivel.';
+
+  @override
+  String get alertSave => 'Vendos alarmin';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alarmi për $symbol u vendos.';
+  }
+
+  @override
+  String get alertsEmpty => 'Ende nuk ka alarme. Hapni një aksion dhe prekni zilen.';
+
+  @override
+  String get alertsNote =>
+      'Alarmet kontrollohen çdo 5 minuta sa kohë që StockLens është në punë. Në kompjuter aplikacioni vazhdon në shiritin e menysë ose në tabaka; në telefon, për momentin njofton vetëm kur aplikacioni është i hapur.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Mbi $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Nën $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Lëvizja ditore ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'U aktivizua më $date me $price';
+  }
+
+  @override
+  String get alertRearm => 'Riaktivizo';
+
+  @override
+  String get alertDelete => 'Fshi';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol u ngjit mbi $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol ra nën $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol lëvizi sot $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Çmimi aktual: $price';
+  }
+
+  @override
+  String get alertOpen => 'Hap';
+
+  @override
+  String get keepInTrayTitle => 'Vazhdo pasi mbyllet dritarja';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens mbetet në shiritin e menysë ose në tabaka, kështu shkurtorja dhe alarmet e çmimit vazhdojnë të punojnë.';
 }

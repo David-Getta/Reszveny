@@ -1128,4 +1128,106 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Posisi tanpa rega utawa kurs ora diétung ing total.';
+
+  @override
+  String get priceAlerts => 'Pèngetan rega';
+
+  @override
+  String get setPriceAlert => 'Atur pèngetan rega';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Pèngetan rega · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Munggah ngluwihi';
+
+  @override
+  String get alertKindBelow => 'Mudhun ngisoré';
+
+  @override
+  String get alertKindMove => 'Obah banget sajroning sedina';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Rega ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Owah-owahan saben dina (%)';
+
+  @override
+  String get alertAlreadyMet => 'Rega wis ngliwati level iki.';
+
+  @override
+  String get alertSave => 'Atur pèngetan';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Pèngetan kanggo $symbol wis diatur.';
+  }
+
+  @override
+  String get alertsEmpty => 'Durung ana pèngetan. Bukak saham lan tutul lonceng.';
+
+  @override
+  String get alertsNote =>
+      'Pèngetan dipriksa saben 5 menit sajrone StockLens mlaku. Ing komputer, aplikasi tetep mlaku ing bilah menu utawa baki sistem; ing HP, saiki pèngetan mung teka nalika aplikasi dibukak.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Ing ndhuwur $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Ing ngisor $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Owah-owahan saben dina ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Aktif $date ing rega $price';
+  }
+
+  @override
+  String get alertRearm => 'Aktifaké manèh';
+
+  @override
+  String get alertDelete => 'Busak';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol munggah ngluwihi $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol mudhun ngisoré $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol obah $percent dina iki';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Rega saiki: $price';
+  }
+
+  @override
+  String get alertOpen => 'Bukak';
+
+  @override
+  String get keepInTrayTitle => 'Tetep mlaku nalika jendhéla ditutup';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens tetep ana ing bilah menu utawa baki sistem, mula trabasan lan pèngetan rega tetep mlaku.';
 }

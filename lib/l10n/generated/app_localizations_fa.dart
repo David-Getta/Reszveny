@@ -1122,4 +1122,106 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'موقعیت‌های بدون قیمت یا نرخ ارز در جمع‌ها لحاظ نمی‌شوند.';
+
+  @override
+  String get priceAlerts => 'هشدارهای قیمت';
+
+  @override
+  String get setPriceAlert => 'تنظیم هشدار قیمت';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'هشدار قیمت · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'بالاتر از';
+
+  @override
+  String get alertKindBelow => 'پایین‌تر از';
+
+  @override
+  String get alertKindMove => 'نوسان زیاد در یک روز';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'قیمت ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'تغییر روزانه (%)';
+
+  @override
+  String get alertAlreadyMet => 'قیمت از این سطح گذشته است.';
+
+  @override
+  String get alertSave => 'تنظیم هشدار';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'هشدار برای $symbol تنظیم شد.';
+  }
+
+  @override
+  String get alertsEmpty => 'هنوز هشداری نیست. یک سهم را باز کنید و روی زنگ بزنید.';
+
+  @override
+  String get alertsNote =>
+      'هشدارها تا زمانی که StockLens در حال اجراست هر ۵ دقیقه بررسی می‌شوند. روی رایانه، برنامه در نوار منو یا سینی سیستم ادامه می‌دهد؛ روی گوشی فعلاً فقط وقتی برنامه باز است هشدار می‌دهد.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'بالاتر از $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'پایین‌تر از $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'تغییر روزانه ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'فعال‌شده در $date با قیمت $price';
+  }
+
+  @override
+  String get alertRearm => 'فعال‌سازی دوباره';
+
+  @override
+  String get alertDelete => 'حذف';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol از $price بالاتر رفت';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol به زیر $price رسید';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol امروز $percent تغییر کرد';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'قیمت فعلی: $price';
+  }
+
+  @override
+  String get alertOpen => 'باز کردن';
+
+  @override
+  String get keepInTrayTitle => 'پس از بستن پنجره هم اجرا شود';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens در نوار منو یا سینی سیستم می‌ماند تا میان‌بر و هشدارهای قیمت همچنان کار کنند.';
 }

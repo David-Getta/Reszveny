@@ -9,6 +9,7 @@ import 'core/desktop/desktop_integration.dart';
 import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
 import 'features/billing/entitlement_service.dart';
+import 'features/alerts/price_alert.dart';
 import 'features/portfolio/portfolio_store.dart';
 
 Future<void> main() async {
@@ -20,7 +21,7 @@ Future<void> main() async {
   final entitlements = await EntitlementService.load();
   await entitlements.ensureTrial();
   final desktop = DesktopIntegration();
-  await desktop.initialize(title: 'StockLens', hotkeyJson: preferences.hotkeyJson);
+  await desktop.initialize(title: 'StockLens', hotkeyJson: preferences.hotkeyJson, keepInTray: preferences.keepInTray);
   // macOS: dupla Option-nyomás; az engedélyt csak egyszer kérjük, utána a
   // beállításokból nyitható meg.
   if (DesktopIntegration.supportsDoubleOption && preferences.doubleOption) {
@@ -35,10 +36,13 @@ Future<void> main() async {
     desktop: desktop,
     accountEmail: await AccountController.loadStoredEmail(),
     portfolio: await PortfolioStore.load(),
+    alerts: await AlertStore.load(),
   );
   runApp(StockLensApp(services: services));
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
   // Backend-módban a szerver szerinti csomag és keret átvétele.
   services.syncEntitlements();
+  // Árfolyam-riasztások figyelése (5 percenként, amíg az app fut).
+  services.alertMonitor.start();
 }
