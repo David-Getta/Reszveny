@@ -362,5 +362,6 @@
   "deleteLocalData": "Elimina anche i dati su questo dispositivo (portafoglio, avvisi, preferiti, cronologia, analisi salvate)",
   "deleteAccountConfirm": "Elimina definitivamente",
   "accountDeleted": "Il tuo account è stato eliminato.",
-  "errDeleteAccount": "Impossibile eliminare l’account. Controlla la connessione e riprova."
+  "errDeleteAccount": "Impossibile eliminare l’account. Controlla la connessione e riprova.",
+  "aiTrialBriefNote": "Le analisi di prova sono brevi e create con un modello di IA più veloce. Con un piano ottieni la nostra IA più potente, più ricerche web e le lunghezze Standard e Approfondita."
 }

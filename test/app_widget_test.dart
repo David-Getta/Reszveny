@@ -311,6 +311,54 @@ void main() {
     expect(o.counterArgument, isFalse);
   });
 
+  testWidgets('trial: analyses are brief, the longer lengths are locked and the plans are advertised', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.entitlements.replace(
+      EntitlementState(
+        tier: PlanTier.trial,
+        periodStart: DateTime.now(),
+        periodEnd: DateTime.now().add(const Duration(days: 3)),
+        usedInPeriod: 1,
+        trialStartedAt: DateTime.now(),
+      ),
+    );
+    await s.preferences.setAnalysisDepth(AnalysisDepth.deep);
+    expect(s.isTrialAnalysis, isTrue);
+    expect(s.analysisOptions().depth, AnalysisDepth.brief);
+    expect(s.analysisOptions().cost, 1);
+
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('trial-upsell')), findsOneWidget);
+    expect(find.textContaining('most capable AI'), findsOneWidget);
+    // A részletes nem választható; a mentett választás az előfizetés utánra megmarad.
+    await tester.tap(find.text('In-depth'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.analysisDepth, AnalysisDepth.deep);
+    expect(s.analysisOptions().depth, AnalysisDepth.brief);
+
+    // A próba-keret elfogyott (a további elemzés extra csomagból megy): a választott hossz él.
+    await s.entitlements.replace(
+      EntitlementState(
+        tier: PlanTier.trial,
+        periodStart: DateTime.now(),
+        periodEnd: DateTime.now().add(const Duration(days: 3)),
+        usedInPeriod: 3,
+        extraCredits: 5,
+        trialStartedAt: DateTime.now(),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(s.isTrialAnalysis, isFalse);
+    expect(s.analysisOptions().depth, AnalysisDepth.deep);
+    expect(find.byKey(const ValueKey('trial-upsell')), findsNothing);
+  });
+
   testWidgets('the bottom of the settings shows the app version', (tester) async {
     PackageInfo.setMockInitialValues(
       appName: 'WhatStock',

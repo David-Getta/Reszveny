@@ -1268,4 +1268,8 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'לא ניתן היה למחוק את החשבון. בדקו את החיבור ונסו שוב.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ניתוחי הניסיון קצרים ומופקים במודל AI מהיר יותר. עם מסלול תקבלו את ה-AI החזק ביותר שלנו, יותר חיפושים ברשת ואת האורכים רגיל ומעמיק.';
 }

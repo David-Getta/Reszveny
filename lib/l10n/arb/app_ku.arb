@@ -362,5 +362,6 @@
   "deleteLocalData": "Daneyên li ser vê amûrê jî jê bibe (portfolyo, hişyarî, bijare, dîrok, analîzên tomarkirî)",
   "deleteAccountConfirm": "Bi temamî jê bibe",
   "accountDeleted": "Hesabê te hate jêbirin.",
-  "errDeleteAccount": "Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne."
+  "errDeleteAccount": "Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.",
+  "aiTrialBriefNote": "Analîzên ceribandinê kurt in û bi modeleke AI ya bileztir têne çêkirin. Bi planekê tu AI-ya me ya herî jêhatî, lêgerînên webê yên zêdetir û dirêjahiyên Standard û Kûr distînî."
 }

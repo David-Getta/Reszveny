@@ -362,5 +362,6 @@
   "deleteLocalData": "Fafao koa ny angona ao amin'ity fitaovana ity (kitapom-bola, fanairana, ankafizina, tantara, fandalinana voatahiry)",
   "deleteAccountConfirm": "Fafao tanteraka",
   "accountDeleted": "Voafafa ny kaontinao.",
-  "errDeleteAccount": "Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray."
+  "errDeleteAccount": "Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray.",
+  "aiTrialBriefNote": "Fohy ny fandalinana mandritra ny fanandramana ary atao amin'ny modely AI haingana kokoa. Miaraka amin'ny tolotra, mahazo ny AI matanjaka indrindra ananay ianao, fikarohana an-tranonkala bebe kokoa ary ny halavany Antonony sy Lalina."
 }

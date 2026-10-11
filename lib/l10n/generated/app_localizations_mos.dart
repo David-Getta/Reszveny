@@ -1254,4 +1254,8 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Pa tõog n yẽes kõnte wã ye. Ges f kõneksõ la f le mak.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Makr vɛɛse yaa kʋɩɩlga, la b maanda-b ne AI sẽn yaa tao-tao. Ne forfɛ, f paamda d AI sẽn yaa sõma n yɩɩd fãa, ẽntɛrnɛt baoob wʋsg, la woglem Sʋka ne Zulungu.';
 }

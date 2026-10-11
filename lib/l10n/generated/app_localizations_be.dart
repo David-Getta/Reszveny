@@ -1310,4 +1310,8 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Не ўдалося выдаліць уліковы запіс. Праверце злучэнне і паспрабуйце яшчэ раз.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробныя аналізы кароткія і ствараюцца больш хуткай мадэллю AI. З тарыфам вы атрымліваеце наш самы магутны AI, больш вэб-пошукаў, а таксама даўжыні «Стандартна» і «Падрабязна».';
 }

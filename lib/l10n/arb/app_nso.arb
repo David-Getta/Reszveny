@@ -362,5 +362,6 @@
   "deleteLocalData": "Phumola le data ye e lego sedirišweng se (photefolio, ditemošo, tše di ratwago, histori, ditshekatsheko tše di bolokilwego)",
   "deleteAccountConfirm": "Phumola ka mo go sa felego",
   "accountDeleted": "Akhaonto ya gago e phumotšwe.",
-  "errDeleteAccount": "Akhaonto ga e a kgona go phumolwa. Lekola kgokagano ya gago gomme o leke gape."
+  "errDeleteAccount": "Akhaonto ga e a kgona go phumolwa. Lekola kgokagano ya gago gomme o leke gape.",
+  "aiTrialBriefNote": "Ditshekatsheko tša teko di kopana gomme di dirwa ka mmotlolo wa AI wo o akgofago. Ka leano o hwetša AI ya rena ye e nago le bokgoni bjo bogolo, dinyakišišo tše dintši tša wepe, le botelele bja Ya tlwaelo le Ye e tseneletšego."
 }

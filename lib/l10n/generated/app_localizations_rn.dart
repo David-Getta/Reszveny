@@ -1269,4 +1269,8 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Konti ntiyashoboye gufutwa. Raba interineti yawe usubire ugerageze.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Amasesangura y\'igeragezwa ni magufi kandi akorwa na AI yihuta kurushiriza. Ufise ipaki, uronka AI yacu ishoboye kuruta izindi, ukurondera kwinshi kuri interineti n\'uburebure Risanzwe na Ryimbitse.';
 }

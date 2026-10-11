@@ -1261,4 +1261,8 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akun teu bisa dipupus. Pariksa sambungan anjeun terus cobaan deui.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analisis uji coba téh ringkes sarta dijieun ku modél AI nu leuwih gancang. Ku pakét, anjeun meunang AI kami nu pangpinterna, leuwih loba panéangan wéb, sarta panjang Standar jeung Jero.';
 }

@@ -362,5 +362,6 @@
   "deleteLocalData": "Auch die Daten auf diesem Gerät löschen (Portfolio, Alarme, Favoriten, Verlauf, gespeicherte Analysen)",
   "deleteAccountConfirm": "Endgültig löschen",
   "accountDeleted": "Dein Konto wurde gelöscht.",
-  "errDeleteAccount": "Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut."
+  "errDeleteAccount": "Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut.",
+  "aiTrialBriefNote": "Analysen in der Testphase sind kurz und werden mit einem schnelleren KI-Modell erstellt. Mit einem Tarif bekommst du unsere leistungsfähigste KI, mehr Websuchen und die Längen Standard und Ausführlich."
 }

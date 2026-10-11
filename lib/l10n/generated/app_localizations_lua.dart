@@ -1269,4 +1269,8 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Makonkonona a diteta adi mîpi ne adi enzeka ne modele wa AI wa lukasa. Ne forfait, udi upeta AI wetu mupite bukole, makeba a bungi ku internet, ne bule bua Wa pankatshi ne Mule.';
 }

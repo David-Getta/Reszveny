@@ -1261,4 +1261,8 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'No s’ha pogut eliminar el compte. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Les anàlisis de prova són breus i es fan amb un model d’IA més ràpid. Amb un pla obtens la nostra IA més capaç, més cerques web i les extensions Estàndard i A fons.';
 }

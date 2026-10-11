@@ -4,9 +4,9 @@
 
 | Csomag | Termékazonosító | Elemzés / hó | Megjegyzés |
 |---|---|---|---|
-| Próbaidő | – | 3 elemzés 3 napig | első indításkor automatikusan indul |
+| Próbaidő | – | 3 rövid elemzés 3 napig | első indításkor automatikusan indul; gyorsabb modellel (Sonnet 5.5) készül, az app megmutatja, mit ad az előfizetés |
 | Normál | `whatstock.sub.normal` | 8 | |
-| Pro | `whatstock.sub.pro` | 20 | „Legnépszerűbb” jelölés |
+| Pro | `whatstock.sub.pro` | 18 | „Legnépszerűbb” jelölés |
 | Max | `whatstock.sub.max` | 40 | |
 | Ultra | `whatstock.sub.ultra` | 70 | |
 
@@ -23,7 +23,7 @@ helyi árat az ECB-árfolyammal, a pénznem szokása szerint kerekítve (HUF: �
 | Termék | USD | kb. HUF (360 Ft/USD) | EUR | Költség teljes kihasználásnál (Opus 5.5, ≈ 0,60 USD/elemzés) |
 |---|---|---|---|---|
 | Normál (8) | 7,99 | 2 890 | 7,99 | ≈ 4,80 USD |
-| Pro (20) | 15,99 | 5 790 | 14,99 | ≈ 12 USD |
+| Pro (18) | 15,99 | 5 790 | 14,99 | ≈ 10,80 USD |
 | Max (40) | 39,99 | 14 390 | 36,99 | ≈ 24 USD |
 | Ultra (70) | 64,99 | 23 390 | 59,99 | ≈ 42 USD |
 | +5 | 4,99 | 1 790 | 4,99 | ≈ 3 USD |
@@ -32,8 +32,8 @@ helyi árat az ECB-árfolyammal, a pénznem szokása szerint kerekítve (HUF: �
 
 **A-terv (2026-10-11):** minden csomag Opus 5.5-tel fut (a szerver rögzíti a modellt), az árak
 maradnak, a Max 80 helyett 40, az Ultra 150 helyett 70 elemzést ad. Így a Normál, a Max és az
-Ultra a keret teljes kihasználásánál is nyereséges, a Pro ott nagyjából nullszaldós (átlagos
-használatnál mind nyereséges). A Max és az Ultra elemzésenként nem olcsóbb a Pro-nál, ezért a
+Ultra a keret teljes kihasználásánál is nyereséges. A Pro 20 elemzéssel ott veszteséges volt
+(−0,77 USD), ezért 18 elemzést ad, változatlan áron (+0,43 USD); átlagos használatnál mind nyereséges. A Max és az Ultra elemzésenként nem olcsóbb a Pro-nál, ezért a
 „Legjobb ár/érték” jelölés lekerült (félrevezető lett volna).
 
 A havi keret az AI-elemzésekre vonatkozik. A fotófelismerés, az élő adatok, a grafikon, a
@@ -181,7 +181,7 @@ Programmal, 1 millió USD éves bevétel alatt; Stripe ≈ 3,5 % + 0,30 USD):
 | Csomag (A-terv) | Ár | Nettó (bolt) | Nettó (Stripe) | Költség teljes kihasználásnál (Opus) |
 |---|---|---|---|---|
 | Normál (8) | 7,99 | 5,61 | 6,07 | 4,80 |
-| Pro (20) | 15,99 | 11,23 | 12,45 | 12,00 |
+| Pro (18) | 15,99 | 11,23 | 12,45 | 10,80 |
 | Max (40) | 39,99 | 28,09 | 31,59 | 24,00 |
 | Ultra (70) | 64,99 | 45,65 | 51,53 | 42,00 |
 
@@ -190,14 +190,25 @@ Programmal, 1 millió USD éves bevétel alatt; Stripe ≈ 3,5 % + 0,30 USD):
 | Csomag | Teljes keret | 40 % kihasználás |
 |---|---|---|
 | Normál (8) | +0,81 | +3,69 |
-| Pro (20) | −0,77 | +6,43 |
+| Pro (18) | +0,43 | +6,91 |
 | Max (40) | +4,09 | +18,49 |
 | Ultra (70) | +3,65 | +28,85 |
 
 Az előfizetők jellemzően a keret 30–50 %-át használják el. Az eredeti keretekkel (Max 80, Ultra 150)
 teljes kihasználásnál a Max −19,91, az Ultra −44,35 USD lett volna; ezért váltottunk az A-tervre. Extra csomagok (ezeket mindig elhasználják), Opus: +5 → +0,51, +20 → +0,64, +50 → −1,91
-USD; Sonnet: +2,01 / +6,64 / +13,09 USD. A próbaidő (3 elemzés) Opusszal ≈ 1,80 USD
-telepítésenként; 5 %-os konverziónál ez ≈ 36 USD egy fizető előfizetőre vetítve.
+USD; Sonnet: +2,01 / +6,64 / +13,09 USD.
+
+**Próbaidő.** A próbaidő 3 elemzése rövid, és Sonnet 5.5-tel készül (a szerver dönti el a
+próba-keretre: `ANTHROPIC_TRIAL_MODEL`; a megvett extra elemzések már teljes értékűek). Így egy
+telepítés ≈ 0,66 USD (3 × 0,20 + fotófelismerés), Opusszal és alap hosszal ≈ 1,80 USD volt; 5 %-os
+konverziónál egy fizető előfizetőre ≈ 13 USD jut (korábban ≈ 36). Az app a próbaidő alatt a
+beállításokban és a részvény oldalán is kiírja, hogy előfizetéssel a legerősebb modell, több webes
+kutatás és hosszabb elemzés jár.
+
+**Haszon a próbák után** (vegyes mix: 40 % Normál, 40 % Pro, 15 % Max, 5 % Ultra; 70 % bolt,
+30 % Stripe; 40 %-os kihasználás): nettó bevétel 13,68 USD/hó, API-költség 4,78, haszon 8,90
+(65 %); a próbaköltség 6 hónapos átlagos előfizetésnél −2,20/hó → **6,80 USD/hó (50 %)**,
+12 hónapnál 7,85 USD/hó (57 %). Előtte (Opus-próba, Pro 20): 2,90 (21 %), illetve 5,90 (43 %).
 
 Fix költségek: szerver (5–20 USD/hó), Apple Developer Program (99 USD/év), Google Play (25 USD
 egyszer), domain, e-mail (Resend: havi 3000 levélig ingyenes), és a piaci adat: a Finnhub ingyenes

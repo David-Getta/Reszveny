@@ -1258,4 +1258,8 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'اڪائونٽ ميٽي نه سگهياسين. پنهنجو ڪنيڪشن چيڪ ڪري ٻيهر ڪوشش ڪريو.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'آزمائشي تجزيا مختصر هوندا آهن ۽ تيز AI ماڊل سان ٺهندا آهن. پلان سان توهان کي اسان جو سڀ کان قابل AI، وڌيڪ ويب ڳولائون، ۽ معياري توڙي تفصيلي ڊيگهه ملي ٿي.';
 }

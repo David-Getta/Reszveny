@@ -1257,4 +1257,8 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'A kò lè pa àkáǹtì náà rẹ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Àwọn ìtúpalẹ̀ ìdánwò jẹ́ ṣókí, a sì ń fi àwòṣe AI tó yára jù ṣe wọ́n. Pẹ̀lú ìpele kan, o máa rí AI wa tó lágbára jùlọ, ìwádìí wẹ́ẹ̀bù púpọ̀ sí i, àti gígùn Àgbedeméjì àti Jinlẹ̀.';
 }

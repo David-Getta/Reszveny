@@ -1266,4 +1266,8 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get errDeleteAccount =>
       'Herregni haqamuu hin dandeenye. Walqunnamtii kee mirkaneeffadhuu irra deebi\'ii yaali.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Xiinxalli yaalii gabaabaa dha, moodeela AI saffisaa ta\'eenis hojjetama. Karooraan AI keenya isa hunda caalaa cimu, barbaacha weebii dabalataa, akkasumas dheerina Idilee fi Gadi fagoo argatta.';
 }

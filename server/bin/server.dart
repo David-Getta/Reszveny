@@ -8,7 +8,8 @@ import 'package:whatstock_server/src/purchase_verifier.dart';
 import 'package:whatstock_server/src/stripe.dart';
 
 /// Indítás: `ANTHROPIC_API_KEY=… FINNHUB_API_KEY=… dart run bin/server.dart`
-/// Opcionális: PORT (8080), DATABASE_PATH (whatstock.db), VERIFY_MODE (dev|store),
+/// Opcionális: PORT (8080), DATABASE_PATH (whatstock.db), VERIFY_MODE (dev|store), ANTHROPIC_MODEL
+/// (claude-opus-5-5), ANTHROPIC_TRIAL_MODEL (claude-sonnet-5-5, a próbaidő rövid elemzéseihez),
 /// PUBLIC_URL (a szerver nyilvános címe), RESEND_API_KEY + MAIL_FROM (belépőkód e-mailben;
 /// nélkülük a kód a naplóba kerül), STRIPE_SECRET_KEY + STRIPE_WEBHOOK_SECRET + STRIPE_PRICES
 /// (böngészős fizetés; pl. `whatstock.sub.pro=price_123,whatstock.pack.5=price_456`).
@@ -33,6 +34,8 @@ Future<void> main() async {
     publicUrl: env['PUBLIC_URL'] ?? 'http://localhost:$port0',
     // Minden Anthropic-hívás ezen a modellen fut (a kliens nem választhat drágábbat).
     anthropicModel: env['ANTHROPIC_MODEL'] ?? 'claude-opus-5-5',
+    // A próbaidő rövid elemzései az olcsóbb modellen futnak.
+    trialModel: env['ANTHROPIC_TRIAL_MODEL'] ?? 'claude-sonnet-5-5',
     legalDir: env['LEGAL_DIR'] ?? 'legal',
     mailer: resend.isEmpty
         ? ConsoleMailer()

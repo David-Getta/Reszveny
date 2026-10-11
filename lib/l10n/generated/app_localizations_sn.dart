@@ -1264,4 +1264,8 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akaundi haina kukwanisa kudzimwa. Tarisa kubatana kwako wozoedza zvakare.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ongororo dzemuedzo ipfupi uye dzinoitwa nemodhi yeAI inokurumidza. Nechirongwa unowana AI yedu ine simba kwazvo, kutsvaga kwakawanda paindaneti, uye kureba kweYepakati neYakadzama.';
 }

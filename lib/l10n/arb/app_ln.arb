@@ -362,5 +362,6 @@
   "deleteLocalData": "Limwisa mpe ba-donnée na esaleli oyo (portefeuille, makebisi, oyo olingaka, oyo olukaki, ba-analyse ebombami)",
   "deleteAccountConfirm": "Limwisa mpo na libela",
   "accountDeleted": "Compte na yo elimwisami.",
-  "errDeleteAccount": "Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu."
+  "errDeleteAccount": "Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu.",
+  "aiTrialBriefNote": "Ba-analyse ya komeka ezali mokuse mpe esalemaka na modèle ya AI oyo ekendaka noki. Na forfait, ozwaka AI na biso ya makasi koleka, boluki mingi na internet, mpe bolai Ya katikati mpe Ya mozindo."
 }

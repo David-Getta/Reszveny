@@ -1261,4 +1261,8 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ఖాతాను తొలగించలేకపోయాము. కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ట్రయల్ విశ్లేషణలు సంక్షిప్తంగా ఉంటాయి, వేగవంతమైన AI మోడల్‌తో రూపొందుతాయి. ప్లాన్‌తో మా అత్యంత సమర్థమైన AI, మరిన్ని వెబ్ శోధనలు, ప్రామాణికం మరియు వివరణాత్మకం నిడివిలు మీకు లభిస్తాయి.';
 }

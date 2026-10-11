@@ -1267,4 +1267,8 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Dili mapapas ang account. Susiha ang imong koneksyon ug sulayi pag-usab.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Mubo ang mga pagtuki sa trial ug gihimo kini gamit ang mas paspas nga AI model. Sa usa ka plan, makuha nimo ang among labing maayong AI, mas daghang pagpangita sa web, ug ang Standard ug Lawom nga gitas-on.';
 }

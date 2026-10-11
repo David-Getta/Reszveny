@@ -362,5 +362,6 @@
   "deleteLocalData": "Futa n'amakuru ari kuri iki gikoresho (ishoramari, imenyesha, ivyo ukunda, akahise, amasesangura wabitse)",
   "deleteAccountConfirm": "Futa burundu",
   "accountDeleted": "Konti yawe yafuswe.",
-  "errDeleteAccount": "Konti ntiyashoboye gufutwa. Raba interineti yawe usubire ugerageze."
+  "errDeleteAccount": "Konti ntiyashoboye gufutwa. Raba interineti yawe usubire ugerageze.",
+  "aiTrialBriefNote": "Amasesangura y'igeragezwa ni magufi kandi akorwa na AI yihuta kurushiriza. Ufise ipaki, uronka AI yacu ishoboye kuruta izindi, ukurondera kwinshi kuri interineti n'uburebure Risanzwe na Ryimbitse."
 }

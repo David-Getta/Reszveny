@@ -1258,4 +1258,8 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hasaby pozup bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Synag seljermeleri gysga bolýar we has çalt AI modeli bilen taýýarlanýar. Tarif bilen iň ukyply AI-ymyzy, has köp web gözlegini hem-de Standart we Jikme-jik uzynlyklary alýarsyňyz.';
 }

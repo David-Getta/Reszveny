@@ -1260,4 +1260,8 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Акаунтът не можа да бъде изтрит. Проверете връзката и опитайте отново.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробните анализи са кратки и се изготвят с по-бърз AI модел. С план получавате най-мощния ни AI, повече търсения в мрежата и дължините „Стандартно“ и „Подробно“.';
 }

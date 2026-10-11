@@ -1261,4 +1261,8 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analizat e provës janë të shkurtra dhe kryhen me një model AI më të shpejtë. Me një plan merrni AI-në tonë më të aftë, më shumë kërkime në ueb dhe gjatësitë Standarde dhe E thelluar.';
 }

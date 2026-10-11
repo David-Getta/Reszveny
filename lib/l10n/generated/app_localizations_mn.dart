@@ -1262,4 +1262,8 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Бүртгэлийг устгаж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Туршилтын шинжилгээ товч бөгөөд илүү хурдан AI загвараар хийгддэг. Багц авбал та манай хамгийн чадварлаг AI, илүү олон вэб хайлт болон Стандарт, Гүнзгий уртыг авна.';
 }

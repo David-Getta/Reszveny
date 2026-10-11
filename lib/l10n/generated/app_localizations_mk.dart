@@ -1285,4 +1285,8 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Сметката не можеше да се избрише. Проверете ја врската и обидете се повторно.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробните анализи се кратки и се изработуваат со побрз AI-модел. Со план го добивате нашиот најспособен AI, повеќе веб-пребарувања и стандардна и детална должина.';
 }

@@ -362,5 +362,6 @@
   "deleteLocalData": "Pa dátà orí ẹ̀rọ yìí rẹ́ pẹ̀lú (àpò ìdókòwò, ìkìlọ̀, ààyò, ìtàn, ìtúpalẹ̀ tí a fi pamọ́)",
   "deleteAccountConfirm": "Pa á rẹ́ pátápátá",
   "accountDeleted": "A ti pa àkáǹtì rẹ rẹ́.",
-  "errDeleteAccount": "A kò lè pa àkáǹtì náà rẹ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú."
+  "errDeleteAccount": "A kò lè pa àkáǹtì náà rẹ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.",
+  "aiTrialBriefNote": "Àwọn ìtúpalẹ̀ ìdánwò jẹ́ ṣókí, a sì ń fi àwòṣe AI tó yára jù ṣe wọ́n. Pẹ̀lú ìpele kan, o máa rí AI wa tó lágbára jùlọ, ìwádìí wẹ́ẹ̀bù púpọ̀ sí i, àti gígùn Àgbedeméjì àti Jinlẹ̀."
 }

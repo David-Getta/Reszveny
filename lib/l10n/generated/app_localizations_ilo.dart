@@ -1266,4 +1266,8 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ababa dagiti panangsukimat iti trial ken naaramid babaen ti napartak a modelo ti AI. No addaanka iti plan, magun-odmo ti kasayaatan nga AI-mi, ad-adu a panagbiruk iti web, ken ti Standard ken Nauneg a kaatiddog.';
 }

@@ -1260,4 +1260,8 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analyser under provperioden är korta och görs med en snabbare AI-modell. Med en plan får du vår mest kapabla AI, fler webbsökningar och längderna Standard och Fördjupad.';
 }

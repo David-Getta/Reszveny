@@ -1258,4 +1258,8 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Аккаунтны бетереп булмады. Тоташуыгызны тикшерегез һәм кабат тырышып карагыз.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Сынау анализлары кыска һәм тизрәк AI модель ярдәмендә ясала. Тариф белән сез иң көчле AI-ыбызны, күбрәк веб-эзләүне һәм Стандарт белән Җентекле озынлыкларны аласыз.';
 }

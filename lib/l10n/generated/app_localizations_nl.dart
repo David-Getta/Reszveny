@@ -1261,4 +1261,8 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get errDeleteAccount =>
       'Het account kon niet worden verwijderd. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analyses in de proefperiode zijn kort en worden gemaakt met een sneller AI-model. Met een abonnement krijg je ons krachtigste AI-model, meer webzoekopdrachten en de lengtes Standaard en Diepgaand.';
 }

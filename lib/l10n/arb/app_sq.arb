@@ -362,5 +362,6 @@
   "deleteLocalData": "Fshi edhe të dhënat në këtë pajisje (portofoli, alarmet, të preferuarat, historiku, analizat e ruajtura)",
   "deleteAccountConfirm": "Fshi përgjithmonë",
   "accountDeleted": "Llogaria juaj u fshi.",
-  "errDeleteAccount": "Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish."
+  "errDeleteAccount": "Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish.",
+  "aiTrialBriefNote": "Analizat e provës janë të shkurtra dhe kryhen me një model AI më të shpejtë. Me një plan merrni AI-në tonë më të aftë, më shumë kërkime në ueb dhe gjatësitë Standarde dhe E thelluar."
 }

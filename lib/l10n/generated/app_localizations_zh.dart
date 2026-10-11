@@ -1215,6 +1215,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errDeleteAccount => '无法删除账户。请检查网络连接后重试。';
+
+  @override
+  String get aiTrialBriefNote => '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2427,4 +2430,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get errDeleteAccount => '未能刪除帳戶。請檢查網絡連線後再試。';
+
+  @override
+  String get aiTrialBriefNote => '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
 }

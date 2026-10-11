@@ -362,5 +362,6 @@
   "deleteLocalData": "Șterge și datele de pe acest dispozitiv (portofoliu, alerte, favorite, istoric, analize salvate)",
   "deleteAccountConfirm": "Șterge definitiv",
   "accountDeleted": "Contul tău a fost șters.",
-  "errDeleteAccount": "Contul nu a putut fi șters. Verifică conexiunea și încearcă din nou."
+  "errDeleteAccount": "Contul nu a putut fi șters. Verifică conexiunea și încearcă din nou.",
+  "aiTrialBriefNote": "Analizele din perioada de probă sunt scurte și realizate cu un model AI mai rapid. Cu un plan primești cel mai capabil AI al nostru, mai multe căutări web și lungimile Standard și Detaliată."
 }

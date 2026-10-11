@@ -362,5 +362,6 @@
   "deleteLocalData": "Xóa cả dữ liệu trên thiết bị này (danh mục, cảnh báo, yêu thích, lịch sử, phân tích đã lưu)",
   "deleteAccountConfirm": "Xóa vĩnh viễn",
   "accountDeleted": "Tài khoản của bạn đã bị xóa.",
-  "errDeleteAccount": "Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại."
+  "errDeleteAccount": "Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.",
+  "aiTrialBriefNote": "Phân tích trong thời gian dùng thử ở mức Ngắn gọn và dùng mô hình AI nhanh hơn. Khi đăng ký gói, bạn có AI mạnh nhất của chúng tôi, nhiều lượt tìm kiếm web hơn cùng độ dài Tiêu chuẩn và Chuyên sâu."
 }

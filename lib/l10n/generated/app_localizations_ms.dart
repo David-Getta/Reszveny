@@ -1269,4 +1269,8 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analisis percubaan adalah ringkas dan dihasilkan dengan model AI yang lebih pantas. Dengan pelan, anda mendapat AI kami yang paling canggih, lebih banyak carian web, serta panjang Standard dan Mendalam.';
 }

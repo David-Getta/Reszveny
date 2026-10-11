@@ -362,5 +362,6 @@
   "deleteLocalData": "Radera även data på den här enheten (portfölj, larm, favoriter, historik, sparade analyser)",
   "deleteAccountConfirm": "Radera permanent",
   "accountDeleted": "Ditt konto har raderats.",
-  "errDeleteAccount": "Kontot kunde inte raderas. Kontrollera anslutningen och försök igen."
+  "errDeleteAccount": "Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.",
+  "aiTrialBriefNote": "Analyser under provperioden är korta och görs med en snabbare AI-modell. Med en plan får du vår mest kapabla AI, fler webbsökningar och längderna Standard och Fördjupad."
 }

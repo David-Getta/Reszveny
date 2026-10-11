@@ -1257,4 +1257,8 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Yɛantumi ampopa akawnt no. Hwɛ wo nkitahodi na sɔ hwɛ bio.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Sɔhwɛ nhwehwɛmu yɛ tiawa, na AI model a ɛyɛ ntɛm na ɛyɛ. Sɛ wowɔ plan a, wunya yɛn AI a ɛyɛ papa sen biara, intanɛt so nhwehwɛ pii, ne tenten Mfinimfini ne Emu dɔ.';
 }

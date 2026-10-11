@@ -362,5 +362,6 @@
   "deleteLocalData": "Panasa man ang data sa sini nga device (portfolio, alerto, paborito, history, natipon nga analisis)",
   "deleteAccountConfirm": "Panasa sing permanente",
   "accountDeleted": "Napanas na ang imo account.",
-  "errDeleteAccount": "Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat."
+  "errDeleteAccount": "Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat.",
+  "aiTrialBriefNote": "Ang mga analisis sa pagtilaw malip-ot kag ginahimo sang mas dasig nga AI model. Kon may plan ka, makuha mo ang amon pinakamaayo nga AI, mas madamo nga pagpangita sa web, kag ang Kinaandan kag Madalom nga kalabaon."
 }

@@ -1259,4 +1259,8 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'A próbaidős elemzések rövidek, és egy gyorsabb AI-modell készíti őket. Csomaggal a legerősebb AI-unk dolgozik, több webkereséssel, és választhatod az alap és a részletes hosszt is.';
 }

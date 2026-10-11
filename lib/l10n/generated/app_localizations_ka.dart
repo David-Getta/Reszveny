@@ -1266,4 +1266,8 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ანგარიშის წაშლა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'საცდელი ანალიზები მოკლეა და იქმნება უფრო სწრაფი AI მოდელით. გეგმით მიიღებთ ჩვენს ყველაზე ძლიერ AI-ს, მეტ ვებძიებას და სტანდარტულ და სიღრმისეულ სიგრძეს.';
 }

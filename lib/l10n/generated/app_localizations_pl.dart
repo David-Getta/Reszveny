@@ -1310,4 +1310,8 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analizy w okresie próbnym są krótkie i powstają z użyciem szybszego modelu AI. Z planem otrzymujesz nasz najbardziej zaawansowany model AI, więcej wyszukiwań w sieci oraz standardową i szczegółową długość analiz.';
 }

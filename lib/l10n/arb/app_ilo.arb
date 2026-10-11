@@ -362,5 +362,6 @@
   "deleteLocalData": "Punasen met ti data iti daytoy a device (portfolio, alerto, paborito, pakasaritaan, naidulin a panangsukimat)",
   "deleteAccountConfirm": "Punasen a permanente",
   "accountDeleted": "Napunasen ti accountmo.",
-  "errDeleteAccount": "Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen."
+  "errDeleteAccount": "Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen.",
+  "aiTrialBriefNote": "Ababa dagiti panangsukimat iti trial ken naaramid babaen ti napartak a modelo ti AI. No addaanka iti plan, magun-odmo ti kasayaatan nga AI-mi, ad-adu a panagbiruk iti web, ken ti Standard ken Nauneg a kaatiddog."
 }

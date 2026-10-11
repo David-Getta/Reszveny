@@ -1263,4 +1263,8 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Аккаунтту өчүрүү мүмкүн болгон жок. Байланышыңызды текшерип, кайра аракет кылыңыз.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Сыноо талдоолору кыскача жана ылдамыраак AI модели менен түзүлөт. Тариф менен эң күчтүү AI, көбүрөөк веб-издөө жана стандарттуу, кеңири көлөм жеткиликтүү болот.';
 }

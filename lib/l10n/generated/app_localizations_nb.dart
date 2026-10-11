@@ -1259,4 +1259,8 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Kontoen kunne ikke slettes. Sjekk tilkoblingen og prøv igjen.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analyser i prøveperioden er korte og lages med en raskere AI-modell. Med en plan får du vår mest avanserte AI, flere nettsøk og lengdene Standard og Grundig.';
 }

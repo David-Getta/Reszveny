@@ -362,5 +362,6 @@
   "deleteLocalData": "Tutu nyatakaka siwo le mɔ̃ sia dzi hã (akpawo, nuxlɔ̃amewo, lɔlɔ̃tɔwo, ŋutinya, numekuku siwo nèdzra ɖo)",
   "deleteAccountConfirm": "Tutui keŋkeŋ",
   "accountDeleted": "Wotutu wò akɔnta.",
-  "errDeleteAccount": "Míete ŋu tutu akɔnta la o. Kpɔ wò kadodo eye nàgate kpɔ."
+  "errDeleteAccount": "Míete ŋu tutu akɔnta la o. Kpɔ wò kadodo eye nàgate kpɔ.",
+  "aiTrialBriefNote": "Tetekpɔ numekukuwo le kpui eye AI model si wɔa dɔ kabakaba wu la wɔa wo. Ne plan le asiwò la, àxɔ míaƒe AI si ŋu ŋutete le wu, internet dzi didi geɖe wu, kple didime Titina kple Goglo."
 }

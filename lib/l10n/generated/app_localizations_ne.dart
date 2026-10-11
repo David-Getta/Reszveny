@@ -1257,4 +1257,8 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'खाता मेटाउन सकिएन। आफ्नो जडान जाँचेर फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'परीक्षणका विश्लेषण छोटा हुन्छन् र छिटो AI मोडेलबाट बनाइन्छन्। योजनासँग तपाईंले हाम्रो सबैभन्दा सक्षम AI, थप वेब खोज, र मानक तथा विस्तृत लम्बाइ पाउनुहुन्छ।';
 }

@@ -1256,4 +1256,8 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ଆକାଉଣ୍ଟ ଡିଲିଟ କରିହେଲା ନାହିଁ। ଆପଣଙ୍କ ସଂଯୋଗ ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ଟ୍ରାଏଲ ବିଶ୍ଳେଷଣ ସଂକ୍ଷିପ୍ତ ଏବଂ ଏକ ଦ୍ରୁତ AI ମଡେଲରେ ତିଆରି ହୁଏ। ପ୍ଲାନ ସହ ଆପଣ ଆମର ସବୁଠାରୁ ସକ୍ଷମ AI, ଅଧିକ ୱେବ ସନ୍ଧାନ ଏବଂ ମାନକ ଓ ବିସ୍ତୃତ ଦୈର୍ଘ୍ୟ ପାଆନ୍ତି।';
 }

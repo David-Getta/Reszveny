@@ -362,5 +362,6 @@
   "deleteLocalData": "Kay equipopi datostapas qulluy (portafolio, willachiykuna, munasqakuna, historial, waqaychasqa t'aqwiykuna)",
   "deleteAccountConfirm": "Wiñaypaq qulluy",
   "accountDeleted": "Cuentaykiqa qullusqañam.",
-  "errDeleteAccount": "Cuentataqa mana qulluyta atirqanchu. T'inkiyniykita qhaway, huktawan ruway."
+  "errDeleteAccount": "Cuentataqa mana qulluyta atirqanchu. T'inkiyniykita qhaway, huktawan ruway.",
+  "aiTrialBriefNote": "Malliy t'aqwiykunaqa pisillam, aswan utqay AI modelowanmi ruwasqa. Huk planwanqa aswan atiyniyuq AI-ykuta, astawan web maskaykunata, Chawpi, Ukhu sunikunatapas hap'inki."
 }

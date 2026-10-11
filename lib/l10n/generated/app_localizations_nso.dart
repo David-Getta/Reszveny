@@ -1271,4 +1271,8 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akhaonto ga e a kgona go phumolwa. Lekola kgokagano ya gago gomme o leke gape.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ditshekatsheko tša teko di kopana gomme di dirwa ka mmotlolo wa AI wo o akgofago. Ka leano o hwetša AI ya rena ye e nago le bokgoni bjo bogolo, dinyakišišo tše dintši tša wepe, le botelele bja Ya tlwaelo le Ye e tseneletšego.';
 }

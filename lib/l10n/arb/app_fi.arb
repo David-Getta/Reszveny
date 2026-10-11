@@ -362,5 +362,6 @@
   "deleteLocalData": "Poista myös tämän laitteen tiedot (salkku, hälytykset, suosikit, historia, tallennetut analyysit)",
   "deleteAccountConfirm": "Poista pysyvästi",
   "accountDeleted": "Tilisi on poistettu.",
-  "errDeleteAccount": "Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen."
+  "errDeleteAccount": "Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen.",
+  "aiTrialBriefNote": "Kokeilun analyysit ovat lyhyitä, ja ne tehdään nopeammalla tekoälymallilla. Paketilla saat kyvykkäimmän tekoälymme, enemmän verkkohakuja sekä pituudet Vakio ja Syvällinen."
 }

@@ -1254,4 +1254,8 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'खाता नहि मेटाओल जा सकल। अपन कनेक्शन जाँचू आ फेरसँ प्रयास करू।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ट्रायलक विश्लेषण संक्षिप्त होइत अछि आ तेज AI मॉडलसँ बनैत अछि। प्लानक संग अहाँकेँ हमर सभसँ सक्षम AI, बेसी वेब खोज तथा मानक आ विस्तृत लंबाई भेटत।';
 }

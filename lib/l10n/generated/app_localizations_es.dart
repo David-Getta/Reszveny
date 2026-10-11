@@ -1262,4 +1262,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'No se pudo eliminar la cuenta. Comprueba la conexión e inténtalo de nuevo.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Los análisis de prueba son breves y se hacen con un modelo de IA más rápido. Con un plan obtienes nuestra IA más capaz, más búsquedas web y las extensiones Estándar y A fondo.';
 }

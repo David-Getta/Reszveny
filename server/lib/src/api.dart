@@ -43,6 +43,7 @@ class Api {
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
     this.anthropicModel = 'claude-opus-5-5',
+    this.trialModel = 'claude-sonnet-5-5',
     this.legalDir = 'legal',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
@@ -67,6 +68,10 @@ class Api {
 
   /// A modell, amin minden hívás fut; a kliens nem választhat drágábbat.
   final String anthropicModel;
+
+  /// A próbaidő elemzéseinek modellje (olcsóbb). A próbaidő elemzései rövidek,
+  /// így egy próba kb. harmadába kerül egy előfizetői elemzésnek.
+  final String trialModel;
 
   /// A jogi szövegek mappája: `terms.hu.md`, `privacy.hu.md`, `terms.en.md`…
   final String legalDir;
@@ -438,7 +443,10 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final e = store.entitlement(uid);
-    final depth = Depth.parse(r.headers['x-whatstock-depth']);
+    // A próbaidő kerete: rövid elemzés az olcsóbb modellel (a megvett extra
+    // elemzések már a teljes értékűek).
+    final trialRun = quota.drawsFromTrial(e);
+    final depth = trialRun ? Depth.brief : Depth.parse(r.headers['x-whatstock-depth']);
     final q = quota.check(e, cost: depth.cost);
     if (q == QuotaResult.insufficient) {
       return _json({'error': 'insufficient_quota', 'needed': depth.cost, 'available': quota.available(e)}, status: 402);
@@ -450,7 +458,12 @@ class Api {
         _ => 'quota_exceeded',
       });
     }
-    final raw = limitRequest(await r.readAsString(), depth: depth, tier: e.tier, model: anthropicModel);
+    final raw = limitRequest(
+      await r.readAsString(),
+      depth: depth,
+      tier: e.tier,
+      model: trialRun ? trialModel : anthropicModel,
+    );
     final upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
     if (upstream.statusCode == 200) {
       // Csak a befejezett (nem pause_turn) választ számoljuk el.

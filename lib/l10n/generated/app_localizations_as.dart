@@ -1259,4 +1259,8 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'একাউণ্টটো মচিব পৰা নগ\'ল। আপোনাৰ সংযোগ পৰীক্ষা কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ট্ৰায়েলৰ বিশ্লেষণসমূহ চমু আৰু এটা অধিক দ্ৰুত AI মডেলেৰে প্ৰস্তুত কৰা হয়। প্লানৰ সৈতে আপুনি আমাৰ আটাইতকৈ সক্ষম AI, অধিক ৱেব সন্ধান, লগতে মানক আৰু বিতং দৈৰ্ঘ্য পাব।';
 }

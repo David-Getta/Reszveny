@@ -16,7 +16,7 @@ class PlanSpec {
 
   static const paid = [
     PlanSpec('normal', 'whatstock.sub.normal', 8, 4),
-    PlanSpec('pro', 'whatstock.sub.pro', 20, 6),
+    PlanSpec('pro', 'whatstock.sub.pro', 18, 6),
     PlanSpec('max', 'whatstock.sub.max', 40, 8),
     PlanSpec('ultra', 'whatstock.sub.ultra', 70, 10),
   ];

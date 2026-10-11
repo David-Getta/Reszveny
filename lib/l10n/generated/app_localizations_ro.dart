@@ -1292,4 +1292,8 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Contul nu a putut fi șters. Verifică conexiunea și încearcă din nou.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analizele din perioada de probă sunt scurte și realizate cu un model AI mai rapid. Cu un plan primești cel mai capabil AI al nostru, mai multe căutări web și lungimile Standard și Detaliată.';
 }

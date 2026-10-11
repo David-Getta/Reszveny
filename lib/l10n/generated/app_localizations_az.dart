@@ -1259,4 +1259,8 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hesabı silmək mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Sınaq təhlilləri qısadır və daha sürətli AI modeli ilə hazırlanır. Planla ən güclü AI modelimizi, daha çox veb axtarışını, həmçinin Standart və Ətraflı həcmləri əldə edirsiniz.';
 }

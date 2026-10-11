@@ -1307,4 +1307,8 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Zkušební analýzy jsou stručné a vytváří je rychlejší model AI. S tarifem získáte naši nejschopnější AI, více vyhledávání na webu a délky Standardně a Podrobně.';
 }

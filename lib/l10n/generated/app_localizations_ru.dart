@@ -1310,4 +1310,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Не удалось удалить аккаунт. Проверьте подключение и попробуйте снова.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробные анализы краткие и создаются более быстрой моделью ИИ. С тарифом вы получаете наш самый мощный ИИ, больше веб-поисков, а также стандартную и подробную длину.';
 }

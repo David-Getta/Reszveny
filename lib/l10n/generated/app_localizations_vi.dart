@@ -1249,4 +1249,8 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Phân tích trong thời gian dùng thử ở mức Ngắn gọn và dùng mô hình AI nhanh hơn. Khi đăng ký gói, bạn có AI mạnh nhất của chúng tôi, nhiều lượt tìm kiếm web hơn cùng độ dài Tiêu chuẩn và Chuyên sâu.';
 }

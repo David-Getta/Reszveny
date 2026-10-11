@@ -362,5 +362,6 @@
   "deleteLocalData": "Share bayanan da ke wannan na’ura ma (jaka, faɗakarwa, abubuwan da aka fi so, tarihi, nazarin da aka adana)",
   "deleteAccountConfirm": "Share har abada",
   "accountDeleted": "An share asusunka.",
-  "errDeleteAccount": "Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa."
+  "errDeleteAccount": "Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.",
+  "aiTrialBriefNote": "Nazarin gwaji taƙaitacce ne kuma ana yin su da samfurin AI mai sauri. Da tsari za ka sami AI ɗinmu mafi ƙarfi, ƙarin binciken yanar gizo, da tsawon Daidaitacce da Mai zurfi."
 }

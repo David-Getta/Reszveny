@@ -1257,4 +1257,8 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'حذف حساب ممکن نشد. اتصال را بررسی کنید و دوباره تلاش کنید.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'تحلیل‌های دوره آزمایشی کوتاه هستند و با یک مدل هوش مصنوعی سریع‌تر تهیه می‌شوند. با یک طرح، تواناترین هوش مصنوعی ما، جستجوی وب بیشتر و طول‌های استاندارد و عمیق را دریافت می‌کنید.';
 }

@@ -484,6 +484,32 @@ void main() {
     await _shot(tester, 'settings_ai_hu');
   });
 
+  testWidgets('trial: brief analyses and the plan upsell (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'));
+    await s.entitlements.replace(
+      EntitlementState(
+        tier: PlanTier.trial,
+        periodStart: DateTime.now().subtract(const Duration(days: 1)),
+        periodEnd: DateTime.now().add(const Duration(days: 2)),
+        usedInPeriod: 1,
+        trialStartedAt: DateTime.now().subtract(const Duration(days: 1)),
+      ),
+    );
+    await pumpApp(tester, s, const Size(1200, 1000));
+    await tester.tap(find.text('Beállítások'));
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('AI-ELEMZÉS'), 200, scrollable: find.byType(Scrollable).last);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'trial_settings_hu');
+    await tester.tap(find.text('Új keresés'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Elemzés készítése'), 200, scrollable: find.byType(Scrollable).last);
+    await _shot(tester, 'trial_detail_hu');
+  });
+
   testWidgets('detail: analysis card shows length and cost (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'));
     await s.preferences.setAnalysisDepth(AnalysisDepth.deep);

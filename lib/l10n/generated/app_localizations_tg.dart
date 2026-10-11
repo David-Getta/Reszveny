@@ -1261,4 +1261,8 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Ҳисобро нест карда натавонистем. Пайвастро санҷед ва бори дигар кӯшиш кунед.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Таҳлилҳои озмоишӣ мухтасаранд ва бо модели тезтари AI сохта мешаванд. Бо тариф шумо AI-и пурқувваттарини моро, ҷустуҷӯҳои бештари веб ва дарозиҳои Стандартӣ ва Муфассалро мегиред.';
 }

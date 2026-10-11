@@ -1258,4 +1258,8 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Horiima momtude konte maa. Ƴeewto ceŋagol maa refti eto goɗngol.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ƴeewndooji etagol ngoni rabbiɗi, ina waɗee e modeel AI ɓurngel yaawde. So a jogii feere, a heɓan AI amen ɓurɗo baawde, ɓeydagol njiilaw geese, e njuuteendi Hakkundeejum e Luggiɗum.';
 }

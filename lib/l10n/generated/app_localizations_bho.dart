@@ -1253,4 +1253,8 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'खाता ना मिटावल जा सकल। आपन कनेक्शन जाँचीं आ फेर से कोसिस करीं।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ट्रायल के विश्लेषण छोट होला आ जादे तेज AI मॉडल से बनेला। प्लान लेला पर रउआ के हमनी के सबसे सक्षम AI, अउरी वेब खोज, साथे मानक आ विस्तार से वाला लंबाई मिलेला।';
 }

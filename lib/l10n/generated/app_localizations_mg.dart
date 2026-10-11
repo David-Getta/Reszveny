@@ -1276,4 +1276,8 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Fohy ny fandalinana mandritra ny fanandramana ary atao amin\'ny modely AI haingana kokoa. Miaraka amin\'ny tolotra, mahazo ny AI matanjaka indrindra ananay ianao, fikarohana an-tranonkala bebe kokoa ary ny halavany Antonony sy Lalina.';
 }

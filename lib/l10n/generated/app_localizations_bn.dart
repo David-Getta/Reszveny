@@ -1260,4 +1260,8 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'অ্যাকাউন্ট মোছা যায়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ট্রায়ালের বিশ্লেষণগুলি সংক্ষিপ্ত এবং একটি দ্রুততর AI মডেল দিয়ে তৈরি। প্ল্যান নিলে আপনি পাবেন আমাদের সবচেয়ে সক্ষম AI, আরও বেশি ওয়েব অনুসন্ধান এবং স্ট্যান্ডার্ড ও বিস্তারিত দৈর্ঘ্য।';
 }

@@ -362,5 +362,6 @@
   "deleteLocalData": "Jimija kabidi mamanyisha a mu tshintu etshi (portefeuille, alerte, biudi musue, biuvua mukebe, makonkonona malama)",
   "deleteAccountConfirm": "Jimija tshiendelele",
   "accountDeleted": "Tuajimija compte webe.",
-  "errDeleteAccount": "Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi."
+  "errDeleteAccount": "Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.",
+  "aiTrialBriefNote": "Makonkonona a diteta adi mîpi ne adi enzeka ne modele wa AI wa lukasa. Ne forfait, udi upeta AI wetu mupite bukole, makeba a bungi ku internet, ne bule bua Wa pankatshi ne Mule."
 }

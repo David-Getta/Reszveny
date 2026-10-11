@@ -362,5 +362,6 @@
   "deleteLocalData": "Smazat i data v tomto zařízení (portfolio, upozornění, oblíbené, historie, uložené analýzy)",
   "deleteAccountConfirm": "Trvale smazat",
   "accountDeleted": "Váš účet byl smazán.",
-  "errDeleteAccount": "Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu."
+  "errDeleteAccount": "Účet se nepodařilo smazat. Zkontrolujte připojení a zkuste to znovu.",
+  "aiTrialBriefNote": "Zkušební analýzy jsou stručné a vytváří je rychlejší model AI. S tarifem získáte naši nejschopnější AI, více vyhledávání na webu a délky Standardně a Podrobně."
 }

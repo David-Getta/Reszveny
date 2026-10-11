@@ -1268,4 +1268,8 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Չհաջողվեց ջնջել հաշիվը։ Ստուգեք կապը և նորից փորձեք։';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Փորձնական վերլուծությունները համառոտ են և կատարվում են ավելի արագ AI մոդելով։ Պլանով դուք ստանում եք մեր ամենահզոր AI-ն, ավելի շատ վեբ որոնումներ և Ստանդարտ ու Խորքային երկարությունները։';
 }

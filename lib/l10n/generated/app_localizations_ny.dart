@@ -1264,4 +1264,8 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akaunti sinathe kufufutidwa. Onani intaneti yanu ndipo yesaninso.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Kusanthula kwa nthawi yoyesera kumakhala kwachidule ndipo kumapangidwa ndi mtundu wa AI wothamanga kwambiri. Ndi dongosolo, mumapeza AI yathu yamphamvu kwambiri, kusaka kwambiri pa intaneti, komanso kutalika kwa Kwanthawi zonse ndi Kwatsatanetsatane.';
 }

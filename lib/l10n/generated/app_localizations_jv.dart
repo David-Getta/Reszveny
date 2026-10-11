@@ -1263,4 +1263,8 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akun ora bisa dibusak. Priksa sambungan lan coba manèh.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analisis nyoba iku ringkes lan digawe nganggo model AI sing luwih cepet. Kanthi paket, sampeyan entuk AI paling canggih saka kita, luwih akeh telusuran web, lan dawa Standar lan Jero.';
 }

@@ -1259,4 +1259,8 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hisobni oʻchirib boʻlmadi. Aloqani tekshirib, qaytadan urinib koʻring.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Sinov tahlillari qisqa va tezroq AI modeli bilan tayyorlanadi. Tarif bilan eng kuchli AI modelimiz, koʻproq veb-qidiruv hamda Standart va Batafsil uzunliklarni olasiz.';
 }

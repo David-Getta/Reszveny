@@ -362,5 +362,6 @@
   "deleteLocalData": "Dzēst arī datus šajā ierīcē (portfelis, brīdinājumi, izlase, vēsture, saglabātās analīzes)",
   "deleteAccountConfirm": "Dzēst neatgriezeniski",
   "accountDeleted": "Jūsu konts ir dzēsts.",
-  "errDeleteAccount": "Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz."
+  "errDeleteAccount": "Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
+  "aiTrialBriefNote": "Izmēģinājuma analīzes ir īsas, un tās veido ātrāks AI modelis. Ar plānu jūs saņemat mūsu spēcīgāko AI, vairāk meklējumu tīmeklī, kā arī standarta un padziļināto garumu."
 }

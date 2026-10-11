@@ -1271,4 +1271,8 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Izinhlaziyo zokuzama zifushane futhi zenziwa ngemodeli ye-AI esheshayo. Ngohlelo uthola i-AI yethu enekhono kakhulu, usesho lwewebhu olwengeziwe, nobude obuvamile nobujulile.';
 }

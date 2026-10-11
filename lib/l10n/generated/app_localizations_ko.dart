@@ -1218,4 +1218,8 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => '계정을 삭제하지 못했습니다. 연결을 확인하고 다시 시도하세요.';
+
+  @override
+  String get aiTrialBriefNote =>
+      '체험 분석은 간략하며 더 빠른 AI 모델로 작성됩니다. 요금제를 이용하면 가장 뛰어난 AI, 더 많은 웹 검색, 표준 및 심층 길이를 이용할 수 있습니다.';
 }

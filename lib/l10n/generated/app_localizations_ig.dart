@@ -1256,4 +1256,8 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Enweghị ike ihichapụ akaụntụ ahụ. Lelee njikọ gị wee nwaa ọzọ.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Nyocha nnwale dị nkenke, a na-ejikwa ụdị AI dị ọsọ karịa eme ha. Site n\'atụmatụ, ị na-enweta AI anyị kacha sie ike, ọchụchọ web karịa, yana ogologo Ọkọlọtọ na Miri emi.';
 }

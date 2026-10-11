@@ -166,10 +166,20 @@ void main() {
 
   test('in-depth analysis costs 2, and 402 insufficient_quota when only 1 is left', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.normal', 'verification_data': 'r-deep'},
+    );
     const deep = {'x-whatstock-depth': 'deep'};
     final ok = await call('POST', '/v1/analyze', token: token, body: {}, headers: deep);
     expect(ok['status'], 200);
     expect((await call('GET', '/v1/me', token: token))['body']['entitlements']['used'], 2);
+    // A Normál 8 elemzéséből 7 elfogy, 1 marad.
+    for (var i = 0; i < 5; i++) {
+      await call('POST', '/v1/analyze', token: token, body: {});
+    }
     final blocked = await call('POST', '/v1/analyze', token: token, body: {}, headers: deep);
     expect(blocked['status'], 402);
     expect(blocked['body'], {'error': 'insufficient_quota', 'needed': 2, 'available': 1});
@@ -215,8 +225,48 @@ void main() {
     expect((lastUpstream!['tools'] as List).first['max_uses'], 2);
   });
 
+  test('trial analyses are brief and run on the cheaper model; bought extras get the full analysis', () async {
+    final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    final greedy = {
+      'max_tokens': 64000,
+      'tools': [
+        {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': 50},
+      ],
+      'messages': [],
+    };
+    const deep = {'x-whatstock-depth': 'deep'};
+    await call('POST', '/v1/analyze', token: token, body: greedy, headers: deep);
+    expect(lastUpstream!['model'], 'claude-sonnet-5-5');
+    expect(lastUpstream!['max_tokens'], 12000); // rövid
+    expect((lastUpstream!['tools'] as List).first['max_uses'], 4);
+    // A részletes kérés is csak 1 elemzést fogyaszt, mert rövid lett.
+    expect((await call('GET', '/v1/me', token: token))['body']['entitlements']['used'], 1);
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'whatstock.pack.5', 'verification_data': 'r-pack'},
+    );
+    await call('POST', '/v1/analyze', token: token, body: greedy);
+    await call('POST', '/v1/analyze', token: token, body: greedy);
+    expect(lastUpstream!['model'], 'claude-sonnet-5-5');
+    // A próba-keret elfogyott: a megvett extra már a teljes értékű elemzés.
+    await call('POST', '/v1/analyze', token: token, body: greedy, headers: deep);
+    expect(lastUpstream!['model'], 'claude-opus-5-5');
+    expect(lastUpstream!['max_tokens'], 32000);
+    final me = (await call('GET', '/v1/me', token: token))['body']['entitlements'];
+    expect(me['used'], 3);
+    expect(me['extra'], 3);
+  });
+
   test('analyze runs on the server model and keeps only the web search tool', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.pro', 'verification_data': 'r-model'},
+    );
     await call(
       'POST',
       '/v1/analyze',

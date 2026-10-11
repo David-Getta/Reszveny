@@ -1264,4 +1264,8 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Οι δοκιμαστικές αναλύσεις είναι σύντομες και γίνονται με ένα ταχύτερο μοντέλο AI. Με ένα πρόγραμμα αποκτάτε το πιο ισχυρό μοντέλο AI μας, περισσότερες αναζητήσεις στο web και τα μήκη «Τυπική» και «Εις βάθος».';
 }

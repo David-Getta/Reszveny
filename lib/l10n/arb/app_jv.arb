@@ -362,5 +362,6 @@
   "deleteLocalData": "Busak uga data ing piranti iki (portofolio, pèngetan, favorit, riwayat, analisis sing disimpen)",
   "deleteAccountConfirm": "Busak permanen",
   "accountDeleted": "Akun sampeyan wis dibusak.",
-  "errDeleteAccount": "Akun ora bisa dibusak. Priksa sambungan lan coba manèh."
+  "errDeleteAccount": "Akun ora bisa dibusak. Priksa sambungan lan coba manèh.",
+  "aiTrialBriefNote": "Analisis nyoba iku ringkes lan digawe nganggo model AI sing luwih cepet. Kanthi paket, sampeyan entuk AI paling canggih saka kita, luwih akeh telusuran web, lan dawa Standar lan Jero."
 }

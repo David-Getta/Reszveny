@@ -362,5 +362,6 @@
   "deleteLocalData": "Siba n'amakuru ari kuri iki gikoresho (ishoramari, imenyesha, ibyo ukunda, amateka, amasesengura wabitse)",
   "deleteAccountConfirm": "Siba burundu",
   "accountDeleted": "Konti yawe yasibwe.",
-  "errDeleteAccount": "Konti ntiyashoboye gusibwa. Reba murandasi yawe wongere ugerageze."
+  "errDeleteAccount": "Konti ntiyashoboye gusibwa. Reba murandasi yawe wongere ugerageze.",
+  "aiTrialBriefNote": "Amasesengura y'igerageza ni magufi kandi akorwa na moderi ya AI yihuta. Ufite gahunda, ubona AI yacu ifite ubushobozi buruta ubundi, ishakisha ryinshi kuri murandasi, n'uburebure busanzwe n'ubwimbitse."
 }

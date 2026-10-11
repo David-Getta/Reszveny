@@ -362,5 +362,6 @@
   "deleteLocalData": "Usuń też dane na tym urządzeniu (portfel, alerty, ulubione, historia, zapisane analizy)",
   "deleteAccountConfirm": "Usuń trwale",
   "accountDeleted": "Twoje konto zostało usunięte.",
-  "errDeleteAccount": "Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie."
+  "errDeleteAccount": "Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie.",
+  "aiTrialBriefNote": "Analizy w okresie próbnym są krótkie i powstają z użyciem szybszego modelu AI. Z planem otrzymujesz nasz najbardziej zaawansowany model AI, więcej wyszukiwań w sieci oraz standardową i szczegółową długość analiz."
 }

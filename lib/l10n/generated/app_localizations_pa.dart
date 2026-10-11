@@ -1259,4 +1259,8 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ਖਾਤਾ ਮਿਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ਟ੍ਰਾਇਲ ਵਿਸ਼ਲੇਸ਼ਣ ਸੰਖੇਪ ਹੁੰਦੇ ਹਨ ਅਤੇ ਤੇਜ਼ AI ਮਾਡਲ ਨਾਲ ਬਣਾਏ ਜਾਂਦੇ ਹਨ। ਪਲਾਨ ਨਾਲ ਤੁਹਾਨੂੰ ਸਾਡਾ ਸਭ ਤੋਂ ਸਮਰੱਥ AI, ਵੱਧ ਵੈੱਬ ਖੋਜਾਂ, ਅਤੇ ਮਿਆਰੀ ਤੇ ਵਿਸਤ੍ਰਿਤ ਲੰਬਾਈ ਮਿਲਦੀ ਹੈ।';
 }
