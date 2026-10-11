@@ -66,10 +66,14 @@ class SupportedLocales {
     AppLanguage(Locale('uz'), 'Oʻzbekcha', 'Uzbek'),
     AppLanguage(Locale('or'), 'ଓଡ଼ିଆ', 'Odia'),
     AppLanguage(Locale('su'), 'Basa Sunda', 'Sundanese'),
+    AppLanguage(Locale('ceb'), 'Cebuano', 'Cebuano'),
     AppLanguage(Locale('mg'), 'Malagasy', 'Malagasy'),
+    AppLanguage(Locale('as'), 'অসমীয়া', 'Assamese'),
+    AppLanguage(Locale('af'), 'Afrikaans', 'Afrikaans'),
     AppLanguage(Locale('ht'), 'Kreyòl ayisyen', 'Haitian Creole'),
     AppLanguage(Locale('he'), 'עברית', 'Hebrew'),
     AppLanguage(Locale('hil'), 'Hiligaynon', 'Hiligaynon'),
+    AppLanguage(Locale('ky'), 'Кыргызча', 'Kyrgyz'),
     AppLanguage(Locale('hu'), 'Magyar', 'Hungarian'),
     AppLanguage(Locale('it'), 'Italiano', 'Italian'),
     AppLanguage(Locale('pl'), 'Polski', 'Polish'),
@@ -89,6 +93,10 @@ class SupportedLocales {
     AppLanguage(Locale('nb'), 'Norsk', 'Norwegian'),
     AppLanguage(Locale('sk'), 'Slovenčina', 'Slovak'),
     AppLanguage(Locale('lt'), 'Lietuvių', 'Lithuanian'),
+    AppLanguage(Locale('sl'), 'Slovenščina', 'Slovenian'),
+    AppLanguage(Locale('bs'), 'Bosanski', 'Bosnian'),
+    AppLanguage(Locale('gl'), 'Galego', 'Galician'),
+    AppLanguage(Locale('lv'), 'Latviešu', 'Latvian'),
   ];
 
   static List<Locale> get locales => all.map((l) => l.locale).toList();
