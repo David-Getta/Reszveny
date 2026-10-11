@@ -16,7 +16,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
   „Új keresés / Előzmények / Beállítások” menüvel, nagy üdvözlő sor és egy lekerekített
   keresősáv (ticker vagy cégnév, kép csatolása, kamera). Apple-szerű részletek: rendszerbetű,
   1 px-es finom szegélyek, rejtett natív címsor, húzható fejléc.
-- **Előhívás bárhonnan (macOS, Windows)**: `⌥ Space` (Windowson `Ctrl + Alt + Space`) egy
+- **Előhívás bárhonnan (macOS, Windows)**: `⌥ ⇧ Space` (Windowson `Ctrl + Alt + Space`) egy
   lebegő, mindig felül lévő gyorskereső sávot hoz elő – mint a Claude macOS-en. Enter: a
   találat a teljes ablakban nyílik meg; Esc vagy kattintás máshova: a sáv eltűnik.
 - **Menüsor- / tálcaikon**: Megnyitás, Gyorskeresés, Kilépés.

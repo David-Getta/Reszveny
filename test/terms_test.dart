@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
+import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/l10n/supported_locales.dart';
 import 'package:reszveny/l10n/terms.dart';
@@ -59,5 +60,14 @@ void main() {
       scope: HotKeyScope.system,
     );
     expect(DesktopIntegration.describeHotKey(win, space: 'Leertaste', mac: false), 'Ctrl + Alt + Leertaste');
+  });
+
+  test('the default shortcut does not collide with the Claude desktop app on macOS', () {
+    // A Claude gyors-beírója ⌥ Space-re és dupla Option-nyomásra nyílik.
+    final mac = DesktopIntegration.defaultHotKeyFor(mac: true);
+    expect(DesktopIntegration.describeHotKey(mac, space: 'Szóköz', mac: true), '⌥ Option + ⇧ Shift + Szóköz');
+    final other = DesktopIntegration.defaultHotKeyFor(mac: false);
+    expect(DesktopIntegration.describeHotKey(other, mac: false), 'Ctrl + Alt + Space');
+    expect(AppPreferences().doubleOption, isFalse);
   });
 }

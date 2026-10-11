@@ -98,10 +98,15 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   HotKey? _preferredHotKey;
   Size _lastFullSize = defaultWindowSize;
 
-  /// Az alapértelmezett gyorsbillentyű: ⌥ Space macOS-en, Ctrl+Alt+Space máshol.
-  static HotKey get defaultHotKey => HotKey(
+  /// Az alapértelmezett gyorsbillentyű: ⌥ ⇧ Space macOS-en, Ctrl+Alt+Space máshol.
+  static HotKey get defaultHotKey => defaultHotKeyFor(mac: Platform.isMacOS);
+
+  /// macOS-en a ⌥ Space-t (és a dupla Option-nyomást) a Claude, a ChatGPT, az
+  /// Alfred és a Raycast is használja, ezért a WhatStock a Shifttel bővített
+  /// változatot kapja; így a két app nem nyílik meg egyszerre.
+  static HotKey defaultHotKeyFor({required bool mac}) => HotKey(
     key: PhysicalKeyboardKey.space,
-    modifiers: Platform.isMacOS ? [HotKeyModifier.alt] : [HotKeyModifier.control, HotKeyModifier.alt],
+    modifiers: mac ? [HotKeyModifier.alt, HotKeyModifier.shift] : [HotKeyModifier.control, HotKeyModifier.alt],
     scope: HotKeyScope.system,
   );
 

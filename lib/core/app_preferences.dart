@@ -17,7 +17,7 @@ class AppPreferences extends ChangeNotifier {
     this.analysisDepth = AnalysisDepth.standard,
     this.readerLevel = ReaderLevel.beginner,
     this.counterArgument = true,
-    this.doubleOption = true,
+    this.doubleOption = false,
     this.doubleOptionAsked = false,
     this.keepInTray = true,
   }) : _recent = List.of(recent),
@@ -93,7 +93,8 @@ class AppPreferences extends ChangeNotifier {
         analysisDepth: AnalysisDepth.values.asNameMap()[prefs.getString(_depthKey) ?? ''] ?? AnalysisDepth.standard,
         readerLevel: ReaderLevel.values.asNameMap()[prefs.getString(_readerKey) ?? ''] ?? ReaderLevel.beginner,
         counterArgument: prefs.getBool(_counterKey) ?? true,
-        doubleOption: prefs.getBool(_doubleOptionKey) ?? true,
+        // Alapból ki: a Claude asztali appja is a dupla Option-nyomást figyeli.
+        doubleOption: prefs.getBool(_doubleOptionKey) ?? false,
         doubleOptionAsked: prefs.getBool(_doubleOptionAskedKey) ?? false,
         keepInTray: prefs.getBool(_keepInTrayKey) ?? true,
       );

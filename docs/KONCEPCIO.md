@@ -85,11 +85,14 @@ Keskeny képernyőn (telefon) ugyanez oldalsáv nélkül. Apple-részletek: rend
 1 px-es szegélyek, nagy lekerekítés, rejtett natív címsor, húzható fejléc, macOS-en a
 lámpáknak hagyott hely.
 
-**Előhívás bárhonnan.** macOS-en és Windowson egy globális gyorsbillentyű (`⌥ Space`, illetve
+**Előhívás bárhonnan.** macOS-en és Windowson egy globális gyorsbillentyű (`⌥ ⇧ Space`, illetve
 `Ctrl + Alt + Space`) egy kompakt, lebegő keresősávot hoz elő a képernyő felső harmadában,
 minden más ablak felett – ugyanúgy, ahogy a Claude macOS-es alkalmazása. Enter a teljes
 ablakban nyitja meg a találatot, Esc vagy fókuszvesztés elrejti a sávot. A menüsorban /
-tálcán ikon áll rendelkezésre „Megnyitás / Gyorskeresés / Kilépés” menüvel.
+tálcán ikon áll rendelkezésre „Megnyitás / Gyorskeresés / Kilépés” menüvel. macOS-en azért nem a
+`⌥ Space` az alapértelmezés, mert azt (és a dupla Option-nyomást) a Claude asztali appja is használja,
+és a kettő egyszerre nyílt meg; a dupla Option a beállításokban kapcsolható be, a gyorsbillentyű
+ott átállítható.
 
 **Technika.** `window_manager` (ablak: rejtett címsor, méret, mindig felül, átlátszó háttér a
 gyorssávhoz), `hotkey_manager` (rendszerszintű gyorsbillentyű), `tray_manager` (ikon és menü).
