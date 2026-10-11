@@ -110,7 +110,7 @@ AppServices _services({
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
-  final config = backend ? const AppConfig(backendUrl: 'https://api.stocklens.app') : const AppConfig();
+  final config = backend ? const AppConfig(backendUrl: 'https://api.whatstock.app') : const AppConfig();
   return AppServices(
     portfolio: portfolio,
     alerts: alerts,
@@ -339,11 +339,11 @@ void main() {
     tester.view.physicalSize = size;
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
-    await tester.pumpWidget(RepaintBoundary(child: StockLensApp(services: s)));
+    await tester.pumpWidget(RepaintBoundary(child: WhatStockApp(services: s)));
     await tester.pumpAndSettle();
     // A logó-képek aszinkron töltődnek; itt megvárjuk őket.
     await tester.runAsync(() async {
-      final ctx = tester.element(find.byType(StockLensApp));
+      final ctx = tester.element(find.byType(WhatStockApp));
       for (final a in ['assets/branding/logo_128.png', 'assets/branding/logo_256.png']) {
         await precacheImage(AssetImage(a), ctx);
       }
@@ -497,7 +497,7 @@ void main() {
 
   testWidgets('settings bottom with version (hungarian)', (tester) async {
     PackageInfo.setMockInitialValues(
-      appName: 'StockLens',
+      appName: 'WhatStock',
       packageName: 'hu.reszveny.reszveny',
       version: '0.2.4',
       buildNumber: '7',
@@ -534,7 +534,7 @@ void main() {
           services: _services(),
           child: MaterialApp(
             theme: AppTheme.build(Brightness.dark),
-            localizationsDelegates: StockLensApp.localizationsDelegates,
+            localizationsDelegates: WhatStockApp.localizationsDelegates,
             supportedLocales: const [Locale('en')],
             home: QuickBar(onOpenSymbol: (_) {}, onOpenWindow: () {}),
           ),

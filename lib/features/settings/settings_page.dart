@@ -581,7 +581,7 @@ class _VersionFooterState extends State<_VersionFooter> {
           children: [
             Image.asset('assets/branding/logo_128.png', height: 28),
             const SizedBox(height: 6),
-            Text('StockLens', style: theme.textTheme.titleSmall),
+            Text('WhatStock', style: theme.textTheme.titleSmall),
             const SizedBox(height: 2),
             SelectableText(
               l10n.currentVersion(updates.displayVersion ?? '–'),

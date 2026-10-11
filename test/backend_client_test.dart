@@ -36,14 +36,14 @@ void main() {
     });
 
     test('BACKEND_URL-lel kulcs nélkül is konfigurált, és a szerverre mutat', () {
-      const c = AppConfig(backendUrl: 'https://api.stocklens.app/');
+      const c = AppConfig(backendUrl: 'https://api.whatstock.app/');
       expect(c.hasBackend, isTrue);
       expect(c.hasAnthropicKey, isTrue);
       expect(c.hasFinnhubKey, isTrue);
       expect(c.isDemoMode, isFalse);
-      expect(c.effectiveAnthropicBaseUrl, 'https://api.stocklens.app/v1/anthropic');
-      expect(c.effectiveFinnhubBaseUrl, 'https://api.stocklens.app/v1/market');
-      expect(c.analyzeEndpoint, 'https://api.stocklens.app/v1/analyze');
+      expect(c.effectiveAnthropicBaseUrl, 'https://api.whatstock.app/v1/anthropic');
+      expect(c.effectiveFinnhubBaseUrl, 'https://api.whatstock.app/v1/market');
+      expect(c.analyzeEndpoint, 'https://api.whatstock.app/v1/analyze');
     });
   });
 
@@ -99,7 +99,7 @@ void main() {
           return _json({'user_id': 'u1', 'token': 'tok1', 'entitlements': _ent()});
         }
         final body = jsonDecode(req.body) as Map;
-        if (body['product_id'] == 'stocklens.sub.max') {
+        if (body['product_id'] == 'whatstock.sub.max') {
           expect(body['platform'], 'app_store');
           expect(body['verification_data'], 'receipt');
           return _json({'entitlements': _ent(tier: 'max'), 'applied': true});
@@ -109,12 +109,12 @@ void main() {
       final b = BackendClient(baseUrl: 'https://x.test', inner: client);
       final e = await b.verifyPurchase(
         platform: 'app_store',
-        productId: 'stocklens.sub.max',
+        productId: 'whatstock.sub.max',
         verificationData: 'receipt',
       );
       expect(e.tier, PlanTier.max);
       await expectLater(
-        b.verifyPurchase(platform: 'app_store', productId: 'stocklens.pack.5', verificationData: 'x'),
+        b.verifyPurchase(platform: 'app_store', productId: 'whatstock.pack.5', verificationData: 'x'),
         throwsA(isA<BackendException>().having((x) => x.code, 'code', 'invalid_purchase')),
       );
     });

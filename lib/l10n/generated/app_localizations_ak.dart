@@ -10,7 +10,7 @@ class AppLocalizationsAk extends AppLocalizations {
   AppLocalizationsAk([String locale = 'ak']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Twa kyɛfa bi mfonini na hu ne ho nsɛm nyinaa.';
@@ -430,11 +430,11 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Mia $shortcut baabiara na frɛ StockLens.';
+    return 'Mia $shortcut baabiara na frɛ WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Bue StockLens';
+  String get trayOpen => 'Bue WhatStock';
 
   @override
   String get trayQuickSearch => 'Nhwehwɛ ntɛm';
@@ -951,7 +951,7 @@ class AppLocalizationsAk extends AppLocalizations {
   String get accountSyncedNote => 'Wo subscription ne nhwehwɛmu a aka no yɛ pɛ wɔ mfiri nyinaa so.';
 
   @override
-  String get signInTitle => 'Wura StockLens mu';
+  String get signInTitle => 'Wura WhatStock mu';
 
   @override
   String get emailLabel => 'Email adrɛs';
@@ -999,18 +999,18 @@ class AppLocalizationsAk extends AppLocalizations {
   String get doubleOptionTitle => 'Mia Option mprɛnu';
 
   @override
-  String get doubleOptionSubtitle => 'Sɛ womia Option mprɛnu ntɛm a, ɛno nso frɛ StockLens.';
+  String get doubleOptionSubtitle => 'Sɛ womia Option mprɛnu ntɛm a, ɛno nso frɛ WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Sɛ wopɛ sɛ ɛyɛ adwuma wɔ app foforo mu nso a, ma StockLens kwan wɔ System Settings → Privacy & Security → Input Monitoring, na afei bue app no bio.';
+      'Sɛ wopɛ sɛ ɛyɛ adwuma wɔ app foforo mu nso a, ma WhatStock kwan wɔ System Settings → Privacy & Security → Input Monitoring, na afei bue app no bio.';
 
   @override
   String get openSystemSettings => 'Bue System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Mia $shortcut anaa mia Option mprɛnu baabiara na frɛ StockLens.';
+    return 'Mia $shortcut anaa mia Option mprɛnu baabiara na frɛ WhatStock.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Yɛhwɛ kɔkɔbɔ simma 5 biara bere a StockLens reyɛ adwuma. Wɔ kɔmputa so, ɛkɔ so yɛ adwuma wɔ menu bar anaa tray mu; wɔ fon so, seesei kɔkɔbɔ ba bere a app no abue nko ara.';
+      'Yɛhwɛ kɔkɔbɔ simma 5 biara bere a WhatStock reyɛ adwuma. Wɔ kɔmputa so, ɛkɔ so yɛ adwuma wɔ menu bar anaa tray mu; wɔ fon so, seesei kɔkɔbɔ ba bere a app no abue nko ara.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens tena menu bar anaa tray mu, enti kwan tiawa no ne bo ho kɔkɔbɔ kɔ so yɛ adwuma.';
+      'WhatStock tena menu bar anaa tray mu, enti kwan tiawa no ne bo ho kɔkɔbɔ kɔ so yɛ adwuma.';
 
   @override
   String get termsOfUse => 'Dwumadi Mmara';

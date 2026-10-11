@@ -10,7 +10,7 @@ class AppLocalizationsUz extends AppLocalizations {
   AppLocalizationsUz([String locale = 'uz']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Aksiyani suratga oling va u haqida hamma narsani bilib oling.';
@@ -430,11 +430,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLensni chaqirish uchun istalgan joyda $shortcut tugmalarini bosing.';
+    return 'WhatStockni chaqirish uchun istalgan joyda $shortcut tugmalarini bosing.';
   }
 
   @override
-  String get trayOpen => 'StockLensni ochish';
+  String get trayOpen => 'WhatStockni ochish';
 
   @override
   String get trayQuickSearch => 'Tezkor qidiruv';
@@ -951,7 +951,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get accountSyncedNote => 'Obunangiz va qolgan tahlillaringiz barcha qurilmalarda bir xil.';
 
   @override
-  String get signInTitle => 'StockLensga kirish';
+  String get signInTitle => 'WhatStockka kirish';
 
   @override
   String get emailLabel => 'Elektron pochta manzili';
@@ -999,18 +999,18 @@ class AppLocalizationsUz extends AppLocalizations {
   String get doubleOptionTitle => 'Option tugmasini ikki marta bosish';
 
   @override
-  String get doubleOptionSubtitle => 'Option tugmasini tez ikki marta bosish ham StockLensni chaqiradi.';
+  String get doubleOptionSubtitle => 'Option tugmasini tez ikki marta bosish ham WhatStockni chaqiradi.';
 
   @override
   String get doubleOptionPermission =>
-      'Bu boshqa ilovalarda ham ishlashi uchun Tizim sozlamalari → Maxfiylik va xavfsizlik → Kiritishni kuzatish boʻlimida StockLensga ruxsat bering, soʻng ilovani qayta oching.';
+      'Bu boshqa ilovalarda ham ishlashi uchun Tizim sozlamalari → Maxfiylik va xavfsizlik → Kiritishni kuzatish boʻlimida WhatStockka ruxsat bering, soʻng ilovani qayta oching.';
 
   @override
   String get openSystemSettings => 'Tizim sozlamalarini ochish';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLensni chaqirish uchun istalgan joyda $shortcut tugmalarini yoki Option tugmasini ikki marta bosing.';
+    return 'WhatStockni chaqirish uchun istalgan joyda $shortcut tugmalarini yoki Option tugmasini ikki marta bosing.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ishlab turganda bildirishnomalar har 5 daqiqada tekshiriladi. Kompyuterda ilova menyu satrida yoki bildirishnomalar maydonida ishlashda davom etadi; telefonda esa hozircha bildirishnomalar faqat ilova ochiq boʻlganda keladi.';
+      'WhatStock ishlab turganda bildirishnomalar har 5 daqiqada tekshiriladi. Kompyuterda ilova menyu satrida yoki bildirishnomalar maydonida ishlashda davom etadi; telefonda esa hozircha bildirishnomalar faqat ilova ochiq boʻlganda keladi.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens menyu satrida yoki bildirishnomalar maydonida qoladi, shuning uchun tezkor tugmalar va narx bildirishnomalari ishlashda davom etadi.';
+      'WhatStock menyu satrida yoki bildirishnomalar maydonida qoladi, shuning uchun tezkor tugmalar va narx bildirishnomalari ishlashda davom etadi.';
 
   @override
   String get termsOfUse => 'Foydalanish shartlari';

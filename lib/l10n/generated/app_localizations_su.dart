@@ -10,7 +10,7 @@ class AppLocalizationsSu extends AppLocalizations {
   AppLocalizationsSu([String locale = 'su']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Poto hiji saham, terus kanyahoan sagala rupa ngeunaan éta saham.';
@@ -431,11 +431,11 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Pencét $shortcut di mana waé pikeun nyauran StockLens.';
+    return 'Pencét $shortcut di mana waé pikeun nyauran WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Buka StockLens';
+  String get trayOpen => 'Buka WhatStock';
 
   @override
   String get trayQuickSearch => 'Panéangan gancang';
@@ -953,7 +953,7 @@ class AppLocalizationsSu extends AppLocalizations {
   String get accountSyncedNote => 'Langganan jeung sésa analisis anjeun sarua dina unggal parangkat.';
 
   @override
-  String get signInTitle => 'Asup ka StockLens';
+  String get signInTitle => 'Asup ka WhatStock';
 
   @override
   String get emailLabel => 'Alamat surélék';
@@ -1002,18 +1002,18 @@ class AppLocalizationsSu extends AppLocalizations {
   String get doubleOptionTitle => 'Pencét Option dua kali';
 
   @override
-  String get doubleOptionSubtitle => 'Mencét tombol Option dua kali gancang ogé nyauran StockLens.';
+  String get doubleOptionSubtitle => 'Mencét tombol Option dua kali gancang ogé nyauran WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Sangkan jalan ogé dina aplikasi séjén, idinan StockLens dina Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, terus buka deui aplikasina.';
+      'Sangkan jalan ogé dina aplikasi séjén, idinan WhatStock dina Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, terus buka deui aplikasina.';
 
   @override
   String get openSystemSettings => 'Buka Pengaturan Sistem';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Pencét $shortcut atawa pencét Option dua kali di mana waé pikeun nyauran StockLens.';
+    return 'Pencét $shortcut atawa pencét Option dua kali di mana waé pikeun nyauran WhatStock.';
   }
 
   @override
@@ -1171,7 +1171,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Béwara dipariksa unggal 5 menit salila StockLens jalan. Dina komputer, StockLens tetep jalan dina bar menu atawa baki sistem; dina telepon, samentawis béwara ngan datang lamun aplikasina keur dibuka.';
+      'Béwara dipariksa unggal 5 menit salila WhatStock jalan. Dina komputer, WhatStock tetep jalan dina bar menu atawa baki sistem; dina telepon, samentawis béwara ngan datang lamun aplikasina keur dibuka.';
 
   @override
   String alertDescAbove(String price) {
@@ -1227,7 +1227,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens tetep aya dina bar menu atawa baki sistem, jadi pintasan jeung béwara harga tetep jalan.';
+      'WhatStock tetep aya dina bar menu atawa baki sistem, jadi pintasan jeung béwara harga tetep jalan.';
 
   @override
   String get termsOfUse => 'Katangtuan Pamakéan';

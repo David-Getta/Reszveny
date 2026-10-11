@@ -10,7 +10,7 @@ class AppLocalizationsBm extends AppLocalizations {
   AppLocalizationsBm([String locale = 'bm']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Aksiyɔn dɔ ja ta, ka a ko bɛɛ dɔn.';
@@ -435,11 +435,11 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '$shortcut digi yɔrɔ o yɔrɔ walasa ka StockLens wele.';
+    return '$shortcut digi yɔrɔ o yɔrɔ walasa ka WhatStock wele.';
   }
 
   @override
-  String get trayOpen => 'StockLens dayɛlɛ';
+  String get trayOpen => 'WhatStock dayɛlɛ';
 
   @override
   String get trayQuickSearch => 'Ɲinini teliman';
@@ -955,7 +955,7 @@ class AppLocalizationsBm extends AppLocalizations {
   String get accountSyncedNote => 'I ka abɔnɛman ni sɛgɛsɛgɛli tolenw ye kelen ye minɛn bɛɛ kan.';
 
   @override
-  String get signInTitle => 'Don StockLens kɔnɔ';
+  String get signInTitle => 'Don WhatStock kɔnɔ';
 
   @override
   String get emailLabel => 'Imɛli adrɛsi';
@@ -1003,18 +1003,18 @@ class AppLocalizationsBm extends AppLocalizations {
   String get doubleOptionTitle => 'Option digi siɲɛ fila';
 
   @override
-  String get doubleOptionSubtitle => 'Ni i ye Option butɔn digi siɲɛ fila joona, o fana bɛ StockLens wele.';
+  String get doubleOptionSubtitle => 'Ni i ye Option butɔn digi siɲɛ fila joona, o fana bɛ WhatStock wele.';
 
   @override
   String get doubleOptionPermission =>
-      'Walasa a ka baara kɛ aplikasiyɔn wɛrɛw kɔnɔ fana, StockLens yamaruya Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée la, o kɔ aplikasiyɔn dayɛlɛ kokura.';
+      'Walasa a ka baara kɛ aplikasiyɔn wɛrɛw kɔnɔ fana, WhatStock yamaruya Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée la, o kɔ aplikasiyɔn dayɛlɛ kokura.';
 
   @override
   String get openSystemSettings => 'Réglages Système dayɛlɛ';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return '$shortcut digi walima Option digi siɲɛ fila yɔrɔ o yɔrɔ walasa ka StockLens wele.';
+    return '$shortcut digi walima Option digi siɲɛ fila yɔrɔ o yɔrɔ walasa ka WhatStock wele.';
   }
 
   @override
@@ -1174,7 +1174,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Lasɔminiw bɛ lajɛ miniti 5 o miniti 5 StockLens bɛ baara la tuma min na. Ɔridinatɛri kan, a bɛ to baara la menu barɛ walima kunnafoni yɔrɔ la; telefɔni kan, sisan lasɔminiw bɛ na ni aplikasiyɔn dayɛlɛlen don dɔrɔn.';
+      'Lasɔminiw bɛ lajɛ miniti 5 o miniti 5 WhatStock bɛ baara la tuma min na. Ɔridinatɛri kan, a bɛ to baara la menu barɛ walima kunnafoni yɔrɔ la; telefɔni kan, sisan lasɔminiw bɛ na ni aplikasiyɔn dayɛlɛlen don dɔrɔn.';
 
   @override
   String alertDescAbove(String price) {
@@ -1230,7 +1230,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens bɛ to menu barɛ walima kunnafoni yɔrɔ la, o la sira surun ni sɔngɔ lasɔminiw bɛ to baara la.';
+      'WhatStock bɛ to menu barɛ walima kunnafoni yɔrɔ la, o la sira surun ni sɔngɔ lasɔminiw bɛ to baara la.';
 
   @override
   String get termsOfUse => 'Baarakɛcogo sariyaw';

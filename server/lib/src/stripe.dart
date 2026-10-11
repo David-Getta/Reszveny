@@ -17,12 +17,12 @@ class StripeClient {
   final String secretKey;
   final String webhookSecret;
 
-  /// Termékazonosító → Stripe price ID (pl. `stocklens.sub.pro` → `price_123`).
+  /// Termékazonosító → Stripe price ID (pl. `whatstock.sub.pro` → `price_123`).
   final Map<String, String> prices;
   final String apiBase;
   final http.Client _client;
 
-  /// `STRIPE_PRICES="stocklens.sub.pro=price_1,stocklens.pack.5=price_2"` értelmezése.
+  /// `STRIPE_PRICES="whatstock.sub.pro=price_1,whatstock.pack.5=price_2"` értelmezése.
   static Map<String, String> parsePrices(String? raw) => {
     for (final pair in (raw ?? '').split(',').map((s) => s.trim()).where((s) => s.contains('=')))
       pair.split('=').first.trim(): pair.split('=').last.trim(),

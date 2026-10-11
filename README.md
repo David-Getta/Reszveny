@@ -1,13 +1,13 @@
-# StockLens
+# WhatStock
 
-<img src="assets/branding/wordmark_dark.png" alt="StockLens" width="360">
+<img src="assets/branding/wordmark_dark.png" alt="WhatStock" width="360">
 
-**Név**: a *lens* egyszerre a kamera objektívje (lefotózod a részvényt) és a nagyító, amivel átlátod (minden adat és AI-elemzés). A logó: nagyító, a lencséjében három emelkedő gyertya (ránagyítasz a részvényre). Saját, programból rajzolt jel: `tool/make_logo.py` (újragenerálás: `python3 tool/make_logo.py`, majd `dart run flutter_launcher_icons`).
+**Név**: *WhatStock* – „milyen részvény ez?”: lefotózod, és megmondja, mi ez a részvény, és mi van mögötte. Könnyű kimondani és leírni, és a név elmondja, mire jó. (Korábbi munkanév: WhatStock; a whatstock.com egy másik, bejegyzett védjegyű részvényelemző szolgáltatásé, ezért váltottunk.) A logó: nagyító, a lencséjében három emelkedő gyertya (ránagyítasz a részvényre). Saját, programból rajzolt jel: `tool/make_logo.py` (újragenerálás: `python3 tool/make_logo.py`, majd `dart run flutter_launcher_icons`).
 
 **Lefotózunk egy részvényt, és az app kiírja róla az összes tudnivalót, a legrészletesebben.**
 
 Egy kódbázis, öt platform: **iOS, iPadOS, macOS, Android, Windows** (Flutter).
-A felület **44 nyelven** érhető el, az alapértelmezett az angol; a részletes lista és a
+A felület **120 nyelven** érhető el, az alapértelmezett az angol; a részletes lista és a
 koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 
 ## Kinézet és asztali élmény
@@ -145,7 +145,7 @@ kapja adaptív elrendezéssel.
 
 | Beállítás (`--dart-define`) | Jelentés | Alapértelmezés |
 |---|---|---|
-| `BACKEND_URL` | a StockLens backend címe; ha meg van adva, a kulcsok nem kellenek | – (közvetlen hívás) |
+| `BACKEND_URL` | a WhatStock backend címe; ha meg van adva, a kulcsok nem kellenek | – (közvetlen hívás) |
 | `ANTHROPIC_API_KEY` | képfelismerés kulcsa | – (nélküle csak kézi ticker) |
 | `ANTHROPIC_MODEL` | használt modell | `claude-opus-5-5` |
 | `ANTHROPIC_BASE_URL` | saját proxy éles kiadáshoz | `https://api.anthropic.com` |
@@ -176,7 +176,7 @@ lib/
     stock_detail/  részletes nézet: AI-elemzés, grafikon, ár, azonosítás, értékelés, kimutatások, hírek…
     settings/      nyelvválasztó, névjegy
   l10n/
-    arb/           app_<nyelv>.arb – 44 nyelv, a sablon az app_en.arb
+    arb/           app_<nyelv>.arb – 120 nyelv, a sablon az app_en.arb
     generated/     flutter gen-l10n kimenete (verziókezelt, hogy a build ne függjön tőle)
 test/          egységtesztek (parse-olás, ticker-kereső, nyelvfeloldás, ARB-teljesség), widget-tesztek
 server/        Dart (shelf + SQLite) backend: proxy, kvóta, vásárlás-ellenőrzés – saját tesztekkel

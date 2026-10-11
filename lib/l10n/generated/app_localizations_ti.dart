@@ -10,7 +10,7 @@ class AppLocalizationsTi extends AppLocalizations {
   AppLocalizationsTi([String locale = 'ti']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ናይ ሓደ ኣክሲዮን ስእሊ ኣልዕሉ፣ ብዛዕባኡ ድማ ኩሉ ፍለጡ።';
@@ -427,11 +427,11 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens ንምጽዋዕ ኣብ ዝኾነ ቦታ $shortcut ጠውቑ።';
+    return 'WhatStock ንምጽዋዕ ኣብ ዝኾነ ቦታ $shortcut ጠውቑ።';
   }
 
   @override
-  String get trayOpen => 'StockLens ክፈት';
+  String get trayOpen => 'WhatStock ክፈት';
 
   @override
   String get trayQuickSearch => 'ቅልጡፍ ምድላይ';
@@ -940,7 +940,7 @@ class AppLocalizationsTi extends AppLocalizations {
   String get accountSyncedNote => 'ምዝገባኹምን ዝተረፉ ትንተናታትን ኣብ ኩሉ መሳርሒ ሓደ እዮም።';
 
   @override
-  String get signInTitle => 'ናብ StockLens እተዉ';
+  String get signInTitle => 'ናብ WhatStock እተዉ';
 
   @override
   String get emailLabel => 'ኣድራሻ ኢመይል';
@@ -987,18 +987,18 @@ class AppLocalizationsTi extends AppLocalizations {
   String get doubleOptionTitle => 'Option ክልተ ግዜ ጠውቕ';
 
   @override
-  String get doubleOptionSubtitle => 'መፍትሕ Option ብቕልጡፍ ክልተ ግዜ ምጥዋቕ’ውን StockLens ይጽውዕ።';
+  String get doubleOptionSubtitle => 'መፍትሕ Option ብቕልጡፍ ክልተ ግዜ ምጥዋቕ’ውን WhatStock ይጽውዕ።';
 
   @override
   String get doubleOptionPermission =>
-      'ኣብ ካልኦት ኣፕታት’ውን ምእንቲ ክሰርሕ፣ StockLens ኣብ System Settings → Privacy & Security → Input Monitoring ፍቐዱሉ፣ ድሕሪኡ ነቲ ኣፕ ዳግማይ ክፈትዎ።';
+      'ኣብ ካልኦት ኣፕታት’ውን ምእንቲ ክሰርሕ፣ WhatStock ኣብ System Settings → Privacy & Security → Input Monitoring ፍቐዱሉ፣ ድሕሪኡ ነቲ ኣፕ ዳግማይ ክፈትዎ።';
 
   @override
   String get openSystemSettings => 'ቅጥዕታት ስርዓት ክፈት';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens ንምጽዋዕ ኣብ ዝኾነ ቦታ $shortcut ጠውቑ ወይ Option ክልተ ግዜ ጠውቑ።';
+    return 'WhatStock ንምጽዋዕ ኣብ ዝኾነ ቦታ $shortcut ጠውቑ ወይ Option ክልተ ግዜ ጠውቑ።';
   }
 
   @override
@@ -1154,7 +1154,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ክሰርሕ ከሎ መጠንቀቕታታት ኣብ ነፍሲ ወከፍ 5 ደቓይቕ ይፍተሹ። ኣብ ኮምፒተር ኣብ ባር ሜኑ ወይ ትሬይ ምስራሕ ይቕጽል፤ ኣብ ተሌፎን ግን ንሕጂ መጠንቀቕታታት ዝመጹ እቲ ኣፕ ክፉት ክኸውን ከሎ ጥራይ እዩ።';
+      'WhatStock ክሰርሕ ከሎ መጠንቀቕታታት ኣብ ነፍሲ ወከፍ 5 ደቓይቕ ይፍተሹ። ኣብ ኮምፒተር ኣብ ባር ሜኑ ወይ ትሬይ ምስራሕ ይቕጽል፤ ኣብ ተሌፎን ግን ንሕጂ መጠንቀቕታታት ዝመጹ እቲ ኣፕ ክፉት ክኸውን ከሎ ጥራይ እዩ።';
 
   @override
   String alertDescAbove(String price) {
@@ -1209,7 +1209,7 @@ class AppLocalizationsTi extends AppLocalizations {
   String get keepInTrayTitle => 'መስኮት ምስ ተዓጽወ ምስራሕ ቀጽል';
 
   @override
-  String get keepInTraySubtitle => 'StockLens ኣብ ባር ሜኑ ወይ ትሬይ ይጸንሕ፣ ስለዚ መሕጸሪ መፍትሕን መጠንቀቕታታት ዋጋን ምስራሕ ይቕጽሉ።';
+  String get keepInTraySubtitle => 'WhatStock ኣብ ባር ሜኑ ወይ ትሬይ ይጸንሕ፣ ስለዚ መሕጸሪ መፍትሕን መጠንቀቕታታት ዋጋን ምስራሕ ይቕጽሉ።';
 
   @override
   String get termsOfUse => 'ውዕል ኣጠቓቕማ';

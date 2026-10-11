@@ -10,7 +10,7 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => '株式を撮影して、その銘柄のすべてを知る。';
@@ -427,11 +427,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'どこからでも $shortcut を押すと StockLens を呼び出せます。';
+    return 'どこからでも $shortcut を押すと WhatStock を呼び出せます。';
   }
 
   @override
-  String get trayOpen => 'StockLens を開く';
+  String get trayOpen => 'WhatStock を開く';
 
   @override
   String get trayQuickSearch => 'クイック検索';
@@ -917,7 +917,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get accountSyncedNote => 'サブスクリプションと残りの分析回数は、どのデバイスでも共通です。';
 
   @override
-  String get signInTitle => 'StockLens にサインイン';
+  String get signInTitle => 'WhatStock にサインイン';
 
   @override
   String get emailLabel => 'メールアドレス';
@@ -964,18 +964,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get doubleOptionTitle => 'Option キーを2回押す';
 
   @override
-  String get doubleOptionSubtitle => 'Option キーをすばやく2回押しても StockLens を呼び出せます。';
+  String get doubleOptionSubtitle => 'Option キーをすばやく2回押しても WhatStock を呼び出せます。';
 
   @override
   String get doubleOptionPermission =>
-      '他のアプリでも使えるようにするには、「システム設定」→「プライバシーとセキュリティ」→「入力監視」で StockLens を許可してから、アプリを開き直してください。';
+      '他のアプリでも使えるようにするには、「システム設定」→「プライバシーとセキュリティ」→「入力監視」で WhatStock を許可してから、アプリを開き直してください。';
 
   @override
   String get openSystemSettings => 'システム設定を開く';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'どこからでも $shortcut を押すか Option キーを2回押すと StockLens を呼び出せます。';
+    return 'どこからでも $shortcut を押すか Option キーを2回押すと WhatStock を呼び出せます。';
   }
 
   @override
@@ -1130,7 +1130,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLensの実行中は5分ごとにアラートを確認します。パソコンではメニューバーまたはタスクトレイで動作を続けます。スマートフォンでは現在、アプリを開いているときのみ通知します。';
+      'WhatStockの実行中は5分ごとにアラートを確認します。パソコンではメニューバーまたはタスクトレイで動作を続けます。スマートフォンでは現在、アプリを開いているときのみ通知します。';
 
   @override
   String alertDescAbove(String price) {
@@ -1185,7 +1185,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get keepInTrayTitle => 'ウィンドウを閉じても実行を続ける';
 
   @override
-  String get keepInTraySubtitle => 'StockLensはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
+  String get keepInTraySubtitle => 'WhatStockはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
 
   @override
   String get termsOfUse => '利用規約';

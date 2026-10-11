@@ -89,7 +89,7 @@ class _FakeAnalyst implements StockAnalyst {
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
   testWidgets('manual ticker lookup shows the detail page with all sections', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services()));
+    await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
 
     expect(find.text('Which stock shall we look at?'), findsOneWidget);
@@ -119,7 +119,7 @@ void main() {
   });
 
   testWidgets('company name search lists matches and opens the chosen one', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services()));
+    await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'micro');
     await tester.testTextInput.receiveAction(TextInputAction.search);
@@ -130,7 +130,7 @@ void main() {
   });
 
   testWidgets('AI analysis renders the generated report', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services()));
+    await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
@@ -143,7 +143,7 @@ void main() {
   });
 
   testWidgets('star adds a favorite that shows on the home screen with a price', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services()));
+    await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
@@ -162,7 +162,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final s = services();
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
@@ -190,7 +190,7 @@ void main() {
     for (var i = 0; i < 20; i++) {
       await s.entitlements.consume();
     }
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
@@ -207,7 +207,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final s = services();
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
@@ -232,7 +232,7 @@ void main() {
     tester.view.physicalSize = const Size(1400, 900);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
-    await tester.pumpWidget(StockLensApp(services: services()));
+    await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
     expect(find.text('New search'), findsOneWidget);
     await tester.enterText(find.byType(TextField), 'NVDA');
@@ -243,23 +243,42 @@ void main() {
   });
 
   testWidgets('hungarian locale renders translated strings', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services(locale: const Locale('hu'))));
+    await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('hu'))));
     await tester.pumpAndSettle();
     expect(find.text('Which stock shall we look at?'), findsNothing);
     expect(find.byType(TextField), findsOneWidget);
   });
 
   testWidgets('a locale without built-in Material strings still renders (fallback delegate)', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services(locale: const Locale('jv'))));
+    await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('jv'))));
     await tester.pumpAndSettle();
     expect(find.byType(TextField), findsOneWidget);
     expect(Localizations.localeOf(tester.element(find.byType(TextField))), const Locale('jv'));
   });
 
   testWidgets('right-to-left locale flips the text direction', (tester) async {
-    await tester.pumpWidget(StockLensApp(services: services(locale: const Locale('ar'))));
+    await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('ar'))));
     await tester.pumpAndSettle();
     expect(Directionality.of(tester.element(find.byType(TextField))), TextDirection.rtl);
+  });
+
+  // Az ujgurt a Flutter balról jobbra írja, a szindhit és a szoráni kurdot nem ismeri.
+  for (final code in ['ug', 'sd', 'ckb', 'he', 'ps']) {
+    testWidgets('$code is right-to-left', (tester) async {
+      await tester.pumpWidget(WhatStockApp(services: services(locale: Locale(code))));
+      await tester.pumpAndSettle();
+      final field = tester.element(find.byType(TextField));
+      expect(Localizations.localeOf(field), Locale(code));
+      expect(Directionality.of(field), TextDirection.rtl);
+    });
+  }
+
+  testWidgets('a new left-to-right language without Material strings renders (yoruba)', (tester) async {
+    await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('yo'))));
+    await tester.pumpAndSettle();
+    final field = tester.element(find.byType(TextField));
+    expect(Localizations.localeOf(field), const Locale('yo'));
+    expect(Directionality.of(field), TextDirection.ltr);
   });
 
   testWidgets('AI analysis settings: length shows its cost, reader level and counter-argument persist', (tester) async {
@@ -267,7 +286,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final s = services();
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
@@ -294,7 +313,7 @@ void main() {
 
   testWidgets('the bottom of the settings shows the app version', (tester) async {
     PackageInfo.setMockInitialValues(
-      appName: 'StockLens',
+      appName: 'WhatStock',
       packageName: 'hu.reszveny.reszveny',
       version: '0.2.4',
       buildNumber: '7',
@@ -304,7 +323,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final s = services();
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();

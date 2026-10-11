@@ -10,7 +10,7 @@ class AppLocalizationsAz extends AppLocalizations {
   AppLocalizationsAz([String locale = 'az']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Səhmin şəklini çəkin və onun haqqında hər şeyi öyrənin.';
@@ -432,11 +432,11 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens-i çağırmaq üçün istənilən yerdə $shortcut düymələrini basın.';
+    return 'WhatStock-u çağırmaq üçün istənilən yerdə $shortcut düymələrini basın.';
   }
 
   @override
-  String get trayOpen => 'StockLens-i aç';
+  String get trayOpen => 'WhatStock-u aç';
 
   @override
   String get trayQuickSearch => 'Sürətli axtarış';
@@ -951,7 +951,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get accountSyncedNote => 'Abunəliyiniz və qalan təhlilləriniz bütün cihazlarda eynidir.';
 
   @override
-  String get signInTitle => 'StockLens-ə daxil olun';
+  String get signInTitle => 'WhatStock-a daxil olun';
 
   @override
   String get emailLabel => 'E-poçt ünvanı';
@@ -1000,18 +1000,18 @@ class AppLocalizationsAz extends AppLocalizations {
   String get doubleOptionTitle => 'Option düyməsini iki dəfə basmaq';
 
   @override
-  String get doubleOptionSubtitle => 'Option düyməsini cəld iki dəfə basmaq da StockLens-i çağırır.';
+  String get doubleOptionSubtitle => 'Option düyməsini cəld iki dəfə basmaq da WhatStock-u çağırır.';
 
   @override
   String get doubleOptionPermission =>
-      'Bunun digər tətbiqlərdə də işləməsi üçün Sistem ayarları → Məxfilik və təhlükəsizlik → Daxiletmə monitorinqi bölməsində StockLens-ə icazə verin, sonra tətbiqi yenidən açın.';
+      'Bunun digər tətbiqlərdə də işləməsi üçün Sistem ayarları → Məxfilik və təhlükəsizlik → Daxiletmə monitorinqi bölməsində WhatStock-a icazə verin, sonra tətbiqi yenidən açın.';
 
   @override
   String get openSystemSettings => 'Sistem ayarlarını aç';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens-i çağırmaq üçün istənilən yerdə $shortcut düymələrini basın və ya Option düyməsini iki dəfə basın.';
+    return 'WhatStock-u çağırmaq üçün istənilən yerdə $shortcut düymələrini basın və ya Option düyməsini iki dəfə basın.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens işlədiyi müddətdə bildirişlər hər 5 dəqiqədən bir yoxlanılır. Kompüterdə tətbiq menyu sətrində və ya sistem trayında işləməyə davam edir; telefonda isə bildirişlər hələlik yalnız tətbiq açıq olanda gəlir.';
+      'WhatStock işlədiyi müddətdə bildirişlər hər 5 dəqiqədən bir yoxlanılır. Kompüterdə tətbiq menyu sətrində və ya sistem trayında işləməyə davam edir; telefonda isə bildirişlər hələlik yalnız tətbiq açıq olanda gəlir.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens menyu sətrində və ya sistem trayında qalır, beləliklə qısayol və qiymət bildirişləri işləməyə davam edir.';
+      'WhatStock menyu sətrində və ya sistem trayında qalır, beləliklə qısayol və qiymət bildirişləri işləməyə davam edir.';
 
   @override
   String get termsOfUse => 'İstifadə şərtləri';

@@ -10,7 +10,7 @@ class AppLocalizationsTs extends AppLocalizations {
   AppLocalizationsTs([String locale = 'ts']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Teka xifaniso xa xere u dyondza hinkwaswo hi yona.';
@@ -439,11 +439,11 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tshikelela $shortcut kun\'wana na kun\'wana ku vitana StockLens.';
+    return 'Tshikelela $shortcut kun\'wana na kun\'wana ku vitana WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Pfula StockLens';
+  String get trayOpen => 'Pfula WhatStock';
 
   @override
   String get trayQuickSearch => 'Ndzavisiso wa xihatla';
@@ -963,7 +963,7 @@ class AppLocalizationsTs extends AppLocalizations {
       'Ntsariso wa wena na minxopaxopo leyi saleke swa fana eka xitirhisiwa xin\'wana na xin\'wana.';
 
   @override
-  String get signInTitle => 'Nghena eka StockLens';
+  String get signInTitle => 'Nghena eka WhatStock';
 
   @override
   String get emailLabel => 'Adirese ya imeyili';
@@ -1013,18 +1013,18 @@ class AppLocalizationsTs extends AppLocalizations {
   String get doubleOptionTitle => 'Tshikelela Option kambirhi';
 
   @override
-  String get doubleOptionSubtitle => 'Ku tshikelela khii ya Option kambirhi hi xihatla na swona swi vitana StockLens.';
+  String get doubleOptionSubtitle => 'Ku tshikelela khii ya Option kambirhi hi xihatla na swona swi vitana WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Leswaku swi tirha na le ka ti-app tin\'wana, pfumelela StockLens eka System Settings → Privacy & Security → Input Monitoring, kutani u pfula app nakambe.';
+      'Leswaku swi tirha na le ka ti-app tin\'wana, pfumelela WhatStock eka System Settings → Privacy & Security → Input Monitoring, kutani u pfula app nakambe.';
 
   @override
   String get openSystemSettings => 'Pfula System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tshikelela $shortcut kumbe u tshikelela Option kambirhi kun\'wana na kun\'wana ku vitana StockLens.';
+    return 'Tshikelela $shortcut kumbe u tshikelela Option kambirhi kun\'wana na kun\'wana ku vitana WhatStock.';
   }
 
   @override
@@ -1183,7 +1183,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Switiviso swi kamberiwa timinete tin\'wana na tin\'wana ta 5 loko StockLens yi ri karhi yi tirha. Eka khompyuta yi ya emahlweni yi tirha eka bara ya menyu kumbe threyi; eka riqingho, sweswi switiviso swi fika ntsena loko app yi pfuriwile.';
+      'Switiviso swi kamberiwa timinete tin\'wana na tin\'wana ta 5 loko WhatStock yi ri karhi yi tirha. Eka khompyuta yi ya emahlweni yi tirha eka bara ya menyu kumbe threyi; eka riqingho, sweswi switiviso swi fika ntsena loko app yi pfuriwile.';
 
   @override
   String alertDescAbove(String price) {
@@ -1239,7 +1239,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens yi tshama eka bara ya menyu kumbe threyi, hikokwalaho ndlela yo koma na switiviso swa nxavo swi ya emahlweni swi tirha.';
+      'WhatStock yi tshama eka bara ya menyu kumbe threyi, hikokwalaho ndlela yo koma na switiviso swa nxavo swi ya emahlweni swi tirha.';
 
   @override
   String get termsOfUse => 'Swipimelo swa Matirhiselo';

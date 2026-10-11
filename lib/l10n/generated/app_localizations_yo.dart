@@ -10,7 +10,7 @@ class AppLocalizationsYo extends AppLocalizations {
   AppLocalizationsYo([String locale = 'yo']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Ya fọ́tò ìpín kan, kí o sì mọ gbogbo nǹkan nípa rẹ̀.';
@@ -429,11 +429,11 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tẹ $shortcut níbikíbi láti pe StockLens.';
+    return 'Tẹ $shortcut níbikíbi láti pe WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Ṣí StockLens';
+  String get trayOpen => 'Ṣí WhatStock';
 
   @override
   String get trayQuickSearch => 'Ìwádìí kíákíá';
@@ -949,7 +949,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get accountSyncedNote => 'Àsansílẹ̀ rẹ àti ìtúpalẹ̀ tó kù jẹ́ ọ̀kan náà lórí gbogbo ẹ̀rọ.';
 
   @override
-  String get signInTitle => 'Wọlé sí StockLens';
+  String get signInTitle => 'Wọlé sí WhatStock';
 
   @override
   String get emailLabel => 'Àdírẹ́sì ímeèlì';
@@ -998,18 +998,18 @@ class AppLocalizationsYo extends AppLocalizations {
   String get doubleOptionTitle => 'Tẹ Option lẹ́ẹ̀mejì';
 
   @override
-  String get doubleOptionSubtitle => 'Títẹ bọ́tìnnì Option lẹ́ẹ̀mejì kíákíá náà máa ń pe StockLens.';
+  String get doubleOptionSubtitle => 'Títẹ bọ́tìnnì Option lẹ́ẹ̀mejì kíákíá náà máa ń pe WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Kí ó lè ṣiṣẹ́ nínú àwọn áàpù mìíràn pẹ̀lú, gba StockLens láàyè ní System Settings → Privacy & Security → Input Monitoring, lẹ́yìn náà tún áàpù náà ṣí.';
+      'Kí ó lè ṣiṣẹ́ nínú àwọn áàpù mìíràn pẹ̀lú, gba WhatStock láàyè ní System Settings → Privacy & Security → Input Monitoring, lẹ́yìn náà tún áàpù náà ṣí.';
 
   @override
   String get openSystemSettings => 'Ṣí System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tẹ $shortcut tàbí tẹ Option lẹ́ẹ̀mejì níbikíbi láti pe StockLens.';
+    return 'Tẹ $shortcut tàbí tẹ Option lẹ́ẹ̀mejì níbikíbi láti pe WhatStock.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'A máa ń ṣàyẹ̀wò ìkìlọ̀ ní gbogbo ìṣẹ́jú 5 nígbà tí StockLens bá ń ṣiṣẹ́. Lórí kọ̀ǹpútà, ó máa ń ṣiṣẹ́ lọ nínú ọ̀pá mẹ́nù tàbí tíréè; lórí fóònù, fún báyìí, ìkìlọ̀ máa ń dé nígbà tí áàpù bá ṣí sílẹ̀ nìkan.';
+      'A máa ń ṣàyẹ̀wò ìkìlọ̀ ní gbogbo ìṣẹ́jú 5 nígbà tí WhatStock bá ń ṣiṣẹ́. Lórí kọ̀ǹpútà, ó máa ń ṣiṣẹ́ lọ nínú ọ̀pá mẹ́nù tàbí tíréè; lórí fóònù, fún báyìí, ìkìlọ̀ máa ń dé nígbà tí áàpù bá ṣí sílẹ̀ nìkan.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens yóò wà nínú ọ̀pá mẹ́nù tàbí tíréè, kí ọ̀nà àbùjá àti ìkìlọ̀ iye owó lè máa ṣiṣẹ́.';
+      'WhatStock yóò wà nínú ọ̀pá mẹ́nù tàbí tíréè, kí ọ̀nà àbùjá àti ìkìlọ̀ iye owó lè máa ṣiṣẹ́.';
 
   @override
   String get termsOfUse => 'Òfin Ìlò';

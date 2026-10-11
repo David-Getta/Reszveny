@@ -1,5 +1,5 @@
-name: stocklens_server
-description: StockLens backend – API-kulcs proxy, vásárlás-ellenőrzés, elemzés-kvóta.
+name: whatstock_server
+description: WhatStock backend – API-kulcs proxy, vásárlás-ellenőrzés, elemzés-kvóta.
 version: 0.1.0
 publish_to: none
 

@@ -10,7 +10,7 @@ class AppLocalizationsLv extends AppLocalizations {
   AppLocalizationsLv([String locale = 'lv']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Nofotografējiet akciju un uzziniet par to visu.';
@@ -439,11 +439,11 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nospiediet $shortcut jebkurā vietā, lai atvērtu StockLens.';
+    return 'Nospiediet $shortcut jebkurā vietā, lai atvērtu WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Atvērt StockLens';
+  String get trayOpen => 'Atvērt WhatStock';
 
   @override
   String get trayQuickSearch => 'Ātrā meklēšana';
@@ -986,7 +986,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get accountSyncedNote => 'Jūsu abonements un atlikušās analīzes ir vienādi visās ierīcēs.';
 
   @override
-  String get signInTitle => 'Pierakstīties pakalpojumā StockLens';
+  String get signInTitle => 'Pierakstīties pakalpojumā WhatStock';
 
   @override
   String get emailLabel => 'E-pasta adrese';
@@ -1035,18 +1035,18 @@ class AppLocalizationsLv extends AppLocalizations {
   String get doubleOptionTitle => 'Divreiz nospiest Option';
 
   @override
-  String get doubleOptionSubtitle => 'StockLens var atvērt arī, divreiz ātri nospiežot taustiņu Option.';
+  String get doubleOptionSubtitle => 'WhatStock var atvērt arī, divreiz ātri nospiežot taustiņu Option.';
 
   @override
   String get doubleOptionPermission =>
-      'Lai tas darbotos arī citās lietotnēs, atļaujiet StockLens sadaļā Sistēmas iestatījumi → Privātums un drošība → Ievades pārraudzība un pēc tam atkārtoti atveriet lietotni.';
+      'Lai tas darbotos arī citās lietotnēs, atļaujiet WhatStock sadaļā Sistēmas iestatījumi → Privātums un drošība → Ievades pārraudzība un pēc tam atkārtoti atveriet lietotni.';
 
   @override
   String get openSystemSettings => 'Atvērt sistēmas iestatījumus';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Nospiediet $shortcut vai divreiz nospiediet Option jebkurā vietā, lai atvērtu StockLens.';
+    return 'Nospiediet $shortcut vai divreiz nospiediet Option jebkurā vietā, lai atvērtu WhatStock.';
   }
 
   @override
@@ -1210,7 +1210,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Brīdinājumi tiek pārbaudīti ik pēc 5 minūtēm, kamēr StockLens darbojas. Datorā lietotne turpina darboties izvēļņu joslā vai sistēmas teknē; tālrunī brīdinājumi pagaidām tiek saņemti tikai tad, kad lietotne ir atvērta.';
+      'Brīdinājumi tiek pārbaudīti ik pēc 5 minūtēm, kamēr WhatStock darbojas. Datorā lietotne turpina darboties izvēļņu joslā vai sistēmas teknē; tālrunī brīdinājumi pagaidām tiek saņemti tikai tad, kad lietotne ir atvērta.';
 
   @override
   String alertDescAbove(String price) {
@@ -1266,7 +1266,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens paliek izvēļņu joslā vai sistēmas teknē, tāpēc īsinājumtaustiņš un cenu brīdinājumi turpina darboties.';
+      'WhatStock paliek izvēļņu joslā vai sistēmas teknē, tāpēc īsinājumtaustiņš un cenu brīdinājumi turpina darboties.';
 
   @override
   String get termsOfUse => 'Lietošanas noteikumi';

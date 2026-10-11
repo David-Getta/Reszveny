@@ -10,7 +10,7 @@ class AppLocalizationsHt extends AppLocalizations {
   AppLocalizationsHt([String locale = 'ht']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Pran foto yon aksyon epi dekouvri tout sa ou bezwen konnen sou li.';
@@ -431,11 +431,11 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Peze $shortcut kèlkeswa kote ou ye pou rele StockLens.';
+    return 'Peze $shortcut kèlkeswa kote ou ye pou rele WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Louvri StockLens';
+  String get trayOpen => 'Louvri WhatStock';
 
   @override
   String get trayQuickSearch => 'Rechèch rapid';
@@ -950,7 +950,7 @@ class AppLocalizationsHt extends AppLocalizations {
   String get accountSyncedNote => 'Abònman ou ak analiz ki rete yo se menm bagay sou chak aparèy.';
 
   @override
-  String get signInTitle => 'Konekte nan StockLens';
+  String get signInTitle => 'Konekte nan WhatStock';
 
   @override
   String get emailLabel => 'Adrès imèl';
@@ -998,18 +998,18 @@ class AppLocalizationsHt extends AppLocalizations {
   String get doubleOptionTitle => 'Peze Option de fwa';
 
   @override
-  String get doubleOptionSubtitle => 'Lè w peze touch Option la de fwa byen vit, sa rele StockLens tou.';
+  String get doubleOptionSubtitle => 'Lè w peze touch Option la de fwa byen vit, sa rele WhatStock tou.';
 
   @override
   String get doubleOptionPermission =>
-      'Pou sa mache nan lòt aplikasyon tou, otorize StockLens nan Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, epi relouvri aplikasyon an.';
+      'Pou sa mache nan lòt aplikasyon tou, otorize WhatStock nan Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, epi relouvri aplikasyon an.';
 
   @override
   String get openSystemSettings => 'Louvri Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Peze $shortcut oswa peze Option de fwa kèlkeswa kote ou ye pou rele StockLens.';
+    return 'Peze $shortcut oswa peze Option de fwa kèlkeswa kote ou ye pou rele WhatStock.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Nou tcheke alèt yo chak 5 minit pandan StockLens ap mache. Sou yon òdinatè, li kontinye mache nan ba meni an oswa nan tray la; sou yon telefòn, pou kounye a alèt yo rive sèlman lè aplikasyon an louvri.';
+      'Nou tcheke alèt yo chak 5 minit pandan WhatStock ap mache. Sou yon òdinatè, li kontinye mache nan ba meni an oswa nan tray la; sou yon telefòn, pou kounye a alèt yo rive sèlman lè aplikasyon an louvri.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens rete nan ba meni an oswa nan tray la, konsa rakousi a ak alèt pri yo kontinye mache.';
+      'WhatStock rete nan ba meni an oswa nan tray la, konsa rakousi a ak alèt pri yo kontinye mache.';
 
   @override
   String get termsOfUse => 'Kondisyon itilizasyon';

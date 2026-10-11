@@ -10,7 +10,7 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fotografiază o acțiune și află totul despre ea.';
@@ -439,11 +439,11 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Apasă $shortcut oriunde pentru a deschide StockLens.';
+    return 'Apasă $shortcut oriunde pentru a deschide WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Deschide StockLens';
+  String get trayOpen => 'Deschide WhatStock';
 
   @override
   String get trayQuickSearch => 'Căutare rapidă';
@@ -979,7 +979,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get accountSyncedNote => 'Abonamentul tău și analizele rămase sunt aceleași pe fiecare dispozitiv.';
 
   @override
-  String get signInTitle => 'Conectează-te la StockLens';
+  String get signInTitle => 'Conectează-te la WhatStock';
 
   @override
   String get emailLabel => 'Adresă de e-mail';
@@ -1027,18 +1027,18 @@ class AppLocalizationsRo extends AppLocalizations {
   String get doubleOptionTitle => 'Apăsare dublă pe Opțiune';
 
   @override
-  String get doubleOptionSubtitle => 'Și apăsarea rapidă de două ori a tastei Opțiune deschide StockLens.';
+  String get doubleOptionSubtitle => 'Și apăsarea rapidă de două ori a tastei Opțiune deschide WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Pentru ca funcția să meargă și în alte aplicații, permite StockLens în Configurări sistem → Intimitate și securitate → Monitorizare intrare, apoi redeschide aplicația.';
+      'Pentru ca funcția să meargă și în alte aplicații, permite WhatStock în Configurări sistem → Intimitate și securitate → Monitorizare intrare, apoi redeschide aplicația.';
 
   @override
   String get openSystemSettings => 'Deschide Configurări sistem';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Apasă $shortcut sau de două ori tasta Opțiune oriunde pentru a deschide StockLens.';
+    return 'Apasă $shortcut sau de două ori tasta Opțiune oriunde pentru a deschide WhatStock.';
   }
 
   @override
@@ -1202,7 +1202,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Alertele sunt verificate la fiecare 5 minute cât timp StockLens rulează. Pe calculator aplicația continuă în bara de meniu sau în bara de sistem; pe telefon, deocamdată alertele vin doar când aplicația e deschisă.';
+      'Alertele sunt verificate la fiecare 5 minute cât timp WhatStock rulează. Pe calculator aplicația continuă în bara de meniu sau în bara de sistem; pe telefon, deocamdată alertele vin doar când aplicația e deschisă.';
 
   @override
   String alertDescAbove(String price) {
@@ -1258,7 +1258,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens rămâne în bara de meniu sau în bara de sistem, astfel încât scurtătura și alertele de preț funcționează în continuare.';
+      'WhatStock rămâne în bara de meniu sau în bara de sistem, astfel încât scurtătura și alertele de preț funcționează în continuare.';
 
   @override
   String get termsOfUse => 'Termeni de utilizare';

@@ -10,7 +10,7 @@ class AppLocalizationsNl extends AppLocalizations {
   AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fotografeer een aandeel en ontdek er alles over.';
@@ -431,11 +431,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Druk waar dan ook op $shortcut om StockLens te openen.';
+    return 'Druk waar dan ook op $shortcut om WhatStock te openen.';
   }
 
   @override
-  String get trayOpen => 'StockLens openen';
+  String get trayOpen => 'WhatStock openen';
 
   @override
   String get trayQuickSearch => 'Snel zoeken';
@@ -952,7 +952,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get accountSyncedNote => 'Je abonnement en resterende analyses zijn op elk apparaat hetzelfde.';
 
   @override
-  String get signInTitle => 'Inloggen bij StockLens';
+  String get signInTitle => 'Inloggen bij WhatStock';
 
   @override
   String get emailLabel => 'E-mailadres';
@@ -1001,18 +1001,18 @@ class AppLocalizationsNl extends AppLocalizations {
   String get doubleOptionTitle => 'Twee keer op Option drukken';
 
   @override
-  String get doubleOptionSubtitle => 'Ook snel twee keer op de Option-toets drukken opent StockLens.';
+  String get doubleOptionSubtitle => 'Ook snel twee keer op de Option-toets drukken opent WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Wil je dat dit ook in andere apps werkt, sta StockLens dan toe via Systeeminstellingen → Privacy en beveiliging → Invoermonitoring en open de app daarna opnieuw.';
+      'Wil je dat dit ook in andere apps werkt, sta WhatStock dan toe via Systeeminstellingen → Privacy en beveiliging → Invoermonitoring en open de app daarna opnieuw.';
 
   @override
   String get openSystemSettings => 'Systeeminstellingen openen';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Druk waar dan ook op $shortcut of twee keer op Option om StockLens te openen.';
+    return 'Druk waar dan ook op $shortcut of twee keer op Option om WhatStock te openen.';
   }
 
   @override
@@ -1170,7 +1170,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Alerts worden elke 5 minuten gecontroleerd zolang StockLens draait. Op een computer blijft de app actief in de menubalk of het systeemvak; op een telefoon komen alerts voorlopig alleen als de app open is.';
+      'Alerts worden elke 5 minuten gecontroleerd zolang WhatStock draait. Op een computer blijft de app actief in de menubalk of het systeemvak; op een telefoon komen alerts voorlopig alleen als de app open is.';
 
   @override
   String alertDescAbove(String price) {
@@ -1226,7 +1226,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens blijft in de menubalk of het systeemvak, zodat de sneltoets en koersalerts blijven werken.';
+      'WhatStock blijft in de menubalk of het systeemvak, zodat de sneltoets en koersalerts blijven werken.';
 
   @override
   String get termsOfUse => 'Gebruiksvoorwaarden';

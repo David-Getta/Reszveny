@@ -10,7 +10,7 @@ class AppLocalizationsQu extends AppLocalizations {
   AppLocalizationsQu([String locale = 'qu']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Huk accionpa fotonta hurquy, hinaspa tukuy imatapas chaymanta yachay.';
@@ -434,11 +434,11 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Maypipas $shortcut ñit\'iy StockLensta waqyanaykipaq.';
+    return 'Maypipas $shortcut ñit\'iy WhatStockta waqyanaykipaq.';
   }
 
   @override
-  String get trayOpen => 'StockLensta kichay';
+  String get trayOpen => 'WhatStockta kichay';
 
   @override
   String get trayQuickSearch => 'Utqay maskay';
@@ -958,7 +958,7 @@ class AppLocalizationsQu extends AppLocalizations {
   String get accountSyncedNote => 'Suscripciónniyki puchuq t\'aqwiyniykikunapas sapa equipopi kaqllam.';
 
   @override
-  String get signInTitle => 'StockLensman yaykuy';
+  String get signInTitle => 'WhatStockman yaykuy';
 
   @override
   String get emailLabel => 'Correo electrónico';
@@ -1007,18 +1007,18 @@ class AppLocalizationsQu extends AppLocalizations {
   String get doubleOptionTitle => 'Option iskay kutita ñit\'iy';
 
   @override
-  String get doubleOptionSubtitle => 'Option teclata utqaylla iskay kutita ñit\'ispapas StockLenstam waqyanki.';
+  String get doubleOptionSubtitle => 'Option teclata utqaylla iskay kutita ñit\'ispapas WhatStocktam waqyanki.';
 
   @override
   String get doubleOptionPermission =>
-      'Huk aplicacionkunapipas llamk\'ananpaq, StockLensta saqiy Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada nisqapi, chaymanta aplicaciónta wakmanta kichay.';
+      'Huk aplicacionkunapipas llamk\'ananpaq, WhatStockta saqiy Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada nisqapi, chaymanta aplicaciónta wakmanta kichay.';
 
   @override
   String get openSystemSettings => 'Ajustes del Sistema nisqata kichay';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Maypipas $shortcut ñit\'iy utaq Option iskay kutita ñit\'iy StockLensta waqyanaykipaq.';
+    return 'Maypipas $shortcut ñit\'iy utaq Option iskay kutita ñit\'iy WhatStockta waqyanaykipaq.';
   }
 
   @override
@@ -1178,7 +1178,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens llamk\'achkaptinqa sapa 5 minutopi willachiykunata qhawan. Computadorapiqa menú barrapi utaq tray nisqapi llamk\'aspa qhipakun; celularpiqa, kunanpaqqa aplicación kichasqa kaptinllam willachiykuna chayamun.';
+      'WhatStock llamk\'achkaptinqa sapa 5 minutopi willachiykunata qhawan. Computadorapiqa menú barrapi utaq tray nisqapi llamk\'aspa qhipakun; celularpiqa, kunanpaqqa aplicación kichasqa kaptinllam willachiykuna chayamun.';
 
   @override
   String alertDescAbove(String price) {
@@ -1234,7 +1234,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLensqa menú barrapi utaq tray nisqapi qhipakun, chaymi atajopas chanin willachiykunapas llamk\'allanku.';
+      'WhatStockqa menú barrapi utaq tray nisqapi qhipakun, chaymi atajopas chanin willachiykunapas llamk\'allanku.';
 
   @override
   String get termsOfUse => 'Llamk\'achiypa kamachiykunan';

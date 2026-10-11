@@ -10,7 +10,7 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fotografe uma ação e saiba tudo sobre ela.';
@@ -433,11 +433,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Pressione $shortcut em qualquer lugar para abrir o StockLens.';
+    return 'Pressione $shortcut em qualquer lugar para abrir o WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Abrir o StockLens';
+  String get trayOpen => 'Abrir o WhatStock';
 
   @override
   String get trayQuickSearch => 'Pesquisa rápida';
@@ -954,7 +954,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get accountSyncedNote => 'A sua subscrição e as análises restantes são as mesmas em todos os dispositivos.';
 
   @override
-  String get signInTitle => 'Iniciar sessão no StockLens';
+  String get signInTitle => 'Iniciar sessão no WhatStock';
 
   @override
   String get emailLabel => 'Endereço de e-mail';
@@ -1003,18 +1003,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get doubleOptionTitle => 'Pressionar Option duas vezes';
 
   @override
-  String get doubleOptionSubtitle => 'Pressionar rapidamente a tecla Option duas vezes também abre o StockLens.';
+  String get doubleOptionSubtitle => 'Pressionar rapidamente a tecla Option duas vezes também abre o WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Para que funcione também fora do StockLens, ative o StockLens em Ajustes do Sistema → Privacidade e Segurança → Monitoração de Entrada e, em seguida, abra-o novamente.';
+      'Para que funcione também fora do WhatStock, ative o WhatStock em Ajustes do Sistema → Privacidade e Segurança → Monitoração de Entrada e, em seguida, abra-o novamente.';
 
   @override
   String get openSystemSettings => 'Abrir Ajustes do Sistema';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Pressione $shortcut ou duas vezes a tecla Option em qualquer lugar para abrir o StockLens.';
+    return 'Pressione $shortcut ou duas vezes a tecla Option em qualquer lugar para abrir o WhatStock.';
   }
 
   @override
@@ -1172,7 +1172,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Os alertas são verificados a cada 5 minutos enquanto o StockLens está aberto. No computador continua ativo na barra de menus ou na área de notificação; no telemóvel, por agora avisa quando a app está aberta.';
+      'Os alertas são verificados a cada 5 minutos enquanto o WhatStock está aberto. No computador continua ativo na barra de menus ou na área de notificação; no telemóvel, por agora avisa quando a app está aberta.';
 
   @override
   String alertDescAbove(String price) {
@@ -1228,7 +1228,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'O StockLens fica na barra de menus ou na área de notificação, para que o atalho e os alertas de preço continuem a funcionar.';
+      'O WhatStock fica na barra de menus ou na área de notificação, para que o atalho e os alertas de preço continuem a funcionar.';
 
   @override
   String get termsOfUse => 'Termos de utilização';

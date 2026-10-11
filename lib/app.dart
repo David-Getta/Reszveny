@@ -7,8 +7,8 @@ import 'l10n/generated/app_localizations.dart';
 import 'l10n/supported_locales.dart';
 import 'theme/app_theme.dart';
 
-class StockLensApp extends StatelessWidget {
-  const StockLensApp({super.key, required this.services});
+class WhatStockApp extends StatelessWidget {
+  const WhatStockApp({super.key, required this.services});
 
   final AppServices services;
 

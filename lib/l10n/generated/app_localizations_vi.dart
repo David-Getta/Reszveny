@@ -10,7 +10,7 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.';
@@ -436,11 +436,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nhấn $shortcut ở bất kỳ đâu để gọi StockLens.';
+    return 'Nhấn $shortcut ở bất kỳ đâu để gọi WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Mở StockLens';
+  String get trayOpen => 'Mở WhatStock';
 
   @override
   String get trayQuickSearch => 'Tìm kiếm nhanh';
@@ -942,7 +942,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get accountSyncedNote => 'Gói đăng ký và số lượt phân tích còn lại của bạn giống nhau trên mọi thiết bị.';
 
   @override
-  String get signInTitle => 'Đăng nhập vào StockLens';
+  String get signInTitle => 'Đăng nhập vào WhatStock';
 
   @override
   String get emailLabel => 'Địa chỉ email';
@@ -990,18 +990,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get doubleOptionTitle => 'Nhấn Option hai lần';
 
   @override
-  String get doubleOptionSubtitle => 'Nhấn nhanh phím Option hai lần cũng sẽ gọi StockLens.';
+  String get doubleOptionSubtitle => 'Nhấn nhanh phím Option hai lần cũng sẽ gọi WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Để tính năng này hoạt động cả trong các ứng dụng khác, hãy cho phép StockLens trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Giám sát đầu vào, sau đó mở lại ứng dụng.';
+      'Để tính năng này hoạt động cả trong các ứng dụng khác, hãy cho phép WhatStock trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Giám sát đầu vào, sau đó mở lại ứng dụng.';
 
   @override
   String get openSystemSettings => 'Mở Cài đặt hệ thống';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Nhấn $shortcut hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens.';
+    return 'Nhấn $shortcut hoặc nhấn Option hai lần ở bất kỳ đâu để gọi WhatStock.';
   }
 
   @override
@@ -1159,7 +1159,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Cảnh báo được kiểm tra mỗi 5 phút khi StockLens đang chạy. Trên máy tính, ứng dụng tiếp tục chạy ở thanh menu hoặc khay hệ thống; trên điện thoại, hiện chỉ báo khi ứng dụng đang mở.';
+      'Cảnh báo được kiểm tra mỗi 5 phút khi WhatStock đang chạy. Trên máy tính, ứng dụng tiếp tục chạy ở thanh menu hoặc khay hệ thống; trên điện thoại, hiện chỉ báo khi ứng dụng đang mở.';
 
   @override
   String alertDescAbove(String price) {
@@ -1215,7 +1215,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens ở lại thanh menu hoặc khay hệ thống để phím tắt và cảnh báo giá vẫn hoạt động.';
+      'WhatStock ở lại thanh menu hoặc khay hệ thống để phím tắt và cảnh báo giá vẫn hoạt động.';
 
   @override
   String get termsOfUse => 'Điều khoản sử dụng';

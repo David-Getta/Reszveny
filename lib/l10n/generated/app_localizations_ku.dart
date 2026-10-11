@@ -10,7 +10,7 @@ class AppLocalizationsKu extends AppLocalizations {
   AppLocalizationsKu([String locale = 'ku']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
@@ -432,11 +432,11 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Ji bo vexwendina StockLens li her derê $shortcut bitikîne.';
+    return 'Ji bo vexwendina WhatStock li her derê $shortcut bitikîne.';
   }
 
   @override
-  String get trayOpen => 'StockLens veke';
+  String get trayOpen => 'WhatStock veke';
 
   @override
   String get trayQuickSearch => 'Lêgerîna bilez';
@@ -951,7 +951,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get accountSyncedNote => 'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
 
   @override
-  String get signInTitle => 'Têkeve StockLens';
+  String get signInTitle => 'Têkeve WhatStock';
 
   @override
   String get emailLabel => 'Navnîşana e-nameyê';
@@ -999,18 +999,18 @@ class AppLocalizationsKu extends AppLocalizations {
   String get doubleOptionTitle => 'Du caran Option bitikîne';
 
   @override
-  String get doubleOptionSubtitle => 'Du caran bi lez tikandina bişkoka Option jî StockLens vedixwîne.';
+  String get doubleOptionSubtitle => 'Du caran bi lez tikandina bişkoka Option jî WhatStock vedixwîne.';
 
   @override
   String get doubleOptionPermission =>
-      'Ji bo ku di sepanên din de jî bixebite, di Mîhengên Pergalê → Nepenî û Ewlehî → Şopandina Têketinê de destûrê bide StockLens, paşê sepanê dîsa veke.';
+      'Ji bo ku di sepanên din de jî bixebite, di Mîhengên Pergalê → Nepenî û Ewlehî → Şopandina Têketinê de destûrê bide WhatStock, paşê sepanê dîsa veke.';
 
   @override
   String get openSystemSettings => 'Mîhengên Pergalê veke';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Ji bo vexwendina StockLens li her derê $shortcut bitikîne an du caran Option bitikîne.';
+    return 'Ji bo vexwendina WhatStock li her derê $shortcut bitikîne an du caran Option bitikîne.';
   }
 
   @override
@@ -1168,7 +1168,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Dema StockLens dixebite, hişyarî her 5 deqeyan tên kontrolkirin. Li ser komputerê ew di barika menuyê an tepsiyê de dixebite; li ser telefonê, niha hişyarî tenê dema ku sepan vekirî be tên.';
+      'Dema WhatStock dixebite, hişyarî her 5 deqeyan tên kontrolkirin. Li ser komputerê ew di barika menuyê an tepsiyê de dixebite; li ser telefonê, niha hişyarî tenê dema ku sepan vekirî be tên.';
 
   @override
   String alertDescAbove(String price) {
@@ -1224,7 +1224,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens di barika menuyê an tepsiyê de dimîne, da ku kurterî û hişyariyên bihayê bixebitin.';
+      'WhatStock di barika menuyê an tepsiyê de dimîne, da ku kurterî û hişyariyên bihayê bixebitin.';
 
   @override
   String get termsOfUse => 'Mercên Bikaranînê';

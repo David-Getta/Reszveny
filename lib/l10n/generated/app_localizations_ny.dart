@@ -10,7 +10,7 @@ class AppLocalizationsNy extends AppLocalizations {
   AppLocalizationsNy([String locale = 'ny']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Jambulani sheya ndipo mudziwe zonse za iyo.';
@@ -432,11 +432,11 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Dinani $shortcut kulikonse kuti muitane StockLens.';
+    return 'Dinani $shortcut kulikonse kuti muitane WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Tsegulani StockLens';
+  String get trayOpen => 'Tsegulani WhatStock';
 
   @override
   String get trayQuickSearch => 'Kusaka mwachangu';
@@ -955,7 +955,7 @@ class AppLocalizationsNy extends AppLocalizations {
   String get accountSyncedNote => 'Kulembetsa kwanu ndi kusanthula kotsala ndi zofanana pa chipangizo chilichonse.';
 
   @override
-  String get signInTitle => 'Lowani mu StockLens';
+  String get signInTitle => 'Lowani mu WhatStock';
 
   @override
   String get emailLabel => 'Adilesi ya imelo';
@@ -1003,18 +1003,18 @@ class AppLocalizationsNy extends AppLocalizations {
   String get doubleOptionTitle => 'Dinani Option kawiri';
 
   @override
-  String get doubleOptionSubtitle => 'Kudina Option kawiri mwachangu kumaitananso StockLens.';
+  String get doubleOptionSubtitle => 'Kudina Option kawiri mwachangu kumaitananso WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Kuti zigwire ntchito ngakhale mu mapulogalamu ena, lolani StockLens mu System Settings → Privacy & Security → Input Monitoring, kenako tsegulaninso pulogalamuyi.';
+      'Kuti zigwire ntchito ngakhale mu mapulogalamu ena, lolani WhatStock mu System Settings → Privacy & Security → Input Monitoring, kenako tsegulaninso pulogalamuyi.';
 
   @override
   String get openSystemSettings => 'Tsegulani System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Dinani $shortcut kapena dinani Option kawiri kulikonse kuti muitane StockLens.';
+    return 'Dinani $shortcut kapena dinani Option kawiri kulikonse kuti muitane WhatStock.';
   }
 
   @override
@@ -1174,7 +1174,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Zidziwitso zimafufuzidwa mphindi 5 zilizonse pamene StockLens ikugwira ntchito. Pa kompyuta imapitiriza kugwira ntchito mu menu bar kapena tray; pa foni, pakadali pano zidziwitso zimabwera pulogalamu ikakhala yotsegula.';
+      'Zidziwitso zimafufuzidwa mphindi 5 zilizonse pamene WhatStock ikugwira ntchito. Pa kompyuta imapitiriza kugwira ntchito mu menu bar kapena tray; pa foni, pakadali pano zidziwitso zimabwera pulogalamu ikakhala yotsegula.';
 
   @override
   String alertDescAbove(String price) {
@@ -1230,7 +1230,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens imakhalabe mu menu bar kapena tray, choncho njira yachidule ndi zidziwitso za mtengo zimapitiriza kugwira ntchito.';
+      'WhatStock imakhalabe mu menu bar kapena tray, choncho njira yachidule ndi zidziwitso za mtengo zimapitiriza kugwira ntchito.';
 
   @override
   String get termsOfUse => 'Malamulo Ogwiritsa Ntchito';

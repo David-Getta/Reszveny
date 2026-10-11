@@ -10,7 +10,7 @@ class AppLocalizationsJv extends AppLocalizations {
   AppLocalizationsJv([String locale = 'jv']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Fotonen saham lan ngertenana kabeh babagan saham iku.';
@@ -433,11 +433,11 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tekan $shortcut ing ngendi wae kanggo nimbali StockLens.';
+    return 'Tekan $shortcut ing ngendi wae kanggo nimbali WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Bukak StockLens';
+  String get trayOpen => 'Bukak WhatStock';
 
   @override
   String get trayQuickSearch => 'Panelusuran cepet';
@@ -955,7 +955,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String get accountSyncedNote => 'Langganan lan sisa analisis sampeyan padha ing saben piranti.';
 
   @override
-  String get signInTitle => 'Mlebu menyang StockLens';
+  String get signInTitle => 'Mlebu menyang WhatStock';
 
   @override
   String get emailLabel => 'Alamat email';
@@ -1004,18 +1004,18 @@ class AppLocalizationsJv extends AppLocalizations {
   String get doubleOptionTitle => 'Tekan Option kaping pindho';
 
   @override
-  String get doubleOptionSubtitle => 'Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali StockLens.';
+  String get doubleOptionSubtitle => 'Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Supaya bisa mlaku ing aplikasi liyane uga, wenehana idin marang StockLens ing Setelan Sistem → Privasi & Keamanan → Pemantauan Input, banjur bukak maneh aplikasine.';
+      'Supaya bisa mlaku ing aplikasi liyane uga, wenehana idin marang WhatStock ing Setelan Sistem → Privasi & Keamanan → Pemantauan Input, banjur bukak maneh aplikasine.';
 
   @override
   String get openSystemSettings => 'Bukak Setelan Sistem';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tekan $shortcut utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens.';
+    return 'Tekan $shortcut utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali WhatStock.';
   }
 
   @override
@@ -1173,7 +1173,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Pèngetan dipriksa saben 5 menit sajrone StockLens mlaku. Ing komputer, aplikasi tetep mlaku ing bilah menu utawa baki sistem; ing HP, saiki pèngetan mung teka nalika aplikasi dibukak.';
+      'Pèngetan dipriksa saben 5 menit sajrone WhatStock mlaku. Ing komputer, aplikasi tetep mlaku ing bilah menu utawa baki sistem; ing HP, saiki pèngetan mung teka nalika aplikasi dibukak.';
 
   @override
   String alertDescAbove(String price) {
@@ -1229,7 +1229,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens tetep ana ing bilah menu utawa baki sistem, mula trabasan lan pèngetan rega tetep mlaku.';
+      'WhatStock tetep ana ing bilah menu utawa baki sistem, mula trabasan lan pèngetan rega tetep mlaku.';
 
   @override
   String get termsOfUse => 'Katemtuan Panganggo';

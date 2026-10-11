@@ -1,0 +1,1272 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Luba-Lulua (`lua`).
+class AppLocalizationsLua extends AppLocalizations {
+  AppLocalizationsLua([String locale = 'lua']) : super(locale);
+
+  @override
+  String get appTitle => 'WhatStock';
+
+  @override
+  String get homeTagline => 'Ambula foto wa action ne manya malu ayi onso.';
+
+  @override
+  String get homeHint =>
+      'Mukanda wa action, écran wa application wa bourse, tshikandakanda anyi logo wa kompanyi – tshintu tshionso tshidi tshileja action.';
+
+  @override
+  String get takePhoto => 'Ambula foto';
+
+  @override
+  String get chooseFromGallery => 'Sungula mu galerie';
+
+  @override
+  String get chooseImage => 'Sungula tshimfuanyi';
+
+  @override
+  String get enterTickerManually => 'Funda ticker wewe muine';
+
+  @override
+  String get tickerInputLabel => 'Tshimanyinu tshia ticker';
+
+  @override
+  String get tickerInputHint => 'tshilejilu: AAPL';
+
+  @override
+  String get lookUp => 'Keba';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Mode démo – kakuena clé wa mamanyisha a tshisalu. Mamanyisha a tshilejilu adiku bua: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Tudi tukonkonona tshimfuanyi…';
+
+  @override
+  String get loadingData => 'Tudi tupeta mamanyisha…';
+
+  @override
+  String get noCandidatesTitle => 'Kakuena action utudi bamanye';
+
+  @override
+  String get noCandidatesBody =>
+      'Katuena mua kumanya action mu tshimfuanyi etshi. Teta foto udi umueneka bimpe, anyi funda ticker wewe muine.';
+
+  @override
+  String get whatWeSaw => 'Tshitudi bamone';
+
+  @override
+  String get chooseCandidateTitle => 'Uvua musue action kayi?';
+
+  @override
+  String confidencePercent(int percent) {
+    return 'Bujadiki $percent%';
+  }
+
+  @override
+  String get settings => 'Malongolola';
+
+  @override
+  String get language => 'Muakulu';
+
+  @override
+  String get systemLanguage => 'Muakulu wa système';
+
+  @override
+  String get about => 'Malu a application';
+
+  @override
+  String get disclaimer =>
+      'Application eu udi ufila anu mamanyisha; kena ufila mibelu ya kuteka mfranga. Mamanyisha adi mua kulua bitekete anyi kuikala ne bilema.';
+
+  @override
+  String dataSource(String source) {
+    return 'Mpokolo wa mamanyisha: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Dimanya tshimfuanyi: $source';
+  }
+
+  @override
+  String get retry => 'Teta kabidi';
+
+  @override
+  String get cancel => 'Lekela';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Buikila';
+
+  @override
+  String get errorGeneric => 'Tshilema tshienzeke.';
+
+  @override
+  String get errorSectionUnavailable => 'Katuena mua kuleja tshitupa etshi.';
+
+  @override
+  String get notAvailable => 'kakuena';
+
+  @override
+  String get sectionIdentity => 'Bimanyinu bia action';
+
+  @override
+  String get sectionPrice => 'Mushinga';
+
+  @override
+  String get sectionValuation => 'Dikonkonona dia mushinga';
+
+  @override
+  String get sectionFinancials => 'Malu a mfranga';
+
+  @override
+  String get sectionDividend => 'Dividende';
+
+  @override
+  String get sectionProfile => 'Mamanyisha a kompanyi';
+
+  @override
+  String get sectionAnalysts => 'Meji a bakonkononyi';
+
+  @override
+  String get sectionNews => 'Lumu';
+
+  @override
+  String get sectionRecognition => 'Mushindu utudi bamanye action';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Bourse';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Mfranga';
+
+  @override
+  String get labelCountry => 'Ditunga';
+
+  @override
+  String get labelIndustry => 'Industrie';
+
+  @override
+  String get labelSector => 'Secteur';
+
+  @override
+  String get labelWebsite => 'Site web';
+
+  @override
+  String get labelIpoDate => 'Dituku dia IPO';
+
+  @override
+  String get labelMarketCap => 'Mushinga wa kompanyi ku bourse';
+
+  @override
+  String get labelSharesOutstanding => 'Action ya mu tshisalu';
+
+  @override
+  String get labelEmployees => 'Bena mudimu';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Siège';
+
+  @override
+  String get labelDescription => 'Diumvuija';
+
+  @override
+  String get labelLastPrice => 'Mushinga wa ndekelu';
+
+  @override
+  String get labelChange => 'Dishintuluka';
+
+  @override
+  String get labelOpen => 'Mushinga wa kumpala';
+
+  @override
+  String get labelDayHigh => 'Mushinga wa kuulu wa dituku';
+
+  @override
+  String get labelDayLow => 'Mushinga wa kuinshi wa dituku';
+
+  @override
+  String get labelPreviousClose => 'Mushinga wa ndekelu wa dituku dipite';
+
+  @override
+  String get labelWeek52High => 'Mushinga wa kuulu wa mingu 52';
+
+  @override
+  String get labelWeek52Low => 'Mushinga wa kuinshi wa mingu 52';
+
+  @override
+  String get labelAverageVolume10d => 'Volume wa pankatshi (matuku 10)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Mise à jour: $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (wa kunyima)';
+
+  @override
+  String get labelPeForward => 'P/E (wa kumpala)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / cash flow udi ushala';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Bêta';
+
+  @override
+  String get labelRevenueTtm => 'Mfranga idi ibuela (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Dipeta dia ndekelu (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Marge brute';
+
+  @override
+  String get labelOperatingMargin => 'Marge opérationnelle';
+
+  @override
+  String get labelNetMargin => 'Marge nette';
+
+  @override
+  String get labelRoe => 'Dipeta pa fonds propres (ROE)';
+
+  @override
+  String get labelRoa => 'Dipeta pa bintu bia kompanyi (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Mabanza / fonds propres';
+
+  @override
+  String get labelCurrentRatio => 'Ratio wa liquidité';
+
+  @override
+  String get labelRevenueGrowth => 'Dikola dia mfranga idi ibuela (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Dikola dia EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Rendement wa dividende';
+
+  @override
+  String get labelDividendPerShare => 'Dividende pa action umue';
+
+  @override
+  String get labelPayoutRatio => 'Tshitupa tshia dipeta tshiabanyibua';
+
+  @override
+  String get labelConsensus => 'Meji a bonso';
+
+  @override
+  String get ratingStrongBuy => 'Sumba bikole';
+
+  @override
+  String get ratingBuy => 'Sumba';
+
+  @override
+  String get ratingHold => 'Lama';
+
+  @override
+  String get ratingSell => 'Sumbisha';
+
+  @override
+  String get ratingStrongSell => 'Sumbisha bikole';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bakonkononyi $count',
+      one: 'mukonkononyi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Tshikondo: $period';
+  }
+
+  @override
+  String get noNews => 'Kakuena lumu lupia.';
+
+  @override
+  String get openArticle => 'Bulula mukanda';
+
+  @override
+  String get openLinkFailed => 'Katuena mua kubulula lien.';
+
+  @override
+  String get recognitionSummary => 'Mu mêyi makese';
+
+  @override
+  String get recognitionEvidence => 'Bua tshinyi tudi tuela meji nunku';
+
+  @override
+  String get recognitionRawText => 'Mêyi atudi babale mu tshimfuanyi';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Katuena mua kumanya bimfuanyi (kakuena ANTHROPIC_API_KEY). Funda ticker wewe muine.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Katuena mua kufika ku service wa dimanya bimfuanyi. Tangila connexion webe wa internet.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Service wa dimanya bimfuanyi wafila tshilema (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Service wa dimanya bimfuanyi wapangila kuenza mudimu ne tshimfuanyi etshi.';
+
+  @override
+  String get errRecognitionTruncated => 'Diandamuna dia dimanya bimfuanyi diakosoka. Teta kabidi.';
+
+  @override
+  String get errRecognitionBadResponse => 'Diandamuna dia kukemesha kudi service wa dimanya bimfuanyi.';
+
+  @override
+  String get errRecognitionEmpty => 'Service wa dimanya bimfuanyi wafila diandamuna kadiyi ne tshintu.';
+
+  @override
+  String get errMissingFinnhubKey => 'Katuena mua kupeta mamanyisha a tshisalu (kakuena FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Katuena mua kufika ku service wa mamanyisha a tshisalu. Tangila connexion webe wa internet.';
+
+  @override
+  String get errMarketRateLimited => 'Malomba a bungi bikole ku service wa mamanyisha a tshisalu. Indila minite umue.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Service wa mamanyisha a tshisalu wafila tshilema (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Diandamuna dia kukemesha kudi service wa mamanyisha a tshisalu.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Katuena bapete mushinga wa $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Katuena bapete mamanyisha a kompanyi wa $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Mu mode démo mudi anu $symbols. Bueja FINNHUB_API_KEY bua kupeta mamanyisha a mpindieu.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Tshilema tshienzeke: $detail';
+  }
+
+  @override
+  String get newSearch => 'Dikeba dipia';
+
+  @override
+  String get recentSearches => 'Biuvua mukebe';
+
+  @override
+  String get noRecentSearches => 'Kuena muanji kukeba tshintu.';
+
+  @override
+  String get clearRecent => 'Jimija biuvua mukebe';
+
+  @override
+  String get greeting => 'Tutangile action kayi?';
+
+  @override
+  String get searchHint => 'Ticker anyi dîna dia kompanyi';
+
+  @override
+  String get attachImage => 'Bueja tshimfuanyi';
+
+  @override
+  String get searchResultsTitle => 'Bitudi bapete';
+
+  @override
+  String errNoResults(String query) {
+    return 'Katuena bapete action bua « $query ».';
+  }
+
+  @override
+  String get quickBarHint => 'Funda ticker anyi dîna dia kompanyi…';
+
+  @override
+  String get openFullWindow => 'Bulula fenêtre';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Finya $shortcut muaba wonso bua kubikila WhatStock.';
+  }
+
+  @override
+  String get trayOpen => 'Bulula WhatStock';
+
+  @override
+  String get trayQuickSearch => 'Dikeba dia lukasa';
+
+  @override
+  String get trayQuit => 'Patuka';
+
+  @override
+  String get appearance => 'Dimueneka';
+
+  @override
+  String get themeSystem => 'Système';
+
+  @override
+  String get themeDark => 'Mufitu';
+
+  @override
+  String get themeLight => 'Butoke';
+
+  @override
+  String get back => 'Pingana';
+
+  @override
+  String get aiSectionTitle => 'Dikonkonona dia AI';
+
+  @override
+  String get aiIntro =>
+      'Diumvuija dia bule difunda kudi AI: lumu lupia mu mêyi makese, mudimu wa kompanyi, bukole, njiwu ne malu masokome, mushinga, mushindu udi mushinga mua kuya ne malu adi mua kuenzeka mu mêso a psychologie, sociologie, technique ne macro-économie, ne malu a kutangila.';
+
+  @override
+  String get aiGenerate => 'Enza dikonkonona';
+
+  @override
+  String get aiRegenerate => 'Enza kabidi';
+
+  @override
+  String get aiGenerating => 'Tudi tulongolola dikonkonona… bidi mua kuangata minite umue anyi ibidi.';
+
+  @override
+  String get aiSources => 'Mpokolo';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Dienzibue $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Dikonkonona edi difunda kudi AI ku mamanyisha a patoke ne lumu lupia. Didi mua kuikala ne bilema anyi kuikala dia kale, ne kadiena mibelu ya kuteka mfranga.';
+
+  @override
+  String get errAiNotConfigured => 'Katuena mua kuenza dikonkonona dia AI (kakuena ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Katuena mua kufika ku service wa AI. Tangila connexion webe wa internet.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Service wa AI wafila tshilema (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Service wa AI wabenga kukonkonona action eu.';
+
+  @override
+  String get errAiBadResponse => 'Diandamuna dia kukemesha kudi service wa AI.';
+
+  @override
+  String get sectionChart => 'Graphique wa mushinga';
+
+  @override
+  String get rangeOneWeek => 'Lumingu 1';
+
+  @override
+  String get rangeOneMonth => 'Ngondo 1';
+
+  @override
+  String get rangeThreeMonths => 'Ngondo 3';
+
+  @override
+  String get rangeOneYear => 'Tshidimu 1';
+
+  @override
+  String get rangeFiveYears => 'Bidimu 5';
+
+  @override
+  String get chartUnavailable => 'Kakuena mishinga ya kale mu mpokolo wa mamanyisha eu.';
+
+  @override
+  String get sectionStatements => 'Rapport ya mfranga (tshidimu ne tshidimu)';
+
+  @override
+  String get labelFiscalYear => 'Tshidimu tshia mfranga';
+
+  @override
+  String get labelRevenue => 'Mfranga idi ibuela';
+
+  @override
+  String get labelNetIncome => 'Dipeta dia ndekelu';
+
+  @override
+  String get labelTotalAssets => 'Bintu bionso bia kompanyi';
+
+  @override
+  String get labelTotalLiabilities => 'Mabanza onso';
+
+  @override
+  String get labelEquity => 'Fonds propres';
+
+  @override
+  String get labelOperatingCashFlow => 'Cash flow wa mudimu';
+
+  @override
+  String get statementsUnavailable => 'Kakuena rapport ya mfranga bua action eu.';
+
+  @override
+  String get launchAtLogin => 'Bulula pa kubuela';
+
+  @override
+  String get hotkeyLabel => 'Raccourci wa clavier';
+
+  @override
+  String get hotkeyRecordHint => 'Finya apa, pashishe finya touche ipia';
+
+  @override
+  String get hotkeyReset => 'Pingaja bia kumpala';
+
+  @override
+  String get pasteImage => 'Teka tshimfuanyi tshia presse-papiers';
+
+  @override
+  String get errClipboardNoImage => 'Kakuena tshimfuanyi mu presse-papiers.';
+
+  @override
+  String get favorites => 'Biudi musue';
+
+  @override
+  String get addToFavorites => 'Bueja mu biudi musue';
+
+  @override
+  String get removeFromFavorites => 'Umbusha mu biudi musue';
+
+  @override
+  String get noFavorites => 'Kakuena tshintu apa. Finya mutoto pa action bua kubueja.';
+
+  @override
+  String get displayCurrency => 'Mfranga ya kuleja';
+
+  @override
+  String get displayCurrencyNone => 'Anu mfranga ya action';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ mu $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Taux: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Mise à jour';
+
+  @override
+  String currentVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get autoUpdate => 'Bueja mise à jour automatiquement';
+
+  @override
+  String get checkForUpdates => 'Keba mise à jour';
+
+  @override
+  String get updateChecking => 'Tudi tukeba mise à jour…';
+
+  @override
+  String get updateUpToDate => 'Udi ne version mupia.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Version $version udiku.';
+  }
+
+  @override
+  String get updateDownloading => 'Tudi tupuekesha mise à jour kunyima…';
+
+  @override
+  String get updateDownloaded => 'Mise à jour udi mulongolola. Tuadija kabidi bua kujikija.';
+
+  @override
+  String get updateNow => 'Mise à jour';
+
+  @override
+  String get restartNow => 'Tuadija kabidi';
+
+  @override
+  String get updatesViaStore => 'Mise à jour idi ilua anu ku store wa application.';
+
+  @override
+  String get updateCheckFailed => 'Katuena mua kukeba mise à jour.';
+
+  @override
+  String get subscription => 'Abonnement';
+
+  @override
+  String get planTrial => 'Diteta';
+
+  @override
+  String get planNormal => 'Wa tshianana';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Kakuena forfait';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Makonkonona $count ku ngondo';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Diteta dia patupu dia matuku $days ne makonkonona $count';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Matuku $days a diteta mashadile',
+      one: 'Dituku 1 dia diteta dishadile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka ne kukonkonona.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Makonkonona $remaining mashadile pa $total mu tshikondo etshi';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return 'Makonkonona $count a kubueja';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Udi utuadija kabidi $date';
+  }
+
+  @override
+  String get choosePlan => 'Sungula forfait';
+
+  @override
+  String get currentPlan => 'Forfait webe wa mpindieu';
+
+  @override
+  String get subscribe => 'Buela mu abonnement';
+
+  @override
+  String get perMonth => '/ ngondo';
+
+  @override
+  String get extraPacksTitle => 'Udi ne dijinga dia bungi? Sumba makonkonona a kubueja';
+
+  @override
+  String get extraPacksHint =>
+      'Makonkonona a kubueja katu ajika; atu enza mudimu panyima pa tshitupa tshiebe tshia ngondo.';
+
+  @override
+  String get buy => 'Sumba';
+
+  @override
+  String get restorePurchases => 'Pingaja biuvua musumbe';
+
+  @override
+  String get manageSubscription => 'Lombola abonnement';
+
+  @override
+  String get purchaseSuccess => 'Twasakidila! Bintu biuvua musumbe bidi bienza mudimu.';
+
+  @override
+  String get purchasePending => 'Disumba didi dindila…';
+
+  @override
+  String get purchaseFailed => 'Katuena mua kujikija disumba.';
+
+  @override
+  String get purchaseCanceled => 'Udi mulekele disumba.';
+
+  @override
+  String get billingUnavailable =>
+      'Disumba kadiena muanji mu plateforme eu. Buela mu abonnement ku telefone webe anyi ku Mac; forfait webe udi wenza mudimu ku bintu biebe bionso.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Kakuena makonkonona mashadile mu tshikondo etshi. Bandisha forfait webe anyi sumba makonkonona a kubueja.';
+
+  @override
+  String get errTrialExpired => 'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka.';
+
+  @override
+  String get errNoPlan => 'Udi ne dijinga dia forfait udi wenza mudimu bua dikonkonona dia AI.';
+
+  @override
+  String get viewPlans => 'Tangila forfait';
+
+  @override
+  String get usageTitle => 'Dienzela mudimu';
+
+  @override
+  String get demoPurchaseNote => 'Difuta dia démo: disumba mu plateforme eu ndia manaya.';
+
+  @override
+  String get mostPopular => 'Udi bantu basue bikole';
+
+  @override
+  String get bestValue => 'Mushinga muimpe bikole';
+
+  @override
+  String get planFeaturesCommon =>
+      'Dimanya dia foto, mamanyisha a mpindieu, graphique, biudi musue ne miakulu 120 yonso bidi mu forfait yonso. Tshitupa tshia ngondo ntshia makonkonona a AI.';
+
+  @override
+  String get searchLanguages => 'Keba muakulu…';
+
+  @override
+  String get noLanguageMatch => 'Katuena bapete muakulu.';
+
+  @override
+  String get aiSettings => 'Dikonkonona dia AI';
+
+  @override
+  String get aiLength => 'Bule';
+
+  @override
+  String get aiDepthBrief => 'Muipi';
+
+  @override
+  String get aiDepthStandard => 'Wa pankatshi';
+
+  @override
+  String get aiDepthDeep => 'Mule';
+
+  @override
+  String get aiDepthBriefDesc => 'Malu a mushinga, lukasa.';
+
+  @override
+  String get aiDepthStandardDesc => 'Rapport mujima ne bitupa bionso.';
+
+  @override
+  String get aiDepthDeepDesc => 'Makeba a bungi ku internet, difuanyikija ne kompanyi ya bakuabu ne malu a bungi.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Bu mêyi $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'udi uangata makonkonona $count',
+      one: 'udi uangata dikonkonona 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Niveau wa mubadi';
+
+  @override
+  String get aiReaderBeginner => 'Mubangi';
+
+  @override
+  String get aiReaderExperienced => 'Mumanyi';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Muakulu mupepele; dîyi dionso dia technique didi diumvuijibua.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Mifundu mikole, ne mêyi a mfranga adi bamanye.';
+
+  @override
+  String get aiCounterArgument => 'Bualu bukole bua kubenga';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Misangu yonso, diumvuija dikese ditu dijika ne bualu bukole bua kubenga meji adi diamba.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Too ne misangu $count ya dikeba ku internet bua dikonkonona dimue ne forfait webe',
+      one: 'Too ne musangu 1 wa dikeba ku internet bua dikonkonona dimue ne forfait webe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Pa bule wa pankatshi, bilondeshile forfait: Wa tshianana $normal, Pro $pro, Max $max, Ultra $ultra. « Muipi » udi ukepesha 2, « Mule » udi uvudija 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'too ne misangu $count ya dikeba ku internet',
+      one: 'too ne musangu 1 wa dikeba ku internet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Misangu $count ya dikeba ku internet bua dikonkonona dimue',
+      one: 'Musangu 1 wa dikeba ku internet bua dikonkonona dimue',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Bule ebu budi bulomba makonkonona $needed, kadi mashadile anu $left. Sungula bule bukese mu Malongolola anyi peta makonkonona makuabu.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Muoyo wa tshisalu';
+
+  @override
+  String get moodVeryPessimistic => 'Ditekemena dikese bikole';
+
+  @override
+  String get moodPessimistic => 'Ditekemena dikese';
+
+  @override
+  String get moodNeutral => 'Pankatshi';
+
+  @override
+  String get moodOptimistic => 'Ditekemena';
+
+  @override
+  String get moodVeryOptimistic => 'Ditekemena dikole';
+
+  @override
+  String get scenarioBull => 'Scénario wa kubanda';
+
+  @override
+  String get scenarioBase => 'Scénario wa pankatshi';
+
+  @override
+  String get scenarioBear => 'Scénario wa kupueka';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Mushinga wa mpindieu: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Niveau ya mushinga';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Résistance';
+
+  @override
+  String get keyLevelAnchor => 'Ancrage';
+
+  @override
+  String get upcomingEvents => 'Malu adi alua';
+
+  @override
+  String get outlookChartNote =>
+      'Mikalu ya tshilejilu anu; mishindu ya malu kuenzeka mmeji patupu, ki mbia bulelela to.';
+
+  @override
+  String get accountTitle => 'Compte';
+
+  @override
+  String get signIn => 'Buela';
+
+  @override
+  String get signOut => 'Patuka';
+
+  @override
+  String get notSignedIn => 'Kuena mubuele';
+
+  @override
+  String get accountBenefit => 'Buela bua abonnement webe enze mudimu ku bintu biebe bionso.';
+
+  @override
+  String get accountSyncedNote => 'Abonnement webe ne makonkonona mashadile bidi bimue ku bintu bionso.';
+
+  @override
+  String get signInTitle => 'Buela mu WhatStock';
+
+  @override
+  String get emailLabel => 'Adresse e-mail';
+
+  @override
+  String get continueWithEmail => 'Tungunuka ne e-mail';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Tuakutumina code wa nomba 6 ku $email. Udi wenza mudimu minite 10.';
+  }
+
+  @override
+  String get codeLabel => 'Code wa kubuela';
+
+  @override
+  String get resendCode => 'Tuma code mupia';
+
+  @override
+  String get useDifferentEmail => 'Enzela e-mail mukuabu mudimu';
+
+  @override
+  String get errInvalidCode => 'Code udi ne tshilema anyi dîba diende diapita.';
+
+  @override
+  String get errInvalidEmail => 'Funda adresse e-mail muimpe.';
+
+  @override
+  String get errSignInFailed => 'Kubuela kuapangila. Tangila connexion webe, pashishe teta kabidi.';
+
+  @override
+  String get checkoutWaiting =>
+      'Jikija difuta mu navigateur webe. Paudi ujikija, application udi udivuija mupia nkayende.';
+
+  @override
+  String get paymentViaStripe => 'Difuta dilama bimpe mu navigateur webe ku Stripe. Udi mua kulekela dîba dionso.';
+
+  @override
+  String get paymentViaStore =>
+      'Udi ufuta ku compte webe wa App Store anyi Google Play. Udi mua kulekela dîba dionso mu malongolola a store.';
+
+  @override
+  String get keySpace => 'Espace';
+
+  @override
+  String get doubleOptionTitle => 'Finya Option misangu ibidi';
+
+  @override
+  String get doubleOptionSubtitle => 'Kufinya touche Option misangu ibidi lukasa kudi kubikila kabidi WhatStock.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Bua bienze mudimu kabidi mu application ikuabu, anyisha WhatStock mu Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, pashishe bulula application kabidi.';
+
+  @override
+  String get openSystemSettings => 'Bulula Réglages Système';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Finya $shortcut anyi finya Option misangu ibidi muaba wonso bua kubikila WhatStock.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Tshidi mua kuenzeka bikole';
+
+  @override
+  String get longTermToday => 'Lelu';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'bidimu $years', one: 'tshidimu 1');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range ku tshidimu';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'bidi mua kuikala $price';
+  }
+
+  @override
+  String get confidenceLow => 'Bujadiki bukese';
+
+  @override
+  String get confidenceMedium => 'Bujadiki bua pankatshi';
+
+  @override
+  String get confidenceHigh => 'Bujadiki bukole';
+
+  @override
+  String get longTermNote =>
+      'Mikalu ya tshikondo tshile idi ilonda meji mafunda, ne idi ivula padi dîba dipita. Dividende kena mu mishinga eyi. Mbimanyinu bia meji patupu, ki mbia bulelela to.';
+
+  @override
+  String get portfolio => 'Portefeuille';
+
+  @override
+  String get portfolioEmpty =>
+      'Kakuena tshintu apa. Bulula action, finya « Bueja mu portefeuille » bua kulonda action yebe.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Bilama anu mu tshintu etshi. Mishinga yonso idi ishintuluibua ku taux wa BCE; mishinga idi mua kulua bitekete.';
+
+  @override
+  String get addToPortfolio => 'Bueja mu portefeuille';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Bueja $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Bungi bua action';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Mushinga wa action umue ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Dituku dia kusumba';
+
+  @override
+  String get portfolioAdd => 'Bueja';
+
+  @override
+  String get portfolioInvalidNumber => 'Funda nomba mupite zéro.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Tuabueja $symbol mu portefeuille webe.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Mushinga wonso';
+
+  @override
+  String get portfolioToday => 'Lelu';
+
+  @override
+  String get portfolioGainLoss => 'Dipeta/Dijimija';
+
+  @override
+  String get portfolioInvested => 'Mfranga uvua muteke';
+
+  @override
+  String get portfolioAllocation => 'Diabanya';
+
+  @override
+  String get portfolioPositions => 'Position';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'mushinga wa pankatshi $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Position webe';
+
+  @override
+  String get portfolioPurchases => 'Biuvua musumbe';
+
+  @override
+  String get portfolioRemove => 'Umbusha';
+
+  @override
+  String get portfolioExcluded => 'Katuena tubala position kayiyi ne mushinga anyi taux wa mfranga mu mishinga yonso.';
+
+  @override
+  String get priceAlerts => 'Alerte ya mushinga';
+
+  @override
+  String get setPriceAlert => 'Teka alerte wa mushinga';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alerte wa mushinga · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Udi ubanda kupita';
+
+  @override
+  String get alertKindBelow => 'Udi upueka muinshi mua';
+
+  @override
+  String get alertKindMove => 'Udi ushintuluka bikole mu dituku dimue';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Mushinga ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Dishintuluka dia dituku (%)';
+
+  @override
+  String get alertAlreadyMet => 'Mushinga udi mumane kupita niveau eu.';
+
+  @override
+  String get alertSave => 'Teka alerte';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Alerte wa $symbol mutekibue.';
+  }
+
+  @override
+  String get alertsEmpty => 'Kakuena alerte apa. Bulula action, finya cloche bua kuteka umue.';
+
+  @override
+  String get alertsNote =>
+      'Alerte idi itangidibua minite 5 yonso padi WhatStock wenza mudimu. Ku ordinateur, udi utungunuka mu barre wa menu anyi mu tray; ku telefone, mpindieu alerte idi ilua anu padi application mubulula.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Kupita $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Muinshi mua $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Dishintuluka dia dituku ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Wakubikila $date ku $price';
+  }
+
+  @override
+  String get alertRearm => 'Teka kabidi';
+
+  @override
+  String get alertDelete => 'Jimija';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol mubande kupita $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol mupueke muinshi mua $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol mushintuluke $percent lelu';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Mushinga wa mpindieu: $price';
+  }
+
+  @override
+  String get alertOpen => 'Bulula';
+
+  @override
+  String get keepInTrayTitle => 'Tungunuka ne mudimu padi fenêtre mubuikila';
+
+  @override
+  String get keepInTraySubtitle =>
+      'WhatStock udi ushala mu barre wa menu anyi mu tray, nunku raccourci ne alerte ya mushinga bidi bitungunuka ne mudimu.';
+
+  @override
+  String get termsOfUse => 'Mikenji ya dienzela mudimu';
+
+  @override
+  String get privacyPolicy => 'Mikenji ya dilama dia mamanyisha ebe';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonnement udi utuadija kabidi nkayende ngondo yonso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe.';
+
+  @override
+  String get deleteAccount => 'Jimija compte';
+
+  @override
+  String get deleteAccountTitle => 'Udi musue kujimija compte webe?';
+
+  @override
+  String get deleteAccountBody =>
+      'Tudi tujimija tshiendelele compte webe ne bintu bionso bilama mu serveur wetu (e-mail, tshitupa tshia ngondo, dienzela mudimu), ne makonkonona onso ashadile adi ajimina. Abonnement uvua mufute mu navigateur udi ujika diakamue; abonnement wa App Store anyi Google Play udi ne bua kulekeledibua mu malongolola a store.';
+
+  @override
+  String get deleteLocalData =>
+      'Jimija kabidi mamanyisha a mu tshintu etshi (portefeuille, alerte, biudi musue, biuvua mukebe, makonkonona malama)';
+
+  @override
+  String get deleteAccountConfirm => 'Jimija tshiendelele';
+
+  @override
+  String get accountDeleted => 'Tuajimija compte webe.';
+
+  @override
+  String get errDeleteAccount => 'Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.';
+}

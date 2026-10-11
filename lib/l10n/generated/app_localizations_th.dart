@@ -10,7 +10,7 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ถ่ายรูปหุ้น แล้วรู้ทุกเรื่องเกี่ยวกับหุ้นตัวนั้น';
@@ -427,11 +427,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'กด $shortcut ได้จากทุกที่เพื่อเรียก StockLens';
+    return 'กด $shortcut ได้จากทุกที่เพื่อเรียก WhatStock';
   }
 
   @override
-  String get trayOpen => 'เปิด StockLens';
+  String get trayOpen => 'เปิด WhatStock';
 
   @override
   String get trayQuickSearch => 'ค้นหาด่วน';
@@ -925,7 +925,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get accountSyncedNote => 'การสมัครสมาชิกและจำนวนการวิเคราะห์ที่เหลือของคุณจะเหมือนกันในทุกอุปกรณ์';
 
   @override
-  String get signInTitle => 'ลงชื่อเข้าใช้ StockLens';
+  String get signInTitle => 'ลงชื่อเข้าใช้ WhatStock';
 
   @override
   String get emailLabel => 'ที่อยู่อีเมล';
@@ -973,18 +973,18 @@ class AppLocalizationsTh extends AppLocalizations {
   String get doubleOptionTitle => 'กด Option สองครั้ง';
 
   @override
-  String get doubleOptionSubtitle => 'การกดปุ่ม Option สองครั้งติดกันอย่างรวดเร็วจะเรียก StockLens ได้เช่นกัน';
+  String get doubleOptionSubtitle => 'การกดปุ่ม Option สองครั้งติดกันอย่างรวดเร็วจะเรียก WhatStock ได้เช่นกัน';
 
   @override
   String get doubleOptionPermission =>
-      'หากต้องการให้ใช้งานได้ในแอปอื่นด้วย ให้อนุญาต StockLens ใน การตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → การตรวจสอบการป้อนข้อมูล แล้วเปิดแอปใหม่';
+      'หากต้องการให้ใช้งานได้ในแอปอื่นด้วย ให้อนุญาต WhatStock ใน การตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → การตรวจสอบการป้อนข้อมูล แล้วเปิดแอปใหม่';
 
   @override
   String get openSystemSettings => 'เปิดการตั้งค่าระบบ';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'กด $shortcut หรือกด Option สองครั้งได้จากทุกที่เพื่อเรียก StockLens';
+    return 'กด $shortcut หรือกด Option สองครั้งได้จากทุกที่เพื่อเรียก WhatStock';
   }
 
   @override
@@ -1140,7 +1140,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'ระบบจะตรวจสอบการแจ้งเตือนทุก 5 นาทีขณะที่ StockLens ทำงานอยู่ บนคอมพิวเตอร์ แอปจะทำงานต่อในแถบเมนูหรือถาดระบบ ส่วนบนโทรศัพท์ ขณะนี้การแจ้งเตือนจะมาถึงเฉพาะตอนที่เปิดแอปอยู่';
+      'ระบบจะตรวจสอบการแจ้งเตือนทุก 5 นาทีขณะที่ WhatStock ทำงานอยู่ บนคอมพิวเตอร์ แอปจะทำงานต่อในแถบเมนูหรือถาดระบบ ส่วนบนโทรศัพท์ ขณะนี้การแจ้งเตือนจะมาถึงเฉพาะตอนที่เปิดแอปอยู่';
 
   @override
   String alertDescAbove(String price) {
@@ -1195,7 +1195,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get keepInTrayTitle => 'ทำงานต่อเมื่อปิดหน้าต่าง';
 
   @override
-  String get keepInTraySubtitle => 'StockLens จะอยู่ในแถบเมนูหรือถาดระบบ เพื่อให้คีย์ลัดและการแจ้งเตือนราคายังคงทำงาน';
+  String get keepInTraySubtitle => 'WhatStock จะอยู่ในแถบเมนูหรือถาดระบบ เพื่อให้คีย์ลัดและการแจ้งเตือนราคายังคงทำงาน';
 
   @override
   String get termsOfUse => 'ข้อกำหนดการใช้งาน';

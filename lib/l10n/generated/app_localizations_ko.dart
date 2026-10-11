@@ -10,7 +10,7 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
@@ -427,11 +427,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return '어디서든 $shortcut 키를 눌러 StockLens를 불러오세요.';
+    return '어디서든 $shortcut 키를 눌러 WhatStock을 불러오세요.';
   }
 
   @override
-  String get trayOpen => 'StockLens 열기';
+  String get trayOpen => 'WhatStock 열기';
 
   @override
   String get trayQuickSearch => '빠른 검색';
@@ -918,7 +918,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get accountSyncedNote => '구독과 남은 분석 횟수는 모든 기기에서 동일합니다.';
 
   @override
-  String get signInTitle => 'StockLens에 로그인';
+  String get signInTitle => 'WhatStock에 로그인';
 
   @override
   String get emailLabel => '이메일 주소';
@@ -965,18 +965,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get doubleOptionTitle => 'Option 키 두 번 누르기';
 
   @override
-  String get doubleOptionSubtitle => 'Option 키를 빠르게 두 번 눌러도 StockLens를 불러올 수 있습니다.';
+  String get doubleOptionSubtitle => 'Option 키를 빠르게 두 번 눌러도 WhatStock을 불러올 수 있습니다.';
 
   @override
   String get doubleOptionPermission =>
-      '다른 앱에서도 작동하게 하려면 시스템 설정 → 개인정보 보호 및 보안 → 입력 모니터링에서 StockLens를 허용한 다음 앱을 다시 여세요.';
+      '다른 앱에서도 작동하게 하려면 시스템 설정 → 개인정보 보호 및 보안 → 입력 모니터링에서 WhatStock을 허용한 다음 앱을 다시 여세요.';
 
   @override
   String get openSystemSettings => '시스템 설정 열기';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return '어디서든 $shortcut 키를 누르거나 Option 키를 두 번 눌러 StockLens를 불러오세요.';
+    return '어디서든 $shortcut 키를 누르거나 Option 키를 두 번 눌러 WhatStock을 불러오세요.';
   }
 
   @override
@@ -1131,7 +1131,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens가 실행 중인 동안 5분마다 알림을 확인합니다. 컴퓨터에서는 메뉴 막대나 시스템 트레이에서 계속 실행되며, 휴대폰에서는 현재 앱이 열려 있을 때만 알립니다.';
+      'WhatStock이 실행 중인 동안 5분마다 알림을 확인합니다. 컴퓨터에서는 메뉴 막대나 시스템 트레이에서 계속 실행되며, 휴대폰에서는 현재 앱이 열려 있을 때만 알립니다.';
 
   @override
   String alertDescAbove(String price) {
@@ -1186,7 +1186,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get keepInTrayTitle => '창을 닫아도 계속 실행';
 
   @override
-  String get keepInTraySubtitle => 'StockLens가 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.';
+  String get keepInTraySubtitle => 'WhatStock이 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.';
 
   @override
   String get termsOfUse => '이용약관';

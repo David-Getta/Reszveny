@@ -10,7 +10,7 @@ class AppLocalizationsKab extends AppLocalizations {
   AppLocalizationsKab([String locale = 'kab']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Ṭṭef tawlaft n uksyun syen issin kullec fell-as.';
@@ -79,7 +79,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get systemLanguage => 'Amezwer n unagraw';
 
   @override
-  String get about => 'Ɣef StockLens';
+  String get about => 'Ɣef WhatStock';
 
   @override
   String get disclaimer =>
@@ -432,11 +432,11 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Sit ɣef $shortcut seg yal amkan akken ad d-yeldi StockLens.';
+    return 'Sit ɣef $shortcut seg yal amkan akken ad d-yeldi WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Ldi StockLens';
+  String get trayOpen => 'Ldi WhatStock';
 
   @override
   String get trayQuickSearch => 'Anadi arurad';
@@ -952,7 +952,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get accountSyncedNote => 'Ajerred d tselḍin i d-yegran d yiwen deg yal ibenk.';
 
   @override
-  String get signInTitle => 'Kcem ɣer StockLens';
+  String get signInTitle => 'Kcem ɣer WhatStock';
 
   @override
   String get emailLabel => 'Tansa imayl';
@@ -1000,18 +1000,18 @@ class AppLocalizationsKab extends AppLocalizations {
   String get doubleOptionTitle => 'Sit snat n tikkal ɣef Option';
 
   @override
-  String get doubleOptionSubtitle => 'Ma tsiteḍ s zzerb snat n tikkal ɣef tqeffalt Option, ad d-yeldi daɣen StockLens.';
+  String get doubleOptionSubtitle => 'Ma tsiteḍ s zzerb snat n tikkal ɣef tqeffalt Option, ad d-yeldi daɣen WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Akken ad iteddu daɣen deg yisnasen nniḍen, sireg StockLens deg Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, syen ales alday n usnas.';
+      'Akken ad iteddu daɣen deg yisnasen nniḍen, sireg WhatStock deg Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, syen ales alday n usnas.';
 
   @override
   String get openSystemSettings => 'Ldi Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Sit ɣef $shortcut neɣ snat n tikkal ɣef Option seg yal amkan akken ad d-yeldi StockLens.';
+    return 'Sit ɣef $shortcut neɣ snat n tikkal ɣef Option seg yal amkan akken ad d-yeldi WhatStock.';
   }
 
   @override
@@ -1169,7 +1169,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ilɣa ttwasenqaden yal 5 n tesdatin ma yella StockLens iteddu. Deg uselkim, ad yeqqim iteddu deg ufeggag n wumuɣ neɣ deg ugalis n unagraw; deg tiliɣri, i tura ilɣa ttawḍen-d kan mi ara yili usnas yeldi.';
+      'Ilɣa ttwasenqaden yal 5 n tesdatin ma yella WhatStock iteddu. Deg uselkim, ad yeqqim iteddu deg ufeggag n wumuɣ neɣ deg ugalis n unagraw; deg tiliɣri, i tura ilɣa ttawḍen-d kan mi ara yili usnas yeldi.';
 
   @override
   String alertDescAbove(String price) {
@@ -1225,7 +1225,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens ad yeqqim deg ufeggag n wumuɣ neɣ deg ugalis n unagraw, ihi anegzum d yilɣa n ssuma ad kemmlen ad teddun.';
+      'WhatStock ad yeqqim deg ufeggag n wumuɣ neɣ deg ugalis n unagraw, ihi anegzum d yilɣa n ssuma ad kemmlen ad teddun.';
 
   @override
   String get termsOfUse => 'Tiwtilin n useqdec';

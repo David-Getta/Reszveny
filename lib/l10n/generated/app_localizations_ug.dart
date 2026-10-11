@@ -10,7 +10,7 @@ class AppLocalizationsUg extends AppLocalizations {
   AppLocalizationsUg([String locale = 'ug']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'پاي چېكىنىڭ سۈرىتىنى تارتىپ، ئۇ ھەقتىكى ھەممە ئۇچۇرغا ئېرىشىڭ.';
@@ -430,11 +430,11 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens نى چاقىرىش ئۈچۈن خالىغان يەردە $shortcut نى بېسىڭ.';
+    return 'WhatStock نى چاقىرىش ئۈچۈن خالىغان يەردە $shortcut نى بېسىڭ.';
   }
 
   @override
-  String get trayOpen => 'StockLens نى ئېچىش';
+  String get trayOpen => 'WhatStock نى ئېچىش';
 
   @override
   String get trayQuickSearch => 'تېز ئىزدەش';
@@ -950,7 +950,7 @@ class AppLocalizationsUg extends AppLocalizations {
   String get accountSyncedNote => 'مۇشتەرىلىكىڭىز ۋە قالغان تەھلىللىرىڭىز بارلىق ئۈسكۈنىلەردە ئوخشاش.';
 
   @override
-  String get signInTitle => 'StockLens غا كىرىش';
+  String get signInTitle => 'WhatStock غا كىرىش';
 
   @override
   String get emailLabel => 'ئېلخەت ئادرېسى';
@@ -998,18 +998,18 @@ class AppLocalizationsUg extends AppLocalizations {
   String get doubleOptionTitle => 'Option نى قوش بېسىش';
 
   @override
-  String get doubleOptionSubtitle => 'Option كۇنۇپكىسىنى تېز ئىككى قېتىم باسسىڭىزمۇ StockLens چاقىرىلىدۇ.';
+  String get doubleOptionSubtitle => 'Option كۇنۇپكىسىنى تېز ئىككى قېتىم باسسىڭىزمۇ WhatStock چاقىرىلىدۇ.';
 
   @override
   String get doubleOptionPermission =>
-      'باشقا ئەپلەردىمۇ ئىشلىشى ئۈچۈن سىستېما تەڭشىكى ← شەخسىيەت ۋە بىخەتەرلىك ← كىرگۈزۈش نازارىتىدە StockLens غا ئىجازەت بېرىپ، ئاندىن ئەپنى قايتا ئېچىڭ.';
+      'باشقا ئەپلەردىمۇ ئىشلىشى ئۈچۈن سىستېما تەڭشىكى ← شەخسىيەت ۋە بىخەتەرلىك ← كىرگۈزۈش نازارىتىدە WhatStock غا ئىجازەت بېرىپ، ئاندىن ئەپنى قايتا ئېچىڭ.';
 
   @override
   String get openSystemSettings => 'سىستېما تەڭشىكىنى ئېچىش';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens نى چاقىرىش ئۈچۈن خالىغان يەردە $shortcut نى بېسىڭ ياكى Option نى قوش بېسىڭ.';
+    return 'WhatStock نى چاقىرىش ئۈچۈن خالىغان يەردە $shortcut نى بېسىڭ ياكى Option نى قوش بېسىڭ.';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ئىجرا بولۇۋاتقاندا ئاگاھلاندۇرۇشلار ھەر 5 مىنۇتتا تەكشۈرۈلىدۇ. كومپيۇتېردا ئۇ تىزىملىك بالدىقى ياكى سىستېما تەخسىسىدە ئىشلەۋېرىدۇ؛ تېلېفوندا ھازىرچە ئەپ ئوچۇق ۋاقىتتىلا ئاگاھلاندۇرۇش كېلىدۇ.';
+      'WhatStock ئىجرا بولۇۋاتقاندا ئاگاھلاندۇرۇشلار ھەر 5 مىنۇتتا تەكشۈرۈلىدۇ. كومپيۇتېردا ئۇ تىزىملىك بالدىقى ياكى سىستېما تەخسىسىدە ئىشلەۋېرىدۇ؛ تېلېفوندا ھازىرچە ئەپ ئوچۇق ۋاقىتتىلا ئاگاھلاندۇرۇش كېلىدۇ.';
 
   @override
   String alertDescAbove(String price) {
@@ -1223,7 +1223,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens تىزىملىك بالدىقى ياكى سىستېما تەخسىسىدە تۇرىدۇ، شۇڭا تېزلەتمە كۇنۇپكا ۋە باھا ئاگاھلاندۇرۇشلىرى ئىشلەۋېرىدۇ.';
+      'WhatStock تىزىملىك بالدىقى ياكى سىستېما تەخسىسىدە تۇرىدۇ، شۇڭا تېزلەتمە كۇنۇپكا ۋە باھا ئاگاھلاندۇرۇشلىرى ئىشلەۋېرىدۇ.';
 
   @override
   String get termsOfUse => 'ئىشلىتىش شەرتلىرى';

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""StockLens logó – saját, programból rajzolt jel.
+"""WhatStock logó – saját, programból rajzolt jel.
 
 A jel: nagyító zárt lencsével és fényfolttal, a lencsében három emelkedő
 gyertya. Minden elem a lencsén belül marad (nincs megtört gyűrű, nincs a
@@ -100,7 +100,7 @@ def glyph_magnifier(size, frame=CREAM, accent=ACCENT):
 
 def glyph_magnifier_lens(size, frame=CREAM, accent=ACCENT):
     """F: a „lens” jel nagyítónyéllel – zárt lencse fényfolttal, benne három
-    emelkedő gyertya. A StockLens jele."""
+    emelkedő gyertya. A WhatStock jele."""
     S = size * SS
     im = Image.new('RGBA', (S, S), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
@@ -160,7 +160,7 @@ def glyph_magnifier_index(size, frame=CREAM, accent=ACCENT):
 
 
 def glyph_magnifier_line(size, frame=CREAM, accent=ACCENT):
-    """E: nagyító, benne az emelkedő indexgörbe – a StockLens jele."""
+    """E: nagyító, benne az emelkedő indexgörbe – a WhatStock jele."""
     return _magnifier_index(size, frame, accent, 0)
 
 
@@ -192,11 +192,11 @@ def app_icon(glyph, size=1024, rounded=True):
 def wordmark(glyph, text_color, height=160):
     font = _font(int(height * 0.62))
     g = glyph(height, frame=text_color)
-    tw = int(font.getlength('StockLens'))
+    tw = int(font.getlength('WhatStock'))
     im = Image.new('RGBA', (height + int(height * 0.25) + tw + 8, height), (0, 0, 0, 0))
     im.alpha_composite(g, (0, 0))
     d = ImageDraw.Draw(im)
-    d.text((height + int(height * 0.25), height / 2), 'StockLens', font=font, fill=text_color, anchor='lm')
+    d.text((height + int(height * 0.25), height / 2), 'WhatStock', font=font, fill=text_color, anchor='lm')
     return im
 
 

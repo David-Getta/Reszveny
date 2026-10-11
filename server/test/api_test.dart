@@ -4,9 +4,9 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shelf/shelf.dart';
-import 'package:stocklens_server/src/api.dart';
-import 'package:stocklens_server/src/db.dart';
-import 'package:stocklens_server/src/purchase_verifier.dart';
+import 'package:whatstock_server/src/api.dart';
+import 'package:whatstock_server/src/db.dart';
+import 'package:whatstock_server/src/purchase_verifier.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -111,7 +111,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'ios', 'product_id': 'stocklens.sub.pro', 'verification_data': 'receipt-1'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.pro', 'verification_data': 'receipt-1'},
     );
     expect(r['status'], 200);
     expect(r['body']['applied'], isTrue);
@@ -120,14 +120,14 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'ios', 'product_id': 'stocklens.sub.pro', 'verification_data': 'receipt-1'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.pro', 'verification_data': 'receipt-1'},
     );
     expect(again['body']['applied'], isFalse);
     final pack = await call(
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'ios', 'product_id': 'stocklens.pack.20', 'verification_data': 'receipt-2'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.pack.20', 'verification_data': 'receipt-2'},
     );
     expect(pack['body']['entitlements']['extra'], 20);
     final bad = await call(
@@ -152,7 +152,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'android', 'product_id': 'stocklens.sub.normal', 'verification_data': 'r'},
+      body: {'platform': 'android', 'product_id': 'whatstock.sub.normal', 'verification_data': 'r'},
     );
     for (var i = 0; i < 8; i++) {
       await call('POST', '/v1/analyze', token: token, body: {});
@@ -166,7 +166,7 @@ void main() {
 
   test('in-depth analysis costs 2, and 402 insufficient_quota when only 1 is left', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
-    const deep = {'x-stocklens-depth': 'deep'};
+    const deep = {'x-whatstock-depth': 'deep'};
     final ok = await call('POST', '/v1/analyze', token: token, body: {}, headers: deep);
     expect(ok['status'], 200);
     expect((await call('GET', '/v1/me', token: token))['body']['entitlements']['used'], 2);
@@ -174,7 +174,7 @@ void main() {
     expect(blocked['status'], 402);
     expect(blocked['body'], {'error': 'insufficient_quota', 'needed': 2, 'available': 1});
     // Egy rövid még belefér.
-    final brief = await call('POST', '/v1/analyze', token: token, body: {}, headers: {'x-stocklens-depth': 'brief'});
+    final brief = await call('POST', '/v1/analyze', token: token, body: {}, headers: {'x-whatstock-depth': 'brief'});
     expect(brief['status'], 200);
   });
 
@@ -184,7 +184,7 @@ void main() {
       'POST',
       '/v1/purchases/verify',
       token: token,
-      body: {'platform': 'ios', 'product_id': 'stocklens.sub.normal', 'verification_data': 'r-n'},
+      body: {'platform': 'ios', 'product_id': 'whatstock.sub.normal', 'verification_data': 'r-n'},
     );
     final greedy = {
       'max_tokens': 64000,
@@ -196,7 +196,7 @@ void main() {
     await call('POST', '/v1/analyze', token: token, body: greedy);
     expect(lastUpstream!['max_tokens'], 18000);
     expect((lastUpstream!['tools'] as List).first['max_uses'], 4); // Normál: 4
-    await call('POST', '/v1/analyze', token: token, body: greedy, headers: {'x-stocklens-depth': 'deep'});
+    await call('POST', '/v1/analyze', token: token, body: greedy, headers: {'x-whatstock-depth': 'deep'});
     expect(lastUpstream!['max_tokens'], 32000);
     expect((lastUpstream!['tools'] as List).first['max_uses'], 6); // Normál + részletes: 4 + 2
     // Kisebb kérést nem emel meg.

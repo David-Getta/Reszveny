@@ -1,6 +1,6 @@
 {
-    "name": "StockLens",
-    "short_name": "StockLens",
+    "name": "WhatStock",
+    "short_name": "WhatStock",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#1F1E1D",

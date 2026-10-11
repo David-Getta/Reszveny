@@ -1,17 +1,17 @@
-# StockLens – előfizetés és elemzés-keretek
+# WhatStock – előfizetés és elemzés-keretek
 
 ## Csomagok
 
 | Csomag | Termékazonosító | Elemzés / hó | Megjegyzés |
 |---|---|---|---|
 | Próbaidő | – | 3 elemzés 3 napig | első indításkor automatikusan indul |
-| Normál | `stocklens.sub.normal` | 8 | |
-| Pro | `stocklens.sub.pro` | 20 | „Legnépszerűbb” jelölés |
-| Max | `stocklens.sub.max` | 40 | |
-| Ultra | `stocklens.sub.ultra` | 70 | |
+| Normál | `whatstock.sub.normal` | 8 | |
+| Pro | `whatstock.sub.pro` | 20 | „Legnépszerűbb” jelölés |
+| Max | `whatstock.sub.max` | 40 | |
+| Ultra | `whatstock.sub.ultra` | 70 | |
 
 Extra elemzés-csomagok (fogyó termékek, nem járnak le, a havi keret után fogynak):
-`stocklens.pack.5` (+5), `stocklens.pack.20` (+20), `stocklens.pack.50` (+50).
+`whatstock.pack.5` (+5), `whatstock.pack.20` (+20), `whatstock.pack.50` (+50).
 
 ## Árazás
 
@@ -37,7 +37,7 @@ használatnál mind nyereséges). A Max és az Ultra elemzésenként nem olcsób
 „Legjobb ár/érték” jelölés lekerült (félrevezető lett volna).
 
 A havi keret az AI-elemzésekre vonatkozik. A fotófelismerés, az élő adatok, a grafikon, a
-kedvencek és a 44 nyelv minden csomagban korlátlan.
+kedvencek és a 120 nyelv minden csomagban korlátlan.
 
 ## Kliens (kész)
 
@@ -71,7 +71,7 @@ jóvá a csomagot, az app pedig figyeli a fiókot (és visszatéréskor azonnal 
 boltjában még nincs felvett termék, vagy nincs backend, a demó bolt fut.
 
 Szerver-beállítás: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
-(`stocklens.sub.pro=price_…,…`), `PUBLIC_URL`; a belépőkódhoz `RESEND_API_KEY` és `MAIL_FROM`
+(`whatstock.sub.pro=price_…,…`), `PUBLIC_URL`; a belépőkódhoz `RESEND_API_KEY` és `MAIL_FROM`
 (nélkülük a kód a szerver naplójába kerül). A Stripe-ban a webhook eseményei:
 `checkout.session.completed`, `invoice.paid`, `customer.subscription.updated`,
 `customer.subscription.deleted`.
@@ -89,7 +89,7 @@ A beállításokban választható hossz határozza meg, mennyi keretet fogyaszt 
 Webkeresés alap hossznál: Próba 6, Normál 4, Pro 6, Max 8, Ultra 10. Ha csak 1 elemzés maradt,
 a részletes nem indítható (`notEnoughCredits`, szerveren 402 `insufficient_quota`), a rövid és az
 alap igen. A levonás előbb az időszaki keretből, a maradék az extrából történik. A szerver a
-`x-stocklens-depth` fejlécből számolja a költséget, és a kérésben a `max_tokens`-t és a
+`x-whatstock-depth` fejlécből számolja a költséget, és a kérésben a `max_tokens`-t és a
 webkeresés `max_uses` értékét a csomag és a hossz szerinti korlátra vágja, így a kliens nem
 kérhet drágább elemzést, mint amiért fizet.
 
@@ -152,7 +152,7 @@ megléte után készül el. Az eredeti terv, viszonyításként:
 
 ## Pénzügyi modell (becslés, 2026-10-11)
 
-**Hogyan folyik a pénz.** A felhasználó a StockLensnek fizet, nem az Anthropicnak:
+**Hogyan folyik a pénz.** A felhasználó a WhatStocknek fizet, nem az Anthropicnak:
 telefonon az App Store / Google Play szedi be (ők a kereskedők, ők kezelik az ÁFÁ-t, levonják a
 jutalékot, és havonta utalnak a bankszámládra: az Apple kb. 33–45 nappal a hónap vége után, a Google a
 következő hónap 15-e körül), asztali gépen és weben a Stripe (2–7 napon belül utal; itt te

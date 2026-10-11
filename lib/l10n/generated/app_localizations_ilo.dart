@@ -10,7 +10,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   AppLocalizationsIlo([String locale = 'ilo']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Retratuem ti maysa a stock ket ammuem ti amin a maipapan iti dayta.';
@@ -433,11 +433,11 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Pindutem ti $shortcut uray sadino tapno ayaban ti StockLens.';
+    return 'Pindutem ti $shortcut uray sadino tapno ayaban ti WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Lukatan ti StockLens';
+  String get trayOpen => 'Lukatan ti WhatStock';
 
   @override
   String get trayQuickSearch => 'Napardas a panagbiruk';
@@ -956,7 +956,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get accountSyncedNote => 'Agpada ti subscriptionmo ken nabati a panangsukimat iti tunggal device.';
 
   @override
-  String get signInTitle => 'Ag-sign in iti StockLens';
+  String get signInTitle => 'Ag-sign in iti WhatStock';
 
   @override
   String get emailLabel => 'Adres ti email';
@@ -1005,18 +1005,18 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get doubleOptionTitle => 'Mamindua a pindutem ti Option';
 
   @override
-  String get doubleOptionSubtitle => 'Ti napardas a mamindua a panangpindut iti Option key ket umaw met iti StockLens.';
+  String get doubleOptionSubtitle => 'Ti napardas a mamindua a panangpindut iti Option key ket umaw met iti WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Tapno agandar met daytoy kadagiti sabali nga app, palubosam ti StockLens iti System Settings → Privacy & Security → Input Monitoring, sa lukatam manen ti app.';
+      'Tapno agandar met daytoy kadagiti sabali nga app, palubosam ti WhatStock iti System Settings → Privacy & Security → Input Monitoring, sa lukatam manen ti app.';
 
   @override
   String get openSystemSettings => 'Lukatan ti System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Pindutem ti $shortcut wenno mamindua a pindutem ti Option uray sadino tapno ayaban ti StockLens.';
+    return 'Pindutem ti $shortcut wenno mamindua a pindutem ti Option uray sadino tapno ayaban ti WhatStock.';
   }
 
   @override
@@ -1176,7 +1176,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Kitaen dagiti alerto iti tunggal 5 a minuto bayat nga agandar ti StockLens. Iti computer, agtultuloy nga agandar daytoy iti menu bar wenno system tray; iti telepono, ita ket dumteng laeng dagiti alerto bayat a nakalukat ti app.';
+      'Kitaen dagiti alerto iti tunggal 5 a minuto bayat nga agandar ti WhatStock. Iti computer, agtultuloy nga agandar daytoy iti menu bar wenno system tray; iti telepono, ita ket dumteng laeng dagiti alerto bayat a nakalukat ti app.';
 
   @override
   String alertDescAbove(String price) {
@@ -1232,7 +1232,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'Agtalinaed ti StockLens iti menu bar wenno system tray, isu nga agandar latta ti shortcut ken dagiti alerto ti presio.';
+      'Agtalinaed ti WhatStock iti menu bar wenno system tray, isu nga agandar latta ti shortcut ken dagiti alerto ti presio.';
 
   @override
   String get termsOfUse => 'Dagiti Termino ti Panangusar';

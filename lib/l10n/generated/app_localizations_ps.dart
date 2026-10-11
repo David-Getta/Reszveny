@@ -10,7 +10,7 @@ class AppLocalizationsPs extends AppLocalizations {
   AppLocalizationsPs([String locale = 'ps']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'د یوې ونډې انځور واخلئ او د هغې په اړه هر څه زده کړئ.';
@@ -428,11 +428,11 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'له هر ځای څخه د StockLens راوستلو لپاره $shortcut کېکاږئ.';
+    return 'له هر ځای څخه د WhatStock راوستلو لپاره $shortcut کېکاږئ.';
   }
 
   @override
-  String get trayOpen => 'StockLens پرانیزئ';
+  String get trayOpen => 'WhatStock پرانیزئ';
 
   @override
   String get trayQuickSearch => 'چټک لټون';
@@ -947,7 +947,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get accountSyncedNote => 'ستاسو ګډون او پاتې تحلیلونه په هره وسیله کې یو شان دي.';
 
   @override
-  String get signInTitle => 'StockLens ته ننوځئ';
+  String get signInTitle => 'WhatStock ته ننوځئ';
 
   @override
   String get emailLabel => 'برېښنالیک پته';
@@ -995,18 +995,18 @@ class AppLocalizationsPs extends AppLocalizations {
   String get doubleOptionTitle => 'Option دوه ځله کېکاږئ';
 
   @override
-  String get doubleOptionSubtitle => 'د Option کیلي په چټکۍ دوه ځله کېکاږل هم StockLens راوړي.';
+  String get doubleOptionSubtitle => 'د Option کیلي په چټکۍ دوه ځله کېکاږل هم WhatStock راوړي.';
 
   @override
   String get doubleOptionPermission =>
-      'د دې لپاره چې په نورو اپونو کې هم کار وکړي، په System Settings → Privacy & Security → Input Monitoring کې StockLens ته اجازه ورکړئ، او بیا اپ له سره پرانیزئ.';
+      'د دې لپاره چې په نورو اپونو کې هم کار وکړي، په System Settings → Privacy & Security → Input Monitoring کې WhatStock ته اجازه ورکړئ، او بیا اپ له سره پرانیزئ.';
 
   @override
   String get openSystemSettings => 'د سیسټم تنظیمات پرانیزئ';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'له هر ځای څخه د StockLens راوستلو لپاره $shortcut کېکاږئ یا Option دوه ځله کېکاږئ.';
+    return 'له هر ځای څخه د WhatStock راوستلو لپاره $shortcut کېکاږئ یا Option دوه ځله کېکاږئ.';
   }
 
   @override
@@ -1164,7 +1164,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'تر هغه چې StockLens روان وي، خبرتیاوې هرې 5 دقیقې کتل کېږي. په کمپیوټر کې اپ په مینو بار یا ټرې کې روان پاتې کېږي؛ په تلیفون کې اوس مهال خبرتیاوې یوازې هغه وخت راځي چې اپ پرانیستی وي.';
+      'تر هغه چې WhatStock روان وي، خبرتیاوې هرې 5 دقیقې کتل کېږي. په کمپیوټر کې اپ په مینو بار یا ټرې کې روان پاتې کېږي؛ په تلیفون کې اوس مهال خبرتیاوې یوازې هغه وخت راځي چې اپ پرانیستی وي.';
 
   @override
   String alertDescAbove(String price) {
@@ -1220,7 +1220,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens په مینو بار یا ټرې کې پاتې کېږي، نو شارټکټ او د بیې خبرتیاوې کار ته دوام ورکوي.';
+      'WhatStock په مینو بار یا ټرې کې پاتې کېږي، نو شارټکټ او د بیې خبرتیاوې کار ته دوام ورکوي.';
 
   @override
   String get termsOfUse => 'د کارونې شرایط';

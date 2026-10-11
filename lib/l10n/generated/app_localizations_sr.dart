@@ -10,7 +10,7 @@ class AppLocalizationsSr extends AppLocalizations {
   AppLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Фотографишите акцију и сазнајте све о њој.';
@@ -438,11 +438,11 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Притисните $shortcut било где да позовете StockLens.';
+    return 'Притисните $shortcut било где да позовете WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Отвори StockLens';
+  String get trayOpen => 'Отвори WhatStock';
 
   @override
   String get trayQuickSearch => 'Брза претрага';
@@ -983,7 +983,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get accountSyncedNote => 'Ваша претплата и преостале анализе су исте на сваком уређају.';
 
   @override
-  String get signInTitle => 'Пријава на StockLens';
+  String get signInTitle => 'Пријава на WhatStock';
 
   @override
   String get emailLabel => 'Имејл адреса';
@@ -1032,18 +1032,18 @@ class AppLocalizationsSr extends AppLocalizations {
   String get doubleOptionTitle => 'Двоструки притисак на Option';
 
   @override
-  String get doubleOptionSubtitle => 'Брзи двоструки притисак тастера Option такође позива StockLens.';
+  String get doubleOptionSubtitle => 'Брзи двоструки притисак тастера Option такође позива WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Да би радило и у другим апликацијама, дозволите приступ апликацији StockLens у одељку Подешавања система → Приватност и безбедност → Праћење уноса, а затим поново отворите апликацију.';
+      'Да би радило и у другим апликацијама, дозволите приступ апликацији WhatStock у одељку Подешавања система → Приватност и безбедност → Праћење уноса, а затим поново отворите апликацију.';
 
   @override
   String get openSystemSettings => 'Отвори Подешавања система';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Притисните $shortcut или двапут притисните Option било где да позовете StockLens.';
+    return 'Притисните $shortcut или двапут притисните Option било где да позовете WhatStock.';
   }
 
   @override
@@ -1207,7 +1207,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Обавештења се проверавају на сваких 5 минута док StockLens ради. На рачунару апликација наставља да ради у траци менија или системској палети; на телефону за сада обавештава само док је апликација отворена.';
+      'Обавештења се проверавају на сваких 5 минута док WhatStock ради. На рачунару апликација наставља да ради у траци менија или системској палети; на телефону за сада обавештава само док је апликација отворена.';
 
   @override
   String alertDescAbove(String price) {
@@ -1263,7 +1263,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens остаје у траци менија или системској палети, па пречица и обавештења о цени и даље раде.';
+      'WhatStock остаје у траци менија или системској палети, па пречица и обавештења о цени и даље раде.';
 
   @override
   String get termsOfUse => 'Услови коришћења';

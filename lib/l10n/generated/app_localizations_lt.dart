@@ -10,7 +10,7 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
@@ -438,11 +438,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Paspauskite $shortcut bet kur, kad iškviestumėte StockLens.';
+    return 'Paspauskite $shortcut bet kur, kad iškviestumėte WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Atverti StockLens';
+  String get trayOpen => 'Atverti WhatStock';
 
   @override
   String get trayQuickSearch => 'Greitoji paieška';
@@ -994,7 +994,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get accountSyncedNote => 'Jūsų prenumerata ir likusios analizės yra vienodos kiekviename įrenginyje.';
 
   @override
-  String get signInTitle => 'Prisijunkite prie StockLens';
+  String get signInTitle => 'Prisijunkite prie WhatStock';
 
   @override
   String get emailLabel => 'El. pašto adresas';
@@ -1043,18 +1043,18 @@ class AppLocalizationsLt extends AppLocalizations {
   String get doubleOptionTitle => 'Dukart paspausti Option';
 
   @override
-  String get doubleOptionSubtitle => 'StockLens taip pat iškviesite greitai dukart paspaudę klavišą Option.';
+  String get doubleOptionSubtitle => 'WhatStock taip pat iškviesite greitai dukart paspaudę klavišą Option.';
 
   @override
   String get doubleOptionPermission =>
-      'Kad tai veiktų ir kitose programose, leiskite StockLens skiltyje Sistemos nustatymai → Privatumas ir sauga → Įvesties stebėjimas, tada iš naujo atidarykite programą.';
+      'Kad tai veiktų ir kitose programose, leiskite WhatStock skiltyje Sistemos nustatymai → Privatumas ir sauga → Įvesties stebėjimas, tada iš naujo atidarykite programą.';
 
   @override
   String get openSystemSettings => 'Atidaryti Sistemos nustatymus';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Paspauskite $shortcut arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens.';
+    return 'Paspauskite $shortcut arba dukart paspauskite Option bet kur, kad iškviestumėte WhatStock.';
   }
 
   @override
@@ -1219,7 +1219,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Įspėjimai tikrinami kas 5 minutes, kol veikia StockLens. Kompiuteryje programa toliau veikia meniu juostoje arba dėkle; telefone kol kas įspėja tik kai programa atidaryta.';
+      'Įspėjimai tikrinami kas 5 minutes, kol veikia WhatStock. Kompiuteryje programa toliau veikia meniu juostoje arba dėkle; telefone kol kas įspėja tik kai programa atidaryta.';
 
   @override
   String alertDescAbove(String price) {
@@ -1275,7 +1275,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia.';
+      'WhatStock lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia.';
 
   @override
   String get termsOfUse => 'Naudojimo sąlygos';

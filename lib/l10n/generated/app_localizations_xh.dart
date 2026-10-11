@@ -10,7 +10,7 @@ class AppLocalizationsXh extends AppLocalizations {
   AppLocalizationsXh([String locale = 'xh']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Thatha ifoto yesabelo uze ufunde yonke into ngaso.';
@@ -438,11 +438,11 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Cofa $shortcut naphi na ukuze ubize i-StockLens.';
+    return 'Cofa $shortcut naphi na ukuze ubize i-WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Vula i-StockLens';
+  String get trayOpen => 'Vula i-WhatStock';
 
   @override
   String get trayQuickSearch => 'Ukhangelo olukhawulezayo';
@@ -961,7 +961,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get accountSyncedNote => 'Umrhumo wakho neentlalutyo eziseleyo ziyafana kuzo zonke izixhobo.';
 
   @override
-  String get signInTitle => 'Ngena kwi-StockLens';
+  String get signInTitle => 'Ngena kwi-WhatStock';
 
   @override
   String get emailLabel => 'Idilesi ye-imeyile';
@@ -1010,18 +1010,18 @@ class AppLocalizationsXh extends AppLocalizations {
   String get doubleOptionTitle => 'Cofa i-Option kabini';
 
   @override
-  String get doubleOptionSubtitle => 'Ukucofa iqhosha le-Option kabini ngokukhawuleza nako kubiza i-StockLens.';
+  String get doubleOptionSubtitle => 'Ukucofa iqhosha le-Option kabini ngokukhawuleza nako kubiza i-WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Ukuze isebenze nakwezinye ii-app, vumela i-StockLens kwiiSetingi zeSistim → Ubumfihlo noKhuseleko → Ukubeka iliso kwiGalelo, uze uvule i-app kwakhona.';
+      'Ukuze isebenze nakwezinye ii-app, vumela i-WhatStock kwiiSetingi zeSistim → Ubumfihlo noKhuseleko → Ukubeka iliso kwiGalelo, uze uvule i-app kwakhona.';
 
   @override
   String get openSystemSettings => 'Vula iiSetingi zeSistim';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Cofa $shortcut okanye ucofe i-Option kabini naphi na ukuze ubize i-StockLens.';
+    return 'Cofa $shortcut okanye ucofe i-Option kabini naphi na ukuze ubize i-WhatStock.';
   }
 
   @override
@@ -1180,7 +1180,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Izilumkiso zijongwa rhoqo emva kwemizuzu emi-5 ngelixa i-StockLens isebenza. Kwikhompyutha ihlala isebenza kwibha yemenyu okanye kwitreyi; kwifowuni, okwangoku izilumkiso zifika kuphela xa i-app ivuliwe.';
+      'Izilumkiso zijongwa rhoqo emva kwemizuzu emi-5 ngelixa i-WhatStock isebenza. Kwikhompyutha ihlala isebenza kwibha yemenyu okanye kwitreyi; kwifowuni, okwangoku izilumkiso zifika kuphela xa i-app ivuliwe.';
 
   @override
   String alertDescAbove(String price) {
@@ -1236,7 +1236,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'I-StockLens ihlala kwibha yemenyu okanye kwitreyi, ukuze indlela emfutshane nezilumkiso zamaxabiso ziqhubeke zisebenza.';
+      'I-WhatStock ihlala kwibha yemenyu okanye kwitreyi, ukuze indlela emfutshane nezilumkiso zamaxabiso ziqhubeke zisebenza.';
 
   @override
   String get termsOfUse => 'Imiqathango Yokusetyenziswa';

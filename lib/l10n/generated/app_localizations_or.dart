@@ -10,7 +10,7 @@ class AppLocalizationsOr extends AppLocalizations {
   AppLocalizationsOr([String locale = 'or']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ଗୋଟିଏ ସେୟାରର ଫଟୋ ଉଠାନ୍ତୁ ଏବଂ ଏହା ବିଷୟରେ ସବୁକିଛି ଜାଣନ୍ତୁ।';
@@ -430,11 +430,11 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'ଯେକୌଣସି ସ୍ଥାନରୁ StockLens ଖୋଲିବାକୁ $shortcut ଦବାନ୍ତୁ।';
+    return 'ଯେକୌଣସି ସ୍ଥାନରୁ WhatStock ଖୋଲିବାକୁ $shortcut ଦବାନ୍ତୁ।';
   }
 
   @override
-  String get trayOpen => 'StockLens ଖୋଲନ୍ତୁ';
+  String get trayOpen => 'WhatStock ଖୋଲନ୍ତୁ';
 
   @override
   String get trayQuickSearch => 'ଦ୍ରୁତ ସନ୍ଧାନ';
@@ -950,7 +950,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get accountSyncedNote => 'ଆପଣଙ୍କ ସବସ୍କ୍ରିପସନ ଓ ବାକି ବିଶ୍ଳେଷଣ ପ୍ରତ୍ୟେକ ଡିଭାଇସରେ ସମାନ ରହେ।';
 
   @override
-  String get signInTitle => 'StockLensରେ ସାଇନ ଇନ କରନ୍ତୁ';
+  String get signInTitle => 'WhatStockରେ ସାଇନ ଇନ କରନ୍ତୁ';
 
   @override
   String get emailLabel => 'ଇମେଲ ଠିକଣା';
@@ -998,18 +998,18 @@ class AppLocalizationsOr extends AppLocalizations {
   String get doubleOptionTitle => 'Option ଦୁଇଥର ଦବାନ୍ତୁ';
 
   @override
-  String get doubleOptionSubtitle => 'Option କି ଶୀଘ୍ର ଦୁଇଥର ଦବାଇଲେ ମଧ୍ୟ StockLens ଖୋଲିଯାଏ।';
+  String get doubleOptionSubtitle => 'Option କି ଶୀଘ୍ର ଦୁଇଥର ଦବାଇଲେ ମଧ୍ୟ WhatStock ଖୋଲିଯାଏ।';
 
   @override
   String get doubleOptionPermission =>
-      'ଅନ୍ୟ ଆପଗୁଡ଼ିକରେ ମଧ୍ୟ ଏହା କାମ କରିବା ପାଇଁ, ସିଷ୍ଟମ ସେଟିଂସ → ଗୋପନୀୟତା ଓ ସୁରକ୍ଷା → ଇନପୁଟ ମନିଟରିଂରେ StockLensକୁ ଅନୁମତି ଦିଅନ୍ତୁ, ତାପରେ ଆପଟି ପୁଣି ଖୋଲନ୍ତୁ।';
+      'ଅନ୍ୟ ଆପଗୁଡ଼ିକରେ ମଧ୍ୟ ଏହା କାମ କରିବା ପାଇଁ, ସିଷ୍ଟମ ସେଟିଂସ → ଗୋପନୀୟତା ଓ ସୁରକ୍ଷା → ଇନପୁଟ ମନିଟରିଂରେ WhatStockକୁ ଅନୁମତି ଦିଅନ୍ତୁ, ତାପରେ ଆପଟି ପୁଣି ଖୋଲନ୍ତୁ।';
 
   @override
   String get openSystemSettings => 'ସିଷ୍ଟମ ସେଟିଂସ ଖୋଲନ୍ତୁ';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'ଯେକୌଣସି ସ୍ଥାନରୁ StockLens ଖୋଲିବାକୁ $shortcut ଦବାନ୍ତୁ କିମ୍ବା Option ଦୁଇଥର ଦବାନ୍ତୁ।';
+    return 'ଯେକୌଣସି ସ୍ଥାନରୁ WhatStock ଖୋଲିବାକୁ $shortcut ଦବାନ୍ତୁ କିମ୍ବା Option ଦୁଇଥର ଦବାନ୍ତୁ।';
   }
 
   @override
@@ -1167,7 +1167,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens ଚାଲୁଥିବା ସମୟରେ ପ୍ରତି 5 ମିନିଟରେ ଆଲର୍ଟ ଯାଞ୍ଚ କରାଯାଏ। କମ୍ପ୍ୟୁଟରରେ ଏହା ମେନୁ ବାର କିମ୍ବା ଟ୍ରେରେ ଚାଲୁ ରହେ; ଫୋନରେ ଆପାତତଃ ଆପ ଖୋଲା ଥିଲେ ହିଁ ଆଲର୍ଟ ଆସେ।';
+      'WhatStock ଚାଲୁଥିବା ସମୟରେ ପ୍ରତି 5 ମିନିଟରେ ଆଲର୍ଟ ଯାଞ୍ଚ କରାଯାଏ। କମ୍ପ୍ୟୁଟରରେ ଏହା ମେନୁ ବାର କିମ୍ବା ଟ୍ରେରେ ଚାଲୁ ରହେ; ଫୋନରେ ଆପାତତଃ ଆପ ଖୋଲା ଥିଲେ ହିଁ ଆଲର୍ଟ ଆସେ।';
 
   @override
   String alertDescAbove(String price) {
@@ -1222,7 +1222,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get keepInTrayTitle => 'ୱିଣ୍ଡୋ ବନ୍ଦ ହେଲେ ମଧ୍ୟ ଚାଲୁ ରଖନ୍ତୁ';
 
   @override
-  String get keepInTraySubtitle => 'StockLens ମେନୁ ବାର କିମ୍ବା ଟ୍ରେରେ ରହେ, ତେଣୁ ସର୍ଟକଟ ଓ ଦର ଆଲର୍ଟ କାମ କରୁଥାଏ।';
+  String get keepInTraySubtitle => 'WhatStock ମେନୁ ବାର କିମ୍ବା ଟ୍ରେରେ ରହେ, ତେଣୁ ସର୍ଟକଟ ଓ ଦର ଆଲର୍ଟ କାମ କରୁଥାଏ।';
 
   @override
   String get termsOfUse => 'ବ୍ୟବହାର ସର୍ତ୍ତାବଳୀ';

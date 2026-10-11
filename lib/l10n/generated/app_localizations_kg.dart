@@ -10,7 +10,7 @@ class AppLocalizationsKg extends AppLocalizations {
   AppLocalizationsKg([String locale = 'kg']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Baka foto ya action ye zaya mambu mawonso ma yau.';
@@ -432,11 +432,11 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Fina $shortcut konso fulu mu kubokila StockLens.';
+    return 'Fina $shortcut konso fulu mu kubokila WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Zibula StockLens';
+  String get trayOpen => 'Zibula WhatStock';
 
   @override
   String get trayQuickSearch => 'Tomba nswalu';
@@ -953,7 +953,7 @@ class AppLocalizationsKg extends AppLocalizations {
   String get accountSyncedNote => 'Abonnement aku ye analyse zisidi mpila mosi mu bisadilu biawonso.';
 
   @override
-  String get signInTitle => 'Kota mu StockLens';
+  String get signInTitle => 'Kota mu WhatStock';
 
   @override
   String get emailLabel => 'Adresse e-mail';
@@ -1001,18 +1001,18 @@ class AppLocalizationsKg extends AppLocalizations {
   String get doubleOptionTitle => 'Fina Option mbala zole';
 
   @override
-  String get doubleOptionSubtitle => 'Kufina touche Option mbala zole ye nswalu kubokilanga mpe StockLens.';
+  String get doubleOptionSubtitle => 'Kufina touche Option mbala zole ye nswalu kubokilanga mpe WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Kimana isala mpe mu application zankaka, vana StockLens nswa mu Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, bosi zibula application diaka.';
+      'Kimana isala mpe mu application zankaka, vana WhatStock nswa mu Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, bosi zibula application diaka.';
 
   @override
   String get openSystemSettings => 'Zibula Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Fina $shortcut yovo fina Option mbala zole konso fulu mu kubokila StockLens.';
+    return 'Fina $shortcut yovo fina Option mbala zole konso fulu mu kubokila WhatStock.';
   }
 
   @override
@@ -1170,7 +1170,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Nkebisu zitadwanga konso minuti 5 ntangu StockLens yeti sala. Mu ordinateur, ilandanga sala mu barre ya menu yovo mu tray; mu telefone, nate wau nkebisu zikwizanga kaka vo application izibuka.';
+      'Nkebisu zitadwanga konso minuti 5 ntangu WhatStock yeti sala. Mu ordinateur, ilandanga sala mu barre ya menu yovo mu tray; mu telefone, nate wau nkebisu zikwizanga kaka vo application izibuka.';
 
   @override
   String alertDescAbove(String price) {
@@ -1226,7 +1226,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens isialanga mu barre ya menu yovo mu tray, kimana raccourci ye nkebisu za ntalu zilanda sala.';
+      'WhatStock isialanga mu barre ya menu yovo mu tray, kimana raccourci ye nkebisu za ntalu zilanda sala.';
 
   @override
   String get termsOfUse => 'Nsiku za kusadila';

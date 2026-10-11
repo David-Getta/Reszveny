@@ -166,7 +166,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
               'anthropic-version': anthropicVersion,
               'anthropic-beta': 'server-side-fallback-2026-07-01',
               // A backend ebből számolja a keret-levonást és a korlátokat.
-              if (config.hasBackend && url == null) 'x-stocklens-depth': depth.name,
+              if (config.hasBackend && url == null) 'x-whatstock-depth': depth.name,
             },
             body: jsonEncode(body),
           )

@@ -10,7 +10,7 @@ class AppLocalizationsBe extends AppLocalizations {
   AppLocalizationsBe([String locale = 'be']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Сфатаграфуйце акцыю і даведайцеся пра яе ўсё.';
@@ -440,11 +440,11 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Націсніце $shortcut дзе заўгодна, каб выклікаць StockLens.';
+    return 'Націсніце $shortcut дзе заўгодна, каб выклікаць WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Адкрыць StockLens';
+  String get trayOpen => 'Адкрыць WhatStock';
 
   @override
   String get trayQuickSearch => 'Хуткі пошук';
@@ -995,7 +995,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String get accountSyncedNote => 'Ваша падпіска і астатак аналізаў аднолькавыя на ўсіх прыладах.';
 
   @override
-  String get signInTitle => 'Уваход у StockLens';
+  String get signInTitle => 'Уваход у WhatStock';
 
   @override
   String get emailLabel => 'Адрас электроннай пошты';
@@ -1043,18 +1043,18 @@ class AppLocalizationsBe extends AppLocalizations {
   String get doubleOptionTitle => 'Двайны націск Option';
 
   @override
-  String get doubleOptionSubtitle => 'Хуткі двайны націск клавішы Option таксама выклікае StockLens.';
+  String get doubleOptionSubtitle => 'Хуткі двайны націск клавішы Option таксама выклікае WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Каб гэта працавала і ў іншых праграмах, дазвольце доступ для StockLens у раздзеле «Сістэмныя налады» → «Прыватнасць і бяспека» → «Маніторынг уводу», а потым зноў адкрыйце праграму.';
+      'Каб гэта працавала і ў іншых праграмах, дазвольце доступ для WhatStock у раздзеле «Сістэмныя налады» → «Прыватнасць і бяспека» → «Маніторынг уводу», а потым зноў адкрыйце праграму.';
 
   @override
   String get openSystemSettings => 'Адкрыць «Сістэмныя налады»';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Націсніце $shortcut або двойчы націсніце Option дзе заўгодна, каб выклікаць StockLens.';
+    return 'Націсніце $shortcut або двойчы націсніце Option дзе заўгодна, каб выклікаць WhatStock.';
   }
 
   @override
@@ -1220,7 +1220,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Апавяшчэнні правяраюцца кожныя 5 хвілін, пакуль StockLens працуе. На камп’ютары праграма працуе далей у радку меню або ў сістэмным трэі; на тэлефоне апавяшчэнні пакуль прыходзяць, толькі калі праграма адкрыта.';
+      'Апавяшчэнні правяраюцца кожныя 5 хвілін, пакуль WhatStock працуе. На камп’ютары праграма працуе далей у радку меню або ў сістэмным трэі; на тэлефоне апавяшчэнні пакуль прыходзяць, толькі калі праграма адкрыта.';
 
   @override
   String alertDescAbove(String price) {
@@ -1276,7 +1276,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens застаецца ў радку меню або ў сістэмным трэі, таму спалучэнне клавіш і цэнавыя апавяшчэнні працуюць далей.';
+      'WhatStock застаецца ў радку меню або ў сістэмным трэі, таму спалучэнне клавіш і цэнавыя апавяшчэнні працуюць далей.';
 
   @override
   String get termsOfUse => 'Умовы выкарыстання';

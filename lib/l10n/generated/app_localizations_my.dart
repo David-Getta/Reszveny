@@ -10,7 +10,7 @@ class AppLocalizationsMy extends AppLocalizations {
   AppLocalizationsMy([String locale = 'my']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။';
@@ -432,11 +432,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens ကို ခေါ်ရန် မည်သည့်နေရာတွင်မဆို $shortcut ကို နှိပ်ပါ။';
+    return 'WhatStock ကို ခေါ်ရန် မည်သည့်နေရာတွင်မဆို $shortcut ကို နှိပ်ပါ။';
   }
 
   @override
-  String get trayOpen => 'StockLens ဖွင့်ရန်';
+  String get trayOpen => 'WhatStock ဖွင့်ရန်';
 
   @override
   String get trayQuickSearch => 'အမြန် ရှာဖွေရန်';
@@ -938,7 +938,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get accountSyncedNote => 'သင့်စာရင်းသွင်းမှုနှင့် ကျန်ရှိသော သုံးသပ်ချက်များသည် စက်တိုင်းတွင် တူညီသည်။';
 
   @override
-  String get signInTitle => 'StockLens သို့ လက်မှတ်ထိုးဝင်ရန်';
+  String get signInTitle => 'WhatStock သို့ လက်မှတ်ထိုးဝင်ရန်';
 
   @override
   String get emailLabel => 'အီးမေးလ်လိပ်စာ';
@@ -988,18 +988,18 @@ class AppLocalizationsMy extends AppLocalizations {
   String get doubleOptionTitle => 'Option ကို နှစ်ချက် နှိပ်ရန်';
 
   @override
-  String get doubleOptionSubtitle => 'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း StockLens ကို ခေါ်နိုင်သည်။';
+  String get doubleOptionSubtitle => 'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း WhatStock ကို ခေါ်နိုင်သည်။';
 
   @override
   String get doubleOptionPermission =>
-      'အခြားအက်ပ်များတွင်ပါ အလုပ်လုပ်စေရန် စနစ်ဆက်တင်များ → ကိုယ်ရေးလုံခြုံမှုနှင့် လုံခြုံရေး → ထည့်သွင်းမှု စောင့်ကြည့်ခြင်း တွင် StockLens ကို ခွင့်ပြုပြီး အက်ပ်ကို ပြန်ဖွင့်ပါ။';
+      'အခြားအက်ပ်များတွင်ပါ အလုပ်လုပ်စေရန် စနစ်ဆက်တင်များ → ကိုယ်ရေးလုံခြုံမှုနှင့် လုံခြုံရေး → ထည့်သွင်းမှု စောင့်ကြည့်ခြင်း တွင် WhatStock ကို ခွင့်ပြုပြီး အက်ပ်ကို ပြန်ဖွင့်ပါ။';
 
   @override
   String get openSystemSettings => 'စနစ်ဆက်တင်များ ဖွင့်ရန်';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens ကို ခေါ်ရန် မည်သည့်နေရာတွင်မဆို $shortcut ကို နှိပ်ပါ သို့မဟုတ် Option ကို နှစ်ချက်နှိပ်ပါ။';
+    return 'WhatStock ကို ခေါ်ရန် မည်သည့်နေရာတွင်မဆို $shortcut ကို နှိပ်ပါ သို့မဟုတ် Option ကို နှစ်ချက်နှိပ်ပါ။';
   }
 
   @override
@@ -1159,7 +1159,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens လည်ပတ်နေစဉ် သတိပေးချက်များကို 5 မိနစ်တိုင်း စစ်ဆေးသည်။ ကွန်ပျူတာတွင် မီနူးဘား သို့မဟုတ် ထရေးတွင် ဆက်လက် လည်ပတ်နေမည်။ ဖုန်းတွင်မူ လောလောဆယ် အက်ပ်ဖွင့်ထားစဉ်သာ သတိပေးချက်များ ရောက်လာမည်။';
+      'WhatStock လည်ပတ်နေစဉ် သတိပေးချက်များကို 5 မိနစ်တိုင်း စစ်ဆေးသည်။ ကွန်ပျူတာတွင် မီနူးဘား သို့မဟုတ် ထရေးတွင် ဆက်လက် လည်ပတ်နေမည်။ ဖုန်းတွင်မူ လောလောဆယ် အက်ပ်ဖွင့်ထားစဉ်သာ သတိပေးချက်များ ရောက်လာမည်။';
 
   @override
   String alertDescAbove(String price) {
@@ -1215,7 +1215,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens သည် မီနူးဘား သို့မဟုတ် ထရေးတွင် ရှိနေမည်ဖြစ်၍ ဖြတ်လမ်းခလုတ်နှင့် ဈေးနှုန်း သတိပေးချက်များ ဆက်လက် အလုပ်လုပ်မည်။';
+      'WhatStock သည် မီနူးဘား သို့မဟုတ် ထရေးတွင် ရှိနေမည်ဖြစ်၍ ဖြတ်လမ်းခလုတ်နှင့် ဈေးနှုန်း သတိပေးချက်များ ဆက်လက် အလုပ်လုပ်မည်။';
 
   @override
   String get termsOfUse => 'အသုံးပြုမှု စည်းမျဉ်းများ';

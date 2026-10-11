@@ -10,7 +10,7 @@ class AppLocalizationsWo extends AppLocalizations {
   AppLocalizationsWo([String locale = 'wo']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Jëlal nataalu aksiyoŋ te xam lépp ci moom.';
@@ -431,11 +431,11 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Bësal $shortcut fu mu mën a doon ngir woo StockLens.';
+    return 'Bësal $shortcut fu mu mën a doon ngir woo WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Ubbi StockLens';
+  String get trayOpen => 'Ubbi WhatStock';
 
   @override
   String get trayQuickSearch => 'Seet bu gaaw';
@@ -950,7 +950,7 @@ class AppLocalizationsWo extends AppLocalizations {
   String get accountSyncedNote => 'Sa abonmaa ak saytu yi la des, benn lañu ci masin yépp.';
 
   @override
-  String get signInTitle => 'Dugg ci StockLens';
+  String get signInTitle => 'Dugg ci WhatStock';
 
   @override
   String get emailLabel => 'Adrees imeel';
@@ -998,18 +998,18 @@ class AppLocalizationsWo extends AppLocalizations {
   String get doubleOptionTitle => 'Bësal Option ñaari yoon';
 
   @override
-  String get doubleOptionSubtitle => 'Bës Option ñaari yoon ci gaaw dafay woo StockLens itam.';
+  String get doubleOptionSubtitle => 'Bës Option ñaari yoon ci gaaw dafay woo WhatStock itam.';
 
   @override
   String get doubleOptionPermission =>
-      'Ngir mu dox ci yeneen aplikasiyoŋ itam, may StockLens ci Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, ba noppi ubbiwaat aplikasiyoŋ bi.';
+      'Ngir mu dox ci yeneen aplikasiyoŋ itam, may WhatStock ci Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, ba noppi ubbiwaat aplikasiyoŋ bi.';
 
   @override
   String get openSystemSettings => 'Ubbi Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Bësal $shortcut walla bësal Option ñaari yoon fu mu mën a doon ngir woo StockLens.';
+    return 'Bësal $shortcut walla bësal Option ñaari yoon fu mu mën a doon ngir woo WhatStock.';
   }
 
   @override
@@ -1166,7 +1166,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ñuy seet artu yi 5 minit yu nekk bu StockLens di dox. Ci ordinatëer, mu ngi wéy di dox ci barub menu walla ci tray bi; ci telefoon, fi mu nekk nii, artu yi dañuy ñëw su aplikasiyoŋ bi ubbeeku rekk.';
+      'Ñuy seet artu yi 5 minit yu nekk bu WhatStock di dox. Ci ordinatëer, mu ngi wéy di dox ci barub menu walla ci tray bi; ci telefoon, fi mu nekk nii, artu yi dañuy ñëw su aplikasiyoŋ bi ubbeeku rekk.';
 
   @override
   String alertDescAbove(String price) {
@@ -1222,7 +1222,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens dafay des ci barub menu walla ci tray bi, ngir yoon wu gàtt wi ak artu njëg yi wéy di dox.';
+      'WhatStock dafay des ci barub menu walla ci tray bi, ngir yoon wu gàtt wi ak artu njëg yi wéy di dox.';
 
   @override
   String get termsOfUse => 'Sàrti jëfandikoo';

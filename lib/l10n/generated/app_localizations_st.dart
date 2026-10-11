@@ -10,7 +10,7 @@ class AppLocalizationsSt extends AppLocalizations {
   AppLocalizationsSt([String locale = 'st']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Nka setshwantsho sa shere mme o ithute tsohle ka yona.';
@@ -438,11 +438,11 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Tobetsa $shortcut kae kapa kae ho bitsa StockLens.';
+    return 'Tobetsa $shortcut kae kapa kae ho bitsa WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Bula StockLens';
+  String get trayOpen => 'Bula WhatStock';
 
   @override
   String get trayQuickSearch => 'Patlo e potlakileng';
@@ -962,7 +962,7 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ingodiso ya hao le ditlhahlobo tse setseng di a tshwana sesebedisweng se seng le se seng.';
 
   @override
-  String get signInTitle => 'Kena ho StockLens';
+  String get signInTitle => 'Kena ho WhatStock';
 
   @override
   String get emailLabel => 'Aterese ya imeile';
@@ -1010,18 +1010,18 @@ class AppLocalizationsSt extends AppLocalizations {
   String get doubleOptionTitle => 'Tobetsa Option habedi';
 
   @override
-  String get doubleOptionSubtitle => 'Ho tobetsa konopo ya Option habedi ka potlako le hona ho bitsa StockLens.';
+  String get doubleOptionSubtitle => 'Ho tobetsa konopo ya Option habedi ka potlako le hona ho bitsa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Hore e sebetse le ho di-app tse ding, dumella StockLens ho System Settings → Privacy & Security → Input Monitoring, ebe o bula app hape.';
+      'Hore e sebetse le ho di-app tse ding, dumella WhatStock ho System Settings → Privacy & Security → Input Monitoring, ebe o bula app hape.';
 
   @override
   String get openSystemSettings => 'Bula System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Tobetsa $shortcut kapa tobetsa Option habedi kae kapa kae ho bitsa StockLens.';
+    return 'Tobetsa $shortcut kapa tobetsa Option habedi kae kapa kae ho bitsa WhatStock.';
   }
 
   @override
@@ -1185,7 +1185,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'Ditsebiso di hlahlojwa metsotso e meng le e meng e 5 ha StockLens e ntse e sebetsa. Khomputareng e tswela pele e sebetsa bareng ya menyu kapa treing; fonong, hajwale ditsebiso di fihla feela ha app e butswe.';
+      'Ditsebiso di hlahlojwa metsotso e meng le e meng e 5 ha WhatStock e ntse e sebetsa. Khomputareng e tswela pele e sebetsa bareng ya menyu kapa treing; fonong, hajwale ditsebiso di fihla feela ha app e butswe.';
 
   @override
   String alertDescAbove(String price) {
@@ -1241,7 +1241,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens e dula bareng ya menyu kapa treing, kahoo khutsufatso le ditsebiso tsa theko di tswela pele di sebetsa.';
+      'WhatStock e dula bareng ya menyu kapa treing, kahoo khutsufatso le ditsebiso tsa theko di tswela pele di sebetsa.';
 
   @override
   String get termsOfUse => 'Dipehelo tsa Tshebediso';

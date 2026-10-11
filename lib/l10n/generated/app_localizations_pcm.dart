@@ -10,7 +10,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   AppLocalizationsPcm([String locale = 'pcm']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Snap stock picture, make you sabi evritin about am.';
@@ -431,11 +431,11 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Press $shortcut anywhere to call StockLens.';
+    return 'Press $shortcut anywhere to call WhatStock.';
   }
 
   @override
-  String get trayOpen => 'Open StockLens';
+  String get trayOpen => 'Open WhatStock';
 
   @override
   String get trayQuickSearch => 'Quick search';
@@ -951,7 +951,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get accountSyncedNote => 'Your subscription and di analysis wey remain na di same for every device.';
 
   @override
-  String get signInTitle => 'Sign in for StockLens';
+  String get signInTitle => 'Sign in for WhatStock';
 
   @override
   String get emailLabel => 'Your email address';
@@ -999,18 +999,18 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get doubleOptionTitle => 'Press Option two times';
 
   @override
-  String get doubleOptionSubtitle => 'If you press Option key two times quick quick, e go still call StockLens.';
+  String get doubleOptionSubtitle => 'If you press Option key two times quick quick, e go still call WhatStock.';
 
   @override
   String get doubleOptionPermission =>
-      'Make e work for oda apps too, allow StockLens for System Settings → Privacy & Security → Input Monitoring, then open di app again.';
+      'Make e work for oda apps too, allow WhatStock for System Settings → Privacy & Security → Input Monitoring, then open di app again.';
 
   @override
   String get openSystemSettings => 'Open System Settings';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Press $shortcut or press Option two times anywhere to call StockLens.';
+    return 'Press $shortcut or press Option two times anywhere to call WhatStock.';
   }
 
   @override
@@ -1168,7 +1168,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'We dey check alerts every 5 minutes as StockLens dey run. For computer, e go dey run for menu bar or tray; for phone, for now alerts go come only when di app dey open.';
+      'We dey check alerts every 5 minutes as WhatStock dey run. For computer, e go dey run for menu bar or tray; for phone, for now alerts go come only when di app dey open.';
 
   @override
   String alertDescAbove(String price) {
@@ -1224,7 +1224,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens go stay for menu bar or tray, so di hotkey and price alerts go still dey work.';
+      'WhatStock go stay for menu bar or tray, so di hotkey and price alerts go still dey work.';
 
   @override
   String get termsOfUse => 'Terms of Use';

@@ -21,7 +21,7 @@ Future<void> main() async {
   final entitlements = await EntitlementService.load();
   await entitlements.ensureTrial();
   final desktop = DesktopIntegration();
-  await desktop.initialize(title: 'StockLens', hotkeyJson: preferences.hotkeyJson, keepInTray: preferences.keepInTray);
+  await desktop.initialize(title: 'WhatStock', hotkeyJson: preferences.hotkeyJson, keepInTray: preferences.keepInTray);
   // macOS: dupla Option-nyomás; az engedélyt csak egyszer kérjük, utána a
   // beállításokból nyitható meg.
   if (DesktopIntegration.supportsDoubleOption && preferences.doubleOption) {
@@ -38,7 +38,7 @@ Future<void> main() async {
     portfolio: await PortfolioStore.load(),
     alerts: await AlertStore.load(),
   );
-  runApp(StockLensApp(services: services));
+  runApp(WhatStockApp(services: services));
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
   // Backend-módban a szerver szerinti csomag és keret átvétele.

@@ -10,7 +10,7 @@ class AppLocalizationsTk extends AppLocalizations {
   AppLocalizationsTk([String locale = 'tk']) : super(locale);
 
   @override
-  String get appTitle => 'StockLens';
+  String get appTitle => 'WhatStock';
 
   @override
   String get homeTagline => 'Paýnamany surata düşüriň we ol barada hemme zady öwreniň.';
@@ -430,11 +430,11 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'StockLens-i çagyrmak üçin islendik ýerde $shortcut düwmelerine basyň.';
+    return 'WhatStock-y çagyrmak üçin islendik ýerde $shortcut düwmelerine basyň.';
   }
 
   @override
-  String get trayOpen => 'StockLens-i aç';
+  String get trayOpen => 'WhatStock-y aç';
 
   @override
   String get trayQuickSearch => 'Çalt gözleg';
@@ -951,7 +951,7 @@ class AppLocalizationsTk extends AppLocalizations {
   String get accountSyncedNote => 'Abunaňyz we galan seljermeleriňiz ähli enjamlarda birmeňzeş.';
 
   @override
-  String get signInTitle => 'StockLens-e giriň';
+  String get signInTitle => 'WhatStock-a giriň';
 
   @override
   String get emailLabel => 'E-poçta salgysy';
@@ -999,18 +999,18 @@ class AppLocalizationsTk extends AppLocalizations {
   String get doubleOptionTitle => 'Option düwmesine iki gezek basmak';
 
   @override
-  String get doubleOptionSubtitle => 'Option düwmesine çalt iki gezek basmak hem StockLens-i çagyrýar.';
+  String get doubleOptionSubtitle => 'Option düwmesine çalt iki gezek basmak hem WhatStock-y çagyrýar.';
 
   @override
   String get doubleOptionPermission =>
-      'Munuň beýleki programmalarda hem işlemegi üçin Ulgam sazlamalary → Gizlinlik we howpsuzlyk → Girizişe gözegçilik bölüminde StockLens-e rugsat beriň, soňra programmany täzeden açyň.';
+      'Munuň beýleki programmalarda hem işlemegi üçin Ulgam sazlamalary → Gizlinlik we howpsuzlyk → Girizişe gözegçilik bölüminde WhatStock-a rugsat beriň, soňra programmany täzeden açyň.';
 
   @override
   String get openSystemSettings => 'Ulgam sazlamalaryny aç';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'StockLens-i çagyrmak üçin islendik ýerde $shortcut düwmelerine ýa-da Option düwmesine iki gezek basyň.';
+    return 'WhatStock-y çagyrmak üçin islendik ýerde $shortcut düwmelerine ýa-da Option düwmesine iki gezek basyň.';
   }
 
   @override
@@ -1168,7 +1168,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get alertsNote =>
-      'StockLens işläp durka duýduryşlar her 5 minutda barlanýar. Kompýuterde programma menýu setirinde ýa-da ulgam meýdançasynda işlemegini dowam edýär; telefonda bolsa duýduryşlar häzirlikçe diňe programma açyk wagty gelýär.';
+      'WhatStock işläp durka duýduryşlar her 5 minutda barlanýar. Kompýuterde programma menýu setirinde ýa-da ulgam meýdançasynda işlemegini dowam edýär; telefonda bolsa duýduryşlar häzirlikçe diňe programma açyk wagty gelýär.';
 
   @override
   String alertDescAbove(String price) {
@@ -1224,7 +1224,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle =>
-      'StockLens menýu setirinde ýa-da ulgam meýdançasynda galýar, şonuň üçin düwme utgaşmasy we baha duýduryşlary işlemegini dowam edýär.';
+      'WhatStock menýu setirinde ýa-da ulgam meýdançasynda galýar, şonuň üçin düwme utgaşmasy we baha duýduryşlary işlemegini dowam edýär.';
 
   @override
   String get termsOfUse => 'Ulanyş şertleri';

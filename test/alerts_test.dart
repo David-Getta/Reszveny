@@ -84,7 +84,7 @@ void main() {
   testWidgets('an alert set on the stock page fires with a localized message and opens the stock', (tester) async {
     final notifier = FakeNotifier();
     final s = services(notifier: notifier);
-    await tester.pumpWidget(StockLensApp(services: s));
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
