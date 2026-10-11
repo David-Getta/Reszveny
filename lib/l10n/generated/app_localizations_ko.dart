@@ -978,4 +978,38 @@ class AppLocalizationsKo extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return '어디서든 $shortcut 키를 누르거나 Option 키를 두 번 눌러 StockLens를 불러오세요.';
   }
+
+  @override
+  String get scenarioMostLikely => '가능성 가장 높음';
+
+  @override
+  String get longTermToday => '오늘';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years년');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '연 $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return '가장 유력 $price';
+  }
+
+  @override
+  String get confidenceLow => '신뢰도 낮음';
+
+  @override
+  String get confidenceMedium => '신뢰도 보통';
+
+  @override
+  String get confidenceHigh => '신뢰도 높음';
+
+  @override
+  String get longTermNote => '장기 범위는 제시된 가정에 근거하며 기간이 길수록 넓어집니다. 가격에는 배당이 포함되지 않습니다. 대략적인 판단이며 예측이 아닙니다.';
 }

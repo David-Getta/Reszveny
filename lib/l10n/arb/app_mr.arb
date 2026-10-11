@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option की पटकन दोनदा दाबल्यानेही StockLens उघडते.",
   "doubleOptionPermission": "इतर अ‍ॅप्समध्येही हे काम करावे यासाठी सिस्टम सेटिंग्ज → गोपनीयता आणि सुरक्षा → इनपुट मॉनिटरिंग येथे StockLens ला परवानगी द्या, मग अ‍ॅप पुन्हा उघडा.",
   "openSystemSettings": "सिस्टम सेटिंग्ज उघडा",
-  "hotkeyHintDoubleOption": "StockLens कुठूनही उघडण्यासाठी {shortcut} दाबा किंवा Option दोनदा दाबा."
+  "hotkeyHintDoubleOption": "StockLens कुठूनही उघडण्यासाठी {shortcut} दाबा किंवा Option दोनदा दाबा.",
+  "scenarioMostLikely": "सर्वाधिक संभाव्य",
+  "longTermToday": "आज",
+  "longTermYears": "{years, plural, one{1 वर्ष} other{{years} वर्षे}}",
+  "longTermPerYear": "दरवर्षी {range}",
+  "longTermLikely": "सर्वाधिक संभाव्य {price}",
+  "confidenceLow": "कमी विश्वास",
+  "confidenceMedium": "मध्यम विश्वास",
+  "confidenceHigh": "उच्च विश्वास",
+  "longTermNote": "दीर्घकालीन पल्ले नमूद केलेल्या गृहितकांवर आधारित आहेत आणि काळानुसार रुंदावतात. किमतींमध्ये लाभांश समाविष्ट नाही. ढोबळ अंदाज आहेत, भाकिते नाहीत."
 }

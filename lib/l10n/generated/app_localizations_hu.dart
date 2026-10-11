@@ -1013,4 +1013,39 @@ class AppLocalizationsHu extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Nyomd le bárhol a $shortcut billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Legvalószínűbb';
+
+  @override
+  String get longTermToday => 'Ma';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years év', one: '1 év');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'évi $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'legvalószínűbb: $price';
+  }
+
+  @override
+  String get confidenceLow => 'Alacsony bizonyosság';
+
+  @override
+  String get confidenceMedium => 'Közepes bizonyosság';
+
+  @override
+  String get confidenceHigh => 'Magas bizonyosság';
+
+  @override
+  String get longTermNote =>
+      'A hosszú távú sávok a megadott feltevéseken alapulnak, és az idővel tágulnak. Az árak osztalék nélkül értendők. Durva becslések, nem előrejelzések.';
 }

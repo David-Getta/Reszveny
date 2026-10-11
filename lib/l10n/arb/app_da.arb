@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Du kan også åbne StockLens ved hurtigt at trykke to gange på alternativtasten.",
   "doubleOptionPermission": "Hvis det også skal virke i andre apps, skal du tillade StockLens under Systemindstillinger → Anonymitet og sikkerhed → Inputovervågning og derefter åbne appen igen.",
   "openSystemSettings": "Åbn Systemindstillinger",
-  "hotkeyHintDoubleOption": "Tryk på {shortcut} eller dobbelttryk på alternativtasten hvor som helst for at åbne StockLens."
+  "hotkeyHintDoubleOption": "Tryk på {shortcut} eller dobbelttryk på alternativtasten hvor som helst for at åbne StockLens.",
+  "scenarioMostLikely": "Mest sandsynligt",
+  "longTermToday": "I dag",
+  "longTermYears": "{years, plural, one{1 år} other{{years} år}}",
+  "longTermPerYear": "{range} om året",
+  "longTermLikely": "mest sandsynligt {price}",
+  "confidenceLow": "Lav sikkerhed",
+  "confidenceMedium": "Middel sikkerhed",
+  "confidenceHigh": "Høj sikkerhed",
+  "longTermNote": "De langsigtede intervaller bygger på de angivne antagelser og bliver bredere med tiden. Kurser ekskl. udbytte. Grove vurderinger, ikke prognoser."
 }

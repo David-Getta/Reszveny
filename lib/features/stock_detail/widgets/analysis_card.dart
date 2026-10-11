@@ -153,7 +153,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   const SizedBox(height: 12),
                   MarketMoodBar(mood: mood, reason: report.outlook!.marketMoodReason),
                 ],
-                for (final s in report.sections) _ReportSectionView(section: s, outlook: report.outlook, fmt: fmt),
+                for (final s in report.sections)
+                  _ReportSectionView(section: s, outlook: report.outlook, fmt: fmt, generatedAt: report.generatedAt),
                 if (report.sources.isNotEmpty) ...[
                   const SizedBox(height: 16),
                   Text(l10n.aiSources, style: theme.textTheme.titleSmall),
@@ -196,11 +197,12 @@ class _AnalysisCardState extends State<AnalysisCard> {
 }
 
 class _ReportSectionView extends StatelessWidget {
-  const _ReportSectionView({required this.section, this.outlook, required this.fmt});
+  const _ReportSectionView({required this.section, this.outlook, required this.fmt, required this.generatedAt});
 
   final ReportSection section;
   final ReportOutlook? outlook;
   final Fmt fmt;
+  final DateTime generatedAt;
 
   IconData get _icon => switch (section.kind) {
     ReportSectionKind.summary => Icons.notes_rounded,
@@ -212,6 +214,7 @@ class _ReportSectionView extends StatelessWidget {
     ReportSectionKind.valuation => Icons.price_change_outlined,
     ReportSectionKind.ownership => Icons.groups_outlined,
     ReportSectionKind.outlook => Icons.explore_outlined,
+    ReportSectionKind.longterm => Icons.timeline_rounded,
     ReportSectionKind.watch => Icons.visibility_outlined,
     ReportSectionKind.other => Icons.circle_outlined,
   };
@@ -236,6 +239,16 @@ class _ReportSectionView extends StatelessWidget {
           const SizedBox(height: 8),
           if (section.kind == ReportSectionKind.outlook && outlook != null && outlook!.scenarios.isNotEmpty) ...[
             ScenarioChart(outlook: outlook!, fmt: fmt),
+            const SizedBox(height: 14),
+          ],
+          if (section.kind == ReportSectionKind.longterm && outlook?.longTerm != null) ...[
+            LongTermChart(
+              longTerm: outlook!.longTerm!,
+              fmt: fmt,
+              baseYear: generatedAt.year,
+              currentPrice: outlook!.currentPrice,
+              currency: outlook!.currency,
+            ),
             const SizedBox(height: 14),
           ],
           if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty) ...[

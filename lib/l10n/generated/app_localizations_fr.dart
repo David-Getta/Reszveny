@@ -1019,4 +1019,39 @@ class AppLocalizationsFr extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Appuyez sur $shortcut ou deux fois sur Option n’importe où pour ouvrir StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Le plus probable';
+
+  @override
+  String get longTermToday => 'Aujourd\'hui';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ans', one: '1 an');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range par an';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'le plus probable : $price';
+  }
+
+  @override
+  String get confidenceLow => 'Confiance faible';
+
+  @override
+  String get confidenceMedium => 'Confiance moyenne';
+
+  @override
+  String get confidenceHigh => 'Confiance élevée';
+
+  @override
+  String get longTermNote =>
+      'Les fourchettes à long terme reposent sur les hypothèses indiquées et s\'élargissent avec le temps. Cours hors dividendes. Estimations grossières, pas des prévisions.';
 }

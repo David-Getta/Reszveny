@@ -1017,4 +1017,39 @@ class AppLocalizationsTa extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'எங்கிருந்தும் StockLens ஐ அழைக்க $shortcut ஐ அழுத்துங்கள் அல்லது Option ஐ இருமுறை அழுத்துங்கள்.';
   }
+
+  @override
+  String get scenarioMostLikely => 'மிக அதிக வாய்ப்பு';
+
+  @override
+  String get longTermToday => 'இன்று';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ஆண்டுகள்', one: '1 ஆண்டு');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'ஆண்டுக்கு $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'மிக வாய்ப்புள்ள விலை $price';
+  }
+
+  @override
+  String get confidenceLow => 'குறைந்த நம்பகத்தன்மை';
+
+  @override
+  String get confidenceMedium => 'நடுத்தர நம்பகத்தன்மை';
+
+  @override
+  String get confidenceHigh => 'உயர் நம்பகத்தன்மை';
+
+  @override
+  String get longTermNote =>
+      'நீண்டகால வரம்புகள் குறிப்பிடப்பட்ட அனுமானங்களை அடிப்படையாகக் கொண்டவை; காலப்போக்கில் அகலமாகும். விலைகளில் ஈவுத்தொகை சேர்க்கப்படவில்லை. தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல.';
 }

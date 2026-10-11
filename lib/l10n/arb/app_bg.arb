@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Бързото двойно натискане на клавиша Option също извиква StockLens.",
   "doubleOptionPermission": "За да работи и в други приложения, разрешете достъп на StockLens в Системни настройки → Поверителност и сигурност → Наблюдение на въвеждането, след което отворете приложението отново.",
   "openSystemSettings": "Отвори Системни настройки",
-  "hotkeyHintDoubleOption": "Натиснете {shortcut} или натиснете два пъти Option отвсякъде, за да извикате StockLens."
+  "hotkeyHintDoubleOption": "Натиснете {shortcut} или натиснете два пъти Option отвсякъде, за да извикате StockLens.",
+  "scenarioMostLikely": "Най-вероятен",
+  "longTermToday": "Днес",
+  "longTermYears": "{years, plural, one{1 година} other{{years} години}}",
+  "longTermPerYear": "{range} годишно",
+  "longTermLikely": "най-вероятно {price}",
+  "confidenceLow": "Ниска увереност",
+  "confidenceMedium": "Средна увереност",
+  "confidenceHigh": "Висока увереност",
+  "longTermNote": "Дългосрочните диапазони се основават на посочените допускания и се разширяват с времето. Цени без дивиденти. Груби преценки, не прогнози."
 }

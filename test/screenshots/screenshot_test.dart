@@ -28,6 +28,7 @@ import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/features/stock_detail/widgets/outlook_view.dart';
 import 'package:reszveny/theme/app_theme.dart';
 
 /// Képernyőképek a felületről a teszt-harnessben (valódi betűkkel). Csak
@@ -140,6 +141,22 @@ class _FakeAnalyst implements StockAnalyst {
           'Bull (~30%): guidance beat and China relief: 215–240 within 6–12 months.',
           'Base (~45%): growth normalises, multiple holds: 175–205.',
           'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.',
+          'Most likely: Base (~45%), because growth is slowing but upward earnings revisions support the multiple.',
+        ],
+      ),
+      ReportSection(
+        kind: ReportSectionKind.longterm,
+        title: 'Long-term view: 3, 5 and 10 years',
+        paragraphs: [
+          'Over a decade the question is how long data-center spending keeps compounding and how much share custom chips '
+              'take. Base path: revenue growth slowing from ~60% to ~10% a year, net margin easing from 55% to 45%, and the '
+              'P/E drifting from 45 toward 20 as growth matures.',
+        ],
+        bullets: [
+          '3 years (2029): 170–300 USD, most likely about 235 USD, −9% to +60%, about −3% to +17% a year.',
+          '5 years (2031): 150–420 USD, most likely about 280 USD, −20% to +124%.',
+          '10 years (2036): 110–700 USD, most likely about 380 USD; the implied ~7% a year is close to the long-run market.',
+          'Main long-term risks: custom silicon at hyperscalers, a capex peak priced as permanent, export controls.',
         ],
       ),
       ReportSection(
@@ -191,6 +208,34 @@ class _FakeAnalyst implements StockAnalyst {
       ],
       marketMood: 1,
       marketMoodReason: 'AI demand narrative is strong, but positioning is crowded.',
+      mostLikelyReason: 'Growth is slowing, but upward earnings revisions support the multiple.',
+      longTerm: LongTermOutlook(
+        summary: 'Long-run value depends on how long AI data-center spending compounds and how much share custom chips take.',
+        horizons: [
+          LongTermHorizon(
+            years: 3,
+            priceLow: 170,
+            priceHigh: 300,
+            priceLikely: 235,
+            basis: 'EPS 8.5–10.5 USD in 2029 × 22–28.',
+            confidence: Confidence.medium,
+          ),
+          LongTermHorizon(
+            years: 5,
+            priceLow: 150,
+            priceHigh: 420,
+            priceLikely: 280,
+            basis: 'EPS 11–14 USD in 2031 × 15–30.',
+          ),
+          LongTermHorizon(
+            years: 10,
+            priceLow: 110,
+            priceHigh: 700,
+            priceLikely: 380,
+            basis: 'EPS 18–26 USD in 2036 × 12–28; share lost to custom chips is the swing factor.',
+          ),
+        ],
+      ),
     ),
   );
 }
@@ -241,13 +286,27 @@ void main() {
   });
 
   testWidgets('detail with AI report', (tester) async {
-    await pumpApp(tester, _services(), const Size(1200, 2300));
+    await pumpApp(tester, _services(), const Size(1200, 3300));
     await tester.enterText(find.byType(TextField), 'NVDA');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     await tester.tap(find.text('Generate analysis'));
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_ai_report');
+  });
+
+  testWidgets('long-term view on a phone (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1100));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Elemzés készítése'));
+    await tester.pumpAndSettle();
+    final chart = find.byType(LongTermChart);
+    await tester.scrollUntilVisible(chart, 400, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(chart), alignment: 0.02);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_longterm_phone_hu');
   });
 
   testWidgets('paywall', (tester) async {

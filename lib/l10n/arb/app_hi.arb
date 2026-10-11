@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option कुंजी को जल्दी-जल्दी दो बार दबाने से भी StockLens खुल जाता है।",
   "doubleOptionPermission": "दूसरे ऐप्स में भी यह काम करे, इसके लिए सिस्टम सेटिंग्ज़ → गोपनीयता और सुरक्षा → इनपुट मॉनिटरिंग में StockLens को अनुमति दें, फिर ऐप को दोबारा खोलें।",
   "openSystemSettings": "सिस्टम सेटिंग्ज़ खोलें",
-  "hotkeyHintDoubleOption": "StockLens को कहीं से भी खोलने के लिए {shortcut} दबाएँ या Option को दो बार दबाएँ।"
+  "hotkeyHintDoubleOption": "StockLens को कहीं से भी खोलने के लिए {shortcut} दबाएँ या Option को दो बार दबाएँ।",
+  "scenarioMostLikely": "सबसे संभावित",
+  "longTermToday": "आज",
+  "longTermYears": "{years, plural, one{1 वर्ष} other{{years} वर्ष}}",
+  "longTermPerYear": "{range} प्रति वर्ष",
+  "longTermLikely": "सबसे संभावित {price}",
+  "confidenceLow": "कम भरोसा",
+  "confidenceMedium": "मध्यम भरोसा",
+  "confidenceHigh": "उच्च भरोसा",
+  "longTermNote": "दीर्घकालिक दायरे बताई गई मान्यताओं पर आधारित हैं और समय के साथ चौड़े होते जाते हैं। कीमतों में लाभांश शामिल नहीं है। मोटे अनुमान हैं, भविष्यवाणियाँ नहीं।"
 }

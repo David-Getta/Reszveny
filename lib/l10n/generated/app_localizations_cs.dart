@@ -1054,4 +1054,46 @@ class AppLocalizationsCs extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Stiskněte $shortcut nebo dvakrát stiskněte Option kdekoli a vyvolejte StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Nejpravděpodobnější';
+
+  @override
+  String get longTermToday => 'Dnes';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years let',
+      many: '$years roku',
+      few: '$years roky',
+      one: '1 rok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range ročně';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'nejpravděpodobněji $price';
+  }
+
+  @override
+  String get confidenceLow => 'Nízká jistota';
+
+  @override
+  String get confidenceMedium => 'Střední jistota';
+
+  @override
+  String get confidenceHigh => 'Vysoká jistota';
+
+  @override
+  String get longTermNote =>
+      'Dlouhodobá pásma vycházejí z uvedených předpokladů a s časem se rozšiřují. Ceny bez dividend. Hrubé odhady, nikoli předpovědi.';
 }

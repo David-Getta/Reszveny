@@ -1014,4 +1014,39 @@ class AppLocalizationsSv extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Tryck på $shortcut eller dubbeltryck på alternativtangenten var som helst för att öppna StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Mest sannolikt';
+
+  @override
+  String get longTermToday => 'I dag';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years år', one: '1 år');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range per år';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'mest sannolikt $price';
+  }
+
+  @override
+  String get confidenceLow => 'Låg säkerhet';
+
+  @override
+  String get confidenceMedium => 'Medelhög säkerhet';
+
+  @override
+  String get confidenceHigh => 'Hög säkerhet';
+
+  @override
+  String get longTermNote =>
+      'De långsiktiga intervallen bygger på de angivna antagandena och vidgas med tiden. Kurser exklusive utdelning. Grova bedömningar, inte prognoser.';
 }

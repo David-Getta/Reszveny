@@ -1015,4 +1015,39 @@ class AppLocalizationsSq extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Shtypni $shortcut ose shtypni dy herë Option kudo për të hapur StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Më e mundshme';
+
+  @override
+  String get longTermToday => 'Sot';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years vjet', one: '1 vit');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range në vit';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'më e mundshme $price';
+  }
+
+  @override
+  String get confidenceLow => 'Besueshmëri e ulët';
+
+  @override
+  String get confidenceMedium => 'Besueshmëri mesatare';
+
+  @override
+  String get confidenceHigh => 'Besueshmëri e lartë';
+
+  @override
+  String get longTermNote =>
+      'Intervalet afatgjata bazohen në supozimet e dhëna dhe zgjerohen me kohën. Çmimet pa dividendë. Vlerësime të përafërta, jo parashikime.';
 }

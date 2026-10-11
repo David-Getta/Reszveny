@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Το StockLens εμφανίζεται επίσης αν πατήσετε γρήγορα δύο φορές το πλήκτρο Option.",
   "doubleOptionPermission": "Για να λειτουργεί και σε άλλες εφαρμογές, ενεργοποιήστε το StockLens στις Ρυθμίσεις συστήματος → Απόρρητο και ασφάλεια → Παρακολούθηση εισόδου και, στη συνέχεια, ανοίξτε ξανά την εφαρμογή.",
   "openSystemSettings": "Άνοιγμα Ρυθμίσεων συστήματος",
-  "hotkeyHintDoubleOption": "Πατήστε {shortcut} ή δύο φορές το Option οπουδήποτε για να εμφανιστεί το StockLens."
+  "hotkeyHintDoubleOption": "Πατήστε {shortcut} ή δύο φορές το Option οπουδήποτε για να εμφανιστεί το StockLens.",
+  "scenarioMostLikely": "Πιθανότερο",
+  "longTermToday": "Σήμερα",
+  "longTermYears": "{years, plural, one{1 έτος} other{{years} έτη}}",
+  "longTermPerYear": "{range} ετησίως",
+  "longTermLikely": "πιθανότερη τιμή {price}",
+  "confidenceLow": "Χαμηλή βεβαιότητα",
+  "confidenceMedium": "Μέτρια βεβαιότητα",
+  "confidenceHigh": "Υψηλή βεβαιότητα",
+  "longTermNote": "Τα μακροπρόθεσμα εύρη βασίζονται στις αναφερόμενες παραδοχές και διευρύνονται με τον χρόνο. Τιμές χωρίς μερίσματα. Χονδρικές εκτιμήσεις, όχι προβλέψεις."
 }

@@ -1011,4 +1011,39 @@ class AppLocalizationsTr extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'StockLens\'i çağırmak için herhangi bir yerde $shortcut tuşlarına veya iki kez Option tuşuna basın.';
   }
+
+  @override
+  String get scenarioMostLikely => 'En olası';
+
+  @override
+  String get longTermToday => 'Bugün';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years yıl', one: '1 yıl');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'yılda $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'en olası $price';
+  }
+
+  @override
+  String get confidenceLow => 'Düşük güven';
+
+  @override
+  String get confidenceMedium => 'Orta güven';
+
+  @override
+  String get confidenceHigh => 'Yüksek güven';
+
+  @override
+  String get longTermNote =>
+      'Uzun vadeli aralıklar belirtilen varsayımlara dayanır ve zamanla genişler. Fiyatlara temettüler dahil değildir. Kaba tahminlerdir, öngörü değildir.';
 }

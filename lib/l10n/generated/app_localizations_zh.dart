@@ -976,6 +976,40 @@ class AppLocalizationsZh extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return '在任意位置按 $shortcut 或连按两下 Option 键即可呼出 StockLens。';
   }
+
+  @override
+  String get scenarioMostLikely => '最有可能';
+
+  @override
+  String get longTermToday => '今天';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '年化 $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return '最可能 $price';
+  }
+
+  @override
+  String get confidenceLow => '可信度低';
+
+  @override
+  String get confidenceMedium => '可信度中等';
+
+  @override
+  String get confidenceHigh => '可信度高';
+
+  @override
+  String get longTermNote => '长期区间基于所列假设，并随时间推移而扩大。价格不含股息。仅为粗略判断，并非预测。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1949,4 +1983,38 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String hotkeyHintDoubleOption(String shortcut) {
     return '在任何地方按 $shortcut 或連按兩下 Option 鍵即可呼出 StockLens。';
   }
+
+  @override
+  String get scenarioMostLikely => '最有可能';
+
+  @override
+  String get longTermToday => '今日';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '年化 $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return '最可能 $price';
+  }
+
+  @override
+  String get confidenceLow => '可信度低';
+
+  @override
+  String get confidenceMedium => '可信度中等';
+
+  @override
+  String get confidenceHigh => '可信度高';
+
+  @override
+  String get longTermNote => '長期區間基於所列假設，並會隨時間擴闊。價格不包括股息。只屬粗略判斷，並非預測。';
 }

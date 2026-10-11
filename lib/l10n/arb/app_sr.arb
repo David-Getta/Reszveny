@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Брзи двоструки притисак тастера Option такође позива StockLens.",
   "doubleOptionPermission": "Да би радило и у другим апликацијама, дозволите приступ апликацији StockLens у одељку Подешавања система → Приватност и безбедност → Праћење уноса, а затим поново отворите апликацију.",
   "openSystemSettings": "Отвори Подешавања система",
-  "hotkeyHintDoubleOption": "Притисните {shortcut} или двапут притисните Option било где да позовете StockLens."
+  "hotkeyHintDoubleOption": "Притисните {shortcut} или двапут притисните Option било где да позовете StockLens.",
+  "scenarioMostLikely": "Највероватније",
+  "longTermToday": "Данас",
+  "longTermYears": "{years, plural, one{{years} година} few{{years} године} other{{years} година}}",
+  "longTermPerYear": "{range} годишње",
+  "longTermLikely": "највероватније {price}",
+  "confidenceLow": "Ниска поузданост",
+  "confidenceMedium": "Средња поузданост",
+  "confidenceHigh": "Висока поузданост",
+  "longTermNote": "Дугорочни распони почивају на наведеним претпоставкама и шире се с временом. Цене без дивиденди. Грубе процене, а не предвиђања."
 }

@@ -1040,4 +1040,45 @@ class AppLocalizationsRo extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Apasă $shortcut sau de două ori tasta Opțiune oriunde pentru a deschide StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Cel mai probabil';
+
+  @override
+  String get longTermToday => 'Azi';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years de ani',
+      few: '$years ani',
+      one: '1 an',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range pe an';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'cel mai probabil $price';
+  }
+
+  @override
+  String get confidenceLow => 'Încredere scăzută';
+
+  @override
+  String get confidenceMedium => 'Încredere medie';
+
+  @override
+  String get confidenceHigh => 'Încredere ridicată';
+
+  @override
+  String get longTermNote =>
+      'Intervalele pe termen lung se bazează pe ipotezele indicate și se lărgesc în timp. Prețuri fără dividende. Estimări aproximative, nu previziuni.';
 }

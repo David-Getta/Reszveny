@@ -1058,4 +1058,46 @@ class AppLocalizationsPl extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Naciśnij $shortcut lub dwukrotnie naciśnij Option w dowolnym miejscu, aby przywołać StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Najbardziej prawdopodobny';
+
+  @override
+  String get longTermToday => 'Dziś';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years roku',
+      many: '$years lat',
+      few: '$years lata',
+      one: '1 rok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range rocznie';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'najprawdopodobniej $price';
+  }
+
+  @override
+  String get confidenceLow => 'Niska pewność';
+
+  @override
+  String get confidenceMedium => 'Średnia pewność';
+
+  @override
+  String get confidenceHigh => 'Wysoka pewność';
+
+  @override
+  String get longTermNote =>
+      'Przedziały długoterminowe opierają się na podanych założeniach i z czasem się poszerzają. Ceny bez dywidend. Zgrubne szacunki, nie prognozy.';
 }

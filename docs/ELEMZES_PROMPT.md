@@ -16,7 +16,7 @@ elemeket.
 |---|---|
 | Új szekciók (eseménynaptár, versenytársak)? | Nem; a „Mire figyelj” és az „Értékeltség” szekcióban maradnak |
 | Olvasói szint | Kezdő / tapasztalt kapcsoló a beállításokban, a kezdő az alap |
-| Terjedelem | Választható: Rövid (600–900 szó, 1 elemzés), Alap (1 100–1 600 szó, 1 elemzés), Részletes (2 200–3 000 szó, 2 elemzés) |
+| Terjedelem | Választható: Rövid (700–1 000 szó, 1 elemzés), Alap (1 250–1 800 szó, 1 elemzés), Részletes (2 400–3 300 szó, 2 elemzés) – a v2.3 óta, a hosszú távú szekcióval együtt |
 | Webkeresés csomagonként | Alap hossznál Próba 6, Normál 4, Pro 6, Max 8, Ultra 10; a rövid 2-vel kevesebb, a részletes 2-vel több (2–12 között). A szerver érvényesíti |
 | Szcenárió-ársáv | Konkrét ár a részvény devizájában, mellette a %-os elmozdulás |
 | Legerősebb ellenérv | Kapcsolható a beállításokban, alapból bekapcsolva |
@@ -299,3 +299,18 @@ Cél: jobb minőségű, pontosabb és az adott részvényre szabottabb elemzés.
 
 Mérés: a valódi minőségjavulás az éles evallal mérhető (lásd fent, kulccsal); az eredmény a
 `docs/elemzes-minta/v2.2/` mappába kerül, így összevethető a v2.1-gyel.
+
+## 9. v2.3 (2026-10-11): legvalószínűbb forgatókönyv és 3, 5, 10 éves kilátás
+
+| Változás | Miért |
+|---|---|
+| A kilátás szekcióban külön pont mondja ki, melyik forgatókönyv a legvalószínűbb és miért; az `outlook_data.most_likely_reason` mezőben is ott van | Eddig csak a százalékokból lehetett kiolvasni. A felület kiemelt dobozban mutatja: „Legvalószínűbb: Alap forgatókönyv · 45 %”, ársávval, időtávval és az indoklással (holtversenynél az alap) |
+| Új `longterm` szekció a kilátás és a „mire figyelj” között: 3, 5 és 10 éves ársáv, benne a legvalószínűbb ár, a számítás (egy részvényre jutó mutató × szorzó), a bizonyosság (alacsony / közepes / magas) és a hosszú távú tőkevesztési kockázatok | Hónapokon belül a hangulat mozgatja az árat, években mérve a részvényenkénti eredmény és a szorzó; ezért a hosszú táv ezekből épül, nem a friss trendből |
+| Iránymutatás a modellnek: ágazathoz illő alapmutató (EPS / szabad cash flow, REIT-nél FFO, banknál és biztosítónál könyv szerinti érték, veszteséges cégnél árbevétel × érett marzs), a magas szorzók idővel a piaci átlag felé húznak, ciklikus cégnél a ciklusra átlagolt eredmény, a sávok az időtávval tágulnak, a 10 éves bizonyosság szinte mindig alacsony, és ahol nincs hiteles becslés (pl. egytermékes biotech), ott ezt ki kell mondani | A hosszú távú „célár” könnyen hamis pontosságot sugall; a szabályok ezt fogják vissza |
+| Az évesített hozamot a piac hosszú távú 7–10 %-ához méri; az árak osztalék nélkül, az osztalékot külön említi | Így látszik, megéri-e a kockázat |
+| `outlook_data.long_term`: `summary` és `horizons[]` (`years`, `price_low`, `price_high`, `price_likely`, `basis`, `confidence`) | A felület legyező-diagramot rajzol (logaritmikus ártengely: a mai ártól a 3, 5, 10 éves sávokig, a legvalószínűbb árak vonalával), alatta időtávonként a sáv, a teljes és az évesített változás, a legvalószínűbb ár, a számítás és a bizonyosság |
+| Minőség-ellenőrző: megvan-e a 3/5/10 év, tágulnak-e a sávok, a legvalószínűbb ár a sávon belül van-e, van-e számítás és indoklás | Az eval ezeket is pontozza |
+| Terjedelem: Rövid 700–1 000, Alap 1 250–1 800, Részletes 2 400–3 300 szó; `max_tokens` 12k / 18k / 32k (a szerver is) | Az új szekció helyet kap anélkül, hogy a többi rövidülne |
+
+A javított hiba: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
+kilógott a sorból; most tördelődik.

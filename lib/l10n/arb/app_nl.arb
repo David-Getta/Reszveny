@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Ook snel twee keer op de Option-toets drukken opent StockLens.",
   "doubleOptionPermission": "Wil je dat dit ook in andere apps werkt, sta StockLens dan toe via Systeeminstellingen → Privacy en beveiliging → Invoermonitoring en open de app daarna opnieuw.",
   "openSystemSettings": "Systeeminstellingen openen",
-  "hotkeyHintDoubleOption": "Druk waar dan ook op {shortcut} of twee keer op Option om StockLens te openen."
+  "hotkeyHintDoubleOption": "Druk waar dan ook op {shortcut} of twee keer op Option om StockLens te openen.",
+  "scenarioMostLikely": "Meest waarschijnlijk",
+  "longTermToday": "Vandaag",
+  "longTermYears": "{years, plural, one{1 jaar} other{{years} jaar}}",
+  "longTermPerYear": "{range} per jaar",
+  "longTermLikely": "meest waarschijnlijk {price}",
+  "confidenceLow": "Lage zekerheid",
+  "confidenceMedium": "Gemiddelde zekerheid",
+  "confidenceHigh": "Hoge zekerheid",
+  "longTermNote": "Langetermijnbandbreedtes berusten op de genoemde aannames en worden met de tijd breder. Koersen zonder dividend. Ruwe inschattingen, geen voorspellingen."
 }

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali StockLens.",
   "doubleOptionPermission": "Supaya bisa mlaku ing aplikasi liyane uga, wenehana idin marang StockLens ing Setelan Sistem → Privasi & Keamanan → Pemantauan Input, banjur bukak maneh aplikasine.",
   "openSystemSettings": "Bukak Setelan Sistem",
-  "hotkeyHintDoubleOption": "Tekan {shortcut} utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens."
+  "hotkeyHintDoubleOption": "Tekan {shortcut} utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens.",
+  "scenarioMostLikely": "Paling mungkin",
+  "longTermToday": "Dina iki",
+  "longTermYears": "{years, plural, other{{years} taun}}",
+  "longTermPerYear": "{range} saben taun",
+  "longTermLikely": "paling mungkin {price}",
+  "confidenceLow": "Kapercayan endhek",
+  "confidenceMedium": "Kapercayan sedheng",
+  "confidenceHigh": "Kapercayan dhuwur",
+  "longTermNote": "Rentang jangka dawa adhedhasar asumsi sing kasebut lan saya amba saka wektu menyang wektu. Rega durung kalebu dividen. Kira-kira kasar, dudu ramalan."
 }

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Appuyer rapidement deux fois sur la touche Option ouvre aussi StockLens.",
   "doubleOptionPermission": "Pour que cela fonctionne aussi dans les autres apps, autorisez StockLens dans Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, puis rouvrez l’app.",
   "openSystemSettings": "Ouvrir Réglages Système",
-  "hotkeyHintDoubleOption": "Appuyez sur {shortcut} ou deux fois sur Option n’importe où pour ouvrir StockLens."
+  "hotkeyHintDoubleOption": "Appuyez sur {shortcut} ou deux fois sur Option n’importe où pour ouvrir StockLens.",
+  "scenarioMostLikely": "Le plus probable",
+  "longTermToday": "Aujourd'hui",
+  "longTermYears": "{years, plural, one{1 an} other{{years} ans}}",
+  "longTermPerYear": "{range} par an",
+  "longTermLikely": "le plus probable : {price}",
+  "confidenceLow": "Confiance faible",
+  "confidenceMedium": "Confiance moyenne",
+  "confidenceHigh": "Confiance élevée",
+  "longTermNote": "Les fourchettes à long terme reposent sur les hypothèses indiquées et s'élargissent avec le temps. Cours hors dividendes. Estimations grossières, pas des prévisions."
 }

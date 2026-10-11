@@ -1019,4 +1019,39 @@ class AppLocalizationsFi extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Paina missä tahansa $shortcut tai Optio-näppäintä kahdesti, niin StockLens avautuu.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Todennäköisin';
+
+  @override
+  String get longTermToday => 'Tänään';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years vuotta', one: '1 vuosi');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range vuodessa';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'todennäköisin $price';
+  }
+
+  @override
+  String get confidenceLow => 'Matala varmuus';
+
+  @override
+  String get confidenceMedium => 'Kohtalainen varmuus';
+
+  @override
+  String get confidenceHigh => 'Korkea varmuus';
+
+  @override
+  String get longTermNote =>
+      'Pitkän aikavälin vaihteluvälit perustuvat esitettyihin oletuksiin ja levenevät ajan myötä. Hinnat ilman osinkoja. Karkeita arvioita, eivät ennusteita.';
 }

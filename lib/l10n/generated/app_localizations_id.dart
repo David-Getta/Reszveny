@@ -1000,4 +1000,39 @@ class AppLocalizationsId extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Tekan $shortcut atau tekan Option dua kali di mana saja untuk memanggil StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Paling mungkin';
+
+  @override
+  String get longTermToday => 'Hari ini';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years tahun');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range per tahun';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'paling mungkin $price';
+  }
+
+  @override
+  String get confidenceLow => 'Keyakinan rendah';
+
+  @override
+  String get confidenceMedium => 'Keyakinan sedang';
+
+  @override
+  String get confidenceHigh => 'Keyakinan tinggi';
+
+  @override
+  String get longTermNote =>
+      'Rentang jangka panjang bertumpu pada asumsi yang disebutkan dan melebar seiring waktu. Harga belum termasuk dividen. Perkiraan kasar, bukan ramalan.';
 }

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Швидке подвійне натискання клавіші Option також викликає StockLens.",
   "doubleOptionPermission": "Щоб це працювало й в інших застосунках, дозвольте доступ для StockLens у розділі «Системні параметри» → «Приватність і безпека» → «Моніторинг введення», а потім знову відкрийте застосунок.",
   "openSystemSettings": "Відкрити «Системні параметри»",
-  "hotkeyHintDoubleOption": "Натисніть {shortcut} або двічі натисніть Option будь-де, щоб викликати StockLens."
+  "hotkeyHintDoubleOption": "Натисніть {shortcut} або двічі натисніть Option будь-де, щоб викликати StockLens.",
+  "scenarioMostLikely": "Найімовірніший",
+  "longTermToday": "Сьогодні",
+  "longTermYears": "{years, plural, one{{years} рік} few{{years} роки} many{{years} років} other{{years} року}}",
+  "longTermPerYear": "{range} на рік",
+  "longTermLikely": "найімовірніше {price}",
+  "confidenceLow": "Низька впевненість",
+  "confidenceMedium": "Середня впевненість",
+  "confidenceHigh": "Висока впевненість",
+  "longTermNote": "Довгострокові діапазони ґрунтуються на зазначених припущеннях і з часом розширюються. Ціни без урахування дивідендів. Грубі оцінки, а не прогнози."
 }

@@ -193,10 +193,10 @@ void main() {
       'messages': [],
     };
     await call('POST', '/v1/analyze', token: token, body: greedy);
-    expect(lastUpstream!['max_tokens'], 16000);
+    expect(lastUpstream!['max_tokens'], 18000);
     expect((lastUpstream!['tools'] as List).first['max_uses'], 4); // Normál: 4
     await call('POST', '/v1/analyze', token: token, body: greedy, headers: {'x-stocklens-depth': 'deep'});
-    expect(lastUpstream!['max_tokens'], 28000);
+    expect(lastUpstream!['max_tokens'], 32000);
     expect((lastUpstream!['tools'] as List).first['max_uses'], 6); // Normál + részletes: 4 + 2
     // Kisebb kérést nem emel meg.
     await call(

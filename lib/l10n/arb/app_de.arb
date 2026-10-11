@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Auch zweimaliges schnelles Drücken der Wahltaste ruft StockLens auf.",
   "doubleOptionPermission": "Damit das auch in anderen Apps funktioniert, erlaube StockLens unter Systemeinstellungen → Datenschutz & Sicherheit → Eingabeüberwachung und öffne die App danach erneut.",
   "openSystemSettings": "Systemeinstellungen öffnen",
-  "hotkeyHintDoubleOption": "Drücke {shortcut} oder zweimal die Wahltaste an beliebiger Stelle, um StockLens aufzurufen."
+  "hotkeyHintDoubleOption": "Drücke {shortcut} oder zweimal die Wahltaste an beliebiger Stelle, um StockLens aufzurufen.",
+  "scenarioMostLikely": "Am wahrscheinlichsten",
+  "longTermToday": "Heute",
+  "longTermYears": "{years, plural, one{1 Jahr} other{{years} Jahre}}",
+  "longTermPerYear": "{range} pro Jahr",
+  "longTermLikely": "am wahrscheinlichsten {price}",
+  "confidenceLow": "Geringe Sicherheit",
+  "confidenceMedium": "Mittlere Sicherheit",
+  "confidenceHigh": "Hohe Sicherheit",
+  "longTermNote": "Langfristige Spannen beruhen auf den genannten Annahmen und werden mit der Zeit breiter. Kurse ohne Dividenden. Grobe Einschätzungen, keine Prognosen."
 }

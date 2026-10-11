@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "StockLens avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.",
   "doubleOptionPermission": "Jotta tämä toimisi myös muissa sovelluksissa, salli StockLens kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Syötteen valvonta ja avaa sovellus sitten uudelleen.",
   "openSystemSettings": "Avaa Järjestelmäasetukset",
-  "hotkeyHintDoubleOption": "Paina missä tahansa {shortcut} tai Optio-näppäintä kahdesti, niin StockLens avautuu."
+  "hotkeyHintDoubleOption": "Paina missä tahansa {shortcut} tai Optio-näppäintä kahdesti, niin StockLens avautuu.",
+  "scenarioMostLikely": "Todennäköisin",
+  "longTermToday": "Tänään",
+  "longTermYears": "{years, plural, one{1 vuosi} other{{years} vuotta}}",
+  "longTermPerYear": "{range} vuodessa",
+  "longTermLikely": "todennäköisin {price}",
+  "confidenceLow": "Matala varmuus",
+  "confidenceMedium": "Kohtalainen varmuus",
+  "confidenceHigh": "Korkea varmuus",
+  "longTermNote": "Pitkän aikavälin vaihteluvälit perustuvat esitettyihin oletuksiin ja levenevät ajan myötä. Hinnat ilman osinkoja. Karkeita arvioita, eivät ennusteita."
 }

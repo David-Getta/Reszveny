@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Nhấn nhanh phím Option hai lần cũng sẽ gọi StockLens.",
   "doubleOptionPermission": "Để tính năng này hoạt động cả trong các ứng dụng khác, hãy cho phép StockLens trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Giám sát đầu vào, sau đó mở lại ứng dụng.",
   "openSystemSettings": "Mở Cài đặt hệ thống",
-  "hotkeyHintDoubleOption": "Nhấn {shortcut} hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens."
+  "hotkeyHintDoubleOption": "Nhấn {shortcut} hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens.",
+  "scenarioMostLikely": "Khả năng cao nhất",
+  "longTermToday": "Hôm nay",
+  "longTermYears": "{years, plural, other{{years} năm}}",
+  "longTermPerYear": "{range} mỗi năm",
+  "longTermLikely": "khả năng cao nhất {price}",
+  "confidenceLow": "Độ tin cậy thấp",
+  "confidenceMedium": "Độ tin cậy trung bình",
+  "confidenceHigh": "Độ tin cậy cao",
+  "longTermNote": "Các khoảng dài hạn dựa trên các giả định đã nêu và rộng dần theo thời gian. Giá chưa tính cổ tức. Chỉ là nhận định sơ bộ, không phải dự báo."
 }

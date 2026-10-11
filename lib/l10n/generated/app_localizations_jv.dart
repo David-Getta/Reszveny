@@ -1017,4 +1017,39 @@ class AppLocalizationsJv extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Tekan $shortcut utawa tekan Option kaping pindho ing ngendi wae kanggo nimbali StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Paling mungkin';
+
+  @override
+  String get longTermToday => 'Dina iki';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years taun');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range saben taun';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'paling mungkin $price';
+  }
+
+  @override
+  String get confidenceLow => 'Kapercayan endhek';
+
+  @override
+  String get confidenceMedium => 'Kapercayan sedheng';
+
+  @override
+  String get confidenceHigh => 'Kapercayan dhuwur';
+
+  @override
+  String get longTermNote =>
+      'Rentang jangka dawa adhedhasar asumsi sing kasebut lan saya amba saka wektu menyang wektu. Rega durung kalebu dividen. Kira-kira kasar, dudu ramalan.';
 }

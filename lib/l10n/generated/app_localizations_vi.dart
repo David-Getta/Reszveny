@@ -1003,4 +1003,39 @@ class AppLocalizationsVi extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Nhấn $shortcut hoặc nhấn Option hai lần ở bất kỳ đâu để gọi StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Khả năng cao nhất';
+
+  @override
+  String get longTermToday => 'Hôm nay';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years năm');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range mỗi năm';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'khả năng cao nhất $price';
+  }
+
+  @override
+  String get confidenceLow => 'Độ tin cậy thấp';
+
+  @override
+  String get confidenceMedium => 'Độ tin cậy trung bình';
+
+  @override
+  String get confidenceHigh => 'Độ tin cậy cao';
+
+  @override
+  String get longTermNote =>
+      'Các khoảng dài hạn dựa trên các giả định đã nêu và rộng dần theo thời gian. Giá chưa tính cổ tức. Chỉ là nhận định sơ bộ, không phải dự báo.';
 }

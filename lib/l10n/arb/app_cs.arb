@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "StockLens vyvoláte také rychlým dvojitým stisknutím klávesy Option.",
   "doubleOptionPermission": "Aby to fungovalo i v jiných aplikacích, povolte StockLens v Nastavení systému → Soukromí a zabezpečení → Sledování vstupu a poté aplikaci znovu otevřete.",
   "openSystemSettings": "Otevřít Nastavení systému",
-  "hotkeyHintDoubleOption": "Stiskněte {shortcut} nebo dvakrát stiskněte Option kdekoli a vyvolejte StockLens."
+  "hotkeyHintDoubleOption": "Stiskněte {shortcut} nebo dvakrát stiskněte Option kdekoli a vyvolejte StockLens.",
+  "scenarioMostLikely": "Nejpravděpodobnější",
+  "longTermToday": "Dnes",
+  "longTermYears": "{years, plural, one{1 rok} few{{years} roky} many{{years} roku} other{{years} let}}",
+  "longTermPerYear": "{range} ročně",
+  "longTermLikely": "nejpravděpodobněji {price}",
+  "confidenceLow": "Nízká jistota",
+  "confidenceMedium": "Střední jistota",
+  "confidenceHigh": "Vysoká jistota",
+  "longTermNote": "Dlouhodobá pásma vycházejí z uvedených předpokladů a s časem se rozšiřují. Ceny bez dividend. Hrubé odhady, nikoli předpovědi."
 }

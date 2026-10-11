@@ -3,7 +3,8 @@ import 'analysis_options.dart';
 
 /// Gépi minőség-ellenőrzés egy elkészült elemzésre: megvan-e minden szekció a
 /// helyes sorrendben, dátumozottak-e a hírek, kijön-e a 100 % a forgatókönyvekből,
-/// van-e ársáv, elég-e a forrás, és stimmel-e a terjedelem. Az eval-futtatás
+/// van-e ársáv és indoklás a legvalószínűbb forgatókönyvhöz, tágulnak-e a
+/// hosszú távú sávok az idővel, elég-e a forrás, és stimmel-e a terjedelem. Az eval-futtatás
 /// (`test/eval`) ezzel pontozza a prompt-változatokat; a felület nem használja.
 class ReportQuality {
   const ReportQuality({required this.score, required this.issues, required this.wordCount});
@@ -23,6 +24,7 @@ class ReportQuality {
     ReportSectionKind.valuation,
     ReportSectionKind.ownership,
     ReportSectionKind.outlook,
+    ReportSectionKind.longterm,
     ReportSectionKind.watch,
   ];
 
@@ -76,6 +78,29 @@ class ReportQuality {
       if (o.keyLevels.length < 2) issue(2, 'fewer than 2 key levels');
       if (o.catalysts.isEmpty) issue(3, 'no dated catalysts');
       if (o.marketMood == null) issue(2, 'no market mood');
+      if (o.mostLikelyReason.isEmpty) issue(2, 'no reason for the most likely scenario');
+
+      final lt = o.longTerm;
+      final years = lt?.horizons.map((h) => h.years).toList() ?? const <int>[];
+      if (lt == null) {
+        issue(8, 'no long-term view');
+      } else {
+        if (years.join(',') != '3,5,10') issue(4, 'long-term horizons are ${years.join(', ')} instead of 3, 5, 10');
+        // A bizonytalanság az idővel nő: a relatív sávszélesség nem szűkülhet.
+        double width(LongTermHorizon h) => (h.priceHigh - h.priceLow) / ((h.priceHigh + h.priceLow) / 2);
+        for (var i = 1; i < lt.horizons.length; i++) {
+          if (width(lt.horizons[i]) + 1e-9 < width(lt.horizons[i - 1])) {
+            issue(
+              3,
+              'the ${lt.horizons[i].years}-year range is narrower than the ${lt.horizons[i - 1].years}-year one',
+            );
+          }
+        }
+        final noLikely = lt.horizons.where((h) => h.priceLikely == null).length;
+        if (noLikely > 0) issue(2 * noLikely, '$noLikely long-term horizons without a most likely price in range');
+        final noBasis = lt.horizons.where((h) => h.basis.isEmpty).length;
+        if (noBasis > 0) issue(2 * noBasis, '$noBasis long-term horizons without the arithmetic behind them');
+      }
     }
 
     if (r.sources.length < 3) issue(5, 'only ${r.sources.length} sources');

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "快速連按兩下 Option 鍵亦可呼出 StockLens。",
   "doubleOptionPermission": "如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 StockLens，然後重新開啟此 App。",
   "openSystemSettings": "開啟系統設定",
-  "hotkeyHintDoubleOption": "在任何地方按 {shortcut} 或連按兩下 Option 鍵即可呼出 StockLens。"
+  "hotkeyHintDoubleOption": "在任何地方按 {shortcut} 或連按兩下 Option 鍵即可呼出 StockLens。",
+  "scenarioMostLikely": "最有可能",
+  "longTermToday": "今日",
+  "longTermYears": "{years, plural, other{{years}年}}",
+  "longTermPerYear": "年化 {range}",
+  "longTermLikely": "最可能 {price}",
+  "confidenceLow": "可信度低",
+  "confidenceMedium": "可信度中等",
+  "confidenceHigh": "可信度高",
+  "longTermNote": "長期區間基於所列假設，並會隨時間擴闊。價格不包括股息。只屬粗略判斷，並非預測。"
 }
