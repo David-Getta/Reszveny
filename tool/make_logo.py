@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """StockLens logó – saját, programból rajzolt jel.
 
-A jel: fényképező-kereső sarkai (a „fotózd le” mozdulat) és benne három
-emelkedő gyertya (árfolyam). Szándékosan nincs benne megtört gyűrű vagy a
-körből kitörő nyíl, hogy ne hasonlítson más márkák logójára.
+A jel: nagyító zárt lencsével és fényfolttal, a lencsében három emelkedő
+gyertya. Minden elem a lencsén belül marad (nincs megtört gyűrű, nincs a
+körből kitörő nyíl), hogy ne hasonlítson más márkák logójára.
 
 Futtatás a repó gyökeréből:
     python3 tool/make_logo.py            # az app összes logó-fájlja
@@ -98,7 +98,80 @@ def glyph_magnifier(size, frame=CREAM, accent=ACCENT):
     return im.resize((size, size), Image.LANCZOS)
 
 
-GLYPHS = {'viewfinder': glyph_viewfinder, 'lens': glyph_lens, 'magnifier': glyph_magnifier}
+def glyph_magnifier_lens(size, frame=CREAM, accent=ACCENT):
+    """F: a „lens” jel nagyítónyéllel – zárt lencse fényfolttal, benne három
+    emelkedő gyertya. A StockLens jele."""
+    S = size * SS
+    im = Image.new('RGBA', (S, S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    w = int(S * 0.075)
+    c, r = S * 0.42, S * 0.335
+    d.ellipse((c - r, c - r, c + r, c + r), outline=frame, width=w)
+    g = r * 0.68
+    d.arc((c - g, c - g, c + g, c + g), 200, 245, fill=frame, width=int(w * 0.45))
+    k = 0.7071
+    _line(d, [(c + r * k + w * 0.25, c + r * k + w * 0.25), (S * 0.9, S * 0.9)], int(w * 1.35), frame)
+    s = S * 0.66
+    _candles(d, c + S * 0.03, c - 0.02 * s, s, accent)
+    return im.resize((size, size), Image.LANCZOS)
+
+
+def _index_line(S, cx, cy, r, color, fill_alpha):
+    """Indexgörbe a lencse belsejében (a körre vágva): emelkedő, cikcakkos vonal."""
+    layer = Image.new('RGBA', (S, S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    pts = [(-0.64, 0.40), (-0.34, 0.10), (-0.10, 0.28), (0.16, -0.06), (0.34, 0.08), (0.56, -0.30)]
+    xy = [(cx + x * r, cy + y * r) for x, y in pts]
+    if fill_alpha:
+        area = xy + [(xy[-1][0], cy + r), (xy[0][0], cy + r)]
+        d.polygon(area, fill=color[:3] + (fill_alpha,))
+    w = int(r * 0.2)
+    _line(d, xy, w, color)
+    for x, y in xy[1:-1]:
+        d.ellipse((x - w / 2, y - w / 2, x + w / 2, y + w / 2), fill=color)
+    # Végpont: kis kör a görbe végén (nincs nyílhegy, a vonal a lencsén belül marad).
+    ex, ey = xy[-1]
+    q = w * 0.95
+    d.ellipse((ex - q, ey - q, ex + q, ey + q), fill=color)
+    mask = Image.new('L', (S, S), 0)
+    ImageDraw.Draw(mask).ellipse((cx - r, cy - r, cx + r, cy + r), fill=255)
+    clipped = Image.new('RGBA', (S, S), (0, 0, 0, 0))
+    clipped.paste(layer, (0, 0), mask)
+    return clipped
+
+
+def _magnifier_index(size, frame, accent, fill_alpha):
+    S = size * SS
+    im = Image.new('RGBA', (S, S), (0, 0, 0, 0))
+    w = int(S * 0.075)
+    c, r = S * 0.42, S * 0.33
+    inner = r - w / 2
+    im.alpha_composite(_index_line(S, c, c, inner * 0.97, accent, fill_alpha))
+    d = ImageDraw.Draw(im)
+    d.ellipse((c - r, c - r, c + r, c + r), outline=frame, width=w)
+    k = 0.7071
+    _line(d, [(c + r * k + w * 0.25, c + r * k + w * 0.25), (S * 0.9, S * 0.9)], int(w * 1.35), frame)
+    return im.resize((size, size), Image.LANCZOS)
+
+
+def glyph_magnifier_index(size, frame=CREAM, accent=ACCENT):
+    """D: nagyító, benne indexgörbe halvány kitöltéssel."""
+    return _magnifier_index(size, frame, accent, 70)
+
+
+def glyph_magnifier_line(size, frame=CREAM, accent=ACCENT):
+    """E: nagyító, benne az emelkedő indexgörbe – a StockLens jele."""
+    return _magnifier_index(size, frame, accent, 0)
+
+
+GLYPHS = {
+    'magnifier_lens': glyph_magnifier_lens,
+    'magnifier_index': glyph_magnifier_index,
+    'magnifier_line': glyph_magnifier_line,
+    'viewfinder': glyph_viewfinder,
+    'magnifier': glyph_magnifier,
+    'lens': glyph_lens,
+}
 
 
 def app_icon(glyph, size=1024, rounded=True):
@@ -171,7 +244,7 @@ def sheet(path):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--sheet')
-    ap.add_argument('--variant', default='viewfinder', choices=list(GLYPHS))
+    ap.add_argument('--variant', default='magnifier_lens', choices=list(GLYPHS))
     a = ap.parse_args()
     if a.sheet:
         sheet(a.sheet)
