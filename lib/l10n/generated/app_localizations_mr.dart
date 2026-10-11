@@ -1011,4 +1011,39 @@ class AppLocalizationsMr extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'StockLens कुठूनही उघडण्यासाठी $shortcut दाबा किंवा Option दोनदा दाबा.';
   }
+
+  @override
+  String get scenarioMostLikely => 'सर्वाधिक संभाव्य';
+
+  @override
+  String get longTermToday => 'आज';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years वर्षे', one: '1 वर्ष');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'दरवर्षी $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'सर्वाधिक संभाव्य $price';
+  }
+
+  @override
+  String get confidenceLow => 'कमी विश्वास';
+
+  @override
+  String get confidenceMedium => 'मध्यम विश्वास';
+
+  @override
+  String get confidenceHigh => 'उच्च विश्वास';
+
+  @override
+  String get longTermNote =>
+      'दीर्घकालीन पल्ले नमूद केलेल्या गृहितकांवर आधारित आहेत आणि काळानुसार रुंदावतात. किमतींमध्ये लाभांश समाविष्ट नाही. ढोबळ अंदाज आहेत, भाकिते नाहीत.';
 }

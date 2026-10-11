@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option tuşuna hızlıca iki kez basmak da StockLens'i çağırır.",
   "doubleOptionPermission": "Bunun diğer uygulamalarda da çalışması için Sistem Ayarları → Gizlilik ve Güvenlik → Girdi İzleme bölümünde StockLens'e izin verin, ardından uygulamayı yeniden açın.",
   "openSystemSettings": "Sistem Ayarları'nı aç",
-  "hotkeyHintDoubleOption": "StockLens'i çağırmak için herhangi bir yerde {shortcut} tuşlarına veya iki kez Option tuşuna basın."
+  "hotkeyHintDoubleOption": "StockLens'i çağırmak için herhangi bir yerde {shortcut} tuşlarına veya iki kez Option tuşuna basın.",
+  "scenarioMostLikely": "En olası",
+  "longTermToday": "Bugün",
+  "longTermYears": "{years, plural, one{1 yıl} other{{years} yıl}}",
+  "longTermPerYear": "yılda {range}",
+  "longTermLikely": "en olası {price}",
+  "confidenceLow": "Düşük güven",
+  "confidenceMedium": "Orta güven",
+  "confidenceHigh": "Yüksek güven",
+  "longTermNote": "Uzun vadeli aralıklar belirtilen varsayımlara dayanır ve zamanla genişler. Fiyatlara temettüler dahil değildir. Kaba tahminlerdir, öngörü değildir."
 }

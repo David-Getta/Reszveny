@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita StockLens.",
   "doubleOptionPermission": "Ili ifanye kazi pia katika programu nyingine, ruhusu StockLens katika Mipangilio ya Mfumo → Faragha na Usalama → Ufuatiliaji wa Ingizo, kisha fungua programu tena.",
   "openSystemSettings": "Fungua Mipangilio ya Mfumo",
-  "hotkeyHintDoubleOption": "Bonyeza {shortcut} au bonyeza Option mara mbili mahali popote kuita StockLens."
+  "hotkeyHintDoubleOption": "Bonyeza {shortcut} au bonyeza Option mara mbili mahali popote kuita StockLens.",
+  "scenarioMostLikely": "Uwezekano mkubwa zaidi",
+  "longTermToday": "Leo",
+  "longTermYears": "{years, plural, one{mwaka 1} other{miaka {years}}}",
+  "longTermPerYear": "{range} kwa mwaka",
+  "longTermLikely": "uwezekano mkubwa {price}",
+  "confidenceLow": "Uhakika mdogo",
+  "confidenceMedium": "Uhakika wa wastani",
+  "confidenceHigh": "Uhakika mkubwa",
+  "longTermNote": "Viwango vya muda mrefu vinategemea dhana zilizotajwa na hupanuka kadiri muda unavyopita. Bei hazijumuishi gawio. Makadirio ya jumla, si utabiri."
 }

@@ -1014,4 +1014,39 @@ class AppLocalizationsHa extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Danna $shortcut ko ka danna Option sau biyu a ko\'ina don kiran StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Mafi yiwuwa';
+
+  @override
+  String get longTermToday => 'Yau';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'shekaru $years', one: 'shekara 1');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range a shekara';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'mafi yiwuwa $price';
+  }
+
+  @override
+  String get confidenceLow => 'Ƙarancin tabbaci';
+
+  @override
+  String get confidenceMedium => 'Matsakaicin tabbaci';
+
+  @override
+  String get confidenceHigh => 'Babban tabbaci';
+
+  @override
+  String get longTermNote =>
+      'Kewayon dogon lokaci sun dogara ne kan zato da aka bayyana, kuma suna faɗaɗa da lokaci. Farashin bai haɗa da rabon riba ba. Ƙiyasi ne kawai, ba hasashe ba.';
 }

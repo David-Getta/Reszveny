@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 /// AI-elemzés egy részvényről: szekciókra bontott, a felhasználó nyelvén
 /// megírt átfogó kép, friss hírek összefoglalásával és forrásokkal.
 class StockReport {
@@ -169,6 +171,8 @@ class ReportOutlook {
     this.catalysts = const [],
     this.marketMood,
     this.marketMoodReason = '',
+    this.mostLikelyReason = '',
+    this.longTerm,
   });
 
   final double? currentPrice;
@@ -181,10 +185,30 @@ class ReportOutlook {
   final int? marketMood;
   final String marketMoodReason;
 
-  bool get isEmpty => scenarios.isEmpty && keyLevels.isEmpty && catalysts.isEmpty && marketMood == null;
+  /// Egy mondat arról, miért a legvalószínűbb forgatókönyv a legvalószínűbb.
+  final String mostLikelyReason;
+
+  /// Hosszú távú kilátás (3, 5, 10 év).
+  final LongTermOutlook? longTerm;
+
+  bool get isEmpty =>
+      scenarios.isEmpty && keyLevels.isEmpty && catalysts.isEmpty && marketMood == null && longTerm == null;
 
   /// A forgatókönyvek valószínűségeinek összege (ideálisan ~100).
   double get probabilitySum => scenarios.fold(0, (s, e) => s + e.probability);
+
+  /// A legnagyobb valószínűségű forgatókönyv; holtversenynél az alap.
+  Scenario? get mostLikely {
+    Scenario? best;
+    for (final s in scenarios) {
+      if (best == null ||
+          s.probability > best.probability ||
+          (s.probability == best.probability && s.kind == ScenarioKind.base)) {
+        best = s;
+      }
+    }
+    return best;
+  }
 
   Map<String, dynamic> toJson() => {
     'current_price': currentPrice,
@@ -194,6 +218,8 @@ class ReportOutlook {
     'catalysts': catalysts.map((c) => c.toJson()).toList(),
     'market_mood': marketMood,
     'market_mood_reason': marketMoodReason,
+    'most_likely_reason': mostLikelyReason,
+    if (longTerm != null) 'long_term': longTerm!.toJson(),
   };
 
   static List<T> _list<T>(Object? v, T? Function(Map<String, dynamic>) f) => [
@@ -221,7 +247,93 @@ class ReportOutlook {
       catalysts: catalysts,
       marketMood: mood?.round().clamp(-2, 2),
       marketMoodReason: (j['market_mood_reason'] as String? ?? '').trim(),
+      mostLikelyReason: (j['most_likely_reason'] as String? ?? '').trim(),
+      longTerm: j['long_term'] is Map
+          ? LongTermOutlook.fromJson((j['long_term'] as Map).cast<String, dynamic>())
+          : null,
     );
+  }
+}
+
+enum Confidence {
+  low,
+  medium,
+  high;
+
+  static Confidence parse(Object? s) => Confidence.values.asNameMap()[s.toString().trim().toLowerCase()] ?? low;
+}
+
+/// Egy hosszú távú időpont: ársáv, a legvalószínűbb ár és a számítás alapja.
+class LongTermHorizon {
+  const LongTermHorizon({
+    required this.years,
+    required this.priceLow,
+    required this.priceHigh,
+    this.priceLikely,
+    this.basis = '',
+    this.confidence = Confidence.low,
+  });
+
+  final int years;
+  final double priceLow;
+  final double priceHigh;
+
+  /// A sávon belül a legvalószínűbb ár.
+  final double? priceLikely;
+
+  /// Egy mondat a számításról (pl. „EPS 11–13 USD × 18–24”).
+  final String basis;
+  final Confidence confidence;
+
+  /// Évesített hozam a jelenlegi árhoz képest (százalék), osztalék nélkül.
+  static double? annualised(double? current, double target, int years) {
+    if (current == null || current <= 0 || target <= 0 || years <= 0) return null;
+    return (math.pow(target / current, 1 / years) - 1) * 100;
+  }
+
+  Map<String, dynamic> toJson() => {
+    'years': years,
+    'price_low': priceLow,
+    'price_high': priceHigh,
+    'price_likely': priceLikely,
+    'basis': basis,
+    'confidence': confidence.name,
+  };
+
+  static LongTermHorizon? fromJson(Map<String, dynamic> j) {
+    final years = _num(j['years'])?.round();
+    var lo = _num(j['price_low']);
+    var hi = _num(j['price_high']);
+    if (years == null || years <= 0 || lo == null || hi == null || lo <= 0 || hi <= 0) return null;
+    if (lo > hi) (lo, hi) = (hi, lo);
+    final likely = _num(j['price_likely']);
+    return LongTermHorizon(
+      years: years,
+      priceLow: lo,
+      priceHigh: hi,
+      // A sávon kívüli „legvalószínűbb” ár ellentmondás; ilyenkor elhagyjuk.
+      priceLikely: likely != null && likely >= lo && likely <= hi ? likely : null,
+      basis: (j['basis'] as String? ?? '').trim(),
+      confidence: Confidence.parse(j['confidence']),
+    );
+  }
+}
+
+/// Hosszú távú kilátás: 3, 5 és 10 éves ársávok egy összegző mondattal.
+class LongTermOutlook {
+  const LongTermOutlook({this.horizons = const [], this.summary = ''});
+
+  /// Időtáv szerint növekvő sorrendben.
+  final List<LongTermHorizon> horizons;
+  final String summary;
+
+  Map<String, dynamic> toJson() => {'horizons': horizons.map((h) => h.toJson()).toList(), 'summary': summary};
+
+  static LongTermOutlook? fromJson(Map<String, dynamic> j) {
+    final horizons = ReportOutlook._list(j['horizons'], LongTermHorizon.fromJson)
+      ..sort((a, b) => a.years.compareTo(b.years));
+    if (horizons.isEmpty) return null;
+    return LongTermOutlook(horizons: horizons, summary: (j['summary'] as String? ?? '').trim());
   }
 }
 
@@ -237,6 +349,7 @@ enum ReportSectionKind {
   valuation,
   ownership,
   outlook,
+  longterm,
   watch,
   other;
 

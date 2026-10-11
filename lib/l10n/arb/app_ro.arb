@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Și apăsarea rapidă de două ori a tastei Opțiune deschide StockLens.",
   "doubleOptionPermission": "Pentru ca funcția să meargă și în alte aplicații, permite StockLens în Configurări sistem → Intimitate și securitate → Monitorizare intrare, apoi redeschide aplicația.",
   "openSystemSettings": "Deschide Configurări sistem",
-  "hotkeyHintDoubleOption": "Apasă {shortcut} sau de două ori tasta Opțiune oriunde pentru a deschide StockLens."
+  "hotkeyHintDoubleOption": "Apasă {shortcut} sau de două ori tasta Opțiune oriunde pentru a deschide StockLens.",
+  "scenarioMostLikely": "Cel mai probabil",
+  "longTermToday": "Azi",
+  "longTermYears": "{years, plural, one{1 an} few{{years} ani} other{{years} de ani}}",
+  "longTermPerYear": "{range} pe an",
+  "longTermLikely": "cel mai probabil {price}",
+  "confidenceLow": "Încredere scăzută",
+  "confidenceMedium": "Încredere medie",
+  "confidenceHigh": "Încredere ridicată",
+  "longTermNote": "Intervalele pe termen lung se bazează pe ipotezele indicate și se lărgesc în timp. Prețuri fără dividende. Estimări aproximative, nu previziuni."
 }

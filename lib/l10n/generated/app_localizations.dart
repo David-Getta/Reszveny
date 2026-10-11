@@ -1953,6 +1953,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Press {shortcut} or double-press Option anywhere to summon StockLens.'**
   String hotkeyHintDoubleOption(String shortcut);
+
+  /// No description provided for @scenarioMostLikely.
+  ///
+  /// In en, this message translates to:
+  /// **'Most likely'**
+  String get scenarioMostLikely;
+
+  /// Axis label for the starting point (the current price) of the long-term chart.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get longTermToday;
+
+  /// Length of a long-term horizon, e.g. "5 years".
+  ///
+  /// In en, this message translates to:
+  /// **'{years, plural, one{1 year} other{{years} years}}'**
+  String longTermYears(int years);
+
+  /// Implied average annual return range, e.g. "+2.3% … +11.3% a year".
+  ///
+  /// In en, this message translates to:
+  /// **'{range} a year'**
+  String longTermPerYear(String range);
+
+  /// The most likely price within a long-term range.
+  ///
+  /// In en, this message translates to:
+  /// **'most likely {price}'**
+  String longTermLikely(String price);
+
+  /// No description provided for @confidenceLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Low confidence'**
+  String get confidenceLow;
+
+  /// No description provided for @confidenceMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium confidence'**
+  String get confidenceMedium;
+
+  /// No description provided for @confidenceHigh.
+  ///
+  /// In en, this message translates to:
+  /// **'High confidence'**
+  String get confidenceHigh;
+
+  /// No description provided for @longTermNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions.'**
+  String get longTermNote;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

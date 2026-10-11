@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Edhe shtypja e shpejtë dy herë e tastit Option hap StockLens.",
   "doubleOptionPermission": "Që të funksionojë edhe në aplikacione të tjera, lejoni StockLens te Cilësimet e sistemit → Privatësia dhe siguria → Monitorimi i hyrjes, pastaj rihapni aplikacionin.",
   "openSystemSettings": "Hap Cilësimet e sistemit",
-  "hotkeyHintDoubleOption": "Shtypni {shortcut} ose shtypni dy herë Option kudo për të hapur StockLens."
+  "hotkeyHintDoubleOption": "Shtypni {shortcut} ose shtypni dy herë Option kudo për të hapur StockLens.",
+  "scenarioMostLikely": "Më e mundshme",
+  "longTermToday": "Sot",
+  "longTermYears": "{years, plural, one{1 vit} other{{years} vjet}}",
+  "longTermPerYear": "{range} në vit",
+  "longTermLikely": "më e mundshme {price}",
+  "confidenceLow": "Besueshmëri e ulët",
+  "confidenceMedium": "Besueshmëri mesatare",
+  "confidenceHigh": "Besueshmëri e lartë",
+  "longTermNote": "Intervalet afatgjata bazohen në supozimet e dhëna dhe zgjerohen me kohën. Çmimet pa dividendë. Vlerësime të përafërta, jo parashikime."
 }

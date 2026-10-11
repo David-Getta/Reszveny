@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "StockLens taip pat iškviesite greitai dukart paspaudę klavišą Option.",
   "doubleOptionPermission": "Kad tai veiktų ir kitose programose, leiskite StockLens skiltyje Sistemos nustatymai → Privatumas ir sauga → Įvesties stebėjimas, tada iš naujo atidarykite programą.",
   "openSystemSettings": "Atidaryti Sistemos nustatymus",
-  "hotkeyHintDoubleOption": "Paspauskite {shortcut} arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens."
+  "hotkeyHintDoubleOption": "Paspauskite {shortcut} arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens.",
+  "scenarioMostLikely": "Labiausiai tikėtinas",
+  "longTermToday": "Šiandien",
+  "longTermYears": "{years, plural, one{{years} metai} few{{years} metai} many{{years} metų} other{{years} metų}}",
+  "longTermPerYear": "{range} per metus",
+  "longTermLikely": "labiausiai tikėtina {price}",
+  "confidenceLow": "Mažas patikimumas",
+  "confidenceMedium": "Vidutinis patikimumas",
+  "confidenceHigh": "Didelis patikimumas",
+  "longTermNote": "Ilgalaikiai intervalai remiasi nurodytomis prielaidomis ir laikui bėgant platėja. Kainos be dividendų. Apytiksliai vertinimai, ne prognozės."
 }

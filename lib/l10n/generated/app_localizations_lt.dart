@@ -1056,4 +1056,46 @@ class AppLocalizationsLt extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Paspauskite $shortcut arba dukart paspauskite Option bet kur, kad iškviestumėte StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Labiausiai tikėtinas';
+
+  @override
+  String get longTermToday => 'Šiandien';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years metų',
+      many: '$years metų',
+      few: '$years metai',
+      one: '$years metai',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range per metus';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'labiausiai tikėtina $price';
+  }
+
+  @override
+  String get confidenceLow => 'Mažas patikimumas';
+
+  @override
+  String get confidenceMedium => 'Vidutinis patikimumas';
+
+  @override
+  String get confidenceHigh => 'Didelis patikimumas';
+
+  @override
+  String get longTermNote =>
+      'Ilgalaikiai intervalai remiasi nurodytomis prielaidomis ir laikui bėgant platėja. Kainos be dividendų. Apytiksliai vertinimai, ne prognozės.';
 }

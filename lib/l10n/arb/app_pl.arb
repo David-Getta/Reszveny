@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Szybkie dwukrotne naciśnięcie klawisza Option również przywołuje StockLens.",
   "doubleOptionPermission": "Aby działało to również w innych aplikacjach, zezwól StockLens na dostęp w sekcji Ustawienia systemowe → Prywatność i ochrona → Monitorowanie wprowadzania, a następnie ponownie otwórz aplikację.",
   "openSystemSettings": "Otwórz Ustawienia systemowe",
-  "hotkeyHintDoubleOption": "Naciśnij {shortcut} lub dwukrotnie naciśnij Option w dowolnym miejscu, aby przywołać StockLens."
+  "hotkeyHintDoubleOption": "Naciśnij {shortcut} lub dwukrotnie naciśnij Option w dowolnym miejscu, aby przywołać StockLens.",
+  "scenarioMostLikely": "Najbardziej prawdopodobny",
+  "longTermToday": "Dziś",
+  "longTermYears": "{years, plural, one{1 rok} few{{years} lata} many{{years} lat} other{{years} roku}}",
+  "longTermPerYear": "{range} rocznie",
+  "longTermLikely": "najprawdopodobniej {price}",
+  "confidenceLow": "Niska pewność",
+  "confidenceMedium": "Średnia pewność",
+  "confidenceHigh": "Wysoka pewność",
+  "longTermNote": "Przedziały długoterminowe opierają się na podanych założeniach i z czasem się poszerzają. Ceny bez dywidend. Zgrubne szacunki, nie prognozy."
 }

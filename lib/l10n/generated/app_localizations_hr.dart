@@ -1044,4 +1044,45 @@ class AppLocalizationsHr extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Pritisnite $shortcut ili dvaput pritisnite Option bilo gdje da otvorite StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Najvjerojatnije';
+
+  @override
+  String get longTermToday => 'Danas';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years godina',
+      few: '$years godine',
+      one: '$years godina',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range godišnje';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'najvjerojatnije $price';
+  }
+
+  @override
+  String get confidenceLow => 'Niska pouzdanost';
+
+  @override
+  String get confidenceMedium => 'Srednja pouzdanost';
+
+  @override
+  String get confidenceHigh => 'Visoka pouzdanost';
+
+  @override
+  String get longTermNote =>
+      'Dugoročni rasponi temelje se na navedenim pretpostavkama i s vremenom se šire. Cijene bez dividendi. Grube procjene, a ne predviđanja.';
 }

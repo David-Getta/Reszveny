@@ -40,18 +40,18 @@ class AnalysisOptions {
   (int, int) get wordRange => wordRangeOf(depth);
 
   static (int, int) wordRangeOf(AnalysisDepth d) => switch (d) {
-    AnalysisDepth.brief => (600, 900),
-    AnalysisDepth.standard => (1100, 1600),
-    AnalysisDepth.deep => (2200, 3000),
+    AnalysisDepth.brief => (700, 1000),
+    AnalysisDepth.standard => (1250, 1800),
+    AnalysisDepth.deep => (2400, 3300),
   };
 
   /// A válasz kimeneti token-korlátja (a gondolkodással együtt).
   int get maxTokens => maxTokensOf(depth);
 
   static int maxTokensOf(AnalysisDepth d) => switch (d) {
-    AnalysisDepth.brief => 10000,
-    AnalysisDepth.standard => 16000,
-    AnalysisDepth.deep => 28000,
+    AnalysisDepth.brief => 12000,
+    AnalysisDepth.standard => 18000,
+    AnalysisDepth.deep => 32000,
   };
 
   /// Webkeresések: a csomag alapértéke, rövidnél kettővel kevesebb, mélyebbnél

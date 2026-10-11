@@ -1022,4 +1022,39 @@ class AppLocalizationsFil extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Pindutin ang $shortcut o pindutin nang dalawang beses ang Option kahit saan para tawagin ang StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Pinakamalamang';
+
+  @override
+  String get longTermToday => 'Ngayon';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years taon', one: '1 taon');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range bawat taon';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'pinakamalamang $price';
+  }
+
+  @override
+  String get confidenceLow => 'Mababang kumpiyansa';
+
+  @override
+  String get confidenceMedium => 'Katamtamang kumpiyansa';
+
+  @override
+  String get confidenceHigh => 'Mataas na kumpiyansa';
+
+  @override
+  String get longTermNote =>
+      'Ang mga pangmatagalang saklaw ay nakabatay sa mga nakasaad na palagay at lumalawak habang tumatagal. Hindi kasama ang dibidendo sa presyo. Magaspang na pagtataya, hindi hula.';
 }

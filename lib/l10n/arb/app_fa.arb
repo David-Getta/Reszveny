@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "دو بار فشار دادن سریع کلید Option نیز StockLens را فرا می‌خواند.",
   "doubleOptionPermission": "برای اینکه در برنامه‌های دیگر هم کار کند، در تنظیمات سیستم ← حریم خصوصی و امنیت ← نظارت بر ورودی به StockLens اجازه دهید و سپس برنامه را دوباره باز کنید.",
   "openSystemSettings": "باز کردن تنظیمات سیستم",
-  "hotkeyHintDoubleOption": "برای فراخوانی StockLens، در هر جایی {shortcut} را فشار دهید یا Option را دو بار فشار دهید."
+  "hotkeyHintDoubleOption": "برای فراخوانی StockLens، در هر جایی {shortcut} را فشار دهید یا Option را دو بار فشار دهید.",
+  "scenarioMostLikely": "محتمل‌ترین",
+  "longTermToday": "امروز",
+  "longTermYears": "{years, plural, one{{years} سال} other{{years} سال}}",
+  "longTermPerYear": "{range} در سال",
+  "longTermLikely": "محتمل‌ترین {price}",
+  "confidenceLow": "اطمینان کم",
+  "confidenceMedium": "اطمینان متوسط",
+  "confidenceHigh": "اطمینان زیاد",
+  "longTermNote": "بازه‌های بلندمدت بر فرض‌های ذکرشده استوارند و با گذشت زمان گسترده‌تر می‌شوند. قیمت‌ها بدون سود سهام است. برآوردهای تقریبی‌اند، نه پیش‌بینی."
 }

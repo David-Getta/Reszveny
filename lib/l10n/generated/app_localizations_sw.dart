@@ -1014,4 +1014,39 @@ class AppLocalizationsSw extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Bonyeza $shortcut au bonyeza Option mara mbili mahali popote kuita StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Uwezekano mkubwa zaidi';
+
+  @override
+  String get longTermToday => 'Leo';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'miaka $years', one: 'mwaka 1');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range kwa mwaka';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'uwezekano mkubwa $price';
+  }
+
+  @override
+  String get confidenceLow => 'Uhakika mdogo';
+
+  @override
+  String get confidenceMedium => 'Uhakika wa wastani';
+
+  @override
+  String get confidenceHigh => 'Uhakika mkubwa';
+
+  @override
+  String get longTermNote =>
+      'Viwango vya muda mrefu vinategemea dhana zilizotajwa na hupanuka kadiri muda unavyopita. Bei hazijumuishi gawio. Makadirio ya jumla, si utabiri.';
 }

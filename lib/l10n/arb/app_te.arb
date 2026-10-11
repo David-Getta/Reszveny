@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option కీని వేగంగా రెండుసార్లు నొక్కినా కూడా StockLens తెరుచుకుంటుంది.",
   "doubleOptionPermission": "ఇతర యాప్‌లలో కూడా ఇది పని చేయాలంటే, సిస్టమ్ సెట్టింగ్‌లు → గోప్యత & భద్రత → ఇన్‌పుట్ మానిటరింగ్‌లో StockLens ని అనుమతించి, ఆపై యాప్‌ను మళ్లీ తెరవండి.",
   "openSystemSettings": "సిస్టమ్ సెట్టింగ్‌లను తెరవండి",
-  "hotkeyHintDoubleOption": "ఎక్కడి నుంచైనా StockLens ని తెరవడానికి {shortcut} నొక్కండి లేదా Option ని రెండుసార్లు నొక్కండి."
+  "hotkeyHintDoubleOption": "ఎక్కడి నుంచైనా StockLens ని తెరవడానికి {shortcut} నొక్కండి లేదా Option ని రెండుసార్లు నొక్కండి.",
+  "scenarioMostLikely": "అత్యంత సంభావ్యం",
+  "longTermToday": "ఈ రోజు",
+  "longTermYears": "{years, plural, one{1 సంవత్సరం} other{{years} సంవత్సరాలు}}",
+  "longTermPerYear": "సంవత్సరానికి {range}",
+  "longTermLikely": "అత్యంత సంభావ్య ధర {price}",
+  "confidenceLow": "తక్కువ విశ్వాసం",
+  "confidenceMedium": "మధ్యస్థ విశ్వాసం",
+  "confidenceHigh": "అధిక విశ్వాసం",
+  "longTermNote": "దీర్ఘకాలిక పరిధులు పేర్కొన్న అంచనాలపై ఆధారపడి ఉంటాయి మరియు కాలంతో పాటు విస్తరిస్తాయి. ధరల్లో డివిడెండ్లు చేర్చలేదు. స్థూల అంచనాలు, భవిష్యవాణులు కావు."
 }

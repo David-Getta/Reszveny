@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Brzim dvostrukim pritiskom tipke Option također otvarate StockLens.",
   "doubleOptionPermission": "Da bi radilo i u drugim aplikacijama, dopustite pristup aplikaciji StockLens u odjeljku Postavke sustava → Privatnost i sigurnost → Nadzor unosa, a zatim ponovno otvorite aplikaciju.",
   "openSystemSettings": "Otvori Postavke sustava",
-  "hotkeyHintDoubleOption": "Pritisnite {shortcut} ili dvaput pritisnite Option bilo gdje da otvorite StockLens."
+  "hotkeyHintDoubleOption": "Pritisnite {shortcut} ili dvaput pritisnite Option bilo gdje da otvorite StockLens.",
+  "scenarioMostLikely": "Najvjerojatnije",
+  "longTermToday": "Danas",
+  "longTermYears": "{years, plural, one{{years} godina} few{{years} godine} other{{years} godina}}",
+  "longTermPerYear": "{range} godišnje",
+  "longTermLikely": "najvjerojatnije {price}",
+  "confidenceLow": "Niska pouzdanost",
+  "confidenceMedium": "Srednja pouzdanost",
+  "confidenceHigh": "Visoka pouzdanost",
+  "longTermNote": "Dugoročni rasponi temelje se na navedenim pretpostavkama i s vremenom se šire. Cijene bez dividendi. Grube procjene, a ne predviđanja."
 }

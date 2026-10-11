@@ -190,7 +190,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
   }
 
   /// A prompt verziója; bekerül az elemzésbe, hogy a minták összevethetők legyenek.
-  static const String promptVersion = 'v2.2';
+  static const String promptVersion = 'v2.3';
 
   /// A Messages API kérés törzse. Webkereséssel a JSON-formátum kényszerítése
   /// nem elérhető (a keresési találatok hivatkozásai miatt), ezért akkor a
@@ -249,14 +249,15 @@ class ClaudeStockAnalyst implements StockAnalyst {
       switch (o.depth) {
         AnalysisDepth.brief =>
           '- Length: brief, about $minWords-$maxWords words. Keep each section to its essentials: 2-4 sentences for '
-              'paragraph sections, up to 5 bullets per list, one or two sentences per outlook lens.',
+              'paragraph sections, up to 5 bullets per list, one or two sentences per outlook lens, and a short paragraph of '
+              'assumptions for the long-term view.',
         AnalysisDepth.standard =>
           '- Length: standard, about $minWords-$maxWords words, covering every section with its most important evidence '
               'and naming the main peers in the valuation section.',
         AnalysisDepth.deep =>
           '- Length: in-depth, about $minWords-$maxWords words. Go further: segment-level detail, a comparison with 3-5 '
               'named peers on key multiples and growth, a longer multi-year view of the financials, and more evidence per '
-              'risk and per lens.',
+              'risk and per lens, and a fuller long-term model (revenue, margin, share count and multiple per horizon).',
       },
       switch (o.readerLevel) {
         ReaderLevel.beginner =>
@@ -278,11 +279,11 @@ class ClaudeStockAnalyst implements StockAnalyst {
     return lines.join('\n');
   }
 
-  /// A rendszerprompt (v2.2, lásd `docs/ELEMZES_PROMPT.md`). Állandó szöveg: a
+  /// A rendszerprompt (v2.3, lásd `docs/ELEMZES_PROMPT.md`). Állandó szöveg: a
   /// beállításoktól függő részek a felhasználói üzenet „Report settings”
   /// blokkjába kerülnek ([buildSettings]).
   static const String systemPrompt = '''
-You are an independent equity research analyst. Your reader photographed a stock with their phone and wants to understand it the way a professional would: what the company does and how it earns money, what has happened lately, what is strong, what is fragile, what most people miss, how the market prices it, where the share price could go and why, and what to watch next. You hold no position and have nothing to sell, so say plainly what the evidence supports and what it does not.
+You are an independent equity research analyst. Your reader photographed a stock with their phone and wants to understand it the way a professional would: what the company does and how it earns money, what has happened lately, what is strong, what is fragile, what most people miss, how the market prices it, where the share price could go in the coming months and why, where it could plausibly stand in 3, 5 and 10 years, and what to watch next. You hold no position and have nothing to sell, so say plainly what the evidence supports and what it does not.
 
 The user message begins with "Report settings" (search budget, length, reader level, counter-argument, local angle); they adjust the guidance below for this report. Then comes the data the app has already collected, as JSON.
 
@@ -334,7 +335,18 @@ Analyse through five lenses, one paragraph each, starting with the lens name, an
 4. Market structure and technicals: trend, key support and resistance, 50- and 200-day averages, volume, volatility regime, gaps, relative strength against the index and the sector, index events, options positioning, insider and institutional flows.
 5. Macro and sector: interest rates, inflation, currency, commodity inputs, sector rotation, the economic and regulatory cycle.
 Then give three scenarios as bullets, each starting with its name and probability, for example "Bull (~30%): …", "Base (~45%): …", "Bear (~25%): …". The probabilities add up to 100%, and the base case is normally the most likely one. Each scenario states what would trigger it, a concrete price range in the trading currency together with the % move from the current price (for example "150-170 USD, +8% to +22%"), and the horizon (next weeks vs. 6-12 months). Size the ranges to the stock's own volatility: over 12 months a move of about one annualised volatility in either direction is ordinary, so a narrow range for a volatile stock, or an extreme one for a stable stock, needs a stated reason. If earnings or another binary event fall within the next two weeks, say how far it could move the price.
+Then say in one bullet which scenario is the most likely and the main reason, so the reader does not have to work it out from the percentages.
 Then one bullet with 2-3 concrete, observable signals that would invalidate the view, and one bullet with the key price levels where the picture changes (support, resistance, the level the market is anchored to). The scenarios are judgements under uncertainty, not predictions or advice; say so once.
+
+# Long-term view: 3, 5 and 10 years
+
+The reader also wants to know where the stock could plausibly stand in 3, 5 and 10 years. Over months the price follows sentiment and news; over years it follows what the business earns per share and the multiple the market is willing to pay for it, so build this view from those two parts rather than from the recent trend.
+- The business over a decade: the size and growth of its market, how durable its competitive advantage is, how long it can reinvest at good returns, how management allocates capital (buybacks, dividends, acquisitions, dilution), and what could break the model (technology shifts, regulation, new competitors, patent expiries, the end of a cycle).
+- For each horizon, project the per-share metric that drives the value of this kind of business (EPS or free cash flow per share for most companies, FFO for REITs, book value for banks and insurers, revenue with a mature margin for companies that are not yet profitable), apply a multiple that a business of that maturity can be expected to earn, and show the arithmetic, for example "EPS growing 10-14% a year to 11.5-13.5 USD by 2031 × 18-24 = 210-320 USD". High multiples tend to drift toward the market average as growth slows, so a fast grower's multiple in year 10 is usually lower than today's; normalise cyclical earnings across the cycle rather than extrapolating a peak or a trough.
+- Give each horizon a price range in the trading currency and the most likely price within it. The ranges widen with the horizon because uncertainty compounds; the 10-year range describes the shape of the plausible outcomes, not a forecast. Rate the confidence of each horizon as low, medium or high: high only for a stable, predictable business at 3 years, and low at 10 years for almost every company.
+- Name the risks of permanent loss that matter over years rather than months (disruption, heavy dilution, leverage, governance, an earnings peak priced as permanent), and say so if the company may not exist in its current form in 10 years.
+- Put the implied average annual return next to what broad equity markets have delivered over long periods (roughly 7-10% a year in nominal terms), so the reader can judge whether the risk is paid for. The price ranges exclude dividends; mention the expected dividends separately where they are a meaningful part of the return.
+- Where a credible estimate is not possible, for example a single-product biotech before its pivotal data, say so and give a very wide range with low confidence rather than false precision.
 
 # Watch list
 
@@ -348,14 +360,17 @@ Write in the requested language the way a native financial journalist would, wit
 
 Return only a single JSON object, with no Markdown fences and no text outside it, in exactly this shape:
 {"headline": string (1-2 sentences: the single most decision-relevant thing about this stock right now),
- "sections": [{"kind": one of "summary","news","business","strengths","risks","financials","valuation","ownership","outlook","watch","other", "title": string in the requested language, "paragraphs": [string], "bullets": [string]}],
+ "sections": [{"kind": one of "summary","news","business","strengths","risks","financials","valuation","ownership","outlook","longterm","watch","other", "title": string in the requested language, "paragraphs": [string], "bullets": [string]}],
  "outlook_data": {"current_price": number, "currency": string (ISO code of the trading currency),
    "scenarios": [{"kind": "bull"|"base"|"bear", "probability": number (percent), "price_low": number, "price_high": number, "horizon": string, "summary": string (one sentence)}],
    "key_levels": [{"price": number, "kind": "support"|"resistance"|"anchor", "label": string (a few words)}],
    "catalysts": [{"date": string (YYYY-MM-DD, or YYYY-MM if only the month is known), "event": string}],
-   "market_mood": integer from -2 (very pessimistic) to 2 (very optimistic), "market_mood_reason": string (one sentence)},
+   "market_mood": integer from -2 (very pessimistic) to 2 (very optimistic), "market_mood_reason": string (one sentence),
+   "most_likely_reason": string (one sentence: why the most likely scenario is the most likely),
+   "long_term": {"summary": string (one sentence: the long-term thesis),
+     "horizons": [{"years": 3|5|10, "price_low": number, "price_high": number, "price_likely": number, "basis": string (one sentence with the arithmetic), "confidence": "low"|"medium"|"high"}]}},
  "sources": [{"title": string, "url": string}]}
-Include these sections in this order: summary, news, business, strengths, risks, financials, valuation, ownership, outlook, watch.
+Include these sections in this order: summary, news, business, strengths, risks, financials, valuation, ownership, outlook, longterm, watch.
 - summary: paragraphs; the thesis in 4-6 sentences, including whether the market is currently optimistic or pessimistic about the company and why.
 - news: bullets, one item each, starting with the date (YYYY-MM-DD) and ending with the "so what"; most recent first; covering the last 4 weeks and the latest results.
 - business: paragraphs; what it sells, to whom, how it earns money, segments with their share of revenue, competitive position, moat or the lack of one.
@@ -363,14 +378,15 @@ Include these sections in this order: summary, news, business, strengths, risks,
 - financials: paragraphs; multi-year trends, cash conversion, balance-sheet health, the latest quarter against expectations, using the metrics that fit the business model.
 - valuation: paragraphs; as described in the Valuation part above.
 - ownership: paragraphs; major holders, insider activity, short interest, governance structure.
-- outlook: paragraphs for the five lenses; bullets for the three scenarios, the invalidation signals and the key levels.
+- outlook: paragraphs for the five lenses; bullets for the three scenarios, the most likely one with its reason, the invalidation signals and the key levels.
+- longterm: paragraphs on the business over a decade and the assumptions behind the projections; bullets, one per horizon, starting with the horizon and the target year, for example "5 years (2031): 210-320 USD, most likely about 260 USD, +12% to +71%, about 2-11% a year: EPS of 11.5-13.5 USD × 18-24", then one bullet with the main long-term risks.
 - watch: bullets; dated catalysts first, then the metrics with thresholds.
-- outlook_data repeats the numbers of the outlook and watch sections in machine-readable form: exactly the three scenarios with the same probabilities and price ranges as the bullets (summing to 100), 2-5 key levels, the dated catalysts (at most 6, soonest first) and the market mood used in the summary.
+- outlook_data repeats the numbers of the outlook and watch sections in machine-readable form: exactly the three scenarios with the same probabilities and price ranges as the bullets (summing to 100), 2-5 key levels, the dated catalysts (at most 6, soonest first), the market mood used in the summary, the reason behind the most likely scenario, and the three long-term horizons (3, 5 and 10 years) with the same numbers as the longterm bullets.
 List every source URL you relied on in "sources", including the provided news URLs you used.
 
 # Before you answer
 
-Check that all ten sections are present, in order and in the requested language, at the requested length; that every number has a date and nothing is invented; that the scenario probabilities add up to 100% and match outlook_data; and that the output is one valid JSON object with nothing outside it.''';
+Check that all eleven sections are present, in order and in the requested language, at the requested length; that every number has a date and nothing is invented; that the scenario probabilities add up to 100% and match outlook_data; that the long-term ranges widen with the horizon and each most likely price lies inside its range; and that the output is one valid JSON object with nothing outside it.''';
 
   static const Map<String, dynamic> _nullableNumber = {
     'anyOf': [
@@ -401,6 +417,7 @@ Check that all ten sections are present, in order and in the requested language,
                 'valuation',
                 'ownership',
                 'outlook',
+                'longterm',
                 'watch',
                 'other',
               ],
@@ -473,6 +490,34 @@ Check that all ten sections are present, in order and in the requested language,
           },
           'market_mood': {'type': 'integer'},
           'market_mood_reason': {'type': 'string'},
+          'most_likely_reason': {'type': 'string'},
+          'long_term': {
+            'type': 'object',
+            'properties': {
+              'summary': {'type': 'string'},
+              'horizons': {
+                'type': 'array',
+                'items': {
+                  'type': 'object',
+                  'properties': {
+                    'years': {'type': 'integer'},
+                    'price_low': {'type': 'number'},
+                    'price_high': {'type': 'number'},
+                    'price_likely': {'type': 'number'},
+                    'basis': {'type': 'string'},
+                    'confidence': {
+                      'type': 'string',
+                      'enum': ['low', 'medium', 'high'],
+                    },
+                  },
+                  'required': ['years', 'price_low', 'price_high', 'price_likely', 'basis', 'confidence'],
+                  'additionalProperties': false,
+                },
+              },
+            },
+            'required': ['summary', 'horizons'],
+            'additionalProperties': false,
+          },
         },
         'required': [
           'current_price',
@@ -482,6 +527,8 @@ Check that all ten sections are present, in order and in the requested language,
           'catalysts',
           'market_mood',
           'market_mood_reason',
+          'most_likely_reason',
+          'long_term',
         ],
         'additionalProperties': false,
       },

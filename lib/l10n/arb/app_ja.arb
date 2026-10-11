@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option キーをすばやく2回押しても StockLens を呼び出せます。",
   "doubleOptionPermission": "他のアプリでも使えるようにするには、「システム設定」→「プライバシーとセキュリティ」→「入力監視」で StockLens を許可してから、アプリを開き直してください。",
   "openSystemSettings": "システム設定を開く",
-  "hotkeyHintDoubleOption": "どこからでも {shortcut} を押すか Option キーを2回押すと StockLens を呼び出せます。"
+  "hotkeyHintDoubleOption": "どこからでも {shortcut} を押すか Option キーを2回押すと StockLens を呼び出せます。",
+  "scenarioMostLikely": "最も可能性が高い",
+  "longTermToday": "現在",
+  "longTermYears": "{years, plural, other{{years}年}}",
+  "longTermPerYear": "年率 {range}",
+  "longTermLikely": "最有力 {price}",
+  "confidenceLow": "確度：低",
+  "confidenceMedium": "確度：中",
+  "confidenceHigh": "確度：高",
+  "longTermNote": "長期の価格帯は示した前提に基づき、期間が長いほど広がります。価格は配当を含みません。大まかな見立てであり、予測ではありません。"
 }

@@ -1056,4 +1056,46 @@ class AppLocalizationsUk extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Натисніть $shortcut або двічі натисніть Option будь-де, щоб викликати StockLens.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Найімовірніший';
+
+  @override
+  String get longTermToday => 'Сьогодні';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years року',
+      many: '$years років',
+      few: '$years роки',
+      one: '$years рік',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range на рік';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'найімовірніше $price';
+  }
+
+  @override
+  String get confidenceLow => 'Низька впевненість';
+
+  @override
+  String get confidenceMedium => 'Середня впевненість';
+
+  @override
+  String get confidenceHigh => 'Висока впевненість';
+
+  @override
+  String get longTermNote =>
+      'Довгострокові діапазони ґрунтуються на зазначених припущеннях і з часом розширюються. Ціни без урахування дивідендів. Грубі оцінки, а не прогнози.';
 }

@@ -1011,4 +1011,39 @@ class AppLocalizationsFa extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'برای فراخوانی StockLens، در هر جایی $shortcut را فشار دهید یا Option را دو بار فشار دهید.';
   }
+
+  @override
+  String get scenarioMostLikely => 'محتمل‌ترین';
+
+  @override
+  String get longTermToday => 'امروز';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years سال', one: '$years سال');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range در سال';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'محتمل‌ترین $price';
+  }
+
+  @override
+  String get confidenceLow => 'اطمینان کم';
+
+  @override
+  String get confidenceMedium => 'اطمینان متوسط';
+
+  @override
+  String get confidenceHigh => 'اطمینان زیاد';
+
+  @override
+  String get longTermNote =>
+      'بازه‌های بلندمدت بر فرض‌های ذکرشده استوارند و با گذشت زمان گسترده‌تر می‌شوند. قیمت‌ها بدون سود سهام است. برآوردهای تقریبی‌اند، نه پیش‌بینی.';
 }

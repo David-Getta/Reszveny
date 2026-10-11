@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option কী দ্রুত দুবার চাপলেও StockLens খুলে যায়।",
   "doubleOptionPermission": "অন্য অ্যাপেও এটি কাজ করাতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → ইনপুট মনিটরিং-এ StockLens-কে অনুমতি দিন, তারপর অ্যাপটি আবার খুলুন।",
   "openSystemSettings": "সিস্টেম সেটিংস খুলুন",
-  "hotkeyHintDoubleOption": "যেকোনো জায়গা থেকে StockLens খুলতে {shortcut} চাপুন বা Option দুবার চাপুন।"
+  "hotkeyHintDoubleOption": "যেকোনো জায়গা থেকে StockLens খুলতে {shortcut} চাপুন বা Option দুবার চাপুন।",
+  "scenarioMostLikely": "সবচেয়ে সম্ভাব্য",
+  "longTermToday": "আজ",
+  "longTermYears": "{years, plural, one{{years} বছর} other{{years} বছর}}",
+  "longTermPerYear": "বছরে {range}",
+  "longTermLikely": "সবচেয়ে সম্ভাব্য {price}",
+  "confidenceLow": "কম আস্থা",
+  "confidenceMedium": "মাঝারি আস্থা",
+  "confidenceHigh": "উচ্চ আস্থা",
+  "longTermNote": "দীর্ঘমেয়াদি পরিসরগুলি উল্লিখিত অনুমানের উপর ভিত্তি করে এবং সময়ের সঙ্গে প্রশস্ত হয়। দামে লভ্যাংশ ধরা হয়নি। মোটামুটি অনুমান, পূর্বাভাস নয়।"
 }

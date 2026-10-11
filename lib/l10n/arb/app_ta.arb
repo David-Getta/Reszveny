@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Option விசையை வேகமாக இருமுறை அழுத்தினாலும் StockLens ஐ அழைக்கலாம்.",
   "doubleOptionPermission": "பிற ஆப்களிலும் இது வேலை செய்ய, சிஸ்டம் அமைப்புகள் → தனியுரிமை & பாதுகாப்பு → உள்ளீட்டுக் கண்காணிப்பு என்பதில் StockLens ஐ அனுமதித்து, பின்னர் ஆப்பை மீண்டும் திறங்கள்.",
   "openSystemSettings": "சிஸ்டம் அமைப்புகளைத் திற",
-  "hotkeyHintDoubleOption": "எங்கிருந்தும் StockLens ஐ அழைக்க {shortcut} ஐ அழுத்துங்கள் அல்லது Option ஐ இருமுறை அழுத்துங்கள்."
+  "hotkeyHintDoubleOption": "எங்கிருந்தும் StockLens ஐ அழைக்க {shortcut} ஐ அழுத்துங்கள் அல்லது Option ஐ இருமுறை அழுத்துங்கள்.",
+  "scenarioMostLikely": "மிக அதிக வாய்ப்பு",
+  "longTermToday": "இன்று",
+  "longTermYears": "{years, plural, one{1 ஆண்டு} other{{years} ஆண்டுகள்}}",
+  "longTermPerYear": "ஆண்டுக்கு {range}",
+  "longTermLikely": "மிக வாய்ப்புள்ள விலை {price}",
+  "confidenceLow": "குறைந்த நம்பகத்தன்மை",
+  "confidenceMedium": "நடுத்தர நம்பகத்தன்மை",
+  "confidenceHigh": "உயர் நம்பகத்தன்மை",
+  "longTermNote": "நீண்டகால வரம்புகள் குறிப்பிடப்பட்ட அனுமானங்களை அடிப்படையாகக் கொண்டவை; காலப்போக்கில் அகலமாகும். விலைகளில் ஈவுத்தொகை சேர்க்கப்படவில்லை. தோராயமான மதிப்பீடுகள், கணிப்புகள் அல்ல."
 }

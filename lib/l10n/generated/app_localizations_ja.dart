@@ -977,4 +977,38 @@ class AppLocalizationsJa extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'どこからでも $shortcut を押すか Option キーを2回押すと StockLens を呼び出せます。';
   }
+
+  @override
+  String get scenarioMostLikely => '最も可能性が高い';
+
+  @override
+  String get longTermToday => '現在';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '年率 $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return '最有力 $price';
+  }
+
+  @override
+  String get confidenceLow => '確度：低';
+
+  @override
+  String get confidenceMedium => '確度：中';
+
+  @override
+  String get confidenceHigh => '確度：高';
+
+  @override
+  String get longTermNote => '長期の価格帯は示した前提に基づき、期間が長いほど広がります。価格は配当を含みません。大まかな見立てであり、予測ではありません。';
 }

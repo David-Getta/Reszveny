@@ -83,9 +83,9 @@ A beállításokban választható hossz határozza meg, mennyi keretet fogyaszt 
 
 | Hossz | Terjedelem | Fogyasztás | Webkeresés (alap hossz ± 2) |
 |---|---|---|---|
-| Rövid | 600–900 szó | 1 elemzés | csomag − 2 |
-| Alap | 1 100–1 600 szó | 1 elemzés | csomag |
-| Részletes | 2 200–3 000 szó, versenytárs-összevetés | 2 elemzés | csomag + 2 |
+| Rövid | 700–1 000 szó | 1 elemzés | csomag − 2 |
+| Alap | 1 250–1 800 szó | 1 elemzés | csomag |
+| Részletes | 2 400–3 300 szó, versenytárs-összevetés | 2 elemzés | csomag + 2 |
 
 Webkeresés alap hossznál: Próba 6, Normál 4, Pro 6, Max 8, Ultra 10. Ha csak 1 elemzés maradt,
 a részletes nem indítható (`notEnoughCredits`, szerveren 402 `insufficient_quota`), a rövid és az

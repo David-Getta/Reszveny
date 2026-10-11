@@ -146,15 +146,31 @@ void main() {
     expect(p, contains('insider transactions'));
     expect(
       (ClaudeStockAnalyst.schema['properties']['sections']['items']['properties']['kind']['enum'] as List),
-      contains('outlook'),
+      containsAll(['outlook', 'longterm']),
     );
     expect((ClaudeStockAnalyst.schema['required'] as List), contains('outlook_data'));
+  });
+
+  test('v2.3 names the most likely scenario and adds a 3, 5 and 10 year view', () {
+    const p = ClaudeStockAnalyst.systemPrompt;
+    expect(p, contains('which scenario is the most likely and the main reason'));
+    expect(p, contains('most_likely_reason'));
+    expect(p, contains('# Long-term view: 3, 5 and 10 years'));
+    expect(p, contains('per-share metric'));
+    expect(p, contains('ranges widen with the horizon'));
+    expect(p, contains('7-10% a year'));
+    expect(p, contains('outlook, longterm, watch'));
+    expect(p, contains('all eleven sections'));
+    final outlook = ClaudeStockAnalyst.schema['properties']['outlook_data'] as Map;
+    expect(outlook['required'] as List, containsAll(['most_likely_reason', 'long_term']));
+    final horizon = outlook['properties']['long_term']['properties']['horizons']['items'] as Map;
+    expect(horizon['required'] as List, ['years', 'price_low', 'price_high', 'price_likely', 'basis', 'confidence']);
   });
 
   test('settings block follows the analysis options', () {
     final std = ClaudeStockAnalyst.buildSettings(const AnalysisOptions());
     expect(std, contains('up to 6 searches'));
-    expect(std, contains('standard, about 1100-1600 words'));
+    expect(std, contains('standard, about 1250-1800 words'));
     expect(std, contains('Reader: a beginner'));
     expect(std, contains('Strongest counter-argument'));
     final brief = ClaudeStockAnalyst.buildSettings(
@@ -167,7 +183,7 @@ void main() {
         readerCurrency: 'HUF',
       ),
     );
-    expect(brief, contains('brief, about 600-900 words'));
+    expect(brief, contains('brief, about 700-1000 words'));
     expect(brief, contains('experienced investor'));
     expect(brief, contains('up to 4 searches'));
     expect(brief, contains('combine topics'));
@@ -175,7 +191,7 @@ void main() {
     expect(brief, contains('HUF'));
     expect(brief, isNot(contains('Counter-argument')));
     final deep = ClaudeStockAnalyst.buildSettings(const AnalysisOptions(depth: AnalysisDepth.deep, webSearches: 8));
-    expect(deep, contains('in-depth, about 2200-3000 words'));
+    expect(deep, contains('in-depth, about 2400-3300 words'));
     expect(deep, contains('searches beyond six'));
     for (final t in [std, brief, deep]) {
       expect(t, isNot(matches(RegExp(r'\b(BRIEF|STANDARD|IN-DEPTH|BEGINNER|EXPERIENCED|ON|OFF|NOT)\b'))));
@@ -199,7 +215,7 @@ void main() {
     final sys = (a['system'] as List).single as Map;
     expect(sys['cache_control'], {'type': 'ephemeral'});
     expect(a['cache_control'], {'type': 'ephemeral'});
-    expect(b['max_tokens'], 28000);
+    expect(b['max_tokens'], 32000);
   });
 
   test('analysis options: cost, tokens and web searches by plan', () {
@@ -341,6 +357,37 @@ void main() {
       ],
       'market_mood': 1.4,
       'market_mood_reason': 'Az AI-narratíva erős.',
+      'most_likely_reason': 'A növekedés lassul, de a szorzó kitart.',
+      'long_term': {
+        'summary': 'Hosszú távon az EPS-növekedés viszi.',
+        'horizons': [
+          {
+            'years': 10,
+            'price_low': 90,
+            'price_high': 400,
+            'price_likely': 210,
+            'basis': 'EPS 14 × 15',
+            'confidence': 'low',
+          },
+          {
+            'years': 3,
+            'price_low': 140,
+            'price_high': 95,
+            'price_likely': 115,
+            'basis': 'EPS 6 × 19',
+            'confidence': 'MEDIUM',
+          },
+          {
+            'years': 5,
+            'price_low': 90,
+            'price_high': 200,
+            'price_likely': 999,
+            'basis': 'EPS 8 × 18',
+            'confidence': 'x',
+          },
+          {'years': 0, 'price_low': 1, 'price_high': 2},
+        ],
+      },
     };
 
     test('parses, sorts and sanitises the structured outlook', () {
@@ -361,11 +408,40 @@ void main() {
       expect(o.keyLevels.map((k) => k.price), [90, 120]);
       expect(o.catalysts.map((c) => c.event), ['Gyorsjelentés', 'Befektetői nap', 'Termékbejelentés']);
       expect(o.marketMood, 1);
+      expect(o.mostLikely!.kind, ScenarioKind.base);
+      expect(o.mostLikelyReason, 'A növekedés lassul, de a szorzó kitart.');
+      final lt = o.longTerm!;
+      expect(lt.horizons.map((h) => h.years), [3, 5, 10]); // rendezve, a hibás kiesik
+      expect(lt.horizons.first.priceLow, 95); // felcserélt sáv rendezve
+      expect(lt.horizons.first.confidence, Confidence.medium);
+      expect(lt.horizons[1].priceLikely, isNull); // a sávon kívüli „legvalószínűbb” ár elhagyva
+      expect(lt.horizons[1].confidence, Confidence.low);
+      expect(LongTermHorizon.annualised(100, 200, 5), closeTo(14.87, 0.01));
       expect(r.promptVersion, ClaudeStockAnalyst.promptVersion);
       // Lemezre mentés és visszaolvasás után is megmarad.
       final back = StockReport.fromJson(jsonDecode(jsonEncode(r.toJson())) as Map<String, dynamic>);
       expect(back.outlook!.scenarios.length, 3);
       expect(back.outlook!.marketMoodReason, 'Az AI-narratíva erős.');
+      expect(back.outlook!.longTerm!.horizons.map((h) => h.priceLikely), [115, null, 210]);
+      expect(back.outlook!.mostLikelyReason, isNotEmpty);
+    });
+
+    test('ties go to the base case as the most likely scenario', () {
+      const o = ReportOutlook(
+        scenarios: [
+          Scenario(kind: ScenarioKind.bull, probability: 40),
+          Scenario(kind: ScenarioKind.base, probability: 40),
+          Scenario(kind: ScenarioKind.bear, probability: 20),
+        ],
+      );
+      expect(o.mostLikely!.kind, ScenarioKind.base);
+      const bear = ReportOutlook(
+        scenarios: [
+          Scenario(kind: ScenarioKind.base, probability: 35),
+          Scenario(kind: ScenarioKind.bear, probability: 45),
+        ],
+      );
+      expect(bear.mostLikely!.kind, ScenarioKind.bear);
     });
 
     test('a broken outlook_data does not break the report', () {
@@ -382,6 +458,72 @@ void main() {
       expect(r.sections, isNotEmpty);
     });
 
+    const goodLongTerm = {
+      'summary': 's',
+      'horizons': [
+        {'years': 3, 'price_low': 95, 'price_high': 140, 'price_likely': 115, 'basis': 'b', 'confidence': 'medium'},
+        {'years': 5, 'price_low': 90, 'price_high': 200, 'price_likely': 140, 'basis': 'b', 'confidence': 'low'},
+        {'years': 10, 'price_low': 90, 'price_high': 400, 'price_likely': 210, 'basis': 'b', 'confidence': 'low'},
+      ],
+    };
+
+    test('quality check flags a long-term view that narrows or skips horizons', () {
+      final narrowing = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {
+            'type': 'text',
+            'text': jsonEncode({
+              ...sample,
+              'outlook_data': {
+                ...outlookJson,
+                'most_likely_reason': '',
+                'long_term': {
+                  'summary': 's',
+                  'horizons': [
+                    {
+                      'years': 3,
+                      'price_low': 80,
+                      'price_high': 160,
+                      'price_likely': 120,
+                      'basis': '',
+                      'confidence': 'low',
+                    },
+                    {
+                      'years': 10,
+                      'price_low': 140,
+                      'price_high': 160,
+                      'price_likely': 150,
+                      'basis': 'b',
+                      'confidence': 'low',
+                    },
+                  ],
+                },
+              },
+            }),
+          },
+        ]),
+      );
+      final issues = ReportQuality.check(narrowing).issues.join(' | ');
+      expect(issues, contains('instead of 3, 5, 10'));
+      expect(issues, contains('10-year range is narrower than the 3-year one'));
+      expect(issues, contains('without the arithmetic'));
+      expect(issues, contains('no reason for the most likely scenario'));
+      final none = ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {
+            'type': 'text',
+            'text': jsonEncode({
+              ...sample,
+              'outlook_data': {...outlookJson, 'long_term': null},
+            }),
+          },
+        ]),
+      );
+      expect(ReportQuality.check(none).issues.join(' | '), contains('no long-term view'));
+    });
+
     test('quality check scores a complete report high and flags problems', () {
       final full = <String, dynamic>{
         'headline': 'H',
@@ -394,7 +536,7 @@ void main() {
               'bullets': k == ReportSectionKind.news ? ['2026-10-01: hír', '2026-09-20: másik'] : <String>[],
             },
         ],
-        'outlook_data': outlookJson,
+        'outlook_data': {...outlookJson, 'long_term': goodLongTerm},
         'sources': [
           for (var i = 0; i < 4; i++) {'title': 't$i', 'url': 'https://e.com/$i'},
         ],

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Menekan tombol Option dua kali dengan cepat juga akan memanggil StockLens.",
   "doubleOptionPermission": "Agar berfungsi juga di aplikasi lain, izinkan StockLens di Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, lalu buka kembali aplikasi.",
   "openSystemSettings": "Buka Pengaturan Sistem",
-  "hotkeyHintDoubleOption": "Tekan {shortcut} atau tekan Option dua kali di mana saja untuk memanggil StockLens."
+  "hotkeyHintDoubleOption": "Tekan {shortcut} atau tekan Option dua kali di mana saja untuk memanggil StockLens.",
+  "scenarioMostLikely": "Paling mungkin",
+  "longTermToday": "Hari ini",
+  "longTermYears": "{years, plural, other{{years} tahun}}",
+  "longTermPerYear": "{range} per tahun",
+  "longTermLikely": "paling mungkin {price}",
+  "confidenceLow": "Keyakinan rendah",
+  "confidenceMedium": "Keyakinan sedang",
+  "confidenceHigh": "Keyakinan tinggi",
+  "longTermNote": "Rentang jangka panjang bertumpu pada asumsi yang disebutkan dan melebar seiring waktu. Harga belum termasuk dividen. Perkiraan kasar, bukan ramalan."
 }

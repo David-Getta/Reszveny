@@ -42,9 +42,9 @@ class PlanSpec {
 /// Az elemzés hossza (a kliens `AnalysisDepth`-e): mennyi keretet fogyaszt, és
 /// mekkora token- és webkeresés-korlátot enged a szerver.
 enum Depth {
-  brief(cost: 1, maxTokens: 10000, searchDelta: -2),
-  standard(cost: 1, maxTokens: 16000, searchDelta: 0),
-  deep(cost: 2, maxTokens: 28000, searchDelta: 2);
+  brief(cost: 1, maxTokens: 12000, searchDelta: -2),
+  standard(cost: 1, maxTokens: 18000, searchDelta: 0),
+  deep(cost: 2, maxTokens: 32000, searchDelta: 2);
 
   const Depth({required this.cost, required this.maxTokens, required this.searchDelta});
 

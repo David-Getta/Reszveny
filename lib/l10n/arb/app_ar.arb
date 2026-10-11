@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء StockLens.",
   "doubleOptionPermission": "لكي تعمل هذه الميزة في التطبيقات الأخرى أيضًا، اسمح لـ StockLens من إعدادات النظام ← الخصوصية والأمن ← مراقبة الإدخال، ثم أعد فتح التطبيق.",
   "openSystemSettings": "فتح إعدادات النظام",
-  "hotkeyHintDoubleOption": "اضغط {shortcut} أو اضغط Option مرتين في أي مكان لاستدعاء StockLens."
+  "hotkeyHintDoubleOption": "اضغط {shortcut} أو اضغط Option مرتين في أي مكان لاستدعاء StockLens.",
+  "scenarioMostLikely": "الأرجح",
+  "longTermToday": "اليوم",
+  "longTermYears": "{years, plural, =1{سنة واحدة} =2{سنتان} few{{years} سنوات} many{{years} سنة} other{{years} سنة}}",
+  "longTermPerYear": "{range} سنويًا",
+  "longTermLikely": "الأرجح {price}",
+  "confidenceLow": "ثقة منخفضة",
+  "confidenceMedium": "ثقة متوسطة",
+  "confidenceHigh": "ثقة عالية",
+  "longTermNote": "تستند النطاقات طويلة الأجل إلى الافتراضات المذكورة وتتسع مع مرور الوقت. الأسعار لا تشمل توزيعات الأرباح. تقديرات تقريبية وليست تنبؤات."
 }

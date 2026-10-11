@@ -38,7 +38,7 @@ forráslinkekkel. A modell megkapja a letöltött adatokat, és – ha engedély
 webkereséssel maga is utánanéz a legfrissebb eseményeknek. Az elemzés a felhasználó nyelvén
 készül, és 12 órán át a készüléken tárolódik, hogy ne kelljen újra fizetni érte.
 
-A prompt (v2.2, [`docs/ELEMZES_PROMPT.md`](docs/ELEMZES_PROMPT.md)) kutatási tervet ad a
+A prompt (v2.3, [`docs/ELEMZES_PROMPT.md`](docs/ELEMZES_PROMPT.md)) kutatási tervet ad a
 webkeresésekhez, minden számhoz dátumot és forrást kér, külön kezeli a tényt, a becslést és a
 véleményt, minden fontos tény után megmondja, mit jelent a részvényesnek, és egy hosszú
 ellenőrzőlistán végigmegy a rejtett tényezőkön. A modell megkapja az árfolyam-történetből
@@ -50,7 +50,9 @@ valószínűséggel és ársávval, kulcsszintek, közelgő események) grafikus
 az ágazathoz illő mutatókat nézi (bank, biztosító, REIT, biotech, nyersanyag, szoftver,
 kiskereskedelem), az ársávokat a részvény saját volatilitásához méretezi, az értékelést rövid
 számítással mutatja meg, a cég hazai piacán keres, és ha a válasz nem érvényes JSON, egy olcsó,
-sémához kötött második hívás javítja. A prompt minőségét a `test/eval` éles eval méri (lásd
+sémához kötött második hívás javítja. A v2.3 kiemeli a legvalószínűbb forgatókönyvet az
+indoklásával, és hosszú távú kilátást ad 3, 5 és 10 évre: ársáv, legvalószínűbb ár, a mögötte lévő
+számítás (részvényenkénti eredmény × szorzó) és bizonyosság, legyező-diagramon. A prompt minőségét a `test/eval` éles eval méri (lásd
 `docs/ELEMZES_PROMPT.md`).
 
 Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),

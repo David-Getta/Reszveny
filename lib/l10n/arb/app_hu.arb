@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Az Option gomb kétszeri gyors lenyomása is előhozza a StockLenst.",
   "doubleOptionPermission": "Hogy más appokban is működjön, engedélyezd a StockLenst a Rendszerbeállítások → Adatvédelem és biztonság → Bemenetfigyelés alatt, majd nyisd meg újra az appot.",
   "openSystemSettings": "Rendszerbeállítások megnyitása",
-  "hotkeyHintDoubleOption": "Nyomd le bárhol a {shortcut} billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens."
+  "hotkeyHintDoubleOption": "Nyomd le bárhol a {shortcut} billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a StockLens.",
+  "scenarioMostLikely": "Legvalószínűbb",
+  "longTermToday": "Ma",
+  "longTermYears": "{years, plural, one{1 év} other{{years} év}}",
+  "longTermPerYear": "évi {range}",
+  "longTermLikely": "legvalószínűbb: {price}",
+  "confidenceLow": "Alacsony bizonyosság",
+  "confidenceMedium": "Közepes bizonyosság",
+  "confidenceHigh": "Magas bizonyosság",
+  "longTermNote": "A hosszú távú sávok a megadott feltevéseken alapulnak, és az idővel tágulnak. Az árak osztalék nélkül értendők. Durva becslések, nem előrejelzések."
 }

@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Prémer ràpidament dues vegades la tecla Opció també obre StockLens.",
   "doubleOptionPermission": "Perquè també funcioni en altres apps, permet StockLens a Configuració del Sistema → Privacitat i seguretat → Monitoratge de l’entrada i després torna a obrir l’app.",
   "openSystemSettings": "Obrir Configuració del Sistema",
-  "hotkeyHintDoubleOption": "Prem {shortcut} o dues vegades la tecla Opció des de qualsevol lloc per obrir StockLens."
+  "hotkeyHintDoubleOption": "Prem {shortcut} o dues vegades la tecla Opció des de qualsevol lloc per obrir StockLens.",
+  "scenarioMostLikely": "Més probable",
+  "longTermToday": "Avui",
+  "longTermYears": "{years, plural, one{1 any} other{{years} anys}}",
+  "longTermPerYear": "{range} l'any",
+  "longTermLikely": "més probable: {price}",
+  "confidenceLow": "Confiança baixa",
+  "confidenceMedium": "Confiança mitjana",
+  "confidenceHigh": "Confiança alta",
+  "longTermNote": "Els intervals a llarg termini es basen en els supòsits indicats i s'eixamplen amb el temps. Preus sense dividends. Estimacions aproximades, no prediccions."
 }

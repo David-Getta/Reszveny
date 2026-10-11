@@ -1014,4 +1014,39 @@ class AppLocalizationsNl extends AppLocalizations {
   String hotkeyHintDoubleOption(String shortcut) {
     return 'Druk waar dan ook op $shortcut of twee keer op Option om StockLens te openen.';
   }
+
+  @override
+  String get scenarioMostLikely => 'Meest waarschijnlijk';
+
+  @override
+  String get longTermToday => 'Vandaag';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years jaar', one: '1 jaar');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range per jaar';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'meest waarschijnlijk $price';
+  }
+
+  @override
+  String get confidenceLow => 'Lage zekerheid';
+
+  @override
+  String get confidenceMedium => 'Gemiddelde zekerheid';
+
+  @override
+  String get confidenceHigh => 'Hoge zekerheid';
+
+  @override
+  String get longTermNote =>
+      'Langetermijnbandbreedtes berusten op de genoemde aannames en worden met de tijd breder. Koersen zonder dividend. Ruwe inschattingen, geen voorspellingen.';
 }

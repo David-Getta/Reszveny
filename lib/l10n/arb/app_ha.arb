@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Danna maɓallin Option sau biyu da sauri ma zai kira StockLens.",
   "doubleOptionPermission": "Don ya yi aiki a cikin sauran manhajoji ma, ka ba StockLens izini a Saitunan Tsari → Sirri da Tsaro → Sa Ido kan Shigarwa, sannan ka sake buɗe manhajar.",
   "openSystemSettings": "Buɗe Saitunan Tsari",
-  "hotkeyHintDoubleOption": "Danna {shortcut} ko ka danna Option sau biyu a ko'ina don kiran StockLens."
+  "hotkeyHintDoubleOption": "Danna {shortcut} ko ka danna Option sau biyu a ko'ina don kiran StockLens.",
+  "scenarioMostLikely": "Mafi yiwuwa",
+  "longTermToday": "Yau",
+  "longTermYears": "{years, plural, one{shekara 1} other{shekaru {years}}}",
+  "longTermPerYear": "{range} a shekara",
+  "longTermLikely": "mafi yiwuwa {price}",
+  "confidenceLow": "Ƙarancin tabbaci",
+  "confidenceMedium": "Matsakaicin tabbaci",
+  "confidenceHigh": "Babban tabbaci",
+  "longTermNote": "Kewayon dogon lokaci sun dogara ne kan zato da aka bayyana, kuma suna faɗaɗa da lokaci. Farashin bai haɗa da rabon riba ba. Ƙiyasi ne kawai, ba hasashe ba."
 }

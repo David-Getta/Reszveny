@@ -295,5 +295,14 @@
   "doubleOptionSubtitle": "Pressionar rapidamente a tecla Option duas vezes também abre o StockLens.",
   "doubleOptionPermission": "Para que funcione também fora do StockLens, ative o StockLens em Ajustes do Sistema → Privacidade e Segurança → Monitoração de Entrada e, em seguida, abra-o novamente.",
   "openSystemSettings": "Abrir Ajustes do Sistema",
-  "hotkeyHintDoubleOption": "Pressione {shortcut} ou duas vezes a tecla Option em qualquer lugar para abrir o StockLens."
+  "hotkeyHintDoubleOption": "Pressione {shortcut} ou duas vezes a tecla Option em qualquer lugar para abrir o StockLens.",
+  "scenarioMostLikely": "Mais provável",
+  "longTermToday": "Hoje",
+  "longTermYears": "{years, plural, one{1 ano} other{{years} anos}}",
+  "longTermPerYear": "{range} ao ano",
+  "longTermLikely": "mais provável: {price}",
+  "confidenceLow": "Confiança baixa",
+  "confidenceMedium": "Confiança média",
+  "confidenceHigh": "Confiança alta",
+  "longTermNote": "Os intervalos de longo prazo baseiam-se nas premissas indicadas e alargam-se com o tempo. Preços sem dividendos. Estimativas aproximadas, não previsões."
 }
