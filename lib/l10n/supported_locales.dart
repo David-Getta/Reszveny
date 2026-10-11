@@ -16,7 +16,11 @@ class AppLanguage {
 
 /// Az app által támogatott nyelvek. Az első (angol) az alapértelmezett.
 ///
-/// A sorrend: angol, majd a világ legnagyobb nyelvei, majd Európa nyelvei.
+/// A sorrend: angol, majd a világ legnagyobb nyelvei (beszélők száma szerint),
+/// majd Európa nyelvei. 120 nyelv: a legtöbbet beszélt, saját írott
+/// változattal rendelkező nyelvek; a nyelvjárások és a más írott nyelvet
+/// használó nyelvváltozatok (pl. arab dialektusok, kínai változatok) a
+/// sztenderd nyelvhez tartoznak.
 /// Megjegyzés: a wu kínainak nincs általánosan használt írott formája, ezért
 /// a [resolve] a `wuu` nyelvkódot az egyszerűsített kínaira irányítja; a
 /// kantoni a hongkongi hagyományos írást használja (`zh_Hant_HK`).
@@ -55,6 +59,12 @@ class SupportedLocales {
     AppLanguage(Locale('jv'), 'Basa Jawa', 'Javanese'),
     AppLanguage(Locale('ha'), 'Hausa', 'Hausa'),
     AppLanguage(Locale('sw'), 'Kiswahili', 'Swahili'),
+    AppLanguage(Locale('pa'), 'ਪੰਜਾਬੀ', 'Punjabi'),
+    AppLanguage(Locale('gu'), 'ગુજરાતી', 'Gujarati'),
+    AppLanguage(Locale('th'), 'ไทย', 'Thai'),
+    AppLanguage(Locale('mg'), 'Malagasy', 'Malagasy'),
+    AppLanguage(Locale('he'), 'עברית', 'Hebrew'),
+    AppLanguage(Locale('hil'), 'Hiligaynon', 'Hiligaynon'),
     AppLanguage(Locale('hu'), 'Magyar', 'Hungarian'),
     AppLanguage(Locale('it'), 'Italiano', 'Italian'),
     AppLanguage(Locale('pl'), 'Polski', 'Polish'),
@@ -78,6 +88,12 @@ class SupportedLocales {
 
   static List<Locale> get locales => all.map((l) => l.locale).toList();
 
+  /// Jobbról balra író nyelvek. A Flutter beépített listájából hiányzik az
+  /// ujgur és a szoráni kurd, a szindhinek pedig nincs beépített szövege.
+  static const Set<String> rtlLanguages = {'ar', 'fa', 'he', 'ps', 'sd', 'ur', 'ug', 'ckb'};
+
+  static bool isRtl(Locale locale) => rtlLanguages.contains(locale.languageCode);
+
   /// Nyelvkódok, amiket egy támogatott nyelvre képezünk le.
   static const Map<String, Locale> _aliases = {
     'wuu': Locale('zh'),
@@ -86,7 +102,19 @@ class SupportedLocales {
     'no': Locale('nb'),
     'nn': Locale('nb'),
     'in': Locale('id'),
-    'iw': Locale('en'),
+    'iw': Locale('he'),
+    'zsm': Locale('ms'),
+    'uzn': Locale('uz'),
+    'kmr': Locale('ku'),
+    'tw': Locale('ak'),
+    'twi': Locale('ak'),
+    'fuc': Locale('ff'),
+    'fuv': Locale('ff'),
+    // Az arab írású pandzsábit és szaraikit olvasók az urdut olvassák;
+    // a dél-azerbajdzsáni (iráni) beszélők a perzsát.
+    'pnb': Locale('ur'),
+    'skr': Locale('ur'),
+    'azb': Locale('fa'),
   };
 
   /// A rendszer nyelvéből kiválasztja a legjobban illő támogatott nyelvet.

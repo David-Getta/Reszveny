@@ -771,7 +771,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'ఫోటో గుర్తింపు, లైవ్ డేటా, చార్ట్‌లు, ఇష్టమైనవి మరియు మొత్తం 44 భాషలు ప్రతి ప్లాన్‌లో ఉంటాయి. కోటా AI విశ్లేషణలకు వర్తిస్తుంది.';
+      'ఫోటో గుర్తింపు, లైవ్ డేటా, చార్ట్‌లు, ఇష్టమైనవి మరియు మొత్తం 120 భాషలు ప్రతి ప్లాన్‌లో ఉంటాయి. కోటా AI విశ్లేషణలకు వర్తిస్తుంది.';
 
   @override
   String get searchLanguages => 'భాషలను వెతకండి…';

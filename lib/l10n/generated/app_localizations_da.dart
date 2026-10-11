@@ -770,7 +770,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Fotogenkendelse, livedata, diagrammer, favoritter og alle 44 sprog er inkluderet i alle planer. Kvoten dækker AI-analyser.';
+      'Fotogenkendelse, livedata, diagrammer, favoritter og alle 120 sprog er inkluderet i alle planer. Kvoten dækker AI-analyser.';
 
   @override
   String get searchLanguages => 'Søg efter sprog…';

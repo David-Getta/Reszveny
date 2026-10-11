@@ -756,7 +756,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bestValue => '最超值';
 
   @override
-  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 44 种语言。配额仅用于 AI 分析。';
+  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 120 种语言。配额仅用于 AI 分析。';
 
   @override
   String get searchLanguages => '搜索语言…';
@@ -1968,7 +1968,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get bestValue => '最抵用';
 
   @override
-  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 44 種語言。配額只用於 AI 分析。';
+  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 120 種語言。配額只用於 AI 分析。';
 
   @override
   String get searchLanguages => '搜尋語言…';

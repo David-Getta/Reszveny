@@ -770,7 +770,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Fotoigenkänning, realtidsdata, diagram, favoriter och alla 44 språk ingår i varje plan. Kvoten gäller AI-analyser.';
+      'Fotoigenkänning, realtidsdata, diagram, favoriter och alla 120 språk ingår i varje plan. Kvoten gäller AI-analyser.';
 
   @override
   String get searchLanguages => 'Sök språk…';

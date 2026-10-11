@@ -770,7 +770,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Bildegjenkjenning, sanntidsdata, diagrammer, favoritter og alle 44 språk er inkludert i alle planer. Kvoten gjelder AI-analyser.';
+      'Bildegjenkjenning, sanntidsdata, diagrammer, favoritter og alle 120 språk er inkludert i alle planer. Kvoten gjelder AI-analyser.';
 
   @override
   String get searchLanguages => 'Søk etter språk…';

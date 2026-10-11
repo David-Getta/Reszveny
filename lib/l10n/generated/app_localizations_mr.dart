@@ -769,7 +769,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'फोटो ओळख, लाइव्ह डेटा, चार्ट, आवडते आणि सर्व 44 भाषा प्रत्येक प्लॅनमध्ये समाविष्ट आहेत. कोटा AI विश्लेषणांसाठी लागू होतो.';
+      'फोटो ओळख, लाइव्ह डेटा, चार्ट, आवडते आणि सर्व 120 भाषा प्रत्येक प्लॅनमध्ये समाविष्ट आहेत. कोटा AI विश्लेषणांसाठी लागू होतो.';
 
   @override
   String get searchLanguages => 'भाषा शोधा…';

@@ -769,7 +769,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'फ़ोटो पहचान, लाइव डेटा, चार्ट, पसंदीदा और सभी 44 भाषाएँ हर प्लान में शामिल हैं। कोटा AI विश्लेषणों पर लागू होता है।';
+      'फ़ोटो पहचान, लाइव डेटा, चार्ट, पसंदीदा और सभी 120 भाषाएँ हर प्लान में शामिल हैं। कोटा AI विश्लेषणों पर लागू होता है।';
 
   @override
   String get searchLanguages => 'भाषाएँ खोजें…';

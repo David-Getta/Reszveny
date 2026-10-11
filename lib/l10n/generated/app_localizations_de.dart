@@ -772,7 +772,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Fotoerkennung, Live-Daten, Charts, Favoriten und alle 44 Sprachen sind in jedem Tarif enthalten. Das Kontingent gilt für KI-Analysen.';
+      'Fotoerkennung, Live-Daten, Charts, Favoriten und alle 120 Sprachen sind in jedem Tarif enthalten. Das Kontingent gilt für KI-Analysen.';
 
   @override
   String get searchLanguages => 'Sprachen suchen…';

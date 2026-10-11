@@ -19,8 +19,11 @@ import 'app_localizations_fa.dart';
 import 'app_localizations_fi.dart';
 import 'app_localizations_fil.dart';
 import 'app_localizations_fr.dart';
+import 'app_localizations_gu.dart';
 import 'app_localizations_ha.dart';
+import 'app_localizations_he.dart';
 import 'app_localizations_hi.dart';
+import 'app_localizations_hil.dart';
 import 'app_localizations_hr.dart';
 import 'app_localizations_hu.dart';
 import 'app_localizations_id.dart';
@@ -29,9 +32,11 @@ import 'app_localizations_ja.dart';
 import 'app_localizations_jv.dart';
 import 'app_localizations_ko.dart';
 import 'app_localizations_lt.dart';
+import 'app_localizations_mg.dart';
 import 'app_localizations_mr.dart';
 import 'app_localizations_nb.dart';
 import 'app_localizations_nl.dart';
+import 'app_localizations_pa.dart';
 import 'app_localizations_pl.dart';
 import 'app_localizations_pt.dart';
 import 'app_localizations_ro.dart';
@@ -43,6 +48,7 @@ import 'app_localizations_sv.dart';
 import 'app_localizations_sw.dart';
 import 'app_localizations_ta.dart';
 import 'app_localizations_te.dart';
+import 'app_localizations_th.dart';
 import 'app_localizations_tr.dart';
 import 'app_localizations_uk.dart';
 import 'app_localizations_ur.dart';
@@ -59,7 +65,7 @@ import 'app_localizations_zh.dart';
 /// `supportedLocales` list. For example:
 ///
 /// ```dart
-/// import 'generated/app_localizations.dart';
+/// import 'out/app_localizations.dart';
 ///
 /// return MaterialApp(
 ///   localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -146,8 +152,11 @@ abstract class AppLocalizations {
     Locale('fi'),
     Locale('fil'),
     Locale('fr'),
+    Locale('gu'),
     Locale('ha'),
+    Locale('he'),
     Locale('hi'),
+    Locale('hil'),
     Locale('hr'),
     Locale('hu'),
     Locale('id'),
@@ -156,9 +165,11 @@ abstract class AppLocalizations {
     Locale('jv'),
     Locale('ko'),
     Locale('lt'),
+    Locale('mg'),
     Locale('mr'),
     Locale('nb'),
     Locale('nl'),
+    Locale('pa'),
     Locale('pl'),
     Locale('pt'),
     Locale('ro'),
@@ -170,6 +181,7 @@ abstract class AppLocalizations {
     Locale('sw'),
     Locale('ta'),
     Locale('te'),
+    Locale('th'),
     Locale('tr'),
     Locale('uk'),
     Locale('ur'),
@@ -1561,7 +1573,7 @@ abstract class AppLocalizations {
   /// No description provided for @planFeaturesCommon.
   ///
   /// In en, this message translates to:
-  /// **'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.'**
+  /// **'Photo recognition, live data, charts, favorites and all 120 languages are included in every plan. The allowance covers AI analyses.'**
   String get planFeaturesCommon;
 
   /// No description provided for @searchLanguages.
@@ -2381,8 +2393,11 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'fi',
     'fil',
     'fr',
+    'gu',
     'ha',
+    'he',
     'hi',
+    'hil',
     'hr',
     'hu',
     'id',
@@ -2391,9 +2406,11 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'jv',
     'ko',
     'lt',
+    'mg',
     'mr',
     'nb',
     'nl',
+    'pa',
     'pl',
     'pt',
     'ro',
@@ -2405,6 +2422,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'sw',
     'ta',
     'te',
+    'th',
     'tr',
     'uk',
     'ur',
@@ -2453,10 +2471,16 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsFil();
     case 'fr':
       return AppLocalizationsFr();
+    case 'gu':
+      return AppLocalizationsGu();
     case 'ha':
       return AppLocalizationsHa();
+    case 'he':
+      return AppLocalizationsHe();
     case 'hi':
       return AppLocalizationsHi();
+    case 'hil':
+      return AppLocalizationsHil();
     case 'hr':
       return AppLocalizationsHr();
     case 'hu':
@@ -2473,12 +2497,16 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsKo();
     case 'lt':
       return AppLocalizationsLt();
+    case 'mg':
+      return AppLocalizationsMg();
     case 'mr':
       return AppLocalizationsMr();
     case 'nb':
       return AppLocalizationsNb();
     case 'nl':
       return AppLocalizationsNl();
+    case 'pa':
+      return AppLocalizationsPa();
     case 'pl':
       return AppLocalizationsPl();
     case 'pt':
@@ -2501,6 +2529,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsTa();
     case 'te':
       return AppLocalizationsTe();
+    case 'th':
+      return AppLocalizationsTh();
     case 'tr':
       return AppLocalizationsTr();
     case 'uk':

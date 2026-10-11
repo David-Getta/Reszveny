@@ -772,7 +772,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'O reconhecimento de fotos, os dados em tempo real, os gráficos, os favoritos e os 44 idiomas estão incluídos em todos os planos. A quota cobre as análises com IA.';
+      'O reconhecimento de fotos, os dados em tempo real, os gráficos, os favoritos e os 120 idiomas estão incluídos em todos os planos. A quota cobre as análises com IA.';
 
   @override
   String get searchLanguages => 'Pesquisar idiomas…';

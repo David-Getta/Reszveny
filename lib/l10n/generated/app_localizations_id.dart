@@ -771,7 +771,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Pengenalan foto, data langsung, grafik, favorit, dan semua 44 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.';
+      'Pengenalan foto, data langsung, grafik, favorit, dan semua 120 bahasa termasuk dalam setiap paket. Kuota berlaku untuk analisis AI.';
 
   @override
   String get searchLanguages => 'Cari bahasa…';

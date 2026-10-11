@@ -770,7 +770,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'A fotófelismerés, az élő adatok, a grafikonok, a kedvencek és mind a 44 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik.';
+      'A fotófelismerés, az élő adatok, a grafikonok, a kedvencek és mind a 120 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik.';
 
   @override
   String get searchLanguages => 'Nyelv keresése…';

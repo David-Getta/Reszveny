@@ -771,7 +771,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'ছবি শনাক্তকরণ, লাইভ ডেটা, চার্ট, পছন্দের তালিকা এবং সব 44টি ভাষা প্রতিটি প্ল্যানে অন্তর্ভুক্ত। কোটা AI বিশ্লেষণের জন্য প্রযোজ্য।';
+      'ছবি শনাক্তকরণ, লাইভ ডেটা, চার্ট, পছন্দের তালিকা এবং সব 120টি ভাষা প্রতিটি প্ল্যানে অন্তর্ভুক্ত। কোটা AI বিশ্লেষণের জন্য প্রযোজ্য।';
 
   @override
   String get searchLanguages => 'ভাষা খুঁজুন…';

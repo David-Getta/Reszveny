@@ -770,7 +770,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Fotoherkenning, live gegevens, grafieken, favorieten en alle 44 talen zijn bij elk abonnement inbegrepen. Het tegoed geldt voor AI-analyses.';
+      'Fotoherkenning, live gegevens, grafieken, favorieten en alle 120 talen zijn bij elk abonnement inbegrepen. Het tegoed geldt voor AI-analyses.';
 
   @override
   String get searchLanguages => 'Talen zoeken…';

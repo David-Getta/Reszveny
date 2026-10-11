@@ -772,7 +772,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Pangenalan foto, data langsung, grafik, favorit, lan kabeh 44 basa kalebu ing saben paket. Kuota ditrapake kanggo analisis AI.';
+      'Pangenalan foto, data langsung, grafik, favorit, lan kabeh 120 basa kalebu ing saben paket. Kuota ditrapake kanggo analisis AI.';
 
   @override
   String get searchLanguages => 'Golek basa…';

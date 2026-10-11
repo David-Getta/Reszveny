@@ -798,7 +798,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Prepoznavanje fotografija, podaci u stvarnom vremenu, grafikoni, favoriti i sva 44 jezika uključeni su u svaki plan. Kvota se odnosi na AI analize.';
+      'Prepoznavanje fotografija, podaci u stvarnom vremenu, grafikoni, favoriti i sva 120 jezika uključeni su u svaki plan. Kvota se odnosi na AI analize.';
 
   @override
   String get searchLanguages => 'Pretraži jezike…';

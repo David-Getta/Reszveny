@@ -805,7 +805,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 44 języki są dostępne w każdym planie. Limit dotyczy analiz AI.';
+      'Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 120 języki są dostępne w każdym planie. Limit dotyczy analiz AI.';
 
   @override
   String get searchLanguages => 'Szukaj języków…';

@@ -756,7 +756,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get bestValue => '最もお得';
 
   @override
-  String get planFeaturesCommon => '写真認識、ライブデータ、チャート、お気に入り、44 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
+  String get planFeaturesCommon => '写真認識、ライブデータ、チャート、お気に入り、120 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
 
   @override
   String get searchLanguages => '言語を検索…';

@@ -776,7 +776,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 44 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI.';
+      'Nhận diện ảnh, dữ liệu trực tiếp, biểu đồ, yêu thích và toàn bộ 120 ngôn ngữ đều có trong mọi gói. Hạn mức áp dụng cho các lượt phân tích AI.';
 
   @override
   String get searchLanguages => 'Tìm ngôn ngữ…';
