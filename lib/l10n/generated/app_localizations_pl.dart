@@ -1100,4 +1100,79 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get longTermNote =>
       'Przedziały długoterminowe opierają się na podanych założeniach i z czasem się poszerzają. Ceny bez dywidend. Zgrubne szacunki, nie prognozy.';
+
+  @override
+  String get portfolio => 'Portfel';
+
+  @override
+  String get portfolioEmpty => 'Na razie pusto. Otwórz akcję i dotknij „Dodaj do portfela”, aby śledzić swoje walory.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Zapisywane tylko na tym urządzeniu. Sumy są przeliczane po kursach referencyjnych EBC; ceny mogą być opóźnione.';
+
+  @override
+  String get addToPortfolio => 'Dodaj do portfela';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Dodaj $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Liczba akcji';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Cena za akcję ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data zakupu';
+
+  @override
+  String get portfolioAdd => 'Dodaj';
+
+  @override
+  String get portfolioInvalidNumber => 'Wpisz liczbę większą od zera.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Dodano $symbol do portfela.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Wartość łączna';
+
+  @override
+  String get portfolioToday => 'Dziś';
+
+  @override
+  String get portfolioGainLoss => 'Zysk/strata';
+
+  @override
+  String get portfolioInvested => 'Zainwestowano';
+
+  @override
+  String get portfolioAllocation => 'Struktura';
+
+  @override
+  String get portfolioPositions => 'Pozycje';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'śr. cena zakupu $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Twoja pozycja';
+
+  @override
+  String get portfolioPurchases => 'Zakupy';
+
+  @override
+  String get portfolioRemove => 'Usuń';
+
+  @override
+  String get portfolioExcluded => 'Pozycje bez ceny lub kursu walut nie są wliczane do sum.';
 }

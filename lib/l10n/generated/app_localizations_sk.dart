@@ -1096,4 +1096,80 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get longTermNote =>
       'Dlhodobé pásma vychádzajú z uvedených predpokladov a s časom sa rozširujú. Ceny bez dividend. Hrubé odhady, nie predpovede.';
+
+  @override
+  String get portfolio => 'Portfólio';
+
+  @override
+  String get portfolioEmpty =>
+      'Zatiaľ prázdne. Otvorte akciu a ťuknite na „Pridať do portfólia“, aby ste mohli sledovať, čo vlastníte.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Ukladá sa iba v tomto zariadení. Súčty sa prepočítavajú referenčnými kurzami ECB; ceny môžu byť oneskorené.';
+
+  @override
+  String get addToPortfolio => 'Pridať do portfólia';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Pridať $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Počet akcií';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Cena za akciu ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Dátum nákupu';
+
+  @override
+  String get portfolioAdd => 'Pridať';
+
+  @override
+  String get portfolioInvalidNumber => 'Zadajte číslo väčšie ako nula.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol bola pridaná do portfólia.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Celková hodnota';
+
+  @override
+  String get portfolioToday => 'Dnes';
+
+  @override
+  String get portfolioGainLoss => 'Zisk/strata';
+
+  @override
+  String get portfolioInvested => 'Investované';
+
+  @override
+  String get portfolioAllocation => 'Rozloženie';
+
+  @override
+  String get portfolioPositions => 'Pozície';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'priem. nákupná cena $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Vaša pozícia';
+
+  @override
+  String get portfolioPurchases => 'Nákupy';
+
+  @override
+  String get portfolioRemove => 'Odstrániť';
+
+  @override
+  String get portfolioExcluded => 'Pozície bez ceny alebo výmenného kurzu nie sú zahrnuté v súčtoch.';
 }

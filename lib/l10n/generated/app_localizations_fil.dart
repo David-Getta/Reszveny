@@ -1057,4 +1057,80 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get longTermNote =>
       'Ang mga pangmatagalang saklaw ay nakabatay sa mga nakasaad na palagay at lumalawak habang tumatagal. Hindi kasama ang dibidendo sa presyo. Magaspang na pagtataya, hindi hula.';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Wala pang laman. Magbukas ng stock at i-tap ang “Idagdag sa portfolio” para masubaybayan ang pag-aari mo.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Sa device na ito lang naka-save. Kino-convert ang mga kabuuan gamit ang mga reference rate ng ECB; maaaring naantala ang mga presyo.';
+
+  @override
+  String get addToPortfolio => 'Idagdag sa portfolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Idagdag ang $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Bilang ng share';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Presyo bawat share ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Petsa ng pagbili';
+
+  @override
+  String get portfolioAdd => 'Idagdag';
+
+  @override
+  String get portfolioInvalidNumber => 'Maglagay ng numerong higit sa zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Naidagdag ang $symbol sa portfolio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Kabuuang halaga';
+
+  @override
+  String get portfolioToday => 'Ngayon';
+
+  @override
+  String get portfolioGainLoss => 'Tubo/lugi';
+
+  @override
+  String get portfolioInvested => 'Naipuhunan';
+
+  @override
+  String get portfolioAllocation => 'Hatian';
+
+  @override
+  String get portfolioPositions => 'Mga posisyon';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'avg. na halaga $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ang posisyon mo';
+
+  @override
+  String get portfolioPurchases => 'Mga pagbili';
+
+  @override
+  String get portfolioRemove => 'Alisin';
+
+  @override
+  String get portfolioExcluded => 'Hindi kasama sa mga kabuuan ang mga posisyong walang presyo o exchange rate.';
 }

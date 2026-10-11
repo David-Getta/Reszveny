@@ -1049,4 +1049,80 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get longTermNote =>
       'Viwango vya muda mrefu vinategemea dhana zilizotajwa na hupanuka kadiri muda unavyopita. Bei hazijumuishi gawio. Makadirio ya jumla, si utabiri.';
+
+  @override
+  String get portfolio => 'Jalada la hisa';
+
+  @override
+  String get portfolioEmpty =>
+      'Bado hakuna kitu. Fungua hisa na ugusa “Ongeza kwenye jalada” ili kufuatilia unachomiliki.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Huhifadhiwa kwenye kifaa hiki pekee. Jumla hubadilishwa kwa viwango vya marejeleo vya ECB; bei zinaweza kuchelewa.';
+
+  @override
+  String get addToPortfolio => 'Ongeza kwenye jalada';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Ongeza $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Idadi ya hisa';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Bei kwa kila hisa ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Tarehe ya kununua';
+
+  @override
+  String get portfolioAdd => 'Ongeza';
+
+  @override
+  String get portfolioInvalidNumber => 'Weka nambari kubwa kuliko sifuri.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol imeongezwa kwenye jalada.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Thamani ya jumla';
+
+  @override
+  String get portfolioToday => 'Leo';
+
+  @override
+  String get portfolioGainLoss => 'Faida/hasara';
+
+  @override
+  String get portfolioInvested => 'Kilichowekezwa';
+
+  @override
+  String get portfolioAllocation => 'Mgawanyo';
+
+  @override
+  String get portfolioPositions => 'Nafasi';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'gharama ya wastani $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Nafasi yako';
+
+  @override
+  String get portfolioPurchases => 'Manunuzi';
+
+  @override
+  String get portfolioRemove => 'Ondoa';
+
+  @override
+  String get portfolioExcluded => 'Nafasi zisizo na bei au kiwango cha ubadilishaji hazijumuishwi kwenye jumla.';
 }

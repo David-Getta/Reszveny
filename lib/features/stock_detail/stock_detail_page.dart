@@ -11,6 +11,8 @@ import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../portfolio/add_lot_dialog.dart';
+import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
 import 'widgets/converted_price.dart';
@@ -42,6 +44,27 @@ class _StockDetailPageState extends State<StockDetailPage> {
 
   Future<StockDetails> _fetch() => AppServices.of(context).marketData.details(widget.candidate.symbol);
 
+  /// Vétel rögzítése a betöltött árral és pénznemmel (ha még tölt, megvárja).
+  Future<void> _addToPortfolio() async {
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    StockDetails? d;
+    try {
+      d = await _future;
+    } catch (_) {
+      // Ár nélkül is felvehető, kézzel megadott árral.
+    }
+    if (!mounted) return;
+    final symbol = widget.candidate.symbol.toUpperCase();
+    final added = await showAddLotDialog(
+      context,
+      symbol: symbol,
+      currency: d?.currency ?? 'USD',
+      currentPrice: d?.quote?.price,
+    );
+    if (added) messenger.showSnackBar(SnackBar(content: Text(l10n.portfolioAdded(symbol))));
+  }
+
   Future<void> _refresh() {
     final f = _fetch();
     setState(() => _future = f);
@@ -57,6 +80,11 @@ class _StockDetailPageState extends State<StockDetailPage> {
         title: Text(widget.candidate.symbol),
         hasSidebar: MediaQuery.sizeOf(context).width >= 860,
         actions: [
+          IconButton(
+            tooltip: l10n.addToPortfolio,
+            icon: const Icon(Icons.add_chart_rounded),
+            onPressed: _addToPortfolio,
+          ),
           _FavoriteButton(symbol: widget.candidate.symbol),
           const SizedBox(width: 4),
         ],
@@ -168,6 +196,9 @@ class _DetailsBody extends StatelessWidget {
           ],
         ),
       ),
+
+      // Saját pozíció (ha a részvény a portfólióban van)
+      PositionCard(details: d),
 
       // AI-elemzés
       AnalysisCard(details: d),

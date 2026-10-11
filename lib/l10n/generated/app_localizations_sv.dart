@@ -1049,4 +1049,80 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get longTermNote =>
       'De långsiktiga intervallen bygger på de angivna antagandena och vidgas med tiden. Kurser exklusive utdelning. Grova bedömningar, inte prognoser.';
+
+  @override
+  String get portfolio => 'Portfölj';
+
+  @override
+  String get portfolioEmpty =>
+      'Inget här ännu. Öppna en aktie och tryck på ”Lägg till i portföljen” för att följa ditt innehav.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Sparas bara på den här enheten. Summorna räknas om till ECB:s referenskurser; kurserna kan vara fördröjda.';
+
+  @override
+  String get addToPortfolio => 'Lägg till i portföljen';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Lägg till $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Antal aktier';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Pris per aktie ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Köpdatum';
+
+  @override
+  String get portfolioAdd => 'Lägg till';
+
+  @override
+  String get portfolioInvalidNumber => 'Ange ett tal större än noll.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol har lagts till i portföljen.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Totalt värde';
+
+  @override
+  String get portfolioToday => 'I dag';
+
+  @override
+  String get portfolioGainLoss => 'Vinst/förlust';
+
+  @override
+  String get portfolioInvested => 'Investerat';
+
+  @override
+  String get portfolioAllocation => 'Fördelning';
+
+  @override
+  String get portfolioPositions => 'Innehav';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'snittkurs $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ditt innehav';
+
+  @override
+  String get portfolioPurchases => 'Köp';
+
+  @override
+  String get portfolioRemove => 'Ta bort';
+
+  @override
+  String get portfolioExcluded => 'Innehav utan kurs eller växelkurs räknas inte med i summorna.';
 }

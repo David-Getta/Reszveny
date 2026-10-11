@@ -1051,4 +1051,80 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get longTermNote =>
       'Os intervalos de longo prazo baseiam-se nas premissas indicadas e alargam-se com o tempo. Preços sem dividendos. Estimativas aproximadas, não previsões.';
+
+  @override
+  String get portfolio => 'Carteira';
+
+  @override
+  String get portfolioEmpty =>
+      'Ainda está vazia. Abra uma ação e toque em “Adicionar à carteira” para acompanhar o que tem.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Guardado apenas neste dispositivo. Os totais são convertidos às taxas de referência do BCE; os preços podem ter atraso.';
+
+  @override
+  String get addToPortfolio => 'Adicionar à carteira';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Adicionar $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Número de ações';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Preço por ação ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Data de compra';
+
+  @override
+  String get portfolioAdd => 'Adicionar';
+
+  @override
+  String get portfolioInvalidNumber => 'Introduza um número maior que zero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol foi adicionado à carteira.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Valor total';
+
+  @override
+  String get portfolioToday => 'Hoje';
+
+  @override
+  String get portfolioGainLoss => 'Ganho/perda';
+
+  @override
+  String get portfolioInvested => 'Investido';
+
+  @override
+  String get portfolioAllocation => 'Distribuição';
+
+  @override
+  String get portfolioPositions => 'Posições';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'custo médio $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'A sua posição';
+
+  @override
+  String get portfolioPurchases => 'Compras';
+
+  @override
+  String get portfolioRemove => 'Remover';
+
+  @override
+  String get portfolioExcluded => 'As posições sem preço ou taxa de câmbio ficam fora dos totais.';
 }

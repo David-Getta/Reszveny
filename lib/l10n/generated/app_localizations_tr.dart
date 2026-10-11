@@ -1046,4 +1046,80 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get longTermNote =>
       'Uzun vadeli aralıklar belirtilen varsayımlara dayanır ve zamanla genişler. Fiyatlara temettüler dahil değildir. Kaba tahminlerdir, öngörü değildir.';
+
+  @override
+  String get portfolio => 'Portföy';
+
+  @override
+  String get portfolioEmpty =>
+      'Henüz boş. Bir hisse açın ve sahip olduklarınızı izlemek için “Portföye ekle”ye dokunun.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Yalnızca bu cihazda saklanır. Toplamlar ECB referans kurlarıyla çevrilir; fiyatlar gecikmeli olabilir.';
+
+  @override
+  String get addToPortfolio => 'Portföye ekle';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol ekle';
+  }
+
+  @override
+  String get portfolioQuantity => 'Hisse adedi';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Hisse başına fiyat ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Alış tarihi';
+
+  @override
+  String get portfolioAdd => 'Ekle';
+
+  @override
+  String get portfolioInvalidNumber => 'Sıfırdan büyük bir sayı girin.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol portföye eklendi.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Toplam değer';
+
+  @override
+  String get portfolioToday => 'Bugün';
+
+  @override
+  String get portfolioGainLoss => 'Kâr/zarar';
+
+  @override
+  String get portfolioInvested => 'Yatırılan';
+
+  @override
+  String get portfolioAllocation => 'Dağılım';
+
+  @override
+  String get portfolioPositions => 'Pozisyonlar';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'ort. maliyet $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Pozisyonunuz';
+
+  @override
+  String get portfolioPurchases => 'Alışlar';
+
+  @override
+  String get portfolioRemove => 'Kaldır';
+
+  @override
+  String get portfolioExcluded => 'Fiyatı veya döviz kuru olmayan pozisyonlar toplamlara dahil edilmez.';
 }

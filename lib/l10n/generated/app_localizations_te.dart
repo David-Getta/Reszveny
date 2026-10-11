@@ -1050,4 +1050,80 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get longTermNote =>
       'దీర్ఘకాలిక పరిధులు పేర్కొన్న అంచనాలపై ఆధారపడి ఉంటాయి మరియు కాలంతో పాటు విస్తరిస్తాయి. ధరల్లో డివిడెండ్లు చేర్చలేదు. స్థూల అంచనాలు, భవిష్యవాణులు కావు.';
+
+  @override
+  String get portfolio => 'పోర్ట్‌ఫోలియో';
+
+  @override
+  String get portfolioEmpty =>
+      'ఇంకా ఏమీ లేదు. ఒక స్టాక్‌ను తెరిచి, మీ వద్ద ఉన్నవాటిని అనుసరించడానికి “పోర్ట్‌ఫోలియోకు జోడించు” నొక్కండి.';
+
+  @override
+  String get portfolioLocalNote =>
+      'ఈ పరికరంలో మాత్రమే నిల్వ అవుతుంది. మొత్తాలు ECB రిఫరెన్స్ రేట్లతో మార్చబడతాయి; ధరలు ఆలస్యంగా ఉండవచ్చు.';
+
+  @override
+  String get addToPortfolio => 'పోర్ట్‌ఫోలియోకు జోడించు';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol జోడించు';
+  }
+
+  @override
+  String get portfolioQuantity => 'షేర్ల సంఖ్య';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'ఒక్కో షేరు ధర ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'కొనుగోలు తేదీ';
+
+  @override
+  String get portfolioAdd => 'జోడించు';
+
+  @override
+  String get portfolioInvalidNumber => 'సున్నా కంటే పెద్ద సంఖ్యను నమోదు చేయండి.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol పోర్ట్‌ఫోలియోకు జోడించబడింది.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'మొత్తం విలువ';
+
+  @override
+  String get portfolioToday => 'ఈ రోజు';
+
+  @override
+  String get portfolioGainLoss => 'లాభం/నష్టం';
+
+  @override
+  String get portfolioInvested => 'పెట్టుబడి';
+
+  @override
+  String get portfolioAllocation => 'కేటాయింపు';
+
+  @override
+  String get portfolioPositions => 'పొజిషన్లు';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'సగటు ధర $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'మీ పొజిషన్';
+
+  @override
+  String get portfolioPurchases => 'కొనుగోళ్లు';
+
+  @override
+  String get portfolioRemove => 'తీసివేయి';
+
+  @override
+  String get portfolioExcluded => 'ధర లేదా మారకపు రేటు లేని పొజిషన్లు మొత్తాల్లో చేర్చబడవు.';
 }

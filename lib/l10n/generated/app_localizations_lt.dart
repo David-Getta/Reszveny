@@ -1098,4 +1098,80 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get longTermNote =>
       'Ilgalaikiai intervalai remiasi nurodytomis prielaidomis ir laikui bėgant platėja. Kainos be dividendų. Apytiksliai vertinimai, ne prognozės.';
+
+  @override
+  String get portfolio => 'Portfelis';
+
+  @override
+  String get portfolioEmpty =>
+      'Kol kas tuščia. Atidarykite akciją ir bakstelėkite „Pridėti į portfelį“, kad stebėtumėte, ką turite.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Saugoma tik šiame įrenginyje. Sumos perskaičiuojamos ECB orientaciniais kursais; kainos gali vėluoti.';
+
+  @override
+  String get addToPortfolio => 'Pridėti į portfelį';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Pridėti $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Akcijų skaičius';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Akcijos kaina ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Pirkimo data';
+
+  @override
+  String get portfolioAdd => 'Pridėti';
+
+  @override
+  String get portfolioInvalidNumber => 'Įveskite už nulį didesnį skaičių.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol pridėta į portfelį.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Bendra vertė';
+
+  @override
+  String get portfolioToday => 'Šiandien';
+
+  @override
+  String get portfolioGainLoss => 'Pelnas/nuostolis';
+
+  @override
+  String get portfolioInvested => 'Investuota';
+
+  @override
+  String get portfolioAllocation => 'Paskirstymas';
+
+  @override
+  String get portfolioPositions => 'Pozicijos';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'vid. pirkimo kaina $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Jūsų pozicija';
+
+  @override
+  String get portfolioPurchases => 'Pirkimai';
+
+  @override
+  String get portfolioRemove => 'Pašalinti';
+
+  @override
+  String get portfolioExcluded => 'Pozicijos be kainos ar valiutos kurso į sumas neįtraukiamos.';
 }

@@ -623,5 +623,59 @@
   "confidenceLow": "Low confidence",
   "confidenceMedium": "Medium confidence",
   "confidenceHigh": "High confidence",
-  "longTermNote": "Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions."
+  "longTermNote": "Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions.",
+  "portfolio": "Portfolio",
+  "portfolioEmpty": "Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.",
+  "portfolioLocalNote": "Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.",
+  "addToPortfolio": "Add to portfolio",
+  "portfolioAddTitle": "Add {symbol}",
+  "@portfolioAddTitle": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioQuantity": "Number of shares",
+  "portfolioBuyPrice": "Price per share ({currency})",
+  "@portfolioBuyPrice": {
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioBuyDate": "Purchase date",
+  "portfolioAdd": "Add",
+  "portfolioInvalidNumber": "Enter a number greater than zero.",
+  "portfolioAdded": "{symbol} added to your portfolio.",
+  "@portfolioAdded": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioTotalValue": "Total value",
+  "portfolioToday": "Today",
+  "@portfolioToday": {
+    "description": "Today's change in value of the portfolio or position."
+  },
+  "portfolioGainLoss": "Gain/loss",
+  "portfolioInvested": "Invested",
+  "portfolioAllocation": "Allocation",
+  "portfolioPositions": "Positions",
+  "portfolioAvgCost": "avg. cost {price}",
+  "@portfolioAvgCost": {
+    "description": "Average purchase price of a position, e.g. \"avg. cost 150.00\".",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioYourPosition": "Your position",
+  "portfolioPurchases": "Purchases",
+  "portfolioRemove": "Remove",
+  "portfolioExcluded": "Positions without a price or exchange rate are left out of the totals."
 }

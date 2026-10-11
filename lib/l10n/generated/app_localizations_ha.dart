@@ -1049,4 +1049,80 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get longTermNote =>
       'Kewayon dogon lokaci sun dogara ne kan zato da aka bayyana, kuma suna faɗaɗa da lokaci. Farashin bai haɗa da rabon riba ba. Ƙiyasi ne kawai, ba hasashe ba.';
+
+  @override
+  String get portfolio => 'Jakar hannun jari';
+
+  @override
+  String get portfolioEmpty =>
+      'Babu komai tukuna. Buɗe hannun jari ka taɓa “Ƙara zuwa jaka” don bin abin da ka mallaka.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Ana adana shi a wannan na’ura kawai. Ana canza jimillar da farashin musayar ECB; farashi na iya jinkiri.';
+
+  @override
+  String get addToPortfolio => 'Ƙara zuwa jaka';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Ƙara $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Adadin hannun jari';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Farashin kowane hannun jari ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Ranar saye';
+
+  @override
+  String get portfolioAdd => 'Ƙara';
+
+  @override
+  String get portfolioInvalidNumber => 'Shigar da lamba fiye da sifili.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'An ƙara $symbol zuwa jaka.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Jimillar ƙima';
+
+  @override
+  String get portfolioToday => 'Yau';
+
+  @override
+  String get portfolioGainLoss => 'Riba/asara';
+
+  @override
+  String get portfolioInvested => 'Abin da aka zuba';
+
+  @override
+  String get portfolioAllocation => 'Rabon kaso';
+
+  @override
+  String get portfolioPositions => 'Matsayi';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'matsakaicin farashi $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Matsayinka';
+
+  @override
+  String get portfolioPurchases => 'Sayayya';
+
+  @override
+  String get portfolioRemove => 'Cire';
+
+  @override
+  String get portfolioExcluded => 'Ba a haɗa matsayin da ba su da farashi ko farashin musaya a cikin jimilla ba.';
 }

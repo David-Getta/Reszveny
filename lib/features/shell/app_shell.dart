@@ -14,6 +14,7 @@ import '../../theme/app_theme.dart';
 import '../billing/usage_chip.dart';
 import '../home/home_page.dart';
 import '../home/quick_bar.dart';
+import '../portfolio/portfolio_page.dart';
 import '../settings/settings_page.dart';
 import '../stock_detail/stock_detail_page.dart';
 
@@ -59,6 +60,10 @@ class _AppShellState extends State<AppShell> {
 
   void _goHome() => _navigatorKey.currentState?.popUntil((r) => r.isFirst);
 
+  void _openPortfolio() {
+    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: _openSymbol)));
+  }
+
   void _openSettings() {
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => const SettingsPage()));
   }
@@ -95,7 +100,12 @@ class _AppShellState extends State<AppShell> {
             return Scaffold(
               body: Row(
                 children: [
-                  _Sidebar(onNewSearch: _goHome, onOpenSymbol: _openSymbol, onOpenSettings: _openSettings),
+                  _Sidebar(
+                    onNewSearch: _goHome,
+                    onOpenSymbol: _openSymbol,
+                    onOpenSettings: _openSettings,
+                    onOpenPortfolio: _openPortfolio,
+                  ),
                   Expanded(child: content),
                 ],
               ),
@@ -108,11 +118,17 @@ class _AppShellState extends State<AppShell> {
 }
 
 class _Sidebar extends StatelessWidget {
-  const _Sidebar({required this.onNewSearch, required this.onOpenSymbol, required this.onOpenSettings});
+  const _Sidebar({
+    required this.onNewSearch,
+    required this.onOpenSymbol,
+    required this.onOpenSettings,
+    required this.onOpenPortfolio,
+  });
 
   final VoidCallback onNewSearch;
   final ValueChanged<StockCandidate> onOpenSymbol;
   final VoidCallback onOpenSettings;
+  final VoidCallback onOpenPortfolio;
 
   @override
   Widget build(BuildContext context) {
@@ -148,6 +164,7 @@ class _Sidebar extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
             child: _SidebarButton(icon: Icons.add_rounded, label: l10n.newSearch, onTap: onNewSearch, accent: true),
           ),
+          _SidebarButton(icon: Icons.pie_chart_outline_rounded, label: l10n.portfolio, onTap: onOpenPortfolio),
           _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings),
           const Padding(padding: EdgeInsets.fromLTRB(12, 8, 12, 0), child: UsageChip(compact: true)),
           const SizedBox(height: 8),

@@ -1054,4 +1054,80 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get longTermNote =>
       'Pitkän aikavälin vaihteluvälit perustuvat esitettyihin oletuksiin ja levenevät ajan myötä. Hinnat ilman osinkoja. Karkeita arvioita, eivät ennusteita.';
+
+  @override
+  String get portfolio => 'Salkku';
+
+  @override
+  String get portfolioEmpty =>
+      'Täällä ei ole vielä mitään. Avaa osake ja napauta ”Lisää salkkuun” seurataksesi omistuksiasi.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Tallennetaan vain tälle laitteelle. Summat muunnetaan EKP:n viitekursseilla; kurssit voivat olla viiveellisiä.';
+
+  @override
+  String get addToPortfolio => 'Lisää salkkuun';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Lisää $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Osakkeiden määrä';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Hinta per osake ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Ostopäivä';
+
+  @override
+  String get portfolioAdd => 'Lisää';
+
+  @override
+  String get portfolioInvalidNumber => 'Anna nollaa suurempi luku.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol lisättiin salkkuun.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Kokonaisarvo';
+
+  @override
+  String get portfolioToday => 'Tänään';
+
+  @override
+  String get portfolioGainLoss => 'Voitto/tappio';
+
+  @override
+  String get portfolioInvested => 'Sijoitettu';
+
+  @override
+  String get portfolioAllocation => 'Jakauma';
+
+  @override
+  String get portfolioPositions => 'Omistukset';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'keskihinta $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Omistuksesi';
+
+  @override
+  String get portfolioPurchases => 'Ostot';
+
+  @override
+  String get portfolioRemove => 'Poista';
+
+  @override
+  String get portfolioExcluded => 'Omistukset, joilla ei ole hintaa tai valuuttakurssia, jäävät summien ulkopuolelle.';
 }

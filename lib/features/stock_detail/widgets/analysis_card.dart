@@ -64,7 +64,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
     return services.reports.generate(
       widget.details,
       outputLanguage: language,
-      options: services.analysisOptions(),
+      options: services.analysisOptions(symbol: widget.details.symbol),
       force: force,
     );
   }

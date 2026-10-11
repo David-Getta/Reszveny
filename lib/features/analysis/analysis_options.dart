@@ -6,6 +6,23 @@ enum AnalysisDepth { brief, standard, deep }
 /// Kinek szól az elemzés: kezdőnek magyaráz, tapasztaltnak tömörebb.
 enum ReaderLevel { beginner, experienced }
 
+/// Az olvasó saját pozíciója az elemzett részvényben (a portfólióból).
+class PositionContext {
+  const PositionContext({
+    required this.quantity,
+    required this.averageCost,
+    required this.currency,
+    this.firstDate,
+    this.lastDate,
+  });
+
+  final double quantity;
+  final double averageCost;
+  final String currency;
+  final DateTime? firstDate;
+  final DateTime? lastDate;
+}
+
 /// Az AI-elemzés beállításai (a felhasználó választja a beállításokban,
 /// a webkeresések száma a csomagból jön).
 class AnalysisOptions {
@@ -16,6 +33,7 @@ class AnalysisOptions {
     this.webSearches = 6,
     this.readerCountry,
     this.readerCurrency,
+    this.position,
   });
 
   final AnalysisDepth depth;
@@ -30,6 +48,9 @@ class AnalysisOptions {
   /// Az olvasó országa (ISO 3166, pl. `HU`) és megjelenítési pénzneme (pl. `HUF`).
   final String? readerCountry;
   final String? readerCurrency;
+
+  /// Ha az olvasónak van ebből a részvényből, a pozíciója (különben `null`).
+  final PositionContext? position;
 
   /// Hány elemzést fogyaszt a keretből.
   int get cost => costOf(depth);
@@ -73,6 +94,7 @@ class AnalysisOptions {
     int? webSearches,
     String? readerCountry,
     String? readerCurrency,
+    PositionContext? position,
   }) => AnalysisOptions(
     depth: depth ?? this.depth,
     readerLevel: readerLevel ?? this.readerLevel,
@@ -80,5 +102,6 @@ class AnalysisOptions {
     webSearches: webSearches ?? this.webSearches,
     readerCountry: readerCountry ?? this.readerCountry,
     readerCurrency: readerCurrency ?? this.readerCurrency,
+    position: position ?? this.position,
   );
 }

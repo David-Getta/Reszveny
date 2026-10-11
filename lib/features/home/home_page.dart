@@ -15,6 +15,7 @@ import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
+import '../portfolio/portfolio_page.dart';
 import '../recognition/stock_recognizer.dart';
 import '../settings/settings_page.dart';
 import '../updates/update_banner.dart';
@@ -172,6 +173,12 @@ class _HomePageState extends State<HomePage> {
               title: Text(l10n.appTitle),
               actions: [
                 IconButton(
+                  icon: const Icon(Icons.pie_chart_outline_rounded),
+                  tooltip: l10n.portfolio,
+                  onPressed: () => Navigator.of(context)
+                      .push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: widget.onOpenSymbol))),
+                ),
+                IconButton(
                   icon: const Icon(Icons.tune_rounded),
                   tooltip: l10n.settings,
                   onPressed: () =>
@@ -262,6 +269,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                     if (_results != null)
                       _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                    PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                     FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                     if (services.config.isDemoMode) ...[
                       const SizedBox(height: 24),

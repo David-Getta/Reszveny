@@ -1010,6 +1010,80 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get longTermNote => '长期区间基于所列假设，并随时间推移而扩大。价格不含股息。仅为粗略判断，并非预测。';
+
+  @override
+  String get portfolio => '投资组合';
+
+  @override
+  String get portfolioEmpty => '这里还没有内容。打开一只股票并点按“添加到投资组合”，即可跟踪你的持仓。';
+
+  @override
+  String get portfolioLocalNote => '仅保存在此设备上。合计按欧洲央行参考汇率换算；价格可能有延迟。';
+
+  @override
+  String get addToPortfolio => '添加到投资组合';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '添加 $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => '股数';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return '每股价格（$currency）';
+  }
+
+  @override
+  String get portfolioBuyDate => '买入日期';
+
+  @override
+  String get portfolioAdd => '添加';
+
+  @override
+  String get portfolioInvalidNumber => '请输入大于零的数字。';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '已将 $symbol 添加到投资组合。';
+  }
+
+  @override
+  String get portfolioTotalValue => '总市值';
+
+  @override
+  String get portfolioToday => '今日';
+
+  @override
+  String get portfolioGainLoss => '盈亏';
+
+  @override
+  String get portfolioInvested => '投入成本';
+
+  @override
+  String get portfolioAllocation => '配置';
+
+  @override
+  String get portfolioPositions => '持仓';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return '平均成本 $price';
+  }
+
+  @override
+  String get portfolioYourPosition => '你的持仓';
+
+  @override
+  String get portfolioPurchases => '买入记录';
+
+  @override
+  String get portfolioRemove => '移除';
+
+  @override
+  String get portfolioExcluded => '没有价格或汇率的持仓不计入合计。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2017,4 +2091,78 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get longTermNote => '長期區間基於所列假設，並會隨時間擴闊。價格不包括股息。只屬粗略判斷，並非預測。';
+
+  @override
+  String get portfolio => '投資組合';
+
+  @override
+  String get portfolioEmpty => '這裡暫時未有內容。打開一隻股票並點一下「加入投資組合」，即可追蹤你的持倉。';
+
+  @override
+  String get portfolioLocalNote => '只會儲存在此裝置上。總計以歐洲央行參考匯率換算；股價可能有延遲。';
+
+  @override
+  String get addToPortfolio => '加入投資組合';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '加入 $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => '股數';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return '每股價格（$currency）';
+  }
+
+  @override
+  String get portfolioBuyDate => '買入日期';
+
+  @override
+  String get portfolioAdd => '加入';
+
+  @override
+  String get portfolioInvalidNumber => '請輸入大於零的數字。';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '已將 $symbol 加入投資組合。';
+  }
+
+  @override
+  String get portfolioTotalValue => '總市值';
+
+  @override
+  String get portfolioToday => '今日';
+
+  @override
+  String get portfolioGainLoss => '盈虧';
+
+  @override
+  String get portfolioInvested => '投入成本';
+
+  @override
+  String get portfolioAllocation => '配置';
+
+  @override
+  String get portfolioPositions => '持倉';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return '平均成本 $price';
+  }
+
+  @override
+  String get portfolioYourPosition => '你的持倉';
+
+  @override
+  String get portfolioPurchases => '買入記錄';
+
+  @override
+  String get portfolioRemove => '移除';
+
+  @override
+  String get portfolioExcluded => '沒有股價或匯率的持倉不計入總計。';
 }

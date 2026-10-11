@@ -1049,4 +1049,80 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get longTermNote =>
       'দীর্ঘমেয়াদি পরিসরগুলি উল্লিখিত অনুমানের উপর ভিত্তি করে এবং সময়ের সঙ্গে প্রশস্ত হয়। দামে লভ্যাংশ ধরা হয়নি। মোটামুটি অনুমান, পূর্বাভাস নয়।';
+
+  @override
+  String get portfolio => 'পোর্টফোলিও';
+
+  @override
+  String get portfolioEmpty =>
+      'এখনও কিছু নেই। একটি শেয়ার খুলুন এবং আপনার মালিকানা অনুসরণ করতে “পোর্টফোলিওতে যোগ করুন”-এ ট্যাপ করুন।';
+
+  @override
+  String get portfolioLocalNote =>
+      'শুধু এই ডিভাইসেই সংরক্ষিত হয়। মোট হিসাব ইসিবি-র রেফারেন্স হারে রূপান্তরিত হয়; দাম দেরিতে আসতে পারে।';
+
+  @override
+  String get addToPortfolio => 'পোর্টফোলিওতে যোগ করুন';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol যোগ করুন';
+  }
+
+  @override
+  String get portfolioQuantity => 'শেয়ারের সংখ্যা';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'প্রতি শেয়ারের দাম ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'কেনার তারিখ';
+
+  @override
+  String get portfolioAdd => 'যোগ করুন';
+
+  @override
+  String get portfolioInvalidNumber => 'শূন্যের চেয়ে বড় একটি সংখ্যা লিখুন।';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol পোর্টফোলিওতে যোগ হয়েছে।';
+  }
+
+  @override
+  String get portfolioTotalValue => 'মোট মূল্য';
+
+  @override
+  String get portfolioToday => 'আজ';
+
+  @override
+  String get portfolioGainLoss => 'লাভ/ক্ষতি';
+
+  @override
+  String get portfolioInvested => 'বিনিয়োগ';
+
+  @override
+  String get portfolioAllocation => 'বণ্টন';
+
+  @override
+  String get portfolioPositions => 'অবস্থান';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'গড় ক্রয়মূল্য $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'আপনার অবস্থান';
+
+  @override
+  String get portfolioPurchases => 'ক্রয়সমূহ';
+
+  @override
+  String get portfolioRemove => 'সরান';
+
+  @override
+  String get portfolioExcluded => 'দাম বা বিনিময় হার ছাড়া অবস্থানগুলি মোট হিসাবে ধরা হয় না।';
 }

@@ -1035,4 +1035,80 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get longTermNote =>
       'Rentang jangka panjang bertumpu pada asumsi yang disebutkan dan melebar seiring waktu. Harga belum termasuk dividen. Perkiraan kasar, bukan ramalan.';
+
+  @override
+  String get portfolio => 'Portofolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Belum ada apa-apa. Buka saham dan ketuk “Tambahkan ke portofolio” untuk memantau kepemilikan Anda.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Hanya disimpan di perangkat ini. Total dikonversi dengan kurs acuan ECB; harga mungkin tertunda.';
+
+  @override
+  String get addToPortfolio => 'Tambahkan ke portofolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Tambahkan $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Jumlah saham';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Harga per saham ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Tanggal pembelian';
+
+  @override
+  String get portfolioAdd => 'Tambahkan';
+
+  @override
+  String get portfolioInvalidNumber => 'Masukkan angka lebih dari nol.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol ditambahkan ke portofolio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Nilai total';
+
+  @override
+  String get portfolioToday => 'Hari ini';
+
+  @override
+  String get portfolioGainLoss => 'Untung/rugi';
+
+  @override
+  String get portfolioInvested => 'Diinvestasikan';
+
+  @override
+  String get portfolioAllocation => 'Alokasi';
+
+  @override
+  String get portfolioPositions => 'Posisi';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'harga rata-rata $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Posisi Anda';
+
+  @override
+  String get portfolioPurchases => 'Pembelian';
+
+  @override
+  String get portfolioRemove => 'Hapus';
+
+  @override
+  String get portfolioExcluded => 'Posisi tanpa harga atau kurs tidak dihitung dalam total.';
 }

@@ -1052,4 +1052,80 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get longTermNote =>
       'Rentang jangka dawa adhedhasar asumsi sing kasebut lan saya amba saka wektu menyang wektu. Rega durung kalebu dividen. Kira-kira kasar, dudu ramalan.';
+
+  @override
+  String get portfolio => 'Portofolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Durung ana apa-apa. Bukak saham lan tutul “Tambahake menyang portofolio” kanggo ngawasi sahammu.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Mung disimpen ing piranti iki. Total diowahi nganggo kurs referensi ECB; rega bisa telat.';
+
+  @override
+  String get addToPortfolio => 'Tambahake menyang portofolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Tambahake $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Cacahe saham';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Rega saben saham ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Tanggal tuku';
+
+  @override
+  String get portfolioAdd => 'Tambahake';
+
+  @override
+  String get portfolioInvalidNumber => 'Lebokake angka luwih saka nol.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol wis ditambahake menyang portofolio.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Nilai total';
+
+  @override
+  String get portfolioToday => 'Dina iki';
+
+  @override
+  String get portfolioGainLoss => 'Bathi/rugi';
+
+  @override
+  String get portfolioInvested => 'Diinvestasekake';
+
+  @override
+  String get portfolioAllocation => 'Alokasi';
+
+  @override
+  String get portfolioPositions => 'Posisi';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'rega rata-rata $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Posisimu';
+
+  @override
+  String get portfolioPurchases => 'Tukon';
+
+  @override
+  String get portfolioRemove => 'Busak';
+
+  @override
+  String get portfolioExcluded => 'Posisi tanpa rega utawa kurs ora diétung ing total.';
 }

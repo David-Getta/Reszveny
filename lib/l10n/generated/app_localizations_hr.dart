@@ -1085,4 +1085,80 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get longTermNote =>
       'Dugoročni rasponi temelje se na navedenim pretpostavkama i s vremenom se šire. Cijene bez dividendi. Grube procjene, a ne predviđanja.';
+
+  @override
+  String get portfolio => 'Portfelj';
+
+  @override
+  String get portfolioEmpty =>
+      'Još je prazan. Otvorite dionicu i dodirnite „Dodaj u portfelj” da biste pratili što posjedujete.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Sprema se samo na ovom uređaju. Zbrojevi se preračunavaju po referentnim tečajevima ESB-a; cijene mogu kasniti.';
+
+  @override
+  String get addToPortfolio => 'Dodaj u portfelj';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Dodaj $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Broj dionica';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Cijena po dionici ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Datum kupnje';
+
+  @override
+  String get portfolioAdd => 'Dodaj';
+
+  @override
+  String get portfolioInvalidNumber => 'Unesite broj veći od nule.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol je dodana u portfelj.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Ukupna vrijednost';
+
+  @override
+  String get portfolioToday => 'Danas';
+
+  @override
+  String get portfolioGainLoss => 'Dobit/gubitak';
+
+  @override
+  String get portfolioInvested => 'Uloženo';
+
+  @override
+  String get portfolioAllocation => 'Raspodjela';
+
+  @override
+  String get portfolioPositions => 'Pozicije';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'prosječna cijena $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Vaša pozicija';
+
+  @override
+  String get portfolioPurchases => 'Kupnje';
+
+  @override
+  String get portfolioRemove => 'Ukloni';
+
+  @override
+  String get portfolioExcluded => 'Pozicije bez cijene ili tečaja nisu uračunate u zbrojeve.';
 }

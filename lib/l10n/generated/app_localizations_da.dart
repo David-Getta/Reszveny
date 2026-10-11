@@ -1048,4 +1048,80 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get longTermNote =>
       'De langsigtede intervaller bygger på de angivne antagelser og bliver bredere med tiden. Kurser ekskl. udbytte. Grove vurderinger, ikke prognoser.';
+
+  @override
+  String get portfolio => 'Portefølje';
+
+  @override
+  String get portfolioEmpty =>
+      'Intet her endnu. Åbn en aktie, og tryk på “Føj til portefølje” for at følge dine beholdninger.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Gemmes kun på denne enhed. Summer omregnes til ECB’s referencekurser; kurser kan være forsinkede.';
+
+  @override
+  String get addToPortfolio => 'Føj til portefølje';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Tilføj $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Antal aktier';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Pris pr. aktie ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Købsdato';
+
+  @override
+  String get portfolioAdd => 'Tilføj';
+
+  @override
+  String get portfolioInvalidNumber => 'Indtast et tal større end nul.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol er føjet til porteføljen.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Samlet værdi';
+
+  @override
+  String get portfolioToday => 'I dag';
+
+  @override
+  String get portfolioGainLoss => 'Gevinst/tab';
+
+  @override
+  String get portfolioInvested => 'Investeret';
+
+  @override
+  String get portfolioAllocation => 'Fordeling';
+
+  @override
+  String get portfolioPositions => 'Beholdninger';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'gns. købskurs $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Din beholdning';
+
+  @override
+  String get portfolioPurchases => 'Køb';
+
+  @override
+  String get portfolioRemove => 'Fjern';
+
+  @override
+  String get portfolioExcluded => 'Beholdninger uden kurs eller valutakurs er ikke med i summerne.';
 }

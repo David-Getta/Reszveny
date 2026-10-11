@@ -1046,4 +1046,80 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get longTermNote =>
       'दीर्घकालीन पल्ले नमूद केलेल्या गृहितकांवर आधारित आहेत आणि काळानुसार रुंदावतात. किमतींमध्ये लाभांश समाविष्ट नाही. ढोबळ अंदाज आहेत, भाकिते नाहीत.';
+
+  @override
+  String get portfolio => 'पोर्टफोलिओ';
+
+  @override
+  String get portfolioEmpty =>
+      'अजून काही नाही. एखादा शेअर उघडा आणि तुमच्याकडील शेअर्सवर लक्ष ठेवण्यासाठी “पोर्टफोलिओमध्ये जोडा” टॅप करा.';
+
+  @override
+  String get portfolioLocalNote =>
+      'फक्त याच डिव्हाइसवर जतन होते. एकूण रक्कम ECB च्या संदर्भ दरांनी रूपांतरित होते; किमती उशिरा येऊ शकतात.';
+
+  @override
+  String get addToPortfolio => 'पोर्टफोलिओमध्ये जोडा';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol जोडा';
+  }
+
+  @override
+  String get portfolioQuantity => 'शेअर्सची संख्या';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'प्रति शेअर किंमत ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'खरेदीची तारीख';
+
+  @override
+  String get portfolioAdd => 'जोडा';
+
+  @override
+  String get portfolioInvalidNumber => 'शून्यापेक्षा मोठी संख्या लिहा.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol पोर्टफोलिओमध्ये जोडला.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'एकूण मूल्य';
+
+  @override
+  String get portfolioToday => 'आज';
+
+  @override
+  String get portfolioGainLoss => 'नफा/तोटा';
+
+  @override
+  String get portfolioInvested => 'गुंतवणूक';
+
+  @override
+  String get portfolioAllocation => 'वाटणी';
+
+  @override
+  String get portfolioPositions => 'पोझिशन्स';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'सरासरी खर्च $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'तुमची पोझिशन';
+
+  @override
+  String get portfolioPurchases => 'खरेदी';
+
+  @override
+  String get portfolioRemove => 'काढा';
+
+  @override
+  String get portfolioExcluded => 'किंमत किंवा विनिमय दर नसलेल्या पोझिशन्स एकूण रकमेत धरल्या जात नाहीत.';
 }

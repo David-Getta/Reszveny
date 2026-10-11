@@ -1047,4 +1047,80 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get longTermNote =>
       'दीर्घकालिक दायरे बताई गई मान्यताओं पर आधारित हैं और समय के साथ चौड़े होते जाते हैं। कीमतों में लाभांश शामिल नहीं है। मोटे अनुमान हैं, भविष्यवाणियाँ नहीं।';
+
+  @override
+  String get portfolio => 'पोर्टफ़ोलियो';
+
+  @override
+  String get portfolioEmpty =>
+      'अभी कुछ नहीं है। कोई शेयर खोलें और अपनी होल्डिंग पर नज़र रखने के लिए “पोर्टफ़ोलियो में जोड़ें” पर टैप करें।';
+
+  @override
+  String get portfolioLocalNote =>
+      'केवल इसी डिवाइस पर सहेजा जाता है। कुल योग ECB की संदर्भ दरों पर बदले जाते हैं; कीमतें देर से आ सकती हैं।';
+
+  @override
+  String get addToPortfolio => 'पोर्टफ़ोलियो में जोड़ें';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol जोड़ें';
+  }
+
+  @override
+  String get portfolioQuantity => 'शेयरों की संख्या';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'प्रति शेयर कीमत ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'खरीद की तारीख';
+
+  @override
+  String get portfolioAdd => 'जोड़ें';
+
+  @override
+  String get portfolioInvalidNumber => 'शून्य से बड़ी संख्या दर्ज करें।';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol पोर्टफ़ोलियो में जोड़ा गया।';
+  }
+
+  @override
+  String get portfolioTotalValue => 'कुल मूल्य';
+
+  @override
+  String get portfolioToday => 'आज';
+
+  @override
+  String get portfolioGainLoss => 'लाभ/हानि';
+
+  @override
+  String get portfolioInvested => 'निवेश';
+
+  @override
+  String get portfolioAllocation => 'आवंटन';
+
+  @override
+  String get portfolioPositions => 'पोज़िशन';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'औसत लागत $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'आपकी पोज़िशन';
+
+  @override
+  String get portfolioPurchases => 'खरीदारियाँ';
+
+  @override
+  String get portfolioRemove => 'हटाएँ';
+
+  @override
+  String get portfolioExcluded => 'जिन पोज़िशन की कीमत या विनिमय दर उपलब्ध नहीं, वे कुल योग में शामिल नहीं हैं।';
 }

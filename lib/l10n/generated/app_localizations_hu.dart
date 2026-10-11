@@ -1048,4 +1048,80 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get longTermNote =>
       'A hosszú távú sávok a megadott feltevéseken alapulnak, és az idővel tágulnak. Az árak osztalék nélkül értendők. Durva becslések, nem előrejelzések.';
+
+  @override
+  String get portfolio => 'Portfólió';
+
+  @override
+  String get portfolioEmpty =>
+      'Még üres. Nyiss meg egy részvényt, és koppints a „Hozzáadás a portfólióhoz” gombra, hogy kövesd, amid van.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Csak ezen a készüléken tárolódik. Az összesítés ECB-árfolyamon számol; az árak késhetnek.';
+
+  @override
+  String get addToPortfolio => 'Hozzáadás a portfólióhoz';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol hozzáadása';
+  }
+
+  @override
+  String get portfolioQuantity => 'Darabszám';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Darabonkénti ár ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Vétel dátuma';
+
+  @override
+  String get portfolioAdd => 'Hozzáadás';
+
+  @override
+  String get portfolioInvalidNumber => 'Nullánál nagyobb számot adj meg.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol hozzáadva a portfólióhoz.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Összérték';
+
+  @override
+  String get portfolioToday => 'Ma';
+
+  @override
+  String get portfolioGainLoss => 'Nyereség/veszteség';
+
+  @override
+  String get portfolioInvested => 'Befektetve';
+
+  @override
+  String get portfolioAllocation => 'Megoszlás';
+
+  @override
+  String get portfolioPositions => 'Pozíciók';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'átlagár $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'A pozícióm';
+
+  @override
+  String get portfolioPurchases => 'Vételek';
+
+  @override
+  String get portfolioRemove => 'Törlés';
+
+  @override
+  String get portfolioExcluded => 'Az ár vagy árfolyam nélküli pozíciók kimaradnak az összesítésből.';
 }

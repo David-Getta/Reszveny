@@ -1038,4 +1038,80 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get longTermNote =>
       'Các khoảng dài hạn dựa trên các giả định đã nêu và rộng dần theo thời gian. Giá chưa tính cổ tức. Chỉ là nhận định sơ bộ, không phải dự báo.';
+
+  @override
+  String get portfolio => 'Danh mục';
+
+  @override
+  String get portfolioEmpty =>
+      'Chưa có gì. Mở một cổ phiếu và nhấn “Thêm vào danh mục” để theo dõi những gì bạn sở hữu.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Chỉ lưu trên thiết bị này. Tổng được quy đổi theo tỷ giá tham chiếu của ECB; giá có thể bị trễ.';
+
+  @override
+  String get addToPortfolio => 'Thêm vào danh mục';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Thêm $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Số cổ phiếu';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Giá mỗi cổ phiếu ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Ngày mua';
+
+  @override
+  String get portfolioAdd => 'Thêm';
+
+  @override
+  String get portfolioInvalidNumber => 'Hãy nhập một số lớn hơn 0.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return 'Đã thêm $symbol vào danh mục.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Tổng giá trị';
+
+  @override
+  String get portfolioToday => 'Hôm nay';
+
+  @override
+  String get portfolioGainLoss => 'Lãi/lỗ';
+
+  @override
+  String get portfolioInvested => 'Đã đầu tư';
+
+  @override
+  String get portfolioAllocation => 'Phân bổ';
+
+  @override
+  String get portfolioPositions => 'Vị thế';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'giá vốn TB $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Vị thế của bạn';
+
+  @override
+  String get portfolioPurchases => 'Lần mua';
+
+  @override
+  String get portfolioRemove => 'Xóa';
+
+  @override
+  String get portfolioExcluded => 'Các vị thế không có giá hoặc tỷ giá sẽ không được tính vào tổng.';
 }
