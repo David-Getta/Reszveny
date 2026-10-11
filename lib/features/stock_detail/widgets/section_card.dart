@@ -17,11 +17,19 @@ class SectionCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Expanded(child: Text(title, style: theme.textTheme.titleMedium)),
-                ?trailing,
-              ],
+            // A jobb oldali kiegészítő (pl. frissítés ideje, gomb) legfeljebb a sor
+            // 60 %-át foglalhatja; keskeny képernyőn tördelődik, nem lóg ki.
+            LayoutBuilder(
+              builder: (context, c) => Row(
+                children: [
+                  Expanded(child: Text(title, style: theme.textTheme.titleMedium)),
+                  if (trailing != null)
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxWidth: c.maxWidth * 0.6),
+                      child: trailing,
+                    ),
+                ],
+              ),
             ),
             const SizedBox(height: 12),
             child,

@@ -168,27 +168,30 @@ class ScenarioChart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      scenarioLabel(l10n, s.kind),
-                      style: theme.textTheme.labelLarge?.copyWith(color: colorOf(s.kind), fontWeight: FontWeight.w700),
-                    ),
-                    const SizedBox(width: 8),
-                    Text('${s.probability.round()}%', style: theme.textTheme.labelLarge),
-                    const SizedBox(width: 12),
-                    // Keskeny képernyőn (telefon, hosszú forgatókönyv-nevek) a sáv tördelődik.
-                    Expanded(
-                      child: s.priceLow != null && s.priceHigh != null
-                          ? Text(
-                              '${fmt.price(s.priceLow, null)}–${fmt.price(s.priceHigh, ccy)}'
-                              '${cur != null && cur > 0 ? '  (${fmt.percent((s.priceLow! / cur - 1) * 100, decimals: 0, withSign: true)} … ${fmt.percent((s.priceHigh! / cur - 1) * 100, decimals: 0, withSign: true)})' : ''}',
-                              style: theme.textTheme.labelMedium,
-                              textAlign: TextAlign.end,
-                            )
-                          : const SizedBox.shrink(),
-                    ),
-                  ],
+                _SplitLine(
+                  lead: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Flexible(
+                        child: Text(
+                          scenarioLabel(l10n, s.kind),
+                          style: theme.textTheme.labelLarge?.copyWith(
+                            color: colorOf(s.kind),
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Text('${s.probability.round()}%', style: theme.textTheme.labelLarge),
+                    ],
+                  ),
+                  trail: s.priceLow != null && s.priceHigh != null
+                      ? Text(
+                          '${fmt.price(s.priceLow, null)}–${fmt.price(s.priceHigh, ccy)}'
+                          '${cur != null && cur > 0 ? '  (${fmt.percent((s.priceLow! / cur - 1) * 100, decimals: 0, withSign: true)} … ${fmt.percent((s.priceHigh! / cur - 1) * 100, decimals: 0, withSign: true)})' : ''}',
+                          style: theme.textTheme.labelMedium,
+                        )
+                      : null,
                 ),
                 const SizedBox(height: 6),
                 SizedBox(
@@ -345,52 +348,40 @@ class LongTermChart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      '${l10n.longTermYears(h.years)} · ${baseYear + h.years}',
-                      style: theme.textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        '${_price(h.priceLow, withCurrency: false)}–${_price(h.priceHigh)}',
-                        style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w600),
-                        textAlign: TextAlign.end,
-                      ),
-                    ),
-                  ],
+                _SplitLine(
+                  lead: Text(
+                    '${l10n.longTermYears(h.years)} · ${baseYear + h.years}',
+                    style: theme.textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+                  ),
+                  trail: Text(
+                    '${_price(h.priceLow, withCurrency: false)}–${_price(h.priceHigh)}',
+                    style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w600),
+                  ),
                 ),
                 const SizedBox(height: 4),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Text(
-                        [
-                          // Teljes változás, zárójelben az évesített hozam.
-                          if (cur != null)
-                            '${pct((h.priceLow / cur - 1) * 100, 0)} … ${pct((h.priceHigh / cur - 1) * 100, 0)} '
-                                '(${l10n.longTermPerYear(perYear(h))})',
-                          if (h.priceLikely != null) l10n.longTermLikely(_price(h.priceLikely!)),
-                        ].join(' · '),
-                        style: theme.textTheme.labelMedium,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    _Chip(
-                      color: switch (h.confidence) {
-                        Confidence.high => p.positive,
-                        Confidence.medium => p.accent,
-                        Confidence.low => p.muted,
-                      },
-                      text: switch (h.confidence) {
-                        Confidence.high => l10n.confidenceHigh,
-                        Confidence.medium => l10n.confidenceMedium,
-                        Confidence.low => l10n.confidenceLow,
-                      },
-                    ),
-                  ],
+                _SplitLine(
+                  lead: Text(
+                    [
+                      // Teljes változás, zárójelben az évesített hozam.
+                      if (cur != null)
+                        '${pct((h.priceLow / cur - 1) * 100, 0)} … ${pct((h.priceHigh / cur - 1) * 100, 0)} '
+                            '(${l10n.longTermPerYear(perYear(h))})',
+                      if (h.priceLikely != null) l10n.longTermLikely(_price(h.priceLikely!)),
+                    ].join(' · '),
+                    style: theme.textTheme.labelMedium,
+                  ),
+                  trail: _Chip(
+                    color: switch (h.confidence) {
+                      Confidence.high => p.positive,
+                      Confidence.medium => p.accent,
+                      Confidence.low => p.muted,
+                    },
+                    text: switch (h.confidence) {
+                      Confidence.high => l10n.confidenceHigh,
+                      Confidence.medium => l10n.confidenceMedium,
+                      Confidence.low => l10n.confidenceLow,
+                    },
+                  ),
                 ),
                 if (h.basis.isNotEmpty) ...[const SizedBox(height: 4), Text(h.basis, style: small)],
               ],
@@ -537,6 +528,28 @@ class _FanPainter extends CustomPainter {
   @override
   bool shouldRepaint(_FanPainter old) =>
       old.horizons != horizons || old.current != current || old.fill != fill || old.labelStyle != labelStyle;
+}
+
+/// Címke balra, érték jobbra; ha együtt nem férnek el egy sorban (telefon,
+/// hosszú fordítás, nagy betűméret), az érték a következő sorba kerül.
+class _SplitLine extends StatelessWidget {
+  const _SplitLine({required this.lead, this.trail});
+
+  final Widget lead;
+  final Widget? trail;
+
+  // A teljes szélesség kell, különben a Wrap összehúzódik, és nem tolja jobbra az értéket.
+  @override
+  Widget build(BuildContext context) => SizedBox(
+    width: double.infinity,
+    child: Wrap(
+      alignment: WrapAlignment.spaceBetween,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 12,
+      runSpacing: 4,
+      children: [lead, ?trail],
+    ),
+  );
 }
 
 class _Chip extends StatelessWidget {
