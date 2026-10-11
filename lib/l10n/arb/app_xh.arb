@@ -253,7 +253,7 @@
   "aiWebSearchesInfo": "{count, plural, one{Ngesicwangciso sakho: ukhangelo lwewebhu olu-1 kuhlalutyo ngalunye} other{Ngesicwangciso sakho: ukhangelo lwewebhu ukuya kutsho kwi-{count} kuhlalutyo ngalunye}}",
   "aiWebSearchesPlans": "Ukhangelo lwewebhu kubude obuqhelekileyo ngokwesicwangciso: Esiqhelekileyo {normal}, Pro {pro}, Max {max}, Ultra {ultra}. Emfutshane: 2 ngaphantsi, Enzulu: 2 ngaphezulu.",
   "aiWebSearchesShort": "{count, plural, one{ukhangelo lwewebhu olu-1} other{ukhangelo lwewebhu ukuya kutsho kwi-{count}}}",
-  "planWebSearches": "{count, plural, one{Ukhangelo lwewebhu olu-1 kuhlalutyo ngalunye} other{Ukhangelo lwewebhu oluyi-{count} kuhlalutyo ngalunye}}",
+  "planWebSearches": "{count, plural, one{Ukhangelo lwewebhu olu-1 kuhlalutyo ngalunye} other{Ukhangelo lwewebhu kuhlalutyo ngalunye: {count}}}",
   "errNotEnoughCredits": "Obu bude bufuna iintlalutyo ezi-{needed}, kodwa kusele ezi-{left} kuphela. Khetha ubude obufutshane kwiiSetingi okanye ufumane iintlalutyo ezongezelelweyo.",
   "outlookMarketMood": "Imo yemarike",
   "moodVeryPessimistic": "Ayinathemba kwaphela",

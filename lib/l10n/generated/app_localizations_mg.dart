@@ -62,7 +62,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get whatWeSaw => 'Izay hitanay';
 
   @override
-  String get chooseCandidateTitle => 'Aksiona inona no tianao holazaina?';
+  String get chooseCandidateTitle => 'Iza amin\'ireto aksiona ireto no notadiavinao?';
 
   @override
   String confidencePercent(int percent) {
@@ -893,7 +893,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String errNotEnoughCredits(int needed, int left) {
-    return 'Mila $needed fandalinana ity halavany ity, nefa $left sisa ihany no ananana. Misafidiana halavany fohy kokoa ao amin\'ny Fikirakirana na makà fandalinana fanampiny.';
+    return 'Mila $needed fandalinana ity halavany ity, nefa $left sisa ihany no anananao. Misafidiana halavany fohy kokoa ao amin\'ny Fikirakirana na makà fandalinana fanampiny.';
   }
 
   @override

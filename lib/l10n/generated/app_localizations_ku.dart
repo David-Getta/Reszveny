@@ -1,0 +1,1261 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Kurdish (`ku`).
+class AppLocalizationsKu extends AppLocalizations {
+  AppLocalizationsKu([String locale = 'ku']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
+
+  @override
+  String get homeHint =>
+      'Belgeya pişkê, ekrana sepana brokerê, rojnameyek an logoya şirketekê – her tiştê ku pişkekê dide nasîn.';
+
+  @override
+  String get takePhoto => 'Wêne bikişîne';
+
+  @override
+  String get chooseFromGallery => 'Ji galeriyê hilbijêre';
+
+  @override
+  String get chooseImage => 'Wêneyekî hilbijêre';
+
+  @override
+  String get enterTickerManually => 'Sembolê bi destan binivîse';
+
+  @override
+  String get tickerInputLabel => 'Sembola pişkê';
+
+  @override
+  String get tickerInputHint => 'mînak AAPL';
+
+  @override
+  String get lookUp => 'Lê bigere';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Moda demoyê – mifteya daneyên bazarê nehatiye mîhengkirin. Daneyên mînak ji bo van hene: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Wêne tê analîzkirin…';
+
+  @override
+  String get loadingData => 'Dane tên barkirin…';
+
+  @override
+  String get noCandidatesTitle => 'Tu pişk nehat naskirin';
+
+  @override
+  String get noCandidatesBody =>
+      'Me nikarî di vî wêneyî de pişkekê nas bikin. Wêneyekî zelaltir biceribîne, an sembolê bi destan binivîse.';
+
+  @override
+  String get whatWeSaw => 'Tiştê ku me dît';
+
+  @override
+  String get chooseCandidateTitle => 'Mebesta te kîjan pişk bû?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% pêbawerî';
+  }
+
+  @override
+  String get settings => 'Mîheng';
+
+  @override
+  String get language => 'Ziman';
+
+  @override
+  String get systemLanguage => 'Standarda pergalê';
+
+  @override
+  String get about => 'Derbar';
+
+  @override
+  String get disclaimer =>
+      'Ev sepan tenê agahiyan pêşkêş dike û ne şîreta veberhênanê ye. Dibe ku dane dereng bin an ne rast bin.';
+
+  @override
+  String dataSource(String source) {
+    return 'Çavkaniya daneyan: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Naskirin: $source';
+  }
+
+  @override
+  String get retry => 'Dîsa biceribîne';
+
+  @override
+  String get cancel => 'Betal bike';
+
+  @override
+  String get ok => 'Temam';
+
+  @override
+  String get close => 'Bigire';
+
+  @override
+  String get errorGeneric => 'Tiştek xelet çû.';
+
+  @override
+  String get errorSectionUnavailable => 'Ev beş nehat barkirin.';
+
+  @override
+  String get notAvailable => 'tune';
+
+  @override
+  String get sectionIdentity => 'Nasname';
+
+  @override
+  String get sectionPrice => 'Biha';
+
+  @override
+  String get sectionValuation => 'Nirxandin';
+
+  @override
+  String get sectionFinancials => 'Daneyên darayî';
+
+  @override
+  String get sectionDividend => 'Dîvîdend';
+
+  @override
+  String get sectionProfile => 'Profîla şirketê';
+
+  @override
+  String get sectionAnalysts => 'Nirxandinên analîstan';
+
+  @override
+  String get sectionNews => 'Nûçe';
+
+  @override
+  String get sectionRecognition => 'Hûrguliyên naskirinê';
+
+  @override
+  String get labelSymbol => 'Sembol';
+
+  @override
+  String get labelExchange => 'Borsa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Dirav';
+
+  @override
+  String get labelCountry => 'Welat';
+
+  @override
+  String get labelIndustry => 'Pîşesazî';
+
+  @override
+  String get labelSector => 'Sektor';
+
+  @override
+  String get labelWebsite => 'Malper';
+
+  @override
+  String get labelIpoDate => 'Dîroka IPO-yê';
+
+  @override
+  String get labelMarketCap => 'Nirxa bazarê';
+
+  @override
+  String get labelSharesOutstanding => 'Pişkên belavkirî';
+
+  @override
+  String get labelEmployees => 'Karmend';
+
+  @override
+  String get labelCeo => 'Rêveberê giştî';
+
+  @override
+  String get labelHeadquarters => 'Navenda sereke';
+
+  @override
+  String get labelDescription => 'Danasîn';
+
+  @override
+  String get labelLastPrice => 'Bihaya dawî';
+
+  @override
+  String get labelChange => 'Guherîn';
+
+  @override
+  String get labelOpen => 'Vebûn';
+
+  @override
+  String get labelDayHigh => 'Bilindtirîna rojê';
+
+  @override
+  String get labelDayLow => 'Nizmtirîna rojê';
+
+  @override
+  String get labelPreviousClose => 'Girtina berê';
+
+  @override
+  String get labelWeek52High => 'Bilindtirîna 52 hefteyan';
+
+  @override
+  String get labelWeek52Low => 'Nizmtirîna 52 hefteyan';
+
+  @override
+  String get labelAverageVolume10d => 'Qebareya navînî (10 roj)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Nûkirin: $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (borî)';
+
+  @override
+  String get labelPeForward => 'P/E (pêşbînî)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / herikîna nexdê ya azad';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Dahat (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Qezenca net (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Marjîna brût';
+
+  @override
+  String get labelOperatingMargin => 'Marjîna xebitandinê';
+
+  @override
+  String get labelNetMargin => 'Marjîna net';
+
+  @override
+  String get labelRoe => 'Vegera li ser sermayeyê';
+
+  @override
+  String get labelRoa => 'Vegera li ser hebûnan';
+
+  @override
+  String get labelDebtToEquity => 'Deyn / sermaye';
+
+  @override
+  String get labelCurrentRatio => 'Rêjeya heyî';
+
+  @override
+  String get labelRevenueGrowth => 'Mezinbûna dahatê (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Mezinbûna EPS-ê (YoY)';
+
+  @override
+  String get labelDividendYield => 'Rêjeya dîvîdendê';
+
+  @override
+  String get labelDividendPerShare => 'Dîvîdend ji bo her pişkê';
+
+  @override
+  String get labelPayoutRatio => 'Rêjeya belavkirinê';
+
+  @override
+  String get labelConsensus => 'Lihevkirin';
+
+  @override
+  String get ratingStrongBuy => 'Kirîna xurt';
+
+  @override
+  String get ratingBuy => 'Kirîn';
+
+  @override
+  String get ratingHold => 'Ragirtin';
+
+  @override
+  String get ratingSell => 'Firotin';
+
+  @override
+  String get ratingStrongSell => 'Firotina xurt';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analîst', one: '1 analîst');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Dem: $period';
+  }
+
+  @override
+  String get noNews => 'Nûçeyên nû tune ne.';
+
+  @override
+  String get openArticle => 'Gotarê veke';
+
+  @override
+  String get openLinkFailed => 'Girêdan venebû.';
+
+  @override
+  String get recognitionSummary => 'Kurte';
+
+  @override
+  String get recognitionEvidence => 'Çima em wisa difikirin';
+
+  @override
+  String get recognitionRawText => 'Nivîsa ku ji wêneyê hat xwendin';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Naskirina wêneyan nehatiye mîhengkirin (ANTHROPIC_API_KEY tune). Sembolê bi destan binivîse.';
+
+  @override
+  String get errRecognitionUnreachable => 'Negihîşt xizmeta naskirinê. Girêdana xwe ya înternetê kontrol bike.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Xizmeta naskirinê çewtiyek vegerand (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Xizmeta naskirinê nikarî vî wêneyî pêvajo bike.';
+
+  @override
+  String get errRecognitionTruncated => 'Bersiva naskirinê qut bû. Ji kerema xwe dîsa biceribîne.';
+
+  @override
+  String get errRecognitionBadResponse => 'Bersiveke neçaverêkirî ji xizmeta naskirinê hat.';
+
+  @override
+  String get errRecognitionEmpty => 'Xizmeta naskirinê bersiveke vala vegerand.';
+
+  @override
+  String get errMissingFinnhubKey => 'Daneyên bazarê nehatine mîhengkirin (FINNHUB_API_KEY tune).';
+
+  @override
+  String get errMarketUnreachable => 'Negihîşt xizmeta daneyên bazarê. Girêdana xwe ya înternetê kontrol bike.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Gelek daxwaz ji xizmeta daneyên bazarê re hatin şandin. Ji kerema xwe deqeyekê bisekine.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Xizmeta daneyên bazarê çewtiyek vegerand (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Bersiveke neçaverêkirî ji xizmeta daneyên bazarê hat.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Ji bo $symbol daneyên bihayê nehatin dîtin.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Ji bo $symbol profîla şirketê nehat dîtin.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Moda demoyê tenê $symbols piştgirî dike. Ji bo daneyên zindî FINNHUB_API_KEY lê zêde bike.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Tiştek xelet çû: $detail';
+  }
+
+  @override
+  String get newSearch => 'Lêgerîna nû';
+
+  @override
+  String get recentSearches => 'Yên dawî';
+
+  @override
+  String get noRecentSearches => 'Hîn lêgerînên dawî tune ne.';
+
+  @override
+  String get clearRecent => 'Yên dawî paqij bike';
+
+  @override
+  String get greeting => 'Em li kîjan pişkê binêrin?';
+
+  @override
+  String get searchHint => 'Sembol an navê şirketê';
+
+  @override
+  String get attachImage => 'Wêneyekî pê ve bike';
+
+  @override
+  String get searchResultsTitle => 'Encamên lêgerînê';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ji bo «$query» tu pişk nehat dîtin.';
+  }
+
+  @override
+  String get quickBarHint => 'Sembol an navê şirketê binivîse…';
+
+  @override
+  String get openFullWindow => 'Paceyê veke';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Ji bo vexwendina StockLens li her derê $shortcut bitikîne.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens veke';
+
+  @override
+  String get trayQuickSearch => 'Lêgerîna bilez';
+
+  @override
+  String get trayQuit => 'Derkeve';
+
+  @override
+  String get appearance => 'Xuyang';
+
+  @override
+  String get themeSystem => 'Pergal';
+
+  @override
+  String get themeDark => 'Tarî';
+
+  @override
+  String get themeLight => 'Ronî';
+
+  @override
+  String get back => 'Vegere';
+
+  @override
+  String get aiSectionTitle => 'Analîza AI';
+
+  @override
+  String get aiIntro =>
+      'Nêrîneke berfireh a ku AI nivîsandiye: kurteya nûçeyên dawî, karsazî, xalên xurt, rîsk û faktorên veşartî, nirxandin, pêşbîniya bihayê bi senaryoyan ji aliyên psîkolojîk, sosyolojîk, teknîkî û makro, û tiştên ku divê werin şopandin.';
+
+  @override
+  String get aiGenerate => 'Analîzê çêke';
+
+  @override
+  String get aiRegenerate => 'Ji nû ve çêke';
+
+  @override
+  String get aiGenerating => 'Analîz tê amadekirin… dibe ku deqeyek an du deqe bidome.';
+
+  @override
+  String get aiSources => 'Çavkanî';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Çêkirin: $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analîza ku AI li ser bingeha daneyên giştî û nûçeyên dawî çêkiriye. Dibe ku çewtî tê de hebin an kevn bibe, û ne şîreta veberhênanê ye.';
+
+  @override
+  String get errAiNotConfigured => 'Analîza AI nehatiye mîhengkirin (ANTHROPIC_API_KEY tune).';
+
+  @override
+  String get errAiUnreachable => 'Negihîşt xizmeta AI. Girêdana xwe ya înternetê kontrol bike.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Xizmeta AI çewtiyek vegerand (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Xizmeta AI analîzkirina vê pişkê red kir.';
+
+  @override
+  String get errAiBadResponse => 'Bersiveke neçaverêkirî ji xizmeta AI hat.';
+
+  @override
+  String get sectionChart => 'Grafîka bihayê';
+
+  @override
+  String get rangeOneWeek => '1H';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1S';
+
+  @override
+  String get rangeFiveYears => '5S';
+
+  @override
+  String get chartUnavailable => 'Dîroka bihayê ji çavkaniya daneyan a heyî ne berdest e.';
+
+  @override
+  String get sectionStatements => 'Raporên darayî (salane)';
+
+  @override
+  String get labelFiscalYear => 'Sala darayî';
+
+  @override
+  String get labelRevenue => 'Dahat';
+
+  @override
+  String get labelNetIncome => 'Qezenca net';
+
+  @override
+  String get labelTotalAssets => 'Hebûnên giştî';
+
+  @override
+  String get labelTotalLiabilities => 'Deynên giştî';
+
+  @override
+  String get labelEquity => 'Sermayeya pişkdaran';
+
+  @override
+  String get labelOperatingCashFlow => 'Herikîna nexdê ya xebitandinê';
+
+  @override
+  String get statementsUnavailable => 'Ji bo vê pişkê raporên darayî yên weşandî ne berdest in.';
+
+  @override
+  String get launchAtLogin => 'Di têketinê de bide destpêkirin';
+
+  @override
+  String get hotkeyLabel => 'Kurteriya giştî';
+
+  @override
+  String get hotkeyRecordHint => 'Li vir bitikîne, paşê kombînasyona nû ya bişkokan bitikîne';
+
+  @override
+  String get hotkeyReset => 'Vegerîne standardê';
+
+  @override
+  String get pasteImage => 'Wêneyî ji panoyê bizeliqîne';
+
+  @override
+  String get errClipboardNoImage => 'Li ser panoyê wêne tune ye.';
+
+  @override
+  String get favorites => 'Bijare';
+
+  @override
+  String get addToFavorites => 'Li bijareyan zêde bike';
+
+  @override
+  String get removeFromFavorites => 'Ji bijareyan rake';
+
+  @override
+  String get noFavorites => 'Hîn bijare tune ne. Ji bo zêdekirinê li stêrka pişkekê bitikîne.';
+
+  @override
+  String get displayCurrency => 'Diravê nîşandanê';
+
+  @override
+  String get displayCurrencyNone => 'Tenê diravê pişkê bi xwe';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ bi $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Rêje: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Rojanekirin';
+
+  @override
+  String currentVersion(String version) {
+    return 'Guhertoya $version';
+  }
+
+  @override
+  String get autoUpdate => 'Rojanekirinan bixweber saz bike';
+
+  @override
+  String get checkForUpdates => 'Li rojanekirinan bigere';
+
+  @override
+  String get updateChecking => 'Li rojanekirinan tê gerîn…';
+
+  @override
+  String get updateUpToDate => 'Tu li ser guhertoya herî dawî yî.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Guhertoya $version berdest e.';
+  }
+
+  @override
+  String get updateDownloading => 'Rojanekirin li paşperdeyê tê daxistin…';
+
+  @override
+  String get updateDownloaded => 'Rojanekirin amade ye. Ji bo sazkirinê ji nû ve bide destpêkirin.';
+
+  @override
+  String get updateNow => 'Rojane bike';
+
+  @override
+  String get restartNow => 'Ji nû ve bide destpêkirin';
+
+  @override
+  String get updatesViaStore => 'Rojanekirin bixweber bi riya firotgeha sepanan tên.';
+
+  @override
+  String get updateCheckFailed => 'Kontrolkirina rojanekirinan bi ser neket.';
+
+  @override
+  String get subscription => 'Abonetî';
+
+  @override
+  String get planTrial => 'Ceribandin';
+
+  @override
+  String get planNormal => 'Asayî';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Plana çalak tune';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analîz di mehê de';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Ceribandina belaş a $days rojan bi $count analîzan';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Ji ceribandinê $days roj man',
+      one: 'Ji ceribandinê 1 roj ma',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Di vê heyamê de $remaining ji $total analîzan man';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count analîzên zêde';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Di $date de nû dibe';
+  }
+
+  @override
+  String get choosePlan => 'Planekê hilbijêre';
+
+  @override
+  String get currentPlan => 'Plana heyî';
+
+  @override
+  String get subscribe => 'Bibe abone';
+
+  @override
+  String get perMonth => '/ meh';
+
+  @override
+  String get extraPacksTitle => 'Zêdetir lazim e? Analîzên zêde bikire';
+
+  @override
+  String get extraPacksHint => 'Analîzên zêde qet bi dawî nabin û piştî mafê te yê mehane tên bikaranîn.';
+
+  @override
+  String get buy => 'Bikire';
+
+  @override
+  String get restorePurchases => 'Kirînan vegerîne';
+
+  @override
+  String get manageSubscription => 'Abonetiyê birêve bibe';
+
+  @override
+  String get purchaseSuccess => 'Spas! Kirîna te çalak e.';
+
+  @override
+  String get purchasePending => 'Kirîn li bendê ye…';
+
+  @override
+  String get purchaseFailed => 'Kirîn nehat temamkirin.';
+
+  @override
+  String get purchaseCanceled => 'Kirîn hate betalkirin.';
+
+  @override
+  String get billingUnavailable =>
+      'Kirîn hîn li ser vê platformê ne berdest e. Li ser telefon an Mac-a xwe bibe abone; plana te li ser hemû amûran dixebite.';
+
+  @override
+  String get errQuotaExceeded => 'Ji bo vê heyamê analîzên te nemane. Plana xwe bilind bike an analîzên zêde bikire.';
+
+  @override
+  String get errTrialExpired => 'Ceribandina te ya belaş qediya. Ji bo berdewamiyê planekê hilbijêre.';
+
+  @override
+  String get errNoPlan => 'Ji bo analîza AI planeke çalak pêwîst e.';
+
+  @override
+  String get viewPlans => 'Planan bibîne';
+
+  @override
+  String get usageTitle => 'Bikaranîn';
+
+  @override
+  String get demoPurchaseNote => 'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
+
+  @override
+  String get mostPopular => 'Herî populer';
+
+  @override
+  String get bestValue => 'Nirxa herî baş';
+
+  @override
+  String get planFeaturesCommon =>
+      'Naskirina wêneyan, daneyên zindî, grafîk, bijare û hemû 120 ziman di her planê de hene. Maf ji bo analîzên AI ye.';
+
+  @override
+  String get searchLanguages => 'Li zimanan bigere…';
+
+  @override
+  String get noLanguageMatch => 'Tu ziman li hev nayê.';
+
+  @override
+  String get aiSettings => 'Analîza AI';
+
+  @override
+  String get aiLength => 'Dirêjahî';
+
+  @override
+  String get aiDepthBrief => 'Kurt';
+
+  @override
+  String get aiDepthStandard => 'Standard';
+
+  @override
+  String get aiDepthDeep => 'Kûr';
+
+  @override
+  String get aiDepthBriefDesc => 'Tiştên sereke, bi lez.';
+
+  @override
+  String get aiDepthStandardDesc => 'Rapora tevahî bi hemû beşan.';
+
+  @override
+  String get aiDepthDeepDesc => 'Lêgerînên webê yên zêdetir, berhevdana bi hevrikan û hûrguliyên kûrtir.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Nêzîkî $min–$max peyv';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîz bi kar tîne',
+      one: '1 analîz bi kar tîne',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Asta xwîner';
+
+  @override
+  String get aiReaderBeginner => 'Destpêker';
+
+  @override
+  String get aiReaderExperienced => 'Bi ezmûn';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Zimanê sade; her têgeha teknîkî tê ravekirin.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Nivîsa tîrtir bi termînolojiya darayî ya standard.';
+
+  @override
+  String get aiCounterArgument => 'Argumana dijber a herî xurt';
+
+  @override
+  String get aiCounterArgumentDesc => 'Kurte her tim bi argumana herî xurt a li dijî encama xwe bi dawî dibe.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bi plana te heta $count lêgerînên webê ji bo her analîzê',
+      one: 'Bi plana te heta 1 lêgerîna webê ji bo her analîzê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Dirêjahiya standard li gorî planê: Asayî $normal, Pro $pro, Max $max, Ultra $ultra. Kurt 2 kêmtir, Kûr 2 zêdetir bi kar tîne.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'heta $count lêgerînên webê',
+      one: 'heta 1 lêgerîna webê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lêgerînên webê ji bo her analîzê',
+      one: '1 lêgerîna webê ji bo her analîzê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Ev dirêjahî $needed analîzan dixwaze, lê tenê $left man. Di Mîhengan de dirêjahiyeke kurttir hilbijêre an analîzên zêdetir bistîne.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Hesta bazarê';
+
+  @override
+  String get moodVeryPessimistic => 'Pir reşbîn';
+
+  @override
+  String get moodPessimistic => 'Reşbîn';
+
+  @override
+  String get moodNeutral => 'Bêalî';
+
+  @override
+  String get moodOptimistic => 'Geşbîn';
+
+  @override
+  String get moodVeryOptimistic => 'Pir geşbîn';
+
+  @override
+  String get scenarioBull => 'Senaryoya geşbîn';
+
+  @override
+  String get scenarioBase => 'Senaryoya bingehîn';
+
+  @override
+  String get scenarioBear => 'Senaryoya reşbîn';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Bihaya niha: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Astên sereke';
+
+  @override
+  String get keyLevelSupport => 'Piştgirî';
+
+  @override
+  String get keyLevelResistance => 'Berxwedan';
+
+  @override
+  String get keyLevelAnchor => 'Lenger';
+
+  @override
+  String get upcomingEvents => 'Bûyerên pêş';
+
+  @override
+  String get outlookChartNote => 'Navberên nîşander; îhtîmal tenê texmînên giştî ne, ne pêşbînî.';
+
+  @override
+  String get accountTitle => 'Hesab';
+
+  @override
+  String get signIn => 'Têkeve';
+
+  @override
+  String get signOut => 'Derkeve';
+
+  @override
+  String get notSignedIn => 'Tu ne têketî yî';
+
+  @override
+  String get accountBenefit => 'Têkeve da ku abonetiya te li ser hemû amûrên te bixebite.';
+
+  @override
+  String get accountSyncedNote => 'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
+
+  @override
+  String get signInTitle => 'Têkeve StockLens';
+
+  @override
+  String get emailLabel => 'Navnîşana e-nameyê';
+
+  @override
+  String get continueWithEmail => 'Bi e-nameyê berdewam bike';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Me kodeke 6 reqemî ji $email re şand. Ew 10 deqeyan derbasdar e.';
+  }
+
+  @override
+  String get codeLabel => 'Koda têketinê';
+
+  @override
+  String get resendCode => 'Kodeke nû bişîne';
+
+  @override
+  String get useDifferentEmail => 'E-nameyeke din bi kar bîne';
+
+  @override
+  String get errInvalidCode => 'Kod xelet e an dema wê derbas bûye.';
+
+  @override
+  String get errInvalidEmail => 'Ji kerema xwe navnîşaneke e-nameyê ya derbasdar binivîse.';
+
+  @override
+  String get errSignInFailed => 'Têketin bi ser neket. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get checkoutWaiting => 'Dayînê di geroka xwe de temam bike. Dema ku biqede, sepan bixweber nû dibe.';
+
+  @override
+  String get paymentViaStripe => 'Dayîna ewle di gerokê de bi Stripe. Her dem dikarî betal bikî.';
+
+  @override
+  String get paymentViaStore =>
+      'Bi hesabê te yê App Store an Google Play tê fatûrekirin. Her dem dikarî di mîhengên firotgehê de betal bikî.';
+
+  @override
+  String get keySpace => 'Valahî';
+
+  @override
+  String get doubleOptionTitle => 'Du caran Option bitikîne';
+
+  @override
+  String get doubleOptionSubtitle => 'Du caran bi lez tikandina bişkoka Option jî StockLens vedixwîne.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Ji bo ku di sepanên din de jî bixebite, di Mîhengên Pergalê → Nepenî û Ewlehî → Şopandina Têketinê de destûrê bide StockLens, paşê sepanê dîsa veke.';
+
+  @override
+  String get openSystemSettings => 'Mîhengên Pergalê veke';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Ji bo vexwendina StockLens li her derê $shortcut bitikîne an du caran Option bitikîne.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Ya herî muhtemel';
+
+  @override
+  String get longTermToday => 'Îro';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years sal', one: '1 sal');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range di salê de';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'herî muhtemel $price';
+  }
+
+  @override
+  String get confidenceLow => 'Pêbaweriya kêm';
+
+  @override
+  String get confidenceMedium => 'Pêbaweriya navîn';
+
+  @override
+  String get confidenceHigh => 'Pêbaweriya bilind';
+
+  @override
+  String get longTermNote =>
+      'Navberên demdirêj li ser texmînên diyarkirî ne û bi demê re fireh dibin. Dîvîdend di bihayan de nayên hesibandin. Texmînên giştî ne, ne pêşbînî.';
+
+  @override
+  String get portfolio => 'Portfolyo';
+
+  @override
+  String get portfolioEmpty =>
+      'Hîn tiştek li vir tune. Pişkekê veke û li «Li portfolyoyê zêde bike» bitikîne da ku tiştên xwe bişopînî.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Tenê li ser vê amûrê tê tomarkirin. Kom bi rêjeyên referansê yên ECB tên guhertin; dibe ku biha dereng bin.';
+
+  @override
+  String get addToPortfolio => 'Li portfolyoyê zêde bike';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol zêde bike';
+  }
+
+  @override
+  String get portfolioQuantity => 'Hejmara pişkan';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Biha ji bo her pişkê ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Dîroka kirînê';
+
+  @override
+  String get portfolioAdd => 'Zêde bike';
+
+  @override
+  String get portfolioInvalidNumber => 'Hejmareke ji sifirê mezintir binivîse.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol li portfolyoya te hate zêdekirin.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Nirxa giştî';
+
+  @override
+  String get portfolioToday => 'Îro';
+
+  @override
+  String get portfolioGainLoss => 'Qezenc/zirar';
+
+  @override
+  String get portfolioInvested => 'Veberhênan';
+
+  @override
+  String get portfolioAllocation => 'Dabeşkirin';
+
+  @override
+  String get portfolioPositions => 'Pozîsyon';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'lêçûna navînî $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Pozîsyona te';
+
+  @override
+  String get portfolioPurchases => 'Kirîn';
+
+  @override
+  String get portfolioRemove => 'Rake';
+
+  @override
+  String get portfolioExcluded => 'Pozîsyonên bê biha an bê rêjeya diravan di komê de nayên hesibandin.';
+
+  @override
+  String get priceAlerts => 'Hişyariyên bihayê';
+
+  @override
+  String get setPriceAlert => 'Hişyariya bihayê saz bike';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Hişyariya bihayê · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Derdikeve ser';
+
+  @override
+  String get alertKindBelow => 'Dadikeve bin';
+
+  @override
+  String get alertKindMove => 'Di rojekê de pir diguhere';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Biha ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Guherîna rojane (%)';
+
+  @override
+  String get alertAlreadyMet => 'Biha jixwe ji vê astê derbas bûye.';
+
+  @override
+  String get alertSave => 'Hişyarî saz bike';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Ji bo $symbol hişyarî hate sazkirin.';
+  }
+
+  @override
+  String get alertsEmpty => 'Hîn hişyariyên bihayê tune ne. Ji bo sazkirinê pişkekê veke û li zengilê bitikîne.';
+
+  @override
+  String get alertsNote =>
+      'Dema StockLens dixebite, hişyarî her 5 deqeyan tên kontrolkirin. Li ser komputerê ew di barika menuyê an tepsiyê de dixebite; li ser telefonê, niha hişyarî tenê dema ku sepan vekirî be tên.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Ser $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Bin $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Guherîna rojane ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date li $price çalak bû';
+  }
+
+  @override
+  String get alertRearm => 'Dîsa çalak bike';
+
+  @override
+  String get alertDelete => 'Jê bibe';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol derket ser $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol daket bin $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol îro $percent guherî';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Bihaya niha: $price';
+  }
+
+  @override
+  String get alertOpen => 'Veke';
+
+  @override
+  String get keepInTrayTitle => 'Dema pace girtî be jî bixebite';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens di barika menuyê an tepsiyê de dimîne, da ku kurterî û hişyariyên bihayê bixebitin.';
+
+  @override
+  String get termsOfUse => 'Mercên Bikaranînê';
+
+  @override
+  String get privacyPolicy => 'Polîtîkaya Nepeniyê';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonetî her meh bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî.';
+
+  @override
+  String get deleteAccount => 'Hesabê jê bibe';
+
+  @override
+  String get deleteAccountTitle => 'Hesabê xwe jê dibî?';
+
+  @override
+  String get deleteAccountBody =>
+      'Hesabê te û her tiştê li ser servera me tomarkirî (e-name, maf, bikaranîn) dê bi temamî were jêbirin, û analîzên ku nehatine bikaranîn winda dibin. Abonetiya ku di gerokê de hatiye dayîn yekser tê betalkirin; abonetiya App Store an Google Play divê di mîhengên firotgehê de were betalkirin.';
+
+  @override
+  String get deleteLocalData =>
+      'Daneyên li ser vê amûrê jî jê bibe (portfolyo, hişyarî, bijare, dîrok, analîzên tomarkirî)';
+
+  @override
+  String get deleteAccountConfirm => 'Bi temamî jê bibe';
+
+  @override
+  String get accountDeleted => 'Hesabê te hate jêbirin.';
+
+  @override
+  String get errDeleteAccount => 'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+}
