@@ -704,7 +704,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get perMonth => '/ เดือน';
 
   @override
-  String get extraPacksTitle => 'ต้องการเพิ่มใช่ไหม ซื้อการวิเคราะห์เพิ่มเติม';
+  String get extraPacksTitle => 'ต้องการเพิ่มอีกไหม ซื้อการวิเคราะห์เพิ่มเติม';
 
   @override
   String get extraPacksHint => 'การวิเคราะห์เพิ่มเติมไม่มีวันหมดอายุ และจะถูกใช้หลังจากโควตารายเดือนของคุณหมดแล้ว';

@@ -881,7 +881,7 @@ class AppLocalizationsXh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ukhangelo lwewebhu oluyi-$count kuhlalutyo ngalunye',
+      other: 'Ukhangelo lwewebhu kuhlalutyo ngalunye: $count',
       one: 'Ukhangelo lwewebhu olu-1 kuhlalutyo ngalunye',
     );
     return '$_temp0';

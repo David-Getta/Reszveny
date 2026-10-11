@@ -1,0 +1,1271 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Ganda Luganda (`lg`).
+class AppLocalizationsLg extends AppLocalizations {
+  AppLocalizationsLg([String locale = 'lg']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Kuba ekifaananyi ky\'omugabo omanye buli kimu ku gwo.';
+
+  @override
+  String get homeHint =>
+      'Satifikeeti y\'emigabo, ssirini ya app y\'omusuubuzi w\'emigabo, olupapula lw\'amawulire oba akabonero ka kkampuni – ekintu kyonna ekiraga omugabo.';
+
+  @override
+  String get takePhoto => 'Kuba ekifaananyi';
+
+  @override
+  String get chooseFromGallery => 'Londa mu bifaananyi';
+
+  @override
+  String get chooseImage => 'Londa ekifaananyi';
+
+  @override
+  String get enterTickerManually => 'Wandiika ticker mu ngalo';
+
+  @override
+  String get tickerInputLabel => 'Akabonero ka ticker';
+
+  @override
+  String get tickerInputHint => 'okugeza: AAPL';
+
+  @override
+  String get lookUp => 'Noonya';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Embeera ya demo – tewali kisumuluzo kya data y\'akatale ekiteereddwawo. Data ey\'okulabirako eriwo ku: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Twekenneenya ekifaananyi…';
+
+  @override
+  String get loadingData => 'Tutikka data…';
+
+  @override
+  String get noCandidatesTitle => 'Tewali mugabo gumanyiddwa';
+
+  @override
+  String get noCandidatesBody =>
+      'Tetusobodde kuzuula mugabo mu kifaananyi kino. Gezaako ekifaananyi ekirabika obulungi, oba wandiika ticker mu ngalo.';
+
+  @override
+  String get whatWeSaw => 'Bye twalabye';
+
+  @override
+  String get chooseCandidateTitle => 'Mugabo ki gw\'obadde otegeeza?';
+
+  @override
+  String confidencePercent(int percent) {
+    return 'Obukakafu $percent%';
+  }
+
+  @override
+  String get settings => 'Ensengeka';
+
+  @override
+  String get language => 'Olulimi';
+
+  @override
+  String get systemLanguage => 'Olulimi lwa sisitemu';
+
+  @override
+  String get about => 'Ebikwata ku app';
+
+  @override
+  String get disclaimer =>
+      'App eno ewa mawulire gokka era si magezi ga kusiga nsimbi. Data eyinza okulwawo oba obutaba ntuufu.';
+
+  @override
+  String dataSource(String source) {
+    return 'Ensibuko ya data: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Okuzuula: $source';
+  }
+
+  @override
+  String get retry => 'Gezaako nate';
+
+  @override
+  String get cancel => 'Sazaamu';
+
+  @override
+  String get ok => 'Kale';
+
+  @override
+  String get close => 'Ggalawo';
+
+  @override
+  String get errorGeneric => 'Waliwo ekitagenze bulungi.';
+
+  @override
+  String get errorSectionUnavailable => 'Ekitundu kino tekisobodde kutikkibwa.';
+
+  @override
+  String get notAvailable => 'tewali';
+
+  @override
+  String get sectionIdentity => 'Ebimanyisa';
+
+  @override
+  String get sectionPrice => 'Ebbeeyi';
+
+  @override
+  String get sectionValuation => 'Omuwendo';
+
+  @override
+  String get sectionFinancials => 'Eby\'ensimbi';
+
+  @override
+  String get sectionDividend => 'Amagoba ku migabo';
+
+  @override
+  String get sectionProfile => 'Ebikwata ku kkampuni';
+
+  @override
+  String get sectionAnalysts => 'Endowooza z\'abeekenneenya';
+
+  @override
+  String get sectionNews => 'Amawulire';
+
+  @override
+  String get sectionRecognition => 'Ebikwata ku kuzuula';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Akatale k\'emigabo';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Ensimbi';
+
+  @override
+  String get labelCountry => 'Eggwanga';
+
+  @override
+  String get labelIndustry => 'Omulimu';
+
+  @override
+  String get labelSector => 'Ekitundu';
+
+  @override
+  String get labelWebsite => 'Omukutu';
+
+  @override
+  String get labelIpoDate => 'Olunaku lwa IPO';
+
+  @override
+  String get labelMarketCap => 'Omuwendo ku katale';
+
+  @override
+  String get labelSharesOutstanding => 'Emigabo egyafulumizibwa';
+
+  @override
+  String get labelEmployees => 'Abakozi';
+
+  @override
+  String get labelCeo => 'Ssenkulu';
+
+  @override
+  String get labelHeadquarters => 'Ekitebe ekikulu';
+
+  @override
+  String get labelDescription => 'Ennyinnyonnyola';
+
+  @override
+  String get labelLastPrice => 'Ebbeeyi esembayo';
+
+  @override
+  String get labelChange => 'Enkyukakyuka';
+
+  @override
+  String get labelOpen => 'Okuggulawo';
+
+  @override
+  String get labelDayHigh => 'Waggulu ku lunaku';
+
+  @override
+  String get labelDayLow => 'Wansi ku lunaku';
+
+  @override
+  String get labelPreviousClose => 'Okuggalawo okwasembyeyo';
+
+  @override
+  String get labelWeek52High => 'Waggulu mu wiiki 52';
+
+  @override
+  String get labelWeek52Low => 'Wansi mu wiiki 52';
+
+  @override
+  String get labelAverageVolume10d => 'Obungi obwa wakati (ennaku 10)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Kyazzibwa obuggya $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (ewedde)';
+
+  @override
+  String get labelPeForward => 'P/E (esuubirwa)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / ensimbi ezisigalawo (FCF)';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Ensimbi eziyingidde (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Amagoba amalongoofu (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Amagoba ag\'awamu (%)';
+
+  @override
+  String get labelOperatingMargin => 'Amagoba g\'emirimu (%)';
+
+  @override
+  String get labelNetMargin => 'Amagoba amalongoofu (%)';
+
+  @override
+  String get labelRoe => 'Amagoba ku nsimbi z\'abannannyini (ROE)';
+
+  @override
+  String get labelRoa => 'Amagoba ku by\'obugagga (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Ebbanja / ensimbi z\'abannannyini';
+
+  @override
+  String get labelCurrentRatio => 'Omugerageranyo gw\'okusasula amabanja';
+
+  @override
+  String get labelRevenueGrowth => 'Okukula kw\'ensimbi eziyingidde (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Okukula kwa EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Amagoba ku migabo (%)';
+
+  @override
+  String get labelDividendPerShare => 'Amagoba ku buli mugabo';
+
+  @override
+  String get labelPayoutRatio => 'Ekitundu ky\'amagoba ekigabibwa';
+
+  @override
+  String get labelConsensus => 'Endowooza ya bonna';
+
+  @override
+  String get ratingStrongBuy => 'Gula nnyo';
+
+  @override
+  String get ratingBuy => 'Gula';
+
+  @override
+  String get ratingHold => 'Kuuma';
+
+  @override
+  String get ratingSell => 'Tunda';
+
+  @override
+  String get ratingStrongSell => 'Tunda nnyo';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Abeekenneenya $count',
+      one: 'Omwekenneenya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Ekiseera: $period';
+  }
+
+  @override
+  String get noNews => 'Tewali mawulire ga kaakano.';
+
+  @override
+  String get openArticle => 'Ggulawo ekiwandiiko';
+
+  @override
+  String get openLinkFailed => 'Tekisobose kuggulawo link.';
+
+  @override
+  String get recognitionSummary => 'Mu bufunze';
+
+  @override
+  String get recognitionEvidence => 'Lwaki tulowooza bwe tutyo';
+
+  @override
+  String get recognitionRawText => 'Ebiwandiiko ebisomeddwa mu kifaananyi';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Okuzuula ebifaananyi tekunnategekebwa (tewali ANTHROPIC_API_KEY). Wandiika ticker mu ngalo.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Tetusobodde kutuuka ku mpeereza y\'okuzuula ebifaananyi. Kebera yintaneeti yo.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Empeereza y\'okuzuula ezzizzaayo ensobi (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Empeereza y\'okuzuula tesobodde kukola ku kifaananyi kino.';
+
+  @override
+  String get errRecognitionTruncated => 'Okuddamu kw\'okuzuula kusaliddwako. Gezaako nate.';
+
+  @override
+  String get errRecognitionBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza y\'okuzuula.';
+
+  @override
+  String get errRecognitionEmpty => 'Empeereza y\'okuzuula ezzizzaayo okuddamu okutaliimu kintu.';
+
+  @override
+  String get errMissingFinnhubKey => 'Data y\'akatale tennategekebwa (tewali FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable => 'Tetusobodde kutuuka ku mpeereza ya data y\'akatale. Kebera yintaneeti yo.';
+
+  @override
+  String get errMarketRateLimited => 'Okusaba kungi nnyo eri empeereza ya data y\'akatale. Lindako eddakiika emu.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Empeereza ya data y\'akatale ezzizzaayo ensobi (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza ya data y\'akatale.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Tewali data ya bbeeyi efunise ku $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Tewali bikwata ku kkampuni bifunise ku $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Embeera ya demo ekola ku $symbols kyokka. Gattako FINNHUB_API_KEY ofune data ey\'ekiseera kino.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Waliwo ekitagenze bulungi: $detail';
+  }
+
+  @override
+  String get newSearch => 'Okunoonya okupya';
+
+  @override
+  String get recentSearches => 'Ebya kaakano';
+
+  @override
+  String get noRecentSearches => 'Tonnaba kunoonya kintu.';
+
+  @override
+  String get clearRecent => 'Sangula ebya kaakano';
+
+  @override
+  String get greeting => 'Tulabe mugabo ki?';
+
+  @override
+  String get searchHint => 'Ticker oba erinnya lya kkampuni';
+
+  @override
+  String get attachImage => 'Gattako ekifaananyi';
+
+  @override
+  String get searchResultsTitle => 'Ebivudde mu kunoonya';
+
+  @override
+  String errNoResults(String query) {
+    return 'Tewali migabo gizuuliddwa ku “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Wandiika ticker oba erinnya lya kkampuni…';
+
+  @override
+  String get openFullWindow => 'Ggulawo eddirisa';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Nyiga $shortcut wonna w\'oli okuyita StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Ggulawo StockLens';
+
+  @override
+  String get trayQuickSearch => 'Okunoonya okw\'amangu';
+
+  @override
+  String get trayQuit => 'Fuluma';
+
+  @override
+  String get appearance => 'Endabika';
+
+  @override
+  String get themeSystem => 'Sisitemu';
+
+  @override
+  String get themeDark => 'Ekizikiza';
+
+  @override
+  String get themeLight => 'Ekitangaala';
+
+  @override
+  String get back => 'Ddayo';
+
+  @override
+  String get aiSectionTitle => 'Okwekenneenya kwa AI';
+
+  @override
+  String get aiIntro =>
+      'Okwekenneenya okujjuvu okuwandiikiddwa AI: amawulire ag\'akaakano mu bufunze, bizinensi, amaanyi, akabi n\'ebintu ebikwekeddwa, omuwendo, endaba y\'ebbeeyi n\'embeera eziyinza okubaawo okuva mu ndaba ez\'endowooza y\'abantu, ez\'embeera z\'abantu, ez\'ekikugu n\'ez\'ebyenfuna eby\'awamu, n\'eby\'okugoberera.';
+
+  @override
+  String get aiGenerate => 'Kola okwekenneenya';
+
+  @override
+  String get aiRegenerate => 'Ddamu okukola';
+
+  @override
+  String get aiGenerating => 'Tutegeka okwekenneenya… kino kiyinza okutwala eddakiika emu oba bbiri.';
+
+  @override
+  String get aiSources => 'Ensibuko';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Kyakolebwa $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Okwekenneenya okukoleddwa AI nga kwesigamiziddwa ku data ya lukale n\'amawulire ag\'akaakano. Kuyinza okubaamu ensobi oba okuba nga kukaddiye, era si magezi ga kusiga nsimbi.';
+
+  @override
+  String get errAiNotConfigured => 'Okwekenneenya kwa AI tekunnategekebwa (tewali ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Tetusobodde kutuuka ku mpeereza ya AI. Kebera yintaneeti yo.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Empeereza ya AI ezzizzaayo ensobi (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Empeereza ya AI egaanye okwekenneenya omugabo guno.';
+
+  @override
+  String get errAiBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza ya AI.';
+
+  @override
+  String get sectionChart => 'Ekipande ky\'ebbeeyi';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'Ebyafaayo by\'ebbeeyi tebifunika mu nsibuko ya data eriwo kati.';
+
+  @override
+  String get sectionStatements => 'Lipoota z\'ensimbi (ez\'omwaka)';
+
+  @override
+  String get labelFiscalYear => 'Omwaka gw\'ebyensimbi';
+
+  @override
+  String get labelRevenue => 'Ensimbi eziyingidde';
+
+  @override
+  String get labelNetIncome => 'Amagoba amalongoofu';
+
+  @override
+  String get labelTotalAssets => 'Eby\'obugagga byonna';
+
+  @override
+  String get labelTotalLiabilities => 'Amabanja gonna';
+
+  @override
+  String get labelEquity => 'Ensimbi z\'abannannyini migabo';
+
+  @override
+  String get labelOperatingCashFlow => 'Ensimbi eziva mu mirimu';
+
+  @override
+  String get statementsUnavailable => 'Lipoota z\'ensimbi ezaafulumizibwa tezifunika ku mugabo guno.';
+
+  @override
+  String get launchAtLogin => 'Ggulawo ng\'oyingidde';
+
+  @override
+  String get hotkeyLabel => 'Shortcut ya buli wamu';
+
+  @override
+  String get hotkeyRecordHint => 'Nyiga wano, oluvannyuma onyige obupeesa obupya';
+
+  @override
+  String get hotkeyReset => 'Zzaawo ebyasooka';
+
+  @override
+  String get pasteImage => 'Teeka ekifaananyi okuva ku clipboard';
+
+  @override
+  String get errClipboardNoImage => 'Tewali kifaananyi ku clipboard.';
+
+  @override
+  String get favorites => 'By\'oyagala';
+
+  @override
+  String get addToFavorites => 'Gattako ku by\'oyagala';
+
+  @override
+  String get removeFromFavorites => 'Ggyako ku by\'oyagala';
+
+  @override
+  String get noFavorites => 'Tonnaba kugattako kintu. Nyiga emmunyeenye ku mugabo okugugattako.';
+
+  @override
+  String get displayCurrency => 'Ensimbi ez\'okulaga';
+
+  @override
+  String get displayCurrencyNone => 'Ensimbi z\'omugabo zokka';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ mu $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Omuwendo: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Ebipya';
+
+  @override
+  String currentVersion(String version) {
+    return 'Vezoni $version';
+  }
+
+  @override
+  String get autoUpdate => 'Teekamu ebipya byokka';
+
+  @override
+  String get checkForUpdates => 'Kebera ebipya';
+
+  @override
+  String get updateChecking => 'Tukebera ebipya…';
+
+  @override
+  String get updateUpToDate => 'Olina vezoni esembyeyo.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Vezoni $version eriwo.';
+  }
+
+  @override
+  String get updateDownloading => 'Tuwanula ebipya mu kasirise…';
+
+  @override
+  String get updateDownloaded => 'Ebipya byetegese. Ddamu otandike app okubiteekamu.';
+
+  @override
+  String get updateNow => 'Zza obuggya';
+
+  @override
+  String get restartNow => 'Ddamu otandike';
+
+  @override
+  String get updatesViaStore => 'Ebipya bijja byokka okuyita mu dduuka lya app.';
+
+  @override
+  String get updateCheckFailed => 'Tetusobodde kukebera bipya.';
+
+  @override
+  String get subscription => 'Okwewandiisa';
+
+  @override
+  String get planTrial => 'Okugezesa';
+
+  @override
+  String get planNormal => 'Ekya bulijjo';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Tewali nteekateeka ekola';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Okwekenneenya $count buli mwezi';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Okugezesa okw\'obwereere okw\'ennaku $days n\'okwekenneenya $count';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Osigazza ennaku $days ez\'okugezesa',
+      one: 'Osigazza olunaku 1 olw\'okugezesa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongera okwekenneenya.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Osigazza okwekenneenya $remaining ku $total mu kiseera kino';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return 'Okwekenneenya okw\'okwongerako $count';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Kizzibwa obuggya $date';
+  }
+
+  @override
+  String get choosePlan => 'Londa enteekateeka';
+
+  @override
+  String get currentPlan => 'Enteekateeka yo eya kati';
+
+  @override
+  String get subscribe => 'Wewandiise';
+
+  @override
+  String get perMonth => '/ omwezi';
+
+  @override
+  String get extraPacksTitle => 'Weetaaga ebisingawo? Gula okwekenneenya okw\'okwongerako';
+
+  @override
+  String get extraPacksHint =>
+      'Okwekenneenya okw\'okwongerako tekuggwaako era kukozesebwa ng\'ekyo ky\'okkirizibwa buli mwezi kiwedde.';
+
+  @override
+  String get buy => 'Gula';
+
+  @override
+  String get restorePurchases => 'Zzaawo bye wagula';
+
+  @override
+  String get manageSubscription => 'Ddukanya okwewandiisa';
+
+  @override
+  String get purchaseSuccess => 'Weebale! Ky\'oguze kikola.';
+
+  @override
+  String get purchasePending => 'Okugula kulindiridde…';
+
+  @override
+  String get purchaseFailed => 'Okugula tekusobodde kumalirizibwa.';
+
+  @override
+  String get purchaseCanceled => 'Okugula kusaziddwamu.';
+
+  @override
+  String get billingUnavailable =>
+      'Okugula tekunnabaawo ku sisitemu eno. Wewandiise ku ssimu yo oba ku Mac; enteekateeka yo ejja kukola ku buli kyuma.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Tosigazza kwekenneenya mu kiseera kino. Kuza enteekateeka yo oba gula okwekenneenya okw\'okwongerako.';
+
+  @override
+  String get errTrialExpired => 'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongerayo.';
+
+  @override
+  String get errNoPlan => 'Weetaaga enteekateeka ekola okukozesa okwekenneenya kwa AI.';
+
+  @override
+  String get viewPlans => 'Laba enteekateeka';
+
+  @override
+  String get usageTitle => 'Enkozesa';
+
+  @override
+  String get demoPurchaseNote => 'Okusasula kwa demo: okugula ku sisitemu eno kwa kufaanaanyiriza kwokka.';
+
+  @override
+  String get mostPopular => 'Esinga okwagalibwa';
+
+  @override
+  String get bestValue => 'Esinga omuwendo';
+
+  @override
+  String get planFeaturesCommon =>
+      'Okuzuula ebifaananyi, data ey\'ekiseera kino, ebipande, by\'oyagala n\'ennimi zonna 120 biri mu buli nteekateeka. Ekitundu ky\'okkirizibwa kikwata ku kwekenneenya kwa AI.';
+
+  @override
+  String get searchLanguages => 'Noonya ennimi…';
+
+  @override
+  String get noLanguageMatch => 'Tewali lulimi lukwatagana.';
+
+  @override
+  String get aiSettings => 'Okwekenneenya kwa AI';
+
+  @override
+  String get aiLength => 'Obuwanvu';
+
+  @override
+  String get aiDepthBrief => 'Mu bufunze';
+
+  @override
+  String get aiDepthStandard => 'Bwa bulijjo';
+
+  @override
+  String get aiDepthDeep => 'Mu bujjuvu';
+
+  @override
+  String get aiDepthBriefDesc => 'Ebikulu, mu bwangu.';
+
+  @override
+  String get aiDepthStandardDesc => 'Lipoota enzijuvu n\'ebitundu byonna.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Okunoonya okusingawo ku yintaneeti, okugeraageranya n\'abavuganya n\'ebisingawo mu bujjuvu.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Ebigambo nga $min–$max';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kikozesa okwekenneenya $count',
+      one: 'kikozesa okwekenneenya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Omutendera gw\'omusomi';
+
+  @override
+  String get aiReaderBeginner => 'Atandika';
+
+  @override
+  String get aiReaderExperienced => 'Omukugu';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Olulimi olwangu; buli kigambo kya kikugu kinnyonnyolwa.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Ebiwandiiko ebinywevu nga bikozesa ebigambo by\'ebyensimbi ebya bulijjo.';
+
+  @override
+  String get aiCounterArgument => 'Ensonga esinga okuwakanya';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Mu bufunze bulijjo bukomekkerezebwa n\'ensonga esinga amaanyi ewakanya ekyo kye busazeewo.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okunoonya okutuuka ku $count ku yintaneeti buli kwekenneenya mu nteekateeka yo',
+      one: 'Okunoonya 1 ku yintaneeti buli kwekenneenya mu nteekateeka yo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Okunoonya ku yintaneeti ku buwanvu bwa bulijjo okusinziira ku nteekateeka: Ekya bulijjo $normal, Pro $pro, Max $max, Ultra $ultra. Mu bufunze kikendeezaako 2, Mu bujjuvu kyongerako 2.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'okunoonya okutuuka ku $count ku yintaneeti',
+      one: 'okunoonya 1 ku yintaneeti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okunoonya $count ku yintaneeti buli kwekenneenya',
+      one: 'Okunoonya 1 ku yintaneeti buli kwekenneenya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Obuwanvu buno bwetaaga okwekenneenya $needed, naye osigazza $left kyokka. Londa obuwanvu obutono mu Ensengeka oba funa okwekenneenya okusingawo.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Embeera y\'akatale';
+
+  @override
+  String get moodVeryPessimistic => 'Essuubi ttono nnyo';
+
+  @override
+  String get moodPessimistic => 'Essuubi ttono';
+
+  @override
+  String get moodNeutral => 'Wakati';
+
+  @override
+  String get moodOptimistic => 'Essuubi lingi';
+
+  @override
+  String get moodVeryOptimistic => 'Essuubi lingi nnyo';
+
+  @override
+  String get scenarioBull => 'Embeera ennungi';
+
+  @override
+  String get scenarioBase => 'Embeera ya bulijjo';
+
+  @override
+  String get scenarioBear => 'Embeera embi';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Ebbeeyi eya kati: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Emitendera emikulu';
+
+  @override
+  String get keyLevelSupport => 'Obuwagizi';
+
+  @override
+  String get keyLevelResistance => 'Okuziyiza';
+
+  @override
+  String get keyLevelAnchor => 'Omusingi';
+
+  @override
+  String get upcomingEvents => 'Ebigenda okubaawo';
+
+  @override
+  String get outlookChartNote => 'Emiwendo gya kulabirako; emikisa kuteebereza buteebereza, si bunnabbi.';
+
+  @override
+  String get accountTitle => 'Akawunti';
+
+  @override
+  String get signIn => 'Yingira';
+
+  @override
+  String get signOut => 'Fuluma';
+
+  @override
+  String get notSignedIn => 'Toyingidde';
+
+  @override
+  String get accountBenefit => 'Yingira okwewandiisa kwo kukole ku byuma byo byonna.';
+
+  @override
+  String get accountSyncedNote => 'Okwewandiisa kwo n\'okwekenneenya okusigaddeyo bye bimu ku buli kyuma.';
+
+  @override
+  String get signInTitle => 'Yingira mu StockLens';
+
+  @override
+  String get emailLabel => 'Endagiriro ya email';
+
+  @override
+  String get continueWithEmail => 'Weyongereyo ne email';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Tuweerezza koodi ya nnamba 6 ku $email. Ekola okumala eddakiika 10.';
+  }
+
+  @override
+  String get codeLabel => 'Koodi y\'okuyingira';
+
+  @override
+  String get resendCode => 'Weereza koodi empya';
+
+  @override
+  String get useDifferentEmail => 'Kozesa email endala';
+
+  @override
+  String get errInvalidCode => 'Koodi nkyamu oba ebiseera byayo biweddeko.';
+
+  @override
+  String get errInvalidEmail => 'Yingiza endagiriro ya email entuufu.';
+
+  @override
+  String get errSignInFailed => 'Okuyingira kulemye. Kebera yintaneeti yo oddemu ogezeeko.';
+
+  @override
+  String get checkoutWaiting => 'Maliriza okusasula mu browser yo. App ejja kwezza obuggya yokka ng\'omaze.';
+
+  @override
+  String get paymentViaStripe => 'Okusasula okw\'obukuumi mu browser yo nga kuyita mu Stripe. Sazaamu essaawa yonna.';
+
+  @override
+  String get paymentViaStore =>
+      'Osasulizibwa okuyita mu akawunti yo eya App Store oba Google Play. Sazaamu essaawa yonna mu nsengeka z\'edduuka.';
+
+  @override
+  String get keySpace => 'Ebbanga';
+
+  @override
+  String get doubleOptionTitle => 'Nyiga Option emirundi ebiri';
+
+  @override
+  String get doubleOptionSubtitle => 'Okunyiga Option emirundi ebiri amangu nakyo kiyita StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Okukisobozesa okukola ne mu apps endala, kkiriza StockLens mu System Settings → Privacy & Security → Input Monitoring, olwo oddemu oggulewo app.';
+
+  @override
+  String get openSystemSettings => 'Ggulawo System Settings';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Nyiga $shortcut oba nyiga Option emirundi ebiri wonna w\'oli okuyita StockLens.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Ekisinga okuyinzika';
+
+  @override
+  String get longTermToday => 'Leero';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'emyaka $years', one: 'omwaka 1');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range buli mwaka';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'ekisinga okuyinzika $price';
+  }
+
+  @override
+  String get confidenceLow => 'Obukakafu butono';
+
+  @override
+  String get confidenceMedium => 'Obukakafu bwa wakati';
+
+  @override
+  String get confidenceHigh => 'Obukakafu bungi';
+
+  @override
+  String get longTermNote =>
+      'Emiwendo gy\'ekiseera ekiwanvu gyesigamye ku ebyo ebiteeberezeddwa era gigaziwa ng\'ekiseera kiyitawo. Ebbeeyi teziteekamu magoba ku migabo. Kuteebereza buteebereza, si bunnabbi.';
+
+  @override
+  String get portfolio => 'Emigabo gyo';
+
+  @override
+  String get portfolioEmpty =>
+      'Tewali kintu wano. Ggulawo omugabo onyige “Gattako ku migabo gyo” okugoberera by\'olina.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Bitereddwa ku kyuma kino kyokka. Omugatte gukyusibwa ku miwendo gya ECB; ebbeeyi ziyinza okulwawo.';
+
+  @override
+  String get addToPortfolio => 'Gattako ku migabo gyo';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Gattako $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Omuwendo gw\'emigabo';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Ebbeeyi ya buli mugabo ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Olunaku lw\'okugula';
+
+  @override
+  String get portfolioAdd => 'Gattako';
+
+  @override
+  String get portfolioInvalidNumber => 'Wandiika ennamba esinga zeero.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol kyongeddwa ku migabo gyo.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Omuwendo gwonna';
+
+  @override
+  String get portfolioToday => 'Leero';
+
+  @override
+  String get portfolioGainLoss => 'Amagoba/okufiirwa';
+
+  @override
+  String get portfolioInvested => 'Ensimbi ezisiigiddwa';
+
+  @override
+  String get portfolioAllocation => 'Engabanya';
+
+  @override
+  String get portfolioPositions => 'Emigabo gy\'olina';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'ebbeeyi ya wakati $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'By\'olina';
+
+  @override
+  String get portfolioPurchases => 'Bye wagula';
+
+  @override
+  String get portfolioRemove => 'Ggyawo';
+
+  @override
+  String get portfolioExcluded =>
+      'Emigabo egitalina bbeeyi oba omuwendo gw\'okuwaanyisa ensimbi tegibalibwa mu mugatte.';
+
+  @override
+  String get priceAlerts => 'Okulabula ku bbeeyi';
+
+  @override
+  String get setPriceAlert => 'Teekawo okulabula ku bbeeyi';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Okulabula ku bbeeyi · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Bw\'erinnya okusukka';
+
+  @override
+  String get alertKindBelow => 'Bw\'ekka wansi wa';
+
+  @override
+  String get alertKindMove => 'Bw\'ekyuka ennyo mu lunaku lumu';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Ebbeeyi ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Enkyukakyuka ya lunaku (%)';
+
+  @override
+  String get alertAlreadyMet => 'Ebbeeyi emaze okusukka omutendera guno.';
+
+  @override
+  String get alertSave => 'Teekawo okulabula';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Okulabula kwa $symbol kuteereddwawo.';
+  }
+
+  @override
+  String get alertsEmpty => 'Tewali kulabula ku bbeeyi. Ggulawo omugabo onyige ekide okukuteekawo.';
+
+  @override
+  String get alertsNote =>
+      'Okulabula kukeberebwa buli ddakiika 5 nga StockLens ekola. Ku kompyuta esigala ekola mu menu bar oba tray; ku ssimu, kati okulabula kujja nga app eggule.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Waggulu wa $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Wansi wa $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Enkyukakyuka ya lunaku ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Kwakola $date ku $price';
+  }
+
+  @override
+  String get alertRearm => 'Ddamu okuteekawo';
+
+  @override
+  String get alertDelete => 'Sangula';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol kirinnye okusukka $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol kikkiridde wansi wa $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol kyakyuse $percent leero';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Ebbeeyi eya kati: $price';
+  }
+
+  @override
+  String get alertOpen => 'Ggulawo';
+
+  @override
+  String get keepInTrayTitle => 'Sigala ng\'okola eddirisa bwe liggalwa';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens esigala mu menu bar oba tray, n\'olwekyo shortcut n\'okulabula ku bbeeyi bisigala nga bikola.';
+
+  @override
+  String get termsOfUse => 'Amateeka g\'okukozesa';
+
+  @override
+  String get privacyPolicy => 'Enkola y\'ebyama';
+
+  @override
+  String get subscriptionLegal =>
+      'Okwewandiisa kwezza obuggya kwokka buli mwezi okutuusa lw\'okusazaamu. Bw\'owewandiisa, oba okkirizza Amateeka g\'okukozesa n\'Enkola y\'ebyama.';
+
+  @override
+  String get deleteAccount => 'Sangula akawunti';
+
+  @override
+  String get deleteAccountTitle => 'Oyagala okusangula akawunti yo?';
+
+  @override
+  String get deleteAccountBody =>
+      'Akawunti yo ne buli kimu ekiterekeddwa ku seva yaffe (email, ky\'okkirizibwa, enkozesa) bijja kusangulwa ddala, era okwekenneenya kw\'otokozesanga kujja kubula. Okwewandiisa okwasasulirwa mu browser kusazibwamu amangu ddala; okwewandiisa kwa App Store oba Google Play kulina okusazibwamu mu nsengeka z\'edduuka.';
+
+  @override
+  String get deleteLocalData =>
+      'Sangula ne data eri ku kyuma kino (emigabo, okulabula, by\'oyagala, ebyafaayo, okwekenneenya okuterekeddwa)';
+
+  @override
+  String get deleteAccountConfirm => 'Sangula ddala';
+
+  @override
+  String get accountDeleted => 'Akawunti yo esanguddwa.';
+
+  @override
+  String get errDeleteAccount => 'Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.';
+}
