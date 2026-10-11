@@ -1,0 +1,1270 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Malayalam (`ml`).
+class AppLocalizationsMl extends AppLocalizations {
+  AppLocalizationsMl([String locale = 'ml']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'ഒരു ഓഹരിയുടെ ഫോട്ടോ എടുത്ത് അതിനെക്കുറിച്ച് എല്ലാം അറിയൂ.';
+
+  @override
+  String get homeHint =>
+      'ഓഹരി സർട്ടിഫിക്കറ്റ്, ബ്രോക്കറേജ് ആപ്പിന്റെ സ്ക്രീൻ, പത്രം അല്ലെങ്കിൽ കമ്പനിയുടെ ലോഗോ – ഓഹരി തിരിച്ചറിയാൻ സഹായിക്കുന്ന എന്തും.';
+
+  @override
+  String get takePhoto => 'ഫോട്ടോ എടുക്കുക';
+
+  @override
+  String get chooseFromGallery => 'ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get chooseImage => 'ചിത്രം തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get enterTickerManually => 'ടിക്കർ നേരിട്ട് നൽകുക';
+
+  @override
+  String get tickerInputLabel => 'ടിക്കർ ചിഹ്നം';
+
+  @override
+  String get tickerInputHint => 'ഉദാ. AAPL';
+
+  @override
+  String get lookUp => 'തിരയുക';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'ഡെമോ മോഡ് – മാർക്കറ്റ് ഡാറ്റ കീ കോൺഫിഗർ ചെയ്തിട്ടില്ല. സാമ്പിൾ ഡാറ്റ ഇവയ്ക്ക് ലഭ്യമാണ്: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'ചിത്രം വിശകലനം ചെയ്യുന്നു…';
+
+  @override
+  String get loadingData => 'ഡാറ്റ ലോഡ് ചെയ്യുന്നു…';
+
+  @override
+  String get noCandidatesTitle => 'ഓഹരിയൊന്നും തിരിച്ചറിഞ്ഞില്ല';
+
+  @override
+  String get noCandidatesBody =>
+      'ഈ ചിത്രത്തിൽ ഒരു ഓഹരിയും തിരിച്ചറിയാൻ ഞങ്ങൾക്ക് കഴിഞ്ഞില്ല. കൂടുതൽ വ്യക്തമായ ഫോട്ടോ പരീക്ഷിക്കുക, അല്ലെങ്കിൽ ടിക്കർ നേരിട്ട് നൽകുക.';
+
+  @override
+  String get whatWeSaw => 'ഞങ്ങൾ കണ്ടത്';
+
+  @override
+  String get chooseCandidateTitle => 'ഏത് ഓഹരിയാണ് നിങ്ങൾ ഉദ്ദേശിച്ചത്?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% ഉറപ്പ്';
+  }
+
+  @override
+  String get settings => 'ക്രമീകരണം';
+
+  @override
+  String get language => 'ഭാഷ';
+
+  @override
+  String get systemLanguage => 'സിസ്റ്റം ഡിഫോൾട്ട്';
+
+  @override
+  String get about => 'ആപ്പിനെക്കുറിച്ച്';
+
+  @override
+  String get disclaimer =>
+      'ഈ ആപ്പ് വിവരങ്ങൾ മാത്രമാണ് നൽകുന്നത്, ഇത് നിക്ഷേപ ഉപദേശമല്ല. ഡാറ്റ വൈകിയതോ കൃത്യമല്ലാത്തതോ ആകാം.';
+
+  @override
+  String dataSource(String source) {
+    return 'ഡാറ്റ ഉറവിടം: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'തിരിച്ചറിയൽ: $source';
+  }
+
+  @override
+  String get retry => 'വീണ്ടും ശ്രമിക്കുക';
+
+  @override
+  String get cancel => 'റദ്ദാക്കുക';
+
+  @override
+  String get ok => 'ശരി';
+
+  @override
+  String get close => 'അടയ്ക്കുക';
+
+  @override
+  String get errorGeneric => 'എന്തോ കുഴപ്പം സംഭവിച്ചു.';
+
+  @override
+  String get errorSectionUnavailable => 'ഈ വിഭാഗം ലോഡ് ചെയ്യാനായില്ല.';
+
+  @override
+  String get notAvailable => 'ലഭ്യമല്ല';
+
+  @override
+  String get sectionIdentity => 'തിരിച്ചറിയൽ';
+
+  @override
+  String get sectionPrice => 'വില';
+
+  @override
+  String get sectionValuation => 'മൂല്യനിർണ്ണയം';
+
+  @override
+  String get sectionFinancials => 'സാമ്പത്തിക കണക്കുകൾ';
+
+  @override
+  String get sectionDividend => 'ലാഭവിഹിതം';
+
+  @override
+  String get sectionProfile => 'കമ്പനി പ്രൊഫൈൽ';
+
+  @override
+  String get sectionAnalysts => 'അനലിസ്റ്റ് റേറ്റിംഗുകൾ';
+
+  @override
+  String get sectionNews => 'വാർത്തകൾ';
+
+  @override
+  String get sectionRecognition => 'തിരിച്ചറിയൽ വിശദാംശങ്ങൾ';
+
+  @override
+  String get labelSymbol => 'ടിക്കർ';
+
+  @override
+  String get labelExchange => 'എക്സ്ചേഞ്ച്';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'കറൻസി';
+
+  @override
+  String get labelCountry => 'രാജ്യം';
+
+  @override
+  String get labelIndustry => 'വ്യവസായം';
+
+  @override
+  String get labelSector => 'മേഖല';
+
+  @override
+  String get labelWebsite => 'വെബ്സൈറ്റ്';
+
+  @override
+  String get labelIpoDate => 'IPO തീയതി';
+
+  @override
+  String get labelMarketCap => 'വിപണി മൂലധനം';
+
+  @override
+  String get labelSharesOutstanding => 'നിലവിലുള്ള ഓഹരികൾ';
+
+  @override
+  String get labelEmployees => 'ജീവനക്കാർ';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'ആസ്ഥാനം';
+
+  @override
+  String get labelDescription => 'വിവരണം';
+
+  @override
+  String get labelLastPrice => 'അവസാന വില';
+
+  @override
+  String get labelChange => 'മാറ്റം';
+
+  @override
+  String get labelOpen => 'ഓപ്പൺ';
+
+  @override
+  String get labelDayHigh => 'ദിവസത്തെ ഉയർന്ന വില';
+
+  @override
+  String get labelDayLow => 'ദിവസത്തെ താഴ്ന്ന വില';
+
+  @override
+  String get labelPreviousClose => 'മുൻ ക്ലോസിംഗ്';
+
+  @override
+  String get labelWeek52High => '52 ആഴ്ചയിലെ ഉയർന്ന നില';
+
+  @override
+  String get labelWeek52Low => '52 ആഴ്ചയിലെ താഴ്ന്ന നില';
+
+  @override
+  String get labelAverageVolume10d => 'ശരാശരി വോളിയം (10 ദിവസം)';
+
+  @override
+  String updatedAt(String time) {
+    return 'അപ്ഡേറ്റ് ചെയ്തത്: $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (ട്രെയിലിംഗ്)';
+
+  @override
+  String get labelPeForward => 'P/E (ഫോർവേഡ്)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / ഫ്രീ ക്യാഷ് ഫ്ലോ';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'ബീറ്റ';
+
+  @override
+  String get labelRevenueTtm => 'വരുമാനം (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'അറ്റാദായം (TTM)';
+
+  @override
+  String get labelGrossMargin => 'മൊത്ത മാർജിൻ';
+
+  @override
+  String get labelOperatingMargin => 'ഓപ്പറേറ്റിംഗ് മാർജിൻ';
+
+  @override
+  String get labelNetMargin => 'അറ്റ മാർജിൻ';
+
+  @override
+  String get labelRoe => 'ഇക്വിറ്റിയിലെ ആദായം';
+
+  @override
+  String get labelRoa => 'ആസ്തികളിലെ ആദായം';
+
+  @override
+  String get labelDebtToEquity => 'കടം / ഇക്വിറ്റി';
+
+  @override
+  String get labelCurrentRatio => 'കറന്റ് റേഷ്യോ';
+
+  @override
+  String get labelRevenueGrowth => 'വരുമാന വളർച്ച (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'EPS വളർച്ച (YoY)';
+
+  @override
+  String get labelDividendYield => 'ലാഭവിഹിത യീൽഡ്';
+
+  @override
+  String get labelDividendPerShare => 'ഓഹരിയൊന്നിന് ലാഭവിഹിതം';
+
+  @override
+  String get labelPayoutRatio => 'പേഔട്ട് അനുപാതം';
+
+  @override
+  String get labelConsensus => 'സമവായം';
+
+  @override
+  String get ratingStrongBuy => 'ശക്തമായ വാങ്ങൽ';
+
+  @override
+  String get ratingBuy => 'വാങ്ങൽ';
+
+  @override
+  String get ratingHold => 'ഹോൾഡ്';
+
+  @override
+  String get ratingSell => 'വിൽപ്പന';
+
+  @override
+  String get ratingStrongSell => 'ശക്തമായ വിൽപ്പന';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count അനലിസ്റ്റുകൾ', one: '1 അനലിസ്റ്റ്');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'കാലയളവ്: $period';
+  }
+
+  @override
+  String get noNews => 'സമീപകാല വാർത്തകളൊന്നുമില്ല.';
+
+  @override
+  String get openArticle => 'ലേഖനം തുറക്കുക';
+
+  @override
+  String get openLinkFailed => 'ലിങ്ക് തുറക്കാനായില്ല.';
+
+  @override
+  String get recognitionSummary => 'സംഗ്രഹം';
+
+  @override
+  String get recognitionEvidence => 'ഞങ്ങൾ ഇങ്ങനെ കരുതാൻ കാരണം';
+
+  @override
+  String get recognitionRawText => 'ചിത്രത്തിൽ നിന്ന് വായിച്ച ടെക്സ്റ്റ്';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'ചിത്ര തിരിച്ചറിയൽ കോൺഫിഗർ ചെയ്തിട്ടില്ല (ANTHROPIC_API_KEY ഇല്ല). ടിക്കർ നേരിട്ട് നൽകുക.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'തിരിച്ചറിയൽ സേവനവുമായി ബന്ധപ്പെടാനായില്ല. നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'തിരിച്ചറിയൽ സേവനം ഒരു പിശക് നൽകി (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'തിരിച്ചറിയൽ സേവനത്തിന് ഈ ചിത്രം പ്രോസസ്സ് ചെയ്യാനായില്ല.';
+
+  @override
+  String get errRecognitionTruncated => 'തിരിച്ചറിയൽ പ്രതികരണം പാതിവഴിയിൽ മുറിഞ്ഞുപോയി. വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get errRecognitionBadResponse => 'തിരിച്ചറിയൽ സേവനത്തിൽ നിന്ന് അപ്രതീക്ഷിത പ്രതികരണം.';
+
+  @override
+  String get errRecognitionEmpty => 'തിരിച്ചറിയൽ സേവനം ശൂന്യമായ പ്രതികരണം നൽകി.';
+
+  @override
+  String get errMissingFinnhubKey => 'മാർക്കറ്റ് ഡാറ്റ കോൺഫിഗർ ചെയ്തിട്ടില്ല (FINNHUB_API_KEY ഇല്ല).';
+
+  @override
+  String get errMarketUnreachable =>
+      'മാർക്കറ്റ് ഡാറ്റ സേവനവുമായി ബന്ധപ്പെടാനായില്ല. നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക.';
+
+  @override
+  String get errMarketRateLimited =>
+      'മാർക്കറ്റ് ഡാറ്റ സേവനത്തിലേക്ക് വളരെയധികം അഭ്യർത്ഥനകൾ. ഒരു മിനിറ്റ് കാത്തിരിക്കുക.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'മാർക്കറ്റ് ഡാറ്റ സേവനം ഒരു പിശക് നൽകി (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'മാർക്കറ്റ് ഡാറ്റ സേവനത്തിൽ നിന്ന് അപ്രതീക്ഷിത പ്രതികരണം.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return '$symbol എന്നതിന് വില ഡാറ്റയൊന്നും കണ്ടെത്തിയില്ല.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return '$symbol എന്നതിന് കമ്പനി പ്രൊഫൈലൊന്നും കണ്ടെത്തിയില്ല.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'ഡെമോ മോഡിൽ $symbols മാത്രമേ ലഭ്യമാകൂ. ലൈവ് ഡാറ്റയ്ക്കായി FINNHUB_API_KEY ചേർക്കുക.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'എന്തോ കുഴപ്പം സംഭവിച്ചു: $detail';
+  }
+
+  @override
+  String get newSearch => 'പുതിയ തിരയൽ';
+
+  @override
+  String get recentSearches => 'സമീപകാലം';
+
+  @override
+  String get noRecentSearches => 'സമീപകാല തിരയലുകളൊന്നുമില്ല.';
+
+  @override
+  String get clearRecent => 'സമീപകാലം മായ്ക്കുക';
+
+  @override
+  String get greeting => 'ഇന്ന് ഏത് ഓഹരി നോക്കാം?';
+
+  @override
+  String get searchHint => 'ടിക്കർ അല്ലെങ്കിൽ കമ്പനിയുടെ പേര്';
+
+  @override
+  String get attachImage => 'ചിത്രം അറ്റാച്ച് ചെയ്യുക';
+
+  @override
+  String get searchResultsTitle => 'തിരയൽ ഫലങ്ങൾ';
+
+  @override
+  String errNoResults(String query) {
+    return '“$query” എന്നതിന് ഓഹരികളൊന്നും കണ്ടെത്തിയില്ല.';
+  }
+
+  @override
+  String get quickBarHint => 'ടിക്കർ അല്ലെങ്കിൽ കമ്പനിയുടെ പേര് ടൈപ്പ് ചെയ്യുക…';
+
+  @override
+  String get openFullWindow => 'വിൻഡോ തുറക്കുക';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'എവിടെ നിന്നും StockLens തുറക്കാൻ $shortcut അമർത്തുക.';
+  }
+
+  @override
+  String get trayOpen => 'StockLens തുറക്കുക';
+
+  @override
+  String get trayQuickSearch => 'ദ്രുത തിരയൽ';
+
+  @override
+  String get trayQuit => 'പുറത്തുകടക്കുക';
+
+  @override
+  String get appearance => 'രൂപഭാവം';
+
+  @override
+  String get themeSystem => 'സിസ്റ്റം';
+
+  @override
+  String get themeDark => 'ഡാർക്ക്';
+
+  @override
+  String get themeLight => 'ലൈറ്റ്';
+
+  @override
+  String get back => 'മടങ്ങുക';
+
+  @override
+  String get aiSectionTitle => 'AI വിശകലനം';
+
+  @override
+  String get aiIntro =>
+      'AI എഴുതിയ വിശദമായ അവലോകനം: സമീപകാല വാർത്തകളുടെ സംഗ്രഹം, ബിസിനസ്സ്, ശക്തികൾ, അപകടസാധ്യതകളും മറഞ്ഞിരിക്കുന്ന ഘടകങ്ങളും, മൂല്യനിർണ്ണയം, മനഃശാസ്ത്ര, സാമൂഹിക, സാങ്കേതിക, മാക്രോ സാമ്പത്തിക വീക്ഷണങ്ങളിൽ നിന്നുള്ള സാഹചര്യങ്ങളോടെ വിലയുടെ ഭാവി സാധ്യതകൾ, ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ.';
+
+  @override
+  String get aiGenerate => 'വിശകലനം തയ്യാറാക്കുക';
+
+  @override
+  String get aiRegenerate => 'വീണ്ടും തയ്യാറാക്കുക';
+
+  @override
+  String get aiGenerating => 'വിശകലനം തയ്യാറാക്കുന്നു… ഇതിന് ഒന്നോ രണ്ടോ മിനിറ്റ് എടുത്തേക്കാം.';
+
+  @override
+  String get aiSources => 'ഉറവിടങ്ങൾ';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'തയ്യാറാക്കിയത്: $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'പൊതു ഡാറ്റയെയും സമീപകാല വാർത്തകളെയും അടിസ്ഥാനമാക്കി AI തയ്യാറാക്കിയ വിശകലനം. ഇതിൽ പിശകുകൾ ഉണ്ടാകാം അല്ലെങ്കിൽ ഇത് കാലഹരണപ്പെട്ടതാകാം, ഇത് നിക്ഷേപ ഉപദേശമല്ല.';
+
+  @override
+  String get errAiNotConfigured => 'AI വിശകലനം കോൺഫിഗർ ചെയ്തിട്ടില്ല (ANTHROPIC_API_KEY ഇല്ല).';
+
+  @override
+  String get errAiUnreachable => 'AI സേവനവുമായി ബന്ധപ്പെടാനായില്ല. നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI സേവനം ഒരു പിശക് നൽകി (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'ഈ ഓഹരി വിശകലനം ചെയ്യാൻ AI സേവനം വിസമ്മതിച്ചു.';
+
+  @override
+  String get errAiBadResponse => 'AI സേവനത്തിൽ നിന്ന് അപ്രതീക്ഷിത പ്രതികരണം.';
+
+  @override
+  String get sectionChart => 'വില ചാർട്ട്';
+
+  @override
+  String get rangeOneWeek => '1W';
+
+  @override
+  String get rangeOneMonth => '1M';
+
+  @override
+  String get rangeThreeMonths => '3M';
+
+  @override
+  String get rangeOneYear => '1Y';
+
+  @override
+  String get rangeFiveYears => '5Y';
+
+  @override
+  String get chartUnavailable => 'നിലവിലെ ഡാറ്റ ഉറവിടത്തിൽ നിന്ന് വിലയുടെ ചരിത്രം ലഭ്യമല്ല.';
+
+  @override
+  String get sectionStatements => 'സാമ്പത്തിക റിപ്പോർട്ടുകൾ (വാർഷികം)';
+
+  @override
+  String get labelFiscalYear => 'സാമ്പത്തിക വർഷം';
+
+  @override
+  String get labelRevenue => 'വരുമാനം';
+
+  @override
+  String get labelNetIncome => 'അറ്റാദായം';
+
+  @override
+  String get labelTotalAssets => 'മൊത്തം ആസ്തികൾ';
+
+  @override
+  String get labelTotalLiabilities => 'മൊത്തം ബാധ്യതകൾ';
+
+  @override
+  String get labelEquity => 'ഓഹരി ഉടമകളുടെ ഇക്വിറ്റി';
+
+  @override
+  String get labelOperatingCashFlow => 'ഓപ്പറേറ്റിംഗ് ക്യാഷ് ഫ്ലോ';
+
+  @override
+  String get statementsUnavailable => 'ഈ ഓഹരിയുടെ പ്രസിദ്ധീകരിച്ച സാമ്പത്തിക റിപ്പോർട്ടുകൾ ലഭ്യമല്ല.';
+
+  @override
+  String get launchAtLogin => 'ലോഗിൻ ചെയ്യുമ്പോൾ തുറക്കുക';
+
+  @override
+  String get hotkeyLabel => 'ഗ്ലോബൽ ഷോർട്ട്കട്ട്';
+
+  @override
+  String get hotkeyRecordHint => 'ഇവിടെ ക്ലിക്ക് ചെയ്യുക, തുടർന്ന് പുതിയ കീ കോമ്പിനേഷൻ അമർത്തുക';
+
+  @override
+  String get hotkeyReset => 'ഡിഫോൾട്ടിലേക്ക് റീസെറ്റ് ചെയ്യുക';
+
+  @override
+  String get pasteImage => 'ക്ലിപ്പ്ബോർഡിൽ നിന്ന് ചിത്രം ഒട്ടിക്കുക';
+
+  @override
+  String get errClipboardNoImage => 'ക്ലിപ്പ്ബോർഡിൽ ചിത്രമൊന്നുമില്ല.';
+
+  @override
+  String get favorites => 'പ്രിയപ്പെട്ടവ';
+
+  @override
+  String get addToFavorites => 'പ്രിയപ്പെട്ടവയിലേക്ക് ചേർക്കുക';
+
+  @override
+  String get removeFromFavorites => 'പ്രിയപ്പെട്ടവയിൽ നിന്ന് നീക്കം ചെയ്യുക';
+
+  @override
+  String get noFavorites => 'ഇതുവരെ പ്രിയപ്പെട്ടവയൊന്നുമില്ല. ചേർക്കാൻ ഒരു ഓഹരിയിലെ നക്ഷത്രത്തിൽ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get displayCurrency => 'പ്രദർശന കറൻസി';
+
+  @override
+  String get displayCurrencyNone => 'ഓഹരിയുടെ സ്വന്തം കറൻസി മാത്രം';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency-ൽ';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'നിരക്ക്: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'അപ്ഡേറ്റുകൾ';
+
+  @override
+  String currentVersion(String version) {
+    return 'പതിപ്പ് $version';
+  }
+
+  @override
+  String get autoUpdate => 'അപ്ഡേറ്റുകൾ സ്വയമേവ ഇൻസ്റ്റാൾ ചെയ്യുക';
+
+  @override
+  String get checkForUpdates => 'അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കുക';
+
+  @override
+  String get updateChecking => 'അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കുന്നു…';
+
+  @override
+  String get updateUpToDate => 'നിങ്ങൾ ഏറ്റവും പുതിയ പതിപ്പാണ് ഉപയോഗിക്കുന്നത്.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'പതിപ്പ് $version ലഭ്യമാണ്.';
+  }
+
+  @override
+  String get updateDownloading => 'അപ്ഡേറ്റ് പശ്ചാത്തലത്തിൽ ഡൗൺലോഡ് ചെയ്യുന്നു…';
+
+  @override
+  String get updateDownloaded => 'അപ്ഡേറ്റ് തയ്യാറാണ്. ഇൻസ്റ്റാൾ ചെയ്യാൻ റീസ്റ്റാർട്ട് ചെയ്യുക.';
+
+  @override
+  String get updateNow => 'അപ്ഡേറ്റ് ചെയ്യുക';
+
+  @override
+  String get restartNow => 'റീസ്റ്റാർട്ട് ചെയ്യുക';
+
+  @override
+  String get updatesViaStore => 'അപ്ഡേറ്റുകൾ ആപ്പ് സ്റ്റോർ വഴി സ്വയമേവ ലഭിക്കും.';
+
+  @override
+  String get updateCheckFailed => 'അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കാനായില്ല.';
+
+  @override
+  String get subscription => 'സബ്സ്ക്രിപ്ഷൻ';
+
+  @override
+  String get planTrial => 'ട്രയൽ';
+
+  @override
+  String get planNormal => 'സാധാരണ';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'സജീവ പ്ലാനൊന്നുമില്ല';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'മാസം $count വിശകലനങ്ങൾ';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$count വിശകലനങ്ങളോടെ $days ദിവസത്തെ സൗജന്യ ട്രയൽ';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ട്രയലിൽ $days ദിവസം ബാക്കി',
+      one: 'ട്രയലിൽ 1 ദിവസം ബാക്കി',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'നിങ്ങളുടെ സൗജന്യ ട്രയൽ അവസാനിച്ചു. വിശകലനം തുടരാൻ ഒരു പ്ലാൻ തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'ഈ കാലയളവിൽ $total-ൽ $remaining വിശകലനങ്ങൾ ബാക്കി';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count അധിക വിശകലനങ്ങൾ';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date-ന് പുതുക്കും';
+  }
+
+  @override
+  String get choosePlan => 'പ്ലാൻ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get currentPlan => 'നിലവിലെ പ്ലാൻ';
+
+  @override
+  String get subscribe => 'സബ്സ്ക്രൈബ് ചെയ്യുക';
+
+  @override
+  String get perMonth => '/ മാസം';
+
+  @override
+  String get extraPacksTitle => 'കൂടുതൽ വേണോ? അധിക വിശകലനങ്ങൾ വാങ്ങുക';
+
+  @override
+  String get extraPacksHint =>
+      'അധിക വിശകലനങ്ങൾ ഒരിക്കലും കാലഹരണപ്പെടില്ല, നിങ്ങളുടെ പ്രതിമാസ ക്വാട്ട തീർന്ന ശേഷമാണ് ഉപയോഗിക്കുക.';
+
+  @override
+  String get buy => 'വാങ്ങുക';
+
+  @override
+  String get restorePurchases => 'വാങ്ങലുകൾ പുനഃസ്ഥാപിക്കുക';
+
+  @override
+  String get manageSubscription => 'സബ്സ്ക്രിപ്ഷൻ മാനേജ് ചെയ്യുക';
+
+  @override
+  String get purchaseSuccess => 'നന്ദി! നിങ്ങളുടെ വാങ്ങൽ സജീവമാണ്.';
+
+  @override
+  String get purchasePending => 'വാങ്ങൽ തീർപ്പാകാനുണ്ട്…';
+
+  @override
+  String get purchaseFailed => 'വാങ്ങൽ പൂർത്തിയാക്കാനായില്ല.';
+
+  @override
+  String get purchaseCanceled => 'വാങ്ങൽ റദ്ദാക്കി.';
+
+  @override
+  String get billingUnavailable =>
+      'ഈ പ്ലാറ്റ്ഫോമിൽ വാങ്ങലുകൾ ഇതുവരെ ലഭ്യമല്ല. നിങ്ങളുടെ ഫോണിലോ Mac-ലോ സബ്സ്ക്രൈബ് ചെയ്യുക; നിങ്ങളുടെ പ്ലാൻ എല്ലാ ഉപകരണങ്ങളിലും പ്രവർത്തിക്കും.';
+
+  @override
+  String get errQuotaExceeded =>
+      'ഈ കാലയളവിൽ നിങ്ങൾക്ക് വിശകലനങ്ങളൊന്നും ബാക്കിയില്ല. പ്ലാൻ അപ്ഗ്രേഡ് ചെയ്യുക അല്ലെങ്കിൽ അധിക വിശകലനങ്ങൾ വാങ്ങുക.';
+
+  @override
+  String get errTrialExpired => 'നിങ്ങളുടെ സൗജന്യ ട്രയൽ അവസാനിച്ചു. തുടരാൻ ഒരു പ്ലാൻ തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String get errNoPlan => 'AI വിശകലനത്തിന് ഒരു സജീവ പ്ലാൻ ആവശ്യമാണ്.';
+
+  @override
+  String get viewPlans => 'പ്ലാനുകൾ കാണുക';
+
+  @override
+  String get usageTitle => 'ഉപയോഗം';
+
+  @override
+  String get demoPurchaseNote => 'ഡെമോ ബില്ലിംഗ്: ഈ പ്ലാറ്റ്ഫോമിൽ വാങ്ങലുകൾ സിമുലേറ്റ് ചെയ്യുന്നു.';
+
+  @override
+  String get mostPopular => 'ഏറ്റവും ജനപ്രിയം';
+
+  @override
+  String get bestValue => 'ഏറ്റവും മികച്ച മൂല്യം';
+
+  @override
+  String get planFeaturesCommon =>
+      'ഫോട്ടോ തിരിച്ചറിയൽ, ലൈവ് ഡാറ്റ, ചാർട്ടുകൾ, പ്രിയപ്പെട്ടവ, എല്ലാ 120 ഭാഷകളും എല്ലാ പ്ലാനിലും ഉൾപ്പെടുന്നു. ക്വാട്ട AI വിശകലനങ്ങൾക്ക് മാത്രമാണ് ബാധകം.';
+
+  @override
+  String get searchLanguages => 'ഭാഷകൾ തിരയുക…';
+
+  @override
+  String get noLanguageMatch => 'പൊരുത്തപ്പെടുന്ന ഭാഷയൊന്നുമില്ല.';
+
+  @override
+  String get aiSettings => 'AI വിശകലനം';
+
+  @override
+  String get aiLength => 'ദൈർഘ്യം';
+
+  @override
+  String get aiDepthBrief => 'ചുരുക്കം';
+
+  @override
+  String get aiDepthStandard => 'സ്റ്റാൻഡേർഡ്';
+
+  @override
+  String get aiDepthDeep => 'വിശദം';
+
+  @override
+  String get aiDepthBriefDesc => 'പ്രധാന കാര്യങ്ങൾ, വേഗത്തിൽ.';
+
+  @override
+  String get aiDepthStandardDesc => 'എല്ലാ വിഭാഗങ്ങളുമുള്ള പൂർണ്ണ റിപ്പോർട്ട്.';
+
+  @override
+  String get aiDepthDeepDesc => 'കൂടുതൽ വെബ് തിരയലുകൾ, സമാന കമ്പനികളുമായുള്ള താരതമ്യം, കൂടുതൽ ആഴത്തിലുള്ള വിശദാംശങ്ങൾ.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'ഏകദേശം $min–$max വാക്കുകൾ';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count വിശകലനങ്ങൾ ഉപയോഗിക്കും',
+      one: '1 വിശകലനം ഉപയോഗിക്കും',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'വായനക്കാരന്റെ നിലവാരം';
+
+  @override
+  String get aiReaderBeginner => 'തുടക്കക്കാരൻ';
+
+  @override
+  String get aiReaderExperienced => 'പരിചയസമ്പന്നൻ';
+
+  @override
+  String get aiReaderBeginnerDesc => 'ലളിതമായ ഭാഷ; എല്ലാ സാങ്കേതിക പദങ്ങളും വിശദീകരിക്കും.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'സാധാരണ സാമ്പത്തിക പദാവലിയോടെയുള്ള സാന്ദ്രമായ ടെക്സ്റ്റ്.';
+
+  @override
+  String get aiCounterArgument => 'ഏറ്റവും ശക്തമായ എതിർവാദം';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'സംഗ്രഹം എപ്പോഴും സ്വന്തം നിഗമനത്തിനെതിരായ ഏറ്റവും ശക്തമായ വാദത്തോടെയാണ് അവസാനിക്കുക.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'നിങ്ങളുടെ പ്ലാനിൽ ഓരോ വിശകലനത്തിനും പരമാവധി $count വെബ് തിരയലുകൾ',
+      one: 'നിങ്ങളുടെ പ്ലാനിൽ ഓരോ വിശകലനത്തിനും പരമാവധി 1 വെബ് തിരയൽ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'പ്ലാൻ അനുസരിച്ച് സ്റ്റാൻഡേർഡ് ദൈർഘ്യത്തിൽ: സാധാരണ $normal, Pro $pro, Max $max, Ultra $ultra. ചുരുക്കത്തിൽ 2 കുറവ്, വിശദത്തിൽ 2 കൂടുതൽ.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'പരമാവധി $count വെബ് തിരയലുകൾ',
+      one: 'പരമാവധി 1 വെബ് തിരയൽ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ഓരോ വിശകലനത്തിനും $count വെബ് തിരയലുകൾ',
+      one: 'ഓരോ വിശകലനത്തിനും 1 വെബ് തിരയൽ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'ഈ ദൈർഘ്യത്തിന് $needed വിശകലനങ്ങൾ വേണം, പക്ഷേ $left മാത്രമേ ബാക്കിയുള്ളൂ. ക്രമീകരണത്തിൽ കുറഞ്ഞ ദൈർഘ്യം തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ കൂടുതൽ വിശകലനങ്ങൾ നേടുക.';
+  }
+
+  @override
+  String get outlookMarketMood => 'വിപണി മനോഭാവം';
+
+  @override
+  String get moodVeryPessimistic => 'വളരെ അശുഭാപ്തിപരം';
+
+  @override
+  String get moodPessimistic => 'അശുഭാപ്തിപരം';
+
+  @override
+  String get moodNeutral => 'നിഷ്പക്ഷം';
+
+  @override
+  String get moodOptimistic => 'ശുഭാപ്തിപരം';
+
+  @override
+  String get moodVeryOptimistic => 'വളരെ ശുഭാപ്തിപരം';
+
+  @override
+  String get scenarioBull => 'മുന്നേറ്റ സാഹചര്യം';
+
+  @override
+  String get scenarioBase => 'അടിസ്ഥാന സാഹചര്യം';
+
+  @override
+  String get scenarioBear => 'ഇടിവ് സാഹചര്യം';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'നിലവിലെ വില: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'പ്രധാന നിലകൾ';
+
+  @override
+  String get keyLevelSupport => 'സപ്പോർട്ട്';
+
+  @override
+  String get keyLevelResistance => 'റെസിസ്റ്റൻസ്';
+
+  @override
+  String get keyLevelAnchor => 'ആങ്കർ നില';
+
+  @override
+  String get upcomingEvents => 'വരാനിരിക്കുന്ന സംഭവങ്ങൾ';
+
+  @override
+  String get outlookChartNote => 'സൂചകമായ ശ്രേണികൾ; സാധ്യതകൾ ഏകദേശ വിലയിരുത്തലുകളാണ്, പ്രവചനങ്ങളല്ല.';
+
+  @override
+  String get accountTitle => 'അക്കൗണ്ട്';
+
+  @override
+  String get signIn => 'സൈൻ ഇൻ ചെയ്യുക';
+
+  @override
+  String get signOut => 'സൈൻ ഔട്ട് ചെയ്യുക';
+
+  @override
+  String get notSignedIn => 'സൈൻ ഇൻ ചെയ്തിട്ടില്ല';
+
+  @override
+  String get accountBenefit => 'നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ എല്ലാ ഉപകരണങ്ങളിലും പ്രവർത്തിക്കാൻ സൈൻ ഇൻ ചെയ്യുക.';
+
+  @override
+  String get accountSyncedNote =>
+      'നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷനും ബാക്കിയുള്ള വിശകലനങ്ങളും എല്ലാ ഉപകരണങ്ങളിലും ഒന്നുതന്നെയാണ്.';
+
+  @override
+  String get signInTitle => 'StockLens-ൽ സൈൻ ഇൻ ചെയ്യുക';
+
+  @override
+  String get emailLabel => 'ഇമെയിൽ വിലാസം';
+
+  @override
+  String get continueWithEmail => 'ഇമെയിൽ ഉപയോഗിച്ച് തുടരുക';
+
+  @override
+  String codeSentTo(String email) {
+    return '$email എന്ന വിലാസത്തിലേക്ക് ഞങ്ങൾ 6 അക്ക കോഡ് അയച്ചു. ഇത് 10 മിനിറ്റ് സാധുവാണ്.';
+  }
+
+  @override
+  String get codeLabel => 'സൈൻ-ഇൻ കോഡ്';
+
+  @override
+  String get resendCode => 'പുതിയ കോഡ് അയയ്ക്കുക';
+
+  @override
+  String get useDifferentEmail => 'മറ്റൊരു ഇമെയിൽ ഉപയോഗിക്കുക';
+
+  @override
+  String get errInvalidCode => 'കോഡ് തെറ്റാണ് അല്ലെങ്കിൽ കാലഹരണപ്പെട്ടു.';
+
+  @override
+  String get errInvalidEmail => 'സാധുവായ ഒരു ഇമെയിൽ വിലാസം നൽകുക.';
+
+  @override
+  String get errSignInFailed => 'സൈൻ ഇൻ പരാജയപ്പെട്ടു. നിങ്ങളുടെ കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get checkoutWaiting =>
+      'നിങ്ങളുടെ ബ്രൗസറിൽ പേയ്മെന്റ് പൂർത്തിയാക്കുക. അത് കഴിഞ്ഞാൽ ആപ്പ് സ്വയമേവ അപ്ഡേറ്റ് ആകും.';
+
+  @override
+  String get paymentViaStripe =>
+      'Stripe വഴി നിങ്ങളുടെ ബ്രൗസറിൽ സുരക്ഷിതമായ പേയ്മെന്റ്. എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.';
+
+  @override
+  String get paymentViaStore =>
+      'നിങ്ങളുടെ App Store അല്ലെങ്കിൽ Google Play അക്കൗണ്ട് വഴിയാണ് ബില്ലിംഗ്. സ്റ്റോർ ക്രമീകരണങ്ങളിൽ എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.';
+
+  @override
+  String get keySpace => 'സ്പേസ്';
+
+  @override
+  String get doubleOptionTitle => 'Option രണ്ടുതവണ അമർത്തുക';
+
+  @override
+  String get doubleOptionSubtitle => 'Option കീ വേഗത്തിൽ രണ്ടുതവണ അമർത്തിയാലും StockLens തുറക്കും.';
+
+  @override
+  String get doubleOptionPermission =>
+      'മറ്റ് ആപ്പുകളിലും ഇത് പ്രവർത്തിക്കാൻ, സിസ്റ്റം ക്രമീകരണം → സ്വകാര്യതയും സുരക്ഷയും → ഇൻപുട്ട് മോണിറ്ററിംഗ് എന്നതിൽ StockLens-ന് അനുമതി നൽകുക, തുടർന്ന് ആപ്പ് വീണ്ടും തുറക്കുക.';
+
+  @override
+  String get openSystemSettings => 'സിസ്റ്റം ക്രമീകരണം തുറക്കുക';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'എവിടെ നിന്നും StockLens തുറക്കാൻ $shortcut അമർത്തുക അല്ലെങ്കിൽ Option രണ്ടുതവണ അമർത്തുക.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'ഏറ്റവും സാധ്യതയുള്ളത്';
+
+  @override
+  String get longTermToday => 'ഇന്ന്';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years വർഷം', one: '1 വർഷം');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return 'പ്രതിവർഷം $range';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'ഏറ്റവും സാധ്യത $price';
+  }
+
+  @override
+  String get confidenceLow => 'കുറഞ്ഞ ഉറപ്പ്';
+
+  @override
+  String get confidenceMedium => 'ഇടത്തരം ഉറപ്പ്';
+
+  @override
+  String get confidenceHigh => 'ഉയർന്ന ഉറപ്പ്';
+
+  @override
+  String get longTermNote =>
+      'ദീർഘകാല ശ്രേണികൾ പറഞ്ഞിരിക്കുന്ന അനുമാനങ്ങളെ ആശ്രയിച്ചുള്ളതാണ്, കാലം ചെല്ലുന്തോറും വിശാലമാകും. വിലകളിൽ ലാഭവിഹിതം ഉൾപ്പെടുന്നില്ല. ഇവ ഏകദേശ വിലയിരുത്തലുകളാണ്, പ്രവചനങ്ങളല്ല.';
+
+  @override
+  String get portfolio => 'പോർട്ട്ഫോളിയോ';
+
+  @override
+  String get portfolioEmpty =>
+      'ഇവിടെ ഇതുവരെ ഒന്നുമില്ല. നിങ്ങളുടെ കൈവശമുള്ളവ ട്രാക്ക് ചെയ്യാൻ ഒരു ഓഹരി തുറന്ന് “പോർട്ട്ഫോളിയോയിലേക്ക് ചേർക്കുക” ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get portfolioLocalNote =>
+      'ഈ ഉപകരണത്തിൽ മാത്രം സൂക്ഷിച്ചിരിക്കുന്നു. ആകെ തുകകൾ ECB റഫറൻസ് നിരക്കുകളിൽ പരിവർത്തനം ചെയ്യുന്നു; വിലകൾ വൈകിയേക്കാം.';
+
+  @override
+  String get addToPortfolio => 'പോർട്ട്ഫോളിയോയിലേക്ക് ചേർക്കുക';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol ചേർക്കുക';
+  }
+
+  @override
+  String get portfolioQuantity => 'ഓഹരികളുടെ എണ്ണം';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'ഓഹരിയൊന്നിന്റെ വില ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'വാങ്ങിയ തീയതി';
+
+  @override
+  String get portfolioAdd => 'ചേർക്കുക';
+
+  @override
+  String get portfolioInvalidNumber => 'പൂജ്യത്തേക്കാൾ വലിയ ഒരു സംഖ്യ നൽകുക.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol നിങ്ങളുടെ പോർട്ട്ഫോളിയോയിലേക്ക് ചേർത്തു.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'ആകെ മൂല്യം';
+
+  @override
+  String get portfolioToday => 'ഇന്ന്';
+
+  @override
+  String get portfolioGainLoss => 'ലാഭം/നഷ്ടം';
+
+  @override
+  String get portfolioInvested => 'നിക്ഷേപിച്ചത്';
+
+  @override
+  String get portfolioAllocation => 'വിന്യാസം';
+
+  @override
+  String get portfolioPositions => 'പൊസിഷനുകൾ';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'ശരാശരി ചെലവ് $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'നിങ്ങളുടെ പൊസിഷൻ';
+
+  @override
+  String get portfolioPurchases => 'വാങ്ങലുകൾ';
+
+  @override
+  String get portfolioRemove => 'നീക്കം ചെയ്യുക';
+
+  @override
+  String get portfolioExcluded => 'വിലയോ വിനിമയ നിരക്കോ ഇല്ലാത്ത പൊസിഷനുകൾ ആകെ തുകയിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല.';
+
+  @override
+  String get priceAlerts => 'വില അലേർട്ടുകൾ';
+
+  @override
+  String get setPriceAlert => 'വില അലേർട്ട് സജ്ജമാക്കുക';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'വില അലേർട്ട് · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'ഇതിന് മുകളിലേക്ക് ഉയർന്നാൽ';
+
+  @override
+  String get alertKindBelow => 'ഇതിന് താഴേക്ക് വീണാൽ';
+
+  @override
+  String get alertKindMove => 'ഒരു ദിവസം വലിയ ചാഞ്ചാട്ടം';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'വില ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'പ്രതിദിന ചാഞ്ചാട്ടം (%)';
+
+  @override
+  String get alertAlreadyMet => 'വില ഇതിനകം ഈ നില കടന്നിരിക്കുന്നു.';
+
+  @override
+  String get alertSave => 'അലേർട്ട് സജ്ജമാക്കുക';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol എന്നതിന് അലേർട്ട് സജ്ജമാക്കി.';
+  }
+
+  @override
+  String get alertsEmpty =>
+      'ഇതുവരെ വില അലേർട്ടുകളൊന്നുമില്ല. ഒരെണ്ണം സജ്ജമാക്കാൻ ഒരു ഓഹരി തുറന്ന് മണിയിൽ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get alertsNote =>
+      'StockLens പ്രവർത്തിക്കുമ്പോൾ ഓരോ 5 മിനിറ്റിലും അലേർട്ടുകൾ പരിശോധിക്കും. കമ്പ്യൂട്ടറിൽ ഇത് മെനു ബാറിലോ സിസ്റ്റം ട്രേയിലോ പ്രവർത്തിച്ചുകൊണ്ടിരിക്കും; ഫോണിൽ തൽക്കാലം ആപ്പ് തുറന്നിരിക്കുമ്പോൾ മാത്രമേ അലേർട്ടുകൾ ലഭിക്കൂ.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price-ന് മുകളിൽ';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price-ന് താഴെ';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'പ്രതിദിന ചാഞ്ചാട്ടം ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date-ന് $price-ൽ ട്രിഗർ ചെയ്തു';
+  }
+
+  @override
+  String get alertRearm => 'വീണ്ടും സജീവമാക്കുക';
+
+  @override
+  String get alertDelete => 'ഇല്ലാതാക്കുക';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price-ന് മുകളിലേക്ക് ഉയർന്നു';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price-ന് താഴേക്ക് വീണു';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol ഇന്ന് $percent ചാഞ്ചാടി';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'നിലവിലെ വില: $price';
+  }
+
+  @override
+  String get alertOpen => 'തുറക്കുക';
+
+  @override
+  String get keepInTrayTitle => 'വിൻഡോ അടച്ചാലും പ്രവർത്തിക്കുക';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens മെനു ബാറിലോ സിസ്റ്റം ട്രേയിലോ തുടരും, അതിനാൽ ഷോർട്ട്കട്ടും വില അലേർട്ടുകളും പ്രവർത്തിച്ചുകൊണ്ടിരിക്കും.';
+
+  @override
+  String get termsOfUse => 'ഉപയോഗ നിബന്ധനകൾ';
+
+  @override
+  String get privacyPolicy => 'സ്വകാര്യതാ നയം';
+
+  @override
+  String get subscriptionLegal =>
+      'നിങ്ങൾ റദ്ദാക്കുന്നതുവരെ സബ്സ്ക്രിപ്ഷനുകൾ എല്ലാ മാസവും സ്വയമേവ പുതുക്കും. സബ്സ്ക്രൈബ് ചെയ്യുന്നതിലൂടെ നിങ്ങൾ ഉപയോഗ നിബന്ധനകളും സ്വകാര്യതാ നയവും അംഗീകരിക്കുന്നു.';
+
+  @override
+  String get deleteAccount => 'അക്കൗണ്ട് ഇല്ലാതാക്കുക';
+
+  @override
+  String get deleteAccountTitle => 'നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കണോ?';
+
+  @override
+  String get deleteAccountBody =>
+      'നിങ്ങളുടെ അക്കൗണ്ടും ഞങ്ങളുടെ സെർവറിൽ സൂക്ഷിച്ചിരിക്കുന്ന എല്ലാം (ഇമെയിൽ, ക്വാട്ട, ഉപയോഗം) ശാശ്വതമായി ഇല്ലാതാകും, ഉപയോഗിക്കാത്ത വിശകലനങ്ങൾ നഷ്ടപ്പെടും. ബ്രൗസറിൽ പണമടച്ച സബ്സ്ക്രിപ്ഷൻ ഉടൻ റദ്ദാകും; App Store അല്ലെങ്കിൽ Google Play സബ്സ്ക്രിപ്ഷൻ സ്റ്റോറിന്റെ ക്രമീകരണങ്ങളിൽ റദ്ദാക്കണം.';
+
+  @override
+  String get deleteLocalData =>
+      'ഈ ഉപകരണത്തിലെ ഡാറ്റയും ഇല്ലാതാക്കുക (പോർട്ട്ഫോളിയോ, അലേർട്ടുകൾ, പ്രിയപ്പെട്ടവ, ചരിത്രം, സംരക്ഷിച്ച വിശകലനങ്ങൾ)';
+
+  @override
+  String get deleteAccountConfirm => 'ശാശ്വതമായി ഇല്ലാതാക്കുക';
+
+  @override
+  String get accountDeleted => 'നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കി.';
+
+  @override
+  String get errDeleteAccount => 'അക്കൗണ്ട് ഇല്ലാതാക്കാനായില്ല. നിങ്ങളുടെ കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+}
