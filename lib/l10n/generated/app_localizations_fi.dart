@@ -775,7 +775,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Kuvantunnistus, reaaliaikaiset tiedot, kaaviot, suosikit ja kaikki 44 kieltä sisältyvät jokaiseen pakettiin. Kiintiö koskee tekoälyanalyyseja.';
+      'Kuvantunnistus, reaaliaikaiset tiedot, kaaviot, suosikit ja kaikki 120 kieltä sisältyvät jokaiseen pakettiin. Kiintiö koskee tekoälyanalyyseja.';
 
   @override
   String get searchLanguages => 'Hae kieliä…';

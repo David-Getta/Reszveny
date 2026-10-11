@@ -769,7 +769,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Fotoğraf tanıma, canlı veriler, grafikler, favoriler ve 44 dilin tümü her planda dahildir. Hak, yapay zekâ analizlerini kapsar.';
+      'Fotoğraf tanıma, canlı veriler, grafikler, favoriler ve 120 dilin tümü her planda dahildir. Hak, yapay zekâ analizlerini kapsar.';
 
   @override
   String get searchLanguages => 'Dil ara…';

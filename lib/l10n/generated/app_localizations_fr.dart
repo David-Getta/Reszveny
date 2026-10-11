@@ -774,7 +774,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'La reconnaissance photo, les données en direct, les graphiques, les favoris et les 44 langues sont inclus dans tous les forfaits. Le quota couvre les analyses IA.';
+      'La reconnaissance photo, les données en direct, les graphiques, les favoris et les 120 langues sont inclus dans tous les forfaits. Le quota couvre les analyses IA.';
 
   @override
   String get searchLanguages => 'Rechercher des langues…';

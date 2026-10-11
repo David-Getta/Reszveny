@@ -771,7 +771,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'تصویر کی شناخت، لائیو ڈیٹا، چارٹس، پسندیدہ اور تمام 44 زبانیں ہر پلان میں شامل ہیں۔ کوٹا AI تجزیوں پر لاگو ہوتا ہے۔';
+      'تصویر کی شناخت، لائیو ڈیٹا، چارٹس، پسندیدہ اور تمام 120 زبانیں ہر پلان میں شامل ہیں۔ کوٹا AI تجزیوں پر لاگو ہوتا ہے۔';
 
   @override
   String get searchLanguages => 'زبانیں تلاش کریں…';

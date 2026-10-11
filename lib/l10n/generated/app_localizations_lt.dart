@@ -805,7 +805,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Nuotraukų atpažinimas, tikralaikiai duomenys, grafikai, mėgstamiausi ir visos 44 kalbos įtrauktos į kiekvieną planą. Limitas taikomas DI analizėms.';
+      'Nuotraukų atpažinimas, tikralaikiai duomenys, grafikai, mėgstamiausi ir visos 120 kalbos įtrauktos į kiekvieną planą. Limitas taikomas DI analizėms.';
 
   @override
   String get searchLanguages => 'Ieškoti kalbų…';

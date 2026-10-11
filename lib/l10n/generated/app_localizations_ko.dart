@@ -757,7 +757,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get bestValue => '최고의 가치';
 
   @override
-  String get planFeaturesCommon => '사진 인식, 실시간 데이터, 차트, 즐겨찾기, 44개 언어 전체가 모든 요금제에 포함됩니다. 할당량은 AI 분석에 적용됩니다.';
+  String get planFeaturesCommon => '사진 인식, 실시간 데이터, 차트, 즐겨찾기, 120개 언어 전체가 모든 요금제에 포함됩니다. 할당량은 AI 분석에 적용됩니다.';
 
   @override
   String get searchLanguages => '언어 검색…';

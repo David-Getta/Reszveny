@@ -769,7 +769,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Photo recognition, live data, charts, favorites and all 44 languages are included in every plan. The allowance covers AI analyses.';
+      'Photo recognition, live data, charts, favorites and all 120 languages are included in every plan. The allowance covers AI analyses.';
 
   @override
   String get searchLanguages => 'Search languages…';

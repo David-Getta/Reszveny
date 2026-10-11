@@ -771,7 +771,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 44 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI.';
+      'Utambuzi wa picha, data ya moja kwa moja, chati, vipendwa na lugha zote 120 vimejumuishwa katika kila mpango. Kiasi kinahusu uchambuzi wa AI.';
 
   @override
   String get searchLanguages => 'Tafuta lugha…';

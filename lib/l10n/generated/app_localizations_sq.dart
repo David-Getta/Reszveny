@@ -771,7 +771,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Njohja e fotove, të dhënat në kohë reale, grafikët, të preferuarat dhe të 44 gjuhët përfshihen në çdo plan. Kuota mbulon analizat me AI.';
+      'Njohja e fotove, të dhënat në kohë reale, grafikët, të preferuarat dhe të 120 gjuhët përfshihen në çdo plan. Kuota mbulon analizat me AI.';
 
   @override
   String get searchLanguages => 'Kërko gjuhët…';

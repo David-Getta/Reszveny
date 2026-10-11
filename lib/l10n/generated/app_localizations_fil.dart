@@ -774,7 +774,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Kasama sa bawat plan ang pagkilala ng larawan, live na data, mga chart, mga paborito at lahat ng 44 na wika. Para sa mga pagsusuri ng AI ang alokasyon.';
+      'Kasama sa bawat plan ang pagkilala ng larawan, live na data, mga chart, mga paborito at lahat ng 120 na wika. Para sa mga pagsusuri ng AI ang alokasyon.';
 
   @override
   String get searchLanguages => 'Maghanap ng wika…';

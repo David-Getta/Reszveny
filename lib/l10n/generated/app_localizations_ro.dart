@@ -793,7 +793,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 44 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI.';
+      'Recunoașterea fotografiilor, datele în timp real, graficele, favoritele și toate cele 120 de limbi sunt incluse în fiecare plan. Cota acoperă analizele AI.';
 
   @override
   String get searchLanguages => 'Caută limbi…';

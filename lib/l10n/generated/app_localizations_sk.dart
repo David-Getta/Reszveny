@@ -803,7 +803,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Rozpoznávanie fotiek, živé dáta, grafy, obľúbené a všetkých 44 jazykov sú súčasťou každého tarifu. Limit sa vzťahuje na AI analýzy.';
+      'Rozpoznávanie fotiek, živé dáta, grafy, obľúbené a všetkých 120 jazykov sú súčasťou každého tarifu. Limit sa vzťahuje na AI analýzy.';
 
   @override
   String get searchLanguages => 'Hľadať jazyky…';

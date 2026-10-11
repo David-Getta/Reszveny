@@ -769,7 +769,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Ganewar hoto, bayanai kai tsaye, jadawalai, abubuwan da aka fi so da duk harsuna 44 suna cikin kowane tsari. Rabon yana shafar nazarin AI ne.';
+      'Ganewar hoto, bayanai kai tsaye, jadawalai, abubuwan da aka fi so da duk harsuna 120 suna cikin kowane tsari. Rabon yana shafar nazarin AI ne.';
 
   @override
   String get searchLanguages => 'Nemi harsuna…';
