@@ -17,7 +17,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get homeHint =>
-      'Share certificate, screen sang brokerage app, pamantalaan ukon logo sang kompanya – bisan ano nga makapakilala sang stock.';
+      'Share certificate, screen sang brokerage app, diaryo ukon logo sang kompanya – bisan ano nga makapakilala sang stock.';
 
   @override
   String get takePhoto => 'Magkuha sang litrato';

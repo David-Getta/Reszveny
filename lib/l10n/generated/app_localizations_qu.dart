@@ -1,0 +1,1271 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Quechua (`qu`).
+class AppLocalizationsQu extends AppLocalizations {
+  AppLocalizationsQu([String locale = 'qu']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Huk accionpa fotonta hurquy, hinaspa tukuy imatapas chaymanta yachay.';
+
+  @override
+  String get homeHint =>
+      'Accionpa certificadon, broker aplicacionpa pantallan, periódico utaq empresapa logon – accionta riqsichiq imapas.';
+
+  @override
+  String get takePhoto => 'Foto hurquy';
+
+  @override
+  String get chooseFromGallery => 'Galeríamanta akllay';
+
+  @override
+  String get chooseImage => 'Huk rikch\'ayta akllay';
+
+  @override
+  String get enterTickerManually => 'Tickerta makiwan qillqay';
+
+  @override
+  String get tickerInputLabel => 'Símbolo (ticker)';
+
+  @override
+  String get tickerInputHint => 'kayhina: AAPL';
+
+  @override
+  String get lookUp => 'Maskay';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Demo modo – qhatu datospaq llave mana churasqachu. Muestra datosqa kaykunapaq kan: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Rikch\'ayta t\'aqwichkan…';
+
+  @override
+  String get loadingData => 'Datosta apamuchkan…';
+
+  @override
+  String get noCandidatesTitle => 'Mana ima accionpas riqsikunchu';
+
+  @override
+  String get noCandidatesBody =>
+      'Kay rikch\'aypi mana accionta riqsiyta atirqaykuchu. Aswan sut\'i fotowan huktawan ruway, utaq tickerta makiwan qillqay.';
+
+  @override
+  String get whatWeSaw => 'Rikusqayku';
+
+  @override
+  String get chooseCandidateTitle => 'Mayqin accionta munarqanki?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% confianza';
+  }
+
+  @override
+  String get settings => 'Allichaykuna';
+
+  @override
+  String get language => 'Simi';
+
+  @override
+  String get systemLanguage => 'Sistemapa simin';
+
+  @override
+  String get about => 'Kaymanta';
+
+  @override
+  String get disclaimer =>
+      'Kay aplicacionqa willakuyllata qun, manam qullqi churanapaq yuyaychaychu. Datosqa qhipa utaq mana chiqaq kanman.';
+
+  @override
+  String dataSource(String source) {
+    return 'Datospa pukyun: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Riqsiy: $source';
+  }
+
+  @override
+  String get retry => 'Huktawan ruway';
+
+  @override
+  String get cancel => 'Cancelay';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Wichq\'ay';
+
+  @override
+  String get errorGeneric => 'Huk pantay karqan.';
+
+  @override
+  String get errorSectionUnavailable => 'Kay t\'aqata mana apamuyta atirqanchu.';
+
+  @override
+  String get notAvailable => 'mana kanchu';
+
+  @override
+  String get sectionIdentity => 'Riqsichiy';
+
+  @override
+  String get sectionPrice => 'Chanin';
+
+  @override
+  String get sectionValuation => 'Chaninchay';
+
+  @override
+  String get sectionFinancials => 'Qullqi kaqkuna';
+
+  @override
+  String get sectionDividend => 'Dividendo';
+
+  @override
+  String get sectionProfile => 'Empresamanta';
+
+  @override
+  String get sectionAnalysts => 'T\'aqwiqkunapa chaninchaynin';
+
+  @override
+  String get sectionNews => 'Willakuykuna';
+
+  @override
+  String get sectionRecognition => 'Riqsiymanta detallekuna';
+
+  @override
+  String get labelSymbol => 'Ticker';
+
+  @override
+  String get labelExchange => 'Bolsa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Qullqi';
+
+  @override
+  String get labelCountry => 'Suyu';
+
+  @override
+  String get labelIndustry => 'Industria';
+
+  @override
+  String get labelSector => 'Sector';
+
+  @override
+  String get labelWebsite => 'Web raphi';
+
+  @override
+  String get labelIpoDate => 'IPOpa p\'unchawnin';
+
+  @override
+  String get labelMarketCap => 'Qhatupi chanin';
+
+  @override
+  String get labelSharesOutstanding => 'Puriq accionkuna';
+
+  @override
+  String get labelEmployees => 'Llamk\'aqkuna';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Uma wasi';
+
+  @override
+  String get labelDescription => 'Sut\'inchay';
+
+  @override
+  String get labelLastPrice => 'Qhipa chanin';
+
+  @override
+  String get labelChange => 'Hukyay';
+
+  @override
+  String get labelOpen => 'Kichakuy';
+
+  @override
+  String get labelDayHigh => 'P\'unchawpa aswan hatunnin';
+
+  @override
+  String get labelDayLow => 'P\'unchawpa aswan uchuynin';
+
+  @override
+  String get labelPreviousClose => 'Ñawpaq wichq\'akuy';
+
+  @override
+  String get labelWeek52High => '52 semanapi aswan hatun';
+
+  @override
+  String get labelWeek52Low => '52 semanapi aswan uchuy';
+
+  @override
+  String get labelAverageVolume10d => 'Chawpi volumen (10 p\'unchaw)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Musuqchasqa $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (ñawpaq)';
+
+  @override
+  String get labelPeForward => 'P/E (hamuq)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / flujo de caja libre';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Ingresos (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Ganancia neta (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Margen bruto';
+
+  @override
+  String get labelOperatingMargin => 'Margen operativo';
+
+  @override
+  String get labelNetMargin => 'Margen neto';
+
+  @override
+  String get labelRoe => 'Patrimoniopa rendimienton';
+
+  @override
+  String get labelRoa => 'Activokunapa rendimienton';
+
+  @override
+  String get labelDebtToEquity => 'Manu / patrimonio';
+
+  @override
+  String get labelCurrentRatio => 'Ratio de liquidez';
+
+  @override
+  String get labelRevenueGrowth => 'Ingresospa wiñaynin (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'EPSpa wiñaynin (YoY)';
+
+  @override
+  String get labelDividendYield => 'Dividendopa rendimienton';
+
+  @override
+  String get labelDividendPerShare => 'Sapa accionpaq dividendo';
+
+  @override
+  String get labelPayoutRatio => 'Ratio de reparto';
+
+  @override
+  String get labelConsensus => 'Consenso';
+
+  @override
+  String get ratingStrongBuy => 'Sinchita rantiy';
+
+  @override
+  String get ratingBuy => 'Rantiy';
+
+  @override
+  String get ratingHold => 'Waqaychay';
+
+  @override
+  String get ratingSell => 'Rantikuy';
+
+  @override
+  String get ratingStrongSell => 'Sinchita rantikuy';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count t\'aqwiq', one: '$count t\'aqwiq');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Pacha: $period';
+  }
+
+  @override
+  String get noNews => 'Mana musuq willakuykuna kanchu.';
+
+  @override
+  String get openArticle => 'Qillqata kichay';
+
+  @override
+  String get openLinkFailed => 'Mana t\'inkita kichayta atirqanchu.';
+
+  @override
+  String get recognitionSummary => 'Pisichay';
+
+  @override
+  String get recognitionEvidence => 'Imarayku chhaynata yuyayku';
+
+  @override
+  String get recognitionRawText => 'Rikch\'aymanta ñawinchasqa qillqa';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Rikch\'ay riqsiyqa mana churasqachu (mana ANTHROPIC_API_KEY kanchu). Tickerta makiwan qillqay.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Riqsiy servicioman mana chayayta atirqanchu. Internet t\'inkiyniykita qhaway.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Riqsiy servicioqa pantayta kutichirqan (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Riqsiy servicioqa kay rikch\'ayta mana ruwayta atirqanchu.';
+
+  @override
+  String get errRecognitionTruncated => 'Riqsiypa kutichiyninqa kuchusqa karqan. Ama hina kaspa, huktawan ruway.';
+
+  @override
+  String get errRecognitionBadResponse => 'Riqsiy serviciomanta mana suyasqa kutichiy.';
+
+  @override
+  String get errRecognitionEmpty => 'Riqsiy servicioqa ch\'usaq kutichiyta qurqan.';
+
+  @override
+  String get errMissingFinnhubKey => 'Qhatu datosqa mana churasqachu (mana FINNHUB_API_KEY kanchu).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Qhatu datos servicioman mana chayayta atirqanchu. Internet t\'inkiyniykita qhaway.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Qhatu datos servicioman ancha achka mañakuykuna. Ama hina kaspa, huk minutota suyay.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Qhatu datos servicioqa pantayta kutichirqan (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Qhatu datos serviciomanta mana suyasqa kutichiy.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return '$symbol accionpaq mana chanin datos tarikunchu.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return '$symbol accionpaq mana empresamanta willakuy tarikunchu.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Demo modoqa kaykunallatam yanapan: $symbols. Kawsaq datospaq FINNHUB_API_KEY yapay.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Huk pantay karqan: $detail';
+  }
+
+  @override
+  String get newSearch => 'Musuq maskay';
+
+  @override
+  String get recentSearches => 'Qhipa maskasqakuna';
+
+  @override
+  String get noRecentSearches => 'Manaraq maskasqakuna kanchu.';
+
+  @override
+  String get clearRecent => 'Qhipa maskasqakunata pichay';
+
+  @override
+  String get greeting => 'Mayqin accionta qhawasun?';
+
+  @override
+  String get searchHint => 'Ticker utaq empresapa sutin';
+
+  @override
+  String get attachImage => 'Rikch\'ayta k\'askachiy';
+
+  @override
+  String get searchResultsTitle => 'Maskaypa tarisqankuna';
+
+  @override
+  String errNoResults(String query) {
+    return '«$query» maskaypaq mana ima accionpas tarikunchu.';
+  }
+
+  @override
+  String get quickBarHint => 'Ticker utaq empresapa sutinta qillqay…';
+
+  @override
+  String get openFullWindow => 'Ventanata kichay';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Maypipas $shortcut ñit\'iy StockLensta waqyanaykipaq.';
+  }
+
+  @override
+  String get trayOpen => 'StockLensta kichay';
+
+  @override
+  String get trayQuickSearch => 'Utqay maskay';
+
+  @override
+  String get trayQuit => 'Lluqsiy';
+
+  @override
+  String get appearance => 'Rikch\'akuy';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeDark => 'Tutayaq';
+
+  @override
+  String get themeLight => 'K\'anchaq';
+
+  @override
+  String get back => 'Kutiy';
+
+  @override
+  String get aiSectionTitle => 'AI t\'aqwiy';
+
+  @override
+  String get aiIntro =>
+      'AI qillqasqan sut\'i qhawariy: qhipa willakuykunapa pisichaynin, negocio, kallpankuna, peligrokuna, pakasqa kaqkuna, chaninchay, chanin hamuqpaq escenariokuna (psicológico, sociológico, técnico, macro qhawariykunamanta), hinallataq ima qhawanapaq kaqkuna.';
+
+  @override
+  String get aiGenerate => 'T\'aqwiyta ruway';
+
+  @override
+  String get aiRegenerate => 'Musuqmanta ruway';
+
+  @override
+  String get aiGenerating => 'T\'aqwiyta wakichichkan… huk utaq iskay minutota unayanman.';
+
+  @override
+  String get aiSources => 'Pukyukuna';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Ruwasqa $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'AI ruwasqan t\'aqwiy, llapanpaq datoskunapi qhipa willakuykunapipas sayasqa. Pantaykunayuq utaq mawk\'aña kanman, manataq qullqi churanapaq yuyaychaychu.';
+
+  @override
+  String get errAiNotConfigured => 'AI t\'aqwiyqa mana churasqachu (mana ANTHROPIC_API_KEY kanchu).';
+
+  @override
+  String get errAiUnreachable => 'AI servicioman mana chayayta atirqanchu. Internet t\'inkiyniykita qhaway.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI servicioqa pantayta kutichirqan (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI servicioqa kay accionta t\'aqwiyta mana munarqanchu.';
+
+  @override
+  String get errAiBadResponse => 'AI serviciomanta mana suyasqa kutichiy.';
+
+  @override
+  String get sectionChart => 'Chaninpa siq\'in';
+
+  @override
+  String get rangeOneWeek => '1S';
+
+  @override
+  String get rangeOneMonth => '1K';
+
+  @override
+  String get rangeThreeMonths => '3K';
+
+  @override
+  String get rangeOneYear => '1W';
+
+  @override
+  String get rangeFiveYears => '5W';
+
+  @override
+  String get chartUnavailable => 'Kunan datos pukyupiqa chaninpa ñawpa kaqninkuna mana kanchu.';
+
+  @override
+  String get sectionStatements => 'Qullqi willakuykuna (sapa wata)';
+
+  @override
+  String get labelFiscalYear => 'Fiscal wata';
+
+  @override
+  String get labelRevenue => 'Ingresos';
+
+  @override
+  String get labelNetIncome => 'Ganancia neta';
+
+  @override
+  String get labelTotalAssets => 'Llapan activokuna';
+
+  @override
+  String get labelTotalLiabilities => 'Llapan pasivokuna';
+
+  @override
+  String get labelEquity => 'Accionistakunapa patrimonion';
+
+  @override
+  String get labelOperatingCashFlow => 'Flujo de caja operativo';
+
+  @override
+  String get statementsUnavailable => 'Kay accionpaq mana qullqi willakuykuna kanchu.';
+
+  @override
+  String get launchAtLogin => 'Yaykuspa qallarichiy';
+
+  @override
+  String get hotkeyLabel => 'Llapanpaq atajo';
+
+  @override
+  String get hotkeyRecordHint => 'Kaypi ñit\'iy, chaymanta musuq teclakunata ñit\'iy';
+
+  @override
+  String get hotkeyReset => 'Ñawpaq kaqman kutichiy';
+
+  @override
+  String get pasteImage => 'Copiasqa rikch\'ayta churay';
+
+  @override
+  String get errClipboardNoImage => 'Mana copiasqa rikch\'ay kanchu.';
+
+  @override
+  String get favorites => 'Munasqakuna';
+
+  @override
+  String get addToFavorites => 'Munasqakunaman yapay';
+
+  @override
+  String get removeFromFavorites => 'Munasqakunamanta hurquy';
+
+  @override
+  String get noFavorites => 'Manaraq munasqakuna kanchu. Huk accionpi quyllurta ñit\'iy yapanaykipaq.';
+
+  @override
+  String get displayCurrency => 'Rikuchinapaq qullqi';
+
+  @override
+  String get displayCurrencyNone => 'Accionpa qullqillan';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency qullqipi';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Cambio: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Musuqchaykuna';
+
+  @override
+  String currentVersion(String version) {
+    return 'Versión $version';
+  }
+
+  @override
+  String get autoUpdate => 'Musuqchaykunata kikinmanta churay';
+
+  @override
+  String get checkForUpdates => 'Musuqchaykunata maskay';
+
+  @override
+  String get updateChecking => 'Musuqchaykunata maskachkan…';
+
+  @override
+  String get updateUpToDate => 'Aswan musuq versiónniyuqmi kanki.';
+
+  @override
+  String updateAvailable(String version) {
+    return '$version versiónqa kanñam.';
+  }
+
+  @override
+  String get updateDownloading => 'Musuqchayta qhipanpi uraqachichkan…';
+
+  @override
+  String get updateDownloaded => 'Musuqchayqa listoña. Churanapaq wakmanta qallarichiy.';
+
+  @override
+  String get updateNow => 'Musuqchay';
+
+  @override
+  String get restartNow => 'Wakmanta qallarichiy';
+
+  @override
+  String get updatesViaStore => 'Musuqchaykunaqa app store nisqawan kikinmanta chayamun.';
+
+  @override
+  String get updateCheckFailed => 'Musuqchaykunata mana maskayta atirqanchu.';
+
+  @override
+  String get subscription => 'Suscripción';
+
+  @override
+  String get planTrial => 'Malliy';
+
+  @override
+  String get planNormal => 'Normal';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Mana activo plan kanchu';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return 'Sapa killa $count t\'aqwiy';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days p\'unchaw gratis malliy, $count t\'aqwiywan';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Malliypaq $days p\'unchawllaña puchun',
+      one: 'Malliypaq $days p\'unchawllaña puchun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Gratis malliyniykiqa tukukunña. T\'aqwiyta qatipanaykipaq huk planta akllay.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Kay pachapaq $total t\'aqwiymanta $remaining puchun';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count yapa t\'aqwiy';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return '$date p\'unchawpi musuqchakunqa';
+  }
+
+  @override
+  String get choosePlan => 'Planta akllay';
+
+  @override
+  String get currentPlan => 'Kunan plan';
+
+  @override
+  String get subscribe => 'Suscribikuy';
+
+  @override
+  String get perMonth => '/ killa';
+
+  @override
+  String get extraPacksTitle => 'Astawanchu munanki? Yapa t\'aqwiykunata rantiy';
+
+  @override
+  String get extraPacksHint =>
+      'Yapa t\'aqwiykunaqa manam hayk\'appas vencenchu, sapa killa t\'aqwiyniyki tukukuptinmi llamk\'achikun.';
+
+  @override
+  String get buy => 'Rantiy';
+
+  @override
+  String get restorePurchases => 'Rantisqakunata kutichiy';
+
+  @override
+  String get manageSubscription => 'Suscripciónta kamachiy';
+
+  @override
+  String get purchaseSuccess => 'Sulpayki! Rantisqaykiqa activoña.';
+
+  @override
+  String get purchasePending => 'Rantiy suyachkan…';
+
+  @override
+  String get purchaseFailed => 'Rantiyqa mana tukukuyta atirqanchu.';
+
+  @override
+  String get purchaseCanceled => 'Rantiyqa cancelasqa.';
+
+  @override
+  String get billingUnavailable =>
+      'Kay plataformapiqa manaraq rantiy atikunchu. Celularniykipi utaq Macpi suscribikuy; planniykiqa llapan equipokunapi llamk\'anqa.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Kay pachapaq manaña t\'aqwiykuna puchunkichu. Planniykita wichachiy utaq yapa t\'aqwiykunata rantiy.';
+
+  @override
+  String get errTrialExpired => 'Gratis malliyniykiqa tukukunña. Qatipanaykipaq huk planta akllay.';
+
+  @override
+  String get errNoPlan => 'AI t\'aqwiypaqqa activo plan kananmi.';
+
+  @override
+  String get viewPlans => 'Plankunata qhaway';
+
+  @override
+  String get usageTitle => 'Llamk\'achiy';
+
+  @override
+  String get demoPurchaseNote => 'Demo cobro: kay plataformapiqa rantiykunaqa simulasqallam.';
+
+  @override
+  String get mostPopular => 'Aswan munasqa';
+
+  @override
+  String get bestValue => 'Aswan allin chanin';
+
+  @override
+  String get planFeaturesCommon =>
+      'Sapa planpim kachkan foto riqsiy, kawsaq datos, siq\'ikuna, munasqakuna hinallataq llapan 120 simikuna. Kamachisqa yupayqa AI t\'aqwiykunapaqmi.';
+
+  @override
+  String get searchLanguages => 'Simita maskay…';
+
+  @override
+  String get noLanguageMatch => 'Mana ima simipas tupanchu.';
+
+  @override
+  String get aiSettings => 'AI t\'aqwiy';
+
+  @override
+  String get aiLength => 'Sunin';
+
+  @override
+  String get aiDepthBrief => 'Pisi';
+
+  @override
+  String get aiDepthStandard => 'Chawpi';
+
+  @override
+  String get aiDepthDeep => 'Ukhu';
+
+  @override
+  String get aiDepthBriefDesc => 'Aswan chaniyuq kaqkunalla, utqaylla.';
+
+  @override
+  String get aiDepthStandardDesc => 'Hunt\'asqa willakuy, llapan t\'aqakunawan.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Astawan web maskaykuna, kikin hina empresakunawan tupachiy, aswan ukhu detallekunapas.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Yaqa $min–$max simi';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count t\'aqwiyta llamk\'achin',
+      one: '$count t\'aqwiyta llamk\'achin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Ñawinchaqpa patan';
+
+  @override
+  String get aiReaderBeginner => 'Qallariq';
+
+  @override
+  String get aiReaderExperienced => 'Yachayniyuq';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Sut\'i simi; sapa técnico simitam sut\'inchakun.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Aswan sinchi qillqa, qullqi simikunawan.';
+
+  @override
+  String get aiCounterArgument => 'Aswan sinchi contra yuyay';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Pisichayqa sapa kutim tukukun kikin tukukuyninpa contranpi aswan allin yuyaywan.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Planniykiwan sapa t\'aqwiypaq $count web maskaykama',
+      one: 'Planniykiwan sapa t\'aqwiypaq $count web maskaykama',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Chawpi sunin plankama: Normal $normal, Pro $pro, Max $max, Ultra $ultra. Pisiqa 2 aswan pisita, Ukhuqa 2 aswan achkata llamk\'achin.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count web maskaykama',
+      one: '$count web maskaykama',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sapa t\'aqwiypaq $count web maskay',
+      one: 'sapa t\'aqwiypaq $count web maskay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Kay suniqa $needed t\'aqwiyta munan, ichaqa $left t\'aqwiyllam puchun. Allichaykunapi aswan pisi sunita akllay utaq astawan t\'aqwiykunata hap\'iy.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Qhatupa sunqun';
+
+  @override
+  String get moodVeryPessimistic => 'Ancha pesimista';
+
+  @override
+  String get moodPessimistic => 'Pesimista';
+
+  @override
+  String get moodNeutral => 'Neutral';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Ancha optimista';
+
+  @override
+  String get scenarioBull => 'Wichaq escenario';
+
+  @override
+  String get scenarioBase => 'Chawpi escenario';
+
+  @override
+  String get scenarioBear => 'Uraykuq escenario';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Kunan chanin: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Ancha chaniyuq patakuna';
+
+  @override
+  String get keyLevelSupport => 'Soporte';
+
+  @override
+  String get keyLevelResistance => 'Resistencia';
+
+  @override
+  String get keyLevelAnchor => 'Ancla';
+
+  @override
+  String get upcomingEvents => 'Hamuq ruwaykuna';
+
+  @override
+  String get outlookChartNote =>
+      'Rikuchiq rangokuna; probabilidadkunaqa yaqa yuyaykunallam, manam hamuqta willaykunachu.';
+
+  @override
+  String get accountTitle => 'Cuenta';
+
+  @override
+  String get signIn => 'Yaykuy';
+
+  @override
+  String get signOut => 'Cuentamanta lluqsiy';
+
+  @override
+  String get notSignedIn => 'Mana yaykusqa';
+
+  @override
+  String get accountBenefit => 'Yaykuy, suscripciónniyki llapan equipoykikunapi llamk\'ananpaq.';
+
+  @override
+  String get accountSyncedNote => 'Suscripciónniyki puchuq t\'aqwiyniykikunapas sapa equipopi kaqllam.';
+
+  @override
+  String get signInTitle => 'StockLensman yaykuy';
+
+  @override
+  String get emailLabel => 'Correo electrónico';
+
+  @override
+  String get continueWithEmail => 'Correowan qatipay';
+
+  @override
+  String codeSentTo(String email) {
+    return '6 yupayniyuq códigota kay correoman apachirqayku: $email. 10 minutopaqmi valen.';
+  }
+
+  @override
+  String get codeLabel => 'Yaykuna código';
+
+  @override
+  String get resendCode => 'Musuq códigota apachiy';
+
+  @override
+  String get useDifferentEmail => 'Huk correota llamk\'achiy';
+
+  @override
+  String get errInvalidCode => 'Códigoqa pantasqam utaq vencesqañam.';
+
+  @override
+  String get errInvalidEmail => 'Ama hina kaspa, allin correo electrónicota qillqay.';
+
+  @override
+  String get errSignInFailed => 'Mana yaykuyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
+
+  @override
+  String get checkoutWaiting => 'Navegadorniykipi pagota tukuy. Tukukuptinqa aplicaciónmi kikinmanta musuqchakunqa.';
+
+  @override
+  String get paymentViaStripe =>
+      'Navegadorniykipi Stripe nisqawan mana manchakuspa pagay. Mayk\'aqpas cancelayta atinki.';
+
+  @override
+  String get paymentViaStore =>
+      'App Store utaq Google Play cuentaykiwan cobrakun. Tiendapa allichayninkunapi mayk\'aqpas cancelayta atinki.';
+
+  @override
+  String get keySpace => 'Espacio';
+
+  @override
+  String get doubleOptionTitle => 'Option iskay kutita ñit\'iy';
+
+  @override
+  String get doubleOptionSubtitle => 'Option teclata utqaylla iskay kutita ñit\'ispapas StockLenstam waqyanki.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Huk aplicacionkunapipas llamk\'ananpaq, StockLensta saqiy Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada nisqapi, chaymanta aplicaciónta wakmanta kichay.';
+
+  @override
+  String get openSystemSettings => 'Ajustes del Sistema nisqata kichay';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Maypipas $shortcut ñit\'iy utaq Option iskay kutita ñit\'iy StockLensta waqyanaykipaq.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Aswan atikuq';
+
+  @override
+  String get longTermToday => 'Kunan';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years wata', one: '$years wata');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range sapa wata';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'aswan atikuq $price';
+  }
+
+  @override
+  String get confidenceLow => 'Pisi confianza';
+
+  @override
+  String get confidenceMedium => 'Chawpi confianza';
+
+  @override
+  String get confidenceHigh => 'Hatun confianza';
+
+  @override
+  String get longTermNote =>
+      'Unay pachapaq rangokunaqa nisqa yuyaykunapi sayan, pacha purisqanman hinam kicharikun. Chaninkunaqa mana dividendokunata hap\'inchu. Yaqa yuyaykunallam, manam hamuqta willaykunachu.';
+
+  @override
+  String get portfolio => 'Portafolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Manaraq imapas kanchu. Huk accionta kichay hinaspa «Portafolioman yapay» nisqata ñit\'iy, kapuqniykita qatipanaykipaq.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Kay equipollapim waqaychasqa. Llapan yupaykunaqa BCEpa referencia tasankunawan tikrasqa; chaninkunaqa qhipa kanman.';
+
+  @override
+  String get addToPortfolio => 'Portafolioman yapay';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return '$symbol yapay';
+  }
+
+  @override
+  String get portfolioQuantity => 'Accionkunapa yupaynin';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Sapa accionpa chanin ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Rantisqa p\'unchaw';
+
+  @override
+  String get portfolioAdd => 'Yapay';
+
+  @override
+  String get portfolioInvalidNumber => 'Ceromanta aswan hatun yupayta qillqay.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol portafolioykiman yapasqa.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Llapan chanin';
+
+  @override
+  String get portfolioToday => 'Kunan';
+
+  @override
+  String get portfolioGainLoss => 'Ganancia/pérdida';
+
+  @override
+  String get portfolioInvested => 'Churasqa qullqi';
+
+  @override
+  String get portfolioAllocation => 'Rakiy';
+
+  @override
+  String get portfolioPositions => 'Posicionkuna';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'chawpi chanin $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Posiciónniyki';
+
+  @override
+  String get portfolioPurchases => 'Rantisqakuna';
+
+  @override
+  String get portfolioRemove => 'Hurquy';
+
+  @override
+  String get portfolioExcluded =>
+      'Chaninnin utaq tipo de cambionin mana kaq posicionkunaqa llapan yupaykunapi mana yupakunchu.';
+
+  @override
+  String get priceAlerts => 'Chanin willachiykuna';
+
+  @override
+  String get setPriceAlert => 'Chanin willachiyta churay';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Chanin willachiy · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Kaymanta aswan wichan';
+
+  @override
+  String get alertKindBelow => 'Kaymanta aswan uraykun';
+
+  @override
+  String get alertKindMove => 'Huk p\'unchawpi ancha kuyun';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Chanin ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'P\'unchawpa kuyuynin (%)';
+
+  @override
+  String get alertAlreadyMet => 'Chaninqa kay patatañam pasan.';
+
+  @override
+  String get alertSave => 'Willachiyta churay';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol accionpaq willachiy churasqa.';
+  }
+
+  @override
+  String get alertsEmpty =>
+      'Manaraq chanin willachiykuna kanchu. Huk accionta kichay hinaspa campanata ñit\'iy hukta churanaykipaq.';
+
+  @override
+  String get alertsNote =>
+      'StockLens llamk\'achkaptinqa sapa 5 minutopi willachiykunata qhawan. Computadorapiqa menú barrapi utaq tray nisqapi llamk\'aspa qhipakun; celularpiqa, kunanpaqqa aplicación kichasqa kaptinllam willachiykuna chayamun.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price patanpi';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price uranpi';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'P\'unchawpa kuyuynin ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date p\'unchawpi $price chaninpi rikch\'arirqan';
+  }
+
+  @override
+  String get alertRearm => 'Wakmanta activay';
+
+  @override
+  String get alertDelete => 'Qulluy';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price patanman wicharqan';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price uranman uraykurqan';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol kunan $percent kuyurqan';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Kunan chanin: $price';
+  }
+
+  @override
+  String get alertOpen => 'Kichay';
+
+  @override
+  String get keepInTrayTitle => 'Ventana wichq\'asqa kaptinpas llamk\'achun';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLensqa menú barrapi utaq tray nisqapi qhipakun, chaymi atajopas chanin willachiykunapas llamk\'allanku.';
+
+  @override
+  String get termsOfUse => 'Llamk\'achiypa kamachiykunan';
+
+  @override
+  String get privacyPolicy => 'Privacidad kamachiy';
+
+  @override
+  String get subscriptionLegal =>
+      'Suscripciónkunaqa sapa killa kikinmanta musuqchakunku cancelanaykikama. Suscribikuspaqa Llamk\'achiypa kamachiykunanta Privacidad kamachiytapas chaskinki.';
+
+  @override
+  String get deleteAccount => 'Cuentata qulluy';
+
+  @override
+  String get deleteAccountTitle => 'Cuentaykita qulluyta munankichu?';
+
+  @override
+  String get deleteAccountBody =>
+      'Cuentayki hinallataq servidorniykupi waqaychasqa llapan kaqkuna (correo, cupo, llamk\'achiy) wiñaypaq qullusqa kanqa, mana llamk\'achisqa t\'aqwiykunapas chinkanqa. Navegadorpi pagasqa suscripciónqa chay kutillam cancelakun; App Store utaq Google Play suscripcióntaqa tiendapa allichayninkunapim cancelana.';
+
+  @override
+  String get deleteLocalData =>
+      'Kay equipopi datostapas qulluy (portafolio, willachiykuna, munasqakuna, historial, waqaychasqa t\'aqwiykuna)';
+
+  @override
+  String get deleteAccountConfirm => 'Wiñaypaq qulluy';
+
+  @override
+  String get accountDeleted => 'Cuentaykiqa qullusqañam.';
+
+  @override
+  String get errDeleteAccount => 'Cuentataqa mana qulluyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
+}
