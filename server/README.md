@@ -22,7 +22,7 @@ a `/v1/me`-ből frissül.
 | `GET /v1/me` | jogosultság (csomag, időszak, felhasznált, extra) |
 | `POST /v1/purchases/verify` | `{platform, product_id, verification_data}` → jogosultság |
 | `POST /v1/analyze` | Anthropic Messages továbbítás; 402 `quota_exceeded` / `trial_expired` / `no_plan` |
-| `POST /v1/anthropic/v1/messages` | továbbítás kvóta nélkül (fotófelismerés) |
+| `POST /v1/anthropic/v1/messages` | segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést, de rögzített modell, legfeljebb 16 000 token, eszközök nélkül, legfeljebb 2 üzenet, 120 000 karakter és 1 kép, felhasználónként óránként 20 és naponta 60 hívás (429) |
 | `GET /v1/market/<path>` | Finnhub továbbítás a szerver kulcsával |
 | `POST /v1/auth/email/start` | `{email}` → 6 jegyű belépőkód e-mailben (10 perc, 5 próbálkozás, óránként 5 kód) |
 | `POST /v1/auth/email/verify` | `{email, code}` → a fiók tokenje; az eszközön gyűlt keret átkerül |
@@ -31,7 +31,7 @@ a `/v1/me`-ből frissül.
 | `POST /v1/billing/portal` | Stripe ügyfélportál URL |
 | `POST /v1/stripe/webhook` | Stripe-események, `Stripe-Signature` ellenőrzéssel |
 
-Környezeti változók: `ANTHROPIC_API_KEY`, `FINNHUB_API_KEY`, `PORT` (8080), `DATABASE_PATH`
+Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude-opus-5-5`; minden hívás ezen fut, a kliens nem választhat mást), `FINNHUB_API_KEY`, `PORT` (8080), `DATABASE_PATH`
 (`stocklens.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
 Server API / Play Developer API – a bolti fiókok után készül el), `PUBLIC_URL` (a szerver nyilvános
 címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`

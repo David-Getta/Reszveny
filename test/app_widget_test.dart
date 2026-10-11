@@ -157,7 +157,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Normal'), findsOneWidget);
     expect(find.text('Ultra'), findsOneWidget);
-    expect(find.text('150 analyses per month'), findsOneWidget);
+    expect(find.text('70 analyses per month'), findsOneWidget);
     expect(find.text('Current plan'), findsWidgets);
     // A Max csomag megvétele a demó boltban azonnal aktiválódik.
     final subscribeButtons = find.widgetWithText(FilledButton, 'Subscribe');

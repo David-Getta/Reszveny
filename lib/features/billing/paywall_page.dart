@@ -164,11 +164,9 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                             name: _planName(l10n, spec.tier),
                             product: subs.where((x) => x.id == spec.productId).firstOrNull,
                             current: ent.plan?.tier == spec.tier && !ent.isTrialExpired,
-                            badge: spec.tier == PlanTier.pro
-                                ? l10n.mostPopular
-                                : spec.tier == PlanTier.max
-                                ? l10n.bestValue
-                                : null,
+                            // „Legjobb ár/érték” jelölés nincs: a Max és az Ultra elemzésenként
+                            // nem olcsóbb a Pro-nál (2026-10, A-terv), így félrevezető lenne.
+                            badge: spec.tier == PlanTier.pro ? l10n.mostPopular : null,
                             busy: bc.busyProductId == spec.productId,
                             onBuy: (prod) => bc.buy(prod),
                           ),

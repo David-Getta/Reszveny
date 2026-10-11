@@ -75,7 +75,7 @@ felület kulcs nélkül is végigjárható.
 
 ## Előfizetés
 
-3 napos próbaidő (3 elemzés), majd Normál (8 elemzés/hó), Pro (20), Max (80), Ultra (150), és
+3 napos próbaidő (3 elemzés), majd Normál (8 elemzés/hó), Pro (20), Max (40), Ultra (70), és
 külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés az App Store-on, a Play-en és a Mac
 App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált bolt, amely az USD-alapárat a régió pénznemére váltja (ECB-árfolyam, helyi kerekítés). A havi keret
 az AI-elemzésekre vonatkozik. Éles kiadásban a keretet és a bolti bizonylatokat a saját backend
