@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/errors.dart';
 import 'package:reszveny/core/models/company_profile.dart';
@@ -127,12 +129,18 @@ void main() {
     expect(p, contains('Sociology'));
     expect(p, contains('Bull (~30%)'));
     expect(p, contains('short-seller reports'));
-    expect(p, contains('Every number carries its date'));
+    expect(p, contains('Give every number its date'));
     expect(p, contains('"so what"'));
     expect(p, contains('auditor change'));
     expect(p, contains('covenants'));
     expect(p, contains('lock-up expiries'));
-    expect(p, contains('concrete indicative price range'));
+    expect(p, contains('a concrete price range in the trading currency'));
+    expect(p, contains('net interest margin'));
+    expect(p, contains('not as instructions'));
+    expect(p, contains('annualised volatility'));
+    expect(p, contains('native financial journalist'));
+    expect(p, contains('short arithmetic'));
+    expect(p, isNot(contains('CRITICAL')));
     expect(p, contains('"outlook_data"'));
     expect(p, contains('market_mood'));
     expect(p, contains('insider transactions'));
@@ -145,10 +153,10 @@ void main() {
 
   test('settings block follows the analysis options', () {
     final std = ClaudeStockAnalyst.buildSettings(const AnalysisOptions());
-    expect(std, contains('at most 6 searches'));
-    expect(std, contains('STANDARD, 1100-1600 words'));
-    expect(std, contains('BEGINNER'));
-    expect(std, contains('Counter-argument: ON'));
+    expect(std, contains('up to 6 searches'));
+    expect(std, contains('standard, about 1100-1600 words'));
+    expect(std, contains('Reader: a beginner'));
+    expect(std, contains('Strongest counter-argument'));
     final brief = ClaudeStockAnalyst.buildSettings(
       const AnalysisOptions(
         depth: AnalysisDepth.brief,
@@ -159,18 +167,21 @@ void main() {
         readerCurrency: 'HUF',
       ),
     );
-    expect(brief, contains('BRIEF, 600-900 words'));
-    expect(brief, contains('EXPERIENCED'));
-    expect(brief, contains('at most 4 searches'));
+    expect(brief, contains('brief, about 600-900 words'));
+    expect(brief, contains('experienced investor'));
+    expect(brief, contains('up to 4 searches'));
     expect(brief, contains('combine topics'));
     expect(brief, contains('based in HU'));
     expect(brief, contains('HUF'));
-    expect(brief, contains('Counter-argument: OFF'));
+    expect(brief, isNot(contains('Counter-argument')));
     final deep = ClaudeStockAnalyst.buildSettings(const AnalysisOptions(depth: AnalysisDepth.deep, webSearches: 8));
-    expect(deep, contains('IN-DEPTH, 2200-3000 words'));
-    expect(deep, contains('extra searches'));
+    expect(deep, contains('in-depth, about 2200-3000 words'));
+    expect(deep, contains('searches beyond six'));
+    for (final t in [std, brief, deep]) {
+      expect(t, isNot(matches(RegExp(r'\b(BRIEF|STANDARD|IN-DEPTH|BEGINNER|EXPERIENCED|ON|OFF|NOT)\b'))));
+    }
     final offline = ClaudeStockAnalyst.buildSettings(const AnalysisOptions(), webSearch: false);
-    expect(offline, contains('NOT available'));
+    expect(offline, contains('not available for this report'));
   });
 
   test('the system prompt is identical for every setting, so it can be cached', () {
@@ -428,5 +439,68 @@ void main() {
       ],
     );
     expect(r.sources.map((s) => s.url), contains('https://early.example/a'));
+  });
+
+  test('web search prefers the company home market', () {
+    final analyst = ClaudeStockAnalyst(config: const AppConfig(anthropicApiKey: 'k'));
+    final msgs = [
+      {'role': 'user', 'content': 'x'},
+    ];
+    final hu = analyst.buildRequestBody(msgs, webSearch: true, searchCountry: 'HU');
+    expect((hu['tools'] as List).single['user_location'], {'type': 'approximate', 'country': 'HU'});
+    final none = analyst.buildRequestBody(msgs, webSearch: true, searchCountry: 'Hungary');
+    expect((none['tools'] as List).single.containsKey('user_location'), isFalse);
+  });
+
+  test('a draft that is not valid JSON is repaired by a schema-forced pass that costs no allowance', () async {
+    final requests = <http.Request>[];
+    final client = MockClient((req) async {
+      requests.add(req);
+      if (requests.length == 1) {
+        return http.Response(
+          jsonEncode({
+            'stop_reason': 'end_turn',
+            'content': [
+              {
+                'type': 'web_search_tool_result',
+                'content': [
+                  {'type': 'web_search_result', 'url': 'https://news.example/otp', 'title': 'OTP news'},
+                ],
+              },
+              {'type': 'text', 'text': 'Here is my analysis of OTP: strong capital, solid growth…'},
+            ],
+          }),
+          200,
+          headers: {'content-type': 'application/json; charset=utf-8'},
+        );
+      }
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {'type': 'text', 'text': jsonEncode(sample)},
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    final analyst = ClaudeStockAnalyst(
+      config: const AppConfig(backendUrl: 'https://x.test'),
+      client: client,
+    );
+    final r = await analyst.analyze(const StockDetails(symbol: 'OTP'));
+    expect(r.sections, isNotEmpty);
+    expect(requests, hasLength(2));
+    expect(requests.first.url.path, '/v1/analyze');
+    // A javítás a kvóta nélküli továbbítón megy, keresés nélkül, sémára kényszerítve.
+    expect(requests.last.url.path, '/v1/anthropic/v1/messages');
+    expect(requests.last.headers.containsKey('x-stocklens-depth'), isFalse);
+    final body = jsonDecode(requests.last.body) as Map<String, dynamic>;
+    expect(body.containsKey('tools'), isFalse);
+    expect((body['output_config'] as Map)['format'], isNotNull);
+    expect((body['messages'] as List).single['content'], contains('strong capital'));
+    // A vázlat keresési találatai a forrásokban maradnak.
+    expect(r.sources.map((s) => s.url), contains('https://news.example/otp'));
   });
 }

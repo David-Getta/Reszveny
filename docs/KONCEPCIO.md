@@ -154,6 +154,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
 | 3e | AI-elemzés v2: kutatási terv, adatfegyelem, „na és?”, bővített rejtett tényezők, konkrét ársávok; árfolyam-statisztika és többéves kimutatások a modellnek; beállítások: hossz (részletes = 2 elemzés), olvasói szint, ellenérv; webkeresés csomagonként | ✅ kész |
 | 3f | AI-elemzés v2.1: gyorsítótárazható prompt, többletadatok (versenytársak, bennfentes ügyletek, EPS-meglepetések, következő gyorsjelentés), számszerű kilátás (hangulat-sáv, forgatókönyv-diagram, kulcsszintek, eseménynaptár), minőség-ellenőrző és éles eval | ✅ kész |
+| 3g | AI-elemzés v2.2: Opus 5.5-höz igazított prompt, ágazati mutatók és értékpapír-típusok, volatilitáshoz méretezett ársávok, számolt értékelés, helyi webkeresés, injekció elleni védelem, JSON-javító lépés | ✅ kész |
 | 4b | OCR fallback offline (ML Kit, mobil), árfolyam-riasztás, portfólió | ⬜ |
 | 4c | Fiók és fizetés, mint a Claude-nál: belépés e-mail kóddal, fiókhoz kötött előfizetés; asztali gépen és weben Stripe Checkout + ügyfélportál, telefonon App Store / Play; lefordított iparág- és országnevek | ✅ kész (Apple / Google belépés később) |
 | 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ |
