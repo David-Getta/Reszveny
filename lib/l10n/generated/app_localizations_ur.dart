@@ -1258,4 +1258,8 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'اکاؤنٹ حذف نہیں ہو سکا۔ کنکشن چیک کر کے دوبارہ کوشش کریں۔';
+
+  @override
+  String get aiTrialBriefNote =>
+      'آزمائشی تجزیے مختصر ہوتے ہیں اور تیز تر AI ماڈل سے بنائے جاتے ہیں۔ پلان کے ساتھ آپ کو ہمارا سب سے قابل AI، زیادہ ویب تحقیق، اور معیاری و تفصیلی طوالت ملتی ہے۔';
 }

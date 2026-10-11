@@ -1244,4 +1244,8 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'មិនអាចលុបគណនីបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ការវិភាគសាកល្បងមានលក្ខណៈសង្ខេប និងបង្កើតដោយម៉ូដែល AI ដែលលឿនជាង។ ជាមួយគម្រោង អ្នកទទួលបាន AI ដែលមានសមត្ថភាពខ្លាំងបំផុតរបស់យើង ការស្វែងរកលើបណ្ដាញច្រើនជាង និងប្រវែងស្តង់ដារ និងស៊ីជម្រៅ។';
 }

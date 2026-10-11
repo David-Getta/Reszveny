@@ -1229,4 +1229,8 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ลบบัญชีไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+
+  @override
+  String get aiTrialBriefNote =>
+      'การวิเคราะห์ช่วงทดลองใช้เป็นแบบกระชับและใช้โมเดล AI ที่เร็วกว่า เมื่อมีแพ็กเกจ คุณจะได้ AI ที่มีความสามารถสูงสุดของเรา การค้นหาเว็บมากขึ้น และความยาวแบบมาตรฐานและเจาะลึก';
 }

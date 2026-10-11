@@ -1279,4 +1279,8 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Non se puido eliminar a conta. Comproba a conexión e téntao de novo.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'As análises de proba son breves e fanse cun modelo de IA máis rápido. Cun plan obtés a nosa IA máis capaz, máis buscas web e as extensións Estándar e A fondo.';
 }

@@ -1268,4 +1268,8 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Okwekenneenya okw\'okugezesa kuba mu bufunze era kukolebwa AI model ey\'amangu. Ng\'olina enteekateeka, ofuna AI yaffe esinga obusobozi, okunoonya okusingawo ku yintaneeti, n\'obuwanvu Bwa bulijjo ne Mu bujjuvu.';
 }

@@ -1243,4 +1243,8 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'መለያውን መሰረዝ አልተቻለም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።';
+
+  @override
+  String get aiTrialBriefNote =>
+      'የሙከራ ትንተናዎች አጭር ናቸው፤ በፈጣን የAI ሞዴል ይዘጋጃሉ። በዕቅድ ምርጡን የAI ሞዴላችንን፣ ተጨማሪ የድር ፍለጋዎችን እንዲሁም መደበኛ እና ጥልቅ ርዝመቶችን ያገኛሉ።';
 }

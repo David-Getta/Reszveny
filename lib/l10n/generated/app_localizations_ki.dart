@@ -1262,4 +1262,8 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Tũtiahotire kweheria akaunti. Rora connection yaku ũcooke ũgerie rĩngĩ.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Mathuthuria ma kũgeria nĩ makuhĩ na mathondekagwo na AI model ya ihenya makĩria. Na mũbango, nĩ ũkũgĩa na AI iitũ njega makĩria, ũcaria mũingĩ wa internet, na ũraihu wa Wa gatagatĩ na Mũriku.';
 }

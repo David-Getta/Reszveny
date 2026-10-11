@@ -1261,4 +1261,8 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Míete ŋu tutu akɔnta la o. Kpɔ wò kadodo eye nàgate kpɔ.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Tetekpɔ numekukuwo le kpui eye AI model si wɔa dɔ kabakaba wu la wɔa wo. Ne plan le asiwò la, àxɔ míaƒe AI si ŋu ŋutete le wu, internet dzi didi geɖe wu, kple didime Titina kple Goglo.';
 }

@@ -1296,4 +1296,8 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Račun nije moguće izbrisati. Provjerite vezu i pokušajte ponovo.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Probne analize su kratke i izrađuje ih brži AI model. Uz plan dobijate naš najsposobniji AI, više web pretraga te dužine Standardno i Detaljno.';
 }

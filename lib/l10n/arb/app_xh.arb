@@ -362,5 +362,6 @@
   "deleteLocalData": "Cima nedatha ekwesi sixhobo (ipotifoliyo, izilumkiso, ezithandwayo, imbali, iintlalutyo ezigciniweyo)",
   "deleteAccountConfirm": "Cima ngonaphakade",
   "accountDeleted": "Iakhawunti yakho icinyiwe.",
-  "errDeleteAccount": "Iakhawunti ayikwazanga ukucinywa. Jonga uqhagamshelo lwakho uze uzame kwakhona."
+  "errDeleteAccount": "Iakhawunti ayikwazanga ukucinywa. Jonga uqhagamshelo lwakho uze uzame kwakhona.",
+  "aiTrialBriefNote": "Iintlalutyo zovavanyo zimfutshane kwaye zenziwa ngemodeli ye-AI ekhawulezayo ngakumbi. Ngesicwangciso ufumana i-AI yethu enamandla kakhulu, ukhangelo olungakumbi lwewebhu, nobude obusemgangathweni nobunzulu."
 }

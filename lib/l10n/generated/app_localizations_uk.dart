@@ -1309,4 +1309,8 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Не вдалося видалити акаунт. Перевірте з’єднання й спробуйте ще раз.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробні аналізи короткі й створюються швидшою моделлю ШІ. З тарифом ви отримуєте наш найпотужніший ШІ, більше вебпошуку та довжини «Стандартно» і «Детально».';
 }

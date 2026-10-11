@@ -1262,4 +1262,8 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Não foi possível eliminar a conta. Verifique a ligação e tente novamente.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'As análises do período de teste são breves e feitas com um modelo de IA mais rápido. Com um plano, obtém a nossa IA mais capaz, mais pesquisas na web e as extensões Padrão e Detalhada.';
 }

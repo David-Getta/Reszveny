@@ -1257,4 +1257,8 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'هەژمارەکە نەسڕایەوە. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'شیکارییەکانی تاقیکردنەوە کورتن و بە مۆدێلێکی AIی خێراتر دروست دەکرێن. بە پلانێک بەهێزترین AIی ئێمە، گەڕانی وێبی زیاتر و درێژیی ستاندارد و قووڵ وەردەگریت.';
 }

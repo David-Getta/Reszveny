@@ -1259,4 +1259,8 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Proeftydperk-ontledings is kort en word met ’n vinniger AI-model gemaak. Met ’n plan kry jy ons mees gevorderde AI, meer websoektogte en die lengtes Standaard en Diepgaande.';
 }

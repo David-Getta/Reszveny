@@ -1265,4 +1265,8 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Kokeilun analyysit ovat lyhyitä, ja ne tehdään nopeammalla tekoälymallilla. Paketilla saat kyvykkäimmän tekoälymme, enemmän verkkohakuja sekä pituudet Vakio ja Syvällinen.';
 }

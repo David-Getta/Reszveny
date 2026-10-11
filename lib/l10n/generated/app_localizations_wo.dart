@@ -1256,4 +1256,8 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Mënuñu far kont bi. Seetal sa internet te jéemaat.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Saytu yi ci jéem bi gàtt lañu, te ab modèl AI bu gën a gaaw lañu leen di defe. Ak benn formil, dinga am sunu AI bi gën a mën, seet yu ëpp ci internet, ak guddaay Digg ak Bu xóot.';
 }

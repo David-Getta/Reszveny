@@ -1268,4 +1268,8 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Cuentataqa mana qulluyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Malliy t\'aqwiykunaqa pisillam, aswan utqay AI modelowanmi ruwasqa. Huk planwanqa aswan atiyniyuq AI-ykuta, astawan web maskaykunata, Chawpi, Ukhu sunikunatapas hap\'inki.';
 }

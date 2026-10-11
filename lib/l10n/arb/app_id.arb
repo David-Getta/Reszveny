@@ -362,5 +362,6 @@
   "deleteLocalData": "Hapus juga data di perangkat ini (portofolio, peringatan, favorit, riwayat, analisis tersimpan)",
   "deleteAccountConfirm": "Hapus permanen",
   "accountDeleted": "Akun Anda telah dihapus.",
-  "errDeleteAccount": "Akun tidak dapat dihapus. Periksa koneksi dan coba lagi."
+  "errDeleteAccount": "Akun tidak dapat dihapus. Periksa koneksi dan coba lagi.",
+  "aiTrialBriefNote": "Analisis uji coba bersifat ringkas dan dibuat dengan model AI yang lebih cepat. Dengan paket, Anda mendapatkan AI kami yang paling canggih, lebih banyak pencarian web, serta panjang Standar dan Mendalam."
 }

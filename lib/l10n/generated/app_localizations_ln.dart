@@ -1261,4 +1261,8 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ba-analyse ya komeka ezali mokuse mpe esalemaka na modèle ya AI oyo ekendaka noki. Na forfait, ozwaka AI na biso ya makasi koleka, boluki mingi na internet, mpe bolai Ya katikati mpe Ya mozindo.';
 }

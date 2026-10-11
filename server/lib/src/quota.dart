@@ -15,6 +15,9 @@ class Quota {
   int _periodQuota(Entitlement e) =>
       e.tier == null || _trialExpired(e) ? 0 : (PlanSpec.byTier(e.tier)?.analysesPerPeriod ?? 0);
 
+  /// A következő elemzés a próbaidő keretéből megy-e (nem a megvett extrából).
+  bool drawsFromTrial(Entitlement e) => e.tier == 'trial' && !_trialExpired(e) && e.used < PlanSpec.trialAnalyses;
+
   /// Most felhasználható elemzések: időszaki maradék + extra.
   int available(Entitlement e) {
     final q = _periodQuota(e);

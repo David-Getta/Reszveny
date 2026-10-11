@@ -362,5 +362,6 @@
   "deleteLocalData": "Slett også dataene på denne enheten (portefølje, varsler, favoritter, historikk, lagrede analyser)",
   "deleteAccountConfirm": "Slett permanent",
   "accountDeleted": "Kontoen din er slettet.",
-  "errDeleteAccount": "Kontoen kunne ikke slettes. Sjekk tilkoblingen og prøv igjen."
+  "errDeleteAccount": "Kontoen kunne ikke slettes. Sjekk tilkoblingen og prøv igjen.",
+  "aiTrialBriefNote": "Analyser i prøveperioden er korte og lages med en raskere AI-modell. Med en plan får du vår mest avanserte AI, flere nettsøk og lengdene Standard og Grundig."
 }

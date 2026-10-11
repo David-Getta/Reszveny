@@ -1297,4 +1297,8 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Налог није могао да се обрише. Проверите везу и покушајте поново.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Пробне анализе су кратке и израђује их бржи AI модел. Уз план добијате наш најмоћнији AI, више веб-претрага и дужине „Стандардно“ и „Детаљно“.';
 }

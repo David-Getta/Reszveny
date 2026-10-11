@@ -362,5 +362,6 @@
   "deleteLocalData": "Padam juga data pada peranti ini (portfolio, amaran, kegemaran, sejarah, analisis yang disimpan)",
   "deleteAccountConfirm": "Padam secara kekal",
   "accountDeleted": "Akaun anda telah dipadam.",
-  "errDeleteAccount": "Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi."
+  "errDeleteAccount": "Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi.",
+  "aiTrialBriefNote": "Analisis percubaan adalah ringkas dan dihasilkan dengan model AI yang lebih pantas. Dengan pelan, anda mendapat AI kami yang paling canggih, lebih banyak carian web, serta panjang Standard dan Mendalam."
 }

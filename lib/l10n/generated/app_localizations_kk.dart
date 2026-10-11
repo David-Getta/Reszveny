@@ -1259,4 +1259,8 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Аккаунтты жою мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Сынақ талдаулары қысқа және жылдамырақ AI моделімен жасалады. Тарифпен ең қуатты AI-ымыз, көбірек веб-іздеу және стандартты әрі терең көлем қолжетімді болады.';
 }

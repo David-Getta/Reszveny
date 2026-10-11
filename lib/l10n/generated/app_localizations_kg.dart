@@ -1260,4 +1260,8 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Ka tulendi zimbisa compte ko. Tala vo internet aku isalanga, bosi meka diaka.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ba analyse ya kumeka ikele nkufi mpi bo ke salaka yo ti modele ya AI ya nswalu. Ti forfait, nge ta baka AI na beto ya kuluta mbote, kutomba mingi mu internet, ye unda Ya kati ye Ya nda.';
 }

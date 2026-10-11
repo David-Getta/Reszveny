@@ -135,7 +135,7 @@ import 'app_localizations_zu.dart';
 /// `supportedLocales` list. For example:
 ///
 /// ```dart
-/// import 'out/app_localizations.dart';
+/// import 'generated/app_localizations.dart';
 ///
 /// return MaterialApp(
 ///   localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -2507,6 +2507,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The account could not be deleted. Check your connection and try again.'**
   String get errDeleteAccount;
+
+  /// Shown during the free trial in Settings (under the analysis length selector) and on the stock page: subscribers get a better analysis because more is spent on it. Standard / In-depth = aiDepthStandard / aiDepthDeep.
+  ///
+  /// In en, this message translates to:
+  /// **'Trial analyses are brief and made with a faster AI model. With a plan you get our most capable AI, more web research, and the Standard and In-depth lengths.'**
+  String get aiTrialBriefNote;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

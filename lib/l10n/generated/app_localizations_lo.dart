@@ -1231,4 +1231,8 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ບໍ່ສາມາດລຶບບັນຊີໄດ້ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ການວິເຄາະໃນໄລຍະທົດລອງເປັນແບບສັ້ນ ແລະ ສ້າງດ້ວຍໂມເດວ AI ທີ່ໄວກວ່າ ເມື່ອມີແພັກເກັດ ທ່ານຈະໄດ້ AI ທີ່ມີຄວາມສາມາດສູງສຸດຂອງພວກເຮົາ ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ແລະ ຄວາມຍາວມາດຕະຖານ ແລະ ເຈາະເລິກ';
 }

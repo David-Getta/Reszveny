@@ -362,5 +362,6 @@
   "deleteLocalData": "Susa nedatha ekule divayisi (iphothifoliyo, izexwayiso, izintandokazi, umlando, izinhlaziyo ezigciniwe)",
   "deleteAccountConfirm": "Susa unomphela",
   "accountDeleted": "I-akhawunti yakho isusiwe.",
-  "errDeleteAccount": "I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi."
+  "errDeleteAccount": "I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi.",
+  "aiTrialBriefNote": "Izinhlaziyo zokuzama zifushane futhi zenziwa ngemodeli ye-AI esheshayo. Ngohlelo uthola i-AI yethu enekhono kakhulu, usesho lwewebhu olwengeziwe, nobude obuvamile nobujulile."
 }

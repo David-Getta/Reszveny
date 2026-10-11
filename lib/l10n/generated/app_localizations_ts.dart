@@ -1273,4 +1273,8 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'A swi kotekanga ku sula akhawunti. Kambela vuhlanganisi bya wena u ringeta nakambe.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Minxopaxopo ya ndzingeto yi komile naswona yi endliwa hi modlele wa AI wo hatlisa. Hi kungu u kuma AI ya hina leyi nga ni vuswikoti swinene, mindzavisiso yo tala ya inthanete, ni ku leha ka Wa xikarhi na Wo enta.';
 }

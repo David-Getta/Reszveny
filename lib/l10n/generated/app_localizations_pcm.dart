@@ -1258,4 +1258,8 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'We no fit delete di account. Check your connection and try again.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Trial analysis dey short and na faster AI model dey make am. Wit plan, you go get our best AI, more web search, plus Standard and Deep length.';
 }

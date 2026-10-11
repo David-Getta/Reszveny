@@ -1260,4 +1260,8 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Uchambuzi wa jaribio ni mfupi na hufanywa kwa modeli ya AI yenye kasi zaidi. Ukiwa na mpango, unapata AI yetu yenye uwezo mkubwa zaidi, utafutaji zaidi wa wavuti, na urefu wa Wastani na Wa kina.';
 }

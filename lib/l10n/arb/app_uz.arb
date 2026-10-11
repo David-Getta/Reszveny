@@ -362,5 +362,6 @@
   "deleteLocalData": "Bu qurilmadagi maʼlumotlarni ham oʻchirish (portfel, bildirishnomalar, sevimlilar, tarix, saqlangan tahlillar)",
   "deleteAccountConfirm": "Butunlay oʻchirish",
   "accountDeleted": "Hisobingiz oʻchirildi.",
-  "errDeleteAccount": "Hisobni oʻchirib boʻlmadi. Aloqani tekshirib, qaytadan urinib koʻring."
+  "errDeleteAccount": "Hisobni oʻchirib boʻlmadi. Aloqani tekshirib, qaytadan urinib koʻring.",
+  "aiTrialBriefNote": "Sinov tahlillari qisqa va tezroq AI modeli bilan tayyorlanadi. Tarif bilan eng kuchli AI modelimiz, koʻproq veb-qidiruv hamda Standart va Batafsil uzunliklarni olasiz."
 }

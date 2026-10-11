@@ -1257,4 +1257,8 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'खाता हटाया नहीं जा सका। कनेक्शन जाँचें और फिर कोशिश करें।';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ट्रायल के विश्लेषण संक्षिप्त होते हैं और एक तेज़ AI मॉडल से बनते हैं। प्लान के साथ आपको हमारा सबसे सक्षम AI, ज़्यादा वेब खोजें और मानक व विस्तृत लंबाई मिलती है।';
 }

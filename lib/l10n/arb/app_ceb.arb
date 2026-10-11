@@ -362,5 +362,6 @@
   "deleteLocalData": "Papasa usab ang data niini nga device (portfolio, alerto, paborito, kasaysayan, natipig nga pagtuki)",
   "deleteAccountConfirm": "Papasa nga permanente",
   "accountDeleted": "Napapas na ang imong account.",
-  "errDeleteAccount": "Dili mapapas ang account. Susiha ang imong koneksyon ug sulayi pag-usab."
+  "errDeleteAccount": "Dili mapapas ang account. Susiha ang imong koneksyon ug sulayi pag-usab.",
+  "aiTrialBriefNote": "Mubo ang mga pagtuki sa trial ug gihimo kini gamit ang mas paspas nga AI model. Sa usa ka plan, makuha nimo ang among labing maayong AI, mas daghang pagpangita sa web, ug ang Standard ug Lawom nga gitas-on."
 }

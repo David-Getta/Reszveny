@@ -44,7 +44,7 @@ class PlanSpec {
   static const pro = PlanSpec(
     tier: PlanTier.pro,
     productId: 'whatstock.sub.pro',
-    analysesPerPeriod: 20,
+    analysesPerPeriod: 18,
     webSearches: 6,
   );
   static const max = PlanSpec(

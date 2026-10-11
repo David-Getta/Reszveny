@@ -1270,4 +1270,8 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Iakhawunti ayikwazanga ukucinywa. Jonga uqhagamshelo lwakho uze uzame kwakhona.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Iintlalutyo zovavanyo zimfutshane kwaye zenziwa ngemodeli ye-AI ekhawulezayo ngakumbi. Ngesicwangciso ufumana i-AI yethu enamandla kakhulu, ukhangelo olungakumbi lwewebhu, nobude obusemgangathweni nobunzulu.';
 }

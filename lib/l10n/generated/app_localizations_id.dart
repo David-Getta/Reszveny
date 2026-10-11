@@ -1246,4 +1246,8 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akun tidak dapat dihapus. Periksa koneksi dan coba lagi.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analisis uji coba bersifat ringkas dan dibuat dengan model AI yang lebih cepat. Dengan paket, Anda mendapatkan AI kami yang paling canggih, lebih banyak pencarian web, serta panjang Standar dan Mendalam.';
 }

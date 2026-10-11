@@ -1276,4 +1276,8 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akhaonto ga e a kgona go phimolwa. Tlhola kgolagano ya gago mme o leke gape.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ditshekatsheko tsa teko di khutshwe e bile di dirwa ka mofuta wa AI o o bonako. Ka leano o bona AI ya rona e e nonofileng go gaisa, dipatlo tse dintsi tsa inthanete, le boleele jwa Magareng le E e tseneletseng.';
 }

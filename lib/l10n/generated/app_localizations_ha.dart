@@ -1260,4 +1260,8 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Nazarin gwaji taƙaitacce ne kuma ana yin su da samfurin AI mai sauri. Da tsari za ka sami AI ɗinmu mafi ƙarfi, ƙarin binciken yanar gizo, da tsawon Daidaitacce da Mai zurfi.';
 }

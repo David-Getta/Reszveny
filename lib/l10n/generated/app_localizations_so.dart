@@ -1263,4 +1263,8 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akoonka lama tirtiri karin. Hubi xiriirkaaga oo isku day mar kale.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Falanqaynta tijaabadu waa kooban, waxaana lagu sameeyaa nooc AI ah oo degdeg ah. Qorshe ayaad ku helaysaa AI-gayaga ugu awoodda badan, raadin web oo badan, iyo dhererka Caadi iyo Qoto dheer.';
 }

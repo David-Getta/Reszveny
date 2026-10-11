@@ -1309,4 +1309,8 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Bandomosios analizės yra trumpos ir rengiamos greitesniu DI modeliu. Su planu gaunate pajėgiausią mūsų DI, daugiau paieškų internete ir standartinę bei išsamią apimtį.';
 }

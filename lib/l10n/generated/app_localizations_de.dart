@@ -1262,4 +1262,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analysen in der Testphase sind kurz und werden mit einem schnelleren KI-Modell erstellt. Mit einem Tarif bekommst du unsere leistungsfähigste KI, mehr Websuchen und die Längen Standard und Ausführlich.';
 }

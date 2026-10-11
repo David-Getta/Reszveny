@@ -1268,4 +1268,8 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hindi nabura ang account. Tingnan ang koneksyon at subukang muli.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Maikli ang mga pagsusuri sa trial at ginagawa gamit ang mas mabilis na AI model. Sa isang plan, makukuha mo ang aming pinakamahusay na AI, mas maraming paghahanap sa web, at ang Karaniwan at Malalim na haba.';
 }

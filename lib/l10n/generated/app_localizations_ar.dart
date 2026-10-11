@@ -1291,4 +1291,8 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'تعذّر حذف الحساب. تحقق من الاتصال وحاول مرة أخرى.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'تحليلات الفترة التجريبية موجزة وتُنجز بنموذج ذكاء اصطناعي أسرع. مع خطة، تحصل على أقوى نموذج ذكاء اصطناعي لدينا، ومزيد من البحث على الويب، وطولَي «قياسي» و«معمّق».';
 }

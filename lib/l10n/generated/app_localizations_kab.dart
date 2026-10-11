@@ -1259,4 +1259,8 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Ur nezmir ara ad nekkes amiḍan. Senqed tuqqna syen ɛreḍ tikkelt-nniḍen.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Tiselḍin n tirmit d tiwezlanin, ttwaxedment s umudil n AI yettxeddmen s zzerb ugar. S uɣawas, tesɛiḍ AI-nneɣ yifen akk, ugar n yinadiyen deg web, akked teɣzi Alugan d S telqayt.';
 }

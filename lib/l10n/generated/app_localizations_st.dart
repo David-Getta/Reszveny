@@ -1275,4 +1275,8 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Akhaonto ha e a kgona ho hlakolwa. Hlahloba kgokahano ya hao mme o leke hape.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ditlhahlobo tsa teko di kgutshwanyane mme di etswa ka mofuta wa AI o potlakileng. Ka moralo o fumana AI ya rona e matla ka ho fetisisa, dipatlo tse ngata tsa inthanete, le bolelele ba Mahareng le E qaqileng.';
 }

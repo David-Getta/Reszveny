@@ -362,5 +362,6 @@
   "deleteLocalData": "A készüléken tárolt adataim törlése is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések)",
   "deleteAccountConfirm": "Végleges törlés",
   "accountDeleted": "A fiókodat töröltük.",
-  "errDeleteAccount": "A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra."
+  "errDeleteAccount": "A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.",
+  "aiTrialBriefNote": "A próbaidős elemzések rövidek, és egy gyorsabb AI-modell készíti őket. Csomaggal a legerősebb AI-unk dolgozik, több webkereséssel, és választhatod az alap és a részletes hosszt is."
 }

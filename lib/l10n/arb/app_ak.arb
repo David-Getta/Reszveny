@@ -362,5 +362,6 @@
   "deleteLocalData": "Popa data a ɛwɔ mfiri yi so nso (wo nkyɛfa, kɔkɔbɔ, nea wopɛ, abakɔsɛm, nhwehwɛmu a woakora)",
   "deleteAccountConfirm": "Popa koraa",
   "accountDeleted": "Wɔapopa w’akawnt.",
-  "errDeleteAccount": "Yɛantumi ampopa akawnt no. Hwɛ wo nkitahodi na sɔ hwɛ bio."
+  "errDeleteAccount": "Yɛantumi ampopa akawnt no. Hwɛ wo nkitahodi na sɔ hwɛ bio.",
+  "aiTrialBriefNote": "Sɔhwɛ nhwehwɛmu yɛ tiawa, na AI model a ɛyɛ ntɛm na ɛyɛ. Sɛ wowɔ plan a, wunya yɛn AI a ɛyɛ papa sen biara, intanɛt so nhwehwɛ pii, ne tenten Mfinimfini ne Emu dɔ."
 }

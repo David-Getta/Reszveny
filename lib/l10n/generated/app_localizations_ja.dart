@@ -1217,4 +1217,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'アカウントを削除できませんでした。接続を確認してもう一度お試しください。';
+
+  @override
+  String get aiTrialBriefNote => 'トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。';
 }

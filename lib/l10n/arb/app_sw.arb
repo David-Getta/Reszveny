@@ -362,5 +362,6 @@
   "deleteLocalData": "Futa pia data kwenye kifaa hiki (jalada, arifa, vipendwa, historia, uchambuzi uliohifadhiwa)",
   "deleteAccountConfirm": "Futa kabisa",
   "accountDeleted": "Akaunti yako imefutwa.",
-  "errDeleteAccount": "Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena."
+  "errDeleteAccount": "Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.",
+  "aiTrialBriefNote": "Uchambuzi wa jaribio ni mfupi na hufanywa kwa modeli ya AI yenye kasi zaidi. Ukiwa na mpango, unapata AI yetu yenye uwezo mkubwa zaidi, utafutaji zaidi wa wavuti, na urefu wa Wastani na Wa kina."
 }

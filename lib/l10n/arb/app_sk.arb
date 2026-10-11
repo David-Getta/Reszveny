@@ -362,5 +362,6 @@
   "deleteLocalData": "Odstrániť aj údaje v tomto zariadení (portfólio, upozornenia, obľúbené, história, uložené analýzy)",
   "deleteAccountConfirm": "Natrvalo odstrániť",
   "accountDeleted": "Váš účet bol odstránený.",
-  "errDeleteAccount": "Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova."
+  "errDeleteAccount": "Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.",
+  "aiTrialBriefNote": "Skúšobné analýzy sú stručné a vytvára ich rýchlejší model AI. S tarifom získate náš najvýkonnejší model AI, viac vyhľadávaní na webe a štandardnú aj podrobnú dĺžku."
 }

@@ -1257,4 +1257,8 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ھېساباتنى ئۆچۈرگىلى بولمىدى. ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'سىناق تەھلىللىرى قىسقا بولۇپ، تېزرەك AI مودېلى بىلەن ئىشلىنىدۇ. پىلان بىلەن ئەڭ ئىقتىدارلىق AI مودېلىمىزنى، تېخىمۇ كۆپ تور ئىزدەشنى ۋە ئۆلچەملىك ھەم چوڭقۇر ئۇزۇنلۇقلارنى قولغا كەلتۈرىسىز.';
 }

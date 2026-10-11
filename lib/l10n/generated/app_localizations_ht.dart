@@ -1256,4 +1256,8 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Nou pa t ka efase kont lan. Verifye koneksyon entènèt ou epi eseye ankò.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analiz esè yo kout epi se yon modèl AI ki pi rapid ki fè yo. Avèk yon plan, ou jwenn AI ki pi pwisan nou an, plis rechèch sou entènèt, ak longè Estanda ak An pwofondè.';
 }

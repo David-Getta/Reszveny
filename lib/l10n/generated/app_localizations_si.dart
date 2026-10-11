@@ -1265,4 +1265,8 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'ගිණුම මැකිය නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'අත්හදා බැලීමේ විශ්ලේෂණ කෙටි වන අතර වේගවත් AI මාදිලියකින් සකසනු ලැබේ. සැලසුමක් සමඟ ඔබට අපගේ වඩාත්ම බලවත් AI, වැඩි වෙබ් සෙවීම් සහ සම්මත හා ගැඹුරු දිග ලැබේ.';
 }

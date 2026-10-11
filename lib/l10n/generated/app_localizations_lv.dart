@@ -1300,4 +1300,8 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Izmēģinājuma analīzes ir īsas, un tās veido ātrāks AI modelis. Ar plānu jūs saņemat mūsu spēcīgāko AI, vairāk meklējumu tīmeklī, kā arī standarta un padziļināto garumu.';
 }

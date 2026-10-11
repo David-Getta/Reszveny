@@ -30,7 +30,7 @@ void main() {
 
   test('plans carry the agreed allowances', () {
     expect(PlanSpec.normal.analysesPerPeriod, 8);
-    expect(PlanSpec.pro.analysesPerPeriod, 20);
+    expect(PlanSpec.pro.analysesPerPeriod, 18);
     expect(PlanSpec.max.analysesPerPeriod, 40);
     expect(PlanSpec.ultra.analysesPerPeriod, 70);
     expect(PlanSpec.trial.trialLength, const Duration(days: 3));
@@ -80,7 +80,7 @@ void main() {
     await c.buy(pro);
     await Future<void>.delayed(const Duration(milliseconds: 20));
     expect(e.plan?.tier, PlanTier.pro);
-    expect(e.remainingInPeriod, 20);
+    expect(e.remainingInPeriod, 18);
 
     final pack = c.products.firstWhere((p) => p.id == 'whatstock.pack.20');
     await c.buy(pack);

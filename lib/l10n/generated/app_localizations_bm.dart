@@ -1264,4 +1264,8 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Kɔnti ma se ka jɔsi. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Kɔrɔbɔli sɛgɛsɛgɛliw ka surun, u bɛ kɛ ni AI modɛli teliman ye. Ni pilan bɛ i fɛ, i bɛ an ka AI ɲuman bɛɛ la sɔrɔ, ɛntɛrinɛti ɲinini caman, ani janya Cɛmancɛ ni Dunba.';
 }

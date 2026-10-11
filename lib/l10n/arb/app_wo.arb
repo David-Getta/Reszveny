@@ -362,5 +362,6 @@
   "deleteLocalData": "Far itam xibaar yi nekk ci masin bii (aksiyoŋ yi, artu yi, yi nga gënal, taariix, saytu yu ñu denc)",
   "deleteAccountConfirm": "Far ba fàww",
   "accountDeleted": "Far nañu sa kont.",
-  "errDeleteAccount": "Mënuñu far kont bi. Seetal sa internet te jéemaat."
+  "errDeleteAccount": "Mënuñu far kont bi. Seetal sa internet te jéemaat.",
+  "aiTrialBriefNote": "Saytu yi ci jéem bi gàtt lañu, te ab modèl AI bu gën a gaaw lañu leen di defe. Ak benn formil, dinga am sunu AI bi gën a mën, seet yu ëpp ci internet, ak guddaay Digg ak Bu xóot."
 }

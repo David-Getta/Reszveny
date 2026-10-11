@@ -1266,4 +1266,8 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Impossible de supprimer le compte. Vérifiez votre connexion et réessayez.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Les analyses d’essai sont brèves et réalisées avec un modèle d’IA plus rapide. Avec un forfait, vous profitez de notre IA la plus performante, de davantage de recherches web et des longueurs Standard et Approfondie.';
 }

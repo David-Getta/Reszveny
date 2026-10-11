@@ -362,5 +362,6 @@
   "deleteLocalData": "Bu cihazdaki verileri de sil (portföy, alarmlar, favoriler, geçmiş, kaydedilen analizler)",
   "deleteAccountConfirm": "Kalıcı olarak sil",
   "accountDeleted": "Hesabınız silindi.",
-  "errDeleteAccount": "Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin."
+  "errDeleteAccount": "Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin.",
+  "aiTrialBriefNote": "Deneme analizleri kısadır ve daha hızlı bir yapay zekâ modeliyle hazırlanır. Bir planla en yetenekli yapay zekâmızı, daha fazla web araştırmasını ve Standart ile Ayrıntılı uzunlukları elde edersiniz."
 }

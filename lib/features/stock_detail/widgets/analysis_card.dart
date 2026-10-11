@@ -5,6 +5,7 @@ import '../../../app_services.dart';
 import '../../../core/errors.dart';
 import '../../../features/analysis/analysis_options.dart';
 import '../../../features/billing/paywall_page.dart';
+import '../../../features/billing/trial_upsell.dart';
 import '../../../core/models/stock_details.dart';
 import '../../../core/models/stock_report.dart';
 import '../../../core/util/formatters.dart';
@@ -79,9 +80,10 @@ class _AnalysisCardState extends State<AnalysisCard> {
     final symbol = widget.details.symbol;
 
     return ListenableBuilder(
-      listenable: services.reports,
+      listenable: Listenable.merge([services.reports, services.entitlements]),
       builder: (context, _) {
         final store = services.reports;
+        final trial = services.isTrialAnalysis;
         final report = store.report(symbol);
         final loading = store.isLoading(symbol);
         final error = store.error(symbol);
@@ -102,6 +104,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                 Text(l10n.aiIntro, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
                 const SizedBox(height: 8),
                 Text(_optionsLine(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                if (trial) ...[const SizedBox(height: 10), const TrialUpsellNote()],
                 const SizedBox(height: 14),
                 if (error != null) ...[SectionError(errorMessage(l10n, error)), const SizedBox(height: 10)],
                 Wrap(
@@ -187,6 +190,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   '${l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt))} · ${l10n.aiDisclaimer}',
                   style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                 ),
+                if (trial) ...[const SizedBox(height: 12), const TrialUpsellNote()],
               ],
             ],
           ),

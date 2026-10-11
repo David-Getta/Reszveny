@@ -362,5 +362,6 @@
   "deleteLocalData": "同時刪除此裝置上的資料（投資組合、提示、收藏、記錄、已儲存的分析）",
   "deleteAccountConfirm": "永久刪除",
   "accountDeleted": "你的帳戶已刪除。",
-  "errDeleteAccount": "未能刪除帳戶。請檢查網絡連線後再試。"
+  "errDeleteAccount": "未能刪除帳戶。請檢查網絡連線後再試。",
+  "aiTrialBriefNote": "試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。"
 }

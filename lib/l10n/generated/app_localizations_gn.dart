@@ -1263,4 +1263,8 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Ndaikatúi oñembogue mbaʼete. Ehecha ne ñanduti ha ehaʼã jey.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Umi jehesaʼỹijo ñehaʼãme mbykymi ha ojejapo peteĩ AI modelo pyaʼevévape. Plan reheve rehupyty ore AI ipokatuvéva, hetave jeheka ñandutípe ha pukukue Mbytegua ha Pypuku.';
 }

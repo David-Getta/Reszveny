@@ -362,5 +362,6 @@
   "deleteLocalData": "Eheria o na ũhoro ũrĩa ũrĩ kĩndũ-inĩ gĩkĩ (hisa ciaku, imenyithia, iria wendete, ũcaria wa rĩu, mathuthuria maigĩtwo)",
   "deleteAccountConfirm": "Eheria biũ",
   "accountDeleted": "Akaunti yaku nĩyeheririo.",
-  "errDeleteAccount": "Tũtiahotire kweheria akaunti. Rora connection yaku ũcooke ũgerie rĩngĩ."
+  "errDeleteAccount": "Tũtiahotire kweheria akaunti. Rora connection yaku ũcooke ũgerie rĩngĩ.",
+  "aiTrialBriefNote": "Mathuthuria ma kũgeria nĩ makuhĩ na mathondekagwo na AI model ya ihenya makĩria. Na mũbango, nĩ ũkũgĩa na AI iitũ njega makĩria, ũcaria mũingĩ wa internet, na ũraihu wa Wa gatagatĩ na Mũriku."
 }

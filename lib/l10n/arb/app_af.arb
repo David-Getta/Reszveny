@@ -362,5 +362,6 @@
   "deleteLocalData": "Skrap ook die data op hierdie toestel (portefeulje, waarskuwings, gunstelinge, geskiedenis, gestoorde ontledings)",
   "deleteAccountConfirm": "Skrap permanent",
   "accountDeleted": "Jou rekening is geskrap.",
-  "errDeleteAccount": "Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer."
+  "errDeleteAccount": "Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer.",
+  "aiTrialBriefNote": "Proeftydperk-ontledings is kort en word met ’n vinniger AI-model gemaak. Met ’n plan kry jy ons mees gevorderde AI, meer websoektogte en die lengtes Standaard en Diepgaande."
 }

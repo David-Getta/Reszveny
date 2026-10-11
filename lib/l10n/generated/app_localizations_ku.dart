@@ -1258,4 +1258,8 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Analîzên ceribandinê kurt in û bi modeleke AI ya bileztir têne çêkirin. Bi planekê tu AI-ya me ya herî jêhatî, lêgerînên webê yên zêdetir û dirêjahiyên Standard û Kûr distînî.';
 }

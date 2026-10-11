@@ -1254,4 +1254,8 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'حساب ړنګ نه شو. خپل اتصال وګورئ او بیا هڅه وکړئ.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'آزمېښتي تحلیلونه لنډ دي او په یوه چټک AI ماډل جوړېږي. له پلان سره تاسو زموږ تر ټولو پیاوړی AI، ډېر وېب لټونونه، او معیاري او ژور اوږدوالی ترلاسه کوئ.';
 }

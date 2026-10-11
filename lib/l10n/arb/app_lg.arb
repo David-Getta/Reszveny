@@ -362,5 +362,6 @@
   "deleteLocalData": "Sangula ne data eri ku kyuma kino (emigabo, okulabula, by'oyagala, ebyafaayo, okwekenneenya okuterekeddwa)",
   "deleteAccountConfirm": "Sangula ddala",
   "accountDeleted": "Akawunti yo esanguddwa.",
-  "errDeleteAccount": "Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko."
+  "errDeleteAccount": "Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.",
+  "aiTrialBriefNote": "Okwekenneenya okw'okugezesa kuba mu bufunze era kukolebwa AI model ey'amangu. Ng'olina enteekateeka, ofuna AI yaffe esinga obusobozi, okunoonya okusingawo ku yintaneeti, n'obuwanvu Bwa bulijjo ne Mu bujjuvu."
 }

@@ -1272,4 +1272,8 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Ang mga analisis sa pagtilaw malip-ot kag ginahimo sang mas dasig nga AI model. Kon may plan ka, makuha mo ang amon pinakamaayo nga AI, mas madamo nga pagpangita sa web, kag ang Kinaandan kag Madalom nga kalabaon.';
 }

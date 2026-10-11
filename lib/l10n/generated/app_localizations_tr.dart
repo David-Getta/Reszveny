@@ -1257,4 +1257,8 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin.';
+
+  @override
+  String get aiTrialBriefNote =>
+      'Deneme analizleri kısadır ve daha hızlı bir yapay zekâ modeliyle hazırlanır. Bir planla en yetenekli yapay zekâmızı, daha fazla web araştırmasını ve Standart ile Ayrıntılı uzunlukları elde edersiniz.';
 }

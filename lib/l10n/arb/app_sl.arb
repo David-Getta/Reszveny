@@ -362,5 +362,6 @@
   "deleteLocalData": "Izbriši tudi podatke v tej napravi (portfelj, opozorila, priljubljene, zgodovina, shranjene analize)",
   "deleteAccountConfirm": "Trajno izbriši",
   "accountDeleted": "Vaš račun je izbrisan.",
-  "errDeleteAccount": "Računa ni bilo mogoče izbrisati. Preverite povezavo in poskusite znova."
+  "errDeleteAccount": "Računa ni bilo mogoče izbrisati. Preverite povezavo in poskusite znova.",
+  "aiTrialBriefNote": "Preizkusne analize so kratke in jih pripravi hitrejši model AI. S paketom dobite naš najzmogljivejši model AI, več spletnih iskanj ter standardno in poglobljeno dolžino."
 }

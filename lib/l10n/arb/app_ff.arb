@@ -362,5 +362,6 @@
   "deleteLocalData": "Momtu kadi keɓe ngol kaɓirgol (aksiyoŋ am, tintine, cuɓaaɗe, aslol, ƴeewndooji danndaaɗi)",
   "deleteAccountConfirm": "Momtu haa abada",
   "accountDeleted": "Konte maa momtaama.",
-  "errDeleteAccount": "Horiima momtude konte maa. Ƴeewto ceŋagol maa refti eto goɗngol."
+  "errDeleteAccount": "Horiima momtude konte maa. Ƴeewto ceŋagol maa refti eto goɗngol.",
+  "aiTrialBriefNote": "Ƴeewndooji etagol ngoni rabbiɗi, ina waɗee e modeel AI ɓurngel yaawde. So a jogii feere, a heɓan AI amen ɓurɗo baawde, ɓeydagol njiilaw geese, e njuuteendi Hakkundeejum e Luggiɗum."
 }

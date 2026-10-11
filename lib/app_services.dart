@@ -22,6 +22,7 @@ import 'features/billing/billing_service.dart';
 import 'features/billing/demo_billing_service.dart';
 import 'features/billing/entitlement_service.dart';
 import 'features/billing/fallback_billing_service.dart';
+import 'features/billing/plan.dart';
 import 'features/billing/store_billing_service.dart';
 import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
@@ -240,12 +241,22 @@ class AppServices {
     );
   }
 
+  /// A következő elemzés a próbaidő keretéből megy: rövid, és a szerver az
+  /// olcsóbb modellen futtatja (a megvett extra elemzések már teljes értékűek).
+  bool get isTrialAnalysis {
+    final s = entitlements.state;
+    return s.tier == PlanTier.trial && s.usedInPeriod < PlanSpec.trial.analysesPerPeriod;
+  }
+
+  /// A ténylegesen használt hossz: a próbaidő alatt mindig rövid.
+  AnalysisDepth get effectiveAnalysisDepth => isTrialAnalysis ? AnalysisDepth.brief : preferences.analysisDepth;
+
   /// Az elemzés beállításai: a felhasználó választása, a csomag szerinti
   /// webkeresés-szám, az olvasó régiója és – ha van – a pozíciója a [symbol]-ban.
   AnalysisOptions analysisOptions({String? symbol}) {
     final held = symbol == null ? null : portfolio.positionOf(symbol);
     final device = WidgetsBinding.instance.platformDispatcher.locale;
-    final depth = preferences.analysisDepth;
+    final depth = effectiveAnalysisDepth;
     final appLocale = locale.override ?? device;
     return AnalysisOptions(
       depth: depth,

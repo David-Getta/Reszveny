@@ -14,6 +14,7 @@ import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
 import '../account/sign_in_sheet.dart';
 import '../billing/paywall_page.dart';
+import '../billing/trial_upsell.dart';
 import '../billing/usage_chip.dart';
 import 'language_picker.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -330,7 +331,8 @@ class _AnalysisSettings extends StatelessWidget {
     return ListenableBuilder(
       listenable: Listenable.merge([prefs, services.entitlements]),
       builder: (context, _) {
-        final depth = prefs.analysisDepth;
+        final trial = services.isTrialAnalysis;
+        final depth = services.effectiveAnalysisDepth;
         final searches = AnalysisOptions.searchesFor(services.entitlements.state.tier, depth);
         return Padding(
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 6),
@@ -345,8 +347,8 @@ class _AnalysisSettings extends StatelessWidget {
                   showSelectedIcon: false,
                   segments: [
                     ButtonSegment(value: AnalysisDepth.brief, label: Text(l10n.aiDepthBrief)),
-                    ButtonSegment(value: AnalysisDepth.standard, label: Text(l10n.aiDepthStandard)),
-                    ButtonSegment(value: AnalysisDepth.deep, label: Text(l10n.aiDepthDeep)),
+                    ButtonSegment(value: AnalysisDepth.standard, label: Text(l10n.aiDepthStandard), enabled: !trial),
+                    ButtonSegment(value: AnalysisDepth.deep, label: Text(l10n.aiDepthDeep), enabled: !trial),
                   ],
                   selected: {depth},
                   onSelectionChanged: (s) => prefs.setAnalysisDepth(s.first),
@@ -354,6 +356,7 @@ class _AnalysisSettings extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(depthDesc(depth), style: muted),
+              if (trial) ...[const SizedBox(height: 10), const TrialUpsellNote(showButton: false)],
               const SizedBox(height: 16),
               Text(l10n.aiReaderLevel, style: theme.textTheme.titleSmall),
               const SizedBox(height: 8),

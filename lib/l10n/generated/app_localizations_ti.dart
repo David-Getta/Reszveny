@@ -1241,4 +1241,8 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get errDeleteAccount => 'እቲ ሕሳብ ክስረዝ ኣይከኣለን። ርክብኩም ኣረጋግጹ እሞ ዳግማይ ፈትኑ።';
+
+  @override
+  String get aiTrialBriefNote =>
+      'ትንተናታት ፈተነ ሓጺራት እዮም፣ ብቕልጡፍ ሞዴል AI ድማ ይዳለዉ። ብመደብ ኣዝዩ ብቑዕ AI ናትና፣ ተወሳኺ ምድላያት መርበብ፣ ንቡርን ዕሙቕን ንውሓት ትረኽቡ።';
 }
