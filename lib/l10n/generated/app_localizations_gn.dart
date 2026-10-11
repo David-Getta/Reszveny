@@ -1,0 +1,1266 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Guarani (`gn`).
+class AppLocalizationsGn extends AppLocalizations {
+  AppLocalizationsGn([String locale = 'gn']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Ejapyhy peteĩ acción raʼãnga ha eikuaa opa mbaʼe hese.';
+
+  @override
+  String get homeHint =>
+      'Peteĩ acción kuatia, peteĩ tembiporuʼi bolsa-pegua mbaʼerechaha, periódico térã peteĩ empresa logo – oimeraẽ mbaʼe ohechaukáva peteĩ acción.';
+
+  @override
+  String get takePhoto => 'Ejapyhy taʼãnga';
+
+  @override
+  String get chooseFromGallery => 'Eiporavo taʼãnga atýgui';
+
+  @override
+  String get chooseImage => 'Eiporavo taʼãnga';
+
+  @override
+  String get enterTickerManually => 'Emoinge símbolo nde pópe';
+
+  @override
+  String get tickerInputLabel => 'Símbolo (ticker)';
+
+  @override
+  String get tickerInputHint => 'techapyrã: AAPL';
+
+  @override
+  String get lookUp => 'Eheka';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Modo demo – ndaipóri clave ñemuha mbaʼekuaarãme g̃uarã. Mbaʼekuaarã techapyrã oĩ koʼãvape g̃uarã: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Ohesaʼỹijohína taʼãnga…';
+
+  @override
+  String get loadingData => 'Mbaʼekuaarã henyhẽhína…';
+
+  @override
+  String get noCandidatesTitle => 'Ndojehechakuaái acción';
+
+  @override
+  String get noCandidatesBody =>
+      'Ndorohechakuaái acción ko taʼãngápe. Ehaʼã taʼãnga hesakãvéva reheve, térã emoinge símbolo nde pópe.';
+
+  @override
+  String get whatWeSaw => 'Mbaʼépa rohecha';
+
+  @override
+  String get chooseCandidateTitle => '¿Mbaʼe acción-pa reipota?';
+
+  @override
+  String confidencePercent(int percent) {
+    return '$percent% jerovia';
+  }
+
+  @override
+  String get settings => 'Ñemboheko';
+
+  @override
+  String get language => 'Ñeʼẽ';
+
+  @override
+  String get systemLanguage => 'Apopyvusu ñeʼẽ';
+
+  @override
+  String get about => 'StockLens rehegua';
+
+  @override
+  String get disclaimer =>
+      'Ko tembiporuʼi omeʼẽ marandu añoite ha ndahaʼéi ñemoñeʼẽ inversión rehegua. Mbaʼekuaarã ikatu ndahaʼéi koʼag̃agua térã ndahaʼéi hekopete.';
+
+  @override
+  String dataSource(String source) {
+    return 'Mbaʼekuaarã reñoiha: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Jehechakuaa: $source';
+  }
+
+  @override
+  String get retry => 'Ehaʼã jey';
+
+  @override
+  String get cancel => 'Heja';
+
+  @override
+  String get ok => 'Moneĩ';
+
+  @override
+  String get close => 'Emboty';
+
+  @override
+  String get errorGeneric => 'Oĩvaicha osẽvaíva.';
+
+  @override
+  String get errorSectionUnavailable => 'Ko vore ndaikatúi henyhẽ.';
+
+  @override
+  String get notAvailable => 'ndaipóri';
+
+  @override
+  String get sectionIdentity => 'Jehechakuaaha';
+
+  @override
+  String get sectionPrice => 'Tepy';
+
+  @override
+  String get sectionValuation => 'Hepykue ñembopapa';
+
+  @override
+  String get sectionFinancials => 'Viru rehegua';
+
+  @override
+  String get sectionDividend => 'Dividendo';
+
+  @override
+  String get sectionProfile => 'Empresa rehegua';
+
+  @override
+  String get sectionAnalysts => 'Analistakuéra remiandu';
+
+  @override
+  String get sectionNews => 'Marandu';
+
+  @override
+  String get sectionRecognition => 'Jehechakuaa mbaʼemimi';
+
+  @override
+  String get labelSymbol => 'Símbolo';
+
+  @override
+  String get labelExchange => 'Bolsa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Pirapire';
+
+  @override
+  String get labelCountry => 'Tetã';
+
+  @override
+  String get labelIndustry => 'Industria';
+
+  @override
+  String get labelSector => 'Sector';
+
+  @override
+  String get labelWebsite => 'Ñanduti renda';
+
+  @override
+  String get labelIpoDate => 'IPO arange';
+
+  @override
+  String get labelMarketCap => 'Hepykue bolsa-pe';
+
+  @override
+  String get labelSharesOutstanding => 'Acción osẽva ñemuhápe';
+
+  @override
+  String get labelEmployees => 'Mbaʼapohára';
+
+  @override
+  String get labelCeo => 'Mburuvicha guasu';
+
+  @override
+  String get labelHeadquarters => 'Óga guasu';
+
+  @override
+  String get labelDescription => 'Ñemohaʼãnga';
+
+  @override
+  String get labelLastPrice => 'Tepy ipahavéva';
+
+  @override
+  String get labelChange => 'Ñemoambue';
+
+  @override
+  String get labelOpen => 'Jeipeʼa';
+
+  @override
+  String get labelDayHigh => 'Ára yvatevéva';
+
+  @override
+  String get labelDayLow => 'Ára karapevéva';
+
+  @override
+  String get labelPreviousClose => 'Ñemboty mboyvegua';
+
+  @override
+  String get labelWeek52High => 'Yvatevéva 52 arapokõindýpe';
+
+  @override
+  String get labelWeek52Low => 'Karapevéva 52 arapokõindýpe';
+
+  @override
+  String get labelAverageVolume10d => 'Volumen mbytegua (10 ára)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Oñembohekopyahu $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (ohasavaʼekue)';
+
+  @override
+  String get labelPeForward => 'P/E (oúva)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / flujo de caja libre';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Beta';
+
+  @override
+  String get labelRevenueTtm => 'Viru oikéva (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Ganancia potĩ (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Margen bruto';
+
+  @override
+  String get labelOperatingMargin => 'Margen operativo';
+
+  @override
+  String get labelNetMargin => 'Margen potĩ';
+
+  @override
+  String get labelRoe => 'Rendimiento capital propio rehe';
+
+  @override
+  String get labelRoa => 'Rendimiento activokuéra rehe';
+
+  @override
+  String get labelDebtToEquity => 'Deuda / capital propio';
+
+  @override
+  String get labelCurrentRatio => 'Liquidez corriente';
+
+  @override
+  String get labelRevenueGrowth => 'Viru oikéva jekakuaa (ary ha ary)';
+
+  @override
+  String get labelEpsGrowth => 'EPS jekakuaa (ary ha ary)';
+
+  @override
+  String get labelDividendYield => 'Dividendo rendimiento';
+
+  @override
+  String get labelDividendPerShare => 'Dividendo peteĩteĩ acción rehe';
+
+  @override
+  String get labelPayoutRatio => 'Ganancia oñembojaʼóva (%)';
+
+  @override
+  String get labelConsensus => 'Ñoñeʼẽmeʼẽ';
+
+  @override
+  String get ratingStrongBuy => 'Jejogua mbarete';
+
+  @override
+  String get ratingBuy => 'Jejogua';
+
+  @override
+  String get ratingHold => 'Ñongatu';
+
+  @override
+  String get ratingSell => 'Ñemu';
+
+  @override
+  String get ratingStrongSell => 'Ñemu mbarete';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analista', one: '1 analista');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Ára paʼũ: $period';
+  }
+
+  @override
+  String get noNews => 'Ndaipóri marandu pyahu.';
+
+  @override
+  String get openArticle => 'Embojuruja jehaipyre';
+
+  @override
+  String get openLinkFailed => 'Ndaikatúi oñembojuruja juajuha.';
+
+  @override
+  String get recognitionSummary => 'Mombyky';
+
+  @override
+  String get recognitionEvidence => 'Mbaʼére roimoʼã upéicha';
+
+  @override
+  String get recognitionRawText => 'Moñeʼẽrã oñemoñeʼẽva taʼãngágui';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Taʼãnga jehechakuaa noñembohekói (ndaipóri ANTHROPIC_API_KEY). Emoinge símbolo nde pópe.';
+
+  @override
+  String get errRecognitionUnreachable =>
+      'Ndaikatúi oñeike jehechakuaa mbaʼepytyvõrãme. Ehecha oiko porãpa ne ñanduti.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Jehechakuaa mbaʼepytyvõrã ombohovái jejavy reheve (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Jehechakuaa mbaʼepytyvõrã ndaikatúi ohesaʼỹijo ko taʼãnga.';
+
+  @override
+  String get errRecognitionTruncated => 'Jehechakuaa mbohovái oñekytĩ. Ehaʼã jey.';
+
+  @override
+  String get errRecognitionBadResponse => 'Mbohovái oñehaʼarõʼỹva jehechakuaa mbaʼepytyvõrãgui.';
+
+  @override
+  String get errRecognitionEmpty => 'Jehechakuaa mbaʼepytyvõrã omeʼẽ mbohovái nandi.';
+
+  @override
+  String get errMissingFinnhubKey => 'Ñemuha mbaʼekuaarã noñembohekói (ndaipóri FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable =>
+      'Ndaikatúi oñeike ñemuha mbaʼekuaarã mbaʼepytyvõrãme. Ehecha oiko porãpa ne ñanduti.';
+
+  @override
+  String get errMarketRateLimited =>
+      'Hetaiterei mbaʼejerure ñemuha mbaʼekuaarã mbaʼepytyvõrãme. Ehaʼarõmi peteĩ aravoʼi.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Ñemuha mbaʼekuaarã mbaʼepytyvõrã ombohovái jejavy reheve (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Mbohovái oñehaʼarõʼỹva ñemuha mbaʼekuaarã mbaʼepytyvõrãgui.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Ndojejuhúi tepy mbaʼekuaarã $symbol-pe g̃uarã.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Ndojejuhúi empresa rehegua $symbol-pe g̃uarã.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Modo demo ombaʼapo $symbols ndive añoite. Embojuaju FINNHUB_API_KEY mbaʼekuaarã koʼag̃aguávape g̃uarã.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Oĩvaicha osẽvaíva: $detail';
+  }
+
+  @override
+  String get newSearch => 'Jeheka pyahu';
+
+  @override
+  String get recentSearches => 'Ramóva';
+
+  @override
+  String get noRecentSearches => 'Ndaipóri gueteri jeheka ramóva.';
+
+  @override
+  String get clearRecent => 'Emopotĩ ramóva';
+
+  @override
+  String get greeting => '¿Mbaʼe acción-pa jahecháta?';
+
+  @override
+  String get searchHint => 'Símbolo térã empresa réra';
+
+  @override
+  String get attachImage => 'Emoirũ taʼãnga';
+
+  @override
+  String get searchResultsTitle => 'Jeheka rapykuere';
+
+  @override
+  String errNoResults(String query) {
+    return 'Ndojejuhúi acción “$query” rehegua.';
+  }
+
+  @override
+  String get quickBarHint => 'Ehai símbolo térã empresa réra…';
+
+  @override
+  String get openFullWindow => 'Embojuruja ovetã';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Ejopy $shortcut oimeraẽ hendápe ehenói hag̃ua StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Embojuruja StockLens';
+
+  @override
+  String get trayQuickSearch => 'Jeheka pyaʼe';
+
+  @override
+  String get trayQuit => 'Esẽ';
+
+  @override
+  String get appearance => 'Hechapy';
+
+  @override
+  String get themeSystem => 'Apopyvusu';
+
+  @override
+  String get themeDark => 'Ypytũ';
+
+  @override
+  String get themeLight => 'Tesakã';
+
+  @override
+  String get back => 'Tapykue';
+
+  @override
+  String get aiSectionTitle => 'AI jehesaʼỹijo';
+
+  @override
+  String get aiIntro =>
+      'Jehesaʼỹijo mbaʼemimi reheve, AI ohaivaʼekue: marandu ramovéva mombyky, empresa rembiapo, imbaretekue, riesgokuéra ha mbaʼe kañymby, hepykue ñembopapa, tepy oúvarã escenario reheve (psicológico, sociológico, técnico ha macroeconómico), ha mbaʼépa reñatendevaʼerã.';
+
+  @override
+  String get aiGenerate => 'Emoheñói jehesaʼỹijo';
+
+  @override
+  String get aiRegenerate => 'Emoheñói jey';
+
+  @override
+  String get aiGenerating => 'Ojembosakoʼihína jehesaʼỹijo… ikatu ohasa peteĩ térã mokõi aravoʼi.';
+
+  @override
+  String get aiSources => 'Teñoiha';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Oñemoheñói $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Jehesaʼỹijo AI omoheñóiva mbaʼekuaarã opavavegua ha marandu ramovéva rupive. Ikatu oguereko jejavy térã ndahaʼevéi koʼag̃agua, ha ndahaʼéi ñemoñeʼẽ inversión rehegua.';
+
+  @override
+  String get errAiNotConfigured => 'AI jehesaʼỹijo noñembohekói (ndaipóri ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Ndaikatúi oñeike AI mbaʼepytyvõrãme. Ehecha oiko porãpa ne ñanduti.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'AI mbaʼepytyvõrã ombohovái jejavy reheve (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'AI mbaʼepytyvõrã ndohesaʼỹijoséi ko acción.';
+
+  @override
+  String get errAiBadResponse => 'Mbohovái oñehaʼarõʼỹva AI mbaʼepytyvõrãgui.';
+
+  @override
+  String get sectionChart => 'Tepy raʼãnga';
+
+  @override
+  String get rangeOneWeek => '7 ára';
+
+  @override
+  String get rangeOneMonth => '1 jasy';
+
+  @override
+  String get rangeThreeMonths => '3 jasy';
+
+  @override
+  String get rangeOneYear => '1 ary';
+
+  @override
+  String get rangeFiveYears => '5 ary';
+
+  @override
+  String get chartUnavailable => 'Tepy rembiasakue ndaipóri ko mbaʼekuaarã reñoihápe.';
+
+  @override
+  String get sectionStatements => 'Kuatia viru rehegua (arygua)';
+
+  @override
+  String get labelFiscalYear => 'Ary fiscal';
+
+  @override
+  String get labelRevenue => 'Viru oikéva';
+
+  @override
+  String get labelNetIncome => 'Ganancia potĩ';
+
+  @override
+  String get labelTotalAssets => 'Opaite activo';
+
+  @override
+  String get labelTotalLiabilities => 'Opaite pasivo';
+
+  @override
+  String get labelEquity => 'Capital propio';
+
+  @override
+  String get labelOperatingCashFlow => 'Flujo de caja operativo';
+
+  @override
+  String get statementsUnavailable => 'Ndaipóri kuatia viru rehegua ko acción-pe g̃uarã.';
+
+  @override
+  String get launchAtLogin => 'Emoñepyrũ eikévo apopyvusúpe';
+
+  @override
+  String get hotkeyLabel => 'Mbopyaʼeha opaitegua';
+
+  @override
+  String get hotkeyRecordHint => 'Eikutu koʼápe, upéi ejopy tairenda ñembojoaju pyahu';
+
+  @override
+  String get hotkeyReset => 'Embojevy ijypykuépe';
+
+  @override
+  String get pasteImage => 'Emboja taʼãnga kuatiajokohágui';
+
+  @override
+  String get errClipboardNoImage => 'Ndaipóri taʼãnga kuatiajokohápe.';
+
+  @override
+  String get favorites => 'Ojeguerohoryvéva';
+
+  @override
+  String get addToFavorites => 'Embojuaju ojeguerohoryvévape';
+
+  @override
+  String get removeFromFavorites => 'Embogue ojeguerohoryvévagui';
+
+  @override
+  String get noFavorites => 'Ndaipóri gueteri ojeguerohoryvéva. Eikutu acción mbyja ombojuaju hag̃ua.';
+
+  @override
+  String get displayCurrency => 'Pirapire ojehechaukáva';
+
+  @override
+  String get displayCurrencyNone => 'Acción pirapire añoite';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ $currency-pe';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Ñemoambue repy: 1 $from = $rate $to (BCE, $date)';
+  }
+
+  @override
+  String get updates => 'Ñembohekopyahu';
+
+  @override
+  String currentVersion(String version) {
+    return 'Peteĩchagua $version';
+  }
+
+  @override
+  String get autoUpdate => 'Emohenda ñembohekopyahu ijeheguiete';
+
+  @override
+  String get checkForUpdates => 'Eheka ñembohekopyahu';
+
+  @override
+  String get updateChecking => 'Ohekahína ñembohekopyahu…';
+
+  @override
+  String get updateUpToDate => 'Ereko peteĩchagua ipyahuvéva.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Peteĩchagua $version oĩma.';
+  }
+
+  @override
+  String get updateDownloading => 'Oguejyhína ñembohekopyahu mokõihápe…';
+
+  @override
+  String get updateDownloaded => 'Ñembohekopyahu oĩma. Emoñepyrũjey emohenda hag̃ua.';
+
+  @override
+  String get updateNow => 'Embohekopyahu';
+
+  @override
+  String get restartNow => 'Emoñepyrũjey';
+
+  @override
+  String get updatesViaStore => 'Ñembohekopyahu og̃uahẽ ijeheguiete tembiporuʼi ñemuhágui.';
+
+  @override
+  String get updateCheckFailed => 'Ndaikatúi ojeheka ñembohekopyahu.';
+
+  @override
+  String get subscription => 'Ñemboheraguapy';
+
+  @override
+  String get planTrial => 'Ñehaʼã';
+
+  @override
+  String get planNormal => 'Jepiguáva';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Ndaipóri plan oikóva';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count jehesaʼỹijo jasy ñavõ';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return '$days ára jeporu rei $count jehesaʼỹijo reheve';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Opyta $days ára jeporu rei',
+      one: 'Opyta 1 ára jeporu rei',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Nde jeporu rei opáma. Eiporavo peteĩ plan rehesaʼỹijo jey hag̃ua.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Opyta $remaining jehesaʼỹijo $total-gui ko ára paʼũme';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count jehesaʼỹijo mbojuajupyre';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Oñembopyahúta $date-pe';
+  }
+
+  @override
+  String get choosePlan => 'Eiporavo plan';
+
+  @override
+  String get currentPlan => 'Plan koʼag̃agua';
+
+  @override
+  String get subscribe => 'Eñemboheraguapy';
+
+  @override
+  String get perMonth => '/ jasy';
+
+  @override
+  String get extraPacksTitle => '¿Eikotevẽve? Ejogua jehesaʼỹijo mbojuajurã';
+
+  @override
+  String get extraPacksHint => 'Jehesaʼỹijo mbojuajurã arakaʼeve ndopái ha ojeporu nde cupo jasygua opa rire.';
+
+  @override
+  String get buy => 'Ejogua';
+
+  @override
+  String get restorePurchases => 'Embojevy jejogua';
+
+  @override
+  String get manageSubscription => 'Eñangareko ñemboheraguapy rehe';
+
+  @override
+  String get purchaseSuccess => '¡Aguyje! Nde jejogua oikóma.';
+
+  @override
+  String get purchasePending => 'Jejogua ohaʼarõhína…';
+
+  @override
+  String get purchaseFailed => 'Ndaikatúi oñemohuʼã jejogua.';
+
+  @override
+  String get purchaseCanceled => 'Jejogua ojeheja.';
+
+  @override
+  String get billingUnavailable =>
+      'Jejogua ndaipóri gueteri ko plataforma-pe. Eñemboheraguapy ne pumbyrýpe térã Mac-pe; nde plan ombaʼapóta opa mbaʼeʼokápe.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Ndereguerekovéima jehesaʼỹijo ko ára paʼũme. Embotuichave nde plan térã ejogua jehesaʼỹijo mbojuajurã.';
+
+  @override
+  String get errTrialExpired => 'Nde jeporu rei opáma. Eiporavo peteĩ plan ekuʼejey hag̃ua.';
+
+  @override
+  String get errNoPlan => 'Eikotevẽ peteĩ plan oikóva AI jehesaʼỹijorã.';
+
+  @override
+  String get viewPlans => 'Ehecha plan-kuéra';
+
+  @override
+  String get usageTitle => 'Jeporu';
+
+  @override
+  String get demoPurchaseNote => 'Jehepymeʼẽ demo: ko plataforma-pe jejogua ndahaʼéi añetegua.';
+
+  @override
+  String get mostPopular => 'Ojeporuvéva';
+
+  @override
+  String get bestValue => 'Hepykue porãvéva';
+
+  @override
+  String get planFeaturesCommon =>
+      'Taʼãnga jehechakuaa, mbaʼekuaarã koʼag̃agua, taʼãngaʼi, ojeguerohoryvéva ha 120 ñeʼẽ oĩ opa plan-pe. Cupo oñemeʼẽ AI jehesaʼỹijorã.';
+
+  @override
+  String get searchLanguages => 'Eheka ñeʼẽ…';
+
+  @override
+  String get noLanguageMatch => 'Ndaipóri ñeʼẽ ojojoguáva.';
+
+  @override
+  String get aiSettings => 'AI jehesaʼỹijo';
+
+  @override
+  String get aiLength => 'Pukukue';
+
+  @override
+  String get aiDepthBrief => 'Mbykymi';
+
+  @override
+  String get aiDepthStandard => 'Mbytegua';
+
+  @override
+  String get aiDepthDeep => 'Pypuku';
+
+  @override
+  String get aiDepthBriefDesc => 'Tekotevẽvéva, pyaʼe.';
+
+  @override
+  String get aiDepthStandardDesc => 'Informe tenyhẽ opaite vore reheve.';
+
+  @override
+  String get aiDepthDeepDesc => 'Hetave jeheka ñandutípe, ñembojoja ambue empresa ndive ha mbaʼemimive.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return '$min–$max ñeʼẽ rupi';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'oipuru $count jehesaʼỹijo',
+      one: 'oipuru 1 jehesaʼỹijo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Moñeʼẽhára nivel';
+
+  @override
+  String get aiReaderBeginner => 'Oñepyrũva';
+
+  @override
+  String get aiReaderExperienced => 'Ikatupyrýva';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Ñeʼẽ hasyʼỹva; oñemyesakã opaite ñeʼẽ técnico.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Moñeʼẽrã ipyʼỹivéva, ñeʼẽ viru rehegua jepiguáva reheve.';
+
+  @override
+  String get aiCounterArgument => 'Ñeʼẽ ombotovéva imbaretevéva';
+
+  @override
+  String get aiCounterArgumentDesc => 'Mombyky opa meme ñeʼẽ imbaretevéva reheve ombotovéva ijeheguiete conclusión.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jeheka ñandutípe peve peteĩteĩ jehesaʼỹijópe nde plan ndive',
+      one: '1 jeheka ñandutípe peve peteĩteĩ jehesaʼỹijópe nde plan ndive',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Pukukue mbytegua plan rupi: Jepiguáva $normal, Pro $pro, Max $max, Ultra $ultra. Mbykymi oipuru 2 saʼive, Pypuku 2 hetave.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jeheka ñandutípe peve',
+      one: '1 jeheka ñandutípe peve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jeheka ñandutípe peteĩteĩ jehesaʼỹijópe',
+      one: '1 jeheka ñandutípe peteĩteĩ jehesaʼỹijópe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Ko pukukue oikotevẽ $needed jehesaʼỹijo, ha opyta $left añoite. Eiporavo pukukue mbykyve Ñembohekópe térã ehupyty hetave jehesaʼỹijo.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Ñemuha remiandu';
+
+  @override
+  String get moodVeryPessimistic => 'Pesimista eterei';
+
+  @override
+  String get moodPessimistic => 'Pesimista';
+
+  @override
+  String get moodNeutral => 'Mbytegua';
+
+  @override
+  String get moodOptimistic => 'Optimista';
+
+  @override
+  String get moodVeryOptimistic => 'Optimista eterei';
+
+  @override
+  String get scenarioBull => 'Escenario ojupíva';
+
+  @override
+  String get scenarioBase => 'Escenario mbytegua';
+
+  @override
+  String get scenarioBear => 'Escenario oguejýva';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Tepy koʼag̃agua: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Nivel tekotevẽvéva';
+
+  @override
+  String get keyLevelSupport => 'Soporte';
+
+  @override
+  String get keyLevelResistance => 'Resistencia';
+
+  @override
+  String get keyLevelAnchor => 'Ancla';
+
+  @override
+  String get upcomingEvents => 'Mbaʼe oikótava';
+
+  @override
+  String get outlookChartNote =>
+      'Umi paʼũ haʼe techapyrã añoite; probabilidad haʼe ñembopapa haʼetévaicha, ndahaʼéi oúvarã jeikuaa.';
+
+  @override
+  String get accountTitle => 'Mbaʼete';
+
+  @override
+  String get signIn => 'Eike';
+
+  @override
+  String get signOut => 'Esẽ';
+
+  @override
+  String get notSignedIn => 'Ndereikéi gueteri';
+
+  @override
+  String get accountBenefit => 'Eike nde ñemboheraguapy ombaʼapo hag̃ua opa ne mbaʼeʼokápe.';
+
+  @override
+  String get accountSyncedNote => 'Nde ñemboheraguapy ha jehesaʼỹijo opytáva peteĩchaguánte opa mbaʼeʼokápe.';
+
+  @override
+  String get signInTitle => 'Eike StockLens-pe';
+
+  @override
+  String get emailLabel => 'Ñanduti veve kundaharape';
+
+  @override
+  String get continueWithEmail => 'Ekuʼejey ñanduti veve ndive';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Romondo peteĩ código 6 papapy rehegua $email-pe. Oiko 10 aravoʼi aja.';
+  }
+
+  @override
+  String get codeLabel => 'Código jeikerã';
+
+  @override
+  String get resendCode => 'Emondo código pyahu';
+
+  @override
+  String get useDifferentEmail => 'Eiporu ambue ñanduti veve';
+
+  @override
+  String get errInvalidCode => 'Código ndoikói térã ndoikovéima.';
+
+  @override
+  String get errInvalidEmail => 'Emoinge peteĩ ñanduti veve kundaharape oikóva.';
+
+  @override
+  String get errSignInFailed => 'Jeike ndoikói. Ehecha ne ñanduti ha ehaʼã jey.';
+
+  @override
+  String get checkoutWaiting => 'Emohuʼã jehepymeʼẽ nde kundahárape. Tembiporuʼi oñembohekopyahúta ijeheguiete opávo.';
+
+  @override
+  String get paymentViaStripe => 'Jehepymeʼẽ hekorosãva nde kundahárape Stripe rupive. Ikatu eheja oimeraẽ árape.';
+
+  @override
+  String get paymentViaStore =>
+      'Ojehepymeʼẽ nde mbaʼete App Store térã Google Play rupive. Ikatu eheja oimeraẽ árape ñemuha ñembohekópe.';
+
+  @override
+  String get keySpace => 'Paʼũ';
+
+  @override
+  String get doubleOptionTitle => 'Ejopy mokõi jey Option';
+
+  @override
+  String get doubleOptionSubtitle => 'Ejopývo pyaʼe mokõi jey tairenda Option, ojuruja avei StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Ombaʼapo hag̃ua ambue tembiporuʼípe avei, emoneĩ StockLens Ajustes del Sistema → Privacidad y seguridad → Monitorización de entrada-pe, ha upéi embojuruja jey tembiporuʼi.';
+
+  @override
+  String get openSystemSettings => 'Embojuruja Ajustes del Sistema';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Ejopy $shortcut térã ejopy mokõi jey Option oimeraẽ hendápe ehenói hag̃ua StockLens.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Ikatuvéva oiko';
+
+  @override
+  String get longTermToday => 'Ko árape';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ary', one: '1 ary');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range ary ñavõ';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'ikatuvéva: $price';
+  }
+
+  @override
+  String get confidenceLow => 'Jerovia karape';
+
+  @override
+  String get confidenceMedium => 'Jerovia mbytegua';
+
+  @override
+  String get confidenceHigh => 'Jerovia yvate';
+
+  @override
+  String get longTermNote =>
+      'Paʼũ are peguáva oñemopyenda umi jeimoʼã oñemombeʼúvare ha ipysove ohasávo ára. Tepy ndoguerekói dividendo. Ñembopapa haʼetévaicha, ndahaʼéi oúvarã jeikuaa.';
+
+  @override
+  String get portfolio => 'Cartera';
+
+  @override
+  String get portfolioEmpty =>
+      'Ndaipóri gueteri mbaʼeve. Embojuruja peteĩ acción ha eikutu “Embojuaju carterape” ehapykueho hag̃ua mbaʼe ereguerekóva.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Oñeñongatu ko mbaʼeʼokápe añoite. Opaite oñemoambue BCE ñemoambue repy rupi; tepy ikatu og̃uahẽ tarde.';
+
+  @override
+  String get addToPortfolio => 'Embojuaju carterape';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Embojuaju $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Mboy acción';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Tepy peteĩteĩ acción ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Jejogua arange';
+
+  @override
+  String get portfolioAdd => 'Embojuaju';
+
+  @override
+  String get portfolioInvalidNumber => 'Emoinge peteĩ papapy tuichavéva 0-gui.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol oñembojuaju nde carterape.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Opaite hepykue';
+
+  @override
+  String get portfolioToday => 'Ko árape';
+
+  @override
+  String get portfolioGainLoss => 'Ganancia/pérdida';
+
+  @override
+  String get portfolioInvested => 'Viru oñemoĩva';
+
+  @override
+  String get portfolioAllocation => 'Ñembojaʼo';
+
+  @override
+  String get portfolioPositions => 'Ereguerekóva';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'tepy mbytegua $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Ereguerekóva';
+
+  @override
+  String get portfolioPurchases => 'Jejogua';
+
+  @override
+  String get portfolioRemove => 'Embogue';
+
+  @override
+  String get portfolioExcluded => 'Umi acción ndorekóiva tepy térã ñemoambue repy noñembopapái opaitépe.';
+
+  @override
+  String get priceAlerts => 'Tepy maranduʼi';
+
+  @override
+  String get setPriceAlert => 'Emoĩ tepy maranduʼi';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Tepy maranduʼi · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Ojupi ári';
+
+  @override
+  String get alertKindBelow => 'Oguejy guýpe';
+
+  @override
+  String get alertKindMove => 'Oñemonguʼeterei peteĩ árape';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Tepy ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Ára ñemonguʼe (%)';
+
+  @override
+  String get alertAlreadyMet => 'Tepy ohasáma ko nivel.';
+
+  @override
+  String get alertSave => 'Emoĩ maranduʼi';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Maranduʼi oñemoĩ $symbol-pe g̃uarã.';
+  }
+
+  @override
+  String get alertsEmpty =>
+      'Ndaipóri gueteri tepy maranduʼi. Embojuruja peteĩ acción ha eikutu kampana emoĩ hag̃ua peteĩ.';
+
+  @override
+  String get alertsNote =>
+      'Maranduʼi oñehechajey 5 aravoʼi ñavõ StockLens ombaʼapo aja. Mohendahápe, osegi ombaʼapo poravorã rendápe térã apopyvusu bandejápe; pumbyrýpe, koʼag̃aite maranduʼi og̃uahẽ tembiporuʼi ijurujáramo añoite.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price ári';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price guýpe';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Ára ñemonguʼe ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Oñemyandy $date $price-pe';
+  }
+
+  @override
+  String get alertRearm => 'Emyandy jey';
+
+  @override
+  String get alertDelete => 'Embogue';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol ojupi $price ári';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol oguejy $price guýpe';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol oñemonguʼe $percent ko árape';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Tepy koʼag̃agua: $price';
+  }
+
+  @override
+  String get alertOpen => 'Embojuruja';
+
+  @override
+  String get keepInTrayTitle => 'Osegi ombaʼapo ovetã oñembotývo';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens opyta poravorã rendápe térã apopyvusu bandejápe, upévare mbopyaʼeha ha tepy maranduʼi osegi ombaʼapo.';
+
+  @override
+  String get termsOfUse => 'Jeporurã reko';
+
+  @override
+  String get privacyPolicy => 'Temiñemi porureko';
+
+  @override
+  String get subscriptionLegal =>
+      'Ñemboheraguapy oñembopyahu ijeheguiete jasy ñavõ ejoko peve. Eñemboheraguapývo, emoneĩ Jeporurã reko ha Temiñemi porureko.';
+
+  @override
+  String get deleteAccount => 'Embogue mbaʼete';
+
+  @override
+  String get deleteAccountTitle => '¿Emboguese ne mbaʼete?';
+
+  @override
+  String get deleteAccountBody =>
+      'Ne mbaʼete ha opa mbaʼe oñeñongatúva ore mohendahavusúpe (ñanduti veve, cupo, jeporu) oñembogue opa árape g̃uarã, ha jehesaʼỹijo ojeporuʼỹva okañy. Ñemboheraguapy ojehepymeʼẽva kundahárape oñemboty pyaʼeterei; App Store térã Google Play ñemboheraguapy katu eheja vaʼerã ñemuha ñembohekópe.';
+
+  @override
+  String get deleteLocalData =>
+      'Embogue avei mbaʼekuaarã ko mbaʼeʼokápe (cartera, maranduʼi, ojeguerohoryvéva, tembiasakue, jehesaʼỹijo ñongatupyre)';
+
+  @override
+  String get deleteAccountConfirm => 'Embogue opa árape g̃uarã';
+
+  @override
+  String get accountDeleted => 'Ne mbaʼete oñembogue.';
+
+  @override
+  String get errDeleteAccount => 'Ndaikatúi oñembogue mbaʼete. Ehecha ne ñanduti ha ehaʼã jey.';
+}
