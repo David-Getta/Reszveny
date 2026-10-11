@@ -1004,10 +1004,10 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get doubleOptionPermission =>
-      'Akken ad iteddu daɣen deg yisnasen nniḍen, sireg StockLens deg Iɣewwaṛen n unagraw → Tabaḍnit d tɣellist → Aɛessi n unekcum, syen ales alday n usnas.';
+      'Akken ad iteddu daɣen deg yisnasen nniḍen, sireg StockLens deg Réglages Système → Confidentialité et sécurité → Surveillance de l’entrée, syen ales alday n usnas.';
 
   @override
-  String get openSystemSettings => 'Ldi iɣewwaṛen n unagraw';
+  String get openSystemSettings => 'Ldi Réglages Système';
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {

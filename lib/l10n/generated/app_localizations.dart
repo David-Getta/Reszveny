@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_af.dart';
+import 'app_localizations_ak.dart';
 import 'app_localizations_am.dart';
 import 'app_localizations_ar.dart';
 import 'app_localizations_as.dart';
@@ -15,6 +16,7 @@ import 'app_localizations_bg.dart';
 import 'app_localizations_bho.dart';
 import 'app_localizations_bm.dart';
 import 'app_localizations_bn.dart';
+import 'app_localizations_bo.dart';
 import 'app_localizations_bs.dart';
 import 'app_localizations_ca.dart';
 import 'app_localizations_ceb.dart';
@@ -22,6 +24,7 @@ import 'app_localizations_ckb.dart';
 import 'app_localizations_cs.dart';
 import 'app_localizations_da.dart';
 import 'app_localizations_de.dart';
+import 'app_localizations_ee.dart';
 import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
@@ -30,6 +33,7 @@ import 'app_localizations_fi.dart';
 import 'app_localizations_fil.dart';
 import 'app_localizations_fr.dart';
 import 'app_localizations_gl.dart';
+import 'app_localizations_gn.dart';
 import 'app_localizations_gu.dart';
 import 'app_localizations_ha.dart';
 import 'app_localizations_he.dart';
@@ -40,6 +44,7 @@ import 'app_localizations_ht.dart';
 import 'app_localizations_hu.dart';
 import 'app_localizations_hy.dart';
 import 'app_localizations_id.dart';
+import 'app_localizations_ig.dart';
 import 'app_localizations_ilo.dart';
 import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
@@ -65,6 +70,7 @@ import 'app_localizations_mr.dart';
 import 'app_localizations_ms.dart';
 import 'app_localizations_my.dart';
 import 'app_localizations_nb.dart';
+import 'app_localizations_ne.dart';
 import 'app_localizations_nl.dart';
 import 'app_localizations_nso.dart';
 import 'app_localizations_ny.dart';
@@ -72,12 +78,15 @@ import 'app_localizations_om.dart';
 import 'app_localizations_or.dart';
 import 'app_localizations_pa.dart';
 import 'app_localizations_pl.dart';
+import 'app_localizations_ps.dart';
 import 'app_localizations_pt.dart';
 import 'app_localizations_qu.dart';
 import 'app_localizations_rn.dart';
 import 'app_localizations_ro.dart';
 import 'app_localizations_ru.dart';
 import 'app_localizations_rw.dart';
+import 'app_localizations_sd.dart';
+import 'app_localizations_si.dart';
 import 'app_localizations_sk.dart';
 import 'app_localizations_sl.dart';
 import 'app_localizations_sn.dart';
@@ -105,6 +114,7 @@ import 'app_localizations_uz.dart';
 import 'app_localizations_vi.dart';
 import 'app_localizations_wo.dart';
 import 'app_localizations_xh.dart';
+import 'app_localizations_yo.dart';
 import 'app_localizations_zh.dart';
 import 'app_localizations_zu.dart';
 
@@ -192,6 +202,7 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('af'),
+    Locale('ak'),
     Locale('am'),
     Locale('ar'),
     Locale('as'),
@@ -201,6 +212,7 @@ abstract class AppLocalizations {
     Locale('bho'),
     Locale('bm'),
     Locale('bn'),
+    Locale('bo'),
     Locale('bs'),
     Locale('ca'),
     Locale('ceb'),
@@ -208,6 +220,7 @@ abstract class AppLocalizations {
     Locale('cs'),
     Locale('da'),
     Locale('de'),
+    Locale('ee'),
     Locale('el'),
     Locale('en'),
     Locale('es'),
@@ -216,6 +229,7 @@ abstract class AppLocalizations {
     Locale('fil'),
     Locale('fr'),
     Locale('gl'),
+    Locale('gn'),
     Locale('gu'),
     Locale('ha'),
     Locale('he'),
@@ -226,6 +240,7 @@ abstract class AppLocalizations {
     Locale('hu'),
     Locale('hy'),
     Locale('id'),
+    Locale('ig'),
     Locale('ilo'),
     Locale('it'),
     Locale('ja'),
@@ -251,6 +266,7 @@ abstract class AppLocalizations {
     Locale('ms'),
     Locale('my'),
     Locale('nb'),
+    Locale('ne'),
     Locale('nl'),
     Locale('nso'),
     Locale('ny'),
@@ -258,12 +274,15 @@ abstract class AppLocalizations {
     Locale('or'),
     Locale('pa'),
     Locale('pl'),
+    Locale('ps'),
     Locale('pt'),
     Locale('qu'),
     Locale('rn'),
     Locale('ro'),
     Locale('ru'),
     Locale('rw'),
+    Locale('sd'),
+    Locale('si'),
     Locale('sk'),
     Locale('sl'),
     Locale('sn'),
@@ -291,6 +310,7 @@ abstract class AppLocalizations {
     Locale('vi'),
     Locale('wo'),
     Locale('xh'),
+    Locale('yo'),
     Locale('zh'),
     Locale.fromSubtags(languageCode: 'zh', countryCode: 'HK', scriptCode: 'Hant'),
     Locale('zu'),
@@ -2486,6 +2506,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   @override
   bool isSupported(Locale locale) => <String>[
     'af',
+    'ak',
     'am',
     'ar',
     'as',
@@ -2495,6 +2516,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'bho',
     'bm',
     'bn',
+    'bo',
     'bs',
     'ca',
     'ceb',
@@ -2502,6 +2524,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'cs',
     'da',
     'de',
+    'ee',
     'el',
     'en',
     'es',
@@ -2510,6 +2533,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'fil',
     'fr',
     'gl',
+    'gn',
     'gu',
     'ha',
     'he',
@@ -2520,6 +2544,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'hu',
     'hy',
     'id',
+    'ig',
     'ilo',
     'it',
     'ja',
@@ -2545,6 +2570,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'ms',
     'my',
     'nb',
+    'ne',
     'nl',
     'nso',
     'ny',
@@ -2552,12 +2578,15 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'or',
     'pa',
     'pl',
+    'ps',
     'pt',
     'qu',
     'rn',
     'ro',
     'ru',
     'rw',
+    'sd',
+    'si',
     'sk',
     'sl',
     'sn',
@@ -2585,6 +2614,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
     'vi',
     'wo',
     'xh',
+    'yo',
     'zh',
     'zu',
   ].contains(locale.languageCode);
@@ -2604,6 +2634,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'af':
       return AppLocalizationsAf();
+    case 'ak':
+      return AppLocalizationsAk();
     case 'am':
       return AppLocalizationsAm();
     case 'ar':
@@ -2622,6 +2654,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsBm();
     case 'bn':
       return AppLocalizationsBn();
+    case 'bo':
+      return AppLocalizationsBo();
     case 'bs':
       return AppLocalizationsBs();
     case 'ca':
@@ -2636,6 +2670,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsDa();
     case 'de':
       return AppLocalizationsDe();
+    case 'ee':
+      return AppLocalizationsEe();
     case 'el':
       return AppLocalizationsEl();
     case 'en':
@@ -2652,6 +2688,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsFr();
     case 'gl':
       return AppLocalizationsGl();
+    case 'gn':
+      return AppLocalizationsGn();
     case 'gu':
       return AppLocalizationsGu();
     case 'ha':
@@ -2672,6 +2710,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsHy();
     case 'id':
       return AppLocalizationsId();
+    case 'ig':
+      return AppLocalizationsIg();
     case 'ilo':
       return AppLocalizationsIlo();
     case 'it':
@@ -2722,6 +2762,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsMy();
     case 'nb':
       return AppLocalizationsNb();
+    case 'ne':
+      return AppLocalizationsNe();
     case 'nl':
       return AppLocalizationsNl();
     case 'nso':
@@ -2736,6 +2778,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsPa();
     case 'pl':
       return AppLocalizationsPl();
+    case 'ps':
+      return AppLocalizationsPs();
     case 'pt':
       return AppLocalizationsPt();
     case 'qu':
@@ -2748,6 +2792,10 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsRu();
     case 'rw':
       return AppLocalizationsRw();
+    case 'sd':
+      return AppLocalizationsSd();
+    case 'si':
+      return AppLocalizationsSi();
     case 'sk':
       return AppLocalizationsSk();
     case 'sl':
@@ -2802,6 +2850,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsWo();
     case 'xh':
       return AppLocalizationsXh();
+    case 'yo':
+      return AppLocalizationsYo();
     case 'zh':
       return AppLocalizationsZh();
     case 'zu':
