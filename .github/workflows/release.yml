@@ -62,12 +62,18 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           cache: true
       - run: flutter pub get
+      # Univerzális APK (minden processzorra) és egy kisebb, csak arm64-es
+      # (szinte minden mai telefon) változat.
       - run: flutter build apk --release ${{ env.DEFINES }}
       - run: mv build/app/outputs/flutter-apk/app-release.apk StockLens-android.apk
+      - run: flutter build apk --release --split-per-abi ${{ env.DEFINES }}
+      - run: mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk StockLens-android-arm64.apk
       - uses: actions/upload-artifact@v4
         with:
           name: android
-          path: StockLens-android.apk
+          path: |
+            StockLens-android.apk
+            StockLens-android-arm64.apk
 
   windows:
     name: Windows
@@ -152,7 +158,7 @@ jobs:
             Kipróbálható előzetes kiadás. Kulcs nélkül demó módban fut: AAPL, MSFT, NVDA és OTP mintaadatokkal.
 
             **Telepítés**
-            - **Android:** töltsd le a `StockLens-android.apk` fájlt a telefonra, nyisd meg, és engedélyezd az ismeretlen forrásból való telepítést.
+            - **Android:** töltsd le a telefonra a `StockLens-android-arm64.apk` fájlt (kisebb, szinte minden mai telefonon fut), vagy ha az nem települ, a `StockLens-android.apk`-t. Nyisd meg, és engedélyezd az ismeretlen forrásból való telepítést.
             - **Windows:** csomagold ki a `StockLens-windows-x64.zip` fájlt, és indítsd el a `StockLens.exe`-t. A SmartScreen figyelmeztetésnél válaszd a „További információ”, majd a „Futtatás mindenképp” lehetőséget.
             - **macOS:** csomagold ki a `StockLens-macos.zip` fájlt, húzd az appot a Programok mappába, majd jobb klikk → Megnyitás (az app nincs aláírva).
             - **Web:** a `StockLens-web.zip` bármilyen statikus tárhelyre feltölthető.
