@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:crypto/crypto.dart';
 import 'package:sqlite3/sqlite3.dart';
@@ -64,6 +65,18 @@ class Store {
         verified_at TEXT NOT NULL,
         UNIQUE(platform, transaction_id)
       );
+      CREATE TABLE IF NOT EXISTS sessions (
+        token_hash TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL REFERENCES users(id),
+        created_at TEXT NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS login_codes (
+        email TEXT NOT NULL,
+        code_hash TEXT NOT NULL,
+        expires_at TEXT NOT NULL,
+        attempts INTEGER NOT NULL DEFAULT 0,
+        created_at TEXT NOT NULL
+      );
       CREATE TABLE IF NOT EXISTS usage_log (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         user_id TEXT NOT NULL,
@@ -73,6 +86,12 @@ class Store {
         created_at TEXT NOT NULL
       );
     ''');
+    // Fiók-oszlopok (meglévő adatbázisokhoz is).
+    final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
+    for (final c in ['email', 'stripe_customer_id', 'stripe_subscription_id']) {
+      if (!cols.contains(c)) _db.execute('ALTER TABLE users ADD COLUMN $c TEXT');
+    }
+    _db.execute('CREATE UNIQUE INDEX IF NOT EXISTS users_email ON users(email)');
   }
 
   factory Store.open(String path) => Store(sqlite3.open(path));
@@ -109,8 +128,111 @@ class Store {
   }
 
   String? userIdForToken(String token) {
-    final rows = _db.select('SELECT id FROM users WHERE token_hash = ?', [hashToken(token)]);
-    return rows.isEmpty ? null : rows.first['id'] as String;
+    final h = hashToken(token);
+    final rows = _db.select('SELECT id FROM users WHERE token_hash = ?', [h]);
+    if (rows.isNotEmpty) return rows.first['id'] as String;
+    final s = _db.select('SELECT user_id FROM sessions WHERE token_hash = ?', [h]);
+    return s.isEmpty ? null : s.first['user_id'] as String;
+  }
+
+  /// Új munkamenet-token egy meglévő felhasználóhoz (belépés másik eszközön).
+  String issueToken(String userId) {
+    final token = _randomId('tok') + _randomId('');
+    _db.execute('INSERT INTO sessions (token_hash, user_id, created_at) VALUES (?, ?, ?)', [
+      hashToken(token),
+      userId,
+      clock().toUtc().toIso8601String(),
+    ]);
+    return token;
+  }
+
+  /// Token visszavonása (kijelentkezés).
+  void revokeToken(String token) => _db.execute('DELETE FROM sessions WHERE token_hash = ?', [hashToken(token)]);
+
+  // ---- Fiók ----
+
+  static String normalizeEmail(String email) => email.trim().toLowerCase();
+
+  String? emailOf(String userId) {
+    final r = _db.select('SELECT email FROM users WHERE id = ?', [userId]);
+    return r.isEmpty ? null : r.first['email'] as String?;
+  }
+
+  String? userIdForEmail(String email) {
+    final r = _db.select('SELECT id FROM users WHERE email = ?', [normalizeEmail(email)]);
+    return r.isEmpty ? null : r.first['id'] as String;
+  }
+
+  void setEmail(String userId, String email) =>
+      _db.execute('UPDATE users SET email = ? WHERE id = ?', [normalizeEmail(email), userId]);
+
+  /// Hány kód ment ki erre a címre az elmúlt órában (visszaélés ellen).
+  int recentCodeCount(String email) {
+    final since = clock().subtract(const Duration(hours: 1)).toUtc().toIso8601String();
+    return _db.select('SELECT COUNT(*) AS n FROM login_codes WHERE email = ? AND created_at > ?', [
+          normalizeEmail(email),
+          since,
+        ]).first['n']
+        as int;
+  }
+
+  /// Új 6 jegyű belépőkód (10 percig érvényes); a korábbiak érvénytelenek lesznek.
+  String createLoginCode(String email) {
+    final e = normalizeEmail(email);
+    final code = (_rng.nextInt(900000) + 100000).toString();
+    final now = clock();
+    _db.execute('UPDATE login_codes SET expires_at = ? WHERE email = ?', [now.toUtc().toIso8601String(), e]);
+    _db.execute('INSERT INTO login_codes (email, code_hash, expires_at, attempts, created_at) VALUES (?, ?, ?, 0, ?)', [
+      e,
+      hashToken('$e:$code'),
+      now.add(const Duration(minutes: 10)).toUtc().toIso8601String(),
+      now.toUtc().toIso8601String(),
+    ]);
+    return code;
+  }
+
+  /// Kód ellenőrzése: legfeljebb 5 próbálkozás, utána a kód elvész.
+  bool verifyLoginCode(String email, String code) {
+    final e = normalizeEmail(email);
+    final now = clock().toUtc().toIso8601String();
+    final rows = _db.select(
+      'SELECT rowid, code_hash, attempts FROM login_codes WHERE email = ? AND expires_at > ? ORDER BY created_at DESC LIMIT 1',
+      [e, now],
+    );
+    if (rows.isEmpty) return false;
+    final r = rows.first;
+    if ((r['attempts'] as int) >= 5) return false;
+    if (r['code_hash'] == hashToken('$e:${code.trim()}')) {
+      _db.execute('DELETE FROM login_codes WHERE email = ?', [e]);
+      return true;
+    }
+    _db.execute('UPDATE login_codes SET attempts = attempts + 1 WHERE rowid = ?', [r['rowid']]);
+    return false;
+  }
+
+  // ---- Stripe ----
+
+  ({String? customerId, String? subscriptionId}) stripeOf(String userId) {
+    final r = _db.select('SELECT stripe_customer_id, stripe_subscription_id FROM users WHERE id = ?', [userId]);
+    if (r.isEmpty) return (customerId: null, subscriptionId: null);
+    return (
+      customerId: r.first['stripe_customer_id'] as String?,
+      subscriptionId: r.first['stripe_subscription_id'] as String?,
+    );
+  }
+
+  void setStripe(String userId, {String? customerId, String? subscriptionId}) {
+    if (customerId != null) {
+      _db.execute('UPDATE users SET stripe_customer_id = ? WHERE id = ?', [customerId, userId]);
+    }
+    if (subscriptionId != null) {
+      _db.execute('UPDATE users SET stripe_subscription_id = ? WHERE id = ?', [subscriptionId, userId]);
+    }
+  }
+
+  String? userIdForStripeCustomer(String customerId) {
+    final r = _db.select('SELECT id FROM users WHERE stripe_customer_id = ?', [customerId]);
+    return r.isEmpty ? null : r.first['id'] as String;
   }
 
   Entitlement entitlement(String userId) {
@@ -199,11 +321,11 @@ class Store {
 
   static DateTime? _date(Object? v) => v is String ? DateTime.tryParse(v) : null;
 
+  /// Kriptográfiailag biztonságos véletlen azonosító (tokenekhez is).
   static String _randomId(String prefix) {
-    final r = List.generate(16, (i) => (DateTime.now().microsecondsSinceEpoch * (i + 7) + _counter++ * 131) & 0xff);
-    final hex = r.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
+    final hex = List.generate(16, (_) => _rng.nextInt(256).toRadixString(16).padLeft(2, '0')).join();
     return prefix.isEmpty ? hex : '${prefix}_$hex';
   }
 
-  static int _counter = 0;
+  static final Random _rng = Random.secure();
 }

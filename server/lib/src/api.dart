@@ -5,9 +5,11 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 import 'db.dart';
+import 'mailer.dart';
 import 'plans.dart';
 import 'purchase_verifier.dart';
 import 'quota.dart';
+import 'stripe.dart';
 
 /// A StockLens backend útvonalai.
 ///
@@ -17,17 +19,35 @@ import 'quota.dart';
 /// - `POST /v1/analyze` → Anthropic Messages API továbbítás kvóta-ellenőrzéssel (402, ha nincs keret)
 /// - `POST /v1/anthropic/v1/messages` → továbbítás kvóta nélkül (fotófelismerés)
 /// - `GET  /v1/market/*` → Finnhub továbbítás a szerver kulcsával
+/// - `POST /v1/auth/email/start` `{email}` → 6 jegyű belépőkód e-mailben
+/// - `POST /v1/auth/email/verify` `{email, code}` → fiókhoz kötött token (az előfizetés minden eszközön ugyanaz)
+/// - `POST /v1/auth/logout` → a token visszavonása
+/// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
+/// - `POST /v1/billing/portal` → Stripe ügyfélportál URL (csomagváltás, lemondás, számlák)
+/// - `POST /v1/stripe/webhook` → a Stripe eseményei (aláírás-ellenőrzéssel)
 class Api {
   Api({
     required this.store,
     required this.anthropicApiKey,
     required this.finnhubApiKey,
     required this.verifier,
+    Mailer? mailer,
+    this.stripe,
+    this.publicUrl = 'http://localhost:8080',
     http.Client? client,
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
   }) : _client = client ?? http.Client(),
+       mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store);
+
+  final Mailer mailer;
+
+  /// Böngészős fizetés (asztali gép, web); `null`, ha nincs beállítva.
+  final StripeClient? stripe;
+
+  /// A szerver nyilvános címe (a Stripe ide irányít vissza fizetés után).
+  final String publicUrl;
 
   final Store store;
   final Quota quota;
@@ -46,6 +66,14 @@ class Api {
       ..post('/v1/analyze', _analyze)
       ..post('/v1/anthropic/v1/messages', _anthropicPassthrough)
       ..get('/v1/market/<path|.*>', _market)
+      ..post('/v1/auth/email/start', _emailStart)
+      ..post('/v1/auth/email/verify', _emailVerify)
+      ..post('/v1/auth/logout', _logout)
+      ..post('/v1/billing/checkout', _checkout)
+      ..post('/v1/billing/portal', _portal)
+      ..post('/v1/stripe/webhook', _stripeWebhook)
+      ..get('/billing/success', (Request r) => _page('✓', 'Sikeres fizetés · Payment complete'))
+      ..get('/billing/cancel', (Request r) => _page('×', 'A fizetés megszakadt · Payment cancelled'))
       ..get('/healthz', (Request r) => Response.ok('ok'));
     return const Pipeline().addMiddleware(_cors()).addMiddleware(logRequests()).addHandler(router.call);
   }
@@ -53,10 +81,30 @@ class Api {
   // ---- Segédek ----
 
   String? _userId(Request r) {
+    final t = _token(r);
+    return t == null ? null : store.userIdForToken(t);
+  }
+
+  static String? _token(Request r) {
     final auth = r.headers['authorization'] ?? '';
     if (!auth.startsWith('Bearer ')) return null;
-    return store.userIdForToken(auth.substring(7).trim());
+    return auth.substring(7).trim();
   }
+
+  Map<String, dynamic> _account(String uid) => {
+    'user_id': uid,
+    'email': store.emailOf(uid),
+    'entitlements': store.entitlement(uid).toJson(),
+  };
+
+  static Response _page(String mark, String text) => Response.ok(
+    '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+    '<title>StockLens</title><body style="background:#1F1E1D;color:#F5F4EF;font-family:-apple-system,system-ui,sans-serif;'
+    'display:grid;place-items:center;height:100vh;margin:0;text-align:center">'
+    '<div><div style="font-size:48px;color:#D97757">$mark</div><h2>$text</h2>'
+    '<p style="color:#A8A49B">Visszatérhetsz a StockLens appba. · You can return to the StockLens app.</p></div>',
+    headers: {'content-type': 'text/html; charset=utf-8'},
+  );
 
   Response _json(Object body, {int status = 200}) =>
       Response(status, body: jsonEncode(body), headers: {'content-type': 'application/json'});
@@ -69,7 +117,7 @@ class Api {
         const headers = {
           'access-control-allow-origin': '*',
           'access-control-allow-headers':
-              'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, '
+              'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
               'x-stocklens-depth',
           'access-control-allow-methods': 'GET, POST, OPTIONS',
         };
@@ -89,7 +137,204 @@ class Api {
   Future<Response> _me(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    return _json({'entitlements': store.entitlement(uid).toJson()});
+    return _json(_account(uid));
+  }
+
+  // ---- Fiók: belépés e-mail + kód ----
+
+  static final _emailRe = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+
+  Future<Response> _emailStart(Request r) async {
+    final email = Store.normalizeEmail((await _body(r))['email'] as String? ?? '');
+    if (!_emailRe.hasMatch(email)) return _error(400, 'invalid_email');
+    if (store.recentCodeCount(email) >= 5) return _error(429, 'too_many_codes');
+    final code = store.createLoginCode(email);
+    try {
+      await mailer.sendLoginCode(email, code);
+    } catch (e) {
+      return _error(502, 'mail_failed', '$e');
+    }
+    return _json({'sent': true});
+  }
+
+  /// Kód ellenőrzése. Ha a címhez még nincs fiók, a jelenlegi (névtelen)
+  /// felhasználó kapja meg; ha már van, a jelenlegi eszköz annak a fióknak a
+  /// tokenjét kapja, az itt gyűlt extra elemzések és a fizetős csomag átkerülnek.
+  Future<Response> _emailVerify(Request r) async {
+    final body = await _body(r);
+    final email = Store.normalizeEmail(body['email'] as String? ?? '');
+    final code = body['code'] as String? ?? '';
+    if (!store.verifyLoginCode(email, code)) return _error(401, 'invalid_code');
+
+    final current = _userId(r);
+    final existing = store.userIdForEmail(email);
+    String uid;
+    String token;
+    if (existing == null) {
+      if (current != null && store.emailOf(current) == null) {
+        uid = current;
+        token = _token(r)!;
+      } else {
+        final (id, t) = store.createAnonymousUser(null);
+        uid = id;
+        token = t;
+      }
+      store.setEmail(uid, email);
+    } else {
+      uid = existing;
+      token = current == existing ? _token(r)! : store.issueToken(existing);
+      if (current != null && current != existing && store.emailOf(current) == null) {
+        _merge(from: current, into: existing);
+      }
+    }
+    return _json({'token': token, ..._account(uid)});
+  }
+
+  void _merge({required String from, required String into}) {
+    final a = store.entitlement(from);
+    final b = store.entitlement(into);
+    b.extra += a.extra;
+    final aPaid = a.tier != null && a.tier != 'trial';
+    final bPaid = b.tier != null && b.tier != 'trial';
+    if (aPaid && !bPaid) {
+      b
+        ..tier = a.tier
+        ..periodStart = a.periodStart
+        ..periodEnd = a.periodEnd
+        ..used = a.used;
+    }
+    a.extra = 0;
+    store
+      ..save(a)
+      ..save(b);
+  }
+
+  Future<Response> _logout(Request r) async {
+    final t = _token(r);
+    if (t != null) store.revokeToken(t);
+    return _json({'ok': true});
+  }
+
+  // ---- Böngészős fizetés (Stripe) ----
+
+  Future<Response> _checkout(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final s = stripe;
+    if (s == null) return _error(503, 'billing_unavailable');
+    final email = store.emailOf(uid);
+    if (email == null) return _error(403, 'login_required');
+    final productId = (await _body(r))['product_id'] as String? ?? '';
+    final isSub = PlanSpec.byProductId(productId) != null;
+    if (!isSub && !PlanSpec.packs.containsKey(productId)) return _error(400, 'unknown_product');
+    try {
+      final url = await s.createCheckoutSession(
+        userId: uid,
+        productId: productId,
+        subscription: isSub,
+        customerId: store.stripeOf(uid).customerId,
+        email: email,
+        successUrl: '$publicUrl/billing/success',
+        cancelUrl: '$publicUrl/billing/cancel',
+      );
+      return _json({'url': url});
+    } on StripeException catch (e) {
+      return _error(502, 'stripe_error', e.message);
+    }
+  }
+
+  Future<Response> _portal(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final s = stripe;
+    if (s == null) return _error(503, 'billing_unavailable');
+    final customer = store.stripeOf(uid).customerId;
+    if (customer == null) return _error(404, 'no_customer');
+    try {
+      return _json({'url': await s.createPortalSession(customerId: customer, returnUrl: '$publicUrl/billing/success')});
+    } on StripeException catch (e) {
+      return _error(502, 'stripe_error', e.message);
+    }
+  }
+
+  /// Stripe-események: fizetés kész, megújulás, csomagváltás, lemondás.
+  /// Minden esemény egyszer számít (a `purchases` tábla dedupl.).
+  Future<Response> _stripeWebhook(Request r) async {
+    final s = stripe;
+    if (s == null) return _error(503, 'billing_unavailable');
+    final payload = await r.readAsString();
+    if (!s.verifySignature(payload, r.headers['stripe-signature'], now: store.clock())) {
+      return _error(400, 'bad_signature');
+    }
+    final event = jsonDecode(payload) as Map<String, dynamic>;
+    final type = event['type'] as String? ?? '';
+    final obj = ((event['data'] as Map?)?['object'] as Map?)?.cast<String, dynamic>() ?? const {};
+    final eventId = event['id'] as String? ?? '';
+
+    switch (type) {
+      case 'checkout.session.completed':
+        final uid = obj['client_reference_id'] as String? ?? (obj['metadata'] as Map?)?['user_id'] as String?;
+        final productId = (obj['metadata'] as Map?)?['product_id'] as String?;
+        if (uid == null || productId == null) break;
+        store.setStripe(uid, customerId: obj['customer'] as String?, subscriptionId: obj['subscription'] as String?);
+        if (store.recordPurchase(
+          userId: uid,
+          productId: productId,
+          platform: 'stripe',
+          transactionId: obj['id'] as String? ?? eventId,
+        )) {
+          quota.apply(store.entitlement(uid), productId);
+        }
+      case 'invoice.paid':
+        // A megújulás új időszakot nyit; az első számlát a checkout már elintézte.
+        if (obj['billing_reason'] != 'subscription_cycle') break;
+        final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        final productId = _productFromInvoice(s, obj);
+        if (uid == null || productId == null) break;
+        if (store.recordPurchase(
+          userId: uid,
+          productId: productId,
+          platform: 'stripe',
+          transactionId: obj['id'] as String? ?? eventId,
+        )) {
+          quota.apply(store.entitlement(uid), productId);
+        }
+      case 'customer.subscription.updated':
+        final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        final items = ((obj['items'] as Map?)?['data'] as List?) ?? const [];
+        final priceId = items.isEmpty ? null : ((items.first as Map)['price'] as Map?)?['id'] as String?;
+        final plan = priceId == null ? null : PlanSpec.byProductId(s.productForPrice(priceId) ?? '');
+        if (uid == null ||
+            plan == null ||
+            !store.recordPurchase(
+              userId: uid,
+              productId: plan.productId,
+              platform: 'stripe-event',
+              transactionId: eventId,
+            )) {
+          break;
+        }
+        // Csomagváltás azonnal érvényes, a felhasznált keret megmarad.
+        final e = store.entitlement(uid);
+        if (e.tier != plan.tier) store.save(e..tier = plan.tier);
+      case 'customer.subscription.deleted':
+        final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        if (uid == null) break;
+        final e = store.entitlement(uid);
+        if (e.tier != null && e.tier != 'trial') store.save(e..tier = null);
+    }
+    return _json({'received': true});
+  }
+
+  static String? _productFromInvoice(StripeClient s, Map<String, dynamic> invoice) {
+    final lines = ((invoice['lines'] as Map?)?['data'] as List?) ?? const [];
+    for (final l in lines.whereType<Map>()) {
+      final price = l['price'] as Map? ?? ((l['pricing'] as Map?)?['price_details'] as Map?);
+      final id = price?['id'] as String? ?? price?['price'] as String?;
+      final p = id == null ? null : s.productForPrice(id);
+      if (p != null) return p;
+    }
+    return null;
   }
 
   Future<Response> _verify(Request r) async {
