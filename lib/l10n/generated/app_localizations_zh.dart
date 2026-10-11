@@ -1084,6 +1084,106 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioExcluded => '没有价格或汇率的持仓不计入合计。';
+
+  @override
+  String get priceAlerts => '价格提醒';
+
+  @override
+  String get setPriceAlert => '设置价格提醒';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return '价格提醒 · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => '涨破';
+
+  @override
+  String get alertKindBelow => '跌破';
+
+  @override
+  String get alertKindMove => '单日大幅波动';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return '价格（$currency）';
+  }
+
+  @override
+  String get alertMovePercent => '单日波动（%）';
+
+  @override
+  String get alertAlreadyMet => '价格已越过该水平。';
+
+  @override
+  String get alertSave => '设置提醒';
+
+  @override
+  String alertCreated(String symbol) {
+    return '已为 $symbol 设置提醒。';
+  }
+
+  @override
+  String get alertsEmpty => '还没有提醒。打开一只股票并点按铃铛即可设置。';
+
+  @override
+  String get alertsNote => 'StockLens 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
+
+  @override
+  String alertDescAbove(String price) {
+    return '高于 $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '低于 $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return '单日波动 ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '已于 $date 以 $price 触发';
+  }
+
+  @override
+  String get alertRearm => '重新启用';
+
+  @override
+  String get alertDelete => '删除';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol 已涨破 $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol 已跌破 $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol 今日波动 $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return '当前价格：$price';
+  }
+
+  @override
+  String get alertOpen => '打开';
+
+  @override
+  String get keepInTrayTitle => '关闭窗口后继续运行';
+
+  @override
+  String get keepInTraySubtitle => 'StockLens 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2165,4 +2265,104 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioExcluded => '沒有股價或匯率的持倉不計入總計。';
+
+  @override
+  String get priceAlerts => '價格提示';
+
+  @override
+  String get setPriceAlert => '設定價格提示';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return '價格提示 · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => '升穿';
+
+  @override
+  String get alertKindBelow => '跌穿';
+
+  @override
+  String get alertKindMove => '單日大幅波動';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return '價格（$currency）';
+  }
+
+  @override
+  String get alertMovePercent => '單日波動（%）';
+
+  @override
+  String get alertAlreadyMet => '股價已越過此水平。';
+
+  @override
+  String get alertSave => '設定提示';
+
+  @override
+  String alertCreated(String symbol) {
+    return '已為 $symbol 設定提示。';
+  }
+
+  @override
+  String get alertsEmpty => '暫時未有提示。打開一隻股票並點一下鈴鐺即可設定。';
+
+  @override
+  String get alertsNote => 'StockLens 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
+
+  @override
+  String alertDescAbove(String price) {
+    return '高於 $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '低於 $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return '單日波動 ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '已於 $date 以 $price 觸發';
+  }
+
+  @override
+  String get alertRearm => '重新啟用';
+
+  @override
+  String get alertDelete => '刪除';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol 已升穿 $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol 已跌穿 $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol 今日波動 $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return '現價：$price';
+  }
+
+  @override
+  String get alertOpen => '打開';
+
+  @override
+  String get keepInTrayTitle => '關閉視窗後繼續運行';
+
+  @override
+  String get keepInTraySubtitle => 'StockLens 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。';
 }

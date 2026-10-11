@@ -1174,4 +1174,106 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Pozicijos be kainos ar valiutos kurso į sumas neįtraukiamos.';
+
+  @override
+  String get priceAlerts => 'Kainos įspėjimai';
+
+  @override
+  String get setPriceAlert => 'Nustatyti kainos įspėjimą';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Kainos įspėjimas · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Pakils virš';
+
+  @override
+  String get alertKindBelow => 'Nukris žemiau';
+
+  @override
+  String get alertKindMove => 'Smarkiai pajudės per dieną';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Kaina ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Dienos pokytis (%)';
+
+  @override
+  String get alertAlreadyMet => 'Kaina jau peržengė šį lygį.';
+
+  @override
+  String get alertSave => 'Nustatyti įspėjimą';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol įspėjimas nustatytas.';
+  }
+
+  @override
+  String get alertsEmpty => 'Įspėjimų dar nėra. Atidarykite akciją ir bakstelėkite varpelį.';
+
+  @override
+  String get alertsNote =>
+      'Įspėjimai tikrinami kas 5 minutes, kol veikia StockLens. Kompiuteryje programa toliau veikia meniu juostoje arba dėkle; telefone kol kas įspėja tik kai programa atidaryta.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Virš $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Žemiau $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Dienos pokytis ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Suveikė $date, kaina $price';
+  }
+
+  @override
+  String get alertRearm => 'Įjungti iš naujo';
+
+  @override
+  String get alertDelete => 'Ištrinti';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol pakilo virš $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol nukrito žemiau $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol šiandien pasikeitė $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Dabartinė kaina: $price';
+  }
+
+  @override
+  String get alertOpen => 'Atidaryti';
+
+  @override
+  String get keepInTrayTitle => 'Veikti uždarius langą';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia.';
 }

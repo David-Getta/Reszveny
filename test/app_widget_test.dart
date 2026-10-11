@@ -7,6 +7,7 @@ import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
+import 'package:reszveny/core/desktop/system_notifier.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/core/models/stock_report.dart';
@@ -29,9 +30,10 @@ class _NoRecognizer implements StockRecognizer {
       const RecognitionResult(candidates: []);
 }
 
-AppServices services({Locale? locale}) {
+AppServices services({Locale? locale, AlertNotifier? notifier}) {
   final ent = _entitlements();
   return AppServices(
+    alertNotifier: notifier ?? FakeNotifier(),
     config: const AppConfig(),
     capture: CaptureService(),
     recognizer: _NoRecognizer(),
@@ -43,6 +45,17 @@ AppServices services({Locale? locale}) {
     entitlements: ent,
     billing: DemoBillingService(latency: Duration.zero),
   );
+}
+
+/// Rendszerértesítés helyett feljegyzi, mit küldött volna.
+class FakeNotifier implements AlertNotifier {
+  final sent = <({String id, String title, String body})>[];
+
+  @override
+  Future<bool> show({required String id, required String title, required String body}) async {
+    sent.add((id: id, title: title, body: body));
+    return true;
+  }
 }
 
 EntitlementService _entitlements() => EntitlementService(

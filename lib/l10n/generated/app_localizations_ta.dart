@@ -1128,4 +1128,106 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'விலை அல்லது மாற்று விகிதம் இல்லாத நிலைகள் மொத்தத்தில் சேர்க்கப்படவில்லை.';
+
+  @override
+  String get priceAlerts => 'விலை எச்சரிக்கைகள்';
+
+  @override
+  String get setPriceAlert => 'விலை எச்சரிக்கை அமை';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'விலை எச்சரிக்கை · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'இதற்கு மேல் உயர்ந்தால்';
+
+  @override
+  String get alertKindBelow => 'இதற்குக் கீழ் சரிந்தால்';
+
+  @override
+  String get alertKindMove => 'ஒரே நாளில் அதிகம் மாறினால்';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'விலை ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'தினசரி மாற்றம் (%)';
+
+  @override
+  String get alertAlreadyMet => 'விலை ஏற்கனவே இந்த நிலையைக் கடந்துவிட்டது.';
+
+  @override
+  String get alertSave => 'எச்சரிக்கை அமை';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol-க்கு எச்சரிக்கை அமைக்கப்பட்டது.';
+  }
+
+  @override
+  String get alertsEmpty => 'இன்னும் எச்சரிக்கைகள் இல்லை. ஒரு பங்கைத் திறந்து மணியைத் தட்டுங்கள்.';
+
+  @override
+  String get alertsNote =>
+      'StockLens இயங்கும் வரை ஒவ்வொரு 5 நிமிடத்திற்கும் எச்சரிக்கைகள் சரிபார்க்கப்படும். கணினியில் ஆப் மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் தொடர்ந்து இயங்கும்; தொலைபேசியில் தற்போது ஆப் திறந்திருக்கும்போது மட்டுமே எச்சரிக்கும்.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price-க்கு மேல்';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price-க்குக் கீழ்';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'தினசரி மாற்றம் ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date அன்று $price விலையில் செயல்பட்டது';
+  }
+
+  @override
+  String get alertRearm => 'மீண்டும் இயக்கு';
+
+  @override
+  String get alertDelete => 'நீக்கு';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price-க்கு மேல் உயர்ந்தது';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price-க்குக் கீழ் சரிந்தது';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol இன்று $percent மாறியது';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'தற்போதைய விலை: $price';
+  }
+
+  @override
+  String get alertOpen => 'திற';
+
+  @override
+  String get keepInTrayTitle => 'சாளரத்தை மூடிய பிறகும் இயங்கட்டும்';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens மெனு பட்டி அல்லது சிஸ்டம் ட்ரேயில் இருக்கும், எனவே குறுக்குவிசையும் விலை எச்சரிக்கைகளும் தொடர்ந்து செயல்படும்.';
 }

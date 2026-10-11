@@ -1,6 +1,54 @@
 import Cocoa
 import CoreGraphics
 import FlutterMacOS
+import UserNotifications
+
+/// Rendszerértesítések (árfolyam-riasztás) a modern UNUserNotificationCenterrel.
+/// Az engedélyt az első értesítésnél kéri; előtérben is megjelenik, és a
+/// koppintást a riasztás azonosítójával jelzi a Dart oldalnak.
+final class AlertNotifications: NSObject, UNUserNotificationCenterDelegate {
+  static let shared = AlertNotifications()
+
+  var onClick: ((String) -> Void)?
+
+  func setUp() { UNUserNotificationCenter.current().delegate = self }
+
+  func show(id: String, title: String, body: String, completion: @escaping (Bool) -> Void) {
+    let center = UNUserNotificationCenter.current()
+    center.requestAuthorization(options: [.alert, .sound]) { granted, _ in
+      guard granted else {
+        DispatchQueue.main.async { completion(false) }
+        return
+      }
+      let content = UNMutableNotificationContent()
+      content.title = title
+      content.body = body
+      content.sound = .default
+      content.userInfo = ["id": id]
+      center.add(UNNotificationRequest(identifier: id, content: content, trigger: nil)) { error in
+        DispatchQueue.main.async { completion(error == nil) }
+      }
+    }
+  }
+
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    willPresent notification: UNNotification,
+    withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+  ) {
+    completionHandler([.banner, .sound])
+  }
+
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    didReceive response: UNNotificationResponse,
+    withCompletionHandler completionHandler: @escaping () -> Void
+  ) {
+    let id = response.notification.request.content.userInfo["id"] as? String ?? ""
+    DispatchQueue.main.async { self.onClick?(id) }
+    completionHandler()
+  }
+}
 
 /// Az Option billentyű figyelése a dupla Option-nyomáshoz (mint a Claude-ban).
 ///
@@ -142,6 +190,28 @@ class MainFlutterWindow: NSWindow {
       default:
         result(FlutterMethodNotImplemented)
       }
+    }
+
+    let notifications = FlutterMethodChannel(
+      name: "stocklens/notifications",
+      binaryMessenger: flutterViewController.engine.binaryMessenger
+    )
+    let notifier = AlertNotifications.shared
+    notifier.setUp()
+    notifier.onClick = { id in
+      NSApp.activate(ignoringOtherApps: true)
+      notifications.invokeMethod("clicked", arguments: id)
+    }
+    notifications.setMethodCallHandler { call, result in
+      guard call.method == "show", let args = call.arguments as? [String: Any] else {
+        result(FlutterMethodNotImplemented)
+        return
+      }
+      notifier.show(
+        id: args["id"] as? String ?? UUID().uuidString,
+        title: args["title"] as? String ?? "",
+        body: args["body"] as? String ?? ""
+      ) { ok in result(ok) }
     }
 
     super.awakeFromNib()

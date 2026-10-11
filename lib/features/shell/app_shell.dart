@@ -14,6 +14,7 @@ import '../../theme/app_theme.dart';
 import '../billing/usage_chip.dart';
 import '../home/home_page.dart';
 import '../home/quick_bar.dart';
+import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
 import '../settings/settings_page.dart';
 import '../stock_detail/stock_detail_page.dart';
@@ -35,12 +36,57 @@ class AppShell extends StatefulWidget {
 class _AppShellState extends State<AppShell> {
   final _navigatorKey = GlobalKey<NavigatorState>();
   bool _trayReady = false;
+  AppServices? _services;
+
+  @override
+  void dispose() {
+    _services?.alertMonitor.removeListener(_onAlertHits);
+    _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
+    super.dispose();
+  }
+
+  /// Teljesült riasztás: az appon belül is jelezzük, „Megnyitás” gombbal.
+  void _onAlertHits() {
+    final services = _services;
+    if (services == null || !mounted) return;
+    final hits = services.alertMonitor.lastHits;
+    if (hits.isEmpty) return;
+    final text = services.describeAlertHit(hits.first);
+    final l10n = AppLocalizations.of(context);
+    // A riasztás fontosabb a többi rövid üzenetnél: nem áll be mögéjük a sorba.
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text('${text.title}\n${text.body}'),
+          duration: const Duration(seconds: 8),
+          action: SnackBarAction(
+            label: l10n.alertOpen,
+            onPressed: () => services.alertMonitor.requestOpen(hits.first.alert.symbol),
+          ),
+        ),
+      );
+  }
+
+  /// Értesítésre (vagy a „Megnyitás”-ra) koppintva a részvény nyílik meg.
+  Future<void> _onOpenRequest() async {
+    final symbol = _services?.alertMonitor.openRequest.value;
+    if (symbol == null || !mounted) return;
+    await _services!.desktop.showFullWindow();
+    _goHome();
+    _openSymbol(StockCandidate(symbol: symbol, companyName: symbol, confidence: 1));
+  }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
+    if (_services == null) {
+      _services = services;
+      services.alertMonitor.addListener(_onAlertHits);
+      services.alertMonitor.openRequest.addListener(_onOpenRequest);
+    }
     if (DesktopIntegration.isSupported && !_trayReady) {
       _trayReady = true;
       services.desktop.setupTray(
@@ -62,6 +108,10 @@ class _AppShellState extends State<AppShell> {
 
   void _openPortfolio() {
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: _openSymbol)));
+  }
+
+  void _openAlerts() {
+    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: _openSymbol)));
   }
 
   void _openSettings() {
@@ -105,6 +155,7 @@ class _AppShellState extends State<AppShell> {
                     onOpenSymbol: _openSymbol,
                     onOpenSettings: _openSettings,
                     onOpenPortfolio: _openPortfolio,
+                    onOpenAlerts: _openAlerts,
                   ),
                   Expanded(child: content),
                 ],
@@ -123,12 +174,14 @@ class _Sidebar extends StatelessWidget {
     required this.onOpenSymbol,
     required this.onOpenSettings,
     required this.onOpenPortfolio,
+    required this.onOpenAlerts,
   });
 
   final VoidCallback onNewSearch;
   final ValueChanged<StockCandidate> onOpenSymbol;
   final VoidCallback onOpenSettings;
   final VoidCallback onOpenPortfolio;
+  final VoidCallback onOpenAlerts;
 
   @override
   Widget build(BuildContext context) {
@@ -165,6 +218,7 @@ class _Sidebar extends StatelessWidget {
             child: _SidebarButton(icon: Icons.add_rounded, label: l10n.newSearch, onTap: onNewSearch, accent: true),
           ),
           _SidebarButton(icon: Icons.pie_chart_outline_rounded, label: l10n.portfolio, onTap: onOpenPortfolio),
+          _SidebarButton(icon: Icons.notifications_none_rounded, label: l10n.priceAlerts, onTap: onOpenAlerts),
           _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings),
           const Padding(padding: EdgeInsets.fromLTRB(12, 8, 12, 0), child: UsageChip(compact: true)),
           const SizedBox(height: 8),

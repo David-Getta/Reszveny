@@ -677,5 +677,121 @@
   "portfolioYourPosition": "Your position",
   "portfolioPurchases": "Purchases",
   "portfolioRemove": "Remove",
-  "portfolioExcluded": "Positions without a price or exchange rate are left out of the totals."
+  "portfolioExcluded": "Positions without a price or exchange rate are left out of the totals.",
+  "priceAlerts": "Price alerts",
+  "setPriceAlert": "Set price alert",
+  "alertDialogTitle": "Price alert · {symbol}",
+  "@alertDialogTitle": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "alertKindAbove": "Rises above",
+  "alertKindBelow": "Falls below",
+  "alertKindMove": "Moves a lot in a day",
+  "alertTargetPrice": "Price ({currency})",
+  "@alertTargetPrice": {
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "alertMovePercent": "Daily move (%)",
+  "alertAlreadyMet": "The price is already past this level.",
+  "alertSave": "Set alert",
+  "alertCreated": "Alert set for {symbol}.",
+  "@alertCreated": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "alertsEmpty": "No price alerts yet. Open a stock and tap the bell to set one.",
+  "alertsNote": "Alerts are checked every 5 minutes while StockLens is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.",
+  "alertDescAbove": "Above {price}",
+  "@alertDescAbove": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertDescBelow": "Below {price}",
+  "@alertDescBelow": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertDescMove": "Daily move ±{percent}",
+  "@alertDescMove": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "alertTriggeredAt": "Triggered {date} at {price}",
+  "@alertTriggeredAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertRearm": "Re-arm",
+  "alertDelete": "Delete",
+  "alertHitAbove": "{symbol} rose above {price}",
+  "@alertHitAbove": {
+    "description": "Notification title when a price alert fires.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertHitBelow": "{symbol} fell below {price}",
+  "@alertHitBelow": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertHitMove": "{symbol} moved {percent} today",
+  "@alertHitMove": {
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "alertHitBody": "Current price: {price}",
+  "@alertHitBody": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertOpen": "Open",
+  "keepInTrayTitle": "Keep running when the window is closed",
+  "keepInTraySubtitle": "StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working."
 }

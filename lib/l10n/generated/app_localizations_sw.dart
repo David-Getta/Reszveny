@@ -1125,4 +1125,106 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Nafasi zisizo na bei au kiwango cha ubadilishaji hazijumuishwi kwenye jumla.';
+
+  @override
+  String get priceAlerts => 'Arifa za bei';
+
+  @override
+  String get setPriceAlert => 'Weka arifa ya bei';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Arifa ya bei · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Ikipanda juu ya';
+
+  @override
+  String get alertKindBelow => 'Ikishuka chini ya';
+
+  @override
+  String get alertKindMove => 'Ikisogea sana kwa siku moja';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Bei ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Mabadiliko ya siku (%)';
+
+  @override
+  String get alertAlreadyMet => 'Bei tayari imepita kiwango hiki.';
+
+  @override
+  String get alertSave => 'Weka arifa';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Arifa ya $symbol imewekwa.';
+  }
+
+  @override
+  String get alertsEmpty => 'Bado hakuna arifa. Fungua hisa na ugusa kengele.';
+
+  @override
+  String get alertsNote =>
+      'Arifa hukaguliwa kila dakika 5 wakati StockLens inaendeshwa. Kwenye kompyuta programu huendelea kwenye upau wa menyu au trei ya mfumo; kwenye simu, kwa sasa arifa huja tu programu ikiwa wazi.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Juu ya $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Chini ya $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Mabadiliko ya siku ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Ilifyatuka $date kwa $price';
+  }
+
+  @override
+  String get alertRearm => 'Washa tena';
+
+  @override
+  String get alertDelete => 'Futa';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol imepanda juu ya $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol imeshuka chini ya $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol imesogea $percent leo';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Bei ya sasa: $price';
+  }
+
+  @override
+  String get alertOpen => 'Fungua';
+
+  @override
+  String get keepInTrayTitle => 'Endelea kufanya kazi dirisha likifungwa';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens hubaki kwenye upau wa menyu au trei ya mfumo, hivyo njia ya mkato na arifa za bei huendelea kufanya kazi.';
 }

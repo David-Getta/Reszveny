@@ -1133,4 +1133,106 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Hindi kasama sa mga kabuuan ang mga posisyong walang presyo o exchange rate.';
+
+  @override
+  String get priceAlerts => 'Mga alerto sa presyo';
+
+  @override
+  String get setPriceAlert => 'Magtakda ng alerto sa presyo';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Alerto sa presyo · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Tumaas lampas sa';
+
+  @override
+  String get alertKindBelow => 'Bumaba sa ilalim ng';
+
+  @override
+  String get alertKindMove => 'Gumalaw nang malaki sa isang araw';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Presyo ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Galaw sa araw (%)';
+
+  @override
+  String get alertAlreadyMet => 'Lampas na ang presyo sa antas na ito.';
+
+  @override
+  String get alertSave => 'Itakda ang alerto';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Naitakda ang alerto para sa $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Wala pang alerto. Magbukas ng stock at i-tap ang kampana.';
+
+  @override
+  String get alertsNote =>
+      'Sinusuri ang mga alerto bawat 5 minuto habang tumatakbo ang StockLens. Sa computer, patuloy itong tumatakbo sa menu bar o system tray; sa telepono, sa ngayon ay nag-aalerto lang kapag bukas ang app.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Lampas sa $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Mas mababa sa $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Galaw sa araw ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Na-trigger noong $date sa $price';
+  }
+
+  @override
+  String get alertRearm => 'I-activate muli';
+
+  @override
+  String get alertDelete => 'Burahin';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return 'Tumaas ang $symbol lampas sa $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return 'Bumaba ang $symbol sa ilalim ng $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return 'Gumalaw ang $symbol nang $percent ngayon';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Kasalukuyang presyo: $price';
+  }
+
+  @override
+  String get alertOpen => 'Buksan';
+
+  @override
+  String get keepInTrayTitle => 'Patuloy na tumakbo kapag isinara ang window';
+
+  @override
+  String get keepInTraySubtitle =>
+      'Nananatili ang StockLens sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo.';
 }

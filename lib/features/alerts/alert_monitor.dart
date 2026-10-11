@@ -1,0 +1,104 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
+
+import '../../core/desktop/system_notifier.dart';
+import '../../core/models/stock_quote.dart';
+import '../market_data/market_data_provider.dart';
+import 'price_alert.dart';
+
+/// Egy teljesült riasztás az akkori árral.
+class AlertHit {
+  const AlertHit({required this.alert, required this.quote});
+
+  final PriceAlert alert;
+  final StockQuote quote;
+}
+
+/// A riasztások figyelése: [interval]-onként lekéri az aktív riasztások
+/// részvényeinek árát, a teljesülteket megjelöli (egyszer szólnak), és
+/// rendszerértesítést küld. A felület a [lastHits]-et figyelve az appon
+/// belül is jelez.
+class AlertMonitor extends ChangeNotifier {
+  AlertMonitor({
+    required this.store,
+    required this.marketData,
+    AlertNotifier? notifier,
+    required this.describe,
+    this.interval = const Duration(minutes: 5),
+    DateTime Function()? clock,
+  }) : notifier = notifier ?? SystemNotifier(),
+       _clock = clock ?? DateTime.now;
+
+  final AlertStore store;
+  final MarketDataProvider marketData;
+  final AlertNotifier notifier;
+  final Duration interval;
+  final DateTime Function() _clock;
+
+  /// Az értesítés címe és szövege a felhasználó nyelvén.
+  final ({String title, String body}) Function(AlertHit hit) describe;
+
+  Timer? _timer;
+  bool _checking = false;
+
+  /// A legutóbbi ellenőrzés találatai (üres, ha nem teljesült semmi).
+  List<AlertHit> lastHits = const [];
+
+  /// Értesítésre koppintás után megnyitandó részvény (a keret figyeli).
+  final ValueNotifier<String?> openRequest = ValueNotifier(null);
+
+  void requestOpen(String symbol) {
+    openRequest.value = null;
+    openRequest.value = symbol;
+  }
+
+  /// Rendszeres ellenőrzés indítása (az első rögtön lefut).
+  void start() {
+    _timer ??= Timer.periodic(interval, (_) => check());
+    check();
+  }
+
+  /// Ellenőrzés most. Egy részvény árának hibája nem állítja meg a többit.
+  Future<List<AlertHit>> check() async {
+    if (_checking) return const [];
+    _checking = true;
+    final hits = <AlertHit>[];
+    try {
+      final bySymbol = <String, List<PriceAlert>>{};
+      for (final a in store.active) {
+        bySymbol.putIfAbsent(a.symbol, () => []).add(a);
+      }
+      for (final e in bySymbol.entries) {
+        StockQuote q;
+        try {
+          q = await marketData.quote(e.key);
+        } catch (err) {
+          debugPrint('Riasztás: ${e.key} ára nem érhető el: $err');
+          continue;
+        }
+        for (final a in e.value.where((a) => a.isHit(q))) {
+          await store.markTriggered(a.id, _clock(), q.price);
+          hits.add(AlertHit(alert: a, quote: q));
+        }
+      }
+      for (final h in hits) {
+        final text = describe(h);
+        await notifier.show(id: h.alert.id, title: text.title, body: text.body);
+      }
+      if (hits.isNotEmpty) {
+        lastHits = hits;
+        notifyListeners();
+      }
+    } finally {
+      _checking = false;
+    }
+    return hits;
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+}

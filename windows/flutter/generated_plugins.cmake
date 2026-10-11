@@ -6,6 +6,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   auto_updater_windows
   file_selector_windows
   hotkey_manager_windows
+  local_notifier
   pasteboard
   screen_retriever_windows
   tray_manager

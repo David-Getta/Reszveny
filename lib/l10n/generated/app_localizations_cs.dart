@@ -1172,4 +1172,106 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Pozice bez ceny nebo směnného kurzu nejsou v součtech zahrnuty.';
+
+  @override
+  String get priceAlerts => 'Cenová upozornění';
+
+  @override
+  String get setPriceAlert => 'Nastavit cenové upozornění';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Cenové upozornění · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Vystoupá nad';
+
+  @override
+  String get alertKindBelow => 'Klesne pod';
+
+  @override
+  String get alertKindMove => 'Výrazně se pohne během dne';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Cena ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Denní pohyb (%)';
+
+  @override
+  String get alertAlreadyMet => 'Cena už tuto úroveň překročila.';
+
+  @override
+  String get alertSave => 'Nastavit upozornění';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Upozornění pro $symbol je nastaveno.';
+  }
+
+  @override
+  String get alertsEmpty => 'Zatím žádná upozornění. Otevřete akcii a klepněte na zvonek.';
+
+  @override
+  String get alertsNote =>
+      'Upozornění se kontrolují každých 5 minut, dokud StockLens běží. Na počítači aplikace dál běží v řádku nabídek nebo v oznamovací oblasti; v telefonu zatím upozorní, jen když je aplikace otevřená.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Nad $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Pod $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Denní pohyb ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Spuštěno $date při $price';
+  }
+
+  @override
+  String get alertRearm => 'Znovu aktivovat';
+
+  @override
+  String get alertDelete => 'Smazat';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol vystoupala nad $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol klesla pod $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol se dnes pohnula o $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Aktuální cena: $price';
+  }
+
+  @override
+  String get alertOpen => 'Otevřít';
+
+  @override
+  String get keepInTrayTitle => 'Běžet i po zavření okna';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens zůstane v řádku nabídek nebo v oznamovací oblasti, takže klávesová zkratka i cenová upozornění dál fungují.';
 }

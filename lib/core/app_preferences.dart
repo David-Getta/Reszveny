@@ -19,6 +19,7 @@ class AppPreferences extends ChangeNotifier {
     this.counterArgument = true,
     this.doubleOption = true,
     this.doubleOptionAsked = false,
+    this.keepInTray = true,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -35,6 +36,7 @@ class AppPreferences extends ChangeNotifier {
   static const _doubleOptionAskedKey = 'double_option_asked';
   static const _readerKey = 'analysis_reader_level';
   static const _counterKey = 'analysis_counter_argument';
+  static const _keepInTrayKey = 'keep_in_tray';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -65,6 +67,9 @@ class AppPreferences extends ChangeNotifier {
   /// Frissítések automatikus letöltése és telepítése (ahol a platform engedi).
   bool autoUpdate;
 
+  /// Asztali gépen az ablak bezárása után is fusson a menüsorban / tálcán.
+  bool keepInTray;
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -90,6 +95,7 @@ class AppPreferences extends ChangeNotifier {
         counterArgument: prefs.getBool(_counterKey) ?? true,
         doubleOption: prefs.getBool(_doubleOptionKey) ?? true,
         doubleOptionAsked: prefs.getBool(_doubleOptionAskedKey) ?? false,
+        keepInTray: prefs.getBool(_keepInTrayKey) ?? true,
       );
     } catch (_) {
       return AppPreferences();
@@ -144,6 +150,12 @@ class AppPreferences extends ChangeNotifier {
   Future<void> markDoubleOptionAsked() async {
     doubleOptionAsked = true;
     await _save((p) => p.setBool(_doubleOptionAskedKey, true));
+  }
+
+  Future<void> setKeepInTray(bool enabled) async {
+    keepInTray = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_keepInTrayKey, enabled));
   }
 
   Future<void> setAutoUpdate(bool enabled) async {

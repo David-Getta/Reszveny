@@ -1156,4 +1156,106 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'لا تُحتسب في الإجماليات المراكز التي ليس لها سعر أو سعر صرف.';
+
+  @override
+  String get priceAlerts => 'تنبيهات السعر';
+
+  @override
+  String get setPriceAlert => 'ضبط تنبيه سعر';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'تنبيه سعر · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'يرتفع فوق';
+
+  @override
+  String get alertKindBelow => 'ينخفض تحت';
+
+  @override
+  String get alertKindMove => 'يتحرك كثيرًا خلال اليوم';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'السعر ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'الحركة اليومية (%)';
+
+  @override
+  String get alertAlreadyMet => 'تجاوز السعر هذا المستوى بالفعل.';
+
+  @override
+  String get alertSave => 'ضبط التنبيه';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'تم ضبط تنبيه لـ $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'لا توجد تنبيهات بعد. افتح سهمًا وانقر على الجرس.';
+
+  @override
+  String get alertsNote =>
+      'تُفحص التنبيهات كل 5 دقائق أثناء تشغيل StockLens. على الكمبيوتر يستمر التطبيق في شريط القوائم أو علبة النظام؛ وعلى الهاتف تصل التنبيهات حاليًا عندما يكون التطبيق مفتوحًا فقط.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'فوق $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'تحت $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'حركة يومية ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'تفعّل في $date عند $price';
+  }
+
+  @override
+  String get alertRearm => 'إعادة التفعيل';
+
+  @override
+  String get alertDelete => 'حذف';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return 'ارتفع $symbol فوق $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return 'انخفض $symbol تحت $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return 'تحرك $symbol بنسبة $percent اليوم';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'السعر الحالي: $price';
+  }
+
+  @override
+  String get alertOpen => 'فتح';
+
+  @override
+  String get keepInTrayTitle => 'الاستمرار بعد إغلاق النافذة';
+
+  @override
+  String get keepInTraySubtitle =>
+      'يبقى StockLens في شريط القوائم أو علبة النظام، لذلك يستمر عمل الاختصار وتنبيهات السعر.';
 }

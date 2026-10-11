@@ -2139,6 +2139,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Positions without a price or exchange rate are left out of the totals.'**
   String get portfolioExcluded;
+
+  /// No description provided for @priceAlerts.
+  ///
+  /// In en, this message translates to:
+  /// **'Price alerts'**
+  String get priceAlerts;
+
+  /// No description provided for @setPriceAlert.
+  ///
+  /// In en, this message translates to:
+  /// **'Set price alert'**
+  String get setPriceAlert;
+
+  /// No description provided for @alertDialogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Price alert · {symbol}'**
+  String alertDialogTitle(String symbol);
+
+  /// No description provided for @alertKindAbove.
+  ///
+  /// In en, this message translates to:
+  /// **'Rises above'**
+  String get alertKindAbove;
+
+  /// No description provided for @alertKindBelow.
+  ///
+  /// In en, this message translates to:
+  /// **'Falls below'**
+  String get alertKindBelow;
+
+  /// No description provided for @alertKindMove.
+  ///
+  /// In en, this message translates to:
+  /// **'Moves a lot in a day'**
+  String get alertKindMove;
+
+  /// No description provided for @alertTargetPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Price ({currency})'**
+  String alertTargetPrice(String currency);
+
+  /// No description provided for @alertMovePercent.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily move (%)'**
+  String get alertMovePercent;
+
+  /// No description provided for @alertAlreadyMet.
+  ///
+  /// In en, this message translates to:
+  /// **'The price is already past this level.'**
+  String get alertAlreadyMet;
+
+  /// No description provided for @alertSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Set alert'**
+  String get alertSave;
+
+  /// No description provided for @alertCreated.
+  ///
+  /// In en, this message translates to:
+  /// **'Alert set for {symbol}.'**
+  String alertCreated(String symbol);
+
+  /// No description provided for @alertsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No price alerts yet. Open a stock and tap the bell to set one.'**
+  String get alertsEmpty;
+
+  /// No description provided for @alertsNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts are checked every 5 minutes while StockLens is running. On a computer it keeps running in the menu bar or tray; on a phone, alerts arrive while the app is open for now.'**
+  String get alertsNote;
+
+  /// No description provided for @alertDescAbove.
+  ///
+  /// In en, this message translates to:
+  /// **'Above {price}'**
+  String alertDescAbove(String price);
+
+  /// No description provided for @alertDescBelow.
+  ///
+  /// In en, this message translates to:
+  /// **'Below {price}'**
+  String alertDescBelow(String price);
+
+  /// No description provided for @alertDescMove.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily move ±{percent}'**
+  String alertDescMove(String percent);
+
+  /// No description provided for @alertTriggeredAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Triggered {date} at {price}'**
+  String alertTriggeredAt(String date, String price);
+
+  /// No description provided for @alertRearm.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-arm'**
+  String get alertRearm;
+
+  /// No description provided for @alertDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get alertDelete;
+
+  /// Notification title when a price alert fires.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} rose above {price}'**
+  String alertHitAbove(String symbol, String price);
+
+  /// No description provided for @alertHitBelow.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} fell below {price}'**
+  String alertHitBelow(String symbol, String price);
+
+  /// No description provided for @alertHitMove.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} moved {percent} today'**
+  String alertHitMove(String symbol, String percent);
+
+  /// No description provided for @alertHitBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Current price: {price}'**
+  String alertHitBody(String price);
+
+  /// No description provided for @alertOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get alertOpen;
+
+  /// No description provided for @keepInTrayTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep running when the window is closed'**
+  String get keepInTrayTitle;
+
+  /// No description provided for @keepInTraySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'StockLens stays in the menu bar or tray, so the hotkey and price alerts keep working.'**
+  String get keepInTraySubtitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

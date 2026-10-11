@@ -28,6 +28,7 @@ import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
+import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
@@ -71,10 +72,42 @@ PortfolioStore _samplePortfolio() => PortfolioStore(
   ],
 );
 
-AppServices _services({ThemeMode mode = ThemeMode.dark, Locale? locale, PortfolioStore? portfolio, String? currency}) {
+/// Minta-riasztások a képekhez: két aktív és egy teljesült.
+AlertStore _sampleAlerts() => AlertStore(
+  alerts: [
+    PriceAlert(
+      id: 'r1',
+      symbol: 'NVDA',
+      kind: AlertKind.below,
+      value: 170,
+      currency: 'USD',
+      createdAt: DateTime(2026, 10, 1),
+      triggeredAt: DateTime(2026, 10, 9, 15, 42),
+      triggeredPrice: 169.80,
+    ),
+    PriceAlert(id: 'r2', symbol: 'OTP', kind: AlertKind.move, value: 4, createdAt: DateTime(2026, 10, 5)),
+    PriceAlert(
+      id: 'r3',
+      symbol: 'AAPL',
+      kind: AlertKind.above,
+      value: 245,
+      currency: 'USD',
+      createdAt: DateTime(2026, 10, 8),
+    ),
+  ],
+);
+
+AppServices _services({
+  ThemeMode mode = ThemeMode.dark,
+  Locale? locale,
+  PortfolioStore? portfolio,
+  String? currency,
+  AlertStore? alerts,
+}) {
   final ent = _entitlements();
   return AppServices(
     portfolio: portfolio,
+    alerts: alerts,
     fx: _fx(),
     config: const AppConfig(),
     capture: CaptureService(),
@@ -364,6 +397,29 @@ void main() {
     await tester.tap(find.byTooltip('Add to portfolio'));
     await tester.pumpAndSettle();
     await _shot(tester, 'add_to_portfolio');
+  });
+
+  testWidgets('price alerts', (tester) async {
+    await pumpApp(tester, _services(alerts: _sampleAlerts()), const Size(1200, 760));
+    await tester.tap(find.text('Price alerts'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'alerts_page');
+    await tester.tap(find.text('AAPL · Above 245.00 USD'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_alerts');
+    await tester.tap(find.byTooltip('Set price alert'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'alert_dialog');
+  });
+
+  testWidgets('price alert dialog on a phone (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu'), alerts: _sampleAlerts()), const Size(430, 900));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Árfolyam-riasztás beállítása'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'alert_dialog_phone_hu');
   });
 
   testWidgets('paywall', (tester) async {

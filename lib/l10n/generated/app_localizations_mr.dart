@@ -1122,4 +1122,106 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'किंमत किंवा विनिमय दर नसलेल्या पोझिशन्स एकूण रकमेत धरल्या जात नाहीत.';
+
+  @override
+  String get priceAlerts => 'किंमत सूचना';
+
+  @override
+  String get setPriceAlert => 'किंमत सूचना सेट करा';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'किंमत सूचना · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'यापेक्षा वर गेल्यास';
+
+  @override
+  String get alertKindBelow => 'यापेक्षा खाली आल्यास';
+
+  @override
+  String get alertKindMove => 'एका दिवसात खूप हलल्यास';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'किंमत ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'दैनिक बदल (%)';
+
+  @override
+  String get alertAlreadyMet => 'किंमत आधीच या पातळीच्या पुढे गेली आहे.';
+
+  @override
+  String get alertSave => 'सूचना सेट करा';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol साठी सूचना सेट झाली.';
+  }
+
+  @override
+  String get alertsEmpty => 'अजून कोणतीही सूचना नाही. एखादा शेअर उघडा आणि घंटीवर टॅप करा.';
+
+  @override
+  String get alertsNote =>
+      'StockLens चालू असेपर्यंत दर 5 मिनिटांनी सूचना तपासल्या जातात. संगणकावर अ‍ॅप मेनू बार किंवा सिस्टम ट्रेमध्ये चालू राहते; फोनवर सध्या अ‍ॅप उघडे असतानाच सूचना येतात.';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price च्या वर';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price च्या खाली';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'दैनिक बदल ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date रोजी $price वर सक्रिय झाली';
+  }
+
+  @override
+  String get alertRearm => 'पुन्हा सुरू करा';
+
+  @override
+  String get alertDelete => 'हटवा';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price च्या वर गेला';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price च्या खाली आला';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol आज $percent हलला';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'सध्याची किंमत: $price';
+  }
+
+  @override
+  String get alertOpen => 'उघडा';
+
+  @override
+  String get keepInTrayTitle => 'विंडो बंद केल्यानंतरही चालू राहू द्या';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens मेनू बार किंवा सिस्टम ट्रेमध्ये राहते, त्यामुळे शॉर्टकट आणि किंमत सूचना चालू राहतात.';
 }

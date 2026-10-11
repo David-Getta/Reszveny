@@ -178,7 +178,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   /// Az ablak előkészítése még az első képkocka előtt. [title] és a tálca-
   /// menü feliratai a felhasználó nyelvén érkeznek.
-  Future<void> initialize({required String title, Map<String, dynamic>? hotkeyJson}) async {
+  Future<void> initialize({required String title, Map<String, dynamic>? hotkeyJson, bool keepInTray = true}) async {
     if (!isSupported || _initialized) return;
     if (hotkeyJson != null) {
       try {
@@ -205,7 +205,25 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
       await windowManager.focus();
     });
     windowManager.addListener(this);
+    await setKeepInTray(keepInTray);
     await _registerHotKey();
+  }
+
+  /// Az ablak bezárásakor az app a menüsorban / tálcán fut tovább (a
+  /// gyorsbillentyű és az árfolyam-riasztás így bezárt ablaknál is működik);
+  /// kilépni a menüsor-ikon „Kilépés” pontjával lehet.
+  Future<void> setKeepInTray(bool enabled) async {
+    if (!isSupported) return;
+    try {
+      await windowManager.setPreventClose(enabled);
+    } catch (e) {
+      debugPrint('Bezárás kezelése nem állítható: $e');
+    }
+  }
+
+  @override
+  void onWindowClose() async {
+    if (await windowManager.isPreventClose()) await windowManager.hide();
   }
 
   Future<void> _registerHotKey() async {

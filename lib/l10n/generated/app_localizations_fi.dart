@@ -1130,4 +1130,106 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Omistukset, joilla ei ole hintaa tai valuuttakurssia, jäävät summien ulkopuolelle.';
+
+  @override
+  String get priceAlerts => 'Kurssihälytykset';
+
+  @override
+  String get setPriceAlert => 'Aseta kurssihälytys';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Kurssihälytys · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Nousee yli';
+
+  @override
+  String get alertKindBelow => 'Laskee alle';
+
+  @override
+  String get alertKindMove => 'Liikkuu paljon päivässä';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Kurssi ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Päivämuutos (%)';
+
+  @override
+  String get alertAlreadyMet => 'Kurssi on jo ohittanut tämän tason.';
+
+  @override
+  String get alertSave => 'Aseta hälytys';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Hälytys asetettu: $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Ei vielä hälytyksiä. Avaa osake ja napauta kelloa.';
+
+  @override
+  String get alertsNote =>
+      'Hälytykset tarkistetaan 5 minuutin välein, kun StockLens on käynnissä. Tietokoneella sovellus jatkaa valikkorivillä tai ilmaisinalueella; puhelimessa hälytykset tulevat toistaiseksi vain sovelluksen ollessa auki.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Yli $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Alle $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Päivämuutos ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Lauennut $date, kurssi $price';
+  }
+
+  @override
+  String get alertRearm => 'Aktivoi uudelleen';
+
+  @override
+  String get alertDelete => 'Poista';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol nousi yli $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol laski alle $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol liikkui tänään $percent';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Nykyinen kurssi: $price';
+  }
+
+  @override
+  String get alertOpen => 'Avaa';
+
+  @override
+  String get keepInTrayTitle => 'Jatka toimintaa, kun ikkuna suljetaan';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen.';
 }

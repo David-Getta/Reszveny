@@ -1111,4 +1111,106 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Posisi tanpa harga atau kurs tidak dihitung dalam total.';
+
+  @override
+  String get priceAlerts => 'Peringatan harga';
+
+  @override
+  String get setPriceAlert => 'Atur peringatan harga';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Peringatan harga · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Naik di atas';
+
+  @override
+  String get alertKindBelow => 'Turun di bawah';
+
+  @override
+  String get alertKindMove => 'Bergerak tajam dalam sehari';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Harga ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Pergerakan harian (%)';
+
+  @override
+  String get alertAlreadyMet => 'Harga sudah melewati level ini.';
+
+  @override
+  String get alertSave => 'Atur peringatan';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Peringatan untuk $symbol telah diatur.';
+  }
+
+  @override
+  String get alertsEmpty => 'Belum ada peringatan. Buka saham dan ketuk ikon lonceng.';
+
+  @override
+  String get alertsNote =>
+      'Peringatan diperiksa setiap 5 menit selama StockLens berjalan. Di komputer, aplikasi tetap berjalan di bilah menu atau baki sistem; di ponsel, untuk saat ini peringatan hanya muncul saat aplikasi terbuka.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Di atas $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Di bawah $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Pergerakan harian ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Terpicu $date di $price';
+  }
+
+  @override
+  String get alertRearm => 'Aktifkan lagi';
+
+  @override
+  String get alertDelete => 'Hapus';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol naik di atas $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol turun di bawah $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol bergerak $percent hari ini';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Harga saat ini: $price';
+  }
+
+  @override
+  String get alertOpen => 'Buka';
+
+  @override
+  String get keepInTrayTitle => 'Tetap berjalan saat jendela ditutup';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens tetap ada di bilah menu atau baki sistem, sehingga pintasan dan peringatan harga tetap berfungsi.';
 }

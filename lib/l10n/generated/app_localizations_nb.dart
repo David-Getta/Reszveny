@@ -1124,4 +1124,106 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Beholdninger uten kurs eller valutakurs er ikke med i summene.';
+
+  @override
+  String get priceAlerts => 'Kursvarsler';
+
+  @override
+  String get setPriceAlert => 'Opprett kursvarsel';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Kursvarsel · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Stiger over';
+
+  @override
+  String get alertKindBelow => 'Faller under';
+
+  @override
+  String get alertKindMove => 'Beveger seg mye på én dag';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Kurs ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Dagsbevegelse (%)';
+
+  @override
+  String get alertAlreadyMet => 'Kursen har allerede passert dette nivået.';
+
+  @override
+  String get alertSave => 'Opprett varsel';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Varsel opprettet for $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Ingen kursvarsler ennå. Åpne en aksje og trykk på klokken.';
+
+  @override
+  String get alertsNote =>
+      'Varslene sjekkes hvert 5. minutt mens StockLens kjører. På datamaskinen kjører appen videre i menylinjen eller systemstatusfeltet; på mobilen kommer varsler foreløpig bare når appen er åpen.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Over $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Under $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Dagsbevegelse ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Utløst $date ved $price';
+  }
+
+  @override
+  String get alertRearm => 'Aktiver igjen';
+
+  @override
+  String get alertDelete => 'Slett';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol steg over $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol falt under $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol beveget seg $percent i dag';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Gjeldende kurs: $price';
+  }
+
+  @override
+  String get alertOpen => 'Åpne';
+
+  @override
+  String get keepInTrayTitle => 'Fortsett å kjøre når vinduet lukkes';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens blir værende i menylinjen eller systemstatusfeltet, slik at hurtigtasten og kursvarslene fortsatt virker.';
 }

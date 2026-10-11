@@ -1123,4 +1123,106 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'जिन पोज़िशन की कीमत या विनिमय दर उपलब्ध नहीं, वे कुल योग में शामिल नहीं हैं।';
+
+  @override
+  String get priceAlerts => 'कीमत अलर्ट';
+
+  @override
+  String get setPriceAlert => 'कीमत अलर्ट सेट करें';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'कीमत अलर्ट · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'इससे ऊपर जाए';
+
+  @override
+  String get alertKindBelow => 'इससे नीचे आए';
+
+  @override
+  String get alertKindMove => 'एक दिन में बहुत हिले';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'कीमत ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'दैनिक बदलाव (%)';
+
+  @override
+  String get alertAlreadyMet => 'कीमत पहले ही इस स्तर से आगे है।';
+
+  @override
+  String get alertSave => 'अलर्ट सेट करें';
+
+  @override
+  String alertCreated(String symbol) {
+    return '$symbol के लिए अलर्ट सेट हो गया।';
+  }
+
+  @override
+  String get alertsEmpty => 'अभी कोई अलर्ट नहीं। कोई शेयर खोलें और घंटी पर टैप करें।';
+
+  @override
+  String get alertsNote =>
+      'जब तक StockLens चल रहा है, अलर्ट हर 5 मिनट में जाँचे जाते हैं। कंप्यूटर पर ऐप मेनू बार या सिस्टम ट्रे में चलता रहता है; फ़ोन पर फ़िलहाल अलर्ट तभी आते हैं जब ऐप खुला हो।';
+
+  @override
+  String alertDescAbove(String price) {
+    return '$price से ऊपर';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return '$price से नीचे';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'दैनिक बदलाव ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return '$date को $price पर सक्रिय हुआ';
+  }
+
+  @override
+  String get alertRearm => 'फिर से चालू करें';
+
+  @override
+  String get alertDelete => 'हटाएँ';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol $price से ऊपर गया';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol $price से नीचे आया';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol आज $percent हिला';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'मौजूदा कीमत: $price';
+  }
+
+  @override
+  String get alertOpen => 'खोलें';
+
+  @override
+  String get keepInTrayTitle => 'विंडो बंद होने पर भी चलता रहे';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens मेनू बार या सिस्टम ट्रे में रहता है, ताकि शॉर्टकट और कीमत अलर्ट काम करते रहें।';
 }

@@ -11,6 +11,7 @@ import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../alerts/alerts_view.dart';
 import '../portfolio/add_lot_dialog.dart';
 import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
@@ -65,6 +66,27 @@ class _StockDetailPageState extends State<StockDetailPage> {
     if (added) messenger.showSnackBar(SnackBar(content: Text(l10n.portfolioAdded(symbol))));
   }
 
+  /// Árfolyam-riasztás beállítása a betöltött árral és pénznemmel.
+  Future<void> _setAlert() async {
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    StockDetails? d;
+    try {
+      d = await _future;
+    } catch (_) {
+      // Ár nélkül is beállítható.
+    }
+    if (!mounted) return;
+    final symbol = widget.candidate.symbol.toUpperCase();
+    final created = await showAlertDialog(
+      context,
+      symbol: symbol,
+      currency: d?.currency,
+      currentPrice: d?.quote?.price,
+    );
+    if (created) messenger.showSnackBar(SnackBar(content: Text(l10n.alertCreated(symbol))));
+  }
+
   Future<void> _refresh() {
     final f = _fetch();
     setState(() => _future = f);
@@ -80,6 +102,7 @@ class _StockDetailPageState extends State<StockDetailPage> {
         title: Text(widget.candidate.symbol),
         hasSidebar: MediaQuery.sizeOf(context).width >= 860,
         actions: [
+          AlertBellButton(symbol: widget.candidate.symbol, onPressed: _setAlert),
           IconButton(
             tooltip: l10n.addToPortfolio,
             icon: const Icon(Icons.add_chart_rounded),
@@ -199,6 +222,9 @@ class _DetailsBody extends StatelessWidget {
 
       // Saját pozíció (ha a részvény a portfólióban van)
       PositionCard(details: d),
+
+      // Árfolyam-riasztások (ha van)
+      SymbolAlertsCard(symbol: d.symbol),
 
       // AI-elemzés
       AnalysisCard(details: d),

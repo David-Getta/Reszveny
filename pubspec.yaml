@@ -1,7 +1,7 @@
 name: reszveny
 description: "StockLens – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.12+15
+version: 0.2.13+16
 
 environment:
   sdk: ^3.13.5
@@ -19,6 +19,7 @@ dependencies:
   in_app_update: ^5.0.0
   intl: ^0.20.3
   launch_at_startup: ^0.5.1
+  local_notifier: ^0.1.6
   package_info_plus: ^9.0.1
   pasteboard: ^0.5.0
   shared_preferences: ^2.5.6

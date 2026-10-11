@@ -1125,4 +1125,106 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioExcluded => 'Ba a haɗa matsayin da ba su da farashi ko farashin musaya a cikin jimilla ba.';
+
+  @override
+  String get priceAlerts => 'Faɗakarwar farashi';
+
+  @override
+  String get setPriceAlert => 'Saita faɗakarwar farashi';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Faɗakarwar farashi · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Idan ya haura sama da';
+
+  @override
+  String get alertKindBelow => 'Idan ya faɗi ƙasa da';
+
+  @override
+  String get alertKindMove => 'Idan ya motsa sosai a rana';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Farashi ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Motsin yini (%)';
+
+  @override
+  String get alertAlreadyMet => 'Farashin ya riga ya wuce wannan matakin.';
+
+  @override
+  String get alertSave => 'Saita faɗakarwa';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'An saita faɗakarwa don $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Babu faɗakarwa tukuna. Buɗe hannun jari ka taɓa ƙararrawa.';
+
+  @override
+  String get alertsNote =>
+      'Ana duba faɗakarwa kowane minti 5 yayin da StockLens ke aiki. A kwamfuta manhajar na ci gaba a sandar menu ko tiren tsarin; a waya, a yanzu tana faɗakarwa ne kawai idan manhajar a buɗe take.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Sama da $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Ƙasa da $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Motsin yini ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Ya tashi $date a $price';
+  }
+
+  @override
+  String get alertRearm => 'Sake kunnawa';
+
+  @override
+  String get alertDelete => 'Share';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol ya haura sama da $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol ya faɗi ƙasa da $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol ya motsa $percent yau';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Farashin yanzu: $price';
+  }
+
+  @override
+  String get alertOpen => 'Buɗe';
+
+  @override
+  String get keepInTrayTitle => 'Ci gaba da aiki idan an rufe taga';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens na zama a sandar menu ko tiren tsarin, don haka gajeriyar hanya da faɗakarwar farashi su ci gaba da aiki.';
 }
