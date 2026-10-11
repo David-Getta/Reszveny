@@ -17,8 +17,8 @@ class PlanSpec {
   static const paid = [
     PlanSpec('normal', 'stocklens.sub.normal', 8, 4),
     PlanSpec('pro', 'stocklens.sub.pro', 20, 6),
-    PlanSpec('max', 'stocklens.sub.max', 80, 8),
-    PlanSpec('ultra', 'stocklens.sub.ultra', 150, 10),
+    PlanSpec('max', 'stocklens.sub.max', 40, 8),
+    PlanSpec('ultra', 'stocklens.sub.ultra', 70, 10),
   ];
 
   static const packs = {'stocklens.pack.5': 5, 'stocklens.pack.20': 20, 'stocklens.pack.50': 50};

@@ -7,8 +7,8 @@
 | Próbaidő | – | 3 elemzés 3 napig | első indításkor automatikusan indul |
 | Normál | `stocklens.sub.normal` | 8 | |
 | Pro | `stocklens.sub.pro` | 20 | „Legnépszerűbb” jelölés |
-| Max | `stocklens.sub.max` | 80 | „Legjobb ár/érték” jelölés |
-| Ultra | `stocklens.sub.ultra` | 150 | |
+| Max | `stocklens.sub.max` | 40 | |
+| Ultra | `stocklens.sub.ultra` | 70 | |
 
 Extra elemzés-csomagok (fogyó termékek, nem járnak le, a havi keret után fogynak):
 `stocklens.pack.5` (+5), `stocklens.pack.20` (+20), `stocklens.pack.50` (+50).
@@ -20,22 +20,21 @@ Az alapár USD-ben van megadva (`features/billing/pricing.dart`); a boltokban ez
 és a Play ezt automatikusan teszi). A demó bolt és a böngészős előnézet az USD-alapárból számol
 helyi árat az ECB-árfolyammal, a pénznem szokása szerint kerekítve (HUF: „…90”, EUR/GBP: „x,99”).
 
-| Termék | USD | kb. HUF (360 Ft/USD) | EUR | Költség (Sonnet 5.5, 4 keresés) | Költség (Opus 5.5, 6 keresés) |
-|---|---|---|---|---|---|
-| Normál (8) | 7,99 | 2 890 | 7,99 | ≈ 2 USD | ≈ 6 USD |
-| Pro (20) | 15,99 | 5 790 | 14,99 | ≈ 5 USD | ≈ 15 USD |
-| Max (80) | 39,99 | 14 390 | 36,99 | ≈ 20 USD | ≈ 60 USD |
-| Ultra (150) | 64,99 | 23 390 | 59,99 | ≈ 37 USD | ≈ 112 USD |
-| +5 | 4,99 | 1 790 | 4,99 | ≈ 1,3 USD | ≈ 3,8 USD |
-| +20 | 17,99 | 6 490 | 16,99 | ≈ 5 USD | ≈ 15 USD |
-| +50 | 39,99 | 14 390 | 36,99 | ≈ 12,5 USD | ≈ 37 USD |
+| Termék | USD | kb. HUF (360 Ft/USD) | EUR | Költség teljes kihasználásnál (Opus 5.5, ≈ 0,60 USD/elemzés) |
+|---|---|---|---|---|
+| Normál (8) | 7,99 | 2 890 | 7,99 | ≈ 4,80 USD |
+| Pro (20) | 15,99 | 5 790 | 14,99 | ≈ 12 USD |
+| Max (40) | 39,99 | 14 390 | 36,99 | ≈ 24 USD |
+| Ultra (70) | 64,99 | 23 390 | 59,99 | ≈ 42 USD |
+| +5 | 4,99 | 1 790 | 4,99 | ≈ 3 USD |
+| +20 | 17,99 | 6 490 | 16,99 | ≈ 12 USD |
+| +50 | 39,99 | 14 390 | 36,99 | ≈ 30 USD |
 
-A bolti jutalék 15–30 %. Az árak akkor termelik ki a költséget, ha az elemzés
-**Sonnet 5.5-tel** fut (kb. 0,25 USD/elemzés webkereséssel): minden csomag nyereséges a keret
-teljes kihasználása mellett is. **Opus 5.5-tel** (kb. 0,75 USD/elemzés) a Max és az Ultra
-veszteséges lenne, ha a felhasználó mindent felhasznál. Javasolt beállítás: Normál és Pro
-Sonnet 5.5 `medium`/`high`; Max és Ultra Sonnet 5.5 `high`; az Opus-alapú mélyelemzés külön
-termék vagy magasabb árú csomag lehet később.
+**A-terv (2026-10-11):** minden csomag Opus 5.5-tel fut (a szerver rögzíti a modellt), az árak
+maradnak, a Max 80 helyett 40, az Ultra 150 helyett 70 elemzést ad. Így a Normál, a Max és az
+Ultra a keret teljes kihasználásánál is nyereséges, a Pro ott nagyjából nullszaldós (átlagos
+használatnál mind nyereséges). A Max és az Ultra elemzésenként nem olcsóbb a Pro-nál, ezért a
+„Legjobb ár/érték” jelölés lekerült (félrevezető lett volna).
 
 A havi keret az AI-elemzésekre vonatkozik. A fotófelismerés, az élő adatok, a grafikon, a
 kedvencek és a 44 nyelv minden csomagban korlátlan.
@@ -105,7 +104,7 @@ történik. A `server/` mappában egy kis Dart (shelf + SQLite) szerver van, Doc
 | `GET /v1/me` | A jogosultság a kliens `EntitlementState` formátumában |
 | `POST /v1/purchases/verify` | Bolti bizonylat ellenőrzése, csomag/extra jóváírása (tranzakciónként egyszer) |
 | `POST /v1/analyze` | Anthropic-továbbítás kvóta-ellenőrzéssel; 402 ha nincs keret; befejezett válasz után levonás és napló |
-| `POST /v1/anthropic/v1/messages` | Továbbítás kvóta nélkül (fotófelismerés) |
+| `POST /v1/anthropic/v1/messages` | Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést; rögzített modell, legfeljebb 16 000 token, eszközök nélkül, 120 000 karakter és 1 kép, felhasználónként óránként 20 / naponta 60 hívás |
 | `GET /v1/market/*` | Finnhub-továbbítás a szerver kulcsával |
 
 Kliens oldalon elég a `--dart-define=BACKEND_URL=https://…`: az `AppConfig` ekkor a szerver
@@ -171,24 +170,24 @@ Becslés: a pontos számot a szerver naplója (`usage`) és az éles eval adja m
 **Nettó bevétel csomagonként** (EU-s átlag 21 % ÁFA levonva; bolti jutalék 15 % a Small Business
 Programmal, 1 millió USD éves bevétel alatt; Stripe ≈ 3,5 % + 0,30 USD):
 
-| Csomag | Ár | Nettó (bolt) | Nettó (Stripe) | Költség teljes kihasználásnál (Opus / Sonnet) |
+| Csomag (A-terv) | Ár | Nettó (bolt) | Nettó (Stripe) | Költség teljes kihasználásnál (Opus) |
 |---|---|---|---|---|
-| Normál (8) | 7,99 | 5,61 | 6,07 | 4,80 / 2,40 |
-| Pro (20) | 15,99 | 11,23 | 12,45 | 12,00 / 6,00 |
-| Max (80) | 39,99 | 28,09 | 31,59 | 48,00 / 24,00 |
-| Ultra (150) | 64,99 | 45,65 | 51,53 | 90,00 / 45,00 |
+| Normál (8) | 7,99 | 5,61 | 6,07 | 4,80 |
+| Pro (20) | 15,99 | 11,23 | 12,45 | 12,00 |
+| Max (40) | 39,99 | 28,09 | 31,59 | 24,00 |
+| Ultra (70) | 64,99 | 45,65 | 51,53 | 42,00 |
 
-**Haszon havonta és előfizetőnként, bolti eladásnál** (USD):
+**Haszon havonta és előfizetőnként, bolti eladásnál, Opus 5.5** (USD):
 
-| Csomag | Opus, teljes keret | Opus, 40 % kihasználás | Sonnet, teljes keret | Sonnet, 40 % |
-|---|---|---|---|---|
-| Normál | +0,81 | +3,69 | +3,21 | +4,65 |
-| Pro | −0,77 | +6,43 | +5,23 | +8,83 |
-| Max | −19,91 | +8,89 | +4,09 | +18,49 |
-| Ultra | −44,35 | +9,65 | +0,65 | +27,65 |
+| Csomag | Teljes keret | 40 % kihasználás |
+|---|---|---|
+| Normál (8) | +0,81 | +3,69 |
+| Pro (20) | −0,77 | +6,43 |
+| Max (40) | +4,09 | +18,49 |
+| Ultra (70) | +3,65 | +28,85 |
 
-Az előfizetők jellemzően a keret 30–50 %-át használják el, de a Max és az Ultra vevői éppen a sokat
-használók. Extra csomagok (ezeket mindig elhasználják), Opus: +5 → +0,51, +20 → +0,64, +50 → −1,91
+Az előfizetők jellemzően a keret 30–50 %-át használják el. Az eredeti keretekkel (Max 80, Ultra 150)
+teljes kihasználásnál a Max −19,91, az Ultra −44,35 USD lett volna; ezért váltottunk az A-tervre. Extra csomagok (ezeket mindig elhasználják), Opus: +5 → +0,51, +20 → +0,64, +50 → −1,91
 USD; Sonnet: +2,01 / +6,64 / +13,09 USD. A próbaidő (3 elemzés) Opusszal ≈ 1,80 USD
 telepítésenként; 5 %-os konverziónál ez ≈ 36 USD egy fizető előfizetőre vetítve.
 
@@ -197,7 +196,8 @@ egyszer), domain, e-mail (Resend: havi 3000 levélig ingyenes), és a piaci adat
 csomagja nem kereskedelmi célra szól, üzleti használathoz fizetős licenc kell (ezt a Finnhubbal kell
 egyeztetni). Az adózás (társasági adó, KIVA vagy egyéni vállalkozás) könyvelővel egyeztetendő.
 
-**Teendők a nyereséges induláshoz:** a továbbító végpont (`/v1/anthropic/v1/messages`) lezárása
-(most kvóta nélkül bármit továbbít), a valódi elemzésköltség lemérése, majd a következők egyike:
-(a) Opus mindenhol, de Max 40 és Ultra 70 elemzés; (b) Normál és Pro Opusszal, Max és Ultra
-Sonnettel (a Részletes marad Opus); (c) magasabb ár a Max (59,99) és az Ultra (99,99) csomagra.
+**Döntés (2026-10-11): A-terv.** Opus mindenhol, Max 40 és Ultra 70 elemzés; a szerver minden
+hívásnál a saját modelljét (`ANTHROPIC_MODEL`) használja, a segéd-végpont korlátozott (lásd fent).
+Hátravan: a valódi elemzésköltség lemérése 10–20 éles elemzéssel, és a névtelen fiókok tömeges
+létrehozása elleni védelem (most minden új névtelen fiók 3 próba-elemzést kap; megoldás lehet az
+eszköz-ellenőrzés – App Attest / Play Integrity – vagy a próbaidő e-mailes belépéshez kötése).

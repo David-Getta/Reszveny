@@ -31,8 +31,8 @@ void main() {
   test('plans carry the agreed allowances', () {
     expect(PlanSpec.normal.analysesPerPeriod, 8);
     expect(PlanSpec.pro.analysesPerPeriod, 20);
-    expect(PlanSpec.max.analysesPerPeriod, 80);
-    expect(PlanSpec.ultra.analysesPerPeriod, 150);
+    expect(PlanSpec.max.analysesPerPeriod, 40);
+    expect(PlanSpec.ultra.analysesPerPeriod, 70);
     expect(PlanSpec.trial.trialLength, const Duration(days: 3));
   });
 

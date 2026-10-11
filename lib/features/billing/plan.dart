@@ -50,13 +50,13 @@ class PlanSpec {
   static const max = PlanSpec(
     tier: PlanTier.max,
     productId: 'stocklens.sub.max',
-    analysesPerPeriod: 80,
+    analysesPerPeriod: 40,
     webSearches: 8,
   );
   static const ultra = PlanSpec(
     tier: PlanTier.ultra,
     productId: 'stocklens.sub.ultra',
-    analysesPerPeriod: 150,
+    analysesPerPeriod: 70,
     webSearches: 10,
   );
 

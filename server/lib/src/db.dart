@@ -85,6 +85,11 @@ class Store {
         output_tokens INTEGER,
         created_at TEXT NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS helper_calls (
+        user_id TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS helper_calls_user ON helper_calls(user_id, created_at);
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
@@ -315,6 +320,23 @@ class Store {
       'INSERT INTO usage_log (user_id, symbol, input_tokens, output_tokens, created_at) VALUES (?, ?, ?, ?, ?)',
       [userId, symbol, inputTokens, outputTokens, clock().toUtc().toIso8601String()],
     );
+  }
+
+  /// Segéd-hívások (fotófelismerés, formátumjavítás) száma [since] óta.
+  int helperCallsSince(String userId, DateTime since) =>
+      _db.select('SELECT COUNT(*) AS n FROM helper_calls WHERE user_id = ? AND created_at >= ?', [
+            userId,
+            since.toUtc().toIso8601String(),
+          ]).first['n']
+          as int;
+
+  /// Egy segéd-hívás naplózása; a két napnál régebbi sorokat közben törli.
+  void logHelperCall(String userId) {
+    final now = clock().toUtc();
+    _db.execute('INSERT INTO helper_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
+    _db.execute('DELETE FROM helper_calls WHERE created_at < ?', [
+      now.subtract(const Duration(days: 2)).toIso8601String(),
+    ]);
   }
 
   void close() => _db.close();

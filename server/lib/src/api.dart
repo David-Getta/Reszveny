@@ -17,7 +17,8 @@ import 'stripe.dart';
 /// - `GET  /v1/me` → jogosultság (a kliens `EntitlementState` formátuma)
 /// - `POST /v1/purchases/verify` `{platform, product_id, verification_data}` → jogosultság
 /// - `POST /v1/analyze` → Anthropic Messages API továbbítás kvóta-ellenőrzéssel (402, ha nincs keret)
-/// - `POST /v1/anthropic/v1/messages` → továbbítás kvóta nélkül (fotófelismerés)
+/// - `POST /v1/anthropic/v1/messages` → segéd-hívás (fotófelismerés, formátumjavítás): kvóta nélkül, de
+///   rögzített modellel, token-korláttal, eszközök nélkül és óránkénti/napi kérésszám-korláttal
 /// - `GET  /v1/market/*` → Finnhub továbbítás a szerver kulcsával
 /// - `POST /v1/auth/email/start` `{email}` → 6 jegyű belépőkód e-mailben
 /// - `POST /v1/auth/email/verify` `{email, code}` → fiókhoz kötött token (az előfizetés minden eszközön ugyanaz)
@@ -37,6 +38,7 @@ class Api {
     http.Client? client,
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
+    this.anthropicModel = 'claude-opus-5-5',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store);
@@ -57,6 +59,23 @@ class Api {
   final http.Client _client;
   final String anthropicBaseUrl;
   final String finnhubBaseUrl;
+
+  /// A modell, amin minden hívás fut; a kliens nem választhat drágábbat.
+  final String anthropicModel;
+
+  /// A segéd-hívások korlátai felhasználónként. Egy elemzéshez legfeljebb egy
+  /// javítás, egy fotóhoz egy felismerés tartozik, így ez bőven elég.
+  static const helperPerHour = 20;
+  static const helperPerDay = 60;
+  static const helperMaxTokens = 16000;
+
+  /// A fotók base64-ben érkeznek; ennél nagyobb kérést nem továbbítunk.
+  static const helperMaxBytes = 8 * 1024 * 1024;
+
+  /// Szöveg legfeljebb ennyi karakter (egy teljes részletes elemzés is belefér),
+  /// kép legfeljebb egy kérésenként; így egy hívás bemenete is korlátos.
+  static const helperMaxTextChars = 120000;
+  static const helperMaxImages = 1;
 
   Handler get handler {
     final router = Router()
@@ -372,7 +391,7 @@ class Api {
         _ => 'quota_exceeded',
       });
     }
-    final raw = limitRequest(await r.readAsString(), depth: depth, tier: e.tier);
+    final raw = limitRequest(await r.readAsString(), depth: depth, tier: e.tier, model: anthropicModel);
     final upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
     if (upstream.statusCode == 200) {
       // Csak a befejezett (nem pause_turn) választ számoljuk el.
@@ -388,16 +407,23 @@ class Api {
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
   }
 
-  /// A csomag és a hossz szerinti korlátok érvényesítése a kérésen: a
-  /// `max_tokens` és a webkeresés `max_uses` nem lehet nagyobb a megengedettnél,
-  /// így a kliens nem tud drágább elemzést kérni, mint amiért fizet.
-  static String limitRequest(String raw, {required Depth depth, required String? tier}) {
+  /// A csomag és a hossz szerinti korlátok érvényesítése a kérésen: rögzített
+  /// modell, a `max_tokens` és a webkeresés `max_uses` nem lehet nagyobb a
+  /// megengedettnél, és a webkeresésen kívül más eszköz nem fut, így a kliens
+  /// nem tud drágább elemzést kérni, mint amiért fizet.
+  static String limitRequest(
+    String raw, {
+    required Depth depth,
+    required String? tier,
+    String model = 'claude-opus-5-5',
+  }) {
     Map<String, dynamic> body;
     try {
       body = (jsonDecode(raw) as Map).cast<String, dynamic>();
     } catch (_) {
       return raw;
     }
+    body['model'] = model;
     final maxTokens = body['max_tokens'];
     body['max_tokens'] = maxTokens is int && maxTokens < depth.maxTokens ? maxTokens : depth.maxTokens;
     final allowed = depth.searchesFor(tier);
@@ -406,19 +432,72 @@ class Api {
       body['tools'] = [
         for (final t in tools)
           if (t is Map && (t['type'] as String? ?? '').startsWith('web_search'))
-            {...t, 'max_uses': t['max_uses'] is int && (t['max_uses'] as int) < allowed ? t['max_uses'] : allowed}
-          else
-            t,
+            {...t, 'max_uses': t['max_uses'] is int && (t['max_uses'] as int) < allowed ? t['max_uses'] : allowed},
       ];
     }
+    body.remove('mcp_servers');
+    body.remove('container');
     return jsonEncode(body);
   }
 
+  /// Segéd-hívás szűrése: csak az ismert mezők maradnak (eszközök nélkül),
+  /// rögzített modell, legfeljebb [helperMaxTokens] token és közepes erőfeszítés.
+  /// `null`, ha a kérés nem értelmezhető vagy több üzenetet tartalmaz a szükségesnél.
+  static String? limitHelperRequest(String raw, {String model = 'claude-opus-5-5'}) {
+    Map<String, dynamic> body;
+    try {
+      body = (jsonDecode(raw) as Map).cast<String, dynamic>();
+    } catch (_) {
+      return null;
+    }
+    final messages = body['messages'];
+    if (messages is! List || messages.isEmpty || messages.length > 2) return null;
+    var text = (body['system'] is String ? body['system'] as String : jsonEncode(body['system'] ?? '')).length;
+    var images = 0;
+    for (final m in messages) {
+      final content = m is Map ? m['content'] : null;
+      for (final block in content is List ? content : [content]) {
+        if (block is String) {
+          text += block.length;
+        } else if (block is Map && block['type'] == 'text') {
+          text += (block['text'] as String? ?? '').length;
+        } else if (block is Map && block['type'] == 'image') {
+          images++;
+        } else {
+          return null; // eszközhívás, dokumentum és más tartalom itt nem kell
+        }
+      }
+    }
+    if (text > helperMaxTextChars || images > helperMaxImages) return null;
+    final maxTokens = body['max_tokens'];
+    final config = body['output_config'];
+    final effort = config is Map ? config['effort'] : null;
+    return jsonEncode({
+      'model': model,
+      'max_tokens': maxTokens is int && maxTokens > 0 && maxTokens < helperMaxTokens ? maxTokens : helperMaxTokens,
+      'system': ?body['system'],
+      'messages': messages,
+      if (config is Map) 'output_config': {'effort': effort == 'low' ? 'low' : 'medium', 'format': ?config['format']},
+      'fallbacks': ?body['fallbacks'],
+    });
+  }
+
+  /// Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést, ezért
+  /// szűrjük a kérést és korlátozzuk, hányszor hívható.
   Future<Response> _anthropicPassthrough(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final raw = await r.readAsString();
-    final upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
+    if (raw.length > helperMaxBytes) return _error(413, 'too_large');
+    final now = store.clock();
+    if (store.helperCallsSince(uid, now.subtract(const Duration(hours: 1))) >= helperPerHour ||
+        store.helperCallsSince(uid, now.subtract(const Duration(days: 1))) >= helperPerDay) {
+      return _error(429, 'rate_limited', 'Too many requests, please try again later.');
+    }
+    final body = limitHelperRequest(raw, model: anthropicModel);
+    if (body == null) return _error(400, 'bad_request');
+    store.logHelperCall(uid);
+    final upstream = await _forwardAnthropic(body, r.headers['anthropic-beta']);
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
   }
 

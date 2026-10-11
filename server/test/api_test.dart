@@ -213,4 +213,146 @@ void main() {
     expect(lastUpstream!['max_tokens'], 8000);
     expect((lastUpstream!['tools'] as List).first['max_uses'], 2);
   });
+
+  test('analyze runs on the server model and keeps only the web search tool', () async {
+    final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+    await call(
+      'POST',
+      '/v1/analyze',
+      token: token,
+      body: {
+        'model': 'claude-fable-5-1',
+        'max_tokens': 1000,
+        'tools': [
+          {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': 2},
+          {'type': 'code_execution_20260120', 'name': 'code_execution'},
+        ],
+        'mcp_servers': [
+          {'type': 'url', 'url': 'https://example.com'},
+        ],
+        'messages': [],
+      },
+    );
+    expect(lastUpstream!['model'], 'claude-opus-5-5');
+    expect((lastUpstream!['tools'] as List).map((t) => t['name']), ['web_search']);
+    expect(lastUpstream!.containsKey('mcp_servers'), isFalse);
+  });
+
+  group('helper route (photo recognition, format repair)', () {
+    Map<String, dynamic> recognition({String model = 'claude-opus-5-5', Object? content}) => {
+      'model': model,
+      'max_tokens': 4096,
+      'output_config': {
+        'effort': 'medium',
+        'format': {'type': 'json_schema', 'schema': {}},
+      },
+      'messages': [
+        {
+          'role': 'user',
+          'content':
+              content ??
+              [
+                {
+                  'type': 'image',
+                  'source': {'type': 'base64', 'media_type': 'image/jpeg', 'data': 'AAAA'},
+                },
+                {'type': 'text', 'text': 'Which stock is this?'},
+              ],
+        },
+      ],
+    };
+
+    test('is sanitised: server model, capped tokens and effort, no tools', () async {
+      final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      final r = await call(
+        'POST',
+        '/v1/anthropic/v1/messages',
+        token: token,
+        body: {
+          ...recognition(model: 'claude-fable-5-1'),
+          'max_tokens': 64000,
+          'output_config': {
+            'effort': 'max',
+            'format': {'type': 'json_schema', 'schema': {}},
+          },
+          'tools': [
+            {'type': 'web_search_20260209', 'name': 'web_search'},
+          ],
+          'thinking': {'type': 'enabled', 'budget_tokens': 50000},
+        },
+      );
+      expect(r['status'], 200);
+      expect(lastUpstream!['model'], 'claude-opus-5-5');
+      expect(lastUpstream!['max_tokens'], Api.helperMaxTokens);
+      expect(lastUpstream!['output_config'], {
+        'effort': 'medium',
+        'format': {'type': 'json_schema', 'schema': {}},
+      });
+      expect(lastUpstream!.keys, unorderedEquals(['model', 'max_tokens', 'messages', 'output_config']));
+      // A normál felismerés változatlanul átmegy.
+      await call('POST', '/v1/anthropic/v1/messages', token: token, body: recognition());
+      expect(lastUpstream!['max_tokens'], 4096);
+      expect((lastUpstream!['messages'] as List).single['content'], hasLength(2));
+    });
+
+    test('rejects unusual requests', () async {
+      final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      Future<int> status(Object body) async =>
+          (await call('POST', '/v1/anthropic/v1/messages', token: token, body: body))['status'] as int;
+      const image = {
+        'type': 'image',
+        'source': {'type': 'base64', 'media_type': 'image/jpeg', 'data': 'AAAA'},
+      };
+      expect(await status(recognition(content: [image, image])), 400); // két kép
+      expect(
+        await status(
+          recognition(
+            content: [
+              {'type': 'tool_result', 'tool_use_id': 'x', 'content': 'y'},
+            ],
+          ),
+        ),
+        400,
+      );
+      expect(await status(recognition(content: 'x' * (Api.helperMaxTextChars + 1))), 400);
+      expect(
+        await status({
+          'messages': [
+            for (var i = 0; i < 3; i++) {'role': 'user', 'content': 'hi'},
+          ],
+        }),
+        400,
+      );
+      expect(await status({'messages': []}), 400);
+      expect(await status(recognition(content: 'x' * (Api.helperMaxBytes + 10))), 413);
+      expect(upstreamCalls, 0);
+      expect((await call('POST', '/v1/anthropic/v1/messages', body: recognition()))['status'], 401);
+    });
+
+    test('is rate limited per user per hour and per day', () async {
+      final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      final other = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      Future<int> send(String t) async =>
+          (await call('POST', '/v1/anthropic/v1/messages', token: t, body: recognition()))['status'] as int;
+      for (var i = 0; i < Api.helperPerHour; i++) {
+        expect(await send(token), 200);
+      }
+      final limited = await call('POST', '/v1/anthropic/v1/messages', token: token, body: recognition());
+      expect(limited['status'], 429);
+      expect(limited['body']['error'], 'rate_limited');
+      expect(await send(other), 200); // másik felhasználót nem érinti
+      // Egy óra múlva újra mehet, a napi keretig.
+      var sent = Api.helperPerHour;
+      while (sent < Api.helperPerDay) {
+        now = now.add(const Duration(hours: 1, minutes: 1));
+        for (var i = 0; i < Api.helperPerHour && sent < Api.helperPerDay; i++, sent++) {
+          expect(await send(token), 200);
+        }
+      }
+      now = now.add(const Duration(hours: 1, minutes: 1));
+      expect(await send(token), 429); // napi keret
+      now = now.add(const Duration(days: 1));
+      expect(await send(token), 200);
+    });
+  });
 }
