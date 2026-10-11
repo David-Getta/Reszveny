@@ -1,0 +1,1264 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Sundanese (`su`).
+class AppLocalizationsSu extends AppLocalizations {
+  AppLocalizationsSu([String locale = 'su']) : super(locale);
+
+  @override
+  String get appTitle => 'StockLens';
+
+  @override
+  String get homeTagline => 'Poto hiji saham, terus kanyahoan sagala rupa ngeunaan éta saham.';
+
+  @override
+  String get homeHint =>
+      'Sértifikat saham, layar aplikasi sekuritas, koran atawa logo pausahaan – naon waé nu bisa ngaidéntifikasi hiji saham.';
+
+  @override
+  String get takePhoto => 'Candak poto';
+
+  @override
+  String get chooseFromGallery => 'Pilih tina galeri';
+
+  @override
+  String get chooseImage => 'Pilih gambar';
+
+  @override
+  String get enterTickerManually => 'Asupkeun kode saham sacara manual';
+
+  @override
+  String get tickerInputLabel => 'Kode saham';
+
+  @override
+  String get tickerInputHint => 'conto: AAPL';
+
+  @override
+  String get lookUp => 'Téangan';
+
+  @override
+  String demoModeBanner(String symbols) {
+    return 'Mode démo – konci data pasar can disetél. Data conto sayaga pikeun: $symbols.';
+  }
+
+  @override
+  String get recognizing => 'Nganalisis gambar…';
+
+  @override
+  String get loadingData => 'Ngamuat data…';
+
+  @override
+  String get noCandidatesTitle => 'Teu aya saham nu dikenal';
+
+  @override
+  String get noCandidatesBody =>
+      'Kami teu bisa ngaidéntifikasi saham dina gambar ieu. Cobaan poto nu leuwih jelas, atawa asupkeun kode saham sacara manual.';
+
+  @override
+  String get whatWeSaw => 'Nu katingali ku kami';
+
+  @override
+  String get chooseCandidateTitle => 'Saham mana nu dimaksud ku anjeun?';
+
+  @override
+  String confidencePercent(int percent) {
+    return 'Kayakinan $percent%';
+  }
+
+  @override
+  String get settings => 'Setélan';
+
+  @override
+  String get language => 'Basa';
+
+  @override
+  String get systemLanguage => 'Bawaan sistem';
+
+  @override
+  String get about => 'Ngeunaan';
+
+  @override
+  String get disclaimer =>
+      'Aplikasi ieu ngan nyadiakeun informasi sarta lain naséhat investasi. Data bisa waé telat atawa teu akurat.';
+
+  @override
+  String dataSource(String source) {
+    return 'Sumber data: $source';
+  }
+
+  @override
+  String recognizerSource(String source) {
+    return 'Pangenalan: $source';
+  }
+
+  @override
+  String get retry => 'Cobaan deui';
+
+  @override
+  String get cancel => 'Bolay';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get close => 'Tutup';
+
+  @override
+  String get errorGeneric => 'Aya kasalahan.';
+
+  @override
+  String get errorSectionUnavailable => 'Bagian ieu teu bisa dimuat.';
+
+  @override
+  String get notAvailable => 't/a';
+
+  @override
+  String get sectionIdentity => 'Idéntifikasi';
+
+  @override
+  String get sectionPrice => 'Harga';
+
+  @override
+  String get sectionValuation => 'Valuasi';
+
+  @override
+  String get sectionFinancials => 'Kauangan';
+
+  @override
+  String get sectionDividend => 'Dividén';
+
+  @override
+  String get sectionProfile => 'Profil pausahaan';
+
+  @override
+  String get sectionAnalysts => 'Rating analis';
+
+  @override
+  String get sectionNews => 'Warta';
+
+  @override
+  String get sectionRecognition => 'Detil pangenalan';
+
+  @override
+  String get labelSymbol => 'Kode saham';
+
+  @override
+  String get labelExchange => 'Bursa';
+
+  @override
+  String get labelIsin => 'ISIN';
+
+  @override
+  String get labelCurrency => 'Mata uang';
+
+  @override
+  String get labelCountry => 'Nagara';
+
+  @override
+  String get labelIndustry => 'Industri';
+
+  @override
+  String get labelSector => 'Séktor';
+
+  @override
+  String get labelWebsite => 'Situs wéb';
+
+  @override
+  String get labelIpoDate => 'Tanggal IPO';
+
+  @override
+  String get labelMarketCap => 'Kapitalisasi pasar';
+
+  @override
+  String get labelSharesOutstanding => 'Saham nu beredar';
+
+  @override
+  String get labelEmployees => 'Karyawan';
+
+  @override
+  String get labelCeo => 'CEO';
+
+  @override
+  String get labelHeadquarters => 'Kantor puseur';
+
+  @override
+  String get labelDescription => 'Pedaran';
+
+  @override
+  String get labelLastPrice => 'Harga panungtung';
+
+  @override
+  String get labelChange => 'Parobahan';
+
+  @override
+  String get labelOpen => 'Harga buka';
+
+  @override
+  String get labelDayHigh => 'Pangluhurna poé ieu';
+
+  @override
+  String get labelDayLow => 'Panghandapna poé ieu';
+
+  @override
+  String get labelPreviousClose => 'Harga tutup saméméhna';
+
+  @override
+  String get labelWeek52High => 'Pangluhurna 52 minggu';
+
+  @override
+  String get labelWeek52Low => 'Panghandapna 52 minggu';
+
+  @override
+  String get labelAverageVolume10d => 'Rata-rata volume (10 poé)';
+
+  @override
+  String updatedAt(String time) {
+    return 'Diropéa $time';
+  }
+
+  @override
+  String get labelPeTrailing => 'P/E (trailing)';
+
+  @override
+  String get labelPeForward => 'P/E (forward)';
+
+  @override
+  String get labelPb => 'P/B';
+
+  @override
+  String get labelPs => 'P/S';
+
+  @override
+  String get labelEvToFcf => 'EV / arus kas bébas';
+
+  @override
+  String get labelPeg => 'PEG';
+
+  @override
+  String get labelEps => 'EPS (TTM)';
+
+  @override
+  String get labelBeta => 'Béta';
+
+  @override
+  String get labelRevenueTtm => 'Pendapatan (TTM)';
+
+  @override
+  String get labelNetIncomeTtm => 'Laba bersih (TTM)';
+
+  @override
+  String get labelGrossMargin => 'Margin kotor';
+
+  @override
+  String get labelOperatingMargin => 'Margin operasional';
+
+  @override
+  String get labelNetMargin => 'Margin bersih';
+
+  @override
+  String get labelRoe => 'Imbal hasil ékuitas (ROE)';
+
+  @override
+  String get labelRoa => 'Imbal hasil aset (ROA)';
+
+  @override
+  String get labelDebtToEquity => 'Hutang / ékuitas';
+
+  @override
+  String get labelCurrentRatio => 'Rasio lancar';
+
+  @override
+  String get labelRevenueGrowth => 'Tumuwuhna pendapatan (YoY)';
+
+  @override
+  String get labelEpsGrowth => 'Tumuwuhna EPS (YoY)';
+
+  @override
+  String get labelDividendYield => 'Imbal hasil dividén';
+
+  @override
+  String get labelDividendPerShare => 'Dividén per saham';
+
+  @override
+  String get labelPayoutRatio => 'Rasio pambayaran dividén';
+
+  @override
+  String get labelConsensus => 'Konsénsus';
+
+  @override
+  String get ratingStrongBuy => 'Beuli kuat';
+
+  @override
+  String get ratingBuy => 'Beuli';
+
+  @override
+  String get ratingHold => 'Tahan';
+
+  @override
+  String get ratingSell => 'Jual';
+
+  @override
+  String get ratingStrongSell => 'Jual kuat';
+
+  @override
+  String analystCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
+    return '$_temp0';
+  }
+
+  @override
+  String analystPeriod(String period) {
+    return 'Période: $period';
+  }
+
+  @override
+  String get noNews => 'Teu aya warta anyar.';
+
+  @override
+  String get openArticle => 'Buka artikel';
+
+  @override
+  String get openLinkFailed => 'Tautan teu bisa dibuka.';
+
+  @override
+  String get recognitionSummary => 'Ringkesan';
+
+  @override
+  String get recognitionEvidence => 'Naha kami nyangka kitu';
+
+  @override
+  String get recognitionRawText => 'Téks nu kabaca tina gambar';
+
+  @override
+  String get errMissingAnthropicKey =>
+      'Pangenalan gambar can disetél (teu aya ANTHROPIC_API_KEY). Asupkeun kode saham sacara manual.';
+
+  @override
+  String get errRecognitionUnreachable => 'Teu bisa nyambung ka layanan pangenalan. Pariksa sambungan internét anjeun.';
+
+  @override
+  String errRecognitionHttp(String status) {
+    return 'Layanan pangenalan ngabalikeun kasalahan (HTTP $status).';
+  }
+
+  @override
+  String get errRecognitionRefused => 'Layanan pangenalan teu bisa ngolah gambar ieu.';
+
+  @override
+  String get errRecognitionTruncated => 'Réspon pangenalan kapotong. Mangga cobaan deui.';
+
+  @override
+  String get errRecognitionBadResponse => 'Réspon nu teu disangka-sangka ti layanan pangenalan.';
+
+  @override
+  String get errRecognitionEmpty => 'Layanan pangenalan ngabalikeun réspon kosong.';
+
+  @override
+  String get errMissingFinnhubKey => 'Data pasar can disetél (teu aya FINNHUB_API_KEY).';
+
+  @override
+  String get errMarketUnreachable => 'Teu bisa nyambung ka layanan data pasar. Pariksa sambungan internét anjeun.';
+
+  @override
+  String get errMarketRateLimited => 'Kaleuleuwihi pamundut ka layanan data pasar. Mangga antosan samenit.';
+
+  @override
+  String errMarketHttp(String status) {
+    return 'Layanan data pasar ngabalikeun kasalahan (HTTP $status).';
+  }
+
+  @override
+  String get errMarketBadResponse => 'Réspon nu teu disangka-sangka ti layanan data pasar.';
+
+  @override
+  String errNoQuote(String symbol) {
+    return 'Teu kapanggih data harga pikeun $symbol.';
+  }
+
+  @override
+  String errNoProfile(String symbol) {
+    return 'Teu kapanggih profil pausahaan pikeun $symbol.';
+  }
+
+  @override
+  String errDemoUnsupportedSymbol(String symbols) {
+    return 'Mode démo ngan ngarojong $symbols. Tambahkeun FINNHUB_API_KEY pikeun data langsung.';
+  }
+
+  @override
+  String errUnknown(String detail) {
+    return 'Aya kasalahan: $detail';
+  }
+
+  @override
+  String get newSearch => 'Panéangan anyar';
+
+  @override
+  String get recentSearches => 'Panganyarna';
+
+  @override
+  String get noRecentSearches => 'Can aya panéangan panganyarna.';
+
+  @override
+  String get clearRecent => 'Pupus panganyarna';
+
+  @override
+  String get greeting => 'Saham mana nu rék urang tingali?';
+
+  @override
+  String get searchHint => 'Kode saham atawa ngaran pausahaan';
+
+  @override
+  String get attachImage => 'Lampirkeun gambar';
+
+  @override
+  String get searchResultsTitle => 'Hasil panéangan';
+
+  @override
+  String errNoResults(String query) {
+    return 'Teu kapanggih saham pikeun “$query”.';
+  }
+
+  @override
+  String get quickBarHint => 'Ketik kode saham atawa ngaran pausahaan…';
+
+  @override
+  String get openFullWindow => 'Buka jandéla';
+
+  @override
+  String hotkeyHint(String shortcut) {
+    return 'Pencét $shortcut di mana waé pikeun nyauran StockLens.';
+  }
+
+  @override
+  String get trayOpen => 'Buka StockLens';
+
+  @override
+  String get trayQuickSearch => 'Panéangan gancang';
+
+  @override
+  String get trayQuit => 'Kaluar';
+
+  @override
+  String get appearance => 'Tampilan';
+
+  @override
+  String get themeSystem => 'Sistem';
+
+  @override
+  String get themeDark => 'Poék';
+
+  @override
+  String get themeLight => 'Caang';
+
+  @override
+  String get back => 'Balik';
+
+  @override
+  String get aiSectionTitle => 'Analisis AI';
+
+  @override
+  String get aiIntro =>
+      'Tinjauan lengkep nu ditulis ku AI: ringkesan warta panganyarna, bisnisna, kaunggulan, résiko jeung faktor nu nyumput, valuasi, prospék harga kalayan skénario tina sudut pandang psikologis, sosiologis, téknis jeung makro, sarta naon nu kudu diawaskeun.';
+
+  @override
+  String get aiGenerate => 'Jieun analisis';
+
+  @override
+  String get aiRegenerate => 'Jieun deui';
+
+  @override
+  String get aiGenerating => 'Nyiapkeun analisis… ieu bisa butuh waktu samenit atawa dua menit.';
+
+  @override
+  String get aiSources => 'Sumber';
+
+  @override
+  String aiGeneratedAt(String time) {
+    return 'Dijieun $time';
+  }
+
+  @override
+  String get aiDisclaimer =>
+      'Analisis nu dijieun ku AI dumasar kana data umum jeung warta panganyarna. Bisa waé aya kasalahan atawa geus teu anyar, sarta lain naséhat investasi.';
+
+  @override
+  String get errAiNotConfigured => 'Analisis AI can disetél (teu aya ANTHROPIC_API_KEY).';
+
+  @override
+  String get errAiUnreachable => 'Teu bisa nyambung ka layanan AI. Pariksa sambungan internét anjeun.';
+
+  @override
+  String errAiHttp(String status) {
+    return 'Layanan AI ngabalikeun kasalahan (HTTP $status).';
+  }
+
+  @override
+  String get errAiRefused => 'Layanan AI nolak nganalisis saham ieu.';
+
+  @override
+  String get errAiBadResponse => 'Réspon nu teu disangka-sangka ti layanan AI.';
+
+  @override
+  String get sectionChart => 'Grafik harga';
+
+  @override
+  String get rangeOneWeek => '1M';
+
+  @override
+  String get rangeOneMonth => '1B';
+
+  @override
+  String get rangeThreeMonths => '3B';
+
+  @override
+  String get rangeOneYear => '1T';
+
+  @override
+  String get rangeFiveYears => '5T';
+
+  @override
+  String get chartUnavailable => 'Riwayat harga teu sayaga tina sumber data ayeuna.';
+
+  @override
+  String get sectionStatements => 'Laporan kauangan (taunan)';
+
+  @override
+  String get labelFiscalYear => 'Taun fiskal';
+
+  @override
+  String get labelRevenue => 'Pendapatan';
+
+  @override
+  String get labelNetIncome => 'Laba bersih';
+
+  @override
+  String get labelTotalAssets => 'Total aset';
+
+  @override
+  String get labelTotalLiabilities => 'Total liabilitas';
+
+  @override
+  String get labelEquity => 'Ékuitas pemegang saham';
+
+  @override
+  String get labelOperatingCashFlow => 'Arus kas operasional';
+
+  @override
+  String get statementsUnavailable => 'Laporan kauangan nu dilaporkeun teu sayaga pikeun saham ieu.';
+
+  @override
+  String get launchAtLogin => 'Jalankeun waktu asup';
+
+  @override
+  String get hotkeyLabel => 'Pintasan global';
+
+  @override
+  String get hotkeyRecordHint => 'Klik di dieu, terus pencét kombinasi tombol nu anyar';
+
+  @override
+  String get hotkeyReset => 'Balikkeun ka bawaan';
+
+  @override
+  String get pasteImage => 'Témpélkeun gambar tina papan klip';
+
+  @override
+  String get errClipboardNoImage => 'Teu aya gambar dina papan klip.';
+
+  @override
+  String get favorites => 'Paporit';
+
+  @override
+  String get addToFavorites => 'Tambahkeun ka paporit';
+
+  @override
+  String get removeFromFavorites => 'Piceun tina paporit';
+
+  @override
+  String get noFavorites => 'Can aya paporit. Toél béntang dina hiji saham pikeun nambahkeunana.';
+
+  @override
+  String get displayCurrency => 'Mata uang tampilan';
+
+  @override
+  String get displayCurrencyNone => 'Ngan mata uang saham éta sorangan';
+
+  @override
+  String labelConverted(String currency) {
+    return '≈ dina $currency';
+  }
+
+  @override
+  String fxRateNote(String from, String rate, String to, String date) {
+    return 'Kurs: 1 $from = $rate $to (ECB, $date)';
+  }
+
+  @override
+  String get updates => 'Pamutahiran';
+
+  @override
+  String currentVersion(String version) {
+    return 'Vérsi $version';
+  }
+
+  @override
+  String get autoUpdate => 'Pasang pamutahiran sacara otomatis';
+
+  @override
+  String get checkForUpdates => 'Pariksa pamutahiran';
+
+  @override
+  String get updateChecking => 'Mariksa pamutahiran…';
+
+  @override
+  String get updateUpToDate => 'Anjeun geus maké vérsi panganyarna.';
+
+  @override
+  String updateAvailable(String version) {
+    return 'Vérsi $version geus sayaga.';
+  }
+
+  @override
+  String get updateDownloading => 'Ngundeur pamutahiran di latar tukang…';
+
+  @override
+  String get updateDownloaded => 'Pamutahiran geus siap. Mimitian deui pikeun masangna.';
+
+  @override
+  String get updateNow => 'Mutahirkeun';
+
+  @override
+  String get restartNow => 'Mimitian deui';
+
+  @override
+  String get updatesViaStore => 'Pamutahiran datang sacara otomatis ngaliwatan toko aplikasi.';
+
+  @override
+  String get updateCheckFailed => 'Teu bisa mariksa pamutahiran.';
+
+  @override
+  String get subscription => 'Langganan';
+
+  @override
+  String get planTrial => 'Uji coba';
+
+  @override
+  String get planNormal => 'Biasa';
+
+  @override
+  String get planPro => 'Pro';
+
+  @override
+  String get planMax1 => 'Max';
+
+  @override
+  String get planMax2 => 'Ultra';
+
+  @override
+  String get planNone => 'Teu aya pakét aktip';
+
+  @override
+  String planAnalysesPerMonth(int count) {
+    return '$count analisis per bulan';
+  }
+
+  @override
+  String planTrialDescription(int days, int count) {
+    return 'Uji coba gratis $days poé kalayan $count analisis';
+  }
+
+  @override
+  String trialDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Sésa $days poé uji coba',
+      one: 'Sésa 1 poé uji coba',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trialExpired => 'Uji coba gratis anjeun geus réngsé. Pilih pakét pikeun terus nganalisis.';
+
+  @override
+  String analysesRemaining(int remaining, int total) {
+    return 'Sésa $remaining tina $total analisis pikeun période ieu';
+  }
+
+  @override
+  String extraCredits(int count) {
+    return '$count analisis tambahan';
+  }
+
+  @override
+  String renewsOn(String date) {
+    return 'Diperpanjang $date';
+  }
+
+  @override
+  String get choosePlan => 'Pilih pakét';
+
+  @override
+  String get currentPlan => 'Pakét ayeuna';
+
+  @override
+  String get subscribe => 'Langganan';
+
+  @override
+  String get perMonth => '/ bulan';
+
+  @override
+  String get extraPacksTitle => 'Butuh deui? Beuli analisis tambahan';
+
+  @override
+  String get extraPacksHint => 'Analisis tambahan moal kadaluwarsa sarta dipaké sanggeus jatah bulanan anjeun béak.';
+
+  @override
+  String get buy => 'Beuli';
+
+  @override
+  String get restorePurchases => 'Pulihkeun pameulian';
+
+  @override
+  String get manageSubscription => 'Atur langganan';
+
+  @override
+  String get purchaseSuccess => 'Hatur nuhun! Pameulian anjeun geus aktip.';
+
+  @override
+  String get purchasePending => 'Pameulian keur diprosés…';
+
+  @override
+  String get purchaseFailed => 'Pameulian teu bisa diréngsékeun.';
+
+  @override
+  String get purchaseCanceled => 'Pameulian dibolaykeun.';
+
+  @override
+  String get billingUnavailable =>
+      'Pameulian can sayaga dina platform ieu. Langganan dina telepon atawa Mac anjeun; pakét anjeun bakal jalan dina unggal parangkat.';
+
+  @override
+  String get errQuotaExceeded =>
+      'Analisis anjeun geus béak pikeun période ieu. Tingkatkeun pakét anjeun atawa beuli analisis tambahan.';
+
+  @override
+  String get errTrialExpired => 'Uji coba gratis anjeun geus réngsé. Pilih pakét pikeun neruskeun.';
+
+  @override
+  String get errNoPlan => 'Butuh pakét aktip pikeun analisis AI.';
+
+  @override
+  String get viewPlans => 'Tingali pakét';
+
+  @override
+  String get usageTitle => 'Pamakéan';
+
+  @override
+  String get demoPurchaseNote => 'Tagihan démo: pameulian disimulasikeun dina platform ieu.';
+
+  @override
+  String get mostPopular => 'Pangpopulerna';
+
+  @override
+  String get bestValue => 'Nilai pangalusna';
+
+  @override
+  String get planFeaturesCommon =>
+      'Pangenalan poto, data langsung, grafik, paporit jeung sakabéh 120 basa kaasup dina unggal pakét. Jatahna pikeun analisis AI.';
+
+  @override
+  String get searchLanguages => 'Téangan basa…';
+
+  @override
+  String get noLanguageMatch => 'Teu aya basa nu cocog.';
+
+  @override
+  String get aiSettings => 'Analisis AI';
+
+  @override
+  String get aiLength => 'Panjangna';
+
+  @override
+  String get aiDepthBrief => 'Ringkes';
+
+  @override
+  String get aiDepthStandard => 'Standar';
+
+  @override
+  String get aiDepthDeep => 'Jero';
+
+  @override
+  String get aiDepthBriefDesc => 'Nu penting-penting, gancang.';
+
+  @override
+  String get aiDepthStandardDesc => 'Laporan lengkep kalayan unggal bagian.';
+
+  @override
+  String get aiDepthDeepDesc =>
+      'Leuwih loba panéangan wéb, babandingan jeung pausahaan sajenis, sarta detil nu leuwih jero.';
+
+  @override
+  String aiDepthWords(String min, String max) {
+    return 'Kira-kira $min–$max kecap';
+  }
+
+  @override
+  String aiDepthCost(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'maké $count analisis',
+      one: 'maké 1 analisis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiReaderLevel => 'Tingkat pamaca';
+
+  @override
+  String get aiReaderBeginner => 'Pamula';
+
+  @override
+  String get aiReaderExperienced => 'Boga pangalaman';
+
+  @override
+  String get aiReaderBeginnerDesc => 'Basa basajan; unggal istilah téknis dijelaskeun.';
+
+  @override
+  String get aiReaderExperiencedDesc => 'Téks leuwih padet kalayan istilah kauangan standar.';
+
+  @override
+  String get aiCounterArgument => 'Argumén tandingan pangkuatna';
+
+  @override
+  String get aiCounterArgumentDesc =>
+      'Ringkesan salawasna ditungtungan ku argumén pangalusna nu ngalawan kacindekanana sorangan.';
+
+  @override
+  String aiWebSearchesInfo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nepi ka $count panéangan wéb per analisis dina pakét anjeun',
+      one: 'Nepi ka 1 panéangan wéb per analisis dina pakét anjeun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
+    return 'Panjang standar dumasar pakét: Biasa $normal, Pro $pro, Max $max, Ultra $ultra. Ringkes maké 2 leuwih saeutik, Jero 2 leuwih loba.';
+  }
+
+  @override
+  String aiWebSearchesShort(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nepi ka $count panéangan wéb',
+      one: 'nepi ka 1 panéangan wéb',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planWebSearches(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count panéangan wéb per analisis',
+      one: '1 panéangan wéb per analisis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String errNotEnoughCredits(int needed, int left) {
+    return 'Panjang ieu butuh $needed analisis, tapi ngan sésa $left. Pilih panjang nu leuwih pondok dina Setélan atawa tambahan deui analisisna.';
+  }
+
+  @override
+  String get outlookMarketMood => 'Suasana pasar';
+
+  @override
+  String get moodVeryPessimistic => 'Pesimis pisan';
+
+  @override
+  String get moodPessimistic => 'Pesimis';
+
+  @override
+  String get moodNeutral => 'Nétral';
+
+  @override
+  String get moodOptimistic => 'Optimis';
+
+  @override
+  String get moodVeryOptimistic => 'Optimis pisan';
+
+  @override
+  String get scenarioBull => 'Skénario optimis';
+
+  @override
+  String get scenarioBase => 'Skénario dasar';
+
+  @override
+  String get scenarioBear => 'Skénario pesimis';
+
+  @override
+  String outlookCurrentPrice(String price) {
+    return 'Harga ayeuna: $price';
+  }
+
+  @override
+  String get outlookKeyLevels => 'Tingkat konci';
+
+  @override
+  String get keyLevelSupport => 'Support';
+
+  @override
+  String get keyLevelResistance => 'Resistance';
+
+  @override
+  String get keyLevelAnchor => 'Harga patokan';
+
+  @override
+  String get upcomingEvents => 'Acara nu bakal datang';
+
+  @override
+  String get outlookChartNote => 'Rentang indikatif; probabilitas ngan ukur kira-kira kasar, lain ramalan.';
+
+  @override
+  String get accountTitle => 'Akun';
+
+  @override
+  String get signIn => 'Asup';
+
+  @override
+  String get signOut => 'Kaluar';
+
+  @override
+  String get notSignedIn => 'Can asup';
+
+  @override
+  String get accountBenefit => 'Asup sangkan langganan anjeun jalan dina sakabéh parangkat anjeun.';
+
+  @override
+  String get accountSyncedNote => 'Langganan jeung sésa analisis anjeun sarua dina unggal parangkat.';
+
+  @override
+  String get signInTitle => 'Asup ka StockLens';
+
+  @override
+  String get emailLabel => 'Alamat surélék';
+
+  @override
+  String get continueWithEmail => 'Teraskeun ku surélék';
+
+  @override
+  String codeSentTo(String email) {
+    return 'Kami geus ngirim kode 6 digit ka $email. Kode ieu valid salila 10 menit.';
+  }
+
+  @override
+  String get codeLabel => 'Kode asup';
+
+  @override
+  String get resendCode => 'Kirim kode anyar';
+
+  @override
+  String get useDifferentEmail => 'Paké surélék séjén';
+
+  @override
+  String get errInvalidCode => 'Kodena salah atawa geus kadaluwarsa.';
+
+  @override
+  String get errInvalidEmail => 'Mangga asupkeun alamat surélék nu valid.';
+
+  @override
+  String get errSignInFailed => 'Gagal asup. Pariksa sambungan anjeun terus cobaan deui.';
+
+  @override
+  String get checkoutWaiting =>
+      'Réngsékeun pambayaran dina panyungsi anjeun. Aplikasi bakal diropéa sacara otomatis lamun geus réngsé.';
+
+  @override
+  String get paymentViaStripe => 'Pambayaran aman dina panyungsi anjeun ngaliwatan Stripe. Bisa dibolaykeun iraha waé.';
+
+  @override
+  String get paymentViaStore =>
+      'Ditagihkeun ngaliwatan akun App Store atawa Google Play anjeun. Bisa dibolaykeun iraha waé dina setélan toko.';
+
+  @override
+  String get keySpace => 'Spasi';
+
+  @override
+  String get doubleOptionTitle => 'Pencét Option dua kali';
+
+  @override
+  String get doubleOptionSubtitle => 'Mencét tombol Option dua kali gancang ogé nyauran StockLens.';
+
+  @override
+  String get doubleOptionPermission =>
+      'Sangkan jalan ogé dina aplikasi séjén, idinan StockLens dina Pengaturan Sistem → Privasi & Keamanan → Pemantauan Input, terus buka deui aplikasina.';
+
+  @override
+  String get openSystemSettings => 'Buka Pengaturan Sistem';
+
+  @override
+  String hotkeyHintDoubleOption(String shortcut) {
+    return 'Pencét $shortcut atawa pencét Option dua kali di mana waé pikeun nyauran StockLens.';
+  }
+
+  @override
+  String get scenarioMostLikely => 'Pangmungkinna';
+
+  @override
+  String get longTermToday => 'Poé ieu';
+
+  @override
+  String longTermYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years taun', one: '1 taun');
+    return '$_temp0';
+  }
+
+  @override
+  String longTermPerYear(String range) {
+    return '$range sataun';
+  }
+
+  @override
+  String longTermLikely(String price) {
+    return 'pangmungkinna $price';
+  }
+
+  @override
+  String get confidenceLow => 'Kayakinan handap';
+
+  @override
+  String get confidenceMedium => 'Kayakinan sedeng';
+
+  @override
+  String get confidenceHigh => 'Kayakinan luhur';
+
+  @override
+  String get longTermNote =>
+      'Rentang jangka panjang dumasar kana asumsi nu ditétélakeun sarta beuki lega jeung waktu. Harga teu kaasup dividén. Kira-kira kasar, lain ramalan.';
+
+  @override
+  String get portfolio => 'Portofolio';
+
+  @override
+  String get portfolioEmpty =>
+      'Can aya nanaon di dieu. Buka hiji saham terus toél “Tambahkeun ka portofolio” pikeun nuturkeun naon nu dipiboga ku anjeun.';
+
+  @override
+  String get portfolioLocalNote =>
+      'Ngan disimpen dina parangkat ieu. Total dirobah maké kurs rujukan ECB; harga bisa waé telat.';
+
+  @override
+  String get addToPortfolio => 'Tambahkeun ka portofolio';
+
+  @override
+  String portfolioAddTitle(String symbol) {
+    return 'Tambahkeun $symbol';
+  }
+
+  @override
+  String get portfolioQuantity => 'Jumlah saham';
+
+  @override
+  String portfolioBuyPrice(String currency) {
+    return 'Harga per saham ($currency)';
+  }
+
+  @override
+  String get portfolioBuyDate => 'Tanggal meuli';
+
+  @override
+  String get portfolioAdd => 'Tambahkeun';
+
+  @override
+  String get portfolioInvalidNumber => 'Asupkeun angka nu leuwih ti nol.';
+
+  @override
+  String portfolioAdded(String symbol) {
+    return '$symbol geus ditambahkeun ka portofolio anjeun.';
+  }
+
+  @override
+  String get portfolioTotalValue => 'Total nilai';
+
+  @override
+  String get portfolioToday => 'Poé ieu';
+
+  @override
+  String get portfolioGainLoss => 'Untung/rugi';
+
+  @override
+  String get portfolioInvested => 'Diinvestasikeun';
+
+  @override
+  String get portfolioAllocation => 'Alokasi';
+
+  @override
+  String get portfolioPositions => 'Posisi';
+
+  @override
+  String portfolioAvgCost(String price) {
+    return 'rata-rata harga beuli $price';
+  }
+
+  @override
+  String get portfolioYourPosition => 'Posisi anjeun';
+
+  @override
+  String get portfolioPurchases => 'Pameulian';
+
+  @override
+  String get portfolioRemove => 'Piceun';
+
+  @override
+  String get portfolioExcluded => 'Posisi nu teu boga harga atawa kurs teu diasupkeun kana total.';
+
+  @override
+  String get priceAlerts => 'Béwara harga';
+
+  @override
+  String get setPriceAlert => 'Setél béwara harga';
+
+  @override
+  String alertDialogTitle(String symbol) {
+    return 'Béwara harga · $symbol';
+  }
+
+  @override
+  String get alertKindAbove => 'Naék leuwih ti';
+
+  @override
+  String get alertKindBelow => 'Turun handapeun';
+
+  @override
+  String get alertKindMove => 'Gerak gedé dina sapoé';
+
+  @override
+  String alertTargetPrice(String currency) {
+    return 'Harga ($currency)';
+  }
+
+  @override
+  String get alertMovePercent => 'Gerak harian (%)';
+
+  @override
+  String get alertAlreadyMet => 'Harga geus ngaliwatan tingkat ieu.';
+
+  @override
+  String get alertSave => 'Setél béwara';
+
+  @override
+  String alertCreated(String symbol) {
+    return 'Béwara disetél pikeun $symbol.';
+  }
+
+  @override
+  String get alertsEmpty => 'Can aya béwara harga. Buka hiji saham terus toél lonceng pikeun nyetélna.';
+
+  @override
+  String get alertsNote =>
+      'Béwara dipariksa unggal 5 menit salila StockLens jalan. Dina komputer, StockLens tetep jalan dina bar menu atawa baki sistem; dina telepon, samentawis béwara ngan datang lamun aplikasina keur dibuka.';
+
+  @override
+  String alertDescAbove(String price) {
+    return 'Di luhur $price';
+  }
+
+  @override
+  String alertDescBelow(String price) {
+    return 'Di handap $price';
+  }
+
+  @override
+  String alertDescMove(String percent) {
+    return 'Gerak harian ±$percent';
+  }
+
+  @override
+  String alertTriggeredAt(String date, String price) {
+    return 'Kapicu $date dina harga $price';
+  }
+
+  @override
+  String get alertRearm => 'Aktipkeun deui';
+
+  @override
+  String get alertDelete => 'Pupus';
+
+  @override
+  String alertHitAbove(String symbol, String price) {
+    return '$symbol naék leuwih ti $price';
+  }
+
+  @override
+  String alertHitBelow(String symbol, String price) {
+    return '$symbol turun handapeun $price';
+  }
+
+  @override
+  String alertHitMove(String symbol, String percent) {
+    return '$symbol gerak $percent poé ieu';
+  }
+
+  @override
+  String alertHitBody(String price) {
+    return 'Harga ayeuna: $price';
+  }
+
+  @override
+  String get alertOpen => 'Buka';
+
+  @override
+  String get keepInTrayTitle => 'Tetep jalan sanajan jandéla ditutup';
+
+  @override
+  String get keepInTraySubtitle =>
+      'StockLens tetep aya dina bar menu atawa baki sistem, jadi pintasan jeung béwara harga tetep jalan.';
+
+  @override
+  String get termsOfUse => 'Katangtuan Pamakéan';
+
+  @override
+  String get privacyPolicy => 'Kawijakan Privasi';
+
+  @override
+  String get subscriptionLegal =>
+      'Langganan diperpanjang sacara otomatis unggal bulan nepi ka anjeun ngabolaykeunana. Ku langganan, anjeun narima Katangtuan Pamakéan jeung Kawijakan Privasi.';
+
+  @override
+  String get deleteAccount => 'Pupus akun';
+
+  @override
+  String get deleteAccountTitle => 'Pupus akun anjeun?';
+
+  @override
+  String get deleteAccountBody =>
+      'Akun anjeun jeung sagala nu disimpen dina server kami (surélék, jatah, pamakéan) bakal dipupus salamina, sarta analisis nu can dipaké bakal leungit. Langganan nu dibayar dina panyungsi langsung dibolaykeun; langganan App Store atawa Google Play kudu dibolaykeun dina setélan toko.';
+
+  @override
+  String get deleteLocalData =>
+      'Pupus ogé data dina parangkat ieu (portofolio, béwara, paporit, riwayat, analisis nu disimpen)';
+
+  @override
+  String get deleteAccountConfirm => 'Pupus salamina';
+
+  @override
+  String get accountDeleted => 'Akun anjeun geus dipupus.';
+
+  @override
+  String get errDeleteAccount => 'Akun teu bisa dipupus. Pariksa sambungan anjeun terus cobaan deui.';
+}
