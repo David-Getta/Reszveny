@@ -54,6 +54,14 @@ class AccountController extends ChangeNotifier {
     }
   }
 
+  /// A fiók végleges törlése a szerveren; a készüléken kijelentkezik, és a
+  /// jogosultság üres lesz (a fel nem használt elemzések elvesznek).
+  Future<void> deleteAccount() async {
+    await backend.deleteAccount();
+    await _setEmail(null);
+    await entitlements.replace(const EntitlementState());
+  }
+
   Future<void> _setEmail(String? e) async {
     _email = (e == null || e.isEmpty) ? null : e;
     notifyListeners();

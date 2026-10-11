@@ -352,5 +352,15 @@
   "alertHitBody": "Preu actual: {price}",
   "alertOpen": "Obre",
   "keepInTrayTitle": "Continua en tancar la finestra",
-  "keepInTraySubtitle": "StockLens es queda a la barra de menús o a la safata, així la drecera i les alertes de preu continuen funcionant."
+  "keepInTraySubtitle": "StockLens es queda a la barra de menús o a la safata, així la drecera i les alertes de preu continuen funcionant.",
+  "termsOfUse": "Condicions d’ús",
+  "privacyPolicy": "Política de privadesa",
+  "subscriptionLegal": "La subscripció es renova automàticament cada mes fins que la cancel·lis. En subscriure’t acceptes les Condicions d’ús i la Política de privadesa.",
+  "deleteAccount": "Elimina el compte",
+  "deleteAccountTitle": "Vols eliminar el compte?",
+  "deleteAccountBody": "El teu compte i tot el que desem al servidor (correu, quota, ús) s’eliminaran per sempre, i les anàlisis no utilitzades es perden. Una subscripció pagada al navegador es cancel·la de seguida; una d’App Store o Google Play l’has de cancel·lar a la configuració de la botiga.",
+  "deleteLocalData": "Elimina també les dades d’aquest dispositiu (cartera, alertes, preferits, historial, anàlisis desades)",
+  "deleteAccountConfirm": "Elimina per sempre",
+  "accountDeleted": "S’ha eliminat el teu compte.",
+  "errDeleteAccount": "No s’ha pogut eliminar el compte. Comprova la connexió i torna-ho a provar."
 }

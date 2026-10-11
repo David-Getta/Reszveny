@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../widgets/hotkey_hint.dart';
 
@@ -19,6 +20,57 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+
+/// Fiók törlése megerősítéssel; a készüléken tárolt adatok törlése is választható.
+Future<void> _confirmDeleteAccount(BuildContext context) async {
+  final l10n = AppLocalizations.of(context);
+  final services = AppServices.of(context);
+  final messenger = ScaffoldMessenger.of(context);
+  final p = AppPalette.of(context);
+  var wipe = true;
+  final ok = await showDialog<bool>(
+    context: context,
+    builder: (context) => StatefulBuilder(
+      builder: (context, setState) => AlertDialog(
+        title: Text(l10n.deleteAccountTitle),
+        content: SizedBox(
+          width: 420,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.deleteAccountBody),
+              const SizedBox(height: 8),
+              CheckboxListTile(
+                contentPadding: EdgeInsets.zero,
+                controlAffinity: ListTileControlAffinity.leading,
+                value: wipe,
+                onChanged: (v) => setState(() => wipe = v ?? false),
+                title: Text(l10n.deleteLocalData),
+              ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
+          FilledButton(
+            style: FilledButton.styleFrom(backgroundColor: p.negative, foregroundColor: Colors.white),
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(l10n.deleteAccountConfirm),
+          ),
+        ],
+      ),
+    ),
+  );
+  if (ok != true) return;
+  try {
+    await services.deleteAccount(wipeLocalData: wipe);
+    messenger.showSnackBar(SnackBar(content: Text(l10n.accountDeleted)));
+  } catch (e) {
+    debugPrint('Fiók törlése nem sikerült: $e');
+    messenger.showSnackBar(SnackBar(content: Text(l10n.errDeleteAccount)));
+  }
+}
 
 /// Beállítások: megjelenés, nyelv (a nyelv saját nevén) és információk.
 class SettingsPage extends StatelessWidget {
@@ -52,25 +104,35 @@ class SettingsPage extends StatelessWidget {
                   if (services.account case final account?) ...[
                     sectionTitle(l10n.accountTitle),
                     Card(
-                      child: ListenableBuilder(
-                        listenable: account,
-                        builder: (context, _) => ListTile(
-                          leading: CircleAvatar(
-                            backgroundColor: p.accent.withValues(alpha: 0.18),
-                            child: Text(
-                              account.isSignedIn ? account.email!.substring(0, 1).toUpperCase() : '?',
-                              style: TextStyle(color: p.accent, fontWeight: FontWeight.w700),
+                      child: Column(
+                        children: [
+                          ListenableBuilder(
+                            listenable: account,
+                            builder: (context, _) => ListTile(
+                              leading: CircleAvatar(
+                                backgroundColor: p.accent.withValues(alpha: 0.18),
+                                child: Text(
+                                  account.isSignedIn ? account.email!.substring(0, 1).toUpperCase() : '?',
+                                  style: TextStyle(color: p.accent, fontWeight: FontWeight.w700),
+                                ),
+                              ),
+                              title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
+                              subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
+                              trailing: account.isSignedIn
+                                  ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
+                                  : FilledButton.tonal(
+                                      onPressed: () => showSignInSheet(context, account),
+                                      child: Text(l10n.signIn),
+                                    ),
                             ),
                           ),
-                          title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
-                          subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
-                          trailing: account.isSignedIn
-                              ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
-                              : FilledButton.tonal(
-                                  onPressed: () => showSignInSheet(context, account),
-                                  child: Text(l10n.signIn),
-                                ),
-                        ),
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: Icon(Icons.delete_forever_outlined, color: p.negative),
+                            title: Text(l10n.deleteAccount, style: TextStyle(color: p.negative)),
+                            onTap: () => _confirmDeleteAccount(context),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -209,6 +271,19 @@ class SettingsPage extends StatelessWidget {
                             title: Text(hotkeyHintText(l10n, services)),
                           ),
                         ],
+                        for (final (icon, label, url) in [
+                          (Icons.description_outlined, l10n.termsOfUse, services.config.termsUrl),
+                          (Icons.privacy_tip_outlined, l10n.privacyPolicy, services.config.privacyUrl),
+                        ])
+                          if (services.legalUri(url, Localizations.localeOf(context)) case final uri?) ...[
+                            const Divider(height: 1),
+                            ListTile(
+                              leading: Icon(icon),
+                              title: Text(label),
+                              trailing: Icon(Icons.open_in_new_rounded, size: 18, color: p.muted),
+                              onTap: () => launchUrl(uri, mode: LaunchMode.externalApplication),
+                            ),
+                          ],
                       ],
                     ),
                   ),

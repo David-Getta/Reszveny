@@ -1258,4 +1258,37 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'يبقى StockLens في شريط القوائم أو علبة النظام، لذلك يستمر عمل الاختصار وتنبيهات السعر.';
+
+  @override
+  String get termsOfUse => 'شروط الاستخدام';
+
+  @override
+  String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get subscriptionLegal =>
+      'يتجدد الاشتراك تلقائيًا كل شهر حتى تلغيه. بالاشتراك فإنك توافق على شروط الاستخدام وسياسة الخصوصية.';
+
+  @override
+  String get deleteAccount => 'حذف الحساب';
+
+  @override
+  String get deleteAccountTitle => 'هل تريد حذف حسابك؟';
+
+  @override
+  String get deleteAccountBody =>
+      'سيُحذف حسابك وكل ما نخزّنه على خادمنا (البريد الإلكتروني، الرصيد، الاستخدام) نهائيًا، وتضيع التحليلات غير المستخدمة. يُلغى الاشتراك المدفوع عبر المتصفح فورًا؛ أما اشتراك App Store أو Google Play فيجب إلغاؤه من إعدادات المتجر.';
+
+  @override
+  String get deleteLocalData =>
+      'احذف أيضًا البيانات على هذا الجهاز (المحفظة، التنبيهات، المفضلة، السجل، التحليلات المحفوظة)';
+
+  @override
+  String get deleteAccountConfirm => 'حذف نهائي';
+
+  @override
+  String get accountDeleted => 'تم حذف حسابك.';
+
+  @override
+  String get errDeleteAccount => 'تعذّر حذف الحساب. تحقق من الاتصال وحاول مرة أخرى.';
 }

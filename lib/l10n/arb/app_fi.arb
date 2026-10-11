@@ -352,5 +352,15 @@
   "alertHitBody": "Nykyinen kurssi: {price}",
   "alertOpen": "Avaa",
   "keepInTrayTitle": "Jatka toimintaa, kun ikkuna suljetaan",
-  "keepInTraySubtitle": "StockLens pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen."
+  "keepInTraySubtitle": "StockLens pysyy valikkorivillä tai ilmaisinalueella, joten pikanäppäin ja kurssihälytykset toimivat edelleen.",
+  "termsOfUse": "Käyttöehdot",
+  "privacyPolicy": "Tietosuojaseloste",
+  "subscriptionLegal": "Tilaus uusiutuu automaattisesti joka kuukausi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen.",
+  "deleteAccount": "Poista tili",
+  "deleteAccountTitle": "Poistetaanko tilisi?",
+  "deleteAccountBody": "Tilisi ja kaikki palvelimellamme oleva (sähköposti, kiintiö, käyttö) poistetaan pysyvästi, ja käyttämättömät analyysit menetetään. Selaimessa maksettu tilaus perutaan heti; App Storen tai Google Playn tilaus on peruttava kaupan asetuksista.",
+  "deleteLocalData": "Poista myös tämän laitteen tiedot (salkku, hälytykset, suosikit, historia, tallennetut analyysit)",
+  "deleteAccountConfirm": "Poista pysyvästi",
+  "accountDeleted": "Tilisi on poistettu.",
+  "errDeleteAccount": "Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen."
 }

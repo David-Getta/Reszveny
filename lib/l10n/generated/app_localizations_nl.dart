@@ -1227,4 +1227,38 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens blijft in de menubalk of het systeemvak, zodat de sneltoets en koersalerts blijven werken.';
+
+  @override
+  String get termsOfUse => 'Gebruiksvoorwaarden';
+
+  @override
+  String get privacyPolicy => 'Privacybeleid';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonnementen worden elke maand automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid.';
+
+  @override
+  String get deleteAccount => 'Account verwijderen';
+
+  @override
+  String get deleteAccountTitle => 'Je account verwijderen?';
+
+  @override
+  String get deleteAccountBody =>
+      'Je account en alles wat op onze server staat (e-mail, tegoed, gebruik) wordt definitief verwijderd; ongebruikte analyses vervallen. Een abonnement dat je in de browser betaalt, wordt meteen opgezegd; een abonnement via de App Store of Google Play zeg je op in de instellingen van de store.';
+
+  @override
+  String get deleteLocalData =>
+      'Ook de gegevens op dit apparaat verwijderen (portefeuille, alerts, favorieten, geschiedenis, opgeslagen analyses)';
+
+  @override
+  String get deleteAccountConfirm => 'Definitief verwijderen';
+
+  @override
+  String get accountDeleted => 'Je account is verwijderd.';
+
+  @override
+  String get errDeleteAccount =>
+      'Het account kon niet worden verwijderd. Controleer je verbinding en probeer het opnieuw.';
 }

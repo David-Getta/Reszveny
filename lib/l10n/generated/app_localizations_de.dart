@@ -1229,4 +1229,37 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens bleibt in der Menüleiste bzw. im Infobereich, damit Tastenkürzel und Kursalarme weiter funktionieren.';
+
+  @override
+  String get termsOfUse => 'Nutzungsbedingungen';
+
+  @override
+  String get privacyPolicy => 'Datenschutzerklärung';
+
+  @override
+  String get subscriptionLegal =>
+      'Abos verlängern sich monatlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung.';
+
+  @override
+  String get deleteAccount => 'Konto löschen';
+
+  @override
+  String get deleteAccountTitle => 'Konto löschen?';
+
+  @override
+  String get deleteAccountBody =>
+      'Dein Konto und alles, was auf unserem Server gespeichert ist (E-Mail, Kontingent, Nutzung), wird endgültig gelöscht; nicht genutzte Analysen verfallen. Ein im Browser bezahltes Abo wird sofort gekündigt; ein Abo über App Store oder Google Play musst du in den Store-Einstellungen kündigen.';
+
+  @override
+  String get deleteLocalData =>
+      'Auch die Daten auf diesem Gerät löschen (Portfolio, Alarme, Favoriten, Verlauf, gespeicherte Analysen)';
+
+  @override
+  String get deleteAccountConfirm => 'Endgültig löschen';
+
+  @override
+  String get accountDeleted => 'Dein Konto wurde gelöscht.';
+
+  @override
+  String get errDeleteAccount => 'Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut.';
 }

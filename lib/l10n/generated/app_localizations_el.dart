@@ -1231,4 +1231,37 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'Το StockLens μένει στη γραμμή μενού ή στην περιοχή ειδοποιήσεων, ώστε η συντόμευση και οι ειδοποιήσεις τιμής να λειτουργούν.';
+
+  @override
+  String get termsOfUse => 'Όροι χρήσης';
+
+  @override
+  String get privacyPolicy => 'Πολιτική απορρήτου';
+
+  @override
+  String get subscriptionLegal =>
+      'Η συνδρομή ανανεώνεται αυτόματα κάθε μήνα μέχρι να την ακυρώσετε. Με τη συνδρομή αποδέχεστε τους Όρους χρήσης και την Πολιτική απορρήτου.';
+
+  @override
+  String get deleteAccount => 'Διαγραφή λογαριασμού';
+
+  @override
+  String get deleteAccountTitle => 'Διαγραφή του λογαριασμού σας;';
+
+  @override
+  String get deleteAccountBody =>
+      'Ο λογαριασμός σας και ό,τι είναι αποθηκευμένο στον διακομιστή μας (email, όριο, χρήση) θα διαγραφούν οριστικά, και οι αχρησιμοποίητες αναλύσεις χάνονται. Συνδρομή που πληρώθηκε στο πρόγραμμα περιήγησης ακυρώνεται αμέσως· συνδρομή μέσω App Store ή Google Play πρέπει να ακυρωθεί στις ρυθμίσεις του καταστήματος.';
+
+  @override
+  String get deleteLocalData =>
+      'Διαγραφή και των δεδομένων αυτής της συσκευής (χαρτοφυλάκιο, ειδοποιήσεις, αγαπημένα, ιστορικό, αποθηκευμένες αναλύσεις)';
+
+  @override
+  String get deleteAccountConfirm => 'Οριστική διαγραφή';
+
+  @override
+  String get accountDeleted => 'Ο λογαριασμός σας διαγράφηκε.';
+
+  @override
+  String get errDeleteAccount => 'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
 }

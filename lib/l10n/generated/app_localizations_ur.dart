@@ -1226,4 +1226,36 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens مینو بار یا سسٹم ٹرے میں رہتی ہے تاکہ شارٹ کٹ اور قیمت کے الرٹس کام کرتے رہیں۔';
+
+  @override
+  String get termsOfUse => 'شرائطِ استعمال';
+
+  @override
+  String get privacyPolicy => 'رازداری کی پالیسی';
+
+  @override
+  String get subscriptionLegal =>
+      'سبسکرپشن ہر مہینے خودبخود تجدید ہوتی ہے جب تک آپ اسے منسوخ نہ کریں۔ سبسکرائب کر کے آپ شرائطِ استعمال اور رازداری کی پالیسی قبول کرتے ہیں۔';
+
+  @override
+  String get deleteAccount => 'اکاؤنٹ حذف کریں';
+
+  @override
+  String get deleteAccountTitle => 'کیا آپ اپنا اکاؤنٹ حذف کرنا چاہتے ہیں؟';
+
+  @override
+  String get deleteAccountBody =>
+      'آپ کا اکاؤنٹ اور ہمارے سرور پر محفوظ ہر چیز (ای میل، حد، استعمال) ہمیشہ کے لیے حذف ہو جائے گی، اور غیر استعمال شدہ تجزیے ضائع ہو جائیں گے۔ براؤزر میں ادا کی گئی سبسکرپشن فوراً منسوخ ہو جاتی ہے؛ App Store یا Google Play کی سبسکرپشن اسٹور کی ترتیبات میں منسوخ کرنی ہوگی۔';
+
+  @override
+  String get deleteLocalData => 'اس ڈیوائس کا ڈیٹا بھی حذف کریں (پورٹ فولیو، الرٹس، پسندیدہ، تاریخچہ، محفوظ تجزیے)';
+
+  @override
+  String get deleteAccountConfirm => 'ہمیشہ کے لیے حذف کریں';
+
+  @override
+  String get accountDeleted => 'آپ کا اکاؤنٹ حذف ہو گیا۔';
+
+  @override
+  String get errDeleteAccount => 'اکاؤنٹ حذف نہیں ہو سکا۔ کنکشن چیک کر کے دوبارہ کوشش کریں۔';
 }

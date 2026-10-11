@@ -352,5 +352,15 @@
   "alertHitBody": "Dabartinė kaina: {price}",
   "alertOpen": "Atidaryti",
   "keepInTrayTitle": "Veikti uždarius langą",
-  "keepInTraySubtitle": "StockLens lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia."
+  "keepInTraySubtitle": "StockLens lieka meniu juostoje arba dėkle, todėl spartusis klavišas ir kainos įspėjimai toliau veikia.",
+  "termsOfUse": "Naudojimo sąlygos",
+  "privacyPolicy": "Privatumo politika",
+  "subscriptionLegal": "Prenumerata kas mėnesį automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika.",
+  "deleteAccount": "Ištrinti paskyrą",
+  "deleteAccountTitle": "Ištrinti paskyrą?",
+  "deleteAccountBody": "Jūsų paskyra ir viskas, kas saugoma mūsų serveryje (el. paštas, limitas, naudojimas), bus ištrinta visam laikui, o nepanaudotos analizės prarandamos. Naršyklėje apmokėta prenumerata atšaukiama iš karto; App Store ar Google Play prenumeratą reikia atšaukti parduotuvės nustatymuose.",
+  "deleteLocalData": "Ištrinti ir šio įrenginio duomenis (portfelis, įspėjimai, mėgstamiausi, istorija, išsaugotos analizės)",
+  "deleteAccountConfirm": "Ištrinti visam laikui",
+  "accountDeleted": "Jūsų paskyra ištrinta.",
+  "errDeleteAccount": "Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą."
 }

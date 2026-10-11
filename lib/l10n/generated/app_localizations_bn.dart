@@ -1227,4 +1227,37 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens মেনু বার বা সিস্টেম ট্রেতে থাকে, তাই শর্টকাট ও দামের সতর্কতা কাজ করতে থাকে।';
+
+  @override
+  String get termsOfUse => 'ব্যবহারের শর্তাবলি';
+
+  @override
+  String get privacyPolicy => 'গোপনীয়তা নীতি';
+
+  @override
+  String get subscriptionLegal =>
+      'আপনি বাতিল না করা পর্যন্ত সাবস্ক্রিপশন প্রতি মাসে নিজে থেকে নবায়ন হয়। সাবস্ক্রাইব করে আপনি ব্যবহারের শর্তাবলি ও গোপনীয়তা নীতি মেনে নেন।';
+
+  @override
+  String get deleteAccount => 'অ্যাকাউন্ট মুছুন';
+
+  @override
+  String get deleteAccountTitle => 'আপনার অ্যাকাউন্ট মুছবেন?';
+
+  @override
+  String get deleteAccountBody =>
+      'আপনার অ্যাকাউন্ট এবং আমাদের সার্ভারে রাখা সবকিছু (ইমেল, সীমা, ব্যবহার) স্থায়ীভাবে মুছে যাবে, এবং অব্যবহৃত বিশ্লেষণ হারিয়ে যাবে। ব্রাউজারে পরিশোধিত সাবস্ক্রিপশন সঙ্গে সঙ্গে বাতিল হয়; App Store বা Google Play-এর সাবস্ক্রিপশন স্টোরের সেটিংসে বাতিল করতে হবে।';
+
+  @override
+  String get deleteLocalData =>
+      'এই ডিভাইসের ডেটাও মুছুন (পোর্টফোলিও, সতর্কতা, পছন্দের তালিকা, ইতিহাস, সংরক্ষিত বিশ্লেষণ)';
+
+  @override
+  String get deleteAccountConfirm => 'স্থায়ীভাবে মুছুন';
+
+  @override
+  String get accountDeleted => 'আপনার অ্যাকাউন্ট মুছে ফেলা হয়েছে।';
+
+  @override
+  String get errDeleteAccount => 'অ্যাকাউন্ট মোছা যায়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।';
 }

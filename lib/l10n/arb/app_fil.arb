@@ -352,5 +352,15 @@
   "alertHitBody": "Kasalukuyang presyo: {price}",
   "alertOpen": "Buksan",
   "keepInTrayTitle": "Patuloy na tumakbo kapag isinara ang window",
-  "keepInTraySubtitle": "Nananatili ang StockLens sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo."
+  "keepInTraySubtitle": "Nananatili ang StockLens sa menu bar o system tray, kaya gumagana pa rin ang shortcut at mga alerto sa presyo.",
+  "termsOfUse": "Mga Tuntunin ng Paggamit",
+  "privacyPolicy": "Patakaran sa Privacy",
+  "subscriptionLegal": "Awtomatikong nire-renew ang subscription bawat buwan hanggang kanselahin mo. Sa pag-subscribe, tinatanggap mo ang Mga Tuntunin ng Paggamit at ang Patakaran sa Privacy.",
+  "deleteAccount": "Burahin ang account",
+  "deleteAccountTitle": "Burahin ang iyong account?",
+  "deleteAccountBody": "Permanenteng mabubura ang iyong account at lahat ng nakaimbak sa aming server (email, quota, paggamit), at mawawala ang mga hindi nagamit na pagsusuri. Agad na kinakansela ang subscription na binayaran sa browser; ang subscription sa App Store o Google Play ay kailangang kanselahin sa settings ng store.",
+  "deleteLocalData": "Burahin din ang data sa device na ito (portfolio, alerto, paborito, history, naka-save na pagsusuri)",
+  "deleteAccountConfirm": "Burahin nang permanente",
+  "accountDeleted": "Nabura na ang iyong account.",
+  "errDeleteAccount": "Hindi nabura ang account. Tingnan ang koneksyon at subukang muli."
 }

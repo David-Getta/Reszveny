@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
@@ -236,6 +237,39 @@ void main() {
     expect(lastUpstream!['model'], 'claude-opus-5-5');
     expect((lastUpstream!['tools'] as List).map((t) => t['name']), ['web_search']);
     expect(lastUpstream!.containsKey('mcp_servers'), isFalse);
+  });
+
+  test('legal pages are served from markdown in the requested language, 404 until published', () async {
+    final dir = Directory.systemTemp.createTempSync('legal');
+    File('${dir.path}/terms.hu.md')
+        .writeAsStringSync('# Felhasználási feltételek\n\n| A | B |\n| --- | --- |\n| 1 | 2 |');
+    final legal = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      legalDir: dir.path,
+    );
+    Future<Response> get(String path, [Map<String, String> headers = const {}]) async =>
+        legal.handler(Request('GET', Uri.parse('http://localhost$path'), headers: headers));
+    final hu = await get('/legal/terms');
+    expect(hu.statusCode, 200);
+    expect(hu.headers['content-type'], startsWith('text/html'));
+    final html = await hu.readAsString();
+    expect(html, contains('Felhasználási feltételek</h1>'));
+    expect(html, contains('<table>'));
+    expect(html, contains('lang="hu"'));
+    // Angolul kérve, angol változat híján a magyar jön.
+    expect((await get('/legal/terms?lang=en')).statusCode, 200);
+    File('${dir.path}/terms.en.md').writeAsStringSync('# Terms of Use');
+    expect(
+      await (await get('/legal/terms', {'accept-language': 'en-US,en;q=0.9'})).readAsString(),
+      contains('Terms of Use'),
+    );
+    expect(await (await get('/legal/terms', {'accept-language': 'hu-HU'})).readAsString(), contains('Felhasználási'));
+    expect((await get('/legal/privacy')).statusCode, 404);
+    expect((await get('/legal/secret')).statusCode, 404);
+    dir.deleteSync(recursive: true);
   });
 
   group('helper route (photo recognition, format repair)', () {

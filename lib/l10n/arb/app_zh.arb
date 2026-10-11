@@ -352,5 +352,15 @@
   "alertHitBody": "当前价格：{price}",
   "alertOpen": "打开",
   "keepInTrayTitle": "关闭窗口后继续运行",
-  "keepInTraySubtitle": "StockLens 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。"
+  "keepInTraySubtitle": "StockLens 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。",
+  "termsOfUse": "使用条款",
+  "privacyPolicy": "隐私政策",
+  "subscriptionLegal": "订阅会每月自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。",
+  "deleteAccount": "删除账户",
+  "deleteAccountTitle": "要删除你的账户吗？",
+  "deleteAccountBody": "你的账户以及我们服务器上存储的所有内容（电子邮件、额度、使用记录）将被永久删除，未使用的分析将失效。在浏览器中付费的订阅会立即取消；App Store 或 Google Play 的订阅需在商店设置中取消。",
+  "deleteLocalData": "同时删除此设备上的数据（投资组合、提醒、收藏、历史记录、已保存的分析）",
+  "deleteAccountConfirm": "永久删除",
+  "accountDeleted": "你的账户已删除。",
+  "errDeleteAccount": "无法删除账户。请检查网络连接后重试。"
 }

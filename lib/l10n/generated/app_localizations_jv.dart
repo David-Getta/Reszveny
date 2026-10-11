@@ -1230,4 +1230,37 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens tetep ana ing bilah menu utawa baki sistem, mula trabasan lan pèngetan rega tetep mlaku.';
+
+  @override
+  String get termsOfUse => 'Katemtuan Panganggo';
+
+  @override
+  String get privacyPolicy => 'Kawicaksanan Privasi';
+
+  @override
+  String get subscriptionLegal =>
+      'Langganan otomatis dianyari saben sasi nganti sampeyan mbatalake. Kanthi langganan, sampeyan nampa Katemtuan Panganggo lan Kawicaksanan Privasi.';
+
+  @override
+  String get deleteAccount => 'Busak akun';
+
+  @override
+  String get deleteAccountTitle => 'Busak akun sampeyan?';
+
+  @override
+  String get deleteAccountBody =>
+      'Akun sampeyan lan kabèh sing disimpen ing server kita (email, kuota, panggunaan) bakal dibusak permanen, lan analisis sing durung dienggo bakal ilang. Langganan sing dibayar ing browser langsung dibatalake; langganan App Store utawa Google Play kudu dibatalake ing setelan toko.';
+
+  @override
+  String get deleteLocalData =>
+      'Busak uga data ing piranti iki (portofolio, pèngetan, favorit, riwayat, analisis sing disimpen)';
+
+  @override
+  String get deleteAccountConfirm => 'Busak permanen';
+
+  @override
+  String get accountDeleted => 'Akun sampeyan wis dibusak.';
+
+  @override
+  String get errDeleteAccount => 'Akun ora bisa dibusak. Priksa sambungan lan coba manèh.';
 }

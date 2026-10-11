@@ -352,5 +352,15 @@
   "alertHitBody": "Güncel fiyat: {price}",
   "alertOpen": "Aç",
   "keepInTrayTitle": "Pencere kapanınca da çalışsın",
-  "keepInTraySubtitle": "StockLens menü çubuğunda veya sistem tepsisinde kalır; böylece kısayol ve fiyat alarmları çalışmaya devam eder."
+  "keepInTraySubtitle": "StockLens menü çubuğunda veya sistem tepsisinde kalır; böylece kısayol ve fiyat alarmları çalışmaya devam eder.",
+  "termsOfUse": "Kullanım Koşulları",
+  "privacyPolicy": "Gizlilik Politikası",
+  "subscriptionLegal": "Abonelik, iptal edene kadar her ay otomatik olarak yenilenir. Abone olarak Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul etmiş olursunuz.",
+  "deleteAccount": "Hesabı sil",
+  "deleteAccountTitle": "Hesabınız silinsin mi?",
+  "deleteAccountBody": "Hesabınız ve sunucumuzda saklanan her şey (e-posta, kota, kullanım) kalıcı olarak silinir; kullanılmayan analizler kaybolur. Tarayıcıda ödenen abonelik hemen iptal edilir; App Store veya Google Play aboneliğini mağaza ayarlarından iptal etmeniz gerekir.",
+  "deleteLocalData": "Bu cihazdaki verileri de sil (portföy, alarmlar, favoriler, geçmiş, kaydedilen analizler)",
+  "deleteAccountConfirm": "Kalıcı olarak sil",
+  "accountDeleted": "Hesabınız silindi.",
+  "errDeleteAccount": "Hesap silinemedi. Bağlantınızı kontrol edip tekrar deneyin."
 }

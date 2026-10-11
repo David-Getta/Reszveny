@@ -184,6 +184,17 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => json == null ? p.remove(_hotkeyKey) : p.setString(_hotkeyKey, jsonEncode(json)));
   }
 
+  /// A személyes listák (kedvencek, előzmények) törlése; a beállítások maradnak.
+  Future<void> clearPersonalData() async {
+    _favorites.clear();
+    _recent = [];
+    notifyListeners();
+    await _save((p) async {
+      await p.remove(_favoritesKey);
+      await p.remove(_recentKey);
+    });
+  }
+
   Future<void> clearRecent() async {
     _recent = [];
     notifyListeners();

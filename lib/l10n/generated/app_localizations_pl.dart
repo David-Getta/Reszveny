@@ -1277,4 +1277,37 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens zostaje na pasku menu lub w zasobniku, więc skrót klawiszowy i alerty cenowe nadal działają.';
+
+  @override
+  String get termsOfUse => 'Warunki korzystania';
+
+  @override
+  String get privacyPolicy => 'Polityka prywatności';
+
+  @override
+  String get subscriptionLegal =>
+      'Subskrypcja odnawia się automatycznie co miesiąc, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności.';
+
+  @override
+  String get deleteAccount => 'Usuń konto';
+
+  @override
+  String get deleteAccountTitle => 'Usunąć konto?';
+
+  @override
+  String get deleteAccountBody =>
+      'Twoje konto i wszystko, co przechowujemy na serwerze (e-mail, limit, użycie), zostanie trwale usunięte, a niewykorzystane analizy przepadną. Subskrypcja opłacona w przeglądarce zostanie od razu anulowana; subskrypcję z App Store lub Google Play anulujesz w ustawieniach sklepu.';
+
+  @override
+  String get deleteLocalData =>
+      'Usuń też dane na tym urządzeniu (portfel, alerty, ulubione, historia, zapisane analizy)';
+
+  @override
+  String get deleteAccountConfirm => 'Usuń trwale';
+
+  @override
+  String get accountDeleted => 'Twoje konto zostało usunięte.';
+
+  @override
+  String get errDeleteAccount => 'Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie.';
 }

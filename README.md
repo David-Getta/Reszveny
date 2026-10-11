@@ -82,6 +82,9 @@ App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált
 az AI-elemzésekre vonatkozik. Éles kiadásban a keretet és a bolti bizonylatokat a saját backend
 ([`server/`](server/README.md)) kezeli, a kliens `BACKEND_URL`-lel áll rá; részletek:
 [`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
+A fiók a beállításokban törölhető (a böngészős előfizetést a szerver lemondja, a készüléken
+tárolt adatok törlése választható); a felhasználási feltételek és az adatkezelési tájékoztató a
+beállításokban és a csomagválasztó alján nyílik meg.
 
 ## Automatikus frissítés
 
@@ -102,6 +105,7 @@ Beállítás (`--dart-define`):
 | `UPDATE_APPCAST_URL` | Sparkle appcast XML címe (pl. GitHub Releases-ből kiszolgálva) |
 | `UPDATE_MANIFEST_URL` | kiáltvány JSON: `{"version":"0.7.0+8","notes":"…","urls":{"macos":"…","windows":"…","android":"…","ios":"…"}}` |
 | `STORE_URL` | App Store / Play oldal, ha nincs platformspecifikus link |
+| `TERMS_URL`, `PRIVACY_URL` | a felhasználási feltételek és az adatkezelési tájékoztató saját címe; ha üres, a backend `/legal/terms` és `/legal/privacy` oldala |
 
 Sparkle-hez egyszer kulcsot kell generálni (`dart run auto_updater:generate_keys` macOS-en és
 Windowson), a publikus kulcsot a `macos/Runner/Info.plist` `SUPublicEDKey` bejegyzésébe kell

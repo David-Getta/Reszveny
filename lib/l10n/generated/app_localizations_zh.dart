@@ -1184,6 +1184,37 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get keepInTraySubtitle => 'StockLens 会留在菜单栏或系统托盘中，快捷键和价格提醒将继续工作。';
+
+  @override
+  String get termsOfUse => '使用条款';
+
+  @override
+  String get privacyPolicy => '隐私政策';
+
+  @override
+  String get subscriptionLegal => '订阅会每月自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。';
+
+  @override
+  String get deleteAccount => '删除账户';
+
+  @override
+  String get deleteAccountTitle => '要删除你的账户吗？';
+
+  @override
+  String get deleteAccountBody =>
+      '你的账户以及我们服务器上存储的所有内容（电子邮件、额度、使用记录）将被永久删除，未使用的分析将失效。在浏览器中付费的订阅会立即取消；App Store 或 Google Play 的订阅需在商店设置中取消。';
+
+  @override
+  String get deleteLocalData => '同时删除此设备上的数据（投资组合、提醒、收藏、历史记录、已保存的分析）';
+
+  @override
+  String get deleteAccountConfirm => '永久删除';
+
+  @override
+  String get accountDeleted => '你的账户已删除。';
+
+  @override
+  String get errDeleteAccount => '无法删除账户。请检查网络连接后重试。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2365,4 +2396,35 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get keepInTraySubtitle => 'StockLens 會留在選單列或系統匣中，快捷鍵及價格提示會繼續運作。';
+
+  @override
+  String get termsOfUse => '使用條款';
+
+  @override
+  String get privacyPolicy => '私隱政策';
+
+  @override
+  String get subscriptionLegal => '訂閱會每月自動續期，直至你取消。訂閱即表示你接受使用條款及私隱政策。';
+
+  @override
+  String get deleteAccount => '刪除帳戶';
+
+  @override
+  String get deleteAccountTitle => '要刪除你的帳戶嗎？';
+
+  @override
+  String get deleteAccountBody =>
+      '你的帳戶及我們伺服器上儲存的所有內容（電郵、額度、使用記錄）將被永久刪除，未使用的分析將會失效。於瀏覽器付款的訂閱會即時取消；App Store 或 Google Play 的訂閱需於商店設定中取消。';
+
+  @override
+  String get deleteLocalData => '同時刪除此裝置上的資料（投資組合、提示、收藏、記錄、已儲存的分析）';
+
+  @override
+  String get deleteAccountConfirm => '永久刪除';
+
+  @override
+  String get accountDeleted => '你的帳戶已刪除。';
+
+  @override
+  String get errDeleteAccount => '未能刪除帳戶。請檢查網絡連線後再試。';
 }

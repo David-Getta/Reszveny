@@ -1228,4 +1228,37 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens es queda a la barra de menús o a la safata, així la drecera i les alertes de preu continuen funcionant.';
+
+  @override
+  String get termsOfUse => 'Condicions d’ús';
+
+  @override
+  String get privacyPolicy => 'Política de privadesa';
+
+  @override
+  String get subscriptionLegal =>
+      'La subscripció es renova automàticament cada mes fins que la cancel·lis. En subscriure’t acceptes les Condicions d’ús i la Política de privadesa.';
+
+  @override
+  String get deleteAccount => 'Elimina el compte';
+
+  @override
+  String get deleteAccountTitle => 'Vols eliminar el compte?';
+
+  @override
+  String get deleteAccountBody =>
+      'El teu compte i tot el que desem al servidor (correu, quota, ús) s’eliminaran per sempre, i les anàlisis no utilitzades es perden. Una subscripció pagada al navegador es cancel·la de seguida; una d’App Store o Google Play l’has de cancel·lar a la configuració de la botiga.';
+
+  @override
+  String get deleteLocalData =>
+      'Elimina també les dades d’aquest dispositiu (cartera, alertes, preferits, historial, anàlisis desades)';
+
+  @override
+  String get deleteAccountConfirm => 'Elimina per sempre';
+
+  @override
+  String get accountDeleted => 'S’ha eliminat el teu compte.';
+
+  @override
+  String get errDeleteAccount => 'No s’ha pogut eliminar el compte. Comprova la connexió i torna-ho a provar.';
 }

@@ -1226,4 +1226,37 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'A StockLens a menüsorban vagy a tálcán marad, így a gyorsbillentyű és az árfolyam-riasztás is működik.';
+
+  @override
+  String get termsOfUse => 'Felhasználási feltételek';
+
+  @override
+  String get privacyPolicy => 'Adatkezelési tájékoztató';
+
+  @override
+  String get subscriptionLegal =>
+      'Az előfizetés havonta automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót.';
+
+  @override
+  String get deleteAccount => 'Fiók törlése';
+
+  @override
+  String get deleteAccountTitle => 'Törlöd a fiókodat?';
+
+  @override
+  String get deleteAccountBody =>
+      'A fiókod és minden, amit a szerveren tárolunk (e-mail, keret, használat), véglegesen törlődik, a fel nem használt elemzések elvesznek. A böngészőben fizetett előfizetést azonnal lemondjuk; az App Store-os vagy Google Play-es előfizetést a bolt beállításaiban kell lemondanod.';
+
+  @override
+  String get deleteLocalData =>
+      'A készüléken tárolt adataim törlése is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések)';
+
+  @override
+  String get deleteAccountConfirm => 'Végleges törlés';
+
+  @override
+  String get accountDeleted => 'A fiókodat töröltük.';
+
+  @override
+  String get errDeleteAccount => 'A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.';
 }

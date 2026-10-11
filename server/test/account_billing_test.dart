@@ -24,7 +24,10 @@ void main() {
     mailer = ConsoleMailer();
     stripeCalls.clear();
     final stripeHttp = MockClient((req) async {
-      stripeCalls[req.url.path] = req.bodyFields;
+      stripeCalls[req.url.path] = req.method == 'DELETE' ? const {'method': 'DELETE'} : req.bodyFields;
+      if (req.method == 'DELETE' && req.url.path.endsWith('/subscriptions/sub_1')) {
+        return http.Response(jsonEncode({'id': 'sub_1', 'status': 'canceled'}), 200);
+      }
       if (req.url.path.endsWith('/checkout/sessions')) {
         return http.Response(jsonEncode({'id': 'cs_1', 'url': 'https://checkout.stripe.com/c/cs_1'}), 200);
       }
@@ -237,6 +240,64 @@ void main() {
     expect(bad['status'], 400);
     final old = stripe.signForTest(payload, now.subtract(const Duration(minutes: 10)));
     expect((await call('POST', '/v1/stripe/webhook', raw: payload, headers: {'stripe-signature': old}))['status'], 400);
+  });
+
+  test('deleting the account cancels the Stripe subscription and removes the user data', () async {
+    final token = await anon();
+    final r = await login('del@example.com', token: token);
+    final uid = r['body']['user_id'] as String;
+    await webhook({
+      'id': 'evt_del',
+      'type': 'checkout.session.completed',
+      'data': {
+        'object': {
+          'id': 'cs_del',
+          'client_reference_id': uid,
+          'customer': 'cus_1',
+          'subscription': 'sub_1',
+          'metadata': {'product_id': 'stocklens.sub.pro'},
+        },
+      },
+    });
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'ios', 'product_id': 'stocklens.pack.5', 'verification_data': 'txn-del'},
+    );
+    expect(store.entitlement(uid).tier, 'pro');
+
+    expect((await call('DELETE', '/v1/account'))['status'], 401);
+    final del = await call('DELETE', '/v1/account', token: token);
+    expect(del['status'], 200);
+    expect(del['body'], {'deleted': true, 'stripe_subscription_cancelled': true});
+    expect(stripeCalls.containsKey('/v1/subscriptions/sub_1'), isTrue);
+    expect((await call('GET', '/v1/me', token: token))['status'], 401);
+    expect(store.userIdForEmail('del@example.com'), isNull);
+    // A bizonylat nem váltható be újra egy új fiókon.
+    final fresh = await anon();
+    final again = await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: fresh,
+      body: {'platform': 'ios', 'product_id': 'stocklens.pack.5', 'verification_data': 'txn-del'},
+    );
+    expect(again['body']['applied'], isFalse);
+    // Ugyanazzal az e-maillel újra lehet regisztrálni, de üres fiókkal.
+    final back = await login('del@example.com', token: fresh);
+    expect(back['body']['user_id'], isNot(uid));
+  });
+
+  test('if the Stripe subscription cannot be cancelled, nothing is deleted', () async {
+    final token = await anon();
+    final r = await login('keep@example.com', token: token);
+    final uid = r['body']['user_id'] as String;
+    store.setStripe(uid, customerId: 'cus_9', subscriptionId: 'sub_fail');
+    final del = await call('DELETE', '/v1/account', token: token);
+    expect(del['status'], 502);
+    expect(del['body']['error'], 'stripe_cancel_failed');
+    expect((await call('GET', '/v1/me', token: token))['status'], 200);
+    expect(store.userIdForEmail('keep@example.com'), uid);
   });
 
   test('packs bought before login move to the account on login', () async {

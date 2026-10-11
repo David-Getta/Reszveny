@@ -1277,4 +1277,37 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens остаётся в строке меню или в трее, поэтому сочетание клавиш и ценовые оповещения продолжают работать.';
+
+  @override
+  String get termsOfUse => 'Условия использования';
+
+  @override
+  String get privacyPolicy => 'Политика конфиденциальности';
+
+  @override
+  String get subscriptionLegal =>
+      'Подписка автоматически продлевается каждый месяц, пока вы её не отмените. Оформляя подписку, вы принимаете Условия использования и Политику конфиденциальности.';
+
+  @override
+  String get deleteAccount => 'Удалить аккаунт';
+
+  @override
+  String get deleteAccountTitle => 'Удалить аккаунт?';
+
+  @override
+  String get deleteAccountBody =>
+      'Ваш аккаунт и всё, что хранится на нашем сервере (e-mail, лимит, использование), будет удалено навсегда, а неиспользованные анализы пропадут. Подписка, оплаченная в браузере, отменяется сразу; подписку через App Store или Google Play нужно отменить в настройках магазина.';
+
+  @override
+  String get deleteLocalData =>
+      'Удалить и данные на этом устройстве (портфель, оповещения, избранное, история, сохранённые анализы)';
+
+  @override
+  String get deleteAccountConfirm => 'Удалить навсегда';
+
+  @override
+  String get accountDeleted => 'Ваш аккаунт удалён.';
+
+  @override
+  String get errDeleteAccount => 'Не удалось удалить аккаунт. Проверьте подключение и попробуйте снова.';
 }

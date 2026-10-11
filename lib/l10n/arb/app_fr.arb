@@ -352,5 +352,15 @@
   "alertHitBody": "Cours actuel : {price}",
   "alertOpen": "Ouvrir",
   "keepInTrayTitle": "Continuer après la fermeture de la fenêtre",
-  "keepInTraySubtitle": "StockLens reste dans la barre des menus ou la zone de notification : le raccourci et les alertes de cours continuent de fonctionner."
+  "keepInTraySubtitle": "StockLens reste dans la barre des menus ou la zone de notification : le raccourci et les alertes de cours continuent de fonctionner.",
+  "termsOfUse": "Conditions d’utilisation",
+  "privacyPolicy": "Politique de confidentialité",
+  "subscriptionLegal": "L’abonnement se renouvelle automatiquement chaque mois jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité.",
+  "deleteAccount": "Supprimer le compte",
+  "deleteAccountTitle": "Supprimer votre compte ?",
+  "deleteAccountBody": "Votre compte et tout ce qui est stocké sur notre serveur (e-mail, quota, utilisation) seront définitivement supprimés ; les analyses non utilisées sont perdues. Un abonnement payé dans le navigateur est résilié immédiatement ; un abonnement App Store ou Google Play doit être résilié dans les réglages de la boutique.",
+  "deleteLocalData": "Supprimer aussi les données de cet appareil (portefeuille, alertes, favoris, historique, analyses enregistrées)",
+  "deleteAccountConfirm": "Supprimer définitivement",
+  "accountDeleted": "Votre compte a été supprimé.",
+  "errDeleteAccount": "Impossible de supprimer le compte. Vérifiez votre connexion et réessayez."
 }

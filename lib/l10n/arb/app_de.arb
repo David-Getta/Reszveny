@@ -352,5 +352,15 @@
   "alertHitBody": "Aktueller Kurs: {price}",
   "alertOpen": "Öffnen",
   "keepInTrayTitle": "Nach dem Schließen des Fensters weiterlaufen",
-  "keepInTraySubtitle": "StockLens bleibt in der Menüleiste bzw. im Infobereich, damit Tastenkürzel und Kursalarme weiter funktionieren."
+  "keepInTraySubtitle": "StockLens bleibt in der Menüleiste bzw. im Infobereich, damit Tastenkürzel und Kursalarme weiter funktionieren.",
+  "termsOfUse": "Nutzungsbedingungen",
+  "privacyPolicy": "Datenschutzerklärung",
+  "subscriptionLegal": "Abos verlängern sich monatlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung.",
+  "deleteAccount": "Konto löschen",
+  "deleteAccountTitle": "Konto löschen?",
+  "deleteAccountBody": "Dein Konto und alles, was auf unserem Server gespeichert ist (E-Mail, Kontingent, Nutzung), wird endgültig gelöscht; nicht genutzte Analysen verfallen. Ein im Browser bezahltes Abo wird sofort gekündigt; ein Abo über App Store oder Google Play musst du in den Store-Einstellungen kündigen.",
+  "deleteLocalData": "Auch die Daten auf diesem Gerät löschen (Portfolio, Alarme, Favoriten, Verlauf, gespeicherte Analysen)",
+  "deleteAccountConfirm": "Endgültig löschen",
+  "accountDeleted": "Dein Konto wurde gelöscht.",
+  "errDeleteAccount": "Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut."
 }

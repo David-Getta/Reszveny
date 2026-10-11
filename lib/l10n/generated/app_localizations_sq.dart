@@ -1228,4 +1228,37 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get keepInTraySubtitle =>
       'StockLens mbetet në shiritin e menysë ose në tabaka, kështu shkurtorja dhe alarmet e çmimit vazhdojnë të punojnë.';
+
+  @override
+  String get termsOfUse => 'Kushtet e përdorimit';
+
+  @override
+  String get privacyPolicy => 'Politika e privatësisë';
+
+  @override
+  String get subscriptionLegal =>
+      'Abonimi rinovohet automatikisht çdo muaj derisa ta anuloni. Duke u abonuar pranoni Kushtet e përdorimit dhe Politikën e privatësisë.';
+
+  @override
+  String get deleteAccount => 'Fshi llogarinë';
+
+  @override
+  String get deleteAccountTitle => 'Të fshihet llogaria juaj?';
+
+  @override
+  String get deleteAccountBody =>
+      'Llogaria juaj dhe gjithçka e ruajtur në serverin tonë (email, kuota, përdorimi) do të fshihen përgjithmonë, dhe analizat e papërdorura humbasin. Abonimi i paguar në shfletues anulohet menjëherë; abonimi përmes App Store ose Google Play duhet anuluar te cilësimet e dyqanit.';
+
+  @override
+  String get deleteLocalData =>
+      'Fshi edhe të dhënat në këtë pajisje (portofoli, alarmet, të preferuarat, historiku, analizat e ruajtura)';
+
+  @override
+  String get deleteAccountConfirm => 'Fshi përgjithmonë';
+
+  @override
+  String get accountDeleted => 'Llogaria juaj u fshi.';
+
+  @override
+  String get errDeleteAccount => 'Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish.';
 }

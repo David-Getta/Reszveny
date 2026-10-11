@@ -33,6 +33,7 @@ Future<void> main() async {
     publicUrl: env['PUBLIC_URL'] ?? 'http://localhost:$port0',
     // Minden Anthropic-hívás ezen a modellen fut (a kliens nem választhat drágábbat).
     anthropicModel: env['ANTHROPIC_MODEL'] ?? 'claude-opus-5-5',
+    legalDir: env['LEGAL_DIR'] ?? 'legal',
     mailer: resend.isEmpty
         ? ConsoleMailer()
         : ResendMailer(apiKey: resend, from: env['MAIL_FROM'] ?? 'StockLens <login@stocklens.app>'),

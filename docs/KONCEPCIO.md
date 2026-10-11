@@ -161,7 +161,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 4b3 | OCR fallback offline (ML Kit, mobil) | ⬜ |
 | 4c | Fiók és fizetés, mint a Claude-nál: belépés e-mail kóddal, fiókhoz kötött előfizetés; asztali gépen és weben Stripe Checkout + ügyfélportál, telefonon App Store / Play; lefordított iparág- és országnevek | ✅ kész (Apple / Google belépés később) |
 | 4 | Bolti kiadás (App Store, Play, Microsoft Store, Mac App Store), backend üzembe helyezése | ⬜ (lásd 5. szakasz) |
-| 5a | Fiók törlése az appból és a szerveren (App Store-követelmény); ÁSZF és adatkezelési tájékoztató az appban, elfogadás vásárlás előtt | ⬜ |
+| 5a | Fiók törlése az appból és a szerveren (App Store-követelmény): a böngészős előfizetés lemondása, a szerveren tárolt adatok törlése, választhatóan a készüléken tároltaké is; ÁSZF és adatkezelési tájékoztató a beállításokban és a csomagválasztó alján (automatikus megújulás, elfogadás vásárláskor), a szerver `/legal` oldalain magyarul és angolul | ✅ kész (a szöveg véglegesítése jogásszal: tulajdonosi teendő) |
 | 5b | Valódi bolti vásárlás-ellenőrzés (App Store Server API, Google Play Developer API) – most fejlesztői módban minden vásárlást elfogad | ⬜ |
 | 5c | Próbaidő-visszaélés elleni védelem (e-mailes belépés vagy eszköz-ellenőrzés – döntés kell) | ⬜ |
 | 5d | Szerver élesítése: telepítési konfiguráció, HTTPS, mentés, figyelés, naplók automatikus törlése | ⬜ |

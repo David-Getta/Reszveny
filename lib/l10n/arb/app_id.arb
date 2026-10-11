@@ -352,5 +352,15 @@
   "alertHitBody": "Harga saat ini: {price}",
   "alertOpen": "Buka",
   "keepInTrayTitle": "Tetap berjalan saat jendela ditutup",
-  "keepInTraySubtitle": "StockLens tetap ada di bilah menu atau baki sistem, sehingga pintasan dan peringatan harga tetap berfungsi."
+  "keepInTraySubtitle": "StockLens tetap ada di bilah menu atau baki sistem, sehingga pintasan dan peringatan harga tetap berfungsi.",
+  "termsOfUse": "Ketentuan Penggunaan",
+  "privacyPolicy": "Kebijakan Privasi",
+  "subscriptionLegal": "Langganan diperpanjang otomatis setiap bulan sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi.",
+  "deleteAccount": "Hapus akun",
+  "deleteAccountTitle": "Hapus akun Anda?",
+  "deleteAccountBody": "Akun Anda dan semua yang tersimpan di server kami (email, kuota, penggunaan) akan dihapus permanen, dan analisis yang belum dipakai akan hilang. Langganan yang dibayar di peramban langsung dibatalkan; langganan App Store atau Google Play harus dibatalkan di pengaturan toko.",
+  "deleteLocalData": "Hapus juga data di perangkat ini (portofolio, peringatan, favorit, riwayat, analisis tersimpan)",
+  "deleteAccountConfirm": "Hapus permanen",
+  "accountDeleted": "Akun Anda telah dihapus.",
+  "errDeleteAccount": "Akun tidak dapat dihapus. Periksa koneksi dan coba lagi."
 }

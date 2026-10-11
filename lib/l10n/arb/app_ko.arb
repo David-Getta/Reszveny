@@ -352,5 +352,15 @@
   "alertHitBody": "현재가: {price}",
   "alertOpen": "열기",
   "keepInTrayTitle": "창을 닫아도 계속 실행",
-  "keepInTraySubtitle": "StockLens가 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다."
+  "keepInTraySubtitle": "StockLens가 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.",
+  "termsOfUse": "이용약관",
+  "privacyPolicy": "개인정보 처리방침",
+  "subscriptionLegal": "구독은 해지할 때까지 매월 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.",
+  "deleteAccount": "계정 삭제",
+  "deleteAccountTitle": "계정을 삭제할까요?",
+  "deleteAccountBody": "계정과 서버에 저장된 모든 정보(이메일, 사용 한도, 이용 내역)가 영구 삭제되며, 사용하지 않은 분석은 소멸됩니다. 브라우저에서 결제한 구독은 즉시 해지되며, App Store 또는 Google Play 구독은 스토어 설정에서 해지해야 합니다.",
+  "deleteLocalData": "이 기기의 데이터도 삭제(포트폴리오, 알림, 즐겨찾기, 기록, 저장된 분석)",
+  "deleteAccountConfirm": "영구 삭제",
+  "accountDeleted": "계정이 삭제되었습니다.",
+  "errDeleteAccount": "계정을 삭제하지 못했습니다. 연결을 확인하고 다시 시도하세요."
 }
