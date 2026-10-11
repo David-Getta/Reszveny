@@ -15,6 +15,7 @@ import 'features/billing/billing_controller.dart';
 import 'features/billing/billing_service.dart';
 import 'features/billing/demo_billing_service.dart';
 import 'features/billing/entitlement_service.dart';
+import 'features/billing/fallback_billing_service.dart';
 import 'features/billing/store_billing_service.dart';
 import 'features/capture/capture_service.dart';
 import 'features/fx/fx_service.dart';
@@ -40,11 +41,18 @@ class AppServices {
     required this.entitlements,
     this.backend,
     BillingService? billing,
+    bool platformStore = false,
     FxService? fx,
     UpdateService? updates,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config) {
-    this.billing = billing ?? _demoBilling(this.fx);
+    // A platform boltja demó tartalékkal: amíg a boltban nincsenek termékek,
+    // a szimulált bolt fut, így az app ilyenkor is kipróbálható.
+    this.billing =
+        billing ??
+        (platformStore
+            ? FallbackBillingService(primary: StoreBillingService(), fallback: _demoBilling(this.fx))
+            : _demoBilling(this.fx));
     final b = backend;
     billingController = BillingController(
       billing: this.billing,
@@ -108,7 +116,7 @@ class AppServices {
       ),
       entitlements: entitlements,
       backend: backend,
-      billing: storeBilling ? StoreBillingService() : null,
+      platformStore: storeBilling,
     );
     return services;
   }
