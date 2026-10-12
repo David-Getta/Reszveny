@@ -41,6 +41,8 @@ A HTTPS (lakat) mindhárom esetben megoldható; a Railway automatikusan adja.
    | `FINNHUB_API_KEY` | a Finnhub-kulcs |
    | `PUBLIC_URL` | a 6. lépésben kapott cím (pl. `https://whatstock-production.up.railway.app`) |
 
+   A szerver a két kulcs nélkül el sem indul (a napló: „Hiányzó ANTHROPIC_API_KEY vagy
+   FINNHUB_API_KEY”), ezért ezeket az első sikeres építés előtt vagy közvetlenül utána add meg.
    A többi (modell, próbamodell, port, adatbázis) alapértéke jó. A `VERIFY_MODE` most maradjon
    `dev` (lásd lent).
 6. **Nyilvános cím**: *Settings → Networking → Generate Domain*. A kapott címet írd be a
