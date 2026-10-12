@@ -170,53 +170,78 @@ class _DetailsBody extends StatelessWidget {
     String? err(DetailSection s) => d.errors[s] == null ? null : errorMessage(l10n, d.errors[s]!);
 
     final sections = <Widget>[
-      // Fejléc: név, ár, változás.
+      // Fejléc: név, ár, változás. Keskeny képernyőn (telefon) az ár a név alá
+      // kerül, különben a hosszú árfolyam-megjegyzés összenyomná a cégnevet.
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (p?.logoUrl != null)
-              Padding(
-                padding: const EdgeInsetsDirectional.only(end: 12),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: Image.network(
-                    p!.logoUrl!,
-                    width: 48,
-                    height: 48,
-                    errorBuilder: (_, _, _) => const SizedBox(width: 48, height: 48),
-                  ),
-                ),
-              ),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(p?.name ?? candidate.companyName, style: theme.textTheme.headlineSmall),
-                  Text(
-                    [d.symbol, if (p?.exchange != null) p!.exchange!].join(' · '),
-                    style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
-                  ),
-                ],
-              ),
-            ),
-            if (q != null)
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Text(fmt.price(q.price, cur), style: theme.textTheme.headlineSmall),
-                  Text(
-                    '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      color: q.isUp ? palette.positive : palette.negative,
-                      fontWeight: FontWeight.w600,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final narrow = constraints.maxWidth < 560;
+            final align = narrow ? CrossAxisAlignment.start : CrossAxisAlignment.end;
+            final name = Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (p?.logoUrl != null)
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 12),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.network(
+                        p!.logoUrl!,
+                        width: 48,
+                        height: 48,
+                        errorBuilder: (_, _, _) => const SizedBox(width: 48, height: 48),
+                      ),
                     ),
                   ),
-                  ConvertedPrice(amount: q.price, fromCurrency: cur, withRate: true),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(p?.name ?? candidate.companyName, style: theme.textTheme.headlineSmall),
+                      Text(
+                        [d.symbol, if (p?.exchange != null) p!.exchange!].join(' · '),
+                        style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            );
+            final price = q == null
+                ? null
+                : Column(
+                    key: const ValueKey('detail-price'),
+                    crossAxisAlignment: align,
+                    children: [
+                      Text(fmt.price(q.price, cur), style: theme.textTheme.headlineSmall),
+                      Text(
+                        '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: q.isUp ? palette.positive : palette.negative,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      ConvertedPrice(amount: q.price, fromCurrency: cur, withRate: true, alignEnd: !narrow),
+                    ],
+                  );
+            if (narrow) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  name,
+                  if (price != null) ...[const SizedBox(height: 12), price],
                 ],
-              ),
-          ],
+              );
+            }
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(flex: 3, child: name),
+                if (price != null) ...[const SizedBox(width: 16), Flexible(flex: 2, child: price)],
+              ],
+            );
+          },
         ),
       ),
 

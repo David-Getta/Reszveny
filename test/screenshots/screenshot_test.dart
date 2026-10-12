@@ -389,6 +389,8 @@ void main() {
     await tester.enterText(find.byType(TextField), 'NVDA');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
+    // A fejléc telefonon: az ár a cégnév alatt.
+    await _shot(tester, 'detail_top_phone_hu');
     await tester.tap(find.text('Elemzés készítése'));
     await tester.pumpAndSettle();
     final chart = find.byType(LongTermChart);

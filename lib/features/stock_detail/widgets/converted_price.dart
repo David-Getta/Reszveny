@@ -15,6 +15,7 @@ class ConvertedPrice extends StatelessWidget {
     required this.fromCurrency,
     this.style,
     this.withRate = false,
+    this.alignEnd = true,
   });
 
   final double amount;
@@ -23,6 +24,9 @@ class ConvertedPrice extends StatelessWidget {
 
   /// Mutassa-e az árfolyam-megjegyzést is (dátummal).
   final bool withRate;
+
+  /// Jobbra zárt (széles fejléc) vagy balra zárt (telefonon, a név alatt).
+  final bool alignEnd;
 
   @override
   Widget build(BuildContext context) {
@@ -46,11 +50,12 @@ class ConvertedPrice extends StatelessWidget {
         final text = '≈ ${fmt.price(converted, to)}';
         if (!withRate) return Text(text, style: style ?? TextStyle(color: p.muted));
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: alignEnd ? CrossAxisAlignment.end : CrossAxisAlignment.start,
           children: [
             Text(text, style: style ?? TextStyle(color: p.muted)),
             Text(
               l10n.fxRateNote(from, fmt.number(r.rate, decimals: r.rate < 10 ? 4 : 2), to, fmt.date(r.date)),
+              textAlign: alignEnd ? TextAlign.end : TextAlign.start,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
             ),
           ],

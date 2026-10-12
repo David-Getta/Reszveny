@@ -297,6 +297,24 @@ void main() {
     expect(find.byType(TextField), findsOneWidget);
   });
 
+  testWidgets('on a phone the price goes below the company name instead of squeezing it', (tester) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final name = find.text('NVIDIA Corporation').first;
+    final price = find.byKey(const ValueKey('detail-price'));
+    expect(price, findsOneWidget);
+    // A név szinte a teljes szélességet kapja (legfeljebb két sor, nem betűnként tördelve).
+    expect(tester.getSize(name).width, greaterThan(200));
+    expect(tester.getSize(name).height, lessThan(100));
+    expect(tester.getTopLeft(price).dy, greaterThan(tester.getBottomLeft(name).dy));
+  });
+
   testWidgets('hungarian locale renders translated strings', (tester) async {
     await tester.pumpWidget(WhatStockApp(services: services(locale: const Locale('hu'))));
     await tester.pumpAndSettle();
