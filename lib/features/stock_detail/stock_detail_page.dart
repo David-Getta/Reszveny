@@ -90,7 +90,10 @@ class _StockDetailPageState extends State<StockDetailPage> {
 
   Future<void> _refresh() {
     final f = _fetch();
-    setState(() => _future = f);
+    // Kapcsos zárójellel: a setState visszahívása nem adhat vissza Future-t.
+    setState(() {
+      _future = f;
+    });
     return f.then((_) {}, onError: (_) {});
   }
 

@@ -21,6 +21,7 @@ import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/widgets/collapsible.dart';
 
 class _NoRecognizer implements StockRecognizer {
   @override
@@ -82,6 +83,7 @@ class _FakeAnalyst implements StockAnalyst {
     headline: 'Test headline',
     sections: const [
       ReportSection(kind: ReportSectionKind.summary, title: 'Summary', paragraphs: ['Para']),
+      ReportSection(kind: ReportSectionKind.news, title: 'News', paragraphs: ['News para'], bullets: ['News bullet']),
     ],
     generatedAt: DateTime.now(),
   );
@@ -374,6 +376,48 @@ void main() {
     await tester.sendEventToBinding(pointer.scroll(const Offset(0, 400)));
     await tester.pumpAndSettle();
     expect(position.pixels, greaterThan(0));
+  });
+
+  testWidgets('the AI analysis, each of its parts and the other cards can be collapsed and expanded', (tester) async {
+    tester.view.physicalSize = const Size(1200, 3000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    addTearDown(CollapseStore.instance.reset);
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Generate analysis'));
+    await tester.pumpAndSettle();
+    expect(find.text('Para'), findsOneWidget);
+    expect(find.text('News para'), findsOneWidget);
+
+    // Egy rész összecsukása: csak az ő szövege tűnik el, a többi rész marad.
+    await tester.tap(find.byKey(const ValueKey('collapse-ai-section:summary:')));
+    await tester.pumpAndSettle();
+    expect(find.text('Para'), findsNothing);
+    expect(find.text('Summary'), findsOneWidget);
+    expect(find.text('News para'), findsOneWidget);
+
+    // Az egész elemzés összecsukása, majd kinyitása (a rész összecsukva marad).
+    await tester.tap(find.byKey(const ValueKey('collapse-card:ai')));
+    await tester.pumpAndSettle();
+    expect(find.text('News para'), findsNothing);
+    expect(find.text('Test headline'), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('collapse-card:ai')));
+    await tester.pumpAndSettle();
+    expect(find.text('News para'), findsOneWidget);
+    expect(find.text('Para'), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('collapse-ai-section:summary:')));
+    await tester.pumpAndSettle();
+    expect(find.text('Para'), findsOneWidget);
+
+    // A többi kártya (pl. Árfolyam) is összecsukható.
+    expect(find.text('Last price'), findsOneWidget);
+    await tester.tap(find.text('Price'));
+    await tester.pumpAndSettle();
+    expect(find.text('Last price'), findsNothing);
   });
 
   testWidgets('hungarian locale renders translated strings', (tester) async {

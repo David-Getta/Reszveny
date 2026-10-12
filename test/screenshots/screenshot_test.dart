@@ -39,6 +39,7 @@ import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 import 'package:reszveny/features/stock_detail/widgets/outlook_view.dart';
 import 'package:reszveny/theme/app_theme.dart';
+import 'package:reszveny/widgets/collapsible.dart';
 
 /// Képernyőképek a felületről a teszt-harnessben (valódi betűkkel). Csak
 /// kézzel futtatjuk: `flutter test --tags screenshot --dart-define=SHOTS=<mappa>`.
@@ -394,6 +395,21 @@ void main() {
     await tester.tap(find.text('Generate analysis'));
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_ai_report');
+    // Összecsukott részek: a fejlécükre kattintva csak a cím marad.
+    final parts = find.byWidgetPredicate(
+      (w) => w.key is ValueKey<String> && (w.key! as ValueKey<String>).value.startsWith('collapse-ai-section:'),
+    );
+    final n = parts.evaluate().length;
+    for (var i = 1; i < n; i++) {
+      await tester.tap(parts.at(i));
+      await tester.pumpAndSettle();
+    }
+    await tester.tap(find.text('Price chart'));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(Scrollable).last, const Offset(0, -350));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_ai_collapsed');
+    CollapseStore.instance.reset();
   });
 
   testWidgets('long-term view on a phone (hungarian)', (tester) async {

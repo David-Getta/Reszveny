@@ -15,6 +15,7 @@ import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
 import 'outlook_view.dart';
 import 'section_card.dart';
+import '../../../widgets/collapsible.dart';
 
 /// Az AI-elemzés kártyája: gombnyomásra készül (tokenköltség), utána a
 /// szekciók – hírek összefoglalása, üzlet, erősségek, kockázatok és rejtett
@@ -90,6 +91,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
 
         return SectionCard(
           title: l10n.aiSectionTitle,
+          collapseKey: 'ai',
           trailing: report == null
               ? null
               : TextButton.icon(
@@ -228,63 +230,96 @@ class _ReportSectionView extends StatelessWidget {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final body = theme.textTheme.bodyMedium?.copyWith(height: 1.45);
+    // Minden rész külön összecsukható; a fajtája szerint marad meg (a „Hírek”
+    // más részvénynél is összecsukva látszik).
+    final store = CollapseStore.instance;
+    final key = 'ai-section:${section.kind.name}:${section.kind == ReportSectionKind.other ? section.title : ''}';
+    return ListenableBuilder(
+      listenable: store,
+      builder: (context, _) => _build(context, p, theme, body, store, key, store.isCollapsed(key)),
+    );
+  }
+
+  Widget _build(
+    BuildContext context,
+    AppPalette p,
+    ThemeData theme,
+    TextStyle? body,
+    CollapseStore store,
+    String key,
+    bool collapsed,
+  ) {
     return Padding(
       padding: const EdgeInsets.only(top: 18),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Icon(_icon, size: 18, color: section.kind == ReportSectionKind.risks ? p.negative : p.accent),
-              const SizedBox(width: 8),
-              Expanded(child: Text(section.title, style: theme.textTheme.titleSmall)),
-            ],
+          CollapsibleHeader(
+            key: ValueKey('collapse-$key'),
+            collapsed: collapsed,
+            onTap: () => store.toggle(key),
+            child: Row(
+              children: [
+                Icon(_icon, size: 18, color: section.kind == ReportSectionKind.risks ? p.negative : p.accent),
+                const SizedBox(width: 8),
+                Expanded(child: Text(section.title, style: theme.textTheme.titleSmall)),
+              ],
+            ),
           ),
-          const SizedBox(height: 8),
-          if (section.kind == ReportSectionKind.outlook && outlook != null && outlook!.scenarios.isNotEmpty) ...[
-            ScenarioChart(outlook: outlook!, fmt: fmt),
-            const SizedBox(height: 14),
-          ],
-          if (section.kind == ReportSectionKind.longterm && outlook?.longTerm != null) ...[
-            LongTermChart(
-              longTerm: outlook!.longTerm!,
-              fmt: fmt,
-              baseYear: generatedAt.year,
-              currentPrice: outlook!.currentPrice,
-              currency: outlook!.currency,
-            ),
-            const SizedBox(height: 14),
-          ],
-          if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty) ...[
-            CatalystTimeline(catalysts: outlook!.catalysts, fmt: fmt),
-            const SizedBox(height: 10),
-          ],
-          for (final para in section.paragraphs)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: SelectableText(para, style: body),
-            ),
-          for (final b in section.bullets)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 6),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 7),
-                    child: Container(
-                      width: 6,
-                      height: 6,
-                      decoration: BoxDecoration(color: p.accent, shape: BoxShape.circle),
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(child: SelectableText(b, style: body)),
-                ],
-              ),
-            ),
+          CollapsibleBody(collapsed: collapsed, child: _content(p, body)),
         ],
       ),
+    );
+  }
+
+  Widget _content(AppPalette p, TextStyle? body) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 8),
+        if (section.kind == ReportSectionKind.outlook && outlook != null && outlook!.scenarios.isNotEmpty) ...[
+          ScenarioChart(outlook: outlook!, fmt: fmt),
+          const SizedBox(height: 14),
+        ],
+        if (section.kind == ReportSectionKind.longterm && outlook?.longTerm != null) ...[
+          LongTermChart(
+            longTerm: outlook!.longTerm!,
+            fmt: fmt,
+            baseYear: generatedAt.year,
+            currentPrice: outlook!.currentPrice,
+            currency: outlook!.currency,
+          ),
+          const SizedBox(height: 14),
+        ],
+        if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty) ...[
+          CatalystTimeline(catalysts: outlook!.catalysts, fmt: fmt),
+          const SizedBox(height: 10),
+        ],
+        for (final para in section.paragraphs)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: SelectableText(para, style: body),
+          ),
+        for (final b in section.bullets)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 7),
+                  child: Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(color: p.accent, shape: BoxShape.circle),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(child: SelectableText(b, style: body)),
+              ],
+            ),
+          ),
+      ],
     );
   }
 }
