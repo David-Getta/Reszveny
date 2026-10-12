@@ -183,7 +183,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5a | Fiók törlése az appból és a szerveren (App Store-követelmény): a böngészős előfizetés lemondása, a szerveren tárolt adatok törlése, választhatóan a készüléken tároltaké is; ÁSZF és adatkezelési tájékoztató a beállításokban és a csomagválasztó alján (automatikus megújulás, elfogadás vásárláskor), a szerver `/legal` oldalain magyarul és angolul | ✅ kész (a szöveg véglegesítése jogásszal: tulajdonosi teendő) |
 | 5b | Valódi bolti vásárlás-ellenőrzés (App Store Server API, Google Play Developer API) – most fejlesztői módban minden vásárlást elfogad | ⬜ |
 | 5c | Próbaidő-visszaélés elleni védelem (e-mailes belépés vagy eszköz-ellenőrzés – döntés kell) | ⬜ |
-| 5d | Szerver élesítése: telepítési konfiguráció, HTTPS, mentés, figyelés, naplók automatikus törlése | ⬜ |
+| 5d | Szerver élesítése: telepítési konfiguráció, HTTPS, mentés, figyelés, naplók automatikus törlése | 🟡 Railway-konfiguráció és útmutató kész (`docs/SZERVER.md`); a fiók és a kulcsok tulajdonosi teendő |
 | 5e | Hibakövetés és adatvédelem-barát analitika hozzájárulással (telepítés → próba → elemzés → előfizetés tölcsér) | ⬜ |
 | 5f | Elemzés megosztása: kép-kártya (fejléc, hangulat, forgatókönyvek, link) és nyilvános link előnézettel – a virális hurok alapja | ⬜ |
 | 5g | Ajánlói program: meghívó kód, mindkét fél +5 elemzést kap | ⬜ |

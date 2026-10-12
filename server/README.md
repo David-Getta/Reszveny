@@ -41,4 +41,6 @@ címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, 
 `RESEND_API_KEY` és `MAIL_FROM` (belépőkód e-mailben; nélkülük a kód a naplóba kerül), `LEGAL_DIR`
 (a jogi szövegek mappája, alapból `legal`; a Docker-képben `/legal`).
 
+Élesítés lépésről lépésre (Railway, Hetzner, Fly.io): [`docs/SZERVER.md`](../docs/SZERVER.md).
+
 Docker: `docker build -t whatstock-server . && docker run -p 8080:8080 -v whatstock-data:/data -e ANTHROPIC_API_KEY=… -e FINNHUB_API_KEY=… whatstock-server`
