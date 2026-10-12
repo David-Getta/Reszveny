@@ -164,7 +164,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
 | 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
 | 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), név és logó | ✅ kész |
-| 3b2 | Átnevezés: WhatStock → **WhatStock** (a whatstock.com egy másik részvényelemző szolgáltatás, Kanadában bejegyzett védjeggyel); toldalékok igazítva a toldalékoló nyelvekben (magyar, török, azerbajdzsáni, kazah, türkmén, üzbég, koreai); termékazonosítók `whatstock.*` | ✅ kész (domain és védjegy: tulajdonosi teendő) |
+| 3b2 | Átnevezés: StockLens → **WhatStock** (a stocklens.com egy másik részvényelemző szolgáltatás, Kanadában bejegyzett védjeggyel); toldalékok igazítva a toldalékoló nyelvekben (magyar, török, azerbajdzsáni, kazah, türkmén, üzbég, koreai); termékazonosítók `whatstock.*` | ✅ kész (domain és védjegy: tulajdonosi teendő; a whatstock.com 2026-10-12-én parkoltatott, nem használt domainnek látszik – „/lander” üres oldal) |
 | 3c | AI-kilátások szekció (pszichológia, szociológia, fundamentum, technika, makró; bull/base/bear), automatikus frissítés minden platformon | ✅ kész |
 | 3d | Előfizetés: próbaidő, Normál/Pro/Max/Ultra, extra csomagok, paywall, kvóta-ellenőrzés (kliens) | ✅ kész |
 | 4a | Backend (`server/`): Anthropic/Finnhub-proxy, névtelen fiók, szerveroldali kvóta, vásárlás-ellenőrzés váza; a kliens `BACKEND_URL`-lel átáll rá | ✅ kész (bolti bizonylat-ellenőrzés: fejlesztői mód, az éles App Store / Play ellenőrzés a bolti fiókok után) |
