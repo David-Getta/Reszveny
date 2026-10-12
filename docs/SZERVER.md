@@ -39,6 +39,7 @@ A HTTPS (lakat) mindhárom esetben megoldható; a Railway automatikusan adja.
    |---|---|
    | `ANTHROPIC_API_KEY` | az Anthropic-kulcs |
    | `FINNHUB_API_KEY` | a Finnhub-kulcs |
+   | `TWELVEDATA_API_KEY` | a Twelve Data-kulcs (twelvedata.com, ingyenes): az árfolyamgrafikonhoz kell, mert a Finnhub ingyenes csomagja nem adja |
    | `PUBLIC_URL` | a 6. lépésben kapott cím (pl. `https://whatstock-production.up.railway.app`) |
 
    A szerver a két kulcs nélkül el sem indul (a napló: „Hiányzó ANTHROPIC_API_KEY vagy

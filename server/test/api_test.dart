@@ -162,6 +162,95 @@ void main() {
     expect(r['body']['c'], 1.0);
   });
 
+  test('price history comes from Twelve Data in Finnhub candle form, cached', () async {
+    var tdCalls = 0;
+    final client = MockClient((req) async {
+      expect(req.url.host, 'td.test');
+      expect(req.url.path, '/time_series');
+      expect(req.url.queryParameters['apikey'], 'td-key');
+      expect(req.url.queryParameters['symbol'], 'NDAQ');
+      expect(req.url.queryParameters['start_date'], '2021-10-10');
+      tdCalls++;
+      return http.Response(
+        jsonEncode({
+          'status': 'ok',
+          'values': [
+            {
+              'datetime': '2026-10-08',
+              'open': '93.0',
+              'high': '94.0',
+              'low': '92.5',
+              'close': '93.65',
+              'volume': '1000',
+            },
+            {
+              'datetime': '2026-10-09',
+              'open': '94.27',
+              'high': '94.85',
+              'low': '93.79',
+              'close': '94.29',
+              'volume': '2000',
+            },
+          ],
+        }),
+        200,
+      );
+    });
+    final td = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      client: client,
+      twelveDataApiKey: 'td-key',
+      twelveDataBaseUrl: 'https://td.test',
+    );
+    Future<Map<String, dynamic>> get(String path, String token) async {
+      final res = await td.handler(
+        Request('GET', Uri.parse('http://localhost$path'), headers: {'authorization': 'Bearer $token'}),
+      );
+      return (jsonDecode(await res.readAsString()) as Map).cast<String, dynamic>();
+    }
+
+    final anon = await td.handler(Request('POST', Uri.parse('http://localhost/v1/auth/anonymous')));
+    final token = (jsonDecode(await anon.readAsString()) as Map)['token'] as String;
+    final from = DateTime.utc(2021, 10, 10).millisecondsSinceEpoch ~/ 1000;
+    final to = DateTime.utc(2026, 10, 10).millisecondsSinceEpoch ~/ 1000;
+    final path = '/v1/market/stock/candle?symbol=NDAQ&resolution=D&from=$from&to=$to';
+    final j = await get(path, token);
+    expect(j['s'], 'ok');
+    expect(j['c'], [93.65, 94.29]);
+    expect(j['t'], [
+      DateTime.utc(2026, 10, 8).millisecondsSinceEpoch ~/ 1000,
+      DateTime.utc(2026, 10, 9).millisecondsSinceEpoch ~/ 1000,
+    ]);
+    expect(j['v'], [1000, 2000]);
+    await get(path, token);
+    expect(tdCalls, 1, reason: 'a második kérés a gyorsítótárból jön');
+  });
+
+  test('an unknown symbol at Twelve Data gives no_data instead of an error', () async {
+    final client = MockClient((req) async => http.Response(jsonEncode({'status': 'error', 'code': 404}), 200));
+    final td = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      client: client,
+      twelveDataApiKey: 'td-key',
+    );
+    final anon = await td.handler(Request('POST', Uri.parse('http://localhost/v1/auth/anonymous')));
+    final token = (jsonDecode(await anon.readAsString()) as Map)['token'] as String;
+    final res = await td.handler(
+      Request(
+        'GET',
+        Uri.parse('http://localhost/v1/market/stock/candle?symbol=XXXX&from=1&to=2'),
+        headers: {'authorization': 'Bearer $token'},
+      ),
+    );
+    expect(jsonDecode(await res.readAsString()), {'s': 'no_data'});
+  });
+
   test('paid period rolls over on the server', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     await call(

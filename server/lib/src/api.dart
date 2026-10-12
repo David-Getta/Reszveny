@@ -42,6 +42,8 @@ class Api {
     http.Client? client,
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
+    this.twelveDataApiKey = '',
+    this.twelveDataBaseUrl = 'https://api.twelvedata.com',
     this.anthropicModel = 'claude-opus-5-5',
     this.trialModel = 'claude-sonnet-5-5',
     this.legalDir = 'legal',
@@ -65,6 +67,17 @@ class Api {
   final http.Client _client;
   final String anthropicBaseUrl;
   final String finnhubBaseUrl;
+
+  /// Árfolyamtörténet (grafikon): a Finnhub ingyenes csomagja a `/stock/candle`-t
+  /// nem adja, ezért ha van Twelve Data-kulcs, a szerver onnan szolgálja ki,
+  /// Finnhub-formátumra alakítva (a kliensnek nem kell róla tudnia).
+  final String twelveDataApiKey;
+  final String twelveDataBaseUrl;
+
+  /// Grafikon-gyorsítótár (szimbólum + időszak → Finnhub-formátumú JSON), hogy
+  /// az ingyenes keret (napi 800 hívás) sok felhasználóra is elég legyen.
+  final Map<String, ({DateTime at, String body})> _candleCache = {};
+  static const candleCacheTtl = Duration(hours: 6);
 
   /// A modell, amin minden hívás fut; a kliens nem választhat drágábbat.
   final String anthropicModel;
@@ -587,9 +600,64 @@ class Api {
   Future<Response> _market(Request r, String path) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    if (path == 'stock/candle' && twelveDataApiKey.isNotEmpty) return _twelveDataCandles(r.url.queryParameters);
     final uri = Uri.parse('$finnhubBaseUrl/$path').replace(queryParameters: r.url.queryParameters);
     final upstream = await _client.get(uri, headers: {'X-Finnhub-Token': finnhubApiKey});
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  /// Napi árfolyamok a Twelve Data `time_series` végpontjáról, Finnhub
+  /// `/stock/candle` alakban (`s`, `t`, `o`, `h`, `l`, `c`, `v`). Hiba vagy
+  /// ismeretlen szimbólum esetén `{"s":"no_data"}` – a kliens ezt „a grafikon nem
+  /// érhető el” üzenetként mutatja.
+  Future<Response> _twelveDataCandles(Map<String, String> q) async {
+    const json = {'content-type': 'application/json'};
+    final symbol = (q['symbol'] ?? '').trim().toUpperCase();
+    final from = int.tryParse(q['from'] ?? '');
+    final to = int.tryParse(q['to'] ?? '');
+    if (symbol.isEmpty || from == null || to == null) return Response.ok('{"s":"no_data"}', headers: json);
+    String day(int sec) =>
+        DateTime.fromMillisecondsSinceEpoch(sec * 1000, isUtc: true).toIso8601String().substring(0, 10);
+    final key = '$symbol|${day(from)}|${day(to)}';
+    final cached = _candleCache[key];
+    final now = store.clock();
+    if (cached != null && now.difference(cached.at) < candleCacheTtl) return Response.ok(cached.body, headers: json);
+    final uri = Uri.parse('$twelveDataBaseUrl/time_series').replace(
+      queryParameters: {
+        'symbol': symbol,
+        'interval': '1day',
+        'start_date': day(from),
+        'end_date': day(to),
+        'order': 'ASC',
+        'outputsize': '5000',
+        'apikey': twelveDataApiKey,
+      },
+    );
+    try {
+      final res = await _client.get(uri);
+      final j = jsonDecode(res.body);
+      final values = j is Map && j['status'] == 'ok' ? j['values'] : null;
+      if (values is! List || values.isEmpty) return Response.ok('{"s":"no_data"}', headers: json);
+      final t = <int>[], o = <num?>[], h = <num?>[], l = <num?>[], c = <num?>[], v = <num?>[];
+      for (final row in values.whereType<Map>()) {
+        final date = DateTime.tryParse('${row['datetime']}'.substring(0, 10));
+        final close = num.tryParse('${row['close']}');
+        if (date == null || close == null) continue;
+        t.add(DateTime.utc(date.year, date.month, date.day).millisecondsSinceEpoch ~/ 1000);
+        o.add(num.tryParse('${row['open']}'));
+        h.add(num.tryParse('${row['high']}'));
+        l.add(num.tryParse('${row['low']}'));
+        c.add(close);
+        v.add(num.tryParse('${row['volume']}'));
+      }
+      if (t.isEmpty) return Response.ok('{"s":"no_data"}', headers: json);
+      final body = jsonEncode({'s': 'ok', 't': t, 'o': o, 'h': h, 'l': l, 'c': c, 'v': v});
+      if (_candleCache.length > 2000) _candleCache.clear();
+      _candleCache[key] = (at: now, body: body);
+      return Response.ok(body, headers: json);
+    } catch (_) {
+      return Response.ok('{"s":"no_data"}', headers: json);
+    }
   }
 
   static Future<Map<String, dynamic>> _body(Request r) async {

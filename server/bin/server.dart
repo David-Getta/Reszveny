@@ -36,6 +36,7 @@ Future<void> main() async {
     anthropicModel: env['ANTHROPIC_MODEL'] ?? 'claude-opus-5-5',
     // A próbaidő rövid elemzései az olcsóbb modellen futnak.
     trialModel: env['ANTHROPIC_TRIAL_MODEL'] ?? 'claude-sonnet-5-5',
+    twelveDataApiKey: env['TWELVEDATA_API_KEY'] ?? '',
     legalDir: env['LEGAL_DIR'] ?? 'legal',
     mailer: resend.isEmpty
         ? ConsoleMailer()

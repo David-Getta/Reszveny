@@ -33,7 +33,7 @@ a `/v1/me`-ből frissül.
 | `DELETE /v1/account` | a fiók törlése: előbb lemondja a Stripe-előfizetést (ha nem sikerül: 502 `stripe_cancel_failed`, nincs törlés), majd törli a munkameneteket, a jogosultságot, a használati naplót és a belépőkódokat; a vásárlási sorok névtelenítve maradnak (könyvelés, és hogy ugyanaz a bizonylat ne legyen újra beváltható) |
 | `GET /legal/terms`, `GET /legal/privacy` | a felhasználási feltételek és az adatkezelési tájékoztató HTML-ben, `?lang=hu\|en` vagy `Accept-Language` szerint; forrás: `legal/<név>.<nyelv>.md` (lásd [`legal/README.md`](legal/README.md)) |
 
-Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude-opus-5-5`; minden hívás ezen fut, a kliens nem választhat mást), `ANTHROPIC_TRIAL_MODEL` (alapból `claude-sonnet-5-5`; a próbaidő rövid elemzései), `FINNHUB_API_KEY`, `PORT` (8080), `DATABASE_PATH`
+Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude-opus-5-5`; minden hívás ezen fut, a kliens nem választhat mást), `ANTHROPIC_TRIAL_MODEL` (alapból `claude-sonnet-5-5`; a próbaidő rövid elemzései), `FINNHUB_API_KEY`, `TWELVEDATA_API_KEY` (nem kötelező: az árfolyamtörténet – grafikon – innen jön, mert a Finnhub ingyenes csomagja nem adja; 6 órás gyorsítótárral), `PORT` (8080), `DATABASE_PATH`
 (`whatstock.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
 Server API / Play Developer API – a bolti fiókok után készül el), `PUBLIC_URL` (a szerver nyilvános
 címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
