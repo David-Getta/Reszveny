@@ -21,6 +21,7 @@ import 'widgets/kv_table.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
 import 'widgets/statements_table.dart';
+import '../../widgets/centered_scroll.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
 class StockDetailPage extends StatefulWidget {
@@ -487,15 +488,14 @@ class _DetailsBody extends StatelessWidget {
       ),
     ];
 
-    return Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 720),
-        child: ListView.separated(
-          padding: const EdgeInsets.all(16),
-          itemCount: sections.length,
-          separatorBuilder: (_, _) => const SizedBox(height: 12),
-          itemBuilder: (_, i) => sections[i],
-        ),
+    return CenteredScroll(
+      maxWidth: 720,
+      padding: const EdgeInsets.all(16),
+      builder: (context, padding) => ListView.separated(
+        padding: padding,
+        itemCount: sections.length,
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
+        itemBuilder: (_, i) => sections[i],
       ),
     );
   }

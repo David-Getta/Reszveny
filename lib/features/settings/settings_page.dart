@@ -21,6 +21,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../../widgets/centered_scroll.dart';
 
 /// Fiók törlése megerősítéssel; a készüléken tárolt adatok törlése is választható.
 Future<void> _confirmDeleteAccount(BuildContext context) async {
@@ -96,205 +97,204 @@ class SettingsPage extends StatelessWidget {
         listenable: Listenable.merge([services.locale, services.preferences]),
         builder: (context, _) {
           final current = services.locale.override;
-          return Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 640),
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-                children: [
-                  if (services.account case final account?) ...[
-                    sectionTitle(l10n.accountTitle),
-                    Card(
-                      child: Column(
-                        children: [
-                          ListenableBuilder(
-                            listenable: account,
-                            builder: (context, _) => ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: p.accent.withValues(alpha: 0.18),
-                                child: Text(
-                                  account.isSignedIn ? account.email!.substring(0, 1).toUpperCase() : '?',
-                                  style: TextStyle(color: p.accent, fontWeight: FontWeight.w700),
-                                ),
-                              ),
-                              title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
-                              subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
-                              trailing: account.isSignedIn
-                                  ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
-                                  : FilledButton.tonal(
-                                      onPressed: () => showSignInSheet(context, account),
-                                      child: Text(l10n.signIn),
-                                    ),
-                            ),
-                          ),
-                          const Divider(height: 1),
-                          ListTile(
-                            leading: Icon(Icons.delete_forever_outlined, color: p.negative),
-                            title: Text(l10n.deleteAccount, style: TextStyle(color: p.negative)),
-                            onTap: () => _confirmDeleteAccount(context),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                  sectionTitle(l10n.subscription),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: Row(
-                        children: [
-                          const Expanded(child: UsageChip()),
-                          const SizedBox(width: 12),
-                          FilledButton.tonal(onPressed: () => PaywallPage.open(context), child: Text(l10n.viewPlans)),
-                        ],
-                      ),
-                    ),
-                  ),
-                  sectionTitle(l10n.aiSettings),
-                  const Card(child: _AnalysisSettings()),
-                  sectionTitle(l10n.appearance),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: SegmentedButton<ThemeMode>(
-                        showSelectedIcon: false,
-                        segments: [
-                          ButtonSegment(
-                            value: ThemeMode.system,
-                            label: Text(l10n.themeSystem),
-                            icon: const Icon(Icons.brightness_auto_outlined),
-                          ),
-                          ButtonSegment(
-                            value: ThemeMode.dark,
-                            label: Text(l10n.themeDark),
-                            icon: const Icon(Icons.dark_mode_outlined),
-                          ),
-                          ButtonSegment(
-                            value: ThemeMode.light,
-                            label: Text(l10n.themeLight),
-                            icon: const Icon(Icons.light_mode_outlined),
-                          ),
-                        ],
-                        selected: {services.preferences.themeMode},
-                        onSelectionChanged: (s) => services.preferences.setThemeMode(s.first),
-                      ),
-                    ),
-                  ),
-                  if (DesktopIntegration.isSupported) ...[
-                    sectionTitle(l10n.hotkeyLabel),
-                    Card(
-                      child: Column(
-                        children: [
-                          _HotkeyTile(),
-                          if (DesktopIntegration.supportsDoubleOption) ...[
-                            const Divider(height: 1),
-                            const _DoubleOptionTile(),
-                          ],
-                          const Divider(height: 1),
-                          _LaunchAtLoginTile(),
-                          const Divider(height: 1),
-                          ListenableBuilder(
-                            listenable: services.preferences,
-                            builder: (context, _) => SwitchListTile(
-                              secondary: const Icon(Icons.notifications_none_rounded),
-                              title: Text(l10n.keepInTrayTitle),
-                              subtitle: Text(l10n.keepInTraySubtitle),
-                              value: services.preferences.keepInTray,
-                              onChanged: (v) {
-                                services.preferences.setKeepInTray(v);
-                                services.desktop.setKeepInTray(v);
-                              },
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                  sectionTitle(l10n.displayCurrency),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: DropdownButtonHideUnderline(
-                        child: DropdownButton<String>(
-                          isExpanded: true,
-                          value: services.preferences.displayCurrency == AppPreferences.currencyUnset
-                              ? (services.displayCurrency(Localizations.localeOf(context)) ?? '')
-                              : (services.preferences.displayCurrency ?? ''),
-                          items: [
-                            DropdownMenuItem(value: '', child: Text(l10n.displayCurrencyNone)),
-                            for (final c in FxService.supportedCurrencies) DropdownMenuItem(value: c, child: Text(c)),
-                          ],
-                          onChanged: (v) => services.preferences.setDisplayCurrency(v == null || v.isEmpty ? null : v),
-                        ),
-                      ),
-                    ),
-                  ),
-                  sectionTitle(l10n.language),
-                  Card(
-                    child: ListTile(
-                      leading: const Icon(Icons.translate_rounded),
-                      title: Text(
-                        current == null ? l10n.systemLanguage : SupportedLocales.languageFor(current).nativeName,
-                      ),
-                      subtitle: current == null
-                          ? Text(SupportedLocales.languageFor(Localizations.localeOf(context)).nativeName)
-                          : (SupportedLocales.languageFor(current).englishName ==
-                                    SupportedLocales.languageFor(current).nativeName
-                                ? null
-                                : Text(SupportedLocales.languageFor(current).englishName)),
-                      trailing: const Icon(Icons.expand_more_rounded),
-                      onTap: () async {
-                        final tag = await showLanguagePicker(context, currentTag: current?.toLanguageTag());
-                        if (tag == null) return;
-                        await services.locale.setLocale(tag.isEmpty ? null : SupportedLocales.byTag(tag)?.locale);
-                      },
-                    ),
-                  ),
-                  sectionTitle(l10n.updates),
-                  const Card(child: _UpdatesTile()),
-                  sectionTitle(l10n.about),
+          return CenteredScroll(
+            maxWidth: 640,
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+            builder: (context, padding) => ListView(
+              padding: padding,
+              children: [
+                if (services.account case final account?) ...[
+                  sectionTitle(l10n.accountTitle),
                   Card(
                     child: Column(
                       children: [
-                        ListTile(
-                          leading: const Icon(Icons.storage_outlined),
-                          title: Text(l10n.dataSource(services.marketData.name)),
+                        ListenableBuilder(
+                          listenable: account,
+                          builder: (context, _) => ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: p.accent.withValues(alpha: 0.18),
+                              child: Text(
+                                account.isSignedIn ? account.email!.substring(0, 1).toUpperCase() : '?',
+                                style: TextStyle(color: p.accent, fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
+                            subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
+                            trailing: account.isSignedIn
+                                ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
+                                : FilledButton.tonal(
+                                    onPressed: () => showSignInSheet(context, account),
+                                    child: Text(l10n.signIn),
+                                  ),
+                          ),
                         ),
                         const Divider(height: 1),
                         ListTile(
-                          leading: const Icon(Icons.visibility_outlined),
-                          title: Text(l10n.recognizerSource(services.recognizer.name)),
+                          leading: Icon(Icons.delete_forever_outlined, color: p.negative),
+                          title: Text(l10n.deleteAccount, style: TextStyle(color: p.negative)),
+                          onTap: () => _confirmDeleteAccount(context),
                         ),
-                        if (DesktopIntegration.isSupported) ...[
-                          const Divider(height: 1),
-                          ListTile(
-                            leading: const Icon(Icons.keyboard_command_key_rounded),
-                            title: Text(hotkeyHintText(l10n, services)),
-                          ),
-                        ],
-                        for (final (icon, label, url) in [
-                          (Icons.description_outlined, l10n.termsOfUse, services.config.termsUrl),
-                          (Icons.privacy_tip_outlined, l10n.privacyPolicy, services.config.privacyUrl),
-                        ])
-                          if (services.legalUri(url, Localizations.localeOf(context)) case final uri?) ...[
-                            const Divider(height: 1),
-                            ListTile(
-                              leading: Icon(icon),
-                              title: Text(label),
-                              trailing: Icon(Icons.open_in_new_rounded, size: 18, color: p.muted),
-                              onTap: () => launchUrl(uri, mode: LaunchMode.externalApplication),
-                            ),
-                          ],
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Text(l10n.disclaimer, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                  ),
-                  const _VersionFooter(),
                 ],
-              ),
+                sectionTitle(l10n.subscription),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Row(
+                      children: [
+                        const Expanded(child: UsageChip()),
+                        const SizedBox(width: 12),
+                        FilledButton.tonal(onPressed: () => PaywallPage.open(context), child: Text(l10n.viewPlans)),
+                      ],
+                    ),
+                  ),
+                ),
+                sectionTitle(l10n.aiSettings),
+                const Card(child: _AnalysisSettings()),
+                sectionTitle(l10n.appearance),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: SegmentedButton<ThemeMode>(
+                      showSelectedIcon: false,
+                      segments: [
+                        ButtonSegment(
+                          value: ThemeMode.system,
+                          label: Text(l10n.themeSystem),
+                          icon: const Icon(Icons.brightness_auto_outlined),
+                        ),
+                        ButtonSegment(
+                          value: ThemeMode.dark,
+                          label: Text(l10n.themeDark),
+                          icon: const Icon(Icons.dark_mode_outlined),
+                        ),
+                        ButtonSegment(
+                          value: ThemeMode.light,
+                          label: Text(l10n.themeLight),
+                          icon: const Icon(Icons.light_mode_outlined),
+                        ),
+                      ],
+                      selected: {services.preferences.themeMode},
+                      onSelectionChanged: (s) => services.preferences.setThemeMode(s.first),
+                    ),
+                  ),
+                ),
+                if (DesktopIntegration.isSupported) ...[
+                  sectionTitle(l10n.hotkeyLabel),
+                  Card(
+                    child: Column(
+                      children: [
+                        _HotkeyTile(),
+                        if (DesktopIntegration.supportsDoubleOption) ...[
+                          const Divider(height: 1),
+                          const _DoubleOptionTile(),
+                        ],
+                        const Divider(height: 1),
+                        _LaunchAtLoginTile(),
+                        const Divider(height: 1),
+                        ListenableBuilder(
+                          listenable: services.preferences,
+                          builder: (context, _) => SwitchListTile(
+                            secondary: const Icon(Icons.notifications_none_rounded),
+                            title: Text(l10n.keepInTrayTitle),
+                            subtitle: Text(l10n.keepInTraySubtitle),
+                            value: services.preferences.keepInTray,
+                            onChanged: (v) {
+                              services.preferences.setKeepInTray(v);
+                              services.desktop.setKeepInTray(v);
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                sectionTitle(l10n.displayCurrency),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton<String>(
+                        isExpanded: true,
+                        value: services.preferences.displayCurrency == AppPreferences.currencyUnset
+                            ? (services.displayCurrency(Localizations.localeOf(context)) ?? '')
+                            : (services.preferences.displayCurrency ?? ''),
+                        items: [
+                          DropdownMenuItem(value: '', child: Text(l10n.displayCurrencyNone)),
+                          for (final c in FxService.supportedCurrencies) DropdownMenuItem(value: c, child: Text(c)),
+                        ],
+                        onChanged: (v) => services.preferences.setDisplayCurrency(v == null || v.isEmpty ? null : v),
+                      ),
+                    ),
+                  ),
+                ),
+                sectionTitle(l10n.language),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(Icons.translate_rounded),
+                    title: Text(
+                      current == null ? l10n.systemLanguage : SupportedLocales.languageFor(current).nativeName,
+                    ),
+                    subtitle: current == null
+                        ? Text(SupportedLocales.languageFor(Localizations.localeOf(context)).nativeName)
+                        : (SupportedLocales.languageFor(current).englishName ==
+                                  SupportedLocales.languageFor(current).nativeName
+                              ? null
+                              : Text(SupportedLocales.languageFor(current).englishName)),
+                    trailing: const Icon(Icons.expand_more_rounded),
+                    onTap: () async {
+                      final tag = await showLanguagePicker(context, currentTag: current?.toLanguageTag());
+                      if (tag == null) return;
+                      await services.locale.setLocale(tag.isEmpty ? null : SupportedLocales.byTag(tag)?.locale);
+                    },
+                  ),
+                ),
+                sectionTitle(l10n.updates),
+                const Card(child: _UpdatesTile()),
+                sectionTitle(l10n.about),
+                Card(
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.storage_outlined),
+                        title: Text(l10n.dataSource(services.marketData.name)),
+                      ),
+                      const Divider(height: 1),
+                      ListTile(
+                        leading: const Icon(Icons.visibility_outlined),
+                        title: Text(l10n.recognizerSource(services.recognizer.name)),
+                      ),
+                      if (DesktopIntegration.isSupported) ...[
+                        const Divider(height: 1),
+                        ListTile(
+                          leading: const Icon(Icons.keyboard_command_key_rounded),
+                          title: Text(hotkeyHintText(l10n, services)),
+                        ),
+                      ],
+                      for (final (icon, label, url) in [
+                        (Icons.description_outlined, l10n.termsOfUse, services.config.termsUrl),
+                        (Icons.privacy_tip_outlined, l10n.privacyPolicy, services.config.privacyUrl),
+                      ])
+                        if (services.legalUri(url, Localizations.localeOf(context)) case final uri?) ...[
+                          const Divider(height: 1),
+                          ListTile(
+                            leading: Icon(icon),
+                            title: Text(label),
+                            trailing: Icon(Icons.open_in_new_rounded, size: 18, color: p.muted),
+                            onTap: () => launchUrl(uri, mode: LaunchMode.externalApplication),
+                          ),
+                        ],
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text(l10n.disclaimer, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                ),
+                const _VersionFooter(),
+              ],
             ),
           );
         },

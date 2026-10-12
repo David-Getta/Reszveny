@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -313,6 +314,66 @@ void main() {
     expect(tester.getSize(name).width, greaterThan(200));
     expect(tester.getSize(name).height, lessThan(100));
     expect(tester.getTopLeft(price).dy, greaterThan(tester.getBottomLeft(name).dy));
+  });
+
+  testWidgets('price chart: hovering or dragging shows the price of the chosen day', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final area = find.byKey(const ValueKey('price-chart-area'));
+    await tester.ensureVisible(area);
+    await tester.pumpAndSettle();
+    // Kijelölés nélkül az egész időszak változása látszik.
+    final percent = find.textContaining(RegExp(r'^[+-]?\d+\.\d\d%$'));
+    final whole = tester.widget<Text>(percent.first).data;
+    final rect = tester.getRect(area);
+
+    // Egér a görbe elején: az időszak elejétől 0% a változás.
+    final mouse = await tester.createGesture(kind: PointerDeviceKind.mouse);
+    await mouse.addPointer(location: rect.centerLeft + const Offset(0.4, 0));
+    await tester.pump();
+    await mouse.moveTo(rect.centerLeft + const Offset(0.2, 0));
+    await tester.pumpAndSettle();
+    expect(find.text('0.00%'), findsOneWidget);
+    // Az egér elvitele után újra a teljes időszak látszik.
+    await mouse.moveTo(rect.topLeft - const Offset(0, 40));
+    await tester.pumpAndSettle();
+    expect(find.text(whole!), findsWidgets);
+    await mouse.removePointer();
+
+    // Ujjal húzva ugyanígy, és elengedés után eltűnik a kijelölés.
+    final drag = await tester.startGesture(rect.centerLeft + const Offset(40, 0));
+    await drag.moveTo(rect.centerLeft + const Offset(0.2, 0));
+    await tester.pump();
+    expect(find.text('0.00%'), findsOneWidget);
+    await drag.up();
+    await tester.pumpAndSettle();
+    expect(find.text('0.00%'), findsNothing);
+  });
+
+  testWidgets('on a wide window the page also scrolls with the mouse wheel over the empty side areas', (tester) async {
+    tester.view.physicalSize = const Size(1800, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final list = find.byType(Scrollable).last;
+    final position = tester.state<ScrollableState>(list).position;
+    expect(position.pixels, 0);
+    // A jobb szélső üres sáv, jóval a 720 px-es tartalomoszlopon kívül.
+    final pointer = TestPointer(1, PointerDeviceKind.mouse);
+    pointer.hover(const Offset(1780, 450));
+    await tester.sendEventToBinding(pointer.scroll(const Offset(0, 400)));
+    await tester.pumpAndSettle();
+    expect(position.pixels, greaterThan(0));
   });
 
   testWidgets('hungarian locale renders translated strings', (tester) async {

@@ -7,7 +7,10 @@ import '../../../theme/app_theme.dart';
 
 enum ChartRange { week, month, threeMonths, year, fiveYears }
 
-/// Egyszerű, függőség nélküli vonaldiagram időtáv-választóval.
+/// Egyszerű, függőség nélküli vonaldiagram időtáv-választóval. Az egérrel
+/// (asztali gép) vagy az ujj vízszintes húzásával (telefon) egy függőleges
+/// vonal és pont követi a görbét, felette az adott nap dátumával és árával,
+/// mint az Apple Részvények appjában.
 class PriceChart extends StatefulWidget {
   const PriceChart({super.key, required this.history, required this.fmt, this.currency});
 
@@ -21,6 +24,21 @@ class PriceChart extends StatefulWidget {
 
 class _PriceChartState extends State<PriceChart> {
   ChartRange _range = ChartRange.year;
+
+  /// A kijelölt pont indexe a látható pontok között (`null`: nincs kijelölés).
+  int? _hover;
+
+  /// A diagram fölött a kijelölt nap címkéjének fenntartott sáv.
+  static const double topPad = 30;
+
+  void _select(Offset local, Size size, List<PricePoint> points) {
+    final i = _LinePainter.indexAt(local.dx, size.width, points);
+    if (i != _hover) setState(() => _hover = i);
+  }
+
+  void _clear() {
+    if (_hover != null) setState(() => _hover = null);
+  }
 
   int _days(ChartRange r) => switch (r) {
     ChartRange.week => 7,
@@ -36,8 +54,10 @@ class _PriceChartState extends State<PriceChart> {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final points = widget.history.lastDays(_days(_range));
+    final hover = _hover != null && _hover! < points.length ? _hover : null;
     final first = points.isEmpty ? null : points.first.close;
-    final last = points.isEmpty ? null : points.last.close;
+    // Kijelölésnél az időszak elejétől a kijelölt napig számolt változás.
+    final last = points.isEmpty ? null : points[hover ?? points.length - 1].close;
     final change = first == null || last == null || first == 0 ? null : (last - first) / first * 100;
     final up = (change ?? 0) >= 0;
     final color = up ? p.positive : p.negative;
@@ -64,7 +84,10 @@ class _PriceChartState extends State<PriceChart> {
                       label: Text(label(r)),
                       selected: _range == r,
                       showCheckmark: false,
-                      onSelected: (_) => setState(() => _range = r),
+                      onSelected: (_) => setState(() {
+                        _range = r;
+                        _hover = null;
+                      }),
                       selectedColor: p.accent.withValues(alpha: 0.2),
                       side: BorderSide(color: _range == r ? p.accent : p.border),
                       labelStyle: TextStyle(color: _range == r ? p.text : p.muted, fontWeight: FontWeight.w600),
@@ -82,20 +105,56 @@ class _PriceChartState extends State<PriceChart> {
         ),
         const SizedBox(height: 12),
         SizedBox(
-          height: 180,
+          height: 180 + topPad,
           child: points.length < 2
               ? Center(
                   child: Text(l10n.notAvailable, style: TextStyle(color: p.muted)),
                 )
-              : CustomPaint(
-                  painter: _LinePainter(
-                    points: points,
-                    color: color,
-                    grid: p.border,
-                    labelStyle: (theme.textTheme.bodySmall ?? const TextStyle()).copyWith(color: p.muted, fontSize: 11),
-                    fmt: widget.fmt,
-                  ),
-                  child: const SizedBox.expand(),
+              : LayoutBuilder(
+                  builder: (context, constraints) {
+                    final size = constraints.biggest;
+                    final labelStyle = (theme.textTheme.bodySmall ?? const TextStyle()).copyWith(
+                      color: p.muted,
+                      fontSize: 11,
+                    );
+                    return MouseRegion(
+                      key: const ValueKey('price-chart-area'),
+                      cursor: SystemMouseCursors.precise,
+                      onHover: (e) => _select(e.localPosition, size, points),
+                      onExit: (_) => _clear(),
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        // Vízszintes húzás: a függőleges görgetés megmarad az oldalnak.
+                        onHorizontalDragStart: (d) => _select(d.localPosition, size, points),
+                        onHorizontalDragUpdate: (d) => _select(d.localPosition, size, points),
+                        onHorizontalDragEnd: (_) => _clear(),
+                        onHorizontalDragCancel: _clear,
+                        onTapDown: (d) => _select(d.localPosition, size, points),
+                        child: CustomPaint(
+                          painter: _LinePainter(
+                            points: points,
+                            color: color,
+                            grid: p.border,
+                            labelStyle: labelStyle,
+                            fmt: widget.fmt,
+                            topPad: topPad,
+                            hover: hover,
+                            cursorColor: p.text,
+                            hoverDateStyle: labelStyle.copyWith(fontSize: 12),
+                            hoverPriceStyle: labelStyle.copyWith(
+                              color: color,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                            ),
+                            hoverPrice: hover == null ? null : widget.fmt.price(points[hover].close, widget.currency),
+                            hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
+                            background: theme.colorScheme.surface,
+                          ),
+                          child: const SizedBox.expand(),
+                        ),
+                      ),
+                    );
+                  },
                 ),
         ),
         const SizedBox(height: 6),
@@ -119,6 +178,14 @@ class _LinePainter extends CustomPainter {
     required this.grid,
     required this.labelStyle,
     required this.fmt,
+    this.topPad = 0,
+    this.hover,
+    this.cursorColor = const Color(0xFFFFFFFF),
+    this.hoverDateStyle,
+    this.hoverPriceStyle,
+    this.hoverPrice,
+    this.hoverDate,
+    this.background = const Color(0xFF000000),
   });
 
   final List<PricePoint> points;
@@ -126,12 +193,45 @@ class _LinePainter extends CustomPainter {
   final Color grid;
   final TextStyle labelStyle;
   final Fmt fmt;
+  final double topPad;
+  final int? hover;
+  final Color cursorColor;
+  final TextStyle? hoverDateStyle;
+  final TextStyle? hoverPriceStyle;
+  final String? hoverPrice;
+  final String? hoverDate;
+  final Color background;
+
+  static const rightPad = 56.0;
+
+  /// A vízszintes helyhez (x) legközelebb eső pont indexe – idő szerint, mert a
+  /// pontok az idő arányában helyezkednek el (hétvégi hézagokkal).
+  static int indexAt(double x, double width, List<PricePoint> points) {
+    final w = width - rightPad;
+    if (points.length < 2 || w <= 0) return 0;
+    final minT = points.first.time.millisecondsSinceEpoch;
+    final maxT = points.last.time.millisecondsSinceEpoch;
+    final t = minT + (x.clamp(0, w) / w) * (maxT - minT);
+    var lo = 0, hi = points.length - 1;
+    while (hi - lo > 1) {
+      final mid = (lo + hi) >> 1;
+      if (points[mid].time.millisecondsSinceEpoch <= t) {
+        lo = mid;
+      } else {
+        hi = mid;
+      }
+    }
+    final dLo = (t - points[lo].time.millisecondsSinceEpoch).abs();
+    final dHi = (points[hi].time.millisecondsSinceEpoch - t).abs();
+    return dHi < dLo ? hi : lo;
+  }
 
   @override
   void paint(Canvas canvas, Size size) {
-    const rightPad = 56.0;
     final w = size.width - rightPad;
-    final h = size.height;
+    final h = size.height - topPad;
+    canvas.save();
+    canvas.translate(0, topPad);
     var min = points.first.close, max = points.first.close;
     for (final pt in points) {
       if (pt.close < min) min = pt.close;
@@ -190,9 +290,48 @@ class _LinePainter extends CustomPainter {
         ..style = PaintingStyle.stroke
         ..strokeJoin = StrokeJoin.round,
     );
+
+    // Kijelölés: függőleges vonal, pont a görbén, fölötte dátum és ár.
+    final i = hover;
+    if (i != null && i >= 0 && i < points.length) {
+      final o = at(points[i]);
+      canvas.drawLine(
+        Offset(o.dx, 0),
+        Offset(o.dx, h),
+        Paint()
+          ..color = cursorColor.withValues(alpha: 0.55)
+          ..strokeWidth = 1,
+      );
+      canvas.drawCircle(o, 7, Paint()..color = color.withValues(alpha: 0.25));
+      canvas.drawCircle(o, 4.5, Paint()..color = background);
+      canvas.drawCircle(o, 3.5, Paint()..color = color);
+      canvas.restore();
+      final date = TextPainter(
+        text: TextSpan(text: hoverDate ?? '', style: hoverDateStyle ?? labelStyle),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      final price = TextPainter(
+        text: TextSpan(text: hoverPrice ?? '', style: hoverPriceStyle ?? labelStyle),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      const gap = 8.0;
+      final total = date.width + gap + price.width;
+      final left = (o.dx - total / 2).clamp(0.0, (size.width - total).clamp(0.0, double.infinity));
+      final y = (topPad - price.height) / 2;
+      date.paint(canvas, Offset(left, y + (price.height - date.height) / 2));
+      price.paint(canvas, Offset(left + date.width + gap, y));
+    } else {
+      canvas.restore();
+    }
   }
 
   @override
   bool shouldRepaint(covariant _LinePainter old) =>
-      old.points != points || old.color != color || old.grid != grid || old.labelStyle != labelStyle;
+      old.points != points ||
+      old.color != color ||
+      old.grid != grid ||
+      old.labelStyle != labelStyle ||
+      old.hover != hover ||
+      old.hoverPrice != hoverPrice ||
+      old.topPad != topPad;
 }

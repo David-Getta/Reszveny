@@ -13,6 +13,7 @@ import 'fallback_billing_service.dart';
 import 'plan.dart';
 import 'pricing.dart';
 import 'web_checkout_billing_service.dart';
+import '../../widgets/centered_scroll.dart';
 
 /// Csomagválasztó: próbaidő-állapot, négy előfizetés (a Pro és a Max évesen
 /// is), extra csomagok, visszaállítás és előfizetés-kezelés.
@@ -152,169 +153,168 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
           final specs = yearly ? PlanSpec.withYearly : PlanSpec.paid;
           final best = _bestValueTier(specs, subs, yearly: yearly);
 
-          return Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 980),
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
-                children: [
-                  _StatusCard(ent: ent, fmt: fmt, planName: (t) => _planName(l10n, t)),
-                  const SizedBox(height: 20),
-                  Text(l10n.choosePlan, style: theme.textTheme.titleLarge),
-                  const SizedBox(height: 6),
-                  Text(l10n.planFeaturesCommon, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                  const SizedBox(height: 14),
-                  if (hasYearly && bc.available && !bc.loading) ...[
-                    Align(
-                      alignment: AlignmentDirectional.centerStart,
-                      child: SegmentedButton<bool>(
-                        key: const ValueKey('billing-period'),
-                        showSelectedIcon: false,
-                        segments: [
-                          ButtonSegment(value: false, label: Text(l10n.billingMonthly)),
-                          ButtonSegment(
-                            value: true,
-                            label: Text.rich(
-                              TextSpan(
-                                text: l10n.billingYearly,
-                                children: [
-                                  TextSpan(
-                                    text: '  ${l10n.yearlyDiscount}',
-                                    style: TextStyle(color: p.accent, fontWeight: FontWeight.w700, fontSize: 12),
-                                  ),
-                                ],
-                              ),
+          return CenteredScroll(
+            maxWidth: 980,
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
+            builder: (context, padding) => ListView(
+              padding: padding,
+              children: [
+                _StatusCard(ent: ent, fmt: fmt, planName: (t) => _planName(l10n, t)),
+                const SizedBox(height: 20),
+                Text(l10n.choosePlan, style: theme.textTheme.titleLarge),
+                const SizedBox(height: 6),
+                Text(l10n.planFeaturesCommon, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                const SizedBox(height: 14),
+                if (hasYearly && bc.available && !bc.loading) ...[
+                  Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: SegmentedButton<bool>(
+                      key: const ValueKey('billing-period'),
+                      showSelectedIcon: false,
+                      segments: [
+                        ButtonSegment(value: false, label: Text(l10n.billingMonthly)),
+                        ButtonSegment(
+                          value: true,
+                          label: Text.rich(
+                            TextSpan(
+                              text: l10n.billingYearly,
+                              children: [
+                                TextSpan(
+                                  text: '  ${l10n.yearlyDiscount}',
+                                  style: TextStyle(color: p.accent, fontWeight: FontWeight.w700, fontSize: 12),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
-                        selected: {yearly},
-                        onSelectionChanged: (s) => setState(() => _yearly = s.first),
-                      ),
-                    ),
-                    const SizedBox(height: 14),
-                  ],
-                  if (bc.loading)
-                    const Center(
-                      child: Padding(padding: EdgeInsets.all(24), child: CircularProgressIndicator()),
-                    )
-                  else if (!bc.available)
-                    Card(
-                      child: Padding(padding: const EdgeInsets.all(16), child: Text(l10n.billingUnavailable)),
-                    )
-                  else
-                    GridView(
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      // Rögzített kártyamagasság: a pipás lista és a gomb minden
-                      // nyelven és betűméretnél elfér.
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: yearly ? 2 : (wide ? 4 : 2),
-                        mainAxisSpacing: 12,
-                        crossAxisSpacing: 12,
-                        mainAxisExtent: 300 * MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6),
-                      ),
-                      children: [
-                        for (final spec in specs)
-                          if ((yearly ? spec.yearlyProductId : spec.productId) case final id?)
-                            _PlanCard(
-                              spec: spec,
-                              name: _planName(l10n, spec.tier),
-                              product: subs.where((x) => x.id == id).firstOrNull,
-                              yearly: yearly,
-                              // Éves nézetben a havi előfizetésről is lehet évesre váltani.
-                              current: !yearly && ent.plan?.tier == spec.tier && !ent.isTrialExpired,
-                              badge: spec.tier == best
-                                  ? l10n.bestValue
-                                  : (spec.tier == PlanTier.pro ? l10n.mostPopular : null),
-                              busy: bc.busyProductId == id,
-                              onBuy: (prod) => bc.buy(prod),
-                            ),
-                      ],
-                    ),
-                  if (bc.available && packs.isNotEmpty) ...[
-                    const SizedBox(height: 24),
-                    Text(l10n.extraPacksTitle, style: theme.textTheme.titleMedium),
-                    const SizedBox(height: 4),
-                    Text(l10n.extraPacksHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                    const SizedBox(height: 10),
-                    Wrap(
-                      spacing: 10,
-                      runSpacing: 10,
-                      children: [
-                        for (final pack in packs)
-                          _PackChip(product: pack, busy: bc.busyProductId == pack.id, onBuy: () => bc.buy(pack)),
-                      ],
-                    ),
-                  ],
-                  const SizedBox(height: 20),
-                  if (event != null && event.status == BillingStatus.pending && event.platform == 'stripe')
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(14),
-                        child: Row(
-                          children: [
-                            const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
-                            const SizedBox(width: 12),
-                            Expanded(child: Text(l10n.checkoutWaiting)),
-                          ],
                         ),
-                      ),
-                    )
-                  else if (event != null && event.status != BillingStatus.needsLogin)
-                    _EventNote(event: event),
-                  Wrap(
-                    spacing: 8,
-                    children: [
-                      TextButton.icon(
-                        onPressed: bc.restore,
-                        icon: const Icon(Icons.restore_rounded, size: 18),
-                        label: Text(l10n.restorePurchases),
-                      ),
-                      TextButton.icon(
-                        onPressed: () => _manage(context),
-                        icon: const Icon(Icons.manage_accounts_outlined, size: 18),
-                        label: Text(l10n.manageSubscription),
-                      ),
-                    ],
-                  ),
-                  // Az App Store és a fogyasztóvédelem is megköveteli: automatikus
-                  // megújulás, és a feltételek elérhetők a vásárlás helyén.
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8),
-                    child: Text(
-                      yearly ? l10n.subscriptionLegalYearly : l10n.subscriptionLegal,
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                      ],
+                      selected: {yearly},
+                      onSelectionChanged: (s) => setState(() => _yearly = s.first),
                     ),
                   ),
-                  Wrap(
-                    spacing: 4,
+                  const SizedBox(height: 14),
+                ],
+                if (bc.loading)
+                  const Center(
+                    child: Padding(padding: EdgeInsets.all(24), child: CircularProgressIndicator()),
+                  )
+                else if (!bc.available)
+                  Card(
+                    child: Padding(padding: const EdgeInsets.all(16), child: Text(l10n.billingUnavailable)),
+                  )
+                else
+                  GridView(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    // Rögzített kártyamagasság: a pipás lista és a gomb minden
+                    // nyelven és betűméretnél elfér.
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: yearly ? 2 : (wide ? 4 : 2),
+                      mainAxisSpacing: 12,
+                      crossAxisSpacing: 12,
+                      mainAxisExtent: 300 * MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6),
+                    ),
                     children: [
-                      for (final (label, url) in [
-                        (l10n.termsOfUse, services.config.termsUrl),
-                        (l10n.privacyPolicy, services.config.privacyUrl),
-                      ])
-                        if (services.legalUri(url, Localizations.localeOf(context)) case final uri?)
-                          TextButton(
-                            onPressed: () => launchUrl(uri, mode: LaunchMode.externalApplication),
-                            child: Text(label),
+                      for (final spec in specs)
+                        if ((yearly ? spec.yearlyProductId : spec.productId) case final id?)
+                          _PlanCard(
+                            spec: spec,
+                            name: _planName(l10n, spec.tier),
+                            product: subs.where((x) => x.id == id).firstOrNull,
+                            yearly: yearly,
+                            // Éves nézetben a havi előfizetésről is lehet évesre váltani.
+                            current: !yearly && ent.plan?.tier == spec.tier && !ent.isTrialExpired,
+                            badge: spec.tier == best
+                                ? l10n.bestValue
+                                : (spec.tier == PlanTier.pro ? l10n.mostPopular : null),
+                            busy: bc.busyProductId == id,
+                            onBuy: (prod) => bc.buy(prod),
                           ),
                     ],
                   ),
-                  if (_paymentNote(l10n, bc.billing) case final note?)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8),
+                if (bc.available && packs.isNotEmpty) ...[
+                  const SizedBox(height: 24),
+                  Text(l10n.extraPacksTitle, style: theme.textTheme.titleMedium),
+                  const SizedBox(height: 4),
+                  Text(l10n.extraPacksHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 10,
+                    runSpacing: 10,
+                    children: [
+                      for (final pack in packs)
+                        _PackChip(product: pack, busy: bc.busyProductId == pack.id, onBuy: () => bc.buy(pack)),
+                    ],
+                  ),
+                ],
+                const SizedBox(height: 20),
+                if (event != null && event.status == BillingStatus.pending && event.platform == 'stripe')
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(14),
                       child: Row(
                         children: [
-                          Icon(Icons.lock_outline_rounded, size: 14, color: p.muted),
-                          const SizedBox(width: 6),
-                          Expanded(
-                            child: Text(note, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                          ),
+                          const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
+                          const SizedBox(width: 12),
+                          Expanded(child: Text(l10n.checkoutWaiting)),
                         ],
                       ),
                     ),
-                ],
-              ),
+                  )
+                else if (event != null && event.status != BillingStatus.needsLogin)
+                  _EventNote(event: event),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    TextButton.icon(
+                      onPressed: bc.restore,
+                      icon: const Icon(Icons.restore_rounded, size: 18),
+                      label: Text(l10n.restorePurchases),
+                    ),
+                    TextButton.icon(
+                      onPressed: () => _manage(context),
+                      icon: const Icon(Icons.manage_accounts_outlined, size: 18),
+                      label: Text(l10n.manageSubscription),
+                    ),
+                  ],
+                ),
+                // Az App Store és a fogyasztóvédelem is megköveteli: automatikus
+                // megújulás, és a feltételek elérhetők a vásárlás helyén.
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Text(
+                    yearly ? l10n.subscriptionLegalYearly : l10n.subscriptionLegal,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                ),
+                Wrap(
+                  spacing: 4,
+                  children: [
+                    for (final (label, url) in [
+                      (l10n.termsOfUse, services.config.termsUrl),
+                      (l10n.privacyPolicy, services.config.privacyUrl),
+                    ])
+                      if (services.legalUri(url, Localizations.localeOf(context)) case final uri?)
+                        TextButton(
+                          onPressed: () => launchUrl(uri, mode: LaunchMode.externalApplication),
+                          child: Text(label),
+                        ),
+                  ],
+                ),
+                if (_paymentNote(l10n, bc.billing) case final note?)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Row(
+                      children: [
+                        Icon(Icons.lock_outline_rounded, size: 14, color: p.muted),
+                        const SizedBox(width: 6),
+                        Expanded(
+                          child: Text(note, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
             ),
           );
         },

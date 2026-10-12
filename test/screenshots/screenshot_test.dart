@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -372,6 +373,17 @@ void main() {
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_wide_dark');
+    // Árfolyamgrafikon egérrel: függőleges vonal, pont és a nap ára.
+    final chart = find.byKey(const ValueKey('price-chart-area'));
+    await tester.ensureVisible(chart);
+    await tester.pumpAndSettle();
+    final r = tester.getRect(chart);
+    final mouse = await tester.createGesture(kind: PointerDeviceKind.mouse);
+    await mouse.addPointer(location: r.center);
+    await mouse.moveTo(r.centerLeft + Offset(r.width * 0.42, 0));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_chart_hover');
+    await mouse.removePointer();
   });
 
   testWidgets('detail with AI report', (tester) async {
