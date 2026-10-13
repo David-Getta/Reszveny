@@ -154,12 +154,27 @@ class SettingsPage extends StatelessWidget {
                 Card(
                   child: Padding(
                     padding: const EdgeInsets.all(12),
-                    child: Row(
-                      children: [
-                        const Expanded(child: UsageChip()),
-                        const SizedBox(width: 12),
-                        FilledButton.tonal(onPressed: () => PaywallPage.open(context), child: Text(l10n.viewPlans)),
-                      ],
+                    // Telefonon egymás alatt: egymás mellett a keret szövege levágódna.
+                    child: LayoutBuilder(
+                      builder: (context, c) {
+                        final plans = FilledButton.tonal(
+                          onPressed: () => PaywallPage.open(context),
+                          child: Text(l10n.viewPlans),
+                        );
+                        if (c.maxWidth < 440) {
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [const UsageChip(), const SizedBox(height: 10), plans],
+                          );
+                        }
+                        return Row(
+                          children: [
+                            const Expanded(child: UsageChip()),
+                            const SizedBox(width: 12),
+                            plans,
+                          ],
+                        );
+                      },
                     ),
                   ),
                 ),
@@ -441,25 +456,31 @@ class _HotkeyTileState extends State<_HotkeyTile> {
         return ListTile(
           leading: const Icon(Icons.keyboard_command_key_rounded),
           title: Text(l10n.hotkeyLabel),
-          subtitle: _recording
-              ? Text(l10n.hotkeyRecordHint, style: TextStyle(color: p.accent))
-              : Text(services.desktop.shortcutLabelFor(space: l10n.keySpace)),
-          trailing: Row(
-            mainAxisSize: MainAxisSize.min,
+          // A gombok a felirat alatt vannak, nem mellette: keskeny ablakban így sem
+          // a cím, sem a gombok nem szorulnak össze.
+          subtitle: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              _recording
+                  ? Text(l10n.hotkeyRecordHint, style: TextStyle(color: p.accent))
+                  : Text(services.desktop.shortcutLabelFor(space: l10n.keySpace)),
               if (_recording)
-                SizedBox(
-                  width: 160,
-                  child: HotKeyRecorder(
-                    onHotKeyRecorded: (hk) async {
-                      if (hk.modifiers == null || hk.modifiers!.isEmpty) return;
-                      setState(() => _recording = false);
-                      await services.desktop.setHotKey(hk);
-                      await services.preferences.setHotkeyJson(hk.toJson());
-                    },
+                Padding(
+                  padding: const EdgeInsets.only(top: 6),
+                  child: SizedBox(
+                    width: 160,
+                    child: HotKeyRecorder(
+                      onHotKeyRecorded: (hk) async {
+                        if (hk.modifiers == null || hk.modifiers!.isEmpty) return;
+                        setState(() => _recording = false);
+                        await services.desktop.setHotKey(hk);
+                        await services.preferences.setHotkeyJson(hk.toJson());
+                      },
+                    ),
                   ),
                 ),
               TextButton(
+                style: TextButton.styleFrom(padding: EdgeInsets.zero, visualDensity: VisualDensity.compact),
                 onPressed: () async {
                   await services.desktop.setHotKey(null);
                   await services.preferences.setHotkeyJson(null);

@@ -597,6 +597,8 @@ void main() {
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
     await tester.scrollUntilVisible(find.text('System default'), 200, scrollable: find.byType(Scrollable).last);
+    await tester.ensureVisible(find.text('System default'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('System default'));
     await tester.pumpAndSettle();
     await tester.enterText(find.widgetWithText(TextField, 'Search languages…'), 'ma');

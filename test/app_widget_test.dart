@@ -254,6 +254,8 @@ void main() {
     // A lista zárva: a 44 nyelv nem látszik, csak az aktuális.
     expect(find.text('Magyar'), findsNothing);
     await tester.scrollUntilVisible(find.text('System default'), 200, scrollable: find.byType(Scrollable).last);
+    await tester.ensureVisible(find.text('System default'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('System default'));
     await tester.pumpAndSettle();
     expect(find.text('English'), findsWidgets);
