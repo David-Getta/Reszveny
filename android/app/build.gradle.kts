@@ -29,11 +29,27 @@ android {
         versionName = flutter.versionName
     }
 
+    // Állandó aláíró kulcs a kiadásokhoz: ugyanazzal a kulccsal aláírt APK
+    // telepíthető a régi fölé (különben a telefon „ütköző csomag” hibát ad, és a
+    // régi verzió marad). A kulcs a GitHub titkaiból érkezik
+    // (ANDROID_KEYSTORE_BASE64 → ANDROID_KEYSTORE_PATH, ANDROID_KEYSTORE_PASSWORD);
+    // ha nincs megadva (helyi fejlesztés), a debug kulccsal írunk alá.
+    val releaseKeystore = System.getenv("ANDROID_KEYSTORE_PATH")?.let { file(it) }?.takeIf { it.exists() }
+    signingConfigs {
+        if (releaseKeystore != null) {
+            create("release") {
+                storeFile = releaseKeystore
+                storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("ANDROID_KEY_ALIAS") ?: "whatstock"
+                keyPassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig =
+                if (releaseKeystore != null) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
         }
     }
 }

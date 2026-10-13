@@ -62,11 +62,28 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           cache: true
       - run: flutter pub get
+      # Állandó aláíró kulcs a titkokból, hogy az új verzió a régi fölé
+      # települjön. Ha a titok nincs megadva, a debug kulccsal írunk alá (akkor
+      # minden kiadás más kulcsot kap, és a telefonon törölni kell a régit).
+      - name: Aláíró kulcs
+        env:
+          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KS" ]; then
+            echo "$KS" | base64 -d > "$RUNNER_TEMP/whatstock.jks"
+            echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/whatstock.jks" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Nincs ANDROID_KEYSTORE_BASE64 titok: debug kulccsal írunk alá."
+          fi
       # Univerzális APK (minden processzorra) és egy kisebb, csak arm64-es
       # (szinte minden mai telefon) változat.
       - run: flutter build apk --release ${{ env.DEFINES }}
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       - run: mv build/app/outputs/flutter-apk/app-release.apk WhatStock-android.apk
       - run: flutter build apk --release --split-per-abi ${{ env.DEFINES }}
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       - run: mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk WhatStock-android-arm64.apk
       - uses: actions/upload-artifact@v4
         with:
