@@ -607,7 +607,7 @@ void main() {
   });
 
   testWidgets('quick bar', (tester) async {
-    tester.view.physicalSize = const Size(680, 84);
+    tester.view.physicalSize = const Size(680, 72);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     await tester.pumpWidget(

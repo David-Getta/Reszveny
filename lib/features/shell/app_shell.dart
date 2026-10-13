@@ -9,12 +9,17 @@ import 'package:window_manager/window_manager.dart';
 
 import '../../app_services.dart';
 import '../../core/desktop/desktop_integration.dart';
+import '../../core/desktop/quick_panel.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../billing/usage_chip.dart';
+import '../home/candidate_sheet.dart';
 import '../home/home_page.dart';
 import '../home/quick_bar.dart';
+import '../home/quick_search_controller.dart';
 import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
 import '../settings/settings_page.dart';
@@ -73,7 +78,59 @@ class _AppShellState extends State<AppShell> {
   }
 
   bool _trayReady = false;
+  bool _quickPanelReady = false;
   AppServices? _services;
+
+  /// A gyorskereső panelből választott részvény: a panel eltűnik, és a teljes
+  /// ablakban nyílik meg.
+  Future<void> _quickOpen(StockCandidate candidate) async {
+    final services = _services;
+    if (services == null || !mounted) return;
+    await services.desktop.quickPanel.hide();
+    await services.desktop.showFullWindow();
+    if (!mounted) return;
+    _goHome();
+    _openSymbol(candidate);
+  }
+
+  /// Kép beillesztése a gyorskereső panelbe (⌘V vagy a gomb): felismerés a
+  /// panelben, forgó jelzővel; több bizonytalan jelöltnél a teljes ablakban
+  /// választhat a felhasználó, találat híján a panel írja ki az okát.
+  Future<void> _quickPasteImage() async {
+    final services = _services;
+    if (services == null || !mounted) return;
+    final l10n = AppLocalizations.of(context);
+    final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+    final panel = services.desktop.quickPanel;
+    await panel.setMessage(null);
+    await panel.setBusy(true);
+    try {
+      final image = await services.capture.fromClipboard();
+      final result = await services.recognizer.recognize(image, outputLanguage: language);
+      final best = result.best;
+      if (best == null) {
+        await panel.setMessage(l10n.noCandidatesTitle);
+        return;
+      }
+      if (result.candidates.length == 1 || best.isConfident) {
+        await _quickOpen(best);
+        return;
+      }
+      await panel.hide();
+      await services.desktop.showFullWindow();
+      if (!mounted) return;
+      _goHome();
+      final navContext = _navigatorKey.currentContext;
+      if (navContext == null || !navContext.mounted) return;
+      final chosen = await showCandidateSheet(navContext, result);
+      if (chosen != null && mounted) _openSymbol(chosen);
+    } catch (e) {
+      // Pl. nincs kép a vágólapon, vagy nem érhető el a felismerés.
+      await panel.setMessage(errorMessage(l10n, e));
+    } finally {
+      await panel.setBusy(false);
+    }
+  }
 
   @override
   void dispose() {
@@ -123,6 +180,34 @@ class _AppShellState extends State<AppShell> {
       _services = services;
       services.alertMonitor.addListener(_onAlertHits);
       services.alertMonitor.openRequest.addListener(_onOpenRequest);
+    }
+    if (NativeQuickPanel.isSupported) {
+      final panel = services.desktop.quickPanel;
+      if (!_quickPanelReady) {
+        _quickPanelReady = true;
+        panel.attach(
+          QuickSearchController(
+            panel: panel,
+            search: services.marketData.search,
+            favorites: () => services.preferences.favorites,
+            recent: () => services.preferences.recent,
+            recentTitle: () => AppLocalizations.of(context).recentSearches,
+            open: _quickOpen,
+            pasteImage: _quickPasteImage,
+            openWindow: () async {
+              await panel.hide();
+              await services.desktop.showFullWindow();
+            },
+          ),
+        );
+      }
+      // Nyelv- vagy témaváltáskor a panel feliratai és színei is frissülnek.
+      panel.configure(
+        placeholder: l10n.quickBarHint,
+        pasteImage: l10n.pasteImage,
+        openWindow: l10n.openFullWindow,
+        dark: Theme.of(context).brightness == Brightness.dark,
+      );
     }
     if (DesktopIntegration.isSupported && !_trayReady) {
       _trayReady = true;

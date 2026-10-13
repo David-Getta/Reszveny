@@ -11,8 +11,9 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import 'search_field.dart';
 
-/// A gyorsbillentyűvel előhívott lebegő sáv – mint a Claude macOS-es
-/// gyorsbeviteli ablaka. Enter: megnyitja a találatot a teljes ablakban;
+/// A gyorsbillentyűvel előhívott sáv Windowson és Linuxon (macOS-en natív
+/// panel van, lásd `NativeQuickPanel`): ilyenkor maga a főablak kicsi, keret
+/// nélküli sávvá alakul. Enter: megnyitja a találatot a teljes ablakban;
 /// Esc: elrejti a sávot.
 class QuickBar extends StatefulWidget {
   const QuickBar({super.key, required this.onOpenSymbol, required this.onOpenWindow});
@@ -98,7 +99,6 @@ class _QuickBarState extends State<QuickBar> {
     final p = AppPalette.of(context);
     final services = AppServices.of(context);
     return Scaffold(
-      backgroundColor: Colors.transparent,
       body: CallbackShortcuts(
         bindings: {
           const SingleActivator(LogicalKeyboardKey.escape): () => services.desktop.hideQuickBar(),
@@ -106,7 +106,7 @@ class _QuickBarState extends State<QuickBar> {
           const SingleActivator(LogicalKeyboardKey.keyV, control: true): _pasteIfImage,
         },
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
           child: SearchField(
             hint: l10n.quickBarHint,
             autofocus: true,

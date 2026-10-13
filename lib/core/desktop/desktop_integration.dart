@@ -9,6 +9,7 @@ import 'package:tray_manager/tray_manager.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'double_tap_detector.dart';
+import 'quick_panel.dart';
 
 /// Asztali (macOS, Windows) integráció:
 /// - ablak: rejtett címsor, minimális méret, középre igazítás;
@@ -31,9 +32,13 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   static const Color windowBackground = Color(0xFF1F1E1D);
 
   /// A lebegő gyorskereső sáv mérete.
-  static const Size quickBarSize = Size(680, 84);
+  static const Size quickBarSize = Size(680, 72);
 
   bool _quickBar = false;
+
+  /// macOS-en a gyorskereső natív, lebegő panel (mint a Claude-é); máshol a
+  /// főablak vált kompakt sávvá.
+  final NativeQuickPanel quickPanel = NativeQuickPanel();
 
   // ---- Dupla Option-nyomás (csak macOS) ----
 
@@ -333,6 +338,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   }
 
   Future<void> toggleQuickBar() async {
+    if (NativeQuickPanel.isSupported) return quickPanel.toggle();
     if (_quickBar && await windowManager.isVisible() && await windowManager.isFocused()) {
       await hideQuickBar();
     } else {
@@ -340,18 +346,20 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
     }
   }
 
-  /// Kompakt, lebegő sáv a képernyő felső harmadában, minden ablak felett.
+  /// macOS: natív panel a képernyő felső részén, a többi app felett (a főablak
+  /// a helyén marad). Máshol: a főablak kompakt sávvá alakul, minden ablak felett.
   Future<void> showQuickBar() async {
     if (!isSupported) return;
+    if (NativeQuickPanel.isSupported) return quickPanel.show();
     if (!_quickBar) {
       _lastFullSize = await windowManager.getSize();
       _quickBar = true;
       notifyListeners();
       await windowManager.setResizable(false);
       await windowManager.setAlwaysOnTop(true);
-      // Átlátszó ablak: csak a lekerekített sáv látszik, saját árnyékkal.
-      await windowManager.setBackgroundColor(const Color(0x00000000));
-      await windowManager.setHasShadow(false);
+      // Nem átlátszó: a Windows-ablak átlátszó háttere feketén jelenne meg, ezért
+      // maga az ablak a sáv (a téma hátterével).
+      await windowManager.setBackgroundColor(windowBackground);
       await windowManager.setSize(quickBarSize);
       await windowManager.setAlignment(const Alignment(0, -0.6));
     }
@@ -361,6 +369,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   Future<void> hideQuickBar() async {
     if (!isSupported) return;
+    if (NativeQuickPanel.isSupported) return quickPanel.hide();
     await windowManager.hide();
   }
 
@@ -372,8 +381,6 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
       notifyListeners();
       await windowManager.setAlwaysOnTop(false);
       await windowManager.setResizable(true);
-      await windowManager.setHasShadow(true);
-      await windowManager.setBackgroundColor(windowBackground);
       await windowManager.setSize(_lastFullSize);
       await windowManager.center();
     }
