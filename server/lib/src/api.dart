@@ -7,6 +7,7 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 import 'db.dart';
+import 'invites.dart';
 import 'mailer.dart';
 import 'plans.dart';
 import 'purchase_verifier.dart';
@@ -30,6 +31,11 @@ import 'stripe.dart';
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
 /// - `POST /v1/billing/portal` → Stripe ügyfélportál URL (csomagváltás, lemondás, számlák)
 /// - `POST /v1/stripe/webhook` → a Stripe eseményei (aláírás-ellenőrzéssel)
+///
+/// Zárt előzetesben ([invites]) minden `/v1/` hívás (a Stripe webhook kivételével)
+/// az `x-whatstock-invite` fejlécben érvényes meghívókódot vár (403
+/// `invite_required` / `invite_invalid` / `invite_expired` / `invite_device_limit`),
+/// és kódonként napi elemzéskeret van (402 `invite_daily_limit`).
 class Api {
   Api({
     required this.store,
@@ -47,11 +53,16 @@ class Api {
     this.anthropicModel = 'claude-opus-5-5',
     this.trialModel = 'claude-sonnet-5-5',
     this.legalDir = 'legal',
+    this.invites = const InviteBook(),
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store);
 
   final Mailer mailer;
+
+  /// Meghívókódok; ha üres, a szerver nyitott.
+  final InviteBook invites;
+  static const inviteHeader = 'x-whatstock-invite';
 
   /// Böngészős fizetés (asztali gép, web); `null`, ha nincs beállítva.
   final StripeClient? stripe;
@@ -122,7 +133,11 @@ class Api {
       ..get('/billing/success', (Request r) => _page('✓', 'Sikeres fizetés · Payment complete'))
       ..get('/billing/cancel', (Request r) => _page('×', 'A fizetés megszakadt · Payment cancelled'))
       ..get('/healthz', (Request r) => Response.ok('ok'));
-    return const Pipeline().addMiddleware(_cors()).addMiddleware(logRequests()).addHandler(router.call);
+    return const Pipeline()
+        .addMiddleware(_cors())
+        .addMiddleware(logRequests())
+        .addMiddleware(_inviteGate())
+        .addHandler(router.call);
   }
 
   // ---- Segédek ----
@@ -165,7 +180,7 @@ class Api {
           'access-control-allow-origin': '*',
           'access-control-allow-headers':
               'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
-              'x-whatstock-depth',
+              'x-whatstock-depth, $inviteHeader',
           'access-control-allow-methods': 'GET, POST, DELETE, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
@@ -173,18 +188,50 @@ class Api {
         return res.change(headers: headers);
       };
 
+  /// Zárt előzetes: érvényes, le nem járt meghívókód kell, és egy kód legfeljebb
+  /// [Invite.maxDevices] fiókhoz (eszközhöz) köthető. A kód a kérés
+  /// kontextusába kerül (`invite`), a napi keretet az elemzés ellenőrzi.
+  Middleware _inviteGate() =>
+      (inner) => (req) async {
+        if (!invites.enabled || req.method == 'OPTIONS') return inner(req);
+        final path = req.url.path;
+        if (!path.startsWith('v1/') || path == 'v1/stripe/webhook') return inner(req);
+        final sent = req.headers[inviteHeader];
+        final invite = invites.find(sent);
+        if (invite == null) {
+          return _error(403, sent == null || sent.trim().isEmpty ? 'invite_required' : 'invite_invalid');
+        }
+        if (invite.isExpired(store.clock())) return _error(403, 'invite_expired');
+        final uid = _userId(req);
+        final known = uid != null && store.inviteHasDevice(invite.code, uid);
+        if (!known && (uid != null || path == 'v1/auth/anonymous')) {
+          if (store.inviteDeviceCount(invite.code) >= invite.maxDevices) return _error(403, 'invite_device_limit');
+          if (uid != null) store.addInviteDevice(invite.code, uid);
+        }
+        return inner(req.change(context: {'invite': invite}));
+      };
+
+  static Invite? _invite(Request r) => r.context['invite'] as Invite?;
+
   // ---- Útvonalak ----
 
   Future<Response> _auth(Request r) async {
     final body = await _body(r);
     final (id, token) = store.createAnonymousUser(body['device_id'] as String?);
-    return _json({'user_id': id, 'token': token, 'entitlements': store.entitlement(id).toJson()});
+    final invite = _invite(r);
+    if (invite != null) store.addInviteDevice(invite.code, id);
+    return _json({
+      'user_id': id,
+      'token': token,
+      'entitlements': store.entitlement(id).toJson(),
+      'invite': ?invite?.toJson(),
+    });
   }
 
   Future<Response> _me(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    return _json(_account(uid));
+    return _json({..._account(uid), 'invite': ?_invite(r)?.toJson()});
   }
 
   // ---- Fiók: belépés e-mail + kód ----
@@ -458,6 +505,14 @@ class Api {
     final e = store.entitlement(uid);
     // A próbaidő kerete: rövid elemzés az olcsóbb modellel (a megvett extra
     // elemzések már a teljes értékűek).
+    final invite = _invite(r);
+    if (invite != null) {
+      final now = store.clock().toUtc();
+      final today = DateTime.utc(now.year, now.month, now.day);
+      if (store.inviteUsageSince(invite.code, today) >= invite.dailyAnalyses) {
+        return _error(402, 'invite_daily_limit');
+      }
+    }
     final trialRun = quota.drawsFromTrial(e);
     final depth = trialRun ? Depth.brief : Depth.parse(r.headers['x-whatstock-depth']);
     final q = quota.check(e, cost: depth.cost);
@@ -486,6 +541,7 @@ class Api {
           quota.consume(e, cost: depth.cost);
           final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
           store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
+          if (invite != null) store.logInviteUsage(invite.code);
         }
       } catch (_) {}
     }

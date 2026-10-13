@@ -1,0 +1,43 @@
+name: CI (native)
+
+# A Windows- és az Apple-build drága (privát repóban a macOS-perc tízszeresen,
+# a Windows kétszeresen számít), ezért csak akkor fut, ha a natív réteg vagy a
+# csomagok változtak. A kiadás (release.yml) amúgy is mindet lefordítja.
+on:
+  push:
+    branches: ['**']
+    paths:
+      - 'windows/**'
+      - 'macos/**'
+      - 'ios/**'
+      - 'pubspec.lock'
+      - '.github/workflows/ci-native.yml'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    name: Build Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - run: flutter pub get
+      - run: flutter build windows --debug
+
+  build-apple:
+    name: Build iOS & macOS (no codesign)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - run: flutter pub get
+      - run: flutter build ios --debug --no-codesign
+      - run: flutter build macos --debug

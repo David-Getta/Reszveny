@@ -90,6 +90,17 @@ class Store {
         created_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS helper_calls_user ON helper_calls(user_id, created_at);
+      CREATE TABLE IF NOT EXISTS invite_devices (
+        code TEXT NOT NULL,
+        user_id TEXT NOT NULL,
+        created_at TEXT NOT NULL,
+        PRIMARY KEY (code, user_id)
+      );
+      CREATE TABLE IF NOT EXISTS invite_usage (
+        code TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS invite_usage_code ON invite_usage(code, created_at);
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
@@ -335,6 +346,34 @@ class Store {
     );
     return true;
   }
+
+  // ---- Meghívókódok (zárt előzetes) ----
+  // A kódhoz kötött eszközök és elemzések fiók törlése után is megmaradnak
+  // (csak véletlen azonosító és időpont), különben a fiók törlésével
+  // újra lehetne kezdeni az eszköz- és a napi keretet.
+
+  int inviteDeviceCount(String code) =>
+      _db.select('SELECT COUNT(*) AS n FROM invite_devices WHERE code = ?', [code]).first['n'] as int;
+
+  bool inviteHasDevice(String code, String userId) =>
+      _db.select('SELECT 1 FROM invite_devices WHERE code = ? AND user_id = ?', [code, userId]).isNotEmpty;
+
+  void addInviteDevice(String code, String userId) => _db.execute(
+    'INSERT OR IGNORE INTO invite_devices (code, user_id, created_at) VALUES (?, ?, ?)',
+    [code, userId, clock().toUtc().toIso8601String()],
+  );
+
+  void logInviteUsage(String code) => _db.execute('INSERT INTO invite_usage (code, created_at) VALUES (?, ?)', [
+    code,
+    clock().toUtc().toIso8601String(),
+  ]);
+
+  int inviteUsageSince(String code, DateTime since) =>
+      _db.select('SELECT COUNT(*) AS n FROM invite_usage WHERE code = ? AND created_at >= ?', [
+            code,
+            since.toUtc().toIso8601String(),
+          ]).first['n']
+          as int;
 
   void logUsage(String userId, String? symbol, int? inputTokens, int? outputTokens) {
     _db.execute(

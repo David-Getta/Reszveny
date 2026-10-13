@@ -63,6 +63,26 @@ A HTTPS (lakat) mindhárom esetben megoldható; a Railway automatikusan adja.
   nincs.
 - A szerver naplójában (Railway → *Deployments → Logs*) látszik minden hívás és hiba.
 
+## Zárt előzetes: csak meghívókóddal
+
+Ha az `INVITE_CODES` változó be van állítva, a szerver csak érvényes meghívókóddal enged be. Az
+app első indításkor elkéri a kódot, és minden képernyő alján vízjelként kiírja, kinek szól a
+példány. Egy kiszivárgott képernyőképről is látszik, kitől származik.
+
+Formátum (vesszővel elválasztva, több meghívott is lehet):
+
+    KÓD:Név[:utolsó nap][:eszközök száma][:napi elemzés]
+
+Példa: `DAVID-4Q8ZRT:Getta Dávid::5:30,GABOR-K7M2XQ:Schulz Gábor:2026-11-30:2:10`
+
+- **utolsó nap** (ÉÉÉÉ-HH-NN): eddig a napig érvényes, utána „lejárt”; üresen hagyva nem jár le.
+- **eszközök száma** (alapból 3): ennyi telefonon/gépen használható. Ha valaki továbbadja az appot
+  a kóddal, a következő eszköz már nem jut be.
+- **napi elemzés** (alapból 15): kódonként ennyi AI-elemzés naponta, így a költség felülről korlátos.
+- **visszavonás**: töröld a kódot a változóból, és mentsd. A Railway újraindítja a szervert,
+  onnantól az a kód semmire nem jó.
+- A saját kódodat is vedd fel, mert a kódot minden példány kéri, a tiéd is.
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

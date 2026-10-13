@@ -22,6 +22,9 @@ permissions:
 env:
   FLUTTER_VERSION: 3.47.7
   DEFINES: --dart-define=BACKEND_URL=${{ vars.BACKEND_URL }}
+  # Obfuszkált Dart-kód: a kiadott appból jóval nehezebb visszafejteni a
+  # működést (a hibakereső szimbólumok a build/symbols mappába kerülnek, nem az appba).
+  OBFUSCATE: --obfuscate --split-debug-info=build/symbols
 
 jobs:
   version:
@@ -77,11 +80,11 @@ jobs:
           fi
       # Univerzális APK (minden processzorra) és egy kisebb, csak arm64-es
       # (szinte minden mai telefon) változat.
-      - run: flutter build apk --release ${{ env.DEFINES }}
+      - run: flutter build apk --release ${{ env.DEFINES }} ${{ env.OBFUSCATE }}
         env:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       - run: mv build/app/outputs/flutter-apk/app-release.apk WhatStock-android.apk
-      - run: flutter build apk --release --split-per-abi ${{ env.DEFINES }}
+      - run: flutter build apk --release --split-per-abi ${{ env.DEFINES }} ${{ env.OBFUSCATE }}
         env:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       - run: mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk WhatStock-android-arm64.apk
@@ -105,7 +108,7 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           cache: true
       - run: flutter pub get
-      - run: flutter build windows --release ${{ env.DEFINES }}
+      - run: flutter build windows --release ${{ env.DEFINES }} ${{ env.OBFUSCATE }}
       - name: Zip
         shell: pwsh
         run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath WhatStock-windows-x64.zip
@@ -127,7 +130,7 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           cache: true
       - run: flutter pub get
-      - run: flutter build macos --release ${{ env.DEFINES }}
+      - run: flutter build macos --release ${{ env.DEFINES }} ${{ env.OBFUSCATE }}
       - name: Zip
         run: ditto -c -k --sequesterRsrc --keepParent build/macos/Build/Products/Release/WhatStock.app WhatStock-macos.zip
       - uses: actions/upload-artifact@v4
