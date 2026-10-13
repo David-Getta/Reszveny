@@ -1360,9 +1360,7 @@ class AppLocalizationsAz extends AppLocalizations {
       'Bu dəvət kodu artıq maksimum sayda cihazda istifadə olunur.';
 
   @override
-  String previewFor(String name) {
-    return '$name üçün məxfi önizləmə';
-  }
+  String get previewConfidential => 'Məxfi önizləmə';
 
   @override
   String get errPreviewDailyLimit =>

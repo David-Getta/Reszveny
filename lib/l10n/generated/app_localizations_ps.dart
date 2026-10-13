@@ -1356,9 +1356,7 @@ class AppLocalizationsPs extends AppLocalizations {
       'دا د بلنې کوډ لا دمخه د اعظمي شمېر وسیلو پر مخ کارول کېږي.';
 
   @override
-  String previewFor(String name) {
-    return 'د $name لپاره محرمه مخکتنه';
-  }
+  String get previewConfidential => 'محرمه مخکتنه';
 
   @override
   String get errPreviewDailyLimit =>

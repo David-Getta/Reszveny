@@ -1360,9 +1360,7 @@ class AppLocalizationsNb extends AppLocalizations {
       'Denne invitasjonskoden er allerede i bruk på maksimalt antall enheter.';
 
   @override
-  String previewFor(String name) {
-    return 'Konfidensiell forhåndsvisning for $name';
-  }
+  String get previewConfidential => 'Konfidensiell forhåndsvisning';
 
   @override
   String get errPreviewDailyLimit =>

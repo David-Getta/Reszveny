@@ -1365,9 +1365,7 @@ class AppLocalizationsKg extends AppLocalizations {
       'Code yayi ya mbokolo isadilwanga kala mu ntalu ya nene ya bisadulu.';
 
   @override
-  String previewFor(String name) {
-    return 'Kutala kwa nsweki kwa $name';
-  }
+  String get previewConfidential => 'Kutala kwa nsweki';
 
   @override
   String get errPreviewDailyLimit =>

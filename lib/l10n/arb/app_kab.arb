@@ -379,6 +379,6 @@
   "inviteInvalid": "Tangalt-a n tinubga ur tṣeḥḥa ara.",
   "inviteExpired": "Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.",
   "inviteDeviceLimit": "Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.",
-  "previewFor": "Taskant tuffirt i {name}",
+  "previewConfidential": "Taskant tuffirt",
   "errPreviewDailyLimit": "Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka."
 }

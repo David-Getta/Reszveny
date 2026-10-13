@@ -1360,9 +1360,7 @@ class AppLocalizationsBm extends AppLocalizations {
       'Nin weleli kode in bɛ ka baara kɛ minɛn hakɛ laban kan kaban.';
 
   @override
-  String previewFor(String name) {
-    return 'Kɔrɔbɔli gundolen $name ye';
-  }
+  String get previewConfidential => 'Kɔrɔbɔli gundolen';
 
   @override
   String get errPreviewDailyLimit =>

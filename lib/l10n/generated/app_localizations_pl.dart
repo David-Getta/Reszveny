@@ -1400,9 +1400,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'Ten kod zaproszenia jest już używany na maksymalnej liczbie urządzeń.';
 
   @override
-  String previewFor(String name) {
-    return 'Poufny podgląd – $name';
-  }
+  String get previewConfidential => 'Poufny podgląd';
 
   @override
   String get errPreviewDailyLimit =>

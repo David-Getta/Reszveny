@@ -379,6 +379,6 @@
   "inviteInvalid": "Khoutu eno ya taletso ga e nepagale.",
   "inviteExpired": "Taletso eno e fetile nako. Kopa motho yo o go laleditseng khoutu e ntšha.",
   "inviteDeviceLimit": "Khoutu eno ya taletso e setse e dirisiwa mo palong e kgolo ka go fetisisa ya didirisiwa e e letleletsweng.",
-  "previewFor": "Ponelopele ya sephiri ya ga {name}",
+  "previewConfidential": "Ponelopele ya sephiri",
   "errPreviewDailyLimit": "Tekanyetso ya ditshekatsheko ya gompieno ya ponelopele eno e fitlheletswe. Leka gape kamoso."
 }

@@ -1356,9 +1356,7 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਇਹ ਸੱਦਾ ਕੋਡ ਪਹਿਲਾਂ ਹੀ ਵੱਧ ਤੋਂ ਵੱਧ ਗਿਣਤੀ ਦੇ ਡਿਵਾਈਸਾਂ \'ਤੇ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।';
 
   @override
-  String previewFor(String name) {
-    return '$name ਲਈ ਗੁਪਤ ਪ੍ਰੀਵਿਊ';
-  }
+  String get previewConfidential => 'ਗੁਪਤ ਪ੍ਰੀਵਿਊ';
 
   @override
   String get errPreviewDailyLimit =>

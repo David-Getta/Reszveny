@@ -379,6 +379,6 @@
   "inviteInvalid": "Hierdie uitnodigingskode is nie geldig nie.",
   "inviteExpired": "Hierdie uitnodiging het verval. Vra die persoon wat jou genooi het vir ’n nuwe kode.",
   "inviteDeviceLimit": "Hierdie uitnodigingskode word reeds op die maksimum aantal toestelle gebruik.",
-  "previewFor": "Vertroulike voorskou vir {name}",
+  "previewConfidential": "Vertroulike voorskou",
   "errPreviewDailyLimit": "Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer."
 }

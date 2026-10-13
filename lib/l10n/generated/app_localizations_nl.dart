@@ -1363,9 +1363,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Deze uitnodigingscode wordt al op het maximale aantal apparaten gebruikt.';
 
   @override
-  String previewFor(String name) {
-    return 'Vertrouwelijke preview voor $name';
-  }
+  String get previewConfidential => 'Vertrouwelijke preview';
 
   @override
   String get errPreviewDailyLimit =>

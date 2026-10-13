@@ -7,8 +7,8 @@
 /// Ha a változó üres, a szerver nyitott (mint eddig).
 ///
 /// A kód visszavonása: törölni a változóból (a Railway-en mentés után azonnal
-/// érvényes). A név az appban vízjelként látszik, így egy kiszivárgott képről
-/// is kiderül, kinek a példánya volt.
+/// érvényes). A név a nyilvántartást segíti (melyik kód kié); az app csak egy
+/// „Bizalmas előzetes” vízjelet mutat.
 class Invite {
   const Invite({
     required this.code,
@@ -32,7 +32,8 @@ class Invite {
 
   bool isExpired(DateTime now) => expires != null && !now.toUtc().isBefore(expires!);
 
-  /// Az appnak: a vízjel neve és a lejárat napja.
+  /// Az appnak: kinek szól a kód és meddig érvényes (az app ebből tudja, hogy
+  /// zárt előzetesben fut).
   Map<String, dynamic> toJson() => {
     'label': label,
     if (expires != null) 'expires': expires!.subtract(const Duration(days: 1)).toIso8601String().substring(0, 10),

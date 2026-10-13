@@ -1400,9 +1400,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Šis kvietimo kodas jau naudojamas didžiausiame leistiname įrenginių skaičiuje.';
 
   @override
-  String previewFor(String name) {
-    return 'Konfidenciali peržiūra: $name';
-  }
+  String get previewConfidential => 'Konfidenciali peržiūra';
 
   @override
   String get errPreviewDailyLimit =>

@@ -379,6 +379,6 @@
   "inviteInvalid": "እዚ ኮድ ዕድመ ቅቡል ኣይኮነን።",
   "inviteExpired": "እዚ ዕድመ ግዜኡ ሓሊፉ። ካብቲ ዝዓደመኩም ሰብ ሓድሽ ኮድ ሕተቱ።",
   "inviteDeviceLimit": "እዚ ኮድ ዕድመ ድሮ ኣብቲ ዝለዓለ ዝፍቀድ ቁጽሪ መሳርሒታት ይጥቀመሉ ኣሎ።",
-  "previewFor": "ምስጢራዊ ቅድመ-ርእይቶ ን{name}",
+  "previewConfidential": "ምስጢራዊ ቅድመ-ርእይቶ",
   "errPreviewDailyLimit": "ናይ ሎሚ ደረት ትንተና ናይዚ ቅድመ-ርእይቶ ተበጺሑ። ጽባሕ እንደገና ፈትኑ።"
 }

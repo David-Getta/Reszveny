@@ -1365,9 +1365,7 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Gigamit na kining invite code sa pinakadaghang device nga gitugotan.';
 
   @override
-  String previewFor(String name) {
-    return 'Kumpidensyal nga preview para kang $name';
-  }
+  String get previewConfidential => 'Kumpidensyal nga preview';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1361,9 +1361,7 @@ class AppLocalizationsKi extends AppLocalizations {
       'Code ĩno ya ũiti nĩĩrahũthĩrwo mĩtambo-inĩ mĩingĩ makĩria ĩrĩa ĩtĩkĩrĩtio.';
 
   @override
-  String previewFor(String name) {
-    return 'Kuona kwa mbere kwa hitho kwa $name';
-  }
+  String get previewConfidential => 'Kuona kwa mbere kwa hitho';
 
   @override
   String get errPreviewDailyLimit =>

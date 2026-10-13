@@ -379,6 +379,6 @@
   "inviteInvalid": "Bu taklif kodi yaroqsiz.",
   "inviteExpired": "Bu taklifning muddati oʻtgan. Sizni taklif qilgan kishidan yangi kod soʻrang.",
   "inviteDeviceLimit": "Bu taklif kodi allaqachon ruxsat etilgan eng koʻp qurilmada ishlatilmoqda.",
-  "previewFor": "{name} uchun maxfiy oldindan koʻrish",
+  "previewConfidential": "Maxfiy oldindan koʻrish",
   "errPreviewDailyLimit": "Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring."
 }

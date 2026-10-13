@@ -1365,9 +1365,7 @@ class AppLocalizationsMs extends AppLocalizations {
       'Kod jemputan ini sudah digunakan pada bilangan peranti maksimum.';
 
   @override
-  String previewFor(String name) {
-    return 'Pratonton sulit untuk $name';
-  }
+  String get previewConfidential => 'Pratonton sulit';
 
   @override
   String get errPreviewDailyLimit =>

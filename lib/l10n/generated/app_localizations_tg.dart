@@ -1362,9 +1362,7 @@ class AppLocalizationsTg extends AppLocalizations {
       'Ин коди даъват аллакай дар шумораи ниҳоии иҷозатдодашудаи дастгоҳҳо истифода мешавад.';
 
   @override
-  String previewFor(String name) {
-    return 'Пешнамоиши махфӣ барои $name';
-  }
+  String get previewConfidential => 'Пешнамоиши махфӣ';
 
   @override
   String get errPreviewDailyLimit =>

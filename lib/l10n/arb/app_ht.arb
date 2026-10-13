@@ -379,6 +379,6 @@
   "inviteInvalid": "Kòd envitasyon sa a pa valab.",
   "inviteExpired": "Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.",
   "inviteDeviceLimit": "Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.",
-  "previewFor": "Apèsi konfidansyèl pou {name}",
+  "previewConfidential": "Apèsi konfidansyèl",
   "errPreviewDailyLimit": "Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen."
 }

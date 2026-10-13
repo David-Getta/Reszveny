@@ -379,6 +379,6 @@
   "inviteInvalid": "Denne invitationskode er ikke gyldig.",
   "inviteExpired": "Denne invitation er udløbet. Bed den person, der inviterede dig, om en ny kode.",
   "inviteDeviceLimit": "Denne invitationskode bruges allerede på det maksimale antal enheder.",
-  "previewFor": "Fortrolig forhåndsvisning til {name}",
+  "previewConfidential": "Fortrolig forhåndsvisning",
   "errPreviewDailyLimit": "Dagens analysegrænse for denne forhåndsvisning er nået. Prøv igen i morgen."
 }

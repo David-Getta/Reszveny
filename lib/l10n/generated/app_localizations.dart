@@ -2611,11 +2611,11 @@ abstract class AppLocalizations {
   /// **'This invite code is already in use on the maximum number of devices.'**
   String get inviteDeviceLimit;
 
-  /// Small watermark line at the bottom of every screen in an invite-only build, naming the invited person. {name} is a person's name, e.g. 'Gábor Schulz'. Keep it short.
+  /// Tiny watermark line at the bottom of every screen in an invite-only test build: this pre-release copy is confidential (not to be shared). Keep it short.
   ///
   /// In en, this message translates to:
-  /// **'Confidential preview for {name}'**
-  String previewFor(String name);
+  /// **'Confidential preview'**
+  String get previewConfidential;
 
   /// Error when the invite-only preview's daily number of AI analyses is used up.
   ///

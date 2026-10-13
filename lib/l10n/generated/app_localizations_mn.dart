@@ -1360,9 +1360,7 @@ class AppLocalizationsMn extends AppLocalizations {
       'Энэ урилгын код аль хэдийн зөвшөөрөгдөх дээд тооны төхөөрөмж дээр ашиглагдаж байна.';
 
   @override
-  String previewFor(String name) {
-    return '$name-д зориулсан нууц хувилбар';
-  }
+  String get previewConfidential => 'Нууц урьдчилсан хувилбар';
 
   @override
   String get errPreviewDailyLimit =>

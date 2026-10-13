@@ -1358,9 +1358,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'קוד ההזמנה הזה כבר נמצא בשימוש במספר המרבי של מכשירים.';
 
   @override
-  String previewFor(String name) {
-    return 'תצוגה מקדימה חסויה עבור $name';
-  }
+  String get previewConfidential => 'תצוגה מקדימה חסויה';
 
   @override
   String get errPreviewDailyLimit =>

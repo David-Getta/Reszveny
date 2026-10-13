@@ -379,6 +379,6 @@
   "inviteInvalid": "Ovaj kod pozivnice nije važeći.",
   "inviteExpired": "Ova pozivnica je istekla. Zatražite novi kod od osobe koja vas je pozvala.",
   "inviteDeviceLimit": "Ovaj kod pozivnice se već koristi na najvećem dozvoljenom broju uređaja.",
-  "previewFor": "Povjerljivi pregled za {name}",
+  "previewConfidential": "Povjerljivi pregled",
   "errPreviewDailyLimit": "Dostignuto je današnje ograničenje analiza za ovaj pregled. Pokušajte ponovo sutra."
 }

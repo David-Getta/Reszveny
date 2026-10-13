@@ -1304,9 +1304,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get inviteDeviceLimit => '此邀请码已在允许的最多设备上使用。';
 
   @override
-  String previewFor(String name) {
-    return '$name 专属保密预览';
-  }
+  String get previewConfidential => '保密预览';
 
   @override
   String get errPreviewDailyLimit => '此预览今日的分析次数已用完。请明天再试。';
@@ -2610,9 +2608,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get inviteDeviceLimit => '此邀請碼已在允許的最多裝置上使用。';
 
   @override
-  String previewFor(String name) {
-    return '$name 專屬機密預覽';
-  }
+  String get previewConfidential => '機密預覽';
 
   @override
   String get errPreviewDailyLimit => '此預覽今日的分析次數已用完。請明天再試。';

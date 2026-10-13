@@ -379,6 +379,6 @@
   "inviteInvalid": "Este código de convite não é válido.",
   "inviteExpired": "Este convite expirou. Peça um novo código à pessoa que lhe enviou o convite.",
   "inviteDeviceLimit": "Este código de convite já está em uso no número máximo de dispositivos.",
-  "previewFor": "Pré-visualização confidencial para {name}",
+  "previewConfidential": "Pré-visualização confidencial",
   "errPreviewDailyLimit": "O limite diário de análises desta pré-visualização foi atingido. Tente novamente amanhã."
 }

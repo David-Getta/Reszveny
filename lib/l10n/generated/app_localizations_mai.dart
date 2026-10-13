@@ -1355,9 +1355,7 @@ class AppLocalizationsMai extends AppLocalizations {
       'ई आमंत्रण कोड पहिनेसँ अधिकतम संख्यामे डिवाइस पर उपयोगमे अछि।';
 
   @override
-  String previewFor(String name) {
-    return '$name लेल गोपनीय पूर्वावलोकन';
-  }
+  String get previewConfidential => 'गोपनीय पूर्वावलोकन';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1379,9 +1379,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'رمز الدعوة هذا مستخدم بالفعل على الحد الأقصى من الأجهزة.';
 
   @override
-  String previewFor(String name) {
-    return 'معاينة سرية لـ $name';
-  }
+  String get previewConfidential => 'معاينة سرية';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1366,9 +1366,7 @@ class AppLocalizationsCa extends AppLocalizations {
       'Aquest codi d’invitació ja s’està fent servir en el nombre màxim de dispositius.';
 
   @override
-  String previewFor(String name) {
-    return 'Versió prèvia confidencial per a $name';
-  }
+  String get previewConfidential => 'Versió prèvia confidencial';
 
   @override
   String get errPreviewDailyLimit =>

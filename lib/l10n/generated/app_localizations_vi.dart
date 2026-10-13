@@ -1355,9 +1355,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Mã mời này đã được dùng trên số thiết bị tối đa cho phép.';
 
   @override
-  String previewFor(String name) {
-    return 'Bản xem trước bảo mật dành cho $name';
-  }
+  String get previewConfidential => 'Bản xem trước bảo mật';
 
   @override
   String get errPreviewDailyLimit =>

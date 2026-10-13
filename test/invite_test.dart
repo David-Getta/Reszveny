@@ -101,7 +101,7 @@ void main() {
     expect(ClaudeStockAnalyst.quotaErrorFor('{"error":"invite_daily_limit"}'), AppErrorCode.previewDailyLimit);
   });
 
-  testWidgets('closed preview: the invite screen opens the app, then a watermark names the invited person', (
+  testWidgets('closed preview: the invite screen opens the app, then a confidential-preview watermark shows', (
     tester,
   ) async {
     tester.view.physicalSize = const Size(390, 844);
@@ -126,6 +126,6 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Closed preview'), findsNothing);
     expect(find.text('Which stock shall we look at?'), findsOneWidget);
-    expect(find.text('Confidential preview for Schulz Gábor · 2026-11-30'), findsOneWidget);
+    expect(find.text('Confidential preview'), findsOneWidget);
   });
 }

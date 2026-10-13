@@ -1365,9 +1365,7 @@ class AppLocalizationsLn extends AppLocalizations {
       'Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.';
 
   @override
-  String previewFor(String name) {
-    return 'Botali ya sekele mpo na $name';
-  }
+  String get previewConfidential => 'Botali ya sekele';
 
   @override
   String get errPreviewDailyLimit =>

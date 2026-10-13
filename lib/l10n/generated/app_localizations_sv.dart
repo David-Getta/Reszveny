@@ -1361,9 +1361,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.';
 
   @override
-  String previewFor(String name) {
-    return 'Konfidentiell förhandsversion för $name';
-  }
+  String get previewConfidential => 'Konfidentiell förhandsversion';
 
   @override
   String get errPreviewDailyLimit =>

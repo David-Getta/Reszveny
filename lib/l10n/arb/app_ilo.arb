@@ -379,6 +379,6 @@
   "inviteInvalid": "Saan nga umiso daytoy a code ti imbitasion.",
   "inviteExpired": "Nag-expire daytoy nga imbitasion. Dumawat iti baro a code iti tao a nangimbitar kenka.",
   "inviteDeviceLimit": "Maus-usaren daytoy a code ti imbitasion iti kaaduan a bilang dagiti device a maipalubos.",
-  "previewFor": "Kompidensial a preview para ken {name}",
+  "previewConfidential": "Kompidensial a preview",
   "errPreviewDailyLimit": "Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat."
 }

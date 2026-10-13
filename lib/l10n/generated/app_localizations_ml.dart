@@ -1365,9 +1365,7 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഈ ക്ഷണ കോഡ് ഇതിനകം പരമാവധി എണ്ണം ഉപകരണങ്ങളിൽ ഉപയോഗത്തിലുണ്ട്.';
 
   @override
-  String previewFor(String name) {
-    return '$name-നുള്ള രഹസ്യ പ്രിവ്യൂ';
-  }
+  String get previewConfidential => 'രഹസ്യ പ്രിവ്യൂ';
 
   @override
   String get errPreviewDailyLimit =>

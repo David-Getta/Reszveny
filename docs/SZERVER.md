@@ -66,8 +66,8 @@ A HTTPS (lakat) mindhárom esetben megoldható; a Railway automatikusan adja.
 ## Zárt előzetes: csak meghívókóddal
 
 Ha az `INVITE_CODES` változó be van állítva, a szerver csak érvényes meghívókóddal enged be. Az
-app első indításkor elkéri a kódot, és minden képernyő alján vízjelként kiírja, kinek szól a
-példány. Egy kiszivárgott képernyőképről is látszik, kitől származik.
+app első indításkor elkéri a kódot, és minden képernyő alján „Bizalmas előzetes” felirat látszik.
+A név csak a te nyilvántartásodra szolgál (melyik kód kié), az appban nem jelenik meg.
 
 Formátum (vesszővel elválasztva, több meghívott is lehet):
 

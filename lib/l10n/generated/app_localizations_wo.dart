@@ -1358,9 +1358,7 @@ class AppLocalizationsWo extends AppLocalizations {
       'Koodu woote bii, ñu ngi koy jëfandikoo ba noppi ci limu masin yi gën a bare yi ñu may.';
 
   @override
-  String previewFor(String name) {
-    return 'Wone bu kumpa ngir $name';
-  }
+  String get previewConfidential => 'Wone bu kumpa';
 
   @override
   String get errPreviewDailyLimit =>

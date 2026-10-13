@@ -1364,9 +1364,7 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ko código jeguenoirã ojeporúma tembipuru papapy tuichavévape.';
 
   @override
-  String previewFor(String name) {
-    return 'Jehechauka ñemi ${name}peg̃uarã';
-  }
+  String get previewConfidential => 'Jehechauka ñemi';
 
   @override
   String get errPreviewDailyLimit =>

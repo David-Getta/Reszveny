@@ -379,6 +379,6 @@
   "inviteInvalid": "Mã mời này không hợp lệ.",
   "inviteExpired": "Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.",
   "inviteDeviceLimit": "Mã mời này đã được dùng trên số thiết bị tối đa cho phép.",
-  "previewFor": "Bản xem trước bảo mật dành cho {name}",
+  "previewConfidential": "Bản xem trước bảo mật",
   "errPreviewDailyLimit": "Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai."
 }

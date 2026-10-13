@@ -1316,9 +1316,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get inviteDeviceLimit => 'この招待コードは、すでに上限台数の端末で使用されています。';
 
   @override
-  String previewFor(String name) {
-    return '$name 様向け機密プレビュー';
-  }
+  String get previewConfidential => '機密プレビュー';
 
   @override
   String get errPreviewDailyLimit => 'このプレビューの本日の分析上限に達しました。明日もう一度お試しください。';

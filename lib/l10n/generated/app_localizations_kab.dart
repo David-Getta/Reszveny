@@ -1358,9 +1358,7 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.';
 
   @override
-  String previewFor(String name) {
-    return 'Taskant tuffirt i $name';
-  }
+  String get previewConfidential => 'Taskant tuffirt';
 
   @override
   String get errPreviewDailyLimit =>

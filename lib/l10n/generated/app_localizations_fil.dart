@@ -1365,9 +1365,7 @@ class AppLocalizationsFil extends AppLocalizations {
       'Ginagamit na ang invite code na ito sa pinakamaraming device na pinapayagan.';
 
   @override
-  String previewFor(String name) {
-    return 'Kumpidensyal na preview para kay $name';
-  }
+  String get previewConfidential => 'Kumpidensyal na preview';
 
   @override
   String get errPreviewDailyLimit =>

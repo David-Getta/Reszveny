@@ -864,15 +864,9 @@
   "@inviteDeviceLimit": {
     "description": "Error when the same invite code has been used on too many devices (it was probably shared further)."
   },
-  "previewFor": "Confidential preview for {name}",
-  "@previewFor": {
-    "description": "Small watermark line at the bottom of every screen in an invite-only build, naming the invited person. {name} is a person's name, e.g. 'Gábor Schulz'. Keep it short.",
-    "placeholders": {
-      "name": {
-        "type": "String",
-        "example": "Gábor Schulz"
-      }
-    }
+  "previewConfidential": "Confidential preview",
+  "@previewConfidential": {
+    "description": "Tiny watermark line at the bottom of every screen in an invite-only test build: this pre-release copy is confidential (not to be shared). Keep it short."
   },
   "errPreviewDailyLimit": "Today's analysis limit of this preview has been reached. Try again tomorrow.",
   "@errPreviewDailyLimit": {

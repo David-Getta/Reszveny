@@ -1363,9 +1363,7 @@ class AppLocalizationsAf extends AppLocalizations {
       'Hierdie uitnodigingskode word reeds op die maksimum aantal toestelle gebruik.';
 
   @override
-  String previewFor(String name) {
-    return 'Vertroulike voorskou vir $name';
-  }
+  String get previewConfidential => 'Vertroulike voorskou';
 
   @override
   String get errPreviewDailyLimit =>

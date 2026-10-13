@@ -379,6 +379,6 @@
   "inviteInvalid": "Code yayi ya mbokolo ka yena ya mbote ko.",
   "inviteExpired": "Ntangu ya mbokolo yayi isukidi. Lomba code ya mpa kwa muntu wakubokila.",
   "inviteDeviceLimit": "Code yayi ya mbokolo isadilwanga kala mu ntalu ya nene ya bisadulu.",
-  "previewFor": "Kutala kwa nsweki kwa {name}",
+  "previewConfidential": "Kutala kwa nsweki",
   "errPreviewDailyLimit": "Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi."
 }

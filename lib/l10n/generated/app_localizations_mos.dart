@@ -1349,9 +1349,7 @@ class AppLocalizationsMos extends AppLocalizations {
       'Boollg kod kãngã tʋmd masã ne masĩn-dãmb sõor sẽn yaa wʋsg n yɩɩda.';
 
   @override
-  String previewFor(String name) {
-    return 'Ges-taoor solgr – $name yĩnga';
-  }
+  String get previewConfidential => 'Ges-taoor solgr';
 
   @override
   String get errPreviewDailyLimit =>

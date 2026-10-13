@@ -379,6 +379,6 @@
   "inviteInvalid": "Šis ielūguma kods nav derīgs.",
   "inviteExpired": "Šī ielūguma derīguma termiņš ir beidzies. Palūdziet jaunu kodu personai, kas jūs uzaicināja.",
   "inviteDeviceLimit": "Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.",
-  "previewFor": "Konfidenciāls priekšskatījums: {name}",
+  "previewConfidential": "Konfidenciāls priekšskatījums",
   "errPreviewDailyLimit": "Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt."
 }

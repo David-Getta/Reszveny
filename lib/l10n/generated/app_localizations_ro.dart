@@ -1385,9 +1385,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Acest cod de invitație este deja folosit pe numărul maxim de dispozitive.';
 
   @override
-  String previewFor(String name) {
-    return 'Previzualizare confidențială pentru $name';
-  }
+  String get previewConfidential => 'Previzualizare confidențială';
 
   @override
   String get errPreviewDailyLimit =>

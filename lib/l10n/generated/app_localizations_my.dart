@@ -1360,9 +1360,7 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤဖိတ်ကြားကုဒ်ကို ခွင့်ပြုထားသော စက်အရေအတွက် အများဆုံးတွင် အသုံးပြုပြီးဖြစ်သည်။';
 
   @override
-  String previewFor(String name) {
-    return '$name အတွက် လျှို့ဝှက် အစမ်းကြည့်ရှုမှု';
-  }
+  String get previewConfidential => 'လျှို့ဝှက် အစမ်းကြည့်ရှုမှု';
 
   @override
   String get errPreviewDailyLimit =>

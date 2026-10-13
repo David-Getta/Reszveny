@@ -1364,9 +1364,7 @@ class AppLocalizationsLua extends AppLocalizations {
       'Code wa dibikila eu udi mutumika kale ku bungi bua bintu bia bungi menemene bidi bianyishibue.';
 
   @override
-  String previewFor(String name) {
-    return 'Ditangila dia musokoko bua $name';
-  }
+  String get previewConfidential => 'Ditangila dia musokoko';
 
   @override
   String get errPreviewDailyLimit =>

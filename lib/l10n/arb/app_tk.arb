@@ -379,6 +379,6 @@
   "inviteInvalid": "Bu çakylyk kody nädogry.",
   "inviteExpired": "Bu çakylygyň möhleti geçdi. Sizi çagyran adamdan täze kod soraň.",
   "inviteDeviceLimit": "Bu çakylyk kody eýýäm rugsat berlen iň köp enjamda ulanylýar.",
-  "previewFor": "{name} üçin gizlin deslapky wersiýa",
+  "previewConfidential": "Gizlin deslapky wersiýa",
   "errPreviewDailyLimit": "Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň."
 }

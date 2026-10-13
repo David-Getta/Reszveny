@@ -379,6 +379,6 @@
   "inviteInvalid": "Tento kód pozvánky nie je platný.",
   "inviteExpired": "Platnosť tejto pozvánky vypršala. Požiadajte osobu, ktorá vás pozvala, o nový kód.",
   "inviteDeviceLimit": "Tento kód pozvánky sa už používa na maximálnom počte zariadení.",
-  "previewFor": "Dôverná ukážka – {name}",
+  "previewConfidential": "Dôverná ukážka",
   "errPreviewDailyLimit": "Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra."
 }

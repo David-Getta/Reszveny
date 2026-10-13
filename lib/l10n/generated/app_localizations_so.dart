@@ -1365,9 +1365,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Koodhkan casuumadda waxaa hore loogu isticmaalay tirada ugu badan ee qalabka la oggol yahay.';
 
   @override
-  String previewFor(String name) {
-    return 'Muuqaal hore oo qarsoodi ah – $name';
-  }
+  String get previewConfidential => 'Muuqaal hore oo qarsoodi ah';
 
   @override
   String get errPreviewDailyLimit =>

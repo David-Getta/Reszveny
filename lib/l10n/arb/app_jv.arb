@@ -379,6 +379,6 @@
   "inviteInvalid": "Kode undangan iki ora valid.",
   "inviteExpired": "Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.",
   "inviteDeviceLimit": "Kode undangan iki wis dienggo ing jumlah piranti maksimal.",
-  "previewFor": "Pratinjau rahasia kanggo {name}",
+  "previewConfidential": "Pratinjau rahasia",
   "errPreviewDailyLimit": "Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk."
 }

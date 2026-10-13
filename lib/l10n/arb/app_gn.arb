@@ -379,6 +379,6 @@
   "inviteInvalid": "Ko código jeguenoirã ndoikói.",
   "inviteExpired": "Ko jeguenói ndoikovéima. Ejerure peteĩ código pyahu pe ndeguenoi vaʼekuépe.",
   "inviteDeviceLimit": "Ko código jeguenoirã ojeporúma tembipuru papapy tuichavévape.",
-  "previewFor": "Jehechauka ñemi {name}peg̃uarã",
+  "previewConfidential": "Jehechauka ñemi",
   "errPreviewDailyLimit": "Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ."
 }

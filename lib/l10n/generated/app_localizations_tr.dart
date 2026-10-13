@@ -1359,9 +1359,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Bu davet kodu zaten izin verilen en fazla sayıda cihazda kullanılıyor.';
 
   @override
-  String previewFor(String name) {
-    return '$name için gizli önizleme';
-  }
+  String get previewConfidential => 'Gizli önizleme';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1364,9 +1364,7 @@ class AppLocalizationsPt extends AppLocalizations {
       'Este código de convite já está em uso no número máximo de dispositivos.';
 
   @override
-  String previewFor(String name) {
-    return 'Pré-visualização confidencial para $name';
-  }
+  String get previewConfidential => 'Pré-visualização confidencial';
 
   @override
   String get errPreviewDailyLimit =>

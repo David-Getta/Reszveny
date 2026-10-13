@@ -379,6 +379,6 @@
   "inviteInvalid": "Kodhi yekukoka iyi haina kururama.",
   "inviteExpired": "Kukoka uku kwapera nguva. Kumbira munhu akakukoka kodhi itsva.",
   "inviteDeviceLimit": "Kodhi yekukoka iyi yatoshandiswa pamidziyo yakawanda sezvinobvumirwa.",
-  "previewFor": "Shanduro yakavanzika ya{name}",
+  "previewConfidential": "Shanduro yakavanzika",
   "errPreviewDailyLimit": "Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana."
 }

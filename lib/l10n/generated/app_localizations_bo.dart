@@ -1357,9 +1357,7 @@ class AppLocalizationsBo extends AppLocalizations {
       'མགྲོན་འབོད་ཨང་འདི་སྒྲིག་ཆས་གྲངས་ཚད་མཐོ་ཤོས་སྟེང་བེད་སྤྱོད་བྱས་ཟིན།';
 
   @override
-  String previewFor(String name) {
-    return '$name ཆེད་ཀྱི་གསང་བའི་སྔོན་ལྟ།';
-  }
+  String get previewConfidential => 'གསང་བའི་སྔོན་ལྟ།';
 
   @override
   String get errPreviewDailyLimit =>

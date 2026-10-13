@@ -1369,9 +1369,7 @@ class AppLocalizationsHil extends AppLocalizations {
       'Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.';
 
   @override
-  String previewFor(String name) {
-    return 'Kumpidensyal nga preview para kay $name';
-  }
+  String get previewConfidential => 'Kumpidensyal nga preview';
 
   @override
   String get errPreviewDailyLimit =>

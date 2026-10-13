@@ -1359,9 +1359,7 @@ class AppLocalizationsUr extends AppLocalizations {
       'یہ دعوتی کوڈ پہلے ہی زیادہ سے زیادہ اجازت شدہ آلات پر استعمال ہو رہا ہے۔';
 
   @override
-  String previewFor(String name) {
-    return '$name کے لیے خفیہ پیش نظارہ';
-  }
+  String get previewConfidential => 'خفیہ پیش نظارہ';
 
   @override
   String get errPreviewDailyLimit =>

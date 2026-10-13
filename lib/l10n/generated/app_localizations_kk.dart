@@ -1361,9 +1361,7 @@ class AppLocalizationsKk extends AppLocalizations {
       'Бұл шақыру коды қазірдің өзінде рұқсат етілген ең көп құрылғыда пайдаланылуда.';
 
   @override
-  String previewFor(String name) {
-    return 'Құпия алдын ала қарау: $name';
-  }
+  String get previewConfidential => 'Құпия алдын ала қарау';
 
   @override
   String get errPreviewDailyLimit =>

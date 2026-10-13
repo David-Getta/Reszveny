@@ -379,6 +379,6 @@
   "inviteInvalid": "Khoutu ye ya taletšo ga e šome.",
   "inviteExpired": "Taletšo ye e fedile. Kgopela motho yo a go laleditšego khoutu ye mpsha.",
   "inviteDeviceLimit": "Khoutu ye ya taletšo e šetše e šomišwa go palo ye kgolo kudu ya didirišwa.",
-  "previewFor": "Ponelopele ya sephiri ya {name}",
+  "previewConfidential": "Ponelopele ya sephiri",
   "errPreviewDailyLimit": "Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa."
 }

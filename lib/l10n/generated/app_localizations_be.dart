@@ -1398,9 +1398,7 @@ class AppLocalizationsBe extends AppLocalizations {
       'Гэты код запрашэння ўжо выкарыстоўваецца на максімальнай колькасці прылад.';
 
   @override
-  String previewFor(String name) {
-    return 'Канфідэнцыйны прагляд для $name';
-  }
+  String get previewConfidential => 'Канфідэнцыйны прагляд';
 
   @override
   String get errPreviewDailyLimit =>

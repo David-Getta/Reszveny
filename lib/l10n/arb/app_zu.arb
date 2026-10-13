@@ -379,6 +379,6 @@
   "inviteInvalid": "Le khodi yesimemo ayivumelekile.",
   "inviteExpired": "Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.",
   "inviteDeviceLimit": "Le khodi yesimemo isivele isetshenziswa enanini eliphezulu lamadivayisi elivunyelwe.",
-  "previewFor": "Ukubuka kuqala okuyimfihlo kuka-{name}",
+  "previewConfidential": "Ukubuka kuqala okuyimfihlo",
   "errPreviewDailyLimit": "Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa."
 }

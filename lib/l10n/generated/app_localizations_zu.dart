@@ -1367,9 +1367,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Le khodi yesimemo isivele isetshenziswa enanini eliphezulu lamadivayisi elivunyelwe.';
 
   @override
-  String previewFor(String name) {
-    return 'Ukubuka kuqala okuyimfihlo kuka-$name';
-  }
+  String get previewConfidential => 'Ukubuka kuqala okuyimfihlo';
 
   @override
   String get errPreviewDailyLimit =>

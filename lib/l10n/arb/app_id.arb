@@ -379,6 +379,6 @@
   "inviteInvalid": "Kode undangan ini tidak valid.",
   "inviteExpired": "Undangan ini sudah kedaluwarsa. Mintalah kode baru kepada orang yang mengundang Anda.",
   "inviteDeviceLimit": "Kode undangan ini sudah digunakan di jumlah perangkat maksimum.",
-  "previewFor": "Pratinjau rahasia untuk {name}",
+  "previewConfidential": "Pratinjau rahasia",
   "errPreviewDailyLimit": "Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok."
 }

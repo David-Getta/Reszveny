@@ -379,6 +379,6 @@
   "inviteInvalid": "Ev koda vexwendinê ne derbasdar e.",
   "inviteExpired": "Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.",
   "inviteDeviceLimit": "Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.",
-  "previewFor": "Pêşdîtina nepenî ji bo {name}",
+  "previewConfidential": "Pêşdîtina nepenî",
   "errPreviewDailyLimit": "Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne."
 }

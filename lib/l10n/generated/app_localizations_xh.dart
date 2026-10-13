@@ -1366,9 +1366,7 @@ class AppLocalizationsXh extends AppLocalizations {
       'Le khowudi yesimemo sele isetyenziswa kwinani eliphezulu lezixhobo elivumelekileyo.';
 
   @override
-  String previewFor(String name) {
-    return 'Umboniso oyimfihlo ka-$name';
-  }
+  String get previewConfidential => 'Umboniso oyimfihlo';
 
   @override
   String get errPreviewDailyLimit =>

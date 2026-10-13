@@ -1360,9 +1360,7 @@ class AppLocalizationsAs extends AppLocalizations {
       'এই আমন্ত্ৰণ ক\'ডটো ইতিমধ্যে সৰ্বাধিক সংখ্যক ডিভাইচত ব্যৱহাৰ হৈ আছে।';
 
   @override
-  String previewFor(String name) {
-    return '$nameৰ বাবে গোপন প্ৰিভিউ';
-  }
+  String get previewConfidential => 'গোপন প্ৰিভিউ';
 
   @override
   String get errPreviewDailyLimit =>

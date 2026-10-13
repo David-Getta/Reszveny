@@ -379,6 +379,6 @@
   "inviteInvalid": "Nsafrɛ code yi nteɛ.",
   "inviteExpired": "Nsafrɛ yi bere atwam. Bisa onipa a ɔfrɛɛ wo no ma ɔmma wo code foforo.",
   "inviteDeviceLimit": "Wɔde nsafrɛ code yi di dwuma wɔ mfiri dodoɔ a ɛsɛ so dedaw.",
-  "previewFor": "Nhwɛkan a ɛyɛ kokoam ma {name}",
+  "previewConfidential": "Nhwɛkan a ɛyɛ kokoam",
   "errPreviewDailyLimit": "Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena."
 }

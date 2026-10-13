@@ -379,6 +379,6 @@
   "inviteInvalid": "Šis kvietimo kodas negalioja.",
   "inviteExpired": "Šio kvietimo galiojimas baigėsi. Paprašykite naujo kodo asmens, kuris jus pakvietė.",
   "inviteDeviceLimit": "Šis kvietimo kodas jau naudojamas didžiausiame leistiname įrenginių skaičiuje.",
-  "previewFor": "Konfidenciali peržiūra: {name}",
+  "previewConfidential": "Konfidenciali peržiūra",
   "errPreviewDailyLimit": "Šios peržiūros šiandienos analizių limitas išnaudotas. Bandykite dar kartą rytoj."
 }

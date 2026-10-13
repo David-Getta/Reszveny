@@ -1361,9 +1361,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Този код за покана вече се използва на максималния брой устройства.';
 
   @override
-  String previewFor(String name) {
-    return 'Поверителна версия за $name';
-  }
+  String get previewConfidential => 'Поверителна версия';
 
   @override
   String get errPreviewDailyLimit =>

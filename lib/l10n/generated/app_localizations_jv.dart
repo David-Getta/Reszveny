@@ -1361,9 +1361,7 @@ class AppLocalizationsJv extends AppLocalizations {
       'Kode undangan iki wis dienggo ing jumlah piranti maksimal.';
 
   @override
-  String previewFor(String name) {
-    return 'Pratinjau rahasia kanggo $name';
-  }
+  String get previewConfidential => 'Pratinjau rahasia';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1361,9 +1361,7 @@ class AppLocalizationsNe extends AppLocalizations {
       'यो निमन्त्रणा कोड पहिले नै अधिकतम सङ्ख्याका उपकरणहरूमा प्रयोगमा छ।';
 
   @override
-  String previewFor(String name) {
-    return '$name का लागि गोप्य पूर्वावलोकन';
-  }
+  String get previewConfidential => 'गोप्य पूर्वावलोकन';
 
   @override
   String get errPreviewDailyLimit =>

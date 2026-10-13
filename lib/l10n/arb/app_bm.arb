@@ -379,6 +379,6 @@
   "inviteInvalid": "Nin weleli kode in ma ɲɛ.",
   "inviteExpired": "Nin weleli in waati tɛmɛna. Mɔgɔ min ye i wele, kode kura ɲini o fɛ.",
   "inviteDeviceLimit": "Nin weleli kode in bɛ ka baara kɛ minɛn hakɛ laban kan kaban.",
-  "previewFor": "Kɔrɔbɔli gundolen {name} ye",
+  "previewConfidential": "Kɔrɔbɔli gundolen",
   "errPreviewDailyLimit": "Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini."
 }

@@ -1362,9 +1362,7 @@ class AppLocalizationsBn extends AppLocalizations {
       'এই আমন্ত্রণ কোডটি ইতিমধ্যে সর্বোচ্চ সংখ্যক ডিভাইসে ব্যবহৃত হচ্ছে।';
 
   @override
-  String previewFor(String name) {
-    return '$name-এর জন্য গোপনীয় প্রিভিউ';
-  }
+  String get previewConfidential => 'গোপনীয় প্রিভিউ';
 
   @override
   String get errPreviewDailyLimit =>

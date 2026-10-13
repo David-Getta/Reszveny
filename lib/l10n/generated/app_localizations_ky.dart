@@ -1362,9 +1362,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул чакыруу коду уруксат берилген эң көп түзмөктө колдонулуп жатат.';
 
   @override
-  String previewFor(String name) {
-    return 'Купуя алдын ала көрүү: $name';
-  }
+  String get previewConfidential => 'Купуя алдын ала көрүү';
 
   @override
   String get errPreviewDailyLimit =>

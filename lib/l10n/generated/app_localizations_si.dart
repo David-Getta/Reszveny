@@ -1360,9 +1360,7 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම ආරාධනා කේතය දැනටමත් උපරිම උපාංග ගණනක භාවිත වේ.';
 
   @override
-  String previewFor(String name) {
-    return '$name සඳහා රහසිගත පෙරදසුන';
-  }
+  String get previewConfidential => 'රහසිගත පෙරදසුන';
 
   @override
   String get errPreviewDailyLimit =>

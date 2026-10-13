@@ -1369,9 +1369,7 @@ class AppLocalizationsNso extends AppLocalizations {
       'Khoutu ye ya taletšo e šetše e šomišwa go palo ye kgolo kudu ya didirišwa.';
 
   @override
-  String previewFor(String name) {
-    return 'Ponelopele ya sephiri ya $name';
-  }
+  String get previewConfidential => 'Ponelopele ya sephiri';
 
   @override
   String get errPreviewDailyLimit =>

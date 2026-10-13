@@ -379,6 +379,6 @@
   "inviteInvalid": "Tsy manan-kery io kaody fanasana io.",
   "inviteExpired": "Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.",
   "inviteDeviceLimit": "Efa ampiasaina amin'ny isan'ny fitaovana farafahabetsany io kaody fanasana io.",
-  "previewFor": "Fijery mialoha tsiambaratelo ho an'i {name}",
+  "previewConfidential": "Fijery mialoha tsiambaratelo",
   "errPreviewDailyLimit": "Tratra ny fetran'ny fanadihadiana androany amin'ity fijery mialoha ity. Andramo indray rahampitso."
 }

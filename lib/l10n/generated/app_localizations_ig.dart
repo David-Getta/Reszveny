@@ -1358,9 +1358,7 @@ class AppLocalizationsIg extends AppLocalizations {
       'A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.';
 
   @override
-  String previewFor(String name) {
-    return 'Nlele mbụ nzuzo maka $name';
-  }
+  String get previewConfidential => 'Nlele mbụ nzuzo';
 
   @override
   String get errPreviewDailyLimit =>

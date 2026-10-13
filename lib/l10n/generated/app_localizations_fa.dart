@@ -1358,9 +1358,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'این کد دعوت هم‌اکنون روی حداکثر تعداد مجاز دستگاه‌ها استفاده می‌شود.';
 
   @override
-  String previewFor(String name) {
-    return 'پیش‌نمایش محرمانه برای $name';
-  }
+  String get previewConfidential => 'پیش‌نمایش محرمانه';
 
   @override
   String get errPreviewDailyLimit =>

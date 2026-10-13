@@ -379,6 +379,6 @@
   "inviteInvalid": "此邀請碼無效。",
   "inviteExpired": "此邀請已過期。請向邀請你的人索取新的邀請碼。",
   "inviteDeviceLimit": "此邀請碼已在允許的最多裝置上使用。",
-  "previewFor": "{name} 專屬機密預覽",
+  "previewConfidential": "機密預覽",
   "errPreviewDailyLimit": "此預覽今日的分析次數已用完。請明天再試。"
 }

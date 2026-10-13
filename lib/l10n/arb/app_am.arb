@@ -379,6 +379,6 @@
   "inviteInvalid": "ይህ የግብዣ ኮድ ልክ አይደለም።",
   "inviteExpired": "ይህ ግብዣ ጊዜው አልፎበታል። የጋበዘዎትን ሰው አዲስ ኮድ ይጠይቁ።",
   "inviteDeviceLimit": "ይህ የግብዣ ኮድ በሚፈቀደው ከፍተኛ የመሣሪያዎች ብዛት ላይ አስቀድሞ ጥቅም ላይ እየዋለ ነው።",
-  "previewFor": "ሚስጥራዊ ቅድመ እይታ ለ{name}",
+  "previewConfidential": "ሚስጥራዊ ቅድመ እይታ",
   "errPreviewDailyLimit": "የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።"
 }

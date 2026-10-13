@@ -1367,9 +1367,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'Ce code d’invitation est déjà utilisé sur le nombre maximal d’appareils.';
 
   @override
-  String previewFor(String name) {
-    return 'Préversion confidentielle pour $name';
-  }
+  String get previewConfidential => 'Préversion confidentielle';
 
   @override
   String get errPreviewDailyLimit =>

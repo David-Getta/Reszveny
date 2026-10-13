@@ -379,6 +379,6 @@
   "inviteInvalid": "Kod noddaangal ngal moƴƴaani.",
   "inviteExpired": "Noddaangal ngal buntii. Ɗaɓɓit kod kesum to neɗɗo noddiiɗo ma.",
   "inviteDeviceLimit": "Kod noddaangal ngal no huutoraa e limoore kaɓirɗe ɓurnde ndee.",
-  "previewFor": "Ƴeewndo suuɗiingo ngam {name}",
+  "previewConfidential": "Ƴeewndo suuɗiingo",
   "errPreviewDailyLimit": "Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo."
 }

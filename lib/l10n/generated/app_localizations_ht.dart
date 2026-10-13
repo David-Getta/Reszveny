@@ -1359,9 +1359,7 @@ class AppLocalizationsHt extends AppLocalizations {
       'Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.';
 
   @override
-  String previewFor(String name) {
-    return 'Apèsi konfidansyèl pou $name';
-  }
+  String get previewConfidential => 'Apèsi konfidansyèl';
 
   @override
   String get errPreviewDailyLimit =>

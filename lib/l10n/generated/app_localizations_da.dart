@@ -1359,9 +1359,7 @@ class AppLocalizationsDa extends AppLocalizations {
       'Denne invitationskode bruges allerede på det maksimale antal enheder.';
 
   @override
-  String previewFor(String name) {
-    return 'Fortrolig forhåndsvisning til $name';
-  }
+  String get previewConfidential => 'Fortrolig forhåndsvisning';
 
   @override
   String get errPreviewDailyLimit =>

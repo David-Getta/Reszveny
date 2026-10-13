@@ -1362,9 +1362,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'Questo codice di invito è già in uso sul numero massimo di dispositivi.';
 
   @override
-  String previewFor(String name) {
-    return 'Anteprima riservata per $name';
-  }
+  String get previewConfidential => 'Anteprima riservata';
 
   @override
   String get errPreviewDailyLimit =>

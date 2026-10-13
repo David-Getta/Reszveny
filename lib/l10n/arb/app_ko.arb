@@ -379,6 +379,6 @@
   "inviteInvalid": "유효하지 않은 초대 코드입니다.",
   "inviteExpired": "초대가 만료되었습니다. 초대한 분에게 새 코드를 요청하세요.",
   "inviteDeviceLimit": "이 초대 코드는 이미 최대 기기 수에서 사용 중입니다.",
-  "previewFor": "{name} 님 전용 비공개 미리보기",
+  "previewConfidential": "기밀 미리보기",
   "errPreviewDailyLimit": "이 미리보기의 오늘 분석 한도에 도달했습니다. 내일 다시 시도하세요."
 }

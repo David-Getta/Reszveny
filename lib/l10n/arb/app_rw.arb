@@ -379,6 +379,6 @@
   "inviteInvalid": "Iyi kode y'ubutumire ntiyemewe.",
   "inviteExpired": "Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.",
   "inviteDeviceLimit": "Iyi kode y'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w'ibikoresho.",
-  "previewFor": "Igerageza ry'ibanga rya {name}",
+  "previewConfidential": "Igerageza ry'ibanga",
   "errPreviewDailyLimit": "Umubare ntarengwa w'isesengura ry'uyu munsi kuri iri gerageza wagezweho. Ongera ugerageze ejo."
 }

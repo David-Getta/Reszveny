@@ -1361,9 +1361,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       'ئەم کۆدی بانگهێشتە پێشتر لەسەر زۆرترین ژمارەی ڕێپێدراوی ئامێر بەکاردێت.';
 
   @override
-  String previewFor(String name) {
-    return 'پێشبینینی نهێنی بۆ $name';
-  }
+  String get previewConfidential => 'پێشبینینی نهێنی';
 
   @override
   String get errPreviewDailyLimit =>

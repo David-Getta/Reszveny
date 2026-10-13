@@ -1360,9 +1360,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.';
 
   @override
-  String previewFor(String name) {
-    return 'Onyesho la awali la siri kwa $name';
-  }
+  String get previewConfidential => 'Onyesho la awali la siri';
 
   @override
   String get errPreviewDailyLimit =>

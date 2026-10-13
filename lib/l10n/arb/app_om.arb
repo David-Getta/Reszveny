@@ -379,6 +379,6 @@
   "inviteInvalid": "Koodiin affeerraa kun sirrii miti.",
   "inviteExpired": "Affeerraan kun yeroon isaa darbeera. Nama si affeere koodii haaraa gaafadhu.",
   "inviteDeviceLimit": "Koodiin affeerraa kun duraanuu meeshaalee lakkoofsa olaanaa hayyamameerratti fayyadamaa jira.",
-  "previewFor": "Duraan-argii icciitii: {name}",
+  "previewConfidential": "Duraan-argii icciitii",
   "errPreviewDailyLimit": "Daangaan xiinxala har'aa duraan-argii kanaa ga'eera. Boru irra deebi'ii yaali."
 }

@@ -1364,9 +1364,7 @@ class AppLocalizationsOm extends AppLocalizations {
       'Koodiin affeerraa kun duraanuu meeshaalee lakkoofsa olaanaa hayyamameerratti fayyadamaa jira.';
 
   @override
-  String previewFor(String name) {
-    return 'Duraan-argii icciitii: $name';
-  }
+  String get previewConfidential => 'Duraan-argii icciitii';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1360,9 +1360,7 @@ class AppLocalizationsTk extends AppLocalizations {
       'Bu çakylyk kody eýýäm rugsat berlen iň köp enjamda ulanylýar.';
 
   @override
-  String previewFor(String name) {
-    return '$name üçin gizlin deslapky wersiýa';
-  }
+  String get previewConfidential => 'Gizlin deslapky wersiýa';
 
   @override
   String get errPreviewDailyLimit =>

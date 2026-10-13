@@ -379,6 +379,6 @@
   "inviteInvalid": "Khoutu ena ya memo ha e nepahale.",
   "inviteExpired": "Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.",
   "inviteDeviceLimit": "Khoutu ena ya memo e se e sebediswa palong e phahameng ka ho fetisisa ya disebediswa tse dumelletsweng.",
-  "previewFor": "Ponelopele ya lekunutu ya {name}",
+  "previewConfidential": "Ponelopele ya lekunutu",
   "errPreviewDailyLimit": "Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane."
 }

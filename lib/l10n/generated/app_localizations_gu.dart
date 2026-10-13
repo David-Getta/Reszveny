@@ -1357,9 +1357,7 @@ class AppLocalizationsGu extends AppLocalizations {
       'આ આમંત્રણ કોડ પહેલેથી જ મહત્તમ સંખ્યાના ઉપકરણો પર વપરાઈ રહ્યો છે.';
 
   @override
-  String previewFor(String name) {
-    return '$name માટે ગોપનીય પ્રિવ્યૂ';
-  }
+  String get previewConfidential => 'ગોપનીય પ્રિવ્યૂ';
 
   @override
   String get errPreviewDailyLimit =>

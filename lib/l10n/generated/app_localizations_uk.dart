@@ -1398,9 +1398,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'Цей код запрошення вже використовується на максимальній кількості пристроїв.';
 
   @override
-  String previewFor(String name) {
-    return 'Конфіденційний перегляд для $name';
-  }
+  String get previewConfidential => 'Конфіденційний перегляд';
 
   @override
   String get errPreviewDailyLimit =>

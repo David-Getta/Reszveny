@@ -1364,9 +1364,7 @@ class AppLocalizationsUg extends AppLocalizations {
       'بۇ تەكلىپ كودى ئاللىبۇرۇن رۇخسەت قىلىنغان ئەڭ كۆپ ئۈسكۈنىدە ئىشلىتىلىۋاتىدۇ.';
 
   @override
-  String previewFor(String name) {
-    return '$name ئۈچۈن مەخپىي ئالدىن كۆرۈش';
-  }
+  String get previewConfidential => 'مەخپىي ئالدىن كۆرۈش';
 
   @override
   String get errPreviewDailyLimit =>

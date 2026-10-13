@@ -1365,9 +1365,7 @@ class AppLocalizationsRn extends AppLocalizations {
       'Iyi kode y\'ubutumire isanzwe ikoreshwa ku gitigiri ntarengwa c\'ibikoresho.';
 
   @override
-  String previewFor(String name) {
-    return 'Igerageza ry\'ibanga rya $name';
-  }
+  String get previewConfidential => 'Igerageza ry\'ibanga';
 
   @override
   String get errPreviewDailyLimit =>

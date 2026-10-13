@@ -1365,9 +1365,7 @@ class AppLocalizationsHa extends AppLocalizations {
       'An riga an yi amfani da wannan lambar gayyata a iyakar adadin na\'urori da aka yarda.';
 
   @override
-  String previewFor(String name) {
-    return 'Duban farko na sirri don $name';
-  }
+  String get previewConfidential => 'Duban farko na sirri';
 
   @override
   String get errPreviewDailyLimit =>

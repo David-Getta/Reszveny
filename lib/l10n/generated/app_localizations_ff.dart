@@ -1357,9 +1357,7 @@ class AppLocalizationsFf extends AppLocalizations {
       'Kod noddaangal ngal no huutoraa e limoore kaɓirɗe ɓurnde ndee.';
 
   @override
-  String previewFor(String name) {
-    return 'Ƴeewndo suuɗiingo ngam $name';
-  }
+  String get previewConfidential => 'Ƴeewndo suuɗiingo';
 
   @override
   String get errPreviewDailyLimit =>

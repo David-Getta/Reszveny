@@ -1371,9 +1371,7 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Maus-usaren daytoy a code ti imbitasion iti kaaduan a bilang dagiti device a maipalubos.';
 
   @override
-  String previewFor(String name) {
-    return 'Kompidensial a preview para ken $name';
-  }
+  String get previewConfidential => 'Kompidensial a preview';
 
   @override
   String get errPreviewDailyLimit =>

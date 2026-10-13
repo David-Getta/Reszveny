@@ -379,6 +379,6 @@
   "inviteInvalid": "Code ĩno ya ũiti ti ya ma.",
   "inviteExpired": "Ihinda rĩa ũiti ũyũ nĩrĩthirĩte. Hooya code njerũ kuuma kũrĩ mũndũ ũrĩa wagwĩtire.",
   "inviteDeviceLimit": "Code ĩno ya ũiti nĩĩrahũthĩrwo mĩtambo-inĩ mĩingĩ makĩria ĩrĩa ĩtĩkĩrĩtio.",
-  "previewFor": "Kuona kwa mbere kwa hitho kwa {name}",
+  "previewConfidential": "Kuona kwa mbere kwa hitho",
   "errPreviewDailyLimit": "Mũhaka wa mathuthuria ma ũmũthĩ wa kuona kũũ kwa mbere nĩũkinyĩtio. Geria rĩngĩ rũciũ."
 }

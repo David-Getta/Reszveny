@@ -379,6 +379,6 @@
   "inviteInvalid": "Den här inbjudningskoden är inte giltig.",
   "inviteExpired": "Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.",
   "inviteDeviceLimit": "Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.",
-  "previewFor": "Konfidentiell förhandsversion för {name}",
+  "previewConfidential": "Konfidentiell förhandsversion",
   "errPreviewDailyLimit": "Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon."
 }

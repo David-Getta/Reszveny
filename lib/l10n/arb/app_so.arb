@@ -379,6 +379,6 @@
   "inviteInvalid": "Koodhkan casuumaddu ma ansax aha.",
   "inviteExpired": "Casuumaddani way dhacday. Weydii qofkii ku casuumay koodh cusub.",
   "inviteDeviceLimit": "Koodhkan casuumadda waxaa hore loogu isticmaalay tirada ugu badan ee qalabka la oggol yahay.",
-  "previewFor": "Muuqaal hore oo qarsoodi ah – {name}",
+  "previewConfidential": "Muuqaal hore oo qarsoodi ah",
   "errPreviewDailyLimit": "Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri."
 }

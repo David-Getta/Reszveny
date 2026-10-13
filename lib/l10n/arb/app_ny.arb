@@ -379,6 +379,6 @@
   "inviteInvalid": "Khodi yoitanira iyi si yovomerezeka.",
   "inviteExpired": "Kuitanidwa kumeneku kwatha nthawi. Pemphani khodi yatsopano kwa munthu amene anakuitanani.",
   "inviteDeviceLimit": "Khodi yoitanira iyi ikugwiritsidwa ntchito kale pa zipangizo zochuluka kwambiri zololedwa.",
-  "previewFor": "Kuwoneratu kwachinsinsi kwa {name}",
+  "previewConfidential": "Kuwoneratu kwachinsinsi",
   "errPreviewDailyLimit": "Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa."
 }

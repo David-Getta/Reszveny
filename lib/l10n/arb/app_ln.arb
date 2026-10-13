@@ -379,6 +379,6 @@
   "inviteInvalid": "Code oyo ya libyangi ezali malamu te.",
   "inviteExpired": "Libyangi oyo eleki ntango. Senga code ya sika epai ya moto oyo abyangaki yo.",
   "inviteDeviceLimit": "Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.",
-  "previewFor": "Botali ya sekele mpo na {name}",
+  "previewConfidential": "Botali ya sekele",
   "errPreviewDailyLimit": "Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi."
 }

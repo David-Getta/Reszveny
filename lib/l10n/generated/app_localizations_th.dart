@@ -1346,9 +1346,7 @@ class AppLocalizationsTh extends AppLocalizations {
       'รหัสเชิญนี้ถูกใช้งานบนอุปกรณ์ครบจำนวนสูงสุดแล้ว';
 
   @override
-  String previewFor(String name) {
-    return 'พรีวิวลับสำหรับ $name';
-  }
+  String get previewConfidential => 'พรีวิวลับ';
 
   @override
   String get errPreviewDailyLimit =>

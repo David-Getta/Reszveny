@@ -1371,9 +1371,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Efa ampiasaina amin\'ny isan\'ny fitaovana farafahabetsany io kaody fanasana io.';
 
   @override
-  String previewFor(String name) {
-    return 'Fijery mialoha tsiambaratelo ho an\'i $name';
-  }
+  String get previewConfidential => 'Fijery mialoha tsiambaratelo';
 
   @override
   String get errPreviewDailyLimit =>

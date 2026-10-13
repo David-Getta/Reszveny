@@ -1366,9 +1366,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.';
 
   @override
-  String previewFor(String name) {
-    return 'Pamje paraprake konfidenciale për $name';
-  }
+  String get previewConfidential => 'Pamje paraprake konfidenciale';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1366,9 +1366,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Αυτός ο κωδικός πρόσκλησης χρησιμοποιείται ήδη στον μέγιστο αριθμό συσκευών.';
 
   @override
-  String previewFor(String name) {
-    return 'Εμπιστευτική προεπισκόπηση για $name';
-  }
+  String get previewConfidential => 'Εμπιστευτική προεπισκόπηση';
 
   @override
   String get errPreviewDailyLimit =>

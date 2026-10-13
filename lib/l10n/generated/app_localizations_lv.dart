@@ -1391,9 +1391,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.';
 
   @override
-  String previewFor(String name) {
-    return 'Konfidenciāls priekšskatījums: $name';
-  }
+  String get previewConfidential => 'Konfidenciāls priekšskatījums';
 
   @override
   String get errPreviewDailyLimit =>

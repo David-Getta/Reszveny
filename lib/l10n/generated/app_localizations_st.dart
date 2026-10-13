@@ -1368,9 +1368,7 @@ class AppLocalizationsSt extends AppLocalizations {
       'Khoutu ena ya memo e se e sebediswa palong e phahameng ka ho fetisisa ya disebediswa tse dumelletsweng.';
 
   @override
-  String previewFor(String name) {
-    return 'Ponelopele ya lekunutu ya $name';
-  }
+  String get previewConfidential => 'Ponelopele ya lekunutu';
 
   @override
   String get errPreviewDailyLimit =>

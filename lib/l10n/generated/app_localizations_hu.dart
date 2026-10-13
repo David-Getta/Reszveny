@@ -1366,9 +1366,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ezt a meghívókódot már a megengedett számú eszközön használják.';
 
   @override
-  String previewFor(String name) {
-    return 'Bizalmas előzetes – $name részére';
-  }
+  String get previewConfidential => 'Bizalmas előzetes';
 
   @override
   String get errPreviewDailyLimit =>

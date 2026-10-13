@@ -379,6 +379,6 @@
   "inviteInvalid": "Kóòdù ìpè yìí kò tọ̀nà.",
   "inviteExpired": "Ìpè yìí ti parí. Béèrè kóòdù tuntun lọ́wọ́ ẹni tó pè ọ́.",
   "inviteDeviceLimit": "A ti ń lo kóòdù ìpè yìí lórí iye ẹ̀rọ tó pọ̀ jùlọ tí a gbà láàyè.",
-  "previewFor": "Ìfihàn àṣírí fún {name}",
+  "previewConfidential": "Ìfihàn àṣírí",
   "errPreviewDailyLimit": "Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la."
 }

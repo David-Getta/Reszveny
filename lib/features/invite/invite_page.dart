@@ -119,20 +119,15 @@ class _InvitePageState extends State<InvitePage> {
   }
 }
 
-/// Vízjel minden képernyő alján: kinek szól ez az előzetes példány. Egy
-/// kiszivárgott képernyőképről is kiderül, kitől származik.
+/// Vízjel minden képernyő alján zárt előzetesben: „Bizalmas előzetes”, hogy a
+/// képernyőképeken is látszódjon, ez még nem nyilvános változat.
 class PreviewWatermark extends StatelessWidget {
-  const PreviewWatermark({super.key, required this.invite});
-
-  final InviteInfo invite;
+  const PreviewWatermark({super.key});
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
-    final text = invite.expires == null
-        ? l10n.previewFor(invite.label)
-        : '${l10n.previewFor(invite.label)} · ${invite.expires}';
     return Material(
       color: p.sidebar,
       child: SafeArea(
@@ -145,7 +140,7 @@ class PreviewWatermark extends StatelessWidget {
             border: Border(top: BorderSide(color: p.border)),
           ),
           child: Text(
-            text,
+            l10n.previewConfidential,
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,

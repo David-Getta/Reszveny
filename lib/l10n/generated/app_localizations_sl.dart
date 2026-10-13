@@ -1400,9 +1400,7 @@ class AppLocalizationsSl extends AppLocalizations {
       'Ta koda povabila je že v uporabi na največjem dovoljenem številu naprav.';
 
   @override
-  String previewFor(String name) {
-    return 'Zaupni predogled – $name';
-  }
+  String get previewConfidential => 'Zaupni predogled';
 
   @override
   String get errPreviewDailyLimit =>

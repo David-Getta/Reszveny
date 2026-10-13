@@ -1357,9 +1357,7 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଏହି ନିମନ୍ତ୍ରଣ କୋଡ ପୂର୍ବରୁ ସର୍ବାଧିକ ସଂଖ୍ୟକ ଡିଭାଇସରେ ବ୍ୟବହୃତ ହେଉଛି।';
 
   @override
-  String previewFor(String name) {
-    return '$name ପାଇଁ ଗୋପନୀୟ ପୂର୍ବାବଲୋକନ';
-  }
+  String get previewConfidential => 'ଗୋପନୀୟ ପୂର୍ବାବଲୋକନ';
 
   @override
   String get errPreviewDailyLimit =>

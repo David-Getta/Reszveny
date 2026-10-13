@@ -379,6 +379,6 @@
   "inviteInvalid": "Ez a meghívókód nem érvényes.",
   "inviteExpired": "Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.",
   "inviteDeviceLimit": "Ezt a meghívókódot már a megengedett számú eszközön használják.",
-  "previewFor": "Bizalmas előzetes – {name} részére",
+  "previewConfidential": "Bizalmas előzetes",
   "errPreviewDailyLimit": "Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap."
 }

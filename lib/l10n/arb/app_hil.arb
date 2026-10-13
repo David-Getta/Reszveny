@@ -379,6 +379,6 @@
   "inviteInvalid": "Indi balido ini nga code sang imbitasyon.",
   "inviteExpired": "Expired na ini nga imbitasyon. Pangayo sang bag-o nga code sa tawo nga nag-imbitar sa imo.",
   "inviteDeviceLimit": "Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.",
-  "previewFor": "Kumpidensyal nga preview para kay {name}",
+  "previewConfidential": "Kumpidensyal nga preview",
   "errPreviewDailyLimit": "Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas."
 }

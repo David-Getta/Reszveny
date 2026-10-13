@@ -1390,9 +1390,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Ovaj se kôd pozivnice već koristi na najvećem dopuštenom broju uređaja.';
 
   @override
-  String previewFor(String name) {
-    return 'Povjerljivi pretpregled – $name';
-  }
+  String get previewConfidential => 'Povjerljivi pretpregled';
 
   @override
   String get errPreviewDailyLimit =>

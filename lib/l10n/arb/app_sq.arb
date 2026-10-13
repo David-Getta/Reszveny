@@ -379,6 +379,6 @@
   "inviteInvalid": "Ky kod ftese nuk është i vlefshëm.",
   "inviteExpired": "Kjo ftesë ka skaduar. Kërkojini personit që ju ftoi një kod të ri.",
   "inviteDeviceLimit": "Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.",
-  "previewFor": "Pamje paraprake konfidenciale për {name}",
+  "previewConfidential": "Pamje paraprake konfidenciale",
   "errPreviewDailyLimit": "Kufiri ditor i analizave për këtë pamje paraprake është arritur. Provoni përsëri nesër."
 }

@@ -32,7 +32,8 @@ class Account {
 /// lejárt / már túl sok eszközön használják).
 enum InviteProblem { required, invalid, expired, deviceLimit }
 
-/// Kinek szól az előzetes (a szerver szerint): név a vízjelhez és lejárat.
+/// Kinek szól az előzetes (a szerver szerint): név és lejárat. Ha van, az app
+/// zárt előzetesben fut, és „Bizalmas előzetes” vízjelet mutat.
 @immutable
 class InviteInfo {
   const InviteInfo({required this.label, this.expires});
@@ -83,7 +84,7 @@ class BackendClient {
   /// meghívókód-képernyőt mutatja.
   final ValueNotifier<InviteProblem?> inviteProblem = ValueNotifier(null);
 
-  /// Kinek szól ez a példány (vízjel); null, ha a szerver nyitott.
+  /// Kinek szól ez a példány; null, ha a szerver nyitott (ilyenkor nincs vízjel).
   final ValueNotifier<InviteInfo?> invite = ValueNotifier(null);
 
   String? _inviteCode;

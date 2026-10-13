@@ -379,6 +379,6 @@
   "inviteInvalid": "Dili balido kining invite code.",
   "inviteExpired": "Expired na kining imbitasyon. Pangayo og bag-ong code sa tawo nga nag-imbitar nimo.",
   "inviteDeviceLimit": "Gigamit na kining invite code sa pinakadaghang device nga gitugotan.",
-  "previewFor": "Kumpidensyal nga preview para kang {name}",
+  "previewConfidential": "Kumpidensyal nga preview",
   "errPreviewDailyLimit": "Naabot na niining preview ang limitasyon sa pagtuki karong adlawa. Sulayi pag-usab ugma."
 }

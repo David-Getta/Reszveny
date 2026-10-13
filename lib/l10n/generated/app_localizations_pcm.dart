@@ -1361,9 +1361,7 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Dem don already use dis invite code for di maximum number of devices.';
 
   @override
-  String previewFor(String name) {
-    return 'Secret preview for $name';
-  }
+  String get previewConfidential => 'Secret preview';
 
   @override
   String get errPreviewDailyLimit =>

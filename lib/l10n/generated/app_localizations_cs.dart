@@ -1395,9 +1395,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Tento kód pozvánky se už používá na maximálním počtu zařízení.';
 
   @override
-  String previewFor(String name) {
-    return 'Důvěrná předběžná verze – $name';
-  }
+  String get previewConfidential => 'Důvěrná předběžná verze';
 
   @override
   String get errPreviewDailyLimit =>

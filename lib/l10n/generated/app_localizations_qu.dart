@@ -1367,9 +1367,7 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kay invitación códigoqa ñam aswan achka atikusqan aparatokunapi llamk\'achisqaña.';
 
   @override
-  String previewFor(String name) {
-    return 'Pakasqa ñawpaq qhawana, ${name}paq';
-  }
+  String get previewConfidential => 'Pakasqa ñawpaq qhawana';
 
   @override
   String get errPreviewDailyLimit =>

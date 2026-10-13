@@ -1365,9 +1365,7 @@ class AppLocalizationsSn extends AppLocalizations {
       'Kodhi yekukoka iyi yatoshandiswa pamidziyo yakawanda sezvinobvumirwa.';
 
   @override
-  String previewFor(String name) {
-    return 'Shanduro yakavanzika ya$name';
-  }
+  String get previewConfidential => 'Shanduro yakavanzika';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1360,9 +1360,7 @@ class AppLocalizationsYo extends AppLocalizations {
       'A ti ń lo kóòdù ìpè yìí lórí iye ẹ̀rọ tó pọ̀ jùlọ tí a gbà láàyè.';
 
   @override
-  String previewFor(String name) {
-    return 'Ìfihàn àṣírí fún $name';
-  }
+  String get previewConfidential => 'Ìfihàn àṣírí';
 
   @override
   String get errPreviewDailyLimit =>

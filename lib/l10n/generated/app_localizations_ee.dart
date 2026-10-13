@@ -1363,9 +1363,7 @@ class AppLocalizationsEe extends AppLocalizations {
       'Wozã kpekpe code sia le mɔ̃ siwo ƒe xexlẽme ɖe mɔ wu la dzi xoxo.';
 
   @override
-  String previewFor(String name) {
-    return 'Ŋgɔkpɔkpɔ ɣaɣla na $name';
-  }
+  String get previewConfidential => 'Ŋgɔkpɔkpɔ ɣaɣla';
 
   @override
   String get errPreviewDailyLimit =>

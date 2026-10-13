@@ -379,6 +379,6 @@
   "inviteInvalid": "此邀请码无效。",
   "inviteExpired": "此邀请已过期。请向邀请您的人索取新的邀请码。",
   "inviteDeviceLimit": "此邀请码已在允许的最多设备上使用。",
-  "previewFor": "{name} 专属保密预览",
+  "previewConfidential": "保密预览",
   "errPreviewDailyLimit": "此预览今日的分析次数已用完。请明天再试。"
 }

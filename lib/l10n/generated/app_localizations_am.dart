@@ -1337,9 +1337,7 @@ class AppLocalizationsAm extends AppLocalizations {
       'ይህ የግብዣ ኮድ በሚፈቀደው ከፍተኛ የመሣሪያዎች ብዛት ላይ አስቀድሞ ጥቅም ላይ እየዋለ ነው።';
 
   @override
-  String previewFor(String name) {
-    return 'ሚስጥራዊ ቅድመ እይታ ለ$name';
-  }
+  String get previewConfidential => 'ሚስጥራዊ ቅድመ እይታ';
 
   @override
   String get errPreviewDailyLimit =>

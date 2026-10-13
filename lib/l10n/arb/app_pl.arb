@@ -379,6 +379,6 @@
   "inviteInvalid": "Ten kod zaproszenia jest nieprawidłowy.",
   "inviteExpired": "To zaproszenie wygasło. Poproś osobę, która cię zaprosiła, o nowy kod.",
   "inviteDeviceLimit": "Ten kod zaproszenia jest już używany na maksymalnej liczbie urządzeń.",
-  "previewFor": "Poufny podgląd – {name}",
+  "previewConfidential": "Poufny podgląd",
   "errPreviewDailyLimit": "Wyczerpano dzisiejszy limit analiz w tym podglądzie. Spróbuj ponownie jutro."
 }

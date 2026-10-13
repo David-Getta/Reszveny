@@ -1369,9 +1369,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dieser Einladungscode wird bereits auf der maximalen Anzahl von Geräten verwendet.';
 
   @override
-  String previewFor(String name) {
-    return 'Vertrauliche Vorschau für $name';
-  }
+  String get previewConfidential => 'Vertrauliche Vorschau';
 
   @override
   String get errPreviewDailyLimit =>

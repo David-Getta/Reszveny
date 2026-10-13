@@ -45,7 +45,7 @@ class WhatStockApp extends StatelessWidget {
               return SupportedLocales.fallback;
             },
             // Zárt előzetesben (a szerver meghívókódot kér) a meghívókód-képernyő,
-            // és minden képernyő alján vízjel: kinek szól ez a példány.
+            // és minden képernyő alján „Bizalmas előzetes” vízjel.
             builder: backend == null
                 ? null
                 : (context, child) => ValueListenableBuilder(
@@ -58,7 +58,7 @@ class WhatStockApp extends StatelessWidget {
                               Expanded(
                                 child: MediaQuery.removePadding(context: context, removeBottom: true, child: child!),
                               ),
-                              PreviewWatermark(invite: invite),
+                              const PreviewWatermark(),
                             ],
                           ),
                   ),

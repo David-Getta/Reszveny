@@ -1333,9 +1333,7 @@ class AppLocalizationsTi extends AppLocalizations {
       'እዚ ኮድ ዕድመ ድሮ ኣብቲ ዝለዓለ ዝፍቀድ ቁጽሪ መሳርሒታት ይጥቀመሉ ኣሎ።';
 
   @override
-  String previewFor(String name) {
-    return 'ምስጢራዊ ቅድመ-ርእይቶ ን$name';
-  }
+  String get previewConfidential => 'ምስጢራዊ ቅድመ-ርእይቶ';
 
   @override
   String get errPreviewDailyLimit =>

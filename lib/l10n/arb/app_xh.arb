@@ -379,6 +379,6 @@
   "inviteInvalid": "Le khowudi yesimemo ayisebenzi.",
   "inviteExpired": "Esi simemo siphelelwe lixesha. Cela ikhowudi entsha kumntu okumemileyo.",
   "inviteDeviceLimit": "Le khowudi yesimemo sele isetyenziswa kwinani eliphezulu lezixhobo elivumelekileyo.",
-  "previewFor": "Umboniso oyimfihlo ka-{name}",
+  "previewConfidential": "Umboniso oyimfihlo",
   "errPreviewDailyLimit": "Umda wohlalutyo wanamhlanje walo mboniso wangaphambili ufikelelwe. Zama kwakhona ngomso."
 }

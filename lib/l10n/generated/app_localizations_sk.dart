@@ -1397,9 +1397,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Tento kód pozvánky sa už používa na maximálnom počte zariadení.';
 
   @override
-  String previewFor(String name) {
-    return 'Dôverná ukážka – $name';
-  }
+  String get previewConfidential => 'Dôverná ukážka';
 
   @override
   String get errPreviewDailyLimit =>

@@ -1389,9 +1389,7 @@ class AppLocalizationsSr extends AppLocalizations {
       'Овај код позивнице се већ користи на максималном броју уређаја.';
 
   @override
-  String previewFor(String name) {
-    return 'Поверљиви преглед за $name';
-  }
+  String get previewConfidential => 'Поверљиви преглед';
 
   @override
   String get errPreviewDailyLimit =>

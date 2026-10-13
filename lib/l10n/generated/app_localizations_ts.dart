@@ -1370,9 +1370,7 @@ class AppLocalizationsTs extends AppLocalizations {
       'Khodi leyi ya xirhambo se yi tirhisiwa eka nhlayo ya le henhla ya switirhisiwa leyi pfumeleriweke.';
 
   @override
-  String previewFor(String name) {
-    return 'Xikombiso xa xihundla xa $name';
-  }
+  String get previewConfidential => 'Xikombiso xa xihundla';
 
   @override
   String get errPreviewDailyLimit =>

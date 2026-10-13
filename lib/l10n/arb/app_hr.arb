@@ -379,6 +379,6 @@
   "inviteInvalid": "Ovaj kôd pozivnice nije valjan.",
   "inviteExpired": "Ova je pozivnica istekla. Zatražite novi kôd od osobe koja vas je pozvala.",
   "inviteDeviceLimit": "Ovaj se kôd pozivnice već koristi na najvećem dopuštenom broju uređaja.",
-  "previewFor": "Povjerljivi pretpregled – {name}",
+  "previewConfidential": "Povjerljivi pretpregled",
   "errPreviewDailyLimit": "Dosegnuto je današnje ograničenje analiza ovog pretpregleda. Pokušajte ponovno sutra."
 }

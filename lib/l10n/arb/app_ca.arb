@@ -379,6 +379,6 @@
   "inviteInvalid": "Aquest codi d’invitació no és vàlid.",
   "inviteExpired": "Aquesta invitació ha caducat. Demana un codi nou a la persona que t’ha convidat.",
   "inviteDeviceLimit": "Aquest codi d’invitació ja s’està fent servir en el nombre màxim de dispositius.",
-  "previewFor": "Versió prèvia confidencial per a {name}",
+  "previewConfidential": "Versió prèvia confidencial",
   "errPreviewDailyLimit": "S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà."
 }

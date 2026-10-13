@@ -1355,9 +1355,7 @@ class AppLocalizationsSd extends AppLocalizations {
       'هي دعوت ڪوڊ اڳ ۾ ئي وڌ کان وڌ ڊوائيسز تي استعمال ٿي رهيو آهي.';
 
   @override
-  String previewFor(String name) {
-    return '$name لاءِ رازدار پريويو';
-  }
+  String get previewConfidential => 'رازدار پريويو';
 
   @override
   String get errPreviewDailyLimit =>

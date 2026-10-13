@@ -1348,9 +1348,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ລະຫັດເຊີນນີ້ຖືກໃຊ້ໃນອຸປະກອນຄົບຈຳນວນສູງສຸດແລ້ວ';
 
   @override
-  String previewFor(String name) {
-    return 'ເວີຊັນຕົວຢ່າງລັບສຳລັບ $name';
-  }
+  String get previewConfidential => 'ເວີຊັນຕົວຢ່າງລັບ';
 
   @override
   String get errPreviewDailyLimit =>

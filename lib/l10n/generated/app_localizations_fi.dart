@@ -1362,9 +1362,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.';
 
   @override
-  String previewFor(String name) {
-    return 'Luottamuksellinen esiversio: $name';
-  }
+  String get previewConfidential => 'Luottamuksellinen esiversio';
 
   @override
   String get errPreviewDailyLimit =>

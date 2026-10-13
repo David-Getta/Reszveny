@@ -1366,9 +1366,7 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս հրավերի կոդն արդեն օգտագործվում է թույլատրելի առավելագույն թվով սարքերում։';
 
   @override
-  String previewFor(String name) {
-    return 'Գաղտնի նախադիտում՝ $name';
-  }
+  String get previewConfidential => 'Գաղտնի նախադիտում';
 
   @override
   String get errPreviewDailyLimit =>

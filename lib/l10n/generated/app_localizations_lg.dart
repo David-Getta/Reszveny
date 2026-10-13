@@ -1367,9 +1367,7 @@ class AppLocalizationsLg extends AppLocalizations {
       'Koodi eno ey\'okuyitibwa ekozesebwa dda ku byuma ebisinga obungi ebikkirizibwa.';
 
   @override
-  String previewFor(String name) {
-    return 'Okulaba okusooka okw\'ekyama kwa $name';
-  }
+  String get previewConfidential => 'Okulaba okusooka okw\'ekyama';
 
   @override
   String get errPreviewDailyLimit =>

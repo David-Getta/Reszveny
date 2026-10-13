@@ -379,6 +379,6 @@
   "inviteInvalid": "Code wa dibikila eu udi ne tshilema.",
   "inviteExpired": "Dîba dia dibikila edi diapita. Lomba code mupiamupia kudi muntu uvua mukubikile.",
   "inviteDeviceLimit": "Code wa dibikila eu udi mutumika kale ku bungi bua bintu bia bungi menemene bidi bianyishibue.",
-  "previewFor": "Ditangila dia musokoko bua {name}",
+  "previewConfidential": "Ditangila dia musokoko",
   "errPreviewDailyLimit": "Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela."
 }

@@ -379,6 +379,6 @@
   "inviteInvalid": "Questo codice di invito non è valido.",
   "inviteExpired": "Questo invito è scaduto. Chiedi un nuovo codice alla persona che ti ha invitato.",
   "inviteDeviceLimit": "Questo codice di invito è già in uso sul numero massimo di dispositivi.",
-  "previewFor": "Anteprima riservata per {name}",
+  "previewConfidential": "Anteprima riservata",
   "errPreviewDailyLimit": "Il limite giornaliero di analisi di questa anteprima è stato raggiunto. Riprova domani."
 }

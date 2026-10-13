@@ -379,6 +379,6 @@
   "inviteInvalid": "Tämä kutsukoodi ei ole voimassa.",
   "inviteExpired": "Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.",
   "inviteDeviceLimit": "Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.",
-  "previewFor": "Luottamuksellinen esiversio: {name}",
+  "previewConfidential": "Luottamuksellinen esiversio",
   "errPreviewDailyLimit": "Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna."
 }

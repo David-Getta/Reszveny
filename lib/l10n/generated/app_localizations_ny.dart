@@ -1366,9 +1366,7 @@ class AppLocalizationsNy extends AppLocalizations {
       'Khodi yoitanira iyi ikugwiritsidwa ntchito kale pa zipangizo zochuluka kwambiri zololedwa.';
 
   @override
-  String previewFor(String name) {
-    return 'Kuwoneratu kwachinsinsi kwa $name';
-  }
+  String get previewConfidential => 'Kuwoneratu kwachinsinsi';
 
   @override
   String get errPreviewDailyLimit =>

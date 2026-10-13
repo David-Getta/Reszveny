@@ -1381,9 +1381,7 @@ class AppLocalizationsGl extends AppLocalizations {
       'Este código de invitación xa se está a usar no número máximo de dispositivos.';
 
   @override
-  String previewFor(String name) {
-    return 'Versión preliminar confidencial para $name';
-  }
+  String get previewConfidential => 'Versión preliminar confidencial';
 
   @override
   String get errPreviewDailyLimit =>

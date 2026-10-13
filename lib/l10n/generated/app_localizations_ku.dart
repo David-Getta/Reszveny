@@ -1363,9 +1363,7 @@ class AppLocalizationsKu extends AppLocalizations {
       'Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.';
 
   @override
-  String previewFor(String name) {
-    return 'Pêşdîtina nepenî ji bo $name';
-  }
+  String get previewConfidential => 'Pêşdîtina nepenî';
 
   @override
   String get errPreviewDailyLimit =>

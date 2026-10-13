@@ -1352,9 +1352,7 @@ class AppLocalizationsKm extends AppLocalizations {
       'លេខកូដអញ្ជើញនេះកំពុងត្រូវបានប្រើលើចំនួនឧបករណ៍អតិបរមារួចហើយ។';
 
   @override
-  String previewFor(String name) {
-    return 'ការមើលជាមុនសម្ងាត់សម្រាប់ $name';
-  }
+  String get previewConfidential => 'ការមើលជាមុនសម្ងាត់';
 
   @override
   String get errPreviewDailyLimit =>

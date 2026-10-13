@@ -379,6 +379,6 @@
   "inviteInvalid": "Ta koda povabila ni veljavna.",
   "inviteExpired": "To povabilo je poteklo. Za novo kodo prosite osebo, ki vas je povabila.",
   "inviteDeviceLimit": "Ta koda povabila je že v uporabi na največjem dovoljenem številu naprav.",
-  "previewFor": "Zaupni predogled – {name}",
+  "previewConfidential": "Zaupni predogled",
   "errPreviewDailyLimit": "Današnja omejitev analiz za ta predogled je dosežena. Poskusite znova jutri."
 }

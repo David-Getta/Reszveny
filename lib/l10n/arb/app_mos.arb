@@ -379,6 +379,6 @@
   "inviteInvalid": "Boollg kod kãngã pa zems ye.",
   "inviteExpired": "Boollg kãngã wakat sa. Kos ned ning sẽn bool-f wã kod a-to.",
   "inviteDeviceLimit": "Boollg kod kãngã tʋmd masã ne masĩn-dãmb sõor sẽn yaa wʋsg n yɩɩda.",
-  "previewFor": "Ges-taoor solgr – {name} yĩnga",
+  "previewConfidential": "Ges-taoor solgr",
   "errPreviewDailyLimit": "Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo."
 }

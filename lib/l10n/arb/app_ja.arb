@@ -379,6 +379,6 @@
   "inviteInvalid": "この招待コードは無効です。",
   "inviteExpired": "この招待は有効期限が切れています。招待してくれた方に新しいコードを依頼してください。",
   "inviteDeviceLimit": "この招待コードは、すでに上限台数の端末で使用されています。",
-  "previewFor": "{name} 様向け機密プレビュー",
+  "previewConfidential": "機密プレビュー",
   "errPreviewDailyLimit": "このプレビューの本日の分析上限に達しました。明日もう一度お試しください。"
 }

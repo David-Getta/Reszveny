@@ -1362,9 +1362,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'მოწვევის ეს კოდი უკვე გამოიყენება მოწყობილობების მაქსიმალურ დასაშვებ რაოდენობაზე.';
 
   @override
-  String previewFor(String name) {
-    return 'კონფიდენციალური ვერსია: $name';
-  }
+  String get previewConfidential => 'კონფიდენციალური ვერსია';
 
   @override
   String get errPreviewDailyLimit =>

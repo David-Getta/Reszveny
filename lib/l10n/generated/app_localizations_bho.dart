@@ -1356,9 +1356,7 @@ class AppLocalizationsBho extends AppLocalizations {
       'ई निमंत्रण कोड पहिलहीं से अधिकतम गिनती के डिवाइस पर इस्तेमाल हो रहल बा।';
 
   @override
-  String previewFor(String name) {
-    return '$name खातिर गोपनीय प्रिव्यू';
-  }
+  String get previewConfidential => 'गोपनीय प्रिव्यू';
 
   @override
   String get errPreviewDailyLimit =>

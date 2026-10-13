@@ -1356,9 +1356,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Kode undangan ini sudah digunakan di jumlah perangkat maksimum.';
 
   @override
-  String previewFor(String name) {
-    return 'Pratinjau rahasia untuk $name';
-  }
+  String get previewConfidential => 'Pratinjau rahasia';
 
   @override
   String get errPreviewDailyLimit =>

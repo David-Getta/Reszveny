@@ -1362,9 +1362,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Bu taklif kodi allaqachon ruxsat etilgan eng koʻp qurilmada ishlatilmoqda.';
 
   @override
-  String previewFor(String name) {
-    return '$name uchun maxfiy oldindan koʻrish';
-  }
+  String get previewConfidential => 'Maxfiy oldindan koʻrish';
 
   @override
   String get errPreviewDailyLimit =>

@@ -379,6 +379,6 @@
   "inviteInvalid": "Bu dəvət kodu etibarlı deyil.",
   "inviteExpired": "Bu dəvətin müddəti bitib. Sizi dəvət edən şəxsdən yeni kod istəyin.",
   "inviteDeviceLimit": "Bu dəvət kodu artıq maksimum sayda cihazda istifadə olunur.",
-  "previewFor": "{name} üçün məxfi önizləmə",
+  "previewConfidential": "Məxfi önizləmə",
   "errPreviewDailyLimit": "Bu önizləmənin bugünkü təhlil limiti dolub. Sabah yenidən cəhd edin."
 }

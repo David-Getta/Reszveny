@@ -1366,9 +1366,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்த அழைப்புக் குறியீடு ஏற்கனவே அனுமதிக்கப்பட்ட அதிகபட்ச எண்ணிக்கையிலான சாதனங்களில் பயன்பாட்டில் உள்ளது.';
 
   @override
-  String previewFor(String name) {
-    return '$name அவர்களுக்கான ரகசிய முன்னோட்டம்';
-  }
+  String get previewConfidential => 'ரகசிய முன்னோட்டம்';
 
   @override
   String get errPreviewDailyLimit =>

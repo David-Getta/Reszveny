@@ -1318,9 +1318,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get inviteDeviceLimit => '이 초대 코드는 이미 최대 기기 수에서 사용 중입니다.';
 
   @override
-  String previewFor(String name) {
-    return '$name 님 전용 비공개 미리보기';
-  }
+  String get previewConfidential => '기밀 미리보기';
 
   @override
   String get errPreviewDailyLimit => '이 미리보기의 오늘 분석 한도에 도달했습니다. 내일 다시 시도하세요.';

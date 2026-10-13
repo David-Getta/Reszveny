@@ -379,6 +379,6 @@
   "inviteInvalid": "Ce code d’invitation n’est pas valide.",
   "inviteExpired": "Cette invitation a expiré. Demandez un nouveau code à la personne qui vous a invité.",
   "inviteDeviceLimit": "Ce code d’invitation est déjà utilisé sur le nombre maximal d’appareils.",
-  "previewFor": "Préversion confidentielle pour {name}",
+  "previewConfidential": "Préversion confidentielle",
   "errPreviewDailyLimit": "La limite quotidienne d’analyses de cette préversion est atteinte. Réessayez demain."
 }

@@ -1365,9 +1365,7 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ ఆహ్వాన కోడ్ ఇప్పటికే గరిష్ఠ సంఖ్యలో పరికరాల్లో ఉపయోగంలో ఉంది.';
 
   @override
-  String previewFor(String name) {
-    return '$name కోసం గోప్య ప్రివ్యూ';
-  }
+  String get previewConfidential => 'గోప్య ప్రివ్యూ';
 
   @override
   String get errPreviewDailyLimit =>

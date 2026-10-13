@@ -1362,9 +1362,7 @@ class AppLocalizationsSu extends AppLocalizations {
       'Kode uleman ieu geus dipaké dina jumlah alat maksimum.';
 
   @override
-  String previewFor(String name) {
-    return 'Pratinjau rahasia pikeun $name';
-  }
+  String get previewConfidential => 'Pratinjau rahasia';
 
   @override
   String get errPreviewDailyLimit =>

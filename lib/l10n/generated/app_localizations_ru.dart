@@ -1399,9 +1399,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Этот код приглашения уже используется на максимально допустимом числе устройств.';
 
   @override
-  String previewFor(String name) {
-    return 'Конфиденциальный доступ: $name';
-  }
+  String get previewConfidential => 'Конфиденциальная предварительная версия';
 
   @override
   String get errPreviewDailyLimit =>

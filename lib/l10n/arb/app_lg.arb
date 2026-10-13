@@ -379,6 +379,6 @@
   "inviteInvalid": "Koodi eno ey'okuyitibwa si ntuufu.",
   "inviteExpired": "Okuyitibwa kuno kuweddeko. Saba omuntu eyakuyita akuwe koodi empya.",
   "inviteDeviceLimit": "Koodi eno ey'okuyitibwa ekozesebwa dda ku byuma ebisinga obungi ebikkirizibwa.",
-  "previewFor": "Okulaba okusooka okw'ekyama kwa {name}",
+  "previewConfidential": "Okulaba okusooka okw'ekyama",
   "errPreviewDailyLimit": "Ekkomo ly'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya."
 }

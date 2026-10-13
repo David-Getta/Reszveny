@@ -379,6 +379,6 @@
   "inviteInvalid": "Kode uleman ieu teu valid.",
   "inviteExpired": "Uleman ieu geus kadaluwarsa. Pénta kode anyar ka jalma anu ngondang anjeun.",
   "inviteDeviceLimit": "Kode uleman ieu geus dipaké dina jumlah alat maksimum.",
-  "previewFor": "Pratinjau rahasia pikeun {name}",
+  "previewConfidential": "Pratinjau rahasia",
   "errPreviewDailyLimit": "Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan."
 }

@@ -1365,9 +1365,7 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಈ ಆಹ್ವಾನ ಕೋಡ್ ಈಗಾಗಲೇ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯ ಸಾಧನಗಳಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿದೆ.';
 
   @override
-  String previewFor(String name) {
-    return '$name ಅವರಿಗಾಗಿ ಗೌಪ್ಯ ಪೂರ್ವವೀಕ್ಷಣೆ';
-  }
+  String get previewConfidential => 'ಗೌಪ್ಯ ಪೂರ್ವವೀಕ್ಷಣೆ';
 
   @override
   String get errPreviewDailyLimit =>

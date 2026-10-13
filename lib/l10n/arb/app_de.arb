@@ -379,6 +379,6 @@
   "inviteInvalid": "Dieser Einladungscode ist ungültig.",
   "inviteExpired": "Diese Einladung ist abgelaufen. Bitte die Person, die dich eingeladen hat, um einen neuen Code.",
   "inviteDeviceLimit": "Dieser Einladungscode wird bereits auf der maximalen Anzahl von Geräten verwendet.",
-  "previewFor": "Vertrauliche Vorschau für {name}",
+  "previewConfidential": "Vertrauliche Vorschau",
   "errPreviewDailyLimit": "Das heutige Analyselimit dieser Vorschau ist erreicht. Versuche es morgen erneut."
 }

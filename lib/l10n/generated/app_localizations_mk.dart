@@ -1379,9 +1379,7 @@ class AppLocalizationsMk extends AppLocalizations {
       'Овој код за покана веќе се користи на максималниот број уреди.';
 
   @override
-  String previewFor(String name) {
-    return 'Доверлив преглед за $name';
-  }
+  String get previewConfidential => 'Доверлив преглед';
 
   @override
   String get errPreviewDailyLimit =>

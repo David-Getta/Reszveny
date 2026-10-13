@@ -379,6 +379,6 @@
   "inviteInvalid": "Este código de invitación no es válido.",
   "inviteExpired": "Esta invitación ha caducado. Pide un código nuevo a la persona que te invitó.",
   "inviteDeviceLimit": "Este código de invitación ya se está usando en el número máximo de dispositivos.",
-  "previewFor": "Versión preliminar confidencial para {name}",
+  "previewConfidential": "Versión preliminar confidencial",
   "errPreviewDailyLimit": "Se ha alcanzado el límite de análisis de hoy de esta versión preliminar. Vuelve a intentarlo mañana."
 }

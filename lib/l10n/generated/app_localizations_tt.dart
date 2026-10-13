@@ -1357,9 +1357,7 @@ class AppLocalizationsTt extends AppLocalizations {
       'Бу чакыру коды инде рөхсәт ителгән иң күп җайланмада кулланыла.';
 
   @override
-  String previewFor(String name) {
-    return '$name өчен яшерен алдан карау';
-  }
+  String get previewConfidential => 'Яшерен алдан карау';
 
   @override
   String get errPreviewDailyLimit =>
