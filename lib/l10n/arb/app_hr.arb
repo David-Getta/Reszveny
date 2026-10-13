@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} mjesečno",
   "subscriptionLegalYearly": "Godišnja pretplata se automatski obnavlja svake godine dok je ne otkažete. Pretplatom prihvaćate Uvjete korištenja i Pravila privatnosti.",
   "myAnalyses": "Moje analize",
-  "navAlerts": "Obavijesti"
+  "navAlerts": "Obavijesti",
+  "inviteTitle": "Zatvoreni pretpregled",
+  "inviteBody": "WhatStock je zasad dostupan samo uz pozivnicu. Unesite kôd pozivnice koji ste primili.",
+  "inviteCodeLabel": "Kôd pozivnice",
+  "inviteContinue": "Nastavi",
+  "inviteInvalid": "Ovaj kôd pozivnice nije valjan.",
+  "inviteExpired": "Ova je pozivnica istekla. Zatražite novi kôd od osobe koja vas je pozvala.",
+  "inviteDeviceLimit": "Ovaj se kôd pozivnice već koristi na najvećem dopuštenom broju uređaja.",
+  "previewFor": "Povjerljivi pretpregled – {name}",
+  "errPreviewDailyLimit": "Dosegnuto je današnje ograničenje analiza ovog pretpregleda. Pokušajte ponovno sutra."
 }

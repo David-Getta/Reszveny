@@ -1339,4 +1339,37 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Nkebisu';
+
+  @override
+  String get inviteTitle => 'Kutala ya ntete ya kukangama';
+
+  @override
+  String get inviteBody =>
+      'Mu ntangu yayi, WhatStock ilenda sadilwa kaka na mbokolo. Sonika code ya mbokolo yina utambwidi.';
+
+  @override
+  String get inviteCodeLabel => 'Code ya mbokolo';
+
+  @override
+  String get inviteContinue => 'Landa';
+
+  @override
+  String get inviteInvalid => 'Code yayi ya mbokolo ka yena ya mbote ko.';
+
+  @override
+  String get inviteExpired =>
+      'Ntangu ya mbokolo yayi isukidi. Lomba code ya mpa kwa muntu wakubokila.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Code yayi ya mbokolo isadilwanga kala mu ntalu ya nene ya bisadulu.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kutala kwa nsweki kwa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi.';
 }

@@ -1334,4 +1334,37 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get navAlerts => 'Kɔkɔbɔ';
+
+  @override
+  String get inviteTitle => 'Nhwɛkan a ɛto mu';
+
+  @override
+  String get inviteBody =>
+      'Seesei deɛ, wɔde WhatStock ma nnipa a wɔafrɛ wɔn nko ara. Hyɛ nsafrɛ code a wonyaeɛ no.';
+
+  @override
+  String get inviteCodeLabel => 'Nsafrɛ code';
+
+  @override
+  String get inviteContinue => 'Kɔ so';
+
+  @override
+  String get inviteInvalid => 'Nsafrɛ code yi nteɛ.';
+
+  @override
+  String get inviteExpired =>
+      'Nsafrɛ yi bere atwam. Bisa onipa a ɔfrɛɛ wo no ma ɔmma wo code foforo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Wɔde nsafrɛ code yi di dwuma wɔ mfiri dodoɔ a ɛsɛ so dedaw.';
+
+  @override
+  String previewFor(String name) {
+    return 'Nhwɛkan a ɛyɛ kokoam ma $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena.';
 }

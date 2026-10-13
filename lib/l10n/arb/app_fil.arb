@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} bawat buwan",
   "subscriptionLegalYearly": "Awtomatikong nire-renew ang taunang subscription bawat taon hanggang kanselahin mo. Sa pag-subscribe, tinatanggap mo ang Mga Tuntunin ng Paggamit at ang Patakaran sa Privacy.",
   "myAnalyses": "Aking mga pagsusuri",
-  "navAlerts": "Mga alerto"
+  "navAlerts": "Mga alerto",
+  "inviteTitle": "Saradong preview",
+  "inviteBody": "Sa ngayon, sa imbitasyon lang available ang WhatStock. Ilagay ang invite code na natanggap mo.",
+  "inviteCodeLabel": "Invite code",
+  "inviteContinue": "Magpatuloy",
+  "inviteInvalid": "Hindi valid ang invite code na ito.",
+  "inviteExpired": "Expired na ang imbitasyong ito. Humingi ng bagong code sa taong nag-imbita sa iyo.",
+  "inviteDeviceLimit": "Ginagamit na ang invite code na ito sa pinakamaraming device na pinapayagan.",
+  "previewFor": "Kumpidensyal na preview para kay {name}",
+  "errPreviewDailyLimit": "Naabot na ng preview na ito ang limitasyon ng pagsusuri para ngayong araw. Subukang muli bukas."
 }

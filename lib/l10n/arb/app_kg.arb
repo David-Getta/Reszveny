@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} mu ngonda",
   "subscriptionLegalYearly": "Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku.",
   "myAnalyses": "Ba analyse na mono",
-  "navAlerts": "Nkebisu"
+  "navAlerts": "Nkebisu",
+  "inviteTitle": "Kutala ya ntete ya kukangama",
+  "inviteBody": "Mu ntangu yayi, WhatStock ilenda sadilwa kaka na mbokolo. Sonika code ya mbokolo yina utambwidi.",
+  "inviteCodeLabel": "Code ya mbokolo",
+  "inviteContinue": "Landa",
+  "inviteInvalid": "Code yayi ya mbokolo ka yena ya mbote ko.",
+  "inviteExpired": "Ntangu ya mbokolo yayi isukidi. Lomba code ya mpa kwa muntu wakubokila.",
+  "inviteDeviceLimit": "Code yayi ya mbokolo isadilwanga kala mu ntalu ya nene ya bisadulu.",
+  "previewFor": "Kutala kwa nsweki kwa {name}",
+  "errPreviewDailyLimit": "Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi."
 }

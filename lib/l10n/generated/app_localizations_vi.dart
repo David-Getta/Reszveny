@@ -1329,4 +1329,37 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get navAlerts => 'Cảnh báo';
+
+  @override
+  String get inviteTitle => 'Bản xem trước giới hạn';
+
+  @override
+  String get inviteBody =>
+      'Hiện tại WhatStock chỉ dành cho người được mời. Hãy nhập mã mời bạn đã nhận được.';
+
+  @override
+  String get inviteCodeLabel => 'Mã mời';
+
+  @override
+  String get inviteContinue => 'Tiếp tục';
+
+  @override
+  String get inviteInvalid => 'Mã mời này không hợp lệ.';
+
+  @override
+  String get inviteExpired =>
+      'Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Mã mời này đã được dùng trên số thiết bị tối đa cho phép.';
+
+  @override
+  String previewFor(String name) {
+    return 'Bản xem trước bảo mật dành cho $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai.';
 }

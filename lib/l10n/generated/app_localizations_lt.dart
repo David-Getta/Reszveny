@@ -1374,4 +1374,37 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get navAlerts => 'Įspėjimai';
+
+  @override
+  String get inviteTitle => 'Uždara peržiūra';
+
+  @override
+  String get inviteBody =>
+      'Kol kas WhatStock pasiekiama tik su kvietimu. Įveskite gautą kvietimo kodą.';
+
+  @override
+  String get inviteCodeLabel => 'Kvietimo kodas';
+
+  @override
+  String get inviteContinue => 'Tęsti';
+
+  @override
+  String get inviteInvalid => 'Šis kvietimo kodas negalioja.';
+
+  @override
+  String get inviteExpired =>
+      'Šio kvietimo galiojimas baigėsi. Paprašykite naujo kodo asmens, kuris jus pakvietė.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Šis kvietimo kodas jau naudojamas didžiausiame leistiname įrenginių skaičiuje.';
+
+  @override
+  String previewFor(String name) {
+    return 'Konfidenciali peržiūra: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Šios peržiūros šiandienos analizių limitas išnaudotas. Bandykite dar kartą rytoj.';
 }

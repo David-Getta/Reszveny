@@ -1336,4 +1336,37 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get navAlerts => 'সতর্কতা';
+
+  @override
+  String get inviteTitle => 'বন্ধ প্রিভিউ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock আপাতত শুধু আমন্ত্রণের মাধ্যমে পাওয়া যায়। আপনি যে আমন্ত্রণ কোড পেয়েছেন সেটি লিখুন।';
+
+  @override
+  String get inviteCodeLabel => 'আমন্ত্রণ কোড';
+
+  @override
+  String get inviteContinue => 'চালিয়ে যান';
+
+  @override
+  String get inviteInvalid => 'এই আমন্ত্রণ কোডটি বৈধ নয়।';
+
+  @override
+  String get inviteExpired =>
+      'এই আমন্ত্রণের মেয়াদ শেষ হয়ে গেছে। যিনি আপনাকে আমন্ত্রণ জানিয়েছেন, তাঁর কাছে একটি নতুন কোড চান।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'এই আমন্ত্রণ কোডটি ইতিমধ্যে সর্বোচ্চ সংখ্যক ডিভাইসে ব্যবহৃত হচ্ছে।';
+
+  @override
+  String previewFor(String name) {
+    return '$name-এর জন্য গোপনীয় প্রিভিউ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'এই প্রিভিউয়ের আজকের বিশ্লেষণের সীমা শেষ হয়ে গেছে। আগামীকাল আবার চেষ্টা করুন।';
 }

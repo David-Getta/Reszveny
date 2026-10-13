@@ -1343,4 +1343,37 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ditemošo';
+
+  @override
+  String get inviteTitle => 'Ponelopele ye e tswaletšwego';
+
+  @override
+  String get inviteBody =>
+      'Gabjale WhatStock e hwetšagala ka taletšo fela. Tsenya khoutu ya taletšo yeo o e amogetšego.';
+
+  @override
+  String get inviteCodeLabel => 'Khoutu ya taletšo';
+
+  @override
+  String get inviteContinue => 'Tšwela pele';
+
+  @override
+  String get inviteInvalid => 'Khoutu ye ya taletšo ga e šome.';
+
+  @override
+  String get inviteExpired =>
+      'Taletšo ye e fedile. Kgopela motho yo a go laleditšego khoutu ye mpsha.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Khoutu ye ya taletšo e šetše e šomišwa go palo ye kgolo kudu ya didirišwa.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ponelopele ya sephiri ya $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa.';
 }

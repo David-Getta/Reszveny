@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'app_services.dart';
+import 'features/invite/invite_page.dart';
 import 'features/shell/app_shell.dart';
 import 'l10n/fallback_delegates.dart';
 import 'l10n/generated/app_localizations.dart';
@@ -20,6 +21,7 @@ class WhatStockApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final backend = services.backend;
     return AppServicesScope(
       services: services,
       child: ListenableBuilder(
@@ -42,7 +44,31 @@ class WhatStockApp extends StatelessWidget {
               }
               return SupportedLocales.fallback;
             },
-            home: const AppShell(),
+            // Zárt előzetesben (a szerver meghívókódot kér) a meghívókód-képernyő,
+            // és minden képernyő alján vízjel: kinek szól ez a példány.
+            builder: backend == null
+                ? null
+                : (context, child) => ValueListenableBuilder(
+                    valueListenable: backend.invite,
+                    builder: (context, invite, _) => invite == null
+                        ? child!
+                        : Column(
+                            children: [
+                              // Az alsó biztonsági sávot (pl. iPhone kezdőcsík) a vízjel kapja.
+                              Expanded(
+                                child: MediaQuery.removePadding(context: context, removeBottom: true, child: child!),
+                              ),
+                              PreviewWatermark(invite: invite),
+                            ],
+                          ),
+                  ),
+            home: backend == null
+                ? const AppShell()
+                : ValueListenableBuilder(
+                    valueListenable: backend.inviteProblem,
+                    builder: (context, problem, _) =>
+                        problem == null ? const AppShell() : InvitePage(backend: backend, problem: problem),
+                  ),
           );
         },
       ),

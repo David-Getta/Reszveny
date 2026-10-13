@@ -1355,4 +1355,37 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alertas';
+
+  @override
+  String get inviteTitle => 'Versión preliminar pechada';
+
+  @override
+  String get inviteBody =>
+      'Polo de agora, WhatStock só está dispoñible por invitación. Introduce o código de invitación que recibiches.';
+
+  @override
+  String get inviteCodeLabel => 'Código de invitación';
+
+  @override
+  String get inviteContinue => 'Continuar';
+
+  @override
+  String get inviteInvalid => 'Este código de invitación non é válido.';
+
+  @override
+  String get inviteExpired =>
+      'Esta invitación caducou. Pídelle un código novo á persoa que te convidou.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Este código de invitación xa se está a usar no número máximo de dispositivos.';
+
+  @override
+  String previewFor(String name) {
+    return 'Versión preliminar confidencial para $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Alcanzouse o límite de análises de hoxe desta versión preliminar. Téntao de novo mañá.';
 }

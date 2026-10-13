@@ -1334,4 +1334,37 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Сэрэмжлүүлэг';
+
+  @override
+  String get inviteTitle => 'Хаалттай урьдчилсан хувилбар';
+
+  @override
+  String get inviteBody =>
+      'WhatStock одоогоор зөвхөн урилгаар ашиглах боломжтой. Хүлээн авсан урилгын кодоо оруулна уу.';
+
+  @override
+  String get inviteCodeLabel => 'Урилгын код';
+
+  @override
+  String get inviteContinue => 'Үргэлжлүүлэх';
+
+  @override
+  String get inviteInvalid => 'Энэ урилгын код хүчингүй байна.';
+
+  @override
+  String get inviteExpired =>
+      'Энэ урилгын хугацаа дууссан байна. Таныг урьсан хүнээс шинэ код хүснэ үү.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Энэ урилгын код аль хэдийн зөвшөөрөгдөх дээд тооны төхөөрөмж дээр ашиглагдаж байна.';
+
+  @override
+  String previewFor(String name) {
+    return '$name-д зориулсан нууц хувилбар';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Энэ урьдчилсан хувилбарын өнөөдрийн шинжилгээний хязгаар дууссан. Маргааш дахин оролдоно уу.';
 }

@@ -1339,4 +1339,37 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Zviziviso';
+
+  @override
+  String get inviteTitle => 'Shanduro yekuedza yakavharika';
+
+  @override
+  String get inviteBody =>
+      'WhatStock iri kuwanikwa nekukokwa chete parizvino. Isa kodhi yekukoka yawakagamuchira.';
+
+  @override
+  String get inviteCodeLabel => 'Kodhi yekukoka';
+
+  @override
+  String get inviteContinue => 'Enderera mberi';
+
+  @override
+  String get inviteInvalid => 'Kodhi yekukoka iyi haina kururama.';
+
+  @override
+  String get inviteExpired =>
+      'Kukoka uku kwapera nguva. Kumbira munhu akakukoka kodhi itsva.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kodhi yekukoka iyi yatoshandiswa pamidziyo yakawanda sezvinobvumirwa.';
+
+  @override
+  String previewFor(String name) {
+    return 'Shanduro yakavanzika ya$name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana.';
 }

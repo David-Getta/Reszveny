@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} pamwezi",
   "subscriptionLegalYearly": "Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi.",
   "myAnalyses": "Zosanthula zanga",
-  "navAlerts": "Zidziwitso"
+  "navAlerts": "Zidziwitso",
+  "inviteTitle": "Kuwoneratu kotsekedwa",
+  "inviteBody": "Pakadali pano WhatStock ikupezeka mwa kuitanidwa kokha. Lowetsani khodi yoitanira imene munalandira.",
+  "inviteCodeLabel": "Khodi yoitanira",
+  "inviteContinue": "Pitirizani",
+  "inviteInvalid": "Khodi yoitanira iyi si yovomerezeka.",
+  "inviteExpired": "Kuitanidwa kumeneku kwatha nthawi. Pemphani khodi yatsopano kwa munthu amene anakuitanani.",
+  "inviteDeviceLimit": "Khodi yoitanira iyi ikugwiritsidwa ntchito kale pa zipangizo zochuluka kwambiri zololedwa.",
+  "previewFor": "Kuwoneratu kwachinsinsi kwa {name}",
+  "errPreviewDailyLimit": "Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa."
 }

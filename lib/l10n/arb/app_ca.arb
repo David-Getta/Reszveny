@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} al mes",
   "subscriptionLegalYearly": "La subscripció anual es renova automàticament cada any fins que la cancel·lis. En subscriure’t acceptes les Condicions d’ús i la Política de privadesa.",
   "myAnalyses": "Les meves anàlisis",
-  "navAlerts": "Alertes"
+  "navAlerts": "Alertes",
+  "inviteTitle": "Versió prèvia tancada",
+  "inviteBody": "De moment, WhatStock només està disponible amb invitació. Introdueix el codi d’invitació que has rebut.",
+  "inviteCodeLabel": "Codi d’invitació",
+  "inviteContinue": "Continua",
+  "inviteInvalid": "Aquest codi d’invitació no és vàlid.",
+  "inviteExpired": "Aquesta invitació ha caducat. Demana un codi nou a la persona que t’ha convidat.",
+  "inviteDeviceLimit": "Aquest codi d’invitació ja s’està fent servir en el nombre màxim de dispositius.",
+  "previewFor": "Versió prèvia confidencial per a {name}",
+  "errPreviewDailyLimit": "S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà."
 }

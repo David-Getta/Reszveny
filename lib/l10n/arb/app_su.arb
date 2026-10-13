@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per bulan",
   "subscriptionLegalYearly": "Langganan taunan diperpanjang sacara otomatis unggal taun nepi ka anjeun ngabolaykeunana. Ku langganan, anjeun narima Katangtuan Pamakéan jeung Kawijakan Privasi.",
   "myAnalyses": "Analisis abdi",
-  "navAlerts": "Béwara"
+  "navAlerts": "Béwara",
+  "inviteTitle": "Pratinjau katutup",
+  "inviteBody": "WhatStock ayeuna ngan ukur sayogi ku uleman. Lebetkeun kode uleman anu anjeun tampi.",
+  "inviteCodeLabel": "Kode uleman",
+  "inviteContinue": "Teraskeun",
+  "inviteInvalid": "Kode uleman ieu teu valid.",
+  "inviteExpired": "Uleman ieu geus kadaluwarsa. Pénta kode anyar ka jalma anu ngondang anjeun.",
+  "inviteDeviceLimit": "Kode uleman ieu geus dipaké dina jumlah alat maksimum.",
+  "previewFor": "Pratinjau rahasia pikeun {name}",
+  "errPreviewDailyLimit": "Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan."
 }

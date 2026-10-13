@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} every month",
   "subscriptionLegalYearly": "Yearly subscription go dey renew by imsef every year until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy.",
   "myAnalyses": "My analysis dem",
-  "navAlerts": "Alerts"
+  "navAlerts": "Alerts",
+  "inviteTitle": "Private preview",
+  "inviteBody": "For now, na only people wey dem invite fit use WhatStock. Put di invite code wey you collect.",
+  "inviteCodeLabel": "Invite code",
+  "inviteContinue": "Continue",
+  "inviteInvalid": "Dis invite code no correct.",
+  "inviteExpired": "Dis invite don expire. Ask di person wey invite you make e give you new code.",
+  "inviteDeviceLimit": "Dem don already use dis invite code for di maximum number of devices.",
+  "previewFor": "Secret preview for {name}",
+  "errPreviewDailyLimit": "Today analysis limit for dis preview don finish. Try again tomorrow."
 }

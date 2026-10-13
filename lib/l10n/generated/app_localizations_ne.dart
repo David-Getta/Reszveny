@@ -1335,4 +1335,37 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get navAlerts => 'अलर्ट';
+
+  @override
+  String get inviteTitle => 'बन्द पूर्वावलोकन';
+
+  @override
+  String get inviteBody =>
+      'WhatStock हाल निमन्त्रणामार्फत मात्र उपलब्ध छ। तपाईंले प्राप्त गर्नुभएको निमन्त्रणा कोड प्रविष्ट गर्नुहोस्।';
+
+  @override
+  String get inviteCodeLabel => 'निमन्त्रणा कोड';
+
+  @override
+  String get inviteContinue => 'जारी राख्नुहोस्';
+
+  @override
+  String get inviteInvalid => 'यो निमन्त्रणा कोड मान्य छैन।';
+
+  @override
+  String get inviteExpired =>
+      'यो निमन्त्रणाको म्याद सकिएको छ। तपाईंलाई निमन्त्रणा गर्ने व्यक्तिसँग नयाँ कोड माग्नुहोस्।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'यो निमन्त्रणा कोड पहिले नै अधिकतम सङ्ख्याका उपकरणहरूमा प्रयोगमा छ।';
+
+  @override
+  String previewFor(String name) {
+    return '$name का लागि गोप्य पूर्वावलोकन';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'यस पूर्वावलोकनको आजको विश्लेषण सीमा पुगिसकेको छ। भोलि फेरि प्रयास गर्नुहोस्।';
 }

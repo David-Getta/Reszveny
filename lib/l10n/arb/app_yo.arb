@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} lóṣù",
   "subscriptionLegalYearly": "Àsansílẹ̀ ọdọọdún máa ń sọ ara rẹ̀ dọ̀tun láìfọwọ́yí lọ́dọọdún títí tí o fi fagilé e. Nípa ṣíṣe àsansílẹ̀, o gba Òfin Ìlò àti Ìlànà Ìpamọ́.",
   "myAnalyses": "Àwọn ìtúpalẹ̀ mi",
-  "navAlerts": "Ìkìlọ̀"
+  "navAlerts": "Ìkìlọ̀",
+  "inviteTitle": "Ìfihàn àkọ́kọ́ aládàáni",
+  "inviteBody": "WhatStock wà fún àwọn tí a pè nìkan fún báyìí. Tẹ kóòdù ìpè tí o gbà.",
+  "inviteCodeLabel": "Kóòdù ìpè",
+  "inviteContinue": "Tẹ̀síwájú",
+  "inviteInvalid": "Kóòdù ìpè yìí kò tọ̀nà.",
+  "inviteExpired": "Ìpè yìí ti parí. Béèrè kóòdù tuntun lọ́wọ́ ẹni tó pè ọ́.",
+  "inviteDeviceLimit": "A ti ń lo kóòdù ìpè yìí lórí iye ẹ̀rọ tó pọ̀ jùlọ tí a gbà láàyè.",
+  "previewFor": "Ìfihàn àṣírí fún {name}",
+  "errPreviewDailyLimit": "Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la."
 }

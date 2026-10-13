@@ -1339,4 +1339,37 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get navAlerts => 'Faɗakarwa';
+
+  @override
+  String get inviteTitle => 'Duban farko na musamman';
+
+  @override
+  String get inviteBody =>
+      'A yanzu ana samun WhatStock ne ta hanyar gayyata kawai. Shigar da lambar gayyatar da ka karɓa.';
+
+  @override
+  String get inviteCodeLabel => 'Lambar gayyata';
+
+  @override
+  String get inviteContinue => 'Ci gaba';
+
+  @override
+  String get inviteInvalid => 'Wannan lambar gayyata ba ta da inganci.';
+
+  @override
+  String get inviteExpired =>
+      'Wannan gayyatar ta ƙare. Nemi sabuwar lamba daga wanda ya gayyace ka.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'An riga an yi amfani da wannan lambar gayyata a iyakar adadin na\'urori da aka yarda.';
+
+  @override
+  String previewFor(String name) {
+    return 'Duban farko na sirri don $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe.';
 }

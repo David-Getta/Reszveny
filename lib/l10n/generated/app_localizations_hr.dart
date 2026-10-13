@@ -1364,4 +1364,37 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get navAlerts => 'Obavijesti';
+
+  @override
+  String get inviteTitle => 'Zatvoreni pretpregled';
+
+  @override
+  String get inviteBody =>
+      'WhatStock je zasad dostupan samo uz pozivnicu. Unesite kôd pozivnice koji ste primili.';
+
+  @override
+  String get inviteCodeLabel => 'Kôd pozivnice';
+
+  @override
+  String get inviteContinue => 'Nastavi';
+
+  @override
+  String get inviteInvalid => 'Ovaj kôd pozivnice nije valjan.';
+
+  @override
+  String get inviteExpired =>
+      'Ova je pozivnica istekla. Zatražite novi kôd od osobe koja vas je pozvala.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ovaj se kôd pozivnice već koristi na najvećem dopuštenom broju uređaja.';
+
+  @override
+  String previewFor(String name) {
+    return 'Povjerljivi pretpregled – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dosegnuto je današnje ograničenje analiza ovog pretpregleda. Pokušajte ponovno sutra.';
 }

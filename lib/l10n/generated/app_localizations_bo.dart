@@ -1331,4 +1331,37 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get navAlerts => 'ཉེན་བརྡ';
+
+  @override
+  String get inviteTitle => 'ཁ་བརྒྱབ་པའི་སྔོན་ལྟ།';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ད་ལྟ་མགྲོན་འབོད་ཁོ་ནས་བེད་སྤྱོད་བྱེད་ཐུབ། ཁྱེད་ཀྱིས་འཐོབ་པའི་མགྲོན་འབོད་ཨང་འཇུག་རོགས།';
+
+  @override
+  String get inviteCodeLabel => 'མགྲོན་འབོད་ཨང';
+
+  @override
+  String get inviteContinue => 'མུ་མཐུད།';
+
+  @override
+  String get inviteInvalid => 'མགྲོན་འབོད་ཨང་འདི་ནུས་མེད་རེད།';
+
+  @override
+  String get inviteExpired =>
+      'མགྲོན་འབོད་འདིའི་དུས་ཡོལ་སོང་། ཁྱེད་ལ་མགྲོན་འབོད་བྱས་མཁན་དེར་ཨང་གསར་པ་ཞིག་ཞུ་རོགས།';
+
+  @override
+  String get inviteDeviceLimit =>
+      'མགྲོན་འབོད་ཨང་འདི་སྒྲིག་ཆས་གྲངས་ཚད་མཐོ་ཤོས་སྟེང་བེད་སྤྱོད་བྱས་ཟིན།';
+
+  @override
+  String previewFor(String name) {
+    return '$name ཆེད་ཀྱི་གསང་བའི་སྔོན་ལྟ།';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'སྔོན་ལྟ་འདིའི་དེ་རིང་གི་དབྱེ་ཞིབ་ཚད་བཀག་ལ་སླེབས་སོང་། སང་ཉིན་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།';
 }

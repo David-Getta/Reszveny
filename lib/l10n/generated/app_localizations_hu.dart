@@ -1340,4 +1340,37 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Riasztások';
+
+  @override
+  String get inviteTitle => 'Zárt előzetes';
+
+  @override
+  String get inviteBody =>
+      'A WhatStock egyelőre csak meghívással használható. Írd be a kapott meghívókódot.';
+
+  @override
+  String get inviteCodeLabel => 'Meghívókód';
+
+  @override
+  String get inviteContinue => 'Tovább';
+
+  @override
+  String get inviteInvalid => 'Ez a meghívókód nem érvényes.';
+
+  @override
+  String get inviteExpired =>
+      'Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ezt a meghívókódot már a megengedett számú eszközön használják.';
+
+  @override
+  String previewFor(String name) {
+    return 'Bizalmas előzetes – $name részére';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap.';
 }

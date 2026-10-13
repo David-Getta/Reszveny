@@ -1334,4 +1334,37 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get navAlerts => 'Duýduryşlar';
+
+  @override
+  String get inviteTitle => 'Ýapyk deslapky wersiýa';
+
+  @override
+  String get inviteBody =>
+      'WhatStock häzirlikçe diňe çakylyk boýunça elýeterlidir. Alan çakylyk koduňyzy giriziň.';
+
+  @override
+  String get inviteCodeLabel => 'Çakylyk kody';
+
+  @override
+  String get inviteContinue => 'Dowam et';
+
+  @override
+  String get inviteInvalid => 'Bu çakylyk kody nädogry.';
+
+  @override
+  String get inviteExpired =>
+      'Bu çakylygyň möhleti geçdi. Sizi çagyran adamdan täze kod soraň.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Bu çakylyk kody eýýäm rugsat berlen iň köp enjamda ulanylýar.';
+
+  @override
+  String previewFor(String name) {
+    return '$name üçin gizlin deslapky wersiýa';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň.';
 }

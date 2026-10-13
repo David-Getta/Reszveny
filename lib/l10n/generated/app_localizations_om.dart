@@ -1338,4 +1338,37 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get navAlerts => 'Akeekkachiisa';
+
+  @override
+  String get inviteTitle => 'Duraan-argii cufaa';
+
+  @override
+  String get inviteBody =>
+      'WhatStock amma affeerraan qofa argama. Koodii affeerraa siif ergame galchi.';
+
+  @override
+  String get inviteCodeLabel => 'Koodii affeerraa';
+
+  @override
+  String get inviteContinue => 'Itti fufi';
+
+  @override
+  String get inviteInvalid => 'Koodiin affeerraa kun sirrii miti.';
+
+  @override
+  String get inviteExpired =>
+      'Affeerraan kun yeroon isaa darbeera. Nama si affeere koodii haaraa gaafadhu.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Koodiin affeerraa kun duraanuu meeshaalee lakkoofsa olaanaa hayyamameerratti fayyadamaa jira.';
+
+  @override
+  String previewFor(String name) {
+    return 'Duraan-argii icciitii: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Daangaan xiinxala har\'aa duraan-argii kanaa ga\'eera. Boru irra deebi\'ii yaali.';
 }

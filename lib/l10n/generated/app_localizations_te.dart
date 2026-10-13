@@ -1339,4 +1339,37 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get navAlerts => 'హెచ్చరికలు';
+
+  @override
+  String get inviteTitle => 'మూసివేసిన ప్రివ్యూ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ప్రస్తుతం ఆహ్వానం ద్వారా మాత్రమే అందుబాటులో ఉంది. మీకు అందిన ఆహ్వాన కోడ్‌ను నమోదు చేయండి.';
+
+  @override
+  String get inviteCodeLabel => 'ఆహ్వాన కోడ్';
+
+  @override
+  String get inviteContinue => 'కొనసాగించు';
+
+  @override
+  String get inviteInvalid => 'ఈ ఆహ్వాన కోడ్ చెల్లదు.';
+
+  @override
+  String get inviteExpired =>
+      'ఈ ఆహ్వానం గడువు ముగిసింది. మిమ్మల్ని ఆహ్వానించిన వ్యక్తిని కొత్త కోడ్ అడగండి.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ఈ ఆహ్వాన కోడ్ ఇప్పటికే గరిష్ఠ సంఖ్యలో పరికరాల్లో ఉపయోగంలో ఉంది.';
+
+  @override
+  String previewFor(String name) {
+    return '$name కోసం గోప్య ప్రివ్యూ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ఈ ప్రివ్యూ యొక్క నేటి విశ్లేషణ పరిమితి చేరుకుంది. రేపు మళ్లీ ప్రయత్నించండి.';
 }

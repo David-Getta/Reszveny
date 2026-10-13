@@ -1336,4 +1336,37 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get navAlerts => 'Hälytykset';
+
+  @override
+  String get inviteTitle => 'Suljettu esiversio';
+
+  @override
+  String get inviteBody =>
+      'WhatStock on toistaiseksi saatavilla vain kutsusta. Anna saamasi kutsukoodi.';
+
+  @override
+  String get inviteCodeLabel => 'Kutsukoodi';
+
+  @override
+  String get inviteContinue => 'Jatka';
+
+  @override
+  String get inviteInvalid => 'Tämä kutsukoodi ei ole voimassa.';
+
+  @override
+  String get inviteExpired =>
+      'Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.';
+
+  @override
+  String previewFor(String name) {
+    return 'Luottamuksellinen esiversio: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna.';
 }

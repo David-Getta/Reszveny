@@ -1369,4 +1369,37 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get navAlerts => 'Upozornění';
+
+  @override
+  String get inviteTitle => 'Uzavřená předběžná verze';
+
+  @override
+  String get inviteBody =>
+      'WhatStock je zatím dostupný jen na pozvánku. Zadejte kód z pozvánky, který jste obdrželi.';
+
+  @override
+  String get inviteCodeLabel => 'Kód pozvánky';
+
+  @override
+  String get inviteContinue => 'Pokračovat';
+
+  @override
+  String get inviteInvalid => 'Tento kód pozvánky není platný.';
+
+  @override
+  String get inviteExpired =>
+      'Platnost této pozvánky vypršela. Požádejte o nový kód osobu, která vás pozvala.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Tento kód pozvánky se už používá na maximálním počtu zařízení.';
+
+  @override
+  String previewFor(String name) {
+    return 'Důvěrná předběžná verze – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dnešní limit analýz této předběžné verze byl vyčerpán. Zkuste to znovu zítra.';
 }

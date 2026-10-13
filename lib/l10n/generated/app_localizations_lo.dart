@@ -1322,4 +1322,37 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get navAlerts => 'ແຈ້ງເຕືອນ';
+
+  @override
+  String get inviteTitle => 'ເວີຊັນຕົວຢ່າງແບບປິດ';
+
+  @override
+  String get inviteBody =>
+      'ຕອນນີ້ WhatStock ໃຊ້ໄດ້ສະເພາະຜູ້ທີ່ໄດ້ຮັບເຊີນເທົ່ານັ້ນ ກະລຸນາປ້ອນລະຫັດເຊີນທີ່ທ່ານໄດ້ຮັບ';
+
+  @override
+  String get inviteCodeLabel => 'ລະຫັດເຊີນ';
+
+  @override
+  String get inviteContinue => 'ສືບຕໍ່';
+
+  @override
+  String get inviteInvalid => 'ລະຫັດເຊີນນີ້ບໍ່ຖືກຕ້ອງ';
+
+  @override
+  String get inviteExpired =>
+      'ຄຳເຊີນນີ້ໝົດອາຍຸແລ້ວ ກະລຸນາຂໍລະຫັດໃໝ່ຈາກຜູ້ທີ່ເຊີນທ່ານ';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ລະຫັດເຊີນນີ້ຖືກໃຊ້ໃນອຸປະກອນຄົບຈຳນວນສູງສຸດແລ້ວ';
+
+  @override
+  String previewFor(String name) {
+    return 'ເວີຊັນຕົວຢ່າງລັບສຳລັບ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
 }

@@ -1339,4 +1339,37 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get navAlerts => 'അലേർട്ടുകൾ';
+
+  @override
+  String get inviteTitle => 'ക്ലോസ്ഡ് പ്രിവ്യൂ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ഇപ്പോൾ ക്ഷണം വഴി മാത്രമേ ലഭ്യമാകൂ. നിങ്ങൾക്ക് ലഭിച്ച ക്ഷണ കോഡ് നൽകുക.';
+
+  @override
+  String get inviteCodeLabel => 'ക്ഷണ കോഡ്';
+
+  @override
+  String get inviteContinue => 'തുടരുക';
+
+  @override
+  String get inviteInvalid => 'ഈ ക്ഷണ കോഡ് സാധുവല്ല.';
+
+  @override
+  String get inviteExpired =>
+      'ഈ ക്ഷണത്തിന്റെ കാലാവധി കഴിഞ്ഞു. നിങ്ങളെ ക്ഷണിച്ച വ്യക്തിയോട് പുതിയ കോഡ് ചോദിക്കുക.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ഈ ക്ഷണ കോഡ് ഇതിനകം പരമാവധി എണ്ണം ഉപകരണങ്ങളിൽ ഉപയോഗത്തിലുണ്ട്.';
+
+  @override
+  String previewFor(String name) {
+    return '$name-നുള്ള രഹസ്യ പ്രിവ്യൂ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ഈ പ്രിവ്യൂവിന്റെ ഇന്നത്തെ വിശകലന പരിധി എത്തി. നാളെ വീണ്ടും ശ്രമിക്കുക.';
 }

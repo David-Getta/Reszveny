@@ -1330,4 +1330,37 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get navAlerts => 'خبرتیاوې';
+
+  @override
+  String get inviteTitle => 'تړلې مخکتنه';
+
+  @override
+  String get inviteBody =>
+      'WhatStock اوس مهال یوازې د بلنې له لارې شتون لري. هغه د بلنې کوډ ولیکئ چې تاسو ترلاسه کړی دی.';
+
+  @override
+  String get inviteCodeLabel => 'د بلنې کوډ';
+
+  @override
+  String get inviteContinue => 'دوام ورکړئ';
+
+  @override
+  String get inviteInvalid => 'دا د بلنې کوډ اعتبار نه لري.';
+
+  @override
+  String get inviteExpired =>
+      'د دې بلنې موده پای ته رسېدلې. له هغه چا نوی کوډ وغواړئ چې تاسو یې رابللي یاست.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'دا د بلنې کوډ لا دمخه د اعظمي شمېر وسیلو پر مخ کارول کېږي.';
+
+  @override
+  String previewFor(String name) {
+    return 'د $name لپاره محرمه مخکتنه';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'د دې مخکتنې د نن ورځې د تحلیلونو حد پوره شوی. سبا بیا هڅه وکړئ.';
 }

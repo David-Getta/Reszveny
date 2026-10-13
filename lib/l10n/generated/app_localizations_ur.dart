@@ -1333,4 +1333,37 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get navAlerts => 'الرٹس';
+
+  @override
+  String get inviteTitle => 'نجی پیش نظارہ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock فی الحال صرف دعوت کے ذریعے دستیاب ہے۔ آپ کو موصول ہونے والا دعوتی کوڈ درج کریں۔';
+
+  @override
+  String get inviteCodeLabel => 'دعوتی کوڈ';
+
+  @override
+  String get inviteContinue => 'جاری رکھیں';
+
+  @override
+  String get inviteInvalid => 'یہ دعوتی کوڈ درست نہیں ہے۔';
+
+  @override
+  String get inviteExpired =>
+      'اس دعوت کی میعاد ختم ہو گئی ہے۔ جس شخص نے آپ کو مدعو کیا تھا اس سے نیا کوڈ مانگیں۔';
+
+  @override
+  String get inviteDeviceLimit =>
+      'یہ دعوتی کوڈ پہلے ہی زیادہ سے زیادہ اجازت شدہ آلات پر استعمال ہو رہا ہے۔';
+
+  @override
+  String previewFor(String name) {
+    return '$name کے لیے خفیہ پیش نظارہ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'اس پیش نظارے کی آج کی تجزیے کی حد پوری ہو گئی ہے۔ کل دوبارہ کوشش کریں۔';
 }

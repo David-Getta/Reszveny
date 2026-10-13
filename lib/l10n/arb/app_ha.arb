@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} a wata",
   "subscriptionLegalYearly": "Biyan kuɗin shekara-shekara yana sabunta kansa kowace shekara har sai ka soke. Ta hanyar biyan kuɗi ka yarda da Sharuɗɗan Amfani da Manufar Sirri.",
   "myAnalyses": "Nazarina",
-  "navAlerts": "Faɗakarwa"
+  "navAlerts": "Faɗakarwa",
+  "inviteTitle": "Duban farko na musamman",
+  "inviteBody": "A yanzu ana samun WhatStock ne ta hanyar gayyata kawai. Shigar da lambar gayyatar da ka karɓa.",
+  "inviteCodeLabel": "Lambar gayyata",
+  "inviteContinue": "Ci gaba",
+  "inviteInvalid": "Wannan lambar gayyata ba ta da inganci.",
+  "inviteExpired": "Wannan gayyatar ta ƙare. Nemi sabuwar lamba daga wanda ya gayyace ka.",
+  "inviteDeviceLimit": "An riga an yi amfani da wannan lambar gayyata a iyakar adadin na'urori da aka yarda.",
+  "previewFor": "Duban farko na sirri don {name}",
+  "errPreviewDailyLimit": "An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe."
 }

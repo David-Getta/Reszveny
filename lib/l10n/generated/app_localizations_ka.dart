@@ -1336,4 +1336,37 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get navAlerts => 'შეტყობინებები';
+
+  @override
+  String get inviteTitle => 'დახურული წინასწარი ვერსია';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ამჟამად მხოლოდ მოწვევით არის ხელმისაწვდომი. შეიყვანეთ მიღებული მოწვევის კოდი.';
+
+  @override
+  String get inviteCodeLabel => 'მოწვევის კოდი';
+
+  @override
+  String get inviteContinue => 'გაგრძელება';
+
+  @override
+  String get inviteInvalid => 'მოწვევის ეს კოდი არასწორია.';
+
+  @override
+  String get inviteExpired =>
+      'ამ მოწვევას ვადა გაუვიდა. ახალი კოდი სთხოვეთ იმას, ვინც მოგიწვიათ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'მოწვევის ეს კოდი უკვე გამოიყენება მოწყობილობების მაქსიმალურ დასაშვებ რაოდენობაზე.';
+
+  @override
+  String previewFor(String name) {
+    return 'კონფიდენციალური ვერსია: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ამ წინასწარი ვერსიის დღევანდელი ანალიზების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
 }

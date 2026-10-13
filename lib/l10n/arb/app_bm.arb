@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kalo o kalo",
   "subscriptionLegalYearly": "Abɔnɛmanw bɛ kuraya u yɛrɛ ma san o san fo i k’u dabila. Ni i ye abɔnɛ kɛ, i sɔnna Baarakɛcogo sariyaw ni Gundo marali sariyaw ma.",
   "myAnalyses": "N ka sɛgɛsɛgɛliw",
-  "navAlerts": "Lasɔminiw"
+  "navAlerts": "Lasɔminiw",
+  "inviteTitle": "Kɔrɔbɔli datugulen",
+  "inviteBody": "Sisan, WhatStock bɛ sɔrɔ weleli dɔrɔn de fɛ. I ye weleli kode min sɔrɔ, o sɛbɛn.",
+  "inviteCodeLabel": "Weleli kode",
+  "inviteContinue": "Taa a fɛ",
+  "inviteInvalid": "Nin weleli kode in ma ɲɛ.",
+  "inviteExpired": "Nin weleli in waati tɛmɛna. Mɔgɔ min ye i wele, kode kura ɲini o fɛ.",
+  "inviteDeviceLimit": "Nin weleli kode in bɛ ka baara kɛ minɛn hakɛ laban kan kaban.",
+  "previewFor": "Kɔrɔbɔli gundolen {name} ye",
+  "errPreviewDailyLimit": "Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini."
 }

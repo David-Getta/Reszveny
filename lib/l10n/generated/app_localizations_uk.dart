@@ -1372,4 +1372,37 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get navAlerts => 'Сповіщення';
+
+  @override
+  String get inviteTitle => 'Закритий попередній перегляд';
+
+  @override
+  String get inviteBody =>
+      'WhatStock поки що доступний лише за запрошенням. Введіть отриманий код запрошення.';
+
+  @override
+  String get inviteCodeLabel => 'Код запрошення';
+
+  @override
+  String get inviteContinue => 'Продовжити';
+
+  @override
+  String get inviteInvalid => 'Цей код запрошення недійсний.';
+
+  @override
+  String get inviteExpired =>
+      'Термін дії цього запрошення минув. Попросіть новий код у людини, яка вас запросила.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Цей код запрошення вже використовується на максимальній кількості пристроїв.';
+
+  @override
+  String previewFor(String name) {
+    return 'Конфіденційний перегляд для $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Денний ліміт аналізів цього попереднього перегляду вичерпано. Спробуйте ще раз завтра.';
 }

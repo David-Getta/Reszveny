@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per maand",
   "subscriptionLegalYearly": "Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid.",
   "myAnalyses": "My ontledings",
-  "navAlerts": "Waarskuwings"
+  "navAlerts": "Waarskuwings",
+  "inviteTitle": "Geslote voorskou",
+  "inviteBody": "WhatStock is tans slegs op uitnodiging beskikbaar. Voer die uitnodigingskode in wat jy ontvang het.",
+  "inviteCodeLabel": "Uitnodigingskode",
+  "inviteContinue": "Gaan voort",
+  "inviteInvalid": "Hierdie uitnodigingskode is nie geldig nie.",
+  "inviteExpired": "Hierdie uitnodiging het verval. Vra die persoon wat jou genooi het vir ’n nuwe kode.",
+  "inviteDeviceLimit": "Hierdie uitnodigingskode word reeds op die maksimum aantal toestelle gebruik.",
+  "previewFor": "Vertroulike voorskou vir {name}",
+  "errPreviewDailyLimit": "Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer."
 }

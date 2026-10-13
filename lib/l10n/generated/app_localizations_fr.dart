@@ -1341,4 +1341,37 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alertes';
+
+  @override
+  String get inviteTitle => 'Préversion fermée';
+
+  @override
+  String get inviteBody =>
+      'WhatStock est pour l’instant accessible uniquement sur invitation. Saisissez le code d’invitation que vous avez reçu.';
+
+  @override
+  String get inviteCodeLabel => 'Code d’invitation';
+
+  @override
+  String get inviteContinue => 'Continuer';
+
+  @override
+  String get inviteInvalid => 'Ce code d’invitation n’est pas valide.';
+
+  @override
+  String get inviteExpired =>
+      'Cette invitation a expiré. Demandez un nouveau code à la personne qui vous a invité.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ce code d’invitation est déjà utilisé sur le nombre maximal d’appareils.';
+
+  @override
+  String previewFor(String name) {
+    return 'Préversion confidentielle pour $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'La limite quotidienne d’analyses de cette préversion est atteinte. Réessayez demain.';
 }

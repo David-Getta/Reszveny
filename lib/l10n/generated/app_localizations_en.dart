@@ -1334,4 +1334,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerts';
+
+  @override
+  String get inviteTitle => 'Closed preview';
+
+  @override
+  String get inviteBody =>
+      'WhatStock is available by invitation only for now. Enter the invite code you received.';
+
+  @override
+  String get inviteCodeLabel => 'Invite code';
+
+  @override
+  String get inviteContinue => 'Continue';
+
+  @override
+  String get inviteInvalid => 'This invite code is not valid.';
+
+  @override
+  String get inviteExpired =>
+      'This invite has expired. Ask the person who invited you for a new code.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'This invite code is already in use on the maximum number of devices.';
+
+  @override
+  String previewFor(String name) {
+    return 'Confidential preview for $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Today\'s analysis limit of this preview has been reached. Try again tomorrow.';
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
   "subscriptionLegalYearly": "Dingwadišo tša ngwaga di mpshafatšwa ka go itiragalela ngwaga le ngwaga go fihlela o di khansela. Ka go ingwadiša o amogela Mabaka a Tšhomišo le Pholisi ya Sephiri.",
   "myAnalyses": "Ditshekatsheko tša ka",
-  "navAlerts": "Ditemošo"
+  "navAlerts": "Ditemošo",
+  "inviteTitle": "Ponelopele ye e tswaletšwego",
+  "inviteBody": "Gabjale WhatStock e hwetšagala ka taletšo fela. Tsenya khoutu ya taletšo yeo o e amogetšego.",
+  "inviteCodeLabel": "Khoutu ya taletšo",
+  "inviteContinue": "Tšwela pele",
+  "inviteInvalid": "Khoutu ye ya taletšo ga e šome.",
+  "inviteExpired": "Taletšo ye e fedile. Kgopela motho yo a go laleditšego khoutu ye mpsha.",
+  "inviteDeviceLimit": "Khoutu ye ya taletšo e šetše e šomišwa go palo ye kgolo kudu ya didirišwa.",
+  "previewFor": "Ponelopele ya sephiri ya {name}",
+  "errPreviewDailyLimit": "Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa."
 }

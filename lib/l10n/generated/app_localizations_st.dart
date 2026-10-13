@@ -1342,4 +1342,37 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ditsebiso';
+
+  @override
+  String get inviteTitle => 'Ponelopele e kwetsweng';
+
+  @override
+  String get inviteBody =>
+      'WhatStock e fumaneha ka memo feela hajwale. Kenya khoutu ya memo eo o e fumaneng.';
+
+  @override
+  String get inviteCodeLabel => 'Khoutu ya memo';
+
+  @override
+  String get inviteContinue => 'Tswela pele';
+
+  @override
+  String get inviteInvalid => 'Khoutu ena ya memo ha e nepahale.';
+
+  @override
+  String get inviteExpired =>
+      'Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Khoutu ena ya memo e se e sebediswa palong e phahameng ka ho fetisisa ya disebediswa tse dumelletsweng.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ponelopele ya lekunutu ya $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane.';
 }

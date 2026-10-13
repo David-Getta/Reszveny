@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} al mes",
   "subscriptionLegalYearly": "La suscripción anual se renueva automáticamente cada año hasta que la canceles. Al suscribirte aceptas las Condiciones de uso y la Política de privacidad.",
   "myAnalyses": "Mis análisis",
-  "navAlerts": "Alertas"
+  "navAlerts": "Alertas",
+  "inviteTitle": "Versión preliminar cerrada",
+  "inviteBody": "Por ahora, WhatStock solo está disponible por invitación. Introduce el código de invitación que recibiste.",
+  "inviteCodeLabel": "Código de invitación",
+  "inviteContinue": "Continuar",
+  "inviteInvalid": "Este código de invitación no es válido.",
+  "inviteExpired": "Esta invitación ha caducado. Pide un código nuevo a la persona que te invitó.",
+  "inviteDeviceLimit": "Este código de invitación ya se está usando en el número máximo de dispositivos.",
+  "previewFor": "Versión preliminar confidencial para {name}",
+  "errPreviewDailyLimit": "Se ha alcanzado el límite de análisis de hoy de esta versión preliminar. Vuelve a intentarlo mañana."
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kada bulan",
   "subscriptionLegalYearly": "Ang tinuig nga subscription awtomatiko nga nagare-renew kada tuig tubtob nga i-kansela mo. Sa pag-subscribe, ginabaton mo ang Mga Termino sang Paggamit kag ang Palisiya sa Privacy.",
   "myAnalyses": "Akon mga analisis",
-  "navAlerts": "Mga alerto"
+  "navAlerts": "Mga alerto",
+  "inviteTitle": "Sirado nga preview",
+  "inviteBody": "Sa subong, paagi lang sa imbitasyon makagamit sang WhatStock. Isulod ang code sang imbitasyon nga nabaton mo.",
+  "inviteCodeLabel": "Code sang imbitasyon",
+  "inviteContinue": "Padayon",
+  "inviteInvalid": "Indi balido ini nga code sang imbitasyon.",
+  "inviteExpired": "Expired na ini nga imbitasyon. Pangayo sang bag-o nga code sa tawo nga nag-imbitar sa imo.",
+  "inviteDeviceLimit": "Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.",
+  "previewFor": "Kumpidensyal nga preview para kay {name}",
+  "errPreviewDailyLimit": "Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas."
 }

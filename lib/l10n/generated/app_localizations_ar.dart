@@ -1353,4 +1353,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get navAlerts => 'التنبيهات';
+
+  @override
+  String get inviteTitle => 'معاينة مغلقة';
+
+  @override
+  String get inviteBody =>
+      'WhatStock متاح حاليًا بالدعوة فقط. أدخل رمز الدعوة الذي تلقيته.';
+
+  @override
+  String get inviteCodeLabel => 'رمز الدعوة';
+
+  @override
+  String get inviteContinue => 'متابعة';
+
+  @override
+  String get inviteInvalid => 'رمز الدعوة هذا غير صالح.';
+
+  @override
+  String get inviteExpired =>
+      'انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من الشخص الذي دعاك.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'رمز الدعوة هذا مستخدم بالفعل على الحد الأقصى من الأجهزة.';
+
+  @override
+  String previewFor(String name) {
+    return 'معاينة سرية لـ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا.';
 }

@@ -1374,4 +1374,37 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get navAlerts => 'Opozorila';
+
+  @override
+  String get inviteTitle => 'Zaprti predogled';
+
+  @override
+  String get inviteBody =>
+      'WhatStock je zaenkrat na voljo samo na povabilo. Vnesite kodo povabila, ki ste jo prejeli.';
+
+  @override
+  String get inviteCodeLabel => 'Koda povabila';
+
+  @override
+  String get inviteContinue => 'Nadaljuj';
+
+  @override
+  String get inviteInvalid => 'Ta koda povabila ni veljavna.';
+
+  @override
+  String get inviteExpired =>
+      'To povabilo je poteklo. Za novo kodo prosite osebo, ki vas je povabila.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ta koda povabila je že v uporabi na največjem dovoljenem številu naprav.';
+
+  @override
+  String previewFor(String name) {
+    return 'Zaupni predogled – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Današnja omejitev analiz za ta predogled je dosežena. Poskusite znova jutri.';
 }

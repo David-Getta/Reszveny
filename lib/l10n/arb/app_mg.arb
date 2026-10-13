@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} isam-bolana",
   "subscriptionLegalYearly": "Havaozina ho azy isan-taona ny famandrihana mandra-pahafoananao azy. Amin'ny fanaovana famandrihana dia manaiky ny Fepetra fampiasana sy ny Politikan'ny fiainana manokana ianao.",
   "myAnalyses": "Ny fandalinako",
-  "navAlerts": "Fanairana"
+  "navAlerts": "Fanairana",
+  "inviteTitle": "Fijery mialoha mihidy",
+  "inviteBody": "Amin'ny fanasana ihany no azo ampiasana ny WhatStock amin'izao fotoana izao. Ampidiro ny kaody fanasana noraisinao.",
+  "inviteCodeLabel": "Kaody fanasana",
+  "inviteContinue": "Tohizana",
+  "inviteInvalid": "Tsy manan-kery io kaody fanasana io.",
+  "inviteExpired": "Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.",
+  "inviteDeviceLimit": "Efa ampiasaina amin'ny isan'ny fitaovana farafahabetsany io kaody fanasana io.",
+  "previewFor": "Fijery mialoha tsiambaratelo ho an'i {name}",
+  "errPreviewDailyLimit": "Tratra ny fetran'ny fanadihadiana androany amin'ity fijery mialoha ity. Andramo indray rahampitso."
 }

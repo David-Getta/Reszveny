@@ -1331,4 +1331,37 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get navAlerts => 'Tintine';
+
+  @override
+  String get inviteTitle => 'Ƴeewndo adano uddiingo';
+
+  @override
+  String get inviteBody =>
+      'Jooni, WhatStock heɓetee tan e noddaangal. Winndu kod noddaangal ngal keɓɗaa.';
+
+  @override
+  String get inviteCodeLabel => 'Kod noddaangal';
+
+  @override
+  String get inviteContinue => 'Jokku';
+
+  @override
+  String get inviteInvalid => 'Kod noddaangal ngal moƴƴaani.';
+
+  @override
+  String get inviteExpired =>
+      'Noddaangal ngal buntii. Ɗaɓɓit kod kesum to neɗɗo noddiiɗo ma.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kod noddaangal ngal no huutoraa e limoore kaɓirɗe ɓurnde ndee.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ƴeewndo suuɗiingo ngam $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo.';
 }

@@ -1340,4 +1340,37 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ծանուցումներ';
+
+  @override
+  String get inviteTitle => 'Փակ նախադիտում';
+
+  @override
+  String get inviteBody =>
+      'WhatStock հավելվածը առայժմ հասանելի է միայն հրավերով։ Մուտքագրեք Ձեր ստացած հրավերի կոդը։';
+
+  @override
+  String get inviteCodeLabel => 'Հրավերի կոդ';
+
+  @override
+  String get inviteContinue => 'Շարունակել';
+
+  @override
+  String get inviteInvalid => 'Այս հրավերի կոդը վավեր չէ։';
+
+  @override
+  String get inviteExpired =>
+      'Այս հրավերի ժամկետն անցել է։ Նոր կոդ խնդրեք Ձեզ հրավիրողից։';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Այս հրավերի կոդն արդեն օգտագործվում է թույլատրելի առավելագույն թվով սարքերում։';
+
+  @override
+  String previewFor(String name) {
+    return 'Գաղտնի նախադիտում՝ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Այս նախադիտման վերլուծությունների այսօրվա սահմանաչափը սպառվել է։ Փորձեք կրկին վաղը։';
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} havonta",
   "subscriptionLegalYearly": "Az éves előfizetés évente automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót.",
   "myAnalyses": "Elemzéseim",
-  "navAlerts": "Riasztások"
+  "navAlerts": "Riasztások",
+  "inviteTitle": "Zárt előzetes",
+  "inviteBody": "A WhatStock egyelőre csak meghívással használható. Írd be a kapott meghívókódot.",
+  "inviteCodeLabel": "Meghívókód",
+  "inviteContinue": "Tovább",
+  "inviteInvalid": "Ez a meghívókód nem érvényes.",
+  "inviteExpired": "Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.",
+  "inviteDeviceLimit": "Ezt a meghívókódot már a megengedett számú eszközön használják.",
+  "previewFor": "Bizalmas előzetes – {name} részére",
+  "errPreviewDailyLimit": "Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap."
 }

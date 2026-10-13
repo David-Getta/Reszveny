@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kwa ọnwa",
   "subscriptionLegalYearly": "Ndenye aha nke afọ na-emeghari onwe ya kwa afọ ruo mgbe ị kagbuo ya. Site n'idenye aha, ị nabatara Usoro Ojiji na Iwu Nzuzo.",
   "myAnalyses": "Nyocha m",
-  "navAlerts": "Ọkwa"
+  "navAlerts": "Ọkwa",
+  "inviteTitle": "Nlele mbụ emechiri emechi",
+  "inviteBody": "Ugbu a, WhatStock dị naanị site na òkù. Tinye koodu òkù i nwetara.",
+  "inviteCodeLabel": "Koodu òkù",
+  "inviteContinue": "Gaa n'ihu",
+  "inviteInvalid": "Koodu òkù a ezighi ezi.",
+  "inviteExpired": "Oge òkù a agafeela. Rịọ onye kpọrọ gị òkù ka o nye gị koodu ọhụrụ.",
+  "inviteDeviceLimit": "A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.",
+  "previewFor": "Nlele mbụ nzuzo maka {name}",
+  "errPreviewDailyLimit": "Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi."
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ku ngondo",
   "subscriptionLegalYearly": "Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe.",
   "myAnalyses": "Makonkonona anyi",
-  "navAlerts": "Alerte"
+  "navAlerts": "Alerte",
+  "inviteTitle": "Ditangila dia kumpala dia musokoko",
+  "inviteBody": "Mpindieu, WhatStock udi anu bua bantu badi babikidibue. Funda code wa dibikila uvua mupete.",
+  "inviteCodeLabel": "Code wa dibikila",
+  "inviteContinue": "Tungunuka",
+  "inviteInvalid": "Code wa dibikila eu udi ne tshilema.",
+  "inviteExpired": "Dîba dia dibikila edi diapita. Lomba code mupiamupia kudi muntu uvua mukubikile.",
+  "inviteDeviceLimit": "Code wa dibikila eu udi mutumika kale ku bungi bua bintu bia bungi menemene bidi bianyishibue.",
+  "previewFor": "Ditangila dia musokoko bua {name}",
+  "errPreviewDailyLimit": "Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela."
 }

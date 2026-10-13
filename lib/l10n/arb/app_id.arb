@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per bulan",
   "subscriptionLegalYearly": "Langganan tahunan diperpanjang otomatis setiap tahun sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi.",
   "myAnalyses": "Analisis saya",
-  "navAlerts": "Peringatan"
+  "navAlerts": "Peringatan",
+  "inviteTitle": "Pratinjau tertutup",
+  "inviteBody": "Untuk saat ini WhatStock hanya tersedia melalui undangan. Masukkan kode undangan yang Anda terima.",
+  "inviteCodeLabel": "Kode undangan",
+  "inviteContinue": "Lanjutkan",
+  "inviteInvalid": "Kode undangan ini tidak valid.",
+  "inviteExpired": "Undangan ini sudah kedaluwarsa. Mintalah kode baru kepada orang yang mengundang Anda.",
+  "inviteDeviceLimit": "Kode undangan ini sudah digunakan di jumlah perangkat maksimum.",
+  "previewFor": "Pratinjau rahasia untuk {name}",
+  "errPreviewDailyLimit": "Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok."
 }

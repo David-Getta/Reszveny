@@ -1337,4 +1337,37 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get navAlerts => 'Waarskuwings';
+
+  @override
+  String get inviteTitle => 'Geslote voorskou';
+
+  @override
+  String get inviteBody =>
+      'WhatStock is tans slegs op uitnodiging beskikbaar. Voer die uitnodigingskode in wat jy ontvang het.';
+
+  @override
+  String get inviteCodeLabel => 'Uitnodigingskode';
+
+  @override
+  String get inviteContinue => 'Gaan voort';
+
+  @override
+  String get inviteInvalid => 'Hierdie uitnodigingskode is nie geldig nie.';
+
+  @override
+  String get inviteExpired =>
+      'Hierdie uitnodiging het verval. Vra die persoon wat jou genooi het vir ’n nuwe kode.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Hierdie uitnodigingskode word reeds op die maksimum aantal toestelle gebruik.';
+
+  @override
+  String previewFor(String name) {
+    return 'Vertroulike voorskou vir $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer.';
 }

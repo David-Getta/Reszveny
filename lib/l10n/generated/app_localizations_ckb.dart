@@ -1335,4 +1335,37 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get navAlerts => 'ئاگادارییەکان';
+
+  @override
+  String get inviteTitle => 'پێشبینینی داخراو';
+
+  @override
+  String get inviteBody =>
+      'WhatStock بۆ ئێستا تەنها بە بانگهێشت بەردەستە. ئەو کۆدی بانگهێشتەی وەرتگرتووە بنووسە.';
+
+  @override
+  String get inviteCodeLabel => 'کۆدی بانگهێشت';
+
+  @override
+  String get inviteContinue => 'بەردەوامبە';
+
+  @override
+  String get inviteInvalid => 'ئەم کۆدی بانگهێشتە دروست نییە.';
+
+  @override
+  String get inviteExpired =>
+      'ئەم بانگهێشتە بەسەرچووە. داوای کۆدێکی نوێ لەو کەسە بکە کە بانگهێشتی کردوویت.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ئەم کۆدی بانگهێشتە پێشتر لەسەر زۆرترین ژمارەی ڕێپێدراوی ئامێر بەکاردێت.';
+
+  @override
+  String previewFor(String name) {
+    return 'پێشبینینی نهێنی بۆ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'سنووری شیکاریی ئەمڕۆی ئەم پێشبینینە تەواو بووە. سبەی دووبارە هەوڵ بدەرەوە.';
 }

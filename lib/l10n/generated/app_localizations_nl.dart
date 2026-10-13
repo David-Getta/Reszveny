@@ -1337,4 +1337,37 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerts';
+
+  @override
+  String get inviteTitle => 'Besloten preview';
+
+  @override
+  String get inviteBody =>
+      'WhatStock is voorlopig alleen op uitnodiging beschikbaar. Voer de uitnodigingscode in die je hebt ontvangen.';
+
+  @override
+  String get inviteCodeLabel => 'Uitnodigingscode';
+
+  @override
+  String get inviteContinue => 'Doorgaan';
+
+  @override
+  String get inviteInvalid => 'Deze uitnodigingscode is niet geldig.';
+
+  @override
+  String get inviteExpired =>
+      'Deze uitnodiging is verlopen. Vraag degene die je heeft uitgenodigd om een nieuwe code.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Deze uitnodigingscode wordt al op het maximale aantal apparaten gebruikt.';
+
+  @override
+  String previewFor(String name) {
+    return 'Vertrouwelijke preview voor $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'De analyselimiet van vandaag voor deze preview is bereikt. Probeer het morgen opnieuw.';
 }

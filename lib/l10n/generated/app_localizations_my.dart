@@ -1334,4 +1334,37 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get navAlerts => 'သတိပေးချက်';
+
+  @override
+  String get inviteTitle => 'ကန့်သတ်ထားသော အစမ်းကြည့်ရှုမှု';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ကို လောလောဆယ် ဖိတ်ကြားချက်ဖြင့်သာ အသုံးပြုနိုင်သည်။ သင်ရရှိထားသော ဖိတ်ကြားကုဒ်ကို ထည့်ပါ။';
+
+  @override
+  String get inviteCodeLabel => 'ဖိတ်ကြားကုဒ်';
+
+  @override
+  String get inviteContinue => 'ဆက်လုပ်ရန်';
+
+  @override
+  String get inviteInvalid => 'ဤဖိတ်ကြားကုဒ်သည် မမှန်ကန်ပါ။';
+
+  @override
+  String get inviteExpired =>
+      'ဤဖိတ်ကြားချက် သက်တမ်းကုန်သွားပြီ။ သင့်ကို ဖိတ်ကြားသူထံမှ ကုဒ်အသစ် တောင်းပါ။';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ဤဖိတ်ကြားကုဒ်ကို ခွင့်ပြုထားသော စက်အရေအတွက် အများဆုံးတွင် အသုံးပြုပြီးဖြစ်သည်။';
+
+  @override
+  String previewFor(String name) {
+    return '$name အတွက် လျှို့ဝှက် အစမ်းကြည့်ရှုမှု';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ဤအစမ်းကြည့်ရှုမှု၏ ယနေ့ ခွဲခြမ်းစိတ်ဖြာမှု ကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
 }

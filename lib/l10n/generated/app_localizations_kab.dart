@@ -1332,4 +1332,37 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ilɣa';
+
+  @override
+  String get inviteTitle => 'Taskant tamezwarut tamdelt';
+
+  @override
+  String get inviteBody =>
+      'WhatStock yella kan s tinubga i tura. Sekcem tangalt n tinubga i d-tremseḍ.';
+
+  @override
+  String get inviteCodeLabel => 'Tangalt n tinubga';
+
+  @override
+  String get inviteContinue => 'Kemmel';
+
+  @override
+  String get inviteInvalid => 'Tangalt-a n tinubga ur tṣeḥḥa ara.';
+
+  @override
+  String get inviteExpired =>
+      'Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.';
+
+  @override
+  String previewFor(String name) {
+    return 'Taskant tuffirt i $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka.';
 }

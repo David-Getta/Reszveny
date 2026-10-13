@@ -1312,4 +1312,36 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get navAlerts => 'ማንቂያዎች';
+
+  @override
+  String get inviteTitle => 'ዝግ ቅድመ እይታ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ለጊዜው የሚገኘው በግብዣ ብቻ ነው። የተቀበሉትን የግብዣ ኮድ ያስገቡ።';
+
+  @override
+  String get inviteCodeLabel => 'የግብዣ ኮድ';
+
+  @override
+  String get inviteContinue => 'ቀጥል';
+
+  @override
+  String get inviteInvalid => 'ይህ የግብዣ ኮድ ልክ አይደለም።';
+
+  @override
+  String get inviteExpired => 'ይህ ግብዣ ጊዜው አልፎበታል። የጋበዘዎትን ሰው አዲስ ኮድ ይጠይቁ።';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ይህ የግብዣ ኮድ በሚፈቀደው ከፍተኛ የመሣሪያዎች ብዛት ላይ አስቀድሞ ጥቅም ላይ እየዋለ ነው።';
+
+  @override
+  String previewFor(String name) {
+    return 'ሚስጥራዊ ቅድመ እይታ ለ$name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።';
 }

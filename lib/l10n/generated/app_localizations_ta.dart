@@ -1340,4 +1340,37 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get navAlerts => 'எச்சரிக்கைகள்';
+
+  @override
+  String get inviteTitle => 'மூடிய முன்னோட்டம்';
+
+  @override
+  String get inviteBody =>
+      'WhatStock தற்போது அழைப்பின் மூலம் மட்டுமே கிடைக்கிறது. நீங்கள் பெற்ற அழைப்புக் குறியீட்டை உள்ளிடவும்.';
+
+  @override
+  String get inviteCodeLabel => 'அழைப்புக் குறியீடு';
+
+  @override
+  String get inviteContinue => 'தொடர்க';
+
+  @override
+  String get inviteInvalid => 'இந்த அழைப்புக் குறியீடு செல்லாது.';
+
+  @override
+  String get inviteExpired =>
+      'இந்த அழைப்பு காலாவதியாகிவிட்டது. உங்களை அழைத்தவரிடம் புதிய குறியீட்டைக் கேளுங்கள்.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'இந்த அழைப்புக் குறியீடு ஏற்கனவே அனுமதிக்கப்பட்ட அதிகபட்ச எண்ணிக்கையிலான சாதனங்களில் பயன்பாட்டில் உள்ளது.';
+
+  @override
+  String previewFor(String name) {
+    return '$name அவர்களுக்கான ரகசிய முன்னோட்டம்';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'இந்த முன்னோட்டத்தின் இன்றைய பகுப்பாய்வு வரம்பு எட்டப்பட்டது. நாளை மீண்டும் முயலவும்.';
 }

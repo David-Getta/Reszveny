@@ -1309,4 +1309,35 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get navAlerts => 'መጠንቀቕታታት';
+
+  @override
+  String get inviteTitle => 'ዝተዓጽወ ቅድመ-ርእይቶ';
+
+  @override
+  String get inviteBody => 'WhatStock ሕጂ ብዕድመ ጥራይ እዩ ዝርከብ። ዝበጽሓኩም ኮድ ዕድመ የእትዉ።';
+
+  @override
+  String get inviteCodeLabel => 'ኮድ ዕድመ';
+
+  @override
+  String get inviteContinue => 'ቀጽሉ';
+
+  @override
+  String get inviteInvalid => 'እዚ ኮድ ዕድመ ቅቡል ኣይኮነን።';
+
+  @override
+  String get inviteExpired => 'እዚ ዕድመ ግዜኡ ሓሊፉ። ካብቲ ዝዓደመኩም ሰብ ሓድሽ ኮድ ሕተቱ።';
+
+  @override
+  String get inviteDeviceLimit =>
+      'እዚ ኮድ ዕድመ ድሮ ኣብቲ ዝለዓለ ዝፍቀድ ቁጽሪ መሳርሒታት ይጥቀመሉ ኣሎ።';
+
+  @override
+  String previewFor(String name) {
+    return 'ምስጢራዊ ቅድመ-ርእይቶ ን$name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ናይ ሎሚ ደረት ትንተና ናይዚ ቅድመ-ርእይቶ ተበጺሑ። ጽባሕ እንደገና ፈትኑ።';
 }

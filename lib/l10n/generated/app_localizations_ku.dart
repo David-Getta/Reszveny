@@ -1337,4 +1337,37 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Hişyarî';
+
+  @override
+  String get inviteTitle => 'Pêşdîtina girtî';
+
+  @override
+  String get inviteBody =>
+      'WhatStock niha tenê bi vexwendinê heye. Koda vexwendinê ya ku te wergirtiye binivîse.';
+
+  @override
+  String get inviteCodeLabel => 'Koda vexwendinê';
+
+  @override
+  String get inviteContinue => 'Bidomîne';
+
+  @override
+  String get inviteInvalid => 'Ev koda vexwendinê ne derbasdar e.';
+
+  @override
+  String get inviteExpired =>
+      'Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pêşdîtina nepenî ji bo $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne.';
 }

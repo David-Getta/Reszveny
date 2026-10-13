@@ -1371,4 +1371,37 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get navAlerts => 'Upozornenia';
+
+  @override
+  String get inviteTitle => 'Uzavretá ukážka';
+
+  @override
+  String get inviteBody =>
+      'WhatStock je zatiaľ dostupný iba na pozvanie. Zadajte kód pozvánky, ktorý ste dostali.';
+
+  @override
+  String get inviteCodeLabel => 'Kód pozvánky';
+
+  @override
+  String get inviteContinue => 'Pokračovať';
+
+  @override
+  String get inviteInvalid => 'Tento kód pozvánky nie je platný.';
+
+  @override
+  String get inviteExpired =>
+      'Platnosť tejto pozvánky vypršala. Požiadajte osobu, ktorá vás pozvala, o nový kód.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Tento kód pozvánky sa už používa na maximálnom počte zariadení.';
+
+  @override
+  String previewFor(String name) {
+    return 'Dôverná ukážka – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra.';
 }

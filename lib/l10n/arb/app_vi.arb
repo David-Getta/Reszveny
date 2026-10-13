@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} mỗi tháng",
   "subscriptionLegalYearly": "Gói đăng ký theo năm tự động gia hạn hằng năm cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư.",
   "myAnalyses": "Phân tích của tôi",
-  "navAlerts": "Cảnh báo"
+  "navAlerts": "Cảnh báo",
+  "inviteTitle": "Bản xem trước giới hạn",
+  "inviteBody": "Hiện tại WhatStock chỉ dành cho người được mời. Hãy nhập mã mời bạn đã nhận được.",
+  "inviteCodeLabel": "Mã mời",
+  "inviteContinue": "Tiếp tục",
+  "inviteInvalid": "Mã mời này không hợp lệ.",
+  "inviteExpired": "Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.",
+  "inviteDeviceLimit": "Mã mời này đã được dùng trên số thiết bị tối đa cho phép.",
+  "previewFor": "Bản xem trước bảo mật dành cho {name}",
+  "errPreviewDailyLimit": "Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai."
 }

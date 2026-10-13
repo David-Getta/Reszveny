@@ -1336,4 +1336,37 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get navAlerts => 'Signallar';
+
+  @override
+  String get inviteTitle => 'Yopiq oldindan koʻrish';
+
+  @override
+  String get inviteBody =>
+      'WhatStock hozircha faqat taklif orqali mavjud. Olgan taklif kodingizni kiriting.';
+
+  @override
+  String get inviteCodeLabel => 'Taklif kodi';
+
+  @override
+  String get inviteContinue => 'Davom etish';
+
+  @override
+  String get inviteInvalid => 'Bu taklif kodi yaroqsiz.';
+
+  @override
+  String get inviteExpired =>
+      'Bu taklifning muddati oʻtgan. Sizni taklif qilgan kishidan yangi kod soʻrang.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Bu taklif kodi allaqachon ruxsat etilgan eng koʻp qurilmada ishlatilmoqda.';
+
+  @override
+  String previewFor(String name) {
+    return '$name uchun maxfiy oldindan koʻrish';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring.';
 }

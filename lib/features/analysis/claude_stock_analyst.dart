@@ -140,6 +140,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
     'trial_expired' => AppErrorCode.trialExpired,
     'no_plan' => AppErrorCode.noPlan,
     'insufficient_quota' => AppErrorCode.notEnoughCredits,
+    'invite_daily_limit' => AppErrorCode.previewDailyLimit,
     _ => AppErrorCode.quotaExceeded,
   };
 

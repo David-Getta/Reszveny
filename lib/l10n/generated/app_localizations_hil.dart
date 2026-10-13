@@ -1343,4 +1343,37 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get navAlerts => 'Mga alerto';
+
+  @override
+  String get inviteTitle => 'Sirado nga preview';
+
+  @override
+  String get inviteBody =>
+      'Sa subong, paagi lang sa imbitasyon makagamit sang WhatStock. Isulod ang code sang imbitasyon nga nabaton mo.';
+
+  @override
+  String get inviteCodeLabel => 'Code sang imbitasyon';
+
+  @override
+  String get inviteContinue => 'Padayon';
+
+  @override
+  String get inviteInvalid => 'Indi balido ini nga code sang imbitasyon.';
+
+  @override
+  String get inviteExpired =>
+      'Expired na ini nga imbitasyon. Pangayo sang bag-o nga code sa tawo nga nag-imbitar sa imo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kumpidensyal nga preview para kay $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas.';
 }

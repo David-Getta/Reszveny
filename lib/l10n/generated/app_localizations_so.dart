@@ -1339,4 +1339,37 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get navAlerts => 'Digniinaha';
+
+  @override
+  String get inviteTitle => 'Muuqaal hore oo xiran';
+
+  @override
+  String get inviteBody =>
+      'WhatStock hadda waxaa lagu heli karaa casuumad oo keliya. Geli koodhka casuumadda ee laguu soo diray.';
+
+  @override
+  String get inviteCodeLabel => 'Koodhka casuumadda';
+
+  @override
+  String get inviteContinue => 'Sii wad';
+
+  @override
+  String get inviteInvalid => 'Koodhkan casuumaddu ma ansax aha.';
+
+  @override
+  String get inviteExpired =>
+      'Casuumaddani way dhacday. Weydii qofkii ku casuumay koodh cusub.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Koodhkan casuumadda waxaa hore loogu isticmaalay tirada ugu badan ee qalabka la oggol yahay.';
+
+  @override
+  String previewFor(String name) {
+    return 'Muuqaal hore oo qarsoodi ah – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri.';
 }

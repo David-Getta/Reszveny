@@ -1335,4 +1335,37 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get navAlerts => 'Imenyithia';
+
+  @override
+  String get inviteTitle => 'Kuona kwa mbere kũhingĩre';
+
+  @override
+  String get inviteBody =>
+      'Rĩu WhatStock ĩkuoneka na ũiti tu. Ĩkĩra code ya ũiti ĩrĩa wamũkĩrire.';
+
+  @override
+  String get inviteCodeLabel => 'Code ya ũiti';
+
+  @override
+  String get inviteContinue => 'Thiĩ na mbere';
+
+  @override
+  String get inviteInvalid => 'Code ĩno ya ũiti ti ya ma.';
+
+  @override
+  String get inviteExpired =>
+      'Ihinda rĩa ũiti ũyũ nĩrĩthirĩte. Hooya code njerũ kuuma kũrĩ mũndũ ũrĩa wagwĩtire.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Code ĩno ya ũiti nĩĩrahũthĩrwo mĩtambo-inĩ mĩingĩ makĩria ĩrĩa ĩtĩkĩrĩtio.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kuona kwa mbere kwa hitho kwa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Mũhaka wa mathuthuria ma ũmũthĩ wa kuona kũũ kwa mbere nĩũkinyĩtio. Geria rĩngĩ rũciũ.';
 }

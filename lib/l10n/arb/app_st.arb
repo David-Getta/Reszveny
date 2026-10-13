@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
   "subscriptionLegalYearly": "Dingodiso tsa selemo di ntjhafala ka boiketsetso selemo le selemo ho fihlela o di khansela. Ka ho ingodisa o amohela Dipehelo tsa Tshebediso le Pholisi ya Lekunutu.",
   "myAnalyses": "Ditlhahlobo tsa ka",
-  "navAlerts": "Ditsebiso"
+  "navAlerts": "Ditsebiso",
+  "inviteTitle": "Ponelopele e kwetsweng",
+  "inviteBody": "WhatStock e fumaneha ka memo feela hajwale. Kenya khoutu ya memo eo o e fumaneng.",
+  "inviteCodeLabel": "Khoutu ya memo",
+  "inviteContinue": "Tswela pele",
+  "inviteInvalid": "Khoutu ena ya memo ha e nepahale.",
+  "inviteExpired": "Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.",
+  "inviteDeviceLimit": "Khoutu ena ya memo e se e sebediswa palong e phahameng ka ho fetisisa ya disebediswa tse dumelletsweng.",
+  "previewFor": "Ponelopele ya lekunutu ya {name}",
+  "errPreviewDailyLimit": "Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane."
 }

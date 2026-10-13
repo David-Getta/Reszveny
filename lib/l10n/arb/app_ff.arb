@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} e lewru",
   "subscriptionLegalYearly": "Abonmaa ina hesɗitinee e jaajol hitaande kala haa a haaytii. So a ƴettii abonmaa, a jaɓii Sarɗiiji kuutorgol e Dawrugol suturo.",
   "myAnalyses": "Ƴeewndooji am",
-  "navAlerts": "Tintine"
+  "navAlerts": "Tintine",
+  "inviteTitle": "Ƴeewndo adano uddiingo",
+  "inviteBody": "Jooni, WhatStock heɓetee tan e noddaangal. Winndu kod noddaangal ngal keɓɗaa.",
+  "inviteCodeLabel": "Kod noddaangal",
+  "inviteContinue": "Jokku",
+  "inviteInvalid": "Kod noddaangal ngal moƴƴaani.",
+  "inviteExpired": "Noddaangal ngal buntii. Ɗaɓɓit kod kesum to neɗɗo noddiiɗo ma.",
+  "inviteDeviceLimit": "Kod noddaangal ngal no huutoraa e limoore kaɓirɗe ɓurnde ndee.",
+  "previewFor": "Ƴeewndo suuɗiingo ngam {name}",
+  "errPreviewDailyLimit": "Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo."
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Ji'atti ≈ {price}",
   "subscriptionLegalYearly": "Miseensummaan waggaa hanga ati haqxutti waggaa waggaan ofumaan haaromfama. Miseensa ta'uudhaan Haalota Itti Fayyadamaa fi Imaammata Dhuunfaa fudhatta.",
   "myAnalyses": "Xiinxala koo",
-  "navAlerts": "Akeekkachiisa"
+  "navAlerts": "Akeekkachiisa",
+  "inviteTitle": "Duraan-argii cufaa",
+  "inviteBody": "WhatStock amma affeerraan qofa argama. Koodii affeerraa siif ergame galchi.",
+  "inviteCodeLabel": "Koodii affeerraa",
+  "inviteContinue": "Itti fufi",
+  "inviteInvalid": "Koodiin affeerraa kun sirrii miti.",
+  "inviteExpired": "Affeerraan kun yeroon isaa darbeera. Nama si affeere koodii haaraa gaafadhu.",
+  "inviteDeviceLimit": "Koodiin affeerraa kun duraanuu meeshaalee lakkoofsa olaanaa hayyamameerratti fayyadamaa jira.",
+  "previewFor": "Duraan-argii icciitii: {name}",
+  "errPreviewDailyLimit": "Daangaan xiinxala har'aa duraan-argii kanaa ga'eera. Boru irra deebi'ii yaali."
 }

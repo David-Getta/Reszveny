@@ -1334,4 +1334,37 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get navAlerts => 'Varsler';
+
+  @override
+  String get inviteTitle => 'Lukket forhåndsvisning';
+
+  @override
+  String get inviteBody =>
+      'WhatStock er foreløpig bare tilgjengelig for inviterte. Skriv inn invitasjonskoden du har fått.';
+
+  @override
+  String get inviteCodeLabel => 'Invitasjonskode';
+
+  @override
+  String get inviteContinue => 'Fortsett';
+
+  @override
+  String get inviteInvalid => 'Denne invitasjonskoden er ikke gyldig.';
+
+  @override
+  String get inviteExpired =>
+      'Denne invitasjonen har utløpt. Be personen som inviterte deg, om en ny kode.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Denne invitasjonskoden er allerede i bruk på maksimalt antall enheter.';
+
+  @override
+  String previewFor(String name) {
+    return 'Konfidensiell forhåndsvisning for $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dagens analysegrense for denne forhåndsvisningen er nådd. Prøv igjen i morgen.';
 }

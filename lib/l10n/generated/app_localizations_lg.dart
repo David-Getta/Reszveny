@@ -1341,4 +1341,37 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Okulabula';
+
+  @override
+  String get inviteTitle => 'Okulaba okusooka okw\'ekyama';
+
+  @override
+  String get inviteBody =>
+      'Kati WhatStock efunibwa ng\'oyitiddwa kyokka. Yingiza koodi y\'okuyitibwa gye wafuna.';
+
+  @override
+  String get inviteCodeLabel => 'Koodi y\'okuyitibwa';
+
+  @override
+  String get inviteContinue => 'Weeyongereyo';
+
+  @override
+  String get inviteInvalid => 'Koodi eno ey\'okuyitibwa si ntuufu.';
+
+  @override
+  String get inviteExpired =>
+      'Okuyitibwa kuno kuweddeko. Saba omuntu eyakuyita akuwe koodi empya.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Koodi eno ey\'okuyitibwa ekozesebwa dda ku byuma ebisinga obungi ebikkirizibwa.';
+
+  @override
+  String previewFor(String name) {
+    return 'Okulaba okusooka okw\'ekyama kwa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ekkomo ly\'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya.';
 }

@@ -1332,4 +1332,37 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get navAlerts => 'התראות';
+
+  @override
+  String get inviteTitle => 'תצוגה מקדימה סגורה';
+
+  @override
+  String get inviteBody =>
+      'בשלב זה WhatStock זמינה בהזמנה בלבד. הזינו את קוד ההזמנה שקיבלתם.';
+
+  @override
+  String get inviteCodeLabel => 'קוד הזמנה';
+
+  @override
+  String get inviteContinue => 'המשך';
+
+  @override
+  String get inviteInvalid => 'קוד ההזמנה הזה אינו תקף.';
+
+  @override
+  String get inviteExpired =>
+      'תוקף ההזמנה הזו פג. בקשו קוד חדש ממי שהזמין אתכם.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'קוד ההזמנה הזה כבר נמצא בשימוש במספר המרבי של מכשירים.';
+
+  @override
+  String previewFor(String name) {
+    return 'תצוגה מקדימה חסויה עבור $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר.';
 }

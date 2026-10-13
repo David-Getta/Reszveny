@@ -1339,4 +1339,37 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get navAlerts => 'Mga alerto';
+
+  @override
+  String get inviteTitle => 'Sirado nga preview';
+
+  @override
+  String get inviteBody =>
+      'Sa pagkakaron, makuha lang ang WhatStock pinaagi sa imbitasyon. Isulod ang invite code nga imong nadawat.';
+
+  @override
+  String get inviteCodeLabel => 'Invite code';
+
+  @override
+  String get inviteContinue => 'Padayon';
+
+  @override
+  String get inviteInvalid => 'Dili balido kining invite code.';
+
+  @override
+  String get inviteExpired =>
+      'Expired na kining imbitasyon. Pangayo og bag-ong code sa tawo nga nag-imbitar nimo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Gigamit na kining invite code sa pinakadaghang device nga gitugotan.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kumpidensyal nga preview para kang $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Naabot na niining preview ang limitasyon sa pagtuki karong adlawa. Sulayi pag-usab ugma.';
 }

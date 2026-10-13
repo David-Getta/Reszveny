@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kwa mwezi",
   "subscriptionLegalYearly": "Usajili wa mwaka hujisasisha kiotomatiki kila mwaka hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha.",
   "myAnalyses": "Uchambuzi wangu",
-  "navAlerts": "Arifa"
+  "navAlerts": "Arifa",
+  "inviteTitle": "Onyesho la awali lililofungwa",
+  "inviteBody": "WhatStock inapatikana kwa mwaliko pekee kwa sasa. Weka msimbo wa mwaliko uliopokea.",
+  "inviteCodeLabel": "Msimbo wa mwaliko",
+  "inviteContinue": "Endelea",
+  "inviteInvalid": "Msimbo huu wa mwaliko si sahihi.",
+  "inviteExpired": "Mwaliko huu umeisha muda wake. Muombe aliyekualika akupe msimbo mpya.",
+  "inviteDeviceLimit": "Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.",
+  "previewFor": "Onyesho la awali la siri kwa {name}",
+  "errPreviewDailyLimit": "Kikomo cha uchambuzi cha leo cha onyesho hili la awali kimefikiwa. Jaribu tena kesho."
 }

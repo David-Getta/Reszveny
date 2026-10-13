@@ -1330,4 +1330,37 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get navAlerts => 'Peringatan';
+
+  @override
+  String get inviteTitle => 'Pratinjau tertutup';
+
+  @override
+  String get inviteBody =>
+      'Untuk saat ini WhatStock hanya tersedia melalui undangan. Masukkan kode undangan yang Anda terima.';
+
+  @override
+  String get inviteCodeLabel => 'Kode undangan';
+
+  @override
+  String get inviteContinue => 'Lanjutkan';
+
+  @override
+  String get inviteInvalid => 'Kode undangan ini tidak valid.';
+
+  @override
+  String get inviteExpired =>
+      'Undangan ini sudah kedaluwarsa. Mintalah kode baru kepada orang yang mengundang Anda.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kode undangan ini sudah digunakan di jumlah perangkat maksimum.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pratinjau rahasia untuk $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok.';
 }

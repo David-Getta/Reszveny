@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} miesięcznie",
   "subscriptionLegalYearly": "Subskrypcja roczna odnawia się automatycznie co roku, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności.",
   "myAnalyses": "Moje analizy",
-  "navAlerts": "Alerty"
+  "navAlerts": "Alerty",
+  "inviteTitle": "Zamknięty podgląd",
+  "inviteBody": "WhatStock jest na razie dostępny tylko na zaproszenie. Wpisz otrzymany kod zaproszenia.",
+  "inviteCodeLabel": "Kod zaproszenia",
+  "inviteContinue": "Dalej",
+  "inviteInvalid": "Ten kod zaproszenia jest nieprawidłowy.",
+  "inviteExpired": "To zaproszenie wygasło. Poproś osobę, która cię zaprosiła, o nowy kod.",
+  "inviteDeviceLimit": "Ten kod zaproszenia jest już używany na maksymalnej liczbie urządzeń.",
+  "previewFor": "Poufny podgląd – {name}",
+  "errPreviewDailyLimit": "Wyczerpano dzisiejszy limit analiz w tym podglądzie. Spróbuj ponownie jutro."
 }

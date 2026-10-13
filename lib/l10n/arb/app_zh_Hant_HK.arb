@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "每月約 {price}",
   "subscriptionLegalYearly": "年度訂閱會每年自動續期，直至你取消。訂閱即表示你接受使用條款及私隱政策。",
   "myAnalyses": "我的分析",
-  "navAlerts": "提示"
+  "navAlerts": "提示",
+  "inviteTitle": "封閉預覽",
+  "inviteBody": "WhatStock 目前只限受邀用戶使用。請輸入你收到的邀請碼。",
+  "inviteCodeLabel": "邀請碼",
+  "inviteContinue": "繼續",
+  "inviteInvalid": "此邀請碼無效。",
+  "inviteExpired": "此邀請已過期。請向邀請你的人索取新的邀請碼。",
+  "inviteDeviceLimit": "此邀請碼已在允許的最多裝置上使用。",
+  "previewFor": "{name} 專屬機密預覽",
+  "errPreviewDailyLimit": "此預覽今日的分析次數已用完。請明天再試。"
 }

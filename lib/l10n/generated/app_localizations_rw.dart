@@ -1340,4 +1340,37 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get navAlerts => 'Imenyesha';
+
+  @override
+  String get inviteTitle => 'Igerageza ryihariye';
+
+  @override
+  String get inviteBody =>
+      'Ubu WhatStock iboneka gusa ku butumire. Andika kode y\'ubutumire wahawe.';
+
+  @override
+  String get inviteCodeLabel => 'Kode y\'ubutumire';
+
+  @override
+  String get inviteContinue => 'Komeza';
+
+  @override
+  String get inviteInvalid => 'Iyi kode y\'ubutumire ntiyemewe.';
+
+  @override
+  String get inviteExpired =>
+      'Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Iyi kode y\'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w\'ibikoresho.';
+
+  @override
+  String previewFor(String name) {
+    return 'Igerageza ry\'ibanga rya $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Umubare ntarengwa w\'isesengura ry\'uyu munsi kuri iri gerageza wagezweho. Ongera ugerageze ejo.';
 }

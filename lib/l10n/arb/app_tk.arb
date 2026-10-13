@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Aýda ≈ {price}",
   "subscriptionLegalYearly": "Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz.",
   "myAnalyses": "Meniň seljermelerim",
-  "navAlerts": "Duýduryşlar"
+  "navAlerts": "Duýduryşlar",
+  "inviteTitle": "Ýapyk deslapky wersiýa",
+  "inviteBody": "WhatStock häzirlikçe diňe çakylyk boýunça elýeterlidir. Alan çakylyk koduňyzy giriziň.",
+  "inviteCodeLabel": "Çakylyk kody",
+  "inviteContinue": "Dowam et",
+  "inviteInvalid": "Bu çakylyk kody nädogry.",
+  "inviteExpired": "Bu çakylygyň möhleti geçdi. Sizi çagyran adamdan täze kod soraň.",
+  "inviteDeviceLimit": "Bu çakylyk kody eýýäm rugsat berlen iň köp enjamda ulanylýar.",
+  "previewFor": "{name} üçin gizlin deslapky wersiýa",
+  "errPreviewDailyLimit": "Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň."
 }

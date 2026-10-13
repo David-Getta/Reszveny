@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Sapa killa ≈ {price}",
   "subscriptionLegalYearly": "Watapaq suscripciónkunaqa sapa wata kikinmanta musuqchakunku cancelanaykikama. Suscribikuspaqa Llamk'achiypa kamachiykunanta Privacidad kamachiytapas chaskinki.",
   "myAnalyses": "T'aqwiyniykuna",
-  "navAlerts": "Willachiykuna"
+  "navAlerts": "Willachiykuna",
+  "inviteTitle": "Wisq'asqa ñawpaq qhawana",
+  "inviteBody": "Kunanqa WhatStock invitacionllawanmi kachkan. Chaskisqayki invitación códigota qillqay.",
+  "inviteCodeLabel": "Invitación código",
+  "inviteContinue": "Qatipay",
+  "inviteInvalid": "Kay invitación códigoqa manam allinchu.",
+  "inviteExpired": "Kay invitacionqa vencesqañam. Invitasuqniykiman musuq códigota mañakuy.",
+  "inviteDeviceLimit": "Kay invitación códigoqa ñam aswan achka atikusqan aparatokunapi llamk'achisqaña.",
+  "previewFor": "Pakasqa ñawpaq qhawana, {name}paq",
+  "errPreviewDailyLimit": "Kay ñawpaq qhawanapa kunan p'unchaw analisis limitenqa tukukunñam. Paqarin hukmanta kallpachakuy."
 }

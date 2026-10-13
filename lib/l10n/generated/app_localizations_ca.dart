@@ -1340,4 +1340,37 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alertes';
+
+  @override
+  String get inviteTitle => 'Versió prèvia tancada';
+
+  @override
+  String get inviteBody =>
+      'De moment, WhatStock només està disponible amb invitació. Introdueix el codi d’invitació que has rebut.';
+
+  @override
+  String get inviteCodeLabel => 'Codi d’invitació';
+
+  @override
+  String get inviteContinue => 'Continua';
+
+  @override
+  String get inviteInvalid => 'Aquest codi d’invitació no és vàlid.';
+
+  @override
+  String get inviteExpired =>
+      'Aquesta invitació ha caducat. Demana un codi nou a la persona que t’ha convidat.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Aquest codi d’invitació ja s’està fent servir en el nombre màxim de dispositius.';
+
+  @override
+  String previewFor(String name) {
+    return 'Versió prèvia confidencial per a $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà.';
 }

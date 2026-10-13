@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Ayda ≈ {price}",
   "subscriptionLegalYearly": "Yıllık abonelik, iptal edene kadar her yıl otomatik olarak yenilenir. Abone olarak Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul etmiş olursunuz.",
   "myAnalyses": "Analizlerim",
-  "navAlerts": "Alarmlar"
+  "navAlerts": "Alarmlar",
+  "inviteTitle": "Kapalı önizleme",
+  "inviteBody": "WhatStock şimdilik yalnızca davetle kullanılabilir. Aldığınız davet kodunu girin.",
+  "inviteCodeLabel": "Davet kodu",
+  "inviteContinue": "Devam",
+  "inviteInvalid": "Bu davet kodu geçerli değil.",
+  "inviteExpired": "Bu davetin süresi doldu. Sizi davet eden kişiden yeni bir kod isteyin.",
+  "inviteDeviceLimit": "Bu davet kodu zaten izin verilen en fazla sayıda cihazda kullanılıyor.",
+  "previewFor": "{name} için gizli önizleme",
+  "errPreviewDailyLimit": "Bu önizlemenin bugünkü analiz sınırına ulaşıldı. Yarın tekrar deneyin."
 }

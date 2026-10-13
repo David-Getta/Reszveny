@@ -1335,4 +1335,37 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get navAlerts => 'Pèngetan';
+
+  @override
+  String get inviteTitle => 'Pratinjau tertutup';
+
+  @override
+  String get inviteBody =>
+      'Saiki WhatStock mung bisa dienggo nganggo undangan. Lebokna kode undangan sing wis sampeyan tampa.';
+
+  @override
+  String get inviteCodeLabel => 'Kode undangan';
+
+  @override
+  String get inviteContinue => 'Terusake';
+
+  @override
+  String get inviteInvalid => 'Kode undangan iki ora valid.';
+
+  @override
+  String get inviteExpired =>
+      'Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kode undangan iki wis dienggo ing jumlah piranti maksimal.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pratinjau rahasia kanggo $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk.';
 }

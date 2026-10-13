@@ -1332,4 +1332,37 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ọkwa';
+
+  @override
+  String get inviteTitle => 'Nlele mbụ emechiri emechi';
+
+  @override
+  String get inviteBody =>
+      'Ugbu a, WhatStock dị naanị site na òkù. Tinye koodu òkù i nwetara.';
+
+  @override
+  String get inviteCodeLabel => 'Koodu òkù';
+
+  @override
+  String get inviteContinue => 'Gaa n\'ihu';
+
+  @override
+  String get inviteInvalid => 'Koodu òkù a ezighi ezi.';
+
+  @override
+  String get inviteExpired =>
+      'Oge òkù a agafeela. Rịọ onye kpọrọ gị òkù ka o nye gị koodu ọhụrụ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.';
+
+  @override
+  String previewFor(String name) {
+    return 'Nlele mbụ nzuzo maka $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi.';
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Oyiga ≈ {price}",
   "subscriptionLegalYearly": "Yillik obuna bekor qilinmaguncha har yili avtomatik ravishda yangilanadi. Obuna boʻlish orqali siz Foydalanish shartlari va Maxfiylik siyosatini qabul qilasiz.",
   "myAnalyses": "Mening tahlillarim",
-  "navAlerts": "Signallar"
+  "navAlerts": "Signallar",
+  "inviteTitle": "Yopiq oldindan koʻrish",
+  "inviteBody": "WhatStock hozircha faqat taklif orqali mavjud. Olgan taklif kodingizni kiriting.",
+  "inviteCodeLabel": "Taklif kodi",
+  "inviteContinue": "Davom etish",
+  "inviteInvalid": "Bu taklif kodi yaroqsiz.",
+  "inviteExpired": "Bu taklifning muddati oʻtgan. Sizni taklif qilgan kishidan yangi kod soʻrang.",
+  "inviteDeviceLimit": "Bu taklif kodi allaqachon ruxsat etilgan eng koʻp qurilmada ishlatilmoqda.",
+  "previewFor": "{name} uchun maxfiy oldindan koʻrish",
+  "errPreviewDailyLimit": "Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring."
 }

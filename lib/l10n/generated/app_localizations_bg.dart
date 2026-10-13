@@ -1335,4 +1335,37 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Известия';
+
+  @override
+  String get inviteTitle => 'Затворена предварителна версия';
+
+  @override
+  String get inviteBody =>
+      'WhatStock засега е достъпен само с покана. Въведете получения код за покана.';
+
+  @override
+  String get inviteCodeLabel => 'Код за покана';
+
+  @override
+  String get inviteContinue => 'Продължи';
+
+  @override
+  String get inviteInvalid => 'Този код за покана не е валиден.';
+
+  @override
+  String get inviteExpired =>
+      'Тази покана е изтекла. Поискайте нов код от човека, който ви е поканил.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Този код за покана вече се използва на максималния брой устройства.';
+
+  @override
+  String previewFor(String name) {
+    return 'Поверителна версия за $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Днешният лимит за анализи на тази предварителна версия е изчерпан. Опитайте отново утре.';
 }

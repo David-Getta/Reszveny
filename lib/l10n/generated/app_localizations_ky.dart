@@ -1336,4 +1336,37 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get navAlerts => 'Эскертмелер';
+
+  @override
+  String get inviteTitle => 'Жабык алдын ала көрүү';
+
+  @override
+  String get inviteBody =>
+      'Азырынча WhatStock чакыруу менен гана жеткиликтүү. Алган чакыруу кодуңузду киргизиңиз.';
+
+  @override
+  String get inviteCodeLabel => 'Чакыруу коду';
+
+  @override
+  String get inviteContinue => 'Улантуу';
+
+  @override
+  String get inviteInvalid => 'Бул чакыруу коду жараксыз.';
+
+  @override
+  String get inviteExpired =>
+      'Бул чакыруунун мөөнөтү бүткөн. Сизди чакырган адамдан жаңы код сураңыз.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Бул чакыруу коду уруксат берилген эң көп түзмөктө колдонулуп жатат.';
+
+  @override
+  String previewFor(String name) {
+    return 'Купуя алдын ала көрүү: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Бул алдын ала көрүүнүн бүгүнкү талдоо чеги түгөндү. Эртең кайра аракет кылыңыз.';
 }

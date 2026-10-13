@@ -1281,6 +1281,35 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get navAlerts => '提醒';
+
+  @override
+  String get inviteTitle => '封闭预览';
+
+  @override
+  String get inviteBody => 'WhatStock 目前仅限受邀用户使用。请输入您收到的邀请码。';
+
+  @override
+  String get inviteCodeLabel => '邀请码';
+
+  @override
+  String get inviteContinue => '继续';
+
+  @override
+  String get inviteInvalid => '此邀请码无效。';
+
+  @override
+  String get inviteExpired => '此邀请已过期。请向邀请您的人索取新的邀请码。';
+
+  @override
+  String get inviteDeviceLimit => '此邀请码已在允许的最多设备上使用。';
+
+  @override
+  String previewFor(String name) {
+    return '$name 专属保密预览';
+  }
+
+  @override
+  String get errPreviewDailyLimit => '此预览今日的分析次数已用完。请明天再试。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2558,4 +2587,33 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get navAlerts => '提示';
+
+  @override
+  String get inviteTitle => '封閉預覽';
+
+  @override
+  String get inviteBody => 'WhatStock 目前只限受邀用戶使用。請輸入你收到的邀請碼。';
+
+  @override
+  String get inviteCodeLabel => '邀請碼';
+
+  @override
+  String get inviteContinue => '繼續';
+
+  @override
+  String get inviteInvalid => '此邀請碼無效。';
+
+  @override
+  String get inviteExpired => '此邀請已過期。請向邀請你的人索取新的邀請碼。';
+
+  @override
+  String get inviteDeviceLimit => '此邀請碼已在允許的最多裝置上使用。';
+
+  @override
+  String previewFor(String name) {
+    return '$name 專屬機密預覽';
+  }
+
+  @override
+  String get errPreviewDailyLimit => '此預覽今日的分析次數已用完。請明天再試。';
 }

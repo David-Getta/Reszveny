@@ -1332,4 +1332,37 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get navAlerts => 'Artu';
+
+  @override
+  String get inviteTitle => 'Wone bu jëkk bu tëju';
+
+  @override
+  String get inviteBody =>
+      'Léegi, ñi ñu woo rekk ñoo mën a jëfandikoo WhatStock. Dugalal koodu woote bi nga jot.';
+
+  @override
+  String get inviteCodeLabel => 'Koodu woote';
+
+  @override
+  String get inviteContinue => 'Wéy';
+
+  @override
+  String get inviteInvalid => 'Koodu woote bii baaxul.';
+
+  @override
+  String get inviteExpired =>
+      'Woote bii jeex na. Laajal ki la woo benn kood bu bees.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Koodu woote bii, ñu ngi koy jëfandikoo ba noppi ci limu masin yi gën a bare yi ñu may.';
+
+  @override
+  String previewFor(String name) {
+    return 'Wone bu kumpa ngir $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Limu saytu yu tey yi ci wone bii jeex na. Jéemaatal ëllëg.';
 }

@@ -1330,4 +1330,37 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get navAlerts => 'अलर्ट';
+
+  @override
+  String get inviteTitle => 'बंद प्रिव्यू';
+
+  @override
+  String get inviteBody =>
+      'WhatStock अबहीं खाली निमंत्रण से मिलत बा। रउआ के मिलल निमंत्रण कोड डालीं।';
+
+  @override
+  String get inviteCodeLabel => 'निमंत्रण कोड';
+
+  @override
+  String get inviteContinue => 'आगे बढ़ीं';
+
+  @override
+  String get inviteInvalid => 'ई निमंत्रण कोड मान्य नइखे।';
+
+  @override
+  String get inviteExpired =>
+      'एह निमंत्रण के समय खतम हो गइल बा। जे रउआ के बोलवले बा, ओह से नया कोड माँगीं।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ई निमंत्रण कोड पहिलहीं से अधिकतम गिनती के डिवाइस पर इस्तेमाल हो रहल बा।';
+
+  @override
+  String previewFor(String name) {
+    return '$name खातिर गोपनीय प्रिव्यू';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'एह प्रिव्यू के आज के विश्लेषण सीमा पूरा हो गइल बा। काल्ह फेर से कोसिस करीं।';
 }

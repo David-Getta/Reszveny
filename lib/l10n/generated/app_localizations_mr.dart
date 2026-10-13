@@ -1333,4 +1333,37 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get navAlerts => 'सूचना';
+
+  @override
+  String get inviteTitle => 'बंद पूर्वावलोकन';
+
+  @override
+  String get inviteBody =>
+      'WhatStock सध्या फक्त आमंत्रणाद्वारे उपलब्ध आहे. तुम्हाला मिळालेला आमंत्रण कोड टाका.';
+
+  @override
+  String get inviteCodeLabel => 'आमंत्रण कोड';
+
+  @override
+  String get inviteContinue => 'पुढे जा';
+
+  @override
+  String get inviteInvalid => 'हा आमंत्रण कोड वैध नाही.';
+
+  @override
+  String get inviteExpired =>
+      'या आमंत्रणाची मुदत संपली आहे. ज्यांनी तुम्हाला आमंत्रित केले त्यांच्याकडे नवीन कोड मागा.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'हा आमंत्रण कोड आधीच कमाल संख्येतील डिव्हाइसेसवर वापरला जात आहे.';
+
+  @override
+  String previewFor(String name) {
+    return '$name साठी गोपनीय पूर्वावलोकन';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'या पूर्वावलोकनाची आजची विश्लेषण मर्यादा पूर्ण झाली आहे. उद्या पुन्हा प्रयत्न करा.';
 }

@@ -1341,4 +1341,37 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Willachiykuna';
+
+  @override
+  String get inviteTitle => 'Wisq\'asqa ñawpaq qhawana';
+
+  @override
+  String get inviteBody =>
+      'Kunanqa WhatStock invitacionllawanmi kachkan. Chaskisqayki invitación códigota qillqay.';
+
+  @override
+  String get inviteCodeLabel => 'Invitación código';
+
+  @override
+  String get inviteContinue => 'Qatipay';
+
+  @override
+  String get inviteInvalid => 'Kay invitación códigoqa manam allinchu.';
+
+  @override
+  String get inviteExpired =>
+      'Kay invitacionqa vencesqañam. Invitasuqniykiman musuq códigota mañakuy.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kay invitación códigoqa ñam aswan achka atikusqan aparatokunapi llamk\'achisqaña.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pakasqa ñawpaq qhawana, ${name}paq';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Kay ñawpaq qhawanapa kunan p\'unchaw analisis limitenqa tukukunñam. Paqarin hukmanta kallpachakuy.';
 }

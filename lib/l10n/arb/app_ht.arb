@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} pa mwa",
   "subscriptionLegalYearly": "Abònman anyèl yo renouvle otomatikman chak ane jiskaske ou anile. Lè w abòne, ou aksepte Kondisyon itilizasyon yo ak Politik konfidansyalite a.",
   "myAnalyses": "Analiz mwen yo",
-  "navAlerts": "Alèt"
+  "navAlerts": "Alèt",
+  "inviteTitle": "Apèsi prive",
+  "inviteBody": "Pou kounye a, WhatStock disponib sèlman sou envitasyon. Antre kòd envitasyon ou te resevwa a.",
+  "inviteCodeLabel": "Kòd envitasyon",
+  "inviteContinue": "Kontinye",
+  "inviteInvalid": "Kòd envitasyon sa a pa valab.",
+  "inviteExpired": "Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.",
+  "inviteDeviceLimit": "Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.",
+  "previewFor": "Apèsi konfidansyèl pou {name}",
+  "errPreviewDailyLimit": "Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen."
 }

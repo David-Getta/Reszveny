@@ -1332,4 +1332,37 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get navAlerts => 'هشدارها';
+
+  @override
+  String get inviteTitle => 'پیش‌نمایش بسته';
+
+  @override
+  String get inviteBody =>
+      'WhatStock فعلاً فقط با دعوت‌نامه در دسترس است. کد دعوتی را که دریافت کرده‌اید وارد کنید.';
+
+  @override
+  String get inviteCodeLabel => 'کد دعوت';
+
+  @override
+  String get inviteContinue => 'ادامه';
+
+  @override
+  String get inviteInvalid => 'این کد دعوت معتبر نیست.';
+
+  @override
+  String get inviteExpired =>
+      'این دعوت منقضی شده است. از کسی که شما را دعوت کرده است یک کد جدید بخواهید.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'این کد دعوت هم‌اکنون روی حداکثر تعداد مجاز دستگاه‌ها استفاده می‌شود.';
+
+  @override
+  String previewFor(String name) {
+    return 'پیش‌نمایش محرمانه برای $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'سقف تحلیل امروزِ این پیش‌نمایش پر شده است. فردا دوباره امتحان کنید.';
 }

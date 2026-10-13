@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} deg wayyur",
   "subscriptionLegalYearly": "Ajerred aseggasan yettwajedded s wudem awurman yal aseggas alamma tsefsxeḍ-t. Mi ara tjerrdeḍ, ad tqebleḍ Tiwtilin n useqdec akked Tasertit n tbaḍnit.",
   "myAnalyses": "Tiselḍin-iw",
-  "navAlerts": "Ilɣa"
+  "navAlerts": "Ilɣa",
+  "inviteTitle": "Taskant tamezwarut tamdelt",
+  "inviteBody": "WhatStock yella kan s tinubga i tura. Sekcem tangalt n tinubga i d-tremseḍ.",
+  "inviteCodeLabel": "Tangalt n tinubga",
+  "inviteContinue": "Kemmel",
+  "inviteInvalid": "Tangalt-a n tinubga ur tṣeḥḥa ara.",
+  "inviteExpired": "Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.",
+  "inviteDeviceLimit": "Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.",
+  "previewFor": "Taskant tuffirt i {name}",
+  "errPreviewDailyLimit": "Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka."
 }

@@ -1338,4 +1338,37 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerte';
+
+  @override
+  String get inviteTitle => 'Ditangila dia kumpala dia musokoko';
+
+  @override
+  String get inviteBody =>
+      'Mpindieu, WhatStock udi anu bua bantu badi babikidibue. Funda code wa dibikila uvua mupete.';
+
+  @override
+  String get inviteCodeLabel => 'Code wa dibikila';
+
+  @override
+  String get inviteContinue => 'Tungunuka';
+
+  @override
+  String get inviteInvalid => 'Code wa dibikila eu udi ne tshilema.';
+
+  @override
+  String get inviteExpired =>
+      'Dîba dia dibikila edi diapita. Lomba code mupiamupia kudi muntu uvua mukubikile.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Code wa dibikila eu udi mutumika kale ku bungi bua bintu bia bungi menemene bidi bianyishibue.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ditangila dia musokoko bua $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela.';
 }

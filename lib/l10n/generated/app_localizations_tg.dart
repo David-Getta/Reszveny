@@ -1336,4 +1336,37 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Огоҳиҳо';
+
+  @override
+  String get inviteTitle => 'Пешнамоиши пӯшида';
+
+  @override
+  String get inviteBody =>
+      'WhatStock айни замон танҳо бо даъватнома дастрас аст. Коди даъвати гирифтаатонро ворид кунед.';
+
+  @override
+  String get inviteCodeLabel => 'Коди даъват';
+
+  @override
+  String get inviteContinue => 'Идома';
+
+  @override
+  String get inviteInvalid => 'Ин коди даъват эътибор надорад.';
+
+  @override
+  String get inviteExpired =>
+      'Мӯҳлати ин даъват гузаштааст. Аз шахсе, ки шуморо даъват кардааст, коди нав пурсед.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ин коди даъват аллакай дар шумораи ниҳоии иҷозатдодашудаи дастгоҳҳо истифода мешавад.';
+
+  @override
+  String previewFor(String name) {
+    return 'Пешнамоиши махфӣ барои $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Маҳдудияти имрӯзаи таҳлилҳои ин пешнамоиш тамом шуд. Фардо бори дигар кӯшиш кунед.';
 }

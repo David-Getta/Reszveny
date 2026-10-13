@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
   "subscriptionLegalYearly": "Ikwadisetso ya ngwaga e ntšhwafala ka boiketsetso ngwaga le ngwaga go fitlha o e khansela. Ka go ikwadisa o amogela Melawana ya Tiriso le Pholisi ya Sephiri.",
   "myAnalyses": "Ditshekatsheko tsa me",
-  "navAlerts": "Dikitsiso"
+  "navAlerts": "Dikitsiso",
+  "inviteTitle": "Ponelopele e e tswetsweng",
+  "inviteBody": "WhatStock e bonala fela ka taletso ka nako eno. Tsenya khoutu ya taletso e o e amogetseng.",
+  "inviteCodeLabel": "Khoutu ya taletso",
+  "inviteContinue": "Tswelela",
+  "inviteInvalid": "Khoutu eno ya taletso ga e nepagale.",
+  "inviteExpired": "Taletso eno e fetile nako. Kopa motho yo o go laleditseng khoutu e ntšha.",
+  "inviteDeviceLimit": "Khoutu eno ya taletso e setse e dirisiwa mo palong e kgolo ka go fetisisa ya didirisiwa e e letleletsweng.",
+  "previewFor": "Ponelopele ya sephiri ya ga {name}",
+  "errPreviewDailyLimit": "Tekanyetso ya ditshekatsheko ya gompieno ya ponelopele eno e fitlheletswe. Leka gape kamoso."
 }

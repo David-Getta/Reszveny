@@ -1363,4 +1363,37 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get navAlerts => 'Obavještenja';
+
+  @override
+  String get inviteTitle => 'Zatvoreni pregled';
+
+  @override
+  String get inviteBody =>
+      'WhatStock je zasad dostupan samo uz pozivnicu. Unesite kod pozivnice koji ste dobili.';
+
+  @override
+  String get inviteCodeLabel => 'Kod pozivnice';
+
+  @override
+  String get inviteContinue => 'Nastavi';
+
+  @override
+  String get inviteInvalid => 'Ovaj kod pozivnice nije važeći.';
+
+  @override
+  String get inviteExpired =>
+      'Ova pozivnica je istekla. Zatražite novi kod od osobe koja vas je pozvala.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ovaj kod pozivnice se već koristi na najvećem dozvoljenom broju uređaja.';
+
+  @override
+  String previewFor(String name) {
+    return 'Povjerljivi pregled za $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dostignuto je današnje ograničenje analiza za ovaj pregled. Pokušajte ponovo sutra.';
 }

@@ -1374,4 +1374,37 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerty';
+
+  @override
+  String get inviteTitle => 'Zamknięty podgląd';
+
+  @override
+  String get inviteBody =>
+      'WhatStock jest na razie dostępny tylko na zaproszenie. Wpisz otrzymany kod zaproszenia.';
+
+  @override
+  String get inviteCodeLabel => 'Kod zaproszenia';
+
+  @override
+  String get inviteContinue => 'Dalej';
+
+  @override
+  String get inviteInvalid => 'Ten kod zaproszenia jest nieprawidłowy.';
+
+  @override
+  String get inviteExpired =>
+      'To zaproszenie wygasło. Poproś osobę, która cię zaprosiła, o nowy kod.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ten kod zaproszenia jest już używany na maksymalnej liczbie urządzeń.';
+
+  @override
+  String previewFor(String name) {
+    return 'Poufny podgląd – $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Wyczerpano dzisiejszy limit analiz w tym podglądzie. Spróbuj ponownie jutro.';
 }

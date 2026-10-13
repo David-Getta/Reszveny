@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ku kwezi",
   "subscriptionLegalYearly": "Ifatabuguzi ry'umwaka ryivugurura buri mwaka kugeza urihagaritse. Iyo wiyandikishije uba wemeye Amabwiriza yo gukoresha na Politiki y'ibanga.",
   "myAnalyses": "Amasesengura yanjye",
-  "navAlerts": "Imenyesha"
+  "navAlerts": "Imenyesha",
+  "inviteTitle": "Igerageza ryihariye",
+  "inviteBody": "Ubu WhatStock iboneka gusa ku butumire. Andika kode y'ubutumire wahawe.",
+  "inviteCodeLabel": "Kode y'ubutumire",
+  "inviteContinue": "Komeza",
+  "inviteInvalid": "Iyi kode y'ubutumire ntiyemewe.",
+  "inviteExpired": "Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.",
+  "inviteDeviceLimit": "Iyi kode y'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w'ibikoresho.",
+  "previewFor": "Igerageza ry'ibanga rya {name}",
+  "errPreviewDailyLimit": "Umubare ntarengwa w'isesengura ry'uyu munsi kuri iri gerageza wagezweho. Ongera ugerageze ejo."
 }

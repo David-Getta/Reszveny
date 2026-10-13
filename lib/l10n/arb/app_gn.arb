@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} jasy ñavõ",
   "subscriptionLegalYearly": "Ñemboheraguapy oñembopyahu ijeheguiete ary ñavõ ejoko peve. Eñemboheraguapývo, emoneĩ Jeporurã reko ha Temiñemi porureko.",
   "myAnalyses": "Che jehesaʼỹijokuéra",
-  "navAlerts": "Maranduʼi"
+  "navAlerts": "Maranduʼi",
+  "inviteTitle": "Jehechauka mboyvegua oñembotýva",
+  "inviteBody": "Koʼág̃a WhatStock ojeporukuaa jeguenói rupive añoite. Emoinge código jeguenoirã nderehupyty vaʼekue.",
+  "inviteCodeLabel": "Código jeguenoirã",
+  "inviteContinue": "Ekuʼejey",
+  "inviteInvalid": "Ko código jeguenoirã ndoikói.",
+  "inviteExpired": "Ko jeguenói ndoikovéima. Ejerure peteĩ código pyahu pe ndeguenoi vaʼekuépe.",
+  "inviteDeviceLimit": "Ko código jeguenoirã ojeporúma tembipuru papapy tuichavévape.",
+  "previewFor": "Jehechauka ñemi {name}peg̃uarã",
+  "errPreviewDailyLimit": "Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ."
 }

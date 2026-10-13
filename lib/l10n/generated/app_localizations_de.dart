@@ -1343,4 +1343,37 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alarme';
+
+  @override
+  String get inviteTitle => 'Geschlossene Vorschau';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ist vorerst nur auf Einladung verfügbar. Gib den Einladungscode ein, den du erhalten hast.';
+
+  @override
+  String get inviteCodeLabel => 'Einladungscode';
+
+  @override
+  String get inviteContinue => 'Weiter';
+
+  @override
+  String get inviteInvalid => 'Dieser Einladungscode ist ungültig.';
+
+  @override
+  String get inviteExpired =>
+      'Diese Einladung ist abgelaufen. Bitte die Person, die dich eingeladen hat, um einen neuen Code.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Dieser Einladungscode wird bereits auf der maximalen Anzahl von Geräten verwendet.';
+
+  @override
+  String previewFor(String name) {
+    return 'Vertrauliche Vorschau für $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Das heutige Analyselimit dieser Vorschau ist erreicht. Versuche es morgen erneut.';
 }

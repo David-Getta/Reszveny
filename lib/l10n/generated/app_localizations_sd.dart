@@ -1329,4 +1329,37 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get navAlerts => 'الرٽ';
+
+  @override
+  String get inviteTitle => 'بند پريويو';
+
+  @override
+  String get inviteBody =>
+      'في الحال WhatStock رڳو دعوت ذريعي دستياب آهي. توهان کي مليل دعوت ڪوڊ داخل ڪريو.';
+
+  @override
+  String get inviteCodeLabel => 'دعوت ڪوڊ';
+
+  @override
+  String get inviteContinue => 'جاري رکو';
+
+  @override
+  String get inviteInvalid => 'هي دعوت ڪوڊ صحيح ناهي.';
+
+  @override
+  String get inviteExpired =>
+      'هن دعوت جي مدت ختم ٿي وئي آهي. جنهن توهان کي دعوت ڏني، ان کان نئون ڪوڊ گهرو.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'هي دعوت ڪوڊ اڳ ۾ ئي وڌ کان وڌ ڊوائيسز تي استعمال ٿي رهيو آهي.';
+
+  @override
+  String previewFor(String name) {
+    return '$name لاءِ رازدار پريويو';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'هن پريويو جي اڄ جي تجزيي جي حد پوري ٿي وئي آهي. سڀاڻي ٻيهر ڪوشش ڪريو.';
 }

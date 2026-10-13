@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "Ayda ≈ {price}",
   "subscriptionLegalYearly": "İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz.",
   "myAnalyses": "Təhlillərim",
-  "navAlerts": "Bildirişlər"
+  "navAlerts": "Bildirişlər",
+  "inviteTitle": "Qapalı önizləmə",
+  "inviteBody": "WhatStock hələlik yalnız dəvətlə əlçatandır. Aldığınız dəvət kodunu daxil edin.",
+  "inviteCodeLabel": "Dəvət kodu",
+  "inviteContinue": "Davam et",
+  "inviteInvalid": "Bu dəvət kodu etibarlı deyil.",
+  "inviteExpired": "Bu dəvətin müddəti bitib. Sizi dəvət edən şəxsdən yeni kod istəyin.",
+  "inviteDeviceLimit": "Bu dəvət kodu artıq maksimum sayda cihazda istifadə olunur.",
+  "previewFor": "{name} üçün məxfi önizləmə",
+  "errPreviewDailyLimit": "Bu önizləmənin bugünkü təhlil limiti dolub. Sabah yenidən cəhd edin."
 }

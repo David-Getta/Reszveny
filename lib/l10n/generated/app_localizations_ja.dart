@@ -1293,4 +1293,33 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get navAlerts => 'アラート';
+
+  @override
+  String get inviteTitle => '限定プレビュー';
+
+  @override
+  String get inviteBody => 'WhatStock は現在、招待制でのみご利用いただけます。受け取った招待コードを入力してください。';
+
+  @override
+  String get inviteCodeLabel => '招待コード';
+
+  @override
+  String get inviteContinue => '続行';
+
+  @override
+  String get inviteInvalid => 'この招待コードは無効です。';
+
+  @override
+  String get inviteExpired => 'この招待は有効期限が切れています。招待してくれた方に新しいコードを依頼してください。';
+
+  @override
+  String get inviteDeviceLimit => 'この招待コードは、すでに上限台数の端末で使用されています。';
+
+  @override
+  String previewFor(String name) {
+    return '$name 様向け機密プレビュー';
+  }
+
+  @override
+  String get errPreviewDailyLimit => 'このプレビューの本日の分析上限に達しました。明日もう一度お試しください。';
 }

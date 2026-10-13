@@ -108,6 +108,7 @@ AppServices _services({
   String? currency,
   AlertStore? alerts,
   bool backend = false,
+  bool invite = false,
   String? email,
 }) {
   final ent = _entitlements();
@@ -119,7 +120,11 @@ AppServices _services({
     fx: _fx(),
     config: config,
     backend: backend
-        ? BackendClient(baseUrl: config.backend, inner: _fakeBackend(), tokenLoader: () async => 'tok')
+        ? BackendClient(
+            baseUrl: config.backend,
+            inner: invite ? _inviteBackend() : _fakeBackend(),
+            tokenLoader: () async => 'tok',
+          )
         : null,
     accountEmail: email,
     capture: CaptureService(),
@@ -140,19 +145,33 @@ AppServices _services({
 }
 
 /// A backend utánzata: a fiók Pro csomagon van, a törlés sikerül.
-http.Client _fakeBackend() => MockClient((req) async {
-  final ent = {
-    'tier': 'pro',
-    'period_start': DateTime.now().subtract(const Duration(days: 3)).toUtc().toIso8601String(),
-    'period_end': DateTime.now().add(const Duration(days: 27)).toUtc().toIso8601String(),
-    'used': 5,
-    'extra': 0,
-  };
-  return http.Response(
-    jsonEncode(req.method == 'DELETE' ? {'deleted': true} : {'token': 'tok', 'entitlements': ent}),
+Map<String, Object> _proEntitlements() => {
+  'tier': 'pro',
+  'period_start': DateTime.now().subtract(const Duration(days: 3)).toUtc().toIso8601String(),
+  'period_end': DateTime.now().add(const Duration(days: 27)).toUtc().toIso8601String(),
+  'used': 5,
+  'extra': 0,
+};
+
+http.Client _fakeBackend() => MockClient(
+  (req) async => http.Response(
+    jsonEncode(req.method == 'DELETE' ? {'deleted': true} : {'token': 'tok', 'entitlements': _proEntitlements()}),
     200,
     headers: {'content-type': 'application/json'},
-  );
+  ),
+);
+
+/// Zárt előzetes: kód nélkül 403, a `GABOR-7K2Q` kóddal a Pro fiók és a vízjel neve.
+http.Client _inviteBackend() => MockClient((req) async {
+  if (req.headers['x-whatstock-invite'] != 'GABOR-7K2Q') {
+    return http.Response(jsonEncode({'error': 'invite_required'}), 403, headers: {'content-type': 'application/json'});
+  }
+  final body = {
+    'token': 'tok',
+    'entitlements': _proEntitlements(),
+    'invite': {'label': 'Schulz Gábor', 'expires': '2026-11-30'},
+  };
+  return http.Response(jsonEncode(body), 200, headers: {'content-type': 'application/json; charset=utf-8'});
 });
 
 EntitlementService _entitlements() => EntitlementService(
@@ -604,6 +623,19 @@ void main() {
     await tester.enterText(find.widgetWithText(TextField, 'Search languages…'), 'ma');
     await tester.pumpAndSettle();
     await _shot(tester, 'language_picker');
+  });
+
+  testWidgets('closed preview: invite code and watermark (hungarian, phone)', (tester) async {
+    final s = _services(locale: const Locale('hu'), backend: true, invite: true);
+    await pumpApp(tester, s, const Size(430, 900));
+    await s.syncEntitlements();
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('invite-code')), 'gabor-7k2q');
+    await tester.pump();
+    await _shot(tester, 'invite_phone_hu');
+    await tester.tap(find.text('Tovább'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'invite_watermark_phone_hu');
   });
 
   testWidgets('quick bar', (tester) async {

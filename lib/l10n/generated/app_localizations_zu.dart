@@ -1341,4 +1341,37 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Izexwayiso';
+
+  @override
+  String get inviteTitle => 'Ukubuka kuqala okuvaliwe';
+
+  @override
+  String get inviteBody =>
+      'I-WhatStock itholakala ngesimemo kuphela okwamanje. Faka ikhodi yesimemo oyitholile.';
+
+  @override
+  String get inviteCodeLabel => 'Ikhodi yesimemo';
+
+  @override
+  String get inviteContinue => 'Qhubeka';
+
+  @override
+  String get inviteInvalid => 'Le khodi yesimemo ayivumelekile.';
+
+  @override
+  String get inviteExpired =>
+      'Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Le khodi yesimemo isivele isetshenziswa enanini eliphezulu lamadivayisi elivunyelwe.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ukubuka kuqala okuyimfihlo kuka-$name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa.';
 }

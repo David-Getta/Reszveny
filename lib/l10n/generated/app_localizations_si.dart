@@ -1334,4 +1334,37 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get navAlerts => 'ඇඟවීම්';
+
+  @override
+  String get inviteTitle => 'සංවෘත පෙරදසුන';
+
+  @override
+  String get inviteBody =>
+      'WhatStock දැනට ආරාධනා මගින් පමණක් ලබා ගත හැක. ඔබට ලැබුණු ආරාධනා කේතය ඇතුළත් කරන්න.';
+
+  @override
+  String get inviteCodeLabel => 'ආරාධනා කේතය';
+
+  @override
+  String get inviteContinue => 'ඉදිරියට';
+
+  @override
+  String get inviteInvalid => 'මෙම ආරාධනා කේතය වලංගු නොවේ.';
+
+  @override
+  String get inviteExpired =>
+      'මෙම ආරාධනාව කල් ඉකුත් වී ඇත. ඔබට ආරාධනා කළ පුද්ගලයාගෙන් නව කේතයක් ඉල්ලන්න.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'මෙම ආරාධනා කේතය දැනටමත් උපරිම උපාංග ගණනක භාවිත වේ.';
+
+  @override
+  String previewFor(String name) {
+    return '$name සඳහා රහසිගත පෙරදසුන';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'මෙම පෙරදසුනේ අද දින විශ්ලේෂණ සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.';
 }

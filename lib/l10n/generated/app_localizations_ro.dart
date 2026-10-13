@@ -1359,4 +1359,37 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerte';
+
+  @override
+  String get inviteTitle => 'Previzualizare privată';
+
+  @override
+  String get inviteBody =>
+      'Deocamdată, WhatStock este disponibil doar pe bază de invitație. Introdu codul de invitație primit.';
+
+  @override
+  String get inviteCodeLabel => 'Cod de invitație';
+
+  @override
+  String get inviteContinue => 'Continuă';
+
+  @override
+  String get inviteInvalid => 'Acest cod de invitație nu este valid.';
+
+  @override
+  String get inviteExpired =>
+      'Această invitație a expirat. Cere un cod nou persoanei care te-a invitat.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Acest cod de invitație este deja folosit pe numărul maxim de dispozitive.';
+
+  @override
+  String previewFor(String name) {
+    return 'Previzualizare confidențială pentru $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Limita de analize de azi pentru această previzualizare a fost atinsă. Încearcă din nou mâine.';
 }

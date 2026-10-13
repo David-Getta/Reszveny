@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} na mesec",
   "subscriptionLegalYearly": "Letna naročnina se samodejno podaljša vsako leto, dokler je ne prekličete. Z naročnino sprejemate Pogoje uporabe in Pravilnik o zasebnosti.",
   "myAnalyses": "Moje analize",
-  "navAlerts": "Opozorila"
+  "navAlerts": "Opozorila",
+  "inviteTitle": "Zaprti predogled",
+  "inviteBody": "WhatStock je zaenkrat na voljo samo na povabilo. Vnesite kodo povabila, ki ste jo prejeli.",
+  "inviteCodeLabel": "Koda povabila",
+  "inviteContinue": "Nadaljuj",
+  "inviteInvalid": "Ta koda povabila ni veljavna.",
+  "inviteExpired": "To povabilo je poteklo. Za novo kodo prosite osebo, ki vas je povabila.",
+  "inviteDeviceLimit": "Ta koda povabila je že v uporabi na največjem dovoljenem številu naprav.",
+  "previewFor": "Zaupni predogled – {name}",
+  "errPreviewDailyLimit": "Današnja omejitev analiz za ta predogled je dosežena. Poskusite znova jutri."
 }

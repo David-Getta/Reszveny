@@ -1338,4 +1338,37 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get navAlerts => 'ئاگاھلاندۇرۇش';
+
+  @override
+  String get inviteTitle => 'يېپىق ئالدىن كۆرۈش';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ھازىرچە پەقەت تەكلىپ ئارقىلىقلا ئىشلەتكىلى بولىدۇ. تاپشۇرۇۋالغان تەكلىپ كودىڭىزنى كىرگۈزۈڭ.';
+
+  @override
+  String get inviteCodeLabel => 'تەكلىپ كودى';
+
+  @override
+  String get inviteContinue => 'داۋاملاشتۇرۇش';
+
+  @override
+  String get inviteInvalid => 'بۇ تەكلىپ كودى ئىناۋەتسىز.';
+
+  @override
+  String get inviteExpired =>
+      'بۇ تەكلىپنىڭ ۋاقتى ئۆتۈپ كەتتى. سىزنى تەكلىپ قىلغان كىشىدىن يېڭى كود سوراڭ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'بۇ تەكلىپ كودى ئاللىبۇرۇن رۇخسەت قىلىنغان ئەڭ كۆپ ئۈسكۈنىدە ئىشلىتىلىۋاتىدۇ.';
+
+  @override
+  String previewFor(String name) {
+    return '$name ئۈچۈن مەخپىي ئالدىن كۆرۈش';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'بۇ ئالدىن كۆرۈشنىڭ بۈگۈنكى تەھلىل چېكىگە يېتىلدى. ئەتە قايتا سىناڭ.';
 }

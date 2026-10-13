@@ -1344,4 +1344,37 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get navAlerts => 'Switiviso';
+
+  @override
+  String get inviteTitle => 'Xikombiso xo pfaleriwa';
+
+  @override
+  String get inviteBody =>
+      'WhatStock yi kumeka hi xirhambo ntsena sweswi. Nghenisa khodi ya xirhambo leyi u yi amukeleke.';
+
+  @override
+  String get inviteCodeLabel => 'Khodi ya xirhambo';
+
+  @override
+  String get inviteContinue => 'Ya emahlweni';
+
+  @override
+  String get inviteInvalid => 'Khodi leyi ya xirhambo a yi lulamanga.';
+
+  @override
+  String get inviteExpired =>
+      'Xirhambo lexi xi hundzeriwe hi nkarhi. Kombela munhu loyi a ku rhambeke khodi leyintshwa.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Khodi leyi ya xirhambo se yi tirhisiwa eka nhlayo ya le henhla ya switirhisiwa leyi pfumeleriweke.';
+
+  @override
+  String previewFor(String name) {
+    return 'Xikombiso xa xihundla xa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ndzelekano wa minxopaxopo ya namuntlha wa xikombiso lexi wu fikeleriwile. Ringeta nakambe mundzuku.';
 }

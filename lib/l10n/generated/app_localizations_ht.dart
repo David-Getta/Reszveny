@@ -1333,4 +1333,37 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alèt';
+
+  @override
+  String get inviteTitle => 'Apèsi prive';
+
+  @override
+  String get inviteBody =>
+      'Pou kounye a, WhatStock disponib sèlman sou envitasyon. Antre kòd envitasyon ou te resevwa a.';
+
+  @override
+  String get inviteCodeLabel => 'Kòd envitasyon';
+
+  @override
+  String get inviteContinue => 'Kontinye';
+
+  @override
+  String get inviteInvalid => 'Kòd envitasyon sa a pa valab.';
+
+  @override
+  String get inviteExpired =>
+      'Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.';
+
+  @override
+  String previewFor(String name) {
+    return 'Apèsi konfidansyèl pou $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen.';
 }

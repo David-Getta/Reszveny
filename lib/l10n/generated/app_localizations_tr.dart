@@ -1333,4 +1333,37 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alarmlar';
+
+  @override
+  String get inviteTitle => 'Kapalı önizleme';
+
+  @override
+  String get inviteBody =>
+      'WhatStock şimdilik yalnızca davetle kullanılabilir. Aldığınız davet kodunu girin.';
+
+  @override
+  String get inviteCodeLabel => 'Davet kodu';
+
+  @override
+  String get inviteContinue => 'Devam';
+
+  @override
+  String get inviteInvalid => 'Bu davet kodu geçerli değil.';
+
+  @override
+  String get inviteExpired =>
+      'Bu davetin süresi doldu. Sizi davet eden kişiden yeni bir kod isteyin.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Bu davet kodu zaten izin verilen en fazla sayıda cihazda kullanılıyor.';
+
+  @override
+  String previewFor(String name) {
+    return '$name için gizli önizleme';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Bu önizlemenin bugünkü analiz sınırına ulaşıldı. Yarın tekrar deneyin.';
 }

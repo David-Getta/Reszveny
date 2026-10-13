@@ -1373,4 +1373,37 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Оповещения';
+
+  @override
+  String get inviteTitle => 'Закрытый доступ';
+
+  @override
+  String get inviteBody =>
+      'Пока WhatStock доступен только по приглашению. Введите полученный код приглашения.';
+
+  @override
+  String get inviteCodeLabel => 'Код приглашения';
+
+  @override
+  String get inviteContinue => 'Продолжить';
+
+  @override
+  String get inviteInvalid => 'Этот код приглашения недействителен.';
+
+  @override
+  String get inviteExpired =>
+      'Срок действия приглашения истёк. Попросите новый код у пригласившего вас человека.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Этот код приглашения уже используется на максимально допустимом числе устройств.';
+
+  @override
+  String previewFor(String name) {
+    return 'Конфиденциальный доступ: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Дневной лимит анализов в этой предварительной версии исчерпан. Попробуйте завтра.';
 }

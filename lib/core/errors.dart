@@ -32,6 +32,9 @@ enum AppErrorCode {
   /// Van még keret, de kevesebb, mint amennyit a választott hossz fogyaszt.
   /// A [AppException.detail] formátuma: `szükséges/maradt`, pl. `2/1`.
   notEnoughCredits,
+
+  /// Zárt előzetes: elfogyott a meghívókód mai elemzéskerete.
+  previewDailyLimit,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés

@@ -1334,4 +1334,37 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ìkìlọ̀';
+
+  @override
+  String get inviteTitle => 'Ìfihàn àkọ́kọ́ aládàáni';
+
+  @override
+  String get inviteBody =>
+      'WhatStock wà fún àwọn tí a pè nìkan fún báyìí. Tẹ kóòdù ìpè tí o gbà.';
+
+  @override
+  String get inviteCodeLabel => 'Kóòdù ìpè';
+
+  @override
+  String get inviteContinue => 'Tẹ̀síwájú';
+
+  @override
+  String get inviteInvalid => 'Kóòdù ìpè yìí kò tọ̀nà.';
+
+  @override
+  String get inviteExpired =>
+      'Ìpè yìí ti parí. Béèrè kóòdù tuntun lọ́wọ́ ẹni tó pè ọ́.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'A ti ń lo kóòdù ìpè yìí lórí iye ẹ̀rọ tó pọ̀ jùlọ tí a gbà láàyè.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ìfihàn àṣírí fún $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la.';
 }

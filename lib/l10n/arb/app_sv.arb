@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per månad",
   "subscriptionLegalYearly": "Årsprenumerationen förnyas automatiskt varje år tills du säger upp den. Genom att prenumerera godkänner du användarvillkoren och integritetspolicyn.",
   "myAnalyses": "Mina analyser",
-  "navAlerts": "Larm"
+  "navAlerts": "Larm",
+  "inviteTitle": "Stängd förhandsversion",
+  "inviteBody": "WhatStock är tills vidare bara tillgängligt via inbjudan. Ange inbjudningskoden du har fått.",
+  "inviteCodeLabel": "Inbjudningskod",
+  "inviteContinue": "Fortsätt",
+  "inviteInvalid": "Den här inbjudningskoden är inte giltig.",
+  "inviteExpired": "Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.",
+  "inviteDeviceLimit": "Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.",
+  "previewFor": "Konfidentiell förhandsversion för {name}",
+  "errPreviewDailyLimit": "Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon."
 }

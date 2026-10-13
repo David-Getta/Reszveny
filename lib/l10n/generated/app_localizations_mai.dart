@@ -1329,4 +1329,37 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get navAlerts => 'अलर्ट';
+
+  @override
+  String get inviteTitle => 'बन्द पूर्वावलोकन';
+
+  @override
+  String get inviteBody =>
+      'WhatStock एखन मात्र आमंत्रण द्वारा उपलब्ध अछि। अहाँकेँ भेटल आमंत्रण कोड लिखू।';
+
+  @override
+  String get inviteCodeLabel => 'आमंत्रण कोड';
+
+  @override
+  String get inviteContinue => 'आगाँ बढ़ू';
+
+  @override
+  String get inviteInvalid => 'ई आमंत्रण कोड मान्य नहि अछि।';
+
+  @override
+  String get inviteExpired =>
+      'ई आमंत्रणक समय-सीमा समाप्त भऽ गेल अछि। जे अहाँकेँ आमंत्रित केलनि, हुनकासँ नव कोड माँगू।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ई आमंत्रण कोड पहिनेसँ अधिकतम संख्यामे डिवाइस पर उपयोगमे अछि।';
+
+  @override
+  String previewFor(String name) {
+    return '$name लेल गोपनीय पूर्वावलोकन';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'एहि पूर्वावलोकनक आजुक विश्लेषण-सीमा पूरा भऽ गेल। काल्हि फेर प्रयास करू।';
 }

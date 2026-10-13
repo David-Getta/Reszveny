@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "ኣብ ወርሒ ≈ {price}",
   "subscriptionLegalYearly": "ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።",
   "myAnalyses": "ትንተናታተይ",
-  "navAlerts": "መጠንቀቕታታት"
+  "navAlerts": "መጠንቀቕታታት",
+  "inviteTitle": "ዝተዓጽወ ቅድመ-ርእይቶ",
+  "inviteBody": "WhatStock ሕጂ ብዕድመ ጥራይ እዩ ዝርከብ። ዝበጽሓኩም ኮድ ዕድመ የእትዉ።",
+  "inviteCodeLabel": "ኮድ ዕድመ",
+  "inviteContinue": "ቀጽሉ",
+  "inviteInvalid": "እዚ ኮድ ዕድመ ቅቡል ኣይኮነን።",
+  "inviteExpired": "እዚ ዕድመ ግዜኡ ሓሊፉ። ካብቲ ዝዓደመኩም ሰብ ሓድሽ ኮድ ሕተቱ።",
+  "inviteDeviceLimit": "እዚ ኮድ ዕድመ ድሮ ኣብቲ ዝለዓለ ዝፍቀድ ቁጽሪ መሳርሒታት ይጥቀመሉ ኣሎ።",
+  "previewFor": "ምስጢራዊ ቅድመ-ርእይቶ ን{name}",
+  "errPreviewDailyLimit": "ናይ ሎሚ ደረት ትንተና ናይዚ ቅድመ-ርእይቶ ተበጺሑ። ጽባሕ እንደገና ፈትኑ።"
 }

@@ -1338,4 +1338,37 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alertas';
+
+  @override
+  String get inviteTitle => 'Pré-visualização fechada';
+
+  @override
+  String get inviteBody =>
+      'De momento, o WhatStock está disponível apenas por convite. Insira o código de convite que recebeu.';
+
+  @override
+  String get inviteCodeLabel => 'Código de convite';
+
+  @override
+  String get inviteContinue => 'Continuar';
+
+  @override
+  String get inviteInvalid => 'Este código de convite não é válido.';
+
+  @override
+  String get inviteExpired =>
+      'Este convite expirou. Peça um novo código à pessoa que lhe enviou o convite.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Este código de convite já está em uso no número máximo de dispositivos.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pré-visualização confidencial para $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'O limite diário de análises desta pré-visualização foi atingido. Tente novamente amanhã.';
 }

@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} buli mwezi",
   "subscriptionLegalYearly": "Okwewandiisa okw'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw'okusazaamu. Bw'owewandiisa, oba okkirizza Amateeka g'okukozesa n'Enkola y'ebyama.",
   "myAnalyses": "Okwekenneenya kwange",
-  "navAlerts": "Okulabula"
+  "navAlerts": "Okulabula",
+  "inviteTitle": "Okulaba okusooka okw'ekyama",
+  "inviteBody": "Kati WhatStock efunibwa ng'oyitiddwa kyokka. Yingiza koodi y'okuyitibwa gye wafuna.",
+  "inviteCodeLabel": "Koodi y'okuyitibwa",
+  "inviteContinue": "Weeyongereyo",
+  "inviteInvalid": "Koodi eno ey'okuyitibwa si ntuufu.",
+  "inviteExpired": "Okuyitibwa kuno kuweddeko. Saba omuntu eyakuyita akuwe koodi empya.",
+  "inviteDeviceLimit": "Koodi eno ey'okuyitibwa ekozesebwa dda ku byuma ebisinga obungi ebikkirizibwa.",
+  "previewFor": "Okulaba okusooka okw'ekyama kwa {name}",
+  "errPreviewDailyLimit": "Ekkomo ly'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya."
 }

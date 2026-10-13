@@ -1339,4 +1339,37 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get navAlerts => 'Mga alerto';
+
+  @override
+  String get inviteTitle => 'Saradong preview';
+
+  @override
+  String get inviteBody =>
+      'Sa ngayon, sa imbitasyon lang available ang WhatStock. Ilagay ang invite code na natanggap mo.';
+
+  @override
+  String get inviteCodeLabel => 'Invite code';
+
+  @override
+  String get inviteContinue => 'Magpatuloy';
+
+  @override
+  String get inviteInvalid => 'Hindi valid ang invite code na ito.';
+
+  @override
+  String get inviteExpired =>
+      'Expired na ang imbitasyong ito. Humingi ng bagong code sa taong nag-imbita sa iyo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ginagamit na ang invite code na ito sa pinakamaraming device na pinapayagan.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kumpidensyal na preview para kay $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Naabot na ng preview na ito ang limitasyon ng pagsusuri para ngayong araw. Subukang muli bukas.';
 }

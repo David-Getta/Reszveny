@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kuukaudessa",
   "subscriptionLegalYearly": "Vuositilaus uusiutuu automaattisesti joka vuosi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen.",
   "myAnalyses": "Omat analyysit",
-  "navAlerts": "Hälytykset"
+  "navAlerts": "Hälytykset",
+  "inviteTitle": "Suljettu esiversio",
+  "inviteBody": "WhatStock on toistaiseksi saatavilla vain kutsusta. Anna saamasi kutsukoodi.",
+  "inviteCodeLabel": "Kutsukoodi",
+  "inviteContinue": "Jatka",
+  "inviteInvalid": "Tämä kutsukoodi ei ole voimassa.",
+  "inviteExpired": "Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.",
+  "inviteDeviceLimit": "Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.",
+  "previewFor": "Luottamuksellinen esiversio: {name}",
+  "errPreviewDailyLimit": "Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna."
 }

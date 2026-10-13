@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ በወር {price}",
   "subscriptionLegalYearly": "ዓመታዊ የደንበኝነት ምዝገባዎች እስኪሰርዟቸው ድረስ በየዓመቱ በራስ-ሰር ይታደሳሉ። በመመዝገብ የአጠቃቀም ውሉን እና የግላዊነት መመሪያውን ይቀበላሉ።",
   "myAnalyses": "የእኔ ትንተናዎች",
-  "navAlerts": "ማንቂያዎች"
+  "navAlerts": "ማንቂያዎች",
+  "inviteTitle": "ዝግ ቅድመ እይታ",
+  "inviteBody": "WhatStock ለጊዜው የሚገኘው በግብዣ ብቻ ነው። የተቀበሉትን የግብዣ ኮድ ያስገቡ።",
+  "inviteCodeLabel": "የግብዣ ኮድ",
+  "inviteContinue": "ቀጥል",
+  "inviteInvalid": "ይህ የግብዣ ኮድ ልክ አይደለም።",
+  "inviteExpired": "ይህ ግብዣ ጊዜው አልፎበታል። የጋበዘዎትን ሰው አዲስ ኮድ ይጠይቁ።",
+  "inviteDeviceLimit": "ይህ የግብዣ ኮድ በሚፈቀደው ከፍተኛ የመሣሪያዎች ብዛት ላይ አስቀድሞ ጥቅም ላይ እየዋለ ነው።",
+  "previewFor": "ሚስጥራዊ ቅድመ እይታ ለ{name}",
+  "errPreviewDailyLimit": "የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።"
 }

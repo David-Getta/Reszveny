@@ -1331,4 +1331,37 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get navAlerts => 'ଆଲର୍ଟ';
+
+  @override
+  String get inviteTitle => 'ବନ୍ଦ ପୂର୍ବାବଲୋକନ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ବର୍ତ୍ତମାନ କେବଳ ନିମନ୍ତ୍ରଣ ମାଧ୍ୟମରେ ଉପଲବ୍ଧ। ଆପଣ ପାଇଥିବା ନିମନ୍ତ୍ରଣ କୋଡ ଲେଖନ୍ତୁ।';
+
+  @override
+  String get inviteCodeLabel => 'ନିମନ୍ତ୍ରଣ କୋଡ';
+
+  @override
+  String get inviteContinue => 'ଜାରି ରଖନ୍ତୁ';
+
+  @override
+  String get inviteInvalid => 'ଏହି ନିମନ୍ତ୍ରଣ କୋଡ ବୈଧ ନୁହେଁ।';
+
+  @override
+  String get inviteExpired =>
+      'ଏହି ନିମନ୍ତ୍ରଣର ମିଆଦ ଶେଷ ହୋଇଯାଇଛି। ଯିଏ ଆପଣଙ୍କୁ ନିମନ୍ତ୍ରଣ କରିଥିଲେ ତାଙ୍କଠାରୁ ନୂଆ କୋଡ ମାଗନ୍ତୁ।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ଏହି ନିମନ୍ତ୍ରଣ କୋଡ ପୂର୍ବରୁ ସର୍ବାଧିକ ସଂଖ୍ୟକ ଡିଭାଇସରେ ବ୍ୟବହୃତ ହେଉଛି।';
+
+  @override
+  String previewFor(String name) {
+    return '$name ପାଇଁ ଗୋପନୀୟ ପୂର୍ବାବଲୋକନ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ଏହି ପୂର୍ବାବଲୋକନର ଆଜିର ବିଶ୍ଳେଷଣ ସୀମା ପୂରଣ ହୋଇଯାଇଛି। କାଲି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 }

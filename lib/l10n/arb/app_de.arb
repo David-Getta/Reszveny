@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} pro Monat",
   "subscriptionLegalYearly": "Jahresabos verlängern sich jährlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung.",
   "myAnalyses": "Meine Analysen",
-  "navAlerts": "Alarme"
+  "navAlerts": "Alarme",
+  "inviteTitle": "Geschlossene Vorschau",
+  "inviteBody": "WhatStock ist vorerst nur auf Einladung verfügbar. Gib den Einladungscode ein, den du erhalten hast.",
+  "inviteCodeLabel": "Einladungscode",
+  "inviteContinue": "Weiter",
+  "inviteInvalid": "Dieser Einladungscode ist ungültig.",
+  "inviteExpired": "Diese Einladung ist abgelaufen. Bitte die Person, die dich eingeladen hat, um einen neuen Code.",
+  "inviteDeviceLimit": "Dieser Einladungscode wird bereits auf der maximalen Anzahl von Geräten verwendet.",
+  "previewFor": "Vertrauliche Vorschau für {name}",
+  "errPreviewDailyLimit": "Das heutige Analyselimit dieser Vorschau ist erreicht. Versuche es morgen erneut."
 }

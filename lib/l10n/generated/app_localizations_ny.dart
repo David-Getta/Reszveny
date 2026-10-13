@@ -1340,4 +1340,37 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get navAlerts => 'Zidziwitso';
+
+  @override
+  String get inviteTitle => 'Kuwoneratu kotsekedwa';
+
+  @override
+  String get inviteBody =>
+      'Pakadali pano WhatStock ikupezeka mwa kuitanidwa kokha. Lowetsani khodi yoitanira imene munalandira.';
+
+  @override
+  String get inviteCodeLabel => 'Khodi yoitanira';
+
+  @override
+  String get inviteContinue => 'Pitirizani';
+
+  @override
+  String get inviteInvalid => 'Khodi yoitanira iyi si yovomerezeka.';
+
+  @override
+  String get inviteExpired =>
+      'Kuitanidwa kumeneku kwatha nthawi. Pemphani khodi yatsopano kwa munthu amene anakuitanani.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Khodi yoitanira iyi ikugwiritsidwa ntchito kale pa zipangizo zochuluka kwambiri zololedwa.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kuwoneratu kwachinsinsi kwa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa.';
 }

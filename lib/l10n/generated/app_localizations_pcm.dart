@@ -1335,4 +1335,37 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerts';
+
+  @override
+  String get inviteTitle => 'Private preview';
+
+  @override
+  String get inviteBody =>
+      'For now, na only people wey dem invite fit use WhatStock. Put di invite code wey you collect.';
+
+  @override
+  String get inviteCodeLabel => 'Invite code';
+
+  @override
+  String get inviteContinue => 'Continue';
+
+  @override
+  String get inviteInvalid => 'Dis invite code no correct.';
+
+  @override
+  String get inviteExpired =>
+      'Dis invite don expire. Ask di person wey invite you make e give you new code.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Dem don already use dis invite code for di maximum number of devices.';
+
+  @override
+  String previewFor(String name) {
+    return 'Secret preview for $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Today analysis limit for dis preview don finish. Try again tomorrow.';
 }

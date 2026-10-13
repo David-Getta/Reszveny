@@ -1335,4 +1335,37 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get navAlerts => 'Larm';
+
+  @override
+  String get inviteTitle => 'Stängd förhandsversion';
+
+  @override
+  String get inviteBody =>
+      'WhatStock är tills vidare bara tillgängligt via inbjudan. Ange inbjudningskoden du har fått.';
+
+  @override
+  String get inviteCodeLabel => 'Inbjudningskod';
+
+  @override
+  String get inviteContinue => 'Fortsätt';
+
+  @override
+  String get inviteInvalid => 'Den här inbjudningskoden är inte giltig.';
+
+  @override
+  String get inviteExpired =>
+      'Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.';
+
+  @override
+  String previewFor(String name) {
+    return 'Konfidentiell förhandsversion för $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon.';
 }

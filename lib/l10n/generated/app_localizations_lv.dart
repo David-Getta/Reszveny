@@ -1365,4 +1365,37 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get navAlerts => 'Brīdinājumi';
+
+  @override
+  String get inviteTitle => 'Slēgts priekšskatījums';
+
+  @override
+  String get inviteBody =>
+      'Pagaidām WhatStock ir pieejama tikai ar ielūgumu. Ievadiet saņemto ielūguma kodu.';
+
+  @override
+  String get inviteCodeLabel => 'Ielūguma kods';
+
+  @override
+  String get inviteContinue => 'Turpināt';
+
+  @override
+  String get inviteInvalid => 'Šis ielūguma kods nav derīgs.';
+
+  @override
+  String get inviteExpired =>
+      'Šī ielūguma derīguma termiņš ir beidzies. Palūdziet jaunu kodu personai, kas jūs uzaicināja.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.';
+
+  @override
+  String previewFor(String name) {
+    return 'Konfidenciāls priekšskatījums: $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
 }

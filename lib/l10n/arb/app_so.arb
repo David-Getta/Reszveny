@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} bishii",
   "subscriptionLegalYearly": "Rukummooyinka sannadlaha ah si toos ah ayay u cusboonaadaan sannad kasta ilaa aad joojiso. Markaad rukunto waxaad aqbashaa Shuruudaha Isticmaalka iyo Siyaasadda Qarsoodiga.",
   "myAnalyses": "Falanqaynahayga",
-  "navAlerts": "Digniinaha"
+  "navAlerts": "Digniinaha",
+  "inviteTitle": "Muuqaal hore oo xiran",
+  "inviteBody": "WhatStock hadda waxaa lagu heli karaa casuumad oo keliya. Geli koodhka casuumadda ee laguu soo diray.",
+  "inviteCodeLabel": "Koodhka casuumadda",
+  "inviteContinue": "Sii wad",
+  "inviteInvalid": "Koodhkan casuumaddu ma ansax aha.",
+  "inviteExpired": "Casuumaddani way dhacday. Weydii qofkii ku casuumay koodh cusub.",
+  "inviteDeviceLimit": "Koodhkan casuumadda waxaa hore loogu isticmaalay tirada ugu badan ee qalabka la oggol yahay.",
+  "previewFor": "Muuqaal hore oo qarsoodi ah – {name}",
+  "errPreviewDailyLimit": "Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri."
 }

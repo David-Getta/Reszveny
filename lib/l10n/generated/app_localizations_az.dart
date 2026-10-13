@@ -1334,4 +1334,37 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get navAlerts => 'Bildirişlər';
+
+  @override
+  String get inviteTitle => 'Qapalı önizləmə';
+
+  @override
+  String get inviteBody =>
+      'WhatStock hələlik yalnız dəvətlə əlçatandır. Aldığınız dəvət kodunu daxil edin.';
+
+  @override
+  String get inviteCodeLabel => 'Dəvət kodu';
+
+  @override
+  String get inviteContinue => 'Davam et';
+
+  @override
+  String get inviteInvalid => 'Bu dəvət kodu etibarlı deyil.';
+
+  @override
+  String get inviteExpired =>
+      'Bu dəvətin müddəti bitib. Sizi dəvət edən şəxsdən yeni kod istəyin.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Bu dəvət kodu artıq maksimum sayda cihazda istifadə olunur.';
+
+  @override
+  String previewFor(String name) {
+    return '$name üçün məxfi önizləmə';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Bu önizləmənin bugünkü təhlil limiti dolub. Sabah yenidən cəhd edin.';
 }

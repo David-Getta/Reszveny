@@ -1321,4 +1321,36 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get navAlerts => 'แจ้งเตือน';
+
+  @override
+  String get inviteTitle => 'พรีวิวแบบปิด';
+
+  @override
+  String get inviteBody =>
+      'ขณะนี้ WhatStock เปิดให้ใช้งานเฉพาะผู้ที่ได้รับเชิญเท่านั้น กรอกรหัสเชิญที่คุณได้รับ';
+
+  @override
+  String get inviteCodeLabel => 'รหัสเชิญ';
+
+  @override
+  String get inviteContinue => 'ดำเนินการต่อ';
+
+  @override
+  String get inviteInvalid => 'รหัสเชิญนี้ไม่ถูกต้อง';
+
+  @override
+  String get inviteExpired => 'คำเชิญนี้หมดอายุแล้ว ขอรหัสใหม่จากผู้ที่เชิญคุณ';
+
+  @override
+  String get inviteDeviceLimit =>
+      'รหัสเชิญนี้ถูกใช้งานบนอุปกรณ์ครบจำนวนสูงสุดแล้ว';
+
+  @override
+  String previewFor(String name) {
+    return 'พรีวิวลับสำหรับ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'การวิเคราะห์ของพรีวิวนี้ครบโควตาของวันนี้แล้ว ลองอีกครั้งพรุ่งนี้';
 }

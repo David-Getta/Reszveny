@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} di mehê de",
   "subscriptionLegalYearly": "Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî.",
   "myAnalyses": "Analîzên min",
-  "navAlerts": "Hişyarî"
+  "navAlerts": "Hişyarî",
+  "inviteTitle": "Pêşdîtina girtî",
+  "inviteBody": "WhatStock niha tenê bi vexwendinê heye. Koda vexwendinê ya ku te wergirtiye binivîse.",
+  "inviteCodeLabel": "Koda vexwendinê",
+  "inviteContinue": "Bidomîne",
+  "inviteInvalid": "Ev koda vexwendinê ne derbasdar e.",
+  "inviteExpired": "Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.",
+  "inviteDeviceLimit": "Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.",
+  "previewFor": "Pêşdîtina nepenî ji bo {name}",
+  "errPreviewDailyLimit": "Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne."
 }

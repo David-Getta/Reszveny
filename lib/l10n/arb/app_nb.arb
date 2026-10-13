@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per måned",
   "subscriptionLegalYearly": "Årsabonnementet fornyes automatisk hvert år til du sier det opp. Ved å abonnere godtar du bruksvilkårene og personvernerklæringen.",
   "myAnalyses": "Mine analyser",
-  "navAlerts": "Varsler"
+  "navAlerts": "Varsler",
+  "inviteTitle": "Lukket forhåndsvisning",
+  "inviteBody": "WhatStock er foreløpig bare tilgjengelig for inviterte. Skriv inn invitasjonskoden du har fått.",
+  "inviteCodeLabel": "Invitasjonskode",
+  "inviteContinue": "Fortsett",
+  "inviteInvalid": "Denne invitasjonskoden er ikke gyldig.",
+  "inviteExpired": "Denne invitasjonen har utløpt. Be personen som inviterte deg, om en ny kode.",
+  "inviteDeviceLimit": "Denne invitasjonskoden er allerede i bruk på maksimalt antall enheter.",
+  "previewFor": "Konfidensiell forhåndsvisning for {name}",
+  "errPreviewDailyLimit": "Dagens analysegrense for denne forhåndsvisningen er nådd. Prøv igjen i morgen."
 }

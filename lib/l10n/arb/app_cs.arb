@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} měsíčně",
   "subscriptionLegalYearly": "Roční předplatné se každý rok automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů.",
   "myAnalyses": "Moje analýzy",
-  "navAlerts": "Upozornění"
+  "navAlerts": "Upozornění",
+  "inviteTitle": "Uzavřená předběžná verze",
+  "inviteBody": "WhatStock je zatím dostupný jen na pozvánku. Zadejte kód z pozvánky, který jste obdrželi.",
+  "inviteCodeLabel": "Kód pozvánky",
+  "inviteContinue": "Pokračovat",
+  "inviteInvalid": "Tento kód pozvánky není platný.",
+  "inviteExpired": "Platnost této pozvánky vypršela. Požádejte o nový kód osobu, která vás pozvala.",
+  "inviteDeviceLimit": "Tento kód pozvánky se už používá na maximálním počtu zařízení.",
+  "previewFor": "Důvěrná předběžná verze – {name}",
+  "errPreviewDailyLimit": "Dnešní limit analýz této předběžné verze byl vyčerpán. Zkuste to znovu zítra."
 }

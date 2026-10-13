@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} mēnesī",
   "subscriptionLegalYearly": "Gada abonements tiek automātiski atjaunots katru gadu, līdz to atceļat. Abonējot jūs piekrītat Lietošanas noteikumiem un Privātuma politikai.",
   "myAnalyses": "Manas analīzes",
-  "navAlerts": "Brīdinājumi"
+  "navAlerts": "Brīdinājumi",
+  "inviteTitle": "Slēgts priekšskatījums",
+  "inviteBody": "Pagaidām WhatStock ir pieejama tikai ar ielūgumu. Ievadiet saņemto ielūguma kodu.",
+  "inviteCodeLabel": "Ielūguma kods",
+  "inviteContinue": "Turpināt",
+  "inviteInvalid": "Šis ielūguma kods nav derīgs.",
+  "inviteExpired": "Šī ielūguma derīguma termiņš ir beidzies. Palūdziet jaunu kodu personai, kas jūs uzaicināja.",
+  "inviteDeviceLimit": "Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.",
+  "previewFor": "Konfidenciāls priekšskatījums: {name}",
+  "errPreviewDailyLimit": "Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt."
 }

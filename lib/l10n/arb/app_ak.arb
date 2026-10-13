@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} bosome biara",
   "subscriptionLegalYearly": "Subscription yɛ foforo ankasa afe biara kosi sɛ wobɛtwa mu. Sɛ wokyerɛw wo din a, wopene Dwumadi Mmara ne Kokoam Nhyehyɛe no so.",
   "myAnalyses": "Me nhwehwɛmu",
-  "navAlerts": "Kɔkɔbɔ"
+  "navAlerts": "Kɔkɔbɔ",
+  "inviteTitle": "Nhwɛkan a ɛto mu",
+  "inviteBody": "Seesei deɛ, wɔde WhatStock ma nnipa a wɔafrɛ wɔn nko ara. Hyɛ nsafrɛ code a wonyaeɛ no.",
+  "inviteCodeLabel": "Nsafrɛ code",
+  "inviteContinue": "Kɔ so",
+  "inviteInvalid": "Nsafrɛ code yi nteɛ.",
+  "inviteExpired": "Nsafrɛ yi bere atwam. Bisa onipa a ɔfrɛɛ wo no ma ɔmma wo code foforo.",
+  "inviteDeviceLimit": "Wɔde nsafrɛ code yi di dwuma wɔ mfiri dodoɔ a ɛsɛ so dedaw.",
+  "previewFor": "Nhwɛkan a ɛyɛ kokoam ma {name}",
+  "errPreviewDailyLimit": "Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena."
 }

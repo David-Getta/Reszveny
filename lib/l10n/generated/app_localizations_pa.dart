@@ -1330,4 +1330,37 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get navAlerts => 'ਅਲਰਟ';
+
+  @override
+  String get inviteTitle => 'ਬੰਦ ਪ੍ਰੀਵਿਊ';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ਫ਼ਿਲਹਾਲ ਸਿਰਫ਼ ਸੱਦੇ ਰਾਹੀਂ ਉਪਲਬਧ ਹੈ। ਤੁਹਾਨੂੰ ਮਿਲਿਆ ਸੱਦਾ ਕੋਡ ਦਰਜ ਕਰੋ।';
+
+  @override
+  String get inviteCodeLabel => 'ਸੱਦਾ ਕੋਡ';
+
+  @override
+  String get inviteContinue => 'ਜਾਰੀ ਰੱਖੋ';
+
+  @override
+  String get inviteInvalid => 'ਇਹ ਸੱਦਾ ਕੋਡ ਵੈਧ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String get inviteExpired =>
+      'ਇਸ ਸੱਦੇ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਹੋ ਗਈ ਹੈ। ਜਿਸ ਨੇ ਤੁਹਾਨੂੰ ਸੱਦਾ ਦਿੱਤਾ ਸੀ, ਉਸ ਤੋਂ ਨਵਾਂ ਕੋਡ ਮੰਗੋ।';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ਇਹ ਸੱਦਾ ਕੋਡ ਪਹਿਲਾਂ ਹੀ ਵੱਧ ਤੋਂ ਵੱਧ ਗਿਣਤੀ ਦੇ ਡਿਵਾਈਸਾਂ \'ਤੇ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।';
+
+  @override
+  String previewFor(String name) {
+    return '$name ਲਈ ਗੁਪਤ ਪ੍ਰੀਵਿਊ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ਇਸ ਪ੍ਰੀਵਿਊ ਦੀ ਅੱਜ ਦੀ ਵਿਸ਼ਲੇਸ਼ਣ ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ ਹੈ। ਕੱਲ੍ਹ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 }

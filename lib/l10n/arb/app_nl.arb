@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} per maand",
   "subscriptionLegalYearly": "Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid.",
   "myAnalyses": "Mijn analyses",
-  "navAlerts": "Alerts"
+  "navAlerts": "Alerts",
+  "inviteTitle": "Besloten preview",
+  "inviteBody": "WhatStock is voorlopig alleen op uitnodiging beschikbaar. Voer de uitnodigingscode in die je hebt ontvangen.",
+  "inviteCodeLabel": "Uitnodigingscode",
+  "inviteContinue": "Doorgaan",
+  "inviteInvalid": "Deze uitnodigingscode is niet geldig.",
+  "inviteExpired": "Deze uitnodiging is verlopen. Vraag degene die je heeft uitgenodigd om een nieuwe code.",
+  "inviteDeviceLimit": "Deze uitnodigingscode wordt al op het maximale aantal apparaten gebruikt.",
+  "previewFor": "Vertrouwelijke preview voor {name}",
+  "errPreviewDailyLimit": "De analyselimiet van vandaag voor deze preview is bereikt. Probeer het morgen opnieuw."
 }

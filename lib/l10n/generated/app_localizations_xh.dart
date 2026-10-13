@@ -1340,4 +1340,37 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get navAlerts => 'Izilumkiso';
+
+  @override
+  String get inviteTitle => 'Umboniso wangaphambili ovaliweyo';
+
+  @override
+  String get inviteBody =>
+      'I-WhatStock ifumaneka ngesimemo kuphela okwangoku. Faka ikhowudi yesimemo oyifumeneyo.';
+
+  @override
+  String get inviteCodeLabel => 'Ikhowudi yesimemo';
+
+  @override
+  String get inviteContinue => 'Qhubeka';
+
+  @override
+  String get inviteInvalid => 'Le khowudi yesimemo ayisebenzi.';
+
+  @override
+  String get inviteExpired =>
+      'Esi simemo siphelelwe lixesha. Cela ikhowudi entsha kumntu okumemileyo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Le khowudi yesimemo sele isetyenziswa kwinani eliphezulu lezixhobo elivumelekileyo.';
+
+  @override
+  String previewFor(String name) {
+    return 'Umboniso oyimfihlo ka-$name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Umda wohlalutyo wanamhlanje walo mboniso wangaphambili ufikelelwe. Zama kwakhona ngomso.';
 }

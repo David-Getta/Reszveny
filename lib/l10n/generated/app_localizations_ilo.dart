@@ -1345,4 +1345,37 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alerto';
+
+  @override
+  String get inviteTitle => 'Sirado a preview';
+
+  @override
+  String get inviteBody =>
+      'Iti agdama, babaen laeng iti imbitasion a mausar ti WhatStock. Ikabil ti code ti imbitasion nga inawatmo.';
+
+  @override
+  String get inviteCodeLabel => 'Code ti imbitasion';
+
+  @override
+  String get inviteContinue => 'Agtuloy';
+
+  @override
+  String get inviteInvalid => 'Saan nga umiso daytoy a code ti imbitasion.';
+
+  @override
+  String get inviteExpired =>
+      'Nag-expire daytoy nga imbitasion. Dumawat iti baro a code iti tao a nangimbitar kenka.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Maus-usaren daytoy a code ti imbitasion iti kaaduan a bilang dagiti device a maipalubos.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kompidensial a preview para ken $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat.';
 }

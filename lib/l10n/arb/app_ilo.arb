@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} iti tunggal bulan",
   "subscriptionLegalYearly": "Automatiko a mairenew ti tinawen a subscription iti tunggal tawen agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy.",
   "myAnalyses": "Dagiti panangsukimatko",
-  "navAlerts": "Alerto"
+  "navAlerts": "Alerto",
+  "inviteTitle": "Sirado a preview",
+  "inviteBody": "Iti agdama, babaen laeng iti imbitasion a mausar ti WhatStock. Ikabil ti code ti imbitasion nga inawatmo.",
+  "inviteCodeLabel": "Code ti imbitasion",
+  "inviteContinue": "Agtuloy",
+  "inviteInvalid": "Saan nga umiso daytoy a code ti imbitasion.",
+  "inviteExpired": "Nag-expire daytoy nga imbitasion. Dumawat iti baro a code iti tao a nangimbitar kenka.",
+  "inviteDeviceLimit": "Maus-usaren daytoy a code ti imbitasion iti kaaduan a bilang dagiti device a maipalubos.",
+  "previewFor": "Kompidensial a preview para ken {name}",
+  "errPreviewDailyLimit": "Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat."
 }

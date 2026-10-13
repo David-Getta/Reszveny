@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} kiuug fãa",
   "subscriptionLegalYearly": "Abonmã le sɩngd a meng yʋʋmd fãa n tãag f sã n bas-a. F sã n kẽ abonmã, f sakda Tʋʋm noy la Solgr noy.",
   "myAnalyses": "M vɛɛsgã",
-  "navAlerts": "Gũusgo"
+  "navAlerts": "Gũusgo",
+  "inviteTitle": "Ges-taoor sẽn pa yaa ne fãa ye",
+  "inviteBody": "Masã, WhatStock yaa ne boollg bal. Gʋls boollg kod ning f sẽn paame wã.",
+  "inviteCodeLabel": "Boollg kod",
+  "inviteContinue": "Kell taoore",
+  "inviteInvalid": "Boollg kod kãngã pa zems ye.",
+  "inviteExpired": "Boollg kãngã wakat sa. Kos ned ning sẽn bool-f wã kod a-to.",
+  "inviteDeviceLimit": "Boollg kod kãngã tʋmd masã ne masĩn-dãmb sõor sẽn yaa wʋsg n yɩɩda.",
+  "previewFor": "Ges-taoor solgr – {name} yĩnga",
+  "errPreviewDailyLimit": "Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo."
 }

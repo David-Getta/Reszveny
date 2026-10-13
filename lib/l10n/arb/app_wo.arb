@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ci weer wi",
   "subscriptionLegalYearly": "Abonmaa yu at yi dañuy yeesu ci seen bopp at mu nekk ba nga neenal. Su nga bindoo, nangu nga Sàrti jëfandikoo ak Politigu sutura.",
   "myAnalyses": "Samay saytu",
-  "navAlerts": "Artu"
+  "navAlerts": "Artu",
+  "inviteTitle": "Wone bu jëkk bu tëju",
+  "inviteBody": "Léegi, ñi ñu woo rekk ñoo mën a jëfandikoo WhatStock. Dugalal koodu woote bi nga jot.",
+  "inviteCodeLabel": "Koodu woote",
+  "inviteContinue": "Wéy",
+  "inviteInvalid": "Koodu woote bii baaxul.",
+  "inviteExpired": "Woote bii jeex na. Laajal ki la woo benn kood bu bees.",
+  "inviteDeviceLimit": "Koodu woote bii, ñu ngi koy jëfandikoo ba noppi ci limu masin yi gën a bare yi ñu may.",
+  "previewFor": "Wone bu kumpa ngir {name}",
+  "errPreviewDailyLimit": "Limu saytu yu tey yi ci wone bii jeex na. Jéemaatal ëllëg."
 }

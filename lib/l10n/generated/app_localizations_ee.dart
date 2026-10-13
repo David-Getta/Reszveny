@@ -1337,4 +1337,37 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get navAlerts => 'Nuxlɔ̃amewo';
+
+  @override
+  String get inviteTitle => 'Ŋgɔkpɔkpɔ si wotu';
+
+  @override
+  String get inviteBody =>
+      'Fifia la, WhatStock le amesiwo wokpe ko si. Ŋlɔ kpekpe code si nèxɔ la ɖe eme.';
+
+  @override
+  String get inviteCodeLabel => 'Kpekpe code';
+
+  @override
+  String get inviteContinue => 'Yi edzi';
+
+  @override
+  String get inviteInvalid => 'Kpekpe code sia mesɔ o.';
+
+  @override
+  String get inviteExpired =>
+      'Kpekpe sia ƒe ɣeyiɣi va yi. Bia code yeye tso ame si kpe wò la gbɔ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Wozã kpekpe code sia le mɔ̃ siwo ƒe xexlẽme ɖe mɔ wu la dzi xoxo.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ŋgɔkpɔkpɔ ɣaɣla na $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ŋgɔkpɔkpɔ sia ƒe egbe numekuku ƒe seɖoƒe de. Gagbugbɔ te kpɔ etsɔ.';
 }

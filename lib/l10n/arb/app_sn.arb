@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} pamwedzi",
   "subscriptionLegalYearly": "Kunyoresa kwegore kunovandudzwa kwega gore rega rega kusvika wakanzura. Nekunyoresa unobvuma Mitemo Yekushandisa neMutemo Wekuvanzika.",
   "myAnalyses": "Ongororo dzangu",
-  "navAlerts": "Zviziviso"
+  "navAlerts": "Zviziviso",
+  "inviteTitle": "Shanduro yekuedza yakavharika",
+  "inviteBody": "WhatStock iri kuwanikwa nekukokwa chete parizvino. Isa kodhi yekukoka yawakagamuchira.",
+  "inviteCodeLabel": "Kodhi yekukoka",
+  "inviteContinue": "Enderera mberi",
+  "inviteInvalid": "Kodhi yekukoka iyi haina kururama.",
+  "inviteExpired": "Kukoka uku kwapera nguva. Kumbira munhu akakukoka kodhi itsva.",
+  "inviteDeviceLimit": "Kodhi yekukoka iyi yatoshandiswa pamidziyo yakawanda sezvinobvumirwa.",
+  "previewFor": "Shanduro yakavanzika ya{name}",
+  "errPreviewDailyLimit": "Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana."
 }

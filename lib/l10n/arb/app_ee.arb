@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ɣleti sia ɣleti",
   "subscriptionLegalYearly": "Subscription wɔa eɖokui yeye ƒe sia ƒe va se ɖe esime nàɖe asi le eŋu. Ne èŋlɔ ŋkɔ la, èlɔ̃ ɖe Zãzã ƒe Sewo kple Adzamenyawo ƒe Ɖoɖo dzi.",
   "myAnalyses": "Nye numekukuwo",
-  "navAlerts": "Nuxlɔ̃amewo"
+  "navAlerts": "Nuxlɔ̃amewo",
+  "inviteTitle": "Ŋgɔkpɔkpɔ si wotu",
+  "inviteBody": "Fifia la, WhatStock le amesiwo wokpe ko si. Ŋlɔ kpekpe code si nèxɔ la ɖe eme.",
+  "inviteCodeLabel": "Kpekpe code",
+  "inviteContinue": "Yi edzi",
+  "inviteInvalid": "Kpekpe code sia mesɔ o.",
+  "inviteExpired": "Kpekpe sia ƒe ɣeyiɣi va yi. Bia code yeye tso ame si kpe wò la gbɔ.",
+  "inviteDeviceLimit": "Wozã kpekpe code sia le mɔ̃ siwo ƒe xexlẽme ɖe mɔ wu la dzi xoxo.",
+  "previewFor": "Ŋgɔkpɔkpɔ ɣaɣla na {name}",
+  "errPreviewDailyLimit": "Ŋgɔkpɔkpɔ sia ƒe egbe numekuku ƒe seɖoƒe de. Gagbugbɔ te kpɔ etsɔ."
 }

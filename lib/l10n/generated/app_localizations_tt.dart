@@ -1331,4 +1331,37 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get navAlerts => 'Искәртүләр';
+
+  @override
+  String get inviteTitle => 'Ябык алдан карау';
+
+  @override
+  String get inviteBody =>
+      'WhatStock хәзергә чакыру белән генә кулланыла ала. Алган чакыру кодыгызны кертегез.';
+
+  @override
+  String get inviteCodeLabel => 'Чакыру коды';
+
+  @override
+  String get inviteContinue => 'Дәвам итү';
+
+  @override
+  String get inviteInvalid => 'Бу чакыру коды гамәлдә түгел.';
+
+  @override
+  String get inviteExpired =>
+      'Бу чакыруның вакыты чыккан. Сезне чакырган кешедән яңа код сорагыз.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Бу чакыру коды инде рөхсәт ителгән иң күп җайланмада кулланыла.';
+
+  @override
+  String previewFor(String name) {
+    return '$name өчен яшерен алдан карау';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Бу алдан карауның бүгенге анализ чиге тулды. Иртәгә кабат тырышып карагыз.';
 }

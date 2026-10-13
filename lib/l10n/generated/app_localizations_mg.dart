@@ -1345,4 +1345,37 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get navAlerts => 'Fanairana';
+
+  @override
+  String get inviteTitle => 'Fijery mialoha mihidy';
+
+  @override
+  String get inviteBody =>
+      'Amin\'ny fanasana ihany no azo ampiasana ny WhatStock amin\'izao fotoana izao. Ampidiro ny kaody fanasana noraisinao.';
+
+  @override
+  String get inviteCodeLabel => 'Kaody fanasana';
+
+  @override
+  String get inviteContinue => 'Tohizana';
+
+  @override
+  String get inviteInvalid => 'Tsy manan-kery io kaody fanasana io.';
+
+  @override
+  String get inviteExpired =>
+      'Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Efa ampiasaina amin\'ny isan\'ny fitaovana farafahabetsany io kaody fanasana io.';
+
+  @override
+  String previewFor(String name) {
+    return 'Fijery mialoha tsiambaratelo ho an\'i $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Tratra ny fetran\'ny fanadihadiana androany amin\'ity fijery mialoha ity. Andramo indray rahampitso.';
 }

@@ -1338,4 +1338,37 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Maranduʼi';
+
+  @override
+  String get inviteTitle => 'Jehechauka mboyvegua oñembotýva';
+
+  @override
+  String get inviteBody =>
+      'Koʼág̃a WhatStock ojeporukuaa jeguenói rupive añoite. Emoinge código jeguenoirã nderehupyty vaʼekue.';
+
+  @override
+  String get inviteCodeLabel => 'Código jeguenoirã';
+
+  @override
+  String get inviteContinue => 'Ekuʼejey';
+
+  @override
+  String get inviteInvalid => 'Ko código jeguenoirã ndoikói.';
+
+  @override
+  String get inviteExpired =>
+      'Ko jeguenói ndoikovéima. Ejerure peteĩ código pyahu pe ndeguenoi vaʼekuépe.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ko código jeguenoirã ojeporúma tembipuru papapy tuichavévape.';
+
+  @override
+  String previewFor(String name) {
+    return 'Jehechauka ñemi ${name}peg̃uarã';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ.';
 }

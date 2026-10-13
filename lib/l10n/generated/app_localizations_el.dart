@@ -1340,4 +1340,37 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get navAlerts => 'Ειδοποιήσεις';
+
+  @override
+  String get inviteTitle => 'Κλειστή προεπισκόπηση';
+
+  @override
+  String get inviteBody =>
+      'Το WhatStock είναι προς το παρόν διαθέσιμο μόνο με πρόσκληση. Εισαγάγετε τον κωδικό πρόσκλησης που λάβατε.';
+
+  @override
+  String get inviteCodeLabel => 'Κωδικός πρόσκλησης';
+
+  @override
+  String get inviteContinue => 'Συνέχεια';
+
+  @override
+  String get inviteInvalid => 'Αυτός ο κωδικός πρόσκλησης δεν είναι έγκυρος.';
+
+  @override
+  String get inviteExpired =>
+      'Αυτή η πρόσκληση έχει λήξει. Ζητήστε νέο κωδικό από το άτομο που σας προσκάλεσε.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Αυτός ο κωδικός πρόσκλησης χρησιμοποιείται ήδη στον μέγιστο αριθμό συσκευών.';
+
+  @override
+  String previewFor(String name) {
+    return 'Εμπιστευτική προεπισκόπηση για $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Συμπληρώθηκε το σημερινό όριο αναλύσεων αυτής της προεπισκόπησης. Δοκιμάστε ξανά αύριο.';
 }

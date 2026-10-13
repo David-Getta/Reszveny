@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} saben sasi",
   "subscriptionLegalYearly": "Langganan taunan otomatis dianyari saben taun nganti sampeyan mbatalake. Kanthi langganan, sampeyan nampa Katemtuan Panganggo lan Kawicaksanan Privasi.",
   "myAnalyses": "Analisisku",
-  "navAlerts": "Pèngetan"
+  "navAlerts": "Pèngetan",
+  "inviteTitle": "Pratinjau tertutup",
+  "inviteBody": "Saiki WhatStock mung bisa dienggo nganggo undangan. Lebokna kode undangan sing wis sampeyan tampa.",
+  "inviteCodeLabel": "Kode undangan",
+  "inviteContinue": "Terusake",
+  "inviteInvalid": "Kode undangan iki ora valid.",
+  "inviteExpired": "Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.",
+  "inviteDeviceLimit": "Kode undangan iki wis dienggo ing jumlah piranti maksimal.",
+  "previewFor": "Pratinjau rahasia kanggo {name}",
+  "errPreviewDailyLimit": "Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk."
 }

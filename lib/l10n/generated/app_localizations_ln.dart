@@ -1339,4 +1339,37 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Makebisi';
+
+  @override
+  String get inviteTitle => 'Botali ya liboso ya sekele';
+
+  @override
+  String get inviteBody =>
+      'Sikoyo WhatStock ezali kaka na libyangi. Kɔtisa code ya libyangi oyo ozwaki.';
+
+  @override
+  String get inviteCodeLabel => 'Code ya libyangi';
+
+  @override
+  String get inviteContinue => 'Kokoba';
+
+  @override
+  String get inviteInvalid => 'Code oyo ya libyangi ezali malamu te.';
+
+  @override
+  String get inviteExpired =>
+      'Libyangi oyo eleki ntango. Senga code ya sika epai ya moto oyo abyangaki yo.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.';
+
+  @override
+  String previewFor(String name) {
+    return 'Botali ya sekele mpo na $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi.';
 }

@@ -1339,4 +1339,37 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get navAlerts => 'Amaran';
+
+  @override
+  String get inviteTitle => 'Pratonton tertutup';
+
+  @override
+  String get inviteBody =>
+      'WhatStock kini tersedia melalui jemputan sahaja. Masukkan kod jemputan yang anda terima.';
+
+  @override
+  String get inviteCodeLabel => 'Kod jemputan';
+
+  @override
+  String get inviteContinue => 'Teruskan';
+
+  @override
+  String get inviteInvalid => 'Kod jemputan ini tidak sah.';
+
+  @override
+  String get inviteExpired =>
+      'Jemputan ini telah tamat tempoh. Minta kod baharu daripada orang yang menjemput anda.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kod jemputan ini sudah digunakan pada bilangan peranti maksimum.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pratonton sulit untuk $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Had analisis hari ini untuk pratonton ini telah dicapai. Cuba lagi esok.';
 }

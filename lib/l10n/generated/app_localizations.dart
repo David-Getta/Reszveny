@@ -2568,6 +2568,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Alerts'**
   String get navAlerts;
+
+  /// Title of the screen shown when the app is in an invite-only preview and asks for an invite code.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed preview'**
+  String get inviteTitle;
+
+  /// Explanation under the title of the invite-code screen.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatStock is available by invitation only for now. Enter the invite code you received.'**
+  String get inviteBody;
+
+  /// Label of the text field where the user types the invite code.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite code'**
+  String get inviteCodeLabel;
+
+  /// Button that checks the entered invite code and opens the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get inviteContinue;
+
+  /// Error under the invite-code field when the code is wrong.
+  ///
+  /// In en, this message translates to:
+  /// **'This invite code is not valid.'**
+  String get inviteInvalid;
+
+  /// Error when the invite code's validity period has ended.
+  ///
+  /// In en, this message translates to:
+  /// **'This invite has expired. Ask the person who invited you for a new code.'**
+  String get inviteExpired;
+
+  /// Error when the same invite code has been used on too many devices (it was probably shared further).
+  ///
+  /// In en, this message translates to:
+  /// **'This invite code is already in use on the maximum number of devices.'**
+  String get inviteDeviceLimit;
+
+  /// Small watermark line at the bottom of every screen in an invite-only build, naming the invited person. {name} is a person's name, e.g. 'Gábor Schulz'. Keep it short.
+  ///
+  /// In en, this message translates to:
+  /// **'Confidential preview for {name}'**
+  String previewFor(String name);
+
+  /// Error when the invite-only preview's daily number of AI analyses is used up.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s analysis limit of this preview has been reached. Try again tomorrow.'**
+  String get errPreviewDailyLimit;
 }
 
 class _AppLocalizationsDelegate

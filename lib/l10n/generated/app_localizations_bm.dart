@@ -1334,4 +1334,37 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get navAlerts => 'Lasɔminiw';
+
+  @override
+  String get inviteTitle => 'Kɔrɔbɔli datugulen';
+
+  @override
+  String get inviteBody =>
+      'Sisan, WhatStock bɛ sɔrɔ weleli dɔrɔn de fɛ. I ye weleli kode min sɔrɔ, o sɛbɛn.';
+
+  @override
+  String get inviteCodeLabel => 'Weleli kode';
+
+  @override
+  String get inviteContinue => 'Taa a fɛ';
+
+  @override
+  String get inviteInvalid => 'Nin weleli kode in ma ɲɛ.';
+
+  @override
+  String get inviteExpired =>
+      'Nin weleli in waati tɛmɛna. Mɔgɔ min ye i wele, kode kura ɲini o fɛ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Nin weleli kode in bɛ ka baara kɛ minɛn hakɛ laban kan kaban.';
+
+  @override
+  String previewFor(String name) {
+    return 'Kɔrɔbɔli gundolen $name ye';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini.';
 }

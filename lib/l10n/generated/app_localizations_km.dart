@@ -1326,4 +1326,37 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get navAlerts => 'ការជូនដំណឹង';
+
+  @override
+  String get inviteTitle => 'ការមើលជាមុនឯកជន';
+
+  @override
+  String get inviteBody =>
+      'បច្ចុប្បន្ននេះ WhatStock អាចប្រើបានតែតាមការអញ្ជើញប៉ុណ្ណោះ។ សូមបញ្ចូលលេខកូដអញ្ជើញដែលអ្នកបានទទួល។';
+
+  @override
+  String get inviteCodeLabel => 'លេខកូដអញ្ជើញ';
+
+  @override
+  String get inviteContinue => 'បន្ត';
+
+  @override
+  String get inviteInvalid => 'លេខកូដអញ្ជើញនេះមិនត្រឹមត្រូវទេ។';
+
+  @override
+  String get inviteExpired =>
+      'ការអញ្ជើញនេះផុតកំណត់ហើយ។ សូមស្នើសុំលេខកូដថ្មីពីអ្នកដែលបានអញ្ជើញអ្នក។';
+
+  @override
+  String get inviteDeviceLimit =>
+      'លេខកូដអញ្ជើញនេះកំពុងត្រូវបានប្រើលើចំនួនឧបករណ៍អតិបរមារួចហើយ។';
+
+  @override
+  String previewFor(String name) {
+    return 'ការមើលជាមុនសម្ងាត់សម្រាប់ $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ដែនកំណត់ការវិភាគសម្រាប់ថ្ងៃនេះនៃការមើលជាមុននេះត្រូវបានប្រើអស់ហើយ។ សូមព្យាយាមម្តងទៀតនៅថ្ងៃស្អែក។';
 }

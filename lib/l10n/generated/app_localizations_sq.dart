@@ -1340,4 +1340,37 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get navAlerts => 'Alarmet';
+
+  @override
+  String get inviteTitle => 'Pamje paraprake e mbyllur';
+
+  @override
+  String get inviteBody =>
+      'WhatStock tani për tani është i disponueshëm vetëm me ftesë. Vendosni kodin e ftesës që keni marrë.';
+
+  @override
+  String get inviteCodeLabel => 'Kodi i ftesës';
+
+  @override
+  String get inviteContinue => 'Vazhdo';
+
+  @override
+  String get inviteInvalid => 'Ky kod ftese nuk është i vlefshëm.';
+
+  @override
+  String get inviteExpired =>
+      'Kjo ftesë ka skaduar. Kërkojini personit që ju ftoi një kod të ri.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pamje paraprake konfidenciale për $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Kufiri ditor i analizave për këtë pamje paraprake është arritur. Provoni përsëri nesër.';
 }

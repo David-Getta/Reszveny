@@ -1336,4 +1336,37 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get navAlerts => 'Béwara';
+
+  @override
+  String get inviteTitle => 'Pratinjau katutup';
+
+  @override
+  String get inviteBody =>
+      'WhatStock ayeuna ngan ukur sayogi ku uleman. Lebetkeun kode uleman anu anjeun tampi.';
+
+  @override
+  String get inviteCodeLabel => 'Kode uleman';
+
+  @override
+  String get inviteContinue => 'Teraskeun';
+
+  @override
+  String get inviteInvalid => 'Kode uleman ieu teu valid.';
+
+  @override
+  String get inviteExpired =>
+      'Uleman ieu geus kadaluwarsa. Pénta kode anyar ka jalma anu ngondang anjeun.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Kode uleman ieu geus dipaké dina jumlah alat maksimum.';
+
+  @override
+  String previewFor(String name) {
+    return 'Pratinjau rahasia pikeun $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan.';
 }

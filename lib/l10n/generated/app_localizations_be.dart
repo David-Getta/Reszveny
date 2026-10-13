@@ -1372,4 +1372,37 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get navAlerts => 'Апавяшчэнні';
+
+  @override
+  String get inviteTitle => 'Закрыты папярэдні прагляд';
+
+  @override
+  String get inviteBody =>
+      'WhatStock пакуль даступны толькі па запрашэннях. Увядзіце атрыманы код запрашэння.';
+
+  @override
+  String get inviteCodeLabel => 'Код запрашэння';
+
+  @override
+  String get inviteContinue => 'Працягнуць';
+
+  @override
+  String get inviteInvalid => 'Гэты код запрашэння несапраўдны.';
+
+  @override
+  String get inviteExpired =>
+      'Тэрмін дзеяння гэтага запрашэння скончыўся. Папрасіце новы код у чалавека, які вас запрасіў.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Гэты код запрашэння ўжо выкарыстоўваецца на максімальнай колькасці прылад.';
+
+  @override
+  String previewFor(String name) {
+    return 'Канфідэнцыйны прагляд для $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Сённяшні ліміт аналізаў гэтага папярэдняга прагляду вычарпаны. Паспрабуйце зноў заўтра.';
 }

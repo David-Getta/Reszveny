@@ -1334,4 +1334,37 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get navAlerts => 'Arifa';
+
+  @override
+  String get inviteTitle => 'Onyesho la awali lililofungwa';
+
+  @override
+  String get inviteBody =>
+      'WhatStock inapatikana kwa mwaliko pekee kwa sasa. Weka msimbo wa mwaliko uliopokea.';
+
+  @override
+  String get inviteCodeLabel => 'Msimbo wa mwaliko';
+
+  @override
+  String get inviteContinue => 'Endelea';
+
+  @override
+  String get inviteInvalid => 'Msimbo huu wa mwaliko si sahihi.';
+
+  @override
+  String get inviteExpired =>
+      'Mwaliko huu umeisha muda wake. Muombe aliyekualika akupe msimbo mpya.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.';
+
+  @override
+  String previewFor(String name) {
+    return 'Onyesho la awali la siri kwa $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Kikomo cha uchambuzi cha leo cha onyesho hili la awali kimefikiwa. Jaribu tena kesho.';
 }

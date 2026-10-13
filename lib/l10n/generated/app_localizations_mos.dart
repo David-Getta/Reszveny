@@ -1323,4 +1323,37 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get navAlerts => 'Gũusgo';
+
+  @override
+  String get inviteTitle => 'Ges-taoor sẽn pa yaa ne fãa ye';
+
+  @override
+  String get inviteBody =>
+      'Masã, WhatStock yaa ne boollg bal. Gʋls boollg kod ning f sẽn paame wã.';
+
+  @override
+  String get inviteCodeLabel => 'Boollg kod';
+
+  @override
+  String get inviteContinue => 'Kell taoore';
+
+  @override
+  String get inviteInvalid => 'Boollg kod kãngã pa zems ye.';
+
+  @override
+  String get inviteExpired =>
+      'Boollg kãngã wakat sa. Kos ned ning sẽn bool-f wã kod a-to.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Boollg kod kãngã tʋmd masã ne masĩn-dãmb sõor sẽn yaa wʋsg n yɩɩda.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ges-taoor solgr – $name yĩnga';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo.';
 }

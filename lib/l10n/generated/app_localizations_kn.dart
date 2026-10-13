@@ -1339,4 +1339,37 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get navAlerts => 'ಅಲರ್ಟ್‌ಗಳು';
+
+  @override
+  String get inviteTitle => 'ಮುಚ್ಚಿದ ಪೂರ್ವವೀಕ್ಷಣೆ';
+
+  @override
+  String get inviteBody =>
+      'ಸದ್ಯಕ್ಕೆ WhatStock ಆಹ್ವಾನದ ಮೂಲಕ ಮಾತ್ರ ಲಭ್ಯವಿದೆ. ನೀವು ಪಡೆದ ಆಹ್ವಾನ ಕೋಡ್ ನಮೂದಿಸಿ.';
+
+  @override
+  String get inviteCodeLabel => 'ಆಹ್ವಾನ ಕೋಡ್';
+
+  @override
+  String get inviteContinue => 'ಮುಂದುವರಿಸಿ';
+
+  @override
+  String get inviteInvalid => 'ಈ ಆಹ್ವಾನ ಕೋಡ್ ಮಾನ್ಯವಾಗಿಲ್ಲ.';
+
+  @override
+  String get inviteExpired =>
+      'ಈ ಆಹ್ವಾನದ ಅವಧಿ ಮುಗಿದಿದೆ. ನಿಮ್ಮನ್ನು ಆಹ್ವಾನಿಸಿದವರಿಂದ ಹೊಸ ಕೋಡ್ ಕೇಳಿ.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'ಈ ಆಹ್ವಾನ ಕೋಡ್ ಈಗಾಗಲೇ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯ ಸಾಧನಗಳಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿದೆ.';
+
+  @override
+  String previewFor(String name) {
+    return '$name ಅವರಿಗಾಗಿ ಗೌಪ್ಯ ಪೂರ್ವವೀಕ್ಷಣೆ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'ಈ ಪೂರ್ವವೀಕ್ಷಣೆಯ ಇಂದಿನ ವಿಶ್ಲೇಷಣೆ ಮಿತಿ ತಲುಪಿದೆ. ನಾಳೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 }

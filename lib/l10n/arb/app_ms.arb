@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} sebulan",
   "subscriptionLegalYearly": "Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi.",
   "myAnalyses": "Analisis saya",
-  "navAlerts": "Amaran"
+  "navAlerts": "Amaran",
+  "inviteTitle": "Pratonton tertutup",
+  "inviteBody": "WhatStock kini tersedia melalui jemputan sahaja. Masukkan kod jemputan yang anda terima.",
+  "inviteCodeLabel": "Kod jemputan",
+  "inviteContinue": "Teruskan",
+  "inviteInvalid": "Kod jemputan ini tidak sah.",
+  "inviteExpired": "Jemputan ini telah tamat tempoh. Minta kod baharu daripada orang yang menjemput anda.",
+  "inviteDeviceLimit": "Kod jemputan ini sudah digunakan pada bilangan peranti maksimum.",
+  "previewFor": "Pratonton sulit untuk {name}",
+  "errPreviewDailyLimit": "Had analisis hari ini untuk pratonton ini telah dicapai. Cuba lagi esok."
 }

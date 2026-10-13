@@ -1331,4 +1331,37 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get navAlerts => 'અલર્ટ';
+
+  @override
+  String get inviteTitle => 'બંધ પ્રિવ્યૂ';
+
+  @override
+  String get inviteBody =>
+      'હાલ પૂરતું WhatStock ફક્ત આમંત્રણ દ્વારા જ ઉપલબ્ધ છે. તમને મળેલો આમંત્રણ કોડ દાખલ કરો.';
+
+  @override
+  String get inviteCodeLabel => 'આમંત્રણ કોડ';
+
+  @override
+  String get inviteContinue => 'ચાલુ રાખો';
+
+  @override
+  String get inviteInvalid => 'આ આમંત્રણ કોડ માન્ય નથી.';
+
+  @override
+  String get inviteExpired =>
+      'આ આમંત્રણની મુદત પૂરી થઈ ગઈ છે. તમને આમંત્રણ આપનાર વ્યક્તિ પાસેથી નવો કોડ માંગો.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'આ આમંત્રણ કોડ પહેલેથી જ મહત્તમ સંખ્યાના ઉપકરણો પર વપરાઈ રહ્યો છે.';
+
+  @override
+  String previewFor(String name) {
+    return '$name માટે ગોપનીય પ્રિવ્યૂ';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'આ પ્રિવ્યૂની આજની વિશ્લેષણ મર્યાદા પૂરી થઈ ગઈ છે. આવતીકાલે ફરી પ્રયાસ કરો.';
 }

@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -27,6 +28,32 @@ class Account {
   bool get isSignedIn => email != null && email!.isNotEmpty;
 }
 
+/// Zárt előzetes: miért nem enged be a szerver (meghívókód kell / hibás /
+/// lejárt / már túl sok eszközön használják).
+enum InviteProblem { required, invalid, expired, deviceLimit }
+
+/// Kinek szól az előzetes (a szerver szerint): név a vízjelhez és lejárat.
+@immutable
+class InviteInfo {
+  const InviteInfo({required this.label, this.expires});
+
+  final String label;
+
+  /// Az utolsó érvényes nap (ÉÉÉÉ-HH-NN), ha van.
+  final String? expires;
+
+  static InviteInfo? fromJson(Object? j) {
+    if (j is! Map || j['label'] is! String) return null;
+    return InviteInfo(label: j['label'] as String, expires: j['expires'] as String?);
+  }
+
+  @override
+  bool operator ==(Object other) => other is InviteInfo && other.label == label && other.expires == expires;
+
+  @override
+  int get hashCode => Object.hash(label, expires);
+}
+
 /// A WhatStock backend kliense: névtelen fiók (token), jogosultság-lekérés,
 /// vásárlás-ellenőrzés, és egy hitelesített [http.Client] a továbbított
 /// Anthropic/Finnhub hívásokhoz.
@@ -37,15 +64,56 @@ class Account {
 class BackendClient {
   BackendClient({required String baseUrl, http.Client? inner, Future<String?> Function()? tokenLoader})
     : baseUrl = baseUrl.endsWith('/') ? baseUrl.substring(0, baseUrl.length - 1) : baseUrl,
-      _inner = inner ?? http.Client(),
+      _raw = inner ?? http.Client(),
       _tokenLoader = tokenLoader ?? (() => _readStored(_tokenKey));
 
   static const _tokenKey = 'backend_token';
   static const _deviceKey = 'backend_device_id';
+  static const _inviteKey = 'backend_invite';
+  static const inviteHeader = 'x-whatstock-invite';
 
   final String baseUrl;
-  final http.Client _inner;
+  final http.Client _raw;
   final Future<String?> Function() _tokenLoader;
+
+  /// Minden kérés ezen megy: zárt előzetesben a meghívókódot is elküldi.
+  late final http.Client _inner = _InviteClient(this, _raw);
+
+  /// Nem null, ha a szerver meghívókód miatt nem enged be: ilyenkor az app a
+  /// meghívókód-képernyőt mutatja.
+  final ValueNotifier<InviteProblem?> inviteProblem = ValueNotifier(null);
+
+  /// Kinek szól ez a példány (vízjel); null, ha a szerver nyitott.
+  final ValueNotifier<InviteInfo?> invite = ValueNotifier(null);
+
+  String? _inviteCode;
+  bool _inviteLoaded = false;
+
+  Future<String?> _loadInvite() async {
+    if (!_inviteLoaded) {
+      _inviteCode = await _readStored(_inviteKey);
+      _inviteLoaded = true;
+    }
+    return _inviteCode;
+  }
+
+  /// A beírt meghívókód mentése és kipróbálása: siker esetén a szerver
+  /// visszaadja, kinek szól; hibás kódnál [BackendException] (`invite_invalid`…).
+  Future<void> submitInvite(String code) async {
+    _inviteCode = code.trim().toUpperCase();
+    _inviteLoaded = true;
+    await _writeStored(_inviteKey, _inviteCode);
+    await account();
+    inviteProblem.value = null;
+  }
+
+  static InviteProblem? inviteProblemFor(String? code) => switch (code) {
+    'invite_required' => InviteProblem.required,
+    'invite_invalid' => InviteProblem.invalid,
+    'invite_expired' => InviteProblem.expired,
+    'invite_device_limit' => InviteProblem.deviceLimit,
+    _ => null,
+  };
 
   String? _token;
   Future<String>? _pendingToken;
@@ -82,6 +150,7 @@ class BackendClient {
     final body = _decode(res);
     final token = body['token'] as String?;
     if (token == null || token.isEmpty) throw const BackendException(500, 'bad_response', 'missing token');
+    invite.value = InviteInfo.fromJson(body['invite']);
     _token = token;
     _storedRejected = false;
     await _writeStored(_tokenKey, token);
@@ -102,6 +171,7 @@ class BackendClient {
   Future<Account> account() async {
     final res = await _authorized((h) => _inner.get(Uri.parse('$baseUrl/v1/me'), headers: h));
     final body = _decode(res);
+    invite.value = InviteInfo.fromJson(body['invite']);
     return Account(email: body['email'] as String?, entitlements: _entitlements(body));
   }
 
@@ -266,6 +336,38 @@ class BackendClient {
       // A mentés hibája nem akadályozza a működést.
     }
   }
+}
+
+/// Minden backend-kérésre ráteszi a meghívókódot (ha van), és ha a szerver
+/// meghívókód miatt utasítja el (403 `invite_*`), jelzi az appnak.
+class _InviteClient extends http.BaseClient {
+  _InviteClient(this._backend, this._inner);
+
+  final BackendClient _backend;
+  final http.Client _inner;
+
+  @override
+  Future<http.StreamedResponse> send(http.BaseRequest request) async {
+    final code = await _backend._loadInvite();
+    if (code != null && code.isNotEmpty) request.headers[BackendClient.inviteHeader] = code;
+    final res = await _inner.send(request);
+    if (res.statusCode != 403) return res;
+    // A törzset beolvassuk a hibakódért, majd változatlanul továbbadjuk.
+    final bytes = await res.stream.toBytes();
+    final problem = BackendClient.inviteProblemFor(BackendClient.errorCode(utf8.decode(bytes, allowMalformed: true)));
+    if (problem != null) _backend.inviteProblem.value = problem;
+    return http.StreamedResponse(
+      Stream.value(bytes),
+      res.statusCode,
+      contentLength: bytes.length,
+      request: res.request,
+      headers: res.headers,
+      reasonPhrase: res.reasonPhrase,
+    );
+  }
+
+  @override
+  void close() => _inner.close();
 }
 
 /// `http.Client`, ami a backend tokenjét teszi minden kérésre.

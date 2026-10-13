@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "月あたり約 {price}",
   "subscriptionLegalYearly": "年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。",
   "myAnalyses": "自分の分析",
-  "navAlerts": "アラート"
+  "navAlerts": "アラート",
+  "inviteTitle": "限定プレビュー",
+  "inviteBody": "WhatStock は現在、招待制でのみご利用いただけます。受け取った招待コードを入力してください。",
+  "inviteCodeLabel": "招待コード",
+  "inviteContinue": "続行",
+  "inviteInvalid": "この招待コードは無効です。",
+  "inviteExpired": "この招待は有効期限が切れています。招待してくれた方に新しいコードを依頼してください。",
+  "inviteDeviceLimit": "この招待コードは、すでに上限台数の端末で使用されています。",
+  "previewFor": "{name} 様向け機密プレビュー",
+  "errPreviewDailyLimit": "このプレビューの本日の分析上限に達しました。明日もう一度お試しください。"
 }

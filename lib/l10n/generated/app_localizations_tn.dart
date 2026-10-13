@@ -1342,4 +1342,37 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Dikitsiso';
+
+  @override
+  String get inviteTitle => 'Ponelopele e e tswetsweng';
+
+  @override
+  String get inviteBody =>
+      'WhatStock e bonala fela ka taletso ka nako eno. Tsenya khoutu ya taletso e o e amogetseng.';
+
+  @override
+  String get inviteCodeLabel => 'Khoutu ya taletso';
+
+  @override
+  String get inviteContinue => 'Tswelela';
+
+  @override
+  String get inviteInvalid => 'Khoutu eno ya taletso ga e nepagale.';
+
+  @override
+  String get inviteExpired =>
+      'Taletso eno e fetile nako. Kopa motho yo o go laleditseng khoutu e ntšha.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Khoutu eno ya taletso e setse e dirisiwa mo palong e kgolo ka go fetisisa ya didirisiwa e e letleletsweng.';
+
+  @override
+  String previewFor(String name) {
+    return 'Ponelopele ya sephiri ya ga $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Tekanyetso ya ditshekatsheko ya gompieno ya ponelopele eno e fitlheletswe. Leka gape kamoso.';
 }

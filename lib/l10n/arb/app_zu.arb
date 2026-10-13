@@ -371,5 +371,14 @@
   "pricePerMonthApprox": "≈ {price} ngenyanga",
   "subscriptionLegalYearly": "Ukubhalisa konyaka kuvuselelwa ngokuzenzakalelayo njalo ngonyaka uze ukukhansele. Ngokubhalisa wamukela Imigomo Yokusetshenziswa kanye Nenqubomgomo Yobumfihlo.",
   "myAnalyses": "Uhlaziyo lwami",
-  "navAlerts": "Izexwayiso"
+  "navAlerts": "Izexwayiso",
+  "inviteTitle": "Ukubuka kuqala okuvaliwe",
+  "inviteBody": "I-WhatStock itholakala ngesimemo kuphela okwamanje. Faka ikhodi yesimemo oyitholile.",
+  "inviteCodeLabel": "Ikhodi yesimemo",
+  "inviteContinue": "Qhubeka",
+  "inviteInvalid": "Le khodi yesimemo ayivumelekile.",
+  "inviteExpired": "Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.",
+  "inviteDeviceLimit": "Le khodi yesimemo isivele isetshenziswa enanini eliphezulu lamadivayisi elivunyelwe.",
+  "previewFor": "Ukubuka kuqala okuyimfihlo kuka-{name}",
+  "errPreviewDailyLimit": "Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa."
 }

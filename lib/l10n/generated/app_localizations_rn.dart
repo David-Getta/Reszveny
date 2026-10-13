@@ -1339,4 +1339,37 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get navAlerts => 'Imenyesha';
+
+  @override
+  String get inviteTitle => 'Igerageza ry\'imbere ryihariye';
+
+  @override
+  String get inviteBody =>
+      'Ubu WhatStock iraboneka gusa ku butumire. Andika kode y\'ubutumire waronse.';
+
+  @override
+  String get inviteCodeLabel => 'Kode y\'ubutumire';
+
+  @override
+  String get inviteContinue => 'Bandanya';
+
+  @override
+  String get inviteInvalid => 'Iyi kode y\'ubutumire si yo.';
+
+  @override
+  String get inviteExpired =>
+      'Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshasha.';
+
+  @override
+  String get inviteDeviceLimit =>
+      'Iyi kode y\'ubutumire isanzwe ikoreshwa ku gitigiri ntarengwa c\'ibikoresho.';
+
+  @override
+  String previewFor(String name) {
+    return 'Igerageza ry\'ibanga rya $name';
+  }
+
+  @override
+  String get errPreviewDailyLimit =>
+      'Urugero rw\'isesengura rw\'uyu munsi kuri iri gerageza rwashitse. Subira ugerageze ejo.';
 }
