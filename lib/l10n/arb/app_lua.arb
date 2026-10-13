@@ -369,5 +369,7 @@
   "yearlyDiscount": "Ngondo 2 patupu",
   "perYear": "/ tshidimu",
   "pricePerMonthApprox": "≈ {price} ku ngondo",
-  "subscriptionLegalYearly": "Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe."
+  "subscriptionLegalYearly": "Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe.",
+  "myAnalyses": "Makonkonona anyi",
+  "navAlerts": "Alerte"
 }

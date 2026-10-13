@@ -369,5 +369,7 @@
   "yearlyDiscount": "Dikgwedi tše 2 mahala",
   "perYear": "/ ngwaga",
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
-  "subscriptionLegalYearly": "Dingwadišo tša ngwaga di mpshafatšwa ka go itiragalela ngwaga le ngwaga go fihlela o di khansela. Ka go ingwadiša o amogela Mabaka a Tšhomišo le Pholisi ya Sephiri."
+  "subscriptionLegalYearly": "Dingwadišo tša ngwaga di mpshafatšwa ka go itiragalela ngwaga le ngwaga go fihlela o di khansela. Ka go ingwadiša o amogela Mabaka a Tšhomišo le Pholisi ya Sephiri.",
+  "myAnalyses": "Ditshekatsheko tša ka",
+  "navAlerts": "Ditemošo"
 }

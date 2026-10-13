@@ -354,26 +354,32 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Služba rozpoznávania nedokázala tento obrázok spracovať.';
+  String get errRecognitionRefused =>
+      'Služba rozpoznávania nedokázala tento obrázok spracovať.';
 
   @override
-  String get errRecognitionTruncated => 'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
+  String get errRecognitionTruncated =>
+      'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
 
   @override
-  String get errRecognitionBadResponse => 'Neočakávaná odpoveď služby rozpoznávania.';
+  String get errRecognitionBadResponse =>
+      'Neočakávaná odpoveď služby rozpoznávania.';
 
   @override
-  String get errRecognitionEmpty => 'Služba rozpoznávania vrátila prázdnu odpoveď.';
+  String get errRecognitionEmpty =>
+      'Služba rozpoznávania vrátila prázdnu odpoveď.';
 
   @override
-  String get errMissingFinnhubKey => 'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Trhové údaje nie sú nastavené (chýba FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Nepodarilo sa pripojiť k službe trhových údajov. Skontrolujte pripojenie na internet.';
 
   @override
-  String get errMarketRateLimited => 'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
+  String get errMarketRateLimited =>
+      'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
 
   @override
   String errMarketHttp(String status) {
@@ -381,7 +387,8 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Neočakávaná odpoveď služby trhových údajov.';
+  String get errMarketBadResponse =>
+      'Neočakávaná odpoveď služby trhových údajov.';
 
   @override
   String errNoQuote(String symbol) {
@@ -481,7 +488,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiRegenerate => 'Vygenerovať znova';
 
   @override
-  String get aiGenerating => 'Pripravujem analýzu… môže to trvať minútu či dve.';
+  String get aiGenerating =>
+      'Pripravujem analýzu… môže to trvať minútu či dve.';
 
   @override
   String get aiSources => 'Zdroje';
@@ -496,10 +504,12 @@ class AppLocalizationsSk extends AppLocalizations {
       'Analýza vygenerovaná AI na základe verejných údajov a aktuálnych správ. Môže obsahovať chyby alebo byť zastaraná a nie je investičným odporúčaním.';
 
   @override
-  String get errAiNotConfigured => 'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI analýza nie je nastavená (chýba ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
+  String get errAiUnreachable =>
+      'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
 
   @override
   String errAiHttp(String status) {
@@ -531,7 +541,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get rangeFiveYears => '5R';
 
   @override
-  String get chartUnavailable => 'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
+  String get chartUnavailable =>
+      'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
 
   @override
   String get sectionStatements => 'Finančné výkazy (ročné)';
@@ -558,7 +569,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Prevádzkový peňažný tok';
 
   @override
-  String get statementsUnavailable => 'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
+  String get statementsUnavailable =>
+      'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
 
   @override
   String get launchAtLogin => 'Spustiť pri prihlásení';
@@ -567,7 +579,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get hotkeyLabel => 'Globálna skratka';
 
   @override
-  String get hotkeyRecordHint => 'Kliknite sem a potom stlačte novú kombináciu klávesov';
+  String get hotkeyRecordHint =>
+      'Kliknite sem a potom stlačte novú kombináciu klávesov';
 
   @override
   String get hotkeyReset => 'Obnoviť predvolené';
@@ -588,7 +601,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get removeFromFavorites => 'Odstrániť z obľúbených';
 
   @override
-  String get noFavorites => 'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
+  String get noFavorites =>
+      'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
 
   @override
   String get displayCurrency => 'Mena zobrazenia';
@@ -635,7 +649,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get updateDownloading => 'Aktualizácia sa sťahuje na pozadí…';
 
   @override
-  String get updateDownloaded => 'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
+  String get updateDownloaded =>
+      'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
 
   @override
   String get updateNow => 'Aktualizovať';
@@ -644,7 +659,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get restartNow => 'Reštartovať';
 
   @override
-  String get updatesViaStore => 'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
+  String get updatesViaStore =>
+      'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
 
   @override
   String get updateCheckFailed => 'Aktualizácie sa nepodarilo skontrolovať.';
@@ -708,7 +724,8 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte v analýzach.';
+  String get trialExpired =>
+      'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte v analýzach.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -749,7 +766,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get extraPacksTitle => 'Potrebujete viac? Kúpte si analýzy navyše';
 
   @override
-  String get extraPacksHint => 'Analýzy navyše nikdy nevypršia a použijú sa po vyčerpaní mesačného limitu.';
+  String get extraPacksHint =>
+      'Analýzy navyše nikdy nevypršia a použijú sa po vyčerpaní mesačného limitu.';
 
   @override
   String get buy => 'Kúpiť';
@@ -781,7 +799,8 @@ class AppLocalizationsSk extends AppLocalizations {
       'V tomto období vám nezostávajú žiadne analýzy. Prejdite na vyšší tarif alebo si kúpte analýzy navyše.';
 
   @override
-  String get errTrialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte.';
+  String get errTrialExpired =>
+      'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte.';
 
   @override
   String get errNoPlan => 'Na AI analýzu je potrebný aktívny tarif.';
@@ -793,7 +812,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get usageTitle => 'Využitie';
 
   @override
-  String get demoPurchaseNote => 'Demo platby: nákupy sú na tejto platforme iba simulované.';
+  String get demoPurchaseNote =>
+      'Demo platby: nákupy sú na tejto platforme iba simulované.';
 
   @override
   String get mostPopular => 'Najobľúbenejší';
@@ -833,7 +853,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Úplná správa so všetkými časťami.';
 
   @override
-  String get aiDepthDeepDesc => 'Viac vyhľadávaní na webe, porovnanie s konkurenciou a hlbšie detaily.';
+  String get aiDepthDeepDesc =>
+      'Viac vyhľadávaní na webe, porovnanie s konkurenciou a hlbšie detaily.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -863,16 +884,19 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiReaderExperienced => 'Skúsený';
 
   @override
-  String get aiReaderBeginnerDesc => 'Jednoduchý jazyk; každý odborný pojem je vysvetlený.';
+  String get aiReaderBeginnerDesc =>
+      'Jednoduchý jazyk; každý odborný pojem je vysvetlený.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Hutnejší text so štandardnou finančnou terminológiou.';
+  String get aiReaderExperiencedDesc =>
+      'Hutnejší text so štandardnou finančnou terminológiou.';
 
   @override
   String get aiCounterArgument => 'Najsilnejší protiargument';
 
   @override
-  String get aiCounterArgumentDesc => 'Zhrnutie vždy končí najsilnejším argumentom proti vlastnému záveru.';
+  String get aiCounterArgumentDesc =>
+      'Zhrnutie vždy končí najsilnejším argumentom proti vlastnému záveru.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -971,7 +995,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get upcomingEvents => 'Nadchádzajúce udalosti';
 
   @override
-  String get outlookChartNote => 'Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede.';
+  String get outlookChartNote =>
+      'Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede.';
 
   @override
   String get accountTitle => 'Účet';
@@ -986,10 +1011,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notSignedIn => 'Neprihlásený';
 
   @override
-  String get accountBenefit => 'Prihláste sa, aby vaše predplatné fungovalo na všetkých vašich zariadeniach.';
+  String get accountBenefit =>
+      'Prihláste sa, aby vaše predplatné fungovalo na všetkých vašich zariadeniach.';
 
   @override
-  String get accountSyncedNote => 'Vaše predplatné a zostávajúce analýzy sú rovnaké na každom zariadení.';
+  String get accountSyncedNote =>
+      'Vaše predplatné a zostávajúce analýzy sú rovnaké na každom zariadení.';
 
   @override
   String get signInTitle => 'Prihlásenie do WhatStock';
@@ -1021,14 +1048,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get errInvalidEmail => 'Zadajte platnú e-mailovú adresu.';
 
   @override
-  String get errSignInFailed => 'Prihlásenie zlyhalo. Skontrolujte pripojenie na internet a skúste to znova.';
+  String get errSignInFailed =>
+      'Prihlásenie zlyhalo. Skontrolujte pripojenie na internet a skúste to znova.';
 
   @override
   String get checkoutWaiting =>
       'Dokončite platbu v prehliadači. Aplikácia sa po jej dokončení automaticky aktualizuje.';
 
   @override
-  String get paymentViaStripe => 'Bezpečná platba v prehliadači cez Stripe. Zrušiť môžete kedykoľvek.';
+  String get paymentViaStripe =>
+      'Bezpečná platba v prehliadači cez Stripe. Zrušiť môžete kedykoľvek.';
 
   @override
   String get paymentViaStore =>
@@ -1041,7 +1070,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get doubleOptionTitle => 'Dvojité stlačenie Option';
 
   @override
-  String get doubleOptionSubtitle => 'WhatStock vyvoláte aj rýchlym dvojitým stlačením klávesu Option.';
+  String get doubleOptionSubtitle =>
+      'WhatStock vyvoláte aj rýchlym dvojitým stlačením klávesu Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1171,7 +1201,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioRemove => 'Odstrániť';
 
   @override
-  String get portfolioExcluded => 'Pozície bez ceny alebo výmenného kurzu nie sú zahrnuté v súčtoch.';
+  String get portfolioExcluded =>
+      'Pozície bez ceny alebo výmenného kurzu nie sú zahrnuté v súčtoch.';
 
   @override
   String get priceAlerts => 'Cenové upozornenia';
@@ -1213,7 +1244,8 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Zatiaľ žiadne upozornenia. Otvorte akciu a ťuknite na zvonček.';
+  String get alertsEmpty =>
+      'Zatiaľ žiadne upozornenia. Otvorte akciu a ťuknite na zvonček.';
 
   @override
   String get alertsNote =>
@@ -1306,7 +1338,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get accountDeleted => 'Váš účet bol odstránený.';
 
   @override
-  String get errDeleteAccount => 'Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.';
+  String get errDeleteAccount =>
+      'Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1332,4 +1365,10 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Ročné predplatné sa každý rok automaticky obnovuje, kým ho nezrušíte. Predplatením súhlasíte s Podmienkami používania a Zásadami ochrany osobných údajov.';
+
+  @override
+  String get myAnalyses => 'Moje analýzy';
+
+  @override
+  String get navAlerts => 'Upozornenia';
 }

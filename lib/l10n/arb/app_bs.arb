@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 mjeseca besplatno",
   "perYear": "/ godina",
   "pricePerMonthApprox": "≈ {price} mjesečno",
-  "subscriptionLegalYearly": "Godišnja pretplata se automatski obnavlja svake godine dok je ne otkažete. Pretplatom prihvatate Uslove korištenja i Politiku privatnosti."
+  "subscriptionLegalYearly": "Godišnja pretplata se automatski obnavlja svake godine dok je ne otkažete. Pretplatom prihvatate Uslove korištenja i Politiku privatnosti.",
+  "myAnalyses": "Moje analize",
+  "navAlerts": "Obavještenja"
 }

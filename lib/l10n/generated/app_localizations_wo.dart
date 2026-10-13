@@ -306,7 +306,12 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analist', one: '1 analist');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analist',
+      one: '1 analist',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsWo extends AppLocalizations {
       'Xàmmeeb nataal bi jàppandiwul (amul ANTHROPIC_API_KEY). Bindal màndarga bi ci sa loxo.';
 
   @override
-  String get errRecognitionUnreachable => 'Mënuñu jot ci sarwiisu xàmmee bi. Seetal sa internet.';
+  String get errRecognitionUnreachable =>
+      'Mënuñu jot ci sarwiisu xàmmee bi. Seetal sa internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,31 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Sarwiisu xàmmee bi mënul a liggéey ci nataal bii.';
+  String get errRecognitionRefused =>
+      'Sarwiisu xàmmee bi mënul a liggéey ci nataal bii.';
 
   @override
   String get errRecognitionTruncated => 'Tontu xàmmee bi dagg na. Jéemaatal.';
 
   @override
-  String get errRecognitionBadResponse => 'Sarwiisu xàmmee bi delloo na tontu bu ñu xaarul.';
+  String get errRecognitionBadResponse =>
+      'Sarwiisu xàmmee bi delloo na tontu bu ñu xaarul.';
 
   @override
-  String get errRecognitionEmpty => 'Sarwiisu xàmmee bi delloo na tontu bu amul dara.';
+  String get errRecognitionEmpty =>
+      'Sarwiisu xàmmee bi delloo na tontu bu amul dara.';
 
   @override
-  String get errMissingFinnhubKey => 'Xibaari marse yi jàppandiwuñu (amul FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Xibaari marse yi jàppandiwuñu (amul FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Mënuñu jot ci sarwiisu xibaari marse bi. Seetal sa internet.';
+  String get errMarketUnreachable =>
+      'Mënuñu jot ci sarwiisu xibaari marse bi. Seetal sa internet.';
 
   @override
-  String get errMarketRateLimited => 'Laaj yi bari nañu lool ci sarwiisu xibaari marse bi. Xaaral benn minit.';
+  String get errMarketRateLimited =>
+      'Laaj yi bari nañu lool ci sarwiisu xibaari marse bi. Xaaral benn minit.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +384,8 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Sarwiisu xibaari marse bi delloo na tontu bu ñu xaarul.';
+  String get errMarketBadResponse =>
+      'Sarwiisu xibaari marse bi delloo na tontu bu ñu xaarul.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +485,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get aiRegenerate => 'Defaraat';
 
   @override
-  String get aiGenerating => 'Ñu ngi waajal saytu bi… mën na yàgg benn walla ñaari minit.';
+  String get aiGenerating =>
+      'Ñu ngi waajal saytu bi… mën na yàgg benn walla ñaari minit.';
 
   @override
   String get aiSources => 'Fi ñu jële';
@@ -487,10 +501,12 @@ class AppLocalizationsWo extends AppLocalizations {
       'AI moo defar saytu bii, ci xibaar yu siiwu ak xibaar yu bees. Mën na am ay njuumte walla mu màggat, te du ndigal ci dugal xaalis.';
 
   @override
-  String get errAiNotConfigured => 'Saytu AI jàppandiwul (amul ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Saytu AI jàppandiwul (amul ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Mënuñu jot ci sarwiisu AI bi. Seetal sa internet.';
+  String get errAiUnreachable =>
+      'Mënuñu jot ci sarwiisu AI bi. Seetal sa internet.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +538,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable => 'Taariixu njëg mi amul ci fi xibaar yi jóge léegi.';
+  String get chartUnavailable =>
+      'Taariixu njëg mi amul ci fi xibaar yi jóge léegi.';
 
   @override
   String get sectionStatements => 'Kayiti xaalis (at mu nekk)';
@@ -549,7 +566,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get labelOperatingCashFlow => 'Xaalis bu liggéey bi indi';
 
   @override
-  String get statementsUnavailable => 'Kayiti xaalis yi amuñu ngir aksiyoŋ bii.';
+  String get statementsUnavailable =>
+      'Kayiti xaalis yi amuñu ngir aksiyoŋ bii.';
 
   @override
   String get launchAtLogin => 'Tàmbali saa yoo duggee';
@@ -558,7 +576,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get hotkeyLabel => 'Yoon wu gàtt fépp';
 
   @override
-  String get hotkeyRecordHint => 'Bësal fii, ba noppi bësal boto yu bees yi ñu boole';
+  String get hotkeyRecordHint =>
+      'Bësal fii, ba noppi bësal boto yu bees yi ñu boole';
 
   @override
   String get hotkeyReset => 'Delloo ko ni mu meloon';
@@ -579,7 +598,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get removeFromFavorites => 'Far ci yi ma gënal';
 
   @override
-  String get noFavorites => 'Amagul dara. Bësal biddiw bi ci aksiyoŋ ngir yokk ko.';
+  String get noFavorites =>
+      'Amagul dara. Bësal biddiw bi ci aksiyoŋ ngir yokk ko.';
 
   @override
   String get displayCurrency => 'Xaalis bu ñuy wone';
@@ -635,7 +655,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get restartNow => 'Tàmbaliwaat';
 
   @override
-  String get updatesViaStore => 'Yeesal yi dañuy ñëw ci seen bopp jaare ci bitigu aplikasiyoŋ bi.';
+  String get updatesViaStore =>
+      'Yeesal yi dañuy ñëw ci seen bopp jaare ci bitigu aplikasiyoŋ bi.';
 
   @override
   String get updateCheckFailed => 'Mënuñu seet yeesal yi.';
@@ -683,7 +704,8 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Sa jéem ci dara jeex na. Tànnal benn formil ngir wéy di saytu.';
+  String get trialExpired =>
+      'Sa jéem ci dara jeex na. Tànnal benn formil ngir wéy di saytu.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +738,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get extraPacksTitle => 'Soxla nga lu ëpp? Jëndal saytu yu ñu yokk';
 
   @override
-  String get extraPacksHint => 'Saytu yu ñu yokk duñu jeex mukk, te ñuy jëfandikoo leen su sa dayob weer wi jeexee.';
+  String get extraPacksHint =>
+      'Saytu yu ñu yokk duñu jeex mukk, te ñuy jëfandikoo leen su sa dayob weer wi jeexee.';
 
   @override
   String get buy => 'Jënd';
@@ -744,10 +767,12 @@ class AppLocalizationsWo extends AppLocalizations {
       'Jënd mënagul a am ci platform bii. Bindu ci sa telefoon walla sa Mac; sa formil dina dox ci say masin yépp.';
 
   @override
-  String get errQuotaExceeded => 'Desul la benn saytu ci diir bii. Yokkal sa formil walla jëndal saytu yu ñu yokk.';
+  String get errQuotaExceeded =>
+      'Desul la benn saytu ci diir bii. Yokkal sa formil walla jëndal saytu yu ñu yokk.';
 
   @override
-  String get errTrialExpired => 'Sa jéem ci dara jeex na. Tànnal benn formil ngir wéy.';
+  String get errTrialExpired =>
+      'Sa jéem ci dara jeex na. Tànnal benn formil ngir wéy.';
 
   @override
   String get errNoPlan => 'Soxla nga formil bu dox ngir saytu AI.';
@@ -759,7 +784,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get usageTitle => 'Jëfandikoo';
 
   @override
-  String get demoPurchaseNote => 'Fey demo: jënd yi ay misaal rekk lañu ci platform bii.';
+  String get demoPurchaseNote =>
+      'Fey demo: jënd yi ay misaal rekk lañu ci platform bii.';
 
   @override
   String get mostPopular => 'Ñi ëpp a ko tànn';
@@ -799,7 +825,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get aiDepthStandardDesc => 'Leeral bu mat ak xaaj yépp.';
 
   @override
-  String get aiDepthDeepDesc => 'Seet yu ëpp ci internet, méngale ak kompañi yu ni mel, ak leeral bu gën a xóot.';
+  String get aiDepthDeepDesc =>
+      'Seet yu ëpp ci internet, méngale ak kompañi yu ni mel, ak leeral bu gën a xóot.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -827,16 +854,19 @@ class AppLocalizationsWo extends AppLocalizations {
   String get aiReaderExperienced => 'Boroom xam-xam';
 
   @override
-  String get aiReaderBeginnerDesc => 'Làkk bu yomb; baat yu teknik yépp dañu leen di leeral.';
+  String get aiReaderBeginnerDesc =>
+      'Làkk bu yomb; baat yu teknik yépp dañu leen di leeral.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Mbind mu gën a fees, ak baati xaalis yu ñu miin.';
+  String get aiReaderExperiencedDesc =>
+      'Mbind mu gën a fees, ak baati xaalis yu ñu miin.';
 
   @override
   String get aiCounterArgument => 'Xalaat bu gëna dëgër bu ko safaanoo';
 
   @override
-  String get aiCounterArgumentDesc => 'Tënk bi dafay mujj saa su nekk ak xalaat bi gëna baax bu safaanoo ak li mu wax.';
+  String get aiCounterArgumentDesc =>
+      'Tënk bi dafay mujj saa su nekk ak xalaat bi gëna baax bu safaanoo ak li mu wax.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -929,7 +959,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get upcomingEvents => 'Mbir yi di ñëw';
 
   @override
-  String get outlookChartNote => 'Dayo yi ay misaal rekk lañu; mën-mën yi ay xalaat rekk lañu, du ay wax ci lu ñëw.';
+  String get outlookChartNote =>
+      'Dayo yi ay misaal rekk lañu; mën-mën yi ay xalaat rekk lañu, du ay wax ci lu ñëw.';
 
   @override
   String get accountTitle => 'Kont';
@@ -947,7 +978,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get accountBenefit => 'Duggal ngir sa abonmaa dox ci say masin yépp.';
 
   @override
-  String get accountSyncedNote => 'Sa abonmaa ak saytu yi la des, benn lañu ci masin yépp.';
+  String get accountSyncedNote =>
+      'Sa abonmaa ak saytu yi la des, benn lañu ci masin yépp.';
 
   @override
   String get signInTitle => 'Dugg ci WhatStock';
@@ -979,13 +1011,16 @@ class AppLocalizationsWo extends AppLocalizations {
   String get errInvalidEmail => 'Bindal adrees imeel bu baax.';
 
   @override
-  String get errSignInFailed => 'Dugg bi antuwul. Seetal sa internet te jéemaat.';
+  String get errSignInFailed =>
+      'Dugg bi antuwul. Seetal sa internet te jéemaat.';
 
   @override
-  String get checkoutWaiting => 'Matalal fey bi ci sa navigatëer. Aplikasiyoŋ bi dina yeesu ci boppam bu noppee.';
+  String get checkoutWaiting =>
+      'Matalal fey bi ci sa navigatëer. Aplikasiyoŋ bi dina yeesu ci boppam bu noppee.';
 
   @override
-  String get paymentViaStripe => 'Fey bu wóor ci sa navigatëer jaare ci Stripe. Mën nga ko neenal saa su la neexee.';
+  String get paymentViaStripe =>
+      'Fey bu wóor ci sa navigatëer jaare ci Stripe. Mën nga ko neenal saa su la neexee.';
 
   @override
   String get paymentViaStore =>
@@ -998,7 +1033,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get doubleOptionTitle => 'Bësal Option ñaari yoon';
 
   @override
-  String get doubleOptionSubtitle => 'Bës Option ñaari yoon ci gaaw dafay woo WhatStock itam.';
+  String get doubleOptionSubtitle =>
+      'Bës Option ñaari yoon ci gaaw dafay woo WhatStock itam.';
 
   @override
   String get doubleOptionPermission =>
@@ -1020,7 +1056,12 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years at', one: '1 at');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years at',
+      one: '1 at',
+    );
     return '$_temp0';
   }
 
@@ -1051,7 +1092,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get portfolio => 'Sama aksiyoŋ yi';
 
   @override
-  String get portfolioEmpty => 'Amagul dara fii. Ubbil aksiyoŋ te bës « Yokk ci sama aksiyoŋ yi » ngir topp li nga am.';
+  String get portfolioEmpty =>
+      'Amagul dara fii. Ubbil aksiyoŋ te bës « Yokk ci sama aksiyoŋ yi » ngir topp li nga am.';
 
   @override
   String get portfolioLocalNote =>
@@ -1120,7 +1162,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get portfolioRemove => 'Far';
 
   @override
-  String get portfolioExcluded => 'Aksiyoŋ yi amul njëg walla weccit, boolewuñu leen ci mboolem yi.';
+  String get portfolioExcluded =>
+      'Aksiyoŋ yi amul njëg walla weccit, boolewuñu leen ci mboolem yi.';
 
   @override
   String get priceAlerts => 'Artu njëg';
@@ -1162,7 +1205,8 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Amagul benn artu njëg. Ubbil aksiyoŋ te bës sonet bi ngir def benn.';
+  String get alertsEmpty =>
+      'Amagul benn artu njëg. Ubbil aksiyoŋ te bës sonet bi ngir def benn.';
 
   @override
   String get alertsNote =>
@@ -1255,7 +1299,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get accountDeleted => 'Far nañu sa kont.';
 
   @override
-  String get errDeleteAccount => 'Mënuñu far kont bi. Seetal sa internet te jéemaat.';
+  String get errDeleteAccount =>
+      'Mënuñu far kont bi. Seetal sa internet te jéemaat.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1281,4 +1326,10 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Abonmaa yu at yi dañuy yeesu ci seen bopp at mu nekk ba nga neenal. Su nga bindoo, nangu nga Sàrti jëfandikoo ak Politigu sutura.';
+
+  @override
+  String get myAnalyses => 'Samay saytu';
+
+  @override
+  String get navAlerts => 'Artu';
 }

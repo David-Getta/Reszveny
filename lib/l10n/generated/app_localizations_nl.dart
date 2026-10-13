@@ -306,7 +306,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analisten', one: '1 analist');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisten',
+      one: '1 analist',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsNl extends AppLocalizations {
       'Beeldherkenning is niet ingesteld (geen ANTHROPIC_API_KEY). Voer de ticker handmatig in.';
 
   @override
-  String get errRecognitionUnreachable => 'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errRecognitionUnreachable =>
+      'De herkenningsdienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,32 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'De herkenningsdienst kon deze afbeelding niet verwerken.';
+  String get errRecognitionRefused =>
+      'De herkenningsdienst kon deze afbeelding niet verwerken.';
 
   @override
-  String get errRecognitionTruncated => 'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
+  String get errRecognitionTruncated =>
+      'Het antwoord van de herkenningsdienst is afgebroken. Probeer het opnieuw.';
 
   @override
-  String get errRecognitionBadResponse => 'Onverwacht antwoord van de herkenningsdienst.';
+  String get errRecognitionBadResponse =>
+      'Onverwacht antwoord van de herkenningsdienst.';
 
   @override
-  String get errRecognitionEmpty => 'De herkenningsdienst gaf een leeg antwoord terug.';
+  String get errRecognitionEmpty =>
+      'De herkenningsdienst gaf een leeg antwoord terug.';
 
   @override
-  String get errMissingFinnhubKey => 'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Marktdata is niet ingesteld (geen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errMarketUnreachable =>
+      'De marktdatadienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
-  String get errMarketRateLimited => 'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
+  String get errMarketRateLimited =>
+      'Te veel verzoeken aan de marktdatadienst. Wacht even een minuut.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +385,8 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Onverwacht antwoord van de marktdatadienst.';
+  String get errMarketBadResponse =>
+      'Onverwacht antwoord van de marktdatadienst.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +486,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get aiRegenerate => 'Opnieuw genereren';
 
   @override
-  String get aiGenerating => 'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
+  String get aiGenerating =>
+      'Analyse wordt voorbereid… dit kan een of twee minuten duren.';
 
   @override
   String get aiSources => 'Bronnen';
@@ -487,10 +502,12 @@ class AppLocalizationsNl extends AppLocalizations {
       'Door AI gegenereerde analyse op basis van openbare gegevens en recent nieuws. Deze kan fouten bevatten of verouderd zijn en is geen beleggingsadvies.';
 
   @override
-  String get errAiNotConfigured => 'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI-analyse is niet ingesteld (geen ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
+  String get errAiUnreachable =>
+      'De AI-dienst is niet bereikbaar. Controleer je internetverbinding.';
 
   @override
   String errAiHttp(String status) {
@@ -498,7 +515,8 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
+  String get errAiRefused =>
+      'De AI-dienst heeft geweigerd dit aandeel te analyseren.';
 
   @override
   String get errAiBadResponse => 'Onverwacht antwoord van de AI-dienst.';
@@ -522,7 +540,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get rangeFiveYears => '5J';
 
   @override
-  String get chartUnavailable => 'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
+  String get chartUnavailable =>
+      'De koershistorie is niet beschikbaar bij de huidige gegevensbron.';
 
   @override
   String get sectionStatements => 'Financiële overzichten (jaarlijks)';
@@ -549,7 +568,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operationele kasstroom';
 
   @override
-  String get statementsUnavailable => 'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
+  String get statementsUnavailable =>
+      'Voor dit aandeel zijn geen gerapporteerde financiële overzichten beschikbaar.';
 
   @override
   String get launchAtLogin => 'Starten bij aanmelden';
@@ -558,7 +578,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get hotkeyLabel => 'Globale sneltoets';
 
   @override
-  String get hotkeyRecordHint => 'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
+  String get hotkeyRecordHint =>
+      'Klik hier en druk vervolgens op de nieuwe toetsencombinatie';
 
   @override
   String get hotkeyReset => 'Standaard herstellen';
@@ -579,7 +600,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get removeFromFavorites => 'Verwijderen uit favorieten';
 
   @override
-  String get noFavorites => 'Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.';
+  String get noFavorites =>
+      'Nog geen favorieten. Tik op de ster bij een aandeel om het toe te voegen.';
 
   @override
   String get displayCurrency => 'Weergavevaluta';
@@ -623,10 +645,12 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get updateDownloading => 'De update wordt op de achtergrond gedownload…';
+  String get updateDownloading =>
+      'De update wordt op de achtergrond gedownload…';
 
   @override
-  String get updateDownloaded => 'De update is klaar. Start opnieuw op om deze te installeren.';
+  String get updateDownloaded =>
+      'De update is klaar. Start opnieuw op om deze te installeren.';
 
   @override
   String get updateNow => 'Bijwerken';
@@ -635,7 +659,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get restartNow => 'Opnieuw starten';
 
   @override
-  String get updatesViaStore => 'Updates komen automatisch binnen via de appwinkel.';
+  String get updatesViaStore =>
+      'Updates komen automatisch binnen via de appwinkel.';
 
   @override
   String get updateCheckFailed => 'Kon niet controleren op updates.';
@@ -683,7 +708,8 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te analyseren.';
+  String get trialExpired =>
+      'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te analyseren.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +742,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get extraPacksTitle => 'Meer nodig? Koop extra analyses';
 
   @override
-  String get extraPacksHint => 'Extra analyses verlopen nooit en worden gebruikt na je maandelijkse tegoed.';
+  String get extraPacksHint =>
+      'Extra analyses verlopen nooit en worden gebruikt na je maandelijkse tegoed.';
 
   @override
   String get buy => 'Kopen';
@@ -748,7 +775,8 @@ class AppLocalizationsNl extends AppLocalizations {
       'Je hebt geen analyses meer voor deze periode. Upgrade je abonnement of koop extra analyses.';
 
   @override
-  String get errTrialExpired => 'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te gaan.';
+  String get errTrialExpired =>
+      'Je gratis proefperiode is afgelopen. Kies een abonnement om verder te gaan.';
 
   @override
   String get errNoPlan => 'Voor AI-analyse is een actief abonnement nodig.';
@@ -760,7 +788,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get usageTitle => 'Gebruik';
 
   @override
-  String get demoPurchaseNote => 'Demofacturering: aankopen worden op dit platform gesimuleerd.';
+  String get demoPurchaseNote =>
+      'Demofacturering: aankopen worden op dit platform gesimuleerd.';
 
   @override
   String get mostPopular => 'Populairst';
@@ -800,7 +829,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get aiDepthStandardDesc => 'Volledig rapport met alle secties.';
 
   @override
-  String get aiDepthDeepDesc => 'Meer webzoekopdrachten, vergelijking met sectorgenoten en meer diepgang.';
+  String get aiDepthDeepDesc =>
+      'Meer webzoekopdrachten, vergelijking met sectorgenoten en meer diepgang.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,10 +858,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get aiReaderExperienced => 'Ervaren';
 
   @override
-  String get aiReaderBeginnerDesc => 'Eenvoudige taal; elke vakterm wordt uitgelegd.';
+  String get aiReaderBeginnerDesc =>
+      'Eenvoudige taal; elke vakterm wordt uitgelegd.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Compactere tekst met gangbare financiële terminologie.';
+  String get aiReaderExperiencedDesc =>
+      'Compactere tekst met gangbare financiële terminologie.';
 
   @override
   String get aiCounterArgument => 'Sterkste tegenargument';
@@ -931,7 +963,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get upcomingEvents => 'Komende gebeurtenissen';
 
   @override
-  String get outlookChartNote => 'Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen.';
+  String get outlookChartNote =>
+      'Indicatieve bandbreedtes; kansen zijn ruwe inschattingen, geen voorspellingen.';
 
   @override
   String get accountTitle => 'Account';
@@ -946,10 +979,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notSignedIn => 'Niet ingelogd';
 
   @override
-  String get accountBenefit => 'Log in zodat je abonnement op al je apparaten werkt.';
+  String get accountBenefit =>
+      'Log in zodat je abonnement op al je apparaten werkt.';
 
   @override
-  String get accountSyncedNote => 'Je abonnement en resterende analyses zijn op elk apparaat hetzelfde.';
+  String get accountSyncedNote =>
+      'Je abonnement en resterende analyses zijn op elk apparaat hetzelfde.';
 
   @override
   String get signInTitle => 'Inloggen bij WhatStock';
@@ -981,14 +1016,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errInvalidEmail => 'Voer een geldig e-mailadres in.';
 
   @override
-  String get errSignInFailed => 'Inloggen mislukt. Controleer je verbinding en probeer het opnieuw.';
+  String get errSignInFailed =>
+      'Inloggen mislukt. Controleer je verbinding en probeer het opnieuw.';
 
   @override
   String get checkoutWaiting =>
       'Rond de betaling af in je browser. De app wordt automatisch bijgewerkt zodra dat klaar is.';
 
   @override
-  String get paymentViaStripe => 'Veilig betalen in je browser via Stripe. Altijd opzegbaar.';
+  String get paymentViaStripe =>
+      'Veilig betalen in je browser via Stripe. Altijd opzegbaar.';
 
   @override
   String get paymentViaStore =>
@@ -1001,7 +1038,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get doubleOptionTitle => 'Twee keer op Option drukken';
 
   @override
-  String get doubleOptionSubtitle => 'Ook snel twee keer op de Option-toets drukken opent WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Ook snel twee keer op de Option-toets drukken opent WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1023,7 +1061,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years jaar', one: '1 jaar');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years jaar',
+      one: '1 jaar',
+    );
     return '$_temp0';
   }
 
@@ -1124,7 +1167,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get portfolioRemove => 'Verwijderen';
 
   @override
-  String get portfolioExcluded => 'Posities zonder koers of wisselkoers tellen niet mee in de totalen.';
+  String get portfolioExcluded =>
+      'Posities zonder koers of wisselkoers tellen niet mee in de totalen.';
 
   @override
   String get priceAlerts => 'Koersalerts';
@@ -1166,7 +1210,8 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Nog geen koersalerts. Open een aandeel en tik op de bel.';
+  String get alertsEmpty =>
+      'Nog geen koersalerts. Open een aandeel en tik op de bel.';
 
   @override
   String get alertsNote =>
@@ -1286,4 +1331,10 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid.';
+
+  @override
+  String get myAnalyses => 'Mijn analyses';
+
+  @override
+  String get navAlerts => 'Alerts';
 }

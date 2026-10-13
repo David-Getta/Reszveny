@@ -306,7 +306,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analysts', one: '1 analyst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analysts',
+      one: '1 analyst',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'Image recognition is not configured (no ANTHROPIC_API_KEY). Enter the ticker manually.';
 
   @override
-  String get errRecognitionUnreachable => 'Could not reach the recognition service. Check your internet connection.';
+  String get errRecognitionUnreachable =>
+      'Could not reach the recognition service. Check your internet connection.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,32 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'The recognition service could not process this image.';
+  String get errRecognitionRefused =>
+      'The recognition service could not process this image.';
 
   @override
-  String get errRecognitionTruncated => 'The recognition response was cut off. Please try again.';
+  String get errRecognitionTruncated =>
+      'The recognition response was cut off. Please try again.';
 
   @override
-  String get errRecognitionBadResponse => 'Unexpected response from the recognition service.';
+  String get errRecognitionBadResponse =>
+      'Unexpected response from the recognition service.';
 
   @override
-  String get errRecognitionEmpty => 'The recognition service returned an empty response.';
+  String get errRecognitionEmpty =>
+      'The recognition service returned an empty response.';
 
   @override
-  String get errMissingFinnhubKey => 'Market data is not configured (no FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Market data is not configured (no FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Could not reach the market data service. Check your internet connection.';
+  String get errMarketUnreachable =>
+      'Could not reach the market data service. Check your internet connection.';
 
   @override
-  String get errMarketRateLimited => 'Too many requests to the market data service. Please wait a minute.';
+  String get errMarketRateLimited =>
+      'Too many requests to the market data service. Please wait a minute.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +385,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Unexpected response from the market data service.';
+  String get errMarketBadResponse =>
+      'Unexpected response from the market data service.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +486,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiRegenerate => 'Regenerate';
 
   @override
-  String get aiGenerating => 'Preparing the analysis… this can take a minute or two.';
+  String get aiGenerating =>
+      'Preparing the analysis… this can take a minute or two.';
 
   @override
   String get aiSources => 'Sources';
@@ -487,10 +502,12 @@ class AppLocalizationsEn extends AppLocalizations {
       'AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis is not configured (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI analysis is not configured (no ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Could not reach the AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'Could not reach the AI service. Check your internet connection.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +539,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history is not available from the current data source.';
+  String get chartUnavailable =>
+      'Price history is not available from the current data source.';
 
   @override
   String get sectionStatements => 'Financial statements (annual)';
@@ -549,7 +567,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operating cash flow';
 
   @override
-  String get statementsUnavailable => 'Reported financial statements are not available for this stock.';
+  String get statementsUnavailable =>
+      'Reported financial statements are not available for this stock.';
 
   @override
   String get launchAtLogin => 'Launch at login';
@@ -558,7 +577,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hotkeyLabel => 'Global shortcut';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press the new key combination';
+  String get hotkeyRecordHint =>
+      'Click here, then press the new key combination';
 
   @override
   String get hotkeyReset => 'Reset to default';
@@ -579,7 +599,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get removeFromFavorites => 'Remove from favorites';
 
   @override
-  String get noFavorites => 'No favorites yet. Tap the star on a stock to add it.';
+  String get noFavorites =>
+      'No favorites yet. Tap the star on a stock to add it.';
 
   @override
   String get displayCurrency => 'Display currency';
@@ -635,7 +656,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get restartNow => 'Restart';
 
   @override
-  String get updatesViaStore => 'Updates arrive automatically through the app store.';
+  String get updatesViaStore =>
+      'Updates arrive automatically through the app store.';
 
   @override
   String get updateCheckFailed => 'Could not check for updates.';
@@ -683,7 +705,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Your free trial has ended. Choose a plan to keep analysing.';
+  String get trialExpired =>
+      'Your free trial has ended. Choose a plan to keep analysing.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +739,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get extraPacksTitle => 'Need more? Buy extra analyses';
 
   @override
-  String get extraPacksHint => 'Extra analyses never expire and are used after your monthly allowance.';
+  String get extraPacksHint =>
+      'Extra analyses never expire and are used after your monthly allowance.';
 
   @override
   String get buy => 'Buy';
@@ -744,10 +768,12 @@ class AppLocalizationsEn extends AppLocalizations {
       'Purchases are not available on this platform yet. Subscribe on your phone or Mac; your plan will work on every device.';
 
   @override
-  String get errQuotaExceeded => 'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
+  String get errQuotaExceeded =>
+      'You have no analyses left for this period. Upgrade your plan or buy extra analyses.';
 
   @override
-  String get errTrialExpired => 'Your free trial has ended. Choose a plan to continue.';
+  String get errTrialExpired =>
+      'Your free trial has ended. Choose a plan to continue.';
 
   @override
   String get errNoPlan => 'An active plan is needed for AI analysis.';
@@ -759,7 +785,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get usageTitle => 'Usage';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: purchases are simulated on this platform.';
+  String get demoPurchaseNote =>
+      'Demo billing: purchases are simulated on this platform.';
 
   @override
   String get mostPopular => 'Most popular';
@@ -799,7 +826,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiDepthStandardDesc => 'Full report with every section.';
 
   @override
-  String get aiDepthDeepDesc => 'More web searches, peer comparison and deeper detail.';
+  String get aiDepthDeepDesc =>
+      'More web searches, peer comparison and deeper detail.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -827,16 +855,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiReaderExperienced => 'Experienced';
 
   @override
-  String get aiReaderBeginnerDesc => 'Plain language; every technical term is explained.';
+  String get aiReaderBeginnerDesc =>
+      'Plain language; every technical term is explained.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Denser text with standard financial terminology.';
+  String get aiReaderExperiencedDesc =>
+      'Denser text with standard financial terminology.';
 
   @override
   String get aiCounterArgument => 'Strongest counter-argument';
 
   @override
-  String get aiCounterArgumentDesc => 'The summary always ends with the best case against its own conclusion.';
+  String get aiCounterArgumentDesc =>
+      'The summary always ends with the best case against its own conclusion.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -929,7 +960,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get upcomingEvents => 'Upcoming events';
 
   @override
-  String get outlookChartNote => 'Indicative ranges; probabilities are rough judgements, not predictions.';
+  String get outlookChartNote =>
+      'Indicative ranges; probabilities are rough judgements, not predictions.';
 
   @override
   String get accountTitle => 'Account';
@@ -944,10 +976,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notSignedIn => 'Not signed in';
 
   @override
-  String get accountBenefit => 'Sign in so your subscription works on all your devices.';
+  String get accountBenefit =>
+      'Sign in so your subscription works on all your devices.';
 
   @override
-  String get accountSyncedNote => 'Your subscription and remaining analyses are the same on every device.';
+  String get accountSyncedNote =>
+      'Your subscription and remaining analyses are the same on every device.';
 
   @override
   String get signInTitle => 'Sign in to WhatStock';
@@ -979,13 +1013,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errInvalidEmail => 'Please enter a valid email address.';
 
   @override
-  String get errSignInFailed => 'Sign-in failed. Check your connection and try again.';
+  String get errSignInFailed =>
+      'Sign-in failed. Check your connection and try again.';
 
   @override
-  String get checkoutWaiting => 'Complete the payment in your browser. The app updates automatically when it is done.';
+  String get checkoutWaiting =>
+      'Complete the payment in your browser. The app updates automatically when it is done.';
 
   @override
-  String get paymentViaStripe => 'Secure payment in your browser via Stripe. Cancel anytime.';
+  String get paymentViaStripe =>
+      'Secure payment in your browser via Stripe. Cancel anytime.';
 
   @override
   String get paymentViaStore =>
@@ -998,7 +1035,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get doubleOptionTitle => 'Double-press Option';
 
   @override
-  String get doubleOptionSubtitle => 'Pressing the Option key twice quickly also summons WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Pressing the Option key twice quickly also summons WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1020,7 +1058,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years years', one: '1 year');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years years',
+      one: '1 year',
+    );
     return '$_temp0';
   }
 
@@ -1051,7 +1094,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get portfolio => 'Portfolio';
 
   @override
-  String get portfolioEmpty => 'Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.';
+  String get portfolioEmpty =>
+      'Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.';
 
   @override
   String get portfolioLocalNote =>
@@ -1120,7 +1164,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get portfolioRemove => 'Remove';
 
   @override
-  String get portfolioExcluded => 'Positions without a price or exchange rate are left out of the totals.';
+  String get portfolioExcluded =>
+      'Positions without a price or exchange rate are left out of the totals.';
 
   @override
   String get priceAlerts => 'Price alerts';
@@ -1162,7 +1207,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'No price alerts yet. Open a stock and tap the bell to set one.';
+  String get alertsEmpty =>
+      'No price alerts yet. Open a stock and tap the bell to set one.';
 
   @override
   String get alertsNote =>
@@ -1255,7 +1301,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accountDeleted => 'Your account has been deleted.';
 
   @override
-  String get errDeleteAccount => 'The account could not be deleted. Check your connection and try again.';
+  String get errDeleteAccount =>
+      'The account could not be deleted. Check your connection and try again.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1281,4 +1328,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Yearly subscriptions renew automatically every year until you cancel. By subscribing you accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get myAnalyses => 'My analyses';
+
+  @override
+  String get navAlerts => 'Alerts';
 }

@@ -352,26 +352,32 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'හඳුනාගැනීමේ සේවාවට මෙම රූපය සැකසිය නොහැකි විය.';
+  String get errRecognitionRefused =>
+      'හඳුනාගැනීමේ සේවාවට මෙම රූපය සැකසිය නොහැකි විය.';
 
   @override
-  String get errRecognitionTruncated => 'හඳුනාගැනීමේ ප්‍රතිචාරය අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+  String get errRecognitionTruncated =>
+      'හඳුනාගැනීමේ ප්‍රතිචාරය අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
-  String get errRecognitionBadResponse => 'හඳුනාගැනීමේ සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
+  String get errRecognitionBadResponse =>
+      'හඳුනාගැනීමේ සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
 
   @override
-  String get errRecognitionEmpty => 'හඳුනාගැනීමේ සේවාව හිස් ප්‍රතිචාරයක් ලබා දුන්නේය.';
+  String get errRecognitionEmpty =>
+      'හඳුනාගැනීමේ සේවාව හිස් ප්‍රතිචාරයක් ලබා දුන්නේය.';
 
   @override
-  String get errMissingFinnhubKey => 'වෙළඳපොළ දත්ත වින්‍යාස කර නැත (FINNHUB_API_KEY නැත).';
+  String get errMissingFinnhubKey =>
+      'වෙළඳපොළ දත්ත වින්‍යාස කර නැත (FINNHUB_API_KEY නැත).';
 
   @override
   String get errMarketUnreachable =>
       'වෙළඳපොළ දත්ත සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
 
   @override
-  String get errMarketRateLimited => 'වෙළඳපොළ දත්ත සේවාවට ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිටින්න.';
+  String get errMarketRateLimited =>
+      'වෙළඳපොළ දත්ත සේවාවට ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිටින්න.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +385,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'වෙළඳපොළ දත්ත සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
+  String get errMarketBadResponse =>
+      'වෙළඳපොළ දත්ත සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +486,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiRegenerate => 'නැවත සාදන්න';
 
   @override
-  String get aiGenerating => 'විශ්ලේෂණය සූදානම් කරමින්… මෙයට මිනිත්තුවක් දෙකක් ගත විය හැක.';
+  String get aiGenerating =>
+      'විශ්ලේෂණය සූදානම් කරමින්… මෙයට මිනිත්තුවක් දෙකක් ගත විය හැක.';
 
   @override
   String get aiSources => 'මූලාශ්‍ර';
@@ -494,10 +502,12 @@ class AppLocalizationsSi extends AppLocalizations {
       'පොදු දත්ත සහ මෑත පුවත් මත පදනම් වූ AI-ජනිත විශ්ලේෂණයකි. එහි දෝෂ තිබිය හැකි හෝ එය යල් පැන ගොස් තිබිය හැකි අතර, එය ආයෝජන උපදෙසක් නොවේ.';
 
   @override
-  String get errAiNotConfigured => 'AI විශ්ලේෂණය වින්‍යාස කර නැත (ANTHROPIC_API_KEY නැත).';
+  String get errAiNotConfigured =>
+      'AI විශ්ලේෂණය වින්‍යාස කර නැත (ANTHROPIC_API_KEY නැත).';
 
   @override
-  String get errAiUnreachable => 'AI සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
+  String get errAiUnreachable =>
+      'AI සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
 
   @override
   String errAiHttp(String status) {
@@ -505,7 +515,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI සේවාව මෙම කොටස විශ්ලේෂණය කිරීම ප්‍රතික්ෂේප කළේය.';
+  String get errAiRefused =>
+      'AI සේවාව මෙම කොටස විශ්ලේෂණය කිරීම ප්‍රතික්ෂේප කළේය.';
 
   @override
   String get errAiBadResponse => 'AI සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
@@ -529,7 +540,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'වත්මන් දත්ත මූලාශ්‍රයෙන් මිල ඉතිහාසය ලබා ගත නොහැක.';
+  String get chartUnavailable =>
+      'වත්මන් දත්ත මූලාශ්‍රයෙන් මිල ඉතිහාසය ලබා ගත නොහැක.';
 
   @override
   String get sectionStatements => 'මූල්‍ය ප්‍රකාශන (වාර්ෂික)';
@@ -556,7 +568,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get labelOperatingCashFlow => 'මෙහෙයුම් මුදල් ප්‍රවාහය';
 
   @override
-  String get statementsUnavailable => 'මෙම කොටස සඳහා වාර්තා කළ මූල්‍ය ප්‍රකාශන නොමැත.';
+  String get statementsUnavailable =>
+      'මෙම කොටස සඳහා වාර්තා කළ මූල්‍ය ප්‍රකාශන නොමැත.';
 
   @override
   String get launchAtLogin => 'පුරනය වන විට ආරම්භ කරන්න';
@@ -586,7 +599,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get removeFromFavorites => 'ප්‍රියතමවලින් ඉවත් කරන්න';
 
   @override
-  String get noFavorites => 'තවමත් ප්‍රියතම නැත. එක් කිරීමට කොටසක තරු ලකුණ තට්ටු කරන්න.';
+  String get noFavorites =>
+      'තවමත් ප්‍රියතම නැත. එක් කිරීමට කොටසක තරු ලකුණ තට්ටු කරන්න.';
 
   @override
   String get displayCurrency => 'පෙන්වන මුදල් ඒකකය';
@@ -633,7 +647,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get updateDownloading => 'යාවත්කාලීනය පසුබිමින් බාගත වෙමින්…';
 
   @override
-  String get updateDownloaded => 'යාවත්කාලීනය සූදානම්. එය ස්ථාපනය කිරීමට නැවත අරඹන්න.';
+  String get updateDownloaded =>
+      'යාවත්කාලීනය සූදානම්. එය ස්ථාපනය කිරීමට නැවත අරඹන්න.';
 
   @override
   String get updateNow => 'යාවත්කාලීන කරන්න';
@@ -642,7 +657,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get restartNow => 'නැවත අරඹන්න';
 
   @override
-  String get updatesViaStore => 'යාවත්කාලීන යෙදුම් ගබඩාව හරහා ස්වයංක්‍රීයව ලැබේ.';
+  String get updatesViaStore =>
+      'යාවත්කාලීන යෙදුම් ගබඩාව හරහා ස්වයංක්‍රීයව ලැබේ.';
 
   @override
   String get updateCheckFailed => 'යාවත්කාලීන සඳහා පරීක්ෂා කළ නොහැකි විය.';
@@ -690,7 +706,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම විශ්ලේෂණය කිරීමට සැලසුමක් තෝරන්න.';
+  String get trialExpired =>
+      'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම විශ්ලේෂණය කිරීමට සැලසුමක් තෝරන්න.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -723,7 +740,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get extraPacksTitle => 'තව අවශ්‍යද? අමතර විශ්ලේෂණ මිලදී ගන්න';
 
   @override
-  String get extraPacksHint => 'අමතර විශ්ලේෂණ කිසිදා කල් ඉකුත් නොවන අතර ඔබේ මාසික සීමාවෙන් පසු භාවිත වේ.';
+  String get extraPacksHint =>
+      'අමතර විශ්ලේෂණ කිසිදා කල් ඉකුත් නොවන අතර ඔබේ මාසික සීමාවෙන් පසු භාවිත වේ.';
 
   @override
   String get buy => 'මිලදී ගන්න';
@@ -755,7 +773,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම කාල සීමාවට ඔබට විශ්ලේෂණ ඉතිරි නැත. ඔබේ සැලසුම උසස් කරන්න හෝ අමතර විශ්ලේෂණ මිලදී ගන්න.';
 
   @override
-  String get errTrialExpired => 'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම කරගෙන යාමට සැලසුමක් තෝරන්න.';
+  String get errTrialExpired =>
+      'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම කරගෙන යාමට සැලසුමක් තෝරන්න.';
 
   @override
   String get errNoPlan => 'AI විශ්ලේෂණය සඳහා සක්‍රිය සැලසුමක් අවශ්‍යයි.';
@@ -767,7 +786,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get usageTitle => 'භාවිතය';
 
   @override
-  String get demoPurchaseNote => 'ආදර්ශන බිල්පත්: මෙම වේදිකාවේ මිලදී ගැනීම් අනුකරණය කෙරේ.';
+  String get demoPurchaseNote =>
+      'ආදර්ශන බිල්පත්: මෙම වේදිකාවේ මිලදී ගැනීම් අනුකරණය කෙරේ.';
 
   @override
   String get mostPopular => 'වඩාත්ම ජනප්‍රිය';
@@ -807,7 +827,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiDepthStandardDesc => 'සියලු ඛණ්ඩ සහිත සම්පූර්ණ වාර්තාව.';
 
   @override
-  String get aiDepthDeepDesc => 'වැඩි වෙබ් සෙවීම්, සමාන සමාගම් සමඟ සැසඳීම සහ ගැඹුරු විස්තර.';
+  String get aiDepthDeepDesc =>
+      'වැඩි වෙබ් සෙවීම්, සමාන සමාගම් සමඟ සැසඳීම සහ ගැඹුරු විස්තර.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -835,7 +856,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiReaderExperienced => 'පළපුරුදු';
 
   @override
-  String get aiReaderBeginnerDesc => 'සරල භාෂාව; සෑම තාක්ෂණික යෙදුමක්ම පැහැදිලි කෙරේ.';
+  String get aiReaderBeginnerDesc =>
+      'සරල භාෂාව; සෑම තාක්ෂණික යෙදුමක්ම පැහැදිලි කෙරේ.';
 
   @override
   String get aiReaderExperiencedDesc => 'සම්මත මූල්‍ය පාරිභාෂිතය සහිත ඝන පෙළ.';
@@ -844,7 +866,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiCounterArgument => 'ප්‍රබලතම ප්‍රතිතර්කය';
 
   @override
-  String get aiCounterArgumentDesc => 'සාරාංශය සැමවිටම අවසන් වන්නේ එහිම නිගමනයට එරෙහි ප්‍රබලතම තර්කයෙනි.';
+  String get aiCounterArgumentDesc =>
+      'සාරාංශය සැමවිටම අවසන් වන්නේ එහිම නිගමනයට එරෙහි ප්‍රබලතම තර්කයෙනි.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -937,7 +960,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get upcomingEvents => 'ඉදිරි සිදුවීම්';
 
   @override
-  String get outlookChartNote => 'දළ පරාස; සම්භාවිතා යනු දළ ඇස්තමේන්තු මිස අනාවැකි නොවේ.';
+  String get outlookChartNote =>
+      'දළ පරාස; සම්භාවිතා යනු දළ ඇස්තමේන්තු මිස අනාවැකි නොවේ.';
 
   @override
   String get accountTitle => 'ගිණුම';
@@ -952,10 +976,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notSignedIn => 'පුරනය වී නැත';
 
   @override
-  String get accountBenefit => 'ඔබේ දායකත්වය ඔබේ සියලු උපාංගවල ක්‍රියා කිරීමට පුරන්න.';
+  String get accountBenefit =>
+      'ඔබේ දායකත්වය ඔබේ සියලු උපාංගවල ක්‍රියා කිරීමට පුරන්න.';
 
   @override
-  String get accountSyncedNote => 'ඔබේ දායකත්වය සහ ඉතිරි විශ්ලේෂණ සෑම උපාංගයකම සමානයි.';
+  String get accountSyncedNote =>
+      'ඔබේ දායකත්වය සහ ඉතිරි විශ්ලේෂණ සෑම උපාංගයකම සමානයි.';
 
   @override
   String get signInTitle => 'WhatStock වෙත පුරන්න';
@@ -987,14 +1013,16 @@ class AppLocalizationsSi extends AppLocalizations {
   String get errInvalidEmail => 'කරුණාකර වලංගු ඊමේල් ලිපිනයක් ඇතුළු කරන්න.';
 
   @override
-  String get errSignInFailed => 'පුරනය අසාර්ථක විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+  String get errSignInFailed =>
+      'පුරනය අසාර්ථක විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
 
   @override
   String get checkoutWaiting =>
       'ඔබේ බ්‍රවුසරයේ ගෙවීම සම්පූර්ණ කරන්න. එය අවසන් වූ විට යෙදුම ස්වයංක්‍රීයව යාවත්කාලීන වේ.';
 
   @override
-  String get paymentViaStripe => 'Stripe හරහා ඔබේ බ්‍රවුසරයේ ආරක්ෂිත ගෙවීම. ඕනෑම වේලාවක අවලංගු කළ හැක.';
+  String get paymentViaStripe =>
+      'Stripe හරහා ඔබේ බ්‍රවුසරයේ ආරක්ෂිත ගෙවීම. ඕනෑම වේලාවක අවලංගු කළ හැක.';
 
   @override
   String get paymentViaStore =>
@@ -1007,7 +1035,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get doubleOptionTitle => 'Option දෙවරක් ඔබන්න';
 
   @override
-  String get doubleOptionSubtitle => 'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද WhatStock කැඳවිය හැක.';
+  String get doubleOptionSubtitle =>
+      'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද WhatStock කැඳවිය හැක.';
 
   @override
   String get doubleOptionPermission =>
@@ -1029,7 +1058,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'වසර $years', one: 'වසර 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'වසර $years',
+      one: 'වසර 1',
+    );
     return '$_temp0';
   }
 
@@ -1130,7 +1164,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioRemove => 'ඉවත් කරන්න';
 
   @override
-  String get portfolioExcluded => 'මිලක් හෝ විනිමය අනුපාතයක් නොමැති ස්ථාන මුළු අගයන්ට ඇතුළත් නොවේ.';
+  String get portfolioExcluded =>
+      'මිලක් හෝ විනිමය අනුපාතයක් නොමැති ස්ථාන මුළු අගයන්ට ඇතුළත් නොවේ.';
 
   @override
   String get priceAlerts => 'මිල ඇඟවීම්';
@@ -1172,7 +1207,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'තවම මිල ඇඟවීම් නැත. එකක් සැකසීමට කොටසක් විවෘත කර සීනුව තට්ටු කරන්න.';
+  String get alertsEmpty =>
+      'තවම මිල ඇඟවීම් නැත. එකක් සැකසීමට කොටසක් විවෘත කර සීනුව තට්ටු කරන්න.';
 
   @override
   String get alertsNote =>
@@ -1255,7 +1291,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබේ ගිණුම සහ අපගේ සේවාදායකයේ ගබඩා කළ සියල්ල (ඊමේල්, සීමාව, භාවිතය) සදහටම මැකෙන අතර, භාවිත නොකළ විශ්ලේෂණ අහිමි වේ. බ්‍රවුසරයෙන් ගෙවූ දායකත්වයක් වහාම අවලංගු වේ; App Store හෝ Google Play දායකත්වයක් ගබඩාවේ සැකසීම්වලින් අවලංගු කළ යුතුය.';
 
   @override
-  String get deleteLocalData => 'මෙම උපාංගයේ දත්තද මකන්න (කළඹ, ඇඟවීම්, ප්‍රියතම, ඉතිහාසය, සුරැකි විශ්ලේෂණ)';
+  String get deleteLocalData =>
+      'මෙම උපාංගයේ දත්තද මකන්න (කළඹ, ඇඟවීම්, ප්‍රියතම, ඉතිහාසය, සුරැකි විශ්ලේෂණ)';
 
   @override
   String get deleteAccountConfirm => 'සදහටම මකන්න';
@@ -1264,7 +1301,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get accountDeleted => 'ඔබේ ගිණුම මකා දමන ලදී.';
 
   @override
-  String get errDeleteAccount => 'ගිණුම මැකිය නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+  String get errDeleteAccount =>
+      'ගිණුම මැකිය නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1290,4 +1328,10 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ඔබ අවලංගු කරන තුරු වාර්ෂික දායකත්ව සෑම වසරකම ස්වයංක්‍රීයව අලුත් වේ. දායක වීමෙන් ඔබ භාවිත නියම සහ රහස්‍යතා ප්‍රතිපත්තිය පිළිගනී.';
+
+  @override
+  String get myAnalyses => 'මගේ විශ්ලේෂණ';
+
+  @override
+  String get navAlerts => 'ඇඟවීම්';
 }

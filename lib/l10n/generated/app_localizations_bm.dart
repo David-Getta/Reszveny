@@ -339,10 +339,12 @@ class AppLocalizationsBm extends AppLocalizations {
   String get recognitionRawText => 'Sɛbɛn min kalanna ja kan';
 
   @override
-  String get errMissingAnthropicKey => 'Ja dɔnni ma labɛn (ANTHROPIC_API_KEY tɛ yen). Taamasiyɛn sɛbɛn i yɛrɛ ye.';
+  String get errMissingAnthropicKey =>
+      'Ja dɔnni ma labɛn (ANTHROPIC_API_KEY tɛ yen). Taamasiyɛn sɛbɛn i yɛrɛ ye.';
 
   @override
-  String get errRecognitionUnreachable => 'An ma se ka dɔnni sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
+  String get errRecognitionUnreachable =>
+      'An ma se ka dɔnni sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -350,25 +352,30 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Dɔnni sɛriwisi ma se ka nin ja in baara.';
+  String get errRecognitionRefused =>
+      'Dɔnni sɛriwisi ma se ka nin ja in baara.';
 
   @override
   String get errRecognitionTruncated => 'Dɔnni jaabi tigɛra. A kɔrɔbɔ tugun.';
 
   @override
-  String get errRecognitionBadResponse => 'Dɔnni sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
+  String get errRecognitionBadResponse =>
+      'Dɔnni sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
 
   @override
   String get errRecognitionEmpty => 'Dɔnni sɛriwisi ye jaabi lankolon di.';
 
   @override
-  String get errMissingFinnhubKey => 'Sugu kunnafoniw ma labɛn (FINNHUB_API_KEY tɛ yen).';
+  String get errMissingFinnhubKey =>
+      'Sugu kunnafoniw ma labɛn (FINNHUB_API_KEY tɛ yen).';
 
   @override
-  String get errMarketUnreachable => 'An ma se ka sugu kunnafoni sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
+  String get errMarketUnreachable =>
+      'An ma se ka sugu kunnafoni sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
 
   @override
-  String get errMarketRateLimited => 'Ɲininiw ka ca sugu kunnafoni sɛriwisi ma. Miniti kelen makɔnɔ.';
+  String get errMarketRateLimited =>
+      'Ɲininiw ka ca sugu kunnafoni sɛriwisi ma. Miniti kelen makɔnɔ.';
 
   @override
   String errMarketHttp(String status) {
@@ -376,7 +383,8 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Sugu kunnafoni sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
+  String get errMarketBadResponse =>
+      'Sugu kunnafoni sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
 
   @override
   String errNoQuote(String symbol) {
@@ -476,7 +484,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get aiRegenerate => 'A dilan tugun';
 
   @override
-  String get aiGenerating => 'Sɛgɛsɛgɛli bɛ ka labɛn… o bɛ se ka miniti kelen walima fila ta.';
+  String get aiGenerating =>
+      'Sɛgɛsɛgɛli bɛ ka labɛn… o bɛ se ka miniti kelen walima fila ta.';
 
   @override
   String get aiSources => 'Bɔyɔrɔw';
@@ -491,10 +500,12 @@ class AppLocalizationsBm extends AppLocalizations {
       'AI ye nin sɛgɛsɛgɛli dilan ni kunnafoni dayɛlɛlenw ani kibaru kuraw ye. Fili bɛ se ka kɛ a la walima a bɛ se ka kɔrɔ, wari donni ladilikan tɛ.';
 
   @override
-  String get errAiNotConfigured => 'AI sɛgɛsɛgɛli ma labɛn (ANTHROPIC_API_KEY tɛ yen).';
+  String get errAiNotConfigured =>
+      'AI sɛgɛsɛgɛli ma labɛn (ANTHROPIC_API_KEY tɛ yen).';
 
   @override
-  String get errAiUnreachable => 'An ma se ka AI sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
+  String get errAiUnreachable =>
+      'An ma se ka AI sɛriwisi sɔrɔ. I ka ɛntɛrinɛti jɛɲɔgɔnya lajɛ.';
 
   @override
   String errAiHttp(String status) {
@@ -505,7 +516,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get errAiRefused => 'AI sɛriwisi ma sɔn ka nin aksiyɔn in sɛgɛsɛgɛ.';
 
   @override
-  String get errAiBadResponse => 'AI sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
+  String get errAiBadResponse =>
+      'AI sɛriwisi ye jaabi min di, o tun ma makɔnɔ.';
 
   @override
   String get sectionChart => 'Sɔngɔ grafiki';
@@ -526,7 +538,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get rangeFiveYears => '5S';
 
   @override
-  String get chartUnavailable => 'Sɔngɔ tariku tɛ sɔrɔ sisan kunnafoni bɔyɔrɔ in fɛ.';
+  String get chartUnavailable =>
+      'Sɔngɔ tariku tɛ sɔrɔ sisan kunnafoni bɔyɔrɔ in fɛ.';
 
   @override
   String get sectionStatements => 'Wariko jatebɔ sɛbɛnw (san o san)';
@@ -553,7 +566,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get labelOperatingCashFlow => 'Baara wari donni-bɔli';
 
   @override
-  String get statementsUnavailable => 'Wariko jatebɔ sɛbɛnw tɛ sɔrɔ nin aksiyɔn in kama.';
+  String get statementsUnavailable =>
+      'Wariko jatebɔ sɛbɛnw tɛ sɔrɔ nin aksiyɔn in kama.';
 
   @override
   String get launchAtLogin => 'A daminɛ ni i donna';
@@ -583,7 +597,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get removeFromFavorites => 'Bɔ diyanyelenw na';
 
   @override
-  String get noFavorites => 'Diyanyelen si tɛ yen fɔlɔ. Dolo digi aksiyɔn dɔ kan k’a fara a kan.';
+  String get noFavorites =>
+      'Diyanyelen si tɛ yen fɔlɔ. Dolo digi aksiyɔn dɔ kan k’a fara a kan.';
 
   @override
   String get displayCurrency => 'Wari suguya jiralen';
@@ -630,7 +645,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get updateDownloading => 'Kurayali bɛ ka jigin kɔfɛ…';
 
   @override
-  String get updateDownloaded => 'Kurayali labɛnnen don. A daminɛ kokura walasa k’a don.';
+  String get updateDownloaded =>
+      'Kurayali labɛnnen don. A daminɛ kokura walasa k’a don.';
 
   @override
   String get updateNow => 'Kuraya';
@@ -639,7 +655,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get restartNow => 'Daminɛ kokura';
 
   @override
-  String get updatesViaStore => 'Kurayaliw bɛ na u yɛrɛ ma aplikasiyɔn butiki fɛ.';
+  String get updatesViaStore =>
+      'Kurayaliw bɛ na u yɛrɛ ma aplikasiyɔn butiki fɛ.';
 
   @override
   String get updateCheckFailed => 'Kurayaliw ma se ka lajɛ.';
@@ -687,7 +704,8 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'I ka kɔrɔbɔli fu banna. Pilan dɔ sugandi walasa ka sɛgɛsɛgɛli kɛ ka taa a fɛ.';
+  String get trialExpired =>
+      'I ka kɔrɔbɔli fu banna. Pilan dɔ sugandi walasa ka sɛgɛsɛgɛli kɛ ka taa a fɛ.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -720,7 +738,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get extraPacksTitle => 'I mago bɛ dɔ wɛrɛ la wa? Sɛgɛsɛgɛli wɛrɛw san';
 
   @override
-  String get extraPacksHint => 'Sɛgɛsɛgɛli wɛrɛw tɛ ban abada, u bɛ baara kɛ i ka kalo hakɛ banni kɔ.';
+  String get extraPacksHint =>
+      'Sɛgɛsɛgɛli wɛrɛw tɛ ban abada, u bɛ baara kɛ i ka kalo hakɛ banni kɔ.';
 
   @override
   String get buy => 'San';
@@ -752,10 +771,12 @@ class AppLocalizationsBm extends AppLocalizations {
       'Sɛgɛsɛgɛli si ma to i bolo nin waati in kɔnɔ. I ka pilan kɔrɔta walima sɛgɛsɛgɛli wɛrɛw san.';
 
   @override
-  String get errTrialExpired => 'I ka kɔrɔbɔli fu banna. Pilan dɔ sugandi walasa ka taa a fɛ.';
+  String get errTrialExpired =>
+      'I ka kɔrɔbɔli fu banna. Pilan dɔ sugandi walasa ka taa a fɛ.';
 
   @override
-  String get errNoPlan => 'Pilan min bɛ baara la, o de wajibi don AI sɛgɛsɛgɛli kama.';
+  String get errNoPlan =>
+      'Pilan min bɛ baara la, o de wajibi don AI sɛgɛsɛgɛli kama.';
 
   @override
   String get viewPlans => 'Pilanw lajɛ';
@@ -764,7 +785,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get usageTitle => 'Labaarali';
 
   @override
-  String get demoPurchaseNote => 'Demo sarali: sanniw ye ɲɛjirali dɔrɔn ye nin sisitɛmu in kan.';
+  String get demoPurchaseNote =>
+      'Demo sarali: sanniw ye ɲɛjirali dɔrɔn ye nin sisitɛmu in kan.';
 
   @override
   String get mostPopular => 'Mɔgɔw b’a fɛ kosɛbɛ';
@@ -804,7 +826,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get aiDepthStandardDesc => 'Ɲɛfɔli dafalen ni a yɔrɔw bɛɛ ye.';
 
   @override
-  String get aiDepthDeepDesc => 'Ɛntɛrinɛti ɲinini caman, sosiyete ɲɔgɔnnaw sanga ɲɔgɔn ma, ani kunnafoni dunba.';
+  String get aiDepthDeepDesc =>
+      'Ɛntɛrinɛti ɲinini caman, sosiyete ɲɔgɔnnaw sanga ɲɔgɔn ma, ani kunnafoni dunba.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -835,20 +858,23 @@ class AppLocalizationsBm extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'Kan nɔgɔman; tekiniki kuma bɛɛ bɛ ɲɛfɔ.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Sɛbɛn kɔrɔ ka ca a la; wariko kuma dɔnninw bɛ kɛ a la.';
+  String get aiReaderExperiencedDesc =>
+      'Sɛbɛn kɔrɔ ka ca a la; wariko kuma dɔnninw bɛ kɛ a la.';
 
   @override
   String get aiCounterArgument => 'Sɔsɔli barikamaba';
 
   @override
-  String get aiCounterArgumentDesc => 'Kuma surun bɛ ban tuma bɛɛ ni sɔsɔli ɲumanba ye a yɛrɛ ka laban kan.';
+  String get aiCounterArgumentDesc =>
+      'Kuma surun bɛ ban tuma bɛɛ ni sɔsɔli ɲumanba ye a yɛrɛ ka laban kan.';
 
   @override
   String aiWebSearchesInfo(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ɛntɛrinɛti ɲinini fo $count sɛgɛsɛgɛli kelen o kelen kɔnɔ i ka pilan na',
+      other:
+          'Ɛntɛrinɛti ɲinini fo $count sɛgɛsɛgɛli kelen o kelen kɔnɔ i ka pilan na',
       one: 'Ɛntɛrinɛti ɲinini 1 sɛgɛsɛgɛli kelen o kelen kɔnɔ i ka pilan na',
     );
     return '$_temp0';
@@ -934,7 +960,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get upcomingEvents => 'Ko nataw';
 
   @override
-  String get outlookChartNote => 'Hakɛ jiralenw dɔrɔn; ko bɛ se ka kɛ cogo minnu na, olu ye miiri dɔrɔn ye, kiraya tɛ.';
+  String get outlookChartNote =>
+      'Hakɛ jiralenw dɔrɔn; ko bɛ se ka kɛ cogo minnu na, olu ye miiri dɔrɔn ye, kiraya tɛ.';
 
   @override
   String get accountTitle => 'Kɔnti';
@@ -949,10 +976,12 @@ class AppLocalizationsBm extends AppLocalizations {
   String get notSignedIn => 'I ma don fɔlɔ';
 
   @override
-  String get accountBenefit => 'Don walasa i ka abɔnɛman ka baara kɛ i ka minɛnw bɛɛ kan.';
+  String get accountBenefit =>
+      'Don walasa i ka abɔnɛman ka baara kɛ i ka minɛnw bɛɛ kan.';
 
   @override
-  String get accountSyncedNote => 'I ka abɔnɛman ni sɛgɛsɛgɛli tolenw ye kelen ye minɛn bɛɛ kan.';
+  String get accountSyncedNote =>
+      'I ka abɔnɛman ni sɛgɛsɛgɛli tolenw ye kelen ye minɛn bɛɛ kan.';
 
   @override
   String get signInTitle => 'Don WhatStock kɔnɔ';
@@ -984,13 +1013,16 @@ class AppLocalizationsBm extends AppLocalizations {
   String get errInvalidEmail => 'Imɛli adrɛsi ɲuman sɛbɛn.';
 
   @override
-  String get errSignInFailed => 'Donni ma se. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.';
+  String get errSignInFailed =>
+      'Donni ma se. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.';
 
   @override
-  String get checkoutWaiting => 'Sarali dafa i ka navigatɛri kɔnɔ. Aplikasiyɔn bɛna kuraya a yɛrɛ ma ni a banna.';
+  String get checkoutWaiting =>
+      'Sarali dafa i ka navigatɛri kɔnɔ. Aplikasiyɔn bɛna kuraya a yɛrɛ ma ni a banna.';
 
   @override
-  String get paymentViaStripe => 'Sarali lakananen i ka navigatɛri kɔnɔ Stripe fɛ. I bɛ se k’a dabila waati bɛɛ.';
+  String get paymentViaStripe =>
+      'Sarali lakananen i ka navigatɛri kɔnɔ Stripe fɛ. I bɛ se k’a dabila waati bɛɛ.';
 
   @override
   String get paymentViaStore =>
@@ -1003,7 +1035,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get doubleOptionTitle => 'Option digi siɲɛ fila';
 
   @override
-  String get doubleOptionSubtitle => 'Ni i ye Option butɔn digi siɲɛ fila joona, o fana bɛ WhatStock wele.';
+  String get doubleOptionSubtitle =>
+      'Ni i ye Option butɔn digi siɲɛ fila joona, o fana bɛ WhatStock wele.';
 
   @override
   String get doubleOptionPermission =>
@@ -1025,7 +1058,12 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'san $years', one: 'san 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'san $years',
+      one: 'san 1',
+    );
     return '$_temp0';
   }
 
@@ -1263,7 +1301,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get accountDeleted => 'I ka kɔnti jɔsira.';
 
   @override
-  String get errDeleteAccount => 'Kɔnti ma se ka jɔsi. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.';
+  String get errDeleteAccount =>
+      'Kɔnti ma se ka jɔsi. I ka jɛɲɔgɔnya lajɛ ka a kɔrɔbɔ tugun.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1289,4 +1328,10 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Abɔnɛmanw bɛ kuraya u yɛrɛ ma san o san fo i k’u dabila. Ni i ye abɔnɛ kɛ, i sɔnna Baarakɛcogo sariyaw ni Gundo marali sariyaw ma.';
+
+  @override
+  String get myAnalyses => 'N ka sɛgɛsɛgɛliw';
+
+  @override
+  String get navAlerts => 'Lasɔminiw';
 }

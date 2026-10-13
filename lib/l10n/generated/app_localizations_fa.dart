@@ -13,10 +13,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
+  String get homeTagline =>
+      'از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.';
 
   @override
-  String get homeHint => 'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
+  String get homeHint =>
+      'برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.';
 
   @override
   String get takePhoto => 'عکس گرفتن';
@@ -305,7 +307,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تحلیلگر', one: '1 تحلیلگر');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحلیلگر',
+      one: '1 تحلیلگر',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +344,8 @@ class AppLocalizationsFa extends AppLocalizations {
       'شناسایی تصویر تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد). نماد را به‌صورت دستی وارد کنید.';
 
   @override
-  String get errRecognitionUnreachable => 'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errRecognitionUnreachable =>
+      'دسترسی به سرویس شناسایی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,10 +353,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
+  String get errRecognitionRefused =>
+      'سرویس شناسایی نتوانست این تصویر را پردازش کند.';
 
   @override
-  String get errRecognitionTruncated => 'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
+  String get errRecognitionTruncated =>
+      'پاسخ سرویس شناسایی ناقص بود. لطفاً دوباره تلاش کنید.';
 
   @override
   String get errRecognitionBadResponse => 'پاسخ غیرمنتظره از سرویس شناسایی.';
@@ -357,10 +367,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errRecognitionEmpty => 'سرویس شناسایی پاسخ خالی برگرداند.';
 
   @override
-  String get errMissingFinnhubKey => 'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
+  String get errMissingFinnhubKey =>
+      'داده‌های بازار تنظیم نشده است (FINNHUB_API_KEY وجود ندارد).';
 
   @override
-  String get errMarketUnreachable => 'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errMarketUnreachable =>
+      'دسترسی به سرویس داده‌های بازار ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String get errMarketRateLimited =>
@@ -472,7 +484,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get aiRegenerate => 'تولید دوباره';
 
   @override
-  String get aiGenerating => 'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
+  String get aiGenerating =>
+      'در حال آماده‌سازی تحلیل… این کار ممکن است یک یا دو دقیقه طول بکشد.';
 
   @override
   String get aiSources => 'منابع';
@@ -487,10 +500,12 @@ class AppLocalizationsFa extends AppLocalizations {
       'تحلیل تولیدشده با هوش مصنوعی بر اساس داده‌های عمومی و اخبار اخیر. ممکن است خطا داشته باشد یا قدیمی باشد و توصیه سرمایه‌گذاری نیست.';
 
   @override
-  String get errAiNotConfigured => 'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
+  String get errAiNotConfigured =>
+      'تحلیل هوش مصنوعی تنظیم نشده است (ANTHROPIC_API_KEY وجود ندارد).';
 
   @override
-  String get errAiUnreachable => 'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
+  String get errAiUnreachable =>
+      'دسترسی به سرویس هوش مصنوعی ممکن نیست. اتصال اینترنت خود را بررسی کنید.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +537,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get rangeFiveYears => '5 سال';
 
   @override
-  String get chartUnavailable => 'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
+  String get chartUnavailable =>
+      'تاریخچه قیمت از منبع داده فعلی در دسترس نیست.';
 
   @override
   String get sectionStatements => 'صورت‌های مالی (سالانه)';
@@ -549,7 +565,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get labelOperatingCashFlow => 'جریان نقدی عملیاتی';
 
   @override
-  String get statementsUnavailable => 'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
+  String get statementsUnavailable =>
+      'صورت‌های مالی گزارش‌شده برای این سهم در دسترس نیست.';
 
   @override
   String get launchAtLogin => 'اجرا هنگام ورود به سیستم';
@@ -558,7 +575,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get hotkeyLabel => 'کلید میانبر سراسری';
 
   @override
-  String get hotkeyRecordHint => 'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
+  String get hotkeyRecordHint =>
+      'اینجا کلیک کنید و سپس ترکیب کلید جدید را فشار دهید';
 
   @override
   String get hotkeyReset => 'بازنشانی به پیش‌فرض';
@@ -579,7 +597,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get removeFromFavorites => 'حذف از علاقه‌مندی‌ها';
 
   @override
-  String get noFavorites => 'هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.';
+  String get noFavorites =>
+      'هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.';
 
   @override
   String get displayCurrency => 'واحد پول نمایش';
@@ -626,7 +645,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get updateDownloading => 'در حال بارگیری به‌روزرسانی در پس‌زمینه…';
 
   @override
-  String get updateDownloaded => 'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
+  String get updateDownloaded =>
+      'به‌روزرسانی آماده است. برای نصب، برنامه را دوباره راه‌اندازی کنید.';
 
   @override
   String get updateNow => 'به‌روزرسانی';
@@ -635,7 +655,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get restartNow => 'راه‌اندازی مجدد';
 
   @override
-  String get updatesViaStore => 'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
+  String get updatesViaStore =>
+      'به‌روزرسانی‌ها به‌طور خودکار از طریق فروشگاه برنامه‌ها دریافت می‌شوند.';
 
   @override
   String get updateCheckFailed => 'بررسی به‌روزرسانی‌ها ممکن نشد.';
@@ -683,7 +704,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه تحلیل یک طرح انتخاب کنید.';
+  String get trialExpired =>
+      'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه تحلیل یک طرح انتخاب کنید.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +738,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get extraPacksTitle => 'بیشتر نیاز دارید؟ تحلیل اضافی بخرید';
 
   @override
-  String get extraPacksHint => 'تحلیل‌های اضافی هرگز منقضی نمی‌شوند و پس از سهمیه ماهانه شما استفاده می‌شوند.';
+  String get extraPacksHint =>
+      'تحلیل‌های اضافی هرگز منقضی نمی‌شوند و پس از سهمیه ماهانه شما استفاده می‌شوند.';
 
   @override
   String get buy => 'خرید';
@@ -744,10 +767,12 @@ class AppLocalizationsFa extends AppLocalizations {
       'خرید هنوز در این پلتفرم در دسترس نیست. در تلفن یا Mac خود مشترک شوید؛ طرح شما در همه دستگاه‌ها کار می‌کند.';
 
   @override
-  String get errQuotaExceeded => 'تحلیلی برای این دوره باقی نمانده است. طرح خود را ارتقا دهید یا تحلیل اضافی بخرید.';
+  String get errQuotaExceeded =>
+      'تحلیلی برای این دوره باقی نمانده است. طرح خود را ارتقا دهید یا تحلیل اضافی بخرید.';
 
   @override
-  String get errTrialExpired => 'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه یک طرح انتخاب کنید.';
+  String get errTrialExpired =>
+      'دوره آزمایشی رایگان شما به پایان رسید. برای ادامه یک طرح انتخاب کنید.';
 
   @override
   String get errNoPlan => 'برای تحلیل هوش مصنوعی به یک طرح فعال نیاز است.';
@@ -759,7 +784,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get usageTitle => 'میزان استفاده';
 
   @override
-  String get demoPurchaseNote => 'پرداخت آزمایشی: خریدها در این پلتفرم شبیه‌سازی می‌شوند.';
+  String get demoPurchaseNote =>
+      'پرداخت آزمایشی: خریدها در این پلتفرم شبیه‌سازی می‌شوند.';
 
   @override
   String get mostPopular => 'محبوب‌ترین';
@@ -799,7 +825,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get aiDepthStandardDesc => 'گزارش کامل با همه بخش‌ها.';
 
   @override
-  String get aiDepthDeepDesc => 'جستجوهای وب بیشتر، مقایسه با رقبا و جزئیات عمیق‌تر.';
+  String get aiDepthDeepDesc =>
+      'جستجوهای وب بیشتر، مقایسه با رقبا و جزئیات عمیق‌تر.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -827,7 +854,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get aiReaderExperienced => 'باتجربه';
 
   @override
-  String get aiReaderBeginnerDesc => 'زبان ساده؛ همه اصطلاحات تخصصی توضیح داده می‌شوند.';
+  String get aiReaderBeginnerDesc =>
+      'زبان ساده؛ همه اصطلاحات تخصصی توضیح داده می‌شوند.';
 
   @override
   String get aiReaderExperiencedDesc => 'متنی فشرده‌تر با اصطلاحات رایج مالی.';
@@ -836,7 +864,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get aiCounterArgument => 'قوی‌ترین استدلال مخالف';
 
   @override
-  String get aiCounterArgumentDesc => 'خلاصه همیشه با قوی‌ترین استدلال علیه نتیجه‌گیری خودش به پایان می‌رسد.';
+  String get aiCounterArgumentDesc =>
+      'خلاصه همیشه با قوی‌ترین استدلال علیه نتیجه‌گیری خودش به پایان می‌رسد.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -929,7 +958,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get upcomingEvents => 'رویدادهای پیش رو';
 
   @override
-  String get outlookChartNote => 'بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی.';
+  String get outlookChartNote =>
+      'بازه‌های تقریبی؛ احتمال‌ها برآوردهایی تقریبی‌اند، نه پیش‌بینی.';
 
   @override
   String get accountTitle => 'حساب کاربری';
@@ -944,10 +974,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notSignedIn => 'وارد نشده‌اید';
 
   @override
-  String get accountBenefit => 'وارد شوید تا اشتراک شما روی همه دستگاه‌هایتان کار کند.';
+  String get accountBenefit =>
+      'وارد شوید تا اشتراک شما روی همه دستگاه‌هایتان کار کند.';
 
   @override
-  String get accountSyncedNote => 'اشتراک و تحلیل‌های باقی‌مانده شما در همه دستگاه‌ها یکسان است.';
+  String get accountSyncedNote =>
+      'اشتراک و تحلیل‌های باقی‌مانده شما در همه دستگاه‌ها یکسان است.';
 
   @override
   String get signInTitle => 'ورود به WhatStock';
@@ -979,13 +1011,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errInvalidEmail => 'لطفاً یک نشانی ایمیل معتبر وارد کنید.';
 
   @override
-  String get errSignInFailed => 'ورود ناموفق بود. اتصال خود را بررسی کنید و دوباره تلاش کنید.';
+  String get errSignInFailed =>
+      'ورود ناموفق بود. اتصال خود را بررسی کنید و دوباره تلاش کنید.';
 
   @override
-  String get checkoutWaiting => 'پرداخت را در مرورگر کامل کنید. برنامه پس از پایان به‌طور خودکار به‌روز می‌شود.';
+  String get checkoutWaiting =>
+      'پرداخت را در مرورگر کامل کنید. برنامه پس از پایان به‌طور خودکار به‌روز می‌شود.';
 
   @override
-  String get paymentViaStripe => 'پرداخت امن در مرورگر از طریق Stripe. هر زمان بخواهید می‌توانید لغو کنید.';
+  String get paymentViaStripe =>
+      'پرداخت امن در مرورگر از طریق Stripe. هر زمان بخواهید می‌توانید لغو کنید.';
 
   @override
   String get paymentViaStore =>
@@ -998,7 +1033,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get doubleOptionTitle => 'دو بار فشار دادن Option';
 
   @override
-  String get doubleOptionSubtitle => 'دو بار فشار دادن سریع کلید Option نیز WhatStock را فرا می‌خواند.';
+  String get doubleOptionSubtitle =>
+      'دو بار فشار دادن سریع کلید Option نیز WhatStock را فرا می‌خواند.';
 
   @override
   String get doubleOptionPermission =>
@@ -1020,7 +1056,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years سال', one: '$years سال');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years سال',
+      one: '$years سال',
+    );
     return '$_temp0';
   }
 
@@ -1121,7 +1162,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioRemove => 'حذف';
 
   @override
-  String get portfolioExcluded => 'موقعیت‌های بدون قیمت یا نرخ ارز در جمع‌ها لحاظ نمی‌شوند.';
+  String get portfolioExcluded =>
+      'موقعیت‌های بدون قیمت یا نرخ ارز در جمع‌ها لحاظ نمی‌شوند.';
 
   @override
   String get priceAlerts => 'هشدارهای قیمت';
@@ -1163,7 +1205,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'هنوز هشداری نیست. یک سهم را باز کنید و روی زنگ بزنید.';
+  String get alertsEmpty =>
+      'هنوز هشداری نیست. یک سهم را باز کنید و روی زنگ بزنید.';
 
   @override
   String get alertsNote =>
@@ -1256,7 +1299,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get accountDeleted => 'حساب شما حذف شد.';
 
   @override
-  String get errDeleteAccount => 'حذف حساب ممکن نشد. اتصال را بررسی کنید و دوباره تلاش کنید.';
+  String get errDeleteAccount =>
+      'حذف حساب ممکن نشد. اتصال را بررسی کنید و دوباره تلاش کنید.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1282,4 +1326,10 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'اشتراک سالانه تا زمانی که لغوش نکنید هر سال به‌طور خودکار تمدید می‌شود. با خرید اشتراک، شرایط استفاده و سیاست حریم خصوصی را می‌پذیرید.';
+
+  @override
+  String get myAnalyses => 'تحلیل‌های من';
+
+  @override
+  String get navAlerts => 'هشدارها';
 }

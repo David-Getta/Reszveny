@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 luni gratuit",
   "perYear": "/ an",
   "pricePerMonthApprox": "≈ {price} pe lună",
-  "subscriptionLegalYearly": "Abonamentul anual se reînnoiește automat în fiecare an până îl anulezi. Prin abonare accepți Termenii de utilizare și Politica de confidențialitate."
+  "subscriptionLegalYearly": "Abonamentul anual se reînnoiește automat în fiecare an până îl anulezi. Prin abonare accepți Termenii de utilizare și Politica de confidențialitate.",
+  "myAnalyses": "Analizele mele",
+  "navAlerts": "Alerte"
 }

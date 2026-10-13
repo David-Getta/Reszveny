@@ -16,7 +16,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get homeTagline => 'ຖ່າຍຮູບຮຸ້ນ ແລ້ວຮູ້ທຸກຢ່າງກ່ຽວກັບຮຸ້ນນັ້ນ';
 
   @override
-  String get homeHint => 'ໃບຮຸ້ນ ໜ້າຈໍແອັບນາຍໜ້າ ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດ – ອັນໃດກໍໄດ້ທີ່ບອກໄດ້ວ່າແມ່ນຮຸ້ນໃດ';
+  String get homeHint =>
+      'ໃບຮຸ້ນ ໜ້າຈໍແອັບນາຍໜ້າ ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດ – ອັນໃດກໍໄດ້ທີ່ບອກໄດ້ວ່າແມ່ນຮຸ້ນໃດ';
 
   @override
   String get takePhoto => 'ຖ່າຍຮູບ';
@@ -54,7 +55,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get noCandidatesTitle => 'ບໍ່ພົບຮຸ້ນໃນຮູບ';
 
   @override
-  String get noCandidatesBody => 'ພວກເຮົາບໍ່ສາມາດລະບຸຮຸ້ນຈາກຮູບນີ້ໄດ້ ລອງຖ່າຍຮູບໃຫ້ຊັດຂຶ້ນ ຫຼື ປ້ອນສັນຍາລັກຮຸ້ນເອງ';
+  String get noCandidatesBody =>
+      'ພວກເຮົາບໍ່ສາມາດລະບຸຮຸ້ນຈາກຮູບນີ້ໄດ້ ລອງຖ່າຍຮູບໃຫ້ຊັດຂຶ້ນ ຫຼື ປ້ອນສັນຍາລັກຮຸ້ນເອງ';
 
   @override
   String get whatWeSaw => 'ສິ່ງທີ່ພວກເຮົາເຫັນ';
@@ -80,7 +82,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get about => 'ກ່ຽວກັບ';
 
   @override
-  String get disclaimer => 'ແອັບນີ້ໃຫ້ຂໍ້ມູນເທົ່ານັ້ນ ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ ຂໍ້ມູນອາດຊັກຊ້າ ຫຼື ບໍ່ຖືກຕ້ອງ';
+  String get disclaimer =>
+      'ແອັບນີ້ໃຫ້ຂໍ້ມູນເທົ່ານັ້ນ ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ ຂໍ້ມູນອາດຊັກຊ້າ ຫຼື ບໍ່ຖືກຕ້ອງ';
 
   @override
   String dataSource(String source) {
@@ -303,7 +306,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ນັກວິເຄາະ $count ຄົນ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ນັກວິເຄາະ $count ຄົນ',
+    );
     return '$_temp0';
   }
 
@@ -335,7 +342,8 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຍັງບໍ່ໄດ້ຕັ້ງຄ່າການຈຳແນກຮູບພາບ (ບໍ່ມີ ANTHROPIC_API_KEY) ກະລຸນາປ້ອນສັນຍາລັກຮຸ້ນເອງ';
 
   @override
-  String get errRecognitionUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຈຳແນກຮູບພາບໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errRecognitionUnreachable =>
+      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຈຳແນກຮູບພາບໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
   String errRecognitionHttp(String status) {
@@ -343,25 +351,32 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ບໍລິການຈຳແນກຮູບພາບບໍ່ສາມາດປະມວນຜົນຮູບນີ້ໄດ້';
+  String get errRecognitionRefused =>
+      'ບໍລິການຈຳແນກຮູບພາບບໍ່ສາມາດປະມວນຜົນຮູບນີ້ໄດ້';
 
   @override
-  String get errRecognitionTruncated => 'ການຕອບກັບຈາກບໍລິການຈຳແນກຮູບພາບຖືກຕັດຂາດ ກະລຸນາລອງໃໝ່';
+  String get errRecognitionTruncated =>
+      'ການຕອບກັບຈາກບໍລິການຈຳແນກຮູບພາບຖືກຕັດຂາດ ກະລຸນາລອງໃໝ່';
 
   @override
-  String get errRecognitionBadResponse => 'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຈຳແນກຮູບພາບ';
+  String get errRecognitionBadResponse =>
+      'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຈຳແນກຮູບພາບ';
 
   @override
-  String get errRecognitionEmpty => 'ບໍລິການຈຳແນກຮູບພາບສົ່ງການຕອບກັບທີ່ຫວ່າງເປົ່າ';
+  String get errRecognitionEmpty =>
+      'ບໍລິການຈຳແນກຮູບພາບສົ່ງການຕອບກັບທີ່ຫວ່າງເປົ່າ';
 
   @override
-  String get errMissingFinnhubKey => 'ຍັງບໍ່ໄດ້ຕັ້ງຄ່າຂໍ້ມູນຕະຫຼາດ (ບໍ່ມີ FINNHUB_API_KEY)';
+  String get errMissingFinnhubKey =>
+      'ຍັງບໍ່ໄດ້ຕັ້ງຄ່າຂໍ້ມູນຕະຫຼາດ (ບໍ່ມີ FINNHUB_API_KEY)';
 
   @override
-  String get errMarketUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຂໍ້ມູນຕະຫຼາດໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errMarketUnreachable =>
+      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຂໍ້ມູນຕະຫຼາດໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
-  String get errMarketRateLimited => 'ສົ່ງຄຳຮ້ອງຂໍໄປຫາບໍລິການຂໍ້ມູນຕະຫຼາດຫຼາຍເກີນໄປ ກະລຸນາລໍຖ້າໜຶ່ງນາທີ';
+  String get errMarketRateLimited =>
+      'ສົ່ງຄຳຮ້ອງຂໍໄປຫາບໍລິການຂໍ້ມູນຕະຫຼາດຫຼາຍເກີນໄປ ກະລຸນາລໍຖ້າໜຶ່ງນາທີ';
 
   @override
   String errMarketHttp(String status) {
@@ -369,7 +384,8 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຂໍ້ມູນຕະຫຼາດ';
+  String get errMarketBadResponse =>
+      'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຂໍ້ມູນຕະຫຼາດ';
 
   @override
   String errNoQuote(String symbol) {
@@ -484,10 +500,12 @@ class AppLocalizationsLo extends AppLocalizations {
       'ບົດວິເຄາະທີ່ສ້າງໂດຍ AI ອີງໃສ່ຂໍ້ມູນສາທາລະນະ ແລະ ຂ່າວລ່າສຸດ ອາດມີຂໍ້ຜິດພາດ ຫຼື ລ້າສະໄໝ ແລະ ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
 
   @override
-  String get errAiNotConfigured => 'ຍັງບໍ່ໄດ້ຕັ້ງຄ່າການວິເຄາະດ້ວຍ AI (ບໍ່ມີ ANTHROPIC_API_KEY)';
+  String get errAiNotConfigured =>
+      'ຍັງບໍ່ໄດ້ຕັ້ງຄ່າການວິເຄາະດ້ວຍ AI (ບໍ່ມີ ANTHROPIC_API_KEY)';
 
   @override
-  String get errAiUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການ AI ໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errAiUnreachable =>
+      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການ AI ໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
   String errAiHttp(String status) {
@@ -546,7 +564,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get labelOperatingCashFlow => 'ກະແສເງິນສົດຈາກການດຳເນີນງານ';
 
   @override
-  String get statementsUnavailable => 'ບໍ່ມີບົດລາຍງານການເງິນທີ່ເຜີຍແຜ່ສຳລັບຮຸ້ນນີ້';
+  String get statementsUnavailable =>
+      'ບໍ່ມີບົດລາຍງານການເງິນທີ່ເຜີຍແຜ່ສຳລັບຮຸ້ນນີ້';
 
   @override
   String get launchAtLogin => 'ເປີດເມື່ອເຂົ້າສູ່ລະບົບ';
@@ -670,12 +689,17 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'ເຫຼືອເວລາທົດລອງໃຊ້ $days ມື້');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ເຫຼືອເວລາທົດລອງໃຊ້ $days ມື້',
+    );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອວິເຄາະຕໍ່';
+  String get trialExpired =>
+      'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອວິເຄາະຕໍ່';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -708,7 +732,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get extraPacksTitle => 'ຕ້ອງການເພີ່ມບໍ? ຊື້ການວິເຄາະເພີ່ມເຕີມ';
 
   @override
-  String get extraPacksHint => 'ການວິເຄາະເພີ່ມເຕີມບໍ່ມີວັນໝົດອາຍຸ ແລະ ຈະຖືກໃຊ້ຫຼັງຈາກໂຄຕ້າລາຍເດືອນຂອງທ່ານໝົດແລ້ວ';
+  String get extraPacksHint =>
+      'ການວິເຄາະເພີ່ມເຕີມບໍ່ມີວັນໝົດອາຍຸ ແລະ ຈະຖືກໃຊ້ຫຼັງຈາກໂຄຕ້າລາຍເດືອນຂອງທ່ານໝົດແລ້ວ';
 
   @override
   String get buy => 'ຊື້';
@@ -736,13 +761,16 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຍັງບໍ່ສາມາດຊື້ໃນແພລດຟອມນີ້ໄດ້ ສະໝັກສະມາຊິກໃນໂທລະສັບ ຫຼື Mac ຂອງທ່ານ ແລ້ວແພັກເກັດຂອງທ່ານຈະໃຊ້ໄດ້ໃນທຸກອຸປະກອນ';
 
   @override
-  String get errQuotaExceeded => 'ທ່ານໃຊ້ການວິເຄາະໃນຮອບນີ້ໝົດແລ້ວ ອັບເກຣດແພັກເກັດ ຫຼື ຊື້ການວິເຄາະເພີ່ມເຕີມ';
+  String get errQuotaExceeded =>
+      'ທ່ານໃຊ້ການວິເຄາະໃນຮອບນີ້ໝົດແລ້ວ ອັບເກຣດແພັກເກັດ ຫຼື ຊື້ການວິເຄາະເພີ່ມເຕີມ';
 
   @override
-  String get errTrialExpired => 'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອໃຊ້ງານຕໍ່';
+  String get errTrialExpired =>
+      'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອໃຊ້ງານຕໍ່';
 
   @override
-  String get errNoPlan => 'ຕ້ອງມີແພັກເກັດທີ່ໃຊ້ງານຢູ່ຈຶ່ງຈະໃຊ້ການວິເຄາະດ້ວຍ AI ໄດ້';
+  String get errNoPlan =>
+      'ຕ້ອງມີແພັກເກັດທີ່ໃຊ້ງານຢູ່ຈຶ່ງຈະໃຊ້ການວິເຄາະດ້ວຍ AI ໄດ້';
 
   @override
   String get viewPlans => 'ເບິ່ງແພັກເກັດ';
@@ -751,7 +779,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get usageTitle => 'ການນຳໃຊ້';
 
   @override
-  String get demoPurchaseNote => 'ການຊຳລະເງິນສາທິດ: ການຊື້ໃນແພລດຟອມນີ້ເປັນພຽງການຈຳລອງ';
+  String get demoPurchaseNote =>
+      'ການຊຳລະເງິນສາທິດ: ການຊື້ໃນແພລດຟອມນີ້ເປັນພຽງການຈຳລອງ';
 
   @override
   String get mostPopular => 'ນິຍົມທີ່ສຸດ';
@@ -791,7 +820,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get aiDepthStandardDesc => 'ບົດລາຍງານສະບັບເຕັມຄົບທຸກຫົວຂໍ້';
 
   @override
-  String get aiDepthDeepDesc => 'ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ປຽບທຽບກັບບໍລິສັດຄູ່ແຂ່ງ ແລະ ລົງລາຍລະອຽດເລິກກວ່າ';
+  String get aiDepthDeepDesc =>
+      'ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ປຽບທຽບກັບບໍລິສັດຄູ່ແຂ່ງ ແລະ ລົງລາຍລະອຽດເລິກກວ່າ';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -800,7 +830,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ໃຊ້ການວິເຄາະ $count ຄັ້ງ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໃຊ້ການວິເຄາະ $count ຄັ້ງ',
+    );
     return '$_temp0';
   }
 
@@ -817,13 +851,15 @@ class AppLocalizationsLo extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'ພາສາເຂົ້າໃຈງ່າຍ ອະທິບາຍທຸກຄຳສັບເຕັກນິກ';
 
   @override
-  String get aiReaderExperiencedDesc => 'ເນື້ອຫາເຂັ້ມຂຸ້ນຂຶ້ນ ໃຊ້ຄຳສັບການເງິນມາດຕະຖານ';
+  String get aiReaderExperiencedDesc =>
+      'ເນື້ອຫາເຂັ້ມຂຸ້ນຂຶ້ນ ໃຊ້ຄຳສັບການເງິນມາດຕະຖານ';
 
   @override
   String get aiCounterArgument => 'ຂໍ້ໂຕ້ແຍ້ງທີ່ໜັກແໜ້ນທີ່ສຸດ';
 
   @override
-  String get aiCounterArgumentDesc => 'ບົດສະຫຼຸບຈະປິດທ້າຍດ້ວຍຂໍ້ໂຕ້ແຍ້ງທີ່ດີທີ່ສຸດຕໍ່ຂໍ້ສະຫຼຸບຂອງຕົນເອງສະເໝີ';
+  String get aiCounterArgumentDesc =>
+      'ບົດສະຫຼຸບຈະປິດທ້າຍດ້ວຍຂໍ້ໂຕ້ແຍ້ງທີ່ດີທີ່ສຸດຕໍ່ຂໍ້ສະຫຼຸບຂອງຕົນເອງສະເໝີ';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -842,13 +878,21 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຊອກຫາໃນເວັບສູງສຸດ $count ຄັ້ງ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຊອກຫາໃນເວັບສູງສຸດ $count ຄັ້ງ',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຊອກຫາໃນເວັບ $count ຄັ້ງຕໍ່ການວິເຄາະ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຊອກຫາໃນເວັບ $count ຄັ້ງຕໍ່ການວິເຄາະ',
+    );
     return '$_temp0';
   }
 
@@ -905,7 +949,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get upcomingEvents => 'ເຫດການທີ່ກຳລັງຈະມາເຖິງ';
 
   @override
-  String get outlookChartNote => 'ເປັນຊ່ວງລາຄາໂດຍປະມານ ຄວາມເປັນໄປໄດ້ເປັນພຽງການປະເມີນຄ່າວໆ ບໍ່ແມ່ນການພະຍາກອນ';
+  String get outlookChartNote =>
+      'ເປັນຊ່ວງລາຄາໂດຍປະມານ ຄວາມເປັນໄປໄດ້ເປັນພຽງການປະເມີນຄ່າວໆ ບໍ່ແມ່ນການພະຍາກອນ';
 
   @override
   String get accountTitle => 'ບັນຊີ';
@@ -920,10 +965,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notSignedIn => 'ຍັງບໍ່ໄດ້ເຂົ້າສູ່ລະບົບ';
 
   @override
-  String get accountBenefit => 'ເຂົ້າສູ່ລະບົບເພື່ອໃຫ້ການສະໝັກສະມາຊິກໃຊ້ໄດ້ໃນທຸກອຸປະກອນຂອງທ່ານ';
+  String get accountBenefit =>
+      'ເຂົ້າສູ່ລະບົບເພື່ອໃຫ້ການສະໝັກສະມາຊິກໃຊ້ໄດ້ໃນທຸກອຸປະກອນຂອງທ່ານ';
 
   @override
-  String get accountSyncedNote => 'ການສະໝັກສະມາຊິກ ແລະ ຈຳນວນການວິເຄາະທີ່ເຫຼືອຂອງທ່ານຈະຄືກັນໃນທຸກອຸປະກອນ';
+  String get accountSyncedNote =>
+      'ການສະໝັກສະມາຊິກ ແລະ ຈຳນວນການວິເຄາະທີ່ເຫຼືອຂອງທ່ານຈະຄືກັນໃນທຸກອຸປະກອນ';
 
   @override
   String get signInTitle => 'ເຂົ້າສູ່ລະບົບ WhatStock';
@@ -955,13 +1002,16 @@ class AppLocalizationsLo extends AppLocalizations {
   String get errInvalidEmail => 'ກະລຸນາປ້ອນທີ່ຢູ່ອີເມວທີ່ຖືກຕ້ອງ';
 
   @override
-  String get errSignInFailed => 'ເຂົ້າສູ່ລະບົບບໍ່ສຳເລັດ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
+  String get errSignInFailed =>
+      'ເຂົ້າສູ່ລະບົບບໍ່ສຳເລັດ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
 
   @override
-  String get checkoutWaiting => 'ຊຳລະເງິນໃຫ້ສຳເລັດໃນບຣາວເຊີຂອງທ່ານ ແອັບຈະອັບເດດອັດຕະໂນມັດເມື່ອສຳເລັດ';
+  String get checkoutWaiting =>
+      'ຊຳລະເງິນໃຫ້ສຳເລັດໃນບຣາວເຊີຂອງທ່ານ ແອັບຈະອັບເດດອັດຕະໂນມັດເມື່ອສຳເລັດ';
 
   @override
-  String get paymentViaStripe => 'ຊຳລະເງິນຢ່າງປອດໄພໃນບຣາວເຊີຜ່ານ Stripe ຍົກເລີກໄດ້ທຸກເວລາ';
+  String get paymentViaStripe =>
+      'ຊຳລະເງິນຢ່າງປອດໄພໃນບຣາວເຊີຜ່ານ Stripe ຍົກເລີກໄດ້ທຸກເວລາ';
 
   @override
   String get paymentViaStore =>
@@ -974,7 +1024,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get doubleOptionTitle => 'ກົດ Option ສອງເທື່ອ';
 
   @override
-  String get doubleOptionSubtitle => 'ການກົດປຸ່ມ Option ສອງເທື່ອຢ່າງໄວກໍເອີ້ນ WhatStock ໄດ້ເຊັ່ນກັນ';
+  String get doubleOptionSubtitle =>
+      'ການກົດປຸ່ມ Option ສອງເທື່ອຢ່າງໄວກໍເອີ້ນ WhatStock ໄດ້ເຊັ່ນກັນ';
 
   @override
   String get doubleOptionPermission =>
@@ -996,7 +1047,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ປີ');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ປີ',
+    );
     return '$_temp0';
   }
 
@@ -1027,10 +1082,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolio => 'ພອດໂຟລິໂອ';
 
   @override
-  String get portfolioEmpty => 'ຍັງບໍ່ມີຫຍັງຢູ່ນີ້ ເປີດຮຸ້ນແລ້ວແຕະ “ເພີ່ມໃສ່ພອດໂຟລິໂອ” ເພື່ອຕິດຕາມຮຸ້ນທີ່ທ່ານຖື';
+  String get portfolioEmpty =>
+      'ຍັງບໍ່ມີຫຍັງຢູ່ນີ້ ເປີດຮຸ້ນແລ້ວແຕະ “ເພີ່ມໃສ່ພອດໂຟລິໂອ” ເພື່ອຕິດຕາມຮຸ້ນທີ່ທ່ານຖື';
 
   @override
-  String get portfolioLocalNote => 'ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ຍອດລວມແປງຄ່າຕາມອັດຕາອ້າງອີງຂອງ ECB ລາຄາອາດຊັກຊ້າ';
+  String get portfolioLocalNote =>
+      'ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ຍອດລວມແປງຄ່າຕາມອັດຕາອ້າງອີງຂອງ ECB ລາຄາອາດຊັກຊ້າ';
 
   @override
   String get addToPortfolio => 'ເພີ່ມໃສ່ພອດໂຟລິໂອ';
@@ -1095,7 +1152,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioRemove => 'ລຶບ';
 
   @override
-  String get portfolioExcluded => 'ຮຸ້ນທີ່ບໍ່ມີລາຄາ ຫຼື ອັດຕາແລກປ່ຽນ ຈະບໍ່ຖືກນັບລວມໃນຍອດລວມ';
+  String get portfolioExcluded =>
+      'ຮຸ້ນທີ່ບໍ່ມີລາຄາ ຫຼື ອັດຕາແລກປ່ຽນ ຈະບໍ່ຖືກນັບລວມໃນຍອດລວມ';
 
   @override
   String get priceAlerts => 'ການແຈ້ງເຕືອນລາຄາ';
@@ -1137,7 +1195,8 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'ຍັງບໍ່ມີການແຈ້ງເຕືອນລາຄາ ເປີດຮຸ້ນແລ້ວແຕະຮູບກະດິ່ງເພື່ອຕັ້ງຄ່າ';
+  String get alertsEmpty =>
+      'ຍັງບໍ່ມີການແຈ້ງເຕືອນລາຄາ ເປີດຮຸ້ນແລ້ວແຕະຮູບກະດິ່ງເພື່ອຕັ້ງຄ່າ';
 
   @override
   String get alertsNote =>
@@ -1230,7 +1289,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get accountDeleted => 'ລຶບບັນຊີຂອງທ່ານແລ້ວ';
 
   @override
-  String get errDeleteAccount => 'ບໍ່ສາມາດລຶບບັນຊີໄດ້ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
+  String get errDeleteAccount =>
+      'ບໍ່ສາມາດລຶບບັນຊີໄດ້ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
 
   @override
   String get aiTrialBriefNote =>
@@ -1256,4 +1316,10 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ການສະໝັກສະມາຊິກລາຍປີຈະຕໍ່ອາຍຸອັດຕະໂນມັດທຸກປີຈົນກວ່າທ່ານຈະຍົກເລີກ ການສະໝັກສະມາຊິກຖືວ່າທ່ານຍອມຮັບຂໍ້ກຳນົດການນຳໃຊ້ ແລະ ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ';
+
+  @override
+  String get myAnalyses => 'ການວິເຄາະຂອງຂ້ອຍ';
+
+  @override
+  String get navAlerts => 'ແຈ້ງເຕືອນ';
 }

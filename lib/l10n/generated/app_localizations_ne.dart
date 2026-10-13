@@ -13,7 +13,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'कुनै शेयरको फोटो खिच्नुहोस् र त्यसबारे सबै कुरा थाहा पाउनुहोस्।';
+  String get homeTagline =>
+      'कुनै शेयरको फोटो खिच्नुहोस् र त्यसबारे सबै कुरा थाहा पाउनुहोस्।';
 
   @override
   String get homeHint =>
@@ -82,7 +83,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get about => 'एपको बारेमा';
 
   @override
-  String get disclaimer => 'यो एपले जानकारी मात्र दिन्छ, यो लगानी सल्लाह होइन। डेटा ढिलो वा गलत हुन सक्छ।';
+  String get disclaimer =>
+      'यो एपले जानकारी मात्र दिन्छ, यो लगानी सल्लाह होइन। डेटा ढिलो वा गलत हुन सक्छ।';
 
   @override
   String dataSource(String source) {
@@ -305,7 +307,12 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count विश्लेषक', one: '1 विश्लेषक');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषक',
+      one: '1 विश्लेषक',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +344,8 @@ class AppLocalizationsNe extends AppLocalizations {
       'तस्बिर पहिचान कन्फिगर गरिएको छैन (ANTHROPIC_API_KEY छैन)। टिकर आफैं प्रविष्ट गर्नुहोस्।';
 
   @override
-  String get errRecognitionUnreachable => 'पहिचान सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
+  String get errRecognitionUnreachable =>
+      'पहिचान सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,25 +353,31 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'पहिचान सेवाले यो तस्बिर प्रशोधन गर्न सकेन।';
+  String get errRecognitionRefused =>
+      'पहिचान सेवाले यो तस्बिर प्रशोधन गर्न सकेन।';
 
   @override
-  String get errRecognitionTruncated => 'पहिचानको जवाफ बीचमै काटियो। कृपया फेरि प्रयास गर्नुहोस्।';
+  String get errRecognitionTruncated =>
+      'पहिचानको जवाफ बीचमै काटियो। कृपया फेरि प्रयास गर्नुहोस्।';
 
   @override
-  String get errRecognitionBadResponse => 'पहिचान सेवाबाट अप्रत्याशित जवाफ आयो।';
+  String get errRecognitionBadResponse =>
+      'पहिचान सेवाबाट अप्रत्याशित जवाफ आयो।';
 
   @override
   String get errRecognitionEmpty => 'पहिचान सेवाले खाली जवाफ फर्कायो।';
 
   @override
-  String get errMissingFinnhubKey => 'बजार डेटा कन्फिगर गरिएको छैन (FINNHUB_API_KEY छैन)।';
+  String get errMissingFinnhubKey =>
+      'बजार डेटा कन्फिगर गरिएको छैन (FINNHUB_API_KEY छैन)।';
 
   @override
-  String get errMarketUnreachable => 'बजार डेटा सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
+  String get errMarketUnreachable =>
+      'बजार डेटा सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
 
   @override
-  String get errMarketRateLimited => 'बजार डेटा सेवामा धेरै अनुरोध पठाइए। कृपया एक मिनेट पर्खनुहोस्।';
+  String get errMarketRateLimited =>
+      'बजार डेटा सेवामा धेरै अनुरोध पठाइए। कृपया एक मिनेट पर्खनुहोस्।';
 
   @override
   String errMarketHttp(String status) {
@@ -471,7 +485,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get aiRegenerate => 'फेरि तयार गर्नुहोस्';
 
   @override
-  String get aiGenerating => 'विश्लेषण तयार हुँदै… यसमा एक-दुई मिनेट लाग्न सक्छ।';
+  String get aiGenerating =>
+      'विश्लेषण तयार हुँदै… यसमा एक-दुई मिनेट लाग्न सक्छ।';
 
   @override
   String get aiSources => 'स्रोतहरू';
@@ -486,10 +501,12 @@ class AppLocalizationsNe extends AppLocalizations {
       'सार्वजनिक डेटा र हालका समाचारमा आधारित AI-निर्मित विश्लेषण। यसमा त्रुटि हुन सक्छ वा यो पुरानो हुन सक्छ, र यो लगानी सल्लाह होइन।';
 
   @override
-  String get errAiNotConfigured => 'AI विश्लेषण कन्फिगर गरिएको छैन (ANTHROPIC_API_KEY छैन)।';
+  String get errAiNotConfigured =>
+      'AI विश्लेषण कन्फिगर गरिएको छैन (ANTHROPIC_API_KEY छैन)।';
 
   @override
-  String get errAiUnreachable => 'AI सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
+  String get errAiUnreachable =>
+      'AI सेवासँग सम्पर्क हुन सकेन। आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।';
 
   @override
   String errAiHttp(String status) {
@@ -497,7 +514,8 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI सेवाले यो शेयरको विश्लेषण गर्न अस्वीकार गर्‍यो।';
+  String get errAiRefused =>
+      'AI सेवाले यो शेयरको विश्लेषण गर्न अस्वीकार गर्‍यो।';
 
   @override
   String get errAiBadResponse => 'AI सेवाबाट अप्रत्याशित जवाफ आयो।';
@@ -521,7 +539,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'हालको डेटा स्रोतबाट मूल्यको इतिहास उपलब्ध छैन।';
+  String get chartUnavailable =>
+      'हालको डेटा स्रोतबाट मूल्यको इतिहास उपलब्ध छैन।';
 
   @override
   String get sectionStatements => 'वित्तीय विवरण (वार्षिक)';
@@ -548,7 +567,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get labelOperatingCashFlow => 'सञ्चालन नगद प्रवाह';
 
   @override
-  String get statementsUnavailable => 'यो शेयरका लागि प्रकाशित वित्तीय विवरण उपलब्ध छैनन्।';
+  String get statementsUnavailable =>
+      'यो शेयरका लागि प्रकाशित वित्तीय विवरण उपलब्ध छैनन्।';
 
   @override
   String get launchAtLogin => 'लगइन हुँदा सुरु गर्नुहोस्';
@@ -557,7 +577,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get hotkeyLabel => 'ग्लोबल सर्टकट';
 
   @override
-  String get hotkeyRecordHint => 'यहाँ क्लिक गर्नुहोस्, त्यसपछि नयाँ कुञ्जी संयोजन थिच्नुहोस्';
+  String get hotkeyRecordHint =>
+      'यहाँ क्लिक गर्नुहोस्, त्यसपछि नयाँ कुञ्जी संयोजन थिच्नुहोस्';
 
   @override
   String get hotkeyReset => 'पूर्वनिर्धारितमा फर्काउनुहोस्';
@@ -578,7 +599,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get removeFromFavorites => 'मनपर्नेबाट हटाउनुहोस्';
 
   @override
-  String get noFavorites => 'अहिलेसम्म कुनै मनपर्ने छैन। थप्न कुनै शेयरको तारा ट्याप गर्नुहोस्।';
+  String get noFavorites =>
+      'अहिलेसम्म कुनै मनपर्ने छैन। थप्न कुनै शेयरको तारा ट्याप गर्नुहोस्।';
 
   @override
   String get displayCurrency => 'देखाउने मुद्रा';
@@ -625,7 +647,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get updateDownloading => 'अपडेट पृष्ठभूमिमा डाउनलोड हुँदै…';
 
   @override
-  String get updateDownloaded => 'अपडेट तयार छ। इन्स्टल गर्न रिस्टार्ट गर्नुहोस्।';
+  String get updateDownloaded =>
+      'अपडेट तयार छ। इन्स्टल गर्न रिस्टार्ट गर्नुहोस्।';
 
   @override
   String get updateNow => 'अपडेट गर्नुहोस्';
@@ -634,7 +657,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get restartNow => 'रिस्टार्ट गर्नुहोस्';
 
   @override
-  String get updatesViaStore => 'अपडेटहरू एप स्टोरमार्फत स्वचालित रूपमा आउँछन्।';
+  String get updatesViaStore =>
+      'अपडेटहरू एप स्टोरमार्फत स्वचालित रूपमा आउँछन्।';
 
   @override
   String get updateCheckFailed => 'अपडेट जाँच गर्न सकिएन।';
@@ -682,7 +706,8 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'तपाईंको निःशुल्क परीक्षण सकियो। विश्लेषण जारी राख्न कुनै योजना छान्नुहोस्।';
+  String get trialExpired =>
+      'तपाईंको निःशुल्क परीक्षण सकियो। विश्लेषण जारी राख्न कुनै योजना छान्नुहोस्।';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -748,7 +773,8 @@ class AppLocalizationsNe extends AppLocalizations {
       'यस अवधिका लागि तपाईंसँग कुनै विश्लेषण बाँकी छैन। आफ्नो योजना अपग्रेड गर्नुहोस् वा अतिरिक्त विश्लेषण किन्नुहोस्।';
 
   @override
-  String get errTrialExpired => 'तपाईंको निःशुल्क परीक्षण सकियो। जारी राख्न कुनै योजना छान्नुहोस्।';
+  String get errTrialExpired =>
+      'तपाईंको निःशुल्क परीक्षण सकियो। जारी राख्न कुनै योजना छान्नुहोस्।';
 
   @override
   String get errNoPlan => 'AI विश्लेषणका लागि सक्रिय योजना चाहिन्छ।';
@@ -760,7 +786,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get usageTitle => 'प्रयोग';
 
   @override
-  String get demoPurchaseNote => 'डेमो बिलिङ: यो प्लेटफर्ममा खरिद सिमुलेट गरिन्छ।';
+  String get demoPurchaseNote =>
+      'डेमो बिलिङ: यो प्लेटफर्ममा खरिद सिमुलेट गरिन्छ।';
 
   @override
   String get mostPopular => 'सबैभन्दा लोकप्रिय';
@@ -800,7 +827,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get aiDepthStandardDesc => 'सबै खण्डसहितको पूर्ण रिपोर्ट।';
 
   @override
-  String get aiDepthDeepDesc => 'थप वेब खोज, समकक्षी कम्पनीसँग तुलना र गहिरो विवरण।';
+  String get aiDepthDeepDesc =>
+      'थप वेब खोज, समकक्षी कम्पनीसँग तुलना र गहिरो विवरण।';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,7 +856,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get aiReaderExperienced => 'अनुभवी';
 
   @override
-  String get aiReaderBeginnerDesc => 'सरल भाषा; हरेक प्राविधिक शब्दको व्याख्या गरिन्छ।';
+  String get aiReaderBeginnerDesc =>
+      'सरल भाषा; हरेक प्राविधिक शब्दको व्याख्या गरिन्छ।';
 
   @override
   String get aiReaderExperiencedDesc => 'मानक वित्तीय शब्दावलीसहित सघन पाठ।';
@@ -837,7 +866,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get aiCounterArgument => 'सबैभन्दा बलियो प्रतितर्क';
 
   @override
-  String get aiCounterArgumentDesc => 'सारांश सधैं आफ्नै निष्कर्षविरुद्धको सबैभन्दा बलियो तर्कसँग टुङ्गिन्छ।';
+  String get aiCounterArgumentDesc =>
+      'सारांश सधैं आफ्नै निष्कर्षविरुद्धको सबैभन्दा बलियो तर्कसँग टुङ्गिन्छ।';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +960,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get upcomingEvents => 'आगामी घटनाहरू';
 
   @override
-  String get outlookChartNote => 'सांकेतिक दायरा; सम्भावनाहरू मोटामोटी अनुमान हुन्, भविष्यवाणी होइनन्।';
+  String get outlookChartNote =>
+      'सांकेतिक दायरा; सम्भावनाहरू मोटामोटी अनुमान हुन्, भविष्यवाणी होइनन्।';
 
   @override
   String get accountTitle => 'खाता';
@@ -945,10 +976,12 @@ class AppLocalizationsNe extends AppLocalizations {
   String get notSignedIn => 'साइन इन गरिएको छैन';
 
   @override
-  String get accountBenefit => 'तपाईंको सदस्यता सबै डिभाइसमा चलोस् भन्नका लागि साइन इन गर्नुहोस्।';
+  String get accountBenefit =>
+      'तपाईंको सदस्यता सबै डिभाइसमा चलोस् भन्नका लागि साइन इन गर्नुहोस्।';
 
   @override
-  String get accountSyncedNote => 'तपाईंको सदस्यता र बाँकी विश्लेषण हरेक डिभाइसमा उस्तै हुन्छन्।';
+  String get accountSyncedNote =>
+      'तपाईंको सदस्यता र बाँकी विश्लेषण हरेक डिभाइसमा उस्तै हुन्छन्।';
 
   @override
   String get signInTitle => 'WhatStock मा साइन इन गर्नुहोस्';
@@ -980,13 +1013,16 @@ class AppLocalizationsNe extends AppLocalizations {
   String get errInvalidEmail => 'कृपया मान्य इमेल ठेगाना प्रविष्ट गर्नुहोस्।';
 
   @override
-  String get errSignInFailed => 'साइन इन असफल भयो। आफ्नो जडान जाँचेर फेरि प्रयास गर्नुहोस्।';
+  String get errSignInFailed =>
+      'साइन इन असफल भयो। आफ्नो जडान जाँचेर फेरि प्रयास गर्नुहोस्।';
 
   @override
-  String get checkoutWaiting => 'आफ्नो ब्राउजरमा भुक्तानी पूरा गर्नुहोस्। भुक्तानी सकिएपछि एप आफैं अपडेट हुन्छ।';
+  String get checkoutWaiting =>
+      'आफ्नो ब्राउजरमा भुक्तानी पूरा गर्नुहोस्। भुक्तानी सकिएपछि एप आफैं अपडेट हुन्छ।';
 
   @override
-  String get paymentViaStripe => 'Stripe मार्फत ब्राउजरमै सुरक्षित भुक्तानी। जुनसुकै बेला रद्द गर्न सकिन्छ।';
+  String get paymentViaStripe =>
+      'Stripe मार्फत ब्राउजरमै सुरक्षित भुक्तानी। जुनसुकै बेला रद्द गर्न सकिन्छ।';
 
   @override
   String get paymentViaStore =>
@@ -999,7 +1035,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get doubleOptionTitle => 'Option दुई पटक थिच्नुहोस्';
 
   @override
-  String get doubleOptionSubtitle => 'Option कुञ्जी छिटो-छिटो दुई पटक थिच्दा पनि WhatStock खुल्छ।';
+  String get doubleOptionSubtitle =>
+      'Option कुञ्जी छिटो-छिटो दुई पटक थिच्दा पनि WhatStock खुल्छ।';
 
   @override
   String get doubleOptionPermission =>
@@ -1021,7 +1058,12 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years वर्ष', one: '1 वर्ष');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years वर्ष',
+      one: '1 वर्ष',
+    );
     return '$_temp0';
   }
 
@@ -1082,7 +1124,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioAdd => 'थप्नुहोस्';
 
   @override
-  String get portfolioInvalidNumber => 'शून्यभन्दा ठूलो संख्या प्रविष्ट गर्नुहोस्।';
+  String get portfolioInvalidNumber =>
+      'शून्यभन्दा ठूलो संख्या प्रविष्ट गर्नुहोस्।';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1122,7 +1165,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioRemove => 'हटाउनुहोस्';
 
   @override
-  String get portfolioExcluded => 'मूल्य वा विनिमय दर नभएका पोजिसनहरू कुल योगमा समावेश गरिएका छैनन्।';
+  String get portfolioExcluded =>
+      'मूल्य वा विनिमय दर नभएका पोजिसनहरू कुल योगमा समावेश गरिएका छैनन्।';
 
   @override
   String get priceAlerts => 'मूल्य अलर्ट';
@@ -1164,7 +1208,8 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'अहिलेसम्म कुनै मूल्य अलर्ट छैन। अलर्ट सेट गर्न कुनै शेयर खोलेर घण्टी ट्याप गर्नुहोस्।';
+  String get alertsEmpty =>
+      'अहिलेसम्म कुनै मूल्य अलर्ट छैन। अलर्ट सेट गर्न कुनै शेयर खोलेर घण्टी ट्याप गर्नुहोस्।';
 
   @override
   String get alertsNote =>
@@ -1223,7 +1268,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get keepInTrayTitle => 'विन्डो बन्द गर्दा पनि चलिरहोस्';
 
   @override
-  String get keepInTraySubtitle => 'WhatStock मेनु बार वा ट्रेमा रहन्छ, त्यसैले सर्टकट र मूल्य अलर्टहरू चलिरहन्छन्।';
+  String get keepInTraySubtitle =>
+      'WhatStock मेनु बार वा ट्रेमा रहन्छ, त्यसैले सर्टकट र मूल्य अलर्टहरू चलिरहन्छन्।';
 
   @override
   String get termsOfUse => 'प्रयोगका सर्तहरू';
@@ -1256,7 +1302,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get accountDeleted => 'तपाईंको खाता मेटाइयो।';
 
   @override
-  String get errDeleteAccount => 'खाता मेटाउन सकिएन। आफ्नो जडान जाँचेर फेरि प्रयास गर्नुहोस्।';
+  String get errDeleteAccount =>
+      'खाता मेटाउन सकिएन। आफ्नो जडान जाँचेर फेरि प्रयास गर्नुहोस्।';
 
   @override
   String get aiTrialBriefNote =>
@@ -1282,4 +1329,10 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'तपाईंले रद्द नगरेसम्म वार्षिक सदस्यता हरेक वर्ष स्वतः नवीकरण हुन्छ। सदस्यता लिएर तपाईं प्रयोगका सर्तहरू र गोपनीयता नीति स्वीकार गर्नुहुन्छ।';
+
+  @override
+  String get myAnalyses => 'मेरा विश्लेषणहरू';
+
+  @override
+  String get navAlerts => 'अलर्ट';
 }

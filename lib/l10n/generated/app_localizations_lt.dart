@@ -13,7 +13,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
+  String get homeTagline =>
+      'Nufotografuokite akciją ir sužinokite apie ją viską.';
 
   @override
   String get homeHint =>
@@ -345,7 +346,8 @@ class AppLocalizationsLt extends AppLocalizations {
       'Vaizdų atpažinimas nesukonfigūruotas (nėra ANTHROPIC_API_KEY). Įveskite simbolį rankiniu būdu.';
 
   @override
-  String get errRecognitionUnreachable => 'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
+  String get errRecognitionUnreachable =>
+      'Nepavyko pasiekti atpažinimo paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -353,25 +355,32 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
+  String get errRecognitionRefused =>
+      'Atpažinimo paslauga negalėjo apdoroti šio vaizdo.';
 
   @override
-  String get errRecognitionTruncated => 'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
+  String get errRecognitionTruncated =>
+      'Atpažinimo paslaugos atsakymas buvo nutrauktas. Bandykite dar kartą.';
 
   @override
-  String get errRecognitionBadResponse => 'Netikėtas atpažinimo paslaugos atsakymas.';
+  String get errRecognitionBadResponse =>
+      'Netikėtas atpažinimo paslaugos atsakymas.';
 
   @override
-  String get errRecognitionEmpty => 'Atpažinimo paslauga grąžino tuščią atsakymą.';
+  String get errRecognitionEmpty =>
+      'Atpažinimo paslauga grąžino tuščią atsakymą.';
 
   @override
-  String get errMissingFinnhubKey => 'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Rinkos duomenys nesukonfigūruoti (nėra FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
+  String get errMarketUnreachable =>
+      'Nepavyko pasiekti rinkos duomenų paslaugos. Patikrinkite interneto ryšį.';
 
   @override
-  String get errMarketRateLimited => 'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
+  String get errMarketRateLimited =>
+      'Per daug užklausų rinkos duomenų paslaugai. Palaukite minutę.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +388,8 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Netikėtas rinkos duomenų paslaugos atsakymas.';
+  String get errMarketBadResponse =>
+      'Netikėtas rinkos duomenų paslaugos atsakymas.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +489,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get aiRegenerate => 'Sukurti iš naujo';
 
   @override
-  String get aiGenerating => 'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
+  String get aiGenerating =>
+      'Rengiama analizė… tai gali užtrukti minutę ar dvi.';
 
   @override
   String get aiSources => 'Šaltiniai';
@@ -494,10 +505,12 @@ class AppLocalizationsLt extends AppLocalizations {
       'DI sukurta analizė, pagrįsta viešais duomenimis ir naujausiomis naujienomis. Joje gali būti klaidų arba ji gali būti pasenusi, ir tai nėra investavimo rekomendacija.';
 
   @override
-  String get errAiNotConfigured => 'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'DI analizė nesukonfigūruota (nėra ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
+  String get errAiUnreachable =>
+      'Nepavyko pasiekti DI paslaugos. Patikrinkite interneto ryšį.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +542,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get rangeFiveYears => '5 m.';
 
   @override
-  String get chartUnavailable => 'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
+  String get chartUnavailable =>
+      'Kainų istorija dabartiniame duomenų šaltinyje neprieinama.';
 
   @override
   String get sectionStatements => 'Finansinės ataskaitos (metinės)';
@@ -556,7 +570,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Pagrindinės veiklos pinigų srautas';
 
   @override
-  String get statementsUnavailable => 'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
+  String get statementsUnavailable =>
+      'Šios akcijos pateiktos finansinės ataskaitos neprieinamos.';
 
   @override
   String get launchAtLogin => 'Paleisti prisijungus';
@@ -565,7 +580,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get hotkeyLabel => 'Visuotinis spartusis klavišas';
 
   @override
-  String get hotkeyRecordHint => 'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
+  String get hotkeyRecordHint =>
+      'Spustelėkite čia ir paspauskite naują klavišų kombinaciją';
 
   @override
   String get hotkeyReset => 'Atkurti numatytąjį';
@@ -586,7 +602,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get removeFromFavorites => 'Pašalinti iš mėgstamiausių';
 
   @override
-  String get noFavorites => 'Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.';
+  String get noFavorites =>
+      'Mėgstamiausių dar nėra. Bakstelėkite akcijos žvaigždutę, kad ją pridėtumėte.';
 
   @override
   String get displayCurrency => 'Rodymo valiuta';
@@ -633,7 +650,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get updateDownloading => 'Naujinimas atsisiunčiamas fone…';
 
   @override
-  String get updateDownloaded => 'Naujinimas paruoštas. Paleiskite programą iš naujo, kad jį įdiegtumėte.';
+  String get updateDownloaded =>
+      'Naujinimas paruoštas. Paleiskite programą iš naujo, kad jį įdiegtumėte.';
 
   @override
   String get updateNow => 'Naujinti';
@@ -642,7 +660,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get restartNow => 'Paleisti iš naujo';
 
   @override
-  String get updatesViaStore => 'Naujinimai gaunami automatiškai per programėlių parduotuvę.';
+  String get updatesViaStore =>
+      'Naujinimai gaunami automatiškai per programėlių parduotuvę.';
 
   @override
   String get updateCheckFailed => 'Nepavyko patikrinti, ar yra naujinimų.';
@@ -750,7 +769,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get extraPacksTitle => 'Reikia daugiau? Įsigykite papildomų analizių';
 
   @override
-  String get extraPacksHint => 'Papildomos analizės niekada nenustoja galioti ir naudojamos išnaudojus mėnesio limitą.';
+  String get extraPacksHint =>
+      'Papildomos analizės niekada nenustoja galioti ir naudojamos išnaudojus mėnesio limitą.';
 
   @override
   String get buy => 'Pirkti';
@@ -795,7 +815,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get usageTitle => 'Naudojimas';
 
   @override
-  String get demoPurchaseNote => 'Demonstracinis atsiskaitymas: šioje platformoje pirkiniai yra imituojami.';
+  String get demoPurchaseNote =>
+      'Demonstracinis atsiskaitymas: šioje platformoje pirkiniai yra imituojami.';
 
   @override
   String get mostPopular => 'Populiariausias';
@@ -835,7 +856,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get aiDepthStandardDesc => 'Visa ataskaita su visomis dalimis.';
 
   @override
-  String get aiDepthDeepDesc => 'Daugiau paieškų internete, palyginimas su konkurentais ir išsamesnė analizė.';
+  String get aiDepthDeepDesc =>
+      'Daugiau paieškų internete, palyginimas su konkurentais ir išsamesnė analizė.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -865,16 +887,19 @@ class AppLocalizationsLt extends AppLocalizations {
   String get aiReaderExperienced => 'Patyręs';
 
   @override
-  String get aiReaderBeginnerDesc => 'Paprasta kalba; kiekvienas techninis terminas paaiškinamas.';
+  String get aiReaderBeginnerDesc =>
+      'Paprasta kalba; kiekvienas techninis terminas paaiškinamas.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Glaustesnis tekstas su įprasta finansų terminija.';
+  String get aiReaderExperiencedDesc =>
+      'Glaustesnis tekstas su įprasta finansų terminija.';
 
   @override
   String get aiCounterArgument => 'Stipriausias kontrargumentas';
 
   @override
-  String get aiCounterArgumentDesc => 'Santrauka visada baigiama stipriausiu argumentu prieš jos pačios išvadą.';
+  String get aiCounterArgumentDesc =>
+      'Santrauka visada baigiama stipriausiu argumentu prieš jos pačios išvadą.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -973,7 +998,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get upcomingEvents => 'Artėjantys įvykiai';
 
   @override
-  String get outlookChartNote => 'Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės.';
+  String get outlookChartNote =>
+      'Orientaciniai intervalai; tikimybės yra apytikslis vertinimas, o ne prognozės.';
 
   @override
   String get accountTitle => 'Paskyra';
@@ -988,10 +1014,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get notSignedIn => 'Neprisijungta';
 
   @override
-  String get accountBenefit => 'Prisijunkite, kad jūsų prenumerata veiktų visuose jūsų įrenginiuose.';
+  String get accountBenefit =>
+      'Prisijunkite, kad jūsų prenumerata veiktų visuose jūsų įrenginiuose.';
 
   @override
-  String get accountSyncedNote => 'Jūsų prenumerata ir likusios analizės yra vienodos kiekviename įrenginyje.';
+  String get accountSyncedNote =>
+      'Jūsų prenumerata ir likusios analizės yra vienodos kiekviename įrenginyje.';
 
   @override
   String get signInTitle => 'Prisijunkite prie WhatStock';
@@ -1023,14 +1051,16 @@ class AppLocalizationsLt extends AppLocalizations {
   String get errInvalidEmail => 'Įveskite galiojantį el. pašto adresą.';
 
   @override
-  String get errSignInFailed => 'Prisijungti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
+  String get errSignInFailed =>
+      'Prisijungti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
 
   @override
   String get checkoutWaiting =>
       'Užbaikite mokėjimą naršyklėje. Programa atsinaujins automatiškai, kai tai bus padaryta.';
 
   @override
-  String get paymentViaStripe => 'Saugus mokėjimas naršyklėje per Stripe. Atšaukti galite bet kada.';
+  String get paymentViaStripe =>
+      'Saugus mokėjimas naršyklėje per Stripe. Atšaukti galite bet kada.';
 
   @override
   String get paymentViaStore =>
@@ -1043,7 +1073,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get doubleOptionTitle => 'Dukart paspausti Option';
 
   @override
-  String get doubleOptionSubtitle => 'WhatStock taip pat iškviesite greitai dukart paspaudę klavišą Option.';
+  String get doubleOptionSubtitle =>
+      'WhatStock taip pat iškviesite greitai dukart paspaudę klavišą Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1173,7 +1204,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get portfolioRemove => 'Pašalinti';
 
   @override
-  String get portfolioExcluded => 'Pozicijos be kainos ar valiutos kurso į sumas neįtraukiamos.';
+  String get portfolioExcluded =>
+      'Pozicijos be kainos ar valiutos kurso į sumas neįtraukiamos.';
 
   @override
   String get priceAlerts => 'Kainos įspėjimai';
@@ -1215,7 +1247,8 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Įspėjimų dar nėra. Atidarykite akciją ir bakstelėkite varpelį.';
+  String get alertsEmpty =>
+      'Įspėjimų dar nėra. Atidarykite akciją ir bakstelėkite varpelį.';
 
   @override
   String get alertsNote =>
@@ -1308,7 +1341,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get accountDeleted => 'Jūsų paskyra ištrinta.';
 
   @override
-  String get errDeleteAccount => 'Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
+  String get errDeleteAccount =>
+      'Paskyros ištrinti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1334,4 +1368,10 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Metinė prenumerata kasmet automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika.';
+
+  @override
+  String get myAnalyses => 'Mano analizės';
+
+  @override
+  String get navAlerts => 'Įspėjimai';
 }

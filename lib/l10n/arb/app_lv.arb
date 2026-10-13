@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 mēneši bez maksas",
   "perYear": "/ gadā",
   "pricePerMonthApprox": "≈ {price} mēnesī",
-  "subscriptionLegalYearly": "Gada abonements tiek automātiski atjaunots katru gadu, līdz to atceļat. Abonējot jūs piekrītat Lietošanas noteikumiem un Privātuma politikai."
+  "subscriptionLegalYearly": "Gada abonements tiek automātiski atjaunots katru gadu, līdz to atceļat. Abonējot jūs piekrītat Lietošanas noteikumiem un Privātuma politikai.",
+  "myAnalyses": "Manas analīzes",
+  "navAlerts": "Brīdinājumi"
 }

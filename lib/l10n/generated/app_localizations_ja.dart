@@ -54,7 +54,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noCandidatesTitle => '銘柄を認識できませんでした';
 
   @override
-  String get noCandidatesBody => 'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
+  String get noCandidatesBody =>
+      'この画像から銘柄を特定できませんでした。より鮮明な写真を試すか、ティッカーを手動で入力してください。';
 
   @override
   String get whatWeSaw => '認識した内容';
@@ -80,7 +81,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about => 'このアプリについて';
 
   @override
-  String get disclaimer => 'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
+  String get disclaimer =>
+      'このアプリは情報提供のみを目的としており、投資助言ではありません。データは遅延または不正確な場合があります。';
 
   @override
   String dataSource(String source) {
@@ -303,7 +305,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'アナリスト$count名', one: 'アナリスト1名');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'アナリスト$count名',
+      one: 'アナリスト1名',
+    );
     return '$_temp0';
   }
 
@@ -331,10 +338,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recognitionRawText => '画像から読み取ったテキスト';
 
   @override
-  String get errMissingAnthropicKey => '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
+  String get errMissingAnthropicKey =>
+      '画像認識が設定されていません（ANTHROPIC_API_KEY がありません）。ティッカーを手動で入力してください。';
 
   @override
-  String get errRecognitionUnreachable => '認識サービスに接続できませんでした。インターネット接続を確認してください。';
+  String get errRecognitionUnreachable =>
+      '認識サービスに接続できませんでした。インターネット接続を確認してください。';
 
   @override
   String errRecognitionHttp(String status) {
@@ -458,7 +467,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro => 'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、心理・社会・テクニカル・マクロの観点からのシナリオを含む株価見通し、注目ポイント。';
+  String get aiIntro =>
+      'AI が作成した詳細な概要：最近のニュースの要約、事業内容、強み、リスクと隠れた要因、バリュエーション、心理・社会・テクニカル・マクロの観点からのシナリオを含む株価見通し、注目ポイント。';
 
   @override
   String get aiGenerate => '分析を生成';
@@ -478,7 +488,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer => '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
+  String get aiDisclaimer =>
+      '公開データと最近のニュースに基づいて AI が生成した分析です。誤りや古い情報が含まれる場合があり、投資助言ではありません。';
 
   @override
   String get errAiNotConfigured => 'AI 分析が設定されていません（ANTHROPIC_API_KEY がありません）。';
@@ -667,7 +678,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'トライアル残り $days 日', one: 'トライアル残り 1 日');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'トライアル残り $days 日',
+      one: 'トライアル残り 1 日',
+    );
     return '$_temp0';
   }
 
@@ -729,10 +745,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get purchaseCanceled => '購入がキャンセルされました。';
 
   @override
-  String get billingUnavailable => 'このプラットフォームではまだ購入できません。スマートフォンまたは Mac で登録すると、プランはすべてのデバイスで利用できます。';
+  String get billingUnavailable =>
+      'このプラットフォームではまだ購入できません。スマートフォンまたは Mac で登録すると、プランはすべてのデバイスで利用できます。';
 
   @override
-  String get errQuotaExceeded => '今期の分析回数を使い切りました。プランをアップグレードするか、追加分析を購入してください。';
+  String get errQuotaExceeded =>
+      '今期の分析回数を使い切りました。プランをアップグレードするか、追加分析を購入してください。';
 
   @override
   String get errTrialExpired => '無料トライアルが終了しました。続けるにはプランを選択してください。';
@@ -756,7 +774,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get bestValue => '最もお得';
 
   @override
-  String get planFeaturesCommon => '写真認識、ライブデータ、チャート、お気に入り、120 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
+  String get planFeaturesCommon =>
+      '写真認識、ライブデータ、チャート、お気に入り、120 言語すべてはどのプランにも含まれます。割り当ては AI 分析に適用されます。';
 
   @override
   String get searchLanguages => '言語を検索…';
@@ -795,7 +814,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 $count 回分を使用');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '分析 $count 回分を使用',
+    );
     return '$_temp0';
   }
 
@@ -822,7 +845,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ご利用のプランでは分析 1 回につき最大 $count 回のウェブ検索');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ご利用のプランでは分析 1 回につき最大 $count 回のウェブ検索',
+    );
     return '$_temp0';
   }
 
@@ -833,13 +860,21 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最大 $count 回のウェブ検索');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '最大 $count 回のウェブ検索',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '分析 1 回につきウェブ検索 $count 回');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '分析 1 回につきウェブ検索 $count 回',
+    );
     return '$_temp0';
   }
 
@@ -955,7 +990,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get paymentViaStripe => 'Stripe を通じてブラウザで安全にお支払いいただけます。いつでも解約できます。';
 
   @override
-  String get paymentViaStore => 'App Store または Google Play のアカウントで請求されます。ストアの設定からいつでも解約できます。';
+  String get paymentViaStore =>
+      'App Store または Google Play のアカウントで請求されます。ストアの設定からいつでも解約できます。';
 
   @override
   String get keySpace => 'スペース';
@@ -986,7 +1022,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years年',
+    );
     return '$_temp0';
   }
 
@@ -1010,16 +1050,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get confidenceHigh => '確度：高';
 
   @override
-  String get longTermNote => '長期の価格帯は示した前提に基づき、期間が長いほど広がります。価格は配当を含みません。大まかな見立てであり、予測ではありません。';
+  String get longTermNote =>
+      '長期の価格帯は示した前提に基づき、期間が長いほど広がります。価格は配当を含みません。大まかな見立てであり、予測ではありません。';
 
   @override
   String get portfolio => 'ポートフォリオ';
 
   @override
-  String get portfolioEmpty => 'まだ何もありません。銘柄を開いて「ポートフォリオに追加」をタップすると、保有銘柄を管理できます。';
+  String get portfolioEmpty =>
+      'まだ何もありません。銘柄を開いて「ポートフォリオに追加」をタップすると、保有銘柄を管理できます。';
 
   @override
-  String get portfolioLocalNote => 'この端末にのみ保存されます。合計はECBの参照レートで換算され、株価は遅延している場合があります。';
+  String get portfolioLocalNote =>
+      'この端末にのみ保存されます。合計はECBの参照レートで換算され、株価は遅延している場合があります。';
 
   @override
   String get addToPortfolio => 'ポートフォリオに追加';
@@ -1185,7 +1228,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get keepInTrayTitle => 'ウィンドウを閉じても実行を続ける';
 
   @override
-  String get keepInTraySubtitle => 'WhatStockはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
+  String get keepInTraySubtitle =>
+      'WhatStockはメニューバーまたはタスクトレイに残り、ショートカットと価格アラートが引き続き機能します。';
 
   @override
   String get termsOfUse => '利用規約';
@@ -1194,7 +1238,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get privacyPolicy => 'プライバシーポリシー';
 
   @override
-  String get subscriptionLegal => 'サブスクリプションは解約するまで毎月自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
+  String get subscriptionLegal =>
+      'サブスクリプションは解約するまで毎月自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
 
   @override
   String get deleteAccount => 'アカウントを削除';
@@ -1219,7 +1264,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errDeleteAccount => 'アカウントを削除できませんでした。接続を確認してもう一度お試しください。';
 
   @override
-  String get aiTrialBriefNote => 'トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。';
+  String get aiTrialBriefNote =>
+      'トライアルの分析は簡潔で、より高速な AI モデルで作成されます。プランでは最も高性能な AI、より多くのウェブ検索、標準・詳細の長さをご利用いただけます。';
 
   @override
   String get billingMonthly => '月払い';
@@ -1239,5 +1285,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get subscriptionLegalYearly => '年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
+  String get subscriptionLegalYearly =>
+      '年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。';
+
+  @override
+  String get myAnalyses => '自分の分析';
+
+  @override
+  String get navAlerts => 'アラート';
 }

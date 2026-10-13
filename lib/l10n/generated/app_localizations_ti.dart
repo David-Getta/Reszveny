@@ -16,7 +16,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get homeTagline => 'ናይ ሓደ ኣክሲዮን ስእሊ ኣልዕሉ፣ ብዛዕባኡ ድማ ኩሉ ፍለጡ።';
 
   @override
-  String get homeHint => 'ሰርቲፊኬት ኣክሲዮን፣ ስክሪን ኣፕ ደላላይ፣ ጋዜጣ ወይ ኣርማ ኩባንያ – ንኣክሲዮን ዘለሊ ዝኾነ ነገር።';
+  String get homeHint =>
+      'ሰርቲፊኬት ኣክሲዮን፣ ስክሪን ኣፕ ደላላይ፣ ጋዜጣ ወይ ኣርማ ኩባንያ – ንኣክሲዮን ዘለሊ ዝኾነ ነገር።';
 
   @override
   String get takePhoto => 'ስእሊ ኣልዕል';
@@ -54,7 +55,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get noCandidatesTitle => 'ዝተለለየ ኣክሲዮን የለን';
 
   @override
-  String get noCandidatesBody => 'ኣብዚ ስእሊ ኣክሲዮን ክንልልይ ኣይከኣልናን። ዝያዳ ንጹር ስእሊ ፈትኑ፣ ወይ ምልክት ብኢድ ኣእትዉ።';
+  String get noCandidatesBody =>
+      'ኣብዚ ስእሊ ኣክሲዮን ክንልልይ ኣይከኣልናን። ዝያዳ ንጹር ስእሊ ፈትኑ፣ ወይ ምልክት ብኢድ ኣእትዉ።';
 
   @override
   String get whatWeSaw => 'ዝረኣናዮ';
@@ -80,7 +82,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get about => 'ብዛዕባ';
 
   @override
-  String get disclaimer => 'እዚ ኣፕ ሓበሬታ ጥራይ ይህብ፣ ምኽሪ ወፍሪ ኣይኮነን። ሓበሬታ ክደናጎ ወይ ጌጋ ክኸውን ይኽእል።';
+  String get disclaimer =>
+      'እዚ ኣፕ ሓበሬታ ጥራይ ይህብ፣ ምኽሪ ወፍሪ ኣይኮነን። ሓበሬታ ክደናጎ ወይ ጌጋ ክኸውን ይኽእል።';
 
   @override
   String dataSource(String source) {
@@ -303,7 +306,12 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ተንተንቲ', one: '1 ተንታኒ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተንተንቲ',
+      one: '1 ተንታኒ',
+    );
     return '$_temp0';
   }
 
@@ -331,10 +339,12 @@ class AppLocalizationsTi extends AppLocalizations {
   String get recognitionRawText => 'ካብ ስእሊ ዝተነበ ጽሑፍ';
 
   @override
-  String get errMissingAnthropicKey => 'ምልላይ ስእሊ ኣይተዳለወን (ANTHROPIC_API_KEY የለን)። ምልክት ብኢድ ኣእትዉ።';
+  String get errMissingAnthropicKey =>
+      'ምልላይ ስእሊ ኣይተዳለወን (ANTHROPIC_API_KEY የለን)። ምልክት ብኢድ ኣእትዉ።';
 
   @override
-  String get errRecognitionUnreachable => 'ኣገልግሎት ምልላይ ክብጻሕ ኣይከኣለን። ርክብ ኢንተርነትኩም ኣረጋግጹ።';
+  String get errRecognitionUnreachable =>
+      'ኣገልግሎት ምልላይ ክብጻሕ ኣይከኣለን። ርክብ ኢንተርነትኩም ኣረጋግጹ።';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,10 +367,12 @@ class AppLocalizationsTi extends AppLocalizations {
   String get errMissingFinnhubKey => 'ሓበሬታ ዕዳጋ ኣይተዳለወን (FINNHUB_API_KEY የለን)።';
 
   @override
-  String get errMarketUnreachable => 'ኣገልግሎት ሓበሬታ ዕዳጋ ክብጻሕ ኣይከኣለን። ርክብ ኢንተርነትኩም ኣረጋግጹ።';
+  String get errMarketUnreachable =>
+      'ኣገልግሎት ሓበሬታ ዕዳጋ ክብጻሕ ኣይከኣለን። ርክብ ኢንተርነትኩም ኣረጋግጹ።';
 
   @override
-  String get errMarketRateLimited => 'ናብ ኣገልግሎት ሓበሬታ ዕዳጋ ኣዝዮም ብዙሓት ሕቶታት ተላኢኾም። በጃኹም ሓንቲ ደቒቕ ተጸበዩ።';
+  String get errMarketRateLimited =>
+      'ናብ ኣገልግሎት ሓበሬታ ዕዳጋ ኣዝዮም ብዙሓት ሕቶታት ተላኢኾም። በጃኹም ሓንቲ ደቒቕ ተጸበዩ።';
 
   @override
   String errMarketHttp(String status) {
@@ -712,7 +724,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get extraPacksTitle => 'ተወሳኺ ትደልዩ? ተወሳኺ ትንተናታት ግዝኡ';
 
   @override
-  String get extraPacksHint => 'ተወሳኺ ትንተናታት ግዜኦም ኣይሓልፍን፣ ወርሓዊ ብጽሒትኩም ምስ ተወድአ ድማ ኣብ ጥቕሚ ይውዕሉ።';
+  String get extraPacksHint =>
+      'ተወሳኺ ትንተናታት ግዜኦም ኣይሓልፍን፣ ወርሓዊ ብጽሒትኩም ምስ ተወድአ ድማ ኣብ ጥቕሚ ይውዕሉ።';
 
   @override
   String get buy => 'ግዛእ';
@@ -736,10 +749,12 @@ class AppLocalizationsTi extends AppLocalizations {
   String get purchaseCanceled => 'ዕድጊ ተሰሪዙ።';
 
   @override
-  String get billingUnavailable => 'ኣብዚ መድረኽ ዕድግታት ገና ኣይርከቡን። ብተሌፎንኩም ወይ ብMac ተመዝገቡ፣ መደብኩም ኣብ ኩሉ መሳርሒ ክሰርሕ እዩ።';
+  String get billingUnavailable =>
+      'ኣብዚ መድረኽ ዕድግታት ገና ኣይርከቡን። ብተሌፎንኩም ወይ ብMac ተመዝገቡ፣ መደብኩም ኣብ ኩሉ መሳርሒ ክሰርሕ እዩ።';
 
   @override
-  String get errQuotaExceeded => 'ነዚ እዋን ዝተረፈኩም ትንተና የለን። መደብኩም ኣመሓይሹ ወይ ተወሳኺ ትንተናታት ግዝኡ።';
+  String get errQuotaExceeded =>
+      'ነዚ እዋን ዝተረፈኩም ትንተና የለን። መደብኩም ኣመሓይሹ ወይ ተወሳኺ ትንተናታት ግዝኡ።';
 
   @override
   String get errTrialExpired => 'ነጻ ፈተነኹም ተወዲኡ። ንምቕጻል መደብ ምረጹ።';
@@ -803,7 +818,12 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ትንተናታት ይጥቀም', one: '1 ትንተና ይጥቀም');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ትንተናታት ይጥቀም',
+      one: '1 ትንተና ይጥቀም',
+    );
     return '$_temp0';
   }
 
@@ -826,7 +846,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get aiCounterArgument => 'እቲ ዝበርትዐ ተቓዋሚ መጎተ';
 
   @override
-  String get aiCounterArgumentDesc => 'እቲ ጽማቝ ኩሉ ግዜ ኣንጻር ናይ ገዛእ ርእሱ መደምደምታ ብዝበለጸ መጎተ ይዛዘም።';
+  String get aiCounterArgumentDesc =>
+      'እቲ ጽማቝ ኩሉ ግዜ ኣንጻር ናይ ገዛእ ርእሱ መደምደምታ ብዝበለጸ መጎተ ይዛዘም።';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -919,7 +940,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get upcomingEvents => 'ዝመጹ ፍጻመታት';
 
   @override
-  String get outlookChartNote => 'ኣመላኻቲ ክልላት እዮም፤ ተኽእሎታት ግምታዊ ፍርድታት እዮም፣ ትንቢት ኣይኮኑን።';
+  String get outlookChartNote =>
+      'ኣመላኻቲ ክልላት እዮም፤ ተኽእሎታት ግምታዊ ፍርድታት እዮም፣ ትንቢት ኣይኮኑን።';
 
   @override
   String get accountTitle => 'ሕሳብ';
@@ -972,13 +994,16 @@ class AppLocalizationsTi extends AppLocalizations {
   String get errSignInFailed => 'ምእታው ኣይተዓወተን። ርክብኩም ኣረጋግጹ እሞ ዳግማይ ፈትኑ።';
 
   @override
-  String get checkoutWaiting => 'ክፍሊት ኣብ ብራውዘርኩም ፈጽሙ። ምስ ተወድአ እቲ ኣፕ ብኣውቶማቲክ ይሕደስ።';
+  String get checkoutWaiting =>
+      'ክፍሊት ኣብ ብራውዘርኩም ፈጽሙ። ምስ ተወድአ እቲ ኣፕ ብኣውቶማቲክ ይሕደስ።';
 
   @override
-  String get paymentViaStripe => 'ብStripe ኣቢሉ ኣብ ብራውዘርኩም ውሑስ ክፍሊት። ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
+  String get paymentViaStripe =>
+      'ብStripe ኣቢሉ ኣብ ብራውዘርኩም ውሑስ ክፍሊት። ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
 
   @override
-  String get paymentViaStore => 'ብሕሳብ App Store ወይ Google Play ኣቢሉ ይኽፈል። ኣብ ቅጥዕታት መኽዘን ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
+  String get paymentViaStore =>
+      'ብሕሳብ App Store ወይ Google Play ኣቢሉ ይኽፈል። ኣብ ቅጥዕታት መኽዘን ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
 
   @override
   String get keySpace => 'ስፔስ';
@@ -987,7 +1012,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get doubleOptionTitle => 'Option ክልተ ግዜ ጠውቕ';
 
   @override
-  String get doubleOptionSubtitle => 'መፍትሕ Option ብቕልጡፍ ክልተ ግዜ ምጥዋቕ’ውን WhatStock ይጽውዕ።';
+  String get doubleOptionSubtitle =>
+      'መፍትሕ Option ብቕልጡፍ ክልተ ግዜ ምጥዋቕ’ውን WhatStock ይጽውዕ።';
 
   @override
   String get doubleOptionPermission =>
@@ -1009,7 +1035,12 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ዓመታት', one: '1 ዓመት');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ዓመታት',
+      one: '1 ዓመት',
+    );
     return '$_temp0';
   }
 
@@ -1040,10 +1071,12 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolio => 'ፖርትፎሊዮ';
 
   @override
-  String get portfolioEmpty => 'ክሳብ ሕጂ ኣብዚ ገለ የለን። ዘለኩም ንምክትታል ሓደ ኣክሲዮን ክፈቱ እሞ «ናብ ፖርትፎሊዮ ወስኽ» ጠውቑ።';
+  String get portfolioEmpty =>
+      'ክሳብ ሕጂ ኣብዚ ገለ የለን። ዘለኩም ንምክትታል ሓደ ኣክሲዮን ክፈቱ እሞ «ናብ ፖርትፎሊዮ ወስኽ» ጠውቑ።';
 
   @override
-  String get portfolioLocalNote => 'ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ድምራት ብመወከሲ መጠናት ECB ይቕየሩ፤ ዋጋታት ክደናጎዩ ይኽእሉ።';
+  String get portfolioLocalNote =>
+      'ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ድምራት ብመወከሲ መጠናት ECB ይቕየሩ፤ ዋጋታት ክደናጎዩ ይኽእሉ።';
 
   @override
   String get addToPortfolio => 'ናብ ፖርትፎሊዮ ወስኽ';
@@ -1150,7 +1183,8 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'ክሳብ ሕጂ መጠንቀቕታታት ዋጋ የለዉን። ንምድላው ሓደ ኣክሲዮን ክፈቱ እሞ ደወል ጠውቑ።';
+  String get alertsEmpty =>
+      'ክሳብ ሕጂ መጠንቀቕታታት ዋጋ የለዉን። ንምድላው ሓደ ኣክሲዮን ክፈቱ እሞ ደወል ጠውቑ።';
 
   @override
   String get alertsNote =>
@@ -1209,7 +1243,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get keepInTrayTitle => 'መስኮት ምስ ተዓጽወ ምስራሕ ቀጽል';
 
   @override
-  String get keepInTraySubtitle => 'WhatStock ኣብ ባር ሜኑ ወይ ትሬይ ይጸንሕ፣ ስለዚ መሕጸሪ መፍትሕን መጠንቀቕታታት ዋጋን ምስራሕ ይቕጽሉ።';
+  String get keepInTraySubtitle =>
+      'WhatStock ኣብ ባር ሜኑ ወይ ትሬይ ይጸንሕ፣ ስለዚ መሕጸሪ መፍትሕን መጠንቀቕታታት ዋጋን ምስራሕ ይቕጽሉ።';
 
   @override
   String get termsOfUse => 'ውዕል ኣጠቓቕማ';
@@ -1218,7 +1253,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get privacyPolicy => 'ፖሊሲ ብሕትውና';
 
   @override
-  String get subscriptionLegal => 'ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ወርሒ ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።';
+  String get subscriptionLegal =>
+      'ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ወርሒ ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።';
 
   @override
   String get deleteAccount => 'ሕሳብ ሰርዝ';
@@ -1231,7 +1267,8 @@ class AppLocalizationsTi extends AppLocalizations {
       'ሕሳብኩምን ኣብ ሰርቨርና ዝተዓቀበ ኩሉን (ኢመይል፣ ወርሓዊ ብጽሒት፣ ኣጠቓቕማ) ንሓዋሩ ክስረዝ እዩ፣ ዘይተጠቐምኩምሎም ትንተናታት ድማ ክጠፍኡ እዮም። ብብራውዘር ዝተኸፍለ ምዝገባ ብቕጽበት ይስረዝ፤ ምዝገባ App Store ወይ Google Play ግን ኣብ ቅጥዕታት መኽዘን ክስረዝ ኣለዎ።';
 
   @override
-  String get deleteLocalData => 'ኣብዚ መሳርሒ ዘሎ ሓበሬታ’ውን ሰርዝ (ፖርትፎሊዮ፣ መጠንቀቕታታት፣ ዝተፈተዉ፣ ታሪኽ፣ ዝተዓቀቡ ትንተናታት)';
+  String get deleteLocalData =>
+      'ኣብዚ መሳርሒ ዘሎ ሓበሬታ’ውን ሰርዝ (ፖርትፎሊዮ፣ መጠንቀቕታታት፣ ዝተፈተዉ፣ ታሪኽ፣ ዝተዓቀቡ ትንተናታት)';
 
   @override
   String get deleteAccountConfirm => 'ንሓዋሩ ሰርዝ';
@@ -1266,4 +1303,10 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።';
+
+  @override
+  String get myAnalyses => 'ትንተናታተይ';
+
+  @override
+  String get navAlerts => 'መጠንቀቕታታት';
 }

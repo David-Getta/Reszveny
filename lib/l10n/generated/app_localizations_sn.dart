@@ -111,7 +111,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get errorGeneric => 'Pane chakakanganisika.';
 
   @override
-  String get errorSectionUnavailable => 'Chikamu ichi hachina kukwanisa kurodhwa.';
+  String get errorSectionUnavailable =>
+      'Chikamu ichi hachina kukwanisa kurodhwa.';
 
   @override
   String get notAvailable => 'hapana';
@@ -306,7 +307,12 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Vaongorori $count', one: 'Muongorori 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vaongorori $count',
+      one: 'Muongorori 1',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +353,32 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Sevhisi yekuziva haina kukwanisa kugadzirisa mufananidzo uyu.';
+  String get errRecognitionRefused =>
+      'Sevhisi yekuziva haina kukwanisa kugadzirisa mufananidzo uyu.';
 
   @override
-  String get errRecognitionTruncated => 'Mhinduro yekuziva yakadimburwa. Ndapota edza zvakare.';
+  String get errRecognitionTruncated =>
+      'Mhinduro yekuziva yakadimburwa. Ndapota edza zvakare.';
 
   @override
-  String get errRecognitionBadResponse => 'Mhinduro isingatarisirwi kubva kusevhisi yekuziva.';
+  String get errRecognitionBadResponse =>
+      'Mhinduro isingatarisirwi kubva kusevhisi yekuziva.';
 
   @override
-  String get errRecognitionEmpty => 'Sevhisi yekuziva yadzosa mhinduro isina chinhu.';
+  String get errRecognitionEmpty =>
+      'Sevhisi yekuziva yadzosa mhinduro isina chinhu.';
 
   @override
-  String get errMissingFinnhubKey => 'Data yemusika haina kurongwa (hapana FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Data yemusika haina kurongwa (hapana FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Hazvina kukwanisika kusvika kusevhisi yedata yemusika. Tarisa kubatana kwako neindaneti.';
 
   @override
-  String get errMarketRateLimited => 'Zvikumbiro zvawandisa kusevhisi yedata yemusika. Ndapota mira miniti imwe.';
+  String get errMarketRateLimited =>
+      'Zvikumbiro zvawandisa kusevhisi yedata yemusika. Ndapota mira miniti imwe.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +386,8 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Mhinduro isingatarisirwi kubva kusevhisi yedata yemusika.';
+  String get errMarketBadResponse =>
+      'Mhinduro isingatarisirwi kubva kusevhisi yedata yemusika.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +487,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get aiRegenerate => 'Gadzira patsva';
 
   @override
-  String get aiGenerating => 'Kugadzirira ongororo… izvi zvinogona kutora miniti imwe kana mbiri.';
+  String get aiGenerating =>
+      'Kugadzirira ongororo… izvi zvinogona kutora miniti imwe kana mbiri.';
 
   @override
   String get aiSources => 'Kwazvakabva';
@@ -489,10 +503,12 @@ class AppLocalizationsSn extends AppLocalizations {
       'Ongororo yakagadzirwa neAI ichishandisa data yeruzhinji nenhau dzichangobva. Inogona kunge iine zvikanganiso kana kunge yasara, uye haisi zano rekuisa mari.';
 
   @override
-  String get errAiNotConfigured => 'Ongororo yeAI haina kurongwa (hapana ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Ongororo yeAI haina kurongwa (hapana ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Hazvina kukwanisika kusvika kusevhisi yeAI. Tarisa kubatana kwako neindaneti.';
+  String get errAiUnreachable =>
+      'Hazvina kukwanisika kusvika kusevhisi yeAI. Tarisa kubatana kwako neindaneti.';
 
   @override
   String errAiHttp(String status) {
@@ -503,7 +519,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get errAiRefused => 'Sevhisi yeAI yaramba kuongorora sheya iyi.';
 
   @override
-  String get errAiBadResponse => 'Mhinduro isingatarisirwi kubva kusevhisi yeAI.';
+  String get errAiBadResponse =>
+      'Mhinduro isingatarisirwi kubva kusevhisi yeAI.';
 
   @override
   String get sectionChart => 'Chati yemutengo';
@@ -524,7 +541,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Nhoroondo yemutengo haiwanikwe kubva kunobva data parizvino.';
+  String get chartUnavailable =>
+      'Nhoroondo yemutengo haiwanikwe kubva kunobva data parizvino.';
 
   @override
   String get sectionStatements => 'Mishumo yemari (yegore)';
@@ -551,7 +569,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get labelOperatingCashFlow => 'Kuyerera kwemari kwekushanda';
 
   @override
-  String get statementsUnavailable => 'Mishumo yemari yakaburitswa haiwanikwe pasheya iyi.';
+  String get statementsUnavailable =>
+      'Mishumo yemari yakaburitswa haiwanikwe pasheya iyi.';
 
   @override
   String get launchAtLogin => 'Tanga paunopinda';
@@ -560,7 +579,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get hotkeyLabel => 'Nzira pfupi yepese';
 
   @override
-  String get hotkeyRecordHint => 'Dzvanya pano, wozodzvanya musanganiswa mutsva wemakiyi';
+  String get hotkeyRecordHint =>
+      'Dzvanya pano, wozodzvanya musanganiswa mutsva wemakiyi';
 
   @override
   String get hotkeyReset => 'Dzorera kune zvakajairwa';
@@ -581,7 +601,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get removeFromFavorites => 'Bvisa pane zvaunofarira';
 
   @override
-  String get noFavorites => 'Hapana zvaunofarira parizvino. Baya nyeredzi pasheya kuti uiwedzere.';
+  String get noFavorites =>
+      'Hapana zvaunofarira parizvino. Baya nyeredzi pasheya kuti uiwedzere.';
 
   @override
   String get displayCurrency => 'Mari yekuratidza';
@@ -628,7 +649,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get updateDownloading => 'Kudhawunirodha chivandudzo kumashure…';
 
   @override
-  String get updateDownloaded => 'Chivandudzo chagadzirira. Tangazve kuti uchiise.';
+  String get updateDownloaded =>
+      'Chivandudzo chagadzirira. Tangazve kuti uchiise.';
 
   @override
   String get updateNow => 'Vandudza';
@@ -637,7 +659,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get restartNow => 'Tangazve';
 
   @override
-  String get updatesViaStore => 'Zvivandudzo zvinouya zvega kuburikidza nechitoro chemaapp.';
+  String get updatesViaStore =>
+      'Zvivandudzo zvinouya zvega kuburikidza nechitoro chemaapp.';
 
   @override
   String get updateCheckFailed => 'Hazvina kukwanisika kutarisa zvivandudzo.';
@@ -685,7 +708,8 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Muedzo wako wemahara wapera. Sarudza chirongwa kuti urambe uchiongorora.';
+  String get trialExpired =>
+      'Muedzo wako wemahara wapera. Sarudza chirongwa kuti urambe uchiongorora.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -751,10 +775,12 @@ class AppLocalizationsSn extends AppLocalizations {
       'Hauna ongororo dzasara munguva ino. Simudzira chirongwa chako kana tenga ongororo dzekuwedzera.';
 
   @override
-  String get errTrialExpired => 'Muedzo wako wemahara wapera. Sarudza chirongwa kuti uenderere mberi.';
+  String get errTrialExpired =>
+      'Muedzo wako wemahara wapera. Sarudza chirongwa kuti uenderere mberi.';
 
   @override
-  String get errNoPlan => 'Chirongwa chiri kushanda chinodiwa kuti uwane ongororo yeAI.';
+  String get errNoPlan =>
+      'Chirongwa chiri kushanda chinodiwa kuti uwane ongororo yeAI.';
 
   @override
   String get viewPlans => 'Ona zvirongwa';
@@ -763,7 +789,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get usageTitle => 'Mashandisiro';
 
   @override
-  String get demoPurchaseNote => 'Kubhadhara kwekuratidza: kutenga ndekwekuedzera chete papuratifomu iyi.';
+  String get demoPurchaseNote =>
+      'Kubhadhara kwekuratidza: kutenga ndekwekuedzera chete papuratifomu iyi.';
 
   @override
   String get mostPopular => 'Inonyanya kufarirwa';
@@ -803,7 +830,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get aiDepthStandardDesc => 'Mushumo wakazara une zvikamu zvese.';
 
   @override
-  String get aiDepthDeepDesc => 'Kutsvaga kwakawanda paindaneti, kuenzanisa nevakwikwidzi uye zvakadzama zvakanyanya.';
+  String get aiDepthDeepDesc =>
+      'Kutsvaga kwakawanda paindaneti, kuenzanisa nevakwikwidzi uye zvakadzama zvakanyanya.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,10 +859,12 @@ class AppLocalizationsSn extends AppLocalizations {
   String get aiReaderExperienced => 'Ane ruzivo';
 
   @override
-  String get aiReaderBeginnerDesc => 'Mutauro uri nyore; izwi rega rega rehunyanzvi rinotsanangurwa.';
+  String get aiReaderBeginnerDesc =>
+      'Mutauro uri nyore; izwi rega rega rehunyanzvi rinotsanangurwa.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Chinyorwa chakadzama chine mazwi akajairwa emari.';
+  String get aiReaderExperiencedDesc =>
+      'Chinyorwa chakadzama chine mazwi akajairwa emari.';
 
   @override
   String get aiCounterArgument => 'Pfungwa inopikisa yakasimba kwazvo';
@@ -848,7 +878,8 @@ class AppLocalizationsSn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Kusvika pakutsvaga $count paindaneti paongororo imwe neimwe nechirongwa chako',
+      other:
+          'Kusvika pakutsvaga $count paindaneti paongororo imwe neimwe nechirongwa chako',
       one: 'Kusvika pakutsvaga 1 paindaneti paongororo imwe neimwe nechirongwa chako',
     );
     return '$_temp0';
@@ -950,10 +981,12 @@ class AppLocalizationsSn extends AppLocalizations {
   String get notSignedIn => 'Hauna kupinda';
 
   @override
-  String get accountBenefit => 'Pinda kuti kunyoresa kwako kushande pamidziyo yako yese.';
+  String get accountBenefit =>
+      'Pinda kuti kunyoresa kwako kushande pamidziyo yako yese.';
 
   @override
-  String get accountSyncedNote => 'Kunyoresa kwako neongororo dzasara zvakafanana pamudziyo wese.';
+  String get accountSyncedNote =>
+      'Kunyoresa kwako neongororo dzasara zvakafanana pamudziyo wese.';
 
   @override
   String get signInTitle => 'Pinda muWhatStock';
@@ -985,13 +1018,16 @@ class AppLocalizationsSn extends AppLocalizations {
   String get errInvalidEmail => 'Ndapota nyora kero ye-email chaiyo.';
 
   @override
-  String get errSignInFailed => 'Kupinda kwakundikana. Tarisa kubatana kwako wozoedza zvakare.';
+  String get errSignInFailed =>
+      'Kupinda kwakundikana. Tarisa kubatana kwako wozoedza zvakare.';
 
   @override
-  String get checkoutWaiting => 'Pedzisa kubhadhara mubhurawuza yako. App ichagadziridzwa yega kana zvapera.';
+  String get checkoutWaiting =>
+      'Pedzisa kubhadhara mubhurawuza yako. App ichagadziridzwa yega kana zvapera.';
 
   @override
-  String get paymentViaStripe => 'Kubhadhara kwakachengeteka mubhurawuza kuburikidza neStripe. Kanzura chero nguva.';
+  String get paymentViaStripe =>
+      'Kubhadhara kwakachengeteka mubhurawuza kuburikidza neStripe. Kanzura chero nguva.';
 
   @override
   String get paymentViaStore =>
@@ -1004,7 +1040,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get doubleOptionTitle => 'Dzvanya Option kaviri';
 
   @override
-  String get doubleOptionSubtitle => 'Kudzvanya kiyi yeOption kaviri nekukurumidza kunodaidzawo WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Kudzvanya kiyi yeOption kaviri nekukurumidza kunodaidzawo WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1026,7 +1063,12 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'makore $years', one: 'gore 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'makore $years',
+      one: 'gore 1',
+    );
     return '$_temp0';
   }
 
@@ -1170,7 +1212,8 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Hapana zviziviso zvemutengo parizvino. Vhura sheya wobaya bhero kuti uise chimwe.';
+  String get alertsEmpty =>
+      'Hapana zviziviso zvemutengo parizvino. Vhura sheya wobaya bhero kuti uise chimwe.';
 
   @override
   String get alertsNote =>
@@ -1263,7 +1306,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get accountDeleted => 'Akaundi yako yadzimwa.';
 
   @override
-  String get errDeleteAccount => 'Akaundi haina kukwanisa kudzimwa. Tarisa kubatana kwako wozoedza zvakare.';
+  String get errDeleteAccount =>
+      'Akaundi haina kukwanisa kudzimwa. Tarisa kubatana kwako wozoedza zvakare.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1289,4 +1333,10 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Kunyoresa kwegore kunovandudzwa kwega gore rega rega kusvika wakanzura. Nekunyoresa unobvuma Mitemo Yekushandisa neMutemo Wekuvanzika.';
+
+  @override
+  String get myAnalyses => 'Ongororo dzangu';
+
+  @override
+  String get navAlerts => 'Zviziviso';
 }

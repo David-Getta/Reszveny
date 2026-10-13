@@ -13,7 +13,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Səhmin şəklini çəkin və onun haqqında hər şeyi öyrənin.';
+  String get homeTagline =>
+      'Səhmin şəklini çəkin və onun haqqında hər şeyi öyrənin.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analitik', one: '1 analitik');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analitik',
+      one: '1 analitik',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsAz extends AppLocalizations {
       'Şəkil tanıma tənzimlənməyib (ANTHROPIC_API_KEY yoxdur). Tikeri əl ilə daxil edin.';
 
   @override
-  String get errRecognitionUnreachable => 'Tanıma xidmətinə qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.';
+  String get errRecognitionUnreachable =>
+      'Tanıma xidmətinə qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,26 +353,31 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Tanıma xidməti bu şəkli emal edə bilmədi.';
+  String get errRecognitionRefused =>
+      'Tanıma xidməti bu şəkli emal edə bilmədi.';
 
   @override
-  String get errRecognitionTruncated => 'Tanıma cavabı yarımçıq kəsildi. Yenidən cəhd edin.';
+  String get errRecognitionTruncated =>
+      'Tanıma cavabı yarımçıq kəsildi. Yenidən cəhd edin.';
 
   @override
-  String get errRecognitionBadResponse => 'Tanıma xidmətindən gözlənilməz cavab gəldi.';
+  String get errRecognitionBadResponse =>
+      'Tanıma xidmətindən gözlənilməz cavab gəldi.';
 
   @override
   String get errRecognitionEmpty => 'Tanıma xidməti boş cavab qaytardı.';
 
   @override
-  String get errMissingFinnhubKey => 'Bazar məlumatları tənzimlənməyib (FINNHUB_API_KEY yoxdur).';
+  String get errMissingFinnhubKey =>
+      'Bazar məlumatları tənzimlənməyib (FINNHUB_API_KEY yoxdur).';
 
   @override
   String get errMarketUnreachable =>
       'Bazar məlumatları xidmətinə qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.';
 
   @override
-  String get errMarketRateLimited => 'Bazar məlumatları xidmətinə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin.';
+  String get errMarketRateLimited =>
+      'Bazar məlumatları xidmətinə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin.';
 
   @override
   String errMarketHttp(String status) {
@@ -373,7 +385,8 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Bazar məlumatları xidmətindən gözlənilməz cavab gəldi.';
+  String get errMarketBadResponse =>
+      'Bazar məlumatları xidmətindən gözlənilməz cavab gəldi.';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,10 +501,12 @@ class AppLocalizationsAz extends AppLocalizations {
       'Açıq məlumatlar və son xəbərlər əsasında AI tərəfindən yaradılmış təhlil. Səhvlər ehtiva edə və ya köhnəlmiş ola bilər və investisiya məsləhəti deyil.';
 
   @override
-  String get errAiNotConfigured => 'AI təhlili tənzimlənməyib (ANTHROPIC_API_KEY yoxdur).';
+  String get errAiNotConfigured =>
+      'AI təhlili tənzimlənməyib (ANTHROPIC_API_KEY yoxdur).';
 
   @override
-  String get errAiUnreachable => 'AI xidmətinə qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.';
+  String get errAiUnreachable =>
+      'AI xidmətinə qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.';
 
   @override
   String errAiHttp(String status) {
@@ -523,7 +538,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get rangeFiveYears => '5İ';
 
   @override
-  String get chartUnavailable => 'Cari məlumat mənbəyində qiymət tarixçəsi mövcud deyil.';
+  String get chartUnavailable =>
+      'Cari məlumat mənbəyində qiymət tarixçəsi mövcud deyil.';
 
   @override
   String get sectionStatements => 'Maliyyə hesabatları (illik)';
@@ -550,7 +566,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get labelOperatingCashFlow => 'Əməliyyat pul axını';
 
   @override
-  String get statementsUnavailable => 'Bu səhm üçün dərc edilmiş maliyyə hesabatları mövcud deyil.';
+  String get statementsUnavailable =>
+      'Bu səhm üçün dərc edilmiş maliyyə hesabatları mövcud deyil.';
 
   @override
   String get launchAtLogin => 'Sistemə girişdə başlat';
@@ -559,7 +576,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get hotkeyLabel => 'Qlobal qısayol';
 
   @override
-  String get hotkeyRecordHint => 'Bura klikləyin, sonra yeni düymə kombinasiyasını basın';
+  String get hotkeyRecordHint =>
+      'Bura klikləyin, sonra yeni düymə kombinasiyasını basın';
 
   @override
   String get hotkeyReset => 'Standarta qaytar';
@@ -580,7 +598,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get removeFromFavorites => 'Seçilmişlərdən sil';
 
   @override
-  String get noFavorites => 'Hələ seçilmiş yoxdur. Əlavə etmək üçün səhmin ulduzuna toxunun.';
+  String get noFavorites =>
+      'Hələ seçilmiş yoxdur. Əlavə etmək üçün səhmin ulduzuna toxunun.';
 
   @override
   String get displayCurrency => 'Göstərilən valyuta';
@@ -627,7 +646,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get updateDownloading => 'Yeniləmə arxa planda endirilir…';
 
   @override
-  String get updateDownloaded => 'Yeniləmə hazırdır. Quraşdırmaq üçün tətbiqi yenidən başladın.';
+  String get updateDownloaded =>
+      'Yeniləmə hazırdır. Quraşdırmaq üçün tətbiqi yenidən başladın.';
 
   @override
   String get updateNow => 'Yenilə';
@@ -636,7 +656,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get restartNow => 'Yenidən başlat';
 
   @override
-  String get updatesViaStore => 'Yeniləmələr tətbiq mağazası vasitəsilə avtomatik gəlir.';
+  String get updatesViaStore =>
+      'Yeniləmələr tətbiq mağazası vasitəsilə avtomatik gəlir.';
 
   @override
   String get updateCheckFailed => 'Yeniləmələri yoxlamaq mümkün olmadı.';
@@ -684,7 +705,8 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Pulsuz sınaq müddətiniz bitdi. Təhlilə davam etmək üçün plan seçin.';
+  String get trialExpired =>
+      'Pulsuz sınaq müddətiniz bitdi. Təhlilə davam etmək üçün plan seçin.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -717,7 +739,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get extraPacksTitle => 'Daha çox lazımdır? Əlavə təhlil alın';
 
   @override
-  String get extraPacksHint => 'Əlavə təhlillərin müddəti heç vaxt bitmir və aylıq limitinizdən sonra istifadə olunur.';
+  String get extraPacksHint =>
+      'Əlavə təhlillərin müddəti heç vaxt bitmir və aylıq limitinizdən sonra istifadə olunur.';
 
   @override
   String get buy => 'Al';
@@ -745,10 +768,12 @@ class AppLocalizationsAz extends AppLocalizations {
       'Bu platformada alışlar hələ mövcud deyil. Telefonunuzda və ya Mac-də abunə olun; planınız bütün cihazlarda işləyəcək.';
 
   @override
-  String get errQuotaExceeded => 'Bu dövr üçün təhliliniz qalmayıb. Planınızı yüksəldin və ya əlavə təhlil alın.';
+  String get errQuotaExceeded =>
+      'Bu dövr üçün təhliliniz qalmayıb. Planınızı yüksəldin və ya əlavə təhlil alın.';
 
   @override
-  String get errTrialExpired => 'Pulsuz sınaq müddətiniz bitdi. Davam etmək üçün plan seçin.';
+  String get errTrialExpired =>
+      'Pulsuz sınaq müddətiniz bitdi. Davam etmək üçün plan seçin.';
 
   @override
   String get errNoPlan => 'AI təhlili üçün aktiv plan lazımdır.';
@@ -760,7 +785,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get usageTitle => 'İstifadə';
 
   @override
-  String get demoPurchaseNote => 'Demo ödəniş: bu platformada alışlar simulyasiya edilir.';
+  String get demoPurchaseNote =>
+      'Demo ödəniş: bu platformada alışlar simulyasiya edilir.';
 
   @override
   String get mostPopular => 'Ən populyar';
@@ -800,7 +826,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get aiDepthStandardDesc => 'Bütün bölmələrlə tam hesabat.';
 
   @override
-  String get aiDepthDeepDesc => 'Daha çox veb axtarışı, rəqiblərlə müqayisə və daha dərin təfərrüat.';
+  String get aiDepthDeepDesc =>
+      'Daha çox veb axtarışı, rəqiblərlə müqayisə və daha dərin təfərrüat.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,16 +855,19 @@ class AppLocalizationsAz extends AppLocalizations {
   String get aiReaderExperienced => 'Təcrübəli';
 
   @override
-  String get aiReaderBeginnerDesc => 'Sadə dil; hər bir xüsusi termin izah olunur.';
+  String get aiReaderBeginnerDesc =>
+      'Sadə dil; hər bir xüsusi termin izah olunur.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Standart maliyyə terminologiyası ilə daha sıx mətn.';
+  String get aiReaderExperiencedDesc =>
+      'Standart maliyyə terminologiyası ilə daha sıx mətn.';
 
   @override
   String get aiCounterArgument => 'Ən güclü əks arqument';
 
   @override
-  String get aiCounterArgumentDesc => 'Xülasə həmişə öz nəticəsinə qarşı ən güclü arqumentlə bitir.';
+  String get aiCounterArgumentDesc =>
+      'Xülasə həmişə öz nəticəsinə qarşı ən güclü arqumentlə bitir.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +960,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get upcomingEvents => 'Qarşıdakı hadisələr';
 
   @override
-  String get outlookChartNote => 'Təxmini diapazonlar; ehtimallar proqnoz deyil, kobud qiymətləndirmələrdir.';
+  String get outlookChartNote =>
+      'Təxmini diapazonlar; ehtimallar proqnoz deyil, kobud qiymətləndirmələrdir.';
 
   @override
   String get accountTitle => 'Hesab';
@@ -945,10 +976,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get notSignedIn => 'Daxil olunmayıb';
 
   @override
-  String get accountBenefit => 'Abunəliyinizin bütün cihazlarınızda işləməsi üçün daxil olun.';
+  String get accountBenefit =>
+      'Abunəliyinizin bütün cihazlarınızda işləməsi üçün daxil olun.';
 
   @override
-  String get accountSyncedNote => 'Abunəliyiniz və qalan təhlilləriniz bütün cihazlarda eynidir.';
+  String get accountSyncedNote =>
+      'Abunəliyiniz və qalan təhlilləriniz bütün cihazlarda eynidir.';
 
   @override
   String get signInTitle => 'WhatStock-a daxil olun';
@@ -980,10 +1013,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get errInvalidEmail => 'Düzgün e-poçt ünvanı daxil edin.';
 
   @override
-  String get errSignInFailed => 'Daxil olmaq alınmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+  String get errSignInFailed =>
+      'Daxil olmaq alınmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
 
   @override
-  String get checkoutWaiting => 'Ödənişi brauzerinizdə tamamlayın. Ödəniş bitəndə tətbiq avtomatik yenilənəcək.';
+  String get checkoutWaiting =>
+      'Ödənişi brauzerinizdə tamamlayın. Ödəniş bitəndə tətbiq avtomatik yenilənəcək.';
 
   @override
   String get paymentViaStripe =>
@@ -1000,7 +1035,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get doubleOptionTitle => 'Option düyməsini iki dəfə basmaq';
 
   @override
-  String get doubleOptionSubtitle => 'Option düyməsini cəld iki dəfə basmaq da WhatStock-u çağırır.';
+  String get doubleOptionSubtitle =>
+      'Option düyməsini cəld iki dəfə basmaq da WhatStock-u çağırır.';
 
   @override
   String get doubleOptionPermission =>
@@ -1022,7 +1058,12 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years il', one: '1 il');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years il',
+      one: '1 il',
+    );
     return '$_temp0';
   }
 
@@ -1123,7 +1164,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get portfolioRemove => 'Sil';
 
   @override
-  String get portfolioExcluded => 'Qiyməti və ya məzənnəsi olmayan mövqelər cəmlərə daxil edilmir.';
+  String get portfolioExcluded =>
+      'Qiyməti və ya məzənnəsi olmayan mövqelər cəmlərə daxil edilmir.';
 
   @override
   String get priceAlerts => 'Qiymət bildirişləri';
@@ -1165,7 +1207,8 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Hələ qiymət bildirişi yoxdur. Bir səhm açın və bildiriş qurmaq üçün zəngə toxunun.';
+  String get alertsEmpty =>
+      'Hələ qiymət bildirişi yoxdur. Bir səhm açın və bildiriş qurmaq üçün zəngə toxunun.';
 
   @override
   String get alertsNote =>
@@ -1258,7 +1301,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get accountDeleted => 'Hesabınız silindi.';
 
   @override
-  String get errDeleteAccount => 'Hesabı silmək mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+  String get errDeleteAccount =>
+      'Hesabı silmək mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1284,4 +1328,10 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz.';
+
+  @override
+  String get myAnalyses => 'Təhlillərim';
+
+  @override
+  String get navAlerts => 'Bildirişlər';
 }

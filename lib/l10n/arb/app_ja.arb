@@ -369,5 +369,7 @@
   "yearlyDiscount": "2か月分無料",
   "perYear": "/ 年",
   "pricePerMonthApprox": "月あたり約 {price}",
-  "subscriptionLegalYearly": "年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。"
+  "subscriptionLegalYearly": "年間サブスクリプションは解約するまで毎年自動更新されます。購読すると、利用規約とプライバシーポリシーに同意したものとみなされます。",
+  "myAnalyses": "自分の分析",
+  "navAlerts": "アラート"
 }

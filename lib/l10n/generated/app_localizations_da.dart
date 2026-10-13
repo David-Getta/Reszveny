@@ -306,7 +306,12 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytikere', one: '1 analytiker');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analytikere',
+      one: '1 analytiker',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsDa extends AppLocalizations {
       'Billedgenkendelse er ikke konfigureret (ingen ANTHROPIC_API_KEY). Indtast tickeren manuelt.';
 
   @override
-  String get errRecognitionUnreachable => 'Kunne ikke nå genkendelsestjenesten. Tjek din internetforbindelse.';
+  String get errRecognitionUnreachable =>
+      'Kunne ikke nå genkendelsestjenesten. Tjek din internetforbindelse.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,32 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Genkendelsestjenesten kunne ikke behandle dette billede.';
+  String get errRecognitionRefused =>
+      'Genkendelsestjenesten kunne ikke behandle dette billede.';
 
   @override
-  String get errRecognitionTruncated => 'Svaret fra genkendelsestjenesten blev afbrudt. Prøv igen.';
+  String get errRecognitionTruncated =>
+      'Svaret fra genkendelsestjenesten blev afbrudt. Prøv igen.';
 
   @override
-  String get errRecognitionBadResponse => 'Uventet svar fra genkendelsestjenesten.';
+  String get errRecognitionBadResponse =>
+      'Uventet svar fra genkendelsestjenesten.';
 
   @override
-  String get errRecognitionEmpty => 'Genkendelsestjenesten returnerede et tomt svar.';
+  String get errRecognitionEmpty =>
+      'Genkendelsestjenesten returnerede et tomt svar.';
 
   @override
-  String get errMissingFinnhubKey => 'Markedsdata er ikke konfigureret (ingen FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Markedsdata er ikke konfigureret (ingen FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Kunne ikke nå markedsdatatjenesten. Tjek din internetforbindelse.';
+  String get errMarketUnreachable =>
+      'Kunne ikke nå markedsdatatjenesten. Tjek din internetforbindelse.';
 
   @override
-  String get errMarketRateLimited => 'For mange forespørgsler til markedsdatatjenesten. Vent et minut.';
+  String get errMarketRateLimited =>
+      'For mange forespørgsler til markedsdatatjenesten. Vent et minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -472,7 +485,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get aiRegenerate => 'Generer igen';
 
   @override
-  String get aiGenerating => 'Analysen forberedes… det kan tage et minut eller to.';
+  String get aiGenerating =>
+      'Analysen forberedes… det kan tage et minut eller to.';
 
   @override
   String get aiSources => 'Kilder';
@@ -487,10 +501,12 @@ class AppLocalizationsDa extends AppLocalizations {
       'AI-genereret analyse baseret på offentlige data og aktuelle nyheder. Den kan indeholde fejl eller være forældet og er ikke investeringsrådgivning.';
 
   @override
-  String get errAiNotConfigured => 'AI-analyse er ikke konfigureret (ingen ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI-analyse er ikke konfigureret (ingen ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Kunne ikke nå AI-tjenesten. Tjek din internetforbindelse.';
+  String get errAiUnreachable =>
+      'Kunne ikke nå AI-tjenesten. Tjek din internetforbindelse.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +538,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get rangeFiveYears => '5Å';
 
   @override
-  String get chartUnavailable => 'Kurshistorik er ikke tilgængelig fra den aktuelle datakilde.';
+  String get chartUnavailable =>
+      'Kurshistorik er ikke tilgængelig fra den aktuelle datakilde.';
 
   @override
   String get sectionStatements => 'Regnskaber (årlige)';
@@ -549,7 +566,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get labelOperatingCashFlow => 'Pengestrøm fra driften';
 
   @override
-  String get statementsUnavailable => 'Der er ingen offentliggjorte regnskaber tilgængelige for denne aktie.';
+  String get statementsUnavailable =>
+      'Der er ingen offentliggjorte regnskaber tilgængelige for denne aktie.';
 
   @override
   String get launchAtLogin => 'Start ved login';
@@ -558,7 +576,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get hotkeyLabel => 'Global genvej';
 
   @override
-  String get hotkeyRecordHint => 'Klik her, og tryk derefter på den nye tastekombination';
+  String get hotkeyRecordHint =>
+      'Klik her, og tryk derefter på den nye tastekombination';
 
   @override
   String get hotkeyReset => 'Gendan standard';
@@ -579,7 +598,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get removeFromFavorites => 'Fjern fra favoritter';
 
   @override
-  String get noFavorites => 'Ingen favoritter endnu. Tryk på stjernen ved en aktie for at tilføje den.';
+  String get noFavorites =>
+      'Ingen favoritter endnu. Tryk på stjernen ved en aktie for at tilføje den.';
 
   @override
   String get displayCurrency => 'Visningsvaluta';
@@ -626,7 +646,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get updateDownloading => 'Opdateringen downloades i baggrunden…';
 
   @override
-  String get updateDownloaded => 'Opdateringen er klar. Genstart for at installere den.';
+  String get updateDownloaded =>
+      'Opdateringen er klar. Genstart for at installere den.';
 
   @override
   String get updateNow => 'Opdater';
@@ -635,7 +656,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get restartNow => 'Genstart';
 
   @override
-  String get updatesViaStore => 'Opdateringer kommer automatisk via appbutikken.';
+  String get updatesViaStore =>
+      'Opdateringer kommer automatisk via appbutikken.';
 
   @override
   String get updateCheckFailed => 'Kunne ikke søge efter opdateringer.';
@@ -683,7 +705,8 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte med at analysere.';
+  String get trialExpired =>
+      'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte med at analysere.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +739,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get extraPacksTitle => 'Brug for flere? Køb ekstra analyser';
 
   @override
-  String get extraPacksHint => 'Ekstra analyser udløber aldrig og bruges efter din månedlige kvote.';
+  String get extraPacksHint =>
+      'Ekstra analyser udløber aldrig og bruges efter din månedlige kvote.';
 
   @override
   String get buy => 'Køb';
@@ -748,7 +772,8 @@ class AppLocalizationsDa extends AppLocalizations {
       'Du har ingen analyser tilbage i denne periode. Opgrader din plan, eller køb ekstra analyser.';
 
   @override
-  String get errTrialExpired => 'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte.';
+  String get errTrialExpired =>
+      'Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte.';
 
   @override
   String get errNoPlan => 'Der kræves en aktiv plan til AI-analyse.';
@@ -760,7 +785,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get usageTitle => 'Forbrug';
 
   @override
-  String get demoPurchaseNote => 'Demofakturering: køb simuleres på denne platform.';
+  String get demoPurchaseNote =>
+      'Demofakturering: køb simuleres på denne platform.';
 
   @override
   String get mostPopular => 'Mest populær';
@@ -800,7 +826,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get aiDepthStandardDesc => 'Fuld rapport med alle sektioner.';
 
   @override
-  String get aiDepthDeepDesc => 'Flere websøgninger, sammenligning med konkurrenter og flere detaljer.';
+  String get aiDepthDeepDesc =>
+      'Flere websøgninger, sammenligning med konkurrenter og flere detaljer.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,13 +858,15 @@ class AppLocalizationsDa extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'Enkelt sprog; alle fagudtryk forklares.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tættere tekst med almindelig finansiel terminologi.';
+  String get aiReaderExperiencedDesc =>
+      'Tættere tekst med almindelig finansiel terminologi.';
 
   @override
   String get aiCounterArgument => 'Stærkeste modargument';
 
   @override
-  String get aiCounterArgumentDesc => 'Resuméet slutter altid med det stærkeste argument imod sin egen konklusion.';
+  String get aiCounterArgumentDesc =>
+      'Resuméet slutter altid med det stærkeste argument imod sin egen konklusion.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +959,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get upcomingEvents => 'Kommende begivenheder';
 
   @override
-  String get outlookChartNote => 'Vejledende intervaller; sandsynlighederne er grove vurderinger, ikke forudsigelser.';
+  String get outlookChartNote =>
+      'Vejledende intervaller; sandsynlighederne er grove vurderinger, ikke forudsigelser.';
 
   @override
   String get accountTitle => 'Konto';
@@ -945,10 +975,12 @@ class AppLocalizationsDa extends AppLocalizations {
   String get notSignedIn => 'Ikke logget ind';
 
   @override
-  String get accountBenefit => 'Log ind, så dit abonnement virker på alle dine enheder.';
+  String get accountBenefit =>
+      'Log ind, så dit abonnement virker på alle dine enheder.';
 
   @override
-  String get accountSyncedNote => 'Dit abonnement og dine resterende analyser er de samme på alle enheder.';
+  String get accountSyncedNote =>
+      'Dit abonnement og dine resterende analyser er de samme på alle enheder.';
 
   @override
   String get signInTitle => 'Log ind på WhatStock';
@@ -980,14 +1012,16 @@ class AppLocalizationsDa extends AppLocalizations {
   String get errInvalidEmail => 'Indtast en gyldig e-mailadresse.';
 
   @override
-  String get errSignInFailed => 'Login mislykkedes. Tjek din forbindelse, og prøv igen.';
+  String get errSignInFailed =>
+      'Login mislykkedes. Tjek din forbindelse, og prøv igen.';
 
   @override
   String get checkoutWaiting =>
       'Gennemfør betalingen i din browser. Appen opdateres automatisk, når den er gennemført.';
 
   @override
-  String get paymentViaStripe => 'Sikker betaling i din browser via Stripe. Kan opsiges når som helst.';
+  String get paymentViaStripe =>
+      'Sikker betaling i din browser via Stripe. Kan opsiges når som helst.';
 
   @override
   String get paymentViaStore =>
@@ -1000,7 +1034,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get doubleOptionTitle => 'Dobbelttryk på alternativtasten';
 
   @override
-  String get doubleOptionSubtitle => 'Du kan også åbne WhatStock ved hurtigt at trykke to gange på alternativtasten.';
+  String get doubleOptionSubtitle =>
+      'Du kan også åbne WhatStock ved hurtigt at trykke to gange på alternativtasten.';
 
   @override
   String get doubleOptionPermission =>
@@ -1022,7 +1057,12 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years år', one: '1 år');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years år',
+      one: '1 år',
+    );
     return '$_temp0';
   }
 
@@ -1123,7 +1163,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get portfolioRemove => 'Fjern';
 
   @override
-  String get portfolioExcluded => 'Beholdninger uden kurs eller valutakurs er ikke med i summerne.';
+  String get portfolioExcluded =>
+      'Beholdninger uden kurs eller valutakurs er ikke med i summerne.';
 
   @override
   String get priceAlerts => 'Kursalarmer';
@@ -1165,7 +1206,8 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Ingen kursalarmer endnu. Åbn en aktie, og tryk på klokken.';
+  String get alertsEmpty =>
+      'Ingen kursalarmer endnu. Åbn en aktie, og tryk på klokken.';
 
   @override
   String get alertsNote =>
@@ -1258,7 +1300,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get accountDeleted => 'Din konto er slettet.';
 
   @override
-  String get errDeleteAccount => 'Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen.';
+  String get errDeleteAccount =>
+      'Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1284,4 +1327,10 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Årsabonnementet fornyes automatisk hvert år, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken.';
+
+  @override
+  String get myAnalyses => 'Mine analyser';
+
+  @override
+  String get navAlerts => 'Alarmer';
 }

@@ -306,7 +306,12 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'numekula $count', one: 'numekula 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'numekula $count',
+      one: 'numekula 1',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsEe extends AppLocalizations {
       'Womeɖo nɔnɔmetata dzesidede ɖi o (ANTHROPIC_API_KEY meli o). Ŋlɔ ticker la wò ŋutɔ.';
 
   @override
-  String get errRecognitionUnreachable => 'Míete ŋu ɖo dzesidede sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
+  String get errRecognitionUnreachable =>
+      'Míete ŋu ɖo dzesidede sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,31 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Dzesidede sɛvis la mete ŋu wɔ dɔ ɖe nɔnɔmetata sia ŋu o.';
+  String get errRecognitionRefused =>
+      'Dzesidede sɛvis la mete ŋu wɔ dɔ ɖe nɔnɔmetata sia ŋu o.';
 
   @override
-  String get errRecognitionTruncated => 'Dzesidede ƒe ŋuɖoɖo la tso le titina. Taflatse, gate kpɔ.';
+  String get errRecognitionTruncated =>
+      'Dzesidede ƒe ŋuɖoɖo la tso le titina. Taflatse, gate kpɔ.';
 
   @override
-  String get errRecognitionBadResponse => 'Ŋuɖoɖo si míekpɔ mɔ na o tso dzesidede sɛvis la gbɔ.';
+  String get errRecognitionBadResponse =>
+      'Ŋuɖoɖo si míekpɔ mɔ na o tso dzesidede sɛvis la gbɔ.';
 
   @override
   String get errRecognitionEmpty => 'Dzesidede sɛvis la ɖo ŋuɖoɖo gbɔlo ɖa.';
 
   @override
-  String get errMissingFinnhubKey => 'Womeɖo asi ŋuti nyatakakawo ɖi o (FINNHUB_API_KEY meli o).';
+  String get errMissingFinnhubKey =>
+      'Womeɖo asi ŋuti nyatakakawo ɖi o (FINNHUB_API_KEY meli o).';
 
   @override
-  String get errMarketUnreachable => 'Míete ŋu ɖo asi ŋuti nyatakaka sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
+  String get errMarketUnreachable =>
+      'Míete ŋu ɖo asi ŋuti nyatakaka sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
 
   @override
-  String get errMarketRateLimited => 'Biabia geɖe akpa yi asi ŋuti nyatakaka sɛvis la gbɔ. Taflatse, lala miniti ɖeka.';
+  String get errMarketRateLimited =>
+      'Biabia geɖe akpa yi asi ŋuti nyatakaka sɛvis la gbɔ. Taflatse, lala miniti ɖeka.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +384,8 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Ŋuɖoɖo si míekpɔ mɔ na o tso asi ŋuti nyatakaka sɛvis la gbɔ.';
+  String get errMarketBadResponse =>
+      'Ŋuɖoɖo si míekpɔ mɔ na o tso asi ŋuti nyatakaka sɛvis la gbɔ.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +485,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get aiRegenerate => 'Gawɔe';
 
   @override
-  String get aiGenerating => 'Míele numekuku la dzram ɖo… ate ŋu axɔ miniti ɖeka alo eve.';
+  String get aiGenerating =>
+      'Míele numekuku la dzram ɖo… ate ŋu axɔ miniti ɖeka alo eve.';
 
   @override
   String get aiSources => 'Dzɔtsoƒewo';
@@ -487,10 +501,12 @@ class AppLocalizationsEe extends AppLocalizations {
       'AI ye wɔ numekuku sia tso nyatakaka siwo le ame sia ame si kple nyadzɔdzɔ yeyewo me. Vodadawo ate ŋu anɔ eme alo wòanye xoxo, eye menye aɖaŋuɖoɖo le gadede nu ŋu o.';
 
   @override
-  String get errAiNotConfigured => 'Womeɖo AI numekuku ɖi o (ANTHROPIC_API_KEY meli o).';
+  String get errAiNotConfigured =>
+      'Womeɖo AI numekuku ɖi o (ANTHROPIC_API_KEY meli o).';
 
   @override
-  String get errAiUnreachable => 'Míete ŋu ɖo AI sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
+  String get errAiUnreachable =>
+      'Míete ŋu ɖo AI sɛvis la gbɔ o. Kpɔ wò internet kadodo.';
 
   @override
   String errAiHttp(String status) {
@@ -498,10 +514,12 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI sɛvis la gbe be yemawɔ numekuku le akpa sia ŋu o.';
+  String get errAiRefused =>
+      'AI sɛvis la gbe be yemawɔ numekuku le akpa sia ŋu o.';
 
   @override
-  String get errAiBadResponse => 'Ŋuɖoɖo si míekpɔ mɔ na o tso AI sɛvis la gbɔ.';
+  String get errAiBadResponse =>
+      'Ŋuɖoɖo si míekpɔ mɔ na o tso AI sɛvis la gbɔ.';
 
   @override
   String get sectionChart => 'Asi ƒe nɔnɔmetata';
@@ -522,7 +540,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get rangeFiveYears => '5Ƒ';
 
   @override
-  String get chartUnavailable => 'Asi ƒe ŋutinya meli le nyatakaka dzɔtsoƒe si le zãzãm fifia me o.';
+  String get chartUnavailable =>
+      'Asi ƒe ŋutinya meli le nyatakaka dzɔtsoƒe si le zãzãm fifia me o.';
 
   @override
   String get sectionStatements => 'Ga ŋuti akɔntabubuwo (ƒe sia ƒe)';
@@ -549,7 +568,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get labelOperatingCashFlow => 'Ga si dɔwɔwɔ he vɛ';
 
   @override
-  String get statementsUnavailable => 'Ga ŋuti akɔntabubuwo meli na akpa sia o.';
+  String get statementsUnavailable =>
+      'Ga ŋuti akɔntabubuwo meli na akpa sia o.';
 
   @override
   String get launchAtLogin => 'Dze egɔme ne ège ɖe eme';
@@ -558,7 +578,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get hotkeyLabel => 'Mɔ kpui (afi sia afi)';
 
   @override
-  String get hotkeyRecordHint => 'Zi afi sia, emegbe zi safui yeye siwo nèwɔ ɖekae';
+  String get hotkeyRecordHint =>
+      'Zi afi sia, emegbe zi safui yeye siwo nèwɔ ɖekae';
 
   @override
   String get hotkeyReset => 'Trɔ yi gɔmedzedze ɖoɖo dzi';
@@ -579,7 +600,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get removeFromFavorites => 'Ɖe ɖa le nye lɔlɔ̃tɔwo me';
 
   @override
-  String get noFavorites => 'Naneke meli haɖe o. Zi ɣletivi la le akpa aɖe dzi be nàtsɔe akpe ɖe eŋu.';
+  String get noFavorites =>
+      'Naneke meli haɖe o. Zi ɣletivi la le akpa aɖe dzi be nàtsɔe akpe ɖe eŋu.';
 
   @override
   String get displayCurrency => 'Ga si woaɖe afia';
@@ -626,7 +648,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get updateDownloading => 'Yeyewɔwɔ la le ɖeɖem le megbe…';
 
   @override
-  String get updateDownloaded => 'Yeyewɔwɔ la le klalo. Gadze egɔme be nàde eme.';
+  String get updateDownloaded =>
+      'Yeyewɔwɔ la le klalo. Gadze egɔme be nàde eme.';
 
   @override
   String get updateNow => 'Wɔe yeye';
@@ -635,7 +658,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get restartNow => 'Gadze egɔme';
 
   @override
-  String get updatesViaStore => 'Yeyewɔwɔwo vana le wo ɖokui si to app store la dzi.';
+  String get updatesViaStore =>
+      'Yeyewɔwɔwo vana le wo ɖokui si to app store la dzi.';
 
   @override
   String get updateCheckFailed => 'Míete ŋu kpɔ yeyewɔwɔwo o.';
@@ -683,7 +707,8 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Wò tetekpɔ femaxee la wu enu. Tia plan aɖe be nàyi edzi anɔ numekuku wɔm.';
+  String get trialExpired =>
+      'Wò tetekpɔ femaxee la wu enu. Tia plan aɖe be nàyi edzi anɔ numekuku wɔm.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -749,7 +774,8 @@ class AppLocalizationsEe extends AppLocalizations {
       'Numekuku aɖeke mesusɔ ɖe asiwò le ɣeyiɣi sia me o. Dzi wò plan ɖe edzi alo ƒle numekuku bubuwo.';
 
   @override
-  String get errTrialExpired => 'Wò tetekpɔ femaxee la wu enu. Tia plan aɖe be nàyi edzi.';
+  String get errTrialExpired =>
+      'Wò tetekpɔ femaxee la wu enu. Tia plan aɖe be nàyi edzi.';
 
   @override
   String get errNoPlan => 'Plan si le dɔ wɔm hiã hafi nàwɔ AI numekuku.';
@@ -761,7 +787,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get usageTitle => 'Zãzã';
 
   @override
-  String get demoPurchaseNote => 'Demo gaxexe: nuƒeƒlewo nye kpɔɖeŋu ko le platform sia dzi.';
+  String get demoPurchaseNote =>
+      'Demo gaxexe: nuƒeƒlewo nye kpɔɖeŋu ko le platform sia dzi.';
 
   @override
   String get mostPopular => 'Ame geɖe lɔ̃e';
@@ -830,10 +857,12 @@ class AppLocalizationsEe extends AppLocalizations {
   String get aiReaderExperienced => 'Aɖaŋula';
 
   @override
-  String get aiReaderBeginnerDesc => 'Gbe bɔbɔe; woɖea technical nya ɖesiaɖe me.';
+  String get aiReaderBeginnerDesc =>
+      'Gbe bɔbɔe; woɖea technical nya ɖesiaɖe me.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Nuŋɔŋlɔ si me nya geɖe le, kple ganyawo ƒe nya siwo wozãna.';
+  String get aiReaderExperiencedDesc =>
+      'Nuŋɔŋlɔ si me nya geɖe le, kple ganyawo ƒe nya siwo wozãna.';
 
   @override
   String get aiCounterArgument => 'Tsitretsiɖeŋu sesẽtɔ';
@@ -847,7 +876,8 @@ class AppLocalizationsEe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Va se ɖe internet dzi didi $count le numekuku ɖesiaɖe me le wò plan nu',
+      other:
+          'Va se ɖe internet dzi didi $count le numekuku ɖesiaɖe me le wò plan nu',
       one: 'Va se ɖe internet dzi didi 1 le numekuku ɖesiaɖe me le wò plan nu',
     );
     return '$_temp0';
@@ -933,7 +963,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get upcomingEvents => 'Nudzɔdzɔ siwo gbɔna';
 
   @override
-  String get outlookChartNote => 'Asi ƒe agbɔsɔsɔ siwo fia mɔ ko; mɔnukpɔkpɔwo nye susu ɖeɖe ko, menye nyagblɔɖiwo o.';
+  String get outlookChartNote =>
+      'Asi ƒe agbɔsɔsɔ siwo fia mɔ ko; mɔnukpɔkpɔwo nye susu ɖeɖe ko, menye nyagblɔɖiwo o.';
 
   @override
   String get accountTitle => 'Akɔnta';
@@ -948,10 +979,12 @@ class AppLocalizationsEe extends AppLocalizations {
   String get notSignedIn => 'Mège ɖe eme o';
 
   @override
-  String get accountBenefit => 'Ge ɖe eme be wò subscription nawɔ dɔ le wò mɔ̃wo katã dzi.';
+  String get accountBenefit =>
+      'Ge ɖe eme be wò subscription nawɔ dɔ le wò mɔ̃wo katã dzi.';
 
   @override
-  String get accountSyncedNote => 'Wò subscription kple numekuku siwo susɔ le sɔ le mɔ̃wo katã dzi.';
+  String get accountSyncedNote =>
+      'Wò subscription kple numekuku siwo susɔ le sɔ le mɔ̃wo katã dzi.';
 
   @override
   String get signInTitle => 'Ge ɖe WhatStock me';
@@ -983,13 +1016,16 @@ class AppLocalizationsEe extends AppLocalizations {
   String get errInvalidEmail => 'Taflatse, ŋlɔ email adrɛs si sɔ.';
 
   @override
-  String get errSignInFailed => 'Gegeɖeme medze edzi o. Kpɔ wò kadodo eye nàgate kpɔ.';
+  String get errSignInFailed =>
+      'Gegeɖeme medze edzi o. Kpɔ wò kadodo eye nàgate kpɔ.';
 
   @override
-  String get checkoutWaiting => 'Wu gaxexe la nu le wò browser me. App la awɔ eɖokui yeye ne ewu enu.';
+  String get checkoutWaiting =>
+      'Wu gaxexe la nu le wò browser me. App la awɔ eɖokui yeye ne ewu enu.';
 
   @override
-  String get paymentViaStripe => 'Gaxexe dedie le wò browser me to Stripe dzi. Ɖe asi le eŋu ɣesiaɣi.';
+  String get paymentViaStripe =>
+      'Gaxexe dedie le wò browser me to Stripe dzi. Ɖe asi le eŋu ɣesiaɣi.';
 
   @override
   String get paymentViaStore =>
@@ -1002,7 +1038,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get doubleOptionTitle => 'Zi Option zi eve';
 
   @override
-  String get doubleOptionSubtitle => 'Ne èzi Option zi eve kabakaba la, eya hã yɔa WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Ne èzi Option zi eve kabakaba la, eya hã yɔa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1024,7 +1061,12 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'ƒe $years', one: 'ƒe 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'ƒe $years',
+      one: 'ƒe 1',
+    );
     return '$_temp0';
   }
 
@@ -1125,7 +1167,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioRemove => 'Ɖe ɖa';
 
   @override
-  String get portfolioExcluded => 'Akpa siwo ƒe asi alo gatɔtrɔ asi meli o la, wometsɔ wo de akɔntabubu blibowo me o.';
+  String get portfolioExcluded =>
+      'Akpa siwo ƒe asi alo gatɔtrɔ asi meli o la, wometsɔ wo de akɔntabubu blibowo me o.';
 
   @override
   String get priceAlerts => 'Asi ŋuti nuxlɔ̃amewo';
@@ -1167,7 +1210,8 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Asi ŋuti nuxlɔ̃ame aɖeke meli haɖe o. Ʋu akpa aɖe eye nàzi gakpo la be nàɖo ɖeka.';
+  String get alertsEmpty =>
+      'Asi ŋuti nuxlɔ̃ame aɖeke meli haɖe o. Ʋu akpa aɖe eye nàzi gakpo la be nàɖo ɖeka.';
 
   @override
   String get alertsNote =>
@@ -1260,7 +1304,8 @@ class AppLocalizationsEe extends AppLocalizations {
   String get accountDeleted => 'Wotutu wò akɔnta.';
 
   @override
-  String get errDeleteAccount => 'Míete ŋu tutu akɔnta la o. Kpɔ wò kadodo eye nàgate kpɔ.';
+  String get errDeleteAccount =>
+      'Míete ŋu tutu akɔnta la o. Kpɔ wò kadodo eye nàgate kpɔ.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1286,4 +1331,10 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Subscription wɔa eɖokui yeye ƒe sia ƒe va se ɖe esime nàɖe asi le eŋu. Ne èŋlɔ ŋkɔ la, èlɔ̃ ɖe Zãzã ƒe Sewo kple Adzamenyawo ƒe Ɖoɖo dzi.';
+
+  @override
+  String get myAnalyses => 'Nye numekukuwo';
+
+  @override
+  String get navAlerts => 'Nuxlɔ̃amewo';
 }

@@ -13,7 +13,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Paýnamany surata düşüriň we ol barada hemme zady öwreniň.';
+  String get homeTagline =>
+      'Paýnamany surata düşüriň we ol barada hemme zady öwreniň.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analitik', one: '1 analitik');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analitik',
+      one: '1 analitik',
+    );
     return '$_temp0';
   }
 
@@ -334,10 +340,12 @@ class AppLocalizationsTk extends AppLocalizations {
   String get recognitionRawText => 'Suratdan okalan tekst';
 
   @override
-  String get errMissingAnthropicKey => 'Surat tanama sazlanmadyk (ANTHROPIC_API_KEY ýok). Tikeri el bilen giriziň.';
+  String get errMissingAnthropicKey =>
+      'Surat tanama sazlanmadyk (ANTHROPIC_API_KEY ýok). Tikeri el bilen giriziň.';
 
   @override
-  String get errRecognitionUnreachable => 'Tanama hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
+  String get errRecognitionUnreachable =>
+      'Tanama hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -348,22 +356,27 @@ class AppLocalizationsTk extends AppLocalizations {
   String get errRecognitionRefused => 'Tanama hyzmaty bu suraty işläp bilmedi.';
 
   @override
-  String get errRecognitionTruncated => 'Tanama hyzmatynyň jogaby kesildi. Gaýtadan synanyşyň.';
+  String get errRecognitionTruncated =>
+      'Tanama hyzmatynyň jogaby kesildi. Gaýtadan synanyşyň.';
 
   @override
-  String get errRecognitionBadResponse => 'Tanama hyzmatyndan garaşylmadyk jogap geldi.';
+  String get errRecognitionBadResponse =>
+      'Tanama hyzmatyndan garaşylmadyk jogap geldi.';
 
   @override
   String get errRecognitionEmpty => 'Tanama hyzmaty boş jogap gaýtardy.';
 
   @override
-  String get errMissingFinnhubKey => 'Bazar maglumatlary sazlanmadyk (FINNHUB_API_KEY ýok).';
+  String get errMissingFinnhubKey =>
+      'Bazar maglumatlary sazlanmadyk (FINNHUB_API_KEY ýok).';
 
   @override
-  String get errMarketUnreachable => 'Bazar maglumatlary hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
+  String get errMarketUnreachable =>
+      'Bazar maglumatlary hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
 
   @override
-  String get errMarketRateLimited => 'Bazar maglumatlary hyzmatyna gaty köp haýyş iberildi. Bir minut garaşyň.';
+  String get errMarketRateLimited =>
+      'Bazar maglumatlary hyzmatyna gaty köp haýyş iberildi. Bir minut garaşyň.';
 
   @override
   String errMarketHttp(String status) {
@@ -371,7 +384,8 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Bazar maglumatlary hyzmatyndan garaşylmadyk jogap geldi.';
+  String get errMarketBadResponse =>
+      'Bazar maglumatlary hyzmatyndan garaşylmadyk jogap geldi.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,7 +485,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get aiRegenerate => 'Täzeden döret';
 
   @override
-  String get aiGenerating => 'Seljerme taýýarlanýar… bu bir-iki minut alyp biler.';
+  String get aiGenerating =>
+      'Seljerme taýýarlanýar… bu bir-iki minut alyp biler.';
 
   @override
   String get aiSources => 'Çeşmeler';
@@ -486,10 +501,12 @@ class AppLocalizationsTk extends AppLocalizations {
       'Açyk maglumatlara we soňky habarlara esaslanýan, AI tarapyndan döredilen seljerme. Onda ýalňyşlyklar bolup ýa-da ol könelip biler we ol maýa goýum maslahaty däldir.';
 
   @override
-  String get errAiNotConfigured => 'AI seljermesi sazlanmadyk (ANTHROPIC_API_KEY ýok).';
+  String get errAiNotConfigured =>
+      'AI seljermesi sazlanmadyk (ANTHROPIC_API_KEY ýok).';
 
   @override
-  String get errAiUnreachable => 'AI hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
+  String get errAiUnreachable =>
+      'AI hyzmatyna birigip bolmady. Internet baglanyşygyňyzy barlaň.';
 
   @override
   String errAiHttp(String status) {
@@ -521,7 +538,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get rangeFiveYears => '5Ý';
 
   @override
-  String get chartUnavailable => 'Häzirki maglumat çeşmesinde bahalaryň taryhy elýeterli däl.';
+  String get chartUnavailable =>
+      'Häzirki maglumat çeşmesinde bahalaryň taryhy elýeterli däl.';
 
   @override
   String get sectionStatements => 'Maliýe hasabatlary (ýyllyk)';
@@ -548,7 +566,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operasion pul akymy';
 
   @override
-  String get statementsUnavailable => 'Bu paýnama üçin çap edilen maliýe hasabatlary elýeterli däl.';
+  String get statementsUnavailable =>
+      'Bu paýnama üçin çap edilen maliýe hasabatlary elýeterli däl.';
 
   @override
   String get launchAtLogin => 'Ulgama girilende işe göýber';
@@ -557,7 +576,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get hotkeyLabel => 'Global düwme utgaşmasy';
 
   @override
-  String get hotkeyRecordHint => 'Şu ýere basyň, soňra täze düwme utgaşmasyna basyň';
+  String get hotkeyRecordHint =>
+      'Şu ýere basyň, soňra täze düwme utgaşmasyna basyň';
 
   @override
   String get hotkeyReset => 'Deslapky ýagdaýa gaýtar';
@@ -578,7 +598,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get removeFromFavorites => 'Saýlananlardan aýyr';
 
   @override
-  String get noFavorites => 'Entek saýlananlar ýok. Goşmak üçin paýnamadaky ýyldyzjyga basyň.';
+  String get noFavorites =>
+      'Entek saýlananlar ýok. Goşmak üçin paýnamadaky ýyldyzjyga basyň.';
 
   @override
   String get displayCurrency => 'Görkeziş walýutasy';
@@ -625,7 +646,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get updateDownloading => 'Täzelenme fonda ýüklenýär…';
 
   @override
-  String get updateDownloaded => 'Täzelenme taýýar. Gurnamak üçin programmany täzeden işlediň.';
+  String get updateDownloaded =>
+      'Täzelenme taýýar. Gurnamak üçin programmany täzeden işlediň.';
 
   @override
   String get updateNow => 'Täzele';
@@ -634,7 +656,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get restartNow => 'Täzeden işlet';
 
   @override
-  String get updatesViaStore => 'Täzelenmeler programma dükany arkaly awtomatik gelýär.';
+  String get updatesViaStore =>
+      'Täzelenmeler programma dükany arkaly awtomatik gelýär.';
 
   @override
   String get updateCheckFailed => 'Täzelenmeleri barlap bolmady.';
@@ -682,7 +705,8 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Mugt synag möhletiňiz gutardy. Seljermäni dowam etmek üçin tarif saýlaň.';
+  String get trialExpired =>
+      'Mugt synag möhletiňiz gutardy. Seljermäni dowam etmek üçin tarif saýlaň.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -748,7 +772,8 @@ class AppLocalizationsTk extends AppLocalizations {
       'Bu döwür üçin seljermäňiz galmady. Tarifiňizi ýokarlandyryň ýa-da goşmaça seljerme satyn alyň.';
 
   @override
-  String get errTrialExpired => 'Mugt synag möhletiňiz gutardy. Dowam etmek üçin tarif saýlaň.';
+  String get errTrialExpired =>
+      'Mugt synag möhletiňiz gutardy. Dowam etmek üçin tarif saýlaň.';
 
   @override
   String get errNoPlan => 'AI seljermesi üçin işjeň tarif gerek.';
@@ -760,7 +785,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get usageTitle => 'Ulanyş';
 
   @override
-  String get demoPurchaseNote => 'Demo töleg: bu platformada satyn alyşlar simulýasiýa edilýär.';
+  String get demoPurchaseNote =>
+      'Demo töleg: bu platformada satyn alyşlar simulýasiýa edilýär.';
 
   @override
   String get mostPopular => 'Iň meşhur';
@@ -800,7 +826,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Ähli bölümli doly hasabat.';
 
   @override
-  String get aiDepthDeepDesc => 'Has köp web gözleg, bäsdeşler bilen deňeşdirme we has çuňňur jikme-jiklik.';
+  String get aiDepthDeepDesc =>
+      'Has köp web gözleg, bäsdeşler bilen deňeşdirme we has çuňňur jikme-jiklik.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,16 +855,19 @@ class AppLocalizationsTk extends AppLocalizations {
   String get aiReaderExperienced => 'Tejribeli';
 
   @override
-  String get aiReaderBeginnerDesc => 'Ýönekeý dil; her bir ýörite adalga düşündirilýär.';
+  String get aiReaderBeginnerDesc =>
+      'Ýönekeý dil; her bir ýörite adalga düşündirilýär.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Standart maliýe adalgalary bilen has dykyz tekst.';
+  String get aiReaderExperiencedDesc =>
+      'Standart maliýe adalgalary bilen has dykyz tekst.';
 
   @override
   String get aiCounterArgument => 'Iň güýçli garşy delil';
 
   @override
-  String get aiCounterArgumentDesc => 'Gysgaça mazmun hemişe öz netijesine garşy iň güýçli delil bilen tamamlanýar.';
+  String get aiCounterArgumentDesc =>
+      'Gysgaça mazmun hemişe öz netijesine garşy iň güýçli delil bilen tamamlanýar.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +960,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get upcomingEvents => 'Ýakynlaşýan wakalar';
 
   @override
-  String get outlookChartNote => 'Takmyny aralyklar; ähtimallyklar çaklama däl, takmyny bahalardyr.';
+  String get outlookChartNote =>
+      'Takmyny aralyklar; ähtimallyklar çaklama däl, takmyny bahalardyr.';
 
   @override
   String get accountTitle => 'Hasap';
@@ -945,10 +976,12 @@ class AppLocalizationsTk extends AppLocalizations {
   String get notSignedIn => 'Hasaba girilmedik';
 
   @override
-  String get accountBenefit => 'Abunaňyzyň ähli enjamlaryňyzda işlemegi üçin hasabyňyza giriň.';
+  String get accountBenefit =>
+      'Abunaňyzyň ähli enjamlaryňyzda işlemegi üçin hasabyňyza giriň.';
 
   @override
-  String get accountSyncedNote => 'Abunaňyz we galan seljermeleriňiz ähli enjamlarda birmeňzeş.';
+  String get accountSyncedNote =>
+      'Abunaňyz we galan seljermeleriňiz ähli enjamlarda birmeňzeş.';
 
   @override
   String get signInTitle => 'WhatStock-a giriň';
@@ -980,13 +1013,16 @@ class AppLocalizationsTk extends AppLocalizations {
   String get errInvalidEmail => 'Dogry e-poçta salgysyny giriziň.';
 
   @override
-  String get errSignInFailed => 'Girip bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.';
+  String get errSignInFailed =>
+      'Girip bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.';
 
   @override
-  String get checkoutWaiting => 'Tölegi brauzeriňizde tamamlaň. Töleg tamamlananda programma awtomatik täzelener.';
+  String get checkoutWaiting =>
+      'Tölegi brauzeriňizde tamamlaň. Töleg tamamlananda programma awtomatik täzelener.';
 
   @override
-  String get paymentViaStripe => 'Stripe arkaly brauzeriňizde howpsuz töleg. Islän wagtyňyz ýatyryp bilersiňiz.';
+  String get paymentViaStripe =>
+      'Stripe arkaly brauzeriňizde howpsuz töleg. Islän wagtyňyz ýatyryp bilersiňiz.';
 
   @override
   String get paymentViaStore =>
@@ -999,7 +1035,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get doubleOptionTitle => 'Option düwmesine iki gezek basmak';
 
   @override
-  String get doubleOptionSubtitle => 'Option düwmesine çalt iki gezek basmak hem WhatStock-y çagyrýar.';
+  String get doubleOptionSubtitle =>
+      'Option düwmesine çalt iki gezek basmak hem WhatStock-y çagyrýar.';
 
   @override
   String get doubleOptionPermission =>
@@ -1021,7 +1058,12 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ýyl', one: '1 ýyl');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ýyl',
+      one: '1 ýyl',
+    );
     return '$_temp0';
   }
 
@@ -1122,7 +1164,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get portfolioRemove => 'Aýyr';
 
   @override
-  String get portfolioExcluded => 'Bahasy ýa-da walýuta hümmeti bolmadyk pozisiýalar jemlere goşulmaýar.';
+  String get portfolioExcluded =>
+      'Bahasy ýa-da walýuta hümmeti bolmadyk pozisiýalar jemlere goşulmaýar.';
 
   @override
   String get priceAlerts => 'Baha duýduryşlary';
@@ -1164,7 +1207,8 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Entek baha duýduryşy ýok. Duýduryş goýmak üçin paýnamany açyň we jaň nyşanyna basyň.';
+  String get alertsEmpty =>
+      'Entek baha duýduryşy ýok. Duýduryş goýmak üçin paýnamany açyň we jaň nyşanyna basyň.';
 
   @override
   String get alertsNote =>
@@ -1257,7 +1301,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get accountDeleted => 'Hasabyňyz pozuldy.';
 
   @override
-  String get errDeleteAccount => 'Hasaby pozup bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.';
+  String get errDeleteAccount =>
+      'Hasaby pozup bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1283,4 +1328,10 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz.';
+
+  @override
+  String get myAnalyses => 'Meniň seljermelerim';
+
+  @override
+  String get navAlerts => 'Duýduryşlar';
 }

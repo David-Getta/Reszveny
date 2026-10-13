@@ -82,7 +82,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get about => 'ايپ بابت';
 
   @override
-  String get disclaimer => 'هي ايپ صرف معلومات ڏئي ٿي ۽ سيڙپڪاري جو مشورو ناهي. ڊيٽا دير سان يا غلط ٿي سگهي ٿي.';
+  String get disclaimer =>
+      'هي ايپ صرف معلومات ڏئي ٿي ۽ سيڙپڪاري جو مشورو ناهي. ڊيٽا دير سان يا غلط ٿي سگهي ٿي.';
 
   @override
   String dataSource(String source) {
@@ -305,7 +306,12 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تجزيه نگار', one: '1 تجزيه نگار');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تجزيه نگار',
+      one: '1 تجزيه نگار',
+    );
     return '$_temp0';
   }
 
@@ -337,7 +343,8 @@ class AppLocalizationsSd extends AppLocalizations {
       'تصوير جي سڃاڻپ ترتيب نه ڏني وئي آهي (ANTHROPIC_API_KEY ناهي). ٽڪر هٿ سان داخل ڪريو.';
 
   @override
-  String get errRecognitionUnreachable => 'سڃاڻپ سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
+  String get errRecognitionUnreachable =>
+      'سڃاڻپ سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -348,7 +355,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get errRecognitionRefused => 'سڃاڻپ سروس هن تصوير تي عمل نه ڪري سگهي.';
 
   @override
-  String get errRecognitionTruncated => 'سڃاڻپ جو جواب اڌ ۾ ڪٽجي ويو. مهرباني ڪري ٻيهر ڪوشش ڪريو.';
+  String get errRecognitionTruncated =>
+      'سڃاڻپ جو جواب اڌ ۾ ڪٽجي ويو. مهرباني ڪري ٻيهر ڪوشش ڪريو.';
 
   @override
   String get errRecognitionBadResponse => 'سڃاڻپ سروس کان غير متوقع جواب آيو.';
@@ -357,10 +365,12 @@ class AppLocalizationsSd extends AppLocalizations {
   String get errRecognitionEmpty => 'سڃاڻپ سروس خالي جواب موٽايو.';
 
   @override
-  String get errMissingFinnhubKey => 'مارڪيٽ ڊيٽا ترتيب نه ڏني وئي آهي (FINNHUB_API_KEY ناهي).';
+  String get errMissingFinnhubKey =>
+      'مارڪيٽ ڊيٽا ترتيب نه ڏني وئي آهي (FINNHUB_API_KEY ناهي).';
 
   @override
-  String get errMarketUnreachable => 'مارڪيٽ ڊيٽا سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
+  String get errMarketUnreachable =>
+      'مارڪيٽ ڊيٽا سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
 
   @override
   String get errMarketRateLimited =>
@@ -472,7 +482,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get aiRegenerate => 'ٻيهر تيار ڪريو';
 
   @override
-  String get aiGenerating => 'تجزيو تيار ٿي رهيو آهي… ان ۾ هڪ ٻه منٽ لڳي سگهن ٿا.';
+  String get aiGenerating =>
+      'تجزيو تيار ٿي رهيو آهي… ان ۾ هڪ ٻه منٽ لڳي سگهن ٿا.';
 
   @override
   String get aiSources => 'ذريعا';
@@ -487,10 +498,12 @@ class AppLocalizationsSd extends AppLocalizations {
       'عوامي ڊيٽا ۽ تازين خبرن تي ٻڌل AI جو تيار ڪيل تجزيو. ان ۾ غلطيون ٿي سگهن ٿيون يا اهو پراڻو ٿي سگهي ٿو، ۽ اهو سيڙپڪاري جو مشورو ناهي.';
 
   @override
-  String get errAiNotConfigured => 'AI تجزيو ترتيب نه ڏنو ويو آهي (ANTHROPIC_API_KEY ناهي).';
+  String get errAiNotConfigured =>
+      'AI تجزيو ترتيب نه ڏنو ويو آهي (ANTHROPIC_API_KEY ناهي).';
 
   @override
-  String get errAiUnreachable => 'AI سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
+  String get errAiUnreachable =>
+      'AI سروس سان رابطو نه ٿي سگهيو. پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +535,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get rangeFiveYears => '5 سال';
 
   @override
-  String get chartUnavailable => 'موجوده ڊيٽا ذريعي کان قيمت جي تاريخ موجود ناهي.';
+  String get chartUnavailable =>
+      'موجوده ڊيٽا ذريعي کان قيمت جي تاريخ موجود ناهي.';
 
   @override
   String get sectionStatements => 'مالي گوشوارا (سالياني)';
@@ -549,7 +563,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get labelOperatingCashFlow => 'آپريٽنگ ڪيش فلو';
 
   @override
-  String get statementsUnavailable => 'هن شيئر لاءِ رپورٽ ٿيل مالي گوشوارا موجود ناهن.';
+  String get statementsUnavailable =>
+      'هن شيئر لاءِ رپورٽ ٿيل مالي گوشوارا موجود ناهن.';
 
   @override
   String get launchAtLogin => 'لاگ ان تي شروع ڪريو';
@@ -579,7 +594,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get removeFromFavorites => 'پسنديده مان هٽايو';
 
   @override
-  String get noFavorites => 'اڃا ڪو پسنديده ناهي. شامل ڪرڻ لاءِ ڪنهن شيئر جي تاري تي ٽيپ ڪريو.';
+  String get noFavorites =>
+      'اڃا ڪو پسنديده ناهي. شامل ڪرڻ لاءِ ڪنهن شيئر جي تاري تي ٽيپ ڪريو.';
 
   @override
   String get displayCurrency => 'ڏيکارڻ جي ڪرنسي';
@@ -626,7 +642,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get updateDownloading => 'اپڊيٽ پس منظر ۾ ڊائونلوڊ ٿي رهي آهي…';
 
   @override
-  String get updateDownloaded => 'اپڊيٽ تيار آهي. انسٽال ڪرڻ لاءِ ٻيهر شروع ڪريو.';
+  String get updateDownloaded =>
+      'اپڊيٽ تيار آهي. انسٽال ڪرڻ لاءِ ٻيهر شروع ڪريو.';
 
   @override
   String get updateNow => 'اپڊيٽ ڪريو';
@@ -683,7 +700,8 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'توهان جو مفت آزمائشي دور ختم ٿي ويو. تجزيا جاري رکڻ لاءِ ڪو پلان چونڊيو.';
+  String get trialExpired =>
+      'توهان جو مفت آزمائشي دور ختم ٿي ويو. تجزيا جاري رکڻ لاءِ ڪو پلان چونڊيو.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -749,7 +767,8 @@ class AppLocalizationsSd extends AppLocalizations {
       'هن مدت لاءِ توهان وٽ ڪو تجزيو باقي ناهي. پنهنجو پلان اپگريڊ ڪريو يا اضافي تجزيا خريد ڪريو.';
 
   @override
-  String get errTrialExpired => 'توهان جو مفت آزمائشي دور ختم ٿي ويو. جاري رکڻ لاءِ ڪو پلان چونڊيو.';
+  String get errTrialExpired =>
+      'توهان جو مفت آزمائشي دور ختم ٿي ويو. جاري رکڻ لاءِ ڪو پلان چونڊيو.';
 
   @override
   String get errNoPlan => 'AI تجزيي لاءِ فعال پلان گهربل آهي.';
@@ -761,7 +780,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get usageTitle => 'استعمال';
 
   @override
-  String get demoPurchaseNote => 'ڊيمو بلنگ: هن پليٽ فارم تي خريداريون نقلي آهن.';
+  String get demoPurchaseNote =>
+      'ڊيمو بلنگ: هن پليٽ فارم تي خريداريون نقلي آهن.';
 
   @override
   String get mostPopular => 'سڀ کان مشهور';
@@ -801,7 +821,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get aiDepthStandardDesc => 'سڀني حصن سان مڪمل رپورٽ.';
 
   @override
-  String get aiDepthDeepDesc => 'وڌيڪ ويب ڳولائون، هم پله ڪمپنين سان ڀيٽ ۽ وڌيڪ تفصيل.';
+  String get aiDepthDeepDesc =>
+      'وڌيڪ ويب ڳولائون، هم پله ڪمپنين سان ڀيٽ ۽ وڌيڪ تفصيل.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -829,16 +850,19 @@ class AppLocalizationsSd extends AppLocalizations {
   String get aiReaderExperienced => 'تجربيڪار';
 
   @override
-  String get aiReaderBeginnerDesc => 'سادي ٻولي؛ هر فني اصطلاح جي وضاحت ڪئي ويندي آهي.';
+  String get aiReaderBeginnerDesc =>
+      'سادي ٻولي؛ هر فني اصطلاح جي وضاحت ڪئي ويندي آهي.';
 
   @override
-  String get aiReaderExperiencedDesc => 'معياري مالي اصطلاحن سان وڌيڪ جامع متن.';
+  String get aiReaderExperiencedDesc =>
+      'معياري مالي اصطلاحن سان وڌيڪ جامع متن.';
 
   @override
   String get aiCounterArgument => 'سڀ کان مضبوط جوابي دليل';
 
   @override
-  String get aiCounterArgumentDesc => 'خلاصو هميشه پنهنجي ئي نتيجي خلاف سڀ کان مضبوط دليل تي ختم ٿيندو آهي.';
+  String get aiCounterArgumentDesc =>
+      'خلاصو هميشه پنهنجي ئي نتيجي خلاف سڀ کان مضبوط دليل تي ختم ٿيندو آهي.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -931,7 +955,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get upcomingEvents => 'ايندڙ واقعا';
 
   @override
-  String get outlookChartNote => 'اندازاً حدون؛ امڪان رڳو موٽا اندازا آهن، اڳڪٿيون نه.';
+  String get outlookChartNote =>
+      'اندازاً حدون؛ امڪان رڳو موٽا اندازا آهن، اڳڪٿيون نه.';
 
   @override
   String get accountTitle => 'اڪائونٽ';
@@ -946,10 +971,12 @@ class AppLocalizationsSd extends AppLocalizations {
   String get notSignedIn => 'سائن ان ٿيل ناهي';
 
   @override
-  String get accountBenefit => 'سائن ان ڪريو ته جيئن توهان جي سبسڪرپشن توهان جي سڀني ڊوائيسن تي ڪم ڪري.';
+  String get accountBenefit =>
+      'سائن ان ڪريو ته جيئن توهان جي سبسڪرپشن توهان جي سڀني ڊوائيسن تي ڪم ڪري.';
 
   @override
-  String get accountSyncedNote => 'توهان جي سبسڪرپشن ۽ باقي تجزيا هر ڊوائيس تي ساڳيا آهن.';
+  String get accountSyncedNote =>
+      'توهان جي سبسڪرپشن ۽ باقي تجزيا هر ڊوائيس تي ساڳيا آهن.';
 
   @override
   String get signInTitle => 'WhatStock ۾ سائن ان ڪريو';
@@ -981,13 +1008,16 @@ class AppLocalizationsSd extends AppLocalizations {
   String get errInvalidEmail => 'مهرباني ڪري صحيح اي ميل پتو داخل ڪريو.';
 
   @override
-  String get errSignInFailed => 'سائن ان ناڪام ٿيو. پنهنجو ڪنيڪشن چيڪ ڪري ٻيهر ڪوشش ڪريو.';
+  String get errSignInFailed =>
+      'سائن ان ناڪام ٿيو. پنهنجو ڪنيڪشن چيڪ ڪري ٻيهر ڪوشش ڪريو.';
 
   @override
-  String get checkoutWaiting => 'پنهنجي برائوزر ۾ ادائگي مڪمل ڪريو. ادائگي مڪمل ٿيڻ تي ايپ پاڻمرادو اپڊيٽ ٿي ويندي.';
+  String get checkoutWaiting =>
+      'پنهنجي برائوزر ۾ ادائگي مڪمل ڪريو. ادائگي مڪمل ٿيڻ تي ايپ پاڻمرادو اپڊيٽ ٿي ويندي.';
 
   @override
-  String get paymentViaStripe => 'Stripe ذريعي برائوزر ۾ محفوظ ادائگي. ڪنهن به وقت منسوخ ڪري سگهو ٿا.';
+  String get paymentViaStripe =>
+      'Stripe ذريعي برائوزر ۾ محفوظ ادائگي. ڪنهن به وقت منسوخ ڪري سگهو ٿا.';
 
   @override
   String get paymentViaStore =>
@@ -1000,7 +1030,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get doubleOptionTitle => 'Option ٻه ڀيرا دٻايو';
 
   @override
-  String get doubleOptionSubtitle => 'Option بٽڻ کي جلدي ٻه ڀيرا دٻائڻ سان به WhatStock کلي ٿو.';
+  String get doubleOptionSubtitle =>
+      'Option بٽڻ کي جلدي ٻه ڀيرا دٻائڻ سان به WhatStock کلي ٿو.';
 
   @override
   String get doubleOptionPermission =>
@@ -1022,7 +1053,12 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years سال', one: '1 سال');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years سال',
+      one: '1 سال',
+    );
     return '$_temp0';
   }
 
@@ -1123,7 +1159,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioRemove => 'هٽايو';
 
   @override
-  String get portfolioExcluded => 'جن پوزيشنن جي قيمت يا مٽا سٽا جي شرح موجود ناهي، اهي مجموعن ۾ شامل ناهن.';
+  String get portfolioExcluded =>
+      'جن پوزيشنن جي قيمت يا مٽا سٽا جي شرح موجود ناهي، اهي مجموعن ۾ شامل ناهن.';
 
   @override
   String get priceAlerts => 'قيمت جا الرٽ';
@@ -1165,7 +1202,8 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'اڃا ڪو قيمت جو الرٽ ناهي. الرٽ لڳائڻ لاءِ ڪو شيئر کوليو ۽ گهنٽي تي ٽيپ ڪريو.';
+  String get alertsEmpty =>
+      'اڃا ڪو قيمت جو الرٽ ناهي. الرٽ لڳائڻ لاءِ ڪو شيئر کوليو ۽ گهنٽي تي ٽيپ ڪريو.';
 
   @override
   String get alertsNote =>
@@ -1248,7 +1286,8 @@ class AppLocalizationsSd extends AppLocalizations {
       'توهان جو اڪائونٽ ۽ اسان جي سرور تي محفوظ هر شيءِ (اي ميل، ڪوٽا، استعمال) هميشه لاءِ ميٽي ويندي، ۽ اڻ استعمال ٿيل تجزيا ضايع ٿي ويندا. برائوزر ۾ ادا ڪيل سبسڪرپشن فوراً منسوخ ٿي ويندي؛ App Store يا Google Play جي سبسڪرپشن اسٽور جي سيٽنگن ۾ منسوخ ڪرڻي پوندي.';
 
   @override
-  String get deleteLocalData => 'هن ڊوائيس تي موجود ڊيٽا به ميٽيو (پورٽ فوليو، الرٽ، پسنديده، تاريخ، محفوظ ڪيل تجزيا)';
+  String get deleteLocalData =>
+      'هن ڊوائيس تي موجود ڊيٽا به ميٽيو (پورٽ فوليو، الرٽ، پسنديده، تاريخ، محفوظ ڪيل تجزيا)';
 
   @override
   String get deleteAccountConfirm => 'هميشه لاءِ ميٽيو';
@@ -1257,7 +1296,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get accountDeleted => 'توهان جو اڪائونٽ ميٽيو ويو.';
 
   @override
-  String get errDeleteAccount => 'اڪائونٽ ميٽي نه سگهياسين. پنهنجو ڪنيڪشن چيڪ ڪري ٻيهر ڪوشش ڪريو.';
+  String get errDeleteAccount =>
+      'اڪائونٽ ميٽي نه سگهياسين. پنهنجو ڪنيڪشن چيڪ ڪري ٻيهر ڪوشش ڪريو.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1283,4 +1323,10 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'سالياني سبسڪرپشن هر سال پاڻمرادو تجديد ٿيندي رهندي جيستائين توهان ان کي منسوخ نه ڪريو. سبسڪرائيب ڪري توهان استعمال جا شرط ۽ رازداري پاليسي قبول ڪريو ٿا.';
+
+  @override
+  String get myAnalyses => 'منهنجا تجزيا';
+
+  @override
+  String get navAlerts => 'الرٽ';
 }

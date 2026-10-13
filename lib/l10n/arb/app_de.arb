@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 Monate gratis",
   "perYear": "/ Jahr",
   "pricePerMonthApprox": "≈ {price} pro Monat",
-  "subscriptionLegalYearly": "Jahresabos verlängern sich jährlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung."
+  "subscriptionLegalYearly": "Jahresabos verlängern sich jährlich automatisch, bis du kündigst. Mit dem Abo akzeptierst du die Nutzungsbedingungen und die Datenschutzerklärung.",
+  "myAnalyses": "Meine Analysen",
+  "navAlerts": "Alarme"
 }

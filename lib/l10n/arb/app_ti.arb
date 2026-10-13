@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 ወርሒ ብነጻ",
   "perYear": "/ ዓመት",
   "pricePerMonthApprox": "ኣብ ወርሒ ≈ {price}",
-  "subscriptionLegalYearly": "ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።"
+  "subscriptionLegalYearly": "ዓመታዊ ምዝገባታት ክሳብ ትሰርዝዎም ኣብ ነፍሲ ወከፍ ዓመት ብኣውቶማቲክ ይሕደሱ። ብምምዝጋብ ውዕል ኣጠቓቕማን ፖሊሲ ብሕትውናን ትቕበሉ።",
+  "myAnalyses": "ትንተናታተይ",
+  "navAlerts": "መጠንቀቕታታት"
 }

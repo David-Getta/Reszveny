@@ -352,26 +352,32 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Service wa dimanya bimfuanyi wapangila kuenza mudimu ne tshimfuanyi etshi.';
+  String get errRecognitionRefused =>
+      'Service wa dimanya bimfuanyi wapangila kuenza mudimu ne tshimfuanyi etshi.';
 
   @override
-  String get errRecognitionTruncated => 'Diandamuna dia dimanya bimfuanyi diakosoka. Teta kabidi.';
+  String get errRecognitionTruncated =>
+      'Diandamuna dia dimanya bimfuanyi diakosoka. Teta kabidi.';
 
   @override
-  String get errRecognitionBadResponse => 'Diandamuna dia kukemesha kudi service wa dimanya bimfuanyi.';
+  String get errRecognitionBadResponse =>
+      'Diandamuna dia kukemesha kudi service wa dimanya bimfuanyi.';
 
   @override
-  String get errRecognitionEmpty => 'Service wa dimanya bimfuanyi wafila diandamuna kadiyi ne tshintu.';
+  String get errRecognitionEmpty =>
+      'Service wa dimanya bimfuanyi wafila diandamuna kadiyi ne tshintu.';
 
   @override
-  String get errMissingFinnhubKey => 'Katuena mua kupeta mamanyisha a tshisalu (kakuena FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Katuena mua kupeta mamanyisha a tshisalu (kakuena FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Katuena mua kufika ku service wa mamanyisha a tshisalu. Tangila connexion webe wa internet.';
 
   @override
-  String get errMarketRateLimited => 'Malomba a bungi bikole ku service wa mamanyisha a tshisalu. Indila minite umue.';
+  String get errMarketRateLimited =>
+      'Malomba a bungi bikole ku service wa mamanyisha a tshisalu. Indila minite umue.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +385,8 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Diandamuna dia kukemesha kudi service wa mamanyisha a tshisalu.';
+  String get errMarketBadResponse =>
+      'Diandamuna dia kukemesha kudi service wa mamanyisha a tshisalu.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +486,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get aiRegenerate => 'Enza kabidi';
 
   @override
-  String get aiGenerating => 'Tudi tulongolola dikonkonona… bidi mua kuangata minite umue anyi ibidi.';
+  String get aiGenerating =>
+      'Tudi tulongolola dikonkonona… bidi mua kuangata minite umue anyi ibidi.';
 
   @override
   String get aiSources => 'Mpokolo';
@@ -494,10 +502,12 @@ class AppLocalizationsLua extends AppLocalizations {
       'Dikonkonona edi difunda kudi AI ku mamanyisha a patoke ne lumu lupia. Didi mua kuikala ne bilema anyi kuikala dia kale, ne kadiena mibelu ya kuteka mfranga.';
 
   @override
-  String get errAiNotConfigured => 'Katuena mua kuenza dikonkonona dia AI (kakuena ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Katuena mua kuenza dikonkonona dia AI (kakuena ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Katuena mua kufika ku service wa AI. Tangila connexion webe wa internet.';
+  String get errAiUnreachable =>
+      'Katuena mua kufika ku service wa AI. Tangila connexion webe wa internet.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +539,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get rangeFiveYears => 'Bidimu 5';
 
   @override
-  String get chartUnavailable => 'Kakuena mishinga ya kale mu mpokolo wa mamanyisha eu.';
+  String get chartUnavailable =>
+      'Kakuena mishinga ya kale mu mpokolo wa mamanyisha eu.';
 
   @override
   String get sectionStatements => 'Rapport ya mfranga (tshidimu ne tshidimu)';
@@ -556,7 +567,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash flow wa mudimu';
 
   @override
-  String get statementsUnavailable => 'Kakuena rapport ya mfranga bua action eu.';
+  String get statementsUnavailable =>
+      'Kakuena rapport ya mfranga bua action eu.';
 
   @override
   String get launchAtLogin => 'Bulula pa kubuela';
@@ -586,7 +598,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get removeFromFavorites => 'Umbusha mu biudi musue';
 
   @override
-  String get noFavorites => 'Kakuena tshintu apa. Finya mutoto pa action bua kubueja.';
+  String get noFavorites =>
+      'Kakuena tshintu apa. Finya mutoto pa action bua kubueja.';
 
   @override
   String get displayCurrency => 'Mfranga ya kuleja';
@@ -633,7 +646,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get updateDownloading => 'Tudi tupuekesha mise à jour kunyima…';
 
   @override
-  String get updateDownloaded => 'Mise à jour udi mulongolola. Tuadija kabidi bua kujikija.';
+  String get updateDownloaded =>
+      'Mise à jour udi mulongolola. Tuadija kabidi bua kujikija.';
 
   @override
   String get updateNow => 'Mise à jour';
@@ -642,7 +656,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get restartNow => 'Tuadija kabidi';
 
   @override
-  String get updatesViaStore => 'Mise à jour idi ilua anu ku store wa application.';
+  String get updatesViaStore =>
+      'Mise à jour idi ilua anu ku store wa application.';
 
   @override
   String get updateCheckFailed => 'Katuena mua kukeba mise à jour.';
@@ -690,7 +705,8 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka ne kukonkonona.';
+  String get trialExpired =>
+      'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka ne kukonkonona.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -720,7 +736,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get perMonth => '/ ngondo';
 
   @override
-  String get extraPacksTitle => 'Udi ne dijinga dia bungi? Sumba makonkonona a kubueja';
+  String get extraPacksTitle =>
+      'Udi ne dijinga dia bungi? Sumba makonkonona a kubueja';
 
   @override
   String get extraPacksHint =>
@@ -736,7 +753,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get manageSubscription => 'Lombola abonnement';
 
   @override
-  String get purchaseSuccess => 'Twasakidila! Bintu biuvua musumbe bidi bienza mudimu.';
+  String get purchaseSuccess =>
+      'Twasakidila! Bintu biuvua musumbe bidi bienza mudimu.';
 
   @override
   String get purchasePending => 'Disumba didi dindila…';
@@ -756,10 +774,12 @@ class AppLocalizationsLua extends AppLocalizations {
       'Kakuena makonkonona mashadile mu tshikondo etshi. Bandisha forfait webe anyi sumba makonkonona a kubueja.';
 
   @override
-  String get errTrialExpired => 'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka.';
+  String get errTrialExpired =>
+      'Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka.';
 
   @override
-  String get errNoPlan => 'Udi ne dijinga dia forfait udi wenza mudimu bua dikonkonona dia AI.';
+  String get errNoPlan =>
+      'Udi ne dijinga dia forfait udi wenza mudimu bua dikonkonona dia AI.';
 
   @override
   String get viewPlans => 'Tangila forfait';
@@ -768,7 +788,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get usageTitle => 'Dienzela mudimu';
 
   @override
-  String get demoPurchaseNote => 'Difuta dia démo: disumba mu plateforme eu ndia manaya.';
+  String get demoPurchaseNote =>
+      'Difuta dia démo: disumba mu plateforme eu ndia manaya.';
 
   @override
   String get mostPopular => 'Udi bantu basue bikole';
@@ -808,7 +829,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapport mujima ne bitupa bionso.';
 
   @override
-  String get aiDepthDeepDesc => 'Makeba a bungi ku internet, difuanyikija ne kompanyi ya bakuabu ne malu a bungi.';
+  String get aiDepthDeepDesc =>
+      'Makeba a bungi ku internet, difuanyikija ne kompanyi ya bakuabu ne malu a bungi.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -836,10 +858,12 @@ class AppLocalizationsLua extends AppLocalizations {
   String get aiReaderExperienced => 'Mumanyi';
 
   @override
-  String get aiReaderBeginnerDesc => 'Muakulu mupepele; dîyi dionso dia technique didi diumvuijibua.';
+  String get aiReaderBeginnerDesc =>
+      'Muakulu mupepele; dîyi dionso dia technique didi diumvuijibua.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Mifundu mikole, ne mêyi a mfranga adi bamanye.';
+  String get aiReaderExperiencedDesc =>
+      'Mifundu mikole, ne mêyi a mfranga adi bamanye.';
 
   @override
   String get aiCounterArgument => 'Bualu bukole bua kubenga';
@@ -853,7 +877,8 @@ class AppLocalizationsLua extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Too ne misangu $count ya dikeba ku internet bua dikonkonona dimue ne forfait webe',
+      other:
+          'Too ne misangu $count ya dikeba ku internet bua dikonkonona dimue ne forfait webe',
       one: 'Too ne musangu 1 wa dikeba ku internet bua dikonkonona dimue ne forfait webe',
     );
     return '$_temp0';
@@ -955,10 +980,12 @@ class AppLocalizationsLua extends AppLocalizations {
   String get notSignedIn => 'Kuena mubuele';
 
   @override
-  String get accountBenefit => 'Buela bua abonnement webe enze mudimu ku bintu biebe bionso.';
+  String get accountBenefit =>
+      'Buela bua abonnement webe enze mudimu ku bintu biebe bionso.';
 
   @override
-  String get accountSyncedNote => 'Abonnement webe ne makonkonona mashadile bidi bimue ku bintu bionso.';
+  String get accountSyncedNote =>
+      'Abonnement webe ne makonkonona mashadile bidi bimue ku bintu bionso.';
 
   @override
   String get signInTitle => 'Buela mu WhatStock';
@@ -990,14 +1017,16 @@ class AppLocalizationsLua extends AppLocalizations {
   String get errInvalidEmail => 'Funda adresse e-mail muimpe.';
 
   @override
-  String get errSignInFailed => 'Kubuela kuapangila. Tangila connexion webe, pashishe teta kabidi.';
+  String get errSignInFailed =>
+      'Kubuela kuapangila. Tangila connexion webe, pashishe teta kabidi.';
 
   @override
   String get checkoutWaiting =>
       'Jikija difuta mu navigateur webe. Paudi ujikija, application udi udivuija mupia nkayende.';
 
   @override
-  String get paymentViaStripe => 'Difuta dilama bimpe mu navigateur webe ku Stripe. Udi mua kulekela dîba dionso.';
+  String get paymentViaStripe =>
+      'Difuta dilama bimpe mu navigateur webe ku Stripe. Udi mua kulekela dîba dionso.';
 
   @override
   String get paymentViaStore =>
@@ -1010,7 +1039,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get doubleOptionTitle => 'Finya Option misangu ibidi';
 
   @override
-  String get doubleOptionSubtitle => 'Kufinya touche Option misangu ibidi lukasa kudi kubikila kabidi WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Kufinya touche Option misangu ibidi lukasa kudi kubikila kabidi WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1032,7 +1062,12 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'bidimu $years', one: 'tshidimu 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'bidimu $years',
+      one: 'tshidimu 1',
+    );
     return '$_temp0';
   }
 
@@ -1133,7 +1168,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioRemove => 'Umbusha';
 
   @override
-  String get portfolioExcluded => 'Katuena tubala position kayiyi ne mushinga anyi taux wa mfranga mu mishinga yonso.';
+  String get portfolioExcluded =>
+      'Katuena tubala position kayiyi ne mushinga anyi taux wa mfranga mu mishinga yonso.';
 
   @override
   String get priceAlerts => 'Alerte ya mushinga';
@@ -1175,7 +1211,8 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Kakuena alerte apa. Bulula action, finya cloche bua kuteka umue.';
+  String get alertsEmpty =>
+      'Kakuena alerte apa. Bulula action, finya cloche bua kuteka umue.';
 
   @override
   String get alertsNote =>
@@ -1268,7 +1305,8 @@ class AppLocalizationsLua extends AppLocalizations {
   String get accountDeleted => 'Tuajimija compte webe.';
 
   @override
-  String get errDeleteAccount => 'Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.';
+  String get errDeleteAccount =>
+      'Katuena mua kujimija compte. Tangila connexion webe, pashishe teta kabidi.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1294,4 +1332,10 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Abonnement wa tshidimu udi utuadija kabidi nkayende tshidimu tshionso too ne paudi ulekela. Paudi ubuela mu abonnement, udi witaba Mikenji ya dienzela mudimu ne Mikenji ya dilama dia mamanyisha ebe.';
+
+  @override
+  String get myAnalyses => 'Makonkonona anyi';
+
+  @override
+  String get navAlerts => 'Alerte';
 }

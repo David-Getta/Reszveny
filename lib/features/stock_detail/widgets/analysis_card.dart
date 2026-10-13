@@ -16,6 +16,7 @@ import '../../../theme/app_theme.dart';
 import 'outlook_view.dart';
 import 'section_card.dart';
 import '../../../widgets/collapsible.dart';
+import '../../../core/share/share_text.dart';
 
 /// Az AI-elemzés kártyája: gombnyomásra készül (tokenköltség), utána a
 /// szekciók – hírek összefoglalása, üzlet, erősségek, kockázatok és rejtett
@@ -94,10 +95,37 @@ class _AnalysisCardState extends State<AnalysisCard> {
           collapseKey: 'ai',
           trailing: report == null
               ? null
-              : TextButton.icon(
-                  onPressed: loading ? null : () => _generate(force: true),
-                  icon: const Icon(Icons.refresh_rounded, size: 18),
-                  label: Text(l10n.aiRegenerate),
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    // Megosztás: az elemzés lényege szövegként (WhatsApp, e-mail…).
+                    Builder(
+                      builder: (btnContext) => IconButton(
+                        key: const ValueKey('share-analysis'),
+                        tooltip: MaterialLocalizations.of(context).shareButtonLabel,
+                        icon: const Icon(Icons.ios_share_rounded, size: 20),
+                        onPressed: loading
+                            ? null
+                            : () => shareText(
+                                reportShareText(
+                                  report,
+                                  companyName: widget.details.profile?.name ?? '',
+                                  generatedLine: l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt)),
+                                  disclaimer: l10n.aiDisclaimer,
+                                ),
+                                subject: '${report.symbol} · WhatStock',
+                                origin: shareOriginOf(btnContext),
+                              ),
+                      ),
+                    ),
+                    Flexible(
+                      child: TextButton.icon(
+                        onPressed: loading ? null : () => _generate(force: true),
+                        icon: const Icon(Icons.refresh_rounded, size: 18),
+                        label: Text(l10n.aiRegenerate, overflow: TextOverflow.ellipsis),
+                      ),
+                    ),
+                  ],
                 ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

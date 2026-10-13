@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 meseca brezplačno",
   "perYear": "/ leto",
   "pricePerMonthApprox": "≈ {price} na mesec",
-  "subscriptionLegalYearly": "Letna naročnina se samodejno podaljša vsako leto, dokler je ne prekličete. Z naročnino sprejemate Pogoje uporabe in Pravilnik o zasebnosti."
+  "subscriptionLegalYearly": "Letna naročnina se samodejno podaljša vsako leto, dokler je ne prekličete. Z naročnino sprejemate Pogoje uporabe in Pravilnik o zasebnosti.",
+  "myAnalyses": "Moje analize",
+  "navAlerts": "Opozorila"
 }

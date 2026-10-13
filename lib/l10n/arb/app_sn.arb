@@ -369,5 +369,7 @@
   "yearlyDiscount": "Mwedzi 2 mahara",
   "perYear": "/ gore",
   "pricePerMonthApprox": "≈ {price} pamwedzi",
-  "subscriptionLegalYearly": "Kunyoresa kwegore kunovandudzwa kwega gore rega rega kusvika wakanzura. Nekunyoresa unobvuma Mitemo Yekushandisa neMutemo Wekuvanzika."
+  "subscriptionLegalYearly": "Kunyoresa kwegore kunovandudzwa kwega gore rega rega kusvika wakanzura. Nekunyoresa unobvuma Mitemo Yekushandisa neMutemo Wekuvanzika.",
+  "myAnalyses": "Ongororo dzangu",
+  "navAlerts": "Zviziviso"
 }

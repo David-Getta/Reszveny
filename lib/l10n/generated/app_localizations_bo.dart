@@ -13,7 +13,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ཧུར་ཁག་ཅིག་གི་པར་བླངས་ནས་དེའི་སྐོར་ཚང་མ་ཤེས་རྟོགས་གནང་།';
+  String get homeTagline =>
+      'ཧུར་ཁག་ཅིག་གི་པར་བླངས་ནས་དེའི་སྐོར་ཚང་མ་ཤེས་རྟོགས་གནང་།';
 
   @override
   String get homeHint =>
@@ -306,7 +307,11 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'དབྱེ་ཞིབ་པ་ $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'དབྱེ་ཞིབ་པ་ $count',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +352,31 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ངོས་འཛིན་ཞབས་ཞུས་པར་རིས་འདི་ཐག་གཅོད་བྱེད་མ་ཐུབ།';
+  String get errRecognitionRefused =>
+      'ངོས་འཛིན་ཞབས་ཞུས་པར་རིས་འདི་ཐག་གཅོད་བྱེད་མ་ཐུབ།';
 
   @override
-  String get errRecognitionTruncated => 'ངོས་འཛིན་གྱི་ལན་བར་ཆད་བྱུང་། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+  String get errRecognitionTruncated =>
+      'ངོས་འཛིན་གྱི་ལན་བར་ཆད་བྱུང་། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
-  String get errRecognitionBadResponse => 'ངོས་འཛིན་ཞབས་ཞུ་ནས་རེ་སྒུག་མེད་པའི་ལན་བྱུང་།';
+  String get errRecognitionBadResponse =>
+      'ངོས་འཛིན་ཞབས་ཞུ་ནས་རེ་སྒུག་མེད་པའི་ལན་བྱུང་།';
 
   @override
   String get errRecognitionEmpty => 'ངོས་འཛིན་ཞབས་ཞུས་ལན་སྟོང་པ་སླར་སྤྲོད་བྱས།';
 
   @override
-  String get errMissingFinnhubKey => 'ཁྲོམ་རའི་གཞི་གྲངས་སྒྲིག་འགོད་བྱས་མེད (FINNHUB_API_KEY མེད)།';
+  String get errMissingFinnhubKey =>
+      'ཁྲོམ་རའི་གཞི་གྲངས་སྒྲིག་འགོད་བྱས་མེད (FINNHUB_API_KEY མེད)།';
 
   @override
   String get errMarketUnreachable =>
       'ཁྲོམ་རའི་གཞི་གྲངས་ཞབས་ཞུར་འབྲེལ་མཐུད་བྱེད་མ་ཐུབ། དྲ་རྒྱའི་འབྲེལ་མཐུད་ལ་ཞིབ་བཤེར་གནང་།';
 
   @override
-  String get errMarketRateLimited => 'ཁྲོམ་རའི་གཞི་གྲངས་ཞབས་ཞུར་རེ་ཞུ་མང་དྲགས་འདུག སྐར་མ་གཅིག་སྒུག་རོགས་གནང་།';
+  String get errMarketRateLimited =>
+      'ཁྲོམ་རའི་གཞི་གྲངས་ཞབས་ཞུར་རེ་ཞུ་མང་དྲགས་འདུག སྐར་མ་གཅིག་སྒུག་རོགས་གནང་།';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +384,8 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ཁྲོམ་རའི་གཞི་གྲངས་ཞབས་ཞུ་ནས་རེ་སྒུག་མེད་པའི་ལན་བྱུང་།';
+  String get errMarketBadResponse =>
+      'ཁྲོམ་རའི་གཞི་གྲངས་ཞབས་ཞུ་ནས་རེ་སྒུག་མེད་པའི་ལན་བྱུང་།';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +485,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get aiRegenerate => 'ཡང་བསྐྱར་བཟོ';
 
   @override
-  String get aiGenerating => 'དབྱེ་ཞིབ་གྲ་སྒྲིག་བྱེད་བཞིན་པ… སྐར་མ་གཅིག་གཉིས་འགོར་སྲིད།';
+  String get aiGenerating =>
+      'དབྱེ་ཞིབ་གྲ་སྒྲིག་བྱེད་བཞིན་པ… སྐར་མ་གཅིག་གཉིས་འགོར་སྲིད།';
 
   @override
   String get aiSources => 'འབྱུང་ཁུངས';
@@ -489,10 +501,12 @@ class AppLocalizationsBo extends AppLocalizations {
       'སྤྱི་སྤྱོད་གཞི་གྲངས་དང་ཉེ་ཆར་གསར་འགྱུར་ལ་གཞིགས་ནས་ AI ཡིས་བཟོས་པའི་དབྱེ་ཞིབ། དེའི་ནང་ནོར་འཁྲུལ་ཡོད་པའམ་དུས་ཡོལ་བ་ཡིན་སྲིད་ལ། མ་འཇོག་གི་བསམ་འཆར་ཡང་མིན།';
 
   @override
-  String get errAiNotConfigured => 'AI དབྱེ་ཞིབ་སྒྲིག་འགོད་བྱས་མེད (ANTHROPIC_API_KEY མེད)།';
+  String get errAiNotConfigured =>
+      'AI དབྱེ་ཞིབ་སྒྲིག་འགོད་བྱས་མེད (ANTHROPIC_API_KEY མེད)།';
 
   @override
-  String get errAiUnreachable => 'AI ཞབས་ཞུར་འབྲེལ་མཐུད་བྱེད་མ་ཐུབ། དྲ་རྒྱའི་འབྲེལ་མཐུད་ལ་ཞིབ་བཤེར་གནང་།';
+  String get errAiUnreachable =>
+      'AI ཞབས་ཞུར་འབྲེལ་མཐུད་བྱེད་མ་ཐུབ། དྲ་རྒྱའི་འབྲེལ་མཐུད་ལ་ཞིབ་བཤེར་གནང་།';
 
   @override
   String errAiHttp(String status) {
@@ -500,7 +514,8 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI ཞབས་ཞུས་ཧུར་ཁག་འདིར་དབྱེ་ཞིབ་བྱེད་རྒྱུ་ཁས་མ་བླངས།';
+  String get errAiRefused =>
+      'AI ཞབས་ཞུས་ཧུར་ཁག་འདིར་དབྱེ་ཞིབ་བྱེད་རྒྱུ་ཁས་མ་བླངས།';
 
   @override
   String get errAiBadResponse => 'AI ཞབས་ཞུ་ནས་རེ་སྒུག་མེད་པའི་ལན་བྱུང་།';
@@ -524,7 +539,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get rangeFiveYears => 'ལོ་ 5';
 
   @override
-  String get chartUnavailable => 'ད་ལྟའི་གཞི་གྲངས་འབྱུང་ཁུངས་ནས་གོང་ཚད་ལོ་རྒྱུས་མི་ཐོབ།';
+  String get chartUnavailable =>
+      'ད་ལྟའི་གཞི་གྲངས་འབྱུང་ཁུངས་ནས་གོང་ཚད་ལོ་རྒྱུས་མི་ཐོབ།';
 
   @override
   String get sectionStatements => 'དངུལ་རྩིས་སྙན་ཐོ (ལོ་རེའི)';
@@ -581,7 +597,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get removeFromFavorites => 'དགའ་མོས་ནས་སུབ';
 
   @override
-  String get noFavorites => 'ད་ལྟའི་བར་དགའ་མོས་མེད། ཁ་སྣོན་བྱེད་པར་ཧུར་ཁག་གི་སྐར་མ་ལ་མནན།';
+  String get noFavorites =>
+      'ད་ལྟའི་བར་དགའ་མོས་མེད། ཁ་སྣོན་བྱེད་པར་ཧུར་ཁག་གི་སྐར་མ་ལ་མནན།';
 
   @override
   String get displayCurrency => 'མངོན་སྟོན་དངུལ་ལོར';
@@ -617,7 +634,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get updateChecking => 'གསར་སྒྱུར་ཞིབ་བཤེར་བྱེད་བཞིན་པ…';
 
   @override
-  String get updateUpToDate => 'ཁྱེད་ཀྱིས་པར་གཞི་གསར་ཤོས་བེད་སྤྱོད་གནང་བཞིན་ཡོད།';
+  String get updateUpToDate =>
+      'ཁྱེད་ཀྱིས་པར་གཞི་གསར་ཤོས་བེད་སྤྱོད་གནང་བཞིན་ཡོད།';
 
   @override
   String updateAvailable(String version) {
@@ -628,7 +646,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get updateDownloading => 'རྒྱབ་ལྗོངས་སུ་གསར་སྒྱུར་ཕབ་ལེན་བྱེད་བཞིན་པ…';
 
   @override
-  String get updateDownloaded => 'གསར་སྒྱུར་གྲ་སྒྲིག་ཡོད། སྒྲིག་འཇུག་ཆེད་བསྐྱར་དུ་འགོ་འཛུགས་གནང་།';
+  String get updateDownloaded =>
+      'གསར་སྒྱུར་གྲ་སྒྲིག་ཡོད། སྒྲིག་འཇུག་ཆེད་བསྐྱར་དུ་འགོ་འཛུགས་གནང་།';
 
   @override
   String get updateNow => 'གསར་སྒྱུར';
@@ -637,7 +656,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get restartNow => 'བསྐྱར་འགོ་འཛུགས';
 
   @override
-  String get updatesViaStore => 'གསར་སྒྱུར་རྣམས་ཉེར་སྤྱོད་ཚོང་ཁང་བརྒྱུད་རང་འགུལ་གྱིས་ཡོང་།';
+  String get updatesViaStore =>
+      'གསར་སྒྱུར་རྣམས་ཉེར་སྤྱོད་ཚོང་ཁང་བརྒྱུད་རང་འགུལ་གྱིས་ཡོང་།';
 
   @override
   String get updateCheckFailed => 'གསར་སྒྱུར་ཞིབ་བཤེར་བྱེད་མ་ཐུབ།';
@@ -675,12 +695,17 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'ཚོད་ལྟའི་ཉིན་ $days ལྷག་ཡོད');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ཚོད་ལྟའི་ཉིན་ $days ལྷག་ཡོད',
+    );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'ཁྱེད་ཀྱི་རིན་མེད་ཚོད་ལྟ་མཇུག་རྫོགས་སོང་། དབྱེ་ཞིབ་མུ་མཐུད་པར་འཆར་གཞི་ཞིག་འདེམས་རོགས།';
+  String get trialExpired =>
+      'ཁྱེད་ཀྱི་རིན་མེད་ཚོད་ལྟ་མཇུག་རྫོགས་སོང་། དབྱེ་ཞིབ་མུ་མཐུད་པར་འཆར་གཞི་ཞིག་འདེམས་རོགས།';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -713,7 +738,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get extraPacksTitle => 'མང་བ་དགོས་སམ། ཟུར་སྣོན་དབྱེ་ཞིབ་ཉོ';
 
   @override
-  String get extraPacksHint => 'ཟུར་སྣོན་དབྱེ་ཞིབ་ལ་དུས་ཚོད་ཡོལ་རྒྱུ་མེད་ལ། ཟླ་རེའི་ཚད་བཀག་རྫོགས་རྗེས་བེད་སྤྱོད་བྱེད།';
+  String get extraPacksHint =>
+      'ཟུར་སྣོན་དབྱེ་ཞིབ་ལ་དུས་ཚོད་ཡོལ་རྒྱུ་མེད་ལ། ཟླ་རེའི་ཚད་བཀག་རྫོགས་རྗེས་བེད་སྤྱོད་བྱེད།';
 
   @override
   String get buy => 'ཉོ';
@@ -725,7 +751,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get manageSubscription => 'མཁོ་ཉོ་དོ་དམ';
 
   @override
-  String get purchaseSuccess => 'ཐུགས་རྗེ་ཆེ། ཁྱེད་ཀྱི་ཉོ་སྒྲུབ་ནུས་ལྡན་ཆགས་སོང་།';
+  String get purchaseSuccess =>
+      'ཐུགས་རྗེ་ཆེ། ཁྱེད་ཀྱི་ཉོ་སྒྲུབ་ནུས་ལྡན་ཆགས་སོང་།';
 
   @override
   String get purchasePending => 'ཉོ་སྒྲུབ་སྒུག་བཞིན་པ…';
@@ -741,10 +768,12 @@ class AppLocalizationsBo extends AppLocalizations {
       'སྟེགས་བུ་འདིའི་ཐོག་ད་དུང་ཉོ་སྒྲུབ་བྱེད་མི་ཐུབ། ཁ་པར་རམ་ Mac ཐོག་མཁོ་ཉོ་གནང་། ཁྱེད་ཀྱི་འཆར་གཞི་སྒྲིག་ཆས་ཚང་མའི་ཐོག་སྤྱོད་ཐུབ།';
 
   @override
-  String get errQuotaExceeded => 'དུས་སྐབས་འདིར་དབྱེ་ཞིབ་ལྷག་མེད། འཆར་གཞི་རིམ་སྤོར་རམ་ཟུར་སྣོན་དབྱེ་ཞིབ་ཉོ་རོགས།';
+  String get errQuotaExceeded =>
+      'དུས་སྐབས་འདིར་དབྱེ་ཞིབ་ལྷག་མེད། འཆར་གཞི་རིམ་སྤོར་རམ་ཟུར་སྣོན་དབྱེ་ཞིབ་ཉོ་རོགས།';
 
   @override
-  String get errTrialExpired => 'ཁྱེད་ཀྱི་རིན་མེད་ཚོད་ལྟ་མཇུག་རྫོགས་སོང་། མུ་མཐུད་པར་འཆར་གཞི་ཞིག་འདེམས་རོགས།';
+  String get errTrialExpired =>
+      'ཁྱེད་ཀྱི་རིན་མེད་ཚོད་ལྟ་མཇུག་རྫོགས་སོང་། མུ་མཐུད་པར་འཆར་གཞི་ཞིག་འདེམས་རོགས།';
 
   @override
   String get errNoPlan => 'AI དབྱེ་ཞིབ་ལ་སྤྱོད་བཞིན་པའི་འཆར་གཞི་ཞིག་དགོས།';
@@ -756,7 +785,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get usageTitle => 'བེད་སྤྱོད་གནས་ཚུལ';
 
   @override
-  String get demoPurchaseNote => 'དཔེ་སྟོན་རིན་སྤྲོད: སྟེགས་བུ་འདིའི་ཐོག་ཉོ་སྒྲུབ་ནི་ལད་ཟློས་ཙམ་ཡིན།';
+  String get demoPurchaseNote =>
+      'དཔེ་སྟོན་རིན་སྤྲོད: སྟེགས་བུ་འདིའི་ཐོག་ཉོ་སྒྲུབ་ནི་ལད་ཟློས་ཙམ་ཡིན།';
 
   @override
   String get mostPopular => 'དགའ་བསུ་ཆེ་ཤོས';
@@ -796,7 +826,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get aiDepthStandardDesc => 'དུམ་མཚམས་ཚང་མ་ཡོད་པའི་སྙན་ཐོ་ཆ་ཚང་།';
 
   @override
-  String get aiDepthDeepDesc => 'དྲ་རྒྱའི་འཚོལ་ཞིབ་མང་བ། འགྲན་ཟླ་དང་བསྡུར་བ། ཞིབ་ཕྲ་ཟབ་པ།';
+  String get aiDepthDeepDesc =>
+      'དྲ་རྒྱའི་འཚོལ་ཞིབ་མང་བ། འགྲན་ཟླ་དང་བསྡུར་བ། ཞིབ་ཕྲ་ཟབ་པ།';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -805,7 +836,11 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'དབྱེ་ཞིབ་ $count བེད་སྤྱོད');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'དབྱེ་ཞིབ་ $count བེད་སྤྱོད',
+    );
     return '$_temp0';
   }
 
@@ -819,10 +854,12 @@ class AppLocalizationsBo extends AppLocalizations {
   String get aiReaderExperienced => 'ཉམས་མྱོང་ཅན';
 
   @override
-  String get aiReaderBeginnerDesc => 'སྐད་ཆ་སླ་པོ། ཆེད་ལས་ཐ་སྙད་ཚང་མ་འགྲེལ་བཤད་བྱེད།';
+  String get aiReaderBeginnerDesc =>
+      'སྐད་ཆ་སླ་པོ། ཆེད་ལས་ཐ་སྙད་ཚང་མ་འགྲེལ་བཤད་བྱེད།';
 
   @override
-  String get aiReaderExperiencedDesc => 'ཚད་ལྡན་དངུལ་ལས་ཐ་སྙད་ལྡན་པའི་ཡི་གེ་སྡོམ་པོ།';
+  String get aiReaderExperiencedDesc =>
+      'ཚད་ལྡན་དངུལ་ལས་ཐ་སྙད་ལྡན་པའི་ཡི་གེ་སྡོམ་པོ།';
 
   @override
   String get aiCounterArgument => 'ཤུགས་ཆེ་ཤོས་ཀྱི་ལྡོག་ཕྱོགས་རྒྱུ་མཚན';
@@ -836,7 +873,8 @@ class AppLocalizationsBo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ཁྱེད་ཀྱི་འཆར་གཞི་ལ་དབྱེ་ཞིབ་རེར་དྲ་རྒྱའི་འཚོལ་ཞིབ་ཆེས་མང་ན་ $count',
+      other:
+          'ཁྱེད་ཀྱི་འཆར་གཞི་ལ་དབྱེ་ཞིབ་རེར་དྲ་རྒྱའི་འཚོལ་ཞིབ་ཆེས་མང་ན་ $count',
     );
     return '$_temp0';
   }
@@ -848,13 +886,21 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'དྲ་རྒྱའི་འཚོལ་ཞིབ་ཆེས་མང་ན་ $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'དྲ་རྒྱའི་འཚོལ་ཞིབ་ཆེས་མང་ན་ $count',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'དབྱེ་ཞིབ་རེར་དྲ་རྒྱའི་འཚོལ་ཞིབ་ $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'དབྱེ་ཞིབ་རེར་དྲ་རྒྱའི་འཚོལ་ཞིབ་ $count',
+    );
     return '$_temp0';
   }
 
@@ -911,7 +957,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get upcomingEvents => 'འབྱུང་འགྱུར་བྱ་བ';
 
   @override
-  String get outlookChartNote => 'ཁྱབ་ཁོངས་ཕལ་ཙམ་ཡིན། སྲིད་ཚད་ནི་ཚོད་དཔག་རགས་ཙམ་ཡིན་གྱི་སྔོན་བརྡ་མིན།';
+  String get outlookChartNote =>
+      'ཁྱབ་ཁོངས་ཕལ་ཙམ་ཡིན། སྲིད་ཚད་ནི་ཚོད་དཔག་རགས་ཙམ་ཡིན་གྱི་སྔོན་བརྡ་མིན།';
 
   @override
   String get accountTitle => 'རྩིས་ཁྲ';
@@ -926,10 +973,12 @@ class AppLocalizationsBo extends AppLocalizations {
   String get notSignedIn => 'ནང་འཛུལ་བྱས་མེད';
 
   @override
-  String get accountBenefit => 'ཁྱེད་ཀྱི་མཁོ་ཉོ་སྒྲིག་ཆས་ཚང་མའི་ཐོག་སྤྱོད་ཐུབ་པར་ནང་འཛུལ་གནང་།';
+  String get accountBenefit =>
+      'ཁྱེད་ཀྱི་མཁོ་ཉོ་སྒྲིག་ཆས་ཚང་མའི་ཐོག་སྤྱོད་ཐུབ་པར་ནང་འཛུལ་གནང་།';
 
   @override
-  String get accountSyncedNote => 'ཁྱེད་ཀྱི་མཁོ་ཉོ་དང་ལྷག་མའི་དབྱེ་ཞིབ་སྒྲིག་ཆས་ཚང་མའི་ཐོག་གཅིག་མཚུངས་ཡིན།';
+  String get accountSyncedNote =>
+      'ཁྱེད་ཀྱི་མཁོ་ཉོ་དང་ལྷག་མའི་དབྱེ་ཞིབ་སྒྲིག་ཆས་ཚང་མའི་ཐོག་གཅིག་མཚུངས་ཡིན།';
 
   @override
   String get signInTitle => 'WhatStock ལ་ནང་འཛུལ';
@@ -961,14 +1010,16 @@ class AppLocalizationsBo extends AppLocalizations {
   String get errInvalidEmail => 'ནུས་ལྡན་གྱི་གློག་འཕྲིན་ཁ་བྱང་ཞིག་འཇུག་གནང་།';
 
   @override
-  String get errSignInFailed => 'ནང་འཛུལ་མ་ཐུབ། འབྲེལ་མཐུད་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+  String get errSignInFailed =>
+      'ནང་འཛུལ་མ་ཐུབ། འབྲེལ་མཐུད་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
   String get checkoutWaiting =>
       'དྲ་ལྟ་ཆས་ནང་རིན་སྤྲོད་མཇུག་སྒྲིལ་གནང་། མཇུག་རྫོགས་རྗེས་ཉེར་སྤྱོད་རང་འགུལ་གྱིས་གསར་སྒྱུར་བྱེད།';
 
   @override
-  String get paymentViaStripe => 'Stripe བརྒྱུད་དྲ་ལྟ་ཆས་ནང་བདེ་འཇགས་ཀྱི་རིན་སྤྲོད། དུས་ནམ་ཡིན་ཡང་ཕྱིར་འཐེན་ཆོག';
+  String get paymentViaStripe =>
+      'Stripe བརྒྱུད་དྲ་ལྟ་ཆས་ནང་བདེ་འཇགས་ཀྱི་རིན་སྤྲོད། དུས་ནམ་ཡིན་ཡང་ཕྱིར་འཐེན་ཆོག';
 
   @override
   String get paymentViaStore =>
@@ -981,7 +1032,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get doubleOptionTitle => 'Option ཐེངས་གཉིས་མནན';
 
   @override
-  String get doubleOptionSubtitle => 'Option མཐེབ་མགྱོགས་པོར་ཐེངས་གཉིས་མནན་ནའང་ WhatStock འབོད་ཐུབ།';
+  String get doubleOptionSubtitle =>
+      'Option མཐེབ་མགྱོགས་པོར་ཐེངས་གཉིས་མནན་ནའང་ WhatStock འབོད་ཐུབ།';
 
   @override
   String get doubleOptionPermission =>
@@ -1003,7 +1055,11 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'ལོ་ $years');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'ལོ་ $years',
+    );
     return '$_temp0';
   }
 
@@ -1064,7 +1120,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioAdd => 'སྣོན';
 
   @override
-  String get portfolioInvalidNumber => 'ཀླད་ཀོར་ལས་ཆེ་བའི་གྲངས་ཀ་ཞིག་འཇུག་རོགས།';
+  String get portfolioInvalidNumber =>
+      'ཀླད་ཀོར་ལས་ཆེ་བའི་གྲངས་ཀ་ཞིག་འཇུག་རོགས།';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1104,7 +1161,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioRemove => 'སུབ';
 
   @override
-  String get portfolioExcluded => 'གོང་ཚད་དམ་བརྗེ་ཚད་མེད་པའི་ཉར་ཡོད་ཧུར་ཁག་རྣམས་བསྡོམས་འབོར་ནང་མ་བསྡུས།';
+  String get portfolioExcluded =>
+      'གོང་ཚད་དམ་བརྗེ་ཚད་མེད་པའི་ཉར་ཡོད་ཧུར་ཁག་རྣམས་བསྡོམས་འབོར་ནང་མ་བསྡུས།';
 
   @override
   String get priceAlerts => 'གོང་ཚད་ཉེན་བརྡ';
@@ -1146,7 +1204,8 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'ད་ལྟའི་བར་གོང་ཚད་ཉེན་བརྡ་མེད། ཧུར་ཁག་ཅིག་ཁ་ཕྱེ་ནས་དྲིལ་བུ་ལ་མནན་ཏེ་སྒྲིག';
+  String get alertsEmpty =>
+      'ད་ལྟའི་བར་གོང་ཚད་ཉེན་བརྡ་མེད། ཧུར་ཁག་ཅིག་ཁ་ཕྱེ་ནས་དྲིལ་བུ་ལ་མནན་ཏེ་སྒྲིག';
 
   @override
   String get alertsNote =>
@@ -1239,7 +1298,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get accountDeleted => 'ཁྱེད་ཀྱི་རྩིས་ཁྲ་སུབ་ཟིན།';
 
   @override
-  String get errDeleteAccount => 'རྩིས་ཁྲ་སུབ་མ་ཐུབ། འབྲེལ་མཐུད་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+  String get errDeleteAccount =>
+      'རྩིས་ཁྲ་སུབ་མ་ཐུབ། འབྲེལ་མཐུད་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
   String get aiTrialBriefNote =>
@@ -1265,4 +1325,10 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ཁྱེད་ཀྱིས་ཕྱིར་མ་འཐེན་བར་དུ་མཁོ་ཉོ་ལོ་རེར་རང་འགུལ་གྱིས་བསྐྱར་གསོ་བྱེད། མཁོ་ཉོ་བྱས་ན་བེད་སྤྱོད་ཆ་རྐྱེན་དང་སྒེར་གསང་སྲིད་ཇུས་ཁས་ལེན་པ་ཡིན།';
+
+  @override
+  String get myAnalyses => 'ངའི་དབྱེ་ཞིབ';
+
+  @override
+  String get navAlerts => 'ཉེན་བརྡ';
 }

@@ -369,5 +369,7 @@
   "yearlyDiscount": "Dikgwedi tse 2 mahala",
   "perYear": "/ selemo",
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
-  "subscriptionLegalYearly": "Dingodiso tsa selemo di ntjhafala ka boiketsetso selemo le selemo ho fihlela o di khansela. Ka ho ingodisa o amohela Dipehelo tsa Tshebediso le Pholisi ya Lekunutu."
+  "subscriptionLegalYearly": "Dingodiso tsa selemo di ntjhafala ka boiketsetso selemo le selemo ho fihlela o di khansela. Ka ho ingodisa o amohela Dipehelo tsa Tshebediso le Pholisi ya Lekunutu.",
+  "myAnalyses": "Ditlhahlobo tsa ka",
+  "navAlerts": "Ditsebiso"
 }

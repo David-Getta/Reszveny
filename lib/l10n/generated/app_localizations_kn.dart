@@ -13,7 +13,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ಒಂದು ಷೇರಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ ಮತ್ತು ಅದರ ಬಗ್ಗೆ ಎಲ್ಲವನ್ನೂ ತಿಳಿಯಿರಿ.';
+  String get homeTagline =>
+      'ಒಂದು ಷೇರಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ ಮತ್ತು ಅದರ ಬಗ್ಗೆ ಎಲ್ಲವನ್ನೂ ತಿಳಿಯಿರಿ.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get errorGeneric => 'ಏನೋ ತಪ್ಪಾಗಿದೆ.';
 
   @override
-  String get errorSectionUnavailable => 'ಈ ವಿಭಾಗವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
+  String get errorSectionUnavailable =>
+      'ಈ ವಿಭಾಗವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
 
   @override
   String get notAvailable => 'ಲಭ್ಯವಿಲ್ಲ';
@@ -306,7 +308,12 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ವಿಶ್ಲೇಷಕರು', one: '1 ವಿಶ್ಲೇಷಕ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ವಿಶ್ಲೇಷಕರು',
+      one: '1 ವಿಶ್ಲೇಷಕ',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +354,32 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ಗುರುತಿಸುವಿಕೆ ಸೇವೆಗೆ ಈ ಚಿತ್ರವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
+  String get errRecognitionRefused =>
+      'ಗುರುತಿಸುವಿಕೆ ಸೇವೆಗೆ ಈ ಚಿತ್ರವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
 
   @override
-  String get errRecognitionTruncated => 'ಗುರುತಿಸುವಿಕೆಯ ಪ್ರತಿಕ್ರಿಯೆ ಅರ್ಧಕ್ಕೆ ಕಡಿತಗೊಂಡಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+  String get errRecognitionTruncated =>
+      'ಗುರುತಿಸುವಿಕೆಯ ಪ್ರತಿಕ್ರಿಯೆ ಅರ್ಧಕ್ಕೆ ಕಡಿತಗೊಂಡಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
-  String get errRecognitionBadResponse => 'ಗುರುತಿಸುವಿಕೆ ಸೇವೆಯಿಂದ ಅನಿರೀಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆ.';
+  String get errRecognitionBadResponse =>
+      'ಗುರುತಿಸುವಿಕೆ ಸೇವೆಯಿಂದ ಅನಿರೀಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆ.';
 
   @override
-  String get errRecognitionEmpty => 'ಗುರುತಿಸುವಿಕೆ ಸೇವೆ ಖಾಲಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಹಿಂತಿರುಗಿಸಿದೆ.';
+  String get errRecognitionEmpty =>
+      'ಗುರುತಿಸುವಿಕೆ ಸೇವೆ ಖಾಲಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಹಿಂತಿರುಗಿಸಿದೆ.';
 
   @override
-  String get errMissingFinnhubKey => 'ಮಾರುಕಟ್ಟೆ ಡೇಟಾವನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿಲ್ಲ (FINNHUB_API_KEY ಇಲ್ಲ).';
+  String get errMissingFinnhubKey =>
+      'ಮಾರುಕಟ್ಟೆ ಡೇಟಾವನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿಲ್ಲ (FINNHUB_API_KEY ಇಲ್ಲ).';
 
   @override
   String get errMarketUnreachable =>
       'ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಸೇವೆಯನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ.';
 
   @override
-  String get errMarketRateLimited => 'ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಸೇವೆಗೆ ಹಲವಾರು ವಿನಂತಿಗಳು ಹೋಗಿವೆ. ದಯವಿಟ್ಟು ಒಂದು ನಿಮಿಷ ಕಾಯಿರಿ.';
+  String get errMarketRateLimited =>
+      'ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಸೇವೆಗೆ ಹಲವಾರು ವಿನಂತಿಗಳು ಹೋಗಿವೆ. ದಯವಿಟ್ಟು ಒಂದು ನಿಮಿಷ ಕಾಯಿರಿ.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +387,8 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಸೇವೆಯಿಂದ ಅನಿರೀಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆ.';
+  String get errMarketBadResponse =>
+      'ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಸೇವೆಯಿಂದ ಅನಿರೀಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆ.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +488,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get aiRegenerate => 'ಮರು ರಚಿಸಿ';
 
   @override
-  String get aiGenerating => 'ವಿಶ್ಲೇಷಣೆ ಸಿದ್ಧವಾಗುತ್ತಿದೆ… ಇದಕ್ಕೆ ಒಂದೆರಡು ನಿಮಿಷ ಬೇಕಾಗಬಹುದು.';
+  String get aiGenerating =>
+      'ವಿಶ್ಲೇಷಣೆ ಸಿದ್ಧವಾಗುತ್ತಿದೆ… ಇದಕ್ಕೆ ಒಂದೆರಡು ನಿಮಿಷ ಬೇಕಾಗಬಹುದು.';
 
   @override
   String get aiSources => 'ಮೂಲಗಳು';
@@ -489,10 +504,12 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಸಾರ್ವಜನಿಕ ಡೇಟಾ ಮತ್ತು ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳನ್ನು ಆಧರಿಸಿದ AI-ರಚಿತ ವಿಶ್ಲೇಷಣೆ. ಇದರಲ್ಲಿ ದೋಷಗಳಿರಬಹುದು ಅಥವಾ ಇದು ಹಳೆಯದಾಗಿರಬಹುದು, ಮತ್ತು ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ.';
 
   @override
-  String get errAiNotConfigured => 'AI ವಿಶ್ಲೇಷಣೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿಲ್ಲ (ANTHROPIC_API_KEY ಇಲ್ಲ).';
+  String get errAiNotConfigured =>
+      'AI ವಿಶ್ಲೇಷಣೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿಲ್ಲ (ANTHROPIC_API_KEY ಇಲ್ಲ).';
 
   @override
-  String get errAiUnreachable => 'AI ಸೇವೆಯನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ.';
+  String get errAiUnreachable =>
+      'AI ಸೇವೆಯನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ.';
 
   @override
   String errAiHttp(String status) {
@@ -524,7 +541,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'ಪ್ರಸ್ತುತ ಡೇಟಾ ಮೂಲದಿಂದ ಬೆಲೆಯ ಇತಿಹಾಸ ಲಭ್ಯವಿಲ್ಲ.';
+  String get chartUnavailable =>
+      'ಪ್ರಸ್ತುತ ಡೇಟಾ ಮೂಲದಿಂದ ಬೆಲೆಯ ಇತಿಹಾಸ ಲಭ್ಯವಿಲ್ಲ.';
 
   @override
   String get sectionStatements => 'ಹಣಕಾಸು ಹೇಳಿಕೆಗಳು (ವಾರ್ಷಿಕ)';
@@ -551,7 +569,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get labelOperatingCashFlow => 'ಕಾರ್ಯಾಚರಣಾ ನಗದು ಹರಿವು';
 
   @override
-  String get statementsUnavailable => 'ಈ ಷೇರಿಗೆ ವರದಿಯಾದ ಹಣಕಾಸು ಹೇಳಿಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ.';
+  String get statementsUnavailable =>
+      'ಈ ಷೇರಿಗೆ ವರದಿಯಾದ ಹಣಕಾಸು ಹೇಳಿಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ.';
 
   @override
   String get launchAtLogin => 'ಲಾಗಿನ್ ಆದಾಗ ಪ್ರಾರಂಭಿಸಿ';
@@ -560,7 +579,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get hotkeyLabel => 'ಗ್ಲೋಬಲ್ ಶಾರ್ಟ್‌ಕಟ್';
 
   @override
-  String get hotkeyRecordHint => 'ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ, ನಂತರ ಹೊಸ ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಒತ್ತಿರಿ';
+  String get hotkeyRecordHint =>
+      'ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ, ನಂತರ ಹೊಸ ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಒತ್ತಿರಿ';
 
   @override
   String get hotkeyReset => 'ಡೀಫಾಲ್ಟ್‌ಗೆ ರೀಸೆಟ್ ಮಾಡಿ';
@@ -581,7 +601,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get removeFromFavorites => 'ಮೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದುಹಾಕಿ';
 
   @override
-  String get noFavorites => 'ಇನ್ನೂ ಯಾವುದೇ ಮೆಚ್ಚಿನವುಗಳಿಲ್ಲ. ಸೇರಿಸಲು ಷೇರಿನ ಮೇಲಿರುವ ನಕ್ಷತ್ರವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+  String get noFavorites =>
+      'ಇನ್ನೂ ಯಾವುದೇ ಮೆಚ್ಚಿನವುಗಳಿಲ್ಲ. ಸೇರಿಸಲು ಷೇರಿನ ಮೇಲಿರುವ ನಕ್ಷತ್ರವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
   String get displayCurrency => 'ಪ್ರದರ್ಶನ ಕರೆನ್ಸಿ';
@@ -628,7 +649,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get updateDownloading => 'ಅಪ್‌ಡೇಟ್ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ…';
 
   @override
-  String get updateDownloaded => 'ಅಪ್‌ಡೇಟ್ ಸಿದ್ಧವಾಗಿದೆ. ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಮರುಪ್ರಾರಂಭಿಸಿ.';
+  String get updateDownloaded =>
+      'ಅಪ್‌ಡೇಟ್ ಸಿದ್ಧವಾಗಿದೆ. ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಮರುಪ್ರಾರಂಭಿಸಿ.';
 
   @override
   String get updateNow => 'ಅಪ್‌ಡೇಟ್ ಮಾಡಿ';
@@ -637,7 +659,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get restartNow => 'ಮರುಪ್ರಾರಂಭಿಸಿ';
 
   @override
-  String get updatesViaStore => 'ಅಪ್‌ಡೇಟ್‌ಗಳು ಆ್ಯಪ್ ಸ್ಟೋರ್ ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬರುತ್ತವೆ.';
+  String get updatesViaStore =>
+      'ಅಪ್‌ಡೇಟ್‌ಗಳು ಆ್ಯಪ್ ಸ್ಟೋರ್ ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬರುತ್ತವೆ.';
 
   @override
   String get updateCheckFailed => 'ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
@@ -685,7 +708,8 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'ನಿಮ್ಮ ಉಚಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ. ವಿಶ್ಲೇಷಣೆ ಮುಂದುವರಿಸಲು ಪ್ಲಾನ್ ಆಯ್ಕೆಮಾಡಿ.';
+  String get trialExpired =>
+      'ನಿಮ್ಮ ಉಚಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ. ವಿಶ್ಲೇಷಣೆ ಮುಂದುವರಿಸಲು ಪ್ಲಾನ್ ಆಯ್ಕೆಮಾಡಿ.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -715,7 +739,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get perMonth => '/ ತಿಂಗಳು';
 
   @override
-  String get extraPacksTitle => 'ಇನ್ನಷ್ಟು ಬೇಕೇ? ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಖರೀದಿಸಿ';
+  String get extraPacksTitle =>
+      'ಇನ್ನಷ್ಟು ಬೇಕೇ? ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಖರೀದಿಸಿ';
 
   @override
   String get extraPacksHint =>
@@ -751,7 +776,8 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಈ ಅವಧಿಗೆ ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ವಿಶ್ಲೇಷಣೆಗಳು ಉಳಿದಿಲ್ಲ. ನಿಮ್ಮ ಪ್ಲಾನ್ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ ಅಥವಾ ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಖರೀದಿಸಿ.';
 
   @override
-  String get errTrialExpired => 'ನಿಮ್ಮ ಉಚಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ. ಮುಂದುವರಿಯಲು ಪ್ಲಾನ್ ಆಯ್ಕೆಮಾಡಿ.';
+  String get errTrialExpired =>
+      'ನಿಮ್ಮ ಉಚಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ. ಮುಂದುವರಿಯಲು ಪ್ಲಾನ್ ಆಯ್ಕೆಮಾಡಿ.';
 
   @override
   String get errNoPlan => 'AI ವಿಶ್ಲೇಷಣೆಗೆ ಸಕ್ರಿಯ ಪ್ಲಾನ್ ಅಗತ್ಯವಿದೆ.';
@@ -763,7 +789,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get usageTitle => 'ಬಳಕೆ';
 
   @override
-  String get demoPurchaseNote => 'ಡೆಮೋ ಬಿಲ್ಲಿಂಗ್: ಈ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಖರೀದಿಗಳನ್ನು ಅನುಕರಿಸಲಾಗುತ್ತದೆ.';
+  String get demoPurchaseNote =>
+      'ಡೆಮೋ ಬಿಲ್ಲಿಂಗ್: ಈ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಖರೀದಿಗಳನ್ನು ಅನುಕರಿಸಲಾಗುತ್ತದೆ.';
 
   @override
   String get mostPopular => 'ಅತ್ಯಂತ ಜನಪ್ರಿಯ';
@@ -803,7 +830,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get aiDepthStandardDesc => 'ಎಲ್ಲ ವಿಭಾಗಗಳೊಂದಿಗೆ ಸಂಪೂರ್ಣ ವರದಿ.';
 
   @override
-  String get aiDepthDeepDesc => 'ಹೆಚ್ಚಿನ ವೆಬ್ ಹುಡುಕಾಟಗಳು, ಸಮಾನ ಕಂಪನಿಗಳೊಂದಿಗೆ ಹೋಲಿಕೆ ಮತ್ತು ಆಳವಾದ ವಿವರ.';
+  String get aiDepthDeepDesc =>
+      'ಹೆಚ್ಚಿನ ವೆಬ್ ಹುಡುಕಾಟಗಳು, ಸಮಾನ ಕಂಪನಿಗಳೊಂದಿಗೆ ಹೋಲಿಕೆ ಮತ್ತು ಆಳವಾದ ವಿವರ.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,10 +859,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get aiReaderExperienced => 'ಅನುಭವಿ';
 
   @override
-  String get aiReaderBeginnerDesc => 'ಸರಳ ಭಾಷೆ; ಪ್ರತಿಯೊಂದು ತಾಂತ್ರಿಕ ಪದವನ್ನು ವಿವರಿಸಲಾಗುತ್ತದೆ.';
+  String get aiReaderBeginnerDesc =>
+      'ಸರಳ ಭಾಷೆ; ಪ್ರತಿಯೊಂದು ತಾಂತ್ರಿಕ ಪದವನ್ನು ವಿವರಿಸಲಾಗುತ್ತದೆ.';
 
   @override
-  String get aiReaderExperiencedDesc => 'ಪ್ರಮಾಣಿತ ಹಣಕಾಸು ಪರಿಭಾಷೆಯೊಂದಿಗೆ ಸಾಂದ್ರ ಪಠ್ಯ.';
+  String get aiReaderExperiencedDesc =>
+      'ಪ್ರಮಾಣಿತ ಹಣಕಾಸು ಪರಿಭಾಷೆಯೊಂದಿಗೆ ಸಾಂದ್ರ ಪಠ್ಯ.';
 
   @override
   String get aiCounterArgument => 'ಅತ್ಯಂತ ಪ್ರಬಲ ಪ್ರತಿವಾದ';
@@ -848,7 +878,8 @@ class AppLocalizationsKn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟಗಳು',
+      other:
+          'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟಗಳು',
       one: 'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ 1 ವೆಬ್ ಹುಡುಕಾಟ',
     );
     return '$_temp0';
@@ -934,7 +965,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get upcomingEvents => 'ಮುಂಬರುವ ಘಟನೆಗಳು';
 
   @override
-  String get outlookChartNote => 'ಸೂಚಕ ವ್ಯಾಪ್ತಿಗಳು; ಸಂಭವನೀಯತೆಗಳು ಸ್ಥೂಲ ಅಂದಾಜುಗಳು, ಭವಿಷ್ಯವಾಣಿಗಳಲ್ಲ.';
+  String get outlookChartNote =>
+      'ಸೂಚಕ ವ್ಯಾಪ್ತಿಗಳು; ಸಂಭವನೀಯತೆಗಳು ಸ್ಥೂಲ ಅಂದಾಜುಗಳು, ಭವಿಷ್ಯವಾಣಿಗಳಲ್ಲ.';
 
   @override
   String get accountTitle => 'ಖಾತೆ';
@@ -949,10 +981,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get notSignedIn => 'ಸೈನ್ ಇನ್ ಆಗಿಲ್ಲ';
 
   @override
-  String get accountBenefit => 'ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಸೈನ್ ಇನ್ ಮಾಡಿ.';
+  String get accountBenefit =>
+      'ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಸೈನ್ ಇನ್ ಮಾಡಿ.';
 
   @override
-  String get accountSyncedNote => 'ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಮತ್ತು ಉಳಿದ ವಿಶ್ಲೇಷಣೆಗಳು ಪ್ರತಿಯೊಂದು ಸಾಧನದಲ್ಲೂ ಒಂದೇ ಆಗಿರುತ್ತವೆ.';
+  String get accountSyncedNote =>
+      'ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಮತ್ತು ಉಳಿದ ವಿಶ್ಲೇಷಣೆಗಳು ಪ್ರತಿಯೊಂದು ಸಾಧನದಲ್ಲೂ ಒಂದೇ ಆಗಿರುತ್ತವೆ.';
 
   @override
   String get signInTitle => 'WhatStock ಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ';
@@ -984,14 +1018,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String get errInvalidEmail => 'ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ.';
 
   @override
-  String get errSignInFailed => 'ಸೈನ್ ಇನ್ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+  String get errSignInFailed =>
+      'ಸೈನ್ ಇನ್ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
   String get checkoutWaiting =>
       'ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಪಾವತಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ. ಅದು ಮುಗಿದ ತಕ್ಷಣ ಆ್ಯಪ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ.';
 
   @override
-  String get paymentViaStripe => 'Stripe ಮೂಲಕ ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತ ಪಾವತಿ. ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.';
+  String get paymentViaStripe =>
+      'Stripe ಮೂಲಕ ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತ ಪಾವತಿ. ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.';
 
   @override
   String get paymentViaStore =>
@@ -1004,7 +1040,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get doubleOptionTitle => 'Option ಅನ್ನು ಎರಡು ಬಾರಿ ಒತ್ತಿರಿ';
 
   @override
-  String get doubleOptionSubtitle => 'Option ಕೀಯನ್ನು ಬೇಗನೆ ಎರಡು ಬಾರಿ ಒತ್ತಿದರೂ WhatStock ತೆರೆಯುತ್ತದೆ.';
+  String get doubleOptionSubtitle =>
+      'Option ಕೀಯನ್ನು ಬೇಗನೆ ಎರಡು ಬಾರಿ ಒತ್ತಿದರೂ WhatStock ತೆರೆಯುತ್ತದೆ.';
 
   @override
   String get doubleOptionPermission =>
@@ -1026,7 +1063,12 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ವರ್ಷಗಳು', one: '1 ವರ್ಷ');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ವರ್ಷಗಳು',
+      one: '1 ವರ್ಷ',
+    );
     return '$_temp0';
   }
 
@@ -1127,7 +1169,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioRemove => 'ತೆಗೆದುಹಾಕಿ';
 
   @override
-  String get portfolioExcluded => 'ಬೆಲೆ ಅಥವಾ ವಿನಿಮಯ ದರ ಇಲ್ಲದ ಪೊಸಿಷನ್‌ಗಳನ್ನು ಒಟ್ಟು ಮೊತ್ತದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ.';
+  String get portfolioExcluded =>
+      'ಬೆಲೆ ಅಥವಾ ವಿನಿಮಯ ದರ ಇಲ್ಲದ ಪೊಸಿಷನ್‌ಗಳನ್ನು ಒಟ್ಟು ಮೊತ್ತದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ.';
 
   @override
   String get priceAlerts => 'ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳು';
@@ -1169,7 +1212,8 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'ಇನ್ನೂ ಯಾವುದೇ ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳಿಲ್ಲ. ಒಂದನ್ನು ಹೊಂದಿಸಲು ಷೇರನ್ನು ತೆರೆದು ಗಂಟೆಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+  String get alertsEmpty =>
+      'ಇನ್ನೂ ಯಾವುದೇ ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳಿಲ್ಲ. ಒಂದನ್ನು ಹೊಂದಿಸಲು ಷೇರನ್ನು ತೆರೆದು ಗಂಟೆಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
   String get alertsNote =>
@@ -1262,7 +1306,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get accountDeleted => 'ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.';
 
   @override
-  String get errDeleteAccount => 'ಖಾತೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+  String get errDeleteAccount =>
+      'ಖಾತೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1288,4 +1333,10 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ನೀವು ರದ್ದುಮಾಡುವವರೆಗೆ ವಾರ್ಷಿಕ ಚಂದಾದಾರಿಕೆಗಳು ಪ್ರತಿ ವರ್ಷ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನವೀಕರಣಗೊಳ್ಳುತ್ತವೆ. ಚಂದಾದಾರರಾಗುವ ಮೂಲಕ ನೀವು ಬಳಕೆಯ ನಿಯಮಗಳು ಮತ್ತು ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಒಪ್ಪುತ್ತೀರಿ.';
+
+  @override
+  String get myAnalyses => 'ನನ್ನ ವಿಶ್ಲೇಷಣೆಗಳು';
+
+  @override
+  String get navAlerts => 'ಅಲರ್ಟ್‌ಗಳು';
 }

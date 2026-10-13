@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 miesiące gratis",
   "perYear": "/ rok",
   "pricePerMonthApprox": "≈ {price} miesięcznie",
-  "subscriptionLegalYearly": "Subskrypcja roczna odnawia się automatycznie co roku, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności."
+  "subscriptionLegalYearly": "Subskrypcja roczna odnawia się automatycznie co roku, dopóki jej nie anulujesz. Subskrybując, akceptujesz Warunki korzystania i Politykę prywatności.",
+  "myAnalyses": "Moje analizy",
+  "navAlerts": "Alerty"
 }

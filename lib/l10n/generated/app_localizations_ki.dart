@@ -306,7 +306,12 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'athuthuria $count', one: 'mũthuthuria 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'athuthuria $count',
+      one: 'mũthuthuria 1',
+    );
     return '$_temp0';
   }
 
@@ -347,25 +352,32 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Service ya kũmenya mbica ĩtiahotire kũruta wĩra na mbica ĩno.';
+  String get errRecognitionRefused =>
+      'Service ya kũmenya mbica ĩtiahotire kũruta wĩra na mbica ĩno.';
 
   @override
-  String get errRecognitionTruncated => 'Icookio rĩa kũmenya mbica rĩatinĩkire. Geria rĩngĩ.';
+  String get errRecognitionTruncated =>
+      'Icookio rĩa kũmenya mbica rĩatinĩkire. Geria rĩngĩ.';
 
   @override
-  String get errRecognitionBadResponse => 'Icookio rĩa magegania kuuma service ya kũmenya mbica.';
+  String get errRecognitionBadResponse =>
+      'Icookio rĩa magegania kuuma service ya kũmenya mbica.';
 
   @override
-  String get errRecognitionEmpty => 'Service ya kũmenya mbica yacookia icookio rĩtarĩ na kĩndũ.';
+  String get errRecognitionEmpty =>
+      'Service ya kũmenya mbica yacookia icookio rĩtarĩ na kĩndũ.';
 
   @override
-  String get errMissingFinnhubKey => 'Gũtirĩ ũhoro wa thoko (gũtirĩ FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Gũtirĩ ũhoro wa thoko (gũtirĩ FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Tũtiahotire gũkinya service ya ũhoro wa thoko. Rora connection ya internet yaku.';
+  String get errMarketUnreachable =>
+      'Tũtiahotire gũkinya service ya ũhoro wa thoko. Rora connection ya internet yaku.';
 
   @override
-  String get errMarketRateLimited => 'Mahoya maingĩ mũno harĩ service ya ũhoro wa thoko. Etereera ndagĩka ĩmwe.';
+  String get errMarketRateLimited =>
+      'Mahoya maingĩ mũno harĩ service ya ũhoro wa thoko. Etereera ndagĩka ĩmwe.';
 
   @override
   String errMarketHttp(String status) {
@@ -373,7 +385,8 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Icookio rĩa magegania kuuma service ya ũhoro wa thoko.';
+  String get errMarketBadResponse =>
+      'Icookio rĩa magegania kuuma service ya ũhoro wa thoko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +486,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get aiRegenerate => 'Thondeka rĩngĩ';
 
   @override
-  String get aiGenerating => 'Nĩtũrahaarĩria ũthuthuria… ũngĩoya ndagĩka ĩmwe kana igĩrĩ.';
+  String get aiGenerating =>
+      'Nĩtũrahaarĩria ũthuthuria… ũngĩoya ndagĩka ĩmwe kana igĩrĩ.';
 
   @override
   String get aiSources => 'Ithima cia ũhoro';
@@ -488,10 +502,12 @@ class AppLocalizationsKi extends AppLocalizations {
       'Ũthuthuria ũyũ wathondekirwo nĩ AI kuuma ũhoro wa andũ othe na mohoro ma rĩu. No ũkorwo na mahĩtia kana ũkorwo ũrĩ wa tene, na ti ũtaaro wa investment.';
 
   @override
-  String get errAiNotConfigured => 'Ũthuthuria wa AI ndũrĩ ho (gũtirĩ ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Ũthuthuria wa AI ndũrĩ ho (gũtirĩ ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Tũtiahotire gũkinya service ya AI. Rora connection ya internet yaku.';
+  String get errAiUnreachable =>
+      'Tũtiahotire gũkinya service ya AI. Rora connection ya internet yaku.';
 
   @override
   String errAiHttp(String status) {
@@ -523,7 +539,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get rangeFiveYears => 'Mĩaka 5';
 
   @override
-  String get chartUnavailable => 'Historia ya thogora ndĩrĩ ho kuuma gĩthima kĩa ũhoro kĩa rĩu.';
+  String get chartUnavailable =>
+      'Historia ya thogora ndĩrĩ ho kuuma gĩthima kĩa ũhoro kĩa rĩu.';
 
   @override
   String get sectionStatements => 'Ripoti cia mbeca (cia o mwaka)';
@@ -580,7 +597,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get removeFromFavorites => 'Ruta harĩ iria wendete';
 
   @override
-  String get noFavorites => 'Gũtirĩ kĩndũ gũkũ rĩu. Hihinya njata ya hisa nĩguo ũmĩongerere.';
+  String get noFavorites =>
+      'Gũtirĩ kĩndũ gũkũ rĩu. Hihinya njata ya hisa nĩguo ũmĩongerere.';
 
   @override
   String get displayCurrency => 'Mbeca cia kuonania';
@@ -627,7 +645,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get updateDownloading => 'Nĩtũraikũrũkia iwerũhia thuutha-inĩ…';
 
   @override
-  String get updateDownloaded => 'Iwerũhia rĩhaarĩrĩtie. Ambĩrĩria rĩngĩ nĩguo ũrĩikĩre.';
+  String get updateDownloaded =>
+      'Iwerũhia rĩhaarĩrĩtie. Ambĩrĩria rĩngĩ nĩguo ũrĩikĩre.';
 
   @override
   String get updateNow => 'Erũhia';
@@ -684,7 +703,8 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Kũgeria gwaku gwa tũhũ nĩkũthirĩte. Thuura mũbango nĩguo ũthiĩ na mbere gũthuthuria.';
+  String get trialExpired =>
+      'Kũgeria gwaku gwa tũhũ nĩkũthirĩte. Thuura mũbango nĩguo ũthiĩ na mbere gũthuthuria.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -714,7 +734,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get perMonth => '/ mweri';
 
   @override
-  String get extraPacksTitle => 'Ũrabatara makĩria? Gũra mathuthuria ma kũongerera';
+  String get extraPacksTitle =>
+      'Ũrabatara makĩria? Gũra mathuthuria ma kũongerera';
 
   @override
   String get extraPacksHint =>
@@ -750,10 +771,12 @@ class AppLocalizationsKi extends AppLocalizations {
       'Ndũrĩ na mathuthuria matigaire ihinda-inĩ rĩĩrĩ. Ambata mũbango waku kana ũgũre mathuthuria ma kũongerera.';
 
   @override
-  String get errTrialExpired => 'Kũgeria gwaku gwa tũhũ nĩkũthirĩte. Thuura mũbango nĩguo ũthiĩ na mbere.';
+  String get errTrialExpired =>
+      'Kũgeria gwaku gwa tũhũ nĩkũthirĩte. Thuura mũbango nĩguo ũthiĩ na mbere.';
 
   @override
-  String get errNoPlan => 'Nĩ ũrabatara mũbango ũrĩ ho nĩguo ũhũthĩre ũthuthuria wa AI.';
+  String get errNoPlan =>
+      'Nĩ ũrabatara mũbango ũrĩ ho nĩguo ũhũthĩre ũthuthuria wa AI.';
 
   @override
   String get viewPlans => 'Rora mĩbango';
@@ -762,7 +785,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get usageTitle => 'Ũhũthĩri';
 
   @override
-  String get demoPurchaseNote => 'Marĩhi ma demo: ũgũri platform-inĩ ĩno nĩ wa kwĩgerekania tu.';
+  String get demoPurchaseNote =>
+      'Marĩhi ma demo: ũgũri platform-inĩ ĩno nĩ wa kwĩgerekania tu.';
 
   @override
   String get mostPopular => 'Ĩrĩa yendetwo mũno';
@@ -802,7 +826,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get aiDepthStandardDesc => 'Ripoti ĩrĩ na icunjĩ ciothe.';
 
   @override
-  String get aiDepthDeepDesc => 'Ũcaria mũingĩ wa internet, kũgerekania na kambuni ingĩ, na ũtaarĩrio mũriku makĩria.';
+  String get aiDepthDeepDesc =>
+      'Ũcaria mũingĩ wa internet, kũgerekania na kambuni ingĩ, na ũtaarĩrio mũriku makĩria.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -830,10 +855,12 @@ class AppLocalizationsKi extends AppLocalizations {
   String get aiReaderExperienced => 'Mũmenyereri';
 
   @override
-  String get aiReaderBeginnerDesc => 'Rũthiomi rũhũthũ; o kiugo gĩa ũũgĩ nĩgĩtaarĩrĩtio.';
+  String get aiReaderBeginnerDesc =>
+      'Rũthiomi rũhũthũ; o kiugo gĩa ũũgĩ nĩgĩtaarĩrĩtio.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Mandĩko maiyũrĩte makĩria, na ciugo cia mbeca cia mũtugo.';
+  String get aiReaderExperiencedDesc =>
+      'Mandĩko maiyũrĩte makĩria, na ciugo cia mbeca cia mũtugo.';
 
   @override
   String get aiCounterArgument => 'Ũhoro mũrũmu mũno wa gũkararia';
@@ -847,7 +874,8 @@ class AppLocalizationsKi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Nginya maita $count ma gũcaria internet harĩ o ũthuthuria na mũbango waku',
+      other:
+          'Nginya maita $count ma gũcaria internet harĩ o ũthuthuria na mũbango waku',
       one: 'Nginya rĩita 1 rĩa gũcaria internet harĩ o ũthuthuria na mũbango waku',
     );
     return '$_temp0';
@@ -933,7 +961,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get upcomingEvents => 'Maũndũ marĩa magũũka';
 
   @override
-  String get outlookChartNote => 'Mĩhaka nĩ ya kuonania tu; ũhoti wa ũndũ gwĩkĩka nĩ gũthima kwa ũguo tu, ti ũrathi.';
+  String get outlookChartNote =>
+      'Mĩhaka nĩ ya kuonania tu; ũhoti wa ũndũ gwĩkĩka nĩ gũthima kwa ũguo tu, ti ũrathi.';
 
   @override
   String get accountTitle => 'Akaunti';
@@ -948,10 +977,12 @@ class AppLocalizationsKi extends AppLocalizations {
   String get notSignedIn => 'Ndũtoonyete';
 
   @override
-  String get accountBenefit => 'Toonya nĩguo ũiyandĩkithio waku ũrute wĩra harĩ indo ciaku ciothe.';
+  String get accountBenefit =>
+      'Toonya nĩguo ũiyandĩkithio waku ũrute wĩra harĩ indo ciaku ciothe.';
 
   @override
-  String get accountSyncedNote => 'Ũiyandĩkithio waku na mathuthuria marĩa matigaire nĩ o ũndũ ũmwe harĩ o kĩndũ.';
+  String get accountSyncedNote =>
+      'Ũiyandĩkithio waku na mathuthuria marĩa matigaire nĩ o ũndũ ũmwe harĩ o kĩndũ.';
 
   @override
   String get signInTitle => 'Toonya WhatStock';
@@ -983,13 +1014,16 @@ class AppLocalizationsKi extends AppLocalizations {
   String get errInvalidEmail => 'Andĩka email ĩrĩ ya ma.';
 
   @override
-  String get errSignInFailed => 'Gũtoonya nĩkwaremire. Rora connection yaku ũcooke ũgerie rĩngĩ.';
+  String get errSignInFailed =>
+      'Gũtoonya nĩkwaremire. Rora connection yaku ũcooke ũgerie rĩngĩ.';
 
   @override
-  String get checkoutWaiting => 'Rĩkia kũrĩha thĩinĩ wa browser yaku. Warĩkia, app nĩĩgwĩerũhia yo nyene.';
+  String get checkoutWaiting =>
+      'Rĩkia kũrĩha thĩinĩ wa browser yaku. Warĩkia, app nĩĩgwĩerũhia yo nyene.';
 
   @override
-  String get paymentViaStripe => 'Marĩhi marĩ na ũgitĩri thĩinĩ wa browser yaku na Stripe. Tiga hĩndĩ o yothe.';
+  String get paymentViaStripe =>
+      'Marĩhi marĩ na ũgitĩri thĩinĩ wa browser yaku na Stripe. Tiga hĩndĩ o yothe.';
 
   @override
   String get paymentViaStore =>
@@ -1002,7 +1036,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get doubleOptionTitle => 'Hihinya Option maita meerĩ';
 
   @override
-  String get doubleOptionSubtitle => 'Gũhihinya key ya Option maita meerĩ na ihenya o nakuo nĩgwĩtaga WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Gũhihinya key ya Option maita meerĩ na ihenya o nakuo nĩgwĩtaga WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1024,7 +1059,12 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'mĩaka $years', one: 'mwaka 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'mĩaka $years',
+      one: 'mwaka 1',
+    );
     return '$_temp0';
   }
 
@@ -1168,7 +1208,8 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Gũtirĩ imenyithia rĩu. Hingũra hisa ũcooke ũhihinye kengele nĩguo ũige kĩmwe.';
+  String get alertsEmpty =>
+      'Gũtirĩ imenyithia rĩu. Hingũra hisa ũcooke ũhihinye kengele nĩguo ũige kĩmwe.';
 
   @override
   String get alertsNote =>
@@ -1261,7 +1302,8 @@ class AppLocalizationsKi extends AppLocalizations {
   String get accountDeleted => 'Akaunti yaku nĩyeheririo.';
 
   @override
-  String get errDeleteAccount => 'Tũtiahotire kweheria akaunti. Rora connection yaku ũcooke ũgerie rĩngĩ.';
+  String get errDeleteAccount =>
+      'Tũtiahotire kweheria akaunti. Rora connection yaku ũcooke ũgerie rĩngĩ.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1287,4 +1329,10 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Ũiyandĩkithio wa mwaka werũhagio o ũguo o mwaka nginya ũũtige. Na gwĩyandĩkithia, nĩwetĩkĩra Mawatho ma Ũhũthĩri na Mawatho ma Kũgitĩra Ũhoro Waku.';
+
+  @override
+  String get myAnalyses => 'Ũthuthuria wakwa';
+
+  @override
+  String get navAlerts => 'Imenyithia';
 }

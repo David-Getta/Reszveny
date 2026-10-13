@@ -13,7 +13,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Акцияне фотога төшерегез һәм аның турында барысын да белегез.';
+  String get homeTagline =>
+      'Акцияне фотога төшерегез һәм аның турында барысын да белегез.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count аналитик', one: '1 аналитик');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count аналитик',
+      one: '1 аналитик',
+    );
     return '$_temp0';
   }
 
@@ -334,10 +340,12 @@ class AppLocalizationsTt extends AppLocalizations {
   String get recognitionRawText => 'Рәсемнән укылган текст';
 
   @override
-  String get errMissingAnthropicKey => 'Рәсем тану көйләнмәгән (ANTHROPIC_API_KEY юк). Тикерны кулдан кертегез.';
+  String get errMissingAnthropicKey =>
+      'Рәсем тану көйләнмәгән (ANTHROPIC_API_KEY юк). Тикерны кулдан кертегез.';
 
   @override
-  String get errRecognitionUnreachable => 'Тану хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
+  String get errRecognitionUnreachable =>
+      'Тану хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -348,7 +356,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get errRecognitionRefused => 'Тану хезмәте бу рәсемне эшкәртә алмады.';
 
   @override
-  String get errRecognitionTruncated => 'Тану хезмәтенең җавабы өзелде. Зинһар, кабат тырышып карагыз.';
+  String get errRecognitionTruncated =>
+      'Тану хезмәтенең җавабы өзелде. Зинһар, кабат тырышып карагыз.';
 
   @override
   String get errRecognitionBadResponse => 'Тану хезмәтеннән көтелмәгән җавап.';
@@ -357,10 +366,12 @@ class AppLocalizationsTt extends AppLocalizations {
   String get errRecognitionEmpty => 'Тану хезмәте буш җавап кайтарды.';
 
   @override
-  String get errMissingFinnhubKey => 'Базар мәгълүматлары көйләнмәгән (FINNHUB_API_KEY юк).';
+  String get errMissingFinnhubKey =>
+      'Базар мәгълүматлары көйләнмәгән (FINNHUB_API_KEY юк).';
 
   @override
-  String get errMarketUnreachable => 'Базар мәгълүматлары хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
+  String get errMarketUnreachable =>
+      'Базар мәгълүматлары хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
 
   @override
   String get errMarketRateLimited =>
@@ -372,7 +383,8 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Базар мәгълүматлары хезмәтеннән көтелмәгән җавап.';
+  String get errMarketBadResponse =>
+      'Базар мәгълүматлары хезмәтеннән көтелмәгән җавап.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +484,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get aiRegenerate => 'Яңадан ясау';
 
   @override
-  String get aiGenerating => 'Анализ әзерләнә… бу бер-ике минут вакыт алырга мөмкин.';
+  String get aiGenerating =>
+      'Анализ әзерләнә… бу бер-ике минут вакыт алырга мөмкин.';
 
   @override
   String get aiSources => 'Чыганаклар';
@@ -487,10 +500,12 @@ class AppLocalizationsTt extends AppLocalizations {
       'Ачык мәгълүматлар һәм соңгы яңалыклар нигезендә AI ясаган анализ. Анда хаталар булырга яки ул искергән булырга мөмкин, һәм ул инвестиция киңәше түгел.';
 
   @override
-  String get errAiNotConfigured => 'AI анализы көйләнмәгән (ANTHROPIC_API_KEY юк).';
+  String get errAiNotConfigured =>
+      'AI анализы көйләнмәгән (ANTHROPIC_API_KEY юк).';
 
   @override
-  String get errAiUnreachable => 'AI хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
+  String get errAiUnreachable =>
+      'AI хезмәтенә тоташып булмады. Интернет тоташуыгызны тикшерегез.';
 
   @override
   String errAiHttp(String status) {
@@ -549,7 +564,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операцион акча агымы';
 
   @override
-  String get statementsUnavailable => 'Бу акция өчен бастырылган финанс хисаплары юк.';
+  String get statementsUnavailable =>
+      'Бу акция өчен бастырылган финанс хисаплары юк.';
 
   @override
   String get launchAtLogin => 'Системага кергәндә җибәрү';
@@ -558,7 +574,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get hotkeyLabel => 'Глобаль тиз төймәләр';
 
   @override
-  String get hotkeyRecordHint => 'Монда басыгыз, аннары яңа төймәләр кушылмасына басыгыз';
+  String get hotkeyRecordHint =>
+      'Монда басыгыз, аннары яңа төймәләр кушылмасына басыгыз';
 
   @override
   String get hotkeyReset => 'Башлангыч көйләнешкә кайтару';
@@ -579,7 +596,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get removeFromFavorites => 'Сайланмалардан бетерү';
 
   @override
-  String get noFavorites => 'Әлегә сайланмалар юк. Өстәү өчен акциядәге йолдызга басыгыз.';
+  String get noFavorites =>
+      'Әлегә сайланмалар юк. Өстәү өчен акциядәге йолдызга басыгыз.';
 
   @override
   String get displayCurrency => 'Күрсәтү валютасы';
@@ -626,7 +644,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get updateDownloading => 'Яңарту фон режимында йөкләнә…';
 
   @override
-  String get updateDownloaded => 'Яңарту әзер. Урнаштыру өчен кушымтаны яңадан җибәрегез.';
+  String get updateDownloaded =>
+      'Яңарту әзер. Урнаштыру өчен кушымтаны яңадан җибәрегез.';
 
   @override
   String get updateNow => 'Яңарту';
@@ -635,7 +654,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get restartNow => 'Яңадан җибәрү';
 
   @override
-  String get updatesViaStore => 'Яңартулар кушымталар кибете аша автоматик рәвештә килә.';
+  String get updatesViaStore =>
+      'Яңартулар кушымталар кибете аша автоматик рәвештә килә.';
 
   @override
   String get updateCheckFailed => 'Яңартуларны тикшереп булмады.';
@@ -683,7 +703,8 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Түләүсез сынау чорыгыз тәмамланды. Анализлауны дәвам итү өчен тариф сайлагыз.';
+  String get trialExpired =>
+      'Түләүсез сынау чорыгыз тәмамланды. Анализлауны дәвам итү өчен тариф сайлагыз.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +737,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get extraPacksTitle => 'Күбрәк кирәкме? Өстәмә анализлар сатып алыгыз';
 
   @override
-  String get extraPacksHint => 'Өстәмә анализларның вакыты беркайчан да чыкмый, алар айлык лимитыгыздан соң кулланыла.';
+  String get extraPacksHint =>
+      'Өстәмә анализларның вакыты беркайчан да чыкмый, алар айлык лимитыгыздан соң кулланыла.';
 
   @override
   String get buy => 'Сатып алу';
@@ -748,7 +770,8 @@ class AppLocalizationsTt extends AppLocalizations {
       'Бу чорга анализларыгыз калмады. Тарифыгызны күтәрегез яки өстәмә анализлар сатып алыгыз.';
 
   @override
-  String get errTrialExpired => 'Түләүсез сынау чорыгыз тәмамланды. Дәвам итү өчен тариф сайлагыз.';
+  String get errTrialExpired =>
+      'Түләүсез сынау чорыгыз тәмамланды. Дәвам итү өчен тариф сайлагыз.';
 
   @override
   String get errNoPlan => 'AI анализы өчен актив тариф кирәк.';
@@ -760,7 +783,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get usageTitle => 'Куллану';
 
   @override
-  String get demoPurchaseNote => 'Демо-түләү: бу платформада сатып алулар симуляцияләнә.';
+  String get demoPurchaseNote =>
+      'Демо-түләү: бу платформада сатып алулар симуляцияләнә.';
 
   @override
   String get mostPopular => 'Иң популяр';
@@ -800,7 +824,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get aiDepthStandardDesc => 'Барлык бүлекләр белән тулы хисап.';
 
   @override
-  String get aiDepthDeepDesc => 'Күбрәк веб-эзләү, көндәшләр белән чагыштыру һәм тирәнрәк тәфсилләр.';
+  String get aiDepthDeepDesc =>
+      'Күбрәк веб-эзләү, көндәшләр белән чагыштыру һәм тирәнрәк тәфсилләр.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,13 +856,15 @@ class AppLocalizationsTt extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'Гади тел; һәр махсус термин аңлатыла.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Стандарт финанс терминологиясе белән тыгызрак текст.';
+  String get aiReaderExperiencedDesc =>
+      'Стандарт финанс терминологиясе белән тыгызрак текст.';
 
   @override
   String get aiCounterArgument => 'Иң көчле каршы аргумент';
 
   @override
-  String get aiCounterArgumentDesc => 'Йомгак һәрвакыт үз нәтиҗәсенә каршы иң көчле аргумент белән тәмамлана.';
+  String get aiCounterArgumentDesc =>
+      'Йомгак һәрвакыт үз нәтиҗәсенә каршы иң көчле аргумент белән тәмамлана.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +957,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get upcomingEvents => 'Алдагы вакыйгалар';
 
   @override
-  String get outlookChartNote => 'Якынча диапазоннар; ихтималлыклар – якынча бәяләүләр, фаразлар түгел.';
+  String get outlookChartNote =>
+      'Якынча диапазоннар; ихтималлыклар – якынча бәяләүләр, фаразлар түгел.';
 
   @override
   String get accountTitle => 'Аккаунт';
@@ -945,10 +973,12 @@ class AppLocalizationsTt extends AppLocalizations {
   String get notSignedIn => 'Керелмәгән';
 
   @override
-  String get accountBenefit => 'Язылуыгыз барлык җайланмаларыгызда да эшләсен өчен керегез.';
+  String get accountBenefit =>
+      'Язылуыгыз барлык җайланмаларыгызда да эшләсен өчен керегез.';
 
   @override
-  String get accountSyncedNote => 'Язылуыгыз һәм калган анализларыгыз һәр җайланмада бертөрле.';
+  String get accountSyncedNote =>
+      'Язылуыгыз һәм калган анализларыгыз һәр җайланмада бертөрле.';
 
   @override
   String get signInTitle => 'WhatStock аккаунтына керү';
@@ -980,13 +1010,16 @@ class AppLocalizationsTt extends AppLocalizations {
   String get errInvalidEmail => 'Дөрес электрон почта адресын кертегез.';
 
   @override
-  String get errSignInFailed => 'Керү барып чыкмады. Тоташуыгызны тикшерегез һәм кабат тырышып карагыз.';
+  String get errSignInFailed =>
+      'Керү барып чыкмады. Тоташуыгызны тикшерегез һәм кабат тырышып карагыз.';
 
   @override
-  String get checkoutWaiting => 'Түләүне браузерыгызда тәмамлагыз. Тәмамлангач, кушымта автоматик рәвештә яңарачак.';
+  String get checkoutWaiting =>
+      'Түләүне браузерыгызда тәмамлагыз. Тәмамлангач, кушымта автоматик рәвештә яңарачак.';
 
   @override
-  String get paymentViaStripe => 'Stripe аша браузерда куркынычсыз түләү. Теләсә кайчан баш тарта аласыз.';
+  String get paymentViaStripe =>
+      'Stripe аша браузерда куркынычсыз түләү. Теләсә кайчан баш тарта аласыз.';
 
   @override
   String get paymentViaStore =>
@@ -999,7 +1032,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get doubleOptionTitle => 'Option төймәсенә ике тапкыр басу';
 
   @override
-  String get doubleOptionSubtitle => 'Option төймәсенә тиз генә ике тапкыр басу да WhatStock кушымтасын чакыра.';
+  String get doubleOptionSubtitle =>
+      'Option төймәсенә тиз генә ике тапкыр басу да WhatStock кушымтасын чакыра.';
 
   @override
   String get doubleOptionPermission =>
@@ -1021,7 +1055,12 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ел', one: '1 ел');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ел',
+      one: '1 ел',
+    );
     return '$_temp0';
   }
 
@@ -1122,7 +1161,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get portfolioRemove => 'Бетерү';
 
   @override
-  String get portfolioExcluded => 'Бәясе яки валюта курсы булмаган позицияләр гомуми суммага кертелми.';
+  String get portfolioExcluded =>
+      'Бәясе яки валюта курсы булмаган позицияләр гомуми суммага кертелми.';
 
   @override
   String get priceAlerts => 'Бәя искәртүләре';
@@ -1164,7 +1204,8 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Әлегә бәя искәртүләре юк. Искәртү кую өчен акцияне ачыгыз һәм кыңгырауга басыгыз.';
+  String get alertsEmpty =>
+      'Әлегә бәя искәртүләре юк. Искәртү кую өчен акцияне ачыгыз һәм кыңгырауга басыгыз.';
 
   @override
   String get alertsNote =>
@@ -1257,7 +1298,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get accountDeleted => 'Аккаунтыгыз бетерелде.';
 
   @override
-  String get errDeleteAccount => 'Аккаунтны бетереп булмады. Тоташуыгызны тикшерегез һәм кабат тырышып карагыз.';
+  String get errDeleteAccount =>
+      'Аккаунтны бетереп булмады. Тоташуыгызны тикшерегез һәм кабат тырышып карагыз.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1283,4 +1325,10 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Еллык язылу сез аннан баш тартканчы һәр ел саен автоматик рәвештә озайтыла. Язылып, сез Куллану шартларын һәм Хосусыйлык сәясәтен кабул итәсез.';
+
+  @override
+  String get myAnalyses => 'Минем анализларым';
+
+  @override
+  String get navAlerts => 'Искәртүләр';
 }

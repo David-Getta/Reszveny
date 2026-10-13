@@ -369,5 +369,7 @@
   "yearlyDiscount": "Dikgwedi di le 2 mahala",
   "perYear": "/ ngwaga",
   "pricePerMonthApprox": "≈ {price} ka kgwedi",
-  "subscriptionLegalYearly": "Ikwadisetso ya ngwaga e ntšhwafala ka boiketsetso ngwaga le ngwaga go fitlha o e khansela. Ka go ikwadisa o amogela Melawana ya Tiriso le Pholisi ya Sephiri."
+  "subscriptionLegalYearly": "Ikwadisetso ya ngwaga e ntšhwafala ka boiketsetso ngwaga le ngwaga go fitlha o e khansela. Ka go ikwadisa o amogela Melawana ya Tiriso le Pholisi ya Sephiri.",
+  "myAnalyses": "Ditshekatsheko tsa me",
+  "navAlerts": "Dikitsiso"
 }

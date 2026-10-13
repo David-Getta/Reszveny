@@ -13,7 +13,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Kuba ekifaananyi ky\'omugabo omanye buli kimu ku gwo.';
+  String get homeTagline =>
+      'Kuba ekifaananyi ky\'omugabo omanye buli kimu ku gwo.';
 
   @override
   String get homeHint =>
@@ -352,25 +353,32 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Empeereza y\'okuzuula tesobodde kukola ku kifaananyi kino.';
+  String get errRecognitionRefused =>
+      'Empeereza y\'okuzuula tesobodde kukola ku kifaananyi kino.';
 
   @override
-  String get errRecognitionTruncated => 'Okuddamu kw\'okuzuula kusaliddwako. Gezaako nate.';
+  String get errRecognitionTruncated =>
+      'Okuddamu kw\'okuzuula kusaliddwako. Gezaako nate.';
 
   @override
-  String get errRecognitionBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza y\'okuzuula.';
+  String get errRecognitionBadResponse =>
+      'Okuddamu okutasuubirwa okuva mu mpeereza y\'okuzuula.';
 
   @override
-  String get errRecognitionEmpty => 'Empeereza y\'okuzuula ezzizzaayo okuddamu okutaliimu kintu.';
+  String get errRecognitionEmpty =>
+      'Empeereza y\'okuzuula ezzizzaayo okuddamu okutaliimu kintu.';
 
   @override
-  String get errMissingFinnhubKey => 'Data y\'akatale tennategekebwa (tewali FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Data y\'akatale tennategekebwa (tewali FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Tetusobodde kutuuka ku mpeereza ya data y\'akatale. Kebera yintaneeti yo.';
+  String get errMarketUnreachable =>
+      'Tetusobodde kutuuka ku mpeereza ya data y\'akatale. Kebera yintaneeti yo.';
 
   @override
-  String get errMarketRateLimited => 'Okusaba kungi nnyo eri empeereza ya data y\'akatale. Lindako eddakiika emu.';
+  String get errMarketRateLimited =>
+      'Okusaba kungi nnyo eri empeereza ya data y\'akatale. Lindako eddakiika emu.';
 
   @override
   String errMarketHttp(String status) {
@@ -378,7 +386,8 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza ya data y\'akatale.';
+  String get errMarketBadResponse =>
+      'Okuddamu okutasuubirwa okuva mu mpeereza ya data y\'akatale.';
 
   @override
   String errNoQuote(String symbol) {
@@ -478,7 +487,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get aiRegenerate => 'Ddamu okukola';
 
   @override
-  String get aiGenerating => 'Tutegeka okwekenneenya… kino kiyinza okutwala eddakiika emu oba bbiri.';
+  String get aiGenerating =>
+      'Tutegeka okwekenneenya… kino kiyinza okutwala eddakiika emu oba bbiri.';
 
   @override
   String get aiSources => 'Ensibuko';
@@ -493,10 +503,12 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okwekenneenya okukoleddwa AI nga kwesigamiziddwa ku data ya lukale n\'amawulire ag\'akaakano. Kuyinza okubaamu ensobi oba okuba nga kukaddiye, era si magezi ga kusiga nsimbi.';
 
   @override
-  String get errAiNotConfigured => 'Okwekenneenya kwa AI tekunnategekebwa (tewali ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Okwekenneenya kwa AI tekunnategekebwa (tewali ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Tetusobodde kutuuka ku mpeereza ya AI. Kebera yintaneeti yo.';
+  String get errAiUnreachable =>
+      'Tetusobodde kutuuka ku mpeereza ya AI. Kebera yintaneeti yo.';
 
   @override
   String errAiHttp(String status) {
@@ -504,10 +516,12 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Empeereza ya AI egaanye okwekenneenya omugabo guno.';
+  String get errAiRefused =>
+      'Empeereza ya AI egaanye okwekenneenya omugabo guno.';
 
   @override
-  String get errAiBadResponse => 'Okuddamu okutasuubirwa okuva mu mpeereza ya AI.';
+  String get errAiBadResponse =>
+      'Okuddamu okutasuubirwa okuva mu mpeereza ya AI.';
 
   @override
   String get sectionChart => 'Ekipande ky\'ebbeeyi';
@@ -528,7 +542,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Ebyafaayo by\'ebbeeyi tebifunika mu nsibuko ya data eriwo kati.';
+  String get chartUnavailable =>
+      'Ebyafaayo by\'ebbeeyi tebifunika mu nsibuko ya data eriwo kati.';
 
   @override
   String get sectionStatements => 'Lipoota z\'ensimbi (ez\'omwaka)';
@@ -555,7 +570,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get labelOperatingCashFlow => 'Ensimbi eziva mu mirimu';
 
   @override
-  String get statementsUnavailable => 'Lipoota z\'ensimbi ezaafulumizibwa tezifunika ku mugabo guno.';
+  String get statementsUnavailable =>
+      'Lipoota z\'ensimbi ezaafulumizibwa tezifunika ku mugabo guno.';
 
   @override
   String get launchAtLogin => 'Ggulawo ng\'oyingidde';
@@ -564,7 +580,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get hotkeyLabel => 'Shortcut ya buli wamu';
 
   @override
-  String get hotkeyRecordHint => 'Nyiga wano, oluvannyuma onyige obupeesa obupya';
+  String get hotkeyRecordHint =>
+      'Nyiga wano, oluvannyuma onyige obupeesa obupya';
 
   @override
   String get hotkeyReset => 'Zzaawo ebyasooka';
@@ -585,7 +602,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get removeFromFavorites => 'Ggyako ku by\'oyagala';
 
   @override
-  String get noFavorites => 'Tonnaba kugattako kintu. Nyiga emmunyeenye ku mugabo okugugattako.';
+  String get noFavorites =>
+      'Tonnaba kugattako kintu. Nyiga emmunyeenye ku mugabo okugugattako.';
 
   @override
   String get displayCurrency => 'Ensimbi ez\'okulaga';
@@ -632,7 +650,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get updateDownloading => 'Tuwanula ebipya mu kasirise…';
 
   @override
-  String get updateDownloaded => 'Ebipya byetegese. Ddamu otandike app okubiteekamu.';
+  String get updateDownloaded =>
+      'Ebipya byetegese. Ddamu otandike app okubiteekamu.';
 
   @override
   String get updateNow => 'Zza obuggya';
@@ -641,7 +660,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get restartNow => 'Ddamu otandike';
 
   @override
-  String get updatesViaStore => 'Ebipya bijja byokka okuyita mu dduuka lya app.';
+  String get updatesViaStore =>
+      'Ebipya bijja byokka okuyita mu dduuka lya app.';
 
   @override
   String get updateCheckFailed => 'Tetusobodde kukebera bipya.';
@@ -689,7 +709,8 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongera okwekenneenya.';
+  String get trialExpired =>
+      'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongera okwekenneenya.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -719,7 +740,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get perMonth => '/ omwezi';
 
   @override
-  String get extraPacksTitle => 'Weetaaga ebisingawo? Gula okwekenneenya okw\'okwongerako';
+  String get extraPacksTitle =>
+      'Weetaaga ebisingawo? Gula okwekenneenya okw\'okwongerako';
 
   @override
   String get extraPacksHint =>
@@ -755,10 +777,12 @@ class AppLocalizationsLg extends AppLocalizations {
       'Tosigazza kwekenneenya mu kiseera kino. Kuza enteekateeka yo oba gula okwekenneenya okw\'okwongerako.';
 
   @override
-  String get errTrialExpired => 'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongerayo.';
+  String get errTrialExpired =>
+      'Okugezesa kwo okw\'obwereere kuweddeko. Londa enteekateeka okweyongerayo.';
 
   @override
-  String get errNoPlan => 'Weetaaga enteekateeka ekola okukozesa okwekenneenya kwa AI.';
+  String get errNoPlan =>
+      'Weetaaga enteekateeka ekola okukozesa okwekenneenya kwa AI.';
 
   @override
   String get viewPlans => 'Laba enteekateeka';
@@ -767,7 +791,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get usageTitle => 'Enkozesa';
 
   @override
-  String get demoPurchaseNote => 'Okusasula kwa demo: okugula ku sisitemu eno kwa kufaanaanyiriza kwokka.';
+  String get demoPurchaseNote =>
+      'Okusasula kwa demo: okugula ku sisitemu eno kwa kufaanaanyiriza kwokka.';
 
   @override
   String get mostPopular => 'Esinga okwagalibwa';
@@ -836,10 +861,12 @@ class AppLocalizationsLg extends AppLocalizations {
   String get aiReaderExperienced => 'Omukugu';
 
   @override
-  String get aiReaderBeginnerDesc => 'Olulimi olwangu; buli kigambo kya kikugu kinnyonnyolwa.';
+  String get aiReaderBeginnerDesc =>
+      'Olulimi olwangu; buli kigambo kya kikugu kinnyonnyolwa.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Ebiwandiiko ebinywevu nga bikozesa ebigambo by\'ebyensimbi ebya bulijjo.';
+  String get aiReaderExperiencedDesc =>
+      'Ebiwandiiko ebinywevu nga bikozesa ebigambo by\'ebyensimbi ebya bulijjo.';
 
   @override
   String get aiCounterArgument => 'Ensonga esinga okuwakanya';
@@ -853,7 +880,8 @@ class AppLocalizationsLg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Okunoonya okutuuka ku $count ku yintaneeti buli kwekenneenya mu nteekateeka yo',
+      other:
+          'Okunoonya okutuuka ku $count ku yintaneeti buli kwekenneenya mu nteekateeka yo',
       one: 'Okunoonya 1 ku yintaneeti buli kwekenneenya mu nteekateeka yo',
     );
     return '$_temp0';
@@ -939,7 +967,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get upcomingEvents => 'Ebigenda okubaawo';
 
   @override
-  String get outlookChartNote => 'Emiwendo gya kulabirako; emikisa kuteebereza buteebereza, si bunnabbi.';
+  String get outlookChartNote =>
+      'Emiwendo gya kulabirako; emikisa kuteebereza buteebereza, si bunnabbi.';
 
   @override
   String get accountTitle => 'Akawunti';
@@ -954,10 +983,12 @@ class AppLocalizationsLg extends AppLocalizations {
   String get notSignedIn => 'Toyingidde';
 
   @override
-  String get accountBenefit => 'Yingira okwewandiisa kwo kukole ku byuma byo byonna.';
+  String get accountBenefit =>
+      'Yingira okwewandiisa kwo kukole ku byuma byo byonna.';
 
   @override
-  String get accountSyncedNote => 'Okwewandiisa kwo n\'okwekenneenya okusigaddeyo bye bimu ku buli kyuma.';
+  String get accountSyncedNote =>
+      'Okwewandiisa kwo n\'okwekenneenya okusigaddeyo bye bimu ku buli kyuma.';
 
   @override
   String get signInTitle => 'Yingira mu WhatStock';
@@ -989,13 +1020,16 @@ class AppLocalizationsLg extends AppLocalizations {
   String get errInvalidEmail => 'Yingiza endagiriro ya email entuufu.';
 
   @override
-  String get errSignInFailed => 'Okuyingira kulemye. Kebera yintaneeti yo oddemu ogezeeko.';
+  String get errSignInFailed =>
+      'Okuyingira kulemye. Kebera yintaneeti yo oddemu ogezeeko.';
 
   @override
-  String get checkoutWaiting => 'Maliriza okusasula mu browser yo. App ejja kwezza obuggya yokka ng\'omaze.';
+  String get checkoutWaiting =>
+      'Maliriza okusasula mu browser yo. App ejja kwezza obuggya yokka ng\'omaze.';
 
   @override
-  String get paymentViaStripe => 'Okusasula okw\'obukuumi mu browser yo nga kuyita mu Stripe. Sazaamu essaawa yonna.';
+  String get paymentViaStripe =>
+      'Okusasula okw\'obukuumi mu browser yo nga kuyita mu Stripe. Sazaamu essaawa yonna.';
 
   @override
   String get paymentViaStore =>
@@ -1008,7 +1042,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get doubleOptionTitle => 'Nyiga Option emirundi ebiri';
 
   @override
-  String get doubleOptionSubtitle => 'Okunyiga Option emirundi ebiri amangu nakyo kiyita WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Okunyiga Option emirundi ebiri amangu nakyo kiyita WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1030,7 +1065,12 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'emyaka $years', one: 'omwaka 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'emyaka $years',
+      one: 'omwaka 1',
+    );
     return '$_temp0';
   }
 
@@ -1174,7 +1214,8 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Tewali kulabula ku bbeeyi. Ggulawo omugabo onyige ekide okukuteekawo.';
+  String get alertsEmpty =>
+      'Tewali kulabula ku bbeeyi. Ggulawo omugabo onyige ekide okukuteekawo.';
 
   @override
   String get alertsNote =>
@@ -1267,7 +1308,8 @@ class AppLocalizationsLg extends AppLocalizations {
   String get accountDeleted => 'Akawunti yo esanguddwa.';
 
   @override
-  String get errDeleteAccount => 'Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.';
+  String get errDeleteAccount =>
+      'Akawunti tesobodde kusangulwa. Kebera yintaneeti yo oddemu ogezeeko.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1293,4 +1335,10 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Okwewandiisa okw\'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw\'okusazaamu. Bw\'owewandiisa, oba okkirizza Amateeka g\'okukozesa n\'Enkola y\'ebyama.';
+
+  @override
+  String get myAnalyses => 'Okwekenneenya kwange';
+
+  @override
+  String get navAlerts => 'Okulabula';
 }

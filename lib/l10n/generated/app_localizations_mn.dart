@@ -13,7 +13,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Хувьцааны зургийг аваад, түүний талаар бүгдийг мэдээрэй.';
+  String get homeTagline =>
+      'Хувьцааны зургийг аваад, түүний талаар бүгдийг мэдээрэй.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count шинжээч', one: '1 шинжээч');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count шинжээч',
+      one: '1 шинжээч',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsMn extends AppLocalizations {
       'Зураг таних тохируулаагүй байна (ANTHROPIC_API_KEY алга). Тикерийг гараар оруулна уу.';
 
   @override
-  String get errRecognitionUnreachable => 'Таних үйлчилгээтэй холбогдож чадсангүй. Интернэт холболтоо шалгана уу.';
+  String get errRecognitionUnreachable =>
+      'Таних үйлчилгээтэй холбогдож чадсангүй. Интернэт холболтоо шалгана уу.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,19 +353,23 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Таних үйлчилгээ энэ зургийг боловсруулж чадсангүй.';
+  String get errRecognitionRefused =>
+      'Таних үйлчилгээ энэ зургийг боловсруулж чадсангүй.';
 
   @override
-  String get errRecognitionTruncated => 'Таних үйлчилгээний хариу тасарсан. Дахин оролдоно уу.';
+  String get errRecognitionTruncated =>
+      'Таних үйлчилгээний хариу тасарсан. Дахин оролдоно уу.';
 
   @override
-  String get errRecognitionBadResponse => 'Таних үйлчилгээнээс гэнэтийн хариу ирлээ.';
+  String get errRecognitionBadResponse =>
+      'Таних үйлчилгээнээс гэнэтийн хариу ирлээ.';
 
   @override
   String get errRecognitionEmpty => 'Таних үйлчилгээ хоосон хариу буцаалаа.';
 
   @override
-  String get errMissingFinnhubKey => 'Зах зээлийн өгөгдөл тохируулаагүй байна (FINNHUB_API_KEY алга).';
+  String get errMissingFinnhubKey =>
+      'Зах зээлийн өгөгдөл тохируулаагүй байна (FINNHUB_API_KEY алга).';
 
   @override
   String get errMarketUnreachable =>
@@ -374,7 +385,8 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Зах зээлийн өгөгдлийн үйлчилгээнээс гэнэтийн хариу ирлээ.';
+  String get errMarketBadResponse =>
+      'Зах зээлийн өгөгдлийн үйлчилгээнээс гэнэтийн хариу ирлээ.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +486,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get aiRegenerate => 'Дахин гаргах';
 
   @override
-  String get aiGenerating => 'Шинжилгээг бэлтгэж байна… энэ нэг хоёр минут үргэлжилж магадгүй.';
+  String get aiGenerating =>
+      'Шинжилгээг бэлтгэж байна… энэ нэг хоёр минут үргэлжилж магадгүй.';
 
   @override
   String get aiSources => 'Эх сурвалж';
@@ -489,10 +502,12 @@ class AppLocalizationsMn extends AppLocalizations {
       'Нийтэд нээлттэй өгөгдөл болон сүүлийн мэдээнд үндэслэн AI-ийн гаргасан шинжилгээ. Алдаатай эсвэл хуучирсан байж болох бөгөөд хөрөнгө оруулалтын зөвлөгөө биш юм.';
 
   @override
-  String get errAiNotConfigured => 'AI шинжилгээ тохируулаагүй байна (ANTHROPIC_API_KEY алга).';
+  String get errAiNotConfigured =>
+      'AI шинжилгээ тохируулаагүй байна (ANTHROPIC_API_KEY алга).';
 
   @override
-  String get errAiUnreachable => 'AI үйлчилгээтэй холбогдож чадсангүй. Интернэт холболтоо шалгана уу.';
+  String get errAiUnreachable =>
+      'AI үйлчилгээтэй холбогдож чадсангүй. Интернэт холболтоо шалгана уу.';
 
   @override
   String errAiHttp(String status) {
@@ -524,7 +539,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get rangeFiveYears => '5 жил';
 
   @override
-  String get chartUnavailable => 'Одоогийн өгөгдлийн эх сурвалжаас үнийн түүх авах боломжгүй.';
+  String get chartUnavailable =>
+      'Одоогийн өгөгдлийн эх сурвалжаас үнийн түүх авах боломжгүй.';
 
   @override
   String get sectionStatements => 'Санхүүгийн тайлан (жилийн)';
@@ -551,7 +567,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get labelOperatingCashFlow => 'Үндсэн үйл ажиллагааны мөнгөн гүйлгээ';
 
   @override
-  String get statementsUnavailable => 'Энэ хувьцааны мэдээлсэн санхүүгийн тайлан байхгүй байна.';
+  String get statementsUnavailable =>
+      'Энэ хувьцааны мэдээлсэн санхүүгийн тайлан байхгүй байна.';
 
   @override
   String get launchAtLogin => 'Нэвтрэх үед эхлүүлэх';
@@ -581,7 +598,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get removeFromFavorites => 'Дуртайгаас хасах';
 
   @override
-  String get noFavorites => 'Дуртай хувьцаа одоогоор алга. Нэмэхийн тулд хувьцааны од дээр дарна уу.';
+  String get noFavorites =>
+      'Дуртай хувьцаа одоогоор алга. Нэмэхийн тулд хувьцааны од дээр дарна уу.';
 
   @override
   String get displayCurrency => 'Харуулах валют';
@@ -628,7 +646,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get updateDownloading => 'Шинэчлэлтийг арын горимд татаж байна…';
 
   @override
-  String get updateDownloaded => 'Шинэчлэлт бэлэн боллоо. Суулгахын тулд дахин эхлүүлнэ үү.';
+  String get updateDownloaded =>
+      'Шинэчлэлт бэлэн боллоо. Суулгахын тулд дахин эхлүүлнэ үү.';
 
   @override
   String get updateNow => 'Шинэчлэх';
@@ -685,7 +704,8 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Таны үнэгүй туршилтын хугацаа дууслаа. Шинжилгээ үргэлжлүүлэхийн тулд багц сонгоно уу.';
+  String get trialExpired =>
+      'Таны үнэгүй туршилтын хугацаа дууслаа. Шинжилгээ үргэлжлүүлэхийн тулд багц сонгоно уу.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -715,7 +735,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get perMonth => '/ сар';
 
   @override
-  String get extraPacksTitle => 'Илүү хэрэгтэй юу? Нэмэлт шинжилгээ худалдаж аваарай';
+  String get extraPacksTitle =>
+      'Илүү хэрэгтэй юу? Нэмэлт шинжилгээ худалдаж аваарай';
 
   @override
   String get extraPacksHint =>
@@ -751,7 +772,8 @@ class AppLocalizationsMn extends AppLocalizations {
       'Энэ хугацаанд танд шинжилгээ үлдсэнгүй. Багцаа ахиулах эсвэл нэмэлт шинжилгээ худалдаж аваарай.';
 
   @override
-  String get errTrialExpired => 'Таны үнэгүй туршилтын хугацаа дууслаа. Үргэлжлүүлэхийн тулд багц сонгоно уу.';
+  String get errTrialExpired =>
+      'Таны үнэгүй туршилтын хугацаа дууслаа. Үргэлжлүүлэхийн тулд багц сонгоно уу.';
 
   @override
   String get errNoPlan => 'AI шинжилгээнд идэвхтэй багц шаардлагатай.';
@@ -763,7 +785,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get usageTitle => 'Хэрэглээ';
 
   @override
-  String get demoPurchaseNote => 'Демо төлбөр: энэ платформ дээр худалдан авалтыг дуурайлгана.';
+  String get demoPurchaseNote =>
+      'Демо төлбөр: энэ платформ дээр худалдан авалтыг дуурайлгана.';
 
   @override
   String get mostPopular => 'Хамгийн эрэлттэй';
@@ -803,7 +826,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get aiDepthStandardDesc => 'Бүх хэсэгтэй бүрэн тайлан.';
 
   @override
-  String get aiDepthDeepDesc => 'Илүү олон вэб хайлт, өрсөлдөгчидтэй харьцуулалт, илүү гүнзгий дэлгэрэнгүй.';
+  String get aiDepthDeepDesc =>
+      'Илүү олон вэб хайлт, өрсөлдөгчидтэй харьцуулалт, илүү гүнзгий дэлгэрэнгүй.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,16 +855,19 @@ class AppLocalizationsMn extends AppLocalizations {
   String get aiReaderExperienced => 'Туршлагатай';
 
   @override
-  String get aiReaderBeginnerDesc => 'Энгийн хэллэг; мэргэжлийн нэр томьёо бүрийг тайлбарлана.';
+  String get aiReaderBeginnerDesc =>
+      'Энгийн хэллэг; мэргэжлийн нэр томьёо бүрийг тайлбарлана.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Санхүүгийн стандарт нэр томьёотой, илүү нягт текст.';
+  String get aiReaderExperiencedDesc =>
+      'Санхүүгийн стандарт нэр томьёотой, илүү нягт текст.';
 
   @override
   String get aiCounterArgument => 'Хамгийн хүчтэй эсрэг аргумент';
 
   @override
-  String get aiCounterArgumentDesc => 'Хураангуй үргэлж өөрийн дүгнэлтийн эсрэг хамгийн хүчтэй аргументаар төгсөнө.';
+  String get aiCounterArgumentDesc =>
+      'Хураангуй үргэлж өөрийн дүгнэлтийн эсрэг хамгийн хүчтэй аргументаар төгсөнө.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -933,7 +960,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get upcomingEvents => 'Удахгүй болох үйл явдал';
 
   @override
-  String get outlookChartNote => 'Ойролцоо хүрээ; магадлал нь барагцаа үнэлгээ бөгөөд урьдчилсан таамаг биш.';
+  String get outlookChartNote =>
+      'Ойролцоо хүрээ; магадлал нь барагцаа үнэлгээ бөгөөд урьдчилсан таамаг биш.';
 
   @override
   String get accountTitle => 'Бүртгэл';
@@ -948,10 +976,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get notSignedIn => 'Нэвтрээгүй';
 
   @override
-  String get accountBenefit => 'Захиалга тань бүх төхөөрөмж дээр ажиллахын тулд нэвтэрнэ үү.';
+  String get accountBenefit =>
+      'Захиалга тань бүх төхөөрөмж дээр ажиллахын тулд нэвтэрнэ үү.';
 
   @override
-  String get accountSyncedNote => 'Таны захиалга болон үлдсэн шинжилгээ бүх төхөөрөмж дээр ижил байна.';
+  String get accountSyncedNote =>
+      'Таны захиалга болон үлдсэн шинжилгээ бүх төхөөрөмж дээр ижил байна.';
 
   @override
   String get signInTitle => 'WhatStock-д нэвтрэх';
@@ -983,10 +1013,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get errInvalidEmail => 'Зөв имэйл хаяг оруулна уу.';
 
   @override
-  String get errSignInFailed => 'Нэвтэрч чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
+  String get errSignInFailed =>
+      'Нэвтэрч чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
 
   @override
-  String get checkoutWaiting => 'Төлбөрөө хөтөч дээрээ гүйцээнэ үү. Дууссаны дараа апп автоматаар шинэчлэгдэнэ.';
+  String get checkoutWaiting =>
+      'Төлбөрөө хөтөч дээрээ гүйцээнэ үү. Дууссаны дараа апп автоматаар шинэчлэгдэнэ.';
 
   @override
   String get paymentViaStripe =>
@@ -1003,7 +1035,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get doubleOptionTitle => 'Option товчийг давхар дарах';
 
   @override
-  String get doubleOptionSubtitle => 'Option товчийг хурдан хоёр удаа дарахад мөн WhatStock дуудагдана.';
+  String get doubleOptionSubtitle =>
+      'Option товчийг хурдан хоёр удаа дарахад мөн WhatStock дуудагдана.';
 
   @override
   String get doubleOptionPermission =>
@@ -1025,7 +1058,12 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years жил', one: '1 жил');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years жил',
+      one: '1 жил',
+    );
     return '$_temp0';
   }
 
@@ -1126,7 +1164,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioRemove => 'Хасах';
 
   @override
-  String get portfolioExcluded => 'Үнэ эсвэл валютын ханшгүй эзэмшлийг нийт дүнд тооцохгүй.';
+  String get portfolioExcluded =>
+      'Үнэ эсвэл валютын ханшгүй эзэмшлийг нийт дүнд тооцохгүй.';
 
   @override
   String get priceAlerts => 'Үнийн сэрэмжлүүлэг';
@@ -1168,7 +1207,8 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Үнийн сэрэмжлүүлэг одоогоор алга. Хувьцаа нээгээд хонх дээр дарж тохируулна уу.';
+  String get alertsEmpty =>
+      'Үнийн сэрэмжлүүлэг одоогоор алга. Хувьцаа нээгээд хонх дээр дарж тохируулна уу.';
 
   @override
   String get alertsNote =>
@@ -1261,7 +1301,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get accountDeleted => 'Таны бүртгэл устгагдлаа.';
 
   @override
-  String get errDeleteAccount => 'Бүртгэлийг устгаж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
+  String get errDeleteAccount =>
+      'Бүртгэлийг устгаж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1287,4 +1328,10 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Жилийн захиалга таныг цуцлах хүртэл жил бүр автоматаар сунгагдана. Захиалснаар та Үйлчилгээний нөхцөл болон Нууцлалын бодлогыг хүлээн зөвшөөрнө.';
+
+  @override
+  String get myAnalyses => 'Миний шинжилгээ';
+
+  @override
+  String get navAlerts => 'Сэрэмжлүүлэг';
 }

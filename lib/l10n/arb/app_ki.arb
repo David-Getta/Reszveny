@@ -369,5 +369,7 @@
   "yearlyDiscount": "Mĩeri 2 ya tũhũ",
   "perYear": "/ mwaka",
   "pricePerMonthApprox": "≈ {price} o mweri",
-  "subscriptionLegalYearly": "Ũiyandĩkithio wa mwaka werũhagio o ũguo o mwaka nginya ũũtige. Na gwĩyandĩkithia, nĩwetĩkĩra Mawatho ma Ũhũthĩri na Mawatho ma Kũgitĩra Ũhoro Waku."
+  "subscriptionLegalYearly": "Ũiyandĩkithio wa mwaka werũhagio o ũguo o mwaka nginya ũũtige. Na gwĩyandĩkithia, nĩwetĩkĩra Mawatho ma Ũhũthĩri na Mawatho ma Kũgitĩra Ũhoro Waku.",
+  "myAnalyses": "Ũthuthuria wakwa",
+  "navAlerts": "Imenyithia"
 }

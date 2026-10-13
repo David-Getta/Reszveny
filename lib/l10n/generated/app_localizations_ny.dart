@@ -306,7 +306,12 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Akatswiri $count', one: 'Katswiri 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Akatswiri $count',
+      one: 'Katswiri 1',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kuzindikira zithunzi sikunakhazikitsidwe (palibe ANTHROPIC_API_KEY). Lembani ticker nokha.';
 
   @override
-  String get errRecognitionUnreachable => 'Sitinathe kufikira utumiki wozindikira zithunzi. Onani intaneti yanu.';
+  String get errRecognitionUnreachable =>
+      'Sitinathe kufikira utumiki wozindikira zithunzi. Onani intaneti yanu.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +352,28 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Utumiki wozindikira sunathe kukonza chithunzichi.';
+  String get errRecognitionRefused =>
+      'Utumiki wozindikira sunathe kukonza chithunzichi.';
 
   @override
-  String get errRecognitionTruncated => 'Yankho la kuzindikira lidadulidwa. Chonde yesaninso.';
+  String get errRecognitionTruncated =>
+      'Yankho la kuzindikira lidadulidwa. Chonde yesaninso.';
 
   @override
-  String get errRecognitionBadResponse => 'Yankho losayembekezeka kuchokera ku utumiki wozindikira.';
+  String get errRecognitionBadResponse =>
+      'Yankho losayembekezeka kuchokera ku utumiki wozindikira.';
 
   @override
-  String get errRecognitionEmpty => 'Utumiki wozindikira wabweza yankho lopanda kanthu.';
+  String get errRecognitionEmpty =>
+      'Utumiki wozindikira wabweza yankho lopanda kanthu.';
 
   @override
-  String get errMissingFinnhubKey => 'Deta ya msika sinakhazikitsidwe (palibe FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Deta ya msika sinakhazikitsidwe (palibe FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Sitinathe kufikira utumiki wa deta ya msika. Onani intaneti yanu.';
+  String get errMarketUnreachable =>
+      'Sitinathe kufikira utumiki wa deta ya msika. Onani intaneti yanu.';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +385,8 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Yankho losayembekezeka kuchokera ku utumiki wa deta ya msika.';
+  String get errMarketBadResponse =>
+      'Yankho losayembekezeka kuchokera ku utumiki wa deta ya msika.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +486,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get aiRegenerate => 'Pangani kachiwiri';
 
   @override
-  String get aiGenerating => 'Tikukonza kusanthula… izi zingatenge mphindi imodzi kapena ziwiri.';
+  String get aiGenerating =>
+      'Tikukonza kusanthula… izi zingatenge mphindi imodzi kapena ziwiri.';
 
   @override
   String get aiSources => 'Magwero';
@@ -488,10 +502,12 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kusanthula kopangidwa ndi AI kutengera deta yapoyera ndi nkhani zaposachedwa. Kungakhale ndi zolakwika kapena kukhala kwachikale, ndipo si malangizo okhudza kuyika ndalama.';
 
   @override
-  String get errAiNotConfigured => 'Kusanthula kwa AI sikunakhazikitsidwe (palibe ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Kusanthula kwa AI sikunakhazikitsidwe (palibe ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Sitinathe kufikira utumiki wa AI. Onani intaneti yanu.';
+  String get errAiUnreachable =>
+      'Sitinathe kufikira utumiki wa AI. Onani intaneti yanu.';
 
   @override
   String errAiHttp(String status) {
@@ -502,7 +518,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get errAiRefused => 'Utumiki wa AI wakana kusanthula sheya iyi.';
 
   @override
-  String get errAiBadResponse => 'Yankho losayembekezeka kuchokera ku utumiki wa AI.';
+  String get errAiBadResponse =>
+      'Yankho losayembekezeka kuchokera ku utumiki wa AI.';
 
   @override
   String get sectionChart => 'Tchati cha mtengo';
@@ -523,7 +540,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Mbiri ya mtengo sikupezeka kuchokera ku gwero la deta lomwe lilipo.';
+  String get chartUnavailable =>
+      'Mbiri ya mtengo sikupezeka kuchokera ku gwero la deta lomwe lilipo.';
 
   @override
   String get sectionStatements => 'Malipoti azachuma (apachaka)';
@@ -550,7 +568,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get labelOperatingCashFlow => 'Ndalama zochokera mu ntchito';
 
   @override
-  String get statementsUnavailable => 'Malipoti azachuma omwe adasindikizidwa sakupezeka pa sheya iyi.';
+  String get statementsUnavailable =>
+      'Malipoti azachuma omwe adasindikizidwa sakupezeka pa sheya iyi.';
 
   @override
   String get launchAtLogin => 'Tsegulani polowa';
@@ -580,7 +599,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get removeFromFavorites => 'Chotsani ku zokondedwa';
 
   @override
-  String get noFavorites => 'Palibe zokondedwa pakadali pano. Dinani nyenyezi pa sheya kuti muiwonjezere.';
+  String get noFavorites =>
+      'Palibe zokondedwa pakadali pano. Dinani nyenyezi pa sheya kuti muiwonjezere.';
 
   @override
   String get displayCurrency => 'Ndalama zowonetsera';
@@ -627,7 +647,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get updateDownloading => 'Tikutsitsa zosintha kumbuyo…';
 
   @override
-  String get updateDownloaded => 'Zosintha zakonzeka. Yambitsaninso kuti muziike.';
+  String get updateDownloaded =>
+      'Zosintha zakonzeka. Yambitsaninso kuti muziike.';
 
   @override
   String get updateNow => 'Sinthani';
@@ -636,7 +657,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get restartNow => 'Yambitsaninso';
 
   @override
-  String get updatesViaStore => 'Zosintha zimabwera zokha kudzera mu sitolo ya mapulogalamu.';
+  String get updatesViaStore =>
+      'Zosintha zimabwera zokha kudzera mu sitolo ya mapulogalamu.';
 
   @override
   String get updateCheckFailed => 'Sitinathe kuyang\'ana zosintha.';
@@ -684,7 +706,8 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Kuyesera kwanu kwaulere kwatha. Sankhani dongosolo kuti mupitirize kusanthula.';
+  String get trialExpired =>
+      'Kuyesera kwanu kwaulere kwatha. Sankhani dongosolo kuti mupitirize kusanthula.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -730,7 +753,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get manageSubscription => 'Yang\'anirani kulembetsa';
 
   @override
-  String get purchaseSuccess => 'Zikomo! Kugula kwanu kwayamba kugwira ntchito.';
+  String get purchaseSuccess =>
+      'Zikomo! Kugula kwanu kwayamba kugwira ntchito.';
 
   @override
   String get purchasePending => 'Kugula kukudikira…';
@@ -750,10 +774,12 @@ class AppLocalizationsNy extends AppLocalizations {
       'Mulibe kusanthula kotsala nthawi ino. Kwezani dongosolo lanu kapena gulani kusanthula kowonjezera.';
 
   @override
-  String get errTrialExpired => 'Kuyesera kwanu kwaulere kwatha. Sankhani dongosolo kuti mupitirize.';
+  String get errTrialExpired =>
+      'Kuyesera kwanu kwaulere kwatha. Sankhani dongosolo kuti mupitirize.';
 
   @override
-  String get errNoPlan => 'Mukufunika dongosolo logwira ntchito kuti mugwiritse ntchito kusanthula kwa AI.';
+  String get errNoPlan =>
+      'Mukufunika dongosolo logwira ntchito kuti mugwiritse ntchito kusanthula kwa AI.';
 
   @override
   String get viewPlans => 'Onani madongosolo';
@@ -762,7 +788,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get usageTitle => 'Kagwiritsidwe ntchito';
 
   @override
-  String get demoPurchaseNote => 'Malipiro oyeserera: kugula pa makina awa ndi kongoyerekeza.';
+  String get demoPurchaseNote =>
+      'Malipiro oyeserera: kugula pa makina awa ndi kongoyerekeza.';
 
   @override
   String get mostPopular => 'Yotchuka kwambiri';
@@ -799,7 +826,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get aiDepthBriefDesc => 'Zofunika, mwachangu.';
 
   @override
-  String get aiDepthStandardDesc => 'Lipoti lathunthu lokhala ndi gawo lililonse.';
+  String get aiDepthStandardDesc =>
+      'Lipoti lathunthu lokhala ndi gawo lililonse.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -831,10 +859,12 @@ class AppLocalizationsNy extends AppLocalizations {
   String get aiReaderExperienced => 'Wodziwa bwino';
 
   @override
-  String get aiReaderBeginnerDesc => 'Chilankhulo chosavuta; mawu aliwonse aukadaulo amafotokozedwa.';
+  String get aiReaderBeginnerDesc =>
+      'Chilankhulo chosavuta; mawu aliwonse aukadaulo amafotokozedwa.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Zolemba zolimba zogwiritsa ntchito mawu azachuma odziwika.';
+  String get aiReaderExperiencedDesc =>
+      'Zolemba zolimba zogwiritsa ntchito mawu azachuma odziwika.';
 
   @override
   String get aiCounterArgument => 'Mfundo yotsutsa yamphamvu kwambiri';
@@ -848,7 +878,8 @@ class AppLocalizationsNy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Mpaka kusaka $count pa intaneti pa kusanthula kulikonse ndi dongosolo lanu',
+      other:
+          'Mpaka kusaka $count pa intaneti pa kusanthula kulikonse ndi dongosolo lanu',
       one: 'Mpaka kusaka 1 pa intaneti pa kusanthula kulikonse ndi dongosolo lanu',
     );
     return '$_temp0';
@@ -934,7 +965,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get upcomingEvents => 'Zochitika zikubwera';
 
   @override
-  String get outlookChartNote => 'Milingo yongoyerekeza; mwayi ndi kuyerekeza chabe, osati kulosera.';
+  String get outlookChartNote =>
+      'Milingo yongoyerekeza; mwayi ndi kuyerekeza chabe, osati kulosera.';
 
   @override
   String get accountTitle => 'Akaunti';
@@ -949,10 +981,12 @@ class AppLocalizationsNy extends AppLocalizations {
   String get notSignedIn => 'Simunalowe';
 
   @override
-  String get accountBenefit => 'Lowani kuti kulembetsa kwanu kugwire ntchito pa zipangizo zanu zonse.';
+  String get accountBenefit =>
+      'Lowani kuti kulembetsa kwanu kugwire ntchito pa zipangizo zanu zonse.';
 
   @override
-  String get accountSyncedNote => 'Kulembetsa kwanu ndi kusanthula kotsala ndi zofanana pa chipangizo chilichonse.';
+  String get accountSyncedNote =>
+      'Kulembetsa kwanu ndi kusanthula kotsala ndi zofanana pa chipangizo chilichonse.';
 
   @override
   String get signInTitle => 'Lowani mu WhatStock';
@@ -984,13 +1018,16 @@ class AppLocalizationsNy extends AppLocalizations {
   String get errInvalidEmail => 'Chonde lembani adilesi ya imelo yolondola.';
 
   @override
-  String get errSignInFailed => 'Kulowa kwalephera. Onani intaneti yanu ndipo yesaninso.';
+  String get errSignInFailed =>
+      'Kulowa kwalephera. Onani intaneti yanu ndipo yesaninso.';
 
   @override
-  String get checkoutWaiting => 'Malizitsani kulipira mu msakatuli wanu. Pulogalamu idzasintha yokha mukamaliza.';
+  String get checkoutWaiting =>
+      'Malizitsani kulipira mu msakatuli wanu. Pulogalamu idzasintha yokha mukamaliza.';
 
   @override
-  String get paymentViaStripe => 'Malipiro otetezeka mu msakatuli wanu kudzera mu Stripe. Letsani nthawi iliyonse.';
+  String get paymentViaStripe =>
+      'Malipiro otetezeka mu msakatuli wanu kudzera mu Stripe. Letsani nthawi iliyonse.';
 
   @override
   String get paymentViaStore =>
@@ -1003,7 +1040,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get doubleOptionTitle => 'Dinani Option kawiri';
 
   @override
-  String get doubleOptionSubtitle => 'Kudina Option kawiri mwachangu kumaitananso WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Kudina Option kawiri mwachangu kumaitananso WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1025,7 +1063,12 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'zaka $years', one: 'chaka 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'zaka $years',
+      one: 'chaka 1',
+    );
     return '$_temp0';
   }
 
@@ -1226,7 +1269,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get alertOpen => 'Tsegulani';
 
   @override
-  String get keepInTrayTitle => 'Pitirizani kugwira ntchito zenera litatsekedwa';
+  String get keepInTrayTitle =>
+      'Pitirizani kugwira ntchito zenera litatsekedwa';
 
   @override
   String get keepInTraySubtitle =>
@@ -1263,7 +1307,8 @@ class AppLocalizationsNy extends AppLocalizations {
   String get accountDeleted => 'Akaunti yanu yafufutidwa.';
 
   @override
-  String get errDeleteAccount => 'Akaunti sinathe kufufutidwa. Onani intaneti yanu ndipo yesaninso.';
+  String get errDeleteAccount =>
+      'Akaunti sinathe kufufutidwa. Onani intaneti yanu ndipo yesaninso.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1289,4 +1334,10 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi.';
+
+  @override
+  String get myAnalyses => 'Zosanthula zanga';
+
+  @override
+  String get navAlerts => 'Zidziwitso';
 }

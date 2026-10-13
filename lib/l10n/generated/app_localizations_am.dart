@@ -16,7 +16,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get homeTagline => 'አክሲዮንን ፎቶ ያንሱ፤ ስለሱ ሁሉንም ነገር ይወቁ።';
 
   @override
-  String get homeHint => 'የአክሲዮን ሰርተፊኬት፣ የደላላ መተግበሪያ ማያ ገጽ፣ ጋዜጣ ወይም የኩባንያ አርማ – አክሲዮንን የሚለይ ማንኛውም ነገር።';
+  String get homeHint =>
+      'የአክሲዮን ሰርተፊኬት፣ የደላላ መተግበሪያ ማያ ገጽ፣ ጋዜጣ ወይም የኩባንያ አርማ – አክሲዮንን የሚለይ ማንኛውም ነገር።';
 
   @override
   String get takePhoto => 'ፎቶ አንሳ';
@@ -54,7 +55,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noCandidatesTitle => 'ምንም አክሲዮን አልታወቀም';
 
   @override
-  String get noCandidatesBody => 'በዚህ ምስል ውስጥ አክሲዮን መለየት አልቻልንም። ይበልጥ ጥርት ያለ ፎቶ ይሞክሩ ወይም ምልክቱን በእጅ ያስገቡ።';
+  String get noCandidatesBody =>
+      'በዚህ ምስል ውስጥ አክሲዮን መለየት አልቻልንም። ይበልጥ ጥርት ያለ ፎቶ ይሞክሩ ወይም ምልክቱን በእጅ ያስገቡ።';
 
   @override
   String get whatWeSaw => 'ያየነው';
@@ -80,7 +82,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get about => 'ስለ መተግበሪያው';
 
   @override
-  String get disclaimer => 'ይህ መተግበሪያ መረጃ ብቻ ይሰጣል፤ የኢንቨስትመንት ምክር አይደለም። መረጃው ሊዘገይ ወይም ትክክል ላይሆን ይችላል።';
+  String get disclaimer =>
+      'ይህ መተግበሪያ መረጃ ብቻ ይሰጣል፤ የኢንቨስትመንት ምክር አይደለም። መረጃው ሊዘገይ ወይም ትክክል ላይሆን ይችላል።';
 
   @override
   String dataSource(String source) {
@@ -303,7 +306,12 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ተንታኞች', one: '1 ተንታኝ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተንታኞች',
+      one: '1 ተንታኝ',
+    );
     return '$_temp0';
   }
 
@@ -331,10 +339,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get recognitionRawText => 'ከምስሉ የተነበበ ጽሑፍ';
 
   @override
-  String get errMissingAnthropicKey => 'የምስል ማወቂያ አልተዋቀረም (ANTHROPIC_API_KEY የለም)። ምልክቱን በእጅ ያስገቡ።';
+  String get errMissingAnthropicKey =>
+      'የምስል ማወቂያ አልተዋቀረም (ANTHROPIC_API_KEY የለም)። ምልክቱን በእጅ ያስገቡ።';
 
   @override
-  String get errRecognitionUnreachable => 'ከማወቂያ አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
+  String get errRecognitionUnreachable =>
+      'ከማወቂያ አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,10 +367,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errMissingFinnhubKey => 'የገበያ መረጃ አልተዋቀረም (FINNHUB_API_KEY የለም)።';
 
   @override
-  String get errMarketUnreachable => 'ከገበያ መረጃ አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
+  String get errMarketUnreachable =>
+      'ከገበያ መረጃ አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
 
   @override
-  String get errMarketRateLimited => 'ወደ ገበያ መረጃ አገልግሎቱ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁ።';
+  String get errMarketRateLimited =>
+      'ወደ ገበያ መረጃ አገልግሎቱ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁ።';
 
   @override
   String errMarketHttp(String status) {
@@ -486,7 +498,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errAiNotConfigured => 'የAI ትንተና አልተዋቀረም (ANTHROPIC_API_KEY የለም)።';
 
   @override
-  String get errAiUnreachable => 'ከAI አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
+  String get errAiUnreachable =>
+      'ከAI አገልግሎቱ ጋር መገናኘት አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡ።';
 
   @override
   String errAiHttp(String status) {
@@ -712,7 +725,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get extraPacksTitle => 'ተጨማሪ ይፈልጋሉ? ተጨማሪ ትንተናዎችን ይግዙ';
 
   @override
-  String get extraPacksHint => 'ተጨማሪ ትንተናዎች ጊዜያቸው አያልፍም፤ ወርሃዊ ድርሻዎ ካለቀ በኋላ ጥቅም ላይ ይውላሉ።';
+  String get extraPacksHint =>
+      'ተጨማሪ ትንተናዎች ጊዜያቸው አያልፍም፤ ወርሃዊ ድርሻዎ ካለቀ በኋላ ጥቅም ላይ ይውላሉ።';
 
   @override
   String get buy => 'ግዛ';
@@ -736,10 +750,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get purchaseCanceled => 'ግዢው ተሰርዟል።';
 
   @override
-  String get billingUnavailable => 'በዚህ መድረክ ላይ ግዢዎች ገና አይገኙም። በስልክዎ ወይም በMac ላይ ይመዝገቡ፤ ዕቅድዎ በሁሉም መሣሪያ ላይ ይሠራል።';
+  String get billingUnavailable =>
+      'በዚህ መድረክ ላይ ግዢዎች ገና አይገኙም። በስልክዎ ወይም በMac ላይ ይመዝገቡ፤ ዕቅድዎ በሁሉም መሣሪያ ላይ ይሠራል።';
 
   @override
-  String get errQuotaExceeded => 'ለዚህ ወቅት ምንም ትንተና አልቀረዎትም። ዕቅድዎን ያሻሽሉ ወይም ተጨማሪ ትንተናዎችን ይግዙ።';
+  String get errQuotaExceeded =>
+      'ለዚህ ወቅት ምንም ትንተና አልቀረዎትም። ዕቅድዎን ያሻሽሉ ወይም ተጨማሪ ትንተናዎችን ይግዙ።';
 
   @override
   String get errTrialExpired => 'ነፃ የሙከራ ጊዜዎ አብቅቷል። ለመቀጠል ዕቅድ ይምረጡ።';
@@ -803,7 +819,12 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ትንተናዎች ይጠቀማል', one: '1 ትንተና ይጠቀማል');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ትንተናዎች ይጠቀማል',
+      one: '1 ትንተና ይጠቀማል',
+    );
     return '$_temp0';
   }
 
@@ -826,7 +847,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get aiCounterArgument => 'በጣም ጠንካራው ተቃራኒ መከራከሪያ';
 
   @override
-  String get aiCounterArgumentDesc => 'ማጠቃለያው ሁልጊዜ በራሱ መደምደሚያ ላይ ባለው ምርጥ ተቃራኒ መከራከሪያ ይጠናቀቃል።';
+  String get aiCounterArgumentDesc =>
+      'ማጠቃለያው ሁልጊዜ በራሱ መደምደሚያ ላይ ባለው ምርጥ ተቃራኒ መከራከሪያ ይጠናቀቃል።';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -919,7 +941,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get upcomingEvents => 'መጪ ክስተቶች';
 
   @override
-  String get outlookChartNote => 'አመላካች ክልሎች ናቸው፤ ዕድሎቹ ግምታዊ ፍርዶች እንጂ ትንበያዎች አይደሉም።';
+  String get outlookChartNote =>
+      'አመላካች ክልሎች ናቸው፤ ዕድሎቹ ግምታዊ ፍርዶች እንጂ ትንበያዎች አይደሉም።';
 
   @override
   String get accountTitle => 'መለያ';
@@ -937,7 +960,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accountBenefit => 'የደንበኝነት ምዝገባዎ በሁሉም መሣሪያዎችዎ ላይ እንዲሠራ ይግቡ።';
 
   @override
-  String get accountSyncedNote => 'የደንበኝነት ምዝገባዎ እና የቀሩት ትንተናዎች በሁሉም መሣሪያ ላይ አንድ ናቸው።';
+  String get accountSyncedNote =>
+      'የደንበኝነት ምዝገባዎ እና የቀሩት ትንተናዎች በሁሉም መሣሪያ ላይ አንድ ናቸው።';
 
   @override
   String get signInTitle => 'ወደ WhatStock ይግቡ';
@@ -972,13 +996,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errSignInFailed => 'መግባት አልተሳካም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።';
 
   @override
-  String get checkoutWaiting => 'ክፍያውን በአሳሽዎ ውስጥ ያጠናቅቁ። ሲጠናቀቅ መተግበሪያው በራስ-ሰር ይዘምናል።';
+  String get checkoutWaiting =>
+      'ክፍያውን በአሳሽዎ ውስጥ ያጠናቅቁ። ሲጠናቀቅ መተግበሪያው በራስ-ሰር ይዘምናል።';
 
   @override
-  String get paymentViaStripe => 'በStripe በኩል በአሳሽዎ ውስጥ ደህንነቱ የተጠበቀ ክፍያ። በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
+  String get paymentViaStripe =>
+      'በStripe በኩል በአሳሽዎ ውስጥ ደህንነቱ የተጠበቀ ክፍያ። በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
 
   @override
-  String get paymentViaStore => 'ክፍያው በApp Store ወይም በGoogle Play መለያዎ በኩል ይፈጸማል። በመደብሩ ቅንብሮች ውስጥ በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
+  String get paymentViaStore =>
+      'ክፍያው በApp Store ወይም በGoogle Play መለያዎ በኩል ይፈጸማል። በመደብሩ ቅንብሮች ውስጥ በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
 
   @override
   String get keySpace => 'ስፔስ';
@@ -987,7 +1014,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get doubleOptionTitle => 'Optionን ሁለቴ ተጫን';
 
   @override
-  String get doubleOptionSubtitle => 'የOption ቁልፍን በፍጥነት ሁለቴ መጫንም WhatStockን ይጠራል።';
+  String get doubleOptionSubtitle =>
+      'የOption ቁልፍን በፍጥነት ሁለቴ መጫንም WhatStockን ይጠራል።';
 
   @override
   String get doubleOptionPermission =>
@@ -1009,7 +1037,12 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ዓመታት', one: '1 ዓመት');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ዓመታት',
+      one: '1 ዓመት',
+    );
     return '$_temp0';
   }
 
@@ -1040,10 +1073,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get portfolio => 'ፖርትፎሊዮ';
 
   @override
-  String get portfolioEmpty => 'እስካሁን እዚህ ምንም የለም። ያለዎትን ለመከታተል አንድ አክሲዮን ይክፈቱና «ወደ ፖርትፎሊዮ አክል»ን መታ ያድርጉ።';
+  String get portfolioEmpty =>
+      'እስካሁን እዚህ ምንም የለም። ያለዎትን ለመከታተል አንድ አክሲዮን ይክፈቱና «ወደ ፖርትፎሊዮ አክል»ን መታ ያድርጉ።';
 
   @override
-  String get portfolioLocalNote => 'በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። ድምሮቹ በECB የማጣቀሻ ተመኖች ይቀየራሉ፤ ዋጋዎች ሊዘገዩ ይችላሉ።';
+  String get portfolioLocalNote =>
+      'በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። ድምሮቹ በECB የማጣቀሻ ተመኖች ይቀየራሉ፤ ዋጋዎች ሊዘገዩ ይችላሉ።';
 
   @override
   String get addToPortfolio => 'ወደ ፖርትፎሊዮ አክል';
@@ -1150,7 +1185,8 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'እስካሁን የዋጋ ማንቂያዎች የሉም። ለማዘጋጀት አክሲዮን ይክፈቱና ደወሉን መታ ያድርጉ።';
+  String get alertsEmpty =>
+      'እስካሁን የዋጋ ማንቂያዎች የሉም። ለማዘጋጀት አክሲዮን ይክፈቱና ደወሉን መታ ያድርጉ።';
 
   @override
   String get alertsNote =>
@@ -1233,7 +1269,8 @@ class AppLocalizationsAm extends AppLocalizations {
       'መለያዎ እና በአገልጋያችን ላይ የተቀመጠው ሁሉ (ኢሜይል፣ ወርሃዊ ድርሻ፣ አጠቃቀም) እስከ መጨረሻው ይሰረዛል፤ ያልተጠቀሙባቸው ትንተናዎችም ይጠፋሉ። በአሳሽ የተከፈለ የደንበኝነት ምዝገባ ወዲያውኑ ይሰረዛል፤ የApp Store ወይም የGoogle Play ምዝገባ ግን በመደብሩ ቅንብሮች ውስጥ መሰረዝ አለበት።';
 
   @override
-  String get deleteLocalData => 'በዚህ መሣሪያ ላይ ያለውን መረጃም ሰርዝ (ፖርትፎሊዮ፣ ማንቂያዎች፣ ተወዳጆች፣ ታሪክ፣ የተቀመጡ ትንተናዎች)';
+  String get deleteLocalData =>
+      'በዚህ መሣሪያ ላይ ያለውን መረጃም ሰርዝ (ፖርትፎሊዮ፣ ማንቂያዎች፣ ተወዳጆች፣ ታሪክ፣ የተቀመጡ ትንተናዎች)';
 
   @override
   String get deleteAccountConfirm => 'እስከ መጨረሻው ሰርዝ';
@@ -1242,7 +1279,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accountDeleted => 'መለያዎ ተሰርዟል።';
 
   @override
-  String get errDeleteAccount => 'መለያውን መሰረዝ አልተቻለም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።';
+  String get errDeleteAccount =>
+      'መለያውን መሰረዝ አልተቻለም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።';
 
   @override
   String get aiTrialBriefNote =>
@@ -1268,4 +1306,10 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ዓመታዊ የደንበኝነት ምዝገባዎች እስኪሰርዟቸው ድረስ በየዓመቱ በራስ-ሰር ይታደሳሉ። በመመዝገብ የአጠቃቀም ውሉን እና የግላዊነት መመሪያውን ይቀበላሉ።';
+
+  @override
+  String get myAnalyses => 'የእኔ ትንተናዎች';
+
+  @override
+  String get navAlerts => 'ማንቂያዎች';
 }

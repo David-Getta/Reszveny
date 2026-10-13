@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 volana maimaim-poana",
   "perYear": "/ taona",
   "pricePerMonthApprox": "≈ {price} isam-bolana",
-  "subscriptionLegalYearly": "Havaozina ho azy isan-taona ny famandrihana mandra-pahafoananao azy. Amin'ny fanaovana famandrihana dia manaiky ny Fepetra fampiasana sy ny Politikan'ny fiainana manokana ianao."
+  "subscriptionLegalYearly": "Havaozina ho azy isan-taona ny famandrihana mandra-pahafoananao azy. Amin'ny fanaovana famandrihana dia manaiky ny Fepetra fampiasana sy ny Politikan'ny fiainana manokana ianao.",
+  "myAnalyses": "Ny fandalinako",
+  "navAlerts": "Fanairana"
 }

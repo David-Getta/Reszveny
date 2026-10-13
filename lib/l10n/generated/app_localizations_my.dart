@@ -13,7 +13,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။';
+  String get homeTagline =>
+      'ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။';
 
   @override
   String get homeHint =>
@@ -306,7 +307,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'လေ့လာသုံးသပ်သူ $count ဦး');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'လေ့လာသုံးသပ်သူ $count ဦး',
+    );
     return '$_temp0';
   }
 
@@ -347,25 +352,32 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုသည် ဤပုံကို လုပ်ဆောင်၍ မရပါ။';
+  String get errRecognitionRefused =>
+      'ခွဲခြားသိမှု ဝန်ဆောင်မှုသည် ဤပုံကို လုပ်ဆောင်၍ မရပါ။';
 
   @override
-  String get errRecognitionTruncated => 'ခွဲခြားသိမှု တုံ့ပြန်ချက် ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ။';
+  String get errRecognitionTruncated =>
+      'ခွဲခြားသိမှု တုံ့ပြန်ချက် ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ။';
 
   @override
-  String get errRecognitionBadResponse => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errRecognitionBadResponse =>
+      'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
-  String get errRecognitionEmpty => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ ဗလာ တုံ့ပြန်ချက် ပြန်ပေးသည်။';
+  String get errRecognitionEmpty =>
+      'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ ဗလာ တုံ့ပြန်ချက် ပြန်ပေးသည်။';
 
   @override
-  String get errMissingFinnhubKey => 'ဈေးကွက်ဒေတာကို သတ်မှတ်မထားပါ (FINNHUB_API_KEY မရှိပါ)။';
+  String get errMissingFinnhubKey =>
+      'ဈေးကွက်ဒေတာကို သတ်မှတ်မထားပါ (FINNHUB_API_KEY မရှိပါ)။';
 
   @override
-  String get errMarketUnreachable => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
+  String get errMarketUnreachable =>
+      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
 
   @override
-  String get errMarketRateLimited => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပါ။';
+  String get errMarketRateLimited =>
+      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပါ။';
 
   @override
   String errMarketHttp(String status) {
@@ -373,7 +385,8 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errMarketBadResponse =>
+      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +486,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get aiRegenerate => 'ပြန်ထုတ်ရန်';
 
   @override
-  String get aiGenerating => 'သုံးသပ်ချက်ကို ပြင်ဆင်နေသည်… တစ်မိနစ် နှစ်မိနစ်ခန့် ကြာနိုင်သည်။';
+  String get aiGenerating =>
+      'သုံးသပ်ချက်ကို ပြင်ဆင်နေသည်… တစ်မိနစ် နှစ်မိနစ်ခန့် ကြာနိုင်သည်။';
 
   @override
   String get aiSources => 'ရင်းမြစ်များ';
@@ -488,10 +502,12 @@ class AppLocalizationsMy extends AppLocalizations {
       'အများပြည်သူ ဒေတာနှင့် မကြာသေးမီ သတင်းများအပေါ် အခြေခံ၍ AI ထုတ်ပေးထားသော သုံးသပ်ချက် ဖြစ်သည်။ အမှားများ ပါဝင်နိုင်သည် သို့မဟုတ် ခေတ်နောက်ကျနိုင်ပြီး ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။';
 
   @override
-  String get errAiNotConfigured => 'AI သုံးသပ်ချက်ကို သတ်မှတ်မထားပါ (ANTHROPIC_API_KEY မရှိပါ)။';
+  String get errAiNotConfigured =>
+      'AI သုံးသပ်ချက်ကို သတ်မှတ်မထားပါ (ANTHROPIC_API_KEY မရှိပါ)။';
 
   @override
-  String get errAiUnreachable => 'AI ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
+  String get errAiUnreachable =>
+      'AI ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
 
   @override
   String errAiHttp(String status) {
@@ -499,10 +515,12 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI ဝန်ဆောင်မှုသည် ဤရှယ်ယာကို သုံးသပ်ရန် ငြင်းဆိုခဲ့သည်။';
+  String get errAiRefused =>
+      'AI ဝန်ဆောင်မှုသည် ဤရှယ်ယာကို သုံးသပ်ရန် ငြင်းဆိုခဲ့သည်။';
 
   @override
-  String get errAiBadResponse => 'AI ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errAiBadResponse =>
+      'AI ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
   String get sectionChart => 'ဈေးနှုန်း ဇယား';
@@ -523,7 +541,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get rangeFiveYears => '5 နှစ်';
 
   @override
-  String get chartUnavailable => 'လက်ရှိ ဒေတာရင်းမြစ်တွင် ဈေးနှုန်း မှတ်တမ်း မရှိပါ။';
+  String get chartUnavailable =>
+      'လက်ရှိ ဒေတာရင်းမြစ်တွင် ဈေးနှုန်း မှတ်တမ်း မရှိပါ။';
 
   @override
   String get sectionStatements => 'ဘဏ္ဍာရေး ရှင်းတမ်းများ (နှစ်စဉ်)';
@@ -550,7 +569,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get labelOperatingCashFlow => 'လုပ်ငန်းလည်ပတ်မှု ငွေသားစီးဆင်းမှု';
 
   @override
-  String get statementsUnavailable => 'ဤရှယ်ယာအတွက် ထုတ်ပြန်ထားသော ဘဏ္ဍာရေး ရှင်းတမ်းများ မရှိပါ။';
+  String get statementsUnavailable =>
+      'ဤရှယ်ယာအတွက် ထုတ်ပြန်ထားသော ဘဏ္ဍာရေး ရှင်းတမ်းများ မရှိပါ။';
 
   @override
   String get launchAtLogin => 'အကောင့်ဝင်သည့်အခါ စဖွင့်ရန်';
@@ -559,7 +579,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get hotkeyLabel => 'စနစ်တစ်ခုလုံးသုံး ဖြတ်လမ်း';
 
   @override
-  String get hotkeyRecordHint => 'ဤနေရာကို နှိပ်ပြီးနောက် ခလုတ်ပေါင်းစပ်မှု အသစ်ကို နှိပ်ပါ';
+  String get hotkeyRecordHint =>
+      'ဤနေရာကို နှိပ်ပြီးနောက် ခလုတ်ပေါင်းစပ်မှု အသစ်ကို နှိပ်ပါ';
 
   @override
   String get hotkeyReset => 'မူရင်းသို့ ပြန်ထားရန်';
@@ -580,7 +601,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get removeFromFavorites => 'အကြိုက်ဆုံးများမှ ဖယ်ရှားရန်';
 
   @override
-  String get noFavorites => 'အကြိုက်ဆုံး မရှိသေးပါ။ ထည့်ရန် ရှယ်ယာတစ်ခုရှိ ကြယ်ပွင့်ကို တို့ပါ။';
+  String get noFavorites =>
+      'အကြိုက်ဆုံး မရှိသေးပါ။ ထည့်ရန် ရှယ်ယာတစ်ခုရှိ ကြယ်ပွင့်ကို တို့ပါ။';
 
   @override
   String get displayCurrency => 'ပြသမည့် ငွေကြေး';
@@ -624,10 +646,12 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get updateDownloading => 'အပ်ဒိတ်ကို နောက်ကွယ်တွင် ဒေါင်းလုဒ်လုပ်နေသည်…';
+  String get updateDownloading =>
+      'အပ်ဒိတ်ကို နောက်ကွယ်တွင် ဒေါင်းလုဒ်လုပ်နေသည်…';
 
   @override
-  String get updateDownloaded => 'အပ်ဒိတ် အသင့်ဖြစ်ပါပြီ။ ထည့်သွင်းရန် ပြန်စတင်ပါ။';
+  String get updateDownloaded =>
+      'အပ်ဒိတ် အသင့်ဖြစ်ပါပြီ။ ထည့်သွင်းရန် ပြန်စတင်ပါ။';
 
   @override
   String get updateNow => 'အပ်ဒိတ်လုပ်ရန်';
@@ -636,7 +660,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get restartNow => 'ပြန်စတင်ရန်';
 
   @override
-  String get updatesViaStore => 'အပ်ဒိတ်များကို အက်ပ်စတိုးမှတစ်ဆင့် အလိုအလျောက် ရရှိပါမည်။';
+  String get updatesViaStore =>
+      'အပ်ဒိတ်များကို အက်ပ်စတိုးမှတစ်ဆင့် အလိုအလျောက် ရရှိပါမည်။';
 
   @override
   String get updateCheckFailed => 'အပ်ဒိတ်များကို စစ်ဆေး၍ မရပါ။';
@@ -674,12 +699,17 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'အစမ်းသုံးကာလ $days ရက် ကျန်သည်');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'အစမ်းသုံးကာလ $days ရက် ကျန်သည်',
+    );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်သုံးသပ်ရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
+  String get trialExpired =>
+      'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်သုံးသပ်ရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -712,7 +742,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get extraPacksTitle => 'ထပ်လိုပါသလား။ အပိုသုံးသပ်ချက်များ ဝယ်ပါ';
 
   @override
-  String get extraPacksHint => 'အပိုသုံးသပ်ချက်များသည် သက်တမ်း မကုန်ဆုံးဘဲ လစဉ်ခွဲတမ်း ကုန်ပြီးနောက်မှ အသုံးပြုမည်။';
+  String get extraPacksHint =>
+      'အပိုသုံးသပ်ချက်များသည် သက်တမ်း မကုန်ဆုံးဘဲ လစဉ်ခွဲတမ်း ကုန်ပြီးနောက်မှ အသုံးပြုမည်။';
 
   @override
   String get buy => 'ဝယ်ရန်';
@@ -744,10 +775,12 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤကာလအတွက် သုံးသပ်ချက် ကုန်သွားပါပြီ။ အစီအစဉ်ကို အဆင့်မြှင့်ပါ သို့မဟုတ် အပိုသုံးသပ်ချက်များ ဝယ်ပါ။';
 
   @override
-  String get errTrialExpired => 'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်အသုံးပြုရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
+  String get errTrialExpired =>
+      'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်အသုံးပြုရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
 
   @override
-  String get errNoPlan => 'AI သုံးသပ်ချက်အတွက် အသုံးပြုနေသော အစီအစဉ် လိုအပ်သည်။';
+  String get errNoPlan =>
+      'AI သုံးသပ်ချက်အတွက် အသုံးပြုနေသော အစီအစဉ် လိုအပ်သည်။';
 
   @override
   String get viewPlans => 'အစီအစဉ်များ ကြည့်ရန်';
@@ -756,7 +789,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get usageTitle => 'အသုံးပြုမှု';
 
   @override
-  String get demoPurchaseNote => 'သရုပ်ပြ ငွေပေးချေမှု: ဤပလက်ဖောင်းရှိ ဝယ်ယူမှုများသည် အစမ်းသဘောသာ ဖြစ်သည်။';
+  String get demoPurchaseNote =>
+      'သရုပ်ပြ ငွေပေးချေမှု: ဤပလက်ဖောင်းရှိ ဝယ်ယူမှုများသည် အစမ်းသဘောသာ ဖြစ်သည်။';
 
   @override
   String get mostPopular => 'လူကြိုက်အများဆုံး';
@@ -806,7 +840,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'သုံးသပ်ချက် $count ခု သုံးသည်');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'သုံးသပ်ချက် $count ခု သုံးသည်',
+    );
     return '$_temp0';
   }
 
@@ -820,10 +858,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get aiReaderExperienced => 'အတွေ့အကြုံရှိသူ';
 
   @override
-  String get aiReaderBeginnerDesc => 'ရိုးရှင်းသော ဘာသာစကား၊ နည်းပညာဝေါဟာရတိုင်းကို ရှင်းပြထားသည်။';
+  String get aiReaderBeginnerDesc =>
+      'ရိုးရှင်းသော ဘာသာစကား၊ နည်းပညာဝေါဟာရတိုင်းကို ရှင်းပြထားသည်။';
 
   @override
-  String get aiReaderExperiencedDesc => 'စံ ဘဏ္ဍာရေးဝေါဟာရများဖြင့် ပိုမိုကျစ်လျစ်သော စာသား။';
+  String get aiReaderExperiencedDesc =>
+      'စံ ဘဏ္ဍာရေးဝေါဟာရများဖြင့် ပိုမိုကျစ်လျစ်သော စာသား။';
 
   @override
   String get aiCounterArgument => 'အပြင်းထန်ဆုံး ဆန့်ကျင်ဘက် အငြင်းအခုံ';
@@ -837,7 +877,8 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'သင့်အစီအစဉ်ဖြင့် သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
+      other:
+          'သင့်အစီအစဉ်ဖြင့် သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
     );
     return '$_temp0';
   }
@@ -849,7 +890,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
+    );
     return '$_temp0';
   }
 
@@ -932,10 +977,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notSignedIn => 'လက်မှတ်ထိုးဝင်မထားပါ';
 
   @override
-  String get accountBenefit => 'သင့်စာရင်းသွင်းမှုကို စက်အားလုံးတွင် အသုံးပြုနိုင်ရန် လက်မှတ်ထိုးဝင်ပါ။';
+  String get accountBenefit =>
+      'သင့်စာရင်းသွင်းမှုကို စက်အားလုံးတွင် အသုံးပြုနိုင်ရန် လက်မှတ်ထိုးဝင်ပါ။';
 
   @override
-  String get accountSyncedNote => 'သင့်စာရင်းသွင်းမှုနှင့် ကျန်ရှိသော သုံးသပ်ချက်များသည် စက်တိုင်းတွင် တူညီသည်။';
+  String get accountSyncedNote =>
+      'သင့်စာရင်းသွင်းမှုနှင့် ကျန်ရှိသော သုံးသပ်ချက်များသည် စက်တိုင်းတွင် တူညီသည်။';
 
   @override
   String get signInTitle => 'WhatStock သို့ လက်မှတ်ထိုးဝင်ရန်';
@@ -967,7 +1014,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get errInvalidEmail => 'မှန်ကန်သော အီးမေးလ်လိပ်စာ ထည့်ပါ။';
 
   @override
-  String get errSignInFailed => 'လက်မှတ်ထိုးဝင်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errSignInFailed =>
+      'လက်မှတ်ထိုးဝင်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get checkoutWaiting =>
@@ -988,7 +1036,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get doubleOptionTitle => 'Option ကို နှစ်ချက် နှိပ်ရန်';
 
   @override
-  String get doubleOptionSubtitle => 'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း WhatStock ကို ခေါ်နိုင်သည်။';
+  String get doubleOptionSubtitle =>
+      'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း WhatStock ကို ခေါ်နိုင်သည်။';
 
   @override
   String get doubleOptionPermission =>
@@ -1010,7 +1059,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years နှစ်');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years နှစ်',
+    );
     return '$_temp0';
   }
 
@@ -1248,7 +1301,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get accountDeleted => 'သင့်အကောင့်ကို ဖျက်လိုက်ပါပြီ။';
 
   @override
-  String get errDeleteAccount => 'အကောင့်ကို ဖျက်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errDeleteAccount =>
+      'အကောင့်ကို ဖျက်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get aiTrialBriefNote =>
@@ -1274,4 +1328,10 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'နှစ်စဉ် စာရင်းသွင်းမှုများသည် သင် ပယ်ဖျက်သည်အထိ နှစ်တိုင်း အလိုအလျောက် သက်တမ်းတိုးသည်။ စာရင်းသွင်းခြင်းဖြင့် အသုံးပြုမှု စည်းမျဉ်းများနှင့် ကိုယ်ရေးအချက်အလက် မူဝါဒကို လက်ခံပါသည်။';
+
+  @override
+  String get myAnalyses => 'ကျွန်ုပ်၏ သုံးသပ်ချက်များ';
+
+  @override
+  String get navAlerts => 'သတိပေးချက်';
 }

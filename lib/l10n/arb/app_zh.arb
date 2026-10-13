@@ -369,5 +369,7 @@
   "yearlyDiscount": "免费 2 个月",
   "perYear": "/ 年",
   "pricePerMonthApprox": "每月约 {price}",
-  "subscriptionLegalYearly": "年度订阅会每年自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。"
+  "subscriptionLegalYearly": "年度订阅会每年自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。",
+  "myAnalyses": "我的分析",
+  "navAlerts": "提醒"
 }

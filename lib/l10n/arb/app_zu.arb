@@ -369,5 +369,7 @@
   "yearlyDiscount": "Izinyanga ezi-2 mahhala",
   "perYear": "/ unyaka",
   "pricePerMonthApprox": "≈ {price} ngenyanga",
-  "subscriptionLegalYearly": "Ukubhalisa konyaka kuvuselelwa ngokuzenzakalelayo njalo ngonyaka uze ukukhansele. Ngokubhalisa wamukela Imigomo Yokusetshenziswa kanye Nenqubomgomo Yobumfihlo."
+  "subscriptionLegalYearly": "Ukubhalisa konyaka kuvuselelwa ngokuzenzakalelayo njalo ngonyaka uze ukukhansele. Ngokubhalisa wamukela Imigomo Yokusetshenziswa kanye Nenqubomgomo Yobumfihlo.",
+  "myAnalyses": "Uhlaziyo lwami",
+  "navAlerts": "Izexwayiso"
 }

@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 ወር ነፃ",
   "perYear": "/ ዓመት",
   "pricePerMonthApprox": "≈ በወር {price}",
-  "subscriptionLegalYearly": "ዓመታዊ የደንበኝነት ምዝገባዎች እስኪሰርዟቸው ድረስ በየዓመቱ በራስ-ሰር ይታደሳሉ። በመመዝገብ የአጠቃቀም ውሉን እና የግላዊነት መመሪያውን ይቀበላሉ።"
+  "subscriptionLegalYearly": "ዓመታዊ የደንበኝነት ምዝገባዎች እስኪሰርዟቸው ድረስ በየዓመቱ በራስ-ሰር ይታደሳሉ። በመመዝገብ የአጠቃቀም ውሉን እና የግላዊነት መመሪያውን ይቀበላሉ።",
+  "myAnalyses": "የእኔ ትንተናዎች",
+  "navAlerts": "ማንቂያዎች"
 }

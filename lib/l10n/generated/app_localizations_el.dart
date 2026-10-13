@@ -13,7 +13,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
+  String get homeTagline =>
+      'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errorGeneric => 'Κάτι πήγε στραβά.';
 
   @override
-  String get errorSectionUnavailable => 'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
+  String get errorSectionUnavailable =>
+      'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
 
   @override
   String get notAvailable => 'μ/δ';
@@ -306,7 +308,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count αναλυτές', one: '1 αναλυτής');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count αναλυτές',
+      one: '1 αναλυτής',
+    );
     return '$_temp0';
   }
 
@@ -347,26 +354,32 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
+  String get errRecognitionRefused =>
+      'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
 
   @override
-  String get errRecognitionTruncated => 'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
+  String get errRecognitionTruncated =>
+      'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
 
   @override
-  String get errRecognitionBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
+  String get errRecognitionBadResponse =>
+      'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
 
   @override
-  String get errRecognitionEmpty => 'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
+  String get errRecognitionEmpty =>
+      'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
 
   @override
-  String get errMissingFinnhubKey => 'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Τα δεδομένα αγοράς δεν έχουν ρυθμιστεί (δεν υπάρχει FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία δεδομένων αγοράς. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
-  String get errMarketRateLimited => 'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
+  String get errMarketRateLimited =>
+      'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
 
   @override
   String errMarketHttp(String status) {
@@ -374,7 +387,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
+  String get errMarketBadResponse =>
+      'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +488,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiRegenerate => 'Δημιουργία ξανά';
 
   @override
-  String get aiGenerating => 'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
+  String get aiGenerating =>
+      'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
 
   @override
   String get aiSources => 'Πηγές';
@@ -489,10 +504,12 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ανάλυση που δημιουργήθηκε από AI με βάση δημόσια δεδομένα και πρόσφατες ειδήσεις. Μπορεί να περιέχει λάθη ή να μην είναι ενημερωμένη και δεν αποτελεί επενδυτική συμβουλή.';
 
   @override
-  String get errAiNotConfigured => 'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Η ανάλυση AI δεν έχει ρυθμιστεί (δεν υπάρχει ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
+  String get errAiUnreachable =>
+      'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
   String errAiHttp(String status) {
@@ -500,7 +517,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
+  String get errAiRefused =>
+      'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
 
   @override
   String get errAiBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία AI.';
@@ -524,7 +542,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get rangeFiveYears => '5 έτη';
 
   @override
-  String get chartUnavailable => 'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
+  String get chartUnavailable =>
+      'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
 
   @override
   String get sectionStatements => 'Οικονομικές καταστάσεις (ετήσιες)';
@@ -561,7 +580,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hotkeyLabel => 'Γενική συντόμευση';
 
   @override
-  String get hotkeyRecordHint => 'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
+  String get hotkeyRecordHint =>
+      'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
 
   @override
   String get hotkeyReset => 'Επαναφορά προεπιλογής';
@@ -582,7 +602,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get removeFromFavorites => 'Αφαίρεση από τα αγαπημένα';
 
   @override
-  String get noFavorites => 'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
+  String get noFavorites =>
+      'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
 
   @override
   String get displayCurrency => 'Νόμισμα εμφάνισης';
@@ -629,7 +650,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get updateDownloading => 'Λήψη της ενημέρωσης στο παρασκήνιο…';
 
   @override
-  String get updateDownloaded => 'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
+  String get updateDownloaded =>
+      'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
 
   @override
   String get updateNow => 'Ενημέρωση';
@@ -638,7 +660,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get restartNow => 'Επανεκκίνηση';
 
   @override
-  String get updatesViaStore => 'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
+  String get updatesViaStore =>
+      'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
 
   @override
   String get updateCheckFailed => 'Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις.';
@@ -686,7 +709,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε τις αναλύσεις.';
+  String get trialExpired =>
+      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε τις αναλύσεις.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,10 +740,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get perMonth => '/ μήνα';
 
   @override
-  String get extraPacksTitle => 'Χρειάζεστε περισσότερες; Αγοράστε επιπλέον αναλύσεις';
+  String get extraPacksTitle =>
+      'Χρειάζεστε περισσότερες; Αγοράστε επιπλέον αναλύσεις';
 
   @override
-  String get extraPacksHint => 'Οι επιπλέον αναλύσεις δεν λήγουν ποτέ και χρησιμοποιούνται μετά το μηνιαίο όριό σας.';
+  String get extraPacksHint =>
+      'Οι επιπλέον αναλύσεις δεν λήγουν ποτέ και χρησιμοποιούνται μετά το μηνιαίο όριό σας.';
 
   @override
   String get buy => 'Αγορά';
@@ -751,7 +777,8 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δεν σας απομένουν αναλύσεις για αυτήν την περίοδο. Αναβαθμίστε το πρόγραμμά σας ή αγοράστε επιπλέον αναλύσεις.';
 
   @override
-  String get errTrialExpired => 'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε.';
+  String get errTrialExpired =>
+      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε.';
 
   @override
   String get errNoPlan => 'Για την ανάλυση AI απαιτείται ενεργό πρόγραμμα.';
@@ -763,7 +790,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get usageTitle => 'Χρήση';
 
   @override
-  String get demoPurchaseNote => 'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
+  String get demoPurchaseNote =>
+      'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
 
   @override
   String get mostPopular => 'Πιο δημοφιλές';
@@ -832,10 +860,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiReaderExperienced => 'Έμπειρος';
 
   @override
-  String get aiReaderBeginnerDesc => 'Απλή γλώσσα· κάθε τεχνικός όρος εξηγείται.';
+  String get aiReaderBeginnerDesc =>
+      'Απλή γλώσσα· κάθε τεχνικός όρος εξηγείται.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Πιο πυκνό κείμενο με καθιερωμένη χρηματοοικονομική ορολογία.';
+  String get aiReaderExperiencedDesc =>
+      'Πιο πυκνό κείμενο με καθιερωμένη χρηματοοικονομική ορολογία.';
 
   @override
   String get aiCounterArgument => 'Ισχυρότερο αντεπιχείρημα';
@@ -935,7 +965,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get upcomingEvents => 'Επερχόμενα γεγονότα';
 
   @override
-  String get outlookChartNote => 'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
+  String get outlookChartNote =>
+      'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
 
   @override
   String get accountTitle => 'Λογαριασμός';
@@ -950,10 +981,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notSignedIn => 'Δεν έχετε συνδεθεί';
 
   @override
-  String get accountBenefit => 'Συνδεθείτε για να λειτουργεί η συνδρομή σας σε όλες τις συσκευές σας.';
+  String get accountBenefit =>
+      'Συνδεθείτε για να λειτουργεί η συνδρομή σας σε όλες τις συσκευές σας.';
 
   @override
-  String get accountSyncedNote => 'Η συνδρομή σας και οι αναλύσεις που απομένουν είναι ίδιες σε κάθε συσκευή.';
+  String get accountSyncedNote =>
+      'Η συνδρομή σας και οι αναλύσεις που απομένουν είναι ίδιες σε κάθε συσκευή.';
 
   @override
   String get signInTitle => 'Σύνδεση στο WhatStock';
@@ -985,14 +1018,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errInvalidEmail => 'Εισαγάγετε μια έγκυρη διεύθυνση email.';
 
   @override
-  String get errSignInFailed => 'Η σύνδεση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+  String get errSignInFailed =>
+      'Η σύνδεση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
 
   @override
   String get checkoutWaiting =>
       'Ολοκληρώστε την πληρωμή στο πρόγραμμα περιήγησης. Η εφαρμογή θα ενημερωθεί αυτόματα μόλις ολοκληρωθεί.';
 
   @override
-  String get paymentViaStripe => 'Ασφαλής πληρωμή στο πρόγραμμα περιήγησης μέσω Stripe. Ακύρωση οποιαδήποτε στιγμή.';
+  String get paymentViaStripe =>
+      'Ασφαλής πληρωμή στο πρόγραμμα περιήγησης μέσω Stripe. Ακύρωση οποιαδήποτε στιγμή.';
 
   @override
   String get paymentViaStore =>
@@ -1005,7 +1040,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get doubleOptionTitle => 'Διπλό πάτημα του Option';
 
   @override
-  String get doubleOptionSubtitle => 'Το WhatStock εμφανίζεται επίσης αν πατήσετε γρήγορα δύο φορές το πλήκτρο Option.';
+  String get doubleOptionSubtitle =>
+      'Το WhatStock εμφανίζεται επίσης αν πατήσετε γρήγορα δύο φορές το πλήκτρο Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1027,7 +1063,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years έτη', one: '1 έτος');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years έτη',
+      one: '1 έτος',
+    );
     return '$_temp0';
   }
 
@@ -1088,7 +1129,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioAdd => 'Προσθήκη';
 
   @override
-  String get portfolioInvalidNumber => 'Εισαγάγετε αριθμό μεγαλύτερο από το μηδέν.';
+  String get portfolioInvalidNumber =>
+      'Εισαγάγετε αριθμό μεγαλύτερο από το μηδέν.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1128,7 +1170,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioRemove => 'Αφαίρεση';
 
   @override
-  String get portfolioExcluded => 'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
+  String get portfolioExcluded =>
+      'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
 
   @override
   String get priceAlerts => 'Ειδοποιήσεις τιμής';
@@ -1170,7 +1213,8 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Δεν υπάρχουν ακόμη ειδοποιήσεις. Ανοίξτε μια μετοχή και πατήστε το καμπανάκι.';
+  String get alertsEmpty =>
+      'Δεν υπάρχουν ακόμη ειδοποιήσεις. Ανοίξτε μια μετοχή και πατήστε το καμπανάκι.';
 
   @override
   String get alertsNote =>
@@ -1263,7 +1307,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get accountDeleted => 'Ο λογαριασμός σας διαγράφηκε.';
 
   @override
-  String get errDeleteAccount => 'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
+  String get errDeleteAccount =>
+      'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1289,4 +1334,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Η ετήσια συνδρομή ανανεώνεται αυτόματα κάθε χρόνο μέχρι να την ακυρώσετε. Με τη συνδρομή αποδέχεστε τους Όρους χρήσης και την Πολιτική απορρήτου.';
+
+  @override
+  String get myAnalyses => 'Οι αναλύσεις μου';
+
+  @override
+  String get navAlerts => 'Ειδοποιήσεις';
 }

@@ -13,7 +13,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Retratuem ti maysa a stock ket ammuem ti amin a maipapan iti dayta.';
+  String get homeTagline =>
+      'Retratuem ti maysa a stock ket ammuem ti amin a maipapan iti dayta.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count nga analyst', one: '1 nga analyst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nga analyst',
+      one: '1 nga analyst',
+    );
     return '$_temp0';
   }
 
@@ -347,22 +353,28 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Saan a maproseso ti serbisio ti panangbigbig daytoy a ladawan.';
+  String get errRecognitionRefused =>
+      'Saan a maproseso ti serbisio ti panangbigbig daytoy a ladawan.';
 
   @override
-  String get errRecognitionTruncated => 'Naputed ti sungbat ti panangbigbig. Pangngaasim ta padasem manen.';
+  String get errRecognitionTruncated =>
+      'Naputed ti sungbat ti panangbigbig. Pangngaasim ta padasem manen.';
 
   @override
-  String get errRecognitionBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti panangbigbig.';
+  String get errRecognitionBadResponse =>
+      'Saan a nanamnama a sungbat manipud iti serbisio ti panangbigbig.';
 
   @override
-  String get errRecognitionEmpty => 'Awan ti linaon ti sungbat nga insubli ti serbisio ti panangbigbig.';
+  String get errRecognitionEmpty =>
+      'Awan ti linaon ti sungbat nga insubli ti serbisio ti panangbigbig.';
 
   @override
-  String get errMissingFinnhubKey => 'Saan a naka-configure ti market data (awan ti FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Saan a naka-configure ti market data (awan ti FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'Saan a makontak ti serbisio ti market data. Kitaem ti koneksionmo iti internet.';
+  String get errMarketUnreachable =>
+      'Saan a makontak ti serbisio ti market data. Kitaem ti koneksionmo iti internet.';
 
   @override
   String get errMarketRateLimited =>
@@ -374,7 +386,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti market data.';
+  String get errMarketBadResponse =>
+      'Saan a nanamnama a sungbat manipud iti serbisio ti market data.';
 
   @override
   String errNoQuote(String symbol) {
@@ -474,7 +487,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get aiRegenerate => 'Aramiden manen';
 
   @override
-  String get aiGenerating => 'Isagsagana ti panangsukimat… mabalin nga agpaut daytoy iti maysa wenno dua a minuto.';
+  String get aiGenerating =>
+      'Isagsagana ti panangsukimat… mabalin nga agpaut daytoy iti maysa wenno dua a minuto.';
 
   @override
   String get aiSources => 'Dagiti taudan';
@@ -489,10 +503,12 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Panangsukimat nga inaramid ti AI a naibatay iti publiko a data ken kaudian a damag. Mabalin nga adda biddutna wenno daanen, ken saan a balakad iti panagpuonan.';
 
   @override
-  String get errAiNotConfigured => 'Saan a naka-configure ti panangsukimat ti AI (awan ti ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Saan a naka-configure ti panangsukimat ti AI (awan ti ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Saan a makontak ti serbisio ti AI. Kitaem ti koneksionmo iti internet.';
+  String get errAiUnreachable =>
+      'Saan a makontak ti serbisio ti AI. Kitaem ti koneksionmo iti internet.';
 
   @override
   String errAiHttp(String status) {
@@ -500,10 +516,12 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Nagkedked ti serbisio ti AI a mangsukimat iti daytoy a stock.';
+  String get errAiRefused =>
+      'Nagkedked ti serbisio ti AI a mangsukimat iti daytoy a stock.';
 
   @override
-  String get errAiBadResponse => 'Saan a nanamnama a sungbat manipud iti serbisio ti AI.';
+  String get errAiBadResponse =>
+      'Saan a nanamnama a sungbat manipud iti serbisio ti AI.';
 
   @override
   String get sectionChart => 'Chart ti presio';
@@ -524,7 +542,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Awan ti pakasaritaan ti presio manipud iti agdama a taudan ti data.';
+  String get chartUnavailable =>
+      'Awan ti pakasaritaan ti presio manipud iti agdama a taudan ti data.';
 
   @override
   String get sectionStatements => 'Dagiti financial statement (tinawen)';
@@ -551,7 +570,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash flow ti operasion';
 
   @override
-  String get statementsUnavailable => 'Awan ti naireport a financial statement para iti daytoy a stock.';
+  String get statementsUnavailable =>
+      'Awan ti naireport a financial statement para iti daytoy a stock.';
 
   @override
   String get launchAtLogin => 'Agrugi iti panag-log in';
@@ -560,7 +580,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get hotkeyLabel => 'Global a shortcut';
 
   @override
-  String get hotkeyRecordHint => 'I-klik ditoy, sa pindutem ti baro a kombinasion ti key';
+  String get hotkeyRecordHint =>
+      'I-klik ditoy, sa pindutem ti baro a kombinasion ti key';
 
   @override
   String get hotkeyReset => 'Isubli iti default';
@@ -581,7 +602,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get removeFromFavorites => 'Ikkaten kadagiti paborito';
 
   @override
-  String get noFavorites => 'Awan pay ti paborito. I-tap ti bituen iti maysa a stock tapno mainayon.';
+  String get noFavorites =>
+      'Awan pay ti paborito. I-tap ti bituen iti maysa a stock tapno mainayon.';
 
   @override
   String get displayCurrency => 'Currency a maipakita';
@@ -628,7 +650,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get updateDownloading => 'Ida-download ti update iti background…';
 
   @override
-  String get updateDownloaded => 'Nakasagana ti update. I-restart tapno mai-install.';
+  String get updateDownloaded =>
+      'Nakasagana ti update. I-restart tapno mai-install.';
 
   @override
   String get updateNow => 'I-update';
@@ -637,7 +660,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get restartNow => 'I-restart';
 
   @override
-  String get updatesViaStore => 'Automatiko nga umay dagiti update babaen ti app store.';
+  String get updatesViaStore =>
+      'Automatiko nga umay dagiti update babaen ti app store.';
 
   @override
   String get updateCheckFailed => 'Saan a makita no adda update.';
@@ -685,7 +709,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy ti panangsukimat.';
+  String get trialExpired =>
+      'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy ti panangsukimat.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -715,7 +740,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get perMonth => '/ bulan';
 
   @override
-  String get extraPacksTitle => 'Masapulmo pay? Gumatang iti nayon a panangsukimat';
+  String get extraPacksTitle =>
+      'Masapulmo pay? Gumatang iti nayon a panangsukimat';
 
   @override
   String get extraPacksHint =>
@@ -751,10 +777,12 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Awanen ti nabati a panangsukimatmo iti daytoy a periodo. I-upgrade ti planmo wenno gumatang iti nayon a panangsukimat.';
 
   @override
-  String get errTrialExpired => 'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy.';
+  String get errTrialExpired =>
+      'Nalpasen ti libre a trialmo. Agpili iti plan tapno agtuloy.';
 
   @override
-  String get errNoPlan => 'Masapul ti aktibo a plan para iti panangsukimat ti AI.';
+  String get errNoPlan =>
+      'Masapul ti aktibo a plan para iti panangsukimat ti AI.';
 
   @override
   String get viewPlans => 'Kitaen dagiti plan';
@@ -763,7 +791,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get usageTitle => 'Panangusar';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: simulated laeng dagiti panaggatang iti daytoy a platform.';
+  String get demoPurchaseNote =>
+      'Demo billing: simulated laeng dagiti panaggatang iti daytoy a platform.';
 
   @override
   String get mostPopular => 'Kalatakan';
@@ -800,7 +829,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get aiDepthBriefDesc => 'Dagiti napateg, napardas.';
 
   @override
-  String get aiDepthStandardDesc => 'Naan-anay a report nga addaan iti tunggal seksion.';
+  String get aiDepthStandardDesc =>
+      'Naan-anay a report nga addaan iti tunggal seksion.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -832,10 +862,12 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get aiReaderExperienced => 'Nasanay';
 
   @override
-  String get aiReaderBeginnerDesc => 'Nalaka a pagsasao; mailawlawag ti tunggal teknikal a termino.';
+  String get aiReaderBeginnerDesc =>
+      'Nalaka a pagsasao; mailawlawag ti tunggal teknikal a termino.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Napuspuskol a teksto nga addaan iti standard a terminolohia ti pinansia.';
+  String get aiReaderExperiencedDesc =>
+      'Napuspuskol a teksto nga addaan iti standard a terminolohia ti pinansia.';
 
   @override
   String get aiCounterArgument => 'Kapigsaan a kontra-argumento';
@@ -849,7 +881,8 @@ class AppLocalizationsIlo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Agingga iti $count a panagbiruk iti web iti tunggal panangsukimat iti planmo',
+      other:
+          'Agingga iti $count a panagbiruk iti web iti tunggal panangsukimat iti planmo',
       one: 'Agingga iti 1 a panagbiruk iti web iti tunggal panangsukimat iti planmo',
     );
     return '$_temp0';
@@ -935,7 +968,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get upcomingEvents => 'Dumteng a pasamak';
 
   @override
-  String get outlookChartNote => 'Pattapatta a sakup; dagiti probabilidad ket nalawa a pattapatta, saan a padto.';
+  String get outlookChartNote =>
+      'Pattapatta a sakup; dagiti probabilidad ket nalawa a pattapatta, saan a padto.';
 
   @override
   String get accountTitle => 'Account';
@@ -950,10 +984,12 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get notSignedIn => 'Saan a naka-sign in';
 
   @override
-  String get accountBenefit => 'Ag-sign in tapno agandar ti subscriptionmo iti amin a devicem.';
+  String get accountBenefit =>
+      'Ag-sign in tapno agandar ti subscriptionmo iti amin a devicem.';
 
   @override
-  String get accountSyncedNote => 'Agpada ti subscriptionmo ken nabati a panangsukimat iti tunggal device.';
+  String get accountSyncedNote =>
+      'Agpada ti subscriptionmo ken nabati a panangsukimat iti tunggal device.';
 
   @override
   String get signInTitle => 'Ag-sign in iti WhatStock';
@@ -982,13 +1018,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get errInvalidCode => 'Biddut wenno nag-expire ti code.';
 
   @override
-  String get errInvalidEmail => 'Pangngaasim ta iserrekmo ti umiso nga email address.';
+  String get errInvalidEmail =>
+      'Pangngaasim ta iserrekmo ti umiso nga email address.';
 
   @override
-  String get errSignInFailed => 'Saan a nakapag-sign in. Kitaem ti koneksionmo ket padasem manen.';
+  String get errSignInFailed =>
+      'Saan a nakapag-sign in. Kitaem ti koneksionmo ket padasem manen.';
 
   @override
-  String get checkoutWaiting => 'Leppasem ti panagbayad iti browsermo. Automatiko nga ag-update ti app no nalpas.';
+  String get checkoutWaiting =>
+      'Leppasem ti panagbayad iti browsermo. Automatiko nga ag-update ti app no nalpas.';
 
   @override
   String get paymentViaStripe =>
@@ -1005,7 +1044,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get doubleOptionTitle => 'Mamindua a pindutem ti Option';
 
   @override
-  String get doubleOptionSubtitle => 'Ti napardas a mamindua a panangpindut iti Option key ket umaw met iti WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Ti napardas a mamindua a panangpindut iti Option key ket umaw met iti WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1027,7 +1067,12 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years a tawen', one: '1 a tawen');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years a tawen',
+      one: '1 a tawen',
+    );
     return '$_temp0';
   }
 
@@ -1088,7 +1133,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get portfolioAdd => 'Inayon';
 
   @override
-  String get portfolioInvalidNumber => 'Iserrek ti numero a nangatngato ngem zero.';
+  String get portfolioInvalidNumber =>
+      'Iserrek ti numero a nangatngato ngem zero.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1228,7 +1274,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get alertOpen => 'Lukatan';
 
   @override
-  String get keepInTrayTitle => 'Agtultuloy nga agandar uray nakarikep ti window';
+  String get keepInTrayTitle =>
+      'Agtultuloy nga agandar uray nakarikep ti window';
 
   @override
   String get keepInTraySubtitle =>
@@ -1265,7 +1312,8 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get accountDeleted => 'Napunasen ti accountmo.';
 
   @override
-  String get errDeleteAccount => 'Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen.';
+  String get errDeleteAccount =>
+      'Saan a mapunas ti account. Kitaem ti koneksionmo ket padasem manen.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1291,4 +1339,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Automatiko a mairenew ti tinawen a subscription iti tunggal tawen agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy.';
+
+  @override
+  String get myAnalyses => 'Dagiti panangsukimatko';
+
+  @override
+  String get navAlerts => 'Alerto';
 }

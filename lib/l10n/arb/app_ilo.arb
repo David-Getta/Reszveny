@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 a bulan a libre",
   "perYear": "/ tawen",
   "pricePerMonthApprox": "≈ {price} iti tunggal bulan",
-  "subscriptionLegalYearly": "Automatiko a mairenew ti tinawen a subscription iti tunggal tawen agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy."
+  "subscriptionLegalYearly": "Automatiko a mairenew ti tinawen a subscription iti tunggal tawen agingga nga ikanselam. Babaen ti panag-subscribe, awatem dagiti Termino ti Panangusar ken ti Annuroten iti Privacy.",
+  "myAnalyses": "Dagiti panangsukimatko",
+  "navAlerts": "Alerto"
 }

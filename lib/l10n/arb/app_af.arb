@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 maande gratis",
   "perYear": "/ jaar",
   "pricePerMonthApprox": "≈ {price} per maand",
-  "subscriptionLegalYearly": "Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid."
+  "subscriptionLegalYearly": "Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid.",
+  "myAnalyses": "My ontledings",
+  "navAlerts": "Waarskuwings"
 }

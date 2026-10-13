@@ -352,26 +352,32 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Услугата за препознавање не можеше да ја обработи оваа слика.';
+  String get errRecognitionRefused =>
+      'Услугата за препознавање не можеше да ја обработи оваа слика.';
 
   @override
-  String get errRecognitionTruncated => 'Одговорот од препознавањето беше прекинат. Обидете се повторно.';
+  String get errRecognitionTruncated =>
+      'Одговорот од препознавањето беше прекинат. Обидете се повторно.';
 
   @override
-  String get errRecognitionBadResponse => 'Неочекуван одговор од услугата за препознавање.';
+  String get errRecognitionBadResponse =>
+      'Неочекуван одговор од услугата за препознавање.';
 
   @override
-  String get errRecognitionEmpty => 'Услугата за препознавање врати празен одговор.';
+  String get errRecognitionEmpty =>
+      'Услугата за препознавање врати празен одговор.';
 
   @override
-  String get errMissingFinnhubKey => 'Пазарните податоци не се поставени (нема FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Пазарните податоци не се поставени (нема FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не може да се воспостави врска со услугата за пазарни податоци. Проверете ја интернет-врската.';
 
   @override
-  String get errMarketRateLimited => 'Премногу барања до услугата за пазарни податоци. Почекајте една минута.';
+  String get errMarketRateLimited =>
+      'Премногу барања до услугата за пазарни податоци. Почекајте една минута.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +385,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Неочекуван одговор од услугата за пазарни податоци.';
+  String get errMarketBadResponse =>
+      'Неочекуван одговор од услугата за пазарни податоци.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +486,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get aiRegenerate => 'Генерирај повторно';
 
   @override
-  String get aiGenerating => 'Ја подготвуваме анализата… ова може да трае минута-две.';
+  String get aiGenerating =>
+      'Ја подготвуваме анализата… ова може да трае минута-две.';
 
   @override
   String get aiSources => 'Извори';
@@ -494,10 +502,12 @@ class AppLocalizationsMk extends AppLocalizations {
       'Анализа генерирана од AI врз основа на јавни податоци и неодамнешни вести. Може да содржи грешки или да биде застарена и не претставува инвестициски совет.';
 
   @override
-  String get errAiNotConfigured => 'AI-анализата не е поставена (нема ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI-анализата не е поставена (нема ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Не може да се воспостави врска со AI-услугата. Проверете ја интернет-врската.';
+  String get errAiUnreachable =>
+      'Не може да се воспостави врска со AI-услугата. Проверете ја интернет-врската.';
 
   @override
   String errAiHttp(String status) {
@@ -529,7 +539,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get rangeFiveYears => '5Г';
 
   @override
-  String get chartUnavailable => 'Историјата на цените не е достапна од тековниот извор на податоци.';
+  String get chartUnavailable =>
+      'Историјата на цените не е достапна од тековниот извор на податоци.';
 
   @override
   String get sectionStatements => 'Финансиски извештаи (годишни)';
@@ -556,7 +567,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Оперативен паричен тек';
 
   @override
-  String get statementsUnavailable => 'За оваа акција не се достапни објавени финансиски извештаи.';
+  String get statementsUnavailable =>
+      'За оваа акција не се достапни објавени финансиски извештаи.';
 
   @override
   String get launchAtLogin => 'Стартувај при најавување';
@@ -565,7 +577,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get hotkeyLabel => 'Глобална кратенка';
 
   @override
-  String get hotkeyRecordHint => 'Кликнете тука, а потоа притиснете ја новата комбинација на копчиња';
+  String get hotkeyRecordHint =>
+      'Кликнете тука, а потоа притиснете ја новата комбинација на копчиња';
 
   @override
   String get hotkeyReset => 'Врати на стандардно';
@@ -586,7 +599,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get removeFromFavorites => 'Отстрани од омилени';
 
   @override
-  String get noFavorites => 'Сѐ уште нема омилени. Допрете ја ѕвездата кај акцијата за да ја додадете.';
+  String get noFavorites =>
+      'Сѐ уште нема омилени. Допрете ја ѕвездата кај акцијата за да ја додадете.';
 
   @override
   String get displayCurrency => 'Валута за прикажување';
@@ -633,7 +647,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get updateDownloading => 'Ажурирањето се презема во заднина…';
 
   @override
-  String get updateDownloaded => 'Ажурирањето е подготвено. Рестартирајте за да го инсталирате.';
+  String get updateDownloaded =>
+      'Ажурирањето е подготвено. Рестартирајте за да го инсталирате.';
 
   @override
   String get updateNow => 'Ажурирај';
@@ -642,7 +657,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get restartNow => 'Рестартирај';
 
   @override
-  String get updatesViaStore => 'Ажурирањата пристигнуваат автоматски преку продавницата за апликации.';
+  String get updatesViaStore =>
+      'Ажурирањата пристигнуваат автоматски преку продавницата за апликации.';
 
   @override
   String get updateCheckFailed => 'Не можеше да се провери за ажурирања.';
@@ -702,7 +718,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Вашиот бесплатен пробен период истече. Изберете план за да продолжите со анализите.';
+  String get trialExpired =>
+      'Вашиот бесплатен пробен период истече. Изберете план за да продолжите со анализите.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -774,7 +791,8 @@ class AppLocalizationsMk extends AppLocalizations {
       'Немате преостанати анализи за овој период. Надградете го планот или купете дополнителни анализи.';
 
   @override
-  String get errTrialExpired => 'Вашиот бесплатен пробен период истече. Изберете план за да продолжите.';
+  String get errTrialExpired =>
+      'Вашиот бесплатен пробен период истече. Изберете план за да продолжите.';
 
   @override
   String get errNoPlan => 'За AI-анализа е потребен активен план.';
@@ -786,7 +804,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get usageTitle => 'Користење';
 
   @override
-  String get demoPurchaseNote => 'Демо-наплата: купувањата на оваа платформа се симулирани.';
+  String get demoPurchaseNote =>
+      'Демо-наплата: купувањата на оваа платформа се симулирани.';
 
   @override
   String get mostPopular => 'Најпопуларен';
@@ -826,7 +845,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Целосен извештај со сите делови.';
 
   @override
-  String get aiDepthDeepDesc => 'Повеќе веб-пребарувања, споредба со конкурентите и подлабоки детали.';
+  String get aiDepthDeepDesc =>
+      'Повеќе веб-пребарувања, споредба со конкурентите и подлабоки детали.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -854,16 +874,19 @@ class AppLocalizationsMk extends AppLocalizations {
   String get aiReaderExperienced => 'Искусен';
 
   @override
-  String get aiReaderBeginnerDesc => 'Едноставен јазик; секој стручен термин е објаснет.';
+  String get aiReaderBeginnerDesc =>
+      'Едноставен јазик; секој стручен термин е објаснет.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Погуст текст со стандардна финансиска терминологија.';
+  String get aiReaderExperiencedDesc =>
+      'Погуст текст со стандардна финансиска терминологија.';
 
   @override
   String get aiCounterArgument => 'Најсилен контрааргумент';
 
   @override
-  String get aiCounterArgumentDesc => 'Резимето секогаш завршува со најсилниот аргумент против сопствениот заклучок.';
+  String get aiCounterArgumentDesc =>
+      'Резимето секогаш завршува со најсилниот аргумент против сопствениот заклучок.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -956,7 +979,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get upcomingEvents => 'Претстојни настани';
 
   @override
-  String get outlookChartNote => 'Ориентациони распони; веројатностите се груби проценки, а не предвидувања.';
+  String get outlookChartNote =>
+      'Ориентациони распони; веројатностите се груби проценки, а не предвидувања.';
 
   @override
   String get accountTitle => 'Сметка';
@@ -971,10 +995,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get notSignedIn => 'Не сте најавени';
 
   @override
-  String get accountBenefit => 'Најавете се за вашата претплата да работи на сите ваши уреди.';
+  String get accountBenefit =>
+      'Најавете се за вашата претплата да работи на сите ваши уреди.';
 
   @override
-  String get accountSyncedNote => 'Вашата претплата и преостанатите анализи се исти на секој уред.';
+  String get accountSyncedNote =>
+      'Вашата претплата и преостанатите анализи се исти на секој уред.';
 
   @override
   String get signInTitle => 'Најава во WhatStock';
@@ -1006,14 +1032,16 @@ class AppLocalizationsMk extends AppLocalizations {
   String get errInvalidEmail => 'Внесете важечка адреса на е-пошта.';
 
   @override
-  String get errSignInFailed => 'Најавата не успеа. Проверете ја врската и обидете се повторно.';
+  String get errSignInFailed =>
+      'Најавата не успеа. Проверете ја врската и обидете се повторно.';
 
   @override
   String get checkoutWaiting =>
       'Завршете го плаќањето во прелистувачот. Апликацијата ќе се ажурира автоматски кога ќе заврши.';
 
   @override
-  String get paymentViaStripe => 'Безбедно плаќање во прелистувачот преку Stripe. Откажете во секое време.';
+  String get paymentViaStripe =>
+      'Безбедно плаќање во прелистувачот преку Stripe. Откажете во секое време.';
 
   @override
   String get paymentViaStore =>
@@ -1026,7 +1054,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get doubleOptionTitle => 'Двоен притисок на Option';
 
   @override
-  String get doubleOptionSubtitle => 'Брзиот двоен притисок на копчето Option исто така го повикува WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Брзиот двоен притисок на копчето Option исто така го повикува WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1048,7 +1077,12 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years години', one: '$years година');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years години',
+      one: '$years година',
+    );
     return '$_temp0';
   }
 
@@ -1149,7 +1183,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get portfolioRemove => 'Отстрани';
 
   @override
-  String get portfolioExcluded => 'Позициите без цена или девизен курс не се вклучени во збировите.';
+  String get portfolioExcluded =>
+      'Позициите без цена или девизен курс не се вклучени во збировите.';
 
   @override
   String get priceAlerts => 'Ценовни известувања';
@@ -1191,7 +1226,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Сѐ уште нема ценовни известувања. Отворете акција и допрете го ѕвончето за да поставите.';
+  String get alertsEmpty =>
+      'Сѐ уште нема ценовни известувања. Отворете акција и допрете го ѕвончето за да поставите.';
 
   @override
   String get alertsNote =>
@@ -1284,7 +1320,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get accountDeleted => 'Вашата сметка е избришана.';
 
   @override
-  String get errDeleteAccount => 'Сметката не можеше да се избрише. Проверете ја врската и обидете се повторно.';
+  String get errDeleteAccount =>
+      'Сметката не можеше да се избрише. Проверете ја врската и обидете се повторно.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1310,4 +1347,10 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Годишната претплата автоматски се обновува секоја година додека не ја откажете. Со претплатата ги прифаќате Условите за користење и Политиката за приватност.';
+
+  @override
+  String get myAnalyses => 'Мои анализи';
+
+  @override
+  String get navAlerts => 'Известувања';
 }

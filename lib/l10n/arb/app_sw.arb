@@ -369,5 +369,7 @@
   "yearlyDiscount": "Miezi 2 bure",
   "perYear": "/ mwaka",
   "pricePerMonthApprox": "≈ {price} kwa mwezi",
-  "subscriptionLegalYearly": "Usajili wa mwaka hujisasisha kiotomatiki kila mwaka hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha."
+  "subscriptionLegalYearly": "Usajili wa mwaka hujisasisha kiotomatiki kila mwaka hadi utakapoughairi. Kwa kujisajili unakubali Masharti ya Matumizi na Sera ya Faragha.",
+  "myAnalyses": "Uchambuzi wangu",
+  "navAlerts": "Arifa"
 }

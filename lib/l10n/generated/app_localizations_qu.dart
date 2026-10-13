@@ -13,7 +13,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Huk accionpa fotonta hurquy, hinaspa tukuy imatapas chaymanta yachay.';
+  String get homeTagline =>
+      'Huk accionpa fotonta hurquy, hinaspa tukuy imatapas chaymanta yachay.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get errorGeneric => 'Huk pantay karqan.';
 
   @override
-  String get errorSectionUnavailable => 'Kay t\'aqata mana apamuyta atirqanchu.';
+  String get errorSectionUnavailable =>
+      'Kay t\'aqata mana apamuyta atirqanchu.';
 
   @override
   String get notAvailable => 'mana kanchu';
@@ -306,7 +308,12 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count t\'aqwiq', one: '$count t\'aqwiq');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count t\'aqwiq',
+      one: '$count t\'aqwiq',
+    );
     return '$_temp0';
   }
 
@@ -347,19 +354,24 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Riqsiy servicioqa kay rikch\'ayta mana ruwayta atirqanchu.';
+  String get errRecognitionRefused =>
+      'Riqsiy servicioqa kay rikch\'ayta mana ruwayta atirqanchu.';
 
   @override
-  String get errRecognitionTruncated => 'Riqsiypa kutichiyninqa kuchusqa karqan. Ama hina kaspa, huktawan ruway.';
+  String get errRecognitionTruncated =>
+      'Riqsiypa kutichiyninqa kuchusqa karqan. Ama hina kaspa, huktawan ruway.';
 
   @override
-  String get errRecognitionBadResponse => 'Riqsiy serviciomanta mana suyasqa kutichiy.';
+  String get errRecognitionBadResponse =>
+      'Riqsiy serviciomanta mana suyasqa kutichiy.';
 
   @override
-  String get errRecognitionEmpty => 'Riqsiy servicioqa ch\'usaq kutichiyta qurqan.';
+  String get errRecognitionEmpty =>
+      'Riqsiy servicioqa ch\'usaq kutichiyta qurqan.';
 
   @override
-  String get errMissingFinnhubKey => 'Qhatu datosqa mana churasqachu (mana FINNHUB_API_KEY kanchu).';
+  String get errMissingFinnhubKey =>
+      'Qhatu datosqa mana churasqachu (mana FINNHUB_API_KEY kanchu).';
 
   @override
   String get errMarketUnreachable =>
@@ -375,7 +387,8 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Qhatu datos serviciomanta mana suyasqa kutichiy.';
+  String get errMarketBadResponse =>
+      'Qhatu datos serviciomanta mana suyasqa kutichiy.';
 
   @override
   String errNoQuote(String symbol) {
@@ -475,7 +488,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get aiRegenerate => 'Musuqmanta ruway';
 
   @override
-  String get aiGenerating => 'T\'aqwiyta wakichichkan… huk utaq iskay minutota unayanman.';
+  String get aiGenerating =>
+      'T\'aqwiyta wakichichkan… huk utaq iskay minutota unayanman.';
 
   @override
   String get aiSources => 'Pukyukuna';
@@ -490,10 +504,12 @@ class AppLocalizationsQu extends AppLocalizations {
       'AI ruwasqan t\'aqwiy, llapanpaq datoskunapi qhipa willakuykunapipas sayasqa. Pantaykunayuq utaq mawk\'aña kanman, manataq qullqi churanapaq yuyaychaychu.';
 
   @override
-  String get errAiNotConfigured => 'AI t\'aqwiyqa mana churasqachu (mana ANTHROPIC_API_KEY kanchu).';
+  String get errAiNotConfigured =>
+      'AI t\'aqwiyqa mana churasqachu (mana ANTHROPIC_API_KEY kanchu).';
 
   @override
-  String get errAiUnreachable => 'AI servicioman mana chayayta atirqanchu. Internet t\'inkiyniykita qhaway.';
+  String get errAiUnreachable =>
+      'AI servicioman mana chayayta atirqanchu. Internet t\'inkiyniykita qhaway.';
 
   @override
   String errAiHttp(String status) {
@@ -501,7 +517,8 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI servicioqa kay accionta t\'aqwiyta mana munarqanchu.';
+  String get errAiRefused =>
+      'AI servicioqa kay accionta t\'aqwiyta mana munarqanchu.';
 
   @override
   String get errAiBadResponse => 'AI serviciomanta mana suyasqa kutichiy.';
@@ -525,7 +542,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get rangeFiveYears => '5W';
 
   @override
-  String get chartUnavailable => 'Kunan datos pukyupiqa chaninpa ñawpa kaqninkuna mana kanchu.';
+  String get chartUnavailable =>
+      'Kunan datos pukyupiqa chaninpa ñawpa kaqninkuna mana kanchu.';
 
   @override
   String get sectionStatements => 'Qullqi willakuykuna (sapa wata)';
@@ -552,7 +570,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flujo de caja operativo';
 
   @override
-  String get statementsUnavailable => 'Kay accionpaq mana qullqi willakuykuna kanchu.';
+  String get statementsUnavailable =>
+      'Kay accionpaq mana qullqi willakuykuna kanchu.';
 
   @override
   String get launchAtLogin => 'Yaykuspa qallarichiy';
@@ -561,7 +580,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get hotkeyLabel => 'Llapanpaq atajo';
 
   @override
-  String get hotkeyRecordHint => 'Kaypi ñit\'iy, chaymanta musuq teclakunata ñit\'iy';
+  String get hotkeyRecordHint =>
+      'Kaypi ñit\'iy, chaymanta musuq teclakunata ñit\'iy';
 
   @override
   String get hotkeyReset => 'Ñawpaq kaqman kutichiy';
@@ -582,7 +602,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get removeFromFavorites => 'Munasqakunamanta hurquy';
 
   @override
-  String get noFavorites => 'Manaraq munasqakuna kanchu. Huk accionpi quyllurta ñit\'iy yapanaykipaq.';
+  String get noFavorites =>
+      'Manaraq munasqakuna kanchu. Huk accionpi quyllurta ñit\'iy yapanaykipaq.';
 
   @override
   String get displayCurrency => 'Rikuchinapaq qullqi';
@@ -629,7 +650,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get updateDownloading => 'Musuqchayta qhipanpi uraqachichkan…';
 
   @override
-  String get updateDownloaded => 'Musuqchayqa listoña. Churanapaq wakmanta qallarichiy.';
+  String get updateDownloaded =>
+      'Musuqchayqa listoña. Churanapaq wakmanta qallarichiy.';
 
   @override
   String get updateNow => 'Musuqchay';
@@ -638,7 +660,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get restartNow => 'Wakmanta qallarichiy';
 
   @override
-  String get updatesViaStore => 'Musuqchaykunaqa app store nisqawan kikinmanta chayamun.';
+  String get updatesViaStore =>
+      'Musuqchaykunaqa app store nisqawan kikinmanta chayamun.';
 
   @override
   String get updateCheckFailed => 'Musuqchaykunata mana maskayta atirqanchu.';
@@ -686,7 +709,8 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Gratis malliyniykiqa tukukunña. T\'aqwiyta qatipanaykipaq huk planta akllay.';
+  String get trialExpired =>
+      'Gratis malliyniykiqa tukukunña. T\'aqwiyta qatipanaykipaq huk planta akllay.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +740,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get perMonth => '/ killa';
 
   @override
-  String get extraPacksTitle => 'Astawanchu munanki? Yapa t\'aqwiykunata rantiy';
+  String get extraPacksTitle =>
+      'Astawanchu munanki? Yapa t\'aqwiykunata rantiy';
 
   @override
   String get extraPacksHint =>
@@ -752,7 +777,8 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kay pachapaq manaña t\'aqwiykuna puchunkichu. Planniykita wichachiy utaq yapa t\'aqwiykunata rantiy.';
 
   @override
-  String get errTrialExpired => 'Gratis malliyniykiqa tukukunña. Qatipanaykipaq huk planta akllay.';
+  String get errTrialExpired =>
+      'Gratis malliyniykiqa tukukunña. Qatipanaykipaq huk planta akllay.';
 
   @override
   String get errNoPlan => 'AI t\'aqwiypaqqa activo plan kananmi.';
@@ -764,7 +790,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get usageTitle => 'Llamk\'achiy';
 
   @override
-  String get demoPurchaseNote => 'Demo cobro: kay plataformapiqa rantiykunaqa simulasqallam.';
+  String get demoPurchaseNote =>
+      'Demo cobro: kay plataformapiqa rantiykunaqa simulasqallam.';
 
   @override
   String get mostPopular => 'Aswan munasqa';
@@ -801,7 +828,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get aiDepthBriefDesc => 'Aswan chaniyuq kaqkunalla, utqaylla.';
 
   @override
-  String get aiDepthStandardDesc => 'Hunt\'asqa willakuy, llapan t\'aqakunawan.';
+  String get aiDepthStandardDesc =>
+      'Hunt\'asqa willakuy, llapan t\'aqakunawan.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -833,10 +861,12 @@ class AppLocalizationsQu extends AppLocalizations {
   String get aiReaderExperienced => 'Yachayniyuq';
 
   @override
-  String get aiReaderBeginnerDesc => 'Sut\'i simi; sapa técnico simitam sut\'inchakun.';
+  String get aiReaderBeginnerDesc =>
+      'Sut\'i simi; sapa técnico simitam sut\'inchakun.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Aswan sinchi qillqa, qullqi simikunawan.';
+  String get aiReaderExperiencedDesc =>
+      'Aswan sinchi qillqa, qullqi simikunawan.';
 
   @override
   String get aiCounterArgument => 'Aswan sinchi contra yuyay';
@@ -952,10 +982,12 @@ class AppLocalizationsQu extends AppLocalizations {
   String get notSignedIn => 'Mana yaykusqa';
 
   @override
-  String get accountBenefit => 'Yaykuy, suscripciónniyki llapan equipoykikunapi llamk\'ananpaq.';
+  String get accountBenefit =>
+      'Yaykuy, suscripciónniyki llapan equipoykikunapi llamk\'ananpaq.';
 
   @override
-  String get accountSyncedNote => 'Suscripciónniyki puchuq t\'aqwiyniykikunapas sapa equipopi kaqllam.';
+  String get accountSyncedNote =>
+      'Suscripciónniyki puchuq t\'aqwiyniykikunapas sapa equipopi kaqllam.';
 
   @override
   String get signInTitle => 'WhatStockman yaykuy';
@@ -984,13 +1016,16 @@ class AppLocalizationsQu extends AppLocalizations {
   String get errInvalidCode => 'Códigoqa pantasqam utaq vencesqañam.';
 
   @override
-  String get errInvalidEmail => 'Ama hina kaspa, allin correo electrónicota qillqay.';
+  String get errInvalidEmail =>
+      'Ama hina kaspa, allin correo electrónicota qillqay.';
 
   @override
-  String get errSignInFailed => 'Mana yaykuyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
+  String get errSignInFailed =>
+      'Mana yaykuyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
 
   @override
-  String get checkoutWaiting => 'Navegadorniykipi pagota tukuy. Tukukuptinqa aplicaciónmi kikinmanta musuqchakunqa.';
+  String get checkoutWaiting =>
+      'Navegadorniykipi pagota tukuy. Tukukuptinqa aplicaciónmi kikinmanta musuqchakunqa.';
 
   @override
   String get paymentViaStripe =>
@@ -1007,7 +1042,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get doubleOptionTitle => 'Option iskay kutita ñit\'iy';
 
   @override
-  String get doubleOptionSubtitle => 'Option teclata utqaylla iskay kutita ñit\'ispapas WhatStocktam waqyanki.';
+  String get doubleOptionSubtitle =>
+      'Option teclata utqaylla iskay kutita ñit\'ispapas WhatStocktam waqyanki.';
 
   @override
   String get doubleOptionPermission =>
@@ -1029,7 +1065,12 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years wata', one: '$years wata');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years wata',
+      one: '$years wata',
+    );
     return '$_temp0';
   }
 
@@ -1267,7 +1308,8 @@ class AppLocalizationsQu extends AppLocalizations {
   String get accountDeleted => 'Cuentaykiqa qullusqañam.';
 
   @override
-  String get errDeleteAccount => 'Cuentataqa mana qulluyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
+  String get errDeleteAccount =>
+      'Cuentataqa mana qulluyta atirqanchu. T\'inkiyniykita qhaway, huktawan ruway.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1293,4 +1335,10 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Watapaq suscripciónkunaqa sapa wata kikinmanta musuqchakunku cancelanaykikama. Suscribikuspaqa Llamk\'achiypa kamachiykunanta Privacidad kamachiytapas chaskinki.';
+
+  @override
+  String get myAnalyses => 'T\'aqwiyniykuna';
+
+  @override
+  String get navAlerts => 'Willachiykuna';
 }

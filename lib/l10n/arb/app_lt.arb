@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 mėn. nemokamai",
   "perYear": "/ metus",
   "pricePerMonthApprox": "≈ {price} per mėnesį",
-  "subscriptionLegalYearly": "Metinė prenumerata kasmet automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika."
+  "subscriptionLegalYearly": "Metinė prenumerata kasmet automatiškai pratęsiama, kol jos neatšauksite. Užsiprenumeruodami sutinkate su Naudojimo sąlygomis ir Privatumo politika.",
+  "myAnalyses": "Mano analizės",
+  "navAlerts": "Įspėjimai"
 }

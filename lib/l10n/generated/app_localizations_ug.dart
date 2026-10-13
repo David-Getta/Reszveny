@@ -13,7 +13,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'پاي چېكىنىڭ سۈرىتىنى تارتىپ، ئۇ ھەقتىكى ھەممە ئۇچۇرغا ئېرىشىڭ.';
+  String get homeTagline =>
+      'پاي چېكىنىڭ سۈرىتىنى تارتىپ، ئۇ ھەقتىكى ھەممە ئۇچۇرغا ئېرىشىڭ.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count تەھلىلچى', one: '1 تەھلىلچى');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تەھلىلچى',
+      one: '1 تەھلىلچى',
+    );
     return '$_temp0';
   }
 
@@ -334,10 +340,12 @@ class AppLocalizationsUg extends AppLocalizations {
   String get recognitionRawText => 'رەسىمدىن ئوقۇلغان تېكىست';
 
   @override
-  String get errMissingAnthropicKey => 'رەسىم پەرقلەندۈرۈش سەپلەنمىگەن (ANTHROPIC_API_KEY يوق). كودنى قولدا كىرگۈزۈڭ.';
+  String get errMissingAnthropicKey =>
+      'رەسىم پەرقلەندۈرۈش سەپلەنمىگەن (ANTHROPIC_API_KEY يوق). كودنى قولدا كىرگۈزۈڭ.';
 
   @override
-  String get errRecognitionUnreachable => 'پەرقلەندۈرۈش مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
+  String get errRecognitionUnreachable =>
+      'پەرقلەندۈرۈش مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,25 +353,32 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'پەرقلەندۈرۈش مۇلازىمىتى بۇ رەسىمنى بىر تەرەپ قىلالمىدى.';
+  String get errRecognitionRefused =>
+      'پەرقلەندۈرۈش مۇلازىمىتى بۇ رەسىمنى بىر تەرەپ قىلالمىدى.';
 
   @override
-  String get errRecognitionTruncated => 'پەرقلەندۈرۈش جاۋابى ئۈزۈلۈپ قالدى. قايتا سىناپ بېقىڭ.';
+  String get errRecognitionTruncated =>
+      'پەرقلەندۈرۈش جاۋابى ئۈزۈلۈپ قالدى. قايتا سىناپ بېقىڭ.';
 
   @override
-  String get errRecognitionBadResponse => 'پەرقلەندۈرۈش مۇلازىمىتىدىن ئويلىمىغان جاۋاب كەلدى.';
+  String get errRecognitionBadResponse =>
+      'پەرقلەندۈرۈش مۇلازىمىتىدىن ئويلىمىغان جاۋاب كەلدى.';
 
   @override
-  String get errRecognitionEmpty => 'پەرقلەندۈرۈش مۇلازىمىتى قۇرۇق جاۋاب قايتۇردى.';
+  String get errRecognitionEmpty =>
+      'پەرقلەندۈرۈش مۇلازىمىتى قۇرۇق جاۋاب قايتۇردى.';
 
   @override
-  String get errMissingFinnhubKey => 'بازار سانلىق مەلۇماتى سەپلەنمىگەن (FINNHUB_API_KEY يوق).';
+  String get errMissingFinnhubKey =>
+      'بازار سانلىق مەلۇماتى سەپلەنمىگەن (FINNHUB_API_KEY يوق).';
 
   @override
-  String get errMarketUnreachable => 'بازار سانلىق مەلۇمات مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
+  String get errMarketUnreachable =>
+      'بازار سانلىق مەلۇمات مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
 
   @override
-  String get errMarketRateLimited => 'بازار سانلىق مەلۇمات مۇلازىمىتىگە بەك كۆپ ئىلتىماس يوللاندى. بىر مىنۇت ساقلاڭ.';
+  String get errMarketRateLimited =>
+      'بازار سانلىق مەلۇمات مۇلازىمىتىگە بەك كۆپ ئىلتىماس يوللاندى. بىر مىنۇت ساقلاڭ.';
 
   @override
   String errMarketHttp(String status) {
@@ -371,7 +386,8 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'بازار سانلىق مەلۇمات مۇلازىمىتىدىن ئويلىمىغان جاۋاب كەلدى.';
+  String get errMarketBadResponse =>
+      'بازار سانلىق مەلۇمات مۇلازىمىتىدىن ئويلىمىغان جاۋاب كەلدى.';
 
   @override
   String errNoQuote(String symbol) {
@@ -471,7 +487,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get aiRegenerate => 'قايتا ھاسىللاش';
 
   @override
-  String get aiGenerating => 'تەھلىل تەييارلىنىۋاتىدۇ… بۇ بىر-ئىككى مىنۇت ۋاقىت ئېلىشى مۇمكىن.';
+  String get aiGenerating =>
+      'تەھلىل تەييارلىنىۋاتىدۇ… بۇ بىر-ئىككى مىنۇت ۋاقىت ئېلىشى مۇمكىن.';
 
   @override
   String get aiSources => 'مەنبەلەر';
@@ -486,10 +503,12 @@ class AppLocalizationsUg extends AppLocalizations {
       'ئاممىۋى سانلىق مەلۇمات ۋە يېقىنقى خەۋەرلەرگە ئاساسەن AI ھاسىللىغان تەھلىل. ئۇنىڭدا خاتالىق ياكى كونىراپ كەتكەن ئۇچۇرلار بولۇشى مۇمكىن، ئۇ مەبلەغ سېلىش تەۋسىيەسى ئەمەس.';
 
   @override
-  String get errAiNotConfigured => 'AI تەھلىلى سەپلەنمىگەن (ANTHROPIC_API_KEY يوق).';
+  String get errAiNotConfigured =>
+      'AI تەھلىلى سەپلەنمىگەن (ANTHROPIC_API_KEY يوق).';
 
   @override
-  String get errAiUnreachable => 'AI مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
+  String get errAiUnreachable =>
+      'AI مۇلازىمىتىگە ئۇلانغىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈڭ.';
 
   @override
   String errAiHttp(String status) {
@@ -497,7 +516,8 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI مۇلازىمىتى بۇ پاي چېكىنى تەھلىل قىلىشنى رەت قىلدى.';
+  String get errAiRefused =>
+      'AI مۇلازىمىتى بۇ پاي چېكىنى تەھلىل قىلىشنى رەت قىلدى.';
 
   @override
   String get errAiBadResponse => 'AI مۇلازىمىتىدىن ئويلىمىغان جاۋاب كەلدى.';
@@ -521,7 +541,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get rangeFiveYears => '5 يىل';
 
   @override
-  String get chartUnavailable => 'نۆۋەتتىكى سانلىق مەلۇمات مەنبەسىدە باھا تارىخى يوق.';
+  String get chartUnavailable =>
+      'نۆۋەتتىكى سانلىق مەلۇمات مەنبەسىدە باھا تارىخى يوق.';
 
   @override
   String get sectionStatements => 'مالىيە دوكلاتلىرى (يىللىق)';
@@ -548,7 +569,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get labelOperatingCashFlow => 'تىجارەت نەق پۇل ئېقىمى';
 
   @override
-  String get statementsUnavailable => 'بۇ پاي چېكىنىڭ ئېلان قىلىنغان مالىيە دوكلاتلىرى يوق.';
+  String get statementsUnavailable =>
+      'بۇ پاي چېكىنىڭ ئېلان قىلىنغان مالىيە دوكلاتلىرى يوق.';
 
   @override
   String get launchAtLogin => 'كىرگەندە ئاپتوماتىك قوزغىتىش';
@@ -557,7 +579,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get hotkeyLabel => 'ئومۇمىي تېزلەتمە كۇنۇپكا';
 
   @override
-  String get hotkeyRecordHint => 'بۇ يەرنى چېكىپ، ئاندىن يېڭى كۇنۇپكا بىرىكمىسىنى بېسىڭ';
+  String get hotkeyRecordHint =>
+      'بۇ يەرنى چېكىپ، ئاندىن يېڭى كۇنۇپكا بىرىكمىسىنى بېسىڭ';
 
   @override
   String get hotkeyReset => 'كۆڭۈلدىكىگە قايتۇرۇش';
@@ -578,7 +601,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get removeFromFavorites => 'يىغقۇچتىن چىقىرىۋېتىش';
 
   @override
-  String get noFavorites => 'يىغقۇچ تېخى قۇرۇق. قوشۇش ئۈچۈن پاي چېكىدىكى يۇلتۇزنى چېكىڭ.';
+  String get noFavorites =>
+      'يىغقۇچ تېخى قۇرۇق. قوشۇش ئۈچۈن پاي چېكىدىكى يۇلتۇزنى چېكىڭ.';
 
   @override
   String get displayCurrency => 'كۆرسىتىش پۇل بىرلىكى';
@@ -625,7 +649,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get updateDownloading => 'يېڭىلانما ئارقا سۇپىدا چۈشۈرۈلۈۋاتىدۇ…';
 
   @override
-  String get updateDownloaded => 'يېڭىلانما تەييار. ئورنىتىش ئۈچۈن قايتا قوزغىتىڭ.';
+  String get updateDownloaded =>
+      'يېڭىلانما تەييار. ئورنىتىش ئۈچۈن قايتا قوزغىتىڭ.';
 
   @override
   String get updateNow => 'يېڭىلاش';
@@ -634,7 +659,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get restartNow => 'قايتا قوزغىتىش';
 
   @override
-  String get updatesViaStore => 'يېڭىلانمىلار ئەپ دۇكىنى ئارقىلىق ئاپتوماتىك كېلىدۇ.';
+  String get updatesViaStore =>
+      'يېڭىلانمىلار ئەپ دۇكىنى ئارقىلىق ئاپتوماتىك كېلىدۇ.';
 
   @override
   String get updateCheckFailed => 'يېڭىلانمىنى تەكشۈرگىلى بولمىدى.';
@@ -682,7 +708,8 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'ھەقسىز سىناق مۇددىتىڭىز توشتى. تەھلىلنى داۋاملاشتۇرۇش ئۈچۈن پىلان تاللاڭ.';
+  String get trialExpired =>
+      'ھەقسىز سىناق مۇددىتىڭىز توشتى. تەھلىلنى داۋاملاشتۇرۇش ئۈچۈن پىلان تاللاڭ.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -744,10 +771,12 @@ class AppLocalizationsUg extends AppLocalizations {
       'بۇ سۇپىدا ھازىرچە سېتىۋالغىلى بولمايدۇ. تېلېفونىڭىز ياكى Mac ئارقىلىق مۇشتەرى بولۇڭ؛ پىلانىڭىز بارلىق ئۈسكۈنىلەردە ئىشلەيدۇ.';
 
   @override
-  String get errQuotaExceeded => 'بۇ مەزگىلدە تەھلىلىڭىز قالمىدى. پىلانىڭىزنى ئۆرلىتىڭ ياكى قوشۇمچە تەھلىل سېتىۋېلىڭ.';
+  String get errQuotaExceeded =>
+      'بۇ مەزگىلدە تەھلىلىڭىز قالمىدى. پىلانىڭىزنى ئۆرلىتىڭ ياكى قوشۇمچە تەھلىل سېتىۋېلىڭ.';
 
   @override
-  String get errTrialExpired => 'ھەقسىز سىناق مۇددىتىڭىز توشتى. داۋاملاشتۇرۇش ئۈچۈن پىلان تاللاڭ.';
+  String get errTrialExpired =>
+      'ھەقسىز سىناق مۇددىتىڭىز توشتى. داۋاملاشتۇرۇش ئۈچۈن پىلان تاللاڭ.';
 
   @override
   String get errNoPlan => 'AI تەھلىلى ئۈچۈن ئاكتىپ پىلان كېرەك.';
@@ -759,7 +788,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get usageTitle => 'ئىشلىتىش ئەھۋالى';
 
   @override
-  String get demoPurchaseNote => 'كۆرسەتمە ھەق تۆلەش: بۇ سۇپىدا سېتىۋېلىش تەقلىدىي ئېلىپ بېرىلىدۇ.';
+  String get demoPurchaseNote =>
+      'كۆرسەتمە ھەق تۆلەش: بۇ سۇپىدا سېتىۋېلىش تەقلىدىي ئېلىپ بېرىلىدۇ.';
 
   @override
   String get mostPopular => 'ئەڭ ئالقىشلىق';
@@ -799,7 +829,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get aiDepthStandardDesc => 'بارلىق بۆلەكلىرى بار تولۇق دوكلات.';
 
   @override
-  String get aiDepthDeepDesc => 'تېخىمۇ كۆپ تور ئىزدەش، رەقىبلەر بىلەن سېلىشتۇرۇش ۋە تېخىمۇ چوڭقۇر تەپسىلات.';
+  String get aiDepthDeepDesc =>
+      'تېخىمۇ كۆپ تور ئىزدەش، رەقىبلەر بىلەن سېلىشتۇرۇش ۋە تېخىمۇ چوڭقۇر تەپسىلات.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -827,23 +858,27 @@ class AppLocalizationsUg extends AppLocalizations {
   String get aiReaderExperienced => 'تەجرىبىلىك';
 
   @override
-  String get aiReaderBeginnerDesc => 'ئاددىي تىل؛ ھەر بىر كەسپىي ئاتالغۇ چۈشەندۈرۈلىدۇ.';
+  String get aiReaderBeginnerDesc =>
+      'ئاددىي تىل؛ ھەر بىر كەسپىي ئاتالغۇ چۈشەندۈرۈلىدۇ.';
 
   @override
-  String get aiReaderExperiencedDesc => 'ئۆلچەملىك مالىيە ئاتالغۇلىرى بىلەن تېخىمۇ ئىخچام تېكىست.';
+  String get aiReaderExperiencedDesc =>
+      'ئۆلچەملىك مالىيە ئاتالغۇلىرى بىلەن تېخىمۇ ئىخچام تېكىست.';
 
   @override
   String get aiCounterArgument => 'ئەڭ كۈچلۈك قارشى پىكىر';
 
   @override
-  String get aiCounterArgumentDesc => 'خۇلاسە ھەمىشە ئۆز يەكۈنىگە قارشى ئەڭ كۈچلۈك دەلىل بىلەن ئاخىرلىشىدۇ.';
+  String get aiCounterArgumentDesc =>
+      'خۇلاسە ھەمىشە ئۆز يەكۈنىگە قارشى ئەڭ كۈچلۈك دەلىل بىلەن ئاخىرلىشىدۇ.';
 
   @override
   String aiWebSearchesInfo(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'پىلانىڭىزدا ھەر بىر تەھلىلگە كۆپ بولغاندا $count قېتىم تور ئىزدەش',
+      other:
+          'پىلانىڭىزدا ھەر بىر تەھلىلگە كۆپ بولغاندا $count قېتىم تور ئىزدەش',
       one: 'پىلانىڭىزدا ھەر بىر تەھلىلگە كۆپ بولغاندا 1 قېتىم تور ئىزدەش',
     );
     return '$_temp0';
@@ -929,7 +964,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get upcomingEvents => 'ئالدىدىكى مۇھىم ئىشلار';
 
   @override
-  String get outlookChartNote => 'تەخمىنىي دائىرە؛ ئېھتىماللىقلار قوپال مۆلچەر، ئالدىن پەرەز ئەمەس.';
+  String get outlookChartNote =>
+      'تەخمىنىي دائىرە؛ ئېھتىماللىقلار قوپال مۆلچەر، ئالدىن پەرەز ئەمەس.';
 
   @override
   String get accountTitle => 'ھېسابات';
@@ -944,10 +980,12 @@ class AppLocalizationsUg extends AppLocalizations {
   String get notSignedIn => 'كىرمىگەن';
 
   @override
-  String get accountBenefit => 'مۇشتەرىلىكىڭىز بارلىق ئۈسكۈنىلىرىڭىزدە ئىشلىشى ئۈچۈن كىرىڭ.';
+  String get accountBenefit =>
+      'مۇشتەرىلىكىڭىز بارلىق ئۈسكۈنىلىرىڭىزدە ئىشلىشى ئۈچۈن كىرىڭ.';
 
   @override
-  String get accountSyncedNote => 'مۇشتەرىلىكىڭىز ۋە قالغان تەھلىللىرىڭىز بارلىق ئۈسكۈنىلەردە ئوخشاش.';
+  String get accountSyncedNote =>
+      'مۇشتەرىلىكىڭىز ۋە قالغان تەھلىللىرىڭىز بارلىق ئۈسكۈنىلەردە ئوخشاش.';
 
   @override
   String get signInTitle => 'WhatStock غا كىرىش';
@@ -979,13 +1017,16 @@ class AppLocalizationsUg extends AppLocalizations {
   String get errInvalidEmail => 'ئىناۋەتلىك ئېلخەت ئادرېسى كىرگۈزۈڭ.';
 
   @override
-  String get errSignInFailed => 'كىرىش مەغلۇپ بولدى. ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.';
+  String get errSignInFailed =>
+      'كىرىش مەغلۇپ بولدى. ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.';
 
   @override
-  String get checkoutWaiting => 'ھەق تۆلەشنى توركۆرگۈڭىزدە تاماملاڭ. تاماملانغاندا ئەپ ئاپتوماتىك يېڭىلىنىدۇ.';
+  String get checkoutWaiting =>
+      'ھەق تۆلەشنى توركۆرگۈڭىزدە تاماملاڭ. تاماملانغاندا ئەپ ئاپتوماتىك يېڭىلىنىدۇ.';
 
   @override
-  String get paymentViaStripe => 'Stripe ئارقىلىق توركۆرگۈدە بىخەتەر ھەق تۆلەش. خالىغان ۋاقىتتا بىكار قىلالايسىز.';
+  String get paymentViaStripe =>
+      'Stripe ئارقىلىق توركۆرگۈدە بىخەتەر ھەق تۆلەش. خالىغان ۋاقىتتا بىكار قىلالايسىز.';
 
   @override
   String get paymentViaStore =>
@@ -998,7 +1039,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get doubleOptionTitle => 'Option نى قوش بېسىش';
 
   @override
-  String get doubleOptionSubtitle => 'Option كۇنۇپكىسىنى تېز ئىككى قېتىم باسسىڭىزمۇ WhatStock چاقىرىلىدۇ.';
+  String get doubleOptionSubtitle =>
+      'Option كۇنۇپكىسىنى تېز ئىككى قېتىم باسسىڭىزمۇ WhatStock چاقىرىلىدۇ.';
 
   @override
   String get doubleOptionPermission =>
@@ -1020,7 +1062,12 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years يىل', one: '1 يىل');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years يىل',
+      one: '1 يىل',
+    );
     return '$_temp0';
   }
 
@@ -1121,7 +1168,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioRemove => 'چىقىرىۋېتىش';
 
   @override
-  String get portfolioExcluded => 'باھاسى ياكى ئالماشتۇرۇش نىسبىتى يوق پايلار جەمئىيگە كىرگۈزۈلمىدى.';
+  String get portfolioExcluded =>
+      'باھاسى ياكى ئالماشتۇرۇش نىسبىتى يوق پايلار جەمئىيگە كىرگۈزۈلمىدى.';
 
   @override
   String get priceAlerts => 'باھا ئاگاھلاندۇرۇشلىرى';
@@ -1163,7 +1211,8 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'تېخى باھا ئاگاھلاندۇرۇشى يوق. بەلگىلەش ئۈچۈن بىر پاي چېكىنى ئېچىپ قوڭغۇراقنى چېكىڭ.';
+  String get alertsEmpty =>
+      'تېخى باھا ئاگاھلاندۇرۇشى يوق. بەلگىلەش ئۈچۈن بىر پاي چېكىنى ئېچىپ قوڭغۇراقنى چېكىڭ.';
 
   @override
   String get alertsNote =>
@@ -1256,7 +1305,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get accountDeleted => 'ھېساباتىڭىز ئۆچۈرۈلدى.';
 
   @override
-  String get errDeleteAccount => 'ھېساباتنى ئۆچۈرگىلى بولمىدى. ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.';
+  String get errDeleteAccount =>
+      'ھېساباتنى ئۆچۈرگىلى بولمىدى. ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1282,4 +1332,10 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'يىللىق مۇشتەرىلىك سىز بىكار قىلمىغۇچە ھەر يىلى ئاپتوماتىك ئۇزارتىلىدۇ. مۇشتەرى بولۇش ئارقىلىق ئىشلىتىش شەرتلىرى ۋە شەخسىيەت سىياسىتىنى قوبۇل قىلغان بولىسىز.';
+
+  @override
+  String get myAnalyses => 'تەھلىللىرىم';
+
+  @override
+  String get navAlerts => 'ئاگاھلاندۇرۇش';
 }

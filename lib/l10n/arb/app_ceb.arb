@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 ka bulan libre",
   "perYear": "/ tuig",
   "pricePerMonthApprox": "≈ {price} matag bulan",
-  "subscriptionLegalYearly": "Awtomatikong ma-renew ang tinuig nga subscription matag tuig hangtod nimo kini kanselahon. Pinaagi sa pag-subscribe, gidawat nimo ang Mga Termino sa Paggamit ug ang Palisiya sa Privacy."
+  "subscriptionLegalYearly": "Awtomatikong ma-renew ang tinuig nga subscription matag tuig hangtod nimo kini kanselahon. Pinaagi sa pag-subscribe, gidawat nimo ang Mga Termino sa Paggamit ug ang Palisiya sa Privacy.",
+  "myAnalyses": "Akong mga pagtuki",
+  "navAlerts": "Mga alerto"
 }

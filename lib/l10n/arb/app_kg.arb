@@ -369,5 +369,7 @@
   "yearlyDiscount": "Ngonda 2 ya mpamba",
   "perYear": "/ mvu",
   "pricePerMonthApprox": "≈ {price} mu ngonda",
-  "subscriptionLegalYearly": "Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku."
+  "subscriptionLegalYearly": "Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku.",
+  "myAnalyses": "Ba analyse na mono",
+  "navAlerts": "Nkebisu"
 }

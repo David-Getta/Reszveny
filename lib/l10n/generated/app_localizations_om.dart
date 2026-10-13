@@ -13,7 +13,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Suuraa aksiyoonaa kaasi, waa\'ee isaa waan hunda baradhu.';
+  String get homeTagline =>
+      'Suuraa aksiyoonaa kaasi, waa\'ee isaa waan hunda baradhu.';
 
   @override
   String get homeHint =>
@@ -213,7 +214,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get labelWeek52Low => 'Gadi aanaa torban 52';
 
   @override
-  String get labelAverageVolume10d => 'Baay\'ina daldalaa giddugaleessaa (guyyaa 10)';
+  String get labelAverageVolume10d =>
+      'Baay\'ina daldalaa giddugaleessaa (guyyaa 10)';
 
   @override
   String updatedAt(String time) {
@@ -306,7 +308,12 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Xiinxaltoota $count', one: 'Xiinxalaa 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Xiinxaltoota $count',
+      one: 'Xiinxalaa 1',
+    );
     return '$_temp0';
   }
 
@@ -347,19 +354,24 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Tajaajilli adda baasuu suuraa kana hojjechuu hin dandeenye.';
+  String get errRecognitionRefused =>
+      'Tajaajilli adda baasuu suuraa kana hojjechuu hin dandeenye.';
 
   @override
-  String get errRecognitionTruncated => 'Deebiin adda baasuu addaan citeera. Maaloo irra deebi\'ii yaali.';
+  String get errRecognitionTruncated =>
+      'Deebiin adda baasuu addaan citeera. Maaloo irra deebi\'ii yaali.';
 
   @override
-  String get errRecognitionBadResponse => 'Tajaajila adda baasuu irraa deebii hin eegamne.';
+  String get errRecognitionBadResponse =>
+      'Tajaajila adda baasuu irraa deebii hin eegamne.';
 
   @override
-  String get errRecognitionEmpty => 'Tajaajilli adda baasuu deebii duwwaa deebiseera.';
+  String get errRecognitionEmpty =>
+      'Tajaajilli adda baasuu deebii duwwaa deebiseera.';
 
   @override
-  String get errMissingFinnhubKey => 'Odeeffannoon gabaa hin qindoofne (FINNHUB_API_KEY hin jiru).';
+  String get errMissingFinnhubKey =>
+      'Odeeffannoon gabaa hin qindoofne (FINNHUB_API_KEY hin jiru).';
 
   @override
   String get errMarketUnreachable =>
@@ -375,7 +387,8 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Tajaajila odeeffannoo gabaa irraa deebii hin eegamne.';
+  String get errMarketBadResponse =>
+      'Tajaajila odeeffannoo gabaa irraa deebii hin eegamne.';
 
   @override
   String errNoQuote(String symbol) {
@@ -475,7 +488,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get aiRegenerate => 'Irra deebi\'ii uumi';
 
   @override
-  String get aiGenerating => 'Xiinxalli qophaa\'aa jira… kun daqiiqaa tokko ykn lama fudhachuu danda\'a.';
+  String get aiGenerating =>
+      'Xiinxalli qophaa\'aa jira… kun daqiiqaa tokko ykn lama fudhachuu danda\'a.';
 
   @override
   String get aiSources => 'Maddoota';
@@ -490,10 +504,12 @@ class AppLocalizationsOm extends AppLocalizations {
       'Xiinxala AI\'n uumame, odeeffannoo ummataa fi oduu dhiyoo irratti hundaa\'e. Dogoggora qabaachuu ykn yeroon isaa darbuu danda\'a, akkasumas gorsa invastimantii miti.';
 
   @override
-  String get errAiNotConfigured => 'Xiinxalli AI hin qindoofne (ANTHROPIC_API_KEY hin jiru).';
+  String get errAiNotConfigured =>
+      'Xiinxalli AI hin qindoofne (ANTHROPIC_API_KEY hin jiru).';
 
   @override
-  String get errAiUnreachable => 'Tajaajila AI qunnamuun hin danda\'amne. Walqunnamtii interneetii kee mirkaneeffadhu.';
+  String get errAiUnreachable =>
+      'Tajaajila AI qunnamuun hin danda\'amne. Walqunnamtii interneetii kee mirkaneeffadhu.';
 
   @override
   String errAiHttp(String status) {
@@ -525,7 +541,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get rangeFiveYears => 'Waggaa 5';
 
   @override
-  String get chartUnavailable => 'Seenaan gatii madda odeeffannoo ammaa irraa hin argamu.';
+  String get chartUnavailable =>
+      'Seenaan gatii madda odeeffannoo ammaa irraa hin argamu.';
 
   @override
   String get sectionStatements => 'Gabaasa maallaqaa (waggaa)';
@@ -552,7 +569,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get labelOperatingCashFlow => 'Yaa\'a maallaqaa hojii';
 
   @override
-  String get statementsUnavailable => 'Aksiyoona kanaaf gabaasni maallaqaa gabaafame hin argamu.';
+  String get statementsUnavailable =>
+      'Aksiyoona kanaaf gabaasni maallaqaa gabaafame hin argamu.';
 
   @override
   String get launchAtLogin => 'Yeroo seentu jalqabi';
@@ -561,7 +579,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get hotkeyLabel => 'Furtuu gabaabaa waliigalaa';
 
   @override
-  String get hotkeyRecordHint => 'Asitti cuqaasi, sana booda walitti qabama furtuu haaraa dhiibi';
+  String get hotkeyRecordHint =>
+      'Asitti cuqaasi, sana booda walitti qabama furtuu haaraa dhiibi';
 
   @override
   String get hotkeyReset => 'Gara durtiitti deebisi';
@@ -582,7 +601,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get removeFromFavorites => 'Filatamoo irraa haqi';
 
   @override
-  String get noFavorites => 'Hanga ammaatti filatamoon hin jiran. Dabaluuf urjii aksiyoonaa irra jiru tuqi.';
+  String get noFavorites =>
+      'Hanga ammaatti filatamoon hin jiran. Dabaluuf urjii aksiyoonaa irra jiru tuqi.';
 
   @override
   String get displayCurrency => 'Maallaqa agarsiisaa';
@@ -629,7 +649,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get updateDownloading => 'Haaromsi duubaan buufamaa jira…';
 
   @override
-  String get updateDownloaded => 'Haaromsi qophaa\'eera. Fe\'uuf irra deebi\'ii jalqabsiisi.';
+  String get updateDownloaded =>
+      'Haaromsi qophaa\'eera. Fe\'uuf irra deebi\'ii jalqabsiisi.';
 
   @override
   String get updateNow => 'Haaromsi';
@@ -686,7 +707,8 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Yaaliin bilisaa kee xumurameera. Xiinxaluu itti fufuuf karoora filadhu.';
+  String get trialExpired =>
+      'Yaaliin bilisaa kee xumurameera. Xiinxaluu itti fufuuf karoora filadhu.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +738,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get perMonth => '/ ji\'a';
 
   @override
-  String get extraPacksTitle => 'Dabalata barbaaddaa? Xiinxala dabalataa bitadhu';
+  String get extraPacksTitle =>
+      'Dabalata barbaaddaa? Xiinxala dabalataa bitadhu';
 
   @override
   String get extraPacksHint =>
@@ -752,10 +775,12 @@ class AppLocalizationsOm extends AppLocalizations {
       'Yeroo kanaaf xiinxalli siif hafe hin jiru. Karoora kee ol guddisi ykn xiinxala dabalataa bitadhu.';
 
   @override
-  String get errTrialExpired => 'Yaaliin bilisaa kee xumurameera. Itti fufuuf karoora filadhu.';
+  String get errTrialExpired =>
+      'Yaaliin bilisaa kee xumurameera. Itti fufuuf karoora filadhu.';
 
   @override
-  String get errNoPlan => 'Xiinxala AI\'f karoorri hojii irra jiru barbaachisa.';
+  String get errNoPlan =>
+      'Xiinxala AI\'f karoorri hojii irra jiru barbaachisa.';
 
   @override
   String get viewPlans => 'Karoorota ilaali';
@@ -764,7 +789,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get usageTitle => 'Itti fayyadama';
 
   @override
-  String get demoPurchaseNote => 'Kaffaltii agarsiisaa: waltajjii kana irratti bittaan fakkeessaa qofa.';
+  String get demoPurchaseNote =>
+      'Kaffaltii agarsiisaa: waltajjii kana irratti bittaan fakkeessaa qofa.';
 
   @override
   String get mostPopular => 'Baay\'ee jaallatamaa';
@@ -804,7 +830,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get aiDepthStandardDesc => 'Gabaasa guutuu kutaa hunda qabu.';
 
   @override
-  String get aiDepthDeepDesc => 'Barbaacha weebii dabalataa, walbira qabiinsa dorgomtootaa fi bal\'ina gadi fagoo.';
+  String get aiDepthDeepDesc =>
+      'Barbaacha weebii dabalataa, walbira qabiinsa dorgomtootaa fi bal\'ina gadi fagoo.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -832,16 +859,19 @@ class AppLocalizationsOm extends AppLocalizations {
   String get aiReaderExperienced => 'Muuxannoo qabu';
 
   @override
-  String get aiReaderBeginnerDesc => 'Afaan salphaa; jechi teeknikaa hundi ni ibsama.';
+  String get aiReaderBeginnerDesc =>
+      'Afaan salphaa; jechi teeknikaa hundi ni ibsama.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Barreeffama hiikaa cimaa, jechoota maallaqaa idilee fayyadamu.';
+  String get aiReaderExperiencedDesc =>
+      'Barreeffama hiikaa cimaa, jechoota maallaqaa idilee fayyadamu.';
 
   @override
   String get aiCounterArgument => 'Falmii faallaa isa cimaa';
 
   @override
-  String get aiCounterArgumentDesc => 'Cuunfaan yeroo hunda falmii murtoo isaa mormu isa cimaa ta\'een xumurama.';
+  String get aiCounterArgumentDesc =>
+      'Cuunfaan yeroo hunda falmii murtoo isaa mormu isa cimaa ta\'een xumurama.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -934,7 +964,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get upcomingEvents => 'Taateewwan dhufan';
 
   @override
-  String get outlookChartNote => 'Hangaawwan agarsiisaa; carraaleen murtii tilmaamaa malee raagii miti.';
+  String get outlookChartNote =>
+      'Hangaawwan agarsiisaa; carraaleen murtii tilmaamaa malee raagii miti.';
 
   @override
   String get accountTitle => 'Herrega';
@@ -949,10 +980,12 @@ class AppLocalizationsOm extends AppLocalizations {
   String get notSignedIn => 'Hin seenne';
 
   @override
-  String get accountBenefit => 'Miseensummaan kee meeshaalee kee hunda irratti akka hojjetuuf seeni.';
+  String get accountBenefit =>
+      'Miseensummaan kee meeshaalee kee hunda irratti akka hojjetuuf seeni.';
 
   @override
-  String get accountSyncedNote => 'Miseensummaan kee fi xiinxalli siif hafe meeshaa hunda irratti tokkuma.';
+  String get accountSyncedNote =>
+      'Miseensummaan kee fi xiinxalli siif hafe meeshaa hunda irratti tokkuma.';
 
   @override
   String get signInTitle => 'WhatStock seeni';
@@ -984,7 +1017,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get errInvalidEmail => 'Maaloo teessoo imeelii sirrii galchi.';
 
   @override
-  String get errSignInFailed => 'Seenuun hin milkoofne. Walqunnamtii kee mirkaneeffadhuu irra deebi\'ii yaali.';
+  String get errSignInFailed =>
+      'Seenuun hin milkoofne. Walqunnamtii kee mirkaneeffadhuu irra deebi\'ii yaali.';
 
   @override
   String get checkoutWaiting =>
@@ -1005,7 +1039,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get doubleOptionTitle => 'Option si\'a lama dhiibi';
 
   @override
-  String get doubleOptionSubtitle => 'Furtuu Option si\'a lama saffisaan dhiibuunis WhatStock ni waama.';
+  String get doubleOptionSubtitle =>
+      'Furtuu Option si\'a lama saffisaan dhiibuunis WhatStock ni waama.';
 
   @override
   String get doubleOptionPermission =>
@@ -1027,7 +1062,12 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'waggaa $years', one: 'waggaa 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'waggaa $years',
+      one: 'waggaa 1',
+    );
     return '$_temp0';
   }
 
@@ -1128,7 +1168,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioRemove => 'Haqi';
 
   @override
-  String get portfolioExcluded => 'Qabiyyeewwan gatii ykn sharafa hin qabne waliigala keessaa hafaniiru.';
+  String get portfolioExcluded =>
+      'Qabiyyeewwan gatii ykn sharafa hin qabne waliigala keessaa hafaniiru.';
 
   @override
   String get priceAlerts => 'Akeekkachiisa gatii';
@@ -1291,4 +1332,10 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Miseensummaan waggaa hanga ati haqxutti waggaa waggaan ofumaan haaromfama. Miseensa ta\'uudhaan Haalota Itti Fayyadamaa fi Imaammata Dhuunfaa fudhatta.';
+
+  @override
+  String get myAnalyses => 'Xiinxala koo';
+
+  @override
+  String get navAlerts => 'Akeekkachiisa';
 }

@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 meses de balde",
   "perYear": "/ ano",
   "pricePerMonthApprox": "≈ {price} ao mes",
-  "subscriptionLegalYearly": "A subscrición anual renóvase automaticamente cada ano ata que a canceles. Ao subscribirte aceptas as Condicións de uso e a Política de privacidade."
+  "subscriptionLegalYearly": "A subscrición anual renóvase automaticamente cada ano ata que a canceles. Ao subscribirte aceptas as Condicións de uso e a Política de privacidade.",
+  "myAnalyses": "As miñas análises",
+  "navAlerts": "Alertas"
 }

@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 maanden gratis",
   "perYear": "/ jaar",
   "pricePerMonthApprox": "≈ {price} per maand",
-  "subscriptionLegalYearly": "Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid."
+  "subscriptionLegalYearly": "Jaarabonnementen worden elk jaar automatisch verlengd tot je opzegt. Door je te abonneren ga je akkoord met de Gebruiksvoorwaarden en het Privacybeleid.",
+  "myAnalyses": "Mijn analyses",
+  "navAlerts": "Alerts"
 }

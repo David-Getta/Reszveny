@@ -369,5 +369,7 @@
   "yearlyDiscount": "Tin'hweti ta 2 mahala",
   "perYear": "/ lembe",
   "pricePerMonthApprox": "≈ {price} hi n'hweti",
-  "subscriptionLegalYearly": "Mintsariso ya lembe yi tipfuxeta hi ku tiendlekela lembe rin'wana na rin'wana ku kondza u yi khansela. Hi ku tsarisa u amukela Swipimelo swa Matirhiselo na Pholisi ya Xihundla."
+  "subscriptionLegalYearly": "Mintsariso ya lembe yi tipfuxeta hi ku tiendlekela lembe rin'wana na rin'wana ku kondza u yi khansela. Hi ku tsarisa u amukela Swipimelo swa Matirhiselo na Pholisi ya Xihundla.",
+  "myAnalyses": "Minxopaxopo ya mina",
+  "navAlerts": "Switiviso"
 }

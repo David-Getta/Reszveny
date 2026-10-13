@@ -369,5 +369,7 @@
   "yearlyDiscount": "Miyezi 2 yaulere",
   "perYear": "/ chaka",
   "pricePerMonthApprox": "≈ {price} pamwezi",
-  "subscriptionLegalYearly": "Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi."
+  "subscriptionLegalYearly": "Kulembetsa kwapachaka kumapitirizidwa kokha chaka chilichonse mpaka mutaletsa. Polembetsa mukuvomereza Malamulo Ogwiritsa Ntchito ndi Mfundo Zachinsinsi.",
+  "myAnalyses": "Zosanthula zanga",
+  "navAlerts": "Zidziwitso"
 }

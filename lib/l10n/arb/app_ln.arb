@@ -369,5 +369,7 @@
   "yearlyDiscount": "Sanza 2 ofele",
   "perYear": "/ mobu",
   "pricePerMonthApprox": "≈ {price} na sanza",
-  "subscriptionLegalYearly": "Abonnement ya mbula ezongisamaka yango moko mbula nyɔnsɔ tii okotika yango. Na komikomisa, ondimi Mibeko ya bosaleli mpe Mibeko ya kobatela ba-donnée."
+  "subscriptionLegalYearly": "Abonnement ya mbula ezongisamaka yango moko mbula nyɔnsɔ tii okotika yango. Na komikomisa, ondimi Mibeko ya bosaleli mpe Mibeko ya kobatela ba-donnée.",
+  "myAnalyses": "Ba analyse na ngai",
+  "navAlerts": "Makebisi"
 }

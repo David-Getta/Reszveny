@@ -369,5 +369,7 @@
   "yearlyDiscount": "Amezi 2 y'ubuntu",
   "perYear": "/ umwaka",
   "pricePerMonthApprox": "≈ {price} ku kwezi",
-  "subscriptionLegalYearly": "Ifatabuguzi ry'umwaka ryivugurura buri mwaka kugeza urihagaritse. Iyo wiyandikishije uba wemeye Amabwiriza yo gukoresha na Politiki y'ibanga."
+  "subscriptionLegalYearly": "Ifatabuguzi ry'umwaka ryivugurura buri mwaka kugeza urihagaritse. Iyo wiyandikishije uba wemeye Amabwiriza yo gukoresha na Politiki y'ibanga.",
+  "myAnalyses": "Amasesengura yanjye",
+  "navAlerts": "Imenyesha"
 }

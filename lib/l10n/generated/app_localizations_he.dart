@@ -16,7 +16,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get homeTagline => 'צלמו מניה וגלו עליה הכול.';
 
   @override
-  String get homeHint => 'תעודת מניה, מסך של אפליקציית מסחר, עיתון או לוגו של חברה – כל דבר שמזהה מניה.';
+  String get homeHint =>
+      'תעודת מניה, מסך של אפליקציית מסחר, עיתון או לוגו של חברה – כל דבר שמזהה מניה.';
 
   @override
   String get takePhoto => 'צילום תמונה';
@@ -54,7 +55,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noCandidatesTitle => 'לא זוהתה מניה';
 
   @override
-  String get noCandidatesBody => 'לא הצלחנו לזהות מניה בתמונה הזו. נסו תמונה חדה יותר, או הזינו את הסימול ידנית.';
+  String get noCandidatesBody =>
+      'לא הצלחנו לזהות מניה בתמונה הזו. נסו תמונה חדה יותר, או הזינו את הסימול ידנית.';
 
   @override
   String get whatWeSaw => 'מה ראינו';
@@ -338,10 +340,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get recognitionRawText => 'הטקסט שנקרא מהתמונה';
 
   @override
-  String get errMissingAnthropicKey => 'זיהוי התמונות לא הוגדר (אין ANTHROPIC_API_KEY). הזינו את הסימול ידנית.';
+  String get errMissingAnthropicKey =>
+      'זיהוי התמונות לא הוגדר (אין ANTHROPIC_API_KEY). הזינו את הסימול ידנית.';
 
   @override
-  String get errRecognitionUnreachable => 'אין גישה לשירות הזיהוי. בדקו את החיבור לאינטרנט.';
+  String get errRecognitionUnreachable =>
+      'אין גישה לשירות הזיהוי. בדקו את החיבור לאינטרנט.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -349,10 +353,12 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'שירות הזיהוי לא הצליח לעבד את התמונה הזו.';
+  String get errRecognitionRefused =>
+      'שירות הזיהוי לא הצליח לעבד את התמונה הזו.';
 
   @override
-  String get errRecognitionTruncated => 'התשובה של שירות הזיהוי נקטעה. נסו שוב.';
+  String get errRecognitionTruncated =>
+      'התשובה של שירות הזיהוי נקטעה. נסו שוב.';
 
   @override
   String get errRecognitionBadResponse => 'תשובה לא צפויה משירות הזיהוי.';
@@ -361,13 +367,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errRecognitionEmpty => 'שירות הזיהוי החזיר תשובה ריקה.';
 
   @override
-  String get errMissingFinnhubKey => 'נתוני השוק לא הוגדרו (אין FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'נתוני השוק לא הוגדרו (אין FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'אין גישה לשירות נתוני השוק. בדקו את החיבור לאינטרנט.';
+  String get errMarketUnreachable =>
+      'אין גישה לשירות נתוני השוק. בדקו את החיבור לאינטרנט.';
 
   @override
-  String get errMarketRateLimited => 'יותר מדי בקשות לשירות נתוני השוק. המתינו דקה.';
+  String get errMarketRateLimited =>
+      'יותר מדי בקשות לשירות נתוני השוק. המתינו דקה.';
 
   @override
   String errMarketHttp(String status) {
@@ -490,10 +499,12 @@ class AppLocalizationsHe extends AppLocalizations {
       'ניתוח שנוצר על ידי AI על סמך נתונים פומביים וחדשות אחרונות. הוא עשוי להכיל שגיאות או לא להיות עדכני, ואינו מהווה ייעוץ השקעות.';
 
   @override
-  String get errAiNotConfigured => 'ניתוח ה-AI לא הוגדר (אין ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'ניתוח ה-AI לא הוגדר (אין ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'אין גישה לשירות ה-AI. בדקו את החיבור לאינטרנט.';
+  String get errAiUnreachable =>
+      'אין גישה לשירות ה-AI. בדקו את החיבור לאינטרנט.';
 
   @override
   String errAiHttp(String status) {
@@ -525,7 +536,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get rangeFiveYears => '5 ש׳';
 
   @override
-  String get chartUnavailable => 'היסטוריית המחירים אינה זמינה ממקור הנתונים הנוכחי.';
+  String get chartUnavailable =>
+      'היסטוריית המחירים אינה זמינה ממקור הנתונים הנוכחי.';
 
   @override
   String get sectionStatements => 'דוחות כספיים (שנתיים)';
@@ -552,7 +564,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get labelOperatingCashFlow => 'תזרים מזומנים מפעילות שוטפת';
 
   @override
-  String get statementsUnavailable => 'אין דוחות כספיים מדווחים עבור המניה הזו.';
+  String get statementsUnavailable =>
+      'אין דוחות כספיים מדווחים עבור המניה הזו.';
 
   @override
   String get launchAtLogin => 'הפעלה בכניסה למערכת';
@@ -582,7 +595,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get removeFromFavorites => 'הסרה מהמועדפים';
 
   @override
-  String get noFavorites => 'אין עדיין מועדפים. הקישו על הכוכב של מניה כדי להוסיף אותה.';
+  String get noFavorites =>
+      'אין עדיין מועדפים. הקישו על הכוכב של מניה כדי להוסיף אותה.';
 
   @override
   String get displayCurrency => 'מטבע תצוגה';
@@ -629,7 +643,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get updateDownloading => 'העדכון יורד ברקע…';
 
   @override
-  String get updateDownloaded => 'העדכון מוכן. צריך להפעיל מחדש כדי להתקין אותו.';
+  String get updateDownloaded =>
+      'העדכון מוכן. צריך להפעיל מחדש כדי להתקין אותו.';
 
   @override
   String get updateNow => 'עדכון';
@@ -687,7 +702,8 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך לנתח.';
+  String get trialExpired =>
+      'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך לנתח.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -720,7 +736,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get extraPacksTitle => 'צריכים עוד? קנו ניתוחים נוספים';
 
   @override
-  String get extraPacksHint => 'תוקפם של ניתוחים נוספים לא פג לעולם, והם מנוצלים אחרי המכסה החודשית שלך.';
+  String get extraPacksHint =>
+      'תוקפם של ניתוחים נוספים לא פג לעולם, והם מנוצלים אחרי המכסה החודשית שלך.';
 
   @override
   String get buy => 'קנייה';
@@ -748,10 +765,12 @@ class AppLocalizationsHe extends AppLocalizations {
       'עדיין אי אפשר לבצע רכישות בפלטפורמה הזו. אפשר להצטרף למינוי בטלפון או ב-Mac – המסלול שלך יעבוד בכל המכשירים.';
 
   @override
-  String get errQuotaExceeded => 'לא נשארו לך ניתוחים לתקופה הזו. שדרגו את המסלול או קנו ניתוחים נוספים.';
+  String get errQuotaExceeded =>
+      'לא נשארו לך ניתוחים לתקופה הזו. שדרגו את המסלול או קנו ניתוחים נוספים.';
 
   @override
-  String get errTrialExpired => 'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך.';
+  String get errTrialExpired =>
+      'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך.';
 
   @override
   String get errNoPlan => 'לניתוח AI נדרש מסלול פעיל.';
@@ -763,7 +782,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get usageTitle => 'שימוש';
 
   @override
-  String get demoPurchaseNote => 'חיוב לדוגמה: הרכישות בפלטפורמה הזו הן הדמיה בלבד.';
+  String get demoPurchaseNote =>
+      'חיוב לדוגמה: הרכישות בפלטפורמה הזו הן הדמיה בלבד.';
 
   @override
   String get mostPopular => 'הכי פופולרי';
@@ -803,7 +823,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get aiDepthStandardDesc => 'דוח מלא עם כל החלקים.';
 
   @override
-  String get aiDepthDeepDesc => 'יותר חיפושים ברשת, השוואה למתחרים ופירוט מעמיק יותר.';
+  String get aiDepthDeepDesc =>
+      'יותר חיפושים ברשת, השוואה למתחרים ופירוט מעמיק יותר.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -841,7 +862,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get aiCounterArgument => 'הטיעון הנגדי החזק ביותר';
 
   @override
-  String get aiCounterArgumentDesc => 'הסיכום תמיד מסתיים בטיעון החזק ביותר נגד המסקנה שלו עצמו.';
+  String get aiCounterArgumentDesc =>
+      'הסיכום תמיד מסתיים בטיעון החזק ביותר נגד המסקנה שלו עצמו.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -937,7 +959,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get upcomingEvents => 'אירועים קרובים';
 
   @override
-  String get outlookChartNote => 'טווחים אינדיקטיביים; ההסתברויות הן הערכות גסות, לא תחזיות.';
+  String get outlookChartNote =>
+      'טווחים אינדיקטיביים; ההסתברויות הן הערכות גסות, לא תחזיות.';
 
   @override
   String get accountTitle => 'חשבון';
@@ -952,7 +975,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notSignedIn => 'לא בוצעה כניסה';
 
   @override
-  String get accountBenefit => 'היכנסו לחשבון כדי שהמינוי שלך יעבוד בכל המכשירים שלך.';
+  String get accountBenefit =>
+      'היכנסו לחשבון כדי שהמינוי שלך יעבוד בכל המכשירים שלך.';
 
   @override
   String get accountSyncedNote => 'המינוי שלך והניתוחים שנשארו זהים בכל מכשיר.';
@@ -990,13 +1014,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errSignInFailed => 'הכניסה נכשלה. בדקו את החיבור ונסו שוב.';
 
   @override
-  String get checkoutWaiting => 'השלימו את התשלום בדפדפן. האפליקציה תתעדכן אוטומטית בסיום.';
+  String get checkoutWaiting =>
+      'השלימו את התשלום בדפדפן. האפליקציה תתעדכן אוטומטית בסיום.';
 
   @override
-  String get paymentViaStripe => 'תשלום מאובטח בדפדפן דרך Stripe. אפשר לבטל בכל עת.';
+  String get paymentViaStripe =>
+      'תשלום מאובטח בדפדפן דרך Stripe. אפשר לבטל בכל עת.';
 
   @override
-  String get paymentViaStore => 'החיוב מתבצע דרך חשבון ה-App Store או Google Play שלך. אפשר לבטל בכל עת בהגדרות החנות.';
+  String get paymentViaStore =>
+      'החיוב מתבצע דרך חשבון ה-App Store או Google Play שלך. אפשר לבטל בכל עת בהגדרות החנות.';
 
   @override
   String get keySpace => 'רווח';
@@ -1005,7 +1032,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get doubleOptionTitle => 'הקשה כפולה על Option';
 
   @override
-  String get doubleOptionSubtitle => 'גם הקשה מהירה פעמיים על מקש Option פותחת את WhatStock.';
+  String get doubleOptionSubtitle =>
+      'גם הקשה מהירה פעמיים על מקש Option פותחת את WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1064,7 +1092,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolio => 'תיק השקעות';
 
   @override
-  String get portfolioEmpty => 'אין כאן עדיין כלום. פתחו מניה והקישו על \"הוספה לתיק\" כדי לעקוב אחרי מה שבבעלותך.';
+  String get portfolioEmpty =>
+      'אין כאן עדיין כלום. פתחו מניה והקישו על \"הוספה לתיק\" כדי לעקוב אחרי מה שבבעלותך.';
 
   @override
   String get portfolioLocalNote =>
@@ -1133,7 +1162,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioRemove => 'הסרה';
 
   @override
-  String get portfolioExcluded => 'פוזיציות ללא מחיר או שער חליפין אינן נכללות בסכומים.';
+  String get portfolioExcluded =>
+      'פוזיציות ללא מחיר או שער חליפין אינן נכללות בסכומים.';
 
   @override
   String get priceAlerts => 'התראות מחיר';
@@ -1175,7 +1205,8 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'אין עדיין התראות מחיר. פתחו מניה והקישו על הפעמון כדי להגדיר התראה.';
+  String get alertsEmpty =>
+      'אין עדיין התראות מחיר. פתחו מניה והקישו על הפעמון כדי להגדיר התראה.';
 
   @override
   String get alertsNote =>
@@ -1258,7 +1289,8 @@ class AppLocalizationsHe extends AppLocalizations {
       'החשבון שלך וכל מה שנשמר בשרת שלנו (אימייל, מכסה, שימוש) יימחקו לצמיתות, וניתוחים שלא נוצלו יאבדו. מינוי ששולם בדפדפן מבוטל מיד; מינוי דרך App Store או Google Play צריך לבטל בהגדרות החנות.';
 
   @override
-  String get deleteLocalData => 'למחוק גם את הנתונים במכשיר הזה (תיק, התראות, מועדפים, היסטוריה, ניתוחים שמורים)';
+  String get deleteLocalData =>
+      'למחוק גם את הנתונים במכשיר הזה (תיק, התראות, מועדפים, היסטוריה, ניתוחים שמורים)';
 
   @override
   String get deleteAccountConfirm => 'מחיקה לצמיתות';
@@ -1267,7 +1299,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get accountDeleted => 'החשבון שלך נמחק.';
 
   @override
-  String get errDeleteAccount => 'לא ניתן היה למחוק את החשבון. בדקו את החיבור ונסו שוב.';
+  String get errDeleteAccount =>
+      'לא ניתן היה למחוק את החשבון. בדקו את החיבור ונסו שוב.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1293,4 +1326,10 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'המינוי השנתי מתחדש אוטומטית מדי שנה עד שמבטלים אותו. ההצטרפות למינוי מהווה הסכמה לתנאי השימוש ולמדיניות הפרטיות.';
+
+  @override
+  String get myAnalyses => 'הניתוחים שלי';
+
+  @override
+  String get navAlerts => 'התראות';
 }

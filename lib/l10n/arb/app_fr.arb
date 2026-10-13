@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 mois offerts",
   "perYear": "/ an",
   "pricePerMonthApprox": "≈ {price} par mois",
-  "subscriptionLegalYearly": "L’abonnement annuel se renouvelle automatiquement chaque année jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité."
+  "subscriptionLegalYearly": "L’abonnement annuel se renouvelle automatiquement chaque année jusqu’à résiliation. En vous abonnant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité.",
+  "myAnalyses": "Mes analyses",
+  "navAlerts": "Alertes"
 }

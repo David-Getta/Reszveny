@@ -16,7 +16,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get homeTagline => 'ถ่ายรูปหุ้น แล้วรู้ทุกเรื่องเกี่ยวกับหุ้นตัวนั้น';
 
   @override
-  String get homeHint => 'ใบหุ้น หน้าจอแอปโบรกเกอร์ หนังสือพิมพ์ หรือโลโก้บริษัท – อะไรก็ได้ที่บอกได้ว่าเป็นหุ้นตัวไหน';
+  String get homeHint =>
+      'ใบหุ้น หน้าจอแอปโบรกเกอร์ หนังสือพิมพ์ หรือโลโก้บริษัท – อะไรก็ได้ที่บอกได้ว่าเป็นหุ้นตัวไหน';
 
   @override
   String get takePhoto => 'ถ่ายรูป';
@@ -54,7 +55,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get noCandidatesTitle => 'ไม่พบหุ้นในรูปภาพ';
 
   @override
-  String get noCandidatesBody => 'เราระบุหุ้นจากรูปภาพนี้ไม่ได้ ลองถ่ายรูปให้คมชัดขึ้น หรือป้อนชื่อย่อหุ้นเอง';
+  String get noCandidatesBody =>
+      'เราระบุหุ้นจากรูปภาพนี้ไม่ได้ ลองถ่ายรูปให้คมชัดขึ้น หรือป้อนชื่อย่อหุ้นเอง';
 
   @override
   String get whatWeSaw => 'สิ่งที่เราเห็น';
@@ -80,7 +82,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get about => 'เกี่ยวกับ';
 
   @override
-  String get disclaimer => 'แอปนี้ให้ข้อมูลเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ข้อมูลอาจล่าช้าหรือไม่ถูกต้อง';
+  String get disclaimer =>
+      'แอปนี้ให้ข้อมูลเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ข้อมูลอาจล่าช้าหรือไม่ถูกต้อง';
 
   @override
   String dataSource(String source) {
@@ -303,7 +306,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'นักวิเคราะห์ $count คน');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'นักวิเคราะห์ $count คน',
+    );
     return '$_temp0';
   }
 
@@ -331,10 +338,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get recognitionRawText => 'ข้อความที่อ่านได้จากรูปภาพ';
 
   @override
-  String get errMissingAnthropicKey => 'ยังไม่ได้ตั้งค่าการจดจำรูปภาพ (ไม่มี ANTHROPIC_API_KEY) โปรดป้อนชื่อย่อหุ้นเอง';
+  String get errMissingAnthropicKey =>
+      'ยังไม่ได้ตั้งค่าการจดจำรูปภาพ (ไม่มี ANTHROPIC_API_KEY) โปรดป้อนชื่อย่อหุ้นเอง';
 
   @override
-  String get errRecognitionUnreachable => 'เชื่อมต่อบริการจดจำรูปภาพไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
+  String get errRecognitionUnreachable =>
+      'เชื่อมต่อบริการจดจำรูปภาพไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
 
   @override
   String errRecognitionHttp(String status) {
@@ -345,22 +354,27 @@ class AppLocalizationsTh extends AppLocalizations {
   String get errRecognitionRefused => 'บริการจดจำรูปภาพประมวลผลรูปนี้ไม่ได้';
 
   @override
-  String get errRecognitionTruncated => 'การตอบกลับจากบริการจดจำรูปภาพถูกตัดขาด โปรดลองอีกครั้ง';
+  String get errRecognitionTruncated =>
+      'การตอบกลับจากบริการจดจำรูปภาพถูกตัดขาด โปรดลองอีกครั้ง';
 
   @override
-  String get errRecognitionBadResponse => 'ได้รับการตอบกลับที่ไม่คาดคิดจากบริการจดจำรูปภาพ';
+  String get errRecognitionBadResponse =>
+      'ได้รับการตอบกลับที่ไม่คาดคิดจากบริการจดจำรูปภาพ';
 
   @override
   String get errRecognitionEmpty => 'บริการจดจำรูปภาพส่งการตอบกลับที่ว่างเปล่า';
 
   @override
-  String get errMissingFinnhubKey => 'ยังไม่ได้ตั้งค่าข้อมูลตลาด (ไม่มี FINNHUB_API_KEY)';
+  String get errMissingFinnhubKey =>
+      'ยังไม่ได้ตั้งค่าข้อมูลตลาด (ไม่มี FINNHUB_API_KEY)';
 
   @override
-  String get errMarketUnreachable => 'เชื่อมต่อบริการข้อมูลตลาดไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
+  String get errMarketUnreachable =>
+      'เชื่อมต่อบริการข้อมูลตลาดไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
 
   @override
-  String get errMarketRateLimited => 'ส่งคำขอไปยังบริการข้อมูลตลาดมากเกินไป โปรดรอสักหนึ่งนาที';
+  String get errMarketRateLimited =>
+      'ส่งคำขอไปยังบริการข้อมูลตลาดมากเกินไป โปรดรอสักหนึ่งนาที';
 
   @override
   String errMarketHttp(String status) {
@@ -368,7 +382,8 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ได้รับการตอบกลับที่ไม่คาดคิดจากบริการข้อมูลตลาด';
+  String get errMarketBadResponse =>
+      'ได้รับการตอบกลับที่ไม่คาดคิดจากบริการข้อมูลตลาด';
 
   @override
   String errNoQuote(String symbol) {
@@ -468,7 +483,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get aiRegenerate => 'สร้างใหม่';
 
   @override
-  String get aiGenerating => 'กำลังเตรียมบทวิเคราะห์… อาจใช้เวลาหนึ่งถึงสองนาที';
+  String get aiGenerating =>
+      'กำลังเตรียมบทวิเคราะห์… อาจใช้เวลาหนึ่งถึงสองนาที';
 
   @override
   String get aiSources => 'แหล่งที่มา';
@@ -483,10 +499,12 @@ class AppLocalizationsTh extends AppLocalizations {
       'บทวิเคราะห์ที่สร้างโดย AI จากข้อมูลสาธารณะและข่าวล่าสุด อาจมีข้อผิดพลาดหรือล้าสมัย และไม่ใช่คำแนะนำในการลงทุน';
 
   @override
-  String get errAiNotConfigured => 'ยังไม่ได้ตั้งค่าการวิเคราะห์ด้วย AI (ไม่มี ANTHROPIC_API_KEY)';
+  String get errAiNotConfigured =>
+      'ยังไม่ได้ตั้งค่าการวิเคราะห์ด้วย AI (ไม่มี ANTHROPIC_API_KEY)';
 
   @override
-  String get errAiUnreachable => 'เชื่อมต่อบริการ AI ไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
+  String get errAiUnreachable =>
+      'เชื่อมต่อบริการ AI ไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต';
 
   @override
   String errAiHttp(String status) {
@@ -545,7 +563,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get labelOperatingCashFlow => 'กระแสเงินสดจากการดำเนินงาน';
 
   @override
-  String get statementsUnavailable => 'ไม่มีงบการเงินที่เผยแพร่สำหรับหุ้นตัวนี้';
+  String get statementsUnavailable =>
+      'ไม่มีงบการเงินที่เผยแพร่สำหรับหุ้นตัวนี้';
 
   @override
   String get launchAtLogin => 'เปิดเมื่อเข้าสู่ระบบ';
@@ -669,12 +688,17 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'เหลือเวลาทดลองใช้ $days วัน');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'เหลือเวลาทดลองใช้ $days วัน',
+    );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'ช่วงทดลองใช้ฟรีของคุณสิ้นสุดแล้ว เลือกแพ็กเกจเพื่อวิเคราะห์ต่อ';
+  String get trialExpired =>
+      'ช่วงทดลองใช้ฟรีของคุณสิ้นสุดแล้ว เลือกแพ็กเกจเพื่อวิเคราะห์ต่อ';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -707,7 +731,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get extraPacksTitle => 'ต้องการเพิ่มอีกไหม ซื้อการวิเคราะห์เพิ่มเติม';
 
   @override
-  String get extraPacksHint => 'การวิเคราะห์เพิ่มเติมไม่มีวันหมดอายุ และจะถูกใช้หลังจากโควตารายเดือนของคุณหมดแล้ว';
+  String get extraPacksHint =>
+      'การวิเคราะห์เพิ่มเติมไม่มีวันหมดอายุ และจะถูกใช้หลังจากโควตารายเดือนของคุณหมดแล้ว';
 
   @override
   String get buy => 'ซื้อ';
@@ -735,13 +760,16 @@ class AppLocalizationsTh extends AppLocalizations {
       'ยังไม่สามารถซื้อบนแพลตฟอร์มนี้ได้ สมัครสมาชิกบนโทรศัพท์หรือ Mac ของคุณ แล้วแพ็กเกจจะใช้ได้กับทุกอุปกรณ์';
 
   @override
-  String get errQuotaExceeded => 'คุณใช้การวิเคราะห์ในรอบนี้หมดแล้ว อัปเกรดแพ็กเกจหรือซื้อการวิเคราะห์เพิ่มเติม';
+  String get errQuotaExceeded =>
+      'คุณใช้การวิเคราะห์ในรอบนี้หมดแล้ว อัปเกรดแพ็กเกจหรือซื้อการวิเคราะห์เพิ่มเติม';
 
   @override
-  String get errTrialExpired => 'ช่วงทดลองใช้ฟรีของคุณสิ้นสุดแล้ว เลือกแพ็กเกจเพื่อใช้งานต่อ';
+  String get errTrialExpired =>
+      'ช่วงทดลองใช้ฟรีของคุณสิ้นสุดแล้ว เลือกแพ็กเกจเพื่อใช้งานต่อ';
 
   @override
-  String get errNoPlan => 'ต้องมีแพ็กเกจที่ใช้งานอยู่จึงจะใช้การวิเคราะห์ด้วย AI ได้';
+  String get errNoPlan =>
+      'ต้องมีแพ็กเกจที่ใช้งานอยู่จึงจะใช้การวิเคราะห์ด้วย AI ได้';
 
   @override
   String get viewPlans => 'ดูแพ็กเกจ';
@@ -750,7 +778,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get usageTitle => 'การใช้งาน';
 
   @override
-  String get demoPurchaseNote => 'การชำระเงินสาธิต: การซื้อบนแพลตฟอร์มนี้เป็นเพียงการจำลอง';
+  String get demoPurchaseNote =>
+      'การชำระเงินสาธิต: การซื้อบนแพลตฟอร์มนี้เป็นเพียงการจำลอง';
 
   @override
   String get mostPopular => 'ยอดนิยม';
@@ -790,7 +819,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get aiDepthStandardDesc => 'รายงานฉบับเต็มครบทุกหัวข้อ';
 
   @override
-  String get aiDepthDeepDesc => 'ค้นหาเว็บมากขึ้น เปรียบเทียบกับบริษัทคู่แข่ง และลงรายละเอียดลึกกว่า';
+  String get aiDepthDeepDesc =>
+      'ค้นหาเว็บมากขึ้น เปรียบเทียบกับบริษัทคู่แข่ง และลงรายละเอียดลึกกว่า';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -799,7 +829,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ใช้การวิเคราะห์ $count ครั้ง');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ใช้การวิเคราะห์ $count ครั้ง',
+    );
     return '$_temp0';
   }
 
@@ -816,13 +850,15 @@ class AppLocalizationsTh extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'ภาษาเข้าใจง่าย อธิบายศัพท์เทคนิคทุกคำ';
 
   @override
-  String get aiReaderExperiencedDesc => 'เนื้อหาเข้มข้นขึ้น ใช้ศัพท์การเงินมาตรฐาน';
+  String get aiReaderExperiencedDesc =>
+      'เนื้อหาเข้มข้นขึ้น ใช้ศัพท์การเงินมาตรฐาน';
 
   @override
   String get aiCounterArgument => 'ข้อโต้แย้งที่หนักแน่นที่สุด';
 
   @override
-  String get aiCounterArgumentDesc => 'บทสรุปจะปิดท้ายด้วยข้อโต้แย้งที่ดีที่สุดต่อข้อสรุปของตัวเองเสมอ';
+  String get aiCounterArgumentDesc =>
+      'บทสรุปจะปิดท้ายด้วยข้อโต้แย้งที่ดีที่สุดต่อข้อสรุปของตัวเองเสมอ';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -841,13 +877,21 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ค้นหาเว็บสูงสุด $count ครั้ง');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ค้นหาเว็บสูงสุด $count ครั้ง',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ค้นหาเว็บ $count ครั้งต่อการวิเคราะห์');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ค้นหาเว็บ $count ครั้งต่อการวิเคราะห์',
+    );
     return '$_temp0';
   }
 
@@ -904,7 +948,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get upcomingEvents => 'เหตุการณ์ที่กำลังจะมาถึง';
 
   @override
-  String get outlookChartNote => 'เป็นช่วงราคาโดยประมาณ ความน่าจะเป็นเป็นเพียงการประเมินคร่าวๆ ไม่ใช่การพยากรณ์';
+  String get outlookChartNote =>
+      'เป็นช่วงราคาโดยประมาณ ความน่าจะเป็นเป็นเพียงการประเมินคร่าวๆ ไม่ใช่การพยากรณ์';
 
   @override
   String get accountTitle => 'บัญชี';
@@ -919,10 +964,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get notSignedIn => 'ยังไม่ได้ลงชื่อเข้าใช้';
 
   @override
-  String get accountBenefit => 'ลงชื่อเข้าใช้เพื่อให้การสมัครสมาชิกใช้ได้กับทุกอุปกรณ์ของคุณ';
+  String get accountBenefit =>
+      'ลงชื่อเข้าใช้เพื่อให้การสมัครสมาชิกใช้ได้กับทุกอุปกรณ์ของคุณ';
 
   @override
-  String get accountSyncedNote => 'การสมัครสมาชิกและจำนวนการวิเคราะห์ที่เหลือของคุณจะเหมือนกันในทุกอุปกรณ์';
+  String get accountSyncedNote =>
+      'การสมัครสมาชิกและจำนวนการวิเคราะห์ที่เหลือของคุณจะเหมือนกันในทุกอุปกรณ์';
 
   @override
   String get signInTitle => 'ลงชื่อเข้าใช้ WhatStock';
@@ -954,13 +1001,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String get errInvalidEmail => 'โปรดป้อนที่อยู่อีเมลที่ถูกต้อง';
 
   @override
-  String get errSignInFailed => 'ลงชื่อเข้าใช้ไม่สำเร็จ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+  String get errSignInFailed =>
+      'ลงชื่อเข้าใช้ไม่สำเร็จ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
 
   @override
-  String get checkoutWaiting => 'ชำระเงินให้เสร็จในเบราว์เซอร์ของคุณ แอปจะอัปเดตโดยอัตโนมัติเมื่อเสร็จสิ้น';
+  String get checkoutWaiting =>
+      'ชำระเงินให้เสร็จในเบราว์เซอร์ของคุณ แอปจะอัปเดตโดยอัตโนมัติเมื่อเสร็จสิ้น';
 
   @override
-  String get paymentViaStripe => 'ชำระเงินอย่างปลอดภัยในเบราว์เซอร์ผ่าน Stripe ยกเลิกได้ทุกเมื่อ';
+  String get paymentViaStripe =>
+      'ชำระเงินอย่างปลอดภัยในเบราว์เซอร์ผ่าน Stripe ยกเลิกได้ทุกเมื่อ';
 
   @override
   String get paymentViaStore =>
@@ -973,7 +1023,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get doubleOptionTitle => 'กด Option สองครั้ง';
 
   @override
-  String get doubleOptionSubtitle => 'การกดปุ่ม Option สองครั้งติดกันอย่างรวดเร็วจะเรียก WhatStock ได้เช่นกัน';
+  String get doubleOptionSubtitle =>
+      'การกดปุ่ม Option สองครั้งติดกันอย่างรวดเร็วจะเรียก WhatStock ได้เช่นกัน';
 
   @override
   String get doubleOptionPermission =>
@@ -995,7 +1046,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ปี');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ปี',
+    );
     return '$_temp0';
   }
 
@@ -1026,10 +1081,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolio => 'พอร์ตโฟลิโอ';
 
   @override
-  String get portfolioEmpty => 'ยังไม่มีรายการ เปิดหุ้นแล้วแตะ “เพิ่มในพอร์ตโฟลิโอ” เพื่อติดตามหุ้นที่คุณถือ';
+  String get portfolioEmpty =>
+      'ยังไม่มีรายการ เปิดหุ้นแล้วแตะ “เพิ่มในพอร์ตโฟลิโอ” เพื่อติดตามหุ้นที่คุณถือ';
 
   @override
-  String get portfolioLocalNote => 'จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น ยอดรวมแปลงค่าตามอัตราอ้างอิงของ ECB ราคาอาจล่าช้า';
+  String get portfolioLocalNote =>
+      'จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น ยอดรวมแปลงค่าตามอัตราอ้างอิงของ ECB ราคาอาจล่าช้า';
 
   @override
   String get addToPortfolio => 'เพิ่มในพอร์ตโฟลิโอ';
@@ -1094,7 +1151,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioRemove => 'ลบ';
 
   @override
-  String get portfolioExcluded => 'หุ้นที่ไม่มีราคาหรืออัตราแลกเปลี่ยนจะไม่ถูกนับรวมในยอดรวม';
+  String get portfolioExcluded =>
+      'หุ้นที่ไม่มีราคาหรืออัตราแลกเปลี่ยนจะไม่ถูกนับรวมในยอดรวม';
 
   @override
   String get priceAlerts => 'การแจ้งเตือนราคา';
@@ -1136,7 +1194,8 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'ยังไม่มีการแจ้งเตือนราคา เปิดหุ้นแล้วแตะรูปกระดิ่งเพื่อตั้งค่า';
+  String get alertsEmpty =>
+      'ยังไม่มีการแจ้งเตือนราคา เปิดหุ้นแล้วแตะรูปกระดิ่งเพื่อตั้งค่า';
 
   @override
   String get alertsNote =>
@@ -1195,7 +1254,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get keepInTrayTitle => 'ทำงานต่อเมื่อปิดหน้าต่าง';
 
   @override
-  String get keepInTraySubtitle => 'WhatStock จะอยู่ในแถบเมนูหรือถาดระบบ เพื่อให้คีย์ลัดและการแจ้งเตือนราคายังคงทำงาน';
+  String get keepInTraySubtitle =>
+      'WhatStock จะอยู่ในแถบเมนูหรือถาดระบบ เพื่อให้คีย์ลัดและการแจ้งเตือนราคายังคงทำงาน';
 
   @override
   String get termsOfUse => 'ข้อกำหนดการใช้งาน';
@@ -1228,7 +1288,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get accountDeleted => 'ลบบัญชีของคุณแล้ว';
 
   @override
-  String get errDeleteAccount => 'ลบบัญชีไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+  String get errDeleteAccount =>
+      'ลบบัญชีไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
 
   @override
   String get aiTrialBriefNote =>
@@ -1254,4 +1315,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'การสมัครสมาชิกรายปีจะต่ออายุโดยอัตโนมัติทุกปีจนกว่าคุณจะยกเลิก การสมัครสมาชิกถือว่าคุณยอมรับข้อกำหนดการใช้งานและนโยบายความเป็นส่วนตัว';
+
+  @override
+  String get myAnalyses => 'การวิเคราะห์ของฉัน';
+
+  @override
+  String get navAlerts => 'แจ้งเตือน';
 }

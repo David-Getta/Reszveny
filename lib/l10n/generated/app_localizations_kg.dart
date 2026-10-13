@@ -306,7 +306,12 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'analyste $count', one: 'analyste 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'analyste $count',
+      one: 'analyste 1',
+    );
     return '$_temp0';
   }
 
@@ -347,25 +352,32 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Service ya kuzaya bifwani ka ilendi sadila kifwani kiaki ko.';
+  String get errRecognitionRefused =>
+      'Service ya kuzaya bifwani ka ilendi sadila kifwani kiaki ko.';
 
   @override
-  String get errRecognitionTruncated => 'Mvutu ya service ya kuzaya bifwani izengwa. Meka diaka.';
+  String get errRecognitionTruncated =>
+      'Mvutu ya service ya kuzaya bifwani izengwa. Meka diaka.';
 
   @override
-  String get errRecognitionBadResponse => 'Service ya kuzaya bifwani ivutudi mvutu yina ka tuvingila ko.';
+  String get errRecognitionBadResponse =>
+      'Service ya kuzaya bifwani ivutudi mvutu yina ka tuvingila ko.';
 
   @override
-  String get errRecognitionEmpty => 'Service ya kuzaya bifwani ivutudi mvutu ya mpamba.';
+  String get errRecognitionEmpty =>
+      'Service ya kuzaya bifwani ivutudi mvutu ya mpamba.';
 
   @override
-  String get errMissingFinnhubKey => 'Ntalu za zandu ka ziyidikwa ko (ka kuena FINNHUB_API_KEY ko).';
+  String get errMissingFinnhubKey =>
+      'Ntalu za zandu ka ziyidikwa ko (ka kuena FINNHUB_API_KEY ko).';
 
   @override
-  String get errMarketUnreachable => 'Ka tulendi kuma ku service ya ntalu za zandu ko. Tala vo internet aku isalanga.';
+  String get errMarketUnreachable =>
+      'Ka tulendi kuma ku service ya ntalu za zandu ko. Tala vo internet aku isalanga.';
 
   @override
-  String get errMarketRateLimited => 'Tulombele mbala mingi beni ku service ya ntalu za zandu. Vingila minuti mosi.';
+  String get errMarketRateLimited =>
+      'Tulombele mbala mingi beni ku service ya ntalu za zandu. Vingila minuti mosi.';
 
   @override
   String errMarketHttp(String status) {
@@ -373,7 +385,8 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Service ya ntalu za zandu ivutudi mvutu yina ka tuvingila ko.';
+  String get errMarketBadResponse =>
+      'Service ya ntalu za zandu ivutudi mvutu yina ka tuvingila ko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +486,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get aiRegenerate => 'Vanga diaka';
 
   @override
-  String get aiGenerating => 'Tueti yidika analyse… ilenda baka minuti mosi yovo zole.';
+  String get aiGenerating =>
+      'Tueti yidika analyse… ilenda baka minuti mosi yovo zole.';
 
   @override
   String get aiSources => 'Ntuku';
@@ -488,10 +502,12 @@ class AppLocalizationsKg extends AppLocalizations {
       'Analyse yivangwa kwa AI mu ntalu za bantu bawonso ye nsangu za mpa. Ilenda kala ye mambu ka mena ma kieleka ko yovo kukala ya nkulu, ye ka ivananga malongi ma kutula mbongo ko.';
 
   @override
-  String get errAiNotConfigured => 'Analyse ya AI ka iyidikwa ko (ka kuena ANTHROPIC_API_KEY ko).';
+  String get errAiNotConfigured =>
+      'Analyse ya AI ka iyidikwa ko (ka kuena ANTHROPIC_API_KEY ko).';
 
   @override
-  String get errAiUnreachable => 'Ka tulendi kuma ku service ya AI ko. Tala vo internet aku isalanga.';
+  String get errAiUnreachable =>
+      'Ka tulendi kuma ku service ya AI ko. Tala vo internet aku isalanga.';
 
   @override
   String errAiHttp(String status) {
@@ -499,10 +515,12 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Service ya AI ka izolele vanga analyse ya action yayi ko.';
+  String get errAiRefused =>
+      'Service ya AI ka izolele vanga analyse ya action yayi ko.';
 
   @override
-  String get errAiBadResponse => 'Service ya AI ivutudi mvutu yina ka tuvingila ko.';
+  String get errAiBadResponse =>
+      'Service ya AI ivutudi mvutu yina ka tuvingila ko.';
 
   @override
   String get sectionChart => 'Graphique ya ntalu';
@@ -523,7 +541,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get rangeFiveYears => 'Mivu 5';
 
   @override
-  String get chartUnavailable => 'Ntalu za ntama ka zina mu ntuku ya ntalu yayi ko.';
+  String get chartUnavailable =>
+      'Ntalu za ntama ka zina mu ntuku ya ntalu yayi ko.';
 
   @override
   String get sectionStatements => 'Rapport za mbongo (mvu ye mvu)';
@@ -550,7 +569,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash flow ya kisalu';
 
   @override
-  String get statementsUnavailable => 'Rapport za mbongo ka zina mu action yayi ko.';
+  String get statementsUnavailable =>
+      'Rapport za mbongo ka zina mu action yayi ko.';
 
   @override
   String get launchAtLogin => 'Zibula ntangu ya kukota';
@@ -580,7 +600,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get removeFromFavorites => 'Katula mu bizolwa';
 
   @override
-  String get noFavorites => 'Nate wau ka kuena bizolwa ko. Fina mbwetete ya action mu kuyika yau.';
+  String get noFavorites =>
+      'Nate wau ka kuena bizolwa ko. Fina mbwetete ya action mu kuyika yau.';
 
   @override
   String get displayCurrency => 'Mbongo ya kumonisa';
@@ -627,7 +648,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get updateDownloading => 'Kukulumuna mise à jour na nima…';
 
   @override
-  String get updateDownloaded => 'Mise à jour ikubama. Banda diaka mu kuyitula.';
+  String get updateDownloaded =>
+      'Mise à jour ikubama. Banda diaka mu kuyitula.';
 
   @override
   String get updateNow => 'Mise à jour';
@@ -636,7 +658,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get restartNow => 'Banda diaka';
 
   @override
-  String get updatesViaStore => 'Mise à jour zikwizanga kaka mu nzila ya store ya application.';
+  String get updatesViaStore =>
+      'Mise à jour zikwizanga kaka mu nzila ya store ya application.';
 
   @override
   String get updateCheckFailed => 'Ka tulendi tomba mise à jour ko.';
@@ -684,7 +707,8 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Kumeka kwaku kwa mpamba kusukidi. Sola forfait mu kulanda vanga analyse.';
+  String get trialExpired =>
+      'Kumeka kwaku kwa mpamba kusukidi. Sola forfait mu kulanda vanga analyse.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -717,7 +741,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get extraPacksTitle => 'Uzolele mingi? Sumba analyse za kuyika';
 
   @override
-  String get extraPacksHint => 'Analyse za kuyika ka zisukanga ko; zisadilwanga bosi kitini kiaku kia ngonda kisukidi.';
+  String get extraPacksHint =>
+      'Analyse za kuyika ka zisukanga ko; zisadilwanga bosi kitini kiaku kia ngonda kisukidi.';
 
   @override
   String get buy => 'Sumba';
@@ -749,10 +774,12 @@ class AppLocalizationsKg extends AppLocalizations {
       'Ka kusidi analyse ko mu ntangu yayi. Tombula forfait aku yovo sumba analyse za kuyika.';
 
   @override
-  String get errTrialExpired => 'Kumeka kwaku kwa mpamba kusukidi. Sola forfait mu kulanda.';
+  String get errTrialExpired =>
+      'Kumeka kwaku kwa mpamba kusukidi. Sola forfait mu kulanda.';
 
   @override
-  String get errNoPlan => 'Forfait yina isalanga ifwete kala mu kuvanga analyse ya AI.';
+  String get errNoPlan =>
+      'Forfait yina isalanga ifwete kala mu kuvanga analyse ya AI.';
 
   @override
   String get viewPlans => 'Tala forfait';
@@ -761,7 +788,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get usageTitle => 'Kusadila';
 
   @override
-  String get demoPurchaseNote => 'Kufuta kwa démo: kusumba mu plateforme yayi i kwa kusakana kaka.';
+  String get demoPurchaseNote =>
+      'Kufuta kwa démo: kusumba mu plateforme yayi i kwa kusakana kaka.';
 
   @override
   String get mostPopular => 'Yina bantu bazolanga beni';
@@ -801,7 +829,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapport ya mvimba ye bitini biawonso.';
 
   @override
-  String get aiDepthDeepDesc => 'Kutomba mingi mu internet, kufwanikisa ye kompani zankaka ye mambu mingi.';
+  String get aiDepthDeepDesc =>
+      'Kutomba mingi mu internet, kufwanikisa ye kompani zankaka ye mambu mingi.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -829,10 +858,12 @@ class AppLocalizationsKg extends AppLocalizations {
   String get aiReaderExperienced => 'Nzayi';
 
   @override
-  String get aiReaderBeginnerDesc => 'Ndinga ya pwelele; konso mvovo wa technique utendulwanga.';
+  String get aiReaderBeginnerDesc =>
+      'Ndinga ya pwelele; konso mvovo wa technique utendulwanga.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Masono ma ngolo, ye mivovo mia finance mizayakana.';
+  String get aiReaderExperiencedDesc =>
+      'Masono ma ngolo, ye mivovo mia finance mizayakana.';
 
   @override
   String get aiCounterArgument => 'Diambu dia ngolo beni dia kukakidila';
@@ -846,7 +877,8 @@ class AppLocalizationsKg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Nate mbala $count ya kutomba mu internet mu analyse mosi ye forfait aku',
+      other:
+          'Nate mbala $count ya kutomba mu internet mu analyse mosi ye forfait aku',
       one: 'Nate mbala 1 ya kutomba mu internet mu analyse mosi ye forfait aku',
     );
     return '$_temp0';
@@ -932,7 +964,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get upcomingEvents => 'Mambu ma kwiza';
 
   @override
-  String get outlookChartNote => 'Ndilu za mbandu kaka. Mabanza ma mpila mambu malenda kala, ka mbikudulu ko.';
+  String get outlookChartNote =>
+      'Ndilu za mbandu kaka. Mabanza ma mpila mambu malenda kala, ka mbikudulu ko.';
 
   @override
   String get accountTitle => 'Compte';
@@ -947,10 +980,12 @@ class AppLocalizationsKg extends AppLocalizations {
   String get notSignedIn => 'Ka ukotele ko';
 
   @override
-  String get accountBenefit => 'Kota kimana abonnement aku isala mu bisadilu biaku biawonso.';
+  String get accountBenefit =>
+      'Kota kimana abonnement aku isala mu bisadilu biaku biawonso.';
 
   @override
-  String get accountSyncedNote => 'Abonnement aku ye analyse zisidi mpila mosi mu bisadilu biawonso.';
+  String get accountSyncedNote =>
+      'Abonnement aku ye analyse zisidi mpila mosi mu bisadilu biawonso.';
 
   @override
   String get signInTitle => 'Kota mu WhatStock';
@@ -976,19 +1011,23 @@ class AppLocalizationsKg extends AppLocalizations {
   String get useDifferentEmail => 'Sadila e-mail yankaka';
 
   @override
-  String get errInvalidCode => 'Code ka yena ya mbote ko yovo ntangu andi isukidi.';
+  String get errInvalidCode =>
+      'Code ka yena ya mbote ko yovo ntangu andi isukidi.';
 
   @override
   String get errInvalidEmail => 'Soneka adresse e-mail ya mbote.';
 
   @override
-  String get errSignInFailed => 'Kukota ka kulendi ko. Tala vo internet aku isalanga, bosi meka diaka.';
+  String get errSignInFailed =>
+      'Kukota ka kulendi ko. Tala vo internet aku isalanga, bosi meka diaka.';
 
   @override
-  String get checkoutWaiting => 'Sukisa kufuta mu navigateur aku. Application isobanga yau kibeni vo kufuta kusukidi.';
+  String get checkoutWaiting =>
+      'Sukisa kufuta mu navigateur aku. Application isobanga yau kibeni vo kufuta kusukidi.';
 
   @override
-  String get paymentViaStripe => 'Kufuta kukengelwa mu navigateur aku mu nzila ya Stripe. Ulenda bika ntangu yawonso.';
+  String get paymentViaStripe =>
+      'Kufuta kukengelwa mu navigateur aku mu nzila ya Stripe. Ulenda bika ntangu yawonso.';
 
   @override
   String get paymentViaStore =>
@@ -1001,7 +1040,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get doubleOptionTitle => 'Fina Option mbala zole';
 
   @override
-  String get doubleOptionSubtitle => 'Kufina touche Option mbala zole ye nswalu kubokilanga mpe WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Kufina touche Option mbala zole ye nswalu kubokilanga mpe WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1023,7 +1063,12 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'mivu $years', one: 'mvu 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'mivu $years',
+      one: 'mvu 1',
+    );
     return '$_temp0';
   }
 
@@ -1124,7 +1169,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get portfolioRemove => 'Katula';
 
   @override
-  String get portfolioExcluded => 'Position zikambwa ntalu yovo taux ya mbongo ka zitangwanga mu ntalu zawonso ko.';
+  String get portfolioExcluded =>
+      'Position zikambwa ntalu yovo taux ya mbongo ka zitangwanga mu ntalu zawonso ko.';
 
   @override
   String get priceAlerts => 'Nkebisu za ntalu';
@@ -1166,7 +1212,8 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Nate wau ka kuena lukebisu ko. Zibula action, fina ngunga mu kutula lumosi.';
+  String get alertsEmpty =>
+      'Nate wau ka kuena lukebisu ko. Zibula action, fina ngunga mu kutula lumosi.';
 
   @override
   String get alertsNote =>
@@ -1259,7 +1306,8 @@ class AppLocalizationsKg extends AppLocalizations {
   String get accountDeleted => 'Compte aku izimbiswa.';
 
   @override
-  String get errDeleteAccount => 'Ka tulendi zimbisa compte ko. Tala vo internet aku isalanga, bosi meka diaka.';
+  String get errDeleteAccount =>
+      'Ka tulendi zimbisa compte ko. Tala vo internet aku isalanga, bosi meka diaka.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1285,4 +1333,10 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Abonnement ya mvula ivutukanga yau kibeni konso mvula nate vo ubika yau. Mu kukota mu abonnement, utambudidi Nsiku za kusadila ye Nsiku za kukengela nsangu zaku.';
+
+  @override
+  String get myAnalyses => 'Ba analyse na mono';
+
+  @override
+  String get navAlerts => 'Nkebisu';
 }

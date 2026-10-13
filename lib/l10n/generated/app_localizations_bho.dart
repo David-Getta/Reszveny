@@ -13,7 +13,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'कवनो शेयर के फोटो खींचीं आ ओकरा बारे में सब कुछ जानीं।';
+  String get homeTagline =>
+      'कवनो शेयर के फोटो खींचीं आ ओकरा बारे में सब कुछ जानीं।';
 
   @override
   String get homeHint =>
@@ -55,7 +56,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get noCandidatesTitle => 'कवनो शेयर ना पहचानाइल';
 
   @override
-  String get noCandidatesBody => 'हमनी एह तस्वीर में कवनो शेयर ना पहचान पवनी। अउरी साफ फोटो खींचीं, भा टिकर खुद लिखीं।';
+  String get noCandidatesBody =>
+      'हमनी एह तस्वीर में कवनो शेयर ना पहचान पवनी। अउरी साफ फोटो खींचीं, भा टिकर खुद लिखीं।';
 
   @override
   String get whatWeSaw => 'हमनी का देखनी';
@@ -81,7 +83,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get about => 'ऐप के बारे में';
 
   @override
-  String get disclaimer => 'ई ऐप खाली जानकारी देला आ ई निवेश के सलाह ना ह। डेटा में देरी भा गलती हो सकेला।';
+  String get disclaimer =>
+      'ई ऐप खाली जानकारी देला आ ई निवेश के सलाह ना ह। डेटा में देरी भा गलती हो सकेला।';
 
   @override
   String dataSource(String source) {
@@ -304,7 +307,12 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count विश्लेषक', one: '1 विश्लेषक');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count विश्लेषक',
+      one: '1 विश्लेषक',
+    );
     return '$_temp0';
   }
 
@@ -332,10 +340,12 @@ class AppLocalizationsBho extends AppLocalizations {
   String get recognitionRawText => 'तस्वीर से पढ़ल गइल टेक्स्ट';
 
   @override
-  String get errMissingAnthropicKey => 'तस्वीर पहचान कॉन्फ़िगर नइखे (ANTHROPIC_API_KEY नइखे)। टिकर खुद लिखीं।';
+  String get errMissingAnthropicKey =>
+      'तस्वीर पहचान कॉन्फ़िगर नइखे (ANTHROPIC_API_KEY नइखे)। टिकर खुद लिखीं।';
 
   @override
-  String get errRecognitionUnreachable => 'पहचान सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
+  String get errRecognitionUnreachable =>
+      'पहचान सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
 
   @override
   String errRecognitionHttp(String status) {
@@ -343,10 +353,12 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'पहचान सेवा एह तस्वीर के प्रोसेस ना कर सकल।';
+  String get errRecognitionRefused =>
+      'पहचान सेवा एह तस्वीर के प्रोसेस ना कर सकल।';
 
   @override
-  String get errRecognitionTruncated => 'पहचान के जवाब अधूरा रह गइल। कृपया फेर से कोसिस करीं।';
+  String get errRecognitionTruncated =>
+      'पहचान के जवाब अधूरा रह गइल। कृपया फेर से कोसिस करीं।';
 
   @override
   String get errRecognitionBadResponse => 'पहचान सेवा से अप्रत्याशित जवाब।';
@@ -355,13 +367,16 @@ class AppLocalizationsBho extends AppLocalizations {
   String get errRecognitionEmpty => 'पहचान सेवा खाली जवाब लौटवलस।';
 
   @override
-  String get errMissingFinnhubKey => 'मार्केट डेटा कॉन्फ़िगर नइखे (FINNHUB_API_KEY नइखे)।';
+  String get errMissingFinnhubKey =>
+      'मार्केट डेटा कॉन्फ़िगर नइखे (FINNHUB_API_KEY नइखे)।';
 
   @override
-  String get errMarketUnreachable => 'मार्केट डेटा सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
+  String get errMarketUnreachable =>
+      'मार्केट डेटा सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
 
   @override
-  String get errMarketRateLimited => 'मार्केट डेटा सेवा के बहुत जादा अनुरोध भेजाइल बा। कृपया एक मिनट रुकीं।';
+  String get errMarketRateLimited =>
+      'मार्केट डेटा सेवा के बहुत जादा अनुरोध भेजाइल बा। कृपया एक मिनट रुकीं।';
 
   @override
   String errMarketHttp(String status) {
@@ -469,7 +484,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get aiRegenerate => 'फेर से बनाईं';
 
   @override
-  String get aiGenerating => 'विश्लेषण तइयार हो रहल बा… एह में एक-दू मिनट लाग सकेला।';
+  String get aiGenerating =>
+      'विश्लेषण तइयार हो रहल बा… एह में एक-दू मिनट लाग सकेला।';
 
   @override
   String get aiSources => 'स्रोत';
@@ -484,10 +500,12 @@ class AppLocalizationsBho extends AppLocalizations {
       'सार्वजनिक डेटा आ हाल के खबरन पर आधारित AI से बनल विश्लेषण। एह में गलती हो सकेला भा ई पुरान हो सकेला, आ ई निवेश के सलाह ना ह।';
 
   @override
-  String get errAiNotConfigured => 'AI विश्लेषण कॉन्फ़िगर नइखे (ANTHROPIC_API_KEY नइखे)।';
+  String get errAiNotConfigured =>
+      'AI विश्लेषण कॉन्फ़िगर नइखे (ANTHROPIC_API_KEY नइखे)।';
 
   @override
-  String get errAiUnreachable => 'AI सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
+  String get errAiUnreachable =>
+      'AI सेवा से संपर्क ना हो सकल। आपन इंटरनेट कनेक्शन जाँचीं।';
 
   @override
   String errAiHttp(String status) {
@@ -519,7 +537,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'मौजूदा डेटा स्रोत से दाम के इतिहास उपलब्ध नइखे।';
+  String get chartUnavailable =>
+      'मौजूदा डेटा स्रोत से दाम के इतिहास उपलब्ध नइखे।';
 
   @override
   String get sectionStatements => 'वित्तीय विवरण (सालाना)';
@@ -546,7 +565,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get labelOperatingCashFlow => 'परिचालन कैश फ्लो';
 
   @override
-  String get statementsUnavailable => 'एह शेयर खातिर प्रकाशित वित्तीय विवरण उपलब्ध नइखे।';
+  String get statementsUnavailable =>
+      'एह शेयर खातिर प्रकाशित वित्तीय विवरण उपलब्ध नइखे।';
 
   @override
   String get launchAtLogin => 'लॉगिन पर चालू करीं';
@@ -576,7 +596,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get removeFromFavorites => 'पसंदीदा से हटाईं';
 
   @override
-  String get noFavorites => 'अबहीं ले कवनो पसंदीदा नइखे। जोड़े खातिर कवनो शेयर पर तारा टैप करीं।';
+  String get noFavorites =>
+      'अबहीं ले कवनो पसंदीदा नइखे। जोड़े खातिर कवनो शेयर पर तारा टैप करीं।';
 
   @override
   String get displayCurrency => 'देखावे वाला मुद्रा';
@@ -623,7 +644,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get updateDownloading => 'अपडेट बैकग्राउंड में डाउनलोड हो रहल बा…';
 
   @override
-  String get updateDownloaded => 'अपडेट तइयार बा। इंस्टॉल करे खातिर रीस्टार्ट करीं।';
+  String get updateDownloaded =>
+      'अपडेट तइयार बा। इंस्टॉल करे खातिर रीस्टार्ट करीं।';
 
   @override
   String get updateNow => 'अपडेट करीं';
@@ -680,7 +702,8 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'राउर मुफ्त ट्रायल खतम हो गइल। विश्लेषण जारी राखे खातिर कवनो प्लान चुनीं।';
+  String get trialExpired =>
+      'राउर मुफ्त ट्रायल खतम हो गइल। विश्लेषण जारी राखे खातिर कवनो प्लान चुनीं।';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -713,7 +736,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get extraPacksTitle => 'अउरी चाहीं? अतिरिक्त विश्लेषण खरीदीं';
 
   @override
-  String get extraPacksHint => 'अतिरिक्त विश्लेषण कबो खतम ना होला आ राउर महीनवारी कोटा के बाद इस्तेमाल होला।';
+  String get extraPacksHint =>
+      'अतिरिक्त विश्लेषण कबो खतम ना होला आ राउर महीनवारी कोटा के बाद इस्तेमाल होला।';
 
   @override
   String get buy => 'खरीदीं';
@@ -745,7 +769,8 @@ class AppLocalizationsBho extends AppLocalizations {
       'एह अवधि खातिर रउआ लगे कवनो विश्लेषण बाकी नइखे। आपन प्लान अपग्रेड करीं भा अतिरिक्त विश्लेषण खरीदीं।';
 
   @override
-  String get errTrialExpired => 'राउर मुफ्त ट्रायल खतम हो गइल। जारी राखे खातिर कवनो प्लान चुनीं।';
+  String get errTrialExpired =>
+      'राउर मुफ्त ट्रायल खतम हो गइल। जारी राखे खातिर कवनो प्लान चुनीं।';
 
   @override
   String get errNoPlan => 'AI विश्लेषण खातिर एगो सक्रिय प्लान जरूरी बा।';
@@ -757,7 +782,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get usageTitle => 'इस्तेमाल';
 
   @override
-  String get demoPurchaseNote => 'डेमो बिलिंग: एह प्लेटफ़ॉर्म पर खरीदारी सिमुलेट कइल जाला।';
+  String get demoPurchaseNote =>
+      'डेमो बिलिंग: एह प्लेटफ़ॉर्म पर खरीदारी सिमुलेट कइल जाला।';
 
   @override
   String get mostPopular => 'सबसे लोकप्रिय';
@@ -797,7 +823,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get aiDepthStandardDesc => 'हर हिस्सा के संगे पूरा रिपोर्ट।';
 
   @override
-  String get aiDepthDeepDesc => 'अउरी वेब खोज, बराबरी के कंपनियन से तुलना आ गहिर विवरण।';
+  String get aiDepthDeepDesc =>
+      'अउरी वेब खोज, बराबरी के कंपनियन से तुलना आ गहिर विवरण।';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,13 +855,15 @@ class AppLocalizationsBho extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'सरल भाषा; हर तकनीकी शब्द समझावल जाला।';
 
   @override
-  String get aiReaderExperiencedDesc => 'मानक वित्तीय शब्दावली के संगे गझिन पाठ।';
+  String get aiReaderExperiencedDesc =>
+      'मानक वित्तीय शब्दावली के संगे गझिन पाठ।';
 
   @override
   String get aiCounterArgument => 'सबसे मजबूत उल्टा तर्क';
 
   @override
-  String get aiCounterArgumentDesc => 'सारांश हमेशा अपने निष्कर्ष के खिलाफ सबसे मजबूत तर्क से खतम होला।';
+  String get aiCounterArgumentDesc =>
+      'सारांश हमेशा अपने निष्कर्ष के खिलाफ सबसे मजबूत तर्क से खतम होला।';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -927,7 +956,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get upcomingEvents => 'आवे वाला घटना';
 
   @override
-  String get outlookChartNote => 'अंदाजी दायरा; संभावना मोटा-मोटी अनुमान बा, भविष्यवाणी ना।';
+  String get outlookChartNote =>
+      'अंदाजी दायरा; संभावना मोटा-मोटी अनुमान बा, भविष्यवाणी ना।';
 
   @override
   String get accountTitle => 'खाता';
@@ -942,10 +972,12 @@ class AppLocalizationsBho extends AppLocalizations {
   String get notSignedIn => 'साइन इन नइखे';
 
   @override
-  String get accountBenefit => 'साइन इन करीं, ताकि राउर सदस्यता रउआ के सगरी डिवाइस पर काम करे।';
+  String get accountBenefit =>
+      'साइन इन करीं, ताकि राउर सदस्यता रउआ के सगरी डिवाइस पर काम करे।';
 
   @override
-  String get accountSyncedNote => 'राउर सदस्यता आ बाकी विश्लेषण हर डिवाइस पर एके जइसन रहेला।';
+  String get accountSyncedNote =>
+      'राउर सदस्यता आ बाकी विश्लेषण हर डिवाइस पर एके जइसन रहेला।';
 
   @override
   String get signInTitle => 'WhatStock में साइन इन करीं';
@@ -977,13 +1009,16 @@ class AppLocalizationsBho extends AppLocalizations {
   String get errInvalidEmail => 'कृपया एगो सही ईमेल पता लिखीं।';
 
   @override
-  String get errSignInFailed => 'साइन इन ना हो सकल। आपन कनेक्शन जाँचीं आ फेर से कोसिस करीं।';
+  String get errSignInFailed =>
+      'साइन इन ना हो सकल। आपन कनेक्शन जाँचीं आ फेर से कोसिस करीं।';
 
   @override
-  String get checkoutWaiting => 'आपन ब्राउज़र में भुगतान पूरा करीं। पूरा होते ऐप अपने आप अपडेट हो जाई।';
+  String get checkoutWaiting =>
+      'आपन ब्राउज़र में भुगतान पूरा करीं। पूरा होते ऐप अपने आप अपडेट हो जाई।';
 
   @override
-  String get paymentViaStripe => 'Stripe के जरिए राउर ब्राउज़र में सुरक्षित भुगतान। जब चाहीं रद्द करीं।';
+  String get paymentViaStripe =>
+      'Stripe के जरिए राउर ब्राउज़र में सुरक्षित भुगतान। जब चाहीं रद्द करीं।';
 
   @override
   String get paymentViaStore =>
@@ -996,7 +1031,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get doubleOptionTitle => 'Option दू बेर दबाईं';
 
   @override
-  String get doubleOptionSubtitle => 'Option कुंजी के जल्दी-जल्दी दू बेर दबवला से भी WhatStock खुल जाला।';
+  String get doubleOptionSubtitle =>
+      'Option कुंजी के जल्दी-जल्दी दू बेर दबवला से भी WhatStock खुल जाला।';
 
   @override
   String get doubleOptionPermission =>
@@ -1018,7 +1054,12 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years साल', one: '1 साल');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years साल',
+      one: '1 साल',
+    );
     return '$_temp0';
   }
 
@@ -1119,7 +1160,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get portfolioRemove => 'हटाईं';
 
   @override
-  String get portfolioExcluded => 'जवना पोजीशन के दाम भा विनिमय दर नइखे, ऊ कुल जोड़ में शामिल नइखे।';
+  String get portfolioExcluded =>
+      'जवना पोजीशन के दाम भा विनिमय दर नइखे, ऊ कुल जोड़ में शामिल नइखे।';
 
   @override
   String get priceAlerts => 'दाम अलर्ट';
@@ -1161,7 +1203,8 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'अबहीं ले कवनो दाम अलर्ट नइखे। कवनो शेयर खोलीं आ अलर्ट लगावे खातिर घंटी पर टैप करीं।';
+  String get alertsEmpty =>
+      'अबहीं ले कवनो दाम अलर्ट नइखे। कवनो शेयर खोलीं आ अलर्ट लगावे खातिर घंटी पर टैप करीं।';
 
   @override
   String get alertsNote =>
@@ -1220,7 +1263,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get keepInTrayTitle => 'विंडो बंद भइला पर भी चलत रहे';
 
   @override
-  String get keepInTraySubtitle => 'WhatStock मेनू बार भा ट्रे में रहेला, जेसे शॉर्टकट आ दाम अलर्ट काम करत रहे।';
+  String get keepInTraySubtitle =>
+      'WhatStock मेनू बार भा ट्रे में रहेला, जेसे शॉर्टकट आ दाम अलर्ट काम करत रहे।';
 
   @override
   String get termsOfUse => 'इस्तेमाल के शर्त';
@@ -1243,7 +1287,8 @@ class AppLocalizationsBho extends AppLocalizations {
       'राउर खाता आ हमनी के सर्वर पर रखल सब कुछ (ईमेल, कोटा, इस्तेमाल) हमेशा खातिर मिट जाई, आ बिना इस्तेमाल भइल विश्लेषण खतम हो जाई। ब्राउज़र में भुगतान कइल सदस्यता तुरंत रद्द हो जाला; App Store भा Google Play के सदस्यता स्टोर के सेटिंग्स में रद्द करे के पड़ी।';
 
   @override
-  String get deleteLocalData => 'एह डिवाइस के डेटा भी मिटाईं (पोर्टफ़ोलियो, अलर्ट, पसंदीदा, इतिहास, सहेजल विश्लेषण)';
+  String get deleteLocalData =>
+      'एह डिवाइस के डेटा भी मिटाईं (पोर्टफ़ोलियो, अलर्ट, पसंदीदा, इतिहास, सहेजल विश्लेषण)';
 
   @override
   String get deleteAccountConfirm => 'हमेशा खातिर मिटाईं';
@@ -1252,7 +1297,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get accountDeleted => 'राउर खाता मिटा दिहल गइल बा।';
 
   @override
-  String get errDeleteAccount => 'खाता ना मिटावल जा सकल। आपन कनेक्शन जाँचीं आ फेर से कोसिस करीं।';
+  String get errDeleteAccount =>
+      'खाता ना मिटावल जा सकल। आपन कनेक्शन जाँचीं आ फेर से कोसिस करीं।';
 
   @override
   String get aiTrialBriefNote =>
@@ -1278,4 +1324,10 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'जब ले रउआ रद्द ना करब, सालाना सदस्यता हर साल अपने आप नया हो जाला। सदस्यता लेके रउआ इस्तेमाल के शर्त आ गोपनीयता नीति मान लेत बानी।';
+
+  @override
+  String get myAnalyses => 'हमार विश्लेषण';
+
+  @override
+  String get navAlerts => 'अलर्ट';
 }

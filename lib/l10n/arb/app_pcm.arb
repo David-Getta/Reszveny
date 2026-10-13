@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 month free",
   "perYear": "/ year",
   "pricePerMonthApprox": "≈ {price} every month",
-  "subscriptionLegalYearly": "Yearly subscription go dey renew by imsef every year until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy."
+  "subscriptionLegalYearly": "Yearly subscription go dey renew by imsef every year until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy.",
+  "myAnalyses": "My analysis dem",
+  "navAlerts": "Alerts"
 }

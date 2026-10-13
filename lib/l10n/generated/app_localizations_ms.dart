@@ -13,7 +13,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ambil foto saham dan ketahui segala-galanya mengenainya.';
+  String get homeTagline =>
+      'Ambil foto saham dan ketahui segala-galanya mengenainya.';
 
   @override
   String get homeHint =>
@@ -352,26 +353,32 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Perkhidmatan pengecaman tidak dapat memproses imej ini.';
+  String get errRecognitionRefused =>
+      'Perkhidmatan pengecaman tidak dapat memproses imej ini.';
 
   @override
-  String get errRecognitionTruncated => 'Respons pengecaman terputus. Sila cuba lagi.';
+  String get errRecognitionTruncated =>
+      'Respons pengecaman terputus. Sila cuba lagi.';
 
   @override
-  String get errRecognitionBadResponse => 'Respons yang tidak dijangka daripada perkhidmatan pengecaman.';
+  String get errRecognitionBadResponse =>
+      'Respons yang tidak dijangka daripada perkhidmatan pengecaman.';
 
   @override
-  String get errRecognitionEmpty => 'Perkhidmatan pengecaman mengembalikan respons kosong.';
+  String get errRecognitionEmpty =>
+      'Perkhidmatan pengecaman mengembalikan respons kosong.';
 
   @override
-  String get errMissingFinnhubKey => 'Data pasaran tidak dikonfigurasikan (tiada FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Data pasaran tidak dikonfigurasikan (tiada FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Tidak dapat menghubungi perkhidmatan data pasaran. Semak sambungan internet anda.';
 
   @override
-  String get errMarketRateLimited => 'Terlalu banyak permintaan kepada perkhidmatan data pasaran. Sila tunggu seminit.';
+  String get errMarketRateLimited =>
+      'Terlalu banyak permintaan kepada perkhidmatan data pasaran. Sila tunggu seminit.';
 
   @override
   String errMarketHttp(String status) {
@@ -379,7 +386,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Respons yang tidak dijangka daripada perkhidmatan data pasaran.';
+  String get errMarketBadResponse =>
+      'Respons yang tidak dijangka daripada perkhidmatan data pasaran.';
 
   @override
   String errNoQuote(String symbol) {
@@ -479,7 +487,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get aiRegenerate => 'Jana semula';
 
   @override
-  String get aiGenerating => 'Menyediakan analisis… ini mungkin mengambil masa satu atau dua minit.';
+  String get aiGenerating =>
+      'Menyediakan analisis… ini mungkin mengambil masa satu atau dua minit.';
 
   @override
   String get aiSources => 'Sumber';
@@ -494,10 +503,12 @@ class AppLocalizationsMs extends AppLocalizations {
       'Analisis yang dijana oleh AI berdasarkan data awam dan berita terkini. Ia mungkin mengandungi kesilapan atau sudah lapuk, dan bukan nasihat pelaburan.';
 
   @override
-  String get errAiNotConfigured => 'Analisis AI tidak dikonfigurasikan (tiada ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Analisis AI tidak dikonfigurasikan (tiada ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Tidak dapat menghubungi perkhidmatan AI. Semak sambungan internet anda.';
+  String get errAiUnreachable =>
+      'Tidak dapat menghubungi perkhidmatan AI. Semak sambungan internet anda.';
 
   @override
   String errAiHttp(String status) {
@@ -508,7 +519,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errAiRefused => 'Perkhidmatan AI enggan menganalisis saham ini.';
 
   @override
-  String get errAiBadResponse => 'Respons yang tidak dijangka daripada perkhidmatan AI.';
+  String get errAiBadResponse =>
+      'Respons yang tidak dijangka daripada perkhidmatan AI.';
 
   @override
   String get sectionChart => 'Carta harga';
@@ -529,7 +541,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get rangeFiveYears => '5T';
 
   @override
-  String get chartUnavailable => 'Sejarah harga tidak tersedia daripada sumber data semasa.';
+  String get chartUnavailable =>
+      'Sejarah harga tidak tersedia daripada sumber data semasa.';
 
   @override
   String get sectionStatements => 'Penyata kewangan (tahunan)';
@@ -556,7 +569,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get labelOperatingCashFlow => 'Aliran tunai operasi';
 
   @override
-  String get statementsUnavailable => 'Penyata kewangan yang dilaporkan tidak tersedia untuk saham ini.';
+  String get statementsUnavailable =>
+      'Penyata kewangan yang dilaporkan tidak tersedia untuk saham ini.';
 
   @override
   String get launchAtLogin => 'Lancarkan semasa log masuk';
@@ -565,7 +579,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get hotkeyLabel => 'Pintasan global';
 
   @override
-  String get hotkeyRecordHint => 'Klik di sini, kemudian tekan gabungan kekunci baharu';
+  String get hotkeyRecordHint =>
+      'Klik di sini, kemudian tekan gabungan kekunci baharu';
 
   @override
   String get hotkeyReset => 'Tetapkan semula kepada lalai';
@@ -586,7 +601,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get removeFromFavorites => 'Alih keluar daripada kegemaran';
 
   @override
-  String get noFavorites => 'Belum ada kegemaran. Ketik bintang pada saham untuk menambahkannya.';
+  String get noFavorites =>
+      'Belum ada kegemaran. Ketik bintang pada saham untuk menambahkannya.';
 
   @override
   String get displayCurrency => 'Mata wang paparan';
@@ -633,7 +649,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get updateDownloading => 'Memuat turun kemas kini di latar belakang…';
 
   @override
-  String get updateDownloaded => 'Kemas kini sudah sedia. Mulakan semula untuk memasangnya.';
+  String get updateDownloaded =>
+      'Kemas kini sudah sedia. Mulakan semula untuk memasangnya.';
 
   @override
   String get updateNow => 'Kemas kini';
@@ -642,7 +659,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get restartNow => 'Mulakan semula';
 
   @override
-  String get updatesViaStore => 'Kemas kini diterima secara automatik melalui gedung aplikasi.';
+  String get updatesViaStore =>
+      'Kemas kini diterima secara automatik melalui gedung aplikasi.';
 
   @override
   String get updateCheckFailed => 'Tidak dapat menyemak kemas kini.';
@@ -690,7 +708,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Percubaan percuma anda telah tamat. Pilih pelan untuk terus menganalisis.';
+  String get trialExpired =>
+      'Percubaan percuma anda telah tamat. Pilih pelan untuk terus menganalisis.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -756,7 +775,8 @@ class AppLocalizationsMs extends AppLocalizations {
       'Anda tiada lagi baki analisis untuk tempoh ini. Naik taraf pelan anda atau beli analisis tambahan.';
 
   @override
-  String get errTrialExpired => 'Percubaan percuma anda telah tamat. Pilih pelan untuk meneruskan.';
+  String get errTrialExpired =>
+      'Percubaan percuma anda telah tamat. Pilih pelan untuk meneruskan.';
 
   @override
   String get errNoPlan => 'Pelan aktif diperlukan untuk analisis AI.';
@@ -768,7 +788,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get usageTitle => 'Penggunaan';
 
   @override
-  String get demoPurchaseNote => 'Pengebilan demo: pembelian disimulasikan pada platform ini.';
+  String get demoPurchaseNote =>
+      'Pengebilan demo: pembelian disimulasikan pada platform ini.';
 
   @override
   String get mostPopular => 'Paling popular';
@@ -837,10 +858,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get aiReaderExperienced => 'Berpengalaman';
 
   @override
-  String get aiReaderBeginnerDesc => 'Bahasa mudah; setiap istilah teknikal diterangkan.';
+  String get aiReaderBeginnerDesc =>
+      'Bahasa mudah; setiap istilah teknikal diterangkan.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Teks lebih padat dengan istilah kewangan standard.';
+  String get aiReaderExperiencedDesc =>
+      'Teks lebih padat dengan istilah kewangan standard.';
 
   @override
   String get aiCounterArgument => 'Hujah balas terkuat';
@@ -854,7 +877,8 @@ class AppLocalizationsMs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Sehingga $count carian web bagi setiap analisis dengan pelan anda',
+      other:
+          'Sehingga $count carian web bagi setiap analisis dengan pelan anda',
       one: 'Sehingga 1 carian web bagi setiap analisis dengan pelan anda',
     );
     return '$_temp0';
@@ -940,7 +964,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get upcomingEvents => 'Acara akan datang';
 
   @override
-  String get outlookChartNote => 'Julat indikatif; kebarangkalian hanyalah anggaran kasar, bukan ramalan.';
+  String get outlookChartNote =>
+      'Julat indikatif; kebarangkalian hanyalah anggaran kasar, bukan ramalan.';
 
   @override
   String get accountTitle => 'Akaun';
@@ -955,10 +980,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notSignedIn => 'Belum log masuk';
 
   @override
-  String get accountBenefit => 'Log masuk supaya langganan anda berfungsi pada semua peranti anda.';
+  String get accountBenefit =>
+      'Log masuk supaya langganan anda berfungsi pada semua peranti anda.';
 
   @override
-  String get accountSyncedNote => 'Langganan dan baki analisis anda adalah sama pada setiap peranti.';
+  String get accountSyncedNote =>
+      'Langganan dan baki analisis anda adalah sama pada setiap peranti.';
 
   @override
   String get signInTitle => 'Log masuk ke WhatStock';
@@ -990,14 +1017,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errInvalidEmail => 'Sila masukkan alamat e-mel yang sah.';
 
   @override
-  String get errSignInFailed => 'Log masuk gagal. Semak sambungan anda dan cuba lagi.';
+  String get errSignInFailed =>
+      'Log masuk gagal. Semak sambungan anda dan cuba lagi.';
 
   @override
   String get checkoutWaiting =>
       'Lengkapkan pembayaran dalam pelayar anda. Aplikasi akan dikemas kini secara automatik apabila selesai.';
 
   @override
-  String get paymentViaStripe => 'Pembayaran selamat dalam pelayar anda melalui Stripe. Batalkan pada bila-bila masa.';
+  String get paymentViaStripe =>
+      'Pembayaran selamat dalam pelayar anda melalui Stripe. Batalkan pada bila-bila masa.';
 
   @override
   String get paymentViaStore =>
@@ -1010,7 +1039,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get doubleOptionTitle => 'Tekan Option dua kali';
 
   @override
-  String get doubleOptionSubtitle => 'Menekan kekunci Option dua kali dengan pantas juga memanggil WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Menekan kekunci Option dua kali dengan pantas juga memanggil WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1032,7 +1062,12 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years tahun', one: '1 tahun');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years tahun',
+      one: '1 tahun',
+    );
     return '$_temp0';
   }
 
@@ -1093,7 +1128,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioAdd => 'Tambah';
 
   @override
-  String get portfolioInvalidNumber => 'Masukkan nombor yang lebih besar daripada sifar.';
+  String get portfolioInvalidNumber =>
+      'Masukkan nombor yang lebih besar daripada sifar.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1133,7 +1169,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioRemove => 'Alih keluar';
 
   @override
-  String get portfolioExcluded => 'Pegangan tanpa harga atau kadar pertukaran tidak dimasukkan dalam jumlah.';
+  String get portfolioExcluded =>
+      'Pegangan tanpa harga atau kadar pertukaran tidak dimasukkan dalam jumlah.';
 
   @override
   String get priceAlerts => 'Amaran harga';
@@ -1175,7 +1212,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Belum ada amaran harga. Buka saham dan ketik loceng untuk menetapkannya.';
+  String get alertsEmpty =>
+      'Belum ada amaran harga. Buka saham dan ketik loceng untuk menetapkannya.';
 
   @override
   String get alertsNote =>
@@ -1268,7 +1306,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get accountDeleted => 'Akaun anda telah dipadam.';
 
   @override
-  String get errDeleteAccount => 'Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi.';
+  String get errDeleteAccount =>
+      'Akaun tidak dapat dipadam. Semak sambungan anda dan cuba lagi.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1294,4 +1333,10 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi.';
+
+  @override
+  String get myAnalyses => 'Analisis saya';
+
+  @override
+  String get navAlerts => 'Amaran';
 }

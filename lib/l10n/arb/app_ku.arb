@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 meh belaş",
   "perYear": "/ sal",
   "pricePerMonthApprox": "≈ {price} di mehê de",
-  "subscriptionLegalYearly": "Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî."
+  "subscriptionLegalYearly": "Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî.",
+  "myAnalyses": "Analîzên min",
+  "navAlerts": "Hişyarî"
 }

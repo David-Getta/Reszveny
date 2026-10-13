@@ -13,7 +13,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Snap stock picture, make you sabi evritin about am.';
+  String get homeTagline =>
+      'Snap stock picture, make you sabi evritin about am.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analysts', one: '$count analyst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analysts',
+      one: '$count analyst',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Picture recognition never dey set (no ANTHROPIC_API_KEY). Type di ticker by hand.';
 
   @override
-  String get errRecognitionUnreachable => 'We no fit reach di recognition service. Check your internet connection.';
+  String get errRecognitionUnreachable =>
+      'We no fit reach di recognition service. Check your internet connection.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +353,32 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Di recognition service no fit work on dis picture.';
+  String get errRecognitionRefused =>
+      'Di recognition service no fit work on dis picture.';
 
   @override
-  String get errRecognitionTruncated => 'Di recognition answer cut for middle. Abeg try again.';
+  String get errRecognitionTruncated =>
+      'Di recognition answer cut for middle. Abeg try again.';
 
   @override
-  String get errRecognitionBadResponse => 'Di recognition service give answer wey we no expect.';
+  String get errRecognitionBadResponse =>
+      'Di recognition service give answer wey we no expect.';
 
   @override
-  String get errRecognitionEmpty => 'Di recognition service return empty answer.';
+  String get errRecognitionEmpty =>
+      'Di recognition service return empty answer.';
 
   @override
-  String get errMissingFinnhubKey => 'Market data never dey set (no FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Market data never dey set (no FINNHUB_API_KEY).';
 
   @override
-  String get errMarketUnreachable => 'We no fit reach di market data service. Check your internet connection.';
+  String get errMarketUnreachable =>
+      'We no fit reach di market data service. Check your internet connection.';
 
   @override
-  String get errMarketRateLimited => 'Too many request don go di market data service. Abeg wait one minute.';
+  String get errMarketRateLimited =>
+      'Too many request don go di market data service. Abeg wait one minute.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +386,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Di market data service give answer wey we no expect.';
+  String get errMarketBadResponse =>
+      'Di market data service give answer wey we no expect.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +487,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiRegenerate => 'Make am again';
 
   @override
-  String get aiGenerating => 'We dey prepare di analysis… e fit take one or two minutes.';
+  String get aiGenerating =>
+      'We dey prepare di analysis… e fit take one or two minutes.';
 
   @override
   String get aiSources => 'Sources';
@@ -487,10 +503,12 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Na AI make dis analysis from public data and latest news. E fit get mistake or don old, and e no be investment advice.';
 
   @override
-  String get errAiNotConfigured => 'AI analysis never dey set (no ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI analysis never dey set (no ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'We no fit reach di AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'We no fit reach di AI service. Check your internet connection.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +540,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history no dey from di data source wey we dey use now.';
+  String get chartUnavailable =>
+      'Price history no dey from di data source wey we dey use now.';
 
   @override
   String get sectionStatements => 'Financial statements (every year)';
@@ -549,7 +568,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash from operations';
 
   @override
-  String get statementsUnavailable => 'Financial statements no dey for dis stock.';
+  String get statementsUnavailable =>
+      'Financial statements no dey for dis stock.';
 
   @override
   String get launchAtLogin => 'Start am when you log in';
@@ -558,7 +578,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get hotkeyLabel => 'Shortcut wey work everywhere';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press di new key combination';
+  String get hotkeyRecordHint =>
+      'Click here, then press di new key combination';
 
   @override
   String get hotkeyReset => 'Go back to default';
@@ -579,7 +600,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get removeFromFavorites => 'Comot am from favourites';
 
   @override
-  String get noFavorites => 'No favourite yet. Tap di star for any stock to add am.';
+  String get noFavorites =>
+      'No favourite yet. Tap di star for any stock to add am.';
 
   @override
   String get displayCurrency => 'Currency to show';
@@ -635,7 +657,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get restartNow => 'Restart';
 
   @override
-  String get updatesViaStore => 'Updates go dey come by demsef through di app store.';
+  String get updatesViaStore =>
+      'Updates go dey come by demsef through di app store.';
 
   @override
   String get updateCheckFailed => 'We no fit check for update.';
@@ -683,7 +706,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Your free trial don finish. Choose plan make you continue to dey analyse.';
+  String get trialExpired =>
+      'Your free trial don finish. Choose plan make you continue to dey analyse.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +740,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get extraPacksTitle => 'You need more? Buy extra analysis';
 
   @override
-  String get extraPacksHint => 'Extra analysis no dey expire, and we go use dem afta your monthly allowance finish.';
+  String get extraPacksHint =>
+      'Extra analysis no dey expire, and we go use dem afta your monthly allowance finish.';
 
   @override
   String get buy => 'Buy';
@@ -748,7 +773,8 @@ class AppLocalizationsPcm extends AppLocalizations {
       'You no get any analysis remain for dis period. Upgrade your plan or buy extra analysis.';
 
   @override
-  String get errTrialExpired => 'Your free trial don finish. Choose plan make you continue.';
+  String get errTrialExpired =>
+      'Your free trial don finish. Choose plan make you continue.';
 
   @override
   String get errNoPlan => 'You need active plan for AI analysis.';
@@ -760,7 +786,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get usageTitle => 'How you don use am';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: na pretend purchase for dis platform.';
+  String get demoPurchaseNote =>
+      'Demo billing: na pretend purchase for dis platform.';
 
   @override
   String get mostPopular => 'Pipo like am pass';
@@ -800,7 +827,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiDepthStandardDesc => 'Full report wey get every section.';
 
   @override
-  String get aiDepthDeepDesc => 'More web search, comparison wit similar companies and more details.';
+  String get aiDepthDeepDesc =>
+      'More web search, comparison wit similar companies and more details.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,16 +856,19 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiReaderExperienced => 'Sabi pesin';
 
   @override
-  String get aiReaderBeginnerDesc => 'Simple language; we go explain every technical word.';
+  String get aiReaderBeginnerDesc =>
+      'Simple language; we go explain every technical word.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Text wey pack well wit normal finance words.';
+  String get aiReaderExperiencedDesc =>
+      'Text wey pack well wit normal finance words.';
 
   @override
   String get aiCounterArgument => 'Di strongest argument against am';
 
   @override
-  String get aiCounterArgumentDesc => 'Di summary go always end wit di best case against im own conclusion.';
+  String get aiCounterArgumentDesc =>
+      'Di summary go always end wit di best case against im own conclusion.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +961,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get upcomingEvents => 'Wetin dey come';
 
   @override
-  String get outlookChartNote => 'Na rough range dem be; di chances na just estimate, no be prediction.';
+  String get outlookChartNote =>
+      'Na rough range dem be; di chances na just estimate, no be prediction.';
 
   @override
   String get accountTitle => 'Account';
@@ -945,10 +977,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get notSignedIn => 'You never sign in';
 
   @override
-  String get accountBenefit => 'Sign in make your subscription work for all your devices.';
+  String get accountBenefit =>
+      'Sign in make your subscription work for all your devices.';
 
   @override
-  String get accountSyncedNote => 'Your subscription and di analysis wey remain na di same for every device.';
+  String get accountSyncedNote =>
+      'Your subscription and di analysis wey remain na di same for every device.';
 
   @override
   String get signInTitle => 'Sign in for WhatStock';
@@ -980,13 +1014,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get errInvalidEmail => 'Abeg put correct email address.';
 
   @override
-  String get errSignInFailed => 'Sign-in no work. Check your connection and try again.';
+  String get errSignInFailed =>
+      'Sign-in no work. Check your connection and try again.';
 
   @override
-  String get checkoutWaiting => 'Finish di payment for your browser. Di app go update by imsef when e don finish.';
+  String get checkoutWaiting =>
+      'Finish di payment for your browser. Di app go update by imsef when e don finish.';
 
   @override
-  String get paymentViaStripe => 'Safe payment for your browser through Stripe. Cancel anytime.';
+  String get paymentViaStripe =>
+      'Safe payment for your browser through Stripe. Cancel anytime.';
 
   @override
   String get paymentViaStore =>
@@ -999,7 +1036,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get doubleOptionTitle => 'Press Option two times';
 
   @override
-  String get doubleOptionSubtitle => 'If you press Option key two times quick quick, e go still call WhatStock.';
+  String get doubleOptionSubtitle =>
+      'If you press Option key two times quick quick, e go still call WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1021,7 +1059,12 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years years', one: '$years year');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years years',
+      one: '$years year',
+    );
     return '$_temp0';
   }
 
@@ -1122,7 +1165,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioRemove => 'Comot';
 
   @override
-  String get portfolioExcluded => 'Stocks wey no get price or exchange rate no dey inside di totals.';
+  String get portfolioExcluded =>
+      'Stocks wey no get price or exchange rate no dey inside di totals.';
 
   @override
   String get priceAlerts => 'Price alerts';
@@ -1164,7 +1208,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'No price alert yet. Open one stock and tap di bell to set one.';
+  String get alertsEmpty =>
+      'No price alert yet. Open one stock and tap di bell to set one.';
 
   @override
   String get alertsNote =>
@@ -1257,7 +1302,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get accountDeleted => 'Your account don delete.';
 
   @override
-  String get errDeleteAccount => 'We no fit delete di account. Check your connection and try again.';
+  String get errDeleteAccount =>
+      'We no fit delete di account. Check your connection and try again.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1283,4 +1329,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Yearly subscription go dey renew by imsef every year until you cancel am. If you subscribe, you don accept di Terms of Use and di Privacy Policy.';
+
+  @override
+  String get myAnalyses => 'My analysis dem';
+
+  @override
+  String get navAlerts => 'Alerts';
 }

@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 muaj falas",
   "perYear": "/ vit",
   "pricePerMonthApprox": "≈ {price} në muaj",
-  "subscriptionLegalYearly": "Abonimi vjetor rinovohet automatikisht çdo vit derisa ta anuloni. Duke u abonuar pranoni Kushtet e përdorimit dhe Politikën e privatësisë."
+  "subscriptionLegalYearly": "Abonimi vjetor rinovohet automatikisht çdo vit derisa ta anuloni. Duke u abonuar pranoni Kushtet e përdorimit dhe Politikën e privatësisë.",
+  "myAnalyses": "Analizat e mia",
+  "navAlerts": "Alarmet"
 }

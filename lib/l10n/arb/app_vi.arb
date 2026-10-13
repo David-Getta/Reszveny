@@ -369,5 +369,7 @@
   "yearlyDiscount": "Miễn phí 2 tháng",
   "perYear": "/ năm",
   "pricePerMonthApprox": "≈ {price} mỗi tháng",
-  "subscriptionLegalYearly": "Gói đăng ký theo năm tự động gia hạn hằng năm cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư."
+  "subscriptionLegalYearly": "Gói đăng ký theo năm tự động gia hạn hằng năm cho đến khi bạn hủy. Khi đăng ký, bạn chấp nhận Điều khoản sử dụng và Chính sách quyền riêng tư.",
+  "myAnalyses": "Phân tích của tôi",
+  "navAlerts": "Cảnh báo"
 }

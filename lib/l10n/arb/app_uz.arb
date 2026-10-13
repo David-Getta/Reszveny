@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 oy bepul",
   "perYear": "/ yil",
   "pricePerMonthApprox": "Oyiga ≈ {price}",
-  "subscriptionLegalYearly": "Yillik obuna bekor qilinmaguncha har yili avtomatik ravishda yangilanadi. Obuna boʻlish orqali siz Foydalanish shartlari va Maxfiylik siyosatini qabul qilasiz."
+  "subscriptionLegalYearly": "Yillik obuna bekor qilinmaguncha har yili avtomatik ravishda yangilanadi. Obuna boʻlish orqali siz Foydalanish shartlari va Maxfiylik siyosatini qabul qilasiz.",
+  "myAnalyses": "Mening tahlillarim",
+  "navAlerts": "Signallar"
 }

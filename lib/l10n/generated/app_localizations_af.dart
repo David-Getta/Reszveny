@@ -13,7 +13,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Neem ’n foto van ’n aandeel en leer alles daaroor.';
+  String get homeTagline =>
+      'Neem ’n foto van ’n aandeel en leer alles daaroor.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get errorGeneric => 'Iets het skeefgeloop.';
 
   @override
-  String get errorSectionUnavailable => 'Hierdie afdeling kon nie gelaai word nie.';
+  String get errorSectionUnavailable =>
+      'Hierdie afdeling kon nie gelaai word nie.';
 
   @override
   String get notAvailable => 'n.v.t.';
@@ -306,7 +308,12 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ontleders', one: '1 ontleder');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ontleders',
+      one: '1 ontleder',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +345,8 @@ class AppLocalizationsAf extends AppLocalizations {
       'Prentherkenning is nie opgestel nie (geen ANTHROPIC_API_KEY nie). Voer die aandeelkode self in.';
 
   @override
-  String get errRecognitionUnreachable => 'Kon nie die herkenningsdiens bereik nie. Gaan jou internetverbinding na.';
+  String get errRecognitionUnreachable =>
+      'Kon nie die herkenningsdiens bereik nie. Gaan jou internetverbinding na.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +354,32 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Die herkenningsdiens kon nie hierdie prent verwerk nie.';
+  String get errRecognitionRefused =>
+      'Die herkenningsdiens kon nie hierdie prent verwerk nie.';
 
   @override
-  String get errRecognitionTruncated => 'Die herkenningsantwoord is afgesny. Probeer asseblief weer.';
+  String get errRecognitionTruncated =>
+      'Die herkenningsantwoord is afgesny. Probeer asseblief weer.';
 
   @override
-  String get errRecognitionBadResponse => 'Onverwagte antwoord van die herkenningsdiens.';
+  String get errRecognitionBadResponse =>
+      'Onverwagte antwoord van die herkenningsdiens.';
 
   @override
-  String get errRecognitionEmpty => 'Die herkenningsdiens het ’n leë antwoord teruggestuur.';
+  String get errRecognitionEmpty =>
+      'Die herkenningsdiens het ’n leë antwoord teruggestuur.';
 
   @override
-  String get errMissingFinnhubKey => 'Markdata is nie opgestel nie (geen FINNHUB_API_KEY nie).';
+  String get errMissingFinnhubKey =>
+      'Markdata is nie opgestel nie (geen FINNHUB_API_KEY nie).';
 
   @override
-  String get errMarketUnreachable => 'Kon nie die markdatadiens bereik nie. Gaan jou internetverbinding na.';
+  String get errMarketUnreachable =>
+      'Kon nie die markdatadiens bereik nie. Gaan jou internetverbinding na.';
 
   @override
-  String get errMarketRateLimited => 'Te veel versoeke aan die markdatadiens. Wag asseblief ’n minuut.';
+  String get errMarketRateLimited =>
+      'Te veel versoeke aan die markdatadiens. Wag asseblief ’n minuut.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +387,8 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Onverwagte antwoord van die markdatadiens.';
+  String get errMarketBadResponse =>
+      'Onverwagte antwoord van die markdatadiens.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +488,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get aiRegenerate => 'Skep weer';
 
   @override
-  String get aiGenerating => 'Berei die ontleding voor… dit kan ’n minuut of twee neem.';
+  String get aiGenerating =>
+      'Berei die ontleding voor… dit kan ’n minuut of twee neem.';
 
   @override
   String get aiSources => 'Bronne';
@@ -487,10 +504,12 @@ class AppLocalizationsAf extends AppLocalizations {
       'AI-gegenereerde ontleding gebaseer op openbare data en onlangse nuus. Dit kan foute bevat of verouderd wees, en is nie beleggingsadvies nie.';
 
   @override
-  String get errAiNotConfigured => 'AI-ontleding is nie opgestel nie (geen ANTHROPIC_API_KEY nie).';
+  String get errAiNotConfigured =>
+      'AI-ontleding is nie opgestel nie (geen ANTHROPIC_API_KEY nie).';
 
   @override
-  String get errAiUnreachable => 'Kon nie die AI-diens bereik nie. Gaan jou internetverbinding na.';
+  String get errAiUnreachable =>
+      'Kon nie die AI-diens bereik nie. Gaan jou internetverbinding na.';
 
   @override
   String errAiHttp(String status) {
@@ -498,7 +517,8 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Die AI-diens het geweier om hierdie aandeel te ontleed.';
+  String get errAiRefused =>
+      'Die AI-diens het geweier om hierdie aandeel te ontleed.';
 
   @override
   String get errAiBadResponse => 'Onverwagte antwoord van die AI-diens.';
@@ -522,7 +542,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get rangeFiveYears => '5J';
 
   @override
-  String get chartUnavailable => 'Prysgeskiedenis is nie by die huidige databron beskikbaar nie.';
+  String get chartUnavailable =>
+      'Prysgeskiedenis is nie by die huidige databron beskikbaar nie.';
 
   @override
   String get sectionStatements => 'Finansiële state (jaarliks)';
@@ -549,7 +570,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get labelOperatingCashFlow => 'Kontantvloei uit bedrywighede';
 
   @override
-  String get statementsUnavailable => 'Gerapporteerde finansiële state is nie vir hierdie aandeel beskikbaar nie.';
+  String get statementsUnavailable =>
+      'Gerapporteerde finansiële state is nie vir hierdie aandeel beskikbaar nie.';
 
   @override
   String get launchAtLogin => 'Begin by aanmelding';
@@ -558,7 +580,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get hotkeyLabel => 'Globale kortpad';
 
   @override
-  String get hotkeyRecordHint => 'Klik hier en druk dan die nuwe sleutelkombinasie';
+  String get hotkeyRecordHint =>
+      'Klik hier en druk dan die nuwe sleutelkombinasie';
 
   @override
   String get hotkeyReset => 'Stel terug na verstek';
@@ -579,7 +602,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get removeFromFavorites => 'Verwyder uit gunstelinge';
 
   @override
-  String get noFavorites => 'Nog geen gunstelinge nie. Tik op die ster by ’n aandeel om dit by te voeg.';
+  String get noFavorites =>
+      'Nog geen gunstelinge nie. Tik op die ster by ’n aandeel om dit by te voeg.';
 
   @override
   String get displayCurrency => 'Vertoongeldeenheid';
@@ -626,7 +650,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get updateDownloading => 'Laai die bywerking in die agtergrond af…';
 
   @override
-  String get updateDownloaded => 'Die bywerking is gereed. Herbegin om dit te installeer.';
+  String get updateDownloaded =>
+      'Die bywerking is gereed. Herbegin om dit te installeer.';
 
   @override
   String get updateNow => 'Werk by';
@@ -683,7 +708,8 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Jou gratis proeftydperk is verby. Kies ’n plan om aan te hou ontleed.';
+  String get trialExpired =>
+      'Jou gratis proeftydperk is verby. Kies ’n plan om aan te hou ontleed.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -716,7 +742,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get extraPacksTitle => 'Het jy meer nodig? Koop ekstra ontledings';
 
   @override
-  String get extraPacksHint => 'Ekstra ontledings verval nooit nie en word ná jou maandelikse toekenning gebruik.';
+  String get extraPacksHint =>
+      'Ekstra ontledings verval nooit nie en word ná jou maandelikse toekenning gebruik.';
 
   @override
   String get buy => 'Koop';
@@ -748,7 +775,8 @@ class AppLocalizationsAf extends AppLocalizations {
       'Jy het geen ontledings vir hierdie tydperk oor nie. Gradeer jou plan op of koop ekstra ontledings.';
 
   @override
-  String get errTrialExpired => 'Jou gratis proeftydperk is verby. Kies ’n plan om voort te gaan.';
+  String get errTrialExpired =>
+      'Jou gratis proeftydperk is verby. Kies ’n plan om voort te gaan.';
 
   @override
   String get errNoPlan => '’n Aktiewe plan is nodig vir AI-ontleding.';
@@ -760,7 +788,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get usageTitle => 'Gebruik';
 
   @override
-  String get demoPurchaseNote => 'Demofakturering: aankope word op hierdie platform gesimuleer.';
+  String get demoPurchaseNote =>
+      'Demofakturering: aankope word op hierdie platform gesimuleer.';
 
   @override
   String get mostPopular => 'Gewildste';
@@ -800,7 +829,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get aiDepthStandardDesc => 'Volledige verslag met elke afdeling.';
 
   @override
-  String get aiDepthDeepDesc => 'Meer websoektogte, vergelyking met eweknieë en dieper besonderhede.';
+  String get aiDepthDeepDesc =>
+      'Meer websoektogte, vergelyking met eweknieë en dieper besonderhede.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,10 +858,12 @@ class AppLocalizationsAf extends AppLocalizations {
   String get aiReaderExperienced => 'Ervare';
 
   @override
-  String get aiReaderBeginnerDesc => 'Eenvoudige taal; elke vakterm word verduidelik.';
+  String get aiReaderBeginnerDesc =>
+      'Eenvoudige taal; elke vakterm word verduidelik.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Digter teks met standaard finansiële terminologie.';
+  String get aiReaderExperiencedDesc =>
+      'Digter teks met standaard finansiële terminologie.';
 
   @override
   String get aiCounterArgument => 'Sterkste teenargument';
@@ -931,7 +963,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get upcomingEvents => 'Komende gebeure';
 
   @override
-  String get outlookChartNote => 'Aanduidende reekse; waarskynlikhede is rowwe skattings, nie voorspellings nie.';
+  String get outlookChartNote =>
+      'Aanduidende reekse; waarskynlikhede is rowwe skattings, nie voorspellings nie.';
 
   @override
   String get accountTitle => 'Rekening';
@@ -946,10 +979,12 @@ class AppLocalizationsAf extends AppLocalizations {
   String get notSignedIn => 'Nie aangemeld nie';
 
   @override
-  String get accountBenefit => 'Meld aan sodat jou intekening op al jou toestelle werk.';
+  String get accountBenefit =>
+      'Meld aan sodat jou intekening op al jou toestelle werk.';
 
   @override
-  String get accountSyncedNote => 'Jou intekening en oorblywende ontledings is dieselfde op elke toestel.';
+  String get accountSyncedNote =>
+      'Jou intekening en oorblywende ontledings is dieselfde op elke toestel.';
 
   @override
   String get signInTitle => 'Meld aan by WhatStock';
@@ -981,13 +1016,16 @@ class AppLocalizationsAf extends AppLocalizations {
   String get errInvalidEmail => 'Voer asseblief ’n geldige e-posadres in.';
 
   @override
-  String get errSignInFailed => 'Aanmelding het misluk. Gaan jou verbinding na en probeer weer.';
+  String get errSignInFailed =>
+      'Aanmelding het misluk. Gaan jou verbinding na en probeer weer.';
 
   @override
-  String get checkoutWaiting => 'Voltooi die betaling in jou blaaier. Die app werk outomaties by sodra dit klaar is.';
+  String get checkoutWaiting =>
+      'Voltooi die betaling in jou blaaier. Die app werk outomaties by sodra dit klaar is.';
 
   @override
-  String get paymentViaStripe => 'Veilige betaling in jou blaaier via Stripe. Kanselleer enige tyd.';
+  String get paymentViaStripe =>
+      'Veilige betaling in jou blaaier via Stripe. Kanselleer enige tyd.';
 
   @override
   String get paymentViaStore =>
@@ -1000,7 +1038,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get doubleOptionTitle => 'Druk Option twee keer';
 
   @override
-  String get doubleOptionSubtitle => 'As jy die Option-sleutel vinnig twee keer druk, roep dit ook WhatStock op.';
+  String get doubleOptionSubtitle =>
+      'As jy die Option-sleutel vinnig twee keer druk, roep dit ook WhatStock op.';
 
   @override
   String get doubleOptionPermission =>
@@ -1022,7 +1061,12 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years jaar', one: '1 jaar');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years jaar',
+      one: '1 jaar',
+    );
     return '$_temp0';
   }
 
@@ -1123,7 +1167,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get portfolioRemove => 'Verwyder';
 
   @override
-  String get portfolioExcluded => 'Posisies sonder ’n prys of wisselkoers word nie by die totale ingereken nie.';
+  String get portfolioExcluded =>
+      'Posisies sonder ’n prys of wisselkoers word nie by die totale ingereken nie.';
 
   @override
   String get priceAlerts => 'Pryswaarskuwings';
@@ -1165,7 +1210,8 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Nog geen pryswaarskuwings nie. Maak ’n aandeel oop en tik op die klokkie om een te stel.';
+  String get alertsEmpty =>
+      'Nog geen pryswaarskuwings nie. Maak ’n aandeel oop en tik op die klokkie om een te stel.';
 
   @override
   String get alertsNote =>
@@ -1258,7 +1304,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get accountDeleted => 'Jou rekening is geskrap.';
 
   @override
-  String get errDeleteAccount => 'Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer.';
+  String get errDeleteAccount =>
+      'Die rekening kon nie geskrap word nie. Gaan jou verbinding na en probeer weer.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1284,4 +1331,10 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Jaarlikse intekenings hernu elke jaar outomaties totdat jy kanselleer. Deur in te teken aanvaar jy die Gebruiksvoorwaardes en die Privaatheidsbeleid.';
+
+  @override
+  String get myAnalyses => 'My ontledings';
+
+  @override
+  String get navAlerts => 'Waarskuwings';
 }

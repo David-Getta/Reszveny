@@ -303,7 +303,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析师',
+      one: '1 位分析师',
+    );
     return '$_temp0';
   }
 
@@ -331,7 +336,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recognitionRawText => '从图片中读取的文字';
 
   @override
-  String get errMissingAnthropicKey => '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
+  String get errMissingAnthropicKey =>
+      '图像识别未配置（缺少 ANTHROPIC_API_KEY）。请手动输入股票代码。';
 
   @override
   String get errRecognitionUnreachable => '无法连接识别服务。请检查网络连接。';
@@ -458,7 +464,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
+  String get aiIntro =>
+      '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
 
   @override
   String get aiGenerate => '生成分析';
@@ -667,7 +674,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '试用期剩余 $days 天', one: '试用期剩余 1 天');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '试用期剩余 $days 天',
+      one: '试用期剩余 1 天',
+    );
     return '$_temp0';
   }
 
@@ -756,7 +768,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bestValue => '最超值';
 
   @override
-  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 120 种语言。配额仅用于 AI 分析。';
+  String get planFeaturesCommon =>
+      '所有计划均包含照片识别、实时数据、图表、收藏和全部 120 种语言。配额仅用于 AI 分析。';
 
   @override
   String get searchLanguages => '搜索语言…';
@@ -795,7 +808,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '消耗 $count 次分析');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '消耗 $count 次分析',
+    );
     return '$_temp0';
   }
 
@@ -822,7 +839,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '您的计划每次分析最多可进行 $count 次网络搜索');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '您的计划每次分析最多可进行 $count 次网络搜索',
+    );
     return '$_temp0';
   }
 
@@ -833,13 +854,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次网络搜索');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '最多 $count 次网络搜索',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次网络搜索');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '每次分析 $count 次网络搜索',
+    );
     return '$_temp0';
   }
 
@@ -955,7 +984,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get paymentViaStripe => '通过 Stripe 在浏览器中安全付款。可随时取消。';
 
   @override
-  String get paymentViaStore => '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
+  String get paymentViaStore =>
+      '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
 
   @override
   String get keySpace => '空格键';
@@ -967,7 +997,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get doubleOptionSubtitle => '快速连按两下 Option 键也可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission => '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 WhatStock，然后重新打开本应用。';
+  String get doubleOptionPermission =>
+      '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 WhatStock，然后重新打开本应用。';
 
   @override
   String get openSystemSettings => '打开系统设置';
@@ -985,7 +1016,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years年',
+    );
     return '$_temp0';
   }
 
@@ -1128,7 +1163,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get alertsEmpty => '还没有提醒。打开一只股票并点按铃铛即可设置。';
 
   @override
-  String get alertsNote => 'WhatStock 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
+  String get alertsNote =>
+      'WhatStock 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
 
   @override
   String alertDescAbove(String price) {
@@ -1217,7 +1253,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errDeleteAccount => '无法删除账户。请检查网络连接后重试。';
 
   @override
-  String get aiTrialBriefNote => '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
+  String get aiTrialBriefNote =>
+      '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
 
   @override
   String get billingMonthly => '按月';
@@ -1238,6 +1275,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get subscriptionLegalYearly => '年度订阅会每年自动续订，直到你取消。订阅即表示你接受使用条款和隐私政策。';
+
+  @override
+  String get myAnalyses => '我的分析';
+
+  @override
+  String get navAlerts => '提醒';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -1538,7 +1581,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位分析員',
+      one: '1 位分析員',
+    );
     return '$_temp0';
   }
 
@@ -1566,7 +1614,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get recognitionRawText => '從圖片讀取的文字';
 
   @override
-  String get errMissingAnthropicKey => '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
+  String get errMissingAnthropicKey =>
+      '尚未設定圖像識別（缺少 ANTHROPIC_API_KEY）。請手動輸入股票代號。';
 
   @override
   String get errRecognitionUnreachable => '無法連接識別服務。請檢查網絡連線。';
@@ -1693,7 +1742,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
+  String get aiIntro =>
+      '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
 
   @override
   String get aiGenerate => '產生分析';
@@ -1902,7 +1952,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '試用期尚餘 $days 日', one: '試用期尚餘 1 日');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '試用期尚餘 $days 日',
+      one: '試用期尚餘 1 日',
+    );
     return '$_temp0';
   }
 
@@ -1991,7 +2046,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get bestValue => '最抵用';
 
   @override
-  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 120 種語言。配額只用於 AI 分析。';
+  String get planFeaturesCommon =>
+      '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 120 種語言。配額只用於 AI 分析。';
 
   @override
   String get searchLanguages => '搜尋語言…';
@@ -2030,7 +2086,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '用 $count 次分析');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '用 $count 次分析',
+    );
     return '$_temp0';
   }
 
@@ -2057,7 +2117,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '你的計劃每次分析最多可進行 $count 次網上搜尋');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '你的計劃每次分析最多可進行 $count 次網上搜尋',
+    );
     return '$_temp0';
   }
 
@@ -2068,13 +2132,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次網上搜尋');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '最多 $count 次網上搜尋',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次網上搜尋');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '每次分析 $count 次網上搜尋',
+    );
     return '$_temp0';
   }
 
@@ -2202,7 +2274,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get doubleOptionSubtitle => '快速連按兩下 Option 鍵亦可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission => '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 WhatStock，然後重新開啟此 App。';
+  String get doubleOptionPermission =>
+      '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 WhatStock，然後重新開啟此 App。';
 
   @override
   String get openSystemSettings => '開啟系統設定';
@@ -2220,7 +2293,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years年',
+    );
     return '$_temp0';
   }
 
@@ -2363,7 +2440,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get alertsEmpty => '暫時未有提示。打開一隻股票並點一下鈴鐺即可設定。';
 
   @override
-  String get alertsNote => 'WhatStock 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
+  String get alertsNote =>
+      'WhatStock 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
 
   @override
   String alertDescAbove(String price) {
@@ -2452,7 +2530,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get errDeleteAccount => '未能刪除帳戶。請檢查網絡連線後再試。';
 
   @override
-  String get aiTrialBriefNote => '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
+  String get aiTrialBriefNote =>
+      '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
 
   @override
   String get billingMonthly => '按月';
@@ -2473,4 +2552,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get subscriptionLegalYearly => '年度訂閱會每年自動續期，直至你取消。訂閱即表示你接受使用條款及私隱政策。';
+
+  @override
+  String get myAnalyses => '我的分析';
+
+  @override
+  String get navAlerts => '提示';
 }

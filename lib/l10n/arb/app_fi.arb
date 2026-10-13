@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 kk ilmaiseksi",
   "perYear": "/ vuosi",
   "pricePerMonthApprox": "≈ {price} kuukaudessa",
-  "subscriptionLegalYearly": "Vuositilaus uusiutuu automaattisesti joka vuosi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen."
+  "subscriptionLegalYearly": "Vuositilaus uusiutuu automaattisesti joka vuosi, kunnes peruutat sen. Tilaamalla hyväksyt käyttöehdot ja tietosuojaselosteen.",
+  "myAnalyses": "Omat analyysit",
+  "navAlerts": "Hälytykset"
 }

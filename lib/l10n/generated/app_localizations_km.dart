@@ -306,7 +306,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'អ្នកវិភាគ $count នាក់');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'អ្នកវិភាគ $count នាក់',
+    );
     return '$_temp0';
   }
 
@@ -347,25 +351,31 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'សេវាសម្គាល់រូបភាពមិនអាចដំណើរការរូបភាពនេះបានទេ។';
+  String get errRecognitionRefused =>
+      'សេវាសម្គាល់រូបភាពមិនអាចដំណើរការរូបភាពនេះបានទេ។';
 
   @override
-  String get errRecognitionTruncated => 'ការឆ្លើយតបពីសេវាសម្គាល់រូបភាពត្រូវបានកាត់ផ្ដាច់។ សូមព្យាយាមម្ដងទៀត។';
+  String get errRecognitionTruncated =>
+      'ការឆ្លើយតបពីសេវាសម្គាល់រូបភាពត្រូវបានកាត់ផ្ដាច់។ សូមព្យាយាមម្ដងទៀត។';
 
   @override
-  String get errRecognitionBadResponse => 'ការឆ្លើយតបមិនរំពឹងទុកពីសេវាសម្គាល់រូបភាព។';
+  String get errRecognitionBadResponse =>
+      'ការឆ្លើយតបមិនរំពឹងទុកពីសេវាសម្គាល់រូបភាព។';
 
   @override
   String get errRecognitionEmpty => 'សេវាសម្គាល់រូបភាពបានត្រឡប់ការឆ្លើយតបទទេ។';
 
   @override
-  String get errMissingFinnhubKey => 'ទិន្នន័យទីផ្សារមិនទាន់បានកំណត់ទេ (គ្មាន FINNHUB_API_KEY)។';
+  String get errMissingFinnhubKey =>
+      'ទិន្នន័យទីផ្សារមិនទាន់បានកំណត់ទេ (គ្មាន FINNHUB_API_KEY)។';
 
   @override
-  String get errMarketUnreachable => 'មិនអាចភ្ជាប់ទៅសេវាទិន្នន័យទីផ្សារបានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក។';
+  String get errMarketUnreachable =>
+      'មិនអាចភ្ជាប់ទៅសេវាទិន្នន័យទីផ្សារបានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក។';
 
   @override
-  String get errMarketRateLimited => 'សំណើទៅសេវាទិន្នន័យទីផ្សារច្រើនពេក។ សូមរង់ចាំមួយនាទី។';
+  String get errMarketRateLimited =>
+      'សំណើទៅសេវាទិន្នន័យទីផ្សារច្រើនពេក។ សូមរង់ចាំមួយនាទី។';
 
   @override
   String errMarketHttp(String status) {
@@ -373,7 +383,8 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'ការឆ្លើយតបមិនរំពឹងទុកពីសេវាទិន្នន័យទីផ្សារ។';
+  String get errMarketBadResponse =>
+      'ការឆ្លើយតបមិនរំពឹងទុកពីសេវាទិន្នន័យទីផ្សារ។';
 
   @override
   String errNoQuote(String symbol) {
@@ -488,10 +499,12 @@ class AppLocalizationsKm extends AppLocalizations {
       'ការវិភាគបង្កើតដោយ AI ផ្អែកលើទិន្នន័យសាធារណៈ និងព័ត៌មានថ្មីៗ។ វាអាចមានកំហុស ឬហួសសម័យ ហើយមិនមែនជាដំបូន្មានវិនិយោគទេ។';
 
   @override
-  String get errAiNotConfigured => 'ការវិភាគ AI មិនទាន់បានកំណត់ទេ (គ្មាន ANTHROPIC_API_KEY)។';
+  String get errAiNotConfigured =>
+      'ការវិភាគ AI មិនទាន់បានកំណត់ទេ (គ្មាន ANTHROPIC_API_KEY)។';
 
   @override
-  String get errAiUnreachable => 'មិនអាចភ្ជាប់ទៅសេវា AI បានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក។';
+  String get errAiUnreachable =>
+      'មិនអាចភ្ជាប់ទៅសេវា AI បានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក។';
 
   @override
   String errAiHttp(String status) {
@@ -523,7 +536,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get rangeFiveYears => '5 ឆ្នាំ';
 
   @override
-  String get chartUnavailable => 'ប្រភពទិន្នន័យបច្ចុប្បន្នមិនមានប្រវត្តិតម្លៃទេ។';
+  String get chartUnavailable =>
+      'ប្រភពទិន្នន័យបច្ចុប្បន្នមិនមានប្រវត្តិតម្លៃទេ។';
 
   @override
   String get sectionStatements => 'របាយការណ៍ហិរញ្ញវត្ថុ (ប្រចាំឆ្នាំ)';
@@ -550,7 +564,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get labelOperatingCashFlow => 'លំហូរសាច់ប្រាក់ពីប្រតិបត្តិការ';
 
   @override
-  String get statementsUnavailable => 'មិនមានរបាយការណ៍ហិរញ្ញវត្ថុដែលបានប្រកាសសម្រាប់ភាគហ៊ុននេះទេ។';
+  String get statementsUnavailable =>
+      'មិនមានរបាយការណ៍ហិរញ្ញវត្ថុដែលបានប្រកាសសម្រាប់ភាគហ៊ុននេះទេ។';
 
   @override
   String get launchAtLogin => 'បើកដំណើរការនៅពេលចូលគណនី';
@@ -580,7 +595,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get removeFromFavorites => 'ដកចេញពីចំណូលចិត្ត';
 
   @override
-  String get noFavorites => 'មិនទាន់មានចំណូលចិត្តនៅឡើយទេ។ ចុចរូបផ្កាយលើភាគហ៊ុនណាមួយដើម្បីបន្ថែម។';
+  String get noFavorites =>
+      'មិនទាន់មានចំណូលចិត្តនៅឡើយទេ។ ចុចរូបផ្កាយលើភាគហ៊ុនណាមួយដើម្បីបន្ថែម។';
 
   @override
   String get displayCurrency => 'រូបិយប័ណ្ណបង្ហាញ';
@@ -627,7 +643,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get updateDownloading => 'កំពុងទាញយកបច្ចុប្បន្នភាពនៅផ្ទៃខាងក្រោយ…';
 
   @override
-  String get updateDownloaded => 'បច្ចុប្បន្នភាពរួចរាល់ហើយ។ ចាប់ផ្ដើមឡើងវិញដើម្បីដំឡើង។';
+  String get updateDownloaded =>
+      'បច្ចុប្បន្នភាពរួចរាល់ហើយ។ ចាប់ផ្ដើមឡើងវិញដើម្បីដំឡើង។';
 
   @override
   String get updateNow => 'ធ្វើបច្ចុប្បន្នភាព';
@@ -636,7 +653,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get restartNow => 'ចាប់ផ្ដើមឡើងវិញ';
 
   @override
-  String get updatesViaStore => 'បច្ចុប្បន្នភាពមកដល់ដោយស្វ័យប្រវត្តិតាមរយៈហាងកម្មវិធី។';
+  String get updatesViaStore =>
+      'បច្ចុប្បន្នភាពមកដល់ដោយស្វ័យប្រវត្តិតាមរយៈហាងកម្មវិធី។';
 
   @override
   String get updateCheckFailed => 'មិនអាចពិនិត្យរកបច្ចុប្បន្នភាពបានទេ។';
@@ -674,12 +692,17 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'នៅសល់ការសាកល្បង $days ថ្ងៃ');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'នៅសល់ការសាកល្បង $days ថ្ងៃ',
+    );
     return '$_temp0';
   }
 
   @override
-  String get trialExpired => 'ការសាកល្បងឥតគិតថ្លៃរបស់អ្នកបានបញ្ចប់ហើយ។ ជ្រើសរើសគម្រោងមួយដើម្បីបន្តការវិភាគ។';
+  String get trialExpired =>
+      'ការសាកល្បងឥតគិតថ្លៃរបស់អ្នកបានបញ្ចប់ហើយ។ ជ្រើសរើសគម្រោងមួយដើម្បីបន្តការវិភាគ។';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -712,7 +735,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get extraPacksTitle => 'ត្រូវការបន្ថែម? ទិញការវិភាគបន្ថែម';
 
   @override
-  String get extraPacksHint => 'ការវិភាគបន្ថែមមិនផុតកំណត់ទេ ហើយត្រូវបានប្រើបន្ទាប់ពីកូតាប្រចាំខែរបស់អ្នកអស់។';
+  String get extraPacksHint =>
+      'ការវិភាគបន្ថែមមិនផុតកំណត់ទេ ហើយត្រូវបានប្រើបន្ទាប់ពីកូតាប្រចាំខែរបស់អ្នកអស់។';
 
   @override
   String get buy => 'ទិញ';
@@ -740,10 +764,12 @@ class AppLocalizationsKm extends AppLocalizations {
       'មិនទាន់អាចទិញនៅលើវេទិកានេះបាននៅឡើយទេ។ សូមជាវនៅលើទូរសព្ទ ឬ Mac របស់អ្នក ហើយគម្រោងរបស់អ្នកនឹងដំណើរការលើគ្រប់ឧបករណ៍។';
 
   @override
-  String get errQuotaExceeded => 'អ្នកអស់ការវិភាគសម្រាប់រយៈពេលនេះហើយ។ ដំឡើងគម្រោងរបស់អ្នក ឬទិញការវិភាគបន្ថែម។';
+  String get errQuotaExceeded =>
+      'អ្នកអស់ការវិភាគសម្រាប់រយៈពេលនេះហើយ។ ដំឡើងគម្រោងរបស់អ្នក ឬទិញការវិភាគបន្ថែម។';
 
   @override
-  String get errTrialExpired => 'ការសាកល្បងឥតគិតថ្លៃរបស់អ្នកបានបញ្ចប់ហើយ។ ជ្រើសរើសគម្រោងមួយដើម្បីបន្ត។';
+  String get errTrialExpired =>
+      'ការសាកល្បងឥតគិតថ្លៃរបស់អ្នកបានបញ្ចប់ហើយ។ ជ្រើសរើសគម្រោងមួយដើម្បីបន្ត។';
 
   @override
   String get errNoPlan => 'ត្រូវការគម្រោងសកម្មសម្រាប់ការវិភាគ AI។';
@@ -755,7 +781,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get usageTitle => 'ការប្រើប្រាស់';
 
   @override
-  String get demoPurchaseNote => 'ការទូទាត់គំរូ៖ ការទិញនៅលើវេទិកានេះគ្រាន់តែជាការក្លែងធ្វើ។';
+  String get demoPurchaseNote =>
+      'ការទូទាត់គំរូ៖ ការទិញនៅលើវេទិកានេះគ្រាន់តែជាការក្លែងធ្វើ។';
 
   @override
   String get mostPopular => 'ពេញនិយមបំផុត';
@@ -805,7 +832,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ប្រើការវិភាគ $count ដង');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ប្រើការវិភាគ $count ដង',
+    );
     return '$_temp0';
   }
 
@@ -819,10 +850,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get aiReaderExperienced => 'អ្នកមានបទពិសោធន៍';
 
   @override
-  String get aiReaderBeginnerDesc => 'ភាសាងាយយល់ ពាក្យបច្ចេកទេសនីមួយៗត្រូវបានពន្យល់។';
+  String get aiReaderBeginnerDesc =>
+      'ភាសាងាយយល់ ពាក្យបច្ចេកទេសនីមួយៗត្រូវបានពន្យល់។';
 
   @override
-  String get aiReaderExperiencedDesc => 'អត្ថបទខ្លឹមខ្លាំងជាង ជាមួយវាក្យសព្ទហិរញ្ញវត្ថុស្តង់ដារ។';
+  String get aiReaderExperiencedDesc =>
+      'អត្ថបទខ្លឹមខ្លាំងជាង ជាមួយវាក្យសព្ទហិរញ្ញវត្ថុស្តង់ដារ។';
 
   @override
   String get aiCounterArgument => 'អំណះអំណាងប្រឆាំងខ្លាំងបំផុត';
@@ -836,7 +869,8 @@ class AppLocalizationsKm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ស្វែងរកលើបណ្ដាញបានរហូតដល់ $count ដងក្នុងមួយការវិភាគ តាមគម្រោងរបស់អ្នក',
+      other:
+          'ស្វែងរកលើបណ្ដាញបានរហូតដល់ $count ដងក្នុងមួយការវិភាគ តាមគម្រោងរបស់អ្នក',
     );
     return '$_temp0';
   }
@@ -848,7 +882,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ស្វែងរកលើបណ្ដាញរហូតដល់ $count ដង');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ស្វែងរកលើបណ្ដាញរហូតដល់ $count ដង',
+    );
     return '$_temp0';
   }
 
@@ -915,7 +953,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get upcomingEvents => 'ព្រឹត្តិការណ៍ខាងមុខ';
 
   @override
-  String get outlookChartNote => 'ជាចន្លោះប្រហាក់ប្រហែល ប្រូបាប៊ីលីតេគ្រាន់តែជាការវាយតម្លៃរដុប មិនមែនជាការព្យាករណ៍ទេ។';
+  String get outlookChartNote =>
+      'ជាចន្លោះប្រហាក់ប្រហែល ប្រូបាប៊ីលីតេគ្រាន់តែជាការវាយតម្លៃរដុប មិនមែនជាការព្យាករណ៍ទេ។';
 
   @override
   String get accountTitle => 'គណនី';
@@ -930,10 +969,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get notSignedIn => 'មិនទាន់បានចូលគណនី';
 
   @override
-  String get accountBenefit => 'ចូលគណនី ដើម្បីឱ្យការជាវរបស់អ្នកដំណើរការលើគ្រប់ឧបករណ៍របស់អ្នក។';
+  String get accountBenefit =>
+      'ចូលគណនី ដើម្បីឱ្យការជាវរបស់អ្នកដំណើរការលើគ្រប់ឧបករណ៍របស់អ្នក។';
 
   @override
-  String get accountSyncedNote => 'ការជាវ និងការវិភាគដែលនៅសល់របស់អ្នកគឺដូចគ្នានៅលើគ្រប់ឧបករណ៍។';
+  String get accountSyncedNote =>
+      'ការជាវ និងការវិភាគដែលនៅសល់របស់អ្នកគឺដូចគ្នានៅលើគ្រប់ឧបករណ៍។';
 
   @override
   String get signInTitle => 'ចូលគណនី WhatStock';
@@ -965,14 +1006,16 @@ class AppLocalizationsKm extends AppLocalizations {
   String get errInvalidEmail => 'សូមបញ្ចូលអាសយដ្ឋានអ៊ីមែលដែលត្រឹមត្រូវ។';
 
   @override
-  String get errSignInFailed => 'ការចូលគណនីបានបរាជ័យ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
+  String get errSignInFailed =>
+      'ការចូលគណនីបានបរាជ័យ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
 
   @override
   String get checkoutWaiting =>
       'បញ្ចប់ការទូទាត់នៅក្នុងកម្មវិធីរុករករបស់អ្នក។ កម្មវិធីនឹងធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិនៅពេលរួចរាល់។';
 
   @override
-  String get paymentViaStripe => 'ការទូទាត់មានសុវត្ថិភាពនៅក្នុងកម្មវិធីរុករករបស់អ្នកតាមរយៈ Stripe។ បោះបង់បានគ្រប់ពេល។';
+  String get paymentViaStripe =>
+      'ការទូទាត់មានសុវត្ថិភាពនៅក្នុងកម្មវិធីរុករករបស់អ្នកតាមរយៈ Stripe។ បោះបង់បានគ្រប់ពេល។';
 
   @override
   String get paymentViaStore =>
@@ -985,7 +1028,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get doubleOptionTitle => 'ចុច Option ពីរដង';
 
   @override
-  String get doubleOptionSubtitle => 'ការចុចគ្រាប់ចុច Option ពីរដងយ៉ាងលឿនក៏ហៅ WhatStock ផងដែរ។';
+  String get doubleOptionSubtitle =>
+      'ការចុចគ្រាប់ចុច Option ពីរដងយ៉ាងលឿនក៏ហៅ WhatStock ផងដែរ។';
 
   @override
   String get doubleOptionPermission =>
@@ -1007,7 +1051,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ឆ្នាំ');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ឆ្នាំ',
+    );
     return '$_temp0';
   }
 
@@ -1108,7 +1156,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioRemove => 'ដកចេញ';
 
   @override
-  String get portfolioExcluded => 'ការកាន់កាប់ដែលគ្មានតម្លៃ ឬអត្រាប្ដូរប្រាក់ មិនត្រូវបានរាប់បញ្ចូលក្នុងចំនួនសរុបទេ។';
+  String get portfolioExcluded =>
+      'ការកាន់កាប់ដែលគ្មានតម្លៃ ឬអត្រាប្ដូរប្រាក់ មិនត្រូវបានរាប់បញ្ចូលក្នុងចំនួនសរុបទេ។';
 
   @override
   String get priceAlerts => 'ការជូនដំណឹងតម្លៃ';
@@ -1150,7 +1199,8 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'មិនទាន់មានការជូនដំណឹងតម្លៃនៅឡើយទេ។ បើកភាគហ៊ុនមួយ ហើយចុចរូបកណ្ដឹងដើម្បីកំណត់។';
+  String get alertsEmpty =>
+      'មិនទាន់មានការជូនដំណឹងតម្លៃនៅឡើយទេ។ បើកភាគហ៊ុនមួយ ហើយចុចរូបកណ្ដឹងដើម្បីកំណត់។';
 
   @override
   String get alertsNote =>
@@ -1243,7 +1293,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get accountDeleted => 'គណនីរបស់អ្នកត្រូវបានលុបហើយ។';
 
   @override
-  String get errDeleteAccount => 'មិនអាចលុបគណនីបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
+  String get errDeleteAccount =>
+      'មិនអាចលុបគណនីបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
 
   @override
   String get aiTrialBriefNote =>
@@ -1269,4 +1320,10 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'ការជាវប្រចាំឆ្នាំបន្តដោយស្វ័យប្រវត្តិរៀងរាល់ឆ្នាំ រហូតដល់អ្នកបោះបង់។ ដោយការជាវ អ្នកយល់ព្រមលើលក្ខខណ្ឌប្រើប្រាស់ និងគោលការណ៍ឯកជនភាព។';
+
+  @override
+  String get myAnalyses => 'ការវិភាគរបស់ខ្ញុំ';
+
+  @override
+  String get navAlerts => 'ការជូនដំណឹង';
 }

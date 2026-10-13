@@ -369,5 +369,7 @@
   "yearlyDiscount": "Gratis 2 bulan",
   "perYear": "/ tahun",
   "pricePerMonthApprox": "≈ {price} per bulan",
-  "subscriptionLegalYearly": "Langganan tahunan diperpanjang otomatis setiap tahun sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi."
+  "subscriptionLegalYearly": "Langganan tahunan diperpanjang otomatis setiap tahun sampai Anda membatalkannya. Dengan berlangganan, Anda menerima Ketentuan Penggunaan dan Kebijakan Privasi.",
+  "myAnalyses": "Analisis saya",
+  "navAlerts": "Peringatan"
 }

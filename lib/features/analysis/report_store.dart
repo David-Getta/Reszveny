@@ -52,13 +52,7 @@ class ReportStore extends ChangeNotifier {
     cb().then((_) => notifyListeners()).catchError((Object e) => debugPrint('Jogosultság frissítése nem sikerült: $e'));
   }
 
-  ReportStore({
-    required this.analyst,
-    this.entitlements,
-    this.onQuotaChanged,
-    this.extrasLoader,
-    this.ttl = const Duration(hours: 12),
-  });
+  ReportStore({required this.analyst, this.entitlements, this.onQuotaChanged, this.extrasLoader});
 
   /// Az elemzés előtt letöltendő többletadatok (versenytársak, bennfentes
   /// ügyletek, EPS-meglepetések, következő gyorsjelentés). Hiba vagy lassúság
@@ -73,7 +67,6 @@ class ReportStore extends ChangeNotifier {
   /// Elemzés után (vagy a szerver kvóta-hibája után) hívjuk: backend-módban
   /// innen frissül a jogosultság a szerver szerinti állapotra.
   final Future<void> Function()? onQuotaChanged;
-  final Duration ttl;
 
   static const _prefix = 'report_';
 
@@ -85,7 +78,40 @@ class ReportStore extends ChangeNotifier {
   Object? error(String symbol) => _errors[symbol];
   bool isLoading(String symbol) => _loading.contains(symbol);
 
-  /// Betölti a lemezről, ha van friss példány.
+  /// Legfeljebb ennyi elemzést őrzünk meg a készüléken (a legrégebbiek törlődnek).
+  static const maxSaved = 50;
+
+  /// A készüléken elmentett elemzések, a legújabb elöl („Elemzéseim”). Ha a
+  /// [language] meg van adva, csak az azon a nyelven készülteket adja (a többit
+  /// a [restore] sem nyitná meg).
+  Future<List<StockReport>> savedReports({String? language, int limit = maxSaved}) async {
+    final out = <String, StockReport>{};
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      for (final k in prefs.getKeys().where((k) => k.startsWith(_prefix))) {
+        final raw = prefs.getString(k);
+        if (raw == null) continue;
+        try {
+          final r = StockReport.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+          out[r.symbol] = r;
+        } catch (_) {
+          // Sérült bejegyzés: kihagyjuk.
+        }
+      }
+    } catch (_) {
+      // A tárolás hibája nem akadályozza a működést.
+    }
+    for (final r in _reports.values) {
+      final prev = out[r.symbol];
+      if (prev == null || r.generatedAt.isAfter(prev.generatedAt)) out[r.symbol] = r;
+    }
+    final list = out.values.where((r) => language == null || r.language == null || r.language == language).toList()
+      ..sort((a, b) => b.generatedAt.compareTo(a.generatedAt));
+    return list.take(limit).toList();
+  }
+
+  /// Betölti a lemezről az utolsó elemzést (a régebbit is: a felület jelzi a
+  /// korát, és felajánlja a frissítést). Más nyelven készült elemzést nem.
   Future<StockReport?> restore(String symbol, {String? language}) async {
     final cached = _reports[symbol];
     if (cached != null) return cached;
@@ -94,14 +120,32 @@ class ReportStore extends ChangeNotifier {
       final raw = prefs.getString('$_prefix$symbol');
       if (raw == null) return null;
       final r = StockReport.fromJson(jsonDecode(raw) as Map<String, dynamic>);
-      final fresh = DateTime.now().difference(r.generatedAt) < ttl;
       final sameLanguage = language == null || r.language == null || r.language == language;
-      if (!fresh || !sameLanguage) return null;
+      if (!sameLanguage) return null;
       _reports[symbol] = r;
       notifyListeners();
       return r;
     } catch (_) {
       return null;
+    }
+  }
+
+  /// A [maxSaved]-nél több elmentett elemzésből a legrégebbieket törli.
+  Future<void> _prune(SharedPreferences prefs) async {
+    final keys = prefs.getKeys().where((k) => k.startsWith(_prefix)).toList();
+    if (keys.length <= maxSaved) return;
+    final dated = <(String, DateTime)>[];
+    for (final k in keys) {
+      try {
+        final j = jsonDecode(prefs.getString(k) ?? '') as Map<String, dynamic>;
+        dated.add((k, DateTime.parse(j['generated_at'] as String)));
+      } catch (_) {
+        dated.add((k, DateTime.fromMillisecondsSinceEpoch(0)));
+      }
+    }
+    dated.sort((a, b) => b.$2.compareTo(a.$2));
+    for (final (k, _) in dated.skip(maxSaved)) {
+      await prefs.remove(k);
     }
   }
 
@@ -145,6 +189,7 @@ class ReportStore extends ChangeNotifier {
       try {
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));
+        await _prune(prefs);
       } catch (_) {
         // A gyorsítótár hibája nem akadályozza a megjelenítést.
       }

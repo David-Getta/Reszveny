@@ -354,26 +354,31 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Сэрвіс распазнавання не змог апрацаваць гэту выяву.';
+  String get errRecognitionRefused =>
+      'Сэрвіс распазнавання не змог апрацаваць гэту выяву.';
 
   @override
-  String get errRecognitionTruncated => 'Адказ сэрвісу распазнавання быў абрэзаны. Паспрабуйце яшчэ раз.';
+  String get errRecognitionTruncated =>
+      'Адказ сэрвісу распазнавання быў абрэзаны. Паспрабуйце яшчэ раз.';
 
   @override
-  String get errRecognitionBadResponse => 'Нечаканы адказ ад сэрвісу распазнавання.';
+  String get errRecognitionBadResponse =>
+      'Нечаканы адказ ад сэрвісу распазнавання.';
 
   @override
   String get errRecognitionEmpty => 'Сэрвіс распазнавання вярнуў пусты адказ.';
 
   @override
-  String get errMissingFinnhubKey => 'Рыначныя даныя не наладжаны (няма FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Рыначныя даныя не наладжаны (няма FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
       'Не ўдалося падключыцца да сэрвісу рыначных даных. Праверце падключэнне да інтэрнэту.';
 
   @override
-  String get errMarketRateLimited => 'Занадта шмат запытаў да сэрвісу рыначных даных. Пачакайце хвіліну.';
+  String get errMarketRateLimited =>
+      'Занадта шмат запытаў да сэрвісу рыначных даных. Пачакайце хвіліну.';
 
   @override
   String errMarketHttp(String status) {
@@ -381,7 +386,8 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Нечаканы адказ ад сэрвісу рыначных даных.';
+  String get errMarketBadResponse =>
+      'Нечаканы адказ ад сэрвісу рыначных даных.';
 
   @override
   String errNoQuote(String symbol) {
@@ -496,10 +502,12 @@ class AppLocalizationsBe extends AppLocalizations {
       'Аналіз створаны AI на аснове адкрытых даных і апошніх навін. Ён можа ўтрымліваць памылкі або быць састарэлым і не з’яўляецца інвестыцыйнай парадай.';
 
   @override
-  String get errAiNotConfigured => 'AI-аналіз не наладжаны (няма ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI-аналіз не наладжаны (няма ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Не ўдалося падключыцца да сэрвісу AI. Праверце падключэнне да інтэрнэту.';
+  String get errAiUnreachable =>
+      'Не ўдалося падключыцца да сэрвісу AI. Праверце падключэнне да інтэрнэту.';
 
   @override
   String errAiHttp(String status) {
@@ -531,7 +539,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get rangeFiveYears => '5Г';
 
   @override
-  String get chartUnavailable => 'Гісторыя цэн недаступная ў бягучай крыніцы даных.';
+  String get chartUnavailable =>
+      'Гісторыя цэн недаступная ў бягучай крыніцы даных.';
 
   @override
   String get sectionStatements => 'Фінансавая справаздачнасць (гадавая)';
@@ -558,7 +567,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get labelOperatingCashFlow => 'Аперацыйны грашовы паток';
 
   @override
-  String get statementsUnavailable => 'Апублікаваная фінансавая справаздачнасць для гэтай акцыі недаступная.';
+  String get statementsUnavailable =>
+      'Апублікаваная фінансавая справаздачнасць для гэтай акцыі недаступная.';
 
   @override
   String get launchAtLogin => 'Запускаць пры ўваходзе ў сістэму';
@@ -567,7 +577,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get hotkeyLabel => 'Глабальнае спалучэнне клавіш';
 
   @override
-  String get hotkeyRecordHint => 'Націсніце тут, а потым націсніце новае спалучэнне клавіш';
+  String get hotkeyRecordHint =>
+      'Націсніце тут, а потым націсніце новае спалучэнне клавіш';
 
   @override
   String get hotkeyReset => 'Вярнуць стандартнае';
@@ -588,7 +599,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get removeFromFavorites => 'Выдаліць з абранага';
 
   @override
-  String get noFavorites => 'У абраным пакуль нічога няма. Націсніце на зорачку ля акцыі, каб дадаць яе.';
+  String get noFavorites =>
+      'У абраным пакуль нічога няма. Націсніце на зорачку ля акцыі, каб дадаць яе.';
 
   @override
   String get displayCurrency => 'Валюта адлюстравання';
@@ -635,7 +647,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get updateDownloading => 'Абнаўленне спампоўваецца ў фонавым рэжыме…';
 
   @override
-  String get updateDownloaded => 'Абнаўленне гатовае. Перазапусціце праграму, каб усталяваць яго.';
+  String get updateDownloaded =>
+      'Абнаўленне гатовае. Перазапусціце праграму, каб усталяваць яго.';
 
   @override
   String get updateNow => 'Абнавіць';
@@ -644,7 +657,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get restartNow => 'Перазапусціць';
 
   @override
-  String get updatesViaStore => 'Абнаўленні прыходзяць аўтаматычна праз краму праграм.';
+  String get updatesViaStore =>
+      'Абнаўленні прыходзяць аўтаматычна праз краму праграм.';
 
   @override
   String get updateCheckFailed => 'Не ўдалося праверыць абнаўленні.';
@@ -710,7 +724,8 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Ваш бясплатны пробны перыяд скончыўся. Выберыце тарыф, каб працягваць аналізаваць.';
+  String get trialExpired =>
+      'Ваш бясплатны пробны перыяд скончыўся. Выберыце тарыф, каб працягваць аналізаваць.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -784,7 +799,8 @@ class AppLocalizationsBe extends AppLocalizations {
       'У гэтым перыядзе ў вас не засталося аналізаў. Перайдзіце на вышэйшы тарыф або купіце дадатковыя аналізы.';
 
   @override
-  String get errTrialExpired => 'Ваш бясплатны пробны перыяд скончыўся. Выберыце тарыф, каб працягнуць.';
+  String get errTrialExpired =>
+      'Ваш бясплатны пробны перыяд скончыўся. Выберыце тарыф, каб працягнуць.';
 
   @override
   String get errNoPlan => 'Для AI-аналізу патрэбны актыўны тарыф.';
@@ -796,7 +812,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get usageTitle => 'Выкарыстанне';
 
   @override
-  String get demoPurchaseNote => 'Дэма-аплата: пакупкі на гэтай платформе імітуюцца.';
+  String get demoPurchaseNote =>
+      'Дэма-аплата: пакупкі на гэтай платформе імітуюцца.';
 
   @override
   String get mostPopular => 'Самы папулярны';
@@ -836,7 +853,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get aiDepthStandardDesc => 'Поўная справаздача з усімі раздзеламі.';
 
   @override
-  String get aiDepthDeepDesc => 'Больш вэб-пошукаў, параўнанне з канкурэнтамі і глыбейшая дэталізацыя.';
+  String get aiDepthDeepDesc =>
+      'Больш вэб-пошукаў, параўнанне з канкурэнтамі і глыбейшая дэталізацыя.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -866,16 +884,19 @@ class AppLocalizationsBe extends AppLocalizations {
   String get aiReaderExperienced => 'Дасведчаны';
 
   @override
-  String get aiReaderBeginnerDesc => 'Простая мова; кожны спецыяльны тэрмін растлумачаны.';
+  String get aiReaderBeginnerDesc =>
+      'Простая мова; кожны спецыяльны тэрмін растлумачаны.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Больш шчыльны тэкст са стандартнай фінансавай тэрміналогіяй.';
+  String get aiReaderExperiencedDesc =>
+      'Больш шчыльны тэкст са стандартнай фінансавай тэрміналогіяй.';
 
   @override
   String get aiCounterArgument => 'Наймацнейшы контраргумент';
 
   @override
-  String get aiCounterArgumentDesc => 'Рэзюмэ заўсёды завяршаецца наймацнейшым аргументам супраць уласнай высновы.';
+  String get aiCounterArgumentDesc =>
+      'Рэзюмэ заўсёды завяршаецца наймацнейшым аргументам супраць уласнай высновы.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -974,7 +995,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get upcomingEvents => 'Бліжэйшыя падзеі';
 
   @override
-  String get outlookChartNote => 'Арыенціровачныя дыяпазоны; імавернасці – грубыя ацэнкі, а не прагнозы.';
+  String get outlookChartNote =>
+      'Арыенціровачныя дыяпазоны; імавернасці – грубыя ацэнкі, а не прагнозы.';
 
   @override
   String get accountTitle => 'Уліковы запіс';
@@ -989,10 +1011,12 @@ class AppLocalizationsBe extends AppLocalizations {
   String get notSignedIn => 'Уваход не выкананы';
 
   @override
-  String get accountBenefit => 'Увайдзіце, каб ваша падпіска працавала на ўсіх вашых прыладах.';
+  String get accountBenefit =>
+      'Увайдзіце, каб ваша падпіска працавала на ўсіх вашых прыладах.';
 
   @override
-  String get accountSyncedNote => 'Ваша падпіска і астатак аналізаў аднолькавыя на ўсіх прыладах.';
+  String get accountSyncedNote =>
+      'Ваша падпіска і астатак аналізаў аднолькавыя на ўсіх прыладах.';
 
   @override
   String get signInTitle => 'Уваход у WhatStock';
@@ -1018,19 +1042,23 @@ class AppLocalizationsBe extends AppLocalizations {
   String get useDifferentEmail => 'Выкарыстаць іншы адрас';
 
   @override
-  String get errInvalidCode => 'Код няправільны або тэрмін яго дзеяння скончыўся.';
+  String get errInvalidCode =>
+      'Код няправільны або тэрмін яго дзеяння скончыўся.';
 
   @override
   String get errInvalidEmail => 'Увядзіце сапраўдны адрас электроннай пошты.';
 
   @override
-  String get errSignInFailed => 'Не ўдалося ўвайсці. Праверце падключэнне да інтэрнэту і паспрабуйце яшчэ раз.';
+  String get errSignInFailed =>
+      'Не ўдалося ўвайсці. Праверце падключэнне да інтэрнэту і паспрабуйце яшчэ раз.';
 
   @override
-  String get checkoutWaiting => 'Завяршыце аплату ў браўзеры. Праграма абновіцца аўтаматычна, калі ўсё будзе гатова.';
+  String get checkoutWaiting =>
+      'Завяршыце аплату ў браўзеры. Праграма абновіцца аўтаматычна, калі ўсё будзе гатова.';
 
   @override
-  String get paymentViaStripe => 'Бяспечная аплата ў браўзеры праз Stripe. Скасаваць можна ў любы час.';
+  String get paymentViaStripe =>
+      'Бяспечная аплата ў браўзеры праз Stripe. Скасаваць можна ў любы час.';
 
   @override
   String get paymentViaStore =>
@@ -1043,7 +1071,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get doubleOptionTitle => 'Двайны націск Option';
 
   @override
-  String get doubleOptionSubtitle => 'Хуткі двайны націск клавішы Option таксама выклікае WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Хуткі двайны націск клавішы Option таксама выклікае WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1173,7 +1202,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get portfolioRemove => 'Выдаліць';
 
   @override
-  String get portfolioExcluded => 'Пазіцыі без цаны або валютнага курсу не ўлічваюцца ў выніках.';
+  String get portfolioExcluded =>
+      'Пазіцыі без цаны або валютнага курсу не ўлічваюцца ў выніках.';
 
   @override
   String get priceAlerts => 'Цэнавыя апавяшчэнні';
@@ -1309,7 +1339,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get accountDeleted => 'Ваш уліковы запіс выдалены.';
 
   @override
-  String get errDeleteAccount => 'Не ўдалося выдаліць уліковы запіс. Праверце злучэнне і паспрабуйце яшчэ раз.';
+  String get errDeleteAccount =>
+      'Не ўдалося выдаліць уліковы запіс. Праверце злучэнне і паспрабуйце яшчэ раз.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1335,4 +1366,10 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Гадавая падпіска аўтаматычна падаўжаецца кожны год, пакуль вы яе не скасуеце. Афармляючы падпіску, вы згаджаецеся з Умовамі выкарыстання і Палітыкай прыватнасці.';
+
+  @override
+  String get myAnalyses => 'Мае аналізы';
+
+  @override
+  String get navAlerts => 'Апавяшчэнні';
 }

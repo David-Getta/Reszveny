@@ -306,7 +306,12 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count талдаушы', one: '1 талдаушы');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count талдаушы',
+      one: '1 талдаушы',
+    );
     return '$_temp0';
   }
 
@@ -334,10 +339,12 @@ class AppLocalizationsKk extends AppLocalizations {
   String get recognitionRawText => 'Суреттен оқылған мәтін';
 
   @override
-  String get errMissingAnthropicKey => 'Суретті тану бапталмаған (ANTHROPIC_API_KEY жоқ). Тикерді қолмен енгізіңіз.';
+  String get errMissingAnthropicKey =>
+      'Суретті тану бапталмаған (ANTHROPIC_API_KEY жоқ). Тикерді қолмен енгізіңіз.';
 
   @override
-  String get errRecognitionUnreachable => 'Тану қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
+  String get errRecognitionUnreachable =>
+      'Тану қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -348,23 +355,27 @@ class AppLocalizationsKk extends AppLocalizations {
   String get errRecognitionRefused => 'Тану қызметі бұл суретті өңдей алмады.';
 
   @override
-  String get errRecognitionTruncated => 'Тану қызметінің жауабы үзіліп қалды. Қайталап көріңіз.';
+  String get errRecognitionTruncated =>
+      'Тану қызметінің жауабы үзіліп қалды. Қайталап көріңіз.';
 
   @override
-  String get errRecognitionBadResponse => 'Тану қызметінен күтпеген жауап келді.';
+  String get errRecognitionBadResponse =>
+      'Тану қызметінен күтпеген жауап келді.';
 
   @override
   String get errRecognitionEmpty => 'Тану қызметі бос жауап қайтарды.';
 
   @override
-  String get errMissingFinnhubKey => 'Нарықтық деректер бапталмаған (FINNHUB_API_KEY жоқ).';
+  String get errMissingFinnhubKey =>
+      'Нарықтық деректер бапталмаған (FINNHUB_API_KEY жоқ).';
 
   @override
   String get errMarketUnreachable =>
       'Нарықтық деректер қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
 
   @override
-  String get errMarketRateLimited => 'Нарықтық деректер қызметіне тым көп сұрау жіберілді. Бір минут күтіңіз.';
+  String get errMarketRateLimited =>
+      'Нарықтық деректер қызметіне тым көп сұрау жіберілді. Бір минут күтіңіз.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +383,8 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Нарықтық деректер қызметінен күтпеген жауап келді.';
+  String get errMarketBadResponse =>
+      'Нарықтық деректер қызметінен күтпеген жауап келді.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +484,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get aiRegenerate => 'Қайта жасау';
 
   @override
-  String get aiGenerating => 'Талдау дайындалуда… бұл бір-екі минутқа созылуы мүмкін.';
+  String get aiGenerating =>
+      'Талдау дайындалуда… бұл бір-екі минутқа созылуы мүмкін.';
 
   @override
   String get aiSources => 'Дереккөздер';
@@ -487,10 +500,12 @@ class AppLocalizationsKk extends AppLocalizations {
       'Ашық деректер мен соңғы жаңалықтарға негізделген, AI жасаған талдау. Онда қателер болуы немесе ол ескіруі мүмкін және ол инвестициялық кеңес болып табылмайды.';
 
   @override
-  String get errAiNotConfigured => 'AI талдауы бапталмаған (ANTHROPIC_API_KEY жоқ).';
+  String get errAiNotConfigured =>
+      'AI талдауы бапталмаған (ANTHROPIC_API_KEY жоқ).';
 
   @override
-  String get errAiUnreachable => 'AI қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
+  String get errAiUnreachable =>
+      'AI қызметіне қосылу мүмкін болмады. Интернет байланысын тексеріңіз.';
 
   @override
   String errAiHttp(String status) {
@@ -522,7 +537,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get rangeFiveYears => '5Ж';
 
   @override
-  String get chartUnavailable => 'Ағымдағы дерек көзінде баға тарихы қолжетімсіз.';
+  String get chartUnavailable =>
+      'Ағымдағы дерек көзінде баға тарихы қолжетімсіз.';
 
   @override
   String get sectionStatements => 'Қаржылық есептілік (жылдық)';
@@ -549,7 +565,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операциялық ақша ағыны';
 
   @override
-  String get statementsUnavailable => 'Бұл акция үшін жарияланған қаржылық есептілік қолжетімсіз.';
+  String get statementsUnavailable =>
+      'Бұл акция үшін жарияланған қаржылық есептілік қолжетімсіз.';
 
   @override
   String get launchAtLogin => 'Жүйеге кіргенде іске қосу';
@@ -558,7 +575,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get hotkeyLabel => 'Ғаламдық пернелер тіркесімі';
 
   @override
-  String get hotkeyRecordHint => 'Осы жерді басып, жаңа пернелер тіркесімін басыңыз';
+  String get hotkeyRecordHint =>
+      'Осы жерді басып, жаңа пернелер тіркесімін басыңыз';
 
   @override
   String get hotkeyReset => 'Әдепкі мәнге қайтару';
@@ -579,7 +597,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get removeFromFavorites => 'Таңдаулылардан алып тастау';
 
   @override
-  String get noFavorites => 'Әзірге таңдаулылар жоқ. Қосу үшін акциядағы жұлдызшаны түртіңіз.';
+  String get noFavorites =>
+      'Әзірге таңдаулылар жоқ. Қосу үшін акциядағы жұлдызшаны түртіңіз.';
 
   @override
   String get displayCurrency => 'Көрсету валютасы';
@@ -626,7 +645,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get updateDownloading => 'Жаңарту фондық режимде жүктелуде…';
 
   @override
-  String get updateDownloaded => 'Жаңарту дайын. Орнату үшін қолданбаны қайта іске қосыңыз.';
+  String get updateDownloaded =>
+      'Жаңарту дайын. Орнату үшін қолданбаны қайта іске қосыңыз.';
 
   @override
   String get updateNow => 'Жаңарту';
@@ -635,7 +655,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get restartNow => 'Қайта іске қосу';
 
   @override
-  String get updatesViaStore => 'Жаңартулар қолданбалар дүкені арқылы автоматты түрде келеді.';
+  String get updatesViaStore =>
+      'Жаңартулар қолданбалар дүкені арқылы автоматты түрде келеді.';
 
   @override
   String get updateCheckFailed => 'Жаңартуларды тексеру мүмкін болмады.';
@@ -683,7 +704,8 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Тегін сынақ мерзіміңіз аяқталды. Талдауды жалғастыру үшін тариф таңдаңыз.';
+  String get trialExpired =>
+      'Тегін сынақ мерзіміңіз аяқталды. Талдауды жалғастыру үшін тариф таңдаңыз.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -713,7 +735,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get perMonth => '/ ай';
 
   @override
-  String get extraPacksTitle => 'Көбірек керек пе? Қосымша талдаулар сатып алыңыз';
+  String get extraPacksTitle =>
+      'Көбірек керек пе? Қосымша талдаулар сатып алыңыз';
 
   @override
   String get extraPacksHint =>
@@ -749,7 +772,8 @@ class AppLocalizationsKk extends AppLocalizations {
       'Бұл кезеңге талдауларыңыз қалмады. Жоғарырақ тарифке өтіңіз немесе қосымша талдаулар сатып алыңыз.';
 
   @override
-  String get errTrialExpired => 'Тегін сынақ мерзіміңіз аяқталды. Жалғастыру үшін тариф таңдаңыз.';
+  String get errTrialExpired =>
+      'Тегін сынақ мерзіміңіз аяқталды. Жалғастыру үшін тариф таңдаңыз.';
 
   @override
   String get errNoPlan => 'AI талдауы үшін белсенді тариф қажет.';
@@ -761,7 +785,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get usageTitle => 'Пайдалану';
 
   @override
-  String get demoPurchaseNote => 'Демо төлем: бұл платформада сатып алулар симуляцияланады.';
+  String get demoPurchaseNote =>
+      'Демо төлем: бұл платформада сатып алулар симуляцияланады.';
 
   @override
   String get mostPopular => 'Ең танымал';
@@ -801,7 +826,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Барлық бөлімі бар толық есеп.';
 
   @override
-  String get aiDepthDeepDesc => 'Көбірек веб-іздеу, бәсекелестермен салыстыру және тереңірек мәліметтер.';
+  String get aiDepthDeepDesc =>
+      'Көбірек веб-іздеу, бәсекелестермен салыстыру және тереңірек мәліметтер.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -829,16 +855,19 @@ class AppLocalizationsKk extends AppLocalizations {
   String get aiReaderExperienced => 'Тәжірибелі';
 
   @override
-  String get aiReaderBeginnerDesc => 'Қарапайым тіл; әр арнайы термин түсіндіріледі.';
+  String get aiReaderBeginnerDesc =>
+      'Қарапайым тіл; әр арнайы термин түсіндіріледі.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Стандартты қаржы терминологиясы бар тығызырақ мәтін.';
+  String get aiReaderExperiencedDesc =>
+      'Стандартты қаржы терминологиясы бар тығызырақ мәтін.';
 
   @override
   String get aiCounterArgument => 'Ең күшті қарсы дәлел';
 
   @override
-  String get aiCounterArgumentDesc => 'Қорытынды әрқашан өз тұжырымына қарсы ең күшті дәлелмен аяқталады.';
+  String get aiCounterArgumentDesc =>
+      'Қорытынды әрқашан өз тұжырымына қарсы ең күшті дәлелмен аяқталады.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -931,7 +960,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get upcomingEvents => 'Алдағы оқиғалар';
 
   @override
-  String get outlookChartNote => 'Шамамен алынған аралықтар; ықтималдықтар – болжам емес, шамалап берілген бағалар.';
+  String get outlookChartNote =>
+      'Шамамен алынған аралықтар; ықтималдықтар – болжам емес, шамалап берілген бағалар.';
 
   @override
   String get accountTitle => 'Аккаунт';
@@ -946,10 +976,12 @@ class AppLocalizationsKk extends AppLocalizations {
   String get notSignedIn => 'Аккаунтқа кірмегенсіз';
 
   @override
-  String get accountBenefit => 'Жазылымыңыз барлық құрылғыңызда жұмыс істеуі үшін аккаунтқа кіріңіз.';
+  String get accountBenefit =>
+      'Жазылымыңыз барлық құрылғыңызда жұмыс істеуі үшін аккаунтқа кіріңіз.';
 
   @override
-  String get accountSyncedNote => 'Жазылымыңыз бен қалған талдауларыңыз барлық құрылғыда бірдей.';
+  String get accountSyncedNote =>
+      'Жазылымыңыз бен қалған талдауларыңыз барлық құрылғыда бірдей.';
 
   @override
   String get signInTitle => 'WhatStock-қа кіру';
@@ -978,16 +1010,20 @@ class AppLocalizationsKk extends AppLocalizations {
   String get errInvalidCode => 'Код қате немесе оның мерзімі өтіп кеткен.';
 
   @override
-  String get errInvalidEmail => 'Жарамды электрондық пошта мекенжайын енгізіңіз.';
+  String get errInvalidEmail =>
+      'Жарамды электрондық пошта мекенжайын енгізіңіз.';
 
   @override
-  String get errSignInFailed => 'Кіру сәтсіз аяқталды. Байланысты тексеріп, қайталап көріңіз.';
+  String get errSignInFailed =>
+      'Кіру сәтсіз аяқталды. Байланысты тексеріп, қайталап көріңіз.';
 
   @override
-  String get checkoutWaiting => 'Төлемді браузерде аяқтаңыз. Төлем аяқталғанда қолданба автоматты түрде жаңартылады.';
+  String get checkoutWaiting =>
+      'Төлемді браузерде аяқтаңыз. Төлем аяқталғанда қолданба автоматты түрде жаңартылады.';
 
   @override
-  String get paymentViaStripe => 'Stripe арқылы браузерде қауіпсіз төлем. Кез келген уақытта бас тартуға болады.';
+  String get paymentViaStripe =>
+      'Stripe арқылы браузерде қауіпсіз төлем. Кез келген уақытта бас тартуға болады.';
 
   @override
   String get paymentViaStore =>
@@ -1000,7 +1036,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get doubleOptionTitle => 'Option пернесін екі рет басу';
 
   @override
-  String get doubleOptionSubtitle => 'Option пернесін жылдам екі рет басу да WhatStock-ты шақырады.';
+  String get doubleOptionSubtitle =>
+      'Option пернесін жылдам екі рет басу да WhatStock-ты шақырады.';
 
   @override
   String get doubleOptionPermission =>
@@ -1022,7 +1059,12 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years жыл', one: '1 жыл');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years жыл',
+      one: '1 жыл',
+    );
     return '$_temp0';
   }
 
@@ -1123,7 +1165,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get portfolioRemove => 'Жою';
 
   @override
-  String get portfolioExcluded => 'Бағасы немесе валюта бағамы жоқ позициялар жиынтыққа кірмейді.';
+  String get portfolioExcluded =>
+      'Бағасы немесе валюта бағамы жоқ позициялар жиынтыққа кірмейді.';
 
   @override
   String get priceAlerts => 'Баға ескертулері';
@@ -1165,7 +1208,8 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Әзірге баға ескертулері жоқ. Ескерту орнату үшін акцияны ашып, қоңырауды түртіңіз.';
+  String get alertsEmpty =>
+      'Әзірге баға ескертулері жоқ. Ескерту орнату үшін акцияны ашып, қоңырауды түртіңіз.';
 
   @override
   String get alertsNote =>
@@ -1258,7 +1302,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get accountDeleted => 'Аккаунтыңыз жойылды.';
 
   @override
-  String get errDeleteAccount => 'Аккаунтты жою мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
+  String get errDeleteAccount =>
+      'Аккаунтты жою мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1284,4 +1329,10 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Жылдық жазылым сіз одан бас тартқанша жыл сайын автоматты түрде ұзартылады. Жазылу арқылы сіз Пайдалану шарттары мен Құпиялылық саясатын қабылдайсыз.';
+
+  @override
+  String get myAnalyses => 'Менің талдауларым';
+
+  @override
+  String get navAlerts => 'Ескертулер';
 }

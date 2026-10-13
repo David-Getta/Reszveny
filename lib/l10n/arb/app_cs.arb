@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 měsíce zdarma",
   "perYear": "/ rok",
   "pricePerMonthApprox": "≈ {price} měsíčně",
-  "subscriptionLegalYearly": "Roční předplatné se každý rok automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů."
+  "subscriptionLegalYearly": "Roční předplatné se každý rok automaticky obnovuje, dokud ho nezrušíte. Předplacením souhlasíte s Podmínkami používání a Zásadami ochrany osobních údajů.",
+  "myAnalyses": "Moje analýzy",
+  "navAlerts": "Upozornění"
 }

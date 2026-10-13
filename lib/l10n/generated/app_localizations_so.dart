@@ -306,7 +306,12 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count falanqeeye', one: '1 falanqeeye');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count falanqeeye',
+      one: '1 falanqeeye',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +343,8 @@ class AppLocalizationsSo extends AppLocalizations {
       'Aqoonsiga sawirka lama dejin (ANTHROPIC_API_KEY ma jiro). Astaanta gacanta ku geli.';
 
   @override
-  String get errRecognitionUnreachable => 'Adeegga aqoonsiga lama gaari karin. Hubi xiriirka internetkaaga.';
+  String get errRecognitionUnreachable =>
+      'Adeegga aqoonsiga lama gaari karin. Hubi xiriirka internetkaaga.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,25 +352,32 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Adeegga aqoonsigu ma habayn karin sawirkan.';
+  String get errRecognitionRefused =>
+      'Adeegga aqoonsigu ma habayn karin sawirkan.';
 
   @override
-  String get errRecognitionTruncated => 'Jawaabta aqoonsiga way go\'day. Fadlan isku day mar kale.';
+  String get errRecognitionTruncated =>
+      'Jawaabta aqoonsiga way go\'day. Fadlan isku day mar kale.';
 
   @override
-  String get errRecognitionBadResponse => 'Jawaab aan la filayn ayaa ka timid adeegga aqoonsiga.';
+  String get errRecognitionBadResponse =>
+      'Jawaab aan la filayn ayaa ka timid adeegga aqoonsiga.';
 
   @override
-  String get errRecognitionEmpty => 'Adeegga aqoonsigu wuxuu soo celiyay jawaab madhan.';
+  String get errRecognitionEmpty =>
+      'Adeegga aqoonsigu wuxuu soo celiyay jawaab madhan.';
 
   @override
-  String get errMissingFinnhubKey => 'Xogta suuqa lama dejin (FINNHUB_API_KEY ma jiro).';
+  String get errMissingFinnhubKey =>
+      'Xogta suuqa lama dejin (FINNHUB_API_KEY ma jiro).';
 
   @override
-  String get errMarketUnreachable => 'Adeegga xogta suuqa lama gaari karin. Hubi xiriirka internetkaaga.';
+  String get errMarketUnreachable =>
+      'Adeegga xogta suuqa lama gaari karin. Hubi xiriirka internetkaaga.';
 
   @override
-  String get errMarketRateLimited => 'Codsiyo aad u badan ayaa loo diray adeegga xogta suuqa. Fadlan sug hal daqiiqo.';
+  String get errMarketRateLimited =>
+      'Codsiyo aad u badan ayaa loo diray adeegga xogta suuqa. Fadlan sug hal daqiiqo.';
 
   @override
   String errMarketHttp(String status) {
@@ -372,7 +385,8 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Jawaab aan la filayn ayaa ka timid adeegga xogta suuqa.';
+  String get errMarketBadResponse =>
+      'Jawaab aan la filayn ayaa ka timid adeegga xogta suuqa.';
 
   @override
   String errNoQuote(String symbol) {
@@ -472,7 +486,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get aiRegenerate => 'Dib u samee';
 
   @override
-  String get aiGenerating => 'Falanqaynta waa la diyaarinayaa… tani waxay qaadan kartaa hal ama laba daqiiqo.';
+  String get aiGenerating =>
+      'Falanqaynta waa la diyaarinayaa… tani waxay qaadan kartaa hal ama laba daqiiqo.';
 
   @override
   String get aiSources => 'Ilaha';
@@ -487,10 +502,12 @@ class AppLocalizationsSo extends AppLocalizations {
       'Falanqayn uu AI sameeyay oo ku salaysan xog dadweyne iyo warar dhawaan ah. Waxay yeelan kartaa khaladaad ama way duugoobi kartaa, mana aha talo maalgashi.';
 
   @override
-  String get errAiNotConfigured => 'Falanqaynta AI lama dejin (ANTHROPIC_API_KEY ma jiro).';
+  String get errAiNotConfigured =>
+      'Falanqaynta AI lama dejin (ANTHROPIC_API_KEY ma jiro).';
 
   @override
-  String get errAiUnreachable => 'Adeegga AI lama gaari karin. Hubi xiriirka internetkaaga.';
+  String get errAiUnreachable =>
+      'Adeegga AI lama gaari karin. Hubi xiriirka internetkaaga.';
 
   @override
   String errAiHttp(String status) {
@@ -501,7 +518,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get errAiRefused => 'Adeegga AI wuu diiday inuu falanqeeyo saamigan.';
 
   @override
-  String get errAiBadResponse => 'Jawaab aan la filayn ayaa ka timid adeegga AI.';
+  String get errAiBadResponse =>
+      'Jawaab aan la filayn ayaa ka timid adeegga AI.';
 
   @override
   String get sectionChart => 'Jaantuska qiimaha';
@@ -522,7 +540,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get rangeFiveYears => '5 sano';
 
   @override
-  String get chartUnavailable => 'Taariikhda qiimaha lagama heli karo isha xogta ee hadda.';
+  String get chartUnavailable =>
+      'Taariikhda qiimaha lagama heli karo isha xogta ee hadda.';
 
   @override
   String get sectionStatements => 'Warbixinnada maaliyadda (sannadle)';
@@ -549,7 +568,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get labelOperatingCashFlow => 'Socodka lacagta hawlgalka';
 
   @override
-  String get statementsUnavailable => 'Warbixinno maaliyadeed oo la soo gudbiyay lagama hayo saamigan.';
+  String get statementsUnavailable =>
+      'Warbixinno maaliyadeed oo la soo gudbiyay lagama hayo saamigan.';
 
   @override
   String get launchAtLogin => 'Ku bilow marka aad gasho';
@@ -558,7 +578,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get hotkeyLabel => 'Furaha gaaban ee guud';
 
   @override
-  String get hotkeyRecordHint => 'Halkan guji, kadibna riix isku-darka furayaasha cusub';
+  String get hotkeyRecordHint =>
+      'Halkan guji, kadibna riix isku-darka furayaasha cusub';
 
   @override
   String get hotkeyReset => 'Ku celi caadiga';
@@ -579,7 +600,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get removeFromFavorites => 'Ka saar kuwa la jecel yahay';
 
   @override
-  String get noFavorites => 'Weli ma jiraan kuwa la jecel yahay. Taabo xiddigta saamiga si aad ugu darto.';
+  String get noFavorites =>
+      'Weli ma jiraan kuwa la jecel yahay. Taabo xiddigta saamiga si aad ugu darto.';
 
   @override
   String get displayCurrency => 'Lacagta muujinta';
@@ -623,10 +645,12 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get updateDownloading => 'Cusboonaysiinta waxaa lagu soo dejinayaa gadaasha…';
+  String get updateDownloading =>
+      'Cusboonaysiinta waxaa lagu soo dejinayaa gadaasha…';
 
   @override
-  String get updateDownloaded => 'Cusboonaysiintu waa diyaar. Dib u bilow si aad u rakibto.';
+  String get updateDownloaded =>
+      'Cusboonaysiintu waa diyaar. Dib u bilow si aad u rakibto.';
 
   @override
   String get updateNow => 'Cusboonaysii';
@@ -635,7 +659,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get restartNow => 'Dib u bilow';
 
   @override
-  String get updatesViaStore => 'Cusboonaysiintu si toos ah ayay ugu timaaddaa dukaanka app-ka.';
+  String get updatesViaStore =>
+      'Cusboonaysiintu si toos ah ayay ugu timaaddaa dukaanka app-ka.';
 
   @override
   String get updateCheckFailed => 'Cusboonaysiin lama hubin karin.';
@@ -714,7 +739,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get perMonth => '/ bishii';
 
   @override
-  String get extraPacksTitle => 'Ma u baahan tahay wax badan? Iibso falanqayn dheeraad ah';
+  String get extraPacksTitle =>
+      'Ma u baahan tahay wax badan? Iibso falanqayn dheeraad ah';
 
   @override
   String get extraPacksHint =>
@@ -750,10 +776,12 @@ class AppLocalizationsSo extends AppLocalizations {
       'Muddadan falanqayn kuuma harsana. Kor u qaad qorshahaaga ama iibso falanqayn dheeraad ah.';
 
   @override
-  String get errTrialExpired => 'Tijaabadaadii bilaashka ahayd way dhammaatay. Dooro qorshe si aad u sii wadato.';
+  String get errTrialExpired =>
+      'Tijaabadaadii bilaashka ahayd way dhammaatay. Dooro qorshe si aad u sii wadato.';
 
   @override
-  String get errNoPlan => 'Falanqaynta AI waxay u baahan tahay qorshe firfircoon.';
+  String get errNoPlan =>
+      'Falanqaynta AI waxay u baahan tahay qorshe firfircoon.';
 
   @override
   String get viewPlans => 'Eeg qorshayaasha';
@@ -762,7 +790,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get usageTitle => 'Isticmaalka';
 
   @override
-  String get demoPurchaseNote => 'Lacag-bixin bandhig: nidaamkan iibsashadu waa ku-dayasho keliya.';
+  String get demoPurchaseNote =>
+      'Lacag-bixin bandhig: nidaamkan iibsashadu waa ku-dayasho keliya.';
 
   @override
   String get mostPopular => 'Ugu caansan';
@@ -802,7 +831,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get aiDepthStandardDesc => 'Warbixin dhammaystiran oo leh qayb kasta.';
 
   @override
-  String get aiDepthDeepDesc => 'Raadin web oo badan, isbarbardhig shirkadaha la midka ah iyo faahfaahin qoto dheer.';
+  String get aiDepthDeepDesc =>
+      'Raadin web oo badan, isbarbardhig shirkadaha la midka ah iyo faahfaahin qoto dheer.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -830,10 +860,12 @@ class AppLocalizationsSo extends AppLocalizations {
   String get aiReaderExperienced => 'Khibrad leh';
 
   @override
-  String get aiReaderBeginnerDesc => 'Luqad fudud; erey farsamo kasta waa la sharxayaa.';
+  String get aiReaderBeginnerDesc =>
+      'Luqad fudud; erey farsamo kasta waa la sharxayaa.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Qoraal cufan oo adeegsada ereyada maaliyadda ee caadiga ah.';
+  String get aiReaderExperiencedDesc =>
+      'Qoraal cufan oo adeegsada ereyada maaliyadda ee caadiga ah.';
 
   @override
   String get aiCounterArgument => 'Doodda ka soo horjeedda ee ugu xooggan';
@@ -933,7 +965,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get upcomingEvents => 'Dhacdooyinka soo socda';
 
   @override
-  String get outlookChartNote => 'Xadad tilmaan ah; suurtagalnimadu waa qiyaas guud, ma aha saadaal.';
+  String get outlookChartNote =>
+      'Xadad tilmaan ah; suurtagalnimadu waa qiyaas guud, ma aha saadaal.';
 
   @override
   String get accountTitle => 'Akoonka';
@@ -948,10 +981,12 @@ class AppLocalizationsSo extends AppLocalizations {
   String get notSignedIn => 'Ma aadan gelin';
 
   @override
-  String get accountBenefit => 'Gal si rukummadaadu uga shaqayso dhammaan qalabkaaga.';
+  String get accountBenefit =>
+      'Gal si rukummadaadu uga shaqayso dhammaan qalabkaaga.';
 
   @override
-  String get accountSyncedNote => 'Rukummadaada iyo falanqaynta kuu harsan waa isku mid qalab kasta.';
+  String get accountSyncedNote =>
+      'Rukummadaada iyo falanqaynta kuu harsan waa isku mid qalab kasta.';
 
   @override
   String get signInTitle => 'Gal WhatStock';
@@ -983,7 +1018,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get errInvalidEmail => 'Fadlan geli ciwaan iimayl oo sax ah.';
 
   @override
-  String get errSignInFailed => 'Galitaanku wuu fashilmay. Hubi xiriirkaaga oo isku day mar kale.';
+  String get errSignInFailed =>
+      'Galitaanku wuu fashilmay. Hubi xiriirkaaga oo isku day mar kale.';
 
   @override
   String get checkoutWaiting =>
@@ -1004,7 +1040,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get doubleOptionTitle => 'Laba jeer riix Option';
 
   @override
-  String get doubleOptionSubtitle => 'Riixidda furaha Option laba jeer oo degdeg ah ayaa sidoo kale furaysa WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Riixidda furaha Option laba jeer oo degdeg ah ayaa sidoo kale furaysa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1026,7 +1063,12 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years sano', one: '1 sano');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years sano',
+      one: '1 sano',
+    );
     return '$_temp0';
   }
 
@@ -1127,7 +1169,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get portfolioRemove => 'Ka saar';
 
   @override
-  String get portfolioExcluded => 'Haysashooyinka aan lahayn qiime ama sicir sarrif waa laga reebay wadarta.';
+  String get portfolioExcluded =>
+      'Haysashooyinka aan lahayn qiime ama sicir sarrif waa laga reebay wadarta.';
 
   @override
   String get priceAlerts => 'Digniinaha qiimaha';
@@ -1169,7 +1212,8 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Weli ma jiraan digniino qiimo. Fur saami oo taabo gambaleelka si aad u dejiso.';
+  String get alertsEmpty =>
+      'Weli ma jiraan digniino qiimo. Fur saami oo taabo gambaleelka si aad u dejiso.';
 
   @override
   String get alertsNote =>
@@ -1262,7 +1306,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get accountDeleted => 'Akoonkaaga waa la tirtiray.';
 
   @override
-  String get errDeleteAccount => 'Akoonka lama tirtiri karin. Hubi xiriirkaaga oo isku day mar kale.';
+  String get errDeleteAccount =>
+      'Akoonka lama tirtiri karin. Hubi xiriirkaaga oo isku day mar kale.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1288,4 +1333,10 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Rukummooyinka sannadlaha ah si toos ah ayay u cusboonaadaan sannad kasta ilaa aad joojiso. Markaad rukunto waxaad aqbashaa Shuruudaha Isticmaalka iyo Siyaasadda Qarsoodiga.';
+
+  @override
+  String get myAnalyses => 'Falanqaynahayga';
+
+  @override
+  String get navAlerts => 'Digniinaha';
 }

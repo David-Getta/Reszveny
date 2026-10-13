@@ -13,7 +13,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ejapyhy peteĩ acción raʼãnga ha eikuaa opa mbaʼe hese.';
+  String get homeTagline =>
+      'Ejapyhy peteĩ acción raʼãnga ha eikuaa opa mbaʼe hese.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analista', one: '1 analista');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analista',
+      one: '1 analista',
+    );
     return '$_temp0';
   }
 
@@ -347,19 +353,24 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Jehechakuaa mbaʼepytyvõrã ndaikatúi ohesaʼỹijo ko taʼãnga.';
+  String get errRecognitionRefused =>
+      'Jehechakuaa mbaʼepytyvõrã ndaikatúi ohesaʼỹijo ko taʼãnga.';
 
   @override
-  String get errRecognitionTruncated => 'Jehechakuaa mbohovái oñekytĩ. Ehaʼã jey.';
+  String get errRecognitionTruncated =>
+      'Jehechakuaa mbohovái oñekytĩ. Ehaʼã jey.';
 
   @override
-  String get errRecognitionBadResponse => 'Mbohovái oñehaʼarõʼỹva jehechakuaa mbaʼepytyvõrãgui.';
+  String get errRecognitionBadResponse =>
+      'Mbohovái oñehaʼarõʼỹva jehechakuaa mbaʼepytyvõrãgui.';
 
   @override
-  String get errRecognitionEmpty => 'Jehechakuaa mbaʼepytyvõrã omeʼẽ mbohovái nandi.';
+  String get errRecognitionEmpty =>
+      'Jehechakuaa mbaʼepytyvõrã omeʼẽ mbohovái nandi.';
 
   @override
-  String get errMissingFinnhubKey => 'Ñemuha mbaʼekuaarã noñembohekói (ndaipóri FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Ñemuha mbaʼekuaarã noñembohekói (ndaipóri FINNHUB_API_KEY).';
 
   @override
   String get errMarketUnreachable =>
@@ -375,7 +386,8 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Mbohovái oñehaʼarõʼỹva ñemuha mbaʼekuaarã mbaʼepytyvõrãgui.';
+  String get errMarketBadResponse =>
+      'Mbohovái oñehaʼarõʼỹva ñemuha mbaʼekuaarã mbaʼepytyvõrãgui.';
 
   @override
   String errNoQuote(String symbol) {
@@ -475,7 +487,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get aiRegenerate => 'Emoheñói jey';
 
   @override
-  String get aiGenerating => 'Ojembosakoʼihína jehesaʼỹijo… ikatu ohasa peteĩ térã mokõi aravoʼi.';
+  String get aiGenerating =>
+      'Ojembosakoʼihína jehesaʼỹijo… ikatu ohasa peteĩ térã mokõi aravoʼi.';
 
   @override
   String get aiSources => 'Teñoiha';
@@ -490,10 +503,12 @@ class AppLocalizationsGn extends AppLocalizations {
       'Jehesaʼỹijo AI omoheñóiva mbaʼekuaarã opavavegua ha marandu ramovéva rupive. Ikatu oguereko jejavy térã ndahaʼevéi koʼag̃agua, ha ndahaʼéi ñemoñeʼẽ inversión rehegua.';
 
   @override
-  String get errAiNotConfigured => 'AI jehesaʼỹijo noñembohekói (ndaipóri ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'AI jehesaʼỹijo noñembohekói (ndaipóri ANTHROPIC_API_KEY).';
 
   @override
-  String get errAiUnreachable => 'Ndaikatúi oñeike AI mbaʼepytyvõrãme. Ehecha oiko porãpa ne ñanduti.';
+  String get errAiUnreachable =>
+      'Ndaikatúi oñeike AI mbaʼepytyvõrãme. Ehecha oiko porãpa ne ñanduti.';
 
   @override
   String errAiHttp(String status) {
@@ -525,7 +540,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get rangeFiveYears => '5 ary';
 
   @override
-  String get chartUnavailable => 'Tepy rembiasakue ndaipóri ko mbaʼekuaarã reñoihápe.';
+  String get chartUnavailable =>
+      'Tepy rembiasakue ndaipóri ko mbaʼekuaarã reñoihápe.';
 
   @override
   String get sectionStatements => 'Kuatia viru rehegua (arygua)';
@@ -552,7 +568,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get labelOperatingCashFlow => 'Flujo de caja operativo';
 
   @override
-  String get statementsUnavailable => 'Ndaipóri kuatia viru rehegua ko acción-pe g̃uarã.';
+  String get statementsUnavailable =>
+      'Ndaipóri kuatia viru rehegua ko acción-pe g̃uarã.';
 
   @override
   String get launchAtLogin => 'Emoñepyrũ eikévo apopyvusúpe';
@@ -561,7 +578,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get hotkeyLabel => 'Mbopyaʼeha opaitegua';
 
   @override
-  String get hotkeyRecordHint => 'Eikutu koʼápe, upéi ejopy tairenda ñembojoaju pyahu';
+  String get hotkeyRecordHint =>
+      'Eikutu koʼápe, upéi ejopy tairenda ñembojoaju pyahu';
 
   @override
   String get hotkeyReset => 'Embojevy ijypykuépe';
@@ -582,7 +600,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get removeFromFavorites => 'Embogue ojeguerohoryvévagui';
 
   @override
-  String get noFavorites => 'Ndaipóri gueteri ojeguerohoryvéva. Eikutu acción mbyja ombojuaju hag̃ua.';
+  String get noFavorites =>
+      'Ndaipóri gueteri ojeguerohoryvéva. Eikutu acción mbyja ombojuaju hag̃ua.';
 
   @override
   String get displayCurrency => 'Pirapire ojehechaukáva';
@@ -629,7 +648,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get updateDownloading => 'Oguejyhína ñembohekopyahu mokõihápe…';
 
   @override
-  String get updateDownloaded => 'Ñembohekopyahu oĩma. Emoñepyrũjey emohenda hag̃ua.';
+  String get updateDownloaded =>
+      'Ñembohekopyahu oĩma. Emoñepyrũjey emohenda hag̃ua.';
 
   @override
   String get updateNow => 'Embohekopyahu';
@@ -638,7 +658,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get restartNow => 'Emoñepyrũjey';
 
   @override
-  String get updatesViaStore => 'Ñembohekopyahu og̃uahẽ ijeheguiete tembiporuʼi ñemuhágui.';
+  String get updatesViaStore =>
+      'Ñembohekopyahu og̃uahẽ ijeheguiete tembiporuʼi ñemuhágui.';
 
   @override
   String get updateCheckFailed => 'Ndaikatúi ojeheka ñembohekopyahu.';
@@ -686,7 +707,8 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Nde jeporu rei opáma. Eiporavo peteĩ plan rehesaʼỹijo jey hag̃ua.';
+  String get trialExpired =>
+      'Nde jeporu rei opáma. Eiporavo peteĩ plan rehesaʼỹijo jey hag̃ua.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -719,7 +741,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get extraPacksTitle => '¿Eikotevẽve? Ejogua jehesaʼỹijo mbojuajurã';
 
   @override
-  String get extraPacksHint => 'Jehesaʼỹijo mbojuajurã arakaʼeve ndopái ha ojeporu nde cupo jasygua opa rire.';
+  String get extraPacksHint =>
+      'Jehesaʼỹijo mbojuajurã arakaʼeve ndopái ha ojeporu nde cupo jasygua opa rire.';
 
   @override
   String get buy => 'Ejogua';
@@ -751,7 +774,8 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ndereguerekovéima jehesaʼỹijo ko ára paʼũme. Embotuichave nde plan térã ejogua jehesaʼỹijo mbojuajurã.';
 
   @override
-  String get errTrialExpired => 'Nde jeporu rei opáma. Eiporavo peteĩ plan ekuʼejey hag̃ua.';
+  String get errTrialExpired =>
+      'Nde jeporu rei opáma. Eiporavo peteĩ plan ekuʼejey hag̃ua.';
 
   @override
   String get errNoPlan => 'Eikotevẽ peteĩ plan oikóva AI jehesaʼỹijorã.';
@@ -763,7 +787,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get usageTitle => 'Jeporu';
 
   @override
-  String get demoPurchaseNote => 'Jehepymeʼẽ demo: ko plataforma-pe jejogua ndahaʼéi añetegua.';
+  String get demoPurchaseNote =>
+      'Jehepymeʼẽ demo: ko plataforma-pe jejogua ndahaʼéi añetegua.';
 
   @override
   String get mostPopular => 'Ojeporuvéva';
@@ -803,7 +828,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get aiDepthStandardDesc => 'Informe tenyhẽ opaite vore reheve.';
 
   @override
-  String get aiDepthDeepDesc => 'Hetave jeheka ñandutípe, ñembojoja ambue empresa ndive ha mbaʼemimive.';
+  String get aiDepthDeepDesc =>
+      'Hetave jeheka ñandutípe, ñembojoja ambue empresa ndive ha mbaʼemimive.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -831,23 +857,27 @@ class AppLocalizationsGn extends AppLocalizations {
   String get aiReaderExperienced => 'Ikatupyrýva';
 
   @override
-  String get aiReaderBeginnerDesc => 'Ñeʼẽ hasyʼỹva; oñemyesakã opaite ñeʼẽ técnico.';
+  String get aiReaderBeginnerDesc =>
+      'Ñeʼẽ hasyʼỹva; oñemyesakã opaite ñeʼẽ técnico.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Moñeʼẽrã ipyʼỹivéva, ñeʼẽ viru rehegua jepiguáva reheve.';
+  String get aiReaderExperiencedDesc =>
+      'Moñeʼẽrã ipyʼỹivéva, ñeʼẽ viru rehegua jepiguáva reheve.';
 
   @override
   String get aiCounterArgument => 'Ñeʼẽ ombotovéva imbaretevéva';
 
   @override
-  String get aiCounterArgumentDesc => 'Mombyky opa meme ñeʼẽ imbaretevéva reheve ombotovéva ijeheguiete conclusión.';
+  String get aiCounterArgumentDesc =>
+      'Mombyky opa meme ñeʼẽ imbaretevéva reheve ombotovéva ijeheguiete conclusión.';
 
   @override
   String aiWebSearchesInfo(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count jeheka ñandutípe peve peteĩteĩ jehesaʼỹijópe nde plan ndive',
+      other:
+          '$count jeheka ñandutípe peve peteĩteĩ jehesaʼỹijópe nde plan ndive',
       one: '1 jeheka ñandutípe peve peteĩteĩ jehesaʼỹijópe nde plan ndive',
     );
     return '$_temp0';
@@ -949,10 +979,12 @@ class AppLocalizationsGn extends AppLocalizations {
   String get notSignedIn => 'Ndereikéi gueteri';
 
   @override
-  String get accountBenefit => 'Eike nde ñemboheraguapy ombaʼapo hag̃ua opa ne mbaʼeʼokápe.';
+  String get accountBenefit =>
+      'Eike nde ñemboheraguapy ombaʼapo hag̃ua opa ne mbaʼeʼokápe.';
 
   @override
-  String get accountSyncedNote => 'Nde ñemboheraguapy ha jehesaʼỹijo opytáva peteĩchaguánte opa mbaʼeʼokápe.';
+  String get accountSyncedNote =>
+      'Nde ñemboheraguapy ha jehesaʼỹijo opytáva peteĩchaguánte opa mbaʼeʼokápe.';
 
   @override
   String get signInTitle => 'Eike WhatStock-pe';
@@ -981,16 +1013,20 @@ class AppLocalizationsGn extends AppLocalizations {
   String get errInvalidCode => 'Código ndoikói térã ndoikovéima.';
 
   @override
-  String get errInvalidEmail => 'Emoinge peteĩ ñanduti veve kundaharape oikóva.';
+  String get errInvalidEmail =>
+      'Emoinge peteĩ ñanduti veve kundaharape oikóva.';
 
   @override
-  String get errSignInFailed => 'Jeike ndoikói. Ehecha ne ñanduti ha ehaʼã jey.';
+  String get errSignInFailed =>
+      'Jeike ndoikói. Ehecha ne ñanduti ha ehaʼã jey.';
 
   @override
-  String get checkoutWaiting => 'Emohuʼã jehepymeʼẽ nde kundahárape. Tembiporuʼi oñembohekopyahúta ijeheguiete opávo.';
+  String get checkoutWaiting =>
+      'Emohuʼã jehepymeʼẽ nde kundahárape. Tembiporuʼi oñembohekopyahúta ijeheguiete opávo.';
 
   @override
-  String get paymentViaStripe => 'Jehepymeʼẽ hekorosãva nde kundahárape Stripe rupive. Ikatu eheja oimeraẽ árape.';
+  String get paymentViaStripe =>
+      'Jehepymeʼẽ hekorosãva nde kundahárape Stripe rupive. Ikatu eheja oimeraẽ árape.';
 
   @override
   String get paymentViaStore =>
@@ -1003,7 +1039,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get doubleOptionTitle => 'Ejopy mokõi jey Option';
 
   @override
-  String get doubleOptionSubtitle => 'Ejopývo pyaʼe mokõi jey tairenda Option, ojuruja avei WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Ejopývo pyaʼe mokõi jey tairenda Option, ojuruja avei WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1025,7 +1062,12 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ary', one: '1 ary');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ary',
+      one: '1 ary',
+    );
     return '$_temp0';
   }
 
@@ -1126,7 +1168,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get portfolioRemove => 'Embogue';
 
   @override
-  String get portfolioExcluded => 'Umi acción ndorekóiva tepy térã ñemoambue repy noñembopapái opaitépe.';
+  String get portfolioExcluded =>
+      'Umi acción ndorekóiva tepy térã ñemoambue repy noñembopapái opaitépe.';
 
   @override
   String get priceAlerts => 'Tepy maranduʼi';
@@ -1262,7 +1305,8 @@ class AppLocalizationsGn extends AppLocalizations {
   String get accountDeleted => 'Ne mbaʼete oñembogue.';
 
   @override
-  String get errDeleteAccount => 'Ndaikatúi oñembogue mbaʼete. Ehecha ne ñanduti ha ehaʼã jey.';
+  String get errDeleteAccount =>
+      'Ndaikatúi oñembogue mbaʼete. Ehecha ne ñanduti ha ehaʼã jey.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1288,4 +1332,10 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Ñemboheraguapy oñembopyahu ijeheguiete ary ñavõ ejoko peve. Eñemboheraguapývo, emoneĩ Jeporurã reko ha Temiñemi porureko.';
+
+  @override
+  String get myAnalyses => 'Che jehesaʼỹijokuéra';
+
+  @override
+  String get navAlerts => 'Maranduʼi';
 }

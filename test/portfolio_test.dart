@@ -7,6 +7,7 @@ import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/portfolio/add_lot_dialog.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 
@@ -181,8 +182,11 @@ void main() {
 
     await tester.pageBack();
     await tester.pumpAndSettle();
-    expect(find.text('Portfolio'), findsOneWidget); // összesítő a kezdőképernyőn
-    await tester.tap(find.text('Portfolio'));
+    // Összesítő a kezdőképernyőn (a „Portfolio” felirat az alsó sávban is szerepel).
+    final summary = find.descendant(of: find.byType(PortfolioSummaryCard), matching: find.text('Portfolio'));
+    expect(summary, findsOneWidget);
+    // A „hozzáadva” SnackBar az összesítőt takarja, ezért az alsó sávon váltunk.
+    await tester.tap(find.descendant(of: find.byKey(const ValueKey('phone-nav')), matching: find.text('Portfolio')));
     await tester.pumpAndSettle();
     expect(find.text('Total value'), findsOneWidget);
     expect(find.text('2,314.50 USD'), findsWidgets);

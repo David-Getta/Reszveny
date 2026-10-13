@@ -369,5 +369,7 @@
   "yearlyDiscount": "2개월 무료",
   "perYear": "/ 년",
   "pricePerMonthApprox": "월 약 {price}",
-  "subscriptionLegalYearly": "연간 구독은 해지할 때까지 매년 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다."
+  "subscriptionLegalYearly": "연간 구독은 해지할 때까지 매년 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.",
+  "myAnalyses": "내 분석",
+  "navAlerts": "알림"
 }

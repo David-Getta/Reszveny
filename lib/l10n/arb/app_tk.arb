@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 aý mugt",
   "perYear": "/ ýyl",
   "pricePerMonthApprox": "Aýda ≈ {price}",
-  "subscriptionLegalYearly": "Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz."
+  "subscriptionLegalYearly": "Ýyllyk abuna siz ony ýatyrýançaňyz her ýyl awtomatik täzelenýär. Abuna ýazylmak bilen Ulanyş şertlerini we Gizlinlik syýasatyny kabul edýärsiňiz.",
+  "myAnalyses": "Meniň seljermelerim",
+  "navAlerts": "Duýduryşlar"
 }

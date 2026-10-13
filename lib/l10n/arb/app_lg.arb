@@ -369,5 +369,7 @@
   "yearlyDiscount": "Emyezi 2 bwereere",
   "perYear": "/ omwaka",
   "pricePerMonthApprox": "≈ {price} buli mwezi",
-  "subscriptionLegalYearly": "Okwewandiisa okw'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw'okusazaamu. Bw'owewandiisa, oba okkirizza Amateeka g'okukozesa n'Enkola y'ebyama."
+  "subscriptionLegalYearly": "Okwewandiisa okw'omwaka kwezza obuggya kwokka buli mwaka okutuusa lw'okusazaamu. Bw'owewandiisa, oba okkirizza Amateeka g'okukozesa n'Enkola y'ebyama.",
+  "myAnalyses": "Okwekenneenya kwange",
+  "navAlerts": "Okulabula"
 }

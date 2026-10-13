@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 ay pulsuz",
   "perYear": "/ il",
   "pricePerMonthApprox": "Ayda ≈ {price}",
-  "subscriptionLegalYearly": "İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz."
+  "subscriptionLegalYearly": "İllik abunəlik siz ləğv edənə qədər hər il avtomatik yenilənir. Abunə olmaqla İstifadə şərtlərini və Məxfilik siyasətini qəbul edirsiniz.",
+  "myAnalyses": "Təhlillərim",
+  "navAlerts": "Bildirişlər"
 }

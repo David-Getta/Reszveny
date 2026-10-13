@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 hónap ingyen",
   "perYear": "/ év",
   "pricePerMonthApprox": "≈ {price} havonta",
-  "subscriptionLegalYearly": "Az éves előfizetés évente automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót."
+  "subscriptionLegalYearly": "Az éves előfizetés évente automatikusan megújul, amíg le nem mondod. Az előfizetéssel elfogadod a Felhasználási feltételeket és az Adatkezelési tájékoztatót.",
+  "myAnalyses": "Elemzéseim",
+  "navAlerts": "Riasztások"
 }

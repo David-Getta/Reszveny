@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 måneder gratis",
   "perYear": "/ år",
   "pricePerMonthApprox": "≈ {price} pr. måned",
-  "subscriptionLegalYearly": "Årsabonnementet fornyes automatisk hvert år, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken."
+  "subscriptionLegalYearly": "Årsabonnementet fornyes automatisk hvert år, indtil du opsiger det. Ved at abonnere accepterer du brugsvilkårene og privatlivspolitikken.",
+  "myAnalyses": "Mine analyser",
+  "navAlerts": "Alarmer"
 }

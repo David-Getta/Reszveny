@@ -4,6 +4,7 @@ import '../../widgets/hotkey_hint.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:window_manager/window_manager.dart';
 
 import '../../app_services.dart';
@@ -35,6 +36,42 @@ class AppShell extends StatefulWidget {
 
 class _AppShellState extends State<AppShell> {
   final _navigatorKey = GlobalKey<NavigatorState>();
+
+  /// Telefonon (keskeny képernyőn) alsó menüsor: 0 = keresés (kezdőképernyő),
+  /// 1 = portfólió, 2 = riasztások, 3 = beállítások. Minden fülnek saját
+  /// navigációs verme van, így a fülek között váltva megmarad, hol tartottunk.
+  int _tab = 0;
+  final _tabKeys = [GlobalKey<NavigatorState>(), GlobalKey<NavigatorState>(), GlobalKey<NavigatorState>()];
+  final Set<int> _visitedTabs = {0};
+  bool _wide = true;
+
+  NavigatorState? get _currentNav => (_wide || _tab == 0 ? _navigatorKey : _tabKeys[_tab - 1]).currentState;
+
+  void _selectTab(int i) {
+    if (i == _tab) {
+      // Az aktív fülre koppintva vissza a fül kezdőoldalára.
+      _currentNav?.popUntil((r) => r.isFirst);
+      return;
+    }
+    setState(() {
+      _tab = i;
+      _visitedTabs.add(i);
+    });
+  }
+
+  /// Android vissza-gomb / -gesztus: előbb az aktuális fülön lép vissza, majd a
+  /// keresés fülre, és csak onnan lép ki az appból.
+  void _onBack() {
+    final nav = _currentNav;
+    if (nav != null && nav.canPop()) {
+      nav.pop();
+    } else if (!_wide && _tab != 0) {
+      setState(() => _tab = 0);
+    } else {
+      SystemNavigator.pop();
+    }
+  }
+
   bool _trayReady = false;
   AppServices? _services;
 
@@ -101,10 +138,13 @@ class _AppShellState extends State<AppShell> {
   void _openSymbol(StockCandidate candidate) {
     final services = AppServices.of(context);
     services.preferences.addRecent(candidate.symbol);
-    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: candidate)));
+    _currentNav?.push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: candidate)));
   }
 
-  void _goHome() => _navigatorKey.currentState?.popUntil((r) => r.isFirst);
+  void _goHome() {
+    if (!_wide && _tab != 0) setState(() => _tab = 0);
+    _navigatorKey.currentState?.popUntil((r) => r.isFirst);
+  }
 
   void _openPortfolio() {
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: _openSymbol)));
@@ -139,6 +179,7 @@ class _AppShellState extends State<AppShell> {
         return LayoutBuilder(
           builder: (context, constraints) {
             final wide = constraints.maxWidth >= AppShell.sidebarBreakpoint;
+            _wide = wide;
             final content = Navigator(
               key: _navigatorKey,
               onGenerateRoute: (settings) => MaterialPageRoute<void>(
@@ -146,25 +187,86 @@ class _AppShellState extends State<AppShell> {
                 builder: (_) => HomePage(onOpenSymbol: _openSymbol, showAppBarActions: !wide),
               ),
             );
-            if (!wide) return content;
-            return Scaffold(
-              body: Row(
-                children: [
-                  _Sidebar(
-                    onHome: _goHome,
-                    onNewSearch: _goHome,
-                    onOpenSymbol: _openSymbol,
-                    onOpenSettings: _openSettings,
-                    onOpenPortfolio: _openPortfolio,
-                    onOpenAlerts: _openAlerts,
-                  ),
-                  Expanded(child: content),
-                ],
+            if (!wide) {
+              return PopScope(
+                canPop: false,
+                onPopInvokedWithResult: (didPop, _) {
+                  if (!didPop) _onBack();
+                },
+                child: _phoneShell(context, content),
+              );
+            }
+            return PopScope(
+              canPop: false,
+              onPopInvokedWithResult: (didPop, _) {
+                if (!didPop) _onBack();
+              },
+              child: Scaffold(
+                body: Row(
+                  children: [
+                    _Sidebar(
+                      onHome: _goHome,
+                      onNewSearch: _goHome,
+                      onOpenSymbol: _openSymbol,
+                      onOpenSettings: _openSettings,
+                      onOpenPortfolio: _openPortfolio,
+                      onOpenAlerts: _openAlerts,
+                    ),
+                    Expanded(child: content),
+                  ],
+                ),
               ),
             );
           },
         );
       },
+    );
+  }
+}
+
+extension on _AppShellState {
+  /// Telefonos keret: a fülek tartalma és alul a menüsor (feliratokkal).
+  Widget _phoneShell(BuildContext context, Widget home) {
+    final l10n = AppLocalizations.of(context);
+    Widget tab(int i, Widget root) => !_visitedTabs.contains(i)
+        ? const SizedBox.shrink()
+        : Navigator(
+            key: _tabKeys[i - 1],
+            onGenerateRoute: (settings) => MaterialPageRoute<void>(settings: settings, builder: (_) => root),
+          );
+    return Scaffold(
+      body: IndexedStack(
+        index: _tab,
+        children: [
+          home,
+          tab(1, PortfolioPage(onOpenSymbol: _openSymbol)),
+          tab(2, AlertsPage(onOpenSymbol: _openSymbol)),
+          tab(3, const SettingsPage()),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        key: const ValueKey('phone-nav'),
+        selectedIndex: _tab,
+        onDestinationSelected: _selectTab,
+        height: 66,
+        destinations: [
+          NavigationDestination(
+            icon: const Icon(Icons.search_rounded),
+            label: MaterialLocalizations.of(context).searchFieldLabel,
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.pie_chart_outline_rounded),
+            selectedIcon: const Icon(Icons.pie_chart_rounded),
+            label: l10n.portfolio,
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.notifications_none_rounded),
+            selectedIcon: const Icon(Icons.notifications_rounded),
+            label: l10n.navAlerts,
+          ),
+          NavigationDestination(icon: const Icon(Icons.tune_rounded), label: l10n.settings),
+        ],
+      ),
     );
   }
 }

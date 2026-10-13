@@ -15,14 +15,13 @@ import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
-import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
 import '../recognition/stock_recognizer.dart';
-import '../settings/settings_page.dart';
 import '../updates/update_banner.dart';
 import '../billing/usage_chip.dart';
 import 'candidate_sheet.dart';
 import 'search_field.dart';
+import 'history_section.dart';
 
 /// Kezdőképernyő: nagy üdvözlő sor és egy keresősáv (ticker vagy cégnév,
 /// kép csatolása, kamera) – a Claude kezdőképernyőjének mintájára.
@@ -43,6 +42,21 @@ class _HomePageState extends State<HomePage> {
   String? _busyLabel;
   List<StockCandidate>? _results;
   String _lastQuery = '';
+
+  /// A keresőmező szövege: megnyitás után kiürítjük, hogy visszalépve (főleg
+  /// telefonon) ne kelljen kitörölni.
+  final _query = TextEditingController();
+
+  @override
+  void dispose() {
+    _query.dispose();
+    super.dispose();
+  }
+
+  void _open(StockCandidate c) {
+    _query.clear();
+    widget.onOpenSymbol(c);
+  }
 
   Future<void> _submit(String query) async {
     final services = AppServices.of(context);
@@ -70,14 +84,14 @@ class _HomePageState extends State<HomePage> {
     final looksLikeTicker = RegExp(r'^[A-Za-z.\-]{1,8}$').hasMatch(q);
     if (results.isEmpty) {
       if (looksLikeTicker) {
-        widget.onOpenSymbol(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
+        _open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
       } else {
         _showError(MarketDataException(AppErrorCode.noResults, detail: q));
       }
       return;
     }
     if (results.length == 1 || results.first.confidence >= 1) {
-      widget.onOpenSymbol(results.first);
+      _open(results.first);
       return;
     }
     setState(() => _results = results);
@@ -168,33 +182,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: widget.showAppBarActions
-          ? desktopAppBar(
-              context,
-              hasSidebar: false,
-              title: Text(l10n.appTitle),
-              actions: [
-                IconButton(
-                  icon: const Icon(Icons.pie_chart_outline_rounded),
-                  tooltip: l10n.portfolio,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: widget.onOpenSymbol))),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.notifications_none_rounded),
-                  tooltip: l10n.priceAlerts,
-                  onPressed: () =>
-                      Navigator.of(context)
-                          .push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: widget.onOpenSymbol))),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.tune_rounded),
-                  tooltip: l10n.settings,
-                  onPressed: () =>
-                      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const SettingsPage())),
-                ),
-                const SizedBox(width: 4),
-              ],
-            )
+          ? desktopAppBar(context, hasSidebar: false, title: Text(l10n.appTitle))
           : PreferredSize(preferredSize: const Size.fromHeight(28), child: const WindowDragArea()),
       body: CallbackShortcuts(
         bindings: {
@@ -233,6 +221,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 28),
                     SearchField(
+                      controller: _query,
                       hint: l10n.searchHint,
                       autofocus: true,
                       enabled: !_busy,
@@ -279,6 +268,9 @@ class _HomePageState extends State<HomePage> {
                       _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
                     PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                     FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
+                    // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
+                    if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
+                    MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
                     if (services.config.isDemoMode) ...[
                       const SizedBox(height: 24),
                       _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),

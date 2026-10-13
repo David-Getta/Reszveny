@@ -369,5 +369,7 @@
   "yearlyDiscount": "2 bulan percuma",
   "perYear": "/ tahun",
   "pricePerMonthApprox": "≈ {price} sebulan",
-  "subscriptionLegalYearly": "Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi."
+  "subscriptionLegalYearly": "Langganan tahunan diperbaharui secara automatik setiap tahun sehingga anda membatalkannya. Dengan melanggan, anda menerima Terma Penggunaan dan Dasar Privasi.",
+  "myAnalyses": "Analisis saya",
+  "navAlerts": "Amaran"
 }

@@ -368,6 +368,27 @@ void main() {
     await _shot(tester, 'home_phone_hu');
   });
 
+  testWidgets('phone: bottom bar, recent searches and my analyses (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1000));
+    for (final symbol in ['AAPL', 'NVDA']) {
+      await tester.enterText(find.byType(TextField), symbol);
+      await tester.testTextInput.receiveAction(TextInputAction.search);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Elemzés készítése'));
+      await tester.pumpAndSettle();
+      // A megosztás gomb az AI-elemzés fejlécében.
+      if (symbol == 'NVDA') await _shot(tester, 'detail_ai_share_phone_hu');
+      await tester.tap(find.byType(BackButton));
+      await tester.pumpAndSettle();
+    }
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -500));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'home_analyses_phone_hu');
+    await tester.tap(find.text('Beállítások').last);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'settings_tab_phone_hu');
+  });
+
   testWidgets('detail wide dark', (tester) async {
     await pumpApp(tester, _services(), const Size(1200, 1600));
     await tester.enterText(find.byType(TextField), 'AAPL');

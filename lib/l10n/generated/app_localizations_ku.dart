@@ -13,7 +13,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
+  String get homeTagline =>
+      'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
 
   @override
   String get homeHint =>
@@ -306,7 +307,12 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analîst', one: '1 analîst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîst',
+      one: '1 analîst',
+    );
     return '$_temp0';
   }
 
@@ -338,7 +344,8 @@ class AppLocalizationsKu extends AppLocalizations {
       'Naskirina wêneyan nehatiye mîhengkirin (ANTHROPIC_API_KEY tune). Sembolê bi destan binivîse.';
 
   @override
-  String get errRecognitionUnreachable => 'Negihîşt xizmeta naskirinê. Girêdana xwe ya înternetê kontrol bike.';
+  String get errRecognitionUnreachable =>
+      'Negihîşt xizmeta naskirinê. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -346,22 +353,28 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Xizmeta naskirinê nikarî vî wêneyî pêvajo bike.';
+  String get errRecognitionRefused =>
+      'Xizmeta naskirinê nikarî vî wêneyî pêvajo bike.';
 
   @override
-  String get errRecognitionTruncated => 'Bersiva naskirinê qut bû. Ji kerema xwe dîsa biceribîne.';
+  String get errRecognitionTruncated =>
+      'Bersiva naskirinê qut bû. Ji kerema xwe dîsa biceribîne.';
 
   @override
-  String get errRecognitionBadResponse => 'Bersiveke neçaverêkirî ji xizmeta naskirinê hat.';
+  String get errRecognitionBadResponse =>
+      'Bersiveke neçaverêkirî ji xizmeta naskirinê hat.';
 
   @override
-  String get errRecognitionEmpty => 'Xizmeta naskirinê bersiveke vala vegerand.';
+  String get errRecognitionEmpty =>
+      'Xizmeta naskirinê bersiveke vala vegerand.';
 
   @override
-  String get errMissingFinnhubKey => 'Daneyên bazarê nehatine mîhengkirin (FINNHUB_API_KEY tune).';
+  String get errMissingFinnhubKey =>
+      'Daneyên bazarê nehatine mîhengkirin (FINNHUB_API_KEY tune).';
 
   @override
-  String get errMarketUnreachable => 'Negihîşt xizmeta daneyên bazarê. Girêdana xwe ya înternetê kontrol bike.';
+  String get errMarketUnreachable =>
+      'Negihîşt xizmeta daneyên bazarê. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String get errMarketRateLimited =>
@@ -373,7 +386,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Bersiveke neçaverêkirî ji xizmeta daneyên bazarê hat.';
+  String get errMarketBadResponse =>
+      'Bersiveke neçaverêkirî ji xizmeta daneyên bazarê hat.';
 
   @override
   String errNoQuote(String symbol) {
@@ -473,7 +487,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiRegenerate => 'Ji nû ve çêke';
 
   @override
-  String get aiGenerating => 'Analîz tê amadekirin… dibe ku deqeyek an du deqe bidome.';
+  String get aiGenerating =>
+      'Analîz tê amadekirin… dibe ku deqeyek an du deqe bidome.';
 
   @override
   String get aiSources => 'Çavkanî';
@@ -488,10 +503,12 @@ class AppLocalizationsKu extends AppLocalizations {
       'Analîza ku AI li ser bingeha daneyên giştî û nûçeyên dawî çêkiriye. Dibe ku çewtî tê de hebin an kevn bibe, û ne şîreta veberhênanê ye.';
 
   @override
-  String get errAiNotConfigured => 'Analîza AI nehatiye mîhengkirin (ANTHROPIC_API_KEY tune).';
+  String get errAiNotConfigured =>
+      'Analîza AI nehatiye mîhengkirin (ANTHROPIC_API_KEY tune).';
 
   @override
-  String get errAiUnreachable => 'Negihîşt xizmeta AI. Girêdana xwe ya înternetê kontrol bike.';
+  String get errAiUnreachable =>
+      'Negihîşt xizmeta AI. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String errAiHttp(String status) {
@@ -523,7 +540,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get rangeFiveYears => '5S';
 
   @override
-  String get chartUnavailable => 'Dîroka bihayê ji çavkaniya daneyan a heyî ne berdest e.';
+  String get chartUnavailable =>
+      'Dîroka bihayê ji çavkaniya daneyan a heyî ne berdest e.';
 
   @override
   String get sectionStatements => 'Raporên darayî (salane)';
@@ -550,7 +568,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Herikîna nexdê ya xebitandinê';
 
   @override
-  String get statementsUnavailable => 'Ji bo vê pişkê raporên darayî yên weşandî ne berdest in.';
+  String get statementsUnavailable =>
+      'Ji bo vê pişkê raporên darayî yên weşandî ne berdest in.';
 
   @override
   String get launchAtLogin => 'Di têketinê de bide destpêkirin';
@@ -559,7 +578,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get hotkeyLabel => 'Kurteriya giştî';
 
   @override
-  String get hotkeyRecordHint => 'Li vir bitikîne, paşê kombînasyona nû ya bişkokan bitikîne';
+  String get hotkeyRecordHint =>
+      'Li vir bitikîne, paşê kombînasyona nû ya bişkokan bitikîne';
 
   @override
   String get hotkeyReset => 'Vegerîne standardê';
@@ -580,7 +600,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get removeFromFavorites => 'Ji bijareyan rake';
 
   @override
-  String get noFavorites => 'Hîn bijare tune ne. Ji bo zêdekirinê li stêrka pişkekê bitikîne.';
+  String get noFavorites =>
+      'Hîn bijare tune ne. Ji bo zêdekirinê li stêrka pişkekê bitikîne.';
 
   @override
   String get displayCurrency => 'Diravê nîşandanê';
@@ -627,7 +648,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get updateDownloading => 'Rojanekirin li paşperdeyê tê daxistin…';
 
   @override
-  String get updateDownloaded => 'Rojanekirin amade ye. Ji bo sazkirinê ji nû ve bide destpêkirin.';
+  String get updateDownloaded =>
+      'Rojanekirin amade ye. Ji bo sazkirinê ji nû ve bide destpêkirin.';
 
   @override
   String get updateNow => 'Rojane bike';
@@ -636,7 +658,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get restartNow => 'Ji nû ve bide destpêkirin';
 
   @override
-  String get updatesViaStore => 'Rojanekirin bixweber bi riya firotgeha sepanan tên.';
+  String get updatesViaStore =>
+      'Rojanekirin bixweber bi riya firotgeha sepanan tên.';
 
   @override
   String get updateCheckFailed => 'Kontrolkirina rojanekirinan bi ser neket.';
@@ -684,7 +707,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.';
+  String get trialExpired =>
+      'Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -717,7 +741,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get extraPacksTitle => 'Zêdetir lazim e? Analîzên zêde bikire';
 
   @override
-  String get extraPacksHint => 'Analîzên zêde qet bi dawî nabin û piştî mafê te yê mehane tên bikaranîn.';
+  String get extraPacksHint =>
+      'Analîzên zêde qet bi dawî nabin û piştî mafê te yê mehane tên bikaranîn.';
 
   @override
   String get buy => 'Bikire';
@@ -745,10 +770,12 @@ class AppLocalizationsKu extends AppLocalizations {
       'Kirîn hîn li ser vê platformê ne berdest e. Li ser telefon an Mac-a xwe bibe abone; plana te li ser hemû amûran dixebite.';
 
   @override
-  String get errQuotaExceeded => 'Ji bo vê heyamê analîzên te nemane. Plana xwe bilind bike an analîzên zêde bikire.';
+  String get errQuotaExceeded =>
+      'Ji bo vê heyamê analîzên te nemane. Plana xwe bilind bike an analîzên zêde bikire.';
 
   @override
-  String get errTrialExpired => 'Ceribandina te ya belaş qediya. Ji bo berdewamiyê planekê hilbijêre.';
+  String get errTrialExpired =>
+      'Ceribandina te ya belaş qediya. Ji bo berdewamiyê planekê hilbijêre.';
 
   @override
   String get errNoPlan => 'Ji bo analîza AI planeke çalak pêwîst e.';
@@ -760,7 +787,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get usageTitle => 'Bikaranîn';
 
   @override
-  String get demoPurchaseNote => 'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
+  String get demoPurchaseNote =>
+      'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
 
   @override
   String get mostPopular => 'Herî populer';
@@ -800,7 +828,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapora tevahî bi hemû beşan.';
 
   @override
-  String get aiDepthDeepDesc => 'Lêgerînên webê yên zêdetir, berhevdana bi hevrikan û hûrguliyên kûrtir.';
+  String get aiDepthDeepDesc =>
+      'Lêgerînên webê yên zêdetir, berhevdana bi hevrikan û hûrguliyên kûrtir.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -828,16 +857,19 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiReaderExperienced => 'Bi ezmûn';
 
   @override
-  String get aiReaderBeginnerDesc => 'Zimanê sade; her têgeha teknîkî tê ravekirin.';
+  String get aiReaderBeginnerDesc =>
+      'Zimanê sade; her têgeha teknîkî tê ravekirin.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Nivîsa tîrtir bi termînolojiya darayî ya standard.';
+  String get aiReaderExperiencedDesc =>
+      'Nivîsa tîrtir bi termînolojiya darayî ya standard.';
 
   @override
   String get aiCounterArgument => 'Argumana dijber a herî xurt';
 
   @override
-  String get aiCounterArgumentDesc => 'Kurte her tim bi argumana herî xurt a li dijî encama xwe bi dawî dibe.';
+  String get aiCounterArgumentDesc =>
+      'Kurte her tim bi argumana herî xurt a li dijî encama xwe bi dawî dibe.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -930,7 +962,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get upcomingEvents => 'Bûyerên pêş';
 
   @override
-  String get outlookChartNote => 'Navberên nîşander; îhtîmal tenê texmînên giştî ne, ne pêşbînî.';
+  String get outlookChartNote =>
+      'Navberên nîşander; îhtîmal tenê texmînên giştî ne, ne pêşbînî.';
 
   @override
   String get accountTitle => 'Hesab';
@@ -945,10 +978,12 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notSignedIn => 'Tu ne têketî yî';
 
   @override
-  String get accountBenefit => 'Têkeve da ku abonetiya te li ser hemû amûrên te bixebite.';
+  String get accountBenefit =>
+      'Têkeve da ku abonetiya te li ser hemû amûrên te bixebite.';
 
   @override
-  String get accountSyncedNote => 'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
+  String get accountSyncedNote =>
+      'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
 
   @override
   String get signInTitle => 'Têkeve WhatStock';
@@ -977,16 +1012,20 @@ class AppLocalizationsKu extends AppLocalizations {
   String get errInvalidCode => 'Kod xelet e an dema wê derbas bûye.';
 
   @override
-  String get errInvalidEmail => 'Ji kerema xwe navnîşaneke e-nameyê ya derbasdar binivîse.';
+  String get errInvalidEmail =>
+      'Ji kerema xwe navnîşaneke e-nameyê ya derbasdar binivîse.';
 
   @override
-  String get errSignInFailed => 'Têketin bi ser neket. Girêdana xwe kontrol bike û dîsa biceribîne.';
+  String get errSignInFailed =>
+      'Têketin bi ser neket. Girêdana xwe kontrol bike û dîsa biceribîne.';
 
   @override
-  String get checkoutWaiting => 'Dayînê di geroka xwe de temam bike. Dema ku biqede, sepan bixweber nû dibe.';
+  String get checkoutWaiting =>
+      'Dayînê di geroka xwe de temam bike. Dema ku biqede, sepan bixweber nû dibe.';
 
   @override
-  String get paymentViaStripe => 'Dayîna ewle di gerokê de bi Stripe. Her dem dikarî betal bikî.';
+  String get paymentViaStripe =>
+      'Dayîna ewle di gerokê de bi Stripe. Her dem dikarî betal bikî.';
 
   @override
   String get paymentViaStore =>
@@ -999,7 +1038,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get doubleOptionTitle => 'Du caran Option bitikîne';
 
   @override
-  String get doubleOptionSubtitle => 'Du caran bi lez tikandina bişkoka Option jî WhatStock vedixwîne.';
+  String get doubleOptionSubtitle =>
+      'Du caran bi lez tikandina bişkoka Option jî WhatStock vedixwîne.';
 
   @override
   String get doubleOptionPermission =>
@@ -1021,7 +1061,12 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years sal', one: '1 sal');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years sal',
+      one: '1 sal',
+    );
     return '$_temp0';
   }
 
@@ -1122,7 +1167,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioRemove => 'Rake';
 
   @override
-  String get portfolioExcluded => 'Pozîsyonên bê biha an bê rêjeya diravan di komê de nayên hesibandin.';
+  String get portfolioExcluded =>
+      'Pozîsyonên bê biha an bê rêjeya diravan di komê de nayên hesibandin.';
 
   @override
   String get priceAlerts => 'Hişyariyên bihayê';
@@ -1164,7 +1210,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Hîn hişyariyên bihayê tune ne. Ji bo sazkirinê pişkekê veke û li zengilê bitikîne.';
+  String get alertsEmpty =>
+      'Hîn hişyariyên bihayê tune ne. Ji bo sazkirinê pişkekê veke û li zengilê bitikîne.';
 
   @override
   String get alertsNote =>
@@ -1257,7 +1304,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get accountDeleted => 'Hesabê te hate jêbirin.';
 
   @override
-  String get errDeleteAccount => 'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+  String get errDeleteAccount =>
+      'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1283,4 +1331,10 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get subscriptionLegalYearly =>
       'Abonetiyên salane her sal bixweber nû dibin heta ku tu betal bikî. Bi abonebûnê tu Mercên Bikaranînê û Polîtîkaya Nepeniyê qebûl dikî.';
+
+  @override
+  String get myAnalyses => 'Analîzên min';
+
+  @override
+  String get navAlerts => 'Hişyarî';
 }
