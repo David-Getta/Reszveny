@@ -119,13 +119,25 @@ class SettingsPage extends StatelessWidget {
                               ),
                             ),
                             title: Text(account.isSignedIn ? account.email! : l10n.notSignedIn),
-                            subtitle: Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
-                            trailing: account.isSignedIn
-                                ? TextButton(onPressed: account.signOut, child: Text(l10n.signOut))
-                                : FilledButton.tonal(
-                                    onPressed: () => showSignInSheet(context, account),
-                                    child: Text(l10n.signIn),
-                                  ),
+                            // A gomb a szöveg alá kerül (nem mellé), hogy keskeny
+                            // képernyőn és nagy betűnél se nyomja össze a szöveget.
+                            subtitle: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(account.isSignedIn ? l10n.accountSyncedNote : l10n.accountBenefit),
+                                const SizedBox(height: 8),
+                                account.isSignedIn
+                                    ? TextButton(
+                                        style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                                        onPressed: account.signOut,
+                                        child: Text(l10n.signOut),
+                                      )
+                                    : FilledButton.tonal(
+                                        onPressed: () => showSignInSheet(context, account),
+                                        child: Text(l10n.signIn),
+                                      ),
+                              ],
+                            ),
                           ),
                         ),
                         const Divider(height: 1),
