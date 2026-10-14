@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -50,13 +52,72 @@ class _HomePageState extends State<HomePage> {
   /// telefonon) ne kelljen kitörölni.
   final _query = TextEditingController();
 
+  /// Gépelés közbeni javaslatok: azonnal a kedvencekből és a legutóbbiakból,
+  /// rövid szünet után a piaci keresőből is.
+  List<StockCandidate> _suggestions = const [];
+  String _suggestFor = '';
+  Timer? _debounce;
+  static const suggestDelay = Duration(milliseconds: 400);
+  static const maxSuggestions = 6;
+
+  @override
+  void initState() {
+    super.initState();
+    _query.addListener(_onQueryChanged);
+  }
+
   @override
   void dispose() {
+    _debounce?.cancel();
+    _query.removeListener(_onQueryChanged);
     _query.dispose();
     super.dispose();
   }
 
+  void _clearSuggestions() {
+    _debounce?.cancel();
+    _suggestFor = '';
+    if (_suggestions.isNotEmpty) setState(() => _suggestions = const []);
+  }
+
+  void _onQueryChanged() {
+    final q = _query.text.trim();
+    if (q == _suggestFor) return;
+    _suggestFor = q;
+    _debounce?.cancel();
+    if (q.length < 2 || _busy) {
+      if (_suggestions.isNotEmpty) setState(() => _suggestions = const []);
+      return;
+    }
+    final services = AppServices.of(context);
+    final prefs = services.preferences;
+    final upper = q.toUpperCase();
+    final local = [
+      for (final s in {...prefs.favorites, ...prefs.recent})
+        if (s.startsWith(upper)) StockCandidate(symbol: s, companyName: s, confidence: 1),
+    ].take(3).toList();
+    setState(() => _suggestions = local);
+    _debounce = Timer(suggestDelay, () async {
+      try {
+        final found = await services.marketData.search(q);
+        if (!mounted || _query.text.trim() != q) return;
+        final seen = {for (final c in local) c.symbol};
+        setState(
+          () => _suggestions = [
+            // A piaci találat cégnevet is ad: ugyanannál a tickernél azt mutatjuk.
+            for (final c in local) found.where((f) => f.symbol == c.symbol).firstOrNull ?? c,
+            for (final f in found)
+              if (seen.add(f.symbol)) f,
+          ].take(maxSuggestions).toList(),
+        );
+      } catch (_) {
+        // Javaslat nélkül is kereshet (Enterrel).
+      }
+    });
+  }
+
   void _open(StockCandidate c) {
+    _clearSuggestions();
     _query.clear();
     widget.onOpenSymbol(c);
   }
@@ -66,6 +127,7 @@ class _HomePageState extends State<HomePage> {
     final l10n = AppLocalizations.of(context);
     final q = query.trim();
     if (q.isEmpty) return;
+    _clearSuggestions();
     FocusScope.of(context).unfocus();
     setState(() {
       _busy = true;
@@ -250,6 +312,28 @@ class _HomePageState extends State<HomePage> {
                           ),
                       ],
                     ),
+                    if (_suggestions.isNotEmpty && !_busy)
+                      Card(
+                        key: const ValueKey('search-suggestions'),
+                        margin: const EdgeInsets.only(top: 8),
+                        child: Column(
+                          children: [
+                            for (final (i, c) in _suggestions.indexed) ...[
+                              if (i > 0) const Divider(height: 1),
+                              ListTile(
+                                key: ValueKey('suggestion-${c.symbol}'),
+                                dense: true,
+                                leading: Icon(Icons.north_east_rounded, size: 18, color: p.muted),
+                                title: Text(c.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                                subtitle: c.companyName == c.symbol
+                                    ? null
+                                    : Text(c.companyName, maxLines: 1, overflow: TextOverflow.ellipsis),
+                                onTap: () => _open(c),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
                     const SizedBox(height: 12),
                     Text(
                       l10n.homeHint,

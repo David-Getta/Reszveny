@@ -196,6 +196,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5p | Várható éves osztalék a portfólióban: tételenként és összesítve a megjelenítési devizában, hozammal (az elmúlt 12 hónap osztaléka alapján) | ✅ kész |
 | 5q | Árfolyamgrafikon: a saját átlagár és az aktív riasztások szintje szaggatott vonallal | ✅ kész |
 | 5r | „Piacok ma”: az S&P 500, a Nasdaq 100 és a Dow Jones napi változása (SPY, QQQ, DIA) a kezdőképernyőn | ✅ kész |
+| 5s | Élő javaslatok gépelés közben a keresőben: azonnal a kedvencekből és a legutóbbiakból, 0,4 mp szünet után a piaci keresőből (cégnévvel) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 
