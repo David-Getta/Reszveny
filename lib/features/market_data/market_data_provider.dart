@@ -34,6 +34,9 @@ abstract class MarketDataProvider {
   /// hiányzó rész egyszerűen kimarad; alapból üres.
   Future<AnalysisExtras> analysisExtras(String symbol) async => const AnalysisExtras();
 
+  /// A következő gyorsjelentés (az eseménynaptárhoz); alapból az [analysisExtras]-ból.
+  Future<UpcomingEarnings?> nextEarnings(String symbol) async => (await analysisExtras(symbol)).nextEarnings;
+
   /// Minden szekciót párhuzamosan tölt le; egy szekció hibája nem dönti be
   /// a többit, hanem a [StockDetails.errors] térképbe kerül.
   Future<StockDetails> details(String symbol) async {

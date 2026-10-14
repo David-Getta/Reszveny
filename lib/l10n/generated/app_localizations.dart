@@ -2970,6 +2970,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have reached today\'s limit for questions. Please try again tomorrow.'**
   String get errAskLimit;
+
+  /// No description provided for @eventTomorrow.
+  ///
+  /// In en, this message translates to:
+  /// **'Tomorrow'**
+  String get eventTomorrow;
+
+  /// How far away an event is.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{in 1 day} other{in {days} days}}'**
+  String eventInDays(int days);
+
+  /// No description provided for @eventEarnings.
+  ///
+  /// In en, this message translates to:
+  /// **'Quarterly results'**
+  String get eventEarnings;
+
+  /// No description provided for @eventBeforeOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'before the open'**
+  String get eventBeforeOpen;
+
+  /// No description provided for @eventAfterClose.
+  ///
+  /// In en, this message translates to:
+  /// **'after the close'**
+  String get eventAfterClose;
+
+  /// Analysts' expected earnings per share for the coming results; value is a formatted number.
+  ///
+  /// In en, this message translates to:
+  /// **'EPS estimate: {value}'**
+  String eventEpsEstimate(String value);
+
+  /// No description provided for @eventFromAnalysis.
+  ///
+  /// In en, this message translates to:
+  /// **'From your analysis'**
+  String get eventFromAnalysis;
+
+  /// No description provided for @eventsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.'**
+  String get eventsHint;
+
+  /// No description provided for @eventsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.'**
+  String get eventsEmpty;
 }
 
 class _AppLocalizationsDelegate

@@ -190,6 +190,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5h | Weboldal: letöltés, árak, minta-elemzések, népszerű részvények oldalai (SEO) | 🟡 nyitóoldal a szerveren (`/`, magyar/angol, letöltés Androidra, Macre, Windowsra, zárt előzetes jelzés, jogi linkek); az árak és a népszerű részvények oldalai később |
 | 5i | Első indítás: rövid bemutató, ingyenes minta-elemzés, értékelés-kérés jó élmény után | ✅ kész: háromoldalas bemutató (csak friss telepítésnél, átugorható), áruházi értékelés-kérés egyszer, a 3. elemzés után; a minta-elemzés helyett a próbaidő ingyenes elemzései (beégetett, kitalált számokkal félrevezető lenne) |
 | 5l | Újraelemzés: „Az előző elemzés óta” – árfolyam, piaci hangulat, forgatókönyv-valószínűségek és a legvalószínűbb forgatókönyv változása, lenyitva az előző elemzés lényege; a 12 óránál régebbi elemzésnél kérdés (új vagy a korábbi) és az elemzések előzménylistája | ✅ kész |
+| 5m | „Kérdezz az elemzésről”: rövid beszélgetés egy elkészült elemzésről (javasolt kérdések, elemzésenként 6 kérdés, napi keret, próbaidőben olcsóbb modell; szerveren `/v1/ask`) | ✅ kész |
+| 5n | Közelgő események: a kedvencek és a portfólió gyorsjelentései (90 nap, napszak, várt EPS) és az elemzések dátumos eseményei; kártya a kezdőképernyőn, teljes lista külön oldalon | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

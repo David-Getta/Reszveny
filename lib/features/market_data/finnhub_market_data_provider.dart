@@ -83,6 +83,19 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return parseAnalysisExtras(symbol, peers: r[0], insider: r[1], earnings: r[2], calendar: r[3], now: today);
   }
 
+  /// Csak a gyorsjelentés-naptár (egy hívás), az eseménynaptárhoz.
+  @override
+  Future<UpcomingEarnings?> nextEarnings(String symbol, {DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    final cal = await _get('/calendar/earnings', {
+      'symbol': symbol,
+      'from': d(today),
+      'to': d(today.add(const Duration(days: 120))),
+    });
+    return parseAnalysisExtras(symbol, calendar: cal, now: today).nextEarnings;
+  }
+
   /// A négy válaszból az [AnalysisExtras] (tesztelhető, hálózat nélkül).
   static AnalysisExtras parseAnalysisExtras(
     String symbol, {

@@ -29,6 +29,7 @@ import 'features/billing/plan.dart';
 import 'features/billing/store_billing_service.dart';
 import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
+import 'features/events/events_service.dart';
 import 'features/fx/fx_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
@@ -71,6 +72,12 @@ class AppServices {
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
+    events = EventsService(
+      marketData: marketData,
+      preferences: preferences,
+      portfolio: this.portfolio,
+      reports: reports,
+    );
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
@@ -205,6 +212,9 @@ class AppServices {
 
   /// „Kérdezz az elemzésről” beszélgetések.
   final AnalysisChat chat;
+
+  /// Közelgő gyorsjelentések és az elemzések eseményei.
+  late final EventsService events;
 
   /// Árfolyam-riasztások és a figyelőjük.
   final AlertStore alerts;

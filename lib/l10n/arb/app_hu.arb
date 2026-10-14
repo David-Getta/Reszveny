@@ -438,5 +438,14 @@
   "askSuggest2": "Mi változtatná meg a kilátásokat?",
   "askSuggest3": "Magyarázd el egyszerűen",
   "askMaxReached": "Ez volt az utolsó kérdés ehhez az elemzéshez. Újabb kérdésekhez készíts új elemzést.",
-  "errAskLimit": "Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz."
+  "errAskLimit": "Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz.",
+  "eventTomorrow": "Holnap",
+  "eventInDays": "{days, plural, =1{1 nap múlva} other{{days} nap múlva}}",
+  "eventEarnings": "Negyedéves gyorsjelentés",
+  "eventBeforeOpen": "nyitás előtt",
+  "eventAfterClose": "zárás után",
+  "eventEpsEstimate": "Várt EPS: {value}",
+  "eventFromAnalysis": "Az elemzésedből",
+  "eventsHint": "A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, és az elemzéseidben megjelölt dátumos események.",
+  "eventsEmpty": "A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát."
 }

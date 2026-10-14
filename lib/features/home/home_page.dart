@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../events/events_view.dart';
 import '../settings/telemetry_consent.dart';
 import '../../widgets/hotkey_hint.dart';
 
@@ -272,6 +273,7 @@ class _HomePageState extends State<HomePage> {
                     FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                     // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
                     if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
+                    UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
                     MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
                     const TelemetryConsentCard(),
                     if (services.config.isDemoMode) ...[

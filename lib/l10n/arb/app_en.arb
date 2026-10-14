@@ -1110,5 +1110,30 @@
   "askSuggest2": "What would change the outlook?",
   "askSuggest3": "Explain it in simple terms",
   "askMaxReached": "That was the last question for this analysis. Make a new analysis to ask more.",
-  "errAskLimit": "You have reached today's limit for questions. Please try again tomorrow."
+  "errAskLimit": "You have reached today's limit for questions. Please try again tomorrow.",
+  "eventTomorrow": "Tomorrow",
+  "eventInDays": "{days, plural, =1{in 1 day} other{in {days} days}}",
+  "@eventInDays": {
+    "description": "How far away an event is.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "eventEarnings": "Quarterly results",
+  "eventBeforeOpen": "before the open",
+  "eventAfterClose": "after the close",
+  "eventEpsEstimate": "EPS estimate: {value}",
+  "@eventEpsEstimate": {
+    "description": "Analysts' expected earnings per share for the coming results; value is a formatted number.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "eventFromAnalysis": "From your analysis",
+  "eventsHint": "Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.",
+  "eventsEmpty": "No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here."
 }

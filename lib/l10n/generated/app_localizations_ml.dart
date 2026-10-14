@@ -1608,4 +1608,43 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get errAskLimit =>
       'ഇന്നത്തെ ചോദ്യ പരിധി എത്തി. നാളെ വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get eventTomorrow => 'Tomorrow';
+
+  @override
+  String eventInDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'in $days days',
+      one: 'in 1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get eventEarnings => 'Quarterly results';
+
+  @override
+  String get eventBeforeOpen => 'before the open';
+
+  @override
+  String get eventAfterClose => 'after the close';
+
+  @override
+  String eventEpsEstimate(String value) {
+    return 'EPS estimate: $value';
+  }
+
+  @override
+  String get eventFromAnalysis => 'From your analysis';
+
+  @override
+  String get eventsHint =>
+      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+
+  @override
+  String get eventsEmpty =>
+      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
 }

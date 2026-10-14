@@ -792,6 +792,33 @@ void main() {
     await _shot(tester, 'ask_answer_phone_hu');
   });
 
+  testWidgets('upcoming events on the home screen and their page (hungarian, phone)', (tester) async {
+    final day = DateTime.now().add(const Duration(days: 12)).toIso8601String().substring(0, 10);
+    SharedPreferences.setMockInitialValues({
+      'report_NVDA': jsonEncode(
+        StockReport(
+          symbol: 'NVDA',
+          headline: 'Az AI-kereslet erős, de a várakozások már magasak.',
+          sections: const [],
+          generatedAt: DateTime.now().subtract(const Duration(hours: 3)),
+          language: 'Hungarian',
+          outlook: ReportOutlook(
+            catalysts: [Catalyst(date: day, event: 'GTC fejlesztői konferencia, új chipek')],
+          ),
+        ).toJson(),
+      ),
+    });
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    final section = find.byKey(const ValueKey('home-events'));
+    await tester.scrollUntilVisible(section, 200, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(section), alignment: 0.3);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'events_home_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('events-see-all')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'events_page_phone_hu');
+  });
+
   testWidgets('first launch onboarding (hungarian, phone)', (tester) async {
     final s = _services(locale: const Locale('hu'))..preferences.onboardingDone = false;
     await pumpApp(tester, s, const Size(430, 900));

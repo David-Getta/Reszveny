@@ -30,6 +30,20 @@ class DemoMarketDataProvider extends MarketDataProvider {
     }
   }
 
+  /// Minta-gyorsjelentés: tickerenként állandó, 6–60 nap múlva (nem valós adat).
+  @override
+  Future<UpcomingEarnings?> nextEarnings(String symbol) async {
+    await _wait();
+    _check(symbol);
+    final offset = 6 + symbol.codeUnits.fold(0, (a, b) => a + b) % 55;
+    final today = DateTime.now();
+    return UpcomingEarnings(
+      date: DateTime(today.year, today.month, today.day + offset),
+      hour: offset.isEven ? 'amc' : 'bmo',
+      epsEstimate: 1.0 + (offset % 7) / 10,
+    );
+  }
+
   /// Minta-többletadatok az elemzéshez (nem valós adatok).
   @override
   Future<AnalysisExtras> analysisExtras(String symbol) async {

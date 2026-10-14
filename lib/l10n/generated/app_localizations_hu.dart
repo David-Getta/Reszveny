@@ -1607,4 +1607,43 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get errAskLimit =>
       'Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz.';
+
+  @override
+  String get eventTomorrow => 'Holnap';
+
+  @override
+  String eventInDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nap múlva',
+      one: '1 nap múlva',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get eventEarnings => 'Negyedéves gyorsjelentés';
+
+  @override
+  String get eventBeforeOpen => 'nyitás előtt';
+
+  @override
+  String get eventAfterClose => 'zárás után';
+
+  @override
+  String eventEpsEstimate(String value) {
+    return 'Várt EPS: $value';
+  }
+
+  @override
+  String get eventFromAnalysis => 'Az elemzésedből';
+
+  @override
+  String get eventsHint =>
+      'A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, és az elemzéseidben megjelölt dátumos események.';
+
+  @override
+  String get eventsEmpty =>
+      'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát.';
 }
