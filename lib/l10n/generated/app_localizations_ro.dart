@@ -1390,4 +1390,58 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Limita de analize de azi pentru această previzualizare a fost atinsă. Încearcă din nou mâine.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'acum $count de ore',
+      few: 'acum $count ore',
+      one: 'acum o oră',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'acum $count de zile',
+      few: 'acum $count zile',
+      one: 'acum o zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Actualizezi această analiză?';
+
+  @override
+  String staleBody(String age) {
+    return 'A fost realizată $age. Între timp, prețurile, știrile și rezultatele s-ar putea să se fi schimbat.';
+  }
+
+  @override
+  String get staleKeep => 'Arată-o pe cea anterioară';
+
+  @override
+  String get staleRefresh => 'Creează una nouă';
+
+  @override
+  String seeAll(int count) {
+    return 'Vezi toate ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Caută în analizele tale';
+
+  @override
+  String get deleteAnalysis => 'Șterge';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analiza $symbol a fost ștearsă';
+  }
 }

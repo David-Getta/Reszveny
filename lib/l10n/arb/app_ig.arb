@@ -380,5 +380,15 @@
   "inviteExpired": "Oge òkù a agafeela. Rịọ onye kpọrọ gị òkù ka o nye gị koodu ọhụrụ.",
   "inviteDeviceLimit": "A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.",
   "previewConfidential": "Nlele mbụ nzuzo",
-  "errPreviewDailyLimit": "Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi."
+  "errPreviewDailyLimit": "Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi.",
+  "ageHours": "{count, plural, =1{elekere 1 gara aga} other{elekere {count} gara aga}}",
+  "ageDays": "{count, plural, =1{ụbọchị 1 gara aga} other{ụbọchị {count} gara aga}}",
+  "staleTitle": "Melite nyocha a?",
+  "staleBody": "E mere nyocha a {age}. Ọnụahịa, akụkọ na nsonaazụ nwere ike ịgbanwela kemgbe ahụ.",
+  "staleKeep": "Gosi nke mbụ",
+  "staleRefresh": "Mepụta nke ọhụrụ",
+  "seeAll": "Hụ ha niile ({count})",
+  "searchAnalyses": "Chọọ na nyocha gị",
+  "deleteAnalysis": "Hichapụ",
+  "analysisDeleted": "E hichapụla nyocha {symbol}"
 }

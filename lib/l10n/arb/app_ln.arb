@@ -380,5 +380,15 @@
   "inviteExpired": "Libyangi oyo eleki ntango. Senga code ya sika epai ya moto oyo abyangaki yo.",
   "inviteDeviceLimit": "Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.",
   "previewConfidential": "Botali ya sekele",
-  "errPreviewDailyLimit": "Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi."
+  "errPreviewDailyLimit": "Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi.",
+  "ageHours": "{count, plural, =1{ngonga 1 eleki} other{bangonga {count} eleki}}",
+  "ageDays": "{count, plural, =1{mokɔlɔ 1 eleki} other{mikɔlɔ {count} eleki}}",
+  "staleTitle": "Kobongisa analyse oyo?",
+  "staleBody": "Analyse oyo esalemaki {age}. Banda wana, ntalo, nsango mpe mbano ekoki kobongwana.",
+  "staleKeep": "Lakisa oyo ya kala",
+  "staleRefresh": "Salá oyo ya sika",
+  "seeAll": "Talá nyonso ({count})",
+  "searchAnalyses": "Luká na ba analyse na yo",
+  "deleteAnalysis": "Limwisa",
+  "analysisDeleted": "Analyse ya {symbol} elimwisami"
 }

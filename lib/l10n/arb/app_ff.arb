@@ -380,5 +380,15 @@
   "inviteExpired": "Noddaangal ngal buntii. Ɗaɓɓit kod kesum to neɗɗo noddiiɗo ma.",
   "inviteDeviceLimit": "Kod noddaangal ngal no huutoraa e limoore kaɓirɗe ɓurnde ndee.",
   "previewConfidential": "Ƴeewndo suuɗiingo",
-  "errPreviewDailyLimit": "Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo."
+  "errPreviewDailyLimit": "Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo.",
+  "ageHours": "{count, plural, =1{waktu 1 ɓennii} other{waktuuji {count} ɓennii}}",
+  "ageDays": "{count, plural, =1{ñalnde 1 ɓennii} other{ñalɗi {count} ɓennii}}",
+  "staleTitle": "Hesɗitin ƴeewndo ndee?",
+  "staleBody": "Waɗaama {age}. Coggu, kabaruuji e njaltudi ina waawi waylaade gila ndeen.",
+  "staleKeep": "Hollu ndo adii",
+  "staleRefresh": "Waɗ ndo hesɗo",
+  "seeAll": "Yiy fof ({count})",
+  "searchAnalyses": "Yiylo e nder ƴeewndooji maa",
+  "deleteAnalysis": "Momtu",
+  "analysisDeleted": "Ƴeewndo {symbol} momtaama"
 }

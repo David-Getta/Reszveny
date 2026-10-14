@@ -380,5 +380,15 @@
   "inviteExpired": "Kuitanidwa kumeneku kwatha nthawi. Pemphani khodi yatsopano kwa munthu amene anakuitanani.",
   "inviteDeviceLimit": "Khodi yoitanira iyi ikugwiritsidwa ntchito kale pa zipangizo zochuluka kwambiri zololedwa.",
   "previewConfidential": "Kuwoneratu kwachinsinsi",
-  "errPreviewDailyLimit": "Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa."
+  "errPreviewDailyLimit": "Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa.",
+  "ageHours": "{count, plural, =1{ola 1 lapitalo} other{maola {count} apitawo}}",
+  "ageDays": "{count, plural, =1{tsiku 1 lapitalo} other{masiku {count} apitawo}}",
+  "staleTitle": "Kodi mukufuna kukonzanso kusanthula kumeneku?",
+  "staleBody": "Kusanthula kumeneku kunapangidwa {age}. Mitengo, nkhani ndi zotsatira zitha kuti zasintha kuyambira pamenepo.",
+  "staleKeep": "Onetsani chakale",
+  "staleRefresh": "Pangani chatsopano",
+  "seeAll": "Onani zonse ({count})",
+  "searchAnalyses": "Sakani zosanthula zanu",
+  "deleteAnalysis": "Chotsani",
+  "analysisDeleted": "Kusanthula kwa {symbol} kwachotsedwa"
 }

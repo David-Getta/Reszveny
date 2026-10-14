@@ -380,5 +380,15 @@
   "inviteExpired": "ይህ ግብዣ ጊዜው አልፎበታል። የጋበዘዎትን ሰው አዲስ ኮድ ይጠይቁ።",
   "inviteDeviceLimit": "ይህ የግብዣ ኮድ በሚፈቀደው ከፍተኛ የመሣሪያዎች ብዛት ላይ አስቀድሞ ጥቅም ላይ እየዋለ ነው።",
   "previewConfidential": "ሚስጥራዊ ቅድመ እይታ",
-  "errPreviewDailyLimit": "የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።"
+  "errPreviewDailyLimit": "የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።",
+  "ageHours": "{count, plural, =1{ከ1 ሰዓት በፊት} other{ከ{count} ሰዓታት በፊት}}",
+  "ageDays": "{count, plural, =1{ከ1 ቀን በፊት} other{ከ{count} ቀናት በፊት}}",
+  "staleTitle": "ይህ ትንተና ይዘምን?",
+  "staleBody": "የተፈጠረው {age} ነው። ከዚያ ወዲህ ዋጋዎች፣ ዜናዎች እና ውጤቶች ተቀይረው ሊሆን ይችላል።",
+  "staleKeep": "የቀድሞውን አሳይ",
+  "staleRefresh": "አዲስ ፍጠር",
+  "seeAll": "ሁሉንም አሳይ ({count})",
+  "searchAnalyses": "በትንተናዎች ውስጥ ፈልግ",
+  "deleteAnalysis": "ሰርዝ",
+  "analysisDeleted": "የ{symbol} ትንተና ተሰርዟል"
 }

@@ -1384,4 +1384,56 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Дневниот лимит на анализи за овој преглед е достигнат. Обидете се повторно утре.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'пред $count часа',
+      one: 'пред $count час',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'пред $count дена',
+      one: 'пред $count ден',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Да се ажурира анализава?';
+
+  @override
+  String staleBody(String age) {
+    return 'Направена е $age. Цените, вестите и резултатите можеби се промениле оттогаш.';
+  }
+
+  @override
+  String get staleKeep => 'Прикажи ја претходната';
+
+  @override
+  String get staleRefresh => 'Направи нова';
+
+  @override
+  String seeAll(int count) {
+    return 'Види ги сите ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Пребарај ги своите анализи';
+
+  @override
+  String get deleteAnalysis => 'Избриши';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Анализата за $symbol е избришана';
+  }
 }

@@ -1367,4 +1367,56 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tuntia sitten',
+      one: '1 tunti sitten',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count päivää sitten',
+      one: '1 päivä sitten',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Päivitetäänkö tämä analyysi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Se luotiin $age. Hinnat, uutiset ja tulokset ovat voineet muuttua sen jälkeen.';
+  }
+
+  @override
+  String get staleKeep => 'Näytä aiempi';
+
+  @override
+  String get staleRefresh => 'Luo uusi';
+
+  @override
+  String seeAll(int count) {
+    return 'Näytä kaikki ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Hae analyyseistäsi';
+
+  @override
+  String get deleteAnalysis => 'Poista';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol-analyysi poistettu';
+  }
 }

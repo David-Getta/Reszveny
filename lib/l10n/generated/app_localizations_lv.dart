@@ -1396,4 +1396,58 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'pirms $count stundām',
+      one: 'pirms $count stundas',
+      zero: 'pirms $count stundām',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'pirms $count dienām',
+      one: 'pirms $count dienas',
+      zero: 'pirms $count dienām',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Atjaunināt šo analīzi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Šī analīze izveidota $age. Kopš tā laika cenas, ziņas un rezultāti var būt mainījušies.';
+  }
+
+  @override
+  String get staleKeep => 'Rādīt iepriekšējo';
+
+  @override
+  String get staleRefresh => 'Izveidot jaunu';
+
+  @override
+  String seeAll(int count) {
+    return 'Skatīt visas ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Meklēt savās analīzēs';
+
+  @override
+  String get deleteAnalysis => 'Dzēst';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol analīze izdzēsta';
+  }
 }

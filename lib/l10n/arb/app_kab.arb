@@ -380,5 +380,15 @@
   "inviteExpired": "Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.",
   "inviteDeviceLimit": "Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.",
   "previewConfidential": "Taskant tuffirt",
-  "errPreviewDailyLimit": "Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka."
+  "errPreviewDailyLimit": "Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka.",
+  "ageHours": "{count, plural, =1{1 n usrag aya} other{{count} n yisragen aya}}",
+  "ageDays": "{count, plural, =1{1 n wass aya} other{{count} n wussan aya}}",
+  "staleTitle": "Leqqem tasleḍt-a?",
+  "staleBody": "Tasleḍt-a tettwaxdem {age}. Seg imir-nni, ahat ttbeddlen ssuma, isallen d yigmaḍ.",
+  "staleKeep": "Sken-d tin yezrin",
+  "staleRefresh": "Snulfu-d tamaynut",
+  "seeAll": "Wali akk ({count})",
+  "searchAnalyses": "Nadi deg tesleḍwin-ik",
+  "deleteAnalysis": "Kkes",
+  "analysisDeleted": "Tasleḍt n {symbol} tettwakkes"
 }

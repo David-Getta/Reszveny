@@ -380,5 +380,15 @@
   "inviteExpired": "Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.",
   "inviteDeviceLimit": "Iyi kode y'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w'ibikoresho.",
   "previewConfidential": "Igerageza ry'ibanga",
-  "errPreviewDailyLimit": "Umubare ntarengwa w'isesengura ry'uyu munsi kuri iri gerageza wagezweho. Ongera ugerageze ejo."
+  "errPreviewDailyLimit": "Umubare ntarengwa w'isesengura ry'uyu munsi kuri iri gerageza wagezweho. Ongera ugerageze ejo.",
+  "ageHours": "{count, plural, =1{hashize isaha 1} other{hashize amasaha {count}}}",
+  "ageDays": "{count, plural, =1{hashize umunsi 1} other{hashize iminsi {count}}}",
+  "staleTitle": "Urashaka kuvugurura iri sesengura?",
+  "staleBody": "Ryakozwe {age}. Kuva icyo gihe, ibiciro, amakuru n'ibyavuyemo bishobora kuba byarahindutse.",
+  "staleKeep": "Erekana irya mbere",
+  "staleRefresh": "Kora irishya",
+  "seeAll": "Reba byose ({count})",
+  "searchAnalyses": "Shakisha mu masesengura yawe",
+  "deleteAnalysis": "Siba",
+  "analysisDeleted": "Isesengura rya {symbol} ryasibwe"
 }

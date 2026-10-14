@@ -380,5 +380,15 @@
   "inviteExpired": "Ntangu ya mbokolo yayi isukidi. Lomba code ya mpa kwa muntu wakubokila.",
   "inviteDeviceLimit": "Code yayi ya mbokolo isadilwanga kala mu ntalu ya nene ya bisadulu.",
   "previewConfidential": "Kutala kwa nsweki",
-  "errPreviewDailyLimit": "Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi."
+  "errPreviewDailyLimit": "Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi.",
+  "ageHours": "{count, plural, =1{ntangu 1 me luta} other{bantangu {count} me luta}}",
+  "ageDays": "{count, plural, =1{kilumbu 1 me luta} other{bilumbu {count} me luta}}",
+  "staleTitle": "Vanga analyse yai ya mpa?",
+  "staleBody": "Analyse yai me vangama {age}. Banda ntangu yina, bantalu, nsangu mpi mbuma lenda soba.",
+  "staleKeep": "Monisa ya ntete",
+  "staleRefresh": "Vanga ya mpa",
+  "seeAll": "Tala yonso ({count})",
+  "searchAnalyses": "Sosa na ba analyse na nge",
+  "deleteAnalysis": "Zimbisa",
+  "analysisDeleted": "Analyse ya {symbol} me zimbisama"
 }

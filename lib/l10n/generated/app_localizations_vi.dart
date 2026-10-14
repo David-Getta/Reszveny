@@ -1360,4 +1360,56 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count giờ trước',
+      one: '1 giờ trước',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ngày trước',
+      one: '1 ngày trước',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Cập nhật phân tích này?';
+
+  @override
+  String staleBody(String age) {
+    return 'Phân tích này được tạo $age. Giá, tin tức và kết quả có thể đã thay đổi kể từ đó.';
+  }
+
+  @override
+  String get staleKeep => 'Xem bản trước';
+
+  @override
+  String get staleRefresh => 'Tạo bản mới';
+
+  @override
+  String seeAll(int count) {
+    return 'Xem tất cả ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Tìm trong phân tích của bạn';
+
+  @override
+  String get deleteAnalysis => 'Xóa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Đã xóa phân tích $symbol';
+  }
 }

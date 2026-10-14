@@ -1370,4 +1370,56 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Naabot na ng preview na ito ang limitasyon ng pagsusuri para ngayong araw. Subukang muli bukas.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count oras ang nakalipas',
+      one: '1 oras ang nakalipas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count araw ang nakalipas',
+      one: '1 araw ang nakalipas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'I-update ang pagsusuring ito?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ginawa ito $age. Maaaring nagbago na ang mga presyo, balita at resulta mula noon.';
+  }
+
+  @override
+  String get staleKeep => 'Ipakita ang nauna';
+
+  @override
+  String get staleRefresh => 'Gumawa ng bago';
+
+  @override
+  String seeAll(int count) {
+    return 'Tingnan lahat ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Hanapin sa iyong mga pagsusuri';
+
+  @override
+  String get deleteAnalysis => 'Burahin';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Nabura ang pagsusuri sa $symbol';
+  }
 }

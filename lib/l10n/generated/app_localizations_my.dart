@@ -1365,4 +1365,54 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ဤအစမ်းကြည့်ရှုမှု၏ ယနေ့ ခွဲခြမ်းစိတ်ဖြာမှု ကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'လွန်ခဲ့သော $count နာရီက',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'လွန်ခဲ့သော $count ရက်က',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ဤသုံးသပ်ချက်ကို အပ်ဒိတ်လုပ်မလား။';
+
+  @override
+  String staleBody(String age) {
+    return '၎င်းကို $age ထုတ်ခဲ့သည်။ ထိုအချိန်မှစ၍ ဈေးနှုန်းများ၊ သတင်းများနှင့် ရလဒ်များ ပြောင်းလဲသွားနိုင်သည်။';
+  }
+
+  @override
+  String get staleKeep => 'ယခင်တစ်ခုကို ပြရန်';
+
+  @override
+  String get staleRefresh => 'အသစ်ထုတ်ရန်';
+
+  @override
+  String seeAll(int count) {
+    return 'အားလုံးကြည့်ရန် ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'သင့်သုံးသပ်ချက်များကို ရှာရန်';
+
+  @override
+  String get deleteAnalysis => 'ဖျက်ရန်';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol သုံးသပ်ချက်ကို ဖျက်လိုက်ပြီ';
+  }
 }

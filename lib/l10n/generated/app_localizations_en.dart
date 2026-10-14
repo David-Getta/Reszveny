@@ -1365,4 +1365,56 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Today\'s analysis limit of this preview has been reached. Try again tomorrow.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours ago',
+      one: '1 hour ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days ago',
+      one: '1 day ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Update this analysis?';
+
+  @override
+  String staleBody(String age) {
+    return 'It was made $age. Prices, news and results may have changed since then.';
+  }
+
+  @override
+  String get staleKeep => 'Show the earlier one';
+
+  @override
+  String get staleRefresh => 'Make a new one';
+
+  @override
+  String seeAll(int count) {
+    return 'See all ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Search your analyses';
+
+  @override
+  String get deleteAnalysis => 'Delete';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol analysis deleted';
+  }
 }

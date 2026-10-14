@@ -1367,4 +1367,56 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count soat oldin',
+      one: '1 soat oldin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kun oldin',
+      one: '1 kun oldin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Bu tahlil yangilansinmi?';
+
+  @override
+  String staleBody(String age) {
+    return 'U $age tayyorlangan. Shundan beri narxlar, yangiliklar va natijalar oʻzgargan boʻlishi mumkin.';
+  }
+
+  @override
+  String get staleKeep => 'Avvalgisini koʻrsatish';
+
+  @override
+  String get staleRefresh => 'Yangisini yaratish';
+
+  @override
+  String seeAll(int count) {
+    return 'Barchasini koʻrish ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Tahlillaringizdan qidirish';
+
+  @override
+  String get deleteAnalysis => 'Oʻchirish';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol tahlili oʻchirildi';
+  }
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Este convite expirou. Peça um novo código à pessoa que lhe enviou o convite.",
   "inviteDeviceLimit": "Este código de convite já está em uso no número máximo de dispositivos.",
   "previewConfidential": "Pré-visualização confidencial",
-  "errPreviewDailyLimit": "O limite diário de análises desta pré-visualização foi atingido. Tente novamente amanhã."
+  "errPreviewDailyLimit": "O limite diário de análises desta pré-visualização foi atingido. Tente novamente amanhã.",
+  "ageHours": "{count, plural, =1{há 1 hora} other{há {count} horas}}",
+  "ageDays": "{count, plural, =1{há 1 dia} other{há {count} dias}}",
+  "staleTitle": "Atualizar esta análise?",
+  "staleBody": "Ela foi feita {age}. Cotações, notícias e resultados podem ter mudado desde então.",
+  "staleKeep": "Mostrar a anterior",
+  "staleRefresh": "Fazer uma nova",
+  "seeAll": "Ver todas ({count})",
+  "searchAnalyses": "Pesquisar suas análises",
+  "deleteAnalysis": "Excluir",
+  "analysisDeleted": "Análise de {symbol} excluída"
 }

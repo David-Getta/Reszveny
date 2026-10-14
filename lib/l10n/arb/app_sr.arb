@@ -380,5 +380,15 @@
   "inviteExpired": "Ова позивница је истекла. Затражите нови код од особе која вас је позвала.",
   "inviteDeviceLimit": "Овај код позивнице се већ користи на максималном броју уређаја.",
   "previewConfidential": "Поверљиви преглед",
-  "errPreviewDailyLimit": "Дневно ограничење анализа за овај преглед је достигнуто. Покушајте поново сутра."
+  "errPreviewDailyLimit": "Дневно ограничење анализа за овај преглед је достигнуто. Покушајте поново сутра.",
+  "ageHours": "{count, plural, one{пре {count} сат} few{пре {count} сата} other{пре {count} сати}}",
+  "ageDays": "{count, plural, one{пре {count} дан} few{пре {count} дана} other{пре {count} дана}}",
+  "staleTitle": "Да ажурирамо ову анализу?",
+  "staleBody": "Направљена је {age}. Цене, вести и резултати су се у међувремену можда променили.",
+  "staleKeep": "Прикажи ранију",
+  "staleRefresh": "Направи нову",
+  "seeAll": "Прикажи све ({count})",
+  "searchAnalyses": "Претражи своје анализе",
+  "deleteAnalysis": "Обриши",
+  "analysisDeleted": "Анализа за {symbol} је обрисана"
 }

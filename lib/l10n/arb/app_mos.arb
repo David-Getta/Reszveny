@@ -380,5 +380,15 @@
   "inviteExpired": "Boollg kãngã wakat sa. Kos ned ning sẽn bool-f wã kod a-to.",
   "inviteDeviceLimit": "Boollg kod kãngã tʋmd masã ne masĩn-dãmb sõor sẽn yaa wʋsg n yɩɩda.",
   "previewConfidential": "Ges-taoor solgr",
-  "errPreviewDailyLimit": "Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo."
+  "errPreviewDailyLimit": "Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo.",
+  "ageHours": "{count, plural, =1{lɛɛr a yembr sẽn loogã} other{lɛɛr {count} sẽn loogã}}",
+  "ageDays": "{count, plural, =1{daar a yembr sẽn loogã} other{rasem {count} sẽn loogã}}",
+  "staleTitle": "F rata n le maan vɛɛsgã bɩ?",
+  "staleBody": "B maana-a {age}. Rẽ poorẽ, ligdã, kibarã la yɩɩlgrã tõe n tekame.",
+  "staleKeep": "Wilg a ning sẽn deng-a",
+  "staleRefresh": "Maan a paalga",
+  "seeAll": "Ges fãa ({count})",
+  "searchAnalyses": "Bao f vɛɛsgã pʋgẽ",
+  "deleteAnalysis": "Yẽes",
+  "analysisDeleted": "{symbol} vɛɛsgã yẽesame"
 }

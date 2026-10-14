@@ -380,5 +380,15 @@
   "inviteExpired": "Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.",
   "inviteDeviceLimit": "Kode undangan iki wis dienggo ing jumlah piranti maksimal.",
   "previewConfidential": "Pratinjau rahasia",
-  "errPreviewDailyLimit": "Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk."
+  "errPreviewDailyLimit": "Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk.",
+  "ageHours": "{count, plural, =1{1 jam kepungkur} other{{count} jam kepungkur}}",
+  "ageDays": "{count, plural, =1{1 dina kepungkur} other{{count} dina kepungkur}}",
+  "staleTitle": "Anyari analisis iki?",
+  "staleBody": "Analisis iki digawe {age}. Rega, kabar, lan asil bisa uga wis owah wiwit iku.",
+  "staleKeep": "Tampilake sing sadurunge",
+  "staleRefresh": "Gawe sing anyar",
+  "seeAll": "Deleng kabeh ({count})",
+  "searchAnalyses": "Goleki analisismu",
+  "deleteAnalysis": "Busak",
+  "analysisDeleted": "Analisis {symbol} wis dibusak"
 }

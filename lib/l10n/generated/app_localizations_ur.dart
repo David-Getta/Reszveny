@@ -1364,4 +1364,56 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'اس پیش نظارے کی آج کی تجزیے کی حد پوری ہو گئی ہے۔ کل دوبارہ کوشش کریں۔';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count گھنٹے پہلے',
+      one: '1 گھنٹہ پہلے',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count دن پہلے',
+      one: '1 دن پہلے',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'یہ تجزیہ اپ ڈیٹ کریں؟';
+
+  @override
+  String staleBody(String age) {
+    return 'یہ $age تیار کیا گیا تھا۔ ممکن ہے تب سے قیمتیں، خبریں اور نتائج بدل گئے ہوں۔';
+  }
+
+  @override
+  String get staleKeep => 'پہلے والا دکھائیں';
+
+  @override
+  String get staleRefresh => 'نیا تیار کریں';
+
+  @override
+  String seeAll(int count) {
+    return 'سب دیکھیں ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'اپنے تجزیوں میں تلاش کریں';
+
+  @override
+  String get deleteAnalysis => 'حذف کریں';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol کا تجزیہ حذف کر دیا گیا';
+  }
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Kjo ftesë ka skaduar. Kërkojini personit që ju ftoi një kod të ri.",
   "inviteDeviceLimit": "Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.",
   "previewConfidential": "Pamje paraprake konfidenciale",
-  "errPreviewDailyLimit": "Kufiri ditor i analizave për këtë pamje paraprake është arritur. Provoni përsëri nesër."
+  "errPreviewDailyLimit": "Kufiri ditor i analizave për këtë pamje paraprake është arritur. Provoni përsëri nesër.",
+  "ageHours": "{count, plural, =1{para 1 ore} other{para {count} orësh}}",
+  "ageDays": "{count, plural, =1{para 1 dite} other{para {count} ditësh}}",
+  "staleTitle": "Ta përditësojmë këtë analizë?",
+  "staleBody": "Është bërë {age}. Çmimet, lajmet dhe rezultatet mund të kenë ndryshuar që atëherë.",
+  "staleKeep": "Shfaq të mëparshmen",
+  "staleRefresh": "Bëj një të re",
+  "seeAll": "Shiko të gjitha ({count})",
+  "searchAnalyses": "Kërko në analizat e tua",
+  "deleteAnalysis": "Fshi",
+  "analysisDeleted": "Analiza e {symbol} u fshi"
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Bu davetin süresi doldu. Sizi davet eden kişiden yeni bir kod isteyin.",
   "inviteDeviceLimit": "Bu davet kodu zaten izin verilen en fazla sayıda cihazda kullanılıyor.",
   "previewConfidential": "Gizli önizleme",
-  "errPreviewDailyLimit": "Bu önizlemenin bugünkü analiz sınırına ulaşıldı. Yarın tekrar deneyin."
+  "errPreviewDailyLimit": "Bu önizlemenin bugünkü analiz sınırına ulaşıldı. Yarın tekrar deneyin.",
+  "ageHours": "{count, plural, =1{1 saat önce} other{{count} saat önce}}",
+  "ageDays": "{count, plural, =1{1 gün önce} other{{count} gün önce}}",
+  "staleTitle": "Bu analiz güncellensin mi?",
+  "staleBody": "{age} hazırlandı. O zamandan beri fiyatlar, haberler ve sonuçlar değişmiş olabilir.",
+  "staleKeep": "Öncekini göster",
+  "staleRefresh": "Yenisini oluştur",
+  "seeAll": "Tümünü gör ({count})",
+  "searchAnalyses": "Analizlerinde ara",
+  "deleteAnalysis": "Sil",
+  "analysisDeleted": "{symbol} analizi silindi"
 }

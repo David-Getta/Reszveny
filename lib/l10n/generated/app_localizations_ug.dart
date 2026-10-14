@@ -1369,4 +1369,56 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'بۇ ئالدىن كۆرۈشنىڭ بۈگۈنكى تەھلىل چېكىگە يېتىلدى. ئەتە قايتا سىناڭ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count سائەت ئىلگىرى',
+      one: '1 سائەت ئىلگىرى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count كۈن ئىلگىرى',
+      one: '1 كۈن ئىلگىرى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'بۇ تەھلىلنى يېڭىلامسىز؟';
+
+  @override
+  String staleBody(String age) {
+    return 'ئۇ $age تەييارلانغان. شۇنىڭدىن بۇيان باھا، خەۋەر ۋە نەتىجىلەر ئۆزگەرگەن بولۇشى مۇمكىن.';
+  }
+
+  @override
+  String get staleKeep => 'ئىلگىرىكىسىنى كۆرسىتىش';
+
+  @override
+  String get staleRefresh => 'يېڭىسىنى ھاسىللاش';
+
+  @override
+  String seeAll(int count) {
+    return 'ھەممىنى كۆرۈش ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'تەھلىللىرىڭىزدىن ئىزدەش';
+
+  @override
+  String get deleteAnalysis => 'ئۆچۈرۈش';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol تەھلىلى ئۆچۈرۈلدى';
+  }
 }

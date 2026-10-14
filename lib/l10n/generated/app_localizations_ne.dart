@@ -1366,4 +1366,56 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'यस पूर्वावलोकनको आजको विश्लेषण सीमा पुगिसकेको छ। भोलि फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count घण्टाअघि',
+      one: '1 घण्टाअघि',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count दिनअघि',
+      one: '1 दिनअघि',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'यो विश्लेषण अद्यावधिक गर्ने?';
+
+  @override
+  String staleBody(String age) {
+    return 'यो $age तयार गरिएको थियो। त्यसपछि मूल्य, समाचार र नतिजाहरू परिवर्तन भएका हुन सक्छन्।';
+  }
+
+  @override
+  String get staleKeep => 'पहिलेकै देखाउनुहोस्';
+
+  @override
+  String get staleRefresh => 'नयाँ तयार गर्नुहोस्';
+
+  @override
+  String seeAll(int count) {
+    return 'सबै हेर्नुहोस् ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'आफ्ना विश्लेषणहरू खोज्नुहोस्';
+
+  @override
+  String get deleteAnalysis => 'मेटाउनुहोस्';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol विश्लेषण मेटाइयो';
+  }
 }

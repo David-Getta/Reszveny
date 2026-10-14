@@ -380,5 +380,15 @@
   "inviteExpired": "この招待は有効期限が切れています。招待してくれた方に新しいコードを依頼してください。",
   "inviteDeviceLimit": "この招待コードは、すでに上限台数の端末で使用されています。",
   "previewConfidential": "機密プレビュー",
-  "errPreviewDailyLimit": "このプレビューの本日の分析上限に達しました。明日もう一度お試しください。"
+  "errPreviewDailyLimit": "このプレビューの本日の分析上限に達しました。明日もう一度お試しください。",
+  "ageHours": "{count, plural, =1{1 時間前} other{{count} 時間前}}",
+  "ageDays": "{count, plural, =1{1 日前} other{{count} 日前}}",
+  "staleTitle": "この分析を更新しますか？",
+  "staleBody": "この分析は{age}に作成されました。その後、株価やニュース、業績が変わっている可能性があります。",
+  "staleKeep": "以前の分析を表示",
+  "staleRefresh": "新しく作成",
+  "seeAll": "すべて表示 ({count})",
+  "searchAnalyses": "分析を検索",
+  "deleteAnalysis": "削除",
+  "analysisDeleted": "{symbol} の分析を削除しました"
 }

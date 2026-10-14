@@ -1370,4 +1370,56 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Urugero rw\'isesengura rw\'uyu munsi kuri iri gerageza rwashitse. Subira ugerageze ejo.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hashize amasaha $count',
+      one: 'hashize isaha 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hashize imisi $count',
+      one: 'hashize umusi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Urashaka kuvugurura iri sesangura?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ryakozwe $age. Kuva ico gihe, ibiciro, amakuru n\'ivyavuyemwo vyoshobora kuba vyarahindutse.';
+  }
+
+  @override
+  String get staleKeep => 'Erekana irya mbere';
+
+  @override
+  String get staleRefresh => 'Kora irishasha';
+
+  @override
+  String seeAll(int count) {
+    return 'Raba vyose ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Rondera mu masesangura yawe';
+
+  @override
+  String get deleteAnalysis => 'Futa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Isesangura rya $symbol ryafuswe';
+  }
 }

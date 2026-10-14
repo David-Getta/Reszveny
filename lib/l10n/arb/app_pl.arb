@@ -380,5 +380,15 @@
   "inviteExpired": "To zaproszenie wygasło. Poproś osobę, która cię zaprosiła, o nowy kod.",
   "inviteDeviceLimit": "Ten kod zaproszenia jest już używany na maksymalnej liczbie urządzeń.",
   "previewConfidential": "Poufny podgląd",
-  "errPreviewDailyLimit": "Wyczerpano dzisiejszy limit analiz w tym podglądzie. Spróbuj ponownie jutro."
+  "errPreviewDailyLimit": "Wyczerpano dzisiejszy limit analiz w tym podglądzie. Spróbuj ponownie jutro.",
+  "ageHours": "{count, plural, one{{count} godzinę temu} few{{count} godziny temu} many{{count} godzin temu} other{{count} godziny temu}}",
+  "ageDays": "{count, plural, one{{count} dzień temu} few{{count} dni temu} many{{count} dni temu} other{{count} dnia temu}}",
+  "staleTitle": "Zaktualizować tę analizę?",
+  "staleBody": "Została utworzona {age}. Od tego czasu kursy, wiadomości i wyniki mogły się zmienić.",
+  "staleKeep": "Pokaż wcześniejszą",
+  "staleRefresh": "Utwórz nową",
+  "seeAll": "Zobacz wszystkie ({count})",
+  "searchAnalyses": "Szukaj w swoich analizach",
+  "deleteAnalysis": "Usuń",
+  "analysisDeleted": "Usunięto analizę {symbol}"
 }

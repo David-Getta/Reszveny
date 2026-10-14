@@ -380,5 +380,15 @@
   "inviteExpired": "To povabilo je poteklo. Za novo kodo prosite osebo, ki vas je povabila.",
   "inviteDeviceLimit": "Ta koda povabila je že v uporabi na največjem dovoljenem številu naprav.",
   "previewConfidential": "Zaupni predogled",
-  "errPreviewDailyLimit": "Današnja omejitev analiz za ta predogled je dosežena. Poskusite znova jutri."
+  "errPreviewDailyLimit": "Današnja omejitev analiz za ta predogled je dosežena. Poskusite znova jutri.",
+  "ageHours": "{count, plural, one{pred {count} uro} two{pred {count} urama} few{pred {count} urami} other{pred {count} urami}}",
+  "ageDays": "{count, plural, one{pred {count} dnem} two{pred {count} dnevoma} few{pred {count} dnevi} other{pred {count} dnevi}}",
+  "staleTitle": "Posodobiti to analizo?",
+  "staleBody": "Ustvarjena je bila {age}. Cene, novice in rezultati so se od takrat morda spremenili.",
+  "staleKeep": "Prikaži prejšnjo",
+  "staleRefresh": "Ustvari novo",
+  "seeAll": "Prikaži vse ({count})",
+  "searchAnalyses": "Išči po svojih analizah",
+  "deleteAnalysis": "Izbriši",
+  "analysisDeleted": "Analiza {symbol} izbrisana"
 }

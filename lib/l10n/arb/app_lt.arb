@@ -380,5 +380,15 @@
   "inviteExpired": "Šio kvietimo galiojimas baigėsi. Paprašykite naujo kodo asmens, kuris jus pakvietė.",
   "inviteDeviceLimit": "Šis kvietimo kodas jau naudojamas didžiausiame leistiname įrenginių skaičiuje.",
   "previewConfidential": "Konfidenciali peržiūra",
-  "errPreviewDailyLimit": "Šios peržiūros šiandienos analizių limitas išnaudotas. Bandykite dar kartą rytoj."
+  "errPreviewDailyLimit": "Šios peržiūros šiandienos analizių limitas išnaudotas. Bandykite dar kartą rytoj.",
+  "ageHours": "{count, plural, one{prieš {count} valandą} few{prieš {count} valandas} many{prieš {count} valandos} other{prieš {count} valandų}}",
+  "ageDays": "{count, plural, one{prieš {count} dieną} few{prieš {count} dienas} many{prieš {count} dienos} other{prieš {count} dienų}}",
+  "staleTitle": "Atnaujinti šią analizę?",
+  "staleBody": "Ši analizė sukurta {age}. Nuo to laiko kainos, naujienos ir rezultatai galėjo pasikeisti.",
+  "staleKeep": "Rodyti ankstesnę",
+  "staleRefresh": "Sukurti naują",
+  "seeAll": "Žiūrėti visas ({count})",
+  "searchAnalyses": "Ieškoti savo analizių",
+  "deleteAnalysis": "Ištrinti",
+  "analysisDeleted": "{symbol} analizė ištrinta"
 }

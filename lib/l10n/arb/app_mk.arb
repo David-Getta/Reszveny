@@ -380,5 +380,15 @@
   "inviteExpired": "Оваа покана истече. Побарајте нов код од лицето што ве покани.",
   "inviteDeviceLimit": "Овој код за покана веќе се користи на максималниот број уреди.",
   "previewConfidential": "Доверлив преглед",
-  "errPreviewDailyLimit": "Дневниот лимит на анализи за овој преглед е достигнат. Обидете се повторно утре."
+  "errPreviewDailyLimit": "Дневниот лимит на анализи за овој преглед е достигнат. Обидете се повторно утре.",
+  "ageHours": "{count, plural, one{пред {count} час} other{пред {count} часа}}",
+  "ageDays": "{count, plural, one{пред {count} ден} other{пред {count} дена}}",
+  "staleTitle": "Да се ажурира анализава?",
+  "staleBody": "Направена е {age}. Цените, вестите и резултатите можеби се промениле оттогаш.",
+  "staleKeep": "Прикажи ја претходната",
+  "staleRefresh": "Направи нова",
+  "seeAll": "Види ги сите ({count})",
+  "searchAnalyses": "Пребарај ги своите анализи",
+  "deleteAnalysis": "Избриши",
+  "analysisDeleted": "Анализата за {symbol} е избришана"
 }

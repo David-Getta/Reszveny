@@ -1363,4 +1363,58 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'לפני $count שעות',
+      two: 'לפני שעתיים',
+      one: 'לפני שעה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'לפני $count ימים',
+      two: 'לפני יומיים',
+      one: 'לפני יום',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'לעדכן את הניתוח?';
+
+  @override
+  String staleBody(String age) {
+    return 'הניתוח נוצר $age. ייתכן שהמחירים, החדשות והתוצאות השתנו מאז.';
+  }
+
+  @override
+  String get staleKeep => 'הצגת הקודם';
+
+  @override
+  String get staleRefresh => 'יצירת ניתוח חדש';
+
+  @override
+  String seeAll(int count) {
+    return 'הצגת הכול ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'חיפוש בניתוחים שלך';
+
+  @override
+  String get deleteAnalysis => 'מחיקה';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'הניתוח של $symbol נמחק';
+  }
 }

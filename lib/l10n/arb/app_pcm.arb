@@ -380,5 +380,15 @@
   "inviteExpired": "Dis invite don expire. Ask di person wey invite you make e give you new code.",
   "inviteDeviceLimit": "Dem don already use dis invite code for di maximum number of devices.",
   "previewConfidential": "Secret preview",
-  "errPreviewDailyLimit": "Today analysis limit for dis preview don finish. Try again tomorrow."
+  "errPreviewDailyLimit": "Today analysis limit for dis preview don finish. Try again tomorrow.",
+  "ageHours": "{count, plural, one{{count} hour ago} other{{count} hours ago}}",
+  "ageDays": "{count, plural, one{{count} day ago} other{{count} days ago}}",
+  "staleTitle": "You wan update dis analysis?",
+  "staleBody": "Dem make am {age}. Price, news and result fit don change since dat time.",
+  "staleKeep": "Show di old one",
+  "staleRefresh": "Make new one",
+  "seeAll": "See all ({count})",
+  "searchAnalyses": "Search your analysis dem",
+  "deleteAnalysis": "Delete",
+  "analysisDeleted": "{symbol} analysis don delete"
 }

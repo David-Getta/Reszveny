@@ -1360,4 +1360,56 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'एहि पूर्वावलोकनक आजुक विश्लेषण-सीमा पूरा भऽ गेल। काल्हि फेर प्रयास करू।';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count घंटा पहिने',
+      one: '1 घंटा पहिने',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count दिन पहिने',
+      one: '1 दिन पहिने',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ई विश्लेषण अपडेट करी?';
+
+  @override
+  String staleBody(String age) {
+    return 'ई $age बनाओल गेल छल। तहिया सँ भाव, समाचार आ परिणाम बदलि गेल भ\' सकैत अछि।';
+  }
+
+  @override
+  String get staleKeep => 'पहिलुका देखाउ';
+
+  @override
+  String get staleRefresh => 'नव बनाउ';
+
+  @override
+  String seeAll(int count) {
+    return 'सभटा देखाउ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'अपन विश्लेषण मे खोजू';
+
+  @override
+  String get deleteAnalysis => 'मेटाउ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol विश्लेषण मेटाओल गेल';
+  }
 }

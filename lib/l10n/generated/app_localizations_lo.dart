@@ -1353,4 +1353,54 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ຊົ່ວໂມງກ່ອນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ມື້ກ່ອນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ອັບເດດການວິເຄາະນີ້ບໍ?';
+
+  @override
+  String staleBody(String age) {
+    return 'ການວິເຄາະນີ້ຖືກສ້າງເມື່ອ $age. ນັບແຕ່ນັ້ນມາ ລາຄາ, ຂ່າວ ແລະ ຜົນປະກອບການອາດມີການປ່ຽນແປງ.';
+  }
+
+  @override
+  String get staleKeep => 'ສະແດງອັນກ່ອນໜ້າ';
+
+  @override
+  String get staleRefresh => 'ສ້າງອັນໃໝ່';
+
+  @override
+  String seeAll(int count) {
+    return 'ເບິ່ງທັງໝົດ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ຊອກຫາການວິເຄາະຂອງທ່ານ';
+
+  @override
+  String get deleteAnalysis => 'ລຶບ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'ລຶບການວິເຄາະ $symbol ແລ້ວ';
+  }
 }

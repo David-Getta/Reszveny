@@ -1322,4 +1322,56 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get errPreviewDailyLimit => '이 미리보기의 오늘 분석 한도에 도달했습니다. 내일 다시 시도하세요.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count시간 전',
+      one: '1시간 전',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 전',
+      one: '1일 전',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => '이 분석을 업데이트할까요?';
+
+  @override
+  String staleBody(String age) {
+    return '이 분석은 $age에 만들어졌습니다. 그 이후로 가격, 뉴스, 실적이 바뀌었을 수 있습니다.';
+  }
+
+  @override
+  String get staleKeep => '이전 분석 보기';
+
+  @override
+  String get staleRefresh => '새로 만들기';
+
+  @override
+  String seeAll(int count) {
+    return '모두 보기($count)';
+  }
+
+  @override
+  String get searchAnalyses => '내 분석 검색';
+
+  @override
+  String get deleteAnalysis => '삭제';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol 분석을 삭제했습니다';
+  }
 }

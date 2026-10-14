@@ -380,5 +380,15 @@
   "inviteExpired": "Dîba dia dibikila edi diapita. Lomba code mupiamupia kudi muntu uvua mukubikile.",
   "inviteDeviceLimit": "Code wa dibikila eu udi mutumika kale ku bungi bua bintu bia bungi menemene bidi bianyishibue.",
   "previewConfidential": "Ditangila dia musokoko",
-  "errPreviewDailyLimit": "Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela."
+  "errPreviewDailyLimit": "Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela.",
+  "ageHours": "{count, plural, =1{dîba 1 dipite} other{mêba {count} mapite}}",
+  "ageDays": "{count, plural, =1{dituku 1 dipite} other{matuku {count} mapite}}",
+  "staleTitle": "Kuenza dikonkonona edi dipiadipia?",
+  "staleBody": "Dikonkonona edi diakenzibua {age}. Kubangila ku tshikondo atshi, mishinga, ngumu ne bipeta bidi mua kuikala bishintuluke.",
+  "staleKeep": "Leja dia kumpala",
+  "staleRefresh": "Enza dipiadipia",
+  "seeAll": "Mona yonso ({count})",
+  "searchAnalyses": "Keba mu makonkonona ebe",
+  "deleteAnalysis": "Jimija",
+  "analysisDeleted": "Dikonkonona dia {symbol} diajimijibua"
 }

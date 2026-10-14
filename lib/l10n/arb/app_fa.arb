@@ -380,5 +380,15 @@
   "inviteExpired": "این دعوت منقضی شده است. از کسی که شما را دعوت کرده است یک کد جدید بخواهید.",
   "inviteDeviceLimit": "این کد دعوت هم‌اکنون روی حداکثر تعداد مجاز دستگاه‌ها استفاده می‌شود.",
   "previewConfidential": "پیش‌نمایش محرمانه",
-  "errPreviewDailyLimit": "سقف تحلیل امروزِ این پیش‌نمایش پر شده است. فردا دوباره امتحان کنید."
+  "errPreviewDailyLimit": "سقف تحلیل امروزِ این پیش‌نمایش پر شده است. فردا دوباره امتحان کنید.",
+  "ageHours": "{count, plural, =1{1 ساعت پیش} other{{count} ساعت پیش}}",
+  "ageDays": "{count, plural, =1{1 روز پیش} other{{count} روز پیش}}",
+  "staleTitle": "این تحلیل به‌روز شود؟",
+  "staleBody": "این تحلیل {age} تولید شده است. ممکن است از آن زمان قیمت‌ها، اخبار و نتایج تغییر کرده باشند.",
+  "staleKeep": "نمایش تحلیل قبلی",
+  "staleRefresh": "تولید تحلیل جدید",
+  "seeAll": "دیدن همه ({count})",
+  "searchAnalyses": "جستجو در تحلیل‌های شما",
+  "deleteAnalysis": "حذف",
+  "analysisDeleted": "تحلیل {symbol} حذف شد"
 }

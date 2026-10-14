@@ -1370,4 +1370,56 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ಈ ಪೂರ್ವವೀಕ್ಷಣೆಯ ಇಂದಿನ ವಿಶ್ಲೇಷಣೆ ಮಿತಿ ತಲುಪಿದೆ. ನಾಳೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಗಂಟೆಗಳ ಹಿಂದೆ',
+      one: '1 ಗಂಟೆಯ ಹಿಂದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ದಿನಗಳ ಹಿಂದೆ',
+      one: '1 ದಿನದ ಹಿಂದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ಈ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನವೀಕರಿಸಬೇಕೇ?';
+
+  @override
+  String staleBody(String age) {
+    return 'ಈ ವಿಶ್ಲೇಷಣೆಯನ್ನು $age ರಚಿಸಲಾಗಿದೆ. ಅಂದಿನಿಂದ ಬೆಲೆಗಳು, ಸುದ್ದಿಗಳು ಮತ್ತು ಫಲಿತಾಂಶಗಳು ಬದಲಾಗಿರಬಹುದು.';
+  }
+
+  @override
+  String get staleKeep => 'ಹಿಂದಿನದನ್ನು ತೋರಿಸಿ';
+
+  @override
+  String get staleRefresh => 'ಹೊಸದನ್ನು ರಚಿಸಿ';
+
+  @override
+  String seeAll(int count) {
+    return 'ಎಲ್ಲವನ್ನೂ ನೋಡಿ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಹುಡುಕಿ';
+
+  @override
+  String get deleteAnalysis => 'ಅಳಿಸಿ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol ವಿಶ್ಲೇಷಣೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ';
+  }
 }

@@ -1367,4 +1367,56 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Маҳдудияти имрӯзаи таҳлилҳои ин пешнамоиш тамом шуд. Фардо бори дигар кӯшиш кунед.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count соат пеш',
+      one: '1 соат пеш',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count рӯз пеш',
+      one: '1 рӯз пеш',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ин таҳлилро навсозӣ кунем?';
+
+  @override
+  String staleBody(String age) {
+    return 'Он $age сохта шудааст. Аз он вақт нархҳо, хабарҳо ва натиҷаҳо метавонанд тағйир ёфта бошанд.';
+  }
+
+  @override
+  String get staleKeep => 'Нишон додани таҳлили пешина';
+
+  @override
+  String get staleRefresh => 'Таҳлили нав сохтан';
+
+  @override
+  String seeAll(int count) {
+    return 'Ҳамаро дидан ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Ҷустуҷӯ дар таҳлилҳои шумо';
+
+  @override
+  String get deleteAnalysis => 'Нест кардан';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Таҳлили $symbol нест карда шуд';
+  }
 }

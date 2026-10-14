@@ -1360,4 +1360,56 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'هن پريويو جي اڄ جي تجزيي جي حد پوري ٿي وئي آهي. سڀاڻي ٻيهر ڪوشش ڪريو.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڪلاڪ اڳ',
+      one: '1 ڪلاڪ اڳ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڏينهن اڳ',
+      one: '1 ڏينهن اڳ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'هي تجزيو تازو ڪجي؟';
+
+  @override
+  String staleBody(String age) {
+    return 'هي $age تيار ٿيو هو. ان کان پوءِ قيمتون، خبرون ۽ نتيجا بدلجي سگهن ٿا.';
+  }
+
+  @override
+  String get staleKeep => 'اڳوڻو ڏيکاريو';
+
+  @override
+  String get staleRefresh => 'نئون تيار ڪريو';
+
+  @override
+  String seeAll(int count) {
+    return 'سڀ ڏسو ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'پنهنجا تجزيا ڳوليو';
+
+  @override
+  String get deleteAnalysis => 'ميٽيو';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol جو تجزيو ميٽيو ويو';
+  }
 }

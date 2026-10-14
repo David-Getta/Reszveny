@@ -380,5 +380,15 @@
   "inviteExpired": "Ihinda rĩa ũiti ũyũ nĩrĩthirĩte. Hooya code njerũ kuuma kũrĩ mũndũ ũrĩa wagwĩtire.",
   "inviteDeviceLimit": "Code ĩno ya ũiti nĩĩrahũthĩrwo mĩtambo-inĩ mĩingĩ makĩria ĩrĩa ĩtĩkĩrĩtio.",
   "previewConfidential": "Kuona kwa mbere kwa hitho",
-  "errPreviewDailyLimit": "Mũhaka wa mathuthuria ma ũmũthĩ wa kuona kũũ kwa mbere nĩũkinyĩtio. Geria rĩngĩ rũciũ."
+  "errPreviewDailyLimit": "Mũhaka wa mathuthuria ma ũmũthĩ wa kuona kũũ kwa mbere nĩũkinyĩtio. Geria rĩngĩ rũciũ.",
+  "ageHours": "{count, plural, =1{ithaa 1 rĩhĩtũku} other{mathaa {count} mahĩtũku}}",
+  "ageDays": "{count, plural, =1{mũthenya 1 ũhĩtũku} other{mĩthenya {count} mĩhĩtũku}}",
+  "staleTitle": "Thondeka ũthuthuria ũyũ rĩngĩ?",
+  "staleBody": "Ũthuthuria ũyũ wathondekirwo {age}. Kuuma hĩndĩ ĩyo, thogora, ũhoro na maumĩrĩra no makorwo magarũrũkĩte.",
+  "staleKeep": "Onania ũrĩa wa mbere",
+  "staleRefresh": "Thondeka mwerũ",
+  "seeAll": "Ona yothe ({count})",
+  "searchAnalyses": "Caria ũthuthuria waku",
+  "deleteAnalysis": "Eheria",
+  "analysisDeleted": "Ũthuthuria wa {symbol} weherio"
 }

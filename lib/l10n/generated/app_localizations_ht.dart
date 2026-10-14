@@ -1364,4 +1364,56 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sa gen $count èdtan',
+      one: 'sa gen 1 èdtan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sa gen $count jou',
+      one: 'sa gen 1 jou',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Mete analiz sa a ajou?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analiz sa a te fèt $age. Pri, nouvèl ak rezilta yo ka chanje depi lè sa a.';
+  }
+
+  @override
+  String get staleKeep => 'Montre ansyen an';
+
+  @override
+  String get staleRefresh => 'Fè yon nouvo';
+
+  @override
+  String seeAll(int count) {
+    return 'Wè tout ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Chèche nan analiz ou yo';
+
+  @override
+  String get deleteAnalysis => 'Efase';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analiz $symbol efase';
+  }
 }

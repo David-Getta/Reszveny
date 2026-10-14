@@ -1308,6 +1308,58 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errPreviewDailyLimit => '此预览今日的分析次数已用完。请明天再试。';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 小时前',
+      one: '1 小时前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前',
+      one: '1 天前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => '要更新这份分析吗？';
+
+  @override
+  String staleBody(String age) {
+    return '这份分析生成于$age。此后价格、新闻和业绩可能已有变化。';
+  }
+
+  @override
+  String get staleKeep => '查看之前的分析';
+
+  @override
+  String get staleRefresh => '生成新分析';
+
+  @override
+  String seeAll(int count) {
+    return '查看全部 ($count)';
+  }
+
+  @override
+  String get searchAnalyses => '搜索你的分析';
+
+  @override
+  String get deleteAnalysis => '删除';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '已删除 $symbol 分析';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2612,4 +2664,56 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get errPreviewDailyLimit => '此預覽今日的分析次數已用完。請明天再試。';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 小時前',
+      one: '1 小時前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 日前',
+      one: '1 日前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => '要更新這份分析嗎？';
+
+  @override
+  String staleBody(String age) {
+    return '這份分析於$age產生。此後價格、新聞及業績可能已有變化。';
+  }
+
+  @override
+  String get staleKeep => '查看之前的分析';
+
+  @override
+  String get staleRefresh => '產生新分析';
+
+  @override
+  String seeAll(int count) {
+    return '查看全部 ($count)';
+  }
+
+  @override
+  String get searchAnalyses => '搜尋你的分析';
+
+  @override
+  String get deleteAnalysis => '刪除';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '已刪除 $symbol 分析';
+  }
 }

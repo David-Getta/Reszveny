@@ -1363,4 +1363,56 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n yisragen aya',
+      one: '1 n usrag aya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n wussan aya',
+      one: '1 n wass aya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Leqqem tasleḍt-a?';
+
+  @override
+  String staleBody(String age) {
+    return 'Tasleḍt-a tettwaxdem $age. Seg imir-nni, ahat ttbeddlen ssuma, isallen d yigmaḍ.';
+  }
+
+  @override
+  String get staleKeep => 'Sken-d tin yezrin';
+
+  @override
+  String get staleRefresh => 'Snulfu-d tamaynut';
+
+  @override
+  String seeAll(int count) {
+    return 'Wali akk ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Nadi deg tesleḍwin-ik';
+
+  @override
+  String get deleteAnalysis => 'Kkes';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Tasleḍt n $symbol tettwakkes';
+  }
 }

@@ -1365,4 +1365,56 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'এই প্ৰিভিউৰ আজিৰ বিশ্লেষণৰ সীমা পূৰ হৈছে। কাইলৈ পুনৰ চেষ্টা কৰক।';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ঘণ্টা আগতে',
+      one: '1 ঘণ্টা আগতে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count দিন আগতে',
+      one: '1 দিন আগতে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'এই বিশ্লেষণ আপডেট কৰিবনে?';
+
+  @override
+  String staleBody(String age) {
+    return 'এইটো $age সৃষ্টি কৰা হৈছিল। তাৰ পিছত দাম, বাতৰি আৰু ফলাফল সলনি হ\'ব পাৰে।';
+  }
+
+  @override
+  String get staleKeep => 'আগৰটো দেখুৱাওক';
+
+  @override
+  String get staleRefresh => 'নতুন এটা সৃষ্টি কৰক';
+
+  @override
+  String seeAll(int count) {
+    return 'সকলো চাওক ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'আপোনাৰ বিশ্লেষণ সন্ধান কৰক';
+
+  @override
+  String get deleteAnalysis => 'মচক';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol বিশ্লেষণ মচা হ\'ল';
+  }
 }

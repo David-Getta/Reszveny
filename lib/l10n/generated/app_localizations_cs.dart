@@ -1400,4 +1400,60 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Dnešní limit analýz této předběžné verze byl vyčerpán. Zkuste to znovu zítra.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'před $count hodinami',
+      many: 'před $count hodiny',
+      few: 'před $count hodinami',
+      one: 'před 1 hodinou',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'před $count dny',
+      many: 'před $count dne',
+      few: 'před $count dny',
+      one: 'před 1 dnem',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Aktualizovat tuto analýzu?';
+
+  @override
+  String staleBody(String age) {
+    return 'Byla vytvořena $age. Ceny, zprávy a výsledky se od té doby mohly změnit.';
+  }
+
+  @override
+  String get staleKeep => 'Zobrazit dřívější';
+
+  @override
+  String get staleRefresh => 'Vytvořit novou';
+
+  @override
+  String seeAll(int count) {
+    return 'Zobrazit vše ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Hledat v analýzách';
+
+  @override
+  String get deleteAnalysis => 'Smazat';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analýza $symbol smazána';
+  }
 }

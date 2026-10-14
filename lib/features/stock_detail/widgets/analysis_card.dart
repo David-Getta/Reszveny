@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../app_services.dart';
 import '../../../core/errors.dart';
 import '../../../features/analysis/analysis_options.dart';
+import '../../../features/analysis/stale_report.dart';
 import '../../../features/billing/paywall_page.dart';
 import '../../../features/billing/trial_upsell.dart';
 import '../../../core/models/stock_details.dart';
@@ -40,7 +41,13 @@ class _AnalysisCardState extends State<AnalysisCard> {
     _restored = true;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
-    services.reports.restore(widget.details.symbol, language: language);
+    final restoring = services.reports.restore(widget.details.symbol, language: language);
+    // Az előzményekből „új elemzés”-t kértek: a mentett betöltése után indul.
+    if (services.reports.takeRefreshRequest(widget.details.symbol)) {
+      restoring.then((_) {
+        if (mounted) _generate(force: true);
+      });
+    }
   }
 
   static bool _isQuotaError(Object? e) =>
@@ -86,9 +93,11 @@ class _AnalysisCardState extends State<AnalysisCard> {
       builder: (context, _) {
         final store = services.reports;
         final trial = services.isTrialAnalysis;
-        final report = store.report(symbol);
         final loading = store.isLoading(symbol);
         final error = store.error(symbol);
+        final stale = store.needsStaleDecision(symbol) ? store.report(symbol) : null;
+        // Régi elemzésnél előbb a kérdés: új kell, vagy jó a korábbi.
+        final report = stale == null ? store.report(symbol) : null;
 
         return SectionCard(
           title: l10n.aiSectionTitle,
@@ -130,7 +139,22 @@ class _AnalysisCardState extends State<AnalysisCard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (report == null && !loading) ...[
+              if (stale != null && !loading) ...[
+                if (error != null) ...[SectionError(errorMessage(l10n, error)), const SizedBox(height: 10)],
+                if (_isQuotaError(error)) ...[
+                  OutlinedButton.icon(
+                    onPressed: () => PaywallPage.open(context),
+                    icon: const Icon(Icons.workspace_premium_outlined, size: 18),
+                    label: Text(l10n.viewPlans),
+                  ),
+                  const SizedBox(height: 10),
+                ],
+                StaleReportPrompt(
+                  report: stale,
+                  onKeep: () => store.keepStale(symbol),
+                  onRefresh: () => _generate(force: true),
+                ),
+              ] else if (report == null && !loading) ...[
                 Text(l10n.aiIntro, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
                 const SizedBox(height: 8),
                 Text(_optionsLine(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),

@@ -380,5 +380,15 @@
   "inviteExpired": "Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.",
   "inviteDeviceLimit": "Ezt a meghívókódot már a megengedett számú eszközön használják.",
   "previewConfidential": "Bizalmas előzetes",
-  "errPreviewDailyLimit": "Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap."
+  "errPreviewDailyLimit": "Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap.",
+  "ageHours": "{count, plural, =1{1 órája} other{{count} órája}}",
+  "ageDays": "{count, plural, =1{1 napja} other{{count} napja}}",
+  "staleTitle": "Frissítsük az elemzést?",
+  "staleBody": "Ez az elemzés {age} készült. Azóta változhatott az árfolyam, és lehetnek új hírek vagy eredmények.",
+  "staleKeep": "A korábbi megnézése",
+  "staleRefresh": "Új elemzés",
+  "seeAll": "Mind ({count})",
+  "searchAnalyses": "Keresés az elemzéseid között",
+  "deleteAnalysis": "Törlés",
+  "analysisDeleted": "{symbol} elemzés törölve"
 }

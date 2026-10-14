@@ -1376,4 +1376,56 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Tratra ny fetran\'ny fanadihadiana androany amin\'ity fijery mialoha ity. Andramo indray rahampitso.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ora lasa izay',
+      one: '1 ora lasa izay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count andro lasa izay',
+      one: '1 andro lasa izay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Havaozina ve ity fandalinana ity?';
+
+  @override
+  String staleBody(String age) {
+    return 'Natao $age ity. Mety efa niova ny vidiny, ny vaovao ary ny vokatra hatramin\'izay.';
+  }
+
+  @override
+  String get staleKeep => 'Asehoy ilay teo aloha';
+
+  @override
+  String get staleRefresh => 'Mamorona vaovao';
+
+  @override
+  String seeAll(int count) {
+    return 'Jereo daholo ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Hikaroka ao amin\'ny fandalinanao';
+
+  @override
+  String get deleteAnalysis => 'Fafao';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Voafafa ny fandalinana $symbol';
+  }
 }

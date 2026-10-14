@@ -1351,4 +1351,54 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'การวิเคราะห์ของพรีวิวนี้ครบโควตาของวันนี้แล้ว ลองอีกครั้งพรุ่งนี้';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ชั่วโมงที่แล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count วันที่แล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'อัปเดตการวิเคราะห์นี้ไหม';
+
+  @override
+  String staleBody(String age) {
+    return 'การวิเคราะห์นี้สร้างเมื่อ $age ราคา ข่าว และผลประกอบการอาจเปลี่ยนไปแล้วตั้งแต่นั้น';
+  }
+
+  @override
+  String get staleKeep => 'ดูฉบับก่อนหน้า';
+
+  @override
+  String get staleRefresh => 'สร้างใหม่';
+
+  @override
+  String seeAll(int count) {
+    return 'ดูทั้งหมด ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ค้นหาการวิเคราะห์ของคุณ';
+
+  @override
+  String get deleteAnalysis => 'ลบ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'ลบการวิเคราะห์ $symbol แล้ว';
+  }
 }

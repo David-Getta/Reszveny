@@ -380,5 +380,15 @@
   "inviteExpired": "Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.",
   "inviteDeviceLimit": "Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.",
   "previewConfidential": "Konfidentiell förhandsversion",
-  "errPreviewDailyLimit": "Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon."
+  "errPreviewDailyLimit": "Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon.",
+  "ageHours": "{count, plural, =1{för 1 timme sedan} other{för {count} timmar sedan}}",
+  "ageDays": "{count, plural, =1{för 1 dag sedan} other{för {count} dagar sedan}}",
+  "staleTitle": "Uppdatera analysen?",
+  "staleBody": "Den gjordes {age}. Kurser, nyheter och resultat kan ha ändrats sedan dess.",
+  "staleKeep": "Visa den tidigare",
+  "staleRefresh": "Gör en ny",
+  "seeAll": "Visa alla ({count})",
+  "searchAnalyses": "Sök bland dina analyser",
+  "deleteAnalysis": "Radera",
+  "analysisDeleted": "Analysen av {symbol} har raderats"
 }

@@ -1354,4 +1354,56 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ges-taoor kãngã rũndã vẽnegr sõor sa. Le makr beoogo.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'lɛɛr $count sẽn loogã',
+      one: 'lɛɛr a yembr sẽn loogã',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'rasem $count sẽn loogã',
+      one: 'daar a yembr sẽn loogã',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'F rata n le maan vɛɛsgã bɩ?';
+
+  @override
+  String staleBody(String age) {
+    return 'B maana-a $age. Rẽ poorẽ, ligdã, kibarã la yɩɩlgrã tõe n tekame.';
+  }
+
+  @override
+  String get staleKeep => 'Wilg a ning sẽn deng-a';
+
+  @override
+  String get staleRefresh => 'Maan a paalga';
+
+  @override
+  String seeAll(int count) {
+    return 'Ges fãa ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Bao f vɛɛsgã pʋgẽ';
+
+  @override
+  String get deleteAnalysis => 'Yẽes';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol vɛɛsgã yẽesame';
+  }
 }

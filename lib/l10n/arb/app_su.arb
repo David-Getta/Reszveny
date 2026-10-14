@@ -380,5 +380,15 @@
   "inviteExpired": "Uleman ieu geus kadaluwarsa. Pénta kode anyar ka jalma anu ngondang anjeun.",
   "inviteDeviceLimit": "Kode uleman ieu geus dipaké dina jumlah alat maksimum.",
   "previewConfidential": "Pratinjau rahasia",
-  "errPreviewDailyLimit": "Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan."
+  "errPreviewDailyLimit": "Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan.",
+  "ageHours": "{count, plural, =1{1 jam katukang} other{{count} jam katukang}}",
+  "ageDays": "{count, plural, =1{1 poé katukang} other{{count} poé katukang}}",
+  "staleTitle": "Anyarkeun analisis ieu?",
+  "staleBody": "Analisis ieu dijieun {age}. Harga, warta, jeung hasil bisa geus robah ti harita.",
+  "staleKeep": "Témbongkeun nu saméméhna",
+  "staleRefresh": "Jieun nu anyar",
+  "seeAll": "Tingali sadayana ({count})",
+  "searchAnalyses": "Paluruh analisis anjeun",
+  "deleteAnalysis": "Pupus",
+  "analysisDeleted": "Analisis {symbol} geus dipupus"
 }

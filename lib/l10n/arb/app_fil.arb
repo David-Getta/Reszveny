@@ -380,5 +380,15 @@
   "inviteExpired": "Expired na ang imbitasyong ito. Humingi ng bagong code sa taong nag-imbita sa iyo.",
   "inviteDeviceLimit": "Ginagamit na ang invite code na ito sa pinakamaraming device na pinapayagan.",
   "previewConfidential": "Kumpidensyal na preview",
-  "errPreviewDailyLimit": "Naabot na ng preview na ito ang limitasyon ng pagsusuri para ngayong araw. Subukang muli bukas."
+  "errPreviewDailyLimit": "Naabot na ng preview na ito ang limitasyon ng pagsusuri para ngayong araw. Subukang muli bukas.",
+  "ageHours": "{count, plural, =1{1 oras ang nakalipas} other{{count} oras ang nakalipas}}",
+  "ageDays": "{count, plural, =1{1 araw ang nakalipas} other{{count} araw ang nakalipas}}",
+  "staleTitle": "I-update ang pagsusuring ito?",
+  "staleBody": "Ginawa ito {age}. Maaaring nagbago na ang mga presyo, balita at resulta mula noon.",
+  "staleKeep": "Ipakita ang nauna",
+  "staleRefresh": "Gumawa ng bago",
+  "seeAll": "Tingnan lahat ({count})",
+  "searchAnalyses": "Hanapin sa iyong mga pagsusuri",
+  "deleteAnalysis": "Burahin",
+  "analysisDeleted": "Nabura ang pagsusuri sa {symbol}"
 }

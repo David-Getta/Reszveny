@@ -1363,4 +1363,56 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'elekere $count gara aga',
+      one: 'elekere 1 gara aga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ụbọchị $count gara aga',
+      one: 'ụbọchị 1 gara aga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Melite nyocha a?';
+
+  @override
+  String staleBody(String age) {
+    return 'E mere nyocha a $age. Ọnụahịa, akụkọ na nsonaazụ nwere ike ịgbanwela kemgbe ahụ.';
+  }
+
+  @override
+  String get staleKeep => 'Gosi nke mbụ';
+
+  @override
+  String get staleRefresh => 'Mepụta nke ọhụrụ';
+
+  @override
+  String seeAll(int count) {
+    return 'Hụ ha niile ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Chọọ na nyocha gị';
+
+  @override
+  String get deleteAnalysis => 'Hichapụ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'E hichapụla nyocha $symbol';
+  }
 }

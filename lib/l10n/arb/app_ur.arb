@@ -380,5 +380,15 @@
   "inviteExpired": "اس دعوت کی میعاد ختم ہو گئی ہے۔ جس شخص نے آپ کو مدعو کیا تھا اس سے نیا کوڈ مانگیں۔",
   "inviteDeviceLimit": "یہ دعوتی کوڈ پہلے ہی زیادہ سے زیادہ اجازت شدہ آلات پر استعمال ہو رہا ہے۔",
   "previewConfidential": "خفیہ پیش نظارہ",
-  "errPreviewDailyLimit": "اس پیش نظارے کی آج کی تجزیے کی حد پوری ہو گئی ہے۔ کل دوبارہ کوشش کریں۔"
+  "errPreviewDailyLimit": "اس پیش نظارے کی آج کی تجزیے کی حد پوری ہو گئی ہے۔ کل دوبارہ کوشش کریں۔",
+  "ageHours": "{count, plural, =1{1 گھنٹہ پہلے} other{{count} گھنٹے پہلے}}",
+  "ageDays": "{count, plural, =1{1 دن پہلے} other{{count} دن پہلے}}",
+  "staleTitle": "یہ تجزیہ اپ ڈیٹ کریں؟",
+  "staleBody": "یہ {age} تیار کیا گیا تھا۔ ممکن ہے تب سے قیمتیں، خبریں اور نتائج بدل گئے ہوں۔",
+  "staleKeep": "پہلے والا دکھائیں",
+  "staleRefresh": "نیا تیار کریں",
+  "seeAll": "سب دیکھیں ({count})",
+  "searchAnalyses": "اپنے تجزیوں میں تلاش کریں",
+  "deleteAnalysis": "حذف کریں",
+  "analysisDeleted": "{symbol} کا تجزیہ حذف کر دیا گیا"
 }

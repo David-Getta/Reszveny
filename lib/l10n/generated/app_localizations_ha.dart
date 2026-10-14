@@ -1370,4 +1370,56 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sa\'o\'i $count da suka wuce',
+      one: 'sa\'a 1 da ta wuce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kwanaki $count da suka wuce',
+      one: 'kwana 1 da ya wuce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Sabunta wannan nazari?';
+
+  @override
+  String staleBody(String age) {
+    return 'An yi wannan nazari $age. Farashi, labarai da sakamako na iya canzawa tun daga lokacin.';
+  }
+
+  @override
+  String get staleKeep => 'Nuna na baya';
+
+  @override
+  String get staleRefresh => 'Yi sabo';
+
+  @override
+  String seeAll(int count) {
+    return 'Duba duka ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Bincika nazarinka';
+
+  @override
+  String get deleteAnalysis => 'Share';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'An share nazarin $symbol';
+  }
 }

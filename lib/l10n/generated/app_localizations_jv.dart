@@ -1366,4 +1366,56 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jam kepungkur',
+      one: '1 jam kepungkur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dina kepungkur',
+      one: '1 dina kepungkur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Anyari analisis iki?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analisis iki digawe $age. Rega, kabar, lan asil bisa uga wis owah wiwit iku.';
+  }
+
+  @override
+  String get staleKeep => 'Tampilake sing sadurunge';
+
+  @override
+  String get staleRefresh => 'Gawe sing anyar';
+
+  @override
+  String seeAll(int count) {
+    return 'Deleng kabeh ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Goleki analisismu';
+
+  @override
+  String get deleteAnalysis => 'Busak';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analisis $symbol wis dibusak';
+  }
 }

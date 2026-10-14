@@ -1366,4 +1366,56 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Today analysis limit for dis preview don finish. Try again tomorrow.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours ago',
+      one: '$count hour ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days ago',
+      one: '$count day ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'You wan update dis analysis?';
+
+  @override
+  String staleBody(String age) {
+    return 'Dem make am $age. Price, news and result fit don change since dat time.';
+  }
+
+  @override
+  String get staleKeep => 'Show di old one';
+
+  @override
+  String get staleRefresh => 'Make new one';
+
+  @override
+  String seeAll(int count) {
+    return 'See all ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Search your analysis dem';
+
+  @override
+  String get deleteAnalysis => 'Delete';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol analysis don delete';
+  }
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Jemputan ini telah tamat tempoh. Minta kod baharu daripada orang yang menjemput anda.",
   "inviteDeviceLimit": "Kod jemputan ini sudah digunakan pada bilangan peranti maksimum.",
   "previewConfidential": "Pratonton sulit",
-  "errPreviewDailyLimit": "Had analisis hari ini untuk pratonton ini telah dicapai. Cuba lagi esok."
+  "errPreviewDailyLimit": "Had analisis hari ini untuk pratonton ini telah dicapai. Cuba lagi esok.",
+  "ageHours": "{count, plural, =1{1 jam lalu} other{{count} jam lalu}}",
+  "ageDays": "{count, plural, =1{1 hari lalu} other{{count} hari lalu}}",
+  "staleTitle": "Kemas kini analisis ini?",
+  "staleBody": "Analisis ini dibuat {age}. Harga, berita dan keputusan mungkin telah berubah sejak itu.",
+  "staleKeep": "Tunjukkan yang terdahulu",
+  "staleRefresh": "Buat yang baharu",
+  "seeAll": "Lihat semua ({count})",
+  "searchAnalyses": "Cari analisis anda",
+  "deleteAnalysis": "Padam",
+  "analysisDeleted": "Analisis {symbol} dipadam"
 }

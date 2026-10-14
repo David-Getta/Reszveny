@@ -1365,4 +1365,56 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'lɛrɛ $count tɛmɛnen',
+      one: 'lɛrɛ 1 tɛmɛnen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'tile $count tɛmɛnen',
+      one: 'tile 1 tɛmɛnen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Sɛgɛsɛgɛli nin kura kɛ wa?';
+
+  @override
+  String staleBody(String age) {
+    return 'A dilanna $age. Sɔngɔw, kibaruyaw ani jaabiw bɛ se ka kɛ ka yɛlɛma kabini o waati.';
+  }
+
+  @override
+  String get staleKeep => 'Kɔrɔlen jira';
+
+  @override
+  String get staleRefresh => 'Kura dilan';
+
+  @override
+  String seeAll(int count) {
+    return 'A bɛɛ lajɛ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'I ka sɛgɛsɛgɛliw ɲini';
+
+  @override
+  String get deleteAnalysis => 'Jɔsi';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol sɛgɛsɛgɛli jɔsira';
+  }
 }

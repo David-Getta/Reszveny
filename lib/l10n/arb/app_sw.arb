@@ -380,5 +380,15 @@
   "inviteExpired": "Mwaliko huu umeisha muda wake. Muombe aliyekualika akupe msimbo mpya.",
   "inviteDeviceLimit": "Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.",
   "previewConfidential": "Onyesho la awali la siri",
-  "errPreviewDailyLimit": "Kikomo cha uchambuzi cha leo cha onyesho hili la awali kimefikiwa. Jaribu tena kesho."
+  "errPreviewDailyLimit": "Kikomo cha uchambuzi cha leo cha onyesho hili la awali kimefikiwa. Jaribu tena kesho.",
+  "ageHours": "{count, plural, =1{saa 1 iliyopita} other{saa {count} zilizopita}}",
+  "ageDays": "{count, plural, =1{siku 1 iliyopita} other{siku {count} zilizopita}}",
+  "staleTitle": "Ungependa kusasisha uchambuzi huu?",
+  "staleBody": "Ulifanywa {age}. Bei, habari na matokeo huenda yamebadilika tangu wakati huo.",
+  "staleKeep": "Onyesha ule wa awali",
+  "staleRefresh": "Tengeneza mpya",
+  "seeAll": "Ona zote ({count})",
+  "searchAnalyses": "Tafuta katika uchambuzi wako",
+  "deleteAnalysis": "Futa",
+  "analysisDeleted": "Uchambuzi wa {symbol} umefutwa"
 }

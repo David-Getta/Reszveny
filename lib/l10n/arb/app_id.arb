@@ -380,5 +380,15 @@
   "inviteExpired": "Undangan ini sudah kedaluwarsa. Mintalah kode baru kepada orang yang mengundang Anda.",
   "inviteDeviceLimit": "Kode undangan ini sudah digunakan di jumlah perangkat maksimum.",
   "previewConfidential": "Pratinjau rahasia",
-  "errPreviewDailyLimit": "Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok."
+  "errPreviewDailyLimit": "Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok.",
+  "ageHours": "{count, plural, =1{1 jam yang lalu} other{{count} jam yang lalu}}",
+  "ageDays": "{count, plural, =1{1 hari yang lalu} other{{count} hari yang lalu}}",
+  "staleTitle": "Perbarui analisis ini?",
+  "staleBody": "Analisis ini dibuat {age}. Harga, berita, dan hasil mungkin sudah berubah sejak itu.",
+  "staleKeep": "Tampilkan yang sebelumnya",
+  "staleRefresh": "Buat yang baru",
+  "seeAll": "Lihat semua ({count})",
+  "searchAnalyses": "Cari analisis Anda",
+  "deleteAnalysis": "Hapus",
+  "analysisDeleted": "Analisis {symbol} dihapus"
 }

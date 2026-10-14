@@ -1371,4 +1371,56 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Malire a kusanthula a lero a kuwoneratu kumeneku afika. Yesaninso mawa.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'maola $count apitawo',
+      one: 'ola 1 lapitalo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'masiku $count apitawo',
+      one: 'tsiku 1 lapitalo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Kodi mukufuna kukonzanso kusanthula kumeneku?';
+
+  @override
+  String staleBody(String age) {
+    return 'Kusanthula kumeneku kunapangidwa $age. Mitengo, nkhani ndi zotsatira zitha kuti zasintha kuyambira pamenepo.';
+  }
+
+  @override
+  String get staleKeep => 'Onetsani chakale';
+
+  @override
+  String get staleRefresh => 'Pangani chatsopano';
+
+  @override
+  String seeAll(int count) {
+    return 'Onani zonse ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Sakani zosanthula zanu';
+
+  @override
+  String get deleteAnalysis => 'Chotsani';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Kusanthula kwa $symbol kwachotsedwa';
+  }
 }

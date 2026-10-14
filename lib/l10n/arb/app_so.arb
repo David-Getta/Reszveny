@@ -380,5 +380,15 @@
   "inviteExpired": "Casuumaddani way dhacday. Weydii qofkii ku casuumay koodh cusub.",
   "inviteDeviceLimit": "Koodhkan casuumadda waxaa hore loogu isticmaalay tirada ugu badan ee qalabka la oggol yahay.",
   "previewConfidential": "Muuqaal hore oo qarsoodi ah",
-  "errPreviewDailyLimit": "Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri."
+  "errPreviewDailyLimit": "Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri.",
+  "ageHours": "{count, plural, =1{1 saac ka hor} other{{count} saacadood ka hor}}",
+  "ageDays": "{count, plural, =1{1 maalin ka hor} other{{count} maalmood ka hor}}",
+  "staleTitle": "Ma la cusboonaysiiyaa falanqayntan?",
+  "staleBody": "Waxaa la sameeyay {age}. Qiimayaasha, wararka iyo natiijooyinka ayaa laga yaabaa inay isbeddeleen tan iyo markaas.",
+  "staleKeep": "Tus tii hore",
+  "staleRefresh": "Samee mid cusub",
+  "seeAll": "Eeg dhammaan ({count})",
+  "searchAnalyses": "Ka raadi falanqaynahaaga",
+  "deleteAnalysis": "Tirtir",
+  "analysisDeleted": "Falanqaynta {symbol} waa la tirtiray"
 }

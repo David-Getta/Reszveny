@@ -380,5 +380,15 @@
   "inviteExpired": "Bu dəvətin müddəti bitib. Sizi dəvət edən şəxsdən yeni kod istəyin.",
   "inviteDeviceLimit": "Bu dəvət kodu artıq maksimum sayda cihazda istifadə olunur.",
   "previewConfidential": "Məxfi önizləmə",
-  "errPreviewDailyLimit": "Bu önizləmənin bugünkü təhlil limiti dolub. Sabah yenidən cəhd edin."
+  "errPreviewDailyLimit": "Bu önizləmənin bugünkü təhlil limiti dolub. Sabah yenidən cəhd edin.",
+  "ageHours": "{count, plural, =1{1 saat əvvəl} other{{count} saat əvvəl}}",
+  "ageDays": "{count, plural, =1{1 gün əvvəl} other{{count} gün əvvəl}}",
+  "staleTitle": "Bu təhlil yenilənsin?",
+  "staleBody": "O, {age} yaradılıb. O vaxtdan bəri qiymətlər, xəbərlər və nəticələr dəyişmiş ola bilər.",
+  "staleKeep": "Əvvəlkini göstər",
+  "staleRefresh": "Yenisini yarat",
+  "seeAll": "Hamısına bax ({count})",
+  "searchAnalyses": "Təhlillərində axtar",
+  "deleteAnalysis": "Sil",
+  "analysisDeleted": "{symbol} təhlili silindi"
 }

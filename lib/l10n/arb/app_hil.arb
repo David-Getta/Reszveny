@@ -380,5 +380,15 @@
   "inviteExpired": "Expired na ini nga imbitasyon. Pangayo sang bag-o nga code sa tawo nga nag-imbitar sa imo.",
   "inviteDeviceLimit": "Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.",
   "previewConfidential": "Kumpidensyal nga preview",
-  "errPreviewDailyLimit": "Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas."
+  "errPreviewDailyLimit": "Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas.",
+  "ageHours": "{count, plural, =1{1 ka oras ang nagligad} other{{count} ka oras ang nagligad}}",
+  "ageDays": "{count, plural, =1{1 ka adlaw ang nagligad} other{{count} ka adlaw ang nagligad}}",
+  "staleTitle": "I-update ini nga analisis?",
+  "staleBody": "Ginhimo ini {age}. Mahimo nga nagbag-o na ang mga presyo, balita kag resulta halin sadto.",
+  "staleKeep": "Ipakita ang nauna",
+  "staleRefresh": "Maghimo sang bag-o",
+  "seeAll": "Tan-awa tanan ({count})",
+  "searchAnalyses": "Pangitaa ang imo mga analisis",
+  "deleteAnalysis": "Panasa",
+  "analysisDeleted": "Napanas ang analisis sang {symbol}"
 }

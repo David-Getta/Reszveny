@@ -380,5 +380,15 @@
   "inviteExpired": "Ìpè yìí ti parí. Béèrè kóòdù tuntun lọ́wọ́ ẹni tó pè ọ́.",
   "inviteDeviceLimit": "A ti ń lo kóòdù ìpè yìí lórí iye ẹ̀rọ tó pọ̀ jùlọ tí a gbà láàyè.",
   "previewConfidential": "Ìfihàn àṣírí",
-  "errPreviewDailyLimit": "Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la."
+  "errPreviewDailyLimit": "Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la.",
+  "ageHours": "{count, plural, =1{wákàtí 1 sẹ́yìn} other{wákàtí {count} sẹ́yìn}}",
+  "ageDays": "{count, plural, =1{ọjọ́ 1 sẹ́yìn} other{ọjọ́ {count} sẹ́yìn}}",
+  "staleTitle": "Ṣé kí a ṣe àtúnṣe ìtúpalẹ̀ yìí?",
+  "staleBody": "A ṣe é ní {age}. Iye owó, ìròyìn àti àbájáde lè ti yípadà láti ìgbà náà.",
+  "staleKeep": "Fi ti tẹ́lẹ̀ hàn",
+  "staleRefresh": "Ṣe tuntun",
+  "seeAll": "Wo gbogbo rẹ̀ ({count})",
+  "searchAnalyses": "Wá nínú àwọn ìtúpalẹ̀ rẹ",
+  "deleteAnalysis": "Pa rẹ́",
+  "analysisDeleted": "A ti pa ìtúpalẹ̀ {symbol} rẹ́"
 }

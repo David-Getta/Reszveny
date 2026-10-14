@@ -380,5 +380,15 @@
   "inviteExpired": "Šī ielūguma derīguma termiņš ir beidzies. Palūdziet jaunu kodu personai, kas jūs uzaicināja.",
   "inviteDeviceLimit": "Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.",
   "previewConfidential": "Konfidenciāls priekšskatījums",
-  "errPreviewDailyLimit": "Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt."
+  "errPreviewDailyLimit": "Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt.",
+  "ageHours": "{count, plural, zero{pirms {count} stundām} one{pirms {count} stundas} other{pirms {count} stundām}}",
+  "ageDays": "{count, plural, zero{pirms {count} dienām} one{pirms {count} dienas} other{pirms {count} dienām}}",
+  "staleTitle": "Atjaunināt šo analīzi?",
+  "staleBody": "Šī analīze izveidota {age}. Kopš tā laika cenas, ziņas un rezultāti var būt mainījušies.",
+  "staleKeep": "Rādīt iepriekšējo",
+  "staleRefresh": "Izveidot jaunu",
+  "seeAll": "Skatīt visas ({count})",
+  "searchAnalyses": "Meklēt savās analīzēs",
+  "deleteAnalysis": "Dzēst",
+  "analysisDeleted": "{symbol} analīze izdzēsta"
 }

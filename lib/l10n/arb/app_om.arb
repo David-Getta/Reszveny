@@ -380,5 +380,15 @@
   "inviteExpired": "Affeerraan kun yeroon isaa darbeera. Nama si affeere koodii haaraa gaafadhu.",
   "inviteDeviceLimit": "Koodiin affeerraa kun duraanuu meeshaalee lakkoofsa olaanaa hayyamameerratti fayyadamaa jira.",
   "previewConfidential": "Duraan-argii icciitii",
-  "errPreviewDailyLimit": "Daangaan xiinxala har'aa duraan-argii kanaa ga'eera. Boru irra deebi'ii yaali."
+  "errPreviewDailyLimit": "Daangaan xiinxala har'aa duraan-argii kanaa ga'eera. Boru irra deebi'ii yaali.",
+  "ageHours": "{count, plural, =1{sa'aatii 1 dura} other{sa'aatii {count} dura}}",
+  "ageDays": "{count, plural, =1{guyyaa 1 dura} other{guyyaa {count} dura}}",
+  "staleTitle": "Xiinxala kana haaromsuu?",
+  "staleBody": "Kun {age} uumame. Sana booda gatiin, oduun fi bu'aan jijjiiramuu danda'u.",
+  "staleKeep": "Isa duraa agarsiisi",
+  "staleRefresh": "Haaraa uumi",
+  "seeAll": "Hunda ilaali ({count})",
+  "searchAnalyses": "Xiinxala kee keessa barbaadi",
+  "deleteAnalysis": "Haqi",
+  "analysisDeleted": "Xiinxalli {symbol} haqameera"
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Ko jeguenói ndoikovéima. Ejerure peteĩ código pyahu pe ndeguenoi vaʼekuépe.",
   "inviteDeviceLimit": "Ko código jeguenoirã ojeporúma tembipuru papapy tuichavévape.",
   "previewConfidential": "Jehechauka ñemi",
-  "errPreviewDailyLimit": "Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ."
+  "errPreviewDailyLimit": "Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ.",
+  "ageHours": "{count, plural, =1{1 aravo ymave} other{{count} aravo ymave}}",
+  "ageDays": "{count, plural, =1{1 ára ymave} other{{count} ára ymave}}",
+  "staleTitle": "Embopyahu ko jehesaʼỹijo?",
+  "staleBody": "Oñemoheñói {age}. Ikatu oñemoambue umi hepykue, marandu ha tembiapo rapykuere upe guive.",
+  "staleKeep": "Ehechauka ymaguare",
+  "staleRefresh": "Ejapo ipyahúva",
+  "seeAll": "Ehecha opavave ({count})",
+  "searchAnalyses": "Eheka ne jehesaʼỹijokuérape",
+  "deleteAnalysis": "Emboguete",
+  "analysisDeleted": "Oñemboguete {symbol} jehesaʼỹijo"
 }

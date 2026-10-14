@@ -1364,4 +1364,56 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Dagens analysegrænse for denne forhåndsvisning er nået. Prøv igen i morgen.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'for $count timer siden',
+      one: 'for 1 time siden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'for $count dage siden',
+      one: 'for 1 dag siden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Opdater denne analyse?';
+
+  @override
+  String staleBody(String age) {
+    return 'Den blev lavet $age. Kurser, nyheder og resultater kan have ændret sig siden da.';
+  }
+
+  @override
+  String get staleKeep => 'Vis den tidligere';
+
+  @override
+  String get staleRefresh => 'Lav en ny';
+
+  @override
+  String seeAll(int count) {
+    return 'Se alle ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Søg i dine analyser';
+
+  @override
+  String get deleteAnalysis => 'Slet';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analysen af $symbol er slettet';
+  }
 }

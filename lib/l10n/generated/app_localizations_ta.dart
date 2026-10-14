@@ -1371,4 +1371,56 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'இந்த முன்னோட்டத்தின் இன்றைய பகுப்பாய்வு வரம்பு எட்டப்பட்டது. நாளை மீண்டும் முயலவும்.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count மணிநேரத்திற்கு முன்பு',
+      one: '1 மணிநேரத்திற்கு முன்பு',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்களுக்கு முன்பு',
+      one: '1 நாளுக்கு முன்பு',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'இந்தப் பகுப்பாய்வைப் புதுப்பிக்கவா?';
+
+  @override
+  String staleBody(String age) {
+    return 'இது $age உருவாக்கப்பட்டது. அதன் பிறகு விலைகள், செய்திகள், முடிவுகள் மாறியிருக்கலாம்.';
+  }
+
+  @override
+  String get staleKeep => 'முந்தையதைக் காட்டு';
+
+  @override
+  String get staleRefresh => 'புதியதை உருவாக்கு';
+
+  @override
+  String seeAll(int count) {
+    return 'அனைத்தையும் காண் ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'உங்கள் பகுப்பாய்வுகளில் தேடு';
+
+  @override
+  String get deleteAnalysis => 'நீக்கு';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol பகுப்பாய்வு நீக்கப்பட்டது';
+  }
 }

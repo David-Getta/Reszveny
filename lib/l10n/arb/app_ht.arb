@@ -380,5 +380,15 @@
   "inviteExpired": "Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.",
   "inviteDeviceLimit": "Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.",
   "previewConfidential": "Apèsi konfidansyèl",
-  "errPreviewDailyLimit": "Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen."
+  "errPreviewDailyLimit": "Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen.",
+  "ageHours": "{count, plural, =1{sa gen 1 èdtan} other{sa gen {count} èdtan}}",
+  "ageDays": "{count, plural, =1{sa gen 1 jou} other{sa gen {count} jou}}",
+  "staleTitle": "Mete analiz sa a ajou?",
+  "staleBody": "Analiz sa a te fèt {age}. Pri, nouvèl ak rezilta yo ka chanje depi lè sa a.",
+  "staleKeep": "Montre ansyen an",
+  "staleRefresh": "Fè yon nouvo",
+  "seeAll": "Wè tout ({count})",
+  "searchAnalyses": "Chèche nan analiz ou yo",
+  "deleteAnalysis": "Efase",
+  "analysisDeleted": "Analiz {symbol} efase"
 }

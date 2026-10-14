@@ -1363,4 +1363,56 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'سقف تحلیل امروزِ این پیش‌نمایش پر شده است. فردا دوباره امتحان کنید.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ساعت پیش',
+      one: '1 ساعت پیش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count روز پیش',
+      one: '1 روز پیش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'این تحلیل به‌روز شود؟';
+
+  @override
+  String staleBody(String age) {
+    return 'این تحلیل $age تولید شده است. ممکن است از آن زمان قیمت‌ها، اخبار و نتایج تغییر کرده باشند.';
+  }
+
+  @override
+  String get staleKeep => 'نمایش تحلیل قبلی';
+
+  @override
+  String get staleRefresh => 'تولید تحلیل جدید';
+
+  @override
+  String seeAll(int count) {
+    return 'دیدن همه ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'جستجو در تحلیل‌های شما';
+
+  @override
+  String get deleteAnalysis => 'حذف';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'تحلیل $symbol حذف شد';
+  }
 }

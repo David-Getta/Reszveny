@@ -1372,4 +1372,56 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'emahoreni angu-$count adlule',
+      one: 'ehoreni eli-1 eledlule',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ezinsukwini ezingu-$count ezedlule',
+      one: 'osukwini olu-1 oludlule',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Buyekeza lolu hlaziyo?';
+
+  @override
+  String staleBody(String age) {
+    return 'Lolu hlaziyo lwenziwa $age. Amanani, izindaba nemiphumela kungenzeka ukuthi kushintshile kusukela ngaleso sikhathi.';
+  }
+
+  @override
+  String get staleKeep => 'Bonisa olwangaphambili';
+
+  @override
+  String get staleRefresh => 'Yenza olusha';
+
+  @override
+  String seeAll(int count) {
+    return 'Bona konke ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Sesha kuhlaziyo lwakho';
+
+  @override
+  String get deleteAnalysis => 'Susa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Uhlaziyo lwe-$symbol lususiwe';
+  }
 }

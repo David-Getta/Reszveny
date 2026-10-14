@@ -1384,4 +1384,62 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'منذ $count ساعة',
+      many: 'منذ $count ساعة',
+      few: 'منذ $count ساعات',
+      two: 'منذ ساعتين',
+      one: 'منذ ساعة واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'منذ $count يوم',
+      many: 'منذ $count يومًا',
+      few: 'منذ $count أيام',
+      two: 'منذ يومين',
+      one: 'منذ يوم واحد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'هل تريد تحديث هذا التحليل؟';
+
+  @override
+  String staleBody(String age) {
+    return 'أُنشئ هذا التحليل $age. ربما تغيّرت الأسعار والأخبار والنتائج منذ ذلك الحين.';
+  }
+
+  @override
+  String get staleKeep => 'عرض التحليل السابق';
+
+  @override
+  String get staleRefresh => 'إنشاء تحليل جديد';
+
+  @override
+  String seeAll(int count) {
+    return 'عرض الكل ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ابحث في تحليلاتك';
+
+  @override
+  String get deleteAnalysis => 'حذف';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'تم حذف تحليل $symbol';
+  }
 }

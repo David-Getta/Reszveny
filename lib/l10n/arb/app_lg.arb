@@ -380,5 +380,15 @@
   "inviteExpired": "Okuyitibwa kuno kuweddeko. Saba omuntu eyakuyita akuwe koodi empya.",
   "inviteDeviceLimit": "Koodi eno ey'okuyitibwa ekozesebwa dda ku byuma ebisinga obungi ebikkirizibwa.",
   "previewConfidential": "Okulaba okusooka okw'ekyama",
-  "errPreviewDailyLimit": "Ekkomo ly'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya."
+  "errPreviewDailyLimit": "Ekkomo ly'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya.",
+  "ageHours": "{count, plural, =1{essaawa 1 emabega} other{essaawa {count} emabega}}",
+  "ageDays": "{count, plural, =1{olunaku 1 emabega} other{ennaku {count} emabega}}",
+  "staleTitle": "Okuzza obuggya okwekenneenya kuno?",
+  "staleBody": "Okwekenneenya kuno kwakolebwa {age}. Okuva olwo, emiwendo, amawulire n'ebivudde mu bizinensi biyinza okuba nga byakyuka.",
+  "staleKeep": "Laga okw'edda",
+  "staleRefresh": "Kola okupya",
+  "seeAll": "Laba byonna ({count})",
+  "searchAnalyses": "Noonya mu kwekenneenya kwo",
+  "deleteAnalysis": "Sangula",
+  "analysisDeleted": "Okwekenneenya kwa {symbol} kusanguddwawo"
 }

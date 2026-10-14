@@ -1374,4 +1374,56 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Naabot na ang limitasyon sang analisis subong nga adlaw para sa sini nga preview. Tilawi liwat buwas.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka oras ang nagligad',
+      one: '1 ka oras ang nagligad',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka adlaw ang nagligad',
+      one: '1 ka adlaw ang nagligad',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'I-update ini nga analisis?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ginhimo ini $age. Mahimo nga nagbag-o na ang mga presyo, balita kag resulta halin sadto.';
+  }
+
+  @override
+  String get staleKeep => 'Ipakita ang nauna';
+
+  @override
+  String get staleRefresh => 'Maghimo sang bag-o';
+
+  @override
+  String seeAll(int count) {
+    return 'Tan-awa tanan ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Pangitaa ang imo mga analisis';
+
+  @override
+  String get deleteAnalysis => 'Panasa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Napanas ang analisis sang $symbol';
+  }
 }

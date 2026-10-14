@@ -1370,4 +1370,56 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Naabot na niining preview ang limitasyon sa pagtuki karong adlawa. Sulayi pag-usab ugma.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka oras na ang milabay',
+      one: '1 ka oras na ang milabay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka adlaw na ang milabay',
+      one: '1 ka adlaw na ang milabay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'I-update kini nga pagtuki?';
+
+  @override
+  String staleBody(String age) {
+    return 'Gihimo kini $age. Basin nausab na ang mga presyo, balita ug resulta sukad niadto.';
+  }
+
+  @override
+  String get staleKeep => 'Ipakita ang nauna';
+
+  @override
+  String get staleRefresh => 'Paghimo og bag-o';
+
+  @override
+  String seeAll(int count) {
+    return 'Tan-awa tanan ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Pangitaa ang imong mga pagtuki';
+
+  @override
+  String get deleteAnalysis => 'Papasa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Napapas ang pagtuki sa $symbol';
+  }
 }

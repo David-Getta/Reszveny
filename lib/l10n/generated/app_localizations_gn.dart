@@ -1369,4 +1369,56 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ko jehechauka ohupytýma koʼág̃a guarã jehesaʼỹijo papapy. Eñehaʼã jey koʼẽrõ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aravo ymave',
+      one: '1 aravo ymave',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ára ymave',
+      one: '1 ára ymave',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Embopyahu ko jehesaʼỹijo?';
+
+  @override
+  String staleBody(String age) {
+    return 'Oñemoheñói $age. Ikatu oñemoambue umi hepykue, marandu ha tembiapo rapykuere upe guive.';
+  }
+
+  @override
+  String get staleKeep => 'Ehechauka ymaguare';
+
+  @override
+  String get staleRefresh => 'Ejapo ipyahúva';
+
+  @override
+  String seeAll(int count) {
+    return 'Ehecha opavave ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Eheka ne jehesaʼỹijokuérape';
+
+  @override
+  String get deleteAnalysis => 'Emboguete';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Oñemboguete $symbol jehesaʼỹijo';
+  }
 }

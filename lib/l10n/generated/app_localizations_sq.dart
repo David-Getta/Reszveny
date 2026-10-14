@@ -1371,4 +1371,56 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Kufiri ditor i analizave për këtë pamje paraprake është arritur. Provoni përsëri nesër.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'para $count orësh',
+      one: 'para 1 ore',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'para $count ditësh',
+      one: 'para 1 dite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ta përditësojmë këtë analizë?';
+
+  @override
+  String staleBody(String age) {
+    return 'Është bërë $age. Çmimet, lajmet dhe rezultatet mund të kenë ndryshuar që atëherë.';
+  }
+
+  @override
+  String get staleKeep => 'Shfaq të mëparshmen';
+
+  @override
+  String get staleRefresh => 'Bëj një të re';
+
+  @override
+  String seeAll(int count) {
+    return 'Shiko të gjitha ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Kërko në analizat e tua';
+
+  @override
+  String get deleteAnalysis => 'Fshi';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analiza e $symbol u fshi';
+  }
 }

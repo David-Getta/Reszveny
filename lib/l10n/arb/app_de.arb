@@ -380,5 +380,15 @@
   "inviteExpired": "Diese Einladung ist abgelaufen. Bitte die Person, die dich eingeladen hat, um einen neuen Code.",
   "inviteDeviceLimit": "Dieser Einladungscode wird bereits auf der maximalen Anzahl von Geräten verwendet.",
   "previewConfidential": "Vertrauliche Vorschau",
-  "errPreviewDailyLimit": "Das heutige Analyselimit dieser Vorschau ist erreicht. Versuche es morgen erneut."
+  "errPreviewDailyLimit": "Das heutige Analyselimit dieser Vorschau ist erreicht. Versuche es morgen erneut.",
+  "ageHours": "{count, plural, =1{vor 1 Stunde} other{vor {count} Stunden}}",
+  "ageDays": "{count, plural, =1{vor 1 Tag} other{vor {count} Tagen}}",
+  "staleTitle": "Diese Analyse aktualisieren?",
+  "staleBody": "Sie wurde {age} erstellt. Kurse, Nachrichten und Ergebnisse können sich seitdem geändert haben.",
+  "staleKeep": "Frühere anzeigen",
+  "staleRefresh": "Neu erstellen",
+  "seeAll": "Alle anzeigen ({count})",
+  "searchAnalyses": "Analysen durchsuchen",
+  "deleteAnalysis": "Löschen",
+  "analysisDeleted": "Analyse zu {symbol} gelöscht"
 }

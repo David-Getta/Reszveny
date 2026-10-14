@@ -1371,4 +1371,56 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count órája',
+      one: '1 órája',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count napja',
+      one: '1 napja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Frissítsük az elemzést?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ez az elemzés $age készült. Azóta változhatott az árfolyam, és lehetnek új hírek vagy eredmények.';
+  }
+
+  @override
+  String get staleKeep => 'A korábbi megnézése';
+
+  @override
+  String get staleRefresh => 'Új elemzés';
+
+  @override
+  String seeAll(int count) {
+    return 'Mind ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Keresés az elemzéseid között';
+
+  @override
+  String get deleteAnalysis => 'Törlés';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol elemzés törölve';
+  }
 }

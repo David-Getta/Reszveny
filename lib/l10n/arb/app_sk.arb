@@ -380,5 +380,15 @@
   "inviteExpired": "Platnosť tejto pozvánky vypršala. Požiadajte osobu, ktorá vás pozvala, o nový kód.",
   "inviteDeviceLimit": "Tento kód pozvánky sa už používa na maximálnom počte zariadení.",
   "previewConfidential": "Dôverná ukážka",
-  "errPreviewDailyLimit": "Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra."
+  "errPreviewDailyLimit": "Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra.",
+  "ageHours": "{count, plural, =1{pred hodinou} few{pred {count} hodinami} many{pred {count} hodiny} other{pred {count} hodinami}}",
+  "ageDays": "{count, plural, =1{pred dňom} few{pred {count} dňami} many{pred {count} dňa} other{pred {count} dňami}}",
+  "staleTitle": "Aktualizovať túto analýzu?",
+  "staleBody": "Vznikla {age}. Ceny, správy a výsledky sa odvtedy mohli zmeniť.",
+  "staleKeep": "Zobraziť predchádzajúcu",
+  "staleRefresh": "Vytvoriť novú",
+  "seeAll": "Zobraziť všetky ({count})",
+  "searchAnalyses": "Hľadať v analýzach",
+  "deleteAnalysis": "Odstrániť",
+  "analysisDeleted": "Analýza {symbol} bola odstránená"
 }

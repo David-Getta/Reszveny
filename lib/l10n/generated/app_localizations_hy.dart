@@ -1371,4 +1371,56 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Այս նախադիտման վերլուծությունների այսօրվա սահմանաչափը սպառվել է։ Փորձեք կրկին վաղը։';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ժամ առաջ',
+      one: '$count ժամ առաջ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count օր առաջ',
+      one: '$count օր առաջ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Թարմացնե՞լ այս վերլուծությունը';
+
+  @override
+  String staleBody(String age) {
+    return 'Այս վերլուծությունը ստեղծվել է $age։ Այդ ժամանակից ի վեր գները, նորությունները և արդյունքները կարող էին փոխվել։';
+  }
+
+  @override
+  String get staleKeep => 'Ցույց տալ նախորդը';
+
+  @override
+  String get staleRefresh => 'Ստեղծել նորը';
+
+  @override
+  String seeAll(int count) {
+    return 'Տեսնել բոլորը ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Որոնել ձեր վերլուծություններում';
+
+  @override
+  String get deleteAnalysis => 'Ջնջել';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol-ի վերլուծությունը ջնջվեց';
+  }
 }

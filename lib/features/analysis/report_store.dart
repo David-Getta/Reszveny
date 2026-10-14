@@ -81,6 +81,51 @@ class ReportStore extends ChangeNotifier {
   /// Legfeljebb ennyi elemzést őrzünk meg a készüléken (a legrégebbiek törlődnek).
   static const maxSaved = 50;
 
+  /// Ennél régebbi elemzés megnyitásakor megkérdezzük, kell-e új.
+  static const staleAfter = Duration(hours: 12);
+
+  /// A felhasználó ezeknél a régi elemzésnél a korábbit választotta (az app
+  /// futása alatt nem kérdezünk újra).
+  final Set<String> _keptStale = {};
+
+  /// Ezeknél a megnyitáskor új elemzés indul (az előzmények listájából kérték).
+  final Set<String> _refreshRequested = {};
+
+  DateTime Function() clock = DateTime.now;
+
+  bool isStale(StockReport r) => clock().difference(r.generatedAt) >= staleAfter;
+
+  /// Igaz, ha a mentett elemzés régi, és még nem döntött róla a felhasználó:
+  /// ilyenkor a kártya megkérdezi, kell-e új.
+  bool needsStaleDecision(String symbol) {
+    final r = _reports[symbol];
+    return r != null && isStale(r) && !_keptStale.contains(symbol) && !_loading.contains(symbol);
+  }
+
+  /// „A korábbi jó lesz”: a régi elemzés látszik, nem kérdezünk újra.
+  void keepStale(String symbol) {
+    if (_keptStale.add(symbol)) notifyListeners();
+  }
+
+  /// Az előzményekből „új elemzés” választva: a kártya megnyitáskor elindítja.
+  void requestRefresh(String symbol) => _refreshRequested.add(symbol);
+
+  bool takeRefreshRequest(String symbol) => _refreshRequested.remove(symbol);
+
+  /// Egy elmentett elemzés törlése (a memóriából és a készülékről).
+  Future<void> delete(String symbol) async {
+    _reports.remove(symbol);
+    _errors.remove(symbol);
+    _keptStale.remove(symbol);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove('$_prefix$symbol');
+    } catch (_) {
+      // A tárolás hibája nem akadályozza a működést.
+    }
+    notifyListeners();
+  }
+
   /// A készüléken elmentett elemzések, a legújabb elöl („Elemzéseim”). Ha a
   /// [language] meg van adva, csak az azon a nyelven készülteket adja (a többit
   /// a [restore] sem nyitná meg).

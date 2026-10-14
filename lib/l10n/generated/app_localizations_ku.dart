@@ -1368,4 +1368,56 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'berî $count saetan',
+      one: 'berî saetekê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'berî $count rojan',
+      one: 'berî rojekê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Vê analîzê nû bike?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ev analîz $age hate çêkirin. Ji wê demê ve dibe ku biha, nûçe û encam guheriribin.';
+  }
+
+  @override
+  String get staleKeep => 'Ya berê nîşan bide';
+
+  @override
+  String get staleRefresh => 'Yeke nû çêke';
+
+  @override
+  String seeAll(int count) {
+    return 'Hemûyan bibîne ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Di analîzên xwe de bigere';
+
+  @override
+  String get deleteAnalysis => 'Jê bibe';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analîza $symbol hate jêbirin';
+  }
 }

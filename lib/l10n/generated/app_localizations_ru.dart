@@ -1404,4 +1404,60 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Дневной лимит анализов в этой предварительной версии исчерпан. Попробуйте завтра.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count часа назад',
+      many: '$count часов назад',
+      few: '$count часа назад',
+      one: '$count час назад',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дня назад',
+      many: '$count дней назад',
+      few: '$count дня назад',
+      one: '$count день назад',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Обновить этот анализ?';
+
+  @override
+  String staleBody(String age) {
+    return 'Он был создан $age. С тех пор цены, новости и результаты могли измениться.';
+  }
+
+  @override
+  String get staleKeep => 'Показать прежний';
+
+  @override
+  String get staleRefresh => 'Создать новый';
+
+  @override
+  String seeAll(int count) {
+    return 'Показать все ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Поиск по анализам';
+
+  @override
+  String get deleteAnalysis => 'Удалить';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Анализ $symbol удалён';
+  }
 }

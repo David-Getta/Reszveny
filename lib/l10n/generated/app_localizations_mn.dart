@@ -1365,4 +1365,56 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Энэ урьдчилсан хувилбарын өнөөдрийн шинжилгээний хязгаар дууссан. Маргааш дахин оролдоно уу.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count цагийн өмнө',
+      one: '1 цагийн өмнө',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count өдрийн өмнө',
+      one: '1 өдрийн өмнө',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Энэ шинжилгээг шинэчлэх үү?';
+
+  @override
+  String staleBody(String age) {
+    return 'Үүнийг $age гаргасан. Түүнээс хойш үнэ, мэдээ, үр дүн өөрчлөгдсөн байж болзошгүй.';
+  }
+
+  @override
+  String get staleKeep => 'Өмнөхийг харуулах';
+
+  @override
+  String get staleRefresh => 'Шинээр гаргах';
+
+  @override
+  String seeAll(int count) {
+    return 'Бүгдийг харах ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Шинжилгээнүүдээсээ хайх';
+
+  @override
+  String get deleteAnalysis => 'Устгах';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol шинжилгээг устгалаа';
+  }
 }

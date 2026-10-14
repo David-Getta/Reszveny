@@ -1365,4 +1365,56 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ìwọ̀n ìtúpalẹ̀ ti òní fún ìfihàn yìí ti kún. Gbìyànjú lẹ́ẹ̀kan sí i lọ́la.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'wákàtí $count sẹ́yìn',
+      one: 'wákàtí 1 sẹ́yìn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ọjọ́ $count sẹ́yìn',
+      one: 'ọjọ́ 1 sẹ́yìn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ṣé kí a ṣe àtúnṣe ìtúpalẹ̀ yìí?';
+
+  @override
+  String staleBody(String age) {
+    return 'A ṣe é ní $age. Iye owó, ìròyìn àti àbájáde lè ti yípadà láti ìgbà náà.';
+  }
+
+  @override
+  String get staleKeep => 'Fi ti tẹ́lẹ̀ hàn';
+
+  @override
+  String get staleRefresh => 'Ṣe tuntun';
+
+  @override
+  String seeAll(int count) {
+    return 'Wo gbogbo rẹ̀ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Wá nínú àwọn ìtúpalẹ̀ rẹ';
+
+  @override
+  String get deleteAnalysis => 'Pa rẹ́';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'A ti pa ìtúpalẹ̀ $symbol rẹ́';
+  }
 }

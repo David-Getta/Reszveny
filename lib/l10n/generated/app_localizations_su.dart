@@ -1367,4 +1367,56 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Wates analisis poé ieu pikeun pratinjau ieu geus kahontal. Cobian deui isukan.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jam katukang',
+      one: '1 jam katukang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count poé katukang',
+      one: '1 poé katukang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Anyarkeun analisis ieu?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analisis ieu dijieun $age. Harga, warta, jeung hasil bisa geus robah ti harita.';
+  }
+
+  @override
+  String get staleKeep => 'Témbongkeun nu saméméhna';
+
+  @override
+  String get staleRefresh => 'Jieun nu anyar';
+
+  @override
+  String seeAll(int count) {
+    return 'Tingali sadayana ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Paluruh analisis anjeun';
+
+  @override
+  String get deleteAnalysis => 'Pupus';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analisis $symbol geus dipupus';
+  }
 }

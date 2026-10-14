@@ -1365,4 +1365,56 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sagat öň',
+      one: '1 sagat öň',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün öň',
+      one: '1 gün öň',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Bu seljerme täzelensinmi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ol $age taýýarlandy. Şondan bäri bahalar, habarlar we netijeler üýtgän bolmagy mümkin.';
+  }
+
+  @override
+  String get staleKeep => 'Öňküsini görkez';
+
+  @override
+  String get staleRefresh => 'Täzesini döret';
+
+  @override
+  String seeAll(int count) {
+    return 'Ählisini gör ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Seljermeleriňden gözle';
+
+  @override
+  String get deleteAnalysis => 'Poz';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol seljermesi pozuldy';
+  }
 }

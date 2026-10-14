@@ -1368,4 +1368,56 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ŋgɔkpɔkpɔ sia ƒe egbe numekuku ƒe seɖoƒe de. Gagbugbɔ te kpɔ etsɔ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'gaƒoƒo $count si va yi',
+      one: 'gaƒoƒo 1 si va yi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ŋkeke $count si va yi',
+      one: 'ŋkeke 1 si va yi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Wɔ numekuku sia yeye?';
+
+  @override
+  String staleBody(String age) {
+    return 'Wowɔe $age. Ɖewohĩ asixɔxɔwo, nyadzɔdzɔwo kple emetsonuwo trɔ tso ɣemaɣi.';
+  }
+
+  @override
+  String get staleKeep => 'Fia xoxoa';
+
+  @override
+  String get staleRefresh => 'Wɔ yeye';
+
+  @override
+  String seeAll(int count) {
+    return 'Kpɔ wo katã ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Di le wò numekukuwo me';
+
+  @override
+  String get deleteAnalysis => 'Tutui';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Wotutu $symbol ƒe numekuku';
+  }
 }

@@ -1373,4 +1373,56 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dihora tse $count tse fetileng',
+      one: 'hora e 1 e fetileng',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'matsatsi a $count a fetileng',
+      one: 'letsatsi le 1 le fetileng',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ntjhafatsa tlhahlobo ena?';
+
+  @override
+  String staleBody(String age) {
+    return 'E entswe $age. Ditheko, ditaba le diphetho di ka nna tsa be di fetohile ho tloha ka nako eo.';
+  }
+
+  @override
+  String get staleKeep => 'Bontsha ya pele';
+
+  @override
+  String get staleRefresh => 'Etsa e ntjha';
+
+  @override
+  String seeAll(int count) {
+    return 'Bona tsohle ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Batla ditlhahlobong tsa hao';
+
+  @override
+  String get deleteAnalysis => 'Hlakola';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Tlhahlobo ya $symbol e hlakotswe';
+  }
 }

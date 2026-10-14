@@ -1403,4 +1403,60 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Сённяшні ліміт аналізаў гэтага папярэдняга прагляду вычарпаны. Паспрабуйце зноў заўтра.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count гадзіны таму',
+      many: '$count гадзін таму',
+      few: '$count гадзіны таму',
+      one: '$count гадзіну таму',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дня таму',
+      many: '$count дзён таму',
+      few: '$count дні таму',
+      one: '$count дзень таму',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Абнавіць гэты аналіз?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ён створаны $age. З таго часу маглі змяніцца кошты, навіны і вынікі.';
+  }
+
+  @override
+  String get staleKeep => 'Паказаць ранейшы';
+
+  @override
+  String get staleRefresh => 'Стварыць новы';
+
+  @override
+  String seeAll(int count) {
+    return 'Усе ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Пошук па аналізах';
+
+  @override
+  String get deleteAnalysis => 'Выдаліць';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Аналіз $symbol выдалены';
+  }
 }

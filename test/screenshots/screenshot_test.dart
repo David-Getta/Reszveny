@@ -638,6 +638,39 @@ void main() {
     await _shot(tester, 'invite_watermark_phone_hu');
   });
 
+  testWidgets('old analysis: the update question and the history page (hungarian, phone)', (tester) async {
+    final now = DateTime.now();
+    final values = <String, Object>{};
+    for (final (symbol, headline, hours) in [
+      ('NVDA', 'Az AI-kereslet erős, de a várakozások már magasak.', 50),
+      ('AAPL', 'Lassuló iPhone-eladások, erősödő szolgáltatások.', 5),
+      ('OTP', 'Erős tőkehelyzet, kamatcsökkenés a láthatáron.', 30),
+      ('MSFT', 'A felhős növekedés tartja a magas értékeltséget.', 80),
+      ('KO', 'Stabil osztalékfizető, lassú növekedéssel.', 120),
+      ('ASML', 'A kínai export korlátozása a fő kockázat.', 200),
+    ]) {
+      values['report_$symbol'] = jsonEncode(
+        StockReport(
+          symbol: symbol,
+          headline: headline,
+          sections: const [],
+          generatedAt: now.subtract(Duration(hours: hours)),
+          language: 'Hungarian',
+        ).toJson(),
+      );
+    }
+    SharedPreferences.setMockInitialValues(values);
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 900));
+    final seeAll = find.byKey(const ValueKey('analyses-see-all'));
+    await tester.scrollUntilVisible(seeAll, 200, scrollable: find.byType(Scrollable).first);
+    await tester.tap(seeAll);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'history_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('analysis-NVDA')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'stale_dialog_phone_hu');
+  });
+
   testWidgets('quick bar', (tester) async {
     tester.view.physicalSize = const Size(680, 72);
     tester.view.devicePixelRatio = 1;

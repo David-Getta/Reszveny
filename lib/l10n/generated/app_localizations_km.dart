@@ -1357,4 +1357,54 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ដែនកំណត់ការវិភាគសម្រាប់ថ្ងៃនេះនៃការមើលជាមុននេះត្រូវបានប្រើអស់ហើយ។ សូមព្យាយាមម្តងទៀតនៅថ្ងៃស្អែក។';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ម៉ោងមុន',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ថ្ងៃមុន',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ធ្វើបច្ចុប្បន្នភាពការវិភាគនេះ?';
+
+  @override
+  String staleBody(String age) {
+    return 'ការវិភាគនេះត្រូវបានបង្កើតកាលពី $age។ តម្លៃ ព័ត៌មាន និងលទ្ធផលអាចបានផ្លាស់ប្តូរតាំងពីពេលនោះមក។';
+  }
+
+  @override
+  String get staleKeep => 'បង្ហាញការវិភាគមុន';
+
+  @override
+  String get staleRefresh => 'បង្កើតថ្មី';
+
+  @override
+  String seeAll(int count) {
+    return 'មើលទាំងអស់ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ស្វែងរកការវិភាគរបស់អ្នក';
+
+  @override
+  String get deleteAnalysis => 'លុប';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'បានលុបការវិភាគ $symbol';
+  }
 }

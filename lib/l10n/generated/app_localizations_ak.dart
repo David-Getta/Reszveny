@@ -1365,4 +1365,56 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nnɔnhwerew $count a atwam',
+      one: 'dɔnhwerew 1 a atwam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nna $count a atwam',
+      one: 'da 1 a atwam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Wopɛ sɛ woyɛ nhwehwɛmu yi foforo?';
+
+  @override
+  String staleBody(String age) {
+    return 'Wɔyɛɛ no $age. Ebia ɛboɔ, kasɛɛbɔ ne nsunsuansoɔ asesa fi saa bere no.';
+  }
+
+  @override
+  String get staleKeep => 'Kyerɛ nea edi kan no';
+
+  @override
+  String get staleRefresh => 'Yɛ foforo';
+
+  @override
+  String seeAll(int count) {
+    return 'Hwɛ ne nyinaa ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Hwehwɛ wo nhwehwɛmu mu';
+
+  @override
+  String get deleteAnalysis => 'Popa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Wɔapopa $symbol nhwehwɛmu';
+  }
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من الشخص الذي دعاك.",
   "inviteDeviceLimit": "رمز الدعوة هذا مستخدم بالفعل على الحد الأقصى من الأجهزة.",
   "previewConfidential": "معاينة سرية",
-  "errPreviewDailyLimit": "تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا."
+  "errPreviewDailyLimit": "تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا.",
+  "ageHours": "{count, plural, =1{منذ ساعة واحدة} =2{منذ ساعتين} few{منذ {count} ساعات} many{منذ {count} ساعة} other{منذ {count} ساعة}}",
+  "ageDays": "{count, plural, =1{منذ يوم واحد} =2{منذ يومين} few{منذ {count} أيام} many{منذ {count} يومًا} other{منذ {count} يوم}}",
+  "staleTitle": "هل تريد تحديث هذا التحليل؟",
+  "staleBody": "أُنشئ هذا التحليل {age}. ربما تغيّرت الأسعار والأخبار والنتائج منذ ذلك الحين.",
+  "staleKeep": "عرض التحليل السابق",
+  "staleRefresh": "إنشاء تحليل جديد",
+  "seeAll": "عرض الكل ({count})",
+  "searchAnalyses": "ابحث في تحليلاتك",
+  "deleteAnalysis": "حذف",
+  "analysisDeleted": "تم حذف تحليل {symbol}"
 }

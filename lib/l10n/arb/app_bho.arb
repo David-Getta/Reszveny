@@ -380,5 +380,15 @@
   "inviteExpired": "एह निमंत्रण के समय खतम हो गइल बा। जे रउआ के बोलवले बा, ओह से नया कोड माँगीं।",
   "inviteDeviceLimit": "ई निमंत्रण कोड पहिलहीं से अधिकतम गिनती के डिवाइस पर इस्तेमाल हो रहल बा।",
   "previewConfidential": "गोपनीय प्रिव्यू",
-  "errPreviewDailyLimit": "एह प्रिव्यू के आज के विश्लेषण सीमा पूरा हो गइल बा। काल्ह फेर से कोसिस करीं।"
+  "errPreviewDailyLimit": "एह प्रिव्यू के आज के विश्लेषण सीमा पूरा हो गइल बा। काल्ह फेर से कोसिस करीं।",
+  "ageHours": "{count, plural, =1{1 घंटा पहिले} other{{count} घंटा पहिले}}",
+  "ageDays": "{count, plural, =1{1 दिन पहिले} other{{count} दिन पहिले}}",
+  "staleTitle": "ई विश्लेषण अपडेट करीं?",
+  "staleBody": "ई {age} बनल रहे। तब से दाम, खबर आ नतीजा बदल गइल हो सकेला।",
+  "staleKeep": "पहिले वाला देखाईं",
+  "staleRefresh": "नया बनाईं",
+  "seeAll": "सब देखीं ({count})",
+  "searchAnalyses": "अपना विश्लेषण में खोजीं",
+  "deleteAnalysis": "मिटाईं",
+  "analysisDeleted": "{symbol} के विश्लेषण मिटा दिहल गइल"
 }

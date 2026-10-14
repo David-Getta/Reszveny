@@ -380,5 +380,15 @@
   "inviteExpired": "Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.",
   "inviteDeviceLimit": "Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.",
   "previewConfidential": "Pêşdîtina nepenî",
-  "errPreviewDailyLimit": "Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne."
+  "errPreviewDailyLimit": "Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne.",
+  "ageHours": "{count, plural, =1{berî saetekê} other{berî {count} saetan}}",
+  "ageDays": "{count, plural, =1{berî rojekê} other{berî {count} rojan}}",
+  "staleTitle": "Vê analîzê nû bike?",
+  "staleBody": "Ev analîz {age} hate çêkirin. Ji wê demê ve dibe ku biha, nûçe û encam guheriribin.",
+  "staleKeep": "Ya berê nîşan bide",
+  "staleRefresh": "Yeke nû çêke",
+  "seeAll": "Hemûyan bibîne ({count})",
+  "searchAnalyses": "Di analîzên xwe de bigere",
+  "deleteAnalysis": "Jê bibe",
+  "analysisDeleted": "Analîza {symbol} hate jêbirin"
 }

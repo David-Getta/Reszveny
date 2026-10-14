@@ -380,5 +380,15 @@
   "inviteExpired": "Expired na kining imbitasyon. Pangayo og bag-ong code sa tawo nga nag-imbitar nimo.",
   "inviteDeviceLimit": "Gigamit na kining invite code sa pinakadaghang device nga gitugotan.",
   "previewConfidential": "Kumpidensyal nga preview",
-  "errPreviewDailyLimit": "Naabot na niining preview ang limitasyon sa pagtuki karong adlawa. Sulayi pag-usab ugma."
+  "errPreviewDailyLimit": "Naabot na niining preview ang limitasyon sa pagtuki karong adlawa. Sulayi pag-usab ugma.",
+  "ageHours": "{count, plural, =1{1 ka oras na ang milabay} other{{count} ka oras na ang milabay}}",
+  "ageDays": "{count, plural, =1{1 ka adlaw na ang milabay} other{{count} ka adlaw na ang milabay}}",
+  "staleTitle": "I-update kini nga pagtuki?",
+  "staleBody": "Gihimo kini {age}. Basin nausab na ang mga presyo, balita ug resulta sukad niadto.",
+  "staleKeep": "Ipakita ang nauna",
+  "staleRefresh": "Paghimo og bag-o",
+  "seeAll": "Tan-awa tanan ({count})",
+  "searchAnalyses": "Pangitaa ang imong mga pagtuki",
+  "deleteAnalysis": "Papasa",
+  "analysisDeleted": "Napapas ang pagtuki sa {symbol}"
 }

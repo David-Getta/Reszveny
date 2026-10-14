@@ -1365,4 +1365,56 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Kikomo cha uchambuzi cha leo cha onyesho hili la awali kimefikiwa. Jaribu tena kesho.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'saa $count zilizopita',
+      one: 'saa 1 iliyopita',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'siku $count zilizopita',
+      one: 'siku 1 iliyopita',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ungependa kusasisha uchambuzi huu?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ulifanywa $age. Bei, habari na matokeo huenda yamebadilika tangu wakati huo.';
+  }
+
+  @override
+  String get staleKeep => 'Onyesha ule wa awali';
+
+  @override
+  String get staleRefresh => 'Tengeneza mpya';
+
+  @override
+  String seeAll(int count) {
+    return 'Ona zote ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Tafuta katika uchambuzi wako';
+
+  @override
+  String get deleteAnalysis => 'Futa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Uchambuzi wa $symbol umefutwa';
+  }
 }

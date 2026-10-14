@@ -380,5 +380,15 @@
   "inviteExpired": "මෙම ආරාධනාව කල් ඉකුත් වී ඇත. ඔබට ආරාධනා කළ පුද්ගලයාගෙන් නව කේතයක් ඉල්ලන්න.",
   "inviteDeviceLimit": "මෙම ආරාධනා කේතය දැනටමත් උපරිම උපාංග ගණනක භාවිත වේ.",
   "previewConfidential": "රහසිගත පෙරදසුන",
-  "errPreviewDailyLimit": "මෙම පෙරදසුනේ අද දින විශ්ලේෂණ සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න."
+  "errPreviewDailyLimit": "මෙම පෙරදසුනේ අද දින විශ්ලේෂණ සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.",
+  "ageHours": "{count, plural, =1{පැයකට පෙර} other{පැය {count}කට පෙර}}",
+  "ageDays": "{count, plural, =1{දිනකට පෙර} other{දින {count}කට පෙර}}",
+  "staleTitle": "මෙම විශ්ලේෂණය යාවත්කාලීන කරන්නද?",
+  "staleBody": "මෙය සාදන ලද්දේ {age}. එතැන් සිට මිල, පුවත් සහ ප්‍රතිඵල වෙනස් වී තිබිය හැක.",
+  "staleKeep": "පෙර එක පෙන්වන්න",
+  "staleRefresh": "අලුත් එකක් සාදන්න",
+  "seeAll": "සියල්ල බලන්න ({count})",
+  "searchAnalyses": "ඔබේ විශ්ලේෂණ සොයන්න",
+  "deleteAnalysis": "මකන්න",
+  "analysisDeleted": "{symbol} විශ්ලේෂණය මකා දමන ලදී"
 }

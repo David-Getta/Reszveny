@@ -380,5 +380,15 @@
   "inviteExpired": "Denne invitation er udløbet. Bed den person, der inviterede dig, om en ny kode.",
   "inviteDeviceLimit": "Denne invitationskode bruges allerede på det maksimale antal enheder.",
   "previewConfidential": "Fortrolig forhåndsvisning",
-  "errPreviewDailyLimit": "Dagens analysegrænse for denne forhåndsvisning er nået. Prøv igen i morgen."
+  "errPreviewDailyLimit": "Dagens analysegrænse for denne forhåndsvisning er nået. Prøv igen i morgen.",
+  "ageHours": "{count, plural, =1{for 1 time siden} other{for {count} timer siden}}",
+  "ageDays": "{count, plural, =1{for 1 dag siden} other{for {count} dage siden}}",
+  "staleTitle": "Opdater denne analyse?",
+  "staleBody": "Den blev lavet {age}. Kurser, nyheder og resultater kan have ændret sig siden da.",
+  "staleKeep": "Vis den tidligere",
+  "staleRefresh": "Lav en ny",
+  "seeAll": "Se alle ({count})",
+  "searchAnalyses": "Søg i dine analyser",
+  "deleteAnalysis": "Slet",
+  "analysisDeleted": "Analysen af {symbol} er slettet"
 }

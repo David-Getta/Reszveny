@@ -1366,4 +1366,56 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Mũhaka wa mathuthuria ma ũmũthĩ wa kuona kũũ kwa mbere nĩũkinyĩtio. Geria rĩngĩ rũciũ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mathaa $count mahĩtũku',
+      one: 'ithaa 1 rĩhĩtũku',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mĩthenya $count mĩhĩtũku',
+      one: 'mũthenya 1 ũhĩtũku',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Thondeka ũthuthuria ũyũ rĩngĩ?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ũthuthuria ũyũ wathondekirwo $age. Kuuma hĩndĩ ĩyo, thogora, ũhoro na maumĩrĩra no makorwo magarũrũkĩte.';
+  }
+
+  @override
+  String get staleKeep => 'Onania ũrĩa wa mbere';
+
+  @override
+  String get staleRefresh => 'Thondeka mwerũ';
+
+  @override
+  String seeAll(int count) {
+    return 'Ona yothe ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Caria ũthuthuria waku';
+
+  @override
+  String get deleteAnalysis => 'Eheria';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Ũthuthuria wa $symbol weherio';
+  }
 }

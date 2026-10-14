@@ -380,5 +380,15 @@
   "inviteExpired": "Xirhambo lexi xi hundzeriwe hi nkarhi. Kombela munhu loyi a ku rhambeke khodi leyintshwa.",
   "inviteDeviceLimit": "Khodi leyi ya xirhambo se yi tirhisiwa eka nhlayo ya le henhla ya switirhisiwa leyi pfumeleriweke.",
   "previewConfidential": "Xikombiso xa xihundla",
-  "errPreviewDailyLimit": "Ndzelekano wa minxopaxopo ya namuntlha wa xikombiso lexi wu fikeleriwile. Ringeta nakambe mundzuku."
+  "errPreviewDailyLimit": "Ndzelekano wa minxopaxopo ya namuntlha wa xikombiso lexi wu fikeleriwile. Ringeta nakambe mundzuku.",
+  "ageHours": "{count, plural, =1{awara yin'we leyi hundzeke} other{tiawara ta {count} leti hundzeke}}",
+  "ageDays": "{count, plural, =1{siku rin'we leri hundzeke} other{masiku ya {count} lama hundzeke}}",
+  "staleTitle": "Pfuxeta nxopaxopo lowu?",
+  "staleBody": "Wu endliwile {age}. Minxavo, mahungu ni mbuyelo swi nga va swi cincile ku sukela kwalaho.",
+  "staleKeep": "Kombisa wa khale",
+  "staleRefresh": "Endla lowuntshwa",
+  "seeAll": "Vona hinkwaswo ({count})",
+  "searchAnalyses": "Lava eka minxopaxopo ya wena",
+  "deleteAnalysis": "Sula",
+  "analysisDeleted": "Nxopaxopo wa {symbol} wu suriwile"
 }

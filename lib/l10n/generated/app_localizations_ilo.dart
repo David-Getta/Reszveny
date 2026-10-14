@@ -1376,4 +1376,56 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nga oras ti napalabasen',
+      one: '1 nga oras ti napalabasen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nga aldaw ti napalabasen',
+      one: '1 nga aldaw ti napalabasen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'I-update daytoy a panangsukimat?';
+
+  @override
+  String staleBody(String age) {
+    return 'Naaramid daytoy $age. Mabalin a nagbaliw dagiti presio, damag, ken resulta manipud idi.';
+  }
+
+  @override
+  String get staleKeep => 'Ipakita ti immuna';
+
+  @override
+  String get staleRefresh => 'Agaramid iti baro';
+
+  @override
+  String seeAll(int count) {
+    return 'Kitaen amin ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Biroken dagiti panangsukimatmo';
+
+  @override
+  String get deleteAnalysis => 'Ikkaten';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Naikkat ti panangsukimat ti $symbol';
+  }
 }

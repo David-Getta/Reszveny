@@ -1374,4 +1374,56 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'diiri tše $count tše di fetilego',
+      one: 'iri e 1 ye e fetilego',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'matšatši a $count a a fetilego',
+      one: 'letšatši le 1 le le fetilego',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Mpshafatša tshekatsheko ye?';
+
+  @override
+  String staleBody(String age) {
+    return 'E dirilwe $age. Go tloga ka nako yeo, ditheko, ditaba le dipoelo di ka be di fetogile.';
+  }
+
+  @override
+  String get staleKeep => 'Bontšha ya pele';
+
+  @override
+  String get staleRefresh => 'Dira ye mpsha';
+
+  @override
+  String seeAll(int count) {
+    return 'Bona tšohle ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Nyaka ditshekatshekong tša gago';
+
+  @override
+  String get deleteAnalysis => 'Phumola';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Tshekatsheko ya $symbol e phumotšwe';
+  }
 }

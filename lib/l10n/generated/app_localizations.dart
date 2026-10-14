@@ -2622,6 +2622,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Today\'s analysis limit of this preview has been reached. Try again tomorrow.'**
   String get errPreviewDailyLimit;
+
+  /// How long ago an AI analysis was made, in hours (shown next to saved analyses and in the update question).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hour ago} other{{count} hours ago}}'**
+  String ageHours(int count);
+
+  /// How long ago an AI analysis was made, in days.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day ago} other{{count} days ago}}'**
+  String ageDays(int count);
+
+  /// Title of the question shown when the user opens a saved AI analysis that is more than 12 hours old.
+  ///
+  /// In en, this message translates to:
+  /// **'Update this analysis?'**
+  String get staleTitle;
+
+  /// Body of the update question. {age} is a phrase like '2 days ago' or '15 hours ago' (from ageHours / ageDays).
+  ///
+  /// In en, this message translates to:
+  /// **'It was made {age}. Prices, news and results may have changed since then.'**
+  String staleBody(String age);
+
+  /// Button: open the saved (older) analysis without making a new one.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the earlier one'**
+  String get staleKeep;
+
+  /// Button: make a fresh AI analysis now (uses the allowance).
+  ///
+  /// In en, this message translates to:
+  /// **'Make a new one'**
+  String get staleRefresh;
+
+  /// Button under the short list of saved analyses on the home screen that opens the full history. {count} is the number of saved analyses.
+  ///
+  /// In en, this message translates to:
+  /// **'See all ({count})'**
+  String seeAll(int count);
+
+  /// Hint in the search field of the saved-analyses history page (searches ticker and headline).
+  ///
+  /// In en, this message translates to:
+  /// **'Search your analyses'**
+  String get searchAnalyses;
+
+  /// Label of the swipe-to-delete action / button that removes a saved analysis from the device.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get deleteAnalysis;
+
+  /// Short confirmation after a saved analysis was deleted. {symbol} is a ticker like AAPL.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} analysis deleted'**
+  String analysisDeleted(String symbol);
 }
 
 class _AppLocalizationsDelegate

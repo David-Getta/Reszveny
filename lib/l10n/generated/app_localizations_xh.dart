@@ -1371,4 +1371,56 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Umda wohlalutyo wanamhlanje walo mboniso wangaphambili ufikelelwe. Zama kwakhona ngomso.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kwiiyure ezi-$count ezidlulileyo',
+      one: 'kwiyure enye edlulileyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kwiintsuku ezi-$count ezidlulileyo',
+      one: 'kusuku olunye oludlulileyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Hlaziya olu hlalutyo?';
+
+  @override
+  String staleBody(String age) {
+    return 'Olu hlalutyo lwenziwe $age. Amaxabiso, iindaba neziphumo zisenokuba zitshintshile ukususela ngoko.';
+  }
+
+  @override
+  String get staleKeep => 'Bonisa olwangaphambili';
+
+  @override
+  String get staleRefresh => 'Yenza olutsha';
+
+  @override
+  String seeAll(int count) {
+    return 'Bona konke ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Khangela kuhlalutyo lwakho';
+
+  @override
+  String get deleteAnalysis => 'Cima';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Uhlalutyo lwe-$symbol lucinyiwe';
+  }
 }

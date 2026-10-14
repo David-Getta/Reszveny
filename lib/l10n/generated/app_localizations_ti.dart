@@ -1338,4 +1338,56 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ናይ ሎሚ ደረት ትንተና ናይዚ ቅድመ-ርእይቶ ተበጺሑ። ጽባሕ እንደገና ፈትኑ።';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ቅድሚ $count ሰዓታት',
+      one: 'ቅድሚ 1 ሰዓት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ቅድሚ $count መዓልታት',
+      one: 'ቅድሚ 1 መዓልቲ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'እዚ ትንተና ይሓደስ ድዩ?';
+
+  @override
+  String staleBody(String age) {
+    return 'እዚ ትንተና $age እዩ ተዳልዩ። ካብ ሽዑ ንደሓር ዋጋታት፣ ዜናታትን ውጽኢታትን ተቐይሮም ክኾኑ ይኽእሉ።';
+  }
+
+  @override
+  String get staleKeep => 'ነቲ ዝቐደመ ኣርኢ';
+
+  @override
+  String get staleRefresh => 'ሓድሽ ፍጠር';
+
+  @override
+  String seeAll(int count) {
+    return 'ኩሉ ርአ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'ኣብ ትንተናታትካ ድለ';
+
+  @override
+  String get deleteAnalysis => 'ሰርዝ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'ትንተና $symbol ተሰሪዙ';
+  }
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Bu çakylygyň möhleti geçdi. Sizi çagyran adamdan täze kod soraň.",
   "inviteDeviceLimit": "Bu çakylyk kody eýýäm rugsat berlen iň köp enjamda ulanylýar.",
   "previewConfidential": "Gizlin deslapky wersiýa",
-  "errPreviewDailyLimit": "Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň."
+  "errPreviewDailyLimit": "Bu deslapky wersiýanyň şu günki seljerme çägi doldy. Ertir täzeden synanyşyň.",
+  "ageHours": "{count, plural, =1{1 sagat öň} other{{count} sagat öň}}",
+  "ageDays": "{count, plural, =1{1 gün öň} other{{count} gün öň}}",
+  "staleTitle": "Bu seljerme täzelensinmi?",
+  "staleBody": "Ol {age} taýýarlandy. Şondan bäri bahalar, habarlar we netijeler üýtgän bolmagy mümkin.",
+  "staleKeep": "Öňküsini görkez",
+  "staleRefresh": "Täzesini döret",
+  "seeAll": "Ählisini gör ({count})",
+  "searchAnalyses": "Seljermeleriňden gözle",
+  "deleteAnalysis": "Poz",
+  "analysisDeleted": "{symbol} seljermesi pozuldy"
 }

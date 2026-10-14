@@ -380,5 +380,15 @@
   "inviteExpired": "Hierdie uitnodiging het verval. Vra die persoon wat jou genooi het vir ’n nuwe kode.",
   "inviteDeviceLimit": "Hierdie uitnodigingskode word reeds op die maksimum aantal toestelle gebruik.",
   "previewConfidential": "Vertroulike voorskou",
-  "errPreviewDailyLimit": "Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer."
+  "errPreviewDailyLimit": "Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer.",
+  "ageHours": "{count, plural, =1{1 uur gelede} other{{count} uur gelede}}",
+  "ageDays": "{count, plural, =1{1 dag gelede} other{{count} dae gelede}}",
+  "staleTitle": "Werk hierdie ontleding by?",
+  "staleBody": "Dit is {age} geskep. Pryse, nuus en resultate kon sedertdien verander het.",
+  "staleKeep": "Wys die vorige een",
+  "staleRefresh": "Skep 'n nuwe een",
+  "seeAll": "Sien almal ({count})",
+  "searchAnalyses": "Soek in jou ontledings",
+  "deleteAnalysis": "Vee uit",
+  "analysisDeleted": "{symbol}-ontleding uitgevee"
 }

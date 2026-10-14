@@ -380,5 +380,15 @@
   "inviteExpired": "Questo invito è scaduto. Chiedi un nuovo codice alla persona che ti ha invitato.",
   "inviteDeviceLimit": "Questo codice di invito è già in uso sul numero massimo di dispositivi.",
   "previewConfidential": "Anteprima riservata",
-  "errPreviewDailyLimit": "Il limite giornaliero di analisi di questa anteprima è stato raggiunto. Riprova domani."
+  "errPreviewDailyLimit": "Il limite giornaliero di analisi di questa anteprima è stato raggiunto. Riprova domani.",
+  "ageHours": "{count, plural, =1{1 ora fa} other{{count} ore fa}}",
+  "ageDays": "{count, plural, =1{1 giorno fa} other{{count} giorni fa}}",
+  "staleTitle": "Aggiornare questa analisi?",
+  "staleBody": "Questa analisi è stata creata {age}. Da allora prezzi, notizie e risultati potrebbero essere cambiati.",
+  "staleKeep": "Mostra la precedente",
+  "staleRefresh": "Creane una nuova",
+  "seeAll": "Vedi tutte ({count})",
+  "searchAnalyses": "Cerca nelle tue analisi",
+  "deleteAnalysis": "Elimina",
+  "analysisDeleted": "Analisi di {symbol} eliminata"
 }

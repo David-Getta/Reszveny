@@ -1361,4 +1361,56 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'एह प्रिव्यू के आज के विश्लेषण सीमा पूरा हो गइल बा। काल्ह फेर से कोसिस करीं।';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count घंटा पहिले',
+      one: '1 घंटा पहिले',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count दिन पहिले',
+      one: '1 दिन पहिले',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ई विश्लेषण अपडेट करीं?';
+
+  @override
+  String staleBody(String age) {
+    return 'ई $age बनल रहे। तब से दाम, खबर आ नतीजा बदल गइल हो सकेला।';
+  }
+
+  @override
+  String get staleKeep => 'पहिले वाला देखाईं';
+
+  @override
+  String get staleRefresh => 'नया बनाईं';
+
+  @override
+  String seeAll(int count) {
+    return 'सब देखीं ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'अपना विश्लेषण में खोजीं';
+
+  @override
+  String get deleteAnalysis => 'मिटाईं';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol के विश्लेषण मिटा दिहल गइल';
+  }
 }

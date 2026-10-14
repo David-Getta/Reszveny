@@ -1362,4 +1362,56 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'આ પ્રિવ્યૂની આજની વિશ્લેષણ મર્યાદા પૂરી થઈ ગઈ છે. આવતીકાલે ફરી પ્રયાસ કરો.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count કલાક પહેલાં',
+      one: '1 કલાક પહેલાં',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count દિવસ પહેલાં',
+      one: '1 દિવસ પહેલાં',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'આ વિશ્લેષણ અપડેટ કરીએ?';
+
+  @override
+  String staleBody(String age) {
+    return 'તે $age બનાવવામાં આવ્યું હતું. ત્યારથી ભાવ, સમાચાર અને પરિણામો બદલાઈ ગયા હોઈ શકે છે.';
+  }
+
+  @override
+  String get staleKeep => 'અગાઉનું બતાવો';
+
+  @override
+  String get staleRefresh => 'નવું બનાવો';
+
+  @override
+  String seeAll(int count) {
+    return 'બધા જુઓ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'તમારા વિશ્લેષણ શોધો';
+
+  @override
+  String get deleteAnalysis => 'કાઢી નાખો';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol વિશ્લેષણ કાઢી નાખ્યું';
+  }
 }

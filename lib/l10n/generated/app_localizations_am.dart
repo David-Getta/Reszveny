@@ -1342,4 +1342,56 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'የዚህ ቅድመ እይታ የዛሬ የትንተና ገደብ ተሟልቷል። ነገ እንደገና ይሞክሩ።';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ከ$count ሰዓታት በፊት',
+      one: 'ከ1 ሰዓት በፊት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ከ$count ቀናት በፊት',
+      one: 'ከ1 ቀን በፊት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ይህ ትንተና ይዘምን?';
+
+  @override
+  String staleBody(String age) {
+    return 'የተፈጠረው $age ነው። ከዚያ ወዲህ ዋጋዎች፣ ዜናዎች እና ውጤቶች ተቀይረው ሊሆን ይችላል።';
+  }
+
+  @override
+  String get staleKeep => 'የቀድሞውን አሳይ';
+
+  @override
+  String get staleRefresh => 'አዲስ ፍጠር';
+
+  @override
+  String seeAll(int count) {
+    return 'ሁሉንም አሳይ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'በትንተናዎች ውስጥ ፈልግ';
+
+  @override
+  String get deleteAnalysis => 'ሰርዝ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'የ$symbol ትንተና ተሰርዟል';
+  }
 }

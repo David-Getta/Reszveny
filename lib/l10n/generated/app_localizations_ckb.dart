@@ -1366,4 +1366,56 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'سنووری شیکاریی ئەمڕۆی ئەم پێشبینینە تەواو بووە. سبەی دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کاتژمێر لەمەوبەر',
+      one: '1 کاتژمێر لەمەوبەر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ لەمەوبەر',
+      one: '1 ڕۆژ لەمەوبەر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'ئەم شیکارییە نوێ بکرێتەوە؟';
+
+  @override
+  String staleBody(String age) {
+    return '$age دروستکراوە. لەو کاتەوە لەوانەیە نرخ و هەواڵ و ئەنجامەکان گۆڕابن.';
+  }
+
+  @override
+  String get staleKeep => 'پیشاندانی پێشووتر';
+
+  @override
+  String get staleRefresh => 'دروستکردنی نوێ';
+
+  @override
+  String seeAll(int count) {
+    return 'بینینی هەموو ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'لە شیکارییەکانت بگەڕێ';
+
+  @override
+  String get deleteAnalysis => 'سڕینەوە';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'شیکاریی $symbol سڕایەوە';
+  }
 }

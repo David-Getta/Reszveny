@@ -1370,4 +1370,56 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bangonga $count eleki',
+      one: 'ngonga 1 eleki',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mikɔlɔ $count eleki',
+      one: 'mokɔlɔ 1 eleki',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Kobongisa analyse oyo?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analyse oyo esalemaki $age. Banda wana, ntalo, nsango mpe mbano ekoki kobongwana.';
+  }
+
+  @override
+  String get staleKeep => 'Lakisa oyo ya kala';
+
+  @override
+  String get staleRefresh => 'Salá oyo ya sika';
+
+  @override
+  String seeAll(int count) {
+    return 'Talá nyonso ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Luká na ba analyse na yo';
+
+  @override
+  String get deleteAnalysis => 'Limwisa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analyse ya $symbol elimwisami';
+  }
 }

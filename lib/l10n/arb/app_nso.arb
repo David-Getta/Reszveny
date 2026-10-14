@@ -380,5 +380,15 @@
   "inviteExpired": "Taletšo ye e fedile. Kgopela motho yo a go laleditšego khoutu ye mpsha.",
   "inviteDeviceLimit": "Khoutu ye ya taletšo e šetše e šomišwa go palo ye kgolo kudu ya didirišwa.",
   "previewConfidential": "Ponelopele ya sephiri",
-  "errPreviewDailyLimit": "Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa."
+  "errPreviewDailyLimit": "Moedi wa dinyakišišo tša lehono wa ponelopele ye o fihleletšwe. Leka gape gosasa.",
+  "ageHours": "{count, plural, =1{iri e 1 ye e fetilego} other{diiri tše {count} tše di fetilego}}",
+  "ageDays": "{count, plural, =1{letšatši le 1 le le fetilego} other{matšatši a {count} a a fetilego}}",
+  "staleTitle": "Mpshafatša tshekatsheko ye?",
+  "staleBody": "E dirilwe {age}. Go tloga ka nako yeo, ditheko, ditaba le dipoelo di ka be di fetogile.",
+  "staleKeep": "Bontšha ya pele",
+  "staleRefresh": "Dira ye mpsha",
+  "seeAll": "Bona tšohle ({count})",
+  "searchAnalyses": "Nyaka ditshekatshekong tša gago",
+  "deleteAnalysis": "Phumola",
+  "analysisDeleted": "Tshekatsheko ya {symbol} e phumotšwe"
 }

@@ -1367,4 +1367,56 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Il limite giornaliero di analisi di questa anteprima è stato raggiunto. Riprova domani.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ore fa',
+      one: '1 ora fa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count giorni fa',
+      one: '1 giorno fa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Aggiornare questa analisi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Questa analisi è stata creata $age. Da allora prezzi, notizie e risultati potrebbero essere cambiati.';
+  }
+
+  @override
+  String get staleKeep => 'Mostra la precedente';
+
+  @override
+  String get staleRefresh => 'Creane una nuova';
+
+  @override
+  String seeAll(int count) {
+    return 'Vedi tutte ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Cerca nelle tue analisi';
+
+  @override
+  String get deleteAnalysis => 'Elimina';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analisi di $symbol eliminata';
+  }
 }

@@ -1372,4 +1372,56 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Kay ñawpaq qhawanapa kunan p\'unchaw analisis limitenqa tukukunñam. Paqarin hukmanta kallpachakuy.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hora ñawpaqta',
+      one: '1 hora ñawpaqta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count p\'unchaw ñawpaqta',
+      one: '1 p\'unchaw ñawpaqta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Kay t\'aqwiyta musuqyachisunchu?';
+
+  @override
+  String staleBody(String age) {
+    return '$age ruwasqa karqan. Chaymantapacha chanikuna, willakuykuna, lluqsiykunapas hukniraqyapunmanña.';
+  }
+
+  @override
+  String get staleKeep => 'Ñawpaqninta qhawachiy';
+
+  @override
+  String get staleRefresh => 'Musuqta ruway';
+
+  @override
+  String seeAll(int count) {
+    return 'Llapanta qhaway ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'T\'aqwiyniykikunapi maskay';
+
+  @override
+  String get deleteAnalysis => 'Pichay';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol t\'aqwiyqa pichasqaña';
+  }
 }

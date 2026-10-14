@@ -1361,4 +1361,56 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'د دې مخکتنې د نن ورځې د تحلیلونو حد پوره شوی. سبا بیا هڅه وکړئ.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ساعته مخکې',
+      one: '1 ساعت مخکې',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ورځې مخکې',
+      one: '1 ورځ مخکې',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'دا تحلیل تازه کړئ؟';
+
+  @override
+  String staleBody(String age) {
+    return 'دا $age جوړ شوی و. له هغه وخته بیې، خبرونه او پایلې کېدای شي بدلې شوې وي.';
+  }
+
+  @override
+  String get staleKeep => 'پخوانی وښیاست';
+
+  @override
+  String get staleRefresh => 'نوی جوړ کړئ';
+
+  @override
+  String seeAll(int count) {
+    return 'ټول وګورئ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'په خپلو تحلیلونو کې ولټوئ';
+
+  @override
+  String get deleteAnalysis => 'ړنګ کړئ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'د $symbol تحلیل ړنګ شو';
+  }
 }

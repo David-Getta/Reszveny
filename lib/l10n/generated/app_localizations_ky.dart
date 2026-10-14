@@ -1367,4 +1367,56 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Бул алдын ала көрүүнүн бүгүнкү талдоо чеги түгөндү. Эртең кайра аракет кылыңыз.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count саат мурун',
+      one: '1 саат мурун',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күн мурун',
+      one: '1 күн мурун',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Бул талдоону жаңыртуу керекпи?';
+
+  @override
+  String staleBody(String age) {
+    return 'Бул талдоо $age түзүлгөн. Ошондон бери баалар, жаңылыктар жана натыйжалар өзгөргөн болушу мүмкүн.';
+  }
+
+  @override
+  String get staleKeep => 'Мурункусун көрсөтүү';
+
+  @override
+  String get staleRefresh => 'Жаңысын түзүү';
+
+  @override
+  String seeAll(int count) {
+    return 'Баарын көрүү ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Талдоолоруңуздан издөө';
+
+  @override
+  String get deleteAnalysis => 'Өчүрүү';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol талдоосу өчүрүлдү';
+  }
 }

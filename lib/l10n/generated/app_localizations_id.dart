@@ -1361,4 +1361,56 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Batas analisis harian pratinjau ini sudah tercapai. Coba lagi besok.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jam yang lalu',
+      one: '1 jam yang lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari yang lalu',
+      one: '1 hari yang lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Perbarui analisis ini?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analisis ini dibuat $age. Harga, berita, dan hasil mungkin sudah berubah sejak itu.';
+  }
+
+  @override
+  String get staleKeep => 'Tampilkan yang sebelumnya';
+
+  @override
+  String get staleRefresh => 'Buat yang baru';
+
+  @override
+  String seeAll(int count) {
+    return 'Lihat semua ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Cari analisis Anda';
+
+  @override
+  String get deleteAnalysis => 'Hapus';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analisis $symbol dihapus';
+  }
 }

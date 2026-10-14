@@ -380,5 +380,15 @@
   "inviteExpired": "Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.",
   "inviteDeviceLimit": "Efa ampiasaina amin'ny isan'ny fitaovana farafahabetsany io kaody fanasana io.",
   "previewConfidential": "Fijery mialoha tsiambaratelo",
-  "errPreviewDailyLimit": "Tratra ny fetran'ny fanadihadiana androany amin'ity fijery mialoha ity. Andramo indray rahampitso."
+  "errPreviewDailyLimit": "Tratra ny fetran'ny fanadihadiana androany amin'ity fijery mialoha ity. Andramo indray rahampitso.",
+  "ageHours": "{count, plural, =1{1 ora lasa izay} other{{count} ora lasa izay}}",
+  "ageDays": "{count, plural, =1{1 andro lasa izay} other{{count} andro lasa izay}}",
+  "staleTitle": "Havaozina ve ity fandalinana ity?",
+  "staleBody": "Natao {age} ity. Mety efa niova ny vidiny, ny vaovao ary ny vokatra hatramin'izay.",
+  "staleKeep": "Asehoy ilay teo aloha",
+  "staleRefresh": "Mamorona vaovao",
+  "seeAll": "Jereo daholo ({count})",
+  "searchAnalyses": "Hikaroka ao amin'ny fandalinanao",
+  "deleteAnalysis": "Fafao",
+  "analysisDeleted": "Voafafa ny fandalinana {symbol}"
 }

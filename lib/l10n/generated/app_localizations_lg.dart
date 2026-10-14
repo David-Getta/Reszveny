@@ -1372,4 +1372,56 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ekkomo ly\'okwekenneenya kwa leero mu kulaba kuno okusooka lituukiddwako. Gezaako nate enkya.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'essaawa $count emabega',
+      one: 'essaawa 1 emabega',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ennaku $count emabega',
+      one: 'olunaku 1 emabega',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Okuzza obuggya okwekenneenya kuno?';
+
+  @override
+  String staleBody(String age) {
+    return 'Okwekenneenya kuno kwakolebwa $age. Okuva olwo, emiwendo, amawulire n\'ebivudde mu bizinensi biyinza okuba nga byakyuka.';
+  }
+
+  @override
+  String get staleKeep => 'Laga okw\'edda';
+
+  @override
+  String get staleRefresh => 'Kola okupya';
+
+  @override
+  String seeAll(int count) {
+    return 'Laba byonna ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Noonya mu kwekenneenya kwo';
+
+  @override
+  String get deleteAnalysis => 'Sangula';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Okwekenneenya kwa $symbol kusanguddwawo';
+  }
 }

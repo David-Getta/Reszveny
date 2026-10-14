@@ -380,5 +380,15 @@
   "inviteExpired": "Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.",
   "inviteDeviceLimit": "Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.",
   "previewConfidential": "Luottamuksellinen esiversio",
-  "errPreviewDailyLimit": "Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna."
+  "errPreviewDailyLimit": "Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna.",
+  "ageHours": "{count, plural, =1{1 tunti sitten} other{{count} tuntia sitten}}",
+  "ageDays": "{count, plural, =1{1 päivä sitten} other{{count} päivää sitten}}",
+  "staleTitle": "Päivitetäänkö tämä analyysi?",
+  "staleBody": "Se luotiin {age}. Hinnat, uutiset ja tulokset ovat voineet muuttua sen jälkeen.",
+  "staleKeep": "Näytä aiempi",
+  "staleRefresh": "Luo uusi",
+  "seeAll": "Näytä kaikki ({count})",
+  "searchAnalyses": "Hae analyyseistäsi",
+  "deleteAnalysis": "Poista",
+  "analysisDeleted": "{symbol}-analyysi poistettu"
 }

@@ -380,5 +380,15 @@
   "inviteExpired": "Nsafrɛ yi bere atwam. Bisa onipa a ɔfrɛɛ wo no ma ɔmma wo code foforo.",
   "inviteDeviceLimit": "Wɔde nsafrɛ code yi di dwuma wɔ mfiri dodoɔ a ɛsɛ so dedaw.",
   "previewConfidential": "Nhwɛkan a ɛyɛ kokoam",
-  "errPreviewDailyLimit": "Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena."
+  "errPreviewDailyLimit": "Nhwɛkan yi nhwehwɛmu dodoɔ a ɛsɛ ɛnnɛ no asa. San bɔ mmɔden ɔkyena.",
+  "ageHours": "{count, plural, =1{dɔnhwerew 1 a atwam} other{nnɔnhwerew {count} a atwam}}",
+  "ageDays": "{count, plural, =1{da 1 a atwam} other{nna {count} a atwam}}",
+  "staleTitle": "Wopɛ sɛ woyɛ nhwehwɛmu yi foforo?",
+  "staleBody": "Wɔyɛɛ no {age}. Ebia ɛboɔ, kasɛɛbɔ ne nsunsuansoɔ asesa fi saa bere no.",
+  "staleKeep": "Kyerɛ nea edi kan no",
+  "staleRefresh": "Yɛ foforo",
+  "seeAll": "Hwɛ ne nyinaa ({count})",
+  "searchAnalyses": "Hwehwɛ wo nhwehwɛmu mu",
+  "deleteAnalysis": "Popa",
+  "analysisDeleted": "Wɔapopa {symbol} nhwehwɛmu"
 }

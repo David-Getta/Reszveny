@@ -380,5 +380,15 @@
   "inviteExpired": "Nag-expire daytoy nga imbitasion. Dumawat iti baro a code iti tao a nangimbitar kenka.",
   "inviteDeviceLimit": "Maus-usaren daytoy a code ti imbitasion iti kaaduan a bilang dagiti device a maipalubos.",
   "previewConfidential": "Kompidensial a preview",
-  "errPreviewDailyLimit": "Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat."
+  "errPreviewDailyLimit": "Nadanonen ti limitasion ti panangsukimat ita nga aldaw para iti daytoy a preview. Padasem manen inton bigat.",
+  "ageHours": "{count, plural, =1{1 nga oras ti napalabasen} other{{count} nga oras ti napalabasen}}",
+  "ageDays": "{count, plural, =1{1 nga aldaw ti napalabasen} other{{count} nga aldaw ti napalabasen}}",
+  "staleTitle": "I-update daytoy a panangsukimat?",
+  "staleBody": "Naaramid daytoy {age}. Mabalin a nagbaliw dagiti presio, damag, ken resulta manipud idi.",
+  "staleKeep": "Ipakita ti immuna",
+  "staleRefresh": "Agaramid iti baro",
+  "seeAll": "Kitaen amin ({count})",
+  "searchAnalyses": "Biroken dagiti panangsukimatmo",
+  "deleteAnalysis": "Ikkaten",
+  "analysisDeleted": "Naikkat ti panangsukimat ti {symbol}"
 }

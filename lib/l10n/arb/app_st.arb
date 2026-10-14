@@ -380,5 +380,15 @@
   "inviteExpired": "Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.",
   "inviteDeviceLimit": "Khoutu ena ya memo e se e sebediswa palong e phahameng ka ho fetisisa ya disebediswa tse dumelletsweng.",
   "previewConfidential": "Ponelopele ya lekunutu",
-  "errPreviewDailyLimit": "Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane."
+  "errPreviewDailyLimit": "Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane.",
+  "ageHours": "{count, plural, =1{hora e 1 e fetileng} other{dihora tse {count} tse fetileng}}",
+  "ageDays": "{count, plural, =1{letsatsi le 1 le fetileng} other{matsatsi a {count} a fetileng}}",
+  "staleTitle": "Ntjhafatsa tlhahlobo ena?",
+  "staleBody": "E entswe {age}. Ditheko, ditaba le diphetho di ka nna tsa be di fetohile ho tloha ka nako eo.",
+  "staleKeep": "Bontsha ya pele",
+  "staleRefresh": "Etsa e ntjha",
+  "seeAll": "Bona tsohle ({count})",
+  "searchAnalyses": "Batla ditlhahlobong tsa hao",
+  "deleteAnalysis": "Hlakola",
+  "analysisDeleted": "Tlhahlobo ya {symbol} e hlakotswe"
 }

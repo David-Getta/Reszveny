@@ -380,5 +380,15 @@
   "inviteExpired": "د دې بلنې موده پای ته رسېدلې. له هغه چا نوی کوډ وغواړئ چې تاسو یې رابللي یاست.",
   "inviteDeviceLimit": "دا د بلنې کوډ لا دمخه د اعظمي شمېر وسیلو پر مخ کارول کېږي.",
   "previewConfidential": "محرمه مخکتنه",
-  "errPreviewDailyLimit": "د دې مخکتنې د نن ورځې د تحلیلونو حد پوره شوی. سبا بیا هڅه وکړئ."
+  "errPreviewDailyLimit": "د دې مخکتنې د نن ورځې د تحلیلونو حد پوره شوی. سبا بیا هڅه وکړئ.",
+  "ageHours": "{count, plural, =1{1 ساعت مخکې} other{{count} ساعته مخکې}}",
+  "ageDays": "{count, plural, =1{1 ورځ مخکې} other{{count} ورځې مخکې}}",
+  "staleTitle": "دا تحلیل تازه کړئ؟",
+  "staleBody": "دا {age} جوړ شوی و. له هغه وخته بیې، خبرونه او پایلې کېدای شي بدلې شوې وي.",
+  "staleKeep": "پخوانی وښیاست",
+  "staleRefresh": "نوی جوړ کړئ",
+  "seeAll": "ټول وګورئ ({count})",
+  "searchAnalyses": "په خپلو تحلیلونو کې ولټوئ",
+  "deleteAnalysis": "ړنګ کړئ",
+  "analysisDeleted": "د {symbol} تحلیل ړنګ شو"
 }

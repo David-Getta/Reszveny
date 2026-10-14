@@ -1370,4 +1370,56 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'maawa $count apfuura',
+      one: 'awa 1 rapfuura',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mazuva $count apfuura',
+      one: 'zuva 1 rapfuura',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Gadziridza ongororo iyi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Yakagadzirwa $age. Mitengo, nhau nemhedzisiro zvingave zvakachinja kubva ipapo.';
+  }
+
+  @override
+  String get staleKeep => 'Ratidza yekare';
+
+  @override
+  String get staleRefresh => 'Gadzira itsva';
+
+  @override
+  String seeAll(int count) {
+    return 'Ona zvese ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Tsvaga ongororo dzako';
+
+  @override
+  String get deleteAnalysis => 'Dzima';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Ongororo ya$symbol yadzimwa';
+  }
 }

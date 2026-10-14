@@ -380,5 +380,15 @@
   "inviteExpired": "Aquesta invitació ha caducat. Demana un codi nou a la persona que t’ha convidat.",
   "inviteDeviceLimit": "Aquest codi d’invitació ja s’està fent servir en el nombre màxim de dispositius.",
   "previewConfidential": "Versió prèvia confidencial",
-  "errPreviewDailyLimit": "S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà."
+  "errPreviewDailyLimit": "S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà.",
+  "ageHours": "{count, plural, =1{fa 1 hora} other{fa {count} hores}}",
+  "ageDays": "{count, plural, =1{fa 1 dia} other{fa {count} dies}}",
+  "staleTitle": "Vols actualitzar aquesta anàlisi?",
+  "staleBody": "Es va fer {age}. Els preus, les notícies i els resultats poden haver canviat des de llavors.",
+  "staleKeep": "Mostrar l’anterior",
+  "staleRefresh": "Fer-ne una de nova",
+  "seeAll": "Veure-les totes ({count})",
+  "searchAnalyses": "Cerca a les teves anàlisis",
+  "deleteAnalysis": "Suprimir",
+  "analysisDeleted": "S’ha suprimit l’anàlisi de {symbol}"
 }

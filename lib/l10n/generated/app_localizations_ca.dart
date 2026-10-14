@@ -1371,4 +1371,56 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'S’ha arribat al límit d’anàlisis d’avui d’aquesta versió prèvia. Torna-ho a provar demà.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fa $count hores',
+      one: 'fa 1 hora',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'fa $count dies',
+      one: 'fa 1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Vols actualitzar aquesta anàlisi?';
+
+  @override
+  String staleBody(String age) {
+    return 'Es va fer $age. Els preus, les notícies i els resultats poden haver canviat des de llavors.';
+  }
+
+  @override
+  String get staleKeep => 'Mostrar l’anterior';
+
+  @override
+  String get staleRefresh => 'Fer-ne una de nova';
+
+  @override
+  String seeAll(int count) {
+    return 'Veure-les totes ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Cerca a les teves anàlisis';
+
+  @override
+  String get deleteAnalysis => 'Suprimir';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'S’ha suprimit l’anàlisi de $symbol';
+  }
 }

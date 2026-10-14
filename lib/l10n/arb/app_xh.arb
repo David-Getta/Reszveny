@@ -380,5 +380,15 @@
   "inviteExpired": "Esi simemo siphelelwe lixesha. Cela ikhowudi entsha kumntu okumemileyo.",
   "inviteDeviceLimit": "Le khowudi yesimemo sele isetyenziswa kwinani eliphezulu lezixhobo elivumelekileyo.",
   "previewConfidential": "Umboniso oyimfihlo",
-  "errPreviewDailyLimit": "Umda wohlalutyo wanamhlanje walo mboniso wangaphambili ufikelelwe. Zama kwakhona ngomso."
+  "errPreviewDailyLimit": "Umda wohlalutyo wanamhlanje walo mboniso wangaphambili ufikelelwe. Zama kwakhona ngomso.",
+  "ageHours": "{count, plural, =1{kwiyure enye edlulileyo} other{kwiiyure ezi-{count} ezidlulileyo}}",
+  "ageDays": "{count, plural, =1{kusuku olunye oludlulileyo} other{kwiintsuku ezi-{count} ezidlulileyo}}",
+  "staleTitle": "Hlaziya olu hlalutyo?",
+  "staleBody": "Olu hlalutyo lwenziwe {age}. Amaxabiso, iindaba neziphumo zisenokuba zitshintshile ukususela ngoko.",
+  "staleKeep": "Bonisa olwangaphambili",
+  "staleRefresh": "Yenza olutsha",
+  "seeAll": "Bona konke ({count})",
+  "searchAnalyses": "Khangela kuhlalutyo lwakho",
+  "deleteAnalysis": "Cima",
+  "analysisDeleted": "Uhlalutyo lwe-{symbol} lucinyiwe"
 }

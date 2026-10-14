@@ -1362,4 +1362,54 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'སྔོན་ལྟ་འདིའི་དེ་རིང་གི་དབྱེ་ཞིབ་ཚད་བཀག་ལ་སླེབས་སོང་། སང་ཉིན་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཆུ་ཚོད་ $count གི་སྔོན་ལ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉིན་ $count གི་སྔོན་ལ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'དབྱེ་ཞིབ་འདི་གསར་བསྒྱུར་བྱེད་དམ།';
+
+  @override
+  String staleBody(String age) {
+    return 'འདི་ $age བཟོས་པ་ཡིན། དེ་ནས་བཟུང་གོང་ཚད་དང་གསར་འགྱུར། གྲུབ་འབྲས་བཅས་ལ་འགྱུར་བ་བྱུང་སྲིད།';
+  }
+
+  @override
+  String get staleKeep => 'སྔ་མ་དེ་སྟོན';
+
+  @override
+  String get staleRefresh => 'གསར་པ་ཞིག་བཟོ';
+
+  @override
+  String seeAll(int count) {
+    return 'ཚང་མ་ལྟ ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'དབྱེ་ཞིབ་ནང་འཚོལ';
+
+  @override
+  String get deleteAnalysis => 'སུབ';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol ཡི་དབྱེ་ཞིབ་བསུབས་ཟིན';
+  }
 }

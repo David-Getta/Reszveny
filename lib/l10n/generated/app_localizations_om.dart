@@ -1369,4 +1369,56 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Daangaan xiinxala har\'aa duraan-argii kanaa ga\'eera. Boru irra deebi\'ii yaali.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sa\'aatii $count dura',
+      one: 'sa\'aatii 1 dura',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'guyyaa $count dura',
+      one: 'guyyaa 1 dura',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Xiinxala kana haaromsuu?';
+
+  @override
+  String staleBody(String age) {
+    return 'Kun $age uumame. Sana booda gatiin, oduun fi bu\'aan jijjiiramuu danda\'u.';
+  }
+
+  @override
+  String get staleKeep => 'Isa duraa agarsiisi';
+
+  @override
+  String get staleRefresh => 'Haaraa uumi';
+
+  @override
+  String seeAll(int count) {
+    return 'Hunda ilaali ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Xiinxala kee keessa barbaadi';
+
+  @override
+  String get deleteAnalysis => 'Haqi';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Xiinxalli $symbol haqameera';
+  }
 }

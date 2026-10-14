@@ -380,5 +380,15 @@
   "inviteExpired": "Kukoka uku kwapera nguva. Kumbira munhu akakukoka kodhi itsva.",
   "inviteDeviceLimit": "Kodhi yekukoka iyi yatoshandiswa pamidziyo yakawanda sezvinobvumirwa.",
   "previewConfidential": "Shanduro yakavanzika",
-  "errPreviewDailyLimit": "Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana."
+  "errPreviewDailyLimit": "Muganhu weongororo wanhasi weshanduro iyi wasvika. Edza zvakare mangwana.",
+  "ageHours": "{count, plural, =1{awa 1 rapfuura} other{maawa {count} apfuura}}",
+  "ageDays": "{count, plural, =1{zuva 1 rapfuura} other{mazuva {count} apfuura}}",
+  "staleTitle": "Gadziridza ongororo iyi?",
+  "staleBody": "Yakagadzirwa {age}. Mitengo, nhau nemhedzisiro zvingave zvakachinja kubva ipapo.",
+  "staleKeep": "Ratidza yekare",
+  "staleRefresh": "Gadzira itsva",
+  "seeAll": "Ona zvese ({count})",
+  "searchAnalyses": "Tsvaga ongororo dzako",
+  "deleteAnalysis": "Dzima",
+  "analysisDeleted": "Ongororo ya{symbol} yadzimwa"
 }

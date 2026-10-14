@@ -1362,4 +1362,56 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Бу алдан карауның бүгенге анализ чиге тулды. Иртәгә кабат тырышып карагыз.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сәгать элек',
+      one: '1 сәгать элек',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count көн элек',
+      one: '1 көн элек',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Бу анализны яңартыйкмы?';
+
+  @override
+  String staleBody(String age) {
+    return 'Ул $age ясалды. Шуннан бирле бәяләр, яңалыклар һәм нәтиҗәләр үзгәргән булырга мөмкин.';
+  }
+
+  @override
+  String get staleKeep => 'Элеккесен күрсәтү';
+
+  @override
+  String get staleRefresh => 'Яңасын ясау';
+
+  @override
+  String seeAll(int count) {
+    return 'Барысын да карау ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Анализларыгыздан эзләү';
+
+  @override
+  String get deleteAnalysis => 'Бетерү';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol анализы бетерелде';
+  }
 }

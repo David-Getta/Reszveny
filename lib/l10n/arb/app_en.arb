@@ -871,5 +871,72 @@
   "errPreviewDailyLimit": "Today's analysis limit of this preview has been reached. Try again tomorrow.",
   "@errPreviewDailyLimit": {
     "description": "Error when the invite-only preview's daily number of AI analyses is used up."
+  },
+  "ageHours": "{count, plural, =1{1 hour ago} other{{count} hours ago}}",
+  "@ageHours": {
+    "description": "How long ago an AI analysis was made, in hours (shown next to saved analyses and in the update question).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ageDays": "{count, plural, =1{1 day ago} other{{count} days ago}}",
+  "@ageDays": {
+    "description": "How long ago an AI analysis was made, in days.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staleTitle": "Update this analysis?",
+  "@staleTitle": {
+    "description": "Title of the question shown when the user opens a saved AI analysis that is more than 12 hours old."
+  },
+  "staleBody": "It was made {age}. Prices, news and results may have changed since then.",
+  "@staleBody": {
+    "description": "Body of the update question. {age} is a phrase like '2 days ago' or '15 hours ago' (from ageHours / ageDays).",
+    "placeholders": {
+      "age": {
+        "type": "String",
+        "example": "2 days ago"
+      }
+    }
+  },
+  "staleKeep": "Show the earlier one",
+  "@staleKeep": {
+    "description": "Button: open the saved (older) analysis without making a new one."
+  },
+  "staleRefresh": "Make a new one",
+  "@staleRefresh": {
+    "description": "Button: make a fresh AI analysis now (uses the allowance)."
+  },
+  "seeAll": "See all ({count})",
+  "@seeAll": {
+    "description": "Button under the short list of saved analyses on the home screen that opens the full history. {count} is the number of saved analyses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchAnalyses": "Search your analyses",
+  "@searchAnalyses": {
+    "description": "Hint in the search field of the saved-analyses history page (searches ticker and headline)."
+  },
+  "deleteAnalysis": "Delete",
+  "@deleteAnalysis": {
+    "description": "Label of the swipe-to-delete action / button that removes a saved analysis from the device."
+  },
+  "analysisDeleted": "{symbol} analysis deleted",
+  "@analysisDeleted": {
+    "description": "Short confirmation after a saved analysis was deleted. {symbol} is a ticker like AAPL.",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "AAPL"
+      }
+    }
   }
 }

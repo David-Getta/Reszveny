@@ -380,5 +380,15 @@
   "inviteExpired": "Wannan gayyatar ta ƙare. Nemi sabuwar lamba daga wanda ya gayyace ka.",
   "inviteDeviceLimit": "An riga an yi amfani da wannan lambar gayyata a iyakar adadin na'urori da aka yarda.",
   "previewConfidential": "Duban farko na sirri",
-  "errPreviewDailyLimit": "An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe."
+  "errPreviewDailyLimit": "An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe.",
+  "ageHours": "{count, plural, =1{sa'a 1 da ta wuce} other{sa'o'i {count} da suka wuce}}",
+  "ageDays": "{count, plural, =1{kwana 1 da ya wuce} other{kwanaki {count} da suka wuce}}",
+  "staleTitle": "Sabunta wannan nazari?",
+  "staleBody": "An yi wannan nazari {age}. Farashi, labarai da sakamako na iya canzawa tun daga lokacin.",
+  "staleKeep": "Nuna na baya",
+  "staleRefresh": "Yi sabo",
+  "seeAll": "Duba duka ({count})",
+  "searchAnalyses": "Bincika nazarinka",
+  "deleteAnalysis": "Share",
+  "analysisDeleted": "An share nazarin {symbol}"
 }

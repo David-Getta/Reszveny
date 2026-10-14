@@ -380,5 +380,15 @@
   "inviteExpired": "Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.",
   "inviteDeviceLimit": "Mã mời này đã được dùng trên số thiết bị tối đa cho phép.",
   "previewConfidential": "Bản xem trước bảo mật",
-  "errPreviewDailyLimit": "Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai."
+  "errPreviewDailyLimit": "Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai.",
+  "ageHours": "{count, plural, =1{1 giờ trước} other{{count} giờ trước}}",
+  "ageDays": "{count, plural, =1{1 ngày trước} other{{count} ngày trước}}",
+  "staleTitle": "Cập nhật phân tích này?",
+  "staleBody": "Phân tích này được tạo {age}. Giá, tin tức và kết quả có thể đã thay đổi kể từ đó.",
+  "staleKeep": "Xem bản trước",
+  "staleRefresh": "Tạo bản mới",
+  "seeAll": "Xem tất cả ({count})",
+  "searchAnalyses": "Tìm trong phân tích của bạn",
+  "deleteAnalysis": "Xóa",
+  "analysisDeleted": "Đã xóa phân tích {symbol}"
 }

@@ -1370,4 +1370,56 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ndilu ya analyse ya lumbu kiaki mu kutala yayi isukidi. Meka diaka mbazi.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bantangu $count me luta',
+      one: 'ntangu 1 me luta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bilumbu $count me luta',
+      one: 'kilumbu 1 me luta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Vanga analyse yai ya mpa?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analyse yai me vangama $age. Banda ntangu yina, bantalu, nsangu mpi mbuma lenda soba.';
+  }
+
+  @override
+  String get staleKeep => 'Monisa ya ntete';
+
+  @override
+  String get staleRefresh => 'Vanga ya mpa';
+
+  @override
+  String seeAll(int count) {
+    return 'Tala yonso ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Sosa na ba analyse na nge';
+
+  @override
+  String get deleteAnalysis => 'Zimbisa';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analyse ya $symbol me zimbisama';
+  }
 }

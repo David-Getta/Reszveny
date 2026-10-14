@@ -380,5 +380,15 @@
   "inviteExpired": "Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.",
   "inviteDeviceLimit": "Le khodi yesimemo isivele isetshenziswa enanini eliphezulu lamadivayisi elivunyelwe.",
   "previewConfidential": "Ukubuka kuqala okuyimfihlo",
-  "errPreviewDailyLimit": "Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa."
+  "errPreviewDailyLimit": "Umkhawulo wezinhlaziyo wanamuhla walokhu kubuka kuqala ufinyelelwe. Zama futhi kusasa.",
+  "ageHours": "{count, plural, =1{ehoreni eli-1 eledlule} other{emahoreni angu-{count} adlule}}",
+  "ageDays": "{count, plural, =1{osukwini olu-1 oludlule} other{ezinsukwini ezingu-{count} ezedlule}}",
+  "staleTitle": "Buyekeza lolu hlaziyo?",
+  "staleBody": "Lolu hlaziyo lwenziwa {age}. Amanani, izindaba nemiphumela kungenzeka ukuthi kushintshile kusukela ngaleso sikhathi.",
+  "staleKeep": "Bonisa olwangaphambili",
+  "staleRefresh": "Yenza olusha",
+  "seeAll": "Bona konke ({count})",
+  "searchAnalyses": "Sesha kuhlaziyo lwakho",
+  "deleteAnalysis": "Susa",
+  "analysisDeleted": "Uhlaziyo lwe-{symbol} lususiwe"
 }

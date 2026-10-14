@@ -380,5 +380,15 @@
   "inviteExpired": "Taletso eno e fetile nako. Kopa motho yo o go laleditseng khoutu e ntšha.",
   "inviteDeviceLimit": "Khoutu eno ya taletso e setse e dirisiwa mo palong e kgolo ka go fetisisa ya didirisiwa e e letleletsweng.",
   "previewConfidential": "Ponelopele ya sephiri",
-  "errPreviewDailyLimit": "Tekanyetso ya ditshekatsheko ya gompieno ya ponelopele eno e fitlheletswe. Leka gape kamoso."
+  "errPreviewDailyLimit": "Tekanyetso ya ditshekatsheko ya gompieno ya ponelopele eno e fitlheletswe. Leka gape kamoso.",
+  "ageHours": "{count, plural, =1{ura e le 1 e e fetileng} other{diura di le {count} tse di fetileng}}",
+  "ageDays": "{count, plural, =1{letsatsi le le 1 le le fetileng} other{malatsi a le {count} a a fetileng}}",
+  "staleTitle": "Ntšhafatsa tshekatsheko e?",
+  "staleBody": "E dirilwe {age}. Ditlhwatlhwa, dikgang le dipoelo di ka tswa di fetogile go tloga foo.",
+  "staleKeep": "Bontsha ya pele",
+  "staleRefresh": "Dira e ntšhwa",
+  "seeAll": "Bona tsotlhe ({count})",
+  "searchAnalyses": "Batla mo ditshekatshekong tsa gago",
+  "deleteAnalysis": "Phimola",
+  "analysisDeleted": "Tshekatsheko ya {symbol} e phimotswe"
 }

@@ -1367,4 +1367,56 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'ამ წინასწარი ვერსიის დღევანდელი ანალიზების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count საათის წინ',
+      one: '$count საათის წინ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count დღის წინ',
+      one: '$count დღის წინ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'განვაახლოთ ეს ანალიზი?';
+
+  @override
+  String staleBody(String age) {
+    return 'ეს ანალიზი შეიქმნა $age. მას შემდეგ ფასები, სიახლეები და შედეგები შესაძლოა შეიცვალა.';
+  }
+
+  @override
+  String get staleKeep => 'ადრინდელის ჩვენება';
+
+  @override
+  String get staleRefresh => 'ახლის შექმნა';
+
+  @override
+  String seeAll(int count) {
+    return 'ყველას ნახვა ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'თქვენს ანალიზებში ძიება';
+
+  @override
+  String get deleteAnalysis => 'წაშლა';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol-ის ანალიზი წაიშალა';
+  }
 }

@@ -9,6 +9,7 @@ import 'package:reszveny/core/models/stock_report.dart';
 import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
+import 'package:reszveny/features/home/history_section.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
 
 import 'app_widget_test.dart' show services;
@@ -129,24 +130,93 @@ void main() {
     expect(find.text('Regenerate'), findsOneWidget);
   });
 
-  testWidgets('a saved analysis is still listed and opens after a restart (older than 12 hours too)', (tester) async {
+  Future<void> pumpWithOld(WidgetTester tester, {int days = 3, List<String> more = const []}) async {
     _phone(tester);
-    final old = StockReport(
-      symbol: 'MSFT',
-      headline: 'Old but saved',
-      sections: const [],
-      generatedAt: DateTime.now().subtract(const Duration(days: 3)),
-    );
-    SharedPreferences.setMockInitialValues({'report_MSFT': jsonEncode(old.toJson())});
+    final values = <String, Object>{};
+    for (final (i, symbol) in ['MSFT', ...more].indexed) {
+      final r = StockReport(
+        symbol: symbol,
+        headline: symbol == 'MSFT' ? 'Old but saved' : 'Headline $symbol',
+        sections: const [],
+        generatedAt: DateTime.now().subtract(Duration(days: days, minutes: i)),
+      );
+      values['report_$symbol'] = jsonEncode(r.toJson());
+    }
+    SharedPreferences.setMockInitialValues(values);
     await tester.pumpWidget(WhatStockApp(services: services()));
     await tester.pumpAndSettle();
-    final saved = find.byKey(const ValueKey('analysis-MSFT'));
+  }
+
+  Future<void> tapSaved(WidgetTester tester, String symbol) async {
+    final saved = find.byKey(ValueKey('analysis-$symbol'));
     await tester.scrollUntilVisible(saved, 200, scrollable: find.byType(Scrollable).first);
-    expect(find.text('Old but saved'), findsOneWidget);
     await tester.tap(saved);
+    await tester.pumpAndSettle();
+  }
+
+  testWidgets('an analysis older than 12 hours: "show the earlier one" opens it after a restart', (tester) async {
+    await pumpWithOld(tester);
+    expect(find.text('Old but saved'), findsOneWidget);
+    expect(find.text('3 days ago'), findsOneWidget);
+    await tapSaved(tester, 'MSFT');
+    expect(find.text('Update this analysis?'), findsOneWidget);
+    expect(find.textContaining('It was made 3 days ago'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('stale-keep')));
     await tester.pumpAndSettle();
     expect(find.text('Microsoft Corporation'), findsWidgets);
     expect(find.text('Old but saved'), findsOneWidget);
+    expect(find.byKey(const ValueKey('stale-prompt')), findsNothing);
+  });
+
+  testWidgets('an analysis older than 12 hours: "make a new one" opens the stock and generates it', (tester) async {
+    await pumpWithOld(tester);
+    await tapSaved(tester, 'MSFT');
+    expect(find.textContaining('Make a new one · uses 1 analysis'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('stale-refresh')));
+    await tester.pumpAndSettle();
+    expect(find.text('Old but saved'), findsNothing);
+    expect(find.text('Test headline'), findsOneWidget);
+  });
+
+  testWidgets('opened from the search, an old analysis asks first in its card', (tester) async {
+    await pumpWithOld(tester, days: 1);
+    await _search(tester, 'MSFT');
+    expect(find.byKey(const ValueKey('stale-prompt')), findsOneWidget);
+    expect(find.text('Old but saved'), findsNothing);
+    expect(find.textContaining('It was made 1 day ago'), findsOneWidget);
+    final keep = find.byKey(const ValueKey('stale-keep'));
+    await tester.scrollUntilVisible(keep, 200, scrollable: find.byType(Scrollable).first);
+    await tester.tap(keep);
+    await tester.pumpAndSettle();
+    expect(find.text('Old but saved'), findsOneWidget);
+  });
+
+  testWidgets('the history page lists every analysis, searches and deletes', (tester) async {
+    await pumpWithOld(tester, more: ['AAPL', 'NVDA', 'OTP', 'KO', 'ASML']);
+    final seeAll = find.byKey(const ValueKey('analyses-see-all'));
+    await tester.scrollUntilVisible(seeAll, 200, scrollable: find.byType(Scrollable).first);
+    expect(find.text('See all (6)'), findsOneWidget);
+    await tester.tap(seeAll);
+    await tester.pumpAndSettle();
+    expect(find.byType(SavedAnalysisTile), findsNWidgets(6));
+
+    await tester.enterText(find.byKey(const ValueKey('analyses-search')), 'nvd');
+    await tester.pumpAndSettle();
+    expect(find.byType(SavedAnalysisTile), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('delete-NVDA')));
+    await tester.pumpAndSettle();
+    expect(find.text('NVDA analysis deleted'), findsOneWidget);
+    expect(find.byType(SavedAnalysisTile), findsNothing);
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.containsKey('report_NVDA'), isFalse);
+
+    await tester.enterText(find.byKey(const ValueKey('analyses-search')), '');
+    await tester.pumpAndSettle();
+    expect(find.byType(SavedAnalysisTile), findsNWidgets(5));
+    // Elhúzással is törölhető.
+    await tester.drag(find.byKey(const ValueKey('dismiss-OTP')), const Offset(-500, 0));
+    await tester.pumpAndSettle();
+    expect(find.byType(SavedAnalysisTile), findsNWidgets(4));
   });
 
   testWidgets('the share button sends the analysis text to the system share sheet', (tester) async {

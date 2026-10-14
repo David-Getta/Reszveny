@@ -1371,4 +1371,56 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Συμπληρώθηκε το σημερινό όριο αναλύσεων αυτής της προεπισκόπησης. Δοκιμάστε ξανά αύριο.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'πριν από $count ώρες',
+      one: 'πριν από 1 ώρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'πριν από $count ημέρες',
+      one: 'πριν από 1 ημέρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ενημέρωση αυτής της ανάλυσης;';
+
+  @override
+  String staleBody(String age) {
+    return 'Δημιουργήθηκε $age. Από τότε μπορεί να έχουν αλλάξει οι τιμές, τα νέα και τα αποτελέσματα.';
+  }
+
+  @override
+  String get staleKeep => 'Εμφάνιση της προηγούμενης';
+
+  @override
+  String get staleRefresh => 'Δημιουργία νέας';
+
+  @override
+  String seeAll(int count) {
+    return 'Προβολή όλων ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Αναζήτηση στις αναλύσεις σας';
+
+  @override
+  String get deleteAnalysis => 'Διαγραφή';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Η ανάλυση του $symbol διαγράφηκε';
+  }
 }

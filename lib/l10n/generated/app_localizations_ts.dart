@@ -1375,4 +1375,56 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Ndzelekano wa minxopaxopo ya namuntlha wa xikombiso lexi wu fikeleriwile. Ringeta nakambe mundzuku.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'tiawara ta $count leti hundzeke',
+      one: 'awara yin\'we leyi hundzeke',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'masiku ya $count lama hundzeke',
+      one: 'siku rin\'we leri hundzeke',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Pfuxeta nxopaxopo lowu?';
+
+  @override
+  String staleBody(String age) {
+    return 'Wu endliwile $age. Minxavo, mahungu ni mbuyelo swi nga va swi cincile ku sukela kwalaho.';
+  }
+
+  @override
+  String get staleKeep => 'Kombisa wa khale';
+
+  @override
+  String get staleRefresh => 'Endla lowuntshwa';
+
+  @override
+  String seeAll(int count) {
+    return 'Vona hinkwaswo ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Lava eka minxopaxopo ya wena';
+
+  @override
+  String get deleteAnalysis => 'Sula';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Nxopaxopo wa $symbol wu suriwile';
+  }
 }

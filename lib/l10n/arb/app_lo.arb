@@ -380,5 +380,15 @@
   "inviteExpired": "ຄຳເຊີນນີ້ໝົດອາຍຸແລ້ວ ກະລຸນາຂໍລະຫັດໃໝ່ຈາກຜູ້ທີ່ເຊີນທ່ານ",
   "inviteDeviceLimit": "ລະຫັດເຊີນນີ້ຖືກໃຊ້ໃນອຸປະກອນຄົບຈຳນວນສູງສຸດແລ້ວ",
   "previewConfidential": "ເວີຊັນຕົວຢ່າງລັບ",
-  "errPreviewDailyLimit": "ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ"
+  "errPreviewDailyLimit": "ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ",
+  "ageHours": "{count, plural, other{{count} ຊົ່ວໂມງກ່ອນ}}",
+  "ageDays": "{count, plural, other{{count} ມື້ກ່ອນ}}",
+  "staleTitle": "ອັບເດດການວິເຄາະນີ້ບໍ?",
+  "staleBody": "ການວິເຄາະນີ້ຖືກສ້າງເມື່ອ {age}. ນັບແຕ່ນັ້ນມາ ລາຄາ, ຂ່າວ ແລະ ຜົນປະກອບການອາດມີການປ່ຽນແປງ.",
+  "staleKeep": "ສະແດງອັນກ່ອນໜ້າ",
+  "staleRefresh": "ສ້າງອັນໃໝ່",
+  "seeAll": "ເບິ່ງທັງໝົດ ({count})",
+  "searchAnalyses": "ຊອກຫາການວິເຄາະຂອງທ່ານ",
+  "deleteAnalysis": "ລຶບ",
+  "analysisDeleted": "ລຶບການວິເຄາະ {symbol} ແລ້ວ"
 }

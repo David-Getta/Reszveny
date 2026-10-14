@@ -380,5 +380,15 @@
   "inviteExpired": "Bu taklifning muddati oʻtgan. Sizni taklif qilgan kishidan yangi kod soʻrang.",
   "inviteDeviceLimit": "Bu taklif kodi allaqachon ruxsat etilgan eng koʻp qurilmada ishlatilmoqda.",
   "previewConfidential": "Maxfiy oldindan koʻrish",
-  "errPreviewDailyLimit": "Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring."
+  "errPreviewDailyLimit": "Bu oldindan koʻrishning bugungi tahlil limiti tugadi. Ertaga qayta urinib koʻring.",
+  "ageHours": "{count, plural, =1{1 soat oldin} other{{count} soat oldin}}",
+  "ageDays": "{count, plural, =1{1 kun oldin} other{{count} kun oldin}}",
+  "staleTitle": "Bu tahlil yangilansinmi?",
+  "staleBody": "U {age} tayyorlangan. Shundan beri narxlar, yangiliklar va natijalar oʻzgargan boʻlishi mumkin.",
+  "staleKeep": "Avvalgisini koʻrsatish",
+  "staleRefresh": "Yangisini yaratish",
+  "seeAll": "Barchasini koʻrish ({count})",
+  "searchAnalyses": "Tahlillaringizdan qidirish",
+  "deleteAnalysis": "Oʻchirish",
+  "analysisDeleted": "{symbol} tahlili oʻchirildi"
 }

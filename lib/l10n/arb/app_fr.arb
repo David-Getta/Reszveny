@@ -380,5 +380,15 @@
   "inviteExpired": "Cette invitation a expiré. Demandez un nouveau code à la personne qui vous a invité.",
   "inviteDeviceLimit": "Ce code d’invitation est déjà utilisé sur le nombre maximal d’appareils.",
   "previewConfidential": "Préversion confidentielle",
-  "errPreviewDailyLimit": "La limite quotidienne d’analyses de cette préversion est atteinte. Réessayez demain."
+  "errPreviewDailyLimit": "La limite quotidienne d’analyses de cette préversion est atteinte. Réessayez demain.",
+  "ageHours": "{count, plural, =1{il y a 1 heure} other{il y a {count} heures}}",
+  "ageDays": "{count, plural, =1{il y a 1 jour} other{il y a {count} jours}}",
+  "staleTitle": "Mettre à jour cette analyse ?",
+  "staleBody": "Elle a été générée {age}. Les cours, les actualités et les résultats ont pu changer depuis.",
+  "staleKeep": "Afficher la précédente",
+  "staleRefresh": "En générer une nouvelle",
+  "seeAll": "Tout voir ({count})",
+  "searchAnalyses": "Rechercher dans vos analyses",
+  "deleteAnalysis": "Supprimer",
+  "analysisDeleted": "Analyse de {symbol} supprimée"
 }

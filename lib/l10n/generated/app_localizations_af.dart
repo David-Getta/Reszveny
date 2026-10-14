@@ -1368,4 +1368,56 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Hierdie voorskou se ontledingslimiet vir vandag is bereik. Probeer môre weer.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count uur gelede',
+      one: '1 uur gelede',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dae gelede',
+      one: '1 dag gelede',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Werk hierdie ontleding by?';
+
+  @override
+  String staleBody(String age) {
+    return 'Dit is $age geskep. Pryse, nuus en resultate kon sedertdien verander het.';
+  }
+
+  @override
+  String get staleKeep => 'Wys die vorige een';
+
+  @override
+  String get staleRefresh => 'Skep \'n nuwe een';
+
+  @override
+  String seeAll(int count) {
+    return 'Sien almal ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Soek in jou ontledings';
+
+  @override
+  String get deleteAnalysis => 'Vee uit';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol-ontleding uitgevee';
+  }
 }

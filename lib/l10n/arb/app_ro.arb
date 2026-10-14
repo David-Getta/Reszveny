@@ -380,5 +380,15 @@
   "inviteExpired": "Această invitație a expirat. Cere un cod nou persoanei care te-a invitat.",
   "inviteDeviceLimit": "Acest cod de invitație este deja folosit pe numărul maxim de dispozitive.",
   "previewConfidential": "Previzualizare confidențială",
-  "errPreviewDailyLimit": "Limita de analize de azi pentru această previzualizare a fost atinsă. Încearcă din nou mâine."
+  "errPreviewDailyLimit": "Limita de analize de azi pentru această previzualizare a fost atinsă. Încearcă din nou mâine.",
+  "ageHours": "{count, plural, =1{acum o oră} few{acum {count} ore} other{acum {count} de ore}}",
+  "ageDays": "{count, plural, =1{acum o zi} few{acum {count} zile} other{acum {count} de zile}}",
+  "staleTitle": "Actualizezi această analiză?",
+  "staleBody": "A fost realizată {age}. Între timp, prețurile, știrile și rezultatele s-ar putea să se fi schimbat.",
+  "staleKeep": "Arată-o pe cea anterioară",
+  "staleRefresh": "Creează una nouă",
+  "seeAll": "Vezi toate ({count})",
+  "searchAnalyses": "Caută în analizele tale",
+  "deleteAnalysis": "Șterge",
+  "analysisDeleted": "Analiza {symbol} a fost ștearsă"
 }

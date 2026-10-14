@@ -380,5 +380,15 @@
   "inviteExpired": "Esta invitación ha caducado. Pide un código nuevo a la persona que te invitó.",
   "inviteDeviceLimit": "Este código de invitación ya se está usando en el número máximo de dispositivos.",
   "previewConfidential": "Versión preliminar confidencial",
-  "errPreviewDailyLimit": "Se ha alcanzado el límite de análisis de hoy de esta versión preliminar. Vuelve a intentarlo mañana."
+  "errPreviewDailyLimit": "Se ha alcanzado el límite de análisis de hoy de esta versión preliminar. Vuelve a intentarlo mañana.",
+  "ageHours": "{count, plural, =1{hace 1 hora} other{hace {count} horas}}",
+  "ageDays": "{count, plural, =1{hace 1 día} other{hace {count} días}}",
+  "staleTitle": "¿Actualizar este análisis?",
+  "staleBody": "Se hizo {age}. Los precios, las noticias y los resultados pueden haber cambiado desde entonces.",
+  "staleKeep": "Ver el anterior",
+  "staleRefresh": "Hacer uno nuevo",
+  "seeAll": "Ver todos ({count})",
+  "searchAnalyses": "Busca en tus análisis",
+  "deleteAnalysis": "Eliminar",
+  "analysisDeleted": "Análisis de {symbol} eliminado"
 }

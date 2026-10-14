@@ -380,5 +380,15 @@
   "inviteExpired": "คำเชิญนี้หมดอายุแล้ว ขอรหัสใหม่จากผู้ที่เชิญคุณ",
   "inviteDeviceLimit": "รหัสเชิญนี้ถูกใช้งานบนอุปกรณ์ครบจำนวนสูงสุดแล้ว",
   "previewConfidential": "พรีวิวลับ",
-  "errPreviewDailyLimit": "การวิเคราะห์ของพรีวิวนี้ครบโควตาของวันนี้แล้ว ลองอีกครั้งพรุ่งนี้"
+  "errPreviewDailyLimit": "การวิเคราะห์ของพรีวิวนี้ครบโควตาของวันนี้แล้ว ลองอีกครั้งพรุ่งนี้",
+  "ageHours": "{count, plural, other{{count} ชั่วโมงที่แล้ว}}",
+  "ageDays": "{count, plural, other{{count} วันที่แล้ว}}",
+  "staleTitle": "อัปเดตการวิเคราะห์นี้ไหม",
+  "staleBody": "การวิเคราะห์นี้สร้างเมื่อ {age} ราคา ข่าว และผลประกอบการอาจเปลี่ยนไปแล้วตั้งแต่นั้น",
+  "staleKeep": "ดูฉบับก่อนหน้า",
+  "staleRefresh": "สร้างใหม่",
+  "seeAll": "ดูทั้งหมด ({count})",
+  "searchAnalyses": "ค้นหาการวิเคราะห์ของคุณ",
+  "deleteAnalysis": "ลบ",
+  "analysisDeleted": "ลบการวิเคราะห์ {symbol} แล้ว"
 }

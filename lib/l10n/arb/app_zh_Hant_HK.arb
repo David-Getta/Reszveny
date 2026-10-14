@@ -380,5 +380,15 @@
   "inviteExpired": "此邀請已過期。請向邀請你的人索取新的邀請碼。",
   "inviteDeviceLimit": "此邀請碼已在允許的最多裝置上使用。",
   "previewConfidential": "機密預覽",
-  "errPreviewDailyLimit": "此預覽今日的分析次數已用完。請明天再試。"
+  "errPreviewDailyLimit": "此預覽今日的分析次數已用完。請明天再試。",
+  "ageHours": "{count, plural, =1{1 小時前} other{{count} 小時前}}",
+  "ageDays": "{count, plural, =1{1 日前} other{{count} 日前}}",
+  "staleTitle": "要更新這份分析嗎？",
+  "staleBody": "這份分析於{age}產生。此後價格、新聞及業績可能已有變化。",
+  "staleKeep": "查看之前的分析",
+  "staleRefresh": "產生新分析",
+  "seeAll": "查看全部 ({count})",
+  "searchAnalyses": "搜尋你的分析",
+  "deleteAnalysis": "刪除",
+  "analysisDeleted": "已刪除 {symbol} 分析"
 }

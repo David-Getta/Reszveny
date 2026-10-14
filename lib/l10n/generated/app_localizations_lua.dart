@@ -1369,4 +1369,56 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Mukalu wa makonkonona a lelu mu ditangila edi diajika. Teta kabidi makelela.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mêba $count mapite',
+      one: 'dîba 1 dipite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'matuku $count mapite',
+      one: 'dituku 1 dipite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Kuenza dikonkonona edi dipiadipia?';
+
+  @override
+  String staleBody(String age) {
+    return 'Dikonkonona edi diakenzibua $age. Kubangila ku tshikondo atshi, mishinga, ngumu ne bipeta bidi mua kuikala bishintuluke.';
+  }
+
+  @override
+  String get staleKeep => 'Leja dia kumpala';
+
+  @override
+  String get staleRefresh => 'Enza dipiadipia';
+
+  @override
+  String seeAll(int count) {
+    return 'Mona yonso ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Keba mu makonkonona ebe';
+
+  @override
+  String get deleteAnalysis => 'Jimija';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Dikonkonona dia $symbol diajimijibua';
+  }
 }

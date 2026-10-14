@@ -380,5 +380,15 @@
   "inviteExpired": "Nin weleli in waati tɛmɛna. Mɔgɔ min ye i wele, kode kura ɲini o fɛ.",
   "inviteDeviceLimit": "Nin weleli kode in bɛ ka baara kɛ minɛn hakɛ laban kan kaban.",
   "previewConfidential": "Kɔrɔbɔli gundolen",
-  "errPreviewDailyLimit": "Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini."
+  "errPreviewDailyLimit": "Nin kɔrɔbɔli in ka bi sɛgɛsɛgɛli dan sera. A lajɛ tugun sini.",
+  "ageHours": "{count, plural, =1{lɛrɛ 1 tɛmɛnen} other{lɛrɛ {count} tɛmɛnen}}",
+  "ageDays": "{count, plural, =1{tile 1 tɛmɛnen} other{tile {count} tɛmɛnen}}",
+  "staleTitle": "Sɛgɛsɛgɛli nin kura kɛ wa?",
+  "staleBody": "A dilanna {age}. Sɔngɔw, kibaruyaw ani jaabiw bɛ se ka kɛ ka yɛlɛma kabini o waati.",
+  "staleKeep": "Kɔrɔlen jira",
+  "staleRefresh": "Kura dilan",
+  "seeAll": "A bɛɛ lajɛ ({count})",
+  "searchAnalyses": "I ka sɛgɛsɛgɛliw ɲini",
+  "deleteAnalysis": "Jɔsi",
+  "analysisDeleted": "{symbol} sɛgɛsɛgɛli jɔsira"
 }

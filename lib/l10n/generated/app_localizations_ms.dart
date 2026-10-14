@@ -1370,4 +1370,56 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Had analisis hari ini untuk pratonton ini telah dicapai. Cuba lagi esok.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jam lalu',
+      one: '1 jam lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lalu',
+      one: '1 hari lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Kemas kini analisis ini?';
+
+  @override
+  String staleBody(String age) {
+    return 'Analisis ini dibuat $age. Harga, berita dan keputusan mungkin telah berubah sejak itu.';
+  }
+
+  @override
+  String get staleKeep => 'Tunjukkan yang terdahulu';
+
+  @override
+  String get staleRefresh => 'Buat yang baharu';
+
+  @override
+  String seeAll(int count) {
+    return 'Lihat semua ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Cari analisis anda';
+
+  @override
+  String get deleteAnalysis => 'Padam';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Analisis $symbol dipadam';
+  }
 }

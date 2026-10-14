@@ -380,5 +380,15 @@
   "inviteExpired": "תוקף ההזמנה הזו פג. בקשו קוד חדש ממי שהזמין אתכם.",
   "inviteDeviceLimit": "קוד ההזמנה הזה כבר נמצא בשימוש במספר המרבי של מכשירים.",
   "previewConfidential": "תצוגה מקדימה חסויה",
-  "errPreviewDailyLimit": "מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר."
+  "errPreviewDailyLimit": "מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר.",
+  "ageHours": "{count, plural, one{לפני שעה} two{לפני שעתיים} other{לפני {count} שעות}}",
+  "ageDays": "{count, plural, one{לפני יום} two{לפני יומיים} other{לפני {count} ימים}}",
+  "staleTitle": "לעדכן את הניתוח?",
+  "staleBody": "הניתוח נוצר {age}. ייתכן שהמחירים, החדשות והתוצאות השתנו מאז.",
+  "staleKeep": "הצגת הקודם",
+  "staleRefresh": "יצירת ניתוח חדש",
+  "seeAll": "הצגת הכול ({count})",
+  "searchAnalyses": "חיפוש בניתוחים שלך",
+  "deleteAnalysis": "מחיקה",
+  "analysisDeleted": "הניתוח של {symbol} נמחק"
 }

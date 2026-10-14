@@ -1320,4 +1320,56 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get errPreviewDailyLimit => 'このプレビューの本日の分析上限に達しました。明日もう一度お試しください。';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 時間前',
+      one: '1 時間前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 日前',
+      one: '1 日前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'この分析を更新しますか？';
+
+  @override
+  String staleBody(String age) {
+    return 'この分析は$ageに作成されました。その後、株価やニュース、業績が変わっている可能性があります。';
+  }
+
+  @override
+  String get staleKeep => '以前の分析を表示';
+
+  @override
+  String get staleRefresh => '新しく作成';
+
+  @override
+  String seeAll(int count) {
+    return 'すべて表示 ($count)';
+  }
+
+  @override
+  String get searchAnalyses => '分析を検索';
+
+  @override
+  String get deleteAnalysis => '削除';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol の分析を削除しました';
+  }
 }

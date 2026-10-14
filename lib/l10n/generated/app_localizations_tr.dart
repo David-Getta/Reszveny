@@ -1364,4 +1364,56 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Bu önizlemenin bugünkü analiz sınırına ulaşıldı. Yarın tekrar deneyin.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saat önce',
+      one: '1 saat önce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün önce',
+      one: '1 gün önce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Bu analiz güncellensin mi?';
+
+  @override
+  String staleBody(String age) {
+    return '$age hazırlandı. O zamandan beri fiyatlar, haberler ve sonuçlar değişmiş olabilir.';
+  }
+
+  @override
+  String get staleKeep => 'Öncekini göster';
+
+  @override
+  String get staleRefresh => 'Yenisini oluştur';
+
+  @override
+  String seeAll(int count) {
+    return 'Tümünü gör ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Analizlerinde ara';
+
+  @override
+  String get deleteAnalysis => 'Sil';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol analizi silindi';
+  }
 }

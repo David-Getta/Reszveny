@@ -1367,4 +1367,56 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'এই প্রিভিউয়ের আজকের বিশ্লেষণের সীমা শেষ হয়ে গেছে। আগামীকাল আবার চেষ্টা করুন।';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ঘণ্টা আগে',
+      one: '1 ঘণ্টা আগে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count দিন আগে',
+      one: '1 দিন আগে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'এই বিশ্লেষণ আপডেট করবেন?';
+
+  @override
+  String staleBody(String age) {
+    return 'এটি $age তৈরি হয়েছিল। এর পর থেকে দাম, খবর ও ফলাফল বদলে যেতে পারে।';
+  }
+
+  @override
+  String get staleKeep => 'আগেরটি দেখান';
+
+  @override
+  String get staleRefresh => 'নতুন তৈরি করুন';
+
+  @override
+  String seeAll(int count) {
+    return 'সব দেখুন ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'আপনার বিশ্লেষণ খুঁজুন';
+
+  @override
+  String get deleteAnalysis => 'মুছুন';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return '$symbol বিশ্লেষণ মুছে ফেলা হয়েছে';
+  }
 }

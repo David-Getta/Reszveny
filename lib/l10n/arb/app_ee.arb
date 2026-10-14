@@ -380,5 +380,15 @@
   "inviteExpired": "Kpekpe sia ƒe ɣeyiɣi va yi. Bia code yeye tso ame si kpe wò la gbɔ.",
   "inviteDeviceLimit": "Wozã kpekpe code sia le mɔ̃ siwo ƒe xexlẽme ɖe mɔ wu la dzi xoxo.",
   "previewConfidential": "Ŋgɔkpɔkpɔ ɣaɣla",
-  "errPreviewDailyLimit": "Ŋgɔkpɔkpɔ sia ƒe egbe numekuku ƒe seɖoƒe de. Gagbugbɔ te kpɔ etsɔ."
+  "errPreviewDailyLimit": "Ŋgɔkpɔkpɔ sia ƒe egbe numekuku ƒe seɖoƒe de. Gagbugbɔ te kpɔ etsɔ.",
+  "ageHours": "{count, plural, =1{gaƒoƒo 1 si va yi} other{gaƒoƒo {count} si va yi}}",
+  "ageDays": "{count, plural, =1{ŋkeke 1 si va yi} other{ŋkeke {count} si va yi}}",
+  "staleTitle": "Wɔ numekuku sia yeye?",
+  "staleBody": "Wowɔe {age}. Ɖewohĩ asixɔxɔwo, nyadzɔdzɔwo kple emetsonuwo trɔ tso ɣemaɣi.",
+  "staleKeep": "Fia xoxoa",
+  "staleRefresh": "Wɔ yeye",
+  "seeAll": "Kpɔ wo katã ({count})",
+  "searchAnalyses": "Di le wò numekukuwo me",
+  "deleteAnalysis": "Tutui",
+  "analysisDeleted": "Wotutu {symbol} ƒe numekuku"
 }

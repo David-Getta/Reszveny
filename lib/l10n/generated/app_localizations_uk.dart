@@ -1403,4 +1403,60 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Денний ліміт аналізів цього попереднього перегляду вичерпано. Спробуйте ще раз завтра.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count години тому',
+      many: '$count годин тому',
+      few: '$count години тому',
+      one: '$count годину тому',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дня тому',
+      many: '$count днів тому',
+      few: '$count дні тому',
+      one: '$count день тому',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Оновити цей аналіз?';
+
+  @override
+  String staleBody(String age) {
+    return 'Його створено $age. Відтоді ціни, новини та результати могли змінитися.';
+  }
+
+  @override
+  String get staleKeep => 'Показати попередній';
+
+  @override
+  String get staleRefresh => 'Створити новий';
+
+  @override
+  String seeAll(int count) {
+    return 'Переглянути всі ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Шукати у своїх аналізах';
+
+  @override
+  String get deleteAnalysis => 'Видалити';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Аналіз $symbol видалено';
+  }
 }

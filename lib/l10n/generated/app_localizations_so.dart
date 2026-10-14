@@ -1370,4 +1370,56 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Xadka falanqaynta maanta ee muuqaalkan hore waa la gaadhay. Isku day mar kale berri.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saacadood ka hor',
+      one: '1 saac ka hor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood ka hor',
+      one: '1 maalin ka hor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ma la cusboonaysiiyaa falanqayntan?';
+
+  @override
+  String staleBody(String age) {
+    return 'Waxaa la sameeyay $age. Qiimayaasha, wararka iyo natiijooyinka ayaa laga yaabaa inay isbeddeleen tan iyo markaas.';
+  }
+
+  @override
+  String get staleKeep => 'Tus tii hore';
+
+  @override
+  String get staleRefresh => 'Samee mid cusub';
+
+  @override
+  String seeAll(int count) {
+    return 'Eeg dhammaan ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Ka raadi falanqaynahaaga';
+
+  @override
+  String get deleteAnalysis => 'Tirtir';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Falanqaynta $symbol waa la tirtiray';
+  }
 }

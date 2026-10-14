@@ -1363,4 +1363,56 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Limu saytu yu tey yi ci wone bii jeex na. Jéemaatal ëllëg.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'am na $count waxtu',
+      one: 'am na 1 waxtu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'am na $count fan',
+      one: 'am na 1 fan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Ndax ñu yeesal saytu bii?';
+
+  @override
+  String staleBody(String age) {
+    return 'Defar nañu ko $age. Njëg yi, xibaar yi ak njeexital yi man nañoo soppiku ci diggante bi.';
+  }
+
+  @override
+  String get staleKeep => 'Wone bi jiitu';
+
+  @override
+  String get staleRefresh => 'Defar bu bees';
+
+  @override
+  String seeAll(int count) {
+    return 'Gis yépp ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Seet ci say saytu';
+
+  @override
+  String get deleteAnalysis => 'Far';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Far nañu saytu $symbol';
+  }
 }

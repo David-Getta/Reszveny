@@ -1362,4 +1362,56 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get errPreviewDailyLimit =>
       'Keerol ƴeewndooji hannde ngol e ƴeewndo ngo hewtii. Fuɗɗito janngo.';
+
+  @override
+  String ageHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'waktuuji $count ɓennii',
+      one: 'waktu 1 ɓennii',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String ageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ñalɗi $count ɓennii',
+      one: 'ñalnde 1 ɓennii',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get staleTitle => 'Hesɗitin ƴeewndo ndee?';
+
+  @override
+  String staleBody(String age) {
+    return 'Waɗaama $age. Coggu, kabaruuji e njaltudi ina waawi waylaade gila ndeen.';
+  }
+
+  @override
+  String get staleKeep => 'Hollu ndo adii';
+
+  @override
+  String get staleRefresh => 'Waɗ ndo hesɗo';
+
+  @override
+  String seeAll(int count) {
+    return 'Yiy fof ($count)';
+  }
+
+  @override
+  String get searchAnalyses => 'Yiylo e nder ƴeewndooji maa';
+
+  @override
+  String get deleteAnalysis => 'Momtu';
+
+  @override
+  String analysisDeleted(String symbol) {
+    return 'Ƴeewndo $symbol momtaama';
+  }
 }
