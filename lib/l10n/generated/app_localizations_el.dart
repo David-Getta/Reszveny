@@ -1648,4 +1648,23 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Δεν υπάρχουν χρονολογημένα γεγονότα τις επόμενες 90 ημέρες. Προσθέστε αγαπημένα ή μετοχές στο χαρτοφυλάκιο για να βλέπετε εδώ τις ημερομηνίες αποτελεσμάτων τους.';
+
+  @override
+  String get compareTitle => 'Σύγκριση';
+
+  @override
+  String get compareAdd => 'Προσθήκη μετοχής';
+
+  @override
+  String get compareRemove => 'Κατάργηση';
+
+  @override
+  String get compareTickerHint => 'Ticker, π.χ. MSFT';
+
+  @override
+  String get compareHint =>
+      'Βασικά μεγέθη δίπλα-δίπλα· η καλύτερη τιμή σε κάθε γραμμή επισημαίνεται. Τα ποσά είναι στο νόμισμα της κάθε μετοχής.';
+
+  @override
+  String get compareNoAnalysis => 'Δεν υπάρχει ακόμη ανάλυση';
 }

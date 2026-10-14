@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Isilinganiso se-EPS: {value}",
   "eventFromAnalysis": "Kusuka ekuhlaziyweni kwakho",
   "eventsHint": "Izinsuku zemiphumela yamasheya akho ayizintandokazi nawephothifoliyo ezinsukwini ezingu-90 ezizayo, kanye nemicimbi enezinsuku ephawulwe uhlaziyo lwakho.",
-  "eventsEmpty": "Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha."
+  "eventsEmpty": "Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha.",
+  "compareTitle": "Qhathanisa",
+  "compareAdd": "Engeza isitoko",
+  "compareRemove": "Susa",
+  "compareTickerHint": "Ticker, isibonelo MSFT",
+  "compareHint": "Izibalo ezibalulekile eceleni kwezinye; inani elihle kakhulu emgqeni ngamunye ligqanyisiwe. Amanani emali asemalini yesitoko ngasinye.",
+  "compareNoAnalysis": "Akukabi khona ukuhlaziya"
 }

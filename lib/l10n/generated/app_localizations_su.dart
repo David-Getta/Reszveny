@@ -1642,4 +1642,23 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Teu aya acara anu aya tanggalna dina 90 poé ka hareup. Tambahkeun paporit atanapi saham portofolio pikeun ningali tanggal laporanana di dieu.';
+
+  @override
+  String get compareTitle => 'Bandingkeun';
+
+  @override
+  String get compareAdd => 'Tambahkeun saham';
+
+  @override
+  String get compareRemove => 'Piceun';
+
+  @override
+  String get compareTickerHint => 'Kode saham, conto MSFT';
+
+  @override
+  String get compareHint =>
+      'Angka utama sajajar; nilai pangalusna dina unggal baris disorot. Jumlahna dina mata uang unggal saham.';
+
+  @override
+  String get compareNoAnalysis => 'Can aya analisis';
 }

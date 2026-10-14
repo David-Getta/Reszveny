@@ -1651,4 +1651,23 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Hamuq 90 p\'unchaykunapi mana p\'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p\'unchayninkuta qhawanaykipaq.';
+
+  @override
+  String get compareTitle => 'Tupachiy';
+
+  @override
+  String get compareAdd => 'Accionta yapay';
+
+  @override
+  String get compareRemove => 'Qichuy';
+
+  @override
+  String get compareTickerHint => 'Ticker, kayhina MSFT';
+
+  @override
+  String get compareHint =>
+      'Hatun yupaykuna kuskalla; sapa siq\'ipi aswan allin chaniqa sut\'ichasqa. Qullqi yupaykunaqa sapa accionpa kikin qullqinpim.';
+
+  @override
+  String get compareNoAnalysis => 'Manaraq t\'aqwiy kanchu';
 }

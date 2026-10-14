@@ -1652,4 +1652,23 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ga go na ditiragalo tše di nago le matšatši mo matšatšing a 90 a a tlago. Oketša tše di ratwago goba dišere tša photefolio go bona matšatši a dipoelo tša tšona mo.';
+
+  @override
+  String get compareTitle => 'Bapetša';
+
+  @override
+  String get compareAdd => 'Oketša šere';
+
+  @override
+  String get compareRemove => 'Tloša';
+
+  @override
+  String get compareTickerHint => 'Ticker, mohlala MSFT';
+
+  @override
+  String get compareHint =>
+      'Dipalo tše bohlokwa ka thoko ga tše dingwe; boleng bjo bokaone mothalading o mongwe le o mongwe bo gateletšwe. Ditšhelete di ka tšhelete ya šere ye nngwe le ye nngwe.';
+
+  @override
+  String get compareNoAnalysis => 'Ga go na tshekatsheko ga bjale';
 }

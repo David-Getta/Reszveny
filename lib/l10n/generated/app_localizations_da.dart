@@ -1638,4 +1638,23 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her.';
+
+  @override
+  String get compareTitle => 'Sammenlign';
+
+  @override
+  String get compareAdd => 'Tilføj en aktie';
+
+  @override
+  String get compareRemove => 'Fjern';
+
+  @override
+  String get compareTickerHint => 'Ticker, f.eks. MSFT';
+
+  @override
+  String get compareHint =>
+      'Nøgletal side om side; den bedste værdi i hver række er fremhævet. Beløb er i hver akties egen valuta.';
+
+  @override
+  String get compareNoAnalysis => 'Ingen analyse endnu';
 }

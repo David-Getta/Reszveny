@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS oñehaʼarõva: {value}",
   "eventFromAnalysis": "Nde jehesaʼỹijogui",
   "eventsHint": "Umi ojeguerohoryvéva ha nde cartera acción resultado ára 90 ára oúvape, ha umi mbaʼe ára reheguáva nde jehesaʼỹijokuéra ohechaukáva.",
-  "eventsEmpty": "Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára."
+  "eventsEmpty": "Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára.",
+  "compareTitle": "Ñembojoja",
+  "compareAdd": "Embojuaju peteĩ acción",
+  "compareRemove": "Mboguete",
+  "compareTickerHint": "Ticker, techapyrã MSFT",
+  "compareHint": "Papapy tenondeguáva oñondive; peteĩteĩ tysỹime ojehechauka pe valor iporãvéva. Pirapire papapy oĩ peteĩteĩ acción pirapire tee rupive.",
+  "compareNoAnalysis": "Ndaipóri gueteri jehesaʼỹijo"
 }

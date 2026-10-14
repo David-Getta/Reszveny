@@ -1648,4 +1648,23 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha.';
+
+  @override
+  String get compareTitle => 'Thelekisa';
+
+  @override
+  String get compareAdd => 'Yongeza isitokhwe';
+
+  @override
+  String get compareRemove => 'Susa';
+
+  @override
+  String get compareTickerHint => 'Ticker, umzekelo MSFT';
+
+  @override
+  String get compareHint =>
+      'Amanani aphambili ecaleni komnye; elona xabiso lilungileyo kumqolo ngamnye liqaqanjisiwe. Izixa zikwimali yesitokhwe ngasinye.';
+
+  @override
+  String get compareNoAnalysis => 'Akukabikho uhlalutyo';
 }

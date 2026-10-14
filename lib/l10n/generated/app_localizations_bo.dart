@@ -1632,4 +1632,23 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ཉིན་ 90 ནང་ཚེས་གྲངས་ཅན་གྱི་བྱ་བ་མེད། གྲུབ་འབྲས་ཚེས་གྲངས་འདིར་མཐོང་བར་དགའ་མོས་སམ་མ་འཇོག་ཚོགས་སྡེབ་ཏུ་ཧུར་ཁག་སྣོན།';
+
+  @override
+  String get compareTitle => 'བསྡུར་ཞིབ';
+
+  @override
+  String get compareAdd => 'ཧུར་ཁག་གཅིག་སྣོན';
+
+  @override
+  String get compareRemove => 'སུབ';
+
+  @override
+  String get compareTickerHint => 'ཧུར་ཁག་ཨང་རྟགས། དཔེར་ན། MSFT';
+
+  @override
+  String get compareHint =>
+      'གནད་ཆེའི་གྲངས་ཀ་གཤིབ་སྟེ་བཀོད་ཡོད། ཕྲེང་རེ་རེའི་ནང་གི་རིན་ཐང་ལེགས་ཤོས་དེ་གསལ་སྟོན་བྱས་ཡོད། དངུལ་གྲངས་ནི་ཧུར་ཁག་རེ་རེའི་རང་གི་དངུལ་ལོར་ཐོག་ཡིན།';
+
+  @override
+  String get compareNoAnalysis => 'ད་དུང་དབྱེ་ཞིབ་མེད';
 }

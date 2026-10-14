@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Stima EPS: {value}",
   "eventFromAnalysis": "Dalla tua analisi",
   "eventsHint": "Le date dei risultati dei tuoi preferiti e dei titoli in portafoglio per i prossimi 90 giorni, e gli eventi con data segnalati dalle tue analisi.",
-  "eventsEmpty": "Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati."
+  "eventsEmpty": "Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati.",
+  "compareTitle": "Confronta",
+  "compareAdd": "Aggiungi un titolo",
+  "compareRemove": "Rimuovi",
+  "compareTickerHint": "Ticker, es. MSFT",
+  "compareHint": "Dati chiave a confronto; il valore migliore di ogni riga è evidenziato. Gli importi sono nella valuta di ciascun titolo.",
+  "compareNoAnalysis": "Ancora nessuna analisi"
 }

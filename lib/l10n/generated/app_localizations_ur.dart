@@ -1640,4 +1640,23 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'اگلے 90 دنوں میں کوئی تاریخ والا واقعہ نہیں۔ یہاں ان کے نتائج کی تاریخیں دیکھنے کے لیے پسندیدہ یا پورٹ فولیو اسٹاکس شامل کریں۔';
+
+  @override
+  String get compareTitle => 'موازنہ';
+
+  @override
+  String get compareAdd => 'اسٹاک شامل کریں';
+
+  @override
+  String get compareRemove => 'ہٹائیں';
+
+  @override
+  String get compareTickerHint => 'ٹکر، مثلاً MSFT';
+
+  @override
+  String get compareHint =>
+      'اہم اعداد و شمار ساتھ ساتھ؛ ہر قطار میں بہترین قدر نمایاں ہے۔ رقوم ہر اسٹاک کی اپنی کرنسی میں ہیں۔';
+
+  @override
+  String get compareNoAnalysis => 'ابھی کوئی تجزیہ نہیں';
 }

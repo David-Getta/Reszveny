@@ -1647,4 +1647,23 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha.';
+
+  @override
+  String get compareTitle => 'Qhathanisa';
+
+  @override
+  String get compareAdd => 'Engeza isitoko';
+
+  @override
+  String get compareRemove => 'Susa';
+
+  @override
+  String get compareTickerHint => 'Ticker, isibonelo MSFT';
+
+  @override
+  String get compareHint =>
+      'Izibalo ezibalulekile eceleni kwezinye; inani elihle kakhulu emgqeni ngamunye ligqanyisiwe. Amanani emali asemalini yesitoko ngasinye.';
+
+  @override
+  String get compareNoAnalysis => 'Akukabi khona ukuhlaziya';
 }

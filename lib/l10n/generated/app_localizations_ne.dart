@@ -1642,4 +1642,23 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'आगामी 90 दिनमा मिति भएको कुनै घटना छैन। नतिजा मितिहरू यहाँ हेर्न मनपर्ने वा पोर्टफोलियो सेयरहरू थप्नुहोस्।';
+
+  @override
+  String get compareTitle => 'तुलना';
+
+  @override
+  String get compareAdd => 'सेयर थप्नुहोस्';
+
+  @override
+  String get compareRemove => 'हटाउनुहोस्';
+
+  @override
+  String get compareTickerHint => 'टिकर, जस्तै MSFT';
+
+  @override
+  String get compareHint =>
+      'मुख्य तथ्याङ्कहरू छेउछेउमा; प्रत्येक पङ्क्तिको उत्कृष्ट मान हाइलाइट गरिएको छ। रकमहरू प्रत्येक सेयरको आफ्नै मुद्रामा छन्।';
+
+  @override
+  String get compareNoAnalysis => 'अहिलेसम्म विश्लेषण छैन';
 }

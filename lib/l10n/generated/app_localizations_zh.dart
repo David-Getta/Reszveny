@@ -1574,6 +1574,24 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get eventsEmpty => '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期。';
+
+  @override
+  String get compareTitle => '对比';
+
+  @override
+  String get compareAdd => '添加股票';
+
+  @override
+  String get compareRemove => '移除';
+
+  @override
+  String get compareTickerHint => '股票代码，例如 MSFT';
+
+  @override
+  String get compareHint => '关键指标并排显示；每行最佳数值已突出显示。金额以各股票自身的货币计价。';
+
+  @override
+  String get compareNoAnalysis => '暂无分析';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3144,4 +3162,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get eventsEmpty => '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期。';
+
+  @override
+  String get compareTitle => '比較';
+
+  @override
+  String get compareAdd => '加入股票';
+
+  @override
+  String get compareRemove => '移除';
+
+  @override
+  String get compareTickerHint => '股票代號，例如 MSFT';
+
+  @override
+  String get compareHint => '主要數據並排顯示；每行最佳數值會突出顯示。金額以各股票本身的貨幣計算。';
+
+  @override
+  String get compareNoAnalysis => '暫無分析';
 }

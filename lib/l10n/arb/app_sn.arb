@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Fungidziro yeEPS: {value}",
   "eventFromAnalysis": "Kubva muongororo yako",
   "eventsHint": "Mazuva emhedzisiro yemasheya aunofarira neepotiforiyo yako mumazuva 90 anotevera, uye zviitiko zvine mazuva zvakaratidzwa neongororo dzako.",
-  "eventsEmpty": "Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano."
+  "eventsEmpty": "Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano.",
+  "compareTitle": "Enzanisa",
+  "compareAdd": "Wedzera sheya",
+  "compareRemove": "Bvisa",
+  "compareTickerHint": "Ticker, semuenzaniso MSFT",
+  "compareHint": "Nhamba huru dzakatarisana; kukosha kwakanakisa mumutsara wega wega kwaratidzwa. Mari dziri mumari yesheya imwe neimwe.",
+  "compareNoAnalysis": "Hapana ongororo parizvino"
 }

@@ -1647,4 +1647,23 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'അടുത്ത 90 ദിവസത്തിനുള്ളിൽ തീയതിയുള്ള സംഭവങ്ങളൊന്നുമില്ല. ഫല തീയതികൾ ഇവിടെ കാണാൻ പ്രിയപ്പെട്ടവയോ പോർട്ട്ഫോളിയോ ഓഹരികളോ ചേർക്കുക.';
+
+  @override
+  String get compareTitle => 'താരതമ്യം';
+
+  @override
+  String get compareAdd => 'ഓഹരി ചേർക്കുക';
+
+  @override
+  String get compareRemove => 'നീക്കം ചെയ്യുക';
+
+  @override
+  String get compareTickerHint => 'ടിക്കർ, ഉദാ. MSFT';
+
+  @override
+  String get compareHint =>
+      'പ്രധാന കണക്കുകൾ അടുത്തടുത്ത്; ഓരോ വരിയിലെയും മികച്ച മൂല്യം ഹൈലൈറ്റ് ചെയ്തിരിക്കുന്നു. തുകകൾ ഓരോ ഓഹരിയുടെയും സ്വന്തം കറൻസിയിലാണ്.';
+
+  @override
+  String get compareNoAnalysis => 'ഇതുവരെ വിശകലനം ഇല്ല';
 }

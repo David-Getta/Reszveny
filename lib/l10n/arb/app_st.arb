@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Khakanyo ya EPS: {value}",
   "eventFromAnalysis": "Ho tswa tlhahlobong ya hao",
   "eventsHint": "Matsatsi a diphetho tsa disheare tseo o di ratang le tsa potefolio ya hao bakeng sa matsatsi a 90 a tlang, le diketsahalo tse nang le matsatsi tse bontshitsweng ke ditlhahlobo tsa hao.",
-  "eventsEmpty": "Ha ho diketsahalo tse nang le matsatsi matsatsing a 90 a tlang. Kenya tseo o di ratang kapa disheare tsa potefolio ho bona matsatsi a diphetho tsa tsona mona."
+  "eventsEmpty": "Ha ho diketsahalo tse nang le matsatsi matsatsing a 90 a tlang. Kenya tseo o di ratang kapa disheare tsa potefolio ho bona matsatsi a diphetho tsa tsona mona.",
+  "compareTitle": "Bapisa",
+  "compareAdd": "Kenya seabo",
+  "compareRemove": "Tlosa",
+  "compareTickerHint": "Ticker, mohlala MSFT",
+  "compareHint": "Dipalo tsa bohlokwa di bapile; boleng bo botle ka ho fetisisa moleng ka mong bo totobaditswe. Ditjhelete di ka mofuta wa tjhelete wa seabo ka seng.",
+  "compareNoAnalysis": "Ha ho tlhahlobo hajoale"
 }

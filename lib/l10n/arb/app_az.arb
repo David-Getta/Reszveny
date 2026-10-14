@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Gözlənilən EPS: {value}",
   "eventFromAnalysis": "Təhlilinizdən",
   "eventsHint": "Seçilmişlərinizin və portfelinizdəki səhmlərin növbəti 90 gün üçün hesabat tarixləri və təhlillərinizin qeyd etdiyi tarixli hadisələr.",
-  "eventsEmpty": "Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin."
+  "eventsEmpty": "Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin.",
+  "compareTitle": "Müqayisə",
+  "compareAdd": "Səhm əlavə et",
+  "compareRemove": "Sil",
+  "compareTickerHint": "Tiker, məs. MSFT",
+  "compareHint": "Əsas göstəricilər yan-yana; hər sətirdə ən yaxşı dəyər vurğulanır. Məbləğlər hər səhmin öz valyutasındadır.",
+  "compareNoAnalysis": "Hələ təhlil yoxdur"
 }

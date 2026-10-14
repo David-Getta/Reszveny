@@ -447,5 +447,11 @@
   "eventEpsEstimate": "LPA estimado: {value}",
   "eventFromAnalysis": "Da sua análise",
   "eventsHint": "Datas de resultados dos seus favoritos e das ações da carteira nos próximos 90 dias, além dos eventos com data apontados pelas suas análises.",
-  "eventsEmpty": "Nenhum evento com data nos próximos 90 dias. Adicione favoritos ou ações à carteira para ver aqui as datas dos resultados."
+  "eventsEmpty": "Nenhum evento com data nos próximos 90 dias. Adicione favoritos ou ações à carteira para ver aqui as datas dos resultados.",
+  "compareTitle": "Comparar",
+  "compareAdd": "Adicionar ação",
+  "compareRemove": "Remover",
+  "compareTickerHint": "Ticker, ex.: MSFT",
+  "compareHint": "Principais indicadores lado a lado; o melhor valor de cada linha fica destacado. Os valores estão na moeda de cada ação.",
+  "compareNoAnalysis": "Ainda sem análise"
 }

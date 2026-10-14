@@ -1677,4 +1677,23 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nākamajās 90 dienās nav datētu notikumu. Pievienojiet akcijas izlasei vai portfelim, lai šeit redzētu to rezultātu datumus.';
+
+  @override
+  String get compareTitle => 'Salīdzināt';
+
+  @override
+  String get compareAdd => 'Pievienot akciju';
+
+  @override
+  String get compareRemove => 'Noņemt';
+
+  @override
+  String get compareTickerHint => 'Simbols, piem., MSFT';
+
+  @override
+  String get compareHint =>
+      'Galvenie rādītāji blakus; katras rindas labākā vērtība ir izcelta. Summas norādītas katras akcijas valūtā.';
+
+  @override
+  String get compareNoAnalysis => 'Analīzes vēl nav';
 }

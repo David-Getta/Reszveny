@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS-ennuste: {value}",
   "eventFromAnalysis": "Omasta analyysistasi",
   "eventsHint": "Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta sekä analyysiesi nostamat päivätyt tapahtumat.",
-  "eventsEmpty": "Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä."
+  "eventsEmpty": "Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä.",
+  "compareTitle": "Vertailu",
+  "compareAdd": "Lisää osake",
+  "compareRemove": "Poista",
+  "compareTickerHint": "Osaketunnus, esim. MSFT",
+  "compareHint": "Tunnusluvut rinnakkain; kunkin rivin paras arvo on korostettu. Summat ovat kunkin osakkeen omassa valuutassa.",
+  "compareNoAnalysis": "Ei vielä analyysia"
 }

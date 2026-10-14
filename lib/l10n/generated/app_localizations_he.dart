@@ -1639,4 +1639,23 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'אין אירועים עם תאריך ב-90 הימים הקרובים. הוסיפו מועדפים או מניות לתיק ההשקעות כדי לראות כאן את מועדי הדוחות שלהן.';
+
+  @override
+  String get compareTitle => 'השוואה';
+
+  @override
+  String get compareAdd => 'הוספת מניה';
+
+  @override
+  String get compareRemove => 'הסרה';
+
+  @override
+  String get compareTickerHint => 'סימול, למשל MSFT';
+
+  @override
+  String get compareHint =>
+      'נתונים מרכזיים זה לצד זה; הערך הטוב ביותר בכל שורה מודגש. הסכומים מוצגים במטבע של כל מניה.';
+
+  @override
+  String get compareNoAnalysis => 'אין עדיין ניתוח';
 }

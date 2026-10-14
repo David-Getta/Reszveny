@@ -1690,4 +1690,23 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'У найближчі 90 днів немає подій з датами. Додайте обрані акції або акції в портфель, щоб бачити тут дати їхніх звітів.';
+
+  @override
+  String get compareTitle => 'Порівняння';
+
+  @override
+  String get compareAdd => 'Додати акцію';
+
+  @override
+  String get compareRemove => 'Видалити';
+
+  @override
+  String get compareTickerHint => 'Тікер, напр. MSFT';
+
+  @override
+  String get compareHint =>
+      'Ключові показники поруч; найкраще значення в кожному рядку виділено. Суми вказано у валюті кожної акції.';
+
+  @override
+  String get compareNoAnalysis => 'Аналізу ще немає';
 }

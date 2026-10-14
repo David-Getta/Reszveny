@@ -1637,4 +1637,23 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ਅਗਲੇ 90 ਦਿਨਾਂ ਵਿੱਚ ਕੋਈ ਤਾਰੀਖ ਵਾਲੀ ਘਟਨਾ ਨਹੀਂ। ਨਤੀਜਿਆਂ ਦੀਆਂ ਤਾਰੀਖਾਂ ਇੱਥੇ ਦੇਖਣ ਲਈ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫ਼ੋਲੀਓ ਸ਼ੇਅਰ ਜੋੜੋ।';
+
+  @override
+  String get compareTitle => 'ਤੁਲਨਾ';
+
+  @override
+  String get compareAdd => 'ਸ਼ੇਅਰ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get compareRemove => 'ਹਟਾਓ';
+
+  @override
+  String get compareTickerHint => 'ਟਿਕਰ, ਜਿਵੇਂ MSFT';
+
+  @override
+  String get compareHint =>
+      'ਮੁੱਖ ਅੰਕੜੇ ਨਾਲ-ਨਾਲ; ਹਰ ਕਤਾਰ ਵਿੱਚ ਸਭ ਤੋਂ ਵਧੀਆ ਮੁੱਲ ਉਜਾਗਰ ਕੀਤਾ ਗਿਆ ਹੈ। ਰਕਮਾਂ ਹਰ ਸ਼ੇਅਰ ਦੀ ਆਪਣੀ ਮੁਦਰਾ ਵਿੱਚ ਹਨ।';
+
+  @override
+  String get compareNoAnalysis => 'ਹਾਲੇ ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ';
 }

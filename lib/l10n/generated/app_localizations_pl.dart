@@ -1694,4 +1694,23 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników.';
+
+  @override
+  String get compareTitle => 'Porównaj';
+
+  @override
+  String get compareAdd => 'Dodaj akcję';
+
+  @override
+  String get compareRemove => 'Usuń';
+
+  @override
+  String get compareTickerHint => 'Symbol, np. MSFT';
+
+  @override
+  String get compareHint =>
+      'Kluczowe wskaźniki obok siebie; najlepsza wartość w każdym wierszu jest wyróżniona. Kwoty podano w walucie danej akcji.';
+
+  @override
+  String get compareNoAnalysis => 'Brak analizy';
 }

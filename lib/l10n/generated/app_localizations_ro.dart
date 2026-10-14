@@ -1671,4 +1671,23 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor.';
+
+  @override
+  String get compareTitle => 'Comparare';
+
+  @override
+  String get compareAdd => 'Adaugă o acțiune';
+
+  @override
+  String get compareRemove => 'Elimină';
+
+  @override
+  String get compareTickerHint => 'Simbol, ex. MSFT';
+
+  @override
+  String get compareHint =>
+      'Indicatorii cheie unul lângă altul; cea mai bună valoare din fiecare rând este evidențiată. Sumele sunt în moneda proprie a fiecărei acțiuni.';
+
+  @override
+  String get compareNoAnalysis => 'Nicio analiză încă';
 }

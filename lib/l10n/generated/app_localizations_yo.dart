@@ -1640,4 +1640,23 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí.';
+
+  @override
+  String get compareTitle => 'Ìfiwéra';
+
+  @override
+  String get compareAdd => 'Fi ìpín kún';
+
+  @override
+  String get compareRemove => 'Yọ kúrò';
+
+  @override
+  String get compareTickerHint => 'Àmì ìpín, àpẹẹrẹ MSFT';
+
+  @override
+  String get compareHint =>
+      'Àwọn ìṣirò pàtàkì lẹ́gbẹ̀ẹ́ ara wọn; iye tó dára jùlọ ní ìlà kọ̀ọ̀kan ni a tẹnumọ́. Àwọn iye owó wà ní owó ìpín kọ̀ọ̀kan.';
+
+  @override
+  String get compareNoAnalysis => 'Kò sí ìtúpalẹ̀ síbẹ̀';
 }

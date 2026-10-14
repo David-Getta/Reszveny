@@ -1637,4 +1637,23 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Киләсе 90 көндә даталы вакыйгалар юк. Нәтиҗә көннәрен монда күрү өчен сайланмалар яки портфель акцияләре өстәгез.';
+
+  @override
+  String get compareTitle => 'Чагыштыру';
+
+  @override
+  String get compareAdd => 'Акция өстәү';
+
+  @override
+  String get compareRemove => 'Бетерү';
+
+  @override
+  String get compareTickerHint => 'Тикер, мәсәлән MSFT';
+
+  @override
+  String get compareHint =>
+      'Төп күрсәткечләр янәшә; һәр юлда иң яхшы кыйммәт аерып күрсәтелә. Суммалар һәр акциянең үз валютасында.';
+
+  @override
+  String get compareNoAnalysis => 'Әлегә анализ юк';
 }

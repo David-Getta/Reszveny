@@ -1646,4 +1646,23 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát.';
+
+  @override
+  String get compareTitle => 'Összehasonlítás';
+
+  @override
+  String get compareAdd => 'Részvény hozzáadása';
+
+  @override
+  String get compareRemove => 'Eltávolítás';
+
+  @override
+  String get compareTickerHint => 'Ticker, pl. MSFT';
+
+  @override
+  String get compareHint =>
+      'A fő számok egymás mellett; soronként a legjobb érték kiemelve. Az összegek a részvények saját devizájában.';
+
+  @override
+  String get compareNoAnalysis => 'Még nincs elemzés';
 }

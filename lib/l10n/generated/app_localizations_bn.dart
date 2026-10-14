@@ -1642,4 +1642,23 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'আগামী 90 দিনে কোনো তারিখযুক্ত ঘটনা নেই। এখানে ফলাফলের তারিখ দেখতে পছন্দের বা পোর্টফোলিওতে শেয়ার যোগ করুন।';
+
+  @override
+  String get compareTitle => 'তুলনা';
+
+  @override
+  String get compareAdd => 'একটি স্টক যোগ করুন';
+
+  @override
+  String get compareRemove => 'সরান';
+
+  @override
+  String get compareTickerHint => 'টিকার, যেমন MSFT';
+
+  @override
+  String get compareHint =>
+      'মূল সংখ্যাগুলো পাশাপাশি; প্রতিটি সারির সেরা মান হাইলাইট করা হয়েছে। অঙ্কগুলো প্রতিটি স্টকের নিজস্ব মুদ্রায়।';
+
+  @override
+  String get compareNoAnalysis => 'এখনও কোনো বিশ্লেষণ নেই';
 }

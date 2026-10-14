@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Suyakusqa EPS: {value}",
   "eventFromAnalysis": "T'aqwiyniykimanta",
   "eventsHint": "Munasqaykikunap, portafolioykip acciónninkunap willakuy p'unchayninkuna hamuq 90 p'unchaykunapi, t'aqwiyniykikuna qhawachisqan p'unchayniyuq ruwaykunapas.",
-  "eventsEmpty": "Hamuq 90 p'unchaykunapi mana p'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p'unchayninkuta qhawanaykipaq."
+  "eventsEmpty": "Hamuq 90 p'unchaykunapi mana p'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p'unchayninkuta qhawanaykipaq.",
+  "compareTitle": "Tupachiy",
+  "compareAdd": "Accionta yapay",
+  "compareRemove": "Qichuy",
+  "compareTickerHint": "Ticker, kayhina MSFT",
+  "compareHint": "Hatun yupaykuna kuskalla; sapa siq'ipi aswan allin chaniqa sut'ichasqa. Qullqi yupaykunaqa sapa accionpa kikin qullqinpim.",
+  "compareNoAnalysis": "Manaraq t'aqwiy kanchu"
 }

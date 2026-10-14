@@ -115,6 +115,13 @@ is bele kell írni (lásd a jogi dokumentumot).
   felhasználónként naponta legfeljebb 30 készül, és a fiók törlésekor törlődik.
 - Saját domainnel (pl. `whatstock.app`) a linkek is azt használják: a `PUBLIC_URL`-t kell átírni.
 
+## Próbaidő-visszaélés
+
+Egy IP-címről naponta legfeljebb 10 új fiók kap próbaidőt (a többi próbaidő nélkül indul, de
+vásárolni tud). Állítható: `TRIAL_PER_IP_DAY` (0 = nincs korlát). Túl alacsonyra ne állítsd: a
+mobilszolgáltatók sok felhasználót egy közös címen engednek ki. A címet csak hash-elve, két napig
+tároljuk.
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

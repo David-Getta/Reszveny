@@ -1593,4 +1593,23 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       '향후 90일간 날짜가 정해진 이벤트가 없습니다. 즐겨찾기나 포트폴리오에 종목을 추가하면 여기에서 실적 발표일을 확인할 수 있습니다.';
+
+  @override
+  String get compareTitle => '비교';
+
+  @override
+  String get compareAdd => '종목 추가';
+
+  @override
+  String get compareRemove => '삭제';
+
+  @override
+  String get compareTickerHint => '티커(예: MSFT)';
+
+  @override
+  String get compareHint =>
+      '주요 지표를 나란히 표시합니다. 각 행에서 가장 좋은 값이 강조 표시됩니다. 금액은 각 종목의 통화로 표시됩니다.';
+
+  @override
+  String get compareNoAnalysis => '아직 분석 없음';
 }

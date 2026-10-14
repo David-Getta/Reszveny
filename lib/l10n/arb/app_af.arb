@@ -447,5 +447,11 @@
   "eventEpsEstimate": "WPA-skatting: {value}",
   "eventFromAnalysis": "Uit jou ontleding",
   "eventsHint": "Resultaatdatums van jou gunstelinge en portefeulje-aandele vir die volgende 90 dae, en die gedateerde gebeure wat jou ontledings uitgelig het.",
-  "eventsEmpty": "Geen gedateerde gebeure in die volgende 90 dae nie. Voeg gunstelinge of portefeulje-aandele by om hul resultaatdatums hier te sien."
+  "eventsEmpty": "Geen gedateerde gebeure in die volgende 90 dae nie. Voeg gunstelinge of portefeulje-aandele by om hul resultaatdatums hier te sien.",
+  "compareTitle": "Vergelyk",
+  "compareAdd": "Voeg 'n aandeel by",
+  "compareRemove": "Verwyder",
+  "compareTickerHint": "Aandeelkode, bv. MSFT",
+  "compareHint": "Kernsyfers langs mekaar; die beste waarde in elke ry is uitgelig. Bedrae is in elke aandeel se eie geldeenheid.",
+  "compareNoAnalysis": "Nog geen ontleding nie"
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Estimasi EPS: {value}",
   "eventFromAnalysis": "Dari analisis Anda",
   "eventsHint": "Tanggal laporan saham favorit dan portofolio Anda untuk 90 hari ke depan, serta agenda bertanggal yang ditandai analisis Anda.",
-  "eventsEmpty": "Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini."
+  "eventsEmpty": "Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini.",
+  "compareTitle": "Bandingkan",
+  "compareAdd": "Tambahkan saham",
+  "compareRemove": "Hapus",
+  "compareTickerHint": "Kode saham, mis. MSFT",
+  "compareHint": "Angka utama berdampingan; nilai terbaik di setiap baris disorot. Jumlah dalam mata uang masing-masing saham.",
+  "compareNoAnalysis": "Belum ada analisis"
 }

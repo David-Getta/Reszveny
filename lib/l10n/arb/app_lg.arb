@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS esuubirwa: {value}",
   "eventFromAnalysis": "Okuva mu kwekenneenya kwo",
   "eventsHint": "Ennaku z'ebivudde mu by'oyagala n'emigabo gyo mu nnaku 90 eziddako, n'ebigenda okubaawo eby'ennaku entongole okwekenneenya kwo bye kulaze.",
-  "eventsEmpty": "Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by'oyagala oba emigabo okulaba wano ennaku z'ebivudde byabyo."
+  "eventsEmpty": "Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by'oyagala oba emigabo okulaba wano ennaku z'ebivudde byabyo.",
+  "compareTitle": "Geraageranya",
+  "compareAdd": "Gattako omugabo",
+  "compareRemove": "Ggyamu",
+  "compareTickerHint": "Ticker, okugeza MSFT",
+  "compareHint": "Ebibalo ebikulu ku bbali na bbali; omuwendo ogusinga obulungi mu buli lunyiriri gulagiddwa. Ssente ziri mu nsimbi za buli mugabo.",
+  "compareNoAnalysis": "Okwekenneenya tekunnabaawo"
 }

@@ -1647,4 +1647,23 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nuk ka ngjarje me datë në 90 ditët e ardhshme. Shto të preferuara ose aksione në portofol për të parë këtu datat e rezultateve të tyre.';
+
+  @override
+  String get compareTitle => 'Krahaso';
+
+  @override
+  String get compareAdd => 'Shto një aksion';
+
+  @override
+  String get compareRemove => 'Hiq';
+
+  @override
+  String get compareTickerHint => 'Simboli, p.sh. MSFT';
+
+  @override
+  String get compareHint =>
+      'Shifrat kryesore krah për krah; vlera më e mirë në çdo rresht është e theksuar. Shumat janë në monedhën e secilit aksion.';
+
+  @override
+  String get compareNoAnalysis => 'Ende pa analizë';
 }

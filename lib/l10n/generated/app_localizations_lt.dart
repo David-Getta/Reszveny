@@ -1692,4 +1692,23 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Per artimiausias 90 dienų įvykių su datomis nėra. Pridėkite mėgstamiausių ar portfelio akcijų, kad čia matytumėte jų rezultatų datas.';
+
+  @override
+  String get compareTitle => 'Palyginti';
+
+  @override
+  String get compareAdd => 'Pridėti akciją';
+
+  @override
+  String get compareRemove => 'Pašalinti';
+
+  @override
+  String get compareTickerHint => 'Simbolis, pvz., MSFT';
+
+  @override
+  String get compareHint =>
+      'Pagrindiniai rodikliai greta; geriausia kiekvienos eilutės reikšmė paryškinta. Sumos pateikiamos kiekvienos akcijos valiuta.';
+
+  @override
+  String get compareNoAnalysis => 'Analizės dar nėra';
 }

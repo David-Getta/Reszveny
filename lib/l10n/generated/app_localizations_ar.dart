@@ -1678,4 +1678,23 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'لا توجد أحداث مؤرخة خلال الـ 90 يومًا القادمة. أضف أسهمًا إلى المفضلة أو المحفظة لترى مواعيد نتائجها هنا.';
+
+  @override
+  String get compareTitle => 'مقارنة';
+
+  @override
+  String get compareAdd => 'إضافة سهم';
+
+  @override
+  String get compareRemove => 'إزالة';
+
+  @override
+  String get compareTickerHint => 'رمز السهم، مثل MSFT';
+
+  @override
+  String get compareHint =>
+      'الأرقام الرئيسية جنبًا إلى جنب، مع تمييز أفضل قيمة في كل صف. المبالغ معروضة بالعملة الخاصة بكل سهم.';
+
+  @override
+  String get compareNoAnalysis => 'لا يوجد تحليل بعد';
 }

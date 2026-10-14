@@ -1690,4 +1690,23 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'У бліжэйшыя 90 дзён падзей з датамі няма. Дадайце акцыі ў абранае або ў партфель, каб бачыць тут даты іх справаздач.';
+
+  @override
+  String get compareTitle => 'Параўнанне';
+
+  @override
+  String get compareAdd => 'Дадаць акцыю';
+
+  @override
+  String get compareRemove => 'Выдаліць';
+
+  @override
+  String get compareTickerHint => 'Тыкер, напр. MSFT';
+
+  @override
+  String get compareHint =>
+      'Асноўныя паказчыкі побач; найлепшае значэнне ў кожным радку вылучана. Сумы — ва ўласнай валюце кожнай акцыі.';
+
+  @override
+  String get compareNoAnalysis => 'Аналізу пакуль няма';
 }

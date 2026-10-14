@@ -1649,4 +1649,23 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'No hi ha esdeveniments amb data en els pròxims 90 dies. Afegeix favorits o accions a la cartera per veure aquí les seves dates de resultats.';
+
+  @override
+  String get compareTitle => 'Compara';
+
+  @override
+  String get compareAdd => 'Afegeix una acció';
+
+  @override
+  String get compareRemove => 'Elimina';
+
+  @override
+  String get compareTickerHint => 'Ticker, p. ex. MSFT';
+
+  @override
+  String get compareHint =>
+      'Xifres clau una al costat de l\'altra; el millor valor de cada fila està ressaltat. Els imports són en la divisa pròpia de cada acció.';
+
+  @override
+  String get compareNoAnalysis => 'Encara no hi ha cap anàlisi';
 }

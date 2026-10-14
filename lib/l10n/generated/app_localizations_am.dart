@@ -1615,4 +1615,23 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'በሚቀጥሉት 90 ቀናት ውስጥ ቀን ያለው ክስተት የለም። የውጤት ቀናቸውን እዚህ ለማየት ተወዳጆችን ወይም የፖርትፎሊዮ አክሲዮኖችን ያክሉ።';
+
+  @override
+  String get compareTitle => 'ማወዳደሪያ';
+
+  @override
+  String get compareAdd => 'አክሲዮን አክል';
+
+  @override
+  String get compareRemove => 'አስወግድ';
+
+  @override
+  String get compareTickerHint => 'የአክሲዮን ምልክት፣ ለምሳሌ MSFT';
+
+  @override
+  String get compareHint =>
+      'ዋና አሃዞች ጎን ለጎን፤ በእያንዳንዱ ረድፍ ምርጡ እሴት ጎልቶ ይታያል። መጠኖቹ በእያንዳንዱ አክሲዮን የራሱ ምንዛሬ ናቸው።';
+
+  @override
+  String get compareNoAnalysis => 'እስካሁን ትንተና የለም';
 }

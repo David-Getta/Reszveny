@@ -1646,4 +1646,23 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'రాబోయే 90 రోజుల్లో తేదీ గల ఈవెంట్‌లు లేవు. వాటి ఫలితాల తేదీలను ఇక్కడ చూడటానికి ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లను జోడించండి.';
+
+  @override
+  String get compareTitle => 'పోలిక';
+
+  @override
+  String get compareAdd => 'స్టాక్‌ను జోడించు';
+
+  @override
+  String get compareRemove => 'తీసివేయి';
+
+  @override
+  String get compareTickerHint => 'టికర్, ఉదా. MSFT';
+
+  @override
+  String get compareHint =>
+      'ముఖ్య గణాంకాలు పక్కపక్కనే; ప్రతి వరుసలో ఉత్తమ విలువ హైలైట్ చేయబడింది. మొత్తాలు ప్రతి స్టాక్ సొంత కరెన్సీలో ఉన్నాయి.';
+
+  @override
+  String get compareNoAnalysis => 'ఇంకా విశ్లేషణ లేదు';
 }

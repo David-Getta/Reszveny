@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../compare/compare_page.dart';
 import '../../app_services.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/stock_candidate.dart';
@@ -107,6 +108,12 @@ class _StockDetailPageState extends State<StockDetailPage> {
         hasSidebar: MediaQuery.sizeOf(context).width >= 860,
         actions: [
           AlertBellButton(symbol: widget.candidate.symbol, onPressed: _setAlert),
+          IconButton(
+            key: const ValueKey('compare-open'),
+            tooltip: l10n.compareTitle,
+            icon: const Icon(Icons.compare_arrows_rounded),
+            onPressed: () => ComparePage.open(context, [widget.candidate.symbol]),
+          ),
           IconButton(
             tooltip: l10n.addToPortfolio,
             icon: const Icon(Icons.add_chart_rounded),

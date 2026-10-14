@@ -1691,4 +1691,23 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov.';
+
+  @override
+  String get compareTitle => 'Porovnanie';
+
+  @override
+  String get compareAdd => 'Pridať akciu';
+
+  @override
+  String get compareRemove => 'Odstrániť';
+
+  @override
+  String get compareTickerHint => 'Ticker, napr. MSFT';
+
+  @override
+  String get compareHint =>
+      'Kľúčové ukazovatele vedľa seba; najlepšia hodnota v každom riadku je zvýraznená. Sumy sú v mene danej akcie.';
+
+  @override
+  String get compareNoAnalysis => 'Zatiaľ bez analýzy';
 }

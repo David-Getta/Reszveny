@@ -1641,4 +1641,23 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Hakuna matukio yenye tarehe katika siku 90 zijazo. Ongeza vipendwa au hisa kwenye jalada ili kuona tarehe zao za matokeo hapa.';
+
+  @override
+  String get compareTitle => 'Linganisha';
+
+  @override
+  String get compareAdd => 'Ongeza hisa';
+
+  @override
+  String get compareRemove => 'Ondoa';
+
+  @override
+  String get compareTickerHint => 'Ticker, k.m. MSFT';
+
+  @override
+  String get compareHint =>
+      'Takwimu kuu kando kwa kando; thamani bora katika kila safu imeangaziwa. Kiasi kiko katika sarafu ya kila hisa.';
+
+  @override
+  String get compareNoAnalysis => 'Bado hakuna uchambuzi';
 }

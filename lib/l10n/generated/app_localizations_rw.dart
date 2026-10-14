@@ -1648,4 +1648,23 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nta gikorwa gifite itariki mu minsi 90 iri imbere. Ongeramo ibyo ukunda cyangwa imigabane yo mu ishoramari kugira ngo ubone hano amatariki y\'ibyavuyemo.';
+
+  @override
+  String get compareTitle => 'Gereranya';
+
+  @override
+  String get compareAdd => 'Ongeramo umugabane';
+
+  @override
+  String get compareRemove => 'Kuramo';
+
+  @override
+  String get compareTickerHint => 'Ticker, urugero MSFT';
+
+  @override
+  String get compareHint =>
+      'Imibare y\'ingenzi iri iruhande; agaciro keza kurusha akandi muri buri murongo kagaragajwe. Amafaranga ari mu ifaranga rya buri mugabane.';
+
+  @override
+  String get compareNoAnalysis => 'Nta sesengura rirabaho';
 }

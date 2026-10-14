@@ -1646,4 +1646,23 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa.';
+
+  @override
+  String get compareTitle => 'Kufwanisa';
+
+  @override
+  String get compareAdd => 'Yika action';
+
+  @override
+  String get compareRemove => 'Katula';
+
+  @override
+  String get compareTickerHint => 'Ticker, mbandu MSFT';
+
+  @override
+  String get compareHint =>
+      'Bitalu ya mfunu na lweka na lweka; ntalu ya kuluta mbote na konso ndonga me monisama. Bitalu ya mbongo kele na mbongo ya konso action.';
+
+  @override
+  String get compareNoAnalysis => 'Analyse ke na yo ntete ve';
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Kuyerekeza kwa EPS: {value}",
   "eventFromAnalysis": "Kuchokera ku kusanthula kwanu",
   "eventsHint": "Masiku a zotsatira za masheya omwe mumawakonda ndi a m'masheya anu m'masiku 90 akubwerawa, komanso zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira.",
-  "eventsEmpty": "Palibe zochitika za tsiku lodziwika m'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano."
+  "eventsEmpty": "Palibe zochitika za tsiku lodziwika m'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano.",
+  "compareTitle": "Yerekezani",
+  "compareAdd": "Onjezani sheya",
+  "compareRemove": "Chotsani",
+  "compareTickerHint": "Ticker, mwachitsanzo MSFT",
+  "compareHint": "Ziwerengero zazikulu mbali ndi mbali; mtengo wabwino kwambiri pa mzere uliwonse wawonetsedwa. Ndalama zili mu ndalama ya sheya iliyonse.",
+  "compareNoAnalysis": "Palibe kusanthula pakadali pano"
 }

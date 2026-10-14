@@ -1649,4 +1649,23 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'அடுத்த 90 நாட்களில் தேதியிட்ட நிகழ்வுகள் இல்லை. அவற்றின் முடிவு தேதிகளை இங்கே காண பிடித்தவை அல்லது போர்ட்ஃபோலியோ பங்குகளைச் சேர்க்கவும்.';
+
+  @override
+  String get compareTitle => 'ஒப்பிடு';
+
+  @override
+  String get compareAdd => 'பங்கைச் சேர்';
+
+  @override
+  String get compareRemove => 'அகற்று';
+
+  @override
+  String get compareTickerHint => 'டிக்கர், எ.கா. MSFT';
+
+  @override
+  String get compareHint =>
+      'முக்கிய எண்கள் அருகருகே; ஒவ்வொரு வரிசையிலும் சிறந்த மதிப்பு முன்னிலைப்படுத்தப்பட்டுள்ளது. தொகைகள் ஒவ்வொரு பங்கின் சொந்த நாணயத்தில் உள்ளன.';
+
+  @override
+  String get compareNoAnalysis => 'இன்னும் பகுப்பாய்வு இல்லை';
 }

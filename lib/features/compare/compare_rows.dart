@@ -1,0 +1,80 @@
+import '../../core/models/stock_details.dart';
+import '../../core/models/stock_metrics.dart';
+import '../../core/util/formatters.dart';
+import '../../l10n/generated/app_localizations.dart';
+
+/// Melyik irány a jobb egy mutatónál (a kiemeléshez); `none`: nincs kiemelés.
+enum Better { higher, lower, none }
+
+/// Az összehasonlító táblázat egy sora: felirat, oszloponként a megjelenített
+/// érték, és a legjobb oszlop indexe (ha értelmezhető).
+class CompareRow {
+  const CompareRow(this.label, this.values, {this.best});
+
+  final String label;
+  final List<String?> values;
+  final int? best;
+}
+
+/// A legjobb érték indexe: legalább két összevethető érték kell. A „kisebb a
+/// jobb” mutatóknál (P/E, P/S…) a nem pozitív érték (veszteség) nem nyerhet.
+int? bestIndex(List<double?> values, Better better) {
+  if (better == Better.none) return null;
+  int? best;
+  var count = 0;
+  for (var i = 0; i < values.length; i++) {
+    final v = values[i];
+    if (v == null || (better == Better.lower && v <= 0)) continue;
+    count++;
+    final b = best == null ? null : values[best]!;
+    if (b == null || (better == Better.higher ? v > b : v < b)) best = i;
+  }
+  return count >= 2 ? best : null;
+}
+
+/// Az összehasonlítás sorai: árfolyam, értékeltség, növekedés, jövedelmezőség,
+/// eladósodottság, osztalék, kockázat. A pénzösszegek oszloponként a saját
+/// devizájukban.
+List<CompareRow> buildCompareRows(AppLocalizations l10n, Fmt fmt, List<StockDetails?> stocks) {
+  List<double?> metric(double? Function(StockMetrics m) f) => [
+    for (final d in stocks) d?.metrics == null ? null : f(d!.metrics!),
+  ];
+
+  CompareRow row(String label, List<double?> raw, String Function(double v, StockDetails d) show, Better better) =>
+      CompareRow(label, [
+        for (var i = 0; i < stocks.length; i++) raw[i] == null || stocks[i] == null ? null : show(raw[i]!, stocks[i]!),
+      ], best: bestIndex(raw, better));
+
+  String pct(double v, StockDetails _) => fmt.percent(v);
+  String signed(double v, StockDetails _) => fmt.percent(v, withSign: true);
+  String num(double v, StockDetails _) => fmt.number(v);
+
+  return [
+    row(
+      l10n.labelLastPrice,
+      [for (final d in stocks) d?.quote?.price],
+      (v, d) => fmt.price(v, d.currency),
+      Better.none,
+    ),
+    row(l10n.labelChange, [for (final d in stocks) d?.quote?.changePercent], signed, Better.none),
+    row(
+      l10n.labelMarketCap,
+      [for (final d in stocks) d?.profile?.marketCap],
+      (v, d) => fmt.compact(v, currency: d.currency),
+      Better.none,
+    ),
+    row(l10n.labelPeTrailing, metric((m) => m.peTrailing), num, Better.lower),
+    row(l10n.labelPeForward, metric((m) => m.peForward), num, Better.lower),
+    row(l10n.labelPs, metric((m) => m.ps), num, Better.lower),
+    row(l10n.labelPb, metric((m) => m.pb), num, Better.lower),
+    row(l10n.labelPeg, metric((m) => m.peg), num, Better.lower),
+    row(l10n.labelRevenueGrowth, metric((m) => m.revenueGrowth), signed, Better.higher),
+    row(l10n.labelEpsGrowth, metric((m) => m.epsGrowth), signed, Better.higher),
+    row(l10n.labelGrossMargin, metric((m) => m.grossMargin), pct, Better.higher),
+    row(l10n.labelNetMargin, metric((m) => m.netMargin), pct, Better.higher),
+    row(l10n.labelRoe, metric((m) => m.roe), pct, Better.higher),
+    row(l10n.labelDebtToEquity, metric((m) => m.debtToEquity), num, Better.lower),
+    row(l10n.labelDividendYield, metric((m) => m.dividendYield), pct, Better.higher),
+    row(l10n.labelBeta, metric((m) => m.beta), num, Better.none),
+  ];
+}

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Prakiraan EPS: {value}",
   "eventFromAnalysis": "Saka analisismu",
   "eventsHint": "Tanggal laporan saham favorit lan portofoliomu kanggo 90 dina sabanjure, uga acara sing ana tanggale sing ditandhani analisismu.",
-  "eventsEmpty": "Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene."
+  "eventsEmpty": "Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene.",
+  "compareTitle": "Bandhingake",
+  "compareAdd": "Tambahake saham",
+  "compareRemove": "Busak",
+  "compareTickerHint": "Kode saham, upamane MSFT",
+  "compareHint": "Angka utama jejer-jejer; nilai paling apik ing saben baris disorot. Jumlah ing mata uang saben saham dhewe-dhewe.",
+  "compareNoAnalysis": "Durung ana analisis"
 }

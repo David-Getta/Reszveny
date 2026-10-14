@@ -1635,4 +1635,23 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'په راتلونکو 90 ورځو کې کومه نېټه لرونکې پېښه نشته. خوښې یا د پورټفولیو ونډې اضافه کړئ چې دلته یې د پایلو نېټې ووینئ.';
+
+  @override
+  String get compareTitle => 'پرتله';
+
+  @override
+  String get compareAdd => 'ونډه ورزیاته کړئ';
+
+  @override
+  String get compareRemove => 'لرې کړئ';
+
+  @override
+  String get compareTickerHint => 'ټیکر، لکه MSFT';
+
+  @override
+  String get compareHint =>
+      'مهمې شمېرې څنګ په څنګ؛ په هر قطار کې غوره ارزښت روښانه شوی. اندازې د هرې ونډې په خپل پولي واحد کې دي.';
+
+  @override
+  String get compareNoAnalysis => 'تر اوسه تحلیل نشته';
 }

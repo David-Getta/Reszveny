@@ -1651,4 +1651,23 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen.';
+
+  @override
+  String get compareTitle => 'Vergleich';
+
+  @override
+  String get compareAdd => 'Aktie hinzufügen';
+
+  @override
+  String get compareRemove => 'Entfernen';
+
+  @override
+  String get compareTickerHint => 'Ticker, z. B. MSFT';
+
+  @override
+  String get compareHint =>
+      'Kennzahlen im direkten Vergleich; der beste Wert jeder Zeile ist hervorgehoben. Beträge sind in der Währung der jeweiligen Aktie.';
+
+  @override
+  String get compareNoAnalysis => 'Noch keine Analyse';
 }

@@ -1620,4 +1620,23 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ไม่มีเหตุการณ์ที่มีวันที่ใน 90 วันข้างหน้า เพิ่มรายการโปรดหรือหุ้นในพอร์ตโฟลิโอเพื่อดูวันประกาศผลประกอบการที่นี่';
+
+  @override
+  String get compareTitle => 'เปรียบเทียบ';
+
+  @override
+  String get compareAdd => 'เพิ่มหุ้น';
+
+  @override
+  String get compareRemove => 'ลบออก';
+
+  @override
+  String get compareTickerHint => 'ชื่อย่อหุ้น เช่น MSFT';
+
+  @override
+  String get compareHint =>
+      'ตัวเลขสำคัญแสดงเคียงข้างกัน ค่าที่ดีที่สุดในแต่ละแถวจะถูกไฮไลต์ จำนวนเงินแสดงในสกุลเงินของหุ้นแต่ละตัว';
+
+  @override
+  String get compareNoAnalysis => 'ยังไม่มีการวิเคราะห์';
 }

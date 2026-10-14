@@ -1647,4 +1647,23 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára.';
+
+  @override
+  String get compareTitle => 'Ñembojoja';
+
+  @override
+  String get compareAdd => 'Embojuaju peteĩ acción';
+
+  @override
+  String get compareRemove => 'Mboguete';
+
+  @override
+  String get compareTickerHint => 'Ticker, techapyrã MSFT';
+
+  @override
+  String get compareHint =>
+      'Papapy tenondeguáva oñondive; peteĩteĩ tysỹime ojehechauka pe valor iporãvéva. Pirapire papapy oĩ peteĩteĩ acción pirapire tee rupive.';
+
+  @override
+  String get compareNoAnalysis => 'Ndaipóri gueteri jehesaʼỹijo';
 }

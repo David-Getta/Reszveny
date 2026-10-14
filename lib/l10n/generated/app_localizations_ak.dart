@@ -1640,4 +1640,23 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nsɛm biara a ɛwɔ da nni nnafua 90 a ɛreba no mu. Fa nea mepɛ anaa wo nkyɛfa mu kyɛfa ka ho na hwɛ wɔn akontaabu da wɔ ha.';
+
+  @override
+  String get compareTitle => 'Ntotoho';
+
+  @override
+  String get compareAdd => 'Fa nkyɛfa bi ka ho';
+
+  @override
+  String get compareRemove => 'Yi fi mu';
+
+  @override
+  String get compareTickerHint => 'Ticker, sɛ MSFT';
+
+  @override
+  String get compareHint =>
+      'Akontaa atitiriw si nkyɛn nkyɛn; wɔahyɛ bo a ɛyɛ papa sen biara wɔ nsensanee biara mu no nsow. Sika dodow no wɔ nkyɛfa biara ankasa sika mu.';
+
+  @override
+  String get compareNoAnalysis => 'Nhwehwɛmu biara nni hɔ mmom';
 }

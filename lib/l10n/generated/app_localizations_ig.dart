@@ -1636,4 +1636,23 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Enweghị ihe omume nwere ụbọchị n\'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a.';
+
+  @override
+  String get compareTitle => 'Tụnyere';
+
+  @override
+  String get compareAdd => 'Tinye stock';
+
+  @override
+  String get compareRemove => 'Wepụ';
+
+  @override
+  String get compareTickerHint => 'Ticker, dịka MSFT';
+
+  @override
+  String get compareHint =>
+      'Ọnụ ọgụgụ ndị dị mkpa n\'akụkụ ibe ha; e gosipụtara uru kacha mma n\'ahịrị ọ bụla. Ego dị n\'ụdị ego nke stock ọ bụla.';
+
+  @override
+  String get compareNoAnalysis => 'Enweghị nyocha ugbu a';
 }

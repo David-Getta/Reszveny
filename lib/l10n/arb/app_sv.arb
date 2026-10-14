@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Förväntad EPS: {value}",
   "eventFromAnalysis": "Från din analys",
   "eventsHint": "Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, samt daterade händelser som dina analyser har flaggat.",
-  "eventsEmpty": "Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här."
+  "eventsEmpty": "Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här.",
+  "compareTitle": "Jämför",
+  "compareAdd": "Lägg till en aktie",
+  "compareRemove": "Ta bort",
+  "compareTickerHint": "Ticker, t.ex. MSFT",
+  "compareHint": "Nyckeltal sida vid sida; bästa värdet på varje rad är markerat. Beloppen anges i respektive akties valuta.",
+  "compareNoAnalysis": "Ingen analys än"
 }

@@ -1676,4 +1676,23 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Нема датираних догађаја у наредних 90 дана. Додајте омиљене акције или акције у портфолио да бисте овде видели датуме њихових резултата.';
+
+  @override
+  String get compareTitle => 'Поређење';
+
+  @override
+  String get compareAdd => 'Додај акцију';
+
+  @override
+  String get compareRemove => 'Уклони';
+
+  @override
+  String get compareTickerHint => 'Тикер, нпр. MSFT';
+
+  @override
+  String get compareHint =>
+      'Кључни показатељи један поред другог; најбоља вредност у сваком реду је истакнута. Износи су у валути сваке акције.';
+
+  @override
+  String get compareNoAnalysis => 'Још нема анализе';
 }

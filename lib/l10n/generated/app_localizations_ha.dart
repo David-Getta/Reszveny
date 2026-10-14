@@ -1646,4 +1646,23 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Babu abubuwa masu kwanan wata a kwanaki 90 masu zuwa. Ƙara abubuwan da ka fi so ko hannayen jari a jakarka don ganin kwanakin sakamakonsu a nan.';
+
+  @override
+  String get compareTitle => 'Kwatanta';
+
+  @override
+  String get compareAdd => 'Ƙara hannun jari';
+
+  @override
+  String get compareRemove => 'Cire';
+
+  @override
+  String get compareTickerHint => 'Ticker, misali MSFT';
+
+  @override
+  String get compareHint =>
+      'Muhimman alƙaluma gefe da gefe; an haskaka mafi kyawun ƙima a kowane layi. Adadin kuɗi suna cikin nau\'in kuɗin kowane hannun jari.';
+
+  @override
+  String get compareNoAnalysis => 'Babu nazari tukuna';
 }

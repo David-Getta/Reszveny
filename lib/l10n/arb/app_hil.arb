@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Ginapaabot nga EPS: {value}",
   "eventFromAnalysis": "Halin sa imo analisis",
   "eventsHint": "Mga petsa sang resulta sang imo mga paborito kag mga stock sa portfolio para sa masunod nga 90 ka adlaw, kag ang mga hitabo nga may petsa nga gin-markahan sang imo mga analisis.",
-  "eventsEmpty": "Wala sing hitabo nga may petsa sa masunod nga 90 ka adlaw. Magdugang sang mga paborito ukon stock sa portfolio para makita diri ang mga petsa sang ila resulta."
+  "eventsEmpty": "Wala sing hitabo nga may petsa sa masunod nga 90 ka adlaw. Magdugang sang mga paborito ukon stock sa portfolio para makita diri ang mga petsa sang ila resulta.",
+  "compareTitle": "Ikumpara",
+  "compareAdd": "Idugang ang stock",
+  "compareRemove": "Kuhaa",
+  "compareTickerHint": "Ticker, pananglitan MSFT",
+  "compareHint": "Ang importante nga mga numero magkatupad; ginapasanag ang pinakamaayo nga balor sa kada linya. Ang mga kantidad yara sa kaugalingon nga currency sang kada stock.",
+  "compareNoAnalysis": "Wala pa sang analisis"
 }

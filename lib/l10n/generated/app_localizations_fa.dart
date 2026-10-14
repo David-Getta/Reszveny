@@ -1639,4 +1639,23 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'در 90 روز آینده هیچ رویداد تاریخ‌داری وجود ندارد. برای دیدن تاریخ نتایج در اینجا، سهمی را به علاقه‌مندی‌ها یا سبد سهام اضافه کنید.';
+
+  @override
+  String get compareTitle => 'مقایسه';
+
+  @override
+  String get compareAdd => 'افزودن سهم';
+
+  @override
+  String get compareRemove => 'حذف';
+
+  @override
+  String get compareTickerHint => 'نماد سهم، مثلاً MSFT';
+
+  @override
+  String get compareHint =>
+      'ارقام کلیدی کنار هم؛ بهترین مقدار در هر ردیف برجسته شده است. مبالغ به واحد پولِ خودِ هر سهم است.';
+
+  @override
+  String get compareNoAnalysis => 'هنوز تحلیلی وجود ندارد';
 }

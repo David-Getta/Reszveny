@@ -90,6 +90,11 @@ class Store {
         created_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS helper_calls_user ON helper_calls(user_id, created_at);
+      CREATE TABLE IF NOT EXISTS trial_grants (
+        ip_hash TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS trial_grants_ip ON trial_grants(ip_hash, created_at);
       CREATE TABLE IF NOT EXISTS ask_calls (
         user_id TEXT NOT NULL,
         created_at TEXT NOT NULL
@@ -496,6 +501,23 @@ class Store {
     final now = clock().toUtc();
     _db.execute('INSERT INTO helper_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
     _db.execute('DELETE FROM helper_calls WHERE created_at < ?', [
+      now.subtract(const Duration(days: 2)).toIso8601String(),
+    ]);
+  }
+
+  /// Ennyi próbaidő indult erről a (hash-elt) IP-címről [since] óta.
+  int trialGrantsSince(String ipHash, DateTime since) =>
+      _db.select('SELECT COUNT(*) AS n FROM trial_grants WHERE ip_hash = ? AND created_at >= ?', [
+            ipHash,
+            since.toUtc().toIso8601String(),
+          ]).first['n']
+          as int;
+
+  /// Egy próbaidő naplózása; a két napnál régebbi sorokat közben törli.
+  void logTrialGrant(String ipHash) {
+    final now = clock().toUtc();
+    _db.execute('INSERT INTO trial_grants (ip_hash, created_at) VALUES (?, ?)', [ipHash, now.toIso8601String()]);
+    _db.execute('DELETE FROM trial_grants WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
   }

@@ -1628,4 +1628,23 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka.';
+
+  @override
+  String get compareTitle => 'Makre';
+
+  @override
+  String get compareAdd => 'Paas aksiõ';
+
+  @override
+  String get compareRemove => 'Yiise';
+
+  @override
+  String get compareTickerHint => 'Ticker, wala MSFT';
+
+  @override
+  String get compareHint =>
+      'Sõdb kãsems taab sʋka; sor fãa pʋgẽ, sẽn yɩɩd sõma la b wilgda. Ligdã be aksiõ kam fãa ligd buud pʋgẽ.';
+
+  @override
+  String get compareNoAnalysis => 'Vɛɛsgo ka zĩnd ne masã ye';
 }

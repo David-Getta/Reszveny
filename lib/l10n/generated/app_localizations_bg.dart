@@ -1641,4 +1641,23 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Няма датирани събития през следващите 90 дни. Добавете любими или акции в портфейла, за да виждате тук датите на резултатите им.';
+
+  @override
+  String get compareTitle => 'Сравнение';
+
+  @override
+  String get compareAdd => 'Добави акция';
+
+  @override
+  String get compareRemove => 'Премахни';
+
+  @override
+  String get compareTickerHint => 'Тикер, напр. MSFT';
+
+  @override
+  String get compareHint =>
+      'Основните показатели един до друг; най-добрата стойност на всеки ред е отличена. Сумите са в собствената валута на всяка акция.';
+
+  @override
+  String get compareNoAnalysis => 'Все още няма анализ';
 }

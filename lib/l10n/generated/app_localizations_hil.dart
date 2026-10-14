@@ -1652,4 +1652,23 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Wala sing hitabo nga may petsa sa masunod nga 90 ka adlaw. Magdugang sang mga paborito ukon stock sa portfolio para makita diri ang mga petsa sang ila resulta.';
+
+  @override
+  String get compareTitle => 'Ikumpara';
+
+  @override
+  String get compareAdd => 'Idugang ang stock';
+
+  @override
+  String get compareRemove => 'Kuhaa';
+
+  @override
+  String get compareTickerHint => 'Ticker, pananglitan MSFT';
+
+  @override
+  String get compareHint =>
+      'Ang importante nga mga numero magkatupad; ginapasanag ang pinakamaayo nga balor sa kada linya. Ang mga kantidad yara sa kaugalingon nga currency sang kada stock.';
+
+  @override
+  String get compareNoAnalysis => 'Wala pa sang analisis';
 }

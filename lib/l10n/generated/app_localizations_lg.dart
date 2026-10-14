@@ -1650,4 +1650,23 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by\'oyagala oba emigabo okulaba wano ennaku z\'ebivudde byabyo.';
+
+  @override
+  String get compareTitle => 'Geraageranya';
+
+  @override
+  String get compareAdd => 'Gattako omugabo';
+
+  @override
+  String get compareRemove => 'Ggyamu';
+
+  @override
+  String get compareTickerHint => 'Ticker, okugeza MSFT';
+
+  @override
+  String get compareHint =>
+      'Ebibalo ebikulu ku bbali na bbali; omuwendo ogusinga obulungi mu buli lunyiriri gulagiddwa. Ssente ziri mu nsimbi za buli mugabo.';
+
+  @override
+  String get compareNoAnalysis => 'Okwekenneenya tekunnabaawo';
 }

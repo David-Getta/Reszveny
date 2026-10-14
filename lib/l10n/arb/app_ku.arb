@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Texmîna EPS: {value}",
   "eventFromAnalysis": "Ji analîza te",
   "eventsHint": "Dîrokên encamên bijare û pişkên portfolyoya te ji bo 90 rojên bê, û bûyerên bi dîrok ên ku analîzên te nîşan dane.",
-  "eventsEmpty": "Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî."
+  "eventsEmpty": "Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî.",
+  "compareTitle": "Berhevdan",
+  "compareAdd": "Pişkekê zêde bike",
+  "compareRemove": "Rake",
+  "compareTickerHint": "Sembol, mînak MSFT",
+  "compareHint": "Hejmarên sereke li kêleka hev; nirxa herî baş di her rêzê de tê nîşankirin. Mîqdar bi dirava her pişkê bi xwe ne.",
+  "compareNoAnalysis": "Hêj analîz tune"
 }

@@ -1641,4 +1641,23 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene.';
+
+  @override
+  String get compareTitle => 'Bandhingake';
+
+  @override
+  String get compareAdd => 'Tambahake saham';
+
+  @override
+  String get compareRemove => 'Busak';
+
+  @override
+  String get compareTickerHint => 'Kode saham, upamane MSFT';
+
+  @override
+  String get compareHint =>
+      'Angka utama jejer-jejer; nilai paling apik ing saben baris disorot. Jumlah ing mata uang saben saham dhewe-dhewe.';
+
+  @override
+  String get compareNoAnalysis => 'Durung ana analisis';
 }

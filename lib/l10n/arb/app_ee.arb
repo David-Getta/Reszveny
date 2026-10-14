@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS si wole mɔ kpɔm: {value}",
   "eventFromAnalysis": "Tso wò numekuku me",
   "eventsHint": "Nye lɔlɔ̃tɔwo kple nye akpawo ƒe akɔntabubu ŋkekewo le ŋkeke 90 siwo gbɔna me, kple nudzɔdzɔ siwo ŋu ŋkeke le si wò numekukuwo ɖe fia.",
-  "eventsEmpty": "Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii."
+  "eventsEmpty": "Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii.",
+  "compareTitle": "Tsɔtsɔsɔ",
+  "compareAdd": "Tsɔ akpa aɖe kpe ɖe eŋu",
+  "compareRemove": "Ɖee ɖa",
+  "compareTickerHint": "Ticker dzesi, abe MSFT ene",
+  "compareHint": "Xexlẽdzesi veviwo le wo nɔewo xa; wode dzesi asixɔxɔ nyuitɔ kekeake le fli ɖesiaɖe me. Gaxexlẽwo le akpa ɖesiaɖe ƒe ga ƒomevi ŋutɔ me.",
+  "compareNoAnalysis": "Numekuku aɖeke meli haɖe o"
 }

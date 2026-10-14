@@ -1642,4 +1642,23 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Дар 90 рӯзи оянда рӯйдоди санадор нест. Интихобшудаҳо ё саҳмияҳои портфелро илова кунед, то санаҳои натиҷаҳои онҳоро дар ин ҷо бинед.';
+
+  @override
+  String get compareTitle => 'Муқоиса';
+
+  @override
+  String get compareAdd => 'Илова кардани саҳмия';
+
+  @override
+  String get compareRemove => 'Хориҷ кардан';
+
+  @override
+  String get compareTickerHint => 'Тикер, масалан MSFT';
+
+  @override
+  String get compareHint =>
+      'Нишондиҳандаҳои асосӣ паҳлӯ ба паҳлӯ; беҳтарин арзиш дар ҳар сатр қайд шудааст. Маблағҳо бо асъори худи ҳар саҳмия.';
+
+  @override
+  String get compareNoAnalysis => 'Ҳоло таҳлил нест';
 }

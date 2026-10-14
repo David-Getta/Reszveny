@@ -1646,4 +1646,23 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano.';
+
+  @override
+  String get compareTitle => 'Enzanisa';
+
+  @override
+  String get compareAdd => 'Wedzera sheya';
+
+  @override
+  String get compareRemove => 'Bvisa';
+
+  @override
+  String get compareTickerHint => 'Ticker, semuenzaniso MSFT';
+
+  @override
+  String get compareHint =>
+      'Nhamba huru dzakatarisana; kukosha kwakanakisa mumutsara wega wega kwaratidzwa. Mari dziri mumari yesheya imwe neimwe.';
+
+  @override
+  String get compareNoAnalysis => 'Hapana ongororo parizvino';
 }

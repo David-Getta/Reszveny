@@ -1645,4 +1645,23 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Kakuena malu adi ne matuku mu matuku 90 alua to. Bueja biudi musue anyi ba action mu portefeuille bua kumona apa matuku a mapeta abi.';
+
+  @override
+  String get compareTitle => 'Kufuanyikija';
+
+  @override
+  String get compareAdd => 'Bueja action';
+
+  @override
+  String get compareRemove => 'Umbusha';
+
+  @override
+  String get compareTickerHint => 'Ticker, bu tshilejelu MSFT';
+
+  @override
+  String get compareHint =>
+      'Mibelu minene ku luseke ne luseke; mushinga mulenga menemene mu mulongo wonso udi muleja. Makuta adi mu mfranga ya action yonso.';
+
+  @override
+  String get compareNoAnalysis => 'Kuena dikonkonona panu';
 }

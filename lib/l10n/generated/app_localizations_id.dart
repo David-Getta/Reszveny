@@ -1636,4 +1636,23 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini.';
+
+  @override
+  String get compareTitle => 'Bandingkan';
+
+  @override
+  String get compareAdd => 'Tambahkan saham';
+
+  @override
+  String get compareRemove => 'Hapus';
+
+  @override
+  String get compareTickerHint => 'Kode saham, mis. MSFT';
+
+  @override
+  String get compareHint =>
+      'Angka utama berdampingan; nilai terbaik di setiap baris disorot. Jumlah dalam mata uang masing-masing saham.';
+
+  @override
+  String get compareNoAnalysis => 'Belum ada analisis';
 }

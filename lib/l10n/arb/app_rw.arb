@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Igereranyo rya EPS: {value}",
   "eventFromAnalysis": "Biva mu isesengura ryawe",
   "eventsHint": "Amatariki y'ibyavuye mu gihembwe by'imigabane ukunda n'iri mu ishoramari ryawe mu minsi 90 iri imbere, n'ibikorwa bifite amatariki amasesengura yawe yagaragaje.",
-  "eventsEmpty": "Nta gikorwa gifite itariki mu minsi 90 iri imbere. Ongeramo ibyo ukunda cyangwa imigabane yo mu ishoramari kugira ngo ubone hano amatariki y'ibyavuyemo."
+  "eventsEmpty": "Nta gikorwa gifite itariki mu minsi 90 iri imbere. Ongeramo ibyo ukunda cyangwa imigabane yo mu ishoramari kugira ngo ubone hano amatariki y'ibyavuyemo.",
+  "compareTitle": "Gereranya",
+  "compareAdd": "Ongeramo umugabane",
+  "compareRemove": "Kuramo",
+  "compareTickerHint": "Ticker, urugero MSFT",
+  "compareHint": "Imibare y'ingenzi iri iruhande; agaciro keza kurusha akandi muri buri murongo kagaragajwe. Amafaranga ari mu ifaranga rya buri mugabane.",
+  "compareNoAnalysis": "Nta sesengura rirabaho"
 }

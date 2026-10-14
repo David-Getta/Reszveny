@@ -1642,4 +1642,23 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'მომდევნო 90 დღეში თარიღიანი მოვლენები არ არის. დაამატეთ რჩეულები ან პორტფელის აქციები, რომ აქ მათი შედეგების თარიღები ნახოთ.';
+
+  @override
+  String get compareTitle => 'შედარება';
+
+  @override
+  String get compareAdd => 'აქციის დამატება';
+
+  @override
+  String get compareRemove => 'წაშლა';
+
+  @override
+  String get compareTickerHint => 'ტიკერი, მაგ. MSFT';
+
+  @override
+  String get compareHint =>
+      'ძირითადი მაჩვენებლები გვერდიგვერდ; თითოეულ სტრიქონში საუკეთესო მნიშვნელობა გამოკვეთილია. თანხები მოცემულია თითოეული აქციის საკუთარ ვალუტაში.';
+
+  @override
+  String get compareNoAnalysis => 'ანალიზი ჯერ არ არის';
 }

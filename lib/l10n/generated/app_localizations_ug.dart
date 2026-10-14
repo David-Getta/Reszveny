@@ -1643,4 +1643,23 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'كېيىنكى 90 كۈندە ۋاقتى بار ئىش يوق. نەتىجە ۋاقىتلىرىنى بۇ يەردە كۆرۈش ئۈچۈن يىغقۇچقا ياكى مەبلەغ بىرىكمىسىگە پاينامە قوشۇڭ.';
+
+  @override
+  String get compareTitle => 'سېلىشتۇرۇش';
+
+  @override
+  String get compareAdd => 'پاي چېكى قوشۇش';
+
+  @override
+  String get compareRemove => 'چىقىرىۋېتىش';
+
+  @override
+  String get compareTickerHint => 'پاي چېكى كودى، مەسىلەن MSFT';
+
+  @override
+  String get compareHint =>
+      'ئاساسلىق كۆرسەتكۈچلەر يانمۇيان؛ ھەر بىر قۇردىكى ئەڭ ياخشى قىممەت گەۋدىلەندۈرۈلگەن. سوممىلار ھەر بىر پاي چېكىنىڭ ئۆز پۇل بىرلىكىدە.';
+
+  @override
+  String get compareNoAnalysis => 'تېخى تەھلىل يوق';
 }

@@ -1650,4 +1650,23 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ha ho diketsahalo tse nang le matsatsi matsatsing a 90 a tlang. Kenya tseo o di ratang kapa disheare tsa potefolio ho bona matsatsi a diphetho tsa tsona mona.';
+
+  @override
+  String get compareTitle => 'Bapisa';
+
+  @override
+  String get compareAdd => 'Kenya seabo';
+
+  @override
+  String get compareRemove => 'Tlosa';
+
+  @override
+  String get compareTickerHint => 'Ticker, mohlala MSFT';
+
+  @override
+  String get compareHint =>
+      'Dipalo tsa bohlokwa di bapile; boleng bo botle ka ho fetisisa moleng ka mong bo totobaditswe. Ditjhelete di ka mofuta wa tjhelete wa seabo ka seng.';
+
+  @override
+  String get compareNoAnalysis => 'Ha ho tlhahlobo hajoale';
 }

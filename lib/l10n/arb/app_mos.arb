@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS tagsgo: {value}",
   "eventFromAnalysis": "Yii fo vɛɛsgã pʊgẽ",
   "eventsHint": "Fo nong-n-yɩɩda la fo portfey sɛɛr-rãmbã ligd-yɛl rasem, rasem 90 sẽn watẽ wã pʊgẽ, la yɛl sẽn tar rasem fo vɛɛsgã sẽn wilgã.",
-  "eventsEmpty": "Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka."
+  "eventsEmpty": "Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka.",
+  "compareTitle": "Makre",
+  "compareAdd": "Paas aksiõ",
+  "compareRemove": "Yiise",
+  "compareTickerHint": "Ticker, wala MSFT",
+  "compareHint": "Sõdb kãsems taab sʋka; sor fãa pʋgẽ, sẽn yɩɩd sõma la b wilgda. Ligdã be aksiõ kam fãa ligd buud pʋgẽ.",
+  "compareNoAnalysis": "Vɛɛsgo ka zĩnd ne masã ye"
 }

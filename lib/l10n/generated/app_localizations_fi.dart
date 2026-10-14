@@ -1642,4 +1642,23 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä.';
+
+  @override
+  String get compareTitle => 'Vertailu';
+
+  @override
+  String get compareAdd => 'Lisää osake';
+
+  @override
+  String get compareRemove => 'Poista';
+
+  @override
+  String get compareTickerHint => 'Osaketunnus, esim. MSFT';
+
+  @override
+  String get compareHint =>
+      'Tunnusluvut rinnakkain; kunkin rivin paras arvo on korostettu. Summat ovat kunkin osakkeen omassa valuutassa.';
+
+  @override
+  String get compareNoAnalysis => 'Ei vielä analyysia';
 }

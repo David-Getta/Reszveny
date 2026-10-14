@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS i yettwarǧan: {value}",
   "eventFromAnalysis": "Seg tesleḍt-ik",
   "eventsHint": "Izemziyen n yigmaḍ n yismenyifen-ik d wayen yellan deg uqrab-ik i 90 n wussan i d-iteddun, akked tidyanin s uzemz i d-mmlent tselḍin-ik.",
-  "eventsEmpty": "Ulac tidyanin s uzemz deg 90 n wussan i d-iteddun. Rnu ismenyifen neɣ ayen ɣer uqrab akken ad twaliḍ dagi izemziyen n yigmaḍ-nsen."
+  "eventsEmpty": "Ulac tidyanin s uzemz deg 90 n wussan i d-iteddun. Rnu ismenyifen neɣ ayen ɣer uqrab akken ad twaliḍ dagi izemziyen n yigmaḍ-nsen.",
+  "compareTitle": "Serwes",
+  "compareAdd": "Rnu aksyun",
+  "compareRemove": "Kkes",
+  "compareTickerHint": "Azamul, amedya MSFT",
+  "compareHint": "Imḍanen igejdanen yiwen ɣer tama n wayeḍ; azal ufrin deg yal izirig yettwasbeggen. Idrimen llan s tedrimt n yal aksyun.",
+  "compareNoAnalysis": "Ulac tasleḍt ar tura"
 }

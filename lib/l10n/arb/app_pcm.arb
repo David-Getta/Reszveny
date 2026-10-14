@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS wey dem expect: {value}",
   "eventFromAnalysis": "From your analysis",
   "eventsHint": "Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag.",
-  "eventsEmpty": "No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here."
+  "eventsEmpty": "No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here.",
+  "compareTitle": "Compare",
+  "compareAdd": "Add one stock",
+  "compareRemove": "Comot am",
+  "compareTickerHint": "Ticker, like MSFT",
+  "compareHint": "Di main numbers dey side by side; di best value for each row dey highlighted. Di amounts dey for each stock own currency.",
+  "compareNoAnalysis": "No analysis yet"
 }

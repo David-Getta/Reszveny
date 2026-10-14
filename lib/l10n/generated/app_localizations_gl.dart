@@ -1663,4 +1663,23 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Non hai eventos con data nos próximos 90 días. Engade favoritos ou accións á carteira para ver aquí as súas datas de resultados.';
+
+  @override
+  String get compareTitle => 'Comparar';
+
+  @override
+  String get compareAdd => 'Engadir unha acción';
+
+  @override
+  String get compareRemove => 'Quitar';
+
+  @override
+  String get compareTickerHint => 'Ticker, p. ex. MSFT';
+
+  @override
+  String get compareHint =>
+      'Cifras clave lado a lado; o mellor valor de cada fila aparece resaltado. Os importes están na moeda de cada acción.';
+
+  @override
+  String get compareNoAnalysis => 'Aínda non hai análise';
 }

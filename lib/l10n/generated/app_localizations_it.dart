@@ -1645,4 +1645,23 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati.';
+
+  @override
+  String get compareTitle => 'Confronta';
+
+  @override
+  String get compareAdd => 'Aggiungi un titolo';
+
+  @override
+  String get compareRemove => 'Rimuovi';
+
+  @override
+  String get compareTickerHint => 'Ticker, es. MSFT';
+
+  @override
+  String get compareHint =>
+      'Dati chiave a confronto; il valore migliore di ogni riga è evidenziato. Gli importi sono nella valuta di ciascun titolo.';
+
+  @override
+  String get compareNoAnalysis => 'Ancora nessuna analisi';
 }

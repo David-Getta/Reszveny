@@ -1590,4 +1590,23 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get eventsEmpty =>
       '今後 90 日間に日付付きのイベントはありません。お気に入りやポートフォリオに銘柄を追加すると、ここに決算発表日が表示されます。';
+
+  @override
+  String get compareTitle => '比較';
+
+  @override
+  String get compareAdd => '銘柄を追加';
+
+  @override
+  String get compareRemove => '削除';
+
+  @override
+  String get compareTickerHint => 'ティッカー（例：MSFT）';
+
+  @override
+  String get compareHint =>
+      '主要指標を並べて表示します。各行で最も良い値がハイライトされます。金額は各銘柄の通貨で表示されます。';
+
+  @override
+  String get compareNoAnalysis => '分析はまだありません';
 }

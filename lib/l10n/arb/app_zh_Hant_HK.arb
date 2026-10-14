@@ -447,5 +447,11 @@
   "eventEpsEstimate": "預期每股盈利：{value}",
   "eventFromAnalysis": "來自你的分析",
   "eventsHint": "收藏及投資組合股票未來 90 日的業績公佈日期，以及你的分析所標示的有日期事件。",
-  "eventsEmpty": "未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期。"
+  "eventsEmpty": "未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期。",
+  "compareTitle": "比較",
+  "compareAdd": "加入股票",
+  "compareRemove": "移除",
+  "compareTickerHint": "股票代號，例如 MSFT",
+  "compareHint": "主要數據並排顯示；每行最佳數值會突出顯示。金額以各股票本身的貨幣計算。",
+  "compareNoAnalysis": "暫無分析"
 }

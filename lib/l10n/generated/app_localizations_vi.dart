@@ -1635,4 +1635,23 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây.';
+
+  @override
+  String get compareTitle => 'So sánh';
+
+  @override
+  String get compareAdd => 'Thêm cổ phiếu';
+
+  @override
+  String get compareRemove => 'Xóa';
+
+  @override
+  String get compareTickerHint => 'Mã cổ phiếu, ví dụ MSFT';
+
+  @override
+  String get compareHint =>
+      'Các chỉ số chính đặt cạnh nhau; giá trị tốt nhất ở mỗi hàng được làm nổi bật. Số tiền tính theo đơn vị tiền tệ riêng của từng cổ phiếu.';
+
+  @override
+  String get compareNoAnalysis => 'Chưa có phân tích';
 }

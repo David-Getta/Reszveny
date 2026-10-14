@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Atụmatụ EPS: {value}",
   "eventFromAnalysis": "Site na nyocha gị",
   "eventsHint": "Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, na ihe omume nwere ụbọchị nyocha gị gosiri.",
-  "eventsEmpty": "Enweghị ihe omume nwere ụbọchị n'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a."
+  "eventsEmpty": "Enweghị ihe omume nwere ụbọchị n'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a.",
+  "compareTitle": "Tụnyere",
+  "compareAdd": "Tinye stock",
+  "compareRemove": "Wepụ",
+  "compareTickerHint": "Ticker, dịka MSFT",
+  "compareHint": "Ọnụ ọgụgụ ndị dị mkpa n'akụkụ ibe ha; e gosipụtara uru kacha mma n'ahịrị ọ bụla. Ego dị n'ụdị ego nke stock ọ bụla.",
+  "compareNoAnalysis": "Enweghị nyocha ugbu a"
 }

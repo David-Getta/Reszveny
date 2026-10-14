@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Odhad EPS: {value}",
   "eventFromAnalysis": "Z tvojej analýzy",
   "eventsHint": "Dátumy výsledkov tvojich obľúbených akcií a akcií v portfóliu na najbližších 90 dní a udalosti s dátumom, ktoré označili tvoje analýzy.",
-  "eventsEmpty": "V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov."
+  "eventsEmpty": "V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov.",
+  "compareTitle": "Porovnanie",
+  "compareAdd": "Pridať akciu",
+  "compareRemove": "Odstrániť",
+  "compareTickerHint": "Ticker, napr. MSFT",
+  "compareHint": "Kľúčové ukazovatele vedľa seba; najlepšia hodnota v každom riadku je zvýraznená. Sumy sú v mene danej akcie.",
+  "compareNoAnalysis": "Zatiaľ bez analýzy"
 }

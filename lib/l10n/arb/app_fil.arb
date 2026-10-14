@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Tantyang EPS: {value}",
   "eventFromAnalysis": "Mula sa iyong pagsusuri",
   "eventsHint": "Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, at ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri.",
-  "eventsEmpty": "Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta."
+  "eventsEmpty": "Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta.",
+  "compareTitle": "Paghahambing",
+  "compareAdd": "Magdagdag ng stock",
+  "compareRemove": "Alisin",
+  "compareTickerHint": "Ticker, hal. MSFT",
+  "compareHint": "Mga pangunahing numero nang magkakatabi; naka-highlight ang pinakamahusay na value sa bawat row. Nasa sariling currency ng bawat stock ang mga halaga.",
+  "compareNoAnalysis": "Wala pang pagsusuri"
 }

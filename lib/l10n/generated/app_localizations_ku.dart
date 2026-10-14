@@ -1643,4 +1643,23 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî.';
+
+  @override
+  String get compareTitle => 'Berhevdan';
+
+  @override
+  String get compareAdd => 'Pişkekê zêde bike';
+
+  @override
+  String get compareRemove => 'Rake';
+
+  @override
+  String get compareTickerHint => 'Sembol, mînak MSFT';
+
+  @override
+  String get compareHint =>
+      'Hejmarên sereke li kêleka hev; nirxa herî baş di her rêzê de tê nîşankirin. Mîqdar bi dirava her pişkê bi xwe ne.';
+
+  @override
+  String get compareNoAnalysis => 'Hêj analîz tune';
 }

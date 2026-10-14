@@ -1626,4 +1626,23 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'មិនមានព្រឹត្តិការណ៍មានកាលបរិច្ឆេទក្នុង 90 ថ្ងៃខាងមុខទេ។ បន្ថែមចំណូលចិត្ត ឬភាគហ៊ុនក្នុងផលប័ត្រ ដើម្បីមើលកាលបរិច្ឆេទលទ្ធផលរបស់វានៅទីនេះ។';
+
+  @override
+  String get compareTitle => 'ប្រៀបធៀប';
+
+  @override
+  String get compareAdd => 'បន្ថែមភាគហ៊ុន';
+
+  @override
+  String get compareRemove => 'ដកចេញ';
+
+  @override
+  String get compareTickerHint => 'និមិត្តសញ្ញា ឧ. MSFT';
+
+  @override
+  String get compareHint =>
+      'តួលេខសំខាន់ៗនៅក្បែរគ្នា; តម្លៃល្អបំផុតក្នុងជួរនីមួយៗត្រូវបានបន្លិច។ ចំនួនទឹកប្រាក់គិតជារូបិយប័ណ្ណផ្ទាល់របស់ភាគហ៊ុននីមួយៗ។';
+
+  @override
+  String get compareNoAnalysis => 'មិនទាន់មានការវិភាគនៅឡើយ';
 }

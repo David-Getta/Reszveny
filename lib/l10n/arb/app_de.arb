@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS-Schätzung: {value}",
   "eventFromAnalysis": "Aus deiner Analyse",
   "eventsHint": "Berichtstermine deiner Favoriten und Portfolio-Aktien für die nächsten 90 Tage sowie datierte Ereignisse, die deine Analysen erkannt haben.",
-  "eventsEmpty": "Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen."
+  "eventsEmpty": "Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen.",
+  "compareTitle": "Vergleich",
+  "compareAdd": "Aktie hinzufügen",
+  "compareRemove": "Entfernen",
+  "compareTickerHint": "Ticker, z. B. MSFT",
+  "compareHint": "Kennzahlen im direkten Vergleich; der beste Wert jeder Zeile ist hervorgehoben. Beträge sind in der Währung der jeweiligen Aktie.",
+  "compareNoAnalysis": "Noch keine Analyse"
 }

@@ -67,6 +67,7 @@ class Api {
     this.adminToken = '',
     this.downloadBaseUrl = 'https://github.com/David-Getta/Reszveny/releases/latest/download/',
     this.googleNotificationToken = '',
+    this.trialPerIpPerDay = 10,
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store),
@@ -78,6 +79,11 @@ class Api {
 
   /// A nyitóoldal letöltés-gombjainak alapcíme (a fájlnév hozzáfűzve).
   final String downloadBaseUrl;
+
+  /// Egy IP-címről naponta legfeljebb ennyi új fiók kap próbaidőt (a többi
+  /// próbaidő nélkül indul, vásárolni tud); 0 = nincs korlát. Alacsonyra ne
+  /// állítsd: a mobilszolgáltatók sok felhasználót egy címen engednek ki.
+  final int trialPerIpPerDay;
 
   /// A Google Play valós idejű értesítéseinek (Pub/Sub push) titka: a push-cím
   /// `?token=` paramétere. Üresen az értesítési végpont nem érhető el.
@@ -279,6 +285,7 @@ class Api {
   Future<Response> _auth(Request r) async {
     final body = await _body(r);
     final (id, token) = store.createAnonymousUser(body['device_id'] as String?);
+    _limitTrial(r, id);
     final invite = _invite(r);
     if (invite != null) store.addInviteDevice(invite.code, id);
     return _json({
@@ -287,6 +294,34 @@ class Api {
       'entitlements': store.entitlement(id).toJson(),
       'invite': ?invite?.toJson(),
     });
+  }
+
+  /// A kliens IP-címe: a Railway (és más proxy) az `x-forwarded-for` első
+  /// elemében adja át; közvetlen kapcsolatnál a socket címe.
+  static String? _clientIp(Request r) {
+    final fwd = r.headers['x-forwarded-for']?.split(',').first.trim();
+    if (fwd != null && fwd.isNotEmpty) return fwd;
+    final info = r.context['shelf.io.connection_info'];
+    return info is HttpConnectionInfo ? info.remoteAddress.address : null;
+  }
+
+  /// Próbaidő-visszaélés ellen: ha erről a címről ma már [trialPerIpPerDay]
+  /// próbaidő indult, az új fiók próbaidő nélkül marad. A címet csak hash-elve,
+  /// két napig tároljuk.
+  void _limitTrial(Request r, String userId) {
+    final ip = _clientIp(r);
+    if (trialPerIpPerDay <= 0 || ip == null) return;
+    final hash = Store.hashToken('trial:$ip');
+    if (store.trialGrantsSince(hash, store.clock().subtract(const Duration(days: 1))) >= trialPerIpPerDay) {
+      final e = store.entitlement(userId);
+      store.save(
+        e
+          ..tier = null
+          ..periodEnd = store.clock(),
+      );
+      return;
+    }
+    store.logTrialGrant(hash);
   }
 
   Future<Response> _me(Request r) async {

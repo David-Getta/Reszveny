@@ -1647,4 +1647,23 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ma jiraan dhacdooyin taariikh leh 90-ka maalmood ee soo socda. Ku dar kuwa aad jeceshahay ama saamiyo portfoliyo si aad halkan ugu aragto taariikhaha natiijooyinkooda.';
+
+  @override
+  String get compareTitle => 'Isbarbardhig';
+
+  @override
+  String get compareAdd => 'Ku dar saami';
+
+  @override
+  String get compareRemove => 'Ka saar';
+
+  @override
+  String get compareTickerHint => 'Astaanta, tusaale MSFT';
+
+  @override
+  String get compareHint =>
+      'Tirooyinka muhiimka ah oo dhinac dhinac ah; qiimaha ugu fiican ee saf kasta waa la iftiimiyay. Lacagaha waxay ku qoran yihiin lacagta saami kasta.';
+
+  @override
+  String get compareNoAnalysis => 'Weli falanqayn ma jirto';
 }

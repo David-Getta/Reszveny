@@ -1647,4 +1647,23 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta.';
+
+  @override
+  String get compareTitle => 'Paghahambing';
+
+  @override
+  String get compareAdd => 'Magdagdag ng stock';
+
+  @override
+  String get compareRemove => 'Alisin';
+
+  @override
+  String get compareTickerHint => 'Ticker, hal. MSFT';
+
+  @override
+  String get compareHint =>
+      'Mga pangunahing numero nang magkakatabi; naka-highlight ang pinakamahusay na value sa bawat row. Nasa sariling currency ng bawat stock ang mga halaga.';
+
+  @override
+  String get compareNoAnalysis => 'Wala pang pagsusuri';
 }

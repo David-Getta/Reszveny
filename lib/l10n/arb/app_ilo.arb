@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Pattapatta ti EPS: {value}",
   "eventFromAnalysis": "Manipud iti panangsukimatmo",
   "eventsHint": "Dagiti petsa ti resulta dagiti paboritom ken dagiti stock iti portfoliom para iti sumaruno a 90 nga aldaw, ken dagiti pasamak nga addaan petsa a minarkaan dagiti panangsukimatmo.",
-  "eventsEmpty": "Awan ti pasamak nga addaan petsa iti sumaruno a 90 nga aldaw. Agnayon kadagiti paborito wenno stock iti portfolio tapno makitam ditoy dagiti petsa ti resultada."
+  "eventsEmpty": "Awan ti pasamak nga addaan petsa iti sumaruno a 90 nga aldaw. Agnayon kadagiti paborito wenno stock iti portfolio tapno makitam ditoy dagiti petsa ti resultada.",
+  "compareTitle": "Ikompara",
+  "compareAdd": "Inayon ti stock",
+  "compareRemove": "Ikkaten",
+  "compareTickerHint": "Ticker, kas pagarigan MSFT",
+  "compareHint": "Dagiti kangrunaan a numero iti abay ti tunggal maysa; nailasin ti kasayaatan a balor iti tunggal linia. Dagiti kantidad ket iti bukod a currency ti tunggal stock.",
+  "compareNoAnalysis": "Awan pay ti panangsukimat"
 }

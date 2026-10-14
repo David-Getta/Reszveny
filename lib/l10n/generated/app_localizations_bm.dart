@@ -1638,4 +1638,23 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ko nata si don tɛ tile 90 nataw kɔnɔ. Diyanyelenw walima aksiyɔn kɛsu aksiyɔnw fara a kan walasa k’u jatebɔ donw ye yan.';
+
+  @override
+  String get compareTitle => 'Sanga ɲɔgɔn ma';
+
+  @override
+  String get compareAdd => 'Aksiyɔn dɔ fara a kan';
+
+  @override
+  String get compareRemove => 'A bɔ';
+
+  @override
+  String get compareTickerHint => 'Aksiyɔn taamasiyɛn, i n\'a fɔ MSFT';
+
+  @override
+  String get compareHint =>
+      'Jatebila nafamaw ɲɔgɔn kɛrɛ fɛ; jɛrɛ kelen kelen bɛɛ la, hakɛ ɲumanba jiralen bɛ. Wari hakɛw bɛ aksiyɔn kelen kelen bɛɛ yɛrɛ wari suguya la.';
+
+  @override
+  String get compareNoAnalysis => 'Sɛgɛsɛgɛli si tɛ yen fɔlɔ';
 }

@@ -1635,4 +1635,23 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ايندڙ 90 ڏينهن ۾ ڪو به تاريخ وارو واقعو ناهي. نتيجن جون تاريخون هتي ڏسڻ لاءِ پسنديده يا پورٽ فوليو شيئر شامل ڪريو.';
+
+  @override
+  String get compareTitle => 'ڀيٽ';
+
+  @override
+  String get compareAdd => 'شيئر شامل ڪريو';
+
+  @override
+  String get compareRemove => 'هٽايو';
+
+  @override
+  String get compareTickerHint => 'ٽڪر، مثال طور MSFT';
+
+  @override
+  String get compareHint =>
+      'اهم انگ اکر هڪ ٻئي جي ڀرسان؛ هر قطار ۾ بهترين قدر نمايان ڪيل آهي. رقمون هر شيئر جي پنهنجي ڪرنسي ۾ آهن.';
+
+  @override
+  String get compareNoAnalysis => 'اڃا ڪو تجزيو ناهي';
 }

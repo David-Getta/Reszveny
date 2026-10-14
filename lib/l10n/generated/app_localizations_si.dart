@@ -1640,4 +1640,23 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ඉදිරි දින 90 තුළ දින සහිත සිදුවීම් නැත. ප්‍රතිඵල දින මෙහි බැලීමට ප්‍රියතම හෝ කළඹ කොටස් එක් කරන්න.';
+
+  @override
+  String get compareTitle => 'සංසන්දනය';
+
+  @override
+  String get compareAdd => 'කොටසක් එක් කරන්න';
+
+  @override
+  String get compareRemove => 'ඉවත් කරන්න';
+
+  @override
+  String get compareTickerHint => 'ටිකර්, උදා. MSFT';
+
+  @override
+  String get compareHint =>
+      'ප්‍රධාන සංඛ්‍යා එකිනෙක අසල; එක් එක් පේළියේ හොඳම අගය උද්දීපනය කර ඇත. මුදල් ප්‍රමාණ එක් එක් කොටසේ මුදල් ඒකකයෙන් වේ.';
+
+  @override
+  String get compareNoAnalysis => 'තවම විශ්ලේෂණයක් නැත';
 }

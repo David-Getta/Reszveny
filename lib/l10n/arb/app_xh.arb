@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Uqikelelo lwe-EPS: {value}",
   "eventFromAnalysis": "Kuhlalutyo lwakho",
   "eventsHint": "Imihla yeziphumo zezabelo ozithandayo nezepotifoliyo yakho kwiintsuku ezingama-90 ezizayo, kunye neziganeko ezinemihla eziphawulwe luhlalutyo lwakho.",
-  "eventsEmpty": "Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha."
+  "eventsEmpty": "Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha.",
+  "compareTitle": "Thelekisa",
+  "compareAdd": "Yongeza isitokhwe",
+  "compareRemove": "Susa",
+  "compareTickerHint": "Ticker, umzekelo MSFT",
+  "compareHint": "Amanani aphambili ecaleni komnye; elona xabiso lilungileyo kumqolo ngamnye liqaqanjisiwe. Izixa zikwimali yesitokhwe ngasinye.",
+  "compareNoAnalysis": "Akukabikho uhlalutyo"
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS dự kiến: {value}",
   "eventFromAnalysis": "Từ phân tích của bạn",
   "eventsHint": "Ngày công bố kết quả kinh doanh của các cổ phiếu yêu thích và trong danh mục của bạn trong 90 ngày tới, cùng các sự kiện có ngày cụ thể mà phân tích của bạn đã đánh dấu.",
-  "eventsEmpty": "Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây."
+  "eventsEmpty": "Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây.",
+  "compareTitle": "So sánh",
+  "compareAdd": "Thêm cổ phiếu",
+  "compareRemove": "Xóa",
+  "compareTickerHint": "Mã cổ phiếu, ví dụ MSFT",
+  "compareHint": "Các chỉ số chính đặt cạnh nhau; giá trị tốt nhất ở mỗi hàng được làm nổi bật. Số tiền tính theo đơn vị tiền tệ riêng của từng cổ phiếu.",
+  "compareNoAnalysis": "Chưa có phân tích"
 }

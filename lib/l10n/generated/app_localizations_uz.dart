@@ -1643,4 +1643,23 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Keyingi 90 kunda sanali voqealar yoʻq. Hisobot sanalarini shu yerda koʻrish uchun sevimlilar yoki portfel aksiyalarini qoʻshing.';
+
+  @override
+  String get compareTitle => 'Taqqoslash';
+
+  @override
+  String get compareAdd => 'Aksiya qoʻshish';
+
+  @override
+  String get compareRemove => 'Olib tashlash';
+
+  @override
+  String get compareTickerHint => 'Tiker, masalan MSFT';
+
+  @override
+  String get compareHint =>
+      'Asosiy koʻrsatkichlar yonma-yon; har bir qatordagi eng yaxshi qiymat ajratib koʻrsatilgan. Summalar har bir aksiyaning oʻz valyutasida.';
+
+  @override
+  String get compareNoAnalysis => 'Hali tahlil yoʻq';
 }

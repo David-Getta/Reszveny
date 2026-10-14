@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Àfojúsùn EPS: {value}",
   "eventFromAnalysis": "Láti inú ìtúpalẹ̀ yín",
   "eventsHint": "Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àti àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí.",
-  "eventsEmpty": "Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí."
+  "eventsEmpty": "Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí.",
+  "compareTitle": "Ìfiwéra",
+  "compareAdd": "Fi ìpín kún",
+  "compareRemove": "Yọ kúrò",
+  "compareTickerHint": "Àmì ìpín, àpẹẹrẹ MSFT",
+  "compareHint": "Àwọn ìṣirò pàtàkì lẹ́gbẹ̀ẹ́ ara wọn; iye tó dára jùlọ ní ìlà kọ̀ọ̀kan ni a tẹnumọ́. Àwọn iye owó wà ní owó ìpín kọ̀ọ̀kan.",
+  "compareNoAnalysis": "Kò sí ìtúpalẹ̀ síbẹ̀"
 }

@@ -1637,4 +1637,23 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'अगिला 90 दिन में कवनो तारीख वाला घटना नइखे। इहाँ नतीजा के तारीख देखे खातिर पसंदीदा भा पोर्टफ़ोलियो में शेयर जोड़ीं।';
+
+  @override
+  String get compareTitle => 'तुलना';
+
+  @override
+  String get compareAdd => 'शेयर जोड़ीं';
+
+  @override
+  String get compareRemove => 'हटाईं';
+
+  @override
+  String get compareTickerHint => 'टिकर, जइसे MSFT';
+
+  @override
+  String get compareHint =>
+      'मुख्य आंकड़ा अगल-बगल; हर पंक्ति में सबसे बढ़िया मान हाइलाइट बा। रकम हर शेयर के आपन मुद्रा में बा।';
+
+  @override
+  String get compareNoAnalysis => 'अबहीं ले कवनो विश्लेषण नइखे';
 }

@@ -1644,4 +1644,23 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii.';
+
+  @override
+  String get compareTitle => 'Tsɔtsɔsɔ';
+
+  @override
+  String get compareAdd => 'Tsɔ akpa aɖe kpe ɖe eŋu';
+
+  @override
+  String get compareRemove => 'Ɖee ɖa';
+
+  @override
+  String get compareTickerHint => 'Ticker dzesi, abe MSFT ene';
+
+  @override
+  String get compareHint =>
+      'Xexlẽdzesi veviwo le wo nɔewo xa; wode dzesi asixɔxɔ nyuitɔ kekeake le fli ɖesiaɖe me. Gaxexlẽwo le akpa ɖesiaɖe ƒe ga ƒomevi ŋutɔ me.';
+
+  @override
+  String get compareNoAnalysis => 'Numekuku aɖeke meli haɖe o';
 }

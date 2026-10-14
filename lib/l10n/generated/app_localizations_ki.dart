@@ -1641,4 +1641,23 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Gũtirĩ maũndũ marĩ na matukũ mĩthenya-inĩ 90 ĩrĩa ĩroka. Ongerera iria wendete kana hisa nĩguo wone matukũ ma maumĩrĩra mazo haha.';
+
+  @override
+  String get compareTitle => 'Gereranĩria';
+
+  @override
+  String get compareAdd => 'Ongerera hisa';
+
+  @override
+  String get compareRemove => 'Ruta';
+
+  @override
+  String get compareTickerHint => 'Ticker, ta MSFT';
+
+  @override
+  String get compareHint =>
+      'Namba cia bata hamwe hĩndĩ ĩmwe; thogora mwega makĩria mũhari-inĩ o wothe nĩ ũmũrĩkĩtio. Mbeca irĩ na mbeca cia o hisa.';
+
+  @override
+  String get compareNoAnalysis => 'Gũtirĩ ũthuthuria o na rĩu';
 }

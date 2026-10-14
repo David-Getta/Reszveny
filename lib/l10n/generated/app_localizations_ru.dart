@@ -1692,4 +1692,23 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'В ближайшие 90 дней нет событий с датой. Добавьте акции в избранное или портфель, чтобы видеть здесь даты их отчётности.';
+
+  @override
+  String get compareTitle => 'Сравнение';
+
+  @override
+  String get compareAdd => 'Добавить акцию';
+
+  @override
+  String get compareRemove => 'Удалить';
+
+  @override
+  String get compareTickerHint => 'Тикер, например MSFT';
+
+  @override
+  String get compareHint =>
+      'Ключевые показатели рядом; лучшее значение в каждой строке выделено. Суммы указаны в валюте каждой акции.';
+
+  @override
+  String get compareNoAnalysis => 'Анализа пока нет';
 }

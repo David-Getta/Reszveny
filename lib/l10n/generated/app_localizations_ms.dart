@@ -1644,4 +1644,23 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Tiada acara bertarikh dalam 90 hari akan datang. Tambah saham kegemaran atau portfolio untuk melihat tarikh keputusannya di sini.';
+
+  @override
+  String get compareTitle => 'Bandingkan';
+
+  @override
+  String get compareAdd => 'Tambah saham';
+
+  @override
+  String get compareRemove => 'Alih keluar';
+
+  @override
+  String get compareTickerHint => 'Ticker, cth. MSFT';
+
+  @override
+  String get compareHint =>
+      'Angka utama sebelah-menyebelah; nilai terbaik dalam setiap baris diserlahkan. Amaun adalah dalam mata wang setiap saham sendiri.';
+
+  @override
+  String get compareNoAnalysis => 'Belum ada analisis';
 }

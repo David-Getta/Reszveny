@@ -1640,4 +1640,23 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle.';
+
+  @override
+  String get compareTitle => 'Karşılaştır';
+
+  @override
+  String get compareAdd => 'Hisse ekle';
+
+  @override
+  String get compareRemove => 'Kaldır';
+
+  @override
+  String get compareTickerHint => 'Hisse sembolü, ör. MSFT';
+
+  @override
+  String get compareHint =>
+      'Temel rakamlar yan yana; her satırdaki en iyi değer vurgulanır. Tutarlar her hissenin kendi para birimindedir.';
+
+  @override
+  String get compareNoAnalysis => 'Henüz analiz yok';
 }

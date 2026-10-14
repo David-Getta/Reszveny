@@ -1648,4 +1648,23 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Առաջիկա 90 օրում ամսաթվով իրադարձություններ չկան։ Ավելացրեք ընտրյալներ կամ պորտֆելի բաժնետոմսեր՝ այստեղ դրանց արդյունքների ամսաթվերը տեսնելու համար։';
+
+  @override
+  String get compareTitle => 'Համեմատել';
+
+  @override
+  String get compareAdd => 'Ավելացնել բաժնետոմս';
+
+  @override
+  String get compareRemove => 'Հեռացնել';
+
+  @override
+  String get compareTickerHint => 'Թիքեր, օր.՝ MSFT';
+
+  @override
+  String get compareHint =>
+      'Հիմնական ցուցանիշները կողք կողքի. յուրաքանչյուր տողում լավագույն արժեքն ընդգծված է։ Գումարները ներկայացված են յուրաքանչյուր բաժնետոմսի սեփական արժույթով։';
+
+  @override
+  String get compareNoAnalysis => 'Վերլուծություն դեռ չկա';
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Xayma EPS: {value}",
   "eventFromAnalysis": "Ci sa saytu",
   "eventsHint": "Bisi njureef yu aksiyoŋ yi nga gënal ak yu sa portfolio ci 90 fan yii di ñëw, ak mbir yu am bis yi sa saytu yi tànn.",
-  "eventsEmpty": "Amul mbir bu am bis ci 90 fan yii di ñëw. Yokkal yi nga gënal walla aksiyoŋ ngir gis fii seen bisi njureef."
+  "eventsEmpty": "Amul mbir bu am bis ci 90 fan yii di ñëw. Yokkal yi nga gënal walla aksiyoŋ ngir gis fii seen bisi njureef.",
+  "compareTitle": "Méngale",
+  "compareAdd": "Yokk aksiyoŋ",
+  "compareRemove": "Dindi",
+  "compareTickerHint": "Màndargay aksiyoŋ, misaal MSFT",
+  "compareHint": "Limi yu am solo yi ñu teg leen ci wetu; li gën ci rëdd gu nekk dañu ko feeñal. Xaalis yi ci xeetu xaalisu aksiyoŋ bu nekk lañu.",
+  "compareNoAnalysis": "Amagul saytu"
 }

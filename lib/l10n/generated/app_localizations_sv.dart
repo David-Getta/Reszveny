@@ -1641,4 +1641,23 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här.';
+
+  @override
+  String get compareTitle => 'Jämför';
+
+  @override
+  String get compareAdd => 'Lägg till en aktie';
+
+  @override
+  String get compareRemove => 'Ta bort';
+
+  @override
+  String get compareTickerHint => 'Ticker, t.ex. MSFT';
+
+  @override
+  String get compareHint =>
+      'Nyckeltal sida vid sida; bästa värdet på varje rad är markerat. Beloppen anges i respektive akties valuta.';
+
+  @override
+  String get compareNoAnalysis => 'Ingen analys än';
 }

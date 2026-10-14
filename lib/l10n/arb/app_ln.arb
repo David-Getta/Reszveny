@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Estimation ya EPS: {value}",
   "eventFromAnalysis": "Na analyse na yo",
   "eventsHint": "Ba dati ya ba résultats ya oyo olingaka mpe ya ba action ya portefeuille na yo mpo na mikolo 90 oyo ekoya, mpe makambo oyo ezali na dati oyo ba analyse na yo emonisi.",
-  "eventsEmpty": "Makambo oyo ezali na dati ezali te na mikolo 90 oyo ekoya. Bakisá oyo olingaka to ba action na portefeuille mpo na komona awa ba dati ya ba résultats na yango."
+  "eventsEmpty": "Makambo oyo ezali na dati ezali te na mikolo 90 oyo ekoya. Bakisá oyo olingaka to ba action na portefeuille mpo na komona awa ba dati ya ba résultats na yango.",
+  "compareTitle": "Kokokanisa",
+  "compareAdd": "Bakisa action",
+  "compareRemove": "Longola",
+  "compareTickerHint": "Ticker, ndakisa MSFT",
+  "compareHint": "Mituya ya ntina pembeni na pembeni; motuya oyo eleki malamu na molɔngɔ moko moko emonisami. Mbɔngɔ ezali na mbɔngɔ ya action moko moko.",
+  "compareNoAnalysis": "Analyse ezali naino te"
 }

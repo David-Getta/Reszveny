@@ -1640,4 +1640,23 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+
+  @override
+  String get compareTitle => 'Compare';
+
+  @override
+  String get compareAdd => 'Add a stock';
+
+  @override
+  String get compareRemove => 'Remove';
+
+  @override
+  String get compareTickerHint => 'Ticker, e.g. MSFT';
+
+  @override
+  String get compareHint =>
+      'Key figures side by side; the best value in each row is highlighted. Amounts are in each stock\'s own currency.';
+
+  @override
+  String get compareNoAnalysis => 'No analysis yet';
 }

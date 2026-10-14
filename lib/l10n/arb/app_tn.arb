@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Kakanyo ya EPS: {value}",
   "eventFromAnalysis": "Go tswa mo tshekatshekong ya gago",
   "eventsHint": "Malatsi a dipoelo a dishere tse o di ratang le tsa potefolio ya gago mo malatsing a le 90 a a tlang, le ditiragalo tse di nang le malatsi tse ditshekatsheko tsa gago di di supileng.",
-  "eventsEmpty": "Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano."
+  "eventsEmpty": "Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano.",
+  "compareTitle": "Bapisa",
+  "compareAdd": "Tsenya seabelo",
+  "compareRemove": "Ntsha",
+  "compareTickerHint": "Ticker, sekai MSFT",
+  "compareHint": "Dipalo tsa botlhokwa di bapile; boleng jo bo gaisang mo moleng mongwe le mongwe bo tlhagisitswe. Madi a mo mofuteng wa madi wa seabelo sengwe le sengwe.",
+  "compareNoAnalysis": "Ga go na tshekatsheko ga jaana"
 }

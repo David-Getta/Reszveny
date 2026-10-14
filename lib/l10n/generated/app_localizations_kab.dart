@@ -1639,4 +1639,23 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ulac tidyanin s uzemz deg 90 n wussan i d-iteddun. Rnu ismenyifen neɣ ayen ɣer uqrab akken ad twaliḍ dagi izemziyen n yigmaḍ-nsen.';
+
+  @override
+  String get compareTitle => 'Serwes';
+
+  @override
+  String get compareAdd => 'Rnu aksyun';
+
+  @override
+  String get compareRemove => 'Kkes';
+
+  @override
+  String get compareTickerHint => 'Azamul, amedya MSFT';
+
+  @override
+  String get compareHint =>
+      'Imḍanen igejdanen yiwen ɣer tama n wayeḍ; azal ufrin deg yal izirig yettwasbeggen. Idrimen llan s tedrimt n yal aksyun.';
+
+  @override
+  String get compareNoAnalysis => 'Ulac tasleḍt ar tura';
 }

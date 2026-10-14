@@ -1641,4 +1641,23 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin.';
+
+  @override
+  String get compareTitle => 'Müqayisə';
+
+  @override
+  String get compareAdd => 'Səhm əlavə et';
+
+  @override
+  String get compareRemove => 'Sil';
+
+  @override
+  String get compareTickerHint => 'Tiker, məs. MSFT';
+
+  @override
+  String get compareHint =>
+      'Əsas göstəricilər yan-yana; hər sətirdə ən yaxşı dəyər vurğulanır. Məbləğlər hər səhmin öz valyutasındadır.';
+
+  @override
+  String get compareNoAnalysis => 'Hələ təhlil yoxdur';
 }

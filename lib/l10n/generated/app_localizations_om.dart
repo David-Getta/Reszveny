@@ -1647,4 +1647,23 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu\'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali.';
+
+  @override
+  String get compareTitle => 'Wal madaali';
+
+  @override
+  String get compareAdd => 'Aksiyoona dabali';
+
+  @override
+  String get compareRemove => 'Haqi';
+
+  @override
+  String get compareTickerHint => 'Ticker, fakkeenyaaf MSFT';
+
+  @override
+  String get compareHint =>
+      'Lakkoofsota ijoo wal bira; tarree tokkoon tokkoon keessatti gatiin caalaan ifa ta\'eera. Baay\'inni maallaqaa maallaqa mataa aksiyoona tokkoon tokkoo isaaniitiin kenname.';
+
+  @override
+  String get compareNoAnalysis => 'Ammallee xiinxalli hin jiru';
 }

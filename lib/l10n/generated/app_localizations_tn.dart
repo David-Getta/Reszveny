@@ -1650,4 +1650,23 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano.';
+
+  @override
+  String get compareTitle => 'Bapisa';
+
+  @override
+  String get compareAdd => 'Tsenya seabelo';
+
+  @override
+  String get compareRemove => 'Ntsha';
+
+  @override
+  String get compareTickerHint => 'Ticker, sekai MSFT';
+
+  @override
+  String get compareHint =>
+      'Dipalo tsa botlhokwa di bapile; boleng jo bo gaisang mo moleng mongwe le mongwe bo tlhagisitswe. Madi a mo mofuteng wa madi wa seabelo sengwe le sengwe.';
+
+  @override
+  String get compareNoAnalysis => 'Ga go na tshekatsheko ga jaana';
 }

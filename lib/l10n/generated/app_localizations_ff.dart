@@ -1636,4 +1636,23 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo.';
+
+  @override
+  String get compareTitle => 'Fondondir';
+
+  @override
+  String get compareAdd => 'Ɓeydu aksiyoŋ';
+
+  @override
+  String get compareRemove => 'Momtu';
+
+  @override
+  String get compareTickerHint => 'Kod aksiyoŋ, ɗum noon MSFT';
+
+  @override
+  String get compareHint =>
+      'Limooje mawɗe ɗee takko takko; nafoore ɓurnde moƴƴude e nder gaɗa kala ko feeñinaa. Limooje ceede ɗee ko e ceede aksiyoŋ kala.';
+
+  @override
+  String get compareNoAnalysis => 'Alaa ƴeewndo tawo';
 }

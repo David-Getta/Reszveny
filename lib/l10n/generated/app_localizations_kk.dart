@@ -1641,4 +1641,23 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Алдағы 90 күнде күні белгіленген оқиға жоқ. Есеп күндерін осында көру үшін таңдаулыларға немесе портфельге акция қосыңыз.';
+
+  @override
+  String get compareTitle => 'Салыстыру';
+
+  @override
+  String get compareAdd => 'Акция қосу';
+
+  @override
+  String get compareRemove => 'Жою';
+
+  @override
+  String get compareTickerHint => 'Тикер, мысалы MSFT';
+
+  @override
+  String get compareHint =>
+      'Негізгі көрсеткіштер қатар; әр жолдағы ең жақсы мән белгіленген. Сомалар әр акцияның өз валютасында.';
+
+  @override
+  String get compareNoAnalysis => 'Әзірге талдау жоқ';
 }

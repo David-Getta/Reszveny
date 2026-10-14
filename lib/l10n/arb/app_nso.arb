@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Kakanyo ya EPS: {value}",
   "eventFromAnalysis": "Go tšwa tshekatshekong ya gago",
   "eventsHint": "Matšatši a dipoelo tša tše o di ratago le dišere tša photefolio ya gago mo matšatšing a 90 a a tlago, le ditiragalo tše di nago le matšatši tšeo ditshekatsheko tša gago di di supilego.",
-  "eventsEmpty": "Ga go na ditiragalo tše di nago le matšatši mo matšatšing a 90 a a tlago. Oketša tše di ratwago goba dišere tša photefolio go bona matšatši a dipoelo tša tšona mo."
+  "eventsEmpty": "Ga go na ditiragalo tše di nago le matšatši mo matšatšing a 90 a a tlago. Oketša tše di ratwago goba dišere tša photefolio go bona matšatši a dipoelo tša tšona mo.",
+  "compareTitle": "Bapetša",
+  "compareAdd": "Oketša šere",
+  "compareRemove": "Tloša",
+  "compareTickerHint": "Ticker, mohlala MSFT",
+  "compareHint": "Dipalo tše bohlokwa ka thoko ga tše dingwe; boleng bjo bokaone mothalading o mongwe le o mongwe bo gateletšwe. Ditšhelete di ka tšhelete ya šere ye nngwe le ye nngwe.",
+  "compareNoAnalysis": "Ga go na tshekatsheko ga bjale"
 }

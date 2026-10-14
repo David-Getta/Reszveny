@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Prognoza EPS: {value}",
   "eventFromAnalysis": "Z Twojej analizy",
   "eventsHint": "Daty wyników Twoich ulubionych spółek i spółek z portfela na najbliższe 90 dni oraz wydarzenia z datą wskazane przez Twoje analizy.",
-  "eventsEmpty": "Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników."
+  "eventsEmpty": "Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników.",
+  "compareTitle": "Porównaj",
+  "compareAdd": "Dodaj akcję",
+  "compareRemove": "Usuń",
+  "compareTickerHint": "Symbol, np. MSFT",
+  "compareHint": "Kluczowe wskaźniki obok siebie; najlepsza wartość w każdym wierszu jest wyróżniona. Kwoty podano w walucie danej akcji.",
+  "compareNoAnalysis": "Brak analizy"
 }

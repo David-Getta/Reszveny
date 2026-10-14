@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Tijjol EPS: {value}",
   "eventFromAnalysis": "Iwde e ƴeewndo maa",
   "eventsHint": "Ñalɗi ngalluuji cuɓaaɗe maa e aksiyoŋ am e nder balɗe 90 garooɗe, e kewuuji jogiiɗi ñalɗi ɗi ƴeewndooji maa kollitii.",
-  "eventsEmpty": "Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo."
+  "eventsEmpty": "Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo.",
+  "compareTitle": "Fondondir",
+  "compareAdd": "Ɓeydu aksiyoŋ",
+  "compareRemove": "Momtu",
+  "compareTickerHint": "Kod aksiyoŋ, ɗum noon MSFT",
+  "compareHint": "Limooje mawɗe ɗee takko takko; nafoore ɓurnde moƴƴude e nder gaɗa kala ko feeñinaa. Limooje ceede ɗee ko e ceede aksiyoŋ kala.",
+  "compareNoAnalysis": "Alaa ƴeewndo tawo"
 }

@@ -1639,4 +1639,23 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş.';
+
+  @override
+  String get compareTitle => 'Deňeşdirme';
+
+  @override
+  String get compareAdd => 'Paýnama goş';
+
+  @override
+  String get compareRemove => 'Aýyr';
+
+  @override
+  String get compareTickerHint => 'Tiker, meselem MSFT';
+
+  @override
+  String get compareHint =>
+      'Esasy görkezijiler gapdal-gapdala; her setirde iň gowy baha bellenýär. Mukdarlar her paýnamanyň öz walýutasynda.';
+
+  @override
+  String get compareNoAnalysis => 'Entek seljerme ýok';
 }

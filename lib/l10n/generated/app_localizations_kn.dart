@@ -1646,4 +1646,23 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ಮುಂದಿನ 90 ದಿನಗಳಲ್ಲಿ ದಿನಾಂಕವಿರುವ ಯಾವುದೇ ಘಟನೆಗಳಿಲ್ಲ. ಅವುಗಳ ಫಲಿತಾಂಶ ದಿನಾಂಕಗಳನ್ನು ಇಲ್ಲಿ ನೋಡಲು ಮೆಚ್ಚಿನವುಗಳು ಅಥವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಷೇರುಗಳನ್ನು ಸೇರಿಸಿ.';
+
+  @override
+  String get compareTitle => 'ಹೋಲಿಕೆ';
+
+  @override
+  String get compareAdd => 'ಷೇರು ಸೇರಿಸಿ';
+
+  @override
+  String get compareRemove => 'ತೆಗೆದುಹಾಕಿ';
+
+  @override
+  String get compareTickerHint => 'ಟಿಕರ್, ಉದಾ. MSFT';
+
+  @override
+  String get compareHint =>
+      'ಪ್ರಮುಖ ಅಂಕಿಅಂಶಗಳು ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ; ಪ್ರತಿ ಸಾಲಿನ ಅತ್ಯುತ್ತಮ ಮೌಲ್ಯವನ್ನು ಹೈಲೈಟ್ ಮಾಡಲಾಗಿದೆ. ಮೊತ್ತಗಳು ಪ್ರತಿ ಷೇರಿನ ಸ್ವಂತ ಕರೆನ್ಸಿಯಲ್ಲಿವೆ.';
+
+  @override
+  String get compareNoAnalysis => 'ಇನ್ನೂ ಯಾವುದೇ ವಿಶ್ಲೇಷಣೆ ಇಲ್ಲ';
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Tilmaama EPS: {value}",
   "eventFromAnalysis": "Xiinxala kee irraa",
   "eventsHint": "Guyyoota bu'aa aksiyoonota filatamoo fi poortfooliyoo keetii guyyoota 90 itti aananitti, akkasumas taateewwan guyyaa qaban kan xiinxalli kee agarsiise.",
-  "eventsEmpty": "Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali."
+  "eventsEmpty": "Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali.",
+  "compareTitle": "Wal madaali",
+  "compareAdd": "Aksiyoona dabali",
+  "compareRemove": "Haqi",
+  "compareTickerHint": "Ticker, fakkeenyaaf MSFT",
+  "compareHint": "Lakkoofsota ijoo wal bira; tarree tokkoon tokkoon keessatti gatiin caalaan ifa ta'eera. Baay'inni maallaqaa maallaqa mataa aksiyoona tokkoon tokkoo isaaniitiin kenname.",
+  "compareNoAnalysis": "Ammallee xiinxalli hin jiru"
 }

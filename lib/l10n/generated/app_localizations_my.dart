@@ -1636,4 +1636,23 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'နောက် ရက် 90 အတွင်း ရက်စွဲပါ ဖြစ်ရပ် မရှိပါ။ ရလဒ်ထုတ်ပြန်မည့်ရက်များကို ဤနေရာတွင် ကြည့်ရန် အကြိုက်ဆုံး သို့မဟုတ် ပေါ့ဖိုလီယို ရှယ်ယာများ ထည့်ပါ။';
+
+  @override
+  String get compareTitle => 'နှိုင်းယှဉ်ရန်';
+
+  @override
+  String get compareAdd => 'ရှယ်ယာ ထည့်ရန်';
+
+  @override
+  String get compareRemove => 'ဖယ်ရှားရန်';
+
+  @override
+  String get compareTickerHint => 'ရှယ်ယာသင်္ကေတ၊ ဥပမာ MSFT';
+
+  @override
+  String get compareHint =>
+      'အဓိက ကိန်းဂဏန်းများကို ဘေးချင်းယှဉ်ပြထားသည်။ အတန်းတိုင်းတွင် အကောင်းဆုံးတန်ဖိုးကို မီးမောင်းထိုးပြထားသည်။ ပမာဏများသည် ရှယ်ယာတစ်ခုစီ၏ ကိုယ်ပိုင်ငွေကြေးဖြင့် ဖြစ်သည်။';
+
+  @override
+  String get compareNoAnalysis => 'သုံးသပ်ချက် မရှိသေးပါ';
 }

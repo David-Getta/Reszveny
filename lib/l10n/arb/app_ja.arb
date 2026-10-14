@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS 予想: {value}",
   "eventFromAnalysis": "自分の分析から",
   "eventsHint": "お気に入りとポートフォリオの銘柄の今後 90 日間の決算発表日と、分析で示された日付付きのイベントです。",
-  "eventsEmpty": "今後 90 日間に日付付きのイベントはありません。お気に入りやポートフォリオに銘柄を追加すると、ここに決算発表日が表示されます。"
+  "eventsEmpty": "今後 90 日間に日付付きのイベントはありません。お気に入りやポートフォリオに銘柄を追加すると、ここに決算発表日が表示されます。",
+  "compareTitle": "比較",
+  "compareAdd": "銘柄を追加",
+  "compareRemove": "削除",
+  "compareTickerHint": "ティッカー（例：MSFT）",
+  "compareHint": "主要指標を並べて表示します。各行で最も良い値がハイライトされます。金額は各銘柄の通貨で表示されます。",
+  "compareNoAnalysis": "分析はまだありません"
 }

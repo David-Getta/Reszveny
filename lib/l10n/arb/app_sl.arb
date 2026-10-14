@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Ocena EPS: {value}",
   "eventFromAnalysis": "Iz vaše analize",
   "eventsHint": "Datumi objave rezultatov za vaše priljubljene delnice in delnice v portfelju v naslednjih 90 dneh ter datirani dogodki, ki so jih označile vaše analize.",
-  "eventsEmpty": "V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov."
+  "eventsEmpty": "V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov.",
+  "compareTitle": "Primerjava",
+  "compareAdd": "Dodaj delnico",
+  "compareRemove": "Odstrani",
+  "compareTickerHint": "Oznaka, npr. MSFT",
+  "compareHint": "Ključni podatki drug ob drugem; najboljša vrednost v vsaki vrstici je poudarjena. Zneski so v valuti posamezne delnice.",
+  "compareNoAnalysis": "Analize še ni"
 }

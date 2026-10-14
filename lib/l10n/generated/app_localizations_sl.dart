@@ -1693,4 +1693,23 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov.';
+
+  @override
+  String get compareTitle => 'Primerjava';
+
+  @override
+  String get compareAdd => 'Dodaj delnico';
+
+  @override
+  String get compareRemove => 'Odstrani';
+
+  @override
+  String get compareTickerHint => 'Oznaka, npr. MSFT';
+
+  @override
+  String get compareHint =>
+      'Ključni podatki drug ob drugem; najboljša vrednost v vsaki vrstici je poudarjena. Zneski so v valuti posamezne delnice.';
+
+  @override
+  String get compareNoAnalysis => 'Analize še ni';
 }

@@ -1638,4 +1638,23 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'આગામી 90 દિવસમાં કોઈ તારીખવાળી ઘટના નથી. અહીં પરિણામ તારીખો જોવા મનપસંદ અથવા પોર્ટફોલિયોમાં શેર ઉમેરો.';
+
+  @override
+  String get compareTitle => 'સરખામણી';
+
+  @override
+  String get compareAdd => 'સ્ટૉક ઉમેરો';
+
+  @override
+  String get compareRemove => 'દૂર કરો';
+
+  @override
+  String get compareTickerHint => 'ટિકર, દા.ત. MSFT';
+
+  @override
+  String get compareHint =>
+      'મુખ્ય આંકડા બાજુ-બાજુમાં; દરેક પંક્તિમાં શ્રેષ્ઠ મૂલ્ય હાઇલાઇટ કરેલ છે. રકમ દરેક સ્ટૉકના પોતાના ચલણમાં છે.';
+
+  @override
+  String get compareNoAnalysis => 'હજુ કોઈ વિશ્લેષણ નથી';
 }

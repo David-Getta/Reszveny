@@ -1636,4 +1636,23 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'अगिला 90 दिनमे कोनो तिथियुक्त घटना नहि अछि। पसंदीदा वा पोर्टफ़ोलियो शेयर जोड़ू, तँ एतए ओकर परिणामक तिथि देखाएत।';
+
+  @override
+  String get compareTitle => 'तुलना';
+
+  @override
+  String get compareAdd => 'शेयर जोड़ू';
+
+  @override
+  String get compareRemove => 'हटाउ';
+
+  @override
+  String get compareTickerHint => 'टिकर, जेना MSFT';
+
+  @override
+  String get compareHint =>
+      'मुख्य आँकड़ा संग-संग; प्रत्येक पंक्तिमे सर्वश्रेष्ठ मान हाइलाइट कएल गेल अछि। राशि प्रत्येक शेयरक अपन मुद्रामे अछि।';
+
+  @override
+  String get compareNoAnalysis => 'एखन धरि कोनो विश्लेषण नहि';
 }

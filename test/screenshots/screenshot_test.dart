@@ -819,6 +819,22 @@ void main() {
     await _shot(tester, 'events_page_phone_hu');
   });
 
+  testWidgets('comparing three stocks (hungarian, phone)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-open')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-pick-MSFT')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-add')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-pick-NVDA')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'compare_phone_hu');
+  });
+
   testWidgets('first launch onboarding (hungarian, phone)', (tester) async {
     final s = _services(locale: const Locale('hu'))..preferences.onboardingDone = false;
     await pumpApp(tester, s, const Size(430, 900));

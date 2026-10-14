@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Tombana EPS: {value}",
   "eventFromAnalysis": "Avy amin'ny fandalinanao",
   "eventsHint": "Ny daty famoahana vokatra ho an'ny ankafizinao sy ny anjara ao amin'ny kitapom-bolanao ao anatin'ny 90 andro ho avy, ary ireo hetsika misy daty nomarihan'ny fandalinanao.",
-  "eventsEmpty": "Tsy misy hetsika misy daty ao anatin'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr'izy ireo."
+  "eventsEmpty": "Tsy misy hetsika misy daty ao anatin'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr'izy ireo.",
+  "compareTitle": "Fampitahana",
+  "compareAdd": "Ampio aksiona",
+  "compareRemove": "Esory",
+  "compareTickerHint": "Ticker, ohatra MSFT",
+  "compareHint": "Ireo tarehimarika fototra mifanila; asongadina ny sanda tsara indrindra isaky ny andalana. Ny vola dia amin'ny vola ampiasain'ny aksiona tsirairay.",
+  "compareNoAnalysis": "Mbola tsy misy fandalinana"
 }

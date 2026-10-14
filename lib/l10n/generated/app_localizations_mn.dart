@@ -1642,4 +1642,23 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ойрын 90 хоногт огноотой үйл явдал алга. Тайлангийн огноог энд харахын тулд дуртай эсвэл портфолиодоо хувьцаа нэмнэ үү.';
+
+  @override
+  String get compareTitle => 'Харьцуулах';
+
+  @override
+  String get compareAdd => 'Хувьцаа нэмэх';
+
+  @override
+  String get compareRemove => 'Хасах';
+
+  @override
+  String get compareTickerHint => 'Тикер, жишээ нь MSFT';
+
+  @override
+  String get compareHint =>
+      'Гол үзүүлэлтүүд зэрэгцээ; мөр бүрийн хамгийн сайн утгыг тодруулсан. Дүнгүүд нь хувьцаа тус бүрийн өөрийн валютаар байна.';
+
+  @override
+  String get compareNoAnalysis => 'Шинжилгээ хараахан алга';
 }

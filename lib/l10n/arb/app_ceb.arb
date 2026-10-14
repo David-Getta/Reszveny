@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Gipaabot nga EPS: {value}",
   "eventFromAnalysis": "Gikan sa imong pagtuki",
   "eventsHint": "Mga petsa sa resulta sa imong mga paborito ug mga stock sa portfolio sulod sa sunod 90 ka adlaw, ug ang mga panghitabo nga may petsa nga gimarkahan sa imong mga pagtuki.",
-  "eventsEmpty": "Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta."
+  "eventsEmpty": "Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta.",
+  "compareTitle": "Itandi",
+  "compareAdd": "Idugang ug stock",
+  "compareRemove": "Tangtangon",
+  "compareTickerHint": "Ticker, pananglitan MSFT",
+  "compareHint": "Ang mga importanteng numero magkatapad; gi-highlight ang labing maayong value sa matag laray. Ang mga kantidad anaa sa kaugalingong currency sa matag stock.",
+  "compareNoAnalysis": "Wala pay pagtuki"
 }

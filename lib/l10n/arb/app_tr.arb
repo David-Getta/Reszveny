@@ -447,5 +447,11 @@
   "eventEpsEstimate": "HBK beklentisi: {value}",
   "eventFromAnalysis": "Analizinden",
   "eventsHint": "Favorilerinin ve portföyündeki hisselerin önümüzdeki 90 gündeki bilanço tarihleri ile analizlerinin işaret ettiği tarihli olaylar.",
-  "eventsEmpty": "Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle."
+  "eventsEmpty": "Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle.",
+  "compareTitle": "Karşılaştır",
+  "compareAdd": "Hisse ekle",
+  "compareRemove": "Kaldır",
+  "compareTickerHint": "Hisse sembolü, ör. MSFT",
+  "compareHint": "Temel rakamlar yan yana; her satırdaki en iyi değer vurgulanır. Tutarlar her hissenin kendi para birimindedir.",
+  "compareNoAnalysis": "Henüz analiz yok"
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Estimasyon EPS: {value}",
   "eventFromAnalysis": "Soti nan analiz ou",
   "eventsHint": "Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, ak evènman ki gen dat analiz ou yo make.",
-  "eventsEmpty": "Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la."
+  "eventsEmpty": "Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la.",
+  "compareTitle": "Konpare",
+  "compareAdd": "Ajoute yon aksyon",
+  "compareRemove": "Retire",
+  "compareTickerHint": "Senbòl, pa egzanp MSFT",
+  "compareHint": "Chif kle yo youn bò lòt; pi bon valè nan chak liy make an evidans. Montan yo nan pwòp deviz chak aksyon.",
+  "compareNoAnalysis": "Poko gen analiz"
 }

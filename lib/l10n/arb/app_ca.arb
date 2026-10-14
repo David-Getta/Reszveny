@@ -447,5 +447,11 @@
   "eventEpsEstimate": "BPA previst: {value}",
   "eventFromAnalysis": "De la teva anàlisi",
   "eventsHint": "Dates de resultats dels teus favorits i de les accions de la cartera per als pròxims 90 dies, i els esdeveniments amb data que han detectat les teves anàlisis.",
-  "eventsEmpty": "No hi ha esdeveniments amb data en els pròxims 90 dies. Afegeix favorits o accions a la cartera per veure aquí les seves dates de resultats."
+  "eventsEmpty": "No hi ha esdeveniments amb data en els pròxims 90 dies. Afegeix favorits o accions a la cartera per veure aquí les seves dates de resultats.",
+  "compareTitle": "Compara",
+  "compareAdd": "Afegeix una acció",
+  "compareRemove": "Elimina",
+  "compareTickerHint": "Ticker, p. ex. MSFT",
+  "compareHint": "Xifres clau una al costat de l'altra; el millor valor de cada fila està ressaltat. Els imports són en la divisa pròpia de cada acció.",
+  "compareNoAnalysis": "Encara no hi ha cap anàlisi"
 }

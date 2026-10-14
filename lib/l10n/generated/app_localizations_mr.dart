@@ -1640,4 +1640,23 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'पुढील 90 दिवसांत तारीख असलेली कोणतीही घटना नाही. निकालांच्या तारखा येथे पाहण्यासाठी आवडते किंवा पोर्टफोलिओ शेअर्स जोडा.';
+
+  @override
+  String get compareTitle => 'तुलना';
+
+  @override
+  String get compareAdd => 'शेअर जोडा';
+
+  @override
+  String get compareRemove => 'काढा';
+
+  @override
+  String get compareTickerHint => 'टिकर, उदा. MSFT';
+
+  @override
+  String get compareHint =>
+      'मुख्य आकडे शेजारी-शेजारी; प्रत्येक ओळीतील सर्वोत्तम मूल्य हायलाइट केले आहे. रकमा प्रत्येक शेअरच्या स्वतःच्या चलनात आहेत.';
+
+  @override
+  String get compareNoAnalysis => 'अद्याप विश्लेषण नाही';
 }

@@ -447,5 +447,11 @@
   "eventEpsEstimate": "BPA estimé : {value}",
   "eventFromAnalysis": "Issu de votre analyse",
   "eventsHint": "Dates de résultats de vos favoris et des actions de votre portefeuille pour les 90 prochains jours, ainsi que les événements datés repérés par vos analyses.",
-  "eventsEmpty": "Aucun événement daté dans les 90 prochains jours. Ajoutez des favoris ou des actions à votre portefeuille pour voir ici leurs dates de résultats."
+  "eventsEmpty": "Aucun événement daté dans les 90 prochains jours. Ajoutez des favoris ou des actions à votre portefeuille pour voir ici leurs dates de résultats.",
+  "compareTitle": "Comparer",
+  "compareAdd": "Ajouter une action",
+  "compareRemove": "Retirer",
+  "compareTickerHint": "Symbole, p. ex. MSFT",
+  "compareHint": "Chiffres clés côte à côte ; la meilleure valeur de chaque ligne est mise en évidence. Les montants sont exprimés dans la devise de chaque action.",
+  "compareNoAnalysis": "Aucune analyse pour l'instant"
 }

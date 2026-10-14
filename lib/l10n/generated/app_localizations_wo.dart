@@ -1636,4 +1636,23 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Amul mbir bu am bis ci 90 fan yii di ñëw. Yokkal yi nga gënal walla aksiyoŋ ngir gis fii seen bisi njureef.';
+
+  @override
+  String get compareTitle => 'Méngale';
+
+  @override
+  String get compareAdd => 'Yokk aksiyoŋ';
+
+  @override
+  String get compareRemove => 'Dindi';
+
+  @override
+  String get compareTickerHint => 'Màndargay aksiyoŋ, misaal MSFT';
+
+  @override
+  String get compareHint =>
+      'Limi yu am solo yi ñu teg leen ci wetu; li gën ci rëdd gu nekk dañu ko feeñal. Xaalis yi ci xeetu xaalisu aksiyoŋ bu nekk lañu.';
+
+  @override
+  String get compareNoAnalysis => 'Amagul saytu';
 }

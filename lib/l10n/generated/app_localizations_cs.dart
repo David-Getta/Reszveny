@@ -1687,4 +1687,23 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'V příštích 90 dnech nejsou žádné události s datem. Přidejte oblíbené akcie nebo akcie do portfolia a uvidíte zde termíny jejich výsledků.';
+
+  @override
+  String get compareTitle => 'Porovnání';
+
+  @override
+  String get compareAdd => 'Přidat akcii';
+
+  @override
+  String get compareRemove => 'Odebrat';
+
+  @override
+  String get compareTickerHint => 'Ticker, např. MSFT';
+
+  @override
+  String get compareHint =>
+      'Klíčové ukazatele vedle sebe; nejlepší hodnota v každém řádku je zvýrazněna. Částky jsou ve vlastní měně každé akcie.';
+
+  @override
+  String get compareNoAnalysis => 'Zatím žádná analýza';
 }

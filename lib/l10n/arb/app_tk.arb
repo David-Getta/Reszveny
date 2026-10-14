@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS çaklamasy: {value}",
   "eventFromAnalysis": "Seljermäňden",
   "eventsHint": "Saýlanan we portfeldäki paýnamalaryňyň indiki 90 gündäki netije seneleri hem-de seljermeleriňiň belläp geçen seneli wakalary.",
-  "eventsEmpty": "Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş."
+  "eventsEmpty": "Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş.",
+  "compareTitle": "Deňeşdirme",
+  "compareAdd": "Paýnama goş",
+  "compareRemove": "Aýyr",
+  "compareTickerHint": "Tiker, meselem MSFT",
+  "compareHint": "Esasy görkezijiler gapdal-gapdala; her setirde iň gowy baha bellenýär. Mukdarlar her paýnamanyň öz walýutasynda.",
+  "compareNoAnalysis": "Entek seljerme ýok"
 }

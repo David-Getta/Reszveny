@@ -1610,4 +1610,23 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ኣብ ዝመጽእ 90 መዓልታት ዕለት ዘለዎ ፍጻመ የለን። ዕለታት ውጽኢቶም ኣብዚ ንምርኣይ ዝተፈተዉ ወይ ናይ ፖርትፎሊዮ ኣክስዮናት ወስኽ።';
+
+  @override
+  String get compareTitle => 'ምንጽጻር';
+
+  @override
+  String get compareAdd => 'ኣክሲዮን ወስኽ';
+
+  @override
+  String get compareRemove => 'ኣልግስ';
+
+  @override
+  String get compareTickerHint => 'ምልክት፡ ንኣብነት MSFT';
+
+  @override
+  String get compareHint =>
+      'ቀንዲ ኣሃዛት ጎኒ ንጎኒ፤ ኣብ ነፍሲ ወከፍ መስርዕ እቲ ዝበለጸ ዋጋ ጎሊሑ ይርአ። መጠናት ብባጤራ ናይ ነፍሲ ወከፍ ኣክሲዮን እዮም።';
+
+  @override
+  String get compareNoAnalysis => 'ገና ትንተና የለን';
 }

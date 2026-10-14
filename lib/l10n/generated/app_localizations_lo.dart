@@ -1622,4 +1622,23 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ບໍ່ມີເຫດການທີ່ມີວັນທີໃນ 90 ມື້ຂ້າງໜ້າ. ເພີ່ມລາຍການທີ່ມັກ ຫຼື ຫຸ້ນໃນພອດໂຟລິໂອ ເພື່ອເບິ່ງວັນທີປະກາດຜົນປະກອບການຢູ່ທີ່ນີ້.';
+
+  @override
+  String get compareTitle => 'ປຽບທຽບ';
+
+  @override
+  String get compareAdd => 'ເພີ່ມຮຸ້ນ';
+
+  @override
+  String get compareRemove => 'ລຶບອອກ';
+
+  @override
+  String get compareTickerHint => 'ສັນຍາລັກ, ເຊັ່ນ MSFT';
+
+  @override
+  String get compareHint =>
+      'ຕົວເລກສຳຄັນຢູ່ຂ້າງກັນ; ຄ່າທີ່ດີທີ່ສຸດໃນແຕ່ລະແຖວຖືກເນັ້ນໄວ້. ຈຳນວນເງິນເປັນສະກຸນເງິນຂອງແຕ່ລະຮຸ້ນ.';
+
+  @override
+  String get compareNoAnalysis => 'ຍັງບໍ່ມີການວິເຄາະ';
 }

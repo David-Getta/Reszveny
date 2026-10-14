@@ -1640,4 +1640,23 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Ingen datofestede hendelser de neste 90 dagene. Legg til favoritter eller porteføljeaksjer for å se resultatdatoene deres her.';
+
+  @override
+  String get compareTitle => 'Sammenlign';
+
+  @override
+  String get compareAdd => 'Legg til en aksje';
+
+  @override
+  String get compareRemove => 'Fjern';
+
+  @override
+  String get compareTickerHint => 'Ticker, f.eks. MSFT';
+
+  @override
+  String get compareHint =>
+      'Nøkkeltall side om side; den beste verdien i hver rad er uthevet. Beløpene er i hver aksjes egen valuta.';
+
+  @override
+  String get compareNoAnalysis => 'Ingen analyse ennå';
 }

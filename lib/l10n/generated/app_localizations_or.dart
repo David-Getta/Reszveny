@@ -1638,4 +1638,23 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'ଆଗାମୀ 90 ଦିନରେ କୌଣସି ତାରିଖଯୁକ୍ତ ଘଟଣା ନାହିଁ। ଫଳାଫଳ ତାରିଖ ଏଠାରେ ଦେଖିବାକୁ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓ ଶେୟାର ଯୋଡ଼ନ୍ତୁ।';
+
+  @override
+  String get compareTitle => 'ତୁଳନା';
+
+  @override
+  String get compareAdd => 'ସେୟାର ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String get compareRemove => 'ହଟାନ୍ତୁ';
+
+  @override
+  String get compareTickerHint => 'ଟିକର, ଯଥା MSFT';
+
+  @override
+  String get compareHint =>
+      'ମୁଖ୍ୟ ସଂଖ୍ୟାଗୁଡ଼ିକ ପାଖାପାଖି; ପ୍ରତ୍ୟେକ ଧାଡ଼ିରେ ସର୍ବୋତ୍ତମ ମୂଲ୍ୟ ହାଇଲାଇଟ୍ କରାଯାଇଛି। ରାଶି ପ୍ରତ୍ୟେକ ସେୟାରର ନିଜ ମୁଦ୍ରାରେ ଅଛି।';
+
+  @override
+  String get compareNoAnalysis => 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିଶ୍ଳେଷଣ ନାହିଁ';
 }

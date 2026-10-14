@@ -1641,4 +1641,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here.';
+
+  @override
+  String get compareTitle => 'Compare';
+
+  @override
+  String get compareAdd => 'Add one stock';
+
+  @override
+  String get compareRemove => 'Comot am';
+
+  @override
+  String get compareTickerHint => 'Ticker, like MSFT';
+
+  @override
+  String get compareHint =>
+      'Di main numbers dey side by side; di best value for each row dey highlighted. Di amounts dey for each stock own currency.';
+
+  @override
+  String get compareNoAnalysis => 'No analysis yet';
 }

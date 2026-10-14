@@ -1135,5 +1135,11 @@
   },
   "eventFromAnalysis": "From your analysis",
   "eventsHint": "Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.",
-  "eventsEmpty": "No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here."
+  "eventsEmpty": "No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.",
+  "compareTitle": "Compare",
+  "compareAdd": "Add a stock",
+  "compareRemove": "Remove",
+  "compareTickerHint": "Ticker, e.g. MSFT",
+  "compareHint": "Key figures side by side; the best value in each row is highlighted. Amounts are in each stock's own currency.",
+  "compareNoAnalysis": "No analysis yet"
 }

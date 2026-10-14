@@ -1641,4 +1641,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'لە 90 ڕۆژی داهاتوودا هیچ ڕووداوێکی بەروارداری نییە. دڵخواز یان پشکی پۆرتفۆلیۆ زیاد بکە بۆ ئەوەی بەرواری ئەنجامەکانیان لێرە ببینیت.';
+
+  @override
+  String get compareTitle => 'بەراوردکردن';
+
+  @override
+  String get compareAdd => 'زیادکردنی پشک';
+
+  @override
+  String get compareRemove => 'لابردن';
+
+  @override
+  String get compareTickerHint => 'هێمای پشک، بۆ نموونە MSFT';
+
+  @override
+  String get compareHint =>
+      'ژمارە سەرەکییەکان لە تەنیشت یەکتر؛ باشترین بەها لە هەر ڕیزێکدا دیاریکراوە. بڕەکان بە دراوی خودی هەر پشکێکن.';
+
+  @override
+  String get compareNoAnalysis => 'هێشتا هیچ شیکارییەک نییە';
 }

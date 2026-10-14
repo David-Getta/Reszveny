@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Očekivani EPS: {value}",
   "eventFromAnalysis": "Iz vaše analize",
   "eventsHint": "Datumi rezultata vaših favorita i dionica iz portfolija za narednih 90 dana te datirani događaji koje su označile vaše analize.",
-  "eventsEmpty": "Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata."
+  "eventsEmpty": "Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata.",
+  "compareTitle": "Poređenje",
+  "compareAdd": "Dodaj dionicu",
+  "compareRemove": "Ukloni",
+  "compareTickerHint": "Tiker, npr. MSFT",
+  "compareHint": "Ključni pokazatelji jedan pored drugog; najbolja vrijednost u svakom redu je istaknuta. Iznosi su u vlastitoj valuti svake dionice.",
+  "compareNoAnalysis": "Još nema analize"
 }

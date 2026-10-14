@@ -1675,4 +1675,23 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata.';
+
+  @override
+  String get compareTitle => 'Poređenje';
+
+  @override
+  String get compareAdd => 'Dodaj dionicu';
+
+  @override
+  String get compareRemove => 'Ukloni';
+
+  @override
+  String get compareTickerHint => 'Tiker, npr. MSFT';
+
+  @override
+  String get compareHint =>
+      'Ključni pokazatelji jedan pored drugog; najbolja vrijednost u svakom redu je istaknuta. Iznosi su u vlastitoj valuti svake dionice.';
+
+  @override
+  String get compareNoAnalysis => 'Još nema analize';
 }

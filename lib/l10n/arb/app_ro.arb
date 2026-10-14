@@ -447,5 +447,11 @@
   "eventEpsEstimate": "EPS estimat: {value}",
   "eventFromAnalysis": "Din analiza ta",
   "eventsHint": "Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, plus evenimentele cu dată semnalate de analizele tale.",
-  "eventsEmpty": "Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor."
+  "eventsEmpty": "Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor.",
+  "compareTitle": "Comparare",
+  "compareAdd": "Adaugă o acțiune",
+  "compareRemove": "Elimină",
+  "compareTickerHint": "Simbol, ex. MSFT",
+  "compareHint": "Indicatorii cheie unul lângă altul; cea mai bună valoare din fiecare rând este evidențiată. Sumele sunt în moneda proprie a fiecărei acțiuni.",
+  "compareNoAnalysis": "Nicio analiză încă"
 }

@@ -3024,6 +3024,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.'**
   String get eventsEmpty;
+
+  /// No description provided for @compareTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare'**
+  String get compareTitle;
+
+  /// No description provided for @compareAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a stock'**
+  String get compareAdd;
+
+  /// No description provided for @compareRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get compareRemove;
+
+  /// No description provided for @compareTickerHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticker, e.g. MSFT'**
+  String get compareTickerHint;
+
+  /// No description provided for @compareHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Key figures side by side; the best value in each row is highlighted. Amounts are in each stock\'s own currency.'**
+  String get compareHint;
+
+  /// No description provided for @compareNoAnalysis.
+  ///
+  /// In en, this message translates to:
+  /// **'No analysis yet'**
+  String get compareNoAnalysis;
 }
 
 class _AppLocalizationsDelegate

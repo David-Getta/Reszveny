@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Forventet EPS: {value}",
   "eventFromAnalysis": "Fra din analyse",
   "eventsHint": "Regnskabsdatoer for dine favoritter og aktier i porteføljen de næste 90 dage samt de daterede begivenheder, dine analyser har fremhævet.",
-  "eventsEmpty": "Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her."
+  "eventsEmpty": "Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her.",
+  "compareTitle": "Sammenlign",
+  "compareAdd": "Tilføj en aktie",
+  "compareRemove": "Fjern",
+  "compareTickerHint": "Ticker, f.eks. MSFT",
+  "compareHint": "Nøgletal side om side; den bedste værdi i hver række er fremhævet. Beløb er i hver akties egen valuta.",
+  "compareNoAnalysis": "Ingen analyse endnu"
 }

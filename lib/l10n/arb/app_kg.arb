@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Estimation ya EPS: {value}",
   "eventFromAnalysis": "Na analyse na nge",
   "eventsHint": "Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mpi mambu ya kele ti dati yina ba analyse na nge me monisa.",
-  "eventsEmpty": "Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa."
+  "eventsEmpty": "Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa.",
+  "compareTitle": "Kufwanisa",
+  "compareAdd": "Yika action",
+  "compareRemove": "Katula",
+  "compareTickerHint": "Ticker, mbandu MSFT",
+  "compareHint": "Bitalu ya mfunu na lweka na lweka; ntalu ya kuluta mbote na konso ndonga me monisama. Bitalu ya mbongo kele na mbongo ya konso action.",
+  "compareNoAnalysis": "Analyse ke na yo ntete ve"
 }

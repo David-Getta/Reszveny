@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Xiringanyeto xa EPS: {value}",
   "eventFromAnalysis": "Ku suka eka nxopaxopo wa wena",
   "eventsHint": "Masiku ya mbuyelo ya swiavelo leswi u swi rhandzaka ni swa phothifoliyo ya wena eka masiku ya 90 lama taka, ni swiendlakalo leswi nga ni masiku leswi minxopaxopo ya wena yi swi kombiseke.",
-  "eventsEmpty": "A ku na swiendlakalo leswi nga ni masiku eka masiku ya 90 lama taka. Engetela leswi u swi rhandzaka kumbe swiavelo swa phothifoliyo leswaku u vona masiku ya mbuyelo wa swona laha."
+  "eventsEmpty": "A ku na swiendlakalo leswi nga ni masiku eka masiku ya 90 lama taka. Engetela leswi u swi rhandzaka kumbe swiavelo swa phothifoliyo leswaku u vona masiku ya mbuyelo wa swona laha.",
+  "compareTitle": "Ringanisa",
+  "compareAdd": "Engetela xiavelo",
+  "compareRemove": "Susa",
+  "compareTickerHint": "Ticker, xikombiso MSFT",
+  "compareHint": "Tinhlayo ta nkoka ti tshamile etlhelo-tlhelo; nkoka lowunene eka layini yin'wana na yin'wana wu vonakisiwile. Mali yi le muxakeni wa mali wa xiavelo xin'wana na xin'wana.",
+  "compareNoAnalysis": "A ku si va na nxopaxopo"
 }

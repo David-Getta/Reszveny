@@ -1645,4 +1645,23 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Geen gedateerde gebeurtenissen in de komende 90 dagen. Voeg favorieten of portefeuille-aandelen toe om hier hun cijferdata te zien.';
+
+  @override
+  String get compareTitle => 'Vergelijken';
+
+  @override
+  String get compareAdd => 'Aandeel toevoegen';
+
+  @override
+  String get compareRemove => 'Verwijderen';
+
+  @override
+  String get compareTickerHint => 'Ticker, bijv. MSFT';
+
+  @override
+  String get compareHint =>
+      'Kerncijfers naast elkaar; de beste waarde per rij is gemarkeerd. Bedragen staan in de eigen valuta van elk aandeel.';
+
+  @override
+  String get compareNoAnalysis => 'Nog geen analyse';
 }

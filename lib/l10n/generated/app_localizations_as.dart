@@ -1641,4 +1641,23 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'পৰৱৰ্তী 90 দিনত কোনো তাৰিখযুক্ত ঘটনা নাই। ইয়াত ফলাফলৰ তাৰিখ চাবলৈ প্ৰিয় বা প\'ৰ্টফ\'লিঅ\'ৰ শ্বেয়াৰ যোগ কৰক।';
+
+  @override
+  String get compareTitle => 'তুলনা';
+
+  @override
+  String get compareAdd => 'এটা শ্বেয়াৰ যোগ কৰক';
+
+  @override
+  String get compareRemove => 'আঁতৰাওক';
+
+  @override
+  String get compareTickerHint => 'টিকাৰ, যেনে MSFT';
+
+  @override
+  String get compareHint =>
+      'মূল সংখ্যাসমূহ কাষে কাষে; প্ৰতিটো শাৰীৰ সৰ্বোত্তম মান হাইলাইট কৰা হৈছে। পৰিমাণসমূহ প্ৰতিটো শ্বেয়াৰৰ নিজা মুদ্ৰাত।';
+
+  @override
+  String get compareNoAnalysis => 'এতিয়ালৈকে কোনো বিশ্লেষণ নাই';
 }

@@ -1653,4 +1653,23 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Tsy misy hetsika misy daty ao anatin\'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin\'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr\'izy ireo.';
+
+  @override
+  String get compareTitle => 'Fampitahana';
+
+  @override
+  String get compareAdd => 'Ampio aksiona';
+
+  @override
+  String get compareRemove => 'Esory';
+
+  @override
+  String get compareTickerHint => 'Ticker, ohatra MSFT';
+
+  @override
+  String get compareHint =>
+      'Ireo tarehimarika fototra mifanila; asongadina ny sanda tsara indrindra isaky ny andalana. Ny vola dia amin\'ny vola ampiasain\'ny aksiona tsirairay.';
+
+  @override
+  String get compareNoAnalysis => 'Mbola tsy misy fandalinana';
 }

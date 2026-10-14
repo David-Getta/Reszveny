@@ -447,5 +447,11 @@
   "eventEpsEstimate": "Várt EPS: {value}",
   "eventFromAnalysis": "Az elemzésedből",
   "eventsHint": "A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, és az elemzéseidben megjelölt dátumos események.",
-  "eventsEmpty": "A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát."
+  "eventsEmpty": "A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát.",
+  "compareTitle": "Összehasonlítás",
+  "compareAdd": "Részvény hozzáadása",
+  "compareRemove": "Eltávolítás",
+  "compareTickerHint": "Ticker, pl. MSFT",
+  "compareHint": "A fő számok egymás mellett; soronként a legjobb érték kiemelve. Az összegek a részvények saját devizájában.",
+  "compareNoAnalysis": "Még nincs elemzés"
 }

@@ -1649,4 +1649,23 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get eventsEmpty =>
       'Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta.';
+
+  @override
+  String get compareTitle => 'Itandi';
+
+  @override
+  String get compareAdd => 'Idugang ug stock';
+
+  @override
+  String get compareRemove => 'Tangtangon';
+
+  @override
+  String get compareTickerHint => 'Ticker, pananglitan MSFT';
+
+  @override
+  String get compareHint =>
+      'Ang mga importanteng numero magkatapad; gi-highlight ang labing maayong value sa matag laray. Ang mga kantidad anaa sa kaugalingong currency sa matag stock.';
+
+  @override
+  String get compareNoAnalysis => 'Wala pay pagtuki';
 }
