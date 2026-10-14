@@ -457,5 +457,7 @@
   "portfolioDividends": "Дивиденды за год",
   "portfolioDividendYield": "Доходность {percent}",
   "portfolioDividendNote": "Ожидаемые годовые дивиденды рассчитаны по выплатам за последние 12 месяцев; будущие выплаты не гарантированы.",
-  "positionDividend": "Дивиденды: {amount} в год"
+  "positionDividend": "Дивиденды: {amount} в год",
+  "chartAvgCost": "Ваша ср.",
+  "chartAlertLevel": "Оповещение"
 }

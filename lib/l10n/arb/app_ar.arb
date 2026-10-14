@@ -457,5 +457,7 @@
   "portfolioDividends": "التوزيعات السنوية",
   "portfolioDividendYield": "عائد {percent}",
   "portfolioDividendNote": "تستند التوزيعات السنوية المتوقعة إلى التوزيعات المدفوعة خلال آخر 12 شهرًا؛ والمدفوعات المستقبلية غير مضمونة.",
-  "positionDividend": "التوزيعات: {amount} سنويًا"
+  "positionDividend": "التوزيعات: {amount} سنويًا",
+  "chartAvgCost": "متوسطك",
+  "chartAlertLevel": "تنبيه"
 }

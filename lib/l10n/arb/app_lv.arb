@@ -457,5 +457,7 @@
   "portfolioDividends": "Gada dividendes",
   "portfolioDividendYield": "Ienesīgums {percent}",
   "portfolioDividendNote": "Paredzamās gada dividendes balstās uz pēdējos 12 mēnešos izmaksātajām dividendēm; nākotnes izmaksas nav garantētas.",
-  "positionDividend": "Dividende: {amount} gadā"
+  "positionDividend": "Dividende: {amount} gadā",
+  "chartAvgCost": "Jūsu vid.",
+  "chartAlertLevel": "Brīdinājums"
 }

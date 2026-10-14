@@ -457,5 +457,7 @@
   "portfolioDividends": "Yıllık temettü",
   "portfolioDividendYield": "{percent} verim",
   "portfolioDividendNote": "Beklenen yıllık temettü, son 12 ayda ödenen temettülere dayanır; gelecekteki ödemeler garanti değildir.",
-  "positionDividend": "Temettü: yılda {amount}"
+  "positionDividend": "Temettü: yılda {amount}",
+  "chartAvgCost": "Ort. maliyetiniz",
+  "chartAlertLevel": "Alarm"
 }

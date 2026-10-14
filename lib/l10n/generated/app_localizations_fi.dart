@@ -1678,4 +1678,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Osinko: $amount vuodessa';
   }
+
+  @override
+  String get chartAvgCost => 'Oma ka.';
+
+  @override
+  String get chartAlertLevel => 'Hälytys';
 }

@@ -1677,4 +1677,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Gawio: $amount kwa mwaka';
   }
+
+  @override
+  String get chartAvgCost => 'Wastani wako';
+
+  @override
+  String get chartAlertLevel => 'Arifa';
 }

@@ -1714,4 +1714,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String positionDividend(String amount) {
     return 'التوزيعات: $amount سنويًا';
   }
+
+  @override
+  String get chartAvgCost => 'متوسطك';
+
+  @override
+  String get chartAlertLevel => 'تنبيه';
 }

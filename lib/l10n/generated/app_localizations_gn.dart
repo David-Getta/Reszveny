@@ -1683,4 +1683,10 @@ class AppLocalizationsGn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividendo: $amount arýpe';
   }
+
+  @override
+  String get chartAvgCost => 'Ne mbytegua';
+
+  @override
+  String get chartAlertLevel => 'Maranduʼi';
 }

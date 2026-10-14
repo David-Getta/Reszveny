@@ -1676,4 +1676,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ලාභාංශ: වසරකට $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ඔබේ සාමාන්‍යය';
+
+  @override
+  String get chartAlertLevel => 'ඇඟවීම';
 }

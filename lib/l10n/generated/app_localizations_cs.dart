@@ -1723,4 +1723,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividenda: $amount ročně';
   }
+
+  @override
+  String get chartAvgCost => 'Váš průměr';
+
+  @override
+  String get chartAlertLevel => 'Upozornění';
 }

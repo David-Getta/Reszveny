@@ -1677,4 +1677,10 @@ class AppLocalizationsKi extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividend: $amount o mwaka';
   }
+
+  @override
+  String get chartAvgCost => 'Gatagatĩ gaku';
+
+  @override
+  String get chartAlertLevel => 'Kĩmenyithia';
 }

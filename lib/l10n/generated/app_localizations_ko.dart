@@ -1629,4 +1629,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String positionDividend(String amount) {
     return '배당: 연 $amount';
   }
+
+  @override
+  String get chartAvgCost => '내 평균 단가';
+
+  @override
+  String get chartAlertLevel => '알림';
 }

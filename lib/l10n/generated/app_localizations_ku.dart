@@ -1679,4 +1679,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dîvîdend: salê $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Navîniya te';
+
+  @override
+  String get chartAlertLevel => 'Hişyarî';
 }

@@ -1688,4 +1688,10 @@ class AppLocalizationsHil extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dibidendo: $amount kada tuig';
   }
+
+  @override
+  String get chartAvgCost => 'Imo avg.';
+
+  @override
+  String get chartAlertLevel => 'Alerto';
 }

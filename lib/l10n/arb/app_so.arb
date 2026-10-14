@@ -457,5 +457,7 @@
   "portfolioDividends": "Qaybta faa'iidada sanadlaha",
   "portfolioDividendYield": "Heerka {percent}",
   "portfolioDividendNote": "Qaybta faa'iidada sanadlaha ah ee la filayo waxay ku salaysan tahay qaybaha faa'iidada la bixiyay 12-kii bilood ee la soo dhaafay; lacag-bixinnada mustaqbalka lama dammaanad qaadayo.",
-  "positionDividend": "Qaybta faa'iidada: {amount} sanadkii"
+  "positionDividend": "Qaybta faa'iidada: {amount} sanadkii",
+  "chartAvgCost": "Celceliskaaga",
+  "chartAlertLevel": "Digniin"
 }

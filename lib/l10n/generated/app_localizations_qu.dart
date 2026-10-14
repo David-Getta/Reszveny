@@ -1687,4 +1687,10 @@ class AppLocalizationsQu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividendo: watapi $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Chawpiyki';
+
+  @override
+  String get chartAlertLevel => 'Willachiy';
 }

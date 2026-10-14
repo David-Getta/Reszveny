@@ -1674,4 +1674,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Udbytte: $amount om året';
   }
+
+  @override
+  String get chartAvgCost => 'Din gns.';
+
+  @override
+  String get chartAlertLevel => 'Alarm';
 }

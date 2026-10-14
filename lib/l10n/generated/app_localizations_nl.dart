@@ -1681,4 +1681,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividend: $amount per jaar';
   }
+
+  @override
+  String get chartAvgCost => 'Jouw gem.';
+
+  @override
+  String get chartAlertLevel => 'Alert';
 }

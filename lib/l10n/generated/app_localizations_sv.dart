@@ -1677,4 +1677,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Utdelning: $amount per år';
   }
+
+  @override
+  String get chartAvgCost => 'Ditt snitt';
+
+  @override
+  String get chartAlertLevel => 'Kurslarm';
 }

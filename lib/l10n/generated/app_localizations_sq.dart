@@ -1683,4 +1683,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividendi: $amount në vit';
   }
+
+  @override
+  String get chartAvgCost => 'Mesatarja juaj';
+
+  @override
+  String get chartAlertLevel => 'Alarm';
 }

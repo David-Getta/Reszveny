@@ -1680,4 +1680,10 @@ class AppLocalizationsEe extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Viɖemama: $amount le ƒe ɖeka me';
   }
+
+  @override
+  String get chartAvgCost => 'Wò titina';
+
+  @override
+  String get chartAlertLevel => 'Nuxlɔ̃ame';
 }

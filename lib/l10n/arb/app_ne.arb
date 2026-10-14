@@ -457,5 +457,7 @@
   "portfolioDividends": "वार्षिक लाभांश",
   "portfolioDividendYield": "{percent} यिल्ड",
   "portfolioDividendNote": "अपेक्षित वार्षिक लाभांश पछिल्लो 12 महिनामा भुक्तानी गरिएको लाभांशमा आधारित छ; भविष्यका भुक्तानीको ग्यारेन्टी छैन।",
-  "positionDividend": "लाभांश: वार्षिक {amount}"
+  "positionDividend": "लाभांश: वार्षिक {amount}",
+  "chartAvgCost": "तपाईंको औसत",
+  "chartAlertLevel": "अलर्ट"
 }

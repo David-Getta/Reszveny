@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividen taunan",
   "portfolioDividendYield": "Imbal hasil {percent}",
   "portfolioDividendNote": "Dividen taunan sing dikira-kira adhedhasar dividen sing dibayar sajrone 12 sasi pungkasan; pambayaran ing mbesuk ora dijamin.",
-  "positionDividend": "Dividen: {amount} saben taun"
+  "positionDividend": "Dividen: {amount} saben taun",
+  "chartAvgCost": "Rata-ratamu",
+  "chartAlertLevel": "Pèngetan"
 }

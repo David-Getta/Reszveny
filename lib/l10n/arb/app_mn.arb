@@ -457,5 +457,7 @@
   "portfolioDividends": "Жилийн ногдол ашиг",
   "portfolioDividendYield": "{percent} өгөөж",
   "portfolioDividendNote": "Хүлээгдэж буй жилийн ногдол ашгийг сүүлийн 12 сард төлсөн ногдол ашигт үндэслэн тооцсон; ирээдүйн төлбөр баталгаатай биш.",
-  "positionDividend": "Ногдол ашиг: жилд {amount}"
+  "positionDividend": "Ногдол ашиг: жилд {amount}",
+  "chartAvgCost": "Таны дундаж",
+  "chartAlertLevel": "Сэрэмжлүүлэг"
 }

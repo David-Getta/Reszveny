@@ -1668,4 +1668,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ཁེ་བགོ། ལོ་རེར་ $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ཁྱེད་ཀྱི་ཆ་སྙོམས';
+
+  @override
+  String get chartAlertLevel => 'ཉེན་བརྡ';
 }

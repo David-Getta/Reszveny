@@ -1691,4 +1691,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dibidendo: $amount iti tinawen';
   }
+
+  @override
+  String get chartAvgCost => 'Avg. mo';
+
+  @override
+  String get chartAlertLevel => 'Alerto';
 }

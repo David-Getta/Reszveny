@@ -1671,4 +1671,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Cổ tức: $amount mỗi năm';
   }
+
+  @override
+  String get chartAvgCost => 'Giá vốn TB';
+
+  @override
+  String get chartAlertLevel => 'Cảnh báo';
 }

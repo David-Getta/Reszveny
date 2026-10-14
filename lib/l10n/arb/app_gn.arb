@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividendo arýpe",
   "portfolioDividendYield": "Rendimiento {percent}",
   "portfolioDividendNote": "Dividendo arýpe ojeroviaháva oñemopyenda dividendo oñehepymeʼẽvaʼekuére 12 jasy ohasavaʼekuépe; tenondeguáre ndaipóri garantía.",
-  "positionDividend": "Dividendo: {amount} arýpe"
+  "positionDividend": "Dividendo: {amount} arýpe",
+  "chartAvgCost": "Ne mbytegua",
+  "chartAlertLevel": "Maranduʼi"
 }

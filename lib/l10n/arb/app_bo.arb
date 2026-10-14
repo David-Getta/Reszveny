@@ -457,5 +457,7 @@
   "portfolioDividends": "ལོ་རེའི་ཁེ་བགོ",
   "portfolioDividendYield": "ཁེ་འབབ་ཚད་ {percent}",
   "portfolioDividendNote": "རེ་སྒུག་བྱེད་པའི་ལོ་རེའི་ཁེ་བགོ་ནི་ཟླ་བ་ 12 སྔོན་ནས་སྤྲད་པའི་ཁེ་བགོ་ལ་གཞི་བཅོལ་ཡོད། མ་འོངས་པའི་སྤྲོད་འབབ་ལ་ཁག་ཐེག་མེད།",
-  "positionDividend": "ཁེ་བགོ། ལོ་རེར་ {amount}"
+  "positionDividend": "ཁེ་བགོ། ལོ་རེར་ {amount}",
+  "chartAvgCost": "ཁྱེད་ཀྱི་ཆ་སྙོམས",
+  "chartAlertLevel": "ཉེན་བརྡ"
 }

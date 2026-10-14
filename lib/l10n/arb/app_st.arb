@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividende ya selemo",
   "portfolioDividendYield": "Poelo ya {percent}",
   "portfolioDividendNote": "Dividende e lebelletsweng ya selemo e thehilwe hodima dividende e lefilweng dikgweding tse 12 tse fetileng; ditefo tsa nako e tlang ha di netefatswe.",
-  "positionDividend": "Dividende: {amount} ka selemo"
+  "positionDividend": "Dividende: {amount} ka selemo",
+  "chartAvgCost": "Karolelano ya hao",
+  "chartAlertLevel": "Tsebiso"
 }

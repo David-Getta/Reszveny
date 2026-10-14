@@ -1656,4 +1656,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String positionDividend(String amount) {
     return 'เงินปันผล: $amount ต่อปี';
   }
+
+  @override
+  String get chartAvgCost => 'ต้นทุนเฉลี่ยคุณ';
+
+  @override
+  String get chartAlertLevel => 'แจ้งเตือน';
 }

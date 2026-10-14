@@ -1686,4 +1686,10 @@ class AppLocalizationsTn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividende: $amount ka ngwaga';
   }
+
+  @override
+  String get chartAvgCost => 'Palogare ya gago';
+
+  @override
+  String get chartAlertLevel => 'Kitsiso';
 }

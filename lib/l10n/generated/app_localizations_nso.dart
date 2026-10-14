@@ -1688,4 +1688,10 @@ class AppLocalizationsNso extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividende: $amount ka ngwaga';
   }
+
+  @override
+  String get chartAvgCost => 'Theko ya gago';
+
+  @override
+  String get chartAlertLevel => 'Temošo';
 }

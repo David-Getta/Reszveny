@@ -1678,4 +1678,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String positionDividend(String amount) {
     return 'लाभांश: वार्षिक $amount';
   }
+
+  @override
+  String get chartAvgCost => 'तपाईंको औसत';
+
+  @override
+  String get chartAlertLevel => 'अलर्ट';
 }

@@ -1662,4 +1662,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ភាគលាភ៖ $amount ក្នុងមួយឆ្នាំ';
   }
+
+  @override
+  String get chartAvgCost => 'មធ្យមរបស់អ្នក';
+
+  @override
+  String get chartAlertLevel => 'ការជូនដំណឹង';
 }

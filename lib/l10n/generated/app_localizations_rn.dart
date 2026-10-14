@@ -1683,4 +1683,10 @@ class AppLocalizationsRn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Inyungu ku migabane: $amount ku mwaka';
   }
+
+  @override
+  String get chartAvgCost => 'Mpuzandengo yawe';
+
+  @override
+  String get chartAlertLevel => 'Imenyesha';
 }

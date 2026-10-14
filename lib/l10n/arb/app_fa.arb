@@ -457,5 +457,7 @@
   "portfolioDividends": "سود نقدی سالانه",
   "portfolioDividendYield": "بازده {percent}",
   "portfolioDividendNote": "سود نقدی سالانهٔ مورد انتظار بر اساس سود نقدی پرداخت‌شده در 12 ماه گذشته محاسبه می‌شود؛ پرداخت‌های آینده تضمینی نیست.",
-  "positionDividend": "سود نقدی: سالانه {amount}"
+  "positionDividend": "سود نقدی: سالانه {amount}",
+  "chartAvgCost": "میانگین شما",
+  "chartAlertLevel": "هشدار"
 }

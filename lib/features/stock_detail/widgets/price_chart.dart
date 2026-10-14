@@ -7,16 +7,29 @@ import '../../../theme/app_theme.dart';
 
 enum ChartRange { week, month, threeMonths, year, fiveYears }
 
+/// Vízszintes szint a grafikonon (pl. a saját átlagár vagy egy riasztás),
+/// szaggatott vonallal és rövid címkével.
+class ChartLevel {
+  const ChartLevel({required this.price, required this.label, required this.color});
+
+  final double price;
+  final String label;
+  final Color color;
+}
+
 /// Egyszerű, függőség nélküli vonaldiagram időtáv-választóval. Az egérrel
 /// (asztali gép) vagy az ujj vízszintes húzásával (telefon) egy függőleges
 /// vonal és pont követi a görbét, felette az adott nap dátumával és árával,
 /// mint az Apple Részvények appjában.
 class PriceChart extends StatefulWidget {
-  const PriceChart({super.key, required this.history, required this.fmt, this.currency});
+  const PriceChart({super.key, required this.history, required this.fmt, this.currency, this.levels = const []});
 
   final PriceHistory history;
   final Fmt fmt;
   final String? currency;
+
+  /// Kiemelt árszintek; a látható ársávtól nagyon távoliak nem jelennek meg.
+  final List<ChartLevel> levels;
 
   @override
   State<PriceChart> createState() => _PriceChartState();
@@ -149,6 +162,7 @@ class _PriceChartState extends State<PriceChart> {
                             hoverPrice: hover == null ? null : widget.fmt.price(points[hover].close, widget.currency),
                             hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
                             background: theme.colorScheme.surface,
+                            levels: widget.levels,
                           ),
                           child: const SizedBox.expand(),
                         ),
@@ -186,7 +200,23 @@ class _LinePainter extends CustomPainter {
     this.hoverPrice,
     this.hoverDate,
     this.background = const Color(0xFF000000),
+    this.levels = const [],
   });
+
+  final List<ChartLevel> levels;
+
+  /// A látható ársávon kívül ennyivel (a sáv arányában) távolabbi szintet
+  /// nem rajzolunk, hogy a görbe ne lapuljon össze.
+  static const levelReach = 0.35;
+
+  /// A megrajzolható szintek a görbe [min]–[max] sávjához.
+  static List<ChartLevel> visibleLevels(List<ChartLevel> levels, double min, double max) {
+    final reach = (max - min) * levelReach;
+    return [
+      for (final l in levels)
+        if (l.price >= min - reach && l.price <= max + reach) l,
+    ];
+  }
 
   final List<PricePoint> points;
   final Color color;
@@ -237,6 +267,12 @@ class _LinePainter extends CustomPainter {
       if (pt.close < min) min = pt.close;
       if (pt.close > max) max = pt.close;
     }
+    // A közeli szintek is férjenek bele a sávba.
+    final shown = visibleLevels(levels, min, max);
+    for (final l in shown) {
+      if (l.price < min) min = l.price;
+      if (l.price > max) max = l.price;
+    }
     if (max == min) max = min + 1;
     final span = max - min;
     final minT = points.first.time.millisecondsSinceEpoch.toDouble();
@@ -262,6 +298,30 @@ class _LinePainter extends CustomPainter {
         textDirection: TextDirection.ltr,
       )..layout(maxWidth: rightPad - 6);
       tp.paint(canvas, Offset(w + 6, y - tp.height / 2));
+    }
+
+    // Szintek: szaggatott vonal, bal oldalt címke.
+    for (final l in shown) {
+      final y = h - (l.price - min) / span * (h - 8) - 4;
+      final dash = Paint()
+        ..color = l.color.withValues(alpha: 0.85)
+        ..strokeWidth = 1.2;
+      for (var x = 0.0; x < w; x += 9) {
+        canvas.drawLine(Offset(x, y), Offset((x + 5).clamp(0, w), y), dash);
+      }
+      final tp = TextPainter(
+        text: TextSpan(
+          text: '${l.label} ${fmt.number(l.price, decimals: l.price.abs() < 10 ? 2 : 0)}',
+          style: labelStyle.copyWith(color: l.color, fontWeight: FontWeight.w700),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout(maxWidth: w);
+      final ty = (y - tp.height - 1).clamp(0.0, h - tp.height);
+      canvas.drawRect(
+        Rect.fromLTWH(2, ty, tp.width + 6, tp.height),
+        Paint()..color = background.withValues(alpha: 0.75),
+      );
+      tp.paint(canvas, Offset(5, ty));
     }
 
     final path = Path()..moveTo(at(points.first).dx, at(points.first).dy);
@@ -333,5 +393,6 @@ class _LinePainter extends CustomPainter {
       old.labelStyle != labelStyle ||
       old.hover != hover ||
       old.hoverPrice != hoverPrice ||
-      old.topPad != topPad;
+      old.topPad != topPad ||
+      old.levels != levels;
 }

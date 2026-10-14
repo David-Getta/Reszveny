@@ -1685,4 +1685,10 @@ class AppLocalizationsCeb extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dibidendo: $amount kada tuig';
   }
+
+  @override
+  String get chartAvgCost => 'Imong avg.';
+
+  @override
+  String get chartAlertLevel => 'Alerto';
 }

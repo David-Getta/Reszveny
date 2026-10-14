@@ -457,5 +457,7 @@
   "portfolioDividends": "Жылдык дивиденддер",
   "portfolioDividendYield": "Кирешелүүлүк {percent}",
   "portfolioDividendNote": "Күтүлгөн жылдык дивиденддер акыркы 12 айда төлөнгөн дивиденддерге негизделет; келечектеги төлөмдөргө кепилдик жок.",
-  "positionDividend": "Дивиденд: жылына {amount}"
+  "positionDividend": "Дивиденд: жылына {amount}",
+  "chartAvgCost": "Сиздин орт.",
+  "chartAlertLevel": "Эскертме"
 }

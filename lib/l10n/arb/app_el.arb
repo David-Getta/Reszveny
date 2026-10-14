@@ -457,5 +457,7 @@
   "portfolioDividends": "Ετήσια μερίσματα",
   "portfolioDividendYield": "Απόδοση {percent}",
   "portfolioDividendNote": "Τα αναμενόμενα ετήσια μερίσματα βασίζονται στα μερίσματα που καταβλήθηκαν τους τελευταίους 12 μήνες· οι μελλοντικές πληρωμές δεν είναι εγγυημένες.",
-  "positionDividend": "Μέρισμα: {amount} ετησίως"
+  "positionDividend": "Μέρισμα: {amount} ετησίως",
+  "chartAvgCost": "Μέση τιμή σας",
+  "chartAlertLevel": "Ειδοποίηση"
 }

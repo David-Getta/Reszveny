@@ -1608,6 +1608,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String positionDividend(String amount) {
     return '股息：每年 $amount';
   }
+
+  @override
+  String get chartAvgCost => '你的均价';
+
+  @override
+  String get chartAlertLevel => '提醒';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3212,4 +3218,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String positionDividend(String amount) {
     return '股息：每年 $amount';
   }
+
+  @override
+  String get chartAvgCost => '你的均價';
+
+  @override
+  String get chartAlertLevel => '提示';
 }

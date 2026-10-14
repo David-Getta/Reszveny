@@ -457,5 +457,7 @@
   "portfolioDividends": "연간 배당",
   "portfolioDividendYield": "수익률 {percent}",
   "portfolioDividendNote": "예상 연간 배당은 최근 12개월 동안 지급된 배당을 기준으로 하며, 향후 지급은 보장되지 않습니다.",
-  "positionDividend": "배당: 연 {amount}"
+  "positionDividend": "배당: 연 {amount}",
+  "chartAvgCost": "내 평균 단가",
+  "chartAlertLevel": "알림"
 }

@@ -1677,4 +1677,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String positionDividend(String amount) {
     return 'قازانجی پشک: ساڵانە $amount';
   }
+
+  @override
+  String get chartAvgCost => 'تێکڕای تۆ';
+
+  @override
+  String get chartAlertLevel => 'ئاگادارکەرەوە';
 }

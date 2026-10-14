@@ -1678,4 +1678,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ডিভিডেন্ড: বছরে $amount';
   }
+
+  @override
+  String get chartAvgCost => 'আপনার গড়';
+
+  @override
+  String get chartAlertLevel => 'সতর্কতা';
 }

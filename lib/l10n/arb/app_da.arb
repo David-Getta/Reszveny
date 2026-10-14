@@ -457,5 +457,7 @@
   "portfolioDividends": "Årligt udbytte",
   "portfolioDividendYield": "{percent} i afkast",
   "portfolioDividendNote": "Forventet årligt udbytte er baseret på udbytte udbetalt i de seneste 12 måneder; fremtidige udbetalinger er ikke garanteret.",
-  "positionDividend": "Udbytte: {amount} om året"
+  "positionDividend": "Udbytte: {amount} om året",
+  "chartAvgCost": "Din gns.",
+  "chartAlertLevel": "Alarm"
 }

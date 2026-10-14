@@ -1684,4 +1684,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String positionDividend(String amount) {
     return 'I-dividend: $amount ngonyaka';
   }
+
+  @override
+  String get chartAvgCost => 'Owakho umndilili';
+
+  @override
+  String get chartAlertLevel => 'Isilumkiso';
 }

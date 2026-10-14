@@ -1686,4 +1686,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividende : $amount par an';
   }
+
+  @override
+  String get chartAvgCost => 'Votre PRU';
+
+  @override
+  String get chartAlertLevel => 'Alerte';
 }

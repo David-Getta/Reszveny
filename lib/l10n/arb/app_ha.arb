@@ -457,5 +457,7 @@
   "portfolioDividends": "Rabon riba na shekara",
   "portfolioDividendYield": "Yawan riba: {percent}",
   "portfolioDividendNote": "Rabon riba da ake sa ran samu a shekara ya dogara ne kan rabon ribar da aka biya a cikin watanni 12 da suka wuce; babu tabbacin biyan kuɗi a nan gaba.",
-  "positionDividend": "Rabon riba: {amount} a shekara"
+  "positionDividend": "Rabon riba: {amount} a shekara",
+  "chartAvgCost": "Matsakaicinka",
+  "chartAlertLevel": "Faɗakarwa"
 }

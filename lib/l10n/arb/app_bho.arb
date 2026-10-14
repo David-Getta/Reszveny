@@ -457,5 +457,7 @@
   "portfolioDividends": "सालाना लाभांश",
   "portfolioDividendYield": "{percent} यील्ड",
   "portfolioDividendNote": "अनुमानित सालाना लाभांश पिछला 12 महीना में दिहल गइल लाभांश पर आधारित बा; आगे के भुगतान के कवनो गारंटी नइखे।",
-  "positionDividend": "लाभांश: {amount} सालाना"
+  "positionDividend": "लाभांश: {amount} सालाना",
+  "chartAvgCost": "रउरा औसत",
+  "chartAlertLevel": "अलर्ट"
 }

@@ -1671,4 +1671,10 @@ class AppLocalizationsSd extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ڊيويڊنڊ: سالياني $amount';
   }
+
+  @override
+  String get chartAvgCost => 'توهان جي سراسري';
+
+  @override
+  String get chartAlertLevel => 'الرٽ';
 }

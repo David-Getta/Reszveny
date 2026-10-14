@@ -3084,6 +3084,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Dividend: {amount} a year'**
   String positionDividend(String amount);
+
+  /// Very short label on the price chart next to the user's average purchase price line, followed by the price.
+  ///
+  /// In en, this message translates to:
+  /// **'Your avg.'**
+  String get chartAvgCost;
+
+  /// Very short label on the price chart next to a price alert line, followed by the price.
+  ///
+  /// In en, this message translates to:
+  /// **'Alert'**
+  String get chartAlertLevel;
 }
 
 class _AppLocalizationsDelegate

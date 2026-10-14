@@ -1682,4 +1682,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Osztalék: évi $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Átlagárad';
+
+  @override
+  String get chartAlertLevel => 'Riasztás';
 }

@@ -1675,4 +1675,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'سود نقدی: سالانه $amount';
   }
+
+  @override
+  String get chartAvgCost => 'میانگین شما';
+
+  @override
+  String get chartAlertLevel => 'هشدار';
 }

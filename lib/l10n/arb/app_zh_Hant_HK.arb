@@ -457,5 +457,7 @@
   "portfolioDividends": "全年股息",
   "portfolioDividendYield": "股息率 {percent}",
   "portfolioDividendNote": "預期全年股息根據過去 12 個月已派發的股息計算；日後派息並無保證。",
-  "positionDividend": "股息：每年 {amount}"
+  "positionDividend": "股息：每年 {amount}",
+  "chartAvgCost": "你的均價",
+  "chartAlertLevel": "提示"
 }

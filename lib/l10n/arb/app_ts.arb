@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividende ya lembe",
   "portfolioDividendYield": "Mbuyelo wa {percent}",
   "portfolioDividendNote": "Dividende leyi languteriweke ya lembe yi sekeriwile eka dividende leyi hakeriweke eka tin'hweti ta 12 leti hundzeke; ku hakela ka nkarhi lowu taka a ku tiyisisiwi.",
-  "positionDividend": "Dividende: {amount} hi lembe"
+  "positionDividend": "Dividende: {amount} hi lembe",
+  "chartAvgCost": "Avhareji ya wena",
+  "chartAlertLevel": "Xitiviso"
 }

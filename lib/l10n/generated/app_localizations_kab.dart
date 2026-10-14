@@ -1675,4 +1675,10 @@ class AppLocalizationsKab extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividand: $amount i useggas';
   }
+
+  @override
+  String get chartAvgCost => 'Talemmast-ik';
+
+  @override
+  String get chartAlertLevel => 'Alɣu';
 }

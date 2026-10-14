@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividand bu at",
   "portfolioDividendYield": "Njureef {percent}",
   "portfolioDividendNote": "Dividand bi ñu séentu at mu nekk dafa sukkandiku ci dividand yi ñu fey ci 12 weer yi weesu; feyu ëllëg yi wóoruñu.",
-  "positionDividend": "Dividand: {amount} at mu nekk"
+  "positionDividend": "Dividand: {amount} at mu nekk",
+  "chartAvgCost": "Sa diggu",
+  "chartAlertLevel": "Artu"
 }

@@ -1679,4 +1679,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividend: yiliga $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Sizning oʻrt.';
+
+  @override
+  String get chartAlertLevel => 'Bildirishnoma';
 }

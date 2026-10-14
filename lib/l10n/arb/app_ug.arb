@@ -457,5 +457,7 @@
   "portfolioDividends": "يىللىق پايدا ئۈلۈشى",
   "portfolioDividendYield": "نىسبىتى {percent}",
   "portfolioDividendNote": "مۆلچەرلەنگەن يىللىق پايدا ئۈلۈشى ئالدىنقى 12 ئايدا تۆلەنگەن پايدا ئۈلۈشىنى ئاساس قىلىدۇ؛ كەلگۈسىدىكى تۆلەملەرگە كاپالەت يوق.",
-  "positionDividend": "پايدا ئۈلۈشى: يىلىغا {amount}"
+  "positionDividend": "پايدا ئۈلۈشى: يىلىغا {amount}",
+  "chartAvgCost": "ئوتتۇرىچىڭىز",
+  "chartAlertLevel": "ئاگاھلاندۇرۇش"
 }

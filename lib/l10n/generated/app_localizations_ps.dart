@@ -1671,4 +1671,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String positionDividend(String amount) {
     return 'د ونډې ګټه: کلنۍ $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ستاسو منځنی';
+
+  @override
+  String get chartAlertLevel => 'خبرتیا';
 }

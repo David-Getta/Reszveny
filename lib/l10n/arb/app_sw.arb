@@ -457,5 +457,7 @@
   "portfolioDividends": "Gawio la mwaka",
   "portfolioDividendYield": "Mavuno {percent}",
   "portfolioDividendNote": "Gawio la mwaka linalotarajiwa linategemea gawio lililolipwa katika miezi 12 iliyopita; malipo ya baadaye hayana uhakika.",
-  "positionDividend": "Gawio: {amount} kwa mwaka"
+  "positionDividend": "Gawio: {amount} kwa mwaka",
+  "chartAvgCost": "Wastani wako",
+  "chartAlertLevel": "Arifa"
 }

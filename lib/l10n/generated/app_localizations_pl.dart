@@ -1730,4 +1730,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dywidenda: $amount rocznie';
   }
+
+  @override
+  String get chartAvgCost => 'Twoja śr.';
+
+  @override
+  String get chartAlertLevel => 'Alert';
 }

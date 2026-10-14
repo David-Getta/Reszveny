@@ -1728,4 +1728,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Дивиденды: $amount в год';
   }
+
+  @override
+  String get chartAvgCost => 'Ваша ср.';
+
+  @override
+  String get chartAlertLevel => 'Оповещение';
 }

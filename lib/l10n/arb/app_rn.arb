@@ -457,5 +457,7 @@
   "portfolioDividends": "Inyungu ku migabane y'umwaka",
   "portfolioDividendYield": "Igipimo {percent}",
   "portfolioDividendNote": "Inyungu ku migabane yitezwe ku mwaka ishingiye ku nyungu zarihwe mu mezi 12 aheze; ivyo bizorihwa mu gihe kizoza ntibihamye.",
-  "positionDividend": "Inyungu ku migabane: {amount} ku mwaka"
+  "positionDividend": "Inyungu ku migabane: {amount} ku mwaka",
+  "chartAvgCost": "Mpuzandengo yawe",
+  "chartAlertLevel": "Imenyesha"
 }

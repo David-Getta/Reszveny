@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividãnd yʋʋmd fãa",
   "portfolioDividendYield": "{percent} nafa",
   "portfolioDividendNote": "Dividãnd ning b sẽn tẽed yʋʋmd fãa wã yaa dividãnd ning b sẽn yao kiis 12 sẽn loogã zugu; b pa tõe n kɩɩs tɩ b na n yao beoog ye.",
-  "positionDividend": "Dividãnd: {amount} yʋʋmd fãa"
+  "positionDividend": "Dividãnd: {amount} yʋʋmd fãa",
+  "chartAvgCost": "Fo koosg sʋka",
+  "chartAlertLevel": "Gũusgo"
 }

@@ -1673,4 +1673,10 @@ class AppLocalizationsBho extends AppLocalizations {
   String positionDividend(String amount) {
     return 'लाभांश: $amount सालाना';
   }
+
+  @override
+  String get chartAvgCost => 'रउरा औसत';
+
+  @override
+  String get chartAlertLevel => 'अलर्ट';
 }

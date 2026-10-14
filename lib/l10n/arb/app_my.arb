@@ -457,5 +457,7 @@
   "portfolioDividends": "နှစ်စဉ် အမြတ်ဝေစု",
   "portfolioDividendYield": "အထွက်နှုန်း {percent}",
   "portfolioDividendNote": "မျှော်မှန်း နှစ်စဉ် အမြတ်ဝေစုသည် လွန်ခဲ့သော 12 လအတွင်း ပေးချေခဲ့သော အမြတ်ဝေစုအပေါ် အခြေခံသည်။ အနာဂတ် ပေးချေမှုများကို အာမမခံပါ။",
-  "positionDividend": "အမြတ်ဝေစု: တစ်နှစ်လျှင် {amount}"
+  "positionDividend": "အမြတ်ဝေစု: တစ်နှစ်လျှင် {amount}",
+  "chartAvgCost": "သင့်ပျမ်းမျှ",
+  "chartAlertLevel": "သတိပေးချက်"
 }

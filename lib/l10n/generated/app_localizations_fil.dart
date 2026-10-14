@@ -1683,4 +1683,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dibidendo: $amount kada taon';
   }
+
+  @override
+  String get chartAvgCost => 'Iyong avg.';
+
+  @override
+  String get chartAlertLevel => 'Alerto';
 }

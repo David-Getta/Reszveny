@@ -1676,4 +1676,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Temettü: yılda $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Ort. maliyetiniz';
+
+  @override
+  String get chartAlertLevel => 'Alarm';
 }

@@ -1712,4 +1712,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Дивиденда: $amount годишње';
   }
+
+  @override
+  String get chartAvgCost => 'Ваша просечна';
+
+  @override
+  String get chartAlertLevel => 'Обавештење';
 }

@@ -457,5 +457,7 @@
   "portfolioDividends": "Godišnje dividende",
   "portfolioDividendYield": "Prinos {percent}",
   "portfolioDividendNote": "Očekivane godišnje dividende temelje se na dividendama isplaćenima u posljednjih 12 mjeseci; buduće isplate nisu zajamčene.",
-  "positionDividend": "Dividenda: {amount} godišnje"
+  "positionDividend": "Dividenda: {amount} godišnje",
+  "chartAvgCost": "Vaša prosj.",
+  "chartAlertLevel": "Obavijest"
 }

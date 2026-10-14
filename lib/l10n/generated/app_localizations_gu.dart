@@ -1674,4 +1674,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ડિવિડન્ડ: વર્ષે $amount';
   }
+
+  @override
+  String get chartAvgCost => 'તમારી સરેરાશ';
+
+  @override
+  String get chartAlertLevel => 'અલર્ટ';
 }

@@ -1675,4 +1675,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String positionDividend(String amount) {
     return 'דיבידנד: $amount בשנה';
   }
+
+  @override
+  String get chartAvgCost => 'הממוצע שלך';
+
+  @override
+  String get chartAlertLevel => 'התראה';
 }

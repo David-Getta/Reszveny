@@ -1683,4 +1683,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ലാഭവിഹിതം: പ്രതിവർഷം $amount';
   }
+
+  @override
+  String get chartAvgCost => 'നിങ്ങളുടെ ശരാശരി';
+
+  @override
+  String get chartAlertLevel => 'അലേർട്ട്';
 }

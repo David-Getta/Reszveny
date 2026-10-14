@@ -1672,4 +1672,10 @@ class AppLocalizationsFf extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Geɗal nafoore: $amount kala hitaande';
   }
+
+  @override
+  String get chartAvgCost => 'Hakkunde maa';
+
+  @override
+  String get chartAlertLevel => 'Tintinol';
 }

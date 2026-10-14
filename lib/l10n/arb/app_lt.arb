@@ -457,5 +457,7 @@
   "portfolioDividends": "Metiniai dividendai",
   "portfolioDividendYield": "Pajamingumas {percent}",
   "portfolioDividendNote": "Numatomi metiniai dividendai apskaičiuojami pagal per pastaruosius 12 mėnesių išmokėtus dividendus; būsimos išmokos negarantuojamos.",
-  "positionDividend": "Dividendai: {amount} per metus"
+  "positionDividend": "Dividendai: {amount} per metus",
+  "chartAvgCost": "Jūsų vid.",
+  "chartAlertLevel": "Įspėjimas"
 }

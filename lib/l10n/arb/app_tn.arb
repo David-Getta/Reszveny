@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividende ya ngwaga",
   "portfolioDividendYield": "Poelo ya {percent}",
   "portfolioDividendNote": "Dividende e e solofetsweng ya ngwaga e theilwe mo dividendeng e e duetsweng mo dikgweding di le 12 tse di fetileng; dituelo tsa isago ga di tlhomamisiwe.",
-  "positionDividend": "Dividende: {amount} ka ngwaga"
+  "positionDividend": "Dividende: {amount} ka ngwaga",
+  "chartAvgCost": "Palogare ya gago",
+  "chartAlertLevel": "Kitsiso"
 }

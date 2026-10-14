@@ -1677,4 +1677,10 @@ class AppLocalizationsJv extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividen: $amount saben taun';
   }
+
+  @override
+  String get chartAvgCost => 'Rata-ratamu';
+
+  @override
+  String get chartAlertLevel => 'Pèngetan';
 }

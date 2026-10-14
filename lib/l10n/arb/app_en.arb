@@ -1161,5 +1161,13 @@
         "type": "String"
       }
     }
+  },
+  "chartAvgCost": "Your avg.",
+  "chartAlertLevel": "Alert",
+  "@chartAvgCost": {
+    "description": "Very short label on the price chart next to the user's average purchase price line, followed by the price."
+  },
+  "@chartAlertLevel": {
+    "description": "Very short label on the price chart next to a price alert line, followed by the price."
   }
 }

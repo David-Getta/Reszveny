@@ -1677,4 +1677,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividend: $amount every year';
   }
+
+  @override
+  String get chartAvgCost => 'Your average';
+
+  @override
+  String get chartAlertLevel => 'Alert';
 }

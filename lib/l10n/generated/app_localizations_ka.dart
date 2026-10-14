@@ -1678,4 +1678,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'დივიდენდი: წელიწადში $amount';
   }
+
+  @override
+  String get chartAvgCost => 'თქვენი საშ.';
+
+  @override
+  String get chartAlertLevel => 'შეტყობინება';
 }

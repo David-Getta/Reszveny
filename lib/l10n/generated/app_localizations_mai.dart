@@ -1672,4 +1672,10 @@ class AppLocalizationsMai extends AppLocalizations {
   String positionDividend(String amount) {
     return 'लाभांश: सालाना $amount';
   }
+
+  @override
+  String get chartAvgCost => 'अहाँक औसत';
+
+  @override
+  String get chartAlertLevel => 'अलर्ट';
 }

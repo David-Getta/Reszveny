@@ -1651,4 +1651,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String positionDividend(String amount) {
     return 'የትርፍ ድርሻ፦ በዓመት $amount';
   }
+
+  @override
+  String get chartAvgCost => 'የእርስዎ አማካይ';
+
+  @override
+  String get chartAlertLevel => 'ማንቂያ';
 }

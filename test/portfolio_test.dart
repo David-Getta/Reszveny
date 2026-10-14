@@ -6,6 +6,8 @@ import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/alerts/price_alert.dart';
+import 'package:reszveny/features/stock_detail/widgets/price_chart.dart';
 import 'package:reszveny/features/portfolio/add_lot_dialog.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
@@ -168,6 +170,24 @@ void main() {
     expect(settings, contains('bought between 2025-03-14 and 2026-01-10'));
     expect(settings, contains('do not tell the reader whether to buy more, hold or sell'));
     expect(ClaudeStockAnalyst.buildSettings(const AnalysisOptions()), isNot(contains("Reader's position")));
+  });
+
+  testWidgets('the price chart marks the own average cost and active price alerts', (tester) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2026, 1, 5));
+    await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 250, currency: 'USD');
+    await s.alerts.add(symbol: 'AAPL', kind: AlertKind.move, value: 5);
+    await s.alerts.add(symbol: 'MSFT', kind: AlertKind.below, value: 400, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final chart = tester.widget<PriceChart>(find.byType(PriceChart));
+    expect(chart.levels.map((l) => (l.label, l.price)), [('Your avg.', 200.0), ('Alert', 250.0)]);
   });
 
   testWidgets('a purchase added on the detail page shows as a position and in the portfolio', (tester) async {

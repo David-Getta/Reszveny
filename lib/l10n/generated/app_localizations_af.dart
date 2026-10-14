@@ -1680,4 +1680,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividend: $amount per jaar';
   }
+
+  @override
+  String get chartAvgCost => 'Jou gem.';
+
+  @override
+  String get chartAlertLevel => 'Waarskuwing';
 }

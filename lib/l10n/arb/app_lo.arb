@@ -457,5 +457,7 @@
   "portfolioDividends": "ເງິນປັນຜົນຕໍ່ປີ",
   "portfolioDividendYield": "ຜົນຕອບແທນ {percent}",
   "portfolioDividendNote": "ເງິນປັນຜົນຕໍ່ປີທີ່ຄາດໄວ້ ອີງໃສ່ເງິນປັນຜົນທີ່ຈ່າຍໃນ 12 ເດືອນຜ່ານມາ ການຈ່າຍໃນອະນາຄົດບໍ່ມີການຮັບປະກັນ",
-  "positionDividend": "ເງິນປັນຜົນ: {amount} ຕໍ່ປີ"
+  "positionDividend": "ເງິນປັນຜົນ: {amount} ຕໍ່ປີ",
+  "chartAvgCost": "ສະເລ່ຍຂອງທ່ານ",
+  "chartAlertLevel": "ແຈ້ງເຕືອນ"
 }

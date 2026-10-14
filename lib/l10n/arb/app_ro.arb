@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividende anuale",
   "portfolioDividendYield": "Randament {percent}",
   "portfolioDividendNote": "Dividendele anuale estimate se bazează pe dividendele plătite în ultimele 12 luni; plățile viitoare nu sunt garantate.",
-  "positionDividend": "Dividend: {amount} pe an"
+  "positionDividend": "Dividend: {amount} pe an",
+  "chartAvgCost": "Media ta",
+  "chartAlertLevel": "Alertă"
 }

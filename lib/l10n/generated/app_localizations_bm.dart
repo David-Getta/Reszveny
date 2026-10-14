@@ -1674,4 +1674,10 @@ class AppLocalizationsBm extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Tɔnɔ tilali: $amount san o san';
   }
+
+  @override
+  String get chartAvgCost => 'I ka cɛmancɛ';
+
+  @override
+  String get chartAlertLevel => 'Lasɔmini';
 }

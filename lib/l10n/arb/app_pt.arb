@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividendos anuais",
   "portfolioDividendYield": "Rendimento de {percent}",
   "portfolioDividendNote": "Os dividendos anuais esperados baseiam-se nos dividendos pagos nos últimos 12 meses; os pagamentos futuros não são garantidos.",
-  "positionDividend": "Dividendo: {amount} por ano"
+  "positionDividend": "Dividendo: {amount} por ano",
+  "chartAvgCost": "Seu custo médio",
+  "chartAlertLevel": "Alerta"
 }

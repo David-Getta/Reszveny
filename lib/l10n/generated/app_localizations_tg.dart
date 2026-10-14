@@ -1678,4 +1678,10 @@ class AppLocalizationsTg extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Дивиденд: $amount дар як сол';
   }
+
+  @override
+  String get chartAvgCost => 'Миёнаи шумо';
+
+  @override
+  String get chartAlertLevel => 'Огоҳӣ';
 }

@@ -457,5 +457,7 @@
   "portfolioDividends": "Roczna dywidenda",
   "portfolioDividendYield": "Stopa dywidendy {percent}",
   "portfolioDividendNote": "Oczekiwana roczna dywidenda opiera się na dywidendach wypłaconych w ciągu ostatnich 12 miesięcy; przyszłe wypłaty nie są gwarantowane.",
-  "positionDividend": "Dywidenda: {amount} rocznie"
+  "positionDividend": "Dywidenda: {amount} rocznie",
+  "chartAvgCost": "Twoja śr.",
+  "chartAlertLevel": "Alert"
 }

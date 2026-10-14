@@ -1726,4 +1726,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Дивіденди: $amount на рік';
   }
+
+  @override
+  String get chartAvgCost => 'Ваша сер.';
+
+  @override
+  String get chartAlertLevel => 'Сповіщення';
 }

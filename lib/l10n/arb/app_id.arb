@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividen tahunan",
   "portfolioDividendYield": "Imbal hasil {percent}",
   "portfolioDividendNote": "Perkiraan dividen tahunan didasarkan pada dividen yang dibayarkan dalam 12 bulan terakhir; pembayaran di masa mendatang tidak dijamin.",
-  "positionDividend": "Dividen: {amount} per tahun"
+  "positionDividend": "Dividen: {amount} per tahun",
+  "chartAvgCost": "Rata-rata Anda",
+  "chartAlertLevel": "Peringatan"
 }

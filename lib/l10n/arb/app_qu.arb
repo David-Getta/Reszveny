@@ -457,5 +457,7 @@
   "portfolioDividends": "Watapaq dividendo",
   "portfolioDividendYield": "{percent} rendimiento",
   "portfolioDividendNote": "Suyasqa watapaq dividendoqa qhipa 12 killapi pagasqa dividendokunapim tiyan; hamuq pagokunaqa manam segurochu.",
-  "positionDividend": "Dividendo: watapi {amount}"
+  "positionDividend": "Dividendo: watapi {amount}",
+  "chartAvgCost": "Chawpiyki",
+  "chartAlertLevel": "Willachiy"
 }

@@ -457,5 +457,7 @@
   "portfolioDividends": "ዓመታዊ ብጽሒት ትርፊ",
   "portfolioDividendYield": "መጠን {percent}",
   "portfolioDividendNote": "ዝጽበ ዓመታዊ ብጽሒት ትርፊ ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተኸፍለ ብጽሒት ትርፊ መሰረት ዝገበረ እዩ፤ መጻኢ ክፍሊታት ውሕስነት የብሎምን።",
-  "positionDividend": "ብጽሒት ትርፊ: ኣብ ዓመት {amount}"
+  "positionDividend": "ብጽሒት ትርፊ: ኣብ ዓመት {amount}",
+  "chartAvgCost": "ናትካ ማእከላይ",
+  "chartAlertLevel": "መጠንቀቕታ"
 }

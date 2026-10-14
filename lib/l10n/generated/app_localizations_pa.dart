@@ -1673,4 +1673,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ਲਾਭਅੰਸ਼: $amount ਸਾਲਾਨਾ';
   }
+
+  @override
+  String get chartAvgCost => 'ਤੁਹਾਡੀ ਔਸਤ';
+
+  @override
+  String get chartAlertLevel => 'ਅਲਰਟ';
 }

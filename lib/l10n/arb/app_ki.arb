@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividend ya mwaka",
   "portfolioDividendYield": "Uumithio {percent}",
   "portfolioDividendNote": "Dividend ya mwaka ĩrĩa yetagĩrĩrwo ĩrũmĩrĩire dividend ĩrĩa yarĩhirwo mieri-inĩ 12 ĩrĩa ĩhĩtũku; marĩhi ma mĩthenya ĩroka matirĩ na ũrũmwo.",
-  "positionDividend": "Dividend: {amount} o mwaka"
+  "positionDividend": "Dividend: {amount} o mwaka",
+  "chartAvgCost": "Gatagatĩ gaku",
+  "chartAlertLevel": "Kĩmenyithia"
 }

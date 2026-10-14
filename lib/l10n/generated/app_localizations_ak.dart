@@ -1676,4 +1676,10 @@ class AppLocalizationsAk extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Mfaso kyɛ: $amount afe biara';
   }
+
+  @override
+  String get chartAvgCost => 'Wo mfinimfini';
+
+  @override
+  String get chartAlertLevel => 'Kɔkɔbɔ';
 }

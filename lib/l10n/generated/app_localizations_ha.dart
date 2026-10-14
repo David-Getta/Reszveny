@@ -1682,4 +1682,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Rabon riba: $amount a shekara';
   }
+
+  @override
+  String get chartAvgCost => 'Matsakaicinka';
+
+  @override
+  String get chartAlertLevel => 'Faɗakarwa';
 }

@@ -1681,4 +1681,10 @@ class AppLocalizationsLua extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividende: $amount ku tshidimu';
   }
+
+  @override
+  String get chartAvgCost => 'Mushinga webe';
+
+  @override
+  String get chartAlertLevel => 'Alerte';
 }

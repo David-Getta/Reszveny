@@ -1684,4 +1684,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Μέρισμα: $amount ετησίως';
   }
+
+  @override
+  String get chartAvgCost => 'Μέση τιμή σας';
+
+  @override
+  String get chartAlertLevel => 'Ειδοποίηση';
 }

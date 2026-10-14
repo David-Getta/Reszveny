@@ -194,6 +194,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5n | Közelgő események: a kedvencek és a portfólió gyorsjelentései (90 nap, napszak, várt EPS) és az elemzések dátumos eseményei; kártya a kezdőképernyőn, teljes lista külön oldalon | ✅ kész |
 | 5o | Összehasonlítás: legfeljebb 3 részvény fő számai egymás mellett (értékeltség, növekedés, árrés, ROE, eladósodottság, osztalék), soronként a legjobb kiemelve, alul az elmentett elemzések lényege; a részvény oldaláról nyílik | ✅ kész |
 | 5p | Várható éves osztalék a portfólióban: tételenként és összesítve a megjelenítési devizában, hozammal (az elmúlt 12 hónap osztaléka alapján) | ✅ kész |
+| 5q | Árfolyamgrafikon: a saját átlagár és az aktív riasztások szintje szaggatott vonallal | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

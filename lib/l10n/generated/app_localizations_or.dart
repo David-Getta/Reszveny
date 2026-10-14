@@ -1674,4 +1674,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ଲାଭାଂଶ: ବାର୍ଷିକ $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ଆପଣଙ୍କ ହାରାହାରି';
+
+  @override
+  String get chartAlertLevel => 'ଆଲର୍ଟ';
 }

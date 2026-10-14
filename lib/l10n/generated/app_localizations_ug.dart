@@ -1679,4 +1679,10 @@ class AppLocalizationsUg extends AppLocalizations {
   String positionDividend(String amount) {
     return 'پايدا ئۈلۈشى: يىلىغا $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ئوتتۇرىچىڭىز';
+
+  @override
+  String get chartAlertLevel => 'ئاگاھلاندۇرۇش';
 }

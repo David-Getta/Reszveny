@@ -1682,4 +1682,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String positionDividend(String amount) {
     return 'డివిడెండ్: సంవత్సరానికి $amount';
   }
+
+  @override
+  String get chartAvgCost => 'మీ సగటు';
+
+  @override
+  String get chartAlertLevel => 'హెచ్చరిక';
 }

@@ -457,5 +457,7 @@
   "portfolioDividends": "Tinuig nga dibidendo",
   "portfolioDividendYield": "{percent} yield",
   "portfolioDividendNote": "Ang gipaabot nga tinuig nga dibidendo gibase sa mga dibidendo nga gibayad sulod sa miaging 12 ka bulan; ang umaabot nga mga bayad dili garantisado.",
-  "positionDividend": "Dibidendo: {amount} kada tuig"
+  "positionDividend": "Dibidendo: {amount} kada tuig",
+  "chartAvgCost": "Imong avg.",
+  "chartAlertLevel": "Alerto"
 }

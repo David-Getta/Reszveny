@@ -457,5 +457,7 @@
   "portfolioDividends": "વાર્ષિક ડિવિડન્ડ",
   "portfolioDividendYield": "{percent} યીલ્ડ",
   "portfolioDividendNote": "અપેક્ષિત વાર્ષિક ડિવિડન્ડ છેલ્લા 12 મહિનામાં ચૂકવાયેલા ડિવિડન્ડ પર આધારિત છે; ભવિષ્યની ચુકવણીની ખાતરી નથી.",
-  "positionDividend": "ડિવિડન્ડ: વર્ષે {amount}"
+  "positionDividend": "ડિવિડન્ડ: વર્ષે {amount}",
+  "chartAvgCost": "તમારી સરેરાશ",
+  "chartAlertLevel": "અલર્ટ"
 }

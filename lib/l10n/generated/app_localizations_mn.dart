@@ -1678,4 +1678,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Ногдол ашиг: жилд $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Таны дундаж';
+
+  @override
+  String get chartAlertLevel => 'Сэрэмжлүүлэг';
 }

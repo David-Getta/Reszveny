@@ -1675,4 +1675,10 @@ class AppLocalizationsTk extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Diwidend: ýylda $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Siziň ortaňyz';
+
+  @override
+  String get chartAlertLevel => 'Duýduryş';
 }

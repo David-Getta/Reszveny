@@ -457,5 +457,7 @@
   "portfolioDividends": "Geɗal nafoore hitaande",
   "portfolioDividendYield": "{percent} e coggu",
   "portfolioDividendNote": "Geɗal nafoore hitaande njaŋngaaɗo ina tuugii e geɗal nafoore yoboraaɗe e lebbi 12 ɓennuɗi ɗii; njoboje garooje ngalaa hoolaare.",
-  "positionDividend": "Geɗal nafoore: {amount} kala hitaande"
+  "positionDividend": "Geɗal nafoore: {amount} kala hitaande",
+  "chartAvgCost": "Hakkunde maa",
+  "chartAlertLevel": "Tintinol"
 }

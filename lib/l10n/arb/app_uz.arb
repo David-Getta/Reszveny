@@ -457,5 +457,7 @@
   "portfolioDividends": "Yillik dividend",
   "portfolioDividendYield": "Daromadlilik {percent}",
   "portfolioDividendNote": "Kutilayotgan yillik dividend soʻnggi 12 oyda toʻlangan dividendlarga asoslanadi; kelgusi toʻlovlar kafolatlanmaydi.",
-  "positionDividend": "Dividend: yiliga {amount}"
+  "positionDividend": "Dividend: yiliga {amount}",
+  "chartAvgCost": "Sizning oʻrt.",
+  "chartAlertLevel": "Bildirishnoma"
 }

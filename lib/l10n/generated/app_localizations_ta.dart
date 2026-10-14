@@ -1685,4 +1685,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ஈவுத்தொகை: ஆண்டுக்கு $amount';
   }
+
+  @override
+  String get chartAvgCost => 'உங்கள் சராசரி';
+
+  @override
+  String get chartAlertLevel => 'எச்சரிக்கை';
 }

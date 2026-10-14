@@ -457,5 +457,7 @@
   "portfolioDividends": "ਸਾਲਾਨਾ ਲਾਭਅੰਸ਼",
   "portfolioDividendYield": "{percent} ਯੀਲਡ",
   "portfolioDividendNote": "ਅਨੁਮਾਨਿਤ ਸਾਲਾਨਾ ਲਾਭਅੰਸ਼ ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਦਿੱਤੇ ਗਏ ਲਾਭਅੰਸ਼ ’ਤੇ ਆਧਾਰਿਤ ਹੈ; ਭਵਿੱਖੀ ਭੁਗਤਾਨਾਂ ਦੀ ਗਾਰੰਟੀ ਨਹੀਂ ਹੈ।",
-  "positionDividend": "ਲਾਭਅੰਸ਼: {amount} ਸਾਲਾਨਾ"
+  "positionDividend": "ਲਾਭਅੰਸ਼: {amount} ਸਾਲਾਨਾ",
+  "chartAvgCost": "ਤੁਹਾਡੀ ਔਸਤ",
+  "chartAlertLevel": "ਅਲਰਟ"
 }

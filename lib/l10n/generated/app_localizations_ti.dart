@@ -1646,4 +1646,10 @@ class AppLocalizationsTi extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ብጽሒት ትርፊ: ኣብ ዓመት $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ናትካ ማእከላይ';
+
+  @override
+  String get chartAlertLevel => 'መጠንቀቕታ';
 }

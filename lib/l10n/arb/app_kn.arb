@@ -457,5 +457,7 @@
   "portfolioDividends": "ವಾರ್ಷಿಕ ಡಿವಿಡೆಂಡ್",
   "portfolioDividendYield": "{percent} ಯೀಲ್ಡ್",
   "portfolioDividendNote": "ನಿರೀಕ್ಷಿತ ವಾರ್ಷಿಕ ಡಿವಿಡೆಂಡ್ ಕಳೆದ 12 ತಿಂಗಳಲ್ಲಿ ಪಾವತಿಸಿದ ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಆಧರಿಸಿದೆ; ಭವಿಷ್ಯದ ಪಾವತಿಗಳಿಗೆ ಖಾತರಿ ಇಲ್ಲ.",
-  "positionDividend": "ಡಿವಿಡೆಂಡ್: ವರ್ಷಕ್ಕೆ {amount}"
+  "positionDividend": "ಡಿವಿಡೆಂಡ್: ವರ್ಷಕ್ಕೆ {amount}",
+  "chartAvgCost": "ನಿಮ್ಮ ಸರಾಸರಿ",
+  "chartAlertLevel": "ಅಲರ್ಟ್"
 }

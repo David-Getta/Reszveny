@@ -1682,4 +1682,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ಡಿವಿಡೆಂಡ್: ವರ್ಷಕ್ಕೆ $amount';
   }
+
+  @override
+  String get chartAvgCost => 'ನಿಮ್ಮ ಸರಾಸರಿ';
+
+  @override
+  String get chartAlertLevel => 'ಅಲರ್ಟ್';
 }

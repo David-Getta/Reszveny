@@ -1686,4 +1686,10 @@ class AppLocalizationsLg extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Amagoba ku migabo: $amount buli mwaka';
   }
+
+  @override
+  String get chartAvgCost => 'Eyiyo ya wakati';
+
+  @override
+  String get chartAlertLevel => 'Okulabula';
 }

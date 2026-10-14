@@ -1658,4 +1658,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String positionDividend(String amount) {
     return 'ເງິນປັນຜົນ: $amount ຕໍ່ປີ';
   }
+
+  @override
+  String get chartAvgCost => 'ສະເລ່ຍຂອງທ່ານ';
+
+  @override
+  String get chartAlertLevel => 'ແຈ້ງເຕືອນ';
 }

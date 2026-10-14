@@ -1681,4 +1681,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Dividendo: $amount al año';
   }
+
+  @override
+  String get chartAvgCost => 'Tu coste medio';
+
+  @override
+  String get chartAlertLevel => 'Alerta';
 }

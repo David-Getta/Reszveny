@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividén taunan",
   "portfolioDividendYield": "Imbal hasil {percent}",
   "portfolioDividendNote": "Dividén taunan anu diperkirakeun dumasar kana dividén anu dibayar dina 12 bulan ka tukang; pamayaran ka hareup henteu dijamin.",
-  "positionDividend": "Dividén: {amount} sataun"
+  "positionDividend": "Dividén: {amount} sataun",
+  "chartAvgCost": "Rata-rata anjeun",
+  "chartAlertLevel": "Béwara"
 }

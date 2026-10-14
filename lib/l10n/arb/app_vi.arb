@@ -457,5 +457,7 @@
   "portfolioDividends": "Cổ tức hằng năm",
   "portfolioDividendYield": "Tỷ suất {percent}",
   "portfolioDividendNote": "Cổ tức hằng năm dự kiến dựa trên cổ tức đã chi trả trong 12 tháng qua; các khoản chi trả trong tương lai không được đảm bảo.",
-  "positionDividend": "Cổ tức: {amount} mỗi năm"
+  "positionDividend": "Cổ tức: {amount} mỗi năm",
+  "chartAvgCost": "Giá vốn TB",
+  "chartAlertLevel": "Cảnh báo"
 }

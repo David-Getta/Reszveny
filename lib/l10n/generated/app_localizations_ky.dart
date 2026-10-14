@@ -1679,4 +1679,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Дивиденд: жылына $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Сиздин орт.';
+
+  @override
+  String get chartAlertLevel => 'Эскертме';
 }

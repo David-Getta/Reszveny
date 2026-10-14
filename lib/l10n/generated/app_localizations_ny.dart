@@ -1683,4 +1683,10 @@ class AppLocalizationsNy extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Gawo la phindu: $amount pachaka';
   }
+
+  @override
+  String get chartAvgCost => 'Wapakati wanu';
+
+  @override
+  String get chartAlertLevel => 'Chidziwitso';
 }

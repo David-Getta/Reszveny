@@ -1683,4 +1683,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String positionDividend(String amount) {
     return 'I-dividend: $amount ngonyaka';
   }
+
+  @override
+  String get chartAvgCost => 'Isilinganiso sakho';
+
+  @override
+  String get chartAlertLevel => 'Isexwayiso';
 }

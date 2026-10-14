@@ -1626,4 +1626,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String positionDividend(String amount) {
     return '配当: 年間 $amount';
   }
+
+  @override
+  String get chartAvgCost => '平均取得単価';
+
+  @override
+  String get chartAlertLevel => 'アラート';
 }

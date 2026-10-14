@@ -457,5 +457,7 @@
   "portfolioDividends": "Dividenda isan-taona",
   "portfolioDividendYield": "Tahany {percent}",
   "portfolioDividendNote": "Ny dividenda andrasana isan-taona dia mifototra amin'ny dividenda naloa tao anatin'ny 12 volana farany; tsy azo antoka ny fandoavana ho avy.",
-  "positionDividend": "Dividenda: {amount} isan-taona"
+  "positionDividend": "Dividenda: {amount} isan-taona",
+  "chartAvgCost": "Ny antoninao",
+  "chartAlertLevel": "Fanairana"
 }

@@ -457,5 +457,7 @@
   "portfolioDividends": "Tinawen a dibidendo",
   "portfolioDividendYield": "{percent} yield",
   "portfolioDividendNote": "Ti mapakpakadaan a tinawen a dibidendo ket naibatay kadagiti dibidendo a naibayad iti napalabas a 12 a bulan; saan a garantisado dagiti bayad iti masakbayan.",
-  "positionDividend": "Dibidendo: {amount} iti tinawen"
+  "positionDividend": "Dibidendo: {amount} iti tinawen",
+  "chartAvgCost": "Avg. mo",
+  "chartAlertLevel": "Alerto"
 }

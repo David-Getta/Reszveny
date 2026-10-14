@@ -457,5 +457,7 @@
   "portfolioDividends": "წლიური დივიდენდები",
   "portfolioDividendYield": "შემოსავლიანობა {percent}",
   "portfolioDividendNote": "მოსალოდნელი წლიური დივიდენდები ეფუძნება ბოლო 12 თვეში გადახდილ დივიდენდებს; მომავალი გადახდები გარანტირებული არ არის.",
-  "positionDividend": "დივიდენდი: წელიწადში {amount}"
+  "positionDividend": "დივიდენდი: წელიწადში {amount}",
+  "chartAvgCost": "თქვენი საშ.",
+  "chartAlertLevel": "შეტყობინება"
 }

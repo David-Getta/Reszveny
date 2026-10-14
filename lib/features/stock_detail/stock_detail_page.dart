@@ -13,6 +13,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../alerts/alerts_view.dart';
+import '../alerts/price_alert.dart';
 import '../portfolio/add_lot_dialog.dart';
 import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
@@ -272,7 +273,16 @@ class _DetailsBody extends StatelessWidget {
             ? SectionError(err(DetailSection.chart)!)
             : d.history == null
             ? Text(l10n.notAvailable)
-            : PriceChart(history: d.history!, fmt: fmt, currency: cur),
+            : ListenableBuilder(
+                // A saját átlagár és az aktív riasztások szintje a grafikonon.
+                listenable: Listenable.merge([AppServices.of(context).portfolio, AppServices.of(context).alerts]),
+                builder: (context, _) => PriceChart(
+                  history: d.history!,
+                  fmt: fmt,
+                  currency: cur,
+                  levels: chartLevels(context, d.symbol, cur),
+                ),
+              ),
       ),
 
       // Árfolyam
@@ -613,4 +623,20 @@ class _FavoriteButton extends StatelessWidget {
       },
     );
   }
+}
+
+/// A grafikon kiemelt szintjei: a saját átlagár (ha van pozíció ugyanebben a
+/// devizában) és az aktív „fölé megy” / „alá esik” riasztások.
+List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency) {
+  final services = AppServices.of(context);
+  final l10n = AppLocalizations.of(context);
+  final p = AppPalette.of(context);
+  final position = services.portfolio.positionOf(symbol);
+  return [
+    if (position != null && position.quantity > 0 && (currency == null || position.currency == currency))
+      ChartLevel(price: position.averageCost, label: l10n.chartAvgCost, color: p.accent),
+    for (final a in services.alerts.forSymbol(symbol))
+      if (a.isActive && a.kind != AlertKind.move && (a.currency == null || currency == null || a.currency == currency))
+        ChartLevel(price: a.value, label: l10n.chartAlertLevel, color: p.muted),
+  ];
 }

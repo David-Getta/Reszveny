@@ -1683,4 +1683,10 @@ class AppLocalizationsOm extends AppLocalizations {
   String positionDividend(String amount) {
     return 'Qooda bu\'aa: waggaatti $amount';
   }
+
+  @override
+  String get chartAvgCost => 'Giddugaleessa kee';
+
+  @override
+  String get chartAlertLevel => 'Akeekkachiisa';
 }

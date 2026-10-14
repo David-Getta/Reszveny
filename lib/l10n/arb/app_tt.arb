@@ -457,5 +457,7 @@
   "portfolioDividends": "Еллык дивидендлар",
   "portfolioDividendYield": "Керемлелек {percent}",
   "portfolioDividendNote": "Көтелгән еллык дивидендлар соңгы 12 айда түләнгән дивидендларга нигезләнә; киләчәк түләүләр гарантияләнми.",
-  "positionDividend": "Дивиденд: елына {amount}"
+  "positionDividend": "Дивиденд: елына {amount}",
+  "chartAvgCost": "Сезнең урт.",
+  "chartAlertLevel": "Искәртү"
 }
