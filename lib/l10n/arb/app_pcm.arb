@@ -408,5 +408,14 @@
   "referralErrOwn": "You no fit use your own code.",
   "referralErrAlready": "You don already use one padi code before.",
   "referralShareText": "I dey use WhatStock analyse stocks: snap one stock and the AI go explain am. With my code {code} you go get {count, plural, one{{count} extra analysis} other{{count} extra analysis}}.",
-  "referralCopied": "Code don copy"
+  "referralCopied": "Code don copy",
+  "onboardTitle1": "Snap stock picture",
+  "onboardBody1": "Broker screen, newspaper or company logo don do: WhatStock go sabi di stock and show you im price, chart and di main figures.",
+  "onboardTitle2": "Understand am for few minutes",
+  "onboardBody2": "Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three ways wey di price fit go, with sources and for your own language.",
+  "onboardTitle3": "No miss anything",
+  "onboardBody3": "Favourites, your portfolio and price alerts go dey tell you wetin dey happen. Your analyses go stay for your device, ready make you open dem again.",
+  "onboardNext": "Next",
+  "onboardStart": "Make we start",
+  "onboardSkip": "Skip am"
 }

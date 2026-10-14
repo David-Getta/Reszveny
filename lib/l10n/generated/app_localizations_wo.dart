@@ -1496,4 +1496,34 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kood bi koppi nañu ko';
+
+  @override
+  String get onboardTitle1 => 'Jëlal nataalu aksiyoŋ';
+
+  @override
+  String get onboardBody1 =>
+      'Ekraŋu aplikasiyoŋu bursu, ab surnaal walla màndargay kompañi doy na: WhatStock dina xàmmi aksiyoŋ bi te won la njëgam, grafik bi ak lim yi am solo.';
+
+  @override
+  String get onboardTitle2 => 'Xam ko ci ay simili rekk';
+
+  @override
+  String get onboardBody2 =>
+      'Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat ci fan la njëg bi mën a jëm – ak fi xibaar yi jóge te ci sa làkk.';
+
+  @override
+  String get onboardTitle3 => 'Bul ñàkk benn xibaar';
+
+  @override
+  String get onboardBody3 =>
+      'Yi ma gënal, sama aksiyoŋ yi ak artu njëg dinañu la yégal lu xew. Say saytu dañuy des ci sa jumtukaay, pare ngir nga ubbiwaat leen.';
+
+  @override
+  String get onboardNext => 'Ci kanam';
+
+  @override
+  String get onboardStart => 'Tàmbali';
+
+  @override
+  String get onboardSkip => 'Tëb';
 }

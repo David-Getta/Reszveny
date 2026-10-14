@@ -1529,4 +1529,34 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get referralCopied => 'Cod copiat';
+
+  @override
+  String get onboardTitle1 => 'Fotografiază o acțiune';
+
+  @override
+  String get onboardBody1 =>
+      'Ajunge un ecran de broker, un ziar sau un logo de companie: WhatStock recunoaște acțiunea și îți arată prețul, graficul și cifrele-cheie.';
+
+  @override
+  String get onboardTitle2 => 'Înțelege totul în câteva minute';
+
+  @override
+  String get onboardBody2 =>
+      'Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii despre direcția în care ar putea merge prețul, cu surse și în limba ta.';
+
+  @override
+  String get onboardTitle3 => 'Rămâi mereu la curent';
+
+  @override
+  String get onboardBody3 =>
+      'Favoritele, portofoliul tău și alertele de preț te țin la curent. Analizele tale rămân pe dispozitivul tău, gata să fie redeschise.';
+
+  @override
+  String get onboardNext => 'Înainte';
+
+  @override
+  String get onboardStart => 'Să începem';
+
+  @override
+  String get onboardSkip => 'Omite';
 }

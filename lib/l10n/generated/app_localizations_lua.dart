@@ -1503,4 +1503,34 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code mmukopiibue';
+
+  @override
+  String get onboardTitle1 => 'Ambula foto wa action';
+
+  @override
+  String get onboardBody1 =>
+      'Ekrâ wa application wa broker, tshikandakanda anyi logo wa kompanyi bidi bikumbane: WhatStock udi umanya action eu ne ukuleja mushinga wayi, grafiki ne bimfuanyi bia mushinga.';
+
+  @override
+  String get onboardTitle2 => 'Umvua bimpe mu minite mikese';
+
+  @override
+  String get onboardBody2 =>
+      'Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu adi mua kuenzeka ku mushinga, ne miaba ya mumanyisha ne mu muakulu webe.';
+
+  @override
+  String get onboardTitle3 => 'Ikala mumanye malu onso';
+
+  @override
+  String get onboardBody3 =>
+      'Biudi musue, portefeuille webe ne alerte ya mushinga bidi bikumanyisha. Makonkonona ebe adi ashala mu tshiamu tshiebe, alongolola bua kuabulula kabidi.';
+
+  @override
+  String get onboardNext => 'Bidi bilonda';
+
+  @override
+  String get onboardStart => 'Tuanjile';
+
+  @override
+  String get onboardSkip => 'Pita';
 }

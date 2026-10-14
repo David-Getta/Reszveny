@@ -1452,4 +1452,34 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get referralCopied => 'コードをコピーしました';
+
+  @override
+  String get onboardTitle1 => '株を撮影するだけ';
+
+  @override
+  String get onboardBody1 =>
+      '証券アプリの画面、新聞、企業ロゴがあれば十分。WhatStock が銘柄を認識し、株価、チャート、主要指標を表示します。';
+
+  @override
+  String get onboardTitle2 => '数分で理解できる';
+
+  @override
+  String get onboardBody2 =>
+      'AI 分析が、株価を動かす要因、リスク、バリュエーション、そして株価の行方を示す3つのシナリオを、出典付きでお使いの言語で解説します。';
+
+  @override
+  String get onboardTitle3 => '最新の動きを見逃さない';
+
+  @override
+  String get onboardBody3 =>
+      'お気に入り、ポートフォリオ、価格アラートで常に最新情報をお届けします。分析はデバイスに保存され、いつでも開き直せます。';
+
+  @override
+  String get onboardNext => '次へ';
+
+  @override
+  String get onboardStart => 'はじめる';
+
+  @override
+  String get onboardSkip => 'スキップ';
 }

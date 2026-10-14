@@ -1501,4 +1501,34 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Код хуулагдлаа';
+
+  @override
+  String get onboardTitle1 => 'Хувьцааны зураг аваарай';
+
+  @override
+  String get onboardBody1 =>
+      'Брокерын аппын дэлгэц, сонин эсвэл компанийн лого хангалттай: WhatStock хувьцааг таньж, үнэ, график болон гол үзүүлэлтүүдийг нь харуулна.';
+
+  @override
+  String get onboardTitle2 => 'Хэдхэн минутад ойлгоорой';
+
+  @override
+  String get onboardBody2 =>
+      'AI шинжилгээ хувьцааг юу хөдөлгөж буйг, эрсдэл, үнэлгээ болон үнэ хаашаа явж болох гурван хувилбарыг эх сурвалжтайгаар, таны хэлээр тайлбарлана.';
+
+  @override
+  String get onboardTitle3 => 'Үргэлж мэдээлэлтэй байгаарай';
+
+  @override
+  String get onboardBody3 =>
+      'Дуртай, таны портфолио болон үнийн сэрэмжлүүлэг танд цаг тухайд нь мэдэгдэнэ. Таны шинжилгээнүүд төхөөрөмж дээр тань хадгалагдаж, хүссэн үедээ дахин нээх боломжтой.';
+
+  @override
+  String get onboardNext => 'Дараах';
+
+  @override
+  String get onboardStart => 'Эхлэх';
+
+  @override
+  String get onboardSkip => 'Алгасах';
 }

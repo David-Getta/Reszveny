@@ -408,5 +408,14 @@
   "referralErrOwn": "Bạn không thể đổi mã của chính mình.",
   "referralErrAlready": "Bạn đã đổi mã của một người bạn rồi.",
   "referralShareText": "Mình phân tích cổ phiếu bằng WhatStock: chụp ảnh một cổ phiếu và AI sẽ giải thích. Dùng mã {code} của mình, bạn nhận được {count, plural, =1{1 lượt phân tích bổ sung} other{{count} lượt phân tích bổ sung}}.",
-  "referralCopied": "Đã sao chép mã"
+  "referralCopied": "Đã sao chép mã",
+  "onboardTitle1": "Chụp ảnh một cổ phiếu",
+  "onboardBody1": "Chỉ cần màn hình ứng dụng môi giới, một tờ báo hay logo công ty: WhatStock sẽ nhận diện cổ phiếu và hiển thị giá, biểu đồ cùng các chỉ số quan trọng.",
+  "onboardTitle2": "Hiểu rõ chỉ trong vài phút",
+  "onboardBody2": "Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản cho hướng đi của giá – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.",
+  "onboardTitle3": "Luôn nắm bắt tình hình",
+  "onboardBody3": "Yêu thích, danh mục của bạn và cảnh báo giá giúp bạn luôn cập nhật. Các bản phân tích được lưu trên thiết bị, sẵn sàng để mở lại bất cứ lúc nào.",
+  "onboardNext": "Tiếp",
+  "onboardStart": "Bắt đầu",
+  "onboardSkip": "Bỏ qua"
 }

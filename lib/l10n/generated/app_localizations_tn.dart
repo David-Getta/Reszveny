@@ -1508,4 +1508,34 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Khoutu e kopilwe';
+
+  @override
+  String get onboardTitle1 => 'Tsaya setshwantsho sa shere';
+
+  @override
+  String get onboardBody1 =>
+      'Sekirini sa app ya borokara, lokwalodikgang kgotsa logo ya khampani di lekane: WhatStock e lemoga shere mme e go bontsha tlhwatlhwa ya yone, kerafo le dipalo tsa botlhokwa.';
+
+  @override
+  String get onboardTitle2 => 'E tlhaloganye mo metsotsong e le mmalwa';
+
+  @override
+  String get onboardBody2 =>
+      'Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a gore tlhwatlhwa e ka ya kae, ka metswedi le ka puo ya gago.';
+
+  @override
+  String get onboardTitle3 => 'Nna o itse sotlhe';
+
+  @override
+  String get onboardBody3 =>
+      'Tse o di ratang, potefolio ya gago le dikitsiso tsa tlhwatlhwa di go itsise se se diragalang. Ditshekatsheko tsa gago di nna mo sedirisiweng sa gago, di siametse go bulwa gape.';
+
+  @override
+  String get onboardNext => 'E e latelang';
+
+  @override
+  String get onboardStart => 'Simolola';
+
+  @override
+  String get onboardSkip => 'Tlola';
 }

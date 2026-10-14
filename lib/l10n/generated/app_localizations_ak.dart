@@ -1498,4 +1498,34 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get referralCopied => 'Wɔakɔpi code no';
+
+  @override
+  String get onboardTitle1 => 'Twa kyɛfa bi mfonini';
+
+  @override
+  String get onboardBody1 =>
+      'Broker app bi skrin, atesɛm krataa anaa adwumakuw bi agyiraehyɛde ara bɛyɛ: WhatStock behu kyɛfa no na akyerɛ ne bo, ne nsesae mfonini ne ne nkontabuo titiriw.';
+
+  @override
+  String get onboardTitle2 => 'Te ase wɔ simma kakra mu';
+
+  @override
+  String get onboardBody2 =>
+      'AI nhwehwɛmu no kyerɛkyerɛ nea ɛma kyɛfa no bo kɔ soro anaa fam, ne asiane ahorow, ne bo ankasa, ne kwan abiɛsa a ne bo betumi afa so – ne fibea ahorow ka ho, na ɛwɔ wo kasa mu.';
+
+  @override
+  String get onboardTitle3 => 'Nya nsɛm no daa';
+
+  @override
+  String get onboardBody3 =>
+      'Nea mepɛ, wo nkyɛfa ne bo ho kɔkɔbɔ ma wuhu nea ɛrekɔ so. Wo nhwehwɛmu ahorow tena wo fon so, na wubetumi abue bio bere biara.';
+
+  @override
+  String get onboardNext => 'Toa so';
+
+  @override
+  String get onboardStart => 'Fi ase';
+
+  @override
+  String get onboardSkip => 'Twa mu';
 }

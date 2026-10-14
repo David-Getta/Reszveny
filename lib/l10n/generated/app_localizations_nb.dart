@@ -1499,4 +1499,34 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koden er kopiert';
+
+  @override
+  String get onboardTitle1 => 'Ta bilde av en aksje';
+
+  @override
+  String get onboardBody1 =>
+      'En meglerskjerm, en avis eller en firmalogo er nok: WhatStock gjenkjenner aksjen og viser kurs, graf og nøkkeltall.';
+
+  @override
+  String get onboardTitle2 => 'Forstå den på minutter';
+
+  @override
+  String get onboardBody2 =>
+      'AI-analysen forklarer hva som driver aksjen, risikoene, verdsettelsen og tre scenarioer for hvor kursen kan gå – med kilder og på ditt språk.';
+
+  @override
+  String get onboardTitle3 => 'Hold deg oppdatert';
+
+  @override
+  String get onboardBody3 =>
+      'Favoritter, porteføljen din og kursvarsler holder deg oppdatert. Analysene dine blir liggende på enheten din, klare til å åpnes igjen.';
+
+  @override
+  String get onboardNext => 'Neste';
+
+  @override
+  String get onboardStart => 'Kom i gang';
+
+  @override
+  String get onboardSkip => 'Hopp over';
 }

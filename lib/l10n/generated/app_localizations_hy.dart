@@ -1506,4 +1506,34 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get referralCopied => 'Կոդը պատճենվեց';
+
+  @override
+  String get onboardTitle1 => 'Լուսանկարեք բաժնետոմսը';
+
+  @override
+  String get onboardBody1 =>
+      'Բավական է բրոքերային հավելվածի էկրանը, թերթը կամ ընկերության լոգոն. WhatStock-ը ճանաչում է բաժնետոմսը և ցույց տալիս դրա գինը, գծապատկերը և հիմնական ցուցանիշները։';
+
+  @override
+  String get onboardTitle2 => 'Հասկացեք րոպեների ընթացքում';
+
+  @override
+  String get onboardBody2 =>
+      'AI վերլուծությունը բացատրում է, թե ինչն է շարժում բաժնետոմսը, որոնք են ռիսկերը, ինչպիսին է գնահատումը, և ներկայացնում է երեք սցենար, թե ուր կարող է գնալ գինը՝ աղբյուրներով և ձեր լեզվով։';
+
+  @override
+  String get onboardTitle3 => 'Միշտ տեղեկացված եղեք';
+
+  @override
+  String get onboardBody3 =>
+      'Ընտրյալները, ձեր պորտֆելը և գնային ծանուցումները ձեզ միշտ տեղեկացված կպահեն։ Ձեր վերլուծությունները մնում են ձեր սարքում՝ պատրաստ նորից բացվելու։';
+
+  @override
+  String get onboardNext => 'Հաջորդը';
+
+  @override
+  String get onboardStart => 'Սկսել';
+
+  @override
+  String get onboardSkip => 'Բաց թողնել';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Koodii mataa keetii fayyadamuu hin dandeessu.",
   "referralErrAlready": "Koodii hiriyaa tokkoo duraan fayyadamteetta.",
   "referralShareText": "Ani WhatStock'n aksiyoonota nan xiinxala: suuraa aksiyoonaa kaasi, AI'n siif ibsa. Koodii koo {code} tiin {count, plural, =1{xiinxala dabalataa 1} other{xiinxala dabalataa {count}}} argatta.",
-  "referralCopied": "Koodiin garagalfameera"
+  "referralCopied": "Koodiin garagalfameera",
+  "onboardTitle1": "Suuraa aksiyoonaa kaasi",
+  "onboardBody1": "Iskiriiniin appii daldalaa, gaazexaan ykn mallattoon dhaabbataa gahaadha: WhatStock aksiyoona sana adda baasee gatii, chaartii fi lakkoofsota ijoo isaa siif agarsiisa.",
+  "onboardTitle2": "Daqiiqaa muraasatti hubadhu",
+  "onboardBody2": "Xiinxalli AI waan aksiyoona sochoosu, balaawwan, gatii isaa sirrii fi haala sadii gatiin itti deemuu danda'u maddaa wajjin afaan keetiin siif ibsa.",
+  "onboardTitle3": "Yeroo hunda odeeffannoo qabaadhu",
+  "onboardBody3": "Filatamoon, poortfooliyoon kee fi akeekkachiisni gatii odeeffannoo siif kennu. Xiinxalli kee meeshaa kee irratti hafa, irra deebitee banuuf qophaa'aadha.",
+  "onboardNext": "Itti aanu",
+  "onboardStart": "Jalqabi",
+  "onboardSkip": "Darbi"
 }

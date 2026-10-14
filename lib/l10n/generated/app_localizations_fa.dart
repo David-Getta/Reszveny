@@ -1498,4 +1498,34 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get referralCopied => 'کد کپی شد';
+
+  @override
+  String get onboardTitle1 => 'از یک سهم عکس بگیرید';
+
+  @override
+  String get onboardBody1 =>
+      'صفحهٔ یک اپ کارگزاری، یک روزنامه یا لوگوی یک شرکت کافی است: WhatStock سهم را تشخیص می‌دهد و قیمت، نمودار و ارقام کلیدی آن را نشان می‌دهد.';
+
+  @override
+  String get onboardTitle2 => 'در چند دقیقه آن را بفهمید';
+
+  @override
+  String get onboardBody2 =>
+      'تحلیل هوش مصنوعی توضیح می‌دهد چه چیزی سهم را حرکت می‌دهد، ریسک‌ها و ارزش‌گذاری آن چیست و سه سناریو برای مسیر احتمالی قیمت ارائه می‌کند؛ همراه با منابع و به زبان شما.';
+
+  @override
+  String get onboardTitle3 => 'همیشه در جریان باشید';
+
+  @override
+  String get onboardBody3 =>
+      'علاقه‌مندی‌ها، سبد سهام شما و هشدارهای قیمت شما را در جریان نگه می‌دارند. تحلیل‌های شما روی دستگاهتان می‌مانند و هر زمان بخواهید می‌توانید دوباره بازشان کنید.';
+
+  @override
+  String get onboardNext => 'بعدی';
+
+  @override
+  String get onboardStart => 'شروع کنید';
+
+  @override
+  String get onboardSkip => 'رد شدن';
 }

@@ -1509,4 +1509,34 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kódigo copiasqa';
+
+  @override
+  String get onboardTitle1 => 'Huk accionpa fotonta hurquy';
+
+  @override
+  String get onboardBody1 =>
+      'Huk broker apppa pantallan, huk periódico utaq huk empresapa logon aypanmi: WhatStock accionta riqsin, chaninta, gráficonta, hatun yupaykunantapas rikuchisunki.';
+
+  @override
+  String get onboardTitle2 => 'Pisi minutopi hamut\'ay';
+
+  @override
+  String get onboardBody2 =>
+      'AI t\'aqwiyqa willan ima accionta kuyuchisqanta, ima peligrokuna kasqanta, hayk\'a chaniyuq kasqanta, kimsa ñankunatapas maymanchus chanin rinman – pukyukunawan, qampa simiykipi.';
+
+  @override
+  String get onboardTitle3 => 'Sapa kuti yachaspa kay';
+
+  @override
+  String get onboardBody3 =>
+      'Munasqakuna, portafolioyki, chanin willachiykunapas willasunki. T\'aqwiyniykikuna aparatoykipi qhepan, wakmanta kichanapaq listo.';
+
+  @override
+  String get onboardNext => 'Qatiq';
+
+  @override
+  String get onboardStart => 'Qallarisun';
+
+  @override
+  String get onboardSkip => 'Saltay';
 }

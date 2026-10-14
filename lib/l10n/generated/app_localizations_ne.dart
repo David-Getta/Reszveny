@@ -1501,4 +1501,34 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get referralCopied => 'कोड प्रतिलिपि भयो';
+
+  @override
+  String get onboardTitle1 => 'शेयरको फोटो खिच्नुहोस्';
+
+  @override
+  String get onboardBody1 =>
+      'ब्रोकरेज एपको स्क्रिन, पत्रिका वा कम्पनीको लोगो भए पुग्छ: WhatStock ले शेयर चिन्छ र त्यसको मूल्य, चार्ट र मुख्य तथ्याङ्क देखाउँछ।';
+
+  @override
+  String get onboardTitle2 => 'केही मिनेटमै बुझ्नुहोस्';
+
+  @override
+  String get onboardBody2 =>
+      'AI विश्लेषणले शेयरलाई के कुराले चलाउँछ, जोखिमहरू, मूल्याङ्कन र मूल्य कता जान सक्छ भन्ने तीन परिदृश्य स्रोतसहित तपाईंकै भाषामा बुझाउँछ।';
+
+  @override
+  String get onboardTitle3 => 'सधैं अपडेट रहनुहोस्';
+
+  @override
+  String get onboardBody3 =>
+      'मनपर्ने, तपाईंको पोर्टफोलियो र मूल्य अलर्टले तपाईंलाई जानकारी दिइरहन्छन्। तपाईंका विश्लेषणहरू तपाईंकै डिभाइसमा रहन्छन्, फेरि खोल्न तयार।';
+
+  @override
+  String get onboardNext => 'अर्को';
+
+  @override
+  String get onboardStart => 'सुरु गर्नुहोस्';
+
+  @override
+  String get onboardSkip => 'छोड्नुहोस्';
 }

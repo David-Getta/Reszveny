@@ -1494,4 +1494,34 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get referralCopied => 'کوډ کاپي شو';
+
+  @override
+  String get onboardTitle1 => 'د یوې ونډې انځور واخلئ';
+
+  @override
+  String get onboardBody1 =>
+      'د بروکرۍ اپ سکرین، ورځپاڼه یا د شرکت لوګو بس دی: WhatStock ونډه پېژني او د هغې بیه، چارټ او مهمې شمېرې درښيي.';
+
+  @override
+  String get onboardTitle2 => 'په څو دقیقو کې یې وپوهېږئ';
+
+  @override
+  String get onboardBody2 =>
+      'AI تحلیل تشریح کوي چې ونډه څه خوځوي، خطرونه یې کوم دي، ارزونه یې څنګه ده او بیه به کومې خوا ته لاړه شي د هغې درې سناریوګانې – له سرچینو سره او ستاسو په ژبه.';
+
+  @override
+  String get onboardTitle3 => 'تل خبر اوسئ';
+
+  @override
+  String get onboardBody3 =>
+      'خوښې، ستاسو پورټفولیو او د بیې خبرتیاوې تاسو خبروي. ستاسو تحلیلونه ستاسو په وسیله کې پاتې کېږي، د بیا پرانیستلو لپاره چمتو.';
+
+  @override
+  String get onboardNext => 'بل';
+
+  @override
+  String get onboardStart => 'پیل کړئ';
+
+  @override
+  String get onboardSkip => 'تېر یې کړئ';
 }

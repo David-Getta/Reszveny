@@ -1504,4 +1504,34 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Código oñekopia';
+
+  @override
+  String get onboardTitle1 => 'Ejapyhy peteĩ acción raʼãnga';
+
+  @override
+  String get onboardBody1 =>
+      'Oĩmaite peteĩ tembiporuʼi bolsa-pegua mbaʼerechaha, periódico térã empresa logo: WhatStock ohechakuaa pe acción ha ohechauka ijepy, igráfico ha umi papapy tenondeguáva.';
+
+  @override
+  String get onboardTitle2 => 'Ehechakuaa minuto mbovýpe';
+
+  @override
+  String get onboardBody2 =>
+      'AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape ikatúva ohasa ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.';
+
+  @override
+  String get onboardTitle3 => 'Eikuaa meme opa mbaʼe';
+
+  @override
+  String get onboardBody3 =>
+      'Ojeguerohoryvéva, ne cartera ha tepy maranduʼi omomarandu ndéve. Ne jehesaʼỹijokuéra opyta ne tembiporuʼípe, ha ikatu reipeʼa jey oimeraẽ árape.';
+
+  @override
+  String get onboardNext => 'Upeigua';
+
+  @override
+  String get onboardStart => 'Ñañepyrũ';
+
+  @override
+  String get onboardSkip => 'Ehasa';
 }

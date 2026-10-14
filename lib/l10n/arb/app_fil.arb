@@ -408,5 +408,14 @@
   "referralErrOwn": "Hindi mo puwedeng i-redeem ang sarili mong code.",
   "referralErrAlready": "Nakapag-redeem ka na ng code ng kaibigan.",
   "referralShareText": "Sinusuri ko ang mga stock gamit ang WhatStock: kuhanan ng larawan ang isang stock at ipapaliwanag ito ng AI. Gamit ang code ko na {code}, makakakuha ka ng {count, plural, =1{1 dagdag na pagsusuri} other{{count} dagdag na pagsusuri}}.",
-  "referralCopied": "Nakopya ang code"
+  "referralCopied": "Nakopya ang code",
+  "onboardTitle1": "Kuhanan ng larawan ang isang stock",
+  "onboardBody1": "Sapat na ang screen ng brokerage app, diyaryo o logo ng kumpanya: kikilalanin ng WhatStock ang stock at ipapakita ang presyo, chart at mahahalagang numero nito.",
+  "onboardTitle2": "Maunawaan ito sa ilang minuto",
+  "onboardBody2": "Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong senaryo kung saan maaaring pumunta ang presyo – may mga sanggunian at sa iyong wika.",
+  "onboardTitle3": "Laging manatiling updated",
+  "onboardBody3": "Ang Mga Paborito, ang iyong portfolio at ang mga alerto sa presyo ang magbabalita sa iyo. Nananatili sa iyong device ang mga pagsusuri mo, handang buksan muli.",
+  "onboardNext": "Susunod",
+  "onboardStart": "Magsimula",
+  "onboardSkip": "Laktawan"
 }

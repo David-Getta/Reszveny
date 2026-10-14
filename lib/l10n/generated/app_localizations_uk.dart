@@ -1547,4 +1547,34 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get referralCopied => 'Код скопійовано';
+
+  @override
+  String get onboardTitle1 => 'Сфотографуйте акцію';
+
+  @override
+  String get onboardBody1 =>
+      'Досить екрана брокерського застосунку, газети чи логотипа компанії: WhatStock розпізнає акцію та покаже її ціну, графік і ключові показники.';
+
+  @override
+  String get onboardTitle2 => 'Зрозумійте все за кілька хвилин';
+
+  @override
+  String get onboardBody2 =>
+      'ШІ-аналіз пояснює, що рухає акцію, які є ризики, як її оцінено, і пропонує три сценарії того, куди може піти ціна, — з джерелами та вашою мовою.';
+
+  @override
+  String get onboardTitle3 => 'Тримайте руку на пульсі';
+
+  @override
+  String get onboardBody3 =>
+      'Обране, ваш портфель і цінові сповіщення завжди тримають вас у курсі. Ваші аналізи зберігаються на пристрої — їх можна будь-коли відкрити знову.';
+
+  @override
+  String get onboardNext => 'Далі';
+
+  @override
+  String get onboardStart => 'Почати';
+
+  @override
+  String get onboardSkip => 'Пропустити';
 }

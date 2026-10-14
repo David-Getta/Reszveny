@@ -408,5 +408,14 @@
   "referralErrOwn": "Oʻz kodingizni faollashtira olmaysiz.",
   "referralErrAlready": "Siz allaqachon doʻstingiz kodini faollashtirgansiz.",
   "referralShareText": "Men aksiyalarni WhatStock bilan tahlil qilaman: aksiyani suratga oling, AI uni tushuntirib beradi. Mening {code} kodim bilan {count, plural, =1{1 ta qoʻshimcha tahlil} other{{count} ta qoʻshimcha tahlil}} olasiz.",
-  "referralCopied": "Kod nusxalandi"
+  "referralCopied": "Kod nusxalandi",
+  "onboardTitle1": "Aksiyani suratga oling",
+  "onboardBody1": "Broker ilovasi ekrani, gazeta yoki kompaniya logotipi kifoya: WhatStock aksiyani taniydi va uning narxi, grafigi hamda asosiy koʻrsatkichlarini koʻrsatadi.",
+  "onboardTitle2": "Bir necha daqiqada tushuning",
+  "onboardBody2": "AI tahlili aksiyani nima harakatlantirayotganini, xatarlarni, baholashni va narx qayerga borishi mumkinligi haqidagi uchta ssenariyni manbalar bilan va oʻz tilingizda tushuntirib beradi.",
+  "onboardTitle3": "Doimo xabardor boʻling",
+  "onboardBody3": "Sevimlilar, portfelingiz va narx bildirishnomalari sizni voqealardan boxabar qilib turadi. Tahlillaringiz qurilmangizda saqlanadi, ularni istalgan vaqtda qayta ochishingiz mumkin.",
+  "onboardNext": "Keyingi",
+  "onboardStart": "Boshlash",
+  "onboardSkip": "Oʻtkazib yuborish"
 }

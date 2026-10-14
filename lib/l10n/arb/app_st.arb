@@ -408,5 +408,14 @@
   "referralErrOwn": "O ke ke wa sebedisa khoutu ya hao.",
   "referralErrAlready": "O se o sebedisitse khoutu ya motswalle.",
   "referralShareText": "Ke hlahloba diabo ka WhatStock: nka foto ya kabo mme AI e a e hlalosa. Ka khoutu ya ka {code} o fumana {count, plural, =1{tlhahlobo e le nngwe e eketsehileng} other{ditlhahlobo tse eketsehileng tse {count}}}.",
-  "referralCopied": "Khoutu e kopilwe"
+  "referralCopied": "Khoutu e kopilwe",
+  "onboardTitle1": "Nka setshwantsho sa shere",
+  "onboardBody1": "Sekirini sa app ya borokara, koranta kapa logo ya khampani di a lekana: WhatStock e tseba shere mme e o bontsha theko ya yona, kerafo le dipalo tsa bohlokwa.",
+  "onboardTitle2": "E utlwisise ka metsotso e mmalwa",
+  "onboardBody2": "Tlhahlobo ya AI e hlalosa se tsamaisang shere, dikotsi, boleng ba yona le maemo a mararo a hore na theko e ka ya kae, ka mehlodi le ka puo ya hao.",
+  "onboardTitle3": "Dula o tseba tsohle",
+  "onboardBody3": "Tseo o di ratang, potefolio ya hao le ditsebiso tsa theko di o tsebisa se etsahalang. Ditlhahlobo tsa hao di dula sesebedisweng sa hao, di loketse ho bulwa hape.",
+  "onboardNext": "E latelang",
+  "onboardStart": "Qala",
+  "onboardSkip": "Tlola"
 }

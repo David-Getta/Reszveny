@@ -1498,4 +1498,34 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod göçürildi';
+
+  @override
+  String get onboardTitle1 => 'Paýnamany surata düşüriň';
+
+  @override
+  String get onboardBody1 =>
+      'Broker programmasynyň ekrany, gazet ýa-da kompaniýanyň logotipi ýeterlik: WhatStock paýnamany tanaýar we onuň bahasyny, grafigini hem-de esasy görkezijilerini görkezýär.';
+
+  @override
+  String get onboardTitle2 => 'Birnäçe minutda düşüniň';
+
+  @override
+  String get onboardBody2 =>
+      'AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nirä gidip biljekdigi barada üç ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.';
+
+  @override
+  String get onboardTitle3 => 'Hemişe habarly boluň';
+
+  @override
+  String get onboardBody3 =>
+      'Saýlananlar, portfeliňiz we baha duýduryşlary sizi wakalardan habarly saklaýar. Seljermeleriňiz enjamyňyzda galýar, olary islendik wagt täzeden açyp bilersiňiz.';
+
+  @override
+  String get onboardNext => 'Indiki';
+
+  @override
+  String get onboardStart => 'Başlaň';
+
+  @override
+  String get onboardSkip => 'Geçiň';
 }

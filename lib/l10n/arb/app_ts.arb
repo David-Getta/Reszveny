@@ -408,5 +408,14 @@
   "referralErrOwn": "A wu nge yi tirhisi khodi ya wena.",
   "referralErrAlready": "U tirhisile khodi ya munghana khale.",
   "referralShareText": "Ndzi xopaxopa swiave hi WhatStock: teka xifaniso xa xiave, kutani AI yi xi hlamusela. Hi khodi ya mina {code} u kuma {count, plural, =1{nxopaxopo wun'we wo engetela} other{minxopaxopo yo engetela ya {count}}}.",
-  "referralCopied": "Khodi yi kopiwile"
+  "referralCopied": "Khodi yi kopiwile",
+  "onboardTitle1": "Teka xifaniso xa xere",
+  "onboardBody1": "Xikirini xa app ya burokara, phephahungu kumbe logo ya khampani swi ringanerile: WhatStock yi tiva xere naswona yi ku komba nxavo wa yona, chati ni tinomboro ta nkoka.",
+  "onboardTitle2": "Yi twisise hi timinete ti nga ri tingani",
+  "onboardBody2": "Nxopaxopo wa AI wu hlamusela leswi endlaka leswaku xere yi famba, makhombo, ntikelo wa yona ni swiyimo swinharhu swa laha nxavo wu nga yaka kona, ku ri ni swihlovo naswona hi ririmi ra wena.",
+  "onboardTitle3": "Tshama u tiva hinkwaswo",
+  "onboardBody3": "Leswi u swi rhandzaka, phothifoliyo ya wena ni switiviso swa nxavo swi ku tivisa leswi humelelaka. Minxopaxopo ya wena yi tshama eka xitirhisiwa xa wena, yi lunghekele ku pfuriwa nakambe.",
+  "onboardNext": "Leswi landzelaka",
+  "onboardStart": "Sungula",
+  "onboardSkip": "Tlula"
 }

@@ -1499,4 +1499,34 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get referralCopied => 'कोड कॉपी केला';
+
+  @override
+  String get onboardTitle1 => 'शेअरचा फोटो काढा';
+
+  @override
+  String get onboardBody1 =>
+      'ब्रोकरेज अॅपची स्क्रीन, वर्तमानपत्र किंवा कंपनीचा लोगो पुरेसा आहे: WhatStock शेअर ओळखतो आणि त्याची किंमत, चार्ट आणि महत्त्वाचे आकडे दाखवतो.';
+
+  @override
+  String get onboardTitle2 => 'काही मिनिटांत समजून घ्या';
+
+  @override
+  String get onboardBody2 =>
+      'AI विश्लेषण शेअरला काय हलवते, त्यातील जोखीम, मूल्यांकन आणि किंमत कुठे जाऊ शकते याच्या तीन शक्यता स्पष्ट करते – स्रोतांसह आणि तुमच्या भाषेत.';
+
+  @override
+  String get onboardTitle3 => 'नेहमी अपडेट राहा';
+
+  @override
+  String get onboardBody3 =>
+      'आवडते, तुमचा पोर्टफोलिओ आणि किंमत सूचना तुम्हाला माहिती देत राहतात. तुमची विश्लेषणे तुमच्या डिव्हाइसवरच राहतात, पुन्हा उघडण्यासाठी तयार.';
+
+  @override
+  String get onboardNext => 'पुढे';
+
+  @override
+  String get onboardStart => 'सुरू करा';
+
+  @override
+  String get onboardSkip => 'वगळा';
 }

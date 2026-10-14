@@ -408,5 +408,14 @@
   "referralErrOwn": "A waawaa huutoraade kod maa e hoore maa.",
   "referralErrAlready": "A huutoriima kod sehil maa gila law.",
   "referralShareText": "Mi ƴeewnda aksiyoŋaaji e WhatStock: ƴettu natal aksiyoŋ, AI firta ɗum. E kod am {code} a heɓay {count, plural, =1{ƴeewndo ɓeydiingo 1} other{ƴeewndooji ɓeydiiɗi {count}}}.",
-  "referralCopied": "Kod nde kopiyaama"
+  "referralCopied": "Kod nde kopiyaama",
+  "onboardTitle1": "Ƴettu natal aksiyoŋ",
+  "onboardBody1": "Yaynirde jaaɓnirgal soodde aksiyoŋ, jaaynde walla maanndel sosiyete heewii: WhatStock heɓtinat aksiyoŋ ngoon, hollaa coggu mayru, natal mayru e limooje mayru tiiɗuɗe.",
+  "onboardTitle2": "Faamu ɗum e nder hojomaaji seeɗa",
+  "onboardBody2": "Ƴeewndo AI ngo ina firta ko dillinta aksiyoŋ ngoon, kulɗe mayru, njaru mayru e laabi tati ɗi coggu ngu waawi rewde – e ɗo keɓe ɗee ummii, e ɗemngal maa.",
+  "onboardTitle3": "Wono e kabaaru sahaa kala",
+  "onboardBody3": "Cuɓaaɗe, aksiyoŋ maa e tintine coggu ina tintina ma. Ƴeewndooji maa ina heddoo e kaɓirgol maa, a waawii udditde ɗi kadi sahaa kala.",
+  "onboardNext": "Yeeso",
+  "onboardStart": "Fuɗɗen",
+  "onboardSkip": "Accu"
 }

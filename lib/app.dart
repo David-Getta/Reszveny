@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app_services.dart';
 import 'features/invite/invite_page.dart';
+import 'features/onboarding/onboarding_page.dart';
 import 'features/shell/app_shell.dart';
 import 'l10n/fallback_delegates.dart';
 import 'l10n/generated/app_localizations.dart';
@@ -62,7 +63,10 @@ class WhatStockApp extends StatelessWidget {
                             ],
                           ),
                   ),
-            home: backend == null
+            // Friss telepítésnél előbb a rövid bemutató.
+            home: !services.preferences.onboardingDone
+                ? OnboardingPage(onDone: services.preferences.completeOnboarding)
+                : backend == null
                 ? const AppShell()
                 : ValueListenableBuilder(
                     valueListenable: backend.inviteProblem,

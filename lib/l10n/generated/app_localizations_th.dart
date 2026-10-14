@@ -1480,4 +1480,34 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get referralCopied => 'คัดลอกโค้ดแล้ว';
+
+  @override
+  String get onboardTitle1 => 'ถ่ายรูปหุ้น';
+
+  @override
+  String get onboardBody1 =>
+      'แค่หน้าจอแอปโบรกเกอร์ หนังสือพิมพ์ หรือโลโก้บริษัทก็พอ WhatStock จะจดจำหุ้นและแสดงราคา กราฟ และตัวเลขสำคัญให้คุณ';
+
+  @override
+  String get onboardTitle2 => 'เข้าใจได้ในไม่กี่นาที';
+
+  @override
+  String get onboardBody2 =>
+      'การวิเคราะห์ด้วย AI จะอธิบายว่าอะไรขับเคลื่อนหุ้น ความเสี่ยง มูลค่า และสามสถานการณ์ว่าราคาอาจไปทางไหน พร้อมแหล่งอ้างอิงและเป็นภาษาของคุณ';
+
+  @override
+  String get onboardTitle3 => 'ไม่พลาดทุกความเคลื่อนไหว';
+
+  @override
+  String get onboardBody3 =>
+      'รายการโปรด พอร์ตโฟลิโอของคุณ และการแจ้งเตือนราคาจะคอยอัปเดตให้คุณรู้ การวิเคราะห์ของคุณเก็บไว้ในอุปกรณ์ พร้อมเปิดดูอีกครั้งได้ทุกเมื่อ';
+
+  @override
+  String get onboardNext => 'ถัดไป';
+
+  @override
+  String get onboardStart => 'เริ่มใช้งาน';
+
+  @override
+  String get onboardSkip => 'ข้าม';
 }

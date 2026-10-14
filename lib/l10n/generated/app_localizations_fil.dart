@@ -1506,4 +1506,34 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get referralCopied => 'Nakopya ang code';
+
+  @override
+  String get onboardTitle1 => 'Kuhanan ng larawan ang isang stock';
+
+  @override
+  String get onboardBody1 =>
+      'Sapat na ang screen ng brokerage app, diyaryo o logo ng kumpanya: kikilalanin ng WhatStock ang stock at ipapakita ang presyo, chart at mahahalagang numero nito.';
+
+  @override
+  String get onboardTitle2 => 'Maunawaan ito sa ilang minuto';
+
+  @override
+  String get onboardBody2 =>
+      'Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong senaryo kung saan maaaring pumunta ang presyo – may mga sanggunian at sa iyong wika.';
+
+  @override
+  String get onboardTitle3 => 'Laging manatiling updated';
+
+  @override
+  String get onboardBody3 =>
+      'Ang Mga Paborito, ang iyong portfolio at ang mga alerto sa presyo ang magbabalita sa iyo. Nananatili sa iyong device ang mga pagsusuri mo, handang buksan muli.';
+
+  @override
+  String get onboardNext => 'Susunod';
+
+  @override
+  String get onboardStart => 'Magsimula';
+
+  @override
+  String get onboardSkip => 'Laktawan';
 }

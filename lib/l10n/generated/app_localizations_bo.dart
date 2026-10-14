@@ -1492,4 +1492,34 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get referralCopied => 'ཨང་རྟགས་འདྲ་བཤུས་བྱས་ཟིན།';
+
+  @override
+  String get onboardTitle1 => 'ཧུར་ཁག་གི་པར་བླངས།';
+
+  @override
+  String get onboardBody1 =>
+      'ཧུར་ཁག་ཉོ་ཚོང་ཉེར་སྤྱོད་ཀྱི་བརྙན་ཡོལ། ཚགས་པར་རམ་ཀུང་སིའི་མཚོན་རྟགས་ཙམ་གྱིས་འགྲིག WhatStock ཡིས་ཧུར་ཁག་ངོས་འཛིན་བྱས་ནས་དེའི་གོང་ཚད། རི་མོ། གལ་ཆེའི་གྲངས་ཀ་བཅས་སྟོན་གྱི་ཡོད།';
+
+  @override
+  String get onboardTitle2 => 'སྐར་མ་ཁ་ཤས་ནང་གོ་བ་ལོང་།';
+
+  @override
+  String get onboardBody2 =>
+      'AI དབྱེ་ཞིབ་ཀྱིས་ཧུར་ཁག་འགུལ་སྐྱོད་བྱེད་པའི་རྒྱུ་རྐྱེན། ཉེན་ཁ། རིན་ཐང་གི་བརྟག་དཔྱད། གོང་ཚད་གར་འགྲོ་སྲིད་པའི་གནས་སྟངས་གསུམ་བཅས་འགྲེལ་བཤད་བྱེད། ཁུངས་དང་བཅས་ཁྱེད་རང་གི་སྐད་ཡིག་ཐོག་ཏུ།';
+
+  @override
+  String get onboardTitle3 => 'རྟག་ཏུ་གནས་ཚུལ་ཤེས་པར་བཞུགས།';
+
+  @override
+  String get onboardBody3 =>
+      'དགའ་མོས། ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ། གོང་ཚད་ཉེན་བརྡ་བཅས་ཀྱིས་ཁྱེད་ལ་གནས་ཚུལ་སྙན་སེང་ཞུ་གི་རེད། ཁྱེད་ཀྱི་དབྱེ་ཞིབ་རྣམས་ཁྱེད་ཀྱི་སྒྲིག་ཆས་ནང་ཉར་ཡོད་པས་ནམ་ཡིན་ཡང་ཡང་བསྐྱར་ཁ་ཕྱེ་ཆོག';
+
+  @override
+  String get onboardNext => 'རྗེས་མ།';
+
+  @override
+  String get onboardStart => 'འགོ་འཛུགས།';
+
+  @override
+  String get onboardSkip => 'མཆོང་།';
 }

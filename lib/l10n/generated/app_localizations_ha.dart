@@ -1505,4 +1505,34 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get referralCopied => 'An kwafi lambar';
+
+  @override
+  String get onboardTitle1 => 'Ɗauki hoton hannun jari';
+
+  @override
+  String get onboardBody1 =>
+      'Allon manhajar broker, jarida ko tambarin kamfani ya isa: WhatStock zai gane hannun jarin ya nuna maka farashinsa, jadawalinsa da muhimman alƙaluma.';
+
+  @override
+  String get onboardTitle2 => 'Fahimta cikin mintuna kaɗan';
+
+  @override
+  String get onboardBody2 =>
+      'Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da hasashe uku na inda farashin zai iya dosa, tare da majiyoyi kuma da harshenka.';
+
+  @override
+  String get onboardTitle3 => 'Ka kasance da labari koyaushe';
+
+  @override
+  String get onboardBody3 =>
+      'Abubuwan da aka fi so, jakar hannun jarinka da faɗakarwar farashi za su sanar da kai. Nazarinka suna nan a na\'urarka, a shirye don ka sake buɗe su.';
+
+  @override
+  String get onboardNext => 'Na gaba';
+
+  @override
+  String get onboardStart => 'Mu fara';
+
+  @override
+  String get onboardSkip => 'Tsallake';
 }

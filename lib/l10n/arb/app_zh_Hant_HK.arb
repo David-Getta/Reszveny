@@ -408,5 +408,14 @@
   "referralErrOwn": "你不能兌換自己的邀請碼。",
   "referralErrAlready": "你已兌換過朋友的邀請碼。",
   "referralShareText": "我用 WhatStock 分析股票：為股票拍照，AI 就會為你解釋。用我的邀請碼 {code}，即可獲得 {count, plural, =1{1 次額外分析} other{{count} 次額外分析}}。",
-  "referralCopied": "已複製邀請碼"
+  "referralCopied": "已複製邀請碼",
+  "onboardTitle1": "拍一張股票相片",
+  "onboardBody1": "證券商 App 畫面、報紙或公司商標都可以：WhatStock 會識別股票，並顯示其股價、走勢圖及主要數據。",
+  "onboardTitle2": "數分鐘內輕鬆看懂",
+  "onboardBody2": "AI 分析會解釋推動股價的因素、風險、估值，以及股價未來走勢的三個情境——附有資料來源，並以你的語言呈現。",
+  "onboardTitle3": "市況盡在掌握",
+  "onboardBody3": "收藏、投資組合及價格提示助你緊貼最新動態。你的分析會儲存在裝置上，隨時可再次開啟。",
+  "onboardNext": "下一步",
+  "onboardStart": "開始使用",
+  "onboardSkip": "略過"
 }

@@ -1498,4 +1498,34 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get referralCopied => 'הקוד הועתק';
+
+  @override
+  String get onboardTitle1 => 'צלמו מניה';
+
+  @override
+  String get onboardBody1 =>
+      'מספיק מסך של אפליקציית מסחר, עיתון או לוגו של חברה: WhatStock מזהה את המניה ומציגה את המחיר, הגרף והנתונים המרכזיים שלה.';
+
+  @override
+  String get onboardTitle2 => 'מבינים הכול תוך דקות';
+
+  @override
+  String get onboardBody2 =>
+      'ניתוח ה-AI מסביר מה מניע את המניה, מהם הסיכונים, מה השווי שלה ושלושה תרחישים לכיוון שאליו המחיר עשוי ללכת – עם מקורות ובשפה שלכם.';
+
+  @override
+  String get onboardTitle3 => 'תמיד מעודכנים';
+
+  @override
+  String get onboardBody3 =>
+      'מועדפים, תיק ההשקעות שלכם והתראות מחיר יעדכנו אתכם. הניתוחים שלכם נשמרים במכשיר, מוכנים לפתיחה מחדש.';
+
+  @override
+  String get onboardNext => 'הבא';
+
+  @override
+  String get onboardStart => 'בואו נתחיל';
+
+  @override
+  String get onboardSkip => 'דילוג';
 }

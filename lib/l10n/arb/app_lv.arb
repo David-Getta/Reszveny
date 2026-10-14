@@ -408,5 +408,14 @@
   "referralErrOwn": "Jūs nevarat izmantot savu kodu.",
   "referralErrAlready": "Drauga kods jau ir izmantots.",
   "referralShareText": "Es analizēju akcijas ar WhatStock: nofotografē akciju, un AI to izskaidro. Ar manu kodu {code} tu saņemsi {count, plural, zero{{count} papildu analīzes} one{{count} papildu analīzi} other{{count} papildu analīzes}}.",
-  "referralCopied": "Kods nokopēts"
+  "referralCopied": "Kods nokopēts",
+  "onboardTitle1": "Nofotografējiet akciju",
+  "onboardBody1": "Pietiek ar brokera lietotnes ekrānu, avīzi vai uzņēmuma logotipu: WhatStock atpazīst akciju un parāda tās cenu, grafiku un galvenos rādītājus.",
+  "onboardTitle2": "Izprotiet to dažās minūtēs",
+  "onboardBody2": "AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs scenārijus, kurp cena varētu virzīties, – ar avotiem un jūsu valodā.",
+  "onboardTitle3": "Vienmēr lietas kursā",
+  "onboardBody3": "Izlase, jūsu portfelis un cenu brīdinājumi jūs vienmēr informēs. Jūsu analīzes paliek jūsu ierīcē, gatavas atkārtotai atvēršanai.",
+  "onboardNext": "Tālāk",
+  "onboardStart": "Sākt",
+  "onboardSkip": "Izlaist"
 }

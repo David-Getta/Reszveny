@@ -408,5 +408,14 @@
   "referralErrOwn": "No pots bescanviar el teu propi codi.",
   "referralErrAlready": "Ja has bescanviat el codi d’un amic.",
   "referralShareText": "Analitzo accions amb WhatStock: fotografies una acció i la IA te l’explica. Amb el meu codi {code} reps {count, plural, =1{1 anàlisi extra} other{{count} anàlisis extra}}.",
-  "referralCopied": "Codi copiat"
+  "referralCopied": "Codi copiat",
+  "onboardTitle1": "Fotografia una acció",
+  "onboardBody1": "N’hi ha prou amb la pantalla d’una app de borsa, un diari o el logotip d’una empresa: WhatStock reconeix l’acció i et mostra el preu, el gràfic i les xifres clau.",
+  "onboardTitle2": "Entén-la en pocs minuts",
+  "onboardBody2": "L’anàlisi amb IA t’explica què mou l’acció, els riscos, la valoració i tres escenaris sobre cap on podria anar el preu, amb fonts i en el teu idioma.",
+  "onboardTitle3": "Estigues sempre al dia",
+  "onboardBody3": "Els favorits, la teva cartera i les alertes de preu et mantenen informat. Les teves anàlisis es queden al dispositiu, a punt per tornar-les a obrir.",
+  "onboardNext": "Següent",
+  "onboardStart": "Comença",
+  "onboardSkip": "Omet"
 }

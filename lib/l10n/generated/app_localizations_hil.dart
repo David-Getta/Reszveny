@@ -1510,4 +1510,34 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get referralCopied => 'Nakopya ang code';
+
+  @override
+  String get onboardTitle1 => 'Kuhai sang litrato ang stock';
+
+  @override
+  String get onboardBody1 =>
+      'Bastante na ang screen sang brokerage app, pamantalaan ukon logo sang kompanya: kilalahon sang WhatStock ang stock kag ipakita ang presyo, chart kag importante nga mga numero sini.';
+
+  @override
+  String get onboardTitle2 => 'Intiendihon sa pila lang ka minuto';
+
+  @override
+  String get onboardBody2 =>
+      'Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka senaryo kon diin mahimo makadto ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.';
+
+  @override
+  String get onboardTitle3 => 'Pirme updated';
+
+  @override
+  String get onboardBody3 =>
+      'Ang mga paborito, imo portfolio kag mga alerto sa presyo magapahibalo sa imo. Ang imo mga analisis nagapabilin sa imo device, handa nga buksan liwat.';
+
+  @override
+  String get onboardNext => 'Masunod';
+
+  @override
+  String get onboardStart => 'Magsugod na';
+
+  @override
+  String get onboardSkip => 'Laktawan';
 }

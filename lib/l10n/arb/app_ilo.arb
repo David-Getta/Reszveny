@@ -408,5 +408,14 @@
   "referralErrOwn": "Saanmo a mausar ti bukodmo a kodigo.",
   "referralErrAlready": "Inusarmon ti kodigo ti maysa a gayyem.",
   "referralShareText": "Sukimatek dagiti stock babaen ti WhatStock: ladawam ti stock ket ilawlawag ti AI. Babaen ti kodigok a {code} maalam ti {count, plural, =1{1 a nayon a panangsukimat} other{{count} a nayon a panangsukimat}}.",
-  "referralCopied": "Nakopya ti kodigo"
+  "referralCopied": "Nakopya ti kodigo",
+  "onboardTitle1": "Retratuem ti stock",
+  "onboardBody1": "Umanayen ti screen ti brokerage app, pagiwarnak wenno logo ti kompania: bigbigen ti WhatStock ti stock ket ipakitana ti presio, chart ken napateg a numerona.",
+  "onboardTitle2": "Maawatam iti sumagmamano a minuto",
+  "onboardBody2": "Ilawlawag ti panangsukimat ti AI no ania ti mangtignay iti stock, dagiti peggad, ti pateg daytoy ken tallo a senario no papanan ti presio, addaan kadagiti nagtaudan ken iti bukodmo a pagsasao.",
+  "onboardTitle3": "Kanayon nga ammom",
+  "onboardBody3": "Ti dagiti paborito, ti portfolio-m ken dagiti alerto ti presio ipakaammoda kenka. Agtalinaed dagiti panangsukimatmo iti device-mo, nakasagana a lukatam manen.",
+  "onboardNext": "Sumaruno",
+  "onboardStart": "Mangrugi",
+  "onboardSkip": "Labsan"
 }

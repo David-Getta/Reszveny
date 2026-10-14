@@ -408,5 +408,14 @@
   "referralErrOwn": "Vous ne pouvez pas utiliser votre propre code.",
   "referralErrAlready": "Vous avez déjà utilisé le code d’un ami.",
   "referralShareText": "J’analyse des actions avec WhatStock : photographiez une action et l’IA vous l’explique. Avec mon code {code}, vous obtenez {count, plural, =1{1 analyse supplémentaire} other{{count} analyses supplémentaires}}.",
-  "referralCopied": "Code copié"
+  "referralCopied": "Code copié",
+  "onboardTitle1": "Photographiez une action",
+  "onboardBody1": "Un écran d’application de courtage, un journal ou un logo d’entreprise suffit : WhatStock reconnaît l’action et affiche son cours, son graphique et ses chiffres clés.",
+  "onboardTitle2": "Comprenez-la en quelques minutes",
+  "onboardBody2": "L’analyse IA vous explique ce qui fait bouger l’action, ses risques, sa valorisation et trois scénarios sur l’évolution possible de son cours, avec les sources et dans votre langue.",
+  "onboardTitle3": "Restez toujours informé",
+  "onboardBody3": "Vos favoris, votre portefeuille et vos alertes de cours vous tiennent informé. Vos analyses restent sur votre appareil, prêtes à être rouvertes.",
+  "onboardNext": "Suivant",
+  "onboardStart": "Commencer",
+  "onboardSkip": "Passer"
 }

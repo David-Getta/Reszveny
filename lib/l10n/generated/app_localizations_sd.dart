@@ -1494,4 +1494,34 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get referralCopied => 'ڪوڊ ڪاپي ٿي ويو';
+
+  @override
+  String get onboardTitle1 => 'ڪنهن شيئر جي تصوير ڪڍو';
+
+  @override
+  String get onboardBody1 =>
+      'بروڪريج ايپ جي اسڪرين، اخبار يا ڪمپني جو لوگو ڪافي آهي: WhatStock شيئر کي سڃاڻي ٿو ۽ ان جي قيمت، چارٽ ۽ اهم انگ اکر ڏيکاري ٿو.';
+
+  @override
+  String get onboardTitle2 => 'ڪجهه منٽن ۾ سمجهو';
+
+  @override
+  String get onboardBody2 =>
+      'AI تجزيو ٻڌائي ٿو ته شيئر کي ڇا ٿو هلائي، خطرا، قدر جو اندازو ۽ قيمت ڪيڏانهن وڃي سگهي ٿي ان جا ٽي امڪان – ذريعن سان ۽ اوهان جي ٻولي ۾.';
+
+  @override
+  String get onboardTitle3 => 'هميشه باخبر رهو';
+
+  @override
+  String get onboardBody3 =>
+      'پسنديده، اوهان جو پورٽ فوليو ۽ قيمت جا الرٽ اوهان کي باخبر رکن ٿا. اوهان جا تجزيا اوهان جي ڊوائيس تي رهن ٿا، ٻيهر کولڻ لاءِ تيار.';
+
+  @override
+  String get onboardNext => 'اڳيون';
+
+  @override
+  String get onboardStart => 'شروع ڪريو';
+
+  @override
+  String get onboardSkip => 'ڇڏي ڏيو';
 }

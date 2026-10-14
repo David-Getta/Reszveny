@@ -408,5 +408,14 @@
   "referralErrOwn": "Kowe ora bisa nukarake kodhemu dhewe.",
   "referralErrAlready": "Kowe wis tau nukarake kodhe saka kanca.",
   "referralShareText": "Aku nganalisis saham nganggo WhatStock: foto sahame lan AI bakal nerangake. Nganggo kodheku {code} kowe entuk {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
-  "referralCopied": "Kodhe disalin"
+  "referralCopied": "Kodhe disalin",
+  "onboardTitle1": "Fotonen saham",
+  "onboardBody1": "Cukup layar aplikasi broker, koran utawa logo perusahaan: WhatStock bakal ngenali sahamé lan nuduhaké rega, grafik lan angka-angka pentingé.",
+  "onboardTitle2": "Ngerti sajroning sawetara menit",
+  "onboardBody2": "Analisis AI njlèntrèhaké apa sing nggerakaké saham, risikoné, valuasiné lan telung skenario arah rega, kanthi sumber lan nganggo basamu.",
+  "onboardTitle3": "Tansah ngerti kabar anyar",
+  "onboardBody3": "Favorit, portofoliomu lan pèngetan rega bakal ngabari kowé. Analisismu tetep ana ing piranti, siap dibukak manèh.",
+  "onboardNext": "Sabanjuré",
+  "onboardStart": "Ayo miwiti",
+  "onboardSkip": "Liwati"
 }

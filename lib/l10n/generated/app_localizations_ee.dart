@@ -1502,4 +1502,34 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get referralCopied => 'Wokɔpi code la';
+
+  @override
+  String get onboardTitle1 => 'Ɖe akpa aɖe ƒe foto';
+
+  @override
+  String get onboardBody1 =>
+      'Broker app ƒe sikrin, nyadzɔdzɔgbalẽ alo dɔwɔƒe ƒe dzesi ko sɔ gbɔ: WhatStock dzea si akpa la eye wòfiaa eƒe asi, eƒe tɔtrɔ ƒe nɔnɔmetata kple eƒe xexlẽdzesi veviwo.';
+
+  @override
+  String get onboardTitle2 => 'Se egɔme le miniti ʋɛ aɖewo me';
+
+  @override
+  String get onboardBody2 =>
+      'AI numekuku la ɖea nusi ʋãa akpa la, afɔku siwo le eŋu, eƒe asixɔxɔ kple nɔnɔme etɔ̃ siwo me asi la ate ŋu ayi la me – kple nyatakakaƒewo eye le wò gbe me.';
+
+  @override
+  String get onboardTitle3 => 'Nya nu sia nu ɣesiaɣi';
+
+  @override
+  String get onboardBody3 =>
+      'Nye lɔlɔ̃tɔwo, nye akpawo kple asi ŋuti nuxlɔ̃amewo naa nènyaa nusi le dzɔdzɔm. Wò numekukuwo nɔa wò mɔ̃ dzi, eye àte ŋu aʋu wo ake ɣesiaɣi.';
+
+  @override
+  String get onboardNext => 'Esi kplɔe ɖo';
+
+  @override
+  String get onboardStart => 'Míadze egɔme';
+
+  @override
+  String get onboardSkip => 'Dzo eŋu';
 }

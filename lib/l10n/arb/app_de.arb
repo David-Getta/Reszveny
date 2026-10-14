@@ -408,5 +408,14 @@
   "referralErrOwn": "Du kannst deinen eigenen Code nicht einlösen.",
   "referralErrAlready": "Du hast bereits einen Code von Freunden eingelöst.",
   "referralShareText": "Ich analysiere Aktien mit WhatStock: Fotografiere eine Aktie, und die KI erklärt sie dir. Mit meinem Code {code} bekommst du {count, plural, =1{1 zusätzliche Analyse} other{{count} zusätzliche Analysen}}.",
-  "referralCopied": "Code kopiert"
+  "referralCopied": "Code kopiert",
+  "onboardTitle1": "Fotografiere eine Aktie",
+  "onboardBody1": "Der Bildschirm einer Broker-App, eine Zeitung oder ein Firmenlogo genügt: WhatStock erkennt die Aktie und zeigt dir Kurs, Chart und wichtige Kennzahlen.",
+  "onboardTitle2": "In Minuten verstanden",
+  "onboardBody2": "Die KI-Analyse erklärt dir, was die Aktie bewegt, welche Risiken es gibt, wie sie bewertet ist und in drei Szenarien, wohin sich der Kurs entwickeln könnte – mit Quellen und in deiner Sprache.",
+  "onboardTitle3": "Immer auf dem Laufenden",
+  "onboardBody3": "Favoriten, dein Portfolio und Kursalarme halten dich auf dem Laufenden. Deine Analysen bleiben auf deinem Gerät und lassen sich jederzeit wieder öffnen.",
+  "onboardNext": "Weiter",
+  "onboardStart": "Los geht’s",
+  "onboardSkip": "Überspringen"
 }

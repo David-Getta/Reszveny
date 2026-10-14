@@ -1501,4 +1501,34 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get referralCopied => 'Код нусхабардорӣ шуд';
+
+  @override
+  String get onboardTitle1 => 'Аз саҳмия акс гиред';
+
+  @override
+  String get onboardBody1 =>
+      'Экрани барномаи брокерӣ, рӯзнома ё логотипи ширкат кифоя аст: WhatStock саҳмияро шинохта, нарх, графику нишондиҳандаҳои асосии онро нишон медиҳад.';
+
+  @override
+  String get onboardTitle2 => 'Дар чанд дақиқа дарк кунед';
+
+  @override
+  String get onboardBody2 =>
+      'Таҳлили AI шарҳ медиҳад, ки саҳмияро чӣ ба ҳаракат меорад, хатарҳо, арзиши он ва се сенарияи самти эҳтимолии нархро – бо манбаъҳо ва бо забони шумо.';
+
+  @override
+  String get onboardTitle3 => 'Ҳамеша огоҳ бошед';
+
+  @override
+  String get onboardBody3 =>
+      'Интихобшудаҳо, портфели шумо ва огоҳиҳои нарх шуморо бохабар нигоҳ медоранд. Таҳлилҳои шумо дар дастгоҳатон мемонанд ва ҳар вақт метавонед онҳоро аз нав кушоед.';
+
+  @override
+  String get onboardNext => 'Баъдӣ';
+
+  @override
+  String get onboardStart => 'Оғоз кунед';
+
+  @override
+  String get onboardSkip => 'Гузаштан';
 }

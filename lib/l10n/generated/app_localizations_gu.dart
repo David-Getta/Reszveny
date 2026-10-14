@@ -1497,4 +1497,34 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get referralCopied => 'કોડ કૉપિ થયો';
+
+  @override
+  String get onboardTitle1 => 'શેરનો ફોટો લો';
+
+  @override
+  String get onboardBody1 =>
+      'બ્રોકરેજ ઍપની સ્ક્રીન, અખબાર કે કંપનીનો લોગો પૂરતો છે: WhatStock શેરને ઓળખે છે અને તેનો ભાવ, ચાર્ટ અને મુખ્ય આંકડા બતાવે છે.';
+
+  @override
+  String get onboardTitle2 => 'મિનિટોમાં સમજો';
+
+  @override
+  String get onboardBody2 =>
+      'AI વિશ્લેષણ સમજાવે છે કે શેરને શું ચલાવે છે, તેનાં જોખમો, તેનું મૂલ્યાંકન અને ભાવ ક્યાં જઈ શકે તેનાં ત્રણ સંભવિત દૃશ્યો – સ્રોતો સાથે અને તમારી ભાષામાં.';
+
+  @override
+  String get onboardTitle3 => 'હંમેશાં અપડેટ રહો';
+
+  @override
+  String get onboardBody3 =>
+      'મનપસંદ, તમારો પોર્ટફોલિયો અને ભાવ અલર્ટ તમને માહિતગાર રાખે છે. તમારાં વિશ્લેષણો તમારા ડિવાઇસ પર જ રહે છે, ગમે ત્યારે ફરી ખોલવા માટે તૈયાર.';
+
+  @override
+  String get onboardNext => 'આગળ';
+
+  @override
+  String get onboardStart => 'શરૂ કરો';
+
+  @override
+  String get onboardSkip => 'છોડો';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Kendi kodunu kullanamazsın.",
   "referralErrAlready": "Bir arkadaşının kodunu zaten kullandın.",
   "referralShareText": "Hisseleri WhatStock ile analiz ediyorum: bir hissenin fotoğrafını çek, yapay zekâ açıklasın. Kodum {code} ile {count, plural, =1{1 ek analiz} other{{count} ek analiz}} kazanırsın.",
-  "referralCopied": "Kod kopyalandı"
+  "referralCopied": "Kod kopyalandı",
+  "onboardTitle1": "Bir hissenin fotoğrafını çekin",
+  "onboardBody1": "Bir aracı kurum ekranı, bir gazete ya da bir şirket logosu yeterli: WhatStock hisseyi tanır; fiyatını, grafiğini ve temel verilerini gösterir.",
+  "onboardTitle2": "Dakikalar içinde anlayın",
+  "onboardBody2": "Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nereye gidebileceğine dair üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.",
+  "onboardTitle3": "Her şeyden haberdar olun",
+  "onboardBody3": "Favoriler, portföyünüz ve fiyat alarmları sizi gelişmelerden haberdar eder. Analizleriniz cihazınızda kalır, istediğiniz zaman yeniden açabilirsiniz.",
+  "onboardNext": "İleri",
+  "onboardStart": "Başlayın",
+  "onboardSkip": "Atla"
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Non podes canxear o teu propio código.",
   "referralErrAlready": "Xa canxeaches o código dun amigo.",
   "referralShareText": "Analizo accións con WhatStock: fotografas unha acción e a IA explícacha. Co meu código {code} recibes {count, plural, one{{count} análise extra} other{{count} análises extra}}.",
-  "referralCopied": "Código copiado"
+  "referralCopied": "Código copiado",
+  "onboardTitle1": "Fotografa unha acción",
+  "onboardBody1": "Abonda coa pantalla dunha app de bolsa, un xornal ou o logotipo dunha empresa: WhatStock recoñece a acción e móstrache o prezo, o gráfico e as cifras clave.",
+  "onboardTitle2": "Enténdea en minutos",
+  "onboardBody2": "A análise con IA explícache que move a acción, os riscos, a valoración e tres escenarios sobre cara a onde podería ir o prezo, con fontes e no teu idioma.",
+  "onboardTitle3": "Mantente sempre ao día",
+  "onboardBody3": "Os favoritos, a túa carteira e as alertas de prezo mantéñente ao tanto. As túas análises quedan no teu dispositivo, listas para volver abrilas.",
+  "onboardNext": "Seguinte",
+  "onboardStart": "Comezar",
+  "onboardSkip": "Omitir"
 }

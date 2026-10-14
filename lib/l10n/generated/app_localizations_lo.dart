@@ -1482,4 +1482,34 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get referralCopied => 'ສຳເນົາລະຫັດແລ້ວ';
+
+  @override
+  String get onboardTitle1 => 'ຖ່າຍຮູບຮຸ້ນ';
+
+  @override
+  String get onboardBody1 =>
+      'ພຽງໜ້າຈໍແອັບນາຍໜ້າ, ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດກໍພຽງພໍ: WhatStock ຈະຈົດຈຳຮຸ້ນ ແລະ ສະແດງລາຄາ, ກຣາບ ແລະ ຕົວເລກສຳຄັນຂອງຮຸ້ນນັ້ນ.';
+
+  @override
+  String get onboardTitle2 => 'ເຂົ້າໃຈໄດ້ໃນບໍ່ເທົ່າໃດນາທີ';
+
+  @override
+  String get onboardBody2 =>
+      'ການວິເຄາະດ້ວຍ AI ອະທິບາຍວ່າຫຍັງເຮັດໃຫ້ຮຸ້ນເໜັງຕີງ, ຄວາມສ່ຽງ, ການປະເມີນມູນຄ່າ ແລະ ສາມສະຖານະການວ່າລາຄາອາດໄປທາງໃດ ພ້ອມແຫຼ່ງຂໍ້ມູນ ແລະ ເປັນພາສາຂອງທ່ານ.';
+
+  @override
+  String get onboardTitle3 => 'ຕິດຕາມທຸກຄວາມເຄື່ອນໄຫວ';
+
+  @override
+  String get onboardBody3 =>
+      'ລາຍການທີ່ມັກ, ພອດໂຟລິໂອຂອງທ່ານ ແລະ ການແຈ້ງເຕືອນລາຄາ ຈະແຈ້ງໃຫ້ທ່ານຮູ້ສະເໝີ. ການວິເຄາະຂອງທ່ານຢູ່ໃນອຸປະກອນຂອງທ່ານ ພ້ອມເປີດຄືນໄດ້ທຸກເວລາ.';
+
+  @override
+  String get onboardNext => 'ຕໍ່ໄປ';
+
+  @override
+  String get onboardStart => 'ເລີ່ມຕົ້ນ';
+
+  @override
+  String get onboardSkip => 'ຂ້າມ';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Ntushobora gukoresha kode yawe bwite.",
   "referralErrAlready": "Wamaze gukoresha kode y'inshuti.",
   "referralShareText": "Nsesengura imigabane nkoresheje WhatStock: fotora umugabane, AI ikawusobanura. Ukoresheje kode yanjye {code} ubona {count, plural, =1{isesengura 1 ry'inyongera} other{amasesengura {count} y'inyongera}}.",
-  "referralCopied": "Kode yakopowe"
+  "referralCopied": "Kode yakopowe",
+  "onboardTitle1": "Fata ifoto y'umugabane",
+  "onboardBody1": "Ekarani ya porogaramu y'umuhuza, ikinyamakuru cyangwa ikirango cy'ikigo birahagije: WhatStock imenya umugabane ikakwereka igiciro cyawo, igishushanyo n'imibare y'ingenzi.",
+  "onboardTitle2": "Byumve mu minota mike",
+  "onboardBody2": "Isesengura rya AI risobanura ibituma umugabane uhinduka, ibyago, agaciro kawo n'ibishoboka bitatu ku cyerekezo igiciro gishobora gufata – hamwe n'aho amakuru aturuka no mu rurimi rwawe.",
+  "onboardTitle3": "Ntucikwe n'amakuru",
+  "onboardBody3": "Ibyo ukunda, ishoramari ryawe n'imenyesha ry'ibiciro bikugezaho amakuru. Isesengura ryawe riguma ku gikoresho cyawe, ryiteguye kongera gufungurwa.",
+  "onboardNext": "Ibikurikira",
+  "onboardStart": "Tangira",
+  "onboardSkip": "Simbuka"
 }

@@ -1502,4 +1502,34 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod hat kopîkirin';
+
+  @override
+  String get onboardTitle1 => 'Wêneyê pişkekê bikişîne';
+
+  @override
+  String get onboardBody1 =>
+      'Ekrana sepana brokerê, rojnameyek an logoya şirketekê bes e: WhatStock pişkê nas dike û bihayê wê, grafîka wê û hejmarên wê yên sereke nîşan dide.';
+
+  @override
+  String get onboardTitle2 => 'Di çend deqeyan de fêm bike';
+
+  @override
+  String get onboardBody2 =>
+      'Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyan pêşkêş dike ka biha dikare ber bi ku ve biçe, bi çavkaniyan û bi zimanê te.';
+
+  @override
+  String get onboardTitle3 => 'Her tim agahdar be';
+
+  @override
+  String get onboardBody3 =>
+      'Bijare, portfolyoya te û hişyariyên bihayê te agahdar dihêlin. Analîzên te li ser cîhaza te dimînin, amade ne ku dîsa werin vekirin.';
+
+  @override
+  String get onboardNext => 'Pêşve';
+
+  @override
+  String get onboardStart => 'Dest pê bike';
+
+  @override
+  String get onboardSkip => 'Derbas bike';
 }

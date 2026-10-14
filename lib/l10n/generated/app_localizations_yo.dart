@@ -1499,4 +1499,34 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get referralCopied => 'A ti da kóòdù kọ';
+
+  @override
+  String get onboardTitle1 => 'Ya fọ́tò ìpín kan';
+
+  @override
+  String get onboardBody1 =>
+      'Ojú-ìbojú áàpù alágbàtà, ìwé ìròyìn tàbí àmì ilé-iṣẹ́ ti tó: WhatStock yóò dá ìpín náà mọ̀, yóò sì fi iye owó rẹ̀, àwòrán-àtẹ rẹ̀ àti àwọn nọ́ńbà pàtàkì hàn ọ́.';
+
+  @override
+  String get onboardTitle2 => 'Lóye rẹ̀ láàárín ìṣẹ́jú díẹ̀';
+
+  @override
+  String get onboardBody2 =>
+      'Ìtúpalẹ̀ AI ń ṣàlàyé ohun tó ń mú ìpín náà yí padà, àwọn ewu, ìdíyelé rẹ̀ àti ọ̀nà mẹ́ta tí iye owó lè gbà lọ, pẹ̀lú àwọn orísun àti ní èdè rẹ.';
+
+  @override
+  String get onboardTitle3 => 'Má ṣe pàdánù nǹkan kan';
+
+  @override
+  String get onboardBody3 =>
+      'Àwọn ààyò, àpò ìdókòwò rẹ àti ìkìlọ̀ iye owó máa ń jẹ́ kí o mọ ohun tó ń ṣẹlẹ̀. Àwọn ìtúpalẹ̀ rẹ wà lórí ẹ̀rọ rẹ, wọ́n ṣetán láti ṣí lẹ́ẹ̀kan sí i.';
+
+  @override
+  String get onboardNext => 'Èyí tó kàn';
+
+  @override
+  String get onboardStart => 'Bẹ̀rẹ̀';
+
+  @override
+  String get onboardSkip => 'Fò ó';
 }

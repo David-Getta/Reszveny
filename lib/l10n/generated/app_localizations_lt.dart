@@ -1549,4 +1549,34 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kodas nukopijuotas';
+
+  @override
+  String get onboardTitle1 => 'Nufotografuokite akciją';
+
+  @override
+  String get onboardBody1 =>
+      'Pakanka brokerio programėlės ekrano, laikraščio ar įmonės logotipo: WhatStock atpažįsta akciją ir parodo jos kainą, grafiką bei pagrindinius rodiklius.';
+
+  @override
+  String get onboardTitle2 => 'Supraskite per kelias minutes';
+
+  @override
+  String get onboardBody2 =>
+      'DI analizė paaiškina, kas lemia akcijos judėjimą, kokios yra rizikos, koks jos vertinimas, ir pateikia tris scenarijus, kur gali pajudėti kaina, – su šaltiniais ir jūsų kalba.';
+
+  @override
+  String get onboardTitle3 => 'Visada būkite informuoti';
+
+  @override
+  String get onboardBody3 =>
+      'Mėgstamiausi, jūsų portfelis ir kainos įspėjimai nuolat jus informuos. Jūsų analizės lieka jūsų įrenginyje – paruoštos vėl atverti.';
+
+  @override
+  String get onboardNext => 'Toliau';
+
+  @override
+  String get onboardStart => 'Pradėti';
+
+  @override
+  String get onboardSkip => 'Praleisti';
 }

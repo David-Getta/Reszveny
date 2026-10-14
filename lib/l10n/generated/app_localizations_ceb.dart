@@ -1507,4 +1507,34 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get referralCopied => 'Nakopya ang code';
+
+  @override
+  String get onboardTitle1 => 'Kuhai og litrato ang usa ka stock';
+
+  @override
+  String get onboardBody1 =>
+      'Igo na ang screen sa brokerage app, mantalaan o logo sa kompanya: mailhan sa WhatStock ang stock ug ipakita ang presyo, tsart ug importanteng mga numero niini.';
+
+  @override
+  String get onboardTitle2 => 'Masabtan sulod sa pipila ka minuto';
+
+  @override
+  String get onboardBody2 =>
+      'Ipasabot sa pagtuki sa AI kung unsay nagpalihok sa stock, ang mga risgo, ang valuation ug tulo ka senaryo kung asa mahimong padulong ang presyo – uban sa mga tinubdan ug sa imong pinulongan.';
+
+  @override
+  String get onboardTitle3 => 'Kanunay nga mahibalo';
+
+  @override
+  String get onboardBody3 =>
+      'Ang mga paborito, imong portfolio ug mga alerto sa presyo magpahibalo kanimo. Ang imong mga pagtuki magpabilin sa imong device, andam nga ablihan pag-usab.';
+
+  @override
+  String get onboardNext => 'Sunod';
+
+  @override
+  String get onboardStart => 'Magsugod na';
+
+  @override
+  String get onboardSkip => 'Laktawan';
 }

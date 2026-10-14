@@ -408,5 +408,14 @@
   "referralErrOwn": "Nie możesz wykorzystać własnego kodu.",
   "referralErrAlready": "Na tym koncie wykorzystano już kod od znajomego.",
   "referralShareText": "Analizuję akcje w WhatStock: zrób zdjęcie akcji, a AI ją objaśni. Z moim kodem {code} dostaniesz {count, plural, one{{count} dodatkową analizę} few{{count} dodatkowe analizy} many{{count} dodatkowych analiz} other{{count} dodatkowej analizy}}.",
-  "referralCopied": "Skopiowano kod"
+  "referralCopied": "Skopiowano kod",
+  "onboardTitle1": "Sfotografuj akcję",
+  "onboardBody1": "Wystarczy ekran aplikacji maklerskiej, gazeta lub logo firmy: WhatStock rozpozna akcję i pokaże jej kurs, wykres oraz najważniejsze wskaźniki.",
+  "onboardTitle2": "Zrozum ją w kilka minut",
+  "onboardBody2": "Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy scenariusze, dokąd może zmierzać cena – ze źródłami i w Twoim języku.",
+  "onboardTitle3": "Bądź na bieżąco",
+  "onboardBody3": "Ulubione, Twój portfel i alerty cenowe informują Cię na bieżąco. Twoje analizy zostają na urządzeniu, gotowe do ponownego otwarcia.",
+  "onboardNext": "Dalej",
+  "onboardStart": "Zaczynamy",
+  "onboardSkip": "Pomiń"
 }

@@ -1440,6 +1440,35 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get referralCopied => '邀请码已复制';
+
+  @override
+  String get onboardTitle1 => '拍下一只股票';
+
+  @override
+  String get onboardBody1 =>
+      '券商应用界面、报纸或公司标志都可以：WhatStock 会识别出股票，并显示它的价格、走势图和关键指标。';
+
+  @override
+  String get onboardTitle2 => '几分钟就能看懂';
+
+  @override
+  String get onboardBody2 =>
+      'AI 分析会解释股价的驱动因素、风险、估值，以及股价未来走向的三种情景——附有信息来源，并使用你的语言。';
+
+  @override
+  String get onboardTitle3 => '动态尽在掌握';
+
+  @override
+  String get onboardBody3 => '收藏、投资组合和价格提醒让你随时掌握最新动态。你的分析保存在设备上，随时可以重新打开。';
+
+  @override
+  String get onboardNext => '下一步';
+
+  @override
+  String get onboardStart => '开始使用';
+
+  @override
+  String get onboardSkip => '跳过';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2876,4 +2905,33 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get referralCopied => '已複製邀請碼';
+
+  @override
+  String get onboardTitle1 => '拍一張股票相片';
+
+  @override
+  String get onboardBody1 =>
+      '證券商 App 畫面、報紙或公司商標都可以：WhatStock 會識別股票，並顯示其股價、走勢圖及主要數據。';
+
+  @override
+  String get onboardTitle2 => '數分鐘內輕鬆看懂';
+
+  @override
+  String get onboardBody2 =>
+      'AI 分析會解釋推動股價的因素、風險、估值，以及股價未來走勢的三個情境——附有資料來源，並以你的語言呈現。';
+
+  @override
+  String get onboardTitle3 => '市況盡在掌握';
+
+  @override
+  String get onboardBody3 => '收藏、投資組合及價格提示助你緊貼最新動態。你的分析會儲存在裝置上，隨時可再次開啟。';
+
+  @override
+  String get onboardNext => '下一步';
+
+  @override
+  String get onboardStart => '開始使用';
+
+  @override
+  String get onboardSkip => '略過';
 }

@@ -1506,4 +1506,34 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kodi u kopjua';
+
+  @override
+  String get onboardTitle1 => 'Fotografoni një aksion';
+
+  @override
+  String get onboardBody1 =>
+      'Mjafton ekrani i një aplikacioni brokerimi, një gazetë ose logoja e një kompanie: WhatStock e njeh aksionin dhe ju tregon çmimin, grafikun dhe shifrat kryesore.';
+
+  @override
+  String get onboardTitle2 => 'Kuptojeni në pak minuta';
+
+  @override
+  String get onboardBody2 =>
+      'Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë se ku mund të shkojë çmimi – me burime dhe në gjuhën tuaj.';
+
+  @override
+  String get onboardTitle3 => 'Jini gjithmonë në dijeni';
+
+  @override
+  String get onboardBody3 =>
+      'Të preferuarat, portofoli juaj dhe alarmet e çmimit ju mbajnë të informuar. Analizat tuaja mbeten në pajisjen tuaj, gati për t’u rihapur.';
+
+  @override
+  String get onboardNext => 'Tjetër';
+
+  @override
+  String get onboardStart => 'Fillo';
+
+  @override
+  String get onboardSkip => 'Kapërce';
 }

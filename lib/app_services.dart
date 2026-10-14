@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'core/app_preferences.dart';
 import 'core/backend/backend_client.dart';
+import 'core/review/review_prompt.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/desktop/system_notifier.dart';
@@ -69,6 +70,8 @@ class AppServices {
       notifier: alertNotifier ?? SystemNotifier(onClick: _openAlert),
       describe: describeAlertHit,
     );
+    // Jó élmény után (a 3. elemzésnél) egyszer értékelést kérünk a boltban.
+    reports.onGenerated = (_) => ReviewPrompt.onAnalysisDone(preferences);
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /

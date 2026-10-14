@@ -1502,4 +1502,34 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod nusxalandi';
+
+  @override
+  String get onboardTitle1 => 'Aksiyani suratga oling';
+
+  @override
+  String get onboardBody1 =>
+      'Broker ilovasi ekrani, gazeta yoki kompaniya logotipi kifoya: WhatStock aksiyani taniydi va uning narxi, grafigi hamda asosiy koʻrsatkichlarini koʻrsatadi.';
+
+  @override
+  String get onboardTitle2 => 'Bir necha daqiqada tushuning';
+
+  @override
+  String get onboardBody2 =>
+      'AI tahlili aksiyani nima harakatlantirayotganini, xatarlarni, baholashni va narx qayerga borishi mumkinligi haqidagi uchta ssenariyni manbalar bilan va oʻz tilingizda tushuntirib beradi.';
+
+  @override
+  String get onboardTitle3 => 'Doimo xabardor boʻling';
+
+  @override
+  String get onboardBody3 =>
+      'Sevimlilar, portfelingiz va narx bildirishnomalari sizni voqealardan boxabar qilib turadi. Tahlillaringiz qurilmangizda saqlanadi, ularni istalgan vaqtda qayta ochishingiz mumkin.';
+
+  @override
+  String get onboardNext => 'Keyingi';
+
+  @override
+  String get onboardStart => 'Boshlash';
+
+  @override
+  String get onboardSkip => 'Oʻtkazib yuborish';
 }

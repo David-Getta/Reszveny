@@ -1510,4 +1510,34 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get referralCopied => 'Khoutu e kopilwe';
+
+  @override
+  String get onboardTitle1 => 'Tšea seswantšho sa šere';
+
+  @override
+  String get onboardBody1 =>
+      'Sekirini sa app ya borokara, kuranta goba logo ya khamphani di lekane: WhatStock e lemoga šere gomme e go bontšha theko ya yona, tšhate le dipalo tše bohlokwa.';
+
+  @override
+  String get onboardTitle2 => 'E kwešiše ka metsotso e se mekae';
+
+  @override
+  String get onboardBody2 =>
+      'Tshekatsheko ya AI e hlaloša seo se šuthišago šere, dikotsi, boleng bja yona le maemo a mararo a gore theko e ka ya kae – ka methopo le ka polelo ya gago.';
+
+  @override
+  String get onboardTitle3 => 'Dula o tseba tšohle';
+
+  @override
+  String get onboardBody3 =>
+      'Tše di ratwago, photefolio ya gago le ditemošo tša theko di go tsebiša ka mehla. Ditshekatsheko tša gago di dula sedirišweng sa gago, di loketše go bulwa gape.';
+
+  @override
+  String get onboardNext => 'Latela';
+
+  @override
+  String get onboardStart => 'Thoma';
+
+  @override
+  String get onboardSkip => 'Tlola';
 }

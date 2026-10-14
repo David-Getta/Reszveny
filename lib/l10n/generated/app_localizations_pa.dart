@@ -1496,4 +1496,34 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get referralCopied => 'ਕੋਡ ਕਾਪੀ ਹੋ ਗਿਆ';
+
+  @override
+  String get onboardTitle1 => 'ਸ਼ੇਅਰ ਦੀ ਫ਼ੋਟੋ ਖਿੱਚੋ';
+
+  @override
+  String get onboardBody1 =>
+      'ਬ੍ਰੋਕਰੇਜ ਐਪ ਦੀ ਸਕ੍ਰੀਨ, ਅਖ਼ਬਾਰ ਜਾਂ ਕੰਪਨੀ ਦਾ ਲੋਗੋ ਕਾਫ਼ੀ ਹੈ: WhatStock ਸ਼ੇਅਰ ਨੂੰ ਪਛਾਣਦਾ ਹੈ ਅਤੇ ਉਸਦੀ ਕੀਮਤ, ਚਾਰਟ ਅਤੇ ਮੁੱਖ ਅੰਕੜੇ ਦਿਖਾਉਂਦਾ ਹੈ।';
+
+  @override
+  String get onboardTitle2 => 'ਕੁਝ ਮਿੰਟਾਂ ਵਿੱਚ ਸਮਝੋ';
+
+  @override
+  String get onboardBody2 =>
+      'AI ਵਿਸ਼ਲੇਸ਼ਣ ਦੱਸਦਾ ਹੈ ਕਿ ਸ਼ੇਅਰ ਨੂੰ ਕੀ ਹਿਲਾਉਂਦਾ ਹੈ, ਜੋਖਮ ਕੀ ਹਨ, ਮੁਲਾਂਕਣ ਕੀ ਹੈ ਅਤੇ ਕੀਮਤ ਕਿੱਧਰ ਜਾ ਸਕਦੀ ਹੈ ਇਸਦੇ ਤਿੰਨ ਦ੍ਰਿਸ਼ – ਸਰੋਤਾਂ ਸਮੇਤ ਅਤੇ ਤੁਹਾਡੀ ਭਾਸ਼ਾ ਵਿੱਚ।';
+
+  @override
+  String get onboardTitle3 => 'ਹਮੇਸ਼ਾ ਅੱਪਡੇਟ ਰਹੋ';
+
+  @override
+  String get onboardBody3 =>
+      'ਮਨਪਸੰਦ, ਤੁਹਾਡਾ ਪੋਰਟਫ਼ੋਲੀਓ ਅਤੇ ਕੀਮਤ ਅਲਰਟ ਤੁਹਾਨੂੰ ਜਾਣਕਾਰੀ ਦਿੰਦੇ ਰਹਿੰਦੇ ਹਨ। ਤੁਹਾਡੇ ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੀ ਡਿਵਾਈਸ \'ਤੇ ਰਹਿੰਦੇ ਹਨ, ਦੁਬਾਰਾ ਖੋਲ੍ਹਣ ਲਈ ਤਿਆਰ।';
+
+  @override
+  String get onboardNext => 'ਅੱਗੇ';
+
+  @override
+  String get onboardStart => 'ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get onboardSkip => 'ਛੱਡੋ';
 }

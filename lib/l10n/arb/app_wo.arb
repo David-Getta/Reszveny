@@ -408,5 +408,14 @@
   "referralErrOwn": "Mënuloo jëfandikoo sa kood bopp.",
   "referralErrAlready": "Jëfandikoo nga ba noppi kood bu sa xarit.",
   "referralShareText": "Damay saytu aksioŋ yi ak WhatStock: fotoal aksioŋ te AI dina la ko leeral. Ak sama kood {code} dinga am {count, plural, =1{1 saytu bu ñu yokk} other{{count} saytu yu ñu yokk}}.",
-  "referralCopied": "Kood bi koppi nañu ko"
+  "referralCopied": "Kood bi koppi nañu ko",
+  "onboardTitle1": "Jëlal nataalu aksiyoŋ",
+  "onboardBody1": "Ekraŋu aplikasiyoŋu bursu, ab surnaal walla màndargay kompañi doy na: WhatStock dina xàmmi aksiyoŋ bi te won la njëgam, grafik bi ak lim yi am solo.",
+  "onboardTitle2": "Xam ko ci ay simili rekk",
+  "onboardBody2": "Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat ci fan la njëg bi mën a jëm – ak fi xibaar yi jóge te ci sa làkk.",
+  "onboardTitle3": "Bul ñàkk benn xibaar",
+  "onboardBody3": "Yi ma gënal, sama aksiyoŋ yi ak artu njëg dinañu la yégal lu xew. Say saytu dañuy des ci sa jumtukaay, pare ngir nga ubbiwaat leen.",
+  "onboardNext": "Ci kanam",
+  "onboardStart": "Tàmbali",
+  "onboardSkip": "Tëb"
 }

@@ -1498,4 +1498,34 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kòd la kopye';
+
+  @override
+  String get onboardTitle1 => 'Pran foto yon aksyon';
+
+  @override
+  String get onboardBody1 =>
+      'Yon ekran aplikasyon kourtye, yon jounal oswa logo yon konpayi ase: WhatStock rekonèt aksyon an epi li montre w pri li, grafik li ak chif enpòtan yo.';
+
+  @override
+  String get onboardTitle2 => 'Konprann li nan kèk minit';
+
+  @override
+  String get onboardBody2 =>
+      'Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo sou kote pri a ka ale, avèk sous epi nan lang ou.';
+
+  @override
+  String get onboardTitle3 => 'Toujou okouran';
+
+  @override
+  String get onboardBody3 =>
+      'Favori, pòtfèy ou ak alèt pri yo kenbe w okouran. Analiz ou yo rete sou aparèy ou, pare pou w louvri yo ankò.';
+
+  @override
+  String get onboardNext => 'Swivan';
+
+  @override
+  String get onboardStart => 'Ann kòmanse';
+
+  @override
+  String get onboardSkip => 'Sote';
 }

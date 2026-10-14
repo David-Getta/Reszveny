@@ -1503,4 +1503,34 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code gekopieerd';
+
+  @override
+  String get onboardTitle1 => 'Fotografeer een aandeel';
+
+  @override
+  String get onboardBody1 =>
+      'Een brokerscherm, een krant of een bedrijfslogo is genoeg: WhatStock herkent het aandeel en toont de koers, de grafiek en de belangrijkste cijfers.';
+
+  @override
+  String get onboardTitle2 => 'In een paar minuten helder';
+
+  @override
+  String get onboardBody2 =>
+      'De AI-analyse legt uit wat het aandeel beweegt, wat de risico\'s zijn en hoe het gewaardeerd is, en schetst drie scenario\'s voor waar de koers heen kan – met bronnen en in jouw taal.';
+
+  @override
+  String get onboardTitle3 => 'Blijf altijd op de hoogte';
+
+  @override
+  String get onboardBody3 =>
+      'Favorieten, je portefeuille en koersalerts houden je op de hoogte. Je analyses blijven op je apparaat, klaar om opnieuw te openen.';
+
+  @override
+  String get onboardNext => 'Volgende';
+
+  @override
+  String get onboardStart => 'Aan de slag';
+
+  @override
+  String get onboardSkip => 'Overslaan';
 }

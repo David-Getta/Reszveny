@@ -1486,4 +1486,34 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get referralCopied => 'បានចម្លងកូដ';
+
+  @override
+  String get onboardTitle1 => 'ថតរូបភាគហ៊ុន';
+
+  @override
+  String get onboardBody1 =>
+      'គ្រាន់តែអេក្រង់កម្មវិធីឈ្មួញកណ្ដាល កាសែត ឬឡូហ្គោក្រុមហ៊ុនក៏គ្រប់គ្រាន់ដែរ៖ WhatStock ស្គាល់ភាគហ៊ុន ហើយបង្ហាញតម្លៃ ក្រាហ្វ និងតួលេខសំខាន់ៗរបស់វា។';
+
+  @override
+  String get onboardTitle2 => 'យល់ច្បាស់ក្នុងប៉ុន្មាននាទី';
+
+  @override
+  String get onboardBody2 =>
+      'ការវិភាគ AI ពន្យល់ពីអ្វីដែលធ្វើឱ្យភាគហ៊ុនប្រែប្រួល ហានិភ័យ ការវាយតម្លៃ និងសេណារីយ៉ូបីអំពីទិសដៅដែលតម្លៃអាចទៅ ដោយមានប្រភពឯកសារ និងជាភាសារបស់អ្នក។';
+
+  @override
+  String get onboardTitle3 => 'តាមដានជានិច្ច';
+
+  @override
+  String get onboardBody3 =>
+      'ចំណូលចិត្ត ផលប័ត្ររបស់អ្នក និងការជូនដំណឹងតម្លៃ ជួយឱ្យអ្នកដឹងព័ត៌មានជានិច្ច។ ការវិភាគរបស់អ្នកនៅលើឧបករណ៍របស់អ្នក ត្រៀមរួចជាស្រេចសម្រាប់បើកម្ដងទៀត។';
+
+  @override
+  String get onboardNext => 'បន្ទាប់';
+
+  @override
+  String get onboardStart => 'ចាប់ផ្ដើម';
+
+  @override
+  String get onboardSkip => 'រំលង';
 }

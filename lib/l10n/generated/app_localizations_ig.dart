@@ -1496,4 +1496,34 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get referralCopied => 'Edepụtagharala koodu';
+
+  @override
+  String get onboardTitle1 => 'See foto nke stock';
+
+  @override
+  String get onboardBody1 =>
+      'Ihuenyo ngwa broker, akwụkwọ akụkọ ma ọ bụ akara ụlọ ọrụ zuru ezu: WhatStock ga-amata stock ahụ ma gosi gị ọnụahịa ya, eserese ya na ọnụọgụgụ ndị dị mkpa.';
+
+  @override
+  String get onboardTitle2 => 'Ghọta ya n\'ime nkeji ole na ole';
+
+  @override
+  String get onboardBody2 =>
+      'Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ nke ebe ọnụahịa ya nwere ike ịga, ya na isi iyi ozi na n\'asụsụ gị.';
+
+  @override
+  String get onboardTitle3 => 'Nọrọ na-amata ihe niile';
+
+  @override
+  String get onboardBody3 =>
+      'Ọkacha mmasị, portfolio gị na ọkwa ọnụahịa na-eme ka ị mara ihe na-eme. Nyocha gị na-anọ na ngwaọrụ gị, dị njikere ka i meghee ha ọzọ.';
+
+  @override
+  String get onboardNext => 'Na-esote';
+
+  @override
+  String get onboardStart => 'Malite';
+
+  @override
+  String get onboardSkip => 'Wụfee';
 }

@@ -1499,4 +1499,34 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get referralCopied => 'कोड कॉपी हो गया';
+
+  @override
+  String get onboardTitle1 => 'किसी शेयर की फ़ोटो लें';
+
+  @override
+  String get onboardBody1 =>
+      'ब्रोकरेज ऐप की स्क्रीन, अख़बार या कंपनी का लोगो ही काफ़ी है: WhatStock शेयर को पहचानकर उसकी कीमत, चार्ट और मुख्य आँकड़े दिखाता है।';
+
+  @override
+  String get onboardTitle2 => 'मिनटों में समझें';
+
+  @override
+  String get onboardBody2 =>
+      'AI विश्लेषण बताता है कि शेयर को क्या प्रभावित करता है, उसके जोखिम क्या हैं, उसका मूल्यांकन कैसा है और कीमत किस ओर जा सकती है, इसके तीन परिदृश्य – स्रोतों के साथ और आपकी भाषा में।';
+
+  @override
+  String get onboardTitle3 => 'हर पल अपडेट रहें';
+
+  @override
+  String get onboardBody3 =>
+      'पसंदीदा, आपका पोर्टफ़ोलियो और कीमत अलर्ट आपको हर ख़बर देते रहते हैं। आपके विश्लेषण आपके डिवाइस पर ही रहते हैं, जब चाहें दोबारा खोलें।';
+
+  @override
+  String get onboardNext => 'आगे';
+
+  @override
+  String get onboardStart => 'शुरू करें';
+
+  @override
+  String get onboardSkip => 'छोड़ें';
 }

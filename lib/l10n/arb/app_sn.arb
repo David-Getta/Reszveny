@@ -408,5 +408,14 @@
   "referralErrOwn": "Haugoni kushandisa kodhi yako pachako.",
   "referralErrAlready": "Wakatoshandisa kodhi yeshamwari.",
   "referralShareText": "Ndinoongorora masheya neWhatStock: tora mufananidzo wesheya uye AI inokutsanangurira. Nekodhi yangu {code} unowana {count, plural, =1{ongororo 1 yekuwedzera} other{ongororo {count} dzekuwedzera}}.",
-  "referralCopied": "Kodhi yakopwa"
+  "referralCopied": "Kodhi yakopwa",
+  "onboardTitle1": "Tora mufananidzo wesheya",
+  "onboardBody1": "Skrini yeapp yebhurokeri, pepanhau kana logo yekambani zvakakwana: WhatStock inoziva sheya yobva yakuratidza mutengo wayo, girafu nenhamba dzinokosha.",
+  "onboardTitle2": "Inzwisisa mumaminitsi mashoma",
+  "onboardBody2": "Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvekuti mutengo ungaendepi, ine zvinyorwa zvainobva uye mumutauro wako.",
+  "onboardTitle3": "Ramba uchiziva zviri kuitika",
+  "onboardBody3": "Zvaunofarira, potiforiyo yako nezviziviso zvemutengo zvinokuzivisa nguva dzose. Ongororo dzako dzinogara pamudziyo wako, dzakagadzirira kuvhurwa zvakare.",
+  "onboardNext": "Inotevera",
+  "onboardStart": "Tanga",
+  "onboardSkip": "Svetuka"
 }

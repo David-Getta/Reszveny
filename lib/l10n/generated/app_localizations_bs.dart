@@ -1533,4 +1533,34 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod je kopiran';
+
+  @override
+  String get onboardTitle1 => 'Fotografišite dionicu';
+
+  @override
+  String get onboardBody1 =>
+      'Dovoljan je ekran brokerske aplikacije, novine ili logo kompanije: WhatStock prepoznaje dionicu i prikazuje njenu cijenu, grafikon i ključne pokazatelje.';
+
+  @override
+  String get onboardTitle2 => 'Shvatite je za nekoliko minuta';
+
+  @override
+  String get onboardBody2 =>
+      'AI analiza objašnjava šta pokreće dionicu, koji su rizici i kakvo je vrednovanje, uz tri scenarija o tome kuda bi cijena mogla ići – s izvorima i na vašem jeziku.';
+
+  @override
+  String get onboardTitle3 => 'Budite uvijek u toku';
+
+  @override
+  String get onboardBody3 =>
+      'Favoriti, vaš portfolio i obavještenja o cijeni drže vas u toku. Vaše analize ostaju na vašem uređaju, spremne da ih ponovo otvorite.';
+
+  @override
+  String get onboardNext => 'Dalje';
+
+  @override
+  String get onboardStart => 'Započnite';
+
+  @override
+  String get onboardSkip => 'Preskoči';
 }

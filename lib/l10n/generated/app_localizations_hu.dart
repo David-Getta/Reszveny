@@ -1505,4 +1505,34 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kód kimásolva';
+
+  @override
+  String get onboardTitle1 => 'Fotózz le egy részvényt';
+
+  @override
+  String get onboardBody1 =>
+      'Elég egy brókerapp képernyője, egy újságcikk vagy egy céglogó: a WhatStock felismeri a részvényt, és megmutatja az árfolyamot, a grafikont és a fontos számokat.';
+
+  @override
+  String get onboardTitle2 => 'Percek alatt átlátod';
+
+  @override
+  String get onboardBody2 =>
+      'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad arra, merre mehet az ár – forrásokkal, a te nyelveden.';
+
+  @override
+  String get onboardTitle3 => 'Mindig képben leszel';
+
+  @override
+  String get onboardBody3 =>
+      'A kedvencek, a portfóliód és az árfolyam-riasztások szólnak, ha történik valami. Az elemzéseid a készülékeden maradnak, bármikor újra megnyithatod őket.';
+
+  @override
+  String get onboardNext => 'Tovább';
+
+  @override
+  String get onboardStart => 'Kezdjük';
+
+  @override
+  String get onboardSkip => 'Kihagyás';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Ne možete iskoristiti vlastiti kod.",
   "referralErrAlready": "Već ste iskoristili kod prijatelja.",
   "referralShareText": "Analiziram dionice uz WhatStock: fotografišite dionicu i AI će vam je objasniti. S mojim kodom {code} dobijate {count, plural, one{{count} dodatnu analizu} few{{count} dodatne analize} other{{count} dodatnih analiza}}.",
-  "referralCopied": "Kod je kopiran"
+  "referralCopied": "Kod je kopiran",
+  "onboardTitle1": "Fotografišite dionicu",
+  "onboardBody1": "Dovoljan je ekran brokerske aplikacije, novine ili logo kompanije: WhatStock prepoznaje dionicu i prikazuje njenu cijenu, grafikon i ključne pokazatelje.",
+  "onboardTitle2": "Shvatite je za nekoliko minuta",
+  "onboardBody2": "AI analiza objašnjava šta pokreće dionicu, koji su rizici i kakvo je vrednovanje, uz tri scenarija o tome kuda bi cijena mogla ići – s izvorima i na vašem jeziku.",
+  "onboardTitle3": "Budite uvijek u toku",
+  "onboardBody3": "Favoriti, vaš portfolio i obavještenja o cijeni drže vas u toku. Vaše analize ostaju na vašem uređaju, spremne da ih ponovo otvorite.",
+  "onboardNext": "Dalje",
+  "onboardStart": "Započnite",
+  "onboardSkip": "Preskoči"
 }

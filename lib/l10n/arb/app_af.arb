@@ -408,5 +408,14 @@
   "referralErrOwn": "Jy kan nie jou eie kode inlos nie.",
   "referralErrAlready": "Jy het reeds ’n vriend se kode ingelos.",
   "referralShareText": "Ek ontleed aandele met WhatStock: neem ’n foto van ’n aandeel en die AI verduidelik dit. Met my kode {code} kry jy {count, plural, =1{1 ekstra ontleding} other{{count} ekstra ontledings}}.",
-  "referralCopied": "Kode gekopieer"
+  "referralCopied": "Kode gekopieer",
+  "onboardTitle1": "Neem ’n foto van ’n aandeel",
+  "onboardBody1": "’n Makelaarsapp se skerm, ’n koerant of ’n maatskappylogo is genoeg: WhatStock herken die aandeel en wys die prys, grafiek en kernsyfers.",
+  "onboardTitle2": "Verstaan dit binne minute",
+  "onboardBody2": "Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie scenario’s vir waarheen die prys kan gaan – met bronne en in jou taal.",
+  "onboardTitle3": "Bly op hoogte",
+  "onboardBody3": "Gunstelinge, jou portefeulje en pryswaarskuwings hou jou op hoogte. Jou ontledings bly op jou toestel, gereed om weer oop te maak.",
+  "onboardNext": "Volgende",
+  "onboardStart": "Begin",
+  "onboardSkip": "Slaan oor"
 }

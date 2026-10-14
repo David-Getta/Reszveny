@@ -408,5 +408,14 @@
   "referralErrOwn": "Ị nweghị ike iji koodu nke gị.",
   "referralErrAlready": "Ị jirela koodu otu enyi gị.",
   "referralShareText": "Ana m eji WhatStock enyocha stock: see foto stock, AI ga-akọwakwa ya. Site na koodu m {code} ị ga-enweta {count, plural, =1{nyocha mgbakwunye 1} other{nyocha mgbakwunye {count}}}.",
-  "referralCopied": "Edepụtagharala koodu"
+  "referralCopied": "Edepụtagharala koodu",
+  "onboardTitle1": "See foto nke stock",
+  "onboardBody1": "Ihuenyo ngwa broker, akwụkwọ akụkọ ma ọ bụ akara ụlọ ọrụ zuru ezu: WhatStock ga-amata stock ahụ ma gosi gị ọnụahịa ya, eserese ya na ọnụọgụgụ ndị dị mkpa.",
+  "onboardTitle2": "Ghọta ya n'ime nkeji ole na ole",
+  "onboardBody2": "Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ nke ebe ọnụahịa ya nwere ike ịga, ya na isi iyi ozi na n'asụsụ gị.",
+  "onboardTitle3": "Nọrọ na-amata ihe niile",
+  "onboardBody3": "Ọkacha mmasị, portfolio gị na ọkwa ọnụahịa na-eme ka ị mara ihe na-eme. Nyocha gị na-anọ na ngwaọrụ gị, dị njikere ka i meghee ha ọzọ.",
+  "onboardNext": "Na-esote",
+  "onboardStart": "Malite",
+  "onboardSkip": "Wụfee"
 }

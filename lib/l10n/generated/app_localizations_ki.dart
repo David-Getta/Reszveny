@@ -1500,4 +1500,34 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kodi nĩ yakobĩo';
+
+  @override
+  String get onboardTitle1 => 'Oya mbica ya hisa';
+
+  @override
+  String get onboardBody1 =>
+      'Skrini ya app ya broker, gazeti kana rũũri rwa kampuni nĩ ciiganu: WhatStock nĩ ĩkũmenya hisa ĩyo na ĩkuonie thogora wayo, chati na namba cia bata.';
+
+  @override
+  String get onboardTitle2 => 'Ĩmenye na ndagĩka nini';
+
+  @override
+  String get onboardBody2 =>
+      'Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ iria thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.';
+
+  @override
+  String get onboardTitle3 => 'Menya ũhoro wothe';
+
+  @override
+  String get onboardBody3 =>
+      'Iria wendete, hisa ciaku na imenyithia cia thogora nĩ ikũmenyithagia. Ũthuthuria waku ũtũũraga thimũ-inĩ yaku, ũhaarĩrĩtio kũhingũrwo rĩngĩ.';
+
+  @override
+  String get onboardNext => 'Ĩrĩa ĩngĩ';
+
+  @override
+  String get onboardStart => 'Ambĩrĩria';
+
+  @override
+  String get onboardSkip => 'Hĩtũka';
 }

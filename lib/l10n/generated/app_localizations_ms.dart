@@ -1503,4 +1503,34 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod disalin';
+
+  @override
+  String get onboardTitle1 => 'Ambil foto saham';
+
+  @override
+  String get onboardBody1 =>
+      'Skrin aplikasi broker, surat khabar atau logo syarikat sudah memadai: WhatStock mengenal pasti saham itu dan menunjukkan harga, carta serta angka utamanya.';
+
+  @override
+  String get onboardTitle2 => 'Fahami dalam beberapa minit';
+
+  @override
+  String get onboardBody2 =>
+      'Analisis AI menerangkan apa yang menggerakkan saham, risikonya, penilaiannya dan tiga senario ke mana harga mungkin bergerak, lengkap dengan sumber dan dalam bahasa anda.';
+
+  @override
+  String get onboardTitle3 => 'Sentiasa ikuti perkembangan';
+
+  @override
+  String get onboardBody3 =>
+      'Kegemaran, portfolio anda dan amaran harga memastikan anda sentiasa dimaklumkan. Analisis anda kekal pada peranti anda, sedia untuk dibuka semula.';
+
+  @override
+  String get onboardNext => 'Seterusnya';
+
+  @override
+  String get onboardStart => 'Mulakan';
+
+  @override
+  String get onboardSkip => 'Langkau';
 }

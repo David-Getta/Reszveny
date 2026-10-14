@@ -408,5 +408,14 @@
   "referralErrOwn": "Non puoi riscattare il tuo codice.",
   "referralErrAlready": "Hai già riscattato il codice di un amico.",
   "referralShareText": "Analizzo le azioni con WhatStock: fotografi un'azione e l'IA te la spiega. Con il mio codice {code} ricevi {count, plural, =1{1 analisi extra} other{{count} analisi extra}}.",
-  "referralCopied": "Codice copiato"
+  "referralCopied": "Codice copiato",
+  "onboardTitle1": "Fotografa un'azione",
+  "onboardBody1": "Basta lo schermo di un'app di trading, un giornale o il logo di un'azienda: WhatStock riconosce l'azione e ti mostra prezzo, grafico e dati chiave.",
+  "onboardTitle2": "Capiscila in pochi minuti",
+  "onboardBody2": "L'analisi IA spiega cosa muove il titolo, i rischi, la valutazione e tre scenari su dove potrebbe andare il prezzo, con le fonti e nella tua lingua.",
+  "onboardTitle3": "Resta sempre aggiornato",
+  "onboardBody3": "Preferiti, il tuo portafoglio e gli avvisi di prezzo ti tengono informato. Le tue analisi restano sul tuo dispositivo, pronte da riaprire.",
+  "onboardNext": "Avanti",
+  "onboardStart": "Inizia",
+  "onboardSkip": "Salta"
 }

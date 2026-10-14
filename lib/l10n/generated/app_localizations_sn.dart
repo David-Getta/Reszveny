@@ -1504,4 +1504,34 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kodhi yakopwa';
+
+  @override
+  String get onboardTitle1 => 'Tora mufananidzo wesheya';
+
+  @override
+  String get onboardBody1 =>
+      'Skrini yeapp yebhurokeri, pepanhau kana logo yekambani zvakakwana: WhatStock inoziva sheya yobva yakuratidza mutengo wayo, girafu nenhamba dzinokosha.';
+
+  @override
+  String get onboardTitle2 => 'Inzwisisa mumaminitsi mashoma';
+
+  @override
+  String get onboardBody2 =>
+      'Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvekuti mutengo ungaendepi, ine zvinyorwa zvainobva uye mumutauro wako.';
+
+  @override
+  String get onboardTitle3 => 'Ramba uchiziva zviri kuitika';
+
+  @override
+  String get onboardBody3 =>
+      'Zvaunofarira, potiforiyo yako nezviziviso zvemutengo zvinokuzivisa nguva dzose. Ongororo dzako dzinogara pamudziyo wako, dzakagadzirira kuvhurwa zvakare.';
+
+  @override
+  String get onboardNext => 'Inotevera';
+
+  @override
+  String get onboardStart => 'Tanga';
+
+  @override
+  String get onboardSkip => 'Svetuka';
 }

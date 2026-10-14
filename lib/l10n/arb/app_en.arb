@@ -1037,5 +1037,41 @@
   "referralCopied": "Code copied",
   "@referralCopied": {
     "description": "Short confirmation after copying the referral code."
+  },
+  "onboardTitle1": "Photograph a stock",
+  "@onboardTitle1": {
+    "description": "First onboarding page title: the app recognises a stock from a photo."
+  },
+  "onboardBody1": "A brokerage screen, a newspaper or a company logo is enough: WhatStock recognises the stock and shows its price, chart and key figures.",
+  "@onboardBody1": {
+    "description": "First onboarding page text. Keep WhatStock unchanged."
+  },
+  "onboardTitle2": "Understand it in minutes",
+  "@onboardTitle2": {
+    "description": "Second onboarding page title: the AI analysis."
+  },
+  "onboardBody2": "The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.",
+  "@onboardBody2": {
+    "description": "Second onboarding page text."
+  },
+  "onboardTitle3": "Stay on top of it",
+  "@onboardTitle3": {
+    "description": "Third onboarding page title: favorites, portfolio, alerts."
+  },
+  "onboardBody3": "Favorites, your portfolio and price alerts keep you posted. Your analyses stay on your device, ready to reopen.",
+  "@onboardBody3": {
+    "description": "Third onboarding page text."
+  },
+  "onboardNext": "Next",
+  "@onboardNext": {
+    "description": "Button: next onboarding page."
+  },
+  "onboardStart": "Get started",
+  "@onboardStart": {
+    "description": "Button on the last onboarding page: start using the app."
+  },
+  "onboardSkip": "Skip",
+  "@onboardSkip": {
+    "description": "Button: skip the onboarding."
   }
 }

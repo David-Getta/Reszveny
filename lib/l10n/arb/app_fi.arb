@@ -408,5 +408,14 @@
   "referralErrOwn": "Et voi lunastaa omaa koodiasi.",
   "referralErrAlready": "Olet jo lunastanut ystävän koodin.",
   "referralShareText": "Analysoin osakkeita WhatStockilla: kuvaa osake, niin tekoäly selittää sen. Koodillani {code} saat {count, plural, =1{1 lisäanalyysin} other{{count} lisäanalyysia}}.",
-  "referralCopied": "Koodi kopioitu"
+  "referralCopied": "Koodi kopioitu",
+  "onboardTitle1": "Kuvaa osake",
+  "onboardBody1": "Välittäjäsovelluksen näkymä, sanomalehti tai yhtiön logo riittää: WhatStock tunnistaa osakkeen ja näyttää sen kurssin, kaavion ja tärkeimmät tunnusluvut.",
+  "onboardTitle2": "Ymmärrä se minuuteissa",
+  "onboardBody2": "Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme skenaariota siitä, mihin kurssi voi kehittyä – lähteineen ja omalla kielelläsi.",
+  "onboardTitle3": "Pysy ajan tasalla",
+  "onboardBody3": "Suosikit, salkkusi ja kurssihälytykset pitävät sinut ajan tasalla. Analyysisi pysyvät laitteellasi valmiina avattaviksi uudelleen.",
+  "onboardNext": "Seuraava",
+  "onboardStart": "Aloitetaan",
+  "onboardSkip": "Ohita"
 }

@@ -1509,4 +1509,34 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get referralCopied => 'Khodi yi kopiwile';
+
+  @override
+  String get onboardTitle1 => 'Teka xifaniso xa xere';
+
+  @override
+  String get onboardBody1 =>
+      'Xikirini xa app ya burokara, phephahungu kumbe logo ya khampani swi ringanerile: WhatStock yi tiva xere naswona yi ku komba nxavo wa yona, chati ni tinomboro ta nkoka.';
+
+  @override
+  String get onboardTitle2 => 'Yi twisise hi timinete ti nga ri tingani';
+
+  @override
+  String get onboardBody2 =>
+      'Nxopaxopo wa AI wu hlamusela leswi endlaka leswaku xere yi famba, makhombo, ntikelo wa yona ni swiyimo swinharhu swa laha nxavo wu nga yaka kona, ku ri ni swihlovo naswona hi ririmi ra wena.';
+
+  @override
+  String get onboardTitle3 => 'Tshama u tiva hinkwaswo';
+
+  @override
+  String get onboardBody3 =>
+      'Leswi u swi rhandzaka, phothifoliyo ya wena ni switiviso swa nxavo swi ku tivisa leswi humelelaka. Minxopaxopo ya wena yi tshama eka xitirhisiwa xa wena, yi lunghekele ku pfuriwa nakambe.';
+
+  @override
+  String get onboardNext => 'Leswi landzelaka';
+
+  @override
+  String get onboardStart => 'Sungula';
+
+  @override
+  String get onboardSkip => 'Tlula';
 }

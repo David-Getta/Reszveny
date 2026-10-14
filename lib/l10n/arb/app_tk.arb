@@ -408,5 +408,14 @@
   "referralErrOwn": "Öz koduňy ulanyp bilmeýärsiň.",
   "referralErrAlready": "Sen eýýäm dostuňyň koduny ulandyň.",
   "referralShareText": "Men WhatStock bilen paýnamalary seljerýärin: paýnamanyň suratyny al, AI ony düşündirer. Meniň {code} kodum bilen {count, plural, =1{1 goşmaça seljerme} other{{count} goşmaça seljerme}} alarsyň.",
-  "referralCopied": "Kod göçürildi"
+  "referralCopied": "Kod göçürildi",
+  "onboardTitle1": "Paýnamany surata düşüriň",
+  "onboardBody1": "Broker programmasynyň ekrany, gazet ýa-da kompaniýanyň logotipi ýeterlik: WhatStock paýnamany tanaýar we onuň bahasyny, grafigini hem-de esasy görkezijilerini görkezýär.",
+  "onboardTitle2": "Birnäçe minutda düşüniň",
+  "onboardBody2": "AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nirä gidip biljekdigi barada üç ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.",
+  "onboardTitle3": "Hemişe habarly boluň",
+  "onboardBody3": "Saýlananlar, portfeliňiz we baha duýduryşlary sizi wakalardan habarly saklaýar. Seljermeleriňiz enjamyňyzda galýar, olary islendik wagt täzeden açyp bilersiňiz.",
+  "onboardNext": "Indiki",
+  "onboardStart": "Başlaň",
+  "onboardSkip": "Geçiň"
 }

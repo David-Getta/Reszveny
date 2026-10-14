@@ -1499,4 +1499,34 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod kopyalandı';
+
+  @override
+  String get onboardTitle1 => 'Bir hissenin fotoğrafını çekin';
+
+  @override
+  String get onboardBody1 =>
+      'Bir aracı kurum ekranı, bir gazete ya da bir şirket logosu yeterli: WhatStock hisseyi tanır; fiyatını, grafiğini ve temel verilerini gösterir.';
+
+  @override
+  String get onboardTitle2 => 'Dakikalar içinde anlayın';
+
+  @override
+  String get onboardBody2 =>
+      'Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nereye gidebileceğine dair üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.';
+
+  @override
+  String get onboardTitle3 => 'Her şeyden haberdar olun';
+
+  @override
+  String get onboardBody3 =>
+      'Favoriler, portföyünüz ve fiyat alarmları sizi gelişmelerden haberdar eder. Analizleriniz cihazınızda kalır, istediğiniz zaman yeniden açabilirsiniz.';
+
+  @override
+  String get onboardNext => 'İleri';
+
+  @override
+  String get onboardStart => 'Başlayın';
+
+  @override
+  String get onboardSkip => 'Atla';
 }

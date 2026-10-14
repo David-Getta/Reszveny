@@ -1535,4 +1535,34 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kods nokopēts';
+
+  @override
+  String get onboardTitle1 => 'Nofotografējiet akciju';
+
+  @override
+  String get onboardBody1 =>
+      'Pietiek ar brokera lietotnes ekrānu, avīzi vai uzņēmuma logotipu: WhatStock atpazīst akciju un parāda tās cenu, grafiku un galvenos rādītājus.';
+
+  @override
+  String get onboardTitle2 => 'Izprotiet to dažās minūtēs';
+
+  @override
+  String get onboardBody2 =>
+      'AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs scenārijus, kurp cena varētu virzīties, – ar avotiem un jūsu valodā.';
+
+  @override
+  String get onboardTitle3 => 'Vienmēr lietas kursā';
+
+  @override
+  String get onboardBody3 =>
+      'Izlase, jūsu portfelis un cenu brīdinājumi jūs vienmēr informēs. Jūsu analīzes paliek jūsu ierīcē, gatavas atkārtotai atvēršanai.';
+
+  @override
+  String get onboardNext => 'Tālāk';
+
+  @override
+  String get onboardStart => 'Sākt';
+
+  @override
+  String get onboardSkip => 'Izlaist';
 }

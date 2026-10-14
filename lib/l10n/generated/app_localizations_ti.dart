@@ -1470,4 +1470,34 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get referralCopied => 'ኮድ ተቐዲሑ';
+
+  @override
+  String get onboardTitle1 => 'ስእሊ ኣክሲዮን ኣልዕሉ';
+
+  @override
+  String get onboardBody1 =>
+      'ስክሪን ናይ ደላላ ኣፕ፣ ጋዜጣ ወይ ኣርማ ትካል ይኣክል፦ WhatStock ነቲ ኣክሲዮን ኣለልዩ ዋጋኡ፣ ቻርቱን ኣገደስቲ ኣሃዛቱን የርእየኩም።';
+
+  @override
+  String get onboardTitle2 => 'ኣብ ውሑዳት ደቓይቕ ተረድእዎ';
+
+  @override
+  String get onboardBody2 =>
+      'ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ናበይ ክኸይድ ከም ዝኽእል ሰለስተ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።';
+
+  @override
+  String get onboardTitle3 => 'ኩሉ ግዜ ሓበሬታ ይሃልወኩም';
+
+  @override
+  String get onboardBody3 =>
+      'ዝተፈተዉ፣ ፖርትፎሊዮኹምን መጠንቀቕታታት ዋጋን ወትሩ ሓበሬታ ይህቡኹም። ትንተናታትኩም ኣብ መሳርሒኹም ይጸንሑ፣ እንደገና ንምኽፋት ድሉዋት እዮም።';
+
+  @override
+  String get onboardNext => 'ዝቕጽል';
+
+  @override
+  String get onboardStart => 'ጀምሩ';
+
+  @override
+  String get onboardSkip => 'ሕለፍዎ';
 }

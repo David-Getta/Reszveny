@@ -1500,4 +1500,34 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod kopyalandı';
+
+  @override
+  String get onboardTitle1 => 'Səhmin şəklini çəkin';
+
+  @override
+  String get onboardBody1 =>
+      'Broker tətbiqinin ekranı, qəzet və ya şirkət loqosu kifayətdir: WhatStock səhmi tanıyır və onun qiymətini, qrafikini və əsas göstəricilərini göstərir.';
+
+  @override
+  String get onboardTitle2 => 'Bir neçə dəqiqəyə anlayın';
+
+  @override
+  String get onboardBody2 =>
+      'AI təhlili səhmi nəyin hərəkətə gətirdiyini, riskləri, dəyərləndirməni və qiymətin hara gedə biləcəyinə dair üç ssenarini izah edir – mənbələrlə və sizin dilinizdə.';
+
+  @override
+  String get onboardTitle3 => 'Həmişə xəbərdar olun';
+
+  @override
+  String get onboardBody3 =>
+      'Seçilmişlər, portfeliniz və qiymət bildirişləri sizi xəbərdar edir. Təhlilləriniz cihazınızda qalır və istənilən vaxt yenidən açıla bilər.';
+
+  @override
+  String get onboardNext => 'Növbəti';
+
+  @override
+  String get onboardStart => 'Başlayaq';
+
+  @override
+  String get onboardSkip => 'Keç';
 }

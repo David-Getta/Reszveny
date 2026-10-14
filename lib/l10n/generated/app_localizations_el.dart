@@ -1507,4 +1507,34 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get referralCopied => 'Ο κωδικός αντιγράφηκε';
+
+  @override
+  String get onboardTitle1 => 'Φωτογραφίστε μια μετοχή';
+
+  @override
+  String get onboardBody1 =>
+      'Αρκεί η οθόνη μιας εφαρμογής συναλλαγών, μια εφημερίδα ή ένα λογότυπο εταιρείας: το WhatStock αναγνωρίζει τη μετοχή και δείχνει την τιμή, το γράφημα και τα βασικά της μεγέθη.';
+
+  @override
+  String get onboardTitle2 => 'Κατανοήστε τη σε λίγα λεπτά';
+
+  @override
+  String get onboardBody2 =>
+      'Η ανάλυση AI εξηγεί τι κινεί τη μετοχή, τους κινδύνους, την αποτίμηση και τρία σενάρια για το πού μπορεί να κινηθεί η τιμή – με πηγές και στη γλώσσα σας.';
+
+  @override
+  String get onboardTitle3 => 'Μείνετε πάντα ενημερωμένοι';
+
+  @override
+  String get onboardBody3 =>
+      'Τα αγαπημένα, το χαρτοφυλάκιό σας και οι ειδοποιήσεις τιμής σάς κρατούν ενήμερους. Οι αναλύσεις σας μένουν στη συσκευή σας, έτοιμες να τις ανοίξετε ξανά.';
+
+  @override
+  String get onboardNext => 'Επόμενο';
+
+  @override
+  String get onboardStart => 'Ας ξεκινήσουμε';
+
+  @override
+  String get onboardSkip => 'Παράλειψη';
 }

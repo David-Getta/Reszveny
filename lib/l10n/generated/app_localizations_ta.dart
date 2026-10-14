@@ -1507,4 +1507,34 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get referralCopied => 'குறியீடு நகலெடுக்கப்பட்டது';
+
+  @override
+  String get onboardTitle1 => 'பங்கைப் புகைப்படம் எடுங்கள்';
+
+  @override
+  String get onboardBody1 =>
+      'ஒரு புரோக்கர் ஆப் திரை, செய்தித்தாள் அல்லது நிறுவன லோகோ போதும்: WhatStock பங்கை அடையாளம் கண்டு அதன் விலை, வரைபடம் மற்றும் முக்கிய எண்களைக் காட்டும்.';
+
+  @override
+  String get onboardTitle2 => 'சில நிமிடங்களில் புரிந்துகொள்ளுங்கள்';
+
+  @override
+  String get onboardBody2 =>
+      'பங்கை எது நகர்த்துகிறது, அதன் அபாயங்கள், மதிப்பீடு, விலை எங்கே செல்லக்கூடும் என்பதற்கான மூன்று சூழ்நிலைகள் ஆகியவற்றை AI பகுப்பாய்வு ஆதாரங்களுடன் உங்கள் மொழியிலேயே விளக்குகிறது.';
+
+  @override
+  String get onboardTitle3 => 'எல்லாவற்றையும் கண்காணியுங்கள்';
+
+  @override
+  String get onboardBody3 =>
+      'பிடித்தவை, உங்கள் போர்ட்ஃபோலியோ, விலை எச்சரிக்கைகள் ஆகியவை உங்களுக்குத் தொடர்ந்து தகவல் தரும். உங்கள் பகுப்பாய்வுகள் உங்கள் சாதனத்திலேயே சேமிக்கப்படும், எப்போது வேண்டுமானாலும் மீண்டும் திறக்கலாம்.';
+
+  @override
+  String get onboardNext => 'அடுத்து';
+
+  @override
+  String get onboardStart => 'தொடங்குங்கள்';
+
+  @override
+  String get onboardSkip => 'தவிர்';
 }

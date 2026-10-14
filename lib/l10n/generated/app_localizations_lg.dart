@@ -1508,4 +1508,34 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koodi ekoppoddwa';
+
+  @override
+  String get onboardTitle1 => 'Kuba ekifaananyi ky\'omugabo';
+
+  @override
+  String get onboardBody1 =>
+      'Olutimbe lwa app ya broker, olupapula lw\'amawulire oba akabonero ka kkampuni bimala: WhatStock etegeera omugabo n\'ekulaga bbeeyi yaagwo, ekipande kyagwo n\'ennamba enkulu.';
+
+  @override
+  String get onboardTitle2 => 'Kitegeere mu ddakiika ntono';
+
+  @override
+  String get onboardBody2 =>
+      'Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n\'embeera ssatu bbeeyi w\'eyinza okudda, nga kuliko ensibuko era mu lulimi lwo.';
+
+  @override
+  String get onboardTitle3 => 'Bera ng\'omanyi buli kimu';
+
+  @override
+  String get onboardBody3 =>
+      'By\'oyagala, emigabo gyo n\'okulabula ku bbeeyi bikutegeeza buli ekibaawo. Okwekenneenya kwo kusigala ku kyuma kyo, nga kwetegefu okuggulwawo nate.';
+
+  @override
+  String get onboardNext => 'Ekiddako';
+
+  @override
+  String get onboardStart => 'Tandika';
+
+  @override
+  String get onboardSkip => 'Buuka';
 }

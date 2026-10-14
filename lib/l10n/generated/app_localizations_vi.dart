@@ -1495,4 +1495,34 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get referralCopied => 'Đã sao chép mã';
+
+  @override
+  String get onboardTitle1 => 'Chụp ảnh một cổ phiếu';
+
+  @override
+  String get onboardBody1 =>
+      'Chỉ cần màn hình ứng dụng môi giới, một tờ báo hay logo công ty: WhatStock sẽ nhận diện cổ phiếu và hiển thị giá, biểu đồ cùng các chỉ số quan trọng.';
+
+  @override
+  String get onboardTitle2 => 'Hiểu rõ chỉ trong vài phút';
+
+  @override
+  String get onboardBody2 =>
+      'Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản cho hướng đi của giá – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.';
+
+  @override
+  String get onboardTitle3 => 'Luôn nắm bắt tình hình';
+
+  @override
+  String get onboardBody3 =>
+      'Yêu thích, danh mục của bạn và cảnh báo giá giúp bạn luôn cập nhật. Các bản phân tích được lưu trên thiết bị, sẵn sàng để mở lại bất cứ lúc nào.';
+
+  @override
+  String get onboardNext => 'Tiếp';
+
+  @override
+  String get onboardStart => 'Bắt đầu';
+
+  @override
+  String get onboardSkip => 'Bỏ qua';
 }

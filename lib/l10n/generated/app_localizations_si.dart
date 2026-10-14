@@ -1499,4 +1499,34 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get referralCopied => 'කේතය පිටපත් කළා';
+
+  @override
+  String get onboardTitle1 => 'කොටසක ඡායාරූපයක් ගන්න';
+
+  @override
+  String get onboardBody1 =>
+      'තැරැව්කාර යෙදුමක තිරයක්, පුවත්පතක් හෝ සමාගම් ලාංඡනයක් ප්‍රමාණවත්: WhatStock කොටස හඳුනාගෙන එහි මිල, ප්‍රස්තාරය සහ ප්‍රධාන සංඛ්‍යා පෙන්වයි.';
+
+  @override
+  String get onboardTitle2 => 'මිනිත්තු කිහිපයකින් තේරුම් ගන්න';
+
+  @override
+  String get onboardBody2 =>
+      'AI විශ්ලේෂණය කොටස චලනය කරන්නේ කුමක්ද, අවදානම්, තක්සේරුව සහ මිල යා හැකි දිශාව පිළිබඳ අවස්ථා තුනක් මූලාශ්‍ර සමඟ ඔබේ භාෂාවෙන් පැහැදිලි කරයි.';
+
+  @override
+  String get onboardTitle3 => 'සැමවිටම දැනුවත්ව සිටින්න';
+
+  @override
+  String get onboardBody3 =>
+      'ප්‍රියතම, ඔබේ කළඹ සහ මිල ඇඟවීම් ඔබව දැනුවත් කරයි. ඔබේ විශ්ලේෂණ ඔබේ උපාංගයේම රැඳී ඇති අතර නැවත විවෘත කිරීමට සූදානම්.';
+
+  @override
+  String get onboardNext => 'ඊළඟ';
+
+  @override
+  String get onboardStart => 'අරඹන්න';
+
+  @override
+  String get onboardSkip => 'මඟ හරින්න';
 }

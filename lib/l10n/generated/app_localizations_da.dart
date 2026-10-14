@@ -1497,4 +1497,34 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode kopieret';
+
+  @override
+  String get onboardTitle1 => 'Fotografér en aktie';
+
+  @override
+  String get onboardBody1 =>
+      'En skærm fra en investeringsapp, en avis eller et firmalogo er nok: WhatStock genkender aktien og viser kursen, grafen og de vigtigste nøgletal.';
+
+  @override
+  String get onboardTitle2 => 'Forstå den på få minutter';
+
+  @override
+  String get onboardBody2 =>
+      'AI-analysen forklarer, hvad der driver aktien, risiciene, værdiansættelsen og tre scenarier for, hvor kursen kan bevæge sig hen – med kilder og på dit sprog.';
+
+  @override
+  String get onboardTitle3 => 'Hold dig opdateret';
+
+  @override
+  String get onboardBody3 =>
+      'Favoritter, din portefølje og kursalarmer holder dig opdateret. Dine analyser bliver på din enhed, klar til at blive åbnet igen.';
+
+  @override
+  String get onboardNext => 'Næste';
+
+  @override
+  String get onboardStart => 'Kom i gang';
+
+  @override
+  String get onboardSkip => 'Spring over';
 }

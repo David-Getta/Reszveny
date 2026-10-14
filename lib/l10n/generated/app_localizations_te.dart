@@ -1505,4 +1505,34 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get referralCopied => 'కోడ్ కాపీ చేయబడింది';
+
+  @override
+  String get onboardTitle1 => 'స్టాక్ ఫోటో తీయండి';
+
+  @override
+  String get onboardBody1 =>
+      'బ్రోకరేజ్ యాప్ స్క్రీన్, వార్తాపత్రిక లేదా కంపెనీ లోగో చాలు: WhatStock స్టాక్‌ను గుర్తించి దాని ధర, చార్ట్, ముఖ్యమైన గణాంకాలను చూపిస్తుంది.';
+
+  @override
+  String get onboardTitle2 => 'నిమిషాల్లో అర్థం చేసుకోండి';
+
+  @override
+  String get onboardBody2 =>
+      'స్టాక్‌ను ఏది కదిలిస్తుందో, దాని రిస్క్‌లు, విలువ, ధర ఎటు వెళ్లవచ్చో తెలిపే మూడు దృశ్యాలను AI విశ్లేషణ మూలాలతో సహా మీ భాషలోనే వివరిస్తుంది.';
+
+  @override
+  String get onboardTitle3 => 'ఎప్పుడూ అప్‌డేట్‌గా ఉండండి';
+
+  @override
+  String get onboardBody3 =>
+      'ఇష్టమైనవి, మీ పోర్ట్‌ఫోలియో, ధర హెచ్చరికలు మీకు ఎప్పటికప్పుడు సమాచారం అందిస్తాయి. మీ విశ్లేషణలు మీ పరికరంలోనే ఉంటాయి, ఎప్పుడైనా మళ్లీ తెరవవచ్చు.';
+
+  @override
+  String get onboardNext => 'తదుపరి';
+
+  @override
+  String get onboardStart => 'ప్రారంభించండి';
+
+  @override
+  String get onboardSkip => 'దాటవేయి';
 }

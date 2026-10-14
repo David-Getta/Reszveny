@@ -1511,4 +1511,34 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get referralCopied => 'Voadika ny kaody';
+
+  @override
+  String get onboardTitle1 => 'Makà sarin\'ny aksiona iray';
+
+  @override
+  String get onboardBody1 =>
+      'Ampy ny efijerin\'ny fampiharana broker, gazety na logon\'ny orinasa: fantatr\'i WhatStock ilay aksiona ary asehony anao ny vidiny, ny kisariny ary ny tarehimarika fototra.';
+
+  @override
+  String get onboardTitle2 => 'Azonao ao anatin\'ny minitra vitsy';
+
+  @override
+  String get onboardBody2 =>
+      'Ny Fandalinana AI dia manazava izay mampihetsika ny aksiona, ny loza mety hitranga, ny sandany ary toe-javatra telo momba ny mety halehan\'ny vidiny – miaraka amin\'ny loharano sy amin\'ny fiteninao.';
+
+  @override
+  String get onboardTitle3 => 'Fantaro foana ny vaovao';
+
+  @override
+  String get onboardBody3 =>
+      'Ny ankafizina, ny kitapom-bolanao ary ny fanairana vidiny no mampahafantatra anao ny vaovao. Mijanona ao amin\'ny fitaovanao ny fandalinanao, vonona hosokafana indray.';
+
+  @override
+  String get onboardNext => 'Manaraka';
+
+  @override
+  String get onboardStart => 'Andao hanomboka';
+
+  @override
+  String get onboardSkip => 'Dinganina';
 }

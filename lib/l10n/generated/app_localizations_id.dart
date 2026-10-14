@@ -1495,4 +1495,34 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode disalin';
+
+  @override
+  String get onboardTitle1 => 'Foto sebuah saham';
+
+  @override
+  String get onboardBody1 =>
+      'Cukup layar aplikasi pialang, koran, atau logo perusahaan: WhatStock mengenali sahamnya dan menampilkan harga, grafik, serta angka-angka pentingnya.';
+
+  @override
+  String get onboardTitle2 => 'Pahami dalam hitungan menit';
+
+  @override
+  String get onboardBody2 =>
+      'Analisis AI menjelaskan apa yang menggerakkan saham, risikonya, valuasinya, dan tiga skenario ke mana harga bisa bergerak, lengkap dengan sumber dan dalam bahasa Anda.';
+
+  @override
+  String get onboardTitle3 => 'Selalu ikuti perkembangannya';
+
+  @override
+  String get onboardBody3 =>
+      'Favorit, portofolio Anda, dan peringatan harga membuat Anda selalu tahu kabar terbaru. Analisis Anda tetap tersimpan di perangkat, siap dibuka kembali.';
+
+  @override
+  String get onboardNext => 'Berikutnya';
+
+  @override
+  String get onboardStart => 'Mulai';
+
+  @override
+  String get onboardSkip => 'Lewati';
 }

@@ -20,6 +20,9 @@ class AppPreferences extends ChangeNotifier {
     this.doubleOption = false,
     this.doubleOptionAsked = false,
     this.keepInTray = true,
+    this.onboardingDone = true,
+    this.analysesDone = 0,
+    this.reviewAsked = false,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -37,6 +40,9 @@ class AppPreferences extends ChangeNotifier {
   static const _readerKey = 'analysis_reader_level';
   static const _counterKey = 'analysis_counter_argument';
   static const _keepInTrayKey = 'keep_in_tray';
+  static const _onboardingKey = 'onboarding_done';
+  static const _analysesDoneKey = 'analyses_done';
+  static const _reviewAskedKey = 'review_asked';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -70,6 +76,16 @@ class AppPreferences extends ChangeNotifier {
   /// Asztali gépen az ablak bezárása után is fusson a menüsorban / tálcán.
   bool keepInTray;
 
+  /// Láttuk-e már az első indításkori bemutatót. Csak friss telepítésnél hamis
+  /// (ha még semmi nincs elmentve), a meglévő felhasználóknak nem mutatjuk.
+  bool onboardingDone;
+
+  /// Hány AI-elemzés készült el ezen a készüléken (az értékelés-kéréshez).
+  int analysesDone;
+
+  /// Kértünk-e már értékelést a boltban (csak egyszer kérünk).
+  bool reviewAsked;
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -97,10 +113,31 @@ class AppPreferences extends ChangeNotifier {
         doubleOption: prefs.getBool(_doubleOptionKey) ?? false,
         doubleOptionAsked: prefs.getBool(_doubleOptionAskedKey) ?? false,
         keepInTray: prefs.getBool(_keepInTrayKey) ?? true,
+        onboardingDone: prefs.getBool(_onboardingKey) ?? prefs.getKeys().isNotEmpty,
+        analysesDone: prefs.getInt(_analysesDoneKey) ?? 0,
+        reviewAsked: prefs.getBool(_reviewAskedKey) ?? false,
       );
     } catch (_) {
       return AppPreferences();
     }
+  }
+
+  Future<void> completeOnboarding() async {
+    onboardingDone = true;
+    notifyListeners();
+    await _save((p) => p.setBool(_onboardingKey, true));
+  }
+
+  /// Egy elemzés elkészült; visszaadja az eddigi számot.
+  Future<int> countAnalysis() async {
+    analysesDone++;
+    await _save((p) => p.setInt(_analysesDoneKey, analysesDone));
+    return analysesDone;
+  }
+
+  Future<void> markReviewAsked() async {
+    reviewAsked = true;
+    await _save((p) => p.setBool(_reviewAskedKey, true));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {

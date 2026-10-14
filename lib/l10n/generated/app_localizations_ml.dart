@@ -1505,4 +1505,34 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get referralCopied => 'കോഡ് പകർത്തി';
+
+  @override
+  String get onboardTitle1 => 'ഒരു ഓഹരിയുടെ ഫോട്ടോ എടുക്കൂ';
+
+  @override
+  String get onboardBody1 =>
+      'ഒരു ബ്രോക്കറേജ് സ്ക്രീനോ പത്രമോ കമ്പനി ലോഗോയോ മതി: WhatStock ഓഹരി തിരിച്ചറിഞ്ഞ് അതിന്റെ വിലയും ചാർട്ടും പ്രധാന കണക്കുകളും കാണിക്കുന്നു.';
+
+  @override
+  String get onboardTitle2 => 'മിനിറ്റുകൾക്കുള്ളിൽ മനസ്സിലാക്കൂ';
+
+  @override
+  String get onboardBody2 =>
+      'ഓഹരിയെ ചലിപ്പിക്കുന്നത് എന്താണ്, അപകടസാധ്യതകൾ, മൂല്യനിർണ്ണയം, വില എങ്ങോട്ട് നീങ്ങാം എന്നതിന്റെ മൂന്ന് സാധ്യതകൾ എന്നിവ AI വിശകലനം വിശദീകരിക്കുന്നു – ഉറവിടങ്ങൾ സഹിതം, നിങ്ങളുടെ ഭാഷയിൽ.';
+
+  @override
+  String get onboardTitle3 => 'എപ്പോഴും അപ്ഡേറ്റായിരിക്കൂ';
+
+  @override
+  String get onboardBody3 =>
+      'പ്രിയപ്പെട്ടവ, നിങ്ങളുടെ പോർട്ട്ഫോളിയോ, വില അലേർട്ടുകൾ എന്നിവ നിങ്ങളെ എപ്പോഴും വിവരം അറിയിക്കും. നിങ്ങളുടെ വിശകലനങ്ങൾ നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ സൂക്ഷിക്കപ്പെടും, വീണ്ടും തുറക്കാൻ തയ്യാറായി.';
+
+  @override
+  String get onboardNext => 'അടുത്തത്';
+
+  @override
+  String get onboardStart => 'ആരംഭിക്കൂ';
+
+  @override
+  String get onboardSkip => 'ഒഴിവാക്കൂ';
 }

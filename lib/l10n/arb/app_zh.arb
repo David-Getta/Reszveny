@@ -408,5 +408,14 @@
   "referralErrOwn": "不能兑换自己的邀请码。",
   "referralErrAlready": "你已经兑换过好友的邀请码。",
   "referralShareText": "我在用 WhatStock 分析股票：给股票拍张照，AI 就会为你讲解。使用我的邀请码 {code}，即可获得 {count, plural, =1{1 次额外分析} other{{count} 次额外分析}}。",
-  "referralCopied": "邀请码已复制"
+  "referralCopied": "邀请码已复制",
+  "onboardTitle1": "拍下一只股票",
+  "onboardBody1": "券商应用界面、报纸或公司标志都可以：WhatStock 会识别出股票，并显示它的价格、走势图和关键指标。",
+  "onboardTitle2": "几分钟就能看懂",
+  "onboardBody2": "AI 分析会解释股价的驱动因素、风险、估值，以及股价未来走向的三种情景——附有信息来源，并使用你的语言。",
+  "onboardTitle3": "动态尽在掌握",
+  "onboardBody3": "收藏、投资组合和价格提醒让你随时掌握最新动态。你的分析保存在设备上，随时可以重新打开。",
+  "onboardNext": "下一步",
+  "onboardStart": "开始使用",
+  "onboardSkip": "跳过"
 }

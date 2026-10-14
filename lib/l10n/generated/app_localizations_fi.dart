@@ -1501,4 +1501,34 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koodi kopioitu';
+
+  @override
+  String get onboardTitle1 => 'Kuvaa osake';
+
+  @override
+  String get onboardBody1 =>
+      'Välittäjäsovelluksen näkymä, sanomalehti tai yhtiön logo riittää: WhatStock tunnistaa osakkeen ja näyttää sen kurssin, kaavion ja tärkeimmät tunnusluvut.';
+
+  @override
+  String get onboardTitle2 => 'Ymmärrä se minuuteissa';
+
+  @override
+  String get onboardBody2 =>
+      'Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme skenaariota siitä, mihin kurssi voi kehittyä – lähteineen ja omalla kielelläsi.';
+
+  @override
+  String get onboardTitle3 => 'Pysy ajan tasalla';
+
+  @override
+  String get onboardBody3 =>
+      'Suosikit, salkkusi ja kurssihälytykset pitävät sinut ajan tasalla. Analyysisi pysyvät laitteellasi valmiina avattaviksi uudelleen.';
+
+  @override
+  String get onboardNext => 'Seuraava';
+
+  @override
+  String get onboardStart => 'Aloitetaan';
+
+  @override
+  String get onboardSkip => 'Ohita';
 }

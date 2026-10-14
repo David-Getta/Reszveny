@@ -408,5 +408,14 @@
   "referralErrOwn": "Tu nikarî koda xwe bi kar bînî.",
   "referralErrAlready": "Te berê koda hevalekî bi kar aniye.",
   "referralShareText": "Ez bi WhatStockê pişkan analîz dikim: wêneyê pişkê bikişîne û AI wê rave dike. Bi koda min {code} tu {count, plural, =1{1 analîza zêde} other{{count} analîzên zêde}} distînî.",
-  "referralCopied": "Kod hat kopîkirin"
+  "referralCopied": "Kod hat kopîkirin",
+  "onboardTitle1": "Wêneyê pişkekê bikişîne",
+  "onboardBody1": "Ekrana sepana brokerê, rojnameyek an logoya şirketekê bes e: WhatStock pişkê nas dike û bihayê wê, grafîka wê û hejmarên wê yên sereke nîşan dide.",
+  "onboardTitle2": "Di çend deqeyan de fêm bike",
+  "onboardBody2": "Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyan pêşkêş dike ka biha dikare ber bi ku ve biçe, bi çavkaniyan û bi zimanê te.",
+  "onboardTitle3": "Her tim agahdar be",
+  "onboardBody3": "Bijare, portfolyoya te û hişyariyên bihayê te agahdar dihêlin. Analîzên te li ser cîhaza te dimînin, amade ne ku dîsa werin vekirin.",
+  "onboardNext": "Pêşve",
+  "onboardStart": "Dest pê bike",
+  "onboardSkip": "Derbas bike"
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Ma isticmaali kartid koodhkaaga.",
   "referralErrAlready": "Horay ayaad u isticmaashay koodhka saaxiib.",
   "referralShareText": "Saamiyada waxaan ku falanqeeyaa WhatStock: sawir saami, AI-guna wuu kuu sharxayaa. Koodhkayga {code} waxaad ku helaysaa {count, plural, =1{1 falanqayn oo dheeraad ah} other{{count} falanqayn oo dheeraad ah}}.",
-  "referralCopied": "Koodhka waa la koobiyeeyay"
+  "referralCopied": "Koodhka waa la koobiyeeyay",
+  "onboardTitle1": "Sawir saami",
+  "onboardBody1": "Shaashadda app-ka dillaalka, wargeys ama astaanta shirkad ayaa ku filan: WhatStock wuxuu aqoonsadaa saamiga wuxuuna ku tusaa qiimihiisa, jaantuskiisa iyo tirooyinka muhiimka ah.",
+  "onboardTitle2": "Ku fahan daqiiqado gudahood",
+  "onboardBody2": "Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo ku saabsan halka uu qiimuhu u socon karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.",
+  "onboardTitle3": "La soco wax walba",
+  "onboardBody3": "Kuwa la jecel yahay, portfoliyahaaga iyo digniinaha qiimaha ayaa kuu sheegaya wixii dhaca. Falanqaynahaagu waxay ku keydsan yihiin qalabkaaga, diyaarna u ah in mar kale la furo.",
+  "onboardNext": "Xiga",
+  "onboardStart": "Bilow",
+  "onboardSkip": "Ka bood"
 }

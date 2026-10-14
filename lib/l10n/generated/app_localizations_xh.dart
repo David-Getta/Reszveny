@@ -1506,4 +1506,34 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get referralCopied => 'Ikhowudi ikhutshelwe';
+
+  @override
+  String get onboardTitle1 => 'Thatha ifoto yesabelo';
+
+  @override
+  String get onboardBody1 =>
+      'Isikrini se-app ye-broker, iphephandaba okanye ilogo yenkampani zanele: I-WhatStock iyasiqonda isabelo ize ikubonise ixabiso laso, itshathi namanani abalulekileyo.';
+
+  @override
+  String get onboardTitle2 => 'Siqonde ngemizuzu embalwa';
+
+  @override
+  String get onboardBody2 =>
+      'Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu zokuba ixabiso lingaya phi – kunye nemithombo nangolwimi lwakho.';
+
+  @override
+  String get onboardTitle3 => 'Hlala unolwazi';
+
+  @override
+  String get onboardBody3 =>
+      'Ezithandwayo, ipotifoliyo yakho nezilumkiso zamaxabiso zikwazisa ngokwenzekayo. Uhlalutyo lwakho luhlala kwisixhobo sakho, lulungele ukuvulwa kwakhona.';
+
+  @override
+  String get onboardNext => 'Okulandelayo';
+
+  @override
+  String get onboardStart => 'Qalisa';
+
+  @override
+  String get onboardSkip => 'Tsiba';
 }

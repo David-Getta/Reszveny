@@ -1506,4 +1506,34 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode yakopowe';
+
+  @override
+  String get onboardTitle1 => 'Fata ifoto y\'umugabane';
+
+  @override
+  String get onboardBody1 =>
+      'Ekarani ya porogaramu y\'umuhuza, ikinyamakuru cyangwa ikirango cy\'ikigo birahagije: WhatStock imenya umugabane ikakwereka igiciro cyawo, igishushanyo n\'imibare y\'ingenzi.';
+
+  @override
+  String get onboardTitle2 => 'Byumve mu minota mike';
+
+  @override
+  String get onboardBody2 =>
+      'Isesengura rya AI risobanura ibituma umugabane uhinduka, ibyago, agaciro kawo n\'ibishoboka bitatu ku cyerekezo igiciro gishobora gufata – hamwe n\'aho amakuru aturuka no mu rurimi rwawe.';
+
+  @override
+  String get onboardTitle3 => 'Ntucikwe n\'amakuru';
+
+  @override
+  String get onboardBody3 =>
+      'Ibyo ukunda, ishoramari ryawe n\'imenyesha ry\'ibiciro bikugezaho amakuru. Isesengura ryawe riguma ku gikoresho cyawe, ryiteguye kongera gufungurwa.';
+
+  @override
+  String get onboardNext => 'Ibikurikira';
+
+  @override
+  String get onboardStart => 'Tangira';
+
+  @override
+  String get onboardSkip => 'Simbuka';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "O ka se šomiše khoutu ya gago.",
   "referralErrAlready": "O šetše o šomišitše khoutu ya mogwera.",
   "referralShareText": "Ke sekaseka dišere ka WhatStock: tšea seswantšho sa šere gomme AI e a e hlaloša. Ka khoutu ya ka {code} o hwetša {count, plural, =1{tshekatsheko e 1 ya tlaleletšo} other{ditshekatsheko tše {count} tša tlaleletšo}}.",
-  "referralCopied": "Khoutu e kopilwe"
+  "referralCopied": "Khoutu e kopilwe",
+  "onboardTitle1": "Tšea seswantšho sa šere",
+  "onboardBody1": "Sekirini sa app ya borokara, kuranta goba logo ya khamphani di lekane: WhatStock e lemoga šere gomme e go bontšha theko ya yona, tšhate le dipalo tše bohlokwa.",
+  "onboardTitle2": "E kwešiše ka metsotso e se mekae",
+  "onboardBody2": "Tshekatsheko ya AI e hlaloša seo se šuthišago šere, dikotsi, boleng bja yona le maemo a mararo a gore theko e ka ya kae – ka methopo le ka polelo ya gago.",
+  "onboardTitle3": "Dula o tseba tšohle",
+  "onboardBody3": "Tše di ratwago, photefolio ya gago le ditemošo tša theko di go tsebiša ka mehla. Ditshekatsheko tša gago di dula sedirišweng sa gago, di loketše go bulwa gape.",
+  "onboardNext": "Latela",
+  "onboardStart": "Thoma",
+  "onboardSkip": "Tlola"
 }

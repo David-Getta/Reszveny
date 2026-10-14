@@ -408,5 +408,14 @@
   "referralErrOwn": "Negalite panaudoti savo kodo.",
   "referralErrAlready": "Jau panaudojote draugo kodą.",
   "referralShareText": "Akcijas analizuoju su WhatStock: nufotografuoji akciją, o DI ją paaiškina. Su mano kodu {code} gausi {count, plural, one{{count} papildomą analizę} few{{count} papildomas analizes} many{{count} papildomos analizės} other{{count} papildomų analizių}}.",
-  "referralCopied": "Kodas nukopijuotas"
+  "referralCopied": "Kodas nukopijuotas",
+  "onboardTitle1": "Nufotografuokite akciją",
+  "onboardBody1": "Pakanka brokerio programėlės ekrano, laikraščio ar įmonės logotipo: WhatStock atpažįsta akciją ir parodo jos kainą, grafiką bei pagrindinius rodiklius.",
+  "onboardTitle2": "Supraskite per kelias minutes",
+  "onboardBody2": "DI analizė paaiškina, kas lemia akcijos judėjimą, kokios yra rizikos, koks jos vertinimas, ir pateikia tris scenarijus, kur gali pajudėti kaina, – su šaltiniais ir jūsų kalba.",
+  "onboardTitle3": "Visada būkite informuoti",
+  "onboardBody3": "Mėgstamiausi, jūsų portfelis ir kainos įspėjimai nuolat jus informuos. Jūsų analizės lieka jūsų įrenginyje – paruoštos vėl atverti.",
+  "onboardNext": "Toliau",
+  "onboardStart": "Pradėti",
+  "onboardSkip": "Praleisti"
 }

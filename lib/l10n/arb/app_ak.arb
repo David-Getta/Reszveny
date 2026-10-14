@@ -408,5 +408,14 @@
   "referralErrOwn": "Wuntumi mfa wo ankasa wo code nni dwuma.",
   "referralErrAlready": "Wode wo damfo bi code adi dwuma dedaw.",
   "referralShareText": "Mede WhatStock hwehwɛ kyɛfa mu: twa kyɛfa bi mfonini na AI no bɛkyerɛkyerɛ mu. Wode me code {code} bɛnya {count, plural, =1{nhwehwɛmu 1 a ɛka ho} other{nhwehwɛmu {count} a ɛka ho}}.",
-  "referralCopied": "Wɔakɔpi code no"
+  "referralCopied": "Wɔakɔpi code no",
+  "onboardTitle1": "Twa kyɛfa bi mfonini",
+  "onboardBody1": "Broker app bi skrin, atesɛm krataa anaa adwumakuw bi agyiraehyɛde ara bɛyɛ: WhatStock behu kyɛfa no na akyerɛ ne bo, ne nsesae mfonini ne ne nkontabuo titiriw.",
+  "onboardTitle2": "Te ase wɔ simma kakra mu",
+  "onboardBody2": "AI nhwehwɛmu no kyerɛkyerɛ nea ɛma kyɛfa no bo kɔ soro anaa fam, ne asiane ahorow, ne bo ankasa, ne kwan abiɛsa a ne bo betumi afa so – ne fibea ahorow ka ho, na ɛwɔ wo kasa mu.",
+  "onboardTitle3": "Nya nsɛm no daa",
+  "onboardBody3": "Nea mepɛ, wo nkyɛfa ne bo ho kɔkɔbɔ ma wuhu nea ɛrekɔ so. Wo nhwehwɛmu ahorow tena wo fon so, na wubetumi abue bio bere biara.",
+  "onboardNext": "Toa so",
+  "onboardStart": "Fi ase",
+  "onboardSkip": "Twa mu"
 }

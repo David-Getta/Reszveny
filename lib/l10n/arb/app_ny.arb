@@ -408,5 +408,14 @@
   "referralErrOwn": "Simungagwiritse ntchito khodi yanu.",
   "referralErrAlready": "Munagwiritsa kale ntchito khodi ya mnzanu.",
   "referralShareText": "Ndimasanthula masheya ndi WhatStock: jambulani sheya ndipo AI imafotokoza. Ndi khodi yanga {code} mumalandira {count, plural, =1{kusanthula kowonjezera 1} other{kusanthula kowonjezera {count}}}.",
-  "referralCopied": "Khodi yakopedwa"
+  "referralCopied": "Khodi yakopedwa",
+  "onboardTitle1": "Jambulani sheya",
+  "onboardBody1": "Chophimba cha pulogalamu ya broker, nyuzipepala kapena chizindikiro cha kampani ndi zokwanira: WhatStock imazindikira sheyayo ndipo imakuwonetsani mtengo wake, tchati ndi ziwerengero zofunika.",
+  "onboardTitle2": "Mvetsetsani mu mphindi zochepa",
+  "onboardBody2": "Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu za komwe mtengo ungapite – ndi magwero komanso m'chilankhulo chanu.",
+  "onboardTitle3": "Khalani odziwa nthawi zonse",
+  "onboardBody3": "Zokondedwa, masheya anu ndi zidziwitso za mtengo zimakudziwitsani nthawi zonse. Zosanthula zanu zimakhala pa chipangizo chanu, zokonzeka kutsegulidwanso.",
+  "onboardNext": "Patsogolo",
+  "onboardStart": "Tiyeni tiyambe",
+  "onboardSkip": "Dumphani"
 }

@@ -1475,4 +1475,34 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get referralCopied => 'ኮዱ ተቀድቷል';
+
+  @override
+  String get onboardTitle1 => 'አክሲዮንን ፎቶ ያንሱ';
+
+  @override
+  String get onboardBody1 =>
+      'የደላላ መተግበሪያ ማያ ገጽ፣ ጋዜጣ ወይም የኩባንያ አርማ በቂ ነው፤ WhatStock አክሲዮኑን ለይቶ ዋጋውን፣ ገበታውንና ዋና ዋና አሃዞቹን ያሳያል።';
+
+  @override
+  String get onboardTitle2 => 'በደቂቃዎች ውስጥ ይረዱት';
+
+  @override
+  String get onboardBody2 =>
+      'የAI ትንተናው አክሲዮኑን የሚያንቀሳቅሰውን፣ ስጋቶቹን፣ ግምታዊ ዋጋውንና ዋጋው ወዴት ሊሄድ እንደሚችል ሦስት ሁኔታዎችን ያብራራል – ከምንጮች ጋር፣ በእርስዎ ቋንቋ።';
+
+  @override
+  String get onboardTitle3 => 'ሁልጊዜ መረጃ ይኑርዎት';
+
+  @override
+  String get onboardBody3 =>
+      'ተወዳጆች፣ ፖርትፎሊዮዎና የዋጋ ማንቂያዎች ያሳውቁዎታል። ትንተናዎችዎ በመሣሪያዎ ላይ ይቀመጣሉ፤ በማንኛውም ጊዜ እንደገና ሊከፍቷቸው ይችላሉ።';
+
+  @override
+  String get onboardNext => 'ቀጣይ';
+
+  @override
+  String get onboardStart => 'እንጀምር';
+
+  @override
+  String get onboardSkip => 'ዝለል';
 }

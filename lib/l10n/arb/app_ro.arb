@@ -408,5 +408,14 @@
   "referralErrOwn": "Nu îți poți folosi propriul cod.",
   "referralErrAlready": "Ai folosit deja codul unui prieten.",
   "referralShareText": "Analizez acțiuni cu WhatStock: fotografiezi o acțiune și AI-ul ți-o explică. Cu codul meu {code} primești {count, plural, one{{count} analiză suplimentară} few{{count} analize suplimentare} other{{count} de analize suplimentare}}.",
-  "referralCopied": "Cod copiat"
+  "referralCopied": "Cod copiat",
+  "onboardTitle1": "Fotografiază o acțiune",
+  "onboardBody1": "Ajunge un ecran de broker, un ziar sau un logo de companie: WhatStock recunoaște acțiunea și îți arată prețul, graficul și cifrele-cheie.",
+  "onboardTitle2": "Înțelege totul în câteva minute",
+  "onboardBody2": "Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii despre direcția în care ar putea merge prețul, cu surse și în limba ta.",
+  "onboardTitle3": "Rămâi mereu la curent",
+  "onboardBody3": "Favoritele, portofoliul tău și alertele de preț te țin la curent. Analizele tale rămân pe dispozitivul tău, gata să fie redeschise.",
+  "onboardNext": "Înainte",
+  "onboardStart": "Să începem",
+  "onboardSkip": "Omite"
 }

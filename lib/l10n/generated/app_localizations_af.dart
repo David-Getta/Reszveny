@@ -1502,4 +1502,34 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode gekopieer';
+
+  @override
+  String get onboardTitle1 => 'Neem ’n foto van ’n aandeel';
+
+  @override
+  String get onboardBody1 =>
+      '’n Makelaarsapp se skerm, ’n koerant of ’n maatskappylogo is genoeg: WhatStock herken die aandeel en wys die prys, grafiek en kernsyfers.';
+
+  @override
+  String get onboardTitle2 => 'Verstaan dit binne minute';
+
+  @override
+  String get onboardBody2 =>
+      'Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie scenario’s vir waarheen die prys kan gaan – met bronne en in jou taal.';
+
+  @override
+  String get onboardTitle3 => 'Bly op hoogte';
+
+  @override
+  String get onboardBody3 =>
+      'Gunstelinge, jou portefeulje en pryswaarskuwings hou jou op hoogte. Jou ontledings bly op jou toestel, gereed om weer oop te maak.';
+
+  @override
+  String get onboardNext => 'Volgende';
+
+  @override
+  String get onboardStart => 'Begin';
+
+  @override
+  String get onboardSkip => 'Slaan oor';
 }

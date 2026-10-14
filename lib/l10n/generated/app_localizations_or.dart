@@ -1497,4 +1497,34 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get referralCopied => 'କୋଡ କପି ହେଲା';
+
+  @override
+  String get onboardTitle1 => 'ଗୋଟିଏ ସେୟାରର ଫଟୋ ଉଠାନ୍ତୁ';
+
+  @override
+  String get onboardBody1 =>
+      'ଏକ ବ୍ରୋକରେଜ୍ ଆପ୍‌ର ସ୍କ୍ରିନ୍, ଖବରକାଗଜ କିମ୍ବା କମ୍ପାନୀ ଲୋଗୋ ଯଥେଷ୍ଟ: WhatStock ସେୟାରଟିକୁ ଚିହ୍ନିଥାଏ ଏବଂ ଏହାର ଦର, ଚାର୍ଟ ଓ ମୁଖ୍ୟ ତଥ୍ୟ ଦେଖାଏ।';
+
+  @override
+  String get onboardTitle2 => 'କିଛି ମିନିଟରେ ବୁଝନ୍ତୁ';
+
+  @override
+  String get onboardBody2 =>
+      'AI ବିଶ୍ଳେଷଣ ବୁଝାଏ ଯେ ସେୟାରକୁ କ\'ଣ ଚଳାଉଛି, ଏହାର ବିପଦ, ମୂଲ୍ୟାୟନ ଏବଂ ଦର କେଉଁ ଆଡ଼କୁ ଯାଇପାରେ ତାହାର ତିନୋଟି ସମ୍ଭାବ୍ୟ ଦୃଶ୍ୟ – ଉତ୍ସ ସହିତ ଏବଂ ଆପଣଙ୍କ ଭାଷାରେ।';
+
+  @override
+  String get onboardTitle3 => 'ସବୁବେଳେ ଅପଡେଟ୍ ରୁହନ୍ତୁ';
+
+  @override
+  String get onboardBody3 =>
+      'ପସନ୍ଦ, ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ଏବଂ ଦର ଆଲର୍ଟ ଆପଣଙ୍କୁ ଖବର ଦେଇଥାଏ। ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ଆପଣଙ୍କ ଡିଭାଇସରେ ରହେ, ପୁଣି ଖୋଲିବା ପାଇଁ ପ୍ରସ୍ତୁତ।';
+
+  @override
+  String get onboardNext => 'ପରବର୍ତ୍ତୀ';
+
+  @override
+  String get onboardStart => 'ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get onboardSkip => 'ଛାଡ଼ନ୍ତୁ';
 }

@@ -1504,4 +1504,34 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koodiin garagalfameera';
+
+  @override
+  String get onboardTitle1 => 'Suuraa aksiyoonaa kaasi';
+
+  @override
+  String get onboardBody1 =>
+      'Iskiriiniin appii daldalaa, gaazexaan ykn mallattoon dhaabbataa gahaadha: WhatStock aksiyoona sana adda baasee gatii, chaartii fi lakkoofsota ijoo isaa siif agarsiisa.';
+
+  @override
+  String get onboardTitle2 => 'Daqiiqaa muraasatti hubadhu';
+
+  @override
+  String get onboardBody2 =>
+      'Xiinxalli AI waan aksiyoona sochoosu, balaawwan, gatii isaa sirrii fi haala sadii gatiin itti deemuu danda\'u maddaa wajjin afaan keetiin siif ibsa.';
+
+  @override
+  String get onboardTitle3 => 'Yeroo hunda odeeffannoo qabaadhu';
+
+  @override
+  String get onboardBody3 =>
+      'Filatamoon, poortfooliyoon kee fi akeekkachiisni gatii odeeffannoo siif kennu. Xiinxalli kee meeshaa kee irratti hafa, irra deebitee banuuf qophaa\'aadha.';
+
+  @override
+  String get onboardNext => 'Itti aanu';
+
+  @override
+  String get onboardStart => 'Jalqabi';
+
+  @override
+  String get onboardSkip => 'Darbi';
 }

@@ -1499,4 +1499,34 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get referralCopied => 'کوڈ کاپی ہو گیا';
+
+  @override
+  String get onboardTitle1 => 'کسی شیئر کی تصویر لیں';
+
+  @override
+  String get onboardBody1 =>
+      'بروکریج ایپ کی اسکرین، اخبار یا کسی کمپنی کا لوگو کافی ہے: WhatStock شیئر کو پہچان کر اس کی قیمت، چارٹ اور اہم اعداد و شمار دکھاتا ہے۔';
+
+  @override
+  String get onboardTitle2 => 'منٹوں میں سمجھیں';
+
+  @override
+  String get onboardBody2 =>
+      'AI تجزیہ بتاتا ہے کہ شیئر کو کیا چیز حرکت دیتی ہے، اس کے خطرات کیا ہیں، اس کی قدر کتنی ہے اور قیمت کس طرف جا سکتی ہے اس کے تین منظرنامے – ذرائع کے ساتھ اور آپ کی اپنی زبان میں۔';
+
+  @override
+  String get onboardTitle3 => 'ہر بات سے باخبر رہیں';
+
+  @override
+  String get onboardBody3 =>
+      'پسندیدہ، آپ کا پورٹ فولیو اور قیمت کے الرٹس آپ کو باخبر رکھتے ہیں۔ آپ کے تجزیے آپ کے آلے پر محفوظ رہتے ہیں اور کسی بھی وقت دوبارہ کھولے جا سکتے ہیں۔';
+
+  @override
+  String get onboardNext => 'اگلا';
+
+  @override
+  String get onboardStart => 'شروع کریں';
+
+  @override
+  String get onboardSkip => 'چھوڑیں';
 }

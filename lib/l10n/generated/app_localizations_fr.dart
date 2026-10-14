@@ -1507,4 +1507,34 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code copié';
+
+  @override
+  String get onboardTitle1 => 'Photographiez une action';
+
+  @override
+  String get onboardBody1 =>
+      'Un écran d’application de courtage, un journal ou un logo d’entreprise suffit : WhatStock reconnaît l’action et affiche son cours, son graphique et ses chiffres clés.';
+
+  @override
+  String get onboardTitle2 => 'Comprenez-la en quelques minutes';
+
+  @override
+  String get onboardBody2 =>
+      'L’analyse IA vous explique ce qui fait bouger l’action, ses risques, sa valorisation et trois scénarios sur l’évolution possible de son cours, avec les sources et dans votre langue.';
+
+  @override
+  String get onboardTitle3 => 'Restez toujours informé';
+
+  @override
+  String get onboardBody3 =>
+      'Vos favoris, votre portefeuille et vos alertes de cours vous tiennent informé. Vos analyses restent sur votre appareil, prêtes à être rouvertes.';
+
+  @override
+  String get onboardNext => 'Suivant';
+
+  @override
+  String get onboardStart => 'Commencer';
+
+  @override
+  String get onboardSkip => 'Passer';
 }

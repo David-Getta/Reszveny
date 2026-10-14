@@ -1518,4 +1518,34 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get referralCopied => 'Кодот е копиран';
+
+  @override
+  String get onboardTitle1 => 'Фотографирајте акција';
+
+  @override
+  String get onboardBody1 =>
+      'Доволен е екран од брокерска апликација, весник или лого на компанија: WhatStock ја препознава акцијата и ви ги покажува цената, графиконот и клучните бројки.';
+
+  @override
+  String get onboardTitle2 => 'Разберете ја за неколку минути';
+
+  @override
+  String get onboardBody2 =>
+      'AI-анализата објаснува што ја движи акцијата, кои се ризиците, какво е вреднувањето и дава три сценарија каде може да оди цената – со извори и на вашиот јазик.';
+
+  @override
+  String get onboardTitle3 => 'Бидете секогаш во тек';
+
+  @override
+  String get onboardBody3 =>
+      'Омилените, вашето портфолио и ценовните известувања ве држат во тек. Вашите анализи остануваат на вашиот уред, подготвени повторно да ги отворите.';
+
+  @override
+  String get onboardNext => 'Следно';
+
+  @override
+  String get onboardStart => 'Започнете';
+
+  @override
+  String get onboardSkip => 'Прескокни';
 }

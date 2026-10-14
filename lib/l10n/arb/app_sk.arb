@@ -408,5 +408,14 @@
   "referralErrOwn": "Nemôžeš uplatniť vlastný kód.",
   "referralErrAlready": "Na tomto účte už bol uplatnený kód od priateľa.",
   "referralShareText": "Analyzujem akcie vo WhatStock: odfoť akciu a AI ti ju vysvetlí. S mojím kódom {code} dostaneš {count, plural, =1{1 analýzu navyše} few{{count} analýzy navyše} many{{count} analýzy navyše} other{{count} analýz navyše}}.",
-  "referralCopied": "Kód skopírovaný"
+  "referralCopied": "Kód skopírovaný",
+  "onboardTitle1": "Odfoťte akciu",
+  "onboardBody1": "Stačí obrazovka brokerskej aplikácie, noviny alebo logo firmy: WhatStock rozpozná akciu a ukáže vám jej cenu, graf a kľúčové ukazovatele.",
+  "onboardTitle2": "Pochopte ju za pár minút",
+  "onboardBody2": "AI analýza vysvetľuje, čo hýbe akciou, aké sú riziká a ocenenie, a ponúka tri scenáre, kam sa môže cena pohnúť – so zdrojmi a vo vašom jazyku.",
+  "onboardTitle3": "Buďte stále v obraze",
+  "onboardBody3": "Obľúbené, vaše portfólio a cenové upozornenia vás držia v obraze. Vaše analýzy zostávajú vo vašom zariadení, pripravené na opätovné otvorenie.",
+  "onboardNext": "Ďalej",
+  "onboardStart": "Začať",
+  "onboardSkip": "Preskočiť"
 }

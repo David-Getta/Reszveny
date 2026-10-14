@@ -408,5 +408,14 @@
   "referralErrOwn": "Nuk mund të aktivizosh kodin tënd.",
   "referralErrAlready": "Ke aktivizuar tashmë kodin e një miku.",
   "referralShareText": "Analizoj aksione me WhatStock: fotografo një aksion dhe AI ta shpjegon. Me kodin tim {code} merr {count, plural, =1{1 analizë shtesë} other{{count} analiza shtesë}}.",
-  "referralCopied": "Kodi u kopjua"
+  "referralCopied": "Kodi u kopjua",
+  "onboardTitle1": "Fotografoni një aksion",
+  "onboardBody1": "Mjafton ekrani i një aplikacioni brokerimi, një gazetë ose logoja e një kompanie: WhatStock e njeh aksionin dhe ju tregon çmimin, grafikun dhe shifrat kryesore.",
+  "onboardTitle2": "Kuptojeni në pak minuta",
+  "onboardBody2": "Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë se ku mund të shkojë çmimi – me burime dhe në gjuhën tuaj.",
+  "onboardTitle3": "Jini gjithmonë në dijeni",
+  "onboardBody3": "Të preferuarat, portofoli juaj dhe alarmet e çmimit ju mbajnë të informuar. Analizat tuaja mbeten në pajisjen tuaj, gati për t’u rihapur.",
+  "onboardNext": "Tjetër",
+  "onboardStart": "Fillo",
+  "onboardSkip": "Kapërce"
 }

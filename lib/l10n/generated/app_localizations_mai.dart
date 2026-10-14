@@ -1495,4 +1495,34 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get referralCopied => 'कोड कॉपी भेल';
+
+  @override
+  String get onboardTitle1 => 'कोनो शेयरक फोटो खीचू';
+
+  @override
+  String get onboardBody1 =>
+      'ब्रोकरेज ऐपक स्क्रीन, अखबार वा कंपनीक लोगो पर्याप्त अछि: WhatStock शेयरकेँ चिन्हि लैत अछि आ ओकर दाम, चार्ट आ मुख्य आँकड़ा देखबैत अछि।';
+
+  @override
+  String get onboardTitle2 => 'किछु मिनटमे बुझि लिअ';
+
+  @override
+  String get onboardBody2 =>
+      'AI विश्लेषण बतबैत अछि जे शेयरकेँ की चलबैत अछि, एकर जोखिम, मूल्यांकन, आ दाम कोन दिस जा सकैत अछि ताहि पर तीन परिदृश्य – स्रोतक संग आ अहाँक भाषामे।';
+
+  @override
+  String get onboardTitle3 => 'सदिखन अपडेट रहू';
+
+  @override
+  String get onboardBody3 =>
+      'पसंदीदा, अहाँक पोर्टफ़ोलियो आ दाम अलर्ट अहाँकेँ खबरि दैत रहत। अहाँक विश्लेषण अहाँक डिवाइस पर रहैत अछि, जखन चाही फेरसँ खोलि सकैत छी।';
+
+  @override
+  String get onboardNext => 'आगाँ';
+
+  @override
+  String get onboardStart => 'शुरू करू';
+
+  @override
+  String get onboardSkip => 'छोड़ू';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Je kunt je eigen code niet inwisselen.",
   "referralErrAlready": "Je hebt al een code van een vriend ingewisseld.",
   "referralShareText": "Ik analyseer aandelen met WhatStock: maak een foto van een aandeel en de AI legt het uit. Met mijn code {code} krijg je {count, plural, =1{1 extra analyse} other{{count} extra analyses}}.",
-  "referralCopied": "Code gekopieerd"
+  "referralCopied": "Code gekopieerd",
+  "onboardTitle1": "Fotografeer een aandeel",
+  "onboardBody1": "Een brokerscherm, een krant of een bedrijfslogo is genoeg: WhatStock herkent het aandeel en toont de koers, de grafiek en de belangrijkste cijfers.",
+  "onboardTitle2": "In een paar minuten helder",
+  "onboardBody2": "De AI-analyse legt uit wat het aandeel beweegt, wat de risico's zijn en hoe het gewaardeerd is, en schetst drie scenario's voor waar de koers heen kan – met bronnen en in jouw taal.",
+  "onboardTitle3": "Blijf altijd op de hoogte",
+  "onboardBody3": "Favorieten, je portefeuille en koersalerts houden je op de hoogte. Je analyses blijven op je apparaat, klaar om opnieuw te openen.",
+  "onboardNext": "Volgende",
+  "onboardStart": "Aan de slag",
+  "onboardSkip": "Overslaan"
 }

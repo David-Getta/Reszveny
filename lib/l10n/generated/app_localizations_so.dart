@@ -1505,4 +1505,34 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koodhka waa la koobiyeeyay';
+
+  @override
+  String get onboardTitle1 => 'Sawir saami';
+
+  @override
+  String get onboardBody1 =>
+      'Shaashadda app-ka dillaalka, wargeys ama astaanta shirkad ayaa ku filan: WhatStock wuxuu aqoonsadaa saamiga wuxuuna ku tusaa qiimihiisa, jaantuskiisa iyo tirooyinka muhiimka ah.';
+
+  @override
+  String get onboardTitle2 => 'Ku fahan daqiiqado gudahood';
+
+  @override
+  String get onboardBody2 =>
+      'Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo ku saabsan halka uu qiimuhu u socon karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.';
+
+  @override
+  String get onboardTitle3 => 'La soco wax walba';
+
+  @override
+  String get onboardBody3 =>
+      'Kuwa la jecel yahay, portfoliyahaaga iyo digniinaha qiimaha ayaa kuu sheegaya wixii dhaca. Falanqaynahaagu waxay ku keydsan yihiin qalabkaaga, diyaarna u ah in mar kale la furo.';
+
+  @override
+  String get onboardNext => 'Xiga';
+
+  @override
+  String get onboardStart => 'Bilow';
+
+  @override
+  String get onboardSkip => 'Ka bood';
 }

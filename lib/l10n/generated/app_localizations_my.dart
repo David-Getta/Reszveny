@@ -1495,4 +1495,34 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get referralCopied => 'ကုဒ် ကူးယူပြီးပါပြီ';
+
+  @override
+  String get onboardTitle1 => 'ရှယ်ယာကို ဓာတ်ပုံရိုက်ပါ';
+
+  @override
+  String get onboardBody1 =>
+      'ပွဲစားအက်ပ်မျက်နှာပြင်၊ သတင်းစာ သို့မဟုတ် ကုမ္ပဏီလိုဂို တစ်ခုခုရှိရုံဖြင့် လုံလောက်ပါသည် – WhatStock က ရှယ်ယာကို မှတ်သိပြီး ၎င်း၏ ဈေးနှုန်း၊ ဇယားနှင့် အဓိကကိန်းဂဏန်းများကို ပြသပေးပါသည်။';
+
+  @override
+  String get onboardTitle2 => 'မိနစ်ပိုင်းအတွင်း နားလည်လိုက်ပါ';
+
+  @override
+  String get onboardBody2 =>
+      'AI သုံးသပ်ချက်က ရှယ်ယာကို ဘာက လှုပ်ရှားစေသည်၊ အန္တရာယ်များ၊ တန်ဖိုးဖြတ်ချက်နှင့် ဈေးနှုန်း ဘယ်ဘက်သို့ ဦးတည်နိုင်သည်ကို ဖြစ်နိုင်ခြေ သုံးမျိုးဖြင့် ရှင်းပြပေးပါသည် – ရင်းမြစ်များနှင့်တကွ သင့်ဘာသာစကားဖြင့်။';
+
+  @override
+  String get onboardTitle3 => 'အမြဲ သတင်းမှီနေပါ';
+
+  @override
+  String get onboardBody3 =>
+      'အကြိုက်ဆုံးများ၊ သင့်ပေါ့ဖိုလီယိုနှင့် ဈေးနှုန်း သတိပေးချက်များက သင့်ကို အမြဲ အသိပေးထားပါမည်။ သင့်သုံးသပ်ချက်များကို သင့်စက်ပေါ်တွင် သိမ်းထားပြီး ပြန်ဖွင့်ရန် အသင့်ဖြစ်နေပါသည်။';
+
+  @override
+  String get onboardNext => 'ရှေ့သို့';
+
+  @override
+  String get onboardStart => 'စတင်မည်';
+
+  @override
+  String get onboardSkip => 'ကျော်မည်';
 }

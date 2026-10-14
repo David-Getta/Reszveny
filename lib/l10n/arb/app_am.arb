@@ -408,5 +408,14 @@
   "referralErrOwn": "የራስዎን ኮድ መጠቀም አይችሉም።",
   "referralErrAlready": "የጓደኛን ኮድ አስቀድመው ተጠቅመዋል።",
   "referralShareText": "አክሲዮኖችን በWhatStock እተነትናለሁ፦ የአክሲዮን ፎቶ ያንሱ፣ AI ያብራራዋል። በኮዴ {code} {count, plural, =1{1 ተጨማሪ ትንተና} other{{count} ተጨማሪ ትንተናዎች}} ያገኛሉ።",
-  "referralCopied": "ኮዱ ተቀድቷል"
+  "referralCopied": "ኮዱ ተቀድቷል",
+  "onboardTitle1": "አክሲዮንን ፎቶ ያንሱ",
+  "onboardBody1": "የደላላ መተግበሪያ ማያ ገጽ፣ ጋዜጣ ወይም የኩባንያ አርማ በቂ ነው፤ WhatStock አክሲዮኑን ለይቶ ዋጋውን፣ ገበታውንና ዋና ዋና አሃዞቹን ያሳያል።",
+  "onboardTitle2": "በደቂቃዎች ውስጥ ይረዱት",
+  "onboardBody2": "የAI ትንተናው አክሲዮኑን የሚያንቀሳቅሰውን፣ ስጋቶቹን፣ ግምታዊ ዋጋውንና ዋጋው ወዴት ሊሄድ እንደሚችል ሦስት ሁኔታዎችን ያብራራል – ከምንጮች ጋር፣ በእርስዎ ቋንቋ።",
+  "onboardTitle3": "ሁልጊዜ መረጃ ይኑርዎት",
+  "onboardBody3": "ተወዳጆች፣ ፖርትፎሊዮዎና የዋጋ ማንቂያዎች ያሳውቁዎታል። ትንተናዎችዎ በመሣሪያዎ ላይ ይቀመጣሉ፤ በማንኛውም ጊዜ እንደገና ሊከፍቷቸው ይችላሉ።",
+  "onboardNext": "ቀጣይ",
+  "onboardStart": "እንጀምር",
+  "onboardSkip": "ዝለል"
 }

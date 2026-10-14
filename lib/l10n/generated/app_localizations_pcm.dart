@@ -1500,4 +1500,34 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code don copy';
+
+  @override
+  String get onboardTitle1 => 'Snap stock picture';
+
+  @override
+  String get onboardBody1 =>
+      'Broker screen, newspaper or company logo don do: WhatStock go sabi di stock and show you im price, chart and di main figures.';
+
+  @override
+  String get onboardTitle2 => 'Understand am for few minutes';
+
+  @override
+  String get onboardBody2 =>
+      'Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three ways wey di price fit go, with sources and for your own language.';
+
+  @override
+  String get onboardTitle3 => 'No miss anything';
+
+  @override
+  String get onboardBody3 =>
+      'Favourites, your portfolio and price alerts go dey tell you wetin dey happen. Your analyses go stay for your device, ready make you open dem again.';
+
+  @override
+  String get onboardNext => 'Next';
+
+  @override
+  String get onboardStart => 'Make we start';
+
+  @override
+  String get onboardSkip => 'Skip am';
 }

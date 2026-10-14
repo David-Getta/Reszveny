@@ -408,5 +408,14 @@
   "referralErrOwn": "Anjeun teu bisa nukeurkeun kode sorangan.",
   "referralErrAlready": "Anjeun geus nukeurkeun kode ti babaturan.",
   "referralShareText": "Kuring nganalisis saham ku WhatStock: poto sahamna, AI ngajelaskeunana. Ku kode kuring {code} anjeun meunang {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
-  "referralCopied": "Kode disalin"
+  "referralCopied": "Kode disalin",
+  "onboardTitle1": "Poto hiji saham",
+  "onboardBody1": "Cukup ku layar aplikasi sekuritas, koran atawa logo pausahaan: WhatStock bakal mikawanoh sahamna sarta mintonkeun hargana, grafikna jeung angka-angka pentingna.",
+  "onboardTitle2": "Paham dina sababaraha menit",
+  "onboardBody2": "Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ka mana hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.",
+  "onboardTitle3": "Tetep apdet terus",
+  "onboardBody3": "Paporit, portofolio anjeun jeung béwara harga bakal terus ngabéjaan anjeun. Analisis anjeun tetep aya dina alat anjeun, siap dibuka deui.",
+  "onboardNext": "Salajengna",
+  "onboardStart": "Mimitian",
+  "onboardSkip": "Liwat"
 }

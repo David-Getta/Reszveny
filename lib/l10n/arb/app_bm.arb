@@ -408,5 +408,14 @@
   "referralErrOwn": "I tɛ se ka i yɛrɛ ka kode labaara.",
   "referralErrAlready": "I ye i teri dɔ ka kode labaara ka ban.",
   "referralShareText": "N bɛ aksiyɔnw sɛgɛsɛgɛ ni WhatStock ye: aksiyɔn dɔ ja ta, AI bɛ a ɲɛfɔ. Ni n ka kode {code} ye, i bɛ {count, plural, =1{sɛgɛsɛgɛli wɛrɛ 1} other{sɛgɛsɛgɛli wɛrɛ {count}}} sɔrɔ.",
-  "referralCopied": "Kode kopiyelen don"
+  "referralCopied": "Kode kopiyelen don",
+  "onboardTitle1": "Aksiyɔn dɔ ja ta",
+  "onboardBody1": "Bɔrisi aplikasiyɔn ka ekaran, gazeti walima sosiyete taamasiyɛn bɛ se: WhatStock bɛ aksiyɔn dɔn ka a sɔngɔ, a grafiki ani a jate nafamaw jira i la.",
+  "onboardTitle2": "A faamu miniti dama kɔnɔ",
+  "onboardBody2": "AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani cogo saba a sɔngɔ bɛ se ka taa cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.",
+  "onboardTitle3": "To kunnafoni na tuma bɛɛ",
+  "onboardBody3": "Diyanyelenw, i ka aksiyɔn kɛsu ani sɔngɔ lasɔminiw bɛ i ladɔnniya. I ka sɛgɛsɛgɛliw bɛ to i ka minɛn kan, i bɛ se k’u da wuli tugun waati o waati.",
+  "onboardNext": "Ɲɛfɛ",
+  "onboardStart": "An ka daminɛ",
+  "onboardSkip": "A tɛmɛ"
 }

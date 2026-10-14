@@ -1534,4 +1534,34 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get referralCopied => 'تم نسخ الرمز';
+
+  @override
+  String get onboardTitle1 => 'صوّر سهماً';
+
+  @override
+  String get onboardBody1 =>
+      'تكفي شاشة تطبيق وساطة أو صحيفة أو شعار شركة: يتعرّف WhatStock على السهم ويعرض سعره ورسمه البياني وأهم أرقامه.';
+
+  @override
+  String get onboardTitle2 => 'افهمه في دقائق';
+
+  @override
+  String get onboardBody2 =>
+      'يشرح لك التحليل بالذكاء الاصطناعي ما يحرّك السهم ومخاطره وتقييمه، وثلاثة سيناريوهات لاتجاه سعره، مع المصادر وبلغتك.';
+
+  @override
+  String get onboardTitle3 => 'ابقَ على اطلاع دائم';
+
+  @override
+  String get onboardBody3 =>
+      'المفضلة ومحفظتك وتنبيهات السعر تبقيك على اطلاع. تبقى تحليلاتك على جهازك، جاهزة لتفتحها من جديد.';
+
+  @override
+  String get onboardNext => 'التالي';
+
+  @override
+  String get onboardStart => 'لنبدأ';
+
+  @override
+  String get onboardSkip => 'تخطٍّ';
 }

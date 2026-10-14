@@ -1498,4 +1498,34 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode kopiyelen don';
+
+  @override
+  String get onboardTitle1 => 'Aksiyɔn dɔ ja ta';
+
+  @override
+  String get onboardBody1 =>
+      'Bɔrisi aplikasiyɔn ka ekaran, gazeti walima sosiyete taamasiyɛn bɛ se: WhatStock bɛ aksiyɔn dɔn ka a sɔngɔ, a grafiki ani a jate nafamaw jira i la.';
+
+  @override
+  String get onboardTitle2 => 'A faamu miniti dama kɔnɔ';
+
+  @override
+  String get onboardBody2 =>
+      'AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani cogo saba a sɔngɔ bɛ se ka taa cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.';
+
+  @override
+  String get onboardTitle3 => 'To kunnafoni na tuma bɛɛ';
+
+  @override
+  String get onboardBody3 =>
+      'Diyanyelenw, i ka aksiyɔn kɛsu ani sɔngɔ lasɔminiw bɛ i ladɔnniya. I ka sɛgɛsɛgɛliw bɛ to i ka minɛn kan, i bɛ se k’u da wuli tugun waati o waati.';
+
+  @override
+  String get onboardNext => 'Ɲɛfɛ';
+
+  @override
+  String get onboardStart => 'An ka daminɛ';
+
+  @override
+  String get onboardSkip => 'A tɛmɛ';
 }

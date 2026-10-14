@@ -408,5 +408,14 @@
   "referralErrOwn": "ናይ ባዕልኻ ኮድ ክትጥቀም ኣይትኽእልን።",
   "referralErrAlready": "ናይ ዓርኪ ኮድ ድሮ ተጠቒምካ ኢኻ።",
   "referralShareText": "ብWhatStock ኣክሲዮናት እተንትን፦ ስእሊ ኣክሲዮን ኣልዕል፣ AI ድማ ይገልጸልካ። ብኮደይ {code} {count, plural, =1{1 ተወሳኺ ትንተና} other{{count} ተወሳኺ ትንተናታት}} ትረክብ።",
-  "referralCopied": "ኮድ ተቐዲሑ"
+  "referralCopied": "ኮድ ተቐዲሑ",
+  "onboardTitle1": "ስእሊ ኣክሲዮን ኣልዕሉ",
+  "onboardBody1": "ስክሪን ናይ ደላላ ኣፕ፣ ጋዜጣ ወይ ኣርማ ትካል ይኣክል፦ WhatStock ነቲ ኣክሲዮን ኣለልዩ ዋጋኡ፣ ቻርቱን ኣገደስቲ ኣሃዛቱን የርእየኩም።",
+  "onboardTitle2": "ኣብ ውሑዳት ደቓይቕ ተረድእዎ",
+  "onboardBody2": "ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ናበይ ክኸይድ ከም ዝኽእል ሰለስተ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።",
+  "onboardTitle3": "ኩሉ ግዜ ሓበሬታ ይሃልወኩም",
+  "onboardBody3": "ዝተፈተዉ፣ ፖርትፎሊዮኹምን መጠንቀቕታታት ዋጋን ወትሩ ሓበሬታ ይህቡኹም። ትንተናታትኩም ኣብ መሳርሒኹም ይጸንሑ፣ እንደገና ንምኽፋት ድሉዋት እዮም።",
+  "onboardNext": "ዝቕጽል",
+  "onboardStart": "ጀምሩ",
+  "onboardSkip": "ሕለፍዎ"
 }

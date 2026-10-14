@@ -1504,4 +1504,34 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code me kopiama';
+
+  @override
+  String get onboardTitle1 => 'Baka foto ya action';
+
+  @override
+  String get onboardBody1 =>
+      'Ekrani ya application ya courtier, zulunalu to logo ya kompani kelele: WhatStock ke zaya action yina ye ke songa nge ntalu ya yau, grafiki ye mintalu ya mfunu.';
+
+  @override
+  String get onboardTitle2 => 'Bakula yau na minuta fioti';
+
+  @override
+  String get onboardBody2 =>
+      'Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya lenda kumina ntalu, ti bisina ya nsangu ye na ndinga na nge.';
+
+  @override
+  String get onboardTitle3 => 'Zaya mambu yonso ntangu yonso';
+
+  @override
+  String get onboardBody3 =>
+      'Bizolwa, portefeuille na nge ye nkebisu za ntalu ke zabisa nge. Ba analyse na nge ke bikala na apparaye na nge, ya kukangula diaka.';
+
+  @override
+  String get onboardNext => 'Ya landa';
+
+  @override
+  String get onboardStart => 'Yantika';
+
+  @override
+  String get onboardSkip => 'Bika';
 }

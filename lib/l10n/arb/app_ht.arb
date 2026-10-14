@@ -408,5 +408,14 @@
   "referralErrOwn": "Ou pa ka itilize pwòp kòd ou.",
   "referralErrAlready": "Ou deja itilize kòd yon zanmi.",
   "referralShareText": "Mwen analize aksyon ak WhatStock: ou pran foto yon aksyon epi AI a eksplike l. Avèk kòd mwen {code} ou resevwa {count, plural, =1{1 analiz anplis} other{{count} analiz anplis}}.",
-  "referralCopied": "Kòd la kopye"
+  "referralCopied": "Kòd la kopye",
+  "onboardTitle1": "Pran foto yon aksyon",
+  "onboardBody1": "Yon ekran aplikasyon kourtye, yon jounal oswa logo yon konpayi ase: WhatStock rekonèt aksyon an epi li montre w pri li, grafik li ak chif enpòtan yo.",
+  "onboardTitle2": "Konprann li nan kèk minit",
+  "onboardBody2": "Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo sou kote pri a ka ale, avèk sous epi nan lang ou.",
+  "onboardTitle3": "Toujou okouran",
+  "onboardBody3": "Favori, pòtfèy ou ak alèt pri yo kenbe w okouran. Analiz ou yo rete sou aparèy ou, pare pou w louvri yo ankò.",
+  "onboardNext": "Swivan",
+  "onboardStart": "Ann kòmanse",
+  "onboardSkip": "Sote"
 }

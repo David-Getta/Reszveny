@@ -1500,4 +1500,34 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get referralCopied => 'ক\'ড কপি কৰা হ\'ল';
+
+  @override
+  String get onboardTitle1 => 'এটা শ্বেয়াৰৰ ফটো তোলক';
+
+  @override
+  String get onboardBody1 =>
+      'ব্ৰ\'কাৰেজ এপৰ স্ক্ৰীণ, বাতৰি কাকত বা কোম্পানীৰ ল\'গ\'ই যথেষ্ট: WhatStock-এ শ্বেয়াৰটো চিনাক্ত কৰি ইয়াৰ দাম, চাৰ্ট আৰু মূল তথ্যসমূহ দেখুৱায়।';
+
+  @override
+  String get onboardTitle2 => 'মিনিটতে বুজি লওক';
+
+  @override
+  String get onboardBody2 =>
+      'AI বিশ্লেষণে বুজাই দিয়ে শ্বেয়াৰটোক কিহে চলায়, ইয়াৰ বিপদাশংকা, মূল্যায়ন আৰু দাম ক\'লৈ যাব পাৰে তাৰ তিনিটা সম্ভাৱ্য পৰিস্থিতি – উৎসসহ আৰু আপোনাৰ ভাষাত।';
+
+  @override
+  String get onboardTitle3 => 'সদায় অৱগত থাকক';
+
+  @override
+  String get onboardBody3 =>
+      'প্ৰিয়, আপোনাৰ প\'ৰ্টফ\'লিঅ\' আৰু দামৰ সতৰ্কবাণীয়ে আপোনাক অৱগত কৰি ৰাখে। আপোনাৰ বিশ্লেষণসমূহ আপোনাৰ ডিভাইচতে থাকে, যিকোনো সময়ত পুনৰ খুলিব পাৰে।';
+
+  @override
+  String get onboardNext => 'পৰৱৰ্তী';
+
+  @override
+  String get onboardStart => 'আৰম্ভ কৰক';
+
+  @override
+  String get onboardSkip => 'এৰি যাওক';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Svoje kode ne moreš unovčiti.",
   "referralErrAlready": "V tem računu je bila koda prijatelja že unovčena.",
   "referralShareText": "Delnice analiziram z WhatStock: fotografiraj delnico in AI ti jo razloži. Z mojo kodo {code} dobiš {count, plural, one{{count} dodatno analizo} two{{count} dodatni analizi} few{{count} dodatne analize} other{{count} dodatnih analiz}}.",
-  "referralCopied": "Koda kopirana"
+  "referralCopied": "Koda kopirana",
+  "onboardTitle1": "Fotografirajte delnico",
+  "onboardBody1": "Dovolj je zaslon borzne aplikacije, časnik ali logotip podjetja: WhatStock prepozna delnico in vam pokaže ceno, graf in ključne številke.",
+  "onboardTitle2": "Razumite jo v nekaj minutah",
+  "onboardBody2": "Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri scenarije, kam bi se lahko gibala cena – z viri in v vašem jeziku.",
+  "onboardTitle3": "Bodite vedno na tekočem",
+  "onboardBody3": "Priljubljene, vaš portfelj in cenovna opozorila vas sproti obveščajo. Vaše analize ostanejo v vaši napravi, pripravljene za ponovno odpiranje.",
+  "onboardNext": "Naprej",
+  "onboardStart": "Začnimo",
+  "onboardSkip": "Preskoči"
 }

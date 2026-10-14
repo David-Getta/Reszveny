@@ -408,5 +408,14 @@
   "referralErrOwn": "Awukwazi ukusebenzisa ikhodi yakho.",
   "referralErrAlready": "Usuvele uyisebenzisile ikhodi yomngane.",
   "referralShareText": "Ngihlaziya amasheya nge-WhatStock: thatha isithombe sesheya bese i-AI iyalichaza. Ngekhodi yami {code} uthola {count, plural, =1{uhlaziyo olulodwa olwengeziwe} other{izinhlaziyo ezengeziwe ezingu-{count}}}.",
-  "referralCopied": "Ikhodi ikopishiwe"
+  "referralCopied": "Ikhodi ikopishiwe",
+  "onboardTitle1": "Thatha isithombe sesheya",
+  "onboardBody1": "Isikrini se-app yomthengisi wamasheya, iphephandaba noma ilogo yenkampani kwanele: I-WhatStock iyalibona isheya bese ikukhombisa intengo yalo, ishadi nezibalo ezibalulekile.",
+  "onboardTitle2": "Liqonde ngemizuzu embalwa",
+  "onboardBody2": "Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu zokuthi intengo ingaya kuphi – kanye nemithombo nangolimi lwakho.",
+  "onboardTitle3": "Hlala wazi konke",
+  "onboardBody3": "Izintandokazi, iphothifoliyo yakho nezexwayiso zentengo zikwazisa njalo ngokwenzekayo. Uhlaziyo lwakho luhlala kudivayisi yakho, lulungele ukuvulwa futhi.",
+  "onboardNext": "Okulandelayo",
+  "onboardStart": "Qala",
+  "onboardSkip": "Yeqa"
 }

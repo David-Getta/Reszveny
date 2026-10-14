@@ -408,5 +408,14 @@
   "referralErrOwn": "Ndũngĩhũthĩra kodi yaku we mwene.",
   "referralErrAlready": "Nĩ wahũthĩrire kodi ya mũrata.",
   "referralShareText": "Njĩthuthuragia hisa na WhatStock: oya mbica ya hisa na AI nĩ ĩgũgũtaarĩria. Na kodi yakwa {code} nĩ ũgũkora {count, plural, =1{ũthuthuria 1 wa kũongerera} other{mathuthuria {count} ma kũongerera}}.",
-  "referralCopied": "Kodi nĩ yakobĩo"
+  "referralCopied": "Kodi nĩ yakobĩo",
+  "onboardTitle1": "Oya mbica ya hisa",
+  "onboardBody1": "Skrini ya app ya broker, gazeti kana rũũri rwa kampuni nĩ ciiganu: WhatStock nĩ ĩkũmenya hisa ĩyo na ĩkuonie thogora wayo, chati na namba cia bata.",
+  "onboardTitle2": "Ĩmenye na ndagĩka nini",
+  "onboardBody2": "Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ iria thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.",
+  "onboardTitle3": "Menya ũhoro wothe",
+  "onboardBody3": "Iria wendete, hisa ciaku na imenyithia cia thogora nĩ ikũmenyithagia. Ũthuthuria waku ũtũũraga thimũ-inĩ yaku, ũhaarĩrĩtio kũhingũrwo rĩngĩ.",
+  "onboardNext": "Ĩrĩa ĩngĩ",
+  "onboardStart": "Ambĩrĩria",
+  "onboardSkip": "Hĩtũka"
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Kuena mua kuenza nadi code webe nkayebe.",
   "referralErrAlready": "Wakamba kuenza nadi code wa mulunda.",
   "referralShareText": "Ndi ngonkonona ba-action ne WhatStock: wangata foto wa action, AI udi umumvuija. Ne code wanyi {code} neupete {count, plural, =1{dikonkonona 1 dia kubueja} other{makonkonona {count} a kubueja}}.",
-  "referralCopied": "Code mmukopiibue"
+  "referralCopied": "Code mmukopiibue",
+  "onboardTitle1": "Ambula foto wa action",
+  "onboardBody1": "Ekrâ wa application wa broker, tshikandakanda anyi logo wa kompanyi bidi bikumbane: WhatStock udi umanya action eu ne ukuleja mushinga wayi, grafiki ne bimfuanyi bia mushinga.",
+  "onboardTitle2": "Umvua bimpe mu minite mikese",
+  "onboardBody2": "Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu adi mua kuenzeka ku mushinga, ne miaba ya mumanyisha ne mu muakulu webe.",
+  "onboardTitle3": "Ikala mumanye malu onso",
+  "onboardBody3": "Biudi musue, portefeuille webe ne alerte ya mushinga bidi bikumanyisha. Makonkonona ebe adi ashala mu tshiamu tshiebe, alongolola bua kuabulula kabidi.",
+  "onboardNext": "Bidi bilonda",
+  "onboardStart": "Tuanjile",
+  "onboardSkip": "Pita"
 }

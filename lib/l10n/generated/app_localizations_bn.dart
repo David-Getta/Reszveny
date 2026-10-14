@@ -1501,4 +1501,34 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get referralCopied => 'কোড কপি হয়েছে';
+
+  @override
+  String get onboardTitle1 => 'শেয়ারের ছবি তুলুন';
+
+  @override
+  String get onboardBody1 =>
+      'ব্রোকারেজ অ্যাপের স্ক্রিন, খবরের কাগজ বা কোম্পানির লোগোই যথেষ্ট: WhatStock শেয়ারটি চিনে নিয়ে এর দাম, চার্ট ও মূল তথ্য দেখায়।';
+
+  @override
+  String get onboardTitle2 => 'কয়েক মিনিটেই বুঝে নিন';
+
+  @override
+  String get onboardBody2 =>
+      'AI বিশ্লেষণ ব্যাখ্যা করে শেয়ারটিকে কী চালায়, ঝুঁকিগুলো কী, মূল্যায়ন কেমন, আর দাম কোথায় যেতে পারে তার তিনটি সম্ভাব্য চিত্র – সূত্রসহ, আপনার ভাষায়।';
+
+  @override
+  String get onboardTitle3 => 'সবসময় আপডেট থাকুন';
+
+  @override
+  String get onboardBody3 =>
+      'পছন্দের তালিকা, আপনার পোর্টফোলিও আর দামের সতর্কতা আপনাকে সবসময় খবর দেয়। আপনার বিশ্লেষণগুলো আপনার ডিভাইসেই থাকে, যখন খুশি আবার খুলতে পারবেন।';
+
+  @override
+  String get onboardNext => 'পরবর্তী';
+
+  @override
+  String get onboardStart => 'শুরু করুন';
+
+  @override
+  String get onboardSkip => 'এড়িয়ে যান';
 }

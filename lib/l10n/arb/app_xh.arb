@@ -408,5 +408,14 @@
   "referralErrOwn": "Awunakuyisebenzisa ikhowudi yakho.",
   "referralErrAlready": "Sele uyisebenzisile ikhowudi yomhlobo.",
   "referralShareText": "Ndihlalutya izabelo nge-WhatStock: thatha ifoto yesabelo kwaye i-AI iyasicacisa. Ngekhowudi yam {code} ufumana {count, plural, =1{uhlalutyo olunye olongezelelweyo} other{iintlalutyo ezongezelelweyo ezi-{count}}}.",
-  "referralCopied": "Ikhowudi ikhutshelwe"
+  "referralCopied": "Ikhowudi ikhutshelwe",
+  "onboardTitle1": "Thatha ifoto yesabelo",
+  "onboardBody1": "Isikrini se-app ye-broker, iphephandaba okanye ilogo yenkampani zanele: I-WhatStock iyasiqonda isabelo ize ikubonise ixabiso laso, itshathi namanani abalulekileyo.",
+  "onboardTitle2": "Siqonde ngemizuzu embalwa",
+  "onboardBody2": "Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu zokuba ixabiso lingaya phi – kunye nemithombo nangolwimi lwakho.",
+  "onboardTitle3": "Hlala unolwazi",
+  "onboardBody3": "Ezithandwayo, ipotifoliyo yakho nezilumkiso zamaxabiso zikwazisa ngokwenzekayo. Uhlalutyo lwakho luhlala kwisixhobo sakho, lulungele ukuvulwa kwakhona.",
+  "onboardNext": "Okulandelayo",
+  "onboardStart": "Qalisa",
+  "onboardSkip": "Tsiba"
 }

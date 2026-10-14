@@ -1501,4 +1501,34 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get referralCopied => 'კოდი დაკოპირდა';
+
+  @override
+  String get onboardTitle1 => 'გადაუღეთ ფოტო აქციას';
+
+  @override
+  String get onboardBody1 =>
+      'საკმარისია საბროკერო აპის ეკრანი, გაზეთი ან კომპანიის ლოგო: WhatStock ამოიცნობს აქციას და გაჩვენებთ მის ფასს, გრაფიკს და მთავარ მაჩვენებლებს.';
+
+  @override
+  String get onboardTitle2 => 'გაიგეთ წუთებში';
+
+  @override
+  String get onboardBody2 =>
+      'AI ანალიზი განმარტავს, რა ამოძრავებს აქციას, რა რისკები არსებობს, როგორია მისი შეფასება, და გთავაზობთ სამ სცენარს, საით შეიძლება წავიდეს ფასი – წყაროებით და თქვენს ენაზე.';
+
+  @override
+  String get onboardTitle3 => 'იყავით საქმის კურსში';
+
+  @override
+  String get onboardBody3 =>
+      'რჩეულები, თქვენი პორტფელი და ფასის შეტყობინებები ყოველთვის საქმის კურსში გამყოფენ. თქვენი ანალიზები თქვენს მოწყობილობაზე რჩება, ხელახლა გასახსნელად მზად.';
+
+  @override
+  String get onboardNext => 'შემდეგი';
+
+  @override
+  String get onboardStart => 'დაწყება';
+
+  @override
+  String get onboardSkip => 'გამოტოვება';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Anda tidak dapat menukarkan kode Anda sendiri.",
   "referralErrAlready": "Anda sudah pernah menukarkan kode teman.",
   "referralShareText": "Saya menganalisis saham dengan WhatStock: foto sahamnya dan AI akan menjelaskannya. Dengan kode saya {code} kamu mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
-  "referralCopied": "Kode disalin"
+  "referralCopied": "Kode disalin",
+  "onboardTitle1": "Foto sebuah saham",
+  "onboardBody1": "Cukup layar aplikasi pialang, koran, atau logo perusahaan: WhatStock mengenali sahamnya dan menampilkan harga, grafik, serta angka-angka pentingnya.",
+  "onboardTitle2": "Pahami dalam hitungan menit",
+  "onboardBody2": "Analisis AI menjelaskan apa yang menggerakkan saham, risikonya, valuasinya, dan tiga skenario ke mana harga bisa bergerak, lengkap dengan sumber dan dalam bahasa Anda.",
+  "onboardTitle3": "Selalu ikuti perkembangannya",
+  "onboardBody3": "Favorit, portofolio Anda, dan peringatan harga membuat Anda selalu tahu kabar terbaru. Analisis Anda tetap tersimpan di perangkat, siap dibuka kembali.",
+  "onboardNext": "Berikutnya",
+  "onboardStart": "Mulai",
+  "onboardSkip": "Lewati"
 }

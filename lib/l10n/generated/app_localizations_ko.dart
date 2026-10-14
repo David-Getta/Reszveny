@@ -1454,4 +1454,34 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get referralCopied => '코드가 복사되었습니다';
+
+  @override
+  String get onboardTitle1 => '주식을 촬영하세요';
+
+  @override
+  String get onboardBody1 =>
+      '증권 앱 화면, 신문, 회사 로고만 있으면 충분합니다. WhatStock이 종목을 인식해 주가, 차트, 핵심 지표를 보여 줍니다.';
+
+  @override
+  String get onboardTitle2 => '몇 분 만에 파악하세요';
+
+  @override
+  String get onboardBody2 =>
+      'AI 분석이 주가를 움직이는 요인, 리스크, 밸류에이션, 그리고 주가 향방에 대한 세 가지 시나리오를 출처와 함께 사용자의 언어로 설명합니다.';
+
+  @override
+  String get onboardTitle3 => '놓치지 마세요';
+
+  @override
+  String get onboardBody3 =>
+      '즐겨찾기, 포트폴리오, 가격 알림으로 최신 소식을 받아 보세요. 분석 결과는 기기에 저장되어 언제든 다시 열어 볼 수 있습니다.';
+
+  @override
+  String get onboardNext => '다음';
+
+  @override
+  String get onboardStart => '시작하기';
+
+  @override
+  String get onboardSkip => '건너뛰기';
 }

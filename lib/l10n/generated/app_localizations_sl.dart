@@ -1550,4 +1550,34 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get referralCopied => 'Koda kopirana';
+
+  @override
+  String get onboardTitle1 => 'Fotografirajte delnico';
+
+  @override
+  String get onboardBody1 =>
+      'Dovolj je zaslon borzne aplikacije, časnik ali logotip podjetja: WhatStock prepozna delnico in vam pokaže ceno, graf in ključne številke.';
+
+  @override
+  String get onboardTitle2 => 'Razumite jo v nekaj minutah';
+
+  @override
+  String get onboardBody2 =>
+      'Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri scenarije, kam bi se lahko gibala cena – z viri in v vašem jeziku.';
+
+  @override
+  String get onboardTitle3 => 'Bodite vedno na tekočem';
+
+  @override
+  String get onboardBody3 =>
+      'Priljubljene, vaš portfelj in cenovna opozorila vas sproti obveščajo. Vaše analize ostanejo v vaši napravi, pripravljene za ponovno odpiranje.';
+
+  @override
+  String get onboardNext => 'Naprej';
+
+  @override
+  String get onboardStart => 'Začnimo';
+
+  @override
+  String get onboardSkip => 'Preskoči';
 }

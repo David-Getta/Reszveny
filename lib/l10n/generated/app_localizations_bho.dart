@@ -1496,4 +1496,34 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get referralCopied => 'कोड कॉपी हो गइल';
+
+  @override
+  String get onboardTitle1 => 'कवनो शेयर के फोटो खींचीं';
+
+  @override
+  String get onboardBody1 =>
+      'ब्रोकरेज ऐप के स्क्रीन, अखबार भा कंपनी के लोगो काफी बा: WhatStock शेयर के पहचान के ओकर दाम, चार्ट आ खास आँकड़ा देखा देला।';
+
+  @override
+  String get onboardTitle2 => 'कुछे मिनट में समझ जाईं';
+
+  @override
+  String get onboardBody2 =>
+      'AI विश्लेषण बतावेला कि शेयर के का चलावत बा, जोखिम का बा, ओकर मूल्यांकन का बा, आ दाम कहाँ जा सकेला एकर तीन गो परिदृश्य – स्रोत के साथे आ रउरा भाषा में।';
+
+  @override
+  String get onboardTitle3 => 'हमेशा अपडेट रहीं';
+
+  @override
+  String get onboardBody3 =>
+      'पसंदीदा, रउरा पोर्टफ़ोलियो आ दाम अलर्ट रउरा के खबर देत रहेला। रउरा विश्लेषण रउरा डिवाइस पर रहेला, जब मन करे दोबारा खोल सकीले।';
+
+  @override
+  String get onboardNext => 'आगे';
+
+  @override
+  String get onboardStart => 'शुरू करीं';
+
+  @override
+  String get onboardSkip => 'छोड़ीं';
 }

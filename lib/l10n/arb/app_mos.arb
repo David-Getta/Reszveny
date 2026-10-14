@@ -408,5 +408,14 @@
   "referralErrOwn": "F pa tõe n tʋm ne f mens kõodã ye.",
   "referralErrAlready": "F tʋma ne f zoa kõod pĩnda.",
   "referralShareText": "Mam vɛɛsda aksɔ̃ wã ne WhatStock: yõk aksɔ̃ foto, la AI wã na n wilg-a. Ne m kõodã {code}, f na n paama {count, plural, =1{vɛɛse a yembr sẽn paase} other{vɛɛse {count} sẽn paase}}.",
-  "referralCopied": "Kõodã lebs n gʋlsame"
+  "referralCopied": "Kõodã lebs n gʋlsame",
+  "onboardTitle1": "Rɩk aksiõ foto",
+  "onboardBody1": "Burs aplikasiõ ekrã, kasɛt bɩ ãterpriz logo sekame: WhatStock bãngda aksiõ wã la a wilgd a koosgo, a grafik la a sõd-kãsenga.",
+  "onboardTitle2": "Bãng-a minut bilf pʋgẽ",
+  "onboardBody2": "AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab a koosgã sẽn tõe n tʋg n kẽnge – ne a tũudsã la y kʋdemd pʋgẽ.",
+  "onboardTitle3": "Ra n bãng kibay wakat fãa",
+  "onboardBody3": "Nong-n-yɩɩda, y portfey la koosg gũusgo kõta yãmb kibay. Y vɛɛsgã kẽnd y masĩn pʋgẽ, n segd tɩ y le pak-ba.",
+  "onboardNext": "Rẽnda",
+  "onboardStart": "D sɩnge",
+  "onboardSkip": "Bas-a"
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Du kan ikke løse inn din egen kode.",
   "referralErrAlready": "Du har allerede løst inn en venns kode.",
   "referralShareText": "Jeg analyserer aksjer med WhatStock: ta bilde av en aksje, så forklarer AI-en den. Med koden min {code} får du {count, plural, =1{1 ekstra analyse} other{{count} ekstra analyser}}.",
-  "referralCopied": "Koden er kopiert"
+  "referralCopied": "Koden er kopiert",
+  "onboardTitle1": "Ta bilde av en aksje",
+  "onboardBody1": "En meglerskjerm, en avis eller en firmalogo er nok: WhatStock gjenkjenner aksjen og viser kurs, graf og nøkkeltall.",
+  "onboardTitle2": "Forstå den på minutter",
+  "onboardBody2": "AI-analysen forklarer hva som driver aksjen, risikoene, verdsettelsen og tre scenarioer for hvor kursen kan gå – med kilder og på ditt språk.",
+  "onboardTitle3": "Hold deg oppdatert",
+  "onboardBody3": "Favoritter, porteføljen din og kursvarsler holder deg oppdatert. Analysene dine blir liggende på enheten din, klare til å åpnes igjen.",
+  "onboardNext": "Neste",
+  "onboardStart": "Kom i gang",
+  "onboardSkip": "Hopp over"
 }

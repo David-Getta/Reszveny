@@ -408,5 +408,14 @@
   "referralErrOwn": "Ba za ka iya amfani da lambarka ta kanka ba.",
   "referralErrAlready": "Ka riga ka yi amfani da lambar wani abokinka.",
   "referralShareText": "Ina nazarin hannun jari da WhatStock: ka ɗauki hoton hannun jari, AI kuma ta yi bayani. Da lambata {code} za ka samu {count, plural, =1{ƙarin nazari 1} other{ƙarin nazari {count}}}.",
-  "referralCopied": "An kwafi lambar"
+  "referralCopied": "An kwafi lambar",
+  "onboardTitle1": "Ɗauki hoton hannun jari",
+  "onboardBody1": "Allon manhajar broker, jarida ko tambarin kamfani ya isa: WhatStock zai gane hannun jarin ya nuna maka farashinsa, jadawalinsa da muhimman alƙaluma.",
+  "onboardTitle2": "Fahimta cikin mintuna kaɗan",
+  "onboardBody2": "Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da hasashe uku na inda farashin zai iya dosa, tare da majiyoyi kuma da harshenka.",
+  "onboardTitle3": "Ka kasance da labari koyaushe",
+  "onboardBody3": "Abubuwan da aka fi so, jakar hannun jarinka da faɗakarwar farashi za su sanar da kai. Nazarinka suna nan a na'urarka, a shirye don ka sake buɗe su.",
+  "onboardNext": "Na gaba",
+  "onboardStart": "Mu fara",
+  "onboardSkip": "Tsallake"
 }

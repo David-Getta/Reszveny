@@ -1498,4 +1498,34 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get referralCopied => 'Tangalt tettwanɣel';
+
+  @override
+  String get onboardTitle1 => 'Ṭṭef tawlaft n uksyun';
+
+  @override
+  String get onboardBody1 =>
+      'Agdil n usnas n broker, taɣmist neɣ alugu n tkebbanit yekfa: WhatStock ad yeεqel aksyun, ad k-d-yesken ssuma-s, udlif-is d yimḍanen-is igejdanen.';
+
+  @override
+  String get onboardTitle2 => 'Fhem-it deg kra n tesdatin';
+
+  @override
+  String get onboardBody2 =>
+      'Tasleḍt s AI ad k-d-tessefhem acu i yesseḥrayen aksyun, uguren, azal-is d kraḍ n yisenaryuten ɣef wanida tezmer ad teddu ssuma, s yiɣbula d tutlayt-ik.';
+
+  @override
+  String get onboardTitle3 => 'Ur k-tetteffeɣ ula d taɣawsa';
+
+  @override
+  String get onboardBody3 =>
+      'Ismenyifen, aqrab-ik d yilɣa n ssuma ad k-d-ssalɣun. Tisleḍin-ik qqiment ɣef yibenk-ik, heggant ad tent-teldiḍ tikkelt nniḍen.';
+
+  @override
+  String get onboardNext => 'Uḍfiṛ';
+
+  @override
+  String get onboardStart => 'Bdu';
+
+  @override
+  String get onboardSkip => 'Zgel';
 }

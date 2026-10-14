@@ -1509,4 +1509,34 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code kopiert';
+
+  @override
+  String get onboardTitle1 => 'Fotografiere eine Aktie';
+
+  @override
+  String get onboardBody1 =>
+      'Der Bildschirm einer Broker-App, eine Zeitung oder ein Firmenlogo genügt: WhatStock erkennt die Aktie und zeigt dir Kurs, Chart und wichtige Kennzahlen.';
+
+  @override
+  String get onboardTitle2 => 'In Minuten verstanden';
+
+  @override
+  String get onboardBody2 =>
+      'Die KI-Analyse erklärt dir, was die Aktie bewegt, welche Risiken es gibt, wie sie bewertet ist und in drei Szenarien, wohin sich der Kurs entwickeln könnte – mit Quellen und in deiner Sprache.';
+
+  @override
+  String get onboardTitle3 => 'Immer auf dem Laufenden';
+
+  @override
+  String get onboardBody3 =>
+      'Favoriten, dein Portfolio und Kursalarme halten dich auf dem Laufenden. Deine Analysen bleiben auf deinem Gerät und lassen sich jederzeit wieder öffnen.';
+
+  @override
+  String get onboardNext => 'Weiter';
+
+  @override
+  String get onboardStart => 'Los geht’s';
+
+  @override
+  String get onboardSkip => 'Überspringen';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Huwezi kutumia msimbo wako mwenyewe.",
   "referralErrAlready": "Tayari umetumia msimbo wa rafiki.",
   "referralShareText": "Ninachambua hisa kwa WhatStock: piga picha ya hisa na AI inaieleza. Kwa msimbo wangu {code} unapata {count, plural, =1{uchambuzi 1 wa ziada} other{uchambuzi {count} wa ziada}}.",
-  "referralCopied": "Msimbo umenakiliwa"
+  "referralCopied": "Msimbo umenakiliwa",
+  "onboardTitle1": "Piga picha ya hisa",
+  "onboardBody1": "Skrini ya programu ya udalali, gazeti au nembo ya kampuni inatosha: WhatStock inatambua hisa na kukuonyesha bei yake, chati na takwimu muhimu.",
+  "onboardTitle2": "Ielewe kwa dakika chache",
+  "onboardBody2": "Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mahali bei inaweza kuelekea – pamoja na vyanzo na kwa lugha yako.",
+  "onboardTitle3": "Usipitwe na chochote",
+  "onboardBody3": "Vipendwa, jalada lako la hisa na arifa za bei hukujulisha kila kinachotokea. Uchambuzi wako hubaki kwenye kifaa chako, tayari kufunguliwa tena.",
+  "onboardNext": "Ifuatayo",
+  "onboardStart": "Anza",
+  "onboardSkip": "Ruka"
 }

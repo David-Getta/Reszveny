@@ -2790,6 +2790,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Code copied'**
   String get referralCopied;
+
+  /// First onboarding page title: the app recognises a stock from a photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Photograph a stock'**
+  String get onboardTitle1;
+
+  /// First onboarding page text. Keep WhatStock unchanged.
+  ///
+  /// In en, this message translates to:
+  /// **'A brokerage screen, a newspaper or a company logo is enough: WhatStock recognises the stock and shows its price, chart and key figures.'**
+  String get onboardBody1;
+
+  /// Second onboarding page title: the AI analysis.
+  ///
+  /// In en, this message translates to:
+  /// **'Understand it in minutes'**
+  String get onboardTitle2;
+
+  /// Second onboarding page text.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.'**
+  String get onboardBody2;
+
+  /// Third onboarding page title: favorites, portfolio, alerts.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay on top of it'**
+  String get onboardTitle3;
+
+  /// Third onboarding page text.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites, your portfolio and price alerts keep you posted. Your analyses stay on your device, ready to reopen.'**
+  String get onboardBody3;
+
+  /// Button: next onboarding page.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get onboardNext;
+
+  /// Button on the last onboarding page: start using the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Get started'**
+  String get onboardStart;
+
+  /// Button: skip the onboarding.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get onboardSkip;
 }
 
 class _AppLocalizationsDelegate

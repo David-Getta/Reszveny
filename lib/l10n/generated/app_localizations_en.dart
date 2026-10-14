@@ -1499,4 +1499,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code copied';
+
+  @override
+  String get onboardTitle1 => 'Photograph a stock';
+
+  @override
+  String get onboardBody1 =>
+      'A brokerage screen, a newspaper or a company logo is enough: WhatStock recognises the stock and shows its price, chart and key figures.';
+
+  @override
+  String get onboardTitle2 => 'Understand it in minutes';
+
+  @override
+  String get onboardBody2 =>
+      'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.';
+
+  @override
+  String get onboardTitle3 => 'Stay on top of it';
+
+  @override
+  String get onboardBody3 =>
+      'Favorites, your portfolio and price alerts keep you posted. Your analyses stay on your device, ready to reopen.';
+
+  @override
+  String get onboardNext => 'Next';
+
+  @override
+  String get onboardStart => 'Get started';
+
+  @override
+  String get onboardSkip => 'Skip';
 }

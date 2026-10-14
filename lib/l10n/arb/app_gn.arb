@@ -408,5 +408,14 @@
   "referralErrOwn": "Ndaikatúi reiporu ne código voi.",
   "referralErrAlready": "Reiporúma peteĩ ne angirũ código.",
   "referralShareText": "Ahesaʼỹijo acción-kuéra WhatStock rupive: ejapyhy peteĩ acción raʼãnga ha AI ohesape chupe. Che código {code} rupive rehupytýta {count, plural, =1{1 jehesaʼỹijo mbojuajupyre} other{{count} jehesaʼỹijo mbojuajupyre}}.",
-  "referralCopied": "Código oñekopia"
+  "referralCopied": "Código oñekopia",
+  "onboardTitle1": "Ejapyhy peteĩ acción raʼãnga",
+  "onboardBody1": "Oĩmaite peteĩ tembiporuʼi bolsa-pegua mbaʼerechaha, periódico térã empresa logo: WhatStock ohechakuaa pe acción ha ohechauka ijepy, igráfico ha umi papapy tenondeguáva.",
+  "onboardTitle2": "Ehechakuaa minuto mbovýpe",
+  "onboardBody2": "AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape ikatúva ohasa ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.",
+  "onboardTitle3": "Eikuaa meme opa mbaʼe",
+  "onboardBody3": "Ojeguerohoryvéva, ne cartera ha tepy maranduʼi omomarandu ndéve. Ne jehesaʼỹijokuéra opyta ne tembiporuʼípe, ha ikatu reipeʼa jey oimeraẽ árape.",
+  "onboardNext": "Upeigua",
+  "onboardStart": "Ñañepyrũ",
+  "onboardSkip": "Ehasa"
 }

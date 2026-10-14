@@ -698,6 +698,15 @@ void main() {
     await _shot(tester, 'referral_phone_hu');
   });
 
+  testWidgets('first launch onboarding (hungarian, phone)', (tester) async {
+    final s = _services(locale: const Locale('hu'))..preferences.onboardingDone = false;
+    await pumpApp(tester, s, const Size(430, 900));
+    await _shot(tester, 'onboarding1_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('onboarding-next')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'onboarding2_phone_hu');
+  });
+
   testWidgets('quick bar', (tester) async {
     tester.view.physicalSize = const Size(680, 72);
     tester.view.devicePixelRatio = 1;

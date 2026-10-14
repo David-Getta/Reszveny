@@ -1551,4 +1551,34 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get referralCopied => 'Skopiowano kod';
+
+  @override
+  String get onboardTitle1 => 'Sfotografuj akcję';
+
+  @override
+  String get onboardBody1 =>
+      'Wystarczy ekran aplikacji maklerskiej, gazeta lub logo firmy: WhatStock rozpozna akcję i pokaże jej kurs, wykres oraz najważniejsze wskaźniki.';
+
+  @override
+  String get onboardTitle2 => 'Zrozum ją w kilka minut';
+
+  @override
+  String get onboardBody2 =>
+      'Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy scenariusze, dokąd może zmierzać cena – ze źródłami i w Twoim języku.';
+
+  @override
+  String get onboardTitle3 => 'Bądź na bieżąco';
+
+  @override
+  String get onboardBody3 =>
+      'Ulubione, Twój portfel i alerty cenowe informują Cię na bieżąco. Twoje analizy zostają na urządzeniu, gotowe do ponownego otwarcia.';
+
+  @override
+  String get onboardNext => 'Dalej';
+
+  @override
+  String get onboardStart => 'Zaczynamy';
+
+  @override
+  String get onboardSkip => 'Pomiń';
 }

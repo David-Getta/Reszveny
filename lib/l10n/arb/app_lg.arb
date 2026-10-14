@@ -408,5 +408,14 @@
   "referralErrOwn": "Toyinza kukozesa koodi yo ggwe kennyini.",
   "referralErrAlready": "Wamala dda okukozesa koodi ya mukwano gwo.",
   "referralShareText": "Nneekenneenya emigabo nga nkozesa WhatStock: kuba ekifaananyi ky'omugabo, AI n'ekikunnyonnyola. Ne koodi yange {code} ofuna {count, plural, =1{okwekenneenya okw'okwongerako 1} other{okwekenneenya okw'okwongerako {count}}}.",
-  "referralCopied": "Koodi ekoppoddwa"
+  "referralCopied": "Koodi ekoppoddwa",
+  "onboardTitle1": "Kuba ekifaananyi ky'omugabo",
+  "onboardBody1": "Olutimbe lwa app ya broker, olupapula lw'amawulire oba akabonero ka kkampuni bimala: WhatStock etegeera omugabo n'ekulaga bbeeyi yaagwo, ekipande kyagwo n'ennamba enkulu.",
+  "onboardTitle2": "Kitegeere mu ddakiika ntono",
+  "onboardBody2": "Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n'embeera ssatu bbeeyi w'eyinza okudda, nga kuliko ensibuko era mu lulimi lwo.",
+  "onboardTitle3": "Bera ng'omanyi buli kimu",
+  "onboardBody3": "By'oyagala, emigabo gyo n'okulabula ku bbeeyi bikutegeeza buli ekibaawo. Okwekenneenya kwo kusigala ku kyuma kyo, nga kwetegefu okuggulwawo nate.",
+  "onboardNext": "Ekiddako",
+  "onboardStart": "Tandika",
+  "onboardSkip": "Buuka"
 }

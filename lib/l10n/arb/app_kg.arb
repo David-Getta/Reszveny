@@ -408,5 +408,14 @@
   "referralErrOwn": "Nge lenda sadila ve code na nge mosi.",
   "referralErrAlready": "Nge me sadila dezia code ya nduku.",
   "referralShareText": "Mono ke tadila ba-action na WhatStock: nge ke baka foto ya action mpi AI ke tendula yo. Na code na mono {code} nge ta baka {count, plural, =1{analyse 1 ya kuyika} other{analyse {count} za kuyika}}.",
-  "referralCopied": "Code me kopiama"
+  "referralCopied": "Code me kopiama",
+  "onboardTitle1": "Baka foto ya action",
+  "onboardBody1": "Ekrani ya application ya courtier, zulunalu to logo ya kompani kelele: WhatStock ke zaya action yina ye ke songa nge ntalu ya yau, grafiki ye mintalu ya mfunu.",
+  "onboardTitle2": "Bakula yau na minuta fioti",
+  "onboardBody2": "Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya lenda kumina ntalu, ti bisina ya nsangu ye na ndinga na nge.",
+  "onboardTitle3": "Zaya mambu yonso ntangu yonso",
+  "onboardBody3": "Bizolwa, portefeuille na nge ye nkebisu za ntalu ke zabisa nge. Ba analyse na nge ke bikala na apparaye na nge, ya kukangula diaka.",
+  "onboardNext": "Ya landa",
+  "onboardStart": "Yantika",
+  "onboardSkip": "Bika"
 }

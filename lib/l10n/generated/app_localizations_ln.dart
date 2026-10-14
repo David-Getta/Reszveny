@@ -1505,4 +1505,34 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Code ekopiami';
+
+  @override
+  String get onboardTitle1 => 'Bɛta foto ya action';
+
+  @override
+  String get onboardBody1 =>
+      'Ekrá ya application ya broker, zulunalo to logo ya kompanyi ekoki: WhatStock eyebi action yango mpe elakisi yo ntalo na yango, grafiki mpe mitángo ya ntina.';
+
+  @override
+  String get onboardTitle2 => 'Sosola yango na miniti moke';
+
+  @override
+  String get onboardBody2 =>
+      'Analyse ya AI elimboli nini etindaka action, makama, motuya na yango mpe makambo misato oyo ekoki kokómela ntalo, na bisika ya nsango mpe na monoko na yo.';
+
+  @override
+  String get onboardTitle3 => 'Yeba makambo nyɔnsɔ ntango nyɔnsɔ';
+
+  @override
+  String get onboardBody3 =>
+      'Oyo olingaka, portefeuille na yo mpe makebisi ya ntalo ekoyebisa yo makambo. Ba analyse na yo etikalaka na appareil na yo, ya kofungola lisusu.';
+
+  @override
+  String get onboardNext => 'Oyo elandi';
+
+  @override
+  String get onboardStart => 'Tóbanda';
+
+  @override
+  String get onboardSkip => 'Leka';
 }

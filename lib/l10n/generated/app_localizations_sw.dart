@@ -1499,4 +1499,34 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get referralCopied => 'Msimbo umenakiliwa';
+
+  @override
+  String get onboardTitle1 => 'Piga picha ya hisa';
+
+  @override
+  String get onboardBody1 =>
+      'Skrini ya programu ya udalali, gazeti au nembo ya kampuni inatosha: WhatStock inatambua hisa na kukuonyesha bei yake, chati na takwimu muhimu.';
+
+  @override
+  String get onboardTitle2 => 'Ielewe kwa dakika chache';
+
+  @override
+  String get onboardBody2 =>
+      'Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mahali bei inaweza kuelekea – pamoja na vyanzo na kwa lugha yako.';
+
+  @override
+  String get onboardTitle3 => 'Usipitwe na chochote';
+
+  @override
+  String get onboardBody3 =>
+      'Vipendwa, jalada lako la hisa na arifa za bei hukujulisha kila kinachotokea. Uchambuzi wako hubaki kwenye kifaa chako, tayari kufunguliwa tena.';
+
+  @override
+  String get onboardNext => 'Ifuatayo';
+
+  @override
+  String get onboardStart => 'Anza';
+
+  @override
+  String get onboardSkip => 'Ruka';
 }

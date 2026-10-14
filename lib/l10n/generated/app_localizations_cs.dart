@@ -1544,4 +1544,34 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kód zkopírován';
+
+  @override
+  String get onboardTitle1 => 'Vyfoťte akcii';
+
+  @override
+  String get onboardBody1 =>
+      'Stačí obrazovka brokerské aplikace, noviny nebo logo firmy: WhatStock akcii rozpozná a ukáže její cenu, graf a klíčové ukazatele.';
+
+  @override
+  String get onboardTitle2 => 'Pochopte ji za pár minut';
+
+  @override
+  String get onboardBody2 =>
+      'AI analýza vysvětlí, co akcií hýbe, jaká má rizika a ocenění, a nabídne tři scénáře, kam se může cena vydat – se zdroji a ve vašem jazyce.';
+
+  @override
+  String get onboardTitle3 => 'Mějte vše pod kontrolou';
+
+  @override
+  String get onboardBody3 =>
+      'Oblíbené, vaše portfolio a cenová upozornění vás udrží v obraze. Vaše analýzy zůstávají ve vašem zařízení, připravené k opětovnému otevření.';
+
+  @override
+  String get onboardNext => 'Další';
+
+  @override
+  String get onboardStart => 'Začít';
+
+  @override
+  String get onboardSkip => 'Přeskočit';
 }

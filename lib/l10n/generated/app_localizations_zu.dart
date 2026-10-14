@@ -1506,4 +1506,34 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Ikhodi ikopishiwe';
+
+  @override
+  String get onboardTitle1 => 'Thatha isithombe sesheya';
+
+  @override
+  String get onboardBody1 =>
+      'Isikrini se-app yomthengisi wamasheya, iphephandaba noma ilogo yenkampani kwanele: I-WhatStock iyalibona isheya bese ikukhombisa intengo yalo, ishadi nezibalo ezibalulekile.';
+
+  @override
+  String get onboardTitle2 => 'Liqonde ngemizuzu embalwa';
+
+  @override
+  String get onboardBody2 =>
+      'Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu zokuthi intengo ingaya kuphi – kanye nemithombo nangolimi lwakho.';
+
+  @override
+  String get onboardTitle3 => 'Hlala wazi konke';
+
+  @override
+  String get onboardBody3 =>
+      'Izintandokazi, iphothifoliyo yakho nezexwayiso zentengo zikwazisa njalo ngokwenzekayo. Uhlaziyo lwakho luhlala kudivayisi yakho, lulungele ukuvulwa futhi.';
+
+  @override
+  String get onboardNext => 'Okulandelayo';
+
+  @override
+  String get onboardStart => 'Qala';
+
+  @override
+  String get onboardSkip => 'Yeqa';
 }

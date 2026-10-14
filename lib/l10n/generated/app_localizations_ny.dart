@@ -1506,4 +1506,34 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get referralCopied => 'Khodi yakopedwa';
+
+  @override
+  String get onboardTitle1 => 'Jambulani sheya';
+
+  @override
+  String get onboardBody1 =>
+      'Chophimba cha pulogalamu ya broker, nyuzipepala kapena chizindikiro cha kampani ndi zokwanira: WhatStock imazindikira sheyayo ndipo imakuwonetsani mtengo wake, tchati ndi ziwerengero zofunika.';
+
+  @override
+  String get onboardTitle2 => 'Mvetsetsani mu mphindi zochepa';
+
+  @override
+  String get onboardBody2 =>
+      'Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu za komwe mtengo ungapite – ndi magwero komanso m\'chilankhulo chanu.';
+
+  @override
+  String get onboardTitle3 => 'Khalani odziwa nthawi zonse';
+
+  @override
+  String get onboardBody3 =>
+      'Zokondedwa, masheya anu ndi zidziwitso za mtengo zimakudziwitsani nthawi zonse. Zosanthula zanu zimakhala pa chipangizo chanu, zokonzeka kutsegulidwanso.';
+
+  @override
+  String get onboardNext => 'Patsogolo';
+
+  @override
+  String get onboardStart => 'Tiyeni tiyambe';
+
+  @override
+  String get onboardSkip => 'Dumphani';
 }

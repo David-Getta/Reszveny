@@ -1503,4 +1503,34 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get referralCopied => 'كود كۆچۈرۈلدى';
+
+  @override
+  String get onboardTitle1 => 'پاي چېكىنى سۈرەتكە تارتىڭ';
+
+  @override
+  String get onboardBody1 =>
+      'ۋاسىتىچى ئەپنىڭ ئېكرانى، گېزىت ياكى شىركەت بەلگىسى يېتەرلىك: WhatStock پاي چېكىنى تونۇپ، ئۇنىڭ باھاسى، دىئاگراممىسى ۋە مۇھىم كۆرسەتكۈچلىرىنى كۆرسىتىپ بېرىدۇ.';
+
+  @override
+  String get onboardTitle2 => 'بىر نەچچە مىنۇتتا چۈشىنىڭ';
+
+  @override
+  String get onboardBody2 =>
+      'AI تەھلىلى پاي چېكىنى نېمىنىڭ ھەرىكەتلەندۈرىدىغانلىقى، خەتەرلەر، قىممەت باھالاش ۋە باھانىڭ قەيەرگە بېرىشى مۇمكىنلىكى توغرىسىدىكى ئۈچ خىل ئەھۋالنى مەنبەلەر بىلەن ۋە ئۆز تىلىڭىزدا چۈشەندۈرۈپ بېرىدۇ.';
+
+  @override
+  String get onboardTitle3 => 'ھەمىشە خەۋەردار بولۇڭ';
+
+  @override
+  String get onboardBody3 =>
+      'يىغقۇچ، مەبلەغ بىرىكمىڭىز ۋە باھا ئاگاھلاندۇرۇشلىرى سىزنى ۋەقەلەردىن خەۋەردار قىلىپ تۇرىدۇ. تەھلىللىرىڭىز ئۈسكۈنىڭىزدە ساقلىنىدۇ، خالىغان ۋاقىتتا قايتا ئاچالايسىز.';
+
+  @override
+  String get onboardNext => 'كېيىنكى';
+
+  @override
+  String get onboardStart => 'باشلاش';
+
+  @override
+  String get onboardSkip => 'ئاتلاش';
 }

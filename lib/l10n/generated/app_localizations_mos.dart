@@ -1488,4 +1488,34 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kõodã lebs n gʋlsame';
+
+  @override
+  String get onboardTitle1 => 'Rɩk aksiõ foto';
+
+  @override
+  String get onboardBody1 =>
+      'Burs aplikasiõ ekrã, kasɛt bɩ ãterpriz logo sekame: WhatStock bãngda aksiõ wã la a wilgd a koosgo, a grafik la a sõd-kãsenga.';
+
+  @override
+  String get onboardTitle2 => 'Bãng-a minut bilf pʋgẽ';
+
+  @override
+  String get onboardBody2 =>
+      'AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab a koosgã sẽn tõe n tʋg n kẽnge – ne a tũudsã la y kʋdemd pʋgẽ.';
+
+  @override
+  String get onboardTitle3 => 'Ra n bãng kibay wakat fãa';
+
+  @override
+  String get onboardBody3 =>
+      'Nong-n-yɩɩda, y portfey la koosg gũusgo kõta yãmb kibay. Y vɛɛsgã kẽnd y masĩn pʋgẽ, n segd tɩ y le pak-ba.';
+
+  @override
+  String get onboardNext => 'Rẽnda';
+
+  @override
+  String get onboardStart => 'D sɩnge';
+
+  @override
+  String get onboardSkip => 'Bas-a';
 }

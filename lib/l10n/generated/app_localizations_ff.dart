@@ -1496,4 +1496,34 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kod nde kopiyaama';
+
+  @override
+  String get onboardTitle1 => 'Ƴettu natal aksiyoŋ';
+
+  @override
+  String get onboardBody1 =>
+      'Yaynirde jaaɓnirgal soodde aksiyoŋ, jaaynde walla maanndel sosiyete heewii: WhatStock heɓtinat aksiyoŋ ngoon, hollaa coggu mayru, natal mayru e limooje mayru tiiɗuɗe.';
+
+  @override
+  String get onboardTitle2 => 'Faamu ɗum e nder hojomaaji seeɗa';
+
+  @override
+  String get onboardBody2 =>
+      'Ƴeewndo AI ngo ina firta ko dillinta aksiyoŋ ngoon, kulɗe mayru, njaru mayru e laabi tati ɗi coggu ngu waawi rewde – e ɗo keɓe ɗee ummii, e ɗemngal maa.';
+
+  @override
+  String get onboardTitle3 => 'Wono e kabaaru sahaa kala';
+
+  @override
+  String get onboardBody3 =>
+      'Cuɓaaɗe, aksiyoŋ maa e tintine coggu ina tintina ma. Ƴeewndooji maa ina heddoo e kaɓirgol maa, a waawii udditde ɗi kadi sahaa kala.';
+
+  @override
+  String get onboardNext => 'Yeeso';
+
+  @override
+  String get onboardStart => 'Fuɗɗen';
+
+  @override
+  String get onboardSkip => 'Accu';
 }

@@ -1496,4 +1496,34 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get referralCopied => 'Код күчерелде';
+
+  @override
+  String get onboardTitle1 => 'Акцияне фотога төшерегез';
+
+  @override
+  String get onboardBody1 =>
+      'Брокер кушымтасы экраны, газета яки компания логотибы да җитә: WhatStock акцияне таный һәм аның бәясен, графигын, төп күрсәткечләрен күрсәтә.';
+
+  @override
+  String get onboardTitle2 => 'Берничә минутта аңлагыз';
+
+  @override
+  String get onboardBody2 =>
+      'AI анализы акцияне нәрсә хәрәкәткә китергәнен, куркынычларны, бәяләүне һәм бәянең кая таба китә алуы турында өч сценарийны аңлата – чыганаклар белән һәм сезнең телдә.';
+
+  @override
+  String get onboardTitle3 => 'Һәрвакыт хәбәрдар булыгыз';
+
+  @override
+  String get onboardBody3 =>
+      'Сайланмалар, портфелегез һәм бәя искәртүләре сезгә яңалыклар турында хәбәр итеп тора. Анализларыгыз җайланмагызда саклана, аларны теләсә кайчан яңадан ача аласыз.';
+
+  @override
+  String get onboardNext => 'Алга';
+
+  @override
+  String get onboardStart => 'Башлагыз';
+
+  @override
+  String get onboardSkip => 'Калдыру';
 }

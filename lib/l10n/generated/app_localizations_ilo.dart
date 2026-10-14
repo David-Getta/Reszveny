@@ -1512,4 +1512,34 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get referralCopied => 'Nakopya ti kodigo';
+
+  @override
+  String get onboardTitle1 => 'Retratuem ti stock';
+
+  @override
+  String get onboardBody1 =>
+      'Umanayen ti screen ti brokerage app, pagiwarnak wenno logo ti kompania: bigbigen ti WhatStock ti stock ket ipakitana ti presio, chart ken napateg a numerona.';
+
+  @override
+  String get onboardTitle2 => 'Maawatam iti sumagmamano a minuto';
+
+  @override
+  String get onboardBody2 =>
+      'Ilawlawag ti panangsukimat ti AI no ania ti mangtignay iti stock, dagiti peggad, ti pateg daytoy ken tallo a senario no papanan ti presio, addaan kadagiti nagtaudan ken iti bukodmo a pagsasao.';
+
+  @override
+  String get onboardTitle3 => 'Kanayon nga ammom';
+
+  @override
+  String get onboardBody3 =>
+      'Ti dagiti paborito, ti portfolio-m ken dagiti alerto ti presio ipakaammoda kenka. Agtalinaed dagiti panangsukimatmo iti device-mo, nakasagana a lukatam manen.';
+
+  @override
+  String get onboardNext => 'Sumaruno';
+
+  @override
+  String get onboardStart => 'Mangrugi';
+
+  @override
+  String get onboardSkip => 'Labsan';
 }

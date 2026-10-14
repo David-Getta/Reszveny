@@ -408,5 +408,14 @@
   "referralErrOwn": "A saját kódodat nem válthatod be.",
   "referralErrAlready": "Már beváltottad egy barátod kódját.",
   "referralShareText": "A WhatStockkal elemzem a részvényeket: lefotózod, és az AI elmagyarázza. A {code} kóddal kapsz {count, plural, =1{1 extra elemzést} other{{count} extra elemzést}}.",
-  "referralCopied": "Kód kimásolva"
+  "referralCopied": "Kód kimásolva",
+  "onboardTitle1": "Fotózz le egy részvényt",
+  "onboardBody1": "Elég egy brókerapp képernyője, egy újságcikk vagy egy céglogó: a WhatStock felismeri a részvényt, és megmutatja az árfolyamot, a grafikont és a fontos számokat.",
+  "onboardTitle2": "Percek alatt átlátod",
+  "onboardBody2": "Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad arra, merre mehet az ár – forrásokkal, a te nyelveden.",
+  "onboardTitle3": "Mindig képben leszel",
+  "onboardBody3": "A kedvencek, a portfóliód és az árfolyam-riasztások szólnak, ha történik valami. Az elemzéseid a készülékeden maradnak, bármikor újra megnyithatod őket.",
+  "onboardNext": "Tovább",
+  "onboardStart": "Kezdjük",
+  "onboardSkip": "Kihagyás"
 }

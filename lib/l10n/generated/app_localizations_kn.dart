@@ -1505,4 +1505,34 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get referralCopied => 'ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ';
+
+  @override
+  String get onboardTitle1 => 'ಷೇರಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ';
+
+  @override
+  String get onboardBody1 =>
+      'ಬ್ರೋಕರೇಜ್ ಆ್ಯಪ್‌ನ ಸ್ಕ್ರೀನ್, ಪತ್ರಿಕೆ ಅಥವಾ ಕಂಪನಿಯ ಲೋಗೋ ಸಾಕು: WhatStock ಷೇರನ್ನು ಗುರುತಿಸಿ ಅದರ ಬೆಲೆ, ಚಾರ್ಟ್ ಮತ್ತು ಪ್ರಮುಖ ಅಂಕಿಅಂಶಗಳನ್ನು ತೋರಿಸುತ್ತದೆ.';
+
+  @override
+  String get onboardTitle2 => 'ನಿಮಿಷಗಳಲ್ಲಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ';
+
+  @override
+  String get onboardBody2 =>
+      'AI ವಿಶ್ಲೇಷಣೆಯು ಷೇರಿನ ಚಲನೆಗೆ ಕಾರಣಗಳು, ಅಪಾಯಗಳು, ಮೌಲ್ಯಮಾಪನ ಮತ್ತು ಬೆಲೆ ಎತ್ತ ಸಾಗಬಹುದು ಎಂಬುದರ ಮೂರು ಸನ್ನಿವೇಶಗಳನ್ನು ಮೂಲಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲೇ ವಿವರಿಸುತ್ತದೆ.';
+
+  @override
+  String get onboardTitle3 => 'ಸದಾ ಅಪ್‌ಡೇಟ್ ಆಗಿರಿ';
+
+  @override
+  String get onboardBody3 =>
+      'ಮೆಚ್ಚಿನವುಗಳು, ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಮತ್ತು ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳು ನಿಮಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತಿರುತ್ತವೆ. ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಗಳು ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಉಳಿಯುತ್ತವೆ, ಮತ್ತೆ ತೆರೆಯಲು ಸಿದ್ಧವಾಗಿ.';
+
+  @override
+  String get onboardNext => 'ಮುಂದೆ';
+
+  @override
+  String get onboardStart => 'ಪ್ರಾರಂಭಿಸಿ';
+
+  @override
+  String get onboardSkip => 'ಬಿಟ್ಟುಬಿಡಿ';
 }

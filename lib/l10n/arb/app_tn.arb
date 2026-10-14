@@ -408,5 +408,14 @@
   "referralErrOwn": "Ga o kgone go dirisa khoutu ya gago.",
   "referralErrAlready": "O setse o dirisitse khoutu ya tsala.",
   "referralShareText": "Ke sekaseka diabe ka WhatStock: tsaya setshwantsho sa seabe mme AI e a se tlhalosa. Ka khoutu ya me {code} o bona {count, plural, =1{tshekatsheko e le nngwe e e oketsegileng} other{ditshekatsheko tse di oketsegileng di le {count}}}.",
-  "referralCopied": "Khoutu e kopilwe"
+  "referralCopied": "Khoutu e kopilwe",
+  "onboardTitle1": "Tsaya setshwantsho sa shere",
+  "onboardBody1": "Sekirini sa app ya borokara, lokwalodikgang kgotsa logo ya khampani di lekane: WhatStock e lemoga shere mme e go bontsha tlhwatlhwa ya yone, kerafo le dipalo tsa botlhokwa.",
+  "onboardTitle2": "E tlhaloganye mo metsotsong e le mmalwa",
+  "onboardBody2": "Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a gore tlhwatlhwa e ka ya kae, ka metswedi le ka puo ya gago.",
+  "onboardTitle3": "Nna o itse sotlhe",
+  "onboardBody3": "Tse o di ratang, potefolio ya gago le dikitsiso tsa tlhwatlhwa di go itsise se se diragalang. Ditshekatsheko tsa gago di nna mo sedirisiweng sa gago, di siametse go bulwa gape.",
+  "onboardNext": "E e latelang",
+  "onboardStart": "Simolola",
+  "onboardSkip": "Tlola"
 }

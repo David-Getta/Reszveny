@@ -68,6 +68,9 @@ class ReportStore extends ChangeNotifier {
   /// innen frissül a jogosultság a szerver szerinti állapotra.
   final Future<void> Function()? onQuotaChanged;
 
+  /// Minden sikeresen elkészült elemzés után (pl. értékelés-kéréshez).
+  void Function(StockReport report)? onGenerated;
+
   static const _prefix = 'report_';
 
   final Map<String, StockReport> _reports = {};
@@ -229,6 +232,7 @@ class ReportStore extends ChangeNotifier {
         options: options,
       );
       _reports[symbol] = r;
+      onGenerated?.call(r);
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();
       try {

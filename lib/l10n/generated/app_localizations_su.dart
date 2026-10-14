@@ -1500,4 +1500,34 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Kode disalin';
+
+  @override
+  String get onboardTitle1 => 'Poto hiji saham';
+
+  @override
+  String get onboardBody1 =>
+      'Cukup ku layar aplikasi sekuritas, koran atawa logo pausahaan: WhatStock bakal mikawanoh sahamna sarta mintonkeun hargana, grafikna jeung angka-angka pentingna.';
+
+  @override
+  String get onboardTitle2 => 'Paham dina sababaraha menit';
+
+  @override
+  String get onboardBody2 =>
+      'Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ka mana hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.';
+
+  @override
+  String get onboardTitle3 => 'Tetep apdet terus';
+
+  @override
+  String get onboardBody3 =>
+      'Paporit, portofolio anjeun jeung béwara harga bakal terus ngabéjaan anjeun. Analisis anjeun tetep aya dina alat anjeun, siap dibuka deui.';
+
+  @override
+  String get onboardNext => 'Salajengna';
+
+  @override
+  String get onboardStart => 'Mimitian';
+
+  @override
+  String get onboardSkip => 'Liwat';
 }

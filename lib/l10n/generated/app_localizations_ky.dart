@@ -1501,4 +1501,34 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get referralCopied => 'Код көчүрүлдү';
+
+  @override
+  String get onboardTitle1 => 'Акцияны сүрөткө тартыңыз';
+
+  @override
+  String get onboardBody1 =>
+      'Брокердик колдонмонун экраны, гезит же компаниянын логотиби жетиштүү: WhatStock акцияны таанып, анын баасын, графигин жана негизги көрсөткүчтөрүн көрсөтөт.';
+
+  @override
+  String get onboardTitle2 => 'Бир нече мүнөттө түшүнүңүз';
+
+  @override
+  String get onboardBody2 =>
+      'AI талдоосу акцияны эмне кыймылдатаарын, тобокелдиктерди, баалоону жана баа кайда кетиши мүмкүн экени тууралуу үч сценарийди булактары менен жана сиздин тилиңизде түшүндүрөт.';
+
+  @override
+  String get onboardTitle3 => 'Дайыма кабардар болуңуз';
+
+  @override
+  String get onboardBody3 =>
+      'Тандалмалар, портфелиңиз жана баа эскертмелери сизди дайыма кабардар кылат. Талдоолоруңуз түзмөгүңүздө сакталат, кайра ачууга даяр.';
+
+  @override
+  String get onboardNext => 'Кийинки';
+
+  @override
+  String get onboardStart => 'Баштоо';
+
+  @override
+  String get onboardSkip => 'Өткөрүп жиберүү';
 }

@@ -408,5 +408,14 @@
   "referralErrOwn": "Tsy azonao ampiasaina ny kaodinao manokana.",
   "referralErrAlready": "Efa nampiasa kaodin'ny namana ianao.",
   "referralShareText": "Mandalina aksiona amin'ny WhatStock aho: makà sary aksiona dia hazavain'ny AI izany. Amin'ny kaodiko {code} dia mahazo {count, plural, =1{1 fandalinana fanampiny} other{{count} fandalinana fanampiny}} ianao.",
-  "referralCopied": "Voadika ny kaody"
+  "referralCopied": "Voadika ny kaody",
+  "onboardTitle1": "Makà sarin'ny aksiona iray",
+  "onboardBody1": "Ampy ny efijerin'ny fampiharana broker, gazety na logon'ny orinasa: fantatr'i WhatStock ilay aksiona ary asehony anao ny vidiny, ny kisariny ary ny tarehimarika fototra.",
+  "onboardTitle2": "Azonao ao anatin'ny minitra vitsy",
+  "onboardBody2": "Ny Fandalinana AI dia manazava izay mampihetsika ny aksiona, ny loza mety hitranga, ny sandany ary toe-javatra telo momba ny mety halehan'ny vidiny – miaraka amin'ny loharano sy amin'ny fiteninao.",
+  "onboardTitle3": "Fantaro foana ny vaovao",
+  "onboardBody3": "Ny ankafizina, ny kitapom-bolanao ary ny fanairana vidiny no mampahafantatra anao ny vaovao. Mijanona ao amin'ny fitaovanao ny fandalinanao, vonona hosokafana indray.",
+  "onboardNext": "Manaraka",
+  "onboardStart": "Andao hanomboka",
+  "onboardSkip": "Dinganina"
 }

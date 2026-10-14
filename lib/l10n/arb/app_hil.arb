@@ -408,5 +408,14 @@
   "referralErrOwn": "Indi mo magamit ang imo kaugalingon nga code.",
   "referralErrAlready": "Nagamit mo na ang code sang imo abyan.",
   "referralShareText": "Ginaanalisa ko ang mga stock gamit ang WhatStock: kuhai sang litrato ang stock kag ipaathag ini sang AI. Sa akon code nga {code} makabaton ka sang {count, plural, =1{1 ka dugang nga analisis} other{{count} ka dugang nga analisis}}.",
-  "referralCopied": "Nakopya ang code"
+  "referralCopied": "Nakopya ang code",
+  "onboardTitle1": "Kuhai sang litrato ang stock",
+  "onboardBody1": "Bastante na ang screen sang brokerage app, pamantalaan ukon logo sang kompanya: kilalahon sang WhatStock ang stock kag ipakita ang presyo, chart kag importante nga mga numero sini.",
+  "onboardTitle2": "Intiendihon sa pila lang ka minuto",
+  "onboardBody2": "Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka senaryo kon diin mahimo makadto ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.",
+  "onboardTitle3": "Pirme updated",
+  "onboardBody3": "Ang mga paborito, imo portfolio kag mga alerto sa presyo magapahibalo sa imo. Ang imo mga analisis nagapabilin sa imo device, handa nga buksan liwat.",
+  "onboardNext": "Masunod",
+  "onboardStart": "Magsugod na",
+  "onboardSkip": "Laktawan"
 }

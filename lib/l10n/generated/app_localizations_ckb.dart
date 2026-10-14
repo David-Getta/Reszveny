@@ -1500,4 +1500,34 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get referralCopied => 'کۆد کۆپی کرا';
+
+  @override
+  String get onboardTitle1 => 'وێنەی پشکێک بگرە';
+
+  @override
+  String get onboardBody1 =>
+      'شاشەی ئەپی بڕۆکەر، ڕۆژنامەیەک یان لۆگۆی کۆمپانیایەک بەسە: WhatStock پشکەکە دەناسێتەوە و نرخ و هێڵکاری و ژمارە سەرەکییەکانی پیشان دەدات.';
+
+  @override
+  String get onboardTitle2 => 'لە چەند خولەکێکدا تێی بگە';
+
+  @override
+  String get onboardBody2 =>
+      'شیکاریی AI ڕوونی دەکاتەوە چی پشکەکە دەجووڵێنێت، مەترسییەکان، نرخاندنەکەی و سێ سیناریۆ بۆ ئەوەی نرخ بەرەو کوێ دەچێت – لەگەڵ سەرچاوەکان و بە زمانی خۆت.';
+
+  @override
+  String get onboardTitle3 => 'هەمیشە ئاگادار بە';
+
+  @override
+  String get onboardBody3 =>
+      'دڵخوازەکان، پۆرتفۆلیۆکەت و ئاگادارکەرەوەکانی نرخ ئاگادارت دەکەنەوە. شیکارییەکانت لەسەر ئامێرەکەت دەمێننەوە و هەر کاتێک بتەوێت دەتوانیت دووبارە بیانکەیتەوە.';
+
+  @override
+  String get onboardNext => 'دواتر';
+
+  @override
+  String get onboardStart => 'دەست پێبکە';
+
+  @override
+  String get onboardSkip => 'تێپەڕاندن';
 }
