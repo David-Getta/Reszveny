@@ -103,6 +103,18 @@ Megőrzés: napi összesítés 400 nap, napi aktív felhasználók (naponta más
 köthető hash) 90 nap, hibák 30 nap az utolsó előfordulás után. Az adatkezelési tájékoztatóba ezt
 is bele kell írni (lásd a jogi dokumentumot).
 
+## Nyitóoldal és megosztási linkek
+
+- A szerver címe (`https://<cím>/`) egy egyszerű nyitóoldalt mutat (magyarul vagy angolul, a böngésző
+  nyelve szerint): mire jó az app, letöltés Androidra, Macre és Windowsra (alapból a GitHub legutóbbi
+  kiadásából; más hely: `DOWNLOAD_BASE_URL`). Amíg az `INVITE_CODES` be van állítva, „zárt előzetes”
+  megjegyzés is látszik.
+- Ha valaki megoszt egy elemzést, az app a szövegbe egy `https://<cím>/s/<azonosító>` linket tesz.
+  A link oldala és az előnézete (WhatsApp, Messenger, X, iMessage) a megosztó nyelvén mutatja a
+  céget, a lényeget, a hangulatot és a forgatókönyveket a kártya képével. A link 180 napig él,
+  felhasználónként naponta legfeljebb 30 készül, és a fiók törlésekor törlődik.
+- Saját domainnel (pl. `whatstock.app`) a linkek is azt használják: a `PUBLIC_URL`-t kell átírni.
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

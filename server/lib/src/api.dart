@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:http/http.dart' as http;
 import 'package:markdown/markdown.dart' as md;
@@ -13,6 +14,8 @@ import 'mailer.dart';
 import 'plans.dart';
 import 'purchase_verifier.dart';
 import 'quota.dart';
+import 'shares.dart';
+import 'site_pages.dart';
 import 'stripe.dart';
 import 'telemetry.dart';
 
@@ -61,10 +64,18 @@ class Api {
     this.referralBonus = 5,
     this.referralMax = 10,
     this.adminToken = '',
+    this.downloadBaseUrl = 'https://github.com/David-Getta/Reszveny/releases/latest/download/',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store),
-       telemetry = TelemetryStore(store.database);
+       telemetry = TelemetryStore(store.database),
+       shares = ShareStore(store.database);
+
+  /// Megosztott elemzések nyilvános linkjei (`/s/<id>`).
+  final ShareStore shares;
+
+  /// A nyitóoldal letöltés-gombjainak alapcíme (a fájlnév hozzáfűzve).
+  final String downloadBaseUrl;
 
   /// Névtelen statisztika és hibajelentések (az app hozzájárulással küldi).
   final TelemetryStore telemetry;
@@ -145,6 +156,9 @@ class Api {
       ..post('/v1/auth/email/verify', _emailVerify)
       ..post('/v1/auth/logout', _logout)
       ..post('/v1/telemetry', _telemetry)
+      ..post('/v1/share', _createShare)
+      ..get('/s/<id>', _sharePage)
+      ..get('/', _landing)
       ..get('/admin', _adminLogin)
       ..post('/admin', _adminStats)
       ..get('/admin/stats.json', _adminStatsJson)
@@ -328,6 +342,66 @@ class Api {
       ..save(b);
   }
 
+  // ---- Megosztás nyilvános linkkel ----
+
+  static final _shareId = RegExp(r'^[A-Za-z0-9]{6,16}$');
+
+  /// `POST /v1/share`: az app elküldi a megosztott elemzés nyilvános részét
+  /// (és az előnézeti képet); a válasz a link.
+  Future<Response> _createShare(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final body = await _body(r);
+    final data = cleanShare(body);
+    if (data == null) return _error(400, 'bad_share');
+    Uint8List? image;
+    final b64 = body['image'];
+    if (b64 is String && b64.isNotEmpty) {
+      try {
+        image = base64Decode(b64);
+      } catch (_) {
+        return _error(400, 'bad_image');
+      }
+      const png = [0x89, 0x50, 0x4E, 0x47];
+      final isPng = image.length > 8 && List.generate(4, (i) => image![i]).join() == png.join();
+      if (!isPng || image.length > ShareStore.maxImageBytes) return _error(400, 'bad_image');
+    }
+    if (shares.createdToday(uid) >= ShareStore.perDay) return _error(429, 'share_limit');
+    final id = shares.save(uid, data, image);
+    return _json({'id': id, 'url': '$publicUrl/s/$id'});
+  }
+
+  Response _sharePage(Request r, String id) {
+    final png = id.endsWith('.png');
+    final key = png ? id.substring(0, id.length - 4) : id;
+    if (!_shareId.hasMatch(key)) return _html(shareMissingPage(), status: 404);
+    if (png) {
+      final img = shares.image(key);
+      if (img == null) return Response.notFound('not found');
+      return Response.ok(img, headers: {'content-type': 'image/png', 'cache-control': 'public, max-age=86400'});
+    }
+    final s = shares.find(key, countView: true);
+    if (s == null) return _html(shareMissingPage(), status: 404);
+    return Response.ok(
+      sharePage(s, publicUrl: publicUrl),
+      headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300'},
+    );
+  }
+
+  /// A nyitóoldal a böngésző nyelvén (magyar vagy angol).
+  Response _landing(Request r) {
+    final asked = (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase();
+    return Response.ok(
+      landingPage(
+        lang: asked.startsWith('hu') ? 'hu' : 'en',
+        downloadBase: downloadBaseUrl,
+        closedPreview: invites.enabled,
+        publicUrl: publicUrl,
+      ),
+      headers: {'content-type': 'text/html; charset=utf-8'},
+    );
+  }
+
   // ---- Névtelen statisztika ----
 
   Future<Response> _telemetry(Request r) async {
@@ -440,6 +514,7 @@ class Api {
         return _error(502, 'stripe_cancel_failed', '$e');
       }
     }
+    shares.deleteUser(uid);
     store.deleteUser(uid);
     return _json({'deleted': true, 'stripe_subscription_cancelled': cancelled});
   }

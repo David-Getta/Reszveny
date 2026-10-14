@@ -300,6 +300,18 @@ class BackendClient {
     return _entitlements(_decode(res));
   }
 
+  /// `POST /v1/share` → nyilvános link a megosztott elemzéshez (előnézeti képpel).
+  Future<String> createShare(Map<String, dynamic> share) async {
+    final res = await _authorized(
+      (h) => _inner.post(
+        Uri.parse('$baseUrl/v1/share'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode(share),
+      ),
+    );
+    return _decode(res)['url'] as String;
+  }
+
   /// `POST /v1/telemetry` → névtelen eseményszámok és hibajelentések (csak a
   /// felhasználó hozzájárulásával küldjük).
   Future<void> sendTelemetry(Map<String, dynamic> batch) async {

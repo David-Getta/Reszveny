@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -173,6 +175,54 @@ class AnalysisShareCard extends StatelessWidget {
 
 /// Megosztás: előnézet a kártyáról, alatta „Megosztás képként” és
 /// „Megosztás szövegként”.
+/// A nyilvános link adatai: amit a megosztó oldal (`/s/<id>`) és a link-előnézet
+/// mutat, a felhasználó nyelvén megfogalmazott feliratokkal együtt.
+Map<String, dynamic> sharePayload(
+  StockReport r, {
+  required String companyName,
+  required AppLocalizations l10n,
+  required Fmt fmt,
+  required String lang,
+  Uint8List? image,
+}) {
+  final o = r.outlook;
+  final ccy = o?.currency;
+  final likely = o?.mostLikely?.kind;
+  String range(Scenario s) => switch ((s.priceLow, s.priceHigh)) {
+    (final lo?, final hi?) => '${fmt.price(lo, null)}–${fmt.price(hi, ccy)}',
+    (final v?, null) || (null, final v?) => fmt.price(v, ccy),
+    _ => '',
+  };
+  return {
+    'symbol': r.symbol,
+    'company': companyName,
+    'headline': r.headline,
+    'lang': lang,
+    'generated_at': r.generatedAt.toUtc().toIso8601String(),
+    if (o?.currentPrice case final p?) 'price': fmt.price(p, ccy),
+    if (o?.marketMood case final m?) ...{'mood': m, 'mood_label': moodLabel(l10n, m)},
+    'scenarios': [
+      for (final s in o?.scenarios ?? const <Scenario>[])
+        {
+          'kind': s.kind.name,
+          'label': scenarioLabel(l10n, s.kind),
+          'probability': s.probability.round(),
+          'range': range(s),
+          'likely': s.kind == likely,
+        },
+    ],
+    'labels': {
+      'mood': l10n.outlookMarketMood,
+      'likely': l10n.scenarioMostLikely,
+      'generated': l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt)),
+      'disclaimer': l10n.aiDisclaimer,
+      'cta': l10n.onboardStart,
+      'tagline': l10n.onboardTitle1,
+    },
+    'image': ?(image == null ? null : base64Encode(image)),
+  };
+}
+
 Future<void> showShareSheet(
   BuildContext context, {
   required StockReport report,
@@ -206,23 +256,72 @@ class _ShareSheetState extends State<_ShareSheet> {
 
   String get _subject => '${widget.report.symbol} · WhatStock';
 
+  /// A kártya PNG-ként ([pixelRatio] 3 = 1080×1350 képpont).
+  Future<Uint8List?> _capture(double pixelRatio) async {
+    final box = _boundary.currentContext!.findRenderObject()! as RenderRepaintBoundary;
+    final image = await box.toImage(pixelRatio: pixelRatio);
+    final data = await image.toByteData(format: ui.ImageByteFormat.png);
+    image.dispose();
+    return data?.buffer.asUint8List();
+  }
+
+  /// Nyilvános link (backend-módban): egyszer készül, mindkét gomb használja.
+  /// Ha nem sikerül, link nélkül osztunk meg.
+  Future<String?>? _link;
+
+  Future<String?> _ensureLink() => _link ??= _createLink();
+
+  Future<String?> _createLink() async {
+    final backend = AppServices.of(context).backend;
+    if (backend == null) return null;
+    final l10n = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).toLanguageTag();
+    try {
+      // Az előnézethez kisebb kép is elég (540×675), így gyorsan betölt.
+      final preview = await _capture(1.5);
+      final payload = sharePayload(
+        widget.report,
+        companyName: widget.companyName,
+        l10n: l10n,
+        fmt: widget.fmt,
+        lang: lang,
+        image: preview,
+      );
+      return await backend.createShare(payload).timeout(const Duration(seconds: 12));
+    } catch (e) {
+      debugPrint('Megosztási link nem készült: $e');
+      _link = null;
+      return null;
+    }
+  }
+
   Future<void> _shareImage(BuildContext buttonContext) async {
     final origin = shareOriginOf(buttonContext);
     AppServices.of(context).telemetry.track('share_image');
     setState(() => _busy = true);
     try {
-      final box = _boundary.currentContext!.findRenderObject()! as RenderRepaintBoundary;
-      final image = await box.toImage(pixelRatio: 3);
-      final data = await image.toByteData(format: ui.ImageByteFormat.png);
-      image.dispose();
-      if (data == null) return;
+      final png = await _capture(3);
+      if (png == null) return;
+      final link = await _ensureLink();
       await shareImage(
-        data.buffer.asUint8List(),
+        png,
         fileName: 'whatstock-${widget.report.symbol.toLowerCase()}.png',
-        text: widget.report.headline,
+        text: link == null ? widget.report.headline : '${widget.report.headline}\n$link',
         subject: _subject,
         origin: origin,
       );
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  Future<void> _shareText(BuildContext buttonContext) async {
+    final origin = shareOriginOf(buttonContext);
+    AppServices.of(context).telemetry.track('share_text');
+    setState(() => _busy = true);
+    try {
+      final link = await _ensureLink();
+      await shareText(link == null ? widget.text : '${widget.text}\n\n$link', subject: _subject, origin: origin);
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -269,10 +368,7 @@ class _ShareSheetState extends State<_ShareSheet> {
                 Builder(
                   builder: (btn) => OutlinedButton.icon(
                     key: const ValueKey('share-text'),
-                    onPressed: () {
-                      AppServices.of(context).telemetry.track('share_text');
-                      shareText(widget.text, subject: _subject, origin: shareOriginOf(btn));
-                    },
+                    onPressed: _busy ? null : () => _shareText(btn),
                     icon: Icon(Icons.notes_rounded, size: 18, color: p.accent),
                     label: Text(l10n.shareAsText),
                   ),
