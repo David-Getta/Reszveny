@@ -396,5 +396,17 @@
   "shareAsImage": "Рәсем итеп бүлешү",
   "shareAsText": "Текст итеп бүлешү",
   "shareCardFooter": "WhatStock ярдәмендә ясалган",
-  "shareCardDisclaimer": "AI анализы · инвестиция киңәше түгел"
+  "shareCardDisclaimer": "AI анализы · инвестиция киңәше түгел",
+  "referralTitle": "Дусларны чакыру",
+  "referralBody": "Кодыгыз белән бүлешегез. Дустыгыз шунда ук {count, plural, =1{1 өстәмә анализ} other{{count} өстәмә анализ}} ала, ә сез аның беренче анализыннан соң шулкадәр үк аласыз.",
+  "referralYourCode": "Сезнең код",
+  "referralStats": "Чакырылган: {invited} · Бүләкләнгән: {rewarded}",
+  "referralHaveCode": "Дустыгыздан код бармы?",
+  "referralRedeem": "Куллану",
+  "referralRedeemed": "{count, plural, =1{1 өстәмә анализ өстәлде. Рәхим итегез!} other{{count} өстәмә анализ өстәлде. Рәхим итегез!}}",
+  "referralErrUnknown": "Мондый код юк. Тикшерегез һәм кабат тырышып карагыз.",
+  "referralErrOwn": "Үз кодыгызны куллана алмыйсыз.",
+  "referralErrAlready": "Сез инде дустыгызның кодын кулландыгыз.",
+  "referralShareText": "Мин акцияләрне WhatStock белән анализлыйм: акциянең фотосын төшерегез, ә AI аны аңлатып бирә. Минем {code} кодым белән сез {count, plural, =1{1 өстәмә анализ} other{{count} өстәмә анализ}} аласыз.",
+  "referralCopied": "Код күчерелде"
 }

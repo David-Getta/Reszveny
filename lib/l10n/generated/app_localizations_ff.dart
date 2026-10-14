@@ -1433,4 +1433,67 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Ƴeewndo AI · wonaa wasiya e investisman';
+
+  @override
+  String get referralTitle => 'Noddu sehilaaɓe maa';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ƴeewndooji ɓeydiiɗi $count',
+      one: 'ƴeewndo ɓeydiingo 1',
+    );
+    return 'Lollin kod maa. Sehil maa heɓay $_temp0 ɗoon e ɗoon, an kadi heɓay ko foti ɗum caggal ƴeewndo makko aranndo.';
+  }
+
+  @override
+  String get referralYourCode => 'Kod maa';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Noddaaɓe: $invited · Njeenaaɗe: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'A jogii kod immorde e sehil maa?';
+
+  @override
+  String get referralRedeem => 'Huutoro';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ƴeewndooji ɓeydiiɗi $count ɓeydaama. A jaɓɓaama!',
+      one: 'Ƴeewndo ɓeydiingo 1 ɓeydaama. A jaɓɓaama!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ndee kod woodaani. Ƴeewto nde refti eto goɗngol.';
+
+  @override
+  String get referralErrOwn => 'A waawaa huutoraade kod maa e hoore maa.';
+
+  @override
+  String get referralErrAlready => 'A huutoriima kod sehil maa gila law.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ƴeewndooji ɓeydiiɗi $count',
+      one: 'ƴeewndo ɓeydiingo 1',
+    );
+    return 'Mi ƴeewnda aksiyoŋaaji e WhatStock: ƴettu natal aksiyoŋ, AI firta ɗum. E kod am $code a heɓay $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kod nde kopiyaama';
 }

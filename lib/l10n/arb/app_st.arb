@@ -396,5 +396,17 @@
   "shareAsImage": "Arolelana jwalo ka setshwantsho",
   "shareAsText": "Arolelana jwalo ka mongolo",
   "shareCardFooter": "E entswe ka WhatStock",
-  "shareCardDisclaimer": "Tlhahlobo ya AI · hase keletso ya ho tsetela"
+  "shareCardDisclaimer": "Tlhahlobo ya AI · hase keletso ya ho tsetela",
+  "referralTitle": "Mema metswalle",
+  "referralBody": "Arolelana khoutu ya hao. Motswalle wa hao o fumana {count, plural, =1{tlhahlobo e le nngwe e eketsehileng} other{ditlhahlobo tse eketsehileng tse {count}}} hang-hang, mme le wena o fumana tse tshwanang kamora tlhahlobo ya hae ya pele.",
+  "referralYourCode": "Khoutu ya hao",
+  "referralStats": "Ba memilweng: {invited} · Meputso: {rewarded}",
+  "referralHaveCode": "Na o na le khoutu ya motswalle?",
+  "referralRedeem": "Sebedisa",
+  "referralRedeemed": "{count, plural, =1{Ho eketsitswe tlhahlobo e le nngwe. Rea o amohela!} other{Ho eketsitswe ditlhahlobo tse {count}. Rea o amohela!}}",
+  "referralErrUnknown": "Khoutu ena ha e yo. E hlahlobe mme o leke hape.",
+  "referralErrOwn": "O ke ke wa sebedisa khoutu ya hao.",
+  "referralErrAlready": "O se o sebedisitse khoutu ya motswalle.",
+  "referralShareText": "Ke hlahloba diabo ka WhatStock: nka foto ya kabo mme AI e a e hlalosa. Ka khoutu ya ka {code} o fumana {count, plural, =1{tlhahlobo e le nngwe e eketsehileng} other{ditlhahlobo tse eketsehileng tse {count}}}.",
+  "referralCopied": "Khoutu e kopilwe"
 }

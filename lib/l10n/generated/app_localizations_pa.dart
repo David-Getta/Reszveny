@@ -1432,4 +1432,68 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI ਵਿਸ਼ਲੇਸ਼ਣ · ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ';
+
+  @override
+  String get referralTitle => 'ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ',
+      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
+    );
+    return 'ਆਪਣਾ ਕੋਡ ਸਾਂਝਾ ਕਰੋ। ਤੁਹਾਡੇ ਦੋਸਤ ਨੂੰ ਤੁਰੰਤ $_temp0, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਹਿਲੇ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਵੀ ਇੰਨਾ ਹੀ ਮਿਲੇਗਾ।';
+  }
+
+  @override
+  String get referralYourCode => 'ਤੁਹਾਡਾ ਕੋਡ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'ਸੱਦੇ ਗਏ: $invited · ਇਨਾਮ ਮਿਲਿਆ: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਹੈ?';
+
+  @override
+  String get referralRedeem => 'ਰਿਡੀਮ ਕਰੋ';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜੇ ਗਏ। ਜੀ ਆਇਆਂ ਨੂੰ!',
+      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜਿਆ ਗਿਆ। ਜੀ ਆਇਆਂ ਨੂੰ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ਇਹ ਕੋਡ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get referralErrOwn => 'ਤੁਸੀਂ ਆਪਣਾ ਕੋਡ ਰਿਡੀਮ ਨਹੀਂ ਕਰ ਸਕਦੇ।';
+
+  @override
+  String get referralErrAlready =>
+      'ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਰਿਡੀਮ ਕਰ ਚੁੱਕੇ ਹੋ।';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ',
+      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
+    );
+    return 'WhatStock ਮੇਰੇ ਲਈ ਸ਼ੇਅਰਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦਾ ਹੈ: ਸ਼ੇਅਰ ਦੀ ਫੋਟੋ ਖਿੱਚੋ ਅਤੇ AI ਉਸਨੂੰ ਸਮਝਾਉਂਦੀ ਹੈ। ਮੇਰੇ ਕੋਡ $code ਨਾਲ ਤੁਹਾਨੂੰ $_temp0।';
+  }
+
+  @override
+  String get referralCopied => 'ਕੋਡ ਕਾਪੀ ਹੋ ਗਿਆ';
 }

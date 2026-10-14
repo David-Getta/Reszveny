@@ -396,5 +396,17 @@
   "shareAsImage": "Поділитися зображенням",
   "shareAsText": "Поділитися текстом",
   "shareCardFooter": "Створено у WhatStock",
-  "shareCardDisclaimer": "ШІ-аналіз · не інвестиційна порада"
+  "shareCardDisclaimer": "ШІ-аналіз · не інвестиційна порада",
+  "referralTitle": "Запросіть друзів",
+  "referralBody": "Поділіться своїм кодом. Ваш друг одразу отримає {count, plural, one{{count} додатковий аналіз} few{{count} додаткові аналізи} many{{count} додаткових аналізів} other{{count} додаткового аналізу}}, а ви — стільки ж після його першого аналізу.",
+  "referralYourCode": "Ваш код",
+  "referralStats": "Запрошено: {invited} · Винагороджено: {rewarded}",
+  "referralHaveCode": "Маєте код від друга?",
+  "referralRedeem": "Активувати",
+  "referralRedeemed": "{count, plural, one{Додано {count} додатковий аналіз. Вітаємо!} few{Додано {count} додаткові аналізи. Вітаємо!} many{Додано {count} додаткових аналізів. Вітаємо!} other{Додано {count} додаткового аналізу. Вітаємо!}}",
+  "referralErrUnknown": "Такого коду не існує. Перевірте його та спробуйте ще раз.",
+  "referralErrOwn": "Не можна активувати власний код.",
+  "referralErrAlready": "Ви вже активували код друга.",
+  "referralShareText": "Я аналізую акції у WhatStock: сфотографуйте акцію, і ШІ її пояснить. З моїм кодом {code} ви отримаєте {count, plural, one{{count} додатковий аналіз} few{{count} додаткові аналізи} many{{count} додаткових аналізів} other{{count} додаткового аналізу}}.",
+  "referralCopied": "Код скопійовано"
 }

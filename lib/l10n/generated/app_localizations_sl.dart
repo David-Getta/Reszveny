@@ -1480,4 +1480,74 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analiza AI · ni naložbeni nasvet';
+
+  @override
+  String get referralTitle => 'Povabi prijatelje';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatnih analiz',
+      few: '$count dodatne analize',
+      two: '$count dodatni analizi',
+      one: '$count dodatno analizo',
+    );
+    return 'Deli svojo kodo. Prijatelj takoj dobi $_temp0, ti pa enako po prijateljevi prvi analizi.';
+  }
+
+  @override
+  String get referralYourCode => 'Tvoja koda';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Povabljeni: $invited · Nagrajeni: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Imaš kodo prijatelja?';
+
+  @override
+  String get referralRedeem => 'Unovči';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodanih je $count dodatnih analiz. Dobrodošli!',
+      few: 'Dodane so $count dodatne analize. Dobrodošli!',
+      two: 'Dodani sta $count dodatni analizi. Dobrodošli!',
+      one: 'Dodana je $count dodatna analiza. Dobrodošli!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ta koda ne obstaja. Preveri jo in poskusi znova.';
+
+  @override
+  String get referralErrOwn => 'Svoje kode ne moreš unovčiti.';
+
+  @override
+  String get referralErrAlready =>
+      'V tem računu je bila koda prijatelja že unovčena.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatnih analiz',
+      few: '$count dodatne analize',
+      two: '$count dodatni analizi',
+      one: '$count dodatno analizo',
+    );
+    return 'Delnice analiziram z WhatStock: fotografiraj delnico in AI ti jo razloži. Z mojo kodo $code dobiš $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Koda kopirana';
 }

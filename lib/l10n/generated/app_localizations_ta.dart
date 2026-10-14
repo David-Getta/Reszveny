@@ -1442,4 +1442,69 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI பகுப்பாய்வு · முதலீட்டு ஆலோசனை அல்ல';
+
+  @override
+  String get referralTitle => 'நண்பர்களை அழை';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count கூடுதல் பகுப்பாய்வுகள்',
+      one: '1 கூடுதல் பகுப்பாய்வு',
+    );
+    return 'உங்கள் குறியீட்டைப் பகிர். உங்கள் நண்பருக்கு உடனே $_temp0 கிடைக்கும், அவரது முதல் பகுப்பாய்வுக்குப் பிறகு உங்களுக்கும் அதே அளவு கிடைக்கும்.';
+  }
+
+  @override
+  String get referralYourCode => 'உங்கள் குறியீடு';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'அழைத்தவர்கள்: $invited · வெகுமதிகள்: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'நண்பரின் குறியீடு உள்ளதா?';
+
+  @override
+  String get referralRedeem => 'பயன்படுத்து';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count கூடுதல் பகுப்பாய்வுகள் சேர்க்கப்பட்டன. வரவேற்கிறோம்!',
+      one: '1 கூடுதல் பகுப்பாய்வு சேர்க்கப்பட்டது. வரவேற்கிறோம்!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'இந்தக் குறியீடு இல்லை. சரிபார்த்து மீண்டும் முயலவும்.';
+
+  @override
+  String get referralErrOwn =>
+      'உங்கள் சொந்தக் குறியீட்டைப் பயன்படுத்த முடியாது.';
+
+  @override
+  String get referralErrAlready =>
+      'நண்பரின் குறியீட்டை ஏற்கனவே பயன்படுத்திவிட்டீர்கள்.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count கூடுதல் பகுப்பாய்வுகள்',
+      one: '1 கூடுதல் பகுப்பாய்வு',
+    );
+    return 'நான் WhatStock மூலம் பங்குகளைப் பகுப்பாய்வு செய்கிறேன்: ஒரு பங்கைப் படம் எடுத்தால், AI அதை விளக்கும். என் குறியீடு $code மூலம் உங்களுக்கு $_temp0 கிடைக்கும்.';
+  }
+
+  @override
+  String get referralCopied => 'குறியீடு நகலெடுக்கப்பட்டது';
 }

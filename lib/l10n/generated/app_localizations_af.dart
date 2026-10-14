@@ -1439,4 +1439,67 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI-ontleding · nie beleggingsadvies nie';
+
+  @override
+  String get referralTitle => 'Nooi vriende';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ekstra ontledings',
+      one: '1 ekstra ontleding',
+    );
+    return 'Deel jou kode. Jou vriend kry dadelik $_temp0, en jy kry dieselfde ná hul eerste ontleding.';
+  }
+
+  @override
+  String get referralYourCode => 'Jou kode';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Genooi: $invited · Beloon: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Het jy ’n kode van ’n vriend?';
+
+  @override
+  String get referralRedeem => 'Lös in';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ekstra ontledings bygevoeg. Welkom!',
+      one: '1 ekstra ontleding bygevoeg. Welkom!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Hierdie kode bestaan nie. Gaan dit na en probeer weer.';
+
+  @override
+  String get referralErrOwn => 'Jy kan nie jou eie kode inlos nie.';
+
+  @override
+  String get referralErrAlready => 'Jy het reeds ’n vriend se kode ingelos.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ekstra ontledings',
+      one: '1 ekstra ontleding',
+    );
+    return 'Ek ontleed aandele met WhatStock: neem ’n foto van ’n aandeel en die AI verduidelik dit. Met my kode $code kry jy $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kode gekopieer';
 }

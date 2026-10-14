@@ -1443,4 +1443,67 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Isesengura rya AI · si inama yo gushora imari';
+
+  @override
+  String get referralTitle => 'Tumira inshuti';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'amasesengura $count y\'inyongera',
+      one: 'isesengura 1 ry\'inyongera',
+    );
+    return 'Sangiza kode yawe. Inshuti yawe ihita ibona $_temp0, nawe ukabona nk\'ibyo nyuma y\'isesengura ryayo rya mbere.';
+  }
+
+  @override
+  String get referralYourCode => 'Kode yawe';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Abatumiwe: $invited · Abahembwe: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ufite kode y\'inshuti?';
+
+  @override
+  String get referralRedeem => 'Koresha';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wongerewe amasesengura $count y\'inyongera. Murakaza neza!',
+      one: 'Wongerewe isesengura 1 ry\'inyongera. Murakaza neza!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Iyi kode ntibaho. Yigenzure wongere ugerageze.';
+
+  @override
+  String get referralErrOwn => 'Ntushobora gukoresha kode yawe bwite.';
+
+  @override
+  String get referralErrAlready => 'Wamaze gukoresha kode y\'inshuti.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'amasesengura $count y\'inyongera',
+      one: 'isesengura 1 ry\'inyongera',
+    );
+    return 'Nsesengura imigabane nkoresheje WhatStock: fotora umugabane, AI ikawusobanura. Ukoresheje kode yanjye $code ubona $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kode yakopowe';
 }

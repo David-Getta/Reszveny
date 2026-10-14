@@ -1432,4 +1432,67 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analisis AI · bukan saran investasi';
+
+  @override
+  String get referralTitle => 'Undang teman';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan',
+      one: '1 analisis tambahan',
+    );
+    return 'Bagikan kode Anda. Teman Anda langsung mendapat $_temp0, dan Anda mendapat jumlah yang sama setelah analisis pertamanya.';
+  }
+
+  @override
+  String get referralYourCode => 'Kode Anda';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Diundang: $invited · Diberi hadiah: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Punya kode dari teman?';
+
+  @override
+  String get referralRedeem => 'Tukarkan';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan telah ditambahkan. Selamat datang!',
+      one: '1 analisis tambahan telah ditambahkan. Selamat datang!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Kode ini tidak ada. Periksa lalu coba lagi.';
+
+  @override
+  String get referralErrOwn => 'Anda tidak dapat menukarkan kode Anda sendiri.';
+
+  @override
+  String get referralErrAlready => 'Anda sudah pernah menukarkan kode teman.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan',
+      one: '1 analisis tambahan',
+    );
+    return 'Saya menganalisis saham dengan WhatStock: foto sahamnya dan AI akan menjelaskannya. Dengan kode saya $code kamu mendapat $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kode disalin';
 }

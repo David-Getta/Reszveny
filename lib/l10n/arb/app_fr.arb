@@ -396,5 +396,17 @@
   "shareAsImage": "Partager en image",
   "shareAsText": "Partager en texte",
   "shareCardFooter": "Créé avec WhatStock",
-  "shareCardDisclaimer": "Analyse IA · pas un conseil en investissement"
+  "shareCardDisclaimer": "Analyse IA · pas un conseil en investissement",
+  "referralTitle": "Inviter des amis",
+  "referralBody": "Partagez votre code. Votre ami reçoit immédiatement {count, plural, =1{1 analyse supplémentaire} other{{count} analyses supplémentaires}}, et vous recevez la même chose après sa première analyse.",
+  "referralYourCode": "Votre code",
+  "referralStats": "Invités : {invited} · Récompensés : {rewarded}",
+  "referralHaveCode": "Vous avez le code d’un ami ?",
+  "referralRedeem": "Utiliser",
+  "referralRedeemed": "{count, plural, =1{1 analyse supplémentaire ajoutée. Bienvenue !} other{{count} analyses supplémentaires ajoutées. Bienvenue !}}",
+  "referralErrUnknown": "Ce code n’existe pas. Vérifiez-le et réessayez.",
+  "referralErrOwn": "Vous ne pouvez pas utiliser votre propre code.",
+  "referralErrAlready": "Vous avez déjà utilisé le code d’un ami.",
+  "referralShareText": "J’analyse des actions avec WhatStock : photographiez une action et l’IA vous l’explique. Avec mon code {code}, vous obtenez {count, plural, =1{1 analyse supplémentaire} other{{count} analyses supplémentaires}}.",
+  "referralCopied": "Code copié"
 }

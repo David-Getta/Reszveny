@@ -1448,4 +1448,68 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Panangsukimat ti AI · saan a balakad iti panagpuonan';
+
+  @override
+  String get referralTitle => 'Awisem dagiti gagayyem';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a nayon a panangsukimat',
+      one: '1 a nayon a panangsukimat',
+    );
+    return 'Ibingaymo ti kodigom. Dagus a maalan ti gayyemmo ti $_temp0, ket maalam met ti isu met laeng kalpasan ti umuna a panangsukimatna.';
+  }
+
+  @override
+  String get referralYourCode => 'Ti kodigom';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Naawis: $invited · Nagunggonaan: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Adda kadi kodigom manipud iti gayyem?';
+
+  @override
+  String get referralRedeem => 'Usaren';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Nainayon ti $count a nayon a panangsukimat. Naragsak nga isasangpet!',
+      one: 'Nainayon ti 1 a nayon a panangsukimat. Naragsak nga isasangpet!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Awan daytoy a kodigo. Kitaem ket padasem manen.';
+
+  @override
+  String get referralErrOwn => 'Saanmo a mausar ti bukodmo a kodigo.';
+
+  @override
+  String get referralErrAlready => 'Inusarmon ti kodigo ti maysa a gayyem.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a nayon a panangsukimat',
+      one: '1 a nayon a panangsukimat',
+    );
+    return 'Sukimatek dagiti stock babaen ti WhatStock: ladawam ti stock ket ilawlawag ti AI. Babaen ti kodigok a $code maalam ti $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Nakopya ti kodigo';
 }

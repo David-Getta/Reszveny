@@ -396,5 +396,17 @@
   "shareAsImage": "Rikch'a hina rakiy",
   "shareAsText": "Qillqa hina rakiy",
   "shareCardFooter": "WhatStockwan ruwasqa",
-  "shareCardDisclaimer": "AI t'aqwiy · manan qullqi churanapaq yuyaychaychu"
+  "shareCardDisclaimer": "AI t'aqwiy · manan qullqi churanapaq yuyaychaychu",
+  "referralTitle": "Masiykikunata waqyay",
+  "referralBody": "Kódigoykita rakiy. Masiyki chayllam {count, plural, =1{1 yapa t'aqwiyta} other{{count} yapa t'aqwiyta}} chaskin, qanpas kikinta chaskinki ñawpaq t'aqwiyninta ruwasqan qhipata.",
+  "referralYourCode": "Kódigoyki",
+  "referralStats": "Waqyasqakuna: {invited} · Premiyasqakuna: {rewarded}",
+  "referralHaveCode": "Masiykiq kódigonchu kapusunki?",
+  "referralRedeem": "Llamk'achiy",
+  "referralRedeemed": "{count, plural, =1{1 yapa t'aqwiy yapakun. Sumaq hamusqayki!} other{{count} yapa t'aqwiy yapakun. Sumaq hamusqayki!}}",
+  "referralErrUnknown": "Kay kódigoqa manam kanchu. Qhawarispa wakmanta kallpachakuy.",
+  "referralErrOwn": "Manam kikiykiq kódigoykita llamk'achiyta atinkichu.",
+  "referralErrAlready": "Ñam huk masiykiq kódigonta llamk'achirqankiña.",
+  "referralShareText": "WhatStockwan accionkunata t'aqwini: huk accionta fotografiay, AI-taq sut'inchan. {code} kódigoywan {count, plural, =1{1 yapa t'aqwiyta} other{{count} yapa t'aqwiyta}} chaskinki.",
+  "referralCopied": "Kódigo copiasqa"
 }

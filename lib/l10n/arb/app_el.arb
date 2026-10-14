@@ -396,5 +396,17 @@
   "shareAsImage": "Κοινοποίηση ως εικόνα",
   "shareAsText": "Κοινοποίηση ως κείμενο",
   "shareCardFooter": "Δημιουργήθηκε με το WhatStock",
-  "shareCardDisclaimer": "Ανάλυση AI · όχι επενδυτική συμβουλή"
+  "shareCardDisclaimer": "Ανάλυση AI · όχι επενδυτική συμβουλή",
+  "referralTitle": "Προσκαλέστε φίλους",
+  "referralBody": "Μοιραστείτε τον κωδικό σας. Ο φίλος σας παίρνει αμέσως {count, plural, =1{1 επιπλέον ανάλυση} other{{count} επιπλέον αναλύσεις}} και εσείς το ίδιο μετά την πρώτη του ανάλυση.",
+  "referralYourCode": "Ο κωδικός σας",
+  "referralStats": "Προσκλήθηκαν: {invited} · Ανταμείφθηκαν: {rewarded}",
+  "referralHaveCode": "Έχετε κωδικό από φίλο;",
+  "referralRedeem": "Εξαργύρωση",
+  "referralRedeemed": "{count, plural, =1{Προστέθηκε 1 επιπλέον ανάλυση. Καλώς ήρθατε!} other{Προστέθηκαν {count} επιπλέον αναλύσεις. Καλώς ήρθατε!}}",
+  "referralErrUnknown": "Αυτός ο κωδικός δεν υπάρχει. Ελέγξτε τον και δοκιμάστε ξανά.",
+  "referralErrOwn": "Δεν μπορείτε να εξαργυρώσετε τον δικό σας κωδικό.",
+  "referralErrAlready": "Έχετε ήδη εξαργυρώσει τον κωδικό ενός φίλου.",
+  "referralShareText": "Αναλύω μετοχές με το WhatStock: φωτογραφίζετε μια μετοχή και η AI σάς την εξηγεί. Με τον κωδικό μου {code} παίρνετε {count, plural, =1{1 επιπλέον ανάλυση} other{{count} επιπλέον αναλύσεις}}.",
+  "referralCopied": "Ο κωδικός αντιγράφηκε"
 }

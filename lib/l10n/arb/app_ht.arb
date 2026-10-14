@@ -396,5 +396,17 @@
   "shareAsImage": "Pataje kòm imaj",
   "shareAsText": "Pataje kòm tèks",
   "shareCardFooter": "Fèt ak WhatStock",
-  "shareCardDisclaimer": "Analiz AI · se pa yon konsèy envestisman"
+  "shareCardDisclaimer": "Analiz AI · se pa yon konsèy envestisman",
+  "referralTitle": "Envite zanmi",
+  "referralBody": "Pataje kòd ou. Zanmi ou resevwa {count, plural, =1{1 analiz anplis} other{{count} analiz anplis}} touswit, epi ou resevwa menm kantite a apre premye analiz li.",
+  "referralYourCode": "Kòd ou",
+  "referralStats": "Envite: {invited} · Rekonpanse: {rewarded}",
+  "referralHaveCode": "Ou gen kòd yon zanmi?",
+  "referralRedeem": "Itilize",
+  "referralRedeemed": "{count, plural, =1{Nou ajoute 1 analiz anplis. Byenvini!} other{Nou ajoute {count} analiz anplis. Byenvini!}}",
+  "referralErrUnknown": "Kòd sa a pa egziste. Verifye l epi eseye ankò.",
+  "referralErrOwn": "Ou pa ka itilize pwòp kòd ou.",
+  "referralErrAlready": "Ou deja itilize kòd yon zanmi.",
+  "referralShareText": "Mwen analize aksyon ak WhatStock: ou pran foto yon aksyon epi AI a eksplike l. Avèk kòd mwen {code} ou resevwa {count, plural, =1{1 analiz anplis} other{{count} analiz anplis}}.",
+  "referralCopied": "Kòd la kopye"
 }

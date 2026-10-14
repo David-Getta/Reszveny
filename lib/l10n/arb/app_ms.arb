@@ -396,5 +396,17 @@
   "shareAsImage": "Kongsi sebagai imej",
   "shareAsText": "Kongsi sebagai teks",
   "shareCardFooter": "Dibuat dengan WhatStock",
-  "shareCardDisclaimer": "Analisis AI · bukan nasihat pelaburan"
+  "shareCardDisclaimer": "Analisis AI · bukan nasihat pelaburan",
+  "referralTitle": "Jemput rakan",
+  "referralBody": "Kongsi kod anda. Rakan anda terus mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, dan anda mendapat jumlah yang sama selepas analisis pertama mereka.",
+  "referralYourCode": "Kod anda",
+  "referralStats": "Dijemput: {invited} · Diberi ganjaran: {rewarded}",
+  "referralHaveCode": "Ada kod daripada rakan?",
+  "referralRedeem": "Tebus",
+  "referralRedeemed": "{count, plural, =1{1 analisis tambahan ditambah. Selamat datang!} other{{count} analisis tambahan ditambah. Selamat datang!}}",
+  "referralErrUnknown": "Kod ini tidak wujud. Semak dan cuba lagi.",
+  "referralErrOwn": "Anda tidak boleh menebus kod anda sendiri.",
+  "referralErrAlready": "Anda sudah menebus kod rakan.",
+  "referralShareText": "Saya menganalisis saham dengan WhatStock: ambil foto saham dan AI akan menerangkannya. Dengan kod saya {code}, anda mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
+  "referralCopied": "Kod disalin"
 }

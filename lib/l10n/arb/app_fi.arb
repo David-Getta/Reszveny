@@ -396,5 +396,17 @@
   "shareAsImage": "Jaa kuvana",
   "shareAsText": "Jaa tekstinä",
   "shareCardFooter": "Tehty WhatStockilla",
-  "shareCardDisclaimer": "Tekoälyanalyysi · ei sijoitusneuvontaa"
+  "shareCardDisclaimer": "Tekoälyanalyysi · ei sijoitusneuvontaa",
+  "referralTitle": "Kutsu ystäviä",
+  "referralBody": "Jaa koodisi. Ystäväsi saa heti {count, plural, =1{1 lisäanalyysin} other{{count} lisäanalyysia}}, ja sinä saat saman verran hänen ensimmäisen analyysinsa jälkeen.",
+  "referralYourCode": "Koodisi",
+  "referralStats": "Kutsuttu: {invited} · Palkittu: {rewarded}",
+  "referralHaveCode": "Onko sinulla ystävän koodi?",
+  "referralRedeem": "Lunasta",
+  "referralRedeemed": "{count, plural, =1{1 lisäanalyysi lisätty. Tervetuloa!} other{{count} lisäanalyysia lisätty. Tervetuloa!}}",
+  "referralErrUnknown": "Koodia ei ole olemassa. Tarkista se ja yritä uudelleen.",
+  "referralErrOwn": "Et voi lunastaa omaa koodiasi.",
+  "referralErrAlready": "Olet jo lunastanut ystävän koodin.",
+  "referralShareText": "Analysoin osakkeita WhatStockilla: kuvaa osake, niin tekoäly selittää sen. Koodillani {code} saat {count, plural, =1{1 lisäanalyysin} other{{count} lisäanalyysia}}.",
+  "referralCopied": "Koodi kopioitu"
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Şəkil kimi paylaş",
   "shareAsText": "Mətn kimi paylaş",
   "shareCardFooter": "WhatStock ilə hazırlanıb",
-  "shareCardDisclaimer": "AI təhlili · investisiya məsləhəti deyil"
+  "shareCardDisclaimer": "AI təhlili · investisiya məsləhəti deyil",
+  "referralTitle": "Dostları dəvət edin",
+  "referralBody": "Kodunuzu paylaşın. Dostunuz dərhal {count, plural, =1{1 əlavə təhlil} other{{count} əlavə təhlil}} alır, siz isə onun ilk təhlilindən sonra eyni qədər alırsınız.",
+  "referralYourCode": "Kodunuz",
+  "referralStats": "Dəvət edilib: {invited} · Mükafatlandırılıb: {rewarded}",
+  "referralHaveCode": "Dostunuzdan kodunuz var?",
+  "referralRedeem": "Aktivləşdir",
+  "referralRedeemed": "{count, plural, =1{1 əlavə təhlil əlavə olundu. Xoş gəlmisiniz!} other{{count} əlavə təhlil əlavə olundu. Xoş gəlmisiniz!}}",
+  "referralErrUnknown": "Belə kod yoxdur. Yoxlayın və yenidən cəhd edin.",
+  "referralErrOwn": "Öz kodunuzu aktivləşdirə bilməzsiniz.",
+  "referralErrAlready": "Siz artıq bir dostunuzun kodunu aktivləşdirmisiniz.",
+  "referralShareText": "Səhmləri WhatStock ilə təhlil edirəm: səhmin şəklini çəkin, AI onu izah etsin. Mənim {code} kodumla {count, plural, =1{1 əlavə təhlil} other{{count} əlavə təhlil}} əldə edəcəksiniz.",
+  "referralCopied": "Kod kopyalandı"
 }

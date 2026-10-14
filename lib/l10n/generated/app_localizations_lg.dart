@@ -1444,4 +1444,68 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Okwekenneenya kwa AI · si magezi ga kusiga nsimbi';
+
+  @override
+  String get referralTitle => 'Yita mikwano gyo';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'okwekenneenya okw\'okwongerako $count',
+      one: 'okwekenneenya okw\'okwongerako 1',
+    );
+    return 'Gabana koodi yo. Mukwano gwo ajja kufuna $_temp0 amangu ddala, naawe ojja kufuna bwe bityo ng\'amaze okwekenneenya kwe okusooka.';
+  }
+
+  @override
+  String get referralYourCode => 'Koodi yo';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Abayitiddwa: $invited · Ebirabo: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Olina koodi okuva ewa mukwano gwo?';
+
+  @override
+  String get referralRedeem => 'Gikozese';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Okwekenneenya okw\'okwongerako $count kwongeddwako. Tukwanirizza!',
+      one: 'Okwekenneenya okw\'okwongerako 1 kwongeddwako. Tukwanirizza!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Koodi eno teriiwo. Gikebere oddemu ogezeeko.';
+
+  @override
+  String get referralErrOwn => 'Toyinza kukozesa koodi yo ggwe kennyini.';
+
+  @override
+  String get referralErrAlready => 'Wamala dda okukozesa koodi ya mukwano gwo.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'okwekenneenya okw\'okwongerako $count',
+      one: 'okwekenneenya okw\'okwongerako 1',
+    );
+    return 'Nneekenneenya emigabo nga nkozesa WhatStock: kuba ekifaananyi ky\'omugabo, AI n\'ekikunnyonnyola. Ne koodi yange $code ofuna $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Koodi ekoppoddwa';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Bagikeun salaku gambar",
   "shareAsText": "Bagikeun salaku téks",
   "shareCardFooter": "Dijieun ku WhatStock",
-  "shareCardDisclaimer": "Analisis AI · lain naséhat investasi"
+  "shareCardDisclaimer": "Analisis AI · lain naséhat investasi",
+  "referralTitle": "Ondang babaturan",
+  "referralBody": "Bagikeun kode anjeun. Babaturan anjeun langsung meunang {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, sarta anjeun meunang nu sarua sanggeus analisis kahijina.",
+  "referralYourCode": "Kode anjeun",
+  "referralStats": "Diondang: {invited} · Diganjar: {rewarded}",
+  "referralHaveCode": "Boga kode ti babaturan?",
+  "referralRedeem": "Tukeurkeun",
+  "referralRedeemed": "{count, plural, =1{1 analisis tambahan ditambahkeun. Wilujeng sumping!} other{{count} analisis tambahan ditambahkeun. Wilujeng sumping!}}",
+  "referralErrUnknown": "Kode ieu teu aya. Pariksa tur coba deui.",
+  "referralErrOwn": "Anjeun teu bisa nukeurkeun kode sorangan.",
+  "referralErrAlready": "Anjeun geus nukeurkeun kode ti babaturan.",
+  "referralShareText": "Kuring nganalisis saham ku WhatStock: poto sahamna, AI ngajelaskeunana. Ku kode kuring {code} anjeun meunang {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
+  "referralCopied": "Kode disalin"
 }

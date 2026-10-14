@@ -1436,4 +1436,66 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI sɛgɛsɛgɛli · wari donni ladilikan tɛ';
+
+  @override
+  String get referralTitle => 'I teriw wele';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sɛgɛsɛgɛli wɛrɛ $count',
+      one: 'sɛgɛsɛgɛli wɛrɛ 1',
+    );
+    return 'I ka kode jɛnsɛn. I teri bɛ $_temp0 sɔrɔ joona, i fana bɛ o hakɛ kelen sɔrɔ a ka sɛgɛsɛgɛli fɔlɔ kɔ.';
+  }
+
+  @override
+  String get referralYourCode => 'I ka kode';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Welelenw: $invited · Sarali: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Kode dɔ bɛ i bolo ka bɔ i teri fɛ wa?';
+
+  @override
+  String get referralRedeem => 'A labaara';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sɛgɛsɛgɛli wɛrɛ $count farala a kan. I bisimila!',
+      one: 'Sɛgɛsɛgɛli wɛrɛ 1 farala a kan. I bisimila!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Nin kode tɛ yen. A lajɛ ka a kɔrɔbɔ tugun.';
+
+  @override
+  String get referralErrOwn => 'I tɛ se ka i yɛrɛ ka kode labaara.';
+
+  @override
+  String get referralErrAlready => 'I ye i teri dɔ ka kode labaara ka ban.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sɛgɛsɛgɛli wɛrɛ $count',
+      one: 'sɛgɛsɛgɛli wɛrɛ 1',
+    );
+    return 'N bɛ aksiyɔnw sɛgɛsɛgɛ ni WhatStock ye: aksiyɔn dɔ ja ta, AI bɛ a ɲɛfɔ. Ni n ka kode $code ye, i bɛ $_temp0 sɔrɔ.';
+  }
+
+  @override
+  String get referralCopied => 'Kode kopiyelen don';
 }

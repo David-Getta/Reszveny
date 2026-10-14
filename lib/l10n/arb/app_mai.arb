@@ -396,5 +396,17 @@
   "shareAsImage": "छवि रूपमे साझा करू",
   "shareAsText": "पाठ रूपमे साझा करू",
   "shareCardFooter": "WhatStock सँ बनाओल",
-  "shareCardDisclaimer": "AI विश्लेषण · निवेशक सलाह नहि"
+  "shareCardDisclaimer": "AI विश्लेषण · निवेशक सलाह नहि",
+  "referralTitle": "मित्र सभकेँ आमंत्रित करू",
+  "referralBody": "अपन कोड साझा करू। अहाँक मित्रकेँ तुरंत {count, plural, =1{1 अतिरिक्त विश्लेषण} other{{count} अतिरिक्त विश्लेषण}} भेटत, आ हुनक पहिल विश्लेषणक बाद अहाँकेँ सेहो ओतबे भेटत।",
+  "referralYourCode": "अहाँक कोड",
+  "referralStats": "आमंत्रित: {invited} · पुरस्कृत: {rewarded}",
+  "referralHaveCode": "की अहाँ लग कोनो मित्रक कोड अछि?",
+  "referralRedeem": "रिडीम करू",
+  "referralRedeemed": "{count, plural, =1{1 अतिरिक्त विश्लेषण जोड़ल गेल। स्वागत अछि!} other{{count} अतिरिक्त विश्लेषण जोड़ल गेल। स्वागत अछि!}}",
+  "referralErrUnknown": "ई कोड मौजूद नहि अछि। जाँचि कऽ फेर प्रयास करू।",
+  "referralErrOwn": "अहाँ अपन कोड रिडीम नहि कऽ सकैत छी।",
+  "referralErrAlready": "अहाँ पहिनहि एकटा मित्रक कोड रिडीम कऽ चुकल छी।",
+  "referralShareText": "हम WhatStock सँ शेयरक विश्लेषण करैत छी: शेयरक फोटो लिअ आ AI ओकरा बुझा दैत अछि। हमर कोड {code} सँ अहाँकेँ {count, plural, =1{1 अतिरिक्त विश्लेषण} other{{count} अतिरिक्त विश्लेषण}} भेटत।",
+  "referralCopied": "कोड कॉपी भेल"
 }

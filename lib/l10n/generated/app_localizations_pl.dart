@@ -1481,4 +1481,74 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Analiza AI · nie stanowi porady inwestycyjnej';
+
+  @override
+  String get referralTitle => 'Zaproś znajomych';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatkowej analizy',
+      many: '$count dodatkowych analiz',
+      few: '$count dodatkowe analizy',
+      one: '$count dodatkową analizę',
+    );
+    return 'Udostępnij swój kod. Znajomy od razu dostaje $_temp0, a ty dostajesz tyle samo po pierwszej analizie znajomego.';
+  }
+
+  @override
+  String get referralYourCode => 'Twój kod';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Zaproszeni: $invited · Nagrodzeni: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Masz kod od znajomego?';
+
+  @override
+  String get referralRedeem => 'Wykorzystaj';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano $count dodatkowej analizy. Witamy!',
+      many: 'Dodano $count dodatkowych analiz. Witamy!',
+      few: 'Dodano $count dodatkowe analizy. Witamy!',
+      one: 'Dodano $count dodatkową analizę. Witamy!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Taki kod nie istnieje. Sprawdź go i spróbuj ponownie.';
+
+  @override
+  String get referralErrOwn => 'Nie możesz wykorzystać własnego kodu.';
+
+  @override
+  String get referralErrAlready =>
+      'Na tym koncie wykorzystano już kod od znajomego.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatkowej analizy',
+      many: '$count dodatkowych analiz',
+      few: '$count dodatkowe analizy',
+      one: '$count dodatkową analizę',
+    );
+    return 'Analizuję akcje w WhatStock: zrób zdjęcie akcji, a AI ją objaśni. Z moim kodem $code dostaniesz $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Skopiowano kod';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Ipaambit subong larawan",
   "shareAsText": "Ipaambit subong teksto",
   "shareCardFooter": "Ginhimo gamit ang WhatStock",
-  "shareCardDisclaimer": "Analisis sang AI · indi laygay sa pag-invest"
+  "shareCardDisclaimer": "Analisis sang AI · indi laygay sa pag-invest",
+  "referralTitle": "Imbitaha ang imo mga abyan",
+  "referralBody": "Ipaambit ang imo code. Ang imo abyan makabaton dayon sang {count, plural, =1{1 ka dugang nga analisis} other{{count} ka dugang nga analisis}}, kag ikaw man makabaton sang pareho pagkatapos sang iya una nga analisis.",
+  "referralYourCode": "Ang imo code",
+  "referralStats": "Gin-imbitahan: {invited} · Ginpremyuhan: {rewarded}",
+  "referralHaveCode": "May code ka gikan sa abyan?",
+  "referralRedeem": "Gamita",
+  "referralRedeemed": "{count, plural, =1{Gindugang ang 1 ka dugang nga analisis. Malipayon nga pag-abot!} other{Gindugang ang {count} ka dugang nga analisis. Malipayon nga pag-abot!}}",
+  "referralErrUnknown": "Wala sang amo sini nga code. Susiha kag tilawi liwat.",
+  "referralErrOwn": "Indi mo magamit ang imo kaugalingon nga code.",
+  "referralErrAlready": "Nagamit mo na ang code sang imo abyan.",
+  "referralShareText": "Ginaanalisa ko ang mga stock gamit ang WhatStock: kuhai sang litrato ang stock kag ipaathag ini sang AI. Sa akon code nga {code} makabaton ka sang {count, plural, =1{1 ka dugang nga analisis} other{{count} ka dugang nga analisis}}.",
+  "referralCopied": "Nakopya ang code"
 }

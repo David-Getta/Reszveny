@@ -1445,4 +1445,67 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Tshekatsheko ya AI · ga se kgakololo ya peeletso';
+
+  @override
+  String get referralTitle => 'Laletsa ditsala';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditshekatsheko tse di oketsegileng di le $count',
+      one: 'tshekatsheko e le nngwe e e oketsegileng',
+    );
+    return 'Abelana khoutu ya gago. Tsala ya gago o bona $_temp0 ka bonako, mme le wena o bona tse di lekanang morago ga tshekatsheko ya gagwe ya ntlha.';
+  }
+
+  @override
+  String get referralYourCode => 'Khoutu ya gago';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Ba ba laleditsweng: $invited · Dikatso: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'A o na le khoutu ya tsala?';
+
+  @override
+  String get referralRedeem => 'Dirisa';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go okeditswe ditshekatsheko di le $count. O amogetswe!',
+      one: 'Go okeditswe tshekatsheko e le nngwe. O amogetswe!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Khoutu e ga e yo. E tlhole mme o leke gape.';
+
+  @override
+  String get referralErrOwn => 'Ga o kgone go dirisa khoutu ya gago.';
+
+  @override
+  String get referralErrAlready => 'O setse o dirisitse khoutu ya tsala.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditshekatsheko tse di oketsegileng di le $count',
+      one: 'tshekatsheko e le nngwe e e oketsegileng',
+    );
+    return 'Ke sekaseka diabe ka WhatStock: tsaya setshwantsho sa seabe mme AI e a se tlhalosa. Ka khoutu ya me $code o bona $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Khoutu e kopilwe';
 }

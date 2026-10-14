@@ -1439,4 +1439,67 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analîza AI · ne şîreta veberhênanê ye';
+
+  @override
+  String get referralTitle => 'Hevalan vexwîne';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîzên zêde',
+      one: '1 analîza zêde',
+    );
+    return 'Koda xwe parve bike. Hevalê te yekser $_temp0 distîne, û tu jî piştî analîza wî ya yekem heman qasî distînî.';
+  }
+
+  @override
+  String get referralYourCode => 'Koda te';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Vexwendî: $invited · Xelatkirî: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Koda hevalekî te heye?';
+
+  @override
+  String get referralRedeem => 'Bi kar bîne';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîzên zêde hatin zêdekirin. Bi xêr hatî!',
+      one: '1 analîza zêde hat zêdekirin. Bi xêr hatî!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ev kod tune ye. Kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get referralErrOwn => 'Tu nikarî koda xwe bi kar bînî.';
+
+  @override
+  String get referralErrAlready => 'Te berê koda hevalekî bi kar aniye.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîzên zêde',
+      one: '1 analîza zêde',
+    );
+    return 'Ez bi WhatStockê pişkan analîz dikim: wêneyê pişkê bikişîne û AI wê rave dike. Bi koda min $code tu $_temp0 distînî.';
+  }
+
+  @override
+  String get referralCopied => 'Kod hat kopîkirin';
 }

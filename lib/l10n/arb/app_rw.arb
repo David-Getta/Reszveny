@@ -396,5 +396,17 @@
   "shareAsImage": "Sangiza nk'ifoto",
   "shareAsText": "Sangiza nk'inyandiko",
   "shareCardFooter": "Byakozwe na WhatStock",
-  "shareCardDisclaimer": "Isesengura rya AI · si inama yo gushora imari"
+  "shareCardDisclaimer": "Isesengura rya AI · si inama yo gushora imari",
+  "referralTitle": "Tumira inshuti",
+  "referralBody": "Sangiza kode yawe. Inshuti yawe ihita ibona {count, plural, =1{isesengura 1 ry'inyongera} other{amasesengura {count} y'inyongera}}, nawe ukabona nk'ibyo nyuma y'isesengura ryayo rya mbere.",
+  "referralYourCode": "Kode yawe",
+  "referralStats": "Abatumiwe: {invited} · Abahembwe: {rewarded}",
+  "referralHaveCode": "Ufite kode y'inshuti?",
+  "referralRedeem": "Koresha",
+  "referralRedeemed": "{count, plural, =1{Wongerewe isesengura 1 ry'inyongera. Murakaza neza!} other{Wongerewe amasesengura {count} y'inyongera. Murakaza neza!}}",
+  "referralErrUnknown": "Iyi kode ntibaho. Yigenzure wongere ugerageze.",
+  "referralErrOwn": "Ntushobora gukoresha kode yawe bwite.",
+  "referralErrAlready": "Wamaze gukoresha kode y'inshuti.",
+  "referralShareText": "Nsesengura imigabane nkoresheje WhatStock: fotora umugabane, AI ikawusobanura. Ukoresheje kode yanjye {code} ubona {count, plural, =1{isesengura 1 ry'inyongera} other{amasesengura {count} y'inyongera}}.",
+  "referralCopied": "Kode yakopowe"
 }

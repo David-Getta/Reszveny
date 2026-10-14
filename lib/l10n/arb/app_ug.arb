@@ -396,5 +396,17 @@
   "shareAsImage": "رەسىم سۈپىتىدە ھەمبەھىرلەش",
   "shareAsText": "تېكىست سۈپىتىدە ھەمبەھىرلەش",
   "shareCardFooter": "WhatStock ئارقىلىق ياسالغان",
-  "shareCardDisclaimer": "AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس"
+  "shareCardDisclaimer": "AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس",
+  "referralTitle": "دوستلارنى تەكلىپ قىلىش",
+  "referralBody": "كودىڭىزنى ھەمبەھىرلەڭ. دوستىڭىز دەرھال {count, plural, =1{1 قوشۇمچە تەھلىل} other{{count} قوشۇمچە تەھلىل}} ئالىدۇ، سىز بولسا ئۇنىڭ تۇنجى تەھلىلىدىن كېيىن شۇنچىلىك ئالىسىز.",
+  "referralYourCode": "كودىڭىز",
+  "referralStats": "تەكلىپ قىلىنغانلار: {invited} · مۇكاپاتلانغانلار: {rewarded}",
+  "referralHaveCode": "دوستىڭىزدىن كود بارمۇ؟",
+  "referralRedeem": "ئىشلىتىش",
+  "referralRedeemed": "{count, plural, =1{1 قوشۇمچە تەھلىل قوشۇلدى. خۇش كەلدىڭىز!} other{{count} قوشۇمچە تەھلىل قوشۇلدى. خۇش كەلدىڭىز!}}",
+  "referralErrUnknown": "بۇنداق كود يوق. تەكشۈرۈپ قايتا سىناڭ.",
+  "referralErrOwn": "ئۆزىڭىزنىڭ كودىنى ئىشلىتەلمەيسىز.",
+  "referralErrAlready": "سىز ئاللىبۇرۇن دوستىڭىزنىڭ كودىنى ئىشلەتكەنسىز.",
+  "referralShareText": "مەن WhatStock ئارقىلىق پاي چېكى تەھلىل قىلىمەن: پاي چېكىنى رەسىمگە تارتىڭ، AI ئۇنى چۈشەندۈرۈپ بېرىدۇ. مېنىڭ {code} كودۇم ئارقىلىق {count, plural, =1{1 قوشۇمچە تەھلىل} other{{count} قوشۇمچە تەھلىل}} ئالىسىز.",
+  "referralCopied": "كود كۆچۈرۈلدى"
 }

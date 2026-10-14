@@ -1440,4 +1440,67 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
+
+  @override
+  String get referralTitle => 'دوستلارنى تەكلىپ قىلىش';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قوشۇمچە تەھلىل',
+      one: '1 قوشۇمچە تەھلىل',
+    );
+    return 'كودىڭىزنى ھەمبەھىرلەڭ. دوستىڭىز دەرھال $_temp0 ئالىدۇ، سىز بولسا ئۇنىڭ تۇنجى تەھلىلىدىن كېيىن شۇنچىلىك ئالىسىز.';
+  }
+
+  @override
+  String get referralYourCode => 'كودىڭىز';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'تەكلىپ قىلىنغانلار: $invited · مۇكاپاتلانغانلار: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'دوستىڭىزدىن كود بارمۇ؟';
+
+  @override
+  String get referralRedeem => 'ئىشلىتىش';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قوشۇمچە تەھلىل قوشۇلدى. خۇش كەلدىڭىز!',
+      one: '1 قوشۇمچە تەھلىل قوشۇلدى. خۇش كەلدىڭىز!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'بۇنداق كود يوق. تەكشۈرۈپ قايتا سىناڭ.';
+
+  @override
+  String get referralErrOwn => 'ئۆزىڭىزنىڭ كودىنى ئىشلىتەلمەيسىز.';
+
+  @override
+  String get referralErrAlready =>
+      'سىز ئاللىبۇرۇن دوستىڭىزنىڭ كودىنى ئىشلەتكەنسىز.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قوشۇمچە تەھلىل',
+      one: '1 قوشۇمچە تەھلىل',
+    );
+    return 'مەن WhatStock ئارقىلىق پاي چېكى تەھلىل قىلىمەن: پاي چېكىنى رەسىمگە تارتىڭ، AI ئۇنى چۈشەندۈرۈپ بېرىدۇ. مېنىڭ $code كودۇم ئارقىلىق $_temp0 ئالىسىز.';
+  }
+
+  @override
+  String get referralCopied => 'كود كۆچۈرۈلدى';
 }

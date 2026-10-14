@@ -1435,4 +1435,67 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Tasleḍt s AI · ur d awellih n usersi n yidrimen ara';
+
+  @override
+  String get referralTitle => 'Ɛreḍ imeddukal';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n tselḍin nniḍen',
+      one: '1 n tesleḍt nniḍen',
+    );
+    return 'Bḍu tangalt-ik. Amdakel-ik ad yawi $_temp0 imir-a, ula d kečč ad tawiḍ kif-kif deffir tasleḍt-is tamezwarut.';
+  }
+
+  @override
+  String get referralYourCode => 'Tangalt-ik';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Inebgawen: $invited · Arrazen: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Tesɛiḍ tangalt n umdakel?';
+
+  @override
+  String get referralRedeem => 'Seqdec';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwarnant-d $count n tselḍin nniḍen. Ansuf!',
+      one: 'Tettwarna-d 1 n tesleḍt nniḍen. Ansuf!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Tangalt-a ulac-itt. Senqed-itt sakin ɛreḍ tikkelt nniḍen.';
+
+  @override
+  String get referralErrOwn => 'Ur tezmireḍ ara ad tesqedceḍ tangalt-ik.';
+
+  @override
+  String get referralErrAlready => 'Tesqedceḍ yakan tangalt n umdakel.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n tselḍin nniḍen',
+      one: '1 n tesleḍt nniḍen',
+    );
+    return 'Sleḍeɣ aksyunen s WhatStock: tettṣewwireḍ aksyun, AI ad ak-t-id-yessegzi. S tangalt-iw $code ad tawiḍ $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Tangalt tettwanɣel';
 }

@@ -2718,6 +2718,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI analysis · not investment advice'**
   String get shareCardDisclaimer;
+
+  /// Settings section title of the referral program.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite friends'**
+  String get referralTitle;
+
+  /// Explanation of the referral program. {count} is the bonus number of analyses each side gets.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your code. Your friend gets {count, plural, =1{1 extra analysis} other{{count} extra analyses}} right away, and you get the same after their first analysis.'**
+  String referralBody(int count);
+
+  /// Label above the user's own referral code.
+  ///
+  /// In en, this message translates to:
+  /// **'Your code'**
+  String get referralYourCode;
+
+  /// Referral counters: how many friends redeemed the code, and after how many the user already got the bonus.
+  ///
+  /// In en, this message translates to:
+  /// **'Invited: {invited} · Rewarded: {rewarded}'**
+  String referralStats(int invited, int rewarded);
+
+  /// Button that opens the field to redeem a friend's referral code.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a code from a friend?'**
+  String get referralHaveCode;
+
+  /// Button that redeems the entered referral code.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem'**
+  String get referralRedeem;
+
+  /// Confirmation after redeeming a friend's code.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 extra analysis added. Welcome!} other{{count} extra analyses added. Welcome!}}'**
+  String referralRedeemed(int count);
+
+  /// Error: the referral code was not found.
+  ///
+  /// In en, this message translates to:
+  /// **'This code doesn\'t exist. Check it and try again.'**
+  String get referralErrUnknown;
+
+  /// Error: the user entered their own referral code.
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t redeem your own code.'**
+  String get referralErrOwn;
+
+  /// Error: the account already redeemed a referral code once.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve already redeemed a friend\'s code.'**
+  String get referralErrAlready;
+
+  /// Text shared with a friend together with the referral code. Keep WhatStock unchanged.
+  ///
+  /// In en, this message translates to:
+  /// **'I analyse stocks with WhatStock: photograph a stock and the AI explains it. With my code {code} you get {count, plural, =1{1 extra analysis} other{{count} extra analyses}}.'**
+  String referralShareText(String code, int count);
+
+  /// Short confirmation after copying the referral code.
+  ///
+  /// In en, this message translates to:
+  /// **'Code copied'**
+  String get referralCopied;
 }
 
 class _AppLocalizationsDelegate

@@ -1446,4 +1446,67 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Nxopaxopo wa AI · a hi ndzayo ya vuvekisi';
+
+  @override
+  String get referralTitle => 'Rhamba vanghana';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'minxopaxopo yo engetela ya $count',
+      one: 'nxopaxopo wun\'we wo engetela',
+    );
+    return 'Avelana khodi ya wena. Munghana wa wena u kuma $_temp0 hi ku hatlisa, na wena u kuma leswi fanaka endzhaku ka nxopaxopo wa yena wo sungula.';
+  }
+
+  @override
+  String get referralYourCode => 'Khodi ya wena';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Lava rhambiweke: $invited · Mihakelo: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Xana u na khodi ya munghana?';
+
+  @override
+  String get referralRedeem => 'Tirhisa';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku engeteriwe minxopaxopo ya $count. Hi ku amukela!',
+      one: 'Ku engeteriwe nxopaxopo wun\'we. Hi ku amukela!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Khodi leyi a yi kona. Yi kambela kutani u ringeta nakambe.';
+
+  @override
+  String get referralErrOwn => 'A wu nge yi tirhisi khodi ya wena.';
+
+  @override
+  String get referralErrAlready => 'U tirhisile khodi ya munghana khale.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'minxopaxopo yo engetela ya $count',
+      one: 'nxopaxopo wun\'we wo engetela',
+    );
+    return 'Ndzi xopaxopa swiave hi WhatStock: teka xifaniso xa xiave, kutani AI yi xi hlamusela. Hi khodi ya mina $code u kuma $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Khodi yi kopiwile';
 }

@@ -1432,4 +1432,68 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI विश्लेषण · निवेश के सलाह ना ह';
+
+  @override
+  String get referralTitle => 'दोस्तन के न्योता दीं';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अतिरिक्त विश्लेषण',
+      one: '1 अतिरिक्त विश्लेषण',
+    );
+    return 'आपन कोड साझा करीं। राउर दोस्त के तुरंते $_temp0 मिली, आ उनकर पहिला विश्लेषण के बाद रउओ के ओतने मिली।';
+  }
+
+  @override
+  String get referralYourCode => 'राउर कोड';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'न्योतल गइल: $invited · इनाम मिलल: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'कवनो दोस्त से कोड मिलल बा?';
+
+  @override
+  String get referralRedeem => 'भुनाईं';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अतिरिक्त विश्लेषण जोड़ल गइल। स्वागत बा!',
+      one: '1 अतिरिक्त विश्लेषण जोड़ल गइल। स्वागत बा!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ई कोड मौजूद नइखे। जाँच के फेर से कोसिस करीं।';
+
+  @override
+  String get referralErrOwn => 'रउआ आपन कोड ना भुना सकीं।';
+
+  @override
+  String get referralErrAlready =>
+      'रउआ पहिलहीं कवनो दोस्त के कोड भुना चुकल बानी।';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अतिरिक्त विश्लेषण',
+      one: '1 अतिरिक्त विश्लेषण',
+    );
+    return 'हम WhatStock से शेयर के विश्लेषण करीले: कवनो शेयर के फोटो खींचीं आ AI ओकरा के समझा दी। हमार कोड $code से रउआ के $_temp0 मिली।';
+  }
+
+  @override
+  String get referralCopied => 'कोड कॉपी हो गइल';
 }

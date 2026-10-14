@@ -396,5 +396,17 @@
   "shareAsImage": "Séddoo ko ni nataal",
   "shareAsText": "Séddoo ko ni mbind",
   "shareCardFooter": "Defar nañu ko ak WhatStock",
-  "shareCardDisclaimer": "Saytu AI · du ndigal ci dugal xaalis"
+  "shareCardDisclaimer": "Saytu AI · du ndigal ci dugal xaalis",
+  "referralTitle": "Woo say xarit",
+  "referralBody": "Séddoo sa kood. Sa xarit dina am ci saa si {count, plural, =1{1 saytu bu ñu yokk} other{{count} saytu yu ñu yokk}}, te yaw itam dinga am lu tollu noonu ginnaaw saytu bu jëkk bi mu def.",
+  "referralYourCode": "Sa kood",
+  "referralStats": "Ñi nga woo: {invited} · Ñi ñu yool: {rewarded}",
+  "referralHaveCode": "Am nga kood bu sa xarit?",
+  "referralRedeem": "Jëfandikoo",
+  "referralRedeemed": "{count, plural, =1{Yokk nañu 1 saytu. Dalal ak jàmm!} other{Yokk nañu {count} saytu. Dalal ak jàmm!}}",
+  "referralErrUnknown": "Kood bii amul. Seetaatal ko te jéemaat.",
+  "referralErrOwn": "Mënuloo jëfandikoo sa kood bopp.",
+  "referralErrAlready": "Jëfandikoo nga ba noppi kood bu sa xarit.",
+  "referralShareText": "Damay saytu aksioŋ yi ak WhatStock: fotoal aksioŋ te AI dina la ko leeral. Ak sama kood {code} dinga am {count, plural, =1{1 saytu bu ñu yokk} other{{count} saytu yu ñu yokk}}.",
+  "referralCopied": "Kood bi koppi nañu ko"
 }

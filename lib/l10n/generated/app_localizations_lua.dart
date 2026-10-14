@@ -1441,4 +1441,66 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga';
+
+  @override
+  String get referralTitle => 'Bikila balunda';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'makonkonona $count a kubueja',
+      one: 'dikonkonona 1 dia kubueja',
+    );
+    return 'Abanya code webe. Mulunda webe neapete $_temp0 diakamue, ne wewe neupete bia muomumue panyima pa dikonkonona diende dia kumpala.';
+  }
+
+  @override
+  String get referralYourCode => 'Code webe';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Bawakabikila: $invited · Bakapeta difutu: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Udi ne code wa mulunda?';
+
+  @override
+  String get referralRedeem => 'Enza nadi';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makonkonona $count a kubueja mabuejibua. Moyo webe!',
+      one: 'Dikonkonona 1 dia kubueja diabuejibua. Moyo webe!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Code eu kena. Mukonkonone, utete kabidi.';
+
+  @override
+  String get referralErrOwn => 'Kuena mua kuenza nadi code webe nkayebe.';
+
+  @override
+  String get referralErrAlready => 'Wakamba kuenza nadi code wa mulunda.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'makonkonona $count a kubueja',
+      one: 'dikonkonona 1 dia kubueja',
+    );
+    return 'Ndi ngonkonona ba-action ne WhatStock: wangata foto wa action, AI udi umumvuija. Ne code wanyi $code neupete $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Code mmukopiibue';
 }

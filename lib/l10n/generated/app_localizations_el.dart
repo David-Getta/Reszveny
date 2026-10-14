@@ -1442,4 +1442,69 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Ανάλυση AI · όχι επενδυτική συμβουλή';
+
+  @override
+  String get referralTitle => 'Προσκαλέστε φίλους';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count επιπλέον αναλύσεις',
+      one: '1 επιπλέον ανάλυση',
+    );
+    return 'Μοιραστείτε τον κωδικό σας. Ο φίλος σας παίρνει αμέσως $_temp0 και εσείς το ίδιο μετά την πρώτη του ανάλυση.';
+  }
+
+  @override
+  String get referralYourCode => 'Ο κωδικός σας';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Προσκλήθηκαν: $invited · Ανταμείφθηκαν: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Έχετε κωδικό από φίλο;';
+
+  @override
+  String get referralRedeem => 'Εξαργύρωση';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προστέθηκαν $count επιπλέον αναλύσεις. Καλώς ήρθατε!',
+      one: 'Προστέθηκε 1 επιπλέον ανάλυση. Καλώς ήρθατε!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Αυτός ο κωδικός δεν υπάρχει. Ελέγξτε τον και δοκιμάστε ξανά.';
+
+  @override
+  String get referralErrOwn =>
+      'Δεν μπορείτε να εξαργυρώσετε τον δικό σας κωδικό.';
+
+  @override
+  String get referralErrAlready =>
+      'Έχετε ήδη εξαργυρώσει τον κωδικό ενός φίλου.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count επιπλέον αναλύσεις',
+      one: '1 επιπλέον ανάλυση',
+    );
+    return 'Αναλύω μετοχές με το WhatStock: φωτογραφίζετε μια μετοχή και η AI σάς την εξηγεί. Με τον κωδικό μου $code παίρνετε $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Ο κωδικός αντιγράφηκε';
 }

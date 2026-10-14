@@ -396,5 +396,17 @@
   "shareAsImage": "Abanya bu tshimfuanyi",
   "shareAsText": "Abanya bu mifundu",
   "shareCardFooter": "Bienze ne WhatStock",
-  "shareCardDisclaimer": "Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga"
+  "shareCardDisclaimer": "Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga",
+  "referralTitle": "Bikila balunda",
+  "referralBody": "Abanya code webe. Mulunda webe neapete {count, plural, =1{dikonkonona 1 dia kubueja} other{makonkonona {count} a kubueja}} diakamue, ne wewe neupete bia muomumue panyima pa dikonkonona diende dia kumpala.",
+  "referralYourCode": "Code webe",
+  "referralStats": "Bawakabikila: {invited} · Bakapeta difutu: {rewarded}",
+  "referralHaveCode": "Udi ne code wa mulunda?",
+  "referralRedeem": "Enza nadi",
+  "referralRedeemed": "{count, plural, =1{Dikonkonona 1 dia kubueja diabuejibua. Moyo webe!} other{Makonkonona {count} a kubueja mabuejibua. Moyo webe!}}",
+  "referralErrUnknown": "Code eu kena. Mukonkonone, utete kabidi.",
+  "referralErrOwn": "Kuena mua kuenza nadi code webe nkayebe.",
+  "referralErrAlready": "Wakamba kuenza nadi code wa mulunda.",
+  "referralShareText": "Ndi ngonkonona ba-action ne WhatStock: wangata foto wa action, AI udi umumvuija. Ne code wanyi {code} neupete {count, plural, =1{dikonkonona 1 dia kubueja} other{makonkonona {count} a kubueja}}.",
+  "referralCopied": "Code mmukopiibue"
 }

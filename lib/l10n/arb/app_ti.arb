@@ -396,5 +396,17 @@
   "shareAsImage": "ከም ስእሊ ኣካፍል",
   "shareAsText": "ከም ጽሑፍ ኣካፍል",
   "shareCardFooter": "ብWhatStock ዝተሰርሐ",
-  "shareCardDisclaimer": "ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን"
+  "shareCardDisclaimer": "ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን",
+  "referralTitle": "ኣዕሩኽ ዓድም",
+  "referralBody": "ኮድካ ኣካፍል። ዓርክኻ ብኡንብኡ {count, plural, =1{1 ተወሳኺ ትንተና} other{{count} ተወሳኺ ትንተናታት}} ይረክብ፣ ንስኻ ድማ ድሕሪ ቀዳማይ ትንተናኡ ተመሳሳሊ ትረክብ።",
+  "referralYourCode": "ኮድካ",
+  "referralStats": "ዝተዓደሙ: {invited} · ዝተሸለሙ: {rewarded}",
+  "referralHaveCode": "ካብ ዓርኪ ኮድ ኣለካ ድዩ?",
+  "referralRedeem": "ተጠቐም",
+  "referralRedeemed": "{count, plural, =1{1 ተወሳኺ ትንተና ተወሲኹ። እንቋዕ ብደሓን መጻእካ!} other{{count} ተወሳኺ ትንተናታት ተወሲኾም። እንቋዕ ብደሓን መጻእካ!}}",
+  "referralErrUnknown": "እዚ ኮድ የለን። ኣረጋግጽ እሞ እንደገና ፈትን።",
+  "referralErrOwn": "ናይ ባዕልኻ ኮድ ክትጥቀም ኣይትኽእልን።",
+  "referralErrAlready": "ናይ ዓርኪ ኮድ ድሮ ተጠቒምካ ኢኻ።",
+  "referralShareText": "ብWhatStock ኣክሲዮናት እተንትን፦ ስእሊ ኣክሲዮን ኣልዕል፣ AI ድማ ይገልጸልካ። ብኮደይ {code} {count, plural, =1{1 ተወሳኺ ትንተና} other{{count} ተወሳኺ ትንተናታት}} ትረክብ።",
+  "referralCopied": "ኮድ ተቐዲሑ"
 }

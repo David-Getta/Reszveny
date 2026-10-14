@@ -1443,4 +1443,67 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Uhlalutyo lwe-AI · alulocebiso lotyalo-mali';
+
+  @override
+  String get referralTitle => 'Mema abahlobo';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'iintlalutyo ezongezelelweyo ezi-$count',
+      one: 'uhlalutyo olunye olongezelelweyo',
+    );
+    return 'Yabelana ngekhowudi yakho. Umhlobo wakho ufumana $_temp0 ngoko nangoko, nawe ufumana okufanayo emva kohlalutyo lwakhe lokuqala.';
+  }
+
+  @override
+  String get referralYourCode => 'Ikhowudi yakho';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Abamenyiweyo: $invited · Abavuzwe: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Unekhowudi evela kumhlobo?';
+
+  @override
+  String get referralRedeem => 'Sebenzisa';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kongezwe iintlalutyo ezi-$count. Wamkelekile!',
+      one: 'Kongezwe uhlalutyo olunye. Wamkelekile!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Le khowudi ayikho. Yijonge uze uzame kwakhona.';
+
+  @override
+  String get referralErrOwn => 'Awunakuyisebenzisa ikhowudi yakho.';
+
+  @override
+  String get referralErrAlready => 'Sele uyisebenzisile ikhowudi yomhlobo.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'iintlalutyo ezongezelelweyo ezi-$count',
+      one: 'uhlalutyo olunye olongezelelweyo',
+    );
+    return 'Ndihlalutya izabelo nge-WhatStock: thatha ifoto yesabelo kwaye i-AI iyasicacisa. Ngekhowudi yam $code ufumana $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Ikhowudi ikhutshelwe';
 }

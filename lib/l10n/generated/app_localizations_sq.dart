@@ -1443,4 +1443,67 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Analiza me AI · nuk është këshillë investimi';
+
+  @override
+  String get referralTitle => 'Fto miqtë';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiza shtesë',
+      one: '1 analizë shtesë',
+    );
+    return 'Ndaj kodin tënd. Shoku yt merr menjëherë $_temp0, dhe ti merr po aq pas analizës së tij të parë.';
+  }
+
+  @override
+  String get referralYourCode => 'Kodi yt';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Të ftuar: $invited · Të shpërblyer: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ke një kod nga një mik?';
+
+  @override
+  String get referralRedeem => 'Aktivizo';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U shtuan $count analiza shtesë. Mirë se erdhe!',
+      one: 'U shtua 1 analizë shtesë. Mirë se erdhe!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ky kod nuk ekziston. Kontrolloje dhe provo përsëri.';
+
+  @override
+  String get referralErrOwn => 'Nuk mund të aktivizosh kodin tënd.';
+
+  @override
+  String get referralErrAlready => 'Ke aktivizuar tashmë kodin e një miku.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiza shtesë',
+      one: '1 analizë shtesë',
+    );
+    return 'Analizoj aksione me WhatStock: fotografo një aksion dhe AI ta shpjegon. Me kodin tim $code merr $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kodi u kopjua';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Lollin no natal",
   "shareAsText": "Lollin no binndi",
   "shareCardFooter": "Waɗaa e WhatStock",
-  "shareCardDisclaimer": "Ƴeewndo AI · wonaa wasiya e investisman"
+  "shareCardDisclaimer": "Ƴeewndo AI · wonaa wasiya e investisman",
+  "referralTitle": "Noddu sehilaaɓe maa",
+  "referralBody": "Lollin kod maa. Sehil maa heɓay {count, plural, =1{ƴeewndo ɓeydiingo 1} other{ƴeewndooji ɓeydiiɗi {count}}} ɗoon e ɗoon, an kadi heɓay ko foti ɗum caggal ƴeewndo makko aranndo.",
+  "referralYourCode": "Kod maa",
+  "referralStats": "Noddaaɓe: {invited} · Njeenaaɗe: {rewarded}",
+  "referralHaveCode": "A jogii kod immorde e sehil maa?",
+  "referralRedeem": "Huutoro",
+  "referralRedeemed": "{count, plural, =1{Ƴeewndo ɓeydiingo 1 ɓeydaama. A jaɓɓaama!} other{Ƴeewndooji ɓeydiiɗi {count} ɓeydaama. A jaɓɓaama!}}",
+  "referralErrUnknown": "Ndee kod woodaani. Ƴeewto nde refti eto goɗngol.",
+  "referralErrOwn": "A waawaa huutoraade kod maa e hoore maa.",
+  "referralErrAlready": "A huutoriima kod sehil maa gila law.",
+  "referralShareText": "Mi ƴeewnda aksiyoŋaaji e WhatStock: ƴettu natal aksiyoŋ, AI firta ɗum. E kod am {code} a heɓay {count, plural, =1{ƴeewndo ɓeydiingo 1} other{ƴeewndooji ɓeydiiɗi {count}}}.",
+  "referralCopied": "Kod nde kopiyaama"
 }

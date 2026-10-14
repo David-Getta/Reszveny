@@ -396,5 +396,17 @@
   "shareAsImage": "Akka suuraatti qoodi",
   "shareAsText": "Akka barreeffamaatti qoodi",
   "shareCardFooter": "WhatStock'n hojjetame",
-  "shareCardDisclaimer": "Xiinxala AI · gorsa invastimantii miti"
+  "shareCardDisclaimer": "Xiinxala AI · gorsa invastimantii miti",
+  "referralTitle": "Hiriyoota affeeri",
+  "referralBody": "Koodii kee qoodi. Hiriyaan kee battalumatti {count, plural, =1{xiinxala dabalataa 1} other{xiinxala dabalataa {count}}} argata, atis xiinxala isaa jalqabaa booda kanuma argatta.",
+  "referralYourCode": "Koodii kee",
+  "referralStats": "Kan affeeraman: {invited} · Kan badhaafaman: {rewarded}",
+  "referralHaveCode": "Koodii hiriyaa irraa qabdaa?",
+  "referralRedeem": "Fayyadami",
+  "referralRedeemed": "{count, plural, =1{Xiinxalli dabalataa 1 dabalameera. Baga nagaan dhufte!} other{Xiinxalli dabalataa {count} dabalameera. Baga nagaan dhufte!}}",
+  "referralErrUnknown": "Koodiin kun hin jiru. Mirkaneessiitii irra deebi'ii yaali.",
+  "referralErrOwn": "Koodii mataa keetii fayyadamuu hin dandeessu.",
+  "referralErrAlready": "Koodii hiriyaa tokkoo duraan fayyadamteetta.",
+  "referralShareText": "Ani WhatStock'n aksiyoonota nan xiinxala: suuraa aksiyoonaa kaasi, AI'n siif ibsa. Koodii koo {code} tiin {count, plural, =1{xiinxala dabalataa 1} other{xiinxala dabalataa {count}}} argatta.",
+  "referralCopied": "Koodiin garagalfameera"
 }

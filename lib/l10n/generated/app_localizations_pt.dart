@@ -1441,4 +1441,67 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Análise com IA · não é aconselhamento de investimento';
+
+  @override
+  String get referralTitle => 'Convidar amigos';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count análises extra',
+      one: '1 análise extra',
+    );
+    return 'Compartilhe o seu código. O seu amigo recebe $_temp0 de imediato, e você recebe o mesmo após a primeira análise do seu amigo.';
+  }
+
+  @override
+  String get referralYourCode => 'O seu código';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Convidados: $invited · Recompensados: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Tem um código de um amigo?';
+
+  @override
+  String get referralRedeem => 'Resgatar';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count análises extra adicionadas. Boas-vindas!',
+      one: '1 análise extra adicionada. Boas-vindas!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Este código não existe. Verifique-o e tente novamente.';
+
+  @override
+  String get referralErrOwn => 'Não pode resgatar o seu próprio código.';
+
+  @override
+  String get referralErrAlready => 'Já resgatou o código de um amigo.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count análises extra',
+      one: '1 análise extra',
+    );
+    return 'Analiso ações com o WhatStock: fotografe uma ação e a IA explica tudo. Com o meu código $code recebe $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Código copiado';
 }

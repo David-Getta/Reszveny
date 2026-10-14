@@ -1480,4 +1480,73 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'ИИ-анализ · не инвестиционная рекомендация';
+
+  @override
+  String get referralTitle => 'Пригласите друзей';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дополнительного анализа',
+      many: '$count дополнительных анализов',
+      few: '$count дополнительных анализа',
+      one: '$count дополнительный анализ',
+    );
+    return 'Поделитесь своим кодом. Друг сразу получит $_temp0, а вы — столько же после первого анализа друга.';
+  }
+
+  @override
+  String get referralYourCode => 'Ваш код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Приглашено: $invited · Награждено: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Есть код от друга?';
+
+  @override
+  String get referralRedeem => 'Активировать';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавлено $count дополнительного анализа. Добро пожаловать!',
+      many: 'Добавлено $count дополнительных анализов. Добро пожаловать!',
+      few: 'Добавлено $count дополнительных анализа. Добро пожаловать!',
+      one: 'Добавлен $count дополнительный анализ. Добро пожаловать!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Такого кода не существует. Проверьте его и попробуйте ещё раз.';
+
+  @override
+  String get referralErrOwn => 'Нельзя активировать собственный код.';
+
+  @override
+  String get referralErrAlready => 'Вы уже активировали код друга.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дополнительного анализа',
+      many: '$count дополнительных анализов',
+      few: '$count дополнительных анализа',
+      one: '$count дополнительный анализ',
+    );
+    return 'Я анализирую акции с WhatStock: сфотографируй акцию, и ИИ её объяснит. С моим кодом $code ты получишь $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Код скопирован';
 }

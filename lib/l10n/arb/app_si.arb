@@ -396,5 +396,17 @@
   "shareAsImage": "රූපයක් ලෙස බෙදාගන්න",
   "shareAsText": "පෙළක් ලෙස බෙදාගන්න",
   "shareCardFooter": "WhatStock සමඟ සාදන ලදී",
-  "shareCardDisclaimer": "AI විශ්ලේෂණය · ආයෝජන උපදෙසක් නොවේ"
+  "shareCardDisclaimer": "AI විශ්ලේෂණය · ආයෝජන උපදෙසක් නොවේ",
+  "referralTitle": "මිතුරන්ට ආරාධනා කරන්න",
+  "referralBody": "ඔබේ කේතය බෙදාගන්න. ඔබේ මිතුරාට වහාම {count, plural, =1{අමතර විශ්ලේෂණයක්} other{අමතර විශ්ලේෂණ {count}ක්}} ලැබෙන අතර, ඔවුන්ගේ පළමු විශ්ලේෂණයෙන් පසු ඔබටත් එපමණම ලැබේ.",
+  "referralYourCode": "ඔබේ කේතය",
+  "referralStats": "ආරාධිත: {invited} · ත්‍යාග ලැබූ: {rewarded}",
+  "referralHaveCode": "මිතුරෙකුගෙන් ලැබුණු කේතයක් තිබේද?",
+  "referralRedeem": "භාවිත කරන්න",
+  "referralRedeemed": "{count, plural, =1{අමතර විශ්ලේෂණයක් එක් කළා. සාදරයෙන් පිළිගනිමු!} other{අමතර විශ්ලේෂණ {count}ක් එක් කළා. සාදරයෙන් පිළිගනිමු!}}",
+  "referralErrUnknown": "මෙම කේතය නොපවතී. පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
+  "referralErrOwn": "ඔබට ඔබේම කේතය භාවිත කළ නොහැක.",
+  "referralErrAlready": "ඔබ දැනටමත් මිතුරෙකුගේ කේතයක් භාවිත කර ඇත.",
+  "referralShareText": "මම WhatStock සමඟ කොටස් විශ්ලේෂණය කරමි: කොටසක ඡායාරූපයක් ගන්න, AI එය පැහැදිලි කරයි. මගේ {code} කේතය සමඟ ඔබට {count, plural, =1{අමතර විශ්ලේෂණයක්} other{අමතර විශ්ලේෂණ {count}ක්}} ලැබේ.",
+  "referralCopied": "කේතය පිටපත් කළා"
 }

@@ -1441,4 +1441,67 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Ongororo yeAI · haisi zano rekuisa mari';
+
+  @override
+  String get referralTitle => 'Koka shamwari';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ongororo $count dzekuwedzera',
+      one: 'ongororo 1 yekuwedzera',
+    );
+    return 'Govera kodhi yako. Shamwari yako inowana $_temp0 ipapo ipapo, uye newe unowana zvakafanana mushure meongororo yayo yekutanga.';
+  }
+
+  @override
+  String get referralYourCode => 'Kodhi yako';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Vakokwa: $invited · Mibairo: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Une kodhi kubva kushamwari?';
+
+  @override
+  String get referralRedeem => 'Shandisa';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ongororo $count dzekuwedzera dzawedzerwa. Mauya!',
+      one: 'Ongororo 1 yekuwedzera yawedzerwa. Mauya!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Kodhi iyi haipo. Iongorore wozoedza zvakare.';
+
+  @override
+  String get referralErrOwn => 'Haugoni kushandisa kodhi yako pachako.';
+
+  @override
+  String get referralErrAlready => 'Wakatoshandisa kodhi yeshamwari.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ongororo $count dzekuwedzera',
+      one: 'ongororo 1 yekuwedzera',
+    );
+    return 'Ndinoongorora masheya neWhatStock: tora mufananidzo wesheya uye AI inokutsanangurira. Nekodhi yangu $code unowana $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kodhi yakopwa';
 }

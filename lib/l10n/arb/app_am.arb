@@ -396,5 +396,17 @@
   "shareAsImage": "እንደ ምስል አጋራ",
   "shareAsText": "እንደ ጽሑፍ አጋራ",
   "shareCardFooter": "በWhatStock የተሰራ",
-  "shareCardDisclaimer": "የAI ትንተና · የኢንቨስትመንት ምክር አይደለም"
+  "shareCardDisclaimer": "የAI ትንተና · የኢንቨስትመንት ምክር አይደለም",
+  "referralTitle": "ጓደኞችን ይጋብዙ",
+  "referralBody": "ኮድዎን ያጋሩ። ጓደኛዎ ወዲያውኑ {count, plural, =1{1 ተጨማሪ ትንተና} other{{count} ተጨማሪ ትንተናዎች}} ያገኛል፤ እርስዎም ከመጀመሪያ ትንተናው በኋላ ተመሳሳዩን ያገኛሉ።",
+  "referralYourCode": "የእርስዎ ኮድ",
+  "referralStats": "የተጋበዙ፦ {invited} · የተሸለሙ፦ {rewarded}",
+  "referralHaveCode": "ከጓደኛ የተገኘ ኮድ አለዎት?",
+  "referralRedeem": "ተጠቀም",
+  "referralRedeemed": "{count, plural, =1{1 ተጨማሪ ትንተና ታክሏል። እንኳን ደህና መጡ!} other{{count} ተጨማሪ ትንተናዎች ታክለዋል። እንኳን ደህና መጡ!}}",
+  "referralErrUnknown": "ይህ ኮድ የለም። ያረጋግጡና እንደገና ይሞክሩ።",
+  "referralErrOwn": "የራስዎን ኮድ መጠቀም አይችሉም።",
+  "referralErrAlready": "የጓደኛን ኮድ አስቀድመው ተጠቅመዋል።",
+  "referralShareText": "አክሲዮኖችን በWhatStock እተነትናለሁ፦ የአክሲዮን ፎቶ ያንሱ፣ AI ያብራራዋል። በኮዴ {code} {count, plural, =1{1 ተጨማሪ ትንተና} other{{count} ተጨማሪ ትንተናዎች}} ያገኛሉ።",
+  "referralCopied": "ኮዱ ተቀድቷል"
 }

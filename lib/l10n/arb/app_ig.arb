@@ -396,5 +396,17 @@
   "shareAsImage": "Kesaa dị ka foto",
   "shareAsText": "Kesaa dị ka ederede",
   "shareCardFooter": "E ji WhatStock mee ya",
-  "shareCardDisclaimer": "Nyocha AI · ọ bụghị ndụmọdụ itinye ego"
+  "shareCardDisclaimer": "Nyocha AI · ọ bụghị ndụmọdụ itinye ego",
+  "referralTitle": "Kpọọ ndị enyi",
+  "referralBody": "Kesaa koodu gị. Enyi gị ga-enweta {count, plural, =1{nyocha mgbakwunye 1} other{nyocha mgbakwunye {count}}} ozugbo, ị ga-enwetakwa otu ahụ mgbe o mechara nyocha mbụ ya.",
+  "referralYourCode": "Koodu gị",
+  "referralStats": "Ndị a kpọrọ: {invited} · Ndị e ji nweta onyinye: {rewarded}",
+  "referralHaveCode": "Ị nwere koodu sitere n'aka enyi?",
+  "referralRedeem": "Jiri ya",
+  "referralRedeemed": "{count, plural, =1{Agbakwunyere nyocha mgbakwunye 1. Nnọọ!} other{Agbakwunyere nyocha mgbakwunye {count}. Nnọọ!}}",
+  "referralErrUnknown": "Koodu a adịghị. Lelee ya ma nwaa ọzọ.",
+  "referralErrOwn": "Ị nweghị ike iji koodu nke gị.",
+  "referralErrAlready": "Ị jirela koodu otu enyi gị.",
+  "referralShareText": "Ana m eji WhatStock enyocha stock: see foto stock, AI ga-akọwakwa ya. Site na koodu m {code} ị ga-enweta {count, plural, =1{nyocha mgbakwunye 1} other{nyocha mgbakwunye {count}}}.",
+  "referralCopied": "Edepụtagharala koodu"
 }

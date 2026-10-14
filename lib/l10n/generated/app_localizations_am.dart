@@ -1413,4 +1413,66 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'የAI ትንተና · የኢንቨስትመንት ምክር አይደለም';
+
+  @override
+  String get referralTitle => 'ጓደኞችን ይጋብዙ';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተጨማሪ ትንተናዎች',
+      one: '1 ተጨማሪ ትንተና',
+    );
+    return 'ኮድዎን ያጋሩ። ጓደኛዎ ወዲያውኑ $_temp0 ያገኛል፤ እርስዎም ከመጀመሪያ ትንተናው በኋላ ተመሳሳዩን ያገኛሉ።';
+  }
+
+  @override
+  String get referralYourCode => 'የእርስዎ ኮድ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'የተጋበዙ፦ $invited · የተሸለሙ፦ $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'ከጓደኛ የተገኘ ኮድ አለዎት?';
+
+  @override
+  String get referralRedeem => 'ተጠቀም';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተጨማሪ ትንተናዎች ታክለዋል። እንኳን ደህና መጡ!',
+      one: '1 ተጨማሪ ትንተና ታክሏል። እንኳን ደህና መጡ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'ይህ ኮድ የለም። ያረጋግጡና እንደገና ይሞክሩ።';
+
+  @override
+  String get referralErrOwn => 'የራስዎን ኮድ መጠቀም አይችሉም።';
+
+  @override
+  String get referralErrAlready => 'የጓደኛን ኮድ አስቀድመው ተጠቅመዋል።';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተጨማሪ ትንተናዎች',
+      one: '1 ተጨማሪ ትንተና',
+    );
+    return 'አክሲዮኖችን በWhatStock እተነትናለሁ፦ የአክሲዮን ፎቶ ያንሱ፣ AI ያብራራዋል። በኮዴ $code $_temp0 ያገኛሉ።';
+  }
+
+  @override
+  String get referralCopied => 'ኮዱ ተቀድቷል';
 }

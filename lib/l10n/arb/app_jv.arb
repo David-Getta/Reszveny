@@ -396,5 +396,17 @@
   "shareAsImage": "Bagekake minangka gambar",
   "shareAsText": "Bagekake minangka teks",
   "shareCardFooter": "Digawe nganggo WhatStock",
-  "shareCardDisclaimer": "Analisis AI · dudu saran investasi"
+  "shareCardDisclaimer": "Analisis AI · dudu saran investasi",
+  "referralTitle": "Undang kanca",
+  "referralBody": "Bagekake kodhemu. Kancamu langsung entuk {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, lan kowe entuk semono uga sawise analisis pisanane.",
+  "referralYourCode": "Kodhemu",
+  "referralStats": "Diundang: {invited} · Entuk ganjaran: {rewarded}",
+  "referralHaveCode": "Duwe kodhe saka kanca?",
+  "referralRedeem": "Tukarake",
+  "referralRedeemed": "{count, plural, =1{1 analisis tambahan wis ditambahake. Sugeng rawuh!} other{{count} analisis tambahan wis ditambahake. Sugeng rawuh!}}",
+  "referralErrUnknown": "Kodhe iki ora ana. Priksanen lan coba maneh.",
+  "referralErrOwn": "Kowe ora bisa nukarake kodhemu dhewe.",
+  "referralErrAlready": "Kowe wis tau nukarake kodhe saka kanca.",
+  "referralShareText": "Aku nganalisis saham nganggo WhatStock: foto sahame lan AI bakal nerangake. Nganggo kodheku {code} kowe entuk {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
+  "referralCopied": "Kodhe disalin"
 }

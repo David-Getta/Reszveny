@@ -396,5 +396,17 @@
   "shareAsImage": "Rasm sifatida ulashish",
   "shareAsText": "Matn sifatida ulashish",
   "shareCardFooter": "WhatStock yordamida yaratilgan",
-  "shareCardDisclaimer": "AI tahlili · investitsiya maslahati emas"
+  "shareCardDisclaimer": "AI tahlili · investitsiya maslahati emas",
+  "referralTitle": "Doʻstlarni taklif qilish",
+  "referralBody": "Kodingizni ulashing. Doʻstingiz darhol {count, plural, =1{1 ta qoʻshimcha tahlil} other{{count} ta qoʻshimcha tahlil}} oladi, siz esa uning birinchi tahlilidan keyin xuddi shuncha olasiz.",
+  "referralYourCode": "Sizning kodingiz",
+  "referralStats": "Taklif qilinganlar: {invited} · Mukofotlanganlar: {rewarded}",
+  "referralHaveCode": "Doʻstingizdan kod bormi?",
+  "referralRedeem": "Faollashtirish",
+  "referralRedeemed": "{count, plural, =1{1 ta qoʻshimcha tahlil qoʻshildi. Xush kelibsiz!} other{{count} ta qoʻshimcha tahlil qoʻshildi. Xush kelibsiz!}}",
+  "referralErrUnknown": "Bunday kod mavjud emas. Tekshirib, qaytadan urinib koʻring.",
+  "referralErrOwn": "Oʻz kodingizni faollashtira olmaysiz.",
+  "referralErrAlready": "Siz allaqachon doʻstingiz kodini faollashtirgansiz.",
+  "referralShareText": "Men aksiyalarni WhatStock bilan tahlil qilaman: aksiyani suratga oling, AI uni tushuntirib beradi. Mening {code} kodim bilan {count, plural, =1{1 ta qoʻshimcha tahlil} other{{count} ta qoʻshimcha tahlil}} olasiz.",
+  "referralCopied": "Kod nusxalandi"
 }

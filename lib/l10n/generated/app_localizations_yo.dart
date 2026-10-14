@@ -1436,4 +1436,67 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò';
+
+  @override
+  String get referralTitle => 'Pe àwọn ọ̀rẹ́';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ìtúpalẹ̀ àfikún $count',
+      one: 'ìtúpalẹ̀ àfikún 1',
+    );
+    return 'Pín kóòdù rẹ. Ọ̀rẹ́ rẹ yóò gba $_temp0 lẹ́sẹ̀kẹsẹ̀, ìwọ náà yóò sì gba iye kan náà lẹ́yìn ìtúpalẹ̀ àkọ́kọ́ rẹ̀.';
+  }
+
+  @override
+  String get referralYourCode => 'Kóòdù rẹ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Àwọn tí o pè: $invited · Ẹ̀bùn: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ṣé o ní kóòdù láti ọ̀dọ̀ ọ̀rẹ́ kan?';
+
+  @override
+  String get referralRedeem => 'Lò ó';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti fi ìtúpalẹ̀ àfikún $count kún un. Ẹ káàbọ̀!',
+      one: 'A ti fi ìtúpalẹ̀ àfikún 1 kún un. Ẹ káàbọ̀!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Kóòdù yìí kò sí. Ṣàyẹ̀wò rẹ̀ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.';
+
+  @override
+  String get referralErrOwn => 'O kò lè lo kóòdù tìrẹ.';
+
+  @override
+  String get referralErrAlready => 'O ti lo kóòdù ọ̀rẹ́ kan tẹ́lẹ̀.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ìtúpalẹ̀ àfikún $count',
+      one: 'ìtúpalẹ̀ àfikún 1',
+    );
+    return 'Mo ń ṣe ìtúpalẹ̀ ìpín pẹ̀lú WhatStock: ya fọ́tò ìpín kan, AI yóò sì ṣàlàyé rẹ̀. Pẹ̀lú kóòdù mi $code ìwọ yóò gba $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'A ti da kóòdù kọ';
 }

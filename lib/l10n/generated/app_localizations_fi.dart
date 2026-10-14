@@ -1438,4 +1438,67 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Tekoälyanalyysi · ei sijoitusneuvontaa';
+
+  @override
+  String get referralTitle => 'Kutsu ystäviä';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lisäanalyysia',
+      one: '1 lisäanalyysin',
+    );
+    return 'Jaa koodisi. Ystäväsi saa heti $_temp0, ja sinä saat saman verran hänen ensimmäisen analyysinsa jälkeen.';
+  }
+
+  @override
+  String get referralYourCode => 'Koodisi';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Kutsuttu: $invited · Palkittu: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Onko sinulla ystävän koodi?';
+
+  @override
+  String get referralRedeem => 'Lunasta';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lisäanalyysia lisätty. Tervetuloa!',
+      one: '1 lisäanalyysi lisätty. Tervetuloa!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Koodia ei ole olemassa. Tarkista se ja yritä uudelleen.';
+
+  @override
+  String get referralErrOwn => 'Et voi lunastaa omaa koodiasi.';
+
+  @override
+  String get referralErrAlready => 'Olet jo lunastanut ystävän koodin.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lisäanalyysia',
+      one: '1 lisäanalyysin',
+    );
+    return 'Analysoin osakkeita WhatStockilla: kuvaa osake, niin tekoäly selittää sen. Koodillani $code saat $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Koodi kopioitu';
 }

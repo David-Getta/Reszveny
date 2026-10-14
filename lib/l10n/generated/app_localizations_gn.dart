@@ -1441,4 +1441,67 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua';
+
+  @override
+  String get referralTitle => 'Eguenoi ne angirũnguérape';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jehesaʼỹijo mbojuajupyre',
+      one: '1 jehesaʼỹijo mbojuajupyre',
+    );
+    return 'Emoherakuã ne código. Ne angirũ ohupyty pyaʼe $_temp0, ha nde avei rehupytýta upeichaite ijehesaʼỹijo peteĩha rire.';
+  }
+
+  @override
+  String get referralYourCode => 'Ne código';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Oñeguenoíva: $invited · Jopói: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => '¿Reguereko peteĩ código ne angirũ mbaʼe?';
+
+  @override
+  String get referralRedeem => 'Eiporu';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñembojoaju $count jehesaʼỹijo mbojuajupyre. ¡Eguahẽ porãite!',
+      one: 'Oñembojoaju 1 jehesaʼỹijo mbojuajupyre. ¡Eguahẽ porãite!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ko código ndaipóri. Ehecha jey ha ehaʼã jey.';
+
+  @override
+  String get referralErrOwn => 'Ndaikatúi reiporu ne código voi.';
+
+  @override
+  String get referralErrAlready => 'Reiporúma peteĩ ne angirũ código.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jehesaʼỹijo mbojuajupyre',
+      one: '1 jehesaʼỹijo mbojuajupyre',
+    );
+    return 'Ahesaʼỹijo acción-kuéra WhatStock rupive: ejapyhy peteĩ acción raʼãnga ha AI ohesape chupe. Che código $code rupive rehupytýta $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Código oñekopia';
 }

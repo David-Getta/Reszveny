@@ -396,5 +396,17 @@
   "shareAsImage": "แชร์เป็นรูปภาพ",
   "shareAsText": "แชร์เป็นข้อความ",
   "shareCardFooter": "สร้างด้วย WhatStock",
-  "shareCardDisclaimer": "การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน"
+  "shareCardDisclaimer": "การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน",
+  "referralTitle": "ชวนเพื่อน",
+  "referralBody": "แชร์โค้ดของคุณ เพื่อนของคุณจะได้รับ{count, plural, other{การวิเคราะห์เพิ่มเติม {count} ครั้ง}}ทันที และคุณจะได้รับเท่ากันหลังจากเพื่อนวิเคราะห์ครั้งแรก",
+  "referralYourCode": "โค้ดของคุณ",
+  "referralStats": "เชิญแล้ว: {invited} · ได้รางวัลแล้ว: {rewarded}",
+  "referralHaveCode": "มีโค้ดจากเพื่อนไหม",
+  "referralRedeem": "ใช้โค้ด",
+  "referralRedeemed": "{count, plural, other{ได้รับการวิเคราะห์เพิ่มเติม {count} ครั้งแล้ว ยินดีต้อนรับ!}}",
+  "referralErrUnknown": "ไม่มีโค้ดนี้ โปรดตรวจสอบแล้วลองอีกครั้ง",
+  "referralErrOwn": "คุณใช้โค้ดของตัวเองไม่ได้",
+  "referralErrAlready": "คุณใช้โค้ดของเพื่อนไปแล้ว",
+  "referralShareText": "ฉันวิเคราะห์หุ้นด้วย WhatStock: ถ่ายรูปหุ้น แล้ว AI จะอธิบายให้ ใช้โค้ดของฉัน {code} รับ{count, plural, other{การวิเคราะห์เพิ่มเติม {count} ครั้ง}}",
+  "referralCopied": "คัดลอกโค้ดแล้ว"
 }

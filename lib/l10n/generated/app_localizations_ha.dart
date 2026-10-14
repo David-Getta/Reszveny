@@ -1441,4 +1441,68 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Nazarin AI · ba shawarar zuba jari ba ne';
+
+  @override
+  String get referralTitle => 'Gayyaci abokai';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ƙarin nazari $count',
+      one: 'ƙarin nazari 1',
+    );
+    return 'Raba lambarka. Abokinka zai samu $_temp0 nan take, kai ma za ka samu haka bayan nazarinsa na farko.';
+  }
+
+  @override
+  String get referralYourCode => 'Lambarka';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'An gayyata: $invited · An ba da lada: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Kana da lamba daga aboki?';
+
+  @override
+  String get referralRedeem => 'Yi amfani';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An ƙara maka ƙarin nazari $count. Barka da zuwa!',
+      one: 'An ƙara maka ƙarin nazari 1. Barka da zuwa!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Wannan lambar ba ta wanzu ba. Duba ta ka sake gwadawa.';
+
+  @override
+  String get referralErrOwn => 'Ba za ka iya amfani da lambarka ta kanka ba.';
+
+  @override
+  String get referralErrAlready =>
+      'Ka riga ka yi amfani da lambar wani abokinka.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ƙarin nazari $count',
+      one: 'ƙarin nazari 1',
+    );
+    return 'Ina nazarin hannun jari da WhatStock: ka ɗauki hoton hannun jari, AI kuma ta yi bayani. Da lambata $code za ka samu $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'An kwafi lambar';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Падзяліцца выявай",
   "shareAsText": "Падзяліцца тэкстам",
   "shareCardFooter": "Зроблена ў WhatStock",
-  "shareCardDisclaimer": "AI-аналіз · не інвестыцыйная парада"
+  "shareCardDisclaimer": "AI-аналіз · не інвестыцыйная парада",
+  "referralTitle": "Запрасіце сяброў",
+  "referralBody": "Падзяліцеся сваім кодам. Ваш сябар адразу атрымае {count, plural, one{{count} дадатковы аналіз} few{{count} дадатковыя аналізы} many{{count} дадатковых аналізаў} other{{count} дадатковага аналізу}}, а вы — столькі ж пасля яго першага аналізу.",
+  "referralYourCode": "Ваш код",
+  "referralStats": "Запрошана: {invited} · Узнагароджана: {rewarded}",
+  "referralHaveCode": "Ёсць код ад сябра?",
+  "referralRedeem": "Актываваць",
+  "referralRedeemed": "{count, plural, one{Дададзены {count} дадатковы аналіз. Вітаем!} few{Дададзены {count} дадатковыя аналізы. Вітаем!} many{Дададзена {count} дадатковых аналізаў. Вітаем!} other{Дададзена {count} дадатковага аналізу. Вітаем!}}",
+  "referralErrUnknown": "Такога кода не існуе. Праверце яго і паспрабуйце яшчэ раз.",
+  "referralErrOwn": "Нельга актываваць уласны код.",
+  "referralErrAlready": "Вы ўжо актывавалі код сябра.",
+  "referralShareText": "Я аналізую акцыі з WhatStock: сфатаграфуйце акцыю, і AI растлумачыць яе. З маім кодам {code} вы атрымаеце {count, plural, one{{count} дадатковы аналіз} few{{count} дадатковыя аналізы} many{{count} дадатковых аналізаў} other{{count} дадатковага аналізу}}.",
+  "referralCopied": "Код скапіяваны"
 }

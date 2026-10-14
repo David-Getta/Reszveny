@@ -396,5 +396,17 @@
   "shareAsImage": "Bendrinti kaip paveikslėlį",
   "shareAsText": "Bendrinti kaip tekstą",
   "shareCardFooter": "Sukurta su WhatStock",
-  "shareCardDisclaimer": "DI analizė · ne investavimo rekomendacija"
+  "shareCardDisclaimer": "DI analizė · ne investavimo rekomendacija",
+  "referralTitle": "Pakvieskite draugų",
+  "referralBody": "Pasidalykite savo kodu. Jūsų draugas iškart gaus {count, plural, one{{count} papildomą analizę} few{{count} papildomas analizes} many{{count} papildomos analizės} other{{count} papildomų analizių}}, o jūs – tiek pat po jo pirmosios analizės.",
+  "referralYourCode": "Jūsų kodas",
+  "referralStats": "Pakviesta: {invited} · Apdovanota: {rewarded}",
+  "referralHaveCode": "Turite draugo kodą?",
+  "referralRedeem": "Panaudoti",
+  "referralRedeemed": "{count, plural, one{Pridėta {count} papildoma analizė. Sveiki atvykę!} few{Pridėtos {count} papildomos analizės. Sveiki atvykę!} many{Pridėta {count} papildomos analizės. Sveiki atvykę!} other{Pridėta {count} papildomų analizių. Sveiki atvykę!}}",
+  "referralErrUnknown": "Tokio kodo nėra. Patikrinkite ir bandykite dar kartą.",
+  "referralErrOwn": "Negalite panaudoti savo kodo.",
+  "referralErrAlready": "Jau panaudojote draugo kodą.",
+  "referralShareText": "Akcijas analizuoju su WhatStock: nufotografuoji akciją, o DI ją paaiškina. Su mano kodu {code} gausi {count, plural, one{{count} papildomą analizę} few{{count} papildomas analizes} many{{count} papildomos analizės} other{{count} papildomų analizių}}.",
+  "referralCopied": "Kodas nukopijuotas"
 }

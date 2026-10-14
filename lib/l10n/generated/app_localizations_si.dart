@@ -1436,4 +1436,67 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI විශ්ලේෂණය · ආයෝජන උපදෙසක් නොවේ';
+
+  @override
+  String get referralTitle => 'මිතුරන්ට ආරාධනා කරන්න';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අමතර විශ්ලේෂණ $countක්',
+      one: 'අමතර විශ්ලේෂණයක්',
+    );
+    return 'ඔබේ කේතය බෙදාගන්න. ඔබේ මිතුරාට වහාම $_temp0 ලැබෙන අතර, ඔවුන්ගේ පළමු විශ්ලේෂණයෙන් පසු ඔබටත් එපමණම ලැබේ.';
+  }
+
+  @override
+  String get referralYourCode => 'ඔබේ කේතය';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'ආරාධිත: $invited · ත්‍යාග ලැබූ: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'මිතුරෙකුගෙන් ලැබුණු කේතයක් තිබේද?';
+
+  @override
+  String get referralRedeem => 'භාවිත කරන්න';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අමතර විශ්ලේෂණ $countක් එක් කළා. සාදරයෙන් පිළිගනිමු!',
+      one: 'අමතර විශ්ලේෂණයක් එක් කළා. සාදරයෙන් පිළිගනිමු!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'මෙම කේතය නොපවතී. පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get referralErrOwn => 'ඔබට ඔබේම කේතය භාවිත කළ නොහැක.';
+
+  @override
+  String get referralErrAlready => 'ඔබ දැනටමත් මිතුරෙකුගේ කේතයක් භාවිත කර ඇත.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අමතර විශ්ලේෂණ $countක්',
+      one: 'අමතර විශ්ලේෂණයක්',
+    );
+    return 'මම WhatStock සමඟ කොටස් විශ්ලේෂණය කරමි: කොටසක ඡායාරූපයක් ගන්න, AI එය පැහැදිලි කරයි. මගේ $code කේතය සමඟ ඔබට $_temp0 ලැබේ.';
+  }
+
+  @override
+  String get referralCopied => 'කේතය පිටපත් කළා';
 }

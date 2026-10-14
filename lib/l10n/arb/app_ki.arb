@@ -396,5 +396,17 @@
   "shareAsImage": "Gayana ta mbica",
   "shareAsText": "Gayana ta mandĩko",
   "shareCardFooter": "Ũthondeketwo na WhatStock",
-  "shareCardDisclaimer": "Ũthuthuria wa AI · ti ũtaaro wa investment"
+  "shareCardDisclaimer": "Ũthuthuria wa AI · ti ũtaaro wa investment",
+  "referralTitle": "Ita arata",
+  "referralBody": "Gayana kodi yaku. Mũrata waku nĩ egũkora {count, plural, =1{ũthuthuria 1 wa kũongerera} other{mathuthuria {count} ma kũongerera}} o rĩu, na we nĩ ũgũkora o ũguo thutha wa ũthuthuria wake wa mbere.",
+  "referralYourCode": "Kodi yaku",
+  "referralStats": "Arĩa wĩtĩte: {invited} · Ibeo: {rewarded}",
+  "referralHaveCode": "Ũrĩ na kodi kuuma kũrĩ mũrata?",
+  "referralRedeem": "Hũthĩra",
+  "referralRedeemed": "{count, plural, =1{Ũthuthuria 1 wa kũongerera nĩ wongereirwo. Nĩ wamũkĩrwo!} other{Mathuthuria {count} ma kũongerera nĩ mongereirwo. Nĩ wamũkĩrwo!}}",
+  "referralErrUnknown": "Kodi ĩno ndĩrĩ kuo. Ĩrore na ũgerie rĩngĩ.",
+  "referralErrOwn": "Ndũngĩhũthĩra kodi yaku we mwene.",
+  "referralErrAlready": "Nĩ wahũthĩrire kodi ya mũrata.",
+  "referralShareText": "Njĩthuthuragia hisa na WhatStock: oya mbica ya hisa na AI nĩ ĩgũgũtaarĩria. Na kodi yakwa {code} nĩ ũgũkora {count, plural, =1{ũthuthuria 1 wa kũongerera} other{mathuthuria {count} ma kũongerera}}.",
+  "referralCopied": "Kodi nĩ yakobĩo"
 }

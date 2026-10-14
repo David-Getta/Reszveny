@@ -1469,4 +1469,70 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI analīze · nav ieguldījumu konsultācija';
+
+  @override
+  String get referralTitle => 'Uzaiciniet draugus';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count papildu analīzes',
+      one: '$count papildu analīzi',
+      zero: '$count papildu analīzes',
+    );
+    return 'Kopīgojiet savu kodu. Jūsu draugs uzreiz saņems $_temp0, un jūs – tikpat pēc viņa pirmās analīzes.';
+  }
+
+  @override
+  String get referralYourCode => 'Jūsu kods';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Uzaicināti: $invited · Apbalvoti: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Jums ir drauga kods?';
+
+  @override
+  String get referralRedeem => 'Izmantot';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pievienotas $count papildu analīzes. Laipni lūdzam!',
+      one: 'Pievienota $count papildu analīze. Laipni lūdzam!',
+      zero: 'Pievienotas $count papildu analīzes. Laipni lūdzam!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Šāds kods neeksistē. Pārbaudiet to un mēģiniet vēlreiz.';
+
+  @override
+  String get referralErrOwn => 'Jūs nevarat izmantot savu kodu.';
+
+  @override
+  String get referralErrAlready => 'Drauga kods jau ir izmantots.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count papildu analīzes',
+      one: '$count papildu analīzi',
+      zero: '$count papildu analīzes',
+    );
+    return 'Es analizēju akcijas ar WhatStock: nofotografē akciju, un AI to izskaidro. Ar manu kodu $code tu saņemsi $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kods nokopēts';
 }

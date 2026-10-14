@@ -396,5 +396,17 @@
   "shareAsImage": "Hizarao ho sary",
   "shareAsText": "Hizarao ho soratra",
   "shareCardFooter": "Natao tamin'ny WhatStock",
-  "shareCardDisclaimer": "Fandalinana AI · tsy torohevitra momba ny fampiasam-bola"
+  "shareCardDisclaimer": "Fandalinana AI · tsy torohevitra momba ny fampiasam-bola",
+  "referralTitle": "Asao ny namanao",
+  "referralBody": "Zarao ny kaodinao. Mahazo {count, plural, =1{1 fandalinana fanampiny} other{{count} fandalinana fanampiny}} avy hatrany ny namanao, ary mahazo toy izany koa ianao aorian'ny fandalinany voalohany.",
+  "referralYourCode": "Ny kaodinao",
+  "referralStats": "Nasaina: {invited} · Nahazo valisoa: {rewarded}",
+  "referralHaveCode": "Manana kaody avy amin'ny namana ve ianao?",
+  "referralRedeem": "Ampiasao",
+  "referralRedeemed": "{count, plural, =1{Nampiana 1 fandalinana fanampiny. Tongasoa!} other{Nampiana {count} fandalinana fanampiny. Tongasoa!}}",
+  "referralErrUnknown": "Tsy misy io kaody io. Hamarino ary andramo indray.",
+  "referralErrOwn": "Tsy azonao ampiasaina ny kaodinao manokana.",
+  "referralErrAlready": "Efa nampiasa kaodin'ny namana ianao.",
+  "referralShareText": "Mandalina aksiona amin'ny WhatStock aho: makà sary aksiona dia hazavain'ny AI izany. Amin'ny kaodiko {code} dia mahazo {count, plural, =1{1 fandalinana fanampiny} other{{count} fandalinana fanampiny}} ianao.",
+  "referralCopied": "Voadika ny kaody"
 }

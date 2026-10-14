@@ -396,5 +396,17 @@
   "shareAsImage": "Подели као слику",
   "shareAsText": "Подели као текст",
   "shareCardFooter": "Направљено уз WhatStock",
-  "shareCardDisclaimer": "AI анализа · није инвестициони савет"
+  "shareCardDisclaimer": "AI анализа · није инвестициони савет",
+  "referralTitle": "Позови пријатеље",
+  "referralBody": "Подели свој код. Твој пријатељ одмах добија {count, plural, one{{count} додатну анализу} few{{count} додатне анализе} other{{count} додатних анализа}}, а ти исто толико после његове прве анализе.",
+  "referralYourCode": "Твој код",
+  "referralStats": "Позвано: {invited} · Награђено: {rewarded}",
+  "referralHaveCode": "Имаш код од пријатеља?",
+  "referralRedeem": "Искористи",
+  "referralRedeemed": "{count, plural, one{Додата је {count} додатна анализа. Добро дошли!} few{Додате су {count} додатне анализе. Добро дошли!} other{Додато је {count} додатних анализа. Добро дошли!}}",
+  "referralErrUnknown": "Овај код не постоји. Провери га и покушај поново.",
+  "referralErrOwn": "Не можеш да искористиш свој код.",
+  "referralErrAlready": "Код пријатеља је већ искоришћен на овом налогу.",
+  "referralShareText": "Анализирам акције уз WhatStock: фотографишеш акцију, а AI ти је објасни. Са мојим кодом {code} добијаш {count, plural, one{{count} додатну анализу} few{{count} додатне анализе} other{{count} додатних анализа}}.",
+  "referralCopied": "Код је копиран"
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "చిత్రంగా షేర్ చేయండి",
   "shareAsText": "టెక్స్ట్‌గా షేర్ చేయండి",
   "shareCardFooter": "WhatStock తో రూపొందించబడింది",
-  "shareCardDisclaimer": "AI విశ్లేషణ · పెట్టుబడి సలహా కాదు"
+  "shareCardDisclaimer": "AI విశ్లేషణ · పెట్టుబడి సలహా కాదు",
+  "referralTitle": "స్నేహితులను ఆహ్వానించండి",
+  "referralBody": "మీ కోడ్‌ను షేర్ చేయండి. మీ స్నేహితులు వెంటనే {count, plural, =1{1 అదనపు విశ్లేషణ} other{{count} అదనపు విశ్లేషణలు}} పొందుతారు, వారి మొదటి విశ్లేషణ తర్వాత మీరూ అంతే పొందుతారు.",
+  "referralYourCode": "మీ కోడ్",
+  "referralStats": "ఆహ్వానించినవారు: {invited} · రివార్డ్‌లు: {rewarded}",
+  "referralHaveCode": "స్నేహితుని కోడ్ ఉందా?",
+  "referralRedeem": "రీడీమ్ చేయండి",
+  "referralRedeemed": "{count, plural, =1{1 అదనపు విశ్లేషణ జోడించబడింది. స్వాగతం!} other{{count} అదనపు విశ్లేషణలు జోడించబడ్డాయి. స్వాగతం!}}",
+  "referralErrUnknown": "ఈ కోడ్ ఉనికిలో లేదు. దాన్ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+  "referralErrOwn": "మీ స్వంత కోడ్‌ను మీరు రీడీమ్ చేయలేరు.",
+  "referralErrAlready": "మీరు ఇప్పటికే స్నేహితుని కోడ్‌ను రీడీమ్ చేశారు.",
+  "referralShareText": "నేను WhatStockతో స్టాక్‌లను విశ్లేషిస్తాను: స్టాక్‌ను ఫోటో తీయండి, AI దాన్ని వివరిస్తుంది. నా కోడ్ {code}తో మీరు {count, plural, =1{1 అదనపు విశ్లేషణ} other{{count} అదనపు విశ్లేషణలు}} పొందుతారు.",
+  "referralCopied": "కోడ్ కాపీ చేయబడింది"
 }

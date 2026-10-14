@@ -396,5 +396,17 @@
   "shareAsImage": "Yabelana njengomfanekiso",
   "shareAsText": "Yabelana njengombhalo",
   "shareCardFooter": "Yenziwe nge-WhatStock",
-  "shareCardDisclaimer": "Uhlalutyo lwe-AI · alulocebiso lotyalo-mali"
+  "shareCardDisclaimer": "Uhlalutyo lwe-AI · alulocebiso lotyalo-mali",
+  "referralTitle": "Mema abahlobo",
+  "referralBody": "Yabelana ngekhowudi yakho. Umhlobo wakho ufumana {count, plural, =1{uhlalutyo olunye olongezelelweyo} other{iintlalutyo ezongezelelweyo ezi-{count}}} ngoko nangoko, nawe ufumana okufanayo emva kohlalutyo lwakhe lokuqala.",
+  "referralYourCode": "Ikhowudi yakho",
+  "referralStats": "Abamenyiweyo: {invited} · Abavuzwe: {rewarded}",
+  "referralHaveCode": "Unekhowudi evela kumhlobo?",
+  "referralRedeem": "Sebenzisa",
+  "referralRedeemed": "{count, plural, =1{Kongezwe uhlalutyo olunye. Wamkelekile!} other{Kongezwe iintlalutyo ezi-{count}. Wamkelekile!}}",
+  "referralErrUnknown": "Le khowudi ayikho. Yijonge uze uzame kwakhona.",
+  "referralErrOwn": "Awunakuyisebenzisa ikhowudi yakho.",
+  "referralErrAlready": "Sele uyisebenzisile ikhowudi yomhlobo.",
+  "referralShareText": "Ndihlalutya izabelo nge-WhatStock: thatha ifoto yesabelo kwaye i-AI iyasicacisa. Ngekhowudi yam {code} ufumana {count, plural, =1{uhlalutyo olunye olongezelelweyo} other{iintlalutyo ezongezelelweyo ezi-{count}}}.",
+  "referralCopied": "Ikhowudi ikhutshelwe"
 }

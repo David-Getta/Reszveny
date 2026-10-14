@@ -1431,4 +1431,67 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI تجزيو · سيڙپڪاري جو مشورو ناهي';
+
+  @override
+  String get referralTitle => 'دوستن کي دعوت ڏيو';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count اضافي تجزيا ملندا',
+      one: '1 اضافي تجزيو ملندو',
+    );
+    return 'پنهنجو ڪوڊ شيئر ڪريو. توهان جي دوست کي فوري طور $_temp0، ۽ ان جي پهرين تجزيي کان پوءِ توهان کي به ايترو ئي ملندو.';
+  }
+
+  @override
+  String get referralYourCode => 'توهان جو ڪوڊ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'دعوت ڏنل: $invited · انعام مليل: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'ڇا توهان وٽ ڪنهن دوست جو ڪوڊ آهي؟';
+
+  @override
+  String get referralRedeem => 'استعمال ڪريو';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count اضافي تجزيا شامل ڪيا ويا. ڀلي ڪري آيا!',
+      one: '1 اضافي تجزيو شامل ڪيو ويو. ڀلي ڪري آيا!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'هي ڪوڊ موجود ناهي. جانچي وري ڪوشش ڪريو.';
+
+  @override
+  String get referralErrOwn => 'توهان پنهنجو ڪوڊ استعمال نٿا ڪري سگهو.';
+
+  @override
+  String get referralErrAlready =>
+      'توهان اڳ ۾ ئي ڪنهن دوست جو ڪوڊ استعمال ڪري چڪا آهيو.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count اضافي تجزيا ملندا',
+      one: '1 اضافي تجزيو ملندو',
+    );
+    return 'WhatStock منهنجي لاءِ شيئرن جو تجزيو ڪري ٿو: شيئر جي تصوير ڪڍو ۽ AI ان کي سمجهائي ٿو. منهنجي ڪوڊ $code سان توهان کي $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'ڪوڊ ڪاپي ٿي ويو';
 }

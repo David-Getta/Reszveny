@@ -396,5 +396,17 @@
   "shareAsImage": "Yabelana njengesithombe",
   "shareAsText": "Yabelana njengombhalo",
   "shareCardFooter": "Kwenziwe nge-WhatStock",
-  "shareCardDisclaimer": "Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali"
+  "shareCardDisclaimer": "Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali",
+  "referralTitle": "Mema abangane",
+  "referralBody": "Yabelana ngekhodi yakho. Umngane wakho uthola {count, plural, =1{uhlaziyo olulodwa olwengeziwe} other{izinhlaziyo ezengeziwe ezingu-{count}}} ngokushesha, nawe uthola okufanayo ngemuva kohlaziyo lwakhe lokuqala.",
+  "referralYourCode": "Ikhodi yakho",
+  "referralStats": "Abamenyiwe: {invited} · Abaklonyelisiwe: {rewarded}",
+  "referralHaveCode": "Unekhodi evela kumngane?",
+  "referralRedeem": "Sebenzisa",
+  "referralRedeemed": "{count, plural, =1{Kwengezwe uhlaziyo olulodwa. Siyakwamukela!} other{Kwengezwe izinhlaziyo ezingu-{count}. Siyakwamukela!}}",
+  "referralErrUnknown": "Le khodi ayikho. Yihlole bese uzama futhi.",
+  "referralErrOwn": "Awukwazi ukusebenzisa ikhodi yakho.",
+  "referralErrAlready": "Usuvele uyisebenzisile ikhodi yomngane.",
+  "referralShareText": "Ngihlaziya amasheya nge-WhatStock: thatha isithombe sesheya bese i-AI iyalichaza. Ngekhodi yami {code} uthola {count, plural, =1{uhlaziyo olulodwa olwengeziwe} other{izinhlaziyo ezengeziwe ezingu-{count}}}.",
+  "referralCopied": "Ikhodi ikopishiwe"
 }

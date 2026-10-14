@@ -1435,4 +1435,67 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analiz AI · se pa yon konsèy envestisman';
+
+  @override
+  String get referralTitle => 'Envite zanmi';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiz anplis',
+      one: '1 analiz anplis',
+    );
+    return 'Pataje kòd ou. Zanmi ou resevwa $_temp0 touswit, epi ou resevwa menm kantite a apre premye analiz li.';
+  }
+
+  @override
+  String get referralYourCode => 'Kòd ou';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Envite: $invited · Rekonpanse: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ou gen kòd yon zanmi?';
+
+  @override
+  String get referralRedeem => 'Itilize';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou ajoute $count analiz anplis. Byenvini!',
+      one: 'Nou ajoute 1 analiz anplis. Byenvini!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Kòd sa a pa egziste. Verifye l epi eseye ankò.';
+
+  @override
+  String get referralErrOwn => 'Ou pa ka itilize pwòp kòd ou.';
+
+  @override
+  String get referralErrAlready => 'Ou deja itilize kòd yon zanmi.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiz anplis',
+      one: '1 analiz anplis',
+    );
+    return 'Mwen analize aksyon ak WhatStock: ou pran foto yon aksyon epi AI a eksplike l. Avèk kòd mwen $code ou resevwa $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kòd la kopye';
 }

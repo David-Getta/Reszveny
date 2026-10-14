@@ -396,5 +396,17 @@
   "shareAsImage": "Wek wêne parve bike",
   "shareAsText": "Wek nivîs parve bike",
   "shareCardFooter": "Bi WhatStock hatiye çêkirin",
-  "shareCardDisclaimer": "Analîza AI · ne şîreta veberhênanê ye"
+  "shareCardDisclaimer": "Analîza AI · ne şîreta veberhênanê ye",
+  "referralTitle": "Hevalan vexwîne",
+  "referralBody": "Koda xwe parve bike. Hevalê te yekser {count, plural, =1{1 analîza zêde} other{{count} analîzên zêde}} distîne, û tu jî piştî analîza wî ya yekem heman qasî distînî.",
+  "referralYourCode": "Koda te",
+  "referralStats": "Vexwendî: {invited} · Xelatkirî: {rewarded}",
+  "referralHaveCode": "Koda hevalekî te heye?",
+  "referralRedeem": "Bi kar bîne",
+  "referralRedeemed": "{count, plural, =1{1 analîza zêde hat zêdekirin. Bi xêr hatî!} other{{count} analîzên zêde hatin zêdekirin. Bi xêr hatî!}}",
+  "referralErrUnknown": "Ev kod tune ye. Kontrol bike û dîsa biceribîne.",
+  "referralErrOwn": "Tu nikarî koda xwe bi kar bînî.",
+  "referralErrAlready": "Te berê koda hevalekî bi kar aniye.",
+  "referralShareText": "Ez bi WhatStockê pişkan analîz dikim: wêneyê pişkê bikişîne û AI wê rave dike. Bi koda min {code} tu {count, plural, =1{1 analîza zêde} other{{count} analîzên zêde}} distînî.",
+  "referralCopied": "Kod hat kopîkirin"
 }

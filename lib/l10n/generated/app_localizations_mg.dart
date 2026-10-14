@@ -1448,4 +1448,67 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Fandalinana AI · tsy torohevitra momba ny fampiasam-bola';
+
+  @override
+  String get referralTitle => 'Asao ny namanao';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fandalinana fanampiny',
+      one: '1 fandalinana fanampiny',
+    );
+    return 'Zarao ny kaodinao. Mahazo $_temp0 avy hatrany ny namanao, ary mahazo toy izany koa ianao aorian\'ny fandalinany voalohany.';
+  }
+
+  @override
+  String get referralYourCode => 'Ny kaodinao';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Nasaina: $invited · Nahazo valisoa: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Manana kaody avy amin\'ny namana ve ianao?';
+
+  @override
+  String get referralRedeem => 'Ampiasao';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nampiana $count fandalinana fanampiny. Tongasoa!',
+      one: 'Nampiana 1 fandalinana fanampiny. Tongasoa!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Tsy misy io kaody io. Hamarino ary andramo indray.';
+
+  @override
+  String get referralErrOwn => 'Tsy azonao ampiasaina ny kaodinao manokana.';
+
+  @override
+  String get referralErrAlready => 'Efa nampiasa kaodin\'ny namana ianao.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fandalinana fanampiny',
+      one: '1 fandalinana fanampiny',
+    );
+    return 'Mandalina aksiona amin\'ny WhatStock aho: makà sary aksiona dia hazavain\'ny AI izany. Amin\'ny kaodiko $code dia mahazo $_temp0 ianao.';
+  }
+
+  @override
+  String get referralCopied => 'Voadika ny kaody';
 }

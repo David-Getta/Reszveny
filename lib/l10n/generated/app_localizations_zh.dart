@@ -1378,6 +1378,68 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI 分析 · 不构成投资建议';
+
+  @override
+  String get referralTitle => '邀请好友';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次额外分析',
+      one: '1 次额外分析',
+    );
+    return '分享你的邀请码。好友立即获得 $_temp0，在其完成首次分析后，你也将获得相同次数。';
+  }
+
+  @override
+  String get referralYourCode => '你的邀请码';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return '已邀请：$invited · 已奖励：$rewarded';
+  }
+
+  @override
+  String get referralHaveCode => '有好友的邀请码？';
+
+  @override
+  String get referralRedeem => '兑换';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已添加 $count 次额外分析。欢迎！',
+      one: '已添加 1 次额外分析。欢迎！',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => '该邀请码不存在。请检查后重试。';
+
+  @override
+  String get referralErrOwn => '不能兑换自己的邀请码。';
+
+  @override
+  String get referralErrAlready => '你已经兑换过好友的邀请码。';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次额外分析',
+      one: '1 次额外分析',
+    );
+    return '我在用 WhatStock 分析股票：给股票拍张照，AI 就会为你讲解。使用我的邀请码 $code，即可获得 $_temp0。';
+  }
+
+  @override
+  String get referralCopied => '邀请码已复制';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2752,4 +2814,66 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get shareCardDisclaimer => 'AI 分析 · 並不構成投資建議';
+
+  @override
+  String get referralTitle => '邀請朋友';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次額外分析',
+      one: '1 次額外分析',
+    );
+    return '分享你的邀請碼。朋友即時獲得 $_temp0，對方完成首次分析後，你亦會獲得相同次數。';
+  }
+
+  @override
+  String get referralYourCode => '你的邀請碼';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return '已邀請：$invited · 已獎勵：$rewarded';
+  }
+
+  @override
+  String get referralHaveCode => '有朋友的邀請碼？';
+
+  @override
+  String get referralRedeem => '兌換';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已加入 $count 次額外分析。歡迎！',
+      one: '已加入 1 次額外分析。歡迎！',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => '此邀請碼不存在。請檢查後再試。';
+
+  @override
+  String get referralErrOwn => '你不能兌換自己的邀請碼。';
+
+  @override
+  String get referralErrAlready => '你已兌換過朋友的邀請碼。';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次額外分析',
+      one: '1 次額外分析',
+    );
+    return '我用 WhatStock 分析股票：為股票拍照，AI 就會為你解釋。用我的邀請碼 $code，即可獲得 $_temp0。';
+  }
+
+  @override
+  String get referralCopied => '已複製邀請碼';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Pʋɩ wa foto",
   "shareAsText": "Pʋɩ wa gʋlsgo",
   "shareCardFooter": "A maana ne WhatStock",
-  "shareCardDisclaimer": "AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye"
+  "shareCardDisclaimer": "AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye",
+  "referralTitle": "Bool f zo-rãmba",
+  "referralBody": "Pʋɩ f kõodã. F zoa na n paama {count, plural, =1{vɛɛse a yembr sẽn paase} other{vɛɛse {count} sẽn paase}} masã, la fo me na n paama woto a vɛɛs-pipi wã poore.",
+  "referralYourCode": "F kõodã",
+  "referralStats": "Sẽn bool: {invited} · Sẽn paam keoore: {rewarded}",
+  "referralHaveCode": "F tara f zoa kõod bɩ?",
+  "referralRedeem": "Tʋm ne",
+  "referralRedeemed": "{count, plural, =1{B paasa vɛɛse a yembre. Ne y waoogo!} other{B paasa vɛɛse {count}. Ne y waoogo!}}",
+  "referralErrUnknown": "Kõod kãngã ka be ye. Ges-a la f lebg n maan-a le.",
+  "referralErrOwn": "F pa tõe n tʋm ne f mens kõodã ye.",
+  "referralErrAlready": "F tʋma ne f zoa kõod pĩnda.",
+  "referralShareText": "Mam vɛɛsda aksɔ̃ wã ne WhatStock: yõk aksɔ̃ foto, la AI wã na n wilg-a. Ne m kõodã {code}, f na n paama {count, plural, =1{vɛɛse a yembr sẽn paase} other{vɛɛse {count} sẽn paase}}.",
+  "referralCopied": "Kõodã lebs n gʋlsame"
 }

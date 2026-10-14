@@ -396,5 +396,17 @@
   "shareAsImage": "Compartir com a imatge",
   "shareAsText": "Compartir com a text",
   "shareCardFooter": "Fet amb WhatStock",
-  "shareCardDisclaimer": "Anàlisi amb IA · no és assessorament d’inversió"
+  "shareCardDisclaimer": "Anàlisi amb IA · no és assessorament d’inversió",
+  "referralTitle": "Convida amics",
+  "referralBody": "Comparteix el teu codi. El teu amic rep {count, plural, =1{1 anàlisi extra} other{{count} anàlisis extra}} de seguida, i tu el mateix després de la seva primera anàlisi.",
+  "referralYourCode": "El teu codi",
+  "referralStats": "Convidats: {invited} · Recompensats: {rewarded}",
+  "referralHaveCode": "Tens un codi d’un amic?",
+  "referralRedeem": "Bescanvia",
+  "referralRedeemed": "{count, plural, =1{S’ha afegit 1 anàlisi extra. Et donem la benvinguda!} other{S’han afegit {count} anàlisis extra. Et donem la benvinguda!}}",
+  "referralErrUnknown": "Aquest codi no existeix. Comprova’l i torna-ho a provar.",
+  "referralErrOwn": "No pots bescanviar el teu propi codi.",
+  "referralErrAlready": "Ja has bescanviat el codi d’un amic.",
+  "referralShareText": "Analitzo accions amb WhatStock: fotografies una acció i la IA te l’explica. Amb el meu codi {code} reps {count, plural, =1{1 anàlisi extra} other{{count} anàlisis extra}}.",
+  "referralCopied": "Codi copiat"
 }

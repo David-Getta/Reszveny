@@ -1436,4 +1436,66 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI seljermesi · maýa goýum maslahaty däl';
+
+  @override
+  String get referralTitle => 'Dostlaryňy çagyr';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count goşmaça seljerme',
+      one: '1 goşmaça seljerme',
+    );
+    return 'Koduňy paýlaş. Dostuň derrew $_temp0 alýar, sen bolsa onuň ilkinji seljermesinden soň şonça alýarsyň.';
+  }
+
+  @override
+  String get referralYourCode => 'Seniň koduň';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Çagyrylanlar: $invited · Sylaglananlar: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Dostuňdan koduň barmy?';
+
+  @override
+  String get referralRedeem => 'Ulan';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count goşmaça seljerme goşuldy. Hoş geldiň!',
+      one: '1 goşmaça seljerme goşuldy. Hoş geldiň!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Beýle kod ýok. Barla we täzeden synanyş.';
+
+  @override
+  String get referralErrOwn => 'Öz koduňy ulanyp bilmeýärsiň.';
+
+  @override
+  String get referralErrAlready => 'Sen eýýäm dostuňyň koduny ulandyň.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count goşmaça seljerme',
+      one: '1 goşmaça seljerme',
+    );
+    return 'Men WhatStock bilen paýnamalary seljerýärin: paýnamanyň suratyny al, AI ony düşündirer. Meniň $code kodum bilen $_temp0 alarsyň.';
+  }
+
+  @override
+  String get referralCopied => 'Kod göçürildi';
 }

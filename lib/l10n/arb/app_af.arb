@@ -396,5 +396,17 @@
   "shareAsImage": "Deel as prent",
   "shareAsText": "Deel as teks",
   "shareCardFooter": "Gemaak met WhatStock",
-  "shareCardDisclaimer": "AI-ontleding · nie beleggingsadvies nie"
+  "shareCardDisclaimer": "AI-ontleding · nie beleggingsadvies nie",
+  "referralTitle": "Nooi vriende",
+  "referralBody": "Deel jou kode. Jou vriend kry dadelik {count, plural, =1{1 ekstra ontleding} other{{count} ekstra ontledings}}, en jy kry dieselfde ná hul eerste ontleding.",
+  "referralYourCode": "Jou kode",
+  "referralStats": "Genooi: {invited} · Beloon: {rewarded}",
+  "referralHaveCode": "Het jy ’n kode van ’n vriend?",
+  "referralRedeem": "Lös in",
+  "referralRedeemed": "{count, plural, =1{1 ekstra ontleding bygevoeg. Welkom!} other{{count} ekstra ontledings bygevoeg. Welkom!}}",
+  "referralErrUnknown": "Hierdie kode bestaan nie. Gaan dit na en probeer weer.",
+  "referralErrOwn": "Jy kan nie jou eie kode inlos nie.",
+  "referralErrAlready": "Jy het reeds ’n vriend se kode ingelos.",
+  "referralShareText": "Ek ontleed aandele met WhatStock: neem ’n foto van ’n aandeel en die AI verduidelik dit. Met my kode {code} kry jy {count, plural, =1{1 ekstra ontleding} other{{count} ekstra ontledings}}.",
+  "referralCopied": "Kode gekopieer"
 }

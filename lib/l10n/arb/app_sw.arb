@@ -396,5 +396,17 @@
   "shareAsImage": "Shiriki kama picha",
   "shareAsText": "Shiriki kama maandishi",
   "shareCardFooter": "Imetengenezwa kwa WhatStock",
-  "shareCardDisclaimer": "Uchambuzi wa AI · si ushauri wa uwekezaji"
+  "shareCardDisclaimer": "Uchambuzi wa AI · si ushauri wa uwekezaji",
+  "referralTitle": "Alika marafiki",
+  "referralBody": "Shiriki msimbo wako. Rafiki yako anapata {count, plural, =1{uchambuzi 1 wa ziada} other{uchambuzi {count} wa ziada}} papo hapo, nawe unapata kiasi hicho hicho baada ya uchambuzi wake wa kwanza.",
+  "referralYourCode": "Msimbo wako",
+  "referralStats": "Walioalikwa: {invited} · Waliozawadiwa: {rewarded}",
+  "referralHaveCode": "Una msimbo kutoka kwa rafiki?",
+  "referralRedeem": "Tumia",
+  "referralRedeemed": "{count, plural, =1{Uchambuzi 1 wa ziada umeongezwa. Karibu!} other{Uchambuzi {count} wa ziada umeongezwa. Karibu!}}",
+  "referralErrUnknown": "Msimbo huu haupo. Uangalie kisha ujaribu tena.",
+  "referralErrOwn": "Huwezi kutumia msimbo wako mwenyewe.",
+  "referralErrAlready": "Tayari umetumia msimbo wa rafiki.",
+  "referralShareText": "Ninachambua hisa kwa WhatStock: piga picha ya hisa na AI inaieleza. Kwa msimbo wangu {code} unapata {count, plural, =1{uchambuzi 1 wa ziada} other{uchambuzi {count} wa ziada}}.",
+  "referralCopied": "Msimbo umenakiliwa"
 }

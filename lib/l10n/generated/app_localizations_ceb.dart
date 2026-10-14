@@ -1442,4 +1442,69 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Pagtuki sa AI · dili tambag sa pagpamuhunan';
+
+  @override
+  String get referralTitle => 'Dapita ang mga higala';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka dugang nga pagtuki',
+      one: '1 ka dugang nga pagtuki',
+    );
+    return 'Ipaambit ang imong code. Ang imong higala makadawat dayon og $_temp0, ug ikaw usab makadawat og ingon niana human sa iyang unang pagtuki.';
+  }
+
+  @override
+  String get referralYourCode => 'Imong code';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Gidapit: $invited · Gigantihan: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Naa kay code gikan sa higala?';
+
+  @override
+  String get referralRedeem => 'I-redeem';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nadugang ang $count ka dugang nga pagtuki. Maayong pag-abot!',
+      one: 'Nadugang ang 1 ka dugang nga pagtuki. Maayong pag-abot!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Walay ingon ani nga code. Susiha kini ug sulayi pag-usab.';
+
+  @override
+  String get referralErrOwn =>
+      'Dili nimo ma-redeem ang imong kaugalingong code.';
+
+  @override
+  String get referralErrAlready =>
+      'Naka-redeem ka na sa code sa usa ka higala.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka dugang nga pagtuki',
+      one: '1 ka dugang nga pagtuki',
+    );
+    return 'Gituki nako ang mga stock gamit ang WhatStock: kuhai og litrato ang usa ka stock ug ipasabot kini sa AI. Gamit ang akong code $code makadawat ka og $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Nakopya ang code';
 }

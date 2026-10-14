@@ -1434,4 +1434,66 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Saytu AI · du ndigal ci dugal xaalis';
+
+  @override
+  String get referralTitle => 'Woo say xarit';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saytu yu ñu yokk',
+      one: '1 saytu bu ñu yokk',
+    );
+    return 'Séddoo sa kood. Sa xarit dina am ci saa si $_temp0, te yaw itam dinga am lu tollu noonu ginnaaw saytu bu jëkk bi mu def.';
+  }
+
+  @override
+  String get referralYourCode => 'Sa kood';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Ñi nga woo: $invited · Ñi ñu yool: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Am nga kood bu sa xarit?';
+
+  @override
+  String get referralRedeem => 'Jëfandikoo';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yokk nañu $count saytu. Dalal ak jàmm!',
+      one: 'Yokk nañu 1 saytu. Dalal ak jàmm!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Kood bii amul. Seetaatal ko te jéemaat.';
+
+  @override
+  String get referralErrOwn => 'Mënuloo jëfandikoo sa kood bopp.';
+
+  @override
+  String get referralErrAlready => 'Jëfandikoo nga ba noppi kood bu sa xarit.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saytu yu ñu yokk',
+      one: '1 saytu bu ñu yokk',
+    );
+    return 'Damay saytu aksioŋ yi ak WhatStock: fotoal aksioŋ te AI dina la ko leeral. Ak sama kood $code dinga am $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kood bi koppi nañu ko';
 }

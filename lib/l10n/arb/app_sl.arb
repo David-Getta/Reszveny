@@ -396,5 +396,17 @@
   "shareAsImage": "Deli kot sliko",
   "shareAsText": "Deli kot besedilo",
   "shareCardFooter": "Ustvarjeno z WhatStock",
-  "shareCardDisclaimer": "Analiza AI · ni naložbeni nasvet"
+  "shareCardDisclaimer": "Analiza AI · ni naložbeni nasvet",
+  "referralTitle": "Povabi prijatelje",
+  "referralBody": "Deli svojo kodo. Prijatelj takoj dobi {count, plural, one{{count} dodatno analizo} two{{count} dodatni analizi} few{{count} dodatne analize} other{{count} dodatnih analiz}}, ti pa enako po prijateljevi prvi analizi.",
+  "referralYourCode": "Tvoja koda",
+  "referralStats": "Povabljeni: {invited} · Nagrajeni: {rewarded}",
+  "referralHaveCode": "Imaš kodo prijatelja?",
+  "referralRedeem": "Unovči",
+  "referralRedeemed": "{count, plural, one{Dodana je {count} dodatna analiza. Dobrodošli!} two{Dodani sta {count} dodatni analizi. Dobrodošli!} few{Dodane so {count} dodatne analize. Dobrodošli!} other{Dodanih je {count} dodatnih analiz. Dobrodošli!}}",
+  "referralErrUnknown": "Ta koda ne obstaja. Preveri jo in poskusi znova.",
+  "referralErrOwn": "Svoje kode ne moreš unovčiti.",
+  "referralErrAlready": "V tem računu je bila koda prijatelja že unovčena.",
+  "referralShareText": "Delnice analiziram z WhatStock: fotografiraj delnico in AI ti jo razloži. Z mojo kodo {code} dobiš {count, plural, one{{count} dodatno analizo} two{{count} dodatni analizi} few{{count} dodatne analize} other{{count} dodatnih analiz}}.",
+  "referralCopied": "Koda kopirana"
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "प्रतिमा म्हणून शेअर करा",
   "shareAsText": "मजकूर म्हणून शेअर करा",
   "shareCardFooter": "WhatStock वापरून तयार केले",
-  "shareCardDisclaimer": "AI विश्लेषण · गुंतवणूक सल्ला नाही"
+  "shareCardDisclaimer": "AI विश्लेषण · गुंतवणूक सल्ला नाही",
+  "referralTitle": "मित्रांना आमंत्रित करा",
+  "referralBody": "तुमचा कोड शेअर करा. तुमच्या मित्राला लगेच {count, plural, =1{1 अतिरिक्त विश्लेषण मिळेल} other{{count} अतिरिक्त विश्लेषणे मिळतील}}, आणि त्यांच्या पहिल्या विश्लेषणानंतर तुम्हालाही तेवढाच लाभ मिळेल.",
+  "referralYourCode": "तुमचा कोड",
+  "referralStats": "आमंत्रित: {invited} · बक्षीस मिळाले: {rewarded}",
+  "referralHaveCode": "मित्राकडून कोड मिळाला आहे का?",
+  "referralRedeem": "रिडीम करा",
+  "referralRedeemed": "{count, plural, =1{1 अतिरिक्त विश्लेषण जोडले. स्वागत आहे!} other{{count} अतिरिक्त विश्लेषणे जोडली. स्वागत आहे!}}",
+  "referralErrUnknown": "हा कोड अस्तित्वात नाही. तपासा आणि पुन्हा प्रयत्न करा.",
+  "referralErrOwn": "तुम्ही तुमचा स्वतःचा कोड रिडीम करू शकत नाही.",
+  "referralErrAlready": "तुम्ही आधीच एका मित्राचा कोड रिडीम केला आहे.",
+  "referralShareText": "मला WhatStock वर शेअर्सचे विश्लेषण मिळते: शेअरचा फोटो घ्या आणि AI तो समजावून सांगते. माझ्या {code} कोडने तुम्हाला {count, plural, =1{1 अतिरिक्त विश्लेषण मिळेल} other{{count} अतिरिक्त विश्लेषणे मिळतील}}.",
+  "referralCopied": "कोड कॉपी केला"
 }

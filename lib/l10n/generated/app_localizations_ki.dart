@@ -1438,4 +1438,66 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Ũthuthuria wa AI · ti ũtaaro wa investment';
+
+  @override
+  String get referralTitle => 'Ita arata';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mathuthuria $count ma kũongerera',
+      one: 'ũthuthuria 1 wa kũongerera',
+    );
+    return 'Gayana kodi yaku. Mũrata waku nĩ egũkora $_temp0 o rĩu, na we nĩ ũgũkora o ũguo thutha wa ũthuthuria wake wa mbere.';
+  }
+
+  @override
+  String get referralYourCode => 'Kodi yaku';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Arĩa wĩtĩte: $invited · Ibeo: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ũrĩ na kodi kuuma kũrĩ mũrata?';
+
+  @override
+  String get referralRedeem => 'Hũthĩra';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mathuthuria $count ma kũongerera nĩ mongereirwo. Nĩ wamũkĩrwo!',
+      one: 'Ũthuthuria 1 wa kũongerera nĩ wongereirwo. Nĩ wamũkĩrwo!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Kodi ĩno ndĩrĩ kuo. Ĩrore na ũgerie rĩngĩ.';
+
+  @override
+  String get referralErrOwn => 'Ndũngĩhũthĩra kodi yaku we mwene.';
+
+  @override
+  String get referralErrAlready => 'Nĩ wahũthĩrire kodi ya mũrata.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mathuthuria $count ma kũongerera',
+      one: 'ũthuthuria 1 wa kũongerera',
+    );
+    return 'Njĩthuthuragia hisa na WhatStock: oya mbica ya hisa na AI nĩ ĩgũgũtaarĩria. Na kodi yakwa $code nĩ ũgũkora $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kodi nĩ yakobĩo';
 }

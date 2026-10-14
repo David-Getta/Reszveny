@@ -396,5 +396,17 @@
   "shareAsImage": "Ҳамчун тасвир мубодила кардан",
   "shareAsText": "Ҳамчун матн мубодила кардан",
   "shareCardFooter": "Бо WhatStock сохта шудааст",
-  "shareCardDisclaimer": "Таҳлили AI · маслиҳати сармоягузорӣ нест"
+  "shareCardDisclaimer": "Таҳлили AI · маслиҳати сармоягузорӣ нест",
+  "referralTitle": "Дӯстонро даъват кунед",
+  "referralBody": "Коди худро мубодила кунед. Дӯстатон фавран {count, plural, =1{1 таҳлили иловагӣ} other{{count} таҳлили иловагӣ}} мегирад ва шумо пас аз таҳлили аввалини ӯ ҳамон қадар мегиред.",
+  "referralYourCode": "Коди шумо",
+  "referralStats": "Даъватшудагон: {invited} · Мукофотҳо: {rewarded}",
+  "referralHaveCode": "Аз дӯстатон код доред?",
+  "referralRedeem": "Фаъол кардан",
+  "referralRedeemed": "{count, plural, =1{1 таҳлили иловагӣ илова шуд. Хуш омадед!} other{{count} таҳлили иловагӣ илова шуд. Хуш омадед!}}",
+  "referralErrUnknown": "Чунин код вуҷуд надорад. Онро санҷед ва бори дигар кӯшиш кунед.",
+  "referralErrOwn": "Шумо коди худро фаъол карда наметавонед.",
+  "referralErrAlready": "Шумо аллакай коди дӯстро фаъол кардаед.",
+  "referralShareText": "Ман саҳмияҳоро бо WhatStock таҳлил мекунам: аз саҳмия акс гиред ва AI онро шарҳ медиҳад. Бо коди ман {code} шумо {count, plural, =1{1 таҳлили иловагӣ} other{{count} таҳлили иловагӣ}} мегиред.",
+  "referralCopied": "Код нусхабардорӣ шуд"
 }

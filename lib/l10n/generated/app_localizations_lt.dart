@@ -1480,4 +1480,73 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'DI analizė · ne investavimo rekomendacija';
+
+  @override
+  String get referralTitle => 'Pakvieskite draugų';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count papildomų analizių',
+      many: '$count papildomos analizės',
+      few: '$count papildomas analizes',
+      one: '$count papildomą analizę',
+    );
+    return 'Pasidalykite savo kodu. Jūsų draugas iškart gaus $_temp0, o jūs – tiek pat po jo pirmosios analizės.';
+  }
+
+  @override
+  String get referralYourCode => 'Jūsų kodas';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Pakviesta: $invited · Apdovanota: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Turite draugo kodą?';
+
+  @override
+  String get referralRedeem => 'Panaudoti';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridėta $count papildomų analizių. Sveiki atvykę!',
+      many: 'Pridėta $count papildomos analizės. Sveiki atvykę!',
+      few: 'Pridėtos $count papildomos analizės. Sveiki atvykę!',
+      one: 'Pridėta $count papildoma analizė. Sveiki atvykę!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Tokio kodo nėra. Patikrinkite ir bandykite dar kartą.';
+
+  @override
+  String get referralErrOwn => 'Negalite panaudoti savo kodo.';
+
+  @override
+  String get referralErrAlready => 'Jau panaudojote draugo kodą.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count papildomų analizių',
+      many: '$count papildomos analizės',
+      few: '$count papildomas analizes',
+      one: '$count papildomą analizę',
+    );
+    return 'Akcijas analizuoju su WhatStock: nufotografuoji akciją, o DI ją paaiškina. Su mano kodu $code gausi $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kodas nukopijuotas';
 }

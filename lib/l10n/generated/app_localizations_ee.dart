@@ -1440,4 +1440,66 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o';
+
+  @override
+  String get referralTitle => 'Kpe xɔ̃wòwo';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'numekuku $count bubuwo',
+      one: 'numekuku 1 bubu',
+    );
+    return 'Ma wò code. Wò xɔ̃ axɔ $_temp0 enumake, eye wò hã àxɔ nenema ke le eƒe numekuku gbãtɔ megbe.';
+  }
+
+  @override
+  String get referralYourCode => 'Wò code';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Amesiwo nèkpe: $invited · Fetu: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Code aɖe le asiwò tso xɔ̃wò gbɔ?';
+
+  @override
+  String get referralRedeem => 'Zãe';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wotsɔ numekuku $count bubuwo kpe ɖe eŋu. Woezɔ!',
+      one: 'Wotsɔ numekuku 1 bubu kpe ɖe eŋu. Woezɔ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Code sia meli o. Kpɔe eye nàgate kpɔ.';
+
+  @override
+  String get referralErrOwn => 'Màte ŋu azã wò ŋutɔ wò code o.';
+
+  @override
+  String get referralErrAlready => 'Èzã xɔ̃wò aɖe ƒe code xoxo.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'numekuku $count bubuwo',
+      one: 'numekuku 1 bubu',
+    );
+    return 'Mezãa WhatStock tsɔ wɔa numekuku le akpawo ŋu: ɖe akpa aɖe ƒe foto eye AI aɖe eme. Ne èzã nye code $code la, àxɔ $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Wokɔpi code la';
 }

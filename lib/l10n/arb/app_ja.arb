@@ -396,5 +396,17 @@
   "shareAsImage": "画像で共有",
   "shareAsText": "テキストで共有",
   "shareCardFooter": "WhatStock で作成",
-  "shareCardDisclaimer": "AI 分析 · 投資助言ではありません"
+  "shareCardDisclaimer": "AI 分析 · 投資助言ではありません",
+  "referralTitle": "友達を招待",
+  "referralBody": "コードをシェアしましょう。友達はすぐに{count, plural, =1{追加分析 1 回} other{追加分析 {count} 回}}を受け取り、友達が初めて分析した後にあなたにも同じ回数が付与されます。",
+  "referralYourCode": "あなたのコード",
+  "referralStats": "招待: {invited} · 特典獲得: {rewarded}",
+  "referralHaveCode": "友達のコードをお持ちですか？",
+  "referralRedeem": "適用",
+  "referralRedeemed": "{count, plural, =1{追加分析 1 回が付与されました。ようこそ！} other{追加分析 {count} 回が付与されました。ようこそ！}}",
+  "referralErrUnknown": "このコードは存在しません。確認してもう一度お試しください。",
+  "referralErrOwn": "自分のコードは使用できません。",
+  "referralErrAlready": "友達のコードはすでに使用済みです。",
+  "referralShareText": "WhatStock で株を分析しています。銘柄を撮影すると AI が解説してくれます。私のコード {code} で{count, plural, =1{追加分析 1 回} other{追加分析 {count} 回}}がもらえます。",
+  "referralCopied": "コードをコピーしました"
 }

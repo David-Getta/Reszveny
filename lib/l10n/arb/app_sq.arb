@@ -396,5 +396,17 @@
   "shareAsImage": "Ndaj si imazh",
   "shareAsText": "Ndaj si tekst",
   "shareCardFooter": "Krijuar me WhatStock",
-  "shareCardDisclaimer": "Analiza me AI · nuk është këshillë investimi"
+  "shareCardDisclaimer": "Analiza me AI · nuk është këshillë investimi",
+  "referralTitle": "Fto miqtë",
+  "referralBody": "Ndaj kodin tënd. Shoku yt merr menjëherë {count, plural, =1{1 analizë shtesë} other{{count} analiza shtesë}}, dhe ti merr po aq pas analizës së tij të parë.",
+  "referralYourCode": "Kodi yt",
+  "referralStats": "Të ftuar: {invited} · Të shpërblyer: {rewarded}",
+  "referralHaveCode": "Ke një kod nga një mik?",
+  "referralRedeem": "Aktivizo",
+  "referralRedeemed": "{count, plural, =1{U shtua 1 analizë shtesë. Mirë se erdhe!} other{U shtuan {count} analiza shtesë. Mirë se erdhe!}}",
+  "referralErrUnknown": "Ky kod nuk ekziston. Kontrolloje dhe provo përsëri.",
+  "referralErrOwn": "Nuk mund të aktivizosh kodin tënd.",
+  "referralErrAlready": "Ke aktivizuar tashmë kodin e një miku.",
+  "referralShareText": "Analizoj aksione me WhatStock: fotografo një aksion dhe AI ta shpjegon. Me kodin tim {code} merr {count, plural, =1{1 analizë shtesë} other{{count} analiza shtesë}}.",
+  "referralCopied": "Kodi u kopjua"
 }

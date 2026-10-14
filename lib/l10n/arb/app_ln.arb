@@ -396,5 +396,17 @@
   "shareAsImage": "Kabola lokola elilingi",
   "shareAsText": "Kabola lokola makomi",
   "shareCardFooter": "Esalemi na WhatStock",
-  "shareCardDisclaimer": "Analyse ya AI · ezali toli ya kotia mbɔngɔ te"
+  "shareCardDisclaimer": "Analyse ya AI · ezali toli ya kotia mbɔngɔ te",
+  "referralTitle": "Benga baninga",
+  "referralBody": "Kabola code na yo. Moninga na yo akozwa {count, plural, =1{analyse 1 ya kobakisa} other{ba-analyse {count} ya kobakisa}} mbala moko, mpe yo okozwa ndenge moko nsima ya analyse na ye ya liboso.",
+  "referralYourCode": "Code na yo",
+  "referralStats": "Babengami: {invited} · Bazwi lifuta: {rewarded}",
+  "referralHaveCode": "Ozali na code ya moninga?",
+  "referralRedeem": "Salela",
+  "referralRedeemed": "{count, plural, =1{Analyse 1 ya kobakisa ebakisami. Boyei malamu!} other{Ba-analyse {count} ya kobakisa ebakisami. Boyei malamu!}}",
+  "referralErrUnknown": "Code oyo ezali te. Tala yango mpe meka lisusu.",
+  "referralErrOwn": "Okoki te kosalela code na yo moko.",
+  "referralErrAlready": "Osilisi kosalela code ya moninga.",
+  "referralShareText": "Nazali kotala ba-action na WhatStock: ozwa foto ya action mpe AI elimboli yango. Na code na ngai {code} okozwa {count, plural, =1{analyse 1 ya kobakisa} other{ba-analyse {count} ya kobakisa}}.",
+  "referralCopied": "Code ekopiami"
 }

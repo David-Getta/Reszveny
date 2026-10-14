@@ -396,5 +396,17 @@
   "shareAsImage": "Bḍu am tugna",
   "shareAsText": "Bḍu am uḍris",
   "shareCardFooter": "Yettwaxdem s WhatStock",
-  "shareCardDisclaimer": "Tasleḍt s AI · ur d awellih n usersi n yidrimen ara"
+  "shareCardDisclaimer": "Tasleḍt s AI · ur d awellih n usersi n yidrimen ara",
+  "referralTitle": "Ɛreḍ imeddukal",
+  "referralBody": "Bḍu tangalt-ik. Amdakel-ik ad yawi {count, plural, =1{1 n tesleḍt nniḍen} other{{count} n tselḍin nniḍen}} imir-a, ula d kečč ad tawiḍ kif-kif deffir tasleḍt-is tamezwarut.",
+  "referralYourCode": "Tangalt-ik",
+  "referralStats": "Inebgawen: {invited} · Arrazen: {rewarded}",
+  "referralHaveCode": "Tesɛiḍ tangalt n umdakel?",
+  "referralRedeem": "Seqdec",
+  "referralRedeemed": "{count, plural, =1{Tettwarna-d 1 n tesleḍt nniḍen. Ansuf!} other{Ttwarnant-d {count} n tselḍin nniḍen. Ansuf!}}",
+  "referralErrUnknown": "Tangalt-a ulac-itt. Senqed-itt sakin ɛreḍ tikkelt nniḍen.",
+  "referralErrOwn": "Ur tezmireḍ ara ad tesqedceḍ tangalt-ik.",
+  "referralErrAlready": "Tesqedceḍ yakan tangalt n umdakel.",
+  "referralShareText": "Sleḍeɣ aksyunen s WhatStock: tettṣewwireḍ aksyun, AI ad ak-t-id-yessegzi. S tangalt-iw {code} ad tawiḍ {count, plural, =1{1 n tesleḍt nniḍen} other{{count} n tselḍin nniḍen}}.",
+  "referralCopied": "Tangalt tettwanɣel"
 }

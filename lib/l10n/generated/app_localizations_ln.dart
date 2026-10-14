@@ -1442,4 +1442,67 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Analyse ya AI · ezali toli ya kotia mbɔngɔ te';
+
+  @override
+  String get referralTitle => 'Benga baninga';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ba-analyse $count ya kobakisa',
+      one: 'analyse 1 ya kobakisa',
+    );
+    return 'Kabola code na yo. Moninga na yo akozwa $_temp0 mbala moko, mpe yo okozwa ndenge moko nsima ya analyse na ye ya liboso.';
+  }
+
+  @override
+  String get referralYourCode => 'Code na yo';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Babengami: $invited · Bazwi lifuta: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ozali na code ya moninga?';
+
+  @override
+  String get referralRedeem => 'Salela';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ba-analyse $count ya kobakisa ebakisami. Boyei malamu!',
+      one: 'Analyse 1 ya kobakisa ebakisami. Boyei malamu!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Code oyo ezali te. Tala yango mpe meka lisusu.';
+
+  @override
+  String get referralErrOwn => 'Okoki te kosalela code na yo moko.';
+
+  @override
+  String get referralErrAlready => 'Osilisi kosalela code ya moninga.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ba-analyse $count ya kobakisa',
+      one: 'analyse 1 ya kobakisa',
+    );
+    return 'Nazali kotala ba-action na WhatStock: ozwa foto ya action mpe AI elimboli yango. Na code na ngai $code okozwa $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Code ekopiami';
 }

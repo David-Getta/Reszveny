@@ -396,5 +396,17 @@
   "shareAsImage": "Gawani ngati chithunzi",
   "shareAsText": "Gawani ngati mawu",
   "shareCardFooter": "Zapangidwa ndi WhatStock",
-  "shareCardDisclaimer": "Kusanthula kwa AI · si malangizo okhudza kuyika ndalama"
+  "shareCardDisclaimer": "Kusanthula kwa AI · si malangizo okhudza kuyika ndalama",
+  "referralTitle": "Itanani anzanu",
+  "referralBody": "Gawani khodi yanu. Mnzanu amalandira {count, plural, =1{kusanthula kowonjezera 1} other{kusanthula kowonjezera {count}}} nthawi yomweyo, ndipo inunso mumalandira chimodzimodzi akamaliza kusanthula kwake koyamba.",
+  "referralYourCode": "Khodi yanu",
+  "referralStats": "Oitanidwa: {invited} · Olandira mphotho: {rewarded}",
+  "referralHaveCode": "Muli ndi khodi yochokera kwa mnzanu?",
+  "referralRedeem": "Gwiritsani ntchito",
+  "referralRedeemed": "{count, plural, =1{Kusanthula kowonjezera 1 kwawonjezedwa. Takulandirani!} other{Kusanthula kowonjezera {count} kwawonjezedwa. Takulandirani!}}",
+  "referralErrUnknown": "Khodi iyi kulibe. Yang'anani ndipo yesaninso.",
+  "referralErrOwn": "Simungagwiritse ntchito khodi yanu.",
+  "referralErrAlready": "Munagwiritsa kale ntchito khodi ya mnzanu.",
+  "referralShareText": "Ndimasanthula masheya ndi WhatStock: jambulani sheya ndipo AI imafotokoza. Ndi khodi yanga {code} mumalandira {count, plural, =1{kusanthula kowonjezera 1} other{kusanthula kowonjezera {count}}}.",
+  "referralCopied": "Khodi yakopedwa"
 }

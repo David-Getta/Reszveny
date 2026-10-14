@@ -396,5 +396,17 @@
   "shareAsImage": "Compartir como imaxe",
   "shareAsText": "Compartir como texto",
   "shareCardFooter": "Feito con WhatStock",
-  "shareCardDisclaimer": "Análise con IA · non é asesoramento de investimento"
+  "shareCardDisclaimer": "Análise con IA · non é asesoramento de investimento",
+  "referralTitle": "Convida os teus amigos",
+  "referralBody": "Comparte o teu código. O teu amigo recibe de inmediato {count, plural, one{{count} análise extra} other{{count} análises extra}}, e ti o mesmo despois da súa primeira análise.",
+  "referralYourCode": "O teu código",
+  "referralStats": "Convidados: {invited} · Recompensados: {rewarded}",
+  "referralHaveCode": "Tes un código dun amigo?",
+  "referralRedeem": "Canxear",
+  "referralRedeemed": "{count, plural, one{Engadiuse {count} análise extra. Dámosche a benvida!} other{Engadíronse {count} análises extra. Dámosche a benvida!}}",
+  "referralErrUnknown": "Este código non existe. Compróbao e téntao de novo.",
+  "referralErrOwn": "Non podes canxear o teu propio código.",
+  "referralErrAlready": "Xa canxeaches o código dun amigo.",
+  "referralShareText": "Analizo accións con WhatStock: fotografas unha acción e a IA explícacha. Co meu código {code} recibes {count, plural, one{{count} análise extra} other{{count} análises extra}}.",
+  "referralCopied": "Código copiado"
 }

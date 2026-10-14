@@ -396,5 +396,17 @@
   "shareAsImage": "Podijeli kao sliku",
   "shareAsText": "Podijeli kao tekst",
   "shareCardFooter": "Napravljeno uz WhatStock",
-  "shareCardDisclaimer": "AI analiza · nije investicijski savjet"
+  "shareCardDisclaimer": "AI analiza · nije investicijski savjet",
+  "referralTitle": "Pozovite prijatelje",
+  "referralBody": "Podijelite svoj kod. Vaš prijatelj odmah dobija {count, plural, one{{count} dodatnu analizu} few{{count} dodatne analize} other{{count} dodatnih analiza}}, a vi isto toliko nakon njegove prve analize.",
+  "referralYourCode": "Vaš kod",
+  "referralStats": "Pozvano: {invited} · Nagrađeno: {rewarded}",
+  "referralHaveCode": "Imate kod od prijatelja?",
+  "referralRedeem": "Iskoristi",
+  "referralRedeemed": "{count, plural, one{Dodana je {count} dodatna analiza. Dobro došli!} few{Dodane su {count} dodatne analize. Dobro došli!} other{Dodano je {count} dodatnih analiza. Dobro došli!}}",
+  "referralErrUnknown": "Ovaj kod ne postoji. Provjerite ga i pokušajte ponovo.",
+  "referralErrOwn": "Ne možete iskoristiti vlastiti kod.",
+  "referralErrAlready": "Već ste iskoristili kod prijatelja.",
+  "referralShareText": "Analiziram dionice uz WhatStock: fotografišite dionicu i AI će vam je objasniti. S mojim kodom {code} dobijate {count, plural, one{{count} dodatnu analizu} few{{count} dodatne analize} other{{count} dodatnih analiza}}.",
+  "referralCopied": "Kod je kopiran"
 }

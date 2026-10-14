@@ -396,5 +396,17 @@
   "shareAsImage": "Delen als afbeelding",
   "shareAsText": "Delen als tekst",
   "shareCardFooter": "Gemaakt met WhatStock",
-  "shareCardDisclaimer": "AI-analyse · geen beleggingsadvies"
+  "shareCardDisclaimer": "AI-analyse · geen beleggingsadvies",
+  "referralTitle": "Nodig vrienden uit",
+  "referralBody": "Deel je code. Je vriend krijgt meteen {count, plural, =1{1 extra analyse} other{{count} extra analyses}} en jij krijgt hetzelfde na hun eerste analyse.",
+  "referralYourCode": "Jouw code",
+  "referralStats": "Uitgenodigd: {invited} · Beloond: {rewarded}",
+  "referralHaveCode": "Code van een vriend gekregen?",
+  "referralRedeem": "Inwisselen",
+  "referralRedeemed": "{count, plural, =1{1 extra analyse toegevoegd. Welkom!} other{{count} extra analyses toegevoegd. Welkom!}}",
+  "referralErrUnknown": "Deze code bestaat niet. Controleer hem en probeer het opnieuw.",
+  "referralErrOwn": "Je kunt je eigen code niet inwisselen.",
+  "referralErrAlready": "Je hebt al een code van een vriend ingewisseld.",
+  "referralShareText": "Ik analyseer aandelen met WhatStock: maak een foto van een aandeel en de AI legt het uit. Met mijn code {code} krijg je {count, plural, =1{1 extra analyse} other{{count} extra analyses}}.",
+  "referralCopied": "Code gekopieerd"
 }

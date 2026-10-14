@@ -1478,4 +1478,73 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'ШІ-аналіз · не інвестиційна порада';
+
+  @override
+  String get referralTitle => 'Запросіть друзів';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додаткового аналізу',
+      many: '$count додаткових аналізів',
+      few: '$count додаткові аналізи',
+      one: '$count додатковий аналіз',
+    );
+    return 'Поділіться своїм кодом. Ваш друг одразу отримає $_temp0, а ви — стільки ж після його першого аналізу.';
+  }
+
+  @override
+  String get referralYourCode => 'Ваш код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Запрошено: $invited · Винагороджено: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Маєте код від друга?';
+
+  @override
+  String get referralRedeem => 'Активувати';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додано $count додаткового аналізу. Вітаємо!',
+      many: 'Додано $count додаткових аналізів. Вітаємо!',
+      few: 'Додано $count додаткові аналізи. Вітаємо!',
+      one: 'Додано $count додатковий аналіз. Вітаємо!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Такого коду не існує. Перевірте його та спробуйте ще раз.';
+
+  @override
+  String get referralErrOwn => 'Не можна активувати власний код.';
+
+  @override
+  String get referralErrAlready => 'Ви вже активували код друга.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додаткового аналізу',
+      many: '$count додаткових аналізів',
+      few: '$count додаткові аналізи',
+      one: '$count додатковий аналіз',
+    );
+    return 'Я аналізую акції у WhatStock: сфотографуйте акцію, і ШІ її пояснить. З моїм кодом $code ви отримаєте $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Код скопійовано';
 }

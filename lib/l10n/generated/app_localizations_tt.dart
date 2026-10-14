@@ -1433,4 +1433,67 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI анализы · инвестиция киңәше түгел';
+
+  @override
+  String get referralTitle => 'Дусларны чакыру';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count өстәмә анализ',
+      one: '1 өстәмә анализ',
+    );
+    return 'Кодыгыз белән бүлешегез. Дустыгыз шунда ук $_temp0 ала, ә сез аның беренче анализыннан соң шулкадәр үк аласыз.';
+  }
+
+  @override
+  String get referralYourCode => 'Сезнең код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Чакырылган: $invited · Бүләкләнгән: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Дустыгыздан код бармы?';
+
+  @override
+  String get referralRedeem => 'Куллану';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count өстәмә анализ өстәлде. Рәхим итегез!',
+      one: '1 өстәмә анализ өстәлде. Рәхим итегез!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Мондый код юк. Тикшерегез һәм кабат тырышып карагыз.';
+
+  @override
+  String get referralErrOwn => 'Үз кодыгызны куллана алмыйсыз.';
+
+  @override
+  String get referralErrAlready => 'Сез инде дустыгызның кодын кулландыгыз.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count өстәмә анализ',
+      one: '1 өстәмә анализ',
+    );
+    return 'Мин акцияләрне WhatStock белән анализлыйм: акциянең фотосын төшерегез, ә AI аны аңлатып бирә. Минем $code кодым белән сез $_temp0 аласыз.';
+  }
+
+  @override
+  String get referralCopied => 'Код күчерелде';
 }

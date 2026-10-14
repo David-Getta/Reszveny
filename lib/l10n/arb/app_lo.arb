@@ -396,5 +396,17 @@
   "shareAsImage": "ແບ່ງປັນເປັນຮູບພາບ",
   "shareAsText": "ແບ່ງປັນເປັນຂໍ້ຄວາມ",
   "shareCardFooter": "ສ້າງດ້ວຍ WhatStock",
-  "shareCardDisclaimer": "ການວິເຄາະດ້ວຍ AI · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ"
+  "shareCardDisclaimer": "ການວິເຄາະດ້ວຍ AI · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ",
+  "referralTitle": "ເຊີນໝູ່",
+  "referralBody": "ແບ່ງປັນລະຫັດຂອງທ່ານ ໝູ່ຂອງທ່ານຈະໄດ້ຮັບ{count, plural, other{ການວິເຄາະເພີ່ມເຕີມ {count} ຄັ້ງ}}ທັນທີ ແລະ ທ່ານກໍຈະໄດ້ຮັບເທົ່າກັນຫຼັງຈາກການວິເຄາະຄັ້ງທຳອິດຂອງລາວ",
+  "referralYourCode": "ລະຫັດຂອງທ່ານ",
+  "referralStats": "ເຊີນແລ້ວ: {invited} · ໄດ້ລາງວັນ: {rewarded}",
+  "referralHaveCode": "ມີລະຫັດຈາກໝູ່ບໍ?",
+  "referralRedeem": "ໃຊ້ລະຫັດ",
+  "referralRedeemed": "{count, plural, other{ເພີ່ມການວິເຄາະເພີ່ມເຕີມ {count} ຄັ້ງແລ້ວ ຍິນດີຕ້ອນຮັບ!}}",
+  "referralErrUnknown": "ບໍ່ມີລະຫັດນີ້ ກະລຸນາກວດສອບ ແລ້ວລອງໃໝ່",
+  "referralErrOwn": "ທ່ານບໍ່ສາມາດໃຊ້ລະຫັດຂອງຕົນເອງໄດ້",
+  "referralErrAlready": "ທ່ານໄດ້ໃຊ້ລະຫັດຂອງໝູ່ແລ້ວ",
+  "referralShareText": "ຂ້ອຍວິເຄາະຮຸ້ນດ້ວຍ WhatStock: ຖ່າຍຮູບຮຸ້ນ ແລ້ວ AI ຈະອະທິບາຍໃຫ້ ໃຊ້ລະຫັດຂອງຂ້ອຍ {code} ເພື່ອຮັບ{count, plural, other{ການວິເຄາະເພີ່ມເຕີມ {count} ຄັ້ງ}}",
+  "referralCopied": "ສຳເນົາລະຫັດແລ້ວ"
 }

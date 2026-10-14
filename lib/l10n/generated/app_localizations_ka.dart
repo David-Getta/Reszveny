@@ -1438,4 +1438,67 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI ანალიზი · არ არის საინვესტიციო რჩევა';
+
+  @override
+  String get referralTitle => 'მოიწვიეთ მეგობრები';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count დამატებით ანალიზს',
+      one: '1 დამატებით ანალიზს',
+    );
+    return 'გააზიარეთ თქვენი კოდი. თქვენი მეგობარი მაშინვე მიიღებს $_temp0, თქვენ კი იმავე რაოდენობას — მისი პირველი ანალიზის შემდეგ.';
+  }
+
+  @override
+  String get referralYourCode => 'თქვენი კოდი';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'მოწვეული: $invited · დაჯილდოებული: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'გაქვთ მეგობრის კოდი?';
+
+  @override
+  String get referralRedeem => 'გააქტიურება';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაემატა $count დამატებითი ანალიზი. მოგესალმებით!',
+      one: 'დაემატა 1 დამატებითი ანალიზი. მოგესალმებით!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ასეთი კოდი არ არსებობს. შეამოწმეთ და სცადეთ ხელახლა.';
+
+  @override
+  String get referralErrOwn => 'საკუთარი კოდის გააქტიურება შეუძლებელია.';
+
+  @override
+  String get referralErrAlready => 'თქვენ უკვე გამოიყენეთ მეგობრის კოდი.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count დამატებით ანალიზს',
+      one: '1 დამატებით ანალიზს',
+    );
+    return 'აქციებს WhatStock-ით ვაანალიზებ: გადაუღებ აქციას ფოტოს და AI აგიხსნის. ჩემი კოდით $code მიიღებ $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'კოდი დაკოპირდა';
 }

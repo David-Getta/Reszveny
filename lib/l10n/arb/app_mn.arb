@@ -396,5 +396,17 @@
   "shareAsImage": "Зураг хэлбэрээр хуваалцах",
   "shareAsText": "Текст хэлбэрээр хуваалцах",
   "shareCardFooter": "WhatStock-оор бүтээв",
-  "shareCardDisclaimer": "AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш"
+  "shareCardDisclaimer": "AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш",
+  "referralTitle": "Найзаа урих",
+  "referralBody": "Кодоо хуваалцаарай. Таны найз шууд {count, plural, =1{1 нэмэлт шинжилгээ} other{{count} нэмэлт шинжилгээ}} авах бөгөөд түүнийг анхны шинжилгээгээ хийсний дараа та мөн адил хэмжээгээр авна.",
+  "referralYourCode": "Таны код",
+  "referralStats": "Урьсан: {invited} · Шагнал авсан: {rewarded}",
+  "referralHaveCode": "Найзаасаа код авсан уу?",
+  "referralRedeem": "Ашиглах",
+  "referralRedeemed": "{count, plural, =1{1 нэмэлт шинжилгээ нэмэгдлээ. Тавтай морил!} other{{count} нэмэлт шинжилгээ нэмэгдлээ. Тавтай морил!}}",
+  "referralErrUnknown": "Ийм код байхгүй байна. Шалгаад дахин оролдоно уу.",
+  "referralErrOwn": "Та өөрийн кодыг ашиглах боломжгүй.",
+  "referralErrAlready": "Та аль хэдийн найзынхаа кодыг ашигласан байна.",
+  "referralShareText": "Би WhatStock-оор хувьцаа шинжилдэг: хувьцааны зургийг аваад, AI тайлбарлаж өгнө. Миний {code} кодоор та {count, plural, =1{1 нэмэлт шинжилгээ} other{{count} нэмэлт шинжилгээ}} авна.",
+  "referralCopied": "Код хуулагдлаа"
 }

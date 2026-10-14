@@ -1442,4 +1442,66 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Analyse ya AI · ka malongi ma kutula mbongo ko';
+
+  @override
+  String get referralTitle => 'Bianga banduku';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'analyse $count za kuyika',
+      one: 'analyse 1 ya kuyika',
+    );
+    return 'Kabula code na nge. Nduku na nge ta baka $_temp0 ntangu yina kaka, mpi nge ta baka mutindu mosi na nima ya analyse na yandi ya ntete.';
+  }
+
+  @override
+  String get referralYourCode => 'Code na nge';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Me bianga: $invited · Me baka matabisi: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Nge kele ti code ya nduku?';
+
+  @override
+  String get referralRedeem => 'Sadila';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Analyse $count za kuyika me kota. Beto ke yamba nge!',
+      one: 'Analyse 1 ya kuyika me kota. Beto ke yamba nge!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Code yai kele ve. Tala yo mpi meka diaka.';
+
+  @override
+  String get referralErrOwn => 'Nge lenda sadila ve code na nge mosi.';
+
+  @override
+  String get referralErrAlready => 'Nge me sadila dezia code ya nduku.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'analyse $count za kuyika',
+      one: 'analyse 1 ya kuyika',
+    );
+    return 'Mono ke tadila ba-action na WhatStock: nge ke baka foto ya action mpi AI ke tendula yo. Na code na mono $code nge ta baka $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Code me kopiama';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Avelana tanihi xifaniso",
   "shareAsText": "Avelana tanihi tsalwa",
   "shareCardFooter": "Swi endliwe hi WhatStock",
-  "shareCardDisclaimer": "Nxopaxopo wa AI · a hi ndzayo ya vuvekisi"
+  "shareCardDisclaimer": "Nxopaxopo wa AI · a hi ndzayo ya vuvekisi",
+  "referralTitle": "Rhamba vanghana",
+  "referralBody": "Avelana khodi ya wena. Munghana wa wena u kuma {count, plural, =1{nxopaxopo wun'we wo engetela} other{minxopaxopo yo engetela ya {count}}} hi ku hatlisa, na wena u kuma leswi fanaka endzhaku ka nxopaxopo wa yena wo sungula.",
+  "referralYourCode": "Khodi ya wena",
+  "referralStats": "Lava rhambiweke: {invited} · Mihakelo: {rewarded}",
+  "referralHaveCode": "Xana u na khodi ya munghana?",
+  "referralRedeem": "Tirhisa",
+  "referralRedeemed": "{count, plural, =1{Ku engeteriwe nxopaxopo wun'we. Hi ku amukela!} other{Ku engeteriwe minxopaxopo ya {count}. Hi ku amukela!}}",
+  "referralErrUnknown": "Khodi leyi a yi kona. Yi kambela kutani u ringeta nakambe.",
+  "referralErrOwn": "A wu nge yi tirhisi khodi ya wena.",
+  "referralErrAlready": "U tirhisile khodi ya munghana khale.",
+  "referralShareText": "Ndzi xopaxopa swiave hi WhatStock: teka xifaniso xa xiave, kutani AI yi xi hlamusela. Hi khodi ya mina {code} u kuma {count, plural, =1{nxopaxopo wun'we wo engetela} other{minxopaxopo yo engetela ya {count}}}.",
+  "referralCopied": "Khodi yi kopiwile"
 }

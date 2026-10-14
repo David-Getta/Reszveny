@@ -1436,4 +1436,67 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Yapay zekâ analizi · yatırım tavsiyesi değildir';
+
+  @override
+  String get referralTitle => 'Arkadaşlarını davet et';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ek analiz',
+      one: '1 ek analiz',
+    );
+    return 'Kodunu paylaş. Arkadaşın hemen $_temp0 kazanır, sen de onun ilk analizinden sonra aynısını kazanırsın.';
+  }
+
+  @override
+  String get referralYourCode => 'Kodun';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Davet edilen: $invited · Ödüllendirilen: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Bir arkadaşından kod mu aldın?';
+
+  @override
+  String get referralRedeem => 'Kullan';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ek analiz eklendi. Hoş geldin!',
+      one: '1 ek analiz eklendi. Hoş geldin!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Bu kod mevcut değil. Kontrol edip tekrar dene.';
+
+  @override
+  String get referralErrOwn => 'Kendi kodunu kullanamazsın.';
+
+  @override
+  String get referralErrAlready => 'Bir arkadaşının kodunu zaten kullandın.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ek analiz',
+      one: '1 ek analiz',
+    );
+    return 'Hisseleri WhatStock ile analiz ediyorum: bir hissenin fotoğrafını çek, yapay zekâ açıklasın. Kodum $code ile $_temp0 kazanırsın.';
+  }
+
+  @override
+  String get referralCopied => 'Kod kopyalandı';
 }

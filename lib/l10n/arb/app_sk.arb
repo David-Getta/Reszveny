@@ -396,5 +396,17 @@
   "shareAsImage": "Zdieľať ako obrázok",
   "shareAsText": "Zdieľať ako text",
   "shareCardFooter": "Vytvorené pomocou WhatStock",
-  "shareCardDisclaimer": "AI analýza · nie je investičné odporúčanie"
+  "shareCardDisclaimer": "AI analýza · nie je investičné odporúčanie",
+  "referralTitle": "Pozvi priateľov",
+  "referralBody": "Zdieľaj svoj kód. Priateľ hneď dostane {count, plural, =1{1 analýzu navyše} few{{count} analýzy navyše} many{{count} analýzy navyše} other{{count} analýz navyše}} a ty to isté po prvej analýze priateľa.",
+  "referralYourCode": "Tvoj kód",
+  "referralStats": "Pozvaní: {invited} · Odmenení: {rewarded}",
+  "referralHaveCode": "Máš kód od priateľa?",
+  "referralRedeem": "Uplatniť",
+  "referralRedeemed": "{count, plural, =1{Pridaná 1 analýza navyše. Vitaj!} few{Pridané {count} analýzy navyše. Vitaj!} many{Pridané {count} analýzy navyše. Vitaj!} other{Pridaných {count} analýz navyše. Vitaj!}}",
+  "referralErrUnknown": "Tento kód neexistuje. Skontroluj ho a skús to znova.",
+  "referralErrOwn": "Nemôžeš uplatniť vlastný kód.",
+  "referralErrAlready": "Na tomto účte už bol uplatnený kód od priateľa.",
+  "referralShareText": "Analyzujem akcie vo WhatStock: odfoť akciu a AI ti ju vysvetlí. S mojím kódom {code} dostaneš {count, plural, =1{1 analýzu navyše} few{{count} analýzy navyše} many{{count} analýzy navyše} other{{count} analýz navyše}}.",
+  "referralCopied": "Kód skopírovaný"
 }

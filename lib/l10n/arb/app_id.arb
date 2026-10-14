@@ -396,5 +396,17 @@
   "shareAsImage": "Bagikan sebagai gambar",
   "shareAsText": "Bagikan sebagai teks",
   "shareCardFooter": "Dibuat dengan WhatStock",
-  "shareCardDisclaimer": "Analisis AI · bukan saran investasi"
+  "shareCardDisclaimer": "Analisis AI · bukan saran investasi",
+  "referralTitle": "Undang teman",
+  "referralBody": "Bagikan kode Anda. Teman Anda langsung mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, dan Anda mendapat jumlah yang sama setelah analisis pertamanya.",
+  "referralYourCode": "Kode Anda",
+  "referralStats": "Diundang: {invited} · Diberi hadiah: {rewarded}",
+  "referralHaveCode": "Punya kode dari teman?",
+  "referralRedeem": "Tukarkan",
+  "referralRedeemed": "{count, plural, =1{1 analisis tambahan telah ditambahkan. Selamat datang!} other{{count} analisis tambahan telah ditambahkan. Selamat datang!}}",
+  "referralErrUnknown": "Kode ini tidak ada. Periksa lalu coba lagi.",
+  "referralErrOwn": "Anda tidak dapat menukarkan kode Anda sendiri.",
+  "referralErrAlready": "Anda sudah pernah menukarkan kode teman.",
+  "referralShareText": "Saya menganalisis saham dengan WhatStock: foto sahamnya dan AI akan menjelaskannya. Dengan kode saya {code} kamu mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}.",
+  "referralCopied": "Kode disalin"
 }

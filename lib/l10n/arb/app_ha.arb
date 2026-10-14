@@ -396,5 +396,17 @@
   "shareAsImage": "Raba a matsayin hoto",
   "shareAsText": "Raba a matsayin rubutu",
   "shareCardFooter": "An yi da WhatStock",
-  "shareCardDisclaimer": "Nazarin AI · ba shawarar zuba jari ba ne"
+  "shareCardDisclaimer": "Nazarin AI · ba shawarar zuba jari ba ne",
+  "referralTitle": "Gayyaci abokai",
+  "referralBody": "Raba lambarka. Abokinka zai samu {count, plural, =1{ƙarin nazari 1} other{ƙarin nazari {count}}} nan take, kai ma za ka samu haka bayan nazarinsa na farko.",
+  "referralYourCode": "Lambarka",
+  "referralStats": "An gayyata: {invited} · An ba da lada: {rewarded}",
+  "referralHaveCode": "Kana da lamba daga aboki?",
+  "referralRedeem": "Yi amfani",
+  "referralRedeemed": "{count, plural, =1{An ƙara maka ƙarin nazari 1. Barka da zuwa!} other{An ƙara maka ƙarin nazari {count}. Barka da zuwa!}}",
+  "referralErrUnknown": "Wannan lambar ba ta wanzu ba. Duba ta ka sake gwadawa.",
+  "referralErrOwn": "Ba za ka iya amfani da lambarka ta kanka ba.",
+  "referralErrAlready": "Ka riga ka yi amfani da lambar wani abokinka.",
+  "referralShareText": "Ina nazarin hannun jari da WhatStock: ka ɗauki hoton hannun jari, AI kuma ta yi bayani. Da lambata {code} za ka samu {count, plural, =1{ƙarin nazari 1} other{ƙarin nazari {count}}}.",
+  "referralCopied": "An kwafi lambar"
 }

@@ -1435,4 +1435,64 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI သုံးသပ်ချက် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
+
+  @override
+  String get referralTitle => 'သူငယ်ချင်းများကို ဖိတ်ခေါ်ရန်';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အပိုသုံးသပ်ချက် $count ခု',
+    );
+    return 'သင့်ကုဒ်ကို မျှဝေပါ။ သင့်သူငယ်ချင်းသည် $_temp0ကို ချက်ချင်း ရရှိမည်ဖြစ်ပြီး ၎င်း၏ ပထမဆုံး သုံးသပ်ချက်ပြီးနောက် သင်လည်း အလားတူ ရရှိမည်။';
+  }
+
+  @override
+  String get referralYourCode => 'သင့်ကုဒ်';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'ဖိတ်ခေါ်ထားသူ: $invited · ဆုရရှိပြီး: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'သူငယ်ချင်းထံမှ ကုဒ် ရှိပါသလား။';
+
+  @override
+  String get referralRedeem => 'အသုံးပြုရန်';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အပိုသုံးသပ်ချက် $count ခု ထည့်ပြီးပါပြီ။ ကြိုဆိုပါသည်!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'ဤကုဒ် မရှိပါ။ စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။';
+
+  @override
+  String get referralErrOwn => 'သင့်ကိုယ်ပိုင်ကုဒ်ကို အသုံးပြု၍ မရပါ။';
+
+  @override
+  String get referralErrAlready =>
+      'သင်သည် သူငယ်ချင်းတစ်ဦး၏ ကုဒ်ကို အသုံးပြုပြီးဖြစ်သည်။';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အပိုသုံးသပ်ချက် $count ခု',
+    );
+    return 'ကျွန်ုပ်သည် WhatStock ဖြင့် ရှယ်ယာများကို သုံးသပ်ပါသည်- ရှယ်ယာတစ်ခု၏ ဓာတ်ပုံရိုက်လိုက်ရုံဖြင့် AI က ရှင်းပြပေးသည်။ ကျွန်ုပ်၏ ကုဒ် $code ဖြင့် သင် $_temp0 ရရှိမည်။';
+  }
+
+  @override
+  String get referralCopied => 'ကုဒ် ကူးယူပြီးပါပြီ';
 }

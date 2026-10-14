@@ -396,5 +396,17 @@
   "shareAsImage": "Sdílet jako obrázek",
   "shareAsText": "Sdílet jako text",
   "shareCardFooter": "Vytvořeno pomocí WhatStock",
-  "shareCardDisclaimer": "AI analýza · není investiční doporučení"
+  "shareCardDisclaimer": "AI analýza · není investiční doporučení",
+  "referralTitle": "Pozvěte přátele",
+  "referralBody": "Sdílejte svůj kód. Váš přítel hned získá {count, plural, =1{1 analýzu navíc} few{{count} analýzy navíc} many{{count} analýzy navíc} other{{count} analýz navíc}} a vy totéž po jeho první analýze.",
+  "referralYourCode": "Váš kód",
+  "referralStats": "Pozváno: {invited} · Odměněno: {rewarded}",
+  "referralHaveCode": "Máte kód od přítele?",
+  "referralRedeem": "Uplatnit",
+  "referralRedeemed": "{count, plural, =1{Přidána 1 analýza navíc. Vítejte!} few{Přidány {count} analýzy navíc. Vítejte!} many{Přidáno {count} analýzy navíc. Vítejte!} other{Přidáno {count} analýz navíc. Vítejte!}}",
+  "referralErrUnknown": "Tento kód neexistuje. Zkontrolujte ho a zkuste to znovu.",
+  "referralErrOwn": "Vlastní kód nemůžete uplatnit.",
+  "referralErrAlready": "Kód od přítele jste už uplatnili.",
+  "referralShareText": "Analyzuji akcie s WhatStock: vyfoťte akcii a AI vám ji vysvětlí. S mým kódem {code} získáte {count, plural, =1{1 analýzu navíc} few{{count} analýzy navíc} many{{count} analýzy navíc} other{{count} analýz navíc}}.",
+  "referralCopied": "Kód zkopírován"
 }

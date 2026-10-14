@@ -396,5 +396,17 @@
   "shareAsImage": "Distribuie ca imagine",
   "shareAsText": "Distribuie ca text",
   "shareCardFooter": "Creat cu WhatStock",
-  "shareCardDisclaimer": "Analiză AI · nu este sfat de investiții"
+  "shareCardDisclaimer": "Analiză AI · nu este sfat de investiții",
+  "referralTitle": "Invită prieteni",
+  "referralBody": "Distribuie codul tău. Prietenul tău primește imediat {count, plural, one{{count} analiză suplimentară} few{{count} analize suplimentare} other{{count} de analize suplimentare}}, iar tu primești la fel după prima sa analiză.",
+  "referralYourCode": "Codul tău",
+  "referralStats": "Invitați: {invited} · Recompensați: {rewarded}",
+  "referralHaveCode": "Ai un cod de la un prieten?",
+  "referralRedeem": "Folosește",
+  "referralRedeemed": "{count, plural, one{A fost adăugată {count} analiză suplimentară. Bun venit!} few{Au fost adăugate {count} analize suplimentare. Bun venit!} other{Au fost adăugate {count} de analize suplimentare. Bun venit!}}",
+  "referralErrUnknown": "Acest cod nu există. Verifică-l și încearcă din nou.",
+  "referralErrOwn": "Nu îți poți folosi propriul cod.",
+  "referralErrAlready": "Ai folosit deja codul unui prieten.",
+  "referralShareText": "Analizez acțiuni cu WhatStock: fotografiezi o acțiune și AI-ul ți-o explică. Cu codul meu {code} primești {count, plural, one{{count} analiză suplimentară} few{{count} analize suplimentare} other{{count} de analize suplimentare}}.",
+  "referralCopied": "Cod copiat"
 }

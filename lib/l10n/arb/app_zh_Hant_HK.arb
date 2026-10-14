@@ -396,5 +396,17 @@
   "shareAsImage": "以圖片分享",
   "shareAsText": "以文字分享",
   "shareCardFooter": "由 WhatStock 製作",
-  "shareCardDisclaimer": "AI 分析 · 並不構成投資建議"
+  "shareCardDisclaimer": "AI 分析 · 並不構成投資建議",
+  "referralTitle": "邀請朋友",
+  "referralBody": "分享你的邀請碼。朋友即時獲得 {count, plural, =1{1 次額外分析} other{{count} 次額外分析}}，對方完成首次分析後，你亦會獲得相同次數。",
+  "referralYourCode": "你的邀請碼",
+  "referralStats": "已邀請：{invited} · 已獎勵：{rewarded}",
+  "referralHaveCode": "有朋友的邀請碼？",
+  "referralRedeem": "兌換",
+  "referralRedeemed": "{count, plural, =1{已加入 1 次額外分析。歡迎！} other{已加入 {count} 次額外分析。歡迎！}}",
+  "referralErrUnknown": "此邀請碼不存在。請檢查後再試。",
+  "referralErrOwn": "你不能兌換自己的邀請碼。",
+  "referralErrAlready": "你已兌換過朋友的邀請碼。",
+  "referralShareText": "我用 WhatStock 分析股票：為股票拍照，AI 就會為你解釋。用我的邀請碼 {code}，即可獲得 {count, plural, =1{1 次額外分析} other{{count} 次額外分析}}。",
+  "referralCopied": "已複製邀請碼"
 }

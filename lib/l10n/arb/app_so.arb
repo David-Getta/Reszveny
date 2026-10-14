@@ -396,5 +396,17 @@
   "shareAsImage": "U wadaag sawir ahaan",
   "shareAsText": "U wadaag qoraal ahaan",
   "shareCardFooter": "Waxaa lagu sameeyay WhatStock",
-  "shareCardDisclaimer": "Falanqaynta AI · ma aha talo maalgashi"
+  "shareCardDisclaimer": "Falanqaynta AI · ma aha talo maalgashi",
+  "referralTitle": "Casuun saaxiibbada",
+  "referralBody": "La wadaag koodhkaaga. Saaxiibkaa wuxuu isla markiiba helayaa {count, plural, =1{1 falanqayn oo dheeraad ah} other{{count} falanqayn oo dheeraad ah}}, adiguna waxaad helaysaa isla intaas kadib falanqayntiisa ugu horreysa.",
+  "referralYourCode": "Koodhkaaga",
+  "referralStats": "La casuumay: {invited} · Abaalmarin: {rewarded}",
+  "referralHaveCode": "Ma haysaa koodh saaxiib?",
+  "referralRedeem": "Isticmaal",
+  "referralRedeemed": "{count, plural, =1{1 falanqayn oo dheeraad ah ayaa lagu daray. Soo dhawoow!} other{{count} falanqayn oo dheeraad ah ayaa lagu daray. Soo dhawoow!}}",
+  "referralErrUnknown": "Koodhkan ma jiro. Hubi oo isku day mar kale.",
+  "referralErrOwn": "Ma isticmaali kartid koodhkaaga.",
+  "referralErrAlready": "Horay ayaad u isticmaashay koodhka saaxiib.",
+  "referralShareText": "Saamiyada waxaan ku falanqeeyaa WhatStock: sawir saami, AI-guna wuu kuu sharxayaa. Koodhkayga {code} waxaad ku helaysaa {count, plural, =1{1 falanqayn oo dheeraad ah} other{{count} falanqayn oo dheeraad ah}}.",
+  "referralCopied": "Koodhka waa la koobiyeeyay"
 }

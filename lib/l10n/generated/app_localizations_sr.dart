@@ -1467,4 +1467,71 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI анализа · није инвестициони савет';
+
+  @override
+  String get referralTitle => 'Позови пријатеље';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додатних анализа',
+      few: '$count додатне анализе',
+      one: '$count додатну анализу',
+    );
+    return 'Подели свој код. Твој пријатељ одмах добија $_temp0, а ти исто толико после његове прве анализе.';
+  }
+
+  @override
+  String get referralYourCode => 'Твој код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Позвано: $invited · Награђено: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Имаш код од пријатеља?';
+
+  @override
+  String get referralRedeem => 'Искористи';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додато је $count додатних анализа. Добро дошли!',
+      few: 'Додате су $count додатне анализе. Добро дошли!',
+      one: 'Додата је $count додатна анализа. Добро дошли!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Овај код не постоји. Провери га и покушај поново.';
+
+  @override
+  String get referralErrOwn => 'Не можеш да искористиш свој код.';
+
+  @override
+  String get referralErrAlready =>
+      'Код пријатеља је већ искоришћен на овом налогу.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count додатних анализа',
+      few: '$count додатне анализе',
+      one: '$count додатну анализу',
+    );
+    return 'Анализирам акције уз WhatStock: фотографишеш акцију, а AI ти је објасни. Са мојим кодом $code добијаш $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Код је копиран';
 }

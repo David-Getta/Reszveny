@@ -396,5 +396,17 @@
   "shareAsImage": "Share am as picture",
   "shareAsText": "Share am as text",
   "shareCardFooter": "Na WhatStock make am",
-  "shareCardDisclaimer": "AI analysis · e no be investment advice"
+  "shareCardDisclaimer": "AI analysis · e no be investment advice",
+  "referralTitle": "Invite your padi dem",
+  "referralBody": "Share your code. Your padi go collect {count, plural, one{{count} extra analysis} other{{count} extra analysis}} sharp sharp, and you go collect the same one after dem first analysis.",
+  "referralYourCode": "Your code",
+  "referralStats": "Who you invite: {invited} · Reward: {rewarded}",
+  "referralHaveCode": "You get code from your padi?",
+  "referralRedeem": "Use am",
+  "referralRedeemed": "{count, plural, one{We don add {count} extra analysis. Welcome!} other{We don add {count} extra analysis. Welcome!}}",
+  "referralErrUnknown": "Dis code no dey. Check am well and try again.",
+  "referralErrOwn": "You no fit use your own code.",
+  "referralErrAlready": "You don already use one padi code before.",
+  "referralShareText": "I dey use WhatStock analyse stocks: snap one stock and the AI go explain am. With my code {code} you go get {count, plural, one{{count} extra analysis} other{{count} extra analysis}}.",
+  "referralCopied": "Code don copy"
 }

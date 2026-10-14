@@ -1446,4 +1446,68 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Tshekatsheko ya AI · ga se keletšo ya peeletšo';
+
+  @override
+  String get referralTitle => 'Laletša bagwera';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditshekatsheko tše $count tša tlaleletšo',
+      one: 'tshekatsheko e 1 ya tlaleletšo',
+    );
+    return 'Abelana khoutu ya gago. Mogwera wa gago o hwetša $_temp0 gona bjale, gomme le wena o hwetša tše di swanago ka morago ga tshekatsheko ya gagwe ya mathomo.';
+  }
+
+  @override
+  String get referralYourCode => 'Khoutu ya gago';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Ba laleditšwego: $invited · Ba putseditšwego: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Na o na le khoutu go tšwa go mogwera?';
+
+  @override
+  String get referralRedeem => 'Šomiša';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Go okeditšwe ditshekatsheko tše $count tša tlaleletšo. O amogetšwe!',
+      one: 'Go okeditšwe tshekatsheko e 1 ya tlaleletšo. O amogetšwe!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Khoutu ye ga e gona. E hlahlobe gomme o leke gape.';
+
+  @override
+  String get referralErrOwn => 'O ka se šomiše khoutu ya gago.';
+
+  @override
+  String get referralErrAlready => 'O šetše o šomišitše khoutu ya mogwera.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditshekatsheko tše $count tša tlaleletšo',
+      one: 'tshekatsheko e 1 ya tlaleletšo',
+    );
+    return 'Ke sekaseka dišere ka WhatStock: tšea seswantšho sa šere gomme AI e a e hlaloša. Ka khoutu ya ka $code o hwetša $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Khoutu e kopilwe';
 }

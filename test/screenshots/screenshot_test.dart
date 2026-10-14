@@ -155,7 +155,11 @@ Map<String, Object> _proEntitlements() => {
 
 http.Client _fakeBackend() => MockClient(
   (req) async => http.Response(
-    jsonEncode(req.method == 'DELETE' ? {'deleted': true} : {'token': 'tok', 'entitlements': _proEntitlements()}),
+    jsonEncode(switch (req.url.path) {
+      _ when req.method == 'DELETE' => {'deleted': true},
+      '/v1/referral' => {'code': 'WS-7K2QXM', 'invited': 4, 'rewarded': 2, 'bonus': 5, 'redeemed': false},
+      _ => {'token': 'tok', 'entitlements': _proEntitlements()},
+    }),
     200,
     headers: {'content-type': 'application/json'},
   ),
@@ -681,6 +685,17 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('share-analysis')));
     await tester.pumpAndSettle();
     await _shot(tester, 'share_sheet_phone_hu');
+  });
+
+  testWidgets('invite friends card in the settings (hungarian, phone)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu'), backend: true), const Size(430, 932));
+    await tester.tap(find.text('Beállítások').last);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('referral-card'));
+    await tester.scrollUntilVisible(card, 200, scrollable: find.byType(Scrollable).last);
+    Scrollable.ensureVisible(tester.element(card), alignment: 0.15);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'referral_phone_hu');
   });
 
   testWidgets('quick bar', (tester) async {

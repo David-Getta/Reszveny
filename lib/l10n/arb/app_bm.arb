@@ -396,5 +396,17 @@
   "shareAsImage": "A jɛnsɛn ja ye",
   "shareAsText": "A jɛnsɛn sɛbɛn ye",
   "shareCardFooter": "WhatStock de ye a dilan",
-  "shareCardDisclaimer": "AI sɛgɛsɛgɛli · wari donni ladilikan tɛ"
+  "shareCardDisclaimer": "AI sɛgɛsɛgɛli · wari donni ladilikan tɛ",
+  "referralTitle": "I teriw wele",
+  "referralBody": "I ka kode jɛnsɛn. I teri bɛ {count, plural, =1{sɛgɛsɛgɛli wɛrɛ 1} other{sɛgɛsɛgɛli wɛrɛ {count}}} sɔrɔ joona, i fana bɛ o hakɛ kelen sɔrɔ a ka sɛgɛsɛgɛli fɔlɔ kɔ.",
+  "referralYourCode": "I ka kode",
+  "referralStats": "Welelenw: {invited} · Sarali: {rewarded}",
+  "referralHaveCode": "Kode dɔ bɛ i bolo ka bɔ i teri fɛ wa?",
+  "referralRedeem": "A labaara",
+  "referralRedeemed": "{count, plural, =1{Sɛgɛsɛgɛli wɛrɛ 1 farala a kan. I bisimila!} other{Sɛgɛsɛgɛli wɛrɛ {count} farala a kan. I bisimila!}}",
+  "referralErrUnknown": "Nin kode tɛ yen. A lajɛ ka a kɔrɔbɔ tugun.",
+  "referralErrOwn": "I tɛ se ka i yɛrɛ ka kode labaara.",
+  "referralErrAlready": "I ye i teri dɔ ka kode labaara ka ban.",
+  "referralShareText": "N bɛ aksiyɔnw sɛgɛsɛgɛ ni WhatStock ye: aksiyɔn dɔ ja ta, AI bɛ a ɲɛfɔ. Ni n ka kode {code} ye, i bɛ {count, plural, =1{sɛgɛsɛgɛli wɛrɛ 1} other{sɛgɛsɛgɛli wɛrɛ {count}}} sɔrɔ.",
+  "referralCopied": "Kode kopiyelen don"
 }

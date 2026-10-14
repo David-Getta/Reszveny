@@ -396,5 +396,17 @@
   "shareAsImage": "Сурет ретінде бөлісу",
   "shareAsText": "Мәтін ретінде бөлісу",
   "shareCardFooter": "WhatStock арқылы жасалған",
-  "shareCardDisclaimer": "AI талдауы · инвестициялық кеңес емес"
+  "shareCardDisclaimer": "AI талдауы · инвестициялық кеңес емес",
+  "referralTitle": "Достарды шақыру",
+  "referralBody": "Кодыңызбен бөлісіңіз. Досыңыз бірден {count, plural, =1{1 қосымша талдау} other{{count} қосымша талдау}} алады, ал сіз де оның алғашқы талдауынан кейін сонша аласыз.",
+  "referralYourCode": "Сіздің кодыңыз",
+  "referralStats": "Шақырылғандар: {invited} · Сыйақы берілгендер: {rewarded}",
+  "referralHaveCode": "Достың коды бар ма?",
+  "referralRedeem": "Қолдану",
+  "referralRedeemed": "{count, plural, =1{1 қосымша талдау қосылды. Қош келдіңіз!} other{{count} қосымша талдау қосылды. Қош келдіңіз!}}",
+  "referralErrUnknown": "Мұндай код жоқ. Тексеріп, қайталап көріңіз.",
+  "referralErrOwn": "Өз кодыңызды қолдана алмайсыз.",
+  "referralErrAlready": "Сіз досыңыздың кодын бұрын қолданғансыз.",
+  "referralShareText": "Мен акцияларды WhatStock арқылы талдаймын: акцияны суретке түсіресің, ал AI оны түсіндіреді. Менің {code} кодыммен {count, plural, =1{1 қосымша талдау} other{{count} қосымша талдау}} аласың.",
+  "referralCopied": "Код көшірілді"
 }

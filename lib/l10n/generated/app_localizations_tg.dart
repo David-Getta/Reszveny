@@ -1438,4 +1438,67 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Таҳлили AI · маслиҳати сармоягузорӣ нест';
+
+  @override
+  String get referralTitle => 'Дӯстонро даъват кунед';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count таҳлили иловагӣ',
+      one: '1 таҳлили иловагӣ',
+    );
+    return 'Коди худро мубодила кунед. Дӯстатон фавран $_temp0 мегирад ва шумо пас аз таҳлили аввалини ӯ ҳамон қадар мегиред.';
+  }
+
+  @override
+  String get referralYourCode => 'Коди шумо';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Даъватшудагон: $invited · Мукофотҳо: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Аз дӯстатон код доред?';
+
+  @override
+  String get referralRedeem => 'Фаъол кардан';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count таҳлили иловагӣ илова шуд. Хуш омадед!',
+      one: '1 таҳлили иловагӣ илова шуд. Хуш омадед!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Чунин код вуҷуд надорад. Онро санҷед ва бори дигар кӯшиш кунед.';
+
+  @override
+  String get referralErrOwn => 'Шумо коди худро фаъол карда наметавонед.';
+
+  @override
+  String get referralErrAlready => 'Шумо аллакай коди дӯстро фаъол кардаед.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count таҳлили иловагӣ',
+      one: '1 таҳлили иловагӣ',
+    );
+    return 'Ман саҳмияҳоро бо WhatStock таҳлил мекунам: аз саҳмия акс гиред ва AI онро шарҳ медиҳад. Бо коди ман $code шумо $_temp0 мегиред.';
+  }
+
+  @override
+  String get referralCopied => 'Код нусхабардорӣ шуд';
 }

@@ -1463,4 +1463,70 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analiză AI · nu este sfat de investiții';
+
+  @override
+  String get referralTitle => 'Invită prieteni';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de analize suplimentare',
+      few: '$count analize suplimentare',
+      one: '$count analiză suplimentară',
+    );
+    return 'Distribuie codul tău. Prietenul tău primește imediat $_temp0, iar tu primești la fel după prima sa analiză.';
+  }
+
+  @override
+  String get referralYourCode => 'Codul tău';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Invitați: $invited · Recompensați: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ai un cod de la un prieten?';
+
+  @override
+  String get referralRedeem => 'Folosește';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost adăugate $count de analize suplimentare. Bun venit!',
+      few: 'Au fost adăugate $count analize suplimentare. Bun venit!',
+      one: 'A fost adăugată $count analiză suplimentară. Bun venit!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Acest cod nu există. Verifică-l și încearcă din nou.';
+
+  @override
+  String get referralErrOwn => 'Nu îți poți folosi propriul cod.';
+
+  @override
+  String get referralErrAlready => 'Ai folosit deja codul unui prieten.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de analize suplimentare',
+      few: '$count analize suplimentare',
+      one: '$count analiză suplimentară',
+    );
+    return 'Analizez acțiuni cu WhatStock: fotografiezi o acțiune și AI-ul ți-o explică. Cu codul meu $code primești $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Cod copiat';
 }

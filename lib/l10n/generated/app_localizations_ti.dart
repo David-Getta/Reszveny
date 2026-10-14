@@ -1408,4 +1408,66 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን';
+
+  @override
+  String get referralTitle => 'ኣዕሩኽ ዓድም';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተወሳኺ ትንተናታት',
+      one: '1 ተወሳኺ ትንተና',
+    );
+    return 'ኮድካ ኣካፍል። ዓርክኻ ብኡንብኡ $_temp0 ይረክብ፣ ንስኻ ድማ ድሕሪ ቀዳማይ ትንተናኡ ተመሳሳሊ ትረክብ።';
+  }
+
+  @override
+  String get referralYourCode => 'ኮድካ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'ዝተዓደሙ: $invited · ዝተሸለሙ: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'ካብ ዓርኪ ኮድ ኣለካ ድዩ?';
+
+  @override
+  String get referralRedeem => 'ተጠቐም';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተወሳኺ ትንተናታት ተወሲኾም። እንቋዕ ብደሓን መጻእካ!',
+      one: '1 ተወሳኺ ትንተና ተወሲኹ። እንቋዕ ብደሓን መጻእካ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'እዚ ኮድ የለን። ኣረጋግጽ እሞ እንደገና ፈትን።';
+
+  @override
+  String get referralErrOwn => 'ናይ ባዕልኻ ኮድ ክትጥቀም ኣይትኽእልን።';
+
+  @override
+  String get referralErrAlready => 'ናይ ዓርኪ ኮድ ድሮ ተጠቒምካ ኢኻ።';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተወሳኺ ትንተናታት',
+      one: '1 ተወሳኺ ትንተና',
+    );
+    return 'ብWhatStock ኣክሲዮናት እተንትን፦ ስእሊ ኣክሲዮን ኣልዕል፣ AI ድማ ይገልጸልካ። ብኮደይ $code $_temp0 ትረክብ።';
+  }
+
+  @override
+  String get referralCopied => 'ኮድ ተቐዲሑ';
 }

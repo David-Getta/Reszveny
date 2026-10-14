@@ -1443,4 +1443,67 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Anàlisi amb IA · no és assessorament d’inversió';
+
+  @override
+  String get referralTitle => 'Convida amics';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count anàlisis extra',
+      one: '1 anàlisi extra',
+    );
+    return 'Comparteix el teu codi. El teu amic rep $_temp0 de seguida, i tu el mateix després de la seva primera anàlisi.';
+  }
+
+  @override
+  String get referralYourCode => 'El teu codi';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Convidats: $invited · Recompensats: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Tens un codi d’un amic?';
+
+  @override
+  String get referralRedeem => 'Bescanvia';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S’han afegit $count anàlisis extra. Et donem la benvinguda!',
+      one: 'S’ha afegit 1 anàlisi extra. Et donem la benvinguda!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Aquest codi no existeix. Comprova’l i torna-ho a provar.';
+
+  @override
+  String get referralErrOwn => 'No pots bescanviar el teu propi codi.';
+
+  @override
+  String get referralErrAlready => 'Ja has bescanviat el codi d’un amic.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count anàlisis extra',
+      one: '1 anàlisi extra',
+    );
+    return 'Analitzo accions amb WhatStock: fotografies una acció i la IA te l’explica. Amb el meu codi $code reps $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Codi copiat';
 }

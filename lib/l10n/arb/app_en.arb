@@ -962,5 +962,80 @@
   "shareCardDisclaimer": "AI analysis · not investment advice",
   "@shareCardDisclaimer": {
     "description": "Tiny line at the bottom of the shared analysis picture."
+  },
+  "referralTitle": "Invite friends",
+  "@referralTitle": {
+    "description": "Settings section title of the referral program."
+  },
+  "referralBody": "Share your code. Your friend gets {count, plural, =1{1 extra analysis} other{{count} extra analyses}} right away, and you get the same after their first analysis.",
+  "@referralBody": {
+    "description": "Explanation of the referral program. {count} is the bonus number of analyses each side gets.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralYourCode": "Your code",
+  "@referralYourCode": {
+    "description": "Label above the user's own referral code."
+  },
+  "referralStats": "Invited: {invited} · Rewarded: {rewarded}",
+  "@referralStats": {
+    "description": "Referral counters: how many friends redeemed the code, and after how many the user already got the bonus.",
+    "placeholders": {
+      "invited": {
+        "type": "int"
+      },
+      "rewarded": {
+        "type": "int"
+      }
+    }
+  },
+  "referralHaveCode": "Have a code from a friend?",
+  "@referralHaveCode": {
+    "description": "Button that opens the field to redeem a friend's referral code."
+  },
+  "referralRedeem": "Redeem",
+  "@referralRedeem": {
+    "description": "Button that redeems the entered referral code."
+  },
+  "referralRedeemed": "{count, plural, =1{1 extra analysis added. Welcome!} other{{count} extra analyses added. Welcome!}}",
+  "@referralRedeemed": {
+    "description": "Confirmation after redeeming a friend's code.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralErrUnknown": "This code doesn't exist. Check it and try again.",
+  "@referralErrUnknown": {
+    "description": "Error: the referral code was not found."
+  },
+  "referralErrOwn": "You can't redeem your own code.",
+  "@referralErrOwn": {
+    "description": "Error: the user entered their own referral code."
+  },
+  "referralErrAlready": "You've already redeemed a friend's code.",
+  "@referralErrAlready": {
+    "description": "Error: the account already redeemed a referral code once."
+  },
+  "referralShareText": "I analyse stocks with WhatStock: photograph a stock and the AI explains it. With my code {code} you get {count, plural, =1{1 extra analysis} other{{count} extra analyses}}.",
+  "@referralShareText": {
+    "description": "Text shared with a friend together with the referral code. Keep WhatStock unchanged.",
+    "placeholders": {
+      "code": {
+        "type": "String",
+        "example": "WS-7K2QXM"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralCopied": "Code copied",
+  "@referralCopied": {
+    "description": "Short confirmation after copying the referral code."
   }
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Emoherakuã taʼãngamíicha",
   "shareAsText": "Emoherakuã moñeʼẽrãicha",
   "shareCardFooter": "Ojejapo WhatStock reheve",
-  "shareCardDisclaimer": "AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua"
+  "shareCardDisclaimer": "AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua",
+  "referralTitle": "Eguenoi ne angirũnguérape",
+  "referralBody": "Emoherakuã ne código. Ne angirũ ohupyty pyaʼe {count, plural, =1{1 jehesaʼỹijo mbojuajupyre} other{{count} jehesaʼỹijo mbojuajupyre}}, ha nde avei rehupytýta upeichaite ijehesaʼỹijo peteĩha rire.",
+  "referralYourCode": "Ne código",
+  "referralStats": "Oñeguenoíva: {invited} · Jopói: {rewarded}",
+  "referralHaveCode": "¿Reguereko peteĩ código ne angirũ mbaʼe?",
+  "referralRedeem": "Eiporu",
+  "referralRedeemed": "{count, plural, =1{Oñembojoaju 1 jehesaʼỹijo mbojuajupyre. ¡Eguahẽ porãite!} other{Oñembojoaju {count} jehesaʼỹijo mbojuajupyre. ¡Eguahẽ porãite!}}",
+  "referralErrUnknown": "Ko código ndaipóri. Ehecha jey ha ehaʼã jey.",
+  "referralErrOwn": "Ndaikatúi reiporu ne código voi.",
+  "referralErrAlready": "Reiporúma peteĩ ne angirũ código.",
+  "referralShareText": "Ahesaʼỹijo acción-kuéra WhatStock rupive: ejapyhy peteĩ acción raʼãnga ha AI ohesape chupe. Che código {code} rupive rehupytýta {count, plural, =1{1 jehesaʼỹijo mbojuajupyre} other{{count} jehesaʼỹijo mbojuajupyre}}.",
+  "referralCopied": "Código oñekopia"
 }

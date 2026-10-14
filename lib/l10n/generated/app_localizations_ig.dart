@@ -1434,4 +1434,66 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Nyocha AI · ọ bụghị ndụmọdụ itinye ego';
+
+  @override
+  String get referralTitle => 'Kpọọ ndị enyi';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nyocha mgbakwunye $count',
+      one: 'nyocha mgbakwunye 1',
+    );
+    return 'Kesaa koodu gị. Enyi gị ga-enweta $_temp0 ozugbo, ị ga-enwetakwa otu ahụ mgbe o mechara nyocha mbụ ya.';
+  }
+
+  @override
+  String get referralYourCode => 'Koodu gị';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Ndị a kpọrọ: $invited · Ndị e ji nweta onyinye: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ị nwere koodu sitere n\'aka enyi?';
+
+  @override
+  String get referralRedeem => 'Jiri ya';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Agbakwunyere nyocha mgbakwunye $count. Nnọọ!',
+      one: 'Agbakwunyere nyocha mgbakwunye 1. Nnọọ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Koodu a adịghị. Lelee ya ma nwaa ọzọ.';
+
+  @override
+  String get referralErrOwn => 'Ị nweghị ike iji koodu nke gị.';
+
+  @override
+  String get referralErrAlready => 'Ị jirela koodu otu enyi gị.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nyocha mgbakwunye $count',
+      one: 'nyocha mgbakwunye 1',
+    );
+    return 'Ana m eji WhatStock enyocha stock: see foto stock, AI ga-akọwakwa ya. Site na koodu m $code ị ga-enweta $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Edepụtagharala koodu';
 }

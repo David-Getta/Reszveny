@@ -396,5 +396,17 @@
   "shareAsImage": "Gabana ng'ekifaananyi",
   "shareAsText": "Gabana ng'ebiwandiiko",
   "shareCardFooter": "Kyakoleddwa ne WhatStock",
-  "shareCardDisclaimer": "Okwekenneenya kwa AI · si magezi ga kusiga nsimbi"
+  "shareCardDisclaimer": "Okwekenneenya kwa AI · si magezi ga kusiga nsimbi",
+  "referralTitle": "Yita mikwano gyo",
+  "referralBody": "Gabana koodi yo. Mukwano gwo ajja kufuna {count, plural, =1{okwekenneenya okw'okwongerako 1} other{okwekenneenya okw'okwongerako {count}}} amangu ddala, naawe ojja kufuna bwe bityo ng'amaze okwekenneenya kwe okusooka.",
+  "referralYourCode": "Koodi yo",
+  "referralStats": "Abayitiddwa: {invited} · Ebirabo: {rewarded}",
+  "referralHaveCode": "Olina koodi okuva ewa mukwano gwo?",
+  "referralRedeem": "Gikozese",
+  "referralRedeemed": "{count, plural, =1{Okwekenneenya okw'okwongerako 1 kwongeddwako. Tukwanirizza!} other{Okwekenneenya okw'okwongerako {count} kwongeddwako. Tukwanirizza!}}",
+  "referralErrUnknown": "Koodi eno teriiwo. Gikebere oddemu ogezeeko.",
+  "referralErrOwn": "Toyinza kukozesa koodi yo ggwe kennyini.",
+  "referralErrAlready": "Wamala dda okukozesa koodi ya mukwano gwo.",
+  "referralShareText": "Nneekenneenya emigabo nga nkozesa WhatStock: kuba ekifaananyi ky'omugabo, AI n'ekikunnyonnyola. Ne koodi yange {code} ofuna {count, plural, =1{okwekenneenya okw'okwongerako 1} other{okwekenneenya okw'okwongerako {count}}}.",
+  "referralCopied": "Koodi ekoppoddwa"
 }

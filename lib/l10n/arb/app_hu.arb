@@ -396,5 +396,17 @@
   "shareAsImage": "Megosztás képként",
   "shareAsText": "Megosztás szövegként",
   "shareCardFooter": "WhatStockkal készült",
-  "shareCardDisclaimer": "AI-elemzés · nem befektetési tanács"
+  "shareCardDisclaimer": "AI-elemzés · nem befektetési tanács",
+  "referralTitle": "Hívd meg a barátaidat",
+  "referralBody": "Oszd meg a kódodat. A barátod azonnal kap {count, plural, =1{1 extra elemzést} other{{count} extra elemzést}}, te pedig ugyanennyit az első elemzése után.",
+  "referralYourCode": "A kódod",
+  "referralStats": "Meghívtál: {invited} · Jutalom: {rewarded}",
+  "referralHaveCode": "Van kódod egy barátodtól?",
+  "referralRedeem": "Beváltás",
+  "referralRedeemed": "{count, plural, =1{1 extra elemzést kaptál. Üdv a WhatStockban!} other{{count} extra elemzést kaptál. Üdv a WhatStockban!}}",
+  "referralErrUnknown": "Ilyen kód nincs. Ellenőrizd, és próbáld újra.",
+  "referralErrOwn": "A saját kódodat nem válthatod be.",
+  "referralErrAlready": "Már beváltottad egy barátod kódját.",
+  "referralShareText": "A WhatStockkal elemzem a részvényeket: lefotózod, és az AI elmagyarázza. A {code} kóddal kapsz {count, plural, =1{1 extra elemzést} other{{count} extra elemzést}}.",
+  "referralCopied": "Kód kimásolva"
 }

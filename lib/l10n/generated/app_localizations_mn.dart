@@ -1437,4 +1437,68 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш';
+
+  @override
+  String get referralTitle => 'Найзаа урих';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count нэмэлт шинжилгээ',
+      one: '1 нэмэлт шинжилгээ',
+    );
+    return 'Кодоо хуваалцаарай. Таны найз шууд $_temp0 авах бөгөөд түүнийг анхны шинжилгээгээ хийсний дараа та мөн адил хэмжээгээр авна.';
+  }
+
+  @override
+  String get referralYourCode => 'Таны код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Урьсан: $invited · Шагнал авсан: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Найзаасаа код авсан уу?';
+
+  @override
+  String get referralRedeem => 'Ашиглах';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count нэмэлт шинжилгээ нэмэгдлээ. Тавтай морил!',
+      one: '1 нэмэлт шинжилгээ нэмэгдлээ. Тавтай морил!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ийм код байхгүй байна. Шалгаад дахин оролдоно уу.';
+
+  @override
+  String get referralErrOwn => 'Та өөрийн кодыг ашиглах боломжгүй.';
+
+  @override
+  String get referralErrAlready =>
+      'Та аль хэдийн найзынхаа кодыг ашигласан байна.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count нэмэлт шинжилгээ',
+      one: '1 нэмэлт шинжилгээ',
+    );
+    return 'Би WhatStock-оор хувьцаа шинжилдэг: хувьцааны зургийг аваад, AI тайлбарлаж өгнө. Миний $code кодоор та $_temp0 авна.';
+  }
+
+  @override
+  String get referralCopied => 'Код хуулагдлаа';
 }

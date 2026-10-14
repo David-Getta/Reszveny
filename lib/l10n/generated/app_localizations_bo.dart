@@ -1431,4 +1431,65 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI དབྱེ་ཞིབ · མ་འཇོག་གི་བསམ་འཆར་མིན།';
+
+  @override
+  String get referralTitle => 'གྲོགས་པོ་མགྲོན་འབོད';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count',
+    );
+    return 'ཁྱེད་ཀྱི་ཨང་རྟགས་མཉམ་སྤྱོད་གནང་། ཁྱེད་ཀྱི་གྲོགས་པོས་འཕྲལ་དུ་$_temp0 ཐོབ་ཀྱི་རེད། ཁོང་གིས་དབྱེ་ཞིབ་དང་པོ་བྱས་རྗེས་ཁྱེད་ལའང་གྲངས་ཀ་དེ་ཙམ་ཐོབ་ཀྱི་རེད།';
+  }
+
+  @override
+  String get referralYourCode => 'ཁྱེད་ཀྱི་ཨང་རྟགས';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'མགྲོན་འབོད་བྱས་པ: $invited · བྱ་དགའ་ཐོབ་པ: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'གྲོགས་པོ་ཞིག་ནས་ཐོབ་པའི་ཨང་རྟགས་ཡོད་དམ།';
+
+  @override
+  String get referralRedeem => 'བེད་སྤྱོད།';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count ཁ་སྣོན་བྱས་ཟིན། ཕེབས་པ་ལེགས་སོ།',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ཨང་རྟགས་འདི་མེད། ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+
+  @override
+  String get referralErrOwn => 'རང་གི་ཨང་རྟགས་བེད་སྤྱོད་བྱེད་མི་ཆོག';
+
+  @override
+  String get referralErrAlready =>
+      'ཁྱེད་ཀྱིས་གྲོགས་པོའི་ཨང་རྟགས་སྔོན་ནས་བེད་སྤྱོད་བྱས་ཟིན།';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count',
+    );
+    return 'ངས་ WhatStock བརྒྱུད་ནས་ཧུར་ཁག་དབྱེ་ཞིབ་བྱེད། ཧུར་ཁག་ཅིག་གི་པར་བླངས་ན་ AI ཡིས་འགྲེལ་བཤད་བྱེད། ངའི་ཨང་རྟགས་ $code བེད་སྤྱོད་བྱས་ན་ཁྱེད་ལ་$_temp0 ཐོབ་ཀྱི་རེད།';
+  }
+
+  @override
+  String get referralCopied => 'ཨང་རྟགས་འདྲ་བཤུས་བྱས་ཟིན།';
 }

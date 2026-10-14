@@ -396,5 +396,17 @@
   "shareAsImage": "Ipaambit isip hulagway",
   "shareAsText": "Ipaambit isip teksto",
   "shareCardFooter": "Gihimo gamit ang WhatStock",
-  "shareCardDisclaimer": "Pagtuki sa AI · dili tambag sa pagpamuhunan"
+  "shareCardDisclaimer": "Pagtuki sa AI · dili tambag sa pagpamuhunan",
+  "referralTitle": "Dapita ang mga higala",
+  "referralBody": "Ipaambit ang imong code. Ang imong higala makadawat dayon og {count, plural, =1{1 ka dugang nga pagtuki} other{{count} ka dugang nga pagtuki}}, ug ikaw usab makadawat og ingon niana human sa iyang unang pagtuki.",
+  "referralYourCode": "Imong code",
+  "referralStats": "Gidapit: {invited} · Gigantihan: {rewarded}",
+  "referralHaveCode": "Naa kay code gikan sa higala?",
+  "referralRedeem": "I-redeem",
+  "referralRedeemed": "{count, plural, =1{Nadugang ang 1 ka dugang nga pagtuki. Maayong pag-abot!} other{Nadugang ang {count} ka dugang nga pagtuki. Maayong pag-abot!}}",
+  "referralErrUnknown": "Walay ingon ani nga code. Susiha kini ug sulayi pag-usab.",
+  "referralErrOwn": "Dili nimo ma-redeem ang imong kaugalingong code.",
+  "referralErrAlready": "Naka-redeem ka na sa code sa usa ka higala.",
+  "referralShareText": "Gituki nako ang mga stock gamit ang WhatStock: kuhai og litrato ang usa ka stock ug ipasabot kini sa AI. Gamit ang akong code {code} makadawat ka og {count, plural, =1{1 ka dugang nga pagtuki} other{{count} ka dugang nga pagtuki}}.",
+  "referralCopied": "Nakopya ang code"
 }

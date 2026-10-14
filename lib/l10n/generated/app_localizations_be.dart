@@ -1478,4 +1478,73 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI-аналіз · не інвестыцыйная парада';
+
+  @override
+  String get referralTitle => 'Запрасіце сяброў';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дадатковага аналізу',
+      many: '$count дадатковых аналізаў',
+      few: '$count дадатковыя аналізы',
+      one: '$count дадатковы аналіз',
+    );
+    return 'Падзяліцеся сваім кодам. Ваш сябар адразу атрымае $_temp0, а вы — столькі ж пасля яго першага аналізу.';
+  }
+
+  @override
+  String get referralYourCode => 'Ваш код';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Запрошана: $invited · Узнагароджана: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ёсць код ад сябра?';
+
+  @override
+  String get referralRedeem => 'Актываваць';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дададзена $count дадатковага аналізу. Вітаем!',
+      many: 'Дададзена $count дадатковых аналізаў. Вітаем!',
+      few: 'Дададзены $count дадатковыя аналізы. Вітаем!',
+      one: 'Дададзены $count дадатковы аналіз. Вітаем!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Такога кода не існуе. Праверце яго і паспрабуйце яшчэ раз.';
+
+  @override
+  String get referralErrOwn => 'Нельга актываваць уласны код.';
+
+  @override
+  String get referralErrAlready => 'Вы ўжо актывавалі код сябра.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дадатковага аналізу',
+      many: '$count дадатковых аналізаў',
+      few: '$count дадатковыя аналізы',
+      one: '$count дадатковы аналіз',
+    );
+    return 'Я аналізую акцыі з WhatStock: сфатаграфуйце акцыю, і AI растлумачыць яе. З маім кодам $code вы атрымаеце $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Код скапіяваны';
 }

@@ -1437,4 +1437,67 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI analysis · e no be investment advice';
+
+  @override
+  String get referralTitle => 'Invite your padi dem';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count extra analysis',
+      one: '$count extra analysis',
+    );
+    return 'Share your code. Your padi go collect $_temp0 sharp sharp, and you go collect the same one after dem first analysis.';
+  }
+
+  @override
+  String get referralYourCode => 'Your code';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Who you invite: $invited · Reward: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'You get code from your padi?';
+
+  @override
+  String get referralRedeem => 'Use am';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don add $count extra analysis. Welcome!',
+      one: 'We don add $count extra analysis. Welcome!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Dis code no dey. Check am well and try again.';
+
+  @override
+  String get referralErrOwn => 'You no fit use your own code.';
+
+  @override
+  String get referralErrAlready => 'You don already use one padi code before.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count extra analysis',
+      one: '$count extra analysis',
+    );
+    return 'I dey use WhatStock analyse stocks: snap one stock and the AI go explain am. With my code $code you go get $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Code don copy';
 }

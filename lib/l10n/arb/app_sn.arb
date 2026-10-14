@@ -396,5 +396,17 @@
   "shareAsImage": "Govera semufananidzo",
   "shareAsText": "Govera semavara",
   "shareCardFooter": "Zvakagadzirwa neWhatStock",
-  "shareCardDisclaimer": "Ongororo yeAI · haisi zano rekuisa mari"
+  "shareCardDisclaimer": "Ongororo yeAI · haisi zano rekuisa mari",
+  "referralTitle": "Koka shamwari",
+  "referralBody": "Govera kodhi yako. Shamwari yako inowana {count, plural, =1{ongororo 1 yekuwedzera} other{ongororo {count} dzekuwedzera}} ipapo ipapo, uye newe unowana zvakafanana mushure meongororo yayo yekutanga.",
+  "referralYourCode": "Kodhi yako",
+  "referralStats": "Vakokwa: {invited} · Mibairo: {rewarded}",
+  "referralHaveCode": "Une kodhi kubva kushamwari?",
+  "referralRedeem": "Shandisa",
+  "referralRedeemed": "{count, plural, =1{Ongororo 1 yekuwedzera yawedzerwa. Mauya!} other{Ongororo {count} dzekuwedzera dzawedzerwa. Mauya!}}",
+  "referralErrUnknown": "Kodhi iyi haipo. Iongorore wozoedza zvakare.",
+  "referralErrOwn": "Haugoni kushandisa kodhi yako pachako.",
+  "referralErrAlready": "Wakatoshandisa kodhi yeshamwari.",
+  "referralShareText": "Ndinoongorora masheya neWhatStock: tora mufananidzo wesheya uye AI inokutsanangurira. Nekodhi yangu {code} unowana {count, plural, =1{ongororo 1 yekuwedzera} other{ongororo {count} dzekuwedzera}}.",
+  "referralCopied": "Kodhi yakopwa"
 }

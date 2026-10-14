@@ -396,5 +396,17 @@
   "shareAsImage": "Del som bilde",
   "shareAsText": "Del som tekst",
   "shareCardFooter": "Laget med WhatStock",
-  "shareCardDisclaimer": "AI-analyse · ikke investeringsråd"
+  "shareCardDisclaimer": "AI-analyse · ikke investeringsråd",
+  "referralTitle": "Inviter venner",
+  "referralBody": "Del koden din. Vennen din får {count, plural, =1{1 ekstra analyse} other{{count} ekstra analyser}} med en gang, og du får det samme etter vennens første analyse.",
+  "referralYourCode": "Koden din",
+  "referralStats": "Invitert: {invited} · Belønnet: {rewarded}",
+  "referralHaveCode": "Har du en kode fra en venn?",
+  "referralRedeem": "Løs inn",
+  "referralRedeemed": "{count, plural, =1{1 ekstra analyse lagt til. Velkommen!} other{{count} ekstra analyser lagt til. Velkommen!}}",
+  "referralErrUnknown": "Denne koden finnes ikke. Sjekk den og prøv igjen.",
+  "referralErrOwn": "Du kan ikke løse inn din egen kode.",
+  "referralErrAlready": "Du har allerede løst inn en venns kode.",
+  "referralShareText": "Jeg analyserer aksjer med WhatStock: ta bilde av en aksje, så forklarer AI-en den. Med koden min {code} får du {count, plural, =1{1 ekstra analyse} other{{count} ekstra analyser}}.",
+  "referralCopied": "Koden er kopiert"
 }

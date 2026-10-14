@@ -1436,4 +1436,67 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Uchambuzi wa AI · si ushauri wa uwekezaji';
+
+  @override
+  String get referralTitle => 'Alika marafiki';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'uchambuzi $count wa ziada',
+      one: 'uchambuzi 1 wa ziada',
+    );
+    return 'Shiriki msimbo wako. Rafiki yako anapata $_temp0 papo hapo, nawe unapata kiasi hicho hicho baada ya uchambuzi wake wa kwanza.';
+  }
+
+  @override
+  String get referralYourCode => 'Msimbo wako';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Walioalikwa: $invited · Waliozawadiwa: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Una msimbo kutoka kwa rafiki?';
+
+  @override
+  String get referralRedeem => 'Tumia';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Uchambuzi $count wa ziada umeongezwa. Karibu!',
+      one: 'Uchambuzi 1 wa ziada umeongezwa. Karibu!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Msimbo huu haupo. Uangalie kisha ujaribu tena.';
+
+  @override
+  String get referralErrOwn => 'Huwezi kutumia msimbo wako mwenyewe.';
+
+  @override
+  String get referralErrAlready => 'Tayari umetumia msimbo wa rafiki.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'uchambuzi $count wa ziada',
+      one: 'uchambuzi 1 wa ziada',
+    );
+    return 'Ninachambua hisa kwa WhatStock: piga picha ya hisa na AI inaieleza. Kwa msimbo wangu $code unapata $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Msimbo umenakiliwa';
 }

@@ -1421,4 +1421,63 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน';
+
+  @override
+  String get referralTitle => 'ชวนเพื่อน';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'การวิเคราะห์เพิ่มเติม $count ครั้ง',
+    );
+    return 'แชร์โค้ดของคุณ เพื่อนของคุณจะได้รับ$_temp0ทันที และคุณจะได้รับเท่ากันหลังจากเพื่อนวิเคราะห์ครั้งแรก';
+  }
+
+  @override
+  String get referralYourCode => 'โค้ดของคุณ';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'เชิญแล้ว: $invited · ได้รางวัลแล้ว: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'มีโค้ดจากเพื่อนไหม';
+
+  @override
+  String get referralRedeem => 'ใช้โค้ด';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ได้รับการวิเคราะห์เพิ่มเติม $count ครั้งแล้ว ยินดีต้อนรับ!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'ไม่มีโค้ดนี้ โปรดตรวจสอบแล้วลองอีกครั้ง';
+
+  @override
+  String get referralErrOwn => 'คุณใช้โค้ดของตัวเองไม่ได้';
+
+  @override
+  String get referralErrAlready => 'คุณใช้โค้ดของเพื่อนไปแล้ว';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'การวิเคราะห์เพิ่มเติม $count ครั้ง',
+    );
+    return 'ฉันวิเคราะห์หุ้นด้วย WhatStock: ถ่ายรูปหุ้น แล้ว AI จะอธิบายให้ ใช้โค้ดของฉัน $code รับ$_temp0';
+  }
+
+  @override
+  String get referralCopied => 'คัดลอกโค้ดแล้ว';
 }

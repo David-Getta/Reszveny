@@ -1441,4 +1441,68 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Falanqaynta AI · ma aha talo maalgashi';
+
+  @override
+  String get referralTitle => 'Casuun saaxiibbada';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count falanqayn oo dheeraad ah',
+      one: '1 falanqayn oo dheeraad ah',
+    );
+    return 'La wadaag koodhkaaga. Saaxiibkaa wuxuu isla markiiba helayaa $_temp0, adiguna waxaad helaysaa isla intaas kadib falanqayntiisa ugu horreysa.';
+  }
+
+  @override
+  String get referralYourCode => 'Koodhkaaga';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'La casuumay: $invited · Abaalmarin: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Ma haysaa koodh saaxiib?';
+
+  @override
+  String get referralRedeem => 'Isticmaal';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count falanqayn oo dheeraad ah ayaa lagu daray. Soo dhawoow!',
+      one: '1 falanqayn oo dheeraad ah ayaa lagu daray. Soo dhawoow!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Koodhkan ma jiro. Hubi oo isku day mar kale.';
+
+  @override
+  String get referralErrOwn => 'Ma isticmaali kartid koodhkaaga.';
+
+  @override
+  String get referralErrAlready =>
+      'Horay ayaad u isticmaashay koodhka saaxiib.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count falanqayn oo dheeraad ah',
+      one: '1 falanqayn oo dheeraad ah',
+    );
+    return 'Saamiyada waxaan ku falanqeeyaa WhatStock: sawir saami, AI-guna wuu kuu sharxayaa. Koodhkayga $code waxaad ku helaysaa $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Koodhka waa la koobiyeeyay';
 }

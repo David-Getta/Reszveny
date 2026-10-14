@@ -396,5 +396,17 @@
   "shareAsImage": "هاوبەشکردن وەک وێنە",
   "shareAsText": "هاوبەشکردن وەک دەق",
   "shareCardFooter": "بە WhatStock دروستکراوە",
-  "shareCardDisclaimer": "شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە"
+  "shareCardDisclaimer": "شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە",
+  "referralTitle": "هاوڕێکانت بانگهێشت بکە",
+  "referralBody": "کۆدەکەت هاوبەش بکە. هاوڕێکەت دەستبەجێ {count, plural, =1{1 شیکاریی زیادە} other{{count} شیکاریی زیادە}} وەردەگرێت، و تۆش دوای یەکەم شیکارییەکەی هەمان بڕ وەردەگریت.",
+  "referralYourCode": "کۆدەکەت",
+  "referralStats": "بانگهێشتکراو: {invited} · خەڵاتکراو: {rewarded}",
+  "referralHaveCode": "کۆدێکت لە هاوڕێیەکەوە هەیە؟",
+  "referralRedeem": "بەکارهێنان",
+  "referralRedeemed": "{count, plural, =1{1 شیکاریی زیادە زیادکرا. بەخێربێیت!} other{{count} شیکاریی زیادە زیادکران. بەخێربێیت!}}",
+  "referralErrUnknown": "ئەم کۆدە بوونی نییە. بیپشکنە و دووبارە هەوڵ بدەرەوە.",
+  "referralErrOwn": "ناتوانیت کۆدی خۆت بەکاربهێنیت.",
+  "referralErrAlready": "پێشتر کۆدی هاوڕێیەکت بەکارهێناوە.",
+  "referralShareText": "من بە WhatStock پشکەکان شی دەکەمەوە: وێنەی پشکێک بگرە و AI ڕوونی دەکاتەوە. بە کۆدەکەم {code} {count, plural, =1{1 شیکاریی زیادە} other{{count} شیکاریی زیادە}} وەردەگریت.",
+  "referralCopied": "کۆد کۆپی کرا"
 }

@@ -1436,4 +1436,66 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu';
+
+  @override
+  String get referralTitle => 'Frɛ wo nnamfonom';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nhwehwɛmu $count a ɛka ho',
+      one: 'nhwehwɛmu 1 a ɛka ho',
+    );
+    return 'Kyɛ wo code no. Wo damfo bɛnya $_temp0 ntɛm ara, na wo nso wobɛnya saa ara wɔ ne nhwehwɛmu a edi kan no akyi.';
+  }
+
+  @override
+  String get referralYourCode => 'Wo code';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Wofrɛɛ: $invited · Akatua: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Wowɔ code bi a efi wo damfo hɔ?';
+
+  @override
+  String get referralRedeem => 'Fa di dwuma';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔde nhwehwɛmu $count a ɛka ho aka ho. Akwaaba!',
+      one: 'Wɔde nhwehwɛmu 1 a ɛka ho aka ho. Akwaaba!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Code yi nni hɔ. Hwɛ mu yie na sɔ hwɛ bio.';
+
+  @override
+  String get referralErrOwn => 'Wuntumi mfa wo ankasa wo code nni dwuma.';
+
+  @override
+  String get referralErrAlready => 'Wode wo damfo bi code adi dwuma dedaw.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nhwehwɛmu $count a ɛka ho',
+      one: 'nhwehwɛmu 1 a ɛka ho',
+    );
+    return 'Mede WhatStock hwehwɛ kyɛfa mu: twa kyɛfa bi mfonini na AI no bɛkyerɛkyerɛ mu. Wode me code $code bɛnya $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Wɔakɔpi code no';
 }

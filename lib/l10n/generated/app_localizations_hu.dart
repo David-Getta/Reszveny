@@ -1442,4 +1442,67 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI-elemzés · nem befektetési tanács';
+
+  @override
+  String get referralTitle => 'Hívd meg a barátaidat';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count extra elemzést',
+      one: '1 extra elemzést',
+    );
+    return 'Oszd meg a kódodat. A barátod azonnal kap $_temp0, te pedig ugyanennyit az első elemzése után.';
+  }
+
+  @override
+  String get referralYourCode => 'A kódod';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Meghívtál: $invited · Jutalom: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Van kódod egy barátodtól?';
+
+  @override
+  String get referralRedeem => 'Beváltás';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count extra elemzést kaptál. Üdv a WhatStockban!',
+      one: '1 extra elemzést kaptál. Üdv a WhatStockban!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ilyen kód nincs. Ellenőrizd, és próbáld újra.';
+
+  @override
+  String get referralErrOwn => 'A saját kódodat nem válthatod be.';
+
+  @override
+  String get referralErrAlready => 'Már beváltottad egy barátod kódját.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count extra elemzést',
+      one: '1 extra elemzést',
+    );
+    return 'A WhatStockkal elemzem a részvényeket: lefotózod, és az AI elmagyarázza. A $code kóddal kapsz $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kód kimásolva';
 }

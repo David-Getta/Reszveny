@@ -1462,4 +1462,76 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية';
+
+  @override
+  String get referralTitle => 'ادعُ أصدقاءك';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحليل إضافي',
+      many: '$count تحليلاً إضافياً',
+      few: '$count تحليلات إضافية',
+      two: 'تحليلين إضافيين',
+      one: 'تحليل إضافي واحد',
+    );
+    return 'شارك رمزك. يحصل صديقك فوراً على $_temp0، وتحصل أنت على المثل بعد أول تحليل له.';
+  }
+
+  @override
+  String get referralYourCode => 'رمزك';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'المدعوون: $invited · المكافآت: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'لديك رمز من صديق؟';
+
+  @override
+  String get referralRedeem => 'تفعيل';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تمت إضافة $count تحليل إضافي. أهلاً بك!',
+      many: 'تمت إضافة $count تحليلاً إضافياً. أهلاً بك!',
+      few: 'تمت إضافة $count تحليلات إضافية. أهلاً بك!',
+      two: 'تمت إضافة تحليلين إضافيين. أهلاً بك!',
+      one: 'تمت إضافة تحليل إضافي واحد. أهلاً بك!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'هذا الرمز غير موجود. تحقق منه وحاول مرة أخرى.';
+
+  @override
+  String get referralErrOwn => 'لا يمكنك تفعيل رمزك الخاص.';
+
+  @override
+  String get referralErrAlready => 'لقد فعّلت رمز صديق من قبل.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحليل إضافي',
+      many: '$count تحليلاً إضافياً',
+      few: '$count تحليلات إضافية',
+      two: 'تحليلين إضافيين',
+      one: 'تحليل إضافي واحد',
+    );
+    return 'أحلّل الأسهم باستخدام WhatStock: صوّر سهماً ويشرحه لك الذكاء الاصطناعي. باستخدام رمزي $code تحصل على $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'تم نسخ الرمز';
 }

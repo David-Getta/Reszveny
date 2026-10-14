@@ -1444,4 +1444,69 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI t\'aqwiy · manan qullqi churanapaq yuyaychaychu';
+
+  @override
+  String get referralTitle => 'Masiykikunata waqyay';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yapa t\'aqwiyta',
+      one: '1 yapa t\'aqwiyta',
+    );
+    return 'Kódigoykita rakiy. Masiyki chayllam $_temp0 chaskin, qanpas kikinta chaskinki ñawpaq t\'aqwiyninta ruwasqan qhipata.';
+  }
+
+  @override
+  String get referralYourCode => 'Kódigoyki';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Waqyasqakuna: $invited · Premiyasqakuna: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Masiykiq kódigonchu kapusunki?';
+
+  @override
+  String get referralRedeem => 'Llamk\'achiy';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yapa t\'aqwiy yapakun. Sumaq hamusqayki!',
+      one: '1 yapa t\'aqwiy yapakun. Sumaq hamusqayki!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Kay kódigoqa manam kanchu. Qhawarispa wakmanta kallpachakuy.';
+
+  @override
+  String get referralErrOwn =>
+      'Manam kikiykiq kódigoykita llamk\'achiyta atinkichu.';
+
+  @override
+  String get referralErrAlready =>
+      'Ñam huk masiykiq kódigonta llamk\'achirqankiña.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yapa t\'aqwiyta',
+      one: '1 yapa t\'aqwiyta',
+    );
+    return 'WhatStockwan accionkunata t\'aqwini: huk accionta fotografiay, AI-taq sut\'inchan. $code kódigoywan $_temp0 chaskinki.';
+  }
+
+  @override
+  String get referralCopied => 'Kódigo copiasqa';
 }

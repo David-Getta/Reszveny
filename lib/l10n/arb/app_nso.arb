@@ -396,5 +396,17 @@
   "shareAsImage": "Abelana bjalo ka seswantšho",
   "shareAsText": "Abelana bjalo ka sengwalwa",
   "shareCardFooter": "E dirilwe ka WhatStock",
-  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se keletšo ya peeletšo"
+  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se keletšo ya peeletšo",
+  "referralTitle": "Laletša bagwera",
+  "referralBody": "Abelana khoutu ya gago. Mogwera wa gago o hwetša {count, plural, =1{tshekatsheko e 1 ya tlaleletšo} other{ditshekatsheko tše {count} tša tlaleletšo}} gona bjale, gomme le wena o hwetša tše di swanago ka morago ga tshekatsheko ya gagwe ya mathomo.",
+  "referralYourCode": "Khoutu ya gago",
+  "referralStats": "Ba laleditšwego: {invited} · Ba putseditšwego: {rewarded}",
+  "referralHaveCode": "Na o na le khoutu go tšwa go mogwera?",
+  "referralRedeem": "Šomiša",
+  "referralRedeemed": "{count, plural, =1{Go okeditšwe tshekatsheko e 1 ya tlaleletšo. O amogetšwe!} other{Go okeditšwe ditshekatsheko tše {count} tša tlaleletšo. O amogetšwe!}}",
+  "referralErrUnknown": "Khoutu ye ga e gona. E hlahlobe gomme o leke gape.",
+  "referralErrOwn": "O ka se šomiše khoutu ya gago.",
+  "referralErrAlready": "O šetše o šomišitše khoutu ya mogwera.",
+  "referralShareText": "Ke sekaseka dišere ka WhatStock: tšea seswantšho sa šere gomme AI e a e hlaloša. Ka khoutu ya ka {code} o hwetša {count, plural, =1{tshekatsheko e 1 ya tlaleletšo} other{ditshekatsheko tše {count} tša tlaleletšo}}.",
+  "referralCopied": "Khoutu e kopilwe"
 }

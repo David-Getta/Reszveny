@@ -1437,4 +1437,67 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە';
+
+  @override
+  String get referralTitle => 'هاوڕێکانت بانگهێشت بکە';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیکاریی زیادە',
+      one: '1 شیکاریی زیادە',
+    );
+    return 'کۆدەکەت هاوبەش بکە. هاوڕێکەت دەستبەجێ $_temp0 وەردەگرێت، و تۆش دوای یەکەم شیکارییەکەی هەمان بڕ وەردەگریت.';
+  }
+
+  @override
+  String get referralYourCode => 'کۆدەکەت';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'بانگهێشتکراو: $invited · خەڵاتکراو: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'کۆدێکت لە هاوڕێیەکەوە هەیە؟';
+
+  @override
+  String get referralRedeem => 'بەکارهێنان';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیکاریی زیادە زیادکران. بەخێربێیت!',
+      one: '1 شیکاریی زیادە زیادکرا. بەخێربێیت!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ئەم کۆدە بوونی نییە. بیپشکنە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get referralErrOwn => 'ناتوانیت کۆدی خۆت بەکاربهێنیت.';
+
+  @override
+  String get referralErrAlready => 'پێشتر کۆدی هاوڕێیەکت بەکارهێناوە.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیکاریی زیادە',
+      one: '1 شیکاریی زیادە',
+    );
+    return 'من بە WhatStock پشکەکان شی دەکەمەوە: وێنەی پشکێک بگرە و AI ڕوونی دەکاتەوە. بە کۆدەکەم $code $_temp0 وەردەگریت.';
+  }
+
+  @override
+  String get referralCopied => 'کۆد کۆپی کرا';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "ଛବି ଭାବେ ସେୟାର କରନ୍ତୁ",
   "shareAsText": "ଟେକ୍ସଟ ଭାବେ ସେୟାର କରନ୍ତୁ",
   "shareCardFooter": "WhatStock ଦ୍ୱାରା ନିର୍ମିତ",
-  "shareCardDisclaimer": "AI ବିଶ୍ଳେଷଣ · ନିବେଶ ପରାମର୍ଶ ନୁହେଁ"
+  "shareCardDisclaimer": "AI ବିଶ୍ଳେଷଣ · ନିବେଶ ପରାମର୍ଶ ନୁହେଁ",
+  "referralTitle": "ବନ୍ଧୁମାନଙ୍କୁ ଆମନ୍ତ୍ରଣ କରନ୍ତୁ",
+  "referralBody": "ଆପଣଙ୍କ କୋଡ ସେୟାର କରନ୍ତୁ। ଆପଣଙ୍କ ବନ୍ଧୁ ତୁରନ୍ତ {count, plural, =1{1ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ} other{{count}ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ}} ପାଇବେ, ଏବଂ ସେମାନଙ୍କ ପ୍ରଥମ ବିଶ୍ଳେଷଣ ପରେ ଆପଣ ମଧ୍ୟ ସେତିକି ପାଇବେ।",
+  "referralYourCode": "ଆପଣଙ୍କ କୋଡ",
+  "referralStats": "ଆମନ୍ତ୍ରିତ: {invited} · ପୁରସ୍କୃତ: {rewarded}",
+  "referralHaveCode": "ବନ୍ଧୁଙ୍କଠାରୁ କୋଡ ଅଛି କି?",
+  "referralRedeem": "ରିଡିମ କରନ୍ତୁ",
+  "referralRedeemed": "{count, plural, =1{1ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ ଯୋଡ଼ାଗଲା। ସ୍ୱାଗତ!} other{{count}ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ ଯୋଡ଼ାଗଲା। ସ୍ୱାଗତ!}}",
+  "referralErrUnknown": "ଏହି କୋଡ ନାହିଁ। ଯାଞ୍ଚ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+  "referralErrOwn": "ଆପଣ ନିଜର କୋଡ ରିଡିମ କରିପାରିବେ ନାହିଁ।",
+  "referralErrAlready": "ଆପଣ ପୂର୍ବରୁ ଜଣେ ବନ୍ଧୁଙ୍କ କୋଡ ରିଡିମ କରିସାରିଛନ୍ତି।",
+  "referralShareText": "ମୁଁ WhatStock ସହିତ ସେୟାର ବିଶ୍ଳେଷଣ କରେ: ଗୋଟିଏ ସେୟାରର ଫଟୋ ଉଠାନ୍ତୁ ଏବଂ AI ତାହା ବୁଝାଇଦିଏ। ମୋ କୋଡ {code} ସହିତ ଆପଣ {count, plural, =1{1ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ} other{{count}ଟି ଅତିରିକ୍ତ ବିଶ୍ଳେଷଣ}} ପାଇବେ।",
+  "referralCopied": "କୋଡ କପି ହେଲା"
 }

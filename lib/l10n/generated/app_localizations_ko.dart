@@ -1392,4 +1392,66 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI 분석 · 투자 조언 아님';
+
+  @override
+  String get referralTitle => '친구 초대';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 1회',
+    );
+    return '코드를 공유하세요. 친구는 바로 $_temp0를 받고, 친구가 첫 분석을 마치면 회원님도 같은 만큼 받습니다.';
+  }
+
+  @override
+  String get referralYourCode => '내 코드';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return '초대: $invited · 보상: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => '친구에게 받은 코드가 있나요?';
+
+  @override
+  String get referralRedeem => '사용';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회가 지급되었습니다. 환영합니다!',
+      one: '추가 분석 1회가 지급되었습니다. 환영합니다!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => '존재하지 않는 코드입니다. 확인 후 다시 시도해 주세요.';
+
+  @override
+  String get referralErrOwn => '본인의 코드는 사용할 수 없습니다.';
+
+  @override
+  String get referralErrAlready => '이미 친구 코드를 사용했습니다.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 1회',
+    );
+    return '저는 WhatStock으로 주식을 분석해요. 종목을 찍으면 AI가 설명해 줘요. 제 코드 $code 입력 시 $_temp0를 받을 수 있어요.';
+  }
+
+  @override
+  String get referralCopied => '코드가 복사되었습니다';
 }

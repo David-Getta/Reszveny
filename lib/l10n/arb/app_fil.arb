@@ -396,5 +396,17 @@
   "shareAsImage": "Ibahagi bilang larawan",
   "shareAsText": "Ibahagi bilang teksto",
   "shareCardFooter": "Ginawa gamit ang WhatStock",
-  "shareCardDisclaimer": "Pagsusuri ng AI · hindi payo sa pamumuhunan"
+  "shareCardDisclaimer": "Pagsusuri ng AI · hindi payo sa pamumuhunan",
+  "referralTitle": "Mag-imbita ng mga kaibigan",
+  "referralBody": "Ibahagi ang iyong code. Makakatanggap agad ang kaibigan mo ng {count, plural, =1{1 dagdag na pagsusuri} other{{count} dagdag na pagsusuri}}, at ganoon din ang matatanggap mo pagkatapos ng kanyang unang pagsusuri.",
+  "referralYourCode": "Ang iyong code",
+  "referralStats": "Inimbitahan: {invited} · Ginantimpalaan: {rewarded}",
+  "referralHaveCode": "May code ka mula sa kaibigan?",
+  "referralRedeem": "I-redeem",
+  "referralRedeemed": "{count, plural, =1{Naidagdag ang 1 dagdag na pagsusuri. Maligayang pagdating!} other{Naidagdag ang {count} dagdag na pagsusuri. Maligayang pagdating!}}",
+  "referralErrUnknown": "Walang ganitong code. Suriin ito at subukang muli.",
+  "referralErrOwn": "Hindi mo puwedeng i-redeem ang sarili mong code.",
+  "referralErrAlready": "Nakapag-redeem ka na ng code ng kaibigan.",
+  "referralShareText": "Sinusuri ko ang mga stock gamit ang WhatStock: kuhanan ng larawan ang isang stock at ipapaliwanag ito ng AI. Gamit ang code ko na {code}, makakakuha ka ng {count, plural, =1{1 dagdag na pagsusuri} other{{count} dagdag na pagsusuri}}.",
+  "referralCopied": "Nakopya ang code"
 }

@@ -1440,4 +1440,68 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Xiinxala AI · gorsa invastimantii miti';
+
+  @override
+  String get referralTitle => 'Hiriyoota affeeri';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'xiinxala dabalataa $count',
+      one: 'xiinxala dabalataa 1',
+    );
+    return 'Koodii kee qoodi. Hiriyaan kee battalumatti $_temp0 argata, atis xiinxala isaa jalqabaa booda kanuma argatta.';
+  }
+
+  @override
+  String get referralYourCode => 'Koodii kee';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Kan affeeraman: $invited · Kan badhaafaman: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Koodii hiriyaa irraa qabdaa?';
+
+  @override
+  String get referralRedeem => 'Fayyadami';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Xiinxalli dabalataa $count dabalameera. Baga nagaan dhufte!',
+      one: 'Xiinxalli dabalataa 1 dabalameera. Baga nagaan dhufte!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Koodiin kun hin jiru. Mirkaneessiitii irra deebi\'ii yaali.';
+
+  @override
+  String get referralErrOwn => 'Koodii mataa keetii fayyadamuu hin dandeessu.';
+
+  @override
+  String get referralErrAlready =>
+      'Koodii hiriyaa tokkoo duraan fayyadamteetta.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'xiinxala dabalataa $count',
+      one: 'xiinxala dabalataa 1',
+    );
+    return 'Ani WhatStock\'n aksiyoonota nan xiinxala: suuraa aksiyoonaa kaasi, AI\'n siif ibsa. Koodii koo $code tiin $_temp0 argatta.';
+  }
+
+  @override
+  String get referralCopied => 'Koodiin garagalfameera';
 }

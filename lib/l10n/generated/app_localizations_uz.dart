@@ -1438,4 +1438,68 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI tahlili · investitsiya maslahati emas';
+
+  @override
+  String get referralTitle => 'Doʻstlarni taklif qilish';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta qoʻshimcha tahlil',
+      one: '1 ta qoʻshimcha tahlil',
+    );
+    return 'Kodingizni ulashing. Doʻstingiz darhol $_temp0 oladi, siz esa uning birinchi tahlilidan keyin xuddi shuncha olasiz.';
+  }
+
+  @override
+  String get referralYourCode => 'Sizning kodingiz';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Taklif qilinganlar: $invited · Mukofotlanganlar: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Doʻstingizdan kod bormi?';
+
+  @override
+  String get referralRedeem => 'Faollashtirish';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta qoʻshimcha tahlil qoʻshildi. Xush kelibsiz!',
+      one: '1 ta qoʻshimcha tahlil qoʻshildi. Xush kelibsiz!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Bunday kod mavjud emas. Tekshirib, qaytadan urinib koʻring.';
+
+  @override
+  String get referralErrOwn => 'Oʻz kodingizni faollashtira olmaysiz.';
+
+  @override
+  String get referralErrAlready =>
+      'Siz allaqachon doʻstingiz kodini faollashtirgansiz.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta qoʻshimcha tahlil',
+      one: '1 ta qoʻshimcha tahlil',
+    );
+    return 'Men aksiyalarni WhatStock bilan tahlil qilaman: aksiyani suratga oling, AI uni tushuntirib beradi. Mening $code kodim bilan $_temp0 olasiz.';
+  }
+
+  @override
+  String get referralCopied => 'Kod nusxalandi';
 }

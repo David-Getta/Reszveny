@@ -1445,4 +1445,67 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Tlhahlobo ya AI · hase keletso ya ho tsetela';
+
+  @override
+  String get referralTitle => 'Mema metswalle';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditlhahlobo tse eketsehileng tse $count',
+      one: 'tlhahlobo e le nngwe e eketsehileng',
+    );
+    return 'Arolelana khoutu ya hao. Motswalle wa hao o fumana $_temp0 hang-hang, mme le wena o fumana tse tshwanang kamora tlhahlobo ya hae ya pele.';
+  }
+
+  @override
+  String get referralYourCode => 'Khoutu ya hao';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Ba memilweng: $invited · Meputso: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Na o na le khoutu ya motswalle?';
+
+  @override
+  String get referralRedeem => 'Sebedisa';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ho eketsitswe ditlhahlobo tse $count. Rea o amohela!',
+      one: 'Ho eketsitswe tlhahlobo e le nngwe. Rea o amohela!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Khoutu ena ha e yo. E hlahlobe mme o leke hape.';
+
+  @override
+  String get referralErrOwn => 'O ke ke wa sebedisa khoutu ya hao.';
+
+  @override
+  String get referralErrAlready => 'O se o sebedisitse khoutu ya motswalle.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditlhahlobo tse eketsehileng tse $count',
+      one: 'tlhahlobo e le nngwe e eketsehileng',
+    );
+    return 'Ke hlahloba diabo ka WhatStock: nka foto ya kabo mme AI e a e hlalosa. Ka khoutu ya ka $code o fumana $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Khoutu e kopilwe';
 }

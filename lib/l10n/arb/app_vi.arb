@@ -396,5 +396,17 @@
   "shareAsImage": "Chia sẻ dưới dạng ảnh",
   "shareAsText": "Chia sẻ dưới dạng văn bản",
   "shareCardFooter": "Tạo bằng WhatStock",
-  "shareCardDisclaimer": "Phân tích AI · không phải lời khuyên đầu tư"
+  "shareCardDisclaimer": "Phân tích AI · không phải lời khuyên đầu tư",
+  "referralTitle": "Mời bạn bè",
+  "referralBody": "Chia sẻ mã của bạn. Bạn bè của bạn nhận ngay {count, plural, =1{1 lượt phân tích bổ sung} other{{count} lượt phân tích bổ sung}}, và bạn cũng nhận được số lượt tương tự sau lần phân tích đầu tiên của họ.",
+  "referralYourCode": "Mã của bạn",
+  "referralStats": "Đã mời: {invited} · Đã thưởng: {rewarded}",
+  "referralHaveCode": "Bạn có mã từ bạn bè?",
+  "referralRedeem": "Đổi mã",
+  "referralRedeemed": "{count, plural, =1{Đã thêm 1 lượt phân tích bổ sung. Chào mừng bạn!} other{Đã thêm {count} lượt phân tích bổ sung. Chào mừng bạn!}}",
+  "referralErrUnknown": "Mã này không tồn tại. Hãy kiểm tra và thử lại.",
+  "referralErrOwn": "Bạn không thể đổi mã của chính mình.",
+  "referralErrAlready": "Bạn đã đổi mã của một người bạn rồi.",
+  "referralShareText": "Mình phân tích cổ phiếu bằng WhatStock: chụp ảnh một cổ phiếu và AI sẽ giải thích. Dùng mã {code} của mình, bạn nhận được {count, plural, =1{1 lượt phân tích bổ sung} other{{count} lượt phân tích bổ sung}}.",
+  "referralCopied": "Đã sao chép mã"
 }

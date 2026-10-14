@@ -396,5 +396,17 @@
   "shareAsImage": "د انځور په توګه شریک کړئ",
   "shareAsText": "د متن په توګه شریک کړئ",
   "shareCardFooter": "د WhatStock په مرسته جوړ شوی",
-  "shareCardDisclaimer": "AI تحلیل · د پانګونې مشوره نه ده"
+  "shareCardDisclaimer": "AI تحلیل · د پانګونې مشوره نه ده",
+  "referralTitle": "ملګري راوبلئ",
+  "referralBody": "خپل کوډ شریک کړئ. ستاسو ملګری سمدستي {count, plural, =1{1 اضافي تحلیل} other{{count} اضافي تحلیلونه}} ترلاسه کوي، او تاسو هم د هغه له لومړي تحلیل وروسته همدومره ترلاسه کوئ.",
+  "referralYourCode": "ستاسو کوډ",
+  "referralStats": "رابلل شوي: {invited} · انعام اخیستي: {rewarded}",
+  "referralHaveCode": "د ملګري کوډ لرئ؟",
+  "referralRedeem": "وکاروئ",
+  "referralRedeemed": "{count, plural, =1{1 اضافي تحلیل اضافه شو. ښه راغلاست!} other{{count} اضافي تحلیلونه اضافه شول. ښه راغلاست!}}",
+  "referralErrUnknown": "دا کوډ نشته. وې ګورئ او بیا هڅه وکړئ.",
+  "referralErrOwn": "تاسو خپل کوډ نشئ کارولی.",
+  "referralErrAlready": "تاسو مخکې د یوه ملګري کوډ کارولی دی.",
+  "referralShareText": "زه د WhatStock په مرسته ونډې تحلیلوم: د یوې ونډې انځور واخلئ او AI یې تشریح کوي. زما د کوډ {code} سره تاسو {count, plural, =1{1 اضافي تحلیل} other{{count} اضافي تحلیلونه}} ترلاسه کوئ.",
+  "referralCopied": "کوډ کاپي شو"
 }

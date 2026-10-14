@@ -396,5 +396,17 @@
   "shareAsImage": "Pín gẹ́gẹ́ bí àwòrán",
   "shareAsText": "Pín gẹ́gẹ́ bí ọ̀rọ̀",
   "shareCardFooter": "A ṣe é pẹ̀lú WhatStock",
-  "shareCardDisclaimer": "Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò"
+  "shareCardDisclaimer": "Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò",
+  "referralTitle": "Pe àwọn ọ̀rẹ́",
+  "referralBody": "Pín kóòdù rẹ. Ọ̀rẹ́ rẹ yóò gba {count, plural, =1{ìtúpalẹ̀ àfikún 1} other{ìtúpalẹ̀ àfikún {count}}} lẹ́sẹ̀kẹsẹ̀, ìwọ náà yóò sì gba iye kan náà lẹ́yìn ìtúpalẹ̀ àkọ́kọ́ rẹ̀.",
+  "referralYourCode": "Kóòdù rẹ",
+  "referralStats": "Àwọn tí o pè: {invited} · Ẹ̀bùn: {rewarded}",
+  "referralHaveCode": "Ṣé o ní kóòdù láti ọ̀dọ̀ ọ̀rẹ́ kan?",
+  "referralRedeem": "Lò ó",
+  "referralRedeemed": "{count, plural, =1{A ti fi ìtúpalẹ̀ àfikún 1 kún un. Ẹ káàbọ̀!} other{A ti fi ìtúpalẹ̀ àfikún {count} kún un. Ẹ káàbọ̀!}}",
+  "referralErrUnknown": "Kóòdù yìí kò sí. Ṣàyẹ̀wò rẹ̀ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.",
+  "referralErrOwn": "O kò lè lo kóòdù tìrẹ.",
+  "referralErrAlready": "O ti lo kóòdù ọ̀rẹ́ kan tẹ́lẹ̀.",
+  "referralShareText": "Mo ń ṣe ìtúpalẹ̀ ìpín pẹ̀lú WhatStock: ya fọ́tò ìpín kan, AI yóò sì ṣàlàyé rẹ̀. Pẹ̀lú kóòdù mi {code} ìwọ yóò gba {count, plural, =1{ìtúpalẹ̀ àfikún 1} other{ìtúpalẹ̀ àfikún {count}}}.",
+  "referralCopied": "A ti da kóòdù kọ"
 }

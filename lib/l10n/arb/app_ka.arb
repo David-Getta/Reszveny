@@ -396,5 +396,17 @@
   "shareAsImage": "სურათად გაზიარება",
   "shareAsText": "ტექსტად გაზიარება",
   "shareCardFooter": "შექმნილია WhatStock-ით",
-  "shareCardDisclaimer": "AI ანალიზი · არ არის საინვესტიციო რჩევა"
+  "shareCardDisclaimer": "AI ანალიზი · არ არის საინვესტიციო რჩევა",
+  "referralTitle": "მოიწვიეთ მეგობრები",
+  "referralBody": "გააზიარეთ თქვენი კოდი. თქვენი მეგობარი მაშინვე მიიღებს {count, plural, =1{1 დამატებით ანალიზს} other{{count} დამატებით ანალიზს}}, თქვენ კი იმავე რაოდენობას — მისი პირველი ანალიზის შემდეგ.",
+  "referralYourCode": "თქვენი კოდი",
+  "referralStats": "მოწვეული: {invited} · დაჯილდოებული: {rewarded}",
+  "referralHaveCode": "გაქვთ მეგობრის კოდი?",
+  "referralRedeem": "გააქტიურება",
+  "referralRedeemed": "{count, plural, =1{დაემატა 1 დამატებითი ანალიზი. მოგესალმებით!} other{დაემატა {count} დამატებითი ანალიზი. მოგესალმებით!}}",
+  "referralErrUnknown": "ასეთი კოდი არ არსებობს. შეამოწმეთ და სცადეთ ხელახლა.",
+  "referralErrOwn": "საკუთარი კოდის გააქტიურება შეუძლებელია.",
+  "referralErrAlready": "თქვენ უკვე გამოიყენეთ მეგობრის კოდი.",
+  "referralShareText": "აქციებს WhatStock-ით ვაანალიზებ: გადაუღებ აქციას ფოტოს და AI აგიხსნის. ჩემი კოდით {code} მიიღებ {count, plural, =1{1 დამატებით ანალიზს} other{{count} დამატებით ანალიზს}}.",
+  "referralCopied": "კოდი დაკოპირდა"
 }

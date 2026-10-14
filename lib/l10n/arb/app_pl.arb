@@ -396,5 +396,17 @@
   "shareAsImage": "Udostępnij jako obraz",
   "shareAsText": "Udostępnij jako tekst",
   "shareCardFooter": "Utworzono w WhatStock",
-  "shareCardDisclaimer": "Analiza AI · nie stanowi porady inwestycyjnej"
+  "shareCardDisclaimer": "Analiza AI · nie stanowi porady inwestycyjnej",
+  "referralTitle": "Zaproś znajomych",
+  "referralBody": "Udostępnij swój kod. Znajomy od razu dostaje {count, plural, one{{count} dodatkową analizę} few{{count} dodatkowe analizy} many{{count} dodatkowych analiz} other{{count} dodatkowej analizy}}, a ty dostajesz tyle samo po pierwszej analizie znajomego.",
+  "referralYourCode": "Twój kod",
+  "referralStats": "Zaproszeni: {invited} · Nagrodzeni: {rewarded}",
+  "referralHaveCode": "Masz kod od znajomego?",
+  "referralRedeem": "Wykorzystaj",
+  "referralRedeemed": "{count, plural, one{Dodano {count} dodatkową analizę. Witamy!} few{Dodano {count} dodatkowe analizy. Witamy!} many{Dodano {count} dodatkowych analiz. Witamy!} other{Dodano {count} dodatkowej analizy. Witamy!}}",
+  "referralErrUnknown": "Taki kod nie istnieje. Sprawdź go i spróbuj ponownie.",
+  "referralErrOwn": "Nie możesz wykorzystać własnego kodu.",
+  "referralErrAlready": "Na tym koncie wykorzystano już kod od znajomego.",
+  "referralShareText": "Analizuję akcje w WhatStock: zrób zdjęcie akcji, a AI ją objaśni. Z moim kodem {code} dostaniesz {count, plural, one{{count} dodatkową analizę} few{{count} dodatkowe analizy} many{{count} dodatkowych analiz} other{{count} dodatkowej analizy}}.",
+  "referralCopied": "Skopiowano kod"
 }

@@ -1478,4 +1478,74 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'AI analýza · nie je investičné odporúčanie';
+
+  @override
+  String get referralTitle => 'Pozvi priateľov';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz navyše',
+      many: '$count analýzy navyše',
+      few: '$count analýzy navyše',
+      one: '1 analýzu navyše',
+    );
+    return 'Zdieľaj svoj kód. Priateľ hneď dostane $_temp0 a ty to isté po prvej analýze priateľa.';
+  }
+
+  @override
+  String get referralYourCode => 'Tvoj kód';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Pozvaní: $invited · Odmenení: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Máš kód od priateľa?';
+
+  @override
+  String get referralRedeem => 'Uplatniť';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridaných $count analýz navyše. Vitaj!',
+      many: 'Pridané $count analýzy navyše. Vitaj!',
+      few: 'Pridané $count analýzy navyše. Vitaj!',
+      one: 'Pridaná 1 analýza navyše. Vitaj!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Tento kód neexistuje. Skontroluj ho a skús to znova.';
+
+  @override
+  String get referralErrOwn => 'Nemôžeš uplatniť vlastný kód.';
+
+  @override
+  String get referralErrAlready =>
+      'Na tomto účte už bol uplatnený kód od priateľa.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz navyše',
+      many: '$count analýzy navyše',
+      few: '$count analýzy navyše',
+      one: '1 analýzu navyše',
+    );
+    return 'Analyzujem akcie vo WhatStock: odfoť akciu a AI ti ju vysvetlí. S mojím kódom $code dostaneš $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kód skopírovaný';
 }

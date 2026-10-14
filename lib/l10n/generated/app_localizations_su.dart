@@ -1438,4 +1438,66 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'Analisis AI · lain naséhat investasi';
+
+  @override
+  String get referralTitle => 'Ondang babaturan';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan',
+      one: '1 analisis tambahan',
+    );
+    return 'Bagikeun kode anjeun. Babaturan anjeun langsung meunang $_temp0, sarta anjeun meunang nu sarua sanggeus analisis kahijina.';
+  }
+
+  @override
+  String get referralYourCode => 'Kode anjeun';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Diondang: $invited · Diganjar: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Boga kode ti babaturan?';
+
+  @override
+  String get referralRedeem => 'Tukeurkeun';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan ditambahkeun. Wilujeng sumping!',
+      one: '1 analisis tambahan ditambahkeun. Wilujeng sumping!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown => 'Kode ieu teu aya. Pariksa tur coba deui.';
+
+  @override
+  String get referralErrOwn => 'Anjeun teu bisa nukeurkeun kode sorangan.';
+
+  @override
+  String get referralErrAlready => 'Anjeun geus nukeurkeun kode ti babaturan.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan',
+      one: '1 analisis tambahan',
+    );
+    return 'Kuring nganalisis saham ku WhatStock: poto sahamna, AI ngajelaskeunana. Ku kode kuring $code anjeun meunang $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kode disalin';
 }

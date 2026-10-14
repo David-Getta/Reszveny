@@ -396,5 +396,17 @@
   "shareAsImage": "Kyɛ sɛ mfonini",
   "shareAsText": "Kyɛ sɛ nkyerɛwee",
   "shareCardFooter": "Wɔde WhatStock na ɛyɛe",
-  "shareCardDisclaimer": "AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu"
+  "shareCardDisclaimer": "AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu",
+  "referralTitle": "Frɛ wo nnamfonom",
+  "referralBody": "Kyɛ wo code no. Wo damfo bɛnya {count, plural, =1{nhwehwɛmu 1 a ɛka ho} other{nhwehwɛmu {count} a ɛka ho}} ntɛm ara, na wo nso wobɛnya saa ara wɔ ne nhwehwɛmu a edi kan no akyi.",
+  "referralYourCode": "Wo code",
+  "referralStats": "Wofrɛɛ: {invited} · Akatua: {rewarded}",
+  "referralHaveCode": "Wowɔ code bi a efi wo damfo hɔ?",
+  "referralRedeem": "Fa di dwuma",
+  "referralRedeemed": "{count, plural, =1{Wɔde nhwehwɛmu 1 a ɛka ho aka ho. Akwaaba!} other{Wɔde nhwehwɛmu {count} a ɛka ho aka ho. Akwaaba!}}",
+  "referralErrUnknown": "Code yi nni hɔ. Hwɛ mu yie na sɔ hwɛ bio.",
+  "referralErrOwn": "Wuntumi mfa wo ankasa wo code nni dwuma.",
+  "referralErrAlready": "Wode wo damfo bi code adi dwuma dedaw.",
+  "referralShareText": "Mede WhatStock hwehwɛ kyɛfa mu: twa kyɛfa bi mfonini na AI no bɛkyerɛkyerɛ mu. Wode me code {code} bɛnya {count, plural, =1{nhwehwɛmu 1 a ɛka ho} other{nhwehwɛmu {count} a ɛka ho}}.",
+  "referralCopied": "Wɔakɔpi code no"
 }

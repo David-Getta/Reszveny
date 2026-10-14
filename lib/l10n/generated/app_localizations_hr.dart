@@ -1468,4 +1468,70 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI analiza · nije investicijski savjet';
+
+  @override
+  String get referralTitle => 'Pozovite prijatelje';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatnih analiza',
+      few: '$count dodatne analize',
+      one: '$count dodatnu analizu',
+    );
+    return 'Podijelite svoj kôd. Vaš prijatelj odmah dobiva $_temp0, a vi isto toliko nakon njegove prve analize.';
+  }
+
+  @override
+  String get referralYourCode => 'Vaš kôd';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Pozvano: $invited · Nagrađeno: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Imate kôd od prijatelja?';
+
+  @override
+  String get referralRedeem => 'Iskoristi';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano je $count dodatnih analiza. Dobro došli!',
+      few: 'Dodane su $count dodatne analize. Dobro došli!',
+      one: 'Dodana je $count dodatna analiza. Dobro došli!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Ovaj kôd ne postoji. Provjerite ga i pokušajte ponovno.';
+
+  @override
+  String get referralErrOwn => 'Ne možete iskoristiti vlastiti kôd.';
+
+  @override
+  String get referralErrAlready => 'Već ste iskoristili kôd prijatelja.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodatnih analiza',
+      few: '$count dodatne analize',
+      one: '$count dodatnu analizu',
+    );
+    return 'Dionice analiziram uz WhatStock: fotografiraš dionicu i AI ti je objasni. S mojim kodom $code dobivaš $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kôd je kopiran';
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "مشاركة كصورة",
   "shareAsText": "مشاركة كنص",
   "shareCardFooter": "صُنع باستخدام WhatStock",
-  "shareCardDisclaimer": "تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية"
+  "shareCardDisclaimer": "تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية",
+  "referralTitle": "ادعُ أصدقاءك",
+  "referralBody": "شارك رمزك. يحصل صديقك فوراً على {count, plural, =1{تحليل إضافي واحد} =2{تحليلين إضافيين} few{{count} تحليلات إضافية} many{{count} تحليلاً إضافياً} other{{count} تحليل إضافي}}، وتحصل أنت على المثل بعد أول تحليل له.",
+  "referralYourCode": "رمزك",
+  "referralStats": "المدعوون: {invited} · المكافآت: {rewarded}",
+  "referralHaveCode": "لديك رمز من صديق؟",
+  "referralRedeem": "تفعيل",
+  "referralRedeemed": "{count, plural, =1{تمت إضافة تحليل إضافي واحد. أهلاً بك!} =2{تمت إضافة تحليلين إضافيين. أهلاً بك!} few{تمت إضافة {count} تحليلات إضافية. أهلاً بك!} many{تمت إضافة {count} تحليلاً إضافياً. أهلاً بك!} other{تمت إضافة {count} تحليل إضافي. أهلاً بك!}}",
+  "referralErrUnknown": "هذا الرمز غير موجود. تحقق منه وحاول مرة أخرى.",
+  "referralErrOwn": "لا يمكنك تفعيل رمزك الخاص.",
+  "referralErrAlready": "لقد فعّلت رمز صديق من قبل.",
+  "referralShareText": "أحلّل الأسهم باستخدام WhatStock: صوّر سهماً ويشرحه لك الذكاء الاصطناعي. باستخدام رمزي {code} تحصل على {count, plural, =1{تحليل إضافي واحد} =2{تحليلين إضافيين} few{{count} تحليلات إضافية} many{{count} تحليلاً إضافياً} other{{count} تحليل إضافي}}.",
+  "referralCopied": "تم نسخ الرمز"
 }

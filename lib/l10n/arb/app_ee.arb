@@ -396,5 +396,17 @@
   "shareAsImage": "Ma abe nɔnɔmetata",
   "shareAsText": "Ma abe nuŋɔŋlɔ",
   "shareCardFooter": "Wotsɔ WhatStock wɔe",
-  "shareCardDisclaimer": "AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o"
+  "shareCardDisclaimer": "AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o",
+  "referralTitle": "Kpe xɔ̃wòwo",
+  "referralBody": "Ma wò code. Wò xɔ̃ axɔ {count, plural, =1{numekuku 1 bubu} other{numekuku {count} bubuwo}} enumake, eye wò hã àxɔ nenema ke le eƒe numekuku gbãtɔ megbe.",
+  "referralYourCode": "Wò code",
+  "referralStats": "Amesiwo nèkpe: {invited} · Fetu: {rewarded}",
+  "referralHaveCode": "Code aɖe le asiwò tso xɔ̃wò gbɔ?",
+  "referralRedeem": "Zãe",
+  "referralRedeemed": "{count, plural, =1{Wotsɔ numekuku 1 bubu kpe ɖe eŋu. Woezɔ!} other{Wotsɔ numekuku {count} bubuwo kpe ɖe eŋu. Woezɔ!}}",
+  "referralErrUnknown": "Code sia meli o. Kpɔe eye nàgate kpɔ.",
+  "referralErrOwn": "Màte ŋu azã wò ŋutɔ wò code o.",
+  "referralErrAlready": "Èzã xɔ̃wò aɖe ƒe code xoxo.",
+  "referralShareText": "Mezãa WhatStock tsɔ wɔa numekuku le akpawo ŋu: ɖe akpa aɖe ƒe foto eye AI aɖe eme. Ne èzã nye code {code} la, àxɔ {count, plural, =1{numekuku 1 bubu} other{numekuku {count} bubuwo}}.",
+  "referralCopied": "Wokɔpi code la"
 }

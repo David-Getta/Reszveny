@@ -1443,4 +1443,67 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Kusanthula kwa AI · si malangizo okhudza kuyika ndalama';
+
+  @override
+  String get referralTitle => 'Itanani anzanu';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kusanthula kowonjezera $count',
+      one: 'kusanthula kowonjezera 1',
+    );
+    return 'Gawani khodi yanu. Mnzanu amalandira $_temp0 nthawi yomweyo, ndipo inunso mumalandira chimodzimodzi akamaliza kusanthula kwake koyamba.';
+  }
+
+  @override
+  String get referralYourCode => 'Khodi yanu';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Oitanidwa: $invited · Olandira mphotho: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Muli ndi khodi yochokera kwa mnzanu?';
+
+  @override
+  String get referralRedeem => 'Gwiritsani ntchito';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusanthula kowonjezera $count kwawonjezedwa. Takulandirani!',
+      one: 'Kusanthula kowonjezera 1 kwawonjezedwa. Takulandirani!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Khodi iyi kulibe. Yang\'anani ndipo yesaninso.';
+
+  @override
+  String get referralErrOwn => 'Simungagwiritse ntchito khodi yanu.';
+
+  @override
+  String get referralErrAlready => 'Munagwiritsa kale ntchito khodi ya mnzanu.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kusanthula kowonjezera $count',
+      one: 'kusanthula kowonjezera 1',
+    );
+    return 'Ndimasanthula masheya ndi WhatStock: jambulani sheya ndipo AI imafotokoza. Ndi khodi yanga $code mumalandira $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Khodi yakopedwa';
 }

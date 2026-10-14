@@ -1475,4 +1475,73 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI analýza · není investiční doporučení';
+
+  @override
+  String get referralTitle => 'Pozvěte přátele';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz navíc',
+      many: '$count analýzy navíc',
+      few: '$count analýzy navíc',
+      one: '1 analýzu navíc',
+    );
+    return 'Sdílejte svůj kód. Váš přítel hned získá $_temp0 a vy totéž po jeho první analýze.';
+  }
+
+  @override
+  String get referralYourCode => 'Váš kód';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Pozváno: $invited · Odměněno: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Máte kód od přítele?';
+
+  @override
+  String get referralRedeem => 'Uplatnit';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přidáno $count analýz navíc. Vítejte!',
+      many: 'Přidáno $count analýzy navíc. Vítejte!',
+      few: 'Přidány $count analýzy navíc. Vítejte!',
+      one: 'Přidána 1 analýza navíc. Vítejte!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Tento kód neexistuje. Zkontrolujte ho a zkuste to znovu.';
+
+  @override
+  String get referralErrOwn => 'Vlastní kód nemůžete uplatnit.';
+
+  @override
+  String get referralErrAlready => 'Kód od přítele jste už uplatnili.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analýz navíc',
+      many: '$count analýzy navíc',
+      few: '$count analýzy navíc',
+      one: '1 analýzu navíc',
+    );
+    return 'Analyzuji akcie s WhatStock: vyfoťte akcii a AI vám ji vysvětlí. S mým kódem $code získáte $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Kód zkopírován';
 }

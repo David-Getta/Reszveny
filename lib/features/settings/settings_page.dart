@@ -12,6 +12,7 @@ import '../analysis/analysis_options.dart';
 import '../billing/plan.dart';
 import '../fx/fx_service.dart';
 import '../updates/update_service.dart';
+import '../account/referral_card.dart';
 import '../account/sign_in_sheet.dart';
 import '../billing/paywall_page.dart';
 import '../billing/trial_upsell.dart';
@@ -149,6 +150,11 @@ class SettingsPage extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+                // Ajánlói program: csak szerverrel (a kódot és a jutalmat a szerver kezeli).
+                if ((services.backend, services.account) case (final backend?, final account?)) ...[
+                  sectionTitle(l10n.referralTitle),
+                  ReferralCard(backend: backend, account: account),
                 ],
                 sectionTitle(l10n.subscription),
                 Card(

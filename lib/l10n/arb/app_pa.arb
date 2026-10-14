@@ -396,5 +396,17 @@
   "shareAsImage": "ਤਸਵੀਰ ਵਜੋਂ ਸਾਂਝਾ ਕਰੋ",
   "shareAsText": "ਟੈਕਸਟ ਵਜੋਂ ਸਾਂਝਾ ਕਰੋ",
   "shareCardFooter": "WhatStock ਨਾਲ ਬਣਾਇਆ ਗਿਆ",
-  "shareCardDisclaimer": "AI ਵਿਸ਼ਲੇਸ਼ਣ · ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ"
+  "shareCardDisclaimer": "AI ਵਿਸ਼ਲੇਸ਼ਣ · ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ",
+  "referralTitle": "ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+  "referralBody": "ਆਪਣਾ ਕੋਡ ਸਾਂਝਾ ਕਰੋ। ਤੁਹਾਡੇ ਦੋਸਤ ਨੂੰ ਤੁਰੰਤ {count, plural, =1{1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ} other{{count} ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ}}, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਹਿਲੇ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਵੀ ਇੰਨਾ ਹੀ ਮਿਲੇਗਾ।",
+  "referralYourCode": "ਤੁਹਾਡਾ ਕੋਡ",
+  "referralStats": "ਸੱਦੇ ਗਏ: {invited} · ਇਨਾਮ ਮਿਲਿਆ: {rewarded}",
+  "referralHaveCode": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਹੈ?",
+  "referralRedeem": "ਰਿਡੀਮ ਕਰੋ",
+  "referralRedeemed": "{count, plural, =1{1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜਿਆ ਗਿਆ। ਜੀ ਆਇਆਂ ਨੂੰ!} other{{count} ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜੇ ਗਏ। ਜੀ ਆਇਆਂ ਨੂੰ!}}",
+  "referralErrUnknown": "ਇਹ ਕੋਡ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "referralErrOwn": "ਤੁਸੀਂ ਆਪਣਾ ਕੋਡ ਰਿਡੀਮ ਨਹੀਂ ਕਰ ਸਕਦੇ।",
+  "referralErrAlready": "ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਰਿਡੀਮ ਕਰ ਚੁੱਕੇ ਹੋ।",
+  "referralShareText": "WhatStock ਮੇਰੇ ਲਈ ਸ਼ੇਅਰਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦਾ ਹੈ: ਸ਼ੇਅਰ ਦੀ ਫੋਟੋ ਖਿੱਚੋ ਅਤੇ AI ਉਸਨੂੰ ਸਮਝਾਉਂਦੀ ਹੈ। ਮੇਰੇ ਕੋਡ {code} ਨਾਲ ਤੁਹਾਨੂੰ {count, plural, =1{1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ} other{{count} ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ}}।",
+  "referralCopied": "ਕੋਡ ਕਾਪੀ ਹੋ ਗਿਆ"
 }

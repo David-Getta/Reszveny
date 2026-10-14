@@ -396,5 +396,17 @@
   "shareAsImage": "Surat hökmünde paýlaş",
   "shareAsText": "Tekst hökmünde paýlaş",
   "shareCardFooter": "WhatStock bilen döredildi",
-  "shareCardDisclaimer": "AI seljermesi · maýa goýum maslahaty däl"
+  "shareCardDisclaimer": "AI seljermesi · maýa goýum maslahaty däl",
+  "referralTitle": "Dostlaryňy çagyr",
+  "referralBody": "Koduňy paýlaş. Dostuň derrew {count, plural, =1{1 goşmaça seljerme} other{{count} goşmaça seljerme}} alýar, sen bolsa onuň ilkinji seljermesinden soň şonça alýarsyň.",
+  "referralYourCode": "Seniň koduň",
+  "referralStats": "Çagyrylanlar: {invited} · Sylaglananlar: {rewarded}",
+  "referralHaveCode": "Dostuňdan koduň barmy?",
+  "referralRedeem": "Ulan",
+  "referralRedeemed": "{count, plural, =1{1 goşmaça seljerme goşuldy. Hoş geldiň!} other{{count} goşmaça seljerme goşuldy. Hoş geldiň!}}",
+  "referralErrUnknown": "Beýle kod ýok. Barla we täzeden synanyş.",
+  "referralErrOwn": "Öz koduňy ulanyp bilmeýärsiň.",
+  "referralErrAlready": "Sen eýýäm dostuňyň koduny ulandyň.",
+  "referralShareText": "Men WhatStock bilen paýnamalary seljerýärin: paýnamanyň suratyny al, AI ony düşündirer. Meniň {code} kodum bilen {count, plural, =1{1 goşmaça seljerme} other{{count} goşmaça seljerme}} alarsyň.",
+  "referralCopied": "Kod göçürildi"
 }

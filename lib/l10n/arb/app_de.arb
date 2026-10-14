@@ -396,5 +396,17 @@
   "shareAsImage": "Als Bild teilen",
   "shareAsText": "Als Text teilen",
   "shareCardFooter": "Erstellt mit WhatStock",
-  "shareCardDisclaimer": "KI-Analyse · keine Anlageberatung"
+  "shareCardDisclaimer": "KI-Analyse · keine Anlageberatung",
+  "referralTitle": "Freunde einladen",
+  "referralBody": "Teile deinen Code. Deine Freunde erhalten sofort {count, plural, =1{1 zusätzliche Analyse} other{{count} zusätzliche Analysen}}, und du bekommst dasselbe nach ihrer ersten Analyse.",
+  "referralYourCode": "Dein Code",
+  "referralStats": "Eingeladen: {invited} · Belohnt: {rewarded}",
+  "referralHaveCode": "Hast du einen Code von Freunden?",
+  "referralRedeem": "Einlösen",
+  "referralRedeemed": "{count, plural, =1{1 zusätzliche Analyse hinzugefügt. Willkommen!} other{{count} zusätzliche Analysen hinzugefügt. Willkommen!}}",
+  "referralErrUnknown": "Diesen Code gibt es nicht. Prüfe ihn und versuche es erneut.",
+  "referralErrOwn": "Du kannst deinen eigenen Code nicht einlösen.",
+  "referralErrAlready": "Du hast bereits einen Code von Freunden eingelöst.",
+  "referralShareText": "Ich analysiere Aktien mit WhatStock: Fotografiere eine Aktie, und die KI erklärt sie dir. Mit meinem Code {code} bekommst du {count, plural, =1{1 zusätzliche Analyse} other{{count} zusätzliche Analysen}}.",
+  "referralCopied": "Code kopiert"
 }

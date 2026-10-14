@@ -396,5 +396,17 @@
   "shareAsImage": "שיתוף כתמונה",
   "shareAsText": "שיתוף כטקסט",
   "shareCardFooter": "נוצר באמצעות WhatStock",
-  "shareCardDisclaimer": "ניתוח AI · אינו ייעוץ השקעות"
+  "shareCardDisclaimer": "ניתוח AI · אינו ייעוץ השקעות",
+  "referralTitle": "הזמנת חברים",
+  "referralBody": "שתפו את הקוד שלכם. מי שתזמינו יקבל מיד {count, plural, =1{ניתוח נוסף אחד} other{{count} ניתוחים נוספים}}, ואתם תקבלו אותו הדבר אחרי הניתוח הראשון שלו.",
+  "referralYourCode": "הקוד שלכם",
+  "referralStats": "הוזמנו: {invited} · תוגמלו: {rewarded}",
+  "referralHaveCode": "קיבלתם קוד מחבר?",
+  "referralRedeem": "מימוש",
+  "referralRedeemed": "{count, plural, =1{קיבלתם ניתוח נוסף אחד. ברוכים הבאים!} other{קיבלתם {count} ניתוחים נוספים. ברוכים הבאים!}}",
+  "referralErrUnknown": "הקוד הזה לא קיים. בדקו אותו ונסו שוב.",
+  "referralErrOwn": "אי אפשר לממש את הקוד האישי שלכם.",
+  "referralErrAlready": "כבר מימשתם קוד של חבר.",
+  "referralShareText": "אני עושה ניתוח מניות עם WhatStock: מצלמים מניה וה-AI מסביר אותה. עם הקוד שלי {code} תקבלו {count, plural, =1{ניתוח נוסף אחד} other{{count} ניתוחים נוספים}}.",
+  "referralCopied": "הקוד הועתק"
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "اشتراک‌گذاری به‌صورت تصویر",
   "shareAsText": "اشتراک‌گذاری به‌صورت متن",
   "shareCardFooter": "ساخته‌شده با WhatStock",
-  "shareCardDisclaimer": "تحلیل هوش مصنوعی · توصیه سرمایه‌گذاری نیست"
+  "shareCardDisclaimer": "تحلیل هوش مصنوعی · توصیه سرمایه‌گذاری نیست",
+  "referralTitle": "دعوت از دوستان",
+  "referralBody": "کد خود را به اشتراک بگذارید. دوستتان بلافاصله {count, plural, =1{1 تحلیل اضافی} other{{count} تحلیل اضافی}} دریافت می‌کند و شما هم پس از نخستین تحلیل او همین مقدار را می‌گیرید.",
+  "referralYourCode": "کد شما",
+  "referralStats": "دعوت‌شده: {invited} · پاداش‌گرفته: {rewarded}",
+  "referralHaveCode": "کدی از یک دوست دارید؟",
+  "referralRedeem": "اعمال کد",
+  "referralRedeemed": "{count, plural, =1{1 تحلیل اضافی افزوده شد. خوش آمدید!} other{{count} تحلیل اضافی افزوده شد. خوش آمدید!}}",
+  "referralErrUnknown": "این کد وجود ندارد. آن را بررسی کنید و دوباره تلاش کنید.",
+  "referralErrOwn": "نمی‌توانید کد خودتان را اعمال کنید.",
+  "referralErrAlready": "شما قبلاً کد یک دوست را اعمال کرده‌اید.",
+  "referralShareText": "من با WhatStock سهام را تحلیل می‌کنم: از یک سهم عکس بگیرید تا هوش مصنوعی آن را توضیح دهد. با کد من {code} {count, plural, =1{1 تحلیل اضافی} other{{count} تحلیل اضافی}} دریافت می‌کنید.",
+  "referralCopied": "کد کپی شد"
 }

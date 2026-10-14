@@ -1432,4 +1432,67 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Phân tích AI · không phải lời khuyên đầu tư';
+
+  @override
+  String get referralTitle => 'Mời bạn bè';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lượt phân tích bổ sung',
+      one: '1 lượt phân tích bổ sung',
+    );
+    return 'Chia sẻ mã của bạn. Bạn bè của bạn nhận ngay $_temp0, và bạn cũng nhận được số lượt tương tự sau lần phân tích đầu tiên của họ.';
+  }
+
+  @override
+  String get referralYourCode => 'Mã của bạn';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Đã mời: $invited · Đã thưởng: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'Bạn có mã từ bạn bè?';
+
+  @override
+  String get referralRedeem => 'Đổi mã';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã thêm $count lượt phân tích bổ sung. Chào mừng bạn!',
+      one: 'Đã thêm 1 lượt phân tích bổ sung. Chào mừng bạn!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Mã này không tồn tại. Hãy kiểm tra và thử lại.';
+
+  @override
+  String get referralErrOwn => 'Bạn không thể đổi mã của chính mình.';
+
+  @override
+  String get referralErrAlready => 'Bạn đã đổi mã của một người bạn rồi.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lượt phân tích bổ sung',
+      one: '1 lượt phân tích bổ sung',
+    );
+    return 'Mình phân tích cổ phiếu bằng WhatStock: chụp ảnh một cổ phiếu và AI sẽ giải thích. Dùng mã $code của mình, bạn nhận được $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Đã sao chép mã';
 }

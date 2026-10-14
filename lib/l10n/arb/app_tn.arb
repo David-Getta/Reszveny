@@ -396,5 +396,17 @@
   "shareAsImage": "Abelana jaaka setshwantsho",
   "shareAsText": "Abelana jaaka mokwalo",
   "shareCardFooter": "E dirilwe ka WhatStock",
-  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se kgakololo ya peeletso"
+  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se kgakololo ya peeletso",
+  "referralTitle": "Laletsa ditsala",
+  "referralBody": "Abelana khoutu ya gago. Tsala ya gago o bona {count, plural, =1{tshekatsheko e le nngwe e e oketsegileng} other{ditshekatsheko tse di oketsegileng di le {count}}} ka bonako, mme le wena o bona tse di lekanang morago ga tshekatsheko ya gagwe ya ntlha.",
+  "referralYourCode": "Khoutu ya gago",
+  "referralStats": "Ba ba laleditsweng: {invited} · Dikatso: {rewarded}",
+  "referralHaveCode": "A o na le khoutu ya tsala?",
+  "referralRedeem": "Dirisa",
+  "referralRedeemed": "{count, plural, =1{Go okeditswe tshekatsheko e le nngwe. O amogetswe!} other{Go okeditswe ditshekatsheko di le {count}. O amogetswe!}}",
+  "referralErrUnknown": "Khoutu e ga e yo. E tlhole mme o leke gape.",
+  "referralErrOwn": "Ga o kgone go dirisa khoutu ya gago.",
+  "referralErrAlready": "O setse o dirisitse khoutu ya tsala.",
+  "referralShareText": "Ke sekaseka diabe ka WhatStock: tsaya setshwantsho sa seabe mme AI e a se tlhalosa. Ka khoutu ya me {code} o bona {count, plural, =1{tshekatsheko e le nngwe e e oketsegileng} other{ditshekatsheko tse di oketsegileng di le {count}}}.",
+  "referralCopied": "Khoutu e kopilwe"
 }

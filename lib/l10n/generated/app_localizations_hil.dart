@@ -1446,4 +1446,68 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get shareCardDisclaimer =>
       'Analisis sang AI · indi laygay sa pag-invest';
+
+  @override
+  String get referralTitle => 'Imbitaha ang imo mga abyan';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka dugang nga analisis',
+      one: '1 ka dugang nga analisis',
+    );
+    return 'Ipaambit ang imo code. Ang imo abyan makabaton dayon sang $_temp0, kag ikaw man makabaton sang pareho pagkatapos sang iya una nga analisis.';
+  }
+
+  @override
+  String get referralYourCode => 'Ang imo code';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'Gin-imbitahan: $invited · Ginpremyuhan: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'May code ka gikan sa abyan?';
+
+  @override
+  String get referralRedeem => 'Gamita';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Gindugang ang $count ka dugang nga analisis. Malipayon nga pag-abot!',
+      one: 'Gindugang ang 1 ka dugang nga analisis. Malipayon nga pag-abot!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'Wala sang amo sini nga code. Susiha kag tilawi liwat.';
+
+  @override
+  String get referralErrOwn => 'Indi mo magamit ang imo kaugalingon nga code.';
+
+  @override
+  String get referralErrAlready => 'Nagamit mo na ang code sang imo abyan.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka dugang nga analisis',
+      one: '1 ka dugang nga analisis',
+    );
+    return 'Ginaanalisa ko ang mga stock gamit ang WhatStock: kuhai sang litrato ang stock kag ipaathag ini sang AI. Sa akon code nga $code makabaton ka sang $_temp0.';
+  }
+
+  @override
+  String get referralCopied => 'Nakopya ang code';
 }

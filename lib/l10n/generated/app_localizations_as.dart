@@ -1436,4 +1436,68 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI বিশ্লেষণ · বিনিয়োগৰ পৰামৰ্শ নহয়';
+
+  @override
+  String get referralTitle => 'বন্ধুক আমন্ত্ৰণ জনাওক';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা অতিৰিক্ত বিশ্লেষণ',
+      one: '1টা অতিৰিক্ত বিশ্লেষণ',
+    );
+    return 'আপোনাৰ ক\'ড শ্বেয়াৰ কৰক। আপোনাৰ বন্ধুৱে লগে লগে $_temp0 পাব, আৰু তেওঁৰ প্ৰথম বিশ্লেষণৰ পিছত আপুনিও সমানেই পাব।';
+  }
+
+  @override
+  String get referralYourCode => 'আপোনাৰ ক\'ড';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'আমন্ত্ৰিত: $invited · পুৰস্কৃত: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'বন্ধুৰ পৰা পোৱা ক\'ড আছে নেকি?';
+
+  @override
+  String get referralRedeem => 'ব্যৱহাৰ কৰক';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ\'ল। স্বাগতম!',
+      one: '1টা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ\'ল। স্বাগতম!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'এই ক\'ডটো নাই। পৰীক্ষা কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
+  String get referralErrOwn => 'আপুনি নিজৰ ক\'ড ব্যৱহাৰ কৰিব নোৱাৰে।';
+
+  @override
+  String get referralErrAlready =>
+      'আপুনি ইতিমধ্যে এজন বন্ধুৰ ক\'ড ব্যৱহাৰ কৰিছে।';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা অতিৰিক্ত বিশ্লেষণ',
+      one: '1টা অতিৰিক্ত বিশ্লেষণ',
+    );
+    return 'মই WhatStock-ৰে শ্বেয়াৰ বিশ্লেষণ কৰোঁ: এটা শ্বেয়াৰৰ ফটো তোলক আৰু AI-য়ে বুজাই দিব। মোৰ ক\'ড $code ব্যৱহাৰ কৰি আপুনি $_temp0 পাব।';
+  }
+
+  @override
+  String get referralCopied => 'ক\'ড কপি কৰা হ\'ল';
 }

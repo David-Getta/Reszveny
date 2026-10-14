@@ -396,5 +396,17 @@
   "shareAsImage": "تصوير طور شيئر ڪريو",
   "shareAsText": "متن طور شيئر ڪريو",
   "shareCardFooter": "WhatStock سان ٺهيل",
-  "shareCardDisclaimer": "AI تجزيو · سيڙپڪاري جو مشورو ناهي"
+  "shareCardDisclaimer": "AI تجزيو · سيڙپڪاري جو مشورو ناهي",
+  "referralTitle": "دوستن کي دعوت ڏيو",
+  "referralBody": "پنهنجو ڪوڊ شيئر ڪريو. توهان جي دوست کي فوري طور {count, plural, =1{1 اضافي تجزيو ملندو} other{{count} اضافي تجزيا ملندا}}، ۽ ان جي پهرين تجزيي کان پوءِ توهان کي به ايترو ئي ملندو.",
+  "referralYourCode": "توهان جو ڪوڊ",
+  "referralStats": "دعوت ڏنل: {invited} · انعام مليل: {rewarded}",
+  "referralHaveCode": "ڇا توهان وٽ ڪنهن دوست جو ڪوڊ آهي؟",
+  "referralRedeem": "استعمال ڪريو",
+  "referralRedeemed": "{count, plural, =1{1 اضافي تجزيو شامل ڪيو ويو. ڀلي ڪري آيا!} other{{count} اضافي تجزيا شامل ڪيا ويا. ڀلي ڪري آيا!}}",
+  "referralErrUnknown": "هي ڪوڊ موجود ناهي. جانچي وري ڪوشش ڪريو.",
+  "referralErrOwn": "توهان پنهنجو ڪوڊ استعمال نٿا ڪري سگهو.",
+  "referralErrAlready": "توهان اڳ ۾ ئي ڪنهن دوست جو ڪوڊ استعمال ڪري چڪا آهيو.",
+  "referralShareText": "WhatStock منهنجي لاءِ شيئرن جو تجزيو ڪري ٿو: شيئر جي تصوير ڪڍو ۽ AI ان کي سمجهائي ٿو. منهنجي ڪوڊ {code} سان توهان کي {count, plural, =1{1 اضافي تجزيو ملندو} other{{count} اضافي تجزيا ملندا}}.",
+  "referralCopied": "ڪوڊ ڪاپي ٿي ويو"
 }

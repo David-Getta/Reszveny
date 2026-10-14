@@ -1441,4 +1441,68 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer => 'AI విశ్లేషణ · పెట్టుబడి సలహా కాదు';
+
+  @override
+  String get referralTitle => 'స్నేహితులను ఆహ్వానించండి';
+
+  @override
+  String referralBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అదనపు విశ్లేషణలు',
+      one: '1 అదనపు విశ్లేషణ',
+    );
+    return 'మీ కోడ్‌ను షేర్ చేయండి. మీ స్నేహితులు వెంటనే $_temp0 పొందుతారు, వారి మొదటి విశ్లేషణ తర్వాత మీరూ అంతే పొందుతారు.';
+  }
+
+  @override
+  String get referralYourCode => 'మీ కోడ్';
+
+  @override
+  String referralStats(int invited, int rewarded) {
+    return 'ఆహ్వానించినవారు: $invited · రివార్డ్‌లు: $rewarded';
+  }
+
+  @override
+  String get referralHaveCode => 'స్నేహితుని కోడ్ ఉందా?';
+
+  @override
+  String get referralRedeem => 'రీడీమ్ చేయండి';
+
+  @override
+  String referralRedeemed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అదనపు విశ్లేషణలు జోడించబడ్డాయి. స్వాగతం!',
+      one: '1 అదనపు విశ్లేషణ జోడించబడింది. స్వాగతం!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralErrUnknown =>
+      'ఈ కోడ్ ఉనికిలో లేదు. దాన్ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get referralErrOwn => 'మీ స్వంత కోడ్‌ను మీరు రీడీమ్ చేయలేరు.';
+
+  @override
+  String get referralErrAlready =>
+      'మీరు ఇప్పటికే స్నేహితుని కోడ్‌ను రీడీమ్ చేశారు.';
+
+  @override
+  String referralShareText(String code, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అదనపు విశ్లేషణలు',
+      one: '1 అదనపు విశ్లేషణ',
+    );
+    return 'నేను WhatStockతో స్టాక్‌లను విశ్లేషిస్తాను: స్టాక్‌ను ఫోటో తీయండి, AI దాన్ని వివరిస్తుంది. నా కోడ్ $codeతో మీరు $_temp0 పొందుతారు.';
+  }
+
+  @override
+  String get referralCopied => 'కోడ్ కాపీ చేయబడింది';
 }

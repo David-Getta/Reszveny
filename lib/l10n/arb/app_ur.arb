@@ -396,5 +396,17 @@
   "shareAsImage": "تصویر کے طور پر شیئر کریں",
   "shareAsText": "متن کے طور پر شیئر کریں",
   "shareCardFooter": "WhatStock سے تیار کردہ",
-  "shareCardDisclaimer": "AI تجزیہ · سرمایہ کاری کا مشورہ نہیں"
+  "shareCardDisclaimer": "AI تجزیہ · سرمایہ کاری کا مشورہ نہیں",
+  "referralTitle": "دوستوں کو مدعو کریں",
+  "referralBody": "اپنا کوڈ شیئر کریں۔ آپ کا دوست فوراً {count, plural, =1{1 اضافی تجزیہ} other{{count} اضافی تجزیے}} حاصل کرے گا، اور اس کے پہلے تجزیے کے بعد آپ بھی اتنے ہی حاصل کریں گے۔",
+  "referralYourCode": "آپ کا کوڈ",
+  "referralStats": "مدعو: {invited} · انعام یافتہ: {rewarded}",
+  "referralHaveCode": "کیا آپ کے پاس کسی دوست کا کوڈ ہے؟",
+  "referralRedeem": "استعمال کریں",
+  "referralRedeemed": "{count, plural, =1{1 اضافی تجزیہ شامل کر دیا گیا۔ خوش آمدید!} other{{count} اضافی تجزیے شامل کر دیے گئے۔ خوش آمدید!}}",
+  "referralErrUnknown": "یہ کوڈ موجود نہیں ہے۔ اسے چیک کر کے دوبارہ کوشش کریں۔",
+  "referralErrOwn": "آپ اپنا کوڈ استعمال نہیں کر سکتے۔",
+  "referralErrAlready": "آپ پہلے ہی کسی دوست کا کوڈ استعمال کر چکے ہیں۔",
+  "referralShareText": "WhatStock سے حصص کا تجزیہ آسان ہے: کسی حصص کی تصویر لیں اور AI اس کی وضاحت کر دے گا۔ میرے کوڈ {code} سے آپ {count, plural, =1{1 اضافی تجزیہ} other{{count} اضافی تجزیے}} حاصل کریں گے۔",
+  "referralCopied": "کوڈ کاپی ہو گیا"
 }

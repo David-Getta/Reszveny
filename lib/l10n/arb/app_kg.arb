@@ -396,5 +396,17 @@
   "shareAsImage": "Kabula bonso foto",
   "shareAsText": "Kabula bonso masonuku",
   "shareCardFooter": "Yisalama na WhatStock",
-  "shareCardDisclaimer": "Analyse ya AI · ka malongi ma kutula mbongo ko"
+  "shareCardDisclaimer": "Analyse ya AI · ka malongi ma kutula mbongo ko",
+  "referralTitle": "Bianga banduku",
+  "referralBody": "Kabula code na nge. Nduku na nge ta baka {count, plural, =1{analyse 1 ya kuyika} other{analyse {count} za kuyika}} ntangu yina kaka, mpi nge ta baka mutindu mosi na nima ya analyse na yandi ya ntete.",
+  "referralYourCode": "Code na nge",
+  "referralStats": "Me bianga: {invited} · Me baka matabisi: {rewarded}",
+  "referralHaveCode": "Nge kele ti code ya nduku?",
+  "referralRedeem": "Sadila",
+  "referralRedeemed": "{count, plural, =1{Analyse 1 ya kuyika me kota. Beto ke yamba nge!} other{Analyse {count} za kuyika me kota. Beto ke yamba nge!}}",
+  "referralErrUnknown": "Code yai kele ve. Tala yo mpi meka diaka.",
+  "referralErrOwn": "Nge lenda sadila ve code na nge mosi.",
+  "referralErrAlready": "Nge me sadila dezia code ya nduku.",
+  "referralShareText": "Mono ke tadila ba-action na WhatStock: nge ke baka foto ya action mpi AI ke tendula yo. Na code na mono {code} nge ta baka {count, plural, =1{analyse 1 ya kuyika} other{analyse {count} za kuyika}}.",
+  "referralCopied": "Code me kopiama"
 }

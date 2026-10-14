@@ -396,5 +396,17 @@
   "shareAsImage": "Görsel olarak paylaş",
   "shareAsText": "Metin olarak paylaş",
   "shareCardFooter": "WhatStock ile hazırlandı",
-  "shareCardDisclaimer": "Yapay zekâ analizi · yatırım tavsiyesi değildir"
+  "shareCardDisclaimer": "Yapay zekâ analizi · yatırım tavsiyesi değildir",
+  "referralTitle": "Arkadaşlarını davet et",
+  "referralBody": "Kodunu paylaş. Arkadaşın hemen {count, plural, =1{1 ek analiz} other{{count} ek analiz}} kazanır, sen de onun ilk analizinden sonra aynısını kazanırsın.",
+  "referralYourCode": "Kodun",
+  "referralStats": "Davet edilen: {invited} · Ödüllendirilen: {rewarded}",
+  "referralHaveCode": "Bir arkadaşından kod mu aldın?",
+  "referralRedeem": "Kullan",
+  "referralRedeemed": "{count, plural, =1{1 ek analiz eklendi. Hoş geldin!} other{{count} ek analiz eklendi. Hoş geldin!}}",
+  "referralErrUnknown": "Bu kod mevcut değil. Kontrol edip tekrar dene.",
+  "referralErrOwn": "Kendi kodunu kullanamazsın.",
+  "referralErrAlready": "Bir arkadaşının kodunu zaten kullandın.",
+  "referralShareText": "Hisseleri WhatStock ile analiz ediyorum: bir hissenin fotoğrafını çek, yapay zekâ açıklasın. Kodum {code} ile {count, plural, =1{1 ek analiz} other{{count} ek analiz}} kazanırsın.",
+  "referralCopied": "Kod kopyalandı"
 }

@@ -396,5 +396,17 @@
   "shareAsImage": "Ibingay kas ladawan",
   "shareAsText": "Ibingay kas teksto",
   "shareCardFooter": "Naaramid babaen ti WhatStock",
-  "shareCardDisclaimer": "Panangsukimat ti AI · saan a balakad iti panagpuonan"
+  "shareCardDisclaimer": "Panangsukimat ti AI · saan a balakad iti panagpuonan",
+  "referralTitle": "Awisem dagiti gagayyem",
+  "referralBody": "Ibingaymo ti kodigom. Dagus a maalan ti gayyemmo ti {count, plural, =1{1 a nayon a panangsukimat} other{{count} a nayon a panangsukimat}}, ket maalam met ti isu met laeng kalpasan ti umuna a panangsukimatna.",
+  "referralYourCode": "Ti kodigom",
+  "referralStats": "Naawis: {invited} · Nagunggonaan: {rewarded}",
+  "referralHaveCode": "Adda kadi kodigom manipud iti gayyem?",
+  "referralRedeem": "Usaren",
+  "referralRedeemed": "{count, plural, =1{Nainayon ti 1 a nayon a panangsukimat. Naragsak nga isasangpet!} other{Nainayon ti {count} a nayon a panangsukimat. Naragsak nga isasangpet!}}",
+  "referralErrUnknown": "Awan daytoy a kodigo. Kitaem ket padasem manen.",
+  "referralErrOwn": "Saanmo a mausar ti bukodmo a kodigo.",
+  "referralErrAlready": "Inusarmon ti kodigo ti maysa a gayyem.",
+  "referralShareText": "Sukimatek dagiti stock babaen ti WhatStock: ladawam ti stock ket ilawlawag ti AI. Babaen ti kodigok a {code} maalam ti {count, plural, =1{1 a nayon a panangsukimat} other{{count} a nayon a panangsukimat}}.",
+  "referralCopied": "Nakopya ti kodigo"
 }

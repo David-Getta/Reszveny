@@ -55,6 +55,38 @@ class InviteInfo {
   int get hashCode => Object.hash(label, expires);
 }
 
+/// Ajánlói program: saját kód, hány barátot hívott meg, és mennyi a jutalom.
+@immutable
+class ReferralInfo {
+  const ReferralInfo({
+    required this.code,
+    required this.invited,
+    required this.rewarded,
+    required this.bonus,
+    required this.redeemed,
+  });
+
+  final String code;
+  final int invited;
+
+  /// Ennyi meghívott után kapott már jutalmat (az első elemzésük után).
+  final int rewarded;
+
+  /// Ennyi extra elemzést kap mindkét fél.
+  final int bonus;
+
+  /// Ő maga beváltott-e már egy barát kódját.
+  final bool redeemed;
+
+  factory ReferralInfo.fromJson(Map<String, dynamic> j) => ReferralInfo(
+    code: j['code'] as String? ?? '',
+    invited: j['invited'] as int? ?? 0,
+    rewarded: j['rewarded'] as int? ?? 0,
+    bonus: j['bonus'] as int? ?? 5,
+    redeemed: j['redeemed'] as bool? ?? false,
+  );
+}
+
 /// A WhatStock backend kliense: névtelen fiók (token), jogosultság-lekérés,
 /// vásárlás-ellenőrzés, és egy hitelesített [http.Client] a továbbított
 /// Anthropic/Finnhub hívásokhoz.
@@ -247,6 +279,25 @@ class BackendClient {
   Future<String> portalUrl() async {
     final res = await _authorized((h) => _inner.post(Uri.parse('$baseUrl/v1/billing/portal'), headers: h));
     return _decode(res)['url'] as String;
+  }
+
+  /// `GET /v1/referral` → saját ajánlókód és statisztika.
+  Future<ReferralInfo> referral() async {
+    final res = await _authorized((h) => _inner.get(Uri.parse('$baseUrl/v1/referral'), headers: h));
+    return ReferralInfo.fromJson(_decode(res));
+  }
+
+  /// `POST /v1/referral/redeem` → egy barát kódjának beváltása; a válasz a friss
+  /// jogosultság. Hibák: `unknown_code`, `own_code`, `already_redeemed`.
+  Future<EntitlementState> redeemReferral(String code) async {
+    final res = await _authorized(
+      (h) => _inner.post(
+        Uri.parse('$baseUrl/v1/referral/redeem'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode({'code': code.trim()}),
+      ),
+    );
+    return _entitlements(_decode(res));
   }
 
   /// `POST /v1/purchases/verify` → a szerver ellenőrzi a bolti bizonylatot és
