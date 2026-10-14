@@ -1419,4 +1419,23 @@ class AppLocalizationsSu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analisis $symbol geus dipupus';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Toél hiji tingkat pikeun meunang béwara nalika harga nepi ka dinya.';
+
+  @override
+  String get shareAnalysisTitle => 'Bagikeun analisis';
+
+  @override
+  String get shareAsImage => 'Bagikeun salaku gambar';
+
+  @override
+  String get shareAsText => 'Bagikeun salaku téks';
+
+  @override
+  String get shareCardFooter => 'Dijieun ku WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analisis AI · lain naséhat investasi';
 }

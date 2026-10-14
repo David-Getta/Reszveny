@@ -1424,4 +1424,24 @@ class AppLocalizationsZu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Uhlaziyo lwe-$symbol lususiwe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Thepha izinga ukuze uthole isexwayiso uma intengo ifinyelela kulo.';
+
+  @override
+  String get shareAnalysisTitle => 'Yabelana ngohlaziyo';
+
+  @override
+  String get shareAsImage => 'Yabelana njengesithombe';
+
+  @override
+  String get shareAsText => 'Yabelana njengombhalo';
+
+  @override
+  String get shareCardFooter => 'Kwenziwe nge-WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali';
 }

@@ -1415,4 +1415,23 @@ class AppLocalizationsWo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Far nañu saytu $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Bës ci benn dayo ngir am artu bu njëg gi agsee fa.';
+
+  @override
+  String get shareAnalysisTitle => 'Séddoo saytu bi';
+
+  @override
+  String get shareAsImage => 'Séddoo ko ni nataal';
+
+  @override
+  String get shareAsText => 'Séddoo ko ni mbind';
+
+  @override
+  String get shareCardFooter => 'Defar nañu ko ak WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Saytu AI · du ndigal ci dugal xaalis';
 }

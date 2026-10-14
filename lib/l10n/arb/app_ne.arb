@@ -390,5 +390,11 @@
   "seeAll": "सबै हेर्नुहोस् ({count})",
   "searchAnalyses": "आफ्ना विश्लेषणहरू खोज्नुहोस्",
   "deleteAnalysis": "मेटाउनुहोस्",
-  "analysisDeleted": "{symbol} विश्लेषण मेटाइयो"
+  "analysisDeleted": "{symbol} विश्लेषण मेटाइयो",
+  "keyLevelAlertHint": "मूल्य कुनै स्तरमा पुग्दा अलर्ट पाउन त्यो स्तर ट्याप गर्नुहोस्।",
+  "shareAnalysisTitle": "विश्लेषण सेयर गर्नुहोस्",
+  "shareAsImage": "तस्बिरका रूपमा सेयर गर्नुहोस्",
+  "shareAsText": "पाठका रूपमा सेयर गर्नुहोस्",
+  "shareCardFooter": "WhatStock बाट बनाइएको",
+  "shareCardDisclaimer": "AI विश्लेषण · लगानी सल्लाह होइन"
 }

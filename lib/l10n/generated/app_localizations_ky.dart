@@ -1419,4 +1419,23 @@ class AppLocalizationsKy extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol талдоосу өчүрүлдү';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Баа деңгээлге жеткенде эскертме алуу үчүн деңгээлди басыңыз.';
+
+  @override
+  String get shareAnalysisTitle => 'Талдоо менен бөлүшүү';
+
+  @override
+  String get shareAsImage => 'Сүрөт катары бөлүшүү';
+
+  @override
+  String get shareAsText => 'Текст катары бөлүшүү';
+
+  @override
+  String get shareCardFooter => 'WhatStock менен түзүлгөн';
+
+  @override
+  String get shareCardDisclaimer => 'AI талдоосу · инвестициялык кеңеш эмес';
 }

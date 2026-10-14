@@ -1415,4 +1415,24 @@ class AppLocalizationsMy extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol သုံးသပ်ချက်ကို ဖျက်လိုက်ပြီ';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ဈေးနှုန်း ထိုအဆင့်သို့ ရောက်သည့်အခါ သတိပေးချက် ရယူရန် အဆင့်တစ်ခုကို တို့ပါ။';
+
+  @override
+  String get shareAnalysisTitle => 'သုံးသပ်ချက်ကို မျှဝေရန်';
+
+  @override
+  String get shareAsImage => 'ပုံအဖြစ် မျှဝေရန်';
+
+  @override
+  String get shareAsText => 'စာသားအဖြစ် မျှဝေရန်';
+
+  @override
+  String get shareCardFooter => 'WhatStock ဖြင့် ပြုလုပ်ထားသည်';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI သုံးသပ်ချက် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
 }

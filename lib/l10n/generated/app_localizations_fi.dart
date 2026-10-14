@@ -1419,4 +1419,23 @@ class AppLocalizationsFi extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol-analyysi poistettu';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Napauta tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.';
+
+  @override
+  String get shareAnalysisTitle => 'Jaa analyysi';
+
+  @override
+  String get shareAsImage => 'Jaa kuvana';
+
+  @override
+  String get shareAsText => 'Jaa tekstinä';
+
+  @override
+  String get shareCardFooter => 'Tehty WhatStockilla';
+
+  @override
+  String get shareCardDisclaimer => 'Tekoälyanalyysi · ei sijoitusneuvontaa';
 }

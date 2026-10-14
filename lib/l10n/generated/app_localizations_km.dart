@@ -1407,4 +1407,23 @@ class AppLocalizationsKm extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'បានលុបការវិភាគ $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ចុចកម្រិតតម្លៃណាមួយ ដើម្បីទទួលការជូនដំណឹងនៅពេលតម្លៃដល់កម្រិតនោះ។';
+
+  @override
+  String get shareAnalysisTitle => 'ចែករំលែកការវិភាគ';
+
+  @override
+  String get shareAsImage => 'ចែករំលែកជារូបភាព';
+
+  @override
+  String get shareAsText => 'ចែករំលែកជាអត្ថបទ';
+
+  @override
+  String get shareCardFooter => 'បង្កើតដោយ WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'ការវិភាគ AI · មិនមែនជាដំបូន្មានវិនិយោគទេ';
 }

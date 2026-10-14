@@ -1416,4 +1416,24 @@ class AppLocalizationsTr extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol analizi silindi';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Fiyat bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.';
+
+  @override
+  String get shareAnalysisTitle => 'Analizi paylaş';
+
+  @override
+  String get shareAsImage => 'Görsel olarak paylaş';
+
+  @override
+  String get shareAsText => 'Metin olarak paylaş';
+
+  @override
+  String get shareCardFooter => 'WhatStock ile hazırlandı';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Yapay zekâ analizi · yatırım tavsiyesi değildir';
 }

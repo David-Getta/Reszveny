@@ -1414,4 +1414,23 @@ class AppLocalizationsOr extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol ବିଶ୍ଳେଷଣ ଡିଲିଟ ହେଲା';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ଦର କୌଣସି ସ୍ତରରେ ପହଞ୍ଚିଲେ ଆଲର୍ଟ ପାଇବାକୁ ସେହି ସ୍ତରକୁ ଟ୍ୟାପ କରନ୍ତୁ।';
+
+  @override
+  String get shareAnalysisTitle => 'ବିଶ୍ଳେଷଣ ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get shareAsImage => 'ଛବି ଭାବେ ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get shareAsText => 'ଟେକ୍ସଟ ଭାବେ ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get shareCardFooter => 'WhatStock ଦ୍ୱାରା ନିର୍ମିତ';
+
+  @override
+  String get shareCardDisclaimer => 'AI ବିଶ୍ଳେଷଣ · ନିବେଶ ପରାମର୍ଶ ନୁହେଁ';
 }

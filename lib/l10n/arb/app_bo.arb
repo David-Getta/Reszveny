@@ -390,5 +390,11 @@
   "seeAll": "ཚང་མ་ལྟ ({count})",
   "searchAnalyses": "དབྱེ་ཞིབ་ནང་འཚོལ",
   "deleteAnalysis": "སུབ",
-  "analysisDeleted": "{symbol} ཡི་དབྱེ་ཞིབ་བསུབས་ཟིན"
+  "analysisDeleted": "{symbol} ཡི་དབྱེ་ཞིབ་བསུབས་ཟིན",
+  "keyLevelAlertHint": "གོང་ཚད་ཚད་དེར་སླེབས་སྐབས་ཉེན་བརྡ་ཐོབ་པར་ཚད་ཅིག་ལ་མནན།",
+  "shareAnalysisTitle": "དབྱེ་ཞིབ་མཉམ་སྤྱོད།",
+  "shareAsImage": "པར་རིས་སུ་མཉམ་སྤྱོད།",
+  "shareAsText": "ཡི་གེར་མཉམ་སྤྱོད།",
+  "shareCardFooter": "WhatStock གིས་བཟོས།",
+  "shareCardDisclaimer": "AI དབྱེ་ཞིབ · མ་འཇོག་གི་བསམ་འཆར་མིན།"
 }

@@ -938,5 +938,29 @@
         "example": "AAPL"
       }
     }
+  },
+  "keyLevelAlertHint": "Tap a level to get an alert when the price reaches it.",
+  "@keyLevelAlertHint": {
+    "description": "Small hint under the key price levels (support, resistance) of the AI analysis: tapping one sets a price alert at that level."
+  },
+  "shareAnalysisTitle": "Share analysis",
+  "@shareAnalysisTitle": {
+    "description": "Title of the share sheet that previews the analysis card."
+  },
+  "shareAsImage": "Share as image",
+  "@shareAsImage": {
+    "description": "Button: share the analysis as a picture card (good for Instagram, WhatsApp)."
+  },
+  "shareAsText": "Share as text",
+  "@shareAsText": {
+    "description": "Button: share the analysis as plain text."
+  },
+  "shareCardFooter": "Made with WhatStock",
+  "@shareCardFooter": {
+    "description": "Footer on the shared analysis picture, next to the WhatStock logo. Keep WhatStock unchanged."
+  },
+  "shareCardDisclaimer": "AI analysis · not investment advice",
+  "@shareCardDisclaimer": {
+    "description": "Tiny line at the bottom of the shared analysis picture."
   }
 }

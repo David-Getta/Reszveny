@@ -2682,6 +2682,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{symbol} analysis deleted'**
   String analysisDeleted(String symbol);
+
+  /// Small hint under the key price levels (support, resistance) of the AI analysis: tapping one sets a price alert at that level.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a level to get an alert when the price reaches it.'**
+  String get keyLevelAlertHint;
+
+  /// Title of the share sheet that previews the analysis card.
+  ///
+  /// In en, this message translates to:
+  /// **'Share analysis'**
+  String get shareAnalysisTitle;
+
+  /// Button: share the analysis as a picture card (good for Instagram, WhatsApp).
+  ///
+  /// In en, this message translates to:
+  /// **'Share as image'**
+  String get shareAsImage;
+
+  /// Button: share the analysis as plain text.
+  ///
+  /// In en, this message translates to:
+  /// **'Share as text'**
+  String get shareAsText;
+
+  /// Footer on the shared analysis picture, next to the WhatStock logo. Keep WhatStock unchanged.
+  ///
+  /// In en, this message translates to:
+  /// **'Made with WhatStock'**
+  String get shareCardFooter;
+
+  /// Tiny line at the bottom of the shared analysis picture.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis · not investment advice'**
+  String get shareCardDisclaimer;
 }
 
 class _AppLocalizationsDelegate

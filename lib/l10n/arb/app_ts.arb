@@ -390,5 +390,11 @@
   "seeAll": "Vona hinkwaswo ({count})",
   "searchAnalyses": "Lava eka minxopaxopo ya wena",
   "deleteAnalysis": "Sula",
-  "analysisDeleted": "Nxopaxopo wa {symbol} wu suriwile"
+  "analysisDeleted": "Nxopaxopo wa {symbol} wu suriwile",
+  "keyLevelAlertHint": "Tshikelela xiyimo leswaku u kuma xitiviso loko nxavo wu fika kona.",
+  "shareAnalysisTitle": "Avelana nxopaxopo",
+  "shareAsImage": "Avelana tanihi xifaniso",
+  "shareAsText": "Avelana tanihi tsalwa",
+  "shareCardFooter": "Swi endliwe hi WhatStock",
+  "shareCardDisclaimer": "Nxopaxopo wa AI · a hi ndzayo ya vuvekisi"
 }

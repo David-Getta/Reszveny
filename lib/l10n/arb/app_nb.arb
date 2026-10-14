@@ -390,5 +390,11 @@
   "seeAll": "Se alle ({count})",
   "searchAnalyses": "Søk i analysene dine",
   "deleteAnalysis": "Slett",
-  "analysisDeleted": "{symbol}-analysen er slettet"
+  "analysisDeleted": "{symbol}-analysen er slettet",
+  "keyLevelAlertHint": "Trykk på et nivå for å få varsel når kursen når det.",
+  "shareAnalysisTitle": "Del analyse",
+  "shareAsImage": "Del som bilde",
+  "shareAsText": "Del som tekst",
+  "shareCardFooter": "Laget med WhatStock",
+  "shareCardDisclaimer": "AI-analyse · ikke investeringsråd"
 }

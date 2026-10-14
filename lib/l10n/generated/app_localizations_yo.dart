@@ -1417,4 +1417,23 @@ class AppLocalizationsYo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'A ti pa ìtúpalẹ̀ $symbol rẹ́';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tẹ ìwọ̀n kan láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.';
+
+  @override
+  String get shareAnalysisTitle => 'Pín ìtúpalẹ̀';
+
+  @override
+  String get shareAsImage => 'Pín gẹ́gẹ́ bí àwòrán';
+
+  @override
+  String get shareAsText => 'Pín gẹ́gẹ́ bí ọ̀rọ̀';
+
+  @override
+  String get shareCardFooter => 'A ṣe é pẹ̀lú WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò';
 }

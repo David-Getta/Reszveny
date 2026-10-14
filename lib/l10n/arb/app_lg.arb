@@ -390,5 +390,11 @@
   "seeAll": "Laba byonna ({count})",
   "searchAnalyses": "Noonya mu kwekenneenya kwo",
   "deleteAnalysis": "Sangula",
-  "analysisDeleted": "Okwekenneenya kwa {symbol} kusanguddwawo"
+  "analysisDeleted": "Okwekenneenya kwa {symbol} kusanguddwawo",
+  "keyLevelAlertHint": "Nyiga omutendera ofune okulabula bbeeyi bw'etuuka ku gwo.",
+  "shareAnalysisTitle": "Gabana okwekenneenya",
+  "shareAsImage": "Gabana ng'ekifaananyi",
+  "shareAsText": "Gabana ng'ebiwandiiko",
+  "shareCardFooter": "Kyakoleddwa ne WhatStock",
+  "shareCardDisclaimer": "Okwekenneenya kwa AI · si magezi ga kusiga nsimbi"
 }

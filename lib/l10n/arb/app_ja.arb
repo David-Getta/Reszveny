@@ -390,5 +390,11 @@
   "seeAll": "すべて表示 ({count})",
   "searchAnalyses": "分析を検索",
   "deleteAnalysis": "削除",
-  "analysisDeleted": "{symbol} の分析を削除しました"
+  "analysisDeleted": "{symbol} の分析を削除しました",
+  "keyLevelAlertHint": "価格水準をタップすると、株価がその水準に達したときにアラートが届きます。",
+  "shareAnalysisTitle": "分析を共有",
+  "shareAsImage": "画像で共有",
+  "shareAsText": "テキストで共有",
+  "shareCardFooter": "WhatStock で作成",
+  "shareCardDisclaimer": "AI 分析 · 投資助言ではありません"
 }

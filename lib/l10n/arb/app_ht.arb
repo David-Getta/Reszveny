@@ -390,5 +390,11 @@
   "seeAll": "Wè tout ({count})",
   "searchAnalyses": "Chèche nan analiz ou yo",
   "deleteAnalysis": "Efase",
-  "analysisDeleted": "Analiz {symbol} efase"
+  "analysisDeleted": "Analiz {symbol} efase",
+  "keyLevelAlertHint": "Peze yon nivo pou resevwa yon alèt lè pri a rive la.",
+  "shareAnalysisTitle": "Pataje analiz la",
+  "shareAsImage": "Pataje kòm imaj",
+  "shareAsText": "Pataje kòm tèks",
+  "shareCardFooter": "Fèt ak WhatStock",
+  "shareCardDisclaimer": "Analiz AI · se pa yon konsèy envestisman"
 }

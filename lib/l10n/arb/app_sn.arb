@@ -390,5 +390,11 @@
   "seeAll": "Ona zvese ({count})",
   "searchAnalyses": "Tsvaga ongororo dzako",
   "deleteAnalysis": "Dzima",
-  "analysisDeleted": "Ongororo ya{symbol} yadzimwa"
+  "analysisDeleted": "Ongororo ya{symbol} yadzimwa",
+  "keyLevelAlertHint": "Baya zinga kuti uwane chiziviso kana mutengo wasvika ipapo.",
+  "shareAnalysisTitle": "Govera ongororo",
+  "shareAsImage": "Govera semufananidzo",
+  "shareAsText": "Govera semavara",
+  "shareCardFooter": "Zvakagadzirwa neWhatStock",
+  "shareCardDisclaimer": "Ongororo yeAI · haisi zano rekuisa mari"
 }

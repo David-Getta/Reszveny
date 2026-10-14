@@ -390,5 +390,11 @@
   "seeAll": "Xem tất cả ({count})",
   "searchAnalyses": "Tìm trong phân tích của bạn",
   "deleteAnalysis": "Xóa",
-  "analysisDeleted": "Đã xóa phân tích {symbol}"
+  "analysisDeleted": "Đã xóa phân tích {symbol}",
+  "keyLevelAlertHint": "Nhấn vào một mức giá để nhận cảnh báo khi giá chạm tới mức đó.",
+  "shareAnalysisTitle": "Chia sẻ phân tích",
+  "shareAsImage": "Chia sẻ dưới dạng ảnh",
+  "shareAsText": "Chia sẻ dưới dạng văn bản",
+  "shareCardFooter": "Tạo bằng WhatStock",
+  "shareCardDisclaimer": "Phân tích AI · không phải lời khuyên đầu tư"
 }

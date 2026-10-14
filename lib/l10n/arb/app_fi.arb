@@ -390,5 +390,11 @@
   "seeAll": "Näytä kaikki ({count})",
   "searchAnalyses": "Hae analyyseistäsi",
   "deleteAnalysis": "Poista",
-  "analysisDeleted": "{symbol}-analyysi poistettu"
+  "analysisDeleted": "{symbol}-analyysi poistettu",
+  "keyLevelAlertHint": "Napauta tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.",
+  "shareAnalysisTitle": "Jaa analyysi",
+  "shareAsImage": "Jaa kuvana",
+  "shareAsText": "Jaa tekstinä",
+  "shareCardFooter": "Tehty WhatStockilla",
+  "shareCardDisclaimer": "Tekoälyanalyysi · ei sijoitusneuvontaa"
 }

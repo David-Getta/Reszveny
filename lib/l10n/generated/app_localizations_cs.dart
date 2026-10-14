@@ -1456,4 +1456,23 @@ class AppLocalizationsCs extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analýza $symbol smazána';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Klepněte na úroveň a dostanete upozornění, až jí cena dosáhne.';
+
+  @override
+  String get shareAnalysisTitle => 'Sdílet analýzu';
+
+  @override
+  String get shareAsImage => 'Sdílet jako obrázek';
+
+  @override
+  String get shareAsText => 'Sdílet jako text';
+
+  @override
+  String get shareCardFooter => 'Vytvořeno pomocí WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI analýza · není investiční doporučení';
 }

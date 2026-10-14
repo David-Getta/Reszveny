@@ -1417,4 +1417,23 @@ class AppLocalizationsNb extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol-analysen er slettet';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Trykk på et nivå for å få varsel når kursen når det.';
+
+  @override
+  String get shareAnalysisTitle => 'Del analyse';
+
+  @override
+  String get shareAsImage => 'Del som bilde';
+
+  @override
+  String get shareAsText => 'Del som tekst';
+
+  @override
+  String get shareCardFooter => 'Laget med WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI-analyse · ikke investeringsråd';
 }

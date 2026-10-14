@@ -390,5 +390,11 @@
   "seeAll": "Wo gbogbo rẹ̀ ({count})",
   "searchAnalyses": "Wá nínú àwọn ìtúpalẹ̀ rẹ",
   "deleteAnalysis": "Pa rẹ́",
-  "analysisDeleted": "A ti pa ìtúpalẹ̀ {symbol} rẹ́"
+  "analysisDeleted": "A ti pa ìtúpalẹ̀ {symbol} rẹ́",
+  "keyLevelAlertHint": "Tẹ ìwọ̀n kan láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.",
+  "shareAnalysisTitle": "Pín ìtúpalẹ̀",
+  "shareAsImage": "Pín gẹ́gẹ́ bí àwòrán",
+  "shareAsText": "Pín gẹ́gẹ́ bí ọ̀rọ̀",
+  "shareCardFooter": "A ṣe é pẹ̀lú WhatStock",
+  "shareCardDisclaimer": "Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò"
 }

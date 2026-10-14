@@ -1423,4 +1423,24 @@ class AppLocalizationsSq extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analiza e $symbol u fshi';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Prekni një nivel për të marrë alarm kur çmimi ta arrijë.';
+
+  @override
+  String get shareAnalysisTitle => 'Ndaj analizën';
+
+  @override
+  String get shareAsImage => 'Ndaj si imazh';
+
+  @override
+  String get shareAsText => 'Ndaj si tekst';
+
+  @override
+  String get shareCardFooter => 'Krijuar me WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Analiza me AI · nuk është këshillë investimi';
 }

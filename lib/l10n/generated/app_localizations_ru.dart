@@ -1460,4 +1460,24 @@ class AppLocalizationsRu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Анализ $symbol удалён';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Нажмите на уровень, чтобы получить оповещение, когда цена его достигнет.';
+
+  @override
+  String get shareAnalysisTitle => 'Поделиться анализом';
+
+  @override
+  String get shareAsImage => 'Поделиться изображением';
+
+  @override
+  String get shareAsText => 'Поделиться текстом';
+
+  @override
+  String get shareCardFooter => 'Сделано в WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'ИИ-анализ · не инвестиционная рекомендация';
 }

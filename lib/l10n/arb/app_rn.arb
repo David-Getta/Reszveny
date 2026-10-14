@@ -390,5 +390,11 @@
   "seeAll": "Raba vyose ({count})",
   "searchAnalyses": "Rondera mu masesangura yawe",
   "deleteAnalysis": "Futa",
-  "analysisDeleted": "Isesangura rya {symbol} ryafuswe"
+  "analysisDeleted": "Isesangura rya {symbol} ryafuswe",
+  "keyLevelAlertHint": "Fyonda ku gipimo kugira uronke imenyesha igiciro kigeze kuri co.",
+  "shareAnalysisTitle": "Sangiza isesangura",
+  "shareAsImage": "Sangiza nk'ishusho",
+  "shareAsText": "Sangiza nk'inyandiko",
+  "shareCardFooter": "Vyakozwe na WhatStock",
+  "shareCardDisclaimer": "Isesangura rya AI · si inama yo gushora imari"
 }

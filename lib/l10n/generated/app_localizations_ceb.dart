@@ -1422,4 +1422,24 @@ class AppLocalizationsCeb extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Napapas ang pagtuki sa $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'I-tap ang usa ka lebel aron makadawat og alerto kon maabot na kini sa presyo.';
+
+  @override
+  String get shareAnalysisTitle => 'Ipaambit ang pagtuki';
+
+  @override
+  String get shareAsImage => 'Ipaambit isip hulagway';
+
+  @override
+  String get shareAsText => 'Ipaambit isip teksto';
+
+  @override
+  String get shareCardFooter => 'Gihimo gamit ang WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Pagtuki sa AI · dili tambag sa pagpamuhunan';
 }

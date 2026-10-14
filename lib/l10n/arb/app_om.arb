@@ -390,5 +390,11 @@
   "seeAll": "Hunda ilaali ({count})",
   "searchAnalyses": "Xiinxala kee keessa barbaadi",
   "deleteAnalysis": "Haqi",
-  "analysisDeleted": "Xiinxalli {symbol} haqameera"
+  "analysisDeleted": "Xiinxalli {symbol} haqameera",
+  "keyLevelAlertHint": "Yeroo gatiin sadarkaa tokko gahu akeekkachiisa argachuuf sadarkaa sana tuqi.",
+  "shareAnalysisTitle": "Xiinxala qoodi",
+  "shareAsImage": "Akka suuraatti qoodi",
+  "shareAsText": "Akka barreeffamaatti qoodi",
+  "shareCardFooter": "WhatStock'n hojjetame",
+  "shareCardDisclaimer": "Xiinxala AI · gorsa invastimantii miti"
 }

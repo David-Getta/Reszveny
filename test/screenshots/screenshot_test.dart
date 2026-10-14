@@ -671,6 +671,18 @@ void main() {
     await _shot(tester, 'stale_dialog_phone_hu');
   });
 
+  testWidgets('share sheet with the picture card (hungarian, phone)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Elemzés készítése'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('share-analysis')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'share_sheet_phone_hu');
+  });
+
   testWidgets('quick bar', (tester) async {
     tester.view.physicalSize = const Size(680, 72);
     tester.view.devicePixelRatio = 1;

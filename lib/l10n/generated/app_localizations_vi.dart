@@ -1412,4 +1412,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Đã xóa phân tích $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Nhấn vào một mức giá để nhận cảnh báo khi giá chạm tới mức đó.';
+
+  @override
+  String get shareAnalysisTitle => 'Chia sẻ phân tích';
+
+  @override
+  String get shareAsImage => 'Chia sẻ dưới dạng ảnh';
+
+  @override
+  String get shareAsText => 'Chia sẻ dưới dạng văn bản';
+
+  @override
+  String get shareCardFooter => 'Tạo bằng WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Phân tích AI · không phải lời khuyên đầu tư';
 }

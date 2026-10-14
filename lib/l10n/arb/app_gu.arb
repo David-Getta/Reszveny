@@ -390,5 +390,11 @@
   "seeAll": "બધા જુઓ ({count})",
   "searchAnalyses": "તમારા વિશ્લેષણ શોધો",
   "deleteAnalysis": "કાઢી નાખો",
-  "analysisDeleted": "{symbol} વિશ્લેષણ કાઢી નાખ્યું"
+  "analysisDeleted": "{symbol} વિશ્લેષણ કાઢી નાખ્યું",
+  "keyLevelAlertHint": "ભાવ કોઈ સ્તરે પહોંચે ત્યારે અલર્ટ મેળવવા માટે તે સ્તર પર ટૅપ કરો.",
+  "shareAnalysisTitle": "વિશ્લેષણ શેર કરો",
+  "shareAsImage": "છબી તરીકે શેર કરો",
+  "shareAsText": "ટેક્સ્ટ તરીકે શેર કરો",
+  "shareCardFooter": "WhatStock વડે બનાવેલ",
+  "shareCardDisclaimer": "AI વિશ્લેષણ · રોકાણ સલાહ નથી"
 }

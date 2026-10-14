@@ -390,5 +390,11 @@
   "seeAll": "Lihat semua ({count})",
   "searchAnalyses": "Cari analisis Anda",
   "deleteAnalysis": "Hapus",
-  "analysisDeleted": "Analisis {symbol} dihapus"
+  "analysisDeleted": "Analisis {symbol} dihapus",
+  "keyLevelAlertHint": "Ketuk level untuk mendapat peringatan saat harga mencapainya.",
+  "shareAnalysisTitle": "Bagikan analisis",
+  "shareAsImage": "Bagikan sebagai gambar",
+  "shareAsText": "Bagikan sebagai teks",
+  "shareCardFooter": "Dibuat dengan WhatStock",
+  "shareCardDisclaimer": "Analisis AI · bukan saran investasi"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Mona yonso ({count})",
   "searchAnalyses": "Keba mu makonkonona ebe",
   "deleteAnalysis": "Jimija",
-  "analysisDeleted": "Dikonkonona dia {symbol} diajimijibua"
+  "analysisDeleted": "Dikonkonona dia {symbol} diajimijibua",
+  "keyLevelAlertHint": "Finya niveau bua kupeta alerte padi mushinga ufika kuine.",
+  "shareAnalysisTitle": "Abanya dikonkonona",
+  "shareAsImage": "Abanya bu tshimfuanyi",
+  "shareAsText": "Abanya bu mifundu",
+  "shareCardFooter": "Bienze ne WhatStock",
+  "shareCardDisclaimer": "Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga"
 }

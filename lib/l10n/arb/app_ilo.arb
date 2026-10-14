@@ -390,5 +390,11 @@
   "seeAll": "Kitaen amin ({count})",
   "searchAnalyses": "Biroken dagiti panangsukimatmo",
   "deleteAnalysis": "Ikkaten",
-  "analysisDeleted": "Naikkat ti panangsukimat ti {symbol}"
+  "analysisDeleted": "Naikkat ti panangsukimat ti {symbol}",
+  "keyLevelAlertHint": "I-tap ti maysa a tukad tapno maalertoka no madanon ti presio daytoy.",
+  "shareAnalysisTitle": "Ibingay ti panangsukimat",
+  "shareAsImage": "Ibingay kas ladawan",
+  "shareAsText": "Ibingay kas teksto",
+  "shareCardFooter": "Naaramid babaen ti WhatStock",
+  "shareCardDisclaimer": "Panangsukimat ti AI · saan a balakad iti panagpuonan"
 }

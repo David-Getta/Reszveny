@@ -1374,4 +1374,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol 분석을 삭제했습니다';
   }
+
+  @override
+  String get keyLevelAlertHint => '가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.';
+
+  @override
+  String get shareAnalysisTitle => '분석 공유';
+
+  @override
+  String get shareAsImage => '이미지로 공유';
+
+  @override
+  String get shareAsText => '텍스트로 공유';
+
+  @override
+  String get shareCardFooter => 'WhatStock으로 제작';
+
+  @override
+  String get shareCardDisclaimer => 'AI 분석 · 투자 조언 아님';
 }

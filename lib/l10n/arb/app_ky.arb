@@ -390,5 +390,11 @@
   "seeAll": "Баарын көрүү ({count})",
   "searchAnalyses": "Талдоолоруңуздан издөө",
   "deleteAnalysis": "Өчүрүү",
-  "analysisDeleted": "{symbol} талдоосу өчүрүлдү"
+  "analysisDeleted": "{symbol} талдоосу өчүрүлдү",
+  "keyLevelAlertHint": "Баа деңгээлге жеткенде эскертме алуу үчүн деңгээлди басыңыз.",
+  "shareAnalysisTitle": "Талдоо менен бөлүшүү",
+  "shareAsImage": "Сүрөт катары бөлүшүү",
+  "shareAsText": "Текст катары бөлүшүү",
+  "shareCardFooter": "WhatStock менен түзүлгөн",
+  "shareCardDisclaimer": "AI талдоосу · инвестициялык кеңеш эмес"
 }

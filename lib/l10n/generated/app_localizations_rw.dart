@@ -1423,4 +1423,24 @@ class AppLocalizationsRw extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Isesengura rya $symbol ryasibwe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Kanda ku gipimo kugira ngo ubone imenyesha igihe igiciro kigeze kuri cyo.';
+
+  @override
+  String get shareAnalysisTitle => 'Sangiza isesengura';
+
+  @override
+  String get shareAsImage => 'Sangiza nk\'ifoto';
+
+  @override
+  String get shareAsText => 'Sangiza nk\'inyandiko';
+
+  @override
+  String get shareCardFooter => 'Byakozwe na WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Isesengura rya AI · si inama yo gushora imari';
 }

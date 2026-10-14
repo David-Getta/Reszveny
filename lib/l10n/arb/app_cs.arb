@@ -390,5 +390,11 @@
   "seeAll": "Zobrazit vše ({count})",
   "searchAnalyses": "Hledat v analýzách",
   "deleteAnalysis": "Smazat",
-  "analysisDeleted": "Analýza {symbol} smazána"
+  "analysisDeleted": "Analýza {symbol} smazána",
+  "keyLevelAlertHint": "Klepněte na úroveň a dostanete upozornění, až jí cena dosáhne.",
+  "shareAnalysisTitle": "Sdílet analýzu",
+  "shareAsImage": "Sdílet jako obrázek",
+  "shareAsText": "Sdílet jako text",
+  "shareCardFooter": "Vytvořeno pomocí WhatStock",
+  "shareCardDisclaimer": "AI analýza · není investiční doporučení"
 }

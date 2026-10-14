@@ -14,7 +14,8 @@ import 'package:whatstock_server/src/stripe.dart';
 /// PUBLIC_URL (a szerver nyilvános címe), RESEND_API_KEY + MAIL_FROM (belépőkód e-mailben;
 /// nélkülük a kód a naplóba kerül), STRIPE_SECRET_KEY + STRIPE_WEBHOOK_SECRET + STRIPE_PRICES
 /// (böngészős fizetés; pl. `whatstock.sub.pro=price_123,whatstock.pack.5=price_456`), INVITE_CODES
-/// (zárt előzetes: `KÓD:Név[:ÉÉÉÉ-HH-NN][:eszközök][:napi elemzés]`, vesszővel elválasztva).
+/// (zárt előzetes: `KÓD:Név[:ÉÉÉÉ-HH-NN][:eszközök][:napi elemzés]`, vesszővel elválasztva),
+/// REFERRAL_BONUS (5) és REFERRAL_MAX (10): az ajánlói program jutalma és felső határa.
 Future<void> main() async {
   final env = Platform.environment;
   final anthropic = env['ANTHROPIC_API_KEY'] ?? '';
@@ -31,6 +32,9 @@ Future<void> main() async {
   final invites = InviteBook.parse(env['INVITE_CODES'], onWarning: stderr.writeln);
   final api = Api(
     invites: invites,
+    // Ajánlói program: extra elemzés mindkét félnek, ajánlónként legfeljebb ennyi meghívott után.
+    referralBonus: int.tryParse(env['REFERRAL_BONUS'] ?? '') ?? 5,
+    referralMax: int.tryParse(env['REFERRAL_MAX'] ?? '') ?? 10,
     store: store,
     anthropicApiKey: anthropic,
     finnhubApiKey: finnhub,

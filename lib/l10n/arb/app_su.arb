@@ -390,5 +390,11 @@
   "seeAll": "Tingali sadayana ({count})",
   "searchAnalyses": "Paluruh analisis anjeun",
   "deleteAnalysis": "Pupus",
-  "analysisDeleted": "Analisis {symbol} geus dipupus"
+  "analysisDeleted": "Analisis {symbol} geus dipupus",
+  "keyLevelAlertHint": "Toél hiji tingkat pikeun meunang béwara nalika harga nepi ka dinya.",
+  "shareAnalysisTitle": "Bagikeun analisis",
+  "shareAsImage": "Bagikeun salaku gambar",
+  "shareAsText": "Bagikeun salaku téks",
+  "shareCardFooter": "Dijieun ku WhatStock",
+  "shareCardDisclaimer": "Analisis AI · lain naséhat investasi"
 }

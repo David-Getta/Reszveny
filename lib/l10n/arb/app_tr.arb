@@ -390,5 +390,11 @@
   "seeAll": "Tümünü gör ({count})",
   "searchAnalyses": "Analizlerinde ara",
   "deleteAnalysis": "Sil",
-  "analysisDeleted": "{symbol} analizi silindi"
+  "analysisDeleted": "{symbol} analizi silindi",
+  "keyLevelAlertHint": "Fiyat bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.",
+  "shareAnalysisTitle": "Analizi paylaş",
+  "shareAsImage": "Görsel olarak paylaş",
+  "shareAsText": "Metin olarak paylaş",
+  "shareCardFooter": "WhatStock ile hazırlandı",
+  "shareCardDisclaimer": "Yapay zekâ analizi · yatırım tavsiyesi değildir"
 }

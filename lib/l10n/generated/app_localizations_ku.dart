@@ -1420,4 +1420,23 @@ class AppLocalizationsKu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analîza $symbol hate jêbirin';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Li astekê bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.';
+
+  @override
+  String get shareAnalysisTitle => 'Analîzê parve bike';
+
+  @override
+  String get shareAsImage => 'Wek wêne parve bike';
+
+  @override
+  String get shareAsText => 'Wek nivîs parve bike';
+
+  @override
+  String get shareCardFooter => 'Bi WhatStock hatiye çêkirin';
+
+  @override
+  String get shareCardDisclaimer => 'Analîza AI · ne şîreta veberhênanê ye';
 }

@@ -390,5 +390,11 @@
   "seeAll": "ყველას ნახვა ({count})",
   "searchAnalyses": "თქვენს ანალიზებში ძიება",
   "deleteAnalysis": "წაშლა",
-  "analysisDeleted": "{symbol}-ის ანალიზი წაიშალა"
+  "analysisDeleted": "{symbol}-ის ანალიზი წაიშალა",
+  "keyLevelAlertHint": "შეეხეთ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.",
+  "shareAnalysisTitle": "ანალიზის გაზიარება",
+  "shareAsImage": "სურათად გაზიარება",
+  "shareAsText": "ტექსტად გაზიარება",
+  "shareCardFooter": "შექმნილია WhatStock-ით",
+  "shareCardDisclaimer": "AI ანალიზი · არ არის საინვესტიციო რჩევა"
 }

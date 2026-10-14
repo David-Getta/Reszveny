@@ -1450,4 +1450,23 @@ class AppLocalizationsLv extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol analīze izdzēsta';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Pieskarieties līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.';
+
+  @override
+  String get shareAnalysisTitle => 'Kopīgot analīzi';
+
+  @override
+  String get shareAsImage => 'Kopīgot kā attēlu';
+
+  @override
+  String get shareAsText => 'Kopīgot kā tekstu';
+
+  @override
+  String get shareCardFooter => 'Izveidots ar WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI analīze · nav ieguldījumu konsultācija';
 }

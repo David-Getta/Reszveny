@@ -1459,4 +1459,23 @@ class AppLocalizationsUk extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Аналіз $symbol видалено';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Натисніть на рівень, щоб отримати сповіщення, коли ціна його досягне.';
+
+  @override
+  String get shareAnalysisTitle => 'Поділитися аналізом';
+
+  @override
+  String get shareAsImage => 'Поділитися зображенням';
+
+  @override
+  String get shareAsText => 'Поділитися текстом';
+
+  @override
+  String get shareCardFooter => 'Створено у WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'ШІ-аналіз · не інвестиційна порада';
 }

@@ -1426,4 +1426,23 @@ class AppLocalizationsDe extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analyse zu $symbol gelöscht';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tippe auf eine Kursmarke, um einen Alarm zu erhalten, wenn der Kurs sie erreicht.';
+
+  @override
+  String get shareAnalysisTitle => 'Analyse teilen';
+
+  @override
+  String get shareAsImage => 'Als Bild teilen';
+
+  @override
+  String get shareAsText => 'Als Text teilen';
+
+  @override
+  String get shareCardFooter => 'Erstellt mit WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'KI-Analyse · keine Anlageberatung';
 }

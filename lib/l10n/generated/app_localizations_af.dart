@@ -1420,4 +1420,23 @@ class AppLocalizationsAf extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol-ontleding uitgevee';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tik op ’n vlak om ’n waarskuwing te kry wanneer die prys dit bereik.';
+
+  @override
+  String get shareAnalysisTitle => 'Deel ontleding';
+
+  @override
+  String get shareAsImage => 'Deel as prent';
+
+  @override
+  String get shareAsText => 'Deel as teks';
+
+  @override
+  String get shareCardFooter => 'Gemaak met WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI-ontleding · nie beleggingsadvies nie';
 }

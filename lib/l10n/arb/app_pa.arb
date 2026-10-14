@@ -390,5 +390,11 @@
   "seeAll": "ਸਾਰੇ ਦੇਖੋ ({count})",
   "searchAnalyses": "ਆਪਣੇ ਵਿਸ਼ਲੇਸ਼ਣ ਖੋਜੋ",
   "deleteAnalysis": "ਮਿਟਾਓ",
-  "analysisDeleted": "{symbol} ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਟਾਇਆ ਗਿਆ"
+  "analysisDeleted": "{symbol} ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਟਾਇਆ ਗਿਆ",
+  "keyLevelAlertHint": "ਕੀਮਤ ਕਿਸੇ ਪੱਧਰ ’ਤੇ ਪਹੁੰਚਣ ’ਤੇ ਅਲਰਟ ਲੈਣ ਲਈ ਉਸ ਪੱਧਰ ’ਤੇ ਟੈਪ ਕਰੋ।",
+  "shareAnalysisTitle": "ਵਿਸ਼ਲੇਸ਼ਣ ਸਾਂਝਾ ਕਰੋ",
+  "shareAsImage": "ਤਸਵੀਰ ਵਜੋਂ ਸਾਂਝਾ ਕਰੋ",
+  "shareAsText": "ਟੈਕਸਟ ਵਜੋਂ ਸਾਂਝਾ ਕਰੋ",
+  "shareCardFooter": "WhatStock ਨਾਲ ਬਣਾਇਆ ਗਿਆ",
+  "shareCardDisclaimer": "AI ਵਿਸ਼ਲੇਸ਼ਣ · ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ"
 }

@@ -10,6 +10,7 @@ import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/home/history_section.dart';
+import 'package:reszveny/features/stock_detail/widgets/share_card.dart';
 import 'package:reszveny/features/analysis/stock_analyst.dart';
 
 import 'app_widget_test.dart' show services;
@@ -234,6 +235,12 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('share-analysis')));
     await tester.pumpAndSettle();
+    // Előnézet: a kép-kártya és a két lehetőség.
+    expect(find.text('Share analysis'), findsOneWidget);
+    expect(find.byType(AnalysisShareCard), findsOneWidget);
+    expect(find.text('Made with WhatStock'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('share-text')));
+    await tester.pumpAndSettle();
 
     expect(shared, hasLength(1));
     expect(shared.single.subject, 'AAPL · WhatStock');
@@ -242,6 +249,35 @@ void main() {
     expect(text, contains('Test headline'));
     expect(text, contains('Para'));
     expect(text, isNot(contains('News bullet')));
+  });
+
+  testWidgets('sharing as an image sends a 1080×1350 PNG card', (tester) async {
+    _phone(tester);
+    final images = <({int bytes, String name, String? subject})>[];
+    final original = shareImage;
+    shareImage = (png, {required fileName, text, subject, origin}) async =>
+        images.add((bytes: png.length, name: fileName, subject: subject));
+    addTearDown(() => shareImage = original);
+
+    await tester.pumpWidget(WhatStockApp(services: services()));
+    await tester.pumpAndSettle();
+    await _search(tester, 'AAPL');
+    await tester.tap(find.text('Generate analysis'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('share-analysis')));
+    await tester.pumpAndSettle();
+    // A kép a valódi renderelőn készül, ezért valódi aszinkron időben.
+    await tester.runAsync(() async {
+      await tester.tap(find.byKey(const ValueKey('share-image')));
+      for (var i = 0; i < 50 && images.isEmpty; i++) {
+        await Future<void>.delayed(const Duration(milliseconds: 20));
+      }
+    });
+    await tester.pumpAndSettle();
+    expect(images, hasLength(1));
+    expect(images.single.name, 'whatstock-aapl.png');
+    expect(images.single.subject, 'AAPL · WhatStock');
+    expect(images.single.bytes, greaterThan(1000));
   });
 
   group('ReportStore saved analyses', () {

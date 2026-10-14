@@ -390,5 +390,11 @@
   "seeAll": "Hemûyan bibîne ({count})",
   "searchAnalyses": "Di analîzên xwe de bigere",
   "deleteAnalysis": "Jê bibe",
-  "analysisDeleted": "Analîza {symbol} hate jêbirin"
+  "analysisDeleted": "Analîza {symbol} hate jêbirin",
+  "keyLevelAlertHint": "Li astekê bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.",
+  "shareAnalysisTitle": "Analîzê parve bike",
+  "shareAsImage": "Wek wêne parve bike",
+  "shareAsText": "Wek nivîs parve bike",
+  "shareCardFooter": "Bi WhatStock hatiye çêkirin",
+  "shareCardDisclaimer": "Analîza AI · ne şîreta veberhênanê ye"
 }

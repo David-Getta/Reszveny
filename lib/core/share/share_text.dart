@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/widgets.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -9,6 +11,29 @@ typedef ShareHandler = Future<void> Function(String text, {String? subject, Rect
 
 ShareHandler shareText = (text, {subject, origin}) async {
   await SharePlus.instance.share(ShareParams(text: text, subject: subject, sharePositionOrigin: origin));
+};
+
+/// Kép megosztása (PNG) a rendszer megosztás-menüjével; tesztben lecserélhető.
+typedef ImageShareHandler = Future<void> Function(
+  Uint8List png, {
+  required String fileName,
+  String? text,
+  String? subject,
+  Rect? origin,
+});
+
+ImageShareHandler shareImage = (png, {required fileName, text, subject, origin}) async {
+  await SharePlus.instance.share(
+    ShareParams(
+      files: [XFile.fromData(png, mimeType: 'image/png', name: fileName)],
+      fileNameOverrides: [fileName],
+      text: text,
+      subject: subject,
+      sharePositionOrigin: origin,
+      // Weben, ha a böngésző nem tud fájlt megosztani, letöltésként kapja meg.
+      downloadFallbackEnabled: true,
+    ),
+  );
 };
 
 /// A megosztott elemzés szövege: cím, lényeg, az összefoglaló első bekezdése,

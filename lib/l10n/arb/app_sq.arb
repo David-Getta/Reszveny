@@ -390,5 +390,11 @@
   "seeAll": "Shiko të gjitha ({count})",
   "searchAnalyses": "Kërko në analizat e tua",
   "deleteAnalysis": "Fshi",
-  "analysisDeleted": "Analiza e {symbol} u fshi"
+  "analysisDeleted": "Analiza e {symbol} u fshi",
+  "keyLevelAlertHint": "Prekni një nivel për të marrë alarm kur çmimi ta arrijë.",
+  "shareAnalysisTitle": "Ndaj analizën",
+  "shareAsImage": "Ndaj si imazh",
+  "shareAsText": "Ndaj si tekst",
+  "shareCardFooter": "Krijuar me WhatStock",
+  "shareCardDisclaimer": "Analiza me AI · nuk është këshillë investimi"
 }

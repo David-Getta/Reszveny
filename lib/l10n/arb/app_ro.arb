@@ -390,5 +390,11 @@
   "seeAll": "Vezi toate ({count})",
   "searchAnalyses": "Caută în analizele tale",
   "deleteAnalysis": "Șterge",
-  "analysisDeleted": "Analiza {symbol} a fost ștearsă"
+  "analysisDeleted": "Analiza {symbol} a fost ștearsă",
+  "keyLevelAlertHint": "Atinge un nivel ca să primești o alertă când prețul ajunge la el.",
+  "shareAnalysisTitle": "Distribuie analiza",
+  "shareAsImage": "Distribuie ca imagine",
+  "shareAsText": "Distribuie ca text",
+  "shareCardFooter": "Creat cu WhatStock",
+  "shareCardDisclaimer": "Analiză AI · nu este sfat de investiții"
 }

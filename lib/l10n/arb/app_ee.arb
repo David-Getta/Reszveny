@@ -390,5 +390,11 @@
   "seeAll": "Kpɔ wo katã ({count})",
   "searchAnalyses": "Di le wò numekukuwo me",
   "deleteAnalysis": "Tutui",
-  "analysisDeleted": "Wotutu {symbol} ƒe numekuku"
+  "analysisDeleted": "Wotutu {symbol} ƒe numekuku",
+  "keyLevelAlertHint": "Zi ɖoƒe aɖe be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.",
+  "shareAnalysisTitle": "Ma numekuku",
+  "shareAsImage": "Ma abe nɔnɔmetata",
+  "shareAsText": "Ma abe nuŋɔŋlɔ",
+  "shareCardFooter": "Wotsɔ WhatStock wɔe",
+  "shareCardDisclaimer": "AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o"
 }

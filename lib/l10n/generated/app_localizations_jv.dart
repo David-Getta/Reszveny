@@ -1418,4 +1418,23 @@ class AppLocalizationsJv extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analisis $symbol wis dibusak';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tutul level kanggo éntuk pèngetan nalika rega tekan level kasebut.';
+
+  @override
+  String get shareAnalysisTitle => 'Bagekake analisis';
+
+  @override
+  String get shareAsImage => 'Bagekake minangka gambar';
+
+  @override
+  String get shareAsText => 'Bagekake minangka teks';
+
+  @override
+  String get shareCardFooter => 'Digawe nganggo WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analisis AI · dudu saran investasi';
 }

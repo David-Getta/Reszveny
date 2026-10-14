@@ -390,5 +390,11 @@
   "seeAll": "Llapanta qhaway ({count})",
   "searchAnalyses": "T'aqwiyniykikunapi maskay",
   "deleteAnalysis": "Pichay",
-  "analysisDeleted": "{symbol} t'aqwiyqa pichasqaña"
+  "analysisDeleted": "{symbol} t'aqwiyqa pichasqaña",
+  "keyLevelAlertHint": "Huk patata ñit'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.",
+  "shareAnalysisTitle": "T'aqwiyta rakiy",
+  "shareAsImage": "Rikch'a hina rakiy",
+  "shareAsText": "Qillqa hina rakiy",
+  "shareCardFooter": "WhatStockwan ruwasqa",
+  "shareCardDisclaimer": "AI t'aqwiy · manan qullqi churanapaq yuyaychaychu"
 }

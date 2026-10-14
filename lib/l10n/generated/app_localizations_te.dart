@@ -1422,4 +1422,23 @@ class AppLocalizationsTe extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol విశ్లేషణ తొలగించబడింది';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ధర ఒక స్థాయిని చేరినప్పుడు హెచ్చరిక పొందడానికి ఆ స్థాయిని నొక్కండి.';
+
+  @override
+  String get shareAnalysisTitle => 'విశ్లేషణను షేర్ చేయండి';
+
+  @override
+  String get shareAsImage => 'చిత్రంగా షేర్ చేయండి';
+
+  @override
+  String get shareAsText => 'టెక్స్ట్‌గా షేర్ చేయండి';
+
+  @override
+  String get shareCardFooter => 'WhatStock తో రూపొందించబడింది';
+
+  @override
+  String get shareCardDisclaimer => 'AI విశ్లేషణ · పెట్టుబడి సలహా కాదు';
 }

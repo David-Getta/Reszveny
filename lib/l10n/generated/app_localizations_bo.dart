@@ -1412,4 +1412,23 @@ class AppLocalizationsBo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol ཡི་དབྱེ་ཞིབ་བསུབས་ཟིན';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'གོང་ཚད་ཚད་དེར་སླེབས་སྐབས་ཉེན་བརྡ་ཐོབ་པར་ཚད་ཅིག་ལ་མནན།';
+
+  @override
+  String get shareAnalysisTitle => 'དབྱེ་ཞིབ་མཉམ་སྤྱོད།';
+
+  @override
+  String get shareAsImage => 'པར་རིས་སུ་མཉམ་སྤྱོད།';
+
+  @override
+  String get shareAsText => 'ཡི་གེར་མཉམ་སྤྱོད།';
+
+  @override
+  String get shareCardFooter => 'WhatStock གིས་བཟོས།';
+
+  @override
+  String get shareCardDisclaimer => 'AI དབྱེ་ཞིབ · མ་འཇོག་གི་བསམ་འཆར་མིན།';
 }

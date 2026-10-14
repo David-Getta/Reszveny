@@ -390,5 +390,11 @@
   "seeAll": "Bona tsohle ({count})",
   "searchAnalyses": "Batla ditlhahlobong tsa hao",
   "deleteAnalysis": "Hlakola",
-  "analysisDeleted": "Tlhahlobo ya {symbol} e hlakotswe"
+  "analysisDeleted": "Tlhahlobo ya {symbol} e hlakotswe",
+  "keyLevelAlertHint": "Tobetsa boemo ho fumana tsebiso ha theko e fihla ho bona.",
+  "shareAnalysisTitle": "Arolelana tlhahlobo",
+  "shareAsImage": "Arolelana jwalo ka setshwantsho",
+  "shareAsText": "Arolelana jwalo ka mongolo",
+  "shareCardFooter": "E entswe ka WhatStock",
+  "shareCardDisclaimer": "Tlhahlobo ya AI · hase keletso ya ho tsetela"
 }

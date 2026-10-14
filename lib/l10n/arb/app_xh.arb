@@ -390,5 +390,11 @@
   "seeAll": "Bona konke ({count})",
   "searchAnalyses": "Khangela kuhlalutyo lwakho",
   "deleteAnalysis": "Cima",
-  "analysisDeleted": "Uhlalutyo lwe-{symbol} lucinyiwe"
+  "analysisDeleted": "Uhlalutyo lwe-{symbol} lucinyiwe",
+  "keyLevelAlertHint": "Cofa inqanaba ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.",
+  "shareAnalysisTitle": "Yabelana ngohlalutyo",
+  "shareAsImage": "Yabelana njengomfanekiso",
+  "shareAsText": "Yabelana njengombhalo",
+  "shareCardFooter": "Yenziwe nge-WhatStock",
+  "shareCardDisclaimer": "Uhlalutyo lwe-AI · alulocebiso lotyalo-mali"
 }

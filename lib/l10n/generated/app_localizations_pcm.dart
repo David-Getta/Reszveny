@@ -1418,4 +1418,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol analysis don delete';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tap one level make you get alert when di price reach am.';
+
+  @override
+  String get shareAnalysisTitle => 'Share analysis';
+
+  @override
+  String get shareAsImage => 'Share am as picture';
+
+  @override
+  String get shareAsText => 'Share am as text';
+
+  @override
+  String get shareCardFooter => 'Na WhatStock make am';
+
+  @override
+  String get shareCardDisclaimer => 'AI analysis · e no be investment advice';
 }

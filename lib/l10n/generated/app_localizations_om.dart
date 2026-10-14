@@ -1421,4 +1421,23 @@ class AppLocalizationsOm extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Xiinxalli $symbol haqameera';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Yeroo gatiin sadarkaa tokko gahu akeekkachiisa argachuuf sadarkaa sana tuqi.';
+
+  @override
+  String get shareAnalysisTitle => 'Xiinxala qoodi';
+
+  @override
+  String get shareAsImage => 'Akka suuraatti qoodi';
+
+  @override
+  String get shareAsText => 'Akka barreeffamaatti qoodi';
+
+  @override
+  String get shareCardFooter => 'WhatStock\'n hojjetame';
+
+  @override
+  String get shareCardDisclaimer => 'Xiinxala AI · gorsa invastimantii miti';
 }

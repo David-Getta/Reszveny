@@ -390,5 +390,11 @@
   "seeAll": "查看全部 ({count})",
   "searchAnalyses": "搜尋你的分析",
   "deleteAnalysis": "刪除",
-  "analysisDeleted": "已刪除 {symbol} 分析"
+  "analysisDeleted": "已刪除 {symbol} 分析",
+  "keyLevelAlertHint": "點一下價位，股價到達時便會提示你。",
+  "shareAnalysisTitle": "分享分析",
+  "shareAsImage": "以圖片分享",
+  "shareAsText": "以文字分享",
+  "shareCardFooter": "由 WhatStock 製作",
+  "shareCardDisclaimer": "AI 分析 · 並不構成投資建議"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Tan-awa tanan ({count})",
   "searchAnalyses": "Pangitaa ang imong mga pagtuki",
   "deleteAnalysis": "Papasa",
-  "analysisDeleted": "Napapas ang pagtuki sa {symbol}"
+  "analysisDeleted": "Napapas ang pagtuki sa {symbol}",
+  "keyLevelAlertHint": "I-tap ang usa ka lebel aron makadawat og alerto kon maabot na kini sa presyo.",
+  "shareAnalysisTitle": "Ipaambit ang pagtuki",
+  "shareAsImage": "Ipaambit isip hulagway",
+  "shareAsText": "Ipaambit isip teksto",
+  "shareCardFooter": "Gihimo gamit ang WhatStock",
+  "shareCardDisclaimer": "Pagtuki sa AI · dili tambag sa pagpamuhunan"
 }

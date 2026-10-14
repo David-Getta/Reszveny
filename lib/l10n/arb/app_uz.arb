@@ -390,5 +390,11 @@
   "seeAll": "Barchasini koʻrish ({count})",
   "searchAnalyses": "Tahlillaringizdan qidirish",
   "deleteAnalysis": "Oʻchirish",
-  "analysisDeleted": "{symbol} tahlili oʻchirildi"
+  "analysisDeleted": "{symbol} tahlili oʻchirildi",
+  "keyLevelAlertHint": "Narx darajaga yetganda bildirishnoma olish uchun darajani bosing.",
+  "shareAnalysisTitle": "Tahlilni ulashish",
+  "shareAsImage": "Rasm sifatida ulashish",
+  "shareAsText": "Matn sifatida ulashish",
+  "shareCardFooter": "WhatStock yordamida yaratilgan",
+  "shareCardDisclaimer": "AI tahlili · investitsiya maslahati emas"
 }

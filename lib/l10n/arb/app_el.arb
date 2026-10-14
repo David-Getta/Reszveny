@@ -390,5 +390,11 @@
   "seeAll": "Προβολή όλων ({count})",
   "searchAnalyses": "Αναζήτηση στις αναλύσεις σας",
   "deleteAnalysis": "Διαγραφή",
-  "analysisDeleted": "Η ανάλυση του {symbol} διαγράφηκε"
+  "analysisDeleted": "Η ανάλυση του {symbol} διαγράφηκε",
+  "keyLevelAlertHint": "Πατήστε ένα επίπεδο για να λάβετε ειδοποίηση όταν η τιμή το φτάσει.",
+  "shareAnalysisTitle": "Κοινοποίηση ανάλυσης",
+  "shareAsImage": "Κοινοποίηση ως εικόνα",
+  "shareAsText": "Κοινοποίηση ως κείμενο",
+  "shareCardFooter": "Δημιουργήθηκε με το WhatStock",
+  "shareCardDisclaimer": "Ανάλυση AI · όχι επενδυτική συμβουλή"
 }

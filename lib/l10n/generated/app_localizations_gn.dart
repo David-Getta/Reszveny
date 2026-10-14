@@ -1421,4 +1421,24 @@ class AppLocalizationsGn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Oñemboguete $symbol jehesaʼỹijo';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Eikutu peteĩ nivel ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.';
+
+  @override
+  String get shareAnalysisTitle => 'Emoherakuã jehesaʼỹijo';
+
+  @override
+  String get shareAsImage => 'Emoherakuã taʼãngamíicha';
+
+  @override
+  String get shareAsText => 'Emoherakuã moñeʼẽrãicha';
+
+  @override
+  String get shareCardFooter => 'Ojejapo WhatStock reheve';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua';
 }

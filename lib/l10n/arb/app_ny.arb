@@ -390,5 +390,11 @@
   "seeAll": "Onani zonse ({count})",
   "searchAnalyses": "Sakani zosanthula zanu",
   "deleteAnalysis": "Chotsani",
-  "analysisDeleted": "Kusanthula kwa {symbol} kwachotsedwa"
+  "analysisDeleted": "Kusanthula kwa {symbol} kwachotsedwa",
+  "keyLevelAlertHint": "Dinani mlingo kuti mulandire chidziwitso mtengo ukafika pamenepo.",
+  "shareAnalysisTitle": "Gawani kusanthula",
+  "shareAsImage": "Gawani ngati chithunzi",
+  "shareAsText": "Gawani ngati mawu",
+  "shareCardFooter": "Zapangidwa ndi WhatStock",
+  "shareCardDisclaimer": "Kusanthula kwa AI · si malangizo okhudza kuyika ndalama"
 }

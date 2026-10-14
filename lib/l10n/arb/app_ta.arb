@@ -390,5 +390,11 @@
   "seeAll": "அனைத்தையும் காண் ({count})",
   "searchAnalyses": "உங்கள் பகுப்பாய்வுகளில் தேடு",
   "deleteAnalysis": "நீக்கு",
-  "analysisDeleted": "{symbol} பகுப்பாய்வு நீக்கப்பட்டது"
+  "analysisDeleted": "{symbol} பகுப்பாய்வு நீக்கப்பட்டது",
+  "keyLevelAlertHint": "விலை ஒரு நிலையை அடையும்போது எச்சரிக்கை பெற அந்த நிலையைத் தட்டுங்கள்.",
+  "shareAnalysisTitle": "பகுப்பாய்வைப் பகிர்",
+  "shareAsImage": "படமாகப் பகிர்",
+  "shareAsText": "உரையாகப் பகிர்",
+  "shareCardFooter": "WhatStock மூலம் உருவாக்கப்பட்டது",
+  "shareCardDisclaimer": "AI பகுப்பாய்வு · முதலீட்டு ஆலோசனை அல்ல"
 }

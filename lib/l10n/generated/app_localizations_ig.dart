@@ -1415,4 +1415,23 @@ class AppLocalizationsIg extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'E hichapụla nyocha $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Pịa otu ogo ka ị nweta ọkwa mgbe ọnụahịa ruru ya.';
+
+  @override
+  String get shareAnalysisTitle => 'Kesaa nyocha';
+
+  @override
+  String get shareAsImage => 'Kesaa dị ka foto';
+
+  @override
+  String get shareAsText => 'Kesaa dị ka ederede';
+
+  @override
+  String get shareCardFooter => 'E ji WhatStock mee ya';
+
+  @override
+  String get shareCardDisclaimer => 'Nyocha AI · ọ bụghị ndụmọdụ itinye ego';
 }

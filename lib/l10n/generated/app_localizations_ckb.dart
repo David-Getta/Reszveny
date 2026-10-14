@@ -1418,4 +1418,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'شیکاریی $symbol سڕایەوە';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'دەست لە ئاستێک بدە بۆ ئەوەی کاتێک نرخ دەگاتە ئەو ئاستە ئاگادار بکرێیتەوە.';
+
+  @override
+  String get shareAnalysisTitle => 'هاوبەشکردنی شیکاری';
+
+  @override
+  String get shareAsImage => 'هاوبەشکردن وەک وێنە';
+
+  @override
+  String get shareAsText => 'هاوبەشکردن وەک دەق';
+
+  @override
+  String get shareCardFooter => 'بە WhatStock دروستکراوە';
+
+  @override
+  String get shareCardDisclaimer => 'شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە';
 }

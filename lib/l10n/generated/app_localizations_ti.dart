@@ -1390,4 +1390,22 @@ class AppLocalizationsTi extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'ትንተና $symbol ተሰሪዙ';
   }
+
+  @override
+  String get keyLevelAlertHint => 'ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ደረጃ ጠውቑ።';
+
+  @override
+  String get shareAnalysisTitle => 'ትንተና ኣካፍል';
+
+  @override
+  String get shareAsImage => 'ከም ስእሊ ኣካፍል';
+
+  @override
+  String get shareAsText => 'ከም ጽሑፍ ኣካፍል';
+
+  @override
+  String get shareCardFooter => 'ብWhatStock ዝተሰርሐ';
+
+  @override
+  String get shareCardDisclaimer => 'ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን';
 }

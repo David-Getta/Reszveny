@@ -1461,4 +1461,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Usunięto analizę $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Dotknij poziomu, aby dostać alert, gdy cena go osiągnie.';
+
+  @override
+  String get shareAnalysisTitle => 'Udostępnij analizę';
+
+  @override
+  String get shareAsImage => 'Udostępnij jako obraz';
+
+  @override
+  String get shareAsText => 'Udostępnij jako tekst';
+
+  @override
+  String get shareCardFooter => 'Utworzono w WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Analiza AI · nie stanowi porady inwestycyjnej';
 }

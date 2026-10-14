@@ -1417,4 +1417,23 @@ class AppLocalizationsAz extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol təhlili silindi';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Qiymət səviyyəyə çatanda bildiriş almaq üçün səviyyəyə toxunun.';
+
+  @override
+  String get shareAnalysisTitle => 'Təhlili paylaş';
+
+  @override
+  String get shareAsImage => 'Şəkil kimi paylaş';
+
+  @override
+  String get shareAsText => 'Mətn kimi paylaş';
+
+  @override
+  String get shareCardFooter => 'WhatStock ilə hazırlanıb';
+
+  @override
+  String get shareCardDisclaimer => 'AI təhlili · investisiya məsləhəti deyil';
 }

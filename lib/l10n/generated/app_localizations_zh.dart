@@ -1360,6 +1360,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '已删除 $symbol 分析';
   }
+
+  @override
+  String get keyLevelAlertHint => '点按某个价位，股价到达时即会提醒你。';
+
+  @override
+  String get shareAnalysisTitle => '分享分析';
+
+  @override
+  String get shareAsImage => '以图片分享';
+
+  @override
+  String get shareAsText => '以文本分享';
+
+  @override
+  String get shareCardFooter => '由 WhatStock 制作';
+
+  @override
+  String get shareCardDisclaimer => 'AI 分析 · 不构成投资建议';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2716,4 +2734,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String analysisDeleted(String symbol) {
     return '已刪除 $symbol 分析';
   }
+
+  @override
+  String get keyLevelAlertHint => '點一下價位，股價到達時便會提示你。';
+
+  @override
+  String get shareAnalysisTitle => '分享分析';
+
+  @override
+  String get shareAsImage => '以圖片分享';
+
+  @override
+  String get shareAsText => '以文字分享';
+
+  @override
+  String get shareCardFooter => '由 WhatStock 製作';
+
+  @override
+  String get shareCardDisclaimer => 'AI 分析 · 並不構成投資建議';
 }

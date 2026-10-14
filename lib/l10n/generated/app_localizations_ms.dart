@@ -1422,4 +1422,23 @@ class AppLocalizationsMs extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analisis $symbol dipadam';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Ketik paras untuk menerima amaran apabila harga mencapainya.';
+
+  @override
+  String get shareAnalysisTitle => 'Kongsi analisis';
+
+  @override
+  String get shareAsImage => 'Kongsi sebagai imej';
+
+  @override
+  String get shareAsText => 'Kongsi sebagai teks';
+
+  @override
+  String get shareCardFooter => 'Dibuat dengan WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analisis AI · bukan nasihat pelaburan';
 }

@@ -390,5 +390,11 @@
   "seeAll": "Види ги сите ({count})",
   "searchAnalyses": "Пребарај ги своите анализи",
   "deleteAnalysis": "Избриши",
-  "analysisDeleted": "Анализата за {symbol} е избришана"
+  "analysisDeleted": "Анализата за {symbol} е избришана",
+  "keyLevelAlertHint": "Допрете ниво за да добиете известување кога цената ќе го достигне.",
+  "shareAnalysisTitle": "Сподели ја анализата",
+  "shareAsImage": "Сподели како слика",
+  "shareAsText": "Сподели како текст",
+  "shareCardFooter": "Направено со WhatStock",
+  "shareCardDisclaimer": "AI-анализа · не е инвестициски совет"
 }

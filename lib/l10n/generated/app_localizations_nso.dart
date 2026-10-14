@@ -1426,4 +1426,24 @@ class AppLocalizationsNso extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Tshekatsheko ya $symbol e phumotšwe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Kgotla maemo go hwetša temošo ge theko e fihla go ona.';
+
+  @override
+  String get shareAnalysisTitle => 'Abelana tshekatsheko';
+
+  @override
+  String get shareAsImage => 'Abelana bjalo ka seswantšho';
+
+  @override
+  String get shareAsText => 'Abelana bjalo ka sengwalwa';
+
+  @override
+  String get shareCardFooter => 'E dirilwe ka WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Tshekatsheko ya AI · ga se keletšo ya peeletšo';
 }

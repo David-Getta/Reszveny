@@ -1417,4 +1417,23 @@ class AppLocalizationsTk extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol seljermesi pozuldy';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Baha derejä ýetende duýduryş almak üçin derejä basyň.';
+
+  @override
+  String get shareAnalysisTitle => 'Seljermäni paýlaş';
+
+  @override
+  String get shareAsImage => 'Surat hökmünde paýlaş';
+
+  @override
+  String get shareAsText => 'Tekst hökmünde paýlaş';
+
+  @override
+  String get shareCardFooter => 'WhatStock bilen döredildi';
+
+  @override
+  String get shareCardDisclaimer => 'AI seljermesi · maýa goýum maslahaty däl';
 }

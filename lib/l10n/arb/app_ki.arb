@@ -390,5 +390,11 @@
   "seeAll": "Ona yothe ({count})",
   "searchAnalyses": "Caria ũthuthuria waku",
   "deleteAnalysis": "Eheria",
-  "analysisDeleted": "Ũthuthuria wa {symbol} weherio"
+  "analysisDeleted": "Ũthuthuria wa {symbol} weherio",
+  "keyLevelAlertHint": "Hihinya mũhaka nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.",
+  "shareAnalysisTitle": "Gayana ũthuthuria",
+  "shareAsImage": "Gayana ta mbica",
+  "shareAsText": "Gayana ta mandĩko",
+  "shareCardFooter": "Ũthondeketwo na WhatStock",
+  "shareCardDisclaimer": "Ũthuthuria wa AI · ti ũtaaro wa investment"
 }

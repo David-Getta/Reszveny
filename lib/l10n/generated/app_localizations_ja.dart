@@ -1372,4 +1372,22 @@ class AppLocalizationsJa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol の分析を削除しました';
   }
+
+  @override
+  String get keyLevelAlertHint => '価格水準をタップすると、株価がその水準に達したときにアラートが届きます。';
+
+  @override
+  String get shareAnalysisTitle => '分析を共有';
+
+  @override
+  String get shareAsImage => '画像で共有';
+
+  @override
+  String get shareAsText => 'テキストで共有';
+
+  @override
+  String get shareCardFooter => 'WhatStock で作成';
+
+  @override
+  String get shareCardDisclaimer => 'AI 分析 · 投資助言ではありません';
 }

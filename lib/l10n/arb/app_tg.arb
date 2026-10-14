@@ -390,5 +390,11 @@
   "seeAll": "Ҳамаро дидан ({count})",
   "searchAnalyses": "Ҷустуҷӯ дар таҳлилҳои шумо",
   "deleteAnalysis": "Нест кардан",
-  "analysisDeleted": "Таҳлили {symbol} нест карда шуд"
+  "analysisDeleted": "Таҳлили {symbol} нест карда шуд",
+  "keyLevelAlertHint": "Сатҳро пахш кунед, то вақте нарх ба он расад, огоҳӣ гиред.",
+  "shareAnalysisTitle": "Мубодилаи таҳлил",
+  "shareAsImage": "Ҳамчун тасвир мубодила кардан",
+  "shareAsText": "Ҳамчун матн мубодила кардан",
+  "shareCardFooter": "Бо WhatStock сохта шудааст",
+  "shareCardDisclaimer": "Таҳлили AI · маслиҳати сармоягузорӣ нест"
 }

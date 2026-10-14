@@ -390,5 +390,11 @@
   "seeAll": "Gis yépp ({count})",
   "searchAnalyses": "Seet ci say saytu",
   "deleteAnalysis": "Far",
-  "analysisDeleted": "Far nañu saytu {symbol}"
+  "analysisDeleted": "Far nañu saytu {symbol}",
+  "keyLevelAlertHint": "Bës ci benn dayo ngir am artu bu njëg gi agsee fa.",
+  "shareAnalysisTitle": "Séddoo saytu bi",
+  "shareAsImage": "Séddoo ko ni nataal",
+  "shareAsText": "Séddoo ko ni mbind",
+  "shareCardFooter": "Defar nañu ko ak WhatStock",
+  "shareCardDisclaimer": "Saytu AI · du ndigal ci dugal xaalis"
 }

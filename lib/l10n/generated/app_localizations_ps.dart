@@ -1413,4 +1413,23 @@ class AppLocalizationsPs extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'د $symbol تحلیل ړنګ شو';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'پر یوې کچې ټک وکړئ څو کله چې بیه هغې ته ورسیږي، خبرتیا ترلاسه کړئ.';
+
+  @override
+  String get shareAnalysisTitle => 'تحلیل شریک کړئ';
+
+  @override
+  String get shareAsImage => 'د انځور په توګه شریک کړئ';
+
+  @override
+  String get shareAsText => 'د متن په توګه شریک کړئ';
+
+  @override
+  String get shareCardFooter => 'د WhatStock په مرسته جوړ شوی';
+
+  @override
+  String get shareCardDisclaimer => 'AI تحلیل · د پانګونې مشوره نه ده';
 }

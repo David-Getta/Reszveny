@@ -1444,4 +1444,23 @@ class AppLocalizationsRo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analiza $symbol a fost ștearsă';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Atinge un nivel ca să primești o alertă când prețul ajunge la el.';
+
+  @override
+  String get shareAnalysisTitle => 'Distribuie analiza';
+
+  @override
+  String get shareAsImage => 'Distribuie ca imagine';
+
+  @override
+  String get shareAsText => 'Distribuie ca text';
+
+  @override
+  String get shareCardFooter => 'Creat cu WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analiză AI · nu este sfat de investiții';
 }

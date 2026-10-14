@@ -390,5 +390,11 @@
   "seeAll": "عرض الكل ({count})",
   "searchAnalyses": "ابحث في تحليلاتك",
   "deleteAnalysis": "حذف",
-  "analysisDeleted": "تم حذف تحليل {symbol}"
+  "analysisDeleted": "تم حذف تحليل {symbol}",
+  "keyLevelAlertHint": "انقر على مستوى لتلقي تنبيه عندما يصل السعر إليه.",
+  "shareAnalysisTitle": "مشاركة التحليل",
+  "shareAsImage": "مشاركة كصورة",
+  "shareAsText": "مشاركة كنص",
+  "shareCardFooter": "صُنع باستخدام WhatStock",
+  "shareCardDisclaimer": "تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية"
 }

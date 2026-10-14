@@ -390,5 +390,11 @@
   "seeAll": "Барысын да карау ({count})",
   "searchAnalyses": "Анализларыгыздан эзләү",
   "deleteAnalysis": "Бетерү",
-  "analysisDeleted": "{symbol} анализы бетерелде"
+  "analysisDeleted": "{symbol} анализы бетерелде",
+  "keyLevelAlertHint": "Бәя дәрәҗәгә җиткәч искәртү алу өчен дәрәҗәгә басыгыз.",
+  "shareAnalysisTitle": "Анализ белән бүлешү",
+  "shareAsImage": "Рәсем итеп бүлешү",
+  "shareAsText": "Текст итеп бүлешү",
+  "shareCardFooter": "WhatStock ярдәмендә ясалган",
+  "shareCardDisclaimer": "AI анализы · инвестиция киңәше түгел"
 }

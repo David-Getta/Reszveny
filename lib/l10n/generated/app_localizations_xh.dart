@@ -1423,4 +1423,24 @@ class AppLocalizationsXh extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Uhlalutyo lwe-$symbol lucinyiwe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Cofa inqanaba ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.';
+
+  @override
+  String get shareAnalysisTitle => 'Yabelana ngohlalutyo';
+
+  @override
+  String get shareAsImage => 'Yabelana njengomfanekiso';
+
+  @override
+  String get shareAsText => 'Yabelana njengombhalo';
+
+  @override
+  String get shareCardFooter => 'Yenziwe nge-WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Uhlalutyo lwe-AI · alulocebiso lotyalo-mali';
 }

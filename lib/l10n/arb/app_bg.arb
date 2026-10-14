@@ -390,5 +390,11 @@
   "seeAll": "Виж всички ({count})",
   "searchAnalyses": "Търси в анализите си",
   "deleteAnalysis": "Изтрий",
-  "analysisDeleted": "Анализът на {symbol} е изтрит"
+  "analysisDeleted": "Анализът на {symbol} е изтрит",
+  "keyLevelAlertHint": "Докоснете ниво, за да получите известие, когато цената го достигне.",
+  "shareAnalysisTitle": "Споделяне на анализа",
+  "shareAsImage": "Споделяне като изображение",
+  "shareAsText": "Споделяне като текст",
+  "shareCardFooter": "Създадено с WhatStock",
+  "shareCardDisclaimer": "AI анализ · не е инвестиционен съвет"
 }

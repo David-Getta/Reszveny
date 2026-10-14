@@ -390,5 +390,11 @@
   "seeAll": "အားလုံးကြည့်ရန် ({count})",
   "searchAnalyses": "သင့်သုံးသပ်ချက်များကို ရှာရန်",
   "deleteAnalysis": "ဖျက်ရန်",
-  "analysisDeleted": "{symbol} သုံးသပ်ချက်ကို ဖျက်လိုက်ပြီ"
+  "analysisDeleted": "{symbol} သုံးသပ်ချက်ကို ဖျက်လိုက်ပြီ",
+  "keyLevelAlertHint": "ဈေးနှုန်း ထိုအဆင့်သို့ ရောက်သည့်အခါ သတိပေးချက် ရယူရန် အဆင့်တစ်ခုကို တို့ပါ။",
+  "shareAnalysisTitle": "သုံးသပ်ချက်ကို မျှဝေရန်",
+  "shareAsImage": "ပုံအဖြစ် မျှဝေရန်",
+  "shareAsText": "စာသားအဖြစ် မျှဝေရန်",
+  "shareCardFooter": "WhatStock ဖြင့် ပြုလုပ်ထားသည်",
+  "shareCardDisclaimer": "AI သုံးသပ်ချက် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Tan-awa tanan ({count})",
   "searchAnalyses": "Pangitaa ang imo mga analisis",
   "deleteAnalysis": "Panasa",
-  "analysisDeleted": "Napanas ang analisis sang {symbol}"
+  "analysisDeleted": "Napanas ang analisis sang {symbol}",
+  "keyLevelAlertHint": "I-tap ang isa ka lebel para makabaton sang alerto kon maabot ini sang presyo.",
+  "shareAnalysisTitle": "Ipaambit ang analisis",
+  "shareAsImage": "Ipaambit subong larawan",
+  "shareAsText": "Ipaambit subong teksto",
+  "shareCardFooter": "Ginhimo gamit ang WhatStock",
+  "shareCardDisclaimer": "Analisis sang AI · indi laygay sa pag-invest"
 }

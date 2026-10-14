@@ -1422,4 +1422,23 @@ class AppLocalizationsMl extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol വിശകലനം ഇല്ലാതാക്കി';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'വില ഒരു നിലയിലെത്തുമ്പോൾ അലേർട്ട് ലഭിക്കാൻ ആ നിലയിൽ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get shareAnalysisTitle => 'വിശകലനം പങ്കിടുക';
+
+  @override
+  String get shareAsImage => 'ചിത്രമായി പങ്കിടുക';
+
+  @override
+  String get shareAsText => 'ടെക്സ്റ്റായി പങ്കിടുക';
+
+  @override
+  String get shareCardFooter => 'WhatStock ഉപയോഗിച്ച് തയ്യാറാക്കിയത്';
+
+  @override
+  String get shareCardDisclaimer => 'AI വിശകലനം · നിക്ഷേപ ഉപദേശമല്ല';
 }

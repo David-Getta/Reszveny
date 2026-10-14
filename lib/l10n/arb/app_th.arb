@@ -390,5 +390,11 @@
   "seeAll": "ดูทั้งหมด ({count})",
   "searchAnalyses": "ค้นหาการวิเคราะห์ของคุณ",
   "deleteAnalysis": "ลบ",
-  "analysisDeleted": "ลบการวิเคราะห์ {symbol} แล้ว"
+  "analysisDeleted": "ลบการวิเคราะห์ {symbol} แล้ว",
+  "keyLevelAlertHint": "แตะระดับราคาเพื่อรับการแจ้งเตือนเมื่อราคาไปถึงระดับนั้น",
+  "shareAnalysisTitle": "แชร์บทวิเคราะห์",
+  "shareAsImage": "แชร์เป็นรูปภาพ",
+  "shareAsText": "แชร์เป็นข้อความ",
+  "shareCardFooter": "สร้างด้วย WhatStock",
+  "shareCardDisclaimer": "การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน"
 }

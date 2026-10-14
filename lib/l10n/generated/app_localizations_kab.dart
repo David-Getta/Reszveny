@@ -1415,4 +1415,24 @@ class AppLocalizationsKab extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Tasleḍt n $symbol tettwakkes';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Sit ɣef uswir akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.';
+
+  @override
+  String get shareAnalysisTitle => 'Bḍu tasleḍt';
+
+  @override
+  String get shareAsImage => 'Bḍu am tugna';
+
+  @override
+  String get shareAsText => 'Bḍu am uḍris';
+
+  @override
+  String get shareCardFooter => 'Yettwaxdem s WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Tasleḍt s AI · ur d awellih n usersi n yidrimen ara';
 }

@@ -18,26 +18,37 @@ String describeAlert(AppLocalizations l10n, Fmt fmt, PriceAlert a) => switch (a.
 };
 
 /// Új riasztás: feltétel (fölé / alá / napi mozgás) és érték, a jelenlegi
-/// árból kiindulva (±5%). Már teljesült szintet nem enged.
+/// árból kiindulva (±5%), vagy a megadott [initialKind] / [initialValue]
+/// szerint (pl. az AI-elemzés egy kulcsszintjéből). Már teljesült szintet nem enged.
 Future<bool> showAlertDialog(
   BuildContext context, {
   required String symbol,
   String? currency,
   double? currentPrice,
+  AlertKind? initialKind,
+  double? initialValue,
 }) async {
   final created = await showDialog<bool>(
     context: context,
-    builder: (_) => _AlertDialog(symbol: symbol, currency: currency, currentPrice: currentPrice),
+    builder: (_) => _AlertDialog(
+      symbol: symbol,
+      currency: currency,
+      currentPrice: currentPrice,
+      initialKind: initialKind,
+      initialValue: initialValue,
+    ),
   );
   return created ?? false;
 }
 
 class _AlertDialog extends StatefulWidget {
-  const _AlertDialog({required this.symbol, this.currency, this.currentPrice});
+  const _AlertDialog({required this.symbol, this.currency, this.currentPrice, this.initialKind, this.initialValue});
 
   final String symbol;
   final String? currency;
   final double? currentPrice;
+  final AlertKind? initialKind;
+  final double? initialValue;
 
   @override
   State<_AlertDialog> createState() => _AlertDialogState();
@@ -51,7 +62,8 @@ class _AlertDialogState extends State<_AlertDialog> {
   @override
   void initState() {
     super.initState();
-    _prefill();
+    _kind = widget.initialKind ?? _kind;
+    _prefill(value: widget.initialValue);
   }
 
   @override
@@ -60,13 +72,15 @@ class _AlertDialogState extends State<_AlertDialog> {
     super.dispose();
   }
 
-  void _prefill() {
+  void _prefill({double? value}) {
     final p = widget.currentPrice;
-    final v = switch (_kind) {
-      AlertKind.above => p == null ? null : p * 1.05,
-      AlertKind.below => p == null ? null : p * 0.95,
-      AlertKind.move => 5.0,
-    };
+    final v =
+        value ??
+        switch (_kind) {
+          AlertKind.above => p == null ? null : p * 1.05,
+          AlertKind.below => p == null ? null : p * 0.95,
+          AlertKind.move => 5.0,
+        };
     _value.text = v == null ? '' : (v >= 100 ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
     _error = null;
   }

@@ -390,5 +390,11 @@
   "seeAll": "Ver todas ({count})",
   "searchAnalyses": "Pesquisar suas análises",
   "deleteAnalysis": "Excluir",
-  "analysisDeleted": "Análise de {symbol} excluída"
+  "analysisDeleted": "Análise de {symbol} excluída",
+  "keyLevelAlertHint": "Toque em um nível para receber um alerta quando o preço chegar a ele.",
+  "shareAnalysisTitle": "Compartilhar análise",
+  "shareAsImage": "Compartilhar como imagem",
+  "shareAsText": "Compartilhar como texto",
+  "shareCardFooter": "Feito com WhatStock",
+  "shareCardDisclaimer": "Análise com IA · não é aconselhamento de investimento"
 }

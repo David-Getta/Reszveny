@@ -101,6 +101,17 @@ class Store {
         created_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS invite_usage_code ON invite_usage(code, created_at);
+      CREATE TABLE IF NOT EXISTS referral_codes (
+        user_id TEXT PRIMARY KEY,
+        code TEXT NOT NULL UNIQUE
+      );
+      CREATE TABLE IF NOT EXISTS referrals (
+        referee_id TEXT PRIMARY KEY,
+        referrer_id TEXT NOT NULL,
+        created_at TEXT NOT NULL,
+        rewarded_at TEXT
+      );
+      CREATE INDEX IF NOT EXISTS referrals_referrer ON referrals(referrer_id);
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
@@ -237,6 +248,8 @@ class Store {
       _db.execute('DELETE FROM entitlements WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
       _db.execute("UPDATE purchases SET user_id = 'deleted' WHERE user_id = ?", [userId]);
       _db.execute('DELETE FROM users WHERE id = ?', [userId]);
@@ -346,6 +359,61 @@ class Store {
     );
     return true;
   }
+
+  // ---- Ajánlói program ----
+  // Mindenkinek saját ajánlókódja van; a meghívott a beváltáskor kap extra
+  // elemzéseket, az ajánló az első elkészült elemzése után.
+
+  static const _referralAlphabet = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+
+  /// A felhasználó ajánlókódja (első kéréskor jön létre), pl. `WS-7K2QXM`.
+  String referralCodeOf(String userId) {
+    final r = _db.select('SELECT code FROM referral_codes WHERE user_id = ?', [userId]);
+    if (r.isNotEmpty) return r.first['code'] as String;
+    while (true) {
+      final code = 'WS-${List.generate(6, (_) => _referralAlphabet[_rng.nextInt(_referralAlphabet.length)]).join()}';
+      if (_db.select('SELECT 1 FROM referral_codes WHERE code = ?', [code]).isNotEmpty) continue;
+      _db.execute('INSERT INTO referral_codes (user_id, code) VALUES (?, ?)', [userId, code]);
+      return code;
+    }
+  }
+
+  static String normalizeReferral(String code) {
+    final c = code.trim().toUpperCase().replaceAll(RegExp(r'[\s_]'), '');
+    return c.startsWith('WS-') ? c : (c.startsWith('WS') ? 'WS-${c.substring(2)}' : 'WS-$c');
+  }
+
+  String? userIdForReferralCode(String code) {
+    final r = _db.select('SELECT user_id FROM referral_codes WHERE code = ?', [normalizeReferral(code)]);
+    return r.isEmpty ? null : r.first['user_id'] as String;
+  }
+
+  bool hasRedeemedReferral(String refereeId) =>
+      _db.select('SELECT 1 FROM referrals WHERE referee_id = ?', [refereeId]).isNotEmpty;
+
+  void addReferral({required String refereeId, required String referrerId}) => _db.execute(
+    'INSERT INTO referrals (referee_id, referrer_id, created_at) VALUES (?, ?, ?)',
+    [refereeId, referrerId, clock().toUtc().toIso8601String()],
+  );
+
+  /// (meghívottak, akik után már jutalmat kapott)
+  (int, int) referralStats(String referrerId) {
+    final r = _db.select('SELECT COUNT(*) AS n, COUNT(rewarded_at) AS rewarded FROM referrals WHERE referrer_id = ?', [
+      referrerId,
+    ]).first;
+    return (r['n'] as int, r['rewarded'] as int);
+  }
+
+  /// Az ajánló, akinek ezért a meghívottért még jár a jutalom (ha van ilyen).
+  String? pendingReferrer(String refereeId) {
+    final r = _db.select('SELECT referrer_id FROM referrals WHERE referee_id = ? AND rewarded_at IS NULL', [refereeId]);
+    return r.isEmpty ? null : r.first['referrer_id'] as String;
+  }
+
+  void markReferralRewarded(String refereeId) => _db.execute(
+    'UPDATE referrals SET rewarded_at = ? WHERE referee_id = ?',
+    [clock().toUtc().toIso8601String(), refereeId],
+  );
 
   // ---- Meghívókódok (zárt előzetes) ----
   // A kódhoz kötött eszközök és elemzések fiók törlése után is megmaradnak

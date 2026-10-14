@@ -390,5 +390,11 @@
   "seeAll": "అన్నీ చూడండి ({count})",
   "searchAnalyses": "మీ విశ్లేషణల్లో వెతకండి",
   "deleteAnalysis": "తొలగించండి",
-  "analysisDeleted": "{symbol} విశ్లేషణ తొలగించబడింది"
+  "analysisDeleted": "{symbol} విశ్లేషణ తొలగించబడింది",
+  "keyLevelAlertHint": "ధర ఒక స్థాయిని చేరినప్పుడు హెచ్చరిక పొందడానికి ఆ స్థాయిని నొక్కండి.",
+  "shareAnalysisTitle": "విశ్లేషణను షేర్ చేయండి",
+  "shareAsImage": "చిత్రంగా షేర్ చేయండి",
+  "shareAsText": "టెక్స్ట్‌గా షేర్ చేయండి",
+  "shareCardFooter": "WhatStock తో రూపొందించబడింది",
+  "shareCardDisclaimer": "AI విశ్లేషణ · పెట్టుబడి సలహా కాదు"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Talá nyonso ({count})",
   "searchAnalyses": "Luká na ba analyse na yo",
   "deleteAnalysis": "Limwisa",
-  "analysisDeleted": "Analyse ya {symbol} elimwisami"
+  "analysisDeleted": "Analyse ya {symbol} elimwisami",
+  "keyLevelAlertHint": "Fina niveau moko mpo na kozwa likebisi ntango ntalo ekokoma wana.",
+  "shareAnalysisTitle": "Kabola analyse",
+  "shareAsImage": "Kabola lokola elilingi",
+  "shareAsText": "Kabola lokola makomi",
+  "shareCardFooter": "Esalemi na WhatStock",
+  "shareCardDisclaimer": "Analyse ya AI · ezali toli ya kotia mbɔngɔ te"
 }

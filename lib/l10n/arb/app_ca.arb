@@ -390,5 +390,11 @@
   "seeAll": "Veure-les totes ({count})",
   "searchAnalyses": "Cerca a les teves anàlisis",
   "deleteAnalysis": "Suprimir",
-  "analysisDeleted": "S’ha suprimit l’anàlisi de {symbol}"
+  "analysisDeleted": "S’ha suprimit l’anàlisi de {symbol}",
+  "keyLevelAlertHint": "Toca un nivell per rebre una alerta quan el preu hi arribi.",
+  "shareAnalysisTitle": "Compartir l’anàlisi",
+  "shareAsImage": "Compartir com a imatge",
+  "shareAsText": "Compartir com a text",
+  "shareCardFooter": "Fet amb WhatStock",
+  "shareCardDisclaimer": "Anàlisi amb IA · no és assessorament d’inversió"
 }

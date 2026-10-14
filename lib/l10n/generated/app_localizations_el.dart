@@ -1423,4 +1423,23 @@ class AppLocalizationsEl extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Η ανάλυση του $symbol διαγράφηκε';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Πατήστε ένα επίπεδο για να λάβετε ειδοποίηση όταν η τιμή το φτάσει.';
+
+  @override
+  String get shareAnalysisTitle => 'Κοινοποίηση ανάλυσης';
+
+  @override
+  String get shareAsImage => 'Κοινοποίηση ως εικόνα';
+
+  @override
+  String get shareAsText => 'Κοινοποίηση ως κείμενο';
+
+  @override
+  String get shareCardFooter => 'Δημιουργήθηκε με το WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Ανάλυση AI · όχι επενδυτική συμβουλή';
 }

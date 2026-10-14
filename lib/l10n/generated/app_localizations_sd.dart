@@ -1412,4 +1412,23 @@ class AppLocalizationsSd extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol جو تجزيو ميٽيو ويو';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ڪنهن سطح تي ٽيپ ڪريو ته جيئن قيمت اتي پهچڻ تي الرٽ ملي.';
+
+  @override
+  String get shareAnalysisTitle => 'تجزيو شيئر ڪريو';
+
+  @override
+  String get shareAsImage => 'تصوير طور شيئر ڪريو';
+
+  @override
+  String get shareAsText => 'متن طور شيئر ڪريو';
+
+  @override
+  String get shareCardFooter => 'WhatStock سان ٺهيل';
+
+  @override
+  String get shareCardDisclaimer => 'AI تجزيو · سيڙپڪاري جو مشورو ناهي';
 }

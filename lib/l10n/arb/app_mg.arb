@@ -390,5 +390,11 @@
   "seeAll": "Jereo daholo ({count})",
   "searchAnalyses": "Hikaroka ao amin'ny fandalinanao",
   "deleteAnalysis": "Fafao",
-  "analysisDeleted": "Voafafa ny fandalinana {symbol}"
+  "analysisDeleted": "Voafafa ny fandalinana {symbol}",
+  "keyLevelAlertHint": "Tsindrio ny haavo iray mba handraisana fanairana rehefa tonga eo ny vidiny.",
+  "shareAnalysisTitle": "Hizarao ny fandalinana",
+  "shareAsImage": "Hizarao ho sary",
+  "shareAsText": "Hizarao ho soratra",
+  "shareCardFooter": "Natao tamin'ny WhatStock",
+  "shareCardDisclaimer": "Fandalinana AI · tsy torohevitra momba ny fampiasam-bola"
 }

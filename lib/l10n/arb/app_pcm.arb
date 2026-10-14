@@ -390,5 +390,11 @@
   "seeAll": "See all ({count})",
   "searchAnalyses": "Search your analysis dem",
   "deleteAnalysis": "Delete",
-  "analysisDeleted": "{symbol} analysis don delete"
+  "analysisDeleted": "{symbol} analysis don delete",
+  "keyLevelAlertHint": "Tap one level make you get alert when di price reach am.",
+  "shareAnalysisTitle": "Share analysis",
+  "shareAsImage": "Share am as picture",
+  "shareAsText": "Share am as text",
+  "shareCardFooter": "Na WhatStock make am",
+  "shareCardDisclaimer": "AI analysis · e no be investment advice"
 }

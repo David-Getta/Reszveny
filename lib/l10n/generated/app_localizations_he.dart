@@ -1417,4 +1417,23 @@ class AppLocalizationsHe extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'הניתוח של $symbol נמחק';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'הקישו על רמה כדי לקבל התראה כשהמחיר מגיע אליה.';
+
+  @override
+  String get shareAnalysisTitle => 'שיתוף הניתוח';
+
+  @override
+  String get shareAsImage => 'שיתוף כתמונה';
+
+  @override
+  String get shareAsText => 'שיתוף כטקסט';
+
+  @override
+  String get shareCardFooter => 'נוצר באמצעות WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'ניתוח AI · אינו ייעוץ השקעות';
 }

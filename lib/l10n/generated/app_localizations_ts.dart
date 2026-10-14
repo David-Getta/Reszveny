@@ -1427,4 +1427,23 @@ class AppLocalizationsTs extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Nxopaxopo wa $symbol wu suriwile';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tshikelela xiyimo leswaku u kuma xitiviso loko nxavo wu fika kona.';
+
+  @override
+  String get shareAnalysisTitle => 'Avelana nxopaxopo';
+
+  @override
+  String get shareAsImage => 'Avelana tanihi xifaniso';
+
+  @override
+  String get shareAsText => 'Avelana tanihi tsalwa';
+
+  @override
+  String get shareCardFooter => 'Swi endliwe hi WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Nxopaxopo wa AI · a hi ndzayo ya vuvekisi';
 }

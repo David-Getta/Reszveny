@@ -1425,4 +1425,24 @@ class AppLocalizationsTn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Tshekatsheko ya $symbol e phimotswe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tobetsa maemo go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.';
+
+  @override
+  String get shareAnalysisTitle => 'Abelana tshekatsheko';
+
+  @override
+  String get shareAsImage => 'Abelana jaaka setshwantsho';
+
+  @override
+  String get shareAsText => 'Abelana jaaka mokwalo';
+
+  @override
+  String get shareCardFooter => 'E dirilwe ka WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Tshekatsheko ya AI · ga se kgakololo ya peeletso';
 }

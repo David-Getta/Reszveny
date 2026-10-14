@@ -390,5 +390,11 @@
   "seeAll": "سب دیکھیں ({count})",
   "searchAnalyses": "اپنے تجزیوں میں تلاش کریں",
   "deleteAnalysis": "حذف کریں",
-  "analysisDeleted": "{symbol} کا تجزیہ حذف کر دیا گیا"
+  "analysisDeleted": "{symbol} کا تجزیہ حذف کر دیا گیا",
+  "keyLevelAlertHint": "کسی سطح پر ٹیپ کریں تاکہ قیمت وہاں پہنچنے پر آپ کو الرٹ ملے۔",
+  "shareAnalysisTitle": "تجزیہ شیئر کریں",
+  "shareAsImage": "تصویر کے طور پر شیئر کریں",
+  "shareAsText": "متن کے طور پر شیئر کریں",
+  "shareCardFooter": "WhatStock سے تیار کردہ",
+  "shareCardDisclaimer": "AI تجزیہ · سرمایہ کاری کا مشورہ نہیں"
 }

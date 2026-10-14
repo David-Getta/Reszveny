@@ -390,5 +390,11 @@
   "seeAll": "Duba duka ({count})",
   "searchAnalyses": "Bincika nazarinka",
   "deleteAnalysis": "Share",
-  "analysisDeleted": "An share nazarin {symbol}"
+  "analysisDeleted": "An share nazarin {symbol}",
+  "keyLevelAlertHint": "Taɓa wani mataki don samun faɗakarwa idan farashi ya kai shi.",
+  "shareAnalysisTitle": "Raba nazari",
+  "shareAsImage": "Raba a matsayin hoto",
+  "shareAsText": "Raba a matsayin rubutu",
+  "shareCardFooter": "An yi da WhatStock",
+  "shareCardDisclaimer": "Nazarin AI · ba shawarar zuba jari ba ne"
 }

@@ -1424,4 +1424,24 @@ class AppLocalizationsQu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol t\'aqwiyqa pichasqaña';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Huk patata ñit\'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.';
+
+  @override
+  String get shareAnalysisTitle => 'T\'aqwiyta rakiy';
+
+  @override
+  String get shareAsImage => 'Rikch\'a hina rakiy';
+
+  @override
+  String get shareAsText => 'Qillqa hina rakiy';
+
+  @override
+  String get shareCardFooter => 'WhatStockwan ruwasqa';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI t\'aqwiy · manan qullqi churanapaq yuyaychaychu';
 }

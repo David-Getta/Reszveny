@@ -390,5 +390,11 @@
   "seeAll": "Hwɛ ne nyinaa ({count})",
   "searchAnalyses": "Hwehwɛ wo nhwehwɛmu mu",
   "deleteAnalysis": "Popa",
-  "analysisDeleted": "Wɔapopa {symbol} nhwehwɛmu"
+  "analysisDeleted": "Wɔapopa {symbol} nhwehwɛmu",
+  "keyLevelAlertHint": "Mia gyinabea bi na wobɛnya kɔkɔbɔ bere a bo no du hɔ.",
+  "shareAnalysisTitle": "Kyɛ nhwehwɛmu",
+  "shareAsImage": "Kyɛ sɛ mfonini",
+  "shareAsText": "Kyɛ sɛ nkyerɛwee",
+  "shareCardFooter": "Wɔde WhatStock na ɛyɛe",
+  "shareCardDisclaimer": "AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu"
 }

@@ -1424,4 +1424,24 @@ class AppLocalizationsLg extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Okwekenneenya kwa $symbol kusanguddwawo';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Nyiga omutendera ofune okulabula bbeeyi bw\'etuuka ku gwo.';
+
+  @override
+  String get shareAnalysisTitle => 'Gabana okwekenneenya';
+
+  @override
+  String get shareAsImage => 'Gabana ng\'ekifaananyi';
+
+  @override
+  String get shareAsText => 'Gabana ng\'ebiwandiiko';
+
+  @override
+  String get shareCardFooter => 'Kyakoleddwa ne WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Okwekenneenya kwa AI · si magezi ga kusiga nsimbi';
 }

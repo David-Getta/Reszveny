@@ -1413,4 +1413,23 @@ class AppLocalizationsBho extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol के विश्लेषण मिटा दिहल गइल';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'कवनो स्तर पर टैप करीं, दाम ओह तक पहुँची त अलर्ट मिल जाई।';
+
+  @override
+  String get shareAnalysisTitle => 'विश्लेषण साझा करीं';
+
+  @override
+  String get shareAsImage => 'फोटो के रूप में साझा करीं';
+
+  @override
+  String get shareAsText => 'टेक्स्ट के रूप में साझा करीं';
+
+  @override
+  String get shareCardFooter => 'WhatStock से बनल';
+
+  @override
+  String get shareCardDisclaimer => 'AI विश्लेषण · निवेश के सलाह ना ह';
 }

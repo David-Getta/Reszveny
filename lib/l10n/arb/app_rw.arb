@@ -390,5 +390,11 @@
   "seeAll": "Reba byose ({count})",
   "searchAnalyses": "Shakisha mu masesengura yawe",
   "deleteAnalysis": "Siba",
-  "analysisDeleted": "Isesengura rya {symbol} ryasibwe"
+  "analysisDeleted": "Isesengura rya {symbol} ryasibwe",
+  "keyLevelAlertHint": "Kanda ku gipimo kugira ngo ubone imenyesha igihe igiciro kigeze kuri cyo.",
+  "shareAnalysisTitle": "Sangiza isesengura",
+  "shareAsImage": "Sangiza nk'ifoto",
+  "shareAsText": "Sangiza nk'inyandiko",
+  "shareCardFooter": "Byakozwe na WhatStock",
+  "shareCardDisclaimer": "Isesengura rya AI · si inama yo gushora imari"
 }

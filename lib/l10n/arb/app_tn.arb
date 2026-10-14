@@ -390,5 +390,11 @@
   "seeAll": "Bona tsotlhe ({count})",
   "searchAnalyses": "Batla mo ditshekatshekong tsa gago",
   "deleteAnalysis": "Phimola",
-  "analysisDeleted": "Tshekatsheko ya {symbol} e phimotswe"
+  "analysisDeleted": "Tshekatsheko ya {symbol} e phimotswe",
+  "keyLevelAlertHint": "Tobetsa maemo go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.",
+  "shareAnalysisTitle": "Abelana tshekatsheko",
+  "shareAsImage": "Abelana jaaka setshwantsho",
+  "shareAsText": "Abelana jaaka mokwalo",
+  "shareCardFooter": "E dirilwe ka WhatStock",
+  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se kgakololo ya peeletso"
 }

@@ -1418,4 +1418,24 @@ class AppLocalizationsKi extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Ũthuthuria wa $symbol weherio';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Hihinya mũhaka nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.';
+
+  @override
+  String get shareAnalysisTitle => 'Gayana ũthuthuria';
+
+  @override
+  String get shareAsImage => 'Gayana ta mbica';
+
+  @override
+  String get shareAsText => 'Gayana ta mandĩko';
+
+  @override
+  String get shareCardFooter => 'Ũthondeketwo na WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Ũthuthuria wa AI · ti ũtaaro wa investment';
 }

@@ -390,5 +390,11 @@
   "seeAll": "មើលទាំងអស់ ({count})",
   "searchAnalyses": "ស្វែងរកការវិភាគរបស់អ្នក",
   "deleteAnalysis": "លុប",
-  "analysisDeleted": "បានលុបការវិភាគ {symbol}"
+  "analysisDeleted": "បានលុបការវិភាគ {symbol}",
+  "keyLevelAlertHint": "ចុចកម្រិតតម្លៃណាមួយ ដើម្បីទទួលការជូនដំណឹងនៅពេលតម្លៃដល់កម្រិតនោះ។",
+  "shareAnalysisTitle": "ចែករំលែកការវិភាគ",
+  "shareAsImage": "ចែករំលែកជារូបភាព",
+  "shareAsText": "ចែករំលែកជាអត្ថបទ",
+  "shareCardFooter": "បង្កើតដោយ WhatStock",
+  "shareCardDisclaimer": "ការវិភាគ AI · មិនមែនជាដំបូន្មានវិនិយោគទេ"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Lihat semua ({count})",
   "searchAnalyses": "Cari analisis anda",
   "deleteAnalysis": "Padam",
-  "analysisDeleted": "Analisis {symbol} dipadam"
+  "analysisDeleted": "Analisis {symbol} dipadam",
+  "keyLevelAlertHint": "Ketik paras untuk menerima amaran apabila harga mencapainya.",
+  "shareAnalysisTitle": "Kongsi analisis",
+  "shareAsImage": "Kongsi sebagai imej",
+  "shareAsText": "Kongsi sebagai teks",
+  "shareCardFooter": "Dibuat dengan WhatStock",
+  "shareCardDisclaimer": "Analisis AI · bukan nasihat pelaburan"
 }

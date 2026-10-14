@@ -390,5 +390,11 @@
   "seeAll": "සියල්ල බලන්න ({count})",
   "searchAnalyses": "ඔබේ විශ්ලේෂණ සොයන්න",
   "deleteAnalysis": "මකන්න",
-  "analysisDeleted": "{symbol} විශ්ලේෂණය මකා දමන ලදී"
+  "analysisDeleted": "{symbol} විශ්ලේෂණය මකා දමන ලදී",
+  "keyLevelAlertHint": "මිල මට්ටමකට ළඟා වූ විට ඇඟවීමක් ලබා ගැනීමට එම මට්ටම තට්ටු කරන්න.",
+  "shareAnalysisTitle": "විශ්ලේෂණය බෙදාගන්න",
+  "shareAsImage": "රූපයක් ලෙස බෙදාගන්න",
+  "shareAsText": "පෙළක් ලෙස බෙදාගන්න",
+  "shareCardFooter": "WhatStock සමඟ සාදන ලදී",
+  "shareCardDisclaimer": "AI විශ්ලේෂණය · ආයෝජන උපදෙසක් නොවේ"
 }

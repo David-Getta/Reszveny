@@ -390,5 +390,11 @@
   "seeAll": "Ges fãa ({count})",
   "searchAnalyses": "Bao f vɛɛsgã pʋgẽ",
   "deleteAnalysis": "Yẽes",
-  "analysisDeleted": "{symbol} vɛɛsgã yẽesame"
+  "analysisDeleted": "{symbol} vɛɛsgã yẽesame",
+  "keyLevelAlertHint": "Dĩig zĩig a ye n paam gũusg koosgã sã n ta be.",
+  "shareAnalysisTitle": "Pʋɩ vɛɛsgã",
+  "shareAsImage": "Pʋɩ wa foto",
+  "shareAsText": "Pʋɩ wa gʋlsgo",
+  "shareCardFooter": "A maana ne WhatStock",
+  "shareCardDisclaimer": "AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye"
 }

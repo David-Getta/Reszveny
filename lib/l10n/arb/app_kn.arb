@@ -390,5 +390,11 @@
   "seeAll": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ ({count})",
   "searchAnalyses": "ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಹುಡುಕಿ",
   "deleteAnalysis": "ಅಳಿಸಿ",
-  "analysisDeleted": "{symbol} ವಿಶ್ಲೇಷಣೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ"
+  "analysisDeleted": "{symbol} ವಿಶ್ಲೇಷಣೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ",
+  "keyLevelAlertHint": "ಬೆಲೆ ಒಂದು ಮಟ್ಟವನ್ನು ತಲುಪಿದಾಗ ಅಲರ್ಟ್ ಪಡೆಯಲು ಆ ಮಟ್ಟವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "shareAnalysisTitle": "ವಿಶ್ಲೇಷಣೆ ಹಂಚಿಕೊಳ್ಳಿ",
+  "shareAsImage": "ಚಿತ್ರವಾಗಿ ಹಂಚಿಕೊಳ್ಳಿ",
+  "shareAsText": "ಪಠ್ಯವಾಗಿ ಹಂಚಿಕೊಳ್ಳಿ",
+  "shareCardFooter": "WhatStock ನಿಂದ ರಚಿಸಲಾಗಿದೆ",
+  "shareCardDisclaimer": "AI ವಿಶ್ಲೇಷಣೆ · ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ"
 }

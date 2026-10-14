@@ -390,5 +390,11 @@
   "seeAll": "Tingnan lahat ({count})",
   "searchAnalyses": "Hanapin sa iyong mga pagsusuri",
   "deleteAnalysis": "Burahin",
-  "analysisDeleted": "Nabura ang pagsusuri sa {symbol}"
+  "analysisDeleted": "Nabura ang pagsusuri sa {symbol}",
+  "keyLevelAlertHint": "I-tap ang isang antas para makatanggap ng alerto kapag naabot ito ng presyo.",
+  "shareAnalysisTitle": "Ibahagi ang pagsusuri",
+  "shareAsImage": "Ibahagi bilang larawan",
+  "shareAsText": "Ibahagi bilang teksto",
+  "shareCardFooter": "Ginawa gamit ang WhatStock",
+  "shareCardDisclaimer": "Pagsusuri ng AI · hindi payo sa pamumuhunan"
 }

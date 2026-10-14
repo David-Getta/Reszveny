@@ -1416,4 +1416,23 @@ class AppLocalizationsMr extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol विश्लेषण हटवले';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'किंमत एखाद्या स्तरावर पोहोचल्यावर सूचना मिळवण्यासाठी त्या स्तरावर टॅप करा.';
+
+  @override
+  String get shareAnalysisTitle => 'विश्लेषण शेअर करा';
+
+  @override
+  String get shareAsImage => 'प्रतिमा म्हणून शेअर करा';
+
+  @override
+  String get shareAsText => 'मजकूर म्हणून शेअर करा';
+
+  @override
+  String get shareCardFooter => 'WhatStock वापरून तयार केले';
+
+  @override
+  String get shareCardDisclaimer => 'AI विश्लेषण · गुंतवणूक सल्ला नाही';
 }

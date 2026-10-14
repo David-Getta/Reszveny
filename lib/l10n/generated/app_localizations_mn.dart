@@ -1417,4 +1417,24 @@ class AppLocalizationsMn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol шинжилгээг устгалаа';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Үнэ тухайн түвшинд хүрэхэд сэрэмжлүүлэг авахын тулд түвшин дээр дарна уу.';
+
+  @override
+  String get shareAnalysisTitle => 'Шинжилгээг хуваалцах';
+
+  @override
+  String get shareAsImage => 'Зураг хэлбэрээр хуваалцах';
+
+  @override
+  String get shareAsText => 'Текст хэлбэрээр хуваалцах';
+
+  @override
+  String get shareCardFooter => 'WhatStock-оор бүтээв';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш';
 }

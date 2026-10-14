@@ -390,5 +390,11 @@
   "seeAll": "Усе ({count})",
   "searchAnalyses": "Пошук па аналізах",
   "deleteAnalysis": "Выдаліць",
-  "analysisDeleted": "Аналіз {symbol} выдалены"
+  "analysisDeleted": "Аналіз {symbol} выдалены",
+  "keyLevelAlertHint": "Націсніце на ўзровень, каб атрымаць апавяшчэнне, калі цана яго дасягне.",
+  "shareAnalysisTitle": "Падзяліцца аналізам",
+  "shareAsImage": "Падзяліцца выявай",
+  "shareAsText": "Падзяліцца тэкстам",
+  "shareCardFooter": "Зроблена ў WhatStock",
+  "shareCardDisclaimer": "AI-аналіз · не інвестыцыйная парада"
 }

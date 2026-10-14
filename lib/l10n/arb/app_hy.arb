@@ -390,5 +390,11 @@
   "seeAll": "Տեսնել բոլորը ({count})",
   "searchAnalyses": "Որոնել ձեր վերլուծություններում",
   "deleteAnalysis": "Ջնջել",
-  "analysisDeleted": "{symbol}-ի վերլուծությունը ջնջվեց"
+  "analysisDeleted": "{symbol}-ի վերլուծությունը ջնջվեց",
+  "keyLevelAlertHint": "Հպեք մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։",
+  "shareAnalysisTitle": "Կիսվել վերլուծությամբ",
+  "shareAsImage": "Կիսվել որպես պատկեր",
+  "shareAsText": "Կիսվել որպես տեքստ",
+  "shareCardFooter": "Ստեղծված է WhatStock-ով",
+  "shareCardDisclaimer": "AI վերլուծություն · ներդրումային խորհուրդ չէ"
 }

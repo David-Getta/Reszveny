@@ -1423,4 +1423,24 @@ class AppLocalizationsHy extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol-ի վերլուծությունը ջնջվեց';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Հպեք մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։';
+
+  @override
+  String get shareAnalysisTitle => 'Կիսվել վերլուծությամբ';
+
+  @override
+  String get shareAsImage => 'Կիսվել որպես պատկեր';
+
+  @override
+  String get shareAsText => 'Կիսվել որպես տեքստ';
+
+  @override
+  String get shareCardFooter => 'Ստեղծված է WhatStock-ով';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI վերլուծություն · ներդրումային խորհուրդ չէ';
 }

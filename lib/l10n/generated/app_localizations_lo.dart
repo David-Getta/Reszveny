@@ -1403,4 +1403,24 @@ class AppLocalizationsLo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'ລຶບການວິເຄາະ $symbol ແລ້ວ';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ແຕະລະດັບລາຄາເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ';
+
+  @override
+  String get shareAnalysisTitle => 'ແບ່ງປັນບົດວິເຄາະ';
+
+  @override
+  String get shareAsImage => 'ແບ່ງປັນເປັນຮູບພາບ';
+
+  @override
+  String get shareAsText => 'ແບ່ງປັນເປັນຂໍ້ຄວາມ';
+
+  @override
+  String get shareCardFooter => 'ສ້າງດ້ວຍ WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'ການວິເຄາະດ້ວຍ AI · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
 }

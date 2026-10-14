@@ -1423,4 +1423,24 @@ class AppLocalizationsNy extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Kusanthula kwa $symbol kwachotsedwa';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Dinani mlingo kuti mulandire chidziwitso mtengo ukafika pamenepo.';
+
+  @override
+  String get shareAnalysisTitle => 'Gawani kusanthula';
+
+  @override
+  String get shareAsImage => 'Gawani ngati chithunzi';
+
+  @override
+  String get shareAsText => 'Gawani ngati mawu';
+
+  @override
+  String get shareCardFooter => 'Zapangidwa ndi WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Kusanthula kwa AI · si malangizo okhudza kuyika ndalama';
 }

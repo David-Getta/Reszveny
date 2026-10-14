@@ -390,5 +390,11 @@
   "seeAll": "Prikaži sve ({count})",
   "searchAnalyses": "Pretraži svoje analize",
   "deleteAnalysis": "Obriši",
-  "analysisDeleted": "Analiza za {symbol} je obrisana"
+  "analysisDeleted": "Analiza za {symbol} je obrisana",
+  "keyLevelAlertHint": "Dodirnite nivo da dobijete obavještenje kada ga cijena dostigne.",
+  "shareAnalysisTitle": "Podijeli analizu",
+  "shareAsImage": "Podijeli kao sliku",
+  "shareAsText": "Podijeli kao tekst",
+  "shareCardFooter": "Napravljeno uz WhatStock",
+  "shareCardDisclaimer": "AI analiza · nije investicijski savjet"
 }

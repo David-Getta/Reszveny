@@ -1415,4 +1415,24 @@ class AppLocalizationsFa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'تحلیل $symbol حذف شد';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'روی یک سطح بزنید تا وقتی قیمت به آن رسید، هشدار بگیرید.';
+
+  @override
+  String get shareAnalysisTitle => 'اشتراک‌گذاری تحلیل';
+
+  @override
+  String get shareAsImage => 'اشتراک‌گذاری به‌صورت تصویر';
+
+  @override
+  String get shareAsText => 'اشتراک‌گذاری به‌صورت متن';
+
+  @override
+  String get shareCardFooter => 'ساخته‌شده با WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'تحلیل هوش مصنوعی · توصیه سرمایه‌گذاری نیست';
 }

@@ -390,5 +390,11 @@
   "seeAll": "A bɛɛ lajɛ ({count})",
   "searchAnalyses": "I ka sɛgɛsɛgɛliw ɲini",
   "deleteAnalysis": "Jɔsi",
-  "analysisDeleted": "{symbol} sɛgɛsɛgɛli jɔsira"
+  "analysisDeleted": "{symbol} sɛgɛsɛgɛli jɔsira",
+  "keyLevelAlertHint": "Hakɛ dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.",
+  "shareAnalysisTitle": "Sɛgɛsɛgɛli jɛnsɛn",
+  "shareAsImage": "A jɛnsɛn ja ye",
+  "shareAsText": "A jɛnsɛn sɛbɛn ye",
+  "shareCardFooter": "WhatStock de ye a dilan",
+  "shareCardDisclaimer": "AI sɛgɛsɛgɛli · wari donni ladilikan tɛ"
 }

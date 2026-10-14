@@ -390,5 +390,11 @@
   "seeAll": "Eeg dhammaan ({count})",
   "searchAnalyses": "Ka raadi falanqaynahaaga",
   "deleteAnalysis": "Tirtir",
-  "analysisDeleted": "Falanqaynta {symbol} waa la tirtiray"
+  "analysisDeleted": "Falanqaynta {symbol} waa la tirtiray",
+  "keyLevelAlertHint": "Taabo heer si aad u hesho digniin marka qiimuhu gaaro.",
+  "shareAnalysisTitle": "La wadaag falanqaynta",
+  "shareAsImage": "U wadaag sawir ahaan",
+  "shareAsText": "U wadaag qoraal ahaan",
+  "shareCardFooter": "Waxaa lagu sameeyay WhatStock",
+  "shareCardDisclaimer": "Falanqaynta AI · ma aha talo maalgashi"
 }

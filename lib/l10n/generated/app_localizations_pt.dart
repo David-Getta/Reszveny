@@ -1421,4 +1421,24 @@ class AppLocalizationsPt extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Análise de $symbol excluída';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Toque em um nível para receber um alerta quando o preço chegar a ele.';
+
+  @override
+  String get shareAnalysisTitle => 'Compartilhar análise';
+
+  @override
+  String get shareAsImage => 'Compartilhar como imagem';
+
+  @override
+  String get shareAsText => 'Compartilhar como texto';
+
+  @override
+  String get shareCardFooter => 'Feito com WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Análise com IA · não é aconselhamento de investimento';
 }

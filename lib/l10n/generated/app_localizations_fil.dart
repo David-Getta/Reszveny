@@ -1422,4 +1422,24 @@ class AppLocalizationsFil extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Nabura ang pagsusuri sa $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'I-tap ang isang antas para makatanggap ng alerto kapag naabot ito ng presyo.';
+
+  @override
+  String get shareAnalysisTitle => 'Ibahagi ang pagsusuri';
+
+  @override
+  String get shareAsImage => 'Ibahagi bilang larawan';
+
+  @override
+  String get shareAsText => 'Ibahagi bilang teksto';
+
+  @override
+  String get shareCardFooter => 'Ginawa gamit ang WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Pagsusuri ng AI · hindi payo sa pamumuhunan';
 }

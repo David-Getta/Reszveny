@@ -1416,4 +1416,23 @@ class AppLocalizationsDa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analysen af $symbol er slettet';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tryk på et niveau for at få en alarm, når kursen når det.';
+
+  @override
+  String get shareAnalysisTitle => 'Del analyse';
+
+  @override
+  String get shareAsImage => 'Del som billede';
+
+  @override
+  String get shareAsText => 'Del som tekst';
+
+  @override
+  String get shareCardFooter => 'Lavet med WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI-analyse · ikke investeringsrådgivning';
 }

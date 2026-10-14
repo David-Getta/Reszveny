@@ -390,5 +390,11 @@
   "seeAll": "ሁሉንም አሳይ ({count})",
   "searchAnalyses": "በትንተናዎች ውስጥ ፈልግ",
   "deleteAnalysis": "ሰርዝ",
-  "analysisDeleted": "የ{symbol} ትንተና ተሰርዟል"
+  "analysisDeleted": "የ{symbol} ትንተና ተሰርዟል",
+  "keyLevelAlertHint": "ዋጋው ደረጃው ላይ ሲደርስ ማንቂያ ለማግኘት አንድ ደረጃ መታ ያድርጉ።",
+  "shareAnalysisTitle": "ትንተናውን አጋራ",
+  "shareAsImage": "እንደ ምስል አጋራ",
+  "shareAsText": "እንደ ጽሑፍ አጋራ",
+  "shareCardFooter": "በWhatStock የተሰራ",
+  "shareCardDisclaimer": "የAI ትንተና · የኢንቨስትመንት ምክር አይደለም"
 }

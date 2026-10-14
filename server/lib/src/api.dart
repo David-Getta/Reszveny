@@ -26,6 +26,8 @@ import 'stripe.dart';
 /// - `POST /v1/auth/email/start` `{email}` → 6 jegyű belépőkód e-mailben
 /// - `POST /v1/auth/email/verify` `{email, code}` → fiókhoz kötött token (az előfizetés minden eszközön ugyanaz)
 /// - `POST /v1/auth/logout` → a token visszavonása
+/// - `GET  /v1/referral` → saját ajánlókód és statisztika; `POST /v1/referral/redeem` `{code}` → egy barát
+///   kódjának beváltása (extra elemzések; az ajánló az első elemzésed után kapja meg a sajátját)
 /// - `DELETE /v1/account` → a fiók és a szerveren tárolt adatok törlése (a Stripe-előfizetést lemondja)
 /// - `GET  /legal/terms`, `/legal/privacy` → ÁSZF és adatkezelési tájékoztató a `legal/` mappa markdownjából
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
@@ -54,11 +56,18 @@ class Api {
     this.trialModel = 'claude-sonnet-5-5',
     this.legalDir = 'legal',
     this.invites = const InviteBook(),
+    this.referralBonus = 5,
+    this.referralMax = 10,
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store);
 
   final Mailer mailer;
+
+  /// Ajánlói program: ennyi extra elemzést kap a meghívott és (az első
+  /// elemzése után) az ajánló; egy ajánló legfeljebb [referralMax] meghívott után.
+  final int referralBonus;
+  final int referralMax;
 
   /// Meghívókódok; ha üres, a szerver nyitott.
   final InviteBook invites;
@@ -125,6 +134,8 @@ class Api {
       ..post('/v1/auth/email/start', _emailStart)
       ..post('/v1/auth/email/verify', _emailVerify)
       ..post('/v1/auth/logout', _logout)
+      ..get('/v1/referral', _referral)
+      ..post('/v1/referral/redeem', _redeemReferral)
       ..delete('/v1/account', _deleteAccount)
       ..get('/legal/<name>', _legal)
       ..post('/v1/billing/checkout', _checkout)
@@ -301,6 +312,51 @@ class Api {
     store
       ..save(a)
       ..save(b);
+  }
+
+  // ---- Ajánlói program ----
+
+  Future<Response> _referral(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final (invited, rewarded) = store.referralStats(uid);
+    return _json({
+      'code': store.referralCodeOf(uid),
+      'invited': invited,
+      'rewarded': rewarded,
+      'bonus': referralBonus,
+      'max': referralMax,
+      'redeemed': store.hasRedeemedReferral(uid),
+    });
+  }
+
+  /// Egy barát kódjának beváltása: a meghívott azonnal megkapja az extra
+  /// elemzéseket; fiókonként egyszer, saját kód nem váltható be.
+  Future<Response> _redeemReferral(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final code = (await _body(r))['code'] as String? ?? '';
+    final referrer = store.userIdForReferralCode(code);
+    if (referrer == null) return _error(404, 'unknown_code');
+    if (referrer == uid) return _error(400, 'own_code');
+    if (store.hasRedeemedReferral(uid)) return _error(409, 'already_redeemed');
+    store.addReferral(refereeId: uid, referrerId: referrer);
+    final e = store.entitlement(uid);
+    store.save(e..extra += referralBonus);
+    return _json({'entitlements': store.entitlement(uid).toJson(), 'bonus': referralBonus});
+  }
+
+  /// Az első elkészült elemzés után az ajánló is megkapja a jutalmát (ha még
+  /// nem érte el a felső határt); így üres fiókokkal nem gyűjthető.
+  void _rewardReferrer(String refereeId) {
+    final referrer = store.pendingReferrer(refereeId);
+    if (referrer == null) return;
+    final (_, rewarded) = store.referralStats(referrer);
+    if (rewarded < referralMax) {
+      final e = store.entitlement(referrer);
+      store.save(e..extra += referralBonus);
+    }
+    store.markReferralRewarded(refereeId);
   }
 
   Future<Response> _logout(Request r) async {
@@ -545,6 +601,7 @@ class Api {
           final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
           store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
           if (invite != null) store.logInviteUsage(invite.code);
+          _rewardReferrer(uid);
         }
       } catch (_) {}
     }

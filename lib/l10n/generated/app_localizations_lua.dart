@@ -1421,4 +1421,24 @@ class AppLocalizationsLua extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Dikonkonona dia $symbol diajimijibua';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Finya niveau bua kupeta alerte padi mushinga ufika kuine.';
+
+  @override
+  String get shareAnalysisTitle => 'Abanya dikonkonona';
+
+  @override
+  String get shareAsImage => 'Abanya bu tshimfuanyi';
+
+  @override
+  String get shareAsText => 'Abanya bu mifundu';
+
+  @override
+  String get shareCardFooter => 'Bienze ne WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga';
 }

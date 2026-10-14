@@ -1422,4 +1422,24 @@ class AppLocalizationsLn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analyse ya $symbol elimwisami';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Fina niveau moko mpo na kozwa likebisi ntango ntalo ekokoma wana.';
+
+  @override
+  String get shareAnalysisTitle => 'Kabola analyse';
+
+  @override
+  String get shareAsImage => 'Kabola lokola elilingi';
+
+  @override
+  String get shareAsText => 'Kabola lokola makomi';
+
+  @override
+  String get shareCardFooter => 'Esalemi na WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Analyse ya AI · ezali toli ya kotia mbɔngɔ te';
 }

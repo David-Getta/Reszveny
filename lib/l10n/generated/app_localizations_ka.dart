@@ -1419,4 +1419,23 @@ class AppLocalizationsKa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol-ის ანალიზი წაიშალა';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'შეეხეთ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.';
+
+  @override
+  String get shareAnalysisTitle => 'ანალიზის გაზიარება';
+
+  @override
+  String get shareAsImage => 'სურათად გაზიარება';
+
+  @override
+  String get shareAsText => 'ტექსტად გაზიარება';
+
+  @override
+  String get shareCardFooter => 'შექმნილია WhatStock-ით';
+
+  @override
+  String get shareCardDisclaimer => 'AI ანალიზი · არ არის საინვესტიციო რჩევა';
 }

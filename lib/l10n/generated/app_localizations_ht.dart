@@ -1416,4 +1416,23 @@ class AppLocalizationsHt extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analiz $symbol efase';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Peze yon nivo pou resevwa yon alèt lè pri a rive la.';
+
+  @override
+  String get shareAnalysisTitle => 'Pataje analiz la';
+
+  @override
+  String get shareAsImage => 'Pataje kòm imaj';
+
+  @override
+  String get shareAsText => 'Pataje kòm tèks';
+
+  @override
+  String get shareCardFooter => 'Fèt ak WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analiz AI · se pa yon konsèy envestisman';
 }

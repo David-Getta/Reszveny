@@ -1436,4 +1436,23 @@ class AppLocalizationsMk extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Анализата за $symbol е избришана';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Допрете ниво за да добиете известување кога цената ќе го достигне.';
+
+  @override
+  String get shareAnalysisTitle => 'Сподели ја анализата';
+
+  @override
+  String get shareAsImage => 'Сподели како слика';
+
+  @override
+  String get shareAsText => 'Сподели како текст';
+
+  @override
+  String get shareCardFooter => 'Направено со WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI-анализа · не е инвестициски совет';
 }

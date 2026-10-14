@@ -390,5 +390,11 @@
   "seeAll": "Alles bekijken ({count})",
   "searchAnalyses": "Zoek in je analyses",
   "deleteAnalysis": "Verwijderen",
-  "analysisDeleted": "Analyse van {symbol} verwijderd"
+  "analysisDeleted": "Analyse van {symbol} verwijderd",
+  "keyLevelAlertHint": "Tik op een niveau om een alert te krijgen wanneer de koers het bereikt.",
+  "shareAnalysisTitle": "Analyse delen",
+  "shareAsImage": "Delen als afbeelding",
+  "shareAsText": "Delen als tekst",
+  "shareCardFooter": "Gemaakt met WhatStock",
+  "shareCardDisclaimer": "AI-analyse · geen beleggingsadvies"
 }

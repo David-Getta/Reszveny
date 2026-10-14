@@ -1426,4 +1426,24 @@ class AppLocalizationsHil extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Napanas ang analisis sang $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'I-tap ang isa ka lebel para makabaton sang alerto kon maabot ini sang presyo.';
+
+  @override
+  String get shareAnalysisTitle => 'Ipaambit ang analisis';
+
+  @override
+  String get shareAsImage => 'Ipaambit subong larawan';
+
+  @override
+  String get shareAsText => 'Ipaambit subong teksto';
+
+  @override
+  String get shareCardFooter => 'Ginhimo gamit ang WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Analisis sang AI · indi laygay sa pag-invest';
 }

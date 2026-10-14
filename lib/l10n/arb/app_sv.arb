@@ -390,5 +390,11 @@
   "seeAll": "Visa alla ({count})",
   "searchAnalyses": "Sök bland dina analyser",
   "deleteAnalysis": "Radera",
-  "analysisDeleted": "Analysen av {symbol} har raderats"
+  "analysisDeleted": "Analysen av {symbol} har raderats",
+  "keyLevelAlertHint": "Tryck på en nivå för att få ett larm när kursen når den.",
+  "shareAnalysisTitle": "Dela analys",
+  "shareAsImage": "Dela som bild",
+  "shareAsText": "Dela som text",
+  "shareCardFooter": "Skapad med WhatStock",
+  "shareCardDisclaimer": "AI-analys · inte investeringsrådgivning"
 }

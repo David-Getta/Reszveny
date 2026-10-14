@@ -1401,4 +1401,24 @@ class AppLocalizationsTh extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'ลบการวิเคราะห์ $symbol แล้ว';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'แตะระดับราคาเพื่อรับการแจ้งเตือนเมื่อราคาไปถึงระดับนั้น';
+
+  @override
+  String get shareAnalysisTitle => 'แชร์บทวิเคราะห์';
+
+  @override
+  String get shareAsImage => 'แชร์เป็นรูปภาพ';
+
+  @override
+  String get shareAsText => 'แชร์เป็นข้อความ';
+
+  @override
+  String get shareCardFooter => 'สร้างด้วย WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน';
 }

@@ -1419,4 +1419,23 @@ class AppLocalizationsTg extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Таҳлили $symbol нест карда шуд';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Сатҳро пахш кунед, то вақте нарх ба он расад, огоҳӣ гиред.';
+
+  @override
+  String get shareAnalysisTitle => 'Мубодилаи таҳлил';
+
+  @override
+  String get shareAsImage => 'Ҳамчун тасвир мубодила кардан';
+
+  @override
+  String get shareAsText => 'Ҳамчун матн мубодила кардан';
+
+  @override
+  String get shareCardFooter => 'Бо WhatStock сохта шудааст';
+
+  @override
+  String get shareCardDisclaimer => 'Таҳлили AI · маслиҳати сармоягузорӣ нест';
 }

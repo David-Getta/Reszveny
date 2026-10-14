@@ -1442,4 +1442,24 @@ class AppLocalizationsAr extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'تم حذف تحليل $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'انقر على مستوى لتلقي تنبيه عندما يصل السعر إليه.';
+
+  @override
+  String get shareAnalysisTitle => 'مشاركة التحليل';
+
+  @override
+  String get shareAsImage => 'مشاركة كصورة';
+
+  @override
+  String get shareAsText => 'مشاركة كنص';
+
+  @override
+  String get shareCardFooter => 'صُنع باستخدام WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية';
 }

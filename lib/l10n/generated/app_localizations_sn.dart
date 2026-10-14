@@ -1422,4 +1422,23 @@ class AppLocalizationsSn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Ongororo ya$symbol yadzimwa';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Baya zinga kuti uwane chiziviso kana mutengo wasvika ipapo.';
+
+  @override
+  String get shareAnalysisTitle => 'Govera ongororo';
+
+  @override
+  String get shareAsImage => 'Govera semufananidzo';
+
+  @override
+  String get shareAsText => 'Govera semavara';
+
+  @override
+  String get shareCardFooter => 'Zvakagadzirwa neWhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Ongororo yeAI · haisi zano rekuisa mari';
 }

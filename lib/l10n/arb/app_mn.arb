@@ -390,5 +390,11 @@
   "seeAll": "Бүгдийг харах ({count})",
   "searchAnalyses": "Шинжилгээнүүдээсээ хайх",
   "deleteAnalysis": "Устгах",
-  "analysisDeleted": "{symbol} шинжилгээг устгалаа"
+  "analysisDeleted": "{symbol} шинжилгээг устгалаа",
+  "keyLevelAlertHint": "Үнэ тухайн түвшинд хүрэхэд сэрэмжлүүлэг авахын тулд түвшин дээр дарна уу.",
+  "shareAnalysisTitle": "Шинжилгээг хуваалцах",
+  "shareAsImage": "Зураг хэлбэрээр хуваалцах",
+  "shareAsText": "Текст хэлбэрээр хуваалцах",
+  "shareCardFooter": "WhatStock-оор бүтээв",
+  "shareCardDisclaimer": "AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Žiūrėti visas ({count})",
   "searchAnalyses": "Ieškoti savo analizių",
   "deleteAnalysis": "Ištrinti",
-  "analysisDeleted": "{symbol} analizė ištrinta"
+  "analysisDeleted": "{symbol} analizė ištrinta",
+  "keyLevelAlertHint": "Bakstelėkite lygį ir gausite įspėjimą, kai kaina jį pasieks.",
+  "shareAnalysisTitle": "Bendrinti analizę",
+  "shareAsImage": "Bendrinti kaip paveikslėlį",
+  "shareAsText": "Bendrinti kaip tekstą",
+  "shareCardFooter": "Sukurta su WhatStock",
+  "shareCardDisclaimer": "DI analizė · ne investavimo rekomendacija"
 }

@@ -1423,4 +1423,23 @@ class AppLocalizationsTa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol பகுப்பாய்வு நீக்கப்பட்டது';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'விலை ஒரு நிலையை அடையும்போது எச்சரிக்கை பெற அந்த நிலையைத் தட்டுங்கள்.';
+
+  @override
+  String get shareAnalysisTitle => 'பகுப்பாய்வைப் பகிர்';
+
+  @override
+  String get shareAsImage => 'படமாகப் பகிர்';
+
+  @override
+  String get shareAsText => 'உரையாகப் பகிர்';
+
+  @override
+  String get shareCardFooter => 'WhatStock மூலம் உருவாக்கப்பட்டது';
+
+  @override
+  String get shareCardDisclaimer => 'AI பகுப்பாய்வு · முதலீட்டு ஆலோசனை அல்ல';
 }

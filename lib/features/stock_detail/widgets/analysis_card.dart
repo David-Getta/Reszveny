@@ -5,6 +5,8 @@ import '../../../app_services.dart';
 import '../../../core/errors.dart';
 import '../../../features/analysis/analysis_options.dart';
 import '../../../features/analysis/stale_report.dart';
+import '../../../features/alerts/alerts_view.dart';
+import '../../../features/alerts/price_alert.dart';
 import '../../../features/billing/paywall_page.dart';
 import '../../../features/billing/trial_upsell.dart';
 import '../../../core/models/stock_details.dart';
@@ -16,6 +18,7 @@ import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
 import 'outlook_view.dart';
 import 'section_card.dart';
+import 'share_card.dart';
 import '../../../widgets/collapsible.dart';
 import '../../../core/share/share_text.dart';
 
@@ -109,21 +112,24 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   children: [
                     // Megosztás: az elemzés lényege szövegként (WhatsApp, e-mail…).
                     Builder(
-                      builder: (btnContext) => IconButton(
+                      builder: (_) => IconButton(
                         key: const ValueKey('share-analysis'),
                         tooltip: MaterialLocalizations.of(context).shareButtonLabel,
                         icon: const Icon(Icons.ios_share_rounded, size: 20),
+                        // Előnézet: képként (kártya) vagy szövegként.
                         onPressed: loading
                             ? null
-                            : () => shareText(
-                                reportShareText(
+                            : () => showShareSheet(
+                                context,
+                                report: report,
+                                companyName: widget.details.profile?.name ?? '',
+                                fmt: fmt,
+                                text: reportShareText(
                                   report,
                                   companyName: widget.details.profile?.name ?? '',
                                   generatedLine: l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt)),
                                   disclaimer: l10n.aiDisclaimer,
                                 ),
-                                subject: '${report.symbol} · WhatStock',
-                                origin: shareOriginOf(btnContext),
                               ),
                       ),
                     ),
@@ -211,7 +217,13 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   MarketMoodBar(mood: mood, reason: report.outlook!.marketMoodReason),
                 ],
                 for (final s in report.sections)
-                  _ReportSectionView(section: s, outlook: report.outlook, fmt: fmt, generatedAt: report.generatedAt),
+                  _ReportSectionView(
+                    section: s,
+                    outlook: report.outlook,
+                    fmt: fmt,
+                    generatedAt: report.generatedAt,
+                    symbol: symbol,
+                  ),
                 if (report.sources.isNotEmpty) ...[
                   const SizedBox(height: 16),
                   Text(l10n.aiSources, style: theme.textTheme.titleSmall),
@@ -254,9 +266,39 @@ class _AnalysisCardState extends State<AnalysisCard> {
   }
 }
 
-class _ReportSectionView extends StatelessWidget {
-  const _ReportSectionView({required this.section, this.outlook, required this.fmt, required this.generatedAt});
+/// Árfolyam-riasztás az elemzés egyik kulcsszintjéből: a mostani ár fölötti
+/// szintnél „fölé megy”, az alattinál „alá esik”, az értékkel előre kitöltve.
+Future<void> alertFromKeyLevel(
+  BuildContext context, {
+  required String symbol,
+  required KeyLevel level,
+  required ReportOutlook outlook,
+}) async {
+  final l10n = AppLocalizations.of(context);
+  final messenger = ScaffoldMessenger.of(context);
+  final cur = outlook.currentPrice;
+  final above = cur == null ? level.kind != KeyLevelKind.support : level.price >= cur;
+  final created = await showAlertDialog(
+    context,
+    symbol: symbol,
+    currency: outlook.currency,
+    currentPrice: cur,
+    initialKind: above ? AlertKind.above : AlertKind.below,
+    initialValue: level.price,
+  );
+  if (created) messenger.showSnackBar(SnackBar(content: Text(l10n.alertCreated(symbol))));
+}
 
+class _ReportSectionView extends StatelessWidget {
+  const _ReportSectionView({
+    required this.section,
+    this.outlook,
+    required this.fmt,
+    required this.generatedAt,
+    required this.symbol,
+  });
+
+  final String symbol;
   final ReportSection section;
   final ReportOutlook? outlook;
   final Fmt fmt;
@@ -318,19 +360,23 @@ class _ReportSectionView extends StatelessWidget {
               ],
             ),
           ),
-          CollapsibleBody(collapsed: collapsed, child: _content(p, body)),
+          CollapsibleBody(collapsed: collapsed, child: _content(context, p, body)),
         ],
       ),
     );
   }
 
-  Widget _content(AppPalette p, TextStyle? body) {
+  Widget _content(BuildContext context, AppPalette p, TextStyle? body) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 8),
         if (section.kind == ReportSectionKind.outlook && outlook != null && outlook!.scenarios.isNotEmpty) ...[
-          ScenarioChart(outlook: outlook!, fmt: fmt),
+          ScenarioChart(
+            outlook: outlook!,
+            fmt: fmt,
+            onLevelTap: (k) => alertFromKeyLevel(context, symbol: symbol, level: k, outlook: outlook!),
+          ),
           const SizedBox(height: 14),
         ],
         if (section.kind == ReportSectionKind.longterm && outlook?.longTerm != null) ...[

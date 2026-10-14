@@ -390,5 +390,11 @@
   "seeAll": "सर्व पहा ({count})",
   "searchAnalyses": "तुमची विश्लेषणे शोधा",
   "deleteAnalysis": "हटवा",
-  "analysisDeleted": "{symbol} विश्लेषण हटवले"
+  "analysisDeleted": "{symbol} विश्लेषण हटवले",
+  "keyLevelAlertHint": "किंमत एखाद्या स्तरावर पोहोचल्यावर सूचना मिळवण्यासाठी त्या स्तरावर टॅप करा.",
+  "shareAnalysisTitle": "विश्लेषण शेअर करा",
+  "shareAsImage": "प्रतिमा म्हणून शेअर करा",
+  "shareAsText": "मजकूर म्हणून शेअर करा",
+  "shareCardFooter": "WhatStock वापरून तयार केले",
+  "shareCardDisclaimer": "AI विश्लेषण · गुंतवणूक सल्ला नाही"
 }

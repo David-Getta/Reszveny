@@ -1406,4 +1406,23 @@ class AppLocalizationsMos extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol vɛɛsgã yẽesame';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Dĩig zĩig a ye n paam gũusg koosgã sã n ta be.';
+
+  @override
+  String get shareAnalysisTitle => 'Pʋɩ vɛɛsgã';
+
+  @override
+  String get shareAsImage => 'Pʋɩ wa foto';
+
+  @override
+  String get shareAsText => 'Pʋɩ wa gʋlsgo';
+
+  @override
+  String get shareCardFooter => 'A maana ne WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye';
 }

@@ -390,5 +390,11 @@
   "seeAll": "Wali akk ({count})",
   "searchAnalyses": "Nadi deg tesleḍwin-ik",
   "deleteAnalysis": "Kkes",
-  "analysisDeleted": "Tasleḍt n {symbol} tettwakkes"
+  "analysisDeleted": "Tasleḍt n {symbol} tettwakkes",
+  "keyLevelAlertHint": "Sit ɣef uswir akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.",
+  "shareAnalysisTitle": "Bḍu tasleḍt",
+  "shareAsImage": "Bḍu am tugna",
+  "shareAsText": "Bḍu am uḍris",
+  "shareCardFooter": "Yettwaxdem s WhatStock",
+  "shareCardDisclaimer": "Tasleḍt s AI · ur d awellih n usersi n yidrimen ara"
 }

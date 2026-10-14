@@ -390,5 +390,11 @@
   "seeAll": "Bona konke ({count})",
   "searchAnalyses": "Sesha kuhlaziyo lwakho",
   "deleteAnalysis": "Susa",
-  "analysisDeleted": "Uhlaziyo lwe-{symbol} lususiwe"
+  "analysisDeleted": "Uhlaziyo lwe-{symbol} lususiwe",
+  "keyLevelAlertHint": "Thepha izinga ukuze uthole isexwayiso uma intengo ifinyelela kulo.",
+  "shareAnalysisTitle": "Yabelana ngohlaziyo",
+  "shareAsImage": "Yabelana njengesithombe",
+  "shareAsText": "Yabelana njengombhalo",
+  "shareCardFooter": "Kwenziwe nge-WhatStock",
+  "shareCardDisclaimer": "Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali"
 }

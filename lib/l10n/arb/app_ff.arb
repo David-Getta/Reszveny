@@ -390,5 +390,11 @@
   "seeAll": "Yiy fof ({count})",
   "searchAnalyses": "Yiylo e nder ƴeewndooji maa",
   "deleteAnalysis": "Momtu",
-  "analysisDeleted": "Ƴeewndo {symbol} momtaama"
+  "analysisDeleted": "Ƴeewndo {symbol} momtaama",
+  "keyLevelAlertHint": "Dobo tolnoore ngam heɓde tintinol so coggu ngu yettii ɗum.",
+  "shareAnalysisTitle": "Lollin ƴeewndo",
+  "shareAsImage": "Lollin no natal",
+  "shareAsText": "Lollin no binndi",
+  "shareCardFooter": "Waɗaa e WhatStock",
+  "shareCardDisclaimer": "Ƴeewndo AI · wonaa wasiya e investisman"
 }

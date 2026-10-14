@@ -390,5 +390,11 @@
   "seeAll": "查看全部 ({count})",
   "searchAnalyses": "搜索你的分析",
   "deleteAnalysis": "删除",
-  "analysisDeleted": "已删除 {symbol} 分析"
+  "analysisDeleted": "已删除 {symbol} 分析",
+  "keyLevelAlertHint": "点按某个价位，股价到达时即会提醒你。",
+  "shareAnalysisTitle": "分享分析",
+  "shareAsImage": "以图片分享",
+  "shareAsText": "以文本分享",
+  "shareCardFooter": "由 WhatStock 制作",
+  "shareCardDisclaimer": "AI 分析 · 不构成投资建议"
 }

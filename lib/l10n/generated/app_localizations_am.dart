@@ -1394,4 +1394,23 @@ class AppLocalizationsAm extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'የ$symbol ትንተና ተሰርዟል';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ዋጋው ደረጃው ላይ ሲደርስ ማንቂያ ለማግኘት አንድ ደረጃ መታ ያድርጉ።';
+
+  @override
+  String get shareAnalysisTitle => 'ትንተናውን አጋራ';
+
+  @override
+  String get shareAsImage => 'እንደ ምስል አጋራ';
+
+  @override
+  String get shareAsText => 'እንደ ጽሑፍ አጋራ';
+
+  @override
+  String get shareCardFooter => 'በWhatStock የተሰራ';
+
+  @override
+  String get shareCardDisclaimer => 'የAI ትንተና · የኢንቨስትመንት ምክር አይደለም';
 }

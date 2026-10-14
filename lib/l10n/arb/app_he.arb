@@ -390,5 +390,11 @@
   "seeAll": "הצגת הכול ({count})",
   "searchAnalyses": "חיפוש בניתוחים שלך",
   "deleteAnalysis": "מחיקה",
-  "analysisDeleted": "הניתוח של {symbol} נמחק"
+  "analysisDeleted": "הניתוח של {symbol} נמחק",
+  "keyLevelAlertHint": "הקישו על רמה כדי לקבל התראה כשהמחיר מגיע אליה.",
+  "shareAnalysisTitle": "שיתוף הניתוח",
+  "shareAsImage": "שיתוף כתמונה",
+  "shareAsText": "שיתוף כטקסט",
+  "shareCardFooter": "נוצר באמצעות WhatStock",
+  "shareCardDisclaimer": "ניתוח AI · אינו ייעוץ השקעות"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Ehecha opavave ({count})",
   "searchAnalyses": "Eheka ne jehesaʼỹijokuérape",
   "deleteAnalysis": "Emboguete",
-  "analysisDeleted": "Oñemboguete {symbol} jehesaʼỹijo"
+  "analysisDeleted": "Oñemboguete {symbol} jehesaʼỹijo",
+  "keyLevelAlertHint": "Eikutu peteĩ nivel ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.",
+  "shareAnalysisTitle": "Emoherakuã jehesaʼỹijo",
+  "shareAsImage": "Emoherakuã taʼãngamíicha",
+  "shareAsText": "Emoherakuã moñeʼẽrãicha",
+  "shareCardFooter": "Ojejapo WhatStock reheve",
+  "shareCardDisclaimer": "AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua"
 }

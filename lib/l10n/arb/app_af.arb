@@ -390,5 +390,11 @@
   "seeAll": "Sien almal ({count})",
   "searchAnalyses": "Soek in jou ontledings",
   "deleteAnalysis": "Vee uit",
-  "analysisDeleted": "{symbol}-ontleding uitgevee"
+  "analysisDeleted": "{symbol}-ontleding uitgevee",
+  "keyLevelAlertHint": "Tik op ’n vlak om ’n waarskuwing te kry wanneer die prys dit bereik.",
+  "shareAnalysisTitle": "Deel ontleding",
+  "shareAsImage": "Deel as prent",
+  "shareAsText": "Deel as teks",
+  "shareCardFooter": "Gemaak met WhatStock",
+  "shareCardDisclaimer": "AI-ontleding · nie beleggingsadvies nie"
 }

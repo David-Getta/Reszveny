@@ -390,5 +390,11 @@
   "seeAll": "ເບິ່ງທັງໝົດ ({count})",
   "searchAnalyses": "ຊອກຫາການວິເຄາະຂອງທ່ານ",
   "deleteAnalysis": "ລຶບ",
-  "analysisDeleted": "ລຶບການວິເຄາະ {symbol} ແລ້ວ"
+  "analysisDeleted": "ລຶບການວິເຄາະ {symbol} ແລ້ວ",
+  "keyLevelAlertHint": "ແຕະລະດັບລາຄາເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ",
+  "shareAnalysisTitle": "ແບ່ງປັນບົດວິເຄາະ",
+  "shareAsImage": "ແບ່ງປັນເປັນຮູບພາບ",
+  "shareAsText": "ແບ່ງປັນເປັນຂໍ້ຄວາມ",
+  "shareCardFooter": "ສ້າງດ້ວຍ WhatStock",
+  "shareCardDisclaimer": "ການວິເຄາະດ້ວຍ AI · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ"
 }

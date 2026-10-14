@@ -390,5 +390,11 @@
   "seeAll": "എല്ലാം കാണുക ({count})",
   "searchAnalyses": "നിങ്ങളുടെ വിശകലനങ്ങൾ തിരയുക",
   "deleteAnalysis": "ഇല്ലാതാക്കുക",
-  "analysisDeleted": "{symbol} വിശകലനം ഇല്ലാതാക്കി"
+  "analysisDeleted": "{symbol} വിശകലനം ഇല്ലാതാക്കി",
+  "keyLevelAlertHint": "വില ഒരു നിലയിലെത്തുമ്പോൾ അലേർട്ട് ലഭിക്കാൻ ആ നിലയിൽ ടാപ്പ് ചെയ്യുക.",
+  "shareAnalysisTitle": "വിശകലനം പങ്കിടുക",
+  "shareAsImage": "ചിത്രമായി പങ്കിടുക",
+  "shareAsText": "ടെക്സ്റ്റായി പങ്കിടുക",
+  "shareCardFooter": "WhatStock ഉപയോഗിച്ച് തയ്യാറാക്കിയത്",
+  "shareCardDisclaimer": "AI വിശകലനം · നിക്ഷേപ ഉപദേശമല്ല"
 }

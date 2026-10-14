@@ -1428,4 +1428,24 @@ class AppLocalizationsMg extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Voafafa ny fandalinana $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tsindrio ny haavo iray mba handraisana fanairana rehefa tonga eo ny vidiny.';
+
+  @override
+  String get shareAnalysisTitle => 'Hizarao ny fandalinana';
+
+  @override
+  String get shareAsImage => 'Hizarao ho sary';
+
+  @override
+  String get shareAsText => 'Hizarao ho soratra';
+
+  @override
+  String get shareCardFooter => 'Natao tamin\'ny WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Fandalinana AI · tsy torohevitra momba ny fampiasam-bola';
 }

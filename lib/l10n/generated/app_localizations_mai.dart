@@ -1412,4 +1412,23 @@ class AppLocalizationsMai extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol विश्लेषण मेटाओल गेल';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'कोनो स्तर पर टैप करू, दाम ओतय पहुँचला पर अलर्ट भेटत।';
+
+  @override
+  String get shareAnalysisTitle => 'विश्लेषण साझा करू';
+
+  @override
+  String get shareAsImage => 'छवि रूपमे साझा करू';
+
+  @override
+  String get shareAsText => 'पाठ रूपमे साझा करू';
+
+  @override
+  String get shareCardFooter => 'WhatStock सँ बनाओल';
+
+  @override
+  String get shareCardDisclaimer => 'AI विश्लेषण · निवेशक सलाह नहि';
 }

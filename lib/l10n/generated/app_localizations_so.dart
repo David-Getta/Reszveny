@@ -1422,4 +1422,23 @@ class AppLocalizationsSo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Falanqaynta $symbol waa la tirtiray';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Taabo heer si aad u hesho digniin marka qiimuhu gaaro.';
+
+  @override
+  String get shareAnalysisTitle => 'La wadaag falanqaynta';
+
+  @override
+  String get shareAsImage => 'U wadaag sawir ahaan';
+
+  @override
+  String get shareAsText => 'U wadaag qoraal ahaan';
+
+  @override
+  String get shareCardFooter => 'Waxaa lagu sameeyay WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Falanqaynta AI · ma aha talo maalgashi';
 }

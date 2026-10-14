@@ -1423,4 +1423,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol elemzés törölve';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Koppints egy szintre, és szólunk, ha az árfolyam eléri.';
+
+  @override
+  String get shareAnalysisTitle => 'Elemzés megosztása';
+
+  @override
+  String get shareAsImage => 'Megosztás képként';
+
+  @override
+  String get shareAsText => 'Megosztás szövegként';
+
+  @override
+  String get shareCardFooter => 'WhatStockkal készült';
+
+  @override
+  String get shareCardDisclaimer => 'AI-elemzés · nem befektetési tanács';
 }

@@ -1413,4 +1413,23 @@ class AppLocalizationsId extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Analisis $symbol dihapus';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Ketuk level untuk mendapat peringatan saat harga mencapainya.';
+
+  @override
+  String get shareAnalysisTitle => 'Bagikan analisis';
+
+  @override
+  String get shareAsImage => 'Bagikan sebagai gambar';
+
+  @override
+  String get shareAsText => 'Bagikan sebagai teks';
+
+  @override
+  String get shareCardFooter => 'Dibuat dengan WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Analisis AI · bukan saran investasi';
 }

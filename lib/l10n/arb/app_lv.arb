@@ -390,5 +390,11 @@
   "seeAll": "Skatīt visas ({count})",
   "searchAnalyses": "Meklēt savās analīzēs",
   "deleteAnalysis": "Dzēst",
-  "analysisDeleted": "{symbol} analīze izdzēsta"
+  "analysisDeleted": "{symbol} analīze izdzēsta",
+  "keyLevelAlertHint": "Pieskarieties līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.",
+  "shareAnalysisTitle": "Kopīgot analīzi",
+  "shareAsImage": "Kopīgot kā attēlu",
+  "shareAsText": "Kopīgot kā tekstu",
+  "shareCardFooter": "Izveidots ar WhatStock",
+  "shareCardDisclaimer": "AI analīze · nav ieguldījumu konsultācija"
 }

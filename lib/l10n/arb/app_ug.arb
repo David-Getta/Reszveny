@@ -390,5 +390,11 @@
   "seeAll": "ھەممىنى كۆرۈش ({count})",
   "searchAnalyses": "تەھلىللىرىڭىزدىن ئىزدەش",
   "deleteAnalysis": "ئۆچۈرۈش",
-  "analysisDeleted": "{symbol} تەھلىلى ئۆچۈرۈلدى"
+  "analysisDeleted": "{symbol} تەھلىلى ئۆچۈرۈلدى",
+  "keyLevelAlertHint": "باھا مەلۇم سەۋىيەگە يەتكەندە ئاگاھلاندۇرۇش ئېلىش ئۈچۈن شۇ سەۋىيەنى چېكىڭ.",
+  "shareAnalysisTitle": "تەھلىلنى ھەمبەھىرلەش",
+  "shareAsImage": "رەسىم سۈپىتىدە ھەمبەھىرلەش",
+  "shareAsText": "تېكىست سۈپىتىدە ھەمبەھىرلەش",
+  "shareCardFooter": "WhatStock ئارقىلىق ياسالغان",
+  "shareCardDisclaimer": "AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس"
 }

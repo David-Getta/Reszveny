@@ -1461,4 +1461,23 @@ class AppLocalizationsLt extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol analizė ištrinta';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Bakstelėkite lygį ir gausite įspėjimą, kai kaina jį pasieks.';
+
+  @override
+  String get shareAnalysisTitle => 'Bendrinti analizę';
+
+  @override
+  String get shareAsImage => 'Bendrinti kaip paveikslėlį';
+
+  @override
+  String get shareAsText => 'Bendrinti kaip tekstą';
+
+  @override
+  String get shareCardFooter => 'Sukurta su WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'DI analizė · ne investavimo rekomendacija';
 }

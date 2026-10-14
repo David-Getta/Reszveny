@@ -1417,4 +1417,23 @@ class AppLocalizationsSw extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Uchambuzi wa $symbol umefutwa';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Gusa kiwango ili upate arifa bei inapokifikia.';
+
+  @override
+  String get shareAnalysisTitle => 'Shiriki uchambuzi';
+
+  @override
+  String get shareAsImage => 'Shiriki kama picha';
+
+  @override
+  String get shareAsText => 'Shiriki kama maandishi';
+
+  @override
+  String get shareCardFooter => 'Imetengenezwa kwa WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Uchambuzi wa AI · si ushauri wa uwekezaji';
 }

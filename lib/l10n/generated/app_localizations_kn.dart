@@ -1422,4 +1422,23 @@ class AppLocalizationsKn extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol ವಿಶ್ಲೇಷಣೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ಬೆಲೆ ಒಂದು ಮಟ್ಟವನ್ನು ತಲುಪಿದಾಗ ಅಲರ್ಟ್ ಪಡೆಯಲು ಆ ಮಟ್ಟವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get shareAnalysisTitle => 'ವಿಶ್ಲೇಷಣೆ ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get shareAsImage => 'ಚಿತ್ರವಾಗಿ ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get shareAsText => 'ಪಠ್ಯವಾಗಿ ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get shareCardFooter => 'WhatStock ನಿಂದ ರಚಿಸಲಾಗಿದೆ';
+
+  @override
+  String get shareCardDisclaimer => 'AI ವಿಶ್ಲೇಷಣೆ · ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ';
 }

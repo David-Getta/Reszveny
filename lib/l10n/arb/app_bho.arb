@@ -390,5 +390,11 @@
   "seeAll": "सब देखीं ({count})",
   "searchAnalyses": "अपना विश्लेषण में खोजीं",
   "deleteAnalysis": "मिटाईं",
-  "analysisDeleted": "{symbol} के विश्लेषण मिटा दिहल गइल"
+  "analysisDeleted": "{symbol} के विश्लेषण मिटा दिहल गइल",
+  "keyLevelAlertHint": "कवनो स्तर पर टैप करीं, दाम ओह तक पहुँची त अलर्ट मिल जाई।",
+  "shareAnalysisTitle": "विश्लेषण साझा करीं",
+  "shareAsImage": "फोटो के रूप में साझा करीं",
+  "shareAsText": "टेक्स्ट के रूप में साझा करीं",
+  "shareCardFooter": "WhatStock से बनल",
+  "shareCardDisclaimer": "AI विश्लेषण · निवेश के सलाह ना ह"
 }

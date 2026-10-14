@@ -1421,4 +1421,23 @@ class AppLocalizationsUg extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol تەھلىلى ئۆچۈرۈلدى';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'باھا مەلۇم سەۋىيەگە يەتكەندە ئاگاھلاندۇرۇش ئېلىش ئۈچۈن شۇ سەۋىيەنى چېكىڭ.';
+
+  @override
+  String get shareAnalysisTitle => 'تەھلىلنى ھەمبەھىرلەش';
+
+  @override
+  String get shareAsImage => 'رەسىم سۈپىتىدە ھەمبەھىرلەش';
+
+  @override
+  String get shareAsText => 'تېكىست سۈپىتىدە ھەمبەھىرلەش';
+
+  @override
+  String get shareCardFooter => 'WhatStock ئارقىلىق ياسالغان';
+
+  @override
+  String get shareCardDisclaimer => 'AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
 }

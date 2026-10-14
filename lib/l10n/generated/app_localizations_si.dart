@@ -1417,4 +1417,23 @@ class AppLocalizationsSi extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol විශ්ලේෂණය මකා දමන ලදී';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'මිල මට්ටමකට ළඟා වූ විට ඇඟවීමක් ලබා ගැනීමට එම මට්ටම තට්ටු කරන්න.';
+
+  @override
+  String get shareAnalysisTitle => 'විශ්ලේෂණය බෙදාගන්න';
+
+  @override
+  String get shareAsImage => 'රූපයක් ලෙස බෙදාගන්න';
+
+  @override
+  String get shareAsText => 'පෙළක් ලෙස බෙදාගන්න';
+
+  @override
+  String get shareCardFooter => 'WhatStock සමඟ සාදන ලදී';
+
+  @override
+  String get shareCardDisclaimer => 'AI විශ්ලේෂණය · ආයෝජන උපදෙසක් නොවේ';
 }

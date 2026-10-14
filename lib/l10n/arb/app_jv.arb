@@ -390,5 +390,11 @@
   "seeAll": "Deleng kabeh ({count})",
   "searchAnalyses": "Goleki analisismu",
   "deleteAnalysis": "Busak",
-  "analysisDeleted": "Analisis {symbol} wis dibusak"
+  "analysisDeleted": "Analisis {symbol} wis dibusak",
+  "keyLevelAlertHint": "Tutul level kanggo éntuk pèngetan nalika rega tekan level kasebut.",
+  "shareAnalysisTitle": "Bagekake analisis",
+  "shareAsImage": "Bagekake minangka gambar",
+  "shareAsText": "Bagekake minangka teks",
+  "shareCardFooter": "Digawe nganggo WhatStock",
+  "shareCardDisclaimer": "Analisis AI · dudu saran investasi"
 }

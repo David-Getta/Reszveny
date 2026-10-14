@@ -1414,4 +1414,23 @@ class AppLocalizationsTt extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol анализы бетерелде';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Бәя дәрәҗәгә җиткәч искәртү алу өчен дәрәҗәгә басыгыз.';
+
+  @override
+  String get shareAnalysisTitle => 'Анализ белән бүлешү';
+
+  @override
+  String get shareAsImage => 'Рәсем итеп бүлешү';
+
+  @override
+  String get shareAsText => 'Текст итеп бүлешү';
+
+  @override
+  String get shareCardFooter => 'WhatStock ярдәмендә ясалган';
+
+  @override
+  String get shareCardDisclaimer => 'AI анализы · инвестиция киңәше түгел';
 }

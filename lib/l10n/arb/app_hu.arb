@@ -390,5 +390,11 @@
   "seeAll": "Mind ({count})",
   "searchAnalyses": "Keresés az elemzéseid között",
   "deleteAnalysis": "Törlés",
-  "analysisDeleted": "{symbol} elemzés törölve"
+  "analysisDeleted": "{symbol} elemzés törölve",
+  "keyLevelAlertHint": "Koppints egy szintre, és szólunk, ha az árfolyam eléri.",
+  "shareAnalysisTitle": "Elemzés megosztása",
+  "shareAsImage": "Megosztás képként",
+  "shareAsText": "Megosztás szövegként",
+  "shareCardFooter": "WhatStockkal készült",
+  "shareCardDisclaimer": "AI-elemzés · nem befektetési tanács"
 }

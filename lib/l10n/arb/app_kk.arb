@@ -390,5 +390,11 @@
   "seeAll": "Барлығын көру ({count})",
   "searchAnalyses": "Талдауларыңызды іздеу",
   "deleteAnalysis": "Жою",
-  "analysisDeleted": "{symbol} талдауы жойылды"
+  "analysisDeleted": "{symbol} талдауы жойылды",
+  "keyLevelAlertHint": "Баға деңгейге жеткенде ескерту алу үшін деңгейді түртіңіз.",
+  "shareAnalysisTitle": "Талдаумен бөлісу",
+  "shareAsImage": "Сурет ретінде бөлісу",
+  "shareAsText": "Мәтін ретінде бөлісу",
+  "shareCardFooter": "WhatStock арқылы жасалған",
+  "shareCardDisclaimer": "AI талдауы · инвестициялық кеңес емес"
 }

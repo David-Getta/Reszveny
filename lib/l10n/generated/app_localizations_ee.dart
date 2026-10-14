@@ -1420,4 +1420,24 @@ class AppLocalizationsEe extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Wotutu $symbol ƒe numekuku';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Zi ɖoƒe aɖe be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.';
+
+  @override
+  String get shareAnalysisTitle => 'Ma numekuku';
+
+  @override
+  String get shareAsImage => 'Ma abe nɔnɔmetata';
+
+  @override
+  String get shareAsText => 'Ma abe nuŋɔŋlɔ';
+
+  @override
+  String get shareCardFooter => 'Wotsɔ WhatStock wɔe';
+
+  @override
+  String get shareCardDisclaimer =>
+      'AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o';
 }

@@ -41,10 +41,11 @@ class MarketMoodBar extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
+        // Tördelődik, ha hosszú nyelven nem fér el egy sorban.
+        Wrap(
+          spacing: 8,
           children: [
             Text(l10n.outlookMarketMood, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-            const SizedBox(width: 8),
             Text(
               moodLabel(l10n, mood),
               style: theme.textTheme.labelLarge?.copyWith(color: tone(mood), fontWeight: FontWeight.w700),
@@ -80,10 +81,13 @@ class MarketMoodBar extends StatelessWidget {
 /// Forgatókönyvek közös ártengelyen: minden sáv a bear/base/bull ársávja, a
 /// függőleges vonal a jelenlegi ár, a sáv telítettsége a valószínűség.
 class ScenarioChart extends StatelessWidget {
-  const ScenarioChart({super.key, required this.outlook, required this.fmt});
+  const ScenarioChart({super.key, required this.outlook, required this.fmt, this.onLevelTap});
 
   final ReportOutlook outlook;
   final Fmt fmt;
+
+  /// Ha meg van adva, a kulcsszintekre koppintva árfolyam-riasztás állítható.
+  final ValueChanged<KeyLevel>? onLevelTap;
 
   @override
   Widget build(BuildContext context) {
@@ -254,6 +258,8 @@ class ScenarioChart extends StatelessWidget {
             children: [
               for (final k in outlook.keyLevels)
                 _Chip(
+                  key: ValueKey('key-level-${k.price}'),
+                  onTap: onLevelTap == null ? null : () => onLevelTap!(k),
                   color: switch (k.kind) {
                     KeyLevelKind.support => p.positive,
                     KeyLevelKind.resistance => p.negative,
@@ -268,6 +274,7 @@ class ScenarioChart extends StatelessWidget {
                 ),
             ],
           ),
+          if (onLevelTap != null) ...[const SizedBox(height: 4), Text(l10n.keyLevelAlertHint, style: small)],
         ],
         const SizedBox(height: 8),
         Text(l10n.outlookChartNote, style: small?.copyWith(fontStyle: FontStyle.italic)),
@@ -553,21 +560,42 @@ class _SplitLine extends StatelessWidget {
 }
 
 class _Chip extends StatelessWidget {
-  const _Chip({required this.color, required this.text});
+  const _Chip({super.key, required this.color, required this.text, this.onTap});
 
   final Color color;
   final String text;
 
+  /// Koppintható csip (kulcsszint → riasztás): csengő ikon jelzi.
+  final VoidCallback? onTap;
+
   @override
-  Widget build(BuildContext context) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-    decoration: BoxDecoration(
+  Widget build(BuildContext context) {
+    final label = Text(text, style: Theme.of(context).textTheme.labelMedium);
+    return Material(
       color: color.withValues(alpha: 0.12),
-      borderRadius: BorderRadius.circular(8),
-      border: Border.all(color: color.withValues(alpha: 0.4)),
-    ),
-    child: Text(text, style: Theme.of(context).textTheme.labelMedium),
-  );
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+        side: BorderSide(color: color.withValues(alpha: 0.4)),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          child: onTap == null
+              ? label
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.notifications_none_rounded, size: 14, color: color),
+                    const SizedBox(width: 4),
+                    Flexible(child: label),
+                  ],
+                ),
+        ),
+      ),
+    );
+  }
 }
 
 /// Közelgő események dátummal, időrendben.

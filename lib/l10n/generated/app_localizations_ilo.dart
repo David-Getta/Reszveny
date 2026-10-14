@@ -1428,4 +1428,24 @@ class AppLocalizationsIlo extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Naikkat ti panangsukimat ti $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'I-tap ti maysa a tukad tapno maalertoka no madanon ti presio daytoy.';
+
+  @override
+  String get shareAnalysisTitle => 'Ibingay ti panangsukimat';
+
+  @override
+  String get shareAsImage => 'Ibingay kas ladawan';
+
+  @override
+  String get shareAsText => 'Ibingay kas teksto';
+
+  @override
+  String get shareCardFooter => 'Naaramid babaen ti WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Panangsukimat ti AI · saan a balakad iti panagpuonan';
 }

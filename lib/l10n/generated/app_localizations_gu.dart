@@ -1414,4 +1414,23 @@ class AppLocalizationsGu extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol વિશ્લેષણ કાઢી નાખ્યું';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'ભાવ કોઈ સ્તરે પહોંચે ત્યારે અલર્ટ મેળવવા માટે તે સ્તર પર ટૅપ કરો.';
+
+  @override
+  String get shareAnalysisTitle => 'વિશ્લેષણ શેર કરો';
+
+  @override
+  String get shareAsImage => 'છબી તરીકે શેર કરો';
+
+  @override
+  String get shareAsText => 'ટેક્સ્ટ તરીકે શેર કરો';
+
+  @override
+  String get shareCardFooter => 'WhatStock વડે બનાવેલ';
+
+  @override
+  String get shareCardDisclaimer => 'AI વિશ્લેષણ · રોકાણ સલાહ નથી';
 }

@@ -390,5 +390,11 @@
   "seeAll": "ኩሉ ርአ ({count})",
   "searchAnalyses": "ኣብ ትንተናታትካ ድለ",
   "deleteAnalysis": "ሰርዝ",
-  "analysisDeleted": "ትንተና {symbol} ተሰሪዙ"
+  "analysisDeleted": "ትንተና {symbol} ተሰሪዙ",
+  "keyLevelAlertHint": "ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ደረጃ ጠውቑ።",
+  "shareAnalysisTitle": "ትንተና ኣካፍል",
+  "shareAsImage": "ከም ስእሊ ኣካፍል",
+  "shareAsText": "ከም ጽሑፍ ኣካፍል",
+  "shareCardFooter": "ብWhatStock ዝተሰርሐ",
+  "shareCardDisclaimer": "ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን"
 }

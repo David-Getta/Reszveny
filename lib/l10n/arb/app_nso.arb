@@ -390,5 +390,11 @@
   "seeAll": "Bona tšohle ({count})",
   "searchAnalyses": "Nyaka ditshekatshekong tša gago",
   "deleteAnalysis": "Phumola",
-  "analysisDeleted": "Tshekatsheko ya {symbol} e phumotšwe"
+  "analysisDeleted": "Tshekatsheko ya {symbol} e phumotšwe",
+  "keyLevelAlertHint": "Kgotla maemo go hwetša temošo ge theko e fihla go ona.",
+  "shareAnalysisTitle": "Abelana tshekatsheko",
+  "shareAsImage": "Abelana bjalo ka seswantšho",
+  "shareAsText": "Abelana bjalo ka sengwalwa",
+  "shareCardFooter": "E dirilwe ka WhatStock",
+  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se keletšo ya peeletšo"
 }

@@ -1414,4 +1414,23 @@ class AppLocalizationsFf extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Ƴeewndo $symbol momtaama';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Dobo tolnoore ngam heɓde tintinol so coggu ngu yettii ɗum.';
+
+  @override
+  String get shareAnalysisTitle => 'Lollin ƴeewndo';
+
+  @override
+  String get shareAsImage => 'Lollin no natal';
+
+  @override
+  String get shareAsText => 'Lollin no binndi';
+
+  @override
+  String get shareCardFooter => 'Waɗaa e WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Ƴeewndo AI · wonaa wasiya e investisman';
 }

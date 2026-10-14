@@ -1422,4 +1422,23 @@ class AppLocalizationsHa extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'An share nazarin $symbol';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Taɓa wani mataki don samun faɗakarwa idan farashi ya kai shi.';
+
+  @override
+  String get shareAnalysisTitle => 'Raba nazari';
+
+  @override
+  String get shareAsImage => 'Raba a matsayin hoto';
+
+  @override
+  String get shareAsText => 'Raba a matsayin rubutu';
+
+  @override
+  String get shareCardFooter => 'An yi da WhatStock';
+
+  @override
+  String get shareCardDisclaimer => 'Nazarin AI · ba shawarar zuba jari ba ne';
 }

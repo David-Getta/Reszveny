@@ -1417,4 +1417,23 @@ class AppLocalizationsBm extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol sɛgɛsɛgɛli jɔsira';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Hakɛ dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.';
+
+  @override
+  String get shareAnalysisTitle => 'Sɛgɛsɛgɛli jɛnsɛn';
+
+  @override
+  String get shareAsImage => 'A jɛnsɛn ja ye';
+
+  @override
+  String get shareAsText => 'A jɛnsɛn sɛbɛn ye';
+
+  @override
+  String get shareCardFooter => 'WhatStock de ye a dilan';
+
+  @override
+  String get shareCardDisclaimer => 'AI sɛgɛsɛgɛli · wari donni ladilikan tɛ';
 }

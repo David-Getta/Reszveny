@@ -390,5 +390,11 @@
   "seeAll": "Alle anzeigen ({count})",
   "searchAnalyses": "Analysen durchsuchen",
   "deleteAnalysis": "Löschen",
-  "analysisDeleted": "Analyse zu {symbol} gelöscht"
+  "analysisDeleted": "Analyse zu {symbol} gelöscht",
+  "keyLevelAlertHint": "Tippe auf eine Kursmarke, um einen Alarm zu erhalten, wenn der Kurs sie erreicht.",
+  "shareAnalysisTitle": "Analyse teilen",
+  "shareAsImage": "Als Bild teilen",
+  "shareAsText": "Als Text teilen",
+  "shareCardFooter": "Erstellt mit WhatStock",
+  "shareCardDisclaimer": "KI-Analyse · keine Anlageberatung"
 }

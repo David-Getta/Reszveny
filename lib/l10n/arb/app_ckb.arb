@@ -390,5 +390,11 @@
   "seeAll": "بینینی هەموو ({count})",
   "searchAnalyses": "لە شیکارییەکانت بگەڕێ",
   "deleteAnalysis": "سڕینەوە",
-  "analysisDeleted": "شیکاریی {symbol} سڕایەوە"
+  "analysisDeleted": "شیکاریی {symbol} سڕایەوە",
+  "keyLevelAlertHint": "دەست لە ئاستێک بدە بۆ ئەوەی کاتێک نرخ دەگاتە ئەو ئاستە ئاگادار بکرێیتەوە.",
+  "shareAnalysisTitle": "هاوبەشکردنی شیکاری",
+  "shareAsImage": "هاوبەشکردن وەک وێنە",
+  "shareAsText": "هاوبەشکردن وەک دەق",
+  "shareCardFooter": "بە WhatStock دروستکراوە",
+  "shareCardDisclaimer": "شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە"
 }

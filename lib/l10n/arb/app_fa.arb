@@ -390,5 +390,11 @@
   "seeAll": "دیدن همه ({count})",
   "searchAnalyses": "جستجو در تحلیل‌های شما",
   "deleteAnalysis": "حذف",
-  "analysisDeleted": "تحلیل {symbol} حذف شد"
+  "analysisDeleted": "تحلیل {symbol} حذف شد",
+  "keyLevelAlertHint": "روی یک سطح بزنید تا وقتی قیمت به آن رسید، هشدار بگیرید.",
+  "shareAnalysisTitle": "اشتراک‌گذاری تحلیل",
+  "shareAsImage": "اشتراک‌گذاری به‌صورت تصویر",
+  "shareAsText": "اشتراک‌گذاری به‌صورت متن",
+  "shareCardFooter": "ساخته‌شده با WhatStock",
+  "shareCardDisclaimer": "تحلیل هوش مصنوعی · توصیه سرمایه‌گذاری نیست"
 }

@@ -390,5 +390,11 @@
   "seeAll": "Tala yonso ({count})",
   "searchAnalyses": "Sosa na ba analyse na nge",
   "deleteAnalysis": "Zimbisa",
-  "analysisDeleted": "Analyse ya {symbol} me zimbisama"
+  "analysisDeleted": "Analyse ya {symbol} me zimbisama",
+  "keyLevelAlertHint": "Fina niveau mosi sambu na kuzwa lukebisu ntangu ntalu ta kuma kuna.",
+  "shareAnalysisTitle": "Kabula analyse",
+  "shareAsImage": "Kabula bonso foto",
+  "shareAsText": "Kabula bonso masonuku",
+  "shareCardFooter": "Yisalama na WhatStock",
+  "shareCardDisclaimer": "Analyse ya AI · ka malongi ma kutula mbongo ko"
 }

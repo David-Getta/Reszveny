@@ -1417,4 +1417,23 @@ class AppLocalizationsAk extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Wɔapopa $symbol nhwehwɛmu';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Mia gyinabea bi na wobɛnya kɔkɔbɔ bere a bo no du hɔ.';
+
+  @override
+  String get shareAnalysisTitle => 'Kyɛ nhwehwɛmu';
+
+  @override
+  String get shareAsImage => 'Kyɛ sɛ mfonini';
+
+  @override
+  String get shareAsText => 'Kyɛ sɛ nkyerɛwee';
+
+  @override
+  String get shareCardFooter => 'Wɔde WhatStock na ɛyɛe';
+
+  @override
+  String get shareCardDisclaimer => 'AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu';
 }

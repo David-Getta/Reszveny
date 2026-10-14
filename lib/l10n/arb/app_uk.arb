@@ -390,5 +390,11 @@
   "seeAll": "Переглянути всі ({count})",
   "searchAnalyses": "Шукати у своїх аналізах",
   "deleteAnalysis": "Видалити",
-  "analysisDeleted": "Аналіз {symbol} видалено"
+  "analysisDeleted": "Аналіз {symbol} видалено",
+  "keyLevelAlertHint": "Натисніть на рівень, щоб отримати сповіщення, коли ціна його досягне.",
+  "shareAnalysisTitle": "Поділитися аналізом",
+  "shareAsImage": "Поділитися зображенням",
+  "shareAsText": "Поділитися текстом",
+  "shareCardFooter": "Створено у WhatStock",
+  "shareCardDisclaimer": "ШІ-аналіз · не інвестиційна порада"
 }

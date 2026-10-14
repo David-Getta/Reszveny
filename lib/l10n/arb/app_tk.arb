@@ -390,5 +390,11 @@
   "seeAll": "Ählisini gör ({count})",
   "searchAnalyses": "Seljermeleriňden gözle",
   "deleteAnalysis": "Poz",
-  "analysisDeleted": "{symbol} seljermesi pozuldy"
+  "analysisDeleted": "{symbol} seljermesi pozuldy",
+  "keyLevelAlertHint": "Baha derejä ýetende duýduryş almak üçin derejä basyň.",
+  "shareAnalysisTitle": "Seljermäni paýlaş",
+  "shareAsImage": "Surat hökmünde paýlaş",
+  "shareAsText": "Tekst hökmünde paýlaş",
+  "shareCardFooter": "WhatStock bilen döredildi",
+  "shareCardDisclaimer": "AI seljermesi · maýa goýum maslahaty däl"
 }

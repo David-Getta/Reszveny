@@ -390,5 +390,11 @@
   "seeAll": "ټول وګورئ ({count})",
   "searchAnalyses": "په خپلو تحلیلونو کې ولټوئ",
   "deleteAnalysis": "ړنګ کړئ",
-  "analysisDeleted": "د {symbol} تحلیل ړنګ شو"
+  "analysisDeleted": "د {symbol} تحلیل ړنګ شو",
+  "keyLevelAlertHint": "پر یوې کچې ټک وکړئ څو کله چې بیه هغې ته ورسیږي، خبرتیا ترلاسه کړئ.",
+  "shareAnalysisTitle": "تحلیل شریک کړئ",
+  "shareAsImage": "د انځور په توګه شریک کړئ",
+  "shareAsText": "د متن په توګه شریک کړئ",
+  "shareCardFooter": "د WhatStock په مرسته جوړ شوی",
+  "shareCardDisclaimer": "AI تحلیل · د پانګونې مشوره نه ده"
 }

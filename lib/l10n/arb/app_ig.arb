@@ -390,5 +390,11 @@
   "seeAll": "Hụ ha niile ({count})",
   "searchAnalyses": "Chọọ na nyocha gị",
   "deleteAnalysis": "Hichapụ",
-  "analysisDeleted": "E hichapụla nyocha {symbol}"
+  "analysisDeleted": "E hichapụla nyocha {symbol}",
+  "keyLevelAlertHint": "Pịa otu ogo ka ị nweta ọkwa mgbe ọnụahịa ruru ya.",
+  "shareAnalysisTitle": "Kesaa nyocha",
+  "shareAsImage": "Kesaa dị ka foto",
+  "shareAsText": "Kesaa dị ka ederede",
+  "shareCardFooter": "E ji WhatStock mee ya",
+  "shareCardDisclaimer": "Nyocha AI · ọ bụghị ndụmọdụ itinye ego"
 }

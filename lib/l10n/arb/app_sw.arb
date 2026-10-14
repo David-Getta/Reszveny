@@ -390,5 +390,11 @@
   "seeAll": "Ona zote ({count})",
   "searchAnalyses": "Tafuta katika uchambuzi wako",
   "deleteAnalysis": "Futa",
-  "analysisDeleted": "Uchambuzi wa {symbol} umefutwa"
+  "analysisDeleted": "Uchambuzi wa {symbol} umefutwa",
+  "keyLevelAlertHint": "Gusa kiwango ili upate arifa bei inapokifikia.",
+  "shareAnalysisTitle": "Shiriki uchambuzi",
+  "shareAsImage": "Shiriki kama picha",
+  "shareAsText": "Shiriki kama maandishi",
+  "shareCardFooter": "Imetengenezwa kwa WhatStock",
+  "shareCardDisclaimer": "Uchambuzi wa AI · si ushauri wa uwekezaji"
 }

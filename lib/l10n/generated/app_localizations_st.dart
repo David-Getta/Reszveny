@@ -1425,4 +1425,24 @@ class AppLocalizationsSt extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return 'Tlhahlobo ya $symbol e hlakotswe';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Tobetsa boemo ho fumana tsebiso ha theko e fihla ho bona.';
+
+  @override
+  String get shareAnalysisTitle => 'Arolelana tlhahlobo';
+
+  @override
+  String get shareAsImage => 'Arolelana jwalo ka setshwantsho';
+
+  @override
+  String get shareAsText => 'Arolelana jwalo ka mongolo';
+
+  @override
+  String get shareCardFooter => 'E entswe ka WhatStock';
+
+  @override
+  String get shareCardDisclaimer =>
+      'Tlhahlobo ya AI · hase keletso ya ho tsetela';
 }

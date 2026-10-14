@@ -390,5 +390,11 @@
   "seeAll": "सभटा देखाउ ({count})",
   "searchAnalyses": "अपन विश्लेषण मे खोजू",
   "deleteAnalysis": "मेटाउ",
-  "analysisDeleted": "{symbol} विश्लेषण मेटाओल गेल"
+  "analysisDeleted": "{symbol} विश्लेषण मेटाओल गेल",
+  "keyLevelAlertHint": "कोनो स्तर पर टैप करू, दाम ओतय पहुँचला पर अलर्ट भेटत।",
+  "shareAnalysisTitle": "विश्लेषण साझा करू",
+  "shareAsImage": "छवि रूपमे साझा करू",
+  "shareAsText": "पाठ रूपमे साझा करू",
+  "shareCardFooter": "WhatStock सँ बनाओल",
+  "shareCardDisclaimer": "AI विश्लेषण · निवेशक सलाह नहि"
 }

@@ -390,5 +390,11 @@
   "seeAll": "ସବୁ ଦେଖନ୍ତୁ ({count})",
   "searchAnalyses": "ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ଖୋଜନ୍ତୁ",
   "deleteAnalysis": "ଡିଲିଟ କରନ୍ତୁ",
-  "analysisDeleted": "{symbol} ବିଶ୍ଳେଷଣ ଡିଲିଟ ହେଲା"
+  "analysisDeleted": "{symbol} ବିଶ୍ଳେଷଣ ଡିଲିଟ ହେଲା",
+  "keyLevelAlertHint": "ଦର କୌଣସି ସ୍ତରରେ ପହଞ୍ଚିଲେ ଆଲର୍ଟ ପାଇବାକୁ ସେହି ସ୍ତରକୁ ଟ୍ୟାପ କରନ୍ତୁ।",
+  "shareAnalysisTitle": "ବିଶ୍ଳେଷଣ ସେୟାର କରନ୍ତୁ",
+  "shareAsImage": "ଛବି ଭାବେ ସେୟାର କରନ୍ତୁ",
+  "shareAsText": "ଟେକ୍ସଟ ଭାବେ ସେୟାର କରନ୍ତୁ",
+  "shareCardFooter": "WhatStock ଦ୍ୱାରା ନିର୍ମିତ",
+  "shareCardDisclaimer": "AI ବିଶ୍ଳେଷଣ · ନିବେଶ ପରାମର୍ଶ ନୁହେଁ"
 }

@@ -1419,4 +1419,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String analysisDeleted(String symbol) {
     return '$symbol tahlili oʻchirildi';
   }
+
+  @override
+  String get keyLevelAlertHint =>
+      'Narx darajaga yetganda bildirishnoma olish uchun darajani bosing.';
+
+  @override
+  String get shareAnalysisTitle => 'Tahlilni ulashish';
+
+  @override
+  String get shareAsImage => 'Rasm sifatida ulashish';
+
+  @override
+  String get shareAsText => 'Matn sifatida ulashish';
+
+  @override
+  String get shareCardFooter => 'WhatStock yordamida yaratilgan';
+
+  @override
+  String get shareCardDisclaimer => 'AI tahlili · investitsiya maslahati emas';
 }

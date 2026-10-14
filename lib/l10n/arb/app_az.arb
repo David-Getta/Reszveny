@@ -390,5 +390,11 @@
   "seeAll": "Hamısına bax ({count})",
   "searchAnalyses": "Təhlillərində axtar",
   "deleteAnalysis": "Sil",
-  "analysisDeleted": "{symbol} təhlili silindi"
+  "analysisDeleted": "{symbol} təhlili silindi",
+  "keyLevelAlertHint": "Qiymət səviyyəyə çatanda bildiriş almaq üçün səviyyəyə toxunun.",
+  "shareAnalysisTitle": "Təhlili paylaş",
+  "shareAsImage": "Şəkil kimi paylaş",
+  "shareAsText": "Mətn kimi paylaş",
+  "shareCardFooter": "WhatStock ilə hazırlanıb",
+  "shareCardDisclaimer": "AI təhlili · investisiya məsləhəti deyil"
 }
