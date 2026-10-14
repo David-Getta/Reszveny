@@ -678,7 +678,14 @@ class Api {
     if (PlanSpec.byProductId(productId) == null && !PlanSpec.packs.containsKey(productId)) {
       return _error(400, 'unknown_product');
     }
-    final txn = await verifier.verify(platform: platform, productId: productId, verificationData: data);
+    final String? txn;
+    try {
+      txn = await verifier.verify(platform: platform, productId: productId, verificationData: data);
+    } catch (e) {
+      // A bolt most nem érhető el: az app megtartja a bizonylatot, és később újra próbálja.
+      stderr.writeln('Vásárlás-ellenőrzés hiba ($platform, $productId): $e');
+      return _error(502, 'store_unavailable');
+    }
     if (txn == null) return _error(402, 'invalid_purchase');
     final e = store.entitlement(uid);
     final fresh = store.recordPurchase(userId: uid, productId: productId, platform: platform, transactionId: txn);

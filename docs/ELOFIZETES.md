@@ -140,8 +140,27 @@ mondják, és hogy a vásárlással a felhasználó elfogadja a feltételeket �
 megerősítő ablak is elmondja.
 
 A bolti bizonylat ellenőrzése jelenleg fejlesztői módban (`VERIFY_MODE=dev`) minden vásárlást
-elfogad; az App Store Server API / Play Developer API hívás (`VERIFY_MODE=store`) a bolti fiókok
-megléte után készül el. Az eredeti terv, viszonyításként:
+elfogad. Az éles ellenőrzés (`VERIFY_MODE=store`) kész:
+
+- **App Store**: az app (StoreKit 2) az Apple által aláírt tranzakciót küldi; a szerver a
+  tranzakció-azonosítót közvetlenül az Apple-től kérdezi vissza (App Store Server API, előbb éles,
+  aztán sandbox/TestFlight), és ellenőrzi az appot (bundle ID), a terméket, a visszatérítést és
+  előfizetésnél a lejáratot. Beállítás: App Store Connect → *Users and Access → Integrations →
+  In-App Purchase* → kulcs létrehozása (.p8). Railway-változók: `APPLE_ISSUER_ID`, `APPLE_KEY_ID`,
+  `APPLE_PRIVATE_KEY` (a .p8 fájl teljes tartalma), `APPLE_BUNDLE_ID` (`hu.reszveny.reszveny`).
+- **Google Play**: a szerver szolgáltatásfiókkal a Play Developer API-t kérdezi (előfizetésnél
+  aktív vagy türelmi idős állapot és lejárat, csomagnál megvásárolt állapot). Beállítás: Google
+  Cloud → szolgáltatásfiók + JSON-kulcs; Play Console → *Users and permissions* → a
+  szolgáltatásfiók meghívása „View financial data” és „Manage orders and subscriptions”
+  joggal. Railway-változók: `GOOGLE_SERVICE_ACCOUNT_JSON` (a JSON-kulcs teljes tartalma),
+  `GOOGLE_PACKAGE_NAME` (`hu.reszveny.reszveny`).
+- Ha a bolt épp nem érhető el, a szerver 502-t ad (`store_unavailable`), az app megtartja a
+  bizonylatot, és később újra próbálja. Egy tranzakció csak egyszer írható jóvá.
+- Még hátra van: a bolti értesítések (App Store Server Notifications V2, Google Real-time
+  Developer Notifications) a megújítás, lemondás és visszatérítés automatikus követésére. Addig
+  a megújított időszakot az app a következő visszaállításkor / vásárlás-eseménykor küldi be.
+
+Az eredeti terv, viszonyításként:
 
 1. **Proxy**: az app nem közvetlenül az Anthropic és a Finnhub API-t hívja, hanem a saját
    backendet (`ANTHROPIC_BASE_URL` / `FINNHUB_BASE_URL` a proxyra mutat). A kulcsok csak a

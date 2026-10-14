@@ -6,6 +6,7 @@ import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/invites.dart';
 import 'package:whatstock_server/src/mailer.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
+import 'package:whatstock_server/src/store_apis.dart';
 import 'package:whatstock_server/src/stripe.dart';
 
 /// Indítás: `ANTHROPIC_API_KEY=… FINNHUB_API_KEY=… dart run bin/server.dart`
@@ -17,7 +18,9 @@ import 'package:whatstock_server/src/stripe.dart';
 /// (zárt előzetes: `KÓD:Név[:ÉÉÉÉ-HH-NN][:eszközök][:napi elemzés]`, vesszővel elválasztva),
 /// REFERRAL_BONUS (5) és REFERRAL_MAX (10): az ajánlói program jutalma és felső határa,
 /// ADMIN_TOKEN: a `/admin` statisztika-oldal kulcsa (nélküle az oldal nem érhető el),
-/// DOWNLOAD_BASE_URL: a nyitóoldal letöltés-gombjainak alapcíme.
+/// DOWNLOAD_BASE_URL: a nyitóoldal letöltés-gombjainak alapcíme. Éles vásárlás-ellenőrzés
+/// (VERIFY_MODE=store): APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY (.p8 tartalma),
+/// APPLE_BUNDLE_ID, GOOGLE_SERVICE_ACCOUNT_JSON (a szolgáltatásfiók JSON-kulcsa), GOOGLE_PACKAGE_NAME.
 Future<void> main() async {
   final env = Platform.environment;
   final anthropic = env['ANTHROPIC_API_KEY'] ?? '';
@@ -27,7 +30,7 @@ Future<void> main() async {
     exit(2);
   }
   final store = Store.open(env['DATABASE_PATH'] ?? 'whatstock.db');
-  final verifier = (env['VERIFY_MODE'] ?? 'dev') == 'store' ? const StoreVerifier() : const DevVerifier();
+  final verifier = (env['VERIFY_MODE'] ?? 'dev') == 'store' ? _storeVerifier(env) : const DevVerifier();
   final port0 = env['PORT'] ?? '8080';
   final resend = env['RESEND_API_KEY'] ?? '';
   final stripeKey = env['STRIPE_SECRET_KEY'] ?? '';
@@ -68,4 +71,32 @@ Future<void> main() async {
     'WhatStock backend fut: http://${server.address.host}:${server.port} (verify: ${verifier.runtimeType}, '
     'meghívókódok: ${invites.enabled ? invites.length : 'nincs, nyitott'})',
   );
+}
+
+/// Éles bolti ellenőrzés a beállított boltokhoz; amelyik nincs beállítva, annak a
+/// vásárlásait elutasítja (a napló figyelmeztet).
+StoreVerifier _storeVerifier(Map<String, String> env) {
+  final appleKey = (env['APPLE_PRIVATE_KEY'] ?? '').replaceAll(r'\n', '\n');
+  final googleJson = env['GOOGLE_SERVICE_ACCOUNT_JSON'] ?? '';
+  final apple = appleKey.isEmpty
+      ? null
+      : AppleStoreApi(
+          issuerId: env['APPLE_ISSUER_ID'] ?? '',
+          keyId: env['APPLE_KEY_ID'] ?? '',
+          privateKeyPem: appleKey,
+          bundleId: env['APPLE_BUNDLE_ID'] ?? 'hu.reszveny.reszveny',
+        );
+  final google = googleJson.isEmpty
+      ? null
+      : GooglePlayApi(
+          serviceAccountJson: googleJson,
+          packageName: env['GOOGLE_PACKAGE_NAME'] ?? 'hu.reszveny.reszveny',
+        );
+  if (apple == null) {
+    stderr.writeln('VERIFY_MODE=store, de nincs APPLE_PRIVATE_KEY: az App Store-vásárlásokat elutasítjuk.');
+  }
+  if (google == null) {
+    stderr.writeln('VERIFY_MODE=store, de nincs GOOGLE_SERVICE_ACCOUNT_JSON: a Google Play-vásárlásokat elutasítjuk.');
+  }
+  return StoreVerifier(apple: apple, google: google);
 }

@@ -1,6 +1,7 @@
-/// Vásárlás-ellenőrzés a bolt felé. Éles módban az App Store Server API-t
-/// (JWS-aláírt tranzakció) és a Play Developer API-t kell hívni; itt a
-/// szerkezet és a fejlesztői („bármit elfogad”) megvalósítás van.
+import 'store_apis.dart';
+
+/// Vásárlás-ellenőrzés a bolt felé: fejlesztői módban mindent elfogad, éles
+/// módban az App Store Server API-t és a Play Developer API-t kérdezi.
 abstract interface class PurchaseVerifier {
   /// Visszaadja a tranzakció azonosítóját, ha a vásárlás érvényes; `null` ha nem.
   Future<String?> verify({required String platform, required String productId, required String verificationData});
@@ -21,11 +22,16 @@ class DevVerifier implements PurchaseVerifier {
   }
 }
 
-/// Éles: App Store Server API (StoreKit 2 JWS) és Play Developer API.
-/// Beállítás: APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY, GOOGLE_SERVICE_ACCOUNT_JSON.
-/// Ennek megírása a bolti fiókok létrejötte után következik (vagy RevenueCat).
+/// Éles: App Store Server API (StoreKit 2 JWS) és Google Play Developer API.
+/// Beállítás: APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY, APPLE_BUNDLE_ID,
+/// GOOGLE_SERVICE_ACCOUNT_JSON, GOOGLE_PACKAGE_NAME. Amelyik bolt nincs
+/// beállítva, annak a vásárlását elutasítja. A böngészős fizetés (Stripe) nem
+/// ezen megy át, hanem a webhookon.
 class StoreVerifier implements PurchaseVerifier {
-  const StoreVerifier();
+  const StoreVerifier({this.apple, this.google});
+
+  final AppleStoreApi? apple;
+  final GooglePlayApi? google;
 
   @override
   Future<String?> verify({
@@ -33,6 +39,11 @@ class StoreVerifier implements PurchaseVerifier {
     required String productId,
     required String verificationData,
   }) async {
-    throw UnimplementedError('A bolti ellenőrzés a bolti fiókok beállítása után készül el (docs/ELOFIZETES.md).');
+    if (verificationData.isEmpty) return null;
+    return switch (platform) {
+      'app_store' => apple?.verify(productId: productId, signedTransaction: verificationData),
+      'google_play' => google?.verify(productId: productId, purchaseToken: verificationData),
+      _ => null,
+    };
   }
 }
