@@ -23,7 +23,7 @@ padding:14px;margin:16px 0;font-weight:600}
 .chip{display:inline-block;padding:3px 10px;border-radius:99px;background:var(--soft);color:var(--accent);font-weight:600;font-size:14px}
 .sc{margin-top:14px}.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:6px}
 .bar span{display:block;height:100%;border-radius:99px}
-.bull span{background:var(--bull)}.base span{background:var(--base)}.bear span{background:var(--bear)}
+.bull .bar span{background:var(--bull)}.base .bar span{background:var(--base)}.bear .bar span{background:var(--bear)}
 .likely{font-size:12px;font-weight:700;color:var(--accent);margin-left:6px}
 .cta{text-align:center;margin-top:26px}.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
 padding:12px 22px;border-radius:12px;font-weight:700;margin:6px}.btn.alt{background:transparent;color:var(--accent);
