@@ -1645,4 +1645,21 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'មិនទាន់មានការវិភាគនៅឡើយ';
+
+  @override
+  String get portfolioDividends => 'ភាគលាភប្រចាំឆ្នាំ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'ទិន្នផល $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ភាគលាភប្រចាំឆ្នាំដែលរំពឹងទុក ផ្អែកលើភាគលាភដែលបានបង់ក្នុងរយៈពេល 12 ខែចុងក្រោយ ហើយការបង់នាពេលអនាគតមិនត្រូវបានធានាទេ។';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ភាគលាភ៖ $amount ក្នុងមួយឆ្នាំ';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Aýyr",
   "compareTickerHint": "Tiker, meselem MSFT",
   "compareHint": "Esasy görkezijiler gapdal-gapdala; her setirde iň gowy baha bellenýär. Mukdarlar her paýnamanyň öz walýutasynda.",
-  "compareNoAnalysis": "Entek seljerme ýok"
+  "compareNoAnalysis": "Entek seljerme ýok",
+  "portfolioDividends": "Ýyllyk diwidend",
+  "portfolioDividendYield": "Girdejililik {percent}",
+  "portfolioDividendNote": "Garaşylýan ýyllyk diwidend soňky 12 aýda tölenen diwidendlere esaslanýar; geljekki tölegler kepillendirilmeýär.",
+  "positionDividend": "Diwidend: ýylda {amount}"
 }

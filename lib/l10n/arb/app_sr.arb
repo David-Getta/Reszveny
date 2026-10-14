@@ -453,5 +453,9 @@
   "compareRemove": "Уклони",
   "compareTickerHint": "Тикер, нпр. MSFT",
   "compareHint": "Кључни показатељи један поред другог; најбоља вредност у сваком реду је истакнута. Износи су у валути сваке акције.",
-  "compareNoAnalysis": "Још нема анализе"
+  "compareNoAnalysis": "Још нема анализе",
+  "portfolioDividends": "Годишње дивиденде",
+  "portfolioDividendYield": "Принос {percent}",
+  "portfolioDividendNote": "Очекиване годишње дивиденде заснивају се на дивидендама исплаћеним у последњих 12 месеци; будуће исплате нису загарантоване.",
+  "positionDividend": "Дивиденда: {amount} годишње"
 }

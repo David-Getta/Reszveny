@@ -453,5 +453,9 @@
   "compareRemove": "Sil",
   "compareTickerHint": "Tiker, məs. MSFT",
   "compareHint": "Əsas göstəricilər yan-yana; hər sətirdə ən yaxşı dəyər vurğulanır. Məbləğlər hər səhmin öz valyutasındadır.",
-  "compareNoAnalysis": "Hələ təhlil yoxdur"
+  "compareNoAnalysis": "Hələ təhlil yoxdur",
+  "portfolioDividends": "İllik dividendlər",
+  "portfolioDividendYield": "{percent} gəlirlilik",
+  "portfolioDividendNote": "Gözlənilən illik dividendlər son 12 ayda ödənilmiş dividendlərə əsaslanır; gələcək ödənişlərə zəmanət verilmir.",
+  "positionDividend": "Dividend: ildə {amount}"
 }

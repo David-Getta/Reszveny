@@ -453,5 +453,9 @@
   "compareRemove": "Yiise",
   "compareTickerHint": "Ticker, wala MSFT",
   "compareHint": "Sõdb kãsems taab sʋka; sor fãa pʋgẽ, sẽn yɩɩd sõma la b wilgda. Ligdã be aksiõ kam fãa ligd buud pʋgẽ.",
-  "compareNoAnalysis": "Vɛɛsgo ka zĩnd ne masã ye"
+  "compareNoAnalysis": "Vɛɛsgo ka zĩnd ne masã ye",
+  "portfolioDividends": "Dividãnd yʋʋmd fãa",
+  "portfolioDividendYield": "{percent} nafa",
+  "portfolioDividendNote": "Dividãnd ning b sẽn tẽed yʋʋmd fãa wã yaa dividãnd ning b sẽn yao kiis 12 sẽn loogã zugu; b pa tõe n kɩɩs tɩ b na n yao beoog ye.",
+  "positionDividend": "Dividãnd: {amount} yʋʋmd fãa"
 }

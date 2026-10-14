@@ -1661,4 +1661,21 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'এখনও কোনো বিশ্লেষণ নেই';
+
+  @override
+  String get portfolioDividends => 'বার্ষিক ডিভিডেন্ড';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ইল্ড';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'প্রত্যাশিত বার্ষিক ডিভিডেন্ড গত 12 মাসে পরিশোধিত ডিভিডেন্ডের ভিত্তিতে হিসাব করা হয়; ভবিষ্যতের পরিশোধ নিশ্চিত নয়।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ডিভিডেন্ড: বছরে $amount';
+  }
 }

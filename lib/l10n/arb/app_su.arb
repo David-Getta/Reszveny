@@ -453,5 +453,9 @@
   "compareRemove": "Piceun",
   "compareTickerHint": "Kode saham, conto MSFT",
   "compareHint": "Angka utama sajajar; nilai pangalusna dina unggal baris disorot. Jumlahna dina mata uang unggal saham.",
-  "compareNoAnalysis": "Can aya analisis"
+  "compareNoAnalysis": "Can aya analisis",
+  "portfolioDividends": "Dividén taunan",
+  "portfolioDividendYield": "Imbal hasil {percent}",
+  "portfolioDividendNote": "Dividén taunan anu diperkirakeun dumasar kana dividén anu dibayar dina 12 bulan ka tukang; pamayaran ka hareup henteu dijamin.",
+  "positionDividend": "Dividén: {amount} sataun"
 }

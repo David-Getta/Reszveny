@@ -453,5 +453,9 @@
   "compareRemove": "Verwijderen",
   "compareTickerHint": "Ticker, bijv. MSFT",
   "compareHint": "Kerncijfers naast elkaar; de beste waarde per rij is gemarkeerd. Bedragen staan in de eigen valuta van elk aandeel.",
-  "compareNoAnalysis": "Nog geen analyse"
+  "compareNoAnalysis": "Nog geen analyse",
+  "portfolioDividends": "Jaarlijks dividend",
+  "portfolioDividendYield": "{percent} dividendrendement",
+  "portfolioDividendNote": "Het verwachte jaarlijkse dividend is gebaseerd op de dividenden die in de afgelopen 12 maanden zijn uitgekeerd; toekomstige uitkeringen zijn niet gegarandeerd.",
+  "positionDividend": "Dividend: {amount} per jaar"
 }

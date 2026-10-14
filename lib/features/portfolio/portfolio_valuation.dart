@@ -5,7 +5,14 @@ import 'portfolio_store.dart';
 
 /// Egy pozíció értékelése az aktuális árral.
 class PositionValue {
-  const PositionValue({required this.position, this.price, this.dayChange, this.rate, this.weight = 0});
+  const PositionValue({
+    required this.position,
+    this.price,
+    this.dayChange,
+    this.rate,
+    this.weight = 0,
+    this.dividendPerShare,
+  });
 
   final Position position;
 
@@ -20,6 +27,13 @@ class PositionValue {
 
   /// Súly a portfólióban (0–1), az összesítés pénznemében számolt értékből.
   final double weight;
+
+  /// Az utolsó éves osztalék részvényenként, a részvény pénznemében.
+  final double? dividendPerShare;
+
+  /// Várható éves osztalék a részvény pénznemében (`null`, ha nem fizet).
+  double? get annualDividend =>
+      dividendPerShare == null || dividendPerShare! <= 0 ? null : dividendPerShare! * position.quantity;
 
   double? get value => price == null ? null : price! * position.quantity;
   double? get gain => value == null ? null : value! - position.cost;
@@ -38,9 +52,17 @@ class PortfolioSnapshot {
     required this.value,
     required this.cost,
     required this.dayGain,
+    this.annualDividend = 0,
   });
 
   final String currency;
+
+  /// Várható éves osztalék az összesítés pénznemében (az utolsó éves osztalék alapján).
+  final double annualDividend;
+
+  /// Osztalékhozam a mai értékre, illetve a bekerülési értékre.
+  double? get dividendYield => value == 0 || annualDividend == 0 ? null : annualDividend / value * 100;
+  double? get dividendYieldOnCost => cost == 0 || annualDividend == 0 ? null : annualDividend / cost * 100;
   final List<PositionValue> rows;
   final double value;
   final double cost;
@@ -62,18 +84,26 @@ class PortfolioSnapshot {
     required Map<String, StockQuote> quotes,
     required double? Function(String from, String to) rate,
     required String currency,
+    Map<String, double> dividends = const {},
   }) {
     final rows = <PositionValue>[];
-    var value = 0.0, cost = 0.0, day = 0.0;
+    var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0;
     for (final p in positions) {
       final q = quotes[p.symbol];
       final r = p.currency == currency ? 1.0 : rate(p.currency, currency);
-      final row = PositionValue(position: p, price: q?.price, dayChange: q?.change, rate: r);
+      final row = PositionValue(
+        position: p,
+        price: q?.price,
+        dayChange: q?.change,
+        rate: r,
+        dividendPerShare: dividends[p.symbol],
+      );
       rows.add(row);
       if (!row.inTotal) continue;
       value += row.value! * r!;
       cost += p.cost * r;
       day += (row.dayGain ?? 0) * r;
+      dividend += (row.annualDividend ?? 0) * r;
     }
     final weighted = [
       for (final r in rows)
@@ -83,9 +113,17 @@ class PortfolioSnapshot {
           dayChange: r.dayChange,
           rate: r.rate,
           weight: r.inTotal && value > 0 ? r.value! * r.rate! / value : 0,
+          dividendPerShare: r.dividendPerShare,
         ),
     ]..sort((a, b) => b.weight.compareTo(a.weight));
-    return PortfolioSnapshot(currency: currency, rows: weighted, value: value, cost: cost, dayGain: day);
+    return PortfolioSnapshot(
+      currency: currency,
+      rows: weighted,
+      value: value,
+      cost: cost,
+      dayGain: day,
+      annualDividend: dividend,
+    );
   }
 
   /// Árak és árfolyamok letöltése, majd összesítés. Egy-egy hiányzó ár vagy
@@ -98,12 +136,21 @@ class PortfolioSnapshot {
   }) async {
     final quotes = <String, StockQuote>{};
     final rates = <String, double>{};
+    final dividends = <String, double>{};
     Future<void> quote(String symbol) async {
       try {
         quotes[symbol] = await marketData.quote(symbol);
       } catch (_) {
         // Ár nélkül a pozíció kimarad az összegből.
       }
+    }
+
+    // Az osztalék a mutatókból jön; ha nem érhető el, egyszerűen nincs.
+    Future<void> dividend(String symbol) async {
+      try {
+        final d = (await marketData.metrics(symbol)).dividendPerShare;
+        if (d != null && d > 0) dividends[symbol] = d;
+      } catch (_) {}
     }
 
     Future<void> fxRate(String from) async {
@@ -113,9 +160,10 @@ class PortfolioSnapshot {
 
     await Future.wait([
       for (final p in positions) quote(p.symbol),
+      for (final s in {for (final p in positions) p.symbol}) dividend(s),
       for (final c in {for (final p in positions) p.currency}.where((c) => c != currency)) fxRate(c),
     ]);
-    return compute(positions, quotes: quotes, rate: (from, _) => rates[from], currency: currency);
+    return compute(positions, quotes: quotes, rate: (from, _) => rates[from], currency: currency, dividends: dividends);
   }
 
   /// Az összesítés pénzneme: a megjelenítési pénznem, különben a pozíciók

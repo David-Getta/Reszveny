@@ -1661,4 +1661,21 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ანალიზი ჯერ არ არის';
+
+  @override
+  String get portfolioDividends => 'წლიური დივიდენდები';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'შემოსავლიანობა $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'მოსალოდნელი წლიური დივიდენდები ეფუძნება ბოლო 12 თვეში გადახდილ დივიდენდებს; მომავალი გადახდები გარანტირებული არ არის.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'დივიდენდი: წელიწადში $amount';
+  }
 }

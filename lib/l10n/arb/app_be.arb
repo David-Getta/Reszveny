@@ -453,5 +453,9 @@
   "compareRemove": "Выдаліць",
   "compareTickerHint": "Тыкер, напр. MSFT",
   "compareHint": "Асноўныя паказчыкі побач; найлепшае значэнне ў кожным радку вылучана. Сумы — ва ўласнай валюце кожнай акцыі.",
-  "compareNoAnalysis": "Аналізу пакуль няма"
+  "compareNoAnalysis": "Аналізу пакуль няма",
+  "portfolioDividends": "Гадавыя дывідэнды",
+  "portfolioDividendYield": "Даходнасць {percent}",
+  "portfolioDividendNote": "Чаканыя гадавыя дывідэнды разлічаны паводле дывідэндаў, выплачаных за апошнія 12 месяцаў; будучыя выплаты не гарантаваныя.",
+  "positionDividend": "Дывідэнд: {amount} у год"
 }

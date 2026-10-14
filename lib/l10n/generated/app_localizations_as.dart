@@ -1660,4 +1660,21 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'এতিয়ালৈকে কোনো বিশ্লেষণ নাই';
+
+  @override
+  String get portfolioDividends => 'বাৰ্ষিক লভ্যাংশ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ইল্ড';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'আশা কৰা বাৰ্ষিক লভ্যাংশ যোৱা 12 মাহত পৰিশোধ কৰা লভ্যাংশৰ ওপৰত ভিত্তি কৰি হিচাপ কৰা হয়; ভৱিষ্যতৰ পৰিশোধৰ নিশ্চয়তা নাই।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'লভ্যাংশ: বছৰি $amount';
+  }
 }

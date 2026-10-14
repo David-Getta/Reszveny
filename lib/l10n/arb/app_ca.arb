@@ -453,5 +453,9 @@
   "compareRemove": "Elimina",
   "compareTickerHint": "Ticker, p. ex. MSFT",
   "compareHint": "Xifres clau una al costat de l'altra; el millor valor de cada fila està ressaltat. Els imports són en la divisa pròpia de cada acció.",
-  "compareNoAnalysis": "Encara no hi ha cap anàlisi"
+  "compareNoAnalysis": "Encara no hi ha cap anàlisi",
+  "portfolioDividends": "Dividends anuals",
+  "portfolioDividendYield": "{percent} de rendibilitat",
+  "portfolioDividendNote": "Els dividends anuals previstos es basen en els dividends pagats els darrers 12 mesos; els pagaments futurs no estan garantits.",
+  "positionDividend": "Dividend: {amount} l’any"
 }

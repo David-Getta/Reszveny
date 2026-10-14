@@ -453,5 +453,9 @@
   "compareRemove": "Elimină",
   "compareTickerHint": "Simbol, ex. MSFT",
   "compareHint": "Indicatorii cheie unul lângă altul; cea mai bună valoare din fiecare rând este evidențiată. Sumele sunt în moneda proprie a fiecărei acțiuni.",
-  "compareNoAnalysis": "Nicio analiză încă"
+  "compareNoAnalysis": "Nicio analiză încă",
+  "portfolioDividends": "Dividende anuale",
+  "portfolioDividendYield": "Randament {percent}",
+  "portfolioDividendNote": "Dividendele anuale estimate se bazează pe dividendele plătite în ultimele 12 luni; plățile viitoare nu sunt garantate.",
+  "positionDividend": "Dividend: {amount} pe an"
 }

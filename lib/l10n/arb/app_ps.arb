@@ -453,5 +453,9 @@
   "compareRemove": "لرې کړئ",
   "compareTickerHint": "ټیکر، لکه MSFT",
   "compareHint": "مهمې شمېرې څنګ په څنګ؛ په هر قطار کې غوره ارزښت روښانه شوی. اندازې د هرې ونډې په خپل پولي واحد کې دي.",
-  "compareNoAnalysis": "تر اوسه تحلیل نشته"
+  "compareNoAnalysis": "تر اوسه تحلیل نشته",
+  "portfolioDividends": "کلنۍ د ونډې ګټه",
+  "portfolioDividendYield": "د ګټې کچه {percent}",
+  "portfolioDividendNote": "تمه شوې کلنۍ د ونډې ګټه په تېرو 12 میاشتو کې پر ورکړل شوې ګټې ولاړه ده؛ راتلونکې ورکړې تضمین نه دي.",
+  "positionDividend": "د ونډې ګټه: کلنۍ {amount}"
 }

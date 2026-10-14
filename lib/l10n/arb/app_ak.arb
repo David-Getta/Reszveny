@@ -453,5 +453,9 @@
   "compareRemove": "Yi fi mu",
   "compareTickerHint": "Ticker, sɛ MSFT",
   "compareHint": "Akontaa atitiriw si nkyɛn nkyɛn; wɔahyɛ bo a ɛyɛ papa sen biara wɔ nsensanee biara mu no nsow. Sika dodow no wɔ nkyɛfa biara ankasa sika mu.",
-  "compareNoAnalysis": "Nhwehwɛmu biara nni hɔ mmom"
+  "compareNoAnalysis": "Nhwehwɛmu biara nni hɔ mmom",
+  "portfolioDividends": "Afe biara mfaso kyɛ",
+  "portfolioDividendYield": "Mfaso kyɛ wɔ bo so: {percent}",
+  "portfolioDividendNote": "Mfaso kyɛ a yɛhwɛ kwan afe biara gyina mfaso kyɛ a wɔtuaa wɔ abosome 12 a atwam no so; yɛrentumi nhyɛ da sɛ wɔbɛtua bi daakye.",
+  "positionDividend": "Mfaso kyɛ: {amount} afe biara"
 }

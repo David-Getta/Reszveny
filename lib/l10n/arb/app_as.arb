@@ -453,5 +453,9 @@
   "compareRemove": "আঁতৰাওক",
   "compareTickerHint": "টিকাৰ, যেনে MSFT",
   "compareHint": "মূল সংখ্যাসমূহ কাষে কাষে; প্ৰতিটো শাৰীৰ সৰ্বোত্তম মান হাইলাইট কৰা হৈছে। পৰিমাণসমূহ প্ৰতিটো শ্বেয়াৰৰ নিজা মুদ্ৰাত।",
-  "compareNoAnalysis": "এতিয়ালৈকে কোনো বিশ্লেষণ নাই"
+  "compareNoAnalysis": "এতিয়ালৈকে কোনো বিশ্লেষণ নাই",
+  "portfolioDividends": "বাৰ্ষিক লভ্যাংশ",
+  "portfolioDividendYield": "{percent} ইল্ড",
+  "portfolioDividendNote": "আশা কৰা বাৰ্ষিক লভ্যাংশ যোৱা 12 মাহত পৰিশোধ কৰা লভ্যাংশৰ ওপৰত ভিত্তি কৰি হিচাপ কৰা হয়; ভৱিষ্যতৰ পৰিশোধৰ নিশ্চয়তা নাই।",
+  "positionDividend": "লভ্যাংশ: বছৰি {amount}"
 }

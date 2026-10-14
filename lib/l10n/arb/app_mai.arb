@@ -453,5 +453,9 @@
   "compareRemove": "हटाउ",
   "compareTickerHint": "टिकर, जेना MSFT",
   "compareHint": "मुख्य आँकड़ा संग-संग; प्रत्येक पंक्तिमे सर्वश्रेष्ठ मान हाइलाइट कएल गेल अछि। राशि प्रत्येक शेयरक अपन मुद्रामे अछि।",
-  "compareNoAnalysis": "एखन धरि कोनो विश्लेषण नहि"
+  "compareNoAnalysis": "एखन धरि कोनो विश्लेषण नहि",
+  "portfolioDividends": "वार्षिक लाभांश",
+  "portfolioDividendYield": "{percent} यील्ड",
+  "portfolioDividendNote": "अपेक्षित वार्षिक लाभांश पछिला 12 मासमे देल गेल लाभांश पर आधारित अछि; भविष्यक भुगतानक गारंटी नहि अछि।",
+  "positionDividend": "लाभांश: सालाना {amount}"
 }

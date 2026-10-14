@@ -453,5 +453,9 @@
   "compareRemove": "Kaldır",
   "compareTickerHint": "Hisse sembolü, ör. MSFT",
   "compareHint": "Temel rakamlar yan yana; her satırdaki en iyi değer vurgulanır. Tutarlar her hissenin kendi para birimindedir.",
-  "compareNoAnalysis": "Henüz analiz yok"
+  "compareNoAnalysis": "Henüz analiz yok",
+  "portfolioDividends": "Yıllık temettü",
+  "portfolioDividendYield": "{percent} verim",
+  "portfolioDividendNote": "Beklenen yıllık temettü, son 12 ayda ödenen temettülere dayanır; gelecekteki ödemeler garanti değildir.",
+  "positionDividend": "Temettü: yılda {amount}"
 }

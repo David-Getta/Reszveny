@@ -1658,4 +1658,21 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Entek seljerme ýok';
+
+  @override
+  String get portfolioDividends => 'Ýyllyk diwidend';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Girdejililik $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Garaşylýan ýyllyk diwidend soňky 12 aýda tölenen diwidendlere esaslanýar; geljekki tölegler kepillendirilmeýär.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Diwidend: ýylda $amount';
+  }
 }

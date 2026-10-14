@@ -453,5 +453,9 @@
   "compareRemove": "Susa",
   "compareTickerHint": "Ticker, xikombiso MSFT",
   "compareHint": "Tinhlayo ta nkoka ti tshamile etlhelo-tlhelo; nkoka lowunene eka layini yin'wana na yin'wana wu vonakisiwile. Mali yi le muxakeni wa mali wa xiavelo xin'wana na xin'wana.",
-  "compareNoAnalysis": "A ku si va na nxopaxopo"
+  "compareNoAnalysis": "A ku si va na nxopaxopo",
+  "portfolioDividends": "Dividende ya lembe",
+  "portfolioDividendYield": "Mbuyelo wa {percent}",
+  "portfolioDividendNote": "Dividende leyi languteriweke ya lembe yi sekeriwile eka dividende leyi hakeriweke eka tin'hweti ta 12 leti hundzeke; ku hakela ka nkarhi lowu taka a ku tiyisisiwi.",
+  "positionDividend": "Dividende: {amount} hi lembe"
 }

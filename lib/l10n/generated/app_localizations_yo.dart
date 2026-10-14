@@ -1659,4 +1659,21 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Kò sí ìtúpalẹ̀ síbẹ̀';
+
+  @override
+  String get portfolioDividends => 'Èrè ìpín ọdọọdún';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Ìwọ̀n $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Èrè ìpín ọdọọdún tí a retí dá lórí èrè ìpín tí a san ní oṣù 12 sẹ́yìn; kò sí ìdánilójú fún ìsanwó ọjọ́ iwájú.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Èrè ìpín: $amount lọ́dún';
+  }
 }

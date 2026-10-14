@@ -1660,4 +1660,21 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ingen analys än';
+
+  @override
+  String get portfolioDividends => 'Årlig utdelning';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent direktavkastning';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Förväntad årlig utdelning baseras på utdelningarna under de senaste 12 månaderna; framtida utbetalningar är inte garanterade.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Utdelning: $amount per år';
+  }
 }

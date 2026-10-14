@@ -1661,4 +1661,21 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'अहिलेसम्म विश्लेषण छैन';
+
+  @override
+  String get portfolioDividends => 'वार्षिक लाभांश';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent यिल्ड';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'अपेक्षित वार्षिक लाभांश पछिल्लो 12 महिनामा भुक्तानी गरिएको लाभांशमा आधारित छ; भविष्यका भुक्तानीको ग्यारेन्टी छैन।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'लाभांश: वार्षिक $amount';
+  }
 }

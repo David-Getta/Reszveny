@@ -1659,4 +1659,21 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Henüz analiz yok';
+
+  @override
+  String get portfolioDividends => 'Yıllık temettü';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent verim';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Beklenen yıllık temettü, son 12 ayda ödenen temettülere dayanır; gelecekteki ödemeler garanti değildir.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Temettü: yılda $amount';
+  }
 }

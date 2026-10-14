@@ -1666,4 +1666,21 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ammallee xiinxalli hin jiru';
+
+  @override
+  String get portfolioDividends => 'Qooda bu\'aa waggaa';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Dhibbeentaa $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Qoodni bu\'aa waggaa eegamu qooda bu\'aa ji\'oota 12 darban keessatti kaffalame irratti hundaa\'a; kaffaltiin gara fuulduraa wabii hin qabu.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Qooda bu\'aa: waggaatti $amount';
+  }
 }

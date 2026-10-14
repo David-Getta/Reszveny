@@ -453,5 +453,9 @@
   "compareRemove": "Umbusha",
   "compareTickerHint": "Ticker, bu tshilejelu MSFT",
   "compareHint": "Mibelu minene ku luseke ne luseke; mushinga mulenga menemene mu mulongo wonso udi muleja. Makuta adi mu mfranga ya action yonso.",
-  "compareNoAnalysis": "Kuena dikonkonona panu"
+  "compareNoAnalysis": "Kuena dikonkonona panu",
+  "portfolioDividends": "Dividende wa tshidimu",
+  "portfolioDividendYield": "Rendement {percent}",
+  "portfolioDividendNote": "Dividende wa tshidimu udibu bindile udi ushindamene pa ba-dividende bavuabu bafute mu ngondo 12 mishale; difuta dia matuku atshilualua kadiena ne garantie to.",
+  "positionDividend": "Dividende: {amount} ku tshidimu"
 }

@@ -1656,4 +1656,21 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Әлегә анализ юк';
+
+  @override
+  String get portfolioDividends => 'Еллык дивидендлар';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Керемлелек $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Көтелгән еллык дивидендлар соңгы 12 айда түләнгән дивидендларга нигезләнә; киләчәк түләүләр гарантияләнми.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Дивиденд: елына $amount';
+  }
 }

@@ -3060,6 +3060,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No analysis yet'**
   String get compareNoAnalysis;
+
+  /// No description provided for @portfolioDividends.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly dividends'**
+  String get portfolioDividends;
+
+  /// Dividend yield of the portfolio; percent is formatted like 1.8%.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} yield'**
+  String portfolioDividendYield(String percent);
+
+  /// No description provided for @portfolioDividendNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Expected yearly dividends are based on the dividends paid in the last 12 months; future payments are not guaranteed.'**
+  String get portfolioDividendNote;
+
+  /// Expected yearly dividend of one position; amount is formatted money.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend: {amount} a year'**
+  String positionDividend(String amount);
 }
 
 class _AppLocalizationsDelegate

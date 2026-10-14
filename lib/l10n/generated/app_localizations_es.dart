@@ -1664,4 +1664,21 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Aún no hay análisis';
+
+  @override
+  String get portfolioDividends => 'Dividendos anuales';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent de rentabilidad';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Los dividendos anuales previstos se basan en los dividendos pagados en los últimos 12 meses; los pagos futuros no están garantizados.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividendo: $amount al año';
+  }
 }

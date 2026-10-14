@@ -453,5 +453,9 @@
   "compareRemove": "ລຶບອອກ",
   "compareTickerHint": "ສັນຍາລັກ, ເຊັ່ນ MSFT",
   "compareHint": "ຕົວເລກສຳຄັນຢູ່ຂ້າງກັນ; ຄ່າທີ່ດີທີ່ສຸດໃນແຕ່ລະແຖວຖືກເນັ້ນໄວ້. ຈຳນວນເງິນເປັນສະກຸນເງິນຂອງແຕ່ລະຮຸ້ນ.",
-  "compareNoAnalysis": "ຍັງບໍ່ມີການວິເຄາະ"
+  "compareNoAnalysis": "ຍັງບໍ່ມີການວິເຄາະ",
+  "portfolioDividends": "ເງິນປັນຜົນຕໍ່ປີ",
+  "portfolioDividendYield": "ຜົນຕອບແທນ {percent}",
+  "portfolioDividendNote": "ເງິນປັນຜົນຕໍ່ປີທີ່ຄາດໄວ້ ອີງໃສ່ເງິນປັນຜົນທີ່ຈ່າຍໃນ 12 ເດືອນຜ່ານມາ ການຈ່າຍໃນອະນາຄົດບໍ່ມີການຮັບປະກັນ",
+  "positionDividend": "ເງິນປັນຜົນ: {amount} ຕໍ່ປີ"
 }

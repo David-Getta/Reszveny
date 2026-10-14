@@ -1666,4 +1666,21 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Nta sesangura rirabaho';
+
+  @override
+  String get portfolioDividends => 'Inyungu ku migabane y\'umwaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Igipimo $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Inyungu ku migabane yitezwe ku mwaka ishingiye ku nyungu zarihwe mu mezi 12 aheze; ivyo bizorihwa mu gihe kizoza ntibihamye.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Inyungu ku migabane: $amount ku mwaka';
+  }
 }

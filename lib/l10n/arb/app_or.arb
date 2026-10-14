@@ -453,5 +453,9 @@
   "compareRemove": "ହଟାନ୍ତୁ",
   "compareTickerHint": "ଟିକର, ଯଥା MSFT",
   "compareHint": "ମୁଖ୍ୟ ସଂଖ୍ୟାଗୁଡ଼ିକ ପାଖାପାଖି; ପ୍ରତ୍ୟେକ ଧାଡ଼ିରେ ସର୍ବୋତ୍ତମ ମୂଲ୍ୟ ହାଇଲାଇଟ୍ କରାଯାଇଛି। ରାଶି ପ୍ରତ୍ୟେକ ସେୟାରର ନିଜ ମୁଦ୍ରାରେ ଅଛି।",
-  "compareNoAnalysis": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିଶ୍ଳେଷଣ ନାହିଁ"
+  "compareNoAnalysis": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିଶ୍ଳେଷଣ ନାହିଁ",
+  "portfolioDividends": "ବାର୍ଷିକ ଲାଭାଂଶ",
+  "portfolioDividendYield": "{percent} ୟିଲ୍ଡ",
+  "portfolioDividendNote": "ଆଶାକୃତ ବାର୍ଷିକ ଲାଭାଂଶ ଗତ 12 ମାସରେ ପ୍ରଦାନ କରାଯାଇଥିବା ଲାଭାଂଶ ଉପରେ ଆଧାରିତ; ଭବିଷ୍ୟତ ପ୍ରଦାନର ନିଶ୍ଚିତତା ନାହିଁ।",
+  "positionDividend": "ଲାଭାଂଶ: ବାର୍ଷିକ {amount}"
 }

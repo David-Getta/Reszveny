@@ -69,6 +69,24 @@ void main() {
       'XYZ': const StockQuote(symbol: 'XYZ', price: 12, change: 1),
     };
 
+    test('expected yearly dividends: per position, converted and as a yield', () {
+      final s = PortfolioSnapshot.compute(
+        store.positions,
+        quotes: quotes,
+        rate: (from, to) => from == 'HUF' ? 0.0025 : null,
+        currency: 'USD',
+        // AAPL 1,04 USD, OTP 964 HUF részvényenként; XYZ (árfolyam nélkül) kimarad.
+        dividends: {'AAPL': 1.04, 'OTP': 964, 'XYZ': 1},
+      );
+      final aapl = s.rows.firstWhere((r) => r.position.symbol == 'AAPL');
+      final otp = s.rows.firstWhere((r) => r.position.symbol == 'OTP');
+      expect(aapl.annualDividend, closeTo(10.4, 1e-9));
+      expect(otp.annualDividend, closeTo(96400, 1e-9));
+      expect(s.annualDividend, closeTo(10.4 + 96400 * 0.0025, 1e-9));
+      expect(s.dividendYield, closeTo(s.annualDividend / s.value * 100, 1e-9));
+      expect(s.dividendYieldOnCost, closeTo(s.annualDividend / s.cost * 100, 1e-9));
+    });
+
     test('converts every position to one currency and weights them', () {
       final s = PortfolioSnapshot.compute(
         store.positions,

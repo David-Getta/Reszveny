@@ -1657,4 +1657,21 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Sɛgɛsɛgɛli si tɛ yen fɔlɔ';
+
+  @override
+  String get portfolioDividends => 'Sanji tɔnɔ tilali';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Sɔrɔ hakɛ: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Sanji tɔnɔ tilali makɔnɔnen sinsinna tɔnɔ tilali kan min sarala kalo 12 tɛmɛnenw kɔnɔ; nata saraliw tɛ dantigɛlen ye.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Tɔnɔ tilali: $amount san o san';
+  }
 }

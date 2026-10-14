@@ -453,5 +453,9 @@
   "compareRemove": "हटाउनुहोस्",
   "compareTickerHint": "टिकर, जस्तै MSFT",
   "compareHint": "मुख्य तथ्याङ्कहरू छेउछेउमा; प्रत्येक पङ्क्तिको उत्कृष्ट मान हाइलाइट गरिएको छ। रकमहरू प्रत्येक सेयरको आफ्नै मुद्रामा छन्।",
-  "compareNoAnalysis": "अहिलेसम्म विश्लेषण छैन"
+  "compareNoAnalysis": "अहिलेसम्म विश्लेषण छैन",
+  "portfolioDividends": "वार्षिक लाभांश",
+  "portfolioDividendYield": "{percent} यिल्ड",
+  "portfolioDividendNote": "अपेक्षित वार्षिक लाभांश पछिल्लो 12 महिनामा भुक्तानी गरिएको लाभांशमा आधारित छ; भविष्यका भुक्तानीको ग्यारेन्टी छैन।",
+  "positionDividend": "लाभांश: वार्षिक {amount}"
 }

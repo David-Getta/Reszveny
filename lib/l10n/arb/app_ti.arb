@@ -453,5 +453,9 @@
   "compareRemove": "ኣልግስ",
   "compareTickerHint": "ምልክት፡ ንኣብነት MSFT",
   "compareHint": "ቀንዲ ኣሃዛት ጎኒ ንጎኒ፤ ኣብ ነፍሲ ወከፍ መስርዕ እቲ ዝበለጸ ዋጋ ጎሊሑ ይርአ። መጠናት ብባጤራ ናይ ነፍሲ ወከፍ ኣክሲዮን እዮም።",
-  "compareNoAnalysis": "ገና ትንተና የለን"
+  "compareNoAnalysis": "ገና ትንተና የለን",
+  "portfolioDividends": "ዓመታዊ ብጽሒት ትርፊ",
+  "portfolioDividendYield": "መጠን {percent}",
+  "portfolioDividendNote": "ዝጽበ ዓመታዊ ብጽሒት ትርፊ ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተኸፍለ ብጽሒት ትርፊ መሰረት ዝገበረ እዩ፤ መጻኢ ክፍሊታት ውሕስነት የብሎምን።",
+  "positionDividend": "ብጽሒት ትርፊ: ኣብ ዓመት {amount}"
 }

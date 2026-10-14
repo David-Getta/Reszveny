@@ -1670,4 +1670,21 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Manaraq t\'aqwiy kanchu';
+
+  @override
+  String get portfolioDividends => 'Watapaq dividendo';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent rendimiento';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Suyasqa watapaq dividendoqa qhipa 12 killapi pagasqa dividendokunapim tiyan; hamuq pagokunaqa manam segurochu.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividendo: watapi $amount';
+  }
 }

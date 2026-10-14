@@ -1666,4 +1666,21 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Wala pang pagsusuri';
+
+  @override
+  String get portfolioDividends => 'Taunang dibidendo';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent yield';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ang inaasahang taunang dibidendo ay batay sa mga dibidendong ibinayad sa nakalipas na 12 buwan; hindi garantisado ang mga susunod na bayad.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dibidendo: $amount kada taon';
+  }
 }

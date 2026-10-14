@@ -1658,4 +1658,21 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'هنوز تحلیلی وجود ندارد';
+
+  @override
+  String get portfolioDividends => 'سود نقدی سالانه';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'بازده $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'سود نقدی سالانهٔ مورد انتظار بر اساس سود نقدی پرداخت‌شده در 12 ماه گذشته محاسبه می‌شود؛ پرداخت‌های آینده تضمینی نیست.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'سود نقدی: سالانه $amount';
+  }
 }

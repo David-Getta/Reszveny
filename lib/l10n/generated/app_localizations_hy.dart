@@ -1667,4 +1667,21 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Վերլուծություն դեռ չկա';
+
+  @override
+  String get portfolioDividends => 'Տարեկան շահաբաժիններ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent եկամտաբերություն';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ակնկալվող տարեկան շահաբաժինները հիմնված են վերջին 12 ամսում վճարված շահաբաժինների վրա, իսկ ապագա վճարումները երաշխավորված չեն։';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Շահաբաժին՝ տարեկան $amount';
+  }
 }

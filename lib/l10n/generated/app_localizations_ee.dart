@@ -1663,4 +1663,21 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Numekuku aɖeke meli haɖe o';
+
+  @override
+  String get portfolioDividends => 'Ƒe sia ƒe viɖemama';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Agbɔsɔsɔ: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ƒe sia ƒe viɖemama si wole mɔ kpɔm na la nɔ te ɖe viɖemama si woxe le ɣleti 12 siwo va yi me dzi; womeka ɖe edzi be woaxe fe le etsɔme o.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Viɖemama: $amount le ƒe ɖeka me';
+  }
 }

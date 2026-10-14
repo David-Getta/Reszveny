@@ -453,5 +453,9 @@
   "compareRemove": "Kuhaa",
   "compareTickerHint": "Ticker, pananglitan MSFT",
   "compareHint": "Ang importante nga mga numero magkatupad; ginapasanag ang pinakamaayo nga balor sa kada linya. Ang mga kantidad yara sa kaugalingon nga currency sang kada stock.",
-  "compareNoAnalysis": "Wala pa sang analisis"
+  "compareNoAnalysis": "Wala pa sang analisis",
+  "portfolioDividends": "Tinuig nga dibidendo",
+  "portfolioDividendYield": "{percent} yield",
+  "portfolioDividendNote": "Ang ginapaabot nga tinuig nga dibidendo nabase sa mga dibidendo nga ginbayad sa nagligad nga 12 ka bulan; indi garantisado ang mga bayad sa palaabuton.",
+  "positionDividend": "Dibidendo: {amount} kada tuig"
 }

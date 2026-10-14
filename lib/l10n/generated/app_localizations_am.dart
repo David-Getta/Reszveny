@@ -1634,4 +1634,21 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'እስካሁን ትንተና የለም';
+
+  @override
+  String get portfolioDividends => 'ዓመታዊ የትርፍ ድርሻ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ተመን';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'የሚጠበቀው ዓመታዊ የትርፍ ድርሻ ባለፉት 12 ወራት በተከፈለው የትርፍ ድርሻ ላይ የተመሠረተ ነው፤ የወደፊት ክፍያዎች ዋስትና የላቸውም።';
+
+  @override
+  String positionDividend(String amount) {
+    return 'የትርፍ ድርሻ፦ በዓመት $amount';
+  }
 }

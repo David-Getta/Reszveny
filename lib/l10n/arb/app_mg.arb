@@ -453,5 +453,9 @@
   "compareRemove": "Esory",
   "compareTickerHint": "Ticker, ohatra MSFT",
   "compareHint": "Ireo tarehimarika fototra mifanila; asongadina ny sanda tsara indrindra isaky ny andalana. Ny vola dia amin'ny vola ampiasain'ny aksiona tsirairay.",
-  "compareNoAnalysis": "Mbola tsy misy fandalinana"
+  "compareNoAnalysis": "Mbola tsy misy fandalinana",
+  "portfolioDividends": "Dividenda isan-taona",
+  "portfolioDividendYield": "Tahany {percent}",
+  "portfolioDividendNote": "Ny dividenda andrasana isan-taona dia mifototra amin'ny dividenda naloa tao anatin'ny 12 volana farany; tsy azo antoka ny fandoavana ho avy.",
+  "positionDividend": "Dividenda: {amount} isan-taona"
 }

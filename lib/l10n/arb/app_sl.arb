@@ -453,5 +453,9 @@
   "compareRemove": "Odstrani",
   "compareTickerHint": "Oznaka, npr. MSFT",
   "compareHint": "Ključni podatki drug ob drugem; najboljša vrednost v vsaki vrstici je poudarjena. Zneski so v valuti posamezne delnice.",
-  "compareNoAnalysis": "Analize še ni"
+  "compareNoAnalysis": "Analize še ni",
+  "portfolioDividends": "Letne dividende",
+  "portfolioDividendYield": "Donosnost {percent}",
+  "portfolioDividendNote": "Pričakovane letne dividende temeljijo na dividendah, izplačanih v zadnjih 12 mesecih; prihodnja izplačila niso zagotovljena.",
+  "positionDividend": "Dividenda: {amount} na leto"
 }

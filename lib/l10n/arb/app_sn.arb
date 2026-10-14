@@ -453,5 +453,9 @@
   "compareRemove": "Bvisa",
   "compareTickerHint": "Ticker, semuenzaniso MSFT",
   "compareHint": "Nhamba huru dzakatarisana; kukosha kwakanakisa mumutsara wega wega kwaratidzwa. Mari dziri mumari yesheya imwe neimwe.",
-  "compareNoAnalysis": "Hapana ongororo parizvino"
+  "compareNoAnalysis": "Hapana ongororo parizvino",
+  "portfolioDividends": "Dhividhendi yegore",
+  "portfolioDividendYield": "Pundutso {percent}",
+  "portfolioDividendNote": "Dhividhendi inotarisirwa yegore inobva padhividhendi dzakabhadharwa mumwedzi 12 yapfuura; kubhadhara kweramangwana hakuvimbiswi.",
+  "positionDividend": "Dhividhendi: {amount} pagore"
 }

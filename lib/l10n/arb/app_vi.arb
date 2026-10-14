@@ -453,5 +453,9 @@
   "compareRemove": "Xóa",
   "compareTickerHint": "Mã cổ phiếu, ví dụ MSFT",
   "compareHint": "Các chỉ số chính đặt cạnh nhau; giá trị tốt nhất ở mỗi hàng được làm nổi bật. Số tiền tính theo đơn vị tiền tệ riêng của từng cổ phiếu.",
-  "compareNoAnalysis": "Chưa có phân tích"
+  "compareNoAnalysis": "Chưa có phân tích",
+  "portfolioDividends": "Cổ tức hằng năm",
+  "portfolioDividendYield": "Tỷ suất {percent}",
+  "portfolioDividendNote": "Cổ tức hằng năm dự kiến dựa trên cổ tức đã chi trả trong 12 tháng qua; các khoản chi trả trong tương lai không được đảm bảo.",
+  "positionDividend": "Cổ tức: {amount} mỗi năm"
 }

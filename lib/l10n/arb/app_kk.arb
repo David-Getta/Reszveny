@@ -453,5 +453,9 @@
   "compareRemove": "Жою",
   "compareTickerHint": "Тикер, мысалы MSFT",
   "compareHint": "Негізгі көрсеткіштер қатар; әр жолдағы ең жақсы мән белгіленген. Сомалар әр акцияның өз валютасында.",
-  "compareNoAnalysis": "Әзірге талдау жоқ"
+  "compareNoAnalysis": "Әзірге талдау жоқ",
+  "portfolioDividends": "Жылдық дивидендтер",
+  "portfolioDividendYield": "Кірістілік {percent}",
+  "portfolioDividendNote": "Күтілетін жылдық дивидендтер соңғы 12 айда төленген дивидендтерге негізделген; болашақ төлемдерге кепілдік жоқ.",
+  "positionDividend": "Дивиденд: жылына {amount}"
 }

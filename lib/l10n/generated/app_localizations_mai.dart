@@ -1655,4 +1655,21 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'एखन धरि कोनो विश्लेषण नहि';
+
+  @override
+  String get portfolioDividends => 'वार्षिक लाभांश';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent यील्ड';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'अपेक्षित वार्षिक लाभांश पछिला 12 मासमे देल गेल लाभांश पर आधारित अछि; भविष्यक भुगतानक गारंटी नहि अछि।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'लाभांश: सालाना $amount';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Алып салуу",
   "compareTickerHint": "Тикер, мисалы MSFT",
   "compareHint": "Негизги көрсөткүчтөр катар; ар бир саптагы эң жакшы маани белгиленген. Суммалар ар бир акциянын өз валютасында.",
-  "compareNoAnalysis": "Азырынча талдоо жок"
+  "compareNoAnalysis": "Азырынча талдоо жок",
+  "portfolioDividends": "Жылдык дивиденддер",
+  "portfolioDividendYield": "Кирешелүүлүк {percent}",
+  "portfolioDividendNote": "Күтүлгөн жылдык дивиденддер акыркы 12 айда төлөнгөн дивиденддерге негизделет; келечектеги төлөмдөргө кепилдик жок.",
+  "positionDividend": "Дивиденд: жылына {amount}"
 }

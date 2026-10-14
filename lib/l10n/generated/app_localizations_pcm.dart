@@ -1660,4 +1660,21 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'No analysis yet';
+
+  @override
+  String get portfolioDividends => 'Dividend every year';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent yield';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Di dividend wey we expect every year na from di dividend wey dem pay for di last 12 months; we no fit promise future payment.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: $amount every year';
+  }
 }

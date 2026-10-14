@@ -453,5 +453,9 @@
   "compareRemove": "A bɔ",
   "compareTickerHint": "Aksiyɔn taamasiyɛn, i n'a fɔ MSFT",
   "compareHint": "Jatebila nafamaw ɲɔgɔn kɛrɛ fɛ; jɛrɛ kelen kelen bɛɛ la, hakɛ ɲumanba jiralen bɛ. Wari hakɛw bɛ aksiyɔn kelen kelen bɛɛ yɛrɛ wari suguya la.",
-  "compareNoAnalysis": "Sɛgɛsɛgɛli si tɛ yen fɔlɔ"
+  "compareNoAnalysis": "Sɛgɛsɛgɛli si tɛ yen fɔlɔ",
+  "portfolioDividends": "Sanji tɔnɔ tilali",
+  "portfolioDividendYield": "Sɔrɔ hakɛ: {percent}",
+  "portfolioDividendNote": "Sanji tɔnɔ tilali makɔnɔnen sinsinna tɔnɔ tilali kan min sarala kalo 12 tɛmɛnenw kɔnɔ; nata saraliw tɛ dantigɛlen ye.",
+  "positionDividend": "Tɔnɔ tilali: {amount} san o san"
 }

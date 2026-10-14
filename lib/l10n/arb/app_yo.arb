@@ -453,5 +453,9 @@
   "compareRemove": "Yọ kúrò",
   "compareTickerHint": "Àmì ìpín, àpẹẹrẹ MSFT",
   "compareHint": "Àwọn ìṣirò pàtàkì lẹ́gbẹ̀ẹ́ ara wọn; iye tó dára jùlọ ní ìlà kọ̀ọ̀kan ni a tẹnumọ́. Àwọn iye owó wà ní owó ìpín kọ̀ọ̀kan.",
-  "compareNoAnalysis": "Kò sí ìtúpalẹ̀ síbẹ̀"
+  "compareNoAnalysis": "Kò sí ìtúpalẹ̀ síbẹ̀",
+  "portfolioDividends": "Èrè ìpín ọdọọdún",
+  "portfolioDividendYield": "Ìwọ̀n {percent}",
+  "portfolioDividendNote": "Èrè ìpín ọdọọdún tí a retí dá lórí èrè ìpín tí a san ní oṣù 12 sẹ́yìn; kò sí ìdánilójú fún ìsanwó ọjọ́ iwájú.",
+  "positionDividend": "Èrè ìpín: {amount} lọ́dún"
 }

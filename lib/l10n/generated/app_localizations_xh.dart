@@ -1667,4 +1667,21 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Akukabikho uhlalutyo';
+
+  @override
+  String get portfolioDividends => 'I-dividend yonyaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Isivuno $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'I-dividend yonyaka elindelekileyo isekelwe kwii-dividend ezihlawulwe kwiinyanga ezili-12 ezidlulileyo; iintlawulo zexesha elizayo aziqinisekiswanga.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'I-dividend: $amount ngonyaka';
+  }
 }

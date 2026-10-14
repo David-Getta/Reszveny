@@ -1668,4 +1668,21 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'இன்னும் பகுப்பாய்வு இல்லை';
+
+  @override
+  String get portfolioDividends => 'ஆண்டு ஈவுத்தொகை';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent விகிதம்';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'எதிர்பார்க்கப்படும் ஆண்டு ஈவுத்தொகை கடந்த 12 மாதங்களில் வழங்கப்பட்ட ஈவுத்தொகையை அடிப்படையாகக் கொண்டது; எதிர்காலக் கொடுப்பனவுகளுக்கு உத்தரவாதம் இல்லை.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ஈவுத்தொகை: ஆண்டுக்கு $amount';
+  }
 }

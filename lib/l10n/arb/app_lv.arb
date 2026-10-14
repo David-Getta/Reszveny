@@ -453,5 +453,9 @@
   "compareRemove": "Noņemt",
   "compareTickerHint": "Simbols, piem., MSFT",
   "compareHint": "Galvenie rādītāji blakus; katras rindas labākā vērtība ir izcelta. Summas norādītas katras akcijas valūtā.",
-  "compareNoAnalysis": "Analīzes vēl nav"
+  "compareNoAnalysis": "Analīzes vēl nav",
+  "portfolioDividends": "Gada dividendes",
+  "portfolioDividendYield": "Ienesīgums {percent}",
+  "portfolioDividendNote": "Paredzamās gada dividendes balstās uz pēdējos 12 mēnešos izmaksātajām dividendēm; nākotnes izmaksas nav garantētas.",
+  "positionDividend": "Dividende: {amount} gadā"
 }

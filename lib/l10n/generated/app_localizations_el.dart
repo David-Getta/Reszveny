@@ -1667,4 +1667,21 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Δεν υπάρχει ακόμη ανάλυση';
+
+  @override
+  String get portfolioDividends => 'Ετήσια μερίσματα';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Απόδοση $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Τα αναμενόμενα ετήσια μερίσματα βασίζονται στα μερίσματα που καταβλήθηκαν τους τελευταίους 12 μήνες· οι μελλοντικές πληρωμές δεν είναι εγγυημένες.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Μέρισμα: $amount ετησίως';
+  }
 }

@@ -1666,4 +1666,21 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ndaipóri gueteri jehesaʼỹijo';
+
+  @override
+  String get portfolioDividends => 'Dividendo arýpe';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rendimiento $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividendo arýpe ojeroviaháva oñemopyenda dividendo oñehepymeʼẽvaʼekuére 12 jasy ohasavaʼekuépe; tenondeguáre ndaipóri garantía.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividendo: $amount arýpe';
+  }
 }

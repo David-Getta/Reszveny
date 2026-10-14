@@ -1660,4 +1660,21 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Hələ təhlil yoxdur';
+
+  @override
+  String get portfolioDividends => 'İllik dividendlər';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent gəlirlilik';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Gözlənilən illik dividendlər son 12 ayda ödənilmiş dividendlərə əsaslanır; gələcək ödənişlərə zəmanət verilmir.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: ildə $amount';
+  }
 }

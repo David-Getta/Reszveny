@@ -453,5 +453,9 @@
   "compareRemove": "Susa",
   "compareTickerHint": "Ticker, umzekelo MSFT",
   "compareHint": "Amanani aphambili ecaleni komnye; elona xabiso lilungileyo kumqolo ngamnye liqaqanjisiwe. Izixa zikwimali yesitokhwe ngasinye.",
-  "compareNoAnalysis": "Akukabikho uhlalutyo"
+  "compareNoAnalysis": "Akukabikho uhlalutyo",
+  "portfolioDividends": "I-dividend yonyaka",
+  "portfolioDividendYield": "Isivuno {percent}",
+  "portfolioDividendNote": "I-dividend yonyaka elindelekileyo isekelwe kwii-dividend ezihlawulwe kwiinyanga ezili-12 ezidlulileyo; iintlawulo zexesha elizayo aziqinisekiswanga.",
+  "positionDividend": "I-dividend: {amount} ngonyaka"
 }

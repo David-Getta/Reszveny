@@ -1672,4 +1672,21 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Mbola tsy misy fandalinana';
+
+  @override
+  String get portfolioDividends => 'Dividenda isan-taona';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Tahany $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ny dividenda andrasana isan-taona dia mifototra amin\'ny dividenda naloa tao anatin\'ny 12 volana farany; tsy azo antoka ny fandoavana ho avy.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividenda: $amount isan-taona';
+  }
 }

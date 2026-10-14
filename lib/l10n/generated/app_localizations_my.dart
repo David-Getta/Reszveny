@@ -1655,4 +1655,21 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'သုံးသပ်ချက် မရှိသေးပါ';
+
+  @override
+  String get portfolioDividends => 'နှစ်စဉ် အမြတ်ဝေစု';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'အထွက်နှုန်း $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'မျှော်မှန်း နှစ်စဉ် အမြတ်ဝေစုသည် လွန်ခဲ့သော 12 လအတွင်း ပေးချေခဲ့သော အမြတ်ဝေစုအပေါ် အခြေခံသည်။ အနာဂတ် ပေးချေမှုများကို အာမမခံပါ။';
+
+  @override
+  String positionDividend(String amount) {
+    return 'အမြတ်ဝေစု: တစ်နှစ်လျှင် $amount';
+  }
 }

@@ -1658,4 +1658,21 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Poko gen analiz';
+
+  @override
+  String get portfolioDividends => 'Dividann chak ane';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rannman $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividann chak ane yo espere a baze sou dividann ki te peye pandan 12 dènye mwa yo; pa gen garanti pou peman nan lavni.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividann: $amount pa ane';
+  }
 }

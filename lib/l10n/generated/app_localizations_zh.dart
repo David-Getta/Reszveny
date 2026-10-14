@@ -1592,6 +1592,22 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => '暂无分析';
+
+  @override
+  String get portfolioDividends => '年度股息';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '股息率 $percent';
+  }
+
+  @override
+  String get portfolioDividendNote => '预期年度股息基于过去 12 个月已派发的股息估算；未来派息并无保证。';
+
+  @override
+  String positionDividend(String amount) {
+    return '股息：每年 $amount';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3180,4 +3196,20 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get compareNoAnalysis => '暫無分析';
+
+  @override
+  String get portfolioDividends => '全年股息';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '股息率 $percent';
+  }
+
+  @override
+  String get portfolioDividendNote => '預期全年股息根據過去 12 個月已派發的股息計算；日後派息並無保證。';
+
+  @override
+  String positionDividend(String amount) {
+    return '股息：每年 $amount';
+  }
 }

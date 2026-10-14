@@ -453,5 +453,9 @@
   "compareRemove": "Retirer",
   "compareTickerHint": "Symbole, p. ex. MSFT",
   "compareHint": "Chiffres clés côte à côte ; la meilleure valeur de chaque ligne est mise en évidence. Les montants sont exprimés dans la devise de chaque action.",
-  "compareNoAnalysis": "Aucune analyse pour l'instant"
+  "compareNoAnalysis": "Aucune analyse pour l'instant",
+  "portfolioDividends": "Dividendes annuels",
+  "portfolioDividendYield": "Rendement de {percent}",
+  "portfolioDividendNote": "Les dividendes annuels attendus sont basés sur les dividendes versés au cours des 12 derniers mois ; les versements futurs ne sont pas garantis.",
+  "positionDividend": "Dividende : {amount} par an"
 }

@@ -453,5 +453,9 @@
   "compareRemove": "حذف",
   "compareTickerHint": "نماد سهم، مثلاً MSFT",
   "compareHint": "ارقام کلیدی کنار هم؛ بهترین مقدار در هر ردیف برجسته شده است. مبالغ به واحد پولِ خودِ هر سهم است.",
-  "compareNoAnalysis": "هنوز تحلیلی وجود ندارد"
+  "compareNoAnalysis": "هنوز تحلیلی وجود ندارد",
+  "portfolioDividends": "سود نقدی سالانه",
+  "portfolioDividendYield": "بازده {percent}",
+  "portfolioDividendNote": "سود نقدی سالانهٔ مورد انتظار بر اساس سود نقدی پرداخت‌شده در 12 ماه گذشته محاسبه می‌شود؛ پرداخت‌های آینده تضمینی نیست.",
+  "positionDividend": "سود نقدی: سالانه {amount}"
 }

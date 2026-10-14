@@ -1706,4 +1706,21 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Zatím žádná analýza';
+
+  @override
+  String get portfolioDividends => 'Roční dividendy';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Výnos $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Očekávané roční dividendy vycházejí z dividend vyplacených za posledních 12 měsíců; budoucí výplaty nejsou zaručené.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividenda: $amount ročně';
+  }
 }

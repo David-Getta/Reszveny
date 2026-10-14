@@ -1639,4 +1639,21 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ยังไม่มีการวิเคราะห์';
+
+  @override
+  String get portfolioDividends => 'เงินปันผลต่อปี';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'ผลตอบแทน $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'เงินปันผลต่อปีที่คาดการณ์อิงจากเงินปันผลที่จ่ายในช่วง 12 เดือนที่ผ่านมา ไม่รับประกันการจ่ายในอนาคต';
+
+  @override
+  String positionDividend(String amount) {
+    return 'เงินปันผล: $amount ต่อปี';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "ลบออก",
   "compareTickerHint": "ชื่อย่อหุ้น เช่น MSFT",
   "compareHint": "ตัวเลขสำคัญแสดงเคียงข้างกัน ค่าที่ดีที่สุดในแต่ละแถวจะถูกไฮไลต์ จำนวนเงินแสดงในสกุลเงินของหุ้นแต่ละตัว",
-  "compareNoAnalysis": "ยังไม่มีการวิเคราะห์"
+  "compareNoAnalysis": "ยังไม่มีการวิเคราะห์",
+  "portfolioDividends": "เงินปันผลต่อปี",
+  "portfolioDividendYield": "ผลตอบแทน {percent}",
+  "portfolioDividendNote": "เงินปันผลต่อปีที่คาดการณ์อิงจากเงินปันผลที่จ่ายในช่วง 12 เดือนที่ผ่านมา ไม่รับประกันการจ่ายในอนาคต",
+  "positionDividend": "เงินปันผล: {amount} ต่อปี"
 }

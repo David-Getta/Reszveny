@@ -1666,4 +1666,21 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Palibe kusanthula pakadali pano';
+
+  @override
+  String get portfolioDividends => 'Gawo la phindu pachaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Chiwerengero: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Gawo la phindu loyembekezeka pachaka limachokera pa magawo a phindu omwe analipidwa m\'miyezi 12 yapitayi; malipiro amtsogolo sali otsimikizika.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Gawo la phindu: $amount pachaka';
+  }
 }

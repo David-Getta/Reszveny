@@ -453,5 +453,9 @@
   "compareRemove": "काढा",
   "compareTickerHint": "टिकर, उदा. MSFT",
   "compareHint": "मुख्य आकडे शेजारी-शेजारी; प्रत्येक ओळीतील सर्वोत्तम मूल्य हायलाइट केले आहे. रकमा प्रत्येक शेअरच्या स्वतःच्या चलनात आहेत.",
-  "compareNoAnalysis": "अद्याप विश्लेषण नाही"
+  "compareNoAnalysis": "अद्याप विश्लेषण नाही",
+  "portfolioDividends": "वार्षिक लाभांश",
+  "portfolioDividendYield": "{percent} उत्पन्न",
+  "portfolioDividendNote": "अपेक्षित वार्षिक लाभांश मागील 12 महिन्यांत दिलेल्या लाभांशावर आधारित आहे; भविष्यातील देयकांची हमी नाही.",
+  "positionDividend": "लाभांश: वार्षिक {amount}"
 }

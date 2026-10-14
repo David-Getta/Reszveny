@@ -1654,4 +1654,21 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'اڃا ڪو تجزيو ناهي';
+
+  @override
+  String get portfolioDividends => 'سالياني ڊيويڊنڊ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ييلڊ';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'متوقع سالياني ڊيويڊنڊ گذريل 12 مهينن ۾ ادا ڪيل ڊيويڊنڊ تي ٻڌل آهي؛ مستقبل جي ادائگين جي ضمانت ناهي.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ڊيويڊنڊ: سالياني $amount';
+  }
 }

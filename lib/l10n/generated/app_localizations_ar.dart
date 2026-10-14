@@ -1697,4 +1697,21 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'لا يوجد تحليل بعد';
+
+  @override
+  String get portfolioDividends => 'التوزيعات السنوية';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'عائد $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'تستند التوزيعات السنوية المتوقعة إلى التوزيعات المدفوعة خلال آخر 12 شهرًا؛ والمدفوعات المستقبلية غير مضمونة.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'التوزيعات: $amount سنويًا';
+  }
 }

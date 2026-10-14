@@ -1658,4 +1658,21 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ulac tasleḍt ar tura';
+
+  @override
+  String get portfolioDividends => 'Dividand n useggas';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Afaris $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividand n useggas i yettwarǧan yebna ɣef dividand yettwaxelṣen deg 12 n wayyuren ineggura; ixelṣen n uzekka ur ttwaḍemnen ara.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividand: $amount i useggas';
+  }
 }

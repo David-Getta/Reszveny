@@ -1661,4 +1661,21 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ei vielä analyysia';
+
+  @override
+  String get portfolioDividends => 'Vuotuiset osingot';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Tuotto $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Odotetut vuotuiset osingot perustuvat viimeisten 12 kuukauden aikana maksettuihin osinkoihin; tulevia maksuja ei taata.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Osinko: $amount vuodessa';
+  }
 }

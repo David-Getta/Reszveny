@@ -1658,4 +1658,21 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'אין עדיין ניתוח';
+
+  @override
+  String get portfolioDividends => 'דיבידנד שנתי';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'תשואה של $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'הדיבידנד השנתי הצפוי מבוסס על הדיבידנדים ששולמו ב-12 החודשים האחרונים; אין ערובה לתשלומים עתידיים.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'דיבידנד: $amount בשנה';
+  }
 }

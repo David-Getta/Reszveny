@@ -453,5 +453,9 @@
   "compareRemove": "هٽايو",
   "compareTickerHint": "ٽڪر، مثال طور MSFT",
   "compareHint": "اهم انگ اکر هڪ ٻئي جي ڀرسان؛ هر قطار ۾ بهترين قدر نمايان ڪيل آهي. رقمون هر شيئر جي پنهنجي ڪرنسي ۾ آهن.",
-  "compareNoAnalysis": "اڃا ڪو تجزيو ناهي"
+  "compareNoAnalysis": "اڃا ڪو تجزيو ناهي",
+  "portfolioDividends": "سالياني ڊيويڊنڊ",
+  "portfolioDividendYield": "{percent} ييلڊ",
+  "portfolioDividendNote": "متوقع سالياني ڊيويڊنڊ گذريل 12 مهينن ۾ ادا ڪيل ڊيويڊنڊ تي ٻڌل آهي؛ مستقبل جي ادائگين جي ضمانت ناهي.",
+  "positionDividend": "ڊيويڊنڊ: سالياني {amount}"
 }

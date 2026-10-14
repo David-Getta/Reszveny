@@ -1660,4 +1660,21 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Gũtirĩ ũthuthuria o na rĩu';
+
+  @override
+  String get portfolioDividends => 'Dividend ya mwaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Uumithio $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividend ya mwaka ĩrĩa yetagĩrĩrwo ĩrũmĩrĩire dividend ĩrĩa yarĩhirwo mieri-inĩ 12 ĩrĩa ĩhĩtũku; marĩhi ma mĩthenya ĩroka matirĩ na ũrũmwo.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: $amount o mwaka';
+  }
 }

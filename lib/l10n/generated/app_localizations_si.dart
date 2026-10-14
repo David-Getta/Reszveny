@@ -1659,4 +1659,21 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'තවම විශ්ලේෂණයක් නැත';
+
+  @override
+  String get portfolioDividends => 'වාර්ෂික ලාභාංශ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ඵලදාව';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'අපේක්ෂිත වාර්ෂික ලාභාංශ පසුගිය මාස 12 තුළ ගෙවූ ලාභාංශ මත පදනම් වේ; අනාගත ගෙවීම් සහතික නොවේ.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ලාභාංශ: වසරකට $amount';
+  }
 }

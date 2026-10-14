@@ -453,5 +453,9 @@
   "compareRemove": "Ntsha",
   "compareTickerHint": "Ticker, sekai MSFT",
   "compareHint": "Dipalo tsa botlhokwa di bapile; boleng jo bo gaisang mo moleng mongwe le mongwe bo tlhagisitswe. Madi a mo mofuteng wa madi wa seabelo sengwe le sengwe.",
-  "compareNoAnalysis": "Ga go na tshekatsheko ga jaana"
+  "compareNoAnalysis": "Ga go na tshekatsheko ga jaana",
+  "portfolioDividends": "Dividende ya ngwaga",
+  "portfolioDividendYield": "Poelo ya {percent}",
+  "portfolioDividendNote": "Dividende e e solofetsweng ya ngwaga e theilwe mo dividendeng e e duetsweng mo dikgweding di le 12 tse di fetileng; dituelo tsa isago ga di tlhomamisiwe.",
+  "positionDividend": "Dividende: {amount} ka ngwaga"
 }

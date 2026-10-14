@@ -453,5 +453,9 @@
   "compareRemove": "Отстрани",
   "compareTickerHint": "Тикер, на пр. MSFT",
   "compareHint": "Клучни бројки една до друга; најдобрата вредност во секој ред е истакната. Износите се во сопствената валута на секоја акција.",
-  "compareNoAnalysis": "Сè уште нема анализа"
+  "compareNoAnalysis": "Сè уште нема анализа",
+  "portfolioDividends": "Годишни дивиденди",
+  "portfolioDividendYield": "{percent} принос",
+  "portfolioDividendNote": "Очекуваните годишни дивиденди се засноваат на дивидендите исплатени во последните 12 месеци; идните исплати не се загарантирани.",
+  "positionDividend": "Дивиденда: {amount} годишно"
 }

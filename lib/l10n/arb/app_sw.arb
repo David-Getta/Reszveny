@@ -453,5 +453,9 @@
   "compareRemove": "Ondoa",
   "compareTickerHint": "Ticker, k.m. MSFT",
   "compareHint": "Takwimu kuu kando kwa kando; thamani bora katika kila safu imeangaziwa. Kiasi kiko katika sarafu ya kila hisa.",
-  "compareNoAnalysis": "Bado hakuna uchambuzi"
+  "compareNoAnalysis": "Bado hakuna uchambuzi",
+  "portfolioDividends": "Gawio la mwaka",
+  "portfolioDividendYield": "Mavuno {percent}",
+  "portfolioDividendNote": "Gawio la mwaka linalotarajiwa linategemea gawio lililolipwa katika miezi 12 iliyopita; malipo ya baadaye hayana uhakika.",
+  "positionDividend": "Gawio: {amount} kwa mwaka"
 }

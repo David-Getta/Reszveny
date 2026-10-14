@@ -453,5 +453,9 @@
   "compareRemove": "Κατάργηση",
   "compareTickerHint": "Ticker, π.χ. MSFT",
   "compareHint": "Βασικά μεγέθη δίπλα-δίπλα· η καλύτερη τιμή σε κάθε γραμμή επισημαίνεται. Τα ποσά είναι στο νόμισμα της κάθε μετοχής.",
-  "compareNoAnalysis": "Δεν υπάρχει ακόμη ανάλυση"
+  "compareNoAnalysis": "Δεν υπάρχει ακόμη ανάλυση",
+  "portfolioDividends": "Ετήσια μερίσματα",
+  "portfolioDividendYield": "Απόδοση {percent}",
+  "portfolioDividendNote": "Τα αναμενόμενα ετήσια μερίσματα βασίζονται στα μερίσματα που καταβλήθηκαν τους τελευταίους 12 μήνες· οι μελλοντικές πληρωμές δεν είναι εγγυημένες.",
+  "positionDividend": "Μέρισμα: {amount} ετησίως"
 }

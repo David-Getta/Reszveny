@@ -1664,4 +1664,21 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Kuena dikonkonona panu';
+
+  @override
+  String get portfolioDividends => 'Dividende wa tshidimu';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rendement $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividende wa tshidimu udibu bindile udi ushindamene pa ba-dividende bavuabu bafute mu ngondo 12 mishale; difuta dia matuku atshilualua kadiena ne garantie to.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividende: $amount ku tshidimu';
+  }
 }

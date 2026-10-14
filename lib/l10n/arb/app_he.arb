@@ -453,5 +453,9 @@
   "compareRemove": "הסרה",
   "compareTickerHint": "סימול, למשל MSFT",
   "compareHint": "נתונים מרכזיים זה לצד זה; הערך הטוב ביותר בכל שורה מודגש. הסכומים מוצגים במטבע של כל מניה.",
-  "compareNoAnalysis": "אין עדיין ניתוח"
+  "compareNoAnalysis": "אין עדיין ניתוח",
+  "portfolioDividends": "דיבידנד שנתי",
+  "portfolioDividendYield": "תשואה של {percent}",
+  "portfolioDividendNote": "הדיבידנד השנתי הצפוי מבוסס על הדיבידנדים ששולמו ב-12 החודשים האחרונים; אין ערובה לתשלומים עתידיים.",
+  "positionDividend": "דיבידנד: {amount} בשנה"
 }

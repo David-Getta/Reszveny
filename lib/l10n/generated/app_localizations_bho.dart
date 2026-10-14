@@ -1656,4 +1656,21 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'अबहीं ले कवनो विश्लेषण नइखे';
+
+  @override
+  String get portfolioDividends => 'सालाना लाभांश';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent यील्ड';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'अनुमानित सालाना लाभांश पिछला 12 महीना में दिहल गइल लाभांश पर आधारित बा; आगे के भुगतान के कवनो गारंटी नइखे।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'लाभांश: $amount सालाना';
+  }
 }

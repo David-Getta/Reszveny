@@ -453,5 +453,9 @@
   "compareRemove": "Susa",
   "compareTickerHint": "Ticker, isibonelo MSFT",
   "compareHint": "Izibalo ezibalulekile eceleni kwezinye; inani elihle kakhulu emgqeni ngamunye ligqanyisiwe. Amanani emali asemalini yesitoko ngasinye.",
-  "compareNoAnalysis": "Akukabi khona ukuhlaziya"
+  "compareNoAnalysis": "Akukabi khona ukuhlaziya",
+  "portfolioDividends": "I-dividend yonyaka",
+  "portfolioDividendYield": "Isivuno {percent}",
+  "portfolioDividendNote": "I-dividend yonyaka elindelekile isekelwe kuma-dividend akhokhwe ezinyangeni ezingu-12 ezedlule; izinkokhelo zesikhathi esizayo aziqinisekisiwe.",
+  "positionDividend": "I-dividend: {amount} ngonyaka"
 }

@@ -1654,4 +1654,21 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Chưa có phân tích';
+
+  @override
+  String get portfolioDividends => 'Cổ tức hằng năm';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Tỷ suất $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Cổ tức hằng năm dự kiến dựa trên cổ tức đã chi trả trong 12 tháng qua; các khoản chi trả trong tương lai không được đảm bảo.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Cổ tức: $amount mỗi năm';
+  }
 }

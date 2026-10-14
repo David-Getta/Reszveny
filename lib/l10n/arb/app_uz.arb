@@ -453,5 +453,9 @@
   "compareRemove": "Olib tashlash",
   "compareTickerHint": "Tiker, masalan MSFT",
   "compareHint": "Asosiy koʻrsatkichlar yonma-yon; har bir qatordagi eng yaxshi qiymat ajratib koʻrsatilgan. Summalar har bir aksiyaning oʻz valyutasida.",
-  "compareNoAnalysis": "Hali tahlil yoʻq"
+  "compareNoAnalysis": "Hali tahlil yoʻq",
+  "portfolioDividends": "Yillik dividend",
+  "portfolioDividendYield": "Daromadlilik {percent}",
+  "portfolioDividendNote": "Kutilayotgan yillik dividend soʻnggi 12 oyda toʻlangan dividendlarga asoslanadi; kelgusi toʻlovlar kafolatlanmaydi.",
+  "positionDividend": "Dividend: yiliga {amount}"
 }

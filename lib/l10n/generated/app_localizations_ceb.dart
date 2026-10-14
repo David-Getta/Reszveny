@@ -1668,4 +1668,21 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Wala pay pagtuki';
+
+  @override
+  String get portfolioDividends => 'Tinuig nga dibidendo';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent yield';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ang gipaabot nga tinuig nga dibidendo gibase sa mga dibidendo nga gibayad sulod sa miaging 12 ka bulan; ang umaabot nga mga bayad dili garantisado.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dibidendo: $amount kada tuig';
+  }
 }

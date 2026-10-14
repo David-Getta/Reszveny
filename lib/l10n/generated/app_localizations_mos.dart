@@ -1647,4 +1647,21 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Vɛɛsgo ka zĩnd ne masã ye';
+
+  @override
+  String get portfolioDividends => 'Dividãnd yʋʋmd fãa';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent nafa';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividãnd ning b sẽn tẽed yʋʋmd fãa wã yaa dividãnd ning b sẽn yao kiis 12 sẽn loogã zugu; b pa tõe n kɩɩs tɩ b na n yao beoog ye.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividãnd: $amount yʋʋmd fãa';
+  }
 }

@@ -1660,4 +1660,21 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Әзірге талдау жоқ';
+
+  @override
+  String get portfolioDividends => 'Жылдық дивидендтер';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Кірістілік $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Күтілетін жылдық дивидендтер соңғы 12 айда төленген дивидендтерге негізделген; болашақ төлемдерге кепілдік жоқ.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Дивиденд: жылына $amount';
+  }
 }

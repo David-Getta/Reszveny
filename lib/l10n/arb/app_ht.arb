@@ -453,5 +453,9 @@
   "compareRemove": "Retire",
   "compareTickerHint": "Senbòl, pa egzanp MSFT",
   "compareHint": "Chif kle yo youn bò lòt; pi bon valè nan chak liy make an evidans. Montan yo nan pwòp deviz chak aksyon.",
-  "compareNoAnalysis": "Poko gen analiz"
+  "compareNoAnalysis": "Poko gen analiz",
+  "portfolioDividends": "Dividann chak ane",
+  "portfolioDividendYield": "Rannman {percent}",
+  "portfolioDividendNote": "Dividann chak ane yo espere a baze sou dividann ki te peye pandan 12 dènye mwa yo; pa gen garanti pou peman nan lavni.",
+  "positionDividend": "Dividann: {amount} pa ane"
 }

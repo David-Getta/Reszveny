@@ -453,5 +453,9 @@
   "compareRemove": "Hiq",
   "compareTickerHint": "Simboli, p.sh. MSFT",
   "compareHint": "Shifrat kryesore krah për krah; vlera më e mirë në çdo rresht është e theksuar. Shumat janë në monedhën e secilit aksion.",
-  "compareNoAnalysis": "Ende pa analizë"
+  "compareNoAnalysis": "Ende pa analizë",
+  "portfolioDividends": "Dividendi vjetor",
+  "portfolioDividendYield": "Rendiment {percent}",
+  "portfolioDividendNote": "Dividendi vjetor i pritshëm bazohet në dividendët e paguar në 12 muajt e fundit; pagesat e ardhshme nuk janë të garantuara.",
+  "positionDividend": "Dividendi: {amount} në vit"
 }

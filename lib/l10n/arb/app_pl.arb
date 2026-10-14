@@ -453,5 +453,9 @@
   "compareRemove": "Usuń",
   "compareTickerHint": "Symbol, np. MSFT",
   "compareHint": "Kluczowe wskaźniki obok siebie; najlepsza wartość w każdym wierszu jest wyróżniona. Kwoty podano w walucie danej akcji.",
-  "compareNoAnalysis": "Brak analizy"
+  "compareNoAnalysis": "Brak analizy",
+  "portfolioDividends": "Roczna dywidenda",
+  "portfolioDividendYield": "Stopa dywidendy {percent}",
+  "portfolioDividendNote": "Oczekiwana roczna dywidenda opiera się na dywidendach wypłaconych w ciągu ostatnich 12 miesięcy; przyszłe wypłaty nie są gwarantowane.",
+  "positionDividend": "Dywidenda: {amount} rocznie"
 }

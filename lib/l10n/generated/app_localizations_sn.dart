@@ -1665,4 +1665,21 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Hapana ongororo parizvino';
+
+  @override
+  String get portfolioDividends => 'Dhividhendi yegore';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Pundutso $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dhividhendi inotarisirwa yegore inobva padhividhendi dzakabhadharwa mumwedzi 12 yapfuura; kubhadhara kweramangwana hakuvimbiswi.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dhividhendi: $amount pagore';
+  }
 }

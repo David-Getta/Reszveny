@@ -1659,4 +1659,21 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Nhwehwɛmu biara nni hɔ mmom';
+
+  @override
+  String get portfolioDividends => 'Afe biara mfaso kyɛ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Mfaso kyɛ wɔ bo so: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Mfaso kyɛ a yɛhwɛ kwan afe biara gyina mfaso kyɛ a wɔtuaa wɔ abosome 12 a atwam no so; yɛrentumi nhyɛ da sɛ wɔbɛtua bi daakye.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Mfaso kyɛ: $amount afe biara';
+  }
 }

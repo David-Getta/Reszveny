@@ -453,5 +453,9 @@
   "compareRemove": "Хориҷ кардан",
   "compareTickerHint": "Тикер, масалан MSFT",
   "compareHint": "Нишондиҳандаҳои асосӣ паҳлӯ ба паҳлӯ; беҳтарин арзиш дар ҳар сатр қайд шудааст. Маблағҳо бо асъори худи ҳар саҳмия.",
-  "compareNoAnalysis": "Ҳоло таҳлил нест"
+  "compareNoAnalysis": "Ҳоло таҳлил нест",
+  "portfolioDividends": "Дивидендҳои солона",
+  "portfolioDividendYield": "Даромаднокӣ {percent}",
+  "portfolioDividendNote": "Дивидендҳои солонаи пешбинишуда ба дивидендҳои дар 12 моҳи охир пардохтшуда асос ёфтаанд; пардохтҳои оянда кафолат дода намешаванд.",
+  "positionDividend": "Дивиденд: {amount} дар як сол"
 }

@@ -1629,4 +1629,21 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ገና ትንተና የለን';
+
+  @override
+  String get portfolioDividends => 'ዓመታዊ ብጽሒት ትርፊ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'መጠን $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ዝጽበ ዓመታዊ ብጽሒት ትርፊ ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተኸፍለ ብጽሒት ትርፊ መሰረት ዝገበረ እዩ፤ መጻኢ ክፍሊታት ውሕስነት የብሎምን።';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ብጽሒት ትርፊ: ኣብ ዓመት $amount';
+  }
 }

@@ -1694,4 +1694,21 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Još nema analize';
+
+  @override
+  String get portfolioDividends => 'Godišnje dividende';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Prinos $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Očekivane godišnje dividende zasnivaju se na dividendama isplaćenim u posljednjih 12 mjeseci; buduće isplate nisu zagarantovane.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividenda: $amount godišnje';
+  }
 }

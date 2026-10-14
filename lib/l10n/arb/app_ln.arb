@@ -453,5 +453,9 @@
   "compareRemove": "Longola",
   "compareTickerHint": "Ticker, ndakisa MSFT",
   "compareHint": "Mituya ya ntina pembeni na pembeni; motuya oyo eleki malamu na molɔngɔ moko moko emonisami. Mbɔngɔ ezali na mbɔngɔ ya action moko moko.",
-  "compareNoAnalysis": "Analyse ezali naino te"
+  "compareNoAnalysis": "Analyse ezali naino te",
+  "portfolioDividends": "Dividende ya mobu",
+  "portfolioDividendYield": "Rendement {percent}",
+  "portfolioDividendNote": "Dividende ya mobu oyo ezelamaki etongami na ba-dividende oyo bafutaki na sanza 12 oyo eleki; bafuti ya mikolo ezali koya ezali na garantie te.",
+  "positionDividend": "Dividende: {amount} na mobu"
 }

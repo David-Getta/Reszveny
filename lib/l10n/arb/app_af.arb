@@ -453,5 +453,9 @@
   "compareRemove": "Verwyder",
   "compareTickerHint": "Aandeelkode, bv. MSFT",
   "compareHint": "Kernsyfers langs mekaar; die beste waarde in elke ry is uitgelig. Bedrae is in elke aandeel se eie geldeenheid.",
-  "compareNoAnalysis": "Nog geen ontleding nie"
+  "compareNoAnalysis": "Nog geen ontleding nie",
+  "portfolioDividends": "Jaarlikse dividende",
+  "portfolioDividendYield": "{percent} opbrengs",
+  "portfolioDividendNote": "Verwagte jaarlikse dividende is gebaseer op die dividende wat in die afgelope 12 maande betaal is; toekomstige betalings is nie gewaarborg nie.",
+  "positionDividend": "Dividend: {amount} per jaar"
 }

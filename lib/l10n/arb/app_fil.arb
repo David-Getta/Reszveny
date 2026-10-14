@@ -453,5 +453,9 @@
   "compareRemove": "Alisin",
   "compareTickerHint": "Ticker, hal. MSFT",
   "compareHint": "Mga pangunahing numero nang magkakatabi; naka-highlight ang pinakamahusay na value sa bawat row. Nasa sariling currency ng bawat stock ang mga halaga.",
-  "compareNoAnalysis": "Wala pang pagsusuri"
+  "compareNoAnalysis": "Wala pang pagsusuri",
+  "portfolioDividends": "Taunang dibidendo",
+  "portfolioDividendYield": "{percent} yield",
+  "portfolioDividendNote": "Ang inaasahang taunang dibidendo ay batay sa mga dibidendong ibinayad sa nakalipas na 12 buwan; hindi garantisado ang mga susunod na bayad.",
+  "positionDividend": "Dibidendo: {amount} kada taon"
 }

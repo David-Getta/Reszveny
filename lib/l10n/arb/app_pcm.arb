@@ -453,5 +453,9 @@
   "compareRemove": "Comot am",
   "compareTickerHint": "Ticker, like MSFT",
   "compareHint": "Di main numbers dey side by side; di best value for each row dey highlighted. Di amounts dey for each stock own currency.",
-  "compareNoAnalysis": "No analysis yet"
+  "compareNoAnalysis": "No analysis yet",
+  "portfolioDividends": "Dividend every year",
+  "portfolioDividendYield": "{percent} yield",
+  "portfolioDividendNote": "Di dividend wey we expect every year na from di dividend wey dem pay for di last 12 months; we no fit promise future payment.",
+  "positionDividend": "Dividend: {amount} every year"
 }

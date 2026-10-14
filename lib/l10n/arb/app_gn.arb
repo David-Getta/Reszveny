@@ -453,5 +453,9 @@
   "compareRemove": "Mboguete",
   "compareTickerHint": "Ticker, techapyrã MSFT",
   "compareHint": "Papapy tenondeguáva oñondive; peteĩteĩ tysỹime ojehechauka pe valor iporãvéva. Pirapire papapy oĩ peteĩteĩ acción pirapire tee rupive.",
-  "compareNoAnalysis": "Ndaipóri gueteri jehesaʼỹijo"
+  "compareNoAnalysis": "Ndaipóri gueteri jehesaʼỹijo",
+  "portfolioDividends": "Dividendo arýpe",
+  "portfolioDividendYield": "Rendimiento {percent}",
+  "portfolioDividendNote": "Dividendo arýpe ojeroviaháva oñemopyenda dividendo oñehepymeʼẽvaʼekuére 12 jasy ohasavaʼekuépe; tenondeguáre ndaipóri garantía.",
+  "positionDividend": "Dividendo: {amount} arýpe"
 }

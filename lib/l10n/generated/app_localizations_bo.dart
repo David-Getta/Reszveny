@@ -1651,4 +1651,21 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ད་དུང་དབྱེ་ཞིབ་མེད';
+
+  @override
+  String get portfolioDividends => 'ལོ་རེའི་ཁེ་བགོ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'ཁེ་འབབ་ཚད་ $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'རེ་སྒུག་བྱེད་པའི་ལོ་རེའི་ཁེ་བགོ་ནི་ཟླ་བ་ 12 སྔོན་ནས་སྤྲད་པའི་ཁེ་བགོ་ལ་གཞི་བཅོལ་ཡོད། མ་འོངས་པའི་སྤྲོད་འབབ་ལ་ཁག་ཐེག་མེད།';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ཁེ་བགོ། ལོ་རེར་ $amount';
+  }
 }

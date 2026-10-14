@@ -453,5 +453,9 @@
   "compareRemove": "Бетерү",
   "compareTickerHint": "Тикер, мәсәлән MSFT",
   "compareHint": "Төп күрсәткечләр янәшә; һәр юлда иң яхшы кыйммәт аерып күрсәтелә. Суммалар һәр акциянең үз валютасында.",
-  "compareNoAnalysis": "Әлегә анализ юк"
+  "compareNoAnalysis": "Әлегә анализ юк",
+  "portfolioDividends": "Еллык дивидендлар",
+  "portfolioDividendYield": "Керемлелек {percent}",
+  "portfolioDividendNote": "Көтелгән еллык дивидендлар соңгы 12 айда түләнгән дивидендларга нигезләнә; киләчәк түләүләр гарантияләнми.",
+  "positionDividend": "Дивиденд: елына {amount}"
 }

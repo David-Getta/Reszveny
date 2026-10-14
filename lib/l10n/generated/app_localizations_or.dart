@@ -1657,4 +1657,21 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିଶ୍ଳେଷଣ ନାହିଁ';
+
+  @override
+  String get portfolioDividends => 'ବାର୍ଷିକ ଲାଭାଂଶ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ୟିଲ୍ଡ';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ଆଶାକୃତ ବାର୍ଷିକ ଲାଭାଂଶ ଗତ 12 ମାସରେ ପ୍ରଦାନ କରାଯାଇଥିବା ଲାଭାଂଶ ଉପରେ ଆଧାରିତ; ଭବିଷ୍ୟତ ପ୍ରଦାନର ନିଶ୍ଚିତତା ନାହିଁ।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ଲାଭାଂଶ: ବାର୍ଷିକ $amount';
+  }
 }

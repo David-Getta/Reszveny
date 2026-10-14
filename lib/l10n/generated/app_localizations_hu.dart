@@ -1665,4 +1665,21 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Még nincs elemzés';
+
+  @override
+  String get portfolioDividends => 'Éves osztalék';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent hozam';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'A várható éves osztalék az elmúlt 12 hónapban kifizetett osztalékon alapul; a jövőbeli kifizetés nem garantált.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Osztalék: évi $amount';
+  }
 }

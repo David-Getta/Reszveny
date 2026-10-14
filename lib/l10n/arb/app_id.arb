@@ -453,5 +453,9 @@
   "compareRemove": "Hapus",
   "compareTickerHint": "Kode saham, mis. MSFT",
   "compareHint": "Angka utama berdampingan; nilai terbaik di setiap baris disorot. Jumlah dalam mata uang masing-masing saham.",
-  "compareNoAnalysis": "Belum ada analisis"
+  "compareNoAnalysis": "Belum ada analisis",
+  "portfolioDividends": "Dividen tahunan",
+  "portfolioDividendYield": "Imbal hasil {percent}",
+  "portfolioDividendNote": "Perkiraan dividen tahunan didasarkan pada dividen yang dibayarkan dalam 12 bulan terakhir; pembayaran di masa mendatang tidak dijamin.",
+  "positionDividend": "Dividen: {amount} per tahun"
 }

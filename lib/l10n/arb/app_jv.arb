@@ -453,5 +453,9 @@
   "compareRemove": "Busak",
   "compareTickerHint": "Kode saham, upamane MSFT",
   "compareHint": "Angka utama jejer-jejer; nilai paling apik ing saben baris disorot. Jumlah ing mata uang saben saham dhewe-dhewe.",
-  "compareNoAnalysis": "Durung ana analisis"
+  "compareNoAnalysis": "Durung ana analisis",
+  "portfolioDividends": "Dividen taunan",
+  "portfolioDividendYield": "Imbal hasil {percent}",
+  "portfolioDividendNote": "Dividen taunan sing dikira-kira adhedhasar dividen sing dibayar sajrone 12 sasi pungkasan; pambayaran ing mbesuk ora dijamin.",
+  "positionDividend": "Dividen: {amount} saben taun"
 }

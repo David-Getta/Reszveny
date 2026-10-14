@@ -1660,4 +1660,21 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'هێشتا هیچ شیکارییەک نییە';
+
+  @override
+  String get portfolioDividends => 'قازانجی پشکی ساڵانە';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ڕێژەی قازانج';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'قازانجی پشکی ساڵانەی چاوەڕوانکراو لەسەر بنەمای ئەو قازانجانەیە کە لە 12 مانگی ڕابردوودا دراون؛ پارەدانەکانی داهاتوو گەرەنتی نین.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'قازانجی پشک: ساڵانە $amount';
+  }
 }

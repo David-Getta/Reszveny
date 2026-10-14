@@ -1655,4 +1655,21 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Alaa ƴeewndo tawo';
+
+  @override
+  String get portfolioDividends => 'Geɗal nafoore hitaande';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent e coggu';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Geɗal nafoore hitaande njaŋngaaɗo ina tuugii e geɗal nafoore yoboraaɗe e lebbi 12 ɓennuɗi ɗii; njoboje garooje ngalaa hoolaare.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Geɗal nafoore: $amount kala hitaande';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Ukloni",
   "compareTickerHint": "Tiker, npr. MSFT",
   "compareHint": "Ključni pokazatelji jedan pored drugog; najbolja vrijednost u svakom redu je istaknuta. Iznosi su u vlastitoj valuti svake dionice.",
-  "compareNoAnalysis": "Još nema analize"
+  "compareNoAnalysis": "Još nema analize",
+  "portfolioDividends": "Godišnje dividende",
+  "portfolioDividendYield": "Prinos {percent}",
+  "portfolioDividendNote": "Očekivane godišnje dividende zasnivaju se na dividendama isplaćenim u posljednjih 12 mjeseci; buduće isplate nisu zagarantovane.",
+  "positionDividend": "Dividenda: {amount} godišnje"
 }

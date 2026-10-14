@@ -1612,4 +1612,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => '아직 분석 없음';
+
+  @override
+  String get portfolioDividends => '연간 배당';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '수익률 $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      '예상 연간 배당은 최근 12개월 동안 지급된 배당을 기준으로 하며, 향후 지급은 보장되지 않습니다.';
+
+  @override
+  String positionDividend(String amount) {
+    return '배당: 연 $amount';
+  }
 }

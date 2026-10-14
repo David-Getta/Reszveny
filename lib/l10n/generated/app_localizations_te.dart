@@ -1665,4 +1665,21 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ఇంకా విశ్లేషణ లేదు';
+
+  @override
+  String get portfolioDividends => 'వార్షిక డివిడెండ్';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ఈల్డ్';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'అంచనా వార్షిక డివిడెండ్ గత 12 నెలల్లో చెల్లించిన డివిడెండ్‌ల ఆధారంగా ఉంటుంది; భవిష్యత్ చెల్లింపులకు హామీ లేదు.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'డివిడెండ్: సంవత్సరానికి $amount';
+  }
 }

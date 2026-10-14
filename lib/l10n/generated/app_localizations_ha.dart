@@ -1665,4 +1665,21 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Babu nazari tukuna';
+
+  @override
+  String get portfolioDividends => 'Rabon riba na shekara';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Yawan riba: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Rabon riba da ake sa ran samu a shekara ya dogara ne kan rabon ribar da aka biya a cikin watanni 12 da suka wuce; babu tabbacin biyan kuɗi a nan gaba.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Rabon riba: $amount a shekara';
+  }
 }

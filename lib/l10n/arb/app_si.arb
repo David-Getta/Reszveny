@@ -453,5 +453,9 @@
   "compareRemove": "ඉවත් කරන්න",
   "compareTickerHint": "ටිකර්, උදා. MSFT",
   "compareHint": "ප්‍රධාන සංඛ්‍යා එකිනෙක අසල; එක් එක් පේළියේ හොඳම අගය උද්දීපනය කර ඇත. මුදල් ප්‍රමාණ එක් එක් කොටසේ මුදල් ඒකකයෙන් වේ.",
-  "compareNoAnalysis": "තවම විශ්ලේෂණයක් නැත"
+  "compareNoAnalysis": "තවම විශ්ලේෂණයක් නැත",
+  "portfolioDividends": "වාර්ෂික ලාභාංශ",
+  "portfolioDividendYield": "{percent} ඵලදාව",
+  "portfolioDividendNote": "අපේක්ෂිත වාර්ෂික ලාභාංශ පසුගිය මාස 12 තුළ ගෙවූ ලාභාංශ මත පදනම් වේ; අනාගත ගෙවීම් සහතික නොවේ.",
+  "positionDividend": "ලාභාංශ: වසරකට {amount}"
 }

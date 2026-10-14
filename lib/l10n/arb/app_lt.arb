@@ -453,5 +453,9 @@
   "compareRemove": "Pašalinti",
   "compareTickerHint": "Simbolis, pvz., MSFT",
   "compareHint": "Pagrindiniai rodikliai greta; geriausia kiekvienos eilutės reikšmė paryškinta. Sumos pateikiamos kiekvienos akcijos valiuta.",
-  "compareNoAnalysis": "Analizės dar nėra"
+  "compareNoAnalysis": "Analizės dar nėra",
+  "portfolioDividends": "Metiniai dividendai",
+  "portfolioDividendYield": "Pajamingumas {percent}",
+  "portfolioDividendNote": "Numatomi metiniai dividendai apskaičiuojami pagal per pastaruosius 12 mėnesių išmokėtus dividendus; būsimos išmokos negarantuojamos.",
+  "positionDividend": "Dividendai: {amount} per metus"
 }

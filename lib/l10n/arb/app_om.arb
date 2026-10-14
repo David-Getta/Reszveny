@@ -453,5 +453,9 @@
   "compareRemove": "Haqi",
   "compareTickerHint": "Ticker, fakkeenyaaf MSFT",
   "compareHint": "Lakkoofsota ijoo wal bira; tarree tokkoon tokkoon keessatti gatiin caalaan ifa ta'eera. Baay'inni maallaqaa maallaqa mataa aksiyoona tokkoon tokkoo isaaniitiin kenname.",
-  "compareNoAnalysis": "Ammallee xiinxalli hin jiru"
+  "compareNoAnalysis": "Ammallee xiinxalli hin jiru",
+  "portfolioDividends": "Qooda bu'aa waggaa",
+  "portfolioDividendYield": "Dhibbeentaa {percent}",
+  "portfolioDividendNote": "Qoodni bu'aa waggaa eegamu qooda bu'aa ji'oota 12 darban keessatti kaffalame irratti hundaa'a; kaffaltiin gara fuulduraa wabii hin qabu.",
+  "positionDividend": "Qooda bu'aa: waggaatti {amount}"
 }

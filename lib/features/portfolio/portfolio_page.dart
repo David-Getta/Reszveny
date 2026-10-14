@@ -178,8 +178,19 @@ class _PortfolioBody extends StatelessWidget {
                               color: gainColor(p, s.gain),
                             ),
                             _Stat(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            if (s.annualDividend > 0)
+                              _Stat(
+                                key: const ValueKey('portfolio-dividends'),
+                                label: l10n.portfolioDividends,
+                                value: fmt.money(s.annualDividend, ccy),
+                                sub: l10n.portfolioDividendYield(fmt.percent(s.dividendYield)),
+                              ),
                           ],
                         ),
+                        if (s.annualDividend > 0) ...[
+                          const SizedBox(height: 10),
+                          Text(l10n.portfolioDividendNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                        ],
                       ],
                     ),
                   ),
@@ -232,7 +243,7 @@ class _PortfolioBody extends StatelessWidget {
 }
 
 class _Stat extends StatelessWidget {
-  const _Stat({required this.label, required this.value, this.sub, this.color});
+  const _Stat({super.key, required this.label, required this.value, this.sub, this.color});
 
   final String label;
   final String value;
@@ -373,6 +384,11 @@ class _PositionTile extends StatelessWidget {
                     '${fmt.money(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false))}',
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),
+                  if (row.annualDividend case final d?)
+                    Text(
+                      l10n.positionDividend(fmt.money(d, ccy)),
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
+                    ),
                 ],
               ),
             ),

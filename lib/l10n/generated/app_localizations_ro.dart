@@ -1690,4 +1690,21 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Nicio analiză încă';
+
+  @override
+  String get portfolioDividends => 'Dividende anuale';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Randament $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividendele anuale estimate se bazează pe dividendele plătite în ultimele 12 luni; plățile viitoare nu sunt garantate.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: $amount pe an';
+  }
 }

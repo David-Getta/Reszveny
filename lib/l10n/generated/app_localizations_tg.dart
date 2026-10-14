@@ -1661,4 +1661,21 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ҳоло таҳлил нест';
+
+  @override
+  String get portfolioDividends => 'Дивидендҳои солона';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Даромаднокӣ $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Дивидендҳои солонаи пешбинишуда ба дивидендҳои дар 12 моҳи охир пардохтшуда асос ёфтаанд; пардохтҳои оянда кафолат дода намешаванд.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Дивиденд: $amount дар як сол';
+  }
 }

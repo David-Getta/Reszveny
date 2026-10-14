@@ -453,5 +453,9 @@
   "compareRemove": "తీసివేయి",
   "compareTickerHint": "టికర్, ఉదా. MSFT",
   "compareHint": "ముఖ్య గణాంకాలు పక్కపక్కనే; ప్రతి వరుసలో ఉత్తమ విలువ హైలైట్ చేయబడింది. మొత్తాలు ప్రతి స్టాక్ సొంత కరెన్సీలో ఉన్నాయి.",
-  "compareNoAnalysis": "ఇంకా విశ్లేషణ లేదు"
+  "compareNoAnalysis": "ఇంకా విశ్లేషణ లేదు",
+  "portfolioDividends": "వార్షిక డివిడెండ్",
+  "portfolioDividendYield": "{percent} ఈల్డ్",
+  "portfolioDividendNote": "అంచనా వార్షిక డివిడెండ్ గత 12 నెలల్లో చెల్లించిన డివిడెండ్‌ల ఆధారంగా ఉంటుంది; భవిష్యత్ చెల్లింపులకు హామీ లేదు.",
+  "positionDividend": "డివిడెండ్: సంవత్సరానికి {amount}"
 }

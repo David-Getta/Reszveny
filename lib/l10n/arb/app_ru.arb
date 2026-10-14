@@ -453,5 +453,9 @@
   "compareRemove": "Удалить",
   "compareTickerHint": "Тикер, например MSFT",
   "compareHint": "Ключевые показатели рядом; лучшее значение в каждой строке выделено. Суммы указаны в валюте каждой акции.",
-  "compareNoAnalysis": "Анализа пока нет"
+  "compareNoAnalysis": "Анализа пока нет",
+  "portfolioDividends": "Дивиденды за год",
+  "portfolioDividendYield": "Доходность {percent}",
+  "portfolioDividendNote": "Ожидаемые годовые дивиденды рассчитаны по выплатам за последние 12 месяцев; будущие выплаты не гарантированы.",
+  "positionDividend": "Дивиденды: {amount} в год"
 }

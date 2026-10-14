@@ -1665,4 +1665,21 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Analyse ke na yo ntete ve';
+
+  @override
+  String get portfolioDividends => 'Dividende ya mvula';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rendement $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividende ya mvula yina beto ke vingila me simbama na badividende yina bo futaka na bangonda 12 yina me luta; bafutu ya bilumbu ke kwisa kele ve ya kieleka.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividende: $amount na mvula';
+  }
 }

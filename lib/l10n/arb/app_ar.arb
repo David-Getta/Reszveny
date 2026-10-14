@@ -453,5 +453,9 @@
   "compareRemove": "إزالة",
   "compareTickerHint": "رمز السهم، مثل MSFT",
   "compareHint": "الأرقام الرئيسية جنبًا إلى جنب، مع تمييز أفضل قيمة في كل صف. المبالغ معروضة بالعملة الخاصة بكل سهم.",
-  "compareNoAnalysis": "لا يوجد تحليل بعد"
+  "compareNoAnalysis": "لا يوجد تحليل بعد",
+  "portfolioDividends": "التوزيعات السنوية",
+  "portfolioDividendYield": "عائد {percent}",
+  "portfolioDividendNote": "تستند التوزيعات السنوية المتوقعة إلى التوزيعات المدفوعة خلال آخر 12 شهرًا؛ والمدفوعات المستقبلية غير مضمونة.",
+  "positionDividend": "التوزيعات: {amount} سنويًا"
 }

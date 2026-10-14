@@ -453,5 +453,9 @@
   "compareRemove": "Alih keluar",
   "compareTickerHint": "Ticker, cth. MSFT",
   "compareHint": "Angka utama sebelah-menyebelah; nilai terbaik dalam setiap baris diserlahkan. Amaun adalah dalam mata wang setiap saham sendiri.",
-  "compareNoAnalysis": "Belum ada analisis"
+  "compareNoAnalysis": "Belum ada analisis",
+  "portfolioDividends": "Dividen tahunan",
+  "portfolioDividendYield": "Hasil {percent}",
+  "portfolioDividendNote": "Jangkaan dividen tahunan adalah berdasarkan dividen yang dibayar dalam 12 bulan lepas; bayaran pada masa hadapan tidak dijamin.",
+  "positionDividend": "Dividen: {amount} setahun"
 }

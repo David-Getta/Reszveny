@@ -453,5 +453,9 @@
   "compareRemove": "Хасах",
   "compareTickerHint": "Тикер, жишээ нь MSFT",
   "compareHint": "Гол үзүүлэлтүүд зэрэгцээ; мөр бүрийн хамгийн сайн утгыг тодруулсан. Дүнгүүд нь хувьцаа тус бүрийн өөрийн валютаар байна.",
-  "compareNoAnalysis": "Шинжилгээ хараахан алга"
+  "compareNoAnalysis": "Шинжилгээ хараахан алга",
+  "portfolioDividends": "Жилийн ногдол ашиг",
+  "portfolioDividendYield": "{percent} өгөөж",
+  "portfolioDividendNote": "Хүлээгдэж буй жилийн ногдол ашгийг сүүлийн 12 сард төлсөн ногдол ашигт үндэслэн тооцсон; ирээдүйн төлбөр баталгаатай биш.",
+  "positionDividend": "Ногдол ашиг: жилд {amount}"
 }

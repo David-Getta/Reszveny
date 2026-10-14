@@ -1641,4 +1641,21 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ຍັງບໍ່ມີການວິເຄາະ';
+
+  @override
+  String get portfolioDividends => 'ເງິນປັນຜົນຕໍ່ປີ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'ຜົນຕອບແທນ $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ເງິນປັນຜົນຕໍ່ປີທີ່ຄາດໄວ້ ອີງໃສ່ເງິນປັນຜົນທີ່ຈ່າຍໃນ 12 ເດືອນຜ່ານມາ ການຈ່າຍໃນອະນາຄົດບໍ່ມີການຮັບປະກັນ';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ເງິນປັນຜົນ: $amount ຕໍ່ປີ';
+  }
 }

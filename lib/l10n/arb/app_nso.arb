@@ -453,5 +453,9 @@
   "compareRemove": "Tloša",
   "compareTickerHint": "Ticker, mohlala MSFT",
   "compareHint": "Dipalo tše bohlokwa ka thoko ga tše dingwe; boleng bjo bokaone mothalading o mongwe le o mongwe bo gateletšwe. Ditšhelete di ka tšhelete ya šere ye nngwe le ye nngwe.",
-  "compareNoAnalysis": "Ga go na tshekatsheko ga bjale"
+  "compareNoAnalysis": "Ga go na tshekatsheko ga bjale",
+  "portfolioDividends": "Dividende ya ngwaga",
+  "portfolioDividendYield": "Poelo ya {percent}",
+  "portfolioDividendNote": "Dividende ye e letetšwego ya ngwaga e theilwe godimo ga dividende ye e lefilwego dikgweding tše 12 tša go feta; ditefelo tša ka moso ga di tiišetšwe.",
+  "positionDividend": "Dividende: {amount} ka ngwaga"
 }

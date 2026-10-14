@@ -1657,4 +1657,21 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ingen analyse endnu';
+
+  @override
+  String get portfolioDividends => 'Årligt udbytte';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent i afkast';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Forventet årligt udbytte er baseret på udbytte udbetalt i de seneste 12 måneder; fremtidige udbetalinger er ikke garanteret.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Udbytte: $amount om året';
+  }
 }

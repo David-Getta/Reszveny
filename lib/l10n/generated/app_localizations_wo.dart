@@ -1655,4 +1655,21 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Amagul saytu';
+
+  @override
+  String get portfolioDividends => 'Dividand bu at';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Njureef $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividand bi ñu séentu at mu nekk dafa sukkandiku ci dividand yi ñu fey ci 12 weer yi weesu; feyu ëllëg yi wóoruñu.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividand: $amount at mu nekk';
+  }
 }

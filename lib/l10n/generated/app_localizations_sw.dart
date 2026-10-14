@@ -1660,4 +1660,21 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Bado hakuna uchambuzi';
+
+  @override
+  String get portfolioDividends => 'Gawio la mwaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Mavuno $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Gawio la mwaka linalotarajiwa linategemea gawio lililolipwa katika miezi 12 iliyopita; malipo ya baadaye hayana uhakika.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Gawio: $amount kwa mwaka';
+  }
 }

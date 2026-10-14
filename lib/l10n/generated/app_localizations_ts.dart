@@ -1670,4 +1670,21 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'A ku si va na nxopaxopo';
+
+  @override
+  String get portfolioDividends => 'Dividende ya lembe';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Mbuyelo wa $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividende leyi languteriweke ya lembe yi sekeriwile eka dividende leyi hakeriweke eka tin\'hweti ta 12 leti hundzeke; ku hakela ka nkarhi lowu taka a ku tiyisisiwi.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividende: $amount hi lembe';
+  }
 }

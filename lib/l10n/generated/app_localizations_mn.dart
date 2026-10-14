@@ -1661,4 +1661,21 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Шинжилгээ хараахан алга';
+
+  @override
+  String get portfolioDividends => 'Жилийн ногдол ашиг';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent өгөөж';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Хүлээгдэж буй жилийн ногдол ашгийг сүүлийн 12 сард төлсөн ногдол ашигт үндэслэн тооцсон; ирээдүйн төлбөр баталгаатай биш.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Ногдол ашиг: жилд $amount';
+  }
 }

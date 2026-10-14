@@ -1141,5 +1141,25 @@
   "compareRemove": "Remove",
   "compareTickerHint": "Ticker, e.g. MSFT",
   "compareHint": "Key figures side by side; the best value in each row is highlighted. Amounts are in each stock's own currency.",
-  "compareNoAnalysis": "No analysis yet"
+  "compareNoAnalysis": "No analysis yet",
+  "portfolioDividends": "Yearly dividends",
+  "portfolioDividendYield": "{percent} yield",
+  "@portfolioDividendYield": {
+    "description": "Dividend yield of the portfolio; percent is formatted like 1.8%.",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioDividendNote": "Expected yearly dividends are based on the dividends paid in the last 12 months; future payments are not guaranteed.",
+  "positionDividend": "Dividend: {amount} a year",
+  "@positionDividend": {
+    "description": "Expected yearly dividend of one position; amount is formatted money.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -1666,4 +1666,21 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Weli falanqayn ma jirto';
+
+  @override
+  String get portfolioDividends => 'Qaybta faa\'iidada sanadlaha';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Heerka $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Qaybta faa\'iidada sanadlaha ah ee la filayo waxay ku salaysan tahay qaybaha faa\'iidada la bixiyay 12-kii bilood ee la soo dhaafay; lacag-bixinnada mustaqbalka lama dammaanad qaadayo.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Qaybta faa\'iidada: $amount sanadkii';
+  }
 }

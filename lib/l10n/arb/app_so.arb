@@ -453,5 +453,9 @@
   "compareRemove": "Ka saar",
   "compareTickerHint": "Astaanta, tusaale MSFT",
   "compareHint": "Tirooyinka muhiimka ah oo dhinac dhinac ah; qiimaha ugu fiican ee saf kasta waa la iftiimiyay. Lacagaha waxay ku qoran yihiin lacagta saami kasta.",
-  "compareNoAnalysis": "Weli falanqayn ma jirto"
+  "compareNoAnalysis": "Weli falanqayn ma jirto",
+  "portfolioDividends": "Qaybta faa'iidada sanadlaha",
+  "portfolioDividendYield": "Heerka {percent}",
+  "portfolioDividendNote": "Qaybta faa'iidada sanadlaha ah ee la filayo waxay ku salaysan tahay qaybaha faa'iidada la bixiyay 12-kii bilood ee la soo dhaafay; lacag-bixinnada mustaqbalka lama dammaanad qaadayo.",
+  "positionDividend": "Qaybta faa'iidada: {amount} sanadkii"
 }

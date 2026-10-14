@@ -453,5 +453,9 @@
   "compareRemove": "દૂર કરો",
   "compareTickerHint": "ટિકર, દા.ત. MSFT",
   "compareHint": "મુખ્ય આંકડા બાજુ-બાજુમાં; દરેક પંક્તિમાં શ્રેષ્ઠ મૂલ્ય હાઇલાઇટ કરેલ છે. રકમ દરેક સ્ટૉકના પોતાના ચલણમાં છે.",
-  "compareNoAnalysis": "હજુ કોઈ વિશ્લેષણ નથી"
+  "compareNoAnalysis": "હજુ કોઈ વિશ્લેષણ નથી",
+  "portfolioDividends": "વાર્ષિક ડિવિડન્ડ",
+  "portfolioDividendYield": "{percent} યીલ્ડ",
+  "portfolioDividendNote": "અપેક્ષિત વાર્ષિક ડિવિડન્ડ છેલ્લા 12 મહિનામાં ચૂકવાયેલા ડિવિડન્ડ પર આધારિત છે; ભવિષ્યની ચુકવણીની ખાતરી નથી.",
+  "positionDividend": "ડિવિડન્ડ: વર્ષે {amount}"
 }

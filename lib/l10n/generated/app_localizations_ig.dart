@@ -1655,4 +1655,21 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Enweghị nyocha ugbu a';
+
+  @override
+  String get portfolioDividends => 'Dividend kwa afọ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Mkpụrụ $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividend a na-atụ anya kwa afọ dabere na dividend a kwụrụ n\'ime ọnwa 12 gara aga; enweghị nkwa na a ga-akwụ ụgwọ n\'ọdịnihu.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: $amount kwa afọ';
+  }
 }

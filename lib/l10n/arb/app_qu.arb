@@ -453,5 +453,9 @@
   "compareRemove": "Qichuy",
   "compareTickerHint": "Ticker, kayhina MSFT",
   "compareHint": "Hatun yupaykuna kuskalla; sapa siq'ipi aswan allin chaniqa sut'ichasqa. Qullqi yupaykunaqa sapa accionpa kikin qullqinpim.",
-  "compareNoAnalysis": "Manaraq t'aqwiy kanchu"
+  "compareNoAnalysis": "Manaraq t'aqwiy kanchu",
+  "portfolioDividends": "Watapaq dividendo",
+  "portfolioDividendYield": "{percent} rendimiento",
+  "portfolioDividendNote": "Suyasqa watapaq dividendoqa qhipa 12 killapi pagasqa dividendokunapim tiyan; hamuq pagokunaqa manam segurochu.",
+  "positionDividend": "Dividendo: watapi {amount}"
 }

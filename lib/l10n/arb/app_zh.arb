@@ -453,5 +453,9 @@
   "compareRemove": "移除",
   "compareTickerHint": "股票代码，例如 MSFT",
   "compareHint": "关键指标并排显示；每行最佳数值已突出显示。金额以各股票自身的货币计价。",
-  "compareNoAnalysis": "暂无分析"
+  "compareNoAnalysis": "暂无分析",
+  "portfolioDividends": "年度股息",
+  "portfolioDividendYield": "股息率 {percent}",
+  "portfolioDividendNote": "预期年度股息基于过去 12 个月已派发的股息估算；未来派息并无保证。",
+  "positionDividend": "股息：每年 {amount}"
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Poista",
   "compareTickerHint": "Osaketunnus, esim. MSFT",
   "compareHint": "Tunnusluvut rinnakkain; kunkin rivin paras arvo on korostettu. Summat ovat kunkin osakkeen omassa valuutassa.",
-  "compareNoAnalysis": "Ei vielä analyysia"
+  "compareNoAnalysis": "Ei vielä analyysia",
+  "portfolioDividends": "Vuotuiset osingot",
+  "portfolioDividendYield": "Tuotto {percent}",
+  "portfolioDividendNote": "Odotetut vuotuiset osingot perustuvat viimeisten 12 kuukauden aikana maksettuihin osinkoihin; tulevia maksuja ei taata.",
+  "positionDividend": "Osinko: {amount} vuodessa"
 }

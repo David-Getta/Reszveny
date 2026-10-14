@@ -1666,4 +1666,21 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Ende pa analizë';
+
+  @override
+  String get portfolioDividends => 'Dividendi vjetor';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rendiment $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividendi vjetor i pritshëm bazohet në dividendët e paguar në 12 muajt e fundit; pagesat e ardhshme nuk janë të garantuara.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividendi: $amount në vit';
+  }
 }

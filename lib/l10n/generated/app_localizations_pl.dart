@@ -1713,4 +1713,21 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Brak analizy';
+
+  @override
+  String get portfolioDividends => 'Roczna dywidenda';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Stopa dywidendy $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Oczekiwana roczna dywidenda opiera się na dywidendach wypłaconych w ciągu ostatnich 12 miesięcy; przyszłe wypłaty nie są gwarantowane.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dywidenda: $amount rocznie';
+  }
 }

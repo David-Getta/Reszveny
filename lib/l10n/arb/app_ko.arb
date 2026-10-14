@@ -453,5 +453,9 @@
   "compareRemove": "삭제",
   "compareTickerHint": "티커(예: MSFT)",
   "compareHint": "주요 지표를 나란히 표시합니다. 각 행에서 가장 좋은 값이 강조 표시됩니다. 금액은 각 종목의 통화로 표시됩니다.",
-  "compareNoAnalysis": "아직 분석 없음"
+  "compareNoAnalysis": "아직 분석 없음",
+  "portfolioDividends": "연간 배당",
+  "portfolioDividendYield": "수익률 {percent}",
+  "portfolioDividendNote": "예상 연간 배당은 최근 12개월 동안 지급된 배당을 기준으로 하며, 향후 지급은 보장되지 않습니다.",
+  "positionDividend": "배당: 연 {amount}"
 }

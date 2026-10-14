@@ -453,5 +453,9 @@
   "compareRemove": "Chotsani",
   "compareTickerHint": "Ticker, mwachitsanzo MSFT",
   "compareHint": "Ziwerengero zazikulu mbali ndi mbali; mtengo wabwino kwambiri pa mzere uliwonse wawonetsedwa. Ndalama zili mu ndalama ya sheya iliyonse.",
-  "compareNoAnalysis": "Palibe kusanthula pakadali pano"
+  "compareNoAnalysis": "Palibe kusanthula pakadali pano",
+  "portfolioDividends": "Gawo la phindu pachaka",
+  "portfolioDividendYield": "Chiwerengero: {percent}",
+  "portfolioDividendNote": "Gawo la phindu loyembekezeka pachaka limachokera pa magawo a phindu omwe analipidwa m'miyezi 12 yapitayi; malipiro amtsogolo sali otsimikizika.",
+  "positionDividend": "Gawo la phindu: {amount} pachaka"
 }

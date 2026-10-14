@@ -453,5 +453,9 @@
   "compareRemove": "Odebrat",
   "compareTickerHint": "Ticker, např. MSFT",
   "compareHint": "Klíčové ukazatele vedle sebe; nejlepší hodnota v každém řádku je zvýrazněna. Částky jsou ve vlastní měně každé akcie.",
-  "compareNoAnalysis": "Zatím žádná analýza"
+  "compareNoAnalysis": "Zatím žádná analýza",
+  "portfolioDividends": "Roční dividendy",
+  "portfolioDividendYield": "Výnos {percent}",
+  "portfolioDividendNote": "Očekávané roční dividendy vycházejí z dividend vyplacených za posledních 12 měsíců; budoucí výplaty nejsou zaručené.",
+  "positionDividend": "Dividenda: {amount} ročně"
 }

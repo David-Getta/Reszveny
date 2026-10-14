@@ -1660,4 +1660,21 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Durung ana analisis';
+
+  @override
+  String get portfolioDividends => 'Dividen taunan';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Imbal hasil $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dividen taunan sing dikira-kira adhedhasar dividen sing dibayar sajrone 12 sasi pungkasan; pambayaran ing mbesuk ora dijamin.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividen: $amount saben taun';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Momtu",
   "compareTickerHint": "Kod aksiyoŋ, ɗum noon MSFT",
   "compareHint": "Limooje mawɗe ɗee takko takko; nafoore ɓurnde moƴƴude e nder gaɗa kala ko feeñinaa. Limooje ceede ɗee ko e ceede aksiyoŋ kala.",
-  "compareNoAnalysis": "Alaa ƴeewndo tawo"
+  "compareNoAnalysis": "Alaa ƴeewndo tawo",
+  "portfolioDividends": "Geɗal nafoore hitaande",
+  "portfolioDividendYield": "{percent} e coggu",
+  "portfolioDividendNote": "Geɗal nafoore hitaande njaŋngaaɗo ina tuugii e geɗal nafoore yoboraaɗe e lebbi 12 ɓennuɗi ɗii; njoboje garooje ngalaa hoolaare.",
+  "positionDividend": "Geɗal nafoore: {amount} kala hitaande"
 }

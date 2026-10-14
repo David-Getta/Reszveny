@@ -453,5 +453,9 @@
   "compareRemove": "Ggyamu",
   "compareTickerHint": "Ticker, okugeza MSFT",
   "compareHint": "Ebibalo ebikulu ku bbali na bbali; omuwendo ogusinga obulungi mu buli lunyiriri gulagiddwa. Ssente ziri mu nsimbi za buli mugabo.",
-  "compareNoAnalysis": "Okwekenneenya tekunnabaawo"
+  "compareNoAnalysis": "Okwekenneenya tekunnabaawo",
+  "portfolioDividends": "Amagoba ku migabo ag’omwaka",
+  "portfolioDividendYield": "Amagoba: {percent}",
+  "portfolioDividendNote": "Amagoba ku migabo agasuubirwa buli mwaka gasinziira ku magoba agaasasulwa mu myezi 12 egiyise; okusasula okw’omu maaso tekukakasiddwa.",
+  "positionDividend": "Amagoba ku migabo: {amount} buli mwaka"
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Ikkaten",
   "compareTickerHint": "Ticker, kas pagarigan MSFT",
   "compareHint": "Dagiti kangrunaan a numero iti abay ti tunggal maysa; nailasin ti kasayaatan a balor iti tunggal linia. Dagiti kantidad ket iti bukod a currency ti tunggal stock.",
-  "compareNoAnalysis": "Awan pay ti panangsukimat"
+  "compareNoAnalysis": "Awan pay ti panangsukimat",
+  "portfolioDividends": "Tinawen a dibidendo",
+  "portfolioDividendYield": "{percent} yield",
+  "portfolioDividendNote": "Ti mapakpakadaan a tinawen a dibidendo ket naibatay kadagiti dibidendo a naibayad iti napalabas a 12 a bulan; saan a garantisado dagiti bayad iti masakbayan.",
+  "positionDividend": "Dibidendo: {amount} iti tinawen"
 }

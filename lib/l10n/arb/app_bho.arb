@@ -453,5 +453,9 @@
   "compareRemove": "हटाईं",
   "compareTickerHint": "टिकर, जइसे MSFT",
   "compareHint": "मुख्य आंकड़ा अगल-बगल; हर पंक्ति में सबसे बढ़िया मान हाइलाइट बा। रकम हर शेयर के आपन मुद्रा में बा।",
-  "compareNoAnalysis": "अबहीं ले कवनो विश्लेषण नइखे"
+  "compareNoAnalysis": "अबहीं ले कवनो विश्लेषण नइखे",
+  "portfolioDividends": "सालाना लाभांश",
+  "portfolioDividendYield": "{percent} यील्ड",
+  "portfolioDividendNote": "अनुमानित सालाना लाभांश पिछला 12 महीना में दिहल गइल लाभांश पर आधारित बा; आगे के भुगतान के कवनो गारंटी नइखे।",
+  "positionDividend": "लाभांश: {amount} सालाना"
 }

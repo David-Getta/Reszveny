@@ -1696,4 +1696,21 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Analīzes vēl nav';
+
+  @override
+  String get portfolioDividends => 'Gada dividendes';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Ienesīgums $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Paredzamās gada dividendes balstās uz pēdējos 12 mēnešos izmaksātajām dividendēm; nākotnes izmaksas nav garantētas.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividende: $amount gadā';
+  }
 }

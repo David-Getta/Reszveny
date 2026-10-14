@@ -453,5 +453,9 @@
   "compareRemove": "Видалити",
   "compareTickerHint": "Тікер, напр. MSFT",
   "compareHint": "Ключові показники поруч; найкраще значення в кожному рядку виділено. Суми вказано у валюті кожної акції.",
-  "compareNoAnalysis": "Аналізу ще немає"
+  "compareNoAnalysis": "Аналізу ще немає",
+  "portfolioDividends": "Дивіденди за рік",
+  "portfolioDividendYield": "Дохідність {percent}",
+  "portfolioDividendNote": "Очікувані річні дивіденди розраховано за виплатами за останні 12 місяців; майбутні виплати не гарантовані.",
+  "positionDividend": "Дивіденди: {amount} на рік"
 }

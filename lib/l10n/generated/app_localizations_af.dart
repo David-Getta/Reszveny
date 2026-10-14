@@ -1663,4 +1663,21 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Nog geen ontleding nie';
+
+  @override
+  String get portfolioDividends => 'Jaarlikse dividende';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent opbrengs';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Verwagte jaarlikse dividende is gebaseer op die dividende wat in die afgelope 12 maande betaal is; toekomstige betalings is nie gewaarborg nie.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividend: $amount per jaar';
+  }
 }

@@ -1710,4 +1710,21 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Zatiaľ bez analýzy';
+
+  @override
+  String get portfolioDividends => 'Ročné dividendy';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Výnos $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Očakávané ročné dividendy vychádzajú z dividend vyplatených za posledných 12 mesiacov; budúce výplaty nie sú zaručené.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividenda: $amount ročne';
+  }
 }

@@ -1711,4 +1711,21 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Анализа пока нет';
+
+  @override
+  String get portfolioDividends => 'Дивиденды за год';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Доходность $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ожидаемые годовые дивиденды рассчитаны по выплатам за последние 12 месяцев; будущие выплаты не гарантированы.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Дивиденды: $amount в год';
+  }
 }

@@ -1662,4 +1662,21 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Hêj analîz tune';
+
+  @override
+  String get portfolioDividends => 'Dîvîdenda salane';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Rêje: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Dîvîdenda salane ya tê payîn li ser bingeha dîvîdendên ku di 12 mehên dawî de hatine dayîn e; dayînên pêşerojê ne garantî ne.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dîvîdend: salê $amount';
+  }
 }

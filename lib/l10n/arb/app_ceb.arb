@@ -453,5 +453,9 @@
   "compareRemove": "Tangtangon",
   "compareTickerHint": "Ticker, pananglitan MSFT",
   "compareHint": "Ang mga importanteng numero magkatapad; gi-highlight ang labing maayong value sa matag laray. Ang mga kantidad anaa sa kaugalingong currency sa matag stock.",
-  "compareNoAnalysis": "Wala pay pagtuki"
+  "compareNoAnalysis": "Wala pay pagtuki",
+  "portfolioDividends": "Tinuig nga dibidendo",
+  "portfolioDividendYield": "{percent} yield",
+  "portfolioDividendNote": "Ang gipaabot nga tinuig nga dibidendo gibase sa mga dibidendo nga gibayad sulod sa miaging 12 ka bulan; ang umaabot nga mga bayad dili garantisado.",
+  "positionDividend": "Dibidendo: {amount} kada tuig"
 }

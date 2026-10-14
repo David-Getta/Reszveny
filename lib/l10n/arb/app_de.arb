@@ -453,5 +453,9 @@
   "compareRemove": "Entfernen",
   "compareTickerHint": "Ticker, z. B. MSFT",
   "compareHint": "Kennzahlen im direkten Vergleich; der beste Wert jeder Zeile ist hervorgehoben. Beträge sind in der Währung der jeweiligen Aktie.",
-  "compareNoAnalysis": "Noch keine Analyse"
+  "compareNoAnalysis": "Noch keine Analyse",
+  "portfolioDividends": "Jährliche Dividenden",
+  "portfolioDividendYield": "{percent} Rendite",
+  "portfolioDividendNote": "Die erwarteten jährlichen Dividenden basieren auf den in den letzten 12 Monaten gezahlten Dividenden; künftige Zahlungen sind nicht garantiert.",
+  "positionDividend": "Dividende: {amount} pro Jahr"
 }

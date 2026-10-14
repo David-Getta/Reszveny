@@ -453,5 +453,9 @@
   "compareRemove": "Ta bort",
   "compareTickerHint": "Ticker, t.ex. MSFT",
   "compareHint": "Nyckeltal sida vid sida; bästa värdet på varje rad är markerat. Beloppen anges i respektive akties valuta.",
-  "compareNoAnalysis": "Ingen analys än"
+  "compareNoAnalysis": "Ingen analys än",
+  "portfolioDividends": "Årlig utdelning",
+  "portfolioDividendYield": "{percent} direktavkastning",
+  "portfolioDividendNote": "Förväntad årlig utdelning baseras på utdelningarna under de senaste 12 månaderna; framtida utbetalningar är inte garanterade.",
+  "positionDividend": "Utdelning: {amount} per år"
 }

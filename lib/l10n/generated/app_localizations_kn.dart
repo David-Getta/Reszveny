@@ -1665,4 +1665,21 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ಇನ್ನೂ ಯಾವುದೇ ವಿಶ್ಲೇಷಣೆ ಇಲ್ಲ';
+
+  @override
+  String get portfolioDividends => 'ವಾರ್ಷಿಕ ಡಿವಿಡೆಂಡ್';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ಯೀಲ್ಡ್';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ನಿರೀಕ್ಷಿತ ವಾರ್ಷಿಕ ಡಿವಿಡೆಂಡ್ ಕಳೆದ 12 ತಿಂಗಳಲ್ಲಿ ಪಾವತಿಸಿದ ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಆಧರಿಸಿದೆ; ಭವಿಷ್ಯದ ಪಾವತಿಗಳಿಗೆ ಖಾತರಿ ಇಲ್ಲ.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ಡಿವಿಡೆಂಡ್: ವರ್ಷಕ್ಕೆ $amount';
+  }
 }

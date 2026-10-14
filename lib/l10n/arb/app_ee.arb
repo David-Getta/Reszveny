@@ -453,5 +453,9 @@
   "compareRemove": "Ɖee ɖa",
   "compareTickerHint": "Ticker dzesi, abe MSFT ene",
   "compareHint": "Xexlẽdzesi veviwo le wo nɔewo xa; wode dzesi asixɔxɔ nyuitɔ kekeake le fli ɖesiaɖe me. Gaxexlẽwo le akpa ɖesiaɖe ƒe ga ƒomevi ŋutɔ me.",
-  "compareNoAnalysis": "Numekuku aɖeke meli haɖe o"
+  "compareNoAnalysis": "Numekuku aɖeke meli haɖe o",
+  "portfolioDividends": "Ƒe sia ƒe viɖemama",
+  "portfolioDividendYield": "Agbɔsɔsɔ: {percent}",
+  "portfolioDividendNote": "Ƒe sia ƒe viɖemama si wole mɔ kpɔm na la nɔ te ɖe viɖemama si woxe le ɣleti 12 siwo va yi me dzi; womeka ɖe edzi be woaxe fe le etsɔme o.",
+  "positionDividend": "Viɖemama: {amount} le ƒe ɖeka me"
 }

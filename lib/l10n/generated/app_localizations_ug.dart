@@ -1662,4 +1662,21 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'تېخى تەھلىل يوق';
+
+  @override
+  String get portfolioDividends => 'يىللىق پايدا ئۈلۈشى';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'نىسبىتى $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'مۆلچەرلەنگەن يىللىق پايدا ئۈلۈشى ئالدىنقى 12 ئايدا تۆلەنگەن پايدا ئۈلۈشىنى ئاساس قىلىدۇ؛ كەلگۈسىدىكى تۆلەملەرگە كاپالەت يوق.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'پايدا ئۈلۈشى: يىلىغا $amount';
+  }
 }

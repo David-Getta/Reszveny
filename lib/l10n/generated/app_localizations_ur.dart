@@ -1659,4 +1659,21 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ابھی کوئی تجزیہ نہیں';
+
+  @override
+  String get portfolioDividends => 'سالانہ ڈیویڈنڈ';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ییلڈ';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'متوقع سالانہ ڈیویڈنڈ گزشتہ 12 ماہ میں ادا کیے گئے ڈیویڈنڈ پر مبنی ہے؛ مستقبل کی ادائیگیوں کی ضمانت نہیں۔';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ڈیویڈنڈ: سالانہ $amount';
+  }
 }

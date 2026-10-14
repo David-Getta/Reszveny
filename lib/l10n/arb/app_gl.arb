@@ -453,5 +453,9 @@
   "compareRemove": "Quitar",
   "compareTickerHint": "Ticker, p. ex. MSFT",
   "compareHint": "Cifras clave lado a lado; o mellor valor de cada fila aparece resaltado. Os importes están na moeda de cada acción.",
-  "compareNoAnalysis": "Aínda non hai análise"
+  "compareNoAnalysis": "Aínda non hai análise",
+  "portfolioDividends": "Dividendos anuais",
+  "portfolioDividendYield": "{percent} de rendibilidade",
+  "portfolioDividendNote": "Os dividendos anuais previstos baséanse nos dividendos pagados nos últimos 12 meses; os pagamentos futuros non están garantidos.",
+  "positionDividend": "Dividendo: {amount} ao ano"
 }

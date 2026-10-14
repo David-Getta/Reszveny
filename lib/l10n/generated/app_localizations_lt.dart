@@ -1711,4 +1711,21 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Analizės dar nėra';
+
+  @override
+  String get portfolioDividends => 'Metiniai dividendai';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Pajamingumas $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Numatomi metiniai dividendai apskaičiuojami pagal per pastaruosius 12 mėnesių išmokėtus dividendus; būsimos išmokos negarantuojamos.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dividendai: $amount per metus';
+  }
 }

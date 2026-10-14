@@ -453,5 +453,9 @@
   "compareRemove": "Kuramwo",
   "compareTickerHint": "Ticker, nk'akarorero MSFT",
   "compareHint": "Ibiharuro nyamukuru biri iruhande; agaciro keza kuruta ayandi muri buri murongo karashizwe ahabona. Amahera ari mu ifaranga rya buri mugabane.",
-  "compareNoAnalysis": "Nta sesangura rirabaho"
+  "compareNoAnalysis": "Nta sesangura rirabaho",
+  "portfolioDividends": "Inyungu ku migabane y'umwaka",
+  "portfolioDividendYield": "Igipimo {percent}",
+  "portfolioDividendNote": "Inyungu ku migabane yitezwe ku mwaka ishingiye ku nyungu zarihwe mu mezi 12 aheze; ivyo bizorihwa mu gihe kizoza ntibihamye.",
+  "positionDividend": "Inyungu ku migabane: {amount} ku mwaka"
 }

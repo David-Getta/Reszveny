@@ -453,5 +453,9 @@
   "compareRemove": "لابردن",
   "compareTickerHint": "هێمای پشک، بۆ نموونە MSFT",
   "compareHint": "ژمارە سەرەکییەکان لە تەنیشت یەکتر؛ باشترین بەها لە هەر ڕیزێکدا دیاریکراوە. بڕەکان بە دراوی خودی هەر پشکێکن.",
-  "compareNoAnalysis": "هێشتا هیچ شیکارییەک نییە"
+  "compareNoAnalysis": "هێشتا هیچ شیکارییەک نییە",
+  "portfolioDividends": "قازانجی پشکی ساڵانە",
+  "portfolioDividendYield": "{percent} ڕێژەی قازانج",
+  "portfolioDividendNote": "قازانجی پشکی ساڵانەی چاوەڕوانکراو لەسەر بنەمای ئەو قازانجانەیە کە لە 12 مانگی ڕابردوودا دراون؛ پارەدانەکانی داهاتوو گەرەنتی نین.",
+  "positionDividend": "قازانجی پشک: ساڵانە {amount}"
 }

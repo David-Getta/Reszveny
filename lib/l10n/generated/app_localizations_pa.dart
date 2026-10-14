@@ -1656,4 +1656,21 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ਹਾਲੇ ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ';
+
+  @override
+  String get portfolioDividends => 'ਸਾਲਾਨਾ ਲਾਭਅੰਸ਼';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent ਯੀਲਡ';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'ਅਨੁਮਾਨਿਤ ਸਾਲਾਨਾ ਲਾਭਅੰਸ਼ ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਦਿੱਤੇ ਗਏ ਲਾਭਅੰਸ਼ ’ਤੇ ਆਧਾਰਿਤ ਹੈ; ਭਵਿੱਖੀ ਭੁਗਤਾਨਾਂ ਦੀ ਗਾਰੰਟੀ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ਲਾਭਅੰਸ਼: $amount ਸਾਲਾਨਾ';
+  }
 }

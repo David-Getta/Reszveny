@@ -453,5 +453,9 @@
   "compareRemove": "Katula",
   "compareTickerHint": "Ticker, mbandu MSFT",
   "compareHint": "Bitalu ya mfunu na lweka na lweka; ntalu ya kuluta mbote na konso ndonga me monisama. Bitalu ya mbongo kele na mbongo ya konso action.",
-  "compareNoAnalysis": "Analyse ke na yo ntete ve"
+  "compareNoAnalysis": "Analyse ke na yo ntete ve",
+  "portfolioDividends": "Dividende ya mvula",
+  "portfolioDividendYield": "Rendement {percent}",
+  "portfolioDividendNote": "Dividende ya mvula yina beto ke vingila me simbama na badividende yina bo futaka na bangonda 12 yina me luta; bafutu ya bilumbu ke kwisa kele ve ya kieleka.",
+  "positionDividend": "Dividende: {amount} na mvula"
 }

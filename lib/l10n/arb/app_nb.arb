@@ -453,5 +453,9 @@
   "compareRemove": "Fjern",
   "compareTickerHint": "Ticker, f.eks. MSFT",
   "compareHint": "Nøkkeltall side om side; den beste verdien i hver rad er uthevet. Beløpene er i hver aksjes egen valuta.",
-  "compareNoAnalysis": "Ingen analyse ennå"
+  "compareNoAnalysis": "Ingen analyse ennå",
+  "portfolioDividends": "Årlig utbytte",
+  "portfolioDividendYield": "{percent} direkteavkastning",
+  "portfolioDividendNote": "Forventet årlig utbytte er basert på utbyttet som er utbetalt de siste 12 månedene; fremtidige utbetalinger er ikke garantert.",
+  "positionDividend": "Utbytte: {amount} per år"
 }

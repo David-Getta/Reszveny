@@ -1666,4 +1666,21 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'ഇതുവരെ വിശകലനം ഇല്ല';
+
+  @override
+  String get portfolioDividends => 'വാർഷിക ലാഭവിഹിതം';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent യീൽഡ്';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'പ്രതീക്ഷിക്കുന്ന വാർഷിക ലാഭവിഹിതം കഴിഞ്ഞ 12 മാസത്തിൽ നൽകിയ ലാഭവിഹിതത്തെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്; ഭാവിയിലെ പേയ്‌മെന്റുകൾ ഉറപ്പില്ല.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'ലാഭവിഹിതം: പ്രതിവർഷം $amount';
+  }
 }

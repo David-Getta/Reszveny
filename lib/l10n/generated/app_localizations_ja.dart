@@ -1609,4 +1609,21 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => '分析はまだありません';
+
+  @override
+  String get portfolioDividends => '年間配当';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '利回り $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      '予想年間配当は過去12か月に支払われた配当に基づいています。将来の支払いは保証されません。';
+
+  @override
+  String positionDividend(String amount) {
+    return '配当: 年間 $amount';
+  }
 }

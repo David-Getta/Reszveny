@@ -1669,4 +1669,21 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Okwekenneenya tekunnabaawo';
+
+  @override
+  String get portfolioDividends => 'Amagoba ku migabo ag’omwaka';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'Amagoba: $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Amagoba ku migabo agasuubirwa buli mwaka gasinziira ku magoba agaasasulwa mu myezi 12 egiyise; okusasula okw’omu maaso tekukakasiddwa.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Amagoba ku migabo: $amount buli mwaka';
+  }
 }

@@ -453,5 +453,9 @@
   "compareRemove": "Kkes",
   "compareTickerHint": "Azamul, amedya MSFT",
   "compareHint": "Imḍanen igejdanen yiwen ɣer tama n wayeḍ; azal ufrin deg yal izirig yettwasbeggen. Idrimen llan s tedrimt n yal aksyun.",
-  "compareNoAnalysis": "Ulac tasleḍt ar tura"
+  "compareNoAnalysis": "Ulac tasleḍt ar tura",
+  "portfolioDividends": "Dividand n useggas",
+  "portfolioDividendYield": "Afaris {percent}",
+  "portfolioDividendNote": "Dividand n useggas i yettwarǧan yebna ɣef dividand yettwaxelṣen deg 12 n wayyuren ineggura; ixelṣen n uzekka ur ttwaḍemnen ara.",
+  "positionDividend": "Dividand: {amount} i useggas"
 }

@@ -1674,4 +1674,21 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'Awan pay ti panangsukimat';
+
+  @override
+  String get portfolioDividends => 'Tinawen a dibidendo';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return '$percent yield';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'Ti mapakpakadaan a tinawen a dibidendo ket naibatay kadagiti dibidendo a naibayad iti napalabas a 12 a bulan; saan a garantisado dagiti bayad iti masakbayan.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'Dibidendo: $amount iti tinawen';
+  }
 }

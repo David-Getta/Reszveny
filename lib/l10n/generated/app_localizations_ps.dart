@@ -1654,4 +1654,21 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get compareNoAnalysis => 'تر اوسه تحلیل نشته';
+
+  @override
+  String get portfolioDividends => 'کلنۍ د ونډې ګټه';
+
+  @override
+  String portfolioDividendYield(String percent) {
+    return 'د ګټې کچه $percent';
+  }
+
+  @override
+  String get portfolioDividendNote =>
+      'تمه شوې کلنۍ د ونډې ګټه په تېرو 12 میاشتو کې پر ورکړل شوې ګټې ولاړه ده؛ راتلونکې ورکړې تضمین نه دي.';
+
+  @override
+  String positionDividend(String amount) {
+    return 'د ونډې ګټه: کلنۍ $amount';
+  }
 }

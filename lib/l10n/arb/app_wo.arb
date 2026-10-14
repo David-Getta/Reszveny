@@ -453,5 +453,9 @@
   "compareRemove": "Dindi",
   "compareTickerHint": "Màndargay aksiyoŋ, misaal MSFT",
   "compareHint": "Limi yu am solo yi ñu teg leen ci wetu; li gën ci rëdd gu nekk dañu ko feeñal. Xaalis yi ci xeetu xaalisu aksiyoŋ bu nekk lañu.",
-  "compareNoAnalysis": "Amagul saytu"
+  "compareNoAnalysis": "Amagul saytu",
+  "portfolioDividends": "Dividand bu at",
+  "portfolioDividendYield": "Njureef {percent}",
+  "portfolioDividendNote": "Dividand bi ñu séentu at mu nekk dafa sukkandiku ci dividand yi ñu fey ci 12 weer yi weesu; feyu ëllëg yi wóoruñu.",
+  "positionDividend": "Dividand: {amount} at mu nekk"
 }
