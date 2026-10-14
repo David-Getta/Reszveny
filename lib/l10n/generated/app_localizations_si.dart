@@ -1543,4 +1543,24 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'පෙර සාරාංශය';
+
+  @override
+  String get telemetryTitle => 'WhatStock වැඩිදියුණු කිරීමට උදව් කරන්න';
+
+  @override
+  String get telemetryBody =>
+      'නිර්නාමික භාවිත සංඛ්‍යාලේඛන සහ බිඳවැටීම් වාර්තා බෙදා ගන්න: භාවිත කරන විශේෂාංග මොනවාද සහ වැරදුණේ කුමක්ද. ඔබේ කොටස්, විශ්ලේෂණ හෝ පුද්ගලික දත්ත කිසි විටෙකත් නැත. ඔබට මෙය ඕනෑම වේලාවක සැකසීම්හි වෙනස් කළ හැක.';
+
+  @override
+  String get telemetryAllow => 'ඉඩ දෙන්න';
+
+  @override
+  String get telemetryDecline => 'එපා, ස්තූතියි';
+
+  @override
+  String get telemetrySetting => 'නිර්නාමික සංඛ්‍යාලේඛන සහ බිඳවැටීම් වාර්තා';
+
+  @override
+  String get telemetrySettingHint =>
+      'විශේෂාංග කොපමණ වාරයක් භාවිත වේද සහ දෝෂ වාර්තා, පුද්ගලික දත්ත හෝ ඔබේ සෙවීම් සහ විශ්ලේෂණවල අන්තර්ගතය නොමැතිව.';
 }

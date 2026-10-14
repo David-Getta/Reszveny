@@ -1539,4 +1539,24 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'पछिला सारांश';
+
+  @override
+  String get telemetryTitle => 'WhatStock केँ बेहतर बनाबय मे मदति करू';
+
+  @override
+  String get telemetryBody =>
+      'गुमनाम उपयोग आँकड़ा आ क्रैश रिपोर्ट साझा करू: कोन सुविधा सभक उपयोग होइत अछि आ की गड़बड़ भेल। अहाँक शेयर, विश्लेषण वा व्यक्तिगत डेटा कहियो नहि। अहाँ एकरा कखनो सेटिंग्स मे बदलि सकैत छी।';
+
+  @override
+  String get telemetryAllow => 'अनुमति दिअ';
+
+  @override
+  String get telemetryDecline => 'नहि, धन्यवाद';
+
+  @override
+  String get telemetrySetting => 'गुमनाम आँकड़ा आ क्रैश रिपोर्ट';
+
+  @override
+  String get telemetrySettingHint =>
+      'सुविधा सभक उपयोग कतेक बेर होइत अछि आ त्रुटि रिपोर्ट, व्यक्तिगत डेटा वा अहाँक खोज आ विश्लेषणक सामग्रीक बिना।';
 }

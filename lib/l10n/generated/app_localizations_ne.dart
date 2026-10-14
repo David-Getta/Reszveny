@@ -1545,4 +1545,24 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'अघिल्लो सारांश';
+
+  @override
+  String get telemetryTitle => 'WhatStock सुधार गर्न मद्दत गर्नुहोस्';
+
+  @override
+  String get telemetryBody =>
+      'बेनामी प्रयोग तथ्याङ्क र क्र्यास रिपोर्टहरू साझा गर्नुहोस्: कुन सुविधाहरू प्रयोग भइरहेका छन् र के गडबड भयो। तपाईंका सेयर, विश्लेषण वा व्यक्तिगत डेटा कहिल्यै होइन। तपाईं यसलाई जुनसुकै बेला सेटिङहरूमा परिवर्तन गर्न सक्नुहुन्छ।';
+
+  @override
+  String get telemetryAllow => 'अनुमति दिनुहोस्';
+
+  @override
+  String get telemetryDecline => 'पर्दैन, धन्यवाद';
+
+  @override
+  String get telemetrySetting => 'बेनामी तथ्याङ्क र क्र्यास रिपोर्टहरू';
+
+  @override
+  String get telemetrySettingHint =>
+      'सुविधाहरू कति पटक प्रयोग हुन्छन् र त्रुटि रिपोर्टहरू, व्यक्तिगत डेटा वा तपाईंका खोज र विश्लेषणको सामग्रीबिना।';
 }

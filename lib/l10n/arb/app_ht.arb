@@ -421,5 +421,11 @@
   "changesTitle": "Depi analiz anvan an ({date})",
   "changesPrice": "Pri",
   "changesNoMajor": "Pèspektiv yo pa chanje anpil.",
-  "changesPreviousSummary": "Rezime anvan an"
+  "changesPreviousSummary": "Rezime anvan an",
+  "telemetryTitle": "Ede amelyore WhatStock",
+  "telemetryBody": "Pataje estatistik itilizasyon anonim ak rapò sou pann: ki fonksyon yo itilize ak sa ki pa t mache. Pa janm aksyon ou yo, analiz ou yo oswa done pèsonèl ou. Ou ka chanje sa nenpòt ki lè nan Paramèt.",
+  "telemetryAllow": "Pèmèt",
+  "telemetryDecline": "Non, mèsi",
+  "telemetrySetting": "Estatistik anonim ak rapò sou pann",
+  "telemetrySettingHint": "Konbyen fwa yo itilize fonksyon yo ak rapò erè, san done pèsonèl ni kontni rechèch ak analiz ou yo."
 }

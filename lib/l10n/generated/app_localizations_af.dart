@@ -1547,4 +1547,24 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Vorige opsomming';
+
+  @override
+  String get telemetryTitle => 'Help om WhatStock te verbeter';
+
+  @override
+  String get telemetryBody =>
+      'Deel anonieme gebruikstatistieke en omvalverslae: watter funksies gebruik word en wat verkeerd geloop het. Nooit jou aandele, ontledings of persoonlike data nie. Jy kan dit enige tyd in Instellings verander.';
+
+  @override
+  String get telemetryAllow => 'Laat toe';
+
+  @override
+  String get telemetryDecline => 'Nee dankie';
+
+  @override
+  String get telemetrySetting => 'Anonieme statistieke en omvalverslae';
+
+  @override
+  String get telemetrySettingHint =>
+      'Hoe gereeld funksies gebruik word en foutverslae, sonder persoonlike data of die inhoud van jou soektogte en ontledings.';
 }

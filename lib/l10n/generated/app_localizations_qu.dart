@@ -1553,4 +1553,25 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Ñawpaq pisichasqa';
+
+  @override
+  String get telemetryTitle => 'WhatStock allinchanapaq yanapay';
+
+  @override
+  String get telemetryBody =>
+      'Mana sutiyuq llamk\'achiy yupaykunata, urmaykuna willakuykunatapas rakinakuy: mayqin ruraykunata llamk\'achinku, ima pantasqatapas. Manapuni acciónniykikunata, t\'aqwiyniykikunata, sapaq willakuyniykikunatapas. Kayta Allichaykunapi ima pachapas tikrayta atinki.';
+
+  @override
+  String get telemetryAllow => 'Saqiy';
+
+  @override
+  String get telemetryDecline => 'Manam, sulpayki';
+
+  @override
+  String get telemetrySetting =>
+      'Mana sutiyuq yupaykuna, urmaykuna willakuykunapas';
+
+  @override
+  String get telemetrySettingHint =>
+      'Hayk\'a kutitataq ruraykunata llamk\'achinku, pantaykuna willakuykunapas, mana sapaq willakuykunawan, mana maskasqaykikunap t\'aqwiyniykikunap ukhunwanpas.';
 }

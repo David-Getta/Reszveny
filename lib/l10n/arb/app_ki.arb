@@ -421,5 +421,11 @@
   "changesTitle": "Kuuma ũthuthuria wa mbere ({date})",
   "changesPrice": "Thogora",
   "changesNoMajor": "Maũndũ marĩa marorirwo matigarũrũkĩte mũno.",
-  "changesPreviousSummary": "Mũhĩnanĩrio wa mbere"
+  "changesPreviousSummary": "Mũhĩnanĩrio wa mbere",
+  "telemetryTitle": "Tũteithie gũthondeka WhatStock wega makĩria",
+  "telemetryBody": "Heana ũhoro wa ũhũthĩri ũtarĩ na rĩĩtwa na ripoti cia gũthũka: nĩ mawĩra marĩkũ mahũthagĩrwo na nĩ kĩĩ kĩathũkire. Gũtirĩ hĩndĩ tũtũmaga hisa ciaku, ũthuthuria waku kana ũhoro waku wa mwene. No ũgarũre ũndũ ũyũ hĩndĩ o yothe thĩinĩ wa Mĩtaratara.",
+  "telemetryAllow": "Ĩtĩkĩria",
+  "telemetryDecline": "Aca, nĩ wega",
+  "telemetrySetting": "Ũhoro ũtarĩ na rĩĩtwa na ripoti cia gũthũka",
+  "telemetrySettingHint": "Ũrĩa mawĩra mahũthagĩrwo kaingĩ na ripoti cia mahĩtia, hatarĩ ũhoro wa mwene kana ũrĩa ũrĩ thĩinĩ wa macaria na ũthuthuria waku."
 }

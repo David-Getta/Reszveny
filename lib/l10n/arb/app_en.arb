@@ -1085,5 +1085,11 @@
   },
   "changesPrice": "Price",
   "changesNoMajor": "The outlook has not changed materially.",
-  "changesPreviousSummary": "Previous summary"
+  "changesPreviousSummary": "Previous summary",
+  "telemetryTitle": "Help improve WhatStock",
+  "telemetryBody": "Share anonymous usage statistics and crash reports: which features are used and what went wrong. Never your stocks, analyses or personal data. You can change this at any time in Settings.",
+  "telemetryAllow": "Allow",
+  "telemetryDecline": "No thanks",
+  "telemetrySetting": "Anonymous statistics and crash reports",
+  "telemetrySettingHint": "How often features are used and error reports, without personal data or the content of your searches and analyses."
 }

@@ -421,5 +421,11 @@
   "changesTitle": "Siden forrige analyse ({date})",
   "changesPrice": "Kurs",
   "changesNoMajor": "Utsiktene har ikke endret seg vesentlig.",
-  "changesPreviousSummary": "Forrige sammendrag"
+  "changesPreviousSummary": "Forrige sammendrag",
+  "telemetryTitle": "Hjelp oss å forbedre WhatStock",
+  "telemetryBody": "Del anonym bruksstatistikk og krasjrapporter: hvilke funksjoner som brukes, og hva som gikk galt. Aldri aksjene dine, analysene dine eller personopplysninger. Du kan endre dette når som helst i Innstillinger.",
+  "telemetryAllow": "Tillat",
+  "telemetryDecline": "Nei takk",
+  "telemetrySetting": "Anonym statistikk og krasjrapporter",
+  "telemetrySettingHint": "Hvor ofte funksjoner brukes, og feilrapporter – uten personopplysninger eller innholdet i søkene og analysene dine."
 }

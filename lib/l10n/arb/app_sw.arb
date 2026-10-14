@@ -421,5 +421,11 @@
   "changesTitle": "Tangu uchambuzi uliopita ({date})",
   "changesPrice": "Bei",
   "changesNoMajor": "Mtazamo haujabadilika kwa kiasi kikubwa.",
-  "changesPreviousSummary": "Muhtasari uliopita"
+  "changesPreviousSummary": "Muhtasari uliopita",
+  "telemetryTitle": "Saidia kuboresha WhatStock",
+  "telemetryBody": "Shiriki takwimu za matumizi zisizo na majina na ripoti za kuacha kufanya kazi: vipengele vipi vinatumika na nini kilienda vibaya. Kamwe si hisa zako, uchambuzi wako wala data yako binafsi. Unaweza kubadilisha hili wakati wowote katika Mipangilio.",
+  "telemetryAllow": "Ruhusu",
+  "telemetryDecline": "Hapana, asante",
+  "telemetrySetting": "Takwimu zisizo na majina na ripoti za kuacha kufanya kazi",
+  "telemetrySettingHint": "Mara ngapi vipengele vinatumika na ripoti za hitilafu, bila data binafsi wala maudhui ya utafutaji na uchambuzi wako."
 }

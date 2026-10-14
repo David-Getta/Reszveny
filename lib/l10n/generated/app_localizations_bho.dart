@@ -1540,4 +1540,24 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'पिछला सारांश';
+
+  @override
+  String get telemetryTitle => 'WhatStock के बेहतर बनावे में मदद करीं';
+
+  @override
+  String get telemetryBody =>
+      'गुमनाम इस्तेमाल के आँकड़ा आ क्रैश रिपोर्ट साझा करीं: कवन फीचर इस्तेमाल होला आ का गड़बड़ भइल। राउर शेयर, विश्लेषण भा निजी जानकारी कबो ना भेजल जाला। रउआ एकरा के कबो भी सेटिंग्स में बदल सकीले।';
+
+  @override
+  String get telemetryAllow => 'अनुमति दीं';
+
+  @override
+  String get telemetryDecline => 'ना, धन्यवाद';
+
+  @override
+  String get telemetrySetting => 'गुमनाम आँकड़ा आ क्रैश रिपोर्ट';
+
+  @override
+  String get telemetrySettingHint =>
+      'फीचर केतना बेर इस्तेमाल होला आ गड़बड़ी के रिपोर्ट, निजी जानकारी भा राउर खोज आ विश्लेषण के सामग्री के बिना।';
 }

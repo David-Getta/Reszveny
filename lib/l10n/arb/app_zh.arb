@@ -421,5 +421,11 @@
   "changesTitle": "自上次分析以来（{date}）",
   "changesPrice": "股价",
   "changesNoMajor": "前景没有实质性变化。",
-  "changesPreviousSummary": "上次分析摘要"
+  "changesPreviousSummary": "上次分析摘要",
+  "telemetryTitle": "帮助改进 WhatStock",
+  "telemetryBody": "分享匿名使用统计信息和崩溃报告：使用了哪些功能以及出现了什么问题。绝不包含你的股票、分析或个人数据。你可以随时在设置中更改此选项。",
+  "telemetryAllow": "允许",
+  "telemetryDecline": "不用了，谢谢",
+  "telemetrySetting": "匿名统计信息和崩溃报告",
+  "telemetrySettingHint": "功能使用频率和错误报告，不包含个人数据，也不包含你的搜索和分析内容。"
 }

@@ -1547,4 +1547,24 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ئالدىنقى خۇلاسە';
+
+  @override
+  String get telemetryTitle => 'WhatStock نى ياخشىلاشقا ياردەم بېرىڭ';
+
+  @override
+  String get telemetryBody =>
+      'نامسىز ئىشلىتىش ستاتىستىكىسى ۋە يىمىرىلىش دوكلاتىنى ھەمبەھىرلەڭ: قايسى ئىقتىدارلار ئىشلىتىلىدۇ ۋە نېمە خاتا بولدى. پاي چېكىڭىز، تەھلىلىڭىز ياكى شەخسىي ئۇچۇرىڭىز ھەرگىز ھەمبەھىرلەنمەيدۇ. بۇنى خالىغان ۋاقىتتا تەڭشەكتە ئۆزگەرتەلەيسىز.';
+
+  @override
+  String get telemetryAllow => 'رۇخسەت';
+
+  @override
+  String get telemetryDecline => 'ياق، رەھمەت';
+
+  @override
+  String get telemetrySetting => 'نامسىز ستاتىستىكا ۋە يىمىرىلىش دوكلاتى';
+
+  @override
+  String get telemetrySettingHint =>
+      'ئىقتىدارلارنىڭ ئىشلىتىلىش چاستوتىسى ۋە خاتالىق دوكلاتى، شەخسىي ئۇچۇر ياكى ئىزدەش ۋە تەھلىلىڭىزنىڭ مەزمۇنى كىرمەيدۇ.';
 }

@@ -1554,4 +1554,25 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nauna nga sumaryo';
+
+  @override
+  String get telemetryTitle => 'Buligi kami nga mapauswag ang WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Ipaambit ang anonymous nga estadistika sang paggamit kag mga crash report: diin nga mga feature ang ginagamit kag ano ang nagsala. Indi gid ang imo mga stock, analisis ukon personal nga datos. Mahimo mo ini baylohan bisan san-o sa Mga setting.';
+
+  @override
+  String get telemetryAllow => 'Tuguti';
+
+  @override
+  String get telemetryDecline => 'Indi, salamat';
+
+  @override
+  String get telemetrySetting =>
+      'Anonymous nga estadistika kag mga crash report';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kon daw ano kasubsob ginagamit ang mga feature kag mga report sang sayop, wala sang personal nga datos ukon sulod sang imo mga pagpangita kag analisis.';
 }

@@ -421,5 +421,11 @@
   "changesTitle": "ካለፈው ትንተና ወዲህ ({date})",
   "changesPrice": "ዋጋ",
   "changesNoMajor": "ትንበያው በጉልህ አልተለወጠም።",
-  "changesPreviousSummary": "የቀድሞው ማጠቃለያ"
+  "changesPreviousSummary": "የቀድሞው ማጠቃለያ",
+  "telemetryTitle": "WhatStockን ለማሻሻል ያግዙ",
+  "telemetryBody": "ስም-አልባ የአጠቃቀም ስታቲስቲክስ እና የብልሽት ሪፖርቶችን ያጋሩ፦ የትኞቹ ባህሪያት ጥቅም ላይ እንደሚውሉ እና ምን እንደተበላሸ። አክሲዮኖችዎ፣ ትንተናዎችዎ ወይም የግል ውሂብዎ በፍጹም አይጋሩም። ይህን በማንኛውም ጊዜ በቅንብሮች ውስጥ መቀየር ይችላሉ።",
+  "telemetryAllow": "ፍቀድ",
+  "telemetryDecline": "አይ፣ አመሰግናለሁ",
+  "telemetrySetting": "ስም-አልባ ስታቲስቲክስ እና የብልሽት ሪፖርቶች",
+  "telemetrySettingHint": "ባህሪያት ምን ያህል ጊዜ ጥቅም ላይ እንደሚውሉ እና የስህተት ሪፖርቶች፣ ያለ የግል ውሂብ ወይም የፍለጋዎችዎ እና የትንተናዎችዎ ይዘት።"
 }

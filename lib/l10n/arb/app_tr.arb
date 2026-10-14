@@ -421,5 +421,11 @@
   "changesTitle": "Önceki analizden bu yana ({date})",
   "changesPrice": "Fiyat",
   "changesNoMajor": "Görünüm önemli ölçüde değişmedi.",
-  "changesPreviousSummary": "Önceki özet"
+  "changesPreviousSummary": "Önceki özet",
+  "telemetryTitle": "WhatStock'u geliştirmemize yardım et",
+  "telemetryBody": "Anonim kullanım istatistiklerini ve kilitlenme raporlarını paylaş: hangi özelliklerin kullanıldığı ve neyin ters gittiği. Hisselerin, analizlerin veya kişisel verilerin asla paylaşılmaz. Bunu istediğin zaman Ayarlar'dan değiştirebilirsin.",
+  "telemetryAllow": "İzin ver",
+  "telemetryDecline": "Hayır, teşekkürler",
+  "telemetrySetting": "Anonim istatistikler ve kilitlenme raporları",
+  "telemetrySettingHint": "Özelliklerin ne sıklıkla kullanıldığı ve hata raporları; kişisel veriler ya da aramalarının ve analizlerinin içeriği olmadan."
 }

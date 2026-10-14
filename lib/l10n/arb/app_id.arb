@@ -421,5 +421,11 @@
   "changesTitle": "Sejak analisis sebelumnya ({date})",
   "changesPrice": "Harga",
   "changesNoMajor": "Prospek tidak berubah secara signifikan.",
-  "changesPreviousSummary": "Ringkasan sebelumnya"
+  "changesPreviousSummary": "Ringkasan sebelumnya",
+  "telemetryTitle": "Bantu tingkatkan WhatStock",
+  "telemetryBody": "Bagikan statistik penggunaan anonim dan laporan kerusakan: fitur mana yang digunakan dan apa yang salah. Tidak pernah saham, analisis, atau data pribadi Anda. Anda dapat mengubahnya kapan saja di Pengaturan.",
+  "telemetryAllow": "Izinkan",
+  "telemetryDecline": "Tidak, terima kasih",
+  "telemetrySetting": "Statistik anonim dan laporan kerusakan",
+  "telemetrySettingHint": "Seberapa sering fitur digunakan dan laporan kesalahan, tanpa data pribadi atau isi pencarian dan analisis Anda."
 }

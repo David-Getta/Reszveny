@@ -421,5 +421,11 @@
   "changesTitle": "מאז הניתוח הקודם ({date})",
   "changesPrice": "מחיר",
   "changesNoMajor": "התחזית לא השתנתה באופן מהותי.",
-  "changesPreviousSummary": "סיכום קודם"
+  "changesPreviousSummary": "סיכום קודם",
+  "telemetryTitle": "עזרו לשפר את WhatStock",
+  "telemetryBody": "שיתוף נתונים סטטיסטיים אנונימיים על השימוש ודוחות קריסה: באילו תכונות נעשה שימוש ומה השתבש. לעולם לא המניות, הניתוחים או המידע האישי שלך. אפשר לשנות זאת בכל עת בהגדרות.",
+  "telemetryAllow": "אישור",
+  "telemetryDecline": "לא, תודה",
+  "telemetrySetting": "נתונים סטטיסטיים אנונימיים ודוחות קריסה",
+  "telemetrySettingHint": "תדירות השימוש בתכונות ודוחות שגיאות, ללא מידע אישי או תוכן החיפושים והניתוחים שלך."
 }

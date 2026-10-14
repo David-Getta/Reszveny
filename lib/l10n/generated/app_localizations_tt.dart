@@ -1540,4 +1540,24 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Алдагы йомгак';
+
+  @override
+  String get telemetryTitle => 'WhatStock\'ны яхшыртырга булышыгыз';
+
+  @override
+  String get telemetryBody =>
+      'Анонимлы куллану статистикасы һәм ватылу хисаплары белән уртаклашыгыз: нинди функцияләр кулланыла һәм нәрсә дөрес эшләмәде. Акцияләрегез, анализларыгыз яки шәхси мәгълүматларыгыз беркайчан да җибәрелми. Моны теләсә кайчан Көйләүләрдә үзгәртә аласыз.';
+
+  @override
+  String get telemetryAllow => 'Рөхсәт итү';
+
+  @override
+  String get telemetryDecline => 'Юк, рәхмәт';
+
+  @override
+  String get telemetrySetting => 'Анонимлы статистика һәм ватылу хисаплары';
+
+  @override
+  String get telemetrySettingHint =>
+      'Функцияләрнең никадәр еш кулланылуы һәм хата хисаплары, шәхси мәгълүматларсыз һәм эзләүләрегез белән анализларыгыз эчтәлегеннән башка.';
 }

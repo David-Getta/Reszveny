@@ -421,5 +421,11 @@
   "changesTitle": "Od poprzedniej analizy ({date})",
   "changesPrice": "Kurs",
   "changesNoMajor": "Perspektywy nie zmieniły się istotnie.",
-  "changesPreviousSummary": "Poprzednie podsumowanie"
+  "changesPreviousSummary": "Poprzednie podsumowanie",
+  "telemetryTitle": "Pomóż ulepszyć WhatStock",
+  "telemetryBody": "Udostępniaj anonimowe statystyki użytkowania i raporty o awariach: z których funkcji się korzysta i co poszło nie tak. Nigdy Twoich akcji, analiz ani danych osobowych. Możesz to zmienić w dowolnym momencie w Ustawieniach.",
+  "telemetryAllow": "Zezwól",
+  "telemetryDecline": "Nie, dziękuję",
+  "telemetrySetting": "Anonimowe statystyki i raporty o awariach",
+  "telemetrySettingHint": "Jak często używane są funkcje oraz raporty o błędach – bez danych osobowych ani treści Twoich wyszukiwań i analiz."
 }

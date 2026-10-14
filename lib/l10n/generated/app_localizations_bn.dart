@@ -1545,4 +1545,24 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'আগের সারাংশ';
+
+  @override
+  String get telemetryTitle => 'WhatStock আরও ভালো করতে সাহায্য করুন';
+
+  @override
+  String get telemetryBody =>
+      'বেনামী ব্যবহারের পরিসংখ্যান ও ক্র্যাশ রিপোর্ট শেয়ার করুন: কোন ফিচার ব্যবহার হয় এবং কী ভুল হয়েছে। আপনার স্টক, বিশ্লেষণ বা ব্যক্তিগত ডেটা কখনোই শেয়ার করা হয় না। আপনি যেকোনো সময় সেটিংসে এটি পরিবর্তন করতে পারেন।';
+
+  @override
+  String get telemetryAllow => 'অনুমতি দিন';
+
+  @override
+  String get telemetryDecline => 'না, ধন্যবাদ';
+
+  @override
+  String get telemetrySetting => 'বেনামী পরিসংখ্যান ও ক্র্যাশ রিপোর্ট';
+
+  @override
+  String get telemetrySettingHint =>
+      'ফিচারগুলো কত ঘন ঘন ব্যবহার হয় এবং ত্রুটির রিপোর্ট, ব্যক্তিগত ডেটা বা আপনার অনুসন্ধান ও বিশ্লেষণের বিষয়বস্তু ছাড়া।';
 }

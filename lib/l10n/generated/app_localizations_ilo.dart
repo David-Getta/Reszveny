@@ -1557,4 +1557,25 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Immuna a pakabuklan';
+
+  @override
+  String get telemetryTitle => 'Tulongannakami a pasayaaten ti WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Ibinglay ti anonimo nga estadistika ti panagusar ken dagiti crash report: no ania dagiti feature ti us-usaren ken no ania ti nagbiddut. Saan a pulos dagiti stock, analisis wenno personal a datosmo. Mabalinmo a baliwan daytoy iti aniaman nga oras iti Dagiti Setting.';
+
+  @override
+  String get telemetryAllow => 'Ipalubos';
+
+  @override
+  String get telemetryDecline => 'Saan, agyamanak';
+
+  @override
+  String get telemetrySetting =>
+      'Anonimo nga estadistika ken dagiti crash report';
+
+  @override
+  String get telemetrySettingHint =>
+      'No kasano ti kasansan a pannakausar dagiti feature ken dagiti report ti biddut, awan ti personal a datos wenno linaon dagiti panagsapul ken analisismo.';
 }

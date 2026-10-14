@@ -1540,4 +1540,24 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Gàttal bi jiitu';
+
+  @override
+  String get telemetryTitle => 'Dimbali nu gën a rafetal WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Séddoo limat yu amul tur ci jëfandikoo gi ak yéglekaay yu njuumte: ban mbir lañu jëfandikoo ak lan moo yàqu. Sa aksiyoŋ yi, sa saytu yi walla sa xibaar yu sutura duñu leen mukk yónne. Mën nga soppi lii saa su la neexee ci Tànneef.';
+
+  @override
+  String get telemetryAllow => 'Nangu';
+
+  @override
+  String get telemetryDecline => 'Déedéet, jërëjëf';
+
+  @override
+  String get telemetrySetting => 'Limat yu amul tur ak yéglekaay yu njuumte';
+
+  @override
+  String get telemetrySettingHint =>
+      'Naka lañuy faral di jëfandikoo mbir yi ak yéglekaay yu njuumte, te amul sa xibaar yu sutura walla li nekk ci sa seet ak sa saytu.';
 }

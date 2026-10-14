@@ -421,5 +421,11 @@
   "changesTitle": "Kuva ku isesangura ryabanje ({date})",
   "changesPrice": "Igiciro",
   "changesNoMajor": "Ivyitezwe ntivyahindutse cane.",
-  "changesPreviousSummary": "Incamake ya mbere"
+  "changesPreviousSummary": "Incamake ya mbere",
+  "telemetryTitle": "Fasha gutunganya neza WhatStock",
+  "telemetryBody": "Sangiza ibiharuro vy'ikoreshwa n'amakuru y'ivyononekaye atagaragaza uwo uri we: ibikorwa bikoreshwa n'ibitagenze neza. Nta na rimwe dusangiza imigabane yawe, isesangura ryawe canke amakuru yawe bwite. Ushobora guhindura ibi igihe cose muri Ivyo gutunganya.",
+  "telemetryAllow": "Emera",
+  "telemetryDecline": "Oya, urakoze",
+  "telemetrySetting": "Ibiharuro bitagaragaza izina n'amakuru y'ivyononekaye",
+  "telemetrySettingHint": "Incuro ibikorwa bikoreshwa n'amakuru y'amakosa, atarimwo amakuru bwite canke ibiri mu marondero n'isesangura vyawe."
 }

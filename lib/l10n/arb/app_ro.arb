@@ -421,5 +421,11 @@
   "changesTitle": "De la analiza anterioară ({date})",
   "changesPrice": "Preț",
   "changesNoMajor": "Perspectivele nu s-au schimbat semnificativ.",
-  "changesPreviousSummary": "Rezumatul anterior"
+  "changesPreviousSummary": "Rezumatul anterior",
+  "telemetryTitle": "Ajută la îmbunătățirea WhatStock",
+  "telemetryBody": "Trimite statistici anonime de utilizare și rapoarte de blocare: ce funcții sunt folosite și ce nu a funcționat. Niciodată acțiunile, analizele sau datele tale personale. Poți modifica oricând această opțiune din Setări.",
+  "telemetryAllow": "Permite",
+  "telemetryDecline": "Nu, mulțumesc",
+  "telemetrySetting": "Statistici anonime și rapoarte de blocare",
+  "telemetrySettingHint": "Cât de des sunt folosite funcțiile și rapoarte de erori, fără date personale sau conținutul căutărilor și analizelor tale."
 }

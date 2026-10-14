@@ -421,5 +421,11 @@
   "changesTitle": "Kemgbe nyocha gara aga ({date})",
   "changesPrice": "Ọnụahịa",
   "changesNoMajor": "Atụmanya agbanwebeghị nke ukwuu.",
-  "changesPreviousSummary": "Nchịkọta gara aga"
+  "changesPreviousSummary": "Nchịkọta gara aga",
+  "telemetryTitle": "Nyere aka ime ka WhatStock ka mma",
+  "telemetryBody": "Kesaa ọnụ ọgụgụ ojiji na-enweghị aha na akụkọ mkpọka: atụmatụ ndị a na-eji na ihe mebiri emebi. Ọ dịghị mgbe anyị na-eziga stọk gị, nyocha gị ma ọ bụ data nkeonwe gị. Ị nwere ike ịgbanwe nke a mgbe ọ bụla na Ntọala.",
+  "telemetryAllow": "Kwe",
+  "telemetryDecline": "Mba, daalụ",
+  "telemetrySetting": "Ọnụ ọgụgụ na-enweghị aha na akụkọ mkpọka",
+  "telemetrySettingHint": "Ugboro ole a na-eji atụmatụ na akụkọ njehie, na-enweghị data nkeonwe ma ọ bụ ọdịnaya nke ọchụchọ na nyocha gị."
 }

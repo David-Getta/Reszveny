@@ -1547,4 +1547,25 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Sintesi precedente';
+
+  @override
+  String get telemetryTitle => 'Aiutaci a migliorare WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Condividi statistiche di utilizzo anonime e rapporti sugli arresti anomali: quali funzioni vengono usate e cosa è andato storto. Mai i tuoi titoli, le tue analisi o i tuoi dati personali. Puoi modificare questa scelta in qualsiasi momento nelle Impostazioni.';
+
+  @override
+  String get telemetryAllow => 'Consenti';
+
+  @override
+  String get telemetryDecline => 'No, grazie';
+
+  @override
+  String get telemetrySetting =>
+      'Statistiche anonime e rapporti sugli arresti anomali';
+
+  @override
+  String get telemetrySettingHint =>
+      'Frequenza di utilizzo delle funzioni e segnalazioni di errori, senza dati personali né il contenuto delle tue ricerche e analisi.';
 }

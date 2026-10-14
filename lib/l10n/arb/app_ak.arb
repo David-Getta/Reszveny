@@ -421,5 +421,11 @@
   "changesTitle": "Efi nhwehwɛmu a edi kan no ({date})",
   "changesPrice": "Bo",
   "changesNoMajor": "Daakye tebea no nsesaa kɛse biara.",
-  "changesPreviousSummary": "Nhwehwɛmu a edi kan no tiawa"
+  "changesPreviousSummary": "Nhwehwɛmu a edi kan no tiawa",
+  "telemetryTitle": "Boa ma WhatStock nyɛ yiye",
+  "telemetryBody": "Kyɛ akontaabu a ɛmfa wo din a ɛfa sɛnea wode app no di dwuma ne mfomso ho amanneɛbɔ: dwumadi a wode di dwuma ne nea ɛkɔɔ basaa. Yɛremfa wo nkyɛfa, wo nhwehwɛmu anaa wo ankasa wo ho nsɛm nkyɛ da. Wobɛtumi asesa yei bere biara wɔ Nhyehyɛe mu.",
+  "telemetryAllow": "Ma kwan",
+  "telemetryDecline": "Daabi, meda wo ase",
+  "telemetrySetting": "Akontaabu a ɛmfa wo din ne mfomso ho amanneɛbɔ",
+  "telemetrySettingHint": "Mpɛn dodow a wode dwumadi ahorow di dwuma ne mfomso ho amanneɛbɔ, a wo ankasa wo ho nsɛm anaa nea wohwehwɛ ne wo nhwehwɛmu mu nsɛm nni mu."
 }

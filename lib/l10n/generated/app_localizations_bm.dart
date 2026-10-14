@@ -1542,4 +1542,24 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kɔrɔlen kuma surun';
+
+  @override
+  String get telemetryTitle => 'Dɛmɛ ka WhatStock ɲɛ';
+
+  @override
+  String get telemetryBody =>
+      'Baarakɛcogo jate tɔgɔbaliw ni tiɲɛni kibaruyaw ci: fɛɛrɛ minnu bɛ baara la ani min tiɲɛna. I ka aksiyɔnw, i ka sɛgɛsɛgɛliw walima i yɛrɛ ka kunnafoniw tɛ ci abada. I bɛ se ka nin yɛlɛma waati o waati Labɛnw kɔnɔ.';
+
+  @override
+  String get telemetryAllow => 'Sɔn';
+
+  @override
+  String get telemetryDecline => 'Ayi, i ni ce';
+
+  @override
+  String get telemetrySetting => 'Jate tɔgɔbaliw ni tiɲɛni kibaruyaw';
+
+  @override
+  String get telemetrySettingHint =>
+      'Fɛɛrɛw bɛ baara la siɲɛ joli ani fili kibaruyaw, i yɛrɛ ka kunnafoniw tɛ, i ka ɲininiw ni i ka sɛgɛsɛgɛliw kɔnɔkow fana tɛ.';
 }

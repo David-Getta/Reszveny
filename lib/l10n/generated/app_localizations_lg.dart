@@ -1552,4 +1552,25 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Mu bufunze okw\'edda';
+
+  @override
+  String get telemetryTitle => 'Tuyambe okulongoosa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Gabana ebibalo by\'enkozesa ebitaliiko linnya n\'alipoota z\'okugwa kwa pulogulaamu: ebintu ebikozesebwa n\'ekyo ekyagenda obubi. Tetujja kuweereza migabo gyo, kwekenneenya kwo oba ebikukwatako ku bubwo. Osobola okukikyusa essaawa yonna mu Ensengeka.';
+
+  @override
+  String get telemetryAllow => 'Kkiriza';
+
+  @override
+  String get telemetryDecline => 'Nedda, weebale';
+
+  @override
+  String get telemetrySetting =>
+      'Ebibalo ebitaliiko linnya n\'alipoota z\'okugwa kwa pulogulaamu';
+
+  @override
+  String get telemetrySettingHint =>
+      'Emirundi ebintu gye bikozesebwa n\'alipoota z\'ensobi, awatali bikukwatako ku bubwo oba ebiri mu kunoonya kwo n\'okwekenneenya kwo.';
 }

@@ -1543,4 +1543,24 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Önceki özet';
+
+  @override
+  String get telemetryTitle => 'WhatStock\'u geliştirmemize yardım et';
+
+  @override
+  String get telemetryBody =>
+      'Anonim kullanım istatistiklerini ve kilitlenme raporlarını paylaş: hangi özelliklerin kullanıldığı ve neyin ters gittiği. Hisselerin, analizlerin veya kişisel verilerin asla paylaşılmaz. Bunu istediğin zaman Ayarlar\'dan değiştirebilirsin.';
+
+  @override
+  String get telemetryAllow => 'İzin ver';
+
+  @override
+  String get telemetryDecline => 'Hayır, teşekkürler';
+
+  @override
+  String get telemetrySetting => 'Anonim istatistikler ve kilitlenme raporları';
+
+  @override
+  String get telemetrySettingHint =>
+      'Özelliklerin ne sıklıkla kullanıldığı ve hata raporları; kişisel veriler ya da aramalarının ve analizlerinin içeriği olmadan.';
 }

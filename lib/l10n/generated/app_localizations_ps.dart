@@ -1538,4 +1538,24 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'پخوانی لنډیز';
+
+  @override
+  String get telemetryTitle => 'د WhatStock په ښه کولو کې مرسته وکړئ';
+
+  @override
+  String get telemetryBody =>
+      'بې نومه د کارونې شمېرنې او د کریش راپورونه شریک کړئ: کومې ځانګړتیاوې کارول کېږي او څه ستونزه پېښه شوه. ستاسو سټاکونه، تحلیلونه یا شخصي معلومات هېڅکله نه. تاسو کولی شئ دا هر وخت په تنظیماتو کې بدل کړئ.';
+
+  @override
+  String get telemetryAllow => 'اجازه ورکړئ';
+
+  @override
+  String get telemetryDecline => 'نه، مننه';
+
+  @override
+  String get telemetrySetting => 'بې نومه شمېرنې او د کریش راپورونه';
+
+  @override
+  String get telemetrySettingHint =>
+      'ځانګړتیاوې څو ځله کارول کېږي او د تېروتنو راپورونه، پرته له شخصي معلوماتو یا ستاسو د لټونونو او تحلیلونو له منځپانګې.';
 }

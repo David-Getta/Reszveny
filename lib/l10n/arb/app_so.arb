@@ -421,5 +421,11 @@
   "changesTitle": "Tan iyo falanqayntii hore ({date})",
   "changesPrice": "Qiimaha",
   "changesNoMajor": "Saadaashu si weyn uma isbeddelin.",
-  "changesPreviousSummary": "Soo koobiddii hore"
+  "changesPreviousSummary": "Soo koobiddii hore",
+  "telemetryTitle": "Naga caawi hagaajinta WhatStock",
+  "telemetryBody": "La wadaag tirakoob isticmaal oo aan magac lahayn iyo warbixinnada burburka: astaamaha la isticmaalo iyo waxa khaldamay. Marna lama wadaago saamiyadaada, falanqaynahaaga ama xogtaada shakhsiyeed. Waxaad tan beddeli kartaa wakhti kasta gudaha Dejinta.",
+  "telemetryAllow": "Oggolow",
+  "telemetryDecline": "Maya, mahadsanid",
+  "telemetrySetting": "Tirakoob aan magac lahayn iyo warbixinnada burburka",
+  "telemetrySettingHint": "Inta jeer ee astaamaha la isticmaalo iyo warbixinnada khaladaadka, iyadoo aan lahayn xog shakhsiyeed ama nuxurka raadintaada iyo falanqaynahaaga."
 }

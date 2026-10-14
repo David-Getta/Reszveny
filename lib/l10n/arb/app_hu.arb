@@ -421,5 +421,11 @@
   "changesTitle": "Az előző elemzés óta ({date})",
   "changesPrice": "Árfolyam",
   "changesNoMajor": "A kilátások érdemben nem változtak.",
-  "changesPreviousSummary": "Az előző elemzés lényege"
+  "changesPreviousSummary": "Az előző elemzés lényege",
+  "telemetryTitle": "Segíts jobbá tenni a WhatStockot",
+  "telemetryBody": "Névtelen használati statisztika és hibajelentés küldése: mely funkciókat használod, és mi romlott el. A részvényeidet, elemzéseidet és személyes adataidat soha nem küldjük. Bármikor módosíthatod a beállításokban.",
+  "telemetryAllow": "Engedélyezem",
+  "telemetryDecline": "Nem, köszönöm",
+  "telemetrySetting": "Névtelen statisztika és hibajelentés",
+  "telemetrySettingHint": "Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül."
 }

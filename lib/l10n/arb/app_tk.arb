@@ -421,5 +421,11 @@
   "changesTitle": "Öňki seljermeden bäri ({date})",
   "changesPrice": "Baha",
   "changesNoMajor": "Çaklamalar düýpli üýtgemedi.",
-  "changesPreviousSummary": "Öňki gysgaça mazmun"
+  "changesPreviousSummary": "Öňki gysgaça mazmun",
+  "telemetryTitle": "WhatStock-y gowulandyrmaga kömek ediň",
+  "telemetryBody": "Anonim ulanyş statistikasyny we näsazlyk hasabatlaryny paýlaşyň: haýsy funksiýalaryň ulanylýandygy we näme ýalňyş bolandygy. Paýnamalaryňyz, seljermeleriňiz ýa-da şahsy maglumatlaryňyz hiç haçan paýlaşylmaýar. Muny islän wagtyňyz Sazlamalarda üýtgedip bilersiňiz.",
+  "telemetryAllow": "Rugsat ber",
+  "telemetryDecline": "Ýok, sag boluň",
+  "telemetrySetting": "Anonim statistika we näsazlyk hasabatlary",
+  "telemetrySettingHint": "Funksiýalaryň näçe gezek ulanylýandygy we ýalňyşlyk hasabatlary, şahsy maglumatlarsyz we gözlegleriňiziň hem-de seljermeleriňiziň mazmunysyz."
 }

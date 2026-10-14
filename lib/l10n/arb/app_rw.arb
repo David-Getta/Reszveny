@@ -421,5 +421,11 @@
   "changesTitle": "Kuva ku isesengura ryabanje ({date})",
   "changesPrice": "Igiciro",
   "changesNoMajor": "Ibiteganijwe ntibyahindutse cyane.",
-  "changesPreviousSummary": "Incamake ibanza"
+  "changesPreviousSummary": "Incamake ibanza",
+  "telemetryTitle": "Fasha kunoza WhatStock",
+  "telemetryBody": "Sangiza imibare y'ikoreshwa na raporo z'ihagarara rya porogaramu bitagaragaza umwirondoro: ibikorwa bikoreshwa n'ibyagenze nabi. Nta na rimwe imigabane yawe, isesengura ryawe cyangwa amakuru yawe bwite. Ushobora guhindura ibi igihe icyo ari cyo cyose mu Igenamiterere.",
+  "telemetryAllow": "Emera",
+  "telemetryDecline": "Oya, urakoze",
+  "telemetrySetting": "Imibare itagaragaza umwirondoro na raporo z'ihagarara",
+  "telemetrySettingHint": "Inshuro ibikorwa bikoreshwa na raporo z'amakosa, nta makuru bwite cyangwa ibikubiye mu byo washakishije n'amasesengura yawe."
 }

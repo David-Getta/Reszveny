@@ -1548,4 +1548,25 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nsukudulu ya ntete';
+
+  @override
+  String get telemetryTitle => 'Sadisa beto na kutomisa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Kabula statistiques ya kusadila kukonda zina mpi ba rapports ya ba plantages: inki bisalu bantu ke sadila mpi inki mambu ke salamaka mbote ve. Ata fioti ve ba actions na nge, ba analyse na nge to nsangu na nge ya kibeni. Nge lenda soba yo na ntangu yonso na Paramètres.';
+
+  @override
+  String get telemetryAllow => 'Pesa nzila';
+
+  @override
+  String get telemetryDecline => 'Ve, matondo';
+
+  @override
+  String get telemetrySetting =>
+      'Statistiques kukonda zina mpi ba rapports ya ba plantages';
+
+  @override
+  String get telemetrySettingHint =>
+      'Mbala ikwa bantu ke sadila bisalu mpi ba rapports ya ba erreurs, kukonda nsangu ya kibeni to mambu ya bisosa mpi ba analyse na nge.';
 }

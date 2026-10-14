@@ -421,5 +421,11 @@
   "changesTitle": "Kopš iepriekšējās analīzes ({date})",
   "changesPrice": "Cena",
   "changesNoMajor": "Perspektīva būtiski nav mainījusies.",
-  "changesPreviousSummary": "Iepriekšējais kopsavilkums"
+  "changesPreviousSummary": "Iepriekšējais kopsavilkums",
+  "telemetryTitle": "Palīdziet uzlabot WhatStock",
+  "telemetryBody": "Kopīgojiet anonīmu lietošanas statistiku un avāriju ziņojumus: kuras funkcijas tiek izmantotas un kas nogāja greizi. Jūsu akcijas, analīzes vai personas dati netiek kopīgoti nekad. To jebkurā laikā varat mainīt Iestatījumos.",
+  "telemetryAllow": "Atļaut",
+  "telemetryDecline": "Nē, paldies",
+  "telemetrySetting": "Anonīma statistika un avāriju ziņojumi",
+  "telemetrySettingHint": "Cik bieži tiek izmantotas funkcijas, un kļūdu ziņojumi — bez personas datiem vai jūsu meklējumu un analīžu satura."
 }

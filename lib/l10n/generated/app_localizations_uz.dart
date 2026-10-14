@@ -1546,4 +1546,24 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Oldingi xulosa';
+
+  @override
+  String get telemetryTitle => 'WhatStock ilovasini yaxshilashga yordam bering';
+
+  @override
+  String get telemetryBody =>
+      'Anonim foydalanish statistikasi va nosozlik hisobotlarini ulashing: qaysi funksiyalardan foydalanilayotgani va nima xato ketgani. Aksiyalaringiz, tahlillaringiz yoki shaxsiy maʼlumotlaringiz hech qachon yuborilmaydi. Buni istalgan vaqtda Sozlamalarda oʻzgartirishingiz mumkin.';
+
+  @override
+  String get telemetryAllow => 'Ruxsat berish';
+
+  @override
+  String get telemetryDecline => 'Yoʻq, rahmat';
+
+  @override
+  String get telemetrySetting => 'Anonim statistika va nosozlik hisobotlari';
+
+  @override
+  String get telemetrySettingHint =>
+      'Funksiyalardan qanchalik tez-tez foydalanilishi va xatolik hisobotlari – shaxsiy maʼlumotlarsiz, qidiruv va tahlillaringiz mazmunisiz.';
 }

@@ -1552,4 +1552,25 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kakaretso ya pele';
+
+  @override
+  String get telemetryTitle => 'Thusa ho ntlafatsa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Arolelana dipalopalo tsa tshebediso tse sa tsebahaleng le ditlaleho tsa ho wa: hore na ke dikarolo dife tse sebediswang le hore na ho sentsweng eng. Ha ho mohla re arolelanang disheare tsa hao, ditlhahlobo tsa hao kapa dintlha tsa hao tsa botho. O ka fetola sena neng kapa neng ho Ditlhophiso.';
+
+  @override
+  String get telemetryAllow => 'Dumella';
+
+  @override
+  String get telemetryDecline => 'Tjhe, ke a leboha';
+
+  @override
+  String get telemetrySetting =>
+      'Dipalopalo tse sa tsebahaleng le ditlaleho tsa ho wa';
+
+  @override
+  String get telemetrySettingHint =>
+      'Hore na dikarolo di sebediswa hangata hakae le ditlaleho tsa diphoso, ntle le dintlha tsa botho kapa dikahare tsa diphuputso le ditlhahlobo tsa hao.';
 }

@@ -1578,4 +1578,24 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'الملخص السابق';
+
+  @override
+  String get telemetryTitle => 'ساعدنا في تحسين WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'شارك إحصاءات استخدام مجهولة الهوية وتقارير الأعطال: الميزات المستخدمة وما الذي حدث من خطأ. لا تتم مشاركة أسهمك أو تحليلاتك أو بياناتك الشخصية أبدًا. يمكنك تغيير ذلك في أي وقت من الإعدادات.';
+
+  @override
+  String get telemetryAllow => 'السماح';
+
+  @override
+  String get telemetryDecline => 'لا، شكرًا';
+
+  @override
+  String get telemetrySetting => 'إحصاءات مجهولة الهوية وتقارير الأعطال';
+
+  @override
+  String get telemetrySettingHint =>
+      'مدى تكرار استخدام الميزات وتقارير الأخطاء، دون بيانات شخصية أو محتوى عمليات البحث والتحليلات الخاصة بك.';
 }

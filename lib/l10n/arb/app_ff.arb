@@ -421,5 +421,11 @@
   "changesTitle": "Gila ƴeewndo ndo adii ({date})",
   "changesPrice": "Coggu",
   "changesNoMajor": "Ko yiyaa yeeso waylaaki no feewi.",
-  "changesPreviousSummary": "Kuuɓal ndo adii"
+  "changesPreviousSummary": "Kuuɓal ndo adii",
+  "telemetryTitle": "Wallu ngam moƴƴinde WhatStock",
+  "telemetryBody": "Lollin limoore kuutorgol mo innde maa alaa e kabaruuji fuuntaaji: kuuɗe kanje huutoraa e ko bonni. Aksiyoŋ maa, ƴeewndooji maa walla humpito maa keeriiɗo neldetaake abadaa. Aɗa waawi waylude ɗum sahaa kala e Teelte.",
+  "telemetryAllow": "Yamir",
+  "telemetryDecline": "Alaa, a jaaraama",
+  "telemetrySetting": "Limoore mo innde alaa e kabaruuji fuuntaaji",
+  "telemetrySettingHint": "No kuuɗe huutortee ɗoon e ɗoon e kabaruuji juumre, tawa humpito keeriiɗo walla loowdi ɗaɓɓitaaɗe e ƴeewndooji maa alaa."
 }

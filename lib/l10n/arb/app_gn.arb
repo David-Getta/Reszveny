@@ -421,5 +421,11 @@
   "changesTitle": "Jehesaʼỹijo ymaguare guive ({date})",
   "changesPrice": "Tepy",
   "changesNoMajor": "Ojehecháva tenonderã ndoñemoambuéi tuichaháicha.",
-  "changesPreviousSummary": "Mombyky ymaguare"
+  "changesPreviousSummary": "Mombyky ymaguare",
+  "telemetryTitle": "Eipytyvõ WhatStock iporãve hag̃ua",
+  "telemetryBody": "Emoherakuã papapy jeporu rehegua ndojekuaáiva ha marandu jejavy rehegua: mbaʼe tembiapoukapýpa ojeporu ha mbaʼépa ndoikoporãi. Arakaʼeve ndojeguerahamoʼãi ne acciones, ne jehesaʼỹijo térã ne marandu ñemiguáva. Ikatu emoambue oimeraẽ árape Ñembohekópe.",
+  "telemetryAllow": "Emoneĩ",
+  "telemetryDecline": "Nahániri, aguyje",
+  "telemetrySetting": "Papapy ndojekuaáiva ha marandu jejavy rehegua",
+  "telemetrySettingHint": "Mbovy jey ojeporu tembiapoukapy ha marandu jejavy rehegua, ndoguerekói marandu ñemiguáva térã ne jeheka ha ne jehesaʼỹijo retepy."
 }

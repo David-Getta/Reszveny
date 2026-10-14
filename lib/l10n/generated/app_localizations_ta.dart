@@ -1551,4 +1551,25 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'முந்தைய சுருக்கம்';
+
+  @override
+  String get telemetryTitle => 'WhatStock-ஐ மேம்படுத்த உதவுங்கள்';
+
+  @override
+  String get telemetryBody =>
+      'அநாமதேயப் பயன்பாட்டுப் புள்ளிவிவரங்களையும் செயலிழப்பு அறிக்கைகளையும் பகிருங்கள்: எந்த அம்சங்கள் பயன்படுத்தப்படுகின்றன, என்ன தவறு நடந்தது. உங்கள் பங்குகள், பகுப்பாய்வுகள், தனிப்பட்ட தரவு ஆகியவை ஒருபோதும் பகிரப்படாது. இதை எப்போது வேண்டுமானாலும் அமைப்புகளில் மாற்றலாம்.';
+
+  @override
+  String get telemetryAllow => 'அனுமதி';
+
+  @override
+  String get telemetryDecline => 'வேண்டாம், நன்றி';
+
+  @override
+  String get telemetrySetting =>
+      'அநாமதேயப் புள்ளிவிவரங்களும் செயலிழப்பு அறிக்கைகளும்';
+
+  @override
+  String get telemetrySettingHint =>
+      'அம்சங்கள் எவ்வளவு அடிக்கடி பயன்படுத்தப்படுகின்றன என்பதும் பிழை அறிக்கைகளும் — தனிப்பட்ட தரவோ உங்கள் தேடல்கள், பகுப்பாய்வுகளின் உள்ளடக்கமோ இல்லாமல்.';
 }

@@ -184,7 +184,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5b | Valódi bolti vásárlás-ellenőrzés (App Store Server API, Google Play Developer API) – most fejlesztői módban minden vásárlást elfogad | ⬜ |
 | 5c | Próbaidő-visszaélés elleni védelem (e-mailes belépés vagy eszköz-ellenőrzés – döntés kell) | ⬜ |
 | 5d | Szerver élesítése: telepítési konfiguráció, HTTPS, mentés, figyelés, naplók automatikus törlése | 🟡 Railway-konfiguráció és útmutató kész (`docs/SZERVER.md`); a fiók és a kulcsok tulajdonosi teendő |
-| 5e | Hibakövetés és adatvédelem-barát analitika hozzájárulással (telepítés → próba → elemzés → előfizetés tölcsér) | ⬜ |
+| 5e | Hibakövetés és adatvédelem-barát analitika hozzájárulással (telepítés → próba → elemzés → előfizetés tölcsér) | ✅ kész: saját szerveren, külső szolgáltató nélkül; hozzájárulás a kezdőképernyőn (egyszer) és a beállításokban; napi összesített eseményszámok, össze nem köthető napi aktív felhasználók, kitakart hibajelentések; `/admin` statisztika-oldal `ADMIN_TOKEN`-nel (`docs/SZERVER.md`); az adatkezelési tájékoztató kiegészítése tulajdonosi teendő |
 | 5f | Elemzés megosztása: kép-kártya (fejléc, hangulat, forgatókönyvek, link) és nyilvános link előnézettel – a virális hurok alapja | 🟡 kép-kártya (4:5, 1080×1350) és szöveges megosztás kész; a nyilvános link előnézettel a weboldallal (5h) jön |
 | 5g | Ajánlói program: meghívó kód, mindkét fél +5 elemzést kap | ✅ kész: saját kód a beállításokban (másolás, megosztás, statisztika), barát kódjának beváltása; a meghívott azonnal, az ajánló a meghívott első elemzése után kapja meg, ajánlónként legfeljebb 10-szer (`REFERRAL_BONUS`, `REFERRAL_MAX`) |
 | 5h | Weboldal: letöltés, árak, minta-elemzések, népszerű részvények oldalai (SEO) | ⬜ |

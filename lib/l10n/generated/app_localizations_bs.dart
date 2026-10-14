@@ -1577,4 +1577,24 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Prethodni sažetak';
+
+  @override
+  String get telemetryTitle => 'Pomozite poboljšati WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Dijelite anonimnu statistiku korištenja i izvještaje o rušenju: koje se funkcije koriste i šta je pošlo po zlu. Vaše dionice, analize i lični podaci nikada se ne dijele. Ovo možete promijeniti bilo kada u Postavkama.';
+
+  @override
+  String get telemetryAllow => 'Dozvoli';
+
+  @override
+  String get telemetryDecline => 'Ne, hvala';
+
+  @override
+  String get telemetrySetting => 'Anonimna statistika i izvještaji o rušenju';
+
+  @override
+  String get telemetrySettingHint =>
+      'Koliko se često koriste funkcije i izvještaji o greškama, bez ličnih podataka ili sadržaja vaših pretraga i analiza.';
 }

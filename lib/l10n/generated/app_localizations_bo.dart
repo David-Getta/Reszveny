@@ -1536,4 +1536,24 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'སྙིང་བསྡུས་སྔ་མ';
+
+  @override
+  String get telemetryTitle => 'WhatStock ལེགས་བཅོས་གཏོང་བར་རོགས་རམ་གནང་།';
+
+  @override
+  String get telemetryBody =>
+      'མིང་མེད་ཀྱི་བེད་སྤྱོད་གྲངས་ཐོ་དང་ཆག་སྐྱོན་སྙན་ཞུ་མཉམ་སྤྱོད་གནང་། ནུས་པ་གང་དག་བེད་སྤྱོད་བྱས་པ་དང་ནོར་འཁྲུལ་ཅི་བྱུང་བ། ཁྱེད་ཀྱི་མ་འཇོག་དང་དབྱེ་ཞིབ། སྒེར་གྱི་གཞི་གྲངས་ནམ་ཡང་མཉམ་སྤྱོད་མི་བྱེད། ཁྱེད་ཀྱིས་དུས་ནམ་ཡིན་ཡང་སྒྲིག་འགོད་ནང་འདི་བསྒྱུར་ཆོག';
+
+  @override
+  String get telemetryAllow => 'ཆོག་མཆན་སྤྲོད';
+
+  @override
+  String get telemetryDecline => 'མི་དགོས། ཐུགས་རྗེ་ཆེ།';
+
+  @override
+  String get telemetrySetting => 'མིང་མེད་ཀྱི་གྲངས་ཐོ་དང་ཆག་སྐྱོན་སྙན་ཞུ';
+
+  @override
+  String get telemetrySettingHint =>
+      'ནུས་པ་ཇི་ཙམ་བེད་སྤྱོད་བྱས་པ་དང་ནོར་འཁྲུལ་སྙན་ཞུ། སྒེར་གྱི་གཞི་གྲངས་སམ་ཁྱེད་ཀྱི་འཚོལ་ཞིབ་དང་དབྱེ་ཞིབ་ཀྱི་ནང་དོན་མེད་པར།';
 }

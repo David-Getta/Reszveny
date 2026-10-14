@@ -1544,4 +1544,24 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Mũhĩnanĩrio wa mbere';
+
+  @override
+  String get telemetryTitle => 'Tũteithie gũthondeka WhatStock wega makĩria';
+
+  @override
+  String get telemetryBody =>
+      'Heana ũhoro wa ũhũthĩri ũtarĩ na rĩĩtwa na ripoti cia gũthũka: nĩ mawĩra marĩkũ mahũthagĩrwo na nĩ kĩĩ kĩathũkire. Gũtirĩ hĩndĩ tũtũmaga hisa ciaku, ũthuthuria waku kana ũhoro waku wa mwene. No ũgarũre ũndũ ũyũ hĩndĩ o yothe thĩinĩ wa Mĩtaratara.';
+
+  @override
+  String get telemetryAllow => 'Ĩtĩkĩria';
+
+  @override
+  String get telemetryDecline => 'Aca, nĩ wega';
+
+  @override
+  String get telemetrySetting => 'Ũhoro ũtarĩ na rĩĩtwa na ripoti cia gũthũka';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ũrĩa mawĩra mahũthagĩrwo kaingĩ na ripoti cia mahĩtia, hatarĩ ũhoro wa mwene kana ũrĩa ũrĩ thĩinĩ wa macaria na ũthuthuria waku.';
 }

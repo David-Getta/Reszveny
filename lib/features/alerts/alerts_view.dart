@@ -96,8 +96,14 @@ class _AlertDialogState extends State<_AlertDialog> {
     }
     setState(() => _error = error);
     if (error != null) return;
-    await AppServices.of(context).alerts
-        .add(symbol: widget.symbol, kind: _kind, value: v!, currency: _kind == AlertKind.move ? null : widget.currency);
+    final services = AppServices.of(context);
+    await services.alerts.add(
+      symbol: widget.symbol,
+      kind: _kind,
+      value: v!,
+      currency: _kind == AlertKind.move ? null : widget.currency,
+    );
+    services.telemetry.track('alert_created');
     if (mounted) Navigator.of(context).pop(true);
   }
 

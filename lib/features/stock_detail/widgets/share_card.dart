@@ -3,6 +3,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import '../../../app_services.dart';
 import '../../../core/models/stock_report.dart';
 import '../../../core/share/share_text.dart';
 import '../../../core/util/formatters.dart';
@@ -207,6 +208,7 @@ class _ShareSheetState extends State<_ShareSheet> {
 
   Future<void> _shareImage(BuildContext buttonContext) async {
     final origin = shareOriginOf(buttonContext);
+    AppServices.of(context).telemetry.track('share_image');
     setState(() => _busy = true);
     try {
       final box = _boundary.currentContext!.findRenderObject()! as RenderRepaintBoundary;
@@ -267,7 +269,10 @@ class _ShareSheetState extends State<_ShareSheet> {
                 Builder(
                   builder: (btn) => OutlinedButton.icon(
                     key: const ValueKey('share-text'),
-                    onPressed: () => shareText(widget.text, subject: _subject, origin: shareOriginOf(btn)),
+                    onPressed: () {
+                      AppServices.of(context).telemetry.track('share_text');
+                      shareText(widget.text, subject: _subject, origin: shareOriginOf(btn));
+                    },
                     icon: Icon(Icons.notes_rounded, size: 18, color: p.accent),
                     label: Text(l10n.shareAsText),
                   ),

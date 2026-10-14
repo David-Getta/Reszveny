@@ -1550,4 +1550,24 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Përmbledhja e mëparshme';
+
+  @override
+  String get telemetryTitle => 'Ndihmo në përmirësimin e WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Ndaj statistika anonime përdorimi dhe raporte ndërprerjesh: cilat veçori përdoren dhe çfarë shkoi keq. Asnjëherë aksionet, analizat apo të dhënat e tua personale. Mund ta ndryshosh këtë në çdo kohë te Cilësimet.';
+
+  @override
+  String get telemetryAllow => 'Lejo';
+
+  @override
+  String get telemetryDecline => 'Jo, faleminderit';
+
+  @override
+  String get telemetrySetting => 'Statistika anonime dhe raporte ndërprerjesh';
+
+  @override
+  String get telemetrySettingHint =>
+      'Sa shpesh përdoren veçoritë dhe raportet e gabimeve, pa të dhëna personale apo përmbajtjen e kërkimeve dhe analizave të tua.';
 }

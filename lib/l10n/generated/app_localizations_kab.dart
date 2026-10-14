@@ -1542,4 +1542,24 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Agzul yezrin';
+
+  @override
+  String get telemetryTitle => 'Ɛiwen-aɣ ad nesnerni WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Bḍu tidaddanin n useqdec war isem d yineqqisen n uɣelluy: anti timahilin yettwasqedcen d wayen ur neddi ara. Ur nettazen ara akk aqrab-ik, tiselḍin-ik neɣ isefka-k udmawanen. Tzemreḍ ad tbeddleḍ aya melmi i tebɣiḍ deg Iɣewwaṛen.';
+
+  @override
+  String get telemetryAllow => 'Sireg';
+
+  @override
+  String get telemetryDecline => 'Ala, tanemmirt';
+
+  @override
+  String get telemetrySetting => 'Tidaddanin war isem d yineqqisen n uɣelluy';
+
+  @override
+  String get telemetrySettingHint =>
+      'Acḥal n tikkal i ttwasqedcent tmahilin d yineqqisen n tuccḍiwin, war isefka udmawanen neɣ agbur n unadi d tesleḍt-ik.';
 }

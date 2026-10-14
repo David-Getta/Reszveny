@@ -1543,4 +1543,24 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Previous summary';
+
+  @override
+  String get telemetryTitle => 'Help improve WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Share anonymous usage statistics and crash reports: which features are used and what went wrong. Never your stocks, analyses or personal data. You can change this at any time in Settings.';
+
+  @override
+  String get telemetryAllow => 'Allow';
+
+  @override
+  String get telemetryDecline => 'No thanks';
+
+  @override
+  String get telemetrySetting => 'Anonymous statistics and crash reports';
+
+  @override
+  String get telemetrySettingHint =>
+      'How often features are used and error reports, without personal data or the content of your searches and analyses.';
 }

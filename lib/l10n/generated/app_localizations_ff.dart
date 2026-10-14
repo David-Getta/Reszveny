@@ -1540,4 +1540,24 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kuuɓal ndo adii';
+
+  @override
+  String get telemetryTitle => 'Wallu ngam moƴƴinde WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Lollin limoore kuutorgol mo innde maa alaa e kabaruuji fuuntaaji: kuuɗe kanje huutoraa e ko bonni. Aksiyoŋ maa, ƴeewndooji maa walla humpito maa keeriiɗo neldetaake abadaa. Aɗa waawi waylude ɗum sahaa kala e Teelte.';
+
+  @override
+  String get telemetryAllow => 'Yamir';
+
+  @override
+  String get telemetryDecline => 'Alaa, a jaaraama';
+
+  @override
+  String get telemetrySetting => 'Limoore mo innde alaa e kabaruuji fuuntaaji';
+
+  @override
+  String get telemetrySettingHint =>
+      'No kuuɗe huutortee ɗoon e ɗoon e kabaruuji juumre, tawa humpito keeriiɗo walla loowdi ɗaɓɓitaaɗe e ƴeewndooji maa alaa.';
 }

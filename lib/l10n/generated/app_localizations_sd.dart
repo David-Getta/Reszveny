@@ -1538,4 +1538,24 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'اڳوڻو خلاصو';
+
+  @override
+  String get telemetryTitle => 'WhatStock کي بهتر بڻائڻ ۾ مدد ڪريو';
+
+  @override
+  String get telemetryBody =>
+      'گمنام استعمال جا انگ اکر ۽ ڪريش رپورٽون شيئر ڪريو: ڪهڙيون خاصيتون استعمال ٿين ٿيون ۽ ڇا غلط ٿيو. توهان جا شيئر، تجزيا يا ذاتي ڊيٽا ڪڏهن به نه. توهان هي ڪنهن به وقت سيٽنگن ۾ تبديل ڪري سگهو ٿا.';
+
+  @override
+  String get telemetryAllow => 'اجازت ڏيو';
+
+  @override
+  String get telemetryDecline => 'نه، مهرباني';
+
+  @override
+  String get telemetrySetting => 'گمنام انگ اکر ۽ ڪريش رپورٽون';
+
+  @override
+  String get telemetrySettingHint =>
+      'خاصيتون ڪيترا ڀيرا استعمال ٿين ٿيون ۽ غلطي رپورٽون، ذاتي ڊيٽا يا توهان جي ڳولا ۽ تجزين جي مواد کان سواءِ.';
 }

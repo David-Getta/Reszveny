@@ -421,5 +421,11 @@
   "changesTitle": "Kubangila ku dikonkonona dia kumpala ({date})",
   "changesPrice": "Mushinga",
   "changesNoMajor": "Malu adi alua kaena ashintuluke bikole to.",
-  "changesPreviousSummary": "Tshikoso tshia kumpala"
+  "changesPreviousSummary": "Tshikoso tshia kumpala",
+  "telemetryTitle": "Tuambuluisha bua kulengeja WhatStock",
+  "telemetryBody": "Abanya statistiques ya mudimu kayi ne dîna ne ba-rapport ya dipanga dia programme: midimu kayi idibu benza nayi ne tshidi katshiyi bimpe. Kakuena musangu nansha umue utudi tutuma ba-action biebe, makonkonona ebe anyi malu ebe a pa buebe. Udi mua kushintulula bualu ebu dîba dionso mu Malongolola.",
+  "telemetryAllow": "Itaba",
+  "telemetryDecline": "Tòo, tuasakidila",
+  "telemetrySetting": "Statistiques kayi ne dîna ne ba-rapport ya dipanga",
+  "telemetrySettingHint": "Misangu idibu benza ne midimu ne ba-rapport ya bilema, kakuyi malu a pa buebe anyi malu adi mu makebulula ne makonkonona ebe."
 }

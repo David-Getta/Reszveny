@@ -421,5 +421,11 @@
   "changesTitle": "Nuo ankstesnės analizės ({date})",
   "changesPrice": "Kaina",
   "changesNoMajor": "Perspektyvos reikšmingai nepasikeitė.",
-  "changesPreviousSummary": "Ankstesnė santrauka"
+  "changesPreviousSummary": "Ankstesnė santrauka",
+  "telemetryTitle": "Padėkite tobulinti WhatStock",
+  "telemetryBody": "Bendrinkite anoniminę naudojimo statistiką ir strigčių ataskaitas: kurios funkcijos naudojamos ir kas nepavyko. Niekada – jūsų akcijų, analizių ar asmens duomenų. Tai bet kada galite pakeisti Nustatymuose.",
+  "telemetryAllow": "Leisti",
+  "telemetryDecline": "Ne, ačiū",
+  "telemetrySetting": "Anoniminė statistika ir strigčių ataskaitos",
+  "telemetrySettingHint": "Kaip dažnai naudojamos funkcijos ir klaidų ataskaitos, be asmens duomenų ar jūsų paieškų ir analizių turinio."
 }

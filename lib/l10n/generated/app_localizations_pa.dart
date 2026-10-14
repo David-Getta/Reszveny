@@ -1540,4 +1540,24 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ਪਿਛਲਾ ਸਾਰ';
+
+  @override
+  String get telemetryTitle => 'WhatStock ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ';
+
+  @override
+  String get telemetryBody =>
+      'ਗੁਮਨਾਮ ਵਰਤੋਂ ਅੰਕੜੇ ਅਤੇ ਕ੍ਰੈਸ਼ ਰਿਪੋਰਟਾਂ ਸਾਂਝੀਆਂ ਕਰੋ: ਕਿਹੜੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਕੀ ਗਲਤ ਹੋਇਆ। ਤੁਹਾਡੇ ਸ਼ੇਅਰ, ਵਿਸ਼ਲੇਸ਼ਣ ਜਾਂ ਨਿੱਜੀ ਡਾਟਾ ਕਦੇ ਨਹੀਂ। ਤੁਸੀਂ ਇਸਨੂੰ ਕਿਸੇ ਵੀ ਸਮੇਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get telemetryAllow => 'ਇਜਾਜ਼ਤ ਦਿਓ';
+
+  @override
+  String get telemetryDecline => 'ਨਹੀਂ, ਧੰਨਵਾਦ';
+
+  @override
+  String get telemetrySetting => 'ਗੁਮਨਾਮ ਅੰਕੜੇ ਅਤੇ ਕ੍ਰੈਸ਼ ਰਿਪੋਰਟਾਂ';
+
+  @override
+  String get telemetrySettingHint =>
+      'ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਕਿੰਨੀ ਵਾਰ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਗੜਬੜੀ ਰਿਪੋਰਟਾਂ, ਨਿੱਜੀ ਡਾਟਾ ਜਾਂ ਤੁਹਾਡੀਆਂ ਖੋਜਾਂ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣਾਂ ਦੀ ਸਮੱਗਰੀ ਤੋਂ ਬਿਨਾਂ।';
 }

@@ -1549,4 +1549,25 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Soo koobiddii hore';
+
+  @override
+  String get telemetryTitle => 'Naga caawi hagaajinta WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'La wadaag tirakoob isticmaal oo aan magac lahayn iyo warbixinnada burburka: astaamaha la isticmaalo iyo waxa khaldamay. Marna lama wadaago saamiyadaada, falanqaynahaaga ama xogtaada shakhsiyeed. Waxaad tan beddeli kartaa wakhti kasta gudaha Dejinta.';
+
+  @override
+  String get telemetryAllow => 'Oggolow';
+
+  @override
+  String get telemetryDecline => 'Maya, mahadsanid';
+
+  @override
+  String get telemetrySetting =>
+      'Tirakoob aan magac lahayn iyo warbixinnada burburka';
+
+  @override
+  String get telemetrySettingHint =>
+      'Inta jeer ee astaamaha la isticmaalo iyo warbixinnada khaladaadka, iyadoo aan lahayn xog shakhsiyeed ama nuxurka raadintaada iyo falanqaynahaaga.';
 }

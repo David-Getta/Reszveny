@@ -1544,4 +1544,24 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Əvvəlki xülasə';
+
+  @override
+  String get telemetryTitle => 'WhatStock-u təkmilləşdirməyə kömək edin';
+
+  @override
+  String get telemetryBody =>
+      'Anonim istifadə statistikası və çökmə hesabatlarını paylaşın: hansı funksiyaların istifadə olunduğu və nəyin səhv getdiyi. Səhmləriniz, təhlilləriniz və ya şəxsi məlumatlarınız heç vaxt paylaşılmır. Bunu istənilən vaxt Ayarlarda dəyişə bilərsiniz.';
+
+  @override
+  String get telemetryAllow => 'İcazə ver';
+
+  @override
+  String get telemetryDecline => 'Xeyr, təşəkkürlər';
+
+  @override
+  String get telemetrySetting => 'Anonim statistika və çökmə hesabatları';
+
+  @override
+  String get telemetrySettingHint =>
+      'Funksiyaların nə qədər tez-tez istifadə olunduğu və xəta hesabatları – şəxsi məlumatlar, axtarışlarınızın və təhlillərinizin məzmunu olmadan.';
 }

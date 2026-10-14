@@ -1546,4 +1546,25 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kpuie si do ŋgɔ';
+
+  @override
+  String get telemetryTitle => 'Kpe ɖe WhatStock ŋu be wòanyo wu';
+
+  @override
+  String get telemetryBody =>
+      'Ma zãzã ŋuti akɔntabubu siwo me ŋkɔ mele o kple gbegblẽ ŋuti nyatakakawo: dɔwɔnu siwo wozãna kple nu si gblẽ. Womaɖe wò akpawo, wò numekukuwo alo wò ŋutɔ ƒe nyatakakawo afia gbeɖe o. Àte ŋu atrɔ esia ɣesiaɣi le Ɖoɖowo me.';
+
+  @override
+  String get telemetryAllow => 'Ɖe mɔ';
+
+  @override
+  String get telemetryDecline => 'Ao, akpe';
+
+  @override
+  String get telemetrySetting =>
+      'Akɔntabubu siwo me ŋkɔ mele o kple gbegblẽ ŋuti nyatakakawo';
+
+  @override
+  String get telemetrySettingHint =>
+      'Zi ale si wozãa dɔwɔnuwo kple vodada ŋuti nyatakakawo, wò ŋutɔ ƒe nyatakakawo alo wò didiwo kple numekukuwo ƒe emenyawo manɔmee.';
 }

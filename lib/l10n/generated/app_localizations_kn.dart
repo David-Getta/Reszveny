@@ -1549,4 +1549,24 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ಹಿಂದಿನ ಸಾರಾಂಶ';
+
+  @override
+  String get telemetryTitle => 'WhatStock ಅನ್ನು ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡಿ';
+
+  @override
+  String get telemetryBody =>
+      'ಅನಾಮಧೇಯ ಬಳಕೆಯ ಅಂಕಿಅಂಶಗಳು ಮತ್ತು ಕ್ರ್ಯಾಶ್ ವರದಿಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ: ಯಾವ ಫೀಚರ್‌ಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ಏನು ತಪ್ಪಾಗಿದೆ. ನಿಮ್ಮ ಸ್ಟಾಕ್‌ಗಳು, ವಿಶ್ಲೇಷಣೆಗಳು ಅಥವಾ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಎಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ. ನೀವು ಇದನ್ನು ಯಾವಾಗ ಬೇಕಾದರೂ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಬದಲಾಯಿಸಬಹುದು.';
+
+  @override
+  String get telemetryAllow => 'ಅನುಮತಿಸಿ';
+
+  @override
+  String get telemetryDecline => 'ಬೇಡ, ಧನ್ಯವಾದಗಳು';
+
+  @override
+  String get telemetrySetting => 'ಅನಾಮಧೇಯ ಅಂಕಿಅಂಶಗಳು ಮತ್ತು ಕ್ರ್ಯಾಶ್ ವರದಿಗಳು';
+
+  @override
+  String get telemetrySettingHint =>
+      'ಫೀಚರ್‌ಗಳನ್ನು ಎಷ್ಟು ಬಾರಿ ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ದೋಷ ವರದಿಗಳು, ವೈಯಕ್ತಿಕ ಡೇಟಾ ಅಥವಾ ನಿಮ್ಮ ಹುಡುಕಾಟಗಳು ಮತ್ತು ವಿಶ್ಲೇಷಣೆಗಳ ವಿಷಯವಿಲ್ಲದೆ.';
 }

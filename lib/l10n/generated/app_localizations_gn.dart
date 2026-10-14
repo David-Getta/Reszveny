@@ -1549,4 +1549,25 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Mombyky ymaguare';
+
+  @override
+  String get telemetryTitle => 'Eipytyvõ WhatStock iporãve hag̃ua';
+
+  @override
+  String get telemetryBody =>
+      'Emoherakuã papapy jeporu rehegua ndojekuaáiva ha marandu jejavy rehegua: mbaʼe tembiapoukapýpa ojeporu ha mbaʼépa ndoikoporãi. Arakaʼeve ndojeguerahamoʼãi ne acciones, ne jehesaʼỹijo térã ne marandu ñemiguáva. Ikatu emoambue oimeraẽ árape Ñembohekópe.';
+
+  @override
+  String get telemetryAllow => 'Emoneĩ';
+
+  @override
+  String get telemetryDecline => 'Nahániri, aguyje';
+
+  @override
+  String get telemetrySetting =>
+      'Papapy ndojekuaáiva ha marandu jejavy rehegua';
+
+  @override
+  String get telemetrySettingHint =>
+      'Mbovy jey ojeporu tembiapoukapy ha marandu jejavy rehegua, ndoguerekói marandu ñemiguáva térã ne jeheka ha ne jehesaʼỹijo retepy.';
 }

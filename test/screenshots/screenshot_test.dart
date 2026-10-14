@@ -738,6 +738,15 @@ void main() {
     await _shot(tester, 'referral_phone_hu');
   });
 
+  testWidgets('asking for anonymous statistics on the home screen (hungarian, phone)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu'), backend: true), const Size(430, 932));
+    final card = find.byKey(const ValueKey('telemetry-consent'));
+    await tester.scrollUntilVisible(card, 200, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(card), alignment: 0.5);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'telemetry_consent_phone_hu');
+  });
+
   testWidgets('first launch onboarding (hungarian, phone)', (tester) async {
     final s = _services(locale: const Locale('hu'))..preferences.onboardingDone = false;
     await pumpApp(tester, s, const Size(430, 900));

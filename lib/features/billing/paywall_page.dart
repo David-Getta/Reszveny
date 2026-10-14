@@ -20,8 +20,10 @@ import '../../widgets/centered_scroll.dart';
 class PaywallPage extends StatefulWidget {
   const PaywallPage({super.key});
 
-  static Future<void> open(BuildContext context) =>
-      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const PaywallPage()));
+  static Future<void> open(BuildContext context) {
+    AppServices.of(context).telemetry.track('paywall_view');
+    return Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const PaywallPage()));
+  }
 
   @override
   State<PaywallPage> createState() => _PaywallPageState();

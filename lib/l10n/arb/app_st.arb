@@ -421,5 +421,11 @@
   "changesTitle": "Ho tloha tlhahlobong ya pele ({date})",
   "changesPrice": "Theko",
   "changesNoMajor": "Ponelopele ha e a fetoha haholo.",
-  "changesPreviousSummary": "Kakaretso ya pele"
+  "changesPreviousSummary": "Kakaretso ya pele",
+  "telemetryTitle": "Thusa ho ntlafatsa WhatStock",
+  "telemetryBody": "Arolelana dipalopalo tsa tshebediso tse sa tsebahaleng le ditlaleho tsa ho wa: hore na ke dikarolo dife tse sebediswang le hore na ho sentsweng eng. Ha ho mohla re arolelanang disheare tsa hao, ditlhahlobo tsa hao kapa dintlha tsa hao tsa botho. O ka fetola sena neng kapa neng ho Ditlhophiso.",
+  "telemetryAllow": "Dumella",
+  "telemetryDecline": "Tjhe, ke a leboha",
+  "telemetrySetting": "Dipalopalo tse sa tsebahaleng le ditlaleho tsa ho wa",
+  "telemetrySettingHint": "Hore na dikarolo di sebediswa hangata hakae le ditlaleho tsa diphoso, ntle le dintlha tsa botho kapa dikahare tsa diphuputso le ditlhahlobo tsa hao."
 }

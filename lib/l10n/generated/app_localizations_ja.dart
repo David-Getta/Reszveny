@@ -1496,4 +1496,23 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => '前回の要約';
+
+  @override
+  String get telemetryTitle => 'WhatStock の改善にご協力ください';
+
+  @override
+  String get telemetryBody =>
+      '匿名の使用状況統計とクラッシュレポートを共有します。どの機能が使われているか、何が問題だったかを送信します。保有銘柄、分析、個人データが送信されることはありません。この設定は「設定」でいつでも変更できます。';
+
+  @override
+  String get telemetryAllow => '許可';
+
+  @override
+  String get telemetryDecline => 'いいえ、結構です';
+
+  @override
+  String get telemetrySetting => '匿名の統計とクラッシュレポート';
+
+  @override
+  String get telemetrySettingHint => '機能の使用頻度とエラーレポート。個人データや検索・分析の内容は含まれません。';
 }

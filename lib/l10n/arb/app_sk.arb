@@ -421,5 +421,11 @@
   "changesTitle": "Od predchádzajúcej analýzy ({date})",
   "changesPrice": "Cena",
   "changesNoMajor": "Výhľad sa podstatne nezmenil.",
-  "changesPreviousSummary": "Predchádzajúce zhrnutie"
+  "changesPreviousSummary": "Predchádzajúce zhrnutie",
+  "telemetryTitle": "Pomôž vylepšiť WhatStock",
+  "telemetryBody": "Zdieľaj anonymné štatistiky používania a hlásenia o zlyhaní: ktoré funkcie sa používajú a čo sa pokazilo. Nikdy nie tvoje akcie, analýzy ani osobné údaje. Môžeš to kedykoľvek zmeniť v Nastaveniach.",
+  "telemetryAllow": "Povoliť",
+  "telemetryDecline": "Nie, ďakujem",
+  "telemetrySetting": "Anonymné štatistiky a hlásenia o zlyhaní",
+  "telemetrySettingHint": "Ako často sa používajú funkcie a hlásenia o chybách – bez osobných údajov či obsahu tvojich vyhľadávaní a analýz."
 }

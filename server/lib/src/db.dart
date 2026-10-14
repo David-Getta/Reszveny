@@ -127,6 +127,9 @@ class Store {
   final Database _db;
   DateTime Function() clock = DateTime.now;
 
+  /// A nyers adatbázis (a statisztika saját táblákat tart benne).
+  Database get database => _db;
+
   static String hashToken(String token) => sha256.convert(utf8.encode(token)).toString();
 
   /// Új névtelen felhasználó; visszaadja az (id, token) párt.

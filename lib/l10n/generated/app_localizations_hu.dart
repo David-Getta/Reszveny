@@ -1549,4 +1549,24 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Az előző elemzés lényege';
+
+  @override
+  String get telemetryTitle => 'Segíts jobbá tenni a WhatStockot';
+
+  @override
+  String get telemetryBody =>
+      'Névtelen használati statisztika és hibajelentés küldése: mely funkciókat használod, és mi romlott el. A részvényeidet, elemzéseidet és személyes adataidat soha nem küldjük. Bármikor módosíthatod a beállításokban.';
+
+  @override
+  String get telemetryAllow => 'Engedélyezem';
+
+  @override
+  String get telemetryDecline => 'Nem, köszönöm';
+
+  @override
+  String get telemetrySetting => 'Névtelen statisztika és hibajelentés';
+
+  @override
+  String get telemetrySettingHint =>
+      'Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül.';
 }

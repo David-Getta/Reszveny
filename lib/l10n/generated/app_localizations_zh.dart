@@ -1483,6 +1483,25 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => '上次分析摘要';
+
+  @override
+  String get telemetryTitle => '帮助改进 WhatStock';
+
+  @override
+  String get telemetryBody =>
+      '分享匿名使用统计信息和崩溃报告：使用了哪些功能以及出现了什么问题。绝不包含你的股票、分析或个人数据。你可以随时在设置中更改此选项。';
+
+  @override
+  String get telemetryAllow => '允许';
+
+  @override
+  String get telemetryDecline => '不用了，谢谢';
+
+  @override
+  String get telemetrySetting => '匿名统计信息和崩溃报告';
+
+  @override
+  String get telemetrySettingHint => '功能使用频率和错误报告，不包含个人数据，也不包含你的搜索和分析内容。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2962,4 +2981,23 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get changesPreviousSummary => '上次分析摘要';
+
+  @override
+  String get telemetryTitle => '協助改善 WhatStock';
+
+  @override
+  String get telemetryBody =>
+      '分享匿名使用統計資料及當機報告：使用了哪些功能，以及出現了甚麼問題。絕不包括你的股票、分析或個人資料。你可隨時在「設定」中更改。';
+
+  @override
+  String get telemetryAllow => '允許';
+
+  @override
+  String get telemetryDecline => '不用了，謝謝';
+
+  @override
+  String get telemetrySetting => '匿名統計資料及當機報告';
+
+  @override
+  String get telemetrySettingHint => '功能使用頻率及錯誤報告，不包括個人資料，亦不包括你的搜尋及分析內容。';
 }

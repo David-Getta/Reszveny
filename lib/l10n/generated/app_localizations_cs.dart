@@ -1588,4 +1588,24 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Předchozí shrnutí';
+
+  @override
+  String get telemetryTitle => 'Pomozte vylepšit WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Sdílejte anonymní statistiky používání a zprávy o selhání: které funkce se používají a co se pokazilo. Nikdy vaše akcie, analýzy ani osobní údaje. Můžete to kdykoli změnit v Nastavení.';
+
+  @override
+  String get telemetryAllow => 'Povolit';
+
+  @override
+  String get telemetryDecline => 'Ne, děkuji';
+
+  @override
+  String get telemetrySetting => 'Anonymní statistiky a zprávy o selhání';
+
+  @override
+  String get telemetrySettingHint =>
+      'Jak často se funkce používají a hlášení chyb – bez osobních údajů a obsahu vašich vyhledávání a analýz.';
 }

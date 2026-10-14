@@ -1549,4 +1549,24 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Resumo anterior';
+
+  @override
+  String get telemetryTitle => 'Ajude a melhorar o WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Compartilhe estatísticas de uso anônimas e relatórios de falhas: quais recursos são usados e o que deu errado. Nunca suas ações, análises ou dados pessoais. Você pode mudar isso a qualquer momento em Configurações.';
+
+  @override
+  String get telemetryAllow => 'Permitir';
+
+  @override
+  String get telemetryDecline => 'Não, obrigado';
+
+  @override
+  String get telemetrySetting => 'Estatísticas anônimas e relatórios de falhas';
+
+  @override
+  String get telemetrySettingHint =>
+      'Com que frequência os recursos são usados e relatórios de erros, sem dados pessoais nem o conteúdo das suas pesquisas e análises.';
 }

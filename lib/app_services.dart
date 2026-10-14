@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'core/app_preferences.dart';
 import 'core/backend/backend_client.dart';
 import 'core/review/review_prompt.dart';
+import 'core/telemetry/telemetry.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
 import 'core/desktop/system_notifier.dart';
@@ -60,10 +61,13 @@ class AppServices {
     PortfolioStore? portfolio,
     AlertStore? alerts,
     AlertNotifier? alertNotifier,
+    Telemetry? telemetry,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
-       alerts = alerts ?? AlertStore() {
+       alerts = alerts ?? AlertStore(),
+       telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
+    this.telemetry.versionOf ??= () => this.updates.currentVersion;
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
@@ -71,7 +75,10 @@ class AppServices {
       describe: describeAlertHit,
     );
     // Jó élmény után (a 3. elemzésnél) egyszer értékelést kérünk a boltban.
-    reports.onGenerated = (_) => ReviewPrompt.onAnalysisDone(preferences);
+    reports.onGenerated = (_) {
+      this.telemetry.track('analysis_done');
+      ReviewPrompt.onAnalysisDone(preferences);
+    };
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
@@ -101,6 +108,7 @@ class AppServices {
               productId: e.productId,
               verificationData: e.verificationData ?? '',
             ),
+      onPurchased: () => this.telemetry.track('purchase_done'),
     );
   }
 
@@ -188,6 +196,9 @@ class AppServices {
 
   /// A saját részvények (csak a készüléken tárolva).
   final PortfolioStore portfolio;
+
+  /// Névtelen használati statisztika és hibajelentés (hozzájárulással).
+  final Telemetry telemetry;
 
   /// Árfolyam-riasztások és a figyelőjük.
   final AlertStore alerts;

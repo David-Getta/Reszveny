@@ -421,5 +421,11 @@
   "changesTitle": "Sukad sa miaging pagtuki ({date})",
   "changesPrice": "Presyo",
   "changesNoMajor": "Ang panglantaw wala kaayo mausab.",
-  "changesPreviousSummary": "Miaging katingbanan"
+  "changesPreviousSummary": "Miaging katingbanan",
+  "telemetryTitle": "Tabangi kami sa pagpauswag sa WhatStock",
+  "telemetryBody": "Ipaambit ang dili mailhan nga estadistika sa paggamit ug mga crash report: unsang mga feature ang gigamit ug unsay nasayop. Dili gayod ipaambit ang imong mga stock, pagtuki o personal nga datos. Mahimo nimo kining usbon bisan kanus-a sa Mga Setting.",
+  "telemetryAllow": "Tugoti",
+  "telemetryDecline": "Dili, salamat",
+  "telemetrySetting": "Dili mailhan nga estadistika ug mga crash report",
+  "telemetrySettingHint": "Kung unsa ka sagad gamiton ang mga feature ug mga report sa sayop, walay personal nga datos o sulod sa imong mga pagpangita ug pagtuki."
 }

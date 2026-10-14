@@ -1592,4 +1592,24 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Predchádzajúce zhrnutie';
+
+  @override
+  String get telemetryTitle => 'Pomôž vylepšiť WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Zdieľaj anonymné štatistiky používania a hlásenia o zlyhaní: ktoré funkcie sa používajú a čo sa pokazilo. Nikdy nie tvoje akcie, analýzy ani osobné údaje. Môžeš to kedykoľvek zmeniť v Nastaveniach.';
+
+  @override
+  String get telemetryAllow => 'Povoliť';
+
+  @override
+  String get telemetryDecline => 'Nie, ďakujem';
+
+  @override
+  String get telemetrySetting => 'Anonymné štatistiky a hlásenia o zlyhaní';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ako často sa používajú funkcie a hlásenia o chybách – bez osobných údajov či obsahu tvojich vyhľadávaní a analýz.';
 }

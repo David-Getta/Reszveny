@@ -421,5 +421,11 @@
   "changesTitle": "Oldingi tahlildan beri ({date})",
   "changesPrice": "Narx",
   "changesNoMajor": "Istiqbol sezilarli darajada oʻzgarmadi.",
-  "changesPreviousSummary": "Oldingi xulosa"
+  "changesPreviousSummary": "Oldingi xulosa",
+  "telemetryTitle": "WhatStock ilovasini yaxshilashga yordam bering",
+  "telemetryBody": "Anonim foydalanish statistikasi va nosozlik hisobotlarini ulashing: qaysi funksiyalardan foydalanilayotgani va nima xato ketgani. Aksiyalaringiz, tahlillaringiz yoki shaxsiy maʼlumotlaringiz hech qachon yuborilmaydi. Buni istalgan vaqtda Sozlamalarda oʻzgartirishingiz mumkin.",
+  "telemetryAllow": "Ruxsat berish",
+  "telemetryDecline": "Yoʻq, rahmat",
+  "telemetrySetting": "Anonim statistika va nosozlik hisobotlari",
+  "telemetrySettingHint": "Funksiyalardan qanchalik tez-tez foydalanilishi va xatolik hisobotlari – shaxsiy maʼlumotlarsiz, qidiruv va tahlillaringiz mazmunisiz."
 }

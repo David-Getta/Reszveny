@@ -17,6 +17,7 @@ import '../account/sign_in_sheet.dart';
 import '../billing/paywall_page.dart';
 import '../billing/trial_upsell.dart';
 import '../billing/usage_chip.dart';
+import 'telemetry_consent.dart';
 import 'language_picker.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
@@ -290,6 +291,7 @@ class SettingsPage extends StatelessWidget {
                 Card(
                   child: Column(
                     children: [
+                      if (services.telemetry.available) ...[const TelemetrySwitchTile(), const Divider(height: 1)],
                       ListTile(
                         leading: const Icon(Icons.storage_outlined),
                         title: Text(l10n.dataSource(services.marketData.name)),

@@ -421,5 +421,11 @@
   "changesTitle": "Okuva ku kwekenneenya okw'edda ({date})",
   "changesPrice": "Ebbeeyi",
   "changesNoMajor": "Embeera esuubirwa tekyuse nnyo.",
-  "changesPreviousSummary": "Mu bufunze okw'edda"
+  "changesPreviousSummary": "Mu bufunze okw'edda",
+  "telemetryTitle": "Tuyambe okulongoosa WhatStock",
+  "telemetryBody": "Gabana ebibalo by'enkozesa ebitaliiko linnya n'alipoota z'okugwa kwa pulogulaamu: ebintu ebikozesebwa n'ekyo ekyagenda obubi. Tetujja kuweereza migabo gyo, kwekenneenya kwo oba ebikukwatako ku bubwo. Osobola okukikyusa essaawa yonna mu Ensengeka.",
+  "telemetryAllow": "Kkiriza",
+  "telemetryDecline": "Nedda, weebale",
+  "telemetrySetting": "Ebibalo ebitaliiko linnya n'alipoota z'okugwa kwa pulogulaamu",
+  "telemetrySettingHint": "Emirundi ebintu gye bikozesebwa n'alipoota z'ensobi, awatali bikukwatako ku bubwo oba ebiri mu kunoonya kwo n'okwekenneenya kwo."
 }

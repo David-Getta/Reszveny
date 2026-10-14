@@ -1550,4 +1550,24 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nakaraang buod';
+
+  @override
+  String get telemetryTitle => 'Tumulong na pagandahin ang WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Ibahagi ang anonymous na istatistika ng paggamit at mga crash report: kung aling mga feature ang ginagamit at kung ano ang nagkaproblema. Hindi kailanman ibinabahagi ang iyong mga stock, pagsusuri o personal na data. Puwede mo itong baguhin anumang oras sa Mga setting.';
+
+  @override
+  String get telemetryAllow => 'Payagan';
+
+  @override
+  String get telemetryDecline => 'Hindi, salamat';
+
+  @override
+  String get telemetrySetting => 'Anonymous na istatistika at mga crash report';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kung gaano kadalas ginagamit ang mga feature at mga ulat ng error, nang walang personal na data o nilalaman ng iyong mga paghahanap at pagsusuri.';
 }

@@ -421,5 +421,11 @@
   "changesTitle": "Tun bayan nazarin baya ({date})",
   "changesPrice": "Farashi",
   "changesNoMajor": "Hasashen bai canza sosai ba.",
-  "changesPreviousSummary": "Taƙaitaccen nazarin baya"
+  "changesPreviousSummary": "Taƙaitaccen nazarin baya",
+  "telemetryTitle": "Taimaka mana inganta WhatStock",
+  "telemetryBody": "Raba ƙididdigar amfani da rahotannin faɗuwar manhaja ba tare da suna ba: waɗanne fasaloli ake amfani da su da abin da ya lalace. Ba za mu taɓa raba hannayen jarinka, nazarinka ko bayananka na sirri ba. Kana iya canza wannan a kowane lokaci a Saituna.",
+  "telemetryAllow": "Ba da izini",
+  "telemetryDecline": "A'a, na gode",
+  "telemetrySetting": "Ƙididdiga marasa suna da rahotannin faɗuwar manhaja",
+  "telemetrySettingHint": "Yawan amfani da fasaloli da rahotannin kurakurai, ba tare da bayanan sirri ko abubuwan da ke cikin bincikenka da nazarinka ba."
 }

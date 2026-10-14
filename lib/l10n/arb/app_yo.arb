@@ -421,5 +421,11 @@
   "changesTitle": "Láti ìtúpalẹ̀ tó kọjá ({date})",
   "changesPrice": "Iye owó",
   "changesNoMajor": "Ìrètí kò yí padà ní pàtàkì.",
-  "changesPreviousSummary": "Àkópọ̀ ti tẹ́lẹ̀"
+  "changesPreviousSummary": "Àkópọ̀ ti tẹ́lẹ̀",
+  "telemetryTitle": "Ràn wá lọ́wọ́ láti mú WhatStock dára síi",
+  "telemetryBody": "Pín ìṣirò ìlò láìdárúkọ àti àwọn ìròyìn ìjàlù: àwọn ẹ̀yà wo ni a ń lò àti ohun tí kò lọ dáadáa. A kò ní fi àwọn ìpín rẹ, ìtúpalẹ̀ rẹ tàbí dátà ara ẹni rẹ ránṣẹ́ láé. O lè yí èyí padà nígbàkúgbà nínú Ètò.",
+  "telemetryAllow": "Gbà láàyè",
+  "telemetryDecline": "Rárá o ṣé",
+  "telemetrySetting": "Ìṣirò láìdárúkọ àti ìròyìn ìjàlù",
+  "telemetrySettingHint": "Ìgbà mélòó ni a ń lo àwọn ẹ̀yà àti ìròyìn àṣìṣe, láìsí dátà ara ẹni tàbí àkóónú àwọn ìwádìí àti ìtúpalẹ̀ rẹ."
 }

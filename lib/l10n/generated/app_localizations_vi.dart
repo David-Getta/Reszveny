@@ -1539,4 +1539,24 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Tóm tắt trước đó';
+
+  @override
+  String get telemetryTitle => 'Giúp cải thiện WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Chia sẻ số liệu thống kê sử dụng ẩn danh và báo cáo sự cố: tính năng nào được sử dụng và điều gì đã gặp lỗi. Không bao giờ bao gồm cổ phiếu, phân tích hay dữ liệu cá nhân của bạn. Bạn có thể thay đổi tùy chọn này bất cứ lúc nào trong Cài đặt.';
+
+  @override
+  String get telemetryAllow => 'Cho phép';
+
+  @override
+  String get telemetryDecline => 'Không, cảm ơn';
+
+  @override
+  String get telemetrySetting => 'Thống kê ẩn danh và báo cáo sự cố';
+
+  @override
+  String get telemetrySettingHint =>
+      'Tần suất sử dụng tính năng và báo cáo lỗi, không bao gồm dữ liệu cá nhân hay nội dung tìm kiếm và phân tích của bạn.';
 }

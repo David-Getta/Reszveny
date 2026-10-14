@@ -1543,4 +1543,25 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Muhtasari uliopita';
+
+  @override
+  String get telemetryTitle => 'Saidia kuboresha WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Shiriki takwimu za matumizi zisizo na majina na ripoti za kuacha kufanya kazi: vipengele vipi vinatumika na nini kilienda vibaya. Kamwe si hisa zako, uchambuzi wako wala data yako binafsi. Unaweza kubadilisha hili wakati wowote katika Mipangilio.';
+
+  @override
+  String get telemetryAllow => 'Ruhusu';
+
+  @override
+  String get telemetryDecline => 'Hapana, asante';
+
+  @override
+  String get telemetrySetting =>
+      'Takwimu zisizo na majina na ripoti za kuacha kufanya kazi';
+
+  @override
+  String get telemetrySettingHint =>
+      'Mara ngapi vipengele vinatumika na ripoti za hitilafu, bila data binafsi wala maudhui ya utafutaji na uchambuzi wako.';
 }

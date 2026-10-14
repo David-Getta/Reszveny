@@ -421,5 +421,11 @@
   "changesTitle": "Sedert die vorige ontleding ({date})",
   "changesPrice": "Prys",
   "changesNoMajor": "Die vooruitsigte het nie wesenlik verander nie.",
-  "changesPreviousSummary": "Vorige opsomming"
+  "changesPreviousSummary": "Vorige opsomming",
+  "telemetryTitle": "Help om WhatStock te verbeter",
+  "telemetryBody": "Deel anonieme gebruikstatistieke en omvalverslae: watter funksies gebruik word en wat verkeerd geloop het. Nooit jou aandele, ontledings of persoonlike data nie. Jy kan dit enige tyd in Instellings verander.",
+  "telemetryAllow": "Laat toe",
+  "telemetryDecline": "Nee dankie",
+  "telemetrySetting": "Anonieme statistieke en omvalverslae",
+  "telemetrySettingHint": "Hoe gereeld funksies gebruik word en foutverslae, sonder persoonlike data of die inhoud van jou soektogte en ontledings."
 }

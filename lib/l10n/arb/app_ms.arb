@@ -421,5 +421,11 @@
   "changesTitle": "Sejak analisis sebelumnya ({date})",
   "changesPrice": "Harga",
   "changesNoMajor": "Tinjauan tidak berubah dengan ketara.",
-  "changesPreviousSummary": "Ringkasan sebelumnya"
+  "changesPreviousSummary": "Ringkasan sebelumnya",
+  "telemetryTitle": "Bantu tingkatkan WhatStock",
+  "telemetryBody": "Kongsi statistik penggunaan dan laporan ranap tanpa nama: ciri mana yang digunakan dan apa yang tidak kena. Saham, analisis atau data peribadi anda tidak sekali-kali dikongsi. Anda boleh mengubah ini pada bila-bila masa dalam Tetapan.",
+  "telemetryAllow": "Benarkan",
+  "telemetryDecline": "Tidak, terima kasih",
+  "telemetrySetting": "Statistik tanpa nama dan laporan ranap",
+  "telemetrySettingHint": "Kekerapan penggunaan ciri dan laporan ralat, tanpa data peribadi atau kandungan carian dan analisis anda."
 }

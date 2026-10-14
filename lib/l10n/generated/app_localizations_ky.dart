@@ -1545,4 +1545,25 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Мурунку корутунду';
+
+  @override
+  String get telemetryTitle => 'WhatStock\'ту жакшыртууга жардам бериңиз';
+
+  @override
+  String get telemetryBody =>
+      'Колдонуу боюнча анонимдүү статистиканы жана бузулуу тууралуу кабарларды бөлүшүңүз: кайсы функциялар колдонулат жана эмне туура эмес болду. Акцияларыңыз, талдоолоруңуз же жеке маалыматтарыңыз эч качан жөнөтүлбөйт. Муну каалаган убакта Жөндөөлөрдөн өзгөртө аласыз.';
+
+  @override
+  String get telemetryAllow => 'Уруксат берүү';
+
+  @override
+  String get telemetryDecline => 'Жок, рахмат';
+
+  @override
+  String get telemetrySetting =>
+      'Анонимдүү статистика жана бузулуу тууралуу кабарлар';
+
+  @override
+  String get telemetrySettingHint =>
+      'Функциялар канчалык көп колдонулары жана ката тууралуу кабарлар — жеке маалыматтарсыз жана издөөлөрүңүз менен талдоолоруңуздун мазмунусуз.';
 }

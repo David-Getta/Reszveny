@@ -1545,4 +1545,24 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Хулосаи пешина';
+
+  @override
+  String get telemetryTitle => 'Ба беҳтар кардани WhatStock кӯмак кунед';
+
+  @override
+  String get telemetryBody =>
+      'Омори беноми истифода ва гузоришҳои вайроншавиро мубодила кунед: кадом функсияҳо истифода мешаванд ва чӣ хато шуд. Саҳмияҳо, таҳлилҳо ё маълумоти шахсии шумо ҳеҷ гоҳ фиристода намешаванд. Шумо метавонед инро дар ҳар вақт дар Танзимот тағйир диҳед.';
+
+  @override
+  String get telemetryAllow => 'Иҷозат додан';
+
+  @override
+  String get telemetryDecline => 'Не, ташаккур';
+
+  @override
+  String get telemetrySetting => 'Омори беном ва гузоришҳои вайроншавӣ';
+
+  @override
+  String get telemetrySettingHint =>
+      'Басомади истифодаи функсияҳо ва гузоришҳои хато, бе маълумоти шахсӣ ва мундариҷаи ҷустуҷӯҳо ва таҳлилҳои шумо.';
 }

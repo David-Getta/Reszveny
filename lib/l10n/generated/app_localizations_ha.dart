@@ -1549,4 +1549,25 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Taƙaitaccen nazarin baya';
+
+  @override
+  String get telemetryTitle => 'Taimaka mana inganta WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Raba ƙididdigar amfani da rahotannin faɗuwar manhaja ba tare da suna ba: waɗanne fasaloli ake amfani da su da abin da ya lalace. Ba za mu taɓa raba hannayen jarinka, nazarinka ko bayananka na sirri ba. Kana iya canza wannan a kowane lokaci a Saituna.';
+
+  @override
+  String get telemetryAllow => 'Ba da izini';
+
+  @override
+  String get telemetryDecline => 'A\'a, na gode';
+
+  @override
+  String get telemetrySetting =>
+      'Ƙididdiga marasa suna da rahotannin faɗuwar manhaja';
+
+  @override
+  String get telemetrySettingHint =>
+      'Yawan amfani da fasaloli da rahotannin kurakurai, ba tare da bayanan sirri ko abubuwan da ke cikin bincikenka da nazarinka ba.';
 }

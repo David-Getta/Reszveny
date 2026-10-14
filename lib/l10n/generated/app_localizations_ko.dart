@@ -1498,4 +1498,24 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => '이전 요약';
+
+  @override
+  String get telemetryTitle => 'WhatStock 개선에 도움을 주세요';
+
+  @override
+  String get telemetryBody =>
+      '익명의 사용 통계와 비정상 종료 보고서를 공유합니다. 어떤 기능이 사용되는지, 어떤 문제가 발생했는지만 전송되며 보유 주식, 분석 내용 또는 개인 데이터는 절대 전송되지 않습니다. 설정에서 언제든지 변경할 수 있습니다.';
+
+  @override
+  String get telemetryAllow => '허용';
+
+  @override
+  String get telemetryDecline => '괜찮습니다';
+
+  @override
+  String get telemetrySetting => '익명 통계 및 비정상 종료 보고서';
+
+  @override
+  String get telemetrySettingHint =>
+      '기능 사용 빈도와 오류 보고서이며, 개인 데이터나 검색 및 분석 내용은 포함되지 않습니다.';
 }

@@ -1544,4 +1544,24 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'আগৰ সাৰাংশ';
+
+  @override
+  String get telemetryTitle => 'WhatStock উন্নত কৰাত সহায় কৰক';
+
+  @override
+  String get telemetryBody =>
+      'বেনামী ব্যৱহাৰৰ পৰিসংখ্যা আৰু ক্ৰেশ্ব ৰিপ\'ৰ্ট শ্বেয়াৰ কৰক: কোনবোৰ সুবিধা ব্যৱহাৰ হয় আৰু কি ভুল হ\'ল। আপোনাৰ শ্বেয়াৰ, বিশ্লেষণ বা ব্যক্তিগত তথ্য কেতিয়াও পঠিওৱা নহয়। আপুনি যিকোনো সময়তে ছেটিংছত এইটো সলনি কৰিব পাৰে।';
+
+  @override
+  String get telemetryAllow => 'অনুমতি দিয়ক';
+
+  @override
+  String get telemetryDecline => 'নালাগে, ধন্যবাদ';
+
+  @override
+  String get telemetrySetting => 'বেনামী পৰিসংখ্যা আৰু ক্ৰেশ্ব ৰিপ\'ৰ্ট';
+
+  @override
+  String get telemetrySettingHint =>
+      'সুবিধাসমূহ কিমান সঘনাই ব্যৱহাৰ হয় আৰু ত্ৰুটিৰ ৰিপ\'ৰ্ট, ব্যক্তিগত তথ্য বা আপোনাৰ সন্ধান আৰু বিশ্লেষণৰ সমল নোহোৱাকৈ।';
 }

@@ -1532,4 +1532,24 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Vɛɛsg sẽn deng-a koe-bilfu';
+
+  @override
+  String get telemetryTitle => 'Sõng tɩ WhatStock yɩɩ sõma';
+
+  @override
+  String get telemetryBody =>
+      'Tʋm ne tõnd sõdb sẽn pa tar yʋʋr ne yel-wẽnsã kibay: tʋʋm-teed nins b sẽn tʋmd ne bũmb ning sẽn pa kẽnd sõma. Pa fo sõorã, fo vɛɛsgã wall fo meng kibay ye. Y tõe n toeem-a wakat fãa Seglgo pʋgẽ.';
+
+  @override
+  String get telemetryAllow => 'Sak';
+
+  @override
+  String get telemetryDecline => 'Ayo, barka';
+
+  @override
+  String get telemetrySetting => 'Sõdb sẽn pa tar yʋʋr ne yel-wẽns kibay';
+
+  @override
+  String get telemetrySettingHint =>
+      'Wakat a wããn la b tʋmd ne tʋʋm-teedã ne yel-wẽns kibay, sẽn pa tar fo meng kibay wall fo bʋʋsgo ne fo vɛɛsgã pʋgẽ bũmb.';
 }

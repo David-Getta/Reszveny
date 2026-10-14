@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -38,7 +40,22 @@ Future<void> main() async {
     portfolio: await PortfolioStore.load(),
     alerts: await AlertStore.load(),
   );
+  // Nem kezelt hibák jelentése (csak hozzájárulással; a Flutter saját
+  // naplózása is megmarad).
+  final telemetry = services.telemetry;
+  final previousOnError = FlutterError.onError;
+  FlutterError.onError = (details) {
+    previousOnError?.call(details);
+    telemetry.reportError(details.exception, details.stack);
+  };
+  PlatformDispatcher.instance.onError = (error, stack) {
+    telemetry.reportError(error, stack);
+    return false;
+  };
+  // Háttérbe kerüléskor elküldjük, ami összegyűlt.
+  AppLifecycleListener(onHide: telemetry.flush, onDetach: telemetry.flush);
   runApp(WhatStockApp(services: services));
+  telemetry.track('app_open');
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
   // Backend-módban a szerver szerinti csomag és keret átvétele.

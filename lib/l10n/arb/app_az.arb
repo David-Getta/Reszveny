@@ -421,5 +421,11 @@
   "changesTitle": "Əvvəlki təhlildən bəri ({date})",
   "changesPrice": "Qiymət",
   "changesNoMajor": "Proqnoz əhəmiyyətli dərəcədə dəyişməyib.",
-  "changesPreviousSummary": "Əvvəlki xülasə"
+  "changesPreviousSummary": "Əvvəlki xülasə",
+  "telemetryTitle": "WhatStock-u təkmilləşdirməyə kömək edin",
+  "telemetryBody": "Anonim istifadə statistikası və çökmə hesabatlarını paylaşın: hansı funksiyaların istifadə olunduğu və nəyin səhv getdiyi. Səhmləriniz, təhlilləriniz və ya şəxsi məlumatlarınız heç vaxt paylaşılmır. Bunu istənilən vaxt Ayarlarda dəyişə bilərsiniz.",
+  "telemetryAllow": "İcazə ver",
+  "telemetryDecline": "Xeyr, təşəkkürlər",
+  "telemetrySetting": "Anonim statistika və çökmə hesabatları",
+  "telemetrySettingHint": "Funksiyaların nə qədər tez-tez istifadə olunduğu və xəta hesabatları – şəxsi məlumatlar, axtarışlarınızın və təhlillərinizin məzmunu olmadan."
 }

@@ -421,5 +421,11 @@
   "changesTitle": "Seg tasleḍt yezrin ({date})",
   "changesPrice": "Ssuma",
   "changesNoMajor": "Ayen i d-yettwarǧan ur ibeddel ara aṭas.",
-  "changesPreviousSummary": "Agzul yezrin"
+  "changesPreviousSummary": "Agzul yezrin",
+  "telemetryTitle": "Ɛiwen-aɣ ad nesnerni WhatStock",
+  "telemetryBody": "Bḍu tidaddanin n useqdec war isem d yineqqisen n uɣelluy: anti timahilin yettwasqedcen d wayen ur neddi ara. Ur nettazen ara akk aqrab-ik, tiselḍin-ik neɣ isefka-k udmawanen. Tzemreḍ ad tbeddleḍ aya melmi i tebɣiḍ deg Iɣewwaṛen.",
+  "telemetryAllow": "Sireg",
+  "telemetryDecline": "Ala, tanemmirt",
+  "telemetrySetting": "Tidaddanin war isem d yineqqisen n uɣelluy",
+  "telemetrySettingHint": "Acḥal n tikkal i ttwasqedcent tmahilin d yineqqisen n tuccḍiwin, war isefka udmawanen neɣ agbur n unadi d tesleḍt-ik."
 }

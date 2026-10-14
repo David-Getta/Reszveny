@@ -1562,4 +1562,24 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Претходно резиме';
+
+  @override
+  String get telemetryTitle => 'Помогни да го подобриме WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Споделувај анонимни статистики за користење и извештаи за падови: кои функции се користат и што тргнало наопаку. Никогаш твоите акции, анализи или лични податоци. Ова можеш да го промениш во секое време во Поставки.';
+
+  @override
+  String get telemetryAllow => 'Дозволи';
+
+  @override
+  String get telemetryDecline => 'Не, благодарам';
+
+  @override
+  String get telemetrySetting => 'Анонимни статистики и извештаи за падови';
+
+  @override
+  String get telemetrySettingHint =>
+      'Колку често се користат функциите и извештаи за грешки, без лични податоци или содржината на твоите пребарувања и анализи.';
 }

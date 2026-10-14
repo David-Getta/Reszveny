@@ -421,5 +421,11 @@
   "changesTitle": "Des de l’anàlisi anterior ({date})",
   "changesPrice": "Preu",
   "changesNoMajor": "Les perspectives no han canviat de manera significativa.",
-  "changesPreviousSummary": "Resum anterior"
+  "changesPreviousSummary": "Resum anterior",
+  "telemetryTitle": "Ajuda a millorar WhatStock",
+  "telemetryBody": "Comparteix estadístiques d'ús anònimes i informes de fallades: quines funcions es fan servir i què ha anat malament. Mai les teves accions, anàlisis ni dades personals. Pots canviar-ho en qualsevol moment a Configuració.",
+  "telemetryAllow": "Permet",
+  "telemetryDecline": "No, gràcies",
+  "telemetrySetting": "Estadístiques anònimes i informes de fallades",
+  "telemetrySettingHint": "Amb quina freqüència es fan servir les funcions i informes d'errors, sense dades personals ni el contingut de les teves cerques i anàlisis."
 }

@@ -1551,4 +1551,25 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Miaging katingbanan';
+
+  @override
+  String get telemetryTitle => 'Tabangi kami sa pagpauswag sa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Ipaambit ang dili mailhan nga estadistika sa paggamit ug mga crash report: unsang mga feature ang gigamit ug unsay nasayop. Dili gayod ipaambit ang imong mga stock, pagtuki o personal nga datos. Mahimo nimo kining usbon bisan kanus-a sa Mga Setting.';
+
+  @override
+  String get telemetryAllow => 'Tugoti';
+
+  @override
+  String get telemetryDecline => 'Dili, salamat';
+
+  @override
+  String get telemetrySetting =>
+      'Dili mailhan nga estadistika ug mga crash report';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kung unsa ka sagad gamiton ang mga feature ug mga report sa sayop, walay personal nga datos o sulod sa imong mga pagpangita ug pagtuki.';
 }

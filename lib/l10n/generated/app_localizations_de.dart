@@ -1554,4 +1554,24 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Vorherige Zusammenfassung';
+
+  @override
+  String get telemetryTitle => 'Hilf mit, WhatStock zu verbessern';
+
+  @override
+  String get telemetryBody =>
+      'Teile anonyme Nutzungsstatistiken und Absturzberichte: welche Funktionen genutzt werden und was schiefgelaufen ist. Niemals deine Aktien, Analysen oder persönlichen Daten. Du kannst das jederzeit in den Einstellungen ändern.';
+
+  @override
+  String get telemetryAllow => 'Erlauben';
+
+  @override
+  String get telemetryDecline => 'Nein danke';
+
+  @override
+  String get telemetrySetting => 'Anonyme Statistiken und Absturzberichte';
+
+  @override
+  String get telemetrySettingHint =>
+      'Wie oft Funktionen genutzt werden und Fehlerberichte – ohne persönliche Daten oder Inhalte deiner Suchen und Analysen.';
 }

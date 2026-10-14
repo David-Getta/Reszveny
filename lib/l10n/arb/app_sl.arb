@@ -421,5 +421,11 @@
   "changesTitle": "Od prejšnje analize ({date})",
   "changesPrice": "Cena",
   "changesNoMajor": "Obeti se niso bistveno spremenili.",
-  "changesPreviousSummary": "Prejšnji povzetek"
+  "changesPreviousSummary": "Prejšnji povzetek",
+  "telemetryTitle": "Pomagaj izboljšati WhatStock",
+  "telemetryBody": "Deli anonimne statistične podatke o uporabi in poročila o zrušitvah: katere funkcije se uporabljajo in kaj je šlo narobe. Nikoli tvojih delnic, analiz ali osebnih podatkov. To lahko kadar koli spremeniš v Nastavitvah.",
+  "telemetryAllow": "Dovoli",
+  "telemetryDecline": "Ne, hvala",
+  "telemetrySetting": "Anonimna statistika in poročila o zrušitvah",
+  "telemetrySettingHint": "Kako pogosto se uporabljajo funkcije in poročila o napakah – brez osebnih podatkov ali vsebine tvojih iskanj in analiz."
 }

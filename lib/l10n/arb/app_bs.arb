@@ -421,5 +421,11 @@
   "changesTitle": "Od prethodne analize ({date})",
   "changesPrice": "Cijena",
   "changesNoMajor": "Izgledi se nisu značajno promijenili.",
-  "changesPreviousSummary": "Prethodni sažetak"
+  "changesPreviousSummary": "Prethodni sažetak",
+  "telemetryTitle": "Pomozite poboljšati WhatStock",
+  "telemetryBody": "Dijelite anonimnu statistiku korištenja i izvještaje o rušenju: koje se funkcije koriste i šta je pošlo po zlu. Vaše dionice, analize i lični podaci nikada se ne dijele. Ovo možete promijeniti bilo kada u Postavkama.",
+  "telemetryAllow": "Dozvoli",
+  "telemetryDecline": "Ne, hvala",
+  "telemetrySetting": "Anonimna statistika i izvještaji o rušenju",
+  "telemetrySettingHint": "Koliko se često koriste funkcije i izvještaji o greškama, bez ličnih podataka ili sadržaja vaših pretraga i analiza."
 }

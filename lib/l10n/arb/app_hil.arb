@@ -421,5 +421,11 @@
   "changesTitle": "Halin sang nauna nga analisis ({date})",
   "changesPrice": "Presyo",
   "changesNoMajor": "Wala nagbag-o sing daku ang panan-awan.",
-  "changesPreviousSummary": "Nauna nga sumaryo"
+  "changesPreviousSummary": "Nauna nga sumaryo",
+  "telemetryTitle": "Buligi kami nga mapauswag ang WhatStock",
+  "telemetryBody": "Ipaambit ang anonymous nga estadistika sang paggamit kag mga crash report: diin nga mga feature ang ginagamit kag ano ang nagsala. Indi gid ang imo mga stock, analisis ukon personal nga datos. Mahimo mo ini baylohan bisan san-o sa Mga setting.",
+  "telemetryAllow": "Tuguti",
+  "telemetryDecline": "Indi, salamat",
+  "telemetrySetting": "Anonymous nga estadistika kag mga crash report",
+  "telemetrySettingHint": "Kon daw ano kasubsob ginagamit ang mga feature kag mga report sang sayop, wala sang personal nga datos ukon sulod sang imo mga pagpangita kag analisis."
 }

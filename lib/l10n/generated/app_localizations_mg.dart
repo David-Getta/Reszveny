@@ -1555,4 +1555,25 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Famintinana teo aloha';
+
+  @override
+  String get telemetryTitle => 'Ampio hanatsara ny WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Zarao ny antontan\'isa momba ny fampiasana sy ny tatitra momba ny fianjerana, tsy misy anarana: ireo endri-javatra ampiasaina sy izay tsy nandeha tsara. Tsy zaraina mihitsy ny anjara-tahirinao, ny fandalinanao na ny angon-drakitrao manokana. Azonao ovaina amin\'ny fotoana rehetra ao amin\'ny Fikirakirana izany.';
+
+  @override
+  String get telemetryAllow => 'Avelao';
+
+  @override
+  String get telemetryDecline => 'Tsia, misaotra';
+
+  @override
+  String get telemetrySetting =>
+      'Antontan\'isa tsy misy anarana sy tatitra momba ny fianjerana';
+
+  @override
+  String get telemetrySettingHint =>
+      'Impiry no ampiasaina ireo endri-javatra sy tatitra momba ny hadisoana, tsy misy angon-drakitra manokana na ny votoatin\'ny fikarohana sy fandalinanao.';
 }

@@ -1545,4 +1545,24 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Edellinen yhteenveto';
+
+  @override
+  String get telemetryTitle => 'Auta parantamaan WhatStockia';
+
+  @override
+  String get telemetryBody =>
+      'Jaa nimettömiä käyttötilastoja ja kaatumisraportteja: mitä ominaisuuksia käytetään ja mikä meni pieleen. Ei koskaan osakkeitasi, analyysejasi tai henkilötietojasi. Voit muuttaa tätä milloin tahansa Asetuksissa.';
+
+  @override
+  String get telemetryAllow => 'Salli';
+
+  @override
+  String get telemetryDecline => 'Ei kiitos';
+
+  @override
+  String get telemetrySetting => 'Nimettömät tilastot ja kaatumisraportit';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kuinka usein ominaisuuksia käytetään sekä virheraportit – ilman henkilötietoja tai hakujesi ja analyysiesi sisältöä.';
 }

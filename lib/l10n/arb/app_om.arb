@@ -421,5 +421,11 @@
   "changesTitle": "Xiinxala duraa as ka ka'ee ({date})",
   "changesPrice": "Gatii",
   "changesNoMajor": "Ilaalchi baay'ee hin jijjiiramne.",
-  "changesPreviousSummary": "Cuunfaa duraa"
+  "changesPreviousSummary": "Cuunfaa duraa",
+  "telemetryTitle": "WhatStock fooyyessuuf gargaari",
+  "telemetryBody": "Istaatistiksii itti fayyadamaa fi gabaasa kufaatii maqaa malee qoodi: amaloota kam akka itti fayyadaman fi maaltu akka dogoggore. Aksiyoonni kee, xiinxalli kee yookaan odeeffannoon dhuunfaa kee gonkumaa hin qoodaman. Kana yeroo kamiyyuu Qindaa'ina keessatti jijjiiruu dandeessa.",
+  "telemetryAllow": "Hayyami",
+  "telemetryDecline": "Lakki, galatoomi",
+  "telemetrySetting": "Istaatistiksii maqaa malee fi gabaasa kufaatii",
+  "telemetrySettingHint": "Amaloonni hammam akka itti fayyadaman fi gabaasa dogoggoraa, odeeffannoo dhuunfaa yookaan qabiyyee barbaacha fi xiinxala kee malee."
 }

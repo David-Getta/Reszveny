@@ -1542,4 +1542,24 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Rezime anvan an';
+
+  @override
+  String get telemetryTitle => 'Ede amelyore WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Pataje estatistik itilizasyon anonim ak rapò sou pann: ki fonksyon yo itilize ak sa ki pa t mache. Pa janm aksyon ou yo, analiz ou yo oswa done pèsonèl ou. Ou ka chanje sa nenpòt ki lè nan Paramèt.';
+
+  @override
+  String get telemetryAllow => 'Pèmèt';
+
+  @override
+  String get telemetryDecline => 'Non, mèsi';
+
+  @override
+  String get telemetrySetting => 'Estatistik anonim ak rapò sou pann';
+
+  @override
+  String get telemetrySettingHint =>
+      'Konbyen fwa yo itilize fonksyon yo ak rapò erè, san done pèsonèl ni kontni rechèch ak analiz ou yo.';
 }

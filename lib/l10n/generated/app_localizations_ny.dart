@@ -1550,4 +1550,25 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Chidule chapitacho';
+
+  @override
+  String get telemetryTitle => 'Thandizani kukonza WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Gawanani ziwerengero za kagwiritsidwe ntchito ndi malipoti a kuwonongeka popanda dzina: ndi zinthu ziti zomwe zimagwiritsidwa ntchito ndi chomwe chalakwika. Osati masheya anu, kusanthula kwanu kapena zambiri zanu zachinsinsi. Mutha kusintha izi nthawi iliyonse mu Zokonda.';
+
+  @override
+  String get telemetryAllow => 'Lolani';
+
+  @override
+  String get telemetryDecline => 'Ayi, zikomo';
+
+  @override
+  String get telemetrySetting =>
+      'Ziwerengero zopanda dzina ndi malipoti a kuwonongeka';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kangati zinthu zimagwiritsidwa ntchito ndi malipoti a zolakwika, popanda zambiri zanu zachinsinsi kapena zomwe mwasaka ndi kusanthula.';
 }

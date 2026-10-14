@@ -1573,4 +1573,24 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Rezumatul anterior';
+
+  @override
+  String get telemetryTitle => 'Ajută la îmbunătățirea WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Trimite statistici anonime de utilizare și rapoarte de blocare: ce funcții sunt folosite și ce nu a funcționat. Niciodată acțiunile, analizele sau datele tale personale. Poți modifica oricând această opțiune din Setări.';
+
+  @override
+  String get telemetryAllow => 'Permite';
+
+  @override
+  String get telemetryDecline => 'Nu, mulțumesc';
+
+  @override
+  String get telemetrySetting => 'Statistici anonime și rapoarte de blocare';
+
+  @override
+  String get telemetrySettingHint =>
+      'Cât de des sunt folosite funcțiile și rapoarte de erori, fără date personale sau conținutul căutărilor și analizelor tale.';
 }

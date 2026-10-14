@@ -1549,4 +1549,25 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Incamake ya mbere';
+
+  @override
+  String get telemetryTitle => 'Fasha gutunganya neza WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Sangiza ibiharuro vy\'ikoreshwa n\'amakuru y\'ivyononekaye atagaragaza uwo uri we: ibikorwa bikoreshwa n\'ibitagenze neza. Nta na rimwe dusangiza imigabane yawe, isesangura ryawe canke amakuru yawe bwite. Ushobora guhindura ibi igihe cose muri Ivyo gutunganya.';
+
+  @override
+  String get telemetryAllow => 'Emera';
+
+  @override
+  String get telemetryDecline => 'Oya, urakoze';
+
+  @override
+  String get telemetrySetting =>
+      'Ibiharuro bitagaragaza izina n\'amakuru y\'ivyononekaye';
+
+  @override
+  String get telemetrySettingHint =>
+      'Incuro ibikorwa bikoreshwa n\'amakuru y\'amakosa, atarimwo amakuru bwite canke ibiri mu marondero n\'isesangura vyawe.';
 }

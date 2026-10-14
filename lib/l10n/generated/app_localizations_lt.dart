@@ -1593,4 +1593,24 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Ankstesnė santrauka';
+
+  @override
+  String get telemetryTitle => 'Padėkite tobulinti WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Bendrinkite anoniminę naudojimo statistiką ir strigčių ataskaitas: kurios funkcijos naudojamos ir kas nepavyko. Niekada – jūsų akcijų, analizių ar asmens duomenų. Tai bet kada galite pakeisti Nustatymuose.';
+
+  @override
+  String get telemetryAllow => 'Leisti';
+
+  @override
+  String get telemetryDecline => 'Ne, ačiū';
+
+  @override
+  String get telemetrySetting => 'Anoniminė statistika ir strigčių ataskaitos';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kaip dažnai naudojamos funkcijos ir klaidų ataskaitos, be asmens duomenų ar jūsų paieškų ir analizių turinio.';
 }

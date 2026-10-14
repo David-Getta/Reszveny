@@ -1550,4 +1550,25 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Mokuse ya kala';
+
+  @override
+  String get telemetryTitle => 'Salisa biso kobongisa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Kabola ba-statistique ya kosalela oyo ezangi nkombo mpe ba-rapport ya ba-plantage: biloko nini basalelaka mpe nini etambolaki malamu te. Ata moke te ba-action na yo, ba-analyse na yo to ba-donnée na yo ya moko. Okoki kobongola yango ntango nyonso na Ba-paramètre.';
+
+  @override
+  String get telemetryAllow => 'Pesa ndingisa';
+
+  @override
+  String get telemetryDecline => 'Te, matondi';
+
+  @override
+  String get telemetrySetting =>
+      'Ba-statistique ezangi nkombo mpe ba-rapport ya ba-plantage';
+
+  @override
+  String get telemetrySettingHint =>
+      'Mbala boni basalelaka biloko mpe ba-rapport ya ba-erreur, kozanga ba-donnée ya moko to makambo ya bolukiluki mpe ba-analyse na yo.';
 }

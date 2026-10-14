@@ -1549,4 +1549,24 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'మునుపటి సారాంశం';
+
+  @override
+  String get telemetryTitle => 'WhatStockను మెరుగుపరచడంలో సహాయపడండి';
+
+  @override
+  String get telemetryBody =>
+      'అనామక వినియోగ గణాంకాలను, క్రాష్ నివేదికలను షేర్ చేయండి: ఏ ఫీచర్‌లు ఉపయోగించబడుతున్నాయి, ఏమి తప్పు జరిగింది. మీ స్టాక్‌లు, విశ్లేషణలు లేదా వ్యక్తిగత డేటా ఎప్పటికీ షేర్ చేయబడవు. దీన్ని మీరు ఎప్పుడైనా సెట్టింగ్‌లలో మార్చవచ్చు.';
+
+  @override
+  String get telemetryAllow => 'అనుమతించండి';
+
+  @override
+  String get telemetryDecline => 'వద్దు, ధన్యవాదాలు';
+
+  @override
+  String get telemetrySetting => 'అనామక గణాంకాలు, క్రాష్ నివేదికలు';
+
+  @override
+  String get telemetrySettingHint =>
+      'ఫీచర్‌లు ఎంత తరచుగా ఉపయోగించబడుతున్నాయి, ఎర్రర్ నివేదికలు — వ్యక్తిగత డేటా లేదా మీ శోధనలు, విశ్లేషణల కంటెంట్ లేకుండా.';
 }

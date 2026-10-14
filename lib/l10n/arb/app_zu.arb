@@ -421,5 +421,11 @@
   "changesTitle": "Kusukela ohlaziyweni lwangaphambilini ({date})",
   "changesPrice": "Intengo",
   "changesNoMajor": "Okulindelekile akushintshanga kakhulu.",
-  "changesPreviousSummary": "Isifinyezo sangaphambilini"
+  "changesPreviousSummary": "Isifinyezo sangaphambilini",
+  "telemetryTitle": "Siza ukuthuthukisa i-WhatStock",
+  "telemetryBody": "Yabelana ngezibalo zokusetshenziswa ezingaziwa nemibiko yokuphahlazeka: yiziphi izici ezisetshenziswayo nokuthi yini engahambanga kahle. Amasheya akho, ukuhlaziya kwakho noma idatha yakho yomuntu siqu akusoze kwabiwa. Ungashintsha lokhu noma nini Ezilungiselelweni.",
+  "telemetryAllow": "Vumela",
+  "telemetryDecline": "Cha ngiyabonga",
+  "telemetrySetting": "Izibalo ezingaziwa nemibiko yokuphahlazeka",
+  "telemetrySettingHint": "Ukuthi izici zisetshenziswa kangakanani nemibiko yamaphutha, ngaphandle kwedatha yomuntu siqu noma okuqukethwe kosesho nokuhlaziya kwakho."
 }

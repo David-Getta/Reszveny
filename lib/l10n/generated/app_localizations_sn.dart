@@ -1548,4 +1548,25 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Pfupiso yapfuura';
+
+  @override
+  String get telemetryTitle => 'Batsira kuvandudza WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Govana nhamba dzekushandiswa dzisingazivikanwe nemishumo yekukanganisika: zvinhu zvinoshandiswa nezvakakanganisika. Kwete masheya ako, ongororo dzako kana ruzivo rwako rwega. Unogona kuchinja izvi chero nguva muMarongero.';
+
+  @override
+  String get telemetryAllow => 'Bvumira';
+
+  @override
+  String get telemetryDecline => 'Kwete, ndatenda';
+
+  @override
+  String get telemetrySetting =>
+      'Nhamba dzisingazivikanwe nemishumo yekukanganisika';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kuti zvinhu zvinoshandiswa kangani nemishumo yezvikanganiso, pasina ruzivo rwako rwega kana zviri mukutsvaga kwako neongororo dzako.';
 }

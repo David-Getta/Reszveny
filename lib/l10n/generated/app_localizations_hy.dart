@@ -1550,4 +1550,25 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Նախորդ ամփոփում';
+
+  @override
+  String get telemetryTitle => 'Օգնեք բարելավել WhatStock-ը';
+
+  @override
+  String get telemetryBody =>
+      'Կիսվեք օգտագործման անանուն վիճակագրությամբ և խափանումների մասին հաշվետվություններով, որոնք ցույց են տալիս, թե որ գործառույթներն են օգտագործվում և ինչն է խափանվել։ Ձեր բաժնետոմսերը, վերլուծությունները կամ անձնական տվյալները երբեք չեն ուղարկվում։ Դա կարող եք փոխել ցանկացած պահի Կարգավորումներում։';
+
+  @override
+  String get telemetryAllow => 'Թույլատրել';
+
+  @override
+  String get telemetryDecline => 'Ոչ, շնորհակալություն';
+
+  @override
+  String get telemetrySetting =>
+      'Անանուն վիճակագրություն և խափանումների հաշվետվություններ';
+
+  @override
+  String get telemetrySettingHint =>
+      'Գործառույթների օգտագործման հաճախականությունը և սխալների հաշվետվությունները՝ առանց անձնական տվյալների կամ ձեր որոնումների ու վերլուծությունների բովանդակության։';
 }

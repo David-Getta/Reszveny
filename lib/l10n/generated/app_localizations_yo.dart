@@ -1543,4 +1543,24 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Àkópọ̀ ti tẹ́lẹ̀';
+
+  @override
+  String get telemetryTitle => 'Ràn wá lọ́wọ́ láti mú WhatStock dára síi';
+
+  @override
+  String get telemetryBody =>
+      'Pín ìṣirò ìlò láìdárúkọ àti àwọn ìròyìn ìjàlù: àwọn ẹ̀yà wo ni a ń lò àti ohun tí kò lọ dáadáa. A kò ní fi àwọn ìpín rẹ, ìtúpalẹ̀ rẹ tàbí dátà ara ẹni rẹ ránṣẹ́ láé. O lè yí èyí padà nígbàkúgbà nínú Ètò.';
+
+  @override
+  String get telemetryAllow => 'Gbà láàyè';
+
+  @override
+  String get telemetryDecline => 'Rárá o ṣé';
+
+  @override
+  String get telemetrySetting => 'Ìṣirò láìdárúkọ àti ìròyìn ìjàlù';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ìgbà mélòó ni a ń lo àwọn ẹ̀yà àti ìròyìn àṣìṣe, láìsí dátà ara ẹni tàbí àkóónú àwọn ìwádìí àti ìtúpalẹ̀ rẹ.';
 }

@@ -1526,4 +1526,24 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ສະຫຼຸບກ່ອນໜ້າ';
+
+  @override
+  String get telemetryTitle => 'ຊ່ວຍປັບປຸງ WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'ແບ່ງປັນສະຖິຕິການນຳໃຊ້ແບບບໍ່ລະບຸຕົວຕົນ ແລະ ລາຍງານການຂັດຂ້ອງ: ຄຸນສົມບັດໃດທີ່ຖືກນຳໃຊ້ ແລະ ມີຫຍັງຜິດພາດ. ບໍ່ມີຮຸ້ນ, ການວິເຄາະ ຫຼື ຂໍ້ມູນສ່ວນຕົວຂອງທ່ານເດັດຂາດ. ທ່ານສາມາດປ່ຽນແປງສິ່ງນີ້ໄດ້ທຸກເວລາໃນການຕັ້ງຄ່າ.';
+
+  @override
+  String get telemetryAllow => 'ອະນຸຍາດ';
+
+  @override
+  String get telemetryDecline => 'ບໍ່, ຂອບໃຈ';
+
+  @override
+  String get telemetrySetting => 'ສະຖິຕິແບບບໍ່ລະບຸຕົວຕົນ ແລະ ລາຍງານການຂັດຂ້ອງ';
+
+  @override
+  String get telemetrySettingHint =>
+      'ຄວາມຖີ່ໃນການນຳໃຊ້ຄຸນສົມບັດ ແລະ ລາຍງານຂໍ້ຜິດພາດ ໂດຍບໍ່ມີຂໍ້ມູນສ່ວນຕົວ ຫຼື ເນື້ອຫາຂອງການຊອກຫາ ແລະ ການວິເຄາະຂອງທ່ານ.';
 }

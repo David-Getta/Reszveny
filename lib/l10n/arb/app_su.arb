@@ -421,5 +421,11 @@
   "changesTitle": "Ti saprak analisis saméméhna ({date})",
   "changesPrice": "Harga",
   "changesNoMajor": "Prospékna teu robah sacara signifikan.",
-  "changesPreviousSummary": "Ringkesan saméméhna"
+  "changesPreviousSummary": "Ringkesan saméméhna",
+  "telemetryTitle": "Bantuan ngaronjatkeun WhatStock",
+  "telemetryBody": "Bagikeun statistik pamakéan anonim jeung laporan kacilakaan aplikasi: fitur mana nu dipaké jeung naon nu salah. Saham, analisis, atawa data pribadi anjeun moal pernah dibagikeun. Anjeun bisa ngarobah ieu iraha waé dina Setélan.",
+  "telemetryAllow": "Idinan",
+  "telemetryDecline": "Henteu, hatur nuhun",
+  "telemetrySetting": "Statistik anonim jeung laporan kacilakaan aplikasi",
+  "telemetrySettingHint": "Sabaraha sering fitur dipaké jeung laporan kasalahan, tanpa data pribadi atawa eusi pamilarian jeung analisis anjeun."
 }

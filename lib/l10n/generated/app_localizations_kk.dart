@@ -1544,4 +1544,24 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Алдыңғы қорытынды';
+
+  @override
+  String get telemetryTitle => 'WhatStock-ты жақсартуға көмектесіңіз';
+
+  @override
+  String get telemetryBody =>
+      'Пайдалану туралы анонимді статистика мен ақау туралы есептерді бөлісіңіз: қай функциялар қолданылады және не қате кетті. Акцияларыңыз, талдауларыңыз немесе жеке деректеріңіз ешқашан жіберілмейді. Мұны кез келген уақытта Параметрлер бөлімінде өзгертуге болады.';
+
+  @override
+  String get telemetryAllow => 'Рұқсат ету';
+
+  @override
+  String get telemetryDecline => 'Жоқ, рахмет';
+
+  @override
+  String get telemetrySetting => 'Анонимді статистика және ақау туралы есептер';
+
+  @override
+  String get telemetrySettingHint =>
+      'Функциялардың қаншалықты жиі қолданылатыны және қате туралы есептер — жеке деректерсіз, іздеулеріңіз бен талдауларыңыздың мазмұнынсыз.';
 }

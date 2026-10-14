@@ -1552,4 +1552,25 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Tshobokanyo ya pele';
+
+  @override
+  String get telemetryTitle => 'Thusa go tokafatsa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Abelana dipalopalo tsa tiriso tse di sa itsiweng le dipego tsa go wa: gore ke dikarolo dife tse di dirisiwang le gore go sentse eng. Ga re ke re abelana disheri tsa gago, ditshekatsheko tsa gago kgotsa tshedimosetso ya gago ya botho. O ka fetola se nako nngwe le nngwe mo Dithulaganyong.';
+
+  @override
+  String get telemetryAllow => 'Letla';
+
+  @override
+  String get telemetryDecline => 'Nnyaa, ke a leboga';
+
+  @override
+  String get telemetrySetting =>
+      'Dipalopalo tse di sa itsiweng le dipego tsa go wa';
+
+  @override
+  String get telemetrySettingHint =>
+      'Gore dikarolo di dirisiwa gangwe ga kae le dipego tsa diphoso, kwa ntle ga tshedimosetso ya botho kgotsa diteng tsa dipatlisiso le ditshekatsheko tsa gago.';
 }

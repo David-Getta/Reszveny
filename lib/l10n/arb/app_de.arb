@@ -421,5 +421,11 @@
   "changesTitle": "Seit der vorherigen Analyse ({date})",
   "changesPrice": "Kurs",
   "changesNoMajor": "Der Ausblick hat sich nicht wesentlich verändert.",
-  "changesPreviousSummary": "Vorherige Zusammenfassung"
+  "changesPreviousSummary": "Vorherige Zusammenfassung",
+  "telemetryTitle": "Hilf mit, WhatStock zu verbessern",
+  "telemetryBody": "Teile anonyme Nutzungsstatistiken und Absturzberichte: welche Funktionen genutzt werden und was schiefgelaufen ist. Niemals deine Aktien, Analysen oder persönlichen Daten. Du kannst das jederzeit in den Einstellungen ändern.",
+  "telemetryAllow": "Erlauben",
+  "telemetryDecline": "Nein danke",
+  "telemetrySetting": "Anonyme Statistiken und Absturzberichte",
+  "telemetrySettingHint": "Wie oft Funktionen genutzt werden und Fehlerberichte – ohne persönliche Daten oder Inhalte deiner Suchen und Analysen."
 }

@@ -1548,4 +1548,25 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Cuunfaa duraa';
+
+  @override
+  String get telemetryTitle => 'WhatStock fooyyessuuf gargaari';
+
+  @override
+  String get telemetryBody =>
+      'Istaatistiksii itti fayyadamaa fi gabaasa kufaatii maqaa malee qoodi: amaloota kam akka itti fayyadaman fi maaltu akka dogoggore. Aksiyoonni kee, xiinxalli kee yookaan odeeffannoon dhuunfaa kee gonkumaa hin qoodaman. Kana yeroo kamiyyuu Qindaa\'ina keessatti jijjiiruu dandeessa.';
+
+  @override
+  String get telemetryAllow => 'Hayyami';
+
+  @override
+  String get telemetryDecline => 'Lakki, galatoomi';
+
+  @override
+  String get telemetrySetting =>
+      'Istaatistiksii maqaa malee fi gabaasa kufaatii';
+
+  @override
+  String get telemetrySettingHint =>
+      'Amaloonni hammam akka itti fayyadaman fi gabaasa dogoggoraa, odeeffannoo dhuunfaa yookaan qabiyyee barbaacha fi xiinxala kee malee.';
 }

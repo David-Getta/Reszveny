@@ -421,5 +421,11 @@
   "changesTitle": "Kuchokera pa kusanthula kwapitako ({date})",
   "changesPrice": "Mtengo",
   "changesNoMajor": "Zomwe zikuyembekezeka sizinasinthe kwambiri.",
-  "changesPreviousSummary": "Chidule chapitacho"
+  "changesPreviousSummary": "Chidule chapitacho",
+  "telemetryTitle": "Thandizani kukonza WhatStock",
+  "telemetryBody": "Gawanani ziwerengero za kagwiritsidwe ntchito ndi malipoti a kuwonongeka popanda dzina: ndi zinthu ziti zomwe zimagwiritsidwa ntchito ndi chomwe chalakwika. Osati masheya anu, kusanthula kwanu kapena zambiri zanu zachinsinsi. Mutha kusintha izi nthawi iliyonse mu Zokonda.",
+  "telemetryAllow": "Lolani",
+  "telemetryDecline": "Ayi, zikomo",
+  "telemetrySetting": "Ziwerengero zopanda dzina ndi malipoti a kuwonongeka",
+  "telemetrySettingHint": "Kangati zinthu zimagwiritsidwa ntchito ndi malipoti a zolakwika, popanda zambiri zanu zachinsinsi kapena zomwe mwasaka ndi kusanthula."
 }

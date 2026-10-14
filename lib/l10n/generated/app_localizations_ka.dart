@@ -1545,4 +1545,24 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'წინა შეჯამება';
+
+  @override
+  String get telemetryTitle => 'დაგვეხმარეთ WhatStock-ის გაუმჯობესებაში';
+
+  @override
+  String get telemetryBody =>
+      'გააზიარეთ გამოყენების ანონიმური სტატისტიკა და ავარიის ანგარიშები: რომელი ფუნქციები გამოიყენება და რა მოხდა არასწორად. თქვენი აქციები, ანალიზები ან პერსონალური მონაცემები არასოდეს იგზავნება. ამის შეცვლა ნებისმიერ დროს შეგიძლიათ პარამეტრებში.';
+
+  @override
+  String get telemetryAllow => 'დაშვება';
+
+  @override
+  String get telemetryDecline => 'არა, გმადლობთ';
+
+  @override
+  String get telemetrySetting => 'ანონიმური სტატისტიკა და ავარიის ანგარიშები';
+
+  @override
+  String get telemetrySettingHint =>
+      'რამდენად ხშირად გამოიყენება ფუნქციები და შეცდომების ანგარიშები, პერსონალური მონაცემებისა და თქვენი ძიებებისა და ანალიზების შინაარსის გარეშე.';
 }

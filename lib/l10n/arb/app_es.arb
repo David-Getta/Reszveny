@@ -421,5 +421,11 @@
   "changesTitle": "Desde el análisis anterior ({date})",
   "changesPrice": "Precio",
   "changesNoMajor": "Las perspectivas no han cambiado de forma significativa.",
-  "changesPreviousSummary": "Resumen anterior"
+  "changesPreviousSummary": "Resumen anterior",
+  "telemetryTitle": "Ayuda a mejorar WhatStock",
+  "telemetryBody": "Comparte estadísticas de uso anónimas e informes de fallos: qué funciones se usan y qué salió mal. Nunca tus acciones, análisis ni datos personales. Puedes cambiarlo en cualquier momento en Ajustes.",
+  "telemetryAllow": "Permitir",
+  "telemetryDecline": "No, gracias",
+  "telemetrySetting": "Estadísticas anónimas e informes de fallos",
+  "telemetrySettingHint": "Con qué frecuencia se usan las funciones e informes de errores, sin datos personales ni el contenido de tus búsquedas y análisis."
 }

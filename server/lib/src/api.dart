@@ -6,6 +6,7 @@ import 'package:markdown/markdown.dart' as md;
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
+import 'admin_page.dart';
 import 'db.dart';
 import 'invites.dart';
 import 'mailer.dart';
@@ -13,6 +14,7 @@ import 'plans.dart';
 import 'purchase_verifier.dart';
 import 'quota.dart';
 import 'stripe.dart';
+import 'telemetry.dart';
 
 /// A WhatStock backend útvonalai.
 ///
@@ -58,9 +60,17 @@ class Api {
     this.invites = const InviteBook(),
     this.referralBonus = 5,
     this.referralMax = 10,
+    this.adminToken = '',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
-       quota = Quota(store);
+       quota = Quota(store),
+       telemetry = TelemetryStore(store.database);
+
+  /// Névtelen statisztika és hibajelentések (az app hozzájárulással küldi).
+  final TelemetryStore telemetry;
+
+  /// A `/admin` statisztika-oldal kulcsa; üresen az oldal nem érhető el.
+  final String adminToken;
 
   final Mailer mailer;
 
@@ -134,6 +144,10 @@ class Api {
       ..post('/v1/auth/email/start', _emailStart)
       ..post('/v1/auth/email/verify', _emailVerify)
       ..post('/v1/auth/logout', _logout)
+      ..post('/v1/telemetry', _telemetry)
+      ..get('/admin', _adminLogin)
+      ..post('/admin', _adminStats)
+      ..get('/admin/stats.json', _adminStatsJson)
       ..get('/v1/referral', _referral)
       ..post('/v1/referral/redeem', _redeemReferral)
       ..delete('/v1/account', _deleteAccount)
@@ -312,6 +326,49 @@ class Api {
     store
       ..save(a)
       ..save(b);
+  }
+
+  // ---- Névtelen statisztika ----
+
+  Future<Response> _telemetry(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    telemetry.record(uid, await _body(r));
+    return _json({'ok': true});
+  }
+
+  /// Állandó idejű összehasonlítás (a kulcs ne legyen kitalálható időméréssel).
+  bool _isAdmin(String? key) {
+    if (adminToken.isEmpty || key == null) return false;
+    final a = Store.hashToken(key), b = Store.hashToken(adminToken);
+    var diff = 0;
+    for (var i = 0; i < a.length; i++) {
+      diff |= a.codeUnitAt(i) ^ b.codeUnitAt(i);
+    }
+    return diff == 0;
+  }
+
+  static Response _html(String body, {int status = 200}) => Response(
+    status,
+    body: body,
+    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex'},
+  );
+
+  Response _adminLogin(Request r) => adminToken.isEmpty ? Response.notFound('not found') : _html(adminLoginPage());
+
+  Future<Response> _adminStats(Request r) async {
+    if (adminToken.isEmpty) return Response.notFound('not found');
+    final key = Uri.splitQueryString(await r.readAsString())['key'];
+    if (!_isAdmin(key)) return _html(adminLoginPage(wrong: true), status: 403);
+    return _html(adminStatsPage(telemetry.stats()));
+  }
+
+  /// Ugyanez JSON-ban, `Authorization: Bearer <ADMIN_TOKEN>` fejléccel (szkriptekhez).
+  Response _adminStatsJson(Request r) {
+    if (adminToken.isEmpty) return Response.notFound('not found');
+    if (!_isAdmin(_token(r))) return _error(403, 'forbidden');
+    final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
+    return _json(telemetry.stats(days: days));
   }
 
   // ---- Ajánlói program ----

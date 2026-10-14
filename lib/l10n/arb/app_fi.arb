@@ -421,5 +421,11 @@
   "changesTitle": "Edellisen analyysin jälkeen ({date})",
   "changesPrice": "Kurssi",
   "changesNoMajor": "Näkymät eivät ole muuttuneet olennaisesti.",
-  "changesPreviousSummary": "Edellinen yhteenveto"
+  "changesPreviousSummary": "Edellinen yhteenveto",
+  "telemetryTitle": "Auta parantamaan WhatStockia",
+  "telemetryBody": "Jaa nimettömiä käyttötilastoja ja kaatumisraportteja: mitä ominaisuuksia käytetään ja mikä meni pieleen. Ei koskaan osakkeitasi, analyysejasi tai henkilötietojasi. Voit muuttaa tätä milloin tahansa Asetuksissa.",
+  "telemetryAllow": "Salli",
+  "telemetryDecline": "Ei kiitos",
+  "telemetrySetting": "Nimettömät tilastot ja kaatumisraportit",
+  "telemetrySettingHint": "Kuinka usein ominaisuuksia käytetään sekä virheraportit – ilman henkilötietoja tai hakujesi ja analyysiesi sisältöä."
 }

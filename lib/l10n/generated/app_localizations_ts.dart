@@ -1553,4 +1553,25 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nkomiso lowu hundzeke';
+
+  @override
+  String get telemetryTitle => 'Pfuna ku antswisa WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Avelana tinhlayo ta matirhiselo leti nga paluxiki vito ni swiviko swa ku wa: hi swihi swiphemu leswi tirhisiwaka ni leswi hoxekeke. Switoko swa wena, nxopaxopo wa wena kumbe vuxokoxoko bya wena bya xiviri a swi nge avelaniwi nikatsongo. U nga swi cinca nkarhi wun\'wana ni wun\'wana eka Swiyimiso.';
+
+  @override
+  String get telemetryAllow => 'Pfumelela';
+
+  @override
+  String get telemetryDecline => 'E-e, inkomu';
+
+  @override
+  String get telemetrySetting =>
+      'Tinhlayo leti nga paluxiki vito ni swiviko swa ku wa';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ku tirhisiwa kangani ka swiphemu ni swiviko swa swihoxo, handle ka vuxokoxoko bya xiviri kumbe leswi nga eka ku lavisisa ni nxopaxopo wa wena.';
 }

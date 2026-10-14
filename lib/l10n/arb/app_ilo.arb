@@ -421,5 +421,11 @@
   "changesTitle": "Manipud iti immuna a panangsukimat ({date})",
   "changesPrice": "Presio",
   "changesNoMajor": "Awan ti dakkel a panagbalbaliw iti pangnamnamaan.",
-  "changesPreviousSummary": "Immuna a pakabuklan"
+  "changesPreviousSummary": "Immuna a pakabuklan",
+  "telemetryTitle": "Tulongannakami a pasayaaten ti WhatStock",
+  "telemetryBody": "Ibinglay ti anonimo nga estadistika ti panagusar ken dagiti crash report: no ania dagiti feature ti us-usaren ken no ania ti nagbiddut. Saan a pulos dagiti stock, analisis wenno personal a datosmo. Mabalinmo a baliwan daytoy iti aniaman nga oras iti Dagiti Setting.",
+  "telemetryAllow": "Ipalubos",
+  "telemetryDecline": "Saan, agyamanak",
+  "telemetrySetting": "Anonimo nga estadistika ken dagiti crash report",
+  "telemetrySettingHint": "No kasano ti kasansan a pannakausar dagiti feature ken dagiti report ti biddut, awan ti personal a datos wenno linaon dagiti panagsapul ken analisismo."
 }

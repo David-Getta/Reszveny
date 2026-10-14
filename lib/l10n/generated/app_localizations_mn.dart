@@ -1545,4 +1545,24 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Өмнөх хураангуй';
+
+  @override
+  String get telemetryTitle => 'WhatStock-ийг сайжруулахад туслаарай';
+
+  @override
+  String get telemetryBody =>
+      'Нэргүй хэрэглээний статистик болон алдааны тайлан хуваалцах: аль функцуудыг ашиглаж байгаа, юу буруу болсон. Таны хувьцаа, шинжилгээ, хувийн мэдээлэл хэзээ ч хуваалцагдахгүй. Үүнийг хүссэн үедээ Тохиргоо хэсэгт өөрчилж болно.';
+
+  @override
+  String get telemetryAllow => 'Зөвшөөрөх';
+
+  @override
+  String get telemetryDecline => 'Үгүй, баярлалаа';
+
+  @override
+  String get telemetrySetting => 'Нэргүй статистик ба алдааны тайлан';
+
+  @override
+  String get telemetrySettingHint =>
+      'Функцуудыг хэр олон удаа ашигладаг болон алдааны мэдээлэл — хувийн мэдээлэл, таны хайлт, шинжилгээний агуулгагүйгээр.';
 }

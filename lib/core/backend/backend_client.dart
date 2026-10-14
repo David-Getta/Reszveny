@@ -300,6 +300,19 @@ class BackendClient {
     return _entitlements(_decode(res));
   }
 
+  /// `POST /v1/telemetry` → névtelen eseményszámok és hibajelentések (csak a
+  /// felhasználó hozzájárulásával küldjük).
+  Future<void> sendTelemetry(Map<String, dynamic> batch) async {
+    final res = await _authorized(
+      (h) => _inner.post(
+        Uri.parse('$baseUrl/v1/telemetry'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode(batch),
+      ),
+    );
+    _decode(res);
+  }
+
   /// `POST /v1/purchases/verify` → a szerver ellenőrzi a bolti bizonylatot és
   /// jóváírja a csomagot; a válasz a friss jogosultság.
   Future<EntitlementState> verifyPurchase({

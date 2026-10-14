@@ -1541,4 +1541,24 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ପୂର୍ବ ସାରାଂଶ';
+
+  @override
+  String get telemetryTitle => 'WhatStockକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ';
+
+  @override
+  String get telemetryBody =>
+      'ଅଜ୍ଞାତ ବ୍ୟବହାର ପରିସଂଖ୍ୟାନ ଏବଂ କ୍ରାସ ରିପୋର୍ଟ ସେୟାର କରନ୍ତୁ: କେଉଁ ଫିଚର ବ୍ୟବହାର ହେଉଛି ଏବଂ କଣ ଭୁଲ ହେଲା। ଆପଣଙ୍କ ସେୟାର, ବିଶ୍ଳେଷଣ କିମ୍ବା ବ୍ୟକ୍ତିଗତ ଡାଟା କେବେ ନୁହେଁ। ଆପଣ ଏହାକୁ ଯେକୌଣସି ସମୟରେ ସେଟିଂସରେ ବଦଳାଇ ପାରିବେ।';
+
+  @override
+  String get telemetryAllow => 'ଅନୁମତି ଦିଅନ୍ତୁ';
+
+  @override
+  String get telemetryDecline => 'ନା, ଧନ୍ୟବାଦ';
+
+  @override
+  String get telemetrySetting => 'ଅଜ୍ଞାତ ପରିସଂଖ୍ୟାନ ଏବଂ କ୍ରାସ ରିପୋର୍ଟ';
+
+  @override
+  String get telemetrySettingHint =>
+      'ଫିଚରଗୁଡ଼ିକ କେତେ ଥର ବ୍ୟବହୃତ ହୁଏ ଏବଂ ତ୍ରୁଟି ରିପୋର୍ଟ, ବ୍ୟକ୍ତିଗତ ଡାଟା କିମ୍ବା ଆପଣଙ୍କ ସନ୍ଧାନ ଓ ବିଶ୍ଳେଷଣର ବିଷୟବସ୍ତୁ ବିନା।';
 }

@@ -421,5 +421,11 @@
   "changesTitle": "Ukusukela kuhlalutyo lwangaphambili ({date})",
   "changesPrice": "Ixabiso",
   "changesNoMajor": "Imbono ayitshintshanga kakhulu.",
-  "changesPreviousSummary": "Isishwankathelo sangaphambili"
+  "changesPreviousSummary": "Isishwankathelo sangaphambili",
+  "telemetryTitle": "Nceda uphucule i-WhatStock",
+  "telemetryBody": "Yabelana ngeenkcukacha-manani zokusetyenziswa ezingachazi gama kunye neengxelo zokuwa: zeziphi iimpawu ezisetyenziswayo nokuba yintoni engahambanga kakuhle. Izabelo zakho, uhlalutyo lwakho okanye iinkcukacha zakho zobuqu azisoze zabelwane. Ungakutshintsha oku nangaliphi na ixesha kwiiSetingi.",
+  "telemetryAllow": "Vumela",
+  "telemetryDecline": "Hayi, enkosi",
+  "telemetrySetting": "Iinkcukacha-manani ezingachazi gama kunye neengxelo zokuwa",
+  "telemetrySettingHint": "Kangakanani iimpawu zisetyenziswa kunye neengxelo zeempazamo, ngaphandle kweenkcukacha zobuqu okanye umxholo wokukhangela nohlalutyo lwakho."
 }

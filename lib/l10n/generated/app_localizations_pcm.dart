@@ -1544,4 +1544,24 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Last summary';
+
+  @override
+  String get telemetryTitle => 'Help us make WhatStock better';
+
+  @override
+  String get telemetryBody =>
+      'Share anonymous usage stats and crash reports: which features people dey use and wetin spoil. We no go ever share your stocks, analysis or personal data. You fit change am anytime for Settings.';
+
+  @override
+  String get telemetryAllow => 'Allow am';
+
+  @override
+  String get telemetryDecline => 'No, thank you';
+
+  @override
+  String get telemetrySetting => 'Anonymous stats and crash reports';
+
+  @override
+  String get telemetrySettingHint =>
+      'How often people dey use features and error reports, without personal data or wetin you search and analyse.';
 }

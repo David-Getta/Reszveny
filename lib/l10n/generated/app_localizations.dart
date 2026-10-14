@@ -2868,6 +2868,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Previous summary'**
   String get changesPreviousSummary;
+
+  /// No description provided for @telemetryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Help improve WhatStock'**
+  String get telemetryTitle;
+
+  /// No description provided for @telemetryBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Share anonymous usage statistics and crash reports: which features are used and what went wrong. Never your stocks, analyses or personal data. You can change this at any time in Settings.'**
+  String get telemetryBody;
+
+  /// No description provided for @telemetryAllow.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get telemetryAllow;
+
+  /// No description provided for @telemetryDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'No thanks'**
+  String get telemetryDecline;
+
+  /// No description provided for @telemetrySetting.
+  ///
+  /// In en, this message translates to:
+  /// **'Anonymous statistics and crash reports'**
+  String get telemetrySetting;
+
+  /// No description provided for @telemetrySettingHint.
+  ///
+  /// In en, this message translates to:
+  /// **'How often features are used and error reports, without personal data or the content of your searches and analyses.'**
+  String get telemetrySettingHint;
 }
 
 class _AppLocalizationsDelegate

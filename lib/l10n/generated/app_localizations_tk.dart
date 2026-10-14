@@ -1542,4 +1542,24 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Öňki gysgaça mazmun';
+
+  @override
+  String get telemetryTitle => 'WhatStock-y gowulandyrmaga kömek ediň';
+
+  @override
+  String get telemetryBody =>
+      'Anonim ulanyş statistikasyny we näsazlyk hasabatlaryny paýlaşyň: haýsy funksiýalaryň ulanylýandygy we näme ýalňyş bolandygy. Paýnamalaryňyz, seljermeleriňiz ýa-da şahsy maglumatlaryňyz hiç haçan paýlaşylmaýar. Muny islän wagtyňyz Sazlamalarda üýtgedip bilersiňiz.';
+
+  @override
+  String get telemetryAllow => 'Rugsat ber';
+
+  @override
+  String get telemetryDecline => 'Ýok, sag boluň';
+
+  @override
+  String get telemetrySetting => 'Anonim statistika we näsazlyk hasabatlary';
+
+  @override
+  String get telemetrySettingHint =>
+      'Funksiýalaryň näçe gezek ulanylýandygy we ýalňyşlyk hasabatlary, şahsy maglumatlarsyz we gözlegleriňiziň hem-de seljermeleriňiziň mazmunysyz.';
 }

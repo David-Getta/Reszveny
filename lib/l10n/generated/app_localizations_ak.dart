@@ -1542,4 +1542,25 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nhwehwɛmu a edi kan no tiawa';
+
+  @override
+  String get telemetryTitle => 'Boa ma WhatStock nyɛ yiye';
+
+  @override
+  String get telemetryBody =>
+      'Kyɛ akontaabu a ɛmfa wo din a ɛfa sɛnea wode app no di dwuma ne mfomso ho amanneɛbɔ: dwumadi a wode di dwuma ne nea ɛkɔɔ basaa. Yɛremfa wo nkyɛfa, wo nhwehwɛmu anaa wo ankasa wo ho nsɛm nkyɛ da. Wobɛtumi asesa yei bere biara wɔ Nhyehyɛe mu.';
+
+  @override
+  String get telemetryAllow => 'Ma kwan';
+
+  @override
+  String get telemetryDecline => 'Daabi, meda wo ase';
+
+  @override
+  String get telemetrySetting =>
+      'Akontaabu a ɛmfa wo din ne mfomso ho amanneɛbɔ';
+
+  @override
+  String get telemetrySettingHint =>
+      'Mpɛn dodow a wode dwumadi ahorow di dwuma ne mfomso ho amanneɛbɔ, a wo ankasa wo ho nsɛm anaa nea wohwehwɛ ne wo nhwehwɛmu mu nsɛm nni mu.';
 }

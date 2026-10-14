@@ -1530,4 +1530,24 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'សេចក្តីសង្ខេបមុន';
+
+  @override
+  String get telemetryTitle => 'ជួយកែលម្អ WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'ចែករំលែកស្ថិតិប្រើប្រាស់អនាមិក និងរបាយការណ៍គាំង៖ មុខងារណាខ្លះដែលត្រូវបានប្រើ និងអ្វីដែលខុសប្រក្រតី។ មិនដែលរួមបញ្ចូលភាគហ៊ុន ការវិភាគ ឬទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកឡើយ។ អ្នកអាចប្ដូរវាបានគ្រប់ពេលនៅក្នុងការកំណត់។';
+
+  @override
+  String get telemetryAllow => 'អនុញ្ញាត';
+
+  @override
+  String get telemetryDecline => 'ទេ អរគុណ';
+
+  @override
+  String get telemetrySetting => 'ស្ថិតិអនាមិក និងរបាយការណ៍គាំង';
+
+  @override
+  String get telemetrySettingHint =>
+      'ភាពញឹកញាប់នៃការប្រើមុខងារ និងរបាយការណ៍កំហុស ដោយគ្មានទិន្នន័យផ្ទាល់ខ្លួន ឬខ្លឹមសារនៃការស្វែងរក និងការវិភាគរបស់អ្នក។';
 }

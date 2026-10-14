@@ -83,6 +83,26 @@ Példa: `DAVID-4Q8ZRT:Getta Dávid::5:30,GABOR-K7M2XQ:Schulz Gábor:2026-11-30:2
   onnantól az a kód semmire nem jó.
 - A saját kódodat is vedd fel, mert a kódot minden példány kéri, a tiéd is.
 
+## Statisztika és hibák: a `/admin` oldal
+
+Az app – csak ha a felhasználó engedélyezi (a kezdőképernyőn egyszer megkérdezi, a beállításokban
+bármikor kikapcsolható) – névtelen eseményszámokat (indítás, fotó, elemzés, csomagválasztó,
+vásárlás, megosztás, riasztás) és hibajelentéseket küld a szervernek. Részvényt, elemzést, e-mailt
+nem küld; a hibaszövegből az e-mail-címeket és a tokeneket kitakarja.
+
+1. Railway → *Variables* → *New Variable*: `ADMIN_TOKEN` = egy hosszú, véletlen jelszó (pl. egy
+   jelszókezelővel generált 32 karakteres). Ezt se írd chatbe.
+2. Böngészőben: `https://<szerver címe>/admin` → írd be a kulcsot → napi bontás (aktív
+   felhasználók, új fiókok, elemzések, vásárlások, események), platformok, verziók és a leggyakoribb
+   hibák veremnyommal.
+3. Szkriptből: `GET /admin/stats.json?days=90`, `Authorization: Bearer <ADMIN_TOKEN>` fejléccel.
+
+Az `ADMIN_TOKEN` nélkül az oldal nem létezik (404). Az új fiókok, elemzések és vásárlások a szerver
+saját számai (ezekhez nem kell hozzájárulás); a többi csak a statisztikát engedélyezőktől jön.
+Megőrzés: napi összesítés 400 nap, napi aktív felhasználók (naponta más sóval képzett, össze nem
+köthető hash) 90 nap, hibák 30 nap az utolsó előfordulás után. Az adatkezelési tájékoztatóba ezt
+is bele kell írni (lásd a jogi dokumentumot).
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

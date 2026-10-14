@@ -421,5 +421,11 @@
   "changesTitle": "ካብቲ ዝሓለፈ ትንተና ጀሚሩ ({date})",
   "changesPrice": "ዋጋ",
   "changesNoMajor": "ትጽቢት ብዙሕ ኣይተቐየረን።",
-  "changesPreviousSummary": "ዝሓለፈ ጽማቝ"
+  "changesPreviousSummary": "ዝሓለፈ ጽማቝ",
+  "telemetryTitle": "WhatStock ንምምሕያሽ ሓግዙ",
+  "telemetryBody": "ስም ዘይብሉ ስታቲስቲክስ ኣጠቓቕማን ጸብጻባት ብልሽትን ኣካፍሉ፡ ኣየኖት ባህርያት ይጥቀሙሎም ከምኡውን እንታይ ተጋግዩ። ኣክስዮናትኩም፡ ትንተናታትኩም ወይ ውልቃዊ ሓበሬታኹም ፈጺሙ ኣይካፈልን። ነዚ ኣብ ዝኾነ እዋን ኣብ ቅጥዕታት ክትቅይርዎ ትኽእሉ ኢኹም።",
+  "telemetryAllow": "ፍቐዱ",
+  "telemetryDecline": "ኣይፋል፡ የቐንየለይ",
+  "telemetrySetting": "ስም ዘይብሉ ስታቲስቲክስን ጸብጻባት ብልሽትን",
+  "telemetrySettingHint": "ባህርያት ክንደይ ግዜ ከም ዝጥቀሙሎምን ጸብጻባት ጌጋታትን፡ ብዘይ ውልቃዊ ሓበሬታ ወይ ትሕዝቶ ምድላያትኩምን ትንተናታትኩምን።"
 }

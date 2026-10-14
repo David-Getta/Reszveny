@@ -421,5 +421,11 @@
   "changesTitle": "Hatramin'ny fandalinana teo aloha ({date})",
   "changesPrice": "Vidiny",
   "changesNoMajor": "Tsy dia niova loatra ny vinavina.",
-  "changesPreviousSummary": "Famintinana teo aloha"
+  "changesPreviousSummary": "Famintinana teo aloha",
+  "telemetryTitle": "Ampio hanatsara ny WhatStock",
+  "telemetryBody": "Zarao ny antontan'isa momba ny fampiasana sy ny tatitra momba ny fianjerana, tsy misy anarana: ireo endri-javatra ampiasaina sy izay tsy nandeha tsara. Tsy zaraina mihitsy ny anjara-tahirinao, ny fandalinanao na ny angon-drakitrao manokana. Azonao ovaina amin'ny fotoana rehetra ao amin'ny Fikirakirana izany.",
+  "telemetryAllow": "Avelao",
+  "telemetryDecline": "Tsia, misaotra",
+  "telemetrySetting": "Antontan'isa tsy misy anarana sy tatitra momba ny fianjerana",
+  "telemetrySettingHint": "Impiry no ampiasaina ireo endri-javatra sy tatitra momba ny hadisoana, tsy misy angon-drakitra manokana na ny votoatin'ny fikarohana sy fandalinanao."
 }

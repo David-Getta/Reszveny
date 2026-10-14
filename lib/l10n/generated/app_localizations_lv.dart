@@ -1579,4 +1579,24 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Iepriekšējais kopsavilkums';
+
+  @override
+  String get telemetryTitle => 'Palīdziet uzlabot WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Kopīgojiet anonīmu lietošanas statistiku un avāriju ziņojumus: kuras funkcijas tiek izmantotas un kas nogāja greizi. Jūsu akcijas, analīzes vai personas dati netiek kopīgoti nekad. To jebkurā laikā varat mainīt Iestatījumos.';
+
+  @override
+  String get telemetryAllow => 'Atļaut';
+
+  @override
+  String get telemetryDecline => 'Nē, paldies';
+
+  @override
+  String get telemetrySetting => 'Anonīma statistika un avāriju ziņojumi';
+
+  @override
+  String get telemetrySettingHint =>
+      'Cik bieži tiek izmantotas funkcijas, un kļūdu ziņojumi — bez personas datiem vai jūsu meklējumu un analīžu satura.';
 }

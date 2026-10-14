@@ -1547,4 +1547,24 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Ringkasan sebelumnya';
+
+  @override
+  String get telemetryTitle => 'Bantu tingkatkan WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Kongsi statistik penggunaan dan laporan ranap tanpa nama: ciri mana yang digunakan dan apa yang tidak kena. Saham, analisis atau data peribadi anda tidak sekali-kali dikongsi. Anda boleh mengubah ini pada bila-bila masa dalam Tetapan.';
+
+  @override
+  String get telemetryAllow => 'Benarkan';
+
+  @override
+  String get telemetryDecline => 'Tidak, terima kasih';
+
+  @override
+  String get telemetrySetting => 'Statistik tanpa nama dan laporan ranap';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kekerapan penggunaan ciri dan laporan ralat, tanpa data peribadi atau kandungan carian dan analisis anda.';
 }

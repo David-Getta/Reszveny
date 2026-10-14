@@ -1539,4 +1539,25 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ယခင် အနှစ်ချုပ်';
+
+  @override
+  String get telemetryTitle => 'WhatStock ကို ပိုကောင်းအောင် ကူညီပါ';
+
+  @override
+  String get telemetryBody =>
+      'အမည်မဖော်သော အသုံးပြုမှု စာရင်းအင်းနှင့် ပျက်ကျမှု အစီရင်ခံစာများကို မျှဝေပါ- မည်သည့် လုပ်ဆောင်ချက်များကို အသုံးပြုသည်နှင့် ဘာမှားယွင်းခဲ့သည်ကို။ သင့်စတော့ရှယ်ယာများ၊ သုံးသပ်ချက်များ သို့မဟုတ် ကိုယ်ရေးအချက်အလက်များကို ဘယ်တော့မှ မမျှဝေပါ။ ၎င်းကို ဆက်တင်များတွင် အချိန်မရွေး ပြောင်းနိုင်သည်။';
+
+  @override
+  String get telemetryAllow => 'ခွင့်ပြုရန်';
+
+  @override
+  String get telemetryDecline => 'မလိုပါ၊ ကျေးဇူးတင်ပါသည်';
+
+  @override
+  String get telemetrySetting =>
+      'အမည်မဖော်သော စာရင်းအင်းနှင့် ပျက်ကျမှု အစီရင်ခံစာများ';
+
+  @override
+  String get telemetrySettingHint =>
+      'လုပ်ဆောင်ချက်များကို မည်မျှ မကြာခဏ အသုံးပြုသည်နှင့် အမှားအစီရင်ခံစာများ၊ ကိုယ်ရေးအချက်အလက် သို့မဟုတ် သင့်ရှာဖွေမှုများနှင့် သုံးသပ်ချက်များ၏ အကြောင်းအရာ မပါဘဲ။';
 }

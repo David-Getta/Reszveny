@@ -1550,4 +1550,24 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Isifinyezo sangaphambilini';
+
+  @override
+  String get telemetryTitle => 'Siza ukuthuthukisa i-WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Yabelana ngezibalo zokusetshenziswa ezingaziwa nemibiko yokuphahlazeka: yiziphi izici ezisetshenziswayo nokuthi yini engahambanga kahle. Amasheya akho, ukuhlaziya kwakho noma idatha yakho yomuntu siqu akusoze kwabiwa. Ungashintsha lokhu noma nini Ezilungiselelweni.';
+
+  @override
+  String get telemetryAllow => 'Vumela';
+
+  @override
+  String get telemetryDecline => 'Cha ngiyabonga';
+
+  @override
+  String get telemetrySetting => 'Izibalo ezingaziwa nemibiko yokuphahlazeka';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ukuthi izici zisetshenziswa kangakanani nemibiko yamaphutha, ngaphandle kwedatha yomuntu siqu noma okuqukethwe kosesho nokuhlaziya kwakho.';
 }

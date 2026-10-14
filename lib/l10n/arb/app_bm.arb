@@ -421,5 +421,11 @@
   "changesTitle": "Kabini sɛgɛsɛgɛli kɔrɔlen ({date})",
   "changesPrice": "Sɔngɔ",
   "changesNoMajor": "Siniko cogo ma yɛlɛma kosɛbɛ.",
-  "changesPreviousSummary": "Kɔrɔlen kuma surun"
+  "changesPreviousSummary": "Kɔrɔlen kuma surun",
+  "telemetryTitle": "Dɛmɛ ka WhatStock ɲɛ",
+  "telemetryBody": "Baarakɛcogo jate tɔgɔbaliw ni tiɲɛni kibaruyaw ci: fɛɛrɛ minnu bɛ baara la ani min tiɲɛna. I ka aksiyɔnw, i ka sɛgɛsɛgɛliw walima i yɛrɛ ka kunnafoniw tɛ ci abada. I bɛ se ka nin yɛlɛma waati o waati Labɛnw kɔnɔ.",
+  "telemetryAllow": "Sɔn",
+  "telemetryDecline": "Ayi, i ni ce",
+  "telemetrySetting": "Jate tɔgɔbaliw ni tiɲɛni kibaruyaw",
+  "telemetrySettingHint": "Fɛɛrɛw bɛ baara la siɲɛ joli ani fili kibaruyaw, i yɛrɛ ka kunnafoniw tɛ, i ka ɲininiw ni i ka sɛgɛsɛgɛliw kɔnɔkow fana tɛ."
 }

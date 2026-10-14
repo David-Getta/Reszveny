@@ -1519,4 +1519,24 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'የቀድሞው ማጠቃለያ';
+
+  @override
+  String get telemetryTitle => 'WhatStockን ለማሻሻል ያግዙ';
+
+  @override
+  String get telemetryBody =>
+      'ስም-አልባ የአጠቃቀም ስታቲስቲክስ እና የብልሽት ሪፖርቶችን ያጋሩ፦ የትኞቹ ባህሪያት ጥቅም ላይ እንደሚውሉ እና ምን እንደተበላሸ። አክሲዮኖችዎ፣ ትንተናዎችዎ ወይም የግል ውሂብዎ በፍጹም አይጋሩም። ይህን በማንኛውም ጊዜ በቅንብሮች ውስጥ መቀየር ይችላሉ።';
+
+  @override
+  String get telemetryAllow => 'ፍቀድ';
+
+  @override
+  String get telemetryDecline => 'አይ፣ አመሰግናለሁ';
+
+  @override
+  String get telemetrySetting => 'ስም-አልባ ስታቲስቲክስ እና የብልሽት ሪፖርቶች';
+
+  @override
+  String get telemetrySettingHint =>
+      'ባህሪያት ምን ያህል ጊዜ ጥቅም ላይ እንደሚውሉ እና የስህተት ሪፖርቶች፣ ያለ የግል ውሂብ ወይም የፍለጋዎችዎ እና የትንተናዎችዎ ይዘት።';
 }

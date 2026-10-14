@@ -1547,4 +1547,25 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Tshikoso tshia kumpala';
+
+  @override
+  String get telemetryTitle => 'Tuambuluisha bua kulengeja WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Abanya statistiques ya mudimu kayi ne dîna ne ba-rapport ya dipanga dia programme: midimu kayi idibu benza nayi ne tshidi katshiyi bimpe. Kakuena musangu nansha umue utudi tutuma ba-action biebe, makonkonona ebe anyi malu ebe a pa buebe. Udi mua kushintulula bualu ebu dîba dionso mu Malongolola.';
+
+  @override
+  String get telemetryAllow => 'Itaba';
+
+  @override
+  String get telemetryDecline => 'Tòo, tuasakidila';
+
+  @override
+  String get telemetrySetting =>
+      'Statistiques kayi ne dîna ne ba-rapport ya dipanga';
+
+  @override
+  String get telemetrySettingHint =>
+      'Misangu idibu benza ne midimu ne ba-rapport ya bilema, kakuyi malu a pa buebe anyi malu adi mu makebulula ne makonkonona ebe.';
 }

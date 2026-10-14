@@ -1544,4 +1544,24 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'پوختەی پێشوو';
+
+  @override
+  String get telemetryTitle => 'یارمەتیمان بدە بۆ باشترکردنی WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'ئاماری نەناسراوی بەکارهێنان و ڕاپۆرتی تێکچوون هاوبەش بکە: کام تایبەتمەندییانە بەکاردێن و چی هەڵە بوو. هەرگیز پشکەکانت، شیکارییەکانت یان زانیارییە کەسییەکانت هاوبەش ناکرێن. دەتوانیت هەر کاتێک لە ڕێکخستنەکان ئەمە بگۆڕیت.';
+
+  @override
+  String get telemetryAllow => 'ڕێگەدان';
+
+  @override
+  String get telemetryDecline => 'نا، سوپاس';
+
+  @override
+  String get telemetrySetting => 'ئاماری نەناسراو و ڕاپۆرتی تێکچوون';
+
+  @override
+  String get telemetrySettingHint =>
+      'چەند جار تایبەتمەندییەکان بەکاردێن و ڕاپۆرتی هەڵەکان، بەبێ زانیاریی کەسی یان ناوەڕۆکی گەڕان و شیکارییەکانت.';
 }

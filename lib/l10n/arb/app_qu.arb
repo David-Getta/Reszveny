@@ -421,5 +421,11 @@
   "changesTitle": "Ñawpaq t'aqwiymanta pacha ({date})",
   "changesPrice": "Chanin",
   "changesNoMajor": "Manam anchatachu imapas tikrakurqan.",
-  "changesPreviousSummary": "Ñawpaq pisichasqa"
+  "changesPreviousSummary": "Ñawpaq pisichasqa",
+  "telemetryTitle": "WhatStock allinchanapaq yanapay",
+  "telemetryBody": "Mana sutiyuq llamk'achiy yupaykunata, urmaykuna willakuykunatapas rakinakuy: mayqin ruraykunata llamk'achinku, ima pantasqatapas. Manapuni acciónniykikunata, t'aqwiyniykikunata, sapaq willakuyniykikunatapas. Kayta Allichaykunapi ima pachapas tikrayta atinki.",
+  "telemetryAllow": "Saqiy",
+  "telemetryDecline": "Manam, sulpayki",
+  "telemetrySetting": "Mana sutiyuq yupaykuna, urmaykuna willakuykunapas",
+  "telemetrySettingHint": "Hayk'a kutitataq ruraykunata llamk'achinku, pantaykuna willakuykunapas, mana sapaq willakuykunawan, mana maskasqaykikunap t'aqwiyniykikunap ukhunwanpas."
 }

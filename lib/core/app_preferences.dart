@@ -23,6 +23,7 @@ class AppPreferences extends ChangeNotifier {
     this.onboardingDone = true,
     this.analysesDone = 0,
     this.reviewAsked = false,
+    this.telemetryConsent,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -43,6 +44,7 @@ class AppPreferences extends ChangeNotifier {
   static const _onboardingKey = 'onboarding_done';
   static const _analysesDoneKey = 'analyses_done';
   static const _reviewAskedKey = 'review_asked';
+  static const _telemetryKey = 'telemetry_consent';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -86,6 +88,10 @@ class AppPreferences extends ChangeNotifier {
   /// Kértünk-e már értékelést a boltban (csak egyszer kérünk).
   bool reviewAsked;
 
+  /// Névtelen használati statisztika és hibajelentés: `null` = még nem
+  /// kérdeztük, `true` = engedélyezte, `false` = nem kéri.
+  bool? telemetryConsent;
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -116,6 +122,7 @@ class AppPreferences extends ChangeNotifier {
         onboardingDone: prefs.getBool(_onboardingKey) ?? prefs.getKeys().isNotEmpty,
         analysesDone: prefs.getInt(_analysesDoneKey) ?? 0,
         reviewAsked: prefs.getBool(_reviewAskedKey) ?? false,
+        telemetryConsent: prefs.getBool(_telemetryKey),
       );
     } catch (_) {
       return AppPreferences();
@@ -138,6 +145,12 @@ class AppPreferences extends ChangeNotifier {
   Future<void> markReviewAsked() async {
     reviewAsked = true;
     await _save((p) => p.setBool(_reviewAskedKey, true));
+  }
+
+  Future<void> setTelemetryConsent(bool allowed) async {
+    telemetryConsent = allowed;
+    notifyListeners();
+    await _save((p) => p.setBool(_telemetryKey, allowed));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {

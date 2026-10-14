@@ -1549,4 +1549,25 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'മുൻ സംഗ്രഹം';
+
+  @override
+  String get telemetryTitle => 'WhatStock മെച്ചപ്പെടുത്താൻ സഹായിക്കൂ';
+
+  @override
+  String get telemetryBody =>
+      'അജ്ഞാത ഉപയോഗ സ്ഥിതിവിവരക്കണക്കുകളും ക്രാഷ് റിപ്പോർട്ടുകളും പങ്കിടുക: ഏതൊക്കെ ഫീച്ചറുകൾ ഉപയോഗിക്കുന്നുവെന്നും എന്താണ് തെറ്റിയതെന്നും. നിങ്ങളുടെ ഓഹരികളോ വിശകലനങ്ങളോ വ്യക്തിഗത ഡാറ്റയോ ഒരിക്കലും പങ്കിടില്ല. ക്രമീകരണത്തിൽ എപ്പോൾ വേണമെങ്കിലും ഇത് മാറ്റാം.';
+
+  @override
+  String get telemetryAllow => 'അനുവദിക്കുക';
+
+  @override
+  String get telemetryDecline => 'വേണ്ട, നന്ദി';
+
+  @override
+  String get telemetrySetting =>
+      'അജ്ഞാത സ്ഥിതിവിവരക്കണക്കുകളും ക്രാഷ് റിപ്പോർട്ടുകളും';
+
+  @override
+  String get telemetrySettingHint =>
+      'ഫീച്ചറുകൾ എത്ര തവണ ഉപയോഗിക്കുന്നുവെന്നതും പിശക് റിപ്പോർട്ടുകളും, വ്യക്തിഗത ഡാറ്റയോ നിങ്ങളുടെ തിരയലുകളുടെയും വിശകലനങ്ങളുടെയും ഉള്ളടക്കമോ ഇല്ലാതെ.';
 }

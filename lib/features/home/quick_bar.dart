@@ -46,6 +46,7 @@ class _QuickBarState extends State<QuickBar> {
     try {
       final image = await services.capture.fromClipboard();
       final result = await services.recognizer.recognize(image, outputLanguage: language.englishName);
+      services.telemetry.track('photo_recognized');
       if (!mounted) return;
       final best = result.best;
       if (best == null) {

@@ -1578,4 +1578,24 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Prethodni sažetak';
+
+  @override
+  String get telemetryTitle => 'Pomozite poboljšati WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Dijelite anonimnu statistiku korištenja i izvješća o padovima: koje se značajke koriste i što je pošlo po zlu. Nikada vaše dionice, analize ili osobne podatke. To možete promijeniti u bilo kojem trenutku u Postavkama.';
+
+  @override
+  String get telemetryAllow => 'Dopusti';
+
+  @override
+  String get telemetryDecline => 'Ne, hvala';
+
+  @override
+  String get telemetrySetting => 'Anonimna statistika i izvješća o padovima';
+
+  @override
+  String get telemetrySettingHint =>
+      'Koliko se često koriste značajke i izvješća o pogreškama, bez osobnih podataka ili sadržaja vaših pretraživanja i analiza.';
 }

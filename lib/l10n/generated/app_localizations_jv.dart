@@ -1544,4 +1544,24 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Ringkesan sadurunge';
+
+  @override
+  String get telemetryTitle => 'Bantu nggawe WhatStock luwih apik';
+
+  @override
+  String get telemetryBody =>
+      'Bagekaké statistik panggunaan anonim lan laporan aplikasi macet: fitur endi sing digunakaké lan apa sing salah. Ora tau saham, analisis, utawa data pribadhimu. Kowé bisa ngganti iki kapan waé ing Setelan.';
+
+  @override
+  String get telemetryAllow => 'Idinaké';
+
+  @override
+  String get telemetryDecline => 'Ora, matur nuwun';
+
+  @override
+  String get telemetrySetting => 'Statistik anonim lan laporan aplikasi macet';
+
+  @override
+  String get telemetrySettingHint =>
+      'Sepira kerepé fitur digunakaké lan laporan kasalahan, tanpa data pribadhi utawa isi panelusuran lan analisismu.';
 }

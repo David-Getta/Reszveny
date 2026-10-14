@@ -421,5 +421,11 @@
   "changesTitle": "Ji analîza berê ve ({date})",
   "changesPrice": "Biha",
   "changesNoMajor": "Pêşbînî bi giranî neguheriye.",
-  "changesPreviousSummary": "Kurteya berê"
+  "changesPreviousSummary": "Kurteya berê",
+  "telemetryTitle": "Alîkariya pêşxistina WhatStock bike",
+  "telemetryBody": "Statîstîkên bikaranînê yên anonîm û raporên têkçûnê parve bike: kîjan taybetmendî têne bikaranîn û çi xelet çû. Pişkên te, analîzên te an daneyên te yên kesane qet nayên şandin. Tu dikarî vê her dem di beşa Mîheng de biguherînî.",
+  "telemetryAllow": "Destûr bide",
+  "telemetryDecline": "Na, spas",
+  "telemetrySetting": "Statîstîkên anonîm û raporên têkçûnê",
+  "telemetrySettingHint": "Taybetmendî çiqas caran têne bikaranîn û raporên çewtiyan, bêyî daneyên kesane an naveroka lêgerîn û analîzên te."
 }

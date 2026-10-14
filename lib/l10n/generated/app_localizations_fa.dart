@@ -1542,4 +1542,24 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'خلاصهٔ قبلی';
+
+  @override
+  String get telemetryTitle => 'به بهبود WhatStock کمک کنید';
+
+  @override
+  String get telemetryBody =>
+      'آمار ناشناس استفاده و گزارش‌های خرابی را هم‌رسانی کنید: کدام قابلیت‌ها استفاده می‌شوند و چه مشکلی پیش آمده است. سهام، تحلیل‌ها یا داده‌های شخصی شما هرگز ارسال نمی‌شود. می‌توانید هر زمان این را در تنظیمات تغییر دهید.';
+
+  @override
+  String get telemetryAllow => 'اجازه دادن';
+
+  @override
+  String get telemetryDecline => 'نه، متشکرم';
+
+  @override
+  String get telemetrySetting => 'آمار ناشناس و گزارش‌های خرابی';
+
+  @override
+  String get telemetrySettingHint =>
+      'میزان استفاده از قابلیت‌ها و گزارش‌های خطا، بدون داده‌های شخصی یا محتوای جستجوها و تحلیل‌های شما.';
 }

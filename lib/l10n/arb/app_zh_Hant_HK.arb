@@ -421,5 +421,11 @@
   "changesTitle": "自上次分析以來（{date}）",
   "changesPrice": "股價",
   "changesNoMajor": "前景沒有實質變化。",
-  "changesPreviousSummary": "上次分析摘要"
+  "changesPreviousSummary": "上次分析摘要",
+  "telemetryTitle": "協助改善 WhatStock",
+  "telemetryBody": "分享匿名使用統計資料及當機報告：使用了哪些功能，以及出現了甚麼問題。絕不包括你的股票、分析或個人資料。你可隨時在「設定」中更改。",
+  "telemetryAllow": "允許",
+  "telemetryDecline": "不用了，謝謝",
+  "telemetrySetting": "匿名統計資料及當機報告",
+  "telemetrySettingHint": "功能使用頻率及錯誤報告，不包括個人資料，亦不包括你的搜尋及分析內容。"
 }

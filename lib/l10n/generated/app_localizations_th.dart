@@ -1524,4 +1524,24 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'สรุปครั้งก่อน';
+
+  @override
+  String get telemetryTitle => 'ช่วยพัฒนา WhatStock ให้ดียิ่งขึ้น';
+
+  @override
+  String get telemetryBody =>
+      'แชร์สถิติการใช้งานแบบไม่ระบุตัวตนและรายงานข้อขัดข้อง: ฟีเจอร์ใดที่มีการใช้งานและเกิดปัญหาอะไรขึ้น โดยจะไม่รวมหุ้น การวิเคราะห์ หรือข้อมูลส่วนตัวของคุณเด็ดขาด คุณเปลี่ยนแปลงได้ทุกเมื่อในการตั้งค่า';
+
+  @override
+  String get telemetryAllow => 'อนุญาต';
+
+  @override
+  String get telemetryDecline => 'ไม่เป็นไร ขอบคุณ';
+
+  @override
+  String get telemetrySetting => 'สถิติแบบไม่ระบุตัวตนและรายงานข้อขัดข้อง';
+
+  @override
+  String get telemetrySettingHint =>
+      'ความถี่ในการใช้ฟีเจอร์และรายงานข้อผิดพลาด โดยไม่มีข้อมูลส่วนตัวหรือเนื้อหาการค้นหาและการวิเคราะห์ของคุณ';
 }

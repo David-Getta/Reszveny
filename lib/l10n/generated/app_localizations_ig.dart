@@ -1540,4 +1540,24 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Nchịkọta gara aga';
+
+  @override
+  String get telemetryTitle => 'Nyere aka ime ka WhatStock ka mma';
+
+  @override
+  String get telemetryBody =>
+      'Kesaa ọnụ ọgụgụ ojiji na-enweghị aha na akụkọ mkpọka: atụmatụ ndị a na-eji na ihe mebiri emebi. Ọ dịghị mgbe anyị na-eziga stọk gị, nyocha gị ma ọ bụ data nkeonwe gị. Ị nwere ike ịgbanwe nke a mgbe ọ bụla na Ntọala.';
+
+  @override
+  String get telemetryAllow => 'Kwe';
+
+  @override
+  String get telemetryDecline => 'Mba, daalụ';
+
+  @override
+  String get telemetrySetting => 'Ọnụ ọgụgụ na-enweghị aha na akụkọ mkpọka';
+
+  @override
+  String get telemetrySettingHint =>
+      'Ugboro ole a na-eji atụmatụ na akụkọ njehie, na-enweghị data nkeonwe ma ọ bụ ọdịnaya nke ọchụchọ na nyocha gị.';
 }

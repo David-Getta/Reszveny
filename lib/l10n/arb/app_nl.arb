@@ -421,5 +421,11 @@
   "changesTitle": "Sinds de vorige analyse ({date})",
   "changesPrice": "Koers",
   "changesNoMajor": "De vooruitzichten zijn niet wezenlijk veranderd.",
-  "changesPreviousSummary": "Vorige samenvatting"
+  "changesPreviousSummary": "Vorige samenvatting",
+  "telemetryTitle": "Help WhatStock te verbeteren",
+  "telemetryBody": "Deel anonieme gebruiksstatistieken en crashrapporten: welke functies worden gebruikt en wat er misging. Nooit je aandelen, analyses of persoonlijke gegevens. Je kunt dit op elk moment wijzigen in Instellingen.",
+  "telemetryAllow": "Toestaan",
+  "telemetryDecline": "Nee, bedankt",
+  "telemetrySetting": "Anonieme statistieken en crashrapporten",
+  "telemetrySettingHint": "Hoe vaak functies worden gebruikt en foutrapporten, zonder persoonlijke gegevens of de inhoud van je zoekopdrachten en analyses."
 }

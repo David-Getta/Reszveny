@@ -1550,4 +1550,25 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Isishwankathelo sangaphambili';
+
+  @override
+  String get telemetryTitle => 'Nceda uphucule i-WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Yabelana ngeenkcukacha-manani zokusetyenziswa ezingachazi gama kunye neengxelo zokuwa: zeziphi iimpawu ezisetyenziswayo nokuba yintoni engahambanga kakuhle. Izabelo zakho, uhlalutyo lwakho okanye iinkcukacha zakho zobuqu azisoze zabelwane. Ungakutshintsha oku nangaliphi na ixesha kwiiSetingi.';
+
+  @override
+  String get telemetryAllow => 'Vumela';
+
+  @override
+  String get telemetryDecline => 'Hayi, enkosi';
+
+  @override
+  String get telemetrySetting =>
+      'Iinkcukacha-manani ezingachazi gama kunye neengxelo zokuwa';
+
+  @override
+  String get telemetrySettingHint =>
+      'Kangakanani iimpawu zisetyenziswa kunye neengxelo zeempazamo, ngaphandle kweenkcukacha zobuqu okanye umxholo wokukhangela nohlalutyo lwakho.';
 }

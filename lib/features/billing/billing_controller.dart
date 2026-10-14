@@ -10,7 +10,7 @@ typedef PurchaseVerifier = Future<EntitlementState> Function(BillingEvent event)
 
 /// Összeköti a boltot a jogosultságokkal: vásárlási esemény → kvóta.
 class BillingController extends ChangeNotifier {
-  BillingController({required this.billing, required this.entitlements, this.verifier}) {
+  BillingController({required this.billing, required this.entitlements, this.verifier, this.onPurchased}) {
     _sub = billing.events.listen(_onEvent);
   }
 
@@ -20,6 +20,9 @@ class BillingController extends ChangeNotifier {
   /// Ha meg van adva (backend-mód), a vásárlást a szerver érvényesíti és a
   /// kliens az ő válaszát veszi át; különben helyben írjuk jóvá.
   final PurchaseVerifier? verifier;
+
+  /// Sikeres vásárlás után (statisztikához).
+  final void Function()? onPurchased;
 
   String? _verifyError;
 
@@ -83,6 +86,7 @@ class BillingController extends ChangeNotifier {
   Future<void> _onEvent(BillingEvent e) async {
     _lastEvent = e;
     final granted = e.entitlements;
+    if (e.status == BillingStatus.purchased) onPurchased?.call();
     if (granted != null) {
       // A szerver már jóváírta (böngészős fizetés): csak átvesszük.
       await entitlements.replace(granted);

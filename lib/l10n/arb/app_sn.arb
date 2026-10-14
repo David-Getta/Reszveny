@@ -421,5 +421,11 @@
   "changesTitle": "Kubvira paongororo yapfuura ({date})",
   "changesPrice": "Mutengo",
   "changesNoMajor": "Tarisiro haina kuchinja zvikuru.",
-  "changesPreviousSummary": "Pfupiso yapfuura"
+  "changesPreviousSummary": "Pfupiso yapfuura",
+  "telemetryTitle": "Batsira kuvandudza WhatStock",
+  "telemetryBody": "Govana nhamba dzekushandiswa dzisingazivikanwe nemishumo yekukanganisika: zvinhu zvinoshandiswa nezvakakanganisika. Kwete masheya ako, ongororo dzako kana ruzivo rwako rwega. Unogona kuchinja izvi chero nguva muMarongero.",
+  "telemetryAllow": "Bvumira",
+  "telemetryDecline": "Kwete, ndatenda",
+  "telemetrySetting": "Nhamba dzisingazivikanwe nemishumo yekukanganisika",
+  "telemetrySettingHint": "Kuti zvinhu zvinoshandiswa kangani nemishumo yezvikanganiso, pasina ruzivo rwako rwega kana zviri mukutsvaga kwako neongororo dzako."
 }

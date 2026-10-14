@@ -107,6 +107,7 @@ class _AppShellState extends State<AppShell> {
     try {
       final image = await services.capture.fromClipboard();
       final result = await services.recognizer.recognize(image, outputLanguage: language);
+      services.telemetry.track('photo_recognized');
       final best = result.best;
       if (best == null) {
         await panel.setMessage(l10n.noCandidatesTitle);
@@ -223,6 +224,7 @@ class _AppShellState extends State<AppShell> {
   void _openSymbol(StockCandidate candidate) {
     final services = AppServices.of(context);
     services.preferences.addRecent(candidate.symbol);
+    services.telemetry.track('stock_opened');
     _currentNav?.push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: candidate)));
   }
 

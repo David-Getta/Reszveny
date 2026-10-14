@@ -1544,4 +1544,25 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Ringkesan saméméhna';
+
+  @override
+  String get telemetryTitle => 'Bantuan ngaronjatkeun WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Bagikeun statistik pamakéan anonim jeung laporan kacilakaan aplikasi: fitur mana nu dipaké jeung naon nu salah. Saham, analisis, atawa data pribadi anjeun moal pernah dibagikeun. Anjeun bisa ngarobah ieu iraha waé dina Setélan.';
+
+  @override
+  String get telemetryAllow => 'Idinan';
+
+  @override
+  String get telemetryDecline => 'Henteu, hatur nuhun';
+
+  @override
+  String get telemetrySetting =>
+      'Statistik anonim jeung laporan kacilakaan aplikasi';
+
+  @override
+  String get telemetrySettingHint =>
+      'Sabaraha sering fitur dipaké jeung laporan kasalahan, tanpa data pribadi atawa eusi pamilarian jeung analisis anjeun.';
 }

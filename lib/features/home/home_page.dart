@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../settings/telemetry_consent.dart';
 import '../../widgets/hotkey_hint.dart';
 
 import '../../app_services.dart';
@@ -125,6 +126,7 @@ class _HomePageState extends State<HomePage> {
     try {
       final language = SupportedLocales.languageFor(Localizations.localeOf(context));
       result = await services.recognizer.recognize(image, outputLanguage: language.englishName);
+      services.telemetry.track('photo_recognized');
     } catch (e) {
       if (mounted) setState(() => _busy = false);
       _showError(e);
@@ -271,6 +273,7 @@ class _HomePageState extends State<HomePage> {
                     // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
                     if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
                     MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
+                    const TelemetryConsentCard(),
                     if (services.config.isDemoMode) ...[
                       const SizedBox(height: 24),
                       _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),

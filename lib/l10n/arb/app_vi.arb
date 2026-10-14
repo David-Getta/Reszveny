@@ -421,5 +421,11 @@
   "changesTitle": "Kể từ lần phân tích trước ({date})",
   "changesPrice": "Giá",
   "changesNoMajor": "Triển vọng không thay đổi đáng kể.",
-  "changesPreviousSummary": "Tóm tắt trước đó"
+  "changesPreviousSummary": "Tóm tắt trước đó",
+  "telemetryTitle": "Giúp cải thiện WhatStock",
+  "telemetryBody": "Chia sẻ số liệu thống kê sử dụng ẩn danh và báo cáo sự cố: tính năng nào được sử dụng và điều gì đã gặp lỗi. Không bao giờ bao gồm cổ phiếu, phân tích hay dữ liệu cá nhân của bạn. Bạn có thể thay đổi tùy chọn này bất cứ lúc nào trong Cài đặt.",
+  "telemetryAllow": "Cho phép",
+  "telemetryDecline": "Không, cảm ơn",
+  "telemetrySetting": "Thống kê ẩn danh và báo cáo sự cố",
+  "telemetrySettingHint": "Tần suất sử dụng tính năng và báo cáo lỗi, không bao gồm dữ liệu cá nhân hay nội dung tìm kiếm và phân tích của bạn."
 }

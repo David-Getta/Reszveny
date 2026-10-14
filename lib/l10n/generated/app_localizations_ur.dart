@@ -1543,4 +1543,24 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'پچھلا خلاصہ';
+
+  @override
+  String get telemetryTitle => 'WhatStock کو بہتر بنانے میں مدد کریں';
+
+  @override
+  String get telemetryBody =>
+      'استعمال کے گمنام اعداد و شمار اور کریش رپورٹس کا اشتراک کریں: کون سی خصوصیات استعمال ہوتی ہیں اور کیا غلط ہوا۔ آپ کے اسٹاکس، تجزیے یا ذاتی ڈیٹا کبھی شیئر نہیں کیے جاتے۔ آپ اسے کسی بھی وقت ترتیبات میں تبدیل کر سکتے ہیں۔';
+
+  @override
+  String get telemetryAllow => 'اجازت دیں';
+
+  @override
+  String get telemetryDecline => 'نہیں، شکریہ';
+
+  @override
+  String get telemetrySetting => 'گمنام اعداد و شمار اور کریش رپورٹس';
+
+  @override
+  String get telemetrySettingHint =>
+      'خصوصیات کتنی بار استعمال ہوتی ہیں اور خرابی کی رپورٹس، ذاتی ڈیٹا یا آپ کی تلاشوں اور تجزیوں کے مواد کے بغیر۔';
 }

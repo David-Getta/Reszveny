@@ -1551,4 +1551,25 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Resum anterior';
+
+  @override
+  String get telemetryTitle => 'Ajuda a millorar WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Comparteix estadístiques d\'ús anònimes i informes de fallades: quines funcions es fan servir i què ha anat malament. Mai les teves accions, anàlisis ni dades personals. Pots canviar-ho en qualsevol moment a Configuració.';
+
+  @override
+  String get telemetryAllow => 'Permet';
+
+  @override
+  String get telemetryDecline => 'No, gràcies';
+
+  @override
+  String get telemetrySetting =>
+      'Estadístiques anònimes i informes de fallades';
+
+  @override
+  String get telemetrySettingHint =>
+      'Amb quina freqüència es fan servir les funcions i informes d\'errors, sense dades personals ni el contingut de les teves cerques i anàlisis.';
 }

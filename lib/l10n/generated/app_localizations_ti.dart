@@ -1514,4 +1514,24 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'ዝሓለፈ ጽማቝ';
+
+  @override
+  String get telemetryTitle => 'WhatStock ንምምሕያሽ ሓግዙ';
+
+  @override
+  String get telemetryBody =>
+      'ስም ዘይብሉ ስታቲስቲክስ ኣጠቓቕማን ጸብጻባት ብልሽትን ኣካፍሉ፡ ኣየኖት ባህርያት ይጥቀሙሎም ከምኡውን እንታይ ተጋግዩ። ኣክስዮናትኩም፡ ትንተናታትኩም ወይ ውልቃዊ ሓበሬታኹም ፈጺሙ ኣይካፈልን። ነዚ ኣብ ዝኾነ እዋን ኣብ ቅጥዕታት ክትቅይርዎ ትኽእሉ ኢኹም።';
+
+  @override
+  String get telemetryAllow => 'ፍቐዱ';
+
+  @override
+  String get telemetryDecline => 'ኣይፋል፡ የቐንየለይ';
+
+  @override
+  String get telemetrySetting => 'ስም ዘይብሉ ስታቲስቲክስን ጸብጻባት ብልሽትን';
+
+  @override
+  String get telemetrySettingHint =>
+      'ባህርያት ክንደይ ግዜ ከም ዝጥቀሙሎምን ጸብጻባት ጌጋታትን፡ ብዘይ ውልቃዊ ሓበሬታ ወይ ትሕዝቶ ምድላያትኩምን ትንተናታትኩምን።';
 }

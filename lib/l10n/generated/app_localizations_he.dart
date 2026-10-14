@@ -1542,4 +1542,24 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'סיכום קודם';
+
+  @override
+  String get telemetryTitle => 'עזרו לשפר את WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'שיתוף נתונים סטטיסטיים אנונימיים על השימוש ודוחות קריסה: באילו תכונות נעשה שימוש ומה השתבש. לעולם לא המניות, הניתוחים או המידע האישי שלך. אפשר לשנות זאת בכל עת בהגדרות.';
+
+  @override
+  String get telemetryAllow => 'אישור';
+
+  @override
+  String get telemetryDecline => 'לא, תודה';
+
+  @override
+  String get telemetrySetting => 'נתונים סטטיסטיים אנונימיים ודוחות קריסה';
+
+  @override
+  String get telemetrySettingHint =>
+      'תדירות השימוש בתכונות ודוחות שגיאות, ללא מידע אישי או תוכן החיפושים והניתוחים שלך.';
 }

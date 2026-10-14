@@ -1546,4 +1546,24 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kurteya berê';
+
+  @override
+  String get telemetryTitle => 'Alîkariya pêşxistina WhatStock bike';
+
+  @override
+  String get telemetryBody =>
+      'Statîstîkên bikaranînê yên anonîm û raporên têkçûnê parve bike: kîjan taybetmendî têne bikaranîn û çi xelet çû. Pişkên te, analîzên te an daneyên te yên kesane qet nayên şandin. Tu dikarî vê her dem di beşa Mîheng de biguherînî.';
+
+  @override
+  String get telemetryAllow => 'Destûr bide';
+
+  @override
+  String get telemetryDecline => 'Na, spas';
+
+  @override
+  String get telemetrySetting => 'Statîstîkên anonîm û raporên têkçûnê';
+
+  @override
+  String get telemetrySettingHint =>
+      'Taybetmendî çiqas caran têne bikaranîn û raporên çewtiyan, bêyî daneyên kesane an naveroka lêgerîn û analîzên te.';
 }

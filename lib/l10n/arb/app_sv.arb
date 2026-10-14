@@ -421,5 +421,11 @@
   "changesTitle": "Sedan föregående analys ({date})",
   "changesPrice": "Kurs",
   "changesNoMajor": "Utsikterna har inte förändrats nämnvärt.",
-  "changesPreviousSummary": "Föregående sammanfattning"
+  "changesPreviousSummary": "Föregående sammanfattning",
+  "telemetryTitle": "Hjälp till att förbättra WhatStock",
+  "telemetryBody": "Dela anonym användningsstatistik och kraschrapporter: vilka funktioner som används och vad som gick fel. Aldrig dina aktier, analyser eller personuppgifter. Du kan ändra detta när som helst i Inställningar.",
+  "telemetryAllow": "Tillåt",
+  "telemetryDecline": "Nej tack",
+  "telemetrySetting": "Anonym statistik och kraschrapporter",
+  "telemetrySettingHint": "Hur ofta funktioner används samt felrapporter, utan personuppgifter eller innehållet i dina sökningar och analyser."
 }

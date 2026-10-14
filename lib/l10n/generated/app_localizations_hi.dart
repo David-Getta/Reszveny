@@ -1543,4 +1543,24 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'पिछला सारांश';
+
+  @override
+  String get telemetryTitle => 'WhatStock को बेहतर बनाने में मदद करें';
+
+  @override
+  String get telemetryBody =>
+      'अनाम उपयोग आँकड़े और क्रैश रिपोर्ट शेयर करें: कौन-सी सुविधाएँ इस्तेमाल होती हैं और क्या गड़बड़ हुई। आपके स्टॉक, विश्लेषण या निजी डेटा कभी नहीं। आप इसे सेटिंग्स में कभी भी बदल सकते हैं।';
+
+  @override
+  String get telemetryAllow => 'अनुमति दें';
+
+  @override
+  String get telemetryDecline => 'नहीं, धन्यवाद';
+
+  @override
+  String get telemetrySetting => 'अनाम आँकड़े और क्रैश रिपोर्ट';
+
+  @override
+  String get telemetrySettingHint =>
+      'सुविधाओं का कितनी बार उपयोग होता है और त्रुटि रिपोर्ट, बिना निजी डेटा या आपकी खोजों और विश्लेषणों की सामग्री के।';
 }

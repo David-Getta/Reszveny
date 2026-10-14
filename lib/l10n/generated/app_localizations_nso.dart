@@ -1554,4 +1554,25 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Kakaretšo ya pele';
+
+  @override
+  String get telemetryTitle => 'Thuša go kaonafatša WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Abelana dipalopalo tša tšhomišo le dipego tša go wa ka ntle le leina: ke dikarolo dife tšeo di šomišwago le gore go senyegile eng. Ga go mohla re abelanago dišere tša gago, ditshekatsheko goba tshedimošo ya gago ya sephiri. O ka fetoša se nako efe goba efe go Dipeakanyo.';
+
+  @override
+  String get telemetryAllow => 'Dumelela';
+
+  @override
+  String get telemetryDecline => 'Aowa, ke a leboga';
+
+  @override
+  String get telemetrySetting =>
+      'Dipalopalo tša go hloka leina le dipego tša go wa';
+
+  @override
+  String get telemetrySettingHint =>
+      'Gore dikarolo di šomišwa gakae le dipego tša diphošo, ka ntle le tshedimošo ya sephiri goba diteng tša dinyakišišo le ditshekatsheko tša gago.';
 }

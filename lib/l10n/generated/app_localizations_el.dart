@@ -1551,4 +1551,24 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Προηγούμενη σύνοψη';
+
+  @override
+  String get telemetryTitle => 'Βοηθήστε να βελτιωθεί το WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Κοινοποιήστε ανώνυμα στατιστικά χρήσης και αναφορές κατάρρευσης: ποιες λειτουργίες χρησιμοποιούνται και τι πήγε στραβά. Ποτέ τις μετοχές, τις αναλύσεις ή τα προσωπικά σας δεδομένα. Μπορείτε να το αλλάξετε ανά πάσα στιγμή στις Ρυθμίσεις.';
+
+  @override
+  String get telemetryAllow => 'Να επιτρέπεται';
+
+  @override
+  String get telemetryDecline => 'Όχι, ευχαριστώ';
+
+  @override
+  String get telemetrySetting => 'Ανώνυμα στατιστικά και αναφορές κατάρρευσης';
+
+  @override
+  String get telemetrySettingHint =>
+      'Πόσο συχνά χρησιμοποιούνται οι λειτουργίες και αναφορές σφαλμάτων, χωρίς προσωπικά δεδομένα ή το περιεχόμενο των αναζητήσεων και των αναλύσεών σας.';
 }

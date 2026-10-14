@@ -1591,4 +1591,24 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Попередній підсумок';
+
+  @override
+  String get telemetryTitle => 'Допоможіть покращити WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Надсилайте анонімну статистику використання та звіти про збої: які функції використовуються і що пішло не так. Ваші акції, аналізи чи персональні дані ніколи не передаються. Це можна будь-коли змінити в Налаштуваннях.';
+
+  @override
+  String get telemetryAllow => 'Дозволити';
+
+  @override
+  String get telemetryDecline => 'Ні, дякую';
+
+  @override
+  String get telemetrySetting => 'Анонімна статистика та звіти про збої';
+
+  @override
+  String get telemetrySettingHint =>
+      'Як часто використовуються функції та звіти про помилки — без персональних даних і вмісту ваших пошуків та аналізів.';
 }

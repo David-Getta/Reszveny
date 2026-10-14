@@ -1541,4 +1541,24 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get changesPreviousSummary => 'Tidligere resumé';
+
+  @override
+  String get telemetryTitle => 'Hjælp med at forbedre WhatStock';
+
+  @override
+  String get telemetryBody =>
+      'Del anonyme brugsstatistikker og nedbrudsrapporter: hvilke funktioner der bruges, og hvad der gik galt. Aldrig dine aktier, analyser eller personlige data. Du kan til enhver tid ændre det i Indstillinger.';
+
+  @override
+  String get telemetryAllow => 'Tillad';
+
+  @override
+  String get telemetryDecline => 'Nej tak';
+
+  @override
+  String get telemetrySetting => 'Anonyme statistikker og nedbrudsrapporter';
+
+  @override
+  String get telemetrySettingHint =>
+      'Hvor ofte funktioner bruges og fejlrapporter – uden personlige data eller indholdet af dine søgninger og analyser.';
 }
