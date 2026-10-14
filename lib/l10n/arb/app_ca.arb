@@ -438,5 +438,14 @@
   "askSuggest2": "Què canviaria les perspectives?",
   "askSuggest3": "Explica-ho en paraules senzilles",
   "askMaxReached": "Aquesta era l’última pregunta per a aquesta anàlisi. Fes una anàlisi nova per preguntar-ne més.",
-  "errAskLimit": "Has arribat al límit de preguntes d’avui. Torna-ho a provar demà."
+  "errAskLimit": "Has arribat al límit de preguntes d’avui. Torna-ho a provar demà.",
+  "eventTomorrow": "Demà",
+  "eventInDays": "{days, plural, =1{d’aquí a 1 dia} other{d’aquí a {days} dies}}",
+  "eventEarnings": "Resultats trimestrals",
+  "eventBeforeOpen": "abans de l’obertura",
+  "eventAfterClose": "després del tancament",
+  "eventEpsEstimate": "BPA previst: {value}",
+  "eventFromAnalysis": "De la teva anàlisi",
+  "eventsHint": "Dates de resultats dels teus favorits i de les accions de la cartera per als pròxims 90 dies, i els esdeveniments amb data que han detectat les teves anàlisis.",
+  "eventsEmpty": "No hi ha esdeveniments amb data en els pròxims 90 dies. Afegeix favorits o accions a la cartera per veure aquí les seves dates de resultats."
 }

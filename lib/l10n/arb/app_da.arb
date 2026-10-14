@@ -438,5 +438,14 @@
   "askSuggest2": "Hvad kunne ændre udsigterne?",
   "askSuggest3": "Forklar det med enkle ord",
   "askMaxReached": "Det var det sidste spørgsmål til denne analyse. Lav en ny analyse for at spørge om mere.",
-  "errAskLimit": "Du har nået dagens grænse for spørgsmål. Prøv igen i morgen."
+  "errAskLimit": "Du har nået dagens grænse for spørgsmål. Prøv igen i morgen.",
+  "eventTomorrow": "I morgen",
+  "eventInDays": "{days, plural, =1{om 1 dag} other{om {days} dage}}",
+  "eventEarnings": "Kvartalsregnskab",
+  "eventBeforeOpen": "før åbning",
+  "eventAfterClose": "efter lukning",
+  "eventEpsEstimate": "Forventet EPS: {value}",
+  "eventFromAnalysis": "Fra din analyse",
+  "eventsHint": "Regnskabsdatoer for dine favoritter og aktier i porteføljen de næste 90 dage samt de daterede begivenheder, dine analyser har fremhævet.",
+  "eventsEmpty": "Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her."
 }

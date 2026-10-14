@@ -438,5 +438,14 @@
   "askSuggest2": "Ko honɗum waawi waylude ko yiyetee yeeso?",
   "askSuggest3": "Firir ɗum e haala newiiɗa",
   "askMaxReached": "Ɗuum ko naamne cakkitiiɗe ƴeewndo ngoo. Waɗ ƴeewndo kesoo ngam naamnaade goɗɗum.",
-  "errAskLimit": "A hewtii keerol naamne hannde. Fuɗɗito janngo."
+  "errAskLimit": "A hewtii keerol naamne hannde. Fuɗɗito janngo.",
+  "eventTomorrow": "Jaango",
+  "eventInDays": "{days, plural, =1{e nder ñalnde 1} other{e nder balɗe {days}}}",
+  "eventEarnings": "Ngalluuji lebbi tati",
+  "eventBeforeOpen": "hade luumo udditde",
+  "eventAfterClose": "caggal nde luumo uddi",
+  "eventEpsEstimate": "Tijjol EPS: {value}",
+  "eventFromAnalysis": "Iwde e ƴeewndo maa",
+  "eventsHint": "Ñalɗi ngalluuji cuɓaaɗe maa e aksiyoŋ am e nder balɗe 90 garooɗe, e kewuuji jogiiɗi ñalɗi ɗi ƴeewndooji maa kollitii.",
+  "eventsEmpty": "Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo."
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Maxaa beddeli kara mustaqbalka la filayo?",
   "askSuggest3": "Si fudud ii sharax",
   "askMaxReached": "Taasi waxay ahayd su'aashii ugu dambaysay ee falanqayntan. Samee falanqayn cusub si aad wax badan u weydiiso.",
-  "errAskLimit": "Waxaad gaadhay xadka su'aalaha ee maanta. Fadlan isku day mar kale berri."
+  "errAskLimit": "Waxaad gaadhay xadka su'aalaha ee maanta. Fadlan isku day mar kale berri.",
+  "eventTomorrow": "Berri",
+  "eventInDays": "{days, plural, =1{1 maalin kadib} other{{days} maalmood kadib}}",
+  "eventEarnings": "Natiijooyinka rubuc-sanadeedka",
+  "eventBeforeOpen": "ka hor furitaanka suuqa",
+  "eventAfterClose": "ka dib xiritaanka suuqa",
+  "eventEpsEstimate": "Qiyaasta EPS: {value}",
+  "eventFromAnalysis": "Ka yimid falanqayntaada",
+  "eventsHint": "Taariikhaha natiijooyinka saamiyada aad jeceshahay iyo kuwa portfoliyadaada 90-ka maalmood ee soo socda, iyo dhacdooyinka taariikhda leh ee falanqaynahaagu calaamadeeyeen.",
+  "eventsEmpty": "Ma jiraan dhacdooyin taariikh leh 90-ka maalmood ee soo socda. Ku dar kuwa aad jeceshahay ama saamiyo portfoliyo si aad halkan ugu aragto taariikhaha natiijooyinkooda."
 }

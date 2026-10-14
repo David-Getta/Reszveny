@@ -438,5 +438,14 @@
   "askSuggest2": "Vad skulle kunna ändra utsikterna?",
   "askSuggest3": "Förklara det enkelt",
   "askMaxReached": "Det var den sista frågan för den här analysen. Gör en ny analys för att ställa fler frågor.",
-  "errAskLimit": "Du har nått dagens gräns för frågor. Försök igen i morgon."
+  "errAskLimit": "Du har nått dagens gräns för frågor. Försök igen i morgon.",
+  "eventTomorrow": "I morgon",
+  "eventInDays": "{days, plural, =1{om 1 dag} other{om {days} dagar}}",
+  "eventEarnings": "Kvartalsrapport",
+  "eventBeforeOpen": "före börsöppning",
+  "eventAfterClose": "efter börsstängning",
+  "eventEpsEstimate": "Förväntad EPS: {value}",
+  "eventFromAnalysis": "Från din analys",
+  "eventsHint": "Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, samt daterade händelser som dina analyser har flaggat.",
+  "eventsEmpty": "Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här."
 }

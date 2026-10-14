@@ -438,5 +438,14 @@
   "askSuggest2": "무엇이 전망을 바꿀 수 있나요?",
   "askSuggest3": "쉽게 설명해 주세요",
   "askMaxReached": "이 분석에 대한 마지막 질문이었습니다. 더 질문하려면 새 분석을 생성하세요.",
-  "errAskLimit": "오늘의 질문 한도에 도달했습니다. 내일 다시 시도하세요."
+  "errAskLimit": "오늘의 질문 한도에 도달했습니다. 내일 다시 시도하세요.",
+  "eventTomorrow": "내일",
+  "eventInDays": "{days, plural, =1{1일 후} other{{days}일 후}}",
+  "eventEarnings": "분기 실적",
+  "eventBeforeOpen": "장 시작 전",
+  "eventAfterClose": "장 마감 후",
+  "eventEpsEstimate": "EPS 예상치: {value}",
+  "eventFromAnalysis": "내 분석에서",
+  "eventsHint": "향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일과 내 분석에서 찾은 날짜가 정해진 이벤트입니다.",
+  "eventsEmpty": "향후 90일간 날짜가 정해진 이벤트가 없습니다. 즐겨찾기나 포트폴리오에 종목을 추가하면 여기에서 실적 발표일을 확인할 수 있습니다."
 }

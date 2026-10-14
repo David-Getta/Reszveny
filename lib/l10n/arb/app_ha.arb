@@ -438,5 +438,14 @@
   "askSuggest2": "Me zai iya canza hasashen?",
   "askSuggest3": "Bayyana shi a sauƙaƙe",
   "askMaxReached": "Wannan ita ce tambaya ta ƙarshe ga wannan nazari. Ƙirƙiri sabon nazari don ƙarin tambayoyi.",
-  "errAskLimit": "An kai iyakar tambayoyin yau. Sake gwadawa gobe."
+  "errAskLimit": "An kai iyakar tambayoyin yau. Sake gwadawa gobe.",
+  "eventTomorrow": "Gobe",
+  "eventInDays": "{days, plural, =1{nan da kwana 1} other{nan da kwanaki {days}}}",
+  "eventEarnings": "Sakamakon kuɗi na kwata",
+  "eventBeforeOpen": "kafin buɗe kasuwa",
+  "eventAfterClose": "bayan rufe kasuwa",
+  "eventEpsEstimate": "Hasashen EPS: {value}",
+  "eventFromAnalysis": "Daga nazarinka",
+  "eventsHint": "Kwanakin sakamakon kuɗi na abubuwan da ka fi so da hannayen jarin jakarka na kwanaki 90 masu zuwa, da abubuwan da ke da kwanan wata da nazarinka suka nuna.",
+  "eventsEmpty": "Babu abubuwa masu kwanan wata a kwanaki 90 masu zuwa. Ƙara abubuwan da ka fi so ko hannayen jari a jakarka don ganin kwanakin sakamakonsu a nan."
 }

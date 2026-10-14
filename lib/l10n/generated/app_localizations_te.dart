@@ -1609,41 +1609,41 @@ class AppLocalizationsTe extends AppLocalizations {
       'మీరు నేటి ప్రశ్నల పరిమితిని చేరుకున్నారు. దయచేసి రేపు మళ్లీ ప్రయత్నించండి.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'రేపు';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days రోజుల్లో',
+      one: '1 రోజులో',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'త్రైమాసిక ఫలితాలు';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'మార్కెట్ ప్రారంభానికి ముందు';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'మార్కెట్ ముగిసిన తర్వాత';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS అంచనా: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'మీ విశ్లేషణ నుండి';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'రాబోయే 90 రోజుల్లో మీ ఇష్టమైన మరియు పోర్ట్‌ఫోలియో స్టాక్‌ల ఫలితాల తేదీలు, అలాగే మీ విశ్లేషణలు గుర్తించిన తేదీ గల ఈవెంట్‌లు.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'రాబోయే 90 రోజుల్లో తేదీ గల ఈవెంట్‌లు లేవు. వాటి ఫలితాల తేదీలను ఇక్కడ చూడటానికి ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లను జోడించండి.';
 }

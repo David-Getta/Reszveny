@@ -438,5 +438,14 @@
   "askSuggest2": "Kisa ki ta ka chanje pèspektiv yo?",
   "askSuggest3": "Eksplike l avèk mo senp",
   "askMaxReached": "Sa se te dènye kesyon pou analiz sa a. Jenere yon nouvo analiz pou w poze plis kesyon.",
-  "errAskLimit": "Ou rive nan limit kesyon pou jodi a. Eseye ankò demen."
+  "errAskLimit": "Ou rive nan limit kesyon pou jodi a. Eseye ankò demen.",
+  "eventTomorrow": "Demen",
+  "eventInDays": "{days, plural, =1{nan 1 jou} other{nan {days} jou}}",
+  "eventEarnings": "Rezilta trimestriyèl",
+  "eventBeforeOpen": "anvan mache a louvri",
+  "eventAfterClose": "apre mache a fèmen",
+  "eventEpsEstimate": "Estimasyon EPS: {value}",
+  "eventFromAnalysis": "Soti nan analiz ou",
+  "eventsHint": "Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, ak evènman ki gen dat analiz ou yo make.",
+  "eventsEmpty": "Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la."
 }

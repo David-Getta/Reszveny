@@ -438,5 +438,14 @@
   "askSuggest2": "Šta bi promijenilo izglede?",
   "askSuggest3": "Objasni to jednostavnim riječima",
   "askMaxReached": "To je bilo posljednje pitanje za ovu analizu. Napravite novu analizu da biste pitali još.",
-  "errAskLimit": "Dostigli ste današnje ograničenje pitanja. Pokušajte ponovo sutra."
+  "errAskLimit": "Dostigli ste današnje ograničenje pitanja. Pokušajte ponovo sutra.",
+  "eventTomorrow": "Sutra",
+  "eventInDays": "{days, plural, one{za {days} dan} few{za {days} dana} other{za {days} dana}}",
+  "eventEarnings": "Kvartalni rezultati",
+  "eventBeforeOpen": "prije otvaranja berze",
+  "eventAfterClose": "nakon zatvaranja berze",
+  "eventEpsEstimate": "Očekivani EPS: {value}",
+  "eventFromAnalysis": "Iz vaše analize",
+  "eventsHint": "Datumi rezultata vaših favorita i dionica iz portfolija za narednih 90 dana te datirani događaji koje su označile vaše analize.",
+  "eventsEmpty": "Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata."
 }

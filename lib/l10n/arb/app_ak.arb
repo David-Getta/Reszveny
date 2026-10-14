@@ -438,5 +438,14 @@
   "askSuggest2": "Dɛn na ebetumi asesa daakye tebea no?",
   "askSuggest3": "Kyerɛkyerɛ mu wɔ ɔkwan a ɛnyɛ den so",
   "askMaxReached": "Ɛno ne asɛmmisa a etwa to ma nhwehwɛmu yi. Yɛ nhwehwɛmu foforo na woatumi abisa bio.",
-  "errAskLimit": "Woadu nsɛmmisa dodoɔ a ɛsɛ ɛnnɛ no ano. Mepa wo kyɛw, san bɔ mmɔden ɔkyena."
+  "errAskLimit": "Woadu nsɛmmisa dodoɔ a ɛsɛ ɛnnɛ no ano. Mepa wo kyɛw, san bɔ mmɔden ɔkyena.",
+  "eventTomorrow": "Ɔkyena",
+  "eventInDays": "{days, plural, =1{da 1 akyi} other{nna {days} akyi}}",
+  "eventEarnings": "Abosome mmiɛnsa akontaabu",
+  "eventBeforeOpen": "ansa na dwa no abue",
+  "eventAfterClose": "dwa no to akyi",
+  "eventEpsEstimate": "EPS a wɔhwɛ kwan: {value}",
+  "eventFromAnalysis": "Efi wo nhwehwɛmu mu",
+  "eventsHint": "Nea mepɛ ne wo nkyɛfa mu kyɛfa akontaabu da wɔ nnafua 90 a ɛreba no mu, ne nsɛm a ɛwɔ da a wo nhwehwɛmu ahu.",
+  "eventsEmpty": "Nsɛm biara a ɛwɔ da nni nnafua 90 a ɛreba no mu. Fa nea mepɛ anaa wo nkyɛfa mu kyɛfa ka ho na hwɛ wɔn akontaabu da wɔ ha."
 }

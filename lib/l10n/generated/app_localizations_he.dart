@@ -1601,41 +1601,42 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errAskLimit => 'הגעתם למכסת השאלות היומית. נסו שוב מחר.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'מחר';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'בעוד $days ימים',
+      two: 'בעוד יומיים',
+      one: 'בעוד יום אחד',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'דוחות רבעוניים';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'לפני פתיחת המסחר';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'אחרי סגירת המסחר';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'תחזית רווח למניה: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'מהניתוח שלכם';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'מועדי הדוחות של המועדפים ושל המניות בתיק ההשקעות שלכם ב-90 הימים הקרובים, וגם אירועים עם תאריך שהניתוחים שלכם סימנו.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'אין אירועים עם תאריך ב-90 הימים הקרובים. הוסיפו מועדפים או מניות לתיק ההשקעות כדי לראות כאן את מועדי הדוחות שלהן.';
 }

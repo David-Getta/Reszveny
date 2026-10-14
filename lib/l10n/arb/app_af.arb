@@ -438,5 +438,14 @@
   "askSuggest2": "Wat sou die vooruitsigte verander?",
   "askSuggest3": "Verduidelik dit in eenvoudige taal",
   "askMaxReached": "Dit was die laaste vraag vir hierdie ontleding. Skep ’n nuwe ontleding om meer te vra.",
-  "errAskLimit": "Jy het vandag se limiet vir vrae bereik. Probeer asseblief môre weer."
+  "errAskLimit": "Jy het vandag se limiet vir vrae bereik. Probeer asseblief môre weer.",
+  "eventTomorrow": "Môre",
+  "eventInDays": "{days, plural, =1{oor 1 dag} other{oor {days} dae}}",
+  "eventEarnings": "Kwartaalresultate",
+  "eventBeforeOpen": "voor die opening",
+  "eventAfterClose": "na die sluiting",
+  "eventEpsEstimate": "WPA-skatting: {value}",
+  "eventFromAnalysis": "Uit jou ontleding",
+  "eventsHint": "Resultaatdatums van jou gunstelinge en portefeulje-aandele vir die volgende 90 dae, en die gedateerde gebeure wat jou ontledings uitgelig het.",
+  "eventsEmpty": "Geen gedateerde gebeure in die volgende 90 dae nie. Voeg gunstelinge of portefeulje-aandele by om hul resultaatdatums hier te sien."
 }

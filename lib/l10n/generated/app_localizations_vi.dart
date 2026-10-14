@@ -1599,41 +1599,40 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bạn đã đạt giới hạn câu hỏi hôm nay. Hãy thử lại vào ngày mai.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Ngày mai';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days ngày nữa',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Kết quả kinh doanh quý';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'trước giờ mở cửa';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'sau giờ đóng cửa';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS dự kiến: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Từ phân tích của bạn';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ngày công bố kết quả kinh doanh của các cổ phiếu yêu thích và trong danh mục của bạn trong 90 ngày tới, cùng các sự kiện có ngày cụ thể mà phân tích của bạn đã đánh dấu.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây.';
 }

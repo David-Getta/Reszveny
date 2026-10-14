@@ -1602,41 +1602,41 @@ class AppLocalizationsFa extends AppLocalizations {
       'به سقف پرسش‌های امروز رسیده‌اید. لطفاً فردا دوباره امتحان کنید.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'فردا';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days روز دیگر',
+      one: '1 روز دیگر',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'نتایج فصلی';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'پیش از گشایش بازار';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'پس از بسته شدن بازار';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS پیش‌بینی‌شده: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'از تحلیل شما';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'تاریخ نتایج سهم‌های علاقه‌مندی‌ها و سبد سهام شما برای 90 روز آینده، و رویدادهای تاریخ‌داری که تحلیل‌هایتان مشخص کرده‌اند.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'در 90 روز آینده هیچ رویداد تاریخ‌داری وجود ندارد. برای دیدن تاریخ نتایج در اینجا، سهمی را به علاقه‌مندی‌ها یا سبد سهام اضافه کنید.';
 }

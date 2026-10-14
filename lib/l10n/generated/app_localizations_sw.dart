@@ -1604,41 +1604,41 @@ class AppLocalizationsSw extends AppLocalizations {
       'Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Kesho';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'baada ya siku $days',
+      one: 'baada ya siku 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Matokeo ya robo mwaka';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'kabla ya soko kufunguliwa';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'baada ya soko kufungwa';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Makadirio ya EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Kutoka kwa uchambuzi wako';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Tarehe za matokeo ya hisa unazopenda na za jalada lako la hisa kwa siku 90 zijazo, pamoja na matukio yenye tarehe yaliyobainishwa na uchambuzi wako.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Hakuna matukio yenye tarehe katika siku 90 zijazo. Ongeza vipendwa au hisa kwenye jalada ili kuona tarehe zao za matokeo hapa.';
 }

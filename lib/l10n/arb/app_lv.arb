@@ -438,5 +438,14 @@
   "askSuggest2": "Kas varētu mainīt perspektīvu?",
   "askSuggest3": "Paskaidro vienkāršiem vārdiem",
   "askMaxReached": "Tas bija pēdējais jautājums par šo analīzi. Lai jautātu vēl, ģenerējiet jaunu analīzi.",
-  "errAskLimit": "Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt."
+  "errAskLimit": "Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt.",
+  "eventTomorrow": "Rīt",
+  "eventInDays": "{days, plural, zero{pēc {days} dienām} one{pēc {days} dienas} other{pēc {days} dienām}}",
+  "eventEarnings": "Ceturkšņa rezultāti",
+  "eventBeforeOpen": "pirms biržas atvēršanas",
+  "eventAfterClose": "pēc biržas slēgšanas",
+  "eventEpsEstimate": "EPS prognoze: {value}",
+  "eventFromAnalysis": "No jūsu analīzes",
+  "eventsHint": "Jūsu izlases un portfeļa akciju rezultātu datumi nākamajām 90 dienām un datēti notikumi, ko atzīmējušas jūsu analīzes.",
+  "eventsEmpty": "Nākamajās 90 dienās nav datētu notikumu. Pievienojiet akcijas izlasei vai portfelim, lai šeit redzētu to rezultātu datumus."
 }

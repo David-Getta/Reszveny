@@ -1604,41 +1604,41 @@ class AppLocalizationsSv extends AppLocalizations {
       'Du har nått dagens gräns för frågor. Försök igen i morgon.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'I morgon';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'om $days dagar',
+      one: 'om 1 dag',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Kvartalsrapport';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'före börsöppning';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'efter börsstängning';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Förväntad EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Från din analys';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, samt daterade händelser som dina analyser har flaggat.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här.';
 }

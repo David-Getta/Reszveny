@@ -1602,41 +1602,41 @@ class AppLocalizationsTk extends AppLocalizations {
       'Şu günki sorag çägiňize ýetdiňiz. Ertir täzeden synanyşyň.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Ertir';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days günden',
+      one: '1 günden',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Çärýeklik netijeler';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'bazar açylmazdan öň';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'bazar ýapylandan soň';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS çaklamasy: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Seljermäňden';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Saýlanan we portfeldäki paýnamalaryňyň indiki 90 gündäki netije seneleri hem-de seljermeleriňiň belläp geçen seneli wakalary.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş.';
 }

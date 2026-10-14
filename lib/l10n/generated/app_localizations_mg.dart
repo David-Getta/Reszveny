@@ -1616,41 +1616,41 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tratra ny fetran\'ny fanontaniana androany. Andramo indray rahampitso.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Rahampitso';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'afaka $days andro',
+      one: 'afaka 1 andro',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Vokatra isan-telovolana';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'alohan\'ny fisokafan\'ny tsena';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'aorian\'ny fikatonan\'ny tsena';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Tombana EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Avy amin\'ny fandalinanao';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ny daty famoahana vokatra ho an\'ny ankafizinao sy ny anjara ao amin\'ny kitapom-bolanao ao anatin\'ny 90 andro ho avy, ary ireo hetsika misy daty nomarihan\'ny fandalinanao.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Tsy misy hetsika misy daty ao anatin\'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin\'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr\'izy ireo.';
 }

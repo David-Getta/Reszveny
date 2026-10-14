@@ -1654,41 +1654,43 @@ class AppLocalizationsSl extends AppLocalizations {
       'Dosegli ste današnjo omejitev vprašanj. Poskusite znova jutri.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Jutri';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'čez $days dni',
+      few: 'čez $days dni',
+      two: 'čez $days dneva',
+      one: 'čez $days dan',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Četrtletni rezultati';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'pred odprtjem borze';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'po zaprtju borze';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Ocena EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Iz vaše analize';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Datumi objave rezultatov za vaše priljubljene delnice in delnice v portfelju v naslednjih 90 dneh ter datirani dogodki, ki so jih označile vaše analize.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov.';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Apa sing bisa ngowahi prospeké?",
   "askSuggest3": "Jelasna nganggo basa sing gampang",
   "askMaxReached": "Kuwi pitakon pungkasan kanggo analisis iki. Gawe analisis anyar yen arep takon manèh.",
-  "errAskLimit": "Watesan pitakon dina iki wis entek. Coba maneh sesuk."
+  "errAskLimit": "Watesan pitakon dina iki wis entek. Coba maneh sesuk.",
+  "eventTomorrow": "Sesuk",
+  "eventInDays": "{days, plural, =1{1 dina engkas} other{{days} dina engkas}}",
+  "eventEarnings": "Laporan kuartalan",
+  "eventBeforeOpen": "sadurunge pasar buka",
+  "eventAfterClose": "sawise pasar tutup",
+  "eventEpsEstimate": "Prakiraan EPS: {value}",
+  "eventFromAnalysis": "Saka analisismu",
+  "eventsHint": "Tanggal laporan saham favorit lan portofoliomu kanggo 90 dina sabanjure, uga acara sing ana tanggale sing ditandhani analisismu.",
+  "eventsEmpty": "Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene."
 }

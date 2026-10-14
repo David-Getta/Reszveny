@@ -1604,41 +1604,41 @@ class AppLocalizationsKk extends AppLocalizations {
       'Бүгінгі сұрақтар лимитіне жеттіңіз. Ертең қайта көріңіз.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Ертең';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days күннен кейін',
+      one: '1 күннен кейін',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Тоқсандық нәтижелер';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'биржа ашылғанға дейін';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'биржа жабылғаннан кейін';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS болжамы: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Сіздің талдауыңыздан';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Таңдаулылар мен портфельдегі акциялардың алдағы 90 күндегі есеп күндері және талдауларыңыз белгілеген күні бар оқиғалар.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Алдағы 90 күнде күні белгіленген оқиға жоқ. Есеп күндерін осында көру үшін таңдаулыларға немесе портфельге акция қосыңыз.';
 }

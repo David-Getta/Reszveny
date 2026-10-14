@@ -1638,41 +1638,44 @@ class AppLocalizationsAr extends AppLocalizations {
       'لقد بلغت الحد اليومي للأسئلة. يُرجى المحاولة مرة أخرى غدًا.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'غدًا';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'بعد $days يوم',
+      many: 'بعد $days يومًا',
+      few: 'بعد $days أيام',
+      two: 'بعد يومين',
+      one: 'بعد يوم واحد',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'النتائج الفصلية';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'قبل افتتاح السوق';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'بعد إغلاق السوق';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'ربحية السهم المتوقعة: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'من تحليلك';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'مواعيد نتائج أسهمك المفضلة وأسهم محفظتك خلال الـ 90 يومًا القادمة، والأحداث المؤرخة التي رصدتها تحليلاتك.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'لا توجد أحداث مؤرخة خلال الـ 90 يومًا القادمة. أضف أسهمًا إلى المفضلة أو المحفظة لترى مواعيد نتائجها هنا.';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Hva kan endre utsiktene?",
   "askSuggest3": "Forklar det enkelt",
   "askMaxReached": "Det var det siste spørsmålet for denne analysen. Generer en ny analyse for å spørre mer.",
-  "errAskLimit": "Du har nådd dagens grense for spørsmål. Prøv igjen i morgen."
+  "errAskLimit": "Du har nådd dagens grense for spørsmål. Prøv igjen i morgen.",
+  "eventTomorrow": "I morgen",
+  "eventInDays": "{days, plural, =1{om 1 dag} other{om {days} dager}}",
+  "eventEarnings": "Kvartalsresultat",
+  "eventBeforeOpen": "før børsåpning",
+  "eventAfterClose": "etter børsslutt",
+  "eventEpsEstimate": "EPS-estimat: {value}",
+  "eventFromAnalysis": "Fra analysen din",
+  "eventsHint": "Resultatdatoer for favorittene og porteføljeaksjene dine de neste 90 dagene, og datofestede hendelser som analysene dine har pekt ut.",
+  "eventsEmpty": "Ingen datofestede hendelser de neste 90 dagene. Legg til favoritter eller porteføljeaksjer for å se resultatdatoene deres her."
 }

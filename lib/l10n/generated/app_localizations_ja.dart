@@ -1553,41 +1553,41 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errAskLimit => '本日の質問の上限に達しました。明日もう一度お試しください。';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => '明日';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days 日後',
+      one: '1 日後',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => '四半期決算';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => '取引開始前';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => '取引終了後';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS 予想: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => '自分の分析から';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'お気に入りとポートフォリオの銘柄の今後 90 日間の決算発表日と、分析で示された日付付きのイベントです。';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      '今後 90 日間に日付付きのイベントはありません。お気に入りやポートフォリオに銘柄を追加すると、ここに決算発表日が表示されます。';
 }

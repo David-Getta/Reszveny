@@ -1610,41 +1610,41 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഇന്നത്തെ ചോദ്യ പരിധി എത്തി. നാളെ വീണ്ടും ശ്രമിക്കുക.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'നാളെ';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days ദിവസത്തിനുള്ളിൽ',
+      one: '1 ദിവസത്തിനുള്ളിൽ',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ത്രൈമാസ ഫലങ്ങൾ';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'വിപണി തുറക്കുന്നതിന് മുമ്പ്';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'വിപണി അടച്ചതിന് ശേഷം';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS പ്രതീക്ഷ: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'നിങ്ങളുടെ വിശകലനത്തിൽ നിന്ന്';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'അടുത്ത 90 ദിവസത്തെ നിങ്ങളുടെ പ്രിയപ്പെട്ടവയുടെയും പോർട്ട്ഫോളിയോ ഓഹരികളുടെയും ഫല തീയതികളും നിങ്ങളുടെ വിശകലനങ്ങൾ അടയാളപ്പെടുത്തിയ തീയതിയുള്ള സംഭവങ്ങളും.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'അടുത്ത 90 ദിവസത്തിനുള്ളിൽ തീയതിയുള്ള സംഭവങ്ങളൊന്നുമില്ല. ഫല തീയതികൾ ഇവിടെ കാണാൻ പ്രിയപ്പെട്ടവയോ പോർട്ട്ഫോളിയോ ഓഹരികളോ ചേർക്കുക.';
 }

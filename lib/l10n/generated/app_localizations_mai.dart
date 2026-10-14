@@ -1599,41 +1599,41 @@ class AppLocalizationsMai extends AppLocalizations {
       'आजुक प्रश्न-सीमा पूरा भऽ गेल। काल्हि फेर प्रयास करू।';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'काल्हि';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days दिनमे',
+      one: '1 दिनमे',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'त्रैमासिक परिणाम';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'बजार खुजबासँ पहिने';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'बजार बन्द भेलाक बाद';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'अनुमानित EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'अहाँक विश्लेषणसँ';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'अगिला 90 दिनमे अहाँक पसंदीदा आ पोर्टफ़ोलियो शेयरक परिणामक तिथि, आ अहाँक विश्लेषणमे चिन्हित तिथियुक्त घटना।';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'अगिला 90 दिनमे कोनो तिथियुक्त घटना नहि अछि। पसंदीदा वा पोर्टफ़ोलियो शेयर जोड़ू, तँ एतए ओकर परिणामक तिथि देखाएत।';
 }

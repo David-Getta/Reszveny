@@ -438,5 +438,14 @@
   "askSuggest2": "什么会改变前景？",
   "askSuggest3": "用简单的话解释一下",
   "askMaxReached": "这是本次分析的最后一个问题。如需继续提问，请生成新的分析。",
-  "errAskLimit": "你已达到今日提问上限。请明天再试。"
+  "errAskLimit": "你已达到今日提问上限。请明天再试。",
+  "eventTomorrow": "明天",
+  "eventInDays": "{days, plural, other{{days} 天后}}",
+  "eventEarnings": "季度财报",
+  "eventBeforeOpen": "盘前",
+  "eventAfterClose": "盘后",
+  "eventEpsEstimate": "预期每股收益：{value}",
+  "eventFromAnalysis": "来自你的分析",
+  "eventsHint": "收藏和投资组合中股票未来 90 天的财报日期，以及你的分析中标记的有日期的事件。",
+  "eventsEmpty": "未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期。"
 }

@@ -1611,41 +1611,41 @@ class AppLocalizationsEl extends AppLocalizations {
       'Φτάσατε το σημερινό όριο ερωτήσεων. Δοκιμάστε ξανά αύριο.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Αύριο';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'σε $days ημέρες',
+      one: 'σε 1 ημέρα',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Τριμηνιαία αποτελέσματα';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'πριν από το άνοιγμα';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'μετά το κλείσιμο';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Εκτίμηση EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Από την ανάλυσή σας';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ημερομηνίες αποτελεσμάτων των αγαπημένων σας και των μετοχών του χαρτοφυλακίου σας για τις επόμενες 90 ημέρες, καθώς και τα χρονολογημένα γεγονότα που επισήμαναν οι αναλύσεις σας.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Δεν υπάρχουν χρονολογημένα γεγονότα τις επόμενες 90 ημέρες. Προσθέστε αγαπημένα ή μετοχές στο χαρτοφυλάκιο για να βλέπετε εδώ τις ημερομηνίες αποτελεσμάτων τους.';
 }

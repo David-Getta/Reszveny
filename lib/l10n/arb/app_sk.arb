@@ -438,5 +438,14 @@
   "askSuggest2": "Čo by mohlo zmeniť výhľad?",
   "askSuggest3": "Vysvetli to jednoducho",
   "askMaxReached": "To bola posledná otázka k tejto analýze. Ak sa chcete pýtať ďalej, vygenerujte novú analýzu.",
-  "errAskLimit": "Dosiahli ste dnešný limit otázok. Skúste to znova zajtra."
+  "errAskLimit": "Dosiahli ste dnešný limit otázok. Skúste to znova zajtra.",
+  "eventTomorrow": "Zajtra",
+  "eventInDays": "{days, plural, one{o {days} deň} few{o {days} dni} many{o {days} dňa} other{o {days} dní}}",
+  "eventEarnings": "Štvrťročné výsledky",
+  "eventBeforeOpen": "pred otvorením trhu",
+  "eventAfterClose": "po zatvorení trhu",
+  "eventEpsEstimate": "Odhad EPS: {value}",
+  "eventFromAnalysis": "Z tvojej analýzy",
+  "eventsHint": "Dátumy výsledkov tvojich obľúbených akcií a akcií v portfóliu na najbližších 90 dní a udalosti s dátumom, ktoré označili tvoje analýzy.",
+  "eventsEmpty": "V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov."
 }

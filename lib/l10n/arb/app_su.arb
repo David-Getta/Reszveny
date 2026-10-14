@@ -438,5 +438,14 @@
   "askSuggest2": "Naon nu bisa ngarobah prospek?",
   "askSuggest3": "Jelaskeun sacara basajan",
   "askMaxReached": "Éta patarosan panungtung pikeun analisis ieu. Jieun analisis anyar pikeun nanya deui.",
-  "errAskLimit": "Anjeun geus ngahontal wates patarosan poé ieu. Cobian deui isukan."
+  "errAskLimit": "Anjeun geus ngahontal wates patarosan poé ieu. Cobian deui isukan.",
+  "eventTomorrow": "Isukan",
+  "eventInDays": "{days, plural, =1{1 poé deui} other{{days} poé deui}}",
+  "eventEarnings": "Laporan kuartalan",
+  "eventBeforeOpen": "saméméh pasar dibuka",
+  "eventAfterClose": "sanggeus pasar ditutup",
+  "eventEpsEstimate": "Perkiraan EPS: {value}",
+  "eventFromAnalysis": "Tina analisis anjeun",
+  "eventsHint": "Tanggal laporan saham paporit sareng portofolio anjeun pikeun 90 poé ka hareup, sareng acara anu aya tanggalna anu ditandaan ku analisis anjeun.",
+  "eventsEmpty": "Teu aya acara anu aya tanggalna dina 90 poé ka hareup. Tambahkeun paporit atanapi saham portofolio pikeun ningali tanggal laporanana di dieu."
 }

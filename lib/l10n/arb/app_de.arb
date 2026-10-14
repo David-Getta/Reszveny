@@ -438,5 +438,14 @@
   "askSuggest2": "Was würde den Ausblick ändern?",
   "askSuggest3": "Erklär es in einfachen Worten",
   "askMaxReached": "Das war die letzte Frage zu dieser Analyse. Erstelle eine neue Analyse, um mehr zu fragen.",
-  "errAskLimit": "Du hast das heutige Limit für Fragen erreicht. Bitte versuche es morgen erneut."
+  "errAskLimit": "Du hast das heutige Limit für Fragen erreicht. Bitte versuche es morgen erneut.",
+  "eventTomorrow": "Morgen",
+  "eventInDays": "{days, plural, =1{in 1 Tag} other{in {days} Tagen}}",
+  "eventEarnings": "Quartalszahlen",
+  "eventBeforeOpen": "vor Börsenbeginn",
+  "eventAfterClose": "nach Börsenschluss",
+  "eventEpsEstimate": "EPS-Schätzung: {value}",
+  "eventFromAnalysis": "Aus deiner Analyse",
+  "eventsHint": "Berichtstermine deiner Favoriten und Portfolio-Aktien für die nächsten 90 Tage sowie datierte Ereignisse, die deine Analysen erkannt haben.",
+  "eventsEmpty": "Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen."
 }

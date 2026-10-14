@@ -1556,41 +1556,41 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errAskLimit => '오늘의 질문 한도에 도달했습니다. 내일 다시 시도하세요.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => '내일';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days일 후',
+      one: '1일 후',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => '분기 실적';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => '장 시작 전';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => '장 마감 후';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS 예상치: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => '내 분석에서';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일과 내 분석에서 찾은 날짜가 정해진 이벤트입니다.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      '향후 90일간 날짜가 정해진 이벤트가 없습니다. 즐겨찾기나 포트폴리오에 종목을 추가하면 여기에서 실적 발표일을 확인할 수 있습니다.';
 }

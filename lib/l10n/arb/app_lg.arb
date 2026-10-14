@@ -438,5 +438,14 @@
   "askSuggest2": "Kiki ekiyinza okukyusa ebisuubirwa?",
   "askSuggest3": "Kinnyonnyole mu ngeri ennyangu",
   "askMaxReached": "Ekyo kye kibuuzo ekisembayo ku kwekenneenya kuno. Kola okwekenneenya okupya okubuuza ebirala.",
-  "errAskLimit": "Otuuse ku kkomo ly'ebibuuzo bya leero. Gezaako nate enkya."
+  "errAskLimit": "Otuuse ku kkomo ly'ebibuuzo bya leero. Gezaako nate enkya.",
+  "eventTomorrow": "Enkya",
+  "eventInDays": "{days, plural, =1{mu lunaku 1} other{mu nnaku {days}}}",
+  "eventEarnings": "Ebivudde mu kitundu ky'omwaka",
+  "eventBeforeOpen": "ng'akatale tekannaggulwawo",
+  "eventAfterClose": "ng'akatale kaggaddwa",
+  "eventEpsEstimate": "EPS esuubirwa: {value}",
+  "eventFromAnalysis": "Okuva mu kwekenneenya kwo",
+  "eventsHint": "Ennaku z'ebivudde mu by'oyagala n'emigabo gyo mu nnaku 90 eziddako, n'ebigenda okubaawo eby'ennaku entongole okwekenneenya kwo bye kulaze.",
+  "eventsEmpty": "Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by'oyagala oba emigabo okulaba wano ennaku z'ebivudde byabyo."
 }

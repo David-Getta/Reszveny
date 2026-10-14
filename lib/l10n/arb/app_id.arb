@@ -438,5 +438,14 @@
   "askSuggest2": "Apa yang bisa mengubah prospeknya?",
   "askSuggest3": "Jelaskan dengan bahasa sederhana",
   "askMaxReached": "Itu pertanyaan terakhir untuk analisis ini. Buat analisis baru untuk bertanya lagi.",
-  "errAskLimit": "Anda telah mencapai batas pertanyaan hari ini. Coba lagi besok."
+  "errAskLimit": "Anda telah mencapai batas pertanyaan hari ini. Coba lagi besok.",
+  "eventTomorrow": "Besok",
+  "eventInDays": "{days, plural, =1{1 hari lagi} other{{days} hari lagi}}",
+  "eventEarnings": "Laporan kuartalan",
+  "eventBeforeOpen": "sebelum pasar buka",
+  "eventAfterClose": "setelah pasar tutup",
+  "eventEpsEstimate": "Estimasi EPS: {value}",
+  "eventFromAnalysis": "Dari analisis Anda",
+  "eventsHint": "Tanggal laporan saham favorit dan portofolio Anda untuk 90 hari ke depan, serta agenda bertanggal yang ditandai analisis Anda.",
+  "eventsEmpty": "Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini."
 }

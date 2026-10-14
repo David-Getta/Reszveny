@@ -438,5 +438,14 @@
   "askSuggest2": "Kí ló lè yí ìrísí ọjọ́ iwájú padà?",
   "askSuggest3": "Ṣàlàyé rẹ̀ ní ọ̀nà tó rọrùn",
   "askMaxReached": "Ìyẹn ni ìbéèrè tó kẹ́yìn fún ìtúpalẹ̀ yìí. Ṣe ìtúpalẹ̀ tuntun láti béèrè sí i.",
-  "errAskLimit": "O ti dé ìwọ̀n ìbéèrè ti òní. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i lọ́la."
+  "errAskLimit": "O ti dé ìwọ̀n ìbéèrè ti òní. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i lọ́la.",
+  "eventTomorrow": "Ọ̀la",
+  "eventInDays": "{days, plural, =1{ní ọjọ́ 1 sí i} other{ní ọjọ́ {days} sí i}}",
+  "eventEarnings": "Àbájáde ìdámẹ́rin ọdún",
+  "eventBeforeOpen": "kí ọjà tó ṣí",
+  "eventAfterClose": "lẹ́yìn tí ọjà bá tì",
+  "eventEpsEstimate": "Àfojúsùn EPS: {value}",
+  "eventFromAnalysis": "Láti inú ìtúpalẹ̀ yín",
+  "eventsHint": "Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àti àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí.",
+  "eventsEmpty": "Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí."
 }

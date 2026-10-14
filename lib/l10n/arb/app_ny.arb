@@ -438,5 +438,14 @@
   "askSuggest2": "Kodi chingasinthe ziyembekezo ndi chiyani?",
   "askSuggest3": "Fotokozani mophweka",
   "askMaxReached": "Limenelo linali funso lomaliza la kusanthula kumeneku. Pangani kusanthula kwatsopano kuti mufunse zambiri.",
-  "errAskLimit": "Mwafika malire a mafunso a lero. Yesaninso mawa."
+  "errAskLimit": "Mwafika malire a mafunso a lero. Yesaninso mawa.",
+  "eventTomorrow": "Mawa",
+  "eventInDays": "{days, plural, =1{patatha tsiku 1} other{patatha masiku {days}}}",
+  "eventEarnings": "Zotsatira za kotala",
+  "eventBeforeOpen": "msika usanatsegulidwe",
+  "eventAfterClose": "msika utatsekedwa",
+  "eventEpsEstimate": "Kuyerekeza kwa EPS: {value}",
+  "eventFromAnalysis": "Kuchokera ku kusanthula kwanu",
+  "eventsHint": "Masiku a zotsatira za masheya omwe mumawakonda ndi a m'masheya anu m'masiku 90 akubwerawa, komanso zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira.",
+  "eventsEmpty": "Palibe zochitika za tsiku lodziwika m'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano."
 }

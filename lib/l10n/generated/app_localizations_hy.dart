@@ -1611,41 +1611,41 @@ class AppLocalizationsHy extends AppLocalizations {
       'Դուք սպառել եք այսօրվա հարցերի սահմանաչափը։ Փորձեք կրկին վաղը։';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Վաղը';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days օր հետո',
+      one: '1 օր հետո',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Եռամսյակային արդյունքներ';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'բորսայի բացումից առաջ';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'բորսայի փակումից հետո';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Սպասվող EPS՝ $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Ձեր վերլուծությունից';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ձեր ընտրյալների և պորտֆելի բաժնետոմսերի արդյունքների ամսաթվերը առաջիկա 90 օրվա համար, ինչպես նաև ձեր վերլուծությունների նշած ամսաթվով իրադարձությունները։';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Առաջիկա 90 օրում ամսաթվով իրադարձություններ չկան։ Ավելացրեք ընտրյալներ կամ պորտֆելի բաժնետոմսեր՝ այստեղ դրանց արդյունքների ամսաթվերը տեսնելու համար։';
 }

@@ -1652,41 +1652,43 @@ class AppLocalizationsSk extends AppLocalizations {
       'Dosiahli ste dnešný limit otázok. Skúste to znova zajtra.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Zajtra';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'o $days dní',
+      many: 'o $days dňa',
+      few: 'o $days dni',
+      one: 'o $days deň',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Štvrťročné výsledky';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'pred otvorením trhu';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'po zatvorení trhu';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Odhad EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Z tvojej analýzy';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Dátumy výsledkov tvojich obľúbených akcií a akcií v portfóliu na najbližších 90 dní a udalosti s dátumom, ktoré označili tvoje analýzy.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov.';
 }

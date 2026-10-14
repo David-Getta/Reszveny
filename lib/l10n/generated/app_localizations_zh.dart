@@ -1540,43 +1540,40 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errAskLimit => '你已达到今日提问上限。请明天再试。';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => '明天';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days 天后',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => '季度财报';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => '盘前';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => '盘后';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return '预期每股收益：$value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => '来自你的分析';
 
   @override
-  String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+  String get eventsHint => '收藏和投资组合中股票未来 90 天的财报日期，以及你的分析中标记的有日期的事件。';
 
   @override
-  String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+  String get eventsEmpty => '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3111,4 +3108,40 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get errAskLimit => '你已達到今日的提問上限。請明天再試。';
+
+  @override
+  String get eventTomorrow => '明日';
+
+  @override
+  String eventInDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days 日後',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get eventEarnings => '季度業績';
+
+  @override
+  String get eventBeforeOpen => '開市前';
+
+  @override
+  String get eventAfterClose => '收市後';
+
+  @override
+  String eventEpsEstimate(String value) {
+    return '預期每股盈利：$value';
+  }
+
+  @override
+  String get eventFromAnalysis => '來自你的分析';
+
+  @override
+  String get eventsHint => '收藏及投資組合股票未來 90 日的業績公佈日期，以及你的分析所標示的有日期事件。';
+
+  @override
+  String get eventsEmpty => '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期。';
 }

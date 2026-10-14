@@ -1600,41 +1600,40 @@ class AppLocalizationsMy extends AppLocalizations {
       'ယနေ့အတွက် မေးခွန်းကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'မနက်ဖြန်';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days ရက်အကြာ',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'သုံးလပတ် ရလဒ်များ';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'စျေးကွက်မဖွင့်မီ';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'စျေးကွက်ပိတ်ပြီးနောက်';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS ခန့်မှန်းချက်: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'သင့်သုံးသပ်ချက်မှ';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'နောက် ရက် 90 အတွင်း သင့်အကြိုက်ဆုံးနှင့် ပေါ့ဖိုလီယို ရှယ်ယာများ၏ ရလဒ်ထုတ်ပြန်မည့်ရက်များနှင့် သင့်သုံးသပ်ချက်များက မှတ်သားထားသော ရက်စွဲပါ ဖြစ်ရပ်များ။';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'နောက် ရက် 90 အတွင်း ရက်စွဲပါ ဖြစ်ရပ် မရှိပါ။ ရလဒ်ထုတ်ပြန်မည့်ရက်များကို ဤနေရာတွင် ကြည့်ရန် အကြိုက်ဆုံး သို့မဟုတ် ပေါ့ဖိုလီယို ရှယ်ယာများ ထည့်ပါ။';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Tshinyi tshidi mua kushintulula malu a kumpala?",
   "askSuggest3": "Umvuija bualu ebu mu mushindu mupepele",
   "askMaxReached": "Elu luvua lukonko lua ndekelu bua dikonkonona edi. Enza dikonkonona dipiadipia bua kuebeja kabidi.",
-  "errAskLimit": "Ufiki ku mukalu wa nkonko ya lelu. Teta kabidi makelela."
+  "errAskLimit": "Ufiki ku mukalu wa nkonko ya lelu. Teta kabidi makelela.",
+  "eventTomorrow": "Makelela",
+  "eventInDays": "{days, plural, =1{panyima pa dituku 1} other{panyima pa matuku {days}}}",
+  "eventEarnings": "Mapeta a trimestre",
+  "eventBeforeOpen": "kumpala kua tshisalu kuunzuluka",
+  "eventAfterClose": "panyima pa tshisalu kuibikiibua",
+  "eventEpsEstimate": "EPS idibu batekemene: {value}",
+  "eventFromAnalysis": "Mu dikonkonona diebe",
+  "eventsHint": "Matuku a mapeta a biudi musue ne a ba action ba mu portefeuille webe bua matuku 90 alua, ne malu adi ne matuku makonkonona ebe mamanyishe.",
+  "eventsEmpty": "Kakuena malu adi ne matuku mu matuku 90 alua to. Bueja biudi musue anyi ba action mu portefeuille bua kumona apa matuku a mapeta abi."
 }

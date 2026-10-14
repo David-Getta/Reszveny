@@ -438,5 +438,14 @@
   "askSuggest2": "Kas galėtų pakeisti perspektyvas?",
   "askSuggest3": "Paaiškink paprastai",
   "askMaxReached": "Tai buvo paskutinis šios analizės klausimas. Norėdami klausti daugiau, sukurkite naują analizę.",
-  "errAskLimit": "Pasiekėte šiandienos klausimų limitą. Bandykite dar kartą rytoj."
+  "errAskLimit": "Pasiekėte šiandienos klausimų limitą. Bandykite dar kartą rytoj.",
+  "eventTomorrow": "Rytoj",
+  "eventInDays": "{days, plural, one{po {days} dienos} few{po {days} dienų} many{po {days} dienos} other{po {days} dienų}}",
+  "eventEarnings": "Ketvirčio rezultatai",
+  "eventBeforeOpen": "prieš biržos atidarymą",
+  "eventAfterClose": "po biržos uždarymo",
+  "eventEpsEstimate": "EPS prognozė: {value}",
+  "eventFromAnalysis": "Iš jūsų analizės",
+  "eventsHint": "Jūsų mėgstamiausių ir portfelio akcijų rezultatų skelbimo datos artimiausioms 90 dienų ir jūsų analizėse pažymėti įvykiai su datomis.",
+  "eventsEmpty": "Per artimiausias 90 dienų įvykių su datomis nėra. Pridėkite mėgstamiausių ar portfelio akcijų, kad čia matytumėte jų rezultatų datas."
 }

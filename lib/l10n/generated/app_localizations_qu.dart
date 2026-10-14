@@ -1614,41 +1614,41 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kunan p\'unchawpa tapukuy limitenmanmi chayanki. Paqarin hukmanta kallpachakuy.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Paqarin';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days p\'unchaymanta',
+      one: '1 p\'unchaymanta',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Kimsa killapa willakuynin';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'qhatu manaraq kichakuchkaptin';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'qhatu wichqakusqan qhipata';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Suyakusqa EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'T\'aqwiyniykimanta';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Munasqaykikunap, portafolioykip acciónninkunap willakuy p\'unchayninkuna hamuq 90 p\'unchaykunapi, t\'aqwiyniykikuna qhawachisqan p\'unchayniyuq ruwaykunapas.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Hamuq 90 p\'unchaykunapi mana p\'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p\'unchayninkuta qhawanaykipaq.';
 }

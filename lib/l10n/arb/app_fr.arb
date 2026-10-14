@@ -438,5 +438,14 @@
   "askSuggest2": "Qu’est-ce qui changerait les perspectives ?",
   "askSuggest3": "Explique-moi simplement",
   "askMaxReached": "C’était la dernière question pour cette analyse. Créez une nouvelle analyse pour en poser d’autres.",
-  "errAskLimit": "Vous avez atteint la limite de questions pour aujourd’hui. Réessayez demain."
+  "errAskLimit": "Vous avez atteint la limite de questions pour aujourd’hui. Réessayez demain.",
+  "eventTomorrow": "Demain",
+  "eventInDays": "{days, plural, =1{dans 1 jour} other{dans {days} jours}}",
+  "eventEarnings": "Résultats trimestriels",
+  "eventBeforeOpen": "avant l’ouverture",
+  "eventAfterClose": "après la clôture",
+  "eventEpsEstimate": "BPA estimé : {value}",
+  "eventFromAnalysis": "Issu de votre analyse",
+  "eventsHint": "Dates de résultats de vos favoris et des actions de votre portefeuille pour les 90 prochains jours, ainsi que les événements datés repérés par vos analyses.",
+  "eventsEmpty": "Aucun événement daté dans les 90 prochains jours. Ajoutez des favoris ou des actions à votre portefeuille pour voir ici leurs dates de résultats."
 }

@@ -1633,41 +1633,42 @@ class AppLocalizationsRo extends AppLocalizations {
       'Ai atins limita de întrebări pentru azi. Încearcă din nou mâine.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Mâine';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'peste $days de zile',
+      few: 'peste $days zile',
+      one: 'peste $days zi',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Rezultate trimestriale';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'înainte de deschiderea pieței';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'după închiderea pieței';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS estimat: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Din analiza ta';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, plus evenimentele cu dată semnalate de analizele tale.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor.';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Co mogłoby zmienić perspektywy?",
   "askSuggest3": "Wyjaśnij to prostymi słowami",
   "askMaxReached": "To było ostatnie pytanie do tej analizy. Aby zapytać o więcej, wygeneruj nową analizę.",
-  "errAskLimit": "Wyczerpano dzisiejszy limit pytań. Spróbuj ponownie jutro."
+  "errAskLimit": "Wyczerpano dzisiejszy limit pytań. Spróbuj ponownie jutro.",
+  "eventTomorrow": "Jutro",
+  "eventInDays": "{days, plural, one{za {days} dzień} few{za {days} dni} many{za {days} dni} other{za {days} dnia}}",
+  "eventEarnings": "Wyniki kwartalne",
+  "eventBeforeOpen": "przed otwarciem sesji",
+  "eventAfterClose": "po zamknięciu sesji",
+  "eventEpsEstimate": "Prognoza EPS: {value}",
+  "eventFromAnalysis": "Z Twojej analizy",
+  "eventsHint": "Daty wyników Twoich ulubionych spółek i spółek z portfela na najbliższe 90 dni oraz wydarzenia z datą wskazane przez Twoje analizy.",
+  "eventsEmpty": "Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników."
 }

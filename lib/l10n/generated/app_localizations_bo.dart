@@ -1596,41 +1596,40 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཁྱེད་ཀྱིས་དེ་རིང་གི་དྲི་བའི་ཚད་བཀག་ལ་སླེབས་སོང་། སང་ཉིན་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'སང་ཉིན';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'ཉིན་ $days རྗེས་སུ',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ཟླ་གསུམ་རེའི་གྲུབ་འབྲས';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'ཚོང་ར་མ་ཕྱེ་གོང་';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'ཚོང་ར་བཀག་རྗེས';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS སྔོན་རྩིས: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'ཁྱེད་ཀྱི་དབྱེ་ཞིབ་ནས';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'ཉིན་ 90 ནང་ཁྱེད་ཀྱི་དགའ་མོས་དང་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་ཧུར་ཁག་གི་གྲུབ་འབྲས་ཚེས་གྲངས་དང་། ཁྱེད་ཀྱི་དབྱེ་ཞིབ་ཀྱིས་མཚོན་པའི་ཚེས་གྲངས་ཅན་གྱི་བྱ་བ།';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'ཉིན་ 90 ནང་ཚེས་གྲངས་ཅན་གྱི་བྱ་བ་མེད། གྲུབ་འབྲས་ཚེས་གྲངས་འདིར་མཐོང་བར་དགའ་མོས་སམ་མ་འཇོག་ཚོགས་སྡེབ་ཏུ་ཧུར་ཁག་སྣོན།';
 }

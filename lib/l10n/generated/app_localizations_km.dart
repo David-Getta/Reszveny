@@ -1590,41 +1590,40 @@ class AppLocalizationsKm extends AppLocalizations {
       'អ្នកបានដល់ដែនកំណត់សំណួរសម្រាប់ថ្ងៃនេះហើយ។ សូមព្យាយាមម្តងទៀតនៅថ្ងៃស្អែក។';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'ថ្ងៃស្អែក';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'ក្នុង $days ថ្ងៃទៀត',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'លទ្ធផលប្រចាំត្រីមាស';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'មុនទីផ្សារបើក';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'ក្រោយទីផ្សារបិទ';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'ការប៉ាន់ស្មាន EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'ពីការវិភាគរបស់អ្នក';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'កាលបរិច្ឆេទលទ្ធផលនៃភាគហ៊ុនចំណូលចិត្ត និងភាគហ៊ុនក្នុងផលប័ត្ររបស់អ្នក សម្រាប់ 90 ថ្ងៃខាងមុខ និងព្រឹត្តិការណ៍មានកាលបរិច្ឆេទដែលការវិភាគរបស់អ្នកបានចង្អុលបង្ហាញ។';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'មិនមានព្រឹត្តិការណ៍មានកាលបរិច្ឆេទក្នុង 90 ថ្ងៃខាងមុខទេ។ បន្ថែមចំណូលចិត្ត ឬភាគហ៊ុនក្នុងផលប័ត្រ ដើម្បីមើលកាលបរិច្ឆេទលទ្ធផលរបស់វានៅទីនេះ។';
 }

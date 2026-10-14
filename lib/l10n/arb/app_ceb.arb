@@ -438,5 +438,14 @@
   "askSuggest2": "Unsa ang makausab sa panglantaw?",
   "askSuggest3": "Ipasabot kini sa yanong paagi",
   "askMaxReached": "Kana na ang kataposang pangutana para niini nga pagtuki. Paghimo og bag-ong pagtuki aron makapangutana pa.",
-  "errAskLimit": "Naabot na nimo ang limitasyon sa mga pangutana karong adlawa. Palihog sulayi pag-usab ugma."
+  "errAskLimit": "Naabot na nimo ang limitasyon sa mga pangutana karong adlawa. Palihog sulayi pag-usab ugma.",
+  "eventTomorrow": "Ugma",
+  "eventInDays": "{days, plural, =1{sulod sa 1 ka adlaw} other{sulod sa {days} ka adlaw}}",
+  "eventEarnings": "Resulta sa quarter",
+  "eventBeforeOpen": "sa dili pa moabli ang merkado",
+  "eventAfterClose": "human magsira ang merkado",
+  "eventEpsEstimate": "Gipaabot nga EPS: {value}",
+  "eventFromAnalysis": "Gikan sa imong pagtuki",
+  "eventsHint": "Mga petsa sa resulta sa imong mga paborito ug mga stock sa portfolio sulod sa sunod 90 ka adlaw, ug ang mga panghitabo nga may petsa nga gimarkahan sa imong mga pagtuki.",
+  "eventsEmpty": "Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta."
 }

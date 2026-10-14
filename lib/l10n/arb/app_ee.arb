@@ -438,5 +438,14 @@
   "askSuggest2": "Nu kae ate ŋu atrɔ etsɔme ƒe nukpɔkpɔ?",
   "askSuggest3": "Ɖe eme le mɔ bɔbɔe nu",
   "askMaxReached": "Ema enye nyabiase mamlɛtɔ na numekuku sia. Wɔ numekuku yeye be nàte ŋu abia nya bubuwo.",
-  "errAskLimit": "Èɖo egbe ƒe nyabiasewo ƒe seɖoƒe. Taflatse, gagbugbɔ te kpɔ etsɔ."
+  "errAskLimit": "Èɖo egbe ƒe nyabiasewo ƒe seɖoƒe. Taflatse, gagbugbɔ te kpɔ etsɔ.",
+  "eventTomorrow": "Etsɔ",
+  "eventInDays": "{days, plural, =1{le ŋkeke 1 megbe} other{le ŋkeke {days} megbe}}",
+  "eventEarnings": "Ɣleti etɔ̃ ƒe akɔntabubu",
+  "eventBeforeOpen": "hafi asi naʋu",
+  "eventAfterClose": "le asi tutu megbe",
+  "eventEpsEstimate": "EPS si wole mɔ kpɔm: {value}",
+  "eventFromAnalysis": "Tso wò numekuku me",
+  "eventsHint": "Nye lɔlɔ̃tɔwo kple nye akpawo ƒe akɔntabubu ŋkekewo le ŋkeke 90 siwo gbɔna me, kple nudzɔdzɔ siwo ŋu ŋkeke le si wò numekukuwo ɖe fia.",
+  "eventsEmpty": "Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii."
 }

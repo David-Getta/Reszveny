@@ -1609,41 +1609,41 @@ class AppLocalizationsKn extends AppLocalizations {
       'ನೀವು ಇಂದಿನ ಪ್ರಶ್ನೆಗಳ ಮಿತಿಯನ್ನು ತಲುಪಿದ್ದೀರಿ. ನಾಳೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'ನಾಳೆ';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days ದಿನಗಳಲ್ಲಿ',
+      one: '1 ದಿನದಲ್ಲಿ',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳು';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'ಮಾರುಕಟ್ಟೆ ತೆರೆಯುವ ಮೊದಲು';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'ಮಾರುಕಟ್ಟೆ ಮುಚ್ಚಿದ ನಂತರ';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS ಅಂದಾಜು: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಯಿಂದ';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'ಮುಂದಿನ 90 ದಿನಗಳಲ್ಲಿ ನಿಮ್ಮ ಮೆಚ್ಚಿನ ಮತ್ತು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಷೇರುಗಳ ಫಲಿತಾಂಶ ದಿನಾಂಕಗಳು ಹಾಗೂ ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಗಳು ಗುರುತಿಸಿದ ದಿನಾಂಕವಿರುವ ಘಟನೆಗಳು.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'ಮುಂದಿನ 90 ದಿನಗಳಲ್ಲಿ ದಿನಾಂಕವಿರುವ ಯಾವುದೇ ಘಟನೆಗಳಿಲ್ಲ. ಅವುಗಳ ಫಲಿತಾಂಶ ದಿನಾಂಕಗಳನ್ನು ಇಲ್ಲಿ ನೋಡಲು ಮೆಚ್ಚಿನವುಗಳು ಅಥವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಷೇರುಗಳನ್ನು ಸೇರಿಸಿ.';
 }

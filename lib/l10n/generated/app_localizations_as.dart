@@ -1604,41 +1604,41 @@ class AppLocalizationsAs extends AppLocalizations {
       'আপুনি আজিৰ প্ৰশ্নৰ সীমাত উপনীত হৈছে। অনুগ্ৰহ কৰি কাইলৈ পুনৰ চেষ্টা কৰক।';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'কাইলৈ';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days দিনৰ পিছত',
+      one: '1 দিনৰ পিছত',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ত্ৰৈমাসিক ফলাফল';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'বজাৰ খোলাৰ আগত';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'বজাৰ বন্ধ হোৱাৰ পিছত';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'আনুমানিক EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'আপোনাৰ বিশ্লেষণৰ পৰা';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'পৰৱৰ্তী 90 দিনত আপোনাৰ প্ৰিয় আৰু প\'ৰ্টফ\'লিঅ\'ৰ শ্বেয়াৰসমূহৰ ফলাফলৰ তাৰিখ, আৰু আপোনাৰ বিশ্লেষণে চিহ্নিত কৰা তাৰিখযুক্ত ঘটনাসমূহ।';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'পৰৱৰ্তী 90 দিনত কোনো তাৰিখযুক্ত ঘটনা নাই। ইয়াত ফলাফলৰ তাৰিখ চাবলৈ প্ৰিয় বা প\'ৰ্টফ\'লিঅ\'ৰ শ্বেয়াৰ যোগ কৰক।';
 }

@@ -1651,41 +1651,43 @@ class AppLocalizationsBe extends AppLocalizations {
       'Вы дасягнулі сённяшняга ліміту пытанняў. Паспрабуйце зноў заўтра.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Заўтра';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'праз $days дня',
+      many: 'праз $days дзён',
+      few: 'праз $days дні',
+      one: 'праз $days дзень',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Квартальныя вынікі';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'да адкрыцця рынку';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'пасля закрыцця рынку';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Прагноз EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'З вашага аналізу';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Даты справаздач вашых абраных акцый і акцый з партфеля на бліжэйшыя 90 дзён, а таксама падзеі з датамі, адзначаныя ў вашых аналізах.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'У бліжэйшыя 90 дзён падзей з датамі няма. Дадайце акцыі ў абранае або ў партфель, каб бачыць тут даты іх справаздач.';
 }

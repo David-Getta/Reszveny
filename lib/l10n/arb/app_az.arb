@@ -438,5 +438,14 @@
   "askSuggest2": "Proqnozu nə dəyişə bilər?",
   "askSuggest3": "Sadə dillə izah et",
   "askMaxReached": "Bu, həmin təhlil üçün son sual idi. Daha çox soruşmaq üçün yeni təhlil yaradın.",
-  "errAskLimit": "Bugünkü sual limitinə çatdınız. Lütfən, sabah yenidən cəhd edin."
+  "errAskLimit": "Bugünkü sual limitinə çatdınız. Lütfən, sabah yenidən cəhd edin.",
+  "eventTomorrow": "Sabah",
+  "eventInDays": "{days, plural, =1{1 gün sonra} other{{days} gün sonra}}",
+  "eventEarnings": "Rüblük nəticələr",
+  "eventBeforeOpen": "bazar açılmazdan əvvəl",
+  "eventAfterClose": "bazar bağlandıqdan sonra",
+  "eventEpsEstimate": "Gözlənilən EPS: {value}",
+  "eventFromAnalysis": "Təhlilinizdən",
+  "eventsHint": "Seçilmişlərinizin və portfelinizdəki səhmlərin növbəti 90 gün üçün hesabat tarixləri və təhlillərinizin qeyd etdiyi tarixli hadisələr.",
+  "eventsEmpty": "Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin."
 }

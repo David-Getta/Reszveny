@@ -1599,41 +1599,41 @@ class AppLocalizationsIg extends AppLocalizations {
   String get errAskLimit => 'Ị ruola oke ajụjụ nke taa. Nwaa ọzọ echi.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Echi';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'n\'ime ụbọchị $days',
+      one: 'n\'ime ụbọchị 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Nsonaazụ nkeji ọnwa atọ';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'tupu ahịa emepee';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'mgbe ahịa mechiri';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Atụmatụ EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Site na nyocha gị';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, na ihe omume nwere ụbọchị nyocha gị gosiri.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Enweghị ihe omume nwere ụbọchị n\'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a.';
 }

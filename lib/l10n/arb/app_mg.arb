@@ -438,5 +438,14 @@
   "askSuggest2": "Inona no mety hanova ny vinavina?",
   "askSuggest3": "Hazavao amin'ny teny tsotra",
   "askMaxReached": "Io no fanontaniana farany ho an'ity fandalinana ity. Mamorona fandalinana vaovao raha te hanontany bebe kokoa.",
-  "errAskLimit": "Tratra ny fetran'ny fanontaniana androany. Andramo indray rahampitso."
+  "errAskLimit": "Tratra ny fetran'ny fanontaniana androany. Andramo indray rahampitso.",
+  "eventTomorrow": "Rahampitso",
+  "eventInDays": "{days, plural, =1{afaka 1 andro} other{afaka {days} andro}}",
+  "eventEarnings": "Vokatra isan-telovolana",
+  "eventBeforeOpen": "alohan'ny fisokafan'ny tsena",
+  "eventAfterClose": "aorian'ny fikatonan'ny tsena",
+  "eventEpsEstimate": "Tombana EPS: {value}",
+  "eventFromAnalysis": "Avy amin'ny fandalinanao",
+  "eventsHint": "Ny daty famoahana vokatra ho an'ny ankafizinao sy ny anjara ao amin'ny kitapom-bolanao ao anatin'ny 90 andro ho avy, ary ireo hetsika misy daty nomarihan'ny fandalinanao.",
+  "eventsEmpty": "Tsy misy hetsika misy daty ao anatin'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr'izy ireo."
 }

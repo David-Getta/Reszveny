@@ -438,5 +438,14 @@
   "askSuggest2": "Nini ekoki kobongola makanisi ya mikolo ezali koya?",
   "askSuggest3": "Limbolá yango na ndenge ya pɛtɛɛ",
   "askMaxReached": "Wana ezalaki motuna ya nsuka mpo na analyse oyo. Bimisa analyse ya sika mpo na kotuna lisusu.",
-  "errAskLimit": "Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi."
+  "errAskLimit": "Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi.",
+  "eventTomorrow": "Lobi",
+  "eventInDays": "{days, plural, =1{nsima ya mokolo 1} other{nsima ya mikolo {days}}}",
+  "eventEarnings": "Ba résultats ya trimestre",
+  "eventBeforeOpen": "liboso ya kofungwama ya zando",
+  "eventAfterClose": "nsima ya kokangama ya zando",
+  "eventEpsEstimate": "Estimation ya EPS: {value}",
+  "eventFromAnalysis": "Na analyse na yo",
+  "eventsHint": "Ba dati ya ba résultats ya oyo olingaka mpe ya ba action ya portefeuille na yo mpo na mikolo 90 oyo ekoya, mpe makambo oyo ezali na dati oyo ba analyse na yo emonisi.",
+  "eventsEmpty": "Makambo oyo ezali na dati ezali te na mikolo 90 oyo ekoya. Bakisá oyo olingaka to ba action na portefeuille mpo na komona awa ba dati ya ba résultats na yango."
 }

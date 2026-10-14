@@ -438,5 +438,14 @@
   "askSuggest2": "Çfarë do ta ndryshonte perspektivën?",
   "askSuggest3": "Shpjegoje me fjalë të thjeshta",
   "askMaxReached": "Kjo ishte pyetja e fundit për këtë analizë. Krijoni një analizë të re për të bërë më shumë pyetje.",
-  "errAskLimit": "Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër."
+  "errAskLimit": "Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër.",
+  "eventTomorrow": "Nesër",
+  "eventInDays": "{days, plural, =1{pas 1 dite} other{pas {days} ditësh}}",
+  "eventEarnings": "Rezultatet tremujore",
+  "eventBeforeOpen": "para hapjes së tregut",
+  "eventAfterClose": "pas mbylljes së tregut",
+  "eventEpsEstimate": "EPS e pritur: {value}",
+  "eventFromAnalysis": "Nga analiza jote",
+  "eventsHint": "Datat e rezultateve të aksioneve të preferuara dhe të portofolit tënd për 90 ditët e ardhshme, si dhe ngjarjet me datë të shënuara nga analizat e tua.",
+  "eventsEmpty": "Nuk ka ngjarje me datë në 90 ditët e ardhshme. Shto të preferuara ose aksione në portofol për të parë këtu datat e rezultateve të tyre."
 }

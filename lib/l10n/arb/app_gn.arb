@@ -438,5 +438,14 @@
   "askSuggest2": "Mbaʼépa ikatu omoambue tenonderã?",
   "askSuggest3": "Emyesakã chéve ñeʼẽ hasyʼỹvape",
   "askMaxReached": "Kóva haʼe pe porandu paha ko jehesaʼỹijo guarã. Emoheñói jehesaʼỹijo pyahu eporandu hag̃ua hetave.",
-  "errAskLimit": "Ehupytýma koʼág̃a guarã porandu papapy. Eñehaʼã jey koʼẽrõ."
+  "errAskLimit": "Ehupytýma koʼág̃a guarã porandu papapy. Eñehaʼã jey koʼẽrõ.",
+  "eventTomorrow": "Koʼẽrõ",
+  "eventInDays": "{days, plural, =1{1 ára rire} other{{days} ára rire}}",
+  "eventEarnings": "Mbohapy jasy resultado",
+  "eventBeforeOpen": "mercado ojepeʼa mboyve",
+  "eventAfterClose": "mercado oñemboty rire",
+  "eventEpsEstimate": "EPS oñehaʼarõva: {value}",
+  "eventFromAnalysis": "Nde jehesaʼỹijogui",
+  "eventsHint": "Umi ojeguerohoryvéva ha nde cartera acción resultado ára 90 ára oúvape, ha umi mbaʼe ára reheguáva nde jehesaʼỹijokuéra ohechaukáva.",
+  "eventsEmpty": "Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára."
 }

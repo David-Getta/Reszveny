@@ -1584,41 +1584,40 @@ class AppLocalizationsTh extends AppLocalizations {
       'คุณใช้โควตาคำถามของวันนี้ครบแล้ว ลองอีกครั้งพรุ่งนี้';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'พรุ่งนี้';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'อีก $days วัน',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ผลประกอบการรายไตรมาส';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'ก่อนตลาดเปิด';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'หลังตลาดปิด';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS คาดการณ์: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'จากการวิเคราะห์ของคุณ';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'วันประกาศผลประกอบการของหุ้นในรายการโปรดและพอร์ตโฟลิโอของคุณใน 90 วันข้างหน้า รวมถึงเหตุการณ์ที่มีวันที่ซึ่งการวิเคราะห์ของคุณระบุไว้';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'ไม่มีเหตุการณ์ที่มีวันที่ใน 90 วันข้างหน้า เพิ่มรายการโปรดหรือหุ้นในพอร์ตโฟลิโอเพื่อดูวันประกาศผลประกอบการที่นี่';
 }

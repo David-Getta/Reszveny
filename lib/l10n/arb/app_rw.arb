@@ -438,5 +438,14 @@
   "askSuggest2": "Ni iki cyahindura icyerekezo?",
   "askSuggest3": "Bisobanure mu buryo bworoshye",
   "askMaxReached": "Icyo cyari ikibazo cya nyuma kuri iri sesengura. Kora isesengura rishya kugira ngo ubaze ibindi.",
-  "errAskLimit": "Wageze ku mubare ntarengwa w'ibibazo by'uyu munsi. Ongera ugerageze ejo."
+  "errAskLimit": "Wageze ku mubare ntarengwa w'ibibazo by'uyu munsi. Ongera ugerageze ejo.",
+  "eventTomorrow": "Ejo",
+  "eventInDays": "{days, plural, =1{mu munsi 1} other{mu minsi {days}}}",
+  "eventEarnings": "Ibyavuye mu gihembwe",
+  "eventBeforeOpen": "mbere y'uko isoko rifungura",
+  "eventAfterClose": "nyuma y'uko isoko rifunga",
+  "eventEpsEstimate": "Igereranyo rya EPS: {value}",
+  "eventFromAnalysis": "Biva mu isesengura ryawe",
+  "eventsHint": "Amatariki y'ibyavuye mu gihembwe by'imigabane ukunda n'iri mu ishoramari ryawe mu minsi 90 iri imbere, n'ibikorwa bifite amatariki amasesengura yawe yagaragaje.",
+  "eventsEmpty": "Nta gikorwa gifite itariki mu minsi 90 iri imbere. Ongeramo ibyo ukunda cyangwa imigabane yo mu ishoramari kugira ngo ubone hano amatariki y'ibyavuyemo."
 }

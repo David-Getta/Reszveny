@@ -438,5 +438,14 @@
   "askSuggest2": "Mikä muuttaisi näkymiä?",
   "askSuggest3": "Selitä yksinkertaisesti",
   "askMaxReached": "Tämä oli viimeinen kysymys tähän analyysiin. Luo uusi analyysi, jos haluat kysyä lisää.",
-  "errAskLimit": "Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna."
+  "errAskLimit": "Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna.",
+  "eventTomorrow": "Huomenna",
+  "eventInDays": "{days, plural, =1{1 päivän päästä} other{{days} päivän päästä}}",
+  "eventEarnings": "Osavuosikatsaus",
+  "eventBeforeOpen": "ennen pörssin avautumista",
+  "eventAfterClose": "pörssin sulkeuduttua",
+  "eventEpsEstimate": "EPS-ennuste: {value}",
+  "eventFromAnalysis": "Omasta analyysistasi",
+  "eventsHint": "Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta sekä analyysiesi nostamat päivätyt tapahtumat.",
+  "eventsEmpty": "Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä."
 }

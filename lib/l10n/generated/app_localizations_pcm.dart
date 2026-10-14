@@ -1604,31 +1604,31 @@ class AppLocalizationsPcm extends AppLocalizations {
       'You don reach today limit for questions. Try again tomorrow.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Tumoro';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'e remain $days days',
+      one: 'e remain $days day',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Quarter result';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'before market open';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'after market close';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS wey dem expect: $value';
   }
 
   @override
@@ -1636,9 +1636,9 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here.';
 }

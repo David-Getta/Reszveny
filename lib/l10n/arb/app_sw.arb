@@ -438,5 +438,14 @@
   "askSuggest2": "Nini kingebadilisha mtazamo?",
   "askSuggest3": "Nieleze kwa maneno rahisi",
   "askMaxReached": "Hilo lilikuwa swali la mwisho kwa uchambuzi huu. Tengeneza uchambuzi mpya ili uulize zaidi.",
-  "errAskLimit": "Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho."
+  "errAskLimit": "Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho.",
+  "eventTomorrow": "Kesho",
+  "eventInDays": "{days, plural, =1{baada ya siku 1} other{baada ya siku {days}}}",
+  "eventEarnings": "Matokeo ya robo mwaka",
+  "eventBeforeOpen": "kabla ya soko kufunguliwa",
+  "eventAfterClose": "baada ya soko kufungwa",
+  "eventEpsEstimate": "Makadirio ya EPS: {value}",
+  "eventFromAnalysis": "Kutoka kwa uchambuzi wako",
+  "eventsHint": "Tarehe za matokeo ya hisa unazopenda na za jalada lako la hisa kwa siku 90 zijazo, pamoja na matukio yenye tarehe yaliyobainishwa na uchambuzi wako.",
+  "eventsEmpty": "Hakuna matukio yenye tarehe katika siku 90 zijazo. Ongeza vipendwa au hisa kwenye jalada ili kuona tarehe zao za matokeo hapa."
 }

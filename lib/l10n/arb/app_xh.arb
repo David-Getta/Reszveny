@@ -438,5 +438,14 @@
   "askSuggest2": "Yintoni enokutshintsha imbono yekamva?",
   "askSuggest3": "Ndicacisele ngendlela elula",
   "askMaxReached": "Lo ibingowokugqibela umbuzo wolu hlalutyo. Yenza uhlalutyo olutsha ukuze ubuze ngakumbi.",
-  "errAskLimit": "Ufikelele kumda wemibuzo wanamhlanje. Nceda uzame kwakhona ngomso."
+  "errAskLimit": "Ufikelele kumda wemibuzo wanamhlanje. Nceda uzame kwakhona ngomso.",
+  "eventTomorrow": "Ngomso",
+  "eventInDays": "{days, plural, =1{emva kosuku olu-1} other{emva kweentsuku ezi-{days}}}",
+  "eventEarnings": "Iziphumo zekota",
+  "eventBeforeOpen": "phambi kokuba imakethi ivule",
+  "eventAfterClose": "emva kokuba imakethi ivaliwe",
+  "eventEpsEstimate": "Uqikelelo lwe-EPS: {value}",
+  "eventFromAnalysis": "Kuhlalutyo lwakho",
+  "eventsHint": "Imihla yeziphumo zezabelo ozithandayo nezepotifoliyo yakho kwiintsuku ezingama-90 ezizayo, kunye neziganeko ezinemihla eziphawulwe luhlalutyo lwakho.",
+  "eventsEmpty": "Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha."
 }

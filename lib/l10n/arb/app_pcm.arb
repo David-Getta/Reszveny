@@ -438,5 +438,14 @@
   "askSuggest2": "Wetin fit change how tins go be?",
   "askSuggest3": "Explain am make e simple",
   "askMaxReached": "Dat one na di last question for dis analysis. Make new analysis if you wan ask more.",
-  "errAskLimit": "You don reach today limit for questions. Try again tomorrow."
+  "errAskLimit": "You don reach today limit for questions. Try again tomorrow.",
+  "eventTomorrow": "Tumoro",
+  "eventInDays": "{days, plural, one{e remain {days} day} other{e remain {days} days}}",
+  "eventEarnings": "Quarter result",
+  "eventBeforeOpen": "before market open",
+  "eventAfterClose": "after market close",
+  "eventEpsEstimate": "EPS wey dem expect: {value}",
+  "eventFromAnalysis": "From your analysis",
+  "eventsHint": "Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag.",
+  "eventsEmpty": "No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here."
 }

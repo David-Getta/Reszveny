@@ -1603,41 +1603,41 @@ class AppLocalizationsMr extends AppLocalizations {
       'आजची प्रश्नांची मर्यादा पूर्ण झाली आहे. उद्या पुन्हा प्रयत्न करा.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'उद्या';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days दिवसांत',
+      one: '1 दिवसात',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'तिमाही निकाल';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'बाजार उघडण्यापूर्वी';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'बाजार बंद झाल्यानंतर';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'अपेक्षित EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'तुमच्या विश्लेषणातून';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'पुढील 90 दिवसांतील तुमच्या आवडत्या आणि पोर्टफोलिओमधील शेअर्सच्या निकालांच्या तारखा, आणि तुमच्या विश्लेषणांनी नोंदवलेल्या तारखेच्या घटना.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'पुढील 90 दिवसांत तारीख असलेली कोणतीही घटना नाही. निकालांच्या तारखा येथे पाहण्यासाठी आवडते किंवा पोर्टफोलिओ शेअर्स जोडा.';
 }

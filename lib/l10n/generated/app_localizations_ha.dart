@@ -1609,41 +1609,41 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errAskLimit => 'An kai iyakar tambayoyin yau. Sake gwadawa gobe.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Gobe';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'nan da kwanaki $days',
+      one: 'nan da kwana 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Sakamakon kuɗi na kwata';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'kafin buɗe kasuwa';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'bayan rufe kasuwa';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Hasashen EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Daga nazarinka';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Kwanakin sakamakon kuɗi na abubuwan da ka fi so da hannayen jarin jakarka na kwanaki 90 masu zuwa, da abubuwan da ke da kwanan wata da nazarinka suka nuna.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Babu abubuwa masu kwanan wata a kwanaki 90 masu zuwa. Ƙara abubuwan da ka fi so ko hannayen jari a jakarka don ganin kwanakin sakamakonsu a nan.';
 }

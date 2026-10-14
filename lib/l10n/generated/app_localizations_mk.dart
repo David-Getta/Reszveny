@@ -1622,41 +1622,41 @@ class AppLocalizationsMk extends AppLocalizations {
       'Го достигнавте дневниот лимит на прашања. Обидете се повторно утре.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Утре';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'за $days дена',
+      one: 'за $days ден',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Квартални резултати';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'пред отворањето на берзата';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'по затворањето на берзата';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Проценка на EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Од твојата анализа';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Датуми на резултатите на твоите омилени акции и акциите од портфолиото за следните 90 дена, како и настаните со датум што ги означија твоите анализи.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Нема настани со датум во следните 90 дена. Додај омилени или акции во портфолиото за да ги видиш нивните датуми на резултати тука.';
 }

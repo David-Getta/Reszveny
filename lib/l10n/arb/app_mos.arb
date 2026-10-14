@@ -438,5 +438,14 @@
   "askSuggest2": "Bõe n tõe n tedg beoogã ges-taoore?",
   "askSuggest3": "Wilg-m-a ne gom-biis sẽn yaa nana",
   "askMaxReached": "Woto la sokr a yaoolem vɛɛsg kãngã yĩnga. Maan vɛɛsg-paalg n paam n le sok.",
-  "errAskLimit": "Rũndã sokr sõorã sa. Le makr beoogo."
+  "errAskLimit": "Rũndã sokr sõorã sa. Le makr beoogo.",
+  "eventTomorrow": "Beoogo",
+  "eventInDays": "{days, plural, =1{raar a yembr poorẽ} other{rasem {days} poorẽ}}",
+  "eventEarnings": "Kiuuy a tãab ligd-yɛla",
+  "eventBeforeOpen": "yaar pakr taoore",
+  "eventAfterClose": "yaar pagb poore",
+  "eventEpsEstimate": "EPS tagsgo: {value}",
+  "eventFromAnalysis": "Yii fo vɛɛsgã pʊgẽ",
+  "eventsHint": "Fo nong-n-yɩɩda la fo portfey sɛɛr-rãmbã ligd-yɛl rasem, rasem 90 sẽn watẽ wã pʊgẽ, la yɛl sẽn tar rasem fo vɛɛsgã sẽn wilgã.",
+  "eventsEmpty": "Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka."
 }

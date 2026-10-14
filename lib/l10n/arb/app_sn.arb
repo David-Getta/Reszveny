@@ -438,5 +438,14 @@
   "askSuggest2": "Chii chingashandura maonero?",
   "askSuggest3": "Tsanangura nenzira iri nyore",
   "askMaxReached": "Uyu ndiwo waive mubvunzo wekupedzisira weongororo iyi. Gadzira ongororo itsva kuti ubvunze zvimwe.",
-  "errAskLimit": "Wasvika pamuganhu wemibvunzo wanhasi. Edza zvakare mangwana."
+  "errAskLimit": "Wasvika pamuganhu wemibvunzo wanhasi. Edza zvakare mangwana.",
+  "eventTomorrow": "Mangwana",
+  "eventInDays": "{days, plural, =1{mushure mezuva 1} other{mushure memazuva {days}}}",
+  "eventEarnings": "Mhedzisiro yekota",
+  "eventBeforeOpen": "musika usati wavhurwa",
+  "eventAfterClose": "mushure mekuvharwa kwemusika",
+  "eventEpsEstimate": "Fungidziro yeEPS: {value}",
+  "eventFromAnalysis": "Kubva muongororo yako",
+  "eventsHint": "Mazuva emhedzisiro yemasheya aunofarira neepotiforiyo yako mumazuva 90 anotevera, uye zviitiko zvine mazuva zvakaratidzwa neongororo dzako.",
+  "eventsEmpty": "Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano."
 }

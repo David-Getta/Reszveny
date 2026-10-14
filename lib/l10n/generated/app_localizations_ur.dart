@@ -1603,41 +1603,41 @@ class AppLocalizationsUr extends AppLocalizations {
       'آپ آج کے سوالات کی حد تک پہنچ گئے ہیں۔ براہ کرم کل دوبارہ کوشش کریں۔';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'کل';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days دن میں',
+      one: '1 دن میں',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'سہ ماہی نتائج';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'مارکیٹ کھلنے سے پہلے';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'مارکیٹ بند ہونے کے بعد';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'متوقع EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'آپ کے تجزیے سے';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'اگلے 90 دنوں میں آپ کے پسندیدہ اور پورٹ فولیو اسٹاکس کے نتائج کی تاریخیں، اور وہ تاریخ والے واقعات جن کی نشاندہی آپ کے تجزیوں نے کی۔';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'اگلے 90 دنوں میں کوئی تاریخ والا واقعہ نہیں۔ یہاں ان کے نتائج کی تاریخیں دیکھنے کے لیے پسندیدہ یا پورٹ فولیو اسٹاکس شامل کریں۔';
 }

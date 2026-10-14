@@ -1603,41 +1603,41 @@ class AppLocalizationsYo extends AppLocalizations {
       'O ti dé ìwọ̀n ìbéèrè ti òní. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i lọ́la.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Ọ̀la';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'ní ọjọ́ $days sí i',
+      one: 'ní ọjọ́ 1 sí i',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Àbájáde ìdámẹ́rin ọdún';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'kí ọjà tó ṣí';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'lẹ́yìn tí ọjà bá tì';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Àfojúsùn EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Láti inú ìtúpalẹ̀ yín';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àti àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí.';
 }

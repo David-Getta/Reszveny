@@ -1605,41 +1605,41 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনি আজকের প্রশ্নের সীমায় পৌঁছে গেছেন। অনুগ্রহ করে আগামীকাল আবার চেষ্টা করুন।';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'আগামীকাল';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days দিন পরে',
+      one: '1 দিন পরে',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ত্রৈমাসিক ফলাফল';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'বাজার খোলার আগে';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'বাজার বন্ধের পরে';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'আনুমানিক EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'আপনার বিশ্লেষণ থেকে';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'আগামী 90 দিনে আপনার পছন্দের ও পোর্টফোলিওর শেয়ারগুলোর ফলাফলের তারিখ, এবং আপনার বিশ্লেষণে চিহ্নিত তারিখযুক্ত ঘটনা।';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'আগামী 90 দিনে কোনো তারিখযুক্ত ঘটনা নেই। এখানে ফলাফলের তারিখ দেখতে পছন্দের বা পোর্টফোলিওতে শেয়ার যোগ করুন।';
 }

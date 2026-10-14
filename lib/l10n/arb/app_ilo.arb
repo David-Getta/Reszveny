@@ -438,5 +438,14 @@
   "askSuggest2": "Ania ti makabalbaliw iti pangnamnamaan?",
   "askSuggest3": "Ilawlawagmo iti nalaka a pamay-an",
   "askMaxReached": "Dayta ti maudi a saludsod para iti daytoy a panangsukimat. Mangaramidka iti baro a panangsukimat tapno makasaludsodka pay.",
-  "errAskLimit": "Nadanonmon ti limitasion dagiti saludsod ita nga aldaw. Padasem manen inton bigat."
+  "errAskLimit": "Nadanonmon ti limitasion dagiti saludsod ita nga aldaw. Padasem manen inton bigat.",
+  "eventTomorrow": "Inton bigat",
+  "eventInDays": "{days, plural, =1{kalpasan ti 1 nga aldaw} other{kalpasan ti {days} nga aldaw}}",
+  "eventEarnings": "Kada-kuarter a resulta",
+  "eventBeforeOpen": "sakbay a lukatan ti merkado",
+  "eventAfterClose": "kalpasan a maiserra ti merkado",
+  "eventEpsEstimate": "Pattapatta ti EPS: {value}",
+  "eventFromAnalysis": "Manipud iti panangsukimatmo",
+  "eventsHint": "Dagiti petsa ti resulta dagiti paboritom ken dagiti stock iti portfoliom para iti sumaruno a 90 nga aldaw, ken dagiti pasamak nga addaan petsa a minarkaan dagiti panangsukimatmo.",
+  "eventsEmpty": "Awan ti pasamak nga addaan petsa iti sumaruno a 90 nga aldaw. Agnayon kadagiti paborito wenno stock iti portfolio tapno makitam ditoy dagiti petsa ti resultada."
 }

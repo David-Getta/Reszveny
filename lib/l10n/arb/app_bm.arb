@@ -438,5 +438,14 @@
   "askSuggest2": "Mun bɛ se ka siniko yɛlɛma?",
   "askSuggest3": "A ɲɛfɔ ka nɔgɔya",
   "askMaxReached": "O tun ye nin sɛgɛsɛgɛli ɲininkali laban ye. Sɛgɛsɛgɛli kura dilan walasa ka ɲininkali wɛrɛw kɛ.",
-  "errAskLimit": "I sera bi ɲininkaliw dan na. Hakɛto, a lajɛ tugun sini."
+  "errAskLimit": "I sera bi ɲininkaliw dan na. Hakɛto, a lajɛ tugun sini.",
+  "eventTomorrow": "Sini",
+  "eventInDays": "{days, plural, other{tile {days} kɔfɛ}}",
+  "eventEarnings": "Kalo saba jatebɔ",
+  "eventBeforeOpen": "sani sugu ka da yɛlɛ",
+  "eventAfterClose": "sugu da tugulen kɔfɛ",
+  "eventEpsEstimate": "EPS jateminɛ: {value}",
+  "eventFromAnalysis": "Ka bɔ i ka sɛgɛsɛgɛli la",
+  "eventsHint": "I ka diyanyelenw ni i ka aksiyɔn kɛsu aksiyɔnw jatebɔ donw tile 90 nataw kɔnɔ, ani ko nataw minnu don sɛbɛnna i ka sɛgɛsɛgɛliw fɛ.",
+  "eventsEmpty": "Ko nata si don tɛ tile 90 nataw kɔnɔ. Diyanyelenw walima aksiyɔn kɛsu aksiyɔnw fara a kan walasa k’u jatebɔ donw ye yan."
 }

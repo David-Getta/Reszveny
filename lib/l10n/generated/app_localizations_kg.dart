@@ -1609,41 +1609,41 @@ class AppLocalizationsKg extends AppLocalizations {
       'Ufwene ndilu ya biuvu bia lumbu kiaki. Meka diaka mbazi.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Mbazi';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'na bilumbu $days',
+      one: 'na kilumbu 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Ba résultats ya trimestre';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'ntwala ya kuzibuka ya zandu';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'na nima ya kukanga ya zandu';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Estimation ya EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Na analyse na nge';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mpi mambu ya kele ti dati yina ba analyse na nge me monisa.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa.';
 }

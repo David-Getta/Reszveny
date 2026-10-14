@@ -1602,41 +1602,41 @@ class AppLocalizationsHt extends AppLocalizations {
       'Ou rive nan limit kesyon pou jodi a. Eseye ankò demen.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Demen';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'nan $days jou',
+      one: 'nan 1 jou',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Rezilta trimestriyèl';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'anvan mache a louvri';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'apre mache a fèmen';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Estimasyon EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Soti nan analiz ou';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, ak evènman ki gen dat analiz ou yo make.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la.';
 }

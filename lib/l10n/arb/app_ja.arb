@@ -438,5 +438,14 @@
   "askSuggest2": "見通しを変える要因は？",
   "askSuggest3": "わかりやすく説明して",
   "askMaxReached": "この分析への質問はこれが最後です。さらに質問するには、新しい分析を生成してください。",
-  "errAskLimit": "本日の質問の上限に達しました。明日もう一度お試しください。"
+  "errAskLimit": "本日の質問の上限に達しました。明日もう一度お試しください。",
+  "eventTomorrow": "明日",
+  "eventInDays": "{days, plural, =1{1 日後} other{{days} 日後}}",
+  "eventEarnings": "四半期決算",
+  "eventBeforeOpen": "取引開始前",
+  "eventAfterClose": "取引終了後",
+  "eventEpsEstimate": "EPS 予想: {value}",
+  "eventFromAnalysis": "自分の分析から",
+  "eventsHint": "お気に入りとポートフォリオの銘柄の今後 90 日間の決算発表日と、分析で示された日付付きのイベントです。",
+  "eventsEmpty": "今後 90 日間に日付付きのイベントはありません。お気に入りやポートフォリオに銘柄を追加すると、ここに決算発表日が表示されます。"
 }

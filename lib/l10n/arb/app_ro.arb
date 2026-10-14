@@ -438,5 +438,14 @@
   "askSuggest2": "Ce ar putea schimba perspectivele?",
   "askSuggest3": "Explică-mi pe înțeles",
   "askMaxReached": "Aceasta a fost ultima întrebare pentru această analiză. Generează o analiză nouă ca să întrebi mai mult.",
-  "errAskLimit": "Ai atins limita de întrebări pentru azi. Încearcă din nou mâine."
+  "errAskLimit": "Ai atins limita de întrebări pentru azi. Încearcă din nou mâine.",
+  "eventTomorrow": "Mâine",
+  "eventInDays": "{days, plural, one{peste {days} zi} few{peste {days} zile} other{peste {days} de zile}}",
+  "eventEarnings": "Rezultate trimestriale",
+  "eventBeforeOpen": "înainte de deschiderea pieței",
+  "eventAfterClose": "după închiderea pieței",
+  "eventEpsEstimate": "EPS estimat: {value}",
+  "eventFromAnalysis": "Din analiza ta",
+  "eventsHint": "Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, plus evenimentele cu dată semnalate de analizele tale.",
+  "eventsEmpty": "Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor."
 }

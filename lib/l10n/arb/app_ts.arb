@@ -438,5 +438,14 @@
   "askSuggest2": "I yini leswi swi nga cincaka langutelo?",
   "askSuggest3": "Hlamusela hi ndlela yo olova",
   "askMaxReached": "Lexi a xi ri xivutiso xo hetelela xa nxopaxopo lowu. Endla nxopaxopo lowuntshwa leswaku u vutisa swin'wana.",
-  "errAskLimit": "U fikelerile ndzelekano wa swivutiso wa namuntlha. Hi kombela u ringeta nakambe mundzuku."
+  "errAskLimit": "U fikelerile ndzelekano wa swivutiso wa namuntlha. Hi kombela u ringeta nakambe mundzuku.",
+  "eventTomorrow": "Mundzuku",
+  "eventInDays": "{days, plural, =1{endzhaku ka siku ra 1} other{endzhaku ka masiku ya {days}}}",
+  "eventEarnings": "Mbuyelo wa kotara",
+  "eventBeforeOpen": "makete wu nga si pfuriwa",
+  "eventAfterClose": "endzhaku ka loko makete wu pfariwile",
+  "eventEpsEstimate": "Xiringanyeto xa EPS: {value}",
+  "eventFromAnalysis": "Ku suka eka nxopaxopo wa wena",
+  "eventsHint": "Masiku ya mbuyelo ya swiavelo leswi u swi rhandzaka ni swa phothifoliyo ya wena eka masiku ya 90 lama taka, ni swiendlakalo leswi nga ni masiku leswi minxopaxopo ya wena yi swi kombiseke.",
+  "eventsEmpty": "A ku na swiendlakalo leswi nga ni masiku eka masiku ya 90 lama taka. Engetela leswi u swi rhandzaka kumbe swiavelo swa phothifoliyo leswaku u vona masiku ya mbuyelo wa swona laha."
 }

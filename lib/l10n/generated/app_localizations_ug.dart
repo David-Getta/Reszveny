@@ -1606,41 +1606,41 @@ class AppLocalizationsUg extends AppLocalizations {
   String get errAskLimit => 'بۈگۈنكى سوئال چېكىگە يەتتىڭىز. ئەتە قايتا سىناڭ.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'ئەتە';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days كۈندىن كېيىن',
+      one: '1 كۈندىن كېيىن',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'پەسىللىك نەتىجە';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'بازار ئېچىلىشتىن بۇرۇن';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'بازار تاقالغاندىن كېيىن';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS مۆلچەرى: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'تەھلىلىڭىزدىن';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'يىغقۇچ ۋە مەبلەغ بىرىكمىسىدىكى پاينامىلەرنىڭ كېيىنكى 90 كۈندىكى نەتىجە ئېلان قىلىش ۋاقىتلىرى، شۇنداقلا تەھلىللىرىڭىز بەلگىلىگەن ۋاقتى بار ئىشلار.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'كېيىنكى 90 كۈندە ۋاقتى بار ئىش يوق. نەتىجە ۋاقىتلىرىنى بۇ يەردە كۆرۈش ئۈچۈن يىغقۇچقا ياكى مەبلەغ بىرىكمىسىگە پاينامە قوشۇڭ.';
 }

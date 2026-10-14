@@ -1612,41 +1612,41 @@ class AppLocalizationsTa extends AppLocalizations {
       'இன்றைய கேள்வி வரம்பை எட்டிவிட்டீர்கள். நாளை மீண்டும் முயலவும்.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'நாளை';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days நாட்களில்',
+      one: '1 நாளில்',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'காலாண்டு முடிவுகள்';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'சந்தை திறப்பதற்கு முன்';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'சந்தை மூடிய பின்';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS மதிப்பீடு: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'உங்கள் பகுப்பாய்விலிருந்து';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'அடுத்த 90 நாட்களில் உங்கள் பிடித்தவை மற்றும் போர்ட்ஃபோலியோ பங்குகளின் முடிவு தேதிகள், மற்றும் உங்கள் பகுப்பாய்வுகள் குறிப்பிட்ட தேதியிட்ட நிகழ்வுகள்.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'அடுத்த 90 நாட்களில் தேதியிட்ட நிகழ்வுகள் இல்லை. அவற்றின் முடிவு தேதிகளை இங்கே காண பிடித்தவை அல்லது போர்ட்ஃபோலியோ பங்குகளைச் சேர்க்கவும்.';
 }

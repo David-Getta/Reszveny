@@ -1639,41 +1639,42 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Rīt';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'pēc $days dienām',
+      one: 'pēc $days dienas',
+      zero: 'pēc $days dienām',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Ceturkšņa rezultāti';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'pirms biržas atvēršanas';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'pēc biržas slēgšanas';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS prognoze: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'No jūsu analīzes';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Jūsu izlases un portfeļa akciju rezultātu datumi nākamajām 90 dienām un datēti notikumi, ko atzīmējušas jūsu analīzes.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Nākamajās 90 dienās nav datētu notikumu. Pievienojiet akcijas izlasei vai portfelim, lai šeit redzētu to rezultātu datumus.';
 }

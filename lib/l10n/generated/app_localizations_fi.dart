@@ -1605,41 +1605,41 @@ class AppLocalizationsFi extends AppLocalizations {
       'Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Huomenna';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: '$days päivän päästä',
+      one: '1 päivän päästä',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Osavuosikatsaus';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'ennen pörssin avautumista';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'pörssin sulkeuduttua';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS-ennuste: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Omasta analyysistasi';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta sekä analyysiesi nostamat päivätyt tapahtumat.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä.';
 }

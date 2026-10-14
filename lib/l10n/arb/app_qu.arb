@@ -438,5 +438,14 @@
   "askSuggest2": "Imataq qhawayta tikranman?",
   "askSuggest3": "Mana sasallata sut'inchay",
   "askMaxReached": "Chayqa kay t'aqwiypaq qhipa tapukuymi karqan. Astawan tapukunaykipaq musuq t'aqwiyta ruway.",
-  "errAskLimit": "Kunan p'unchawpa tapukuy limitenmanmi chayanki. Paqarin hukmanta kallpachakuy."
+  "errAskLimit": "Kunan p'unchawpa tapukuy limitenmanmi chayanki. Paqarin hukmanta kallpachakuy.",
+  "eventTomorrow": "Paqarin",
+  "eventInDays": "{days, plural, =1{1 p'unchaymanta} other{{days} p'unchaymanta}}",
+  "eventEarnings": "Kimsa killapa willakuynin",
+  "eventBeforeOpen": "qhatu manaraq kichakuchkaptin",
+  "eventAfterClose": "qhatu wichqakusqan qhipata",
+  "eventEpsEstimate": "Suyakusqa EPS: {value}",
+  "eventFromAnalysis": "T'aqwiyniykimanta",
+  "eventsHint": "Munasqaykikunap, portafolioykip acciónninkunap willakuy p'unchayninkuna hamuq 90 p'unchaykunapi, t'aqwiyniykikuna qhawachisqan p'unchayniyuq ruwaykunapas.",
+  "eventsEmpty": "Hamuq 90 p'unchaykunapi mana p'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p'unchayninkuta qhawanaykipaq."
 }

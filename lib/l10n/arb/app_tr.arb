@@ -438,5 +438,14 @@
   "askSuggest2": "Görünümü ne değiştirebilir?",
   "askSuggest3": "Basitçe açıkla",
   "askMaxReached": "Bu analiz için son soruydu. Daha fazla soru sormak için yeni bir analiz oluşturun.",
-  "errAskLimit": "Bugünkü soru sınırına ulaştınız. Lütfen yarın tekrar deneyin."
+  "errAskLimit": "Bugünkü soru sınırına ulaştınız. Lütfen yarın tekrar deneyin.",
+  "eventTomorrow": "Yarın",
+  "eventInDays": "{days, plural, =1{1 gün sonra} other{{days} gün sonra}}",
+  "eventEarnings": "Çeyreklik bilanço",
+  "eventBeforeOpen": "piyasa açılmadan önce",
+  "eventAfterClose": "piyasa kapandıktan sonra",
+  "eventEpsEstimate": "HBK beklentisi: {value}",
+  "eventFromAnalysis": "Analizinden",
+  "eventsHint": "Favorilerinin ve portföyündeki hisselerin önümüzdeki 90 gündeki bilanço tarihleri ile analizlerinin işaret ettiği tarihli olaylar.",
+  "eventsEmpty": "Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle."
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Gịnị nwere ike ịgbanwe ọdịnihu ya?",
   "askSuggest3": "Kọwaa ya n'ụzọ dị mfe",
   "askMaxReached": "Nke ahụ bụ ajụjụ ikpeazụ maka nyocha a. Mepụta nyocha ọhụrụ ka ị jụọ ọzọ.",
-  "errAskLimit": "Ị ruola oke ajụjụ nke taa. Nwaa ọzọ echi."
+  "errAskLimit": "Ị ruola oke ajụjụ nke taa. Nwaa ọzọ echi.",
+  "eventTomorrow": "Echi",
+  "eventInDays": "{days, plural, =1{n'ime ụbọchị 1} other{n'ime ụbọchị {days}}}",
+  "eventEarnings": "Nsonaazụ nkeji ọnwa atọ",
+  "eventBeforeOpen": "tupu ahịa emepee",
+  "eventAfterClose": "mgbe ahịa mechiri",
+  "eventEpsEstimate": "Atụmatụ EPS: {value}",
+  "eventFromAnalysis": "Site na nyocha gị",
+  "eventsHint": "Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, na ihe omume nwere ụbọchị nyocha gị gosiri.",
+  "eventsEmpty": "Enweghị ihe omume nwere ụbọchị n'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a."
 }

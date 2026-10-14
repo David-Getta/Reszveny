@@ -1607,41 +1607,41 @@ class AppLocalizationsMs extends AppLocalizations {
       'Anda telah mencapai had soalan hari ini. Sila cuba lagi esok.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Esok';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'dalam $days hari',
+      one: 'dalam 1 hari',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Keputusan suku tahunan';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'sebelum pasaran dibuka';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'selepas pasaran ditutup';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Anggaran EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Daripada analisis anda';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Tarikh keputusan saham kegemaran dan portfolio anda untuk 90 hari akan datang, serta acara bertarikh yang ditandakan oleh analisis anda.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Tiada acara bertarikh dalam 90 hari akan datang. Tambah saham kegemaran atau portfolio untuk melihat tarikh keputusannya di sini.';
 }

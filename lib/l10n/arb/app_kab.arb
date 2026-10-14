@@ -438,5 +438,14 @@
   "askSuggest2": "D acu i izemren ad ibeddel tamuɣli ɣer zdat?",
   "askSuggest3": "Fsser-it-id s wawalen fessusen",
   "askMaxReached": "Wa d asteqsi aneggaru i tesleḍt-a. Snulfu-d tasleḍt tamaynut akken ad testeqsiḍ ugar.",
-  "errAskLimit": "Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka."
+  "errAskLimit": "Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka.",
+  "eventTomorrow": "Azekka",
+  "eventInDays": "{days, plural, =1{deg 1 n wass} other{deg {days} n wussan}}",
+  "eventEarnings": "Igmaḍ n kraḍ n wayyuren",
+  "eventBeforeOpen": "send ad yeldi ssuq",
+  "eventAfterClose": "seld ma yemdel ssuq",
+  "eventEpsEstimate": "EPS i yettwarǧan: {value}",
+  "eventFromAnalysis": "Seg tesleḍt-ik",
+  "eventsHint": "Izemziyen n yigmaḍ n yismenyifen-ik d wayen yellan deg uqrab-ik i 90 n wussan i d-iteddun, akked tidyanin s uzemz i d-mmlent tselḍin-ik.",
+  "eventsEmpty": "Ulac tidyanin s uzemz deg 90 n wussan i d-iteddun. Rnu ismenyifen neɣ ayen ɣer uqrab akken ad twaliḍ dagi izemziyen n yigmaḍ-nsen."
 }

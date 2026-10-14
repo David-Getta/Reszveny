@@ -438,5 +438,14 @@
   "askSuggest2": "Ke eng se se ka fetolang ponelopele?",
   "askSuggest3": "E tlhalose ka mafoko a a motlhofo",
   "askMaxReached": "Eo e ne e le potso ya bofelo ya tshekatsheko e. Dira tshekatsheko e ntšha go botsa go feta.",
-  "errAskLimit": "O fitlhetse tekanyetso ya dipotso ya gompieno. Tsweetswee leka gape kamoso."
+  "errAskLimit": "O fitlhetse tekanyetso ya dipotso ya gompieno. Tsweetswee leka gape kamoso.",
+  "eventTomorrow": "Kamoso",
+  "eventInDays": "{days, plural, =1{morago ga letsatsi le le 1} other{morago ga malatsi a le {days}}}",
+  "eventEarnings": "Dipoelo tsa kotara",
+  "eventBeforeOpen": "pele mmaraka o bulwa",
+  "eventAfterClose": "morago ga mmaraka o tswalwa",
+  "eventEpsEstimate": "Kakanyo ya EPS: {value}",
+  "eventFromAnalysis": "Go tswa mo tshekatshekong ya gago",
+  "eventsHint": "Malatsi a dipoelo a dishere tse o di ratang le tsa potefolio ya gago mo malatsing a le 90 a a tlang, le ditiragalo tse di nang le malatsi tse ditshekatsheko tsa gago di di supileng.",
+  "eventsEmpty": "Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano."
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Yini engashintsha ukubukeka kwesikhathi esizayo?",
   "askSuggest3": "Ngichazele ngendlela elula",
   "askMaxReached": "Lowo bekungumbuzo wokugcina walolu hlaziyo. Yenza uhlaziyo olusha ukuze ubuze okwengeziwe.",
-  "errAskLimit": "Ufinyelele umkhawulo wemibuzo wanamuhla. Sicela uzame futhi kusasa."
+  "errAskLimit": "Ufinyelele umkhawulo wemibuzo wanamuhla. Sicela uzame futhi kusasa.",
+  "eventTomorrow": "Kusasa",
+  "eventInDays": "{days, plural, =1{ngemva kosuku olu-1} other{ngemva kwezinsuku ezingu-{days}}}",
+  "eventEarnings": "Imiphumela yekota",
+  "eventBeforeOpen": "ngaphambi kokuvulwa kwemakethe",
+  "eventAfterClose": "ngemva kokuvalwa kwemakethe",
+  "eventEpsEstimate": "Isilinganiso se-EPS: {value}",
+  "eventFromAnalysis": "Kusuka ekuhlaziyweni kwakho",
+  "eventsHint": "Izinsuku zemiphumela yamasheya akho ayizintandokazi nawephothifoliyo ezinsukwini ezingu-90 ezizayo, kanye nemicimbi enezinsuku ephawulwe uhlaziyo lwakho.",
+  "eventsEmpty": "Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha."
 }

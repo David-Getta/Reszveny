@@ -1611,41 +1611,41 @@ class AppLocalizationsRw extends AppLocalizations {
       'Wageze ku mubare ntarengwa w\'ibibazo by\'uyu munsi. Ongera ugerageze ejo.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Ejo';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'mu minsi $days',
+      one: 'mu munsi 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Ibyavuye mu gihembwe';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'mbere y\'uko isoko rifungura';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'nyuma y\'uko isoko rifunga';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Igereranyo rya EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Biva mu isesengura ryawe';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Amatariki y\'ibyavuye mu gihembwe by\'imigabane ukunda n\'iri mu ishoramari ryawe mu minsi 90 iri imbere, n\'ibikorwa bifite amatariki amasesengura yawe yagaragaje.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Nta gikorwa gifite itariki mu minsi 90 iri imbere. Ongeramo ibyo ukunda cyangwa imigabane yo mu ishoramari kugira ngo ubone hano amatariki y\'ibyavuyemo.';
 }

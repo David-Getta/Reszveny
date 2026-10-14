@@ -438,5 +438,14 @@
   "askSuggest2": "Nki dilenda soba mambu ma lumbu ma ntwala?",
   "askSuggest3": "Tendula yo mu mpila ya pete",
   "askMaxReached": "Yoyo kiuvu kia nsuka mu analyse yai. Vanga analyse ya mpa mu yuvula diaka.",
-  "errAskLimit": "Ufwene ndilu ya biuvu bia lumbu kiaki. Meka diaka mbazi."
+  "errAskLimit": "Ufwene ndilu ya biuvu bia lumbu kiaki. Meka diaka mbazi.",
+  "eventTomorrow": "Mbazi",
+  "eventInDays": "{days, plural, =1{na kilumbu 1} other{na bilumbu {days}}}",
+  "eventEarnings": "Ba résultats ya trimestre",
+  "eventBeforeOpen": "ntwala ya kuzibuka ya zandu",
+  "eventAfterClose": "na nima ya kukanga ya zandu",
+  "eventEpsEstimate": "Estimation ya EPS: {value}",
+  "eventFromAnalysis": "Na analyse na nge",
+  "eventsHint": "Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mpi mambu ya kele ti dati yina ba analyse na nge me monisa.",
+  "eventsEmpty": "Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa."
 }

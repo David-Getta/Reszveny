@@ -1608,41 +1608,41 @@ class AppLocalizationsIt extends AppLocalizations {
       'Hai raggiunto il limite giornaliero di domande. Riprova domani.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Domani';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'tra $days giorni',
+      one: 'tra 1 giorno',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Risultati trimestrali';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'prima dell\'apertura';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'dopo la chiusura';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Stima EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Dalla tua analisi';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Le date dei risultati dei tuoi preferiti e dei titoli in portafoglio per i prossimi 90 giorni, e gli eventi con data segnalati dalle tue analisi.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati.';
 }

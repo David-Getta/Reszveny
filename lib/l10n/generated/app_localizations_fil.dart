@@ -1610,41 +1610,41 @@ class AppLocalizationsFil extends AppLocalizations {
       'Naabot mo na ang limitasyon ng mga tanong para ngayong araw. Pakisubukang muli bukas.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Bukas';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'sa loob ng $days araw',
+      one: 'sa loob ng 1 araw',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Quarterly na resulta';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'bago magbukas ang merkado';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'pagkasara ng merkado';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Tantyang EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Mula sa iyong pagsusuri';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, at ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta.';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Que cambiaría as perspectivas?",
   "askSuggest3": "Explícao con palabras sinxelas",
   "askMaxReached": "Esa era a última pregunta para esta análise. Crea unha análise nova para facer máis preguntas.",
-  "errAskLimit": "Alcanzaches o límite de preguntas de hoxe. Téntao de novo mañá."
+  "errAskLimit": "Alcanzaches o límite de preguntas de hoxe. Téntao de novo mañá.",
+  "eventTomorrow": "Mañá",
+  "eventInDays": "{days, plural, one{dentro de {days} día} other{dentro de {days} días}}",
+  "eventEarnings": "Resultados trimestrais",
+  "eventBeforeOpen": "antes da apertura",
+  "eventAfterClose": "tras o peche",
+  "eventEpsEstimate": "BPA estimado: {value}",
+  "eventFromAnalysis": "Da túa análise",
+  "eventsHint": "Datas de resultados dos teus favoritos e das accións da túa carteira para os próximos 90 días, e os eventos con data que detectaron as túas análises.",
+  "eventsEmpty": "Non hai eventos con data nos próximos 90 días. Engade favoritos ou accións á carteira para ver aquí as súas datas de resultados."
 }

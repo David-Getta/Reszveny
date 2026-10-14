@@ -1610,41 +1610,41 @@ class AppLocalizationsNy extends AppLocalizations {
   String get errAskLimit => 'Mwafika malire a mafunso a lero. Yesaninso mawa.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Mawa';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'patatha masiku $days',
+      one: 'patatha tsiku 1',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Zotsatira za kotala';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'msika usanatsegulidwe';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'msika utatsekedwa';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Kuyerekeza kwa EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Kuchokera ku kusanthula kwanu';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Masiku a zotsatira za masheya omwe mumawakonda ndi a m\'masheya anu m\'masiku 90 akubwerawa, komanso zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Palibe zochitika za tsiku lodziwika m\'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano.';
 }

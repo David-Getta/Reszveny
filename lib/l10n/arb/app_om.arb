@@ -438,5 +438,14 @@
   "askSuggest2": "Ilaalcha gara fuulduraa maaltu jijjiiruu danda'a?",
   "askSuggest3": "Salphaatti ibsi",
   "askMaxReached": "Kun gaaffii xiinxala kanaaf dhumaa ture. Dabalataan gaafachuuf xiinxala haaraa uumi.",
-  "errAskLimit": "Daangaa gaaffii har'aa geessee jirta. Boru irra deebi'ii yaali."
+  "errAskLimit": "Daangaa gaaffii har'aa geessee jirta. Boru irra deebi'ii yaali.",
+  "eventTomorrow": "Boru",
+  "eventInDays": "{days, plural, =1{guyyaa 1 booda} other{guyyaa {days} booda}}",
+  "eventEarnings": "Bu'aa kurmaanaa",
+  "eventBeforeOpen": "gabaan osoo hin banamin",
+  "eventAfterClose": "gabaan erga cufamee booda",
+  "eventEpsEstimate": "Tilmaama EPS: {value}",
+  "eventFromAnalysis": "Xiinxala kee irraa",
+  "eventsHint": "Guyyoota bu'aa aksiyoonota filatamoo fi poortfooliyoo keetii guyyoota 90 itti aananitti, akkasumas taateewwan guyyaa qaban kan xiinxalli kee agarsiise.",
+  "eventsEmpty": "Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali."
 }

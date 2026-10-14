@@ -1604,41 +1604,41 @@ class AppLocalizationsCkb extends AppLocalizations {
       'گەیشتیتە سنووری پرسیارەکانی ئەمڕۆ. تکایە سبەی دووبارە هەوڵ بدەرەوە.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'سبەینێ';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'دوای $days ڕۆژ',
+      one: 'دوای 1 ڕۆژ',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'ئەنجامە وەرزییەکان';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'پێش کرانەوەی بازاڕ';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'دوای داخستنی بازاڕ';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPSی چاوەڕوانکراو: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'لە شیکارییەکەتەوە';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'بەرواری ئەنجامەکانی دڵخوازەکانت و پشکەکانی پۆرتفۆلیۆکەت بۆ 90 ڕۆژی داهاتوو، و ئەو ڕووداوە بەرواردارانەی شیکارییەکانت دیاریان کردوون.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'لە 90 ڕۆژی داهاتوودا هیچ ڕووداوێکی بەروارداری نییە. دڵخواز یان پشکی پۆرتفۆلیۆ زیاد بکە بۆ ئەوەی بەرواری ئەنجامەکانیان لێرە ببینیت.';
 }

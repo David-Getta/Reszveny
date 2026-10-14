@@ -1608,41 +1608,41 @@ class AppLocalizationsNl extends AppLocalizations {
       'Je hebt de dagelijkse limiet voor vragen bereikt. Probeer het morgen opnieuw.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Morgen';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'over $days dagen',
+      one: 'over 1 dag',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Kwartaalcijfers';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'voor de opening';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'na de sluiting';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'EPS-verwachting: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Uit je analyse';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Cijferdata van je favorieten en portefeuille-aandelen voor de komende 90 dagen, en de gedateerde gebeurtenissen die je analyses hebben gemarkeerd.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Geen gedateerde gebeurtenissen in de komende 90 dagen. Voeg favorieten of portefeuille-aandelen toe om hier hun cijferdata te zien.';
 }

@@ -438,5 +438,14 @@
   "askSuggest2": "Nĩ kĩĩ kĩngĩgarũra ũrĩa maũndũ makoneka?",
   "askSuggest3": "Taarĩria ũhoro ũyũ na njĩra ĩhũthũ",
   "askMaxReached": "Kĩu nĩkĩo kĩũria kĩa mũthia kĩa ũthuthuria ũyũ. Thondeka ũthuthuria mwerũ nĩguo ũũrie ingĩ.",
-  "errAskLimit": "Nĩũkinyĩte mũhaka wa ciũria cia ũmũthĩ. Geria rĩngĩ rũciũ."
+  "errAskLimit": "Nĩũkinyĩte mũhaka wa ciũria cia ũmũthĩ. Geria rĩngĩ rũciũ.",
+  "eventTomorrow": "Rũciũ",
+  "eventInDays": "{days, plural, =1{thutha wa mũthenya 1} other{thutha wa mĩthenya {days}}}",
+  "eventEarnings": "Maumĩrĩra ma mĩeri ĩtatũ",
+  "eventBeforeOpen": "mbere ya ndũnyũ kũhingũrwo",
+  "eventAfterClose": "thutha wa ndũnyũ kũhingwo",
+  "eventEpsEstimate": "EPS ĩrĩa yetagĩrĩrwo: {value}",
+  "eventFromAnalysis": "Kuuma ũthuthuria waku",
+  "eventsHint": "Matukũ ma maumĩrĩra ma iria wendete na hisa ciaku harĩa mĩthenya 90 ĩrĩa ĩroka, na maũndũ marĩ na matukũ marĩa ũthuthuria waku wonanirie.",
+  "eventsEmpty": "Gũtirĩ maũndũ marĩ na matukũ mĩthenya-inĩ 90 ĩrĩa ĩroka. Ongerera iria wendete kana hisa nĩguo wone matukũ ma maumĩrĩra mazo haha."
 }

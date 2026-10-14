@@ -438,5 +438,14 @@
   "askSuggest2": "Ano ang makapagbabago sa pananaw?",
   "askSuggest3": "Ipaliwanag ito sa simpleng salita",
   "askMaxReached": "Iyon na ang huling tanong para sa pagsusuring ito. Gumawa ng bagong pagsusuri para makapagtanong pa.",
-  "errAskLimit": "Naabot mo na ang limitasyon ng mga tanong para ngayong araw. Pakisubukang muli bukas."
+  "errAskLimit": "Naabot mo na ang limitasyon ng mga tanong para ngayong araw. Pakisubukang muli bukas.",
+  "eventTomorrow": "Bukas",
+  "eventInDays": "{days, plural, =1{sa loob ng 1 araw} other{sa loob ng {days} araw}}",
+  "eventEarnings": "Quarterly na resulta",
+  "eventBeforeOpen": "bago magbukas ang merkado",
+  "eventAfterClose": "pagkasara ng merkado",
+  "eventEpsEstimate": "Tantyang EPS: {value}",
+  "eventFromAnalysis": "Mula sa iyong pagsusuri",
+  "eventsHint": "Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, at ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri.",
+  "eventsEmpty": "Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta."
 }

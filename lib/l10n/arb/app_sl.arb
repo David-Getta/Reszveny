@@ -438,5 +438,14 @@
   "askSuggest2": "Kaj bi lahko spremenilo obete?",
   "askSuggest3": "Razloži preprosto",
   "askMaxReached": "To je bilo zadnje vprašanje za to analizo. Če želite vprašati še kaj, ustvarite novo analizo.",
-  "errAskLimit": "Dosegli ste današnjo omejitev vprašanj. Poskusite znova jutri."
+  "errAskLimit": "Dosegli ste današnjo omejitev vprašanj. Poskusite znova jutri.",
+  "eventTomorrow": "Jutri",
+  "eventInDays": "{days, plural, one{čez {days} dan} two{čez {days} dneva} few{čez {days} dni} other{čez {days} dni}}",
+  "eventEarnings": "Četrtletni rezultati",
+  "eventBeforeOpen": "pred odprtjem borze",
+  "eventAfterClose": "po zaprtju borze",
+  "eventEpsEstimate": "Ocena EPS: {value}",
+  "eventFromAnalysis": "Iz vaše analize",
+  "eventsHint": "Datumi objave rezultatov za vaše priljubljene delnice in delnice v portfelju v naslednjih 90 dneh ter datirani dogodki, ki so jih označile vaše analize.",
+  "eventsEmpty": "V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov."
 }

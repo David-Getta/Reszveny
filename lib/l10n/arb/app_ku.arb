@@ -438,5 +438,14 @@
   "askSuggest2": "Çi dikare pêşbîniyê biguherîne?",
   "askSuggest3": "Bi awayekî hêsan rave bike",
   "askMaxReached": "Ev pirsa dawî ya vê analîzê bû. Ji bo pirsên din analîzeke nû çêke.",
-  "errAskLimit": "Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne."
+  "errAskLimit": "Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne.",
+  "eventTomorrow": "Sibê",
+  "eventInDays": "{days, plural, =1{di 1 rojê de} other{di {days} rojan de}}",
+  "eventEarnings": "Encamên sêmehî",
+  "eventBeforeOpen": "berî vebûna borsayê",
+  "eventAfterClose": "piştî girtina borsayê",
+  "eventEpsEstimate": "Texmîna EPS: {value}",
+  "eventFromAnalysis": "Ji analîza te",
+  "eventsHint": "Dîrokên encamên bijare û pişkên portfolyoya te ji bo 90 rojên bê, û bûyerên bi dîrok ên ku analîzên te nîşan dane.",
+  "eventsEmpty": "Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî."
 }

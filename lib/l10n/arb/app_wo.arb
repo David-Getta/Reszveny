@@ -438,5 +438,14 @@
   "askSuggest2": "Lan mën a soppi li ñu séentu?",
   "askSuggest3": "Leeral ko ci anam bu yomb",
   "askMaxReached": "Loolu mooy laaj bu mujj bi ci saytu bii. Defaral saytu bu bees ngir laaj yeneen.",
-  "errAskLimit": "Agsi nga ci limu laaj yu tey yi. Jéemaatal ëllëg."
+  "errAskLimit": "Agsi nga ci limu laaj yu tey yi. Jéemaatal ëllëg.",
+  "eventTomorrow": "Ëllëg",
+  "eventInDays": "{days, plural, =1{ci 1 fan} other{ci {days} fan}}",
+  "eventEarnings": "Njureef yu ñetti weer",
+  "eventBeforeOpen": "balaa marse bi di ubbiku",
+  "eventAfterClose": "bu marse bi tëjee",
+  "eventEpsEstimate": "Xayma EPS: {value}",
+  "eventFromAnalysis": "Ci sa saytu",
+  "eventsHint": "Bisi njureef yu aksiyoŋ yi nga gënal ak yu sa portfolio ci 90 fan yii di ñëw, ak mbir yu am bis yi sa saytu yi tànn.",
+  "eventsEmpty": "Amul mbir bu am bis ci 90 fan yii di ñëw. Yokkal yi nga gënal walla aksiyoŋ ngir gis fii seen bisi njureef."
 }

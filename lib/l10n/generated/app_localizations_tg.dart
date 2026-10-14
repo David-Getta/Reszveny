@@ -1605,41 +1605,41 @@ class AppLocalizationsTg extends AppLocalizations {
       'Шумо ба маҳдудияти имрӯзаи саволҳо расидед. Лутфан фардо бори дигар кӯшиш кунед.';
 
   @override
-  String get eventTomorrow => 'Tomorrow';
+  String get eventTomorrow => 'Фардо';
 
   @override
   String eventInDays(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'in $days days',
-      one: 'in 1 day',
+      other: 'баъд аз $days рӯз',
+      one: 'баъд аз 1 рӯз',
     );
     return '$_temp0';
   }
 
   @override
-  String get eventEarnings => 'Quarterly results';
+  String get eventEarnings => 'Натиҷаҳои семоҳа';
 
   @override
-  String get eventBeforeOpen => 'before the open';
+  String get eventBeforeOpen => 'пеш аз кушодашавии бозор';
 
   @override
-  String get eventAfterClose => 'after the close';
+  String get eventAfterClose => 'пас аз пӯшидашавии бозор';
 
   @override
   String eventEpsEstimate(String value) {
-    return 'EPS estimate: $value';
+    return 'Пешбинии EPS: $value';
   }
 
   @override
-  String get eventFromAnalysis => 'From your analysis';
+  String get eventFromAnalysis => 'Аз таҳлили шумо';
 
   @override
   String get eventsHint =>
-      'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.';
+      'Санаҳои натиҷаҳои саҳмияҳои интихобшуда ва портфели шумо дар 90 рӯзи оянда ва рӯйдодҳои санадоре, ки таҳлилҳои шумо қайд кардаанд.';
 
   @override
   String get eventsEmpty =>
-      'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.';
+      'Дар 90 рӯзи оянда рӯйдоди санадор нест. Интихобшудаҳо ё саҳмияҳои портфелро илова кунед, то санаҳои натиҷаҳои онҳоро дар ин ҷо бинед.';
 }

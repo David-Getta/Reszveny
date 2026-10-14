@@ -438,5 +438,14 @@
   "askSuggest2": "Wat kan de vooruitzichten veranderen?",
   "askSuggest3": "Leg het eenvoudig uit",
   "askMaxReached": "Dat was de laatste vraag voor deze analyse. Genereer een nieuwe analyse om meer te vragen.",
-  "errAskLimit": "Je hebt de dagelijkse limiet voor vragen bereikt. Probeer het morgen opnieuw."
+  "errAskLimit": "Je hebt de dagelijkse limiet voor vragen bereikt. Probeer het morgen opnieuw.",
+  "eventTomorrow": "Morgen",
+  "eventInDays": "{days, plural, =1{over 1 dag} other{over {days} dagen}}",
+  "eventEarnings": "Kwartaalcijfers",
+  "eventBeforeOpen": "voor de opening",
+  "eventAfterClose": "na de sluiting",
+  "eventEpsEstimate": "EPS-verwachting: {value}",
+  "eventFromAnalysis": "Uit je analyse",
+  "eventsHint": "Cijferdata van je favorieten en portefeuille-aandelen voor de komende 90 dagen, en de gedateerde gebeurtenissen die je analyses hebben gemarkeerd.",
+  "eventsEmpty": "Geen gedateerde gebeurtenissen in de komende 90 dagen. Voeg favorieten of portefeuille-aandelen toe om hier hun cijferdata te zien."
 }

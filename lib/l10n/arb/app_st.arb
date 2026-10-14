@@ -438,5 +438,14 @@
   "askSuggest2": "Ke eng e ka fetolang ponelopele?",
   "askSuggest3": "E hlalose ka mantswe a bonolo",
   "askMaxReached": "Eo e ne e le potso ya ho qetela bakeng sa tlhahlobo ena. Etsa tlhahlobo e ntjha ho botsa tse ding.",
-  "errAskLimit": "O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane."
+  "errAskLimit": "O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane.",
+  "eventTomorrow": "Hosane",
+  "eventInDays": "{days, plural, =1{ka mor'a letsatsi le 1} other{ka mor'a matsatsi a {days}}}",
+  "eventEarnings": "Diphetho tsa kotara",
+  "eventBeforeOpen": "pele mmaraka o bulwa",
+  "eventAfterClose": "ka mor'a hore mmaraka o kwalwe",
+  "eventEpsEstimate": "Khakanyo ya EPS: {value}",
+  "eventFromAnalysis": "Ho tswa tlhahlobong ya hao",
+  "eventsHint": "Matsatsi a diphetho tsa disheare tseo o di ratang le tsa potefolio ya hao bakeng sa matsatsi a 90 a tlang, le diketsahalo tse nang le matsatsi tse bontshitsweng ke ditlhahlobo tsa hao.",
+  "eventsEmpty": "Ha ho diketsahalo tse nang le matsatsi matsatsing a 90 a tlang. Kenya tseo o di ratang kapa disheare tsa potefolio ho bona matsatsi a diphetho tsa tsona mona."
 }
