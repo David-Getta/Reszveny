@@ -1530,4 +1530,18 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Liwati';
+
+  @override
+  String changesTitle(String date) {
+    return 'Wiwit analisis sadurunge ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Rega';
+
+  @override
+  String get changesNoMajor => 'Prospek ora owah kanthi wigati.';
+
+  @override
+  String get changesPreviousSummary => 'Ringkesan sadurunge';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Seçilmişlər, portfeliniz və qiymət bildirişləri sizi xəbərdar edir. Təhlilləriniz cihazınızda qalır və istənilən vaxt yenidən açıla bilər.",
   "onboardNext": "Növbəti",
   "onboardStart": "Başlayaq",
-  "onboardSkip": "Keç"
+  "onboardSkip": "Keç",
+  "changesTitle": "Əvvəlki təhlildən bəri ({date})",
+  "changesPrice": "Qiymət",
+  "changesNoMajor": "Proqnoz əhəmiyyətli dərəcədə dəyişməyib.",
+  "changesPreviousSummary": "Əvvəlki xülasə"
 }

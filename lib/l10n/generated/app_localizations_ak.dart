@@ -1528,4 +1528,18 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Twa mu';
+
+  @override
+  String changesTitle(String date) {
+    return 'Efi nhwehwɛmu a edi kan no ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Bo';
+
+  @override
+  String get changesNoMajor => 'Daakye tebea no nsesaa kɛse biara.';
+
+  @override
+  String get changesPreviousSummary => 'Nhwehwɛmu a edi kan no tiawa';
 }

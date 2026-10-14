@@ -417,5 +417,9 @@
   "onboardBody3": "Els favorits, la teva cartera i les alertes de preu et mantenen informat. Les teves anàlisis es queden al dispositiu, a punt per tornar-les a obrir.",
   "onboardNext": "Següent",
   "onboardStart": "Comença",
-  "onboardSkip": "Omet"
+  "onboardSkip": "Omet",
+  "changesTitle": "Des de l’anàlisi anterior ({date})",
+  "changesPrice": "Preu",
+  "changesNoMajor": "Les perspectives no han canviat de manera significativa.",
+  "changesPreviousSummary": "Resum anterior"
 }

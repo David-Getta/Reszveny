@@ -1564,4 +1564,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'تخطٍّ';
+
+  @override
+  String changesTitle(String date) {
+    return 'منذ التحليل السابق ($date)';
+  }
+
+  @override
+  String get changesPrice => 'السعر';
+
+  @override
+  String get changesNoMajor => 'لم تتغير التوقعات بشكل جوهري.';
+
+  @override
+  String get changesPreviousSummary => 'الملخص السابق';
 }

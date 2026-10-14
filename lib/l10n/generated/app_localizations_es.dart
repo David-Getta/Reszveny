@@ -1533,4 +1533,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Omitir';
+
+  @override
+  String changesTitle(String date) {
+    return 'Desde el análisis anterior ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Precio';
+
+  @override
+  String get changesNoMajor =>
+      'Las perspectivas no han cambiado de forma significativa.';
+
+  @override
+  String get changesPreviousSummary => 'Resumen anterior';
 }

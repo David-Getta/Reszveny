@@ -1530,4 +1530,18 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Өткізіп жіберу';
+
+  @override
+  String changesTitle(String date) {
+    return 'Алдыңғы талдаудан бері ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Баға';
+
+  @override
+  String get changesNoMajor => 'Болжам айтарлықтай өзгерген жоқ.';
+
+  @override
+  String get changesPreviousSummary => 'Алдыңғы қорытынды';
 }

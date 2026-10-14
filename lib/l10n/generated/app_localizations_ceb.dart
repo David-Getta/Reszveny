@@ -1537,4 +1537,18 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Laktawan';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sukad sa miaging pagtuki ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Presyo';
+
+  @override
+  String get changesNoMajor => 'Ang panglantaw wala kaayo mausab.';
+
+  @override
+  String get changesPreviousSummary => 'Miaging katingbanan';
 }

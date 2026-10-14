@@ -1579,4 +1579,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Пропустить';
+
+  @override
+  String changesTitle(String date) {
+    return 'С предыдущего анализа ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Цена';
+
+  @override
+  String get changesNoMajor => 'Прогноз существенно не изменился.';
+
+  @override
+  String get changesPreviousSummary => 'Предыдущее резюме';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Favoriler, portföyünüz ve fiyat alarmları sizi gelişmelerden haberdar eder. Analizleriniz cihazınızda kalır, istediğiniz zaman yeniden açabilirsiniz.",
   "onboardNext": "İleri",
   "onboardStart": "Başlayın",
-  "onboardSkip": "Atla"
+  "onboardSkip": "Atla",
+  "changesTitle": "Önceki analizden bu yana ({date})",
+  "changesPrice": "Fiyat",
+  "changesNoMajor": "Görünüm önemli ölçüde değişmedi.",
+  "changesPreviousSummary": "Önceki özet"
 }

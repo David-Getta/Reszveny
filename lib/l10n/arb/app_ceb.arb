@@ -417,5 +417,9 @@
   "onboardBody3": "Ang mga paborito, imong portfolio ug mga alerto sa presyo magpahibalo kanimo. Ang imong mga pagtuki magpabilin sa imong device, andam nga ablihan pag-usab.",
   "onboardNext": "Sunod",
   "onboardStart": "Magsugod na",
-  "onboardSkip": "Laktawan"
+  "onboardSkip": "Laktawan",
+  "changesTitle": "Sukad sa miaging pagtuki ({date})",
+  "changesPrice": "Presyo",
+  "changesNoMajor": "Ang panglantaw wala kaayo mausab.",
+  "changesPreviousSummary": "Miaging katingbanan"
 }

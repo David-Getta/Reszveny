@@ -1524,4 +1524,18 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ڇڏي ڏيو';
+
+  @override
+  String changesTitle(String date) {
+    return 'اڳوڻي تجزيي کان پوءِ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'قيمت';
+
+  @override
+  String get changesNoMajor => 'منظرنامي ۾ ڪا خاص تبديلي ناهي آئي.';
+
+  @override
+  String get changesPreviousSummary => 'اڳوڻو خلاصو';
 }

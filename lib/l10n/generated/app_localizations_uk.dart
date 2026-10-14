@@ -1577,4 +1577,18 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Пропустити';
+
+  @override
+  String changesTitle(String date) {
+    return 'Від попереднього аналізу ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ціна';
+
+  @override
+  String get changesNoMajor => 'Прогноз суттєво не змінився.';
+
+  @override
+  String get changesPreviousSummary => 'Попередній підсумок';
 }

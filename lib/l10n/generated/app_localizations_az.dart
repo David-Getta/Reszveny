@@ -1530,4 +1530,18 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Keç';
+
+  @override
+  String changesTitle(String date) {
+    return 'Əvvəlki təhlildən bəri ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Qiymət';
+
+  @override
+  String get changesNoMajor => 'Proqnoz əhəmiyyətli dərəcədə dəyişməyib.';
+
+  @override
+  String get changesPreviousSummary => 'Əvvəlki xülasə';
 }

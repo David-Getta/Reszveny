@@ -417,5 +417,9 @@
   "onboardBody3": "Tse o di ratang, potefolio ya gago le dikitsiso tsa tlhwatlhwa di go itsise se se diragalang. Ditshekatsheko tsa gago di nna mo sedirisiweng sa gago, di siametse go bulwa gape.",
   "onboardNext": "E e latelang",
   "onboardStart": "Simolola",
-  "onboardSkip": "Tlola"
+  "onboardSkip": "Tlola",
+  "changesTitle": "Go tloga tshekatshekong ya pele ({date})",
+  "changesPrice": "Tlhwatlhwa",
+  "changesNoMajor": "Ponelopele ga e a fetoga thata.",
+  "changesPreviousSummary": "Tshobokanyo ya pele"
 }

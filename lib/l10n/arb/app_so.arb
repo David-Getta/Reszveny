@@ -417,5 +417,9 @@
   "onboardBody3": "Kuwa la jecel yahay, portfoliyahaaga iyo digniinaha qiimaha ayaa kuu sheegaya wixii dhaca. Falanqaynahaagu waxay ku keydsan yihiin qalabkaaga, diyaarna u ah in mar kale la furo.",
   "onboardNext": "Xiga",
   "onboardStart": "Bilow",
-  "onboardSkip": "Ka bood"
+  "onboardSkip": "Ka bood",
+  "changesTitle": "Tan iyo falanqayntii hore ({date})",
+  "changesPrice": "Qiimaha",
+  "changesNoMajor": "Saadaashu si weyn uma isbeddelin.",
+  "changesPreviousSummary": "Soo koobiddii hore"
 }

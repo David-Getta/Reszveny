@@ -1536,4 +1536,18 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Kapërce';
+
+  @override
+  String changesTitle(String date) {
+    return 'Që nga analiza e mëparshme ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Çmimi';
+
+  @override
+  String get changesNoMajor => 'Perspektiva nuk ka ndryshuar ndjeshëm.';
+
+  @override
+  String get changesPreviousSummary => 'Përmbledhja e mëparshme';
 }

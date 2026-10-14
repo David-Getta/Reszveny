@@ -417,5 +417,9 @@
   "onboardBody3": "מועדפים, תיק ההשקעות שלכם והתראות מחיר יעדכנו אתכם. הניתוחים שלכם נשמרים במכשיר, מוכנים לפתיחה מחדש.",
   "onboardNext": "הבא",
   "onboardStart": "בואו נתחיל",
-  "onboardSkip": "דילוג"
+  "onboardSkip": "דילוג",
+  "changesTitle": "מאז הניתוח הקודם ({date})",
+  "changesPrice": "מחיר",
+  "changesNoMajor": "התחזית לא השתנתה באופן מהותי.",
+  "changesPreviousSummary": "סיכום קודם"
 }

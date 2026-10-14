@@ -1527,4 +1527,18 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Spring over';
+
+  @override
+  String changesTitle(String date) {
+    return 'Siden den forrige analyse ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurs';
+
+  @override
+  String get changesNoMajor => 'Udsigterne har ikke ændret sig væsentligt.';
+
+  @override
+  String get changesPreviousSummary => 'Tidligere resumé';
 }

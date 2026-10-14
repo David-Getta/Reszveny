@@ -417,5 +417,9 @@
   "onboardBody3": "Nea mepɛ, wo nkyɛfa ne bo ho kɔkɔbɔ ma wuhu nea ɛrekɔ so. Wo nhwehwɛmu ahorow tena wo fon so, na wubetumi abue bio bere biara.",
   "onboardNext": "Toa so",
   "onboardStart": "Fi ase",
-  "onboardSkip": "Twa mu"
+  "onboardSkip": "Twa mu",
+  "changesTitle": "Efi nhwehwɛmu a edi kan no ({date})",
+  "changesPrice": "Bo",
+  "changesNoMajor": "Daakye tebea no nsesaa kɛse biara.",
+  "changesPreviousSummary": "Nhwehwɛmu a edi kan no tiawa"
 }

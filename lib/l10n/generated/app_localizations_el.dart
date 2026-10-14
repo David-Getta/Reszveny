@@ -1537,4 +1537,18 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Παράλειψη';
+
+  @override
+  String changesTitle(String date) {
+    return 'Από την προηγούμενη ανάλυση ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Τιμή';
+
+  @override
+  String get changesNoMajor => 'Οι προοπτικές δεν άλλαξαν ουσιαστικά.';
+
+  @override
+  String get changesPreviousSummary => 'Προηγούμενη σύνοψη';
 }

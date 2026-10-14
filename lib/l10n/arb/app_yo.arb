@@ -417,5 +417,9 @@
   "onboardBody3": "Àwọn ààyò, àpò ìdókòwò rẹ àti ìkìlọ̀ iye owó máa ń jẹ́ kí o mọ ohun tó ń ṣẹlẹ̀. Àwọn ìtúpalẹ̀ rẹ wà lórí ẹ̀rọ rẹ, wọ́n ṣetán láti ṣí lẹ́ẹ̀kan sí i.",
   "onboardNext": "Èyí tó kàn",
   "onboardStart": "Bẹ̀rẹ̀",
-  "onboardSkip": "Fò ó"
+  "onboardSkip": "Fò ó",
+  "changesTitle": "Láti ìtúpalẹ̀ tó kọjá ({date})",
+  "changesPrice": "Iye owó",
+  "changesNoMajor": "Ìrètí kò yí padà ní pàtàkì.",
+  "changesPreviousSummary": "Àkópọ̀ ti tẹ́lẹ̀"
 }

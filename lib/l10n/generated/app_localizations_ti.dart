@@ -1500,4 +1500,18 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ሕለፍዎ';
+
+  @override
+  String changesTitle(String date) {
+    return 'ካብቲ ዝሓለፈ ትንተና ጀሚሩ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ዋጋ';
+
+  @override
+  String get changesNoMajor => 'ትጽቢት ብዙሕ ኣይተቐየረን።';
+
+  @override
+  String get changesPreviousSummary => 'ዝሓለፈ ጽማቝ';
 }

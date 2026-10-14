@@ -417,5 +417,9 @@
   "onboardBody3": "ዝተፈተዉ፣ ፖርትፎሊዮኹምን መጠንቀቕታታት ዋጋን ወትሩ ሓበሬታ ይህቡኹም። ትንተናታትኩም ኣብ መሳርሒኹም ይጸንሑ፣ እንደገና ንምኽፋት ድሉዋት እዮም።",
   "onboardNext": "ዝቕጽል",
   "onboardStart": "ጀምሩ",
-  "onboardSkip": "ሕለፍዎ"
+  "onboardSkip": "ሕለፍዎ",
+  "changesTitle": "ካብቲ ዝሓለፈ ትንተና ጀሚሩ ({date})",
+  "changesPrice": "ዋጋ",
+  "changesNoMajor": "ትጽቢት ብዙሕ ኣይተቐየረን።",
+  "changesPreviousSummary": "ዝሓለፈ ጽማቝ"
 }

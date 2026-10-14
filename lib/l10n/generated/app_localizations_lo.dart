@@ -1512,4 +1512,18 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ຂ້າມ';
+
+  @override
+  String changesTitle(String date) {
+    return 'ນັບແຕ່ການວິເຄາະກ່ອນໜ້າ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ລາຄາ';
+
+  @override
+  String get changesNoMajor => 'ແນວໂນ້ມບໍ່ໄດ້ປ່ຽນແປງຢ່າງມີນັຍສຳຄັນ.';
+
+  @override
+  String get changesPreviousSummary => 'ສະຫຼຸບກ່ອນໜ້າ';
 }

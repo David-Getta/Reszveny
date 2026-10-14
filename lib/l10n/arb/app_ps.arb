@@ -417,5 +417,9 @@
   "onboardBody3": "خوښې، ستاسو پورټفولیو او د بیې خبرتیاوې تاسو خبروي. ستاسو تحلیلونه ستاسو په وسیله کې پاتې کېږي، د بیا پرانیستلو لپاره چمتو.",
   "onboardNext": "بل",
   "onboardStart": "پیل کړئ",
-  "onboardSkip": "تېر یې کړئ"
+  "onboardSkip": "تېر یې کړئ",
+  "changesTitle": "له تېر تحلیل راهیسې ({date})",
+  "changesPrice": "بیه",
+  "changesNoMajor": "په لیدلوري کې د پام وړ بدلون نه دی راغلی.",
+  "changesPreviousSummary": "پخوانی لنډیز"
 }

@@ -1529,4 +1529,18 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'මඟ හරින්න';
+
+  @override
+  String changesTitle(String date) {
+    return 'පෙර විශ්ලේෂණයේ සිට ($date)';
+  }
+
+  @override
+  String get changesPrice => 'මිල';
+
+  @override
+  String get changesNoMajor => 'අපේක්ෂාවන් සැලකිය යුතු ලෙස වෙනස් වී නැත.';
+
+  @override
+  String get changesPreviousSummary => 'පෙර සාරාංශය';
 }

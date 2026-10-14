@@ -1536,4 +1536,18 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Laktawan';
+
+  @override
+  String changesTitle(String date) {
+    return 'Mula sa nakaraang pagsusuri ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Presyo';
+
+  @override
+  String get changesNoMajor => 'Hindi gaanong nagbago ang pananaw.';
+
+  @override
+  String get changesPreviousSummary => 'Nakaraang buod';
 }

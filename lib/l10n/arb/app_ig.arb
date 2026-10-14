@@ -417,5 +417,9 @@
   "onboardBody3": "Ọkacha mmasị, portfolio gị na ọkwa ọnụahịa na-eme ka ị mara ihe na-eme. Nyocha gị na-anọ na ngwaọrụ gị, dị njikere ka i meghee ha ọzọ.",
   "onboardNext": "Na-esote",
   "onboardStart": "Malite",
-  "onboardSkip": "Wụfee"
+  "onboardSkip": "Wụfee",
+  "changesTitle": "Kemgbe nyocha gara aga ({date})",
+  "changesPrice": "Ọnụahịa",
+  "changesNoMajor": "Atụmanya agbanwebeghị nke ukwuu.",
+  "changesPreviousSummary": "Nchịkọta gara aga"
 }

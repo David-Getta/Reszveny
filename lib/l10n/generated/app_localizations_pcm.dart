@@ -1530,4 +1530,18 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Skip am';
+
+  @override
+  String changesTitle(String date) {
+    return 'Since di last analysis ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Price';
+
+  @override
+  String get changesNoMajor => 'Notin big don change for di outlook.';
+
+  @override
+  String get changesPreviousSummary => 'Last summary';
 }

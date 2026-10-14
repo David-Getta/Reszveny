@@ -417,5 +417,9 @@
   "onboardBody3": "Favorieten, je portefeuille en koersalerts houden je op de hoogte. Je analyses blijven op je apparaat, klaar om opnieuw te openen.",
   "onboardNext": "Volgende",
   "onboardStart": "Aan de slag",
-  "onboardSkip": "Overslaan"
+  "onboardSkip": "Overslaan",
+  "changesTitle": "Sinds de vorige analyse ({date})",
+  "changesPrice": "Koers",
+  "changesNoMajor": "De vooruitzichten zijn niet wezenlijk veranderd.",
+  "changesPreviousSummary": "Vorige samenvatting"
 }

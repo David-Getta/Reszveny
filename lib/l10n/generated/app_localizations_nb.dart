@@ -1529,4 +1529,18 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Hopp over';
+
+  @override
+  String changesTitle(String date) {
+    return 'Siden forrige analyse ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurs';
+
+  @override
+  String get changesNoMajor => 'Utsiktene har ikke endret seg vesentlig.';
+
+  @override
+  String get changesPreviousSummary => 'Forrige sammendrag';
 }

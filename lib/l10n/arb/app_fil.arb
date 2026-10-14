@@ -417,5 +417,9 @@
   "onboardBody3": "Ang Mga Paborito, ang iyong portfolio at ang mga alerto sa presyo ang magbabalita sa iyo. Nananatili sa iyong device ang mga pagsusuri mo, handang buksan muli.",
   "onboardNext": "Susunod",
   "onboardStart": "Magsimula",
-  "onboardSkip": "Laktawan"
+  "onboardSkip": "Laktawan",
+  "changesTitle": "Mula sa nakaraang pagsusuri ({date})",
+  "changesPrice": "Presyo",
+  "changesNoMajor": "Hindi gaanong nagbago ang pananaw.",
+  "changesPreviousSummary": "Nakaraang buod"
 }

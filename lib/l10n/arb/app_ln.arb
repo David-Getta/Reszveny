@@ -417,5 +417,9 @@
   "onboardBody3": "Oyo olingaka, portefeuille na yo mpe makebisi ya ntalo ekoyebisa yo makambo. Ba analyse na yo etikalaka na appareil na yo, ya kofungola lisusu.",
   "onboardNext": "Oyo elandi",
   "onboardStart": "Tóbanda",
-  "onboardSkip": "Leka"
+  "onboardSkip": "Leka",
+  "changesTitle": "Banda analyse ya kala ({date})",
+  "changesPrice": "Ntalo",
+  "changesNoMajor": "Ndenge makambo ekoki kozala ebongwani mingi te.",
+  "changesPreviousSummary": "Mokuse ya kala"
 }

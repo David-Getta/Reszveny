@@ -1538,4 +1538,18 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Buuka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Okuva ku kwekenneenya okw\'edda ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ebbeeyi';
+
+  @override
+  String get changesNoMajor => 'Embeera esuubirwa tekyuse nnyo.';
+
+  @override
+  String get changesPreviousSummary => 'Mu bufunze okw\'edda';
 }

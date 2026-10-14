@@ -1540,4 +1540,18 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tlola';
+
+  @override
+  String changesTitle(String date) {
+    return 'Go tloga ka tshekatsheko ya pele ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Theko';
+
+  @override
+  String get changesNoMajor => 'Ponelopele ga se ya fetoga kudu.';
+
+  @override
+  String get changesPreviousSummary => 'Kakaretšo ya pele';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Favorit, portofoliomu lan pèngetan rega bakal ngabari kowé. Analisismu tetep ana ing piranti, siap dibukak manèh.",
   "onboardNext": "Sabanjuré",
   "onboardStart": "Ayo miwiti",
-  "onboardSkip": "Liwati"
+  "onboardSkip": "Liwati",
+  "changesTitle": "Wiwit analisis sadurunge ({date})",
+  "changesPrice": "Rega",
+  "changesNoMajor": "Prospek ora owah kanthi wigati.",
+  "changesPreviousSummary": "Ringkesan sadurunge"
 }

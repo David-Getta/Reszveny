@@ -1574,4 +1574,18 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Přeskočit';
+
+  @override
+  String changesTitle(String date) {
+    return 'Od předchozí analýzy ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Cena';
+
+  @override
+  String get changesNoMajor => 'Výhled se podstatně nezměnil.';
+
+  @override
+  String get changesPreviousSummary => 'Předchozí shrnutí';
 }

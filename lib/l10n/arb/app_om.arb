@@ -417,5 +417,9 @@
   "onboardBody3": "Filatamoon, poortfooliyoon kee fi akeekkachiisni gatii odeeffannoo siif kennu. Xiinxalli kee meeshaa kee irratti hafa, irra deebitee banuuf qophaa'aadha.",
   "onboardNext": "Itti aanu",
   "onboardStart": "Jalqabi",
-  "onboardSkip": "Darbi"
+  "onboardSkip": "Darbi",
+  "changesTitle": "Xiinxala duraa as ka ka'ee ({date})",
+  "changesPrice": "Gatii",
+  "changesNoMajor": "Ilaalchi baay'ee hin jijjiiramne.",
+  "changesPreviousSummary": "Cuunfaa duraa"
 }

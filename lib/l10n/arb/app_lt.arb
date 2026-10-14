@@ -417,5 +417,9 @@
   "onboardBody3": "Mėgstamiausi, jūsų portfelis ir kainos įspėjimai nuolat jus informuos. Jūsų analizės lieka jūsų įrenginyje – paruoštos vėl atverti.",
   "onboardNext": "Toliau",
   "onboardStart": "Pradėti",
-  "onboardSkip": "Praleisti"
+  "onboardSkip": "Praleisti",
+  "changesTitle": "Nuo ankstesnės analizės ({date})",
+  "changesPrice": "Kaina",
+  "changesNoMajor": "Perspektyvos reikšmingai nepasikeitė.",
+  "changesPreviousSummary": "Ankstesnė santrauka"
 }

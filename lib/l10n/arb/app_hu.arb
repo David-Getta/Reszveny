@@ -417,5 +417,9 @@
   "onboardBody3": "A kedvencek, a portfóliód és az árfolyam-riasztások szólnak, ha történik valami. Az elemzéseid a készülékeden maradnak, bármikor újra megnyithatod őket.",
   "onboardNext": "Tovább",
   "onboardStart": "Kezdjük",
-  "onboardSkip": "Kihagyás"
+  "onboardSkip": "Kihagyás",
+  "changesTitle": "Az előző elemzés óta ({date})",
+  "changesPrice": "Árfolyam",
+  "changesNoMajor": "A kilátások érdemben nem változtak.",
+  "changesPreviousSummary": "Az előző elemzés lényege"
 }

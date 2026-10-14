@@ -417,5 +417,9 @@
   "onboardBody3": "お気に入り、ポートフォリオ、価格アラートで常に最新情報をお届けします。分析はデバイスに保存され、いつでも開き直せます。",
   "onboardNext": "次へ",
   "onboardStart": "はじめる",
-  "onboardSkip": "スキップ"
+  "onboardSkip": "スキップ",
+  "changesTitle": "前回の分析（{date}）以降",
+  "changesPrice": "株価",
+  "changesNoMajor": "見通しに大きな変化はありません。",
+  "changesPreviousSummary": "前回の要約"
 }

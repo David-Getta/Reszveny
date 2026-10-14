@@ -1482,4 +1482,18 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'スキップ';
+
+  @override
+  String changesTitle(String date) {
+    return '前回の分析（$date）以降';
+  }
+
+  @override
+  String get changesPrice => '株価';
+
+  @override
+  String get changesNoMajor => '見通しに大きな変化はありません。';
+
+  @override
+  String get changesPreviousSummary => '前回の要約';
 }

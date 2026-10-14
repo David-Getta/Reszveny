@@ -1533,4 +1533,19 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Overslaan';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sinds de vorige analyse ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Koers';
+
+  @override
+  String get changesNoMajor =>
+      'De vooruitzichten zijn niet wezenlijk veranderd.';
+
+  @override
+  String get changesPreviousSummary => 'Vorige samenvatting';
 }

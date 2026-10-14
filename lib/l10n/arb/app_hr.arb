@@ -417,5 +417,9 @@
   "onboardBody3": "Favoriti, vaš portfelj i obavijesti o cijeni drže vas u tijeku. Vaše analize ostaju na vašem uređaju, spremne da ih ponovno otvorite.",
   "onboardNext": "Dalje",
   "onboardStart": "Započnite",
-  "onboardSkip": "Preskoči"
+  "onboardSkip": "Preskoči",
+  "changesTitle": "Od prethodne analize ({date})",
+  "changesPrice": "Cijena",
+  "changesNoMajor": "Izgledi se nisu bitno promijenili.",
+  "changesPreviousSummary": "Prethodni sažetak"
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Saýlananlar, portfeliňiz we baha duýduryşlary sizi wakalardan habarly saklaýar. Seljermeleriňiz enjamyňyzda galýar, olary islendik wagt täzeden açyp bilersiňiz.",
   "onboardNext": "Indiki",
   "onboardStart": "Başlaň",
-  "onboardSkip": "Geçiň"
+  "onboardSkip": "Geçiň",
+  "changesTitle": "Öňki seljermeden bäri ({date})",
+  "changesPrice": "Baha",
+  "changesNoMajor": "Çaklamalar düýpli üýtgemedi.",
+  "changesPreviousSummary": "Öňki gysgaça mazmun"
 }

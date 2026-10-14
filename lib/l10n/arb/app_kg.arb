@@ -417,5 +417,9 @@
   "onboardBody3": "Bizolwa, portefeuille na nge ye nkebisu za ntalu ke zabisa nge. Ba analyse na nge ke bikala na apparaye na nge, ya kukangula diaka.",
   "onboardNext": "Ya landa",
   "onboardStart": "Yantika",
-  "onboardSkip": "Bika"
+  "onboardSkip": "Bika",
+  "changesTitle": "Banda analyse ya ntete ({date})",
+  "changesPrice": "Ntalu",
+  "changesNoMajor": "Mambu ya ke na ntwala ke sobaka mingi ve.",
+  "changesPreviousSummary": "Nsukudulu ya ntete"
 }

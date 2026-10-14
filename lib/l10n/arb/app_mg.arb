@@ -417,5 +417,9 @@
   "onboardBody3": "Ny ankafizina, ny kitapom-bolanao ary ny fanairana vidiny no mampahafantatra anao ny vaovao. Mijanona ao amin'ny fitaovanao ny fandalinanao, vonona hosokafana indray.",
   "onboardNext": "Manaraka",
   "onboardStart": "Andao hanomboka",
-  "onboardSkip": "Dinganina"
+  "onboardSkip": "Dinganina",
+  "changesTitle": "Hatramin'ny fandalinana teo aloha ({date})",
+  "changesPrice": "Vidiny",
+  "changesNoMajor": "Tsy dia niova loatra ny vinavina.",
+  "changesPreviousSummary": "Famintinana teo aloha"
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Iria wendete, hisa ciaku na imenyithia cia thogora nĩ ikũmenyithagia. Ũthuthuria waku ũtũũraga thimũ-inĩ yaku, ũhaarĩrĩtio kũhingũrwo rĩngĩ.",
   "onboardNext": "Ĩrĩa ĩngĩ",
   "onboardStart": "Ambĩrĩria",
-  "onboardSkip": "Hĩtũka"
+  "onboardSkip": "Hĩtũka",
+  "changesTitle": "Kuuma ũthuthuria wa mbere ({date})",
+  "changesPrice": "Thogora",
+  "changesNoMajor": "Maũndũ marĩa marorirwo matigarũrũkĩte mũno.",
+  "changesPreviousSummary": "Mũhĩnanĩrio wa mbere"
 }

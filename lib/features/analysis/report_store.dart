@@ -9,6 +9,7 @@ import '../../core/models/stock_details.dart';
 import '../billing/entitlement_service.dart';
 import '../../core/models/stock_report.dart';
 import 'analysis_options.dart';
+import 'report_diff.dart';
 import 'stock_analyst.dart';
 
 /// Az elemzések állapota és gyorsítótára tickerenként. A kész elemzést
@@ -35,10 +36,11 @@ class ReportStore extends ChangeNotifier {
   /// Minden elmentett elemzés törlése a memóriából és a lemezről.
   Future<void> clearCache() async {
     _reports.clear();
+    _previous.clear();
     notifyListeners();
     try {
       final prefs = await SharedPreferences.getInstance();
-      for (final k in prefs.getKeys().where((k) => k.startsWith(_prefix)).toList()) {
+      for (final k in prefs.getKeys().where((k) => k.startsWith(_prefix) || k.startsWith(_prevPrefix)).toList()) {
         await prefs.remove(k);
       }
     } catch (_) {
@@ -73,11 +75,25 @@ class ReportStore extends ChangeNotifier {
 
   static const _prefix = 'report_';
 
+  /// Az újraelemzés előtti (eggyel korábbi) elemzés kulcsa, az összevetéshez.
+  static const _prevPrefix = 'reportprev_';
+
   final Map<String, StockReport> _reports = {};
+  final Map<String, StockReport> _previous = {};
   final Map<String, Object> _errors = {};
   final Set<String> _loading = {};
 
   StockReport? report(String symbol) => _reports[symbol];
+
+  /// Az eggyel korábbi elemzés (ha a mostani újraelemzéssel készült).
+  StockReport? previous(String symbol) => _previous[symbol];
+
+  /// Mi változott az előző elemzés óta (ha van mivel összevetni).
+  ReportDiff? changes(String symbol) {
+    final a = _previous[symbol], b = _reports[symbol];
+    return a == null || b == null ? null : ReportDiff.compare(a, b);
+  }
+
   Object? error(String symbol) => _errors[symbol];
   bool isLoading(String symbol) => _loading.contains(symbol);
 
@@ -118,11 +134,13 @@ class ReportStore extends ChangeNotifier {
   /// Egy elmentett elemzés törlése (a memóriából és a készülékről).
   Future<void> delete(String symbol) async {
     _reports.remove(symbol);
+    _previous.remove(symbol);
     _errors.remove(symbol);
     _keptStale.remove(symbol);
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove('$_prefix$symbol');
+      await prefs.remove('$_prevPrefix$symbol');
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }
@@ -171,6 +189,14 @@ class ReportStore extends ChangeNotifier {
       final sameLanguage = language == null || r.language == null || r.language == language;
       if (!sameLanguage) return null;
       _reports[symbol] = r;
+      final prev = prefs.getString('$_prevPrefix$symbol');
+      if (prev != null) {
+        try {
+          _previous[symbol] = StockReport.fromJson(jsonDecode(prev) as Map<String, dynamic>);
+        } catch (_) {
+          // Sérült korábbi elemzés: összevetés nélkül.
+        }
+      }
       notifyListeners();
       return r;
     } catch (_) {
@@ -194,6 +220,7 @@ class ReportStore extends ChangeNotifier {
     dated.sort((a, b) => b.$2.compareTo(a.$2));
     for (final (k, _) in dated.skip(maxSaved)) {
       await prefs.remove(k);
+      await prefs.remove('$_prevPrefix${k.substring(_prefix.length)}');
     }
   }
 
@@ -231,13 +258,29 @@ class ReportStore extends ChangeNotifier {
         outputLanguage: outputLanguage,
         options: options,
       );
+      // A felváltott elemzést megőrizzük az összevetéshez (azonos nyelven).
+      final old = _reports[symbol];
+      final keepOld = old != null && (old.language == null || r.language == null || old.language == r.language)
+          ? old
+          : null;
+      if (keepOld != null) {
+        _previous[symbol] = keepOld;
+      } else {
+        _previous.remove(symbol);
+      }
       _reports[symbol] = r;
+      _keptStale.remove(symbol);
       onGenerated?.call(r);
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();
       try {
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));
+        if (keepOld != null) {
+          await prefs.setString('$_prevPrefix$symbol', jsonEncode(keepOld.toJson()));
+        } else {
+          await prefs.remove('$_prevPrefix$symbol');
+        }
         await _prune(prefs);
       } catch (_) {
         // A gyorsítótár hibája nem akadályozza a megjelenítést.

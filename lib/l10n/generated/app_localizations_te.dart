@@ -1535,4 +1535,18 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get onboardSkip => 'దాటవేయి';
+
+  @override
+  String changesTitle(String date) {
+    return 'మునుపటి విశ్లేషణ నుండి ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ధర';
+
+  @override
+  String get changesNoMajor => 'అంచనాలో గణనీయమైన మార్పు లేదు.';
+
+  @override
+  String get changesPreviousSummary => 'మునుపటి సారాంశం';
 }

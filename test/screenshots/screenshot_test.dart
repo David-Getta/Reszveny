@@ -675,6 +675,46 @@ void main() {
     await _shot(tester, 'stale_dialog_phone_hu');
   });
 
+  testWidgets('re-run analysis: what changed since the previous one (hungarian, phone)', (tester) async {
+    SharedPreferences.setMockInitialValues({
+      'report_NVDA': jsonEncode(
+        StockReport(
+          symbol: 'NVDA',
+          headline: 'Az AI-kereslet erős, de a várakozások már magasak.',
+          sections: const [],
+          generatedAt: DateTime.now().subtract(const Duration(days: 3)),
+          language: 'Hungarian',
+          outlook: const ReportOutlook(
+            currentPrice: 176.2,
+            currency: 'USD',
+            marketMood: 0,
+            scenarios: [
+              Scenario(kind: ScenarioKind.bull, probability: 20),
+              Scenario(kind: ScenarioKind.base, probability: 50),
+              Scenario(kind: ScenarioKind.bear, probability: 30),
+            ],
+          ),
+        ).toJson(),
+      ),
+    });
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final refresh = find.textContaining('Új elemzés');
+    await tester.ensureVisible(refresh);
+    await tester.pumpAndSettle();
+    await tester.tap(refresh);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('report-changes-previous')));
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('report-changes'));
+    Scrollable.ensureVisible(tester.element(card), alignment: 0.15);
+    await tester.pumpAndSettle();
+    expect(card, findsOneWidget);
+    await _shot(tester, 'changes_phone_hu');
+  });
+
   testWidgets('share sheet with the picture card (hungarian, phone)', (tester) async {
     await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
     await tester.enterText(find.byType(TextField), 'NVDA');

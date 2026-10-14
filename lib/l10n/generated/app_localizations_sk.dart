@@ -1578,4 +1578,18 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Preskočiť';
+
+  @override
+  String changesTitle(String date) {
+    return 'Od predchádzajúcej analýzy ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Cena';
+
+  @override
+  String get changesNoMajor => 'Výhľad sa podstatne nezmenil.';
+
+  @override
+  String get changesPreviousSummary => 'Predchádzajúce zhrnutie';
 }

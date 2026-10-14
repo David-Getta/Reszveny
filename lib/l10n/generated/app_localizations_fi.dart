@@ -1531,4 +1531,18 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Ohita';
+
+  @override
+  String changesTitle(String date) {
+    return 'Edellisen analyysin jälkeen ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurssi';
+
+  @override
+  String get changesNoMajor => 'Näkymät eivät ole muuttuneet olennaisesti.';
+
+  @override
+  String get changesPreviousSummary => 'Edellinen yhteenveto';
 }

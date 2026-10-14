@@ -1526,4 +1526,18 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Wụfee';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kemgbe nyocha gara aga ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ọnụahịa';
+
+  @override
+  String get changesNoMajor => 'Atụmanya agbanwebeghị nke ukwuu.';
+
+  @override
+  String get changesPreviousSummary => 'Nchịkọta gara aga';
 }

@@ -1535,4 +1535,18 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tsallake';
+
+  @override
+  String changesTitle(String date) {
+    return 'Tun bayan nazarin baya ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Farashi';
+
+  @override
+  String get changesNoMajor => 'Hasashen bai canza sosai ba.';
+
+  @override
+  String get changesPreviousSummary => 'Taƙaitaccen nazarin baya';
 }

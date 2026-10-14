@@ -1536,4 +1536,18 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Simbuka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kuva ku isesengura ryabanje ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Igiciro';
+
+  @override
+  String get changesNoMajor => 'Ibiteganijwe ntibyahindutse cyane.';
+
+  @override
+  String get changesPreviousSummary => 'Incamake ibanza';
 }

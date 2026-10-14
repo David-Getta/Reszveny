@@ -1525,4 +1525,18 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get onboardSkip => 'छोड़ू';
+
+  @override
+  String changesTitle(String date) {
+    return 'पछिला विश्लेषणक बादसँ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'दाम';
+
+  @override
+  String get changesNoMajor => 'दृष्टिकोण मे कोनो खास बदलाव नहि भेल अछि।';
+
+  @override
+  String get changesPreviousSummary => 'पछिला सारांश';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Ivyo ukunda, ishoramari ryawe n'imenyesha ry'ibiciro bikumenyesha ibiriko biraba. Isesangura ryawe riguma ku gikoresho cawe, ryiteguye kwongera kwugururwa.",
   "onboardNext": "Ibikurikira",
   "onboardStart": "Tangura",
-  "onboardSkip": "Simba"
+  "onboardSkip": "Simba",
+  "changesTitle": "Kuva ku isesangura ryabanje ({date})",
+  "changesPrice": "Igiciro",
+  "changesNoMajor": "Ivyitezwe ntivyahindutse cane.",
+  "changesPreviousSummary": "Incamake ya mbere"
 }

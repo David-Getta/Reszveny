@@ -417,5 +417,9 @@
   "onboardBody3": "Vos favoris, votre portefeuille et vos alertes de cours vous tiennent informé. Vos analyses restent sur votre appareil, prêtes à être rouvertes.",
   "onboardNext": "Suivant",
   "onboardStart": "Commencer",
-  "onboardSkip": "Passer"
+  "onboardSkip": "Passer",
+  "changesTitle": "Depuis l’analyse précédente ({date})",
+  "changesPrice": "Cours",
+  "changesNoMajor": "Les perspectives n’ont pas changé de manière significative.",
+  "changesPreviousSummary": "Résumé précédent"
 }

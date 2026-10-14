@@ -417,5 +417,9 @@
   "onboardBody3": "Izintandokazi, iphothifoliyo yakho nezexwayiso zentengo zikwazisa njalo ngokwenzekayo. Uhlaziyo lwakho luhlala kudivayisi yakho, lulungele ukuvulwa futhi.",
   "onboardNext": "Okulandelayo",
   "onboardStart": "Qala",
-  "onboardSkip": "Yeqa"
+  "onboardSkip": "Yeqa",
+  "changesTitle": "Kusukela ohlaziyweni lwangaphambilini ({date})",
+  "changesPrice": "Intengo",
+  "changesNoMajor": "Okulindelekile akushintshanga kakhulu.",
+  "changesPreviousSummary": "Isifinyezo sangaphambilini"
 }

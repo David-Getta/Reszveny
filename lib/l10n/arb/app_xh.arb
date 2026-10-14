@@ -417,5 +417,9 @@
   "onboardBody3": "Ezithandwayo, ipotifoliyo yakho nezilumkiso zamaxabiso zikwazisa ngokwenzekayo. Uhlalutyo lwakho luhlala kwisixhobo sakho, lulungele ukuvulwa kwakhona.",
   "onboardNext": "Okulandelayo",
   "onboardStart": "Qalisa",
-  "onboardSkip": "Tsiba"
+  "onboardSkip": "Tsiba",
+  "changesTitle": "Ukusukela kuhlalutyo lwangaphambili ({date})",
+  "changesPrice": "Ixabiso",
+  "changesNoMajor": "Imbono ayitshintshanga kakhulu.",
+  "changesPreviousSummary": "Isishwankathelo sangaphambili"
 }

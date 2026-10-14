@@ -1525,4 +1525,18 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ကျော်မည်';
+
+  @override
+  String changesTitle(String date) {
+    return 'ယခင်သုံးသပ်ချက် ($date) ကတည်းက';
+  }
+
+  @override
+  String get changesPrice => 'ဈေး';
+
+  @override
+  String get changesNoMajor => 'အလားအလာ သိသိသာသာ မပြောင်းလဲပါ။';
+
+  @override
+  String get changesPreviousSummary => 'ယခင် အနှစ်ချုပ်';
 }

@@ -1532,4 +1532,18 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Oʻtkazib yuborish';
+
+  @override
+  String changesTitle(String date) {
+    return 'Oldingi tahlildan beri ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Narx';
+
+  @override
+  String get changesNoMajor => 'Istiqbol sezilarli darajada oʻzgarmadi.';
+
+  @override
+  String get changesPreviousSummary => 'Oldingi xulosa';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Munasqakuna, portafolioyki, chanin willachiykunapas willasunki. T'aqwiyniykikuna aparatoykipi qhepan, wakmanta kichanapaq listo.",
   "onboardNext": "Qatiq",
   "onboardStart": "Qallarisun",
-  "onboardSkip": "Saltay"
+  "onboardSkip": "Saltay",
+  "changesTitle": "Ñawpaq t'aqwiymanta pacha ({date})",
+  "changesPrice": "Chanin",
+  "changesNoMajor": "Manam anchatachu imapas tikrakurqan.",
+  "changesPreviousSummary": "Ñawpaq pisichasqa"
 }

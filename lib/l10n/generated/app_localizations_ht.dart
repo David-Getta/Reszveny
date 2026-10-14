@@ -1528,4 +1528,18 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Sote';
+
+  @override
+  String changesTitle(String date) {
+    return 'Depi analiz anvan an ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Pri';
+
+  @override
+  String get changesNoMajor => 'Pèspektiv yo pa chanje anpil.';
+
+  @override
+  String get changesPreviousSummary => 'Rezime anvan an';
 }

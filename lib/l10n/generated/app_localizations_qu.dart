@@ -1539,4 +1539,18 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Saltay';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ñawpaq t\'aqwiymanta pacha ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Chanin';
+
+  @override
+  String get changesNoMajor => 'Manam anchatachu imapas tikrakurqan.';
+
+  @override
+  String get changesPreviousSummary => 'Ñawpaq pisichasqa';
 }

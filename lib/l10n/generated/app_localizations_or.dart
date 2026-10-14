@@ -1527,4 +1527,18 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ଛାଡ଼ନ୍ତୁ';
+
+  @override
+  String changesTitle(String date) {
+    return 'ପୂର୍ବ ବିଶ୍ଳେଷଣ ପରଠାରୁ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ଦର';
+
+  @override
+  String get changesNoMajor => 'ଦୃଷ୍ଟିଭଙ୍ଗୀରେ ବିଶେଷ ପରିବର୍ତ୍ତନ ହୋଇନାହିଁ।';
+
+  @override
+  String get changesPreviousSummary => 'ପୂର୍ବ ସାରାଂଶ';
 }

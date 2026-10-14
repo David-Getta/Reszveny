@@ -417,5 +417,9 @@
   "onboardBody3": "Gunstelinge, jou portefeulje en pryswaarskuwings hou jou op hoogte. Jou ontledings bly op jou toestel, gereed om weer oop te maak.",
   "onboardNext": "Volgende",
   "onboardStart": "Begin",
-  "onboardSkip": "Slaan oor"
+  "onboardSkip": "Slaan oor",
+  "changesTitle": "Sedert die vorige ontleding ({date})",
+  "changesPrice": "Prys",
+  "changesNoMajor": "Die vooruitsigte het nie wesenlik verander nie.",
+  "changesPreviousSummary": "Vorige opsomming"
 }

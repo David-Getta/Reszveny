@@ -417,5 +417,9 @@
   "onboardBody3": "Preferiti, il tuo portafoglio e gli avvisi di prezzo ti tengono informato. Le tue analisi restano sul tuo dispositivo, pronte da riaprire.",
   "onboardNext": "Avanti",
   "onboardStart": "Inizia",
-  "onboardSkip": "Salta"
+  "onboardSkip": "Salta",
+  "changesTitle": "Dall'analisi precedente ({date})",
+  "changesPrice": "Prezzo",
+  "changesNoMajor": "Le prospettive non sono cambiate in modo significativo.",
+  "changesPreviousSummary": "Sintesi precedente"
 }

@@ -1577,4 +1577,18 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Прапусціць';
+
+  @override
+  String changesTitle(String date) {
+    return 'З часу папярэдняга аналізу ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Цана';
+
+  @override
+  String get changesNoMajor => 'Перспектывы істотна не змяніліся.';
+
+  @override
+  String get changesPreviousSummary => 'Папярэдняе рэзюмэ';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "ප්‍රියතම, ඔබේ කළඹ සහ මිල ඇඟවීම් ඔබව දැනුවත් කරයි. ඔබේ විශ්ලේෂණ ඔබේ උපාංගයේම රැඳී ඇති අතර නැවත විවෘත කිරීමට සූදානම්.",
   "onboardNext": "ඊළඟ",
   "onboardStart": "අරඹන්න",
-  "onboardSkip": "මඟ හරින්න"
+  "onboardSkip": "මඟ හරින්න",
+  "changesTitle": "පෙර විශ්ලේෂණයේ සිට ({date})",
+  "changesPrice": "මිල",
+  "changesNoMajor": "අපේක්ෂාවන් සැලකිය යුතු ලෙස වෙනස් වී නැත.",
+  "changesPreviousSummary": "පෙර සාරාංශය"
 }

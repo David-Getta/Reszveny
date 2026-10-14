@@ -2844,6 +2844,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Skip'**
   String get onboardSkip;
+
+  /// Heading of the box comparing a re-run analysis with the previous one; date is the previous analysis date and time.
+  ///
+  /// In en, this message translates to:
+  /// **'Since the previous analysis ({date})'**
+  String changesTitle(String date);
+
+  /// No description provided for @changesPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get changesPrice;
+
+  /// No description provided for @changesNoMajor.
+  ///
+  /// In en, this message translates to:
+  /// **'The outlook has not changed materially.'**
+  String get changesNoMajor;
+
+  /// No description provided for @changesPreviousSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous summary'**
+  String get changesPreviousSummary;
 }
 
 class _AppLocalizationsDelegate

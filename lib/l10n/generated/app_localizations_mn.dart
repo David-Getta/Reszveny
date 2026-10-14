@@ -1531,4 +1531,18 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Алгасах';
+
+  @override
+  String changesTitle(String date) {
+    return 'Өмнөх шинжилгээнээс хойш ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Үнэ';
+
+  @override
+  String get changesNoMajor => 'Төлөв байдал төдийлөн өөрчлөгдөөгүй.';
+
+  @override
+  String get changesPreviousSummary => 'Өмнөх хураангуй';
 }

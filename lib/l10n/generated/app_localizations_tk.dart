@@ -1528,4 +1528,18 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Geçiň';
+
+  @override
+  String changesTitle(String date) {
+    return 'Öňki seljermeden bäri ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Baha';
+
+  @override
+  String get changesNoMajor => 'Çaklamalar düýpli üýtgemedi.';
+
+  @override
+  String get changesPreviousSummary => 'Öňki gysgaça mazmun';
 }

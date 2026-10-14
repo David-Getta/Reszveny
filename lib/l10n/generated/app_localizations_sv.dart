@@ -1530,4 +1530,18 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Hoppa över';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sedan föregående analys ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurs';
+
+  @override
+  String get changesNoMajor => 'Utsikterna har inte förändrats nämnvärt.';
+
+  @override
+  String get changesPreviousSummary => 'Föregående sammanfattning';
 }

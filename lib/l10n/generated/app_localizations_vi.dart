@@ -1525,4 +1525,18 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Bỏ qua';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kể từ lần phân tích trước ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Giá';
+
+  @override
+  String get changesNoMajor => 'Triển vọng không thay đổi đáng kể.';
+
+  @override
+  String get changesPreviousSummary => 'Tóm tắt trước đó';
 }

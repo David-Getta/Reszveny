@@ -417,5 +417,9 @@
   "onboardBody3": "Ojeguerohoryvéva, ne cartera ha tepy maranduʼi omomarandu ndéve. Ne jehesaʼỹijokuéra opyta ne tembiporuʼípe, ha ikatu reipeʼa jey oimeraẽ árape.",
   "onboardNext": "Upeigua",
   "onboardStart": "Ñañepyrũ",
-  "onboardSkip": "Ehasa"
+  "onboardSkip": "Ehasa",
+  "changesTitle": "Jehesaʼỹijo ymaguare guive ({date})",
+  "changesPrice": "Tepy",
+  "changesNoMajor": "Ojehecháva tenonderã ndoñemoambuéi tuichaháicha.",
+  "changesPreviousSummary": "Mombyky ymaguare"
 }

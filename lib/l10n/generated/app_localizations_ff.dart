@@ -1526,4 +1526,18 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Accu';
+
+  @override
+  String changesTitle(String date) {
+    return 'Gila ƴeewndo ndo adii ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Coggu';
+
+  @override
+  String get changesNoMajor => 'Ko yiyaa yeeso waylaaki no feewi.';
+
+  @override
+  String get changesPreviousSummary => 'Kuuɓal ndo adii';
 }

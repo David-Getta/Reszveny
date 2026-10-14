@@ -417,5 +417,9 @@
   "onboardBody3": "Favoritter, din portefølje og kursalarmer holder dig opdateret. Dine analyser bliver på din enhed, klar til at blive åbnet igen.",
   "onboardNext": "Næste",
   "onboardStart": "Kom i gang",
-  "onboardSkip": "Spring over"
+  "onboardSkip": "Spring over",
+  "changesTitle": "Siden den forrige analyse ({date})",
+  "changesPrice": "Kurs",
+  "changesNoMajor": "Udsigterne har ikke ændret sig væsentligt.",
+  "changesPreviousSummary": "Tidligere resumé"
 }

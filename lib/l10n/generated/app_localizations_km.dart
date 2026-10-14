@@ -1516,4 +1516,18 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get onboardSkip => 'រំលង';
+
+  @override
+  String changesTitle(String date) {
+    return 'ចាប់តាំងពីការវិភាគមុន ($date)';
+  }
+
+  @override
+  String get changesPrice => 'តម្លៃ';
+
+  @override
+  String get changesNoMajor => 'ទស្សនវិស័យមិនបានផ្លាស់ប្តូរគួរឱ្យកត់សម្គាល់ទេ។';
+
+  @override
+  String get changesPreviousSummary => 'សេចក្តីសង្ខេបមុន';
 }

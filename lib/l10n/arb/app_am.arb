@@ -417,5 +417,9 @@
   "onboardBody3": "ተወዳጆች፣ ፖርትፎሊዮዎና የዋጋ ማንቂያዎች ያሳውቁዎታል። ትንተናዎችዎ በመሣሪያዎ ላይ ይቀመጣሉ፤ በማንኛውም ጊዜ እንደገና ሊከፍቷቸው ይችላሉ።",
   "onboardNext": "ቀጣይ",
   "onboardStart": "እንጀምር",
-  "onboardSkip": "ዝለል"
+  "onboardSkip": "ዝለል",
+  "changesTitle": "ካለፈው ትንተና ወዲህ ({date})",
+  "changesPrice": "ዋጋ",
+  "changesNoMajor": "ትንበያው በጉልህ አልተለወጠም።",
+  "changesPreviousSummary": "የቀድሞው ማጠቃለያ"
 }

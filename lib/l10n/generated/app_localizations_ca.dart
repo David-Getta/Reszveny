@@ -1536,4 +1536,19 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Omet';
+
+  @override
+  String changesTitle(String date) {
+    return 'Des de l’anàlisi anterior ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Preu';
+
+  @override
+  String get changesNoMajor =>
+      'Les perspectives no han canviat de manera significativa.';
+
+  @override
+  String get changesPreviousSummary => 'Resum anterior';
 }

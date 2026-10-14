@@ -1530,4 +1530,18 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'এৰি যাওক';
+
+  @override
+  String changesTitle(String date) {
+    return 'আগৰ বিশ্লেষণৰ পিছত ($date)';
+  }
+
+  @override
+  String get changesPrice => 'দাম';
+
+  @override
+  String get changesNoMajor => 'দৃষ্টিভংগী উল্লেখযোগ্যভাৱে সলনি হোৱা নাই।';
+
+  @override
+  String get changesPreviousSummary => 'আগৰ সাৰাংশ';
 }

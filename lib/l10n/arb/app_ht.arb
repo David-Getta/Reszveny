@@ -417,5 +417,9 @@
   "onboardBody3": "Favori, pòtfèy ou ak alèt pri yo kenbe w okouran. Analiz ou yo rete sou aparèy ou, pare pou w louvri yo ankò.",
   "onboardNext": "Swivan",
   "onboardStart": "Ann kòmanse",
-  "onboardSkip": "Sote"
+  "onboardSkip": "Sote",
+  "changesTitle": "Depi analiz anvan an ({date})",
+  "changesPrice": "Pri",
+  "changesNoMajor": "Pèspektiv yo pa chanje anpil.",
+  "changesPreviousSummary": "Rezime anvan an"
 }

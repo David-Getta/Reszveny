@@ -1535,4 +1535,18 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ಬಿಟ್ಟುಬಿಡಿ';
+
+  @override
+  String changesTitle(String date) {
+    return 'ಹಿಂದಿನ ವಿಶ್ಲೇಷಣೆಯಿಂದ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ಬೆಲೆ';
+
+  @override
+  String get changesNoMajor => 'ಮುನ್ನೋಟದಲ್ಲಿ ಗಮನಾರ್ಹ ಬದಲಾವಣೆ ಇಲ್ಲ.';
+
+  @override
+  String get changesPreviousSummary => 'ಹಿಂದಿನ ಸಾರಾಂಶ';
 }

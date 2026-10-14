@@ -1534,4 +1534,18 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Svetuka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kubvira paongororo yapfuura ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Mutengo';
+
+  @override
+  String get changesNoMajor => 'Tarisiro haina kuchinja zvikuru.';
+
+  @override
+  String get changesPreviousSummary => 'Pfupiso yapfuura';
 }

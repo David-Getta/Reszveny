@@ -1535,4 +1535,18 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Ka bood';
+
+  @override
+  String changesTitle(String date) {
+    return 'Tan iyo falanqayntii hore ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Qiimaha';
+
+  @override
+  String get changesNoMajor => 'Saadaashu si weyn uma isbeddelin.';
+
+  @override
+  String get changesPreviousSummary => 'Soo koobiddii hore';
 }

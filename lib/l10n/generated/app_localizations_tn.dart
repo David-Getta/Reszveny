@@ -1538,4 +1538,18 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tlola';
+
+  @override
+  String changesTitle(String date) {
+    return 'Go tloga tshekatshekong ya pele ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Tlhwatlhwa';
+
+  @override
+  String get changesNoMajor => 'Ponelopele ga e a fetoga thata.';
+
+  @override
+  String get changesPreviousSummary => 'Tshobokanyo ya pele';
 }

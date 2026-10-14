@@ -1580,4 +1580,18 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Preskoči';
+
+  @override
+  String changesTitle(String date) {
+    return 'Od prejšnje analize ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Cena';
+
+  @override
+  String get changesNoMajor => 'Obeti se niso bistveno spremenili.';
+
+  @override
+  String get changesPreviousSummary => 'Prejšnji povzetek';
 }

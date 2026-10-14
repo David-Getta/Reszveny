@@ -417,5 +417,9 @@
   "onboardBody3": "Favorit, portofolio Anda, dan peringatan harga membuat Anda selalu tahu kabar terbaru. Analisis Anda tetap tersimpan di perangkat, siap dibuka kembali.",
   "onboardNext": "Berikutnya",
   "onboardStart": "Mulai",
-  "onboardSkip": "Lewati"
+  "onboardSkip": "Lewati",
+  "changesTitle": "Sejak analisis sebelumnya ({date})",
+  "changesPrice": "Harga",
+  "changesNoMajor": "Prospek tidak berubah secara signifikan.",
+  "changesPreviousSummary": "Ringkasan sebelumnya"
 }

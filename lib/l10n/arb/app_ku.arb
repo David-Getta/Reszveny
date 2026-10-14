@@ -417,5 +417,9 @@
   "onboardBody3": "Bijare, portfolyoya te û hişyariyên bihayê te agahdar dihêlin. Analîzên te li ser cîhaza te dimînin, amade ne ku dîsa werin vekirin.",
   "onboardNext": "Pêşve",
   "onboardStart": "Dest pê bike",
-  "onboardSkip": "Derbas bike"
+  "onboardSkip": "Derbas bike",
+  "changesTitle": "Ji analîza berê ve ({date})",
+  "changesPrice": "Biha",
+  "changesNoMajor": "Pêşbînî bi giranî neguheriye.",
+  "changesPreviousSummary": "Kurteya berê"
 }

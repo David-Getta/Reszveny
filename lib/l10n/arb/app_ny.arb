@@ -417,5 +417,9 @@
   "onboardBody3": "Zokondedwa, masheya anu ndi zidziwitso za mtengo zimakudziwitsani nthawi zonse. Zosanthula zanu zimakhala pa chipangizo chanu, zokonzeka kutsegulidwanso.",
   "onboardNext": "Patsogolo",
   "onboardStart": "Tiyeni tiyambe",
-  "onboardSkip": "Dumphani"
+  "onboardSkip": "Dumphani",
+  "changesTitle": "Kuchokera pa kusanthula kwapitako ({date})",
+  "changesPrice": "Mtengo",
+  "changesNoMajor": "Zomwe zikuyembekezeka sizinasinthe kwambiri.",
+  "changesPreviousSummary": "Chidule chapitacho"
 }

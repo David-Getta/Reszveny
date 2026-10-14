@@ -1528,4 +1528,18 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get onboardSkip => 'דילוג';
+
+  @override
+  String changesTitle(String date) {
+    return 'מאז הניתוח הקודם ($date)';
+  }
+
+  @override
+  String get changesPrice => 'מחיר';
+
+  @override
+  String get changesNoMajor => 'התחזית לא השתנתה באופן מהותי.';
+
+  @override
+  String get changesPreviousSummary => 'סיכום קודם';
 }

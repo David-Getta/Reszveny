@@ -1530,4 +1530,18 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Liwat';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ti saprak analisis saméméhna ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Harga';
+
+  @override
+  String get changesNoMajor => 'Prospékna teu robah sacara signifikan.';
+
+  @override
+  String get changesPreviousSummary => 'Ringkesan saméméhna';
 }

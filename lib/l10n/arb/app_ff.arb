@@ -417,5 +417,9 @@
   "onboardBody3": "Cuɓaaɗe, aksiyoŋ maa e tintine coggu ina tintina ma. Ƴeewndooji maa ina heddoo e kaɓirgol maa, a waawii udditde ɗi kadi sahaa kala.",
   "onboardNext": "Yeeso",
   "onboardStart": "Fuɗɗen",
-  "onboardSkip": "Accu"
+  "onboardSkip": "Accu",
+  "changesTitle": "Gila ƴeewndo ndo adii ({date})",
+  "changesPrice": "Coggu",
+  "changesNoMajor": "Ko yiyaa yeeso waylaaki no feewi.",
+  "changesPreviousSummary": "Kuuɓal ndo adii"
 }

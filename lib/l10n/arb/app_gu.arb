@@ -417,5 +417,9 @@
   "onboardBody3": "મનપસંદ, તમારો પોર્ટફોલિયો અને ભાવ અલર્ટ તમને માહિતગાર રાખે છે. તમારાં વિશ્લેષણો તમારા ડિવાઇસ પર જ રહે છે, ગમે ત્યારે ફરી ખોલવા માટે તૈયાર.",
   "onboardNext": "આગળ",
   "onboardStart": "શરૂ કરો",
-  "onboardSkip": "છોડો"
+  "onboardSkip": "છોડો",
+  "changesTitle": "અગાઉના વિશ્લેષણ પછી ({date})",
+  "changesPrice": "ભાવ",
+  "changesNoMajor": "દૃષ્ટિકોણ ખાસ બદલાયો નથી.",
+  "changesPreviousSummary": "અગાઉનો સારાંશ"
 }

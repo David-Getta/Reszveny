@@ -1530,4 +1530,18 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get onboardSkip => 'تێپەڕاندن';
+
+  @override
+  String changesTitle(String date) {
+    return 'لە شیکاریی پێشووەوە ($date)';
+  }
+
+  @override
+  String get changesPrice => 'نرخ';
+
+  @override
+  String get changesNoMajor => 'پێشبینییەکان بە شێوەیەکی بەرچاو نەگۆڕاون.';
+
+  @override
+  String get changesPreviousSummary => 'پوختەی پێشوو';
 }

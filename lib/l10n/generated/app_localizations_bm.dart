@@ -1528,4 +1528,18 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get onboardSkip => 'A tɛmɛ';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kabini sɛgɛsɛgɛli kɔrɔlen ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Sɔngɔ';
+
+  @override
+  String get changesNoMajor => 'Siniko cogo ma yɛlɛma kosɛbɛ.';
+
+  @override
+  String get changesPreviousSummary => 'Kɔrɔlen kuma surun';
 }

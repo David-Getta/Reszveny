@@ -1559,4 +1559,18 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Omite';
+
+  @override
+  String changesTitle(String date) {
+    return 'De la analiza anterioară ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Preț';
+
+  @override
+  String get changesNoMajor => 'Perspectivele nu s-au schimbat semnificativ.';
+
+  @override
+  String get changesPreviousSummary => 'Rezumatul anterior';
 }

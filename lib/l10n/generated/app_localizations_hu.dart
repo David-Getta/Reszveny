@@ -1535,4 +1535,18 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Kihagyás';
+
+  @override
+  String changesTitle(String date) {
+    return 'Az előző elemzés óta ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Árfolyam';
+
+  @override
+  String get changesNoMajor => 'A kilátások érdemben nem változtak.';
+
+  @override
+  String get changesPreviousSummary => 'Az előző elemzés lényege';
 }

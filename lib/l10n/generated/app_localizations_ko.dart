@@ -1484,4 +1484,18 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get onboardSkip => '건너뛰기';
+
+  @override
+  String changesTitle(String date) {
+    return '이전 분석($date) 이후';
+  }
+
+  @override
+  String get changesPrice => '주가';
+
+  @override
+  String get changesNoMajor => '전망에 큰 변화가 없습니다.';
+
+  @override
+  String get changesPreviousSummary => '이전 요약';
 }

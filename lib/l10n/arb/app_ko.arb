@@ -417,5 +417,9 @@
   "onboardBody3": "즐겨찾기, 포트폴리오, 가격 알림으로 최신 소식을 받아 보세요. 분석 결과는 기기에 저장되어 언제든 다시 열어 볼 수 있습니다.",
   "onboardNext": "다음",
   "onboardStart": "시작하기",
-  "onboardSkip": "건너뛰기"
+  "onboardSkip": "건너뛰기",
+  "changesTitle": "이전 분석({date}) 이후",
+  "changesPrice": "주가",
+  "changesNoMajor": "전망에 큰 변화가 없습니다.",
+  "changesPreviousSummary": "이전 요약"
 }

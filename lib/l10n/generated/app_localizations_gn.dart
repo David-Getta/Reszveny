@@ -1534,4 +1534,19 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Ehasa';
+
+  @override
+  String changesTitle(String date) {
+    return 'Jehesaʼỹijo ymaguare guive ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Tepy';
+
+  @override
+  String get changesNoMajor =>
+      'Ojehecháva tenonderã ndoñemoambuéi tuichaháicha.';
+
+  @override
+  String get changesPreviousSummary => 'Mombyky ymaguare';
 }

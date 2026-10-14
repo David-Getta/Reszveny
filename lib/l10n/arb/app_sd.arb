@@ -417,5 +417,9 @@
   "onboardBody3": "پسنديده، اوهان جو پورٽ فوليو ۽ قيمت جا الرٽ اوهان کي باخبر رکن ٿا. اوهان جا تجزيا اوهان جي ڊوائيس تي رهن ٿا، ٻيهر کولڻ لاءِ تيار.",
   "onboardNext": "اڳيون",
   "onboardStart": "شروع ڪريو",
-  "onboardSkip": "ڇڏي ڏيو"
+  "onboardSkip": "ڇڏي ڏيو",
+  "changesTitle": "اڳوڻي تجزيي کان پوءِ ({date})",
+  "changesPrice": "قيمت",
+  "changesNoMajor": "منظرنامي ۾ ڪا خاص تبديلي ناهي آئي.",
+  "changesPreviousSummary": "اڳوڻو خلاصو"
 }

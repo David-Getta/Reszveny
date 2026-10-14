@@ -417,5 +417,9 @@
   "onboardBody3": "Ang mga paborito, imo portfolio kag mga alerto sa presyo magapahibalo sa imo. Ang imo mga analisis nagapabilin sa imo device, handa nga buksan liwat.",
   "onboardNext": "Masunod",
   "onboardStart": "Magsugod na",
-  "onboardSkip": "Laktawan"
+  "onboardSkip": "Laktawan",
+  "changesTitle": "Halin sang nauna nga analisis ({date})",
+  "changesPrice": "Presyo",
+  "changesNoMajor": "Wala nagbag-o sing daku ang panan-awan.",
+  "changesPreviousSummary": "Nauna nga sumaryo"
 }

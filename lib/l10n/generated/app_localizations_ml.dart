@@ -1535,4 +1535,18 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ഒഴിവാക്കൂ';
+
+  @override
+  String changesTitle(String date) {
+    return 'മുൻ വിശകലനത്തിന് ശേഷം ($date)';
+  }
+
+  @override
+  String get changesPrice => 'വില';
+
+  @override
+  String get changesNoMajor => 'സാധ്യതകളിൽ കാര്യമായ മാറ്റമില്ല.';
+
+  @override
+  String get changesPreviousSummary => 'മുൻ സംഗ്രഹം';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Ulubione, Twój portfel i alerty cenowe informują Cię na bieżąco. Twoje analizy zostają na urządzeniu, gotowe do ponownego otwarcia.",
   "onboardNext": "Dalej",
   "onboardStart": "Zaczynamy",
-  "onboardSkip": "Pomiń"
+  "onboardSkip": "Pomiń",
+  "changesTitle": "Od poprzedniej analizy ({date})",
+  "changesPrice": "Kurs",
+  "changesNoMajor": "Perspektywy nie zmieniły się istotnie.",
+  "changesPreviousSummary": "Poprzednie podsumowanie"
 }

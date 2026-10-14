@@ -417,5 +417,9 @@
   "onboardBody3": "Yi ma gënal, sama aksiyoŋ yi ak artu njëg dinañu la yégal lu xew. Say saytu dañuy des ci sa jumtukaay, pare ngir nga ubbiwaat leen.",
   "onboardNext": "Ci kanam",
   "onboardStart": "Tàmbali",
-  "onboardSkip": "Tëb"
+  "onboardSkip": "Tëb",
+  "changesTitle": "Li dale ci saytu bi jiitu ({date})",
+  "changesPrice": "Njëg",
+  "changesNoMajor": "Li ñuy séentu soppikuwul lu bari.",
+  "changesPreviousSummary": "Gàttal bi jiitu"
 }

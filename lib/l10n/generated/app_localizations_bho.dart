@@ -1526,4 +1526,18 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get onboardSkip => 'छोड़ीं';
+
+  @override
+  String changesTitle(String date) {
+    return 'पिछला विश्लेषण से अब तक ($date)';
+  }
+
+  @override
+  String get changesPrice => 'दाम';
+
+  @override
+  String get changesNoMajor => 'अनुमान में कवनो खास बदलाव नइखे भइल।';
+
+  @override
+  String get changesPreviousSummary => 'पिछला सारांश';
 }

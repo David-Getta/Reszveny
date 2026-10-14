@@ -1527,4 +1527,18 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'છોડો';
+
+  @override
+  String changesTitle(String date) {
+    return 'અગાઉના વિશ્લેષણ પછી ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ભાવ';
+
+  @override
+  String get changesNoMajor => 'દૃષ્ટિકોણ ખાસ બદલાયો નથી.';
+
+  @override
+  String get changesPreviousSummary => 'અગાઉનો સારાંશ';
 }

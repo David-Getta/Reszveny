@@ -417,5 +417,9 @@
   "onboardBody3": "收藏、投资组合和价格提醒让你随时掌握最新动态。你的分析保存在设备上，随时可以重新打开。",
   "onboardNext": "下一步",
   "onboardStart": "开始使用",
-  "onboardSkip": "跳过"
+  "onboardSkip": "跳过",
+  "changesTitle": "自上次分析以来（{date}）",
+  "changesPrice": "股价",
+  "changesNoMajor": "前景没有实质性变化。",
+  "changesPreviousSummary": "上次分析摘要"
 }

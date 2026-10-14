@@ -1564,4 +1564,18 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Прескочи';
+
+  @override
+  String changesTitle(String date) {
+    return 'Од претходне анализе ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Цена';
+
+  @override
+  String get changesNoMajor => 'Изгледи се нису битно променили.';
+
+  @override
+  String get changesPreviousSummary => 'Претходни резиме';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Ismenyifen, aqrab-ik d yilɣa n ssuma ad k-d-ssalɣun. Tisleḍin-ik qqiment ɣef yibenk-ik, heggant ad tent-teldiḍ tikkelt nniḍen.",
   "onboardNext": "Uḍfiṛ",
   "onboardStart": "Bdu",
-  "onboardSkip": "Zgel"
+  "onboardSkip": "Zgel",
+  "changesTitle": "Seg tasleḍt yezrin ({date})",
+  "changesPrice": "Ssuma",
+  "changesNoMajor": "Ayen i d-yettwarǧan ur ibeddel ara aṭas.",
+  "changesPreviousSummary": "Agzul yezrin"
 }

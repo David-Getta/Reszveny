@@ -417,5 +417,9 @@
   "onboardBody3": "Suosikit, salkkusi ja kurssihälytykset pitävät sinut ajan tasalla. Analyysisi pysyvät laitteellasi valmiina avattaviksi uudelleen.",
   "onboardNext": "Seuraava",
   "onboardStart": "Aloitetaan",
-  "onboardSkip": "Ohita"
+  "onboardSkip": "Ohita",
+  "changesTitle": "Edellisen analyysin jälkeen ({date})",
+  "changesPrice": "Kurssi",
+  "changesNoMajor": "Näkymät eivät ole muuttuneet olennaisesti.",
+  "changesPreviousSummary": "Edellinen yhteenveto"
 }

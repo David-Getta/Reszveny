@@ -1542,4 +1542,19 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Labsan';
+
+  @override
+  String changesTitle(String date) {
+    return 'Manipud iti immuna a panangsukimat ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Presio';
+
+  @override
+  String get changesNoMajor =>
+      'Awan ti dakkel a panagbalbaliw iti pangnamnamaan.';
+
+  @override
+  String get changesPreviousSummary => 'Immuna a pakabuklan';
 }

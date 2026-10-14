@@ -1518,4 +1518,18 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Bas-a';
+
+  @override
+  String changesTitle(String date) {
+    return 'Vɛɛsg sẽn deng-a poorẽ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Koosgo';
+
+  @override
+  String get changesNoMajor => 'Bũmb pa toeeg wʋsg ye.';
+
+  @override
+  String get changesPreviousSummary => 'Vɛɛsg sẽn deng-a koe-bilfu';
 }

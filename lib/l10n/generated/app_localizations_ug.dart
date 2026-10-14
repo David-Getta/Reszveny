@@ -1533,4 +1533,18 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ئاتلاش';
+
+  @override
+  String changesTitle(String date) {
+    return 'ئالدىنقى تەھلىلدىن بۇيان ($date)';
+  }
+
+  @override
+  String get changesPrice => 'باھا';
+
+  @override
+  String get changesNoMajor => 'ئىستىقبال كۆرۈنەرلىك ئۆزگەرمىدى.';
+
+  @override
+  String get changesPreviousSummary => 'ئالدىنقى خۇلاسە';
 }

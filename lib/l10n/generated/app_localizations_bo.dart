@@ -1522,4 +1522,18 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'མཆོང་།';
+
+  @override
+  String changesTitle(String date) {
+    return 'དབྱེ་ཞིབ་སྔ་མ་ནས་བཟུང་། ($date)';
+  }
+
+  @override
+  String get changesPrice => 'གོང་ཚད';
+
+  @override
+  String get changesNoMajor => 'མདུན་ལྟའི་གནས་ཚུལ་ལ་འགྱུར་བ་ཆེན་པོ་མ་བྱུང་།';
+
+  @override
+  String get changesPreviousSummary => 'སྙིང་བསྡུས་སྔ་མ';
 }

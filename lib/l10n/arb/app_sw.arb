@@ -417,5 +417,9 @@
   "onboardBody3": "Vipendwa, jalada lako la hisa na arifa za bei hukujulisha kila kinachotokea. Uchambuzi wako hubaki kwenye kifaa chako, tayari kufunguliwa tena.",
   "onboardNext": "Ifuatayo",
   "onboardStart": "Anza",
-  "onboardSkip": "Ruka"
+  "onboardSkip": "Ruka",
+  "changesTitle": "Tangu uchambuzi uliopita ({date})",
+  "changesPrice": "Bei",
+  "changesNoMajor": "Mtazamo haujabadilika kwa kiasi kikubwa.",
+  "changesPreviousSummary": "Muhtasari uliopita"
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Obľúbené, vaše portfólio a cenové upozornenia vás držia v obraze. Vaše analýzy zostávajú vo vašom zariadení, pripravené na opätovné otvorenie.",
   "onboardNext": "Ďalej",
   "onboardStart": "Začať",
-  "onboardSkip": "Preskočiť"
+  "onboardSkip": "Preskočiť",
+  "changesTitle": "Od predchádzajúcej analýzy ({date})",
+  "changesPrice": "Cena",
+  "changesNoMajor": "Výhľad sa podstatne nezmenil.",
+  "changesPreviousSummary": "Predchádzajúce zhrnutie"
 }

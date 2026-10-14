@@ -417,5 +417,9 @@
   "onboardBody3": "Favoritos, sua carteira e os alertas de preço mantêm você informado. Suas análises ficam no seu dispositivo, prontas para reabrir.",
   "onboardNext": "Avançar",
   "onboardStart": "Começar",
-  "onboardSkip": "Pular"
+  "onboardSkip": "Pular",
+  "changesTitle": "Desde a análise anterior ({date})",
+  "changesPrice": "Preço",
+  "changesNoMajor": "As perspectivas não mudaram significativamente.",
+  "changesPreviousSummary": "Resumo anterior"
 }

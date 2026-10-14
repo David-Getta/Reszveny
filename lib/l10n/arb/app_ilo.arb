@@ -417,5 +417,9 @@
   "onboardBody3": "Ti dagiti paborito, ti portfolio-m ken dagiti alerto ti presio ipakaammoda kenka. Agtalinaed dagiti panangsukimatmo iti device-mo, nakasagana a lukatam manen.",
   "onboardNext": "Sumaruno",
   "onboardStart": "Mangrugi",
-  "onboardSkip": "Labsan"
+  "onboardSkip": "Labsan",
+  "changesTitle": "Manipud iti immuna a panangsukimat ({date})",
+  "changesPrice": "Presio",
+  "changesNoMajor": "Awan ti dakkel a panagbalbaliw iti pangnamnamaan.",
+  "changesPreviousSummary": "Immuna a pakabuklan"
 }

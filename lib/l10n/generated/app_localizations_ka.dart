@@ -1531,4 +1531,18 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'გამოტოვება';
+
+  @override
+  String changesTitle(String date) {
+    return 'წინა ანალიზის შემდეგ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ფასი';
+
+  @override
+  String get changesNoMajor => 'პერსპექტივა არსებითად არ შეცვლილა.';
+
+  @override
+  String get changesPreviousSummary => 'წინა შეჯამება';
 }

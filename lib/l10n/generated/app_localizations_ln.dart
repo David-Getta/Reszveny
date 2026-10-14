@@ -1535,4 +1535,19 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Leka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Banda analyse ya kala ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ntalo';
+
+  @override
+  String get changesNoMajor =>
+      'Ndenge makambo ekoki kozala ebongwani mingi te.';
+
+  @override
+  String get changesPreviousSummary => 'Mokuse ya kala';
 }

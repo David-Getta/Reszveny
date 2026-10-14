@@ -1539,4 +1539,18 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tlula';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ku sukela eka nxopaxopo lowu hundzeke ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Nxavo';
+
+  @override
+  String get changesNoMajor => 'Langutelo a ri cincanga ngopfu.';
+
+  @override
+  String get changesPreviousSummary => 'Nkomiso lowu hundzeke';
 }

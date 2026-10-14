@@ -1531,4 +1531,18 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Өткөрүп жиберүү';
+
+  @override
+  String changesTitle(String date) {
+    return 'Мурунку талдоодон бери ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Баа';
+
+  @override
+  String get changesNoMajor => 'Болжол олуттуу өзгөргөн жок.';
+
+  @override
+  String get changesPreviousSummary => 'Мурунку корутунду';
 }

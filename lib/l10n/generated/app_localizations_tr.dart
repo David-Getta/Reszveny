@@ -1529,4 +1529,18 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Atla';
+
+  @override
+  String changesTitle(String date) {
+    return 'Önceki analizden bu yana ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Fiyat';
+
+  @override
+  String get changesNoMajor => 'Görünüm önemli ölçüde değişmedi.';
+
+  @override
+  String get changesPreviousSummary => 'Önceki özet';
 }

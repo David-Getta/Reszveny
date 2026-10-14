@@ -1535,4 +1535,18 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Simba';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kuva ku isesangura ryabanje ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Igiciro';
+
+  @override
+  String get changesNoMajor => 'Ivyitezwe ntivyahindutse cane.';
+
+  @override
+  String get changesPreviousSummary => 'Incamake ya mbere';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Diyanyelenw, i ka aksiyɔn kɛsu ani sɔngɔ lasɔminiw bɛ i ladɔnniya. I ka sɛgɛsɛgɛliw bɛ to i ka minɛn kan, i bɛ se k’u da wuli tugun waati o waati.",
   "onboardNext": "Ɲɛfɛ",
   "onboardStart": "An ka daminɛ",
-  "onboardSkip": "A tɛmɛ"
+  "onboardSkip": "A tɛmɛ",
+  "changesTitle": "Kabini sɛgɛsɛgɛli kɔrɔlen ({date})",
+  "changesPrice": "Sɔngɔ",
+  "changesNoMajor": "Siniko cogo ma yɛlɛma kosɛbɛ.",
+  "changesPreviousSummary": "Kɔrɔlen kuma surun"
 }

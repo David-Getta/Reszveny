@@ -417,5 +417,9 @@
   "onboardBody3": "Tše di ratwago, photefolio ya gago le ditemošo tša theko di go tsebiša ka mehla. Ditshekatsheko tša gago di dula sedirišweng sa gago, di loketše go bulwa gape.",
   "onboardNext": "Latela",
   "onboardStart": "Thoma",
-  "onboardSkip": "Tlola"
+  "onboardSkip": "Tlola",
+  "changesTitle": "Go tloga ka tshekatsheko ya pele ({date})",
+  "changesPrice": "Theko",
+  "changesNoMajor": "Ponelopele ga se ya fetoga kudu.",
+  "changesPreviousSummary": "Kakaretšo ya pele"
 }

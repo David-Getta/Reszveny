@@ -417,5 +417,9 @@
   "onboardBody3": "Yêu thích, danh mục của bạn và cảnh báo giá giúp bạn luôn cập nhật. Các bản phân tích được lưu trên thiết bị, sẵn sàng để mở lại bất cứ lúc nào.",
   "onboardNext": "Tiếp",
   "onboardStart": "Bắt đầu",
-  "onboardSkip": "Bỏ qua"
+  "onboardSkip": "Bỏ qua",
+  "changesTitle": "Kể từ lần phân tích trước ({date})",
+  "changesPrice": "Giá",
+  "changesNoMajor": "Triển vọng không thay đổi đáng kể.",
+  "changesPreviousSummary": "Tóm tắt trước đó"
 }

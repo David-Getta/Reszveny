@@ -1528,4 +1528,18 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Zgel';
+
+  @override
+  String changesTitle(String date) {
+    return 'Seg tasleḍt yezrin ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ssuma';
+
+  @override
+  String get changesNoMajor => 'Ayen i d-yettwarǧan ur ibeddel ara aṭas.';
+
+  @override
+  String get changesPreviousSummary => 'Agzul yezrin';
 }

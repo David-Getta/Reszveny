@@ -1532,4 +1532,18 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Dzo eŋu';
+
+  @override
+  String changesTitle(String date) {
+    return 'Tso numekuku si do ŋgɔ la dzi ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Asi';
+
+  @override
+  String get changesNoMajor => 'Etsɔme ƒe nɔnɔme metrɔ boo o.';
+
+  @override
+  String get changesPreviousSummary => 'Kpuie si do ŋgɔ';
 }

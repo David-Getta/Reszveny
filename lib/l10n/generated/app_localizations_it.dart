@@ -1532,4 +1532,19 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Salta';
+
+  @override
+  String changesTitle(String date) {
+    return 'Dall\'analisi precedente ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Prezzo';
+
+  @override
+  String get changesNoMajor =>
+      'Le prospettive non sono cambiate in modo significativo.';
+
+  @override
+  String get changesPreviousSummary => 'Sintesi precedente';
 }

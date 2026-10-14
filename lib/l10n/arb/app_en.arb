@@ -1073,5 +1073,17 @@
   "onboardSkip": "Skip",
   "@onboardSkip": {
     "description": "Button: skip the onboarding."
-  }
+  },
+  "changesTitle": "Since the previous analysis ({date})",
+  "@changesTitle": {
+    "description": "Heading of the box comparing a re-run analysis with the previous one; date is the previous analysis date and time.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "changesPrice": "Price",
+  "changesNoMajor": "The outlook has not changed materially.",
+  "changesPreviousSummary": "Previous summary"
 }

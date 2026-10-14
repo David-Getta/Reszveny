@@ -417,5 +417,9 @@
   "onboardBody3": "收藏、投資組合及價格提示助你緊貼最新動態。你的分析會儲存在裝置上，隨時可再次開啟。",
   "onboardNext": "下一步",
   "onboardStart": "開始使用",
-  "onboardSkip": "略過"
+  "onboardSkip": "略過",
+  "changesTitle": "自上次分析以來（{date}）",
+  "changesPrice": "股價",
+  "changesNoMajor": "前景沒有實質變化。",
+  "changesPreviousSummary": "上次分析摘要"
 }

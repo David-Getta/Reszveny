@@ -1532,4 +1532,18 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Derbas bike';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ji analîza berê ve ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Biha';
+
+  @override
+  String get changesNoMajor => 'Pêşbînî bi giranî neguheriye.';
+
+  @override
+  String get changesPreviousSummary => 'Kurteya berê';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "Priljubljene, vaš portfelj in cenovna opozorila vas sproti obveščajo. Vaše analize ostanejo v vaši napravi, pripravljene za ponovno odpiranje.",
   "onboardNext": "Naprej",
   "onboardStart": "Začnimo",
-  "onboardSkip": "Preskoči"
+  "onboardSkip": "Preskoči",
+  "changesTitle": "Od prejšnje analize ({date})",
+  "changesPrice": "Cena",
+  "changesNoMajor": "Obeti se niso bistveno spremenili.",
+  "changesPreviousSummary": "Prejšnji povzetek"
 }

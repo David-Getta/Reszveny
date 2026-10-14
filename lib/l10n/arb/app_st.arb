@@ -417,5 +417,9 @@
   "onboardBody3": "Tseo o di ratang, potefolio ya hao le ditsebiso tsa theko di o tsebisa se etsahalang. Ditlhahlobo tsa hao di dula sesebedisweng sa hao, di loketse ho bulwa hape.",
   "onboardNext": "E latelang",
   "onboardStart": "Qala",
-  "onboardSkip": "Tlola"
+  "onboardSkip": "Tlola",
+  "changesTitle": "Ho tloha tlhahlobong ya pele ({date})",
+  "changesPrice": "Theko",
+  "changesNoMajor": "Ponelopele ha e a fetoha haholo.",
+  "changesPreviousSummary": "Kakaretso ya pele"
 }

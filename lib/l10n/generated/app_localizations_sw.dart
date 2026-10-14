@@ -1529,4 +1529,18 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Ruka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Tangu uchambuzi uliopita ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Bei';
+
+  @override
+  String get changesNoMajor => 'Mtazamo haujabadilika kwa kiasi kikubwa.';
+
+  @override
+  String get changesPreviousSummary => 'Muhtasari uliopita';
 }

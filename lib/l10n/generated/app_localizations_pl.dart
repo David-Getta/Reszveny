@@ -1581,4 +1581,18 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Pomiń';
+
+  @override
+  String changesTitle(String date) {
+    return 'Od poprzedniej analizy ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurs';
+
+  @override
+  String get changesNoMajor => 'Perspektywy nie zmieniły się istotnie.';
+
+  @override
+  String get changesPreviousSummary => 'Poprzednie podsumowanie';
 }

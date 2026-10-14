@@ -1536,4 +1536,18 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tsiba';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ukusukela kuhlalutyo lwangaphambili ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ixabiso';
+
+  @override
+  String get changesNoMajor => 'Imbono ayitshintshanga kakhulu.';
+
+  @override
+  String get changesPreviousSummary => 'Isishwankathelo sangaphambili';
 }

@@ -417,5 +417,9 @@
   "onboardBody3": "By'oyagala, emigabo gyo n'okulabula ku bbeeyi bikutegeeza buli ekibaawo. Okwekenneenya kwo kusigala ku kyuma kyo, nga kwetegefu okuggulwawo nate.",
   "onboardNext": "Ekiddako",
   "onboardStart": "Tandika",
-  "onboardSkip": "Buuka"
+  "onboardSkip": "Buuka",
+  "changesTitle": "Okuva ku kwekenneenya okw'edda ({date})",
+  "changesPrice": "Ebbeeyi",
+  "changesNoMajor": "Embeera esuubirwa tekyuse nnyo.",
+  "changesPreviousSummary": "Mu bufunze okw'edda"
 }

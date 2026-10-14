@@ -1540,4 +1540,18 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Laktawan';
+
+  @override
+  String changesTitle(String date) {
+    return 'Halin sang nauna nga analisis ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Presyo';
+
+  @override
+  String get changesNoMajor => 'Wala nagbag-o sing daku ang panan-awan.';
+
+  @override
+  String get changesPreviousSummary => 'Nauna nga sumaryo';
 }

@@ -1529,4 +1529,18 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Fò ó';
+
+  @override
+  String changesTitle(String date) {
+    return 'Láti ìtúpalẹ̀ tó kọjá ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Iye owó';
+
+  @override
+  String get changesNoMajor => 'Ìrètí kò yí padà ní pàtàkì.';
+
+  @override
+  String get changesPreviousSummary => 'Àkópọ̀ ti tẹ́lẹ̀';
 }

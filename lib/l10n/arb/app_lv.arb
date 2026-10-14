@@ -417,5 +417,9 @@
   "onboardBody3": "Izlase, jūsu portfelis un cenu brīdinājumi jūs vienmēr informēs. Jūsu analīzes paliek jūsu ierīcē, gatavas atkārtotai atvēršanai.",
   "onboardNext": "Tālāk",
   "onboardStart": "Sākt",
-  "onboardSkip": "Izlaist"
+  "onboardSkip": "Izlaist",
+  "changesTitle": "Kopš iepriekšējās analīzes ({date})",
+  "changesPrice": "Cena",
+  "changesNoMajor": "Perspektīva būtiski nav mainījusies.",
+  "changesPreviousSummary": "Iepriekšējais kopsavilkums"
 }

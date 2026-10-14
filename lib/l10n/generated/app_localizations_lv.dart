@@ -1565,4 +1565,18 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Izlaist';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kopš iepriekšējās analīzes ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Cena';
+
+  @override
+  String get changesNoMajor => 'Perspektīva būtiski nav mainījusies.';
+
+  @override
+  String get changesPreviousSummary => 'Iepriekšējais kopsavilkums';
 }

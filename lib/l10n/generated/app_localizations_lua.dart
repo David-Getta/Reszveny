@@ -1533,4 +1533,18 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Pita';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kubangila ku dikonkonona dia kumpala ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Mushinga';
+
+  @override
+  String get changesNoMajor => 'Malu adi alua kaena ashintuluke bikole to.';
+
+  @override
+  String get changesPreviousSummary => 'Tshikoso tshia kumpala';
 }

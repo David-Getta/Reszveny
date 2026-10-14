@@ -417,5 +417,9 @@
   "onboardBody3": "Ibyo ukunda, ishoramari ryawe n'imenyesha ry'ibiciro bikugezaho amakuru. Isesengura ryawe riguma ku gikoresho cyawe, ryiteguye kongera gufungurwa.",
   "onboardNext": "Ibikurikira",
   "onboardStart": "Tangira",
-  "onboardSkip": "Simbuka"
+  "onboardSkip": "Simbuka",
+  "changesTitle": "Kuva ku isesengura ryabanje ({date})",
+  "changesPrice": "Igiciro",
+  "changesNoMajor": "Ibiteganijwe ntibyahindutse cyane.",
+  "changesPreviousSummary": "Incamake ibanza"
 }

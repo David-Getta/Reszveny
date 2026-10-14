@@ -417,5 +417,9 @@
   "onboardBody3": "Zvaunofarira, potiforiyo yako nezviziviso zvemutengo zvinokuzivisa nguva dzose. Ongororo dzako dzinogara pamudziyo wako, dzakagadzirira kuvhurwa zvakare.",
   "onboardNext": "Inotevera",
   "onboardStart": "Tanga",
-  "onboardSkip": "Svetuka"
+  "onboardSkip": "Svetuka",
+  "changesTitle": "Kubvira paongororo yapfuura ({date})",
+  "changesPrice": "Mutengo",
+  "changesNoMajor": "Tarisiro haina kuchinja zvikuru.",
+  "changesPreviousSummary": "Pfupiso yapfuura"
 }

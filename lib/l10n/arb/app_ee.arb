@@ -417,5 +417,9 @@
   "onboardBody3": "Nye lɔlɔ̃tɔwo, nye akpawo kple asi ŋuti nuxlɔ̃amewo naa nènyaa nusi le dzɔdzɔm. Wò numekukuwo nɔa wò mɔ̃ dzi, eye àte ŋu aʋu wo ake ɣesiaɣi.",
   "onboardNext": "Esi kplɔe ɖo",
   "onboardStart": "Míadze egɔme",
-  "onboardSkip": "Dzo eŋu"
+  "onboardSkip": "Dzo eŋu",
+  "changesTitle": "Tso numekuku si do ŋgɔ la dzi ({date})",
+  "changesPrice": "Asi",
+  "changesNoMajor": "Etsɔme ƒe nɔnɔme metrɔ boo o.",
+  "changesPreviousSummary": "Kpuie si do ŋgɔ"
 }

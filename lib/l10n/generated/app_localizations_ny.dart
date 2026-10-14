@@ -1536,4 +1536,18 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Dumphani';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kuchokera pa kusanthula kwapitako ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Mtengo';
+
+  @override
+  String get changesNoMajor => 'Zomwe zikuyembekezeka sizinasinthe kwambiri.';
+
+  @override
+  String get changesPreviousSummary => 'Chidule chapitacho';
 }

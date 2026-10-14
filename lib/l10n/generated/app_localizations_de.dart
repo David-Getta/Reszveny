@@ -1539,4 +1539,19 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Überspringen';
+
+  @override
+  String changesTitle(String date) {
+    return 'Seit der vorherigen Analyse ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Kurs';
+
+  @override
+  String get changesNoMajor =>
+      'Der Ausblick hat sich nicht wesentlich verändert.';
+
+  @override
+  String get changesPreviousSummary => 'Vorherige Zusammenfassung';
 }

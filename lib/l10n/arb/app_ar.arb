@@ -417,5 +417,9 @@
   "onboardBody3": "المفضلة ومحفظتك وتنبيهات السعر تبقيك على اطلاع. تبقى تحليلاتك على جهازك، جاهزة لتفتحها من جديد.",
   "onboardNext": "التالي",
   "onboardStart": "لنبدأ",
-  "onboardSkip": "تخطٍّ"
+  "onboardSkip": "تخطٍّ",
+  "changesTitle": "منذ التحليل السابق ({date})",
+  "changesPrice": "السعر",
+  "changesNoMajor": "لم تتغير التوقعات بشكل جوهري.",
+  "changesPreviousSummary": "الملخص السابق"
 }

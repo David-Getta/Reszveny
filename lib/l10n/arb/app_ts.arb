@@ -417,5 +417,9 @@
   "onboardBody3": "Leswi u swi rhandzaka, phothifoliyo ya wena ni switiviso swa nxavo swi ku tivisa leswi humelelaka. Minxopaxopo ya wena yi tshama eka xitirhisiwa xa wena, yi lunghekele ku pfuriwa nakambe.",
   "onboardNext": "Leswi landzelaka",
   "onboardStart": "Sungula",
-  "onboardSkip": "Tlula"
+  "onboardSkip": "Tlula",
+  "changesTitle": "Ku sukela eka nxopaxopo lowu hundzeke ({date})",
+  "changesPrice": "Nxavo",
+  "changesNoMajor": "Langutelo a ri cincanga ngopfu.",
+  "changesPreviousSummary": "Nkomiso lowu hundzeke"
 }

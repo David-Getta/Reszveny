@@ -1537,4 +1537,19 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Passer';
+
+  @override
+  String changesTitle(String date) {
+    return 'Depuis l’analyse précédente ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Cours';
+
+  @override
+  String get changesNoMajor =>
+      'Les perspectives n’ont pas changé de manière significative.';
+
+  @override
+  String get changesPreviousSummary => 'Résumé précédent';
 }

@@ -1541,4 +1541,18 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Dinganina';
+
+  @override
+  String changesTitle(String date) {
+    return 'Hatramin\'ny fandalinana teo aloha ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Vidiny';
+
+  @override
+  String get changesNoMajor => 'Tsy dia niova loatra ny vinavina.';
+
+  @override
+  String get changesPreviousSummary => 'Famintinana teo aloha';
 }

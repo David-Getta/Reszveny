@@ -417,5 +417,9 @@
   "onboardBody3": "Favoriten, dein Portfolio und Kursalarme halten dich auf dem Laufenden. Deine Analysen bleiben auf deinem Gerät und lassen sich jederzeit wieder öffnen.",
   "onboardNext": "Weiter",
   "onboardStart": "Los geht’s",
-  "onboardSkip": "Überspringen"
+  "onboardSkip": "Überspringen",
+  "changesTitle": "Seit der vorherigen Analyse ({date})",
+  "changesPrice": "Kurs",
+  "changesNoMajor": "Der Ausblick hat sich nicht wesentlich verändert.",
+  "changesPreviousSummary": "Vorherige Zusammenfassung"
 }

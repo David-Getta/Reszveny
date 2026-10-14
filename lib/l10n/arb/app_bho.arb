@@ -417,5 +417,9 @@
   "onboardBody3": "पसंदीदा, रउरा पोर्टफ़ोलियो आ दाम अलर्ट रउरा के खबर देत रहेला। रउरा विश्लेषण रउरा डिवाइस पर रहेला, जब मन करे दोबारा खोल सकीले।",
   "onboardNext": "आगे",
   "onboardStart": "शुरू करीं",
-  "onboardSkip": "छोड़ीं"
+  "onboardSkip": "छोड़ीं",
+  "changesTitle": "पिछला विश्लेषण से अब तक ({date})",
+  "changesPrice": "दाम",
+  "changesNoMajor": "अनुमान में कवनो खास बदलाव नइखे भइल।",
+  "changesPreviousSummary": "पिछला सारांश"
 }

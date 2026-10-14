@@ -1536,4 +1536,18 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Բաց թողնել';
+
+  @override
+  String changesTitle(String date) {
+    return 'Նախորդ վերլուծությունից ի վեր ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Գին';
+
+  @override
+  String get changesNoMajor => 'Հեռանկարը էականորեն չի փոխվել։';
+
+  @override
+  String get changesPreviousSummary => 'Նախորդ ամփոփում';
 }

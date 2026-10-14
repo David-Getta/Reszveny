@@ -1525,4 +1525,18 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Lewati';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sejak analisis sebelumnya ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Harga';
+
+  @override
+  String get changesNoMajor => 'Prospek tidak berubah secara signifikan.';
+
+  @override
+  String get changesPreviousSummary => 'Ringkasan sebelumnya';
 }

@@ -1526,4 +1526,18 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ਛੱਡੋ';
+
+  @override
+  String changesTitle(String date) {
+    return 'ਪਿਛਲੇ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ਕੀਮਤ';
+
+  @override
+  String get changesNoMajor => 'ਨਜ਼ਰੀਏ ਵਿੱਚ ਕੋਈ ਖ਼ਾਸ ਬਦਲਾਅ ਨਹੀਂ ਆਇਆ।';
+
+  @override
+  String get changesPreviousSummary => 'ਪਿਛਲਾ ਸਾਰ';
 }

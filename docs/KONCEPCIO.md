@@ -188,7 +188,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5f | Elemzés megosztása: kép-kártya (fejléc, hangulat, forgatókönyvek, link) és nyilvános link előnézettel – a virális hurok alapja | 🟡 kép-kártya (4:5, 1080×1350) és szöveges megosztás kész; a nyilvános link előnézettel a weboldallal (5h) jön |
 | 5g | Ajánlói program: meghívó kód, mindkét fél +5 elemzést kap | ✅ kész: saját kód a beállításokban (másolás, megosztás, statisztika), barát kódjának beváltása; a meghívott azonnal, az ajánló a meghívott első elemzése után kapja meg, ajánlónként legfeljebb 10-szer (`REFERRAL_BONUS`, `REFERRAL_MAX`) |
 | 5h | Weboldal: letöltés, árak, minta-elemzések, népszerű részvények oldalai (SEO) | ⬜ |
-| 5i | Első indítás: rövid bemutató, ingyenes minta-elemzés, értékelés-kérés jó élmény után | ⬜ |
+| 5i | Első indítás: rövid bemutató, ingyenes minta-elemzés, értékelés-kérés jó élmény után | ✅ kész: háromoldalas bemutató (csak friss telepítésnél, átugorható), áruházi értékelés-kérés egyszer, a 3. elemzés után; a minta-elemzés helyett a próbaidő ingyenes elemzései (beégetett, kitalált számokkal félrevezető lenne) |
+| 5l | Újraelemzés: „Az előző elemzés óta” – árfolyam, piaci hangulat, forgatókönyv-valószínűségek és a legvalószínűbb forgatókönyv változása, lenyitva az előző elemzés lényege; a 12 óránál régebbi elemzésnél kérdés (új vagy a korábbi) és az elemzések előzménylistája | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

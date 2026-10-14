@@ -1529,4 +1529,18 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'वगळा';
+
+  @override
+  String changesTitle(String date) {
+    return 'मागील विश्लेषणापासून ($date)';
+  }
+
+  @override
+  String get changesPrice => 'किंमत';
+
+  @override
+  String get changesNoMajor => 'अंदाजात फारसा बदल झालेला नाही.';
+
+  @override
+  String get changesPreviousSummary => 'मागील सारांश';
 }

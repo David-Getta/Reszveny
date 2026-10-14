@@ -1538,4 +1538,18 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tlola';
+
+  @override
+  String changesTitle(String date) {
+    return 'Ho tloha tlhahlobong ya pele ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Theko';
+
+  @override
+  String get changesNoMajor => 'Ponelopele ha e a fetoha haholo.';
+
+  @override
+  String get changesPreviousSummary => 'Kakaretso ya pele';
 }

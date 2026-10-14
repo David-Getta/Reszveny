@@ -417,5 +417,9 @@
   "onboardBody3": "Paporit, portofolio anjeun jeung béwara harga bakal terus ngabéjaan anjeun. Analisis anjeun tetep aya dina alat anjeun, siap dibuka deui.",
   "onboardNext": "Salajengna",
   "onboardStart": "Mimitian",
-  "onboardSkip": "Liwat"
+  "onboardSkip": "Liwat",
+  "changesTitle": "Ti saprak analisis saméméhna ({date})",
+  "changesPrice": "Harga",
+  "changesNoMajor": "Prospékna teu robah sacara signifikan.",
+  "changesPreviousSummary": "Ringkesan saméméhna"
 }

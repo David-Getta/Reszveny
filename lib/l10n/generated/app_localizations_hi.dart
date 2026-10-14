@@ -1529,4 +1529,18 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'छोड़ें';
+
+  @override
+  String changesTitle(String date) {
+    return 'पिछले विश्लेषण के बाद से ($date)';
+  }
+
+  @override
+  String get changesPrice => 'कीमत';
+
+  @override
+  String get changesNoMajor => 'दृष्टिकोण में कोई खास बदलाव नहीं आया है।';
+
+  @override
+  String get changesPreviousSummary => 'पिछला सारांश';
 }

@@ -1534,4 +1534,18 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Darbi';
+
+  @override
+  String changesTitle(String date) {
+    return 'Xiinxala duraa as ka ka\'ee ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Gatii';
+
+  @override
+  String get changesNoMajor => 'Ilaalchi baay\'ee hin jijjiiramne.';
+
+  @override
+  String get changesPreviousSummary => 'Cuunfaa duraa';
 }

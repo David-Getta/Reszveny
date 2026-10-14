@@ -1534,4 +1534,18 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Bika';
+
+  @override
+  String changesTitle(String date) {
+    return 'Banda analyse ya ntete ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Ntalu';
+
+  @override
+  String get changesNoMajor => 'Mambu ya ke na ntwala ke sobaka mingi ve.';
+
+  @override
+  String get changesPreviousSummary => 'Nsukudulu ya ntete';
 }

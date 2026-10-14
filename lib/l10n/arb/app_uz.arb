@@ -417,5 +417,9 @@
   "onboardBody3": "Sevimlilar, portfelingiz va narx bildirishnomalari sizni voqealardan boxabar qilib turadi. Tahlillaringiz qurilmangizda saqlanadi, ularni istalgan vaqtda qayta ochishingiz mumkin.",
   "onboardNext": "Keyingi",
   "onboardStart": "Boshlash",
-  "onboardSkip": "Oʻtkazib yuborish"
+  "onboardSkip": "Oʻtkazib yuborish",
+  "changesTitle": "Oldingi tahlildan beri ({date})",
+  "changesPrice": "Narx",
+  "changesNoMajor": "Istiqbol sezilarli darajada oʻzgarmadi.",
+  "changesPreviousSummary": "Oldingi xulosa"
 }

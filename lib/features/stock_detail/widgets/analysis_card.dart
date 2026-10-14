@@ -17,6 +17,7 @@ import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
 import 'outlook_view.dart';
+import 'report_changes.dart';
 import 'section_card.dart';
 import 'share_card.dart';
 import '../../../widgets/collapsible.dart';
@@ -212,6 +213,10 @@ class _AnalysisCardState extends State<AnalysisCard> {
                       style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
                     ),
                   ),
+                if ((store.changes(symbol), store.previous(symbol)) case (final diff?, final prev?)) ...[
+                  const SizedBox(height: 12),
+                  ReportChangesCard(diff: diff, previous: prev, fmt: fmt),
+                ],
                 if (report.outlook?.marketMood case final mood?) ...[
                   const SizedBox(height: 12),
                   MarketMoodBar(mood: mood, reason: report.outlook!.marketMoodReason),

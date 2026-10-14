@@ -1524,4 +1524,18 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'تېر یې کړئ';
+
+  @override
+  String changesTitle(String date) {
+    return 'له تېر تحلیل راهیسې ($date)';
+  }
+
+  @override
+  String get changesPrice => 'بیه';
+
+  @override
+  String get changesNoMajor => 'په لیدلوري کې د پام وړ بدلون نه دی راغلی.';
+
+  @override
+  String get changesPreviousSummary => 'پخوانی لنډیز';
 }

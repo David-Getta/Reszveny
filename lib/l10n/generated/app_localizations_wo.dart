@@ -1526,4 +1526,18 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Tëb';
+
+  @override
+  String changesTitle(String date) {
+    return 'Li dale ci saytu bi jiitu ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Njëg';
+
+  @override
+  String get changesNoMajor => 'Li ñuy séentu soppikuwul lu bari.';
+
+  @override
+  String get changesPreviousSummary => 'Gàttal bi jiitu';
 }

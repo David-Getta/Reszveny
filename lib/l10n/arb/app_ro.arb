@@ -417,5 +417,9 @@
   "onboardBody3": "Favoritele, portofoliul tău și alertele de preț te țin la curent. Analizele tale rămân pe dispozitivul tău, gata să fie redeschise.",
   "onboardNext": "Înainte",
   "onboardStart": "Să începem",
-  "onboardSkip": "Omite"
+  "onboardSkip": "Omite",
+  "changesTitle": "De la analiza anterioară ({date})",
+  "changesPrice": "Preț",
+  "changesNoMajor": "Perspectivele nu s-au schimbat semnificativ.",
+  "changesPreviousSummary": "Rezumatul anterior"
 }

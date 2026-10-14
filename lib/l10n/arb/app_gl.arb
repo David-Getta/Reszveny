@@ -417,5 +417,9 @@
   "onboardBody3": "Os favoritos, a túa carteira e as alertas de prezo mantéñente ao tanto. As túas análises quedan no teu dispositivo, listas para volver abrilas.",
   "onboardNext": "Seguinte",
   "onboardStart": "Comezar",
-  "onboardSkip": "Omitir"
+  "onboardSkip": "Omitir",
+  "changesTitle": "Desde a análise anterior ({date})",
+  "changesPrice": "Prezo",
+  "changesNoMajor": "As perspectivas non cambiaron de xeito significativo.",
+  "changesPreviousSummary": "Resumo anterior"
 }

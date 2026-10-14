@@ -417,5 +417,9 @@
   "onboardBody3": "Kegemaran, portfolio anda dan amaran harga memastikan anda sentiasa dimaklumkan. Analisis anda kekal pada peranti anda, sedia untuk dibuka semula.",
   "onboardNext": "Seterusnya",
   "onboardStart": "Mulakan",
-  "onboardSkip": "Langkau"
+  "onboardSkip": "Langkau",
+  "changesTitle": "Sejak analisis sebelumnya ({date})",
+  "changesPrice": "Harga",
+  "changesNoMajor": "Tinjauan tidak berubah dengan ketara.",
+  "changesPreviousSummary": "Ringkasan sebelumnya"
 }

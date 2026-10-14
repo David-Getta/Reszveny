@@ -1530,4 +1530,18 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Hĩtũka';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kuuma ũthuthuria wa mbere ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Thogora';
+
+  @override
+  String get changesNoMajor => 'Maũndũ marĩa marorirwo matigarũrũkĩte mũno.';
+
+  @override
+  String get changesPreviousSummary => 'Mũhĩnanĩrio wa mbere';
 }

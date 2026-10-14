@@ -1528,4 +1528,18 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'رد شدن';
+
+  @override
+  String changesTitle(String date) {
+    return 'از تحلیل قبلی تاکنون ($date)';
+  }
+
+  @override
+  String get changesPrice => 'قیمت';
+
+  @override
+  String get changesNoMajor => 'چشم‌انداز تغییر چشمگیری نکرده است.';
+
+  @override
+  String get changesPreviousSummary => 'خلاصهٔ قبلی';
 }

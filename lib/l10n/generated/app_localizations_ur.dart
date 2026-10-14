@@ -1529,4 +1529,18 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get onboardSkip => 'چھوڑیں';
+
+  @override
+  String changesTitle(String date) {
+    return 'پچھلے تجزیے کے بعد سے ($date)';
+  }
+
+  @override
+  String get changesPrice => 'قیمت';
+
+  @override
+  String get changesNoMajor => 'امکانات میں کوئی خاص تبدیلی نہیں آئی۔';
+
+  @override
+  String get changesPreviousSummary => 'پچھلا خلاصہ';
 }

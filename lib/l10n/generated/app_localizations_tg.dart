@@ -1531,4 +1531,18 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Гузаштан';
+
+  @override
+  String changesTitle(String date) {
+    return 'Аз таҳлили пешина инҷониб ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Нарх';
+
+  @override
+  String get changesNoMajor => 'Дурнамо ба таври назаррас тағйир наёфтааст.';
+
+  @override
+  String get changesPreviousSummary => 'Хулосаи пешина';
 }

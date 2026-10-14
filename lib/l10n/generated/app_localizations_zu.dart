@@ -1536,4 +1536,18 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Yeqa';
+
+  @override
+  String changesTitle(String date) {
+    return 'Kusukela ohlaziyweni lwangaphambilini ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Intengo';
+
+  @override
+  String get changesNoMajor => 'Okulindelekile akushintshanga kakhulu.';
+
+  @override
+  String get changesPreviousSummary => 'Isifinyezo sangaphambilini';
 }

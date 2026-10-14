@@ -1534,4 +1534,19 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Pular';
+
+  @override
+  String changesTitle(String date) {
+    return 'Desde a análise anterior ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Preço';
+
+  @override
+  String get changesNoMajor =>
+      'As perspectivas não mudaram significativamente.';
+
+  @override
+  String get changesPreviousSummary => 'Resumo anterior';
 }

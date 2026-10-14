@@ -417,5 +417,9 @@
   "onboardBody3": "Favourites, your portfolio and price alerts go dey tell you wetin dey happen. Your analyses go stay for your device, ready make you open dem again.",
   "onboardNext": "Next",
   "onboardStart": "Make we start",
-  "onboardSkip": "Skip am"
+  "onboardSkip": "Skip am",
+  "changesTitle": "Since di last analysis ({date})",
+  "changesPrice": "Price",
+  "changesNoMajor": "Notin big don change for di outlook.",
+  "changesPreviousSummary": "Last summary"
 }

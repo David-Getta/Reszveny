@@ -1510,4 +1510,18 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ข้าม';
+
+  @override
+  String changesTitle(String date) {
+    return 'ตั้งแต่การวิเคราะห์ครั้งก่อน ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ราคา';
+
+  @override
+  String get changesNoMajor => 'แนวโน้มไม่ได้เปลี่ยนแปลงอย่างมีนัยสำคัญ';
+
+  @override
+  String get changesPreviousSummary => 'สรุปครั้งก่อน';
 }

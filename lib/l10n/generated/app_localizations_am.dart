@@ -1505,4 +1505,18 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get onboardSkip => 'ዝለል';
+
+  @override
+  String changesTitle(String date) {
+    return 'ካለፈው ትንተና ወዲህ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'ዋጋ';
+
+  @override
+  String get changesNoMajor => 'ትንበያው በጉልህ አልተለወጠም።';
+
+  @override
+  String get changesPreviousSummary => 'የቀድሞው ማጠቃለያ';
 }

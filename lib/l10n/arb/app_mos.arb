@@ -417,5 +417,9 @@
   "onboardBody3": "Nong-n-yɩɩda, y portfey la koosg gũusgo kõta yãmb kibay. Y vɛɛsgã kẽnd y masĩn pʋgẽ, n segd tɩ y le pak-ba.",
   "onboardNext": "Rẽnda",
   "onboardStart": "D sɩnge",
-  "onboardSkip": "Bas-a"
+  "onboardSkip": "Bas-a",
+  "changesTitle": "Vɛɛsg sẽn deng-a poorẽ ({date})",
+  "changesPrice": "Koosgo",
+  "changesNoMajor": "Bũmb pa toeeg wʋsg ye.",
+  "changesPreviousSummary": "Vɛɛsg sẽn deng-a koe-bilfu"
 }

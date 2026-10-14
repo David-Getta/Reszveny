@@ -1533,4 +1533,18 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Langkau';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sejak analisis sebelumnya ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Harga';
+
+  @override
+  String get changesNoMajor => 'Tinjauan tidak berubah dengan ketara.';
+
+  @override
+  String get changesPreviousSummary => 'Ringkasan sebelumnya';
 }

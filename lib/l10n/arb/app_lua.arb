@@ -417,5 +417,9 @@
   "onboardBody3": "Biudi musue, portefeuille webe ne alerte ya mushinga bidi bikumanyisha. Makonkonona ebe adi ashala mu tshiamu tshiebe, alongolola bua kuabulula kabidi.",
   "onboardNext": "Bidi bilonda",
   "onboardStart": "Tuanjile",
-  "onboardSkip": "Pita"
+  "onboardSkip": "Pita",
+  "changesTitle": "Kubangila ku dikonkonona dia kumpala ({date})",
+  "changesPrice": "Mushinga",
+  "changesNoMajor": "Malu adi alua kaena ashintuluke bikole to.",
+  "changesPreviousSummary": "Tshikoso tshia kumpala"
 }

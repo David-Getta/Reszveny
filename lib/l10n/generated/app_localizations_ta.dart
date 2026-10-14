@@ -1537,4 +1537,18 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get onboardSkip => 'தவிர்';
+
+  @override
+  String changesTitle(String date) {
+    return 'முந்தைய பகுப்பாய்விலிருந்து ($date)';
+  }
+
+  @override
+  String get changesPrice => 'விலை';
+
+  @override
+  String get changesNoMajor => 'எதிர்பார்ப்பில் குறிப்பிடத்தக்க மாற்றம் இல்லை.';
+
+  @override
+  String get changesPreviousSummary => 'முந்தைய சுருக்கம்';
 }

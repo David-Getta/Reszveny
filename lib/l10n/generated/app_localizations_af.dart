@@ -1532,4 +1532,19 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Slaan oor';
+
+  @override
+  String changesTitle(String date) {
+    return 'Sedert die vorige ontleding ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Prys';
+
+  @override
+  String get changesNoMajor =>
+      'Die vooruitsigte het nie wesenlik verander nie.';
+
+  @override
+  String get changesPreviousSummary => 'Vorige opsomming';
 }

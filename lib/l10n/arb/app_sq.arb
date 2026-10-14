@@ -417,5 +417,9 @@
   "onboardBody3": "Të preferuarat, portofoli juaj dhe alarmet e çmimit ju mbajnë të informuar. Analizat tuaja mbeten në pajisjen tuaj, gati për t’u rihapur.",
   "onboardNext": "Tjetër",
   "onboardStart": "Fillo",
-  "onboardSkip": "Kapërce"
+  "onboardSkip": "Kapërce",
+  "changesTitle": "Që nga analiza e mëparshme ({date})",
+  "changesPrice": "Çmimi",
+  "changesNoMajor": "Perspektiva nuk ka ndryshuar ndjeshëm.",
+  "changesPreviousSummary": "Përmbledhja e mëparshme"
 }

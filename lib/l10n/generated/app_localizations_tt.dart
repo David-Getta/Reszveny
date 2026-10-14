@@ -1526,4 +1526,18 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Калдыру';
+
+  @override
+  String changesTitle(String date) {
+    return 'Алдагы анализдан бирле ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Бәя';
+
+  @override
+  String get changesNoMajor => 'Фаразлар җитди үзгәрмәде.';
+
+  @override
+  String get changesPreviousSummary => 'Алдагы йомгак';
 }

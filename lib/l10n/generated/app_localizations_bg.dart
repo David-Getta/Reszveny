@@ -1530,4 +1530,18 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get onboardSkip => 'Пропускане';
+
+  @override
+  String changesTitle(String date) {
+    return 'След предишния анализ ($date)';
+  }
+
+  @override
+  String get changesPrice => 'Цена';
+
+  @override
+  String get changesNoMajor => 'Перспективите не са се променили съществено.';
+
+  @override
+  String get changesPreviousSummary => 'Предишно резюме';
 }

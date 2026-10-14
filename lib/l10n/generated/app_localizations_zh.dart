@@ -1469,6 +1469,20 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get onboardSkip => '跳过';
+
+  @override
+  String changesTitle(String date) {
+    return '自上次分析以来（$date）';
+  }
+
+  @override
+  String get changesPrice => '股价';
+
+  @override
+  String get changesNoMajor => '前景没有实质性变化。';
+
+  @override
+  String get changesPreviousSummary => '上次分析摘要';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -2934,4 +2948,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get onboardSkip => '略過';
+
+  @override
+  String changesTitle(String date) {
+    return '自上次分析以來（$date）';
+  }
+
+  @override
+  String get changesPrice => '股價';
+
+  @override
+  String get changesNoMajor => '前景沒有實質變化。';
+
+  @override
+  String get changesPreviousSummary => '上次分析摘要';
 }

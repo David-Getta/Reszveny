@@ -417,5 +417,9 @@
   "onboardBody3": "Favoriter, din portfölj och kurslarm håller dig uppdaterad. Dina analyser sparas på din enhet, redo att öppnas igen.",
   "onboardNext": "Nästa",
   "onboardStart": "Kom igång",
-  "onboardSkip": "Hoppa över"
+  "onboardSkip": "Hoppa över",
+  "changesTitle": "Sedan föregående analys ({date})",
+  "changesPrice": "Kurs",
+  "changesNoMajor": "Utsikterna har inte förändrats nämnvärt.",
+  "changesPreviousSummary": "Föregående sammanfattning"
 }

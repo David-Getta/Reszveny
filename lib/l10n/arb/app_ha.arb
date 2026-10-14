@@ -417,5 +417,9 @@
   "onboardBody3": "Abubuwan da aka fi so, jakar hannun jarinka da faɗakarwar farashi za su sanar da kai. Nazarinka suna nan a na'urarka, a shirye don ka sake buɗe su.",
   "onboardNext": "Na gaba",
   "onboardStart": "Mu fara",
-  "onboardSkip": "Tsallake"
+  "onboardSkip": "Tsallake",
+  "changesTitle": "Tun bayan nazarin baya ({date})",
+  "changesPrice": "Farashi",
+  "changesNoMajor": "Hasashen bai canza sosai ba.",
+  "changesPreviousSummary": "Taƙaitaccen nazarin baya"
 }
