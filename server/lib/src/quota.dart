@@ -44,6 +44,26 @@ class Quota {
     return true;
   }
 
+  /// Visszatérítés / visszavonás: előfizetésnél az időszak azonnal véget ér,
+  /// csomagnál a hozzá tartozó extra elemzések (amennyi még megvan) elvesznek.
+  void revoke(Entitlement e, String productId) {
+    final plan = PlanSpec.byProductId(productId);
+    if (plan != null) {
+      if (e.tier == plan.tier) {
+        e
+          ..tier = null
+          ..periodEnd = store.clock();
+        store.save(e);
+      }
+      return;
+    }
+    final pack = PlanSpec.packs[productId];
+    if (pack != null) {
+      e.extra = (e.extra - pack).clamp(0, e.extra);
+      store.save(e);
+    }
+  }
+
   /// Vásárlás jóváírása: előfizetés → új időszak; csomag → extra elemzések.
   bool apply(Entitlement e, String productId) {
     final plan = PlanSpec.byProductId(productId);

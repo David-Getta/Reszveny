@@ -3,8 +3,22 @@ import 'store_apis.dart';
 /// Vásárlás-ellenőrzés a bolt felé: fejlesztői módban mindent elfogad, éles
 /// módban az App Store Server API-t és a Play Developer API-t kérdezi.
 abstract interface class PurchaseVerifier {
-  /// Visszaadja a tranzakció azonosítóját, ha a vásárlás érvényes; `null` ha nem.
-  Future<String?> verify({required String platform, required String productId, required String verificationData});
+  /// Az ellenőrzött vásárlás, ha érvényes; `null`, ha nem.
+  Future<VerifiedPurchase?> verify({
+    required String platform,
+    required String productId,
+    required String verificationData,
+  });
+}
+
+/// Egy ellenőrzött vásárlás: a tranzakció (időszakonként új) azonosítója, és a
+/// vásárlást a későbbi bolti értesítésekhez kötő kulcs (App Store: eredeti
+/// tranzakció; Google Play: vásárlási token).
+class VerifiedPurchase {
+  const VerifiedPurchase(this.transactionId, {this.linkKey});
+
+  final String transactionId;
+  final String? linkKey;
 }
 
 /// Fejlesztéshez: elfogad, a tranzakció-azonosító a bizonylat hash-e.
@@ -12,13 +26,13 @@ class DevVerifier implements PurchaseVerifier {
   const DevVerifier();
 
   @override
-  Future<String?> verify({
+  Future<VerifiedPurchase?> verify({
     required String platform,
     required String productId,
     required String verificationData,
   }) async {
     if (verificationData.isEmpty) return null;
-    return 'dev-${verificationData.hashCode.toRadixString(16)}';
+    return VerifiedPurchase('dev-${verificationData.hashCode.toRadixString(16)}');
   }
 }
 
@@ -34,7 +48,7 @@ class StoreVerifier implements PurchaseVerifier {
   final GooglePlayApi? google;
 
   @override
-  Future<String?> verify({
+  Future<VerifiedPurchase?> verify({
     required String platform,
     required String productId,
     required String verificationData,

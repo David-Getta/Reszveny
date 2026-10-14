@@ -15,6 +15,7 @@ import 'plans.dart';
 import 'purchase_verifier.dart';
 import 'quota.dart';
 import 'shares.dart';
+import 'store_apis.dart';
 import 'site_pages.dart';
 import 'stripe.dart';
 import 'telemetry.dart';
@@ -65,6 +66,7 @@ class Api {
     this.referralMax = 10,
     this.adminToken = '',
     this.downloadBaseUrl = 'https://github.com/David-Getta/Reszveny/releases/latest/download/',
+    this.googleNotificationToken = '',
   }) : _client = client ?? http.Client(),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store),
@@ -76,6 +78,10 @@ class Api {
 
   /// A nyitóoldal letöltés-gombjainak alapcíme (a fájlnév hozzáfűzve).
   final String downloadBaseUrl;
+
+  /// A Google Play valós idejű értesítéseinek (Pub/Sub push) titka: a push-cím
+  /// `?token=` paramétere. Üresen az értesítési végpont nem érhető el.
+  final String googleNotificationToken;
 
   /// Névtelen statisztika és hibajelentések (az app hozzájárulással küldi).
   final TelemetryStore telemetry;
@@ -149,6 +155,8 @@ class Api {
       ..post('/v1/auth/anonymous', _auth)
       ..get('/v1/me', _me)
       ..post('/v1/purchases/verify', _verify)
+      ..post('/v1/stores/apple/notifications', _appleNotification)
+      ..post('/v1/stores/google/notifications', _googleNotification)
       ..post('/v1/analyze', _analyze)
       ..post('/v1/anthropic/v1/messages', _anthropicPassthrough)
       ..get('/v1/market/<path|.*>', _market)
@@ -174,7 +182,7 @@ class Api {
       ..get('/healthz', (Request r) => Response.ok('ok'));
     return const Pipeline()
         .addMiddleware(_cors())
-        .addMiddleware(logRequests())
+        .addMiddleware(_logRequests())
         .addMiddleware(_inviteGate())
         .addHandler(router.call);
   }
@@ -212,6 +220,19 @@ class Api {
 
   Response _error(int status, String code, [String? message]) =>
       _json({'error': code, 'message': ?message}, status: status);
+
+  /// Kérésnapló: idő, metódus, állapot, útvonal – a lekérdezési paraméterek
+  /// nélkül, hogy titkos tokenek és keresett részvények ne kerüljenek a naplóba.
+  static Middleware _logRequests() =>
+      (inner) => (req) async {
+        final watch = Stopwatch()..start();
+        final res = await inner(req);
+        stdout.writeln(
+          '${DateTime.now().toUtc().toIso8601String()}  ${watch.elapsed}  ${req.method.padRight(7)} '
+          '[${res.statusCode}] /${req.url.path}',
+        );
+        return res;
+      };
 
   static Middleware _cors() =>
       (inner) => (req) async {
@@ -411,10 +432,12 @@ class Api {
     return _json({'ok': true});
   }
 
+  bool _isAdmin(String? key) => _secretEquals(key, adminToken);
+
   /// Állandó idejű összehasonlítás (a kulcs ne legyen kitalálható időméréssel).
-  bool _isAdmin(String? key) {
-    if (adminToken.isEmpty || key == null) return false;
-    final a = Store.hashToken(key), b = Store.hashToken(adminToken);
+  static bool _secretEquals(String? key, String secret) {
+    if (secret.isEmpty || key == null) return false;
+    final a = Store.hashToken(key), b = Store.hashToken(secret);
     var diff = 0;
     for (var i = 0; i < a.length; i++) {
       diff |= a.codeUnitAt(i) ^ b.codeUnitAt(i);
@@ -678,7 +701,7 @@ class Api {
     if (PlanSpec.byProductId(productId) == null && !PlanSpec.packs.containsKey(productId)) {
       return _error(400, 'unknown_product');
     }
-    final String? txn;
+    final VerifiedPurchase? txn;
     try {
       txn = await verifier.verify(platform: platform, productId: productId, verificationData: data);
     } catch (e) {
@@ -688,9 +711,133 @@ class Api {
     }
     if (txn == null) return _error(402, 'invalid_purchase');
     final e = store.entitlement(uid);
-    final fresh = store.recordPurchase(userId: uid, productId: productId, platform: platform, transactionId: txn);
+    final fresh = store.recordPurchase(
+      userId: uid,
+      productId: productId,
+      platform: platform,
+      transactionId: txn.transactionId,
+      linkKey: txn.linkKey,
+    );
     if (fresh) quota.apply(e, productId);
     return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': fresh});
+  }
+
+  // ---- Bolti értesítések (megújítás, visszatérítés) ----
+
+  StoreVerifier? get _stores => verifier is StoreVerifier ? verifier as StoreVerifier : null;
+
+  /// Egy bolti esemény a vásárlás gazdájának fiókján: megújításnál új időszak
+  /// (tranzakciónként egyszer), visszavonásnál a keret elvétele (egyszer).
+  void _storeEvent({
+    required String platform,
+    required String linkKey,
+    required String productId,
+    VerifiedPurchase? renewed,
+    String? revokedTransaction,
+  }) {
+    final uid = store.userForPurchaseLink(platform, linkKey);
+    if (uid == null) return;
+    final e = store.entitlement(uid);
+    if (revokedTransaction != null) {
+      final first = store.recordPurchase(
+        userId: uid,
+        productId: productId,
+        platform: platform,
+        transactionId: 'revoked:$revokedTransaction',
+      );
+      if (first) quota.revoke(e, productId);
+      return;
+    }
+    if (renewed == null) return;
+    final fresh = store.recordPurchase(
+      userId: uid,
+      productId: productId,
+      platform: platform,
+      transactionId: renewed.transactionId,
+      linkKey: renewed.linkKey,
+    );
+    if (fresh) quota.apply(e, productId);
+  }
+
+  /// App Store Server Notifications V2 (`{signedPayload}`). Az értesítés tartalmát
+  /// nem hisszük el: a tranzakciót az Apple-től kérdezzük vissza.
+  Future<Response> _appleNotification(Request r) async {
+    final apple = _stores?.apple;
+    if (apple == null) return Response.notFound('not found');
+    final note = jwsPayload((await _body(r))['signedPayload'] as String? ?? '');
+    final data = note?['data'];
+    final claimed = jwsPayload(data is Map ? data['signedTransactionInfo'] as String? ?? '' : '');
+    final id = claimed?['transactionId']?.toString();
+    if (id == null) return _json({'ok': true, 'ignored': true});
+    try {
+      final info = await apple.transaction(id);
+      if (info == null) return _json({'ok': true, 'ignored': true});
+      final productId = '${info['productId']}';
+      final link = '${info['originalTransactionId'] ?? info['transactionId']}';
+      if (info['revocationDate'] != null) {
+        _storeEvent(platform: 'app_store', linkKey: link, productId: productId, revokedTransaction: id);
+      } else if (apple.accepts(info, productId)) {
+        _storeEvent(
+          platform: 'app_store',
+          linkKey: link,
+          productId: productId,
+          renewed: VerifiedPurchase('${info['transactionId']}', linkKey: link),
+        );
+      }
+      return _json({'ok': true});
+    } on StoreApiException catch (e) {
+      // Az Apple később újraküldi.
+      stderr.writeln('App Store értesítés: $e');
+      return _error(502, 'store_unavailable');
+    }
+  }
+
+  /// Google Play valós idejű értesítések (Pub/Sub push). A tokent a Play
+  /// Developer API-tól kérdezzük vissza; a push-cím titkos `token` paramétert visz.
+  Future<Response> _googleNotification(Request r) async {
+    final google = _stores?.google;
+    if (google == null || googleNotificationToken.isEmpty) return Response.notFound('not found');
+    if (!_secretEquals(r.url.queryParameters['token'], googleNotificationToken)) return _error(403, 'forbidden');
+    final message = (await _body(r))['message'];
+    Map<String, dynamic>? note;
+    try {
+      final data = message is Map ? message['data'] as String? : null;
+      note = (jsonDecode(utf8.decode(base64Decode(data ?? ''))) as Map).cast<String, dynamic>();
+    } catch (_) {
+      return _json({'ok': true, 'ignored': true});
+    }
+    try {
+      final sub = note['subscriptionNotification'];
+      if (sub is Map) {
+        final token = '${sub['purchaseToken']}';
+        final productId = '${sub['subscriptionId']}';
+        final type = sub['notificationType'];
+        // 1 visszaállt, 2 megújult, 4 megvásárolva, 7 újraindítva → új időszak; 12 visszavonva.
+        if (const {1, 2, 4, 7}.contains(type)) {
+          final v = await google.verify(productId: productId, purchaseToken: token);
+          if (v != null) _storeEvent(platform: 'google_play', linkKey: token, productId: productId, renewed: v);
+        } else if (type == 12) {
+          _storeEvent(platform: 'google_play', linkKey: token, productId: productId, revokedTransaction: 'sub:$token');
+        }
+      }
+      final voided = note['voidedPurchaseNotification'];
+      if (voided is Map) {
+        final token = '${voided['purchaseToken']}';
+        final productId = store.productForPurchaseLink('google_play', token);
+        if (productId != null) {
+          _storeEvent(
+            platform: 'google_play',
+            linkKey: token,
+            productId: productId,
+            revokedTransaction: '${voided['orderId'] ?? token}',
+          );
+        }
+      }
+      return _json({'ok': true});
+    } on StoreApiException catch (e) {
+      stderr.writeln('Google Play értesítés: $e');
+      return _error(502, 'store_unavailable');
+    }
   }
 
   /// Elemzés: kvóta-ellenőrzés, továbbítás, siker után levonás és naplózás.

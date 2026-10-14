@@ -156,9 +156,16 @@ elfogad. Az éles ellenőrzés (`VERIFY_MODE=store`) kész:
   `GOOGLE_PACKAGE_NAME` (`hu.reszveny.reszveny`).
 - Ha a bolt épp nem érhető el, a szerver 502-t ad (`store_unavailable`), az app megtartja a
   bizonylatot, és később újra próbálja. Egy tranzakció csak egyszer írható jóvá.
-- Még hátra van: a bolti értesítések (App Store Server Notifications V2, Google Real-time
-  Developer Notifications) a megújítás, lemondás és visszatérítés automatikus követésére. Addig
-  a megújított időszakot az app a következő visszaállításkor / vásárlás-eseménykor küldi be.
+- **Bolti értesítések** (megújítás → új időszak, visszatérítés → a keret elvétele; mindkettő
+  tranzakciónként egyszer). A szerver az értesítés tartalmát nem hiszi el, a tranzakciót a
+  bolttól kérdezi vissza.
+  - App Store: App Store Connect → az app → *App Information → App Store Server Notifications* →
+    Production és Sandbox URL: `https://<szerver>/v1/stores/apple/notifications`, *Version 2*.
+  - Google Play: Google Cloud → Pub/Sub → téma (pl. `whatstock-rtdn`) → *push* előfizetés a
+    `https://<szerver>/v1/stores/google/notifications?token=<GOOGLE_RTDN_TOKEN>` címre; Play
+    Console → *Monetization setup → Real-time developer notifications* → a téma neve. A
+    `GOOGLE_RTDN_TOKEN` egy hosszú véletlen szöveg a Railway-változók között (a szerver naplója
+    a lekérdezési paramétereket nem írja ki).
 
 Az eredeti terv, viszonyításként:
 

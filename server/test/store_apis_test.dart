@@ -76,7 +76,7 @@ void main() {
         productId: 'whatstock.sub.pro',
         signedTransaction: fakeJws({'transactionId': '2000000123'}),
       );
-      expect(id, '2000000123');
+      expect((id?.transactionId, id?.linkKey), ('2000000123', '2000000123'));
       expect(calls.map((c) => c.url.toString()), [
         'https://api.storekit.itunes.apple.com/inApps/v1/transactions/2000000123',
         'https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/2000000123',
@@ -109,8 +109,10 @@ void main() {
       // Csomag (nem előfizetés): nincs lejárat.
       final pack = {'transactionId': '2000000124', 'bundleId': 'hu.reszveny.reszveny', 'productId': 'whatstock.pack.5'};
       expect(
-        await apple(pack)
-            .verify(productId: 'whatstock.pack.5', signedTransaction: fakeJws({'transactionId': '2000000124'})),
+        (await apple(pack).verify(
+          productId: 'whatstock.pack.5',
+          signedTransaction: fakeJws({'transactionId': '2000000124'}),
+        ))?.transactionId,
         '2000000124',
       );
       // Ismeretlen tranzakció, hibás bizonylat.
@@ -167,7 +169,8 @@ void main() {
 
     test('a service-account token, then the subscription by its purchase token', () async {
       final api = google(active);
-      expect(await api.verify(productId: 'whatstock.sub.pro', purchaseToken: 'tok/en'), 'GPA.1234-5678-9012-34567..1');
+      final v = await api.verify(productId: 'whatstock.sub.pro', purchaseToken: 'tok/en');
+      expect((v?.transactionId, v?.linkKey), ('GPA.1234-5678-9012-34567..1', 'tok/en'));
       expect(calls, hasLength(2));
       final form = Uri.splitQueryString(calls.first.body);
       expect(form['grant_type'], 'urn:ietf:params:oauth:grant-type:jwt-bearer');
@@ -203,7 +206,7 @@ void main() {
 
     test('analysis packs: purchased state and order id', () async {
       final api = google({'purchaseState': 0, 'orderId': 'GPA.9'});
-      expect(await api.verify(productId: 'whatstock.pack.5', purchaseToken: 't'), 'GPA.9');
+      expect((await api.verify(productId: 'whatstock.pack.5', purchaseToken: 't'))?.transactionId, 'GPA.9');
       expect(calls.last.url.path, endsWith('/purchases/products/whatstock.pack.5/tokens/t'));
       expect(await google({'purchaseState': 1}).verify(productId: 'whatstock.pack.5', purchaseToken: 't'), isNull);
     });

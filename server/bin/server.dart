@@ -20,7 +20,8 @@ import 'package:whatstock_server/src/stripe.dart';
 /// ADMIN_TOKEN: a `/admin` statisztika-oldal kulcsa (nélküle az oldal nem érhető el),
 /// DOWNLOAD_BASE_URL: a nyitóoldal letöltés-gombjainak alapcíme. Éles vásárlás-ellenőrzés
 /// (VERIFY_MODE=store): APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY (.p8 tartalma),
-/// APPLE_BUNDLE_ID, GOOGLE_SERVICE_ACCOUNT_JSON (a szolgáltatásfiók JSON-kulcsa), GOOGLE_PACKAGE_NAME.
+/// APPLE_BUNDLE_ID, GOOGLE_SERVICE_ACCOUNT_JSON (a szolgáltatásfiók JSON-kulcsa), GOOGLE_PACKAGE_NAME,
+/// GOOGLE_RTDN_TOKEN (a Play értesítések push-címének titkos `token` paramétere).
 Future<void> main() async {
   final env = Platform.environment;
   final anthropic = env['ANTHROPIC_API_KEY'] ?? '';
@@ -41,6 +42,7 @@ Future<void> main() async {
     referralBonus: int.tryParse(env['REFERRAL_BONUS'] ?? '') ?? 5,
     referralMax: int.tryParse(env['REFERRAL_MAX'] ?? '') ?? 10,
     adminToken: env['ADMIN_TOKEN'] ?? '',
+    googleNotificationToken: env['GOOGLE_RTDN_TOKEN'] ?? '',
     // A nyitóoldal letöltés-gombjai (alapból a GitHub legutóbbi kiadása).
     downloadBaseUrl: env['DOWNLOAD_BASE_URL'] ?? 'https://github.com/David-Getta/Reszveny/releases/latest/download/',
     store: store,

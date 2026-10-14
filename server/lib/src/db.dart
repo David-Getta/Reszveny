@@ -119,6 +119,10 @@ class Store {
       if (!cols.contains(c)) _db.execute('ALTER TABLE users ADD COLUMN $c TEXT');
     }
     _db.execute('CREATE UNIQUE INDEX IF NOT EXISTS users_email ON users(email)');
+    // A bolti értesítésekhez: melyik vásárlás (eredeti tranzakció / token) kié.
+    final pcols = _db.select('PRAGMA table_info(purchases)').map((r) => r['name'] as String).toSet();
+    if (!pcols.contains('link_key')) _db.execute('ALTER TABLE purchases ADD COLUMN link_key TEXT');
+    _db.execute('CREATE INDEX IF NOT EXISTS purchases_link ON purchases(platform, link_key)');
   }
 
   factory Store.open(String path) => Store(sqlite3.open(path));
@@ -348,6 +352,7 @@ class Store {
     required String productId,
     required String platform,
     String? transactionId,
+    String? linkKey,
   }) {
     if (transactionId != null) {
       final dup = _db.select('SELECT id FROM purchases WHERE platform = ? AND transaction_id = ?', [
@@ -357,10 +362,29 @@ class Store {
       if (dup.isNotEmpty) return false;
     }
     _db.execute(
-      'INSERT INTO purchases (user_id, product_id, platform, transaction_id, verified_at) VALUES (?, ?, ?, ?, ?)',
-      [userId, productId, platform, transactionId, clock().toUtc().toIso8601String()],
+      'INSERT INTO purchases (user_id, product_id, platform, transaction_id, link_key, verified_at) '
+      'VALUES (?, ?, ?, ?, ?, ?)',
+      [userId, productId, platform, transactionId, linkKey, clock().toUtc().toIso8601String()],
     );
     return true;
+  }
+
+  /// A bolti vásárlás terméke (az első, ezzel a kulccsal rögzített vásárlásé).
+  String? productForPurchaseLink(String platform, String linkKey) {
+    final rows = _db.select(
+      'SELECT product_id FROM purchases WHERE platform = ? AND link_key = ? ORDER BY id LIMIT 1',
+      [platform, linkKey],
+    );
+    return rows.isEmpty ? null : rows.first['product_id'] as String;
+  }
+
+  /// Kié a bolti vásárlás (az első, ezzel a kulccsal rögzített vásárlás gazdája).
+  String? userForPurchaseLink(String platform, String linkKey) {
+    final rows = _db.select('SELECT user_id FROM purchases WHERE platform = ? AND link_key = ? ORDER BY id LIMIT 1', [
+      platform,
+      linkKey,
+    ]);
+    return rows.isEmpty ? null : rows.first['user_id'] as String;
   }
 
   // ---- Ajánlói program ----

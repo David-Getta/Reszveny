@@ -4,6 +4,7 @@ import 'package:dart_jsonwebtoken/dart_jsonwebtoken.dart';
 import 'package:http/http.dart' as http;
 
 import 'plans.dart';
+import 'purchase_verifier.dart';
 
 /// Egy JWS / JWT középső részének (payload) dekódolása aláírás-ellenőrzés
 /// nélkül. Csak akkor bízunk meg benne, ha közvetlenül a bolttól (TLS-en át)
@@ -60,25 +61,36 @@ class AppleStoreApi {
     return _token!;
   }
 
-  /// A tranzakció azonosítója, ha a vásárlás érvényes; különben `null`.
-  Future<String?> verify({required String productId, required String signedTransaction}) async {
-    final claimed = jwsPayload(signedTransaction);
-    final id = claimed?['transactionId']?.toString();
-    if (id == null || !RegExp(r'^\d{1,32}$').hasMatch(id)) return null;
+  /// Az Apple szerinti tranzakció (a `signedTransactionInfo` tartalma), vagy
+  /// `null`, ha sem az éles, sem a sandbox környezet nem ismeri.
+  Future<Map<String, dynamic>?> transaction(String id) async {
+    if (!RegExp(r'^\d{1,32}$').hasMatch(id)) return null;
     for (final base in const [production, sandbox]) {
       final res = await _client
           .get(Uri.parse('$base/inApps/v1/transactions/$id'), headers: {'authorization': 'Bearer ${_bearer()}'})
           .timeout(const Duration(seconds: 20));
       if (res.statusCode == 404) continue;
       if (res.statusCode != 200) throw StoreApiException('apple_${res.statusCode}', res.body);
-      final info = jwsPayload((jsonDecode(res.body) as Map)['signedTransactionInfo'] as String? ?? '');
-      if (info == null) return null;
-      return _accept(info, productId) ? info['transactionId'].toString() : null;
+      return jwsPayload((jsonDecode(res.body) as Map)['signedTransactionInfo'] as String? ?? '');
     }
     return null;
   }
 
-  bool _accept(Map<String, dynamic> t, String productId) {
+  /// Az ellenőrzött vásárlás, ha érvényes; különben `null`. Az app által küldött
+  /// JWS-ből csak az azonosítót vesszük ki, a többit az Apple-től kérdezzük.
+  Future<VerifiedPurchase?> verify({required String productId, required String signedTransaction}) async {
+    final id = jwsPayload(signedTransaction)?['transactionId']?.toString();
+    if (id == null) return null;
+    final info = await transaction(id);
+    if (info == null || !accepts(info, productId)) return null;
+    return VerifiedPurchase(
+      info['transactionId'].toString(),
+      linkKey: (info['originalTransactionId'] ?? info['transactionId']).toString(),
+    );
+  }
+
+  /// Érvényes-e a tranzakció erre a termékre (app, termék, visszatérítés, lejárat).
+  bool accepts(Map<String, dynamic> t, String productId) {
     if (t['bundleId'] != bundleId || t['productId'] != productId) return false;
     if (t['revocationDate'] != null) return false;
     final expires = t['expiresDate'];
@@ -142,8 +154,9 @@ class GooglePlayApi {
     return _token!;
   }
 
-  /// A rendelés azonosítója, ha a vásárlás érvényes; különben `null`.
-  Future<String?> verify({required String productId, required String purchaseToken}) async {
+  /// Az ellenőrzött vásárlás (rendelés-azonosító, a token a kapcsolókulcs), ha
+  /// érvényes; különben `null`.
+  Future<VerifiedPurchase?> verify({required String productId, required String purchaseToken}) async {
     if (purchaseToken.isEmpty || purchaseToken.length > 4096) return null;
     final token = Uri.encodeComponent(purchaseToken);
     final isSubscription = PlanSpec.byProductId(productId) != null;
@@ -167,10 +180,11 @@ class GooglePlayApi {
       });
       if (!current) return null;
       // Megújításonként új rendelés-azonosító (GPA.…..0, …..1), így minden időszak egyszer írható jóvá.
-      return j['latestOrderId'] as String? ?? 'gp-$purchaseToken';
+      final order = j['latestOrderId'] as String? ?? 'gp-$purchaseToken';
+      return VerifiedPurchase(order, linkKey: purchaseToken);
     }
     if (j['purchaseState'] != 0) return null;
-    return j['orderId'] as String? ?? 'gp-$purchaseToken';
+    return VerifiedPurchase(j['orderId'] as String? ?? 'gp-$purchaseToken', linkKey: purchaseToken);
   }
 }
 
