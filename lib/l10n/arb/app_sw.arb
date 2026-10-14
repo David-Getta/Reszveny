@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Gawio la mwaka linalotarajiwa linategemea gawio lililolipwa katika miezi 12 iliyopita; malipo ya baadaye hayana uhakika.",
   "positionDividend": "Gawio: {amount} kwa mwaka",
   "chartAvgCost": "Wastani wako",
-  "chartAlertLevel": "Arifa"
+  "chartAlertLevel": "Arifa",
+  "marketsToday": "Masoko leo"
 }

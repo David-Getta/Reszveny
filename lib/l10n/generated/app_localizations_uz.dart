@@ -1685,4 +1685,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Bildirishnoma';
+
+  @override
+  String get marketsToday => 'Bugungi bozorlar';
 }

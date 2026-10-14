@@ -1689,4 +1689,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Maranduʼi';
+
+  @override
+  String get marketsToday => 'Merkádo ko árape';
 }

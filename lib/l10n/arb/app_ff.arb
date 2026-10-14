@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Geɗal nafoore hitaande njaŋngaaɗo ina tuugii e geɗal nafoore yoboraaɗe e lebbi 12 ɓennuɗi ɗii; njoboje garooje ngalaa hoolaare.",
   "positionDividend": "Geɗal nafoore: {amount} kala hitaande",
   "chartAvgCost": "Hakkunde maa",
-  "chartAlertLevel": "Tintinol"
+  "chartAlertLevel": "Tintinol",
+  "marketsToday": "Luumooji hannde"
 }

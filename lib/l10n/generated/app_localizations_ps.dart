@@ -1677,4 +1677,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'خبرتیا';
+
+  @override
+  String get marketsToday => 'د نن بازارونه';
 }

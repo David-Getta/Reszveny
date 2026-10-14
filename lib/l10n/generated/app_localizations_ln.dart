@@ -1691,4 +1691,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Likebisi';
+
+  @override
+  String get marketsToday => 'Mazando lɛlɔ';
 }

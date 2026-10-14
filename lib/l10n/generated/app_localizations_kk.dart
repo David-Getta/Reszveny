@@ -1683,4 +1683,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Ескерту';
+
+  @override
+  String get marketsToday => 'Нарықтар бүгін';
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Verwagte jaarlikse dividende is gebaseer op die dividende wat in die afgelope 12 maande betaal is; toekomstige betalings is nie gewaarborg nie.",
   "positionDividend": "Dividend: {amount} per jaar",
   "chartAvgCost": "Jou gem.",
-  "chartAlertLevel": "Waarskuwing"
+  "chartAlertLevel": "Waarskuwing",
+  "marketsToday": "Markte vandag"
 }

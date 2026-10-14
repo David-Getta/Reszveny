@@ -1683,4 +1683,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Pèngetan';
+
+  @override
+  String get marketsToday => 'Pasar dina iki';
 }

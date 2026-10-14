@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Pričakovane letne dividende temeljijo na dividendah, izplačanih v zadnjih 12 mesecih; prihodnja izplačila niso zagotovljena.",
   "positionDividend": "Dividenda: {amount} na leto",
   "chartAvgCost": "Vaša povpr.",
-  "chartAlertLevel": "Opozorilo"
+  "chartAlertLevel": "Opozorilo",
+  "marketsToday": "Trgi danes"
 }

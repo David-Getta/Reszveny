@@ -143,6 +143,11 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('home-events')), findsOneWidget);
+    // A piacok sávja is látszik (demóban nem nyitható meg).
+    expect(find.byKey(const ValueKey('home-markets')), findsOneWidget);
+    expect(find.text('S&P 500'), findsOneWidget);
+    expect(find.text('+0.42%'), findsOneWidget);
+    expect(tester.widget<InkWell>(find.byKey(const ValueKey('market-SPY'))).onTap, isNull);
     expect(find.text('Upcoming events'), findsOneWidget);
     final msft = find.byKey(ValueKey('event-MSFT-earnings-${_day(today.add(const Duration(days: 1)))}'));
     expect(msft, findsOneWidget);

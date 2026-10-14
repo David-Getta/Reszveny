@@ -459,5 +459,6 @@
   "portfolioDividendNote": "予想年間配当は過去12か月に支払われた配当に基づいています。将来の支払いは保証されません。",
   "positionDividend": "配当: 年間 {amount}",
   "chartAvgCost": "平均取得単価",
-  "chartAlertLevel": "アラート"
+  "chartAlertLevel": "アラート",
+  "marketsToday": "本日の市場"
 }

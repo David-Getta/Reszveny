@@ -1684,4 +1684,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'সতর্কতা';
+
+  @override
+  String get marketsToday => 'আজকের বাজার';
 }

@@ -1683,4 +1683,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alert';
+
+  @override
+  String get marketsToday => 'Market today';
 }

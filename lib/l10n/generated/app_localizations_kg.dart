@@ -1688,4 +1688,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Lukebisu';
+
+  @override
+  String get marketsToday => 'Mazandu unu';
 }

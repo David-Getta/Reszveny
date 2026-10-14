@@ -1689,4 +1689,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alerto';
+
+  @override
+  String get marketsToday => 'Mga merkado ngayon';
 }

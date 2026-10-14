@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividende ya mvula yina beto ke vingila me simbama na badividende yina bo futaka na bangonda 12 yina me luta; bafutu ya bilumbu ke kwisa kele ve ya kieleka.",
   "positionDividend": "Dividende: {amount} na mvula",
   "chartAvgCost": "Ntalu na nge",
-  "chartAlertLevel": "Lukebisu"
+  "chartAlertLevel": "Lukebisu",
+  "marketsToday": "Mazandu unu"
 }

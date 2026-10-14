@@ -459,5 +459,6 @@
   "portfolioDividendNote": "متوقع سالياني ڊيويڊنڊ گذريل 12 مهينن ۾ ادا ڪيل ڊيويڊنڊ تي ٻڌل آهي؛ مستقبل جي ادائگين جي ضمانت ناهي.",
   "positionDividend": "ڊيويڊنڊ: سالياني {amount}",
   "chartAvgCost": "توهان جي سراسري",
-  "chartAlertLevel": "الرٽ"
+  "chartAlertLevel": "الرٽ",
+  "marketsToday": "اڄ جون مارڪيٽون"
 }

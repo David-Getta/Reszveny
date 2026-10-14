@@ -1719,4 +1719,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Brīdinājums';
+
+  @override
+  String get marketsToday => 'Tirgi šodien';
 }

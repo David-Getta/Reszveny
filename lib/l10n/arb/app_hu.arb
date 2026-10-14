@@ -459,5 +459,6 @@
   "portfolioDividendNote": "A várható éves osztalék az elmúlt 12 hónapban kifizetett osztalékon alapul; a jövőbeli kifizetés nem garantált.",
   "positionDividend": "Osztalék: évi {amount}",
   "chartAvgCost": "Átlagárad",
-  "chartAlertLevel": "Riasztás"
+  "chartAlertLevel": "Riasztás",
+  "marketsToday": "Piacok ma"
 }

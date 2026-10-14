@@ -1685,4 +1685,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Эскертме';
+
+  @override
+  String get marketsToday => 'Рыноктор бүгүн';
 }

@@ -1681,4 +1681,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alɣu';
+
+  @override
+  String get marketsToday => 'Isuqen ass-a';
 }

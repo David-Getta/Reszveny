@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Očekivane godišnje dividende temelje se na dividendama isplaćenima u posljednjih 12 mjeseci; buduće isplate nisu zajamčene.",
   "positionDividend": "Dividenda: {amount} godišnje",
   "chartAvgCost": "Vaša prosj.",
-  "chartAlertLevel": "Obavijest"
+  "chartAlertLevel": "Obavijest",
+  "marketsToday": "Tržišta danas"
 }

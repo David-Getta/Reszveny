@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Ang inaasahang taunang dibidendo ay batay sa mga dibidendong ibinayad sa nakalipas na 12 buwan; hindi garantisado ang mga susunod na bayad.",
   "positionDividend": "Dibidendo: {amount} kada taon",
   "chartAvgCost": "Iyong avg.",
-  "chartAlertLevel": "Alerto"
+  "chartAlertLevel": "Alerto",
+  "marketsToday": "Mga merkado ngayon"
 }

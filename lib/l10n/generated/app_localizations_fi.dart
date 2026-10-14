@@ -1684,4 +1684,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Hälytys';
+
+  @override
+  String get marketsToday => 'Markkinat tänään';
 }

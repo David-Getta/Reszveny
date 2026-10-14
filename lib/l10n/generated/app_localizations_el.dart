@@ -1690,4 +1690,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Ειδοποίηση';
+
+  @override
+  String get marketsToday => 'Αγορές σήμερα';
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "تمه شوې کلنۍ د ونډې ګټه په تېرو 12 میاشتو کې پر ورکړل شوې ګټې ولاړه ده؛ راتلونکې ورکړې تضمین نه دي.",
   "positionDividend": "د ونډې ګټه: کلنۍ {amount}",
   "chartAvgCost": "ستاسو منځنی",
-  "chartAlertLevel": "خبرتیا"
+  "chartAlertLevel": "خبرتیا",
+  "marketsToday": "د نن بازارونه"
 }

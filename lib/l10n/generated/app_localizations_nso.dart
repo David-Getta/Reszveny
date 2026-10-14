@@ -1694,4 +1694,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Temošo';
+
+  @override
+  String get marketsToday => 'Mebaraka lehono';
 }

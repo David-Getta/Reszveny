@@ -1689,4 +1689,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'അലേർട്ട്';
+
+  @override
+  String get marketsToday => 'ഇന്നത്തെ വിപണികൾ';
 }

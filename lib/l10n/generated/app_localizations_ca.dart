@@ -1691,4 +1691,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alerta';
+
+  @override
+  String get marketsToday => 'Mercats avui';
 }

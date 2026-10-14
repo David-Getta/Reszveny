@@ -1670,4 +1670,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Gũusgo';
+
+  @override
+  String get marketsToday => 'Raaga rũnda';
 }

@@ -1692,4 +1692,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Tsebiso';
+
+  @override
+  String get marketsToday => 'Mebaraka kajeno';
 }

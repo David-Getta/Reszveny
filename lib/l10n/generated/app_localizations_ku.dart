@@ -1685,4 +1685,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Hişyarî';
+
+  @override
+  String get marketsToday => 'Bazar îro';
 }

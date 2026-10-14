@@ -1684,4 +1684,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Огоҳӣ';
+
+  @override
+  String get marketsToday => 'Бозорҳо имрӯз';
 }

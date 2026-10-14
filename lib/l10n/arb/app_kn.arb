@@ -459,5 +459,6 @@
   "portfolioDividendNote": "ನಿರೀಕ್ಷಿತ ವಾರ್ಷಿಕ ಡಿವಿಡೆಂಡ್ ಕಳೆದ 12 ತಿಂಗಳಲ್ಲಿ ಪಾವತಿಸಿದ ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಆಧರಿಸಿದೆ; ಭವಿಷ್ಯದ ಪಾವತಿಗಳಿಗೆ ಖಾತರಿ ಇಲ್ಲ.",
   "positionDividend": "ಡಿವಿಡೆಂಡ್: ವರ್ಷಕ್ಕೆ {amount}",
   "chartAvgCost": "ನಿಮ್ಮ ಸರಾಸರಿ",
-  "chartAlertLevel": "ಅಲರ್ಟ್"
+  "chartAlertLevel": "ಅಲರ್ಟ್",
+  "marketsToday": "ಇಂದಿನ ಮಾರುಕಟ್ಟೆಗಳು"
 }

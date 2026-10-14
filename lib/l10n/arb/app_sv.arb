@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Förväntad årlig utdelning baseras på utdelningarna under de senaste 12 månaderna; framtida utbetalningar är inte garanterade.",
   "positionDividend": "Utdelning: {amount} per år",
   "chartAvgCost": "Ditt snitt",
-  "chartAlertLevel": "Kurslarm"
+  "chartAlertLevel": "Kurslarm",
+  "marketsToday": "Marknader i dag"
 }

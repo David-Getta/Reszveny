@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividendele anuale estimate se bazează pe dividendele plătite în ultimele 12 luni; plățile viitoare nu sunt garantate.",
   "positionDividend": "Dividend: {amount} pe an",
   "chartAvgCost": "Media ta",
-  "chartAlertLevel": "Alertă"
+  "chartAlertLevel": "Alertă",
+  "marketsToday": "Piețele azi"
 }

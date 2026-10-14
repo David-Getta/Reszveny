@@ -1688,4 +1688,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Chiziviso';
+
+  @override
+  String get marketsToday => 'Misika nhasi';
 }

@@ -1688,4 +1688,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ಅಲರ್ಟ್';
+
+  @override
+  String get marketsToday => 'ಇಂದಿನ ಮಾರುಕಟ್ಟೆಗಳು';
 }

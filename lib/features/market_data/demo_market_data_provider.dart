@@ -171,8 +171,26 @@ class DemoMarketDataProvider extends MarketDataProvider {
   @override
   Future<StockQuote> quote(String symbol) async {
     await _wait();
-    _check(symbol);
     final now = DateTime.now();
+    // A „Piacok ma” sáv indexkövető ETF-jei (csak árfolyam, minta).
+    final market = switch (symbol) {
+      'SPY' => (668.40, 0.42),
+      'QQQ' => (601.15, 0.77),
+      'DIA' => (463.20, -0.18),
+      _ => null,
+    };
+    if (market case (final price, final pct)) {
+      final change = price * pct / (100 + pct);
+      return StockQuote(
+        symbol: symbol,
+        price: price,
+        change: change,
+        changePercent: pct,
+        previousClose: price - change,
+        timestamp: now,
+      );
+    }
+    _check(symbol);
     return switch (symbol) {
       'AAPL' => StockQuote(
         symbol: symbol,

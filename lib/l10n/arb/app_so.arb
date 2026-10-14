@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Qaybta faa'iidada sanadlaha ah ee la filayo waxay ku salaysan tahay qaybaha faa'iidada la bixiyay 12-kii bilood ee la soo dhaafay; lacag-bixinnada mustaqbalka lama dammaanad qaadayo.",
   "positionDividend": "Qaybta faa'iidada: {amount} sanadkii",
   "chartAvgCost": "Celceliskaaga",
-  "chartAlertLevel": "Digniin"
+  "chartAlertLevel": "Digniin",
+  "marketsToday": "Suuqyada maanta"
 }

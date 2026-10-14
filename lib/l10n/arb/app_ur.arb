@@ -459,5 +459,6 @@
   "portfolioDividendNote": "متوقع سالانہ ڈیویڈنڈ گزشتہ 12 ماہ میں ادا کیے گئے ڈیویڈنڈ پر مبنی ہے؛ مستقبل کی ادائیگیوں کی ضمانت نہیں۔",
   "positionDividend": "ڈیویڈنڈ: سالانہ {amount}",
   "chartAvgCost": "آپ کی اوسط",
-  "chartAlertLevel": "الرٹ"
+  "chartAlertLevel": "الرٹ",
+  "marketsToday": "آج کی مارکیٹیں"
 }

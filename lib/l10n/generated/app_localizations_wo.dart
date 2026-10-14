@@ -1678,4 +1678,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Artu';
+
+  @override
+  String get marketsToday => 'Marse yi tey';
 }

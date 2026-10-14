@@ -1678,4 +1678,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Ọkwa';
+
+  @override
+  String get marketsToday => 'Ahịa taa';
 }

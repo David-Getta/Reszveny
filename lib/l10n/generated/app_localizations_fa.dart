@@ -1681,4 +1681,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'هشدار';
+
+  @override
+  String get marketsToday => 'بازارها امروز';
 }

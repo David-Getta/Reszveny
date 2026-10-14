@@ -1692,4 +1692,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Okulabula';
+
+  @override
+  String get marketsToday => 'Obutale leero';
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "I-dividend yonyaka elindelekile isekelwe kuma-dividend akhokhwe ezinyangeni ezingu-12 ezedlule; izinkokhelo zesikhathi esizayo aziqinisekisiwe.",
   "positionDividend": "I-dividend: {amount} ngonyaka",
   "chartAvgCost": "Isilinganiso sakho",
-  "chartAlertLevel": "Isexwayiso"
+  "chartAlertLevel": "Isexwayiso",
+  "marketsToday": "Izimakethe namuhla"
 }

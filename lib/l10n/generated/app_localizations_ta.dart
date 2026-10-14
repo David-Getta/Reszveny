@@ -1691,4 +1691,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'எச்சரிக்கை';
+
+  @override
+  String get marketsToday => 'இன்றைய சந்தைகள்';
 }

@@ -1668,4 +1668,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ការជូនដំណឹង';
+
+  @override
+  String get marketsToday => 'ទីផ្សារថ្ងៃនេះ';
 }

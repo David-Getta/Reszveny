@@ -1677,4 +1677,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'الرٽ';
+
+  @override
+  String get marketsToday => 'اڄ جون مارڪيٽون';
 }

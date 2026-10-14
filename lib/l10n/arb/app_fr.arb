@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Les dividendes annuels attendus sont basés sur les dividendes versés au cours des 12 derniers mois ; les versements futurs ne sont pas garantis.",
   "positionDividend": "Dividende : {amount} par an",
   "chartAvgCost": "Votre PRU",
-  "chartAlertLevel": "Alerte"
+  "chartAlertLevel": "Alerte",
+  "marketsToday": "Marchés aujourd’hui"
 }

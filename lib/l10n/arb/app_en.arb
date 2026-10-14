@@ -1169,5 +1169,9 @@
   },
   "@chartAlertLevel": {
     "description": "Very short label on the price chart next to a price alert line, followed by the price."
+  },
+  "marketsToday": "Markets today",
+  "@marketsToday": {
+    "description": "Home screen section title: today's change of the main US stock indices (S&P 500, Nasdaq 100, Dow Jones)."
   }
 }

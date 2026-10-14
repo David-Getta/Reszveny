@@ -1683,4 +1683,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kurslarm';
+
+  @override
+  String get marketsToday => 'Marknader i dag';
 }

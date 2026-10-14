@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Els dividends anuals previstos es basen en els dividends pagats els darrers 12 mesos; els pagaments futurs no estan garantits.",
   "positionDividend": "Dividend: {amount} l’any",
   "chartAvgCost": "El teu mitjà",
-  "chartAlertLevel": "Alerta"
+  "chartAlertLevel": "Alerta",
+  "marketsToday": "Mercats avui"
 }

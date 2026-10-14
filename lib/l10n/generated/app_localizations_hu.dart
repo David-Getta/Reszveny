@@ -1688,4 +1688,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Riasztás';
+
+  @override
+  String get marketsToday => 'Piacok ma';
 }

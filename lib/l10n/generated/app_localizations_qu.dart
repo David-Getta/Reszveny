@@ -1693,4 +1693,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Willachiy';
+
+  @override
+  String get marketsToday => 'Kunan qhatukuna';
 }

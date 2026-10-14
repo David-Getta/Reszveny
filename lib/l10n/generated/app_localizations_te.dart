@@ -1688,4 +1688,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'హెచ్చరిక';
+
+  @override
+  String get marketsToday => 'ఈ రోజు మార్కెట్లు';
 }

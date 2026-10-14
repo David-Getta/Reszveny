@@ -1685,4 +1685,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ئاگاھلاندۇرۇش';
+
+  @override
+  String get marketsToday => 'بۈگۈنكى بازارلار';
 }

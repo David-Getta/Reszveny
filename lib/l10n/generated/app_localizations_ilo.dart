@@ -1697,4 +1697,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alerto';
+
+  @override
+  String get marketsToday => 'Dagiti merkado ita nga aldaw';
 }

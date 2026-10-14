@@ -1652,4 +1652,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'መጠንቀቕታ';
+
+  @override
+  String get marketsToday => 'ዕዳጋታት ሎሚ';
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "প্রত্যাশিত বার্ষিক ডিভিডেন্ড গত 12 মাসে পরিশোধিত ডিভিডেন্ডের ভিত্তিতে হিসাব করা হয়; ভবিষ্যতের পরিশোধ নিশ্চিত নয়।",
   "positionDividend": "ডিভিডেন্ড: বছরে {amount}",
   "chartAvgCost": "আপনার গড়",
-  "chartAlertLevel": "সতর্কতা"
+  "chartAlertLevel": "সতর্কতা",
+  "marketsToday": "আজকের বাজার"
 }

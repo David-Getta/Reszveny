@@ -1682,4 +1682,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kɔkɔbɔ';
+
+  @override
+  String get marketsToday => 'Dwa ahorow ɛnnɛ';
 }

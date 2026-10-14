@@ -1683,4 +1683,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kĩmenyithia';
+
+  @override
+  String get marketsToday => 'Thoko ũmũthĩ';
 }

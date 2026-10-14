@@ -1689,4 +1689,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Chidziwitso';
+
+  @override
+  String get marketsToday => 'Misika lero';
 }

@@ -1662,4 +1662,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'แจ้งเตือน';
+
+  @override
+  String get marketsToday => 'ตลาดวันนี้';
 }

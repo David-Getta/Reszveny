@@ -1684,4 +1684,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Сэрэмжлүүлэг';
+
+  @override
+  String get marketsToday => 'Өнөөдрийн зах зээл';
 }

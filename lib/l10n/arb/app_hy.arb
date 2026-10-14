@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Ակնկալվող տարեկան շահաբաժինները հիմնված են վերջին 12 ամսում վճարված շահաբաժինների վրա, իսկ ապագա վճարումները երաշխավորված չեն։",
   "positionDividend": "Շահաբաժին՝ տարեկան {amount}",
   "chartAvgCost": "Ձեր միջ.",
-  "chartAlertLevel": "Ծանուցում"
+  "chartAlertLevel": "Ծանուցում",
+  "marketsToday": "Շուկաներն այսօր"
 }

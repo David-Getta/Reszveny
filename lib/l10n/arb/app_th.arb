@@ -459,5 +459,6 @@
   "portfolioDividendNote": "เงินปันผลต่อปีที่คาดการณ์อิงจากเงินปันผลที่จ่ายในช่วง 12 เดือนที่ผ่านมา ไม่รับประกันการจ่ายในอนาคต",
   "positionDividend": "เงินปันผล: {amount} ต่อปี",
   "chartAvgCost": "ต้นทุนเฉลี่ยคุณ",
-  "chartAlertLevel": "แจ้งเตือน"
+  "chartAlertLevel": "แจ้งเตือน",
+  "marketsToday": "ตลาดวันนี้"
 }

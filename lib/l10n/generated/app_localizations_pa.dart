@@ -1679,4 +1679,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ਅਲਰਟ';
+
+  @override
+  String get marketsToday => 'ਅੱਜ ਦੇ ਬਾਜ਼ਾਰ';
 }

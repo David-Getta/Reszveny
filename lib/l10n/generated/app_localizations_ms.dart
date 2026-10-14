@@ -1686,4 +1686,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Amaran';
+
+  @override
+  String get marketsToday => 'Pasaran hari ini';
 }

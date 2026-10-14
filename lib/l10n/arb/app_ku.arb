@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dîvîdenda salane ya tê payîn li ser bingeha dîvîdendên ku di 12 mehên dawî de hatine dayîn e; dayînên pêşerojê ne garantî ne.",
   "positionDividend": "Dîvîdend: salê {amount}",
   "chartAvgCost": "Navîniya te",
-  "chartAlertLevel": "Hişyarî"
+  "chartAlertLevel": "Hişyarî",
+  "marketsToday": "Bazar îro"
 }

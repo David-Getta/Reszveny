@@ -3096,6 +3096,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Alert'**
   String get chartAlertLevel;
+
+  /// Home screen section title: today's change of the main US stock indices (S&P 500, Nasdaq 100, Dow Jones).
+  ///
+  /// In en, this message translates to:
+  /// **'Markets today'**
+  String get marketsToday;
 }
 
 class _AppLocalizationsDelegate

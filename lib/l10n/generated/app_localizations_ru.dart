@@ -1734,4 +1734,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Оповещение';
+
+  @override
+  String get marketsToday => 'Рынки сегодня';
 }

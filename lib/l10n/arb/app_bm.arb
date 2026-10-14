@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Sanji tɔnɔ tilali makɔnɔnen sinsinna tɔnɔ tilali kan min sarala kalo 12 tɛmɛnenw kɔnɔ; nata saraliw tɛ dantigɛlen ye.",
   "positionDividend": "Tɔnɔ tilali: {amount} san o san",
   "chartAvgCost": "I ka cɛmancɛ",
-  "chartAlertLevel": "Lasɔmini"
+  "chartAlertLevel": "Lasɔmini",
+  "marketsToday": "Suguw bi"
 }

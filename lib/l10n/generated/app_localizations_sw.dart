@@ -1683,4 +1683,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Arifa';
+
+  @override
+  String get marketsToday => 'Masoko leo';
 }

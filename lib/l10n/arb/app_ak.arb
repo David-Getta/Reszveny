@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Mfaso kyɛ a yɛhwɛ kwan afe biara gyina mfaso kyɛ a wɔtuaa wɔ abosome 12 a atwam no so; yɛrentumi nhyɛ da sɛ wɔbɛtua bi daakye.",
   "positionDividend": "Mfaso kyɛ: {amount} afe biara",
   "chartAvgCost": "Wo mfinimfini",
-  "chartAlertLevel": "Kɔkɔbɔ"
+  "chartAlertLevel": "Kɔkɔbɔ",
+  "marketsToday": "Dwa ahorow ɛnnɛ"
 }

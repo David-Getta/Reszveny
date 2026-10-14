@@ -1732,4 +1732,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Сповіщення';
+
+  @override
+  String get marketsToday => 'Ринки сьогодні';
 }

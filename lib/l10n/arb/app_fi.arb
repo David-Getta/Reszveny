@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Odotetut vuotuiset osingot perustuvat viimeisten 12 kuukauden aikana maksettuihin osinkoihin; tulevia maksuja ei taata.",
   "positionDividend": "Osinko: {amount} vuodessa",
   "chartAvgCost": "Oma ka.",
-  "chartAlertLevel": "Hälytys"
+  "chartAlertLevel": "Hälytys",
+  "marketsToday": "Markkinat tänään"
 }

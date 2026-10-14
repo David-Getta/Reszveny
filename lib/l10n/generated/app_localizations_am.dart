@@ -1657,4 +1657,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ማንቂያ';
+
+  @override
+  String get marketsToday => 'የዛሬ ገበያዎች';
 }

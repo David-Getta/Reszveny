@@ -1678,4 +1678,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Peringatan';
+
+  @override
+  String get marketsToday => 'Pasar hari ini';
 }

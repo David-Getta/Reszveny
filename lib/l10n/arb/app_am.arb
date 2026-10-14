@@ -459,5 +459,6 @@
   "portfolioDividendNote": "የሚጠበቀው ዓመታዊ የትርፍ ድርሻ ባለፉት 12 ወራት በተከፈለው የትርፍ ድርሻ ላይ የተመሠረተ ነው፤ የወደፊት ክፍያዎች ዋስትና የላቸውም።",
   "positionDividend": "የትርፍ ድርሻ፦ በዓመት {amount}",
   "chartAvgCost": "የእርስዎ አማካይ",
-  "chartAlertLevel": "ማንቂያ"
+  "chartAlertLevel": "ማንቂያ",
+  "marketsToday": "የዛሬ ገበያዎች"
 }

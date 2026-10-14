@@ -1680,4 +1680,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Lasɔmini';
+
+  @override
+  String get marketsToday => 'Suguw bi';
 }

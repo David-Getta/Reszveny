@@ -459,5 +459,6 @@
   "portfolioDividendNote": "הדיבידנד השנתי הצפוי מבוסס על הדיבידנדים ששולמו ב-12 החודשים האחרונים; אין ערובה לתשלומים עתידיים.",
   "positionDividend": "דיבידנד: {amount} בשנה",
   "chartAvgCost": "הממוצע שלך",
-  "chartAlertLevel": "התראה"
+  "chartAlertLevel": "התראה",
+  "marketsToday": "השווקים היום"
 }

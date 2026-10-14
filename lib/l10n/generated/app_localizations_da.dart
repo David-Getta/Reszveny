@@ -1680,4 +1680,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alarm';
+
+  @override
+  String get marketsToday => 'Markeder i dag';
 }

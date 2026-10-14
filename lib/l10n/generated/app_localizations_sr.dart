@@ -1718,4 +1718,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Обавештење';
+
+  @override
+  String get marketsToday => 'Тржишта данас';
 }

@@ -1684,4 +1684,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'შეტყობინება';
+
+  @override
+  String get marketsToday => 'ბაზრები დღეს';
 }

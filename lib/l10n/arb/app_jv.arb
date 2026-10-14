@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividen taunan sing dikira-kira adhedhasar dividen sing dibayar sajrone 12 sasi pungkasan; pambayaran ing mbesuk ora dijamin.",
   "positionDividend": "Dividen: {amount} saben taun",
   "chartAvgCost": "Rata-ratamu",
-  "chartAlertLevel": "Pèngetan"
+  "chartAlertLevel": "Pèngetan",
+  "marketsToday": "Pasar dina iki"
 }

@@ -1686,4 +1686,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Nuxlɔ̃ame';
+
+  @override
+  String get marketsToday => 'Asiwo egbe';
 }

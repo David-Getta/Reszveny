@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Cổ tức hằng năm dự kiến dựa trên cổ tức đã chi trả trong 12 tháng qua; các khoản chi trả trong tương lai không được đảm bảo.",
   "positionDividend": "Cổ tức: {amount} mỗi năm",
   "chartAvgCost": "Giá vốn TB",
-  "chartAlertLevel": "Cảnh báo"
+  "chartAlertLevel": "Cảnh báo",
+  "marketsToday": "Thị trường hôm nay"
 }

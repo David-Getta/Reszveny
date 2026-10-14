@@ -1678,4 +1678,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'သတိပေးချက်';
+
+  @override
+  String get marketsToday => 'ယနေ့ စျေးကွက်များ';
 }

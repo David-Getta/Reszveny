@@ -1732,4 +1732,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Апавяшчэнне';
+
+  @override
+  String get marketsToday => 'Рынкі сёння';
 }

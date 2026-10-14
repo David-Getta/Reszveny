@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividend a na-atụ anya kwa afọ dabere na dividend a kwụrụ n'ime ọnwa 12 gara aga; enweghị nkwa na a ga-akwụ ụgwọ n'ọdịnihu.",
   "positionDividend": "Dividend: {amount} kwa afọ",
   "chartAvgCost": "Nkezi gị",
-  "chartAlertLevel": "Ọkwa"
+  "chartAlertLevel": "Ọkwa",
+  "marketsToday": "Ahịa taa"
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "ଆଶାକୃତ ବାର୍ଷିକ ଲାଭାଂଶ ଗତ 12 ମାସରେ ପ୍ରଦାନ କରାଯାଇଥିବା ଲାଭାଂଶ ଉପରେ ଆଧାରିତ; ଭବିଷ୍ୟତ ପ୍ରଦାନର ନିଶ୍ଚିତତା ନାହିଁ।",
   "positionDividend": "ଲାଭାଂଶ: ବାର୍ଷିକ {amount}",
   "chartAvgCost": "ଆପଣଙ୍କ ହାରାହାରି",
-  "chartAlertLevel": "ଆଲର୍ଟ"
+  "chartAlertLevel": "ଆଲର୍ଟ",
+  "marketsToday": "ଆଜିର ବଜାର"
 }

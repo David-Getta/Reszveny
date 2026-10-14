@@ -1684,4 +1684,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Béwara';
+
+  @override
+  String get marketsToday => 'Pasar poé ieu';
 }

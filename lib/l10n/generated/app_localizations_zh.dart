@@ -1614,6 +1614,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get chartAlertLevel => '提醒';
+
+  @override
+  String get marketsToday => '今日市场';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3224,4 +3227,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get chartAlertLevel => '提示';
+
+  @override
+  String get marketsToday => '今日市場';
 }

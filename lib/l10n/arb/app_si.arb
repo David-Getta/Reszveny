@@ -459,5 +459,6 @@
   "portfolioDividendNote": "අපේක්ෂිත වාර්ෂික ලාභාංශ පසුගිය මාස 12 තුළ ගෙවූ ලාභාංශ මත පදනම් වේ; අනාගත ගෙවීම් සහතික නොවේ.",
   "positionDividend": "ලාභාංශ: වසරකට {amount}",
   "chartAvgCost": "ඔබේ සාමාන්‍යය",
-  "chartAlertLevel": "ඇඟවීම"
+  "chartAlertLevel": "ඇඟවීම",
+  "marketsToday": "අද වෙළඳපොළ"
 }

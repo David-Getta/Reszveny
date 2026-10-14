@@ -459,5 +459,6 @@
   "portfolioDividendNote": "అంచనా వార్షిక డివిడెండ్ గత 12 నెలల్లో చెల్లించిన డివిడెండ్‌ల ఆధారంగా ఉంటుంది; భవిష్యత్ చెల్లింపులకు హామీ లేదు.",
   "positionDividend": "డివిడెండ్: సంవత్సరానికి {amount}",
   "chartAvgCost": "మీ సగటు",
-  "chartAlertLevel": "హెచ్చరిక"
+  "chartAlertLevel": "హెచ్చరిక",
+  "marketsToday": "ఈ రోజు మార్కెట్లు"
 }

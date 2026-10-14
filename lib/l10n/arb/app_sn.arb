@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dhividhendi inotarisirwa yegore inobva padhividhendi dzakabhadharwa mumwedzi 12 yapfuura; kubhadhara kweramangwana hakuvimbiswi.",
   "positionDividend": "Dhividhendi: {amount} pagore",
   "chartAvgCost": "Avhareji yako",
-  "chartAlertLevel": "Chiziviso"
+  "chartAlertLevel": "Chiziviso",
+  "marketsToday": "Misika nhasi"
 }

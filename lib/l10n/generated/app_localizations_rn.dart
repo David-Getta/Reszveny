@@ -1689,4 +1689,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Imenyesha';
+
+  @override
+  String get marketsToday => 'Amasoko uno musi';
 }

@@ -1682,4 +1682,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kursvarsel';
+
+  @override
+  String get marketsToday => 'Markeder i dag';
 }

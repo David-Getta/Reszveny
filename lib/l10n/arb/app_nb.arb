@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Forventet årlig utbytte er basert på utbyttet som er utbetalt de siste 12 månedene; fremtidige utbetalinger er ikke garantert.",
   "positionDividend": "Utbytte: {amount} per år",
   "chartAvgCost": "Ditt snitt",
-  "chartAlertLevel": "Kursvarsel"
+  "chartAlertLevel": "Kursvarsel",
+  "marketsToday": "Markeder i dag"
 }

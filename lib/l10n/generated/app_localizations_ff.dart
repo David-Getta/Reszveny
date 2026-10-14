@@ -1678,4 +1678,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Tintinol';
+
+  @override
+  String get marketsToday => 'Luumooji hannde';
 }

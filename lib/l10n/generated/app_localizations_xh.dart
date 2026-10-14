@@ -1690,4 +1690,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Isilumkiso';
+
+  @override
+  String get marketsToday => 'Iimarike namhlanje';
 }

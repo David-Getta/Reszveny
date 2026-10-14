@@ -1689,4 +1689,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Isexwayiso';
+
+  @override
+  String get marketsToday => 'Izimakethe namuhla';
 }

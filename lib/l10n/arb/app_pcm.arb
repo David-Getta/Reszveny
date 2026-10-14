@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Di dividend wey we expect every year na from di dividend wey dem pay for di last 12 months; we no fit promise future payment.",
   "positionDividend": "Dividend: {amount} every year",
   "chartAvgCost": "Your average",
-  "chartAlertLevel": "Alert"
+  "chartAlertLevel": "Alert",
+  "marketsToday": "Market today"
 }

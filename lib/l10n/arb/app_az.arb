@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Gözlənilən illik dividendlər son 12 ayda ödənilmiş dividendlərə əsaslanır; gələcək ödənişlərə zəmanət verilmir.",
   "positionDividend": "Dividend: ildə {amount}",
   "chartAvgCost": "Orta qiymətiniz",
-  "chartAlertLevel": "Bildiriş"
+  "chartAlertLevel": "Bildiriş",
+  "marketsToday": "Bu gün bazarlar"
 }

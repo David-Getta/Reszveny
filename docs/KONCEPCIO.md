@@ -195,6 +195,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5o | Összehasonlítás: legfeljebb 3 részvény fő számai egymás mellett (értékeltség, növekedés, árrés, ROE, eladósodottság, osztalék), soronként a legjobb kiemelve, alul az elmentett elemzések lényege; a részvény oldaláról nyílik | ✅ kész |
 | 5p | Várható éves osztalék a portfólióban: tételenként és összesítve a megjelenítési devizában, hozammal (az elmúlt 12 hónap osztaléka alapján) | ✅ kész |
 | 5q | Árfolyamgrafikon: a saját átlagár és az aktív riasztások szintje szaggatott vonallal | ✅ kész |
+| 5r | „Piacok ma”: az S&P 500, a Nasdaq 100 és a Dow Jones napi változása (SPY, QQQ, DIA) a kezdőképernyőn | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

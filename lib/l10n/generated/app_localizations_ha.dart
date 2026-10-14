@@ -1688,4 +1688,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Faɗakarwa';
+
+  @override
+  String get marketsToday => 'Kasuwanni yau';
 }

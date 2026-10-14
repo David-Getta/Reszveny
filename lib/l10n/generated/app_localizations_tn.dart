@@ -1692,4 +1692,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kitsiso';
+
+  @override
+  String get marketsToday => 'Mebaraka gompieno';
 }

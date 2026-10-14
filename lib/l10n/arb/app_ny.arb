@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Gawo la phindu loyembekezeka pachaka limachokera pa magawo a phindu omwe analipidwa m'miyezi 12 yapitayi; malipiro amtsogolo sali otsimikizika.",
   "positionDividend": "Gawo la phindu: {amount} pachaka",
   "chartAvgCost": "Wapakati wanu",
-  "chartAlertLevel": "Chidziwitso"
+  "chartAlertLevel": "Chidziwitso",
+  "marketsToday": "Misika lero"
 }

@@ -1695,4 +1695,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Fanairana';
+
+  @override
+  String get marketsToday => 'Tsena androany';
 }

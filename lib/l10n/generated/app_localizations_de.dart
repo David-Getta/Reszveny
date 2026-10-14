@@ -1693,4 +1693,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Kursalarm';
+
+  @override
+  String get marketsToday => 'Märkte heute';
 }

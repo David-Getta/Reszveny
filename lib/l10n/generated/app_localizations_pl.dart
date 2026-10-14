@@ -1736,4 +1736,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alert';
+
+  @override
+  String get marketsToday => 'Rynki dziś';
 }

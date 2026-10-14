@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Qoodni bu'aa waggaa eegamu qooda bu'aa ji'oota 12 darban keessatti kaffalame irratti hundaa'a; kaffaltiin gara fuulduraa wabii hin qabu.",
   "positionDividend": "Qooda bu'aa: waggaatti {amount}",
   "chartAvgCost": "Giddugaleessa kee",
-  "chartAlertLevel": "Akeekkachiisa"
+  "chartAlertLevel": "Akeekkachiisa",
+  "marketsToday": "Gabaawwan har'a"
 }

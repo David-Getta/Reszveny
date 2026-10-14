@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividendi vjetor i pritshëm bazohet në dividendët e paguar në 12 muajt e fundit; pagesat e ardhshme nuk janë të garantuara.",
   "positionDividend": "Dividendi: {amount} në vit",
   "chartAvgCost": "Mesatarja juaj",
-  "chartAlertLevel": "Alarm"
+  "chartAlertLevel": "Alarm",
+  "marketsToday": "Tregjet sot"
 }

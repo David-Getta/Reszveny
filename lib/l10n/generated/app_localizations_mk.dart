@@ -1701,4 +1701,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Известување';
+
+  @override
+  String get marketsToday => 'Пазари денес';
 }

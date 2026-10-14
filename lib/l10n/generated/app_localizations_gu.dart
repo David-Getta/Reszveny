@@ -1680,4 +1680,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'અલર્ટ';
+
+  @override
+  String get marketsToday => 'આજના બજારો';
 }

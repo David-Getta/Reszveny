@@ -1687,4 +1687,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alerte';
+
+  @override
+  String get marketsToday => 'Bisalu lelu';
 }

@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Ang ginapaabot nga tinuig nga dibidendo nabase sa mga dibidendo nga ginbayad sa nagligad nga 12 ka bulan; indi garantisado ang mga bayad sa palaabuton.",
   "positionDividend": "Dibidendo: {amount} kada tuig",
   "chartAvgCost": "Imo avg.",
-  "chartAlertLevel": "Alerto"
+  "chartAlertLevel": "Alerto",
+  "marketsToday": "Mga merkado subong"
 }

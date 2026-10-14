@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Garaşylýan ýyllyk diwidend soňky 12 aýda tölenen diwidendlere esaslanýar; geljekki tölegler kepillendirilmeýär.",
   "positionDividend": "Diwidend: ýylda {amount}",
   "chartAvgCost": "Siziň ortaňyz",
-  "chartAlertLevel": "Duýduryş"
+  "chartAlertLevel": "Duýduryş",
+  "marketsToday": "Bazarlar şu gün"
 }

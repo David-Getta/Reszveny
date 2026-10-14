@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividende wa tshidimu udibu bindile udi ushindamene pa ba-dividende bavuabu bafute mu ngondo 12 mishale; difuta dia matuku atshilualua kadiena ne garantie to.",
   "positionDividend": "Dividende: {amount} ku tshidimu",
   "chartAvgCost": "Mushinga webe",
-  "chartAlertLevel": "Alerte"
+  "chartAlertLevel": "Alerte",
+  "marketsToday": "Bisalu lelu"
 }

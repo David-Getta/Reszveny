@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Чаканыя гадавыя дывідэнды разлічаны паводле дывідэндаў, выплачаных за апошнія 12 месяцаў; будучыя выплаты не гарантаваныя.",
   "positionDividend": "Дывідэнд: {amount} у год",
   "chartAvgCost": "Ваша сяр.",
-  "chartAlertLevel": "Апавяшчэнне"
+  "chartAlertLevel": "Апавяшчэнне",
+  "marketsToday": "Рынкі сёння"
 }

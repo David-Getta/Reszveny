@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Het verwachte jaarlijkse dividend is gebaseerd op de dividenden die in de afgelopen 12 maanden zijn uitgekeerd; toekomstige uitkeringen zijn niet gegarandeerd.",
   "positionDividend": "Dividend: {amount} per jaar",
   "chartAvgCost": "Jouw gem.",
-  "chartAlertLevel": "Alert"
+  "chartAlertLevel": "Alert",
+  "marketsToday": "Markten vandaag"
 }

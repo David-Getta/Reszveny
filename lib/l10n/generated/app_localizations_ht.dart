@@ -1681,4 +1681,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alèt';
+
+  @override
+  String get marketsToday => 'Mache yo jodi a';
 }

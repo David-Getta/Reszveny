@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Дивидендҳои солонаи пешбинишуда ба дивидендҳои дар 12 моҳи охир пардохтшуда асос ёфтаанд; пардохтҳои оянда кафолат дода намешаванд.",
   "positionDividend": "Дивиденд: {amount} дар як сол",
   "chartAvgCost": "Миёнаи шумо",
-  "chartAlertLevel": "Огоҳӣ"
+  "chartAlertLevel": "Огоҳӣ",
+  "marketsToday": "Бозорҳо имрӯз"
 }

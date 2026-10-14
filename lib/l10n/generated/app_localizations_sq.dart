@@ -1689,4 +1689,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Alarm';
+
+  @override
+  String get marketsToday => 'Tregjet sot';
 }

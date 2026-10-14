@@ -459,5 +459,6 @@
   "portfolioDividendNote": "আশা কৰা বাৰ্ষিক লভ্যাংশ যোৱা 12 মাহত পৰিশোধ কৰা লভ্যাংশৰ ওপৰত ভিত্তি কৰি হিচাপ কৰা হয়; ভৱিষ্যতৰ পৰিশোধৰ নিশ্চয়তা নাই।",
   "positionDividend": "লভ্যাংশ: বছৰি {amount}",
   "chartAvgCost": "আপোনাৰ গড়",
-  "chartAlertLevel": "সতৰ্কবাণী"
+  "chartAlertLevel": "সতৰ্কবাণী",
+  "marketsToday": "আজিৰ বজাৰ"
 }

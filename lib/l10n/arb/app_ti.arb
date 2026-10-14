@@ -459,5 +459,6 @@
   "portfolioDividendNote": "ዝጽበ ዓመታዊ ብጽሒት ትርፊ ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተኸፍለ ብጽሒት ትርፊ መሰረት ዝገበረ እዩ፤ መጻኢ ክፍሊታት ውሕስነት የብሎምን።",
   "positionDividend": "ብጽሒት ትርፊ: ኣብ ዓመት {amount}",
   "chartAvgCost": "ናትካ ማእከላይ",
-  "chartAlertLevel": "መጠንቀቕታ"
+  "chartAlertLevel": "መጠንቀቕታ",
+  "marketsToday": "ዕዳጋታት ሎሚ"
 }

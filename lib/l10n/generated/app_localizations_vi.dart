@@ -1677,4 +1677,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Cảnh báo';
+
+  @override
+  String get marketsToday => 'Thị trường hôm nay';
 }

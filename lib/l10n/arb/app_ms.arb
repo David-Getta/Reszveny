@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Jangkaan dividen tahunan adalah berdasarkan dividen yang dibayar dalam 12 bulan lepas; bayaran pada masa hadapan tidak dijamin.",
   "positionDividend": "Dividen: {amount} setahun",
   "chartAvgCost": "Purata anda",
-  "chartAlertLevel": "Amaran"
+  "chartAlertLevel": "Amaran",
+  "marketsToday": "Pasaran hari ini"
 }

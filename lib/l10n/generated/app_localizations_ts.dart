@@ -1693,4 +1693,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Xitiviso';
+
+  @override
+  String get marketsToday => 'Timakete namuntlha';
 }

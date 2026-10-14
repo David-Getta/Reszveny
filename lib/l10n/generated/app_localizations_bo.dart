@@ -1674,4 +1674,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ཉེན་བརྡ';
+
+  @override
+  String get marketsToday => 'དེ་རིང་གི་ཚོང་ར';
 }

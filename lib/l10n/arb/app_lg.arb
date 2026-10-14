@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Amagoba ku migabo agasuubirwa buli mwaka gasinziira ku magoba agaasasulwa mu myezi 12 egiyise; okusasula okw’omu maaso tekukakasiddwa.",
   "positionDividend": "Amagoba ku migabo: {amount} buli mwaka",
   "chartAvgCost": "Eyiyo ya wakati",
-  "chartAlertLevel": "Okulabula"
+  "chartAlertLevel": "Okulabula",
+  "marketsToday": "Obutale leero"
 }

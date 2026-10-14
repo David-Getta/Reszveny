@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividende ya mobu oyo ezelamaki etongami na ba-dividende oyo bafutaki na sanza 12 oyo eleki; bafuti ya mikolo ezali koya ezali na garantie te.",
   "positionDividend": "Dividende: {amount} na mobu",
   "chartAvgCost": "Ntalo na yo",
-  "chartAlertLevel": "Likebisi"
+  "chartAlertLevel": "Likebisi",
+  "marketsToday": "Mazando lɛlɔ"
 }

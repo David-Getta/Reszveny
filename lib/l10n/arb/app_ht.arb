@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividann chak ane yo espere a baze sou dividann ki te peye pandan 12 dènye mwa yo; pa gen garanti pou peman nan lavni.",
   "positionDividend": "Dividann: {amount} pa ane",
   "chartAvgCost": "Mwayèn ou",
-  "chartAlertLevel": "Alèt"
+  "chartAlertLevel": "Alèt",
+  "marketsToday": "Mache yo jodi a"
 }

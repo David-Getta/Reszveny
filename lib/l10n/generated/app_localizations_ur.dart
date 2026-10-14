@@ -1682,4 +1682,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'الرٹ';
+
+  @override
+  String get marketsToday => 'آج کی مارکیٹیں';
 }

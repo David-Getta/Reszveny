@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Очікувані річні дивіденди розраховано за виплатами за останні 12 місяців; майбутні виплати не гарантовані.",
   "positionDividend": "Дивіденди: {amount} на рік",
   "chartAvgCost": "Ваша сер.",
-  "chartAlertLevel": "Сповіщення"
+  "chartAlertLevel": "Сповіщення",
+  "marketsToday": "Ринки сьогодні"
 }

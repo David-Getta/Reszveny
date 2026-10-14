@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Dividand n useggas i yettwarǧan yebna ɣef dividand yettwaxelṣen deg 12 n wayyuren ineggura; ixelṣen n uzekka ur ttwaḍemnen ara.",
   "positionDividend": "Dividand: {amount} i useggas",
   "chartAvgCost": "Talemmast-ik",
-  "chartAlertLevel": "Alɣu"
+  "chartAlertLevel": "Alɣu",
+  "marketsToday": "Isuqen ass-a"
 }

@@ -1733,4 +1733,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Upozornenie';
+
+  @override
+  String get marketsToday => 'Trhy dnes';
 }

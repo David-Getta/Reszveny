@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Die erwarteten jährlichen Dividenden basieren auf den in den letzten 12 Monaten gezahlten Dividenden; künftige Zahlungen sind nicht garantiert.",
   "positionDividend": "Dividende: {amount} pro Jahr",
   "chartAvgCost": "Dein Ø",
-  "chartAlertLevel": "Kursalarm"
+  "chartAlertLevel": "Kursalarm",
+  "marketsToday": "Märkte heute"
 }

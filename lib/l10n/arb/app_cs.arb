@@ -459,5 +459,6 @@
   "portfolioDividendNote": "Očekávané roční dividendy vycházejí z dividend vyplacených za posledních 12 měsíců; budoucí výplaty nejsou zaručené.",
   "positionDividend": "Dividenda: {amount} ročně",
   "chartAvgCost": "Váš průměr",
-  "chartAlertLevel": "Upozornění"
+  "chartAlertLevel": "Upozornění",
+  "marketsToday": "Trhy dnes"
 }

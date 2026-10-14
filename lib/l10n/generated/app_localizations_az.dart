@@ -1683,4 +1683,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Bildiriş';
+
+  @override
+  String get marketsToday => 'Bu gün bazarlar';
 }

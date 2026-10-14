@@ -1683,4 +1683,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'ئاگادارکەرەوە';
+
+  @override
+  String get marketsToday => 'بازاڕەکان ئەمڕۆ';
 }

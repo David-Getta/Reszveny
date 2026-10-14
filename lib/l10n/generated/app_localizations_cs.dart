@@ -1729,4 +1729,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Upozornění';
+
+  @override
+  String get marketsToday => 'Trhy dnes';
 }

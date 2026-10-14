@@ -17,6 +17,7 @@ import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
+import 'markets_strip.dart';
 import '../portfolio/portfolio_page.dart';
 import '../recognition/stock_recognizer.dart';
 import '../updates/update_banner.dart';
@@ -269,6 +270,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                     if (_results != null)
                       _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                    MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
                     PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                     FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                     // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.

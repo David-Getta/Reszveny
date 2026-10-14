@@ -1690,4 +1690,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Imenyesha';
+
+  @override
+  String get marketsToday => 'Amasoko uyu munsi';
 }

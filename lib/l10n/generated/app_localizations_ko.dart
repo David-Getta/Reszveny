@@ -1635,4 +1635,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get chartAlertLevel => '알림';
+
+  @override
+  String get marketsToday => '오늘의 시장';
 }

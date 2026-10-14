@@ -1689,4 +1689,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get chartAlertLevel => 'Akeekkachiisa';
+
+  @override
+  String get marketsToday => 'Gabaawwan har\'a';
 }
