@@ -1572,40 +1572,40 @@ class AppLocalizationsSq extends AppLocalizations {
       'Sa shpesh përdoren veçoritë dhe raportet e gabimeve, pa të dhëna personale apo përmbajtjen e kërkimeve dhe analizave të tua.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Pyetni për këtë analizë';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Pyetje për $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pyetni çfarëdo për analizën: çfarë do të thotë një rrezik, çfarë do ta ndryshonte perspektivën, si është llogaritur një numër. Përgjigjet bazohen në këtë analizë dhe nuk përbëjnë këshillë investimi.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Bëni një pyetje…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Dërgo';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Duke menduar…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Cili është rreziku më i madh?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Çfarë do ta ndryshonte perspektivën?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Shpjegoje me fjalë të thjeshta';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Kjo ishte pyetja e fundit për këtë analizë. Krijoni një analizë të re për të bërë më shumë pyetje.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër.';
 }

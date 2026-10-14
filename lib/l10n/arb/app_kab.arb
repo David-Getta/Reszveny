@@ -427,5 +427,16 @@
   "telemetryAllow": "Sireg",
   "telemetryDecline": "Ala, tanemmirt",
   "telemetrySetting": "Tidaddanin war isem d yineqqisen n uɣelluy",
-  "telemetrySettingHint": "Acḥal n tikkal i ttwasqedcent tmahilin d yineqqisen n tuccḍiwin, war isefka udmawanen neɣ agbur n unadi d tesleḍt-ik."
+  "telemetrySettingHint": "Acḥal n tikkal i ttwasqedcent tmahilin d yineqqisen n tuccḍiwin, war isefka udmawanen neɣ agbur n unadi d tesleḍt-ik.",
+  "askButton": "Steqsi ɣef tesleḍt-a",
+  "askTitle": "Isteqsiyen ɣef {symbol}",
+  "askIntro": "Steqsi ayen tebɣiḍ ɣef tesleḍt: d acu i d-yemmal yiwen wugur, d acu i izemren ad ibeddel tamuɣli ɣer zdat, amek i yettwasiḍen yiwen wuṭṭun. Tiririyin bnant ɣef tesleḍt-a, ur d awellih n usersi n yidrimen ara.",
+  "askHint": "Aru asteqsi…",
+  "askSend": "Azen",
+  "askThinking": "Ttxemmimeɣ…",
+  "askSuggest1": "D acu i d ugur ameqqran akk?",
+  "askSuggest2": "D acu i izemren ad ibeddel tamuɣli ɣer zdat?",
+  "askSuggest3": "Fsser-it-id s wawalen fessusen",
+  "askMaxReached": "Wa d asteqsi aneggaru i tesleḍt-a. Snulfu-d tasleḍt tamaynut akken ad testeqsiḍ ugar.",
+  "errAskLimit": "Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka."
 }

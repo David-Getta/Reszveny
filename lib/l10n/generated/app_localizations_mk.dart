@@ -1584,40 +1584,40 @@ class AppLocalizationsMk extends AppLocalizations {
       'Колку често се користат функциите и извештаи за грешки, без лични податоци или содржината на твоите пребарувања и анализи.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Прашајте за анализава';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Прашања за $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Прашајте што било за анализата: што значи некој ризик, што би ги променило изгледите, како е пресметан некој број. Одговорите се засноваат на оваа анализа и не претставуваат инвестициски совет.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Поставете прашање…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Испрати';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Размислувам…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Кој е најголемиот ризик?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Што би ги променило изгледите?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Објасни го ова едноставно';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Тоа беше последното прашање за оваа анализа. Направете нова анализа за да прашате повеќе.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Го достигнавте дневниот лимит на прашања. Обидете се повторно утре.';
 }

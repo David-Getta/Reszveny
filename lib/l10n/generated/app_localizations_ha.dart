@@ -1572,40 +1572,39 @@ class AppLocalizationsHa extends AppLocalizations {
       'Yawan amfani da fasaloli da rahotannin kurakurai, ba tare da bayanan sirri ko abubuwan da ke cikin bincikenka da nazarinka ba.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Tambaya game da wannan nazari';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Tambayoyi game da $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Tambayi komai game da nazarin: ma\'anar wani haɗari, abin da zai iya canza hasashe, yadda aka samo wani adadi. Amsoshin sun dogara ne kan wannan nazari, kuma ba shawarar zuba jari ba ne.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Rubuta tambaya…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Aika';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ana tunani…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Mene ne babban haɗari?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Me zai iya canza hasashen?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Bayyana shi a sauƙaƙe';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Wannan ita ce tambaya ta ƙarshe ga wannan nazari. Ƙirƙiri sabon nazari don ƙarin tambayoyi.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'An kai iyakar tambayoyin yau. Sake gwadawa gobe.';
 }

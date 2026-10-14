@@ -427,5 +427,16 @@
   "telemetryAllow": "Lejo",
   "telemetryDecline": "Jo, faleminderit",
   "telemetrySetting": "Statistika anonime dhe raporte ndërprerjesh",
-  "telemetrySettingHint": "Sa shpesh përdoren veçoritë dhe raportet e gabimeve, pa të dhëna personale apo përmbajtjen e kërkimeve dhe analizave të tua."
+  "telemetrySettingHint": "Sa shpesh përdoren veçoritë dhe raportet e gabimeve, pa të dhëna personale apo përmbajtjen e kërkimeve dhe analizave të tua.",
+  "askButton": "Pyetni për këtë analizë",
+  "askTitle": "Pyetje për {symbol}",
+  "askIntro": "Pyetni çfarëdo për analizën: çfarë do të thotë një rrezik, çfarë do ta ndryshonte perspektivën, si është llogaritur një numër. Përgjigjet bazohen në këtë analizë dhe nuk përbëjnë këshillë investimi.",
+  "askHint": "Bëni një pyetje…",
+  "askSend": "Dërgo",
+  "askThinking": "Duke menduar…",
+  "askSuggest1": "Cili është rreziku më i madh?",
+  "askSuggest2": "Çfarë do ta ndryshonte perspektivën?",
+  "askSuggest3": "Shpjegoje me fjalë të thjeshta",
+  "askMaxReached": "Kjo ishte pyetja e fundit për këtë analizë. Krijoni një analizë të re për të bërë më shumë pyetje.",
+  "errAskLimit": "Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër."
 }

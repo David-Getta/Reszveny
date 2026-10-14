@@ -427,5 +427,16 @@
   "telemetryAllow": "Cho phép",
   "telemetryDecline": "Không, cảm ơn",
   "telemetrySetting": "Thống kê ẩn danh và báo cáo sự cố",
-  "telemetrySettingHint": "Tần suất sử dụng tính năng và báo cáo lỗi, không bao gồm dữ liệu cá nhân hay nội dung tìm kiếm và phân tích của bạn."
+  "telemetrySettingHint": "Tần suất sử dụng tính năng và báo cáo lỗi, không bao gồm dữ liệu cá nhân hay nội dung tìm kiếm và phân tích của bạn.",
+  "askButton": "Hỏi về phân tích này",
+  "askTitle": "Câu hỏi về {symbol}",
+  "askIntro": "Hỏi bất cứ điều gì về phân tích: một rủi ro có nghĩa là gì, điều gì có thể thay đổi triển vọng, một con số được tính ra như thế nào. Câu trả lời dựa trên phân tích này và không phải là lời khuyên đầu tư.",
+  "askHint": "Đặt câu hỏi…",
+  "askSend": "Gửi",
+  "askThinking": "Đang suy nghĩ…",
+  "askSuggest1": "Rủi ro lớn nhất là gì?",
+  "askSuggest2": "Điều gì có thể thay đổi triển vọng?",
+  "askSuggest3": "Giải thích một cách đơn giản",
+  "askMaxReached": "Đó là câu hỏi cuối cùng cho phân tích này. Hãy tạo phân tích mới để hỏi thêm.",
+  "errAskLimit": "Bạn đã đạt giới hạn câu hỏi hôm nay. Hãy thử lại vào ngày mai."
 }

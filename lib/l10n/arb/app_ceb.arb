@@ -427,5 +427,16 @@
   "telemetryAllow": "Tugoti",
   "telemetryDecline": "Dili, salamat",
   "telemetrySetting": "Dili mailhan nga estadistika ug mga crash report",
-  "telemetrySettingHint": "Kung unsa ka sagad gamiton ang mga feature ug mga report sa sayop, walay personal nga datos o sulod sa imong mga pagpangita ug pagtuki."
+  "telemetrySettingHint": "Kung unsa ka sagad gamiton ang mga feature ug mga report sa sayop, walay personal nga datos o sulod sa imong mga pagpangita ug pagtuki.",
+  "askButton": "Pangutana bahin niini nga pagtuki",
+  "askTitle": "Mga pangutana bahin sa {symbol}",
+  "askIntro": "Pangutana bisan unsa bahin sa pagtuki: unsay buot ipasabot sa usa ka risgo, unsay makausab sa panglantaw, giunsa pagkuwenta ang usa ka numero. Ang mga tubag gibase niini nga pagtuki ug dili kini tambag sa pagpamuhunan.",
+  "askHint": "Isulat ang imong pangutana…",
+  "askSend": "Ipadala",
+  "askThinking": "Naghunahuna…",
+  "askSuggest1": "Unsa ang pinakadakong risgo?",
+  "askSuggest2": "Unsa ang makausab sa panglantaw?",
+  "askSuggest3": "Ipasabot kini sa yanong paagi",
+  "askMaxReached": "Kana na ang kataposang pangutana para niini nga pagtuki. Paghimo og bag-ong pagtuki aron makapangutana pa.",
+  "errAskLimit": "Naabot na nimo ang limitasyon sa mga pangutana karong adlawa. Palihog sulayi pag-usab ugma."
 }

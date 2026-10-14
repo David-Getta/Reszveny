@@ -1566,7 +1566,7 @@ class AppLocalizationsPcm extends AppLocalizations {
       'How often people dey use features and error reports, without personal data or wetin you search and analyse.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Ask about dis analysis';
 
   @override
   String askTitle(String symbol) {
@@ -1575,31 +1575,31 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Ask anytin about di analysis: wetin one risk mean, wetin fit change how tins go be, how dem take calculate one number. Di answers base on dis analysis, and dem no be investment advice.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Ask question…';
 
   @override
   String get askSend => 'Send';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'E dey tink…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Wetin be di biggest risk?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Wetin fit change how tins go be?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explain am make e simple';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Dat one na di last question for dis analysis. Make new analysis if you wan ask more.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'You don reach today limit for questions. Try again tomorrow.';
 }

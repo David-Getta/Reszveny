@@ -1600,40 +1600,40 @@ class AppLocalizationsAr extends AppLocalizations {
       'مدى تكرار استخدام الميزات وتقارير الأخطاء، دون بيانات شخصية أو محتوى عمليات البحث والتحليلات الخاصة بك.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'اسأل عن هذا التحليل';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'أسئلة حول $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'اسأل أي شيء عن التحليل: ماذا يعني خطر ما، وما الذي قد يغيّر التوقعات، وكيف حُسب رقم معيّن. تستند الإجابات إلى هذا التحليل ولا تُعدّ نصيحة استثمارية.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'اكتب سؤالك…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'إرسال';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'جارٍ التفكير…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'ما أكبر خطر؟';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'ما الذي قد يغيّر التوقعات؟';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'اشرح ذلك بعبارات بسيطة';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'كان هذا آخر سؤال لهذا التحليل. أنشئ تحليلاً جديداً لطرح المزيد من الأسئلة.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'لقد بلغت الحد اليومي للأسئلة. يُرجى المحاولة مرة أخرى غدًا.';
 }

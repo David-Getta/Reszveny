@@ -1575,40 +1575,40 @@ class AppLocalizationsFr extends AppLocalizations {
       'La fréquence d\'utilisation des fonctionnalités et les rapports d\'erreurs, sans données personnelles ni contenu de vos recherches et analyses.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Poser une question sur cette analyse';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Questions sur $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Posez toutes vos questions sur l’analyse : ce que signifie un risque, ce qui pourrait changer les perspectives, comment un chiffre a été obtenu. Les réponses se fondent sur cette analyse et ne constituent pas un conseil en investissement.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Posez une question…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Envoyer';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Réflexion en cours…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Quel est le plus grand risque ?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Qu’est-ce qui changerait les perspectives ?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explique-moi simplement';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'C’était la dernière question pour cette analyse. Créez une nouvelle analyse pour en poser d’autres.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Vous avez atteint la limite de questions pour aujourd’hui. Réessayez demain.';
 }

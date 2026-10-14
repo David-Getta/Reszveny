@@ -1574,40 +1574,40 @@ class AppLocalizationsCa extends AppLocalizations {
       'Amb quina freqüència es fan servir les funcions i informes d\'errors, sense dades personals ni el contingut de les teves cerques i anàlisis.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Pregunta sobre aquesta anàlisi';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Preguntes sobre $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pregunta qualsevol cosa sobre l’anàlisi: què vol dir un risc, què canviaria les perspectives, com s’ha calculat una xifra. Les respostes es basen en aquesta anàlisi i no constitueixen assessorament d’inversió.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Fes una pregunta…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Envia';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Pensant…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Quin és el risc més gran?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Què canviaria les perspectives?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explica-ho en paraules senzilles';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Aquesta era l’última pregunta per a aquesta anàlisi. Fes una anàlisi nova per preguntar-ne més.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Has arribat al límit de preguntes d’avui. Torna-ho a provar demà.';
 }

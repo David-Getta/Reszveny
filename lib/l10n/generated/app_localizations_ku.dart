@@ -1568,40 +1568,40 @@ class AppLocalizationsKu extends AppLocalizations {
       'Taybetmendî çiqas caran têne bikaranîn û raporên çewtiyan, bêyî daneyên kesane an naveroka lêgerîn û analîzên te.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Li ser vê analîzê bipirse';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Pirsên li ser $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Li ser analîzê her tiştî bipirse: xetereyek tê çi wateyê, çi dikare pêşbîniyê biguherîne, hejmarek çawa hatiye hesibandin. Bersiv li ser bingeha vê analîzê ne û ne şîreta veberhênanê ne.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Pirsekê binivîse…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Bişîne';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Difikire…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Xetereya herî mezin çi ye?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Çi dikare pêşbîniyê biguherîne?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Bi awayekî hêsan rave bike';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ev pirsa dawî ya vê analîzê bû. Ji bo pirsên din analîzeke nû çêke.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne.';
 }

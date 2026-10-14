@@ -427,5 +427,16 @@
   "telemetryAllow": "Letla",
   "telemetryDecline": "Nnyaa, ke a leboga",
   "telemetrySetting": "Dipalopalo tse di sa itsiweng le dipego tsa go wa",
-  "telemetrySettingHint": "Gore dikarolo di dirisiwa gangwe ga kae le dipego tsa diphoso, kwa ntle ga tshedimosetso ya botho kgotsa diteng tsa dipatlisiso le ditshekatsheko tsa gago."
+  "telemetrySettingHint": "Gore dikarolo di dirisiwa gangwe ga kae le dipego tsa diphoso, kwa ntle ga tshedimosetso ya botho kgotsa diteng tsa dipatlisiso le ditshekatsheko tsa gago.",
+  "askButton": "Botsa ka tshekatsheko e",
+  "askTitle": "Dipotso ka {symbol}",
+  "askIntro": "Botsa sengwe le sengwe ka tshekatsheko: kotsi e raya eng, ke eng se se ka fetolang ponelopele, palo e badilwe jang. Dikarabo di theilwe mo tshekatshekong e, e bile ga se kgakololo ya peeletso.",
+  "askHint": "Botsa potso…",
+  "askSend": "Romela",
+  "askThinking": "Ke a akanya…",
+  "askSuggest1": "Kotsi e kgolo go gaisa ke efe?",
+  "askSuggest2": "Ke eng se se ka fetolang ponelopele?",
+  "askSuggest3": "E tlhalose ka mafoko a a motlhofo",
+  "askMaxReached": "Eo e ne e le potso ya bofelo ya tshekatsheko e. Dira tshekatsheko e ntšha go botsa go feta.",
+  "errAskLimit": "O fitlhetse tekanyetso ya dipotso ya gompieno. Tsweetswee leka gape kamoso."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Erlauben",
   "telemetryDecline": "Nein danke",
   "telemetrySetting": "Anonyme Statistiken und Absturzberichte",
-  "telemetrySettingHint": "Wie oft Funktionen genutzt werden und Fehlerberichte – ohne persönliche Daten oder Inhalte deiner Suchen und Analysen."
+  "telemetrySettingHint": "Wie oft Funktionen genutzt werden und Fehlerberichte – ohne persönliche Daten oder Inhalte deiner Suchen und Analysen.",
+  "askButton": "Fragen zu dieser Analyse",
+  "askTitle": "Fragen zu {symbol}",
+  "askIntro": "Frag alles zur Analyse: was ein Risiko bedeutet, was den Ausblick ändern würde, wie eine Zahl zustande kam. Die Antworten beruhen auf dieser Analyse und sind keine Anlageberatung.",
+  "askHint": "Stell eine Frage…",
+  "askSend": "Senden",
+  "askThinking": "Denkt nach…",
+  "askSuggest1": "Was ist das größte Risiko?",
+  "askSuggest2": "Was würde den Ausblick ändern?",
+  "askSuggest3": "Erklär es in einfachen Worten",
+  "askMaxReached": "Das war die letzte Frage zu dieser Analyse. Erstelle eine neue Analyse, um mehr zu fragen.",
+  "errAskLimit": "Du hast das heutige Limit für Fragen erreicht. Bitte versuche es morgen erneut."
 }

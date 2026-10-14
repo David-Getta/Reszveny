@@ -427,5 +427,16 @@
   "telemetryAllow": "İcazə ver",
   "telemetryDecline": "Xeyr, təşəkkürlər",
   "telemetrySetting": "Anonim statistika və çökmə hesabatları",
-  "telemetrySettingHint": "Funksiyaların nə qədər tez-tez istifadə olunduğu və xəta hesabatları – şəxsi məlumatlar, axtarışlarınızın və təhlillərinizin məzmunu olmadan."
+  "telemetrySettingHint": "Funksiyaların nə qədər tez-tez istifadə olunduğu və xəta hesabatları – şəxsi məlumatlar, axtarışlarınızın və təhlillərinizin məzmunu olmadan.",
+  "askButton": "Bu təhlil haqqında soruşun",
+  "askTitle": "{symbol} haqqında suallar",
+  "askIntro": "Təhlil haqqında istənilən sualı verin: risk nə deməkdir, proqnozu nə dəyişə bilər, rəqəm necə hesablanıb. Cavablar bu təhlilə əsaslanır və investisiya məsləhəti deyil.",
+  "askHint": "Sual verin…",
+  "askSend": "Göndər",
+  "askThinking": "Düşünür…",
+  "askSuggest1": "Ən böyük risk nədir?",
+  "askSuggest2": "Proqnozu nə dəyişə bilər?",
+  "askSuggest3": "Sadə dillə izah et",
+  "askMaxReached": "Bu, həmin təhlil üçün son sual idi. Daha çox soruşmaq üçün yeni təhlil yaradın.",
+  "errAskLimit": "Bugünkü sual limitinə çatdınız. Lütfən, sabah yenidən cəhd edin."
 }

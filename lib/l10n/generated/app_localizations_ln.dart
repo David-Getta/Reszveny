@@ -1573,40 +1573,41 @@ class AppLocalizationsLn extends AppLocalizations {
       'Mbala boni basalelaka biloko mpe ba-rapport ya ba-erreur, kozanga ba-donnée ya moko to makambo ya bolukiluki mpe ba-analyse na yo.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Tuna mituna na ntina ya analyse oyo';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Mituna na ntina ya $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Tuna nyonso oyo olingi na ntina ya analyse: likama moko elakisi nini, nini ekoki kobongola makanisi ya mikolo ezali koya, ndenge motango moko etangamaki. Biyano esimbami na analyse oyo, mpe ezali toli ya kotia mbɔngɔ te.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Komá motuna…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tinda';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ezali kokanisa…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Likama monene ezali nini?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 =>
+      'Nini ekoki kobongola makanisi ya mikolo ezali koya?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Limbolá yango na ndenge ya pɛtɛɛ';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Wana ezalaki motuna ya nsuka mpo na analyse oyo. Bimisa analyse ya sika mpo na kotuna lisusu.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi.';
 }

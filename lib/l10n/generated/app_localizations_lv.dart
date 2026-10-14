@@ -1601,40 +1601,40 @@ class AppLocalizationsLv extends AppLocalizations {
       'Cik bieži tiek izmantotas funkcijas, un kļūdu ziņojumi — bez personas datiem vai jūsu meklējumu un analīžu satura.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Uzdot jautājumu par analīzi';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Jautājumi par $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Jautājiet jebko par analīzi: ko nozīmē kāds risks, kas varētu mainīt perspektīvu, kā aprēķināts kāds skaitlis. Atbildes balstās uz šo analīzi un nav ieguldījumu konsultācija.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Uzdodiet jautājumu…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Sūtīt';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Domā…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kāds ir lielākais risks?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Kas varētu mainīt perspektīvu?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Paskaidro vienkāršiem vārdiem';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Tas bija pēdējais jautājums par šo analīzi. Lai jautātu vēl, ģenerējiet jaunu analīzi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
 }

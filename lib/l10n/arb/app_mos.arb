@@ -427,5 +427,16 @@
   "telemetryAllow": "Sak",
   "telemetryDecline": "Ayo, barka",
   "telemetrySetting": "Sõdb sẽn pa tar yʋʋr ne yel-wẽns kibay",
-  "telemetrySettingHint": "Wakat a wããn la b tʋmd ne tʋʋm-teedã ne yel-wẽns kibay, sẽn pa tar fo meng kibay wall fo bʋʋsgo ne fo vɛɛsgã pʋgẽ bũmb."
+  "telemetrySettingHint": "Wakat a wããn la b tʋmd ne tʋʋm-teedã ne yel-wẽns kibay, sẽn pa tar fo meng kibay wall fo bʋʋsgo ne fo vɛɛsgã pʋgẽ bũmb.",
+  "askButton": "Sok vɛɛsg kãngã wɛɛngẽ",
+  "askTitle": "Sokre: {symbol}",
+  "askIntro": "Sok bũmb fãa vɛɛsgã wɛɛngẽ: zu-loeeg a yembr võore, bũmb ning sẽn tõe n tedg beoogã ges-taoore, la b sẽn maan to-to n paam sõor a yembre. Leokrã zĩnda vɛɛsg kãngã zugu, la b pa sagls ligd kẽesg wɛɛngẽ ye.",
+  "askHint": "Sok sokre…",
+  "askSend": "Tʋm",
+  "askThinking": "M tagsda…",
+  "askSuggest1": "Zu-loeeg ning sẽn yaa kãsengã yaa bõe?",
+  "askSuggest2": "Bõe n tõe n tedg beoogã ges-taoore?",
+  "askSuggest3": "Wilg-m-a ne gom-biis sẽn yaa nana",
+  "askMaxReached": "Woto la sokr a yaoolem vɛɛsg kãngã yĩnga. Maan vɛɛsg-paalg n paam n le sok.",
+  "errAskLimit": "Rũndã sokr sõorã sa. Le makr beoogo."
 }

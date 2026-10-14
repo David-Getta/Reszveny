@@ -427,5 +427,16 @@
   "telemetryAllow": "Idinaké",
   "telemetryDecline": "Ora, matur nuwun",
   "telemetrySetting": "Statistik anonim lan laporan aplikasi macet",
-  "telemetrySettingHint": "Sepira kerepé fitur digunakaké lan laporan kasalahan, tanpa data pribadhi utawa isi panelusuran lan analisismu."
+  "telemetrySettingHint": "Sepira kerepé fitur digunakaké lan laporan kasalahan, tanpa data pribadhi utawa isi panelusuran lan analisismu.",
+  "askButton": "Takon babagan analisis iki",
+  "askTitle": "Pitakon babagan {symbol}",
+  "askIntro": "Takon apa waé babagan analisis iki: apa tegesé sawijining risiko, apa sing bisa ngowahi prospeké, kepriyé sawijining angka diétung. Wangsulané adhedhasar analisis iki lan dudu saran investasi.",
+  "askHint": "Takon apa waé…",
+  "askSend": "Kirim",
+  "askThinking": "Lagi mikir…",
+  "askSuggest1": "Apa risiko sing paling gedhé?",
+  "askSuggest2": "Apa sing bisa ngowahi prospeké?",
+  "askSuggest3": "Jelasna nganggo basa sing gampang",
+  "askMaxReached": "Kuwi pitakon pungkasan kanggo analisis iki. Gawe analisis anyar yen arep takon manèh.",
+  "errAskLimit": "Watesan pitakon dina iki wis entek. Coba maneh sesuk."
 }

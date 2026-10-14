@@ -427,5 +427,16 @@
   "telemetryAllow": "Kkiriza",
   "telemetryDecline": "Nedda, weebale",
   "telemetrySetting": "Ebibalo ebitaliiko linnya n'alipoota z'okugwa kwa pulogulaamu",
-  "telemetrySettingHint": "Emirundi ebintu gye bikozesebwa n'alipoota z'ensobi, awatali bikukwatako ku bubwo oba ebiri mu kunoonya kwo n'okwekenneenya kwo."
+  "telemetrySettingHint": "Emirundi ebintu gye bikozesebwa n'alipoota z'ensobi, awatali bikukwatako ku bubwo oba ebiri mu kunoonya kwo n'okwekenneenya kwo.",
+  "askButton": "Buuza ku kwekenneenya kuno",
+  "askTitle": "Ebibuuzo ku {symbol}",
+  "askIntro": "Buuza kyonna ku kwekenneenya: akabi akamu kategeeza ki, kiki ekiyinza okukyusa ebisuubirwa, ennamba emu yabalibwa etya. Okuddamu kwesigamiziddwa ku kwekenneenya kuno, era si magezi ga kusiga nsimbi.",
+  "askHint": "Buuza ekibuuzo…",
+  "askSend": "Weereza",
+  "askThinking": "Kirowooza…",
+  "askSuggest1": "Kabi ki akasinga obunene?",
+  "askSuggest2": "Kiki ekiyinza okukyusa ebisuubirwa?",
+  "askSuggest3": "Kinnyonnyole mu ngeri ennyangu",
+  "askMaxReached": "Ekyo kye kibuuzo ekisembayo ku kwekenneenya kuno. Kola okwekenneenya okupya okubuuza ebirala.",
+  "errAskLimit": "Otuuse ku kkomo ly'ebibuuzo bya leero. Gezaako nate enkya."
 }

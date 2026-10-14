@@ -1569,40 +1569,40 @@ class AppLocalizationsAf extends AppLocalizations {
       'Hoe gereeld funksies gebruik word en foutverslae, sonder persoonlike data of die inhoud van jou soektogte en ontledings.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Vra oor hierdie ontleding';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Vrae oor $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Vra enigiets oor die ontleding: wat ’n risiko beteken, wat die vooruitsigte sou verander, hoe ’n syfer bereken is. Die antwoorde is gebaseer op hierdie ontleding en is nie beleggingsadvies nie.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Vra ’n vraag…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Stuur';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Dink tans…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Wat is die grootste risiko?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Wat sou die vooruitsigte verander?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Verduidelik dit in eenvoudige taal';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Dit was die laaste vraag vir hierdie ontleding. Skep ’n nuwe ontleding om meer te vra.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Jy het vandag se limiet vir vrae bereik. Probeer asseblief môre weer.';
 }

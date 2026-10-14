@@ -1562,40 +1562,39 @@ class AppLocalizationsFf extends AppLocalizations {
       'No kuuɗe huutortee ɗoon e ɗoon e kabaruuji juumre, tawa humpito keeriiɗo walla loowdi ɗaɓɓitaaɗe e ƴeewndooji maa alaa.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Naamnu dow ƴeewndo ngoo';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Naamne dow $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Naamno kala ko faati e ƴeewndo ngoo: ko kulol woo firti, ko waawi waylude ko yiyetee yeeso, no limoore woo hiisiraa. Jaabawuuji ɗii tuugii ko e ƴeewndo ngoo, wonaa kadi wasiya e investisman.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Naamno naamne…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Neldu';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ina miijoo…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ko honɗum woni kulol ɓurngol mawnude?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ko honɗum waawi waylude ko yiyetee yeeso?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Firir ɗum e haala newiiɗa';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ɗuum ko naamne cakkitiiɗe ƴeewndo ngoo. Waɗ ƴeewndo kesoo ngam naamnaade goɗɗum.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'A hewtii keerol naamne hannde. Fuɗɗito janngo.';
 }

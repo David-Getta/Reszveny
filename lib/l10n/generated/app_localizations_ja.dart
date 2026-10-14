@@ -1517,40 +1517,38 @@ class AppLocalizationsJa extends AppLocalizations {
   String get telemetrySettingHint => '機能の使用頻度とエラーレポート。個人データや検索・分析の内容は含まれません。';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'この分析について質問';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol についての質問';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      '分析について何でも質問できます。リスクの意味、見通しを変えうる要因、数値の算出方法など。回答はこの分析に基づくもので、投資助言ではありません。';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => '質問を入力…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => '送信';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => '考え中…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => '最大のリスクは？';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => '見通しを変える要因は？';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'わかりやすく説明して';
 
   @override
-  String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+  String get askMaxReached => 'この分析への質問はこれが最後です。さらに質問するには、新しい分析を生成してください。';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => '本日の質問の上限に達しました。明日もう一度お試しください。';
 }

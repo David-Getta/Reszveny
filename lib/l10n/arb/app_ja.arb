@@ -427,5 +427,16 @@
   "telemetryAllow": "許可",
   "telemetryDecline": "いいえ、結構です",
   "telemetrySetting": "匿名の統計とクラッシュレポート",
-  "telemetrySettingHint": "機能の使用頻度とエラーレポート。個人データや検索・分析の内容は含まれません。"
+  "telemetrySettingHint": "機能の使用頻度とエラーレポート。個人データや検索・分析の内容は含まれません。",
+  "askButton": "この分析について質問",
+  "askTitle": "{symbol} についての質問",
+  "askIntro": "分析について何でも質問できます。リスクの意味、見通しを変えうる要因、数値の算出方法など。回答はこの分析に基づくもので、投資助言ではありません。",
+  "askHint": "質問を入力…",
+  "askSend": "送信",
+  "askThinking": "考え中…",
+  "askSuggest1": "最大のリスクは？",
+  "askSuggest2": "見通しを変える要因は？",
+  "askSuggest3": "わかりやすく説明して",
+  "askMaxReached": "この分析への質問はこれが最後です。さらに質問するには、新しい分析を生成してください。",
+  "errAskLimit": "本日の質問の上限に達しました。明日もう一度お試しください。"
 }

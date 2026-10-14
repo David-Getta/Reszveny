@@ -427,5 +427,16 @@
   "telemetryAllow": "Tuguti",
   "telemetryDecline": "Indi, salamat",
   "telemetrySetting": "Anonymous nga estadistika kag mga crash report",
-  "telemetrySettingHint": "Kon daw ano kasubsob ginagamit ang mga feature kag mga report sang sayop, wala sang personal nga datos ukon sulod sang imo mga pagpangita kag analisis."
+  "telemetrySettingHint": "Kon daw ano kasubsob ginagamit ang mga feature kag mga report sang sayop, wala sang personal nga datos ukon sulod sang imo mga pagpangita kag analisis.",
+  "askButton": "Mamangkot parte sa sini nga analisis",
+  "askTitle": "Mga pamangkot parte sa {symbol}",
+  "askIntro": "Pamangkot sang bisan ano parte sa analisis: ano ang buot silingon sang isa ka risgo, ano ang makabag-o sang palaabuton, paano nakuha ang isa ka numero. Ang mga sabat base sa sini nga analisis kag indi laygay sa pag-invest.",
+  "askHint": "Magpamangkot…",
+  "askSend": "Ipadala",
+  "askThinking": "Nagapanumdom…",
+  "askSuggest1": "Ano ang pinakadako nga risgo?",
+  "askSuggest2": "Ano ang makabag-o sang palaabuton?",
+  "askSuggest3": "Ipaathag ini sa simple nga paagi",
+  "askMaxReached": "Amo ato ang katapusan nga pamangkot para sa sini nga analisis. Maghimo sang bag-o nga analisis para makapamangkot pa.",
+  "errAskLimit": "Naabot mo na ang limitasyon sang mga pamangkot subong nga adlaw. Tilawi liwat buwas."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Rugsat ber",
   "telemetryDecline": "Ýok, sag boluň",
   "telemetrySetting": "Anonim statistika we näsazlyk hasabatlary",
-  "telemetrySettingHint": "Funksiýalaryň näçe gezek ulanylýandygy we ýalňyşlyk hasabatlary, şahsy maglumatlarsyz we gözlegleriňiziň hem-de seljermeleriňiziň mazmunysyz."
+  "telemetrySettingHint": "Funksiýalaryň näçe gezek ulanylýandygy we ýalňyşlyk hasabatlary, şahsy maglumatlarsyz we gözlegleriňiziň hem-de seljermeleriňiziň mazmunysyz.",
+  "askButton": "Bu seljerme barada soraň",
+  "askTitle": "{symbol} barada soraglar",
+  "askIntro": "Seljerme barada islendik zady soraň: bir töwekgelçiligiň nämäni aňladýandygyny, çaklamany nämäniň üýtgedip biljekdigini, bir sanyň nähili hasaplanandygyny. Jogaplar bu seljermä esaslanýar we maýa goýum maslahaty däldir.",
+  "askHint": "Sorag beriň…",
+  "askSend": "Iber",
+  "askThinking": "Pikirlenýär…",
+  "askSuggest1": "Iň uly töwekgelçilik näme?",
+  "askSuggest2": "Çaklamany näme üýtgedip biler?",
+  "askSuggest3": "Ýönekeý dilde düşündir",
+  "askMaxReached": "Bu seljerme üçin iň soňky sorag şudy. Has köp soramak üçin täze seljerme dörediň.",
+  "errAskLimit": "Şu günki sorag çägiňize ýetdiňiz. Ertir täzeden synanyşyň."
 }

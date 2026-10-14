@@ -427,5 +427,16 @@
   "telemetryAllow": "Gbà láàyè",
   "telemetryDecline": "Rárá o ṣé",
   "telemetrySetting": "Ìṣirò láìdárúkọ àti ìròyìn ìjàlù",
-  "telemetrySettingHint": "Ìgbà mélòó ni a ń lo àwọn ẹ̀yà àti ìròyìn àṣìṣe, láìsí dátà ara ẹni tàbí àkóónú àwọn ìwádìí àti ìtúpalẹ̀ rẹ."
+  "telemetrySettingHint": "Ìgbà mélòó ni a ń lo àwọn ẹ̀yà àti ìròyìn àṣìṣe, láìsí dátà ara ẹni tàbí àkóónú àwọn ìwádìí àti ìtúpalẹ̀ rẹ.",
+  "askButton": "Béèrè nípa ìtúpalẹ̀ yìí",
+  "askTitle": "Àwọn ìbéèrè nípa {symbol}",
+  "askIntro": "Béèrè ohunkóhun nípa ìtúpalẹ̀ náà: ohun tí ewu kan túmọ̀ sí, ohun tí ó lè yí ìrísí ọjọ́ iwájú padà, bí a ṣe ṣírò nọ́ńbà kan. Àwọn ìdáhùn dá lórí ìtúpalẹ̀ yìí, kì í sì í ṣe ìmọ̀ràn ìdókòwò.",
+  "askHint": "Béèrè ìbéèrè kan…",
+  "askSend": "Fi ránṣẹ́",
+  "askThinking": "Ó ń ronú…",
+  "askSuggest1": "Kí ni ewu tó tóbi jùlọ?",
+  "askSuggest2": "Kí ló lè yí ìrísí ọjọ́ iwájú padà?",
+  "askSuggest3": "Ṣàlàyé rẹ̀ ní ọ̀nà tó rọrùn",
+  "askMaxReached": "Ìyẹn ni ìbéèrè tó kẹ́yìn fún ìtúpalẹ̀ yìí. Ṣe ìtúpalẹ̀ tuntun láti béèrè sí i.",
+  "errAskLimit": "O ti dé ìwọ̀n ìbéèrè ti òní. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i lọ́la."
 }

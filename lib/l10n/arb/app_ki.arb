@@ -427,5 +427,16 @@
   "telemetryAllow": "Ĩtĩkĩria",
   "telemetryDecline": "Aca, nĩ wega",
   "telemetrySetting": "Ũhoro ũtarĩ na rĩĩtwa na ripoti cia gũthũka",
-  "telemetrySettingHint": "Ũrĩa mawĩra mahũthagĩrwo kaingĩ na ripoti cia mahĩtia, hatarĩ ũhoro wa mwene kana ũrĩa ũrĩ thĩinĩ wa macaria na ũthuthuria waku."
+  "telemetrySettingHint": "Ũrĩa mawĩra mahũthagĩrwo kaingĩ na ripoti cia mahĩtia, hatarĩ ũhoro wa mwene kana ũrĩa ũrĩ thĩinĩ wa macaria na ũthuthuria waku.",
+  "askButton": "Ũria ũhoro wa ũthuthuria ũyũ",
+  "askTitle": "Ciũria igiĩ {symbol}",
+  "askIntro": "Ũria ũndũ o wothe ũkoniĩ ũthuthuria ũyũ: ũgwati ũmwe nĩ ũrĩ na ũguo ũrĩkũ, nĩ kĩĩ kĩngĩgarũra ũrĩa maũndũ makoneka, namba ĩmwe yatarirwo atĩa. Macookio maya mamĩtĩte ũthuthuria ũyũ, na ti ũtaaro wa investment.",
+  "askHint": "Andĩka kĩũria…",
+  "askSend": "Tũma",
+  "askThinking": "Ndĩrĩĩciria…",
+  "askSuggest1": "Ũgwati ũrĩa mũnene mũno nĩ ũrĩkũ?",
+  "askSuggest2": "Nĩ kĩĩ kĩngĩgarũra ũrĩa maũndũ makoneka?",
+  "askSuggest3": "Taarĩria ũhoro ũyũ na njĩra ĩhũthũ",
+  "askMaxReached": "Kĩu nĩkĩo kĩũria kĩa mũthia kĩa ũthuthuria ũyũ. Thondeka ũthuthuria mwerũ nĩguo ũũrie ingĩ.",
+  "errAskLimit": "Nĩũkinyĩte mũhaka wa ciũria cia ũmũthĩ. Geria rĩngĩ rũciũ."
 }

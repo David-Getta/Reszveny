@@ -1562,40 +1562,40 @@ class AppLocalizationsMy extends AppLocalizations {
       'လုပ်ဆောင်ချက်များကို မည်မျှ မကြာခဏ အသုံးပြုသည်နှင့် အမှားအစီရင်ခံစာများ၊ ကိုယ်ရေးအချက်အလက် သို့မဟုတ် သင့်ရှာဖွေမှုများနှင့် သုံးသပ်ချက်များ၏ အကြောင်းအရာ မပါဘဲ။';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'ဤသုံးသပ်ချက်အကြောင်း မေးရန်';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol အကြောင်း မေးခွန်းများ';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'သုံးသပ်ချက်အကြောင်း ဘာမဆို မေးနိုင်ပါသည်- အန္တရာယ်တစ်ခု၏ အဓိပ္ပာယ်၊ အလားအလာကို ပြောင်းလဲစေနိုင်သည့်အရာ၊ ကိန်းဂဏန်းတစ်ခုကို တွက်ချက်ပုံ။ အဖြေများသည် ဤသုံးသပ်ချက်အပေါ် အခြေခံပြီး ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'မေးခွန်းတစ်ခု မေးပါ…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'ပို့ရန်';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'စဉ်းစားနေသည်…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'အကြီးဆုံး အန္တရာယ်က ဘာလဲ။';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'ဘာက အလားအလာကို ပြောင်းလဲစေနိုင်သလဲ။';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'ရိုးရှင်းစွာ ရှင်းပြပေးပါ';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'ဤသုံးသပ်ချက်အတွက် နောက်ဆုံးမေးခွန်း ဖြစ်ပါသည်။ ထပ်မေးလိုပါက သုံးသပ်ချက်အသစ် ထုတ်ပါ။';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'ယနေ့အတွက် မေးခွန်းကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
 }

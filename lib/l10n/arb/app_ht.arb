@@ -427,5 +427,16 @@
   "telemetryAllow": "Pèmèt",
   "telemetryDecline": "Non, mèsi",
   "telemetrySetting": "Estatistik anonim ak rapò sou pann",
-  "telemetrySettingHint": "Konbyen fwa yo itilize fonksyon yo ak rapò erè, san done pèsonèl ni kontni rechèch ak analiz ou yo."
+  "telemetrySettingHint": "Konbyen fwa yo itilize fonksyon yo ak rapò erè, san done pèsonèl ni kontni rechèch ak analiz ou yo.",
+  "askButton": "Poze kesyon sou analiz sa a",
+  "askTitle": "Kesyon sou {symbol}",
+  "askIntro": "Poze nenpòt kesyon sou analiz la: sa yon risk vle di, kisa ki ta ka chanje pèspektiv yo, kijan yo kalkile yon chif. Repons yo baze sou analiz sa a, epi se pa yon konsèy envestisman.",
+  "askHint": "Ekri kesyon ou…",
+  "askSend": "Voye",
+  "askThinking": "M ap reflechi…",
+  "askSuggest1": "Ki pi gwo risk la?",
+  "askSuggest2": "Kisa ki ta ka chanje pèspektiv yo?",
+  "askSuggest3": "Eksplike l avèk mo senp",
+  "askMaxReached": "Sa se te dènye kesyon pou analiz sa a. Jenere yon nouvo analiz pou w poze plis kesyon.",
+  "errAskLimit": "Ou rive nan limit kesyon pou jodi a. Eseye ankò demen."
 }

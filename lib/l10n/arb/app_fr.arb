@@ -427,5 +427,16 @@
   "telemetryAllow": "Autoriser",
   "telemetryDecline": "Non merci",
   "telemetrySetting": "Statistiques anonymes et rapports de plantage",
-  "telemetrySettingHint": "La fréquence d'utilisation des fonctionnalités et les rapports d'erreurs, sans données personnelles ni contenu de vos recherches et analyses."
+  "telemetrySettingHint": "La fréquence d'utilisation des fonctionnalités et les rapports d'erreurs, sans données personnelles ni contenu de vos recherches et analyses.",
+  "askButton": "Poser une question sur cette analyse",
+  "askTitle": "Questions sur {symbol}",
+  "askIntro": "Posez toutes vos questions sur l’analyse : ce que signifie un risque, ce qui pourrait changer les perspectives, comment un chiffre a été obtenu. Les réponses se fondent sur cette analyse et ne constituent pas un conseil en investissement.",
+  "askHint": "Posez une question…",
+  "askSend": "Envoyer",
+  "askThinking": "Réflexion en cours…",
+  "askSuggest1": "Quel est le plus grand risque ?",
+  "askSuggest2": "Qu’est-ce qui changerait les perspectives ?",
+  "askSuggest3": "Explique-moi simplement",
+  "askMaxReached": "C’était la dernière question pour cette analyse. Créez une nouvelle analyse pour en poser d’autres.",
+  "errAskLimit": "Vous avez atteint la limite de questions pour aujourd’hui. Réessayez demain."
 }

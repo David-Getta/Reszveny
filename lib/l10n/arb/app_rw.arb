@@ -427,5 +427,16 @@
   "telemetryAllow": "Emera",
   "telemetryDecline": "Oya, urakoze",
   "telemetrySetting": "Imibare itagaragaza umwirondoro na raporo z'ihagarara",
-  "telemetrySettingHint": "Inshuro ibikorwa bikoreshwa na raporo z'amakosa, nta makuru bwite cyangwa ibikubiye mu byo washakishije n'amasesengura yawe."
+  "telemetrySettingHint": "Inshuro ibikorwa bikoreshwa na raporo z'amakosa, nta makuru bwite cyangwa ibikubiye mu byo washakishije n'amasesengura yawe.",
+  "askButton": "Baza ku bijyanye n'iri sesengura",
+  "askTitle": "Ibibazo kuri {symbol}",
+  "askIntro": "Baza icyo ushaka cyose ku isesengura: icyo ibyago runaka bisobanura, icyahindura icyerekezo, uko umubare runaka wabazwe. Ibisubizo bishingiye kuri iri sesengura, kandi si inama yo gushora imari.",
+  "askHint": "Baza ikibazo…",
+  "askSend": "Ohereza",
+  "askThinking": "Ndimo gutekereza…",
+  "askSuggest1": "Ibyago bikomeye kurusha ibindi ni ibihe?",
+  "askSuggest2": "Ni iki cyahindura icyerekezo?",
+  "askSuggest3": "Bisobanure mu buryo bworoshye",
+  "askMaxReached": "Icyo cyari ikibazo cya nyuma kuri iri sesengura. Kora isesengura rishya kugira ngo ubaze ibindi.",
+  "errAskLimit": "Wageze ku mubare ntarengwa w'ibibazo by'uyu munsi. Ongera ugerageze ejo."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Dovoli",
   "telemetryDecline": "Ne, hvala",
   "telemetrySetting": "Anonimna statistika in poročila o zrušitvah",
-  "telemetrySettingHint": "Kako pogosto se uporabljajo funkcije in poročila o napakah – brez osebnih podatkov ali vsebine tvojih iskanj in analiz."
+  "telemetrySettingHint": "Kako pogosto se uporabljajo funkcije in poročila o napakah – brez osebnih podatkov ali vsebine tvojih iskanj in analiz.",
+  "askButton": "Vprašajte o tej analizi",
+  "askTitle": "Vprašanja: {symbol}",
+  "askIntro": "Vprašajte karkoli o analizi: kaj pomeni določeno tveganje, kaj bi lahko spremenilo obete, kako je bila izračunana določena številka. Odgovori temeljijo na tej analizi in niso naložbeni nasvet.",
+  "askHint": "Postavite vprašanje…",
+  "askSend": "Pošlji",
+  "askThinking": "Razmišljam…",
+  "askSuggest1": "Kaj je največje tveganje?",
+  "askSuggest2": "Kaj bi lahko spremenilo obete?",
+  "askSuggest3": "Razloži preprosto",
+  "askMaxReached": "To je bilo zadnje vprašanje za to analizo. Če želite vprašati še kaj, ustvarite novo analizo.",
+  "errAskLimit": "Dosegli ste današnjo omejitev vprašanj. Poskusite znova jutri."
 }

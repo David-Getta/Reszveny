@@ -427,5 +427,16 @@
   "telemetryAllow": "Leisti",
   "telemetryDecline": "Ne, ačiū",
   "telemetrySetting": "Anoniminė statistika ir strigčių ataskaitos",
-  "telemetrySettingHint": "Kaip dažnai naudojamos funkcijos ir klaidų ataskaitos, be asmens duomenų ar jūsų paieškų ir analizių turinio."
+  "telemetrySettingHint": "Kaip dažnai naudojamos funkcijos ir klaidų ataskaitos, be asmens duomenų ar jūsų paieškų ir analizių turinio.",
+  "askButton": "Klauskite apie šią analizę",
+  "askTitle": "Klausimai apie {symbol}",
+  "askIntro": "Klauskite bet ko apie analizę: ką reiškia tam tikra rizika, kas galėtų pakeisti perspektyvas, kaip apskaičiuotas tam tikras skaičius. Atsakymai pagrįsti šia analize ir nėra investavimo rekomendacija.",
+  "askHint": "Užduokite klausimą…",
+  "askSend": "Siųsti",
+  "askThinking": "Galvojama…",
+  "askSuggest1": "Kokia didžiausia rizika?",
+  "askSuggest2": "Kas galėtų pakeisti perspektyvas?",
+  "askSuggest3": "Paaiškink paprastai",
+  "askMaxReached": "Tai buvo paskutinis šios analizės klausimas. Norėdami klausti daugiau, sukurkite naują analizę.",
+  "errAskLimit": "Pasiekėte šiandienos klausimų limitą. Bandykite dar kartą rytoj."
 }

@@ -1575,40 +1575,40 @@ class AppLocalizationsLg extends AppLocalizations {
       'Emirundi ebintu gye bikozesebwa n\'alipoota z\'ensobi, awatali bikukwatako ku bubwo oba ebiri mu kunoonya kwo n\'okwekenneenya kwo.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Buuza ku kwekenneenya kuno';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ebibuuzo ku $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Buuza kyonna ku kwekenneenya: akabi akamu kategeeza ki, kiki ekiyinza okukyusa ebisuubirwa, ennamba emu yabalibwa etya. Okuddamu kwesigamiziddwa ku kwekenneenya kuno, era si magezi ga kusiga nsimbi.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Buuza ekibuuzo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Weereza';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Kirowooza…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kabi ki akasinga obunene?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Kiki ekiyinza okukyusa ebisuubirwa?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Kinnyonnyole mu ngeri ennyangu';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ekyo kye kibuuzo ekisembayo ku kwekenneenya kuno. Kola okwekenneenya okupya okubuuza ebirala.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Otuuse ku kkomo ly\'ebibuuzo bya leero. Gezaako nate enkya.';
 }

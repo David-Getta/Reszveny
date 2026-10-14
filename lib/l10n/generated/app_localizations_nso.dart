@@ -1577,40 +1577,40 @@ class AppLocalizationsNso extends AppLocalizations {
       'Gore dikarolo di šomišwa gakae le dipego tša diphošo, ka ntle le tshedimošo ya sephiri goba diteng tša dinyakišišo le ditshekatsheko tša gago.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Botšiša ka tshekatsheko ye';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Dipotšišo ka $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Botšiša se sengwe le se sengwe ka tshekatsheko: seo kotsi e itšego e se bolelago, seo se ka fetošago tebelelo, le ka moo palo e itšego e hweditšwego ka gona. Dikarabo di theilwe godimo ga tshekatsheko ye gomme ga se keletšo ya peeletšo.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Botšiša potšišo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Romela';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ke a nagana…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kotsi ye kgolo kudu ke efe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ke eng seo se ka fetošago tebelelo?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'E hlaloše ka mantšu a bonolo';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Yeo e be e le potšišo ya mafelelo ya tshekatsheko ye. Tšweletša tshekatsheko ye mpsha go botšiša tše dingwe.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'O fihleletše moedi wa dipotšišo wa lehono. Leka gape gosasa.';
 }

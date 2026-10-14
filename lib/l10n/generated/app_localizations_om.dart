@@ -1571,40 +1571,41 @@ class AppLocalizationsOm extends AppLocalizations {
       'Amaloonni hammam akka itti fayyadaman fi gabaasa dogoggoraa, odeeffannoo dhuunfaa yookaan qabiyyee barbaacha fi xiinxala kee malee.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Waa\'ee xiinxala kanaa gaafadhu';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Gaaffilee waa\'ee $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Waa\'ee xiinxalaa waan barbaadde gaafadhu: balaan tokko maal akka jechuu ta\'e, waan ilaalcha gara fuulduraa jijjiiruu danda\'u, lakkoofsi tokko akkamitti akka herregame. Deebiiwwan xiinxala kana irratti hundaa\'u, akkasumas gorsa invastimantii miti.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Gaaffii gaafadhu…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Ergi';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Yaadaa jira…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Balaan guddaan maali?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 =>
+      'Ilaalcha gara fuulduraa maaltu jijjiiruu danda\'a?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Salphaatti ibsi';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Kun gaaffii xiinxala kanaaf dhumaa ture. Dabalataan gaafachuuf xiinxala haaraa uumi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Daangaa gaaffii har\'aa geessee jirta. Boru irra deebi\'ii yaali.';
 }

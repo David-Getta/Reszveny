@@ -427,5 +427,16 @@
   "telemetryAllow": "Bvumira",
   "telemetryDecline": "Kwete, ndatenda",
   "telemetrySetting": "Nhamba dzisingazivikanwe nemishumo yekukanganisika",
-  "telemetrySettingHint": "Kuti zvinhu zvinoshandiswa kangani nemishumo yezvikanganiso, pasina ruzivo rwako rwega kana zviri mukutsvaga kwako neongororo dzako."
+  "telemetrySettingHint": "Kuti zvinhu zvinoshandiswa kangani nemishumo yezvikanganiso, pasina ruzivo rwako rwega kana zviri mukutsvaga kwako neongororo dzako.",
+  "askButton": "Bvunza nezve ongororo iyi",
+  "askTitle": "Mibvunzo nezve {symbol}",
+  "askIntro": "Bvunza chero chinhu nezve ongororo iyi: zvinorehwa nenjodzi, zvingashandura maonero, kuti nhamba yakawanikwa sei. Mhinduro dzinobva paongororo iyi uye hadzisi zano rekuisa mari.",
+  "askHint": "Bvunza mubvunzo…",
+  "askSend": "Tumira",
+  "askThinking": "Ndiri kufunga…",
+  "askSuggest1": "Ndeipi njodzi huru kupfuura dzose?",
+  "askSuggest2": "Chii chingashandura maonero?",
+  "askSuggest3": "Tsanangura nenzira iri nyore",
+  "askMaxReached": "Uyu ndiwo waive mubvunzo wekupedzisira weongororo iyi. Gadzira ongororo itsva kuti ubvunze zvimwe.",
+  "errAskLimit": "Wasvika pamuganhu wemibvunzo wanhasi. Edza zvakare mangwana."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Oggolow",
   "telemetryDecline": "Maya, mahadsanid",
   "telemetrySetting": "Tirakoob aan magac lahayn iyo warbixinnada burburka",
-  "telemetrySettingHint": "Inta jeer ee astaamaha la isticmaalo iyo warbixinnada khaladaadka, iyadoo aan lahayn xog shakhsiyeed ama nuxurka raadintaada iyo falanqaynahaaga."
+  "telemetrySettingHint": "Inta jeer ee astaamaha la isticmaalo iyo warbixinnada khaladaadka, iyadoo aan lahayn xog shakhsiyeed ama nuxurka raadintaada iyo falanqaynahaaga.",
+  "askButton": "Wax ka weydii falanqayntan",
+  "askTitle": "Su'aalo ku saabsan {symbol}",
+  "askIntro": "Wax kasta ka weydii falanqaynta: waxa khatar ka dhigan tahay, waxa beddeli kara mustaqbalka la filayo, sida tiro loo xisaabiyay. Jawaabuhu waxay ku salaysan yihiin falanqayntan mana aha talo maalgashi.",
+  "askHint": "Weydii su'aal…",
+  "askSend": "Dir",
+  "askThinking": "Waan fekerayaa…",
+  "askSuggest1": "Waa maxay khatarta ugu weyn?",
+  "askSuggest2": "Maxaa beddeli kara mustaqbalka la filayo?",
+  "askSuggest3": "Si fudud ii sharax",
+  "askMaxReached": "Taasi waxay ahayd su'aashii ugu dambaysay ee falanqayntan. Samee falanqayn cusub si aad wax badan u weydiiso.",
+  "errAskLimit": "Waxaad gaadhay xadka su'aalaha ee maanta. Fadlan isku day mar kale berri."
 }

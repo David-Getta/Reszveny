@@ -1570,40 +1570,40 @@ class AppLocalizationsLua extends AppLocalizations {
       'Misangu idibu benza ne midimu ne ba-rapport ya bilema, kakuyi malu a pa buebe anyi malu adi mu makebulula ne makonkonona ebe.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Ebeja bua dikonkonona edi';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Nkonko bua $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Ebeja tshionso bua dikonkonona: njiwu kampanda idi ileja tshinyi, tshinyi tshidi mua kushintulula malu a kumpala, mushindu uvua tshibalu kampanda tshibadibue. Mandamuna adi ashindamene pa dikonkonona edi, ne kaena mibelu ya kuteka mfranga.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Funda lukonko…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tuma';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Mu kuela meji…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Njiwu munene kupita yonso n\'kayi?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Tshinyi tshidi mua kushintulula malu a kumpala?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Umvuija bualu ebu mu mushindu mupepele';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Elu luvua lukonko lua ndekelu bua dikonkonona edi. Enza dikonkonona dipiadipia bua kuebeja kabidi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Ufiki ku mukalu wa nkonko ya lelu. Teta kabidi makelela.';
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Ruhusu",
   "telemetryDecline": "Hapana, asante",
   "telemetrySetting": "Takwimu zisizo na majina na ripoti za kuacha kufanya kazi",
-  "telemetrySettingHint": "Mara ngapi vipengele vinatumika na ripoti za hitilafu, bila data binafsi wala maudhui ya utafutaji na uchambuzi wako."
+  "telemetrySettingHint": "Mara ngapi vipengele vinatumika na ripoti za hitilafu, bila data binafsi wala maudhui ya utafutaji na uchambuzi wako.",
+  "askButton": "Uliza kuhusu uchambuzi huu",
+  "askTitle": "Maswali kuhusu {symbol}",
+  "askIntro": "Uliza chochote kuhusu uchambuzi: hatari fulani inamaanisha nini, nini kingebadilisha mtazamo, jinsi namba ilivyopatikana. Majibu yanatokana na uchambuzi huu na si ushauri wa uwekezaji.",
+  "askHint": "Uliza swali…",
+  "askSend": "Tuma",
+  "askThinking": "Inafikiri…",
+  "askSuggest1": "Hatari kubwa zaidi ni ipi?",
+  "askSuggest2": "Nini kingebadilisha mtazamo?",
+  "askSuggest3": "Nieleze kwa maneno rahisi",
+  "askMaxReached": "Hilo lilikuwa swali la mwisho kwa uchambuzi huu. Tengeneza uchambuzi mpya ili uulize zaidi.",
+  "errAskLimit": "Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho."
 }

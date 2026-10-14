@@ -427,5 +427,16 @@
   "telemetryAllow": "Permitir",
   "telemetryDecline": "No, gracias",
   "telemetrySetting": "Estadísticas anónimas e informes de fallos",
-  "telemetrySettingHint": "Con qué frecuencia se usan las funciones e informes de errores, sin datos personales ni el contenido de tus búsquedas y análisis."
+  "telemetrySettingHint": "Con qué frecuencia se usan las funciones e informes de errores, sin datos personales ni el contenido de tus búsquedas y análisis.",
+  "askButton": "Pregunta sobre este análisis",
+  "askTitle": "Preguntas sobre {symbol}",
+  "askIntro": "Pregunta lo que quieras sobre el análisis: qué significa un riesgo, qué cambiaría las perspectivas, cómo se ha calculado una cifra. Las respuestas se basan en este análisis y no constituyen asesoramiento de inversión.",
+  "askHint": "Escribe una pregunta…",
+  "askSend": "Enviar",
+  "askThinking": "Pensando…",
+  "askSuggest1": "¿Cuál es el mayor riesgo?",
+  "askSuggest2": "¿Qué cambiaría las perspectivas?",
+  "askSuggest3": "Explícalo con palabras sencillas",
+  "askMaxReached": "Esa era la última pregunta para este análisis. Crea un análisis nuevo para hacer más preguntas.",
+  "errAskLimit": "Has alcanzado el límite de preguntas de hoy. Vuelve a intentarlo mañana."
 }

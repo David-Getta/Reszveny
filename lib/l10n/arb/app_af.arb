@@ -427,5 +427,16 @@
   "telemetryAllow": "Laat toe",
   "telemetryDecline": "Nee dankie",
   "telemetrySetting": "Anonieme statistieke en omvalverslae",
-  "telemetrySettingHint": "Hoe gereeld funksies gebruik word en foutverslae, sonder persoonlike data of die inhoud van jou soektogte en ontledings."
+  "telemetrySettingHint": "Hoe gereeld funksies gebruik word en foutverslae, sonder persoonlike data of die inhoud van jou soektogte en ontledings.",
+  "askButton": "Vra oor hierdie ontleding",
+  "askTitle": "Vrae oor {symbol}",
+  "askIntro": "Vra enigiets oor die ontleding: wat ’n risiko beteken, wat die vooruitsigte sou verander, hoe ’n syfer bereken is. Die antwoorde is gebaseer op hierdie ontleding en is nie beleggingsadvies nie.",
+  "askHint": "Vra ’n vraag…",
+  "askSend": "Stuur",
+  "askThinking": "Dink tans…",
+  "askSuggest1": "Wat is die grootste risiko?",
+  "askSuggest2": "Wat sou die vooruitsigte verander?",
+  "askSuggest3": "Verduidelik dit in eenvoudige taal",
+  "askMaxReached": "Dit was die laaste vraag vir hierdie ontleding. Skep ’n nuwe ontleding om meer te vra.",
+  "errAskLimit": "Jy het vandag se limiet vir vrae bereik. Probeer asseblief môre weer."
 }

@@ -1570,40 +1570,40 @@ class AppLocalizationsEs extends AppLocalizations {
       'Con qué frecuencia se usan las funciones e informes de errores, sin datos personales ni el contenido de tus búsquedas y análisis.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Pregunta sobre este análisis';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Preguntas sobre $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pregunta lo que quieras sobre el análisis: qué significa un riesgo, qué cambiaría las perspectivas, cómo se ha calculado una cifra. Las respuestas se basan en este análisis y no constituyen asesoramiento de inversión.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Escribe una pregunta…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Enviar';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Pensando…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => '¿Cuál es el mayor riesgo?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => '¿Qué cambiaría las perspectivas?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explícalo con palabras sencillas';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Esa era la última pregunta para este análisis. Crea un análisis nuevo para hacer más preguntas.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Has alcanzado el límite de preguntas de hoy. Vuelve a intentarlo mañana.';
 }

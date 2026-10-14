@@ -1574,40 +1574,40 @@ class AppLocalizationsTa extends AppLocalizations {
       'அம்சங்கள் எவ்வளவு அடிக்கடி பயன்படுத்தப்படுகின்றன என்பதும் பிழை அறிக்கைகளும் — தனிப்பட்ட தரவோ உங்கள் தேடல்கள், பகுப்பாய்வுகளின் உள்ளடக்கமோ இல்லாமல்.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'இந்தப் பகுப்பாய்வு பற்றிக் கேளுங்கள்';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol பற்றிய கேள்விகள்';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'பகுப்பாய்வு பற்றி எதையும் கேளுங்கள்: ஒரு அபாயம் என்ன அர்த்தம், கண்ணோட்டத்தை எது மாற்றக்கூடும், ஒரு எண் எப்படிக் கணக்கிடப்பட்டது. பதில்கள் இந்தப் பகுப்பாய்வின் அடிப்படையிலானவை; இவை முதலீட்டு ஆலோசனை அல்ல.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'ஒரு கேள்வியைக் கேளுங்கள்…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'அனுப்பு';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'யோசிக்கிறது…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'மிகப் பெரிய அபாயம் எது?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'கண்ணோட்டத்தை எது மாற்றக்கூடும்?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'எளிமையாக விளக்கவும்';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'இந்தப் பகுப்பாய்வுக்கான கடைசி கேள்வி இதுதான். மேலும் கேட்க புதிய பகுப்பாய்வை உருவாக்கவும்.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'இன்றைய கேள்வி வரம்பை எட்டிவிட்டீர்கள். நாளை மீண்டும் முயலவும்.';
 }

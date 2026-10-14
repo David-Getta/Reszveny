@@ -427,5 +427,16 @@
   "telemetryAllow": "Idinan",
   "telemetryDecline": "Henteu, hatur nuhun",
   "telemetrySetting": "Statistik anonim jeung laporan kacilakaan aplikasi",
-  "telemetrySettingHint": "Sabaraha sering fitur dipaké jeung laporan kasalahan, tanpa data pribadi atawa eusi pamilarian jeung analisis anjeun."
+  "telemetrySettingHint": "Sabaraha sering fitur dipaké jeung laporan kasalahan, tanpa data pribadi atawa eusi pamilarian jeung analisis anjeun.",
+  "askButton": "Taroskeun ngeunaan analisis ieu",
+  "askTitle": "Patarosan ngeunaan {symbol}",
+  "askIntro": "Taroskeun naon waé ngeunaan analisis: naon hartina hiji résiko, naon nu bisa ngarobah prospek, kumaha hiji angka diitung. Jawabanana dumasar kana analisis ieu sarta lain naséhat investasi.",
+  "askHint": "Tulis patarosan…",
+  "askSend": "Kirim",
+  "askThinking": "Keur mikir…",
+  "askSuggest1": "Naon résiko panggedéna?",
+  "askSuggest2": "Naon nu bisa ngarobah prospek?",
+  "askSuggest3": "Jelaskeun sacara basajan",
+  "askMaxReached": "Éta patarosan panungtung pikeun analisis ieu. Jieun analisis anyar pikeun nanya deui.",
+  "errAskLimit": "Anjeun geus ngahontal wates patarosan poé ieu. Cobian deui isukan."
 }

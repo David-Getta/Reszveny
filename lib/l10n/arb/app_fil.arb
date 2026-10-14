@@ -427,5 +427,16 @@
   "telemetryAllow": "Payagan",
   "telemetryDecline": "Hindi, salamat",
   "telemetrySetting": "Anonymous na istatistika at mga crash report",
-  "telemetrySettingHint": "Kung gaano kadalas ginagamit ang mga feature at mga ulat ng error, nang walang personal na data o nilalaman ng iyong mga paghahanap at pagsusuri."
+  "telemetrySettingHint": "Kung gaano kadalas ginagamit ang mga feature at mga ulat ng error, nang walang personal na data o nilalaman ng iyong mga paghahanap at pagsusuri.",
+  "askButton": "Magtanong tungkol sa pagsusuring ito",
+  "askTitle": "Mga tanong tungkol sa {symbol}",
+  "askIntro": "Magtanong ng kahit ano tungkol sa pagsusuri: ano ang ibig sabihin ng isang panganib, ano ang makapagbabago sa pananaw, paano nakuha ang isang numero. Nakabatay ang mga sagot sa pagsusuring ito at hindi ito payo sa pamumuhunan.",
+  "askHint": "Magtanong…",
+  "askSend": "Ipadala",
+  "askThinking": "Nag-iisip…",
+  "askSuggest1": "Ano ang pinakamalaking panganib?",
+  "askSuggest2": "Ano ang makapagbabago sa pananaw?",
+  "askSuggest3": "Ipaliwanag ito sa simpleng salita",
+  "askMaxReached": "Iyon na ang huling tanong para sa pagsusuring ito. Gumawa ng bagong pagsusuri para makapagtanong pa.",
+  "errAskLimit": "Naabot mo na ang limitasyon ng mga tanong para ngayong araw. Pakisubukang muli bukas."
 }

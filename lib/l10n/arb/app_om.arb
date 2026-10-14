@@ -427,5 +427,16 @@
   "telemetryAllow": "Hayyami",
   "telemetryDecline": "Lakki, galatoomi",
   "telemetrySetting": "Istaatistiksii maqaa malee fi gabaasa kufaatii",
-  "telemetrySettingHint": "Amaloonni hammam akka itti fayyadaman fi gabaasa dogoggoraa, odeeffannoo dhuunfaa yookaan qabiyyee barbaacha fi xiinxala kee malee."
+  "telemetrySettingHint": "Amaloonni hammam akka itti fayyadaman fi gabaasa dogoggoraa, odeeffannoo dhuunfaa yookaan qabiyyee barbaacha fi xiinxala kee malee.",
+  "askButton": "Waa'ee xiinxala kanaa gaafadhu",
+  "askTitle": "Gaaffilee waa'ee {symbol}",
+  "askIntro": "Waa'ee xiinxalaa waan barbaadde gaafadhu: balaan tokko maal akka jechuu ta'e, waan ilaalcha gara fuulduraa jijjiiruu danda'u, lakkoofsi tokko akkamitti akka herregame. Deebiiwwan xiinxala kana irratti hundaa'u, akkasumas gorsa invastimantii miti.",
+  "askHint": "Gaaffii gaafadhu…",
+  "askSend": "Ergi",
+  "askThinking": "Yaadaa jira…",
+  "askSuggest1": "Balaan guddaan maali?",
+  "askSuggest2": "Ilaalcha gara fuulduraa maaltu jijjiiruu danda'a?",
+  "askSuggest3": "Salphaatti ibsi",
+  "askMaxReached": "Kun gaaffii xiinxala kanaaf dhumaa ture. Dabalataan gaafachuuf xiinxala haaraa uumi.",
+  "errAskLimit": "Daangaa gaaffii har'aa geessee jirta. Boru irra deebi'ii yaali."
 }

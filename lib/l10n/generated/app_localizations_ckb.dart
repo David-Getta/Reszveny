@@ -1566,40 +1566,40 @@ class AppLocalizationsCkb extends AppLocalizations {
       'چەند جار تایبەتمەندییەکان بەکاردێن و ڕاپۆرتی هەڵەکان، بەبێ زانیاریی کەسی یان ناوەڕۆکی گەڕان و شیکارییەکانت.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'پرسیار دەربارەی ئەم شیکارییە بکە';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'پرسیارەکان دەربارەی $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'هەر شتێک دەربارەی شیکارییەکە بپرسە: مەترسییەک واتای چییە، چی دەتوانێت پێشبینییەکان بگۆڕێت، ژمارەیەک چۆن دەرهێنراوە. وەڵامەکان لەسەر بنەمای ئەم شیکارییەن و ئامۆژگاریی وەبەرهێنان نین.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'پرسیارێک بنووسە…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'ناردن';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'بیر دەکاتەوە…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'گەورەترین مەترسی چییە؟';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'چی دەتوانێت پێشبینییەکان بگۆڕێت؟';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'بە زمانێکی سادە ڕوونی بکەرەوە';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'ئەمە دوایین پرسیار بوو بۆ ئەم شیکارییە. بۆ پرسیاری زیاتر شیکارییەکی نوێ دروست بکە.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'گەیشتیتە سنووری پرسیارەکانی ئەمڕۆ. تکایە سبەی دووبارە هەوڵ بدەرەوە.';
 }

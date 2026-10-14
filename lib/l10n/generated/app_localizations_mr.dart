@@ -1565,40 +1565,40 @@ class AppLocalizationsMr extends AppLocalizations {
       'वैशिष्ट्ये किती वेळा वापरली जातात आणि त्रुटी अहवाल, वैयक्तिक डेटा किंवा तुमच्या शोध व विश्लेषणांच्या मजकुराशिवाय.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'या विश्लेषणाबद्दल विचारा';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol बद्दल प्रश्न';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'विश्लेषणाबद्दल काहीही विचारा: एखाद्या जोखमीचा अर्थ काय, कशामुळे अंदाज बदलू शकतो, एखादा आकडा कसा काढला. उत्तरे या विश्लेषणावर आधारित आहेत आणि ती गुंतवणूक सल्ला नाहीत.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'प्रश्न विचारा…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'पाठवा';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'विचार करत आहे…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'सर्वात मोठी जोखीम कोणती?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'कशामुळे अंदाज बदलू शकतो?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'सोप्या भाषेत समजावून सांगा';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'या विश्लेषणासाठी हा शेवटचा प्रश्न होता. आणखी विचारण्यासाठी नवीन विश्लेषण तयार करा.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'आजची प्रश्नांची मर्यादा पूर्ण झाली आहे. उद्या पुन्हा प्रयत्न करा.';
 }

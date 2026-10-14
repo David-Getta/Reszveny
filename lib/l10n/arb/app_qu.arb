@@ -427,5 +427,16 @@
   "telemetryAllow": "Saqiy",
   "telemetryDecline": "Manam, sulpayki",
   "telemetrySetting": "Mana sutiyuq yupaykuna, urmaykuna willakuykunapas",
-  "telemetrySettingHint": "Hayk'a kutitataq ruraykunata llamk'achinku, pantaykuna willakuykunapas, mana sapaq willakuykunawan, mana maskasqaykikunap t'aqwiyniykikunap ukhunwanpas."
+  "telemetrySettingHint": "Hayk'a kutitataq ruraykunata llamk'achinku, pantaykuna willakuykunapas, mana sapaq willakuykunawan, mana maskasqaykikunap t'aqwiyniykikunap ukhunwanpas.",
+  "askButton": "Kay t'aqwiymanta tapukuy",
+  "askTitle": "Tapukuykuna: {symbol}",
+  "askIntro": "T'aqwiymanta imatapas tapukuy: huk sasachakuy ima ninan, imataq qhawayta tikranman, huk yupay imayna tarisqa karqan. Kutichiykunaqa kay t'aqwiypim sayan, manataq qullqi churanapaq yuyaychaychu.",
+  "askHint": "Huk tapukuyta qillqay…",
+  "askSend": "Apachiy",
+  "askThinking": "Yuyaykuchkani…",
+  "askSuggest1": "Imataq aswan hatun sasachakuy?",
+  "askSuggest2": "Imataq qhawayta tikranman?",
+  "askSuggest3": "Mana sasallata sut'inchay",
+  "askMaxReached": "Chayqa kay t'aqwiypaq qhipa tapukuymi karqan. Astawan tapukunaykipaq musuq t'aqwiyta ruway.",
+  "errAskLimit": "Kunan p'unchawpa tapukuy limitenmanmi chayanki. Paqarin hukmanta kallpachakuy."
 }

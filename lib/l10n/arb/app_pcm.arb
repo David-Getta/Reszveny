@@ -427,5 +427,16 @@
   "telemetryAllow": "Allow am",
   "telemetryDecline": "No, thank you",
   "telemetrySetting": "Anonymous stats and crash reports",
-  "telemetrySettingHint": "How often people dey use features and error reports, without personal data or wetin you search and analyse."
+  "telemetrySettingHint": "How often people dey use features and error reports, without personal data or wetin you search and analyse.",
+  "askButton": "Ask about dis analysis",
+  "askTitle": "Questions about {symbol}",
+  "askIntro": "Ask anytin about di analysis: wetin one risk mean, wetin fit change how tins go be, how dem take calculate one number. Di answers base on dis analysis, and dem no be investment advice.",
+  "askHint": "Ask question…",
+  "askSend": "Send",
+  "askThinking": "E dey tink…",
+  "askSuggest1": "Wetin be di biggest risk?",
+  "askSuggest2": "Wetin fit change how tins go be?",
+  "askSuggest3": "Explain am make e simple",
+  "askMaxReached": "Dat one na di last question for dis analysis. Make new analysis if you wan ask more.",
+  "errAskLimit": "You don reach today limit for questions. Try again tomorrow."
 }

@@ -1566,40 +1566,40 @@ class AppLocalizationsKi extends AppLocalizations {
       'Ũrĩa mawĩra mahũthagĩrwo kaingĩ na ripoti cia mahĩtia, hatarĩ ũhoro wa mwene kana ũrĩa ũrĩ thĩinĩ wa macaria na ũthuthuria waku.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Ũria ũhoro wa ũthuthuria ũyũ';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ciũria igiĩ $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Ũria ũndũ o wothe ũkoniĩ ũthuthuria ũyũ: ũgwati ũmwe nĩ ũrĩ na ũguo ũrĩkũ, nĩ kĩĩ kĩngĩgarũra ũrĩa maũndũ makoneka, namba ĩmwe yatarirwo atĩa. Macookio maya mamĩtĩte ũthuthuria ũyũ, na ti ũtaaro wa investment.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Andĩka kĩũria…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tũma';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndĩrĩĩciria…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ũgwati ũrĩa mũnene mũno nĩ ũrĩkũ?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Nĩ kĩĩ kĩngĩgarũra ũrĩa maũndũ makoneka?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Taarĩria ũhoro ũyũ na njĩra ĩhũthũ';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Kĩu nĩkĩo kĩũria kĩa mũthia kĩa ũthuthuria ũyũ. Thondeka ũthuthuria mwerũ nĩguo ũũrie ingĩ.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Nĩũkinyĩte mũhaka wa ciũria cia ũmũthĩ. Geria rĩngĩ rũciũ.';
 }

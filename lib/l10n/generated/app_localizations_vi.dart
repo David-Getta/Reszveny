@@ -1561,40 +1561,40 @@ class AppLocalizationsVi extends AppLocalizations {
       'Tần suất sử dụng tính năng và báo cáo lỗi, không bao gồm dữ liệu cá nhân hay nội dung tìm kiếm và phân tích của bạn.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Hỏi về phân tích này';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Câu hỏi về $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Hỏi bất cứ điều gì về phân tích: một rủi ro có nghĩa là gì, điều gì có thể thay đổi triển vọng, một con số được tính ra như thế nào. Câu trả lời dựa trên phân tích này và không phải là lời khuyên đầu tư.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Đặt câu hỏi…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Gửi';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Đang suy nghĩ…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Rủi ro lớn nhất là gì?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Điều gì có thể thay đổi triển vọng?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Giải thích một cách đơn giản';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Đó là câu hỏi cuối cùng cho phân tích này. Hãy tạo phân tích mới để hỏi thêm.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Bạn đã đạt giới hạn câu hỏi hôm nay. Hãy thử lại vào ngày mai.';
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "允許",
   "telemetryDecline": "不用了，謝謝",
   "telemetrySetting": "匿名統計資料及當機報告",
-  "telemetrySettingHint": "功能使用頻率及錯誤報告，不包括個人資料，亦不包括你的搜尋及分析內容。"
+  "telemetrySettingHint": "功能使用頻率及錯誤報告，不包括個人資料，亦不包括你的搜尋及分析內容。",
+  "askButton": "就此分析提問",
+  "askTitle": "關於 {symbol} 的問題",
+  "askIntro": "你可以就這份分析提出任何問題：某項風險代表甚麼、甚麼會改變前景、某個數字是怎樣計算出來的。回答以這份分析為基礎，並不構成投資建議。",
+  "askHint": "輸入問題…",
+  "askSend": "傳送",
+  "askThinking": "正在思考…",
+  "askSuggest1": "最大的風險是甚麼？",
+  "askSuggest2": "甚麼會改變前景？",
+  "askSuggest3": "用簡單的說法解釋一下",
+  "askMaxReached": "這是此分析的最後一個問題。如要繼續提問，請產生新的分析。",
+  "errAskLimit": "你已達到今日的提問上限。請明天再試。"
 }

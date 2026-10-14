@@ -427,5 +427,16 @@
   "telemetryAllow": "Benarkan",
   "telemetryDecline": "Tidak, terima kasih",
   "telemetrySetting": "Statistik tanpa nama dan laporan ranap",
-  "telemetrySettingHint": "Kekerapan penggunaan ciri dan laporan ralat, tanpa data peribadi atau kandungan carian dan analisis anda."
+  "telemetrySettingHint": "Kekerapan penggunaan ciri dan laporan ralat, tanpa data peribadi atau kandungan carian dan analisis anda.",
+  "askButton": "Tanya tentang analisis ini",
+  "askTitle": "Soalan tentang {symbol}",
+  "askIntro": "Tanya apa sahaja tentang analisis ini: maksud sesuatu risiko, perkara yang boleh mengubah prospek, cara sesuatu angka dikira. Jawapan adalah berdasarkan analisis ini dan bukan nasihat pelaburan.",
+  "askHint": "Tanya soalan…",
+  "askSend": "Hantar",
+  "askThinking": "Sedang berfikir…",
+  "askSuggest1": "Apakah risiko terbesar?",
+  "askSuggest2": "Apakah yang boleh mengubah prospek?",
+  "askSuggest3": "Terangkan dengan mudah",
+  "askMaxReached": "Itulah soalan terakhir untuk analisis ini. Jana analisis baharu untuk bertanya lagi.",
+  "errAskLimit": "Anda telah mencapai had soalan hari ini. Sila cuba lagi esok."
 }

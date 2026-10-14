@@ -427,5 +427,16 @@
   "telemetryAllow": "Tillåt",
   "telemetryDecline": "Nej tack",
   "telemetrySetting": "Anonym statistik och kraschrapporter",
-  "telemetrySettingHint": "Hur ofta funktioner används samt felrapporter, utan personuppgifter eller innehållet i dina sökningar och analyser."
+  "telemetrySettingHint": "Hur ofta funktioner används samt felrapporter, utan personuppgifter eller innehållet i dina sökningar och analyser.",
+  "askButton": "Fråga om analysen",
+  "askTitle": "Frågor om {symbol}",
+  "askIntro": "Fråga vad du vill om analysen: vad en risk innebär, vad som skulle kunna ändra utsikterna, hur en siffra har räknats fram. Svaren bygger på den här analysen och är inte investeringsrådgivning.",
+  "askHint": "Ställ en fråga…",
+  "askSend": "Skicka",
+  "askThinking": "Tänker…",
+  "askSuggest1": "Vad är den största risken?",
+  "askSuggest2": "Vad skulle kunna ändra utsikterna?",
+  "askSuggest3": "Förklara det enkelt",
+  "askMaxReached": "Det var den sista frågan för den här analysen. Gör en ny analys för att ställa fler frågor.",
+  "errAskLimit": "Du har nått dagens gräns för frågor. Försök igen i morgon."
 }

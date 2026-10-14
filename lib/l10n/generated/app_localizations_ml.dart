@@ -1572,40 +1572,40 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഫീച്ചറുകൾ എത്ര തവണ ഉപയോഗിക്കുന്നുവെന്നതും പിശക് റിപ്പോർട്ടുകളും, വ്യക്തിഗത ഡാറ്റയോ നിങ്ങളുടെ തിരയലുകളുടെയും വിശകലനങ്ങളുടെയും ഉള്ളടക്കമോ ഇല്ലാതെ.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'ഈ വിശകലനത്തെക്കുറിച്ച് ചോദിക്കുക';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol സംബന്ധിച്ച ചോദ്യങ്ങൾ';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'വിശകലനത്തെക്കുറിച്ച് എന്തും ചോദിക്കാം: ഒരു അപകടസാധ്യത എന്താണ് അർത്ഥമാക്കുന്നത്, എന്ത് സംഭവിച്ചാൽ സാധ്യതകൾ മാറും, ഒരു സംഖ്യ എങ്ങനെ കണക്കാക്കി. ഉത്തരങ്ങൾ ഈ വിശകലനത്തെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്, ഇവ നിക്ഷേപ ഉപദേശമല്ല.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'ഒരു ചോദ്യം ചോദിക്കുക…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'അയയ്ക്കുക';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'ചിന്തിക്കുന്നു…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'ഏറ്റവും വലിയ അപകടസാധ്യത എന്താണ്?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'എന്ത് സംഭവിച്ചാൽ സാധ്യതകൾ മാറും?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'ലളിതമായി വിശദീകരിക്കൂ';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'ഈ വിശകലനത്തിനുള്ള അവസാന ചോദ്യമായിരുന്നു അത്. കൂടുതൽ ചോദിക്കാൻ പുതിയൊരു വിശകലനം തയ്യാറാക്കുക.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'ഇന്നത്തെ ചോദ്യ പരിധി എത്തി. നാളെ വീണ്ടും ശ്രമിക്കുക.';
 }

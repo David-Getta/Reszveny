@@ -1575,40 +1575,40 @@ class AppLocalizationsSt extends AppLocalizations {
       'Hore na dikarolo di sebediswa hangata hakae le ditlaleho tsa diphoso, ntle le dintlha tsa botho kapa dikahare tsa diphuputso le ditlhahlobo tsa hao.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Botsa ka tlhahlobo ena';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Dipotso ka $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Botsa eng kapa eng ka tlhahlobo: kotsi e itseng e bolela eng, ke eng e ka fetolang ponelopele, palo e itseng e fumanwe jwang. Dikarabo di thehilwe hodima tlhahlobo ena mme hase keletso ya ho tsetela.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Botsa potso…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Romela';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ke a nahana…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kotsi e kgolo ka ho fetisisa ke efe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ke eng e ka fetolang ponelopele?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'E hlalose ka mantswe a bonolo';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Eo e ne e le potso ya ho qetela bakeng sa tlhahlobo ena. Etsa tlhahlobo e ntjha ho botsa tse ding.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane.';
 }

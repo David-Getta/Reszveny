@@ -427,5 +427,16 @@
   "telemetryAllow": "Ba da izini",
   "telemetryDecline": "A'a, na gode",
   "telemetrySetting": "Ƙididdiga marasa suna da rahotannin faɗuwar manhaja",
-  "telemetrySettingHint": "Yawan amfani da fasaloli da rahotannin kurakurai, ba tare da bayanan sirri ko abubuwan da ke cikin bincikenka da nazarinka ba."
+  "telemetrySettingHint": "Yawan amfani da fasaloli da rahotannin kurakurai, ba tare da bayanan sirri ko abubuwan da ke cikin bincikenka da nazarinka ba.",
+  "askButton": "Tambaya game da wannan nazari",
+  "askTitle": "Tambayoyi game da {symbol}",
+  "askIntro": "Tambayi komai game da nazarin: ma'anar wani haɗari, abin da zai iya canza hasashe, yadda aka samo wani adadi. Amsoshin sun dogara ne kan wannan nazari, kuma ba shawarar zuba jari ba ne.",
+  "askHint": "Rubuta tambaya…",
+  "askSend": "Aika",
+  "askThinking": "Ana tunani…",
+  "askSuggest1": "Mene ne babban haɗari?",
+  "askSuggest2": "Me zai iya canza hasashen?",
+  "askSuggest3": "Bayyana shi a sauƙaƙe",
+  "askMaxReached": "Wannan ita ce tambaya ta ƙarshe ga wannan nazari. Ƙirƙiri sabon nazari don ƙarin tambayoyi.",
+  "errAskLimit": "An kai iyakar tambayoyin yau. Sake gwadawa gobe."
 }

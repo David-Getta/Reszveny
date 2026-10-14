@@ -427,5 +427,16 @@
   "telemetryAllow": "Permite",
   "telemetryDecline": "Nu, mulțumesc",
   "telemetrySetting": "Statistici anonime și rapoarte de blocare",
-  "telemetrySettingHint": "Cât de des sunt folosite funcțiile și rapoarte de erori, fără date personale sau conținutul căutărilor și analizelor tale."
+  "telemetrySettingHint": "Cât de des sunt folosite funcțiile și rapoarte de erori, fără date personale sau conținutul căutărilor și analizelor tale.",
+  "askButton": "Întreabă despre această analiză",
+  "askTitle": "Întrebări despre {symbol}",
+  "askIntro": "Întreabă orice despre analiză: ce înseamnă un risc, ce ar putea schimba perspectivele, cum a fost calculat un număr. Răspunsurile se bazează pe această analiză și nu reprezintă un sfat de investiții.",
+  "askHint": "Pune o întrebare…",
+  "askSend": "Trimite",
+  "askThinking": "Mă gândesc…",
+  "askSuggest1": "Care este cel mai mare risc?",
+  "askSuggest2": "Ce ar putea schimba perspectivele?",
+  "askSuggest3": "Explică-mi pe înțeles",
+  "askMaxReached": "Aceasta a fost ultima întrebare pentru această analiză. Generează o analiză nouă ca să întrebi mai mult.",
+  "errAskLimit": "Ai atins limita de întrebări pentru azi. Încearcă din nou mâine."
 }

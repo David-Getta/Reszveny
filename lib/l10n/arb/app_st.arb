@@ -427,5 +427,16 @@
   "telemetryAllow": "Dumella",
   "telemetryDecline": "Tjhe, ke a leboha",
   "telemetrySetting": "Dipalopalo tse sa tsebahaleng le ditlaleho tsa ho wa",
-  "telemetrySettingHint": "Hore na dikarolo di sebediswa hangata hakae le ditlaleho tsa diphoso, ntle le dintlha tsa botho kapa dikahare tsa diphuputso le ditlhahlobo tsa hao."
+  "telemetrySettingHint": "Hore na dikarolo di sebediswa hangata hakae le ditlaleho tsa diphoso, ntle le dintlha tsa botho kapa dikahare tsa diphuputso le ditlhahlobo tsa hao.",
+  "askButton": "Botsa ka tlhahlobo ena",
+  "askTitle": "Dipotso ka {symbol}",
+  "askIntro": "Botsa eng kapa eng ka tlhahlobo: kotsi e itseng e bolela eng, ke eng e ka fetolang ponelopele, palo e itseng e fumanwe jwang. Dikarabo di thehilwe hodima tlhahlobo ena mme hase keletso ya ho tsetela.",
+  "askHint": "Botsa potso…",
+  "askSend": "Romela",
+  "askThinking": "Ke a nahana…",
+  "askSuggest1": "Kotsi e kgolo ka ho fetisisa ke efe?",
+  "askSuggest2": "Ke eng e ka fetolang ponelopele?",
+  "askSuggest3": "E hlalose ka mantswe a bonolo",
+  "askMaxReached": "Eo e ne e le potso ya ho qetela bakeng sa tlhahlobo ena. Etsa tlhahlobo e ntjha ho botsa tse ding.",
+  "errAskLimit": "O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane."
 }

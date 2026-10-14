@@ -1565,40 +1565,40 @@ class AppLocalizationsNb extends AppLocalizations {
       'Hvor ofte funksjoner brukes, og feilrapporter – uten personopplysninger eller innholdet i søkene og analysene dine.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Spør om denne analysen';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Spørsmål om $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Spør om hva som helst i analysen: hva en risiko betyr, hva som kan endre utsiktene, hvordan et tall ble regnet ut. Svarene bygger på denne analysen og er ikke investeringsråd.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Still et spørsmål…';
 
   @override
   String get askSend => 'Send';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Tenker…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Hva er den største risikoen?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Hva kan endre utsiktene?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Forklar det enkelt';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Det var det siste spørsmålet for denne analysen. Generer en ny analyse for å spørre mer.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Du har nådd dagens grense for spørsmål. Prøv igjen i morgen.';
 }

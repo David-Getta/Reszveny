@@ -1568,40 +1568,40 @@ class AppLocalizationsUz extends AppLocalizations {
       'Funksiyalardan qanchalik tez-tez foydalanilishi va xatolik hisobotlari – shaxsiy maʼlumotlarsiz, qidiruv va tahlillaringiz mazmunisiz.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Bu tahlil haqida soʻrang';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol haqida savollar';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Tahlil haqida istalgan narsani soʻrang: biror xavf nimani anglatadi, istiqbolni nima oʻzgartirishi mumkin, raqam qanday hisoblangan. Javoblar shu tahlilga asoslanadi va investitsiya maslahati emas.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Savol bering…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Yuborish';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Oʻylamoqda…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Eng katta xavf nima?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Istiqbolni nima oʻzgartirishi mumkin?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Sodda qilib tushuntirib ber';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Bu tahlil uchun bu oxirgi savol edi. Yana savol berish uchun yangi tahlil yarating.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Bugungi savollar limitiga yetdingiz. Iltimos, ertaga qayta urinib koʻring.';
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Kwe",
   "telemetryDecline": "Mba, daalụ",
   "telemetrySetting": "Ọnụ ọgụgụ na-enweghị aha na akụkọ mkpọka",
-  "telemetrySettingHint": "Ugboro ole a na-eji atụmatụ na akụkọ njehie, na-enweghị data nkeonwe ma ọ bụ ọdịnaya nke ọchụchọ na nyocha gị."
+  "telemetrySettingHint": "Ugboro ole a na-eji atụmatụ na akụkọ njehie, na-enweghị data nkeonwe ma ọ bụ ọdịnaya nke ọchụchọ na nyocha gị.",
+  "askButton": "Jụọ ajụjụ gbasara nyocha a",
+  "askTitle": "Ajụjụ gbasara {symbol}",
+  "askIntro": "Jụọ ihe ọ bụla gbasara nyocha a: ihe otu ihe egwu pụtara, ihe nwere ike ịgbanwe ọdịnihu ya, otu e si nweta otu ọnụọgụ. Azịza ndị a dabere na nyocha a, ha abụghịkwa ndụmọdụ itinye ego.",
+  "askHint": "Jụọ ajụjụ…",
+  "askSend": "Ziga",
+  "askThinking": "Na-eche echiche…",
+  "askSuggest1": "Gịnị bụ ihe egwu kacha ukwuu?",
+  "askSuggest2": "Gịnị nwere ike ịgbanwe ọdịnihu ya?",
+  "askSuggest3": "Kọwaa ya n'ụzọ dị mfe",
+  "askMaxReached": "Nke ahụ bụ ajụjụ ikpeazụ maka nyocha a. Mepụta nyocha ọhụrụ ka ị jụọ ọzọ.",
+  "errAskLimit": "Ị ruola oke ajụjụ nke taa. Nwaa ọzọ echi."
 }

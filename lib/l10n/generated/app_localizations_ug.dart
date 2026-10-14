@@ -1569,40 +1569,39 @@ class AppLocalizationsUg extends AppLocalizations {
       'ئىقتىدارلارنىڭ ئىشلىتىلىش چاستوتىسى ۋە خاتالىق دوكلاتى، شەخسىي ئۇچۇر ياكى ئىزدەش ۋە تەھلىلىڭىزنىڭ مەزمۇنى كىرمەيدۇ.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'بۇ تەھلىل ھەققىدە سوراڭ';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol ھەققىدىكى سوئاللار';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'تەھلىل ھەققىدە خالىغان نەرسىنى سوراڭ: بىر خەۋپنىڭ مەنىسى نېمە، ئىستىقبالنى نېمە ئۆزگەرتىشى مۇمكىن، بىر سان قانداق ھېسابلانغان. جاۋابلار بۇ تەھلىلگە ئاساسلانغان بولۇپ، مەبلەغ سېلىش تەۋسىيەسى ئەمەس.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'سوئال سوراڭ…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'يوللاش';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'ئويلىنىۋاتىدۇ…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'ئەڭ چوڭ خەۋپ نېمە؟';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'ئىستىقبالنى نېمە ئۆزگەرتىشى مۇمكىن؟';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'ئاددىي قىلىپ چۈشەندۈرۈپ بەر';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'بۇ تەھلىل ئۈچۈن بۇ ئاخىرقى سوئال ئىدى. تېخىمۇ كۆپ سوراش ئۈچۈن يېڭى تەھلىل ھاسىللاڭ.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'بۈگۈنكى سوئال چېكىگە يەتتىڭىز. ئەتە قايتا سىناڭ.';
 }

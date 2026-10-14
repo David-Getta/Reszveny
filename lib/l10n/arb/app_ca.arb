@@ -427,5 +427,16 @@
   "telemetryAllow": "Permet",
   "telemetryDecline": "No, gràcies",
   "telemetrySetting": "Estadístiques anònimes i informes de fallades",
-  "telemetrySettingHint": "Amb quina freqüència es fan servir les funcions i informes d'errors, sense dades personals ni el contingut de les teves cerques i anàlisis."
+  "telemetrySettingHint": "Amb quina freqüència es fan servir les funcions i informes d'errors, sense dades personals ni el contingut de les teves cerques i anàlisis.",
+  "askButton": "Pregunta sobre aquesta anàlisi",
+  "askTitle": "Preguntes sobre {symbol}",
+  "askIntro": "Pregunta qualsevol cosa sobre l’anàlisi: què vol dir un risc, què canviaria les perspectives, com s’ha calculat una xifra. Les respostes es basen en aquesta anàlisi i no constitueixen assessorament d’inversió.",
+  "askHint": "Fes una pregunta…",
+  "askSend": "Envia",
+  "askThinking": "Pensant…",
+  "askSuggest1": "Quin és el risc més gran?",
+  "askSuggest2": "Què canviaria les perspectives?",
+  "askSuggest3": "Explica-ho en paraules senzilles",
+  "askMaxReached": "Aquesta era l’última pregunta per a aquesta anàlisi. Fes una anàlisi nova per preguntar-ne més.",
+  "errAskLimit": "Has arribat al límit de preguntes d’avui. Torna-ho a provar demà."
 }

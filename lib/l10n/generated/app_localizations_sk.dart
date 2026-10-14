@@ -1614,40 +1614,40 @@ class AppLocalizationsSk extends AppLocalizations {
       'Ako často sa používajú funkcie a hlásenia o chybách – bez osobných údajov či obsahu tvojich vyhľadávaní a analýz.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Opýtať sa na túto analýzu';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Otázky k $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pýtajte sa na čokoľvek z analýzy: čo znamená určité riziko, čo by mohlo zmeniť výhľad, ako sa vypočítalo určité číslo. Odpovede vychádzajú z tejto analýzy a nie sú investičným odporúčaním.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Položte otázku…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Odoslať';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Premýšľam…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Aké je najväčšie riziko?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Čo by mohlo zmeniť výhľad?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Vysvetli to jednoducho';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'To bola posledná otázka k tejto analýze. Ak sa chcete pýtať ďalej, vygenerujte novú analýzu.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Dosiahli ste dnešný limit otázok. Skúste to znova zajtra.';
 }

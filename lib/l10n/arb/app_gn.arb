@@ -427,5 +427,16 @@
   "telemetryAllow": "Emoneĩ",
   "telemetryDecline": "Nahániri, aguyje",
   "telemetrySetting": "Papapy ndojekuaáiva ha marandu jejavy rehegua",
-  "telemetrySettingHint": "Mbovy jey ojeporu tembiapoukapy ha marandu jejavy rehegua, ndoguerekói marandu ñemiguáva térã ne jeheka ha ne jehesaʼỹijo retepy."
+  "telemetrySettingHint": "Mbovy jey ojeporu tembiapoukapy ha marandu jejavy rehegua, ndoguerekói marandu ñemiguáva térã ne jeheka ha ne jehesaʼỹijo retepy.",
+  "askButton": "Eporandu ko jehesaʼỹijo rehe",
+  "askTitle": "Porandu {symbol} rehegua",
+  "askIntro": "Eporandu oimeraẽ mbaʼe jehesaʼỹijo rehe: mbaʼépa heʼise peteĩ kyhyjerã, mbaʼépa ikatu omoambue tenonderã, mbaʼéichapa ojeipapa peteĩ papapy. Umi mbohovái oñemopyenda ko jehesaʼỹijo rehe ha ndahaʼéi ñemoñeʼẽ inversión rehegua.",
+  "askHint": "Ehai nde porandu…",
+  "askSend": "Emondo",
+  "askThinking": "Opensa hína…",
+  "askSuggest1": "Mbaʼépa kyhyjerã tuichavéva?",
+  "askSuggest2": "Mbaʼépa ikatu omoambue tenonderã?",
+  "askSuggest3": "Emyesakã chéve ñeʼẽ hasyʼỹvape",
+  "askMaxReached": "Kóva haʼe pe porandu paha ko jehesaʼỹijo guarã. Emoheñói jehesaʼỹijo pyahu eporandu hag̃ua hetave.",
+  "errAskLimit": "Ehupytýma koʼág̃a guarã porandu papapy. Eñehaʼã jey koʼẽrõ."
 }

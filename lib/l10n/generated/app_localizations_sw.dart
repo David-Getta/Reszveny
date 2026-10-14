@@ -1566,40 +1566,40 @@ class AppLocalizationsSw extends AppLocalizations {
       'Mara ngapi vipengele vinatumika na ripoti za hitilafu, bila data binafsi wala maudhui ya utafutaji na uchambuzi wako.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Uliza kuhusu uchambuzi huu';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Maswali kuhusu $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Uliza chochote kuhusu uchambuzi: hatari fulani inamaanisha nini, nini kingebadilisha mtazamo, jinsi namba ilivyopatikana. Majibu yanatokana na uchambuzi huu na si ushauri wa uwekezaji.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Uliza swali…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tuma';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Inafikiri…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Hatari kubwa zaidi ni ipi?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Nini kingebadilisha mtazamo?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Nieleze kwa maneno rahisi';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Hilo lilikuwa swali la mwisho kwa uchambuzi huu. Tengeneza uchambuzi mpya ili uulize zaidi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho.';
 }

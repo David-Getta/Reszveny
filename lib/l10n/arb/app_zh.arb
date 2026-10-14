@@ -427,5 +427,16 @@
   "telemetryAllow": "允许",
   "telemetryDecline": "不用了，谢谢",
   "telemetrySetting": "匿名统计信息和崩溃报告",
-  "telemetrySettingHint": "功能使用频率和错误报告，不包含个人数据，也不包含你的搜索和分析内容。"
+  "telemetrySettingHint": "功能使用频率和错误报告，不包含个人数据，也不包含你的搜索和分析内容。",
+  "askButton": "就此分析提问",
+  "askTitle": "关于 {symbol} 的问题",
+  "askIntro": "关于这份分析，你可以问任何问题：某项风险意味着什么、什么会改变前景、某个数字是怎么算出来的。回答基于这份分析，不构成投资建议。",
+  "askHint": "输入问题…",
+  "askSend": "发送",
+  "askThinking": "正在思考…",
+  "askSuggest1": "最大的风险是什么？",
+  "askSuggest2": "什么会改变前景？",
+  "askSuggest3": "用简单的话解释一下",
+  "askMaxReached": "这是本次分析的最后一个问题。如需继续提问，请生成新的分析。",
+  "errAskLimit": "你已达到今日提问上限。请明天再试。"
 }

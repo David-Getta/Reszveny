@@ -1576,40 +1576,40 @@ class AppLocalizationsTs extends AppLocalizations {
       'Ku tirhisiwa kangani ka swiphemu ni swiviko swa swihoxo, handle ka vuxokoxoko bya xiviri kumbe leswi nga eka ku lavisisa ni nxopaxopo wa wena.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Vutisa hi nxopaxopo lowu';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Swivutiso hi $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Vutisa xin\'wana na xin\'wana hi nxopaxopo: leswi khombo ri vulaka swona, leswi swi nga cincaka langutelo, ndlela leyi nhlayo yi hlayiweke ha yona. Tinhlamulo ti sekeriwile eka nxopaxopo lowu naswona a hi ndzayo ya vuvekisi.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Vutisa xivutiso…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Rhumela';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndza ha ehleketa…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Khombo lerikulu ngopfu i rihi?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'I yini leswi swi nga cincaka langutelo?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Hlamusela hi ndlela yo olova';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Lexi a xi ri xivutiso xo hetelela xa nxopaxopo lowu. Endla nxopaxopo lowuntshwa leswaku u vutisa swin\'wana.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'U fikelerile ndzelekano wa swivutiso wa namuntlha. Hi kombela u ringeta nakambe mundzuku.';
 }

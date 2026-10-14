@@ -1564,40 +1564,40 @@ class AppLocalizationsHt extends AppLocalizations {
       'Konbyen fwa yo itilize fonksyon yo ak rapò erè, san done pèsonèl ni kontni rechèch ak analiz ou yo.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Poze kesyon sou analiz sa a';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Kesyon sou $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Poze nenpòt kesyon sou analiz la: sa yon risk vle di, kisa ki ta ka chanje pèspektiv yo, kijan yo kalkile yon chif. Repons yo baze sou analiz sa a, epi se pa yon konsèy envestisman.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Ekri kesyon ou…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Voye';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'M ap reflechi…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ki pi gwo risk la?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Kisa ki ta ka chanje pèspektiv yo?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Eksplike l avèk mo senp';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Sa se te dènye kesyon pou analiz sa a. Jenere yon nouvo analiz pou w poze plis kesyon.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Ou rive nan limit kesyon pou jodi a. Eseye ankò demen.';
 }

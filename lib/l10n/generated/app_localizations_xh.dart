@@ -1573,40 +1573,40 @@ class AppLocalizationsXh extends AppLocalizations {
       'Kangakanani iimpawu zisetyenziswa kunye neengxelo zeempazamo, ngaphandle kweenkcukacha zobuqu okanye umxholo wokukhangela nohlalutyo lwakho.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Buza ngolu hlalutyo';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Imibuzo nge-$symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Buza nantoni na malunga nohlalutyo: intsingiselo yomngcipheko othile, yintoni enokutshintsha imbono yekamva, inani elithile libalwe njani. Iimpendulo zisekelwe kolu hlalutyo kwaye aziyocebiso lotyalo-mali.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Buza umbuzo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Thumela';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Iyacinga…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Yintoni owona mngcipheko mkhulu?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Yintoni enokutshintsha imbono yekamva?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Ndicacisele ngendlela elula';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Lo ibingowokugqibela umbuzo wolu hlalutyo. Yenza uhlalutyo olutsha ukuze ubuze ngakumbi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Ufikelele kumda wemibuzo wanamhlanje. Nceda uzame kwakhona ngomso.';
 }

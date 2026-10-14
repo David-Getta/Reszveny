@@ -427,5 +427,16 @@
   "telemetryAllow": "Atļaut",
   "telemetryDecline": "Nē, paldies",
   "telemetrySetting": "Anonīma statistika un avāriju ziņojumi",
-  "telemetrySettingHint": "Cik bieži tiek izmantotas funkcijas, un kļūdu ziņojumi — bez personas datiem vai jūsu meklējumu un analīžu satura."
+  "telemetrySettingHint": "Cik bieži tiek izmantotas funkcijas, un kļūdu ziņojumi — bez personas datiem vai jūsu meklējumu un analīžu satura.",
+  "askButton": "Uzdot jautājumu par analīzi",
+  "askTitle": "Jautājumi par {symbol}",
+  "askIntro": "Jautājiet jebko par analīzi: ko nozīmē kāds risks, kas varētu mainīt perspektīvu, kā aprēķināts kāds skaitlis. Atbildes balstās uz šo analīzi un nav ieguldījumu konsultācija.",
+  "askHint": "Uzdodiet jautājumu…",
+  "askSend": "Sūtīt",
+  "askThinking": "Domā…",
+  "askSuggest1": "Kāds ir lielākais risks?",
+  "askSuggest2": "Kas varētu mainīt perspektīvu?",
+  "askSuggest3": "Paskaidro vienkāršiem vārdiem",
+  "askMaxReached": "Tas bija pēdējais jautājums par šo analīzi. Lai jautātu vēl, ģenerējiet jaunu analīzi.",
+  "errAskLimit": "Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt."
 }

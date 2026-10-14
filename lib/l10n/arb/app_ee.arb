@@ -427,5 +427,16 @@
   "telemetryAllow": "Ɖe mɔ",
   "telemetryDecline": "Ao, akpe",
   "telemetrySetting": "Akɔntabubu siwo me ŋkɔ mele o kple gbegblẽ ŋuti nyatakakawo",
-  "telemetrySettingHint": "Zi ale si wozãa dɔwɔnuwo kple vodada ŋuti nyatakakawo, wò ŋutɔ ƒe nyatakakawo alo wò didiwo kple numekukuwo ƒe emenyawo manɔmee."
+  "telemetrySettingHint": "Zi ale si wozãa dɔwɔnuwo kple vodada ŋuti nyatakakawo, wò ŋutɔ ƒe nyatakakawo alo wò didiwo kple numekukuwo ƒe emenyawo manɔmee.",
+  "askButton": "Bia nya tso numekuku sia ŋu",
+  "askTitle": "Nyabiasewo tso {symbol} ŋu",
+  "askIntro": "Bia nya sia nya tso numekuku la ŋu: nu si afɔku aɖe fia, nu si ate ŋu atrɔ etsɔme ƒe nukpɔkpɔ, alesi wobu xexlẽdzesi aɖe. Ŋuɖoɖoawo nɔ te ɖe numekuku sia dzi, eye menye aɖaŋuɖoɖo le gadede nu ŋu o.",
+  "askHint": "Bia nya aɖe…",
+  "askSend": "Ɖoe ɖa",
+  "askThinking": "Ele bubum…",
+  "askSuggest1": "Afɔku kae nye gãtɔ?",
+  "askSuggest2": "Nu kae ate ŋu atrɔ etsɔme ƒe nukpɔkpɔ?",
+  "askSuggest3": "Ɖe eme le mɔ bɔbɔe nu",
+  "askMaxReached": "Ema enye nyabiase mamlɛtɔ na numekuku sia. Wɔ numekuku yeye be nàte ŋu abia nya bubuwo.",
+  "errAskLimit": "Èɖo egbe ƒe nyabiasewo ƒe seɖoƒe. Taflatse, gagbugbɔ te kpɔ etsɔ."
 }

@@ -1573,40 +1573,40 @@ class AppLocalizationsEl extends AppLocalizations {
       'Πόσο συχνά χρησιμοποιούνται οι λειτουργίες και αναφορές σφαλμάτων, χωρίς προσωπικά δεδομένα ή το περιεχόμενο των αναζητήσεων και των αναλύσεών σας.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Ρωτήστε για αυτή την ανάλυση';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ερωτήσεις για $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Ρωτήστε οτιδήποτε για την ανάλυση: τι σημαίνει ένας κίνδυνος, τι θα άλλαζε τις προοπτικές, πώς προέκυψε ένας αριθμός. Οι απαντήσεις βασίζονται σε αυτή την ανάλυση και δεν αποτελούν επενδυτική συμβουλή.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Κάντε μια ερώτηση…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Αποστολή';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Σκέφτεται…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ποιος είναι ο μεγαλύτερος κίνδυνος;';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Τι θα άλλαζε τις προοπτικές;';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Εξήγησέ το με απλά λόγια';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Αυτή ήταν η τελευταία ερώτηση για αυτή την ανάλυση. Δημιουργήστε νέα ανάλυση για να ρωτήσετε κι άλλα.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Φτάσατε το σημερινό όριο ερωτήσεων. Δοκιμάστε ξανά αύριο.';
 }

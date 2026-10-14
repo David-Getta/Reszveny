@@ -1560,40 +1560,40 @@ class AppLocalizationsSd extends AppLocalizations {
       'خاصيتون ڪيترا ڀيرا استعمال ٿين ٿيون ۽ غلطي رپورٽون، ذاتي ڊيٽا يا توهان جي ڳولا ۽ تجزين جي مواد کان سواءِ.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'هن تجزيي بابت پڇو';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol بابت سوال';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'تجزيي بابت ڪجهه به پڇو: ڪنهن خطري جو مطلب ڇا آهي، ڇا امڪانن کي بدلائي سگهي ٿو، ڪو انگ ڪيئن ڳڻيو ويو. جواب هن تجزيي تي ٻڌل آهن ۽ اهي سيڙپڪاري جو مشورو ناهن.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'سوال پڇو…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'موڪليو';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'سوچ جاري آهي…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'سڀ کان وڏو خطرو ڪهڙو آهي؟';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'ڇا امڪانن کي بدلائي سگهي ٿو؟';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'سادي نموني سمجهايو';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'هن تجزيي لاءِ اهو آخري سوال هو. وڌيڪ پڇڻ لاءِ نئون تجزيو تيار ڪريو.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'توهان اڄ جي سوالن جي حد تائين پهچي ويا آهيو. سڀاڻي ٻيهر ڪوشش ڪريو.';
 }

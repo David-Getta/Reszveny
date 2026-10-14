@@ -427,5 +427,16 @@
   "telemetryAllow": "Sɔn",
   "telemetryDecline": "Ayi, i ni ce",
   "telemetrySetting": "Jate tɔgɔbaliw ni tiɲɛni kibaruyaw",
-  "telemetrySettingHint": "Fɛɛrɛw bɛ baara la siɲɛ joli ani fili kibaruyaw, i yɛrɛ ka kunnafoniw tɛ, i ka ɲininiw ni i ka sɛgɛsɛgɛliw kɔnɔkow fana tɛ."
+  "telemetrySettingHint": "Fɛɛrɛw bɛ baara la siɲɛ joli ani fili kibaruyaw, i yɛrɛ ka kunnafoniw tɛ, i ka ɲininiw ni i ka sɛgɛsɛgɛliw kɔnɔkow fana tɛ.",
+  "askButton": "Ɲininkali kɛ nin sɛgɛsɛgɛli kan",
+  "askTitle": "Ɲininkaliw {symbol} kan",
+  "askIntro": "Ɲininkali o ɲininkali kɛ sɛgɛsɛgɛli in kan: farati dɔ kɔrɔ ye mun ye, mun bɛ se ka siniko yɛlɛma, jate dɔ sɔrɔla cogo min na. Jaabiw sinsinnen bɛ nin sɛgɛsɛgɛli kan, wari donni ladilikan tɛ.",
+  "askHint": "Ɲininkali dɔ sɛbɛn…",
+  "askSend": "A ci",
+  "askThinking": "A bɛ miiri…",
+  "askSuggest1": "Farati belebele ye jumɛn ye?",
+  "askSuggest2": "Mun bɛ se ka siniko yɛlɛma?",
+  "askSuggest3": "A ɲɛfɔ ka nɔgɔya",
+  "askMaxReached": "O tun ye nin sɛgɛsɛgɛli ɲininkali laban ye. Sɛgɛsɛgɛli kura dilan walasa ka ɲininkali wɛrɛw kɛ.",
+  "errAskLimit": "I sera bi ɲininkaliw dan na. Hakɛto, a lajɛ tugun sini."
 }

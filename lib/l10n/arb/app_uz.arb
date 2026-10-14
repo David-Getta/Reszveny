@@ -427,5 +427,16 @@
   "telemetryAllow": "Ruxsat berish",
   "telemetryDecline": "Yoʻq, rahmat",
   "telemetrySetting": "Anonim statistika va nosozlik hisobotlari",
-  "telemetrySettingHint": "Funksiyalardan qanchalik tez-tez foydalanilishi va xatolik hisobotlari – shaxsiy maʼlumotlarsiz, qidiruv va tahlillaringiz mazmunisiz."
+  "telemetrySettingHint": "Funksiyalardan qanchalik tez-tez foydalanilishi va xatolik hisobotlari – shaxsiy maʼlumotlarsiz, qidiruv va tahlillaringiz mazmunisiz.",
+  "askButton": "Bu tahlil haqida soʻrang",
+  "askTitle": "{symbol} haqida savollar",
+  "askIntro": "Tahlil haqida istalgan narsani soʻrang: biror xavf nimani anglatadi, istiqbolni nima oʻzgartirishi mumkin, raqam qanday hisoblangan. Javoblar shu tahlilga asoslanadi va investitsiya maslahati emas.",
+  "askHint": "Savol bering…",
+  "askSend": "Yuborish",
+  "askThinking": "Oʻylamoqda…",
+  "askSuggest1": "Eng katta xavf nima?",
+  "askSuggest2": "Istiqbolni nima oʻzgartirishi mumkin?",
+  "askSuggest3": "Sodda qilib tushuntirib ber",
+  "askMaxReached": "Bu tahlil uchun bu oxirgi savol edi. Yana savol berish uchun yangi tahlil yarating.",
+  "errAskLimit": "Bugungi savollar limitiga yetdingiz. Iltimos, ertaga qayta urinib koʻring."
 }

@@ -1565,40 +1565,40 @@ class AppLocalizationsYo extends AppLocalizations {
       'Ìgbà mélòó ni a ń lo àwọn ẹ̀yà àti ìròyìn àṣìṣe, láìsí dátà ara ẹni tàbí àkóónú àwọn ìwádìí àti ìtúpalẹ̀ rẹ.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Béèrè nípa ìtúpalẹ̀ yìí';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Àwọn ìbéèrè nípa $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Béèrè ohunkóhun nípa ìtúpalẹ̀ náà: ohun tí ewu kan túmọ̀ sí, ohun tí ó lè yí ìrísí ọjọ́ iwájú padà, bí a ṣe ṣírò nọ́ńbà kan. Àwọn ìdáhùn dá lórí ìtúpalẹ̀ yìí, kì í sì í ṣe ìmọ̀ràn ìdókòwò.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Béèrè ìbéèrè kan…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Fi ránṣẹ́';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ó ń ronú…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kí ni ewu tó tóbi jùlọ?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Kí ló lè yí ìrísí ọjọ́ iwájú padà?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Ṣàlàyé rẹ̀ ní ọ̀nà tó rọrùn';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ìyẹn ni ìbéèrè tó kẹ́yìn fún ìtúpalẹ̀ yìí. Ṣe ìtúpalẹ̀ tuntun láti béèrè sí i.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'O ti dé ìwọ̀n ìbéèrè ti òní. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i lọ́la.';
 }

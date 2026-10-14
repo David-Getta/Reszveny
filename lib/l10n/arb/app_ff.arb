@@ -427,5 +427,16 @@
   "telemetryAllow": "Yamir",
   "telemetryDecline": "Alaa, a jaaraama",
   "telemetrySetting": "Limoore mo innde alaa e kabaruuji fuuntaaji",
-  "telemetrySettingHint": "No kuuɗe huutortee ɗoon e ɗoon e kabaruuji juumre, tawa humpito keeriiɗo walla loowdi ɗaɓɓitaaɗe e ƴeewndooji maa alaa."
+  "telemetrySettingHint": "No kuuɗe huutortee ɗoon e ɗoon e kabaruuji juumre, tawa humpito keeriiɗo walla loowdi ɗaɓɓitaaɗe e ƴeewndooji maa alaa.",
+  "askButton": "Naamnu dow ƴeewndo ngoo",
+  "askTitle": "Naamne dow {symbol}",
+  "askIntro": "Naamno kala ko faati e ƴeewndo ngoo: ko kulol woo firti, ko waawi waylude ko yiyetee yeeso, no limoore woo hiisiraa. Jaabawuuji ɗii tuugii ko e ƴeewndo ngoo, wonaa kadi wasiya e investisman.",
+  "askHint": "Naamno naamne…",
+  "askSend": "Neldu",
+  "askThinking": "Ina miijoo…",
+  "askSuggest1": "Ko honɗum woni kulol ɓurngol mawnude?",
+  "askSuggest2": "Ko honɗum waawi waylude ko yiyetee yeeso?",
+  "askSuggest3": "Firir ɗum e haala newiiɗa",
+  "askMaxReached": "Ɗuum ko naamne cakkitiiɗe ƴeewndo ngoo. Waɗ ƴeewndo kesoo ngam naamnaade goɗɗum.",
+  "errAskLimit": "A hewtii keerol naamne hannde. Fuɗɗito janngo."
 }

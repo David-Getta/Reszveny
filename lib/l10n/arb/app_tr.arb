@@ -427,5 +427,16 @@
   "telemetryAllow": "İzin ver",
   "telemetryDecline": "Hayır, teşekkürler",
   "telemetrySetting": "Anonim istatistikler ve kilitlenme raporları",
-  "telemetrySettingHint": "Özelliklerin ne sıklıkla kullanıldığı ve hata raporları; kişisel veriler ya da aramalarının ve analizlerinin içeriği olmadan."
+  "telemetrySettingHint": "Özelliklerin ne sıklıkla kullanıldığı ve hata raporları; kişisel veriler ya da aramalarının ve analizlerinin içeriği olmadan.",
+  "askButton": "Bu analiz hakkında soru sorun",
+  "askTitle": "{symbol} hakkında sorular",
+  "askIntro": "Analizle ilgili her şeyi sorabilirsiniz: bir riskin ne anlama geldiğini, görünümü neyin değiştirebileceğini, bir rakamın nasıl hesaplandığını. Yanıtlar bu analize dayanır ve yatırım tavsiyesi değildir.",
+  "askHint": "Bir soru sorun…",
+  "askSend": "Gönder",
+  "askThinking": "Düşünüyor…",
+  "askSuggest1": "En büyük risk nedir?",
+  "askSuggest2": "Görünümü ne değiştirebilir?",
+  "askSuggest3": "Basitçe açıkla",
+  "askMaxReached": "Bu analiz için son soruydu. Daha fazla soru sormak için yeni bir analiz oluşturun.",
+  "errAskLimit": "Bugünkü soru sınırına ulaştınız. Lütfen yarın tekrar deneyin."
 }

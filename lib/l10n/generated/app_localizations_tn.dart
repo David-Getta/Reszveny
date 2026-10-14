@@ -1575,40 +1575,40 @@ class AppLocalizationsTn extends AppLocalizations {
       'Gore dikarolo di dirisiwa gangwe ga kae le dipego tsa diphoso, kwa ntle ga tshedimosetso ya botho kgotsa diteng tsa dipatlisiso le ditshekatsheko tsa gago.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Botsa ka tshekatsheko e';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Dipotso ka $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Botsa sengwe le sengwe ka tshekatsheko: kotsi e raya eng, ke eng se se ka fetolang ponelopele, palo e badilwe jang. Dikarabo di theilwe mo tshekatshekong e, e bile ga se kgakololo ya peeletso.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Botsa potso…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Romela';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ke a akanya…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kotsi e kgolo go gaisa ke efe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ke eng se se ka fetolang ponelopele?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'E tlhalose ka mafoko a a motlhofo';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Eo e ne e le potso ya bofelo ya tshekatsheko e. Dira tshekatsheko e ntšha go botsa go feta.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'O fitlhetse tekanyetso ya dipotso ya gompieno. Tsweetswee leka gape kamoso.';
 }

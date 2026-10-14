@@ -1567,40 +1567,40 @@ class AppLocalizationsTg extends AppLocalizations {
       'Басомади истифодаи функсияҳо ва гузоришҳои хато, бе маълумоти шахсӣ ва мундариҷаи ҷустуҷӯҳо ва таҳлилҳои шумо.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Дар бораи ин таҳлил пурсед';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Саволҳо дар бораи $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Дар бораи таҳлил ҳар чӣ хоҳед, пурсед: хатар чӣ маъно дорад, чӣ дурнаморо тағйир дода метавонад, рақам чӣ тавр ҳисоб шудааст. Ҷавобҳо ба ин таҳлил асос ёфтаанд ва маслиҳати сармоягузорӣ нестанд.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Савол диҳед…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Фиристодан';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Фикр мекунад…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Хатари аз ҳама калон чист?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Чӣ дурнаморо тағйир дода метавонад?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Бо забони содда фаҳмонед';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ин саволи охирин барои ин таҳлил буд. Барои саволҳои бештар таҳлили нав эҷод кунед.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Шумо ба маҳдудияти имрӯзаи саволҳо расидед. Лутфан фардо бори дигар кӯшиш кунед.';
 }

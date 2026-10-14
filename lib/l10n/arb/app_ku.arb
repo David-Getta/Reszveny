@@ -427,5 +427,16 @@
   "telemetryAllow": "Destûr bide",
   "telemetryDecline": "Na, spas",
   "telemetrySetting": "Statîstîkên anonîm û raporên têkçûnê",
-  "telemetrySettingHint": "Taybetmendî çiqas caran têne bikaranîn û raporên çewtiyan, bêyî daneyên kesane an naveroka lêgerîn û analîzên te."
+  "telemetrySettingHint": "Taybetmendî çiqas caran têne bikaranîn û raporên çewtiyan, bêyî daneyên kesane an naveroka lêgerîn û analîzên te.",
+  "askButton": "Li ser vê analîzê bipirse",
+  "askTitle": "Pirsên li ser {symbol}",
+  "askIntro": "Li ser analîzê her tiştî bipirse: xetereyek tê çi wateyê, çi dikare pêşbîniyê biguherîne, hejmarek çawa hatiye hesibandin. Bersiv li ser bingeha vê analîzê ne û ne şîreta veberhênanê ne.",
+  "askHint": "Pirsekê binivîse…",
+  "askSend": "Bişîne",
+  "askThinking": "Difikire…",
+  "askSuggest1": "Xetereya herî mezin çi ye?",
+  "askSuggest2": "Çi dikare pêşbîniyê biguherîne?",
+  "askSuggest3": "Bi awayekî hêsan rave bike",
+  "askMaxReached": "Ev pirsa dawî ya vê analîzê bû. Ji bo pirsên din analîzeke nû çêke.",
+  "errAskLimit": "Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne."
 }

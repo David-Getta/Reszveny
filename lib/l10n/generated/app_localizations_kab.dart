@@ -1564,40 +1564,40 @@ class AppLocalizationsKab extends AppLocalizations {
       'Acḥal n tikkal i ttwasqedcent tmahilin d yineqqisen n tuccḍiwin, war isefka udmawanen neɣ agbur n unadi d tesleḍt-ik.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Steqsi ɣef tesleḍt-a';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Isteqsiyen ɣef $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Steqsi ayen tebɣiḍ ɣef tesleḍt: d acu i d-yemmal yiwen wugur, d acu i izemren ad ibeddel tamuɣli ɣer zdat, amek i yettwasiḍen yiwen wuṭṭun. Tiririyin bnant ɣef tesleḍt-a, ur d awellih n usersi n yidrimen ara.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Aru asteqsi…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Azen';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ttxemmimeɣ…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'D acu i d ugur ameqqran akk?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'D acu i izemren ad ibeddel tamuɣli ɣer zdat?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Fsser-it-id s wawalen fessusen';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Wa d asteqsi aneggaru i tesleḍt-a. Snulfu-d tasleḍt tamaynut akken ad testeqsiḍ ugar.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka.';
 }

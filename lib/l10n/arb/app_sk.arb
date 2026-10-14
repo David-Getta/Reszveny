@@ -427,5 +427,16 @@
   "telemetryAllow": "Povoliť",
   "telemetryDecline": "Nie, ďakujem",
   "telemetrySetting": "Anonymné štatistiky a hlásenia o zlyhaní",
-  "telemetrySettingHint": "Ako často sa používajú funkcie a hlásenia o chybách – bez osobných údajov či obsahu tvojich vyhľadávaní a analýz."
+  "telemetrySettingHint": "Ako často sa používajú funkcie a hlásenia o chybách – bez osobných údajov či obsahu tvojich vyhľadávaní a analýz.",
+  "askButton": "Opýtať sa na túto analýzu",
+  "askTitle": "Otázky k {symbol}",
+  "askIntro": "Pýtajte sa na čokoľvek z analýzy: čo znamená určité riziko, čo by mohlo zmeniť výhľad, ako sa vypočítalo určité číslo. Odpovede vychádzajú z tejto analýzy a nie sú investičným odporúčaním.",
+  "askHint": "Položte otázku…",
+  "askSend": "Odoslať",
+  "askThinking": "Premýšľam…",
+  "askSuggest1": "Aké je najväčšie riziko?",
+  "askSuggest2": "Čo by mohlo zmeniť výhľad?",
+  "askSuggest3": "Vysvetli to jednoducho",
+  "askMaxReached": "To bola posledná otázka k tejto analýze. Ak sa chcete pýtať ďalej, vygenerujte novú analýzu.",
+  "errAskLimit": "Dosiahli ste dnešný limit otázok. Skúste to znova zajtra."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Dumelela",
   "telemetryDecline": "Aowa, ke a leboga",
   "telemetrySetting": "Dipalopalo tša go hloka leina le dipego tša go wa",
-  "telemetrySettingHint": "Gore dikarolo di šomišwa gakae le dipego tša diphošo, ka ntle le tshedimošo ya sephiri goba diteng tša dinyakišišo le ditshekatsheko tša gago."
+  "telemetrySettingHint": "Gore dikarolo di šomišwa gakae le dipego tša diphošo, ka ntle le tshedimošo ya sephiri goba diteng tša dinyakišišo le ditshekatsheko tša gago.",
+  "askButton": "Botšiša ka tshekatsheko ye",
+  "askTitle": "Dipotšišo ka {symbol}",
+  "askIntro": "Botšiša se sengwe le se sengwe ka tshekatsheko: seo kotsi e itšego e se bolelago, seo se ka fetošago tebelelo, le ka moo palo e itšego e hweditšwego ka gona. Dikarabo di theilwe godimo ga tshekatsheko ye gomme ga se keletšo ya peeletšo.",
+  "askHint": "Botšiša potšišo…",
+  "askSend": "Romela",
+  "askThinking": "Ke a nagana…",
+  "askSuggest1": "Kotsi ye kgolo kudu ke efe?",
+  "askSuggest2": "Ke eng seo se ka fetošago tebelelo?",
+  "askSuggest3": "E hlaloše ka mantšu a bonolo",
+  "askMaxReached": "Yeo e be e le potšišo ya mafelelo ya tshekatsheko ye. Tšweletša tshekatsheko ye mpsha go botšiša tše dingwe.",
+  "errAskLimit": "O fihleletše moedi wa dipotšišo wa lehono. Leka gape gosasa."
 }

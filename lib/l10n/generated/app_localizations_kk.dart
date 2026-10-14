@@ -1566,40 +1566,40 @@ class AppLocalizationsKk extends AppLocalizations {
       'Функциялардың қаншалықты жиі қолданылатыны және қате туралы есептер — жеке деректерсіз, іздеулеріңіз бен талдауларыңыздың мазмұнынсыз.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Талдау туралы сұрақ қою';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol туралы сұрақтар';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Талдау туралы кез келген нәрсені сұраңыз: белгілі бір тәуекел нені білдіреді, болжамды не өзгертуі мүмкін, сан қалай есептелді. Жауаптар осы талдауға негізделген және инвестициялық кеңес болып табылмайды.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Сұрағыңызды жазыңыз…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Жіберу';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ойланып жатыр…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ең үлкен тәуекел қандай?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Болжамды не өзгертуі мүмкін?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Қарапайым тілмен түсіндір';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Бұл талдау бойынша соңғы сұрақ осы еді. Тағы сұрау үшін жаңа талдау жасаңыз.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Бүгінгі сұрақтар лимитіне жеттіңіз. Ертең қайта көріңіз.';
 }

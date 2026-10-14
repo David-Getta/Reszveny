@@ -1571,40 +1571,40 @@ class AppLocalizationsKg extends AppLocalizations {
       'Mbala ikwa bantu ke sadila bisalu mpi ba rapports ya ba erreurs, kukonda nsangu ya kibeni to mambu ya bisosa mpi ba analyse na nge.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Yuvula mu analyse yai';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Biuvu mu $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Yuvula kima kiakonso mu analyse: nki dilenda kala nsasa ya vonza mosi, nki dilenda soba mambu ma lumbu ma ntwala, mpila ntalu mosi yitalwa. Mvutu zisimbidi mu analyse yai, ye ka i malongi ma kutula mbongo ko.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Sona kiuvu kiaku…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tuma';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Yeti banza…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Vonza kinene i nki?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Nki dilenda soba mambu ma lumbu ma ntwala?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Tendula yo mu mpila ya pete';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Yoyo kiuvu kia nsuka mu analyse yai. Vanga analyse ya mpa mu yuvula diaka.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Ufwene ndilu ya biuvu bia lumbu kiaki. Meka diaka mbazi.';
 }

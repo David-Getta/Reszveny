@@ -1566,40 +1566,40 @@ class AppLocalizationsJv extends AppLocalizations {
       'Sepira kerepé fitur digunakaké lan laporan kasalahan, tanpa data pribadhi utawa isi panelusuran lan analisismu.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Takon babagan analisis iki';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Pitakon babagan $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Takon apa waé babagan analisis iki: apa tegesé sawijining risiko, apa sing bisa ngowahi prospeké, kepriyé sawijining angka diétung. Wangsulané adhedhasar analisis iki lan dudu saran investasi.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Takon apa waé…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Kirim';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Lagi mikir…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Apa risiko sing paling gedhé?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Apa sing bisa ngowahi prospeké?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Jelasna nganggo basa sing gampang';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Kuwi pitakon pungkasan kanggo analisis iki. Gawe analisis anyar yen arep takon manèh.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Watesan pitakon dina iki wis entek. Coba maneh sesuk.';
 }

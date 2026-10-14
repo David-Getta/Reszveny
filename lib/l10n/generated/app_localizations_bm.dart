@@ -1564,40 +1564,40 @@ class AppLocalizationsBm extends AppLocalizations {
       'Fɛɛrɛw bɛ baara la siɲɛ joli ani fili kibaruyaw, i yɛrɛ ka kunnafoniw tɛ, i ka ɲininiw ni i ka sɛgɛsɛgɛliw kɔnɔkow fana tɛ.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Ɲininkali kɛ nin sɛgɛsɛgɛli kan';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ɲininkaliw $symbol kan';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Ɲininkali o ɲininkali kɛ sɛgɛsɛgɛli in kan: farati dɔ kɔrɔ ye mun ye, mun bɛ se ka siniko yɛlɛma, jate dɔ sɔrɔla cogo min na. Jaabiw sinsinnen bɛ nin sɛgɛsɛgɛli kan, wari donni ladilikan tɛ.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Ɲininkali dɔ sɛbɛn…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'A ci';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'A bɛ miiri…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Farati belebele ye jumɛn ye?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Mun bɛ se ka siniko yɛlɛma?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'A ɲɛfɔ ka nɔgɔya';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'O tun ye nin sɛgɛsɛgɛli ɲininkali laban ye. Sɛgɛsɛgɛli kura dilan walasa ka ɲininkali wɛrɛw kɛ.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'I sera bi ɲininkaliw dan na. Hakɛto, a lajɛ tugun sini.';
 }

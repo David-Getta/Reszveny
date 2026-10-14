@@ -1573,40 +1573,40 @@ class AppLocalizationsRw extends AppLocalizations {
       'Inshuro ibikorwa bikoreshwa na raporo z\'amakosa, nta makuru bwite cyangwa ibikubiye mu byo washakishije n\'amasesengura yawe.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Baza ku bijyanye n\'iri sesengura';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ibibazo kuri $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Baza icyo ushaka cyose ku isesengura: icyo ibyago runaka bisobanura, icyahindura icyerekezo, uko umubare runaka wabazwe. Ibisubizo bishingiye kuri iri sesengura, kandi si inama yo gushora imari.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Baza ikibazo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Ohereza';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndimo gutekereza…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ibyago bikomeye kurusha ibindi ni ibihe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ni iki cyahindura icyerekezo?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Bisobanure mu buryo bworoshye';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Icyo cyari ikibazo cya nyuma kuri iri sesengura. Kora isesengura rishya kugira ngo ubaze ibindi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Wageze ku mubare ntarengwa w\'ibibazo by\'uyu munsi. Ongera ugerageze ejo.';
 }

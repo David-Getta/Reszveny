@@ -1573,40 +1573,39 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kangati zinthu zimagwiritsidwa ntchito ndi malipoti a zolakwika, popanda zambiri zanu zachinsinsi kapena zomwe mwasaka ndi kusanthula.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Funsani za kusanthula kumeneku';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Mafunso okhudza $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Funsani chilichonse chokhudza kusanthula: tanthauzo la chiopsezo, zomwe zingasinthe ziyembekezo, momwe nambala inawerengedwera. Mayankho amachokera pa kusanthula kumeneku ndipo si malangizo okhudza kuyika ndalama.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Funsani funso…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tumizani';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndikuganiza…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Kodi chiopsezo chachikulu kwambiri ndi chiyani?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Kodi chingasinthe ziyembekezo ndi chiyani?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Fotokozani mophweka';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Limenelo linali funso lomaliza la kusanthula kumeneku. Pangani kusanthula kwatsopano kuti mufunse zambiri.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'Mwafika malire a mafunso a lero. Yesaninso mawa.';
 }

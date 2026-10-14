@@ -427,5 +427,16 @@
   "telemetryAllow": "Vumela",
   "telemetryDecline": "Hayi, enkosi",
   "telemetrySetting": "Iinkcukacha-manani ezingachazi gama kunye neengxelo zokuwa",
-  "telemetrySettingHint": "Kangakanani iimpawu zisetyenziswa kunye neengxelo zeempazamo, ngaphandle kweenkcukacha zobuqu okanye umxholo wokukhangela nohlalutyo lwakho."
+  "telemetrySettingHint": "Kangakanani iimpawu zisetyenziswa kunye neengxelo zeempazamo, ngaphandle kweenkcukacha zobuqu okanye umxholo wokukhangela nohlalutyo lwakho.",
+  "askButton": "Buza ngolu hlalutyo",
+  "askTitle": "Imibuzo nge-{symbol}",
+  "askIntro": "Buza nantoni na malunga nohlalutyo: intsingiselo yomngcipheko othile, yintoni enokutshintsha imbono yekamva, inani elithile libalwe njani. Iimpendulo zisekelwe kolu hlalutyo kwaye aziyocebiso lotyalo-mali.",
+  "askHint": "Buza umbuzo…",
+  "askSend": "Thumela",
+  "askThinking": "Iyacinga…",
+  "askSuggest1": "Yintoni owona mngcipheko mkhulu?",
+  "askSuggest2": "Yintoni enokutshintsha imbono yekamva?",
+  "askSuggest3": "Ndicacisele ngendlela elula",
+  "askMaxReached": "Lo ibingowokugqibela umbuzo wolu hlalutyo. Yenza uhlalutyo olutsha ukuze ubuze ngakumbi.",
+  "errAskLimit": "Ufikelele kumda wemibuzo wanamhlanje. Nceda uzame kwakhona ngomso."
 }

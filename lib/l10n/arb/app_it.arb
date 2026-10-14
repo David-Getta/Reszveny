@@ -427,5 +427,16 @@
   "telemetryAllow": "Consenti",
   "telemetryDecline": "No, grazie",
   "telemetrySetting": "Statistiche anonime e rapporti sugli arresti anomali",
-  "telemetrySettingHint": "Frequenza di utilizzo delle funzioni e segnalazioni di errori, senza dati personali né il contenuto delle tue ricerche e analisi."
+  "telemetrySettingHint": "Frequenza di utilizzo delle funzioni e segnalazioni di errori, senza dati personali né il contenuto delle tue ricerche e analisi.",
+  "askButton": "Fai domande su questa analisi",
+  "askTitle": "Domande su {symbol}",
+  "askIntro": "Chiedi qualsiasi cosa sull’analisi: cosa significa un rischio, cosa potrebbe cambiare le prospettive, come è stato calcolato un numero. Le risposte si basano su questa analisi e non costituiscono un consiglio di investimento.",
+  "askHint": "Fai una domanda…",
+  "askSend": "Invia",
+  "askThinking": "Sto pensando…",
+  "askSuggest1": "Qual è il rischio maggiore?",
+  "askSuggest2": "Cosa potrebbe cambiare le prospettive?",
+  "askSuggest3": "Spiegamelo in parole semplici",
+  "askMaxReached": "Era l’ultima domanda per questa analisi. Per farne altre, genera una nuova analisi.",
+  "errAskLimit": "Hai raggiunto il limite giornaliero di domande. Riprova domani."
 }

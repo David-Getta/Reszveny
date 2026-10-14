@@ -1588,40 +1588,40 @@ class AppLocalizationsGl extends AppLocalizations {
       'Con que frecuencia se usan as funcións e informes de erros, sen datos persoais nin o contido das túas buscas e análises.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Pregunta sobre esta análise';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Preguntas sobre $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pregunta o que queiras sobre a análise: que significa un risco, que cambiaría as perspectivas, como se calculou unha cifra. As respostas baséanse nesta análise e non constitúen asesoramento de investimento.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Escribe unha pregunta…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Enviar';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Pensando…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Cal é o maior risco?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Que cambiaría as perspectivas?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explícao con palabras sinxelas';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Esa era a última pregunta para esta análise. Crea unha análise nova para facer máis preguntas.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Alcanzaches o límite de preguntas de hoxe. Téntao de novo mañá.';
 }

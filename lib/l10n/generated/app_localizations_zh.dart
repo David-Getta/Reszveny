@@ -1504,42 +1504,40 @@ class AppLocalizationsZh extends AppLocalizations {
   String get telemetrySettingHint => '功能使用频率和错误报告，不包含个人数据，也不包含你的搜索和分析内容。';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => '就此分析提问';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '关于 $symbol 的问题';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      '关于这份分析，你可以问任何问题：某项风险意味着什么、什么会改变前景、某个数字是怎么算出来的。回答基于这份分析，不构成投资建议。';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => '输入问题…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => '发送';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => '正在思考…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => '最大的风险是什么？';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => '什么会改变前景？';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => '用简单的话解释一下';
 
   @override
-  String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+  String get askMaxReached => '这是本次分析的最后一个问题。如需继续提问，请生成新的分析。';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => '你已达到今日提问上限。请明天再试。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3038,4 +3036,40 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get telemetrySettingHint => '功能使用頻率及錯誤報告，不包括個人資料，亦不包括你的搜尋及分析內容。';
+
+  @override
+  String get askButton => '就此分析提問';
+
+  @override
+  String askTitle(String symbol) {
+    return '關於 $symbol 的問題';
+  }
+
+  @override
+  String get askIntro =>
+      '你可以就這份分析提出任何問題：某項風險代表甚麼、甚麼會改變前景、某個數字是怎樣計算出來的。回答以這份分析為基礎，並不構成投資建議。';
+
+  @override
+  String get askHint => '輸入問題…';
+
+  @override
+  String get askSend => '傳送';
+
+  @override
+  String get askThinking => '正在思考…';
+
+  @override
+  String get askSuggest1 => '最大的風險是甚麼？';
+
+  @override
+  String get askSuggest2 => '甚麼會改變前景？';
+
+  @override
+  String get askSuggest3 => '用簡單的說法解釋一下';
+
+  @override
+  String get askMaxReached => '這是此分析的最後一個問題。如要繼續提問，請產生新的分析。';
+
+  @override
+  String get errAskLimit => '你已達到今日的提問上限。請明天再試。';
 }

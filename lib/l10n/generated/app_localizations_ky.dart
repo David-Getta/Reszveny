@@ -1568,40 +1568,40 @@ class AppLocalizationsKy extends AppLocalizations {
       'Функциялар канчалык көп колдонулары жана ката тууралуу кабарлар — жеке маалыматтарсыз жана издөөлөрүңүз менен талдоолоруңуздун мазмунусуз.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Бул талдоо тууралуу суроо берүү';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol боюнча суроолор';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Талдоо тууралуу каалаган нерсени сураңыз: кандайдыр бир тобокелдик эмнени билдирет, болжолду эмне өзгөртүшү мүмкүн, сан кантип эсептелген. Жооптор ушул талдоого негизделген жана инвестициялык кеңеш эмес.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Суроо жазыңыз…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Жөнөтүү';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ойлонуп жатат…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Эң чоң тобокелдик кайсы?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Болжолду эмне өзгөртүшү мүмкүн?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Жөнөкөй тил менен түшүндүрүп бер';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Бул талдоо боюнча акыркы суроо ушул эле. Дагы суроо берүү үчүн жаңы талдоо түзүңүз.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Бүгүнкү суроолор чегине жеттиңиз. Эртең кайра аракет кылыңыз.';
 }

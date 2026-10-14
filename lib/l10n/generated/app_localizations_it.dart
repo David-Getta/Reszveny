@@ -1570,40 +1570,40 @@ class AppLocalizationsIt extends AppLocalizations {
       'Frequenza di utilizzo delle funzioni e segnalazioni di errori, senza dati personali né il contenuto delle tue ricerche e analisi.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Fai domande su questa analisi';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Domande su $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Chiedi qualsiasi cosa sull’analisi: cosa significa un rischio, cosa potrebbe cambiare le prospettive, come è stato calcolato un numero. Le risposte si basano su questa analisi e non costituiscono un consiglio di investimento.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Fai una domanda…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Invia';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Sto pensando…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Qual è il rischio maggiore?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Cosa potrebbe cambiare le prospettive?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Spiegamelo in parole semplici';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Era l’ultima domanda per questa analisi. Per farne altre, genera una nuova analisi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Hai raggiunto il limite giornaliero di domande. Riprova domani.';
 }

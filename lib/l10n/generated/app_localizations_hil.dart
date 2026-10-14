@@ -1577,40 +1577,40 @@ class AppLocalizationsHil extends AppLocalizations {
       'Kon daw ano kasubsob ginagamit ang mga feature kag mga report sang sayop, wala sang personal nga datos ukon sulod sang imo mga pagpangita kag analisis.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Mamangkot parte sa sini nga analisis';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Mga pamangkot parte sa $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pamangkot sang bisan ano parte sa analisis: ano ang buot silingon sang isa ka risgo, ano ang makabag-o sang palaabuton, paano nakuha ang isa ka numero. Ang mga sabat base sa sini nga analisis kag indi laygay sa pag-invest.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Magpamangkot…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Ipadala';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Nagapanumdom…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ano ang pinakadako nga risgo?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ano ang makabag-o sang palaabuton?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Ipaathag ini sa simple nga paagi';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Amo ato ang katapusan nga pamangkot para sa sini nga analisis. Maghimo sang bag-o nga analisis para makapamangkot pa.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Naabot mo na ang limitasyon sang mga pamangkot subong nga adlaw. Tilawi liwat buwas.';
 }

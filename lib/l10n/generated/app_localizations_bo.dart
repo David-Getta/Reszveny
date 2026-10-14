@@ -1558,40 +1558,40 @@ class AppLocalizationsBo extends AppLocalizations {
       'ནུས་པ་ཇི་ཙམ་བེད་སྤྱོད་བྱས་པ་དང་ནོར་འཁྲུལ་སྙན་ཞུ། སྒེར་གྱི་གཞི་གྲངས་སམ་ཁྱེད་ཀྱི་འཚོལ་ཞིབ་དང་དབྱེ་ཞིབ་ཀྱི་ནང་དོན་མེད་པར།';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'དབྱེ་ཞིབ་འདིའི་སྐོར་དྲི་བ་འདྲི།';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol སྐོར་གྱི་དྲི་བ།';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'དབྱེ་ཞིབ་འདིའི་སྐོར་ཅི་ཡང་རུང་དྲི་རོགས། ཉེན་ཁ་ཞིག་གི་དོན་གང་ཡིན་པ། མདུན་ལྟ་གང་གིས་འགྱུར་སྲིད་པ། ཨང་གྲངས་ཞིག་ཇི་ལྟར་རྩིས་བརྒྱབ་པ་སོགས། ལན་རྣམས་དབྱེ་ཞིབ་འདི་ལ་གཞིགས་ཡོད་ལ། མ་འཇོག་གི་བསམ་འཆར་ཡང་མིན།';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'དྲི་བ་ཞིག་འདྲི་རོགས…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'གཏོང་།';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'བསམ་བློ་གཏོང་བཞིན་པ…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'ཉེན་ཁ་ཆེ་ཤོས་གང་ཡིན།';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'མདུན་ལྟ་གང་གིས་འགྱུར་སྲིད།';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'སྟབས་བདེའི་ཚིག་གིས་འགྲེལ་བཤད་བྱེད་རོགས།';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'དེ་ནི་དབྱེ་ཞིབ་འདིའི་དྲི་བ་མཐའ་མ་ཡིན། དྲི་བ་མང་བ་འདྲི་བར་དབྱེ་ཞིབ་གསར་པ་ཞིག་བཟོ་རོགས།';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'ཁྱེད་ཀྱིས་དེ་རིང་གི་དྲི་བའི་ཚད་བཀག་ལ་སླེབས་སོང་། སང་ཉིན་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།';
 }

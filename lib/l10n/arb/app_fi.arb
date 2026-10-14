@@ -427,5 +427,16 @@
   "telemetryAllow": "Salli",
   "telemetryDecline": "Ei kiitos",
   "telemetrySetting": "Nimettömät tilastot ja kaatumisraportit",
-  "telemetrySettingHint": "Kuinka usein ominaisuuksia käytetään sekä virheraportit – ilman henkilötietoja tai hakujesi ja analyysiesi sisältöä."
+  "telemetrySettingHint": "Kuinka usein ominaisuuksia käytetään sekä virheraportit – ilman henkilötietoja tai hakujesi ja analyysiesi sisältöä.",
+  "askButton": "Kysy tästä analyysista",
+  "askTitle": "Kysymyksiä: {symbol}",
+  "askIntro": "Kysy mitä tahansa analyysista: mitä jokin riski tarkoittaa, mikä muuttaisi näkymiä, miten jokin luku on laskettu. Vastaukset perustuvat tähän analyysiin eivätkä ole sijoitusneuvontaa.",
+  "askHint": "Kirjoita kysymys…",
+  "askSend": "Lähetä",
+  "askThinking": "Mietitään…",
+  "askSuggest1": "Mikä on suurin riski?",
+  "askSuggest2": "Mikä muuttaisi näkymiä?",
+  "askSuggest3": "Selitä yksinkertaisesti",
+  "askMaxReached": "Tämä oli viimeinen kysymys tähän analyysiin. Luo uusi analyysi, jos haluat kysyä lisää.",
+  "errAskLimit": "Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna."
 }

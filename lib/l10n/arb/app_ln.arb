@@ -427,5 +427,16 @@
   "telemetryAllow": "Pesa ndingisa",
   "telemetryDecline": "Te, matondi",
   "telemetrySetting": "Ba-statistique ezangi nkombo mpe ba-rapport ya ba-plantage",
-  "telemetrySettingHint": "Mbala boni basalelaka biloko mpe ba-rapport ya ba-erreur, kozanga ba-donnée ya moko to makambo ya bolukiluki mpe ba-analyse na yo."
+  "telemetrySettingHint": "Mbala boni basalelaka biloko mpe ba-rapport ya ba-erreur, kozanga ba-donnée ya moko to makambo ya bolukiluki mpe ba-analyse na yo.",
+  "askButton": "Tuna mituna na ntina ya analyse oyo",
+  "askTitle": "Mituna na ntina ya {symbol}",
+  "askIntro": "Tuna nyonso oyo olingi na ntina ya analyse: likama moko elakisi nini, nini ekoki kobongola makanisi ya mikolo ezali koya, ndenge motango moko etangamaki. Biyano esimbami na analyse oyo, mpe ezali toli ya kotia mbɔngɔ te.",
+  "askHint": "Komá motuna…",
+  "askSend": "Tinda",
+  "askThinking": "Ezali kokanisa…",
+  "askSuggest1": "Likama monene ezali nini?",
+  "askSuggest2": "Nini ekoki kobongola makanisi ya mikolo ezali koya?",
+  "askSuggest3": "Limbolá yango na ndenge ya pɛtɛɛ",
+  "askMaxReached": "Wana ezalaki motuna ya nsuka mpo na analyse oyo. Bimisa analyse ya sika mpo na kotuna lisusu.",
+  "errAskLimit": "Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi."
 }

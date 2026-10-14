@@ -1569,40 +1569,40 @@ class AppLocalizationsEe extends AppLocalizations {
       'Zi ale si wozãa dɔwɔnuwo kple vodada ŋuti nyatakakawo, wò ŋutɔ ƒe nyatakakawo alo wò didiwo kple numekukuwo ƒe emenyawo manɔmee.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Bia nya tso numekuku sia ŋu';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Nyabiasewo tso $symbol ŋu';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Bia nya sia nya tso numekuku la ŋu: nu si afɔku aɖe fia, nu si ate ŋu atrɔ etsɔme ƒe nukpɔkpɔ, alesi wobu xexlẽdzesi aɖe. Ŋuɖoɖoawo nɔ te ɖe numekuku sia dzi, eye menye aɖaŋuɖoɖo le gadede nu ŋu o.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Bia nya aɖe…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Ɖoe ɖa';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ele bubum…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Afɔku kae nye gãtɔ?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Nu kae ate ŋu atrɔ etsɔme ƒe nukpɔkpɔ?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Ɖe eme le mɔ bɔbɔe nu';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ema enye nyabiase mamlɛtɔ na numekuku sia. Wɔ numekuku yeye be nàte ŋu abia nya bubuwo.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Èɖo egbe ƒe nyabiasewo ƒe seɖoƒe. Taflatse, gagbugbɔ te kpɔ etsɔ.';
 }

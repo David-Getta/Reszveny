@@ -1570,40 +1570,40 @@ class AppLocalizationsNl extends AppLocalizations {
       'Hoe vaak functies worden gebruikt en foutrapporten, zonder persoonlijke gegevens of de inhoud van je zoekopdrachten en analyses.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Stel een vraag over deze analyse';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Vragen over $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Vraag alles over de analyse: wat een risico betekent, wat de vooruitzichten kan veranderen, hoe een getal is berekend. De antwoorden zijn gebaseerd op deze analyse en zijn geen beleggingsadvies.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Stel een vraag…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Verstuur';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Aan het nadenken…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Wat is het grootste risico?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Wat kan de vooruitzichten veranderen?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Leg het eenvoudig uit';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Dat was de laatste vraag voor deze analyse. Genereer een nieuwe analyse om meer te vragen.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Je hebt de dagelijkse limiet voor vragen bereikt. Probeer het morgen opnieuw.';
 }

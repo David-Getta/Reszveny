@@ -1573,40 +1573,40 @@ class AppLocalizationsHy extends AppLocalizations {
       'Գործառույթների օգտագործման հաճախականությունը և սխալների հաշվետվությունները՝ առանց անձնական տվյալների կամ ձեր որոնումների ու վերլուծությունների բովանդակության։';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Հարցրեք այս վերլուծության մասին';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Հարցեր՝ $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Հարցրեք ցանկացած բան վերլուծության մասին՝ ինչ է նշանակում որևէ ռիսկ, ինչը կարող է փոխել հեռանկարը, ինչպես է հաշվարկվել որևէ թիվ։ Պատասխանները հիմնված են այս վերլուծության վրա և ներդրումային խորհուրդ չեն։';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Գրեք ձեր հարցը…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Ուղարկել';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Մտածում եմ…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ո՞րն է ամենամեծ ռիսկը';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ի՞նչը կարող է փոխել հեռանկարը';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Բացատրիր պարզ բառերով';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Սա այս վերլուծության վերջին հարցն էր։ Նոր հարցերի համար ստեղծեք նոր վերլուծություն։';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Դուք սպառել եք այսօրվա հարցերի սահմանաչափը։ Փորձեք կրկին վաղը։';
 }

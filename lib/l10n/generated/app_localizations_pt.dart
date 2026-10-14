@@ -1571,40 +1571,40 @@ class AppLocalizationsPt extends AppLocalizations {
       'Com que frequência os recursos são usados e relatórios de erros, sem dados pessoais nem o conteúdo das suas pesquisas e análises.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Perguntar sobre esta análise';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Perguntas sobre $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Pergunte qualquer coisa sobre a análise: o que significa um risco, o que mudaria as perspectivas, como um número foi calculado. As respostas têm como base esta análise e não constituem aconselhamento de investimento.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Faça uma pergunta…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Enviar';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Pensando…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Qual é o maior risco?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'O que mudaria as perspectivas?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explique de forma simples';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Essa foi a última pergunta para esta análise. Gere uma nova análise para perguntar mais.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Você atingiu o limite de perguntas de hoje. Tente novamente amanhã.';
 }

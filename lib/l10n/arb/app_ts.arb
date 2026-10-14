@@ -427,5 +427,16 @@
   "telemetryAllow": "Pfumelela",
   "telemetryDecline": "E-e, inkomu",
   "telemetrySetting": "Tinhlayo leti nga paluxiki vito ni swiviko swa ku wa",
-  "telemetrySettingHint": "Ku tirhisiwa kangani ka swiphemu ni swiviko swa swihoxo, handle ka vuxokoxoko bya xiviri kumbe leswi nga eka ku lavisisa ni nxopaxopo wa wena."
+  "telemetrySettingHint": "Ku tirhisiwa kangani ka swiphemu ni swiviko swa swihoxo, handle ka vuxokoxoko bya xiviri kumbe leswi nga eka ku lavisisa ni nxopaxopo wa wena.",
+  "askButton": "Vutisa hi nxopaxopo lowu",
+  "askTitle": "Swivutiso hi {symbol}",
+  "askIntro": "Vutisa xin'wana na xin'wana hi nxopaxopo: leswi khombo ri vulaka swona, leswi swi nga cincaka langutelo, ndlela leyi nhlayo yi hlayiweke ha yona. Tinhlamulo ti sekeriwile eka nxopaxopo lowu naswona a hi ndzayo ya vuvekisi.",
+  "askHint": "Vutisa xivutiso…",
+  "askSend": "Rhumela",
+  "askThinking": "Ndza ha ehleketa…",
+  "askSuggest1": "Khombo lerikulu ngopfu i rihi?",
+  "askSuggest2": "I yini leswi swi nga cincaka langutelo?",
+  "askSuggest3": "Hlamusela hi ndlela yo olova",
+  "askMaxReached": "Lexi a xi ri xivutiso xo hetelela xa nxopaxopo lowu. Endla nxopaxopo lowuntshwa leswaku u vutisa swin'wana.",
+  "errAskLimit": "U fikelerile ndzelekano wa swivutiso wa namuntlha. Hi kombela u ringeta nakambe mundzuku."
 }

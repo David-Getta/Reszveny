@@ -1564,40 +1564,40 @@ class AppLocalizationsTk extends AppLocalizations {
       'Funksiýalaryň näçe gezek ulanylýandygy we ýalňyşlyk hasabatlary, şahsy maglumatlarsyz we gözlegleriňiziň hem-de seljermeleriňiziň mazmunysyz.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Bu seljerme barada soraň';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol barada soraglar';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Seljerme barada islendik zady soraň: bir töwekgelçiligiň nämäni aňladýandygyny, çaklamany nämäniň üýtgedip biljekdigini, bir sanyň nähili hasaplanandygyny. Jogaplar bu seljermä esaslanýar we maýa goýum maslahaty däldir.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Sorag beriň…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Iber';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Pikirlenýär…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Iň uly töwekgelçilik näme?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Çaklamany näme üýtgedip biler?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Ýönekeý dilde düşündir';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Bu seljerme üçin iň soňky sorag şudy. Has köp soramak üçin täze seljerme dörediň.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Şu günki sorag çägiňize ýetdiňiz. Ertir täzeden synanyşyň.';
 }

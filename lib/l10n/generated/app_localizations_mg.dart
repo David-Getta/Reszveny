@@ -1578,40 +1578,40 @@ class AppLocalizationsMg extends AppLocalizations {
       'Impiry no ampiasaina ireo endri-javatra sy tatitra momba ny hadisoana, tsy misy angon-drakitra manokana na ny votoatin\'ny fikarohana sy fandalinanao.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Manontania momba ity fandalinana ity';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Fanontaniana momba ny $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Anontanio izay rehetra tianao momba ny fandalinana: ny dikan\'ny atahorana iray, izay mety hanova ny vinavina, ny nahazoana isa iray. Miorina amin\'ity fandalinana ity ny valiny ary tsy torohevitra momba ny fampiasam-bola.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Mametraha fanontaniana…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Alefa';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Mieritreritra…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Inona no atahorana lehibe indrindra?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Inona no mety hanova ny vinavina?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Hazavao amin\'ny teny tsotra';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Io no fanontaniana farany ho an\'ity fandalinana ity. Mamorona fandalinana vaovao raha te hanontany bebe kokoa.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Tratra ny fetran\'ny fanontaniana androany. Andramo indray rahampitso.';
 }

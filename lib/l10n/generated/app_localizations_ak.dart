@@ -1565,40 +1565,40 @@ class AppLocalizationsAk extends AppLocalizations {
       'Mpɛn dodow a wode dwumadi ahorow di dwuma ne mfomso ho amanneɛbɔ, a wo ankasa wo ho nsɛm anaa nea wohwehwɛ ne wo nhwehwɛmu mu nsɛm nni mu.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Bisa nhwehwɛmu yi ho asɛm';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Nsɛmmisa fa $symbol ho';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Bisa biribiara fa nhwehwɛmu no ho: nea asiane bi kyerɛ, nea ebetumi asesa daakye tebea no, sɛnea wonyaa nɔma bi. Mmuaeɛ no gyina nhwehwɛmu yi so, na ɛnyɛ sikahyɛmu ho afotu.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Bisa asɛm…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Soma';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Redwene ho…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Asiane bɛn na ɛso sen biara?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Dɛn na ebetumi asesa daakye tebea no?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Kyerɛkyerɛ mu wɔ ɔkwan a ɛnyɛ den so';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ɛno ne asɛmmisa a etwa to ma nhwehwɛmu yi. Yɛ nhwehwɛmu foforo na woatumi abisa bio.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Woadu nsɛmmisa dodoɔ a ɛsɛ ɛnnɛ no ano. Mepa wo kyɛw, san bɔ mmɔden ɔkyena.';
 }

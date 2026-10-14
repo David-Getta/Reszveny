@@ -427,5 +427,16 @@
   "telemetryAllow": "Avelao",
   "telemetryDecline": "Tsia, misaotra",
   "telemetrySetting": "Antontan'isa tsy misy anarana sy tatitra momba ny fianjerana",
-  "telemetrySettingHint": "Impiry no ampiasaina ireo endri-javatra sy tatitra momba ny hadisoana, tsy misy angon-drakitra manokana na ny votoatin'ny fikarohana sy fandalinanao."
+  "telemetrySettingHint": "Impiry no ampiasaina ireo endri-javatra sy tatitra momba ny hadisoana, tsy misy angon-drakitra manokana na ny votoatin'ny fikarohana sy fandalinanao.",
+  "askButton": "Manontania momba ity fandalinana ity",
+  "askTitle": "Fanontaniana momba ny {symbol}",
+  "askIntro": "Anontanio izay rehetra tianao momba ny fandalinana: ny dikan'ny atahorana iray, izay mety hanova ny vinavina, ny nahazoana isa iray. Miorina amin'ity fandalinana ity ny valiny ary tsy torohevitra momba ny fampiasam-bola.",
+  "askHint": "Mametraha fanontaniana…",
+  "askSend": "Alefa",
+  "askThinking": "Mieritreritra…",
+  "askSuggest1": "Inona no atahorana lehibe indrindra?",
+  "askSuggest2": "Inona no mety hanova ny vinavina?",
+  "askSuggest3": "Hazavao amin'ny teny tsotra",
+  "askMaxReached": "Io no fanontaniana farany ho an'ity fandalinana ity. Mamorona fandalinana vaovao raha te hanontany bebe kokoa.",
+  "errAskLimit": "Tratra ny fetran'ny fanontaniana androany. Andramo indray rahampitso."
 }

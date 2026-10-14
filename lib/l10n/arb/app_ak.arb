@@ -427,5 +427,16 @@
   "telemetryAllow": "Ma kwan",
   "telemetryDecline": "Daabi, meda wo ase",
   "telemetrySetting": "Akontaabu a ɛmfa wo din ne mfomso ho amanneɛbɔ",
-  "telemetrySettingHint": "Mpɛn dodow a wode dwumadi ahorow di dwuma ne mfomso ho amanneɛbɔ, a wo ankasa wo ho nsɛm anaa nea wohwehwɛ ne wo nhwehwɛmu mu nsɛm nni mu."
+  "telemetrySettingHint": "Mpɛn dodow a wode dwumadi ahorow di dwuma ne mfomso ho amanneɛbɔ, a wo ankasa wo ho nsɛm anaa nea wohwehwɛ ne wo nhwehwɛmu mu nsɛm nni mu.",
+  "askButton": "Bisa nhwehwɛmu yi ho asɛm",
+  "askTitle": "Nsɛmmisa fa {symbol} ho",
+  "askIntro": "Bisa biribiara fa nhwehwɛmu no ho: nea asiane bi kyerɛ, nea ebetumi asesa daakye tebea no, sɛnea wonyaa nɔma bi. Mmuaeɛ no gyina nhwehwɛmu yi so, na ɛnyɛ sikahyɛmu ho afotu.",
+  "askHint": "Bisa asɛm…",
+  "askSend": "Soma",
+  "askThinking": "Redwene ho…",
+  "askSuggest1": "Asiane bɛn na ɛso sen biara?",
+  "askSuggest2": "Dɛn na ebetumi asesa daakye tebea no?",
+  "askSuggest3": "Kyerɛkyerɛ mu wɔ ɔkwan a ɛnyɛ den so",
+  "askMaxReached": "Ɛno ne asɛmmisa a etwa to ma nhwehwɛmu yi. Yɛ nhwehwɛmu foforo na woatumi abisa bio.",
+  "errAskLimit": "Woadu nsɛmmisa dodoɔ a ɛsɛ ɛnnɛ no ano. Mepa wo kyɛw, san bɔ mmɔden ɔkyena."
 }

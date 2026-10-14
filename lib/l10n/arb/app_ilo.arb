@@ -427,5 +427,16 @@
   "telemetryAllow": "Ipalubos",
   "telemetryDecline": "Saan, agyamanak",
   "telemetrySetting": "Anonimo nga estadistika ken dagiti crash report",
-  "telemetrySettingHint": "No kasano ti kasansan a pannakausar dagiti feature ken dagiti report ti biddut, awan ti personal a datos wenno linaon dagiti panagsapul ken analisismo."
+  "telemetrySettingHint": "No kasano ti kasansan a pannakausar dagiti feature ken dagiti report ti biddut, awan ti personal a datos wenno linaon dagiti panagsapul ken analisismo.",
+  "askButton": "Agsaludsod maipapan iti daytoy a panangsukimat",
+  "askTitle": "Saludsod maipapan iti {symbol}",
+  "askIntro": "Agsaludsodka iti aniaman maipapan iti panangsukimat: no ania ti kayat a sawen ti maysa a peggad, ania ti makabalbaliw iti pangnamnamaan, kasano a nabilang ti maysa a numero. Dagiti sungbat ket naibatay iti daytoy a panangsukimat ken saan a balakad iti panagpuonan.",
+  "askHint": "Agsaludsodka…",
+  "askSend": "Ipatulod",
+  "askThinking": "Agpampanunot…",
+  "askSuggest1": "Ania ti kadakkelan a peggad?",
+  "askSuggest2": "Ania ti makabalbaliw iti pangnamnamaan?",
+  "askSuggest3": "Ilawlawagmo iti nalaka a pamay-an",
+  "askMaxReached": "Dayta ti maudi a saludsod para iti daytoy a panangsukimat. Mangaramidka iti baro a panangsukimat tapno makasaludsodka pay.",
+  "errAskLimit": "Nadanonmon ti limitasion dagiti saludsod ita nga aldaw. Padasem manen inton bigat."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Dozvoli",
   "telemetryDecline": "Ne, hvala",
   "telemetrySetting": "Anonimna statistika i izvještaji o rušenju",
-  "telemetrySettingHint": "Koliko se često koriste funkcije i izvještaji o greškama, bez ličnih podataka ili sadržaja vaših pretraga i analiza."
+  "telemetrySettingHint": "Koliko se često koriste funkcije i izvještaji o greškama, bez ličnih podataka ili sadržaja vaših pretraga i analiza.",
+  "askButton": "Pitajte o ovoj analizi",
+  "askTitle": "Pitanja o {symbol}",
+  "askIntro": "Pitajte bilo šta o analizi: šta znači neki rizik, šta bi promijenilo izglede, kako je izračunat neki broj. Odgovori se zasnivaju na ovoj analizi i nisu investicijski savjet.",
+  "askHint": "Postavite pitanje…",
+  "askSend": "Pošalji",
+  "askThinking": "Razmišljam…",
+  "askSuggest1": "Koji je najveći rizik?",
+  "askSuggest2": "Šta bi promijenilo izglede?",
+  "askSuggest3": "Objasni to jednostavnim riječima",
+  "askMaxReached": "To je bilo posljednje pitanje za ovu analizu. Napravite novu analizu da biste pitali još.",
+  "errAskLimit": "Dostigli ste današnje ograničenje pitanja. Pokušajte ponovo sutra."
 }

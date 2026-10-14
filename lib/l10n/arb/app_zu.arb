@@ -427,5 +427,16 @@
   "telemetryAllow": "Vumela",
   "telemetryDecline": "Cha ngiyabonga",
   "telemetrySetting": "Izibalo ezingaziwa nemibiko yokuphahlazeka",
-  "telemetrySettingHint": "Ukuthi izici zisetshenziswa kangakanani nemibiko yamaphutha, ngaphandle kwedatha yomuntu siqu noma okuqukethwe kosesho nokuhlaziya kwakho."
+  "telemetrySettingHint": "Ukuthi izici zisetshenziswa kangakanani nemibiko yamaphutha, ngaphandle kwedatha yomuntu siqu noma okuqukethwe kosesho nokuhlaziya kwakho.",
+  "askButton": "Buza ngalolu hlaziyo",
+  "askTitle": "Imibuzo nge-{symbol}",
+  "askIntro": "Buza noma yini ngohlaziyo: ukuthi ingozi ethile isho ukuthini, yini engashintsha ukubukeka kwesikhathi esizayo, ukuthi inombolo ithile ibalwe kanjani. Izimpendulo zisekelwe kulolu hlaziyo futhi aziyona iseluleko sokutshala imali.",
+  "askHint": "Buza umbuzo…",
+  "askSend": "Thumela",
+  "askThinking": "Iyacabanga…",
+  "askSuggest1": "Iyiphi ingozi enkulu kunazo zonke?",
+  "askSuggest2": "Yini engashintsha ukubukeka kwesikhathi esizayo?",
+  "askSuggest3": "Ngichazele ngendlela elula",
+  "askMaxReached": "Lowo bekungumbuzo wokugcina walolu hlaziyo. Yenza uhlaziyo olusha ukuze ubuze okwengeziwe.",
+  "errAskLimit": "Ufinyelele umkhawulo wemibuzo wanamuhla. Sicela uzame futhi kusasa."
 }

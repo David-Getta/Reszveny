@@ -427,5 +427,16 @@
   "telemetryAllow": "Nangu",
   "telemetryDecline": "Déedéet, jërëjëf",
   "telemetrySetting": "Limat yu amul tur ak yéglekaay yu njuumte",
-  "telemetrySettingHint": "Naka lañuy faral di jëfandikoo mbir yi ak yéglekaay yu njuumte, te amul sa xibaar yu sutura walla li nekk ci sa seet ak sa saytu."
+  "telemetrySettingHint": "Naka lañuy faral di jëfandikoo mbir yi ak yéglekaay yu njuumte, te amul sa xibaar yu sutura walla li nekk ci sa seet ak sa saytu.",
+  "askButton": "Laaj ci saytu bii",
+  "askTitle": "Laaj yi ci {symbol}",
+  "askIntro": "Laajal lu la neex ci saytu bi: lu benn loraange tekki, lu mën a soppi li ñu séentu, naka lañu ame benn limu. Tontu yi ci saytu bii lañu sukkandiku, te du ndigal ci dugal xaalis.",
+  "askHint": "Bindal sa laaj…",
+  "askSend": "Yónne",
+  "askThinking": "Mangi xalaat…",
+  "askSuggest1": "Lan mooy loraange bi gën a rëy?",
+  "askSuggest2": "Lan mën a soppi li ñu séentu?",
+  "askSuggest3": "Leeral ko ci anam bu yomb",
+  "askMaxReached": "Loolu mooy laaj bu mujj bi ci saytu bii. Defaral saytu bu bees ngir laaj yeneen.",
+  "errAskLimit": "Agsi nga ci limu laaj yu tey yi. Jéemaatal ëllëg."
 }

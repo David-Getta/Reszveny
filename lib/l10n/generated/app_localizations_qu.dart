@@ -1576,40 +1576,40 @@ class AppLocalizationsQu extends AppLocalizations {
       'Hayk\'a kutitataq ruraykunata llamk\'achinku, pantaykuna willakuykunapas, mana sapaq willakuykunawan, mana maskasqaykikunap t\'aqwiyniykikunap ukhunwanpas.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Kay t\'aqwiymanta tapukuy';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Tapukuykuna: $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'T\'aqwiymanta imatapas tapukuy: huk sasachakuy ima ninan, imataq qhawayta tikranman, huk yupay imayna tarisqa karqan. Kutichiykunaqa kay t\'aqwiypim sayan, manataq qullqi churanapaq yuyaychaychu.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Huk tapukuyta qillqay…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Apachiy';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Yuyaykuchkani…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Imataq aswan hatun sasachakuy?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Imataq qhawayta tikranman?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Mana sasallata sut\'inchay';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Chayqa kay t\'aqwiypaq qhipa tapukuymi karqan. Astawan tapukunaykipaq musuq t\'aqwiyta ruway.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Kunan p\'unchawpa tapukuy limitenmanmi chayanki. Paqarin hukmanta kallpachakuy.';
 }

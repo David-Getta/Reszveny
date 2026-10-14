@@ -427,5 +427,16 @@
   "telemetryAllow": "Toestaan",
   "telemetryDecline": "Nee, bedankt",
   "telemetrySetting": "Anonieme statistieken en crashrapporten",
-  "telemetrySettingHint": "Hoe vaak functies worden gebruikt en foutrapporten, zonder persoonlijke gegevens of de inhoud van je zoekopdrachten en analyses."
+  "telemetrySettingHint": "Hoe vaak functies worden gebruikt en foutrapporten, zonder persoonlijke gegevens of de inhoud van je zoekopdrachten en analyses.",
+  "askButton": "Stel een vraag over deze analyse",
+  "askTitle": "Vragen over {symbol}",
+  "askIntro": "Vraag alles over de analyse: wat een risico betekent, wat de vooruitzichten kan veranderen, hoe een getal is berekend. De antwoorden zijn gebaseerd op deze analyse en zijn geen beleggingsadvies.",
+  "askHint": "Stel een vraag…",
+  "askSend": "Verstuur",
+  "askThinking": "Aan het nadenken…",
+  "askSuggest1": "Wat is het grootste risico?",
+  "askSuggest2": "Wat kan de vooruitzichten veranderen?",
+  "askSuggest3": "Leg het eenvoudig uit",
+  "askMaxReached": "Dat was de laatste vraag voor deze analyse. Genereer een nieuwe analyse om meer te vragen.",
+  "errAskLimit": "Je hebt de dagelijkse limiet voor vragen bereikt. Probeer het morgen opnieuw."
 }

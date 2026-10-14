@@ -1546,40 +1546,40 @@ class AppLocalizationsTh extends AppLocalizations {
       'ความถี่ในการใช้ฟีเจอร์และรายงานข้อผิดพลาด โดยไม่มีข้อมูลส่วนตัวหรือเนื้อหาการค้นหาและการวิเคราะห์ของคุณ';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'ถามเกี่ยวกับบทวิเคราะห์นี้';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'คำถามเกี่ยวกับ $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'ถามอะไรก็ได้เกี่ยวกับบทวิเคราะห์ เช่น ความเสี่ยงหมายถึงอะไร อะไรจะทำให้แนวโน้มเปลี่ยนไป หรือตัวเลขคำนวณมาอย่างไร คำตอบอิงจากบทวิเคราะห์นี้และไม่ใช่คำแนะนำในการลงทุน';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'พิมพ์คำถาม…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'ส่ง';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'กำลังคิด…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'ความเสี่ยงที่ใหญ่ที่สุดคืออะไร';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'อะไรจะทำให้แนวโน้มเปลี่ยนไป';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'อธิบายแบบเข้าใจง่าย';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'นี่คือคำถามสุดท้ายสำหรับบทวิเคราะห์นี้ สร้างบทวิเคราะห์ใหม่เพื่อถามเพิ่ม';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'คุณใช้โควตาคำถามของวันนี้ครบแล้ว ลองอีกครั้งพรุ่งนี้';
 }

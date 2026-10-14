@@ -427,5 +427,16 @@
   "telemetryAllow": "Lolani",
   "telemetryDecline": "Ayi, zikomo",
   "telemetrySetting": "Ziwerengero zopanda dzina ndi malipoti a kuwonongeka",
-  "telemetrySettingHint": "Kangati zinthu zimagwiritsidwa ntchito ndi malipoti a zolakwika, popanda zambiri zanu zachinsinsi kapena zomwe mwasaka ndi kusanthula."
+  "telemetrySettingHint": "Kangati zinthu zimagwiritsidwa ntchito ndi malipoti a zolakwika, popanda zambiri zanu zachinsinsi kapena zomwe mwasaka ndi kusanthula.",
+  "askButton": "Funsani za kusanthula kumeneku",
+  "askTitle": "Mafunso okhudza {symbol}",
+  "askIntro": "Funsani chilichonse chokhudza kusanthula: tanthauzo la chiopsezo, zomwe zingasinthe ziyembekezo, momwe nambala inawerengedwera. Mayankho amachokera pa kusanthula kumeneku ndipo si malangizo okhudza kuyika ndalama.",
+  "askHint": "Funsani funso…",
+  "askSend": "Tumizani",
+  "askThinking": "Ndikuganiza…",
+  "askSuggest1": "Kodi chiopsezo chachikulu kwambiri ndi chiyani?",
+  "askSuggest2": "Kodi chingasinthe ziyembekezo ndi chiyani?",
+  "askSuggest3": "Fotokozani mophweka",
+  "askMaxReached": "Limenelo linali funso lomaliza la kusanthula kumeneku. Pangani kusanthula kwatsopano kuti mufunse zambiri.",
+  "errAskLimit": "Mwafika malire a mafunso a lero. Yesaninso mawa."
 }

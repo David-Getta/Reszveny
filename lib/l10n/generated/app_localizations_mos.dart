@@ -1554,40 +1554,39 @@ class AppLocalizationsMos extends AppLocalizations {
       'Wakat a wããn la b tʋmd ne tʋʋm-teedã ne yel-wẽns kibay, sẽn pa tar fo meng kibay wall fo bʋʋsgo ne fo vɛɛsgã pʋgẽ bũmb.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Sok vɛɛsg kãngã wɛɛngẽ';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Sokre: $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Sok bũmb fãa vɛɛsgã wɛɛngẽ: zu-loeeg a yembr võore, bũmb ning sẽn tõe n tedg beoogã ges-taoore, la b sẽn maan to-to n paam sõor a yembre. Leokrã zĩnda vɛɛsg kãngã zugu, la b pa sagls ligd kẽesg wɛɛngẽ ye.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Sok sokre…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tʋm';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'M tagsda…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Zu-loeeg ning sẽn yaa kãsengã yaa bõe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Bõe n tõe n tedg beoogã ges-taoore?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Wilg-m-a ne gom-biis sẽn yaa nana';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Woto la sokr a yaoolem vɛɛsg kãngã yĩnga. Maan vɛɛsg-paalg n paam n le sok.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'Rũndã sokr sõorã sa. Le makr beoogo.';
 }

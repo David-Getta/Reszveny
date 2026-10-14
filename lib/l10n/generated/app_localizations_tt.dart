@@ -1562,40 +1562,40 @@ class AppLocalizationsTt extends AppLocalizations {
       'Функцияләрнең никадәр еш кулланылуы һәм хата хисаплары, шәхси мәгълүматларсыз һәм эзләүләрегез белән анализларыгыз эчтәлегеннән башка.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Бу анализ турында сорагыз';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return '$symbol турында сораулар';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Анализ турында теләсә нәрсә сорагыз: берәр куркыныч нәрсәне аңлата, фаразны нәрсә үзгәртә ала, сан ничек исәпләнгән. Җаваплар шушы анализга нигезләнә һәм инвестиция киңәше түгел.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Сорау бирегез…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Җибәрү';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Уйлый…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Иң зур куркыныч нәрсә?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Фаразны нәрсә үзгәртә ала?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Гади итеп аңлат';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Бу анализ өчен бу соңгы сорау иде. Тагын сорау бирү өчен яңа анализ ясагыз.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Сез бүгенге сораулар чигенә җиттегез. Зинһар, иртәгә кабат тырышып карагыз.';
 }

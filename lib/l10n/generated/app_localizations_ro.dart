@@ -1595,40 +1595,40 @@ class AppLocalizationsRo extends AppLocalizations {
       'Cât de des sunt folosite funcțiile și rapoarte de erori, fără date personale sau conținutul căutărilor și analizelor tale.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Întreabă despre această analiză';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Întrebări despre $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Întreabă orice despre analiză: ce înseamnă un risc, ce ar putea schimba perspectivele, cum a fost calculat un număr. Răspunsurile se bazează pe această analiză și nu reprezintă un sfat de investiții.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Pune o întrebare…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Trimite';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Mă gândesc…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Care este cel mai mare risc?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ce ar putea schimba perspectivele?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Explică-mi pe înțeles';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Aceasta a fost ultima întrebare pentru această analiză. Generează o analiză nouă ca să întrebi mai mult.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Ai atins limita de întrebări pentru azi. Încearcă din nou mâine.';
 }

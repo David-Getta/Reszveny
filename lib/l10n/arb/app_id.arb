@@ -427,5 +427,16 @@
   "telemetryAllow": "Izinkan",
   "telemetryDecline": "Tidak, terima kasih",
   "telemetrySetting": "Statistik anonim dan laporan kerusakan",
-  "telemetrySettingHint": "Seberapa sering fitur digunakan dan laporan kesalahan, tanpa data pribadi atau isi pencarian dan analisis Anda."
+  "telemetrySettingHint": "Seberapa sering fitur digunakan dan laporan kesalahan, tanpa data pribadi atau isi pencarian dan analisis Anda.",
+  "askButton": "Tanya tentang analisis ini",
+  "askTitle": "Pertanyaan tentang {symbol}",
+  "askIntro": "Tanyakan apa saja tentang analisis ini: arti suatu risiko, apa yang bisa mengubah prospeknya, bagaimana suatu angka dihitung. Jawaban didasarkan pada analisis ini dan bukan merupakan saran investasi.",
+  "askHint": "Ajukan pertanyaan…",
+  "askSend": "Kirim",
+  "askThinking": "Sedang berpikir…",
+  "askSuggest1": "Apa risiko terbesarnya?",
+  "askSuggest2": "Apa yang bisa mengubah prospeknya?",
+  "askSuggest3": "Jelaskan dengan bahasa sederhana",
+  "askMaxReached": "Itu pertanyaan terakhir untuk analisis ini. Buat analisis baru untuk bertanya lagi.",
+  "errAskLimit": "Anda telah mencapai batas pertanyaan hari ini. Coba lagi besok."
 }

@@ -427,5 +427,16 @@
   "telemetryAllow": "Pesa nzila",
   "telemetryDecline": "Ve, matondo",
   "telemetrySetting": "Statistiques kukonda zina mpi ba rapports ya ba plantages",
-  "telemetrySettingHint": "Mbala ikwa bantu ke sadila bisalu mpi ba rapports ya ba erreurs, kukonda nsangu ya kibeni to mambu ya bisosa mpi ba analyse na nge."
+  "telemetrySettingHint": "Mbala ikwa bantu ke sadila bisalu mpi ba rapports ya ba erreurs, kukonda nsangu ya kibeni to mambu ya bisosa mpi ba analyse na nge.",
+  "askButton": "Yuvula mu analyse yai",
+  "askTitle": "Biuvu mu {symbol}",
+  "askIntro": "Yuvula kima kiakonso mu analyse: nki dilenda kala nsasa ya vonza mosi, nki dilenda soba mambu ma lumbu ma ntwala, mpila ntalu mosi yitalwa. Mvutu zisimbidi mu analyse yai, ye ka i malongi ma kutula mbongo ko.",
+  "askHint": "Sona kiuvu kiaku…",
+  "askSend": "Tuma",
+  "askThinking": "Yeti banza…",
+  "askSuggest1": "Vonza kinene i nki?",
+  "askSuggest2": "Nki dilenda soba mambu ma lumbu ma ntwala?",
+  "askSuggest3": "Tendula yo mu mpila ya pete",
+  "askMaxReached": "Yoyo kiuvu kia nsuka mu analyse yai. Vanga analyse ya mpa mu yuvula diaka.",
+  "errAskLimit": "Ufwene ndilu ya biuvu bia lumbu kiaki. Meka diaka mbazi."
 }

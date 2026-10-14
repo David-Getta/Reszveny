@@ -1571,40 +1571,40 @@ class AppLocalizationsSn extends AppLocalizations {
       'Kuti zvinhu zvinoshandiswa kangani nemishumo yezvikanganiso, pasina ruzivo rwako rwega kana zviri mukutsvaga kwako neongororo dzako.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Bvunza nezve ongororo iyi';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Mibvunzo nezve $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Bvunza chero chinhu nezve ongororo iyi: zvinorehwa nenjodzi, zvingashandura maonero, kuti nhamba yakawanikwa sei. Mhinduro dzinobva paongororo iyi uye hadzisi zano rekuisa mari.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Bvunza mubvunzo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Tumira';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndiri kufunga…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ndeipi njodzi huru kupfuura dzose?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Chii chingashandura maonero?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Tsanangura nenzira iri nyore';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Uyu ndiwo waive mubvunzo wekupedzisira weongororo iyi. Gadzira ongororo itsva kuti ubvunze zvimwe.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Wasvika pamuganhu wemibvunzo wanhasi. Edza zvakare mangwana.';
 }

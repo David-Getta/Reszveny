@@ -1562,40 +1562,39 @@ class AppLocalizationsWo extends AppLocalizations {
       'Naka lañuy faral di jëfandikoo mbir yi ak yéglekaay yu njuumte, te amul sa xibaar yu sutura walla li nekk ci sa seet ak sa saytu.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Laaj ci saytu bii';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Laaj yi ci $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Laajal lu la neex ci saytu bi: lu benn loraange tekki, lu mën a soppi li ñu séentu, naka lañu ame benn limu. Tontu yi ci saytu bii lañu sukkandiku, te du ndigal ci dugal xaalis.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Bindal sa laaj…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Yónne';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Mangi xalaat…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Lan mooy loraange bi gën a rëy?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Lan mën a soppi li ñu séentu?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Leeral ko ci anam bu yomb';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Loolu mooy laaj bu mujj bi ci saytu bii. Defaral saytu bu bees ngir laaj yeneen.';
 
   @override
-  String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+  String get errAskLimit => 'Agsi nga ci limu laaj yu tey yi. Jéemaatal ëllëg.';
 }

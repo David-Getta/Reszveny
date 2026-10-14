@@ -1572,40 +1572,40 @@ class AppLocalizationsRn extends AppLocalizations {
       'Incuro ibikorwa bikoreshwa n\'amakuru y\'amakosa, atarimwo amakuru bwite canke ibiri mu marondero n\'isesangura vyawe.';
 
   @override
-  String get askButton => 'Ask about this analysis';
+  String get askButton => 'Baza ibijanye n\'iri sesangura';
 
   @override
   String askTitle(String symbol) {
-    return 'Questions about $symbol';
+    return 'Ibibazo kuri $symbol';
   }
 
   @override
   String get askIntro =>
-      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+      'Baza ico ushaka cose ku bijanye n\'isesangura: ico ingorane runaka isigura, ivyoshobora guhindura ivyitezwe, ingene igitigiri runaka cabonetse. Inyishu zishingiye kuri iri sesangura, kandi si inama yo gushora imari.';
 
   @override
-  String get askHint => 'Ask a question…';
+  String get askHint => 'Baza ikibazo…';
 
   @override
-  String get askSend => 'Send';
+  String get askSend => 'Rungika';
 
   @override
-  String get askThinking => 'Thinking…';
+  String get askThinking => 'Ndiko ndiyumvira…';
 
   @override
-  String get askSuggest1 => 'What is the biggest risk?';
+  String get askSuggest1 => 'Ingorane nkuru ni iyihe?';
 
   @override
-  String get askSuggest2 => 'What would change the outlook?';
+  String get askSuggest2 => 'Ni igiki coshobora guhindura ivyitezwe?';
 
   @override
-  String get askSuggest3 => 'Explain it in simple terms';
+  String get askSuggest3 => 'Bisobanure mu buryo bworoshe';
 
   @override
   String get askMaxReached =>
-      'That was the last question for this analysis. Make a new analysis to ask more.';
+      'Ico cari ikibazo ca nyuma kuri iri sesangura. Kora isesangura rishasha kugira ubaze ibindi.';
 
   @override
   String get errAskLimit =>
-      'You have reached today\'s limit for questions. Please try again tomorrow.';
+      'Washitse ku rugero rw\'ibibazo rw\'uyu munsi. Subira ugerageze ejo.';
 }
