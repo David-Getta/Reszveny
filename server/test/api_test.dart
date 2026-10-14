@@ -364,7 +364,7 @@ void main() {
     expect(me['extra'], 3);
   });
 
-  test('analyze runs on the server model and keeps only the web search tool', () async {
+  test('analyze runs on the server model and keeps only the web tools', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     await call(
       'POST',

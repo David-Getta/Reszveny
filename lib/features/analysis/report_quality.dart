@@ -4,7 +4,8 @@ import 'analysis_options.dart';
 /// Gépi minőség-ellenőrzés egy elkészült elemzésre: megvan-e minden szekció a
 /// helyes sorrendben, dátumozottak-e a hírek, kijön-e a 100 % a forgatókönyvekből,
 /// van-e ársáv és indoklás a legvalószínűbb forgatókönyvhöz, tágulnak-e a
-/// hosszú távú sávok az idővel, elég-e a forrás, és stimmel-e a terjedelem. Az eval-futtatás
+/// hosszú távú sávok az idővel, csak jövőbeli-e a katalizátornaptár, elég-e a
+/// forrás, és stimmel-e a terjedelem. Az eval-futtatás
 /// (`test/eval`) ezzel pontozza a prompt-változatokat; a felület nem használja.
 class ReportQuality {
   const ReportQuality({required this.score, required this.issues, required this.wordCount});
@@ -35,7 +36,9 @@ class ReportQuality {
     return texts.fold(0, (n, t) => n + t.split(RegExp(r'\s+')).where((w) => w.isNotEmpty).length);
   }
 
-  static ReportQuality check(StockReport r, {AnalysisOptions options = const AnalysisOptions()}) {
+  /// [today]: ehhez képest kell jövőbelinek lennie a katalizátoroknak
+  /// (alapból az elemzés készítésének napja).
+  static ReportQuality check(StockReport r, {AnalysisOptions options = const AnalysisOptions(), DateTime? today}) {
     final issues = <String>[];
     var penalty = 0;
     void issue(int weight, String msg) {
@@ -77,6 +80,14 @@ class ReportQuality {
       }
       if (o.keyLevels.length < 2) issue(2, 'fewer than 2 key levels');
       if (o.catalysts.isEmpty) issue(3, 'no dated catalysts');
+      // A naptárban csak jövőbeli esemény lehet (a múltbeli a hírekhez tartozik).
+      final day = (today ?? r.generatedAt).toIso8601String().substring(0, 10);
+      final past = o.catalysts.where((c) {
+        final d = c.date.trim();
+        if (!RegExp(r'^\d{4}-\d{2}(-\d{2})?$').hasMatch(d)) return false;
+        return d.compareTo(day.substring(0, d.length)) < 0;
+      }).length;
+      if (past > 0) issue(2 * past, '$past catalysts dated before the report');
       if (o.marketMood == null) issue(2, 'no market mood');
       if (o.mostLikelyReason.isEmpty) issue(2, 'no reason for the most likely scenario');
 

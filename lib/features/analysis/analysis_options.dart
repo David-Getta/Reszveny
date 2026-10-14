@@ -75,6 +75,20 @@ class AnalysisOptions {
     AnalysisDepth.deep => 32000,
   };
 
+  /// Ennyi weboldal nyitható meg teljes szöveggel (pl. a gyorsjelentés
+  /// közleménye, a hatósági döntés), hogy a pontos számok ne csak keresési
+  /// kivonatból jöjjenek. A szerver ugyanígy korlátoz.
+  int get webFetches => webFetchesOf(depth);
+
+  static int webFetchesOf(AnalysisDepth d) => switch (d) {
+    AnalysisDepth.brief => 1,
+    AnalysisDepth.standard => 2,
+    AnalysisDepth.deep => 4,
+  };
+
+  /// Egy megnyitott oldalból legfeljebb ennyi token kerül a modell elé.
+  static const fetchMaxContentTokens = 10000;
+
   /// Webkeresések: a csomag alapértéke, rövidnél kettővel kevesebb, mélyebbnél
   /// kettővel több (2 és 12 között).
   static int searchesFor(PlanTier? tier, AnalysisDepth depth) {

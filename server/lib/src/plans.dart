@@ -43,17 +43,23 @@ class PlanSpec {
 }
 
 /// Az elemzés hossza (a kliens `AnalysisDepth`-e): mennyi keretet fogyaszt, és
-/// mekkora token- és webkeresés-korlátot enged a szerver.
+/// mekkora token-, webkeresés- és oldalmegnyitás-korlátot enged a szerver.
 enum Depth {
-  brief(cost: 1, maxTokens: 12000, searchDelta: -2),
-  standard(cost: 1, maxTokens: 18000, searchDelta: 0),
-  deep(cost: 2, maxTokens: 32000, searchDelta: 2);
+  brief(cost: 1, maxTokens: 12000, searchDelta: -2, fetches: 1),
+  standard(cost: 1, maxTokens: 18000, searchDelta: 0, fetches: 2),
+  deep(cost: 2, maxTokens: 32000, searchDelta: 2, fetches: 4);
 
-  const Depth({required this.cost, required this.maxTokens, required this.searchDelta});
+  const Depth({required this.cost, required this.maxTokens, required this.searchDelta, required this.fetches});
 
   final int cost;
   final int maxTokens;
   final int searchDelta;
+
+  /// Ennyi weboldal nyitható meg teljes szöveggel (pl. a gyorsjelentés közleménye).
+  final int fetches;
+
+  /// Egy megnyitott oldalból legfeljebb ennyi token kerül a modell elé (a költség korlátja).
+  static const maxFetchTokens = 10000;
 
   static Depth parse(String? s) => Depth.values.asNameMap()[s ?? ''] ?? Depth.standard;
 

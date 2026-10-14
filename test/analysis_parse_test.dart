@@ -167,6 +167,126 @@ void main() {
     expect(horizon['required'] as List, ['years', 'price_low', 'price_high', 'price_likely', 'basis', 'confidence']);
   });
 
+  test('v2.4: market view and key debate, unit checks, suspect data, dated knowledge, exact percentages', () {
+    const p = ClaudeStockAnalyst.systemPrompt;
+    expect(ClaudeStockAnalyst.promptVersion, 'v2.4');
+    expect(p, contains('the one or two open questions that will decide'));
+    expect(p, contains('agrees or disagrees with the market'));
+    expect(p, contains('pence in London'));
+    expect(p, contains('fiscal years that differ from the calendar year'));
+    expect(p, contains('occasionally wrong'));
+    expect(p, contains('recognising a company is not the same as knowing its current state'));
+    expect(p, contains('(target / current)^(1/n) - 1'));
+    expect(p, contains('only those after "today"'));
+    expect(p, contains('one coherent story'));
+    expect(p, contains('open the primary document'));
+    expect(p, contains('every catalyst lies after "today"'));
+  });
+
+  test('page fetching: capped by length, described in the settings, off without web search', () {
+    final analyst = ClaudeStockAnalyst(config: const AppConfig(anthropicApiKey: 'k'));
+    final msgs = [
+      {'role': 'user', 'content': 'x'},
+    ];
+    for (final (depth, uses) in [(AnalysisDepth.brief, 1), (AnalysisDepth.standard, 2), (AnalysisDepth.deep, 4)]) {
+      final body = analyst.buildRequestBody(msgs, webSearch: true, options: AnalysisOptions(depth: depth));
+      final fetch = (body['tools'] as List).last as Map;
+      expect(fetch['type'], 'web_fetch_20260209');
+      expect(fetch['max_uses'], uses);
+      expect(fetch['max_content_tokens'], AnalysisOptions.fetchMaxContentTokens);
+    }
+    final noFetch = analyst.buildRequestBody(msgs, webSearch: true, webFetch: false);
+    expect((noFetch['tools'] as List).map((t) => t['name']), ['web_search']);
+    expect(analyst.buildRequestBody(msgs, webSearch: false).containsKey('tools'), isFalse);
+    expect(ClaudeStockAnalyst.buildSettings(const AnalysisOptions()), contains('up to 2 pages can be opened in full'));
+    expect(
+      ClaudeStockAnalyst.buildSettings(const AnalysisOptions(depth: AnalysisDepth.brief)),
+      contains('up to 1 page can be opened in full'),
+    );
+    expect(
+      ClaudeStockAnalyst.buildSettings(const AnalysisOptions(), webSearch: false),
+      isNot(contains('Page fetching')),
+    );
+  });
+
+  test('if the account does not allow page fetching, the analysis is retried without it', () async {
+    final bodies = <Map<String, dynamic>>[];
+    final client = MockClient((req) async {
+      final body = (jsonDecode(req.body) as Map).cast<String, dynamic>();
+      bodies.add(body);
+      final names = ((body['tools'] as List?) ?? const []).map((t) => (t as Map)['name']).toList();
+      if (names.contains('web_fetch')) {
+        return http.Response(
+          jsonEncode({
+            'type': 'error',
+            'error': {'type': 'invalid_request_error', 'message': 'web_fetch is not enabled'},
+          }),
+          400,
+        );
+      }
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {'type': 'text', 'text': jsonEncode(sample)},
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    final analyst = ClaudeStockAnalyst(
+      config: const AppConfig(anthropicApiKey: 'k'),
+      client: client,
+    );
+    final r = await analyst.analyze(const StockDetails(symbol: 'AAPL'));
+    expect(r.sections, isNotEmpty);
+    expect(bodies, hasLength(2));
+    // A következő elemzés már nem próbálkozik vele.
+    await analyst.analyze(const StockDetails(symbol: 'MSFT'));
+    expect(bodies, hasLength(3));
+    expect((bodies.last['tools'] as List).map((t) => (t as Map)['name']), ['web_search']);
+  });
+
+  test('sources: the listed ones and the opened pages; search hits only when the model listed too few', () {
+    final listed = {
+      ...sample,
+      'sources': [
+        for (final i in [1, 2, 3]) {'title': 'Source $i', 'url': 'https://s$i.example'},
+      ],
+    };
+    final blocks = [
+      {
+        'type': 'web_search_tool_result',
+        'content': [
+          {'type': 'web_search_result', 'url': 'https://unread.example', 'title': 'Unread hit'},
+        ],
+      },
+      {
+        'type': 'web_fetch_tool_result',
+        'content': {
+          'type': 'web_fetch_result',
+          'url': 'https://investor.example/q3',
+          'content': {'type': 'document', 'title': 'Q3 results release'},
+        },
+      },
+    ];
+    final r = ClaudeStockAnalyst.parseResponse(
+      'AAPL',
+      response([
+        ...blocks,
+        {'type': 'text', 'text': jsonEncode(listed)},
+      ]),
+    );
+    expect(r.sources.map((s) => s.url), [
+      'https://s1.example',
+      'https://s2.example',
+      'https://s3.example',
+      'https://investor.example/q3',
+    ]);
+    expect(r.sources.last.title, 'Q3 results release');
+  });
+
   test('settings block follows the analysis options', () {
     final std = ClaudeStockAnalyst.buildSettings(const AnalysisOptions());
     expect(std, contains('up to 6 searches'));
@@ -547,9 +667,13 @@ void main() {
           {'type': 'text', 'text': jsonEncode(full)},
         ]),
       );
-      final q = ReportQuality.check(good);
+      final q = ReportQuality.check(good, today: DateTime(2026, 10, 14));
       expect(q.issues, isEmpty, reason: q.issues.join('; '));
       expect(q.score, 100);
+      // A naptárban múltbeli esemény: levonás.
+      final late = ReportQuality.check(good, today: DateTime(2026, 11, 1));
+      expect(late.issues.join(' '), contains('1 catalysts dated before the report'));
+      expect(late.score, 98);
 
       final bad = ClaudeStockAnalyst.parseResponse(
         'AAPL',
@@ -589,9 +713,9 @@ void main() {
       {'role': 'user', 'content': 'x'},
     ];
     final hu = analyst.buildRequestBody(msgs, webSearch: true, searchCountry: 'HU');
-    expect((hu['tools'] as List).single['user_location'], {'type': 'approximate', 'country': 'HU'});
+    expect((hu['tools'] as List).first['user_location'], {'type': 'approximate', 'country': 'HU'});
     final none = analyst.buildRequestBody(msgs, webSearch: true, searchCountry: 'Hungary');
-    expect((none['tools'] as List).single.containsKey('user_location'), isFalse);
+    expect((none['tools'] as List).first.containsKey('user_location'), isFalse);
   });
 
   test('a draft that is not valid JSON is repaired by a schema-forced pass that costs no allowance', () async {

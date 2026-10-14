@@ -532,7 +532,10 @@ class Api {
       tier: e.tier,
       model: trialRun ? trialModel : anthropicModel,
     );
-    final upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
+    var upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
+    if (_rejectedWebFetch(upstream)) {
+      upstream = await _forwardAnthropic(withoutWebFetch(raw), r.headers['anthropic-beta']);
+    }
     if (upstream.statusCode == 200) {
       // Csak a befejezett (nem pause_turn) választ számoljuk el.
       try {
@@ -549,9 +552,9 @@ class Api {
   }
 
   /// A csomag és a hossz szerinti korlátok érvényesítése a kérésen: rögzített
-  /// modell, a `max_tokens` és a webkeresés `max_uses` nem lehet nagyobb a
-  /// megengedettnél, és a webkeresésen kívül más eszköz nem fut, így a kliens
-  /// nem tud drágább elemzést kérni, mint amiért fizet.
+  /// modell, a `max_tokens`, a webkeresés és az oldalmegnyitás `max_uses`-a, és
+  /// a megnyitott oldal mérete nem lehet nagyobb a megengedettnél; más eszköz
+  /// nem fut, így a kliens nem tud drágább elemzést kérni, mint amiért fizet.
   static String limitRequest(
     String raw, {
     required Depth depth,
@@ -568,18 +571,47 @@ class Api {
     final maxTokens = body['max_tokens'];
     body['max_tokens'] = maxTokens is int && maxTokens < depth.maxTokens ? maxTokens : depth.maxTokens;
     final allowed = depth.searchesFor(tier);
+    int cap(Object? asked, int limit) => asked is int && asked < limit ? asked : limit;
     final tools = body['tools'];
     if (tools is List) {
       body['tools'] = [
         for (final t in tools)
           if (t is Map && (t['type'] as String? ?? '').startsWith('web_search'))
-            {...t, 'max_uses': t['max_uses'] is int && (t['max_uses'] as int) < allowed ? t['max_uses'] : allowed},
+            {...t, 'max_uses': cap(t['max_uses'], allowed)}
+          else if (t is Map && (t['type'] as String? ?? '').startsWith('web_fetch'))
+            {
+              'type': t['type'],
+              'name': t['name'] ?? 'web_fetch',
+              'max_uses': cap(t['max_uses'], depth.fetches),
+              'max_content_tokens': cap(t['max_content_tokens'], Depth.maxFetchTokens),
+            },
       ];
     }
     body.remove('mcp_servers');
     body.remove('container');
     return jsonEncode(body);
   }
+
+  /// A kérés az oldalmegnyitó eszköz nélkül (ha a fiókban nincs engedélyezve,
+  /// az Anthropic 400-zal utasítja el; ilyenkor nélküle fut az elemzés).
+  static String withoutWebFetch(String raw) {
+    Map<String, dynamic> body;
+    try {
+      body = (jsonDecode(raw) as Map).cast<String, dynamic>();
+    } catch (_) {
+      return raw;
+    }
+    final tools = body['tools'];
+    if (tools is List) {
+      body['tools'] = [
+        for (final t in tools)
+          if (!(t is Map && (t['type'] as String? ?? '').startsWith('web_fetch'))) t,
+      ];
+    }
+    return jsonEncode(body);
+  }
+
+  static bool _rejectedWebFetch(http.Response res) => res.statusCode == 400 && res.body.contains('web_fetch');
 
   /// Segéd-hívás szűrése: csak az ismert mezők maradnak (eszközök nélkül),
   /// rögzített modell, legfeljebb [helperMaxTokens] token és közepes erőfeszítés.

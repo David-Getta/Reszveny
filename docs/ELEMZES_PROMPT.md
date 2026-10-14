@@ -3,7 +3,7 @@
 Ez a dokumentum az AI-elemzés rendszerpromptjának második változatát és a tervezési
 döntéseket tartalmazza.
 
-**Állapot: v2.1 beépítve.** A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
+**Állapot: v2.4 beépítve** (a változások a 7–10. pontban). A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
 fájlban van (`systemPrompt`), és minden felhasználónál bájtra azonos, így gyorsítótárazható. A
 beállításoktól függő részek (webkeresés-keret, hossz, olvasói szint, ellenérv, helyi szemszög) a
 felhasználói üzenet elején, a „Report settings” blokkban mennek (`buildSettings`). Az alábbi 3. pont
@@ -321,3 +321,22 @@ rendszerprompt nem változott, így a gyorsítótár is megmarad.
 Javított hibák: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
 kilógott a sorból, és a kártyák fejlécében a jobb oldali kiegészítő (frissítés ideje, „Újragenerálás”)
 nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, illetve tördelődik.
+
+## 10. v2.4 (2026-10-14): piaci nézet, mértékegységek, elsődleges források
+
+| Változás | Miért |
+|---|---|
+| Az összefoglaló kimondja, mit hisz és áraz be most a piac, mi az az egy-két nyitott kérdés, ami eldönti a részvény sorsát, és miben ért egyet vagy tér el ettől az elemzés | Egy jó elemzés értéke az eltérő nézet: nem elég felsorolni a tényeket, látszania kell, hol a vita |
+| Mértékegység- és deviza-ellenőrzés: pennyben jegyzett árfolyam (London), eltérő beszámolási deviza, ADR-arány, részvényfelosztás, eltolt üzleti év (pl. az Apple FY2026-a szeptemberben zárul) | Euróban jelentett EPS dolláros árfolyamhoz mérve, vagy penny és font összekeverve nagyságrendi hibák jönnek ki |
+| Gyanús adatok: ha a feedből jövő szám nem stimmel (a P/E nem jön ki az árból és az EPS-ből, a piaci érték ezerszeres, elavult árfolyam), mondja ki, használja az ellenőrizhetőt, és ne építsen rá | A Finnhub-adatok néha hibásak vagy más egységben vannak |
+| A modell tudása régebbi a mai napnál: amit egy cégről „tud”, az háttér, nem friss tény; az elmúlt 12 hónap az adatokból vagy a keresésből jöjjön | A modell felismeri a céget, és hajlamos emlékezetből, elavultan írni róla |
+| Keresési tippek: cégnév + ticker + időszak, nem amerikai cégnél a helyi nyelven is | Pontosabb találatok ugyanannyi keresésből |
+| **Oldalmegnyitás** (`web_fetch_20260209`): a modell a legfontosabb elsődleges forrást (gyorsjelentés, közlemény, hatósági döntés) teljes szövegében elolvashatja, nem csak a keresési kivonatot. Rövid 1, Alap 2, Részletes 4 oldal, oldalanként legfeljebb 10 000 token; a szerver is így korlátoz. Ha a fiókban nincs engedélyezve (400), a szerver és az app nélküle ismétli meg a kérést | A pontos számok (bevétel, EPS, guidance) a forrásdokumentumból jönnek, nem egy cikk összefoglalójából. Becsült többletköltség elemzésenként kb. 0,02–0,10 USD |
+| A %-os elmozdulás és az éves hozam képlete: elmozdulás = cél / mostani − 1; éves = (cél / mostani)^(1/n) − 1, mindig az `outlook_data` jelenlegi árából | A fejben számolt évesített hozam gyakran pontatlan volt |
+| A katalizátornaptárban csak a mai nap utáni esemény lehet; a múltbeli a hírekbe kerül. A minőség-ellenőrző a múltbeli katalizátort hibának számolja | Előfordult, hogy a „következő” gyorsjelentés már lezajlott |
+| A közeli forgatókönyvek és a 3 éves kilátás egy történetet mondjon; ha ellentmondanak (gyenge év, erős cég), indokolja | Ne tűnjön ellentmondásnak, ami valójában két időtáv |
+| Stílus: egyenes, szó szerinti mondatok metafora és díszítés helyett | Az anyanyelvi pénzügyi újságírói hang mellé |
+| Források: az elemzés saját forráslistája és a megnyitott oldalak; a keresési találatok csak akkor, ha a modell háromnál kevesebb forrást sorolt fel | Eddig minden keresési találat bekerült (akár 40–60 link), a többségét a modell el sem olvasta |
+
+Az önellenőrzés is bővült: egyeznek-e a mértékegységek és devizák, a százalékok a mostani árból
+jönnek-e, és minden katalizátor a mai nap utáni-e.
