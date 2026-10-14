@@ -16,6 +16,7 @@ import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
 import 'features/alerts/alert_monitor.dart';
 import 'features/alerts/price_alert.dart';
+import 'features/analysis/analysis_chat.dart';
 import 'features/analysis/analysis_options.dart';
 import 'features/analysis/claude_stock_analyst.dart';
 import 'features/analysis/report_store.dart';
@@ -62,10 +63,12 @@ class AppServices {
     AlertStore? alerts,
     AlertNotifier? alertNotifier,
     Telemetry? telemetry,
+    AnalysisChat? chat,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
        alerts = alerts ?? AlertStore(),
+       chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     alertMonitor = AlertMonitor(
@@ -199,6 +202,9 @@ class AppServices {
 
   /// Névtelen használati statisztika és hibajelentés (hozzájárulással).
   final Telemetry telemetry;
+
+  /// „Kérdezz az elemzésről” beszélgetések.
+  final AnalysisChat chat;
 
   /// Árfolyam-riasztások és a figyelőjük.
   final AlertStore alerts;

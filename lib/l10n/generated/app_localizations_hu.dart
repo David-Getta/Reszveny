@@ -1569,4 +1569,42 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get telemetrySettingHint =>
       'Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül.';
+
+  @override
+  String get askButton => 'Kérdezz az elemzésről';
+
+  @override
+  String askTitle(String symbol) {
+    return 'Kérdések: $symbol';
+  }
+
+  @override
+  String get askIntro =>
+      'Kérdezz bármit az elemzésről: mit jelent egy kockázat, mi változtatná meg a kilátásokat, hogyan jött ki egy szám. A válaszok erre az elemzésre épülnek, és nem befektetési tanácsok.';
+
+  @override
+  String get askHint => 'Írd be a kérdésed…';
+
+  @override
+  String get askSend => 'Küldés';
+
+  @override
+  String get askThinking => 'Gondolkodom…';
+
+  @override
+  String get askSuggest1 => 'Mi a legnagyobb kockázat?';
+
+  @override
+  String get askSuggest2 => 'Mi változtatná meg a kilátásokat?';
+
+  @override
+  String get askSuggest3 => 'Magyarázd el egyszerűen';
+
+  @override
+  String get askMaxReached =>
+      'Ez volt az utolsó kérdés ehhez az elemzéshez. Újabb kérdésekhez készíts új elemzést.';
+
+  @override
+  String get errAskLimit =>
+      'Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz.';
 }

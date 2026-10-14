@@ -17,6 +17,7 @@ import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
 import 'outlook_view.dart';
+import 'ask_sheet.dart';
 import 'report_changes.dart';
 import 'section_card.dart';
 import 'share_card.dart';
@@ -256,6 +257,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
                       ),
                     ),
                 ],
+                const SizedBox(height: 16),
+                AskAnalysisButton(report: report, companyName: widget.details.profile?.name ?? ''),
                 const SizedBox(height: 12),
                 Text(
                   '${l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt))} · ${l10n.aiDisclaimer}',

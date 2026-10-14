@@ -34,6 +34,7 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.trialExpired => l10n.errTrialExpired,
     AppErrorCode.noPlan => l10n.errNoPlan,
     AppErrorCode.previewDailyLimit => l10n.errPreviewDailyLimit,
+    AppErrorCode.askLimit => l10n.errAskLimit,
     AppErrorCode.notEnoughCredits => l10n.errNotEnoughCredits(
       int.tryParse(d.split('/').first) ?? 2,
       int.tryParse(d.split('/').last) ?? 0,

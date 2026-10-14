@@ -1091,5 +1091,24 @@
   "telemetryAllow": "Allow",
   "telemetryDecline": "No thanks",
   "telemetrySetting": "Anonymous statistics and crash reports",
-  "telemetrySettingHint": "How often features are used and error reports, without personal data or the content of your searches and analyses."
+  "telemetrySettingHint": "How often features are used and error reports, without personal data or the content of your searches and analyses.",
+  "askButton": "Ask about this analysis",
+  "askTitle": "Questions about {symbol}",
+  "@askTitle": {
+    "description": "Title of the follow-up questions sheet; symbol is the stock ticker.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "askIntro": "Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.",
+  "askHint": "Ask a question…",
+  "askSend": "Send",
+  "askThinking": "Thinking…",
+  "askSuggest1": "What is the biggest risk?",
+  "askSuggest2": "What would change the outlook?",
+  "askSuggest3": "Explain it in simple terms",
+  "askMaxReached": "That was the last question for this analysis. Make a new analysis to ask more.",
+  "errAskLimit": "You have reached today's limit for questions. Please try again tomorrow."
 }

@@ -90,6 +90,11 @@ class Store {
         created_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS helper_calls_user ON helper_calls(user_id, created_at);
+      CREATE TABLE IF NOT EXISTS ask_calls (
+        user_id TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS ask_calls_user ON ask_calls(user_id, created_at);
       CREATE TABLE IF NOT EXISTS invite_devices (
         code TEXT NOT NULL,
         user_id TEXT NOT NULL,
@@ -255,6 +260,7 @@ class Store {
       _db.execute('DELETE FROM entitlements WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
@@ -490,6 +496,23 @@ class Store {
     final now = clock().toUtc();
     _db.execute('INSERT INTO helper_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
     _db.execute('DELETE FROM helper_calls WHERE created_at < ?', [
+      now.subtract(const Duration(days: 2)).toIso8601String(),
+    ]);
+  }
+
+  /// „Kérdezz az elemzésről” kérdések száma [since] óta.
+  int askCallsSince(String userId, DateTime since) =>
+      _db.select('SELECT COUNT(*) AS n FROM ask_calls WHERE user_id = ? AND created_at >= ?', [
+            userId,
+            since.toUtc().toIso8601String(),
+          ]).first['n']
+          as int;
+
+  /// Egy kérdés naplózása; a két napnál régebbi sorokat közben törli.
+  void logAskCall(String userId) {
+    final now = clock().toUtc();
+    _db.execute('INSERT INTO ask_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
+    _db.execute('DELETE FROM ask_calls WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
   }

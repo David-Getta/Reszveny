@@ -427,5 +427,16 @@
   "telemetryAllow": "Engedélyezem",
   "telemetryDecline": "Nem, köszönöm",
   "telemetrySetting": "Névtelen statisztika és hibajelentés",
-  "telemetrySettingHint": "Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül."
+  "telemetrySettingHint": "Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül.",
+  "askButton": "Kérdezz az elemzésről",
+  "askTitle": "Kérdések: {symbol}",
+  "askIntro": "Kérdezz bármit az elemzésről: mit jelent egy kockázat, mi változtatná meg a kilátásokat, hogyan jött ki egy szám. A válaszok erre az elemzésre épülnek, és nem befektetési tanácsok.",
+  "askHint": "Írd be a kérdésed…",
+  "askSend": "Küldés",
+  "askThinking": "Gondolkodom…",
+  "askSuggest1": "Mi a legnagyobb kockázat?",
+  "askSuggest2": "Mi változtatná meg a kilátásokat?",
+  "askSuggest3": "Magyarázd el egyszerűen",
+  "askMaxReached": "Ez volt az utolsó kérdés ehhez az elemzéshez. Újabb kérdésekhez készíts új elemzést.",
+  "errAskLimit": "Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz."
 }

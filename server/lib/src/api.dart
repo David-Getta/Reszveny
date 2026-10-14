@@ -159,6 +159,7 @@ class Api {
       ..post('/v1/stores/google/notifications', _googleNotification)
       ..post('/v1/analyze', _analyze)
       ..post('/v1/anthropic/v1/messages', _anthropicPassthrough)
+      ..post('/v1/ask', _ask)
       ..get('/v1/market/<path|.*>', _market)
       ..post('/v1/auth/email/start', _emailStart)
       ..post('/v1/auth/email/verify', _emailVerify)
@@ -1000,6 +1001,80 @@ class Api {
 
   /// Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést, ezért
   /// szűrjük a kérést és korlátozzuk, hányszor hívható.
+  /// „Kérdezz az elemzésről”: napi keret (próbaidőben kevesebb, olcsóbb
+  /// modellel), rövid válasz, csak szöveg, eszközök nélkül.
+  static const askPerDayPaid = 40;
+  static const askPerDayTrial = 10;
+  static const askMaxMessages = 13;
+  static const askMaxChars = 80000;
+  static const askMaxTokens = 1500;
+
+  /// A kérdés-kérés ellenőrzése: felváltva felhasználó és asszisztens, a
+  /// felhasználóé az első és az utolsó, csak szöveg, korlátos hossz. `null`, ha nem jó.
+  static ({Object? system, List<Map<String, dynamic>> messages})? checkAskRequest(Map<String, dynamic> body) {
+    final messages = body['messages'];
+    if (messages is! List || messages.isEmpty || messages.length > askMaxMessages || messages.length.isEven) {
+      return null;
+    }
+    final system = body['system'];
+    var chars = 0;
+    if (system is String) {
+      chars += system.length;
+    } else if (system is List) {
+      for (final b in system) {
+        if (b is! Map || b['type'] != 'text') return null;
+        chars += '${b['text']}'.length;
+      }
+    } else if (system != null) {
+      return null;
+    }
+    final out = <Map<String, dynamic>>[];
+    for (var i = 0; i < messages.length; i++) {
+      final m = messages[i];
+      if (m is! Map || m['role'] != (i.isEven ? 'user' : 'assistant')) return null;
+      final content = m['content'];
+      if (content is String) {
+        chars += content.length;
+      } else if (content is List) {
+        for (final b in content) {
+          if (b is! Map || b['type'] != 'text') return null;
+          chars += '${b['text']}'.length;
+        }
+      } else {
+        return null;
+      }
+      out.add({'role': m['role'], 'content': content});
+    }
+    if (chars > askMaxChars) return null;
+    return (system: system, messages: out);
+  }
+
+  Future<Response> _ask(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final req = checkAskRequest(await _body(r));
+    if (req == null) return _error(400, 'bad_request');
+    final e = store.entitlement(uid);
+    if (e.tier == null && e.extra <= 0) return _error(402, 'no_plan');
+    final trial = e.tier == null || e.tier == 'trial';
+    final limit = trial ? askPerDayTrial : askPerDayPaid;
+    if (store.askCallsSince(uid, store.clock().subtract(const Duration(days: 1))) >= limit) {
+      return _error(429, 'ask_limit');
+    }
+    store.logAskCall(uid);
+    final upstream = await _forwardAnthropic(
+      jsonEncode({
+        'model': trial ? trialModel : anthropicModel,
+        'max_tokens': askMaxTokens,
+        'system': ?req.system,
+        'messages': req.messages,
+        'output_config': {'effort': 'low'},
+      }),
+      null,
+    );
+    return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
   Future<Response> _anthropicPassthrough(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');

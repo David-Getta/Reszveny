@@ -1564,4 +1564,42 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get telemetrySettingHint =>
       'সুবিধাসমূহ কিমান সঘনাই ব্যৱহাৰ হয় আৰু ত্ৰুটিৰ ৰিপ\'ৰ্ট, ব্যক্তিগত তথ্য বা আপোনাৰ সন্ধান আৰু বিশ্লেষণৰ সমল নোহোৱাকৈ।';
+
+  @override
+  String get askButton => 'Ask about this analysis';
+
+  @override
+  String askTitle(String symbol) {
+    return 'Questions about $symbol';
+  }
+
+  @override
+  String get askIntro =>
+      'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.';
+
+  @override
+  String get askHint => 'Ask a question…';
+
+  @override
+  String get askSend => 'Send';
+
+  @override
+  String get askThinking => 'Thinking…';
+
+  @override
+  String get askSuggest1 => 'What is the biggest risk?';
+
+  @override
+  String get askSuggest2 => 'What would change the outlook?';
+
+  @override
+  String get askSuggest3 => 'Explain it in simple terms';
+
+  @override
+  String get askMaxReached =>
+      'That was the last question for this analysis. Make a new analysis to ask more.';
+
+  @override
+  String get errAskLimit =>
+      'You have reached today\'s limit for questions. Please try again tomorrow.';
 }

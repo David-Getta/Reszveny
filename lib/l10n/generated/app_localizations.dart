@@ -2904,6 +2904,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'How often features are used and error reports, without personal data or the content of your searches and analyses.'**
   String get telemetrySettingHint;
+
+  /// No description provided for @askButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask about this analysis'**
+  String get askButton;
+
+  /// Title of the follow-up questions sheet; symbol is the stock ticker.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions about {symbol}'**
+  String askTitle(String symbol);
+
+  /// No description provided for @askIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask anything about the analysis: what a risk means, what would change the outlook, how a number was worked out. The answers are based on this analysis and are not investment advice.'**
+  String get askIntro;
+
+  /// No description provided for @askHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a question…'**
+  String get askHint;
+
+  /// No description provided for @askSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get askSend;
+
+  /// No description provided for @askThinking.
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking…'**
+  String get askThinking;
+
+  /// No description provided for @askSuggest1.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the biggest risk?'**
+  String get askSuggest1;
+
+  /// No description provided for @askSuggest2.
+  ///
+  /// In en, this message translates to:
+  /// **'What would change the outlook?'**
+  String get askSuggest2;
+
+  /// No description provided for @askSuggest3.
+  ///
+  /// In en, this message translates to:
+  /// **'Explain it in simple terms'**
+  String get askSuggest3;
+
+  /// No description provided for @askMaxReached.
+  ///
+  /// In en, this message translates to:
+  /// **'That was the last question for this analysis. Make a new analysis to ask more.'**
+  String get askMaxReached;
+
+  /// No description provided for @errAskLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'You have reached today\'s limit for questions. Please try again tomorrow.'**
+  String get errAskLimit;
 }
 
 class _AppLocalizationsDelegate

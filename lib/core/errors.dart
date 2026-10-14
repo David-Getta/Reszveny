@@ -35,6 +35,9 @@ enum AppErrorCode {
 
   /// Zárt előzetes: elfogyott a meghívókód mai elemzéskerete.
   previewDailyLimit,
+
+  /// Elfogyott a mai keret az elemzéssel kapcsolatos kérdésekre.
+  askLimit,
 }
 
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés

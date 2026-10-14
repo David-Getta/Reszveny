@@ -83,6 +83,9 @@ class AppConfig {
   /// Az elemzés végpontja. A backend `/v1/analyze`-e kvótát ellenőriz és levon.
   String get analyzeEndpoint => hasBackend ? '$backend/v1/analyze' : '$anthropicBaseUrl/v1/messages';
 
+  /// „Kérdezz az elemzésről”: backend-módban saját, korlátozott végpont.
+  String get askEndpoint => hasBackend ? '$backend/v1/ask' : '$anthropicBaseUrl/v1/messages';
+
   /// Kulcsok nélkül az app demó módban fut: beégetett mintaadatokkal.
   bool get isDemoMode => !hasFinnhubKey;
 }

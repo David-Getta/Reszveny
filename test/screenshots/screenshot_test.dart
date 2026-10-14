@@ -14,6 +14,7 @@ import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:reszveny/features/analysis/analysis_chat.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
@@ -110,6 +111,7 @@ AppServices _services({
   bool backend = false,
   bool invite = false,
   String? email,
+  AnalysisChat? chat,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
@@ -141,6 +143,7 @@ AppServices _services({
     reports: ReportStore(analyst: _FakeAnalyst(), entitlements: ent),
     entitlements: ent,
     billing: DemoBillingService(latency: Duration.zero),
+    chat: chat,
   );
 }
 
@@ -745,6 +748,48 @@ void main() {
     Scrollable.ensureVisible(tester.element(card), alignment: 0.5);
     await tester.pumpAndSettle();
     await _shot(tester, 'telemetry_consent_phone_hu');
+  });
+
+  testWidgets('asking about the analysis (hungarian, phone)', (tester) async {
+    final chat = AnalysisChat(
+      config: const AppConfig(backendUrl: 'https://api.test'),
+      client: MockClient(
+        (req) async => http.Response(
+          jsonEncode({
+            'stop_reason': 'end_turn',
+            'content': [
+              {
+                'type': 'text',
+                'text':
+                    'A legnagyobb kockázat a hiperskálázók beruházási ciklusa: ha a nagy felhőszolgáltatók '
+                    'lassítanak, az adatközponti bevétel gyorsan csökkenhet.\n\n'
+                    '- A bevétel kb. 40%-a két ügyféltől jön.\n'
+                    '- A kínai exportkorlátozás a második legnagyobb tényező.\n\n'
+                    'Ezt a pesszimista forgatókönyv 130–160 USD-s sávja tükrözi.',
+              },
+            ],
+          }),
+          200,
+          headers: {'content-type': 'application/json; charset=utf-8'},
+        ),
+      ),
+    );
+    await pumpApp(tester, _services(locale: const Locale('hu'), chat: chat), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Elemzés készítése'));
+    await tester.pumpAndSettle();
+    final open = find.byKey(const ValueKey('ask-open'));
+    await tester.scrollUntilVisible(open, 400, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(open), alignment: 0.5);
+    await tester.pumpAndSettle();
+    await tester.tap(open);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'ask_empty_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('ask-suggest-0')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'ask_answer_phone_hu');
   });
 
   testWidgets('first launch onboarding (hungarian, phone)', (tester) async {
