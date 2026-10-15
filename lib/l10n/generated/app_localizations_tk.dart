@@ -1700,4 +1700,7 @@ class AppLocalizationsTk extends AppLocalizations {
   String notesSaved(String date) {
     return 'Ýatda saklandy: $date';
   }
+
+  @override
+  String get peersTitle => 'Meňzeş kompaniýalar';
 }

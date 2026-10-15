@@ -1703,4 +1703,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String notesSaved(String date) {
     return 'Хадгалсан: $date';
   }
+
+  @override
+  String get peersTitle => 'Төстэй компаниуд';
 }

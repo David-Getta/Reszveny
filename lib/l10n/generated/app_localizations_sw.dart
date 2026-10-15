@@ -1702,4 +1702,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String notesSaved(String date) {
     return 'Imehifadhiwa $date';
   }
+
+  @override
+  String get peersTitle => 'Kampuni zinazofanana';
 }

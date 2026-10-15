@@ -1708,4 +1708,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String notesSaved(String date) {
     return 'Ruajtur $date';
   }
+
+  @override
+  String get peersTitle => 'Kompani të ngjashme';
 }

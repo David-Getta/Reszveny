@@ -464,5 +464,6 @@
   "notesTitle": "My notes",
   "notesHint": "Why you buy am, wetin you dey watch, wetin go make you sell am?",
   "notesInfo": "Na only dis device e dey. Di AI analysis dey consider your notes.",
-  "notesSaved": "E don save {date}"
+  "notesSaved": "E don save {date}",
+  "peersTitle": "Companies wey be like am"
 }

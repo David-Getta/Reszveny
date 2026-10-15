@@ -1702,4 +1702,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String notesSaved(String date) {
     return 'Запазено $date';
   }
+
+  @override
+  String get peersTitle => 'Подобни компании';
 }

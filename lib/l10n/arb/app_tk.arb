@@ -464,5 +464,6 @@
   "notesTitle": "Meniň belliklerim",
   "notesHint": "Ony näme üçin satyn aldyňyz, nämä gözegçilik edýärsiňiz, näme sizi satmaga mejbur eder?",
   "notesInfo": "Diňe şu enjamda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.",
-  "notesSaved": "Ýatda saklandy: {date}"
+  "notesSaved": "Ýatda saklandy: {date}",
+  "peersTitle": "Meňzeş kompaniýalar"
 }

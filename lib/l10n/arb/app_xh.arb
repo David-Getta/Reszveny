@@ -464,5 +464,6 @@
   "notesTitle": "Amanqaku am",
   "notesHint": "Kutheni usithengile, ujonge ntoni, yintoni enokwenza usithengise?",
   "notesInfo": "Igcinwe kwesi sixhobo kuphela. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.",
-  "notesSaved": "Kugcinwe: {date}"
+  "notesSaved": "Kugcinwe: {date}",
+  "peersTitle": "Iinkampani ezifanayo"
 }

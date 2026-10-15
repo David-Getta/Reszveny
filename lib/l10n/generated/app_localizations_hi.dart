@@ -1701,4 +1701,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String notesSaved(String date) {
     return 'सहेजा गया $date';
   }
+
+  @override
+  String get peersTitle => 'समान कंपनियाँ';
 }

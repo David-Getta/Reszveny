@@ -1708,4 +1708,7 @@ class AppLocalizationsRn extends AppLocalizations {
   String notesSaved(String date) {
     return 'Vyabitswe $date';
   }
+
+  @override
+  String get peersTitle => 'Amasosiyete asa';
 }

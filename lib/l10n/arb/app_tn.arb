@@ -464,5 +464,6 @@
   "notesTitle": "Dintlha tsa me",
   "notesHint": "Goreng o e rekile, o ela tlhoko eng, ke eng se se ka dirang gore o e rekise?",
   "notesInfo": "E bolokilwe mo sedirisiweng seno fela. Tshekatsheko ya AI e tsaya dintlha tsa gago tsia.",
-  "notesSaved": "E bolokilwe {date}"
+  "notesSaved": "E bolokilwe {date}",
+  "peersTitle": "Dikompone tse di tshwanang"
 }

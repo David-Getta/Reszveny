@@ -1631,6 +1631,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String notesSaved(String date) {
     return '保存于 $date';
   }
+
+  @override
+  String get peersTitle => '同类公司';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3258,4 +3261,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String notesSaved(String date) {
     return '儲存時間：$date';
   }
+
+  @override
+  String get peersTitle => '同類公司';
 }

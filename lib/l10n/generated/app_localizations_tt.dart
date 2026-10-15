@@ -1698,4 +1698,7 @@ class AppLocalizationsTt extends AppLocalizations {
   String notesSaved(String date) {
     return 'Сакланды: $date';
   }
+
+  @override
+  String get peersTitle => 'Охшаш компанияләр';
 }

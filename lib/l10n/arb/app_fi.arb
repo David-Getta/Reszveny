@@ -464,5 +464,6 @@
   "notesTitle": "Omat muistiinpanot",
   "notesHint": "Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?",
   "notesInfo": "Tallennetaan vain tälle laitteelle. Tekoälyanalyysi ottaa muistiinpanosi huomioon.",
-  "notesSaved": "Tallennettu {date}"
+  "notesSaved": "Tallennettu {date}",
+  "peersTitle": "Vastaavat yritykset"
 }

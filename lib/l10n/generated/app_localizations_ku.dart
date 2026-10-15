@@ -1704,4 +1704,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String notesSaved(String date) {
     return 'Hat tomarkirin: $date';
   }
+
+  @override
+  String get peersTitle => 'Şirketên wekhev';
 }

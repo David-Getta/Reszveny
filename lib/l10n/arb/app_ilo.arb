@@ -464,5 +464,6 @@
   "notesTitle": "Dagiti notak",
   "notesHint": "Apay a ginatangmo, ania ti bambantayam, ania ti mangpailako kenka?",
   "notesInfo": "Naidulin laeng iti daytoy a device. Ikonsiderar ti panangsukimat ti AI dagiti notam.",
-  "notesSaved": "Naidulin {date}"
+  "notesSaved": "Naidulin {date}",
+  "peersTitle": "Dagiti kapada a kompania"
 }

@@ -464,5 +464,6 @@
   "notesTitle": "Tizmilin-iw",
   "notesHint": "Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?",
   "notesInfo": "Yettwasekles kan deg yibenk-a. Tasleḍt s AI tettak azal i tezmilin-ik.",
-  "notesSaved": "Yettwasekles {date}"
+  "notesSaved": "Yettwasekles {date}",
+  "peersTitle": "Tikebbaniyin i d-icban"
 }

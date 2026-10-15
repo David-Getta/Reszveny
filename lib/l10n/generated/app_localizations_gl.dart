@@ -1724,4 +1724,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String notesSaved(String date) {
     return 'Gardado $date';
   }
+
+  @override
+  String get peersTitle => 'Empresas similares';
 }

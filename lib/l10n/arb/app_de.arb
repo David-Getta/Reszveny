@@ -464,5 +464,6 @@
   "notesTitle": "Meine Notizen",
   "notesHint": "Warum hast du sie gekauft, worauf achtest du, was würde dich zum Verkauf bewegen?",
   "notesInfo": "Nur auf diesem Gerät gespeichert. Die KI-Analyse berücksichtigt deine Notizen.",
-  "notesSaved": "Gespeichert {date}"
+  "notesSaved": "Gespeichert {date}",
+  "peersTitle": "Ähnliche Unternehmen"
 }

@@ -1707,4 +1707,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String notesSaved(String date) {
     return 'An adana $date';
   }
+
+  @override
+  String get peersTitle => 'Kamfanoni masu kama';
 }

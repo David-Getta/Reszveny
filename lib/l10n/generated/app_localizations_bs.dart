@@ -1736,4 +1736,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String notesSaved(String date) {
     return 'Sačuvano $date';
   }
+
+  @override
+  String get peersTitle => 'Slične kompanije';
 }

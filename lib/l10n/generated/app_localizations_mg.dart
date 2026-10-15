@@ -1714,4 +1714,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String notesSaved(String date) {
     return 'Voatahiry $date';
   }
+
+  @override
+  String get peersTitle => 'Orinasa mitovy';
 }

@@ -1708,4 +1708,7 @@ class AppLocalizationsGn extends AppLocalizations {
   String notesSaved(String date) {
     return 'Oñeñongatu $date';
   }
+
+  @override
+  String get peersTitle => 'Empresa ojoguáva';
 }

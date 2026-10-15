@@ -83,6 +83,11 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return parseAnalysisExtras(symbol, peers: r[0], insider: r[1], earnings: r[2], calendar: r[3], now: today);
   }
 
+  /// Csak a versenytársak (egy hívás), a „Hasonló cégek” sávhoz.
+  @override
+  Future<List<String>> peers(String symbol) async =>
+      parseAnalysisExtras(symbol, peers: await _get('/stock/peers', {'symbol': symbol})).peers;
+
   /// Csak a gyorsjelentés-naptár (egy hívás), az eseménynaptárhoz.
   @override
   Future<UpcomingEarnings?> nextEarnings(String symbol, {DateTime? now}) async {

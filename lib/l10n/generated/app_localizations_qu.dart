@@ -1712,4 +1712,7 @@ class AppLocalizationsQu extends AppLocalizations {
   String notesSaved(String date) {
     return 'Waqaychasqa $date';
   }
+
+  @override
+  String get peersTitle => 'Kaqlla empresakuna';
 }

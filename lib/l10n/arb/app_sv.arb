@@ -464,5 +464,6 @@
   "notesTitle": "Mina anteckningar",
   "notesHint": "Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?",
   "notesInfo": "Sparas bara på den här enheten. AI-analysen tar hänsyn till dina anteckningar.",
-  "notesSaved": "Sparad {date}"
+  "notesSaved": "Sparad {date}",
+  "peersTitle": "Liknande företag"
 }

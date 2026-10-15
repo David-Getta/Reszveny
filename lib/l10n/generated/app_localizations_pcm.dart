@@ -1702,4 +1702,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   String notesSaved(String date) {
     return 'E don save $date';
   }
+
+  @override
+  String get peersTitle => 'Companies wey be like am';
 }

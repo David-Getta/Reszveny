@@ -464,5 +464,6 @@
   "notesTitle": "Cathetanku",
   "notesHint": "Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?",
   "notesInfo": "Mung disimpen ing piranti iki. Analisis AI nggatekake cathetan sampeyan.",
-  "notesSaved": "Disimpen {date}"
+  "notesSaved": "Disimpen {date}",
+  "peersTitle": "Perusahaan sing padha"
 }

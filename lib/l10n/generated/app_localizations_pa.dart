@@ -1698,4 +1698,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String notesSaved(String date) {
     return 'ਸੁਰੱਖਿਅਤ ਕੀਤਾ: $date';
   }
+
+  @override
+  String get peersTitle => 'ਮਿਲਦੀਆਂ-ਜੁਲਦੀਆਂ ਕੰਪਨੀਆਂ';
 }

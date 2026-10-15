@@ -30,6 +30,17 @@ class DemoMarketDataProvider extends MarketDataProvider {
     }
   }
 
+  /// Minta-versenytársak: a többi demó-részvény (azok megnyithatók).
+  @override
+  Future<List<String>> peers(String symbol) async {
+    await _wait();
+    _check(symbol);
+    return [
+      for (final s in supportedSymbols)
+        if (s != symbol && s != 'OTP' && symbol != 'OTP') s,
+    ];
+  }
+
   /// Minta-gyorsjelentés: tickerenként állandó, 6–60 nap múlva (nem valós adat).
   @override
   Future<UpcomingEarnings?> nextEarnings(String symbol) async {

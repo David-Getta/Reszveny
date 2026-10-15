@@ -1706,4 +1706,7 @@ class AppLocalizationsLua extends AppLocalizations {
   String notesSaved(String date) {
     return 'Bilama: $date';
   }
+
+  @override
+  String get peersTitle => 'Bikompanyi bifuanangane';
 }

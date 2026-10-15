@@ -1709,4 +1709,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String notesSaved(String date) {
     return 'Αποθηκεύτηκε $date';
   }
+
+  @override
+  String get peersTitle => 'Παρόμοιες εταιρείες';
 }

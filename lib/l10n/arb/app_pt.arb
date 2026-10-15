@@ -464,5 +464,6 @@
   "notesTitle": "Minhas notas",
   "notesHint": "Porque a comprou, o que está a acompanhar, o que o levaria a vender?",
   "notesInfo": "Guardado apenas neste dispositivo. A análise com IA tem em conta as suas notas.",
-  "notesSaved": "Guardado {date}"
+  "notesSaved": "Guardado {date}",
+  "peersTitle": "Empresas semelhantes"
 }

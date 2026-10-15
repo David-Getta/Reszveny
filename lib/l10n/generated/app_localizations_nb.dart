@@ -1701,4 +1701,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String notesSaved(String date) {
     return 'Lagret $date';
   }
+
+  @override
+  String get peersTitle => 'Lignende selskaper';
 }

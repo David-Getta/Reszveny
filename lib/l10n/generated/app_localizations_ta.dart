@@ -1710,4 +1710,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String notesSaved(String date) {
     return 'சேமித்தது $date';
   }
+
+  @override
+  String get peersTitle => 'ஒத்த நிறுவனங்கள்';
 }

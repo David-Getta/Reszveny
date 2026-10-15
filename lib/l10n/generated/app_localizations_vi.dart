@@ -1696,4 +1696,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String notesSaved(String date) {
     return 'Đã lưu $date';
   }
+
+  @override
+  String get peersTitle => 'Công ty tương tự';
 }

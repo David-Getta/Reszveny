@@ -1705,4 +1705,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String notesSaved(String date) {
     return 'Gestoor $date';
   }
+
+  @override
+  String get peersTitle => 'Soortgelyke maatskappye';
 }

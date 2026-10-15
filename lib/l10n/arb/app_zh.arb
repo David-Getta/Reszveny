@@ -464,5 +464,6 @@
   "notesTitle": "我的笔记",
   "notesHint": "您为什么买入？在关注什么？什么情况下会卖出？",
   "notesInfo": "仅保存在此设备上。AI 分析会参考您的笔记。",
-  "notesSaved": "保存于 {date}"
+  "notesSaved": "保存于 {date}",
+  "peersTitle": "同类公司"
 }

@@ -464,5 +464,6 @@
   "notesTitle": "Qillqasqaykuna",
   "notesHint": "Imaraykutaq rantirqanki, imatataq qhawachkanki, imataq vendenaykipaq tanqasunki?",
   "notesInfo": "Kay equipollapim waqaychasqa. AI t'aqwiyqa qillqasqaykikunata qhawarin.",
-  "notesSaved": "Waqaychasqa {date}"
+  "notesSaved": "Waqaychasqa {date}",
+  "peersTitle": "Kaqlla empresakuna"
 }

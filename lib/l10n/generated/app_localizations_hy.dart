@@ -1709,4 +1709,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String notesSaved(String date) {
     return 'Պահվել է՝ $date';
   }
+
+  @override
+  String get peersTitle => 'Նմանատիպ ընկերություններ';
 }

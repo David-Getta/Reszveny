@@ -1680,4 +1680,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String notesSaved(String date) {
     return 'บันทึกเมื่อ $date';
   }
+
+  @override
+  String get peersTitle => 'บริษัทที่คล้ายกัน';
 }

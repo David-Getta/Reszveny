@@ -1649,4 +1649,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String notesSaved(String date) {
     return '保存：$date';
   }
+
+  @override
+  String get peersTitle => '類似企業';
 }

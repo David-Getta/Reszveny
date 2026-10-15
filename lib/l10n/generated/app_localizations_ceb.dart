@@ -1710,4 +1710,7 @@ class AppLocalizationsCeb extends AppLocalizations {
   String notesSaved(String date) {
     return 'Gitipigan $date';
   }
+
+  @override
+  String get peersTitle => 'Susamang mga kompanya';
 }

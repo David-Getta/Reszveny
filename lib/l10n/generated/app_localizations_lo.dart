@@ -1683,4 +1683,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String notesSaved(String date) {
     return 'ບັນທຶກແລ້ວ $date';
   }
+
+  @override
+  String get peersTitle => 'ບໍລິສັດທີ່ຄ້າຍຄືກັນ';
 }

@@ -1703,4 +1703,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String notesSaved(String date) {
     return 'შენახულია $date';
   }
+
+  @override
+  String get peersTitle => 'მსგავსი კომპანიები';
 }

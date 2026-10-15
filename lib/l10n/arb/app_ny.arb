@@ -464,5 +464,6 @@
   "notesTitle": "Zolemba zanga",
   "notesHint": "Chifukwa chiyani munaigula, mukuyang'anira chiyani, nchiyani chingakupangitseni kuigulitsa?",
   "notesInfo": "Zasungidwa pa chipangizo ichi chokha. Kusanthula kwa AI kumaganizira zolemba zanu.",
-  "notesSaved": "Zasungidwa {date}"
+  "notesSaved": "Zasungidwa {date}",
+  "peersTitle": "Makampani ofanana"
 }

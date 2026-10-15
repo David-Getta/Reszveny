@@ -464,5 +464,6 @@
   "notesTitle": "Moje notatki",
   "notesHint": "Powód zakupu? Co obserwujesz? Co skłoniłoby cię do sprzedaży?",
   "notesInfo": "Zapisywane tylko na tym urządzeniu. Analiza AI uwzględnia twoje notatki.",
-  "notesSaved": "Zapisano {date}"
+  "notesSaved": "Zapisano {date}",
+  "peersTitle": "Podobne spółki"
 }

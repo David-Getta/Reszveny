@@ -464,5 +464,6 @@
   "notesTitle": "Jegyzeteim",
   "notesHint": "Miért vetted meg, mire figyelsz, mi miatt adnád el?",
   "notesInfo": "Csak ezen a készüléken tárolódik. Az AI-elemzés figyelembe veszi a jegyzeteidet.",
-  "notesSaved": "Mentve: {date}"
+  "notesSaved": "Mentve: {date}",
+  "peersTitle": "Hasonló cégek"
 }

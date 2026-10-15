@@ -464,5 +464,6 @@
   "notesTitle": "As miñas notas",
   "notesHint": "Por que a mercaches, que estás a vixiar, que che faría vendela?",
   "notesInfo": "Gárdase só neste dispositivo. A análise con IA ten en conta as túas notas.",
-  "notesSaved": "Gardado {date}"
+  "notesSaved": "Gardado {date}",
+  "peersTitle": "Empresas similares"
 }

@@ -1708,4 +1708,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String notesSaved(String date) {
     return 'La kaydiyay $date';
   }
+
+  @override
+  String get peersTitle => 'Shirkado la mid ah';
 }

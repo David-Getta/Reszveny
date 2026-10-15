@@ -1703,4 +1703,7 @@ class AppLocalizationsTg extends AppLocalizations {
   String notesSaved(String date) {
     return 'Нигоҳ дошта шуд: $date';
   }
+
+  @override
+  String get peersTitle => 'Ширкатҳои монанд';
 }

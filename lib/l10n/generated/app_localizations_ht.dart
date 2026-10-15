@@ -1700,4 +1700,7 @@ class AppLocalizationsHt extends AppLocalizations {
   String notesSaved(String date) {
     return 'Anrejistre $date';
   }
+
+  @override
+  String get peersTitle => 'Konpayi ki sanble';
 }

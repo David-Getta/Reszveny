@@ -464,5 +464,6 @@
   "notesTitle": "Notlarım",
   "notesHint": "Neden aldınız, neyi takip ediyorsunuz, sizi satmaya ne yöneltir?",
   "notesInfo": "Yalnızca bu cihazda saklanır. Yapay zekâ analizi notlarınızı dikkate alır.",
-  "notesSaved": "Kaydedildi: {date}"
+  "notesSaved": "Kaydedildi: {date}",
+  "peersTitle": "Benzer şirketler"
 }

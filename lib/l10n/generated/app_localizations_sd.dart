@@ -1696,4 +1696,7 @@ class AppLocalizationsSd extends AppLocalizations {
   String notesSaved(String date) {
     return 'محفوظ ٿيو: $date';
   }
+
+  @override
+  String get peersTitle => 'ساڳيون ڪمپنيون';
 }

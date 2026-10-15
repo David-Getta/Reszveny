@@ -1708,4 +1708,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String notesSaved(String date) {
     return 'Kulondoloziwe: $date';
   }
+
+  @override
+  String get peersTitle => 'Izinkampani ezifanayo';
 }

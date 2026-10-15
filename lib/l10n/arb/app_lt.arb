@@ -464,5 +464,6 @@
   "notesTitle": "Mano užrašai",
   "notesHint": "Kodėl ją įsigijote, ką stebite, kas paskatintų parduoti?",
   "notesInfo": "Saugoma tik šiame įrenginyje. DI analizė atsižvelgia į jūsų užrašus.",
-  "notesSaved": "Išsaugota {date}"
+  "notesSaved": "Išsaugota {date}",
+  "peersTitle": "Panašios įmonės"
 }

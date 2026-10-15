@@ -464,5 +464,6 @@
   "notesTitle": "Notițele mele",
   "notesHint": "De ce ai cumpărat-o, ce urmărești, ce te-ar face să vinzi?",
   "notesInfo": "Salvat doar pe acest dispozitiv. Analiza AI ține cont de notițele tale.",
-  "notesSaved": "Salvat {date}"
+  "notesSaved": "Salvat {date}",
+  "peersTitle": "Companii similare"
 }

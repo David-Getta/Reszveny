@@ -464,5 +464,6 @@
   "notesTitle": "Ghi chú của tôi",
   "notesHint": "Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?",
   "notesInfo": "Chỉ lưu trên thiết bị này. Phân tích AI có xét đến ghi chú của bạn.",
-  "notesSaved": "Đã lưu {date}"
+  "notesSaved": "Đã lưu {date}",
+  "peersTitle": "Công ty tương tự"
 }

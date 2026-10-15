@@ -100,4 +100,44 @@ void main() {
     expect(find.text('Microsoft Corporation'), findsNothing);
     expect(find.byKey(const ValueKey('compare-add')), findsOneWidget);
   });
+
+  testWidgets('similar companies on a stock page: open one, or compare them all', (tester) async {
+    tester.view.physicalSize = const Size(1200, 5000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final services = AppServices(
+      alertNotifier: FakeNotifier(),
+      config: const AppConfig(),
+      capture: CaptureService(),
+      recognizer: _NoRecognizer(),
+      marketData: DemoMarketDataProvider(latency: Duration.zero),
+      locale: LocaleController(),
+      preferences: AppPreferences(),
+      desktop: DesktopIntegration(),
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: const AppConfig())),
+      entitlements: EntitlementService(),
+    );
+    await tester.pumpWidget(WhatStockApp(services: services));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    expect(find.text('Similar companies'), findsOneWidget);
+    expect(find.byKey(const ValueKey('peer-MSFT')), findsOneWidget);
+    expect(find.byKey(const ValueKey('peer-NVDA')), findsOneWidget);
+    expect(find.byKey(const ValueKey('peer-AAPL')), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('peers-compare')));
+    await tester.pumpAndSettle();
+    expect(find.text('Compare'), findsOneWidget);
+    expect(find.text('Microsoft Corporation'), findsOneWidget);
+    expect(find.text('NVIDIA Corporation'), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('peer-MSFT')));
+    await tester.pumpAndSettle();
+    expect(find.text('Microsoft Corporation'), findsWidgets);
+    expect(services.preferences.recent.first, 'MSFT');
+  });
 }

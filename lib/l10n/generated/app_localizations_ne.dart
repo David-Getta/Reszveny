@@ -1703,4 +1703,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String notesSaved(String date) {
     return 'सुरक्षित गरियो: $date';
   }
+
+  @override
+  String get peersTitle => 'समान कम्पनीहरू';
 }

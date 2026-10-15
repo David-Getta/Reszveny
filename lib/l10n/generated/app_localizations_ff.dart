@@ -1697,4 +1697,7 @@ class AppLocalizationsFf extends AppLocalizations {
   String notesSaved(String date) {
     return 'Mooftaama $date';
   }
+
+  @override
+  String get peersTitle => 'Sosiyeteeji nanndooji';
 }

@@ -464,5 +464,6 @@
   "notesTitle": "Shënimet e mia",
   "notesHint": "Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?",
   "notesInfo": "Ruhet vetëm në këtë pajisje. Analiza me AI merr parasysh shënimet tuaja.",
-  "notesSaved": "Ruajtur {date}"
+  "notesSaved": "Ruajtur {date}",
+  "peersTitle": "Kompani të ngjashme"
 }

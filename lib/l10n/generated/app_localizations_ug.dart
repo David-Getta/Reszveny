@@ -1704,4 +1704,7 @@ class AppLocalizationsUg extends AppLocalizations {
   String notesSaved(String date) {
     return 'ساقلاندى: $date';
   }
+
+  @override
+  String get peersTitle => 'ئوخشاش شىركەتلەر';
 }

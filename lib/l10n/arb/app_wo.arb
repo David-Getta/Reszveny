@@ -464,5 +464,6 @@
   "notesTitle": "Samay notu",
   "notesHint": "Lu tax nga ko jënd, lan ngay topp, lan moo lay def nga jaay ko?",
   "notesInfo": "Ci masin bii rekk lañu ko denc. Saytu AI bi dafay jëfandikoo sa notu yi.",
-  "notesSaved": "Denc nañu ko: {date}"
+  "notesSaved": "Denc nañu ko: {date}",
+  "peersTitle": "Kompañi yu ko niru"
 }

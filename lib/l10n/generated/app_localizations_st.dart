@@ -1711,4 +1711,7 @@ class AppLocalizationsSt extends AppLocalizations {
   String notesSaved(String date) {
     return 'E bolokilwe $date';
   }
+
+  @override
+  String get peersTitle => 'Dikhampani tse tshwanang';
 }

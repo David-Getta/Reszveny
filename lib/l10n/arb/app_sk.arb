@@ -464,5 +464,6 @@
   "notesTitle": "Moje poznámky",
   "notesHint": "Prečo ste ju kúpili, čo sledujete, čo by vás prinútilo predať?",
   "notesInfo": "Ukladá sa iba v tomto zariadení. AI analýza berie vaše poznámky do úvahy.",
-  "notesSaved": "Uložené {date}"
+  "notesSaved": "Uložené {date}",
+  "peersTitle": "Podobné spoločnosti"
 }

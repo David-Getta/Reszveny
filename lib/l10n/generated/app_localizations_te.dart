@@ -1707,4 +1707,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String notesSaved(String date) {
     return 'సేవ్ చేయబడింది $date';
   }
+
+  @override
+  String get peersTitle => 'సారూప్య కంపెనీలు';
 }

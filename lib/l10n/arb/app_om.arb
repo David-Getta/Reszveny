@@ -464,5 +464,6 @@
   "notesTitle": "Yaadannoo koo",
   "notesHint": "Maaliif bitte, maal hordofaa jirta, maaltu akka gurgurtu si taasisa?",
   "notesInfo": "Meeshaa kana qofa irratti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.",
-  "notesSaved": "Kuufame: {date}"
+  "notesSaved": "Kuufame: {date}",
+  "peersTitle": "Dhaabbilee walfakkaatan"
 }

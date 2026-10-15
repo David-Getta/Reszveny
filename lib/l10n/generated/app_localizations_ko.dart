@@ -1652,4 +1652,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String notesSaved(String date) {
     return '저장됨: $date';
   }
+
+  @override
+  String get peersTitle => '유사 기업';
 }

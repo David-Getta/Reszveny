@@ -1748,4 +1748,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String notesSaved(String date) {
     return 'Uloženo $date';
   }
+
+  @override
+  String get peersTitle => 'Podobné společnosti';
 }

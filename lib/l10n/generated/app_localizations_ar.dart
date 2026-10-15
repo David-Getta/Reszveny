@@ -1739,4 +1739,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String notesSaved(String date) {
     return 'تم الحفظ $date';
   }
+
+  @override
+  String get peersTitle => 'شركات مماثلة';
 }

@@ -464,5 +464,6 @@
   "notesTitle": "Zvinyorwa zvangu",
   "notesHint": "Wakaitengerei, uri kutarisa chii, chii chingaita kuti uitengese?",
   "notesInfo": "Zvakachengetwa pamudziyo uyu chete. Ongororo yeAI inotarisa zvinyorwa zvako.",
-  "notesSaved": "Zvachengetwa {date}"
+  "notesSaved": "Zvachengetwa {date}",
+  "peersTitle": "Makambani akafanana"
 }

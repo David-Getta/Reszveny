@@ -1687,4 +1687,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String notesSaved(String date) {
     return 'បានរក្សាទុក $date';
   }
+
+  @override
+  String get peersTitle => 'ក្រុមហ៊ុនស្រដៀងគ្នា';
 }

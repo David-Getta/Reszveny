@@ -1702,4 +1702,7 @@ class AppLocalizationsKi extends AppLocalizations {
   String notesSaved(String date) {
     return 'Ĩigĩtwo $date';
   }
+
+  @override
+  String get peersTitle => 'Kambuni iria ihaanaine';
 }

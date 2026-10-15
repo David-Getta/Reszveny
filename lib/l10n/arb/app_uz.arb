@@ -464,5 +464,6 @@
   "notesTitle": "Mening qaydlarim",
   "notesHint": "Nega sotib oldingiz, nimani kuzatyapsiz, nima sizni sotishga undaydi?",
   "notesInfo": "Faqat shu qurilmada saqlanadi. AI tahlili qaydlaringizni hisobga oladi.",
-  "notesSaved": "Saqlandi: {date}"
+  "notesSaved": "Saqlandi: {date}",
+  "peersTitle": "O'xshash kompaniyalar"
 }

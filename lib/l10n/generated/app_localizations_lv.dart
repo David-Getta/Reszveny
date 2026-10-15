@@ -1738,4 +1738,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String notesSaved(String date) {
     return 'Saglabāts $date';
   }
+
+  @override
+  String get peersTitle => 'Līdzīgi uzņēmumi';
 }

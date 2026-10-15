@@ -1708,4 +1708,7 @@ class AppLocalizationsOm extends AppLocalizations {
   String notesSaved(String date) {
     return 'Kuufame: $date';
   }
+
+  @override
+  String get peersTitle => 'Dhaabbilee walfakkaatan';
 }

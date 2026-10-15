@@ -464,5 +464,6 @@
   "notesTitle": "Qeydlərim",
   "notesHint": "Niyə aldınız, nəyi izləyirsiniz, nə sizi satmağa vadar edərdi?",
   "notesInfo": "Yalnız bu cihazda saxlanılır. AI təhlili qeydlərinizi nəzərə alır.",
-  "notesSaved": "Yadda saxlanıldı: {date}"
+  "notesSaved": "Yadda saxlanıldı: {date}",
+  "peersTitle": "Oxşar şirkətlər"
 }

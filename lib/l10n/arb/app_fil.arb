@@ -464,5 +464,6 @@
   "notesTitle": "Aking mga tala",
   "notesHint": "Bakit mo ito binili, ano ang binabantayan mo, ano ang magtutulak sa iyong ibenta ito?",
   "notesInfo": "Sa device na ito lang naka-save. Isinasaalang-alang ng pagsusuri ng AI ang iyong mga tala.",
-  "notesSaved": "Na-save {date}"
+  "notesSaved": "Na-save {date}",
+  "peersTitle": "Mga katulad na kumpanya"
 }

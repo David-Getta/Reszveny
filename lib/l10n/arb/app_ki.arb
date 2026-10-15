@@ -464,5 +464,6 @@
   "notesTitle": "Maandĩko makwa",
   "notesHint": "Nĩ kĩ gĩtũmire ũgũre, nĩ kĩ ũrarora, nĩ kĩ kĩngĩtũma wendie?",
   "notesInfo": "Ĩigĩtwo kĩndũ-inĩ gĩkĩ tu. Ũthuthuria wa AI nĩ ũtaranagia maandĩko maku.",
-  "notesSaved": "Ĩigĩtwo {date}"
+  "notesSaved": "Ĩigĩtwo {date}",
+  "peersTitle": "Kambuni iria ihaanaine"
 }

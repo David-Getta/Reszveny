@@ -464,5 +464,6 @@
   "notesTitle": "Amanothi ami",
   "notesHint": "Ulithengeleni, yini oyiqaphile, yini engakwenza ulithengise?",
   "notesInfo": "Kugcinwe kule divayisi kuphela. Uhlaziyo lwe-AI lubheka amanothi akho.",
-  "notesSaved": "Kulondoloziwe: {date}"
+  "notesSaved": "Kulondoloziwe: {date}",
+  "peersTitle": "Izinkampani ezifanayo"
 }

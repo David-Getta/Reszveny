@@ -1709,4 +1709,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String notesSaved(String date) {
     return 'Byabitswe $date';
   }
+
+  @override
+  String get peersTitle => 'Ibigo bisa na cyo';
 }

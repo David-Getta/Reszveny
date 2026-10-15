@@ -464,5 +464,6 @@
   "notesTitle": "自分のメモ",
   "notesHint": "購入した理由、注目している点、売却する条件は？",
   "notesInfo": "この端末にのみ保存されます。AI 分析はメモの内容を考慮します。",
-  "notesSaved": "保存：{date}"
+  "notesSaved": "保存：{date}",
+  "peersTitle": "類似企業"
 }

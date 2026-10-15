@@ -1697,4 +1697,7 @@ class AppLocalizationsMai extends AppLocalizations {
   String notesSaved(String date) {
     return 'सहेजल गेल $date';
   }
+
+  @override
+  String get peersTitle => 'समान कंपनी सभ';
 }

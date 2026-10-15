@@ -1707,4 +1707,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String notesSaved(String date) {
     return 'ಉಳಿಸಲಾಗಿದೆ: $date';
   }
+
+  @override
+  String get peersTitle => 'ಇದೇ ರೀತಿಯ ಕಂಪನಿಗಳು';
 }

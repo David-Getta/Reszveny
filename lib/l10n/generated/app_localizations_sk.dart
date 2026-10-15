@@ -1752,4 +1752,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String notesSaved(String date) {
     return 'Uložené $date';
   }
+
+  @override
+  String get peersTitle => 'Podobné spoločnosti';
 }

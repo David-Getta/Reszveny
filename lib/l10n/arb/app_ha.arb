@@ -464,5 +464,6 @@
   "notesTitle": "Bayanaina",
   "notesHint": "Me ya sa ka saya, me kake lura da shi, me zai sa ka sayar?",
   "notesInfo": "Ana adana shi a wannan na’ura kawai. Nazarin AI yana la’akari da bayananka.",
-  "notesSaved": "An adana {date}"
+  "notesSaved": "An adana {date}",
+  "peersTitle": "Kamfanoni masu kama"
 }

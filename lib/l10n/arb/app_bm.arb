@@ -464,5 +464,6 @@
   "notesTitle": "N ka sɛbɛnniw",
   "notesHint": "Mun na i y'a san, i bɛ mun kɔlɔsi, mun b'a to i b'a feere?",
   "notesInfo": "A marala nin minɛn in dɔrɔn de kan. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.",
-  "notesSaved": "A marala: {date}"
+  "notesSaved": "A marala: {date}",
+  "peersTitle": "Sosiyete ɲɔgɔnnaw"
 }

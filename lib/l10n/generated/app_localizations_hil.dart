@@ -1713,4 +1713,7 @@ class AppLocalizationsHil extends AppLocalizations {
   String notesSaved(String date) {
     return 'Natipon $date';
   }
+
+  @override
+  String get peersTitle => 'Kaangay nga mga kompanya';
 }

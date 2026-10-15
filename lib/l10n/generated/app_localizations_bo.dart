@@ -1693,4 +1693,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String notesSaved(String date) {
     return 'ཉར་ཚགས་བྱས: $date';
   }
+
+  @override
+  String get peersTitle => 'འདྲ་མཚུངས་ཀུང་སི';
 }

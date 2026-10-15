@@ -464,5 +464,6 @@
   "notesTitle": "Mine noter",
   "notesHint": "Hvorfor købte du den, hvad holder du øje med, og hvad ville få dig til at sælge?",
   "notesInfo": "Gemmes kun på denne enhed. AI-analysen tager højde for dine noter.",
-  "notesSaved": "Gemt {date}"
+  "notesSaved": "Gemt {date}",
+  "peersTitle": "Lignende virksomheder"
 }

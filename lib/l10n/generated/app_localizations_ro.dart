@@ -1732,4 +1732,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String notesSaved(String date) {
     return 'Salvat $date';
   }
+
+  @override
+  String get peersTitle => 'Companii similare';
 }

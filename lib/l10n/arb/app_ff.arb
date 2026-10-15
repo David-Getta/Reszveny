@@ -464,5 +464,6 @@
   "notesTitle": "Binndi am",
   "notesHint": "Ko waɗi a soodi ɗum, ko ndaarataa, ko waɗata a yeeya?",
   "notesInfo": "Ina mooftaa e ngol kaɓirgol tan. Ƴeewndo AI ina jogitoo binndi maa.",
-  "notesSaved": "Mooftaama {date}"
+  "notesSaved": "Mooftaama {date}",
+  "peersTitle": "Sosiyeteeji nanndooji"
 }

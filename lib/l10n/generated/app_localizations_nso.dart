@@ -1713,4 +1713,7 @@ class AppLocalizationsNso extends AppLocalizations {
   String notesSaved(String date) {
     return 'E bolokilwe: $date';
   }
+
+  @override
+  String get peersTitle => 'Dikhamphani tše di swanago';
 }

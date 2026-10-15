@@ -3126,6 +3126,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Saved {date}'**
   String notesSaved(String date);
+
+  /// Title above chips of competitor stocks (peers) on a stock's page.
+  ///
+  /// In en, this message translates to:
+  /// **'Similar companies'**
+  String get peersTitle;
 }
 
 class _AppLocalizationsDelegate

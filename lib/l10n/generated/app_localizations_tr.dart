@@ -1701,4 +1701,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String notesSaved(String date) {
     return 'Kaydedildi: $date';
   }
+
+  @override
+  String get peersTitle => 'Benzer şirketler';
 }

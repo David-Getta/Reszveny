@@ -1696,4 +1696,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String notesSaved(String date) {
     return 'خوندي شو: $date';
   }
+
+  @override
+  String get peersTitle => 'ورته شرکتونه';
 }

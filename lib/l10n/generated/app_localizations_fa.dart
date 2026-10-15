@@ -1700,4 +1700,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String notesSaved(String date) {
     return 'ذخیره شد: $date';
   }
+
+  @override
+  String get peersTitle => 'شرکت‌های مشابه';
 }

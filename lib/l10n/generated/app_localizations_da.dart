@@ -1699,4 +1699,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String notesSaved(String date) {
     return 'Gemt $date';
   }
+
+  @override
+  String get peersTitle => 'Lignende virksomheder';
 }

@@ -1706,4 +1706,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String notesSaved(String date) {
     return 'Mentve: $date';
   }
+
+  @override
+  String get peersTitle => 'Hasonló cégek';
 }

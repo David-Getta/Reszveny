@@ -1697,4 +1697,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String notesSaved(String date) {
     return 'Echekwara $date';
   }
+
+  @override
+  String get peersTitle => 'Ụlọ ọrụ yiri ya';
 }

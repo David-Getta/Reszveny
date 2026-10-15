@@ -1689,4 +1689,7 @@ class AppLocalizationsMos extends AppLocalizations {
   String notesSaved(String date) {
     return 'B tall-a: $date';
   }
+
+  @override
+  String get peersTitle => 'Ãterpriz sẽn wõnda';
 }

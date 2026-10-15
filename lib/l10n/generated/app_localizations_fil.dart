@@ -1708,4 +1708,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String notesSaved(String date) {
     return 'Na-save $date';
   }
+
+  @override
+  String get peersTitle => 'Mga katulad na kumpanya';
 }

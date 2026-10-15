@@ -1751,4 +1751,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String notesSaved(String date) {
     return 'Збережено $date';
   }
+
+  @override
+  String get peersTitle => 'Схожі компанії';
 }

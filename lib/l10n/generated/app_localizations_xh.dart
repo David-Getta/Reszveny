@@ -1709,4 +1709,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String notesSaved(String date) {
     return 'Kugcinwe: $date';
   }
+
+  @override
+  String get peersTitle => 'Iinkampani ezifanayo';
 }

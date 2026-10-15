@@ -464,5 +464,6 @@
   "notesTitle": "Tinotsi ta mina",
   "notesHint": "Hikwalaho ka yini u yi xavile, u languta yini, i yini lexi nga ku endlaka u yi xavisa?",
   "notesInfo": "Swi hlayisiwile eka xitirhisiwa lexi ntsena. Nxopaxopo wa AI wu tekela enhlokweni tinotsi ta wena.",
-  "notesSaved": "Swi hlayisiwile {date}"
+  "notesSaved": "Swi hlayisiwile {date}",
+  "peersTitle": "Tikhampani leti fanaka"
 }

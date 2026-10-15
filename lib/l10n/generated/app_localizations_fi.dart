@@ -1703,4 +1703,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String notesSaved(String date) {
     return 'Tallennettu $date';
   }
+
+  @override
+  String get peersTitle => 'Vastaavat yritykset';
 }

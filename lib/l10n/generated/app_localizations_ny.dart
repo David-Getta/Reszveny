@@ -1708,4 +1708,7 @@ class AppLocalizationsNy extends AppLocalizations {
   String notesSaved(String date) {
     return 'Zasungidwa $date';
   }
+
+  @override
+  String get peersTitle => 'Makampani ofanana';
 }

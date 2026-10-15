@@ -464,5 +464,6 @@
   "notesTitle": "Ebiwandiiko byange",
   "notesHint": "Lwaki wagugula, kiki ky'olondoola, kiki ekyandikuleetedde okugutunda?",
   "notesInfo": "Bitereddwa ku kyuma kino kyokka. Okwekenneenya kwa AI kutunuulira ebiwandiiko byo.",
-  "notesSaved": "Bitereddwa {date}"
+  "notesSaved": "Bitereddwa {date}",
+  "peersTitle": "Kkampuni ezifaananako"
 }

@@ -1712,4 +1712,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String notesSaved(String date) {
     return 'Gespeichert $date';
   }
+
+  @override
+  String get peersTitle => 'Ähnliche Unternehmen';
 }

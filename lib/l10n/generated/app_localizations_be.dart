@@ -1751,4 +1751,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String notesSaved(String date) {
     return 'Захавана $date';
   }
+
+  @override
+  String get peersTitle => 'Падобныя кампаніі';
 }

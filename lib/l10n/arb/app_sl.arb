@@ -464,5 +464,6 @@
   "notesTitle": "Moji zapiski",
   "notesHint": "Zakaj ste jo kupili, kaj spremljate, kaj bi vas pripravilo do prodaje?",
   "notesInfo": "Shranjeno samo v tej napravi. Analiza AI upošteva vaše zapiske.",
-  "notesSaved": "Shranjeno {date}"
+  "notesSaved": "Shranjeno {date}",
+  "peersTitle": "Podobna podjetja"
 }

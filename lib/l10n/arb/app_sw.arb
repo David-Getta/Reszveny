@@ -464,5 +464,6 @@
   "notesTitle": "Madokezo yangu",
   "notesHint": "Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?",
   "notesInfo": "Huhifadhiwa kwenye kifaa hiki pekee. Uchambuzi wa AI huzingatia madokezo yako.",
-  "notesSaved": "Imehifadhiwa {date}"
+  "notesSaved": "Imehifadhiwa {date}",
+  "peersTitle": "Kampuni zinazofanana"
 }

@@ -1701,4 +1701,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String notesSaved(String date) {
     return 'محفوظ کیا گیا $date';
   }
+
+  @override
+  String get peersTitle => 'ملتی جلتی کمپنیاں';
 }

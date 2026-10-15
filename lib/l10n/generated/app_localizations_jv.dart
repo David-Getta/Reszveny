@@ -1702,4 +1702,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String notesSaved(String date) {
     return 'Disimpen $date';
   }
+
+  @override
+  String get peersTitle => 'Perusahaan sing padha';
 }

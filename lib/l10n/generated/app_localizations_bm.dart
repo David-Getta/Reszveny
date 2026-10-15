@@ -1699,4 +1699,7 @@ class AppLocalizationsBm extends AppLocalizations {
   String notesSaved(String date) {
     return 'A marala: $date';
   }
+
+  @override
+  String get peersTitle => 'Sosiyete ɲɔgɔnnaw';
 }

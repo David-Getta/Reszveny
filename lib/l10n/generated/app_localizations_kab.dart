@@ -1700,4 +1700,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String notesSaved(String date) {
     return 'Yettwasekles $date';
   }
+
+  @override
+  String get peersTitle => 'Tikebbaniyin i d-icban';
 }

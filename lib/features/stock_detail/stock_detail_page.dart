@@ -21,6 +21,7 @@ import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
 import 'widgets/converted_price.dart';
 import 'widgets/kv_table.dart';
+import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
 import 'widgets/statements_table.dart';
@@ -269,6 +270,15 @@ class _DetailsBody extends StatelessWidget {
 
       // Saját jegyzetek (az elemzés is megkapja)
       NotesCard(symbol: d.symbol),
+
+      // Hasonló cégek (versenytársak), összehasonlítással
+      PeersStrip(
+        symbol: d.symbol,
+        onOpenSymbol: (c) {
+          AppServices.of(context).preferences.addRecent(c.symbol);
+          Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: c)));
+        },
+      ),
 
       // Grafikon
       SectionCard(

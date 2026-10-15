@@ -1710,4 +1710,7 @@ class AppLocalizationsLn extends AppLocalizations {
   String notesSaved(String date) {
     return 'Ebombami $date';
   }
+
+  @override
+  String get peersTitle => 'Bakompanyi oyo ekokani';
 }

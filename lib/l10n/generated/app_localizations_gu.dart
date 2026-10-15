@@ -1699,4 +1699,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String notesSaved(String date) {
     return 'સાચવ્યું: $date';
   }
+
+  @override
+  String get peersTitle => 'સમાન કંપનીઓ';
 }

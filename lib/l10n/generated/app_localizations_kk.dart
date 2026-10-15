@@ -1702,4 +1702,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String notesSaved(String date) {
     return 'Сақталды: $date';
   }
+
+  @override
+  String get peersTitle => 'Ұқсас компаниялар';
 }

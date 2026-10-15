@@ -1755,4 +1755,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String notesSaved(String date) {
     return 'Zapisano $date';
   }
+
+  @override
+  String get peersTitle => 'Podobne spółki';
 }

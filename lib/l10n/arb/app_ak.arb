@@ -464,5 +464,6 @@
   "notesTitle": "Me nkyerɛwee",
   "notesHint": "Adɛn nti na wotɔeɛ, dɛn na worehwɛ, dɛn na ɛbɛma woatɔn?",
   "notesInfo": "Ɛkora wɔ mfiri yi so nko ara. AI nhwehwɛmu no de wo nkyerɛwee no bɛka ho.",
-  "notesSaved": "Wɔakora {date}"
+  "notesSaved": "Wɔakora {date}",
+  "peersTitle": "Adwumakuw a ɛte sɛ yei"
 }

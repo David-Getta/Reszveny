@@ -1702,4 +1702,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String notesSaved(String date) {
     return 'Yadda saxlanıldı: $date';
   }
+
+  @override
+  String get peersTitle => 'Oxşar şirkətlər';
 }

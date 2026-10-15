@@ -1704,4 +1704,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String notesSaved(String date) {
     return 'Сакталды: $date';
   }
+
+  @override
+  String get peersTitle => 'Окшош компаниялар';
 }

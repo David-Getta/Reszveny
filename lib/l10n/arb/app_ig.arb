@@ -464,5 +464,6 @@
   "notesTitle": "Ndetu m",
   "notesHint": "Gịnị mere i ji zụta ya, gịnị ka ị na-eleba anya, gịnị ga-eme ka i ree ya?",
   "notesInfo": "E chekwara ya naanị na ngwaọrụ a. Nyocha AI na-atụle ndetu gị.",
-  "notesSaved": "Echekwara {date}"
+  "notesSaved": "Echekwara {date}",
+  "peersTitle": "Ụlọ ọrụ yiri ya"
 }

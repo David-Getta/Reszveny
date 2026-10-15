@@ -1699,4 +1699,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String notesSaved(String date) {
     return 'ସଞ୍ଚିତ $date';
   }
+
+  @override
+  String get peersTitle => 'ସମାନ କମ୍ପାନୀ';
 }

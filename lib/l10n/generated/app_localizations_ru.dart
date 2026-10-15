@@ -1753,4 +1753,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String notesSaved(String date) {
     return 'Сохранено $date';
   }
+
+  @override
+  String get peersTitle => 'Похожие компании';
 }

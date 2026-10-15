@@ -1670,4 +1670,7 @@ class AppLocalizationsTi extends AppLocalizations {
   String notesSaved(String date) {
     return 'ተዓቂቡ፦ $date';
   }
+
+  @override
+  String get peersTitle => 'ተመሳሰልቲ ኩባንያታት';
 }

@@ -1720,4 +1720,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String notesSaved(String date) {
     return 'Зачувано $date';
   }
+
+  @override
+  String get peersTitle => 'Слични компании';
 }

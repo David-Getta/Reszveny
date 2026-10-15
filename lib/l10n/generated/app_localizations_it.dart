@@ -1706,4 +1706,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String notesSaved(String date) {
     return 'Salvato $date';
   }
+
+  @override
+  String get peersTitle => 'Aziende simili';
 }

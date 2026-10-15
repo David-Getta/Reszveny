@@ -464,5 +464,6 @@
   "notesTitle": "Ny naotiko",
   "notesHint": "Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?",
   "notesInfo": "Voatahiry amin'ity fitaovana ity ihany. Raisin'ny fandalinana AI an-tsaina ny naotinao.",
-  "notesSaved": "Voatahiry {date}"
+  "notesSaved": "Voatahiry {date}",
+  "peersTitle": "Orinasa mitovy"
 }

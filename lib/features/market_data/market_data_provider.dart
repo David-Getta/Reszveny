@@ -34,6 +34,9 @@ abstract class MarketDataProvider {
   /// hiányzó rész egyszerűen kimarad; alapból üres.
   Future<AnalysisExtras> analysisExtras(String symbol) async => const AnalysisExtras();
 
+  /// Hasonló cégek tickerei (versenytársak); alapból az [analysisExtras]-ból.
+  Future<List<String>> peers(String symbol) async => (await analysisExtras(symbol)).peers;
+
   /// A következő gyorsjelentés (az eseménynaptárhoz); alapból az [analysisExtras]-ból.
   Future<UpcomingEarnings?> nextEarnings(String symbol) async => (await analysisExtras(symbol)).nextEarnings;
 

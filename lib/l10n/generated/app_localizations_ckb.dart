@@ -1702,4 +1702,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String notesSaved(String date) {
     return 'پاشەکەوتکرا $date';
   }
+
+  @override
+  String get peersTitle => 'کۆمپانیا هاوشێوەکان';
 }

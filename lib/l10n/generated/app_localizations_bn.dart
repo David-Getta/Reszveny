@@ -1702,4 +1702,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String notesSaved(String date) {
     return 'সংরক্ষিত $date';
   }
+
+  @override
+  String get peersTitle => 'অনুরূপ কোম্পানি';
 }

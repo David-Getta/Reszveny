@@ -1675,4 +1675,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String notesSaved(String date) {
     return 'የተቀመጠው፦ $date';
   }
+
+  @override
+  String get peersTitle => 'ተመሳሳይ ኩባንያዎች';
 }

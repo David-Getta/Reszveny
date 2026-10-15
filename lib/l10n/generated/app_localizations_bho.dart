@@ -1698,4 +1698,7 @@ class AppLocalizationsBho extends AppLocalizations {
   String notesSaved(String date) {
     return 'सहेजल गइल $date';
   }
+
+  @override
+  String get peersTitle => 'मिलत-जुलत कंपनी';
 }

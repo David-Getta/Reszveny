@@ -1704,4 +1704,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String notesSaved(String date) {
     return 'Saqlandi: $date';
   }
+
+  @override
+  String get peersTitle => 'O\'xshash kompaniyalar';
 }

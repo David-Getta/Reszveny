@@ -464,5 +464,6 @@
   "notesTitle": "Qoraalladayda",
   "notesHint": "Maxaad u iibsatay, maxaad la socotaa, maxaa kugu kallifi lahaa inaad iibiso?",
   "notesInfo": "Waxaa lagu kaydiyaa qalabkan oo keliya. Falanqaynta AI waxay tixgelisaa qoraalladaada.",
-  "notesSaved": "La kaydiyay {date}"
+  "notesSaved": "La kaydiyay {date}",
+  "peersTitle": "Shirkado la mid ah"
 }

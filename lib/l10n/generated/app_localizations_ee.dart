@@ -1705,4 +1705,7 @@ class AppLocalizationsEe extends AppLocalizations {
   String notesSaved(String date) {
     return 'Wodzrae ɖo $date';
   }
+
+  @override
+  String get peersTitle => 'Dɔwɔƒe siwo sɔ kplii';
 }

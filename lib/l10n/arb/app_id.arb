@@ -464,5 +464,6 @@
   "notesTitle": "Catatan saya",
   "notesHint": "Mengapa Anda membelinya, apa yang Anda pantau, apa yang akan membuat Anda menjualnya?",
   "notesInfo": "Hanya disimpan di perangkat ini. Analisis AI mempertimbangkan catatan Anda.",
-  "notesSaved": "Disimpan {date}"
+  "notesSaved": "Disimpan {date}",
+  "peersTitle": "Perusahaan serupa"
 }

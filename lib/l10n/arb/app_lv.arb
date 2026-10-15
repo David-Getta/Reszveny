@@ -464,5 +464,6 @@
   "notesTitle": "Manas piezīmes",
   "notesHint": "Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?",
   "notesInfo": "Saglabāts tikai šajā ierīcē. AI analīze ņem vērā jūsu piezīmes.",
-  "notesSaved": "Saglabāts {date}"
+  "notesSaved": "Saglabāts {date}",
+  "peersTitle": "Līdzīgi uzņēmumi"
 }

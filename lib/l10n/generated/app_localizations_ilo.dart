@@ -1716,4 +1716,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   String notesSaved(String date) {
     return 'Naidulin $date';
   }
+
+  @override
+  String get peersTitle => 'Dagiti kapada a kompania';
 }

@@ -1697,4 +1697,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String notesSaved(String date) {
     return '$date တွင် သိမ်းဆည်းခဲ့သည်';
   }
+
+  @override
+  String get peersTitle => 'ဆင်တူသော ကုမ္ပဏီများ';
 }

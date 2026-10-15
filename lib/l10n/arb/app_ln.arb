@@ -464,5 +464,6 @@
   "notesTitle": "Ba note na ngai",
   "notesHint": "Mpo na nini osombaki yango, ozali kotala nini, nini ekoki kotinda yo oteka yango?",
   "notesInfo": "Ebombami kaka na esaleli oyo. Analyse ya AI ezwaka ba note na yo na motuya.",
-  "notesSaved": "Ebombami {date}"
+  "notesSaved": "Ebombami {date}",
+  "peersTitle": "Bakompanyi oyo ekokani"
 }

@@ -1708,4 +1708,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String notesSaved(String date) {
     return 'സംരക്ഷിച്ചത്: $date';
   }
+
+  @override
+  String get peersTitle => 'സമാന കമ്പനികൾ';
 }

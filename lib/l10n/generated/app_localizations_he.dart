@@ -1698,4 +1698,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String notesSaved(String date) {
     return 'נשמר $date';
   }
+
+  @override
+  String get peersTitle => 'חברות דומות';
 }

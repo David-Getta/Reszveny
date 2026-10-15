@@ -1697,4 +1697,7 @@ class AppLocalizationsWo extends AppLocalizations {
   String notesSaved(String date) {
     return 'Denc nañu ko: $date';
   }
+
+  @override
+  String get peersTitle => 'Kompañi yu ko niru';
 }
