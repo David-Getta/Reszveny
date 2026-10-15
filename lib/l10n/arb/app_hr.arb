@@ -535,5 +535,6 @@
   "glossDividendYield": "Godišnja dividenda ÷ cijena dionice: novčani prihod koji biste dobivali godišnje, kao postotak onoga što platite.",
   "glossDividendPerShare": "Dividenda isplaćena na jednu dionicu u zadnjih godinu dana.",
   "glossPayoutRatio": "Udio dobiti isplaćen kao dividenda. Iznad 100% tvrtka isplaćuje više nego što zarađuje, što rijetko dugo traje.",
-  "glossTitle": "Što to znači?"
+  "glossTitle": "Što to znači?",
+  "watchNewsTitle": "Vijesti o vašim dionicama"
 }

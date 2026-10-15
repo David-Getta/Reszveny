@@ -1975,4 +1975,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get glossTitle => 'Nghĩa là gì?';
+
+  @override
+  String get watchNewsTitle => 'Tin tức về cổ phiếu của bạn';
 }

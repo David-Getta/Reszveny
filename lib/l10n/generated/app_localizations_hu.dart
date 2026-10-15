@@ -1985,4 +1985,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get glossTitle => 'Mit jelent?';
+
+  @override
+  String get watchNewsTitle => 'Hírek a részvényeidről';
 }

@@ -1986,4 +1986,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ano ang ibig sabihin?';
+
+  @override
+  String get watchNewsTitle => 'Balita sa iyong mga stock';
 }

@@ -1999,4 +1999,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Што значи ова?';
+
+  @override
+  String get watchNewsTitle => 'Вести за вашите акции';
 }

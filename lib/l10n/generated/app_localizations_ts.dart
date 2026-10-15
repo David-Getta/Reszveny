@@ -1991,4 +1991,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get glossTitle => 'Swi vula yini?';
+
+  @override
+  String get watchNewsTitle => 'Mahungu ya swixere swa wena';
 }

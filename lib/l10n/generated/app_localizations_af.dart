@@ -1984,4 +1984,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get glossTitle => 'Wat beteken dit?';
+
+  @override
+  String get watchNewsTitle => 'Nuus oor jou aandele';
 }

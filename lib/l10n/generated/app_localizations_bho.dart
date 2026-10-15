@@ -1976,4 +1976,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get glossTitle => 'एकर मतलब का बा?';
+
+  @override
+  String get watchNewsTitle => 'रउरा शेयरन के खबर';
 }

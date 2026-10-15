@@ -1975,4 +1975,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ko ɗum firi?';
+
+  @override
+  String get watchNewsTitle => 'Kabaruuji aksiyoŋ maa';
 }

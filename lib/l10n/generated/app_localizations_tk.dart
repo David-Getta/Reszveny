@@ -1979,4 +1979,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bu näme aňladýar?';
+
+  @override
+  String get watchNewsTitle => 'Paýnamalaryňyz barada habarlar';
 }

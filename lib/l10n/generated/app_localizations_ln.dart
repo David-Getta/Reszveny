@@ -1990,4 +1990,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get glossTitle => 'Elakisi nini?';
+
+  @override
+  String get watchNewsTitle => 'Nsango ya ba action na yo';
 }

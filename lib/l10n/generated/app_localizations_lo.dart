@@ -1957,4 +1957,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get glossTitle => 'ໝາຍຄວາມວ່າແນວໃດ?';
+
+  @override
+  String get watchNewsTitle => 'ຂ່າວຮຸ້ນຂອງທ່ານ';
 }

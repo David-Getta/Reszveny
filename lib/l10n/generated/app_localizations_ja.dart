@@ -1911,4 +1911,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get glossTitle => 'どういう意味？';
+
+  @override
+  String get watchNewsTitle => 'マイ銘柄のニュース';
 }

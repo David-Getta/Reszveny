@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividendo anual ÷ preço da ação: o rendimento em dinheiro que receberia por ano, em percentagem do que paga.",
   "glossDividendPerShare": "O dividendo pago por uma ação no último ano.",
   "glossPayoutRatio": "A parte do lucro distribuída como dividendos. Acima de 100%, a empresa paga mais do que ganha, o que raramente dura.",
-  "glossTitle": "O que significa?"
+  "glossTitle": "O que significa?",
+  "watchNewsTitle": "Notícias das suas ações"
 }

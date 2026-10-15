@@ -535,5 +535,6 @@
   "glossDividendYield": "Gada dividende ÷ akcijas cena: naudas ienākumi, ko saņemtu katru gadu, procentos no samaksātā.",
   "glossDividendPerShare": "Dividende, kas pēdējā gadā izmaksāta par vienu akciju.",
   "glossPayoutRatio": "Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.",
-  "glossTitle": "Ko tas nozīmē?"
+  "glossTitle": "Ko tas nozīmē?",
+  "watchNewsTitle": "Ziņas par jūsu akcijām"
 }

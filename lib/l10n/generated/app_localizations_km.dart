@@ -1963,4 +1963,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get glossTitle => 'តើវាមានន័យដូចម្តេច?';
+
+  @override
+  String get watchNewsTitle => 'ព័ត៌មានអំពីភាគហ៊ុនរបស់អ្នក';
 }

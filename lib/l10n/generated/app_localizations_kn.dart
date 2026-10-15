@@ -1987,4 +1987,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get glossTitle => 'ಇದರ ಅರ್ಥವೇನು?';
+
+  @override
+  String get watchNewsTitle => 'ನಿಮ್ಮ ಷೇರುಗಳ ಸುದ್ದಿ';
 }

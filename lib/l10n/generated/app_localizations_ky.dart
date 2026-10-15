@@ -1983,4 +1983,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get glossTitle => 'Бул эмнени билдирет?';
+
+  @override
+  String get watchNewsTitle => 'Акцияларыңыз боюнча жаңылыктар';
 }

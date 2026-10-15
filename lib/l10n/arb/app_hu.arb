@@ -535,5 +535,6 @@
   "glossDividendYield": "Éves osztalék ÷ árfolyam: évente mennyi készpénzt kapnál a befizetett összeg százalékában.",
   "glossDividendPerShare": "Az elmúlt évben egy részvényre kifizetett osztalék.",
   "glossPayoutRatio": "A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.",
-  "glossTitle": "Mit jelent?"
+  "glossTitle": "Mit jelent?",
+  "watchNewsTitle": "Hírek a részvényeidről"
 }

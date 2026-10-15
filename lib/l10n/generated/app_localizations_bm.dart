@@ -1977,4 +1977,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get glossTitle => 'O kɔrɔ ye mun ye?';
+
+  @override
+  String get watchNewsTitle => 'I ka aksiyɔnw kibaruyaw';
 }

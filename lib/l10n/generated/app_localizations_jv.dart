@@ -1981,4 +1981,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get glossTitle => 'Apa tegese?';
+
+  @override
+  String get watchNewsTitle => 'Warta saham sampeyan';
 }

@@ -1986,4 +1986,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get glossTitle => 'O que significa?';
+
+  @override
+  String get watchNewsTitle => 'Notícias das suas ações';
 }

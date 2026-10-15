@@ -1991,4 +1991,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ima ninan?';
+
+  @override
+  String get watchNewsTitle => 'Accionniykikunamanta willakuykuna';
 }

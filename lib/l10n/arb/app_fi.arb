@@ -535,5 +535,6 @@
   "glossDividendYield": "Vuotuinen osinko ÷ osakkeen hinta: käteistulo, jonka saisit vuodessa, prosentteina maksamastasi summasta.",
   "glossDividendPerShare": "Yhdelle osakkeelle viimeisen vuoden aikana maksettu osinko.",
   "glossPayoutRatio": "Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.",
-  "glossTitle": "Mitä se tarkoittaa?"
+  "glossTitle": "Mitä se tarkoittaa?",
+  "watchNewsTitle": "Uutisia osakkeistasi"
 }

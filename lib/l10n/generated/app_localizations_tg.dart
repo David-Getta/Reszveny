@@ -1982,4 +1982,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ин чӣ маъно дорад?';
+
+  @override
+  String get watchNewsTitle => 'Хабарҳо дар бораи саҳмияҳои шумо';
 }

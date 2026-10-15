@@ -2035,4 +2035,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Čo to znamená?';
+
+  @override
+  String get watchNewsTitle => 'Správy o vašich akciách';
 }

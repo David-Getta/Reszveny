@@ -1967,4 +1967,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get glossTitle => 'A rat n yeel bõe?';
+
+  @override
+  String get watchNewsTitle => 'Kibay f aksiõ-rã wɛɛngẽ';
 }

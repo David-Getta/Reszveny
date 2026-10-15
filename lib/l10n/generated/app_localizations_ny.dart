@@ -1986,4 +1986,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get glossTitle => 'Zikutanthauza chiyani?';
+
+  @override
+  String get watchNewsTitle => 'Nkhani za masheya anu';
 }

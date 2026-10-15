@@ -1979,4 +1979,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ɛkyerɛ dɛn?';
+
+  @override
+  String get watchNewsTitle => 'Kaseɛbɔ fa wo nkyɛfa ho';
 }

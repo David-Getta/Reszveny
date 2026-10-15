@@ -1973,4 +1973,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get glossTitle => 'ဘာကို ဆိုလိုသလဲ?';
+
+  @override
+  String get watchNewsTitle => 'သင့်ရှယ်ယာများ၏ သတင်း';
 }

@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividendi vjetor ÷ çmimi i aksionit: të ardhurat në para që do të merrnit çdo vit, si përqindje e shumës që paguani.",
   "glossDividendPerShare": "Dividendi i paguar për një aksion gjatë vitit të fundit.",
   "glossPayoutRatio": "Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.",
-  "glossTitle": "Çfarë do të thotë?"
+  "glossTitle": "Çfarë do të thotë?",
+  "watchNewsTitle": "Lajme për aksionet tuaja"
 }

@@ -1978,4 +1978,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get glossTitle => 'این یعنی چه؟';
+
+  @override
+  String get watchNewsTitle => 'اخبار سهام شما';
 }

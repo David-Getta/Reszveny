@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividende annuel ÷ cours de l'action : le revenu en espèces que vous toucheriez chaque année, en pourcentage de ce que vous payez.",
   "glossDividendPerShare": "Le dividende versé pour une action au cours de la dernière année.",
   "glossPayoutRatio": "La part du bénéfice versée en dividendes. Au-delà de 100 %, l'entreprise verse plus qu'elle ne gagne, ce qui dure rarement.",
-  "glossTitle": "Qu'est-ce que cela signifie ?"
+  "glossTitle": "Qu'est-ce que cela signifie ?",
+  "watchNewsTitle": "Actualités de vos actions"
 }

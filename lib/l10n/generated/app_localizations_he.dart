@@ -1974,4 +1974,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get glossTitle => 'מה זה אומר?';
+
+  @override
+  String get watchNewsTitle => 'חדשות על המניות שלך';
 }

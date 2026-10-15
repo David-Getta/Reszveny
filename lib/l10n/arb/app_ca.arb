@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividend anual ÷ preu de l'acció: els ingressos en efectiu que obtindries cada any, en percentatge del que pagues.",
   "glossDividendPerShare": "El dividend pagat per una acció durant l'últim any.",
   "glossPayoutRatio": "La part del benefici que es reparteix com a dividends. Per sobre del 100% l'empresa paga més del que guanya, cosa que rarament dura.",
-  "glossTitle": "Què vol dir?"
+  "glossTitle": "Què vol dir?",
+  "watchNewsTitle": "Notícies de les teves accions"
 }

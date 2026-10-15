@@ -2012,4 +2012,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ce înseamnă?';
+
+  @override
+  String get watchNewsTitle => 'Știri despre acțiunile tale';
 }

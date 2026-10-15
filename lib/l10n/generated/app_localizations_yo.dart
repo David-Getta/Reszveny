@@ -1979,4 +1979,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get glossTitle => 'Kí ló túmọ̀ sí?';
+
+  @override
+  String get watchNewsTitle => 'Ìròyìn nípa ìpín rẹ';
 }

@@ -1988,4 +1988,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get glossTitle => 'Kuthetha ntoni?';
+
+  @override
+  String get watchNewsTitle => 'Iindaba ngezabelo zakho';
 }

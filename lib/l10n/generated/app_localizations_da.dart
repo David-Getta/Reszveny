@@ -1978,4 +1978,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get glossTitle => 'Hvad betyder det?';
+
+  @override
+  String get watchNewsTitle => 'Nyheder om dine aktier';
 }

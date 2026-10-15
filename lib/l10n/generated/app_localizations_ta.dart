@@ -1989,4 +1989,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get glossTitle => 'இதன் பொருள் என்ன?';
+
+  @override
+  String get watchNewsTitle => 'உங்கள் பங்குகள் பற்றிய செய்திகள்';
 }

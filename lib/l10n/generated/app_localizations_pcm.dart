@@ -1980,4 +1980,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get glossTitle => 'Wetin e mean?';
+
+  @override
+  String get watchNewsTitle => 'Tori for your stocks';
 }

@@ -3552,6 +3552,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'What does it mean?'**
   String get glossTitle;
+
+  /// Home screen section and page title: latest news about the stocks in the user's portfolio and favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'News on your stocks'**
+  String get watchNewsTitle;
 }
 
 class _AppLocalizationsDelegate

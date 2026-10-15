@@ -1974,4 +1974,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get glossTitle => 'एकर की अर्थ अछि?';
+
+  @override
+  String get watchNewsTitle => 'अहाँक शेयरक समाचार';
 }

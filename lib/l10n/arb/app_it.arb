@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividendo annuo ÷ prezzo dell'azione: l'entrata in contanti che riceveresti ogni anno, in percentuale di quanto paghi.",
   "glossDividendPerShare": "Il dividendo pagato su una singola azione nell'ultimo anno.",
   "glossPayoutRatio": "La quota dell'utile distribuita come dividendi. Sopra il 100% l'azienda paga più di quanto guadagna, cosa che raramente dura.",
-  "glossTitle": "Che cosa significa?"
+  "glossTitle": "Che cosa significa?",
+  "watchNewsTitle": "Notizie sui tuoi titoli"
 }

@@ -535,5 +535,6 @@
   "glossDividendYield": "Yıllık temettü ÷ hisse fiyatı: ödediğiniz tutarın yüzdesi olarak yılda alacağınız nakit gelir.",
   "glossDividendPerShare": "Son bir yılda bir hisse için ödenen temettü.",
   "glossPayoutRatio": "Kârın temettü olarak dağıtılan payı. %100'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.",
-  "glossTitle": "Ne anlama geliyor?"
+  "glossTitle": "Ne anlama geliyor?",
+  "watchNewsTitle": "Hisselerinizle ilgili haberler"
 }

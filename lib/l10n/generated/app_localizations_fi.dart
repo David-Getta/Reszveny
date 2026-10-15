@@ -1982,4 +1982,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get glossTitle => 'Mitä se tarkoittaa?';
+
+  @override
+  String get watchNewsTitle => 'Uutisia osakkeistasi';
 }

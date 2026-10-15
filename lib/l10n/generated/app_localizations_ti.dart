@@ -1945,4 +1945,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get glossTitle => 'እንታይ ማለት እዩ?';
+
+  @override
+  String get watchNewsTitle => 'ዜና ብዛዕባ ኣክሲዮናትኩም';
 }

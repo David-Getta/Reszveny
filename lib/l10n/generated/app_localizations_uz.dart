@@ -1983,4 +1983,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bu nimani anglatadi?';
+
+  @override
+  String get watchNewsTitle => 'Aksiyalaringiz yangiliklari';
 }

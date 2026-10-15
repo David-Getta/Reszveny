@@ -1987,4 +1987,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bisobanura iki?';
+
+  @override
+  String get watchNewsTitle => 'Amakuru ku migabane yawe';
 }

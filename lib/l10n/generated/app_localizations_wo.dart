@@ -1975,4 +1975,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get glossTitle => 'Lan la tekki?';
+
+  @override
+  String get watchNewsTitle => 'Xibaar yi ci say aksiyoŋ';
 }

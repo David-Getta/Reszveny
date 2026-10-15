@@ -1951,4 +1951,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get glossTitle => 'ምን ማለት ነው?';
+
+  @override
+  String get watchNewsTitle => 'ስለ አክሲዮኖችዎ ዜና';
 }

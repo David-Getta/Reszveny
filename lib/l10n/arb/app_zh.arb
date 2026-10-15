@@ -535,5 +535,6 @@
   "glossDividendYield": "年度股息 ÷ 股价：您每年可获得的现金收入，占您所付价格的百分比。",
   "glossDividendPerShare": "过去一年每股派发的股息。",
   "glossPayoutRatio": "利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。",
-  "glossTitle": "这是什么意思？"
+  "glossTitle": "这是什么意思？",
+  "watchNewsTitle": "你的股票新闻"
 }

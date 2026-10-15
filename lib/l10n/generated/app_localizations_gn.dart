@@ -1986,4 +1986,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get glossTitle => '¿Mbaʼe heʼise?';
+
+  @override
+  String get watchNewsTitle => 'Marandu nde acción-kuéra rehegua';
 }

@@ -1989,4 +1989,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get glossTitle => 'Què vol dir?';
+
+  @override
+  String get watchNewsTitle => 'Notícies de les teves accions';
 }

@@ -1980,4 +1980,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get glossTitle => 'Hva betyr det?';
+
+  @override
+  String get watchNewsTitle => 'Nyheter om aksjene dine';
 }

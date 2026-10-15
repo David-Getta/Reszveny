@@ -1987,4 +1987,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get glossTitle => 'Kusho ukuthini?';
+
+  @override
+  String get watchNewsTitle => 'Izindaba ngamasheya akho';
 }

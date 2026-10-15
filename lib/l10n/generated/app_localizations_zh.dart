@@ -1882,6 +1882,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get glossTitle => '这是什么意思？';
+
+  @override
+  String get watchNewsTitle => '你的股票新闻';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3761,4 +3764,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get glossTitle => '這是甚麼意思？';
+
+  @override
+  String get watchNewsTitle => '你的股票新聞';
 }

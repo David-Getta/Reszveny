@@ -1980,4 +1980,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get glossTitle => 'Nĩ kuuga atĩa?';
+
+  @override
+  String get watchNewsTitle => 'Mohoro ma hisa ciaku';
 }

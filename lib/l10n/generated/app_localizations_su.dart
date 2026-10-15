@@ -1982,4 +1982,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get glossTitle => 'Naon hartina?';
+
+  @override
+  String get watchNewsTitle => 'Warta saham anjeun';
 }

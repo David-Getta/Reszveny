@@ -2003,4 +2003,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get glossTitle => 'Que significa?';
+
+  @override
+  String get watchNewsTitle => 'Novas das túas accións';
 }

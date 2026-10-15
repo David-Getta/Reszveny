@@ -1987,4 +1987,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get glossTitle => 'Maal jechuudha?';
+
+  @override
+  String get watchNewsTitle => 'Oduu aksiyoonota keessanii';
 }

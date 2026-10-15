@@ -1981,4 +1981,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get glossTitle => 'Какво означава?';
+
+  @override
+  String get watchNewsTitle => 'Новини за вашите акции';
 }

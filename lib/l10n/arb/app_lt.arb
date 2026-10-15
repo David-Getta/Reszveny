@@ -535,5 +535,6 @@
   "glossDividendYield": "Metinis dividendas ÷ akcijos kaina: pinigų pajamos, kurias gautumėte kasmet, procentais nuo to, ką sumokate.",
   "glossDividendPerShare": "Dividendas, išmokėtas už vieną akciją per pastaruosius metus.",
   "glossPayoutRatio": "Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.",
-  "glossTitle": "Ką tai reiškia?"
+  "glossTitle": "Ką tai reiškia?",
+  "watchNewsTitle": "Naujienos apie jūsų akcijas"
 }

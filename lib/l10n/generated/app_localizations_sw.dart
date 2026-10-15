@@ -1981,4 +1981,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get glossTitle => 'Inamaanisha nini?';
+
+  @override
+  String get watchNewsTitle => 'Habari za hisa zako';
 }

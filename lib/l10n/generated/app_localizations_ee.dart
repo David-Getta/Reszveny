@@ -1984,4 +1984,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get glossTitle => 'Nukae wòfia?';
+
+  @override
+  String get watchNewsTitle => 'Nyadzɔdzɔwo tso wò akpawo ŋu';
 }

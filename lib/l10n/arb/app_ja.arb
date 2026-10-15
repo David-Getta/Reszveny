@@ -535,5 +535,6 @@
   "glossDividendYield": "年間配当 ÷ 株価：払った金額に対して毎年受け取れる現金収入の割合。",
   "glossDividendPerShare": "過去1年間に1株あたりに支払われた配当。",
   "glossPayoutRatio": "利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。",
-  "glossTitle": "どういう意味？"
+  "glossTitle": "どういう意味？",
+  "watchNewsTitle": "マイ銘柄のニュース"
 }

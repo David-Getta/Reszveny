@@ -535,5 +535,6 @@
   "glossDividendYield": "Jährliche Dividende ÷ Aktienkurs: das Bareinkommen, das du pro Jahr bekämst, in Prozent dessen, was du zahlst.",
   "glossDividendPerShare": "Die Dividende, die im letzten Jahr auf eine Aktie gezahlt wurde.",
   "glossPayoutRatio": "Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.",
-  "glossTitle": "Was bedeutet das?"
+  "glossTitle": "Was bedeutet das?",
+  "watchNewsTitle": "Nachrichten zu deinen Aktien"
 }

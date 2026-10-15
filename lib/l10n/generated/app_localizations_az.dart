@@ -1981,4 +1981,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bu nə deməkdir?';
+
+  @override
+  String get watchNewsTitle => 'Səhmləriniz üzrə xəbərlər';
 }

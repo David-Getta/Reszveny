@@ -1988,4 +1988,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get glossTitle => 'ഇതിന്റെ അർത്ഥം എന്താണ്?';
+
+  @override
+  String get watchNewsTitle => 'നിങ്ങളുടെ ഓഹരികളുടെ വാർത്തകൾ';
 }

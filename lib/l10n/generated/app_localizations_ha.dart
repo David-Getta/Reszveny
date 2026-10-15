@@ -1985,4 +1985,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get glossTitle => 'Me yake nufi?';
+
+  @override
+  String get watchNewsTitle => 'Labarai kan hannun jarinka';
 }

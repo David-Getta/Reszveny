@@ -2021,4 +2021,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get glossTitle => 'ماذا يعني ذلك؟';
+
+  @override
+  String get watchNewsTitle => 'أخبار أسهمك';
 }

@@ -1979,4 +1979,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get glossTitle => 'D acu i d-yebɣa ad yini?';
+
+  @override
+  String get watchNewsTitle => 'Isallen ɣef yiaksyunen-ik';
 }

@@ -1992,4 +1992,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ano ang buot silingon?';
+
+  @override
+  String get watchNewsTitle => 'Balita sa imo mga stock';
 }

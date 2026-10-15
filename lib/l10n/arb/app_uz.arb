@@ -535,5 +535,6 @@
   "glossDividendYield": "Yillik dividend ÷ aksiya narxi: toʻlagan summangizga nisbatan foizda yiliga oladigan pul daromadingiz.",
   "glossDividendPerShare": "Oxirgi yilda bir aksiyaga toʻlangan dividend.",
   "glossPayoutRatio": "Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.",
-  "glossTitle": "Bu nimani anglatadi?"
+  "glossTitle": "Bu nimani anglatadi?",
+  "watchNewsTitle": "Aksiyalaringiz yangiliklari"
 }

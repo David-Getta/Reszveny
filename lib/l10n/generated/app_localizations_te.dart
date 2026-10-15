@@ -1986,4 +1986,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get glossTitle => 'దీని అర్థం ఏమిటి?';
+
+  @override
+  String get watchNewsTitle => 'మీ స్టాక్‌ల వార్తలు';
 }

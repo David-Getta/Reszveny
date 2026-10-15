@@ -1990,4 +1990,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get glossTitle => 'Qu\'est-ce que cela signifie ?';
+
+  @override
+  String get watchNewsTitle => 'Actualités de vos actions';
 }

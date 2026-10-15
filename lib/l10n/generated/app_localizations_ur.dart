@@ -1980,4 +1980,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get glossTitle => 'اس کا کیا مطلب ہے؟';
+
+  @override
+  String get watchNewsTitle => 'آپ کے شیئرز کی خبریں';
 }

@@ -1987,4 +1987,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get glossTitle => 'Çfarë do të thotë?';
+
+  @override
+  String get watchNewsTitle => 'Lajme për aksionet tuaja';
 }

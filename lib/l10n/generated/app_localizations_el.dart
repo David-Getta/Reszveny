@@ -1988,4 +1988,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get glossTitle => 'Τι σημαίνει;';
+
+  @override
+  String get watchNewsTitle => 'Ειδήσεις για τις μετοχές σας';
 }

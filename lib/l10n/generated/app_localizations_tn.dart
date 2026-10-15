@@ -1990,4 +1990,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get glossTitle => 'Go raya eng?';
+
+  @override
+  String get watchNewsTitle => 'Dikgang ka dishere tsa gago';
 }

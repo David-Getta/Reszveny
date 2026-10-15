@@ -1982,4 +1982,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get glossTitle => 'რას ნიშნავს?';
+
+  @override
+  String get watchNewsTitle => 'სიახლეები თქვენს აქციებზე';
 }

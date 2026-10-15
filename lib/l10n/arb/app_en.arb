@@ -1482,5 +1482,9 @@
   "glossTitle": "What does it mean?",
   "@glossTitle": {
     "description": "Dialog title of a metric explanation."
+  },
+  "watchNewsTitle": "News on your stocks",
+  "@watchNewsTitle": {
+    "description": "Home screen section and page title: latest news about the stocks in the user's portfolio and favorites."
   }
 }

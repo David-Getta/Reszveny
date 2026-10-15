@@ -1987,4 +1987,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get glossTitle => 'Yo ke tendula nki?';
+
+  @override
+  String get watchNewsTitle => 'Nsangu ya ba action na nge';
 }

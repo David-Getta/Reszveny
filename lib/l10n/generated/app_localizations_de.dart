@@ -1991,4 +1991,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get glossTitle => 'Was bedeutet das?';
+
+  @override
+  String get watchNewsTitle => 'Nachrichten zu deinen Aktien';
 }

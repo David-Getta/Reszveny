@@ -35,6 +35,7 @@ import 'features/market_data/caching_market_data_provider.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
+import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/portfolio_store.dart';
@@ -88,6 +89,7 @@ class AppServices {
       portfolio: this.portfolio,
       reports: reports,
     );
+    news = WatchNewsService(marketData: marketData, preferences: preferences, portfolio: this.portfolio);
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
@@ -249,6 +251,9 @@ class AppServices {
 
   /// Közelgő gyorsjelentések és az elemzések eseményei.
   late final EventsService events;
+
+  /// A portfólió és a kedvencek friss hírei (kezdőképernyő).
+  late final WatchNewsService news;
 
   /// Árfolyam-riasztások és a figyelőjük.
   final AlertStore alerts;

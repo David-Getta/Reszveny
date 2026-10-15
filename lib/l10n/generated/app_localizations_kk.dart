@@ -1981,4 +1981,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Бұл нені білдіреді?';
+
+  @override
+  String get watchNewsTitle => 'Акцияларыңыз туралы жаңалықтар';
 }

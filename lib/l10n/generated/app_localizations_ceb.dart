@@ -1989,4 +1989,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get glossTitle => 'Unsay buot ipasabot?';
+
+  @override
+  String get watchNewsTitle => 'Balita sa imong mga stock';
 }

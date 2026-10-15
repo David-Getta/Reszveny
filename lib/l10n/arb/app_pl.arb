@@ -535,5 +535,6 @@
   "glossDividendYield": "Roczna dywidenda ÷ cena akcji: gotówka, którą dostajesz co roku, jako procent tego, co płacisz.",
   "glossDividendPerShare": "Dywidenda wypłacona na jedną akcję w ostatnim roku.",
   "glossPayoutRatio": "Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.",
-  "glossTitle": "Co to znaczy?"
+  "glossTitle": "Co to znaczy?",
+  "watchNewsTitle": "Wiadomości o Twoich akcjach"
 }

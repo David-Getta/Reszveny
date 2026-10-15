@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../news/watch_news_view.dart';
 import '../events/events_view.dart';
 import '../settings/telemetry_consent.dart';
 import '../../widgets/hotkey_hint.dart';
@@ -360,6 +361,7 @@ class _HomePageState extends State<HomePage> {
                     // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
                     if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
                     UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
+                    WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
                     MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
                     const TelemetryConsentCard(),
                     if (services.config.isDemoMode) ...[

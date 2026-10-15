@@ -1981,4 +1981,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get glossTitle => 'مانای چییە؟';
+
+  @override
+  String get watchNewsTitle => 'هەواڵی پشکەکانت';
 }

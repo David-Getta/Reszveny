@@ -1971,4 +1971,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get glossTitle => 'འདིའི་དོན་ག་རེ་རེད།';
+
+  @override
+  String get watchNewsTitle => 'ཁྱེད་ཀྱི་ཧུར་ཁག་གི་གསར་འགྱུར';
 }

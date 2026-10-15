@@ -1972,4 +1972,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get glossTitle => 'ان جو مطلب ڇا آهي؟';
+
+  @override
+  String get watchNewsTitle => 'توهان جي شيئرن جون خبرون';
 }

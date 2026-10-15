@@ -1972,4 +1972,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get glossTitle => 'دا څه مانا لري؟';
+
+  @override
+  String get watchNewsTitle => 'ستاسو د ونډو خبرونه';
 }

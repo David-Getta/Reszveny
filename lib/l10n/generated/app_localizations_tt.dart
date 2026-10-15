@@ -1977,4 +1977,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get glossTitle => 'Бу нәрсә аңлата?';
+
+  @override
+  String get watchNewsTitle => 'Акцияләрегез турында яңалыклар';
 }

@@ -1981,4 +1981,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get glossTitle => 'Vad betyder det?';
+
+  @override
+  String get watchNewsTitle => 'Nyheter om dina aktier';
 }

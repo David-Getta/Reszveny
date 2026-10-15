@@ -2038,4 +2038,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get glossTitle => 'Co to znaczy?';
+
+  @override
+  String get watchNewsTitle => 'Wiadomości o Twoich akcjach';
 }

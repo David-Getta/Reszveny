@@ -535,5 +535,6 @@
   "glossDividendYield": "Letna dividenda ÷ cena delnice: denarni prihodek, ki bi ga prejeli na leto, v odstotkih od plačanega zneska.",
   "glossDividendPerShare": "Dividenda, izplačana za eno delnico v zadnjem letu.",
   "glossPayoutRatio": "Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.",
-  "glossTitle": "Kaj to pomeni?"
+  "glossTitle": "Kaj to pomeni?",
+  "watchNewsTitle": "Novice o vaših delnicah"
 }

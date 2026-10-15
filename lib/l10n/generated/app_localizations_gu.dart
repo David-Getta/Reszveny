@@ -1976,4 +1976,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get glossTitle => 'આનો અર્થ શું છે?';
+
+  @override
+  String get watchNewsTitle => 'તમારા શેરના સમાચાર';
 }

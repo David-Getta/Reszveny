@@ -535,5 +535,6 @@
   "glossDividendYield": "İllik dividend ÷ səhm qiyməti: ödədiyiniz məbləğin faizi kimi ildə alacağınız pul gəliri.",
   "glossDividendPerShare": "Son bir ildə bir səhmə ödənilən dividend.",
   "glossPayoutRatio": "Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.",
-  "glossTitle": "Bu nə deməkdir?"
+  "glossTitle": "Bu nə deməkdir?",
+  "watchNewsTitle": "Səhmləriniz üzrə xəbərlər"
 }

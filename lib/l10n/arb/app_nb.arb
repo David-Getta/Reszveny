@@ -535,5 +535,6 @@
   "glossDividendYield": "Årlig utbytte ÷ aksjekurs: kontantinntekten du får per år, i prosent av det du betaler.",
   "glossDividendPerShare": "Utbyttet som er utbetalt per aksje det siste året.",
   "glossPayoutRatio": "Andelen av overskuddet som deles ut som utbytte. Over 100 % betaler selskapet ut mer enn det tjener, og det varer sjelden.",
-  "glossTitle": "Hva betyr det?"
+  "glossTitle": "Hva betyr det?",
+  "watchNewsTitle": "Nyheter om aksjene dine"
 }

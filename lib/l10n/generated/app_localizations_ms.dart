@@ -1984,4 +1984,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get glossTitle => 'Apakah maksudnya?';
+
+  @override
+  String get watchNewsTitle => 'Berita saham anda';
 }

@@ -1975,4 +1975,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get glossTitle => 'Gịnị ka ọ pụtara?';
+
+  @override
+  String get watchNewsTitle => 'Akụkọ gbasara stock gị';
 }

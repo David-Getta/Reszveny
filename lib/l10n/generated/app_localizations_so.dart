@@ -1987,4 +1987,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get glossTitle => 'Maxay ka dhigan tahay?';
+
+  @override
+  String get watchNewsTitle => 'Wararka saamiyadaada';
 }

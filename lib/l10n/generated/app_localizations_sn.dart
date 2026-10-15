@@ -1985,4 +1985,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get glossTitle => 'Zvinorevei?';
+
+  @override
+  String get watchNewsTitle => 'Nhau dzesheya dzako';
 }

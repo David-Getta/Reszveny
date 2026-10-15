@@ -2018,4 +2018,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get glossTitle => 'Što to znači?';
+
+  @override
+  String get watchNewsTitle => 'Vijesti o vašim dionicama';
 }

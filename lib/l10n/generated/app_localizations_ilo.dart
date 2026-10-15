@@ -1995,4 +1995,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ania ti kayatna a sawen?';
+
+  @override
+  String get watchNewsTitle => 'Damag maipapan kadagiti stock-mo';
 }

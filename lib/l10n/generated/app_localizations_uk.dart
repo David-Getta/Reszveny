@@ -2034,4 +2034,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get glossTitle => 'Що це означає?';
+
+  @override
+  String get watchNewsTitle => 'Новини про ваші акції';
 }

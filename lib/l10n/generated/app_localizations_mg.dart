@@ -1993,4 +1993,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get glossTitle => 'Inona no dikany?';
+
+  @override
+  String get watchNewsTitle => 'Vaovao momba ny aksionanao';
 }

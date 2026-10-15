@@ -535,5 +535,6 @@
   "glossDividendYield": "Dividend anual ÷ prețul acțiunii: venitul în numerar primit pe an, ca procent din cât plătești.",
   "glossDividendPerShare": "Dividendul plătit pe o acțiune în ultimul an.",
   "glossPayoutRatio": "Partea din profit plătită ca dividende. Peste 100%, compania plătește mai mult decât câștigă, ceea ce rareori durează.",
-  "glossTitle": "Ce înseamnă?"
+  "glossTitle": "Ce înseamnă?",
+  "watchNewsTitle": "Știri despre acțiunile tale"
 }

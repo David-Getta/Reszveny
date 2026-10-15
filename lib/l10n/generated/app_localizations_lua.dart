@@ -1985,4 +1985,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bidi bumvuija tshinyi?';
+
+  @override
+  String get watchNewsTitle => 'Lumu lua ba action bebe';
 }

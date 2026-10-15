@@ -1982,4 +1982,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ev tê çi wateyê?';
+
+  @override
+  String get watchNewsTitle => 'Nûçeyên pişkên te';
 }

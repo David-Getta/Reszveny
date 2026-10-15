@@ -535,5 +535,6 @@
   "glossDividendYield": "Ročná dividenda ÷ cena akcie: hotovostný príjem za rok v percentách z toho, čo zaplatíte.",
   "glossDividendPerShare": "Dividenda vyplatená na jednu akciu za posledný rok.",
   "glossPayoutRatio": "Podiel zisku vyplatený ako dividendy. Nad 100 % firma vypláca viac, než zarába, a to málokedy vydrží.",
-  "glossTitle": "Čo to znamená?"
+  "glossTitle": "Čo to znamená?",
+  "watchNewsTitle": "Správy o vašich akciách"
 }

@@ -1954,4 +1954,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get glossTitle => 'หมายความว่าอะไร';
+
+  @override
+  String get watchNewsTitle => 'ข่าวหุ้นของคุณ';
 }

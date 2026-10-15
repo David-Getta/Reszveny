@@ -1976,4 +1976,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get glossTitle => 'Apa artinya?';
+
+  @override
+  String get watchNewsTitle => 'Berita saham Anda';
 }

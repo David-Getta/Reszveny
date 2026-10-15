@@ -2019,4 +2019,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ko tas nozīmē?';
+
+  @override
+  String get watchNewsTitle => 'Ziņas par jūsu akcijām';
 }

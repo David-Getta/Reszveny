@@ -446,21 +446,21 @@ class DemoMarketDataProvider extends MarketDataProvider {
     final now = DateTime.now();
     return [
       NewsItem(
-        headline: 'Demo: company reports quarterly results above expectations',
-        url: 'https://example.com/hir1',
-        publishedAt: now.subtract(const Duration(hours: 5)),
+        headline: 'Demo: $symbol reports quarterly results above expectations',
+        url: 'https://example.com/$symbol/hir1',
+        publishedAt: now.subtract(Duration(hours: 5 + symbol.length)),
         source: 'Demo Newswire',
         summary: 'This is a sample news item that only demonstrates the interface. It is not real information.',
       ),
       NewsItem(
-        headline: 'Demo: analysts raise price target',
-        url: 'https://example.com/hir2',
-        publishedAt: now.subtract(const Duration(days: 1, hours: 2)),
+        headline: 'Demo: analysts raise their $symbol price target',
+        url: 'https://example.com/$symbol/hir2',
+        publishedAt: now.subtract(Duration(days: 1, hours: 2 + symbol.length)),
         source: 'Demo Financial Daily',
       ),
       NewsItem(
-        headline: 'Demo: new product announcement expected next month',
-        url: 'https://example.com/hir3',
+        headline: 'Demo: $symbol product announcement expected next month',
+        url: 'https://example.com/$symbol/hir3',
         publishedAt: now.subtract(const Duration(days: 3)),
         source: 'Demo Tech Portal',
       ),

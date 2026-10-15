@@ -1988,4 +1988,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get glossTitle => 'Ի՞նչ է սա նշանակում';
+
+  @override
+  String get watchNewsTitle => 'Նորություններ ձեր բաժնետոմսերի մասին';
 }

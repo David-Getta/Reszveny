@@ -2031,4 +2031,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get glossTitle => 'Co to znamená?';
+
+  @override
+  String get watchNewsTitle => 'Zprávy o vašich akciích';
 }

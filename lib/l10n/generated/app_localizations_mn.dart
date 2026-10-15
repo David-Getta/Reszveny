@@ -1981,4 +1981,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get glossTitle => 'Энэ юу гэсэн үг вэ?';
+
+  @override
+  String get watchNewsTitle => 'Таны хувьцааны мэдээ';
 }

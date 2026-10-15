@@ -1918,4 +1918,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get glossTitle => '무슨 뜻인가요?';
+
+  @override
+  String get watchNewsTitle => '내 종목 뉴스';
 }

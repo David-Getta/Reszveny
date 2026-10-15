@@ -2034,4 +2034,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get glossTitle => 'Што гэта значыць?';
+
+  @override
+  String get watchNewsTitle => 'Навіны пра вашы акцыі';
 }

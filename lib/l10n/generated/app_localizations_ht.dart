@@ -1979,4 +1979,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get glossTitle => 'Kisa sa vle di?';
+
+  @override
+  String get watchNewsTitle => 'Nouvèl sou aksyon ou yo';
 }

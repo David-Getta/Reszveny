@@ -1986,4 +1986,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get glossTitle => 'Bisigura iki?';
+
+  @override
+  String get watchNewsTitle => 'Amakuru y\'imigabane yawe';
 }

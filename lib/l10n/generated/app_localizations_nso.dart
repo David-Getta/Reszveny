@@ -1992,4 +1992,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get glossTitle => 'Se bolela eng?';
+
+  @override
+  String get watchNewsTitle => 'Ditaba ka dišere tša gago';
 }

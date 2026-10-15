@@ -2017,4 +2017,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get glossTitle => 'Šta to znači?';
+
+  @override
+  String get watchNewsTitle => 'Vijesti o vašim dionicama';
 }
