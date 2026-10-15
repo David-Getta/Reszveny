@@ -1894,4 +1894,103 @@ class AppLocalizationsMg extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Tsy misy fifandraisana – aseho ny angona voatahiry farany ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Ny vidin\'ny orinasa manontolo eny an-tsena: vidin\'ny aksiona × isan\'ny aksiona.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Firy ny aksiona navoakan\'ny orinasa. Raha mitombo izany dia kely kokoa ny anjaran\'ny aksiona tsirairay; ny fividianana indray ny aksiona no mampihena azy.';
+
+  @override
+  String get glossPeTrailing =>
+      'Vidiny ÷ tombony isaky ny aksiona tamin\'ny 12 volana farany: firy taona amin\'ny tombony ankehitriny no aloanao. Ny ambany kokoa no mora kokoa, saingy matetika avo ny P/E an\'ireo orinasa mitombo haingana.';
+
+  @override
+  String get glossPeForward =>
+      'Toy ny P/E, saingy amin\'ny tombony andrasan\'ny mpandinika ho an\'ny 12 volana ho avy. Raha ambanin\'ny P/E (lasa) izy dia andrasana hitombo ny tombony.';
+
+  @override
+  String get glossPb =>
+      'Vidiny ÷ sanda ara-kaonty (fananana esorina ny trosa) isaky ny aksiona. Manodidina ny 1 dia midika fa omen\'ny tsena ny sandan\'izay ananany amin\'ny taratasy ny orinasa.';
+
+  @override
+  String get glossPs =>
+      'Sanda an-tsena ÷ vola miditra isan-taona. Mahasoa ho an\'ny orinasa mbola kely na tsy misy tombony; ampitahao ao anatin\'ny sehatra iray ihany.';
+
+  @override
+  String get glossEvToFcf =>
+      'Sandan\'ny orinasa miaraka amin\'ny trosa (EV) ÷ ny vola azony ao anatin\'ny herintaona aorian\'ny fampiasam-bola. Ny ambany kokoa dia midika fa mahazo vola bebe kokoa ianao amin\'ny vidiny.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ fitomboan\'ny tombony andrasana isan-taona (%). Manodidina ny 1 matetika no heverina ho ara-drariny; ampitahainy amin\'ny fitomboana ny P/E.';
+
+  @override
+  String get glossEps =>
+      'Tombony isaky ny aksiona tamin\'ny 12 volana farany. Ny EPS mitombo isan-taona dia iray amin\'ireo famantarana matanjaka indrindra ny orinasa salama.';
+
+  @override
+  String get glossBeta =>
+      'Hatraiza no mihetsika miaraka amin\'ny tsena ny aksiona: 1 = toy ny tsena, 1,5 = fiovaovana lehibe kokoa eo amin\'ny 50%, ambanin\'ny 1 = milamina kokoa.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ny varotra rehetra tamin\'ny 12 volana farany, alohan\'ny fandaniana rehetra.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Ny tombony sisa tavela aorian\'ny fandaniana, zanabola ary hetra rehetra tamin\'ny 12 volana farany.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ny ampahany amin\'ny vola miditra tavela aorian\'ny vidin\'ny vokatra mivantana. Ny taha avo matetika dia midika fahefana hamaritra ny vidiny.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ny ampahany amin\'ny vola miditra tavela aorian\'ny fampandehanana ny orinasa (karama, hofan-trano, varotra), alohan\'ny zanabola sy hetra.';
+
+  @override
+  String get glossNetMargin =>
+      'Ny ampahany amin\'ny vola miditra lasa tombony farany. 20% dia midika fa tombony ny 20 amin\'ny 100 rehetra amidy.';
+
+  @override
+  String get glossRoe =>
+      'Tombony amin\'ny renivola: tombony isan-taona ÷ renivolan\'ny tompony. Asehony ny fahaizan\'ny mpitantana mampiasa ny volan\'ny tompon\'aksiona; matanjaka raha mihoatra ny 15% eo ho eo.';
+
+  @override
+  String get glossRoa =>
+      'Tombony amin\'ny fananana: tombony isan-taona ÷ ny fananan\'ny orinasa rehetra. Ampitahao ao anatin\'ny sehatra iray ihany.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Trosa ÷ renivolan\'ny tompony. Ny avo kokoa dia midika vola nindramina bebe kokoa: risika lehibe kokoa rehefa miakatra ny zanabola na miadana ny asa.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Fananana fohy fotoana ÷ faktiora tokony haloa ao anatin\'ny herintaona. Mihoatra ny 1 dia midika fa afaka mandoa ny faktiorany akaiky ny orinasa.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hatraiza no nitomboan\'ny vola miditra raha oharina tamin\'ny herintaona.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hatraiza no nitomboan\'ny tombony isaky ny aksiona raha oharina tamin\'ny herintaona.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividenda isan-taona ÷ vidin\'ny aksiona: ny vola azonao isan-taona, amin\'ny isan-jaton\'izay aloanao.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Ny dividenda naloa isaky ny aksiona tamin\'ny herintaona farany.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ny ampahany amin\'ny tombony zaraina ho dividenda. Mihoatra ny 100% dia mandoa mihoatra noho izay azony ny orinasa, ary tsy maharitra matetika izany.';
+
+  @override
+  String get glossTitle => 'Inona no dikany?';
 }

@@ -1880,4 +1880,103 @@ class AppLocalizationsAk extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nkitahodi biara nni hɔ – yɛrekyerɛ data a yɛkoraa no akyire yi ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Sɛnea adwumakuw no nyinaa som bo wɔ dwa so: kyɛfa boɔ × nkyɛfa dodow.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Nkyɛfa dodow a adwumakuw no ayi. Sɛ ɛkɔ soro a, kyɛfa biara nya ɔfa ketewa; sɛ wɔsan tɔ bi a, ɛtew so.';
+
+  @override
+  String get glossPeTrailing =>
+      'Boɔ ÷ mfaso a kyɛfa biara nyae wɔ abosome 12 a atwam mu: mfe dodow a wotua mprempren mfaso no ho ka. Ɛba fam a, ɛyɛ mmerɛw, nanso adwumakuw a wɔnyin ntɛm taa wɔ P/E kɛse.';
+
+  @override
+  String get glossPeForward =>
+      'Te sɛ P/E, nanso ɛde mfaso a nhwehwɛmufo hwɛ kwan wɔ abosome 12 a ɛreba no di dwuma. Sɛ ɛwɔ P/E a atwam no ase a, ɛkyerɛ sɛ wɔhwɛ kwan sɛ mfaso bɛkɔ soro.';
+
+  @override
+  String get glossPb =>
+      'Boɔ ÷ akontaabu bo (agyapade yi ka) wɔ kyɛfa biara so. Sɛ ɛbɛn 1 a, ɛkyerɛ sɛ dwa no bu adwumakuw no sɛnea nneɛma a ɛwɔ no wɔ krataa so te.';
+
+  @override
+  String get glossPs =>
+      'Dwa so bo ÷ sika a ɛba mu afe biara. Ɛho wɔ mfaso ma adwumakuw a wonnya nnya mfaso pii; fa toto afoforo a wɔwɔ adwuma koro mu ho.';
+
+  @override
+  String get glossEvToFcf =>
+      'Adwumakuw no bo a ka ka ho (EV) ÷ sika a ɛnya afe mu wɔ ne sika a ɛde to dwuma akyi. Ɛba fam a, ɛkyerɛ sɛ wunya sika pii ma boɔ no.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ mfaso nkɔso a wɔhwɛ kwan afe biara (%). Sɛ ɛbɛn 1 a, nnipa pii bu no sɛ ɛfata; ɛde P/E no toto nkɔso ho.';
+
+  @override
+  String get glossEps =>
+      'Mfaso a kyɛfa biara nyae wɔ abosome 12 a atwam mu. Sɛ EPS kɔ soro mfe pii a, ɛyɛ adwumakuw a ne ho yɛ den nsɛnkyerɛnne a ɛyɛ den paa no mu baako.';
+
+  @override
+  String get glossBeta =>
+      'Sɛnea kyɛfa no taa ne dwa no kɔ: 1 = te sɛ dwa no, 1.5 = nsakrae a ɛsõ bɛyɛ 50%, 1 ase = ɛyɛ dinn.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Nneɛma a wɔtɔn nyinaa wɔ abosome 12 a atwam mu, ansa na wɔayi ka biara.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Mfaso a ɛka wɔ ka nyinaa, nsiho ne towtua akyi wɔ abosome 12 a atwam mu.';
+
+  @override
+  String get glossGrossMargin =>
+      'Sika a ɛbaa mu no ɔfa a ɛka bere a wɔayi nneɛma no ka tẽẽ akyi. Mfaso nkyemu kɛse taa kyerɛ tumi a ɛwɔ wɔ boɔ so.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Sika a ɛbaa mu no ɔfa a ɛka bere a wɔde adwuma no ayɛ (akatua, efi ka, dwadi nkamfo) akyi, ansa na wɔatua nsiho ne towtua.';
+
+  @override
+  String get glossNetMargin =>
+      'Sika a ɛbaa mu no ɔfa a ɛdan mfaso a etwa to. 20% kyerɛ sɛ 100 biara a wɔtɔn mu, 20 yɛ mfaso.';
+
+  @override
+  String get glossRoe =>
+      'Mfaso wɔ wuranom sika so: afe mfaso ÷ wuranom sika. Ɛkyerɛ sɛnea akannifo de kyɛfa wuranom sika di dwuma yiye; bɛyɛ 15% so a, ɛyɛ den.';
+
+  @override
+  String get glossRoa =>
+      'Mfaso wɔ agyapade so: afe mfaso ÷ nneɛma a adwumakuw no wɔ nyinaa. Fa toto afoforo a wɔwɔ adwuma koro mu ho.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Ka ÷ wuranom sika. Ɛkɔ soro a, ɛkyerɛ sika a wɔbɔɔ bosea pii: asiane kɛse bere a nsiho kɔ soro anaa adwuma bɔ fam.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Agyapade a ɛyɛ bere tiaa mu de ÷ ka a ɛsɛ sɛ wotua wɔ afe mu. 1 so a, ɛkyerɛ sɛ adwumakuw no betumi atua ne ka a ɛbɛn.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Sɛnea sika a ɛba mu akɔ soro sɛ wɔde toto afe a atwam ho a.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Sɛnea mfaso a kyɛfa biara nya akɔ soro sɛ wɔde toto afe a atwam ho a.';
+
+  @override
+  String get glossDividendYield =>
+      'Afe mfaso kyɛ ÷ kyɛfa boɔ: sika a wobɛnya afe biara, sɛ ɔha nkyemu wɔ nea wotua ho.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Mfaso kyɛ a wɔtuae wɔ kyɛfa baako so wɔ afe a atwam mu.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Mfaso no ɔfa a wɔde kyɛ sɛ mfaso kyɛ. Sɛ ɛboro 100% a, adwumakuw no tua bɛboro nea ɛnya, na ɛntaa nkyɛ.';
+
+  @override
+  String get glossTitle => 'Ɛkyerɛ dɛn?';
 }

@@ -1880,4 +1880,103 @@ class AppLocalizationsHt extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Pa gen koneksyon – n ap montre dènye done ki te anrejistre yo ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Konbyen tout konpayi a vo sou mache bousyè a: pri aksyon an × kantite aksyon.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Konbyen aksyon konpayi a emèt. Si kantite a ogmante, chak aksyon gen yon pi piti mòso; lè konpayi a rachte aksyon, li diminye.';
+
+  @override
+  String get glossPeTrailing =>
+      'Pri ÷ benefis pa aksyon sou 12 dènye mwa yo: konbyen ane benefis aktyèl w ap peye. Pi ba vle di pi bon mache, men konpayi k ap grandi vit souvan gen yon P/E wo.';
+
+  @override
+  String get glossPeForward =>
+      'Tankou P/E, men ak benefis analis yo prevwa pou 12 pwochen mwa yo. Si li pi ba pase P/E istorik la, sa vle di yo prevwa benefis ap ogmante.';
+
+  @override
+  String get glossPb =>
+      'Pri ÷ valè kontab (aktif mwens dèt) pa aksyon. Anviwon 1 vle di mache a evalye konpayi a pou sa li posede sou papye.';
+
+  @override
+  String get glossPs =>
+      'Valè sou mache ÷ chif dafè anyèl. Itil pou konpayi ki fè ti kras benefis oswa ki poko fè ditou; konpare l nan menm endistri a.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valè konpayi a ak dèt li (EV) ÷ lajan kach li pwodui nan yon ane apre envestisman. Pi ba vle di ou jwenn plis kach pou pri a.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kwasans benefis anyèl yo prevwa (%). Anviwon 1 souvan konsidere kòm jis; li mete P/E a an rapò ak kwasans lan.';
+
+  @override
+  String get glossEps =>
+      'Benefis pa aksyon sou 12 dènye mwa yo. Yon EPS k ap monte ane apre ane se youn nan pi gwo siy yon konpayi ki an sante.';
+
+  @override
+  String get glossBeta =>
+      'Konbyen aksyon an konn bouje ak mache a: 1 = tankou mache a, 1,5 = mouvman anviwon 50% pi gwo, anba 1 = pi kalm.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total lavant 12 dènye mwa yo, anvan nenpòt depans.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Benefis ki rete apre tout depans, enterè ak taks sou 12 dènye mwa yo.';
+
+  @override
+  String get glossGrossMargin =>
+      'Pati nan chif dafè a ki rete apre pri dirèk pwodwi yo. Yon maj wo souvan vle di konpayi a gen pouvwa sou pri li.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Pati nan chif dafè a ki rete apre depans pou fè biznis la mache (salè, lwaye, maketing), anvan enterè ak taks.';
+
+  @override
+  String get glossNetMargin =>
+      'Pati nan chif dafè a ki tounen benefis final. 20% vle di sou chak 100 nan lavant, 20 se benefis.';
+
+  @override
+  String get glossRoe =>
+      'Rantabilite kapital pwòp: benefis anyèl ÷ kapital pwopriyetè yo. Li montre kijan direksyon an byen itilize lajan aksyonè yo; plis pase anviwon 15% se fò.';
+
+  @override
+  String get glossRoa =>
+      'Rantabilite aktif yo: benefis anyèl ÷ tout sa konpayi a posede. Konpare l nan menm endistri a.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dèt ÷ kapital pwopriyetè yo. Pi wo vle di plis lajan prete: plis risk lè to enterè monte oswa biznis la ralanti.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aktif kout tèm ÷ fakti pou peye nan yon ane. Plis pase 1 vle di konpayi a ka kouvri fakti ki pral rive yo.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Konbyen chif dafè a ogmante konpare ak yon ane anvan.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Konbyen benefis pa aksyon an ogmante konpare ak yon ane anvan.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividann anyèl ÷ pri aksyon an: lajan kach ou ta resevwa chak ane, an pousantaj sa ou peye a.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividann yo peye sou yon aksyon pandan dènye ane a.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Pati nan benefis la yo peye kòm dividann. Plis pase 100% konpayi a peye plis pase sa li fè, e sa raman dire.';
+
+  @override
+  String get glossTitle => 'Kisa sa vle di?';
 }

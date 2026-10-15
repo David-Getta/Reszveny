@@ -1886,4 +1886,103 @@ class AppLocalizationsHa extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Babu haɗi – ana nuna bayanan da aka adana na ƙarshe ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Darajar kamfanin gaba ɗaya a kasuwar hannun jari: farashin hannun jari × yawan hannun jari.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Yawan hannun jarin da kamfanin ya fitar. Idan ya ƙaru, kowane hannun jari yana da ƙaramin kaso; sake saye (buyback) yana rage shi.';
+
+  @override
+  String get glossPeTrailing =>
+      'Farashi ÷ ribar kowane hannun jari ta watanni 12 da suka wuce: shekaru nawa na ribar yanzu kake biya. Ƙasa yana nufin mai rahusa, amma kamfanonin da ke girma da sauri yawanci suna da P/E mai yawa.';
+
+  @override
+  String get glossPeForward =>
+      'Kamar P/E, amma da ribar da masu nazari ke tsammani a watanni 12 masu zuwa. Idan ya yi ƙasa da P/E (trailing), ana tsammanin ribar za ta ƙaru.';
+
+  @override
+  String get glossPb =>
+      'Farashi ÷ darajar littafi (kadarori ban da basussuka) ta kowane hannun jari. Kusan 1 yana nufin kasuwa tana darajanta kamfanin daidai da abin da ya mallaka a takarda.';
+
+  @override
+  String get glossPs =>
+      'Darajar kasuwa ÷ kuɗin shiga na shekara. Yana da amfani ga kamfanonin da ba su da riba ko kaɗan tukuna; kwatanta shi a cikin masana\'antu ɗaya.';
+
+  @override
+  String get glossEvToFcf =>
+      'Darajar kamfani har da bashi (EV) ÷ kuɗin da yake samarwa a shekara bayan zuba jari. Ƙasa yana nufin kana samun ƙarin kuɗi kan farashin.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ƙaruwar riba da ake tsammani a shekara (%). Kusan 1 ana ɗaukarsa daidai sau da yawa; yana duba P/E bisa la\'akari da girma.';
+
+  @override
+  String get glossEps =>
+      'Riba kan kowane hannun jari a watanni 12 da suka wuce. EPS da ke ƙaruwa a tsawon shekaru ɗaya ne daga cikin manyan alamun kamfani mai lafiya.';
+
+  @override
+  String get glossBeta =>
+      'Yadda hannun jarin ke motsawa tare da kasuwa: 1 = kamar kasuwa, 1.5 = kusan 50% motsi mafi girma, ƙasa da 1 = mafi natsuwa.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Jimillar tallace-tallace na watanni 12 da suka wuce, kafin kowane kashe kuɗi.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Ribar da ta rage bayan duk kashe kuɗi, ruwa da haraji a watanni 12 da suka wuce.';
+
+  @override
+  String get glossGrossMargin =>
+      'Kason kuɗin shiga da ya rage bayan kuɗin kai tsaye na kayayyakin. Gross margin mai yawa sau da yawa yana nuna ikon ƙayyade farashi.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Kason kuɗin shiga da ya rage bayan gudanar da kasuwanci (albashi, haya, talla), kafin ruwa da haraji.';
+
+  @override
+  String get glossNetMargin =>
+      'Kason kuɗin shiga da ya zama riba ta ƙarshe. 20% yana nufin cikin kowane 100 na tallace-tallace, 20 riba ne.';
+
+  @override
+  String get glossRoe =>
+      'Ribar kan jari: ribar shekara ÷ jarin masu shi. Yana nuna yadda shugabanni ke amfani da kuɗin masu hannun jari; sama da kusan 15% yana da ƙarfi.';
+
+  @override
+  String get glossRoa =>
+      'Ribar kan kadarori: ribar shekara ÷ duk abin da kamfanin ya mallaka. Kwatanta shi a cikin masana\'antu ɗaya.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Bashi ÷ jarin masu shi. Mafi yawa yana nufin ƙarin kuɗin aro: ƙarin haɗari idan kuɗin ruwa ya tashi ko kasuwanci ya yi sanyi.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kadarori na ɗan gajeren lokaci ÷ basussukan da za a biya cikin shekara guda. Sama da 1 yana nufin kamfanin zai iya biyan basussukan da ke kusa.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Nawa kuɗin shiga ya ƙaru idan aka kwatanta da shekara guda da ta wuce.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Nawa ribar kowane hannun jari ta ƙaru idan aka kwatanta da shekara guda da ta wuce.';
+
+  @override
+  String get glossDividendYield =>
+      'Rabon riba na shekara ÷ farashin hannun jari: kuɗin da za ka samu kowace shekara, a matsayin kaso na abin da ka biya.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Rabon ribar da aka biya kan hannun jari ɗaya a shekarar da ta wuce.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Kason ribar da ake biya a matsayin rabon riba. Sama da 100% kamfanin yana biyan fiye da abin da yake samu, wanda ba kasafai yake ɗorewa ba.';
+
+  @override
+  String get glossTitle => 'Me yake nufi?';
 }

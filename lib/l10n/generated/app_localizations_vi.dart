@@ -1876,4 +1876,103 @@ class AppLocalizationsVi extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Không có kết nối – đang hiển thị dữ liệu đã lưu gần nhất ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Giá trị của toàn bộ công ty trên thị trường chứng khoán: giá cổ phiếu × số cổ phiếu.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Số cổ phiếu công ty đã phát hành. Nếu con số này tăng, mỗi cổ phiếu sở hữu một phần nhỏ hơn; mua lại cổ phiếu sẽ làm nó giảm.';
+
+  @override
+  String get glossPeTrailing =>
+      'Giá ÷ lợi nhuận trên mỗi cổ phiếu trong 12 tháng qua: bạn đang trả cho bao nhiêu năm lợi nhuận hiện tại. Thấp hơn là rẻ hơn, nhưng công ty tăng trưởng nhanh thường có P/E cao.';
+
+  @override
+  String get glossPeForward =>
+      'Giống P/E, nhưng dùng lợi nhuận mà giới phân tích kỳ vọng trong 12 tháng tới. Thấp hơn P/E quá khứ nghĩa là lợi nhuận được kỳ vọng sẽ tăng.';
+
+  @override
+  String get glossPb =>
+      'Giá ÷ giá trị sổ sách (tài sản trừ nợ) trên mỗi cổ phiếu. Khoảng 1 nghĩa là thị trường định giá công ty bằng những gì nó sở hữu trên giấy tờ.';
+
+  @override
+  String get glossPs =>
+      'Giá trị thị trường ÷ doanh thu hằng năm. Hữu ích với công ty còn ít hoặc chưa có lợi nhuận; hãy so sánh trong cùng ngành.';
+
+  @override
+  String get glossEvToFcf =>
+      'Giá trị công ty tính cả nợ (EV) ÷ tiền mặt công ty tạo ra trong một năm sau đầu tư. Thấp hơn nghĩa là bạn nhận được nhiều tiền mặt hơn so với giá phải trả.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ mức tăng trưởng lợi nhuận hằng năm dự kiến (%). Khoảng 1 thường được xem là hợp lý; nó đặt P/E trong bối cảnh tăng trưởng.';
+
+  @override
+  String get glossEps =>
+      'Lợi nhuận trên mỗi cổ phiếu trong 12 tháng qua. EPS tăng đều qua các năm là một trong những dấu hiệu mạnh nhất của một công ty khỏe mạnh.';
+
+  @override
+  String get glossBeta =>
+      'Cổ phiếu thường biến động theo thị trường đến mức nào: 1 = như thị trường, 1,5 = dao động lớn hơn khoảng 50%, dưới 1 = ổn định hơn.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Tổng doanh số 12 tháng qua, trước mọi chi phí.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Lợi nhuận còn lại sau mọi chi phí, lãi vay và thuế trong 12 tháng qua.';
+
+  @override
+  String get glossGrossMargin =>
+      'Phần doanh thu còn lại sau chi phí trực tiếp của sản phẩm. Biên lợi nhuận cao thường cho thấy sức mạnh định giá.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Phần doanh thu còn lại sau chi phí vận hành doanh nghiệp (lương, tiền thuê, marketing), trước lãi vay và thuế.';
+
+  @override
+  String get glossNetMargin =>
+      'Phần doanh thu trở thành lợi nhuận cuối cùng. 20% nghĩa là cứ 100 doanh số thì có 20 là lợi nhuận.';
+
+  @override
+  String get glossRoe =>
+      'Lợi nhuận trên vốn chủ sở hữu: lợi nhuận hằng năm ÷ vốn của chủ sở hữu. Cho thấy ban lãnh đạo dùng tiền của cổ đông tốt đến đâu; trên khoảng 15% là mạnh.';
+
+  @override
+  String get glossRoa =>
+      'Lợi nhuận trên tổng tài sản: lợi nhuận hằng năm ÷ mọi thứ công ty sở hữu. Hãy so sánh trong cùng ngành.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Nợ ÷ vốn của chủ sở hữu. Cao hơn nghĩa là vay nhiều tiền hơn: rủi ro lớn hơn khi lãi suất tăng hoặc kinh doanh chậm lại.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Tài sản ngắn hạn ÷ các khoản phải trả trong vòng một năm. Trên 1 nghĩa là công ty có thể trang trải các khoản phải trả sắp tới.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Doanh thu đã tăng bao nhiêu so với một năm trước.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Lợi nhuận trên mỗi cổ phiếu đã tăng bao nhiêu so với một năm trước.';
+
+  @override
+  String get glossDividendYield =>
+      'Cổ tức hằng năm ÷ giá cổ phiếu: thu nhập tiền mặt bạn nhận được mỗi năm, tính theo phần trăm số tiền bạn bỏ ra.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Cổ tức đã trả cho một cổ phiếu trong năm qua.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Phần lợi nhuận được chi trả dưới dạng cổ tức. Trên 100% thì công ty chi nhiều hơn số tiền kiếm được, điều hiếm khi kéo dài.';
+
+  @override
+  String get glossTitle => 'Nghĩa là gì?';
 }

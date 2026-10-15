@@ -1885,4 +1885,103 @@ class AppLocalizationsMs extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Tiada sambungan – memaparkan data yang terakhir disimpan ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Nilai keseluruhan syarikat di pasaran saham: harga saham × bilangan saham.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Berapa banyak saham yang telah diterbitkan oleh syarikat. Jika bertambah, setiap saham memiliki bahagian yang lebih kecil; pembelian balik saham mengurangkannya.';
+
+  @override
+  String get glossPeTrailing =>
+      'Harga ÷ perolehan sesaham bagi 12 bulan lepas: berapa tahun keuntungan semasa yang anda bayar. Lebih rendah bermakna lebih murah, tetapi syarikat yang berkembang pesat biasanya mempunyai P/E yang tinggi.';
+
+  @override
+  String get glossPeForward =>
+      'Seperti P/E, tetapi menggunakan keuntungan yang dijangka penganalisis bagi 12 bulan akan datang. Jika lebih rendah daripada P/E sejarah, keuntungan dijangka meningkat.';
+
+  @override
+  String get glossPb =>
+      'Harga ÷ nilai buku (aset tolak hutang) sesaham. Sekitar 1 bermakna pasaran menilai syarikat sama dengan apa yang dimilikinya di atas kertas.';
+
+  @override
+  String get glossPs =>
+      'Nilai pasaran ÷ hasil tahunan. Berguna bagi syarikat yang belum banyak atau langsung tiada keuntungan; bandingkan dalam industri yang sama.';
+
+  @override
+  String get glossEvToFcf =>
+      'Nilai syarikat termasuk hutang (EV) ÷ tunai yang dijana dalam setahun selepas pelaburan. Lebih rendah bermakna anda mendapat lebih banyak tunai untuk harga itu.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ jangkaan pertumbuhan keuntungan tahunan (%). Sekitar 1 sering dianggap berpatutan; ia menilai P/E dengan mengambil kira pertumbuhan.';
+
+  @override
+  String get glossEps =>
+      'Keuntungan sesaham bagi 12 bulan lepas. EPS yang meningkat dari tahun ke tahun ialah salah satu tanda terkuat syarikat yang sihat.';
+
+  @override
+  String get glossBeta =>
+      'Sejauh mana saham bergerak bersama pasaran: 1 = seperti pasaran, 1.5 = turun naik kira-kira 50% lebih besar, bawah 1 = lebih tenang.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Jumlah jualan bagi 12 bulan lepas, sebelum sebarang kos.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Keuntungan yang tinggal selepas semua kos, faedah dan cukai bagi 12 bulan lepas.';
+
+  @override
+  String get glossGrossMargin =>
+      'Bahagian hasil yang tinggal selepas kos langsung produk. Margin yang tinggi sering menunjukkan kuasa menetapkan harga.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Bahagian hasil yang tinggal selepas kos menjalankan perniagaan (gaji, sewa, pemasaran), sebelum faedah dan cukai.';
+
+  @override
+  String get glossNetMargin =>
+      'Bahagian hasil yang menjadi keuntungan akhir. 20% bermakna 20 daripada setiap 100 jualan ialah keuntungan.';
+
+  @override
+  String get glossRoe =>
+      'Pulangan atas ekuiti: keuntungan tahunan ÷ modal pemilik. Menunjukkan sejauh mana pengurusan menggunakan wang pemegang saham dengan baik; melebihi kira-kira 15% dikira kukuh.';
+
+  @override
+  String get glossRoa =>
+      'Pulangan atas aset: keuntungan tahunan ÷ semua yang dimiliki syarikat. Bandingkan dalam industri yang sama.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Hutang ÷ modal pemilik. Lebih tinggi bermakna lebih banyak wang pinjaman: risiko lebih besar apabila kadar faedah naik atau perniagaan perlahan.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aset jangka pendek ÷ bil yang perlu dibayar dalam setahun. Melebihi 1 bermakna syarikat mampu menampung bil jangka dekatnya.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Berapa banyak hasil meningkat berbanding setahun sebelumnya.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Berapa banyak keuntungan sesaham meningkat berbanding setahun sebelumnya.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividen tahunan ÷ harga saham: pendapatan tunai yang anda terima setiap tahun, sebagai peratusan daripada apa yang anda bayar.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividen yang dibayar bagi satu saham sepanjang tahun lepas.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Bahagian keuntungan yang dibayar sebagai dividen. Melebihi 100%, syarikat membayar lebih daripada yang diperolehnya, dan ini jarang bertahan.';
+
+  @override
+  String get glossTitle => 'Apakah maksudnya?';
 }

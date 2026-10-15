@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../market_data/offline_banner.dart';
+import 'metric_glossary.dart';
 import '../compare/compare_page.dart';
 import '../notes/notes_card.dart';
 import '../../app_services.dart';
@@ -184,6 +185,7 @@ class _DetailsBody extends StatelessWidget {
 
     String? err(DetailSection s) => d.errors[s] == null ? null : errorMessage(l10n, d.errors[s]!);
 
+    final glossary = metricGlossary(l10n);
     final sections = <Widget>[
       const OfflineBanner(),
       // Fejléc: név, ár, változás. Keskeny képernyőn (telefon) az ár a név alá
@@ -311,6 +313,8 @@ class _DetailsBody extends StatelessWidget {
             ? SectionError(err(DetailSection.quote)!)
             : KvTable(
                 missing: l10n.notAvailable,
+                hints: glossary,
+                hintTitle: l10n.glossTitle,
                 rows: [
                   (l10n.labelLastPrice, fmt.price(q?.price, cur)),
                   (
@@ -366,6 +370,8 @@ class _DetailsBody extends StatelessWidget {
             ? SectionError(err(DetailSection.metrics)!)
             : KvTable(
                 missing: l10n.notAvailable,
+                hints: glossary,
+                hintTitle: l10n.glossTitle,
                 rows: [
                   (l10n.labelMarketCap, p?.marketCap == null ? null : fmt.compact(p!.marketCap, currency: cur)),
                   (
@@ -391,6 +397,8 @@ class _DetailsBody extends StatelessWidget {
             ? SectionError(err(DetailSection.metrics)!)
             : KvTable(
                 missing: l10n.notAvailable,
+                hints: glossary,
+                hintTitle: l10n.glossTitle,
                 rows: [
                   (l10n.labelRevenueTtm, m?.revenueTtm == null ? null : fmt.compact(m!.revenueTtm, currency: cur)),
                   (
@@ -430,6 +438,8 @@ class _DetailsBody extends StatelessWidget {
             ? SectionError(err(DetailSection.metrics)!)
             : KvTable(
                 missing: l10n.notAvailable,
+                hints: glossary,
+                hintTitle: l10n.glossTitle,
                 rows: [
                   (l10n.labelDividendYield, m?.dividendYield == null ? null : fmt.percent(m!.dividendYield)),
                   (

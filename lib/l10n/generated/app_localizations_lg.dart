@@ -1891,4 +1891,103 @@ class AppLocalizationsLg extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Tewali yintaneeti – data eyasembayo okuterekebwa y\'eragibwa ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Kkampuni yonna gy\'ebalirirwa ku katale k\'emigabo: omuwendo gw\'omugabo × omuwendo gw\'emigabo.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Emigabo kkampuni gy\'efulumizza. Bwe gyeyongera, buli mugabo gufuna ekitundu ekitono; okugula emigabo emabega (buyback) kugikendeeza.';
+
+  @override
+  String get glossPeTrailing =>
+      'Bbeeyi ÷ amagoba ku buli mugabo mu myezi 12 egiyise: emyaka emeka egy\'amagoba ag\'kati gy\'osasulira. Ekiri wansi kiba kya layisi, naye kkampuni ezikula amangu zitera okuba ne P/E ennene.';
+
+  @override
+  String get glossPeForward =>
+      'Nga P/E, naye nga ekozesa amagoba abakugu ge basuubira mu myezi 12 egijja. Bw\'eba wansi wa P/E ewedde, amagoba gasuubirwa okweyongera.';
+
+  @override
+  String get glossPb =>
+      'Bbeeyi ÷ omuwendo ku bitabo (eby\'obugagga okuggyako amabanja) ku buli mugabo. Okuba nga 1 kitegeeza nti akatale kabalirira kkampuni nga bw\'erina ku mpapula.';
+
+  @override
+  String get glossPs =>
+      'Omuwendo ku katale ÷ ensimbi eziyingira buli mwaka. Kiyamba ku kkampuni ezitannaba kufuna magoba mangi oba tezirina; kigeraageranye ku kkampuni ez\'ekika kye kimu.';
+
+  @override
+  String get glossEvToFcf =>
+      'Omuwendo gwa kkampuni nga mw\'otwalidde amabanja (EV) ÷ ensimbi z\'efuna mu mwaka ng\'emaze okusiga ensimbi. Ekiri wansi kitegeeza ofuna ensimbi nnyingi ku bbeeyi gy\'osasula.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ okukula kw\'amagoba okusuubirwa buli mwaka (%). Okuba nga 1 kitera okutwalibwa nga kya bwenkanya; kiraga P/E ng\'olowooza ku kukula.';
+
+  @override
+  String get glossEps =>
+      'Amagoba ku buli mugabo mu myezi 12 egiyise. EPS erinnya buli mwaka kye kimu ku bubonero obusinga amaanyi obwa kkampuni ennamu.';
+
+  @override
+  String get glossBeta =>
+      'Omugabo bwe gutambula wamu n\'akatale: 1 = ng\'akatale, 1.5 = okukyukakyuka okusingako nga 50%, wansi wa 1 = kikkakkamu.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ebyatundibwa byonna mu myezi 12 egiyise, nga tonnaggyamu nsaasaanya yonna.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Amagoba agasigalawo oluvannyuma lw\'ensaasaanya yonna, interest n\'emisolo mu myezi 12 egiyise.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ekitundu ky\'ensimbi eziyingidde ekisigalawo oluvannyuma lw\'ensaasaanya ey\'obutereevu ku bintu ebikolebwa. Ekitundu ekinene kitera okulaga obuyinza ku bbeeyi.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ekitundu ky\'ensimbi eziyingidde ekisigalawo oluvannyuma lw\'okuddukanya bizinensi (emisaala, obupangisa, okulanga), nga interest n\'emisolo tebinnaba.';
+
+  @override
+  String get glossNetMargin =>
+      'Ekitundu ky\'ensimbi eziyingidde ekifuuka amagoba ag\'enkomerero. 20% kitegeeza nti ku buli 100 ez\'ebyatundibwa, 20 ge magoba.';
+
+  @override
+  String get glossRoe =>
+      'Amagoba ku nsimbi z\'abannannyini: amagoba ag\'omwaka ÷ ensimbi z\'abannannyini. Kiraga abaddukanya kkampuni bwe bakozesa obulungi ensimbi z\'abalina emigabo; okusukka nga 15% kiba kirungi nnyo.';
+
+  @override
+  String get glossRoa =>
+      'Amagoba ku by\'obugagga: amagoba ag\'omwaka ÷ byonna kkampuni by\'erina. Kigeraageranye ku kkampuni ez\'ekika kye kimu.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Ebbanja ÷ ensimbi z\'abannannyini. Ekisingako kitegeeza ensimbi nnyingi ez\'okwewola: akabi kangi ng\'interest erinnye oba bizinensi ekendedde.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Eby\'obugagga eby\'ekiseera ekitono ÷ amabanja ag\'okusasula mu mwaka gumu. Okusukka 1 kitegeeza nti kkampuni esobola okusasula amabanja ag\'okumpi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Ensimbi eziyingidde bwe zeeyongedde bw\'ogeraageranya n\'omwaka oguwedde.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Amagoba ku buli mugabo bwe geeyongedde bw\'ogeraageranya n\'omwaka oguwedde.';
+
+  @override
+  String get glossDividendYield =>
+      'Amagoba ag\'omwaka agagabibwa ÷ bbeeyi y\'omugabo: ensimbi z\'ofuna buli mwaka, ng\'ebitundu ku kikumi eby\'ebyo by\'osasudde.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Amagoba agaagabibwa ku mugabo gumu mu mwaka oguwedde.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ekitundu ky\'amagoba ekigabibwa eri abalina emigabo. Okusukka 100% kkampuni egaba okusinga by\'efuna, ekitera obutawangaala.';
+
+  @override
+  String get glossTitle => 'Kitegeeza ki?';
 }

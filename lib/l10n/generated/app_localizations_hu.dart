@@ -1886,4 +1886,103 @@ class AppLocalizationsHu extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nincs kapcsolat – a legutóbb mentett adatok látszanak ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Mennyit ér az egész cég a tőzsdén: árfolyam × részvények száma.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hány részvényt bocsátott ki a cég. Ha nő, egy részvényre kisebb szelet jut; a visszavásárlás csökkenti.';
+
+  @override
+  String get glossPeTrailing =>
+      'Árfolyam ÷ az elmúlt 12 hónap egy részvényre jutó nyeresége: hány évnyi mostani profitot fizetsz ki. Az alacsonyabb olcsóbb, de a gyorsan növekvő cégeké általában magas.';
+
+  @override
+  String get glossPeForward =>
+      'Mint a P/E, de az elemzők által a következő 12 hónapra várt profittal. Ha kisebb a múltbelinél, a profit növekedését várják.';
+
+  @override
+  String get glossPb =>
+      'Árfolyam ÷ egy részvényre jutó könyv szerinti érték (eszközök mínusz tartozások). 1 körül a piac annyit ad a cégért, amennyi papíron a vagyona.';
+
+  @override
+  String get glossPs =>
+      'Piaci érték ÷ éves árbevétel. Hasznos, ha a cégnek még alig van profitja; ugyanazon az iparágon belül érdemes összevetni.';
+
+  @override
+  String get glossEvToFcf =>
+      'A cég értéke az adóssággal együtt (EV) ÷ a beruházások után egy év alatt megtermelt készpénz. Az alacsonyabb azt jelenti, hogy több pénzt kapsz az árért.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ várt éves profitnövekedés (%). 1 körül sokan méltányosnak tartják; a P/E-t a növekedéshez méri.';
+
+  @override
+  String get glossEps =>
+      'Egy részvényre jutó nyereség az elmúlt 12 hónapban. Ha évről évre nő, az az egészséges cég egyik legerősebb jele.';
+
+  @override
+  String get glossBeta =>
+      'Mennyire mozog együtt a piaccal: 1 = mint a piac, 1,5 = nagyjából másfélszer akkora kilengések, 1 alatt = nyugodtabb.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Az elmúlt 12 hónap teljes árbevétele, minden költség előtt.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Az elmúlt 12 hónapban minden költség, kamat és adó után megmaradt nyereség.';
+
+  @override
+  String get glossGrossMargin =>
+      'Az árbevétel mekkora része marad meg a termékek közvetlen költsége után. A magas érték gyakran árazási erőt jelez.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Az árbevétel mekkora része marad meg a működés (bérek, bérleti díj, marketing) után, kamat és adó előtt.';
+
+  @override
+  String get glossNetMargin =>
+      'Az árbevétel mekkora része lesz végső nyereség. 20% azt jelenti, hogy minden 100 egység bevételből 20 a profit.';
+
+  @override
+  String get glossRoe =>
+      'Sajáttőke-arányos megtérülés: éves nyereség ÷ a tulajdonosok tőkéje. Megmutatja, mennyire jól forgatja a vezetés a részvényesek pénzét; kb. 15% fölött erős.';
+
+  @override
+  String get glossRoa =>
+      'Eszközarányos megtérülés: éves nyereség ÷ a cég összes eszköze. Ugyanazon az iparágon belül érdemes összevetni.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Adósság ÷ a tulajdonosok tőkéje. A magasabb több kölcsönpénzt jelent: nagyobb kockázat kamatemelésnél vagy lassuláskor.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Rövid lejáratú eszközök ÷ egy éven belül esedékes tartozások. 1 fölött a cég fedezni tudja a közeli kötelezettségeit.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Mennyivel nőtt az árbevétel az egy évvel korábbihoz képest.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Mennyivel nőtt az egy részvényre jutó nyereség az egy évvel korábbihoz képest.';
+
+  @override
+  String get glossDividendYield =>
+      'Éves osztalék ÷ árfolyam: évente mennyi készpénzt kapnál a befizetett összeg százalékában.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Az elmúlt évben egy részvényre kifizetett osztalék.';
+
+  @override
+  String get glossPayoutRatio =>
+      'A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.';
+
+  @override
+  String get glossTitle => 'Mit jelent?';
 }

@@ -1890,4 +1890,103 @@ class AppLocalizationsCa extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Sense connexió – es mostren les últimes dades desades ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Quant val tota l\'empresa a la borsa: preu de l\'acció × nombre d\'accions.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Quantes accions ha emès l\'empresa. Si augmenta, cada acció té una porció més petita; les recompres el redueixen.';
+
+  @override
+  String get glossPeTrailing =>
+      'Preu ÷ benefici per acció dels últims 12 mesos: quants anys del benefici actual pagues. Més baix és més barat, però les empreses que creixen ràpid solen tenir un P/E alt.';
+
+  @override
+  String get glossPeForward =>
+      'Com el P/E, però amb el benefici que els analistes esperen per als pròxims 12 mesos. Per sota del P/E històric vol dir que s\'espera que el benefici creixi.';
+
+  @override
+  String get glossPb =>
+      'Preu ÷ valor comptable (actius menys deutes) per acció. Al voltant d\'1 vol dir que el mercat valora l\'empresa pel que té sobre el paper.';
+
+  @override
+  String get glossPs =>
+      'Valor de mercat ÷ ingressos anuals. Útil per a empreses amb poc o encara cap benefici; compara\'l dins del mateix sector.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valor de l\'empresa amb el deute inclòs (EV) ÷ la caixa que genera en un any després d\'inversions. Més baix vol dir que obtens més caixa pel preu.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ creixement anual esperat del benefici (%). Al voltant d\'1 sovint es considera just; posa el P/E en relació amb el creixement.';
+
+  @override
+  String get glossEps =>
+      'Benefici per acció dels últims 12 mesos. Un EPS que puja any rere any és un dels senyals més forts d\'una empresa sana.';
+
+  @override
+  String get glossBeta =>
+      'Quant tendeix l\'acció a moure\'s amb el mercat: 1 = com el mercat, 1,5 = oscil·lacions un 50% més grans, per sota d\'1 = més tranquil·la.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Vendes totals dels últims 12 mesos, abans de qualsevol cost.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Benefici que queda després de tots els costos, interessos i impostos dels últims 12 mesos.';
+
+  @override
+  String get glossGrossMargin =>
+      'La part dels ingressos que queda després del cost directe dels productes. Un marge alt sovint indica poder per fixar preus.';
+
+  @override
+  String get glossOperatingMargin =>
+      'La part dels ingressos que queda després de fer funcionar el negoci (salaris, lloguer, màrqueting), abans d\'interessos i impostos.';
+
+  @override
+  String get glossNetMargin =>
+      'La part dels ingressos que acaba sent benefici final. 20% vol dir que 20 de cada 100 en vendes són benefici.';
+
+  @override
+  String get glossRoe =>
+      'Rendibilitat del capital (ROE): benefici anual ÷ el capital dels propietaris. Mostra com de bé la direcció fa servir els diners dels accionistes; per sobre d\'un 15% aprox. és fort.';
+
+  @override
+  String get glossRoa =>
+      'Rendibilitat dels actius (ROA): benefici anual ÷ tot el que posseeix l\'empresa. Compara-la dins del mateix sector.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Deutes ÷ el capital dels propietaris. Més alt vol dir més diners manllevats: més risc quan pugen els tipus o el negoci s\'alenteix.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Actius a curt termini ÷ factures que vencen dins d\'un any. Per sobre d\'1 vol dir que l\'empresa pot cobrir els pagaments propers.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Quant han crescut els ingressos respecte a un any abans.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Quant ha crescut el benefici per acció respecte a un any abans.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividend anual ÷ preu de l\'acció: els ingressos en efectiu que obtindries cada any, en percentatge del que pagues.';
+
+  @override
+  String get glossDividendPerShare =>
+      'El dividend pagat per una acció durant l\'últim any.';
+
+  @override
+  String get glossPayoutRatio =>
+      'La part del benefici que es reparteix com a dividends. Per sobre del 100% l\'empresa paga més del que guanya, cosa que rarament dura.';
+
+  @override
+  String get glossTitle => 'Què vol dir?';
 }

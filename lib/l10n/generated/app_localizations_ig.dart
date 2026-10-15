@@ -1876,4 +1876,103 @@ class AppLocalizationsIg extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Enweghị njikọ – a na-egosi data ikpeazụ echekwara ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Ego ụlọ ọrụ ahụ dum bara n\'ahịa stock: ọnụahịa otu share × ọnụọgụ shares.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Ọnụọgụ shares ụlọ ọrụ ahụ wepụtara. Ọ bụrụ na ọ rịọ elu, share ọ bụla na-enwe obere òkè; ịzụghachi shares (buyback) na-ebelata ya.';
+
+  @override
+  String get glossPeTrailing =>
+      'Ọnụahịa ÷ uru kwa share n\'ime ọnwa 12 gara aga: afọ ole nke uru ugbu a ka ị na-akwụ ụgwọ ya. Nke dị ala dị ọnụ ala, mana ụlọ ọrụ na-eto ngwa ngwa na-enwekarị P/E dị elu.';
+
+  @override
+  String get glossPeForward =>
+      'Dị ka P/E, mana jiri uru ndị nyocha na-atụ anya n\'ọnwa 12 na-abịa. Ọ bụrụ na ọ dị ala karịa P/E gara aga, a na-atụ anya na uru ga-eto.';
+
+  @override
+  String get glossPb =>
+      'Ọnụahịa ÷ uru akwụkwọ (akụ wepụ ụgwọ) kwa share. Ihe dị ka 1 pụtara na ahịa na-ahụ ụlọ ọrụ ahụ ka ihe ruru ihe o nwere n\'akwụkwọ.';
+
+  @override
+  String get glossPs =>
+      'Uru ahịa ÷ ego mbata kwa afọ. Ọ bara uru maka ụlọ ọrụ nwere obere uru ma ọ bụ enweghị uru ọ bụla; tụnyere ya n\'otu ụdị ọrụ.';
+
+  @override
+  String get glossEvToFcf =>
+      'Uru ụlọ ọrụ gụnyere ụgwọ (EV) ÷ ego ọ na-enweta n\'otu afọ mgbe itinye ego gasịrị. Nke dị ala pụtara na ị na-enweta ego karịa maka ọnụahịa ahụ.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ uto uru a na-atụ anya kwa afọ (%). Ihe dị ka 1 ka a na-ewekarị dị ka ihe ziri ezi; ọ na-ele P/E anya n\'ihe gbasara uto.';
+
+  @override
+  String get glossEps =>
+      'Uru kwa share n\'ime ọnwa 12 gara aga. EPS na-arị elu kwa afọ bụ otu n\'ime ihe ịrịba ama kachasị ike nke ụlọ ọrụ dị mma.';
+
+  @override
+  String get glossBeta =>
+      'Etu stock ahụ si agagharị na ahịa: 1 = dị ka ahịa, 1.5 = mgbagharị dị ihe dị ka 50% karịa, n\'okpuru 1 = dị jụụ karịa.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ngụkọta ihe e rere n\'ime ọnwa 12 gara aga, tupu mmefu ọ bụla.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Uru fọdụrụ mgbe mmefu niile, ọmụrụ nwa na ụtụ isi gasịrị n\'ime ọnwa 12 gara aga.';
+
+  @override
+  String get glossGrossMargin =>
+      'Òkè ego mbata fọdụrụ mgbe ọnụ ego ozugbo nke ngwaahịa gasịrị. Pasentị dị elu na-egosikarị ike ịkpebi ọnụahịa.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Òkè ego mbata fọdụrụ mgbe ọrụ azụmahịa gasịrị (ụgwọ ọnwa, ụlọ mgbazinye, mgbasa ozi), tupu ọmụrụ nwa na ụtụ isi.';
+
+  @override
+  String get glossNetMargin =>
+      'Òkè ego mbata na-aghọ uru ikpeazụ. 20% pụtara na n\'ime 100 ọ bụla e rere, 20 bụ uru.';
+
+  @override
+  String get glossRoe =>
+      'Uru n\'ego ndị nwe: uru kwa afọ ÷ ego ndị nwe ụlọ ọrụ. Ọ na-egosi etu ndị isi si eji ego ndị nwe shares eme ihe nke ọma; karịa ihe dị ka 15% siri ike.';
+
+  @override
+  String get glossRoa =>
+      'Uru n\'akụ: uru kwa afọ ÷ ihe niile ụlọ ọrụ nwere. Tụnyere ya n\'otu ụdị ọrụ.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Ụgwọ ÷ ego ndị nwe. Nke dị elu pụtara ego mgbazinye karịa: ihe ize ndụ karịa mgbe ọmụrụ nwa rịrị elu ma ọ bụ azụmahịa ji nwayọ.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Akụ obere oge ÷ ụgwọ a ga-akwụ n\'ime otu afọ. Karịa 1 pụtara na ụlọ ọrụ ahụ nwere ike ịkwụ ụgwọ ndị dị nso.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Etu ego mbata si too ma e jiri ya tụnyere afọ gara aga.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Etu uru kwa share si too ma e jiri ya tụnyere afọ gara aga.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividend kwa afọ ÷ ọnụahịa share: ego ị ga-enweta kwa afọ, dị ka pasentị nke ihe ị kwụrụ.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividend a kwụrụ n\'otu share n\'afọ gara aga.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Òkè uru a na-akwụ dị ka dividend. Karịa 100%, ụlọ ọrụ ahụ na-akwụ karịa ihe ọ na-enweta, nke anaghị adịgide.';
+
+  @override
+  String get glossTitle => 'Gịnị ka ọ pụtara?';
 }

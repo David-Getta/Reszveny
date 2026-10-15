@@ -1892,4 +1892,103 @@ class AppLocalizationsQu extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Mana t\'inkiy kanchu – qhipa waqaychasqa datos rikuchikuchkan ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Llapan empresa hayk\'a chaniyuq bolsapi: accionpa chanin × accionkunap yupaynin.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hayk\'a accionkunata empresa lluqsichirqan. Yapakuptinqa, sapa accionmanqa aswan huch\'uy t\'aqa chayan; kutichispa rantiyqa pisiyachin.';
+
+  @override
+  String get glossPeTrailing =>
+      'Chanin ÷ sapa accionpa ganancian qhipa 12 killapi: hayk\'a watapaq kunan gananciata paganki. Aswan pisiqa aswan pisi chaniyuq, ichaqa utqhayta wiñaq empresakunaqa sapa kuti hatun P/E-yuq kanku.';
+
+  @override
+  String get glossPeForward =>
+      'P/E hina, ichaqa hamuq 12 killapaq analistakunap suyasqan gananciawan. Ñawpaq P/E-manta aswan pisi kaptinqa, ganancia wiñananta suyanku.';
+
+  @override
+  String get glossPb =>
+      'Chanin ÷ sapa accionpa libro chanin (kapuqkuna manukunata qichusqa). Yaqa 1 nisqaqa, qhatu empresata papelpi kapuqninman hina chanichan.';
+
+  @override
+  String get glossPs =>
+      'Qhatupi chanin ÷ watapi ingresos. Pisi otaq mana ganancianyuq empresakunapaq allin; kikin industria ukhupi tupachiy.';
+
+  @override
+  String get glossEvToFcf =>
+      'Empresap chanin manuntin (EV) ÷ inversionkuna qhipaman huk watapi ruwasqan qullqi. Aswan pisiqa, chaninmanta aswan qullqita chaskinki ninan.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ suyasqa watapi ganancia wiñay (%). Yaqa 1 sapa kuti chaniyuq nisqa; P/E-ta wiñaywan tupachin.';
+
+  @override
+  String get glossEps =>
+      'Sapa accionpa ganancian qhipa 12 killapi. Wata wata wiñaq EPS qhali empresap aswan kallpasapa unanchankunamanta hukmi.';
+
+  @override
+  String get glossBeta =>
+      'Accion qhatuwan kuska hayk\'ata kuyun: 1 = qhatu hina, 1.5 = yaqa 50% aswan hatun kuyuykuna, 1 uraypi = aswan thak.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Qhipa 12 killapi llapan qhatusqa, ima gastokunapas manaraq.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Llapan gastokuna, interes, impuestokuna qhipaman puchuq ganancia, qhipa 12 killapi.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ingresosmanta hayk\'a t\'aqa puchun productokunap chiqan gastonkuna qhipaman. Hatun margenqa sapa kuti chanita churay atiyta rikuchin.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ingresosmanta hayk\'a t\'aqa puchun negociota purichiy qhipaman (pagokuna, alquiler, marketing), interes, impuestokuna manaraq.';
+
+  @override
+  String get glossNetMargin =>
+      'Ingresosmanta hayk\'a t\'aqa tukukuy ganancia kapun. 20% nisqaqa, sapa 100 qhatusqamanta 20 ganancia.';
+
+  @override
+  String get glossRoe =>
+      'Patrimoniopa rendimienton: watapi ganancia ÷ dueñokunap capitalnin. Rikuchin hayk\'a allinta umalliqkuna accionistakunap qullqinta llamk\'achinku; yaqa 15% hanaqpi kallpasapa.';
+
+  @override
+  String get glossRoa =>
+      'Activokunapa rendimienton: watapi ganancia ÷ empresap llapan kapuqnin. Kikin industria ukhupi tupachiy.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Manu ÷ dueñokunap capitalnin. Aswan hatunqa aswan mañakusqa qullqi: interes wichaptin otaq negocio pisiyaptin aswan peligro.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Pisi pachapaq kapuqkuna ÷ huk wata ukhupi pagana cuentakuna. 1 hanaqpi kaptinqa, empresa qayllalla cuentankunata pagayta atin.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Ingresos hayk\'ata wiñarqan huk wata ñawpaqmanta tupachisqa.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Sapa accionpa ganancian hayk\'ata wiñarqan huk wata ñawpaqmanta tupachisqa.';
+
+  @override
+  String get glossDividendYield =>
+      'Watapi dividendo ÷ accionpa chanin: sapa wata chaskinayki qullqi, pagasqaykimanta porcentajepi.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Qhipa watapi huk accionpaq pagasqa dividendo.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Gananciamanta hayk\'a t\'aqa dividendo hina rakisqa. 100% hanaqpi, empresa ganasqanmanta aswanta pagan, chayqa pisillata unan.';
+
+  @override
+  String get glossTitle => 'Ima ninan?';
 }

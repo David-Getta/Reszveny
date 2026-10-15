@@ -1880,4 +1880,103 @@ class AppLocalizationsKab extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ulac tuqqna – sskanayen-d yisefka ineggura i yettwaskelsen ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Acḥal i yeswa ukampani akk deg lbursa: ssuma n uksyun × amḍan n yiksyunen.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Acḥal n yiksyunen i d-yessuffeɣ ukampani. Ma yerna, yal aksyun ad yesɛu aḥric meẓẓiyen; mi ara d-yaɣ ukampani iksyunen-is (buyback), amḍan ad yenqes.';
+
+  @override
+  String get glossPeTrailing =>
+      'Ssuma ÷ rrbeḥ n yal aksyun deg 12 n wayyuren yezrin: acḥal n iseggasen n rrbeḥ n tura i txelleṣeḍ. Ma yella yenqes, yerxes, maca ikampaniyen i ittimɣuren s tazzla s umata sɛan P/E yulin.';
+
+  @override
+  String get glossPeForward =>
+      'Am P/E, maca s rrbeḥ i ttrajun yimesleḍen deg 12 n wayyuren i d-iteddun. Ma yella ddaw P/E yezrin, ttrajun ad yimɣur rrbeḥ.';
+
+  @override
+  String get glossPb =>
+      'Ssuma ÷ azal n udlis (ayla ma tekkseḍ irḍalen) n yal aksyun. Azal qrib n 1 yebɣa ad d-yini lbursa tettqadar akampani s wayen yesɛa ɣef lkaɣeḍ.';
+
+  @override
+  String get glossPs =>
+      'Azal deg lbursa ÷ lmedxul n useggas. Yelha i ikampaniyen ur nesɛi ara aṭas n rrbeḥ neɣ ur nesɛi ara yakan; serwes-it deg yiwen n uḥric n tdamsa.';
+
+  @override
+  String get glossEvToFcf =>
+      'Azal n ukampani s yirḍalen (EV) ÷ idrimen i d-yessufuɣ deg useggas deffir n yisɣaren. Ma yenqes, ad tawiḍ ugar n yidrimen ɣef ssuma-nni.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ timerna n rrbeḥ yettwarjan i yal aseggas (%). Azal qrib n 1 s waṭas yettwaḥsab d ayen yellan d lḥeqq; yettwali P/E s tmerna.';
+
+  @override
+  String get glossEps =>
+      'Rrbeḥ n yal aksyun deg 12 n wayyuren yezrin. EPS i d-yettalin seg useggas ɣer wayeḍ d yiwen seg yicenyalen yejhden n ukampani yeṣṣeḥḥan.';
+
+  @override
+  String get glossBeta =>
+      'Acḥal i yettembiwil uksyun akked lbursa: 1 = am lbursa, 1,5 = tinnegriwin ugarent s 50%, ddaw 1 = yehda ugar.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Akk aznuzu n 12 n wayyuren yezrin, send yal axeṣṣar.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Rrbeḥ i d-yeqqimen deffir akk ixeṣṣaren, lfayda d tbaṭrin deg 12 n wayyuren yezrin.';
+
+  @override
+  String get glossGrossMargin =>
+      'Aḥric n lmedxul i d-yeqqimen deffir n ssuma tusridt n yifarisen. Afmiḍi ameqqran s waṭas yesskanay tazmert ɣef ssuma.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Aḥric n lmedxul i d-yeqqimen deffir n yixeṣṣaren n twuri (lexlaṣ, lkra, marketing), send lfayda d tbaṭrin.';
+
+  @override
+  String get glossNetMargin =>
+      'Aḥric n lmedxul ara yuɣalen d rrbeḥ aneggaru. 20% yebɣa ad d-yini seg yal 100 n uznuzu, 20 d rrbeḥ.';
+
+  @override
+  String get glossRoe =>
+      'Rrbeḥ ɣef wayla n yimawlan: rrbeḥ n useggas ÷ adrim n yimawlan. Yesskanay amek tesseqdac tnedbalt idrimen n yimawlan n yiksyunen; ugar n 15% d ayen yelhan.';
+
+  @override
+  String get glossRoa =>
+      'Rrbeḥ ɣef wayla: rrbeḥ n useggas ÷ akk ayen yesɛa ukampani. Serwes-it deg yiwen n uḥric n tdamsa.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Irḍalen ÷ adrim n yimawlan. Ma yuli, ugar n yidrimen yettwareḍlen: ugar n uɣbel mi ara tali lfayda neɣ mi ara tenqes tnezzut.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Ayla n wakud awezlan ÷ ifaturen ara yettwaxelṣen deg useggas. Ugar n 1 yebɣa ad d-yini akampani yezmer ad yexelleṣ ifaturen-is iqerben.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Acḥal i yerna lmedxul ma nserwes-it ɣer useggas yezrin.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Acḥal i yerna rrbeḥ n yal aksyun ma nserwes-it ɣer useggas yezrin.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividand n useggas ÷ ssuma n uksyun: idrimen ara d-tawiḍ yal aseggas, s ufmiḍi n wayen i txelleṣeḍ.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividand yettwaxelṣen ɣef yiwen n uksyun deg useggas yezrin.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Aḥric n rrbeḥ yettwabḍan d dividand. Ugar n 100%, akampani yettxelliṣ ugar n wayen yerbeḥ, ayen ur nettdum ara.';
+
+  @override
+  String get glossTitle => 'D acu i d-yebɣa ad yini?';
 }

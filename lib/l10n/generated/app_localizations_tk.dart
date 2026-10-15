@@ -1880,4 +1880,103 @@ class AppLocalizationsTk extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Baglanyşyk ýok – iň soňky ýatda saklanan maglumatlar görkezilýär ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Tutuş kompaniýanyň biržadaky bahasy: paýnamanyň bahasy × paýnamalaryň sany.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Kompaniýanyň näçe paýnama çykarandygy. Sany artsa, her paýnama has kiçi paý düşýär; yzyna satyn alyşlar ony azaldýar.';
+
+  @override
+  String get glossPeTrailing =>
+      'Baha ÷ soňky 12 aýda bir paýnama düşýän peýda: häzirki peýdanyň näçe ýyly üçin töleýändigiňiz. Pesi arzanrak, ýöne çalt ösýän kompaniýalaryň P/E-si adatça ýokary.';
+
+  @override
+  String get glossPeForward =>
+      'P/E ýaly, ýöne analitikleriň indiki 12 aý üçin garaşýan peýdasy bilen. Geçen döwrüň P/E-sinden pes bolsa, peýdanyň ösmegine garaşylýar.';
+
+  @override
+  String get glossPb =>
+      'Baha ÷ bir paýnama düşýän balans bahasy (aktiwler minus karzlar). Takmynan 1 bazaryň kompaniýany kagyz ýüzündäki emlägi derejesinde bahalandyrýandygyny aňladýar.';
+
+  @override
+  String get glossPs =>
+      'Bazar bahasy ÷ ýyllyk girdeji. Entek peýdasy az ýa-da asla ýok kompaniýalar üçin peýdaly; bir pudagyň içinde deňeşdiriň.';
+
+  @override
+  String get glossEvToFcf =>
+      'Karz bilen bilelikde kompaniýanyň bahasy (EV) ÷ maýa goýumlardan soň bir ýylda öndürýän puly. Pes bolsa, baha üçin has köp pul alýarsyňyz.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ garaşylýan ýyllyk peýda ösüşi (%). Takmynan 1 köplenç adalatly hasaplanýar; P/E-ni ösüşiň nukdaýnazaryndan görkezýär.';
+
+  @override
+  String get glossEps =>
+      'Soňky 12 aýda bir paýnama düşýän peýda. Ýyllar boýy ösýän EPS sagdyn kompaniýanyň iň güýçli alamatlarynyň biridir.';
+
+  @override
+  String get glossBeta =>
+      'Paýnamanyň bazar bilen bilelikde näçe hereket edýändigi: 1 = bazar ýaly, 1,5 = takmynan 50% uly yrgyldylar, 1-den pes = has asuda.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Soňky 12 aýyň jemi satuwy, islendik çykdajylardan öň.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Soňky 12 aýda ähli çykdajylardan, göterimlerden we salgytlardan soň galan peýda.';
+
+  @override
+  String get glossGrossMargin =>
+      'Önümleriň gönüden-göni çykdajylaryndan soň galýan girdeji paýy. Ýokary marža köplenç baha kesgitlemek güýjüni görkezýär.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Işi alyp barmagyň çykdajylaryndan (aýlyklar, kärende, marketing) soň, göterimlerden we salgytlardan öň galýan girdeji paýy.';
+
+  @override
+  String get glossNetMargin =>
+      'Girdejiniň ahyrky peýda öwrülýän paýy. 20% her 100 satuwdan 20-siniň peýdadygyny aňladýar.';
+
+  @override
+  String get glossRoe =>
+      'Kapitalyň girdejililigi: ýyllyk peýda ÷ eýeleriň kapitaly. Ýolbaşçylygyň paýdarlaryň puluny näçe gowy ulanýandygyny görkezýär; takmynan 15%-den ýokarysy güýçli.';
+
+  @override
+  String get glossRoa =>
+      'Aktiwleriň girdejililigi: ýyllyk peýda ÷ kompaniýanyň ähli emlägi. Bir pudagyň içinde deňeşdiriň.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Karzlar ÷ eýeleriň kapitaly. Ýokary bolsa, karz alnan pul köp: göterimler ýokarlananda ýa-da iş haýallanda töwekgelçilik uly.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Gysga möhletli aktiwler ÷ bir ýylyň içinde tölenmeli borçnamalar. 1-den ýokary bolsa, kompaniýa ýakyn borçnamalaryny ýapyp bilýär.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Girdejiniň bir ýyl öňküsi bilen deňeşdirilende näçe artandygy.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Bir paýnama düşýän peýdanyň bir ýyl öňküsi bilen deňeşdirilende näçe artandygy.';
+
+  @override
+  String get glossDividendYield =>
+      'Ýyllyk diwidend ÷ paýnamanyň bahasy: tölän puluňyzyň göterimi hökmünde ýylda aljak nagt girdejiňiz.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Soňky ýylda bir paýnama üçin tölenen diwidend.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Peýdanyň diwidend hökmünde tölenýän paýy. 100%-den ýokary bolsa, kompaniýa gazanýanyndan köp töleýär, bu seýrek dowam edýär.';
+
+  @override
+  String get glossTitle => 'Bu näme aňladýar?';
 }

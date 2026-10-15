@@ -1886,4 +1886,103 @@ class AppLocalizationsIt extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nessuna connessione – vengono mostrati gli ultimi dati salvati ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Quanto vale l\'intera azienda in Borsa: prezzo dell\'azione × numero di azioni.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Quante azioni ha emesso l\'azienda. Se aumentano, ogni azione possiede una fetta più piccola; i riacquisti di azioni proprie le riducono.';
+
+  @override
+  String get glossPeTrailing =>
+      'Prezzo ÷ utile per azione degli ultimi 12 mesi: quanti anni di utile attuale stai pagando. Più basso è più economico, ma le aziende in forte crescita di solito hanno un P/E alto.';
+
+  @override
+  String get glossPeForward =>
+      'Come il P/E, ma con l\'utile che gli analisti si aspettano nei prossimi 12 mesi. Se è sotto il P/E storico, si prevede che gli utili crescano.';
+
+  @override
+  String get glossPb =>
+      'Prezzo ÷ valore contabile (attività meno debiti) per azione. Intorno a 1 significa che il mercato valuta l\'azienda quanto possiede sulla carta.';
+
+  @override
+  String get glossPs =>
+      'Valore di mercato ÷ ricavi annui. Utile per aziende con utili ancora scarsi o nulli; confrontalo nello stesso settore.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valore dell\'azienda incluso il debito (EV) ÷ la liquidità che genera in un anno dopo gli investimenti. Più basso significa più liquidità per il prezzo pagato.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ crescita annua attesa degli utili (%). Intorno a 1 è spesso considerato equo; mette il P/E in relazione alla crescita.';
+
+  @override
+  String get glossEps =>
+      'Utile per azione degli ultimi 12 mesi. Un EPS in crescita negli anni è uno dei segnali più forti di un\'azienda sana.';
+
+  @override
+  String get glossBeta =>
+      'Quanto il titolo tende a muoversi con il mercato: 1 = come il mercato, 1,5 = oscillazioni circa del 50% più ampie, sotto 1 = più tranquillo.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Vendite totali degli ultimi 12 mesi, prima di qualsiasi costo.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'L\'utile rimasto dopo tutti i costi, gli interessi e le tasse degli ultimi 12 mesi.';
+
+  @override
+  String get glossGrossMargin =>
+      'La quota dei ricavi che resta dopo i costi diretti dei prodotti. Un margine alto spesso indica potere sui prezzi.';
+
+  @override
+  String get glossOperatingMargin =>
+      'La quota dei ricavi che resta dopo i costi di gestione (stipendi, affitti, marketing), prima di interessi e tasse.';
+
+  @override
+  String get glossNetMargin =>
+      'La quota dei ricavi che diventa utile finale. 20% significa che su ogni 100 di vendite, 20 sono utile.';
+
+  @override
+  String get glossRoe =>
+      'Redditività del capitale proprio: utile annuo ÷ capitale dei proprietari. Mostra quanto bene il management usa i soldi degli azionisti; sopra il 15% circa è forte.';
+
+  @override
+  String get glossRoa =>
+      'Redditività degli attivi: utile annuo ÷ tutto ciò che l\'azienda possiede. Confrontalo nello stesso settore.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Debiti ÷ capitale dei proprietari. Più alto significa più denaro preso in prestito: più rischio quando i tassi salgono o gli affari rallentano.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Attività a breve termine ÷ pagamenti in scadenza entro un anno. Sopra 1 significa che l\'azienda può coprire i pagamenti a breve.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Quanto sono cresciuti i ricavi rispetto a un anno prima.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Quanto è cresciuto l\'utile per azione rispetto a un anno prima.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividendo annuo ÷ prezzo dell\'azione: l\'entrata in contanti che riceveresti ogni anno, in percentuale di quanto paghi.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Il dividendo pagato su una singola azione nell\'ultimo anno.';
+
+  @override
+  String get glossPayoutRatio =>
+      'La quota dell\'utile distribuita come dividendi. Sopra il 100% l\'azienda paga più di quanto guadagna, cosa che raramente dura.';
+
+  @override
+  String get glossTitle => 'Che cosa significa?';
 }

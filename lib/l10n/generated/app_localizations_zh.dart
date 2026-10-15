@@ -1805,6 +1805,83 @@ class AppLocalizationsZh extends AppLocalizations {
   String offlineBanner(String time) {
     return '无网络连接 – 正在显示上次保存的数据（$time）。';
   }
+
+  @override
+  String get glossMarketCap => '整个公司在股市上的价值：股价 × 股份数量。';
+
+  @override
+  String get glossSharesOutstanding => '公司已发行的股份数量。数量增加时，每股所占的份额变小；回购会使其减少。';
+
+  @override
+  String get glossPeTrailing =>
+      '股价 ÷ 过去 12 个月的每股收益：相当于您为多少年的当前利润付钱。越低越便宜，但高速成长的公司 P/E 通常较高。';
+
+  @override
+  String get glossPeForward =>
+      '与 P/E 类似，但使用分析师预期的未来 12 个月利润。低于滚动 P/E 意味着预计利润将增长。';
+
+  @override
+  String get glossPb => '股价 ÷ 每股账面价值（资产减去负债）。约为 1 表示市场对公司的估值相当于其账面上拥有的资产。';
+
+  @override
+  String get glossPs => '市值 ÷ 年营业收入。适用于利润还很少或尚无利润的公司；应在同一行业内比较。';
+
+  @override
+  String get glossEvToFcf => '包含债务的公司价值（EV）÷ 公司扣除投资后一年产生的现金。越低表示您付出的价格能换来更多现金。';
+
+  @override
+  String get glossPeg => 'P/E ÷ 预期年利润增长率（%）。约为 1 通常被视为合理；它把 P/E 放在增长的背景下来看。';
+
+  @override
+  String get glossEps => '过去 12 个月的每股利润。EPS 逐年上升是公司健康的最强信号之一。';
+
+  @override
+  String get glossBeta => '股票随大盘波动的程度：1 = 与大盘相同，1.5 = 波动约大 50%，低于 1 = 更平稳。';
+
+  @override
+  String get glossRevenueTtm => '过去 12 个月的销售总额，未扣除任何成本。';
+
+  @override
+  String get glossNetIncomeTtm => '过去 12 个月扣除所有成本、利息和税费后剩下的利润。';
+
+  @override
+  String get glossGrossMargin => '扣除产品直接成本后剩余收入所占的比例。毛利率高通常意味着定价能力强。';
+
+  @override
+  String get glossOperatingMargin => '扣除经营成本（工资、租金、营销）后、利息和税前剩余收入所占的比例。';
+
+  @override
+  String get glossNetMargin => '收入中最终成为利润的比例。20% 表示每 100 的销售额中有 20 是利润。';
+
+  @override
+  String get glossRoe => '净资产收益率：年利润 ÷ 股东的资本。显示管理层运用股东资金的效率；高于约 15% 算是强劲。';
+
+  @override
+  String get glossRoa => '总资产收益率：年利润 ÷ 公司拥有的全部资产。应在同一行业内比较。';
+
+  @override
+  String get glossDebtToEquity => '负债 ÷ 股东的资本。越高表示借来的钱越多：利率上升或业务放缓时风险更大。';
+
+  @override
+  String get glossCurrentRatio => '流动资产 ÷ 一年内到期的负债。高于 1 表示公司能够支付近期的账单。';
+
+  @override
+  String get glossRevenueGrowth => '营业收入与一年前相比增长了多少。';
+
+  @override
+  String get glossEpsGrowth => '每股收益与一年前相比增长了多少。';
+
+  @override
+  String get glossDividendYield => '年度股息 ÷ 股价：您每年可获得的现金收入，占您所付价格的百分比。';
+
+  @override
+  String get glossDividendPerShare => '过去一年每股派发的股息。';
+
+  @override
+  String get glossPayoutRatio => '利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。';
+
+  @override
+  String get glossTitle => '这是什么意思？';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3606,4 +3683,82 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String offlineBanner(String time) {
     return '沒有網絡連線 – 正在顯示上次儲存的數據（$time）。';
   }
+
+  @override
+  String get glossMarketCap => '整間公司在股市上的價值：股價 × 股份數目。';
+
+  @override
+  String get glossSharesOutstanding => '公司已發行的股份數目。數目增加時，每股所佔的份額變小；回購會令其減少。';
+
+  @override
+  String get glossPeTrailing =>
+      '股價 ÷ 過去 12 個月的每股盈利：即你為多少年的現時盈利付錢。越低越便宜，但增長快的公司 P/E 通常較高。';
+
+  @override
+  String get glossPeForward =>
+      '與 P/E 相似，但採用分析師預期未來 12 個月的盈利。低於歷史 P/E 即預期盈利會增長。';
+
+  @override
+  String get glossPb => '股價 ÷ 每股賬面值（資產減負債）。約 1 表示市場對公司的估值相當於其賬面上擁有的資產。';
+
+  @override
+  String get glossPs => '市值 ÷ 全年收入。適用於盈利仍然很少或未有盈利的公司；宜在同一行業內比較。';
+
+  @override
+  String get glossEvToFcf =>
+      '包括債務在內的公司價值（EV）÷ 公司扣除投資後一年產生的現金。越低表示你付出的價錢能換到更多現金。';
+
+  @override
+  String get glossPeg => 'P/E ÷ 預期每年盈利增長（%）。約 1 通常被視為合理；它從增長角度衡量 P/E。';
+
+  @override
+  String get glossEps => '過去 12 個月的每股盈利。EPS 逐年上升是公司健康的最強訊號之一。';
+
+  @override
+  String get glossBeta => '股票隨大市波動的程度：1 = 與大市一樣，1.5 = 波幅約大 50%，低於 1 = 較平穩。';
+
+  @override
+  String get glossRevenueTtm => '過去 12 個月的銷售總額，未扣除任何成本。';
+
+  @override
+  String get glossNetIncomeTtm => '過去 12 個月扣除所有成本、利息及稅項後剩下的盈利。';
+
+  @override
+  String get glossGrossMargin => '扣除產品直接成本後所剩收入的比例。毛利率高通常代表有定價能力。';
+
+  @override
+  String get glossOperatingMargin => '扣除營運成本（薪金、租金、市場推廣）後、未計利息及稅項前所剩收入的比例。';
+
+  @override
+  String get glossNetMargin => '收入中最終成為盈利的比例。20% 即每 100 銷售額中有 20 是盈利。';
+
+  @override
+  String get glossRoe => '股本回報率：全年盈利 ÷ 股東資本。反映管理層運用股東資金的成效；高於約 15% 屬強勁。';
+
+  @override
+  String get glossRoa => '資產回報率：全年盈利 ÷ 公司擁有的一切資產。宜在同一行業內比較。';
+
+  @override
+  String get glossDebtToEquity => '負債 ÷ 股東資本。越高代表借貸越多：利率上升或業務放緩時風險更大。';
+
+  @override
+  String get glossCurrentRatio => '流動資產 ÷ 一年內到期的負債。高於 1 表示公司能應付短期內要付的賬項。';
+
+  @override
+  String get glossRevenueGrowth => '收入較一年前增長了多少。';
+
+  @override
+  String get glossEpsGrowth => '每股盈利較一年前增長了多少。';
+
+  @override
+  String get glossDividendYield => '全年股息 ÷ 股價：你每年可收到的現金收入，以所付價錢的百分比計算。';
+
+  @override
+  String get glossDividendPerShare => '過去一年每股派發的股息。';
+
+  @override
+  String get glossPayoutRatio => '盈利中以股息派發的比例。超過 100% 即公司派發多於所賺，這情況很少能持續。';
+
+  @override
+  String get glossTitle => '這是甚麼意思？';
 }

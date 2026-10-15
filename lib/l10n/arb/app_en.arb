@@ -1382,5 +1382,105 @@
         "example": "Oct 15, 2026 09:12"
       }
     }
+  },
+  "glossMarketCap": "What the whole company is worth on the stock market: share price × number of shares.",
+  "@glossMarketCap": {
+    "description": "Plain-language explanation of the metric shown as labelMarketCap, opened from the info icon on the stock page."
+  },
+  "glossSharesOutstanding": "How many shares the company has issued. If it grows, each share owns a smaller slice; buybacks shrink it.",
+  "@glossSharesOutstanding": {
+    "description": "Plain-language explanation of the metric shown as labelSharesOutstanding, opened from the info icon on the stock page."
+  },
+  "glossPeTrailing": "Price ÷ earnings per share of the last 12 months: how many years of current profit you pay for. Lower is cheaper, but fast growers usually have a high P/E.",
+  "@glossPeTrailing": {
+    "description": "Plain-language explanation of the metric shown as labelPeTrailing, opened from the info icon on the stock page."
+  },
+  "glossPeForward": "Like P/E, but with the profit analysts expect for the next 12 months. Below the trailing P/E means profits are expected to grow.",
+  "@glossPeForward": {
+    "description": "Plain-language explanation of the metric shown as labelPeForward, opened from the info icon on the stock page."
+  },
+  "glossPb": "Price ÷ book value (assets minus debts) per share. Around 1 means the market values the company at what it owns on paper.",
+  "@glossPb": {
+    "description": "Plain-language explanation of the metric shown as labelPb, opened from the info icon on the stock page."
+  },
+  "glossPs": "Market value ÷ yearly revenue. Useful for companies with little or no profit yet; compare it within the same industry.",
+  "@glossPs": {
+    "description": "Plain-language explanation of the metric shown as labelPs, opened from the info icon on the stock page."
+  },
+  "glossEvToFcf": "Company value including debt (EV) ÷ the cash it generates in a year after investments. Lower means you get more cash for the price.",
+  "@glossEvToFcf": {
+    "description": "Plain-language explanation of the metric shown as labelEvToFcf, opened from the info icon on the stock page."
+  },
+  "glossPeg": "P/E ÷ expected yearly profit growth (%). Around 1 is often seen as fair; it puts the P/E in the light of growth.",
+  "@glossPeg": {
+    "description": "Plain-language explanation of the metric shown as labelPeg, opened from the info icon on the stock page."
+  },
+  "glossEps": "Profit per share over the last 12 months. Rising EPS over the years is one of the strongest signs of a healthy company.",
+  "@glossEps": {
+    "description": "Plain-language explanation of the metric shown as labelEps, opened from the info icon on the stock page."
+  },
+  "glossBeta": "How much the stock tends to move with the market: 1 = like the market, 1.5 = about 50% bigger swings, below 1 = calmer.",
+  "@glossBeta": {
+    "description": "Plain-language explanation of the metric shown as labelBeta, opened from the info icon on the stock page."
+  },
+  "glossRevenueTtm": "Total sales of the last 12 months, before any costs.",
+  "@glossRevenueTtm": {
+    "description": "Plain-language explanation of the metric shown as labelRevenueTtm, opened from the info icon on the stock page."
+  },
+  "glossNetIncomeTtm": "Profit left after all costs, interest and taxes over the last 12 months.",
+  "@glossNetIncomeTtm": {
+    "description": "Plain-language explanation of the metric shown as labelNetIncomeTtm, opened from the info icon on the stock page."
+  },
+  "glossGrossMargin": "The share of revenue left after the direct cost of the products. A high margin often means pricing power.",
+  "@glossGrossMargin": {
+    "description": "Plain-language explanation of the metric shown as labelGrossMargin, opened from the info icon on the stock page."
+  },
+  "glossOperatingMargin": "The share of revenue left after running the business (wages, rent, marketing), before interest and taxes.",
+  "@glossOperatingMargin": {
+    "description": "Plain-language explanation of the metric shown as labelOperatingMargin, opened from the info icon on the stock page."
+  },
+  "glossNetMargin": "The share of revenue that ends up as final profit. 20% means 20 of every 100 in sales is profit.",
+  "@glossNetMargin": {
+    "description": "Plain-language explanation of the metric shown as labelNetMargin, opened from the info icon on the stock page."
+  },
+  "glossRoe": "Return on equity: yearly profit ÷ the owners' capital. Shows how well management uses shareholders' money; above about 15% is strong.",
+  "@glossRoe": {
+    "description": "Plain-language explanation of the metric shown as labelRoe, opened from the info icon on the stock page."
+  },
+  "glossRoa": "Return on assets: yearly profit ÷ everything the company owns. Compare it within the same industry.",
+  "@glossRoa": {
+    "description": "Plain-language explanation of the metric shown as labelRoa, opened from the info icon on the stock page."
+  },
+  "glossDebtToEquity": "Debts ÷ the owners' capital. Higher means more borrowed money: more risk when rates rise or business slows.",
+  "@glossDebtToEquity": {
+    "description": "Plain-language explanation of the metric shown as labelDebtToEquity, opened from the info icon on the stock page."
+  },
+  "glossCurrentRatio": "Short-term assets ÷ bills due within a year. Above 1 means the company can cover its near-term bills.",
+  "@glossCurrentRatio": {
+    "description": "Plain-language explanation of the metric shown as labelCurrentRatio, opened from the info icon on the stock page."
+  },
+  "glossRevenueGrowth": "How much revenue grew compared with a year earlier.",
+  "@glossRevenueGrowth": {
+    "description": "Plain-language explanation of the metric shown as labelRevenueGrowth, opened from the info icon on the stock page."
+  },
+  "glossEpsGrowth": "How much profit per share grew compared with a year earlier.",
+  "@glossEpsGrowth": {
+    "description": "Plain-language explanation of the metric shown as labelEpsGrowth, opened from the info icon on the stock page."
+  },
+  "glossDividendYield": "Yearly dividend ÷ share price: the cash income you would get per year, as a percentage of what you pay.",
+  "@glossDividendYield": {
+    "description": "Plain-language explanation of the metric shown as labelDividendYield, opened from the info icon on the stock page."
+  },
+  "glossDividendPerShare": "The dividend paid on one share over the last year.",
+  "@glossDividendPerShare": {
+    "description": "Plain-language explanation of the metric shown as labelDividendPerShare, opened from the info icon on the stock page."
+  },
+  "glossPayoutRatio": "The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.",
+  "@glossPayoutRatio": {
+    "description": "Plain-language explanation of the metric shown as labelPayoutRatio, opened from the info icon on the stock page."
+  },
+  "glossTitle": "What does it mean?",
+  "@glossTitle": {
+    "description": "Dialog title of a metric explanation."
   }
 }

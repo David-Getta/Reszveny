@@ -1888,4 +1888,103 @@ class AppLocalizationsOm extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Walqunnamtiin hin jiru – odeeffannoon dhuma irratti olkaa\'ame agarsiifamaa jira ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Gatii dhaabbatichi guutummaatti gabaa aksiyoonaa irratti qabu: gatii aksiyoonaa × baay\'ina aksiyoonotaa.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Aksiyoonota meeqa akka dhaabbatichi raabse. Yoo baay\'atan, aksiyoonni tokko tokkoon qooda xiqqaa qaba; deebisanii bituun ni hir\'isa.';
+
+  @override
+  String get glossPeTrailing =>
+      'Gatii ÷ bu\'aa aksiyoona tokkoo ji\'oota 12 darban: bu\'aa ammaa waggaa meeqaaf akka kaffaltu. Kan gadi aanu rakasa, garuu dhaabbileen saffisaan guddatan yeroo baay\'ee P/E ol\'aanaa qabu.';
+
+  @override
+  String get glossPeForward =>
+      'Akkuma P/E, garuu bu\'aa xiinxaltoonni ji\'oota 12 itti aananiif eegan fayyadamuun. Yoo P/E (kan darbe) gadi ta\'e, bu\'aan ni guddata jedhamee eegama.';
+
+  @override
+  String get glossPb =>
+      'Gatii ÷ gatii galmee (qabeenya irraa liqii hir\'isuun) aksiyoona tokkoof. Naannoo 1 jechuun gabaan dhaabbaticha waan waraqaa irratti qabuun madaala.';
+
+  @override
+  String get glossPs =>
+      'Gatii gabaa ÷ galii waggaa. Dhaabbilee bu\'aa xiqqaa ykn homaa hin qabneef gargaara; industirii tokko keessatti wal bira qabi.';
+
+  @override
+  String get glossEvToFcf =>
+      'Gatii dhaabbatichaa liqii dabalatee (EV) ÷ maallaqa inni erga invastimantii booda waggaatti argatu. Kan gadi aanu jechuun gatii kaffalteef maallaqa caalu argatta.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ guddina bu\'aa waggaa eegamu (%). Naannoo 1 yeroo baay\'ee madaalawaa jedhamee ilaalama; P/E guddina waliin madaala.';
+
+  @override
+  String get glossEps =>
+      'Bu\'aa aksiyoona tokkoo ji\'oota 12 darban keessatti. EPS waggaa waggaan dabalu mallattoowwan dhaabbata fayya qabeessa ta\'e keessaa isa cimaa tokko.';
+
+  @override
+  String get glossBeta =>
+      'Aksiyoonni gabaa waliin hammam akka sochoothu: 1 = akka gabaa, 1.5 = jijjiirama naannoo 50% caalu, 1 gadi = tasgabbaawaa.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Gurgurtaa waliigalaa ji\'oota 12 darbanii, baasii kamiyyuu dura.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Bu\'aa erga baasii hunda, dhala fi gibira booda hafe, ji\'oota 12 darban keessatti.';
+
+  @override
+  String get glossGrossMargin =>
+      'Qooda galii erga baasii kallattii oomishaa booda hafu. Marjiniin ol\'aanaan yeroo baay\'ee humna gatii murteessuu agarsiisa.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Qooda galii erga baasii hojii (mindaa, kiraa, gabeessaa) booda hafu, dhalaa fi gibiraan dura.';
+
+  @override
+  String get glossNetMargin =>
+      'Qooda galii bu\'aa dhumaa ta\'u. 20% jechuun gurgurtaa 100 hunda keessaa 20n bu\'aa dha.';
+
+  @override
+  String get glossRoe =>
+      'Deebii kaappitaalaa: bu\'aa waggaa ÷ kaappitaala abbootii. Hoggansi maallaqa abbootii aksiyoonaa hammam gaarii itti fayyadamu agarsiisa; naannoo 15% ol cimaa dha.';
+
+  @override
+  String get glossRoa =>
+      'Deebii qabeenyaa: bu\'aa waggaa ÷ qabeenya dhaabbatichi qabu hunda. Industirii tokko keessatti wal bira qabi.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Liqii ÷ kaappitaala abbootii. Kan ol\'aanu maallaqa liqeeffame caalaa jechuudha: dhalli yoo dabale ykn daldalli yoo laafe balaa guddaa.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Qabeenya yeroo gabaabaa ÷ kaffaltii waggaa tokko keessatti kaffalamuu qabu. 1 ol jechuun dhaabbatichi kaffaltii dhihoo isaa kaffaluu danda\'a.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Galiin bara darbe waliin yoo wal bira qabamu hammam akka guddate.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Bu\'aan aksiyoona tokkoo bara darbe waliin yoo wal bira qabamu hammam akka guddate.';
+
+  @override
+  String get glossDividendYield =>
+      'Qooda bu\'aa waggaa ÷ gatii aksiyoonaa: galii maallaqaa waggaatti argattu, dhibbeentaa waan kaffalteetiin.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Qooda bu\'aa aksiyoona tokkoof bara darbe kaffalame.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Bu\'aa keessaa hammi isaa akka qooda bu\'aatti raabsamu. 100% ol yoo ta\'e dhaabbatichi waan argatu caalaa kaffala, kun immoo yeroo dheeraa hin turu.';
+
+  @override
+  String get glossTitle => 'Maal jechuudha?';
 }

@@ -1882,4 +1882,103 @@ class AppLocalizationsSv extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ingen anslutning – visar senast sparade data ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Vad hela bolaget är värt på börsen: aktiekurs × antal aktier.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hur många aktier bolaget har gett ut. Ökar antalet äger varje aktie en mindre del; återköp minskar det.';
+
+  @override
+  String get glossPeTrailing =>
+      'Kurs ÷ vinst per aktie de senaste 12 månaderna: hur många år av nuvarande vinst du betalar för. Lägre är billigare, men snabbväxande bolag har oftast högt P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Som P/E, men med den vinst analytikerna väntar sig de kommande 12 månaderna. Lägre än det historiska P/E betyder att vinsten väntas växa.';
+
+  @override
+  String get glossPb =>
+      'Kurs ÷ bokfört värde (tillgångar minus skulder) per aktie. Runt 1 betyder att marknaden värderar bolaget till vad det äger på papperet.';
+
+  @override
+  String get glossPs =>
+      'Marknadsvärde ÷ årlig omsättning. Användbart för bolag med liten eller ingen vinst ännu; jämför inom samma bransch.';
+
+  @override
+  String get glossEvToFcf =>
+      'Bolagets värde inklusive skulder (EV) ÷ pengarna det genererar på ett år efter investeringar. Lägre betyder att du får mer pengar för priset.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ förväntad årlig vinsttillväxt (%). Runt 1 ses ofta som rimligt; det sätter P/E i ljuset av tillväxten.';
+
+  @override
+  String get glossEps =>
+      'Vinst per aktie de senaste 12 månaderna. Ett EPS som stiger år efter år är ett av de starkaste tecknen på ett friskt bolag.';
+
+  @override
+  String get glossBeta =>
+      'Hur mycket aktien brukar röra sig med marknaden: 1 = som marknaden, 1,5 = ungefär 50 % större svängningar, under 1 = lugnare.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total försäljning de senaste 12 månaderna, före alla kostnader.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Vinsten som blir kvar efter alla kostnader, räntor och skatter de senaste 12 månaderna.';
+
+  @override
+  String get glossGrossMargin =>
+      'Andelen av omsättningen som blir kvar efter produkternas direkta kostnader. Hög marginal tyder ofta på prissättningsmakt.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Andelen av omsättningen som blir kvar efter driften av verksamheten (löner, hyra, marknadsföring), före räntor och skatter.';
+
+  @override
+  String get glossNetMargin =>
+      'Andelen av omsättningen som blir slutlig vinst. 20 % betyder att 20 av varje 100 i försäljning är vinst.';
+
+  @override
+  String get glossRoe =>
+      'Avkastning på eget kapital: årsvinst ÷ ägarnas kapital. Visar hur väl ledningen använder aktieägarnas pengar; över cirka 15 % är starkt.';
+
+  @override
+  String get glossRoa =>
+      'Avkastning på tillgångar: årsvinst ÷ allt bolaget äger. Jämför inom samma bransch.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Skulder ÷ ägarnas kapital. Högre betyder mer lånade pengar: större risk när räntorna stiger eller affärerna går sämre.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kortfristiga tillgångar ÷ skulder som förfaller inom ett år. Över 1 betyder att bolaget kan betala sina närmaste räkningar.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hur mycket omsättningen har ökat jämfört med ett år tidigare.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hur mycket vinsten per aktie har ökat jämfört med ett år tidigare.';
+
+  @override
+  String get glossDividendYield =>
+      'Årlig utdelning ÷ aktiekurs: den kontanta avkastning du skulle få per år, i procent av vad du betalar.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Utdelningen som betalats per aktie det senaste året.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Andelen av vinsten som delas ut. Över 100 % delar bolaget ut mer än det tjänar, vilket sällan håller i längden.';
+
+  @override
+  String get glossTitle => 'Vad betyder det?';
 }

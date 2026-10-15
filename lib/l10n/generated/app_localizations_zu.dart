@@ -1888,4 +1888,103 @@ class AppLocalizationsZu extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Alukho uxhumano – kuboniswa idatha egcinwe ekugcineni ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Inani lenkampani yonke emakethe yamasheya: intengo yesheya × inani lamasheya.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Inani lamasheya inkampani ewakhiphile. Uma likhula, isheya ngalinye linengxenye encane; ukuthenga kabusha amasheya kuyalinciphisa.';
+
+  @override
+  String get glossPeTrailing =>
+      'Intengo ÷ inzuzo ngesheya ngalinye yezinyanga ezingu-12 ezedlule: ukhokhela iminyaka emingaki yenzuzo yamanje. Ephansi ishibhile, kodwa izinkampani ezikhula ngokushesha zivame ukuba ne-P/E ephezulu.';
+
+  @override
+  String get glossPeForward =>
+      'Njenge-P/E, kodwa ngenzuzo abahlaziyi abayilindele ezinyangeni ezingu-12 ezizayo. Uma iphansi kune-P/E edlule, inzuzo kulindeleke ukuthi ikhule.';
+
+  @override
+  String get glossPb =>
+      'Intengo ÷ inani lasezincwadini (izimpahla kususwe izikweletu) ngesheya ngalinye. Cishe u-1 kusho ukuthi imakethe ilinganisa inkampani ngalokho enakho ephepheni.';
+
+  @override
+  String get glossPs =>
+      'Inani lemakethe ÷ imali engenayo yonyaka. Kuwusizo ezinkampanini ezinenzuzo encane noma ezingenayo okwamanje; qhathanisa ngaphakathi embonini eyodwa.';
+
+  @override
+  String get glossEvToFcf =>
+      'Inani lenkampani kuhlanganise nesikweletu (EV) ÷ imali eyenzayo ngonyaka ngemva kokutshala imali. Ephansi isho ukuthi uthola imali eningi ngentengo oyikhokhayo.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ukukhula kwenzuzo yonyaka okulindelekile (%). Cishe u-1 kuvame ukubhekwa njengokulungile; ibheka i-P/E ngokokukhula.';
+
+  @override
+  String get glossEps =>
+      'Inzuzo ngesheya ngalinye ezinyangeni ezingu-12 ezedlule. I-EPS ekhuphuka unyaka nonyaka ingesinye sezimpawu eziqine kakhulu zenkampani ephilile.';
+
+  @override
+  String get glossBeta =>
+      'Isheya livame ukunyakaza kangakanani nemakethe: 1 = njengemakethe, 1.5 = ukushintsha okukhulu ngokucishe kube ngu-50%, ngaphansi kuka-1 = kuzolile kakhulu.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Konke okuthengisiwe ezinyangeni ezingu-12 ezedlule, ngaphambi kwanoma yiziphi izindleko.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Inzuzo esele ngemva kwazo zonke izindleko, inzalo nentela ezinyangeni ezingu-12 ezedlule.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ingxenye yemali engenayo esala ngemva kwezindleko eziqondile zemikhiqizo. Imajini ephezulu ivame ukukhombisa amandla okubeka amanani.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ingxenye yemali engenayo esala ngemva kwezindleko zokuqhuba ibhizinisi (amaholo, irenti, ukumaketha), ngaphambi kwenzalo nentela.';
+
+  @override
+  String get glossNetMargin =>
+      'Ingxenye yemali engenayo eba yinzuzo yokugcina. 20% kusho ukuthi kukho konke okungu-100 okuthengisiwe, okungu-20 kuyinzuzo.';
+
+  @override
+  String get glossRoe =>
+      'Imbuyiselo ku-equity: inzuzo yonyaka ÷ imali yabanikazi. Ikhombisa ukuthi abaphathi bayisebenzisa kahle kangakanani imali yabanikazi bamasheya; ngaphezu kuka-15% cishe kuqinile.';
+
+  @override
+  String get glossRoa =>
+      'Imbuyiselo ezimpahleni: inzuzo yonyaka ÷ konke okungokwenkampani. Qhathanisa ngaphakathi embonini eyodwa.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Izikweletu ÷ imali yabanikazi. Ephezulu isho imali eningi ebolekiwe: ingozi enkulu lapho inzalo inyuka noma ibhizinisi lehla.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Izimpahla zesikhathi esifushane ÷ izikweletu okumele zikhokhwe phakathi konyaka. Ngaphezu kuka-1 kusho ukuthi inkampani ingakhokha izikweletu zayo eziseduze.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Imali engenayo ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Inzuzo ngesheya ngalinye ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
+
+  @override
+  String get glossDividendYield =>
+      'I-dividend yonyaka ÷ intengo yesheya: imali obungayithola ngonyaka, njengephesenti yalokho okukhokhayo.';
+
+  @override
+  String get glossDividendPerShare =>
+      'I-dividend ekhokhelwe isheya elilodwa onyakeni odlule.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ingxenye yenzuzo ekhokhwa njenge-dividend. Ngaphezu kuka-100% inkampani ikhokha okungaphezu kwalokho ekutholayo, okungavamile ukuhlala isikhathi eside.';
+
+  @override
+  String get glossTitle => 'Kusho ukuthini?';
 }

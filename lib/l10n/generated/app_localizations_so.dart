@@ -1888,4 +1888,103 @@ class AppLocalizationsSo extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Xiriir ma jiro – waxaa la muujinayaa xogtii ugu dambeysay ee la keydiyay ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Inta ay shirkadda oo dhan ku qiimaysan tahay suuqa saamiyada: qiimaha saamiga × tirada saamiyada.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Inta saami ee ay shirkaddu bixisay. Haddii ay korodho, saami kastaa wuxuu yeeshaa qayb ka yar; dib-u-iibsashada saamiyadu way yareysaa.';
+
+  @override
+  String get glossPeTrailing =>
+      'Qiimaha ÷ faa\'iidada saamigiiba ee 12-kii bilood ee la soo dhaafay: imisa sano oo faa\'iidada hadda ah ayaad bixinaysaa. Ka hooseeya waa ka jaban yahay, laakiin shirkadaha si degdeg ah u kora badanaa P/E sare ayay leeyihiin.';
+
+  @override
+  String get glossPeForward =>
+      'Sida P/E, laakiin waxaa lagu xisaabiyaa faa\'iidada ay falanqeeyayaashu filayaan 12-ka bilood ee soo socda. Haddii uu ka hooseeyo P/E-ga taariikhiga ah, faa\'iidada ayaa la filayaa inay korodho.';
+
+  @override
+  String get glossPb =>
+      'Qiimaha ÷ qiimaha buugga (hantida laga jaray deymaha) saamigiiba. Qiyaastii 1 waxay ka dhigan tahay in suuqu shirkadda ku qiimeeyo waxa ay warqad ahaan leedahay.';
+
+  @override
+  String get glossPs =>
+      'Qiimaha suuqa ÷ dakhliga sanadlaha ah. Waxtar u leh shirkadaha weli faa\'iido yar leh ama aan lahayn; is barbar dhig isla qaybta ganacsiga.';
+
+  @override
+  String get glossEvToFcf =>
+      'Qiimaha shirkadda oo deynta lagu daray (EV) ÷ lacagta ay sannadkii abuurto maalgashiga kadib. Ka hooseeya wuxuu ka dhigan yahay inaad qiimaha aad bixiso lacag badan ka hesho.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kororka faa\'iidada sanadlaha ah ee la filayo (%). Qiyaastii 1 badanaa waxaa loo arkaa mid cadaalad ah; wuxuu P/E-ga ku eegaa iftiinka kororka.';
+
+  @override
+  String get glossEps =>
+      'Faa\'iidada saamigiiba 12-kii bilood ee la soo dhaafay. EPS sanad ka sanad kordhaya waa mid ka mid ah calaamadaha ugu xooggan ee shirkad caafimaad qabta.';
+
+  @override
+  String get glossBeta =>
+      'Inta saamigu caadi ahaan la dhaqaaqo suuqa: 1 = sida suuqa, 1.5 = isbeddello qiyaastii 50% ka weyn, ka hooseeya 1 = ka deggan.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Wadarta iibka 12-kii bilood ee la soo dhaafay, ka hor kharash kasta.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Faa\'iidada hadhay kadib dhammaan kharashaadka, dulsaarka iyo canshuuraha 12-kii bilood ee la soo dhaafay.';
+
+  @override
+  String get glossGrossMargin =>
+      'Qaybta dakhliga ee hadha kadib kharashka tooska ah ee alaabta. Heer sare wuxuu badanaa muujiyaa awood lagu dejiyo qiimaha.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Qaybta dakhliga ee hadha kadib kharashka socodsiinta ganacsiga (mushaharka, kirada, suuq-geynta), ka hor dulsaarka iyo canshuuraha.';
+
+  @override
+  String get glossNetMargin =>
+      'Qaybta dakhliga ee noqota faa\'iidada ugu dambeysa. 20% waxay ka dhigan tahay in 100 kasta oo iib ah, 20 ay faa\'iido yihiin.';
+
+  @override
+  String get glossRoe =>
+      'Soo-celinta raasumaalka: faa\'iidada sanadlaha ah ÷ raasumaalka milkiilayaasha. Waxay muujinaysaa sida maamulku si fiican ugu isticmaalo lacagta saamilayda; ka sarreysa qiyaastii 15% waa xoog.';
+
+  @override
+  String get glossRoa =>
+      'Soo-celinta hantida: faa\'iidada sanadlaha ah ÷ wax kasta oo ay shirkaddu leedahay. Is barbar dhig isla qaybta ganacsiga.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Deymaha ÷ raasumaalka milkiilayaasha. Ka sarreeya wuxuu ka dhigan yahay lacag deyn ah oo badan: khatar badan marka dulsaarku kordho ama ganacsigu gaabiyo.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Hantida muddada gaaban ÷ biilasha la bixinayo sannad gudihii. Ka sarreysa 1 waxay ka dhigan tahay in shirkaddu bixin karto biilasheeda dhow.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Inta dakhligu kordhay marka loo eego sannad ka hor.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Inta faa\'iidada saamigiiba kordhay marka loo eego sannad ka hor.';
+
+  @override
+  String get glossDividendYield =>
+      'Qaybta faa\'iidada sanadlaha ah ÷ qiimaha saamiga: dakhliga lacageed ee aad sannadkii heli lahayd, boqolkiiba ahaan waxa aad bixisay.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Qaybta faa\'iidada ee lagu bixiyay hal saami sannadkii la soo dhaafay.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Qaybta faa\'iidada ee loo qaybiyo saamilayda. Ka sarreysa 100% shirkaddu waxay bixinaysaa wax ka badan inta ay kasbato, taas oo dhif ah inay sii socoto.';
+
+  @override
+  String get glossTitle => 'Maxay ka dhigan tahay?';
 }

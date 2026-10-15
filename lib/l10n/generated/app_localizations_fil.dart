@@ -1887,4 +1887,103 @@ class AppLocalizationsFil extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Walang koneksyon – ipinapakita ang huling na-save na data ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Kung magkano ang halaga ng buong kumpanya sa stock market: presyo ng share × bilang ng shares.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Ilang share ang inilabas ng kumpanya. Kapag dumami ito, mas maliit na bahagi ang hawak ng bawat share; binabawasan ito ng buyback.';
+
+  @override
+  String get glossPeTrailing =>
+      'Presyo ÷ kita kada share sa nakaraang 12 buwan: ilang taon ng kasalukuyang tubo ang binabayaran mo. Mas mababa ay mas mura, pero karaniwang mataas ang P/E ng mabilis lumagong kumpanya.';
+
+  @override
+  String get glossPeForward =>
+      'Tulad ng P/E, pero gamit ang tubong inaasahan ng mga analyst sa susunod na 12 buwan. Kapag mas mababa sa trailing P/E, inaasahang lalago ang tubo.';
+
+  @override
+  String get glossPb =>
+      'Presyo ÷ book value (assets bawas utang) kada share. Kapag mga 1, pinahahalagahan ng merkado ang kumpanya ayon sa pag-aari nito sa papel.';
+
+  @override
+  String get glossPs =>
+      'Halaga sa merkado ÷ taunang kita. Kapaki-pakinabang sa mga kumpanyang kaunti o wala pang tubo; ikumpara sa loob ng parehong industriya.';
+
+  @override
+  String get glossEvToFcf =>
+      'Halaga ng kumpanya kasama ang utang (EV) ÷ ang cash na nalilikha nito sa isang taon matapos ang mga puhunan. Kapag mas mababa, mas maraming cash ang makukuha mo sa presyo.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ inaasahang taunang paglago ng tubo (%). Kadalasang itinuturing na patas ang mga 1; inilalagay nito ang P/E sa konteksto ng paglago.';
+
+  @override
+  String get glossEps =>
+      'Tubo kada share sa nakaraang 12 buwan. Ang EPS na tumataas sa paglipas ng mga taon ay isa sa pinakamatibay na palatandaan ng malusog na kumpanya.';
+
+  @override
+  String get glossBeta =>
+      'Gaano kalaki ang galaw ng stock kasabay ng merkado: 1 = tulad ng merkado, 1.5 = mga 50% mas malaking galaw, mas mababa sa 1 = mas kalmado.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Kabuuang benta sa nakaraang 12 buwan, bago ang anumang gastos.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Tubong natira matapos ang lahat ng gastos, interes at buwis sa nakaraang 12 buwan.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ang bahagi ng kita na natitira matapos ang direktang gastos ng mga produkto. Ang mataas na margin ay kadalasang tanda ng kapangyarihan sa pagpepresyo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ang bahagi ng kita na natitira matapos patakbuhin ang negosyo (sahod, upa, marketing), bago ang interes at buwis.';
+
+  @override
+  String get glossNetMargin =>
+      'Ang bahagi ng kita na nagiging huling tubo. Ang 20% ay nangangahulugang 20 sa bawat 100 na benta ay tubo.';
+
+  @override
+  String get glossRoe =>
+      'Return on equity: taunang tubo ÷ kapital ng mga may-ari. Ipinapakita kung gaano kahusay ginagamit ng pamunuan ang pera ng mga shareholder; malakas kapag lampas sa mga 15%.';
+
+  @override
+  String get glossRoa =>
+      'Return on assets: taunang tubo ÷ lahat ng pag-aari ng kumpanya. Ikumpara sa loob ng parehong industriya.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Utang ÷ kapital ng mga may-ari. Kapag mas mataas, mas maraming hiniram na pera: mas malaking panganib kapag tumaas ang interes o bumagal ang negosyo.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Panandaliang assets ÷ mga bayaring dapat bayaran sa loob ng isang taon. Kapag lampas sa 1, kayang bayaran ng kumpanya ang malapit na mga bayarin.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Gaano lumago ang kita kumpara noong isang taon.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Gaano lumago ang tubo kada share kumpara noong isang taon.';
+
+  @override
+  String get glossDividendYield =>
+      'Taunang dibidendo ÷ presyo ng share: ang cash na kita na makukuha mo bawat taon, bilang porsiyento ng iyong ibinayad.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Ang dibidendong ibinayad sa isang share sa nakaraang taon.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ang bahagi ng tubo na ibinabayad bilang dibidendo. Kapag lampas sa 100%, mas malaki ang ibinabayad ng kumpanya kaysa sa kinikita nito, na bihirang tumagal.';
+
+  @override
+  String get glossTitle => 'Ano ang ibig sabihin?';
 }

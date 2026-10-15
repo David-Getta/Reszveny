@@ -1885,4 +1885,103 @@ class AppLocalizationsAf extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Geen verbinding nie – die laaste gestoorde data word gewys ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Wat die hele maatskappy op die aandelemark werd is: aandeelprys × aantal aandele.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hoeveel aandele die maatskappy uitgereik het. As dit groei, besit elke aandeel \'n kleiner sny; terugkope verklein dit.';
+
+  @override
+  String get glossPeTrailing =>
+      'Prys ÷ wins per aandeel van die afgelope 12 maande: vir hoeveel jaar se huidige wins jy betaal. Laer is goedkoper, maar vinnige groeiers het gewoonlik \'n hoë P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Soos P/E, maar met die wins wat ontleders vir die volgende 12 maande verwag. Onder die historiese P/E beteken dat wins na verwagting sal groei.';
+
+  @override
+  String get glossPb =>
+      'Prys ÷ boekwaarde (bates min skuld) per aandeel. Om en by 1 beteken die mark waardeer die maatskappy teen wat dit op papier besit.';
+
+  @override
+  String get glossPs =>
+      'Markwaarde ÷ jaarlikse omset. Nuttig vir maatskappye met min of nog geen wins nie; vergelyk dit binne dieselfde bedryf.';
+
+  @override
+  String get glossEvToFcf =>
+      'Maatskappywaarde insluitend skuld (EV) ÷ die kontant wat dit in \'n jaar ná beleggings genereer. Laer beteken jy kry meer kontant vir die prys.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ verwagte jaarlikse winsgroei (%). Om en by 1 word dikwels as billik beskou; dit plaas die P/E in die lig van groei.';
+
+  @override
+  String get glossEps =>
+      'Wins per aandeel oor die afgelope 12 maande. Stygende EPS oor die jare is een van die sterkste tekens van \'n gesonde maatskappy.';
+
+  @override
+  String get glossBeta =>
+      'Hoeveel die aandeel geneig is om saam met die mark te beweeg: 1 = soos die mark, 1,5 = sowat 50% groter swaaie, onder 1 = kalmer.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Totale verkope van die afgelope 12 maande, voor enige koste.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Wins wat oorbly ná alle koste, rente en belasting oor die afgelope 12 maande.';
+
+  @override
+  String get glossGrossMargin =>
+      'Die deel van die omset wat oorbly ná die direkte koste van die produkte. \'n Hoë marge dui dikwels op prysmag.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Die deel van die omset wat oorbly ná die bedryf van die besigheid (salarisse, huur, bemarking), voor rente en belasting.';
+
+  @override
+  String get glossNetMargin =>
+      'Die deel van die omset wat as finale wins eindig. 20% beteken 20 uit elke 100 in verkope is wins.';
+
+  @override
+  String get glossRoe =>
+      'Opbrengs op ekwiteit: jaarlikse wins ÷ die eienaars se kapitaal. Wys hoe goed die bestuur aandeelhouers se geld gebruik; bo sowat 15% is sterk.';
+
+  @override
+  String get glossRoa =>
+      'Opbrengs op bates: jaarlikse wins ÷ alles wat die maatskappy besit. Vergelyk dit binne dieselfde bedryf.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Skuld ÷ die eienaars se kapitaal. Hoër beteken meer geleende geld: meer risiko wanneer rentekoerse styg of sake verslap.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Korttermynbates ÷ rekeninge wat binne \'n jaar betaalbaar is. Bo 1 beteken die maatskappy kan sy naby-termyn rekeninge dek.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hoeveel die omset gegroei het teenoor \'n jaar vroeër.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hoeveel die wins per aandeel gegroei het teenoor \'n jaar vroeër.';
+
+  @override
+  String get glossDividendYield =>
+      'Jaarlikse dividend ÷ aandeelprys: die kontantinkomste wat jy per jaar sou kry, as \'n persentasie van wat jy betaal.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Die dividend wat oor die afgelope jaar op een aandeel betaal is.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Die deel van die wins wat as dividende uitbetaal word. Bo 100% betaal die maatskappy meer as wat dit verdien, wat selde hou.';
+
+  @override
+  String get glossTitle => 'Wat beteken dit?';
 }

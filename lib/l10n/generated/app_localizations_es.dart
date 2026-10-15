@@ -1886,4 +1886,103 @@ class AppLocalizationsEs extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Sin conexión – se muestran los últimos datos guardados ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Lo que vale toda la empresa en bolsa: precio de la acción × número de acciones.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Cuántas acciones ha emitido la empresa. Si aumentan, cada acción posee una porción más pequeña; las recompras las reducen.';
+
+  @override
+  String get glossPeTrailing =>
+      'Precio ÷ beneficio por acción de los últimos 12 meses: cuántos años del beneficio actual pagas. Más bajo es más barato, pero las empresas que crecen rápido suelen tener un P/E alto.';
+
+  @override
+  String get glossPeForward =>
+      'Como el P/E, pero con el beneficio que esperan los analistas para los próximos 12 meses. Si está por debajo del P/E histórico, se espera que el beneficio crezca.';
+
+  @override
+  String get glossPb =>
+      'Precio ÷ valor contable (activos menos deudas) por acción. Alrededor de 1 significa que el mercado valora la empresa por lo que posee sobre el papel.';
+
+  @override
+  String get glossPs =>
+      'Valor de mercado ÷ ingresos anuales. Útil para empresas con poco o ningún beneficio todavía; compáralo dentro del mismo sector.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valor de la empresa incluida la deuda (EV) ÷ la caja que genera en un año después de inversiones. Más bajo significa que obtienes más caja por el precio.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ crecimiento anual esperado del beneficio (%). Alrededor de 1 suele considerarse justo; pone el P/E en relación con el crecimiento.';
+
+  @override
+  String get glossEps =>
+      'Beneficio por acción de los últimos 12 meses. Un EPS que sube año tras año es una de las señales más fuertes de una empresa sana.';
+
+  @override
+  String get glossBeta =>
+      'Cuánto tiende a moverse la acción con el mercado: 1 = como el mercado, 1,5 = oscilaciones un 50% mayores, menos de 1 = más tranquila.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ventas totales de los últimos 12 meses, antes de cualquier coste.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Beneficio que queda tras todos los costes, intereses e impuestos de los últimos 12 meses.';
+
+  @override
+  String get glossGrossMargin =>
+      'La parte de los ingresos que queda tras el coste directo de los productos. Un margen alto suele indicar poder para fijar precios.';
+
+  @override
+  String get glossOperatingMargin =>
+      'La parte de los ingresos que queda tras hacer funcionar el negocio (sueldos, alquiler, marketing), antes de intereses e impuestos.';
+
+  @override
+  String get glossNetMargin =>
+      'La parte de los ingresos que acaba como beneficio final. 20% significa que 20 de cada 100 en ventas son beneficio.';
+
+  @override
+  String get glossRoe =>
+      'Rentabilidad del capital (ROE): beneficio anual ÷ el capital de los propietarios. Muestra lo bien que la dirección usa el dinero de los accionistas; por encima de un 15% aprox. es fuerte.';
+
+  @override
+  String get glossRoa =>
+      'Rentabilidad de los activos (ROA): beneficio anual ÷ todo lo que posee la empresa. Compárala dentro del mismo sector.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Deudas ÷ el capital de los propietarios. Más alto significa más dinero prestado: más riesgo cuando suben los tipos o el negocio se frena.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Activos a corto plazo ÷ pagos que vencen en un año. Por encima de 1 significa que la empresa puede cubrir sus pagos cercanos.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Cuánto crecieron los ingresos respecto a un año antes.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Cuánto creció el beneficio por acción respecto a un año antes.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividendo anual ÷ precio de la acción: los ingresos en efectivo que recibirías al año, como porcentaje de lo que pagas.';
+
+  @override
+  String get glossDividendPerShare =>
+      'El dividendo pagado por una acción durante el último año.';
+
+  @override
+  String get glossPayoutRatio =>
+      'La parte del beneficio que se reparte como dividendos. Por encima del 100% la empresa paga más de lo que gana, algo que rara vez dura.';
+
+  @override
+  String get glossTitle => '¿Qué significa?';
 }

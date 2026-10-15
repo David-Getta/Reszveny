@@ -1893,4 +1893,103 @@ class AppLocalizationsHil extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Wala sing koneksyon – ginapakita ang katapusan nga na-save nga datos ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Pila ang bili sang bilog nga kompanya sa stock market: presyo sang share × kadamuon sang shares.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Pila ka shares ang ginpagwa sang kompanya. Kon magdamo ini, ang kada share may mas gamay nga parte; ang buyback nagapaliit sini.';
+
+  @override
+  String get glossPeTrailing =>
+      'Presyo ÷ ganansya kada share sang nagligad nga 12 ka bulan: pila ka tuig sang subong nga ganansya ang imo ginabayaran. Ang mas manubo mas barato, pero ang madasig magtubo nga kompanya kasagaran may mataas nga P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Pareho sa P/E, pero gamit ang ganansya nga ginapaabot sang mga analyst para sa masunod nga 12 ka bulan. Kon mas manubo sa trailing P/E, ginapaabot nga magtubo ang ganansya.';
+
+  @override
+  String get glossPb =>
+      'Presyo ÷ book value (assets minus utang) kada share. Mga 1 nagakahulugan nga ginabaluran sang merkado ang kompanya suno sa iya ginapanag-iya sa papel.';
+
+  @override
+  String get glossPs =>
+      'Market value ÷ tinuig nga revenue. Mapuslanon para sa mga kompanya nga diutay ukon wala pa sing ganansya; ikumparar ini sa pareho nga industriya.';
+
+  @override
+  String get glossEvToFcf =>
+      'Bili sang kompanya upod ang utang (EV) ÷ ang kuwarta nga ginahimo sini sa isa ka tuig pagkatapos sang mga investment. Ang mas manubo nagakahulugan nga mas madamo nga kuwarta ang imo makuha sa presyo.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ginapaabot nga tinuig nga pagtubo sang ganansya (%). Mga 1 kasagaran ginakabig nga patas; ginatan-aw sini ang P/E suno sa pagtubo.';
+
+  @override
+  String get glossEps =>
+      'Ganansya kada share sa nagligad nga 12 ka bulan. Ang nagasaka nga EPS sa sulod sang mga tuig isa sa pinakamabaskog nga tanda sang maayo nga kompanya.';
+
+  @override
+  String get glossBeta =>
+      'Pila kadako ang paghulag sang stock upod sa merkado: 1 = pareho sa merkado, 1.5 = mga 50% mas dako nga pagsaka-panaog, idalom sa 1 = mas kalmado.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Kabilugan nga baligya sang nagligad nga 12 ka bulan, antes sang bisan ano nga gastos.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Ganansya nga nabilin pagkatapos sang tanan nga gastos, interes kag buhis sa nagligad nga 12 ka bulan.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ang parte sang revenue nga nabilin pagkatapos sang direkta nga gastos sang mga produkto. Ang mataas nga margin kasagaran nagapakita sang gahum sa pagpresyo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ang parte sang revenue nga nabilin pagkatapos sang pagpadalagan sang negosyo (sweldo, abang, marketing), antes sang interes kag buhis.';
+
+  @override
+  String get glossNetMargin =>
+      'Ang parte sang revenue nga nangin katapusan nga ganansya. 20% nagakahulugan nga sa kada 100 nga baligya, 20 ang ganansya.';
+
+  @override
+  String get glossRoe =>
+      'Return on equity: tinuig nga ganansya ÷ kapital sang mga tag-iya. Ginapakita sini kon daw ano kaayo gamiton sang management ang kuwarta sang mga shareholder; labaw sa mga 15% mabaskog.';
+
+  @override
+  String get glossRoa =>
+      'Return on assets: tinuig nga ganansya ÷ tanan nga ginapanag-iya sang kompanya. Ikumparar ini sa pareho nga industriya.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Utang ÷ kapital sang mga tag-iya. Ang mas mataas nagakahulugan sang mas madamo nga hulam nga kuwarta: mas daku nga risgo kon magsaka ang interes ukon maghinay ang negosyo.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Short-term assets ÷ mga bayaran sa sulod sang isa ka tuig. Labaw sa 1 nagakahulugan nga masarangan sang kompanya ang malapit nga mga bayaran.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Pila ang ginsaka sang revenue kumparar sang isa ka tuig na ang nagligad.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Pila ang ginsaka sang ganansya kada share kumparar sang isa ka tuig na ang nagligad.';
+
+  @override
+  String get glossDividendYield =>
+      'Tinuig nga dibidendo ÷ presyo sang share: ang kuwarta nga imo makuha kada tuig, bilang porsiyento sang imo ginbayad.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Ang dibidendo nga ginbayad sa isa ka share sa nagligad nga tuig.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ang parte sang ganansya nga ginabayad bilang dibidendo. Labaw sa 100% ang kompanya nagabayad sang labaw sa iya ginakita, nga talagsa lang magdugay.';
+
+  @override
+  String get glossTitle => 'Ano ang buot silingon?';
 }

@@ -1882,4 +1882,103 @@ class AppLocalizationsAz extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Bağlantı yoxdur – son saxlanılan məlumatlar göstərilir ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Bütün şirkətin birjada nə qədər dəyərli olduğu: səhm qiyməti × səhmlərin sayı.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Şirkətin neçə səhm buraxdığı. Artarsa, hər səhmə daha kiçik pay düşür; geri alışlar onu azaldır.';
+
+  @override
+  String get glossPeTrailing =>
+      'Qiymət ÷ son 12 ayın bir səhmə düşən mənfəəti: indiki mənfəətin neçə illiyini ödədiyinizi göstərir. Aşağı olan daha ucuzdur, amma sürətlə böyüyən şirkətlərin P/E-si adətən yüksəkdir.';
+
+  @override
+  String get glossPeForward =>
+      'P/E kimidir, amma analitiklərin növbəti 12 ay üçün gözlədiyi mənfəətlə. Keçmiş dövr P/E-dən aşağıdırsa, mənfəətin artacağı gözlənilir.';
+
+  @override
+  String get glossPb =>
+      'Qiymət ÷ bir səhmə düşən balans dəyəri (aktivlər çıxılsın borclar). Təxminən 1 o deməkdir ki, bazar şirkəti kağız üzərində sahib olduğu qədər qiymətləndirir.';
+
+  @override
+  String get glossPs =>
+      'Bazar dəyəri ÷ illik gəlir. Hələ az və ya heç mənfəəti olmayan şirkətlər üçün faydalıdır; eyni sənaye daxilində müqayisə edin.';
+
+  @override
+  String get glossEvToFcf =>
+      'Borc daxil şirkət dəyəri (EV) ÷ investisiyalardan sonra bir ildə yaratdığı pul. Aşağı olması qiymətə görə daha çox pul aldığınızı göstərir.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ gözlənilən illik mənfəət artımı (%). Təxminən 1 çox vaxt ədalətli sayılır; P/E-ni artım işığında göstərir.';
+
+  @override
+  String get glossEps =>
+      'Son 12 ayda bir səhmə düşən mənfəət. İllər ərzində artan EPS sağlam şirkətin ən güclü əlamətlərindən biridir.';
+
+  @override
+  String get glossBeta =>
+      'Səhmin bazarla nə qədər birlikdə hərəkət etməyə meyilli olduğu: 1 = bazar kimi, 1,5 = təxminən 50% daha böyük dalğalanmalar, 1-dən aşağı = daha sakit.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Son 12 ayın ümumi satışları, hər hansı xərcdən əvvəl.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Son 12 ayda bütün xərclər, faizlər və vergilərdən sonra qalan mənfəət.';
+
+  @override
+  String get glossGrossMargin =>
+      'Məhsulların birbaşa xərcindən sonra gəlirdən qalan pay. Yüksək marja çox vaxt qiymət gücü deməkdir.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Biznesin idarə olunması xərclərindən (maaşlar, icarə, marketinq) sonra, faiz və vergilərdən əvvəl gəlirdən qalan pay.';
+
+  @override
+  String get glossNetMargin =>
+      'Gəlirin son mənfəətə çevrilən payı. 20% hər 100 satışdan 20-nin mənfəət olduğunu göstərir.';
+
+  @override
+  String get glossRoe =>
+      'Kapitalın rentabelliyi: illik mənfəət ÷ sahiblərin kapitalı. Rəhbərliyin səhmdarların pulundan nə qədər yaxşı istifadə etdiyini göstərir; təxminən 15%-dən yuxarı güclüdür.';
+
+  @override
+  String get glossRoa =>
+      'Aktivlərin rentabelliyi: illik mənfəət ÷ şirkətin sahib olduğu hər şey. Eyni sənaye daxilində müqayisə edin.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Borclar ÷ sahiblərin kapitalı. Yüksək olması daha çox borc pul deməkdir: faizlər artanda və ya iş zəiflədikdə daha çox risk.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Qısamüddətli aktivlər ÷ bir il ərzində ödənməli öhdəliklər. 1-dən yuxarı şirkətin yaxın öhdəliklərini ödəyə biləcəyini göstərir.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Gəlirin bir il əvvəllə müqayisədə nə qədər artdığı.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Bir səhmə düşən mənfəətin bir il əvvəllə müqayisədə nə qədər artdığı.';
+
+  @override
+  String get glossDividendYield =>
+      'İllik dividend ÷ səhm qiyməti: ödədiyiniz məbləğin faizi kimi ildə alacağınız pul gəliri.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Son bir ildə bir səhmə ödənilən dividend.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.';
+
+  @override
+  String get glossTitle => 'Bu nə deməkdir?';
 }

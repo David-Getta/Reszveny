@@ -1883,4 +1883,103 @@ class AppLocalizationsSu extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Teu aya sambungan – nembongkeun data anu panungtungan disimpen ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Sabaraha ajén sakabéh pausahaan di pasar saham: harga saham × jumlah saham.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Sabaraha saham anu geus dikaluarkeun ku pausahaan. Lamun nambahan, unggal saham boga bagian anu leuwih leutik; buyback ngurangan jumlahna.';
+
+  @override
+  String get glossPeTrailing =>
+      'Harga ÷ laba per saham 12 bulan ka tukang: sabaraha taun laba ayeuna anu anjeun bayar. Leuwih handap leuwih murah, tapi pausahaan anu tumuwuh gancang biasana boga P/E luhur.';
+
+  @override
+  String get glossPeForward =>
+      'Siga P/E, tapi maké laba anu diperkirakeun ku analis pikeun 12 bulan ka hareup. Lamun leuwih handap batan P/E trailing, labana diperkirakeun tumuwuh.';
+
+  @override
+  String get glossPb =>
+      'Harga ÷ nilai buku (aset dikurangan hutang) per saham. Sabudeureun 1 hartina pasar meunteun pausahaan saluyu jeung naon anu dipiboga dina kertas.';
+
+  @override
+  String get glossPs =>
+      'Nilai pasar ÷ pendapatan taunan. Mangpaat pikeun pausahaan anu labana masih saeutik atawa can aya; bandingkeun dina industri anu sarua.';
+
+  @override
+  String get glossEvToFcf =>
+      'Ajén pausahaan kaasup hutang (EV) ÷ duit kas anu dihasilkeun dina sataun sanggeus investasi. Leuwih handap hartina anjeun meunang leuwih loba duit pikeun hargana.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ perkiraan tumuwuhna laba taunan (%). Sabudeureun 1 mindeng dianggap wajar; ieu nempatkeun P/E dina konteks tumuwuhna.';
+
+  @override
+  String get glossEps =>
+      'Laba per saham salila 12 bulan ka tukang. EPS anu naék ti taun ka taun téh salah sahiji tanda pangkuatna pausahaan anu séhat.';
+
+  @override
+  String get glossBeta =>
+      'Sabaraha saham biasana obah babarengan jeung pasar: 1 = sarua jeung pasar, 1,5 = ayunan kira-kira 50% leuwih gedé, handapeun 1 = leuwih tenang.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total penjualan 12 bulan ka tukang, saméméh biaya naon waé.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Laba anu nyésa sanggeus sagala biaya, bunga jeung pajeg salila 12 bulan ka tukang.';
+
+  @override
+  String get glossGrossMargin =>
+      'Bagian pendapatan anu nyésa sanggeus biaya langsung produk. Margin anu luhur mindeng nuduhkeun kakuatan nangtukeun harga.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Bagian pendapatan anu nyésa sanggeus biaya ngajalankeun usaha (gajih, séwa, pamasaran), saméméh bunga jeung pajeg.';
+
+  @override
+  String get glossNetMargin =>
+      'Bagian pendapatan anu jadi laba ahir. 20% hartina tina unggal 100 penjualan, 20 téh laba.';
+
+  @override
+  String get glossRoe =>
+      'Imbal hasil ékuitas (ROE): laba taunan ÷ modal nu boga. Nuduhkeun sabaraha alus manajemén ngagunakeun duit pemegang saham; leuwih ti kira-kira 15% kaasup kuat.';
+
+  @override
+  String get glossRoa =>
+      'Imbal hasil aset (ROA): laba taunan ÷ sagala anu dipiboga ku pausahaan. Bandingkeun dina industri anu sarua.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Hutang ÷ modal nu boga. Leuwih luhur hartina leuwih loba duit injeuman: résiko leuwih gedé lamun suku bunga naék atawa usaha ngalambatan.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aset jangka pondok ÷ tagihan anu kudu dibayar dina sataun. Leuwih ti 1 hartina pausahaan bisa nutupan tagihan anu geus deukeut.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Sabaraha pendapatan tumuwuh dibandingkeun jeung sataun saméméhna.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Sabaraha laba per saham tumuwuh dibandingkeun jeung sataun saméméhna.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividén taunan ÷ harga saham: panghasilan kas anu bakal ditampa unggal taun, dina persén tina naon anu anjeun bayar.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividén anu dibayarkeun pikeun hiji saham salila sataun ka tukang.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Bagian laba anu dibayarkeun salaku dividén. Leuwih ti 100% pausahaan mayar leuwih loba batan anu dimeunangkeun, anu jarang lumangsung lila.';
+
+  @override
+  String get glossTitle => 'Naon hartina?';
 }

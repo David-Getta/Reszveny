@@ -1881,4 +1881,103 @@ class AppLocalizationsTr extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Bağlantı yok – en son kaydedilen veriler gösteriliyor ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Şirketin tamamının borsadaki değeri: hisse fiyatı × hisse sayısı.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Şirketin kaç hisse ihraç ettiği. Artarsa her hisse daha küçük bir paya sahip olur; geri alımlar bu sayıyı azaltır.';
+
+  @override
+  String get glossPeTrailing =>
+      'Fiyat ÷ son 12 ayın hisse başına kârı: bugünkü kârın kaç yılı için ödeme yaptığınız. Düşük olan daha ucuzdur, ancak hızlı büyüyen şirketlerin P/E\'si genellikle yüksektir.';
+
+  @override
+  String get glossPeForward =>
+      'P/E gibi, ancak analistlerin önümüzdeki 12 ay için beklediği kârla hesaplanır. Geçmiş P/E\'nin altındaysa kârın artması bekleniyor demektir.';
+
+  @override
+  String get glossPb =>
+      'Fiyat ÷ hisse başına defter değeri (varlıklar eksi borçlar). 1 civarı, piyasanın şirketi kâğıt üzerindeki varlıkları kadar değerlendirdiği anlamına gelir.';
+
+  @override
+  String get glossPs =>
+      'Piyasa değeri ÷ yıllık gelir. Henüz kârı az olan veya hiç olmayan şirketler için kullanışlıdır; aynı sektör içinde karşılaştırın.';
+
+  @override
+  String get glossEvToFcf =>
+      'Borç dahil şirket değeri (EV) ÷ yatırımlardan sonra bir yılda ürettiği nakit. Düşük olması, ödediğiniz fiyata daha fazla nakit aldığınız anlamına gelir.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ beklenen yıllık kâr büyümesi (%). 1 civarı genellikle makul kabul edilir; P/E\'yi büyüme ışığında değerlendirir.';
+
+  @override
+  String get glossEps =>
+      'Son 12 ayda hisse başına düşen kâr. Yıllar içinde artan EPS, sağlıklı bir şirketin en güçlü işaretlerinden biridir.';
+
+  @override
+  String get glossBeta =>
+      'Hissenin piyasayla birlikte ne kadar hareket etme eğiliminde olduğu: 1 = piyasa gibi, 1,5 = yaklaşık %50 daha büyük dalgalanmalar, 1\'in altı = daha sakin.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Son 12 ayın toplam satışları, tüm maliyetlerden önce.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Son 12 ayda tüm maliyetler, faizler ve vergilerden sonra kalan kâr.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ürünlerin doğrudan maliyetinden sonra gelirden kalan pay. Yüksek marj çoğu zaman fiyatlama gücüne işaret eder.';
+
+  @override
+  String get glossOperatingMargin =>
+      'İşi yürütme maliyetlerinden (maaşlar, kira, pazarlama) sonra, faiz ve vergilerden önce gelirden kalan pay.';
+
+  @override
+  String get glossNetMargin =>
+      'Gelirin nihai kâra dönüşen payı. %20, her 100 birimlik satışın 20\'sinin kâr olduğu anlamına gelir.';
+
+  @override
+  String get glossRoe =>
+      'Özkaynak kârlılığı: yıllık kâr ÷ sahiplerin sermayesi. Yönetimin hissedarların parasını ne kadar iyi kullandığını gösterir; yaklaşık %15\'in üzeri güçlüdür.';
+
+  @override
+  String get glossRoa =>
+      'Aktif kârlılığı: yıllık kâr ÷ şirketin sahip olduğu her şey. Aynı sektör içinde karşılaştırın.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Borçlar ÷ sahiplerin sermayesi. Yüksek olması daha fazla borç para demektir: faizler yükseldiğinde veya işler yavaşladığında risk artar.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kısa vadeli varlıklar ÷ bir yıl içinde ödenecek borçlar. 1\'in üzeri, şirketin yakın vadeli borçlarını karşılayabileceği anlamına gelir.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Gelirin bir yıl öncesine göre ne kadar arttığı.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hisse başına kârın bir yıl öncesine göre ne kadar arttığı.';
+
+  @override
+  String get glossDividendYield =>
+      'Yıllık temettü ÷ hisse fiyatı: ödediğiniz tutarın yüzdesi olarak yılda alacağınız nakit gelir.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Son bir yılda bir hisse için ödenen temettü.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Kârın temettü olarak dağıtılan payı. %100\'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.';
+
+  @override
+  String get glossTitle => 'Ne anlama geliyor?';
 }

@@ -1878,4 +1878,103 @@ class AppLocalizationsBm extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Jɛɲɔgɔnya tɛ yen – kunnafoni laban minnu marala, olu de bɛ yira ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Sosiyete bɛɛ ka nafa ye min ye sugu kan: aksiyɔn sɔngɔ × aksiyɔnw hakɛ.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Sosiyete ye aksiyɔn hakɛ min bɔ. Ni a ka ca, aksiyɔn kelen-kelen bɛ niyɔrɔ fitinin sɔrɔ; ka u san ka segin bɛ a dɔgɔya.';
+
+  @override
+  String get glossPeTrailing =>
+      'Sɔngɔ ÷ aksiyɔn kelen tɔnɔ kalo 12 laban kɔnɔ: i bɛ sisan tɔnɔ san joli sara. Min ka dɔgɔ o ka nɔgɔn, nka sosiyete minnu bɛ yiriwa joona, olu ka P/E ka bon tuma caman.';
+
+  @override
+  String get glossPeForward =>
+      'I n\'a fɔ P/E, nka ni tɔnɔ ye min sɛgɛsɛgɛbagaw b\'a makɔnɔ kalo 12 nata kɔnɔ. Ni a ka dɔgɔ ni P/E tɛmɛnen ye, o kɔrɔ ye ko tɔnɔ bɛna yiriwa.';
+
+  @override
+  String get glossPb =>
+      'Sɔngɔ ÷ gafe nafa (nafolo bɔ juru la) aksiyɔn kelen na. Ni a bɛ 1 ɲɔgɔn na, sugu bɛ sosiyete jate a ka nafolo hakɛ la min bɛ sɛbɛn kan.';
+
+  @override
+  String get glossPs =>
+      'Sugu nafa ÷ san feereli hakɛ. A nafa ka bon sosiyete minnu tɔnɔ ka dɔgɔ walima u ma tɔnɔ sɔrɔ fɔlɔ; a suma ni baara suguya kelen ta ye.';
+
+  @override
+  String get glossEvToFcf =>
+      'Sosiyete nafa ni juru ye (EV) ÷ wari min bɛ bɔ san kɔnɔ wari bilali kɔfɛ. Ni a ka dɔgɔ, i bɛ wari caman sɔrɔ sɔngɔ in na.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ san tɔnɔ yiriwali min makɔnɔnen don (%). Ni a bɛ 1 ɲɔgɔn na, mɔgɔ caman b\'a jate tilennen ye; a bɛ P/E jira yiriwali yeelen na.';
+
+  @override
+  String get glossEps =>
+      'Aksiyɔn kelen tɔnɔ kalo 12 laban kɔnɔ. Ni EPS bɛ yɛlɛ san o san, o ye sosiyete kɛnɛman taamasyɛn barikama dɔ ye.';
+
+  @override
+  String get glossBeta =>
+      'Aksiyɔn bɛ yɛlɛma ni sugu ye cogo min na: 1 = i n\'a fɔ sugu, 1.5 = yɛlɛmaliw ka bon 50% ɲɔgɔn, 1 duguma = a ka sabali.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Feereli bɛɛ lajɛlen kalo 12 laban kɔnɔ, sani musaka si ka bɔ.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Tɔnɔ min bɛ to musakaw bɛɛ, juru tɔnɔ ani nisɔngɔw kɔfɛ kalo 12 laban kɔnɔ.';
+
+  @override
+  String get glossGrossMargin =>
+      'Feereli hakɛ niyɔrɔ min bɛ to fɛnw dilan musaka kɔfɛ. Ni a ka bon, o bɛ a jira tuma caman ko sosiyete bɛ se ka sɔngɔ latigɛ.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Feereli hakɛ niyɔrɔ min bɛ to baara kɛli musakaw (sara, sokɔnɔ sara, feerelikow) kɔfɛ, sani juru tɔnɔ ni nisɔngɔw ka sara.';
+
+  @override
+  String get glossNetMargin =>
+      'Feereli hakɛ niyɔrɔ min bɛ kɛ tɔnɔ laban ye. 20% kɔrɔ ye ko feereli 100 o 100, 20 ye tɔnɔ ye.';
+
+  @override
+  String get glossRoe =>
+      'Tɔnɔ yɛrɛ nafolo kan: san tɔnɔ ÷ tigiw ka nafolo. A bɛ a jira ɲɛmɔgɔw bɛ aksiyɔntigiw ka wari baara kɛ cogo ɲuman na cogo min; 15% ɲɔgɔn sanfɛ, o ka ɲi kosɛbɛ.';
+
+  @override
+  String get glossRoa =>
+      'Tɔnɔ nafolo bɛɛ kan: san tɔnɔ ÷ sosiyete ka nafolo bɛɛ. A suma ni baara suguya kelen ta ye.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Juru ÷ tigiw ka nafolo. Ni a ka bon, wari jurulen ka ca: farati ka bon ni juru tɔnɔ yɛlɛla walima baara sumayara.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Nafolo surun ÷ juru minnu ka kan ka sara san kelen kɔnɔ. 1 sanfɛ, o kɔrɔ ye ko sosiyete bɛ se k\'a ka juru surunw sara.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Feereli hakɛ yiriwara hakɛ min ye ni san tɛmɛnen ye.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Aksiyɔn kelen tɔnɔ yiriwara hakɛ min ye ni san tɛmɛnen ye.';
+
+  @override
+  String get glossDividendYield =>
+      'San tɔnɔ tilali ÷ aksiyɔn sɔngɔ: wari min bɛna don i bolo san o san, i ye min sara o kɛmɛsarada la.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Tɔnɔ tilali min sarala aksiyɔn kelen na san tɛmɛnen kɔnɔ.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Tɔnɔ niyɔrɔ min bɛ tila ka di aksiyɔntigiw ma. 100% sanfɛ, sosiyete bɛ wari di ka tɛmɛ a ka sɔrɔ kan, o tɛ mɛn tuma caman.';
+
+  @override
+  String get glossTitle => 'O kɔrɔ ye mun ye?';
 }

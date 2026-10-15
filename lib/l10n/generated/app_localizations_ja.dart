@@ -1825,4 +1825,90 @@ class AppLocalizationsJa extends AppLocalizations {
   String offlineBanner(String time) {
     return 'オフライン – 最後に保存したデータを表示しています（$time）。';
   }
+
+  @override
+  String get glossMarketCap => '株式市場での会社全体の価値：株価 × 発行済株式数。';
+
+  @override
+  String get glossSharesOutstanding =>
+      '会社が発行している株式の数。増えると1株あたりの取り分が小さくなり、自社株買いで減ります。';
+
+  @override
+  String get glossPeTrailing =>
+      '株価 ÷ 直近12か月の1株あたり利益：今の利益の何年分を払っているか。低いほど割安ですが、急成長企業はふつうP/Eが高めです。';
+
+  @override
+  String get glossPeForward =>
+      'P/Eと同じですが、アナリストが予想する今後12か月の利益を使います。実績P/Eより低ければ、利益の増加が見込まれています。';
+
+  @override
+  String get glossPb =>
+      '株価 ÷ 1株あたり純資産（資産から負債を引いたもの）。1前後なら、市場は会社を帳簿上の持ち分どおりに評価しています。';
+
+  @override
+  String get glossPs => '時価総額 ÷ 年間売上高。利益がまだ少ないか出ていない会社に便利です。同じ業界内で比べましょう。';
+
+  @override
+  String get glossEvToFcf =>
+      '負債を含めた会社の価値（EV）÷ 投資後に1年間で生み出す現金。低いほど、払う価格に対して多くの現金が得られます。';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ 予想される年間利益成長率（%）。1前後がしばしば妥当とされ、P/Eを成長と照らして見られます。';
+
+  @override
+  String get glossEps => '直近12か月の1株あたり利益。年々増えるEPSは、健全な会社を示す最も強いサインの一つです。';
+
+  @override
+  String get glossBeta =>
+      '株価が市場とどれだけ連動して動くか：1 = 市場並み、1.5 = 値動きが約50%大きい、1未満 = より穏やか。';
+
+  @override
+  String get glossRevenueTtm => '直近12か月の売上の合計（費用を差し引く前）。';
+
+  @override
+  String get glossNetIncomeTtm => '直近12か月で、すべての費用・利息・税金を払った後に残る利益。';
+
+  @override
+  String get glossGrossMargin => '製品の直接コストを差し引いた後に残る売上の割合。高いと価格決定力があることが多いです。';
+
+  @override
+  String get glossOperatingMargin =>
+      '事業の運営費（人件費、家賃、マーケティング）を差し引いた後、利息と税金の前に残る売上の割合。';
+
+  @override
+  String get glossNetMargin => '売上のうち最終的な利益になる割合。20%なら、売上100ごとに20が利益です。';
+
+  @override
+  String get glossRoe =>
+      '自己資本利益率：年間利益 ÷ 株主の資本。経営陣が株主のお金をどれだけうまく使っているかを示し、約15%を超えると優秀です。';
+
+  @override
+  String get glossRoa => '総資産利益率：年間利益 ÷ 会社が持つすべての資産。同じ業界内で比べましょう。';
+
+  @override
+  String get glossDebtToEquity =>
+      '負債 ÷ 株主の資本。高いほど借入が多く、金利上昇や業績悪化のときにリスクが大きくなります。';
+
+  @override
+  String get glossCurrentRatio => '短期の資産 ÷ 1年以内に支払う負債。1を超えれば、近いうちの支払いをまかなえます。';
+
+  @override
+  String get glossRevenueGrowth => '売上高が1年前と比べてどれだけ増えたか。';
+
+  @override
+  String get glossEpsGrowth => '1株あたり利益が1年前と比べてどれだけ増えたか。';
+
+  @override
+  String get glossDividendYield => '年間配当 ÷ 株価：払った金額に対して毎年受け取れる現金収入の割合。';
+
+  @override
+  String get glossDividendPerShare => '過去1年間に1株あたりに支払われた配当。';
+
+  @override
+  String get glossPayoutRatio =>
+      '利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。';
+
+  @override
+  String get glossTitle => 'どういう意味？';
 }

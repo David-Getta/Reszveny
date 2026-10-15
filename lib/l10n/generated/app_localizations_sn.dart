@@ -1886,4 +1886,103 @@ class AppLocalizationsSn extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Hapana kubatana – kuri kuratidzwa data yekupedzisira yakachengetwa ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Kukosha kwekambani yose pamusika wemasheya: mutengo wesheya × huwandu hwemasheya.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Masheya mangani akabudiswa nekambani. Kana achiwedzera, sheya yega yega inova nechikamu chidiki; kutengazve masheya kunoaderedza.';
+
+  @override
+  String get glossPeTrailing =>
+      'Mutengo ÷ pundutso pasheya yemwedzi 12 yapfuura: makore mangani epundutso yazvino aunobhadharira. Kudiki kunoreva kuti zvakachipa, asi makambani anokura nekukurumidza anowanzova neP/E yakakwira.';
+
+  @override
+  String get glossPeForward =>
+      'Kufanana neP/E, asi nepundutso inotarisirwa nevaongorori mumwedzi 12 inotevera. Kana iri pasi peP/E yakapfuura, pundutso inotarisirwa kukura.';
+
+  @override
+  String get glossPb =>
+      'Mutengo ÷ kukosha kwemumabhuku (pfuma kubvisa zvikwereti) pasheya. Pedyo ne1 zvinoreva kuti musika unokoshesa kambani zvakaenzana nezvainazvo pabepa.';
+
+  @override
+  String get glossPs =>
+      'Kukosha pamusika ÷ mari inopinda pagore. Zvinobatsira kumakambani asati ave nepundutso huru kana asina; enzanisa mukati meindasitiri imwe chete.';
+
+  @override
+  String get glossEvToFcf =>
+      'Kukosha kwekambani pamwe nechikwereti (EV) ÷ mari yainoita mugore rimwe mushure mekudyara. Kudiki kunoreva kuti unowana mari yakawanda pamutengo waunobhadhara.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kukura kwepundutso kunotarisirwa pagore (%). Pedyo ne1 kunowanzoonekwa sekwakaringana; kunoisa P/E pachiedza chekukura.';
+
+  @override
+  String get glossEps =>
+      'Pundutso pasheya mumwedzi 12 yapfuura. EPS inokwira gore negore ndechimwe chezviratidzo zvakasimba zvekambani ine utano.';
+
+  @override
+  String get glossBeta =>
+      'Kuti sheya inowanzofamba zvakadii nemusika: 1 = semusika, 1.5 = kuzununguka kwakakura neinenge 50%, pasi pe1 = yakadzikama.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Kutengesa kwese kwemwedzi 12 yapfuura, pasati pabviswa mari dzakashandiswa.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Pundutso inosara mushure memari dzese dzakashandiswa, mubereko nemitero mumwedzi 12 yapfuura.';
+
+  @override
+  String get glossGrossMargin =>
+      'Chikamu chemari inopinda chinosara mushure memari yakananga yezvigadzirwa. Chiyero chakakwira chinowanzoratidza simba rekutara mitengo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Chikamu chemari inopinda chinosara mushure mekufambisa bhizinesi (mihoro, rendi, kushambadza), pasati pabviswa mubereko nemitero.';
+
+  @override
+  String get glossNetMargin =>
+      'Chikamu chemari inopinda chinova pundutso yekupedzisira. 20% zvinoreva kuti pa100 yega yega yekutengesa, 20 ipundutso.';
+
+  @override
+  String get glossRoe =>
+      'Pundutso pamari yevaridzi: pundutso yegore ÷ mari yevaridzi. Inoratidza kuti vatungamiriri vanoshandisa mari yevagovani zvakanaka sei; pamusoro peinenge 15% yakasimba.';
+
+  @override
+  String get glossRoa =>
+      'Pundutso papfuma: pundutso yegore ÷ zvese zviri zvekambani. Enzanisa mukati meindasitiri imwe chete.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Zvikwereti ÷ mari yevaridzi. Kukwira kunoreva mari yakakweretwa yakawanda: njodzi huru kana mubereko uchikwira kana bhizinesi richinonoka.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Pfuma yenguva pfupi ÷ mabhiri anofanira kubhadharwa mukati megore. Pamusoro pe1 zvinoreva kuti kambani inogona kubhadhara mabhiri ayo ari pedyo.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Kuti mari inopinda yakakura zvakadii kana ichienzaniswa negore rapfuura.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Kuti pundutso pasheya yakakura zvakadii kana ichienzaniswa negore rapfuura.';
+
+  @override
+  String get glossDividendYield =>
+      'Dhividhendi yegore ÷ mutengo wesheya: mari yaungawana pagore, sechikamu muzana chezvaunobhadhara.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dhividhendi yakabhadharwa pasheya imwe mugore rapfuura.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Chikamu chepundutso chinobhadharwa sedhividhendi. Pamusoro pe100% kambani inobhadhara kupfuura zvainowana, izvo zvisingawanzogari.';
+
+  @override
+  String get glossTitle => 'Zvinorevei?';
 }

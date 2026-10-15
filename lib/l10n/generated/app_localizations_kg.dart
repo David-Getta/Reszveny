@@ -1888,4 +1888,103 @@ class AppLocalizationsKg extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Kuvwanda ve na connexion – beto ke monisa bansangu ya nsuka ya bo bumbaka ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Ntalu ya kompani yonso mu bourse: ntalu ya action × kutanga ya ba action.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Ba action ikwa kompani me basisa. Kana yo ke kuma mingi, konso action ke vanda ti kitini ya fioti; kusumba diaka ba action (buyback) ke kitisa yo.';
+
+  @override
+  String get glossPeTrailing =>
+      'Ntalu ÷ mbakulu ya konso action na ngonda 12 ya me luta: mvula ikwa ya mbakulu ya ntangu yai nge ke futa. Ya nsi kele ya ntalu fioti, kansi ba kompani yina ke kula nswalu mingi ke vandaka ti P/E ya zulu.';
+
+  @override
+  String get glossPeForward =>
+      'Bonso P/E, kansi ti mbakulu yina ba analyste ke vingila na ngonda 12 ke kwisa. Kana yo kele na nsi ya P/E ya nima, bo ke vingila nde mbakulu ta kula.';
+
+  @override
+  String get glossPb =>
+      'Ntalu ÷ valeur comptable (kimvwama kukatula mfuka) ya konso action. Pene-pene ya 1 ke tendula nde zandu ke pesa kompani ntalu ya mambu yina yo kele na yo na papela.';
+
+  @override
+  String get glossPs =>
+      'Ntalu ya zandu ÷ mbongo zikota ya mvula. Yo ke sadisa sambu na ba kompani yina kele ti mbakulu fioti to ve; fwanisa yo ti ba kompani ya kisalu mosi.';
+
+  @override
+  String get glossEvToFcf =>
+      'Ntalu ya kompani ti mfuka (EV) ÷ mbongo yina yo ke basisa na mvula mosi na nima ya ba investissement. Ya nsi ke tendula nde nge ke baka mbongo mingi sambu na ntalu yango.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kukula ya mbakulu ya mvula yina bo ke vingila (%). Pene-pene ya 1 mbala mingi bo ke mona yo ya mbote; yo ke tala P/E ti kukula.';
+
+  @override
+  String get glossEps =>
+      'Mbakulu ya konso action na ngonda 12 ya me luta. EPS yina ke kuma mingi mvula na mvula kele mosi ya bidimbu ya ngolo ya kompani ya mbote.';
+
+  @override
+  String get glossBeta =>
+      'Nki mutindu action ke nyengana ti zandu: 1 = bonso zandu, 1,5 = kunyengana kuluta pene-pene ya 50%, na nsi ya 1 = ya kuvunda.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Mbongo yonso ya kuteka ya ngonda 12 ya me luta, na ntwala ya bafrais yonso.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Mbakulu yina me bikala na nima ya bafrais yonso, intérêt mpi bampaku na ngonda 12 ya me luta.';
+
+  @override
+  String get glossGrossMargin =>
+      'Kitini ya mbongo zikota yina ke bikala na nima ya bafrais ya kusala bima. Marge brute ya zulu mbala mingi ke monisa nde kompani lenda tula ntalu na yo mosi.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Kitini ya mbongo zikota yina ke bikala na nima ya kusadisa kisalu (lufutu, loyer, publicité), na ntwala ya intérêt mpi bampaku.';
+
+  @override
+  String get glossNetMargin =>
+      'Kitini ya mbongo zikota yina ke kuma mbakulu ya nsuka. 20% ke tendula nde na konso 100 ya kuteka, 20 kele mbakulu.';
+
+  @override
+  String get glossRoe =>
+      'Mbakulu mu fonds propres: mbakulu ya mvula ÷ mbongo ya bamfumu ya kompani. Yo ke monisa nki mutindu bakalaki ke sadila mbote mbongo ya bantu ya ba action; kuluta pene-pene ya 15% kele ngolo.';
+
+  @override
+  String get glossRoa =>
+      'Mbakulu mu kimvwama: mbakulu ya mvula ÷ bima yonso ya kompani. Fwanisa yo ti ba kompani ya kisalu mosi.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Mfuka ÷ fonds propres. Ya zulu ke tendula mbongo mingi ya kudefa: kigonsa mingi ntangu intérêt ke mata to kisalu ke kulumuka.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kimvwama ya ntangu fioti ÷ mfuka yina fwete futa na mvula mosi. Kuluta 1 ke tendula nde kompani lenda futa mfuka na yo ya pene-pene.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Nki mutindu mbongo zikota me kula kana beto fwanisa ti mvula me luta.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Nki mutindu mbakulu ya konso action me kula kana beto fwanisa ti mvula me luta.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende ya mvula ÷ ntalu ya action: mbongo yina nge ta baka konso mvula, na pourcentage ya yina nge me futa.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende yina bo me futa na action mosi na mvula me luta.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Kitini ya mbakulu yina bo ke kabula bonso dividende. Kuluta 100%, kompani ke futa mingi kuluta yina yo ke zwa, mpi yo ke zingaka ve.';
+
+  @override
+  String get glossTitle => 'Yo ke tendula nki?';
 }

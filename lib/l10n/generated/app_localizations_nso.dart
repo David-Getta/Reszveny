@@ -1893,4 +1893,103 @@ class AppLocalizationsNso extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ga go na kgokagano – go bontšhwa data ya mafelelo yeo e bolokilwego ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Boleng bja khamphani ka moka mmarakeng wa dišere: theko ya šere × palo ya dišere.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Ke dišere tše kae tšeo khamphani e di ntšhitšego. Ge palo e gola, šere e nngwe le e nngwe e na le seripa se sennyane; go reka dišere morago go a e fokotša.';
+
+  @override
+  String get glossPeTrailing =>
+      'Theko ÷ poelo ka šere ya dikgwedi tše 12 tša go feta: o lefela mengwaga e mekae ya poelo ya bjale. Ya fase e tšhipa, eupša dikhamphani tše di golago ka pela gantši di na le P/E ye e phagamego.';
+
+  @override
+  String get glossPeForward =>
+      'Bjalo ka P/E, eupša ka poelo yeo ditsebi di e letetšego dikgweding tše 12 tše di latelago. Ge e le ka fase ga P/E (ya go feta), poelo e letetšwe go gola.';
+
+  @override
+  String get glossPb =>
+      'Theko ÷ boleng bja dipuku (dithoto go ntšhwa dikoloto) ka šere. Kgauswi le 1 go ra gore mmaraka o lekanya khamphani ka seo e nago le sona pampiring.';
+
+  @override
+  String get glossPs =>
+      'Boleng bja mmaraka ÷ letseno la ngwaga. E thuša go dikhamphani tšeo di sa nago le poelo ye ntši goba di se na yona; bapetša ka gare ga intaseteri e tee.';
+
+  @override
+  String get glossEvToFcf =>
+      'Boleng bja khamphani go akaretšwa dikoloto (EV) ÷ tšhelete yeo e e hwetšago ka ngwaga ka morago ga dipeeletšo. Ya fase e ra gore o hwetša tšhelete ye ntši go ya ka theko.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kgolo ya poelo ye e letetšwego ka ngwaga (%). Kgauswi le 1 gantši go bonwa go lekane; e bapetša P/E le kgolo.';
+
+  @override
+  String get glossEps =>
+      'Poelo ka šere dikgweding tše 12 tša go feta. EPS yeo e golago ngwaga le ngwaga ke se sengwe sa dipontšho tše maatla kudu tša khamphani ye e phetšego gabotse.';
+
+  @override
+  String get glossBeta =>
+      'Šere e šutha bjang le mmaraka: 1 = bjalo ka mmaraka, 1.5 = diphetogo tše dikgolwanyana ka mo e ka bago 50%, ka fase ga 1 = e homotše kudu.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Thekišo ka moka ya dikgwedi tše 12 tša go feta, pele ga ditshenyagalelo.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Poelo ye e šalago ka morago ga ditshenyagalelo ka moka, tswala le motšhelo dikgweding tše 12 tša go feta.';
+
+  @override
+  String get glossGrossMargin =>
+      'Karolo ya letseno ye e šalago ka morago ga ditshenyagalelo tša thwii tša ditšweletšwa. Moedi wo o phagamego gantši o bontšha maatla a go bea theko.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Karolo ya letseno ye e šalago ka morago ga go sepediša kgwebo (meputso, rente, papatšo), pele ga tswala le motšhelo.';
+
+  @override
+  String get glossNetMargin =>
+      'Karolo ya letseno ye e fetogago poelo ya mafelelo. 20% e ra gore 20 go 100 ye nngwe le ye nngwe ya thekišo ke poelo.';
+
+  @override
+  String get glossRoe =>
+      'Poelo go ekhwithi: poelo ya ngwaga ÷ letlotlo la beng. E bontšha ka fao bolaodi bo dirišago tšhelete ya beng ba dišere gabotse; godimo ga mo e ka bago 15% e matla.';
+
+  @override
+  String get glossRoa =>
+      'Poelo go dithoto: poelo ya ngwaga ÷ tšohle tšeo khamphani e nago le tšona. Bapetša ka gare ga intaseteri e tee.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Sekoloto ÷ letlotlo la beng. Ya godimo e ra tšhelete ye ntši ye e adimilwego: kotsi ye kgolo ge tswala e rotoga goba kgwebo e nanya.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Dithoto tša nakwana ÷ dikoloto tše di swanetšego go lefelwa ka gare ga ngwaga. Godimo ga 1 e ra gore khamphani e kgona go lefela dikoloto tša yona tša kgauswi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Letseno le godile bjang go bapetšwa le ngwaga wa go feta.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Poelo ka šere e godile bjang go bapetšwa le ngwaga wa go feta.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende ya ngwaga ÷ theko ya šere: letseno la kheše leo o le hwetšago ka ngwaga, bjalo ka phesente ya seo o se lefelago.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende ye e lefetšwego šere e tee ngwageng wa go feta.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Karolo ya poelo ye e lefšwago bjalo ka dividende. Godimo ga 100% khamphani e lefa go feta seo e se hwetšago, e lego seo se sa tšwelego pele gantši.';
+
+  @override
+  String get glossTitle => 'Se bolela eng?';
 }

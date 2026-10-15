@@ -1896,4 +1896,103 @@ class AppLocalizationsIlo extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Awan ti koneksion – maipakpakita ti naudi a naidulin a datos ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'No mano ti pateg ti intero a kompania iti stock market: presio ti share × bilang dagiti share.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'No mano a share ti impablaak ti kompania. No umado, ti tunggal share ket addaan iti basbassit a paset; ti buyback ket pabassitenna.';
+
+  @override
+  String get glossPeTrailing =>
+      'Presio ÷ ganansia iti tunggal share iti napalabas a 12 a bulan: no mano a tawen ti agdama a ganansia ti bayadam. Ti nababbaba ket nalaklaka, ngem dagiti napardas ti panagdakkelna ket kadawyan nga addaan iti nangato a P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Kas iti P/E, ngem iti ganansia a namnamaen dagiti analista para iti sumaruno a 12 a bulan. No nababbaba ngem ti trailing P/E, mamnamaan nga umadu ti ganansia.';
+
+  @override
+  String get glossPb =>
+      'Presio ÷ book value (assets mainus utang) iti tunggal share. Agarup 1 ket kayatna a sawen nga ipateg ti merkado ti kompania a kas iti kukuana iti papel.';
+
+  @override
+  String get glossPs =>
+      'Market value ÷ tinawen a sapul. Nasayaat para kadagiti kompania a bassit wenno awan pay ti ganansiana; idilig iti isu met laeng nga industria.';
+
+  @override
+  String get glossEvToFcf =>
+      'Pateg ti kompania agraman utang (EV) ÷ ti kuarta a mapataudna iti maysa a tawen kalpasan dagiti investment. Ti nababbaba ket ad-adu a kuarta ti maalam para iti presio.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ mamnamaan a tinawen a panagdakkel ti ganansia (%). Agarup 1 ket masansan a maibilang a patas; kitaenna ti P/E iti lawag ti panagdakkel.';
+
+  @override
+  String get glossEps =>
+      'Ganansia iti tunggal share iti napalabas a 12 a bulan. Ti EPS nga agngato iti panaglabas dagiti tawen ket maysa kadagiti kapigsaan a pagilasinan ti nasalun-at a kompania.';
+
+  @override
+  String get glossBeta =>
+      'No kasano ti panaggunay ti stock a kadua ti merkado: 1 = kas iti merkado, 1.5 = agarup 50% a dakdakkel a panagbaliw, baba ti 1 = nakalkalma.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Dagup ti nailako iti napalabas a 12 a bulan, sakbay ti aniaman a gastos.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Ganansia a nabati kalpasan ti amin a gastos, interes ken buis iti napalabas a 12 a bulan.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ti paset ti sapul a nabati kalpasan ti direkta a gastos dagiti produkto. Ti nangato a margin ket masansan a mangipakita iti pannakabalin a mangikeddeng iti presio.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ti paset ti sapul a nabati kalpasan ti panangpataray iti negosio (sueldo, abang, marketing), sakbay ti interes ken buis.';
+
+  @override
+  String get glossNetMargin =>
+      'Ti paset ti sapul nga agbalin a naudi a ganansia. 20% ket kayatna a sawen nga iti tunggal 100 a nailako, 20 ti ganansia.';
+
+  @override
+  String get glossRoe =>
+      'Return iti equity: tinawen a ganansia ÷ kapital dagiti makinkukua. Ipakitana no kasano kasayaat ti panangusar ti management iti kuarta dagiti shareholder; ngato ti agarup 15% ket napigsa.';
+
+  @override
+  String get glossRoa =>
+      'Return iti assets: tinawen a ganansia ÷ amin a kukua ti kompania. Idilig iti isu met laeng nga industria.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Utang ÷ kapital dagiti makinkukua. Ti nangatngato ket ad-adu a binulod a kuarta: dakdakkel a risgo no ngumato ti interes wenno bumuntog ti negosio.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Short-term assets ÷ dagiti bayadan iti uneg ti maysa a tawen. Ngato ti 1 ket kayatna a sawen a kabaelan ti kompania a bayadan dagiti asideg a bayadan.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'No mano ti inngato ti sapul no idilig iti maysa a tawen ti napalabas.';
+
+  @override
+  String get glossEpsGrowth =>
+      'No mano ti inngato ti ganansia iti tunggal share no idilig iti maysa a tawen ti napalabas.';
+
+  @override
+  String get glossDividendYield =>
+      'Tinawen a dibidendo ÷ presio ti share: ti kuarta a maawatmo iti tinawen, kas porsiento ti imbayadmo.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Ti dibidendo a naibayad iti maysa a share iti napalabas a tawen.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ti paset ti ganansia a maibayad kas dibidendo. Ngato ti 100% ket ad-adu ti ibaybayad ti kompania ngem ti magunggonana, a manmano nga agpaut.';
+
+  @override
+  String get glossTitle => 'Ania ti kayatna a sawen?';
 }

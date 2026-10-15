@@ -1868,4 +1868,103 @@ class AppLocalizationsMos extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Kõneksõ ka be ye – d wilgdame bãngr sẽn yaa sɛɛb n bĩngame ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Kʋmpaani wã fãa yõod burs raagẽ: aksiõ yõodo × aksiõ sõore.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Aksiõ a wãna la kʋmpaani wã yiisi. B sã n paasdẽ, aksiõ fãa paoodo yaa bilfu; kʋmpaanã sã n le n da a aksiõ, b sõore booda.';
+
+  @override
+  String get glossPeTrailing =>
+      'Yõodo ÷ nafa aksiõ fãa kiis 12 sẽn loogã pʋgẽ: yʋʋm a wãna nafa la f yaoodẽ. Sẽn yaa bilfã yõod yaa bilfu, la kʋmpaani sẽn paasd tao-tao P/E yɩɩda wakat wʋsgo.';
+
+  @override
+  String get glossPeForward =>
+      'Wala P/E, la ne nafa b sẽn tẽed kiis 12 sẽn watã pʋgẽ. A sã n pa ta P/E (sẽn loogã) ye, b tẽeda tɩ nafã na n paasa.';
+
+  @override
+  String get glossPb =>
+      'Yõodo ÷ sɛb pʋgẽ yõodo (arzɛka, b sã n yiis samdã) aksiõ fãa. 1 neng-neng rata n yeel tɩ raagã kõta kʋmpaanã yõod wala a sẽn tar sebrã zug.';
+
+  @override
+  String get glossPs =>
+      'Burs yõodo ÷ ligd sẽn kẽe yʋʋmd fãa. A nafda kʋmpaani sẽn nan pa tar nafa wʋsg bɩ sẽn pa tar baa fʋɩ ye; makr-y-yã tʋʋm buud a ye pʋgẽ.';
+
+  @override
+  String get glossEvToFcf =>
+      'Kʋmpaanã yõodo ne a samdã (EV) ÷ ligd a sẽn paamd yʋʋmd a ye pʋgẽ, a sã n yao a investisman-dã poore. Sẽn yaa bilfã rata n yeel tɩ f paamda ligd wʋsg ne yõodã.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ nafa paasg b sẽn tẽed yʋʋmd fãa (%). 1 neng-neng b geta wakat wʋsg tɩ zemsame; a makda P/E ne paasgã.';
+
+  @override
+  String get glossEps =>
+      'Nafa aksiõ fãa kiis 12 sẽn loogã pʋgẽ. EPS sẽn paasd yʋʋmd fãa yaa kʋmpaani sẽn tar laafɩ bõn-yel sẽn yaa kãng-kãng a yembr.';
+
+  @override
+  String get glossBeta =>
+      'Aksiõã sẽn kẽnd ne raagã to-to: 1 = wala raagã, 1,5 = kẽnd-n-lebg sẽn yɩɩd 50% neng-neng, 1 sẽn pa ta = maaga n yɩɩda.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Koosg fãa kiis 12 sẽn loogã pʋgẽ, b sẽn nan pa yiis ligd b sẽn yaoã.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Nafa sẽn kell b sã n yao ligd fãa, intere la lampo kiis 12 sẽn loogã pʋgẽ.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ligd sẽn kẽe pʋɩɩr sẽn kell b sã n yao bõn-naandã yõodo. Nafa sẽn yaa wʋsg wilgda wakat wʋsg tɩ kʋmpaanã tõe n ning a bõn-koosgã yõodo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ligd sẽn kẽe pʋɩɩr sẽn kell b sã n yao tʋʋmã ligdi (tʋm-tʋmdb yaoode, roog yaoode, mɛɛrkɛtɩŋ), b sẽn nan pa yao intere la lampo.';
+
+  @override
+  String get glossNetMargin =>
+      'Ligd sẽn kẽe pʋɩɩr sẽn lebgd nafa sɩda. 20% rata n yeelame tɩ koosg 100 fãa pʋgẽ, 20 yaa nafa.';
+
+  @override
+  String get glossRoe =>
+      'Nafa ne soab-rãmb ligdi: yʋʋmd nafa ÷ soab-rãmb ligdi. A wilgda taoor-dãmbã sẽn tʋmd ne aksiõ soab-rãmb ligdã to-to; a sã n yɩɩd 15% neng-neng, a yaa kãnga.';
+
+  @override
+  String get glossRoa =>
+      'Nafa ne arzɛka: yʋʋmd nafa ÷ kʋmpaanã sẽn tar bũmb fãa. Makr-y-yã tʋʋm buud a ye pʋgẽ.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Samde ÷ soab-rãmb ligdi. Sẽn yɩɩdã rata n yeel tɩ ligd b sẽn pẽnga wʋsgo: zu-loees n yɩɩda intere sã n paasdẽ bɩ tʋʋmã sã n maagdẽ.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Arzɛk sẽn tõe n lebg ligd tao-tao ÷ samd b sẽn segd n yao yʋʋmd a ye pʋgẽ. A sã n yɩɩd 1, kʋmpaanã tõe n yao a samd sẽn kolgã.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Ligd sẽn kẽe paasg to-to, b sã n mak ne yʋʋmd a ye sẽn looge.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Nafa aksiõ fãa paasg to-to, b sã n mak ne yʋʋmd a ye sẽn looge.';
+
+  @override
+  String get glossDividendYield =>
+      'Yʋʋmd dividãnd ÷ aksiõ yõodo: ligd f sẽn na n paam yʋʋmd fãa, f sẽn yaoã pʋɩɩr pʋgẽ (%).';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividãnd b sẽn yao aksiõ a ye yʋʋmd sẽn looga pʋgẽ.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Nafa pʋɩɩr b sẽn pʋɩt wala dividãnd. A sã n yɩɩd 100%, kʋmpaanã yaoda n yɩɩd a sẽn paamã, la yẽ pa kẽnd wakat wʋsg ye.';
+
+  @override
+  String get glossTitle => 'A rat n yeel bõe?';
 }

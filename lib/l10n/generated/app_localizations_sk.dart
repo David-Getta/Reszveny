@@ -1936,4 +1936,103 @@ class AppLocalizationsSk extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Bez pripojenia – zobrazujú sa naposledy uložené údaje ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Koľko je celá firma hodná na burze: cena akcie × počet akcií.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Koľko akcií firma vydala. Ak ich pribúda, každá akcia vlastní menší kúsok; spätné odkupy ich počet znižujú.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cena ÷ zisk na akciu za posledných 12 mesiacov: za koľko rokov súčasného zisku platíte. Nižšie je lacnejšie, ale rýchlo rastúce firmy mávajú vysoké P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Ako P/E, ale so ziskom, ktorý analytici očakávajú na ďalších 12 mesiacov. Ak je pod historickým P/E, očakáva sa rast ziskov.';
+
+  @override
+  String get glossPb =>
+      'Cena ÷ účtovná hodnota (majetok mínus dlhy) na akciu. Okolo 1 znamená, že trh oceňuje firmu na toľko, koľko vlastní na papieri.';
+
+  @override
+  String get glossPs =>
+      'Trhová hodnota ÷ ročné tržby. Užitočné pri firmách s malým alebo žiadnym ziskom; porovnávajte v rámci rovnakého odvetvia.';
+
+  @override
+  String get glossEvToFcf =>
+      'Hodnota firmy vrátane dlhu (EV) ÷ hotovosť, ktorú vytvorí za rok po investíciách. Nižšie znamená viac hotovosti za danú cenu.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ očakávaný ročný rast zisku (%). Okolo 1 sa často považuje za férové; dáva P/E do súvislosti s rastom.';
+
+  @override
+  String get glossEps =>
+      'Zisk na akciu za posledných 12 mesiacov. EPS rastúce rok čo rok je jedným z najsilnejších znakov zdravej firmy.';
+
+  @override
+  String get glossBeta =>
+      'Nakoľko sa akcia hýbe spolu s trhom: 1 = ako trh, 1,5 = asi o 50 % väčšie výkyvy, pod 1 = pokojnejšia.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Celkové predaje za posledných 12 mesiacov pred odpočítaním akýchkoľvek nákladov.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Zisk, ktorý zostane po všetkých nákladoch, úrokoch a daniach za posledných 12 mesiacov.';
+
+  @override
+  String get glossGrossMargin =>
+      'Podiel tržieb, ktorý zostane po priamych nákladoch na výrobky. Vysoká marža často znamená cenovú silu.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Podiel tržieb, ktorý zostane po nákladoch na chod firmy (mzdy, nájom, marketing), pred úrokmi a daňami.';
+
+  @override
+  String get glossNetMargin =>
+      'Podiel tržieb, ktorý sa stane konečným ziskom. 20 % znamená, že z každých 100 tržieb je 20 zisk.';
+
+  @override
+  String get glossRoe =>
+      'Rentabilita vlastného kapitálu: ročný zisk ÷ kapitál vlastníkov. Ukazuje, ako dobre vedenie využíva peniaze akcionárov; nad približne 15 % je to silné.';
+
+  @override
+  String get glossRoa =>
+      'Rentabilita aktív: ročný zisk ÷ všetko, čo firma vlastní. Porovnávajte v rámci rovnakého odvetvia.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dlh ÷ kapitál vlastníkov. Vyšší znamená viac požičaných peňazí: väčšie riziko, keď rastú sadzby alebo sa biznis spomalí.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Krátkodobý majetok ÷ účty splatné do jedného roka. Nad 1 znamená, že firma dokáže pokryť svoje blízke záväzky.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'O koľko vzrástli tržby v porovnaní s minulým rokom.';
+
+  @override
+  String get glossEpsGrowth =>
+      'O koľko vzrástol zisk na akciu v porovnaní s minulým rokom.';
+
+  @override
+  String get glossDividendYield =>
+      'Ročná dividenda ÷ cena akcie: hotovostný príjem za rok v percentách z toho, čo zaplatíte.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividenda vyplatená na jednu akciu za posledný rok.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Podiel zisku vyplatený ako dividendy. Nad 100 % firma vypláca viac, než zarába, a to málokedy vydrží.';
+
+  @override
+  String get glossTitle => 'Čo to znamená?';
 }

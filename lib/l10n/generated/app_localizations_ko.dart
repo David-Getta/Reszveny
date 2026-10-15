@@ -1828,4 +1828,94 @@ class AppLocalizationsKo extends AppLocalizations {
   String offlineBanner(String time) {
     return '연결 없음 – 마지막으로 저장된 데이터를 표시합니다($time).';
   }
+
+  @override
+  String get glossMarketCap => '주식시장에서 회사 전체의 가치: 주가 × 주식 수.';
+
+  @override
+  String get glossSharesOutstanding =>
+      '회사가 발행한 주식의 수. 늘어나면 한 주가 차지하는 몫이 작아지고, 자사주 매입은 이를 줄입니다.';
+
+  @override
+  String get glossPeTrailing =>
+      '주가 ÷ 최근 12개월 주당순이익: 현재 이익의 몇 년 치를 지불하는지 보여 줍니다. 낮을수록 싸지만, 빠르게 성장하는 회사는 보통 P/E가 높습니다.';
+
+  @override
+  String get glossPeForward =>
+      'P/E와 같지만, 애널리스트가 예상하는 향후 12개월 이익을 사용합니다. 후행 P/E보다 낮으면 이익 증가가 예상된다는 뜻입니다.';
+
+  @override
+  String get glossPb =>
+      '주가 ÷ 주당 장부가치(자산에서 부채를 뺀 것). 1 안팎이면 시장이 회사를 장부상 보유 자산만큼 평가한다는 뜻입니다.';
+
+  @override
+  String get glossPs => '시장가치 ÷ 연 매출. 아직 이익이 적거나 없는 회사에 유용하며, 같은 업종 안에서 비교하세요.';
+
+  @override
+  String get glossEvToFcf =>
+      '부채를 포함한 회사 가치(EV) ÷ 투자 후 1년 동안 벌어들이는 현금. 낮을수록 지불한 가격에 비해 더 많은 현금을 얻습니다.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ 예상 연간 이익 성장률(%). 1 안팎이면 흔히 적정하다고 보며, 성장을 감안해 P/E를 보여 줍니다.';
+
+  @override
+  String get glossEps =>
+      '최근 12개월 동안의 주당 이익. 해마다 늘어나는 EPS는 건강한 회사의 가장 강력한 신호 중 하나입니다.';
+
+  @override
+  String get glossBeta =>
+      '주가가 시장과 얼마나 함께 움직이는지: 1 = 시장과 같음, 1.5 = 변동폭이 약 50% 더 큼, 1 미만 = 더 안정적.';
+
+  @override
+  String get glossRevenueTtm => '최근 12개월의 총 판매액(비용을 빼기 전).';
+
+  @override
+  String get glossNetIncomeTtm => '최근 12개월 동안 모든 비용, 이자, 세금을 뺀 뒤 남은 이익.';
+
+  @override
+  String get glossGrossMargin =>
+      '제품의 직접 원가를 빼고 남는 매출의 비율. 높으면 가격 결정력이 있다는 뜻인 경우가 많습니다.';
+
+  @override
+  String get glossOperatingMargin =>
+      '사업 운영비(인건비, 임대료, 마케팅)를 빼고 이자와 세금 전에 남는 매출의 비율.';
+
+  @override
+  String get glossNetMargin =>
+      '매출 중 최종 이익이 되는 비율. 20%면 매출 100마다 20이 이익이라는 뜻입니다.';
+
+  @override
+  String get glossRoe =>
+      '자기자본이익률: 연간 이익 ÷ 주주의 자본. 경영진이 주주의 돈을 얼마나 잘 쓰는지 보여 주며, 약 15%를 넘으면 우수합니다.';
+
+  @override
+  String get glossRoa => '총자산이익률: 연간 이익 ÷ 회사가 가진 모든 자산. 같은 업종 안에서 비교하세요.';
+
+  @override
+  String get glossDebtToEquity =>
+      '부채 ÷ 주주의 자본. 높을수록 빌린 돈이 많아 금리가 오르거나 사업이 둔화될 때 위험이 커집니다.';
+
+  @override
+  String get glossCurrentRatio =>
+      '단기 자산 ÷ 1년 안에 갚아야 할 부채. 1을 넘으면 회사가 가까운 시일의 지급을 감당할 수 있습니다.';
+
+  @override
+  String get glossRevenueGrowth => '1년 전과 비교해 매출이 얼마나 늘었는지.';
+
+  @override
+  String get glossEpsGrowth => '1년 전과 비교해 주당 이익이 얼마나 늘었는지.';
+
+  @override
+  String get glossDividendYield => '연간 배당금 ÷ 주가: 지불한 금액 대비 매년 받는 현금 수입의 비율.';
+
+  @override
+  String get glossDividendPerShare => '지난 1년 동안 한 주에 지급된 배당금.';
+
+  @override
+  String get glossPayoutRatio =>
+      '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
+
+  @override
+  String get glossTitle => '무슨 뜻인가요?';
 }

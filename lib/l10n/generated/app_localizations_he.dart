@@ -1877,4 +1877,101 @@ class AppLocalizationsHe extends AppLocalizations {
   String offlineBanner(String time) {
     return 'אין חיבור – מוצגים הנתונים האחרונים שנשמרו ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'כמה שווה החברה כולה בבורסה: מחיר המניה × מספר המניות.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'כמה מניות החברה הנפיקה. אם המספר גדל, כל מניה מחזיקה פרוסה קטנה יותר; רכישות חוזרות מקטינות אותו.';
+
+  @override
+  String get glossPeTrailing =>
+      'מחיר ÷ רווח למניה ב-12 החודשים האחרונים: על כמה שנים של הרווח הנוכחי אתם משלמים. נמוך יותר זול יותר, אבל לחברות בצמיחה מהירה יש בדרך כלל P/E גבוה.';
+
+  @override
+  String get glossPeForward =>
+      'כמו P/E, אבל עם הרווח שהאנליסטים צופים ל-12 החודשים הבאים. אם הוא נמוך מה-P/E ההיסטורי, צפוי שהרווחים יגדלו.';
+
+  @override
+  String get glossPb =>
+      'מחיר ÷ הון עצמי בספרים (נכסים פחות חובות) למניה. סביב 1 פירושו שהשוק מעריך את החברה בשווי מה שבבעלותה על הנייר.';
+
+  @override
+  String get glossPs =>
+      'שווי שוק ÷ הכנסות שנתיות. שימושי לחברות עם רווח מועט או בלי רווח עדיין; השוו בתוך אותו ענף.';
+
+  @override
+  String get glossEvToFcf =>
+      'שווי החברה כולל חוב (EV) ÷ המזומנים שהיא מייצרת בשנה אחרי השקעות. נמוך יותר פירושו שאתם מקבלים יותר מזומנים תמורת המחיר.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ צמיחת הרווח השנתית הצפויה (%). סביב 1 נחשב לרוב הוגן; הוא מציג את ה-P/E לאור הצמיחה.';
+
+  @override
+  String get glossEps =>
+      'הרווח למניה ב-12 החודשים האחרונים. EPS שעולה לאורך השנים הוא אחד הסימנים החזקים ביותר לחברה בריאה.';
+
+  @override
+  String get glossBeta =>
+      'עד כמה המניה נוטה לנוע עם השוק: 1 = כמו השוק, 1.5 = תנודות גדולות בכ-50%, מתחת ל-1 = רגועה יותר.';
+
+  @override
+  String get glossRevenueTtm =>
+      'סך המכירות ב-12 החודשים האחרונים, לפני כל ההוצאות.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'הרווח שנשאר אחרי כל ההוצאות, הריבית והמסים ב-12 החודשים האחרונים.';
+
+  @override
+  String get glossGrossMargin =>
+      'החלק מההכנסות שנשאר אחרי העלות הישירה של המוצרים. שיעור גבוה מעיד לרוב על כוח תמחור.';
+
+  @override
+  String get glossOperatingMargin =>
+      'החלק מההכנסות שנשאר אחרי הפעלת העסק (שכר, שכירות, שיווק), לפני ריבית ומסים.';
+
+  @override
+  String get glossNetMargin =>
+      'החלק מההכנסות שהופך לרווח הסופי. 20% פירושו ש-20 מכל 100 של מכירות הם רווח.';
+
+  @override
+  String get glossRoe =>
+      'תשואה על ההון העצמי: רווח שנתי ÷ ההון של הבעלים. מראה כמה טוב ההנהלה משתמשת בכסף של בעלי המניות; מעל כ-15% זה חזק.';
+
+  @override
+  String get glossRoa =>
+      'תשואה על הנכסים: רווח שנתי ÷ כל מה שבבעלות החברה. השוו בתוך אותו ענף.';
+
+  @override
+  String get glossDebtToEquity =>
+      'חובות ÷ ההון של הבעלים. גבוה יותר פירושו יותר כסף לווה: יותר סיכון כשהריבית עולה או כשהעסק מאט.';
+
+  @override
+  String get glossCurrentRatio =>
+      'נכסים לטווח קצר ÷ חשבונות לתשלום בתוך שנה. מעל 1 פירושו שהחברה יכולה לכסות את התשלומים הקרובים.';
+
+  @override
+  String get glossRevenueGrowth => 'בכמה גדלו ההכנסות לעומת שנה קודם.';
+
+  @override
+  String get glossEpsGrowth => 'בכמה גדל הרווח למניה לעומת שנה קודם.';
+
+  @override
+  String get glossDividendYield =>
+      'דיבידנד שנתי ÷ מחיר המניה: ההכנסה במזומן שתקבלו בכל שנה, כאחוז ממה שאתם משלמים.';
+
+  @override
+  String get glossDividendPerShare =>
+      'הדיבידנד ששולם על מניה אחת בשנה האחרונה.';
+
+  @override
+  String get glossPayoutRatio =>
+      'החלק מהרווח שמחולק כדיבידנד. מעל 100% החברה משלמת יותר ממה שהיא מרוויחה, ומצב כזה לרוב לא מחזיק מעמד.';
+
+  @override
+  String get glossTitle => 'מה זה אומר?';
 }

@@ -1880,4 +1880,103 @@ class AppLocalizationsYo extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Kò sí ìsopọ̀ – à ń fi dátà tí a fipamọ́ kẹ́yìn hàn ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Iye tí gbogbo ilé-iṣẹ́ náà tó lórí ọjà ìpín: iye owó ìpín × iye ìpín.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Iye ìpín tí ilé-iṣẹ́ náà ti gbé jáde. Tí ó bá pọ̀ sí i, ìpín kọ̀ọ̀kan á ní ipa tó kéré; ríra ìpín padà máa ń dín in kù.';
+
+  @override
+  String get glossPeTrailing =>
+      'Iye owó ÷ èrè fún ìpín kọ̀ọ̀kan láàrin oṣù 12 sẹ́yìn: iye ọdún èrè ìsinsìnyí tí o ń san fún. Èyí tó kéré jù ni ó din owó jù, ṣùgbọ́n àwọn ilé-iṣẹ́ tó ń dàgbà kíákíá sábà máa ń ní P/E gíga.';
+
+  @override
+  String get glossPeForward =>
+      'Bí P/E, ṣùgbọ́n pẹ̀lú èrè tí àwọn onímọ̀ ìtúpalẹ̀ ń retí fún oṣù 12 tó ń bọ̀. Tí ó bá kéré ju P/E tó kọjá lọ, a retí pé èrè yóò pọ̀ sí i.';
+
+  @override
+  String get glossPb =>
+      'Iye owó ÷ iye ìwé (dúkìá yọ gbèsè kúrò) fún ìpín kọ̀ọ̀kan. Ní àyíká 1 túmọ̀ sí pé ọjà ń díye lé ilé-iṣẹ́ náà bí ohun tó ní lórí ìwé.';
+
+  @override
+  String get glossPs =>
+      'Iye ọjà ÷ owó tó wọlé lọ́dún. Ó wúlò fún àwọn ilé-iṣẹ́ tí èrè wọn ṣì kéré tàbí tí kò sí; ṣe àfiwé rẹ̀ nínú iṣẹ́ kan náà.';
+
+  @override
+  String get glossEvToFcf =>
+      'Iye ilé-iṣẹ́ pẹ̀lú gbèsè (EV) ÷ owó tí ó ń pa jọ láàrin ọdún kan lẹ́yìn ìdókòwò. Èyí tó kéré túmọ̀ sí pé o ń rí owó púpọ̀ sí i fún iye tí o san.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ìdàgbàsókè èrè ọdọọdún tí a retí (%). Ní àyíká 1 ni a sábà máa ń kà sí déédéé; ó ń wo P/E ní ìmọ́lẹ̀ ìdàgbàsókè.';
+
+  @override
+  String get glossEps =>
+      'Èrè fún ìpín kọ̀ọ̀kan láàrin oṣù 12 sẹ́yìn. EPS tó ń gòkè láti ọdún dé ọdún jẹ́ ọ̀kan lára àmì tó lágbára jù lọ ti ilé-iṣẹ́ tó ní ìlera.';
+
+  @override
+  String get glossBeta =>
+      'Bí ìpín náà ṣe máa ń rìn pẹ̀lú ọjà tó: 1 = bí ọjà, 1.5 = ìyípadà tó tóbi sí i ní nǹkan bí 50%, nísàlẹ̀ 1 = ó farabalẹ̀ jù.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Gbogbo ọjà tí wọ́n tà láàrin oṣù 12 sẹ́yìn, ṣáájú ìnáwó kankan.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Èrè tó kù lẹ́yìn gbogbo ìnáwó, èlé àti owó-orí láàrin oṣù 12 sẹ́yìn.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ìpín owó tó wọlé tó kù lẹ́yìn ìnáwó tààrà lórí àwọn ọjà. Ìpín gíga sábà máa ń fi agbára láti pinnu iye owó hàn.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ìpín owó tó wọlé tó kù lẹ́yìn ìnáwó ṣíṣe iṣẹ́ (owó-oṣù, owó ilé, ìpolówó), ṣáájú èlé àti owó-orí.';
+
+  @override
+  String get glossNetMargin =>
+      'Ìpín owó tó wọlé tó di èrè ìkẹyìn. 20% túmọ̀ sí pé nínú gbogbo 100 tí wọ́n tà, 20 jẹ́ èrè.';
+
+  @override
+  String get glossRoe =>
+      'Èrè lórí olú-owó (ROE): èrè ọdọọdún ÷ olú-owó àwọn olóhun. Ó fi hàn bí àwọn alákòóso ṣe ń lo owó àwọn onípìn-ín dáadáa tó; lókè nǹkan bí 15% lágbára.';
+
+  @override
+  String get glossRoa =>
+      'Èrè lórí dúkìá (ROA): èrè ọdọọdún ÷ gbogbo ohun tí ilé-iṣẹ́ náà ní. Ṣe àfiwé rẹ̀ nínú iṣẹ́ kan náà.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Gbèsè ÷ olú-owó àwọn olóhun. Èyí tó ga túmọ̀ sí owó yíyá púpọ̀: ewu tó pọ̀ sí i tí èlé bá gòkè tàbí tí iṣẹ́ bá dẹwọ́.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Dúkìá ìgbà kúkúrú ÷ owó tí wọ́n gbọ́dọ̀ san láàrin ọdún kan. Lókè 1 túmọ̀ sí pé ilé-iṣẹ́ náà lè san àwọn owó tó súnmọ́.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Bí owó tó wọlé ṣe pọ̀ sí i tó ní ìfiwéra pẹ̀lú ọdún kan sẹ́yìn.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Bí èrè fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó ní ìfiwéra pẹ̀lú ọdún kan sẹ́yìn.';
+
+  @override
+  String get glossDividendYield =>
+      'Èrè ìpín ọdọọdún ÷ iye owó ìpín: owó tí ìwọ yóò rí lọ́dún, ní ìpín-ọgọ́rùn-ún ohun tí o san.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Èrè ìpín tí wọ́n san lórí ìpín kan ní ọdún tó kọjá.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ìpín èrè tí wọ́n san jáde gẹ́gẹ́ bí èrè ìpín. Lókè 100% ilé-iṣẹ́ náà ń san ju ohun tó ń pa lọ, èyí tí kì í sábà pẹ́.';
+
+  @override
+  String get glossTitle => 'Kí ló túmọ̀ sí?';
 }

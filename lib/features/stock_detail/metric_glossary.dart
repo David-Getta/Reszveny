@@ -1,0 +1,30 @@
+import '../../l10n/generated/app_localizations.dart';
+
+/// A mutatók közérthető magyarázata a címkéjük szerint (a részvény oldalán a
+/// címke melletti ⓘ-re koppintva).
+Map<String, String> metricGlossary(AppLocalizations l10n) => {
+  l10n.labelMarketCap: l10n.glossMarketCap,
+  l10n.labelSharesOutstanding: l10n.glossSharesOutstanding,
+  l10n.labelPeTrailing: l10n.glossPeTrailing,
+  l10n.labelPeForward: l10n.glossPeForward,
+  l10n.labelPb: l10n.glossPb,
+  l10n.labelPs: l10n.glossPs,
+  l10n.labelEvToFcf: l10n.glossEvToFcf,
+  l10n.labelPeg: l10n.glossPeg,
+  l10n.labelEps: l10n.glossEps,
+  l10n.labelBeta: l10n.glossBeta,
+  l10n.labelRevenueTtm: l10n.glossRevenueTtm,
+  l10n.labelNetIncomeTtm: l10n.glossNetIncomeTtm,
+  l10n.labelGrossMargin: l10n.glossGrossMargin,
+  l10n.labelOperatingMargin: l10n.glossOperatingMargin,
+  l10n.labelNetMargin: l10n.glossNetMargin,
+  l10n.labelRoe: l10n.glossRoe,
+  l10n.labelRoa: l10n.glossRoa,
+  l10n.labelDebtToEquity: l10n.glossDebtToEquity,
+  l10n.labelCurrentRatio: l10n.glossCurrentRatio,
+  l10n.labelRevenueGrowth: l10n.glossRevenueGrowth,
+  l10n.labelEpsGrowth: l10n.glossEpsGrowth,
+  l10n.labelDividendYield: l10n.glossDividendYield,
+  l10n.labelDividendPerShare: l10n.glossDividendPerShare,
+  l10n.labelPayoutRatio: l10n.glossPayoutRatio,
+};

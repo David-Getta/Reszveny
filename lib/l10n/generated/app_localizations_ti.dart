@@ -1849,4 +1849,100 @@ class AppLocalizationsTi extends AppLocalizations {
   String offlineBanner(String time) {
     return 'ርክብ የለን – እቲ ናይ መወዳእታ ዝተዓቀበ ሓበሬታ ይርአ ኣሎ ($time)።';
   }
+
+  @override
+  String get glossMarketCap =>
+      'ብምሉኡ እቲ ኩባንያ ኣብ ዕዳጋ ኣክሲዮን ዘለዎ ዋጋ፦ ዋጋ ኣክሲዮን × ብዝሒ ኣክሲዮናት።';
+
+  @override
+  String get glossSharesOutstanding =>
+      'እቲ ኩባንያ ክንደይ ኣክሲዮናት ከም ዘውጽአ። እንተ ወሰኸ፣ ነፍሲ ወከፍ ኣክሲዮን ንእሽቶ ክፋል ይውንን፤ ዳግማይ ዕድጊ ኣክሲዮን የጉድሎ።';
+
+  @override
+  String get glossPeTrailing =>
+      'ዋጋ ÷ ትርፊ ንሓደ ኣክሲዮን ናይ ዝሓለፉ 12 ኣዋርሕ፦ ንክንደይ ዓመታት ናይ ሕጂ ትርፊ ትኸፍል ከም ዘለኻ። ዝተሓተ ሕሱር እዩ፣ ግን ቅልጡፍ ዝዓብዩ ኩባንያታት መብዛሕትኡ ግዜ ልዑል P/E ኣለዎም።';
+
+  @override
+  String get glossPeForward =>
+      'ከም P/E፣ ግን ተንተንቲ ን12 ዝመጽእ ኣዋርሕ ዝጽበይዎ ትርፊ ብምጥቃም። ካብ ዝሓለፈ P/E እንተ ተሓተ፣ ትርፊ ክዓቢ ይጽበ።';
+
+  @override
+  String get glossPb =>
+      'ዋጋ ÷ ናይ መዝገብ ዋጋ (ንብረት ኣጉዲልካ ዕዳ) ንሓደ ኣክሲዮን። ኣብ ከባቢ 1 ማለት ዕዳጋ ነቲ ኩባንያ ብመጠን እቲ ኣብ ወረቐት ዘለዎ ንብረት ይግምግሞ።';
+
+  @override
+  String get glossPs =>
+      'ዋጋ ዕዳጋ ÷ ዓመታዊ እቶት። ገና ውሑድ ወይ ዋላ ሓደ ትርፊ ንዘይብሎም ኩባንያታት ጠቓሚ እዩ፤ ኣብ ውሽጢ ሓደ ዓይነት ኢንዱስትሪ ኣወዳድሩ።';
+
+  @override
+  String get glossEvToFcf =>
+      'ዋጋ ኩባንያ ምስ ዕዳ (EV) ÷ ድሕሪ ኢንቨስትመንት ኣብ ሓደ ዓመት ዘፍርዮ ጥረ ገንዘብ። ዝተሓተ ማለት ብዝኸፈልካዮ ዋጋ ዝበዝሐ ገንዘብ ትረክብ።';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ዝጽበ ዓመታዊ ዕቤት ትርፊ (%)። ኣብ ከባቢ 1 መብዛሕትኡ ግዜ ፍትሓዊ ተባሂሉ ይውሰድ፤ ንP/E ብብርሃን ዕቤት የርእዮ።';
+
+  @override
+  String get glossEps =>
+      'ትርፊ ንሓደ ኣክሲዮን ኣብ ዝሓለፉ 12 ኣዋርሕ። ዓመት ብዓመት ዝዓቢ EPS ሓደ ካብቶም ዝሓየሉ ምልክታት ጥዑይ ኩባንያ እዩ።';
+
+  @override
+  String get glossBeta =>
+      'እቲ ኣክሲዮን ምስ ዕዳጋ ክንደይ ይንቀሳቐስ፦ 1 = ከም ዕዳጋ፣ 1.5 = ብኣስታት 50% ዝዓበየ ምልውዋጥ፣ ትሕቲ 1 = ዝህድአ።';
+
+  @override
+  String get glossRevenueTtm => 'ጠቕላላ መሸጣ ናይ ዝሓለፉ 12 ኣዋርሕ፣ ቅድሚ ዝኾነ ወጻኢ።';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'ኣብ ዝሓለፉ 12 ኣዋርሕ ድሕሪ ኩሉ ወጻኢታት፣ ወለድን ግብርን ዝተረፈ ትርፊ።';
+
+  @override
+  String get glossGrossMargin =>
+      'ድሕሪ ቀጥታዊ ወጻኢ ፍርያት ዝተረፈ ክፋል እቶት። ልዑል ሕዳግ መብዛሕትኡ ግዜ ሓይሊ ምውሳን ዋጋ የመልክት።';
+
+  @override
+  String get glossOperatingMargin =>
+      'ድሕሪ ወጻኢ ምክያድ ንግዲ (ደሞዝ፣ ክራይ፣ ማርኬቲንግ)፣ ቅድሚ ወለድን ግብርን ዝተረፈ ክፋል እቶት።';
+
+  @override
+  String get glossNetMargin =>
+      'ናብ መወዳእታ ትርፊ ዝቕየር ክፋል እቶት። 20% ማለት ካብ ነፍሲ ወከፍ 100 መሸጣ 20 ትርፊ እዩ።';
+
+  @override
+  String get glossRoe =>
+      'ምላሽ ኣብ ካፒታል፦ ዓመታዊ ትርፊ ÷ ካፒታል ወነንቲ። ኣመራርሓ ገንዘብ ወነንቲ ኣክሲዮን ክንደይ ብጽቡቕ ከም ዝጥቀመሉ የርኢ፤ ልዕሊ ኣስታት 15% ሓያል እዩ።';
+
+  @override
+  String get glossRoa =>
+      'ምላሽ ኣብ ንብረት፦ ዓመታዊ ትርፊ ÷ ኩሉ እቲ ኩባንያ ዝውንኖ። ኣብ ውሽጢ ሓደ ዓይነት ኢንዱስትሪ ኣወዳድሩ።';
+
+  @override
+  String get glossDebtToEquity =>
+      'ዕዳ ÷ ካፒታል ወነንቲ። ዝለዓለ ማለት ዝበዝሐ ዝተለቅሐ ገንዘብ፦ ወለድ ክብ ክብል ወይ ንግዲ ክዝሕል ከሎ ዝዓበየ ሓደጋ።';
+
+  @override
+  String get glossCurrentRatio =>
+      'ናይ ሓጺር ግዜ ንብረት ÷ ኣብ ውሽጢ ሓደ ዓመት ዝኽፈሉ ሕሳባት። ልዕሊ 1 ማለት እቲ ኩባንያ ቀረባ ሕሳባቱ ክሽፍን ይኽእል።';
+
+  @override
+  String get glossRevenueGrowth => 'እቶት ምስ ቅድሚ ሓደ ዓመት ክወዳደር ክንደይ ከም ዝዓበየ።';
+
+  @override
+  String get glossEpsGrowth =>
+      'ትርፊ ንሓደ ኣክሲዮን ምስ ቅድሚ ሓደ ዓመት ክወዳደር ክንደይ ከም ዝዓበየ።';
+
+  @override
+  String get glossDividendYield =>
+      'ዓመታዊ ብጽሒት ትርፊ ÷ ዋጋ ኣክሲዮን፦ ኣብ ዓመት እትረኽቦ ጥረ ገንዘብ እቶት፣ ብሚእታዊት ናይቲ ዝኸፈልካዮ።';
+
+  @override
+  String get glossDividendPerShare => 'ኣብ ዝሓለፈ ዓመት ንሓደ ኣክሲዮን ዝተኸፍለ ብጽሒት ትርፊ።';
+
+  @override
+  String get glossPayoutRatio =>
+      'ከም ብጽሒት ትርፊ ዝኽፈል ክፋል ትርፊ። ልዕሊ 100% እቲ ኩባንያ ካብ ዘእትዎ ንላዕሊ ይኸፍል ኣሎ፣ እዚ ድማ ሳሕቲ እዩ ዝቕጽል።';
+
+  @override
+  String get glossTitle => 'እንታይ ማለት እዩ?';
 }

@@ -1887,4 +1887,103 @@ class AppLocalizationsGn extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ndaipóri ñanduti – ojehechauka umi mbaʼekuaarã oñeñongatu pahaguéva ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Mboýpa hepy pe empresa tuichakue bolsa-pe: acción repy × acción papapy.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Mboy acción-pa pe empresa omosẽ. Okakuaáramo, peteĩteĩ acción oguereko pehẽ michĩvéva; umi recompra omboguejy chupe.';
+
+  @override
+  String get glossPeTrailing =>
+      'Hepy ÷ ganancia peteĩteĩ acción rehe 12 jasy ohasavaʼekuépe: mboy ary ganancia koʼágãguáva rehepaga. Ijyvyvéva ivaratovéva, ha katu umi empresa okakuaa pyaʼéva oguereko jepi P/E yvate.';
+
+  @override
+  String get glossPeForward =>
+      'Ojogua P/E-pe, ha katu umi analista ohaʼarõva ganancia 12 jasy oúvape. Ijyvyvéramo P/E ohasavaʼekuégui, ojehaʼarõ ganancia okakuaátaha.';
+
+  @override
+  String get glossPb =>
+      'Hepy ÷ valor contable (activokuéra ojeipeʼa deuda) peteĩteĩ acción rehe. 1 rupi heʼise mercado omoepy pe empresa oguerekoháicha kuatiáre.';
+
+  @override
+  String get glossPs =>
+      'Hepykue bolsa-pe ÷ viru oikéva ary pukukue. Iporã umi empresa ganancia michĩ térã ndorekóiva gueteri; embojoja peteĩ industria pegua ndive.';
+
+  @override
+  String get glossEvToFcf =>
+      'Empresa hepykue deuda ndive (EV) ÷ viru ojapóva peteĩ arýpe inversión rire. Ijyvyvéramo, rehupyty hetave viru pe hepýpe.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ganancia jekakuaa ojehaʼarõva ary ha ary (%). 1 rupi heta oimoʼã hekopete; ohechauka P/E jekakuaa rehe.';
+
+  @override
+  String get glossEps =>
+      'Ganancia peteĩteĩ acción rehe 12 jasy ohasavaʼekuépe. EPS ojupíva ary ha ary haʼe peteĩ techaukarã imbaretevéva empresa hesãiva rehegua.';
+
+  @override
+  String get glossBeta =>
+      'Mboýpa acción omýi mercado ndive: 1 = mercado ojoguáva, 1,5 = 50% rupi omýive, 1 guýpe = ipyʼaguapyve.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Opaite oñevendéva 12 jasy ohasavaʼekuépe, oimeraẽ gasto mboyve.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Ganancia opytáva opaite gasto, interés ha impuesto rire 12 jasy ohasavaʼekuépe.';
+
+  @override
+  String get glossGrossMargin =>
+      'Viru oikéva pehẽ opytáva producto gasto directo rire. Margen yvate heʼise jepi ikatuha omoĩ hepy.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Viru oikéva pehẽ opytáva empresa ombaʼapo haguã gasto (salario, alquiler, marketing) rire, interés ha impuesto mboyve.';
+
+  @override
+  String get glossNetMargin =>
+      'Viru oikéva pehẽ oikóva ganancia pahápe. 20% heʼise 100 oñevendévagui 20 haʼeha ganancia.';
+
+  @override
+  String get glossRoe =>
+      'Rendimiento capital propio rehe: ganancia ary pukukue ÷ jára capital. Ohechauka mbaʼeichaitépa umi omotenondéva oipuru porã accionista viru; 15% rupi ári imbarete.';
+
+  @override
+  String get glossRoa =>
+      'Rendimiento activokuéra rehe: ganancia ary pukukue ÷ opaite mbaʼe empresa oguerekóva. Embojoja peteĩ industria pegua ndive.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Deuda ÷ jára capital. Yvatevéramo, hetave viru ojeprestáva: hetave peligro interés ojupírõ térã negocio oguejýrõ.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Activo mbykymíva ÷ deuda oñepagavaʼerã peteĩ ary ryepýpe. 1 ári heʼise empresa ikatu opaga ideuda hiʼaguĩvéva.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Mboýpa okakuaa viru oikéva ojejoguávo peteĩ ary tenondeguáva ndive.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Mboýpa okakuaa ganancia peteĩteĩ acción rehe ojejoguávo peteĩ ary tenondeguáva ndive.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividendo ary pukukue ÷ acción repy: viru rehupytýtava ary ha ary, porcentaje-pe rehepagávagui.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividendo oñepagáva peteĩ acción rehe ary ohasavaʼekuépe.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Ganancia pehẽ oñepagáva dividendo ramo. 100% ári, empresa opaga hetave ohupytývagui, ha upéva ndaipukúi jepi.';
+
+  @override
+  String get glossTitle => '¿Mbaʼe heʼise?';
 }

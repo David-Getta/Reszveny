@@ -1876,4 +1876,103 @@ class AppLocalizationsFf extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ceŋagol alaa – keɓe sakkiiɗe danndeede ina njaltinee ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Njaru kompaañi ndii fof e luumo aksiyoŋ: coggu aksiyoŋ × limoore aksiyoŋ.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Limoore aksiyoŋ ɗe kompaañi ndii yaltini. So ɓeydiima, kala aksiyoŋ heɓat geɗal ɓurngal famɗude; soodtitagol aksiyoŋ ina ustoo ɗum.';
+
+  @override
+  String get glossPeTrailing =>
+      'Coggu ÷ nafoore kala aksiyoŋ e lebbi 12 ɓennuɗi ɗii: duuɓi nafoore jooni no foti njoɓataa. Ko ɓuri lesde ko ɓuri hoyde, kono kompaañiiji mawnotooɗi law ina njogii P/E toowuɗo.';
+
+  @override
+  String get glossPeForward =>
+      'Hono P/E, kono e nafoore nde ƴeewtotooɓe ndamndii e lebbi 12 garooji ɗii. So ina les P/E ɓennuɗo, ina sikkaa nafoore maa ɓeydo.';
+
+  @override
+  String get glossPb =>
+      'Coggu ÷ njaru deftere (jawdi ustaa ñamaale) kala aksiyoŋ. Ɓadaade 1 ina firi luumo ina hiisa kompaañi ndii e ko o jogii e kaayit.';
+
+  @override
+  String get glossPs =>
+      'Njaru e luumo ÷ ceede naatuɗe e hitaande. Ina nafa kompaañiiji jogiiɗi nafoore famɗunde walla alaa tawo; yerdondin ɗum e nder golle gooto.';
+
+  @override
+  String get glossEvToFcf =>
+      'Njaru kompaañi e ñamaale mum (EV) ÷ ceede ɗe o heɓata e hitaande caggal ndimmorɗe. Ko ɓuri lesde ina firi a heɓat ceede ɓurɗe heewde e coggu ngun.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ɓeydagol nafoore hitaande ndamndaangol (%). Ɓadaade 1 ina hiisee ko feewi; ina hollira P/E e jaŋngol ɓeydagol.';
+
+  @override
+  String get glossEps =>
+      'Nafoore kala aksiyoŋ e lebbi 12 ɓennuɗi ɗii. EPS ɓeydotoo hitaande kala ko maande ɓurnde semmbude e kompaañi cellundi.';
+
+  @override
+  String get glossBeta =>
+      'No aksiyoŋ ngo dillirta e luumo: 1 = hono luumo, 1,5 = dillere ɓurnde mawnude 50% ɓadaade, les 1 = ɓuri deƴƴude.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Kala ko yeeyaa e lebbi 12 ɓennuɗi ɗii, hade ustaade njoɓdi fof.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Nafoore heddiinde caggal njoɓdi fof, interes e lempo e lebbi 12 ɓennuɗi ɗii.';
+
+  @override
+  String get glossGrossMargin =>
+      'Geɗal ceede naatuɗe heddiiɗo caggal njoɓdi piiji ɗii tigi. Marge toowuɗo ina hollira law semmbe e taƴugol coggu.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Geɗal ceede naatuɗe heddiiɗo caggal njoɓdi golle (njoɓdi liggotooɓe, luwe, marketing), hade interes e lempo.';
+
+  @override
+  String get glossNetMargin =>
+      'Geɗal ceede naatuɗe wonta nafoore sakkitiinde. 20% ina firi e kala 100 yeeyaa, 20 ko nafoore.';
+
+  @override
+  String get glossRoe =>
+      'Nafoore e kapital (ROE): nafoore hitaande ÷ kapital jom\'en. Ina hollira no ardiiɓe kuutortoo ceede jom aksiyoŋ\'en; ɓuri 15% ɓadaade ko semmbe.';
+
+  @override
+  String get glossRoa =>
+      'Nafoore e jawdi (ROA): nafoore hitaande ÷ kala ko kompaañi ndii jogii. Yerdondin ɗum e nder golle gooto.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Ñamaale ÷ kapital jom\'en. Ko ɓuri toowde ina firi ceede ñamaaɗe ɓurɗe heewde: kulol ɓurngol mawnude so interes ɓeydiima walla golle ndeƴƴii.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Jawdi ɓooyataa ÷ ñamaale yoɓetee e nder hitaande. Ɓuri 1 ina firi kompaañi ndii ina waawi yoɓde ñamaale mum ɓadiiɗe.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'No ceede naatuɗe ɓeydiiri yerdondinaa e hitaande ɓennunde.';
+
+  @override
+  String get glossEpsGrowth =>
+      'No nafoore kala aksiyoŋ ɓeydiiri yerdondinaa e hitaande ɓennunde.';
+
+  @override
+  String get glossDividendYield =>
+      'Geɗal nafoore hitaande ÷ coggu aksiyoŋ: ceede ɗe keɓataa e hitaande, e teemedere e ko njoɓ-ɗaa.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Geɗal nafoore yoɓaangal e aksiyoŋ gooto e hitaande ɓennunde.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Geɗal nafoore yoɓetee jom aksiyoŋ\'en. Ɓuri 100% kompaañi ndii ina yoɓa ko ɓuri ko heɓata, ɗum ɓooyataa.';
+
+  @override
+  String get glossTitle => 'Ko ɗum firi?';
 }

@@ -1891,4 +1891,103 @@ class AppLocalizationsFr extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Pas de connexion – affichage des dernières données enregistrées ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Ce que vaut toute l\'entreprise en Bourse : cours de l\'action × nombre d\'actions.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Le nombre d\'actions émises par l\'entreprise. S\'il augmente, chaque action possède une plus petite part ; les rachats d\'actions le réduisent.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cours ÷ bénéfice par action des 12 derniers mois : combien d\'années de bénéfice actuel vous payez. Plus bas, c\'est moins cher, mais les entreprises à forte croissance ont souvent un P/E élevé.';
+
+  @override
+  String get glossPeForward =>
+      'Comme le P/E, mais avec le bénéfice attendu par les analystes pour les 12 prochains mois. S\'il est inférieur au P/E historique, les bénéfices devraient croître.';
+
+  @override
+  String get glossPb =>
+      'Cours ÷ valeur comptable (actifs moins dettes) par action. Autour de 1, le marché valorise l\'entreprise à ce qu\'elle possède sur le papier.';
+
+  @override
+  String get glossPs =>
+      'Valeur de marché ÷ chiffre d\'affaires annuel. Utile pour les entreprises peu ou pas encore rentables ; à comparer au sein d\'un même secteur.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valeur de l\'entreprise dette comprise (EV) ÷ la trésorerie qu\'elle génère en un an après investissements. Plus bas signifie plus de trésorerie pour le prix payé.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ croissance annuelle attendue des bénéfices (%). Autour de 1, il est souvent jugé raisonnable ; il met le P/E en perspective avec la croissance.';
+
+  @override
+  String get glossEps =>
+      'Bénéfice par action sur les 12 derniers mois. Un EPS qui progresse d\'année en année est l\'un des signes les plus forts d\'une entreprise saine.';
+
+  @override
+  String get glossBeta =>
+      'Dans quelle mesure l\'action suit le marché : 1 = comme le marché, 1,5 = des variations environ 50 % plus fortes, moins de 1 = plus calme.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total des ventes des 12 derniers mois, avant tout coût.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Bénéfice restant après tous les coûts, intérêts et impôts sur les 12 derniers mois.';
+
+  @override
+  String get glossGrossMargin =>
+      'La part du chiffre d\'affaires restant après le coût direct des produits. Une marge élevée traduit souvent un pouvoir de fixation des prix.';
+
+  @override
+  String get glossOperatingMargin =>
+      'La part du chiffre d\'affaires restant après les frais de fonctionnement (salaires, loyers, marketing), avant intérêts et impôts.';
+
+  @override
+  String get glossNetMargin =>
+      'La part du chiffre d\'affaires qui devient bénéfice final. 20 % signifie que 20 sur 100 de ventes sont du bénéfice.';
+
+  @override
+  String get glossRoe =>
+      'Rentabilité des fonds propres (ROE) : bénéfice annuel ÷ capitaux des propriétaires. Montre si la direction utilise bien l\'argent des actionnaires ; au-delà d\'environ 15 %, c\'est solide.';
+
+  @override
+  String get glossRoa =>
+      'Rentabilité des actifs (ROA) : bénéfice annuel ÷ tout ce que possède l\'entreprise. À comparer au sein d\'un même secteur.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dettes ÷ capitaux des propriétaires. Plus c\'est élevé, plus il y a d\'argent emprunté : plus de risque quand les taux montent ou que l\'activité ralentit.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Actifs à court terme ÷ factures à payer dans l\'année. Au-dessus de 1, l\'entreprise peut couvrir ses échéances proches.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'La hausse du chiffre d\'affaires par rapport à l\'année précédente.';
+
+  @override
+  String get glossEpsGrowth =>
+      'La hausse du bénéfice par action par rapport à l\'année précédente.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende annuel ÷ cours de l\'action : le revenu en espèces que vous toucheriez chaque année, en pourcentage de ce que vous payez.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Le dividende versé pour une action au cours de la dernière année.';
+
+  @override
+  String get glossPayoutRatio =>
+      'La part du bénéfice versée en dividendes. Au-delà de 100 %, l\'entreprise verse plus qu\'elle ne gagne, ce qui dure rarement.';
+
+  @override
+  String get glossTitle => 'Qu\'est-ce que cela signifie ?';
 }

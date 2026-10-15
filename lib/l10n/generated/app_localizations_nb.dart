@@ -1881,4 +1881,103 @@ class AppLocalizationsNb extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ingen tilkobling – viser sist lagrede data ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Hva hele selskapet er verdt på børsen: aksjekurs × antall aksjer.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hvor mange aksjer selskapet har utstedt. Øker tallet, eier hver aksje en mindre bit; tilbakekjøp reduserer det.';
+
+  @override
+  String get glossPeTrailing =>
+      'Kurs ÷ resultat per aksje de siste 12 månedene: hvor mange år med dagens overskudd du betaler for. Lavere er billigere, men selskaper i rask vekst har som regel høy P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Som P/E, men med overskuddet analytikerne venter de neste 12 månedene. Lavere enn historisk P/E betyr at overskuddet ventes å øke.';
+
+  @override
+  String get glossPb =>
+      'Kurs ÷ bokført verdi (eiendeler minus gjeld) per aksje. Rundt 1 betyr at markedet verdsetter selskapet til det det eier på papiret.';
+
+  @override
+  String get glossPs =>
+      'Markedsverdi ÷ årlig omsetning. Nyttig for selskaper med lite eller ingen overskudd ennå; sammenlign innenfor samme bransje.';
+
+  @override
+  String get glossEvToFcf =>
+      'Selskapets verdi inkludert gjeld (EV) ÷ kontantene det genererer på et år etter investeringer. Lavere betyr at du får mer kontanter for prisen.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ forventet årlig resultatvekst (%). Rundt 1 regnes ofte som rimelig; den ser P/E i lys av veksten.';
+
+  @override
+  String get glossEps =>
+      'Resultat per aksje de siste 12 månedene. Stigende EPS over flere år er et av de sterkeste tegnene på et sunt selskap.';
+
+  @override
+  String get glossBeta =>
+      'Hvor mye aksjen pleier å bevege seg med markedet: 1 = som markedet, 1,5 = omtrent 50 % større svingninger, under 1 = roligere.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Samlet salg de siste 12 månedene, før alle kostnader.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Overskuddet som er igjen etter alle kostnader, renter og skatt de siste 12 månedene.';
+
+  @override
+  String get glossGrossMargin =>
+      'Andelen av omsetningen som er igjen etter de direkte kostnadene for produktene. Høy margin betyr ofte prisingsmakt.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Andelen av omsetningen som er igjen etter driften (lønn, husleie, markedsføring), før renter og skatt.';
+
+  @override
+  String get glossNetMargin =>
+      'Andelen av omsetningen som blir endelig overskudd. 20 % betyr at 20 av hver 100 i salg er overskudd.';
+
+  @override
+  String get glossRoe =>
+      'Egenkapitalavkastning: årlig overskudd ÷ eiernes kapital. Viser hvor godt ledelsen bruker aksjonærenes penger; over omtrent 15 % er sterkt.';
+
+  @override
+  String get glossRoa =>
+      'Totalkapitalavkastning: årlig overskudd ÷ alt selskapet eier. Sammenlign innenfor samme bransje.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Gjeld ÷ eiernes kapital. Høyere betyr mer lånte penger: mer risiko når rentene stiger eller virksomheten bremser opp.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Omløpsmidler ÷ regninger som forfaller innen et år. Over 1 betyr at selskapet kan dekke de kortsiktige regningene sine.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hvor mye omsetningen har økt sammenlignet med året før.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hvor mye resultatet per aksje har økt sammenlignet med året før.';
+
+  @override
+  String get glossDividendYield =>
+      'Årlig utbytte ÷ aksjekurs: kontantinntekten du får per år, i prosent av det du betaler.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Utbyttet som er utbetalt per aksje det siste året.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Andelen av overskuddet som deles ut som utbytte. Over 100 % betaler selskapet ut mer enn det tjener, og det varer sjelden.';
+
+  @override
+  String get glossTitle => 'Hva betyr det?';
 }

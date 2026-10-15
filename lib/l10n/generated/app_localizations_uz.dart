@@ -1884,4 +1884,103 @@ class AppLocalizationsUz extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Aloqa yo‘q – oxirgi saqlangan ma’lumotlar ko‘rsatilmoqda ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Butun kompaniyaning birjadagi qiymati: aksiya narxi × aksiyalar soni.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Kompaniya nechta aksiya chiqargan. Soni oshsa, har bir aksiyaga kichikroq ulush toʻgʻri keladi; qayta sotib olish uni kamaytiradi.';
+
+  @override
+  String get glossPeTrailing =>
+      'Narx ÷ oxirgi 12 oyda bir aksiyaga toʻgʻri keladigan foyda: hozirgi foydaning necha yili uchun toʻlayotganingiz. Pastrogʻi arzonroq, lekin tez oʻsayotgan kompaniyalarda P/E odatda yuqori.';
+
+  @override
+  String get glossPeForward =>
+      'P/E kabi, lekin tahlilchilar keyingi 12 oyga kutayotgan foyda bilan. Oʻtgan davr P/E dan past boʻlsa, foyda oʻsishi kutilmoqda.';
+
+  @override
+  String get glossPb =>
+      'Narx ÷ bir aksiyaga toʻgʻri keladigan balans qiymati (aktivlar minus qarzlar). Taxminan 1 bozor kompaniyani qogʻozdagi mulki qadar baholashini bildiradi.';
+
+  @override
+  String get glossPs =>
+      'Bozor qiymati ÷ yillik tushum. Hali foydasi kam yoki umuman yoʻq kompaniyalar uchun foydali; bir soha ichida solishtiring.';
+
+  @override
+  String get glossEvToFcf =>
+      'Qarz bilan birga kompaniya qiymati (EV) ÷ investitsiyalardan keyin bir yilda ishlab topadigan pul. Pastroq boʻlsa, narxga koʻproq pul olasiz.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kutilayotgan yillik foyda oʻsishi (%). Taxminan 1 koʻpincha adolatli hisoblanadi; P/E ni oʻsish nuqtai nazaridan koʻrsatadi.';
+
+  @override
+  String get glossEps =>
+      'Oxirgi 12 oyda bir aksiyaga toʻgʻri keladigan foyda. Yillar davomida oʻsib boruvchi EPS sogʻlom kompaniyaning eng kuchli belgilaridan biri.';
+
+  @override
+  String get glossBeta =>
+      'Aksiya bozor bilan birga qanchalik harakatlanadi: 1 = bozor kabi, 1,5 = taxminan 50% kattaroq tebranishlar, 1 dan past = tinchroq.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Oxirgi 12 oydagi umumiy savdo, har qanday xarajatlardan oldin.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Oxirgi 12 oyda barcha xarajatlar, foizlar va soliqlardan keyin qolgan foyda.';
+
+  @override
+  String get glossGrossMargin =>
+      'Mahsulotlarning bevosita xarajatlaridan keyin qolgan tushum ulushi. Yuqori marja koʻpincha narx belgilash kuchini bildiradi.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Biznesni yuritish xarajatlaridan (ish haqi, ijara, marketing) keyin, foizlar va soliqlardan oldin qolgan tushum ulushi.';
+
+  @override
+  String get glossNetMargin =>
+      'Tushumning yakuniy foydaga aylanadigan ulushi. 20% har 100 savdodan 20 tasi foyda ekanini bildiradi.';
+
+  @override
+  String get glossRoe =>
+      'Kapital rentabelligi: yillik foyda ÷ egalarning kapitali. Rahbariyat aksiyadorlar pulidan qanchalik yaxshi foydalanishini koʻrsatadi; taxminan 15% dan yuqorisi kuchli.';
+
+  @override
+  String get glossRoa =>
+      'Aktivlar rentabelligi: yillik foyda ÷ kompaniyaning barcha mulki. Bir soha ichida solishtiring.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Qarzlar ÷ egalarning kapitali. Yuqoriroq boʻlsa, qarz pul koʻproq: stavkalar oshganda yoki ishlar sekinlashganda xavf kattaroq.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Qisqa muddatli aktivlar ÷ bir yil ichida toʻlanishi kerak boʻlgan majburiyatlar. 1 dan yuqori boʻlsa, kompaniya yaqin majburiyatlarini qoplay oladi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Tushum bir yil oldingiga nisbatan qanchaga oshgan.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Bir aksiyaga toʻgʻri keladigan foyda bir yil oldingiga nisbatan qanchaga oshgan.';
+
+  @override
+  String get glossDividendYield =>
+      'Yillik dividend ÷ aksiya narxi: toʻlagan summangizga nisbatan foizda yiliga oladigan pul daromadingiz.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Oxirgi yilda bir aksiyaga toʻlangan dividend.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.';
+
+  @override
+  String get glossTitle => 'Bu nimani anglatadi?';
 }

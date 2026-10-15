@@ -1891,4 +1891,103 @@ class AppLocalizationsSt extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ha ho kgokahano – ho bontshwa data ya ho qetela e bolokilweng ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Boleng ba khampani yohle mmarakeng wa dishere: theko ya shere × palo ya dishere.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Palo ya dishere tseo khampani e di ntshitseng. Ha e eketseha, shere ka nngwe e na le karolo e nyane; ho reka dishere hape ho e fokotsa.';
+
+  @override
+  String get glossPeTrailing =>
+      'Theko ÷ phaello ka shere ya dikgwedi tse 12 tse fetileng: o lefella dilemo tse kae tsa phaello ya hajwale. E tlase e theko e tlase, empa dikhampani tse holang ka potlako hangata di na le P/E e phahameng.';
+
+  @override
+  String get glossPeForward =>
+      'Jwaloka P/E, empa ka phaello eo bahlahlobi ba e lebelletseng dikgweding tse 12 tse tlang. Ha e le tlase ho P/E e fetileng, phaello e lebelletswe ho hola.';
+
+  @override
+  String get glossPb =>
+      'Theko ÷ boleng ba dibuka (thepa ho tloswa dikoloto) ka shere. Hoo e ka bang 1 ho bolela hore mmaraka o lekanya khampani ka seo e nang le sona pampiring.';
+
+  @override
+  String get glossPs =>
+      'Boleng ba mmaraka ÷ lekeno la selemo. Ho na le thuso bakeng sa dikhampani tse nang le phaello e nyane kapa tse se nang yona hajwale; bapisa kahare ho indasteri e le nngwe.';
+
+  @override
+  String get glossEvToFcf =>
+      'Boleng ba khampani ho kenyeletswa le dikoloto (EV) ÷ tjhelete eo e e hlahisang ka selemo ka mora matsete. E tlase e bolela hore o fumana tjhelete e ngata bakeng sa theko.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kgolo ya phaello ya selemo e lebelletsweng (%). Hoo e ka bang 1 hangata e nkwa e le e loketseng; e sheba P/E ho latela kgolo.';
+
+  @override
+  String get glossEps =>
+      'Phaello ka shere dikgweding tse 12 tse fetileng. EPS e nyolohang selemo le selemo ke e nngwe ya matshwao a matla ka ho fetisisa a khampani e phetseng hantle.';
+
+  @override
+  String get glossBeta =>
+      'Hore na shere e tloaetse ho tsamaya hakae le mmaraka: 1 = jwaloka mmaraka, 1.5 = diphetoho tse kgolwanyane ka hoo e ka bang 50%, ka tlase ho 1 = e kgutsitse haholwanyane.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Thekiso yohle ya dikgwedi tse 12 tse fetileng, pele ho ditjeo dife kapa dife.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Phaello e setseng ka mora ditjeo tsohle, tswala le lekgetho dikgweding tse 12 tse fetileng.';
+
+  @override
+  String get glossGrossMargin =>
+      'Karolo ya lekeno e setseng ka mora ditjeo tse tobileng tsa dihlahiswa. Sekgahla se phahameng hangata se bontsha matla a ho beha theko.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Karolo ya lekeno e setseng ka mora ditjeo tsa ho tsamaisa kgwebo (meputso, rente, papatso), pele ho tswala le lekgetho.';
+
+  @override
+  String get glossNetMargin =>
+      'Karolo ya lekeno e fetohang phaello ya ho qetela. 20% e bolela hore ho 100 e nngwe le e nngwe ya thekiso, 20 ke phaello.';
+
+  @override
+  String get glossRoe =>
+      'Phaello ho tjhelete ya beng: phaello ya selemo ÷ tjhelete ya beng. E bontsha hore na botsamaisi bo sebedisa tjhelete ya beng ba dishere hantle hakae; ka hodima hoo e ka bang 15% e matla.';
+
+  @override
+  String get glossRoa =>
+      'Phaello ho thepa: phaello ya selemo ÷ tsohle tseo khampani e nang le tsona. Bapisa kahare ho indasteri e le nngwe.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dikoloto ÷ tjhelete ya beng. E phahameng e bolela tjhelete e ngata e adimilweng: kotsi e kgolo ha ditswala di nyoloha kapa kgwebo e dieha.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Thepa ya nako e kgutshwane ÷ dikoloto tse lokelang ho lefuwa nakong ya selemo. Ka hodima 1 e bolela hore khampani e kgona ho lefa dikoloto tsa yona tse haufi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hore na lekeno le hotse hakae ha le bapiswa le selemo se fetileng.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hore na phaello ka shere e hotse hakae ha e bapiswa le selemo se fetileng.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende ya selemo ÷ theko ya shere: tjhelete eo o ka e fumanang ka selemo, e le phesente ya seo o se lefang.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende e lefilweng shere e le nngwe selemong se fetileng.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Karolo ya phaello e lefuwang e le dividende. Ka hodima 100% khampani e lefa ho feta seo e se fumanang, mme hoo ha se hangata ho tswelang pele.';
+
+  @override
+  String get glossTitle => 'Ho bolela eng?';
 }

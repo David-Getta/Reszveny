@@ -1887,4 +1887,103 @@ class AppLocalizationsPt extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Sem ligação – a mostrar os últimos dados guardados ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Quanto vale a empresa inteira na bolsa: preço da ação × número de ações.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Quantas ações a empresa emitiu. Se o número cresce, cada ação fica com uma fatia menor; as recompras reduzem-no.';
+
+  @override
+  String get glossPeTrailing =>
+      'Preço ÷ lucro por ação dos últimos 12 meses: quantos anos do lucro atual está a pagar. Mais baixo é mais barato, mas empresas de crescimento rápido costumam ter um P/E alto.';
+
+  @override
+  String get glossPeForward =>
+      'Como o P/E, mas com o lucro que os analistas esperam para os próximos 12 meses. Abaixo do P/E histórico significa que se espera que os lucros cresçam.';
+
+  @override
+  String get glossPb =>
+      'Preço ÷ valor contabilístico (ativos menos dívidas) por ação. Perto de 1 significa que o mercado avalia a empresa pelo que ela possui no papel.';
+
+  @override
+  String get glossPs =>
+      'Valor de mercado ÷ receita anual. Útil para empresas com pouco ou nenhum lucro; compare dentro do mesmo setor.';
+
+  @override
+  String get glossEvToFcf =>
+      'Valor da empresa incluindo a dívida (EV) ÷ o dinheiro que gera num ano depois dos investimentos. Mais baixo significa mais dinheiro pelo preço que paga.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ crescimento anual esperado do lucro (%). Perto de 1 é muitas vezes visto como justo; coloca o P/E à luz do crescimento.';
+
+  @override
+  String get glossEps =>
+      'Lucro por ação nos últimos 12 meses. Um EPS a subir ao longo dos anos é um dos sinais mais fortes de uma empresa saudável.';
+
+  @override
+  String get glossBeta =>
+      'Quanto a ação tende a mover-se com o mercado: 1 = como o mercado, 1,5 = oscilações cerca de 50% maiores, abaixo de 1 = mais calma.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total de vendas dos últimos 12 meses, antes de quaisquer custos.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'O lucro que sobra depois de todos os custos, juros e impostos nos últimos 12 meses.';
+
+  @override
+  String get glossGrossMargin =>
+      'A parte da receita que sobra depois do custo direto dos produtos. Uma margem alta indica muitas vezes poder de fixação de preços.';
+
+  @override
+  String get glossOperatingMargin =>
+      'A parte da receita que sobra depois de gerir o negócio (salários, rendas, marketing), antes de juros e impostos.';
+
+  @override
+  String get glossNetMargin =>
+      'A parte da receita que se torna lucro final. 20% significa que, de cada 100 em vendas, 20 são lucro.';
+
+  @override
+  String get glossRoe =>
+      'Rentabilidade do capital próprio: lucro anual ÷ capital dos donos. Mostra quão bem a gestão usa o dinheiro dos acionistas; acima de cerca de 15% é forte.';
+
+  @override
+  String get glossRoa =>
+      'Rentabilidade dos ativos: lucro anual ÷ tudo o que a empresa possui. Compare dentro do mesmo setor.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dívida ÷ capital dos donos. Mais alto significa mais dinheiro emprestado: mais risco quando os juros sobem ou o negócio abranda.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Ativos de curto prazo ÷ contas a pagar no prazo de um ano. Acima de 1 significa que a empresa consegue cobrir as contas próximas.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Quanto a receita cresceu em relação a um ano antes.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Quanto o lucro por ação cresceu em relação a um ano antes.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividendo anual ÷ preço da ação: o rendimento em dinheiro que receberia por ano, em percentagem do que paga.';
+
+  @override
+  String get glossDividendPerShare =>
+      'O dividendo pago por uma ação no último ano.';
+
+  @override
+  String get glossPayoutRatio =>
+      'A parte do lucro distribuída como dividendos. Acima de 100%, a empresa paga mais do que ganha, o que raramente dura.';
+
+  @override
+  String get glossTitle => 'O que significa?';
 }

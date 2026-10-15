@@ -1886,4 +1886,103 @@ class AppLocalizationsNl extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Geen verbinding – de laatst opgeslagen gegevens worden getoond ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Wat het hele bedrijf waard is op de beurs: aandelenkoers × aantal aandelen.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hoeveel aandelen het bedrijf heeft uitgegeven. Groeit dit aantal, dan bezit elk aandeel een kleiner stukje; inkoop van eigen aandelen verlaagt het.';
+
+  @override
+  String get glossPeTrailing =>
+      'Koers ÷ winst per aandeel over de afgelopen 12 maanden: hoeveel jaar huidige winst je betaalt. Lager is goedkoper, maar snelle groeiers hebben meestal een hoge K/W.';
+
+  @override
+  String get glossPeForward =>
+      'Zoals de K/W, maar met de winst die analisten voor de komende 12 maanden verwachten. Lager dan de achterlopende K/W betekent dat de winst naar verwachting groeit.';
+
+  @override
+  String get glossPb =>
+      'Koers ÷ boekwaarde (bezittingen min schulden) per aandeel. Rond 1 betekent dat de markt het bedrijf waardeert op wat het op papier bezit.';
+
+  @override
+  String get glossPs =>
+      'Marktwaarde ÷ jaaromzet. Handig voor bedrijven met nog weinig of geen winst; vergelijk binnen dezelfde sector.';
+
+  @override
+  String get glossEvToFcf =>
+      'Bedrijfswaarde inclusief schulden (EV) ÷ het geld dat het in een jaar na investeringen overhoudt. Lager betekent meer kasstroom voor je geld.';
+
+  @override
+  String get glossPeg =>
+      'K/W ÷ verwachte jaarlijkse winstgroei (%). Rond 1 wordt vaak als redelijk gezien; het zet de K/W af tegen de groei.';
+
+  @override
+  String get glossEps =>
+      'Winst per aandeel over de afgelopen 12 maanden. Een EPS die jaar na jaar stijgt is een van de sterkste tekenen van een gezond bedrijf.';
+
+  @override
+  String get glossBeta =>
+      'Hoe sterk het aandeel met de markt meebeweegt: 1 = zoals de markt, 1,5 = ongeveer 50% grotere schommelingen, onder 1 = rustiger.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Totale verkopen van de afgelopen 12 maanden, vóór alle kosten.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'De winst die overblijft na alle kosten, rente en belastingen over de afgelopen 12 maanden.';
+
+  @override
+  String get glossGrossMargin =>
+      'Het deel van de omzet dat overblijft na de directe kosten van de producten. Een hoge marge wijst vaak op prijszettingsmacht.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Het deel van de omzet dat overblijft na de bedrijfsvoering (lonen, huur, marketing), vóór rente en belastingen.';
+
+  @override
+  String get glossNetMargin =>
+      'Het deel van de omzet dat uiteindelijk winst wordt. 20% betekent dat van elke 100 aan omzet 20 winst is.';
+
+  @override
+  String get glossRoe =>
+      'Rendement op eigen vermogen: jaarwinst ÷ het kapitaal van de eigenaren. Laat zien hoe goed het management het geld van aandeelhouders inzet; boven ongeveer 15% is sterk.';
+
+  @override
+  String get glossRoa =>
+      'Rendement op activa: jaarwinst ÷ alles wat het bedrijf bezit. Vergelijk binnen dezelfde sector.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Schulden ÷ het kapitaal van de eigenaren. Hoger betekent meer geleend geld: meer risico als de rente stijgt of de zaken vertragen.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kortlopende bezittingen ÷ rekeningen die binnen een jaar betaald moeten worden. Boven 1 betekent dat het bedrijf zijn kortetermijnrekeningen kan betalen.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hoeveel de omzet is gegroeid ten opzichte van een jaar eerder.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hoeveel de winst per aandeel is gegroeid ten opzichte van een jaar eerder.';
+
+  @override
+  String get glossDividendYield =>
+      'Jaarlijks dividend ÷ aandelenkoers: het geld dat je per jaar ontvangt, als percentage van wat je betaalt.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Het dividend dat het afgelopen jaar op één aandeel is uitgekeerd.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Het deel van de winst dat als dividend wordt uitgekeerd. Boven 100% keert het bedrijf meer uit dan het verdient, wat zelden lang houdbaar is.';
+
+  @override
+  String get glossTitle => 'Wat betekent dit?';
 }

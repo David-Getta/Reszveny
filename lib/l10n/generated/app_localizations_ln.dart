@@ -1891,4 +1891,103 @@ class AppLocalizationsLn extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Connexion ezali te – tozali kolakisa ba-donnée ya nsuka oyo ebombamaki ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Motuya ya kompanyi mobimba na bourse: ntalo ya action × motango ya ba-action.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Motango ya ba-action oyo kompanyi ebimisaki. Soki ebakisami, action moko na moko ezwaka eteni moke; kosomba lisusu ba-action (buyback) ekitisaka yango.';
+
+  @override
+  String get glossPeTrailing =>
+      'Ntalo ÷ litomba ya action moko na sanza 12 oyo eleki: mibu boni ya litomba ya lelo ofutaka. Oyo ya nse ezali na ntalo moke, kasi bakompanyi oyo bakolaka noki mingi bazalaka na P/E ya likoló.';
+
+  @override
+  String get glossPeForward =>
+      'Lokola P/E, kasi na litomba oyo ba-analyste bazelaka na sanza 12 oyo ekoya. Soki ezali na nse ya P/E oyo eleki, bazelaka ete litomba ekola.';
+
+  @override
+  String get glossPb =>
+      'Ntalo ÷ motuya na buku (bozwi longola nyongo) ya action moko. Pene na 1 elakisi ete zando epesi kompanyi motuya ya biloko ezali na yango na papye.';
+
+  @override
+  String get glossPs =>
+      'Motuya na zando ÷ mosolo nyɔnsɔ ya mobu. Ebongi mpo na bakompanyi oyo bazali naino na litomba moke to te; kokanisa yango na kati ya mosala moko.';
+
+  @override
+  String get glossEvToFcf =>
+      'Motuya ya kompanyi elongo na nyongo (EV) ÷ mbongo oyo ebimisaka na mobu moko nsima ya ba-investissement. Oyo ya nse elakisi ozwaka mbongo mingi mpo na ntalo yango.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ bokoli ya litomba oyo bazelaka na mobu (%). Pene na 1 mbala mingi ezali sembo; etalaka P/E na kotala bokoli.';
+
+  @override
+  String get glossEps =>
+      'Litomba ya action moko na sanza 12 oyo eleki. EPS oyo ebakisamaka mobu na mobu ezali moko ya bilembo ya makasi koleka ya kompanyi oyo ezali malamu.';
+
+  @override
+  String get glossBeta =>
+      'Ndenge action eningani elongo na zando: 1 = lokola zando, 1,5 = koningana monene pene na 50% koleka, na nse ya 1 = kimya mingi.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Mosolo nyɔnsɔ ya biloko etekamaki na sanza 12 oyo eleki, liboso ya ba-frais nyonso.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Litomba oyo etikali nsima ya ba-frais nyonso, ba-intérêt mpe mpako na sanza 12 oyo eleki.';
+
+  @override
+  String get glossGrossMargin =>
+      'Eteni ya mosolo nyɔnsɔ oyo etikalaka nsima ya ntalo ya kosala biloko. Marge brute ya likoló mbala mingi elakisi nguya ya kotya ntalo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Eteni ya mosolo nyɔnsɔ oyo etikalaka nsima ya kotambwisa mombongo (lifuti, loyer, publicité), liboso ya ba-intérêt mpe mpako.';
+
+  @override
+  String get glossNetMargin =>
+      'Eteni ya mosolo nyɔnsɔ oyo ekomaka litomba ya nsuka. 20% elakisi ete na 100 nyonso ya biloko etekami, 20 ezali litomba.';
+
+  @override
+  String get glossRoe =>
+      'Litomba na fonds propres: litomba ya mobu ÷ mbongo ya bankolo. Elakisi ndenge bakambi basalelaka malamu mbongo ya bato ya ba-action; koleka pene na 15% ezali makasi.';
+
+  @override
+  String get glossRoa =>
+      'Litomba na bozwi: litomba ya mobu ÷ biloko nyonso kompanyi ezali na yango. Kokanisa yango na kati ya mosala moko.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Nyongo ÷ fonds propres. Oyo ya likoló elakisi mbongo mingi ya kodefa: likama mingi tango ba-intérêt emati to mombongo ekiti.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Bozwi ya ntango mokuse ÷ ba-facture ya kofuta na mobu moko. Koleka 1 elakisi ete kompanyi ekoki kofuta ba-facture na yango ya pene.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Ndenge mosolo nyɔnsɔ ekoli soki tokokanisi na mobu oyo eleki.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Ndenge litomba ya action moko ekoli soki tokokanisi na mobu oyo eleki.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende ya mobu ÷ ntalo ya action: mbongo okozwa mobu na mobu, na pourcentage ya oyo ofuti.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende oyo bafutaki na action moko na mobu oyo eleki.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Eteni ya litomba oyo bakabolaka lokola dividende. Koleka 100%, kompanyi efutaka koleka oyo ezwaka, mpe yango eumelaka mingi te.';
+
+  @override
+  String get glossTitle => 'Elakisi nini?';
 }

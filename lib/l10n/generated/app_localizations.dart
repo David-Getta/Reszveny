@@ -3402,6 +3402,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No connection – showing the data saved on {time}.'**
   String offlineBanner(String time);
+
+  /// Plain-language explanation of the metric shown as labelMarketCap, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'What the whole company is worth on the stock market: share price × number of shares.'**
+  String get glossMarketCap;
+
+  /// Plain-language explanation of the metric shown as labelSharesOutstanding, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'How many shares the company has issued. If it grows, each share owns a smaller slice; buybacks shrink it.'**
+  String get glossSharesOutstanding;
+
+  /// Plain-language explanation of the metric shown as labelPeTrailing, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Price ÷ earnings per share of the last 12 months: how many years of current profit you pay for. Lower is cheaper, but fast growers usually have a high P/E.'**
+  String get glossPeTrailing;
+
+  /// Plain-language explanation of the metric shown as labelPeForward, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Like P/E, but with the profit analysts expect for the next 12 months. Below the trailing P/E means profits are expected to grow.'**
+  String get glossPeForward;
+
+  /// Plain-language explanation of the metric shown as labelPb, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Price ÷ book value (assets minus debts) per share. Around 1 means the market values the company at what it owns on paper.'**
+  String get glossPb;
+
+  /// Plain-language explanation of the metric shown as labelPs, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Market value ÷ yearly revenue. Useful for companies with little or no profit yet; compare it within the same industry.'**
+  String get glossPs;
+
+  /// Plain-language explanation of the metric shown as labelEvToFcf, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Company value including debt (EV) ÷ the cash it generates in a year after investments. Lower means you get more cash for the price.'**
+  String get glossEvToFcf;
+
+  /// Plain-language explanation of the metric shown as labelPeg, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'P/E ÷ expected yearly profit growth (%). Around 1 is often seen as fair; it puts the P/E in the light of growth.'**
+  String get glossPeg;
+
+  /// Plain-language explanation of the metric shown as labelEps, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Profit per share over the last 12 months. Rising EPS over the years is one of the strongest signs of a healthy company.'**
+  String get glossEps;
+
+  /// Plain-language explanation of the metric shown as labelBeta, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'How much the stock tends to move with the market: 1 = like the market, 1.5 = about 50% bigger swings, below 1 = calmer.'**
+  String get glossBeta;
+
+  /// Plain-language explanation of the metric shown as labelRevenueTtm, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Total sales of the last 12 months, before any costs.'**
+  String get glossRevenueTtm;
+
+  /// Plain-language explanation of the metric shown as labelNetIncomeTtm, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Profit left after all costs, interest and taxes over the last 12 months.'**
+  String get glossNetIncomeTtm;
+
+  /// Plain-language explanation of the metric shown as labelGrossMargin, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'The share of revenue left after the direct cost of the products. A high margin often means pricing power.'**
+  String get glossGrossMargin;
+
+  /// Plain-language explanation of the metric shown as labelOperatingMargin, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'The share of revenue left after running the business (wages, rent, marketing), before interest and taxes.'**
+  String get glossOperatingMargin;
+
+  /// Plain-language explanation of the metric shown as labelNetMargin, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'The share of revenue that ends up as final profit. 20% means 20 of every 100 in sales is profit.'**
+  String get glossNetMargin;
+
+  /// Plain-language explanation of the metric shown as labelRoe, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Return on equity: yearly profit ÷ the owners\' capital. Shows how well management uses shareholders\' money; above about 15% is strong.'**
+  String get glossRoe;
+
+  /// Plain-language explanation of the metric shown as labelRoa, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Return on assets: yearly profit ÷ everything the company owns. Compare it within the same industry.'**
+  String get glossRoa;
+
+  /// Plain-language explanation of the metric shown as labelDebtToEquity, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Debts ÷ the owners\' capital. Higher means more borrowed money: more risk when rates rise or business slows.'**
+  String get glossDebtToEquity;
+
+  /// Plain-language explanation of the metric shown as labelCurrentRatio, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Short-term assets ÷ bills due within a year. Above 1 means the company can cover its near-term bills.'**
+  String get glossCurrentRatio;
+
+  /// Plain-language explanation of the metric shown as labelRevenueGrowth, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'How much revenue grew compared with a year earlier.'**
+  String get glossRevenueGrowth;
+
+  /// Plain-language explanation of the metric shown as labelEpsGrowth, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'How much profit per share grew compared with a year earlier.'**
+  String get glossEpsGrowth;
+
+  /// Plain-language explanation of the metric shown as labelDividendYield, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly dividend ÷ share price: the cash income you would get per year, as a percentage of what you pay.'**
+  String get glossDividendYield;
+
+  /// Plain-language explanation of the metric shown as labelDividendPerShare, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'The dividend paid on one share over the last year.'**
+  String get glossDividendPerShare;
+
+  /// Plain-language explanation of the metric shown as labelPayoutRatio, opened from the info icon on the stock page.
+  ///
+  /// In en, this message translates to:
+  /// **'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.'**
+  String get glossPayoutRatio;
+
+  /// Dialog title of a metric explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'What does it mean?'**
+  String get glossTitle;
 }
 
 class _AppLocalizationsDelegate

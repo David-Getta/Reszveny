@@ -1887,4 +1887,103 @@ class AppLocalizationsNy extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Palibe intaneti – tikuwonetsa deta yomaliza yosungidwa ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Mtengo wa kampani yonse pa msika wa masheya: mtengo wa sheya × chiwerengero cha masheya.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Kuchuluka kwa masheya omwe kampani yapereka. Ngati akuchuluka, sheya iliyonse imakhala ndi gawo laling\'ono; kugulanso masheya kumawachepetsa.';
+
+  @override
+  String get glossPeTrailing =>
+      'Mtengo ÷ phindu pa sheya iliyonse m\'miyezi 12 yapitayo: zaka zingati za phindu lapano zomwe mukulipira. Yotsika ndi yotchipa, koma makampani okula mofulumira nthawi zambiri amakhala ndi P/E yokwera.';
+
+  @override
+  String get glossPeForward =>
+      'Monga P/E, koma pogwiritsa ntchito phindu limene akatswiri akuyembekezera m\'miyezi 12 ikubwerayi. Ngati ili pansi pa P/E yapitayo, phindu likuyembekezeka kukula.';
+
+  @override
+  String get glossPb =>
+      'Mtengo ÷ mtengo wa m\'mabuku (katundu kuchotsa ngongole) pa sheya iliyonse. Pafupifupi 1 zikutanthauza kuti msika ukuyesa kampani mofanana ndi zomwe ili nazo pa pepala.';
+
+  @override
+  String get glossPs =>
+      'Mtengo pa msika ÷ ndalama zolowa pachaka. Zothandiza pa makampani omwe alibe phindu kapena ali nalo pang\'ono; yerekezani m\'gawo limodzi la bizinesi.';
+
+  @override
+  String get glossEvToFcf =>
+      'Mtengo wa kampani kuphatikiza ngongole (EV) ÷ ndalama zomwe imapanga pachaka pambuyo pa ndalama zoikamo. Yotsika zikutanthauza kuti mumapeza ndalama zambiri pa mtengowo.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ kukula kwa phindu kwa pachaka komwe kukuyembekezeka (%). Pafupifupi 1 nthawi zambiri kumaonedwa ngati koyenera; kumayesa P/E poganizira kukula.';
+
+  @override
+  String get glossEps =>
+      'Phindu pa sheya iliyonse m\'miyezi 12 yapitayo. EPS yomwe ikukwera chaka ndi chaka ndi chimodzi mwa zizindikiro zamphamvu kwambiri za kampani yathanzi.';
+
+  @override
+  String get glossBeta =>
+      'Momwe sheya imayendera limodzi ndi msika: 1 = ngati msika, 1.5 = kusinthasintha kokulirapo ndi pafupifupi 50%, pansi pa 1 = bata.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Malonda onse a miyezi 12 yapitayo, ndalama zogwiritsira ntchito zisanachotsedwe.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Phindu lotsala pambuyo pa ndalama zonse zogwiritsira ntchito, chiwongola dzanja ndi misonkho m\'miyezi 12 yapitayo.';
+
+  @override
+  String get glossGrossMargin =>
+      'Gawo la ndalama zolowa lomwe latsala pambuyo pa mtengo wopangira katundu. Phindu lalikulu nthawi zambiri limasonyeza mphamvu yokhazikitsa mitengo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Gawo la ndalama zolowa lomwe latsala pambuyo poyendetsa bizinesi (malipiro, lendi, malonda), chiwongola dzanja ndi misonkho zisanachotsedwe.';
+
+  @override
+  String get glossNetMargin =>
+      'Gawo la ndalama zolowa lomwe limakhala phindu lomaliza. 20% zikutanthauza kuti 20 pa 100 iliyonse ya malonda ndi phindu.';
+
+  @override
+  String get glossRoe =>
+      'Phindu pa ndalama za eni: phindu la pachaka ÷ ndalama za eni. Limasonyeza momwe oyang\'anira akugwiritsira ntchito bwino ndalama za eni masheya; kupitirira pafupifupi 15% ndi bwino kwambiri.';
+
+  @override
+  String get glossRoa =>
+      'Phindu pa katundu: phindu la pachaka ÷ zonse zomwe kampani ili nazo. Yerekezani m\'gawo limodzi la bizinesi.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Ngongole ÷ ndalama za eni. Yokwera zikutanthauza ndalama zambiri zobwereka: chiopsezo chachikulu chiwongola dzanja chikakwera kapena bizinesi ikachepa.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Katundu wa nthawi yochepa ÷ ngongole zoyenera kulipidwa pasanathe chaka. Kupitirira 1 zikutanthauza kuti kampani ingathe kulipira ngongole zake zapafupi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Kuchuluka komwe ndalama zolowa zakulira poyerekeza ndi chaka chatha.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Kuchuluka komwe phindu pa sheya iliyonse lakulira poyerekeza ndi chaka chatha.';
+
+  @override
+  String get glossDividendYield =>
+      'Gawo la phindu la pachaka ÷ mtengo wa sheya: ndalama zomwe mungalandire chaka chilichonse, monga peresenti ya zomwe mwalipira.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Gawo la phindu lomwe linaperekedwa pa sheya imodzi m\'chaka chathachi.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Gawo la phindu lomwe limagawidwa kwa eni masheya. Kupitirira 100% kampani imapereka zambiri kuposa zomwe imapeza, zomwe sizikhalitsa kawirikawiri.';
+
+  @override
+  String get glossTitle => 'Zikutanthauza chiyani?';
 }

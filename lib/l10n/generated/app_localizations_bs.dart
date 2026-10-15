@@ -1918,4 +1918,103 @@ class AppLocalizationsBs extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nema veze – prikazani su posljednji sačuvani podaci ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Koliko cijela kompanija vrijedi na berzi: cijena dionice × broj dionica.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Koliko je dionica kompanija izdala. Ako broj raste, svaka dionica posjeduje manji dio; otkup dionica ga smanjuje.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cijena ÷ dobit po dionici u posljednjih 12 mjeseci: za koliko godina sadašnje dobiti plaćate. Niže je jeftinije, ali brzorastuće kompanije obično imaju visok P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Kao P/E, ali s dobiti koju analitičari očekuju za narednih 12 mjeseci. Ako je ispod tekućeg P/E, očekuje se rast dobiti.';
+
+  @override
+  String get glossPb =>
+      'Cijena ÷ knjigovodstvena vrijednost (imovina minus dugovi) po dionici. Oko 1 znači da tržište vrednuje kompaniju koliko ona posjeduje na papiru.';
+
+  @override
+  String get glossPs =>
+      'Tržišna vrijednost ÷ godišnji prihodi. Korisno za kompanije s malo ili još bez dobiti; uspoređujte unutar iste industrije.';
+
+  @override
+  String get glossEvToFcf =>
+      'Vrijednost kompanije uključujući dug (EV) ÷ novac koji ostvari za godinu nakon investicija. Niže znači da za cijenu dobijate više novca.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ očekivani godišnji rast dobiti (%). Oko 1 se često smatra fer; stavlja P/E u svjetlo rasta.';
+
+  @override
+  String get glossEps =>
+      'Dobit po dionici u posljednjih 12 mjeseci. EPS koji raste iz godine u godinu jedan je od najjačih znakova zdrave kompanije.';
+
+  @override
+  String get glossBeta =>
+      'Koliko se dionica obično kreće zajedno s tržištem: 1 = kao tržište, 1,5 = oko 50% veće oscilacije, ispod 1 = mirnija.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ukupna prodaja u posljednjih 12 mjeseci, prije bilo kakvih troškova.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Dobit koja ostane nakon svih troškova, kamata i poreza u posljednjih 12 mjeseci.';
+
+  @override
+  String get glossGrossMargin =>
+      'Dio prihoda koji ostaje nakon direktnih troškova proizvoda. Visoka marža često znači moć određivanja cijena.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Dio prihoda koji ostaje nakon troškova poslovanja (plate, zakup, marketing), prije kamata i poreza.';
+
+  @override
+  String get glossNetMargin =>
+      'Dio prihoda koji postaje konačna dobit. 20% znači da je od svakih 100 prodaje 20 dobit.';
+
+  @override
+  String get glossRoe =>
+      'Povrat na kapital: godišnja dobit ÷ kapital vlasnika. Pokazuje koliko dobro uprava koristi novac dioničara; iznad otprilike 15% je snažno.';
+
+  @override
+  String get glossRoa =>
+      'Povrat na imovinu: godišnja dobit ÷ sve što kompanija posjeduje. Uspoređujte unutar iste industrije.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dugovi ÷ kapital vlasnika. Više znači više pozajmljenog novca: veći rizik kad kamate rastu ili posao uspori.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kratkoročna imovina ÷ obaveze koje dospijevaju u roku od godinu dana. Iznad 1 znači da kompanija može pokriti svoje bliske obaveze.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Koliko su prihodi porasli u odnosu na godinu ranije.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Koliko je dobit po dionici porasla u odnosu na godinu ranije.';
+
+  @override
+  String get glossDividendYield =>
+      'Godišnja dividenda ÷ cijena dionice: gotovinski prihod koji biste dobijali godišnje, kao postotak onoga što plaćate.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividenda isplaćena po jednoj dionici u posljednjih godinu dana.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Dio dobiti isplaćen kao dividende. Iznad 100% kompanija isplaćuje više nego što zarađuje, što rijetko traje.';
+
+  @override
+  String get glossTitle => 'Šta to znači?';
 }

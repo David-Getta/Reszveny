@@ -1854,4 +1854,101 @@ class AppLocalizationsAm extends AppLocalizations {
   String offlineBanner(String time) {
     return 'ግንኙነት የለም – ለመጨረሻ ጊዜ የተቀመጠው መረጃ እየታየ ነው ($time)።';
   }
+
+  @override
+  String get glossMarketCap =>
+      'መላው ኩባንያ በአክሲዮን ገበያ ላይ ያለው ዋጋ፦ የአክሲዮን ዋጋ × የአክሲዮኖች ብዛት።';
+
+  @override
+  String get glossSharesOutstanding =>
+      'ኩባንያው ያወጣቸው የአክሲዮኖች ብዛት። ቁጥሩ ከጨመረ እያንዳንዱ አክሲዮን ትንሽ ድርሻ ይኖረዋል፤ መልሶ መግዛት ይቀንሰዋል።';
+
+  @override
+  String get glossPeTrailing =>
+      'ዋጋ ÷ ባለፉት 12 ወራት የአንድ አክሲዮን ትርፍ፦ ለስንት ዓመት የአሁኑ ትርፍ እንደሚከፍሉ ያሳያል። ዝቅተኛው ርካሽ ነው፤ ግን በፍጥነት የሚያድጉ ኩባንያዎች ብዙውን ጊዜ ከፍተኛ P/E አላቸው።';
+
+  @override
+  String get glossPeForward =>
+      'እንደ P/E ነው፤ ግን ተንታኞች ለሚቀጥሉት 12 ወራት በሚጠብቁት ትርፍ። ካለፈው P/E በታች ከሆነ ትርፉ እንደሚያድግ ይጠበቃል።';
+
+  @override
+  String get glossPb =>
+      'ዋጋ ÷ የአንድ አክሲዮን የመዝገብ ዋጋ (ሀብት ሲቀነስ ዕዳ)። ወደ 1 አካባቢ ማለት ገበያው ኩባንያውን በወረቀት ላይ ባለው ንብረት ልክ ይገምተዋል።';
+
+  @override
+  String get glossPs =>
+      'የገበያ ዋጋ ÷ ዓመታዊ ገቢ። ገና ትንሽ ወይም ምንም ትርፍ ለሌላቸው ኩባንያዎች ጠቃሚ ነው፤ በአንድ ዘርፍ ውስጥ ያወዳድሩት።';
+
+  @override
+  String get glossEvToFcf =>
+      'ዕዳን ጨምሮ የኩባንያው ዋጋ (EV) ÷ ከኢንቨስትመንት በኋላ በዓመት የሚያመነጨው ጥሬ ገንዘብ። ዝቅተኛ ማለት ለከፈሉት ዋጋ ብዙ ገንዘብ ያገኛሉ ማለት ነው።';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ የሚጠበቅ ዓመታዊ የትርፍ ዕድገት (%)። ወደ 1 አካባቢ ብዙውን ጊዜ ፍትሃዊ ተብሎ ይታያል፤ P/E-ን ከዕድገት አንጻር ያሳያል።';
+
+  @override
+  String get glossEps =>
+      'ባለፉት 12 ወራት የአንድ አክሲዮን ትርፍ። ከዓመት ዓመት የሚያድግ EPS ጤናማ ኩባንያ ከሚያሳዩ ጠንካራ ምልክቶች አንዱ ነው።';
+
+  @override
+  String get glossBeta =>
+      'አክሲዮኑ ከገበያው ጋር ምን ያህል እንደሚንቀሳቀስ፦ 1 = እንደ ገበያው፣ 1.5 = 50% ገደማ የበለጠ መዋዠቅ፣ ከ1 በታች = የተረጋጋ።';
+
+  @override
+  String get glossRevenueTtm =>
+      'ባለፉት 12 ወራት የተገኘ ጠቅላላ ሽያጭ፣ ማንኛውም ወጪ ከመቀነሱ በፊት።';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'ባለፉት 12 ወራት ሁሉም ወጪዎች፣ ወለድ እና ግብር ከተቀነሱ በኋላ የቀረ ትርፍ።';
+
+  @override
+  String get glossGrossMargin =>
+      'ከምርቶቹ ቀጥተኛ ወጪ በኋላ የሚቀረው የገቢ ድርሻ። ከፍተኛ ህዳግ ብዙውን ጊዜ ዋጋ የመወሰን ኃይልን ያሳያል።';
+
+  @override
+  String get glossOperatingMargin =>
+      'ንግዱን የማካሄድ ወጪዎች (ደመወዝ፣ ኪራይ፣ ማስታወቂያ) ከተቀነሱ በኋላ፣ ከወለድ እና ግብር በፊት የሚቀረው የገቢ ድርሻ።';
+
+  @override
+  String get glossNetMargin =>
+      'የመጨረሻ ትርፍ ሆኖ የሚቀረው የገቢ ድርሻ። 20% ማለት ከእያንዳንዱ 100 ሽያጭ 20ው ትርፍ ነው።';
+
+  @override
+  String get glossRoe =>
+      'የካፒታል ተመላሽ፦ ዓመታዊ ትርፍ ÷ የባለቤቶቹ ካፒታል። አመራሩ የባለአክሲዮኖችን ገንዘብ ምን ያህል በሚገባ እንደሚጠቀም ያሳያል፤ ከ15% ገደማ በላይ ጠንካራ ነው።';
+
+  @override
+  String get glossRoa =>
+      'የሀብት ተመላሽ፦ ዓመታዊ ትርፍ ÷ ኩባንያው ያለው ሁሉም ሀብት። በአንድ ዘርፍ ውስጥ ያወዳድሩት።';
+
+  @override
+  String get glossDebtToEquity =>
+      'ዕዳ ÷ የባለቤቶቹ ካፒታል። ከፍ ያለ ማለት ብዙ የተበደረ ገንዘብ ማለት ነው፦ የወለድ መጠን ሲጨምር ወይም ንግድ ሲቀዘቅዝ ትልቅ ስጋት።';
+
+  @override
+  String get glossCurrentRatio =>
+      'የአጭር ጊዜ ሀብቶች ÷ በአንድ ዓመት ውስጥ የሚከፈሉ ሂሳቦች። ከ1 በላይ ማለት ኩባንያው የቅርብ ጊዜ ሂሳቦቹን መሸፈን ይችላል።';
+
+  @override
+  String get glossRevenueGrowth => 'ገቢ ከአንድ ዓመት በፊት ጋር ሲነጻጸር ምን ያህል እንዳደገ።';
+
+  @override
+  String get glossEpsGrowth =>
+      'የአንድ አክሲዮን ትርፍ ከአንድ ዓመት በፊት ጋር ሲነጻጸር ምን ያህል እንዳደገ።';
+
+  @override
+  String get glossDividendYield =>
+      'ዓመታዊ የትርፍ ድርሻ ÷ የአክሲዮን ዋጋ፦ በዓመት የሚያገኙት የጥሬ ገንዘብ ገቢ፣ ከሚከፍሉት ዋጋ በመቶኛ።';
+
+  @override
+  String get glossDividendPerShare => 'ባለፈው ዓመት ለአንድ አክሲዮን የተከፈለ የትርፍ ድርሻ።';
+
+  @override
+  String get glossPayoutRatio =>
+      'እንደ የትርፍ ድርሻ የሚከፈለው የትርፍ ክፍል። ከ100% በላይ ከሆነ ኩባንያው ከሚያገኘው በላይ ይከፍላል፤ ይህ እምብዛም አይዘልቅም።';
+
+  @override
+  String get glossTitle => 'ምን ማለት ነው?';
 }

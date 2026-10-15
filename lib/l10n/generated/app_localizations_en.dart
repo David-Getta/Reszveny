@@ -1880,4 +1880,103 @@ class AppLocalizationsEn extends AppLocalizations {
   String offlineBanner(String time) {
     return 'No connection – showing the data saved on $time.';
   }
+
+  @override
+  String get glossMarketCap =>
+      'What the whole company is worth on the stock market: share price × number of shares.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'How many shares the company has issued. If it grows, each share owns a smaller slice; buybacks shrink it.';
+
+  @override
+  String get glossPeTrailing =>
+      'Price ÷ earnings per share of the last 12 months: how many years of current profit you pay for. Lower is cheaper, but fast growers usually have a high P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Like P/E, but with the profit analysts expect for the next 12 months. Below the trailing P/E means profits are expected to grow.';
+
+  @override
+  String get glossPb =>
+      'Price ÷ book value (assets minus debts) per share. Around 1 means the market values the company at what it owns on paper.';
+
+  @override
+  String get glossPs =>
+      'Market value ÷ yearly revenue. Useful for companies with little or no profit yet; compare it within the same industry.';
+
+  @override
+  String get glossEvToFcf =>
+      'Company value including debt (EV) ÷ the cash it generates in a year after investments. Lower means you get more cash for the price.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ expected yearly profit growth (%). Around 1 is often seen as fair; it puts the P/E in the light of growth.';
+
+  @override
+  String get glossEps =>
+      'Profit per share over the last 12 months. Rising EPS over the years is one of the strongest signs of a healthy company.';
+
+  @override
+  String get glossBeta =>
+      'How much the stock tends to move with the market: 1 = like the market, 1.5 = about 50% bigger swings, below 1 = calmer.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total sales of the last 12 months, before any costs.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Profit left after all costs, interest and taxes over the last 12 months.';
+
+  @override
+  String get glossGrossMargin =>
+      'The share of revenue left after the direct cost of the products. A high margin often means pricing power.';
+
+  @override
+  String get glossOperatingMargin =>
+      'The share of revenue left after running the business (wages, rent, marketing), before interest and taxes.';
+
+  @override
+  String get glossNetMargin =>
+      'The share of revenue that ends up as final profit. 20% means 20 of every 100 in sales is profit.';
+
+  @override
+  String get glossRoe =>
+      'Return on equity: yearly profit ÷ the owners\' capital. Shows how well management uses shareholders\' money; above about 15% is strong.';
+
+  @override
+  String get glossRoa =>
+      'Return on assets: yearly profit ÷ everything the company owns. Compare it within the same industry.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Debts ÷ the owners\' capital. Higher means more borrowed money: more risk when rates rise or business slows.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Short-term assets ÷ bills due within a year. Above 1 means the company can cover its near-term bills.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'How much revenue grew compared with a year earlier.';
+
+  @override
+  String get glossEpsGrowth =>
+      'How much profit per share grew compared with a year earlier.';
+
+  @override
+  String get glossDividendYield =>
+      'Yearly dividend ÷ share price: the cash income you would get per year, as a percentage of what you pay.';
+
+  @override
+  String get glossDividendPerShare =>
+      'The dividend paid on one share over the last year.';
+
+  @override
+  String get glossPayoutRatio =>
+      'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.';
+
+  @override
+  String get glossTitle => 'What does it mean?';
 }

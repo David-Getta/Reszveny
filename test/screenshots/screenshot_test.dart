@@ -714,6 +714,24 @@ void main() {
     await _shot(tester, 'closed_positions_phone_hu');
   });
 
+  testWidgets('metric explanation on a phone (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1000));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final peg = find.byKey(const ValueKey('hint-PEG'));
+    for (var i = 0; i < 30 && peg.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(peg);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'metrics_hints_phone_hu');
+    await tester.tap(peg);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'metric_explained_phone_hu');
+  });
+
   testWidgets('detail with own position', (tester) async {
     await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 900));
     await tester.enterText(find.byType(TextField), 'AAPL');

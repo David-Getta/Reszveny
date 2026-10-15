@@ -1938,4 +1938,103 @@ class AppLocalizationsSl extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ni povezave – prikazani so nazadnje shranjeni podatki ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Koliko je vredno celotno podjetje na borzi: cena delnice × število delnic.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Koliko delnic je podjetje izdalo. Če se število poveča, ima vsaka delnica manjši delež; odkupi lastnih delnic ga zmanjšajo.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cena ÷ dobiček na delnico v zadnjih 12 mesecih: za koliko let sedanjega dobička plačate. Nižji je cenejši, vendar imajo hitro rastoča podjetja običajno visok P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Kot P/E, vendar z dobičkom, ki ga analitiki pričakujejo v naslednjih 12 mesecih. Če je nižji od preteklega P/E, se pričakuje rast dobička.';
+
+  @override
+  String get glossPb =>
+      'Cena ÷ knjigovodska vrednost (sredstva minus dolgovi) na delnico. Okoli 1 pomeni, da trg podjetje vrednoti toliko, kolikor ima na papirju.';
+
+  @override
+  String get glossPs =>
+      'Tržna vrednost ÷ letni prihodki. Uporabno za podjetja z malo ali nič dobička; primerjajte ga znotraj iste panoge.';
+
+  @override
+  String get glossEvToFcf =>
+      'Vrednost podjetja skupaj z dolgom (EV) ÷ denar, ki ga po naložbah ustvari v enem letu. Nižja vrednost pomeni, da za ceno dobite več denarja.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ pričakovana letna rast dobička (%). Okoli 1 pogosto velja za pošteno; P/E postavi v luč rasti.';
+
+  @override
+  String get glossEps =>
+      'Dobiček na delnico v zadnjih 12 mesecih. EPS, ki z leti raste, je eden najmočnejših znakov zdravega podjetja.';
+
+  @override
+  String get glossBeta =>
+      'Koliko se delnica običajno giblje skupaj s trgom: 1 = kot trg, 1,5 = približno 50 % večja nihanja, pod 1 = mirnejša.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Skupna prodaja v zadnjih 12 mesecih, pred vsemi stroški.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Dobiček, ki ostane po vseh stroških, obrestih in davkih v zadnjih 12 mesecih.';
+
+  @override
+  String get glossGrossMargin =>
+      'Delež prihodkov, ki ostane po neposrednih stroških izdelkov. Visoka marža pogosto pomeni moč pri oblikovanju cen.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Delež prihodkov, ki ostane po stroških poslovanja (plače, najemnina, trženje), pred obrestmi in davki.';
+
+  @override
+  String get glossNetMargin =>
+      'Delež prihodkov, ki postane končni dobiček. 20 % pomeni, da je od vsakih 100 prodaje 20 dobička.';
+
+  @override
+  String get glossRoe =>
+      'Donosnost kapitala: letni dobiček ÷ kapital lastnikov. Pokaže, kako dobro uprava uporablja denar delničarjev; nad približno 15 % je močna.';
+
+  @override
+  String get glossRoa =>
+      'Donosnost sredstev: letni dobiček ÷ vse, kar ima podjetje v lasti. Primerjajte jo znotraj iste panoge.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dolgovi ÷ kapital lastnikov. Višja vrednost pomeni več izposojenega denarja: večje tveganje, ko obrestne mere rastejo ali posel upade.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kratkoročna sredstva ÷ obveznosti, ki zapadejo v enem letu. Nad 1 pomeni, da podjetje lahko pokrije bližnje obveznosti.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Koliko so se prihodki povečali v primerjavi z letom prej.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Koliko se je dobiček na delnico povečal v primerjavi z letom prej.';
+
+  @override
+  String get glossDividendYield =>
+      'Letna dividenda ÷ cena delnice: denarni prihodek, ki bi ga prejeli na leto, v odstotkih od plačanega zneska.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividenda, izplačana za eno delnico v zadnjem letu.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.';
+
+  @override
+  String get glossTitle => 'Kaj to pomeni?';
 }

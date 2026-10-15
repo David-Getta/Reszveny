@@ -1877,4 +1877,103 @@ class AppLocalizationsId extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Tidak ada koneksi – menampilkan data yang terakhir disimpan ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Berapa nilai seluruh perusahaan di pasar saham: harga saham × jumlah saham.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Berapa banyak saham yang diterbitkan perusahaan. Jika bertambah, setiap saham memiliki bagian yang lebih kecil; pembelian kembali (buyback) menguranginya.';
+
+  @override
+  String get glossPeTrailing =>
+      'Harga ÷ laba per saham 12 bulan terakhir: berapa tahun laba saat ini yang Anda bayar. Lebih rendah berarti lebih murah, tetapi perusahaan yang tumbuh cepat biasanya punya P/E tinggi.';
+
+  @override
+  String get glossPeForward =>
+      'Seperti P/E, tetapi dengan laba yang diperkirakan analis untuk 12 bulan ke depan. Jika di bawah P/E trailing, laba diperkirakan akan tumbuh.';
+
+  @override
+  String get glossPb =>
+      'Harga ÷ nilai buku (aset dikurangi utang) per saham. Sekitar 1 berarti pasar menilai perusahaan sebesar apa yang dimilikinya di atas kertas.';
+
+  @override
+  String get glossPs =>
+      'Nilai pasar ÷ pendapatan tahunan. Berguna untuk perusahaan yang labanya masih kecil atau belum ada; bandingkan dalam industri yang sama.';
+
+  @override
+  String get glossEvToFcf =>
+      'Nilai perusahaan termasuk utang (EV) ÷ kas yang dihasilkannya dalam setahun setelah investasi. Lebih rendah berarti Anda mendapat lebih banyak kas untuk harganya.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ perkiraan pertumbuhan laba tahunan (%). Sekitar 1 sering dianggap wajar; rasio ini melihat P/E dari sisi pertumbuhan.';
+
+  @override
+  String get glossEps =>
+      'Laba per saham selama 12 bulan terakhir. EPS yang naik dari tahun ke tahun adalah salah satu tanda terkuat perusahaan yang sehat.';
+
+  @override
+  String get glossBeta =>
+      'Seberapa besar saham cenderung bergerak bersama pasar: 1 = seperti pasar, 1,5 = ayunan sekitar 50% lebih besar, di bawah 1 = lebih tenang.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Total penjualan 12 bulan terakhir, sebelum biaya apa pun.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Laba yang tersisa setelah semua biaya, bunga, dan pajak selama 12 bulan terakhir.';
+
+  @override
+  String get glossGrossMargin =>
+      'Bagian pendapatan yang tersisa setelah biaya langsung produk. Margin tinggi sering menandakan kekuatan menentukan harga.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Bagian pendapatan yang tersisa setelah biaya menjalankan usaha (gaji, sewa, pemasaran), sebelum bunga dan pajak.';
+
+  @override
+  String get glossNetMargin =>
+      'Bagian pendapatan yang menjadi laba akhir. 20% berarti dari setiap 100 penjualan, 20 adalah laba.';
+
+  @override
+  String get glossRoe =>
+      'Imbal hasil ekuitas: laba tahunan ÷ modal pemilik. Menunjukkan seberapa baik manajemen memakai uang pemegang saham; di atas sekitar 15% tergolong kuat.';
+
+  @override
+  String get glossRoa =>
+      'Imbal hasil aset: laba tahunan ÷ semua yang dimiliki perusahaan. Bandingkan dalam industri yang sama.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Utang ÷ modal pemilik. Lebih tinggi berarti lebih banyak uang pinjaman: risiko lebih besar saat suku bunga naik atau bisnis melambat.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aset jangka pendek ÷ tagihan yang jatuh tempo dalam setahun. Di atas 1 berarti perusahaan mampu menutup tagihan jangka dekatnya.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Seberapa besar pendapatan tumbuh dibandingkan setahun sebelumnya.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Seberapa besar laba per saham tumbuh dibandingkan setahun sebelumnya.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividen tahunan ÷ harga saham: pemasukan tunai yang Anda terima per tahun, sebagai persentase dari harga yang Anda bayar.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividen yang dibayarkan untuk satu saham selama setahun terakhir.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Bagian laba yang dibagikan sebagai dividen. Di atas 100% perusahaan membayar lebih dari yang dihasilkannya, dan itu jarang bertahan lama.';
+
+  @override
+  String get glossTitle => 'Apa artinya?';
 }

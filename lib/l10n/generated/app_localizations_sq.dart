@@ -1888,4 +1888,103 @@ class AppLocalizationsSq extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nuk ka lidhje – po shfaqen të dhënat e fundit të ruajtura ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Sa vlen e gjithë kompania në bursë: çmimi i aksionit × numri i aksioneve.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Sa aksione ka emetuar kompania. Nëse numri rritet, çdo aksion zotëron një pjesë më të vogël; riblerjet e zvogëlojnë.';
+
+  @override
+  String get glossPeTrailing =>
+      'Çmimi ÷ fitimi për aksion i 12 muajve të fundit: për sa vite të fitimit aktual paguani. Më i ulët është më lirë, por kompanitë që rriten shpejt zakonisht kanë P/E të lartë.';
+
+  @override
+  String get glossPeForward =>
+      'Si P/E, por me fitimin që analistët presin për 12 muajt e ardhshëm. Nëse është nën P/E-në aktuale, pritet që fitimet të rriten.';
+
+  @override
+  String get glossPb =>
+      'Çmimi ÷ vlera kontabël (aktivet minus borxhet) për aksion. Rreth 1 do të thotë se tregu e vlerëson kompaninë sa ç\'zotëron ajo në letër.';
+
+  @override
+  String get glossPs =>
+      'Vlera e tregut ÷ të ardhurat vjetore. E dobishme për kompanitë me pak ose aspak fitim; krahasojeni brenda të njëjtës industri.';
+
+  @override
+  String get glossEvToFcf =>
+      'Vlera e kompanisë përfshirë borxhin (EV) ÷ paratë që ajo gjeneron në një vit pas investimeve. Më i ulët do të thotë që merrni më shumë para për çmimin.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ rritja e pritshme vjetore e fitimit (%). Rreth 1 shpesh konsiderohet e drejtë; e vendos P/E-në në dritën e rritjes.';
+
+  @override
+  String get glossEps =>
+      'Fitimi për aksion në 12 muajt e fundit. Një EPS që rritet ndër vite është një nga shenjat më të forta të një kompanie të shëndetshme.';
+
+  @override
+  String get glossBeta =>
+      'Sa priret aksioni të lëvizë bashkë me tregun: 1 = si tregu, 1,5 = luhatje rreth 50% më të mëdha, nën 1 = më i qetë.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Shitjet totale të 12 muajve të fundit, para çdo kostoje.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Fitimi që mbetet pas të gjitha kostove, interesave dhe taksave në 12 muajt e fundit.';
+
+  @override
+  String get glossGrossMargin =>
+      'Pjesa e të ardhurave që mbetet pas kostos direkte të produkteve. Një marzh i lartë shpesh tregon fuqi për të vendosur çmimet.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Pjesa e të ardhurave që mbetet pas shpenzimeve të biznesit (paga, qira, marketing), para interesave dhe taksave.';
+
+  @override
+  String get glossNetMargin =>
+      'Pjesa e të ardhurave që përfundon si fitim përfundimtar. 20% do të thotë se nga çdo 100 në shitje, 20 janë fitim.';
+
+  @override
+  String get glossRoe =>
+      'Kthimi nga kapitali: fitimi vjetor ÷ kapitali i pronarëve. Tregon sa mirë i përdor drejtuesit paratë e aksionarëve; mbi rreth 15% është i fortë.';
+
+  @override
+  String get glossRoa =>
+      'Kthimi nga aktivet: fitimi vjetor ÷ gjithçka që zotëron kompania. Krahasojeni brenda të njëjtës industri.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Borxhet ÷ kapitali i pronarëve. Më i lartë do të thotë më shumë para të huazuara: më shumë rrezik kur rriten normat e interesit ose ngadalësohet biznesi.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aktivet afatshkurtra ÷ detyrimet që skadojnë brenda një viti. Mbi 1 do të thotë se kompania mund të mbulojë detyrimet e afërta.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Sa janë rritur të ardhurat krahasuar me një vit më parë.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Sa është rritur fitimi për aksion krahasuar me një vit më parë.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividendi vjetor ÷ çmimi i aksionit: të ardhurat në para që do të merrnit çdo vit, si përqindje e shumës që paguani.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividendi i paguar për një aksion gjatë vitit të fundit.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.';
+
+  @override
+  String get glossTitle => 'Çfarë do të thotë?';
 }

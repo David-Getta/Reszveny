@@ -1886,4 +1886,103 @@ class AppLocalizationsLua extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Kakuena connexion to – tudi tuleja mamanyisha a ndekelu akavua mabika ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Mushinga wa kompanyi mujima ku bourse: mushinga wa action × bungi bua ba-action.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Bungi bua ba-action bidi kompanyi mupatule. Bikala bivudila, action yonso idi ne tshitupa tshikese; kusumba kabidi ba-action (buyback) kudi kubipuekesha.';
+
+  @override
+  String get glossPeTrailing =>
+      'Mushinga ÷ dipeta dia action umue mu ngondo 12 idi mipite: bidimu bungi kayi bia dipeta dia lelu biudi ufuta. Wa panshi udi mupepele, kadi ba-kompanyi badi bakola lukasa batu ne P/E wa muulu.';
+
+  @override
+  String get glossPeForward =>
+      'Bu P/E, kadi ne dipeta didi ba-analyste bindile mu ngondo 12 idi ilua. Bikala muikale panshi pa P/E wa kunyima, badi bindile ne: dipeta nedikole.';
+
+  @override
+  String get glossPb =>
+      'Mushinga ÷ mushinga wa mu mikanda (bintu bia kompanyi kumbusha mabanza) bua action umue. Pabuipi ne 1 kudi kumvuija ne: tshisalu tshidi tshiangata kompanyi bu mudi bintu biayi pa dibeji.';
+
+  @override
+  String get glossPs =>
+      'Mushinga wa ku tshisalu ÷ mfranga idi ibuela mu tshidimu. Udi muimpe bua ba-kompanyi badi kabayi bapete dipeta dinene anyi kabayi nadi; ufuanyike mu mudimu umue.';
+
+  @override
+  String get glossEvToFcf =>
+      'Mushinga wa kompanyi ne mabanza (EV) ÷ mfranga idiyi ipeta mu tshidimu umue panyima pa ba-investissement. Wa panshi udi umvuija ne: udi upeta mfranga mivule bua mushinga au.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ dikola dia dipeta didibu bindile mu tshidimu (%). Pabuipi ne 1 batu bamumona bu muakane; udi utangila P/E ne dikola.';
+
+  @override
+  String get glossEps =>
+      'Dipeta dia action umue mu ngondo 12 idi mipite. EPS udi ubanda tshidimu ne tshidimu udi umue wa ku bimanyinu binene bia kompanyi mimpe.';
+
+  @override
+  String get glossBeta =>
+      'Mudi action wenda pamue ne tshisalu: 1 = bu tshisalu, 1,5 = dinyungana dinene pabuipi ne 50%, panshi pa 1 = mupole.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Mfranga yonso ya bintu bipana mu ngondo 12 idi mipite, kumpala kua mafutu onso.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Dipeta didi dishala panyima pa mafutu onso, ba-intérêt ne mitulu mu ngondo 12 idi mipite.';
+
+  @override
+  String get glossGrossMargin =>
+      'Tshitupa tshia mfranga idi ibuela tshidi tshishala panyima pa mafutu a kuenza bintu. Marge brute wa muulu udi utamba kuleja bukole bua kuteka mushinga.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Tshitupa tshia mfranga idi ibuela tshidi tshishala panyima pa kuendesha mudimu (difutu, loyer, publicité), kumpala kua ba-intérêt ne mitulu.';
+
+  @override
+  String get glossNetMargin =>
+      'Tshitupa tshia mfranga idi ibuela tshidi tshilua dipeta dia ndekelu. 20% udi umvuija ne: mu 100 yonso ya bintu bipana, 20 ndipeta.';
+
+  @override
+  String get glossRoe =>
+      'Dipeta pa fonds propres: dipeta dia tshidimu ÷ mfranga ya bena kompanyi. Udi uleja mudi bakokeshi benza bimpe mudimu ne mfranga ya bena ba-action; kupita pabuipi ne 15% kudi bukole.';
+
+  @override
+  String get glossRoa =>
+      'Dipeta pa bintu bia kompanyi: dipeta dia tshidimu ÷ bintu bionso bidi kompanyi nabi. Ufuanyike mu mudimu umue.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Mabanza ÷ fonds propres. Wa muulu udi umvuija mfranga mivule ya ku mabanza: njiwu mikole padi ba-intérêt babanda anyi mudimu wenda bitekete.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Bintu bia tshikondo tshikese ÷ mabanza a kufuta mu tshidimu umue. Kupita 1 kudi kumvuija ne: kompanyi udi mua kufuta mabanza ende a pabuipi.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Mudi mfranga idi ibuela mikole pa kuyifuanyikija ne tshidimu tshishale.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Mudi dipeta dia action umue dikole pa kudifuanyikija ne tshidimu tshishale.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende wa tshidimu ÷ mushinga wa action: mfranga yaudi mua kupeta tshidimu tshionso, mu pourcentage wa tshiudi mufute.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende udibu bafute bua action umue mu tshidimu tshishale.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Tshitupa tshia dipeta tshidibu bapana bu dividende. Kupita 100%, kompanyi udi ufuta bipite bidiye upeta, ne bualu ebu kabutu bushala matuku a bungi to.';
+
+  @override
+  String get glossTitle => 'Bidi bumvuija tshinyi?';
 }

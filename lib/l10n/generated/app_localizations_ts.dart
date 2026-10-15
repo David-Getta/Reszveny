@@ -1892,4 +1892,103 @@ class AppLocalizationsTs extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ku hava vuhlanganisi – ku kombisiwa data yo hetelela leyi hlayisiweke ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Nkoka wa khampani hinkwayo eka makete wa tixere: nxavo wa xere × nhlayo ya tixere.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Nhlayo ya tixere leti khampani yi ti humeseke. Loko yi engeteleka, xere yin\'wana na yin\'wana yi va ni xiphemu lexitsongo; ku xava tixere endzhaku swi yi hunguta.';
+
+  @override
+  String get glossPeTrailing =>
+      'Nxavo ÷ mbuyelo hi xere wa tin\'hweti ta 12 leti hundzeke: u hakelela malembe mangani ya mbuyelo wa sweswi. Lowu nga ehansi wa chipa, kambe tikhampani leti kulaka hi ku hatlisa hi ntolovelo ti na P/E ya le henhla.';
+
+  @override
+  String get glossPeForward =>
+      'Ku fana na P/E, kambe hi mbuyelo lowu vaxopaxopi va wu langutelaka eka tin\'hweti ta 12 leti taka. Loko yi ri ehansi ka P/E leyi hundzeke, mbuyelo wu languteriwa ku kula.';
+
+  @override
+  String get glossPb =>
+      'Nxavo ÷ nkoka wa le tibukwini (nhundzu ku susiwa swikweleti) hi xere. Kwalomu ka 1 swi vula leswaku makete wu teka khampani yi ri ni nkoka wa leswi yi nga na swona ephepeni.';
+
+  @override
+  String get glossPs =>
+      'Nkoka wa makete ÷ mali leyi nghenaka hi lembe. Swi pfuna eka tikhampani leti nga ni mbuyelo lowutsongo kumbe leti nga riki na wona sweswi; pimanisa endzeni ka indasitiri yin\'we.';
+
+  @override
+  String get glossEvToFcf =>
+      'Nkoka wa khampani ku katsa na swikweleti (EV) ÷ mali leyi yi yi endlaka hi lembe endzhaku ka vuvekisi. Lowu nga ehansi wu vula leswaku u kuma mali yo tala hi nxavo lowu u wu hakelaka.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ku kula ka mbuyelo hi lembe loku languteriweke (%). Kwalomu ka 1 hi ntolovelo ku tekiwa ku ri ku ringanela; yi languta P/E hi ku ya hi ku kula.';
+
+  @override
+  String get glossEps =>
+      'Mbuyelo hi xere eka tin\'hweti ta 12 leti hundzeke. EPS leyi tlhandlukaka lembe na lembe i xin\'wana xa swikombiso swa matimba swinene swa khampani leyi hanyeke kahle.';
+
+  @override
+  String get glossBeta =>
+      'Ndlela leyi xere yi tolovelaka ku famba ha yona ni makete: 1 = ku fana ni makete, 1.5 = ku tsekatseka loku kulaka hi kwalomu ka 50%, ehansi ka 1 = yi rhulile.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ku xavisa hinkwako ka tin\'hweti ta 12 leti hundzeke, ku nga si susiwa tihakelo tin\'wana.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Mbuyelo lowu saleke endzhaku ka tihakelo hinkwato, nhlengo na xibalo eka tin\'hweti ta 12 leti hundzeke.';
+
+  @override
+  String get glossGrossMargin =>
+      'Xiphemu xa mali leyi nghenaka lexi salaka endzhaku ka tihakelo to kongoma ta swikumiwa. Mpimo wa le henhla hi ntolovelo wu kombisa matimba ya ku veka minxavo.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Xiphemu xa mali leyi nghenaka lexi salaka endzhaku ka tihakelo ta ku fambisa bindzu (miholo, rendi, vuxavisi), ku nga si susiwa nhlengo na xibalo.';
+
+  @override
+  String get glossNetMargin =>
+      'Xiphemu xa mali leyi nghenaka lexi hundzukaka mbuyelo wo hetelela. 20% swi vula leswaku eka 100 yin\'wana na yin\'wana ya ku xavisa, 20 i mbuyelo.';
+
+  @override
+  String get glossRoe =>
+      'Mbuyelo eka mali ya vini: mbuyelo wa lembe ÷ mali ya vini. Wu kombisa leswaku vufambisi byi tirhisa mali ya vini va tixere kahle ku fikela kwihi; ehenhla ka kwalomu ka 15% i swa matimba.';
+
+  @override
+  String get glossRoa =>
+      'Mbuyelo eka nhundzu: mbuyelo wa lembe ÷ hinkwaswo leswi khampani yi nga na swona. Pimanisa endzeni ka indasitiri yin\'we.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Swikweleti ÷ mali ya vini. Lowu nga ehenhla wu vula mali yo tala leyi lombiweke: khombo ro tala loko nhlengo wu tlhandluka kumbe bindzu ri nonoka.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Nhundzu ya nkarhi wo koma ÷ swikweleti leswi faneleke ku hakeriwa endzeni ka lembe. Ehenhla ka 1 swi vula leswaku khampani yi kota ku hakela swikweleti swa yona leswi tshineke.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Leswi mali leyi nghenaka yi kuleke ha swona loko yi pimanisiwa na lembe leri hundzeke.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Leswi mbuyelo hi xere wu kuleke ha swona loko wu pimanisiwa na lembe leri hundzeke.';
+
+  @override
+  String get glossDividendYield =>
+      'Dividende ya lembe ÷ nxavo wa xere: mali leyi a wu ta yi kuma hi lembe, tanihi phesente ya leswi u swi hakelaka.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende leyi hakeriweke xere yin\'we eka lembe leri hundzeke.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Xiphemu xa mbuyelo lexi hakeriwaka tanihi dividende. Ehenhla ka 100% khampani yi hakela ku tlula leswi yi swi kumaka, naswona leswi a swi tshami nkarhi wo leha.';
+
+  @override
+  String get glossTitle => 'Swi vula yini?';
 }

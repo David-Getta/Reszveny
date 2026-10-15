@@ -1887,4 +1887,103 @@ class AppLocalizationsRn extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nta interineti – amakuru aheruka kubikwa ni yo yerekanwa ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Agaciro k\'isosiyete yose ku isoko ry\'imigabane: igiciro c\'umugabane × igitigiri c\'imigabane.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Imigabane isosiyete yasohoye ingana gute. Iyo yongerekanye, umugabane umwe umwe uronka igice gitoyi; kugura imigabane yayo isubira biyigabanya.';
+
+  @override
+  String get glossPeTrailing =>
+      'Igiciro ÷ inyungu kuri buri mugabane mu mezi 12 aheze: imyaka ingahe y\'inyungu y\'ubu uriha. Iri hasi riri ku giciro gito, ariko amasosiyete akura vuba akenshi agira P/E iri hejuru.';
+
+  @override
+  String get glossPeForward =>
+      'Nka P/E, ariko hakoreshejwe inyungu abahinga biteze mu mezi 12 aza. Iyo iri munsi ya P/E (iheruka), inyungu yitezwe kwongerekana.';
+
+  @override
+  String get glossPb =>
+      'Igiciro ÷ agaciro kari mu bitabu (itunga ukuyemwo imyenda) kuri buri mugabane. Hafi ya 1 bisigura ko isoko riha isosiyete agaciro k\'ivyo itunze ku mpapuro.';
+
+  @override
+  String get glossPs =>
+      'Agaciro ku isoko ÷ amahera yinjiye ku mwaka. Bifasha ku masosiyete ataragira inyungu nyinshi canke atayifise; gereranya mu rwego rumwe.';
+
+  @override
+  String get glossEvToFcf =>
+      'Agaciro k\'isosiyete harimwo n\'umwenda (EV) ÷ amahera yinjiza mu mwaka umwe inyuma y\'ishoramari. Iri hasi bisigura ko uronka amahera menshi ku giciro.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ iyongerekana ry\'inyungu ryitezwe ku mwaka (%). Hafi ya 1 akenshi bifatwa nk\'ibibereye; bipima P/E ugereranije n\'iterambere.';
+
+  @override
+  String get glossEps =>
+      'Inyungu kuri buri mugabane mu mezi 12 aheze. EPS yongerekana uko imyaka iza ni kimwe mu bimenyetso bikomeye vy\'isosiyete imeze neza.';
+
+  @override
+  String get glossBeta =>
+      'Ingene umugabane uhindagurika hamwe n\'isoko: 1 = nk\'isoko, 1,5 = ihindagurika riruta hafi 50%, munsi ya 1 = bitekanye.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ivyaguzwe vyose mu mezi 12 aheze, imbere y\'amafaranga yose akoreshwa.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Inyungu isigaye inyuma y\'amafaranga yose akoreshwa, inyungu z\'umwenda n\'amakori mu mezi 12 aheze.';
+
+  @override
+  String get glossGrossMargin =>
+      'Igice c\'amahera yinjiye gisigara inyuma y\'ikiguzi c\'ibidandazwa ubwavyo. Igipimo kiri hejuru kenshi cerekana ububasha bwo gushinga ibiciro.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Igice c\'amahera yinjiye gisigara inyuma yo gukoresha ibikorwa (imishahara, ubukode, kwamamaza), imbere y\'inyungu z\'umwenda n\'amakori.';
+
+  @override
+  String get glossNetMargin =>
+      'Igice c\'amahera yinjiye gihinduka inyungu ya nyuma. 20% bisigura ko muri 100 yose y\'ivyaguzwe, 20 ari inyungu.';
+
+  @override
+  String get glossRoe =>
+      'Inyungu ku mari y\'abanyamigabane: inyungu y\'umwaka ÷ imari y\'abanyamigabane. Yerekana ingene ubuyobozi bukoresha neza amahera y\'abanyamigabane; hejuru ya hafi 15% ni vyiza cane.';
+
+  @override
+  String get glossRoa =>
+      'Inyungu ku itunga: inyungu y\'umwaka ÷ itunga ryose ry\'isosiyete. Gereranya mu rwego rumwe.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Umwenda ÷ imari y\'abanyamigabane. Iri hejuru bisigura amahera menshi yatijwe: ingorane nyinshi iyo inyungu z\'umwenda zidiye canke ibikorwa bigenda buhoro.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Itunga ry\'igihe gito ÷ amadeni ategerezwa kurihwa mu mwaka umwe. Hejuru ya 1 bisigura ko isosiyete ishobora kuriha amadeni yayo ya vuba.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Ingene amahera yinjiye yongerekanye ugereranije n\'umwaka uheze.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Ingene inyungu kuri buri mugabane yongerekanye ugereranije n\'umwaka uheze.';
+
+  @override
+  String get glossDividendYield =>
+      'Inyungu y\'imigabane y\'umwaka ÷ igiciro c\'umugabane: amahera woronka ku mwaka, mu ijana ry\'ivyo uriha.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Inyungu yarihwe ku mugabane umwe mu mwaka uheze.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Igice c\'inyungu kigaburwa ku banyamigabane. Hejuru ya 100% isosiyete iriha ibirenze ivyo yinjiza, kandi ivyo ntibimara igihe kirekire.';
+
+  @override
+  String get glossTitle => 'Bisigura iki?';
 }

@@ -1937,4 +1937,103 @@ class AppLocalizationsLt extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nėra ryšio – rodomi paskutiniai išsaugoti duomenys ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Kiek visa bendrovė vertinama akcijų rinkoje: akcijos kaina × akcijų skaičius.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Kiek akcijų bendrovė yra išleidusi. Jei skaičius auga, kiekvienai akcijai tenka mažesnė dalis; akcijų supirkimas jį mažina.';
+
+  @override
+  String get glossPeTrailing =>
+      'Kaina ÷ pastarųjų 12 mėnesių pelnas vienai akcijai: už kiek metų dabartinio pelno mokate. Mažesnis reiškia pigiau, bet sparčiai augančių bendrovių P/E paprastai didelis.';
+
+  @override
+  String get glossPeForward =>
+      'Kaip P/E, tik su pelnu, kurio analitikai tikisi per ateinančius 12 mėnesių. Jei jis mažesnis už praėjusių 12 mėn. P/E, tikimasi pelno augimo.';
+
+  @override
+  String get glossPb =>
+      'Kaina ÷ buhalterinė vertė (turtas atėmus skolas) vienai akcijai. Apie 1 reiškia, kad rinka bendrovę vertina tiek, kiek ji turi popieriuje.';
+
+  @override
+  String get glossPs =>
+      'Rinkos vertė ÷ metinės pajamos. Naudinga bendrovėms, kurios dar uždirba mažai pelno arba jo neturi; lyginkite toje pačioje šakoje.';
+
+  @override
+  String get glossEvToFcf =>
+      'Bendrovės vertė su skola (EV) ÷ pinigai, kuriuos ji per metus sukuria po investicijų. Mažesnis reiškia, kad už kainą gaunate daugiau pinigų.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ tikėtinas metinis pelno augimas (%). Apie 1 dažnai laikoma teisinga; tai P/E vertina atsižvelgiant į augimą.';
+
+  @override
+  String get glossEps =>
+      'Pelnas vienai akcijai per pastaruosius 12 mėnesių. Metai iš metų augantis EPS yra vienas stipriausių sveikos bendrovės ženklų.';
+
+  @override
+  String get glossBeta =>
+      'Kiek akcija linkusi judėti kartu su rinka: 1 = kaip rinka, 1,5 = maždaug 50% didesni svyravimai, mažiau nei 1 = ramesnė.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Visi pastarųjų 12 mėnesių pardavimai, prieš bet kokias išlaidas.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Pelnas, likęs po visų išlaidų, palūkanų ir mokesčių per pastaruosius 12 mėnesių.';
+
+  @override
+  String get glossGrossMargin =>
+      'Pajamų dalis, likusi po tiesioginių produktų sąnaudų. Didelė marža dažnai rodo galią diktuoti kainas.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Pajamų dalis, likusi po veiklos išlaidų (atlyginimai, nuoma, rinkodara), prieš palūkanas ir mokesčius.';
+
+  @override
+  String get glossNetMargin =>
+      'Pajamų dalis, kuri tampa galutiniu pelnu. 20% reiškia, kad iš kiekvienų 100 pardavimų 20 yra pelnas.';
+
+  @override
+  String get glossRoe =>
+      'Nuosavo kapitalo grąža: metinis pelnas ÷ savininkų kapitalas. Rodo, kaip gerai vadovai naudoja akcininkų pinigus; daugiau nei maždaug 15% yra stipru.';
+
+  @override
+  String get glossRoa =>
+      'Turto grąža: metinis pelnas ÷ visas bendrovės turtas. Lyginkite toje pačioje šakoje.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Skolos ÷ savininkų kapitalas. Didesnis reiškia daugiau skolintų pinigų: didesnė rizika, kai kyla palūkanų normos ar sulėtėja verslas.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Trumpalaikis turtas ÷ per metus mokėtinos sąskaitos. Daugiau nei 1 reiškia, kad bendrovė gali padengti artimiausias sąskaitas.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Kiek pajamos išaugo, palyginti su prieš metus.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Kiek pelnas vienai akcijai išaugo, palyginti su prieš metus.';
+
+  @override
+  String get glossDividendYield =>
+      'Metinis dividendas ÷ akcijos kaina: pinigų pajamos, kurias gautumėte kasmet, procentais nuo to, ką sumokate.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividendas, išmokėtas už vieną akciją per pastaruosius metus.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.';
+
+  @override
+  String get glossTitle => 'Ką tai reiškia?';
 }

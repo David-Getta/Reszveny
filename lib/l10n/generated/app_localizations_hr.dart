@@ -1919,4 +1919,103 @@ class AppLocalizationsHr extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nema veze – prikazani su posljednji spremljeni podaci ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Koliko cijela tvrtka vrijedi na burzi: cijena dionice × broj dionica.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Koliko je dionica tvrtka izdala. Ako broj raste, svaka dionica posjeduje manji dio; otkupi dionica ga smanjuju.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cijena ÷ dobit po dionici u zadnjih 12 mjeseci: koliko godina sadašnje dobiti plaćate. Niže je jeftinije, ali tvrtke koje brzo rastu obično imaju visok P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Kao P/E, ali s dobiti koju analitičari očekuju u sljedećih 12 mjeseci. Ako je niži od tekućeg P/E, očekuje se rast dobiti.';
+
+  @override
+  String get glossPb =>
+      'Cijena ÷ knjigovodstvena vrijednost (imovina minus dugovi) po dionici. Oko 1 znači da tržište tvrtku vrednuje koliko ona posjeduje na papiru.';
+
+  @override
+  String get glossPs =>
+      'Tržišna vrijednost ÷ godišnji prihodi. Korisno za tvrtke s malo ili još bez dobiti; uspoređujte unutar iste industrije.';
+
+  @override
+  String get glossEvToFcf =>
+      'Vrijednost tvrtke uključujući dug (EV) ÷ novac koji ostvari u godini nakon ulaganja. Niže znači da za tu cijenu dobivate više novca.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ očekivani godišnji rast dobiti (%). Oko 1 često se smatra poštenim; stavlja P/E u odnos s rastom.';
+
+  @override
+  String get glossEps =>
+      'Dobit po dionici u zadnjih 12 mjeseci. EPS koji raste iz godine u godinu jedan je od najjačih znakova zdrave tvrtke.';
+
+  @override
+  String get glossBeta =>
+      'Koliko se dionica obično kreće s tržištem: 1 = kao tržište, 1,5 = oko 50% veća kolebanja, ispod 1 = mirnija.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Ukupna prodaja u zadnjih 12 mjeseci, prije bilo kakvih troškova.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Dobit koja ostaje nakon svih troškova, kamata i poreza u zadnjih 12 mjeseci.';
+
+  @override
+  String get glossGrossMargin =>
+      'Udio prihoda koji ostaje nakon izravnih troškova proizvoda. Visoka marža često znači moć određivanja cijena.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Udio prihoda koji ostaje nakon vođenja poslovanja (plaće, najam, marketing), prije kamata i poreza.';
+
+  @override
+  String get glossNetMargin =>
+      'Udio prihoda koji postaje konačna dobit. 20% znači da je od svakih 100 prodaje 20 dobit.';
+
+  @override
+  String get glossRoe =>
+      'Povrat na kapital: godišnja dobit ÷ kapital vlasnika. Pokazuje koliko dobro uprava koristi novac dioničara; iznad otprilike 15% je snažno.';
+
+  @override
+  String get glossRoa =>
+      'Povrat na imovinu: godišnja dobit ÷ sve što tvrtka posjeduje. Uspoređujte unutar iste industrije.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dugovi ÷ kapital vlasnika. Više znači više posuđenog novca: veći rizik kad kamate rastu ili posao uspori.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kratkoročna imovina ÷ obveze koje dospijevaju unutar godine. Iznad 1 znači da tvrtka može pokriti obveze koje uskoro dospijevaju.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Koliko su prihodi narasli u odnosu na godinu ranije.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Koliko je dobit po dionici narasla u odnosu na godinu ranije.';
+
+  @override
+  String get glossDividendYield =>
+      'Godišnja dividenda ÷ cijena dionice: novčani prihod koji biste dobivali godišnje, kao postotak onoga što platite.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividenda isplaćena na jednu dionicu u zadnjih godinu dana.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Udio dobiti isplaćen kao dividenda. Iznad 100% tvrtka isplaćuje više nego što zarađuje, što rijetko dugo traje.';
+
+  @override
+  String get glossTitle => 'Što to znači?';
 }

@@ -1892,4 +1892,103 @@ class AppLocalizationsDe extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Keine Verbindung – es werden die zuletzt gespeicherten Daten angezeigt ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Was das ganze Unternehmen an der Börse wert ist: Aktienkurs × Anzahl der Aktien.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Wie viele Aktien das Unternehmen ausgegeben hat. Steigt die Zahl, gehört jeder Aktie ein kleineres Stück; Aktienrückkäufe verringern sie.';
+
+  @override
+  String get glossPeTrailing =>
+      'Kurs ÷ Gewinn je Aktie der letzten 12 Monate: wie viele Jahre des aktuellen Gewinns du bezahlst. Niedriger ist günstiger, aber schnell wachsende Firmen haben meist ein hohes KGV.';
+
+  @override
+  String get glossPeForward =>
+      'Wie das KGV, aber mit dem Gewinn, den Analysten für die nächsten 12 Monate erwarten. Liegt es unter dem rückblickenden KGV, wird Gewinnwachstum erwartet.';
+
+  @override
+  String get glossPb =>
+      'Kurs ÷ Buchwert (Vermögen minus Schulden) je Aktie. Um 1 heißt, dass der Markt das Unternehmen mit dem bewertet, was es auf dem Papier besitzt.';
+
+  @override
+  String get glossPs =>
+      'Marktwert ÷ Jahresumsatz. Nützlich bei Unternehmen mit wenig oder noch keinem Gewinn; vergleiche es innerhalb derselben Branche.';
+
+  @override
+  String get glossEvToFcf =>
+      'Unternehmenswert inklusive Schulden (EV) ÷ das Geld, das es in einem Jahr nach Investitionen erwirtschaftet. Niedriger heißt: Du bekommst mehr Cash für den Preis.';
+
+  @override
+  String get glossPeg =>
+      'KGV ÷ erwartetes jährliches Gewinnwachstum (%). Um 1 gilt oft als fair; es setzt das KGV ins Verhältnis zum Wachstum.';
+
+  @override
+  String get glossEps =>
+      'Gewinn je Aktie der letzten 12 Monate. Über die Jahre steigendes EPS ist eines der stärksten Zeichen für ein gesundes Unternehmen.';
+
+  @override
+  String get glossBeta =>
+      'Wie stark die Aktie mit dem Markt mitschwingt: 1 = wie der Markt, 1,5 = etwa 50% größere Ausschläge, unter 1 = ruhiger.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Gesamte Verkäufe der letzten 12 Monate, vor allen Kosten.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Gewinn, der nach allen Kosten, Zinsen und Steuern der letzten 12 Monate übrig bleibt.';
+
+  @override
+  String get glossGrossMargin =>
+      'Der Anteil vom Umsatz, der nach den direkten Kosten der Produkte bleibt. Eine hohe Marge deutet oft auf Preissetzungsmacht hin.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Der Anteil vom Umsatz, der nach den Kosten des laufenden Betriebs (Löhne, Miete, Marketing) bleibt, vor Zinsen und Steuern.';
+
+  @override
+  String get glossNetMargin =>
+      'Der Anteil vom Umsatz, der am Ende als Gewinn bleibt. 20% heißt: Von je 100 Umsatz sind 20 Gewinn.';
+
+  @override
+  String get glossRoe =>
+      'Eigenkapitalrendite: Jahresgewinn ÷ Kapital der Eigentümer. Zeigt, wie gut das Management das Geld der Aktionäre einsetzt; über etwa 15% ist stark.';
+
+  @override
+  String get glossRoa =>
+      'Gesamtkapitalrendite: Jahresgewinn ÷ alles, was das Unternehmen besitzt. Vergleiche sie innerhalb derselben Branche.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Schulden ÷ Kapital der Eigentümer. Höher heißt mehr geliehenes Geld: mehr Risiko, wenn die Zinsen steigen oder das Geschäft schwächelt.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kurzfristiges Vermögen ÷ innerhalb eines Jahres fällige Rechnungen. Über 1 kann das Unternehmen seine kurzfristigen Rechnungen decken.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Wie stark der Umsatz gegenüber dem Vorjahr gewachsen ist.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Wie stark der Gewinn je Aktie gegenüber dem Vorjahr gewachsen ist.';
+
+  @override
+  String get glossDividendYield =>
+      'Jährliche Dividende ÷ Aktienkurs: das Bareinkommen, das du pro Jahr bekämst, in Prozent dessen, was du zahlst.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Die Dividende, die im letzten Jahr auf eine Aktie gezahlt wurde.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.';
+
+  @override
+  String get glossTitle => 'Was bedeutet das?';
 }

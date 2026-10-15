@@ -1882,4 +1882,103 @@ class AppLocalizationsSw extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Hakuna muunganisho – inaonyesha data iliyohifadhiwa mwisho ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Thamani ya kampuni nzima kwenye soko la hisa: bei ya hisa × idadi ya hisa.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Idadi ya hisa ambazo kampuni imetoa. Ikiongezeka, kila hisa inamiliki sehemu ndogo zaidi; kampuni ikinunua tena hisa zake, idadi hupungua.';
+
+  @override
+  String get glossPeTrailing =>
+      'Bei ÷ faida kwa kila hisa ya miezi 12 iliyopita: unalipia miaka mingapi ya faida ya sasa. Chini zaidi ni nafuu zaidi, lakini kampuni zinazokua haraka kwa kawaida huwa na P/E ya juu.';
+
+  @override
+  String get glossPeForward =>
+      'Kama P/E, lakini kwa faida ambayo wachambuzi wanatarajia kwa miezi 12 ijayo. Ikiwa chini ya P/E ya nyuma, faida inatarajiwa kukua.';
+
+  @override
+  String get glossPb =>
+      'Bei ÷ thamani ya kitabu (mali ukitoa madeni) kwa kila hisa. Karibu 1 inamaanisha soko linathamini kampuni sawa na inachomiliki kwenye karatasi.';
+
+  @override
+  String get glossPs =>
+      'Thamani ya soko ÷ mapato ya mwaka. Inafaa kwa kampuni zenye faida ndogo au zisizo na faida bado; linganisha ndani ya sekta moja.';
+
+  @override
+  String get glossEvToFcf =>
+      'Thamani ya kampuni pamoja na deni (EV) ÷ pesa inayozalisha kwa mwaka baada ya uwekezaji. Chini zaidi inamaanisha unapata pesa zaidi kwa bei unayolipa.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ukuaji wa faida unaotarajiwa kwa mwaka (%). Karibu 1 mara nyingi huonekana kuwa wa haki; huiweka P/E katika mtazamo wa ukuaji.';
+
+  @override
+  String get glossEps =>
+      'Faida kwa kila hisa katika miezi 12 iliyopita. EPS inayopanda mwaka hadi mwaka ni mojawapo ya ishara thabiti zaidi za kampuni yenye afya.';
+
+  @override
+  String get glossBeta =>
+      'Kiasi ambacho hisa huelekea kusonga pamoja na soko: 1 = kama soko, 1.5 = mabadiliko makubwa kwa takriban 50%, chini ya 1 = tulivu zaidi.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Jumla ya mauzo ya miezi 12 iliyopita, kabla ya gharama zozote.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Faida inayobaki baada ya gharama zote, riba na kodi katika miezi 12 iliyopita.';
+
+  @override
+  String get glossGrossMargin =>
+      'Sehemu ya mapato inayobaki baada ya gharama za moja kwa moja za bidhaa. Ukingo wa juu mara nyingi huonyesha uwezo wa kupanga bei.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Sehemu ya mapato inayobaki baada ya gharama za kuendesha biashara (mishahara, kodi ya pango, masoko), kabla ya riba na kodi.';
+
+  @override
+  String get glossNetMargin =>
+      'Sehemu ya mapato inayobaki kama faida ya mwisho. 20% inamaanisha kati ya kila 100 za mauzo, 20 ni faida.';
+
+  @override
+  String get glossRoe =>
+      'Faida kwa mtaji: faida ya mwaka ÷ mtaji wa wamiliki. Huonyesha jinsi uongozi unavyotumia vizuri pesa za wanahisa; zaidi ya takriban 15% ni nzuri sana.';
+
+  @override
+  String get glossRoa =>
+      'Faida kwa mali: faida ya mwaka ÷ kila kitu kampuni inachomiliki. Linganisha ndani ya sekta moja.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Madeni ÷ mtaji wa wamiliki. Juu zaidi inamaanisha pesa nyingi zaidi za mkopo: hatari zaidi riba zikipanda au biashara ikidorora.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Mali za muda mfupi ÷ bili zinazopaswa kulipwa ndani ya mwaka mmoja. Zaidi ya 1 inamaanisha kampuni inaweza kulipa bili zake za karibu.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Kiasi ambacho mapato yamekua ikilinganishwa na mwaka mmoja uliopita.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Kiasi ambacho faida kwa kila hisa imekua ikilinganishwa na mwaka mmoja uliopita.';
+
+  @override
+  String get glossDividendYield =>
+      'Gawio la mwaka ÷ bei ya hisa: mapato ya pesa ambayo ungepata kila mwaka, kama asilimia ya kiasi unacholipa.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Gawio lililolipwa kwa hisa moja katika mwaka uliopita.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Sehemu ya faida inayolipwa kama gawio. Zaidi ya 100% kampuni inalipa zaidi ya inavyopata, jambo ambalo mara chache hudumu.';
+
+  @override
+  String get glossTitle => 'Inamaanisha nini?';
 }

@@ -1879,4 +1879,103 @@ class AppLocalizationsDa extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ingen forbindelse – viser de senest gemte data ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Hvad hele selskabet er værd på aktiemarkedet: aktiekurs × antal aktier.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Hvor mange aktier selskabet har udstedt. Stiger antallet, ejer hver aktie en mindre bid; tilbagekøb mindsker det.';
+
+  @override
+  String get glossPeTrailing =>
+      'Kurs ÷ indtjening pr. aktie de seneste 12 måneder: hvor mange års nuværende overskud du betaler for. Lavere er billigere, men hurtigt voksende selskaber har ofte en høj P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Som P/E, men med det overskud, analytikerne forventer de næste 12 måneder. Under den historiske P/E betyder, at overskuddet forventes at vokse.';
+
+  @override
+  String get glossPb =>
+      'Kurs ÷ bogført værdi (aktiver minus gæld) pr. aktie. Omkring 1 betyder, at markedet værdsætter selskabet til det, det ejer på papiret.';
+
+  @override
+  String get glossPs =>
+      'Markedsværdi ÷ årlig omsætning. Nyttig for selskaber med lidt eller endnu intet overskud; sammenlign inden for samme branche.';
+
+  @override
+  String get glossEvToFcf =>
+      'Selskabets værdi inklusive gæld (EV) ÷ de kontanter, det skaber på et år efter investeringer. Lavere betyder, at du får flere kontanter for prisen.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ forventet årlig vækst i overskuddet (%). Omkring 1 ses ofte som rimeligt; det sætter P/E i forhold til væksten.';
+
+  @override
+  String get glossEps =>
+      'Overskud pr. aktie de seneste 12 måneder. Stigende EPS gennem årene er et af de stærkeste tegn på et sundt selskab.';
+
+  @override
+  String get glossBeta =>
+      'Hvor meget aktien plejer at bevæge sig med markedet: 1 = som markedet, 1,5 = cirka 50% større udsving, under 1 = roligere.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Det samlede salg de seneste 12 måneder, før nogen omkostninger.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Overskud tilbage efter alle omkostninger, renter og skat de seneste 12 måneder.';
+
+  @override
+  String get glossGrossMargin =>
+      'Den del af omsætningen, der er tilbage efter de direkte omkostninger til produkterne. En høj margin betyder ofte prissætningsmagt.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Den del af omsætningen, der er tilbage efter driften (lønninger, husleje, markedsføring), før renter og skat.';
+
+  @override
+  String get glossNetMargin =>
+      'Den del af omsætningen, der ender som endeligt overskud. 20% betyder, at 20 af hver 100 i salg er overskud.';
+
+  @override
+  String get glossRoe =>
+      'Egenkapitalforrentning: årligt overskud ÷ ejernes kapital. Viser, hvor godt ledelsen bruger aktionærernes penge; over ca. 15% er stærkt.';
+
+  @override
+  String get glossRoa =>
+      'Afkast af aktiver: årligt overskud ÷ alt, hvad selskabet ejer. Sammenlign inden for samme branche.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Gæld ÷ ejernes kapital. Højere betyder flere lånte penge: større risiko, når renterne stiger eller forretningen går langsommere.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Kortfristede aktiver ÷ regninger, der forfalder inden for et år. Over 1 betyder, at selskabet kan dække sine nære regninger.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Hvor meget omsætningen er vokset i forhold til et år tidligere.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Hvor meget overskuddet pr. aktie er vokset i forhold til et år tidligere.';
+
+  @override
+  String get glossDividendYield =>
+      'Årligt udbytte ÷ aktiekurs: den kontante indkomst, du ville få om året, i procent af det, du betaler.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Det udbytte, der er udbetalt på én aktie det seneste år.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Den del af overskuddet, der udbetales som udbytte. Over 100% udbetaler selskabet mere, end det tjener, hvilket sjældent holder.';
+
+  @override
+  String get glossTitle => 'Hvad betyder det?';
 }

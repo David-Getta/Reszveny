@@ -1939,4 +1939,103 @@ class AppLocalizationsPl extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Brak połączenia – wyświetlane są ostatnio zapisane dane ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Ile cała spółka jest warta na giełdzie: cena akcji × liczba akcji.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Ile akcji wyemitowała spółka. Gdy ich przybywa, każda akcja ma mniejszy kawałek firmy; skup akcji własnych zmniejsza tę liczbę.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cena ÷ zysk na akcję z ostatnich 12 miesięcy: za ile lat obecnego zysku płacisz. Niższy oznacza taniej, ale szybko rosnące spółki zwykle mają wysoki P/E.';
+
+  @override
+  String get glossPeForward =>
+      'Jak P/E, ale z zyskiem, którego analitycy oczekują w kolejnych 12 miesiącach. Niższy niż historyczny P/E oznacza, że oczekuje się wzrostu zysków.';
+
+  @override
+  String get glossPb =>
+      'Cena ÷ wartość księgowa (aktywa minus długi) na akcję. Około 1 oznacza, że rynek wycenia spółkę na tyle, ile posiada na papierze.';
+
+  @override
+  String get glossPs =>
+      'Wartość rynkowa ÷ roczne przychody. Przydatny dla spółek z niewielkim lub zerowym zyskiem; porównuj w obrębie tej samej branży.';
+
+  @override
+  String get glossEvToFcf =>
+      'Wartość firmy wraz z długiem (EV) ÷ gotówka, którą generuje w ciągu roku po inwestycjach. Niższy oznacza więcej gotówki za tę cenę.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ oczekiwany roczny wzrost zysku (%). Około 1 często uznaje się za uczciwą wycenę; pokazuje P/E w świetle wzrostu.';
+
+  @override
+  String get glossEps =>
+      'Zysk na akcję z ostatnich 12 miesięcy. Rosnący z roku na rok EPS to jeden z najmocniejszych znaków zdrowej spółki.';
+
+  @override
+  String get glossBeta =>
+      'Jak mocno akcja porusza się razem z rynkiem: 1 = jak rynek, 1,5 = wahania większe o około 50%, poniżej 1 = spokojniej.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Łączna sprzedaż z ostatnich 12 miesięcy, przed odjęciem jakichkolwiek kosztów.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Zysk pozostały po wszystkich kosztach, odsetkach i podatkach z ostatnich 12 miesięcy.';
+
+  @override
+  String get glossGrossMargin =>
+      'Część przychodów, która zostaje po bezpośrednich kosztach produktów. Wysoka marża często oznacza siłę cenową.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Część przychodów, która zostaje po kosztach prowadzenia firmy (płace, czynsz, marketing), przed odsetkami i podatkami.';
+
+  @override
+  String get glossNetMargin =>
+      'Część przychodów, która staje się ostatecznym zyskiem. 20% oznacza, że z każdych 100 ze sprzedaży 20 to zysk.';
+
+  @override
+  String get glossRoe =>
+      'Rentowność kapitału własnego: roczny zysk ÷ kapitał właścicieli. Pokazuje, jak dobrze zarząd wykorzystuje pieniądze akcjonariuszy; powyżej około 15% to dobry wynik.';
+
+  @override
+  String get glossRoa =>
+      'Rentowność aktywów: roczny zysk ÷ wszystko, co posiada spółka. Porównuj w obrębie tej samej branży.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Dług ÷ kapitał właścicieli. Wyższy oznacza więcej pożyczonych pieniędzy: większe ryzyko, gdy stopy rosną lub biznes zwalnia.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Aktywa krótkoterminowe ÷ zobowiązania płatne w ciągu roku. Powyżej 1 oznacza, że spółka pokryje swoje bieżące rachunki.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'O ile wzrosły przychody w porównaniu z rokiem wcześniej.';
+
+  @override
+  String get glossEpsGrowth =>
+      'O ile wzrósł zysk na akcję w porównaniu z rokiem wcześniej.';
+
+  @override
+  String get glossDividendYield =>
+      'Roczna dywidenda ÷ cena akcji: gotówka, którą dostajesz co roku, jako procent tego, co płacisz.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dywidenda wypłacona na jedną akcję w ostatnim roku.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.';
+
+  @override
+  String get glossTitle => 'Co to znaczy?';
 }

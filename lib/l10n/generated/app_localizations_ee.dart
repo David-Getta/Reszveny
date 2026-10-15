@@ -1885,4 +1885,103 @@ class AppLocalizationsEe extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Kadodo aɖeke meli o – nyatakaka siwo wodzra ɖo mlɛtɔ la ko le ɖeɖem fia ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Alesi dɔwɔƒea katã xɔ asi le akpawo ƒe asi me: akpa ƒe asi × akpawo ƒe xexlẽme.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Akpa nenie dɔwɔƒea ɖe ɖe go. Ne wodzi ɖe edzi la, akpa ɖesiaɖe ƒe gomenɔnɔ ɖea kpɔtɔ; akpawo gbugbɔ ƒeƒle ɖea wo dzi kpɔtɔ.';
+
+  @override
+  String get glossPeTrailing =>
+      'Asi ÷ viɖe si akpa ɖesiaɖe kpɔ le ɣleti 12 siwo va yi me: ƒe nenie ƒe viɖe si li fifia nèle fe xem ɖo. Esi le sue la xɔ asi bɔbɔe, gake dɔwɔƒe siwo le tsitsim kaba la ƒe P/E kɔna zi geɖe.';
+
+  @override
+  String get glossPeForward =>
+      'Abe P/E ene, gake kple viɖe si numekulawo le mɔ kpɔm na le ɣleti 12 siwo gbɔna me. Ne ele P/E si va yi te la, efia be wole mɔ kpɔm be viɖe adzi ɖe edzi.';
+
+  @override
+  String get glossPb =>
+      'Asi ÷ agbalẽ me asixɔxɔ (nunɔamesiwo ɖe fe ɖa) le akpa ɖesiaɖe ŋu. Ne ede 1 gbɔ la, efia be asi la bu dɔwɔƒea abe nusi le esi le agbalẽ dzi ene.';
+
+  @override
+  String get glossPs =>
+      'Asixɔxɔ le asi me ÷ ƒe sia ƒe gaxɔxɔ. Ewɔ dɔ na dɔwɔƒe siwo ƒe viɖe mesɔ gbɔ o alo mekpɔ viɖe haɖe o; tsɔe sɔ kple esiwo le dɔwɔwɔ ɖeka me.';
+
+  @override
+  String get glossEvToFcf =>
+      'Dɔwɔƒea ƒe asixɔxɔ kple fe (EV) ÷ ga si wòkpɔna le ƒe ɖeka me le gadede dɔwɔwɔ me megbe. Ne ele sue la, èkpɔa ga geɖe ɖe asia ta.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ ƒe sia ƒe viɖe ƒe dzidziɖedzi si wole mɔ kpɔm na (%). Ne ede 1 gbɔ la, ame geɖe bunɛ be esɔ; etsɔa P/E sɔna kple dzidziɖedzi.';
+
+  @override
+  String get glossEps =>
+      'Viɖe si akpa ɖesiaɖe kpɔ le ɣleti 12 siwo va yi me. EPS si le dzidzim ƒe sia ƒe nye dɔwɔƒe si le lãmesẽ me ƒe dzesi sesẽtɔ siwo dometɔ ɖeka.';
+
+  @override
+  String get glossBeta =>
+      'Alesi akpa la ʋãna kple asi la: 1 = abe asi la ene, 1.5 = ʋuʋu si lolo wu kple 50% kloe, 1 te = edzi ɖi wu.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Nu siwo wodzra katã le ɣleti 12 siwo va yi me, hafi woɖe gazazã aɖeke ɖa.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Viɖe si susɔ le gazazãwo katã, fe ƒe viɖe kple adzɔwo megbe le ɣleti 12 siwo va yi me.';
+
+  @override
+  String get glossGrossMargin =>
+      'Gaxɔxɔ ƒe akpa si susɔ le nuwo wɔwɔ ƒe gazazã tẽ megbe. Akpa gã fiana zi geɖe be dɔwɔƒea ate ŋu aɖo asi ɖe eƒe nuwo ŋu.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Gaxɔxɔ ƒe akpa si susɔ le dɔwɔƒea zazã (fetu, xɔƒe ƒe ga, nudzadzra ƒe ɖeɖefia) megbe, hafi woxe fe ƒe viɖe kple adzɔwo.';
+
+  @override
+  String get glossNetMargin =>
+      'Gaxɔxɔ ƒe akpa si zua viɖe mamlɛtɔ. 20% fia be le 100 ɖesiaɖe si wodzra me la, 20 nye viɖe.';
+
+  @override
+  String get glossRoe =>
+      'Viɖe le akpatɔwo ƒe ga ŋu: ƒe sia ƒe viɖe ÷ akpatɔwo ƒe ga. Efia alesi dziɖulawo zãa akpatɔwo ƒe ga nyuie; ne ede 15% kloe dzi la, esesẽ.';
+
+  @override
+  String get glossRoa =>
+      'Viɖe le nunɔamesiwo ŋu: ƒe sia ƒe viɖe ÷ nusiwo katã le dɔwɔƒea si. Tsɔe sɔ kple esiwo le dɔwɔwɔ ɖeka me.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Fe ÷ akpatɔwo ƒe ga. Ne ekɔ la, efia ga geɖe si wodo ɖe fe me: afɔku gã ne fe ƒe viɖe dzi alo dɔwɔwɔ blewu.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Nunɔamesi siwo ate ŋu azu ga kaba ÷ fe siwo woaxe le ƒe ɖeka me. Ne ede 1 dzi la, dɔwɔƒea ate ŋu axe eƒe fe kpuiwo.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Alesi gaxɔxɔ dzi ɖe edzi ne wotsɔe sɔ kple ƒe si va yi.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Alesi viɖe si akpa ɖesiaɖe kpɔ dzi ɖe edzi ne wotsɔe sɔ kple ƒe si va yi.';
+
+  @override
+  String get glossDividendYield =>
+      'Ƒe sia ƒe viɖemama ÷ akpa ƒe asi: ga si àxɔ ƒe sia ƒe, abe alafa memamã ene le nusi nèxe ŋu.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Viɖemama si woxe ɖe akpa ɖeka ŋu le ƒe si va yi me.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Viɖe ƒe akpa si wotsɔna maa abe viɖemama ene. Ne ede 100% dzi la, dɔwɔƒea xea fe wu nusi wòkpɔna, si meyia edzi didi o.';
+
+  @override
+  String get glossTitle => 'Nukae wòfia?';
 }

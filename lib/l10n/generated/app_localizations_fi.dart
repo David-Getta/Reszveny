@@ -1883,4 +1883,103 @@ class AppLocalizationsFi extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Ei yhteyttä – näytetään viimeksi tallennetut tiedot ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Paljonko koko yhtiö on arvoinen pörssissä: osakkeen hinta × osakkeiden määrä.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Kuinka monta osaketta yhtiö on laskenut liikkeeseen. Jos määrä kasvaa, kukin osake omistaa pienemmän palan; takaisinostot pienentävät sitä.';
+
+  @override
+  String get glossPeTrailing =>
+      'Hinta ÷ osakekohtainen tulos viimeiseltä 12 kuukaudelta: kuinka monen vuoden nykyisestä voitosta maksat. Matalampi on halvempi, mutta nopeasti kasvavilla yhtiöillä P/E on yleensä korkea.';
+
+  @override
+  String get glossPeForward =>
+      'Kuten P/E, mutta analyytikoiden seuraaville 12 kuukaudelle odottamalla voitolla. Toteutunutta P/E:tä matalampi tarkoittaa, että voiton odotetaan kasvavan.';
+
+  @override
+  String get glossPb =>
+      'Hinta ÷ osakekohtainen kirja-arvo (varat miinus velat). Noin 1 tarkoittaa, että markkinat arvostavat yhtiön siihen, mitä se omistaa paperilla.';
+
+  @override
+  String get glossPs =>
+      'Markkina-arvo ÷ vuotuinen liikevaihto. Hyödyllinen yhtiöille, joilla on vielä vähän tai ei lainkaan voittoa; vertaa saman toimialan sisällä.';
+
+  @override
+  String get glossEvToFcf =>
+      'Yhtiön arvo velat mukaan lukien (EV) ÷ käteinen, jonka se tuottaa vuodessa investointien jälkeen. Matalampi tarkoittaa, että saat hinnalla enemmän käteistä.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ odotettu vuotuinen voiton kasvu (%). Noin 1 pidetään usein kohtuullisena; se suhteuttaa P/E:n kasvuun.';
+
+  @override
+  String get glossEps =>
+      'Osakekohtainen voitto viimeiseltä 12 kuukaudelta. Vuosien mittaan kasvava EPS on yksi vahvimmista terveen yhtiön merkeistä.';
+
+  @override
+  String get glossBeta =>
+      'Kuinka paljon osake yleensä liikkuu markkinan mukana: 1 = kuten markkina, 1,5 = noin 50 % suuremmat heilahtelut, alle 1 = rauhallisempi.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Viimeisen 12 kuukauden kokonaismyynti ennen kuluja.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Voitto, joka jäi jäljelle kaikkien kulujen, korkojen ja verojen jälkeen viimeisen 12 kuukauden aikana.';
+
+  @override
+  String get glossGrossMargin =>
+      'Osuus liikevaihdosta, joka jää tuotteiden välittömien kulujen jälkeen. Korkea marginaali kertoo usein hinnoitteluvoimasta.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Osuus liikevaihdosta, joka jää liiketoiminnan pyörittämisen (palkat, vuokrat, markkinointi) jälkeen, ennen korkoja ja veroja.';
+
+  @override
+  String get glossNetMargin =>
+      'Osuus liikevaihdosta, joka päätyy lopulliseksi voitoksi. 20 % tarkoittaa, että jokaisesta 100 myynnistä 20 on voittoa.';
+
+  @override
+  String get glossRoe =>
+      'Oman pääoman tuotto: vuosivoitto ÷ omistajien pääoma. Näyttää, kuinka hyvin johto käyttää osakkeenomistajien rahoja; yli noin 15 % on vahva.';
+
+  @override
+  String get glossRoa =>
+      'Kokonaispääoman tuotto: vuosivoitto ÷ kaikki, mitä yhtiö omistaa. Vertaa saman toimialan sisällä.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Velat ÷ omistajien pääoma. Korkeampi tarkoittaa enemmän lainarahaa: enemmän riskiä, kun korot nousevat tai liiketoiminta hidastuu.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Lyhytaikaiset varat ÷ vuoden sisällä erääntyvät laskut. Yli 1 tarkoittaa, että yhtiö pystyy kattamaan lähiajan laskunsa.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Kuinka paljon liikevaihto kasvoi vuodentakaiseen verrattuna.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Kuinka paljon osakekohtainen voitto kasvoi vuodentakaiseen verrattuna.';
+
+  @override
+  String get glossDividendYield =>
+      'Vuotuinen osinko ÷ osakkeen hinta: käteistulo, jonka saisit vuodessa, prosentteina maksamastasi summasta.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Yhdelle osakkeelle viimeisen vuoden aikana maksettu osinko.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.';
+
+  @override
+  String get glossTitle => 'Mitä se tarkoittaa?';
 }

@@ -1920,4 +1920,103 @@ class AppLocalizationsLv extends AppLocalizations {
   String offlineBanner(String time) {
     return 'Nav savienojuma – tiek rādīti pēdējie saglabātie dati ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'Cik vērts ir viss uzņēmums akciju tirgū: akcijas cena × akciju skaits.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'Cik akciju uzņēmums ir emitējis. Ja skaits pieaug, katrai akcijai pienākas mazāka daļa; akciju atpirkšana to samazina.';
+
+  @override
+  String get glossPeTrailing =>
+      'Cena ÷ pēdējo 12 mēnešu peļņa uz akciju: par cik gadu pašreizējās peļņas jūs maksājat. Zemāks nozīmē lētāk, taču strauji augošiem uzņēmumiem P/E parasti ir augsts.';
+
+  @override
+  String get glossPeForward =>
+      'Kā P/E, bet ar peļņu, ko analītiķi sagaida nākamajos 12 mēnešos. Ja tas ir zemāks par vēsturisko P/E, sagaida peļņas pieaugumu.';
+
+  @override
+  String get glossPb =>
+      'Cena ÷ uzskaites vērtība (aktīvi mīnus parādi) uz akciju. Ap 1 nozīmē, ka tirgus uzņēmumu vērtē tik, cik tam pieder uz papīra.';
+
+  @override
+  String get glossPs =>
+      'Tirgus vērtība ÷ gada ieņēmumi. Noderīgs uzņēmumiem ar nelielu peļņu vai bez tās; salīdziniet vienas nozares ietvaros.';
+
+  @override
+  String get glossEvToFcf =>
+      'Uzņēmuma vērtība kopā ar parādu (EV) ÷ nauda, ko tas gadā rada pēc investīcijām. Zemāks nozīmē, ka par cenu saņemat vairāk naudas.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ sagaidāmais gada peļņas pieaugums (%). Ap 1 bieži uzskata par taisnīgu; tas skata P/E izaugsmes kontekstā.';
+
+  @override
+  String get glossEps =>
+      'Peļņa uz akciju pēdējos 12 mēnešos. Gadu gaitā augošs EPS ir viena no spēcīgākajām veselīga uzņēmuma pazīmēm.';
+
+  @override
+  String get glossBeta =>
+      'Cik ļoti akcija mēdz kustēties līdzi tirgum: 1 = kā tirgus, 1,5 = aptuveni par 50% lielākas svārstības, zem 1 = mierīgāka.';
+
+  @override
+  String get glossRevenueTtm =>
+      'Kopējie pēdējo 12 mēnešu pārdošanas ieņēmumi pirms jebkādām izmaksām.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Peļņa, kas paliek pēc visām izmaksām, procentiem un nodokļiem pēdējos 12 mēnešos.';
+
+  @override
+  String get glossGrossMargin =>
+      'Ieņēmumu daļa, kas paliek pēc produktu tiešajām izmaksām. Augsta marža bieži nozīmē spēju noteikt cenas.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Ieņēmumu daļa, kas paliek pēc darbības izmaksām (algas, īre, mārketings), pirms procentiem un nodokļiem.';
+
+  @override
+  String get glossNetMargin =>
+      'Ieņēmumu daļa, kas kļūst par galīgo peļņu. 20% nozīmē, ka no katriem 100 pārdošanas ieņēmumiem 20 ir peļņa.';
+
+  @override
+  String get glossRoe =>
+      'Pašu kapitāla atdeve: gada peļņa ÷ īpašnieku kapitāls. Parāda, cik labi vadība izmanto akcionāru naudu; virs aptuveni 15% ir spēcīgi.';
+
+  @override
+  String get glossRoa =>
+      'Aktīvu atdeve: gada peļņa ÷ viss, kas pieder uzņēmumam. Salīdziniet vienas nozares ietvaros.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Parādi ÷ īpašnieku kapitāls. Augstāks nozīmē vairāk aizņemtas naudas: lielāks risks, kad kāpj procentu likmes vai bizness palēninās.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Īstermiņa aktīvi ÷ gada laikā apmaksājamie rēķini. Virs 1 nozīmē, ka uzņēmums spēj segt tuvākos rēķinus.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'Cik ieņēmumi pieauguši salīdzinājumā ar gadu iepriekš.';
+
+  @override
+  String get glossEpsGrowth =>
+      'Cik peļņa uz akciju pieaugusi salīdzinājumā ar gadu iepriekš.';
+
+  @override
+  String get glossDividendYield =>
+      'Gada dividende ÷ akcijas cena: naudas ienākumi, ko saņemtu katru gadu, procentos no samaksātā.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Dividende, kas pēdējā gadā izmaksāta par vienu akciju.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.';
+
+  @override
+  String get glossTitle => 'Ko tas nozīmē?';
 }

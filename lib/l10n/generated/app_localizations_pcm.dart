@@ -1881,4 +1881,103 @@ class AppLocalizationsPcm extends AppLocalizations {
   String offlineBanner(String time) {
     return 'No connection – we dey show di data wey we save last ($time).';
   }
+
+  @override
+  String get glossMarketCap =>
+      'How much di whole company worth for stock market: share price × number of shares.';
+
+  @override
+  String get glossSharesOutstanding =>
+      'How many shares di company don give out. If e increase, each share go get smaller piece; buyback dey reduce am.';
+
+  @override
+  String get glossPeTrailing =>
+      'Price ÷ profit for each share for di last 12 months: how many years of di current profit you dey pay for. Lower na cheaper, but companies wey dey grow fast dey usually get high P/E.';
+
+  @override
+  String get glossPeForward =>
+      'E be like P/E, but e dey use di profit wey analysts expect for di next 12 months. If e low pass di P/E (last 12 months), dem expect say profit go grow.';
+
+  @override
+  String get glossPb =>
+      'Price ÷ book value (wetin company get minus debt) for each share. Around 1 mean say market dey value di company like wetin e get for paper.';
+
+  @override
+  String get glossPs =>
+      'Market value ÷ yearly sales. E good for companies wey never get plenty profit or no get any; compare am inside di same industry.';
+
+  @override
+  String get glossEvToFcf =>
+      'Company value plus debt (EV) ÷ di cash wey e make for one year after investment. Lower mean say you dey get more cash for di price.';
+
+  @override
+  String get glossPeg =>
+      'P/E ÷ di yearly profit growth wey dem expect (%). Around 1 dey usually look fair; e dey check P/E against growth.';
+
+  @override
+  String get glossEps =>
+      'Profit for each share for di last 12 months. EPS wey dey rise every year na one of di strongest sign of healthy company.';
+
+  @override
+  String get glossBeta =>
+      'How di stock dey move with di market: 1 = like di market, 1.5 = about 50% bigger up and down, under 1 = e calm pass.';
+
+  @override
+  String get glossRevenueTtm =>
+      'All di sales for di last 12 months, before any cost.';
+
+  @override
+  String get glossNetIncomeTtm =>
+      'Di profit wey remain after all cost, interest and tax for di last 12 months.';
+
+  @override
+  String get glossGrossMargin =>
+      'Di part of sales wey remain after di direct cost of di products. High margin often mean say di company fit set im own price.';
+
+  @override
+  String get glossOperatingMargin =>
+      'Di part of sales wey remain after di cost to run di business (salary, rent, marketing), before interest and tax.';
+
+  @override
+  String get glossNetMargin =>
+      'Di part of sales wey turn final profit. 20% mean say 20 out of every 100 for sales na profit.';
+
+  @override
+  String get glossRoe =>
+      'Profit on equity (ROE): yearly profit ÷ di owners\' money. E show how well management dey use shareholders\' money; above about 15% strong well well.';
+
+  @override
+  String get glossRoa =>
+      'Profit on assets (ROA): yearly profit ÷ everything wey di company get. Compare am inside di same industry.';
+
+  @override
+  String get glossDebtToEquity =>
+      'Debt ÷ di owners\' money. Higher mean more borrowed money: more risk when interest rate rise or business slow down.';
+
+  @override
+  String get glossCurrentRatio =>
+      'Short-term assets ÷ bills wey dem must pay inside one year. Above 1 mean say di company fit pay im near-term bills.';
+
+  @override
+  String get glossRevenueGrowth =>
+      'How much sales grow compared to one year before.';
+
+  @override
+  String get glossEpsGrowth =>
+      'How much profit for each share grow compared to one year before.';
+
+  @override
+  String get glossDividendYield =>
+      'Yearly dividend ÷ share price: di cash wey you go collect every year, as percentage of wetin you pay.';
+
+  @override
+  String get glossDividendPerShare =>
+      'Di dividend wey dem pay for one share for di last one year.';
+
+  @override
+  String get glossPayoutRatio =>
+      'Di part of profit wey dem share as dividend. Above 100%, di company dey pay pass wetin e dey make, and dat one no dey last.';
+
+  @override
+  String get glossTitle => 'Wetin e mean?';
 }
