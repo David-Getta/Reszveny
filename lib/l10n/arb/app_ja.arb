@@ -460,5 +460,9 @@
   "positionDividend": "配当: 年間 {amount}",
   "chartAvgCost": "平均取得単価",
   "chartAlertLevel": "アラート",
-  "marketsToday": "本日の市場"
+  "marketsToday": "本日の市場",
+  "notesTitle": "自分のメモ",
+  "notesHint": "購入した理由、注目している点、売却する条件は？",
+  "notesInfo": "この端末にのみ保存されます。AI 分析はメモの内容を考慮します。",
+  "notesSaved": "保存：{date}"
 }

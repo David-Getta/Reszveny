@@ -1687,4 +1687,20 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get marketsToday => 'आजका बजारहरू';
+
+  @override
+  String get notesTitle => 'मेरा टिपोटहरू';
+
+  @override
+  String get notesHint =>
+      'तपाईंले यो किन किन्नुभयो, केमा नजर राख्दै हुनुहुन्छ, के भए बेच्नुहुन्छ?';
+
+  @override
+  String get notesInfo =>
+      'यो डिभाइसमा मात्र सुरक्षित हुन्छ। AI विश्लेषणले तपाईंका टिपोटहरूलाई ध्यानमा राख्छ।';
+
+  @override
+  String notesSaved(String date) {
+    return 'सुरक्षित गरियो: $date';
+  }
 }

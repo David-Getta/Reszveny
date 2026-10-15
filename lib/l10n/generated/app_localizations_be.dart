@@ -1735,4 +1735,20 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get marketsToday => 'Рынкі сёння';
+
+  @override
+  String get notesTitle => 'Мае нататкі';
+
+  @override
+  String get notesHint =>
+      'Чаму вы яе купілі, за чым сочыце, што прымусіць вас прадаць?';
+
+  @override
+  String get notesInfo =>
+      'Захоўваецца толькі на гэтай прыладзе. AI-аналіз улічвае вашы нататкі.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Захавана $date';
+  }
 }

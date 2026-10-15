@@ -1693,4 +1693,20 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get marketsToday => 'Amasoko uyu munsi';
+
+  @override
+  String get notesTitle => 'Ibyo nanditse';
+
+  @override
+  String get notesHint =>
+      'Kuki wawuguze, ni iki ukurikirana, ni iki cyatuma uwugurisha?';
+
+  @override
+  String get notesInfo =>
+      'Bibitswe kuri iki gikoresho gusa. Isesengura rya AI ryita ku byo wanditse.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Byabitswe $date';
+  }
 }

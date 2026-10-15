@@ -460,5 +460,9 @@
   "positionDividend": "Dibidendo: {amount} kada tuig",
   "chartAvgCost": "Imo avg.",
   "chartAlertLevel": "Alerto",
-  "marketsToday": "Mga merkado subong"
+  "marketsToday": "Mga merkado subong",
+  "notesTitle": "Akon mga nota",
+  "notesHint": "Ngaa ginbakal mo ini, ano ang ginabantayan mo, ano ang makapabaligya sa imo?",
+  "notesInfo": "Sa sini lang nga device natipon. Ginakonsiderar sang analisis sang AI ang imo mga nota.",
+  "notesSaved": "Natipon {date}"
 }

@@ -1681,4 +1681,20 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get marketsToday => 'ယနေ့ စျေးကွက်များ';
+
+  @override
+  String get notesTitle => 'ကျွန်ုပ်၏ မှတ်စုများ';
+
+  @override
+  String get notesHint =>
+      'ဘာကြောင့် ဝယ်ခဲ့သလဲ၊ ဘာကို စောင့်ကြည့်နေသလဲ၊ ဘာဖြစ်ရင် ရောင်းမလဲ။';
+
+  @override
+  String get notesInfo =>
+      'ဤစက်တွင်သာ သိမ်းဆည်းထားသည်။ AI သုံးသပ်ချက်သည် သင့်မှတ်စုများကို ထည့်သွင်းစဉ်းစားသည်။';
+
+  @override
+  String notesSaved(String date) {
+    return '$date တွင် သိမ်းဆည်းခဲ့သည်';
+  }
 }

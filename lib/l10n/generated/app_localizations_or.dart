@@ -1683,4 +1683,20 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get marketsToday => 'ଆଜିର ବଜାର';
+
+  @override
+  String get notesTitle => 'ମୋ ନୋଟ୍';
+
+  @override
+  String get notesHint =>
+      'ଆପଣ ଏହାକୁ କାହିଁକି କିଣିଲେ, କ\'ଣ ଉପରେ ନଜର ରଖୁଛନ୍ତି, କ\'ଣ ହେଲେ ବିକ୍ରି କରିବେ?';
+
+  @override
+  String get notesInfo =>
+      'କେବଳ ଏହି ଡିଭାଇସରେ ସଞ୍ଚିତ। AI ବିଶ୍ଳେଷଣ ଆପଣଙ୍କ ନୋଟ୍‌କୁ ବିଚାରକୁ ନିଏ।';
+
+  @override
+  String notesSaved(String date) {
+    return 'ସଞ୍ଚିତ $date';
+  }
 }

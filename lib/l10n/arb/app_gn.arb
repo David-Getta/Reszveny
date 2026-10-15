@@ -460,5 +460,9 @@
   "positionDividend": "Dividendo: {amount} arýpe",
   "chartAvgCost": "Ne mbytegua",
   "chartAlertLevel": "Maranduʼi",
-  "marketsToday": "Merkádo ko árape"
+  "marketsToday": "Merkádo ko árape",
+  "notesTitle": "Che jehaipyrekuéra",
+  "notesHint": "¿Mbaʼérepa rejogua, mbaʼépa remañahína, mbaʼépa ojapóta reñemu hag̃ua?",
+  "notesInfo": "Oñeñongatu ko mbaʼeʼokápe añoite. AI jehesaʼỹijo ohecha ne jehaipyrekuéra.",
+  "notesSaved": "Oñeñongatu {date}"
 }

@@ -1690,4 +1690,20 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get marketsToday => 'Bisalu lelu';
+
+  @override
+  String get notesTitle => 'Mifundu yanyi';
+
+  @override
+  String get notesHint =>
+      'Bua tshinyi wakayisumba, udi utangila tshinyi, tshinyi tshidi mua kukusaka bua kuyipana?';
+
+  @override
+  String get notesInfo =>
+      'Bilama anu mu tshintu etshi. Dikonkonona dia AI didi diangata mifundu yebe.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Bilama: $date';
+  }
 }

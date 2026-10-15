@@ -1694,4 +1694,20 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mercats avui';
+
+  @override
+  String get notesTitle => 'Les meves notes';
+
+  @override
+  String get notesHint =>
+      'Per què la vas comprar, què vigiles, què et faria vendre-la?';
+
+  @override
+  String get notesInfo =>
+      'Es desa només en aquest dispositiu. L’anàlisi amb IA té en compte les teves notes.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Desat $date';
+  }
 }

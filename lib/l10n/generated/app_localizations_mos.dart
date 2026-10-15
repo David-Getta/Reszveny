@@ -1673,4 +1673,20 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get marketsToday => 'Raaga rũnda';
+
+  @override
+  String get notesTitle => 'M gʋlsgo';
+
+  @override
+  String get notesHint =>
+      'Bõe yĩng tɩ f da-a, bõe la f gũusdẽ, bõe n na yɩl tɩ f koos-a?';
+
+  @override
+  String get notesInfo =>
+      'B tall-a aparɛy kãngã zugu bala. AI vɛɛsgã get f gʋlsgã.';
+
+  @override
+  String notesSaved(String date) {
+    return 'B tall-a: $date';
+  }
 }

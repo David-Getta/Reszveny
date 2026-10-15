@@ -1686,4 +1686,20 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get marketsToday => 'Masoko leo';
+
+  @override
+  String get notesTitle => 'Madokezo yangu';
+
+  @override
+  String get notesHint =>
+      'Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?';
+
+  @override
+  String get notesInfo =>
+      'Huhifadhiwa kwenye kifaa hiki pekee. Uchambuzi wa AI huzingatia madokezo yako.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Imehifadhiwa $date';
+  }
 }

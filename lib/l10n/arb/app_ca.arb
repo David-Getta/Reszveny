@@ -460,5 +460,9 @@
   "positionDividend": "Dividend: {amount} l’any",
   "chartAvgCost": "El teu mitjà",
   "chartAlertLevel": "Alerta",
-  "marketsToday": "Mercats avui"
+  "marketsToday": "Mercats avui",
+  "notesTitle": "Les meves notes",
+  "notesHint": "Per què la vas comprar, què vigiles, què et faria vendre-la?",
+  "notesInfo": "Es desa només en aquest dispositiu. L’anàlisi amb IA té en compte les teves notes.",
+  "notesSaved": "Desat {date}"
 }

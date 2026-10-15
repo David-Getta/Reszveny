@@ -1688,4 +1688,20 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get marketsToday => 'بۈگۈنكى بازارلار';
+
+  @override
+  String get notesTitle => 'خاتىرىلىرىم';
+
+  @override
+  String get notesHint =>
+      'نېمىشقا سېتىۋالدىڭىز، نېمىگە دىققەت قىلىۋاتىسىز، نېمە سىزنى سېتىشقا مەجبۇرلايدۇ؟';
+
+  @override
+  String get notesInfo =>
+      'پەقەت مۇشۇ ئۈسكۈنىدە ساقلىنىدۇ. AI تەھلىلى خاتىرىلىرىڭىزنى نەزەردە تۇتىدۇ.';
+
+  @override
+  String notesSaved(String date) {
+    return 'ساقلاندى: $date';
+  }
 }

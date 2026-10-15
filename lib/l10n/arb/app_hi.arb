@@ -460,5 +460,9 @@
   "positionDividend": "लाभांश: {amount} प्रति वर्ष",
   "chartAvgCost": "आपका औसत",
   "chartAlertLevel": "अलर्ट",
-  "marketsToday": "आज के बाज़ार"
+  "marketsToday": "आज के बाज़ार",
+  "notesTitle": "मेरे नोट्स",
+  "notesHint": "आपने इसे क्यों खरीदा, आप किस पर नज़र रख रहे हैं, किस वजह से आप इसे बेचेंगे?",
+  "notesInfo": "केवल इसी डिवाइस पर सहेजा जाता है। AI विश्लेषण आपके नोट्स को ध्यान में रखता है।",
+  "notesSaved": "सहेजा गया {date}"
 }

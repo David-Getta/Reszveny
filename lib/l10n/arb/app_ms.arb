@@ -460,5 +460,9 @@
   "positionDividend": "Dividen: {amount} setahun",
   "chartAvgCost": "Purata anda",
   "chartAlertLevel": "Amaran",
-  "marketsToday": "Pasaran hari ini"
+  "marketsToday": "Pasaran hari ini",
+  "notesTitle": "Nota saya",
+  "notesHint": "Mengapa anda membelinya, apa yang anda pantau, apa yang akan membuatkan anda menjualnya?",
+  "notesInfo": "Disimpan pada peranti ini sahaja. Analisis AI mengambil kira nota anda.",
+  "notesSaved": "Disimpan {date}"
 }

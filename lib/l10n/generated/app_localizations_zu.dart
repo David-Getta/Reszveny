@@ -1692,4 +1692,20 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get marketsToday => 'Izimakethe namuhla';
+
+  @override
+  String get notesTitle => 'Amanothi ami';
+
+  @override
+  String get notesHint =>
+      'Ulithengeleni, yini oyiqaphile, yini engakwenza ulithengise?';
+
+  @override
+  String get notesInfo =>
+      'Kugcinwe kule divayisi kuphela. Uhlaziyo lwe-AI lubheka amanothi akho.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Kulondoloziwe: $date';
+  }
 }

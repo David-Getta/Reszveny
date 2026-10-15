@@ -1687,4 +1687,20 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Бозорҳо имрӯз';
+
+  @override
+  String get notesTitle => 'Қайдҳои ман';
+
+  @override
+  String get notesHint =>
+      'Чаро онро харидед, ба чӣ аҳамият медиҳед, чӣ шуморо ба фурӯш водор мекунад?';
+
+  @override
+  String get notesInfo =>
+      'Танҳо дар ҳамин дастгоҳ нигоҳ дошта мешавад. Таҳлили AI қайдҳои шуморо ба назар мегирад.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Нигоҳ дошта шуд: $date';
+  }
 }

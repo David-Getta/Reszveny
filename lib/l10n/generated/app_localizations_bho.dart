@@ -1682,4 +1682,20 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get marketsToday => 'आज के बाजार';
+
+  @override
+  String get notesTitle => 'हमार नोट';
+
+  @override
+  String get notesHint =>
+      'रउआ काहे खरीदनी, का पर नजर रखले बानी, का होखी त बेचब?';
+
+  @override
+  String get notesInfo =>
+      'खाली एही डिवाइस पर सहेजल जाला। AI विश्लेषण रउआ नोट के ध्यान में राखेला।';
+
+  @override
+  String notesSaved(String date) {
+    return 'सहेजल गइल $date';
+  }
 }

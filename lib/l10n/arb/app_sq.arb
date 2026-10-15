@@ -460,5 +460,9 @@
   "positionDividend": "Dividendi: {amount} në vit",
   "chartAvgCost": "Mesatarja juaj",
   "chartAlertLevel": "Alarm",
-  "marketsToday": "Tregjet sot"
+  "marketsToday": "Tregjet sot",
+  "notesTitle": "Shënimet e mia",
+  "notesHint": "Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?",
+  "notesInfo": "Ruhet vetëm në këtë pajisje. Analiza me AI merr parasysh shënimet tuaja.",
+  "notesSaved": "Ruajtur {date}"
 }

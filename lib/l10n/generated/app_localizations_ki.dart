@@ -1686,4 +1686,20 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get marketsToday => 'Thoko ũmũthĩ';
+
+  @override
+  String get notesTitle => 'Maandĩko makwa';
+
+  @override
+  String get notesHint =>
+      'Nĩ kĩ gĩtũmire ũgũre, nĩ kĩ ũrarora, nĩ kĩ kĩngĩtũma wendie?';
+
+  @override
+  String get notesInfo =>
+      'Ĩigĩtwo kĩndũ-inĩ gĩkĩ tu. Ũthuthuria wa AI nĩ ũtaranagia maandĩko maku.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Ĩigĩtwo $date';
+  }
 }

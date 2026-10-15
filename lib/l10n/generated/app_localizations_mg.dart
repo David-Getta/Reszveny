@@ -1698,4 +1698,20 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Tsena androany';
+
+  @override
+  String get notesTitle => 'Ny naotiko';
+
+  @override
+  String get notesHint =>
+      'Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?';
+
+  @override
+  String get notesInfo =>
+      'Voatahiry amin\'ity fitaovana ity ihany. Raisin\'ny fandalinana AI an-tsaina ny naotinao.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Voatahiry $date';
+  }
 }

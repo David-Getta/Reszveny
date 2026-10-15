@@ -1694,4 +1694,20 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mazando lɛlɔ';
+
+  @override
+  String get notesTitle => 'Ba note na ngai';
+
+  @override
+  String get notesHint =>
+      'Mpo na nini osombaki yango, ozali kotala nini, nini ekoki kotinda yo oteka yango?';
+
+  @override
+  String get notesInfo =>
+      'Ebombami kaka na esaleli oyo. Analyse ya AI ezwaka ba note na yo na motuya.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Ebombami $date';
+  }
 }

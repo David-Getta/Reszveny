@@ -1685,4 +1685,20 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get marketsToday => 'අද වෙළඳපොළ';
+
+  @override
+  String get notesTitle => 'මගේ සටහන්';
+
+  @override
+  String get notesHint =>
+      'ඔබ එය මිලදී ගත්තේ ඇයි, ඔබ අවධානය යොමු කරන්නේ කුමකටද, කුමක් සිදු වුවහොත් විකුණනවාද?';
+
+  @override
+  String get notesInfo =>
+      'මෙම උපාංගයේ පමණක් ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.';
+
+  @override
+  String notesSaved(String date) {
+    return 'සුරැකුවේ: $date';
+  }
 }

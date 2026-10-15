@@ -460,5 +460,9 @@
   "positionDividend": "ලාභාංශ: වසරකට {amount}",
   "chartAvgCost": "ඔබේ සාමාන්‍යය",
   "chartAlertLevel": "ඇඟවීම",
-  "marketsToday": "අද වෙළඳපොළ"
+  "marketsToday": "අද වෙළඳපොළ",
+  "notesTitle": "මගේ සටහන්",
+  "notesHint": "ඔබ එය මිලදී ගත්තේ ඇයි, ඔබ අවධානය යොමු කරන්නේ කුමකටද, කුමක් සිදු වුවහොත් විකුණනවාද?",
+  "notesInfo": "මෙම උපාංගයේ පමණක් ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.",
+  "notesSaved": "සුරැකුවේ: {date}"
 }

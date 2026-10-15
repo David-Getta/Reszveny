@@ -1692,4 +1692,20 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Merkádo ko árape';
+
+  @override
+  String get notesTitle => 'Che jehaipyrekuéra';
+
+  @override
+  String get notesHint =>
+      '¿Mbaʼérepa rejogua, mbaʼépa remañahína, mbaʼépa ojapóta reñemu hag̃ua?';
+
+  @override
+  String get notesInfo =>
+      'Oñeñongatu ko mbaʼeʼokápe añoite. AI jehesaʼỹijo ohecha ne jehaipyrekuéra.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Oñeñongatu $date';
+  }
 }

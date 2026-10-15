@@ -460,5 +460,9 @@
   "positionDividend": "Дивіденди: {amount} на рік",
   "chartAvgCost": "Ваша сер.",
   "chartAlertLevel": "Сповіщення",
-  "marketsToday": "Ринки сьогодні"
+  "marketsToday": "Ринки сьогодні",
+  "notesTitle": "Мої нотатки",
+  "notesHint": "Чому ви її купили, за чим стежите, що змусить вас продати?",
+  "notesInfo": "Зберігається лише на цьому пристрої. ШІ-аналіз враховує ваші нотатки.",
+  "notesSaved": "Збережено {date}"
 }

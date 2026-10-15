@@ -1677,4 +1677,20 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get marketsToday => 'དེ་རིང་གི་ཚོང་ར';
+
+  @override
+  String get notesTitle => 'ངའི་ཟིན་ཐོ';
+
+  @override
+  String get notesHint =>
+      'ཁྱེད་ཀྱིས་ཅིའི་ཕྱིར་ཉོས་པ་དང་། གང་ལ་དོ་སྣང་གནང་གི་ཡོད་པ། ཅི་ཞིག་བྱུང་ན་འཚོང་གི་ཡིན་ནམ།';
+
+  @override
+  String get notesInfo =>
+      'སྒྲིག་ཆས་འདིའི་ཐོག་ཁོ་ནར་ཉར་ཚགས་བྱེད། AI དབྱེ་ཞིབ་ཀྱིས་ཁྱེད་ཀྱི་ཟིན་ཐོ་ལ་དཔྱད་གཞི་བྱེད།';
+
+  @override
+  String notesSaved(String date) {
+    return 'ཉར་ཚགས་བྱས: $date';
+  }
 }

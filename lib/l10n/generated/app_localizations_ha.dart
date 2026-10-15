@@ -1691,4 +1691,20 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get marketsToday => 'Kasuwanni yau';
+
+  @override
+  String get notesTitle => 'Bayanaina';
+
+  @override
+  String get notesHint =>
+      'Me ya sa ka saya, me kake lura da shi, me zai sa ka sayar?';
+
+  @override
+  String get notesInfo =>
+      'Ana adana shi a wannan na’ura kawai. Nazarin AI yana la’akari da bayananka.';
+
+  @override
+  String notesSaved(String date) {
+    return 'An adana $date';
+  }
 }

@@ -1680,4 +1680,20 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get marketsToday => 'د نن بازارونه';
+
+  @override
+  String get notesTitle => 'زما یادښتونه';
+
+  @override
+  String get notesHint =>
+      'ولې مو واخیسته، پر څه نظر لرئ، څه به مو وپلورلو ته اړ کړي؟';
+
+  @override
+  String get notesInfo =>
+      'یوازې په همدې وسیله کې ساتل کېږي. AI تحلیل ستاسو یادښتونه په پام کې نیسي.';
+
+  @override
+  String notesSaved(String date) {
+    return 'خوندي شو: $date';
+  }
 }

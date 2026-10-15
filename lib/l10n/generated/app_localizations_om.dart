@@ -1692,4 +1692,20 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get marketsToday => 'Gabaawwan har\'a';
+
+  @override
+  String get notesTitle => 'Yaadannoo koo';
+
+  @override
+  String get notesHint =>
+      'Maaliif bitte, maal hordofaa jirta, maaltu akka gurgurtu si taasisa?';
+
+  @override
+  String get notesInfo =>
+      'Meeshaa kana qofa irratti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Kuufame: $date';
+  }
 }

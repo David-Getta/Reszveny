@@ -1684,4 +1684,20 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get marketsToday => 'Bazarlar şu gün';
+
+  @override
+  String get notesTitle => 'Meniň belliklerim';
+
+  @override
+  String get notesHint =>
+      'Ony näme üçin satyn aldyňyz, nämä gözegçilik edýärsiňiz, näme sizi satmaga mejbur eder?';
+
+  @override
+  String get notesInfo =>
+      'Diňe şu enjamda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Ýatda saklandy: $date';
+  }
 }

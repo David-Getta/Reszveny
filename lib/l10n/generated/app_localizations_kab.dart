@@ -1684,4 +1684,20 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get marketsToday => 'Isuqen ass-a';
+
+  @override
+  String get notesTitle => 'Tizmilin-iw';
+
+  @override
+  String get notesHint =>
+      'Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?';
+
+  @override
+  String get notesInfo =>
+      'Yettwasekles kan deg yibenk-a. Tasleḍt s AI tettak azal i tezmilin-ik.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Yettwasekles $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Diwidend: ýylda {amount}",
   "chartAvgCost": "Siziň ortaňyz",
   "chartAlertLevel": "Duýduryş",
-  "marketsToday": "Bazarlar şu gün"
+  "marketsToday": "Bazarlar şu gün",
+  "notesTitle": "Meniň belliklerim",
+  "notesHint": "Ony näme üçin satyn aldyňyz, nämä gözegçilik edýärsiňiz, näme sizi satmaga mejbur eder?",
+  "notesInfo": "Diňe şu enjamda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.",
+  "notesSaved": "Ýatda saklandy: {date}"
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Gawo la phindu: {amount} pachaka",
   "chartAvgCost": "Wapakati wanu",
   "chartAlertLevel": "Chidziwitso",
-  "marketsToday": "Misika lero"
+  "marketsToday": "Misika lero",
+  "notesTitle": "Zolemba zanga",
+  "notesHint": "Chifukwa chiyani munaigula, mukuyang'anira chiyani, nchiyani chingakupangitseni kuigulitsa?",
+  "notesInfo": "Zasungidwa pa chipangizo ichi chokha. Kusanthula kwa AI kumaganizira zolemba zanu.",
+  "notesSaved": "Zasungidwa {date}"
 }

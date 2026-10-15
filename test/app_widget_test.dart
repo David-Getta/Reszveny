@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/features/stock_detail/widgets/section_card.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
@@ -369,7 +370,8 @@ void main() {
     await tester.enterText(find.byType(TextField), 'NVDA');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
-    final list = find.byType(Scrollable).last;
+    // Az oldal listája (nem a jegyzetmező saját görgetője).
+    final list = find.ancestor(of: find.byType(SectionCard).first, matching: find.byType(Scrollable)).first;
     final position = tester.state<ScrollableState>(list).position;
     expect(position.pixels, 0);
     // A jobb szélső üres sáv, jóval a 720 px-es tartalomoszlopon kívül.

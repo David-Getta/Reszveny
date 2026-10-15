@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} ka ngwaga",
   "chartAvgCost": "Palogare ya gago",
   "chartAlertLevel": "Kitsiso",
-  "marketsToday": "Mebaraka gompieno"
+  "marketsToday": "Mebaraka gompieno",
+  "notesTitle": "Dintlha tsa me",
+  "notesHint": "Goreng o e rekile, o ela tlhoko eng, ke eng se se ka dirang gore o e rekise?",
+  "notesInfo": "E bolokilwe mo sedirisiweng seno fela. Tshekatsheko ya AI e tsaya dintlha tsa gago tsia.",
+  "notesSaved": "E bolokilwe {date}"
 }

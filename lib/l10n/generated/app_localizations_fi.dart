@@ -1687,4 +1687,20 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get marketsToday => 'Markkinat tänään';
+
+  @override
+  String get notesTitle => 'Omat muistiinpanot';
+
+  @override
+  String get notesHint =>
+      'Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?';
+
+  @override
+  String get notesInfo =>
+      'Tallennetaan vain tälle laitteelle. Tekoälyanalyysi ottaa muistiinpanosi huomioon.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Tallennettu $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Utdelning: {amount} per år",
   "chartAvgCost": "Ditt snitt",
   "chartAlertLevel": "Kurslarm",
-  "marketsToday": "Marknader i dag"
+  "marketsToday": "Marknader i dag",
+  "notesTitle": "Mina anteckningar",
+  "notesHint": "Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?",
+  "notesInfo": "Sparas bara på den här enheten. AI-analysen tar hänsyn till dina anteckningar.",
+  "notesSaved": "Sparad {date}"
 }

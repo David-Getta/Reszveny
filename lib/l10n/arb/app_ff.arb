@@ -460,5 +460,9 @@
   "positionDividend": "Geɗal nafoore: {amount} kala hitaande",
   "chartAvgCost": "Hakkunde maa",
   "chartAlertLevel": "Tintinol",
-  "marketsToday": "Luumooji hannde"
+  "marketsToday": "Luumooji hannde",
+  "notesTitle": "Binndi am",
+  "notesHint": "Ko waɗi a soodi ɗum, ko ndaarataa, ko waɗata a yeeya?",
+  "notesInfo": "Ina mooftaa e ngol kaɓirgol tan. Ƴeewndo AI ina jogitoo binndi maa.",
+  "notesSaved": "Mooftaama {date}"
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Dibidendo: {amount} iti tinawen",
   "chartAvgCost": "Avg. mo",
   "chartAlertLevel": "Alerto",
-  "marketsToday": "Dagiti merkado ita nga aldaw"
+  "marketsToday": "Dagiti merkado ita nga aldaw",
+  "notesTitle": "Dagiti notak",
+  "notesHint": "Apay a ginatangmo, ania ti bambantayam, ania ti mangpailako kenka?",
+  "notesInfo": "Naidulin laeng iti daytoy a device. Ikonsiderar ti panangsukimat ti AI dagiti notam.",
+  "notesSaved": "Naidulin {date}"
 }

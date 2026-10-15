@@ -460,5 +460,9 @@
   "positionDividend": "Dividendo: watapi {amount}",
   "chartAvgCost": "Chawpiyki",
   "chartAlertLevel": "Willachiy",
-  "marketsToday": "Kunan qhatukuna"
+  "marketsToday": "Kunan qhatukuna",
+  "notesTitle": "Qillqasqaykuna",
+  "notesHint": "Imaraykutaq rantirqanki, imatataq qhawachkanki, imataq vendenaykipaq tanqasunki?",
+  "notesInfo": "Kay equipollapim waqaychasqa. AI t'aqwiyqa qillqasqaykikunata qhawarin.",
+  "notesSaved": "Waqaychasqa {date}"
 }

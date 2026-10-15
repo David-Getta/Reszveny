@@ -1694,4 +1694,20 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get marketsToday => 'இன்றைய சந்தைகள்';
+
+  @override
+  String get notesTitle => 'எனது குறிப்புகள்';
+
+  @override
+  String get notesHint =>
+      'இதை ஏன் வாங்கினீர்கள், எதைக் கவனிக்கிறீர்கள், எது நடந்தால் விற்பீர்கள்?';
+
+  @override
+  String get notesInfo =>
+      'இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும். AI பகுப்பாய்வு உங்கள் குறிப்புகளைக் கருத்தில் கொள்கிறது.';
+
+  @override
+  String notesSaved(String date) {
+    return 'சேமித்தது $date';
+  }
 }

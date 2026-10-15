@@ -460,5 +460,9 @@
   "positionDividend": "Dividén: {amount} sataun",
   "chartAvgCost": "Rata-rata anjeun",
   "chartAlertLevel": "Béwara",
-  "marketsToday": "Pasar poé ieu"
+  "marketsToday": "Pasar poé ieu",
+  "notesTitle": "Catetan abdi",
+  "notesHint": "Naha anjeun mésér, naon anu diawaskeun, naon anu bakal ngajantenkeun anjeun ngajual?",
+  "notesInfo": "Ngan disimpen dina parangkat ieu. Analisis AI merhatikeun catetan anjeun.",
+  "notesSaved": "Disimpen {date}"
 }

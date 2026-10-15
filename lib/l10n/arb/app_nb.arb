@@ -460,5 +460,9 @@
   "positionDividend": "Utbytte: {amount} per år",
   "chartAvgCost": "Ditt snitt",
   "chartAlertLevel": "Kursvarsel",
-  "marketsToday": "Markeder i dag"
+  "marketsToday": "Markeder i dag",
+  "notesTitle": "Mine notater",
+  "notesHint": "Hvorfor kjøpte du den, hva følger du med på, hva ville fått deg til å selge?",
+  "notesInfo": "Lagres bare på denne enheten. AI-analysen tar hensyn til notatene dine.",
+  "notesSaved": "Lagret {date}"
 }

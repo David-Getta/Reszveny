@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../compare/compare_page.dart';
+import '../notes/notes_card.dart';
 import '../../app_services.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/stock_candidate.dart';
@@ -265,6 +266,9 @@ class _DetailsBody extends StatelessWidget {
 
       // AI-elemzés
       AnalysisCard(details: d),
+
+      // Saját jegyzetek (az elemzés is megkapja)
+      NotesCard(symbol: d.symbol),
 
       // Grafikon
       SectionCard(

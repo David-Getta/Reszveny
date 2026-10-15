@@ -460,5 +460,9 @@
   "positionDividend": "Dividend: {amount} per jaar",
   "chartAvgCost": "Jouw gem.",
   "chartAlertLevel": "Alert",
-  "marketsToday": "Markten vandaag"
+  "marketsToday": "Markten vandaag",
+  "notesTitle": "Mijn notities",
+  "notesHint": "Waarom heb je het gekocht, waar let je op, wat zou voor jou een reden zijn om te verkopen?",
+  "notesInfo": "Alleen op dit apparaat opgeslagen. De AI-analyse houdt rekening met je notities.",
+  "notesSaved": "Opgeslagen {date}"
 }

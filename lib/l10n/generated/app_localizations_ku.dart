@@ -1688,4 +1688,20 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get marketsToday => 'Bazar îro';
+
+  @override
+  String get notesTitle => 'Notên min';
+
+  @override
+  String get notesHint =>
+      'Te çima kirî, tu li çi dinêrî, çi dê bike ku tu bifiroşî?';
+
+  @override
+  String get notesInfo =>
+      'Tenê li ser vê amûrê tê tomarkirin. Analîza AI notên te li ber çavan digire.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Hat tomarkirin: $date';
+  }
 }

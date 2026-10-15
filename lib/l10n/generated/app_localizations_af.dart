@@ -1689,4 +1689,20 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get marketsToday => 'Markte vandag';
+
+  @override
+  String get notesTitle => 'My notas';
+
+  @override
+  String get notesHint =>
+      'Hoekom het jy dit gekoop, waarna hou jy dop, wat sou jou laat verkoop?';
+
+  @override
+  String get notesInfo =>
+      'Slegs op hierdie toestel gestoor. Die AI-ontleding neem jou notas in ag.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Gestoor $date';
+  }
 }

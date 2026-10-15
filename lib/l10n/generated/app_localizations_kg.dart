@@ -1691,4 +1691,20 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mazandu unu';
+
+  @override
+  String get notesTitle => 'Ba note na mono';
+
+  @override
+  String get notesHint =>
+      'Sambu na nki nge sumbaka yo, nki nge ke tala, nki ta sala nge teka yo?';
+
+  @override
+  String get notesInfo =>
+      'Ilundwa kaka mu kisadilu kiaki. Analyse ya AI ke tadilaka ba note na nge.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Ilundwa: $date';
+  }
 }

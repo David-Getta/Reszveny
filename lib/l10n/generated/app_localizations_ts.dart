@@ -1696,4 +1696,20 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get marketsToday => 'Timakete namuntlha';
+
+  @override
+  String get notesTitle => 'Tinotsi ta mina';
+
+  @override
+  String get notesHint =>
+      'Hikwalaho ka yini u yi xavile, u languta yini, i yini lexi nga ku endlaka u yi xavisa?';
+
+  @override
+  String get notesInfo =>
+      'Swi hlayisiwile eka xitirhisiwa lexi ntsena. Nxopaxopo wa AI wu tekela enhlokweni tinotsi ta wena.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Swi hlayisiwile $date';
+  }
 }

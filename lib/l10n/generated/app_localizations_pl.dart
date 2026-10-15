@@ -1739,4 +1739,20 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get marketsToday => 'Rynki dziś';
+
+  @override
+  String get notesTitle => 'Moje notatki';
+
+  @override
+  String get notesHint =>
+      'Powód zakupu? Co obserwujesz? Co skłoniłoby cię do sprzedaży?';
+
+  @override
+  String get notesInfo =>
+      'Zapisywane tylko na tym urządzeniu. Analiza AI uwzględnia twoje notatki.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Zapisano $date';
+  }
 }

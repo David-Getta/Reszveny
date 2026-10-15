@@ -1695,4 +1695,20 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mebaraka kajeno';
+
+  @override
+  String get notesTitle => 'Dintlha tsa ka';
+
+  @override
+  String get notesHint =>
+      'Hobaneng o e rekile, o shebile eng, ke eng e ka etsang hore o e rekise?';
+
+  @override
+  String get notesInfo =>
+      'E bolokilwe sesebedisweng sena feela. Tlhahlobo ya AI e ela hloko dintlha tsa hao.';
+
+  @override
+  String notesSaved(String date) {
+    return 'E bolokilwe $date';
+  }
 }

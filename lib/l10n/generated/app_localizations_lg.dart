@@ -1695,4 +1695,20 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Obutale leero';
+
+  @override
+  String get notesTitle => 'Ebiwandiiko byange';
+
+  @override
+  String get notesHint =>
+      'Lwaki wagugula, kiki ky\'olondoola, kiki ekyandikuleetedde okugutunda?';
+
+  @override
+  String get notesInfo =>
+      'Bitereddwa ku kyuma kino kyokka. Okwekenneenya kwa AI kutunuulira ebiwandiiko byo.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Bitereddwa $date';
+  }
 }

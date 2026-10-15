@@ -460,5 +460,9 @@
   "positionDividend": "Tɔnɔ tilali: {amount} san o san",
   "chartAvgCost": "I ka cɛmancɛ",
   "chartAlertLevel": "Lasɔmini",
-  "marketsToday": "Suguw bi"
+  "marketsToday": "Suguw bi",
+  "notesTitle": "N ka sɛbɛnniw",
+  "notesHint": "Mun na i y'a san, i bɛ mun kɔlɔsi, mun b'a to i b'a feere?",
+  "notesInfo": "A marala nin minɛn in dɔrɔn de kan. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.",
+  "notesSaved": "A marala: {date}"
 }

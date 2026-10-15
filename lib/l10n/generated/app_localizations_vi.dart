@@ -1680,4 +1680,20 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get marketsToday => 'Thị trường hôm nay';
+
+  @override
+  String get notesTitle => 'Ghi chú của tôi';
+
+  @override
+  String get notesHint =>
+      'Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?';
+
+  @override
+  String get notesInfo =>
+      'Chỉ lưu trên thiết bị này. Phân tích AI có xét đến ghi chú của bạn.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Đã lưu $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "د ونډې ګټه: کلنۍ {amount}",
   "chartAvgCost": "ستاسو منځنی",
   "chartAlertLevel": "خبرتیا",
-  "marketsToday": "د نن بازارونه"
+  "marketsToday": "د نن بازارونه",
+  "notesTitle": "زما یادښتونه",
+  "notesHint": "ولې مو واخیسته، پر څه نظر لرئ، څه به مو وپلورلو ته اړ کړي؟",
+  "notesInfo": "یوازې په همدې وسیله کې ساتل کېږي. AI تحلیل ستاسو یادښتونه په پام کې نیسي.",
+  "notesSaved": "خوندي شو: {date}"
 }

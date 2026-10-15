@@ -1691,4 +1691,20 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Misika nhasi';
+
+  @override
+  String get notesTitle => 'Zvinyorwa zvangu';
+
+  @override
+  String get notesHint =>
+      'Wakaitengerei, uri kutarisa chii, chii chingaita kuti uitengese?';
+
+  @override
+  String get notesInfo =>
+      'Zvakachengetwa pamudziyo uyu chete. Ongororo yeAI inotarisa zvinyorwa zvako.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Zvachengetwa $date';
+  }
 }

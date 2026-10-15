@@ -460,5 +460,9 @@
   "positionDividend": "Cổ tức: {amount} mỗi năm",
   "chartAvgCost": "Giá vốn TB",
   "chartAlertLevel": "Cảnh báo",
-  "marketsToday": "Thị trường hôm nay"
+  "marketsToday": "Thị trường hôm nay",
+  "notesTitle": "Ghi chú của tôi",
+  "notesHint": "Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?",
+  "notesInfo": "Chỉ lưu trên thiết bị này. Phân tích AI có xét đến ghi chú của bạn.",
+  "notesSaved": "Đã lưu {date}"
 }

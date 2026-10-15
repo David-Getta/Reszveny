@@ -1671,4 +1671,20 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get marketsToday => 'ទីផ្សារថ្ងៃនេះ';
+
+  @override
+  String get notesTitle => 'កំណត់ចំណាំរបស់ខ្ញុំ';
+
+  @override
+  String get notesHint =>
+      'ហេតុអ្វីអ្នកទិញវា តើអ្នកកំពុងតាមដានអ្វី ហើយអ្វីនឹងធ្វើឱ្យអ្នកលក់វា?';
+
+  @override
+  String get notesInfo =>
+      'រក្សាទុកតែនៅលើឧបករណ៍នេះប៉ុណ្ណោះ។ ការវិភាគ AI គិតគូរពីកំណត់ចំណាំរបស់អ្នក។';
+
+  @override
+  String notesSaved(String date) {
+    return 'បានរក្សាទុក $date';
+  }
 }

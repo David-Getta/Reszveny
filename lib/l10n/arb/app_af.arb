@@ -460,5 +460,9 @@
   "positionDividend": "Dividend: {amount} per jaar",
   "chartAvgCost": "Jou gem.",
   "chartAlertLevel": "Waarskuwing",
-  "marketsToday": "Markte vandag"
+  "marketsToday": "Markte vandag",
+  "notesTitle": "My notas",
+  "notesHint": "Hoekom het jy dit gekoop, waarna hou jy dop, wat sou jou laat verkoop?",
+  "notesInfo": "Slegs op hierdie toestel gestoor. Die AI-ontleding neem jou notas in ag.",
+  "notesSaved": "Gestoor {date}"
 }

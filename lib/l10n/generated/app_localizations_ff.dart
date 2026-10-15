@@ -1681,4 +1681,20 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get marketsToday => 'Luumooji hannde';
+
+  @override
+  String get notesTitle => 'Binndi am';
+
+  @override
+  String get notesHint =>
+      'Ko waɗi a soodi ɗum, ko ndaarataa, ko waɗata a yeeya?';
+
+  @override
+  String get notesInfo =>
+      'Ina mooftaa e ngol kaɓirgol tan. Ƴeewndo AI ina jogitoo binndi maa.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Mooftaama $date';
+  }
 }

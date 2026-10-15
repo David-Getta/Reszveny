@@ -1686,4 +1686,20 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get marketsToday => 'Pasar dina iki';
+
+  @override
+  String get notesTitle => 'Cathetanku';
+
+  @override
+  String get notesHint =>
+      'Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?';
+
+  @override
+  String get notesInfo =>
+      'Mung disimpen ing piranti iki. Analisis AI nggatekake cathetan sampeyan.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Disimpen $date';
+  }
 }

@@ -1682,4 +1682,20 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get marketsToday => 'ਅੱਜ ਦੇ ਬਾਜ਼ਾਰ';
+
+  @override
+  String get notesTitle => 'ਮੇਰੇ ਨੋਟ';
+
+  @override
+  String get notesHint =>
+      'ਤੁਸੀਂ ਇਹ ਕਿਉਂ ਖਰੀਦਿਆ, ਕਿਸ ਗੱਲ ’ਤੇ ਨਜ਼ਰ ਰੱਖ ਰਹੇ ਹੋ, ਕੀ ਹੋਣ ’ਤੇ ਵੇਚੋਗੇ?';
+
+  @override
+  String get notesInfo =>
+      'ਸਿਰਫ਼ ਇਸੇ ਡਿਵਾਈਸ ’ਤੇ ਸੁਰੱਖਿਅਤ ਹੈ। AI ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੇ ਨੋਟਾਂ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।';
+
+  @override
+  String notesSaved(String date) {
+    return 'ਸੁਰੱਖਿਅਤ ਕੀਤਾ: $date';
+  }
 }

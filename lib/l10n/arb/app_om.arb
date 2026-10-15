@@ -460,5 +460,9 @@
   "positionDividend": "Qooda bu'aa: waggaatti {amount}",
   "chartAvgCost": "Giddugaleessa kee",
   "chartAlertLevel": "Akeekkachiisa",
-  "marketsToday": "Gabaawwan har'a"
+  "marketsToday": "Gabaawwan har'a",
+  "notesTitle": "Yaadannoo koo",
+  "notesHint": "Maaliif bitte, maal hordofaa jirta, maaltu akka gurgurtu si taasisa?",
+  "notesInfo": "Meeshaa kana qofa irratti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.",
+  "notesSaved": "Kuufame: {date}"
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} ka ngwaga",
   "chartAvgCost": "Theko ya gago",
   "chartAlertLevel": "Temošo",
-  "marketsToday": "Mebaraka lehono"
+  "marketsToday": "Mebaraka lehono",
+  "notesTitle": "Dintlha tša ka",
+  "notesHint": "Ke ka baka la eng o e rekile, o šetše eng, ke eng seo se ka go dirago gore o e rekiše?",
+  "notesInfo": "E bolokilwe sedirišweng se fela. Tshekatsheko ya AI e ela hloko dintlha tša gago.",
+  "notesSaved": "E bolokilwe: {date}"
 }

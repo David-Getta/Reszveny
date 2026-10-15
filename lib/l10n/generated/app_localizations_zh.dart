@@ -1617,6 +1617,20 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get marketsToday => '今日市场';
+
+  @override
+  String get notesTitle => '我的笔记';
+
+  @override
+  String get notesHint => '您为什么买入？在关注什么？什么情况下会卖出？';
+
+  @override
+  String get notesInfo => '仅保存在此设备上。AI 分析会参考您的笔记。';
+
+  @override
+  String notesSaved(String date) {
+    return '保存于 $date';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3230,4 +3244,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get marketsToday => '今日市場';
+
+  @override
+  String get notesTitle => '我的筆記';
+
+  @override
+  String get notesHint => '你為何買入？正在留意甚麼？甚麼情況下會賣出？';
+
+  @override
+  String get notesInfo => '只會儲存在此裝置上。AI 分析會參考你的筆記。';
+
+  @override
+  String notesSaved(String date) {
+    return '儲存時間：$date';
+  }
 }

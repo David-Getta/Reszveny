@@ -1722,4 +1722,20 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get marketsToday => 'Tirgi šodien';
+
+  @override
+  String get notesTitle => 'Manas piezīmes';
+
+  @override
+  String get notesHint =>
+      'Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?';
+
+  @override
+  String get notesInfo =>
+      'Saglabāts tikai šajā ierīcē. AI analīze ņem vērā jūsu piezīmes.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Saglabāts $date';
+  }
 }

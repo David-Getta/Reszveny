@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} ku tshidimu",
   "chartAvgCost": "Mushinga webe",
   "chartAlertLevel": "Alerte",
-  "marketsToday": "Bisalu lelu"
+  "marketsToday": "Bisalu lelu",
+  "notesTitle": "Mifundu yanyi",
+  "notesHint": "Bua tshinyi wakayisumba, udi utangila tshinyi, tshinyi tshidi mua kukusaka bua kuyipana?",
+  "notesInfo": "Bilama anu mu tshintu etshi. Dikonkonona dia AI didi diangata mifundu yebe.",
+  "notesSaved": "Bilama: {date}"
 }

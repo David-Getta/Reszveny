@@ -1638,4 +1638,18 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get marketsToday => '오늘의 시장';
+
+  @override
+  String get notesTitle => '내 메모';
+
+  @override
+  String get notesHint => '왜 샀나요? 무엇을 지켜보고 있나요? 어떤 경우에 팔 건가요?';
+
+  @override
+  String get notesInfo => '이 기기에만 저장됩니다. AI 분석에 메모 내용이 반영됩니다.';
+
+  @override
+  String notesSaved(String date) {
+    return '저장됨: $date';
+  }
 }

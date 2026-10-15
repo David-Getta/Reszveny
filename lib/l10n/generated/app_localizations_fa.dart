@@ -1684,4 +1684,20 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get marketsToday => 'بازارها امروز';
+
+  @override
+  String get notesTitle => 'یادداشت‌های من';
+
+  @override
+  String get notesHint =>
+      'چرا آن را خریدید، به چه چیزی توجه دارید، چه چیزی باعث می‌شود آن را بفروشید؟';
+
+  @override
+  String get notesInfo =>
+      'فقط روی همین دستگاه ذخیره می‌شود. تحلیل هوش مصنوعی یادداشت‌های شما را در نظر می‌گیرد.';
+
+  @override
+  String notesSaved(String date) {
+    return 'ذخیره شد: $date';
+  }
 }

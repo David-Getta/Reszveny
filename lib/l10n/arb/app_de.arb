@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} pro Jahr",
   "chartAvgCost": "Dein Ø",
   "chartAlertLevel": "Kursalarm",
-  "marketsToday": "Märkte heute"
+  "marketsToday": "Märkte heute",
+  "notesTitle": "Meine Notizen",
+  "notesHint": "Warum hast du sie gekauft, worauf achtest du, was würde dich zum Verkauf bewegen?",
+  "notesInfo": "Nur auf diesem Gerät gespeichert. Die KI-Analyse berücksichtigt deine Notizen.",
+  "notesSaved": "Gespeichert {date}"
 }

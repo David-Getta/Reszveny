@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} na mvula",
   "chartAvgCost": "Ntalu na nge",
   "chartAlertLevel": "Lukebisu",
-  "marketsToday": "Mazandu unu"
+  "marketsToday": "Mazandu unu",
+  "notesTitle": "Ba note na mono",
+  "notesHint": "Sambu na nki nge sumbaka yo, nki nge ke tala, nki ta sala nge teka yo?",
+  "notesInfo": "Ilundwa kaka mu kisadilu kiaki. Analyse ya AI ke tadilaka ba note na nge.",
+  "notesSaved": "Ilundwa: {date}"
 }

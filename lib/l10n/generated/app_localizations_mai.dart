@@ -1681,4 +1681,20 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get marketsToday => 'आइक बजार';
+
+  @override
+  String get notesTitle => 'हमर नोट';
+
+  @override
+  String get notesHint =>
+      'अहाँ ई किएक किनलहुँ, कथी पर नजरि रखने छी, की भेला पर बेचब?';
+
+  @override
+  String get notesInfo =>
+      'केवल एही डिवाइस पर सहेजल जाइत अछि। AI विश्लेषण अहाँक नोटकेँ ध्यानमे रखैत अछि।';
+
+  @override
+  String notesSaved(String date) {
+    return 'सहेजल गेल $date';
+  }
 }

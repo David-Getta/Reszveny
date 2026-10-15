@@ -34,6 +34,7 @@ import 'features/fx/fx_service.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
+import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_store.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
@@ -65,10 +66,12 @@ class AppServices {
     AlertNotifier? alertNotifier,
     Telemetry? telemetry,
     AnalysisChat? chat,
+    NotesStore? notes,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
        alerts = alerts ?? AlertStore(),
+       notes = notes ?? NotesStore(),
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
@@ -149,6 +152,7 @@ class AppServices {
     String? accountEmail,
     PortfolioStore? portfolio,
     AlertStore? alerts,
+    NotesStore? notes,
   }) {
     // A Mac-es app a weboldalról terjesztett (nem Mac App Store-os), ezért ott
     // is a böngészős fizetés fut, mint a Claude asztali appjában.
@@ -180,6 +184,7 @@ class AppServices {
       platformStore: storeBilling,
       portfolio: portfolio,
       alerts: alerts,
+      notes: notes,
     );
     return services;
   }
@@ -213,6 +218,9 @@ class AppServices {
   /// „Kérdezz az elemzésről” beszélgetések.
   final AnalysisChat chat;
 
+  /// Saját jegyzetek részvényenként (csak a készüléken).
+  final NotesStore notes;
+
   /// Közelgő gyorsjelentések és az elemzések eseményei.
   late final EventsService events;
 
@@ -229,6 +237,7 @@ class AppServices {
       await alerts.clear();
       await preferences.clearPersonalData();
       await reports.clearCache();
+      await notes.clear();
     }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();
@@ -295,6 +304,7 @@ class AppServices {
       webSearches: AnalysisOptions.searchesFor(entitlements.state.tier, depth),
       readerCountry: device.countryCode,
       readerCurrency: displayCurrency(appLocale),
+      readerNote: symbol == null ? null : notes.of(symbol)?.text,
       position: held == null
           ? null
           : PositionContext(

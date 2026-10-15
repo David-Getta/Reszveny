@@ -1697,4 +1697,20 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mebaraka lehono';
+
+  @override
+  String get notesTitle => 'Dintlha tša ka';
+
+  @override
+  String get notesHint =>
+      'Ke ka baka la eng o e rekile, o šetše eng, ke eng seo se ka go dirago gore o e rekiše?';
+
+  @override
+  String get notesInfo =>
+      'E bolokilwe sedirišweng se fela. Tshekatsheko ya AI e ela hloko dintlha tša gago.';
+
+  @override
+  String notesSaved(String date) {
+    return 'E bolokilwe: $date';
+  }
 }

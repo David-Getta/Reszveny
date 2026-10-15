@@ -1655,4 +1655,19 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get marketsToday => 'ዕዳጋታት ሎሚ';
+
+  @override
+  String get notesTitle => 'ማስታወሻታተይ';
+
+  @override
+  String get notesHint =>
+      'ስለምንታይ ገዚእኩምዎ፣ እንታይ ትከታተሉ ኣለኹም፣ እንታይ እንተ ኣጋጢሙ ክትሸጡ ኢኹም?';
+
+  @override
+  String get notesInfo => 'ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ትንተና AI ንማስታወሻታትኩም ኣብ ግምት የእትዎ።';
+
+  @override
+  String notesSaved(String date) {
+    return 'ተዓቂቡ፦ $date';
+  }
 }

@@ -1660,4 +1660,19 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get marketsToday => 'የዛሬ ገበያዎች';
+
+  @override
+  String get notesTitle => 'የእኔ ማስታወሻዎች';
+
+  @override
+  String get notesHint => 'ለምን ገዙት፣ ምን እየተከታተሉ ነው፣ ምን ቢሆን ይሸጡታል?';
+
+  @override
+  String get notesInfo =>
+      'በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። የAI ትንተናው ማስታወሻዎችዎን ግምት ውስጥ ያስገባል።';
+
+  @override
+  String notesSaved(String date) {
+    return 'የተቀመጠው፦ $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "I-dividend: {amount} ngonyaka",
   "chartAvgCost": "Owakho umndilili",
   "chartAlertLevel": "Isilumkiso",
-  "marketsToday": "Iimarike namhlanje"
+  "marketsToday": "Iimarike namhlanje",
+  "notesTitle": "Amanqaku am",
+  "notesHint": "Kutheni usithengile, ujonge ntoni, yintoni enokwenza usithengise?",
+  "notesInfo": "Igcinwe kwesi sixhobo kuphela. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.",
+  "notesSaved": "Kugcinwe: {date}"
 }

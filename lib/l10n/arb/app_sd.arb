@@ -460,5 +460,9 @@
   "positionDividend": "ڊيويڊنڊ: سالياني {amount}",
   "chartAvgCost": "توهان جي سراسري",
   "chartAlertLevel": "الرٽ",
-  "marketsToday": "اڄ جون مارڪيٽون"
+  "marketsToday": "اڄ جون مارڪيٽون",
+  "notesTitle": "منهنجا نوٽس",
+  "notesHint": "توهان اهو ڇو خريد ڪيو، ڇا تي نظر رکي رهيا آهيو، ڇا ٿيو ته وڪڻندا؟",
+  "notesInfo": "صرف هن ڊوائيس تي محفوظ ٿئي ٿو. AI تجزيو توهان جا نوٽس نظر ۾ رکي ٿو.",
+  "notesSaved": "محفوظ ٿيو: {date}"
 }

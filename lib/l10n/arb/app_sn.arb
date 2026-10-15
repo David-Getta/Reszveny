@@ -460,5 +460,9 @@
   "positionDividend": "Dhividhendi: {amount} pagore",
   "chartAvgCost": "Avhareji yako",
   "chartAlertLevel": "Chiziviso",
-  "marketsToday": "Misika nhasi"
+  "marketsToday": "Misika nhasi",
+  "notesTitle": "Zvinyorwa zvangu",
+  "notesHint": "Wakaitengerei, uri kutarisa chii, chii chingaita kuti uitengese?",
+  "notesInfo": "Zvakachengetwa pamudziyo uyu chete. Ongororo yeAI inotarisa zvinyorwa zvako.",
+  "notesSaved": "Zvachengetwa {date}"
 }

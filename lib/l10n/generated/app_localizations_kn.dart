@@ -1691,4 +1691,20 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get marketsToday => 'ಇಂದಿನ ಮಾರುಕಟ್ಟೆಗಳು';
+
+  @override
+  String get notesTitle => 'ನನ್ನ ಟಿಪ್ಪಣಿಗಳು';
+
+  @override
+  String get notesHint =>
+      'ನೀವು ಇದನ್ನು ಏಕೆ ಖರೀದಿಸಿದಿರಿ, ಯಾವುದರ ಮೇಲೆ ಕಣ್ಣಿಟ್ಟಿದ್ದೀರಿ, ಏನಾದರೆ ಮಾರುತ್ತೀರಿ?';
+
+  @override
+  String get notesInfo =>
+      'ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ. AI ವಿಶ್ಲೇಷಣೆ ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳನ್ನು ಪರಿಗಣಿಸುತ್ತದೆ.';
+
+  @override
+  String notesSaved(String date) {
+    return 'ಉಳಿಸಲಾಗಿದೆ: $date';
+  }
 }

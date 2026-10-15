@@ -460,5 +460,9 @@
   "positionDividend": "التوزيعات: {amount} سنويًا",
   "chartAvgCost": "متوسطك",
   "chartAlertLevel": "تنبيه",
-  "marketsToday": "الأسواق اليوم"
+  "marketsToday": "الأسواق اليوم",
+  "notesTitle": "ملاحظاتي",
+  "notesHint": "لماذا اشتريته، وما الذي تتابعه، وما الذي قد يدفعك إلى بيعه؟",
+  "notesInfo": "تُحفظ على هذا الجهاز فقط. يأخذ التحليل بالذكاء الاصطناعي ملاحظاتك في الاعتبار.",
+  "notesSaved": "تم الحفظ {date}"
 }

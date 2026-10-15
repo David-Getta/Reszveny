@@ -1692,4 +1692,20 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get marketsToday => 'Misika lero';
+
+  @override
+  String get notesTitle => 'Zolemba zanga';
+
+  @override
+  String get notesHint =>
+      'Chifukwa chiyani munaigula, mukuyang\'anira chiyani, nchiyani chingakupangitseni kuigulitsa?';
+
+  @override
+  String get notesInfo =>
+      'Zasungidwa pa chipangizo ichi chokha. Kusanthula kwa AI kumaganizira zolemba zanu.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Zasungidwa $date';
+  }
 }

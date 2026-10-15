@@ -3102,6 +3102,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Markets today'**
   String get marketsToday;
+
+  /// No description provided for @notesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My notes'**
+  String get notesTitle;
+
+  /// No description provided for @notesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Why did you buy it, what are you watching, what would make you sell?'**
+  String get notesHint;
+
+  /// No description provided for @notesInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Stored only on this device. The AI analysis takes your notes into account.'**
+  String get notesInfo;
+
+  /// When the note was last saved; date is a formatted date and time.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved {date}'**
+  String notesSaved(String date);
 }
 
 class _AppLocalizationsDelegate

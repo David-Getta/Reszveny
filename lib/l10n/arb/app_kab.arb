@@ -460,5 +460,9 @@
   "positionDividend": "Dividand: {amount} i useggas",
   "chartAvgCost": "Talemmast-ik",
   "chartAlertLevel": "Alɣu",
-  "marketsToday": "Isuqen ass-a"
+  "marketsToday": "Isuqen ass-a",
+  "notesTitle": "Tizmilin-iw",
+  "notesHint": "Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?",
+  "notesInfo": "Yettwasekles kan deg yibenk-a. Tasleḍt s AI tettak azal i tezmilin-ik.",
+  "notesSaved": "Yettwasekles {date}"
 }

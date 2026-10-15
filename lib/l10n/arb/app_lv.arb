@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} gadā",
   "chartAvgCost": "Jūsu vid.",
   "chartAlertLevel": "Brīdinājums",
-  "marketsToday": "Tirgi šodien"
+  "marketsToday": "Tirgi šodien",
+  "notesTitle": "Manas piezīmes",
+  "notesHint": "Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?",
+  "notesInfo": "Saglabāts tikai šajā ierīcē. AI analīze ņem vērā jūsu piezīmes.",
+  "notesSaved": "Saglabāts {date}"
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Dîvîdend: salê {amount}",
   "chartAvgCost": "Navîniya te",
   "chartAlertLevel": "Hişyarî",
-  "marketsToday": "Bazar îro"
+  "marketsToday": "Bazar îro",
+  "notesTitle": "Notên min",
+  "notesHint": "Te çima kirî, tu li çi dinêrî, çi dê bike ku tu bifiroşî?",
+  "notesInfo": "Tenê li ser vê amûrê tê tomarkirin. Analîza AI notên te li ber çavan digire.",
+  "notesSaved": "Hat tomarkirin: {date}"
 }

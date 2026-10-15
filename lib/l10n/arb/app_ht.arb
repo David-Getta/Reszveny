@@ -460,5 +460,9 @@
   "positionDividend": "Dividann: {amount} pa ane",
   "chartAvgCost": "Mwayèn ou",
   "chartAlertLevel": "Alèt",
-  "marketsToday": "Mache yo jodi a"
+  "marketsToday": "Mache yo jodi a",
+  "notesTitle": "Nòt mwen yo",
+  "notesHint": "Poukisa ou te achte l, kisa w ap swiv, kisa ki ta fè w vann li?",
+  "notesInfo": "Anrejistre sèlman sou aparèy sa a. Analiz AI a pran nòt ou yo an kont.",
+  "notesSaved": "Anrejistre {date}"
 }

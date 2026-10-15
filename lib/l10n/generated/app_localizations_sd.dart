@@ -1680,4 +1680,20 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get marketsToday => 'اڄ جون مارڪيٽون';
+
+  @override
+  String get notesTitle => 'منهنجا نوٽس';
+
+  @override
+  String get notesHint =>
+      'توهان اهو ڇو خريد ڪيو، ڇا تي نظر رکي رهيا آهيو، ڇا ٿيو ته وڪڻندا؟';
+
+  @override
+  String get notesInfo =>
+      'صرف هن ڊوائيس تي محفوظ ٿئي ٿو. AI تجزيو توهان جا نوٽس نظر ۾ رکي ٿو.';
+
+  @override
+  String notesSaved(String date) {
+    return 'محفوظ ٿيو: $date';
+  }
 }

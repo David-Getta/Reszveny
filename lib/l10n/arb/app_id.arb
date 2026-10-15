@@ -460,5 +460,9 @@
   "positionDividend": "Dividen: {amount} per tahun",
   "chartAvgCost": "Rata-rata Anda",
   "chartAlertLevel": "Peringatan",
-  "marketsToday": "Pasar hari ini"
+  "marketsToday": "Pasar hari ini",
+  "notesTitle": "Catatan saya",
+  "notesHint": "Mengapa Anda membelinya, apa yang Anda pantau, apa yang akan membuat Anda menjualnya?",
+  "notesInfo": "Hanya disimpan di perangkat ini. Analisis AI mempertimbangkan catatan Anda.",
+  "notesSaved": "Disimpan {date}"
 }

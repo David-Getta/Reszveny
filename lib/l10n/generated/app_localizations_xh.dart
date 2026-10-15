@@ -1693,4 +1693,20 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get marketsToday => 'Iimarike namhlanje';
+
+  @override
+  String get notesTitle => 'Amanqaku am';
+
+  @override
+  String get notesHint =>
+      'Kutheni usithengile, ujonge ntoni, yintoni enokwenza usithengise?';
+
+  @override
+  String get notesInfo =>
+      'Igcinwe kwesi sixhobo kuphela. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Kugcinwe: $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Dividen: {amount} saben taun",
   "chartAvgCost": "Rata-ratamu",
   "chartAlertLevel": "Pèngetan",
-  "marketsToday": "Pasar dina iki"
+  "marketsToday": "Pasar dina iki",
+  "notesTitle": "Cathetanku",
+  "notesHint": "Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?",
+  "notesInfo": "Mung disimpen ing piranti iki. Analisis AI nggatekake cathetan sampeyan.",
+  "notesSaved": "Disimpen {date}"
 }

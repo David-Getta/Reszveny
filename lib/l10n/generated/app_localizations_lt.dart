@@ -1737,4 +1737,20 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get marketsToday => 'Rinkos šiandien';
+
+  @override
+  String get notesTitle => 'Mano užrašai';
+
+  @override
+  String get notesHint =>
+      'Kodėl ją įsigijote, ką stebite, kas paskatintų parduoti?';
+
+  @override
+  String get notesInfo =>
+      'Saugoma tik šiame įrenginyje. DI analizė atsižvelgia į jūsų užrašus.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Išsaugota $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "Dividenda: {amount} isan-taona",
   "chartAvgCost": "Ny antoninao",
   "chartAlertLevel": "Fanairana",
-  "marketsToday": "Tsena androany"
+  "marketsToday": "Tsena androany",
+  "notesTitle": "Ny naotiko",
+  "notesHint": "Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?",
+  "notesInfo": "Voatahiry amin'ity fitaovana ity ihany. Raisin'ny fandalinana AI an-tsaina ny naotinao.",
+  "notesSaved": "Voatahiry {date}"
 }

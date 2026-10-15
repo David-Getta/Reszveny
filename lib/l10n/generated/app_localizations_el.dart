@@ -1693,4 +1693,20 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get marketsToday => 'Αγορές σήμερα';
+
+  @override
+  String get notesTitle => 'Οι σημειώσεις μου';
+
+  @override
+  String get notesHint =>
+      'Γιατί την αγοράσατε, τι παρακολουθείτε, τι θα σας έκανε να πουλήσετε;';
+
+  @override
+  String get notesInfo =>
+      'Αποθηκεύεται μόνο σε αυτή τη συσκευή. Η ανάλυση AI λαμβάνει υπόψη τις σημειώσεις σας.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Αποθηκεύτηκε $date';
+  }
 }

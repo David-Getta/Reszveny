@@ -1685,4 +1685,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Markets today';
+
+  @override
+  String get notesTitle => 'My notes';
+
+  @override
+  String get notesHint =>
+      'Why did you buy it, what are you watching, what would make you sell?';
+
+  @override
+  String get notesInfo =>
+      'Stored only on this device. The AI analysis takes your notes into account.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Saved $date';
+  }
 }

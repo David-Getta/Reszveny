@@ -460,5 +460,9 @@
   "positionDividend": "Inyungu ku migabane: {amount} ku mwaka",
   "chartAvgCost": "Mpuzandengo yawe",
   "chartAlertLevel": "Imenyesha",
-  "marketsToday": "Amasoko uyu munsi"
+  "marketsToday": "Amasoko uyu munsi",
+  "notesTitle": "Ibyo nanditse",
+  "notesHint": "Kuki wawuguze, ni iki ukurikirana, ni iki cyatuma uwugurisha?",
+  "notesInfo": "Bibitswe kuri iki gikoresho gusa. Isesengura rya AI ryita ku byo wanditse.",
+  "notesSaved": "Byabitswe {date}"
 }

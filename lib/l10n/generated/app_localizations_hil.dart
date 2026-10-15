@@ -1697,4 +1697,20 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mga merkado subong';
+
+  @override
+  String get notesTitle => 'Akon mga nota';
+
+  @override
+  String get notesHint =>
+      'Ngaa ginbakal mo ini, ano ang ginabantayan mo, ano ang makapabaligya sa imo?';
+
+  @override
+  String get notesInfo =>
+      'Sa sini lang nga device natipon. Ginakonsiderar sang analisis sang AI ang imo mga nota.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Natipon $date';
+  }
 }

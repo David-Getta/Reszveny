@@ -460,5 +460,9 @@
   "positionDividend": "Дивиденда: {amount} годишно",
   "chartAvgCost": "Ваша просечна",
   "chartAlertLevel": "Известување",
-  "marketsToday": "Пазари денес"
+  "marketsToday": "Пазари денес",
+  "notesTitle": "Мои белешки",
+  "notesHint": "Зошто ја купивте, што следите, што би ве натерало да продадете?",
+  "notesInfo": "Се чува само на овој уред. AI-анализата ги зема предвид вашите белешки.",
+  "notesSaved": "Зачувано {date}"
 }

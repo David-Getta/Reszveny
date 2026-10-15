@@ -460,5 +460,9 @@
   "positionDividend": "ڈیویڈنڈ: سالانہ {amount}",
   "chartAvgCost": "آپ کی اوسط",
   "chartAlertLevel": "الرٹ",
-  "marketsToday": "آج کی مارکیٹیں"
+  "marketsToday": "آج کی مارکیٹیں",
+  "notesTitle": "میرے نوٹس",
+  "notesHint": "آپ نے اسے کیوں خریدا، آپ کس چیز پر نظر رکھ رہے ہیں، کس بات پر آپ اسے بیچیں گے؟",
+  "notesInfo": "صرف اسی ڈیوائس پر محفوظ ہوتا ہے۔ AI تجزیہ آپ کے نوٹس کو مدِنظر رکھتا ہے۔",
+  "notesSaved": "محفوظ کیا گیا {date}"
 }

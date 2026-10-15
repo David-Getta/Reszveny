@@ -1635,4 +1635,18 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get marketsToday => '本日の市場';
+
+  @override
+  String get notesTitle => '自分のメモ';
+
+  @override
+  String get notesHint => '購入した理由、注目している点、売却する条件は？';
+
+  @override
+  String get notesInfo => 'この端末にのみ保存されます。AI 分析はメモの内容を考慮します。';
+
+  @override
+  String notesSaved(String date) {
+    return '保存：$date';
+  }
 }

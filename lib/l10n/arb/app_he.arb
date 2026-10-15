@@ -460,5 +460,9 @@
   "positionDividend": "דיבידנד: {amount} בשנה",
   "chartAvgCost": "הממוצע שלך",
   "chartAlertLevel": "התראה",
-  "marketsToday": "השווקים היום"
+  "marketsToday": "השווקים היום",
+  "notesTitle": "ההערות שלי",
+  "notesHint": "למה קנית, אחרי מה לעקוב, מה יגרום לך למכור?",
+  "notesInfo": "נשמר רק במכשיר הזה. ניתוח ה-AI מתחשב בהערות שלך.",
+  "notesSaved": "נשמר {date}"
 }

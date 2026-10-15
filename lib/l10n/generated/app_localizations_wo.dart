@@ -1681,4 +1681,20 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get marketsToday => 'Marse yi tey';
+
+  @override
+  String get notesTitle => 'Samay notu';
+
+  @override
+  String get notesHint =>
+      'Lu tax nga ko jënd, lan ngay topp, lan moo lay def nga jaay ko?';
+
+  @override
+  String get notesInfo =>
+      'Ci masin bii rekk lañu ko denc. Saytu AI bi dafay jëfandikoo sa notu yi.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Denc nañu ko: $date';
+  }
 }

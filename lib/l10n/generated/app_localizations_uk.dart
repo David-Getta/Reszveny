@@ -1735,4 +1735,20 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get marketsToday => 'Ринки сьогодні';
+
+  @override
+  String get notesTitle => 'Мої нотатки';
+
+  @override
+  String get notesHint =>
+      'Чому ви її купили, за чим стежите, що змусить вас продати?';
+
+  @override
+  String get notesInfo =>
+      'Зберігається лише на цьому пристрої. ШІ-аналіз враховує ваші нотатки.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Збережено $date';
+  }
 }

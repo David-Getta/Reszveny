@@ -1692,4 +1692,20 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get marketsToday => 'ഇന്നത്തെ വിപണികൾ';
+
+  @override
+  String get notesTitle => 'എന്റെ കുറിപ്പുകൾ';
+
+  @override
+  String get notesHint =>
+      'എന്തിനാണ് നിങ്ങൾ ഇത് വാങ്ങിയത്, എന്താണ് ശ്രദ്ധിക്കുന്നത്, എന്തുണ്ടായാൽ വിൽക്കും?';
+
+  @override
+  String get notesInfo =>
+      'ഈ ഉപകരണത്തിൽ മാത്രം സൂക്ഷിച്ചിരിക്കുന്നു. AI വിശകലനം നിങ്ങളുടെ കുറിപ്പുകൾ കണക്കിലെടുക്കുന്നു.';
+
+  @override
+  String notesSaved(String date) {
+    return 'സംരക്ഷിച്ചത്: $date';
+  }
 }

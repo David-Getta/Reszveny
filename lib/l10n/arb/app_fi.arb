@@ -460,5 +460,9 @@
   "positionDividend": "Osinko: {amount} vuodessa",
   "chartAvgCost": "Oma ka.",
   "chartAlertLevel": "Hälytys",
-  "marketsToday": "Markkinat tänään"
+  "marketsToday": "Markkinat tänään",
+  "notesTitle": "Omat muistiinpanot",
+  "notesHint": "Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?",
+  "notesInfo": "Tallennetaan vain tälle laitteelle. Tekoälyanalyysi ottaa muistiinpanosi huomioon.",
+  "notesSaved": "Tallennettu {date}"
 }

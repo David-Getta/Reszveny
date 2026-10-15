@@ -1686,4 +1686,20 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get marketsToday => 'Market today';
+
+  @override
+  String get notesTitle => 'My notes';
+
+  @override
+  String get notesHint =>
+      'Why you buy am, wetin you dey watch, wetin go make you sell am?';
+
+  @override
+  String get notesInfo =>
+      'Na only dis device e dey. Di AI analysis dey consider your notes.';
+
+  @override
+  String notesSaved(String date) {
+    return 'E don save $date';
+  }
 }

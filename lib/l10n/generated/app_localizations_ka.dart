@@ -1687,4 +1687,20 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get marketsToday => 'ბაზრები დღეს';
+
+  @override
+  String get notesTitle => 'ჩემი ჩანაწერები';
+
+  @override
+  String get notesHint =>
+      'რატომ იყიდეთ, რას აკვირდებით, რა გაიძულებდათ გაყიდვას?';
+
+  @override
+  String get notesInfo =>
+      'ინახება მხოლოდ ამ მოწყობილობაზე. AI ანალიზი ითვალისწინებს თქვენს ჩანაწერებს.';
+
+  @override
+  String notesSaved(String date) {
+    return 'შენახულია $date';
+  }
 }

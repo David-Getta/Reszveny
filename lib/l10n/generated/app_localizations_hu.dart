@@ -1691,4 +1691,19 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get marketsToday => 'Piacok ma';
+
+  @override
+  String get notesTitle => 'Jegyzeteim';
+
+  @override
+  String get notesHint => 'Miért vetted meg, mire figyelsz, mi miatt adnád el?';
+
+  @override
+  String get notesInfo =>
+      'Csak ezen a készüléken tárolódik. Az AI-elemzés figyelembe veszi a jegyzeteidet.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Mentve: $date';
+  }
 }

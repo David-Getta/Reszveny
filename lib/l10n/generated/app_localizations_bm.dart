@@ -1683,4 +1683,20 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get marketsToday => 'Suguw bi';
+
+  @override
+  String get notesTitle => 'N ka sɛbɛnniw';
+
+  @override
+  String get notesHint =>
+      'Mun na i y\'a san, i bɛ mun kɔlɔsi, mun b\'a to i b\'a feere?';
+
+  @override
+  String get notesInfo =>
+      'A marala nin minɛn in dɔrɔn de kan. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.';
+
+  @override
+  String notesSaved(String date) {
+    return 'A marala: $date';
+  }
 }

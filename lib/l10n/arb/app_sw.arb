@@ -460,5 +460,9 @@
   "positionDividend": "Gawio: {amount} kwa mwaka",
   "chartAvgCost": "Wastani wako",
   "chartAlertLevel": "Arifa",
-  "marketsToday": "Masoko leo"
+  "marketsToday": "Masoko leo",
+  "notesTitle": "Madokezo yangu",
+  "notesHint": "Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?",
+  "notesInfo": "Huhifadhiwa kwenye kifaa hiki pekee. Uchambuzi wa AI huzingatia madokezo yako.",
+  "notesSaved": "Imehifadhiwa {date}"
 }

@@ -1696,4 +1696,20 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get marketsToday => 'Kunan qhatukuna';
+
+  @override
+  String get notesTitle => 'Qillqasqaykuna';
+
+  @override
+  String get notesHint =>
+      'Imaraykutaq rantirqanki, imatataq qhawachkanki, imataq vendenaykipaq tanqasunki?';
+
+  @override
+  String get notesInfo =>
+      'Kay equipollapim waqaychasqa. AI t\'aqwiyqa qillqasqaykikunata qhawarin.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Waqaychasqa $date';
+  }
 }

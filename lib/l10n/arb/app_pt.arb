@@ -460,5 +460,9 @@
   "positionDividend": "Dividendo: {amount} por ano",
   "chartAvgCost": "Seu custo médio",
   "chartAlertLevel": "Alerta",
-  "marketsToday": "Mercados hoje"
+  "marketsToday": "Mercados hoje",
+  "notesTitle": "Minhas notas",
+  "notesHint": "Porque a comprou, o que está a acompanhar, o que o levaria a vender?",
+  "notesInfo": "Guardado apenas neste dispositivo. A análise com IA tem em conta as suas notas.",
+  "notesSaved": "Guardado {date}"
 }

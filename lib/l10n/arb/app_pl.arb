@@ -460,5 +460,9 @@
   "positionDividend": "Dywidenda: {amount} rocznie",
   "chartAvgCost": "Twoja śr.",
   "chartAlertLevel": "Alert",
-  "marketsToday": "Rynki dziś"
+  "marketsToday": "Rynki dziś",
+  "notesTitle": "Moje notatki",
+  "notesHint": "Powód zakupu? Co obserwujesz? Co skłoniłoby cię do sprzedaży?",
+  "notesInfo": "Zapisywane tylko na tym urządzeniu. Analiza AI uwzględnia twoje notatki.",
+  "notesSaved": "Zapisano {date}"
 }

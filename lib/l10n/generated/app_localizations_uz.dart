@@ -1688,4 +1688,20 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get marketsToday => 'Bugungi bozorlar';
+
+  @override
+  String get notesTitle => 'Mening qaydlarim';
+
+  @override
+  String get notesHint =>
+      'Nega sotib oldingiz, nimani kuzatyapsiz, nima sizni sotishga undaydi?';
+
+  @override
+  String get notesInfo =>
+      'Faqat shu qurilmada saqlanadi. AI tahlili qaydlaringizni hisobga oladi.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Saqlandi: $date';
+  }
 }

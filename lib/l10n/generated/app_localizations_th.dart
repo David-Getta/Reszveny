@@ -1665,4 +1665,19 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get marketsToday => 'ตลาดวันนี้';
+
+  @override
+  String get notesTitle => 'บันทึกของฉัน';
+
+  @override
+  String get notesHint => 'ซื้อเพราะอะไร กำลังจับตาอะไร และอะไรจะทำให้คุณขาย';
+
+  @override
+  String get notesInfo =>
+      'จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น การวิเคราะห์ด้วย AI จะนำบันทึกของคุณมาพิจารณา';
+
+  @override
+  String notesSaved(String date) {
+    return 'บันทึกเมื่อ $date';
+  }
 }

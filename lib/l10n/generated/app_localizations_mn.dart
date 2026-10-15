@@ -1687,4 +1687,20 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Өнөөдрийн зах зээл';
+
+  @override
+  String get notesTitle => 'Миний тэмдэглэл';
+
+  @override
+  String get notesHint =>
+      'Яагаад худалдаж авсан бэ, юуг ажиглаж байна вэ, юу болвол зарах вэ?';
+
+  @override
+  String get notesInfo =>
+      'Зөвхөн энэ төхөөрөмжид хадгалагдана. AI шинжилгээ таны тэмдэглэлийг харгалзан үзнэ.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Хадгалсан: $date';
+  }
 }

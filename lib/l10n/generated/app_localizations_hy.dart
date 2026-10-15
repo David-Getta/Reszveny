@@ -1693,4 +1693,20 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get marketsToday => 'Շուկաներն այսօր';
+
+  @override
+  String get notesTitle => 'Իմ նշումները';
+
+  @override
+  String get notesHint =>
+      'Ինչո՞ւ եք գնել, ինչի՞ն եք հետևում, ի՞նչը կստիպի ձեզ վաճառել։';
+
+  @override
+  String get notesInfo =>
+      'Պահվում է միայն այս սարքում։ AI վերլուծությունը հաշվի է առնում ձեր նշումները։';
+
+  @override
+  String notesSaved(String date) {
+    return 'Պահվել է՝ $date';
+  }
 }

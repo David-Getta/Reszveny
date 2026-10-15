@@ -1690,4 +1690,20 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mercati oggi';
+
+  @override
+  String get notesTitle => 'Le mie note';
+
+  @override
+  String get notesHint =>
+      'Perché l’hai comprata, cosa stai tenendo d’occhio, cosa ti farebbe vendere?';
+
+  @override
+  String get notesInfo =>
+      'Salvato solo su questo dispositivo. L’analisi IA tiene conto delle tue note.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Salvato $date';
+  }
 }

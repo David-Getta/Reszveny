@@ -1692,4 +1692,20 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mga merkado ngayon';
+
+  @override
+  String get notesTitle => 'Aking mga tala';
+
+  @override
+  String get notesHint =>
+      'Bakit mo ito binili, ano ang binabantayan mo, ano ang magtutulak sa iyong ibenta ito?';
+
+  @override
+  String get notesInfo =>
+      'Sa device na ito lang naka-save. Isinasaalang-alang ng pagsusuri ng AI ang iyong mga tala.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Na-save $date';
+  }
 }

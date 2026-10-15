@@ -460,5 +460,9 @@
   "positionDividend": "Dividenda: {amount} godišnje",
   "chartAvgCost": "Vaša prosj.",
   "chartAlertLevel": "Obavještenje",
-  "marketsToday": "Tržišta danas"
+  "marketsToday": "Tržišta danas",
+  "notesTitle": "Moje bilješke",
+  "notesHint": "Zašto ste je kupili, šta pratite, zbog čega biste je prodali?",
+  "notesInfo": "Pohranjeno samo na ovom uređaju. AI analiza uzima u obzir vaše bilješke.",
+  "notesSaved": "Sačuvano {date}"
 }

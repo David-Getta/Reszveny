@@ -460,5 +460,9 @@
   "positionDividend": "Dividende: {amount} ka selemo",
   "chartAvgCost": "Karolelano ya hao",
   "chartAlertLevel": "Tsebiso",
-  "marketsToday": "Mebaraka kajeno"
+  "marketsToday": "Mebaraka kajeno",
+  "notesTitle": "Dintlha tsa ka",
+  "notesHint": "Hobaneng o e rekile, o shebile eng, ke eng e ka etsang hore o e rekise?",
+  "notesInfo": "E bolokilwe sesebedisweng sena feela. Tlhahlobo ya AI e ela hloko dintlha tsa hao.",
+  "notesSaved": "E bolokilwe {date}"
 }

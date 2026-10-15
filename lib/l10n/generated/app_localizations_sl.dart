@@ -1738,4 +1738,20 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get marketsToday => 'Trgi danes';
+
+  @override
+  String get notesTitle => 'Moji zapiski';
+
+  @override
+  String get notesHint =>
+      'Zakaj ste jo kupili, kaj spremljate, kaj bi vas pripravilo do prodaje?';
+
+  @override
+  String get notesInfo =>
+      'Shranjeno samo v tej napravi. Analiza AI upošteva vaše zapiske.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Shranjeno $date';
+  }
 }

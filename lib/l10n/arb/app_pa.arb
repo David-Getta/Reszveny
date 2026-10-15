@@ -460,5 +460,9 @@
   "positionDividend": "ਲਾਭਅੰਸ਼: {amount} ਸਾਲਾਨਾ",
   "chartAvgCost": "ਤੁਹਾਡੀ ਔਸਤ",
   "chartAlertLevel": "ਅਲਰਟ",
-  "marketsToday": "ਅੱਜ ਦੇ ਬਾਜ਼ਾਰ"
+  "marketsToday": "ਅੱਜ ਦੇ ਬਾਜ਼ਾਰ",
+  "notesTitle": "ਮੇਰੇ ਨੋਟ",
+  "notesHint": "ਤੁਸੀਂ ਇਹ ਕਿਉਂ ਖਰੀਦਿਆ, ਕਿਸ ਗੱਲ ’ਤੇ ਨਜ਼ਰ ਰੱਖ ਰਹੇ ਹੋ, ਕੀ ਹੋਣ ’ਤੇ ਵੇਚੋਗੇ?",
+  "notesInfo": "ਸਿਰਫ਼ ਇਸੇ ਡਿਵਾਈਸ ’ਤੇ ਸੁਰੱਖਿਅਤ ਹੈ। AI ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੇ ਨੋਟਾਂ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।",
+  "notesSaved": "ਸੁਰੱਖਿਅਤ ਕੀਤਾ: {date}"
 }

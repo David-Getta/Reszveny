@@ -460,5 +460,9 @@
   "positionDividend": "የትርፍ ድርሻ፦ በዓመት {amount}",
   "chartAvgCost": "የእርስዎ አማካይ",
   "chartAlertLevel": "ማንቂያ",
-  "marketsToday": "የዛሬ ገበያዎች"
+  "marketsToday": "የዛሬ ገበያዎች",
+  "notesTitle": "የእኔ ማስታወሻዎች",
+  "notesHint": "ለምን ገዙት፣ ምን እየተከታተሉ ነው፣ ምን ቢሆን ይሸጡታል?",
+  "notesInfo": "በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። የAI ትንተናው ማስታወሻዎችዎን ግምት ውስጥ ያስገባል።",
+  "notesSaved": "የተቀመጠው፦ {date}"
 }

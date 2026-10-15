@@ -1173,5 +1173,17 @@
   "marketsToday": "Markets today",
   "@marketsToday": {
     "description": "Home screen section title: today's change of the main US stock indices (S&P 500, Nasdaq 100, Dow Jones)."
+  },
+  "notesTitle": "My notes",
+  "notesHint": "Why did you buy it, what are you watching, what would make you sell?",
+  "notesInfo": "Stored only on this device. The AI analysis takes your notes into account.",
+  "notesSaved": "Saved {date}",
+  "@notesSaved": {
+    "description": "When the note was last saved; date is a formatted date and time.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
   }
 }

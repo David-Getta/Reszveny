@@ -1732,4 +1732,20 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get marketsToday => 'Trhy dnes';
+
+  @override
+  String get notesTitle => 'Moje poznámky';
+
+  @override
+  String get notesHint =>
+      'Proč jste ji koupili, co sledujete, co by vás přimělo prodat?';
+
+  @override
+  String get notesInfo =>
+      'Ukládá se pouze v tomto zařízení. AI analýza bere vaše poznámky v úvahu.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Uloženo $date';
+  }
 }

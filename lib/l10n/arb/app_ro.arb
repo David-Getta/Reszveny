@@ -460,5 +460,9 @@
   "positionDividend": "Dividend: {amount} pe an",
   "chartAvgCost": "Media ta",
   "chartAlertLevel": "Alertă",
-  "marketsToday": "Piețele azi"
+  "marketsToday": "Piețele azi",
+  "notesTitle": "Notițele mele",
+  "notesHint": "De ce ai cumpărat-o, ce urmărești, ce te-ar face să vinzi?",
+  "notesInfo": "Salvat doar pe acest dispozitiv. Analiza AI ține cont de notițele tale.",
+  "notesSaved": "Salvat {date}"
 }

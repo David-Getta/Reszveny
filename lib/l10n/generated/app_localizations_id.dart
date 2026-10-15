@@ -1681,4 +1681,20 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get marketsToday => 'Pasar hari ini';
+
+  @override
+  String get notesTitle => 'Catatan saya';
+
+  @override
+  String get notesHint =>
+      'Mengapa Anda membelinya, apa yang Anda pantau, apa yang akan membuat Anda menjualnya?';
+
+  @override
+  String get notesInfo =>
+      'Hanya disimpan di perangkat ini. Analisis AI mempertimbangkan catatan Anda.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Disimpan $date';
+  }
 }

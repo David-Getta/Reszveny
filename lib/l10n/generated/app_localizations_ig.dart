@@ -1681,4 +1681,20 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Ahịa taa';
+
+  @override
+  String get notesTitle => 'Ndetu m';
+
+  @override
+  String get notesHint =>
+      'Gịnị mere i ji zụta ya, gịnị ka ị na-eleba anya, gịnị ga-eme ka i ree ya?';
+
+  @override
+  String get notesInfo =>
+      'E chekwara ya naanị na ngwaọrụ a. Nyocha AI na-atụle ndetu gị.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Echekwara $date';
+  }
 }

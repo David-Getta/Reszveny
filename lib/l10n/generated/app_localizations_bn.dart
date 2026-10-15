@@ -1687,4 +1687,19 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get marketsToday => 'আজকের বাজার';
+
+  @override
+  String get notesTitle => 'আমার নোট';
+
+  @override
+  String get notesHint => 'কেন কিনেছেন, কী নজরে রাখছেন, কী হলে বিক্রি করবেন?';
+
+  @override
+  String get notesInfo =>
+      'শুধু এই ডিভাইসেই সংরক্ষিত হয়। AI বিশ্লেষণ আপনার নোটগুলো বিবেচনায় নেয়।';
+
+  @override
+  String notesSaved(String date) {
+    return 'সংরক্ষিত $date';
+  }
 }

@@ -12,6 +12,7 @@ import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
 import 'features/billing/entitlement_service.dart';
 import 'features/alerts/price_alert.dart';
+import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_store.dart';
 
 Future<void> main() async {
@@ -39,6 +40,7 @@ Future<void> main() async {
     accountEmail: await AccountController.loadStoredEmail(),
     portfolio: await PortfolioStore.load(),
     alerts: await AlertStore.load(),
+    notes: await NotesStore.load(),
   );
   // Nem kezelt hibák jelentése (csak hozzájárulással; a Flutter saját
   // naplózása is megmarad).

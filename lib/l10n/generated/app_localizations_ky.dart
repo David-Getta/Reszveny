@@ -1688,4 +1688,20 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get marketsToday => 'Рыноктор бүгүн';
+
+  @override
+  String get notesTitle => 'Менин жазууларым';
+
+  @override
+  String get notesHint =>
+      'Эмне үчүн сатып алдыңыз, эмнени көзөмөлдөп жатасыз, эмне болсо сатасыз?';
+
+  @override
+  String get notesInfo =>
+      'Ушул түзмөктө гана сакталат. AI талдоосу жазууларыңызды эске алат.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Сакталды: $date';
+  }
 }

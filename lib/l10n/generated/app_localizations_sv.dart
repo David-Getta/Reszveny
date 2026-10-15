@@ -1686,4 +1686,20 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get marketsToday => 'Marknader i dag';
+
+  @override
+  String get notesTitle => 'Mina anteckningar';
+
+  @override
+  String get notesHint =>
+      'Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?';
+
+  @override
+  String get notesInfo =>
+      'Sparas bara på den här enheten. AI-analysen tar hänsyn till dina anteckningar.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Sparad $date';
+  }
 }

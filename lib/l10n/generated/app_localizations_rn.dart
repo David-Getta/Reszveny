@@ -1692,4 +1692,20 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get marketsToday => 'Amasoko uno musi';
+
+  @override
+  String get notesTitle => 'Ivyo nanditse';
+
+  @override
+  String get notesHint =>
+      'Ni kubera iki wawuguze, ni ibiki uriko urakurikirana, ni igiki coshobora gutuma uwugurisha?';
+
+  @override
+  String get notesInfo =>
+      'Bibitswe kuri iki gikoresho gusa. Isesangura rya AI ryitaho ivyo wanditse.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Vyabitswe $date';
+  }
 }

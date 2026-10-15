@@ -1694,4 +1694,20 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mga merkado karon';
+
+  @override
+  String get notesTitle => 'Akong mga nota';
+
+  @override
+  String get notesHint =>
+      'Nganong gipalit nimo kini, unsay imong gibantayan, unsay makapabaligya nimo niini?';
+
+  @override
+  String get notesInfo =>
+      'Niini lang nga device gitipigan. Gikonsiderar sa pagtuki sa AI ang imong mga nota.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Gitipigan $date';
+  }
 }

@@ -460,5 +460,9 @@
   "positionDividend": "股息：每年 {amount}",
   "chartAvgCost": "你的均價",
   "chartAlertLevel": "提示",
-  "marketsToday": "今日市場"
+  "marketsToday": "今日市場",
+  "notesTitle": "我的筆記",
+  "notesHint": "你為何買入？正在留意甚麼？甚麼情況下會賣出？",
+  "notesInfo": "只會儲存在此裝置上。AI 分析會參考你的筆記。",
+  "notesSaved": "儲存時間：{date}"
 }

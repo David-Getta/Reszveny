@@ -460,5 +460,9 @@
   "positionDividend": "Дывідэнд: {amount} у год",
   "chartAvgCost": "Ваша сяр.",
   "chartAlertLevel": "Апавяшчэнне",
-  "marketsToday": "Рынкі сёння"
+  "marketsToday": "Рынкі сёння",
+  "notesTitle": "Мае нататкі",
+  "notesHint": "Чаму вы яе купілі, за чым сочыце, што прымусіць вас прадаць?",
+  "notesInfo": "Захоўваецца толькі на гэтай прыладзе. AI-аналіз улічвае вашы нататкі.",
+  "notesSaved": "Захавана {date}"
 }

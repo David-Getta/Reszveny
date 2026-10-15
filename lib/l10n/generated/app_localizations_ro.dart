@@ -1716,4 +1716,20 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get marketsToday => 'Piețele azi';
+
+  @override
+  String get notesTitle => 'Notițele mele';
+
+  @override
+  String get notesHint =>
+      'De ce ai cumpărat-o, ce urmărești, ce te-ar face să vinzi?';
+
+  @override
+  String get notesInfo =>
+      'Salvat doar pe acest dispozitiv. Analiza AI ține cont de notițele tale.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Salvat $date';
+  }
 }

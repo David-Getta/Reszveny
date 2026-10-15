@@ -1684,4 +1684,20 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get marketsToday => 'Mache yo jodi a';
+
+  @override
+  String get notesTitle => 'Nòt mwen yo';
+
+  @override
+  String get notesHint =>
+      'Poukisa ou te achte l, kisa w ap swiv, kisa ki ta fè w vann li?';
+
+  @override
+  String get notesInfo =>
+      'Anrejistre sèlman sou aparèy sa a. Analiz AI a pran nòt ou yo an kont.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Anrejistre $date';
+  }
 }

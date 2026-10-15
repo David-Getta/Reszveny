@@ -1692,4 +1692,20 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get marketsToday => 'Tregjet sot';
+
+  @override
+  String get notesTitle => 'Shënimet e mia';
+
+  @override
+  String get notesHint =>
+      'Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?';
+
+  @override
+  String get notesInfo =>
+      'Ruhet vetëm në këtë pajisje. Analiza me AI merr parasysh shënimet tuaja.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Ruajtur $date';
+  }
 }

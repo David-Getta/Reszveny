@@ -1685,4 +1685,20 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get marketsToday => 'Bugün piyasalar';
+
+  @override
+  String get notesTitle => 'Notlarım';
+
+  @override
+  String get notesHint =>
+      'Neden aldınız, neyi takip ediyorsunuz, sizi satmaya ne yöneltir?';
+
+  @override
+  String get notesInfo =>
+      'Yalnızca bu cihazda saklanır. Yapay zekâ analizi notlarınızı dikkate alır.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Kaydedildi: $date';
+  }
 }

@@ -1700,4 +1700,20 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get marketsToday => 'Dagiti merkado ita nga aldaw';
+
+  @override
+  String get notesTitle => 'Dagiti notak';
+
+  @override
+  String get notesHint =>
+      'Apay a ginatangmo, ania ti bambantayam, ania ti mangpailako kenka?';
+
+  @override
+  String get notesInfo =>
+      'Naidulin laeng iti daytoy a device. Ikonsiderar ti panangsukimat ti AI dagiti notam.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Naidulin $date';
+  }
 }

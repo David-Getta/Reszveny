@@ -1723,4 +1723,20 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get marketsToday => 'الأسواق اليوم';
+
+  @override
+  String get notesTitle => 'ملاحظاتي';
+
+  @override
+  String get notesHint =>
+      'لماذا اشتريته، وما الذي تتابعه، وما الذي قد يدفعك إلى بيعه؟';
+
+  @override
+  String get notesInfo =>
+      'تُحفظ على هذا الجهاز فقط. يأخذ التحليل بالذكاء الاصطناعي ملاحظاتك في الاعتبار.';
+
+  @override
+  String notesSaved(String date) {
+    return 'تم الحفظ $date';
+  }
 }

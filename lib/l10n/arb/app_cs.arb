@@ -460,5 +460,9 @@
   "positionDividend": "Dividenda: {amount} ročně",
   "chartAvgCost": "Váš průměr",
   "chartAlertLevel": "Upozornění",
-  "marketsToday": "Trhy dnes"
+  "marketsToday": "Trhy dnes",
+  "notesTitle": "Moje poznámky",
+  "notesHint": "Proč jste ji koupili, co sledujete, co by vás přimělo prodat?",
+  "notesInfo": "Ukládá se pouze v tomto zařízení. AI analýza bere vaše poznámky v úvahu.",
+  "notesSaved": "Uloženo {date}"
 }

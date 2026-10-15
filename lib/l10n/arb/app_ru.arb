@@ -460,5 +460,9 @@
   "positionDividend": "Дивиденды: {amount} в год",
   "chartAvgCost": "Ваша ср.",
   "chartAlertLevel": "Оповещение",
-  "marketsToday": "Рынки сегодня"
+  "marketsToday": "Рынки сегодня",
+  "notesTitle": "Мои заметки",
+  "notesHint": "Почему вы её купили, за чем следите, что заставит вас продать?",
+  "notesInfo": "Хранится только на этом устройстве. ИИ-анализ учитывает ваши заметки.",
+  "notesSaved": "Сохранено {date}"
 }

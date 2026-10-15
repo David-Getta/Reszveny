@@ -460,5 +460,9 @@
   "positionDividend": "Dividand: {amount} at mu nekk",
   "chartAvgCost": "Sa diggu",
   "chartAlertLevel": "Artu",
-  "marketsToday": "Marse yi tey"
+  "marketsToday": "Marse yi tey",
+  "notesTitle": "Samay notu",
+  "notesHint": "Lu tax nga ko jënd, lan ngay topp, lan moo lay def nga jaay ko?",
+  "notesInfo": "Ci masin bii rekk lañu ko denc. Saytu AI bi dafay jëfandikoo sa notu yi.",
+  "notesSaved": "Denc nañu ko: {date}"
 }

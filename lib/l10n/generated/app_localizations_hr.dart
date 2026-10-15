@@ -1721,4 +1721,20 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get marketsToday => 'Tržišta danas';
+
+  @override
+  String get notesTitle => 'Moje bilješke';
+
+  @override
+  String get notesHint =>
+      'Zašto ste je kupili, što pratite, zbog čega biste je prodali?';
+
+  @override
+  String get notesInfo =>
+      'Sprema se samo na ovom uređaju. AI analiza uzima u obzir vaše bilješke.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Spremljeno $date';
+  }
 }

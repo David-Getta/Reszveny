@@ -460,5 +460,9 @@
   "positionDividend": "Dividende : {amount} par an",
   "chartAvgCost": "Votre PRU",
   "chartAlertLevel": "Alerte",
-  "marketsToday": "Marchés aujourd’hui"
+  "marketsToday": "Marchés aujourd’hui",
+  "notesTitle": "Mes notes",
+  "notesHint": "Pourquoi l’avez-vous achetée, que surveillez-vous, qu’est-ce qui vous ferait vendre ?",
+  "notesInfo": "Enregistré uniquement sur cet appareil. L’analyse IA tient compte de vos notes.",
+  "notesSaved": "Enregistré {date}"
 }

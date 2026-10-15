@@ -1686,4 +1686,20 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get marketsToday => 'Пазарите днес';
+
+  @override
+  String get notesTitle => 'Моите бележки';
+
+  @override
+  String get notesHint =>
+      'Защо я купихте, какво следите, какво би ви накарало да продадете?';
+
+  @override
+  String get notesInfo =>
+      'Съхранява се само на това устройство. AI анализът взема предвид бележките ви.';
+
+  @override
+  String notesSaved(String date) {
+    return 'Запазено $date';
+  }
 }

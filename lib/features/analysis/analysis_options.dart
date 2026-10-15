@@ -34,6 +34,7 @@ class AnalysisOptions {
     this.readerCountry,
     this.readerCurrency,
     this.position,
+    this.readerNote,
   });
 
   final AnalysisDepth depth;
@@ -51,6 +52,9 @@ class AnalysisOptions {
 
   /// Ha az olvasónak van ebből a részvényből, a pozíciója (különben `null`).
   final PositionContext? position;
+
+  /// Az olvasó saját jegyzete ehhez a részvényhez (tézis, figyelt pontok).
+  final String? readerNote;
 
   /// Hány elemzést fogyaszt a keretből.
   int get cost => costOf(depth);
@@ -109,6 +113,7 @@ class AnalysisOptions {
     String? readerCountry,
     String? readerCurrency,
     PositionContext? position,
+    String? readerNote,
   }) => AnalysisOptions(
     depth: depth ?? this.depth,
     readerLevel: readerLevel ?? this.readerLevel,
@@ -117,5 +122,6 @@ class AnalysisOptions {
     readerCountry: readerCountry ?? this.readerCountry,
     readerCurrency: readerCurrency ?? this.readerCurrency,
     position: position ?? this.position,
+    readerNote: readerNote ?? this.readerNote,
   );
 }

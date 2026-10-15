@@ -460,5 +460,9 @@
   "positionDividend": "ብጽሒት ትርፊ: ኣብ ዓመት {amount}",
   "chartAvgCost": "ናትካ ማእከላይ",
   "chartAlertLevel": "መጠንቀቕታ",
-  "marketsToday": "ዕዳጋታት ሎሚ"
+  "marketsToday": "ዕዳጋታት ሎሚ",
+  "notesTitle": "ማስታወሻታተይ",
+  "notesHint": "ስለምንታይ ገዚእኩምዎ፣ እንታይ ትከታተሉ ኣለኹም፣ እንታይ እንተ ኣጋጢሙ ክትሸጡ ኢኹም?",
+  "notesInfo": "ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ትንተና AI ንማስታወሻታትኩም ኣብ ግምት የእትዎ።",
+  "notesSaved": "ተዓቂቡ፦ {date}"
 }

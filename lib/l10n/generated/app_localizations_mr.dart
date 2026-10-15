@@ -1685,4 +1685,20 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get marketsToday => 'आजचे बाजार';
+
+  @override
+  String get notesTitle => 'माझ्या नोंदी';
+
+  @override
+  String get notesHint =>
+      'तुम्ही तो का खरेदी केला, कशावर लक्ष ठेवत आहात, काय झाल्यास विकाल?';
+
+  @override
+  String get notesInfo =>
+      'फक्त याच डिव्हाइसवर जतन होते. AI विश्लेषण तुमच्या नोंदी विचारात घेते.';
+
+  @override
+  String notesSaved(String date) {
+    return 'जतन केले: $date';
+  }
 }

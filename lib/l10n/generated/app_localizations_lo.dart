@@ -1667,4 +1667,20 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get marketsToday => 'ຕະຫຼາດມື້ນີ້';
+
+  @override
+  String get notesTitle => 'ບັນທຶກຂອງຂ້ອຍ';
+
+  @override
+  String get notesHint =>
+      'ເປັນຫຍັງທ່ານຈຶ່ງຊື້ ທ່ານກຳລັງຕິດຕາມຫຍັງ ແລະ ຫຍັງຈະເຮັດໃຫ້ທ່ານຂາຍ?';
+
+  @override
+  String get notesInfo =>
+      'ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ການວິເຄາະດ້ວຍ AI ຈະພິຈາລະນາບັນທຶກຂອງທ່ານ';
+
+  @override
+  String notesSaved(String date) {
+    return 'ບັນທຶກແລ້ວ $date';
+  }
 }

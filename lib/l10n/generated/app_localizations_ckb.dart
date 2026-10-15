@@ -1686,4 +1686,20 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get marketsToday => 'بازاڕەکان ئەمڕۆ';
+
+  @override
+  String get notesTitle => 'تێبینییەکانم';
+
+  @override
+  String get notesHint =>
+      'بۆچی کڕیت، چاودێری چی دەکەیت، چی وات لێدەکات بیفرۆشیت؟';
+
+  @override
+  String get notesInfo =>
+      'تەنها لەسەر ئەم ئامێرە پاشەکەوت دەکرێت. شیکاریی AI تێبینییەکانت لەبەرچاو دەگرێت.';
+
+  @override
+  String notesSaved(String date) {
+    return 'پاشەکەوتکرا $date';
+  }
 }

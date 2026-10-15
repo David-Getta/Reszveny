@@ -1692,4 +1692,20 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get marketsToday => 'Suuqyada maanta';
+
+  @override
+  String get notesTitle => 'Qoraalladayda';
+
+  @override
+  String get notesHint =>
+      'Maxaad u iibsatay, maxaad la socotaa, maxaa kugu kallifi lahaa inaad iibiso?';
+
+  @override
+  String get notesInfo =>
+      'Waxaa lagu kaydiyaa qalabkan oo keliya. Falanqaynta AI waxay tixgelisaa qoraalladaada.';
+
+  @override
+  String notesSaved(String date) {
+    return 'La kaydiyay $date';
+  }
 }
