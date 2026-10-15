@@ -475,5 +475,8 @@
   "syncInfo": "Portefeuille, biudi musue, alerte ya mushinga ne mifundu bidi bimue ku bintu biebe bionso.",
   "syncLast": "Synchronisation ya ndekelu: {time}",
   "syncNow": "Synchroniser katataka",
-  "syncFailed": "Synchronisation kayena mienze to. Neyikebe kabidi yoyi nkayayi."
+  "syncFailed": "Synchronisation kayena mienze to. Neyikebe kabidi yoyi nkayayi.",
+  "alertEmailTitle": "E-mail padi alerte ijuka",
+  "alertEmailOn": "Tudi tutangila alerte yebe minite mikese yonso ne tukutumina e-mail, nansha padi application mukanga.",
+  "alertEmailSignIn": "Buela ne e-mail webe mu Malongolola bua kupeta alerte ku e-mail, nansha padi application mukanga."
 }

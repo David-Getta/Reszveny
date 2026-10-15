@@ -475,5 +475,8 @@
   "syncInfo": "Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.",
   "syncLast": "Pēdējā sinhronizācija: {time}",
   "syncNow": "Sinhronizēt tūlīt",
-  "syncFailed": "Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz."
+  "syncFailed": "Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz.",
+  "alertEmailTitle": "E-pasts, kad nostrādā brīdinājums",
+  "alertEmailOn": "Ik pēc dažām minūtēm pārbaudām jūsu brīdinājumus un nosūtām jums e-pastu, pat ja lietotne ir aizvērta.",
+  "alertEmailSignIn": "Pierakstieties ar savu e-pastu Iestatījumos, lai saņemtu brīdinājumus e-pastā, pat ja lietotne ir aizvērta."
 }

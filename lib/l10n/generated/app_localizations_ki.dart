@@ -1755,4 +1755,15 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync ndĩnahota. Nĩ ĩkũgeria rĩngĩ yo nyene.';
+
+  @override
+  String get alertEmailTitle => 'E-mail rĩrĩa ũmenyithia wakinya';
+
+  @override
+  String get alertEmailOn =>
+      'Tũrorithagia imenyithia ciaku o ndagĩka nini na tũgakũtũmĩra e-mail, o na rĩrĩa app ĩhingĩtwo.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Toonya na e-mail yaku thĩinĩ wa Mĩtaratara nĩguo wamũkagĩre imenyithia na e-mail, o na rĩrĩa app ĩhingĩtwo.';
 }

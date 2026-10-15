@@ -1811,4 +1811,15 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinchronizuoti nepavyko. Bus automatiškai bandoma dar kartą.';
+
+  @override
+  String get alertEmailTitle => 'El. laiškas, kai suveikia įspėjimas';
+
+  @override
+  String get alertEmailOn =>
+      'Kas kelias minutes tikriname jūsų įspėjimus ir siunčiame el. laišką, net kai programa uždaryta.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Prisijunkite el. paštu Nustatymuose, kad gautumėte įspėjimus el. paštu, net kai programa uždaryta.';
 }

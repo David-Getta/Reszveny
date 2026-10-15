@@ -475,5 +475,8 @@
   "syncInfo": "Portafolio, munasqakuna, chanin willachiykuna, qillqasqakunapas llapan equipoykikunapi kaqllam.",
   "syncLast": "Qhipa sincronización: {time}",
   "syncNow": "Kunan sincronizay",
-  "syncFailed": "Mana sincronizayta atikurqanchu. Kikillanmanta yapamanta kallpachakunqa."
+  "syncFailed": "Mana sincronizayta atikurqanchu. Kikillanmanta yapamanta kallpachakunqa.",
+  "alertEmailTitle": "Correo willachiy rikhurimuptin",
+  "alertEmailOn": "Sapa iskay kimsa minutopi willachiykunaykita qhawayku, correotataq kachamuykiku, aplicación wisq'asqa kaptinpas.",
+  "alertEmailSignIn": "Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq'asqa kaptinpas."
 }

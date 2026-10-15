@@ -1763,4 +1763,15 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get syncFailed => 'ஒத்திசைக்க முடியவில்லை. தானாகவே மீண்டும் முயலும்.';
+
+  @override
+  String get alertEmailTitle => 'எச்சரிக்கை தூண்டப்படும்போது மின்னஞ்சல்';
+
+  @override
+  String get alertEmailOn =>
+      'சில நிமிடங்களுக்கு ஒருமுறை உங்கள் எச்சரிக்கைகளைச் சரிபார்த்து, ஆப் மூடியிருந்தாலும் உங்களுக்கு மின்னஞ்சல் அனுப்புவோம்.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ஆப் மூடியிருந்தாலும் எச்சரிக்கைகளை மின்னஞ்சலில் பெற, அமைப்புகளில் உங்கள் மின்னஞ்சல் மூலம் உள்நுழையவும்.';
 }

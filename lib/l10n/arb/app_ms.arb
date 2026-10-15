@@ -475,5 +475,8 @@
   "syncInfo": "Portfolio, kegemaran, amaran harga dan nota disegerakkan merentas semua peranti anda.",
   "syncLast": "Kali terakhir disegerakkan {time}",
   "syncNow": "Segerakkan sekarang",
-  "syncFailed": "Penyegerakan gagal. Ia akan cuba lagi secara automatik."
+  "syncFailed": "Penyegerakan gagal. Ia akan cuba lagi secara automatik.",
+  "alertEmailTitle": "E-mel apabila amaran dicetuskan",
+  "alertEmailOn": "Kami menyemak amaran anda setiap beberapa minit dan menghantar e-mel kepada anda, walaupun aplikasi ditutup.",
+  "alertEmailSignIn": "Log masuk dengan e-mel anda dalam Tetapan untuk menerima amaran melalui e-mel, walaupun aplikasi ditutup."
 }

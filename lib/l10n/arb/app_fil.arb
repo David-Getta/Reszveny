@@ -475,5 +475,8 @@
   "syncInfo": "Naka-sync sa lahat ng iyong device ang portfolio, mga paborito, mga alerto sa presyo at mga tala.",
   "syncLast": "Huling na-sync {time}",
   "syncNow": "I-sync ngayon",
-  "syncFailed": "Hindi na-sync. Awtomatiko itong susubukang muli."
+  "syncFailed": "Hindi na-sync. Awtomatiko itong susubukang muli.",
+  "alertEmailTitle": "Mag-email kapag na-trigger ang isang alerto",
+  "alertEmailOn": "Sinusuri namin ang iyong mga alerto bawat ilang minuto at pinapadalhan ka ng email, kahit sarado ang app.",
+  "alertEmailSignIn": "Mag-sign in gamit ang iyong email sa Mga setting para makatanggap ng mga alerto sa email, kahit sarado ang app."
 }

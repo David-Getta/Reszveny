@@ -1757,4 +1757,15 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get syncFailed =>
       'Singkronisasi gagal. Bakal dicobian deui sacara otomatis.';
+
+  @override
+  String get alertEmailTitle => 'Email nalika béwara aktip';
+
+  @override
+  String get alertEmailOn =>
+      'Kami mariksa béwara anjeun unggal sababaraha menit sareng ngirim email ka anjeun, sanajan aplikasina ditutup.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup.';
 }

@@ -1704,4 +1704,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get syncFailed => '동기화하지 못했습니다. 자동으로 다시 시도합니다.';
+
+  @override
+  String get alertEmailTitle => '알림 발생 시 이메일 받기';
+
+  @override
+  String get alertEmailOn => '몇 분마다 알림을 확인하고 앱이 닫혀 있어도 이메일로 알려 드립니다.';
+
+  @override
+  String get alertEmailSignIn => '앱이 닫혀 있어도 이메일로 알림을 받으려면 설정에서 이메일로 로그인하세요.';
 }

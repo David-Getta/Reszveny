@@ -1757,4 +1757,15 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ҳамоҳангсозӣ иҷро нашуд. Ба таври худкор дубора кӯшиш карда мешавад.';
+
+  @override
+  String get alertEmailTitle => 'Почтаи электронӣ ҳангоми иҷро шудани огоҳӣ';
+
+  @override
+  String get alertEmailOn =>
+      'Мо огоҳиҳои шуморо ҳар чанд дақиқа месанҷем ва ба шумо мактуби электронӣ мефиристем, ҳатто вақте ки барнома баста аст.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Барои гирифтани огоҳиҳо тавассути почтаи электронӣ, ҳатто вақте ки барнома баста аст, дар Танзимот бо почтаи электронии худ ворид шавед.';
 }

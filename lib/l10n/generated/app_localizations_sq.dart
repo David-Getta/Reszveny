@@ -1762,4 +1762,15 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinkronizimi dështoi. Do të provohet përsëri automatikisht.';
+
+  @override
+  String get alertEmailTitle => 'Email kur aktivizohet një alarm';
+
+  @override
+  String get alertEmailOn =>
+      'I kontrollojmë alarmet tuaja çdo disa minuta dhe ju dërgojmë email, edhe kur aplikacioni është i mbyllur.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Hyni me email-in tuaj te Cilësimet për të marrë alarmet me email, edhe kur aplikacioni është i mbyllur.';
 }

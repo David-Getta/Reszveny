@@ -475,5 +475,8 @@
   "syncInfo": "Portfolio, Favoriten, Kursalarme und Notizen werden auf all deinen Geräten synchronisiert.",
   "syncLast": "Zuletzt synchronisiert: {time}",
   "syncNow": "Jetzt synchronisieren",
-  "syncFailed": "Synchronisierung fehlgeschlagen. Es wird automatisch erneut versucht."
+  "syncFailed": "Synchronisierung fehlgeschlagen. Es wird automatisch erneut versucht.",
+  "alertEmailTitle": "E-Mail bei ausgelöstem Alarm",
+  "alertEmailOn": "Wir prüfen deine Alarme alle paar Minuten und schicken dir eine E-Mail – auch wenn die App geschlossen ist.",
+  "alertEmailSignIn": "Melde dich in den Einstellungen mit deiner E-Mail an, um Alarme per E-Mail zu erhalten – auch wenn die App geschlossen ist."
 }

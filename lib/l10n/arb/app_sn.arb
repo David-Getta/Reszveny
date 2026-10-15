@@ -475,5 +475,8 @@
   "syncInfo": "Potiforiyo, zvaunofarira, zviziviso zvemutengo nezvinyorwa zvinowiriraniswa pamidziyo yako yese.",
   "syncLast": "Kuwiriranisa kwekupedzisira: {time}",
   "syncNow": "Wiriranisa izvozvi",
-  "syncFailed": "Kuwiriranisa kwatadza. Kuchaedza zvakare kwega."
+  "syncFailed": "Kuwiriranisa kwatadza. Kuchaedza zvakare kwega.",
+  "alertEmailTitle": "Email kana chiziviso chaitika",
+  "alertEmailOn": "Tinotarisa zviziviso zvako maminiti mashoma ega ega uye tinokutumira email, kunyange app yakavharwa.",
+  "alertEmailSignIn": "Pinda neemail yako muMarongero kuti uwane zviziviso neemail, kunyange app yakavharwa."
 }

@@ -475,5 +475,8 @@
   "syncInfo": "Portofolio, paporit, béwara harga, jeung catetan disingkronkeun di sadaya parangkat anjeun.",
   "syncLast": "Panungtungan disingkronkeun {time}",
   "syncNow": "Singkronkeun ayeuna",
-  "syncFailed": "Singkronisasi gagal. Bakal dicobian deui sacara otomatis."
+  "syncFailed": "Singkronisasi gagal. Bakal dicobian deui sacara otomatis.",
+  "alertEmailTitle": "Email nalika béwara aktip",
+  "alertEmailOn": "Kami mariksa béwara anjeun unggal sababaraha menit sareng ngirim email ka anjeun, sanajan aplikasina ditutup.",
+  "alertEmailSignIn": "Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup."
 }

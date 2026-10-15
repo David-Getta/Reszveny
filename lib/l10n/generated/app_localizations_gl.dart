@@ -1778,4 +1778,15 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get syncFailed =>
       'Non se puido sincronizar. Volverase tentar automaticamente.';
+
+  @override
+  String get alertEmailTitle => 'Correo cando salte unha alerta';
+
+  @override
+  String get alertEmailOn =>
+      'Revisamos as túas alertas cada poucos minutos e envíamosche un correo, mesmo coa aplicación pechada.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Inicia sesión co teu correo en Configuración para recibir as alertas por correo, mesmo coa aplicación pechada.';
 }

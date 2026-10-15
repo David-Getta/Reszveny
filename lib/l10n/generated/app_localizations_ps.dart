@@ -1749,4 +1749,15 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get syncFailed => 'همغږي ناکامه شوه. په اتومات ډول به بیا هڅه وشي.';
+
+  @override
+  String get alertEmailTitle => 'د خبرتیا د فعالېدو پر مهال برېښنالیک';
+
+  @override
+  String get alertEmailOn =>
+      'موږ هرو څو دقیقو کې ستاسو خبرتیاوې ګورو او تاسو ته برېښنالیک درلېږو، حتی کله چې اپ تړل شوی وي.';
+
+  @override
+  String get alertEmailSignIn =>
+      'د دې لپاره چې خبرتیاوې په برېښنالیک ترلاسه کړئ، حتی کله چې اپ تړل شوی وي، په تنظیماتو کې په خپل برېښنالیک ننوځئ.';
 }

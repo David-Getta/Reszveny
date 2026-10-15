@@ -475,5 +475,8 @@
   "syncInfo": "Ishoramari, ivyo ukunda, imenyesha ry'ibiciro n'ivyo wanditse bihuzwa ku bikoresho vyawe vyose.",
   "syncLast": "Ihuza rya nyuma: {time}",
   "syncNow": "Huza ubu",
-  "syncFailed": "Guhuza vyanse. Bizosubira kugerageza vyonyene."
+  "syncFailed": "Guhuza vyanse. Bizosubira kugerageza vyonyene.",
+  "alertEmailTitle": "Imeyili igihe imenyesha ryashitse",
+  "alertEmailOn": "Turasuzuma imenyesha ryawe buri minota mikeyi tukakurungikira imeyili, n'igihe porogarama yugaye.",
+  "alertEmailSignIn": "Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n'igihe porogarama yugaye."
 }

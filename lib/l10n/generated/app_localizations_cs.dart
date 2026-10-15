@@ -1806,4 +1806,15 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronizace se nezdařila. Automaticky se zkusí znovu.';
+
+  @override
+  String get alertEmailTitle => 'E-mail při spuštění upozornění';
+
+  @override
+  String get alertEmailOn =>
+      'Vaše upozornění kontrolujeme každých pár minut a pošleme vám e-mail, i když je aplikace zavřená.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Přihlaste se e-mailem v Nastavení a upozornění vám budeme posílat e-mailem, i když je aplikace zavřená.';
 }

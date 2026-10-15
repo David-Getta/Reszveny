@@ -1794,4 +1794,15 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz.';
+
+  @override
+  String get alertEmailTitle => 'E-pasts, kad nostrādā brīdinājums';
+
+  @override
+  String get alertEmailOn =>
+      'Ik pēc dažām minūtēm pārbaudām jūsu brīdinājumus un nosūtām jums e-pastu, pat ja lietotne ir aizvērta.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Pierakstieties ar savu e-pastu Iestatījumos, lai saņemtu brīdinājumus e-pastā, pat ja lietotne ir aizvērta.';
 }

@@ -1809,4 +1809,15 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get syncFailed =>
       'Не ўдалося сінхранізаваць. Спроба паўторыцца аўтаматычна.';
+
+  @override
+  String get alertEmailTitle => 'Электронны ліст пры спрацоўванні апавяшчэння';
+
+  @override
+  String get alertEmailOn =>
+      'Мы правяраем вашы апавяшчэнні кожныя некалькі хвілін і дасылаем вам ліст, нават калі праграма закрыта.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Увайдзіце праз электронную пошту ў Наладах, каб атрымліваць апавяшчэнні па электроннай пошце, нават калі праграма закрыта.';
 }

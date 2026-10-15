@@ -1756,4 +1756,15 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get syncFailed =>
       'ছিংক বিফল হ\'ল। ই স্বয়ংক্ৰিয়ভাৱে পুনৰ চেষ্টা কৰিব।';
+
+  @override
+  String get alertEmailTitle => 'সতৰ্কবাণী সক্ৰিয় হ\'লে ই-মেইল';
+
+  @override
+  String get alertEmailOn =>
+      'আমি প্ৰতি কেইমিনিটমানৰ মূৰে মূৰে আপোনাৰ সতৰ্কবাণী পৰীক্ষা কৰোঁ আৰু এপ বন্ধ থাকিলেও আপোনালৈ ই-মেইল পঠিয়াওঁ।';
+
+  @override
+  String get alertEmailSignIn =>
+      'এপ বন্ধ থাকিলেও ই-মেইলত সতৰ্কবাণী পাবলৈ ছেটিংছত আপোনাৰ ই-মেইলেৰে ছাইন ইন কৰক।';
 }

@@ -1751,4 +1751,15 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinkronisasi gagal. Akan dicoba lagi secara otomatis.';
+
+  @override
+  String get alertEmailTitle => 'Email saat peringatan terpicu';
+
+  @override
+  String get alertEmailOn =>
+      'Kami memeriksa peringatan Anda setiap beberapa menit dan mengirimi Anda email, bahkan saat aplikasi ditutup.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Masuk dengan email Anda di Pengaturan untuk menerima peringatan lewat email, bahkan saat aplikasi ditutup.';
 }

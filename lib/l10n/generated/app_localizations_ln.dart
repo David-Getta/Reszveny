@@ -1764,4 +1764,15 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronisation ekoki te. Ekomeka lisusu yango moko.';
+
+  @override
+  String get alertEmailTitle => 'E-mail ntango likebisi esali';
+
+  @override
+  String get alertEmailOn =>
+      'Totalaka makebisi na yo nsima ya miniti moke nyɔnsɔ mpe totindelaka yo e-mail, ata soki application ekangami.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kɔta na e-mail na yo na Ba-paramètre mpo na kozwa makebisi na e-mail, ata soki application ekangami.';
 }

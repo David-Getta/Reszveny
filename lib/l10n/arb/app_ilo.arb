@@ -475,5 +475,8 @@
   "syncInfo": "Ti portfolio, dagiti paborito, dagiti alerto ti presio ken dagiti nota ket mai-sync iti amin a devicem.",
   "syncLast": "Naudi a na-sync {time}",
   "syncNow": "I-sync itan",
-  "syncFailed": "Saan a nagballigi ti pag-sync. Automatiko a padasenna manen."
+  "syncFailed": "Saan a nagballigi ti pag-sync. Automatiko a padasenna manen.",
+  "alertEmailTitle": "E-mail no agtrigger ti alerto",
+  "alertEmailOn": "Kitaenmi dagiti alertom iti tunggal sumagmamano a minuto ken ipatulodandaka iti e-mail, uray no nakarikep ti app.",
+  "alertEmailSignIn": "Ag-sign in babaen ti e-mailmo iti Dagiti Setting tapno makaawat iti alerto babaen ti e-mail, uray no nakarikep ti app."
 }

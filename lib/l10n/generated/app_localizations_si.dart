@@ -1755,4 +1755,15 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get syncFailed =>
       'සමමුහුර්ත කිරීම අසාර්ථක විය. එය ස්වයංක්‍රීයව නැවත උත්සාහ කරනු ඇත.';
+
+  @override
+  String get alertEmailTitle => 'ඇඟවීමක් ක්‍රියාත්මක වූ විට ඊමේල්';
+
+  @override
+  String get alertEmailOn =>
+      'අපි මිනිත්තු කිහිපයකට වරක් ඔබේ ඇඟවීම් පරීක්ෂා කර, යෙදුම වසා ඇති විට පවා ඔබට ඊමේල් කරන්නෙමු.';
+
+  @override
+  String get alertEmailSignIn =>
+      'යෙදුම වසා ඇති විට පවා ඊමේල් මගින් ඇඟවීම් ලබා ගැනීමට සැකසීම් තුළ ඔබේ ඊමේල් සමඟ පුරන්න.';
 }

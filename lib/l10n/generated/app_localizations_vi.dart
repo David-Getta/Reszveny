@@ -1750,4 +1750,15 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get syncFailed =>
       'Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại.';
+
+  @override
+  String get alertEmailTitle => 'Gửi email khi cảnh báo được kích hoạt';
+
+  @override
+  String get alertEmailOn =>
+      'Chúng tôi kiểm tra cảnh báo của bạn vài phút một lần và gửi email cho bạn, kể cả khi ứng dụng đã đóng.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Đăng nhập bằng email trong Cài đặt để nhận cảnh báo qua email, kể cả khi ứng dụng đã đóng.';
 }

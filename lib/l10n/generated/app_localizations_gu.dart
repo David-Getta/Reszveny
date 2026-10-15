@@ -1752,4 +1752,15 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get syncFailed => 'સિંક નિષ્ફળ થયું. તે આપમેળે ફરી પ્રયાસ કરશે.';
+
+  @override
+  String get alertEmailTitle => 'અલર્ટ ટ્રિગર થાય ત્યારે ઈ-મેઇલ';
+
+  @override
+  String get alertEmailOn =>
+      'અમે દર થોડી મિનિટે તમારા અલર્ટ તપાસીએ છીએ અને ઍપ બંધ હોય ત્યારે પણ તમને ઈ-મેઇલ મોકલીએ છીએ.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ઍપ બંધ હોય ત્યારે પણ ઈ-મેઇલ પર અલર્ટ મેળવવા સેટિંગમાં તમારા ઈ-મેઇલથી સાઇન ઇન કરો.';
 }

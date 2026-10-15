@@ -1683,6 +1683,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get syncFailed => '同步失败，将自动重试。';
+
+  @override
+  String get alertEmailTitle => '提醒触发时发送电子邮件';
+
+  @override
+  String get alertEmailOn => '我们每隔几分钟检查一次你的提醒，即使应用已关闭，也会给你发送电子邮件。';
+
+  @override
+  String get alertEmailSignIn => '在设置中用电子邮件登录，即使应用已关闭，也能通过电子邮件收到提醒。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3362,4 +3371,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get syncFailed => '同步失敗，系統會自動重試。';
+
+  @override
+  String get alertEmailTitle => '提示觸發時發送電郵';
+
+  @override
+  String get alertEmailOn => '我們每隔幾分鐘檢查一次你的提示，即使程式已關閉，也會以電郵通知你。';
+
+  @override
+  String get alertEmailSignIn => '在設定中以電郵登入，即使程式已關閉，也能以電郵收到提示。';
 }

@@ -1751,4 +1751,15 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get syncFailed => 'הסנכרון נכשל. ייעשה ניסיון חוזר באופן אוטומטי.';
+
+  @override
+  String get alertEmailTitle => 'אימייל כשהתראה מופעלת';
+
+  @override
+  String get alertEmailOn =>
+      'אנחנו בודקים את ההתראות שלך כל כמה דקות ושולחים לך אימייל, גם כשהאפליקציה סגורה.';
+
+  @override
+  String get alertEmailSignIn =>
+      'כדי לקבל התראות באימייל גם כשהאפליקציה סגורה, יש להיכנס עם כתובת האימייל שלך בהגדרות.';
 }

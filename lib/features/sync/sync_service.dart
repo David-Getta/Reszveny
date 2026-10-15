@@ -24,7 +24,11 @@ class SyncService extends ChangeNotifier {
     required this.alerts,
     required this.notes,
     this.pushDelay = const Duration(seconds: 3),
+    this.language,
   });
+
+  /// Az app nyelve (a szerver e-mailjeihez).
+  final String Function()? language;
 
   final BackendClient backend;
   final AccountController account;
@@ -110,6 +114,8 @@ class SyncService extends ChangeNotifier {
   /// A helyi adatok egy csomagban.
   Map<String, dynamic> snapshot() => {
     'v': 1,
+    'lang': ?language?.call(),
+    'email_alerts': preferences.emailAlerts,
     'favorites': preferences.favorites,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'alerts': [for (final a in alerts.alerts) a.toJson()],
@@ -140,13 +146,28 @@ class SyncService extends ChangeNotifier {
       if (l == null) continue;
       if (r == null || !r.updatedAt.isAfter(l.updatedAt)) mergedNotes[e.key] = e.value;
     }
+    // Riasztásnál a teljesült változat nyer (a szerver is megjelölhette), hogy
+    // egy már kiküldött riasztás ne éledjen újra.
+    final alertsMerged = <Map<String, dynamic>>[];
+    final alertIndex = <String, int>{};
+    for (final a in [...maps(local['alerts']), ...maps(remote['alerts'])]) {
+      final i = alertIndex['${a['id']}'];
+      if (i == null) {
+        alertIndex['${a['id']}'] = alertsMerged.length;
+        alertsMerged.add(a);
+      } else if (alertsMerged[i]['triggered_at'] == null && a['triggered_at'] != null) {
+        alertsMerged[i] = a;
+      }
+    }
     return {
       'v': 1,
+      'lang': ?(local['lang'] ?? remote['lang']),
+      'email_alerts': local['email_alerts'] ?? remote['email_alerts'] ?? true,
       'favorites': {
         for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
       }.toList(),
       'lots': byId(local['lots'], remote['lots']),
-      'alerts': byId(local['alerts'], remote['alerts']),
+      'alerts': alertsMerged,
       'notes': mergedNotes,
     };
   }
@@ -160,6 +181,7 @@ class SyncService extends ChangeNotifier {
           if (e is Map) e.cast<String, dynamic>(),
       ];
       await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
+      await preferences.setEmailAlerts(data['email_alerts'] != false);
       await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
       await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
       await notes.replaceAll({

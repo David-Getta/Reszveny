@@ -1753,4 +1753,15 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synkroniseringen mislykkedes. Der prøves automatisk igen.';
+
+  @override
+  String get alertEmailTitle => 'E-mail når en alarm udløses';
+
+  @override
+  String get alertEmailOn =>
+      'Vi tjekker dine alarmer med få minutters mellemrum og sender dig en e-mail, også når appen er lukket.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Log ind med din e-mail under Indstillinger for at få alarmer på e-mail, også når appen er lukket.';
 }

@@ -475,5 +475,8 @@
   "syncInfo": "Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.",
   "syncLast": "Senast synkroniserad {time}",
   "syncNow": "Synkronisera nu",
-  "syncFailed": "Synkroniseringen misslyckades. Ett nytt försök görs automatiskt."
+  "syncFailed": "Synkroniseringen misslyckades. Ett nytt försök görs automatiskt.",
+  "alertEmailTitle": "E-post när ett larm utlöses",
+  "alertEmailOn": "Vi kontrollerar dina larm med några minuters mellanrum och skickar e-post till dig, även när appen är stängd.",
+  "alertEmailSignIn": "Logga in med din e-postadress under Inställningar för att få larm via e-post, även när appen är stängd."
 }

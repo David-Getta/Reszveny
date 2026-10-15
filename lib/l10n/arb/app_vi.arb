@@ -475,5 +475,8 @@
   "syncInfo": "Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.",
   "syncLast": "Đồng bộ hóa lần cuối {time}",
   "syncNow": "Đồng bộ hóa ngay",
-  "syncFailed": "Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại."
+  "syncFailed": "Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại.",
+  "alertEmailTitle": "Gửi email khi cảnh báo được kích hoạt",
+  "alertEmailOn": "Chúng tôi kiểm tra cảnh báo của bạn vài phút một lần và gửi email cho bạn, kể cả khi ứng dụng đã đóng.",
+  "alertEmailSignIn": "Đăng nhập bằng email trong Cài đặt để nhận cảnh báo qua email, kể cả khi ứng dụng đã đóng."
 }

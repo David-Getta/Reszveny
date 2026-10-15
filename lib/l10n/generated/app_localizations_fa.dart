@@ -1754,4 +1754,15 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get syncFailed =>
       'همگام‌سازی ناموفق بود. به‌طور خودکار دوباره تلاش می‌شود.';
+
+  @override
+  String get alertEmailTitle => 'ایمیل هنگام فعال شدن هشدار';
+
+  @override
+  String get alertEmailOn =>
+      'هشدارهای شما را هر چند دقیقه بررسی می‌کنیم و برایتان ایمیل می‌فرستیم، حتی وقتی برنامه بسته است.';
+
+  @override
+  String get alertEmailSignIn =>
+      'برای دریافت هشدارها با ایمیل، حتی وقتی برنامه بسته است، در تنظیمات با ایمیل خود وارد شوید.';
 }

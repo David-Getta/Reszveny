@@ -1792,4 +1792,15 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinhronizacija nije uspjela. Automatski će se pokušati ponovo.';
+
+  @override
+  String get alertEmailTitle => 'E-mail kada se obavještenje aktivira';
+
+  @override
+  String get alertEmailOn =>
+      'Provjeravamo vaša obavještenja svakih nekoliko minuta i šaljemo vam e-mail, čak i kada je aplikacija zatvorena.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Prijavite se e-mailom u Postavkama da dobijate obavještenja e-mailom, čak i kada je aplikacija zatvorena.';
 }

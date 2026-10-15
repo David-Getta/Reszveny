@@ -1701,4 +1701,14 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get syncFailed => '同期できませんでした。自動的に再試行します。';
+
+  @override
+  String get alertEmailTitle => 'アラート発動時にメールで通知';
+
+  @override
+  String get alertEmailOn => '数分ごとにアラートを確認し、アプリを閉じていてもメールでお知らせします。';
+
+  @override
+  String get alertEmailSignIn =>
+      'アプリを閉じていてもアラートをメールで受け取るには、設定からメールアドレスでサインインしてください。';
 }

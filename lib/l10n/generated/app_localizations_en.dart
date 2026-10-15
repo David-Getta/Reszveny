@@ -1754,4 +1754,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync failed. It will try again automatically.';
+
+  @override
+  String get alertEmailTitle => 'E-mail when an alert triggers';
+
+  @override
+  String get alertEmailOn =>
+      'We check your alerts every few minutes and e-mail you, even when the app is closed.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed.';
 }

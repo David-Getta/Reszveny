@@ -1757,4 +1757,15 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get syncFailed =>
       'სინქრონიზაცია ვერ მოხერხდა. ხელახლა ცდა ავტომატურად მოხდება.';
+
+  @override
+  String get alertEmailTitle => 'ელფოსტა, როცა შეტყობინება ამოქმედდება';
+
+  @override
+  String get alertEmailOn =>
+      'ყოველ რამდენიმე წუთში ვამოწმებთ თქვენს შეტყობინებებს და ელფოსტით გატყობინებთ, მაშინაც კი, როცა აპი დახურულია.';
+
+  @override
+  String get alertEmailSignIn =>
+      'შედით ელფოსტით პარამეტრებში, რომ შეტყობინებები ელფოსტით მიიღოთ, მაშინაც კი, როცა აპი დახურულია.';
 }

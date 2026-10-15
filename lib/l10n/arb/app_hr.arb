@@ -475,5 +475,8 @@
   "syncInfo": "Portfelj, favoriti, obavijesti o cijeni i bilješke sinkroniziraju se na svim vašim uređajima.",
   "syncLast": "Posljednja sinkronizacija: {time}",
   "syncNow": "Sinkroniziraj sada",
-  "syncFailed": "Sinkronizacija nije uspjela. Automatski će se pokušati ponovno."
+  "syncFailed": "Sinkronizacija nije uspjela. Automatski će se pokušati ponovno.",
+  "alertEmailTitle": "E-pošta kad se obavijest aktivira",
+  "alertEmailOn": "Vaše obavijesti provjeravamo svakih nekoliko minuta i šaljemo vam e-poštu, čak i kad je aplikacija zatvorena.",
+  "alertEmailSignIn": "Prijavite se e-poštom u Postavkama da biste obavijesti primali e-poštom, čak i kad je aplikacija zatvorena."
 }

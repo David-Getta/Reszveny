@@ -475,5 +475,8 @@
   "syncInfo": "Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.",
   "syncLast": "Amtawi aneggaru: {time}",
   "syncNow": "Mtawi tura",
-  "syncFailed": "Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman."
+  "syncFailed": "Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman.",
+  "alertEmailTitle": "Imayl mi ara yekker yiwen walɣu",
+  "alertEmailOn": "Nesenqad ilɣa-k yal kra n tesdatin, ad ak-d-nazen imayl, ula ma yella usnas yemdel.",
+  "alertEmailSignIn": "Kcem s imayl-ik deg Iɣewwaṛen akken ad d-teṭṭfeḍ ilɣa s imayl, ula ma yella usnas yemdel."
 }

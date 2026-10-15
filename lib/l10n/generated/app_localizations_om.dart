@@ -1762,4 +1762,15 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get syncFailed =>
       'Walsimsiisuun hin milkoofne. Ofumaan irra deebi\'ee yaala.';
+
+  @override
+  String get alertEmailTitle => 'Imeelii yeroo akeekkachiisni ka\'u';
+
+  @override
+  String get alertEmailOn =>
+      'Akeekkachiisa kee daqiiqaa muraasa hunda ni ilaalla, appiin cufaa ta\'ee illee imeeliin siif ergina.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Appiin cufaa ta\'ee illee akeekkachiisa imeeliin argachuuf, Qindaa\'ina keessatti imeelii keetiin seeni.';
 }

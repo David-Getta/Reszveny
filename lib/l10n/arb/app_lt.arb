@@ -475,5 +475,8 @@
   "syncInfo": "Portfelis, mėgstamiausi, kainos įspėjimai ir užrašai sinchronizuojami visuose jūsų įrenginiuose.",
   "syncLast": "Paskutinį kartą sinchronizuota {time}",
   "syncNow": "Sinchronizuoti dabar",
-  "syncFailed": "Sinchronizuoti nepavyko. Bus automatiškai bandoma dar kartą."
+  "syncFailed": "Sinchronizuoti nepavyko. Bus automatiškai bandoma dar kartą.",
+  "alertEmailTitle": "El. laiškas, kai suveikia įspėjimas",
+  "alertEmailOn": "Kas kelias minutes tikriname jūsų įspėjimus ir siunčiame el. laišką, net kai programa uždaryta.",
+  "alertEmailSignIn": "Prisijunkite el. paštu Nustatymuose, kad gautumėte įspėjimus el. paštu, net kai programa uždaryta."
 }

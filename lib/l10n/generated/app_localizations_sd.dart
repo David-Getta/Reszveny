@@ -1749,4 +1749,15 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get syncFailed => 'سنڪ ناڪام ٿيو. اهو پاڻمرادو ٻيهر ڪوشش ڪندو.';
+
+  @override
+  String get alertEmailTitle => 'الرٽ لاڳو ٿيڻ تي اي ميل';
+
+  @override
+  String get alertEmailOn =>
+      'اسين هر ڪجهه منٽن ۾ توهان جا الرٽ چيڪ ڪريون ٿا ۽ ايپ بند هجڻ جي باوجود توهان کي اي ميل موڪليون ٿا.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ايپ بند هجڻ جي باوجود اي ميل ذريعي الرٽ حاصل ڪرڻ لاءِ سيٽنگن ۾ پنهنجي اي ميل سان سائن ان ڪريو.';
 }

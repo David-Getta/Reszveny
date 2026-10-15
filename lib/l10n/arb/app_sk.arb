@@ -475,5 +475,8 @@
   "syncInfo": "Portfólio, obľúbené, cenové upozornenia a poznámky sa synchronizujú na všetkých vašich zariadeniach.",
   "syncLast": "Posledná synchronizácia: {time}",
   "syncNow": "Synchronizovať teraz",
-  "syncFailed": "Synchronizácia zlyhala. Automaticky sa skúsi znova."
+  "syncFailed": "Synchronizácia zlyhala. Automaticky sa skúsi znova.",
+  "alertEmailTitle": "E-mail pri spustení upozornenia",
+  "alertEmailOn": "Vaše upozornenia kontrolujeme každých pár minút a pošleme vám e-mail, aj keď je aplikácia zatvorená.",
+  "alertEmailSignIn": "Prihláste sa e-mailom v Nastaveniach a upozornenia vám budeme posielať e-mailom, aj keď je aplikácia zatvorená."
 }

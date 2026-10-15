@@ -475,5 +475,8 @@
   "syncInfo": "Iphothifoliyo, izintandokazi, izexwayiso zentengo namanothi kuvumelaniswa kuwo wonke amadivayisi akho.",
   "syncLast": "Ukuvumelanisa kokugcina: {time}",
   "syncNow": "Vumelanisa manje",
-  "syncFailed": "Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo."
+  "syncFailed": "Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo.",
+  "alertEmailTitle": "I-imeyili uma isexwayiso senzeka",
+  "alertEmailOn": "Sihlola izexwayiso zakho njalo emizuzwini embalwa futhi sikuthumelele i-imeyili, ngisho noma i-app ivaliwe.",
+  "alertEmailSignIn": "Ngena ngemvume nge-imeyili yakho kuZilungiselelo ukuze uthole izexwayiso nge-imeyili, ngisho noma i-app ivaliwe."
 }

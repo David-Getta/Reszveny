@@ -475,5 +475,8 @@
   "syncInfo": "Portofolio, favorit, pèngetan rega, lan cathetan disinkronaké ing kabèh piranti sampeyan.",
   "syncLast": "Pungkasan disinkronaké {time}",
   "syncNow": "Sinkronaké saiki",
-  "syncFailed": "Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis."
+  "syncFailed": "Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis.",
+  "alertEmailTitle": "Email nalika pèngetan aktif",
+  "alertEmailOn": "Kita mriksa pèngetan sampeyan saben sawetara menit lan ngirim email marang sampeyan, sanajan aplikasi ditutup.",
+  "alertEmailSignIn": "Mlebu nganggo email sampeyan ing Setelan supaya nampa pèngetan liwat email, sanajan aplikasi ditutup."
 }

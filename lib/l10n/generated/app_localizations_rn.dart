@@ -1761,4 +1761,15 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get syncFailed => 'Guhuza vyanse. Bizosubira kugerageza vyonyene.';
+
+  @override
+  String get alertEmailTitle => 'Imeyili igihe imenyesha ryashitse';
+
+  @override
+  String get alertEmailOn =>
+      'Turasuzuma imenyesha ryawe buri minota mikeyi tukakurungikira imeyili, n\'igihe porogarama yugaye.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n\'igihe porogarama yugaye.';
 }

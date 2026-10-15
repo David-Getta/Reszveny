@@ -475,5 +475,8 @@
   "syncInfo": "投资组合、收藏、价格提醒和笔记会在你的所有设备间同步。",
   "syncLast": "上次同步：{time}",
   "syncNow": "立即同步",
-  "syncFailed": "同步失败，将自动重试。"
+  "syncFailed": "同步失败，将自动重试。",
+  "alertEmailTitle": "提醒触发时发送电子邮件",
+  "alertEmailOn": "我们每隔几分钟检查一次你的提醒，即使应用已关闭，也会给你发送电子邮件。",
+  "alertEmailSignIn": "在设置中用电子邮件登录，即使应用已关闭，也能通过电子邮件收到提醒。"
 }

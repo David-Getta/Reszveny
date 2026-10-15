@@ -1761,4 +1761,15 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get syncFailed => 'Hindi na-sync. Awtomatiko itong susubukang muli.';
+
+  @override
+  String get alertEmailTitle => 'Mag-email kapag na-trigger ang isang alerto';
+
+  @override
+  String get alertEmailOn =>
+      'Sinusuri namin ang iyong mga alerto bawat ilang minuto at pinapadalhan ka ng email, kahit sarado ang app.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Mag-sign in gamit ang iyong email sa Mga setting para makatanggap ng mga alerto sa email, kahit sarado ang app.';
 }

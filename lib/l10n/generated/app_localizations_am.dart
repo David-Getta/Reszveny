@@ -1728,4 +1728,15 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get syncFailed => 'ማስመር አልተሳካም። በራስ-ሰር እንደገና ይሞከራል።';
+
+  @override
+  String get alertEmailTitle => 'ማንቂያ ሲቀሰቀስ በኢሜይል አሳውቀኝ';
+
+  @override
+  String get alertEmailOn =>
+      'ማንቂያዎችዎን በየጥቂት ደቂቃው እንፈትሻለን፤ መተግበሪያው ዝግ ቢሆንም በኢሜይል እናሳውቅዎታለን።';
+
+  @override
+  String get alertEmailSignIn =>
+      'መተግበሪያው ዝግ ቢሆንም ማንቂያዎችን በኢሜይል ለማግኘት በቅንብሮች ውስጥ በኢሜይልዎ ይግቡ።';
 }

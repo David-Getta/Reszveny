@@ -1763,4 +1763,15 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get syncFailed =>
       'Չհաջողվեց համաժամացնել։ Կրկին փորձ կարվի ավտոմատ կերպով։';
+
+  @override
+  String get alertEmailTitle => 'Էլ. նամակ, երբ ծանուցումը գործարկվում է';
+
+  @override
+  String get alertEmailOn =>
+      'Մենք մի քանի րոպեն մեկ ստուգում ենք ձեր ծանուցումները և էլ. նամակ ենք ուղարկում, նույնիսկ երբ հավելվածը փակ է։';
+
+  @override
+  String get alertEmailSignIn =>
+      'Մուտք գործեք ձեր էլ. փոստով Կարգավորումներում՝ ծանուցումները էլ. փոստով ստանալու համար, նույնիսկ երբ հավելվածը փակ է։';
 }

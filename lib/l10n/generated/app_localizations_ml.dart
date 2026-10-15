@@ -1762,4 +1762,15 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get syncFailed =>
       'സമന്വയിപ്പിക്കൽ പരാജയപ്പെട്ടു. ഇത് സ്വയമേവ വീണ്ടും ശ്രമിക്കും.';
+
+  @override
+  String get alertEmailTitle => 'അലേർട്ട് ട്രിഗർ ആകുമ്പോൾ ഇമെയിൽ';
+
+  @override
+  String get alertEmailOn =>
+      'ഏതാനും മിനിറ്റുകൾ കൂടുമ്പോൾ ഞങ്ങൾ നിങ്ങളുടെ അലേർട്ടുകൾ പരിശോധിക്കുകയും ആപ്പ് അടച്ചിരിക്കുമ്പോഴും നിങ്ങൾക്ക് ഇമെയിൽ അയയ്ക്കുകയും ചെയ്യും.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ആപ്പ് അടച്ചിരിക്കുമ്പോഴും ഇമെയിൽ വഴി അലേർട്ടുകൾ ലഭിക്കാൻ ക്രമീകരണത്തിൽ നിങ്ങളുടെ ഇമെയിൽ ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക.';
 }

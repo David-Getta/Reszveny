@@ -1731,4 +1731,15 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get syncFailed => 'ซิงค์ไม่สำเร็จ ระบบจะลองอีกครั้งโดยอัตโนมัติ';
+
+  @override
+  String get alertEmailTitle => 'อีเมลเมื่อการแจ้งเตือนทำงาน';
+
+  @override
+  String get alertEmailOn =>
+      'เราตรวจสอบการแจ้งเตือนของคุณทุก ๆ ไม่กี่นาทีและส่งอีเมลถึงคุณ แม้แอปจะปิดอยู่';
+
+  @override
+  String get alertEmailSignIn =>
+      'ลงชื่อเข้าใช้ด้วยอีเมลของคุณในการตั้งค่าเพื่อรับการแจ้งเตือนทางอีเมล แม้แอปจะปิดอยู่';
 }

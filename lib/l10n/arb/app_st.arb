@@ -475,5 +475,8 @@
   "syncInfo": "Potefolio, tseo o di ratang, ditsebiso tsa theko le dintlha di a sinkronaeswa disebedisweng tsohle tsa hao.",
   "syncLast": "Ho sinkronaesa ha ho qetela: {time}",
   "syncNow": "Sinkronaesa hona joale",
-  "syncFailed": "Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso."
+  "syncFailed": "Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso.",
+  "alertEmailTitle": "Imeile ha tsebiso e qala",
+  "alertEmailOn": "Re hlahloba ditsebiso tsa hao metsotso e meng le e meng e mmalwa mme re o romella imeile, leha app e kwetswe.",
+  "alertEmailSignIn": "Kena ka imeile ya hao ho Ditlhophiso hore o fumane ditsebiso ka imeile, leha app e kwetswe."
 }

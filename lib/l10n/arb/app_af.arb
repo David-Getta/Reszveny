@@ -475,5 +475,8 @@
   "syncInfo": "Portefeulje, gunstelinge, pryswaarskuwings en notas word op al jou toestelle gesinkroniseer.",
   "syncLast": "Laas gesinkroniseer {time}",
   "syncNow": "Sinkroniseer nou",
-  "syncFailed": "Sinkronisering het misluk. Dit sal outomaties weer probeer."
+  "syncFailed": "Sinkronisering het misluk. Dit sal outomaties weer probeer.",
+  "alertEmailTitle": "E-pos wanneer ’n waarskuwing afgaan",
+  "alertEmailOn": "Ons gaan jou waarskuwings elke paar minute na en stuur vir jou ’n e-pos, selfs wanneer die app toe is.",
+  "alertEmailSignIn": "Meld in Instellings met jou e-posadres aan om waarskuwings per e-pos te kry, selfs wanneer die app toe is."
 }

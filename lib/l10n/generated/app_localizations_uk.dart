@@ -1809,4 +1809,15 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get syncFailed =>
       'Не вдалося синхронізувати. Повторна спроба відбудеться автоматично.';
+
+  @override
+  String get alertEmailTitle => 'Лист при спрацюванні сповіщення';
+
+  @override
+  String get alertEmailOn =>
+      'Ми перевіряємо ваші сповіщення кожні кілька хвилин і надсилаємо вам лист, навіть коли застосунок закрито.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Увійдіть з електронною поштою в Налаштуваннях, щоб отримувати сповіщення на пошту, навіть коли застосунок закрито.';
 }

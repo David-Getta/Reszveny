@@ -1754,4 +1754,15 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get syncFailed => 'Ìmúṣiṣẹ́pọ̀ kùnà. Yóò tún gbìyànjú fúnra rẹ̀.';
+
+  @override
+  String get alertEmailTitle => 'Ímeèlì nígbà tí ìkìlọ̀ bá ṣẹlẹ̀';
+
+  @override
+  String get alertEmailOn =>
+      'A máa ń ṣàyẹ̀wò ìkìlọ̀ rẹ ní ìṣẹ́jú díẹ̀ díẹ̀, a sì máa ń fi ímeèlì ránṣẹ́ sí ọ, kódà nígbà tí áàpù bá ti pa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Wọlé pẹ̀lú ímeèlì rẹ nínú Ètò láti máa gba ìkìlọ̀ nípasẹ̀ ímeèlì, kódà nígbà tí áàpù bá ti pa.';
 }

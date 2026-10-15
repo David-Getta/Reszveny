@@ -1762,4 +1762,15 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get syncFailed =>
       'Waafajintu way fashilantay. Si toos ah ayay dib isugu dayi doontaa.';
+
+  @override
+  String get alertEmailTitle => 'Iimayl marka digniin dhacdo';
+
+  @override
+  String get alertEmailOn =>
+      'Waxaan hubinnaa digniinahaaga dhowr daqiiqo kasta waxaana kuu soo dirnaa iimayl, xitaa marka app-ku xiran yahay.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ku gal iimaylkaaga Dejinta si aad digniinaha ugu hesho iimayl, xitaa marka app-ku xiran yahay.';
 }

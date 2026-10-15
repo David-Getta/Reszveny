@@ -1756,4 +1756,15 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get syncFailed => 'Синк хийж чадсангүй. Автоматаар дахин оролдоно.';
+
+  @override
+  String get alertEmailTitle => 'Сэрэмжлүүлэг идэвхжихэд имэйл';
+
+  @override
+  String get alertEmailOn =>
+      'Бид таны сэрэмжлүүлгийг хэдэн минут тутамд шалгаж, апп хаалттай байсан ч танд имэйл илгээнэ.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Апп хаалттай байсан ч сэрэмжлүүлгийг имэйлээр авахын тулд Тохиргоонд имэйлээрээ нэвтэрнэ үү.';
 }

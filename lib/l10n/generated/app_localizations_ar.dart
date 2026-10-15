@@ -1798,4 +1798,15 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get syncFailed => 'تعذّرت المزامنة. ستتم إعادة المحاولة تلقائيًا.';
+
+  @override
+  String get alertEmailTitle => 'بريد إلكتروني عند تحقق تنبيه';
+
+  @override
+  String get alertEmailOn =>
+      'نتحقق من تنبيهاتك كل بضع دقائق ونرسل إليك بريدًا إلكترونيًا، حتى عندما يكون التطبيق مغلقًا.';
+
+  @override
+  String get alertEmailSignIn =>
+      'سجّل الدخول ببريدك الإلكتروني في الإعدادات لتصلك التنبيهات بالبريد الإلكتروني، حتى عندما يكون التطبيق مغلقًا.';
 }

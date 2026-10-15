@@ -475,5 +475,8 @@
   "syncInfo": "La cartera, los favoritos, las alertas de precio y las notas se sincronizan en todos tus dispositivos.",
   "syncLast": "Última sincronización: {time}",
   "syncNow": "Sincronizar ahora",
-  "syncFailed": "No se pudo sincronizar. Se volverá a intentar automáticamente."
+  "syncFailed": "No se pudo sincronizar. Se volverá a intentar automáticamente.",
+  "alertEmailTitle": "Correo cuando salte una alerta",
+  "alertEmailOn": "Revisamos tus alertas cada pocos minutos y te enviamos un correo, incluso con la app cerrada.",
+  "alertEmailSignIn": "Inicia sesión con tu correo en Ajustes para recibir las alertas por correo, incluso con la app cerrada."
 }

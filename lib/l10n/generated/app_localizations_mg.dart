@@ -1768,4 +1768,15 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get syncFailed =>
       'Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy.';
+
+  @override
+  String get alertEmailTitle => 'Mailaka rehefa mipoitra ny fanairana';
+
+  @override
+  String get alertEmailOn =>
+      'Hamarininay isaky ny minitra vitsivitsy ny fanairanao ary handefasanay mailaka ianao, na dia mihidy aza ny fampiharana.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Midira amin\'ny mailakao ao amin\'ny Fikirakirana mba hahazoana fanairana amin\'ny mailaka, na dia mihidy aza ny fampiharana.';
 }

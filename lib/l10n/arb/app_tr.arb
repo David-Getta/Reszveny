@@ -475,5 +475,8 @@
   "syncInfo": "Portföy, favoriler, fiyat alarmları ve notlar tüm cihazlarınızda senkronize edilir.",
   "syncLast": "Son senkronizasyon: {time}",
   "syncNow": "Şimdi senkronize et",
-  "syncFailed": "Senkronizasyon başarısız oldu. Otomatik olarak yeniden denenecek."
+  "syncFailed": "Senkronizasyon başarısız oldu. Otomatik olarak yeniden denenecek.",
+  "alertEmailTitle": "Alarm tetiklendiğinde e-posta",
+  "alertEmailOn": "Alarmlarınızı birkaç dakikada bir kontrol eder ve uygulama kapalıyken bile size e-posta göndeririz.",
+  "alertEmailSignIn": "Uygulama kapalıyken bile alarmları e-postayla almak için Ayarlar’dan e-posta adresinizle giriş yapın."
 }

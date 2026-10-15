@@ -1765,4 +1765,15 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso.';
+
+  @override
+  String get alertEmailTitle => 'Imeile ha tsebiso e qala';
+
+  @override
+  String get alertEmailOn =>
+      'Re hlahloba ditsebiso tsa hao metsotso e meng le e meng e mmalwa mme re o romella imeile, leha app e kwetswe.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kena ka imeile ya hao ho Ditlhophiso hore o fumane ditsebiso ka imeile, leha app e kwetswe.';
 }

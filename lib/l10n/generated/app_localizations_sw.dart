@@ -1756,4 +1756,15 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get syncFailed =>
       'Imeshindwa kusawazisha. Itajaribu tena kiotomatiki.';
+
+  @override
+  String get alertEmailTitle => 'Barua pepe arifa ikitimia';
+
+  @override
+  String get alertEmailOn =>
+      'Tunakagua arifa zako kila baada ya dakika chache na kukutumia barua pepe, hata programu ikiwa imefungwa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ingia kwa barua pepe yako katika Mipangilio ili upate arifa kwa barua pepe, hata programu ikiwa imefungwa.';
 }

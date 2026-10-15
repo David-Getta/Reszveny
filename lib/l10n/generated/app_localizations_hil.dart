@@ -1767,4 +1767,15 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get syncFailed =>
       'Napaslawan ang pag-sync. Tilawan liwat ini sing awtomatiko.';
+
+  @override
+  String get alertEmailTitle => 'E-mail kon mag-trigger ang alerto';
+
+  @override
+  String get alertEmailOn =>
+      'Ginatan-aw namon ang imo mga alerto kada pila ka minuto kag ginapadal-an ka namon sang e-mail, bisan sirado ang app.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Mag-sign in gamit ang imo e-mail sa Mga setting para makabaton sang mga alerto paagi sa e-mail, bisan sirado ang app.';
 }

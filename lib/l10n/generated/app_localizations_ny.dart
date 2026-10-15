@@ -1761,4 +1761,15 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get syncFailed => 'Kulumikiza kwalephera. Kudzayesanso kokha.';
+
+  @override
+  String get alertEmailTitle => 'Imelo chidziwitso chikayambika';
+
+  @override
+  String get alertEmailOn =>
+      'Timafufuza zidziwitso zanu pakapita mphindi zingapo ndikukutumizirani imelo, ngakhale pulogalamu itatsekedwa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Lowani ndi imelo yanu mu Zokonda kuti mulandire zidziwitso pa imelo, ngakhale pulogalamu itatsekedwa.';
 }

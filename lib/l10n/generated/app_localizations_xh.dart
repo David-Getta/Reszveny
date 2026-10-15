@@ -1763,4 +1763,15 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ukungqamanisa kusilele. Kuza kuzama kwakhona ngokuzenzekelayo.';
+
+  @override
+  String get alertEmailTitle => 'I-imeyile xa isilumkiso sisebenza';
+
+  @override
+  String get alertEmailOn =>
+      'Sijonga izilumkiso zakho rhoqo emva kwemizuzu embalwa size sikuthumelele i-imeyile, nokuba i-app ivaliwe.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ngena nge-imeyile yakho kwiiSetingi ukuze ufumane izilumkiso nge-imeyile, nokuba i-app ivaliwe.';
 }

@@ -1754,4 +1754,15 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinhronlamak başartmady. Awtomatik usulda täzeden synanyşylar.';
+
+  @override
+  String get alertEmailTitle => 'Duýduryş işlände e-poçta';
+
+  @override
+  String get alertEmailOn =>
+      'Duýduryşlaryňyzy her birnäçe minutdan barlaýarys we programma ýapyk bolsa-da, size e-poçta iberýäris.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Programma ýapyk bolsa-da duýduryşlary e-poçta arkaly almak üçin Sazlamalarda e-poçtaňyz bilen giriň.';
 }

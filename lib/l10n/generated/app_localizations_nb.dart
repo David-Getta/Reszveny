@@ -1755,4 +1755,15 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synkroniseringen mislyktes. Det prøves automatisk på nytt.';
+
+  @override
+  String get alertEmailTitle => 'E-post når et varsel utløses';
+
+  @override
+  String get alertEmailOn =>
+      'Vi sjekker varslene dine med noen minutters mellomrom og sender deg en e-post, også når appen er lukket.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Logg inn med e-postadressen din under Innstillinger for å få varsler på e-post, også når appen er lukket.';
 }

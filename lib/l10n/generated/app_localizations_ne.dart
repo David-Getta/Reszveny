@@ -1756,4 +1756,15 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get syncFailed => 'सिंक असफल भयो। यो स्वतः फेरि प्रयास हुनेछ।';
+
+  @override
+  String get alertEmailTitle => 'अलर्ट ट्रिगर हुँदा इमेल';
+
+  @override
+  String get alertEmailOn =>
+      'हामी हरेक केही मिनेटमा तपाईंका अलर्ट जाँच्छौं र एप बन्द हुँदा पनि तपाईंलाई इमेल पठाउँछौं।';
+
+  @override
+  String get alertEmailSignIn =>
+      'एप बन्द हुँदा पनि इमेलमा अलर्ट पाउन सेटिङहरूमा आफ्नो इमेलबाट साइन इन गर्नुहोस्।';
 }

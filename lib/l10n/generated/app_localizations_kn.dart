@@ -1761,4 +1761,15 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get syncFailed =>
       'ಸಿಂಕ್ ವಿಫಲವಾಗಿದೆ. ಇದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತದೆ.';
+
+  @override
+  String get alertEmailTitle => 'ಅಲರ್ಟ್ ಟ್ರಿಗರ್ ಆದಾಗ ಇಮೇಲ್';
+
+  @override
+  String get alertEmailOn =>
+      'ನಾವು ಕೆಲವು ನಿಮಿಷಗಳಿಗೊಮ್ಮೆ ನಿಮ್ಮ ಅಲರ್ಟ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಆ್ಯಪ್ ಮುಚ್ಚಿದ್ದರೂ ನಿಮಗೆ ಇಮೇಲ್ ಕಳುಹಿಸುತ್ತೇವೆ.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ಆ್ಯಪ್ ಮುಚ್ಚಿದ್ದರೂ ಇಮೇಲ್ ಮೂಲಕ ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯಲು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ಇಮೇಲ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.';
 }

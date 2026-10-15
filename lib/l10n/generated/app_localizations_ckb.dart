@@ -1756,4 +1756,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get syncFailed =>
       'هاوکاتکردن سەرکەوتوو نەبوو. بە شێوەی خۆکار دووبارە هەوڵ دەدرێتەوە.';
+
+  @override
+  String get alertEmailTitle => 'ئیمەیڵ کاتێک ئاگادارکەرەوەیەک کارا دەبێت';
+
+  @override
+  String get alertEmailOn =>
+      'هەر چەند خولەکێک ئاگادارکەرەوەکانت دەپشکنین و ئیمەیڵت بۆ دەنێرین، تەنانەت کاتێک ئەپەکە داخراوە.';
+
+  @override
+  String get alertEmailSignIn =>
+      'لە ڕێکخستنەکان بە ئیمەیڵەکەت بچۆ ژوورەوە بۆ ئەوەی ئاگادارکەرەوەکان بە ئیمەیڵ وەربگریت، تەنانەت کاتێک ئەپەکە داخراوە.';
 }

@@ -1745,4 +1745,15 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get syncFailed =>
       'མཉམ་སྒྲིག་མ་ཐུབ། རང་འགུལ་གྱིས་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ངེས།';
+
+  @override
+  String get alertEmailTitle => 'ཉེན་བརྡ་འཁོར་སྐབས་གློག་འཕྲིན།';
+
+  @override
+  String get alertEmailOn =>
+      'ང་ཚོས་སྐར་མ་ཁ་ཤས་རེར་ཁྱེད་ཀྱི་ཉེན་བརྡ་ཞིབ་བཤེར་བྱས་ནས། ཉེར་སྤྱོད་ཁ་བརྒྱབ་ཡོད་ཀྱང་ཁྱེད་ལ་གློག་འཕྲིན་གཏོང་།';
+
+  @override
+  String get alertEmailSignIn =>
+      'ཉེར་སྤྱོད་ཁ་བརྒྱབ་ཡོད་ཀྱང་ཉེན་བརྡ་གློག་འཕྲིན་ཐོག་ཐོབ་པར་སྒྲིག་འགོད་ནང་ཁྱེད་ཀྱི་གློག་འཕྲིན་གྱིས་ནང་འཛུལ་གནང་།';
 }

@@ -1753,4 +1753,15 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get syncFailed =>
       'ସିଙ୍କ ବିଫଳ ହେଲା। ଏହା ସ୍ୱୟଂଚାଳିତ ଭାବେ ପୁଣି ଚେଷ୍ଟା କରିବ।';
+
+  @override
+  String get alertEmailTitle => 'ଆଲର୍ଟ ଟ୍ରିଗର ହେଲେ ଇମେଲ';
+
+  @override
+  String get alertEmailOn =>
+      'ଆମେ ପ୍ରତି କିଛି ମିନିଟରେ ଆପଣଙ୍କ ଆଲର୍ଟ ଯାଞ୍ଚ କରୁ ଏବଂ ଆପ ବନ୍ଦ ଥିଲେ ମଧ୍ୟ ଆପଣଙ୍କୁ ଇମେଲ ପଠାଉ।';
+
+  @override
+  String get alertEmailSignIn =>
+      'ଆପ ବନ୍ଦ ଥିଲେ ମଧ୍ୟ ଇମେଲରେ ଆଲର୍ଟ ପାଇବା ପାଇଁ ସେଟିଂସରେ ଆପଣଙ୍କ ଇମେଲ ସହ ସାଇନ ଇନ କରନ୍ତୁ।';
 }

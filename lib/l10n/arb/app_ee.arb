@@ -475,5 +475,8 @@
   "syncInfo": "Wò akpawo, lɔlɔ̃tɔwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo sɔ le wò mɔ̃wo katã dzi.",
   "syncLast": "Sync mamlɛtɔ: {time}",
   "syncNow": "Sync fifia",
-  "syncFailed": "Sync mete ŋu o. Agagbugbɔ adze agbagba le eɖokui si."
+  "syncFailed": "Sync mete ŋu o. Agagbugbɔ adze agbagba le eɖokui si.",
+  "alertEmailTitle": "E-mail ne nuxlɔ̃ame aɖe va eme",
+  "alertEmailOn": "Míekpɔa wò nuxlɔ̃amewo miniti ʋɛ aɖewo ɖesiaɖe eye míeɖoa e-mail wò, ne app la tu gɔ̃ hã.",
+  "alertEmailSignIn": "Ge ɖe eme kple wò e-mail le Ɖoɖowo me be nàxɔ nuxlɔ̃amewo to e-mail dzi, ne app la tu gɔ̃ hã."
 }

@@ -1739,4 +1739,15 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get syncFailed =>
       'ការធ្វើសមកាលកម្មបានបរាជ័យ។ វានឹងព្យាយាមម្តងទៀតដោយស្វ័យប្រវត្តិ។';
+
+  @override
+  String get alertEmailTitle => 'ផ្ញើអ៊ីមែល នៅពេលការជូនដំណឹងកើតឡើង';
+
+  @override
+  String get alertEmailOn =>
+      'យើងពិនិត្យការជូនដំណឹងរបស់អ្នករៀងរាល់ប៉ុន្មាននាទីម្ដង ហើយផ្ញើអ៊ីមែលទៅអ្នក ទោះបីកម្មវិធីបិទក៏ដោយ។';
+
+  @override
+  String get alertEmailSignIn =>
+      'ចូលគណនីដោយប្រើអ៊ីមែលរបស់អ្នកនៅក្នុងការកំណត់ ដើម្បីទទួលការជូនដំណឹងតាមអ៊ីមែល ទោះបីកម្មវិធីបិទក៏ដោយ។';
 }

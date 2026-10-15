@@ -1758,4 +1758,15 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get syncFailed =>
       'Hevdemkirin bi ser neket. Ew ê bi xweber dîsa biceribîne.';
+
+  @override
+  String get alertEmailTitle => 'E-name dema hişyariyek çêdibe';
+
+  @override
+  String get alertEmailOn =>
+      'Em her çend deqeyan hişyariyên te kontrol dikin û ji te re e-name dişînin, heta dema ku sepan girtî be jî.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Di Mîhengan de bi e-nameya xwe têkeve da ku hişyariyan bi e-nameyê bistînî, heta dema ku sepan girtî be jî.';
 }

@@ -475,5 +475,8 @@
   "syncInfo": "Ipotifoliyo, ezithandwayo, izilumkiso zamaxabiso namanqaku zingqamaniswa kuzo zonke izixhobo zakho.",
   "syncLast": "Ukungqamanisa kokugqibela: {time}",
   "syncNow": "Ngqamanisa ngoku",
-  "syncFailed": "Ukungqamanisa kusilele. Kuza kuzama kwakhona ngokuzenzekelayo."
+  "syncFailed": "Ukungqamanisa kusilele. Kuza kuzama kwakhona ngokuzenzekelayo.",
+  "alertEmailTitle": "I-imeyile xa isilumkiso sisebenza",
+  "alertEmailOn": "Sijonga izilumkiso zakho rhoqo emva kwemizuzu embalwa size sikuthumelele i-imeyile, nokuba i-app ivaliwe.",
+  "alertEmailSignIn": "Ngena nge-imeyile yakho kwiiSetingi ukuze ufumane izilumkiso nge-imeyile, nokuba i-app ivaliwe."
 }

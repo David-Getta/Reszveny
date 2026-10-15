@@ -1750,4 +1750,15 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync roŋkii. Ɗum fuɗɗittoto kam e hoore mum.';
+
+  @override
+  String get alertEmailTitle => 'E-mail so tintinol huɓɓii';
+
+  @override
+  String get alertEmailOn =>
+      'Min ƴeewtata tintine maa hojomaaji seeɗa kala, min neldoo ma e-mail, hay so jaaɓnirgal ngal uddaama.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Seŋo e e-mail maa nder Teelte ngam heɓde tintine e e-mail, hay so jaaɓnirgal ngal uddaama.';
 }

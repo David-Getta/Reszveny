@@ -1755,4 +1755,15 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync no work. E go try again by imsef.';
+
+  @override
+  String get alertEmailTitle => 'E-mail wen alert don trigger';
+
+  @override
+  String get alertEmailOn =>
+      'We dey check your alerts every few minutes and we go e-mail you, even wen di app close.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Sign in with your e-mail for Settings make you dey get alerts for e-mail, even wen di app close.';
 }

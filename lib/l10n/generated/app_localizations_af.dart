@@ -1759,4 +1759,15 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinkronisering het misluk. Dit sal outomaties weer probeer.';
+
+  @override
+  String get alertEmailTitle => 'E-pos wanneer ’n waarskuwing afgaan';
+
+  @override
+  String get alertEmailOn =>
+      'Ons gaan jou waarskuwings elke paar minute na en stuur vir jou ’n e-pos, selfs wanneer die app toe is.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Meld in Instellings met jou e-posadres aan om waarskuwings per e-pos te kry, selfs wanneer die app toe is.';
 }

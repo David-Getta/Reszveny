@@ -1770,4 +1770,15 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get syncFailed =>
       'Saan a nagballigi ti pag-sync. Automatiko a padasenna manen.';
+
+  @override
+  String get alertEmailTitle => 'E-mail no agtrigger ti alerto';
+
+  @override
+  String get alertEmailOn =>
+      'Kitaenmi dagiti alertom iti tunggal sumagmamano a minuto ken ipatulodandaka iti e-mail, uray no nakarikep ti app.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ag-sign in babaen ti e-mailmo iti Dagiti Setting tapno makaawat iti alerto babaen ti e-mail, uray no nakarikep ti app.';
 }

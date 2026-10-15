@@ -1758,4 +1758,15 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinxronlab bo‘lmadi. Avtomatik ravishda qayta urinib ko‘riladi.';
+
+  @override
+  String get alertEmailTitle => 'Bildirishnoma ishga tushganda e-pochta';
+
+  @override
+  String get alertEmailOn =>
+      'Bildirishnomalaringizni har bir necha daqiqada tekshiramiz va ilova yopiq boʻlsa ham sizga e-pochta yuboramiz.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ilova yopiq boʻlsa ham bildirishnomalarni e-pochta orqali olish uchun Sozlamalarda e-pochtangiz bilan kiring.';
 }

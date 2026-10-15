@@ -345,6 +345,23 @@ class AlertsPage extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 4),
                         child: Text(l10n.alertsNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                       ),
+                      // E-mail értesítés a szerverről (belépett fióknál), csukott appnál is.
+                      if ((services.account, services.sync) case (final account?, _?)) ...[
+                        const SizedBox(height: 12),
+                        ListenableBuilder(
+                          listenable: Listenable.merge([account, services.preferences]),
+                          builder: (context, _) => Card(
+                            child: SwitchListTile(
+                              key: const ValueKey('email-alerts'),
+                              secondary: const Icon(Icons.mark_email_unread_outlined),
+                              title: Text(l10n.alertEmailTitle),
+                              subtitle: Text(account.isSignedIn ? l10n.alertEmailOn : l10n.alertEmailSignIn),
+                              value: account.isSignedIn && services.preferences.emailAlerts,
+                              onChanged: account.isSignedIn ? services.preferences.setEmailAlerts : null,
+                            ),
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),

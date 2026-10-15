@@ -1760,4 +1760,15 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get syncFailed => 'Daidaitawa ta gaza. Za a sake gwadawa ta atomatik.';
+
+  @override
+  String get alertEmailTitle => 'Imel idan faɗakarwa ta tashi';
+
+  @override
+  String get alertEmailOn =>
+      'Muna duba faɗakarwarka bayan \'yan mintuna kuma mu aiko maka da imel, ko da manhajar a rufe take.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Shiga da imel ɗinka a Saituna don karɓar faɗakarwa ta imel, ko da manhajar a rufe take.';
 }

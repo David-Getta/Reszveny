@@ -1748,4 +1748,15 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get syncFailed => 'စင့်ခ်လုပ်၍ မရပါ။ အလိုအလျောက် ထပ်မံကြိုးစားပါမည်။';
+
+  @override
+  String get alertEmailTitle => 'သတိပေးချက် ဖြစ်ပေါ်သည့်အခါ အီးမေးလ်ပို့ရန်';
+
+  @override
+  String get alertEmailOn =>
+      'သင့်သတိပေးချက်များကို မိနစ်အနည်းငယ်တိုင်း စစ်ဆေးပြီး အက်ပ်ပိတ်ထားသော်လည်း သင့်ထံ အီးမေးလ် ပို့ပေးပါမည်။';
+
+  @override
+  String get alertEmailSignIn =>
+      'အက်ပ်ပိတ်ထားသော်လည်း သတိပေးချက်များကို အီးမေးလ်ဖြင့် ရရှိရန် ဆက်တင်များတွင် သင့်အီးမေးလ်ဖြင့် လက်မှတ်ထိုးဝင်ပါ။';
 }

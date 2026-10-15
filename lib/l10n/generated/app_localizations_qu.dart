@@ -1766,4 +1766,15 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get syncFailed =>
       'Mana sincronizayta atikurqanchu. Kikillanmanta yapamanta kallpachakunqa.';
+
+  @override
+  String get alertEmailTitle => 'Correo willachiy rikhurimuptin';
+
+  @override
+  String get alertEmailOn =>
+      'Sapa iskay kimsa minutopi willachiykunaykita qhawayku, correotataq kachamuykiku, aplicación wisq\'asqa kaptinpas.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq\'asqa kaptinpas.';
 }

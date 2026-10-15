@@ -1766,4 +1766,15 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ku fambelanisa ku tsandzekile. Ku ta ringetiwa nakambe hi ku tiendlekela.';
+
+  @override
+  String get alertEmailTitle => 'Imeyili loko xitiviso xi tirha';
+
+  @override
+  String get alertEmailOn =>
+      'Hi kambela switiviso swa wena endzhaku ka timinete ti nga ri tingani naswona hi ku rhumela imeyili, hambi loko app yi pfariwile.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Nghena hi imeyili ya wena eka Swiyimiso leswaku u kuma switiviso hi imeyili, hambi loko app yi pfariwile.';
 }

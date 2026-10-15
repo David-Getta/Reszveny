@@ -1759,4 +1759,15 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sync mete ŋu o. Agagbugbɔ adze agbagba le eɖokui si.';
+
+  @override
+  String get alertEmailTitle => 'E-mail ne nuxlɔ̃ame aɖe va eme';
+
+  @override
+  String get alertEmailOn =>
+      'Míekpɔa wò nuxlɔ̃amewo miniti ʋɛ aɖewo ɖesiaɖe eye míeɖoa e-mail wò, ne app la tu gɔ̃ hã.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ge ɖe eme kple wò e-mail le Ɖoɖowo me be nàxɔ nuxlɔ̃amewo to e-mail dzi, ne app la tu gɔ̃ hã.';
 }

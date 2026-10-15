@@ -1761,4 +1761,15 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get syncFailed => 'Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva.';
+
+  @override
+  String get alertEmailTitle => 'Correo maranduʼi ojehu jave';
+
+  @override
+  String get alertEmailOn =>
+      'Rohechajey ne maranduʼi sapyʼaitépe ha romondo ndéve correo, tembiporuʼi oñembotýramo jepe.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe.';
 }

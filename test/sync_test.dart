@@ -131,4 +131,27 @@ void main() {
     expect((m['notes'] as Map)['A'], newer);
     expect((m['notes'] as Map)['B'], newer);
   });
+
+  test('an alert the server already triggered stays triggered after a merge; language and opt-out are sent', () {
+    final active = {'id': 'x', 'symbol': 'AAPL', 'kind': 'above', 'value': 250};
+    final fired = {...active, 'triggered_at': '2026-10-15T14:00:00Z', 'triggered_price': 251};
+    final m = SyncService.merge(
+      {
+        'alerts': [active],
+        'lang': 'hu',
+        'email_alerts': false,
+      },
+      {
+        'alerts': [fired],
+        'lang': 'en',
+      },
+    );
+    expect((m['alerts'] as List).single['triggered_at'], '2026-10-15T14:00:00Z');
+    expect(m['lang'], 'hu');
+    expect(m['email_alerts'], false);
+
+    SharedPreferences.setMockInitialValues({});
+    final d = _Device(_Server());
+    expect(d.sync.snapshot()['email_alerts'], true);
+  });
 }

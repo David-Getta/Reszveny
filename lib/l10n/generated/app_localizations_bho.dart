@@ -1751,4 +1751,15 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get syncFailed => 'सिंक ना हो पाइल। ई अपने आप फेर कोसिस करी।';
+
+  @override
+  String get alertEmailTitle => 'अलर्ट बजला पर ई-मेल';
+
+  @override
+  String get alertEmailOn =>
+      'हमनी के हर कुछ मिनट पर राउर अलर्ट जाँचेनी आ ई-मेल भेजेनी, तबो जब ऐप बंद होखे।';
+
+  @override
+  String get alertEmailSignIn =>
+      'ऐप बंद रहलो पर ई-मेल से अलर्ट पावे खातिर सेटिंग्स में अपना ई-मेल से साइन इन करीं।';
 }

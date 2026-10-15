@@ -1750,4 +1750,15 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get syncFailed => 'सिंक नहि भ\' सकल। ई अपने-आप फेर प्रयास करत।';
+
+  @override
+  String get alertEmailTitle => 'अलर्ट बजला पर ई-मेल';
+
+  @override
+  String get alertEmailOn =>
+      'हम सभ किछु-किछु मिनटपर अहाँक अलर्ट जाँचैत छी आ ई-मेल पठबैत छी, ऐप बंद रहलो पर।';
+
+  @override
+  String get alertEmailSignIn =>
+      'ऐप बंद रहलो पर ई-मेलसँ अलर्ट पेबाक लेल सेटिंग्समे अपन ई-मेलसँ साइन इन करू।';
 }

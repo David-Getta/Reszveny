@@ -1754,4 +1754,15 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get syncFailed => 'سنک ناکام ہو گیا۔ یہ خود بخود دوبارہ کوشش کرے گا۔';
+
+  @override
+  String get alertEmailTitle => 'الرٹ ٹرگر ہونے پر ای میل';
+
+  @override
+  String get alertEmailOn =>
+      'ہم ہر چند منٹ بعد آپ کے الرٹس چیک کرتے ہیں اور ایپ بند ہونے پر بھی آپ کو ای میل بھیجتے ہیں۔';
+
+  @override
+  String get alertEmailSignIn =>
+      'ایپ بند ہونے پر بھی ای میل کے ذریعے الرٹس پانے کے لیے ترتیبات میں اپنے ای میل سے سائن ان کریں۔';
 }

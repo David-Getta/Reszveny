@@ -1742,4 +1742,15 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync pa tõog ye. A na n le maan a meng.';
+
+  @override
+  String get alertEmailTitle => 'E-mail koosg gũusg sã n zĩndi';
+
+  @override
+  String get alertEmailOn =>
+      'D gesdame f koosg gũusgã minit bilf fãa, la d tʋʋmd-f e-mail, baa aplikasiõ wã sã n pagda.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kẽ ne f e-mail Seglgã pʋgẽ n paam koosg gũusgã e-mail pʋgẽ, baa aplikasiõ wã sã n pagda.';
 }

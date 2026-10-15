@@ -1752,4 +1752,15 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync ma se ka kɛ. A bɛ segin ka a kɛ a yɛrɛ ma.';
+
+  @override
+  String get alertEmailTitle => 'E-mail ni lasɔmini dɔ sera';
+
+  @override
+  String get alertEmailOn =>
+      'An bɛ i ka lasɔminiw lajɛ miniti dama o miniti dama, ka e-mail ci i ma, hali ni aplikasiyɔn datugulen don.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Don ni i ka e-mail ye Labɛnw kɔnɔ walasa ka lasɔminiw sɔrɔ e-mail fɛ, hali ni aplikasiyɔn datugulen don.';
 }

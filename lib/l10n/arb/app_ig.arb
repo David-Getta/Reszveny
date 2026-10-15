@@ -475,5 +475,8 @@
   "syncInfo": "A na-emekọrịta portfolio, ọkacha mmasị, ọkwa ọnụahịa na ndetu gị na ngwaọrụ gị niile.",
   "syncLast": "Mmekọrịta ikpeazụ: {time}",
   "syncNow": "Mekọrịta ugbu a",
-  "syncFailed": "Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka."
+  "syncFailed": "Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka.",
+  "alertEmailTitle": "Email mgbe ọkwa malitere",
+  "alertEmailOn": "Anyị na-elele ọkwa gị kwa nkeji ole na ole ma zitere gị email, ọbụlagodi mgbe emechiri app ahụ.",
+  "alertEmailSignIn": "Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ."
 }

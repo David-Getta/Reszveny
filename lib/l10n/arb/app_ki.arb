@@ -475,5 +475,8 @@
   "syncInfo": "Hisa ciaku, iria wendete, imenyithia cia thogora na maandĩko ikoragwo o ũndũ ũmwe harĩ indo ciaku ciothe.",
   "syncLast": "Sync ya kũrigĩrĩria: {time}",
   "syncNow": "Sync rĩu",
-  "syncFailed": "Sync ndĩnahota. Nĩ ĩkũgeria rĩngĩ yo nyene."
+  "syncFailed": "Sync ndĩnahota. Nĩ ĩkũgeria rĩngĩ yo nyene.",
+  "alertEmailTitle": "E-mail rĩrĩa ũmenyithia wakinya",
+  "alertEmailOn": "Tũrorithagia imenyithia ciaku o ndagĩka nini na tũgakũtũmĩra e-mail, o na rĩrĩa app ĩhingĩtwo.",
+  "alertEmailSignIn": "Toonya na e-mail yaku thĩinĩ wa Mĩtaratara nĩguo wamũkagĩre imenyithia na e-mail, o na rĩrĩa app ĩhingĩtwo."
 }

@@ -475,5 +475,8 @@
   "syncInfo": "Emigabo gyo, by'oyagala, okulabula ku bbeeyi n'ebiwandiiko bikwatagana ku byuma byo byonna.",
   "syncLast": "Okukwataganya okusembayo: {time}",
   "syncNow": "Kwataganya kati",
-  "syncFailed": "Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka."
+  "syncFailed": "Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka.",
+  "alertEmailTitle": "Email nga okulabula kutuuse",
+  "alertEmailOn": "Tukebera okulabula kwo buli ddakiika ntono era tukuweereza email, ne bwe kiba nti app eggaddwa.",
+  "alertEmailSignIn": "Yingira n'email yo mu Nsengeka ofune okulabula ku email, ne bwe kiba nti app eggaddwa."
 }

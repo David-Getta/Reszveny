@@ -475,5 +475,8 @@
   "syncInfo": "Ang portfolio, mga paborito, mga alerto sa presyo ug mga nota gi-sync sa tanan nimong device.",
   "syncLast": "Katapusang na-sync {time}",
   "syncNow": "I-sync karon",
-  "syncFailed": "Napakyas ang pag-sync. Mosulay kini pag-usab nga awtomatiko."
+  "syncFailed": "Napakyas ang pag-sync. Mosulay kini pag-usab nga awtomatiko.",
+  "alertEmailTitle": "E-mail kon motrigger ang alerto",
+  "alertEmailOn": "Among susihon ang imong mga alerto matag pipila ka minuto ug padad-an ka namo og e-mail, bisan sirado ang app.",
+  "alertEmailSignIn": "Mag-sign in gamit ang imong e-mail sa Mga Setting aron makadawat og mga alerto pinaagi sa e-mail, bisan sirado ang app."
 }

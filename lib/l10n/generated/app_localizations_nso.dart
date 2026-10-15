@@ -1767,4 +1767,15 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get syncFailed =>
       'Go sinkronaiša go paletšwe. Go tla lekwa gape ka go itiriša.';
+
+  @override
+  String get alertEmailTitle => 'Imeile ge temošo e tsoga';
+
+  @override
+  String get alertEmailOn =>
+      'Re lekola ditemošo tša gago metsotso ye mengwe le ye mengwe ye mmalwa gomme re go romela imeile, le ge app e tswaletšwe.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Tsena ka imeile ya gago go Dipeakanyo gore o hwetše ditemošo ka imeile, le ge app e tswaletšwe.';
 }

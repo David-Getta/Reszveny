@@ -1761,4 +1761,15 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get syncFailed =>
       'సింక్ విఫలమైంది. ఇది ఆటోమేటిక్‌గా మళ్లీ ప్రయత్నిస్తుంది.';
+
+  @override
+  String get alertEmailTitle => 'హెచ్చరిక ట్రిగ్గర్ అయినప్పుడు ఈమెయిల్';
+
+  @override
+  String get alertEmailOn =>
+      'మేము కొన్ని నిమిషాలకు ఒకసారి మీ హెచ్చరికలను తనిఖీ చేసి, యాప్ మూసి ఉన్నా మీకు ఈమెయిల్ పంపుతాము.';
+
+  @override
+  String get alertEmailSignIn =>
+      'యాప్ మూసి ఉన్నా ఈమెయిల్ ద్వారా హెచ్చరికలు పొందడానికి సెట్టింగ్‌లలో మీ ఈమెయిల్‌తో సైన్ ఇన్ చేయండి.';
 }

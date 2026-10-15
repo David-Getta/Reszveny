@@ -1762,4 +1762,15 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo.';
+
+  @override
+  String get alertEmailTitle => 'I-imeyili uma isexwayiso senzeka';
+
+  @override
+  String get alertEmailOn =>
+      'Sihlola izexwayiso zakho njalo emizuzwini embalwa futhi sikuthumelele i-imeyili, ngisho noma i-app ivaliwe.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Ngena ngemvume nge-imeyili yakho kuZilungiselelo ukuze uthole izexwayiso nge-imeyili, ngisho noma i-app ivaliwe.';
 }

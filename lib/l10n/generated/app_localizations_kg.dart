@@ -1761,4 +1761,15 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronisation me lemba. Yo ta meka diaka yo mosi.';
+
+  @override
+  String get alertEmailTitle => 'E-mail ntangu nkebisu me salama';
+
+  @override
+  String get alertEmailOn =>
+      'Beto ke tadilaka nkebisu na nge konso maminuti fyoti mpi beto ke tindila nge e-mail, ata kana application me kangama.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kota na e-mail na nge na Paramètres sambu na kubaka nkebisu na e-mail, ata kana application me kangama.';
 }

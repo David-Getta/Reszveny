@@ -1765,4 +1765,15 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get syncFailed =>
       'Go tsamaisanya go paletswe. Go tla lekwa gape ka boiketsetso.';
+
+  @override
+  String get alertEmailTitle => 'Imeile fa kitsiso e simolola';
+
+  @override
+  String get alertEmailOn =>
+      'Re tlhatlhoba dikitsiso tsa gago metsotso e mengwe le e mengwe e le mmalwa mme re go romelela imeile, le fa app e tswalegile.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Tsena ka imeile ya gago mo Dithulaganyong gore o amogele dikitsiso ka imeile, le fa app e tswalegile.';
 }

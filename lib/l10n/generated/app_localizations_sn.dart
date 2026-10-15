@@ -1760,4 +1760,15 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get syncFailed => 'Kuwiriranisa kwatadza. Kuchaedza zvakare kwega.';
+
+  @override
+  String get alertEmailTitle => 'Email kana chiziviso chaitika';
+
+  @override
+  String get alertEmailOn =>
+      'Tinotarisa zviziviso zvako maminiti mashoma ega ega uye tinokutumira email, kunyange app yakavharwa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Pinda neemail yako muMarongero kuti uwane zviziviso neemail, kunyange app yakavharwa.';
 }

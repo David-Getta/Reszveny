@@ -1756,4 +1756,15 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get syncFailed =>
       'সিঙ্ক ব্যর্থ হয়েছে। এটি স্বয়ংক্রিয়ভাবে আবার চেষ্টা করবে।';
+
+  @override
+  String get alertEmailTitle => 'সতর্কতা চালু হলে ই-মেইল';
+
+  @override
+  String get alertEmailOn =>
+      'আমরা কয়েক মিনিট পরপর আপনার সতর্কতা যাচাই করি এবং অ্যাপ বন্ধ থাকলেও আপনাকে ই-মেইল পাঠাই।';
+
+  @override
+  String get alertEmailSignIn =>
+      'অ্যাপ বন্ধ থাকলেও ই-মেইলে সতর্কতা পেতে সেটিংসে আপনার ই-মেইল দিয়ে সাইন ইন করুন।';
 }

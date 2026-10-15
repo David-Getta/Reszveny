@@ -1751,4 +1751,15 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get syncFailed => 'ਸਿੰਕ ਅਸਫਲ ਰਿਹਾ। ਇਹ ਆਪਣੇ ਆਪ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ।';
+
+  @override
+  String get alertEmailTitle => 'ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਣ ’ਤੇ ਈਮੇਲ';
+
+  @override
+  String get alertEmailOn =>
+      'ਅਸੀਂ ਹਰ ਕੁਝ ਮਿੰਟਾਂ ਬਾਅਦ ਤੁਹਾਡੇ ਅਲਰਟ ਜਾਂਚਦੇ ਹਾਂ ਅਤੇ ਐਪ ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਤੁਹਾਨੂੰ ਈਮੇਲ ਭੇਜਦੇ ਹਾਂ।';
+
+  @override
+  String get alertEmailSignIn =>
+      'ਐਪ ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਈਮੇਲ ਰਾਹੀਂ ਅਲਰਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਆਪਣੀ ਈਮੇਲ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।';
 }

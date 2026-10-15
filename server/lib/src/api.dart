@@ -8,6 +8,7 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 import 'admin_page.dart';
+import 'alert_watcher.dart';
 import 'db.dart';
 import 'invites.dart';
 import 'mailer.dart';
@@ -504,6 +505,26 @@ class Api {
     if (!_isAdmin(_token(r))) return _error(403, 'forbidden');
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
     return _json(telemetry.stats(days: days));
+  }
+
+  // ---- Szerver oldali riasztásfigyelés ----
+
+  /// A szinkronizált riasztások figyelője (a Finnhub `/quote` árával).
+  late final AlertWatcher alertWatcher = AlertWatcher(store: store, mailer: mailer, quote: _finnhubQuote);
+
+  Future<({double price, double? changePercent})?> _finnhubQuote(String symbol) async {
+    final res = await _client
+        .get(
+          Uri.parse('$finnhubBaseUrl/quote').replace(queryParameters: {'symbol': symbol}),
+          headers: {'X-Finnhub-Token': finnhubApiKey},
+        )
+        .timeout(const Duration(seconds: 15));
+    if (res.statusCode != 200) return null;
+    final j = jsonDecode(res.body);
+    final c = j is Map ? j['c'] : null;
+    final dp = j is Map ? j['dp'] : null;
+    if (c is! num || c <= 0) return null;
+    return (price: c.toDouble(), changePercent: dp is num ? dp.toDouble() : null);
   }
 
   // ---- Szinkron (e-mailes fiókhoz) ----

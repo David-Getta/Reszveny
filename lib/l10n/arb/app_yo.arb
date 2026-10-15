@@ -475,5 +475,8 @@
   "syncInfo": "Àpò ìdókòwò, àwọn ààyò, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ ń múṣiṣẹ́pọ̀ lórí gbogbo ẹ̀rọ rẹ.",
   "syncLast": "Ìmúṣiṣẹ́pọ̀ tó kẹ́yìn: {time}",
   "syncNow": "Múṣiṣẹ́pọ̀ báyìí",
-  "syncFailed": "Ìmúṣiṣẹ́pọ̀ kùnà. Yóò tún gbìyànjú fúnra rẹ̀."
+  "syncFailed": "Ìmúṣiṣẹ́pọ̀ kùnà. Yóò tún gbìyànjú fúnra rẹ̀.",
+  "alertEmailTitle": "Ímeèlì nígbà tí ìkìlọ̀ bá ṣẹlẹ̀",
+  "alertEmailOn": "A máa ń ṣàyẹ̀wò ìkìlọ̀ rẹ ní ìṣẹ́jú díẹ̀ díẹ̀, a sì máa ń fi ímeèlì ránṣẹ́ sí ọ, kódà nígbà tí áàpù bá ti pa.",
+  "alertEmailSignIn": "Wọlé pẹ̀lú ímeèlì rẹ nínú Ètò láti máa gba ìkìlọ̀ nípasẹ̀ ímeèlì, kódà nígbà tí áàpù bá ti pa."
 }

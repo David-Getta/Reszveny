@@ -24,6 +24,7 @@ class AppPreferences extends ChangeNotifier {
     this.analysesDone = 0,
     this.reviewAsked = false,
     this.telemetryConsent,
+    this.emailAlerts = true,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -45,6 +46,7 @@ class AppPreferences extends ChangeNotifier {
   static const _analysesDoneKey = 'analyses_done';
   static const _reviewAskedKey = 'review_asked';
   static const _telemetryKey = 'telemetry_consent';
+  static const _emailAlertsKey = 'email_alerts';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -92,6 +94,9 @@ class AppPreferences extends ChangeNotifier {
   /// kérdeztük, `true` = engedélyezte, `false` = nem kéri.
   bool? telemetryConsent;
 
+  /// Belépve a szerver e-mailben is szól, ha egy riasztás teljesül.
+  bool emailAlerts;
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -123,6 +128,7 @@ class AppPreferences extends ChangeNotifier {
         analysesDone: prefs.getInt(_analysesDoneKey) ?? 0,
         reviewAsked: prefs.getBool(_reviewAskedKey) ?? false,
         telemetryConsent: prefs.getBool(_telemetryKey),
+        emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
       );
     } catch (_) {
       return AppPreferences();
@@ -151,6 +157,13 @@ class AppPreferences extends ChangeNotifier {
     telemetryConsent = allowed;
     notifyListeners();
     await _save((p) => p.setBool(_telemetryKey, allowed));
+  }
+
+  Future<void> setEmailAlerts(bool enabled) async {
+    if (emailAlerts == enabled) return;
+    emailAlerts = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_emailAlertsKey, enabled));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {

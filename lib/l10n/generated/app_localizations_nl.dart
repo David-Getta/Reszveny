@@ -1760,4 +1760,15 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronisatie mislukt. Er wordt automatisch opnieuw geprobeerd.';
+
+  @override
+  String get alertEmailTitle => 'E-mail wanneer een alert afgaat';
+
+  @override
+  String get alertEmailOn =>
+      'We controleren je alerts om de paar minuten en sturen je een e-mail, ook als de app gesloten is.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Log in met je e-mailadres bij Instellingen om alerts per e-mail te krijgen, ook als de app gesloten is.';
 }

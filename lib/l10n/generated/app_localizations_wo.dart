@@ -1750,4 +1750,15 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get syncFailed => 'Synchro bi antuwul. Dina jéemaat boppam.';
+
+  @override
+  String get alertEmailTitle => 'Imeel bu artu am';
+
+  @override
+  String get alertEmailOn =>
+      'Danuy seet say artu ay minit yu néew yu nekk te yónnee la imeel, su aplikasiyoŋ bi tëju sax.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Dugg ak sa imeel ci Tànneef ngir jot artu yi ci imeel, su aplikasiyoŋ bi tëju sax.';
 }

@@ -1754,4 +1754,15 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get syncFailed =>
       'Senkronizasyon an echwe. L ap eseye ankò otomatikman.';
+
+  @override
+  String get alertEmailTitle => 'Imèl lè yon alèt deklanche';
+
+  @override
+  String get alertEmailOn =>
+      'Nou tcheke alèt ou yo chak kèk minit epi nou voye yon imèl ba ou, menm lè aplikasyon an fèmen.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Konekte ak imèl ou nan Paramèt pou w resevwa alèt yo pa imèl, menm lè aplikasyon an fèmen.';
 }

@@ -1759,4 +1759,15 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get syncFailed =>
       'Penyegerakan gagal. Ia akan cuba lagi secara automatik.';
+
+  @override
+  String get alertEmailTitle => 'E-mel apabila amaran dicetuskan';
+
+  @override
+  String get alertEmailOn =>
+      'Kami menyemak amaran anda setiap beberapa minit dan menghantar e-mel kepada anda, walaupun aplikasi ditutup.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Log masuk dengan e-mel anda dalam Tetapan untuk menerima amaran melalui e-mel, walaupun aplikasi ditutup.';
 }

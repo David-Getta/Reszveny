@@ -1760,4 +1760,15 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronisation kayena mienze to. Neyikebe kabidi yoyi nkayayi.';
+
+  @override
+  String get alertEmailTitle => 'E-mail padi alerte ijuka';
+
+  @override
+  String get alertEmailOn =>
+      'Tudi tutangila alerte yebe minite mikese yonso ne tukutumina e-mail, nansha padi application mukanga.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Buela ne e-mail webe mu Malongolola bua kupeta alerte ku e-mail, nansha padi application mukanga.';
 }

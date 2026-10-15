@@ -1766,4 +1766,15 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronisierung fehlgeschlagen. Es wird automatisch erneut versucht.';
+
+  @override
+  String get alertEmailTitle => 'E-Mail bei ausgelöstem Alarm';
+
+  @override
+  String get alertEmailOn =>
+      'Wir prüfen deine Alarme alle paar Minuten und schicken dir eine E-Mail – auch wenn die App geschlossen ist.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Melde dich in den Einstellungen mit deiner E-Mail an, um Alarme per E-Mail zu erhalten – auch wenn die App geschlossen ist.';
 }

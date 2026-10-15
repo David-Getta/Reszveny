@@ -475,5 +475,8 @@
   "syncInfo": "Cartera, ojeguerohoryvéva, tepy maranduʼi ha jehaipyre ojoja opa ne mbaʼeʼokápe.",
   "syncLast": "Sincronización pahaguápe: {time}",
   "syncNow": "Sincroniza koʼág̃a",
-  "syncFailed": "Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva."
+  "syncFailed": "Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva.",
+  "alertEmailTitle": "Correo maranduʼi ojehu jave",
+  "alertEmailOn": "Rohechajey ne maranduʼi sapyʼaitépe ha romondo ndéve correo, tembiporuʼi oñembotýramo jepe.",
+  "alertEmailSignIn": "Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe."
 }

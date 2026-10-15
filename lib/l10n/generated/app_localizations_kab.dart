@@ -1754,4 +1754,15 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get syncFailed =>
       'Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman.';
+
+  @override
+  String get alertEmailTitle => 'Imayl mi ara yekker yiwen walɣu';
+
+  @override
+  String get alertEmailOn =>
+      'Nesenqad ilɣa-k yal kra n tesdatin, ad ak-d-nazen imayl, ula ma yella usnas yemdel.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kcem s imayl-ik deg Iɣewwaṛen akken ad d-teṭṭfeḍ ilɣa s imayl, ula ma yella usnas yemdel.';
 }

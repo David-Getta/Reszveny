@@ -475,5 +475,8 @@
   "syncInfo": "Portfel, seçilmişlər, qiymət bildirişləri və qeydlər bütün cihazlarınızda sinxronlaşdırılır.",
   "syncLast": "Son sinxronizasiya: {time}",
   "syncNow": "İndi sinxronlaşdır",
-  "syncFailed": "Sinxronizasiya alınmadı. Avtomatik olaraq yenidən cəhd ediləcək."
+  "syncFailed": "Sinxronizasiya alınmadı. Avtomatik olaraq yenidən cəhd ediləcək.",
+  "alertEmailTitle": "Bildiriş işə düşəndə e-poçt",
+  "alertEmailOn": "Bildirişlərinizi bir neçə dəqiqədən bir yoxlayırıq və tətbiq bağlı olsa belə, sizə e-poçt göndəririk.",
+  "alertEmailSignIn": "Tətbiq bağlı olsa belə, bildirişləri e-poçtla almaq üçün Ayarlarda e-poçtunuzla daxil olun."
 }

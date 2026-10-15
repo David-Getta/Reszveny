@@ -1723,4 +1723,15 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get syncFailed => 'ምስምማዕ ኣይተዓወተን። ብኣውቶማቲክ እንደገና ክፍተን እዩ።';
+
+  @override
+  String get alertEmailTitle => 'መጠንቀቕታ ክለዓል ከሎ ኢመይል';
+
+  @override
+  String get alertEmailOn =>
+      'መጠንቀቕታታትኩም ኣብ ነፍሲ ወከፍ ውሑዳት ደቓይቕ ንፍትሽ፣ እቲ ኣፕ ዕጹው እንተኾነ እውን ብኢመይል ነፍልጠኩም።';
+
+  @override
+  String get alertEmailSignIn =>
+      'እቲ ኣፕ ዕጹው እንተኾነ እውን መጠንቀቕታታት ብኢመይል ንምርካብ ኣብ ቅጥዕታት ብኢመይልኩም እተዉ።';
 }

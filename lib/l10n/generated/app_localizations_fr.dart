@@ -1765,4 +1765,15 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get syncFailed =>
       'Échec de la synchronisation. Une nouvelle tentative aura lieu automatiquement.';
+
+  @override
+  String get alertEmailTitle => 'E-mail lorsqu’une alerte se déclenche';
+
+  @override
+  String get alertEmailOn =>
+      'Nous vérifions vos alertes toutes les quelques minutes et vous envoyons un e-mail, même quand l’app est fermée.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Connectez-vous avec votre e-mail dans les Paramètres pour recevoir les alertes par e-mail, même quand l’app est fermée.';
 }

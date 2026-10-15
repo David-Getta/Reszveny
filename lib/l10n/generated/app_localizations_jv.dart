@@ -1756,4 +1756,15 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis.';
+
+  @override
+  String get alertEmailTitle => 'Email nalika pèngetan aktif';
+
+  @override
+  String get alertEmailOn =>
+      'Kita mriksa pèngetan sampeyan saben sawetara menit lan ngirim email marang sampeyan, sanajan aplikasi ditutup.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Mlebu nganggo email sampeyan ing Setelan supaya nampa pèngetan liwat email, sanajan aplikasi ditutup.';
 }

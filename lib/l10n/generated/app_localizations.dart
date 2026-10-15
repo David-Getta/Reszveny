@@ -3192,6 +3192,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sync failed. It will try again automatically.'**
   String get syncFailed;
+
+  /// No description provided for @alertEmailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'E-mail when an alert triggers'**
+  String get alertEmailTitle;
+
+  /// No description provided for @alertEmailOn.
+  ///
+  /// In en, this message translates to:
+  /// **'We check your alerts every few minutes and e-mail you, even when the app is closed.'**
+  String get alertEmailOn;
+
+  /// No description provided for @alertEmailSignIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed.'**
+  String get alertEmailSignIn;
 }
 
 class _AppLocalizationsDelegate

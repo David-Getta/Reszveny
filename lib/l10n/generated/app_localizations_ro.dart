@@ -1787,4 +1787,15 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sincronizarea a eșuat. Se va reîncerca automat.';
+
+  @override
+  String get alertEmailTitle => 'E-mail când se declanșează o alertă';
+
+  @override
+  String get alertEmailOn =>
+      'Îți verificăm alertele la câteva minute și îți trimitem un e-mail, chiar și când aplicația e închisă.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Conectează-te cu e-mailul tău în Setări ca să primești alertele pe e-mail, chiar și când aplicația e închisă.';
 }

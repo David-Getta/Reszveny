@@ -108,6 +108,7 @@ class AppServices {
             portfolio: this.portfolio,
             alerts: this.alerts,
             notes: this.notes,
+            language: () => (locale.override ?? WidgetsBinding.instance.platformDispatcher.locale).languageCode,
           );
     final acc = account;
     this.billing =

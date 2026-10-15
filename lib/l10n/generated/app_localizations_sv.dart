@@ -1756,4 +1756,15 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synkroniseringen misslyckades. Ett nytt försök görs automatiskt.';
+
+  @override
+  String get alertEmailTitle => 'E-post när ett larm utlöses';
+
+  @override
+  String get alertEmailOn =>
+      'Vi kontrollerar dina larm med några minuters mellanrum och skickar e-post till dig, även när appen är stängd.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Logga in med din e-postadress under Inställningar för att få larm via e-post, även när appen är stängd.';
 }

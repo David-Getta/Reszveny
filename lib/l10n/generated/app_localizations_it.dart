@@ -1760,4 +1760,15 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sincronizzazione non riuscita. Verrà ritentata automaticamente.';
+
+  @override
+  String get alertEmailTitle => 'Email quando scatta un avviso';
+
+  @override
+  String get alertEmailOn =>
+      'Controlliamo i tuoi avvisi a intervalli di pochi minuti e ti inviamo un’email, anche quando l’app è chiusa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Accedi con la tua email nelle Impostazioni per ricevere gli avvisi via email, anche quando l’app è chiusa.';
 }

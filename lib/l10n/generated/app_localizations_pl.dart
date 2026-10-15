@@ -1813,4 +1813,15 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronizacja nie powiodła się. Ponowna próba nastąpi automatycznie.';
+
+  @override
+  String get alertEmailTitle => 'E-mail po uruchomieniu alertu';
+
+  @override
+  String get alertEmailOn =>
+      'Co kilka minut sprawdzamy Twoje alerty i wysyłamy Ci e-mail, nawet gdy aplikacja jest zamknięta.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Zaloguj się adresem e-mail w Ustawieniach, aby otrzymywać alerty e-mailem, nawet gdy aplikacja jest zamknięta.';
 }

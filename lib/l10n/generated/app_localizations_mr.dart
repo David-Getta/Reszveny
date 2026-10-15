@@ -1754,4 +1754,15 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get syncFailed => 'सिंक अयशस्वी झाले. ते आपोआप पुन्हा प्रयत्न करेल.';
+
+  @override
+  String get alertEmailTitle => 'सूचना ट्रिगर झाल्यावर ई-मेल';
+
+  @override
+  String get alertEmailOn =>
+      'आम्ही दर काही मिनिटांनी तुमच्या सूचना तपासतो आणि अ‍ॅप बंद असतानाही तुम्हाला ई-मेल पाठवतो.';
+
+  @override
+  String get alertEmailSignIn =>
+      'अ‍ॅप बंद असतानाही ई-मेलवर सूचना मिळवण्यासाठी सेटिंग्जमध्ये तुमच्या ई-मेलने साइन इन करा.';
 }

@@ -1756,4 +1756,15 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinxronizasiya alınmadı. Avtomatik olaraq yenidən cəhd ediləcək.';
+
+  @override
+  String get alertEmailTitle => 'Bildiriş işə düşəndə e-poçt';
+
+  @override
+  String get alertEmailOn =>
+      'Bildirişlərinizi bir neçə dəqiqədən bir yoxlayırıq və tətbiq bağlı olsa belə, sizə e-poçt göndəririk.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Tətbiq bağlı olsa belə, bildirişləri e-poçtla almaq üçün Ayarlarda e-poçtunuzla daxil olun.';
 }

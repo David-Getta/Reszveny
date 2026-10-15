@@ -1765,4 +1765,15 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get syncFailed =>
       'Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka.';
+
+  @override
+  String get alertEmailTitle => 'Email nga okulabula kutuuse';
+
+  @override
+  String get alertEmailOn =>
+      'Tukebera okulabula kwo buli ddakiika ntono era tukuweereza email, ne bwe kiba nti app eggaddwa.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Yingira n\'email yo mu Nsengeka ofune okulabula ku email, ne bwe kiba nti app eggaddwa.';
 }

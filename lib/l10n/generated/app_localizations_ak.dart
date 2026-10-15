@@ -1754,4 +1754,15 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get syncFailed => 'Sync no anyɛ yie. Ɛbɛsan abɔ mmɔden bio ankasa.';
+
+  @override
+  String get alertEmailTitle => 'Email bere a kɔkɔbɔ bi ba mu';
+
+  @override
+  String get alertEmailOn =>
+      'Yɛhwɛ wo kɔkɔbɔ simma kakra biara na yɛde email bɔ wo amanneɛ, sɛ app no to mu mpo a.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Fa wo email wura mu wɔ Nhyehyɛe mu na wunya kɔkɔbɔ wɔ email so, sɛ app no to mu mpo a.';
 }

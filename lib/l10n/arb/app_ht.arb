@@ -475,5 +475,8 @@
   "syncInfo": "Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.",
   "syncLast": "Dènye senkronizasyon: {time}",
   "syncNow": "Senkronize kounye a",
-  "syncFailed": "Senkronizasyon an echwe. L ap eseye ankò otomatikman."
+  "syncFailed": "Senkronizasyon an echwe. L ap eseye ankò otomatikman.",
+  "alertEmailTitle": "Imèl lè yon alèt deklanche",
+  "alertEmailOn": "Nou tcheke alèt ou yo chak kèk minit epi nou voye yon imèl ba ou, menm lè aplikasyon an fèmen.",
+  "alertEmailSignIn": "Konekte ak imèl ou nan Paramèt pou w resevwa alèt yo pa imèl, menm lè aplikasyon an fèmen."
 }

@@ -1758,4 +1758,15 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get syncFailed =>
       'Шайкештирүү ишке ашкан жок. Кайра автоматтык түрдө аракет кылынат.';
+
+  @override
+  String get alertEmailTitle => 'Эскертме иштегенде электрондук кат';
+
+  @override
+  String get alertEmailOn =>
+      'Эскертмелериңизди бир нече мүнөт сайын текшерип, колдонмо жабык турса да, сизге электрондук кат жөнөтөбүз.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Колдонмо жабык турса да эскертмелерди электрондук почта аркылуу алуу үчүн Жөндөөлөрдөн электрондук почтаңыз менен кириңиз.';
 }

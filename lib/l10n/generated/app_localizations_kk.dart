@@ -1756,4 +1756,15 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get syncFailed =>
       'Синхрондау сәтсіз аяқталды. Автоматты түрде қайта әрекет жасалады.';
+
+  @override
+  String get alertEmailTitle => 'Ескерту іске қосылғанда электрондық хат';
+
+  @override
+  String get alertEmailOn =>
+      'Ескертулеріңізді бірнеше минут сайын тексеріп, қолданба жабық тұрса да, сізге электрондық хат жібереміз.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Қолданба жабық тұрса да ескертулерді электрондық пошта арқылы алу үшін Параметрлерде электрондық поштаңызбен кіріңіз.';
 }

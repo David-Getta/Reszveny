@@ -1763,4 +1763,15 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get syncFailed =>
       'Ο συγχρονισμός απέτυχε. Θα γίνει αυτόματα νέα προσπάθεια.';
+
+  @override
+  String get alertEmailTitle => 'Email όταν ενεργοποιείται μια ειδοποίηση';
+
+  @override
+  String get alertEmailOn =>
+      'Ελέγχουμε τις ειδοποιήσεις σας κάθε λίγα λεπτά και σας στέλνουμε email, ακόμη και όταν η εφαρμογή είναι κλειστή.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Συνδεθείτε με το email σας στις Ρυθμίσεις για να λαμβάνετε ειδοποιήσεις μέσω email, ακόμη και όταν η εφαρμογή είναι κλειστή.';
 }

@@ -1764,4 +1764,15 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get syncFailed =>
       'No s\'ha pogut sincronitzar. Es tornarà a provar automàticament.';
+
+  @override
+  String get alertEmailTitle => 'Correu quan salti una alerta';
+
+  @override
+  String get alertEmailOn =>
+      'Comprovem les teves alertes cada pocs minuts i t’enviem un correu, fins i tot amb l’app tancada.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Inicia la sessió amb el teu correu a Configuració per rebre les alertes per correu, fins i tot amb l’app tancada.';
 }

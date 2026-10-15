@@ -1758,4 +1758,15 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get syncFailed =>
       'قەدەمداشلاش مەغلۇپ بولدى. ئاپتوماتىك قايتا سىنايدۇ.';
+
+  @override
+  String get alertEmailTitle => 'ئاگاھلاندۇرۇش قوزغالغاندا ئېلخەت';
+
+  @override
+  String get alertEmailOn =>
+      'ئاگاھلاندۇرۇشلىرىڭىزنى ھەر بىر نەچچە مىنۇتتا تەكشۈرۈپ، ئەپ تاقاق تۇرسىمۇ سىزگە ئېلخەت ئەۋەتىمىز.';
+
+  @override
+  String get alertEmailSignIn =>
+      'ئەپ تاقاق تۇرسىمۇ ئاگاھلاندۇرۇشلارنى ئېلخەت ئارقىلىق تاپشۇرۇۋېلىش ئۈچۈن تەڭشەكتە ئېلخېتىڭىز بىلەن كىرىڭ.';
 }

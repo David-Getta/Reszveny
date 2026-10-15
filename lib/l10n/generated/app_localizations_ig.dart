@@ -1750,4 +1750,15 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get syncFailed => 'Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka.';
+
+  @override
+  String get alertEmailTitle => 'Email mgbe ọkwa malitere';
+
+  @override
+  String get alertEmailOn =>
+      'Anyị na-elele ọkwa gị kwa nkeji ole na ole ma zitere gị email, ọbụlagodi mgbe emechiri app ahụ.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ.';
 }

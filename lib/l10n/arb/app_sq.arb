@@ -475,5 +475,8 @@
   "syncInfo": "Portofoli, të preferuarat, alarmet e çmimit dhe shënimet sinkronizohen në të gjitha pajisjet tuaja.",
   "syncLast": "Sinkronizimi i fundit: {time}",
   "syncNow": "Sinkronizo tani",
-  "syncFailed": "Sinkronizimi dështoi. Do të provohet përsëri automatikisht."
+  "syncFailed": "Sinkronizimi dështoi. Do të provohet përsëri automatikisht.",
+  "alertEmailTitle": "Email kur aktivizohet një alarm",
+  "alertEmailOn": "I kontrollojmë alarmet tuaja çdo disa minuta dhe ju dërgojmë email, edhe kur aplikacioni është i mbyllur.",
+  "alertEmailSignIn": "Hyni me email-in tuaj te Cilësimet për të marrë alarmet me email, edhe kur aplikacioni është i mbyllur."
 }

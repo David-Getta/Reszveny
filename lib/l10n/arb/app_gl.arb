@@ -475,5 +475,8 @@
   "syncInfo": "A carteira, os favoritos, as alertas de prezo e as notas sincronízanse en todos os teus dispositivos.",
   "syncLast": "Última sincronización: {time}",
   "syncNow": "Sincronizar agora",
-  "syncFailed": "Non se puido sincronizar. Volverase tentar automaticamente."
+  "syncFailed": "Non se puido sincronizar. Volverase tentar automaticamente.",
+  "alertEmailTitle": "Correo cando salte unha alerta",
+  "alertEmailOn": "Revisamos as túas alertas cada poucos minutos e envíamosche un correo, mesmo coa aplicación pechada.",
+  "alertEmailSignIn": "Inicia sesión co teu correo en Configuración para recibir as alertas por correo, mesmo coa aplicación pechada."
 }

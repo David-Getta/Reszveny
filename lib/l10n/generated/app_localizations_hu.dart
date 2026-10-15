@@ -1760,4 +1760,15 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get syncFailed =>
       'A szinkron nem sikerült. Később automatikusan újrapróbálja.';
+
+  @override
+  String get alertEmailTitle => 'E-mail, ha egy riasztás teljesül';
+
+  @override
+  String get alertEmailOn =>
+      'Néhány percenként megnézzük a riasztásaidat, és e-mailben szólunk, akkor is, ha az app nincs megnyitva.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Lépj be az e-mail-címeddel a beállításokban, és e-mailben is szólunk, akkor is, ha az app nincs megnyitva.';
 }

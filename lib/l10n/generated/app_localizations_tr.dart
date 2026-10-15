@@ -1755,4 +1755,15 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get syncFailed =>
       'Senkronizasyon başarısız oldu. Otomatik olarak yeniden denenecek.';
+
+  @override
+  String get alertEmailTitle => 'Alarm tetiklendiğinde e-posta';
+
+  @override
+  String get alertEmailOn =>
+      'Alarmlarınızı birkaç dakikada bir kontrol eder ve uygulama kapalıyken bile size e-posta göndeririz.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Uygulama kapalıyken bile alarmları e-postayla almak için Ayarlar’dan e-posta adresinizle giriş yapın.';
 }

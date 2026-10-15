@@ -1793,4 +1793,15 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get syncFailed =>
       'Синхронизација није успела. Аутоматски ће се покушати поново.';
+
+  @override
+  String get alertEmailTitle => 'Имејл када се обавештење активира';
+
+  @override
+  String get alertEmailOn =>
+      'Ваша обавештења проверавамо на сваких неколико минута и шаљемо вам имејл, чак и када је апликација затворена.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Пријавите се имејлом у Подешавањима да бисте обавештења добијали имејлом, чак и када је апликација затворена.';
 }

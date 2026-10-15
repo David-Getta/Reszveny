@@ -1752,4 +1752,15 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get syncFailed =>
       'Синхронлаштырып булмады. Автомат рәвештә кабат омтылыш ясалачак.';
+
+  @override
+  String get alertEmailTitle => 'Искәртү эшләгәндә электрон хат';
+
+  @override
+  String get alertEmailOn =>
+      'Без искәртүләрегезне берничә минут саен тикшерәбез һәм кушымта ябык булса да, сезгә электрон хат җибәрәбез.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Кушымта ябык булса да искәртүләрне электрон почта аша алу өчен Көйләүләрдә электрон почтагыз белән керегез.';
 }

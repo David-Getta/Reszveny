@@ -475,5 +475,8 @@
   "syncInfo": "Ishoramari, ibyo ukunda, imenyesha ry'ibiciro n'ibyo wanditse bihuzwa ku bikoresho byawe byose.",
   "syncLast": "Ihuza riheruka: {time}",
   "syncNow": "Huza ubu",
-  "syncFailed": "Guhuza byanze. Bizongera kugerageza ubwabyo."
+  "syncFailed": "Guhuza byanze. Bizongera kugerageza ubwabyo.",
+  "alertEmailTitle": "Imeyili iyo imenyesha ribaye",
+  "alertEmailOn": "Tugenzura imenyesha ryawe buri minota mike tukakoherereza imeyili, n'igihe porogaramu ifunze.",
+  "alertEmailSignIn": "Injira ukoresheje imeyili yawe muri Igenamiterere kugira ngo ubone imenyesha kuri imeyili, n'igihe porogaramu ifunze."
 }

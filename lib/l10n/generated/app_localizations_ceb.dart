@@ -1764,4 +1764,15 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get syncFailed =>
       'Napakyas ang pag-sync. Mosulay kini pag-usab nga awtomatiko.';
+
+  @override
+  String get alertEmailTitle => 'E-mail kon motrigger ang alerto';
+
+  @override
+  String get alertEmailOn =>
+      'Among susihon ang imong mga alerto matag pipila ka minuto ug padad-an ka namo og e-mail, bisan sirado ang app.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Mag-sign in gamit ang imong e-mail sa Mga Setting aron makadawat og mga alerto pinaagi sa e-mail, bisan sirado ang app.';
 }

@@ -1810,4 +1810,15 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synchronizácia zlyhala. Automaticky sa skúsi znova.';
+
+  @override
+  String get alertEmailTitle => 'E-mail pri spustení upozornenia';
+
+  @override
+  String get alertEmailOn =>
+      'Vaše upozornenia kontrolujeme každých pár minút a pošleme vám e-mail, aj keď je aplikácia zatvorená.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Prihláste sa e-mailom v Nastaveniach a upozornenia vám budeme posielať e-mailom, aj keď je aplikácia zatvorená.';
 }

@@ -1757,4 +1757,15 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get syncFailed =>
       'Synkronointi epäonnistui. Sitä yritetään automaattisesti uudelleen.';
+
+  @override
+  String get alertEmailTitle => 'Sähköposti, kun hälytys laukeaa';
+
+  @override
+  String get alertEmailOn =>
+      'Tarkistamme hälytyksesi muutaman minuutin välein ja lähetämme sinulle sähköpostia, vaikka sovellus olisi suljettu.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Kirjaudu sisään sähköpostillasi Asetuksissa, niin saat hälytykset sähköpostiin, vaikka sovellus olisi suljettu.';
 }

@@ -475,5 +475,8 @@
   "syncInfo": "Portfel, sevimlilar, narx bildirishnomalari va qaydlar barcha qurilmalaringizda sinxronlanadi.",
   "syncLast": "Oxirgi sinxronlash: {time}",
   "syncNow": "Hozir sinxronlash",
-  "syncFailed": "Sinxronlab bo‘lmadi. Avtomatik ravishda qayta urinib ko‘riladi."
+  "syncFailed": "Sinxronlab bo‘lmadi. Avtomatik ravishda qayta urinib ko‘riladi.",
+  "alertEmailTitle": "Bildirishnoma ishga tushganda e-pochta",
+  "alertEmailOn": "Bildirishnomalaringizni har bir necha daqiqada tekshiramiz va ilova yopiq boʻlsa ham sizga e-pochta yuboramiz.",
+  "alertEmailSignIn": "Ilova yopiq boʻlsa ham bildirishnomalarni e-pochta orqali olish uchun Sozlamalarda e-pochtangiz bilan kiring."
 }

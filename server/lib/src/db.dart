@@ -518,6 +518,14 @@ class Store {
     return (data: rows.first['data'] as String, updatedAt: DateTime.parse(rows.first['updated_at'] as String));
   }
 
+  /// Az e-mailes fiókok szinkronizált adatai (a riasztásfigyelőnek).
+  List<({String userId, String email, String data})> syncedAccounts() => [
+    for (final r in _db.select(
+      'SELECT s.user_id, u.email, s.data FROM user_sync s JOIN users u ON u.id = s.user_id WHERE u.email IS NOT NULL',
+    ))
+      (userId: r['user_id'] as String, email: r['email'] as String, data: r['data'] as String),
+  ];
+
   DateTime saveSyncData(String userId, String data) {
     final now = clock().toUtc();
     _db.execute(

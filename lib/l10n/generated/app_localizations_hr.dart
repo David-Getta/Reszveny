@@ -1793,4 +1793,15 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get syncFailed =>
       'Sinkronizacija nije uspjela. Automatski će se pokušati ponovno.';
+
+  @override
+  String get alertEmailTitle => 'E-pošta kad se obavijest aktivira';
+
+  @override
+  String get alertEmailOn =>
+      'Vaše obavijesti provjeravamo svakih nekoliko minuta i šaljemo vam e-poštu, čak i kad je aplikacija zatvorena.';
+
+  @override
+  String get alertEmailSignIn =>
+      'Prijavite se e-poštom u Postavkama da biste obavijesti primali e-poštom, čak i kad je aplikacija zatvorena.';
 }

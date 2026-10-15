@@ -129,6 +129,14 @@ szerveren tárolt fiókcsomaggal szinkronizálja (`GET`/`PUT /v1/sync`, legfelje
 e-mailes fiók írhat; a fiók törlésekor ez is törlődik. Az adatkezelési tájékoztatóba ezt is bele
 kell írni (portfólió és jegyzetek a szerveren, ha a felhasználó belép).
 
+## Riasztás e-mailben (csukott appnál is)
+
+A szerver `ALERT_CHECK_MINUTES` percenként (alapból 10; 0 = ki) végignézi az e-mailes fiókok
+szinkronizált, aktív árfolyam-riasztásait (Finnhub ár). Ha egy teljesül, megjelöli (a készülékek a
+következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén (magyar vagy angol) – egy
+riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
+`RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül).
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes
