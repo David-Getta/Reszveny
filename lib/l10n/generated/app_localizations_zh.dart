@@ -1634,6 +1634,41 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get peersTitle => '同类公司';
+
+  @override
+  String get portfolioExport => '导出为 CSV';
+
+  @override
+  String get portfolioImport => '从 CSV 导入';
+
+  @override
+  String get portfolioImportHint =>
+      '每行粘贴一笔买入：股票代码、数量、价格、货币、日期（YYYY-MM-DD）。各列可用逗号、分号或制表符分隔；标题行可省略。';
+
+  @override
+  String get portfolioImportButton => '导入';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已添加 $count 笔买入',
+      one: '已添加 1 笔买入',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已跳过 $count 行',
+      one: '已跳过 1 行',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3264,4 +3299,39 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get peersTitle => '同類公司';
+
+  @override
+  String get portfolioExport => '匯出為 CSV';
+
+  @override
+  String get portfolioImport => '從 CSV 匯入';
+
+  @override
+  String get portfolioImportHint =>
+      '每行貼上一筆買入：股票代號、數量、價格、貨幣、日期（YYYY-MM-DD）。各欄可用逗號、分號或定位字元分隔；標題行可省略。';
+
+  @override
+  String get portfolioImportButton => '匯入';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已加入 $count 筆買入',
+      one: '已加入 1 筆買入',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已略過 $count 行',
+      one: '已略過 1 行',
+    );
+    return '$_temp0';
+  }
 }

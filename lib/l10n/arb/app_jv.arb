@@ -465,5 +465,11 @@
   "notesHint": "Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?",
   "notesInfo": "Mung disimpen ing piranti iki. Analisis AI nggatekake cathetan sampeyan.",
   "notesSaved": "Disimpen {date}",
-  "peersTitle": "Perusahaan sing padha"
+  "peersTitle": "Perusahaan sing padha",
+  "portfolioExport": "Ekspor dadi CSV",
+  "portfolioImport": "Impor saka CSV",
+  "portfolioImportHint": "Tempelake siji tukon saben baris: kode saham, jumlah, rega, mata uang, tanggal (YYYY-MM-DD). Kolom bisa dipisah nganggo koma, titik koma utawa tab; baris irah-irahan ora wajib.",
+  "portfolioImportButton": "Impor",
+  "portfolioImported": "{count, plural, =1{1 tukon wis ditambahake} other{{count} tukon wis ditambahake}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 baris dilewati} other{{count} baris dilewati}}"
 }

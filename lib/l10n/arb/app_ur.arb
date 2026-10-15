@@ -465,5 +465,11 @@
   "notesHint": "آپ نے اسے کیوں خریدا، آپ کس چیز پر نظر رکھ رہے ہیں، کس بات پر آپ اسے بیچیں گے؟",
   "notesInfo": "صرف اسی ڈیوائس پر محفوظ ہوتا ہے۔ AI تجزیہ آپ کے نوٹس کو مدِنظر رکھتا ہے۔",
   "notesSaved": "محفوظ کیا گیا {date}",
-  "peersTitle": "ملتی جلتی کمپنیاں"
+  "peersTitle": "ملتی جلتی کمپنیاں",
+  "portfolioExport": "CSV کے طور پر ایکسپورٹ کریں",
+  "portfolioImport": "CSV سے امپورٹ کریں",
+  "portfolioImportHint": "ہر سطر میں ایک خریداری پیسٹ کریں: ٹکر، مقدار، قیمت، کرنسی، تاریخ (YYYY-MM-DD)۔ کالموں کو کوما، سیمی کولن یا ٹیب سے الگ کیا جا سکتا ہے؛ ہیڈر کی سطر اختیاری ہے۔",
+  "portfolioImportButton": "امپورٹ کریں",
+  "portfolioImported": "{count, plural, =1{1 خریداری شامل کر دی گئی} other{{count} خریداریاں شامل کر دی گئیں}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 سطر چھوڑ دی گئی} other{{count} سطریں چھوڑ دی گئیں}}"
 }

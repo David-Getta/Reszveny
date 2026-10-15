@@ -1707,4 +1707,39 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get peersTitle => 'O\'xshash kompaniyalar';
+
+  @override
+  String get portfolioExport => 'CSV sifatida eksport qilish';
+
+  @override
+  String get portfolioImport => 'CSV dan import qilish';
+
+  @override
+  String get portfolioImportHint =>
+      'Har bir qatorga bitta xaridni joylang: tiker, miqdor, narx, valyuta, sana (YYYY-OO-KK). Ustunlar vergul, nuqtali vergul yoki tab bilan ajratilishi mumkin; sarlavha qatori ixtiyoriy.';
+
+  @override
+  String get portfolioImportButton => 'Import qilish';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta xarid qoʻshildi',
+      one: '1 ta xarid qoʻshildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta qator oʻtkazib yuborildi',
+      one: '1 ta qator oʻtkazib yuborildi',
+    );
+    return '$_temp0';
+  }
 }

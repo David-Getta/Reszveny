@@ -465,5 +465,11 @@
   "notesHint": "ਤੁਸੀਂ ਇਹ ਕਿਉਂ ਖਰੀਦਿਆ, ਕਿਸ ਗੱਲ ’ਤੇ ਨਜ਼ਰ ਰੱਖ ਰਹੇ ਹੋ, ਕੀ ਹੋਣ ’ਤੇ ਵੇਚੋਗੇ?",
   "notesInfo": "ਸਿਰਫ਼ ਇਸੇ ਡਿਵਾਈਸ ’ਤੇ ਸੁਰੱਖਿਅਤ ਹੈ। AI ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੇ ਨੋਟਾਂ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।",
   "notesSaved": "ਸੁਰੱਖਿਅਤ ਕੀਤਾ: {date}",
-  "peersTitle": "ਮਿਲਦੀਆਂ-ਜੁਲਦੀਆਂ ਕੰਪਨੀਆਂ"
+  "peersTitle": "ਮਿਲਦੀਆਂ-ਜੁਲਦੀਆਂ ਕੰਪਨੀਆਂ",
+  "portfolioExport": "CSV ਵਜੋਂ ਨਿਰਯਾਤ ਕਰੋ",
+  "portfolioImport": "CSV ਤੋਂ ਆਯਾਤ ਕਰੋ",
+  "portfolioImportHint": "ਹਰ ਲਾਈਨ ਵਿੱਚ ਇੱਕ ਖ਼ਰੀਦ ਪੇਸਟ ਕਰੋ: ਟਿਕਰ, ਮਾਤਰਾ, ਕੀਮਤ, ਮੁਦਰਾ, ਮਿਤੀ (YYYY-MM-DD)। ਕਾਲਮ ਕੌਮੇ, ਸੈਮੀਕੋਲਨ ਜਾਂ ਟੈਬ ਨਾਲ ਵੱਖ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ; ਸਿਰਲੇਖ ਵਾਲੀ ਲਾਈਨ ਵਿਕਲਪਿਕ ਹੈ।",
+  "portfolioImportButton": "ਆਯਾਤ ਕਰੋ",
+  "portfolioImported": "{count, plural, =1{1 ਖ਼ਰੀਦ ਜੋੜੀ ਗਈ} other{{count} ਖ਼ਰੀਦਾਂ ਜੋੜੀਆਂ ਗਈਆਂ}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 ਲਾਈਨ ਛੱਡੀ ਗਈ} other{{count} ਲਾਈਨਾਂ ਛੱਡੀਆਂ ਗਈਆਂ}}"
 }

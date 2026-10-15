@@ -1711,4 +1711,39 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get peersTitle => 'സമാന കമ്പനികൾ';
+
+  @override
+  String get portfolioExport => 'CSV ആയി എക്സ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get portfolioImport => 'CSV-യിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get portfolioImportHint =>
+      'ഓരോ വരിയിലും ഒരു വാങ്ങൽ ഒട്ടിക്കുക: ടിക്കർ, അളവ്, വില, കറൻസി, തീയതി (YYYY-MM-DD). കോളങ്ങൾ കോമ, സെമികോളൻ അല്ലെങ്കിൽ ടാബ് ഉപയോഗിച്ച് വേർതിരിക്കാം; തലക്കെട്ട് വരി ഐച്ഛികമാണ്.';
+
+  @override
+  String get portfolioImportButton => 'ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count വാങ്ങലുകൾ ചേർത്തു',
+      one: '1 വാങ്ങൽ ചേർത്തു',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count വരികൾ ഒഴിവാക്കി',
+      one: '1 വരി ഒഴിവാക്കി',
+    );
+    return '$_temp0';
+  }
 }

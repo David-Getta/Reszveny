@@ -1708,4 +1708,39 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get peersTitle => 'Dɔwɔƒe siwo sɔ kplii';
+
+  @override
+  String get portfolioExport => 'Ɖoe ɖa abe CSV ene';
+
+  @override
+  String get portfolioImport => 'Xɔe tso CSV me';
+
+  @override
+  String get portfolioImportHint =>
+      'Tsɔ nuƒeƒle ɖeka de fli ɖesiaɖe me: ticker dzesi, xexlẽme, asi, ga ƒomevi, ŋkeke (YYYY-MM-DD). Woate ŋu ama tsitreƒewo kple koma, semikolɔn alo tab; tanyaŋlɔ fli la mehiã o.';
+
+  @override
+  String get portfolioImportButton => 'Xɔe';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wotsɔ nuƒeƒle $count kpe ɖe eŋu',
+      one: 'Wotsɔ nuƒeƒle 1 kpe ɖe eŋu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Woɖe asi le fli $count ŋu',
+      one: 'Woɖe asi le fli 1 ŋu',
+    );
+    return '$_temp0';
+  }
 }

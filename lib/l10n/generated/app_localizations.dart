@@ -3132,6 +3132,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Similar companies'**
   String get peersTitle;
+
+  /// No description provided for @portfolioExport.
+  ///
+  /// In en, this message translates to:
+  /// **'Export as CSV'**
+  String get portfolioExport;
+
+  /// No description provided for @portfolioImport.
+  ///
+  /// In en, this message translates to:
+  /// **'Import from CSV'**
+  String get portfolioImport;
+
+  /// No description provided for @portfolioImportHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste one purchase per line: ticker, quantity, price, currency, date (YYYY-MM-DD). Columns may be separated by commas, semicolons or tabs; the header row is optional.'**
+  String get portfolioImportHint;
+
+  /// No description provided for @portfolioImportButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Import'**
+  String get portfolioImportButton;
+
+  /// After importing: how many purchases were added.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 purchase added} other{{count} purchases added}}'**
+  String portfolioImported(int count);
+
+  /// After importing: how many lines could not be read.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 line skipped} other{{count} lines skipped}}'**
+  String portfolioImportSkipped(int count);
 }
 
 class _AppLocalizationsDelegate

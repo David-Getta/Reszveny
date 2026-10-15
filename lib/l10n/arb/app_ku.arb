@@ -465,5 +465,11 @@
   "notesHint": "Te çima kirî, tu li çi dinêrî, çi dê bike ku tu bifiroşî?",
   "notesInfo": "Tenê li ser vê amûrê tê tomarkirin. Analîza AI notên te li ber çavan digire.",
   "notesSaved": "Hat tomarkirin: {date}",
-  "peersTitle": "Şirketên wekhev"
+  "peersTitle": "Şirketên wekhev",
+  "portfolioExport": "Wekî CSV derxe",
+  "portfolioImport": "Ji CSV-ê têxe",
+  "portfolioImportHint": "Di her rêzê de kirînek bixe: sembola pişkê, hejmar, biha, dirav, dîrok (SSSS-MM-RR). Stûn dikarin bi bêhnok, xalbêhnok an tabê werin veqetandin; rêza sernavê ne mecbûrî ye.",
+  "portfolioImportButton": "Têxe",
+  "portfolioImported": "{count, plural, =1{1 kirîn hat zêdekirin} other{{count} kirîn hatin zêdekirin}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 rêz hat derbaskirin} other{{count} rêz hatin derbaskirin}}"
 }

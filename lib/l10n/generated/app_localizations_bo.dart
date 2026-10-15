@@ -1696,4 +1696,37 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get peersTitle => 'འདྲ་མཚུངས་ཀུང་སི';
+
+  @override
+  String get portfolioExport => 'CSV ཡི་རྣམ་པར་ཕྱིར་འདྲེན།';
+
+  @override
+  String get portfolioImport => 'CSV ནས་ནང་འདྲེན།';
+
+  @override
+  String get portfolioImportHint =>
+      'ཕྲེང་རེ་རེར་ཉོ་སྒྲུབ་རེ་སྦྱོར་རོགས། ཧུར་ཁག་ཨང་རྟགས། གྲངས་ཀ། རིན་གོང་། དངུལ་ལོར། ཚེས་གྲངས། (YYYY-MM-DD) ཀ་བ་རྣམས་ , དང་ ; ཡང་ན་ tab ཡིས་ཁ་འབྱེད་ཆོག མགོ་བྱང་གི་ཕྲེང་ནི་གདམ་ཀ་ཡིན།';
+
+  @override
+  String get portfolioImportButton => 'ནང་འདྲེན།';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉོ་སྒྲུབ་ $count ཁ་སྣོན་བྱས་ཟིན།',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཕྲེང་ $count མཆོང་ཟིན།',
+    );
+    return '$_temp0';
+  }
 }

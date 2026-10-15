@@ -465,5 +465,11 @@
   "notesHint": "Kodėl ją įsigijote, ką stebite, kas paskatintų parduoti?",
   "notesInfo": "Saugoma tik šiame įrenginyje. DI analizė atsižvelgia į jūsų užrašus.",
   "notesSaved": "Išsaugota {date}",
-  "peersTitle": "Panašios įmonės"
+  "peersTitle": "Panašios įmonės",
+  "portfolioExport": "Eksportuoti kaip CSV",
+  "portfolioImport": "Importuoti iš CSV",
+  "portfolioImportHint": "Įklijuokite po vieną pirkimą eilutėje: akcijos simbolis, kiekis, kaina, valiuta, data (MMMM-MM-DD). Stulpeliai gali būti atskirti kableliais, kabliataškiais arba tabuliacijos ženklais; antraštės eilutė neprivaloma.",
+  "portfolioImportButton": "Importuoti",
+  "portfolioImported": "{count, plural, one{Pridėtas {count} pirkimas} few{Pridėti {count} pirkimai} many{Pridėta {count} pirkimo} other{Pridėta {count} pirkimų}}",
+  "portfolioImportSkipped": "{count, plural, one{Praleista {count} eilutė} few{Praleistos {count} eilutės} many{Praleista {count} eilutės} other{Praleista {count} eilučių}}"
 }

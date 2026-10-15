@@ -1704,4 +1704,39 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get peersTitle => 'සමාන සමාගම්';
+
+  @override
+  String get portfolioExport => 'CSV ලෙස අපනයනය කරන්න';
+
+  @override
+  String get portfolioImport => 'CSV වෙතින් ආනයනය කරන්න';
+
+  @override
+  String get portfolioImportHint =>
+      'එක් පේළියකට එක් මිලදී ගැනීමක් අලවන්න: ටිකර්, ප්‍රමාණය, මිල, මුදල් ඒකකය, දිනය (YYYY-MM-DD). තීරු කොමා, අර්ධ විරාම හෝ ටැබ් මගින් වෙන් කළ හැක; ශීර්ෂ පේළිය අත්‍යවශ්‍ය නොවේ.';
+
+  @override
+  String get portfolioImportButton => 'ආනයනය කරන්න';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'මිලදී ගැනීම් $countක් එක් කළා',
+      one: 'මිලදී ගැනීමක් එක් කළා',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'පේළි $countක් මඟ හැරියා',
+      one: 'පේළියක් මඟ හැරියා',
+    );
+    return '$_temp0';
+  }
 }

@@ -1716,4 +1716,39 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get peersTitle => 'Dikhamphani tše di swanago';
+
+  @override
+  String get portfolioExport => 'Romela ka ntle bjalo ka CSV';
+
+  @override
+  String get portfolioImport => 'Tsenya go tšwa go CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Kgomaretša theko e tee mothalong o mongwe le o mongwe: leswao la ticker, bontši, tefelo, tšhelete, letšatšikgwedi (YYYY-MM-DD). Dikholomo di ka arogantšwa ka khoma, semikholone goba tab; mothalo wa dihlogo ke boikgethelo.';
+
+  @override
+  String get portfolioImportButton => 'Tsenya';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go okeditšwe ditheko tše $count',
+      one: 'Go okeditšwe theko e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go tlogetšwe methalo ye $count',
+      one: 'Go tlogetšwe mothalo o 1',
+    );
+    return '$_temp0';
+  }
 }

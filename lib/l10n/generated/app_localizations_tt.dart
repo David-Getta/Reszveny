@@ -1701,4 +1701,39 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get peersTitle => 'Охшаш компанияләр';
+
+  @override
+  String get portfolioExport => 'CSV итеп экспортлау';
+
+  @override
+  String get portfolioImport => 'CSV-тан импортлау';
+
+  @override
+  String get portfolioImportHint =>
+      'Һәр юлга бер сатып алуны куегыз: тикер, саны, бәясе, валюта, дата (ЕЕЕЕ-АА-КК). Баганалар өтер, нокталы өтер яки табуляция белән аерылырга мөмкин; башлык юлы мәҗбүри түгел.';
+
+  @override
+  String get portfolioImportButton => 'Импортлау';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сатып алу өстәлде',
+      one: '1 сатып алу өстәлде',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count юл калдырылды',
+      one: '1 юл калдырылды',
+    );
+    return '$_temp0';
+  }
 }

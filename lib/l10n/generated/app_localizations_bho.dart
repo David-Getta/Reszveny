@@ -1701,4 +1701,39 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get peersTitle => 'मिलत-जुलत कंपनी';
+
+  @override
+  String get portfolioExport => 'CSV के रूप में निर्यात करीं';
+
+  @override
+  String get portfolioImport => 'CSV से आयात करीं';
+
+  @override
+  String get portfolioImportHint =>
+      'हर लाइन में एगो खरीदारी पेस्ट करीं: टिकर सिंबल, मात्रा, दाम, मुद्रा, तारीख (YYYY-MM-DD)। कॉलम कॉमा, सेमीकोलन भा टैब से अलग हो सकेला; हेडर लाइन जरूरी नइखे।';
+
+  @override
+  String get portfolioImportButton => 'आयात करीं';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count खरीदारी जोड़ल गइल',
+      one: '1 खरीदारी जोड़ल गइल',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count लाइन छोड़ल गइल',
+      one: '1 लाइन छोड़ल गइल',
+    );
+    return '$_temp0';
+  }
 }

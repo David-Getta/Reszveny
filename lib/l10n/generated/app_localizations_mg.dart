@@ -1717,4 +1717,39 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Orinasa mitovy';
+
+  @override
+  String get portfolioExport => 'Avoahy ho CSV';
+
+  @override
+  String get portfolioImport => 'Ampidiro avy amin\'ny CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Apetaho fividianana iray isaky ny andalana: ticker, isa, vidiny, vola, daty (YYYY-MM-DD). Azo saraina amin\'ny faingo, teboka misy faingo na tabulation ny tsanganana; tsy voatery ny andalana lohateny.';
+
+  @override
+  String get portfolioImportButton => 'Ampidiro';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nampiana fividianana $count',
+      one: 'Nampiana fividianana 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nadingana andalana $count',
+      one: 'Nadingana andalana 1',
+    );
+    return '$_temp0';
+  }
 }

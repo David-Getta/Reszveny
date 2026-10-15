@@ -1707,4 +1707,39 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get peersTitle => 'Şirketên wekhev';
+
+  @override
+  String get portfolioExport => 'Wekî CSV derxe';
+
+  @override
+  String get portfolioImport => 'Ji CSV-ê têxe';
+
+  @override
+  String get portfolioImportHint =>
+      'Di her rêzê de kirînek bixe: sembola pişkê, hejmar, biha, dirav, dîrok (SSSS-MM-RR). Stûn dikarin bi bêhnok, xalbêhnok an tabê werin veqetandin; rêza sernavê ne mecbûrî ye.';
+
+  @override
+  String get portfolioImportButton => 'Têxe';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kirîn hatin zêdekirin',
+      one: '1 kirîn hat zêdekirin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rêz hatin derbaskirin',
+      one: '1 rêz hat derbaskirin',
+    );
+    return '$_temp0';
+  }
 }

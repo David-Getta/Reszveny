@@ -465,5 +465,11 @@
   "notesHint": "Maaliif bitte, maal hordofaa jirta, maaltu akka gurgurtu si taasisa?",
   "notesInfo": "Meeshaa kana qofa irratti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.",
   "notesSaved": "Kuufame: {date}",
-  "peersTitle": "Dhaabbilee walfakkaatan"
+  "peersTitle": "Dhaabbilee walfakkaatan",
+  "portfolioExport": "Akka CSV-tti ergi",
+  "portfolioImport": "CSV irraa galchi",
+  "portfolioImportHint": "Sarara tokkotti bittaa tokko maxxansi: mallattoo aksiyoonaa, baay'ina, gatii, maallaqa, guyyaa (YYYY-MM-DD). Utubaawwan qoodduu, qoodduu-tuqaa ykn tab'n addaan baafamuu danda'u; sararri mataduree dirqama miti.",
+  "portfolioImportButton": "Galchi",
+  "portfolioImported": "{count, plural, =1{Bittaan 1 dabalameera} other{Bittaawwan {count} dabalamaniiru}}",
+  "portfolioImportSkipped": "{count, plural, =1{Sararri 1 darbameera} other{Sararoonni {count} darbamaniiru}}"
 }

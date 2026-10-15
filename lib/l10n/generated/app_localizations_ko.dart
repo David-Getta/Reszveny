@@ -1655,4 +1655,39 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get peersTitle => '유사 기업';
+
+  @override
+  String get portfolioExport => 'CSV로 내보내기';
+
+  @override
+  String get portfolioImport => 'CSV에서 가져오기';
+
+  @override
+  String get portfolioImportHint =>
+      '한 줄에 매수 1건씩 붙여 넣으세요: 티커 심볼, 수량, 가격, 통화, 날짜(YYYY-MM-DD). 열은 쉼표, 세미콜론 또는 탭으로 구분할 수 있으며, 머리글 행은 선택 사항입니다.';
+
+  @override
+  String get portfolioImportButton => '가져오기';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '매수 $count건이 추가되었습니다',
+      one: '매수 1건이 추가되었습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count줄을 건너뛰었습니다',
+      one: '1줄을 건너뛰었습니다',
+    );
+    return '$_temp0';
+  }
 }

@@ -1711,4 +1711,39 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kompani të ngjashme';
+
+  @override
+  String get portfolioExport => 'Eksporto si CSV';
+
+  @override
+  String get portfolioImport => 'Importo nga CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ngjit një blerje për rresht: simboli i aksionit, sasia, çmimi, monedha, data (VVVV-MM-DD). Kolonat mund të ndahen me presje, pikëpresje ose tabulacione; rreshti i titujve është opsional.';
+
+  @override
+  String get portfolioImportButton => 'Importo';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U shtuan $count blerje',
+      one: 'U shtua 1 blerje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U anashkaluan $count rreshta',
+      one: 'U anashkalua 1 rresht',
+    );
+    return '$_temp0';
+  }
 }

@@ -1740,4 +1740,41 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get peersTitle => 'Slične tvrtke';
+
+  @override
+  String get portfolioExport => 'Izvezi kao CSV';
+
+  @override
+  String get portfolioImport => 'Uvezi iz CSV-a';
+
+  @override
+  String get portfolioImportHint =>
+      'Zalijepite jednu kupnju po retku: ticker simbol, količina, cijena, valuta, datum (GGGG-MM-DD). Stupci mogu biti odvojeni zarezima, točkama sa zarezom ili tabulatorima; redak sa zaglavljem nije obavezan.';
+
+  @override
+  String get portfolioImportButton => 'Uvezi';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano je $count kupnji',
+      few: 'Dodane su $count kupnje',
+      one: 'Dodana je $count kupnja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Preskočeno je $count redaka',
+      few: 'Preskočena su $count retka',
+      one: 'Preskočen je $count redak',
+    );
+    return '$_temp0';
+  }
 }

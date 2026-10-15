@@ -1692,4 +1692,39 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get peersTitle => 'Ãterpriz sẽn wõnda';
+
+  @override
+  String get portfolioExport => 'Yiis CSV pʋgẽ';
+
+  @override
+  String get portfolioImport => 'Kẽes n yi CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ning raab a ye sẽ fãa pʋgẽ: aksiõ bãnde (ticker), sõor, ligdi, ligd buudu, raar (YYYY-MM-DD). Tõe n welg kolon-rãmbã ne virgil, pwẽ-virgil bɩ tab; zug sẽ-pɛɛlgã pa tilae ye.';
+
+  @override
+  String get portfolioImportButton => 'Kẽes';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'B paasa raaba $count',
+      one: 'B paasa raab a yembre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'B bas sẽ-rãmb $count',
+      one: 'B bas sẽ a yembre',
+    );
+    return '$_temp0';
+  }
 }

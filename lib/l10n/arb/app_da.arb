@@ -465,5 +465,11 @@
   "notesHint": "Hvorfor købte du den, hvad holder du øje med, og hvad ville få dig til at sælge?",
   "notesInfo": "Gemmes kun på denne enhed. AI-analysen tager højde for dine noter.",
   "notesSaved": "Gemt {date}",
-  "peersTitle": "Lignende virksomheder"
+  "peersTitle": "Lignende virksomheder",
+  "portfolioExport": "Eksportér som CSV",
+  "portfolioImport": "Importér fra CSV",
+  "portfolioImportHint": "Indsæt ét køb pr. linje: tickersymbol, antal, pris, valuta, dato (ÅÅÅÅ-MM-DD). Kolonner kan adskilles med kommaer, semikoloner eller tabulatorer; overskriftslinjen er valgfri.",
+  "portfolioImportButton": "Importér",
+  "portfolioImported": "{count, plural, =1{1 køb tilføjet} other{{count} køb tilføjet}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 linje sprunget over} other{{count} linjer sprunget over}}"
 }

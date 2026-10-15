@@ -1711,4 +1711,39 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get peersTitle => 'Shirkado la mid ah';
+
+  @override
+  String get portfolioExport => 'U dhoofi sida CSV';
+
+  @override
+  String get portfolioImport => 'Ka soo deji CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ku dheji hal iibsasho saf kasta: astaanta saamiga, tirada, qiimaha, lacagta, taariikhda (YYYY-MM-DD). Tiirarka waxaa lagu kala saari karaa hakad, hakad-joog ama tab; safka cinwaanku waa ikhtiyaari.';
+
+  @override
+  String get portfolioImportButton => 'Soo deji';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iibsasho ayaa lagu daray',
+      one: '1 iibsasho ayaa lagu daray',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saf ayaa laga booday',
+      one: '1 saf ayaa laga booday',
+    );
+    return '$_temp0';
+  }
 }

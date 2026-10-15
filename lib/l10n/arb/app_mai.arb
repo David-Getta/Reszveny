@@ -465,5 +465,11 @@
   "notesHint": "अहाँ ई किएक किनलहुँ, कथी पर नजरि रखने छी, की भेला पर बेचब?",
   "notesInfo": "केवल एही डिवाइस पर सहेजल जाइत अछि। AI विश्लेषण अहाँक नोटकेँ ध्यानमे रखैत अछि।",
   "notesSaved": "सहेजल गेल {date}",
-  "peersTitle": "समान कंपनी सभ"
+  "peersTitle": "समान कंपनी सभ",
+  "portfolioExport": "CSV मे निर्यात करू",
+  "portfolioImport": "CSV सँ आयात करू",
+  "portfolioImportHint": "प्रति पाँती एकटा खरीदारी साटू: टिकर, संख्या, मूल्य, मुद्रा, तिथि (YYYY-MM-DD)। स्तम्भ कॉमा, सेमीकोलन वा टैब सँ अलग भ' सकैत अछि; शीर्ष पाँती वैकल्पिक अछि।",
+  "portfolioImportButton": "आयात करू",
+  "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ल गेल} other{{count} खरीदारी जोड़ल गेल}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 पाँती छोड़ल गेल} other{{count} पाँती छोड़ल गेल}}"
 }

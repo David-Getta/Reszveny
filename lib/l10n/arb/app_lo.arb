@@ -465,5 +465,11 @@
   "notesHint": "ເປັນຫຍັງທ່ານຈຶ່ງຊື້ ທ່ານກຳລັງຕິດຕາມຫຍັງ ແລະ ຫຍັງຈະເຮັດໃຫ້ທ່ານຂາຍ?",
   "notesInfo": "ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ການວິເຄາະດ້ວຍ AI ຈະພິຈາລະນາບັນທຶກຂອງທ່ານ",
   "notesSaved": "ບັນທຶກແລ້ວ {date}",
-  "peersTitle": "ບໍລິສັດທີ່ຄ້າຍຄືກັນ"
+  "peersTitle": "ບໍລິສັດທີ່ຄ້າຍຄືກັນ",
+  "portfolioExport": "ສົ່ງອອກເປັນ CSV",
+  "portfolioImport": "ນຳເຂົ້າຈາກ CSV",
+  "portfolioImportHint": "ວາງການຊື້ໜຶ່ງລາຍການຕໍ່ແຖວ: ສັນຍາລັກຮຸ້ນ, ຈຳນວນ, ລາຄາ, ສະກຸນເງິນ, ວັນທີ (YYYY-MM-DD). ຖັນສາມາດແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ (,), ຈຸດໂຄ່ງ (;) ຫຼື ແທັບ; ແຖວຫົວຂໍ້ບໍ່ບັງຄັບ.",
+  "portfolioImportButton": "ນຳເຂົ້າ",
+  "portfolioImported": "{count, plural, other{ເພີ່ມການຊື້ {count} ລາຍການແລ້ວ}}",
+  "portfolioImportSkipped": "{count, plural, other{ຂ້າມ {count} ແຖວແລ້ວ}}"
 }

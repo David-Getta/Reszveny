@@ -1755,4 +1755,43 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get peersTitle => 'Podobné spoločnosti';
+
+  @override
+  String get portfolioExport => 'Exportovať do CSV';
+
+  @override
+  String get portfolioImport => 'Importovať z CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Vlož jeden nákup na riadok: ticker, množstvo, cena, mena, dátum (RRRR-MM-DD). Stĺpce môžu byť oddelené čiarkami, bodkočiarkami alebo tabulátormi; riadok hlavičky je nepovinný.';
+
+  @override
+  String get portfolioImportButton => 'Importovať';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridaných $count nákupov',
+      many: 'Pridané $count nákupu',
+      few: 'Pridané $count nákupy',
+      one: 'Pridaný 1 nákup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Preskočených $count riadkov',
+      many: 'Preskočené $count riadku',
+      few: 'Preskočené $count riadky',
+      one: 'Preskočený 1 riadok',
+    );
+    return '$_temp0';
+  }
 }

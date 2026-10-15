@@ -1701,4 +1701,39 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get peersTitle => 'חברות דומות';
+
+  @override
+  String get portfolioExport => 'ייצוא כ-CSV';
+
+  @override
+  String get portfolioImport => 'ייבוא מ-CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'יש להדביק רכישה אחת בכל שורה: סימול המניה, כמות, מחיר, מטבע, תאריך (YYYY-MM-DD). אפשר להפריד בין העמודות בפסיקים, בנקודה-פסיק או בטאבים; שורת הכותרת אינה חובה.';
+
+  @override
+  String get portfolioImportButton => 'ייבוא';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נוספו $count רכישות',
+      one: 'נוספה רכישה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count שורות דולגו',
+      one: 'שורה אחת דולגה',
+    );
+    return '$_temp0';
+  }
 }

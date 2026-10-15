@@ -1705,4 +1705,39 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get peersTitle => 'Companies wey be like am';
+
+  @override
+  String get portfolioExport => 'Export am as CSV';
+
+  @override
+  String get portfolioImport => 'Import from CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Paste one tin wey you buy for each line: ticker, quantity, price, currency, date (YYYY-MM-DD). You fit use comma, semicolon or tab separate di columns; di header line no dey compulsory.';
+
+  @override
+  String get portfolioImportButton => 'Import';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don add $count tins wey you buy',
+      one: 'We don add $count tin wey you buy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We skip $count lines',
+      one: 'We skip $count line',
+    );
+    return '$_temp0';
+  }
 }

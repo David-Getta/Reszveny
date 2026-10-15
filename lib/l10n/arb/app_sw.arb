@@ -465,5 +465,11 @@
   "notesHint": "Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?",
   "notesInfo": "Huhifadhiwa kwenye kifaa hiki pekee. Uchambuzi wa AI huzingatia madokezo yako.",
   "notesSaved": "Imehifadhiwa {date}",
-  "peersTitle": "Kampuni zinazofanana"
+  "peersTitle": "Kampuni zinazofanana",
+  "portfolioExport": "Hamisha kama CSV",
+  "portfolioImport": "Leta kutoka CSV",
+  "portfolioImportHint": "Bandika ununuzi mmoja kwa kila mstari: ticker, idadi, bei, sarafu, tarehe (YYYY-MM-DD). Safu wima zinaweza kutenganishwa kwa koma, nukta-koma au tabo; mstari wa vichwa ni wa hiari.",
+  "portfolioImportButton": "Leta",
+  "portfolioImported": "{count, plural, =1{Ununuzi 1 umeongezwa} other{Manunuzi {count} yameongezwa}}",
+  "portfolioImportSkipped": "{count, plural, =1{Mstari 1 umerukwa} other{Mistari {count} imerukwa}}"
 }

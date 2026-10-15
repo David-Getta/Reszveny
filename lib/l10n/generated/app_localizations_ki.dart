@@ -1705,4 +1705,39 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kambuni iria ihaanaine';
+
+  @override
+  String get portfolioExport => 'Ruta ta CSV';
+
+  @override
+  String get portfolioImport => 'Ingĩria kuuma CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ĩkĩra ũgũri ũmwe o mũhari-inĩ: ticker ya hisa, mũigana, thogora, mbeca, tarehe (YYYY-MM-DD). Mĩhari ĩrũgamĩte no yamũranio na koma, semicolon kana tab; mũhari wa kĩongo ti wa bata.';
+
+  @override
+  String get portfolioImportButton => 'Ingĩria';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ũgũri $count nĩ wongereirwo',
+      one: 'Ũgũri 1 nĩ wongereirwo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩhari $count nĩ yagũrũkwo',
+      one: 'Mũhari 1 nĩ wagũrũkwo',
+    );
+    return '$_temp0';
+  }
 }

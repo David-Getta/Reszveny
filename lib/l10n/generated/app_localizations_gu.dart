@@ -1702,4 +1702,39 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get peersTitle => 'સમાન કંપનીઓ';
+
+  @override
+  String get portfolioExport => 'CSV તરીકે નિકાસ કરો';
+
+  @override
+  String get portfolioImport => 'CSVમાંથી આયાત કરો';
+
+  @override
+  String get portfolioImportHint =>
+      'દરેક લાઇનમાં એક ખરીદી પેસ્ટ કરો: ટિકર સિમ્બોલ, જથ્થો, કિંમત, ચલણ, તારીખ (YYYY-MM-DD). કૉલમને અલ્પવિરામ, અર્ધવિરામ અથવા ટૅબથી અલગ કરી શકાય છે; હેડર લાઇન વૈકલ્પિક છે.';
+
+  @override
+  String get portfolioImportButton => 'આયાત કરો';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ખરીદીઓ ઉમેરાઈ',
+      one: '1 ખરીદી ઉમેરાઈ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count લાઇન છોડી દેવાઈ',
+      one: '1 લાઇન છોડી દેવાઈ',
+    );
+    return '$_temp0';
+  }
 }

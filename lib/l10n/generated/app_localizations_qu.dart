@@ -1715,4 +1715,39 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kaqlla empresakuna';
+
+  @override
+  String get portfolioExport => 'CSV hina hurquy';
+
+  @override
+  String get portfolioImport => 'CSV-manta apamuy';
+
+  @override
+  String get portfolioImportHint =>
+      'Sapa siqipi huk rantisqata k\'askachiy: ticker, hayk\'a, chanin, qullqi, p\'unchaw (YYYY-MM-DD). Columnakunaqa comawan, punto y comawan utaq tabwan t\'aqasqa kanman; uma siqiqa mana necesariochu.';
+
+  @override
+  String get portfolioImportButton => 'Apamuy';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rantisqa yapakun',
+      one: '1 rantisqa yapakun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count siqi saqisqa',
+      one: '1 siqi saqisqa',
+    );
+    return '$_temp0';
+  }
 }

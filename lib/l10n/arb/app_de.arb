@@ -465,5 +465,11 @@
   "notesHint": "Warum hast du sie gekauft, worauf achtest du, was würde dich zum Verkauf bewegen?",
   "notesInfo": "Nur auf diesem Gerät gespeichert. Die KI-Analyse berücksichtigt deine Notizen.",
   "notesSaved": "Gespeichert {date}",
-  "peersTitle": "Ähnliche Unternehmen"
+  "peersTitle": "Ähnliche Unternehmen",
+  "portfolioExport": "Als CSV exportieren",
+  "portfolioImport": "Aus CSV importieren",
+  "portfolioImportHint": "Einen Kauf pro Zeile einfügen: Tickersymbol, Menge, Preis, Währung, Datum (JJJJ-MM-TT). Spalten können durch Kommas, Semikolons oder Tabulatoren getrennt sein; die Kopfzeile ist optional.",
+  "portfolioImportButton": "Importieren",
+  "portfolioImported": "{count, plural, =1{1 Kauf hinzugefügt} other{{count} Käufe hinzugefügt}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 Zeile übersprungen} other{{count} Zeilen übersprungen}}"
 }

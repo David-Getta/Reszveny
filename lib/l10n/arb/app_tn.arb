@@ -465,5 +465,11 @@
   "notesHint": "Goreng o e rekile, o ela tlhoko eng, ke eng se se ka dirang gore o e rekise?",
   "notesInfo": "E bolokilwe mo sedirisiweng seno fela. Tshekatsheko ya AI e tsaya dintlha tsa gago tsia.",
   "notesSaved": "E bolokilwe {date}",
-  "peersTitle": "Dikompone tse di tshwanang"
+  "peersTitle": "Dikompone tse di tshwanang",
+  "portfolioExport": "Romela kwa ntle jaaka CSV",
+  "portfolioImport": "Tsenya go tswa mo CSV",
+  "portfolioImportHint": "Kgomaretsa theko e le nngwe mo moleng mongwe le mongwe: ticker, palo, tlhwatlhwa, mofuta wa madi, letlha (YYYY-MM-DD). Dikholomo di ka kgaoganngwa ka dikhoma, disemikholone kgotsa di-tab; mola wa ditlhogo ga se wa kgapeletso.",
+  "portfolioImportButton": "Tsenya",
+  "portfolioImported": "{count, plural, =1{Go okeditswe theko e le nngwe} other{Go okeditswe ditheko di le {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Go tlodilwe mola o le mongwe} other{Go tlodilwe mela e le {count}}}"
 }

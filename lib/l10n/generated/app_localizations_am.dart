@@ -1678,4 +1678,39 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get peersTitle => 'ተመሳሳይ ኩባንያዎች';
+
+  @override
+  String get portfolioExport => 'እንደ CSV ላክ';
+
+  @override
+  String get portfolioImport => 'ከCSV አስመጣ';
+
+  @override
+  String get portfolioImportHint =>
+      'በእያንዳንዱ መስመር አንድ ግዢ ይለጥፉ፦ የአክሲዮን ምልክት፣ ብዛት፣ ዋጋ፣ ምንዛሬ፣ ቀን (YYYY-MM-DD)። ዓምዶቹ በኮማ፣ በሴሚኮሎን ወይም በታብ ሊለያዩ ይችላሉ፤ የርዕስ መስመሩ አማራጭ ነው።';
+
+  @override
+  String get portfolioImportButton => 'አስመጣ';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ግዢዎች ታክለዋል',
+      one: '1 ግዢ ታክሏል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መስመሮች ተዘለዋል',
+      one: '1 መስመር ተዘሏል',
+    );
+    return '$_temp0';
+  }
 }

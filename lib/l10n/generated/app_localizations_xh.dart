@@ -1712,4 +1712,39 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get peersTitle => 'Iinkampani ezifanayo';
+
+  @override
+  String get portfolioExport => 'Thumela ngaphandle njenge-CSV';
+
+  @override
+  String get portfolioImport => 'Ngenisa ukusuka kwi-CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ncamathisela into enye ethengiweyo kumgca ngamnye: uphawu lwe-ticker, isixa, ixabiso, imali, umhla (YYYY-MM-DD). Iikholamu zingahlulwa ngeekoma, iisemikholoni okanye iithebhu; umgca wesihloko awunyanzelekanga.';
+
+  @override
+  String get portfolioImportButton => 'Ngenisa';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kongezwe izinto ezithengiweyo ezi-$count',
+      one: 'Kongezwe into enye ethengiweyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kutsitywe imigca emi-$count',
+      one: 'Kutsitywe umgca omnye',
+    );
+    return '$_temp0';
+  }
 }

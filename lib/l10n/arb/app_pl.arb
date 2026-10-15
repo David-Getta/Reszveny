@@ -465,5 +465,11 @@
   "notesHint": "Powód zakupu? Co obserwujesz? Co skłoniłoby cię do sprzedaży?",
   "notesInfo": "Zapisywane tylko na tym urządzeniu. Analiza AI uwzględnia twoje notatki.",
   "notesSaved": "Zapisano {date}",
-  "peersTitle": "Podobne spółki"
+  "peersTitle": "Podobne spółki",
+  "portfolioExport": "Eksportuj do CSV",
+  "portfolioImport": "Importuj z CSV",
+  "portfolioImportHint": "Wklej jeden zakup w każdym wierszu: symbol giełdowy, liczba, cena, waluta, data (RRRR-MM-DD). Kolumny mogą być rozdzielone przecinkami, średnikami lub tabulatorami; wiersz nagłówka jest opcjonalny.",
+  "portfolioImportButton": "Importuj",
+  "portfolioImported": "{count, plural, one{Dodano {count} zakup} few{Dodano {count} zakupy} many{Dodano {count} zakupów} other{Dodano {count} zakupu}}",
+  "portfolioImportSkipped": "{count, plural, one{Pominięto {count} wiersz} few{Pominięto {count} wiersze} many{Pominięto {count} wierszy} other{Pominięto {count} wiersza}}"
 }

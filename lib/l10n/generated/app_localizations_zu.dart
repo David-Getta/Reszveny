@@ -1711,4 +1711,39 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get peersTitle => 'Izinkampani ezifanayo';
+
+  @override
+  String get portfolioExport => 'Thumela ngaphandle njenge-CSV';
+
+  @override
+  String get portfolioImport => 'Ngenisa kusuka ku-CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Namathisela okuthengiwe okukodwa emugqeni ngamunye: uphawu lwe-ticker, inani, intengo, imali, usuku (YYYY-MM-DD). Amakholomu angahlukaniswa ngokhefana, ngamasemikholoni noma ngamathebhu; umugqa wezihloko awuphoqelekile.';
+
+  @override
+  String get portfolioImportButton => 'Ngenisa';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kwengezwe okuthengiwe okungu-$count',
+      one: 'Kwengezwe okuthengiwe okukodwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kweqiwe imigqa engu-$count',
+      one: 'Kweqiwe umugqa owodwa',
+    );
+    return '$_temp0';
+  }
 }

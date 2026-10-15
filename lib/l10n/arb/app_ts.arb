@@ -465,5 +465,11 @@
   "notesHint": "Hikwalaho ka yini u yi xavile, u languta yini, i yini lexi nga ku endlaka u yi xavisa?",
   "notesInfo": "Swi hlayisiwile eka xitirhisiwa lexi ntsena. Nxopaxopo wa AI wu tekela enhlokweni tinotsi ta wena.",
   "notesSaved": "Swi hlayisiwile {date}",
-  "peersTitle": "Tikhampani leti fanaka"
+  "peersTitle": "Tikhampani leti fanaka",
+  "portfolioExport": "Rhumela ehandle tanihi CSV",
+  "portfolioImport": "Nghenisa ku suka eka CSV",
+  "portfolioImportHint": "Namarheta xixaviwa xin'we eka layini yin'wana na yin'wana: ticker, nhlayo, nxavo, muxaka wa mali, siku (YYYY-MM-DD). Tikholomo ti nga hambanisiwa hi tikhoma, tisemikholoni kumbe ti-tab; layini ya tinhloko a yi bohi.",
+  "portfolioImportButton": "Nghenisa",
+  "portfolioImported": "{count, plural, =1{Ku engeteriwe xixaviwa xin'we} other{Ku engeteriwe swixaviwa swa {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Ku tluriwe layini yin'we} other{Ku tluriwe tilayini ta {count}}}"
 }

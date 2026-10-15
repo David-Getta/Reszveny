@@ -1714,4 +1714,39 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Dikompone tse di tshwanang';
+
+  @override
+  String get portfolioExport => 'Romela kwa ntle jaaka CSV';
+
+  @override
+  String get portfolioImport => 'Tsenya go tswa mo CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Kgomaretsa theko e le nngwe mo moleng mongwe le mongwe: ticker, palo, tlhwatlhwa, mofuta wa madi, letlha (YYYY-MM-DD). Dikholomo di ka kgaoganngwa ka dikhoma, disemikholone kgotsa di-tab; mola wa ditlhogo ga se wa kgapeletso.';
+
+  @override
+  String get portfolioImportButton => 'Tsenya';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go okeditswe ditheko di le $count',
+      one: 'Go okeditswe theko e le nngwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go tlodilwe mela e le $count',
+      one: 'Go tlodilwe mola o le mongwe',
+    );
+    return '$_temp0';
+  }
 }

@@ -465,5 +465,11 @@
   "notesHint": "Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?",
   "notesInfo": "Yettwasekles kan deg yibenk-a. Tasleḍt s AI tettak azal i tezmilin-ik.",
   "notesSaved": "Yettwasekles {date}",
-  "peersTitle": "Tikebbaniyin i d-icban"
+  "peersTitle": "Tikebbaniyin i d-icban",
+  "portfolioExport": "Sifeḍ am CSV",
+  "portfolioImport": "Kter seg CSV",
+  "portfolioImportHint": "Senṭeḍ tiɣin, yiwet deg yal izirig: azamul n uksyun, tanecta, ssuma, tadrimt, azemz (YYYY-MM-DD). Tigejda zemrent ad ttwafrqent s tfeṛḍin, s tneqqiḍin-tfeṛḍin neɣ s tabulation; izirig n uqerru d afrayan.",
+  "portfolioImportButton": "Kter",
+  "portfolioImported": "{count, plural, =1{Tettwarna-d 1 n tɣin} other{Ttwarnant-d {count} n tɣin}}",
+  "portfolioImportSkipped": "{count, plural, =1{Yettwazgel 1 n yizirig} other{Ttwazeglen {count} n yizirigen}}"
 }

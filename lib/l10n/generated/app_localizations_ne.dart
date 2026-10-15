@@ -1706,4 +1706,39 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get peersTitle => 'समान कम्पनीहरू';
+
+  @override
+  String get portfolioExport => 'CSV को रूपमा निर्यात गर्नुहोस्';
+
+  @override
+  String get portfolioImport => 'CSV बाट आयात गर्नुहोस्';
+
+  @override
+  String get portfolioImportHint =>
+      'प्रत्येक पङ्क्तिमा एउटा खरिद टाँस्नुहोस्: टिकर, परिमाण, मूल्य, मुद्रा, मिति (YYYY-MM-DD)। स्तम्भहरू अल्पविराम, अर्धविराम वा ट्याबले छुट्याउन सकिन्छ; शीर्ष पङ्क्ति ऐच्छिक हो।';
+
+  @override
+  String get portfolioImportButton => 'आयात गर्नुहोस्';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count खरिद थपिए',
+      one: '1 खरिद थपियो',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पङ्क्ति छोडिए',
+      one: '1 पङ्क्ति छोडियो',
+    );
+    return '$_temp0';
+  }
 }

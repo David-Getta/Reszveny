@@ -1705,4 +1705,39 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get peersTitle => 'Ұқсас компаниялар';
+
+  @override
+  String get portfolioExport => 'CSV ретінде экспорттау';
+
+  @override
+  String get portfolioImport => 'CSV-ден импорттау';
+
+  @override
+  String get portfolioImportHint =>
+      'Әр жолға бір сатып алуды қойыңыз: тикер, саны, бағасы, валюта, күні (ЖЖЖЖ-АА-КК). Бағандар үтірмен, нүктелі үтірмен немесе табуляциямен бөлінуі мүмкін; тақырып жолы міндетті емес.';
+
+  @override
+  String get portfolioImportButton => 'Импорттау';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сатып алу қосылды',
+      one: '1 сатып алу қосылды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count жол өткізіп жіберілді',
+      one: '1 жол өткізіп жіберілді',
+    );
+    return '$_temp0';
+  }
 }

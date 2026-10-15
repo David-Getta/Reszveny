@@ -465,5 +465,11 @@
   "notesHint": "Me ya sa ka saya, me kake lura da shi, me zai sa ka sayar?",
   "notesInfo": "Ana adana shi a wannan na’ura kawai. Nazarin AI yana la’akari da bayananka.",
   "notesSaved": "An adana {date}",
-  "peersTitle": "Kamfanoni masu kama"
+  "peersTitle": "Kamfanoni masu kama",
+  "portfolioExport": "Fitar a matsayin CSV",
+  "portfolioImport": "Shigo da daga CSV",
+  "portfolioImportHint": "Liƙa sayayya ɗaya a kowane layi: alamar ticker, yawa, farashi, nau'in kuɗi, kwanan wata (YYYY-MM-DD). Ana iya raba ginshiƙai da waƙafi, waƙafi mai digo ko tab; layin take ba dole ba ne.",
+  "portfolioImportButton": "Shigo da",
+  "portfolioImported": "{count, plural, =1{An ƙara sayayya 1} other{An ƙara sayayya {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{An tsallake layi 1} other{An tsallake layuka {count}}}"
 }

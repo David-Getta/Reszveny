@@ -6,6 +6,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import 'csv_dialog.dart';
 import 'portfolio_store.dart';
 import 'portfolio_valuation.dart';
 
@@ -72,7 +73,12 @@ class PortfolioPage extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final services = AppServices.of(context);
     return Scaffold(
-      appBar: desktopAppBar(context, title: Text(l10n.portfolio), hasSidebar: MediaQuery.sizeOf(context).width >= 860),
+      appBar: desktopAppBar(
+        context,
+        title: Text(l10n.portfolio),
+        hasSidebar: MediaQuery.sizeOf(context).width >= 860,
+        actions: const [PortfolioCsvMenu(), SizedBox(width: 4)],
+      ),
       body: ListenableBuilder(
         listenable: services.portfolio,
         builder: (context, _) {
@@ -116,6 +122,13 @@ class _EmptyPortfolio extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(color: p.muted),
               ),
+            ),
+            const SizedBox(height: 12),
+            TextButton.icon(
+              key: const ValueKey('portfolio-empty-import'),
+              onPressed: () => showPortfolioImport(context),
+              icon: const Icon(Icons.file_download_outlined, size: 18),
+              label: Text(l10n.portfolioImport),
             ),
           ],
         ),

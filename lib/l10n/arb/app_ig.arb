@@ -465,5 +465,11 @@
   "notesHint": "Gịnị mere i ji zụta ya, gịnị ka ị na-eleba anya, gịnị ga-eme ka i ree ya?",
   "notesInfo": "E chekwara ya naanị na ngwaọrụ a. Nyocha AI na-atụle ndetu gị.",
   "notesSaved": "Echekwara {date}",
-  "peersTitle": "Ụlọ ọrụ yiri ya"
+  "peersTitle": "Ụlọ ọrụ yiri ya",
+  "portfolioExport": "Bupụ ka CSV",
+  "portfolioImport": "Bubata site na CSV",
+  "portfolioImportHint": "Mado otu ihe ị zụrụ n'ahịrị ọ bụla: akara ticker, ọnụ ọgụgụ, ọnụ ahịa, ego, ụbọchị (YYYY-MM-DD). Enwere ike iji rịkọm, semikọlọn ma ọ bụ tab kewaa kọlụm; ahịrị isiokwu bụ nhọrọ.",
+  "portfolioImportButton": "Bubata",
+  "portfolioImported": "{count, plural, =1{Agbakwunyere ihe ịzụrụ 1} other{Agbakwunyere ihe ịzụrụ {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Awụfere ahịrị 1} other{Awụfere ahịrị {count}}}"
 }

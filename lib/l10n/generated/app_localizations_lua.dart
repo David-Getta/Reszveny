@@ -1709,4 +1709,39 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get peersTitle => 'Bikompanyi bifuanangane';
+
+  @override
+  String get portfolioExport => 'Umusha bu CSV';
+
+  @override
+  String get portfolioImport => 'Bueja kumbukila mu CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Teka tshisumbu tshimue ku mulongo wonso: tshimanyinu tshia ticker, bungi, mushinga, mfranga, dituku (YYYY-MM-DD). Bikolone bidi mua kutapulula ne virgule, point-virgule anyi tabulation; mulongo wa mutu ki mbwa bualu bukole to.';
+
+  @override
+  String get portfolioImportButton => 'Bueja';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bisumbu $count biabuejibua',
+      one: 'Tshisumbu 1 tshiabuejibua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Milongo $count mishiyibua',
+      one: 'Mulongo 1 mushiyibua',
+    );
+    return '$_temp0';
+  }
 }

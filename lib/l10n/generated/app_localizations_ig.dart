@@ -1700,4 +1700,39 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Ụlọ ọrụ yiri ya';
+
+  @override
+  String get portfolioExport => 'Bupụ ka CSV';
+
+  @override
+  String get portfolioImport => 'Bubata site na CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Mado otu ihe ị zụrụ n\'ahịrị ọ bụla: akara ticker, ọnụ ọgụgụ, ọnụ ahịa, ego, ụbọchị (YYYY-MM-DD). Enwere ike iji rịkọm, semikọlọn ma ọ bụ tab kewaa kọlụm; ahịrị isiokwu bụ nhọrọ.';
+
+  @override
+  String get portfolioImportButton => 'Bubata';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Agbakwunyere ihe ịzụrụ $count',
+      one: 'Agbakwunyere ihe ịzụrụ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Awụfere ahịrị $count',
+      one: 'Awụfere ahịrị 1',
+    );
+    return '$_temp0';
+  }
 }

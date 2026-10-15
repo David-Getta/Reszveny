@@ -1700,4 +1700,37 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get peersTitle => 'ဆင်တူသော ကုမ္ပဏီများ';
+
+  @override
+  String get portfolioExport => 'CSV အဖြစ် ထုတ်ယူရန်';
+
+  @override
+  String get portfolioImport => 'CSV မှ တင်သွင်းရန်';
+
+  @override
+  String get portfolioImportHint =>
+      'တစ်ကြောင်းလျှင် ဝယ်ယူမှုတစ်ခု ကူးထည့်ပါ- ရှယ်ယာသင်္ကေတ၊ အရေအတွက်၊ ဈေးနှုန်း၊ ငွေကြေး၊ ရက်စွဲ (YYYY-MM-DD)။ ကော်လံများကို ကော်မာ၊ ဆီမီးကော်လံ သို့မဟုတ် တဘ်ဖြင့် ခွဲခြားနိုင်သည်၊ ခေါင်းစီးစာကြောင်း မပါလည်း ရသည်။';
+
+  @override
+  String get portfolioImportButton => 'တင်သွင်းရန်';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ဝယ်ယူမှု $count ခု ထည့်ပြီးပါပြီ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'စာကြောင်း $count ကြောင်း ကျော်ခဲ့သည်',
+    );
+    return '$_temp0';
+  }
 }

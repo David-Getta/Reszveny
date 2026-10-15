@@ -1741,4 +1741,41 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get peersTitle => 'Līdzīgi uzņēmumi';
+
+  @override
+  String get portfolioExport => 'Eksportēt kā CSV';
+
+  @override
+  String get portfolioImport => 'Importēt no CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ielīmējiet vienu pirkumu katrā rindā: akcijas simbols, daudzums, cena, valūta, datums (GGGG-MM-DD). Kolonnas var atdalīt ar komatiem, semikoliem vai tabulatoriem; galvenes rinda nav obligāta.';
+
+  @override
+  String get portfolioImportButton => 'Importēt';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pievienoti $count pirkumi',
+      one: 'Pievienots $count pirkums',
+      zero: 'Pievienoti $count pirkumi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izlaistas $count rindas',
+      one: 'Izlaista $count rinda',
+      zero: 'Izlaistas $count rindas',
+    );
+    return '$_temp0';
+  }
 }

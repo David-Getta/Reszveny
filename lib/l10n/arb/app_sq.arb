@@ -465,5 +465,11 @@
   "notesHint": "Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?",
   "notesInfo": "Ruhet vetëm në këtë pajisje. Analiza me AI merr parasysh shënimet tuaja.",
   "notesSaved": "Ruajtur {date}",
-  "peersTitle": "Kompani të ngjashme"
+  "peersTitle": "Kompani të ngjashme",
+  "portfolioExport": "Eksporto si CSV",
+  "portfolioImport": "Importo nga CSV",
+  "portfolioImportHint": "Ngjit një blerje për rresht: simboli i aksionit, sasia, çmimi, monedha, data (VVVV-MM-DD). Kolonat mund të ndahen me presje, pikëpresje ose tabulacione; rreshti i titujve është opsional.",
+  "portfolioImportButton": "Importo",
+  "portfolioImported": "{count, plural, =1{U shtua 1 blerje} other{U shtuan {count} blerje}}",
+  "portfolioImportSkipped": "{count, plural, =1{U anashkalua 1 rresht} other{U anashkaluan {count} rreshta}}"
 }

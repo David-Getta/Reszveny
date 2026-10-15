@@ -465,5 +465,11 @@
   "notesHint": "Maxaad u iibsatay, maxaad la socotaa, maxaa kugu kallifi lahaa inaad iibiso?",
   "notesInfo": "Waxaa lagu kaydiyaa qalabkan oo keliya. Falanqaynta AI waxay tixgelisaa qoraalladaada.",
   "notesSaved": "La kaydiyay {date}",
-  "peersTitle": "Shirkado la mid ah"
+  "peersTitle": "Shirkado la mid ah",
+  "portfolioExport": "U dhoofi sida CSV",
+  "portfolioImport": "Ka soo deji CSV",
+  "portfolioImportHint": "Ku dheji hal iibsasho saf kasta: astaanta saamiga, tirada, qiimaha, lacagta, taariikhda (YYYY-MM-DD). Tiirarka waxaa lagu kala saari karaa hakad, hakad-joog ama tab; safka cinwaanku waa ikhtiyaari.",
+  "portfolioImportButton": "Soo deji",
+  "portfolioImported": "{count, plural, =1{1 iibsasho ayaa lagu daray} other{{count} iibsasho ayaa lagu daray}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 saf ayaa laga booday} other{{count} saf ayaa laga booday}}"
 }

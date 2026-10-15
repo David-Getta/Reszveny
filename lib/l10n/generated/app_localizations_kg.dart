@@ -1710,4 +1710,39 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Bakompani ya kufwana';
+
+  @override
+  String get portfolioExport => 'Basisa bonso CSV';
+
+  @override
+  String get portfolioImport => 'Kotisa katuka na CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Tula kisumbi kimosi na konso ndonga: kidimbu kia ticker, kiteso, ntalu, mbongo, kilumbu (YYYY-MM-DD). Bakolonne lenda kabwana na virgule, point-virgule to tabulation; ndonga ya ntu ke ya mfunu ve.';
+
+  @override
+  String get portfolioImportButton => 'Kotisa';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bisumbi $count me kota',
+      one: 'Kisumbi 1 me kota',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bandonga $count me bikama',
+      one: 'Ndonga 1 me bikama',
+    );
+    return '$_temp0';
+  }
 }

@@ -1709,4 +1709,39 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get peersTitle => 'Vergelijkbare bedrijven';
+
+  @override
+  String get portfolioExport => 'Exporteren als CSV';
+
+  @override
+  String get portfolioImport => 'Importeren uit CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Plak één aankoop per regel: ticker, aantal, prijs, valuta, datum (JJJJ-MM-DD). Kolommen mogen gescheiden zijn door komma\'s, puntkomma\'s of tabs; de kopregel is optioneel.';
+
+  @override
+  String get portfolioImportButton => 'Importeren';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aankopen toegevoegd',
+      one: '1 aankoop toegevoegd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count regels overgeslagen',
+      one: '1 regel overgeslagen',
+    );
+    return '$_temp0';
+  }
 }

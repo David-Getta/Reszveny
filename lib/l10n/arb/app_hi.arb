@@ -465,5 +465,11 @@
   "notesHint": "आपने इसे क्यों खरीदा, आप किस पर नज़र रख रहे हैं, किस वजह से आप इसे बेचेंगे?",
   "notesInfo": "केवल इसी डिवाइस पर सहेजा जाता है। AI विश्लेषण आपके नोट्स को ध्यान में रखता है।",
   "notesSaved": "सहेजा गया {date}",
-  "peersTitle": "समान कंपनियाँ"
+  "peersTitle": "समान कंपनियाँ",
+  "portfolioExport": "CSV के रूप में निर्यात करें",
+  "portfolioImport": "CSV से आयात करें",
+  "portfolioImportHint": "हर पंक्ति में एक खरीदारी पेस्ट करें: टिकर सिंबल, मात्रा, कीमत, मुद्रा, तारीख (YYYY-MM-DD)। कॉलम कॉमा, सेमीकोलन या टैब से अलग किए जा सकते हैं; हेडर पंक्ति वैकल्पिक है।",
+  "portfolioImportButton": "आयात करें",
+  "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ी गई} other{{count} खरीदारियाँ जोड़ी गईं}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 पंक्ति छोड़ी गई} other{{count} पंक्तियाँ छोड़ी गईं}}"
 }

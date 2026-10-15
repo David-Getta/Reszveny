@@ -1189,5 +1189,27 @@
   "peersTitle": "Similar companies",
   "@peersTitle": {
     "description": "Title above chips of competitor stocks (peers) on a stock's page."
+  },
+  "portfolioExport": "Export as CSV",
+  "portfolioImport": "Import from CSV",
+  "portfolioImportHint": "Paste one purchase per line: ticker, quantity, price, currency, date (YYYY-MM-DD). Columns may be separated by commas, semicolons or tabs; the header row is optional.",
+  "portfolioImportButton": "Import",
+  "portfolioImported": "{count, plural, =1{1 purchase added} other{{count} purchases added}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 line skipped} other{{count} lines skipped}}",
+  "@portfolioImported": {
+    "description": "After importing: how many purchases were added.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@portfolioImportSkipped": {
+    "description": "After importing: how many lines could not be read.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

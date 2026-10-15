@@ -465,5 +465,11 @@
   "notesHint": "Why you buy am, wetin you dey watch, wetin go make you sell am?",
   "notesInfo": "Na only dis device e dey. Di AI analysis dey consider your notes.",
   "notesSaved": "E don save {date}",
-  "peersTitle": "Companies wey be like am"
+  "peersTitle": "Companies wey be like am",
+  "portfolioExport": "Export am as CSV",
+  "portfolioImport": "Import from CSV",
+  "portfolioImportHint": "Paste one tin wey you buy for each line: ticker, quantity, price, currency, date (YYYY-MM-DD). You fit use comma, semicolon or tab separate di columns; di header line no dey compulsory.",
+  "portfolioImportButton": "Import",
+  "portfolioImported": "{count, plural, one{We don add {count} tin wey you buy} other{We don add {count} tins wey you buy}}",
+  "portfolioImportSkipped": "{count, plural, one{We skip {count} line} other{We skip {count} lines}}"
 }

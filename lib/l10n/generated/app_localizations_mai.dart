@@ -1700,4 +1700,39 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get peersTitle => 'समान कंपनी सभ';
+
+  @override
+  String get portfolioExport => 'CSV मे निर्यात करू';
+
+  @override
+  String get portfolioImport => 'CSV सँ आयात करू';
+
+  @override
+  String get portfolioImportHint =>
+      'प्रति पाँती एकटा खरीदारी साटू: टिकर, संख्या, मूल्य, मुद्रा, तिथि (YYYY-MM-DD)। स्तम्भ कॉमा, सेमीकोलन वा टैब सँ अलग भ\' सकैत अछि; शीर्ष पाँती वैकल्पिक अछि।';
+
+  @override
+  String get portfolioImportButton => 'आयात करू';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count खरीदारी जोड़ल गेल',
+      one: '1 खरीदारी जोड़ल गेल',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पाँती छोड़ल गेल',
+      one: '1 पाँती छोड़ल गेल',
+    );
+    return '$_temp0';
+  }
 }

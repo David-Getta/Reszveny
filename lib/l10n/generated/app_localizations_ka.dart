@@ -1706,4 +1706,39 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get peersTitle => 'მსგავსი კომპანიები';
+
+  @override
+  String get portfolioExport => 'ექსპორტი CSV-ად';
+
+  @override
+  String get portfolioImport => 'იმპორტი CSV-დან';
+
+  @override
+  String get portfolioImportHint =>
+      'ჩასვით თითო შენაძენი თითო ხაზზე: ტიკერი, რაოდენობა, ფასი, ვალუტა, თარიღი (წწწწ-თთ-დდ). სვეტები შეიძლება გამოიყოს მძიმით, წერტილ-მძიმით ან ტაბულაციით; სათაურის ხაზი არასავალდებულოა.';
+
+  @override
+  String get portfolioImportButton => 'იმპორტი';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაემატა $count შენაძენი',
+      one: 'დაემატა 1 შენაძენი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'გამოტოვდა $count ხაზი',
+      one: 'გამოტოვდა 1 ხაზი',
+    );
+    return '$_temp0';
+  }
 }

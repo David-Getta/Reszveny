@@ -1673,4 +1673,39 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get peersTitle => 'ተመሳሰልቲ ኩባንያታት';
+
+  @override
+  String get portfolioExport => 'ከም CSV ኣውጽእ';
+
+  @override
+  String get portfolioImport => 'ካብ CSV ኣእቱ';
+
+  @override
+  String get portfolioImportHint =>
+      'ኣብ ነፍሲ ወከፍ መስመር ሓደ ዕድጊ ለጥፍ፦ ምልክት ኣክሲዮን፣ ብዝሒ፣ ዋጋ፣ ባጤራ፣ ዕለት (YYYY-MM-DD)። ዓንድታት ብኮማ፣ ሰሚኮሎን ወይ ታብ ክፈላለዩ ይኽእሉ፤ መስመር ኣርእስቲ ግዴታ ኣይኮነን።';
+
+  @override
+  String get portfolioImportButton => 'ኣእቱ';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ዕድግታት ተወሲኾም',
+      one: '1 ዕድጊ ተወሲኹ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መስመራት ተዘሊሎም',
+      one: '1 መስመር ተዘሊሉ',
+    );
+    return '$_temp0';
+  }
 }

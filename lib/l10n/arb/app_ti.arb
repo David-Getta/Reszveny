@@ -465,5 +465,11 @@
   "notesHint": "ስለምንታይ ገዚእኩምዎ፣ እንታይ ትከታተሉ ኣለኹም፣ እንታይ እንተ ኣጋጢሙ ክትሸጡ ኢኹም?",
   "notesInfo": "ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ትንተና AI ንማስታወሻታትኩም ኣብ ግምት የእትዎ።",
   "notesSaved": "ተዓቂቡ፦ {date}",
-  "peersTitle": "ተመሳሰልቲ ኩባንያታት"
+  "peersTitle": "ተመሳሰልቲ ኩባንያታት",
+  "portfolioExport": "ከም CSV ኣውጽእ",
+  "portfolioImport": "ካብ CSV ኣእቱ",
+  "portfolioImportHint": "ኣብ ነፍሲ ወከፍ መስመር ሓደ ዕድጊ ለጥፍ፦ ምልክት ኣክሲዮን፣ ብዝሒ፣ ዋጋ፣ ባጤራ፣ ዕለት (YYYY-MM-DD)። ዓንድታት ብኮማ፣ ሰሚኮሎን ወይ ታብ ክፈላለዩ ይኽእሉ፤ መስመር ኣርእስቲ ግዴታ ኣይኮነን።",
+  "portfolioImportButton": "ኣእቱ",
+  "portfolioImported": "{count, plural, =1{1 ዕድጊ ተወሲኹ} other{{count} ዕድግታት ተወሲኾም}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 መስመር ተዘሊሉ} other{{count} መስመራት ተዘሊሎም}}"
 }

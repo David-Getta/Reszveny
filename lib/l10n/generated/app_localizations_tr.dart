@@ -1704,4 +1704,39 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get peersTitle => 'Benzer şirketler';
+
+  @override
+  String get portfolioExport => 'CSV olarak dışa aktar';
+
+  @override
+  String get portfolioImport => 'CSV\'den içe aktar';
+
+  @override
+  String get portfolioImportHint =>
+      'Her satıra bir alış yapıştır: hisse sembolü, adet, fiyat, para birimi, tarih (YYYY-AA-GG). Sütunlar virgül, noktalı virgül veya sekmeyle ayrılabilir; başlık satırı isteğe bağlıdır.';
+
+  @override
+  String get portfolioImportButton => 'İçe aktar';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alış eklendi',
+      one: '1 alış eklendi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count satır atlandı',
+      one: '1 satır atlandı',
+    );
+    return '$_temp0';
+  }
 }

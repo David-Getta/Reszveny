@@ -1751,4 +1751,43 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get peersTitle => 'Podobné společnosti';
+
+  @override
+  String get portfolioExport => 'Exportovat jako CSV';
+
+  @override
+  String get portfolioImport => 'Importovat z CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Vložte jeden nákup na řádek: ticker, množství, cena, měna, datum (RRRR-MM-DD). Sloupce mohou být oddělené čárkami, středníky nebo tabulátory; řádek se záhlavím je nepovinný.';
+
+  @override
+  String get portfolioImportButton => 'Importovat';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přidáno $count nákupů',
+      many: 'Přidáno $count nákupu',
+      few: 'Přidány $count nákupy',
+      one: 'Přidán 1 nákup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přeskočeno $count řádků',
+      many: 'Přeskočeno $count řádku',
+      few: 'Přeskočeny $count řádky',
+      one: 'Přeskočen 1 řádek',
+    );
+    return '$_temp0';
+  }
 }

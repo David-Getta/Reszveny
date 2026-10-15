@@ -1700,4 +1700,39 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get peersTitle => 'Perusahaan serupa';
+
+  @override
+  String get portfolioExport => 'Ekspor sebagai CSV';
+
+  @override
+  String get portfolioImport => 'Impor dari CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Tempel satu pembelian per baris: kode saham, jumlah, harga, mata uang, tanggal (TTTT-BB-HH). Kolom dapat dipisahkan dengan koma, titik koma, atau tab; baris judul bersifat opsional.';
+
+  @override
+  String get portfolioImportButton => 'Impor';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pembelian ditambahkan',
+      one: '1 pembelian ditambahkan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baris dilewati',
+      one: '1 baris dilewati',
+    );
+    return '$_temp0';
+  }
 }

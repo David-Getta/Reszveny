@@ -1713,4 +1713,39 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get peersTitle => 'ஒத்த நிறுவனங்கள்';
+
+  @override
+  String get portfolioExport => 'CSV ஆக ஏற்றுமதி செய்';
+
+  @override
+  String get portfolioImport => 'CSV-இலிருந்து இறக்குமதி செய்';
+
+  @override
+  String get portfolioImportHint =>
+      'ஒரு வரிக்கு ஒரு வாங்குதலை ஒட்டவும்: டிக்கர், அளவு, விலை, நாணயம், தேதி (YYYY-MM-DD). நெடுவரிசைகளைக் காற்புள்ளி, அரைப்புள்ளி அல்லது டேப் மூலம் பிரிக்கலாம்; தலைப்பு வரி விருப்பத்தேர்வு.';
+
+  @override
+  String get portfolioImportButton => 'இறக்குமதி செய்';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count வாங்குதல்கள் சேர்க்கப்பட்டன',
+      one: '1 வாங்குதல் சேர்க்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count வரிகள் தவிர்க்கப்பட்டன',
+      one: '1 வரி தவிர்க்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
 }

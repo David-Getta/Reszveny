@@ -465,5 +465,11 @@
   "notesHint": "ଆପଣ ଏହାକୁ କାହିଁକି କିଣିଲେ, କ'ଣ ଉପରେ ନଜର ରଖୁଛନ୍ତି, କ'ଣ ହେଲେ ବିକ୍ରି କରିବେ?",
   "notesInfo": "କେବଳ ଏହି ଡିଭାଇସରେ ସଞ୍ଚିତ। AI ବିଶ୍ଳେଷଣ ଆପଣଙ୍କ ନୋଟ୍‌କୁ ବିଚାରକୁ ନିଏ।",
   "notesSaved": "ସଞ୍ଚିତ {date}",
-  "peersTitle": "ସମାନ କମ୍ପାନୀ"
+  "peersTitle": "ସମାନ କମ୍ପାନୀ",
+  "portfolioExport": "CSV ଭାବେ ରପ୍ତାନି କରନ୍ତୁ",
+  "portfolioImport": "CSV ରୁ ଆମଦାନି କରନ୍ତୁ",
+  "portfolioImportHint": "ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ କ୍ରୟ ପେଷ୍ଟ କରନ୍ତୁ: ଟିକର, ପରିମାଣ, ମୂଲ୍ୟ, ମୁଦ୍ରା, ତାରିଖ (YYYY-MM-DD)। ସ୍ତମ୍ଭଗୁଡ଼ିକ କମା, ସେମିକୋଲନ କିମ୍ବା ଟ୍ୟାବ ଦ୍ୱାରା ଅଲଗା ହୋଇପାରେ; ଶୀର୍ଷ ଧାଡ଼ି ବୈକଳ୍ପିକ।",
+  "portfolioImportButton": "ଆମଦାନି କରନ୍ତୁ",
+  "portfolioImported": "{count, plural, =1{1ଟି କ୍ରୟ ଯୋଡ଼ାଗଲା} other{{count}ଟି କ୍ରୟ ଯୋଡ଼ାଗଲା}}",
+  "portfolioImportSkipped": "{count, plural, =1{1ଟି ଧାଡ଼ି ବାଦ ଦିଆଗଲା} other{{count}ଟି ଧାଡ଼ି ବାଦ ଦିଆଗଲା}}"
 }

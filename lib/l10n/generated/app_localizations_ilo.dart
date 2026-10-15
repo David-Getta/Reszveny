@@ -1719,4 +1719,39 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get peersTitle => 'Dagiti kapada a kompania';
+
+  @override
+  String get portfolioExport => 'I-export kas CSV';
+
+  @override
+  String get portfolioImport => 'I-import manipud iti CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'I-paste ti maysa a gatang iti tunggal linia: simbolo ti ticker, bilang, presio, currency, petsa (YYYY-MM-DD). Mabalin a mapagsisina dagiti kolum babaen ti comma, semicolon wenno tab; opsional ti linia ti header.';
+
+  @override
+  String get portfolioImportButton => 'I-import';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nainayon ti $count a gatang',
+      one: 'Nainayon ti 1 a gatang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nalaktawan ti $count a linia',
+      one: 'Nalaktawan ti 1 a linia',
+    );
+    return '$_temp0';
+  }
 }

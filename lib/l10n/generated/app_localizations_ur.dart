@@ -1704,4 +1704,39 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get peersTitle => 'ملتی جلتی کمپنیاں';
+
+  @override
+  String get portfolioExport => 'CSV کے طور پر ایکسپورٹ کریں';
+
+  @override
+  String get portfolioImport => 'CSV سے امپورٹ کریں';
+
+  @override
+  String get portfolioImportHint =>
+      'ہر سطر میں ایک خریداری پیسٹ کریں: ٹکر، مقدار، قیمت، کرنسی، تاریخ (YYYY-MM-DD)۔ کالموں کو کوما، سیمی کولن یا ٹیب سے الگ کیا جا سکتا ہے؛ ہیڈر کی سطر اختیاری ہے۔';
+
+  @override
+  String get portfolioImportButton => 'امپورٹ کریں';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خریداریاں شامل کر دی گئیں',
+      one: '1 خریداری شامل کر دی گئی',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count سطریں چھوڑ دی گئیں',
+      one: '1 سطر چھوڑ دی گئی',
+    );
+    return '$_temp0';
+  }
 }

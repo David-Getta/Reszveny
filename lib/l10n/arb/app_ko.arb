@@ -465,5 +465,11 @@
   "notesHint": "왜 샀나요? 무엇을 지켜보고 있나요? 어떤 경우에 팔 건가요?",
   "notesInfo": "이 기기에만 저장됩니다. AI 분석에 메모 내용이 반영됩니다.",
   "notesSaved": "저장됨: {date}",
-  "peersTitle": "유사 기업"
+  "peersTitle": "유사 기업",
+  "portfolioExport": "CSV로 내보내기",
+  "portfolioImport": "CSV에서 가져오기",
+  "portfolioImportHint": "한 줄에 매수 1건씩 붙여 넣으세요: 티커 심볼, 수량, 가격, 통화, 날짜(YYYY-MM-DD). 열은 쉼표, 세미콜론 또는 탭으로 구분할 수 있으며, 머리글 행은 선택 사항입니다.",
+  "portfolioImportButton": "가져오기",
+  "portfolioImported": "{count, plural, =1{매수 1건이 추가되었습니다} other{매수 {count}건이 추가되었습니다}}",
+  "portfolioImportSkipped": "{count, plural, =1{1줄을 건너뛰었습니다} other{{count}줄을 건너뛰었습니다}}"
 }

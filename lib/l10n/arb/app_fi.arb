@@ -465,5 +465,11 @@
   "notesHint": "Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?",
   "notesInfo": "Tallennetaan vain tälle laitteelle. Tekoälyanalyysi ottaa muistiinpanosi huomioon.",
   "notesSaved": "Tallennettu {date}",
-  "peersTitle": "Vastaavat yritykset"
+  "peersTitle": "Vastaavat yritykset",
+  "portfolioExport": "Vie CSV-tiedostona",
+  "portfolioImport": "Tuo CSV:stä",
+  "portfolioImportHint": "Liitä yksi osto riviä kohden: osaketunnus, määrä, hinta, valuutta, päivämäärä (VVVV-KK-PP). Sarakkeet voi erottaa pilkuilla, puolipisteillä tai sarkaimilla; otsikkorivi on valinnainen.",
+  "portfolioImportButton": "Tuo",
+  "portfolioImported": "{count, plural, =1{1 osto lisätty} other{{count} ostoa lisätty}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 rivi ohitettu} other{{count} riviä ohitettu}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "Porque a comprou, o que está a acompanhar, o que o levaria a vender?",
   "notesInfo": "Guardado apenas neste dispositivo. A análise com IA tem em conta as suas notas.",
   "notesSaved": "Guardado {date}",
-  "peersTitle": "Empresas semelhantes"
+  "peersTitle": "Empresas semelhantes",
+  "portfolioExport": "Exportar como CSV",
+  "portfolioImport": "Importar de CSV",
+  "portfolioImportHint": "Cole uma compra por linha: ticker, quantidade, preço, moeda, data (AAAA-MM-DD). As colunas podem ser separadas por vírgulas, ponto e vírgula ou tabulações; a linha de cabeçalho é opcional.",
+  "portfolioImportButton": "Importar",
+  "portfolioImported": "{count, plural, =1{1 compra adicionada} other{{count} compras adicionadas}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 linha ignorada} other{{count} linhas ignoradas}}"
 }

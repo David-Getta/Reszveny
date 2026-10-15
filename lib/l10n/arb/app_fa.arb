@@ -465,5 +465,11 @@
   "notesHint": "چرا آن را خریدید، به چه چیزی توجه دارید، چه چیزی باعث می‌شود آن را بفروشید؟",
   "notesInfo": "فقط روی همین دستگاه ذخیره می‌شود. تحلیل هوش مصنوعی یادداشت‌های شما را در نظر می‌گیرد.",
   "notesSaved": "ذخیره شد: {date}",
-  "peersTitle": "شرکت‌های مشابه"
+  "peersTitle": "شرکت‌های مشابه",
+  "portfolioExport": "خروجی CSV",
+  "portfolioImport": "وارد کردن از CSV",
+  "portfolioImportHint": "در هر خط یک خرید جای‌گذاری کنید: نماد سهم، تعداد، قیمت، واحد پول، تاریخ (YYYY-MM-DD). ستون‌ها می‌توانند با ویرگول، نقطه‌ویرگول یا تب از هم جدا شوند؛ سطر عنوان اختیاری است.",
+  "portfolioImportButton": "وارد کردن",
+  "portfolioImported": "{count, plural, =1{1 خرید افزوده شد} other{{count} خرید افزوده شد}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 خط نادیده گرفته شد} other{{count} خط نادیده گرفته شد}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "Chifukwa chiyani munaigula, mukuyang'anira chiyani, nchiyani chingakupangitseni kuigulitsa?",
   "notesInfo": "Zasungidwa pa chipangizo ichi chokha. Kusanthula kwa AI kumaganizira zolemba zanu.",
   "notesSaved": "Zasungidwa {date}",
-  "peersTitle": "Makampani ofanana"
+  "peersTitle": "Makampani ofanana",
+  "portfolioExport": "Tumizani ngati CSV",
+  "portfolioImport": "Lowetsani kuchokera ku CSV",
+  "portfolioImportHint": "Matani chogula chimodzi pa mzere uliwonse: ticker, kuchuluka, mtengo, ndalama, tsiku (YYYY-MM-DD). Mizati ingalekanitsidwe ndi koma, semikoloni kapena tabu; mzere wa mitu ndi wosankha.",
+  "portfolioImportButton": "Lowetsani",
+  "portfolioImported": "{count, plural, =1{Chogula 1 chawonjezedwa} other{Zogula {count} zawonjezedwa}}",
+  "portfolioImportSkipped": "{count, plural, =1{Mzere 1 wadumphidwa} other{Mizere {count} yadumphidwa}}"
 }

@@ -1703,4 +1703,39 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get peersTitle => 'Konpayi ki sanble';
+
+  @override
+  String get portfolioExport => 'Ekspòte an CSV';
+
+  @override
+  String get portfolioImport => 'Enpòte soti nan CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Kole yon acha pa liy: senbòl, kantite, pri, deviz, dat (AAAA-MM-JJ). Kolòn yo ka separe ak vigil, pwen vigil oswa tab; liy tèt la pa obligatwa.';
+
+  @override
+  String get portfolioImportButton => 'Enpòte';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou ajoute $count acha',
+      one: 'Nou ajoute 1 acha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou sote $count liy',
+      one: 'Nou sote 1 liy',
+    );
+    return '$_temp0';
+  }
 }

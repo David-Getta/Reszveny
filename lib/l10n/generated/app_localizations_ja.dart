@@ -1652,4 +1652,39 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get peersTitle => '類似企業';
+
+  @override
+  String get portfolioExport => 'CSVでエクスポート';
+
+  @override
+  String get portfolioImport => 'CSVからインポート';
+
+  @override
+  String get portfolioImportHint =>
+      '1行に1件の購入を貼り付けてください：ティッカーシンボル、数量、価格、通貨、日付（YYYY-MM-DD）。列はカンマ、セミコロン、タブのいずれかで区切れます。見出し行は省略できます。';
+
+  @override
+  String get portfolioImportButton => 'インポート';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件の購入を追加しました',
+      one: '1 件の購入を追加しました',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 行をスキップしました',
+      one: '1 行をスキップしました',
+    );
+    return '$_temp0';
+  }
 }

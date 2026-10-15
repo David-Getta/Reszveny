@@ -465,5 +465,11 @@
   "notesHint": "Ko waɗi a soodi ɗum, ko ndaarataa, ko waɗata a yeeya?",
   "notesInfo": "Ina mooftaa e ngol kaɓirgol tan. Ƴeewndo AI ina jogitoo binndi maa.",
   "notesSaved": "Mooftaama {date}",
-  "peersTitle": "Sosiyeteeji nanndooji"
+  "peersTitle": "Sosiyeteeji nanndooji",
+  "portfolioExport": "Yaltin no CSV",
+  "portfolioImport": "Naatnu iwde e CSV",
+  "portfolioImportHint": "Ɓortin soodaare wootere e kala diidol: kod aksiyoŋ, keewal, coggu, ceede, ñalnde (YYYY-MM-DD). Kolonuuji ina mbaawi seerndeede ko virgule, point-virgule walla tabulation; diidol tiitoonde ngol ko suɓaade.",
+  "portfolioImportButton": "Naatnu",
+  "portfolioImported": "{count, plural, =1{Soodaare 1 ɓeydaama} other{Soodaaje {count} ɓeydaama}}",
+  "portfolioImportSkipped": "{count, plural, =1{Diidol 1 acciraama} other{Diidi {count} acciraama}}"
 }

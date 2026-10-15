@@ -1707,4 +1707,39 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get peersTitle => 'ئوخشاش شىركەتلەر';
+
+  @override
+  String get portfolioExport => 'CSV قىلىپ چىقىرىش';
+
+  @override
+  String get portfolioImport => 'CSV دىن كىرگۈزۈش';
+
+  @override
+  String get portfolioImportHint =>
+      'ھەر قۇرغا بىر سېتىۋېلىشنى چاپلاڭ: پاي چېكى كودى، سان، باھا، پۇل بىرلىكى، چېسلا (YYYY-MM-DD). ئىستونلارنى پەش، چېكىتلىك پەش ياكى tab بىلەن ئايرىشقا بولىدۇ؛ ماۋزۇ قۇرى ئىختىيارىي.';
+
+  @override
+  String get portfolioImportButton => 'كىرگۈزۈش';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count سېتىۋېلىش قوشۇلدى',
+      one: '1 سېتىۋېلىش قوشۇلدى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قۇر ئاتلاپ ئۆتۈلدى',
+      one: '1 قۇر ئاتلاپ ئۆتۈلدى',
+    );
+    return '$_temp0';
+  }
 }

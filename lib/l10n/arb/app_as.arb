@@ -465,5 +465,11 @@
   "notesHint": "আপুনি কিয় কিনিলে, কিহৰ ওপৰত চকু ৰাখিছে, কি হ'লে বিক্ৰী কৰিব?",
   "notesInfo": "কেৱল এই ডিভাইচতে সংৰক্ষিত। AI বিশ্লেষণে আপোনাৰ টোকাসমূহ বিবেচনা কৰে।",
   "notesSaved": "সংৰক্ষিত {date}",
-  "peersTitle": "একে ধৰণৰ কোম্পানী"
+  "peersTitle": "একে ধৰণৰ কোম্পানী",
+  "portfolioExport": "CSV হিচাপে ৰপ্তানি কৰক",
+  "portfolioImport": "CSVৰ পৰা আমদানি কৰক",
+  "portfolioImportHint": "প্ৰতিটো শাৰীত এটাকৈ ক্ৰয় পেষ্ট কৰক: টিকাৰ ছিম্বল, পৰিমাণ, মূল্য, মুদ্ৰা, তাৰিখ (YYYY-MM-DD)। স্তম্ভবোৰ কমা, ছেমিকলন বা টেবেৰে পৃথক কৰিব পাৰি; শিৰোনামৰ শাৰীটো ঐচ্ছিক।",
+  "portfolioImportButton": "আমদানি কৰক",
+  "portfolioImported": "{count, plural, =1{1টা ক্ৰয় যোগ কৰা হ'ল} other{{count}টা ক্ৰয় যোগ কৰা হ'ল}}",
+  "portfolioImportSkipped": "{count, plural, =1{1টা শাৰী এৰি দিয়া হ'ল} other{{count}টা শাৰী এৰি দিয়া হ'ল}}"
 }

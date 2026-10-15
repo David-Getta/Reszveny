@@ -465,5 +465,11 @@
   "notesHint": "Почему вы её купили, за чем следите, что заставит вас продать?",
   "notesInfo": "Хранится только на этом устройстве. ИИ-анализ учитывает ваши заметки.",
   "notesSaved": "Сохранено {date}",
-  "peersTitle": "Похожие компании"
+  "peersTitle": "Похожие компании",
+  "portfolioExport": "Экспорт в CSV",
+  "portfolioImport": "Импорт из CSV",
+  "portfolioImportHint": "Вставьте по одной покупке в строке: тикер, количество, цена, валюта, дата (ГГГГ-ММ-ДД). Столбцы можно разделять запятыми, точками с запятой или табуляцией; строка заголовка необязательна.",
+  "portfolioImportButton": "Импортировать",
+  "portfolioImported": "{count, plural, one{Добавлена {count} покупка} few{Добавлено {count} покупки} many{Добавлено {count} покупок} other{Добавлено {count} покупки}}",
+  "portfolioImportSkipped": "{count, plural, one{Пропущена {count} строка} few{Пропущено {count} строки} many{Пропущено {count} строк} other{Пропущено {count} строки}}"
 }

@@ -1702,4 +1702,39 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get peersTitle => 'Lignende virksomheder';
+
+  @override
+  String get portfolioExport => 'Eksportér som CSV';
+
+  @override
+  String get portfolioImport => 'Importér fra CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Indsæt ét køb pr. linje: tickersymbol, antal, pris, valuta, dato (ÅÅÅÅ-MM-DD). Kolonner kan adskilles med kommaer, semikoloner eller tabulatorer; overskriftslinjen er valgfri.';
+
+  @override
+  String get portfolioImportButton => 'Importér';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count køb tilføjet',
+      one: '1 køb tilføjet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count linjer sprunget over',
+      one: '1 linje sprunget over',
+    );
+    return '$_temp0';
+  }
 }

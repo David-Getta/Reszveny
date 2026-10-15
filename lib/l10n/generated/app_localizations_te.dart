@@ -1710,4 +1710,39 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get peersTitle => 'సారూప్య కంపెనీలు';
+
+  @override
+  String get portfolioExport => 'CSVగా ఎగుమతి చేయి';
+
+  @override
+  String get portfolioImport => 'CSV నుండి దిగుమతి చేయి';
+
+  @override
+  String get portfolioImportHint =>
+      'ప్రతి పంక్తికి ఒక కొనుగోలును అతికించండి: టికర్, పరిమాణం, ధర, కరెన్సీ, తేదీ (YYYY-MM-DD). నిలువు వరుసలను కామా, సెమికోలన్ లేదా ట్యాబ్‌తో వేరు చేయవచ్చు; శీర్షిక పంక్తి ఐచ్ఛికం.';
+
+  @override
+  String get portfolioImportButton => 'దిగుమతి చేయి';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count కొనుగోళ్లు జోడించబడ్డాయి',
+      one: '1 కొనుగోలు జోడించబడింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count పంక్తులు దాటవేయబడ్డాయి',
+      one: '1 పంక్తి దాటవేయబడింది',
+    );
+    return '$_temp0';
+  }
 }

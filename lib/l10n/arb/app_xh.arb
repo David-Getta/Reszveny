@@ -465,5 +465,11 @@
   "notesHint": "Kutheni usithengile, ujonge ntoni, yintoni enokwenza usithengise?",
   "notesInfo": "Igcinwe kwesi sixhobo kuphela. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.",
   "notesSaved": "Kugcinwe: {date}",
-  "peersTitle": "Iinkampani ezifanayo"
+  "peersTitle": "Iinkampani ezifanayo",
+  "portfolioExport": "Thumela ngaphandle njenge-CSV",
+  "portfolioImport": "Ngenisa ukusuka kwi-CSV",
+  "portfolioImportHint": "Ncamathisela into enye ethengiweyo kumgca ngamnye: uphawu lwe-ticker, isixa, ixabiso, imali, umhla (YYYY-MM-DD). Iikholamu zingahlulwa ngeekoma, iisemikholoni okanye iithebhu; umgca wesihloko awunyanzelekanga.",
+  "portfolioImportButton": "Ngenisa",
+  "portfolioImported": "{count, plural, =1{Kongezwe into enye ethengiweyo} other{Kongezwe izinto ezithengiweyo ezi-{count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Kutsitywe umgca omnye} other{Kutsitywe imigca emi-{count}}}"
 }

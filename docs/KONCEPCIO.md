@@ -199,6 +199,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5s | Élő javaslatok gépelés közben a keresőben: azonnal a kedvencekből és a legutóbbiakból, 0,4 mp szünet után a piaci keresőből (cégnévvel) | ✅ kész |
 | 5t | Saját jegyzetek részvényenként (befektetési napló: miért vetted, mire figyelsz); csak a készüléken, az AI-elemzés figyelembe veszi | ✅ kész |
 | 5u | Hasonló cégek a részvény oldalán (versenytársak chipekként, egy gombbal összehasonlítás) | ✅ kész |
+| 5v | Portfólió CSV-export (megosztással) és -import beillesztett sorokból (vessző, pontosvessző tizedesvesszővel, tabulátor; fejléc elhagyható) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | ⬜ |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

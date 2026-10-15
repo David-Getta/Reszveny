@@ -465,5 +465,11 @@
   "notesHint": "購入した理由、注目している点、売却する条件は？",
   "notesInfo": "この端末にのみ保存されます。AI 分析はメモの内容を考慮します。",
   "notesSaved": "保存：{date}",
-  "peersTitle": "類似企業"
+  "peersTitle": "類似企業",
+  "portfolioExport": "CSVでエクスポート",
+  "portfolioImport": "CSVからインポート",
+  "portfolioImportHint": "1行に1件の購入を貼り付けてください：ティッカーシンボル、数量、価格、通貨、日付（YYYY-MM-DD）。列はカンマ、セミコロン、タブのいずれかで区切れます。見出し行は省略できます。",
+  "portfolioImportButton": "インポート",
+  "portfolioImported": "{count, plural, =1{1 件の購入を追加しました} other{{count} 件の購入を追加しました}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 行をスキップしました} other{{count} 行をスキップしました}}"
 }

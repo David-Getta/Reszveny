@@ -465,5 +465,11 @@
   "notesHint": "Sambu na nki nge sumbaka yo, nki nge ke tala, nki ta sala nge teka yo?",
   "notesInfo": "Ilundwa kaka mu kisadilu kiaki. Analyse ya AI ke tadilaka ba note na nge.",
   "notesSaved": "Ilundwa: {date}",
-  "peersTitle": "Bakompani ya kufwana"
+  "peersTitle": "Bakompani ya kufwana",
+  "portfolioExport": "Basisa bonso CSV",
+  "portfolioImport": "Kotisa katuka na CSV",
+  "portfolioImportHint": "Tula kisumbi kimosi na konso ndonga: kidimbu kia ticker, kiteso, ntalu, mbongo, kilumbu (YYYY-MM-DD). Bakolonne lenda kabwana na virgule, point-virgule to tabulation; ndonga ya ntu ke ya mfunu ve.",
+  "portfolioImportButton": "Kotisa",
+  "portfolioImported": "{count, plural, =1{Kisumbi 1 me kota} other{Bisumbi {count} me kota}}",
+  "portfolioImportSkipped": "{count, plural, =1{Ndonga 1 me bikama} other{Bandonga {count} me bikama}}"
 }

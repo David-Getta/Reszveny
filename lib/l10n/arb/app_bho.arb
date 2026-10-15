@@ -465,5 +465,11 @@
   "notesHint": "रउआ काहे खरीदनी, का पर नजर रखले बानी, का होखी त बेचब?",
   "notesInfo": "खाली एही डिवाइस पर सहेजल जाला। AI विश्लेषण रउआ नोट के ध्यान में राखेला।",
   "notesSaved": "सहेजल गइल {date}",
-  "peersTitle": "मिलत-जुलत कंपनी"
+  "peersTitle": "मिलत-जुलत कंपनी",
+  "portfolioExport": "CSV के रूप में निर्यात करीं",
+  "portfolioImport": "CSV से आयात करीं",
+  "portfolioImportHint": "हर लाइन में एगो खरीदारी पेस्ट करीं: टिकर सिंबल, मात्रा, दाम, मुद्रा, तारीख (YYYY-MM-DD)। कॉलम कॉमा, सेमीकोलन भा टैब से अलग हो सकेला; हेडर लाइन जरूरी नइखे।",
+  "portfolioImportButton": "आयात करीं",
+  "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ल गइल} other{{count} खरीदारी जोड़ल गइल}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 लाइन छोड़ल गइल} other{{count} लाइन छोड़ल गइल}}"
 }

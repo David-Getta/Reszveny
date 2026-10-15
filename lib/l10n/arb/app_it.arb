@@ -465,5 +465,11 @@
   "notesHint": "Perché l’hai comprata, cosa stai tenendo d’occhio, cosa ti farebbe vendere?",
   "notesInfo": "Salvato solo su questo dispositivo. L’analisi IA tiene conto delle tue note.",
   "notesSaved": "Salvato {date}",
-  "peersTitle": "Aziende simili"
+  "peersTitle": "Aziende simili",
+  "portfolioExport": "Esporta come CSV",
+  "portfolioImport": "Importa da CSV",
+  "portfolioImportHint": "Incolla un acquisto per riga: simbolo, quantità, prezzo, valuta, data (AAAA-MM-GG). Le colonne possono essere separate da virgole, punti e virgola o tabulazioni; la riga di intestazione è facoltativa.",
+  "portfolioImportButton": "Importa",
+  "portfolioImported": "{count, plural, =1{1 acquisto aggiunto} other{{count} acquisti aggiunti}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 riga ignorata} other{{count} righe ignorate}}"
 }

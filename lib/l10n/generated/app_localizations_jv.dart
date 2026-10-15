@@ -1705,4 +1705,39 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get peersTitle => 'Perusahaan sing padha';
+
+  @override
+  String get portfolioExport => 'Ekspor dadi CSV';
+
+  @override
+  String get portfolioImport => 'Impor saka CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Tempelake siji tukon saben baris: kode saham, jumlah, rega, mata uang, tanggal (YYYY-MM-DD). Kolom bisa dipisah nganggo koma, titik koma utawa tab; baris irah-irahan ora wajib.';
+
+  @override
+  String get portfolioImportButton => 'Impor';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tukon wis ditambahake',
+      one: '1 tukon wis ditambahake',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baris dilewati',
+      one: '1 baris dilewati',
+    );
+    return '$_temp0';
+  }
 }

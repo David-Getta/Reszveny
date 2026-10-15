@@ -1705,4 +1705,39 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get peersTitle => 'Oxşar şirkətlər';
+
+  @override
+  String get portfolioExport => 'CSV kimi ixrac et';
+
+  @override
+  String get portfolioImport => 'CSV-dən idxal et';
+
+  @override
+  String get portfolioImportHint =>
+      'Hər sətirdə bir alış yapışdırın: tiker, miqdar, qiymət, valyuta, tarix (İİİİ-AA-GG). Sütunlar vergül, nöqtəli vergül və ya tabla ayrıla bilər; başlıq sətri məcburi deyil.';
+
+  @override
+  String get portfolioImportButton => 'İdxal et';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alış əlavə olundu',
+      one: '1 alış əlavə olundu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sətir ötürüldü',
+      one: '1 sətir ötürüldü',
+    );
+    return '$_temp0';
+  }
 }

@@ -465,5 +465,11 @@
   "notesHint": "Nega sotib oldingiz, nimani kuzatyapsiz, nima sizni sotishga undaydi?",
   "notesInfo": "Faqat shu qurilmada saqlanadi. AI tahlili qaydlaringizni hisobga oladi.",
   "notesSaved": "Saqlandi: {date}",
-  "peersTitle": "O'xshash kompaniyalar"
+  "peersTitle": "O'xshash kompaniyalar",
+  "portfolioExport": "CSV sifatida eksport qilish",
+  "portfolioImport": "CSV dan import qilish",
+  "portfolioImportHint": "Har bir qatorga bitta xaridni joylang: tiker, miqdor, narx, valyuta, sana (YYYY-OO-KK). Ustunlar vergul, nuqtali vergul yoki tab bilan ajratilishi mumkin; sarlavha qatori ixtiyoriy.",
+  "portfolioImportButton": "Import qilish",
+  "portfolioImported": "{count, plural, =1{1 ta xarid qoʻshildi} other{{count} ta xarid qoʻshildi}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 ta qator oʻtkazib yuborildi} other{{count} ta qator oʻtkazib yuborildi}}"
 }

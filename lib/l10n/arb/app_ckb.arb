@@ -465,5 +465,11 @@
   "notesHint": "بۆچی کڕیت، چاودێری چی دەکەیت، چی وات لێدەکات بیفرۆشیت؟",
   "notesInfo": "تەنها لەسەر ئەم ئامێرە پاشەکەوت دەکرێت. شیکاریی AI تێبینییەکانت لەبەرچاو دەگرێت.",
   "notesSaved": "پاشەکەوتکرا {date}",
-  "peersTitle": "کۆمپانیا هاوشێوەکان"
+  "peersTitle": "کۆمپانیا هاوشێوەکان",
+  "portfolioExport": "هەناردەکردن وەک CSV",
+  "portfolioImport": "هاوردەکردن لە CSV",
+  "portfolioImportHint": "لە هەر هێڵێکدا یەک کڕین بلکێنە: هێمای پشک، بڕ، نرخ، دراو، بەروار (YYYY-MM-DD). ستوونەکان دەتوانرێت بە کۆما، خاڵبۆر یان تاب جیا بکرێنەوە؛ هێڵی سەردێڕ ئارەزوومەندانەیە.",
+  "portfolioImportButton": "هاوردەکردن",
+  "portfolioImported": "{count, plural, =1{1 کڕین زیادکرا} other{{count} کڕین زیادکران}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 هێڵ پەڕێنرا} other{{count} هێڵ پەڕێنران}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "Hoekom het jy dit gekoop, waarna hou jy dop, wat sou jou laat verkoop?",
   "notesInfo": "Slegs op hierdie toestel gestoor. Die AI-ontleding neem jou notas in ag.",
   "notesSaved": "Gestoor {date}",
-  "peersTitle": "Soortgelyke maatskappye"
+  "peersTitle": "Soortgelyke maatskappye",
+  "portfolioExport": "Voer uit as CSV",
+  "portfolioImport": "Voer in uit CSV",
+  "portfolioImportHint": "Plak een aankoop per reël: aandeelkode, hoeveelheid, prys, geldeenheid, datum (JJJJ-MM-DD). Kolomme kan deur kommas, kommapunte of tabs geskei word; die opskrifreël is opsioneel.",
+  "portfolioImportButton": "Voer in",
+  "portfolioImported": "{count, plural, =1{1 aankoop bygevoeg} other{{count} aankope bygevoeg}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 reël oorgeslaan} other{{count} reëls oorgeslaan}}"
 }

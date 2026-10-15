@@ -1705,4 +1705,39 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get peersTitle => 'অনুরূপ কোম্পানি';
+
+  @override
+  String get portfolioExport => 'CSV হিসেবে এক্সপোর্ট করুন';
+
+  @override
+  String get portfolioImport => 'CSV থেকে ইমপোর্ট করুন';
+
+  @override
+  String get portfolioImportHint =>
+      'প্রতি লাইনে একটি ক্রয় পেস্ট করুন: টিকার সিম্বল, পরিমাণ, দাম, মুদ্রা, তারিখ (YYYY-MM-DD)। কলামগুলো কমা, সেমিকোলন বা ট্যাব দিয়ে আলাদা করা যায়; হেডার লাইন ঐচ্ছিক।';
+
+  @override
+  String get portfolioImportButton => 'ইমপোর্ট করুন';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি ক্রয় যোগ হয়েছে',
+      one: '1টি ক্রয় যোগ হয়েছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি লাইন বাদ দেওয়া হয়েছে',
+      one: '1টি লাইন বাদ দেওয়া হয়েছে',
+    );
+    return '$_temp0';
+  }
 }

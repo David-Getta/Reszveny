@@ -465,5 +465,11 @@
   "notesHint": "你為何買入？正在留意甚麼？甚麼情況下會賣出？",
   "notesInfo": "只會儲存在此裝置上。AI 分析會參考你的筆記。",
   "notesSaved": "儲存時間：{date}",
-  "peersTitle": "同類公司"
+  "peersTitle": "同類公司",
+  "portfolioExport": "匯出為 CSV",
+  "portfolioImport": "從 CSV 匯入",
+  "portfolioImportHint": "每行貼上一筆買入：股票代號、數量、價格、貨幣、日期（YYYY-MM-DD）。各欄可用逗號、分號或定位字元分隔；標題行可省略。",
+  "portfolioImportButton": "匯入",
+  "portfolioImported": "{count, plural, =1{已加入 1 筆買入} other{已加入 {count} 筆買入}}",
+  "portfolioImportSkipped": "{count, plural, =1{已略過 1 行} other{已略過 {count} 行}}"
 }

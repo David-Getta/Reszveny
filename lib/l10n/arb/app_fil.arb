@@ -465,5 +465,11 @@
   "notesHint": "Bakit mo ito binili, ano ang binabantayan mo, ano ang magtutulak sa iyong ibenta ito?",
   "notesInfo": "Sa device na ito lang naka-save. Isinasaalang-alang ng pagsusuri ng AI ang iyong mga tala.",
   "notesSaved": "Na-save {date}",
-  "peersTitle": "Mga katulad na kumpanya"
+  "peersTitle": "Mga katulad na kumpanya",
+  "portfolioExport": "I-export bilang CSV",
+  "portfolioImport": "I-import mula sa CSV",
+  "portfolioImportHint": "Mag-paste ng isang pagbili bawat linya: ticker symbol, dami, presyo, currency, petsa (YYYY-MM-DD). Maaaring paghiwalayin ang mga column ng kuwit, semicolon o tab; opsyonal ang header row.",
+  "portfolioImportButton": "I-import",
+  "portfolioImported": "{count, plural, =1{Naidagdag ang 1 pagbili} other{Naidagdag ang {count} pagbili}}",
+  "portfolioImportSkipped": "{count, plural, =1{Nilaktawan ang 1 linya} other{Nilaktawan ang {count} linya}}"
 }

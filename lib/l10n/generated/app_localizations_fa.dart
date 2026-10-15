@@ -1703,4 +1703,39 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get peersTitle => 'شرکت‌های مشابه';
+
+  @override
+  String get portfolioExport => 'خروجی CSV';
+
+  @override
+  String get portfolioImport => 'وارد کردن از CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'در هر خط یک خرید جای‌گذاری کنید: نماد سهم، تعداد، قیمت، واحد پول، تاریخ (YYYY-MM-DD). ستون‌ها می‌توانند با ویرگول، نقطه‌ویرگول یا تب از هم جدا شوند؛ سطر عنوان اختیاری است.';
+
+  @override
+  String get portfolioImportButton => 'وارد کردن';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خرید افزوده شد',
+      one: '1 خرید افزوده شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خط نادیده گرفته شد',
+      one: '1 خط نادیده گرفته شد',
+    );
+    return '$_temp0';
+  }
 }

@@ -465,5 +465,11 @@
   "notesHint": "Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?",
   "notesInfo": "Chỉ lưu trên thiết bị này. Phân tích AI có xét đến ghi chú của bạn.",
   "notesSaved": "Đã lưu {date}",
-  "peersTitle": "Công ty tương tự"
+  "peersTitle": "Công ty tương tự",
+  "portfolioExport": "Xuất dưới dạng CSV",
+  "portfolioImport": "Nhập từ CSV",
+  "portfolioImportHint": "Dán mỗi dòng một lần mua: mã cổ phiếu, số lượng, giá, tiền tệ, ngày (YYYY-MM-DD). Các cột có thể phân tách bằng dấu phẩy, dấu chấm phẩy hoặc tab; dòng tiêu đề là tùy chọn.",
+  "portfolioImportButton": "Nhập",
+  "portfolioImported": "{count, plural, =1{Đã thêm 1 lần mua} other{Đã thêm {count} lần mua}}",
+  "portfolioImportSkipped": "{count, plural, =1{Đã bỏ qua 1 dòng} other{Đã bỏ qua {count} dòng}}"
 }

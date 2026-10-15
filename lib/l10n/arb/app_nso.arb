@@ -465,5 +465,11 @@
   "notesHint": "Ke ka baka la eng o e rekile, o šetše eng, ke eng seo se ka go dirago gore o e rekiše?",
   "notesInfo": "E bolokilwe sedirišweng se fela. Tshekatsheko ya AI e ela hloko dintlha tša gago.",
   "notesSaved": "E bolokilwe: {date}",
-  "peersTitle": "Dikhamphani tše di swanago"
+  "peersTitle": "Dikhamphani tše di swanago",
+  "portfolioExport": "Romela ka ntle bjalo ka CSV",
+  "portfolioImport": "Tsenya go tšwa go CSV",
+  "portfolioImportHint": "Kgomaretša theko e tee mothalong o mongwe le o mongwe: leswao la ticker, bontši, tefelo, tšhelete, letšatšikgwedi (YYYY-MM-DD). Dikholomo di ka arogantšwa ka khoma, semikholone goba tab; mothalo wa dihlogo ke boikgethelo.",
+  "portfolioImportButton": "Tsenya",
+  "portfolioImported": "{count, plural, =1{Go okeditšwe theko e 1} other{Go okeditšwe ditheko tše {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Go tlogetšwe mothalo o 1} other{Go tlogetšwe methalo ye {count}}}"
 }

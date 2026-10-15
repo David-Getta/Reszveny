@@ -1711,4 +1711,39 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get peersTitle => 'Makampani ofanana';
+
+  @override
+  String get portfolioExport => 'Tumizani ngati CSV';
+
+  @override
+  String get portfolioImport => 'Lowetsani kuchokera ku CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Matani chogula chimodzi pa mzere uliwonse: ticker, kuchuluka, mtengo, ndalama, tsiku (YYYY-MM-DD). Mizati ingalekanitsidwe ndi koma, semikoloni kapena tabu; mzere wa mitu ndi wosankha.';
+
+  @override
+  String get portfolioImportButton => 'Lowetsani';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zogula $count zawonjezedwa',
+      one: 'Chogula 1 chawonjezedwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mizere $count yadumphidwa',
+      one: 'Mzere 1 wadumphidwa',
+    );
+    return '$_temp0';
+  }
 }

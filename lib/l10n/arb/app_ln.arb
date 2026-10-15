@@ -465,5 +465,11 @@
   "notesHint": "Mpo na nini osombaki yango, ozali kotala nini, nini ekoki kotinda yo oteka yango?",
   "notesInfo": "Ebombami kaka na esaleli oyo. Analyse ya AI ezwaka ba note na yo na motuya.",
   "notesSaved": "Ebombami {date}",
-  "peersTitle": "Bakompanyi oyo ekokani"
+  "peersTitle": "Bakompanyi oyo ekokani",
+  "portfolioExport": "Bimisa lokola CSV",
+  "portfolioImport": "Kotisa uta na CSV",
+  "portfolioImportHint": "Tya esombi moko na molɔngɔ mokomoko: elembo ya ticker, motángo, ntalo, mbɔngɔ, mokɔlɔ (YYYY-MM-DD). Ba-colonne ekoki kokabwana na virgule, point-virgule to tabulation; molɔngɔ ya motó ezali na ntina te.",
+  "portfolioImportButton": "Kotisa",
+  "portfolioImported": "{count, plural, =1{Esombi 1 ebakisami} other{Bosombi {count} ebakisami}}",
+  "portfolioImportSkipped": "{count, plural, =1{Molɔngɔ 1 etikalaki} other{Milɔngɔ {count} etikalaki}}"
 }

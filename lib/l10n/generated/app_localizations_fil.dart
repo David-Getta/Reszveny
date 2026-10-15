@@ -1711,4 +1711,39 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get peersTitle => 'Mga katulad na kumpanya';
+
+  @override
+  String get portfolioExport => 'I-export bilang CSV';
+
+  @override
+  String get portfolioImport => 'I-import mula sa CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Mag-paste ng isang pagbili bawat linya: ticker symbol, dami, presyo, currency, petsa (YYYY-MM-DD). Maaaring paghiwalayin ang mga column ng kuwit, semicolon o tab; opsyonal ang header row.';
+
+  @override
+  String get portfolioImportButton => 'I-import';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Naidagdag ang $count pagbili',
+      one: 'Naidagdag ang 1 pagbili',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nilaktawan ang $count linya',
+      one: 'Nilaktawan ang 1 linya',
+    );
+    return '$_temp0';
+  }
 }

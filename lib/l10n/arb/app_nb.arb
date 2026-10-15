@@ -465,5 +465,11 @@
   "notesHint": "Hvorfor kjøpte du den, hva følger du med på, hva ville fått deg til å selge?",
   "notesInfo": "Lagres bare på denne enheten. AI-analysen tar hensyn til notatene dine.",
   "notesSaved": "Lagret {date}",
-  "peersTitle": "Lignende selskaper"
+  "peersTitle": "Lignende selskaper",
+  "portfolioExport": "Eksporter som CSV",
+  "portfolioImport": "Importer fra CSV",
+  "portfolioImportHint": "Lim inn ett kjøp per linje: ticker, antall, pris, valuta, dato (ÅÅÅÅ-MM-DD). Kolonnene kan skilles med komma, semikolon eller tabulator; overskriftsraden er valgfri.",
+  "portfolioImportButton": "Importer",
+  "portfolioImported": "{count, plural, =1{1 kjøp lagt til} other{{count} kjøp lagt til}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 linje hoppet over} other{{count} linjer hoppet over}}"
 }

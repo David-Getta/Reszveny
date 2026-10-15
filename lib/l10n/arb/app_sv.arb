@@ -465,5 +465,11 @@
   "notesHint": "Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?",
   "notesInfo": "Sparas bara på den här enheten. AI-analysen tar hänsyn till dina anteckningar.",
   "notesSaved": "Sparad {date}",
-  "peersTitle": "Liknande företag"
+  "peersTitle": "Liknande företag",
+  "portfolioExport": "Exportera som CSV",
+  "portfolioImport": "Importera från CSV",
+  "portfolioImportHint": "Klistra in ett köp per rad: ticker, antal, pris, valuta, datum (ÅÅÅÅ-MM-DD). Kolumnerna kan avgränsas med komma, semikolon eller tabb; rubrikraden är valfri.",
+  "portfolioImportButton": "Importera",
+  "portfolioImported": "{count, plural, =1{1 köp har lagts till} other{{count} köp har lagts till}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 rad hoppades över} other{{count} rader hoppades över}}"
 }

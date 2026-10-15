@@ -1686,4 +1686,37 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get peersTitle => 'ບໍລິສັດທີ່ຄ້າຍຄືກັນ';
+
+  @override
+  String get portfolioExport => 'ສົ່ງອອກເປັນ CSV';
+
+  @override
+  String get portfolioImport => 'ນຳເຂົ້າຈາກ CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'ວາງການຊື້ໜຶ່ງລາຍການຕໍ່ແຖວ: ສັນຍາລັກຮຸ້ນ, ຈຳນວນ, ລາຄາ, ສະກຸນເງິນ, ວັນທີ (YYYY-MM-DD). ຖັນສາມາດແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ (,), ຈຸດໂຄ່ງ (;) ຫຼື ແທັບ; ແຖວຫົວຂໍ້ບໍ່ບັງຄັບ.';
+
+  @override
+  String get portfolioImportButton => 'ນຳເຂົ້າ';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເພີ່ມການຊື້ $count ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຂ້າມ $count ແຖວແລ້ວ',
+    );
+    return '$_temp0';
+  }
 }

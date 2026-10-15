@@ -1700,4 +1700,39 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kompañi yu ko niru';
+
+  @override
+  String get portfolioExport => 'Génne ko ci CSV';
+
+  @override
+  String get portfolioImport => 'Duggal ko ci CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Taqal benn jënd ci bépp rëdd: màndargay aksiyoŋ, lim, njëg, xeetu xaalis, bés (YYYY-MM-DD). Mën nañu xàjjale kolon yi ak wirgil, pwen-wirgil walla tab; rëddu bopp bi war-ul.';
+
+  @override
+  String get portfolioImportButton => 'Duggal';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yokk nañu $count jënd',
+      one: 'Yokk nañu 1 jënd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wacc nañu $count rëdd',
+      one: 'Wacc nañu 1 rëdd',
+    );
+    return '$_temp0';
+  }
 }

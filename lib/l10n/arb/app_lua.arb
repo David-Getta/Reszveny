@@ -465,5 +465,11 @@
   "notesHint": "Bua tshinyi wakayisumba, udi utangila tshinyi, tshinyi tshidi mua kukusaka bua kuyipana?",
   "notesInfo": "Bilama anu mu tshintu etshi. Dikonkonona dia AI didi diangata mifundu yebe.",
   "notesSaved": "Bilama: {date}",
-  "peersTitle": "Bikompanyi bifuanangane"
+  "peersTitle": "Bikompanyi bifuanangane",
+  "portfolioExport": "Umusha bu CSV",
+  "portfolioImport": "Bueja kumbukila mu CSV",
+  "portfolioImportHint": "Teka tshisumbu tshimue ku mulongo wonso: tshimanyinu tshia ticker, bungi, mushinga, mfranga, dituku (YYYY-MM-DD). Bikolone bidi mua kutapulula ne virgule, point-virgule anyi tabulation; mulongo wa mutu ki mbwa bualu bukole to.",
+  "portfolioImportButton": "Bueja",
+  "portfolioImported": "{count, plural, =1{Tshisumbu 1 tshiabuejibua} other{Bisumbu {count} biabuejibua}}",
+  "portfolioImportSkipped": "{count, plural, =1{Mulongo 1 mushiyibua} other{Milongo {count} mishiyibua}}"
 }

@@ -1690,4 +1690,37 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get peersTitle => 'ក្រុមហ៊ុនស្រដៀងគ្នា';
+
+  @override
+  String get portfolioExport => 'នាំចេញជា CSV';
+
+  @override
+  String get portfolioImport => 'នាំចូលពី CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'បិទភ្ជាប់ការទិញមួយក្នុងមួយបន្ទាត់៖ និមិត្តសញ្ញាភាគហ៊ុន បរិមាណ តម្លៃ រូបិយប័ណ្ណ កាលបរិច្ឆេទ (YYYY-MM-DD)។ ជួរឈរអាចបំបែកដោយសញ្ញាក្បៀស សញ្ញាចុចក្បៀស ឬថេប ហើយជួរក្បាលមិនចាំបាច់ទេ។';
+
+  @override
+  String get portfolioImportButton => 'នាំចូល';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានបន្ថែមការទិញ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានរំលង $count បន្ទាត់',
+    );
+    return '$_temp0';
+  }
 }

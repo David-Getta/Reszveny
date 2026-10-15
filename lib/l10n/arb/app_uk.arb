@@ -465,5 +465,11 @@
   "notesHint": "Чому ви її купили, за чим стежите, що змусить вас продати?",
   "notesInfo": "Зберігається лише на цьому пристрої. ШІ-аналіз враховує ваші нотатки.",
   "notesSaved": "Збережено {date}",
-  "peersTitle": "Схожі компанії"
+  "peersTitle": "Схожі компанії",
+  "portfolioExport": "Експорт у CSV",
+  "portfolioImport": "Імпорт із CSV",
+  "portfolioImportHint": "Вставте по одній купівлі в рядок: тікер, кількість, ціна, валюта, дата (РРРР-ММ-ДД). Стовпці можна розділяти комами, крапками з комою або табуляцією; рядок заголовка необовʼязковий.",
+  "portfolioImportButton": "Імпортувати",
+  "portfolioImported": "{count, plural, one{Додано {count} купівлю} few{Додано {count} купівлі} many{Додано {count} купівель} other{Додано {count} купівлі}}",
+  "portfolioImportSkipped": "{count, plural, one{Пропущено {count} рядок} few{Пропущено {count} рядки} many{Пропущено {count} рядків} other{Пропущено {count} рядка}}"
 }

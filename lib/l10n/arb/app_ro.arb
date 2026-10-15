@@ -465,5 +465,11 @@
   "notesHint": "De ce ai cumpărat-o, ce urmărești, ce te-ar face să vinzi?",
   "notesInfo": "Salvat doar pe acest dispozitiv. Analiza AI ține cont de notițele tale.",
   "notesSaved": "Salvat {date}",
-  "peersTitle": "Companii similare"
+  "peersTitle": "Companii similare",
+  "portfolioExport": "Exportă ca CSV",
+  "portfolioImport": "Importă din CSV",
+  "portfolioImportHint": "Lipește câte o cumpărare pe linie: ticker, cantitate, preț, monedă, dată (AAAA-LL-ZZ). Coloanele pot fi separate prin virgule, punct și virgulă sau taburi; rândul de antet este opțional.",
+  "portfolioImportButton": "Importă",
+  "portfolioImported": "{count, plural, one{A fost adăugată {count} cumpărare} few{Au fost adăugate {count} cumpărări} other{Au fost adăugate {count} de cumpărări}}",
+  "portfolioImportSkipped": "{count, plural, one{A fost omisă {count} linie} few{Au fost omise {count} linii} other{Au fost omise {count} de linii}}"
 }

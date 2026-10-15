@@ -465,5 +465,11 @@
   "notesHint": "কেন কিনেছেন, কী নজরে রাখছেন, কী হলে বিক্রি করবেন?",
   "notesInfo": "শুধু এই ডিভাইসেই সংরক্ষিত হয়। AI বিশ্লেষণ আপনার নোটগুলো বিবেচনায় নেয়।",
   "notesSaved": "সংরক্ষিত {date}",
-  "peersTitle": "অনুরূপ কোম্পানি"
+  "peersTitle": "অনুরূপ কোম্পানি",
+  "portfolioExport": "CSV হিসেবে এক্সপোর্ট করুন",
+  "portfolioImport": "CSV থেকে ইমপোর্ট করুন",
+  "portfolioImportHint": "প্রতি লাইনে একটি ক্রয় পেস্ট করুন: টিকার সিম্বল, পরিমাণ, দাম, মুদ্রা, তারিখ (YYYY-MM-DD)। কলামগুলো কমা, সেমিকোলন বা ট্যাব দিয়ে আলাদা করা যায়; হেডার লাইন ঐচ্ছিক।",
+  "portfolioImportButton": "ইমপোর্ট করুন",
+  "portfolioImported": "{count, plural, =1{1টি ক্রয় যোগ হয়েছে} other{{count}টি ক্রয় যোগ হয়েছে}}",
+  "portfolioImportSkipped": "{count, plural, =1{1টি লাইন বাদ দেওয়া হয়েছে} other{{count}টি লাইন বাদ দেওয়া হয়েছে}}"
 }

@@ -1706,4 +1706,39 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Төстэй компаниуд';
+
+  @override
+  String get portfolioExport => 'CSV болгон экспортлох';
+
+  @override
+  String get portfolioImport => 'CSV-ээс импортлох';
+
+  @override
+  String get portfolioImportHint =>
+      'Мөр бүрт нэг худалдан авалт буулгана уу: тикер, тоо ширхэг, үнэ, валют, огноо (ЖЖЖЖ-СС-ӨӨ). Баганыг таслал, цэгтэй таслал эсвэл табаар тусгаарлаж болно; гарчгийн мөр заавал биш.';
+
+  @override
+  String get portfolioImportButton => 'Импортлох';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count худалдан авалт нэмэгдлээ',
+      one: '1 худалдан авалт нэмэгдлээ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count мөр алгаслаа',
+      one: '1 мөр алгаслаа',
+    );
+    return '$_temp0';
+  }
 }

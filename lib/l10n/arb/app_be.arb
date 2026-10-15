@@ -465,5 +465,11 @@
   "notesHint": "Чаму вы яе купілі, за чым сочыце, што прымусіць вас прадаць?",
   "notesInfo": "Захоўваецца толькі на гэтай прыладзе. AI-аналіз улічвае вашы нататкі.",
   "notesSaved": "Захавана {date}",
-  "peersTitle": "Падобныя кампаніі"
+  "peersTitle": "Падобныя кампаніі",
+  "portfolioExport": "Экспартаваць у CSV",
+  "portfolioImport": "Імпартаваць з CSV",
+  "portfolioImportHint": "Устаўце па адной пакупцы ў радку: тыкер, колькасць, цана, валюта, дата (ГГГГ-ММ-ДД). Слупкі можна раздзяляць коскамі, кропкамі з коскай або табуляцыяй; радок загалоўкаў неабавязковы.",
+  "portfolioImportButton": "Імпартаваць",
+  "portfolioImported": "{count, plural, one{Дададзена {count} пакупка} few{Дададзены {count} пакупкі} many{Дададзена {count} пакупак} other{Дададзена {count} пакупкі}}",
+  "portfolioImportSkipped": "{count, plural, one{Прапушчаны {count} радок} few{Прапушчаны {count} радкі} many{Прапушчана {count} радкоў} other{Прапушчана {count} радка}}"
 }

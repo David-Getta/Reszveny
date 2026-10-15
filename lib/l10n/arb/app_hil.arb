@@ -465,5 +465,11 @@
   "notesHint": "Ngaa ginbakal mo ini, ano ang ginabantayan mo, ano ang makapabaligya sa imo?",
   "notesInfo": "Sa sini lang nga device natipon. Ginakonsiderar sang analisis sang AI ang imo mga nota.",
   "notesSaved": "Natipon {date}",
-  "peersTitle": "Kaangay nga mga kompanya"
+  "peersTitle": "Kaangay nga mga kompanya",
+  "portfolioExport": "I-export subong CSV",
+  "portfolioImport": "I-import halin sa CSV",
+  "portfolioImportHint": "I-paste ang isa ka ginbakal kada linya: ticker symbol, kadamuon, presyo, currency, petsa (YYYY-MM-DD). Ang mga kolum mahimo mabulag sang comma, semicolon ukon tab; opsyonal ang header nga linya.",
+  "portfolioImportButton": "I-import",
+  "portfolioImported": "{count, plural, =1{Gindugang ang 1 ka ginbakal} other{Gindugang ang {count} ka ginbakal}}",
+  "portfolioImportSkipped": "{count, plural, =1{Ginlaktawan ang 1 ka linya} other{Ginlaktawan ang {count} ka linya}}"
 }

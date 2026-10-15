@@ -1735,4 +1735,41 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get peersTitle => 'Companii similare';
+
+  @override
+  String get portfolioExport => 'Exportă ca CSV';
+
+  @override
+  String get portfolioImport => 'Importă din CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Lipește câte o cumpărare pe linie: ticker, cantitate, preț, monedă, dată (AAAA-LL-ZZ). Coloanele pot fi separate prin virgule, punct și virgulă sau taburi; rândul de antet este opțional.';
+
+  @override
+  String get portfolioImportButton => 'Importă';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost adăugate $count de cumpărări',
+      few: 'Au fost adăugate $count cumpărări',
+      one: 'A fost adăugată $count cumpărare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost omise $count de linii',
+      few: 'Au fost omise $count linii',
+      one: 'A fost omisă $count linie',
+    );
+    return '$_temp0';
+  }
 }

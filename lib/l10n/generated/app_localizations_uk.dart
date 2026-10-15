@@ -1754,4 +1754,43 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get peersTitle => 'Схожі компанії';
+
+  @override
+  String get portfolioExport => 'Експорт у CSV';
+
+  @override
+  String get portfolioImport => 'Імпорт із CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Вставте по одній купівлі в рядок: тікер, кількість, ціна, валюта, дата (РРРР-ММ-ДД). Стовпці можна розділяти комами, крапками з комою або табуляцією; рядок заголовка необовʼязковий.';
+
+  @override
+  String get portfolioImportButton => 'Імпортувати';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додано $count купівлі',
+      many: 'Додано $count купівель',
+      few: 'Додано $count купівлі',
+      one: 'Додано $count купівлю',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Пропущено $count рядка',
+      many: 'Пропущено $count рядків',
+      few: 'Пропущено $count рядки',
+      one: 'Пропущено $count рядок',
+    );
+    return '$_temp0';
+  }
 }

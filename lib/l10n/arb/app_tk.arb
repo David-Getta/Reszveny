@@ -465,5 +465,11 @@
   "notesHint": "Ony näme üçin satyn aldyňyz, nämä gözegçilik edýärsiňiz, näme sizi satmaga mejbur eder?",
   "notesInfo": "Diňe şu enjamda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.",
   "notesSaved": "Ýatda saklandy: {date}",
-  "peersTitle": "Meňzeş kompaniýalar"
+  "peersTitle": "Meňzeş kompaniýalar",
+  "portfolioExport": "CSV görnüşinde eksport et",
+  "portfolioImport": "CSV-den import et",
+  "portfolioImportHint": "Her setire bir satyn alyş goý: tiker, mukdar, baha, walýuta, sene (ÝÝÝÝ-AA-GG). Sütünler otur, nokatly otur ýa-da tab bilen bölünip bilner; sözbaşy setiri hökman däl.",
+  "portfolioImportButton": "Import et",
+  "portfolioImported": "{count, plural, =1{1 satyn alyş goşuldy} other{{count} satyn alyş goşuldy}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 setir geçildi} other{{count} setir geçildi}}"
 }

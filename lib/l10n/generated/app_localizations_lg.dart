@@ -1714,4 +1714,39 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kkampuni ezifaananako';
+
+  @override
+  String get portfolioExport => 'Fulumya nga CSV';
+
+  @override
+  String get portfolioImport => 'Yingiza okuva mu CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Teekamu ekyaguliddwa kimu ku buli lunyiriri: akabonero ka ticker, omuwendo, bbeeyi, ensimbi, olunaku (YYYY-MM-DD). Empagi ziyinza okwawulwamu koma, semikolon oba tab; olunyiriri lw\'emitwe si lwa tteeka.';
+
+  @override
+  String get portfolioImportButton => 'Yingiza';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ebyaguliddwa $count byongeddwako',
+      one: 'Ekyaguliddwa 1 kyongeddwako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ennyiriri $count zibuukiddwa',
+      one: 'Olunyiriri 1 lubuukiddwa',
+    );
+    return '$_temp0';
+  }
 }

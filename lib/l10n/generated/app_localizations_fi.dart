@@ -1706,4 +1706,39 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get peersTitle => 'Vastaavat yritykset';
+
+  @override
+  String get portfolioExport => 'Vie CSV-tiedostona';
+
+  @override
+  String get portfolioImport => 'Tuo CSV:stä';
+
+  @override
+  String get portfolioImportHint =>
+      'Liitä yksi osto riviä kohden: osaketunnus, määrä, hinta, valuutta, päivämäärä (VVVV-KK-PP). Sarakkeet voi erottaa pilkuilla, puolipisteillä tai sarkaimilla; otsikkorivi on valinnainen.';
+
+  @override
+  String get portfolioImportButton => 'Tuo';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ostoa lisätty',
+      one: '1 osto lisätty',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count riviä ohitettu',
+      one: '1 rivi ohitettu',
+    );
+    return '$_temp0';
+  }
 }

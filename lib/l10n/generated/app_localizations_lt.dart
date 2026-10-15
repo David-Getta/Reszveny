@@ -1756,4 +1756,43 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get peersTitle => 'Panašios įmonės';
+
+  @override
+  String get portfolioExport => 'Eksportuoti kaip CSV';
+
+  @override
+  String get portfolioImport => 'Importuoti iš CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Įklijuokite po vieną pirkimą eilutėje: akcijos simbolis, kiekis, kaina, valiuta, data (MMMM-MM-DD). Stulpeliai gali būti atskirti kableliais, kabliataškiais arba tabuliacijos ženklais; antraštės eilutė neprivaloma.';
+
+  @override
+  String get portfolioImportButton => 'Importuoti';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridėta $count pirkimų',
+      many: 'Pridėta $count pirkimo',
+      few: 'Pridėti $count pirkimai',
+      one: 'Pridėtas $count pirkimas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Praleista $count eilučių',
+      many: 'Praleista $count eilutės',
+      few: 'Praleistos $count eilutės',
+      one: 'Praleista $count eilutė',
+    );
+    return '$_temp0';
+  }
 }

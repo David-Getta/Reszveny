@@ -1701,4 +1701,39 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get peersTitle => 'ਮਿਲਦੀਆਂ-ਜੁਲਦੀਆਂ ਕੰਪਨੀਆਂ';
+
+  @override
+  String get portfolioExport => 'CSV ਵਜੋਂ ਨਿਰਯਾਤ ਕਰੋ';
+
+  @override
+  String get portfolioImport => 'CSV ਤੋਂ ਆਯਾਤ ਕਰੋ';
+
+  @override
+  String get portfolioImportHint =>
+      'ਹਰ ਲਾਈਨ ਵਿੱਚ ਇੱਕ ਖ਼ਰੀਦ ਪੇਸਟ ਕਰੋ: ਟਿਕਰ, ਮਾਤਰਾ, ਕੀਮਤ, ਮੁਦਰਾ, ਮਿਤੀ (YYYY-MM-DD)। ਕਾਲਮ ਕੌਮੇ, ਸੈਮੀਕੋਲਨ ਜਾਂ ਟੈਬ ਨਾਲ ਵੱਖ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ; ਸਿਰਲੇਖ ਵਾਲੀ ਲਾਈਨ ਵਿਕਲਪਿਕ ਹੈ।';
+
+  @override
+  String get portfolioImportButton => 'ਆਯਾਤ ਕਰੋ';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਖ਼ਰੀਦਾਂ ਜੋੜੀਆਂ ਗਈਆਂ',
+      one: '1 ਖ਼ਰੀਦ ਜੋੜੀ ਗਈ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਲਾਈਨਾਂ ਛੱਡੀਆਂ ਗਈਆਂ',
+      one: '1 ਲਾਈਨ ਛੱਡੀ ਗਈ',
+    );
+    return '$_temp0';
+  }
 }

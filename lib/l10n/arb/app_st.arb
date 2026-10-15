@@ -465,5 +465,11 @@
   "notesHint": "Hobaneng o e rekile, o shebile eng, ke eng e ka etsang hore o e rekise?",
   "notesInfo": "E bolokilwe sesebedisweng sena feela. Tlhahlobo ya AI e ela hloko dintlha tsa hao.",
   "notesSaved": "E bolokilwe {date}",
-  "peersTitle": "Dikhampani tse tshwanang"
+  "peersTitle": "Dikhampani tse tshwanang",
+  "portfolioExport": "Romela ka ntle jwalo ka CSV",
+  "portfolioImport": "Kenya ho tswa ho CSV",
+  "portfolioImportHint": "Kgomaretsa theko e le nngwe moleng ka mong: ticker, palo, theko ya karolo, mofuta wa tjhelete, letsatsi (YYYY-MM-DD). Dikholomo di ka arohanngwa ka dikhoma, disemikholone kapa di-tab; mola wa dihlooho ha o a tlameha.",
+  "portfolioImportButton": "Kenya",
+  "portfolioImported": "{count, plural, =1{Ho eketsitswe theko e le nngwe} other{Ho eketsitswe ditheko tse {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Mola o le mong o tlotswe} other{Mela e {count} e tlotswe}}"
 }

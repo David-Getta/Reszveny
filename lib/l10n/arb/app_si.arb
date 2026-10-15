@@ -465,5 +465,11 @@
   "notesHint": "ඔබ එය මිලදී ගත්තේ ඇයි, ඔබ අවධානය යොමු කරන්නේ කුමකටද, කුමක් සිදු වුවහොත් විකුණනවාද?",
   "notesInfo": "මෙම උපාංගයේ පමණක් ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.",
   "notesSaved": "සුරැකුවේ: {date}",
-  "peersTitle": "සමාන සමාගම්"
+  "peersTitle": "සමාන සමාගම්",
+  "portfolioExport": "CSV ලෙස අපනයනය කරන්න",
+  "portfolioImport": "CSV වෙතින් ආනයනය කරන්න",
+  "portfolioImportHint": "එක් පේළියකට එක් මිලදී ගැනීමක් අලවන්න: ටිකර්, ප්‍රමාණය, මිල, මුදල් ඒකකය, දිනය (YYYY-MM-DD). තීරු කොමා, අර්ධ විරාම හෝ ටැබ් මගින් වෙන් කළ හැක; ශීර්ෂ පේළිය අත්‍යවශ්‍ය නොවේ.",
+  "portfolioImportButton": "ආනයනය කරන්න",
+  "portfolioImported": "{count, plural, =1{මිලදී ගැනීමක් එක් කළා} other{මිලදී ගැනීම් {count}ක් එක් කළා}}",
+  "portfolioImportSkipped": "{count, plural, =1{පේළියක් මඟ හැරියා} other{පේළි {count}ක් මඟ හැරියා}}"
 }

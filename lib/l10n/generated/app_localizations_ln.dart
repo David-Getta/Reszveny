@@ -1713,4 +1713,39 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Bakompanyi oyo ekokani';
+
+  @override
+  String get portfolioExport => 'Bimisa lokola CSV';
+
+  @override
+  String get portfolioImport => 'Kotisa uta na CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Tya esombi moko na molɔngɔ mokomoko: elembo ya ticker, motángo, ntalo, mbɔngɔ, mokɔlɔ (YYYY-MM-DD). Ba-colonne ekoki kokabwana na virgule, point-virgule to tabulation; molɔngɔ ya motó ezali na ntina te.';
+
+  @override
+  String get portfolioImportButton => 'Kotisa';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bosombi $count ebakisami',
+      one: 'Esombi 1 ebakisami',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Milɔngɔ $count etikalaki',
+      one: 'Molɔngɔ 1 etikalaki',
+    );
+    return '$_temp0';
+  }
 }

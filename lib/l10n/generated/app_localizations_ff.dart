@@ -1700,4 +1700,39 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get peersTitle => 'Sosiyeteeji nanndooji';
+
+  @override
+  String get portfolioExport => 'Yaltin no CSV';
+
+  @override
+  String get portfolioImport => 'Naatnu iwde e CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Ɓortin soodaare wootere e kala diidol: kod aksiyoŋ, keewal, coggu, ceede, ñalnde (YYYY-MM-DD). Kolonuuji ina mbaawi seerndeede ko virgule, point-virgule walla tabulation; diidol tiitoonde ngol ko suɓaade.';
+
+  @override
+  String get portfolioImportButton => 'Naatnu';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Soodaaje $count ɓeydaama',
+      one: 'Soodaare 1 ɓeydaama',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Diidi $count acciraama',
+      one: 'Diidol 1 acciraama',
+    );
+    return '$_temp0';
+  }
 }

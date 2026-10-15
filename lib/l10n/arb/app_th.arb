@@ -465,5 +465,11 @@
   "notesHint": "ซื้อเพราะอะไร กำลังจับตาอะไร และอะไรจะทำให้คุณขาย",
   "notesInfo": "จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น การวิเคราะห์ด้วย AI จะนำบันทึกของคุณมาพิจารณา",
   "notesSaved": "บันทึกเมื่อ {date}",
-  "peersTitle": "บริษัทที่คล้ายกัน"
+  "peersTitle": "บริษัทที่คล้ายกัน",
+  "portfolioExport": "ส่งออกเป็น CSV",
+  "portfolioImport": "นำเข้าจาก CSV",
+  "portfolioImportHint": "วางรายการซื้อบรรทัดละหนึ่งรายการ: ชื่อย่อหุ้น, จำนวน, ราคา, สกุลเงิน, วันที่ (YYYY-MM-DD) คอลัมน์คั่นได้ด้วยจุลภาค อัฒภาค หรือแท็บ ส่วนแถวหัวตารางจะมีหรือไม่มีก็ได้",
+  "portfolioImportButton": "นำเข้า",
+  "portfolioImported": "{count, plural, other{เพิ่มรายการซื้อ {count} รายการแล้ว}}",
+  "portfolioImportSkipped": "{count, plural, other{ข้าม {count} บรรทัด}}"
 }

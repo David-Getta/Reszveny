@@ -1710,4 +1710,39 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kamfanoni masu kama';
+
+  @override
+  String get portfolioExport => 'Fitar a matsayin CSV';
+
+  @override
+  String get portfolioImport => 'Shigo da daga CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Liƙa sayayya ɗaya a kowane layi: alamar ticker, yawa, farashi, nau\'in kuɗi, kwanan wata (YYYY-MM-DD). Ana iya raba ginshiƙai da waƙafi, waƙafi mai digo ko tab; layin take ba dole ba ne.';
+
+  @override
+  String get portfolioImportButton => 'Shigo da';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An ƙara sayayya $count',
+      one: 'An ƙara sayayya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An tsallake layuka $count',
+      one: 'An tsallake layi 1',
+    );
+    return '$_temp0';
+  }
 }

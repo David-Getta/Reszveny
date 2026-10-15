@@ -1699,4 +1699,39 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get peersTitle => 'Công ty tương tự';
+
+  @override
+  String get portfolioExport => 'Xuất dưới dạng CSV';
+
+  @override
+  String get portfolioImport => 'Nhập từ CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Dán mỗi dòng một lần mua: mã cổ phiếu, số lượng, giá, tiền tệ, ngày (YYYY-MM-DD). Các cột có thể phân tách bằng dấu phẩy, dấu chấm phẩy hoặc tab; dòng tiêu đề là tùy chọn.';
+
+  @override
+  String get portfolioImportButton => 'Nhập';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã thêm $count lần mua',
+      one: 'Đã thêm 1 lần mua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã bỏ qua $count dòng',
+      one: 'Đã bỏ qua 1 dòng',
+    );
+    return '$_temp0';
+  }
 }

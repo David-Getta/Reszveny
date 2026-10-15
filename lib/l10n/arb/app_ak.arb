@@ -465,5 +465,11 @@
   "notesHint": "Adɛn nti na wotɔeɛ, dɛn na worehwɛ, dɛn na ɛbɛma woatɔn?",
   "notesInfo": "Ɛkora wɔ mfiri yi so nko ara. AI nhwehwɛmu no de wo nkyerɛwee no bɛka ho.",
   "notesSaved": "Wɔakora {date}",
-  "peersTitle": "Adwumakuw a ɛte sɛ yei"
+  "peersTitle": "Adwumakuw a ɛte sɛ yei",
+  "portfolioExport": "Yi kɔ CSV mu",
+  "portfolioImport": "Fa fi CSV mu bra",
+  "portfolioImportHint": "Fa adetɔ baako hyɛ nkyerɛwee biara so: ticker agyiraehyɛde, dodow, bo, sika, da (YYYY-MM-DD). Wobetumi de kɔma, semikɔlɔn anaa tab atetew afanem no mu; atifi nkyerɛwee no nhia.",
+  "portfolioImportButton": "Fa bra",
+  "portfolioImported": "{count, plural, =1{Wɔde adetɔ 1 aka ho} other{Wɔde adetɔ {count} aka ho}}",
+  "portfolioImportSkipped": "{count, plural, =1{Wɔagyaw nkyerɛwee 1} other{Wɔagyaw nkyerɛwee {count}}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "¿Mbaʼérepa rejogua, mbaʼépa remañahína, mbaʼépa ojapóta reñemu hag̃ua?",
   "notesInfo": "Oñeñongatu ko mbaʼeʼokápe añoite. AI jehesaʼỹijo ohecha ne jehaipyrekuéra.",
   "notesSaved": "Oñeñongatu {date}",
-  "peersTitle": "Empresa ojoguáva"
+  "peersTitle": "Empresa ojoguáva",
+  "portfolioExport": "Emondo CSV ramo",
+  "portfolioImport": "Egueru CSV-gui",
+  "portfolioImportHint": "Emboja peteĩ jejogua peteĩteĩ línea-pe: símbolo, mboýpa, hepykue, pirapire, ára (AAAA-MM-DD). Umi columna ikatu oñembojaʼo coma, punto y coma térã tabulación rupive; línea ñepyrũ ndahaʼéi tekotevẽ.",
+  "portfolioImportButton": "Egueru",
+  "portfolioImported": "{count, plural, =1{Oñembojoaju 1 jejogua} other{Oñembojoaju {count} jejogua}}",
+  "portfolioImportSkipped": "{count, plural, =1{Ojeheja 1 línea} other{Ojeheja {count} línea}}"
 }

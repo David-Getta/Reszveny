@@ -465,5 +465,11 @@
   "notesHint": "Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?",
   "notesInfo": "Voatahiry amin'ity fitaovana ity ihany. Raisin'ny fandalinana AI an-tsaina ny naotinao.",
   "notesSaved": "Voatahiry {date}",
-  "peersTitle": "Orinasa mitovy"
+  "peersTitle": "Orinasa mitovy",
+  "portfolioExport": "Avoahy ho CSV",
+  "portfolioImport": "Ampidiro avy amin'ny CSV",
+  "portfolioImportHint": "Apetaho fividianana iray isaky ny andalana: ticker, isa, vidiny, vola, daty (YYYY-MM-DD). Azo saraina amin'ny faingo, teboka misy faingo na tabulation ny tsanganana; tsy voatery ny andalana lohateny.",
+  "portfolioImportButton": "Ampidiro",
+  "portfolioImported": "{count, plural, =1{Nampiana fividianana 1} other{Nampiana fividianana {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Nadingana andalana 1} other{Nadingana andalana {count}}}"
 }

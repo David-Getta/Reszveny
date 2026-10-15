@@ -1705,4 +1705,39 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get peersTitle => 'کۆمپانیا هاوشێوەکان';
+
+  @override
+  String get portfolioExport => 'هەناردەکردن وەک CSV';
+
+  @override
+  String get portfolioImport => 'هاوردەکردن لە CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'لە هەر هێڵێکدا یەک کڕین بلکێنە: هێمای پشک، بڕ، نرخ، دراو، بەروار (YYYY-MM-DD). ستوونەکان دەتوانرێت بە کۆما، خاڵبۆر یان تاب جیا بکرێنەوە؛ هێڵی سەردێڕ ئارەزوومەندانەیە.';
+
+  @override
+  String get portfolioImportButton => 'هاوردەکردن';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کڕین زیادکران',
+      one: '1 کڕین زیادکرا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هێڵ پەڕێنران',
+      one: '1 هێڵ پەڕێنرا',
+    );
+    return '$_temp0';
+  }
 }

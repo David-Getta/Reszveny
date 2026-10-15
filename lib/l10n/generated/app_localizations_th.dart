@@ -1683,4 +1683,37 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get peersTitle => 'บริษัทที่คล้ายกัน';
+
+  @override
+  String get portfolioExport => 'ส่งออกเป็น CSV';
+
+  @override
+  String get portfolioImport => 'นำเข้าจาก CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'วางรายการซื้อบรรทัดละหนึ่งรายการ: ชื่อย่อหุ้น, จำนวน, ราคา, สกุลเงิน, วันที่ (YYYY-MM-DD) คอลัมน์คั่นได้ด้วยจุลภาค อัฒภาค หรือแท็บ ส่วนแถวหัวตารางจะมีหรือไม่มีก็ได้';
+
+  @override
+  String get portfolioImportButton => 'นำเข้า';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เพิ่มรายการซื้อ $count รายการแล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ข้าม $count บรรทัด',
+    );
+    return '$_temp0';
+  }
 }

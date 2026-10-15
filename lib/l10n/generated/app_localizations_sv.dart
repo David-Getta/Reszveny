@@ -1705,4 +1705,39 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get peersTitle => 'Liknande företag';
+
+  @override
+  String get portfolioExport => 'Exportera som CSV';
+
+  @override
+  String get portfolioImport => 'Importera från CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Klistra in ett köp per rad: ticker, antal, pris, valuta, datum (ÅÅÅÅ-MM-DD). Kolumnerna kan avgränsas med komma, semikolon eller tabb; rubrikraden är valfri.';
+
+  @override
+  String get portfolioImportButton => 'Importera';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count köp har lagts till',
+      one: '1 köp har lagts till',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rader hoppades över',
+      one: '1 rad hoppades över',
+    );
+    return '$_temp0';
+  }
 }

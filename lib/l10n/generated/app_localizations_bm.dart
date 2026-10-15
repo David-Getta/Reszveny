@@ -1702,4 +1702,39 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get peersTitle => 'Sosiyete ɲɔgɔnnaw';
+
+  @override
+  String get portfolioExport => 'Bɔ ka kɛ CSV ye';
+
+  @override
+  String get portfolioImport => 'Don ka bɔ CSV la';
+
+  @override
+  String get portfolioImportHint =>
+      'San kelen bila sira kelen kelen kan: aksiyɔn taamasiyɛn, hakɛ, sɔngɔ, wari suguya, don (YYYY-MM-DD). Kolɔnw bɛ se ka faran ni virgule, point-virgule walima tabulation ye; kunkan sira tɛ wajibi ye.';
+
+  @override
+  String get portfolioImportButton => 'Don';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'San $count farala a kan',
+      one: 'San 1 farala a kan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sira $count tɛmɛna',
+      one: 'Sira 1 tɛmɛna',
+    );
+    return '$_temp0';
+  }
 }

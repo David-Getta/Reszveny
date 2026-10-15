@@ -1699,4 +1699,39 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get peersTitle => 'ساڳيون ڪمپنيون';
+
+  @override
+  String get portfolioExport => 'CSV طور ايڪسپورٽ ڪريو';
+
+  @override
+  String get portfolioImport => 'CSV مان امپورٽ ڪريو';
+
+  @override
+  String get portfolioImportHint =>
+      'هر قطار ۾ هڪ خريداري پيسٽ ڪريو: ٽڪر، مقدار، قيمت، ڪرنسي، تاريخ (YYYY-MM-DD). ڪالم ڪاما، سيمي ڪالن يا ٽيب سان الڳ ٿي سگهن ٿا؛ هيڊر واري قطار اختياري آهي.';
+
+  @override
+  String get portfolioImportButton => 'امپورٽ ڪريو';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خريداريون شامل ڪيون ويون',
+      one: '1 خريداري شامل ڪئي وئي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قطارون ڇڏيون ويون',
+      one: '1 قطار ڇڏي وئي',
+    );
+    return '$_temp0';
+  }
 }

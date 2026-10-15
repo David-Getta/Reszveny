@@ -465,5 +465,11 @@
   "notesHint": "Naha anjeun mésér, naon anu diawaskeun, naon anu bakal ngajantenkeun anjeun ngajual?",
   "notesInfo": "Ngan disimpen dina parangkat ieu. Analisis AI merhatikeun catetan anjeun.",
   "notesSaved": "Disimpen {date}",
-  "peersTitle": "Pausahaan nu sarupa"
+  "peersTitle": "Pausahaan nu sarupa",
+  "portfolioExport": "Ékspor salaku CSV",
+  "portfolioImport": "Impor tina CSV",
+  "portfolioImportHint": "Témpélkeun hiji pameulian per baris: kode saham, jumlah, harga, mata uang, tanggal (YYYY-MM-DD). Kolom bisa dipisahkeun ku koma, titik koma atawa tab; baris judul henteu wajib.",
+  "portfolioImportButton": "Impor",
+  "portfolioImported": "{count, plural, =1{1 pameulian ditambahkeun} other{{count} pameulian ditambahkeun}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 baris dilewat} other{{count} baris dilewat}}"
 }

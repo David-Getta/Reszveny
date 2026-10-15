@@ -465,5 +465,11 @@
   "notesHint": "Waarom heb je het gekocht, waar let je op, wat zou voor jou een reden zijn om te verkopen?",
   "notesInfo": "Alleen op dit apparaat opgeslagen. De AI-analyse houdt rekening met je notities.",
   "notesSaved": "Opgeslagen {date}",
-  "peersTitle": "Vergelijkbare bedrijven"
+  "peersTitle": "Vergelijkbare bedrijven",
+  "portfolioExport": "Exporteren als CSV",
+  "portfolioImport": "Importeren uit CSV",
+  "portfolioImportHint": "Plak één aankoop per regel: ticker, aantal, prijs, valuta, datum (JJJJ-MM-DD). Kolommen mogen gescheiden zijn door komma's, puntkomma's of tabs; de kopregel is optioneel.",
+  "portfolioImportButton": "Importeren",
+  "portfolioImported": "{count, plural, =1{1 aankoop toegevoegd} other{{count} aankopen toegevoegd}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 regel overgeslagen} other{{count} regels overgeslagen}}"
 }

@@ -1758,4 +1758,43 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get peersTitle => 'Podobne spółki';
+
+  @override
+  String get portfolioExport => 'Eksportuj do CSV';
+
+  @override
+  String get portfolioImport => 'Importuj z CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Wklej jeden zakup w każdym wierszu: symbol giełdowy, liczba, cena, waluta, data (RRRR-MM-DD). Kolumny mogą być rozdzielone przecinkami, średnikami lub tabulatorami; wiersz nagłówka jest opcjonalny.';
+
+  @override
+  String get portfolioImportButton => 'Importuj';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano $count zakupu',
+      many: 'Dodano $count zakupów',
+      few: 'Dodano $count zakupy',
+      one: 'Dodano $count zakup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pominięto $count wiersza',
+      many: 'Pominięto $count wierszy',
+      few: 'Pominięto $count wiersze',
+      one: 'Pominięto $count wiersz',
+    );
+    return '$_temp0';
+  }
 }

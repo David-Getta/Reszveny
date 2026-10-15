@@ -1713,4 +1713,39 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get peersTitle => 'Susamang mga kompanya';
+
+  @override
+  String get portfolioExport => 'I-export isip CSV';
+
+  @override
+  String get portfolioImport => 'I-import gikan sa CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'I-paste ang usa ka pagpalit matag linya: simbolo sa ticker, gidaghanon, presyo, currency, petsa (YYYY-MM-DD). Ang mga kolum mahimong bulagon sa comma, semicolon o tab; opsyonal ang header nga linya.';
+
+  @override
+  String get portfolioImportButton => 'I-import';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nadugang ang $count ka pagpalit',
+      one: 'Nadugang ang 1 ka pagpalit',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gilaktawan ang $count ka linya',
+      one: 'Gilaktawan ang 1 ka linya',
+    );
+    return '$_temp0';
+  }
 }

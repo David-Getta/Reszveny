@@ -465,5 +465,11 @@
   "notesHint": "Niyə aldınız, nəyi izləyirsiniz, nə sizi satmağa vadar edərdi?",
   "notesInfo": "Yalnız bu cihazda saxlanılır. AI təhlili qeydlərinizi nəzərə alır.",
   "notesSaved": "Yadda saxlanıldı: {date}",
-  "peersTitle": "Oxşar şirkətlər"
+  "peersTitle": "Oxşar şirkətlər",
+  "portfolioExport": "CSV kimi ixrac et",
+  "portfolioImport": "CSV-dən idxal et",
+  "portfolioImportHint": "Hər sətirdə bir alış yapışdırın: tiker, miqdar, qiymət, valyuta, tarix (İİİİ-AA-GG). Sütunlar vergül, nöqtəli vergül və ya tabla ayrıla bilər; başlıq sətri məcburi deyil.",
+  "portfolioImportButton": "İdxal et",
+  "portfolioImported": "{count, plural, =1{1 alış əlavə olundu} other{{count} alış əlavə olundu}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 sətir ötürüldü} other{{count} sətir ötürüldü}}"
 }

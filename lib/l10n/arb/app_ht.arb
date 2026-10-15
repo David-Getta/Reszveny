@@ -465,5 +465,11 @@
   "notesHint": "Poukisa ou te achte l, kisa w ap swiv, kisa ki ta fè w vann li?",
   "notesInfo": "Anrejistre sèlman sou aparèy sa a. Analiz AI a pran nòt ou yo an kont.",
   "notesSaved": "Anrejistre {date}",
-  "peersTitle": "Konpayi ki sanble"
+  "peersTitle": "Konpayi ki sanble",
+  "portfolioExport": "Ekspòte an CSV",
+  "portfolioImport": "Enpòte soti nan CSV",
+  "portfolioImportHint": "Kole yon acha pa liy: senbòl, kantite, pri, deviz, dat (AAAA-MM-JJ). Kolòn yo ka separe ak vigil, pwen vigil oswa tab; liy tèt la pa obligatwa.",
+  "portfolioImportButton": "Enpòte",
+  "portfolioImported": "{count, plural, =1{Nou ajoute 1 acha} other{Nou ajoute {count} acha}}",
+  "portfolioImportSkipped": "{count, plural, =1{Nou sote 1 liy} other{Nou sote {count} liy}}"
 }

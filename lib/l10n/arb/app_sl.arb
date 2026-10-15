@@ -465,5 +465,11 @@
   "notesHint": "Zakaj ste jo kupili, kaj spremljate, kaj bi vas pripravilo do prodaje?",
   "notesInfo": "Shranjeno samo v tej napravi. Analiza AI upošteva vaše zapiske.",
   "notesSaved": "Shranjeno {date}",
-  "peersTitle": "Podobna podjetja"
+  "peersTitle": "Podobna podjetja",
+  "portfolioExport": "Izvozi v CSV",
+  "portfolioImport": "Uvozi iz CSV",
+  "portfolioImportHint": "Prilepite en nakup na vrstico: borzna oznaka, količina, cena, valuta, datum (LLLL-MM-DD). Stolpci so lahko ločeni z vejicami, podpičji ali tabulatorji; naslovna vrstica ni obvezna.",
+  "portfolioImportButton": "Uvozi",
+  "portfolioImported": "{count, plural, one{Dodan je {count} nakup} two{Dodana sta {count} nakupa} few{Dodani so {count} nakupi} other{Dodanih je {count} nakupov}}",
+  "portfolioImportSkipped": "{count, plural, one{Preskočena je {count} vrstica} two{Preskočeni sta {count} vrstici} few{Preskočene so {count} vrstice} other{Preskočenih je {count} vrstic}}"
 }

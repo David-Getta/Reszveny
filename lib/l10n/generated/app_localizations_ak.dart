@@ -1704,4 +1704,39 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get peersTitle => 'Adwumakuw a ɛte sɛ yei';
+
+  @override
+  String get portfolioExport => 'Yi kɔ CSV mu';
+
+  @override
+  String get portfolioImport => 'Fa fi CSV mu bra';
+
+  @override
+  String get portfolioImportHint =>
+      'Fa adetɔ baako hyɛ nkyerɛwee biara so: ticker agyiraehyɛde, dodow, bo, sika, da (YYYY-MM-DD). Wobetumi de kɔma, semikɔlɔn anaa tab atetew afanem no mu; atifi nkyerɛwee no nhia.';
+
+  @override
+  String get portfolioImportButton => 'Fa bra';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔde adetɔ $count aka ho',
+      one: 'Wɔde adetɔ 1 aka ho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔagyaw nkyerɛwee $count',
+      one: 'Wɔagyaw nkyerɛwee 1',
+    );
+    return '$_temp0';
+  }
 }

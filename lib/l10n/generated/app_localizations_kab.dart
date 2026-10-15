@@ -1703,4 +1703,39 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get peersTitle => 'Tikebbaniyin i d-icban';
+
+  @override
+  String get portfolioExport => 'Sifeḍ am CSV';
+
+  @override
+  String get portfolioImport => 'Kter seg CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Senṭeḍ tiɣin, yiwet deg yal izirig: azamul n uksyun, tanecta, ssuma, tadrimt, azemz (YYYY-MM-DD). Tigejda zemrent ad ttwafrqent s tfeṛḍin, s tneqqiḍin-tfeṛḍin neɣ s tabulation; izirig n uqerru d afrayan.';
+
+  @override
+  String get portfolioImportButton => 'Kter';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwarnant-d $count n tɣin',
+      one: 'Tettwarna-d 1 n tɣin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwazeglen $count n yizirigen',
+      one: 'Yettwazgel 1 n yizirig',
+    );
+    return '$_temp0';
+  }
 }

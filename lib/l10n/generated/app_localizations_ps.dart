@@ -1699,4 +1699,39 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get peersTitle => 'ورته شرکتونه';
+
+  @override
+  String get portfolioExport => 'د CSV په توګه صادرول';
+
+  @override
+  String get portfolioImport => 'له CSV څخه واردول';
+
+  @override
+  String get portfolioImportHint =>
+      'په هره کرښه کې یو پېرود ولګوئ: ټیکر، شمېر، بیه، پولي واحد، نېټه (YYYY-MM-DD). ستنې د کامې، سیمي کولن یا ټب په واسطه بېلېدای شي؛ د سرلیک کرښه اختیاري ده.';
+
+  @override
+  String get portfolioImportButton => 'واردول';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پېرودونه اضافه شول',
+      one: '1 پېرود اضافه شو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کرښې پرېښودل شوې',
+      one: '1 کرښه پرېښودل شوه',
+    );
+    return '$_temp0';
+  }
 }

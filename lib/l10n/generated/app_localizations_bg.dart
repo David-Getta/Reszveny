@@ -1705,4 +1705,39 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Подобни компании';
+
+  @override
+  String get portfolioExport => 'Експортиране като CSV';
+
+  @override
+  String get portfolioImport => 'Импортиране от CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Поставете по една покупка на ред: тикер символ, количество, цена, валута, дата (ГГГГ-ММ-ДД). Колоните може да са разделени със запетаи, точки и запетаи или табулации; заглавният ред не е задължителен.';
+
+  @override
+  String get portfolioImportButton => 'Импортиране';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавени са $count покупки',
+      one: 'Добавена е 1 покупка',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Пропуснати са $count реда',
+      one: 'Пропуснат е 1 ред',
+    );
+    return '$_temp0';
+  }
 }

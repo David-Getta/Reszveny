@@ -465,5 +465,11 @@
   "notesHint": "Nĩ kĩ gĩtũmire ũgũre, nĩ kĩ ũrarora, nĩ kĩ kĩngĩtũma wendie?",
   "notesInfo": "Ĩigĩtwo kĩndũ-inĩ gĩkĩ tu. Ũthuthuria wa AI nĩ ũtaranagia maandĩko maku.",
   "notesSaved": "Ĩigĩtwo {date}",
-  "peersTitle": "Kambuni iria ihaanaine"
+  "peersTitle": "Kambuni iria ihaanaine",
+  "portfolioExport": "Ruta ta CSV",
+  "portfolioImport": "Ingĩria kuuma CSV",
+  "portfolioImportHint": "Ĩkĩra ũgũri ũmwe o mũhari-inĩ: ticker ya hisa, mũigana, thogora, mbeca, tarehe (YYYY-MM-DD). Mĩhari ĩrũgamĩte no yamũranio na koma, semicolon kana tab; mũhari wa kĩongo ti wa bata.",
+  "portfolioImportButton": "Ingĩria",
+  "portfolioImported": "{count, plural, =1{Ũgũri 1 nĩ wongereirwo} other{Ũgũri {count} nĩ wongereirwo}}",
+  "portfolioImportSkipped": "{count, plural, =1{Mũhari 1 nĩ wagũrũkwo} other{Mĩhari {count} nĩ yagũrũkwo}}"
 }

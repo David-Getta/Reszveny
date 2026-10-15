@@ -1756,4 +1756,43 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get peersTitle => 'Похожие компании';
+
+  @override
+  String get portfolioExport => 'Экспорт в CSV';
+
+  @override
+  String get portfolioImport => 'Импорт из CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Вставьте по одной покупке в строке: тикер, количество, цена, валюта, дата (ГГГГ-ММ-ДД). Столбцы можно разделять запятыми, точками с запятой или табуляцией; строка заголовка необязательна.';
+
+  @override
+  String get portfolioImportButton => 'Импортировать';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавлено $count покупки',
+      many: 'Добавлено $count покупок',
+      few: 'Добавлено $count покупки',
+      one: 'Добавлена $count покупка',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Пропущено $count строки',
+      many: 'Пропущено $count строк',
+      few: 'Пропущено $count строки',
+      one: 'Пропущена $count строка',
+    );
+    return '$_temp0';
+  }
 }

@@ -1714,4 +1714,39 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get peersTitle => 'Entreprises similaires';
+
+  @override
+  String get portfolioExport => 'Exporter en CSV';
+
+  @override
+  String get portfolioImport => 'Importer depuis un CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Collez un achat par ligne : symbole, quantité, prix, devise, date (AAAA-MM-JJ). Les colonnes peuvent être séparées par des virgules, des points-virgules ou des tabulations ; la ligne d’en-tête est facultative.';
+
+  @override
+  String get portfolioImportButton => 'Importer';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count achats ajoutés',
+      one: '1 achat ajouté',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lignes ignorées',
+      one: '1 ligne ignorée',
+    );
+    return '$_temp0';
+  }
 }

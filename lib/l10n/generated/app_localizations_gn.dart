@@ -1711,4 +1711,39 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Empresa ojoguáva';
+
+  @override
+  String get portfolioExport => 'Emondo CSV ramo';
+
+  @override
+  String get portfolioImport => 'Egueru CSV-gui';
+
+  @override
+  String get portfolioImportHint =>
+      'Emboja peteĩ jejogua peteĩteĩ línea-pe: símbolo, mboýpa, hepykue, pirapire, ára (AAAA-MM-DD). Umi columna ikatu oñembojaʼo coma, punto y coma térã tabulación rupive; línea ñepyrũ ndahaʼéi tekotevẽ.';
+
+  @override
+  String get portfolioImportButton => 'Egueru';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñembojoaju $count jejogua',
+      one: 'Oñembojoaju 1 jejogua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ojeheja $count línea',
+      one: 'Ojeheja 1 línea',
+    );
+    return '$_temp0';
+  }
 }

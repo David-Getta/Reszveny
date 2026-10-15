@@ -1715,4 +1715,39 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get peersTitle => 'Tikhampani leti fanaka';
+
+  @override
+  String get portfolioExport => 'Rhumela ehandle tanihi CSV';
+
+  @override
+  String get portfolioImport => 'Nghenisa ku suka eka CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Namarheta xixaviwa xin\'we eka layini yin\'wana na yin\'wana: ticker, nhlayo, nxavo, muxaka wa mali, siku (YYYY-MM-DD). Tikholomo ti nga hambanisiwa hi tikhoma, tisemikholoni kumbe ti-tab; layini ya tinhloko a yi bohi.';
+
+  @override
+  String get portfolioImportButton => 'Nghenisa';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku engeteriwe swixaviwa swa $count',
+      one: 'Ku engeteriwe xixaviwa xin\'we',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku tluriwe tilayini ta $count',
+      one: 'Ku tluriwe layini yin\'we',
+    );
+    return '$_temp0';
+  }
 }

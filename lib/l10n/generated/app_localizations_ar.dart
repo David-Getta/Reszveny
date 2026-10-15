@@ -1742,4 +1742,45 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get peersTitle => 'شركات مماثلة';
+
+  @override
+  String get portfolioExport => 'تصدير بصيغة CSV';
+
+  @override
+  String get portfolioImport => 'استيراد من CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'الصق عملية شراء واحدة في كل سطر: رمز السهم، الكمية، السعر، العملة، التاريخ (YYYY-MM-DD). يمكن فصل الأعمدة بفواصل أو فواصل منقوطة أو علامات جدولة؛ سطر العناوين اختياري.';
+
+  @override
+  String get portfolioImportButton => 'استيراد';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تمت إضافة $count عملية شراء',
+      many: 'تمت إضافة $count عملية شراء',
+      few: 'تمت إضافة $count عمليات شراء',
+      two: 'تمت إضافة عمليتي شراء',
+      one: 'تمت إضافة عملية شراء واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تم تخطي $count سطر',
+      many: 'تم تخطي $count سطراً',
+      few: 'تم تخطي $count أسطر',
+      two: 'تم تخطي سطرين',
+      one: 'تم تخطي سطر واحد',
+    );
+    return '$_temp0';
+  }
 }

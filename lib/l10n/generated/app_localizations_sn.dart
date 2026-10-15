@@ -1710,4 +1710,39 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Makambani akafanana';
+
+  @override
+  String get portfolioExport => 'Tumira seCSV';
+
+  @override
+  String get portfolioImport => 'Pinza kubva kuCSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Namira chinhu chimwe chawakatenga pamutsara mumwe nemumwe: ticker, huwandu, mutengo, mari, zuva (YYYY-MM-DD). Makoramu anogona kuparadzaniswa nemakoma, semikoroni kana tabhu; mutsara wemisoro hausi wekumanikidzwa.';
+
+  @override
+  String get portfolioImportButton => 'Pinza';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zvinhu $count zvawakatenga zvawedzerwa',
+      one: 'Chinhu 1 chawakatenga chawedzerwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mitsara $count yasvetwa',
+      one: 'Mutsara 1 wasvetwa',
+    );
+    return '$_temp0';
+  }
 }

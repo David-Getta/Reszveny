@@ -1703,4 +1703,39 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get peersTitle => 'Meňzeş kompaniýalar';
+
+  @override
+  String get portfolioExport => 'CSV görnüşinde eksport et';
+
+  @override
+  String get portfolioImport => 'CSV-den import et';
+
+  @override
+  String get portfolioImportHint =>
+      'Her setire bir satyn alyş goý: tiker, mukdar, baha, walýuta, sene (ÝÝÝÝ-AA-GG). Sütünler otur, nokatly otur ýa-da tab bilen bölünip bilner; sözbaşy setiri hökman däl.';
+
+  @override
+  String get portfolioImportButton => 'Import et';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count satyn alyş goşuldy',
+      one: '1 satyn alyş goşuldy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count setir geçildi',
+      one: '1 setir geçildi',
+    );
+    return '$_temp0';
+  }
 }

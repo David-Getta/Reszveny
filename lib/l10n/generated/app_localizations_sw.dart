@@ -1705,4 +1705,39 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get peersTitle => 'Kampuni zinazofanana';
+
+  @override
+  String get portfolioExport => 'Hamisha kama CSV';
+
+  @override
+  String get portfolioImport => 'Leta kutoka CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Bandika ununuzi mmoja kwa kila mstari: ticker, idadi, bei, sarafu, tarehe (YYYY-MM-DD). Safu wima zinaweza kutenganishwa kwa koma, nukta-koma au tabo; mstari wa vichwa ni wa hiari.';
+
+  @override
+  String get portfolioImportButton => 'Leta';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Manunuzi $count yameongezwa',
+      one: 'Ununuzi 1 umeongezwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mistari $count imerukwa',
+      one: 'Mstari 1 umerukwa',
+    );
+    return '$_temp0';
+  }
 }

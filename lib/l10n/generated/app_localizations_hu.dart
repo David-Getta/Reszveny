@@ -1709,4 +1709,39 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get peersTitle => 'Hasonló cégek';
+
+  @override
+  String get portfolioExport => 'Exportálás CSV-be';
+
+  @override
+  String get portfolioImport => 'Importálás CSV-ből';
+
+  @override
+  String get portfolioImportHint =>
+      'Soronként egy vétel: ticker, darabszám, ár, pénznem, dátum (ÉÉÉÉ-HH-NN). Az oszlopokat vessző, pontosvessző vagy tabulátor választhatja el; a fejléc elhagyható.';
+
+  @override
+  String get portfolioImportButton => 'Importálás';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vétel hozzáadva',
+      one: '1 vétel hozzáadva',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sor kihagyva',
+      one: '1 sor kihagyva',
+    );
+    return '$_temp0';
+  }
 }

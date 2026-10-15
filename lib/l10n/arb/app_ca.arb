@@ -465,5 +465,11 @@
   "notesHint": "Per què la vas comprar, què vigiles, què et faria vendre-la?",
   "notesInfo": "Es desa només en aquest dispositiu. L’anàlisi amb IA té en compte les teves notes.",
   "notesSaved": "Desat {date}",
-  "peersTitle": "Empreses similars"
+  "peersTitle": "Empreses similars",
+  "portfolioExport": "Exporta com a CSV",
+  "portfolioImport": "Importa des de CSV",
+  "portfolioImportHint": "Enganxa una compra per línia: símbol, quantitat, preu, divisa, data (AAAA-MM-DD). Les columnes es poden separar amb comes, punts i comes o tabulacions; la fila de capçalera és opcional.",
+  "portfolioImportButton": "Importa",
+  "portfolioImported": "{count, plural, =1{S’ha afegit 1 compra} other{S’han afegit {count} compres}}",
+  "portfolioImportSkipped": "{count, plural, =1{S’ha omès 1 línia} other{S’han omès {count} línies}}"
 }

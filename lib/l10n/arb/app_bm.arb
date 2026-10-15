@@ -465,5 +465,11 @@
   "notesHint": "Mun na i y'a san, i bɛ mun kɔlɔsi, mun b'a to i b'a feere?",
   "notesInfo": "A marala nin minɛn in dɔrɔn de kan. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.",
   "notesSaved": "A marala: {date}",
-  "peersTitle": "Sosiyete ɲɔgɔnnaw"
+  "peersTitle": "Sosiyete ɲɔgɔnnaw",
+  "portfolioExport": "Bɔ ka kɛ CSV ye",
+  "portfolioImport": "Don ka bɔ CSV la",
+  "portfolioImportHint": "San kelen bila sira kelen kelen kan: aksiyɔn taamasiyɛn, hakɛ, sɔngɔ, wari suguya, don (YYYY-MM-DD). Kolɔnw bɛ se ka faran ni virgule, point-virgule walima tabulation ye; kunkan sira tɛ wajibi ye.",
+  "portfolioImportButton": "Don",
+  "portfolioImported": "{count, plural, =1{San 1 farala a kan} other{San {count} farala a kan}}",
+  "portfolioImportSkipped": "{count, plural, =1{Sira 1 tɛmɛna} other{Sira {count} tɛmɛna}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "توهان اهو ڇو خريد ڪيو، ڇا تي نظر رکي رهيا آهيو، ڇا ٿيو ته وڪڻندا؟",
   "notesInfo": "صرف هن ڊوائيس تي محفوظ ٿئي ٿو. AI تجزيو توهان جا نوٽس نظر ۾ رکي ٿو.",
   "notesSaved": "محفوظ ٿيو: {date}",
-  "peersTitle": "ساڳيون ڪمپنيون"
+  "peersTitle": "ساڳيون ڪمپنيون",
+  "portfolioExport": "CSV طور ايڪسپورٽ ڪريو",
+  "portfolioImport": "CSV مان امپورٽ ڪريو",
+  "portfolioImportHint": "هر قطار ۾ هڪ خريداري پيسٽ ڪريو: ٽڪر، مقدار، قيمت، ڪرنسي، تاريخ (YYYY-MM-DD). ڪالم ڪاما، سيمي ڪالن يا ٽيب سان الڳ ٿي سگهن ٿا؛ هيڊر واري قطار اختياري آهي.",
+  "portfolioImportButton": "امپورٽ ڪريو",
+  "portfolioImported": "{count, plural, =1{1 خريداري شامل ڪئي وئي} other{{count} خريداريون شامل ڪيون ويون}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 قطار ڇڏي وئي} other{{count} قطارون ڇڏيون ويون}}"
 }

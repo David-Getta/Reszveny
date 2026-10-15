@@ -465,5 +465,11 @@
   "notesHint": "Neden aldınız, neyi takip ediyorsunuz, sizi satmaya ne yöneltir?",
   "notesInfo": "Yalnızca bu cihazda saklanır. Yapay zekâ analizi notlarınızı dikkate alır.",
   "notesSaved": "Kaydedildi: {date}",
-  "peersTitle": "Benzer şirketler"
+  "peersTitle": "Benzer şirketler",
+  "portfolioExport": "CSV olarak dışa aktar",
+  "portfolioImport": "CSV'den içe aktar",
+  "portfolioImportHint": "Her satıra bir alış yapıştır: hisse sembolü, adet, fiyat, para birimi, tarih (YYYY-AA-GG). Sütunlar virgül, noktalı virgül veya sekmeyle ayrılabilir; başlık satırı isteğe bağlıdır.",
+  "portfolioImportButton": "İçe aktar",
+  "portfolioImported": "{count, plural, =1{1 alış eklendi} other{{count} alış eklendi}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 satır atlandı} other{{count} satır atlandı}}"
 }

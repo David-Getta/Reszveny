@@ -1710,4 +1710,39 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get peersTitle => 'ಇದೇ ರೀತಿಯ ಕಂಪನಿಗಳು';
+
+  @override
+  String get portfolioExport => 'CSV ಆಗಿ ರಫ್ತು ಮಾಡಿ';
+
+  @override
+  String get portfolioImport => 'CSV ಯಿಂದ ಆಮದು ಮಾಡಿ';
+
+  @override
+  String get portfolioImportHint =>
+      'ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಖರೀದಿಯನ್ನು ಅಂಟಿಸಿ: ಟಿಕರ್ ಚಿಹ್ನೆ, ಪ್ರಮಾಣ, ಬೆಲೆ, ಕರೆನ್ಸಿ, ದಿನಾಂಕ (YYYY-MM-DD). ಕಾಲಮ್‌ಗಳನ್ನು ಅಲ್ಪವಿರಾಮ, ಅರ್ಧವಿರಾಮ ಅಥವಾ ಟ್ಯಾಬ್‌ಗಳಿಂದ ಬೇರ್ಪಡಿಸಬಹುದು; ಶೀರ್ಷಿಕೆ ಸಾಲು ಐಚ್ಛಿಕ.';
+
+  @override
+  String get portfolioImportButton => 'ಆಮದು ಮಾಡಿ';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಖರೀದಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
+      one: '1 ಖರೀದಿ ಸೇರಿಸಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಸಾಲುಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ',
+      one: '1 ಸಾಲು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
 }

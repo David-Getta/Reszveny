@@ -465,5 +465,11 @@
   "notesHint": "Zašto ste je kupili, što pratite, zbog čega biste je prodali?",
   "notesInfo": "Sprema se samo na ovom uređaju. AI analiza uzima u obzir vaše bilješke.",
   "notesSaved": "Spremljeno {date}",
-  "peersTitle": "Slične tvrtke"
+  "peersTitle": "Slične tvrtke",
+  "portfolioExport": "Izvezi kao CSV",
+  "portfolioImport": "Uvezi iz CSV-a",
+  "portfolioImportHint": "Zalijepite jednu kupnju po retku: ticker simbol, količina, cijena, valuta, datum (GGGG-MM-DD). Stupci mogu biti odvojeni zarezima, točkama sa zarezom ili tabulatorima; redak sa zaglavljem nije obavezan.",
+  "portfolioImportButton": "Uvezi",
+  "portfolioImported": "{count, plural, one{Dodana je {count} kupnja} few{Dodane su {count} kupnje} other{Dodano je {count} kupnji}}",
+  "portfolioImportSkipped": "{count, plural, one{Preskočen je {count} redak} few{Preskočena su {count} retka} other{Preskočeno je {count} redaka}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "Lu tax nga ko jënd, lan ngay topp, lan moo lay def nga jaay ko?",
   "notesInfo": "Ci masin bii rekk lañu ko denc. Saytu AI bi dafay jëfandikoo sa notu yi.",
   "notesSaved": "Denc nañu ko: {date}",
-  "peersTitle": "Kompañi yu ko niru"
+  "peersTitle": "Kompañi yu ko niru",
+  "portfolioExport": "Génne ko ci CSV",
+  "portfolioImport": "Duggal ko ci CSV",
+  "portfolioImportHint": "Taqal benn jënd ci bépp rëdd: màndargay aksiyoŋ, lim, njëg, xeetu xaalis, bés (YYYY-MM-DD). Mën nañu xàjjale kolon yi ak wirgil, pwen-wirgil walla tab; rëddu bopp bi war-ul.",
+  "portfolioImportButton": "Duggal",
+  "portfolioImported": "{count, plural, =1{Yokk nañu 1 jënd} other{Yokk nañu {count} jënd}}",
+  "portfolioImportSkipped": "{count, plural, =1{Wacc nañu 1 rëdd} other{Wacc nañu {count} rëdd}}"
 }

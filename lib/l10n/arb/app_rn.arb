@@ -465,5 +465,11 @@
   "notesHint": "Ni kubera iki wawuguze, ni ibiki uriko urakurikirana, ni igiki coshobora gutuma uwugurisha?",
   "notesInfo": "Bibitswe kuri iki gikoresho gusa. Isesangura rya AI ryitaho ivyo wanditse.",
   "notesSaved": "Vyabitswe {date}",
-  "peersTitle": "Amasosiyete asa"
+  "peersTitle": "Amasosiyete asa",
+  "portfolioExport": "Ohereza nka CSV",
+  "portfolioImport": "Injiza biva muri CSV",
+  "portfolioImportHint": "Shiramwo ikintu kimwe waguze ku murongo umwe: ticker, igitigiri, igiciro, ifaranga, itariki (YYYY-MM-DD). Inkingi zirashobora gutandukanywa n'akitso, akitso k'akadomo canke tab; umurongo w'imitwe si ngombwa.",
+  "portfolioImportButton": "Injiza",
+  "portfolioImported": "{count, plural, =1{Hongewemwo ikiguzi 1} other{Hongewemwo ibiguzi {count}}}",
+  "portfolioImportSkipped": "{count, plural, =1{Umurongo 1 wasimbutswe} other{Imirongo {count} yasimbutswe}}"
 }

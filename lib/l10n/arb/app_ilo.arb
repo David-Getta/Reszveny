@@ -465,5 +465,11 @@
   "notesHint": "Apay a ginatangmo, ania ti bambantayam, ania ti mangpailako kenka?",
   "notesInfo": "Naidulin laeng iti daytoy a device. Ikonsiderar ti panangsukimat ti AI dagiti notam.",
   "notesSaved": "Naidulin {date}",
-  "peersTitle": "Dagiti kapada a kompania"
+  "peersTitle": "Dagiti kapada a kompania",
+  "portfolioExport": "I-export kas CSV",
+  "portfolioImport": "I-import manipud iti CSV",
+  "portfolioImportHint": "I-paste ti maysa a gatang iti tunggal linia: simbolo ti ticker, bilang, presio, currency, petsa (YYYY-MM-DD). Mabalin a mapagsisina dagiti kolum babaen ti comma, semicolon wenno tab; opsional ti linia ti header.",
+  "portfolioImportButton": "I-import",
+  "portfolioImported": "{count, plural, =1{Nainayon ti 1 a gatang} other{Nainayon ti {count} a gatang}}",
+  "portfolioImportSkipped": "{count, plural, =1{Nalaktawan ti 1 a linia} other{Nalaktawan ti {count} a linia}}"
 }

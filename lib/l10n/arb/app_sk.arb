@@ -465,5 +465,11 @@
   "notesHint": "Prečo ste ju kúpili, čo sledujete, čo by vás prinútilo predať?",
   "notesInfo": "Ukladá sa iba v tomto zariadení. AI analýza berie vaše poznámky do úvahy.",
   "notesSaved": "Uložené {date}",
-  "peersTitle": "Podobné spoločnosti"
+  "peersTitle": "Podobné spoločnosti",
+  "portfolioExport": "Exportovať do CSV",
+  "portfolioImport": "Importovať z CSV",
+  "portfolioImportHint": "Vlož jeden nákup na riadok: ticker, množstvo, cena, mena, dátum (RRRR-MM-DD). Stĺpce môžu byť oddelené čiarkami, bodkočiarkami alebo tabulátormi; riadok hlavičky je nepovinný.",
+  "portfolioImportButton": "Importovať",
+  "portfolioImported": "{count, plural, =1{Pridaný 1 nákup} few{Pridané {count} nákupy} many{Pridané {count} nákupu} other{Pridaných {count} nákupov}}",
+  "portfolioImportSkipped": "{count, plural, =1{Preskočený 1 riadok} few{Preskočené {count} riadky} many{Preskočené {count} riadku} other{Preskočených {count} riadkov}}"
 }

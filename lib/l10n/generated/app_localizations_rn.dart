@@ -1711,4 +1711,39 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get peersTitle => 'Amasosiyete asa';
+
+  @override
+  String get portfolioExport => 'Ohereza nka CSV';
+
+  @override
+  String get portfolioImport => 'Injiza biva muri CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Shiramwo ikintu kimwe waguze ku murongo umwe: ticker, igitigiri, igiciro, ifaranga, itariki (YYYY-MM-DD). Inkingi zirashobora gutandukanywa n\'akitso, akitso k\'akadomo canke tab; umurongo w\'imitwe si ngombwa.';
+
+  @override
+  String get portfolioImportButton => 'Injiza';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hongewemwo ibiguzi $count',
+      one: 'Hongewemwo ikiguzi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Imirongo $count yasimbutswe',
+      one: 'Umurongo 1 wasimbutswe',
+    );
+    return '$_temp0';
+  }
 }

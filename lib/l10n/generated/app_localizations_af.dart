@@ -1708,4 +1708,39 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get peersTitle => 'Soortgelyke maatskappye';
+
+  @override
+  String get portfolioExport => 'Voer uit as CSV';
+
+  @override
+  String get portfolioImport => 'Voer in uit CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Plak een aankoop per reël: aandeelkode, hoeveelheid, prys, geldeenheid, datum (JJJJ-MM-DD). Kolomme kan deur kommas, kommapunte of tabs geskei word; die opskrifreël is opsioneel.';
+
+  @override
+  String get portfolioImportButton => 'Voer in';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aankope bygevoeg',
+      one: '1 aankoop bygevoeg',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reëls oorgeslaan',
+      one: '1 reël oorgeslaan',
+    );
+    return '$_temp0';
+  }
 }

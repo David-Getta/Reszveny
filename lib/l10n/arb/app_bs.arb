@@ -465,5 +465,11 @@
   "notesHint": "Zašto ste je kupili, šta pratite, zbog čega biste je prodali?",
   "notesInfo": "Pohranjeno samo na ovom uređaju. AI analiza uzima u obzir vaše bilješke.",
   "notesSaved": "Sačuvano {date}",
-  "peersTitle": "Slične kompanije"
+  "peersTitle": "Slične kompanije",
+  "portfolioExport": "Izvezi kao CSV",
+  "portfolioImport": "Uvezi iz CSV-a",
+  "portfolioImportHint": "Zalijepite jednu kupovinu po redu: tiker simbol, količina, cijena, valuta, datum (GGGG-MM-DD). Kolone mogu biti odvojene zarezima, tačka-zarezima ili tabulatorima; red sa zaglavljem nije obavezan.",
+  "portfolioImportButton": "Uvezi",
+  "portfolioImported": "{count, plural, one{Dodana je {count} kupovina} few{Dodane su {count} kupovine} other{Dodano je {count} kupovina}}",
+  "portfolioImportSkipped": "{count, plural, one{Preskočen je {count} red} few{Preskočena su {count} reda} other{Preskočeno je {count} redova}}"
 }

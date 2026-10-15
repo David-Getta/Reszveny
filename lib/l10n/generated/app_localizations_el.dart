@@ -1712,4 +1712,39 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get peersTitle => 'Παρόμοιες εταιρείες';
+
+  @override
+  String get portfolioExport => 'Εξαγωγή ως CSV';
+
+  @override
+  String get portfolioImport => 'Εισαγωγή από CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Επικολλήστε μία αγορά ανά γραμμή: σύμβολο μετοχής, ποσότητα, τιμή, νόμισμα, ημερομηνία (ΕΕΕΕ-ΜΜ-ΗΗ). Οι στήλες μπορούν να διαχωρίζονται με κόμματα, ερωτηματικά ή στηλοθέτες· η γραμμή κεφαλίδας είναι προαιρετική.';
+
+  @override
+  String get portfolioImportButton => 'Εισαγωγή';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προστέθηκαν $count αγορές',
+      one: 'Προστέθηκε 1 αγορά',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Παραλείφθηκαν $count γραμμές',
+      one: 'Παραλείφθηκε 1 γραμμή',
+    );
+    return '$_temp0';
+  }
 }

@@ -465,5 +465,11 @@
   "notesHint": "Mengapa Anda membelinya, apa yang Anda pantau, apa yang akan membuat Anda menjualnya?",
   "notesInfo": "Hanya disimpan di perangkat ini. Analisis AI mempertimbangkan catatan Anda.",
   "notesSaved": "Disimpan {date}",
-  "peersTitle": "Perusahaan serupa"
+  "peersTitle": "Perusahaan serupa",
+  "portfolioExport": "Ekspor sebagai CSV",
+  "portfolioImport": "Impor dari CSV",
+  "portfolioImportHint": "Tempel satu pembelian per baris: kode saham, jumlah, harga, mata uang, tanggal (TTTT-BB-HH). Kolom dapat dipisahkan dengan koma, titik koma, atau tab; baris judul bersifat opsional.",
+  "portfolioImportButton": "Impor",
+  "portfolioImported": "{count, plural, =1{1 pembelian ditambahkan} other{{count} pembelian ditambahkan}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 baris dilewati} other{{count} baris dilewati}}"
 }

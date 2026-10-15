@@ -1712,4 +1712,39 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get peersTitle => 'Նմանատիպ ընկերություններ';
+
+  @override
+  String get portfolioExport => 'Արտահանել որպես CSV';
+
+  @override
+  String get portfolioImport => 'Ներմուծել CSV-ից';
+
+  @override
+  String get portfolioImportHint =>
+      'Տեղադրեք մեկ գնում յուրաքանչյուր տողում՝ թիքեր, քանակ, գին, արժույթ, ամսաթիվ (ՏՏՏՏ-ԱԱ-ՕՕ)։ Սյունակները կարող են բաժանվել ստորակետերով, կետ-ստորակետերով կամ ներդիրներով (tab)։ Վերնագրի տողը պարտադիր չէ։';
+
+  @override
+  String get portfolioImportButton => 'Ներմուծել';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ավելացվեց $count գնում',
+      one: 'Ավելացվեց 1 գնում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Բաց թողնվեց $count տող',
+      one: 'Բաց թողնվեց 1 տող',
+    );
+    return '$_temp0';
+  }
 }

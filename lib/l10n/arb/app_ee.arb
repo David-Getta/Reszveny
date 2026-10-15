@@ -465,5 +465,11 @@
   "notesHint": "Nukatae nèƒlee, nu kae nèle ŋku lém ɖo, nu kae ana nàdzrae?",
   "notesInfo": "Wodzra wo ɖo ɖe mɔ̃ sia ko dzi. AI numekuku la bua wò nuŋlɔɖiwo ŋu.",
   "notesSaved": "Wodzrae ɖo {date}",
-  "peersTitle": "Dɔwɔƒe siwo sɔ kplii"
+  "peersTitle": "Dɔwɔƒe siwo sɔ kplii",
+  "portfolioExport": "Ɖoe ɖa abe CSV ene",
+  "portfolioImport": "Xɔe tso CSV me",
+  "portfolioImportHint": "Tsɔ nuƒeƒle ɖeka de fli ɖesiaɖe me: ticker dzesi, xexlẽme, asi, ga ƒomevi, ŋkeke (YYYY-MM-DD). Woate ŋu ama tsitreƒewo kple koma, semikolɔn alo tab; tanyaŋlɔ fli la mehiã o.",
+  "portfolioImportButton": "Xɔe",
+  "portfolioImported": "{count, plural, =1{Wotsɔ nuƒeƒle 1 kpe ɖe eŋu} other{Wotsɔ nuƒeƒle {count} kpe ɖe eŋu}}",
+  "portfolioImportSkipped": "{count, plural, =1{Woɖe asi le fli 1 ŋu} other{Woɖe asi le fli {count} ŋu}}"
 }

@@ -465,5 +465,11 @@
   "notesHint": "Miért vetted meg, mire figyelsz, mi miatt adnád el?",
   "notesInfo": "Csak ezen a készüléken tárolódik. Az AI-elemzés figyelembe veszi a jegyzeteidet.",
   "notesSaved": "Mentve: {date}",
-  "peersTitle": "Hasonló cégek"
+  "peersTitle": "Hasonló cégek",
+  "portfolioExport": "Exportálás CSV-be",
+  "portfolioImport": "Importálás CSV-ből",
+  "portfolioImportHint": "Soronként egy vétel: ticker, darabszám, ár, pénznem, dátum (ÉÉÉÉ-HH-NN). Az oszlopokat vessző, pontosvessző vagy tabulátor választhatja el; a fejléc elhagyható.",
+  "portfolioImportButton": "Importálás",
+  "portfolioImported": "{count, plural, =1{1 vétel hozzáadva} other{{count} vétel hozzáadva}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 sor kihagyva} other{{count} sor kihagyva}}"
 }

@@ -1708,4 +1708,39 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get peersTitle => 'Syarikat serupa';
+
+  @override
+  String get portfolioExport => 'Eksport sebagai CSV';
+
+  @override
+  String get portfolioImport => 'Import daripada CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Tampal satu pembelian setiap baris: ticker, kuantiti, harga, mata wang, tarikh (TTTT-BB-HH). Lajur boleh dipisahkan dengan koma, koma bertitik atau tab; baris pengepala adalah pilihan.';
+
+  @override
+  String get portfolioImportButton => 'Import';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pembelian ditambah',
+      one: '1 pembelian ditambah',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baris dilangkau',
+      one: '1 baris dilangkau',
+    );
+    return '$_temp0';
+  }
 }

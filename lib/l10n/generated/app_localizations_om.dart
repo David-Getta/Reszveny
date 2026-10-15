@@ -1711,4 +1711,39 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get peersTitle => 'Dhaabbilee walfakkaatan';
+
+  @override
+  String get portfolioExport => 'Akka CSV-tti ergi';
+
+  @override
+  String get portfolioImport => 'CSV irraa galchi';
+
+  @override
+  String get portfolioImportHint =>
+      'Sarara tokkotti bittaa tokko maxxansi: mallattoo aksiyoonaa, baay\'ina, gatii, maallaqa, guyyaa (YYYY-MM-DD). Utubaawwan qoodduu, qoodduu-tuqaa ykn tab\'n addaan baafamuu danda\'u; sararri mataduree dirqama miti.';
+
+  @override
+  String get portfolioImportButton => 'Galchi';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bittaawwan $count dabalamaniiru',
+      one: 'Bittaan 1 dabalameera',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sararoonni $count darbamaniiru',
+      one: 'Sararri 1 darbameera',
+    );
+    return '$_temp0';
+  }
 }

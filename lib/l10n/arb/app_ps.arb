@@ -465,5 +465,11 @@
   "notesHint": "ولې مو واخیسته، پر څه نظر لرئ، څه به مو وپلورلو ته اړ کړي؟",
   "notesInfo": "یوازې په همدې وسیله کې ساتل کېږي. AI تحلیل ستاسو یادښتونه په پام کې نیسي.",
   "notesSaved": "خوندي شو: {date}",
-  "peersTitle": "ورته شرکتونه"
+  "peersTitle": "ورته شرکتونه",
+  "portfolioExport": "د CSV په توګه صادرول",
+  "portfolioImport": "له CSV څخه واردول",
+  "portfolioImportHint": "په هره کرښه کې یو پېرود ولګوئ: ټیکر، شمېر، بیه، پولي واحد، نېټه (YYYY-MM-DD). ستنې د کامې، سیمي کولن یا ټب په واسطه بېلېدای شي؛ د سرلیک کرښه اختیاري ده.",
+  "portfolioImportButton": "واردول",
+  "portfolioImported": "{count, plural, =1{1 پېرود اضافه شو} other{{count} پېرودونه اضافه شول}}",
+  "portfolioImportSkipped": "{count, plural, =1{1 کرښه پرېښودل شوه} other{{count} کرښې پرېښودل شوې}}"
 }

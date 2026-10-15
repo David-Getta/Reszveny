@@ -465,5 +465,11 @@
   "notesHint": "Зашто сте је купили, шта пратите, шта би вас навело да је продате?",
   "notesInfo": "Чува се само на овом уређају. AI анализа узима у обзир ваше белешке.",
   "notesSaved": "Сачувано {date}",
-  "peersTitle": "Сличне компаније"
+  "peersTitle": "Сличне компаније",
+  "portfolioExport": "Извези као CSV",
+  "portfolioImport": "Увези из CSV-а",
+  "portfolioImportHint": "Налепите једну куповину по реду: тикер, количина, цена, валута, датум (ГГГГ-ММ-ДД). Колоне могу бити раздвојене зарезима, тачкама и зарезима или табулаторима; ред заглавља није обавезан.",
+  "portfolioImportButton": "Увези",
+  "portfolioImported": "{count, plural, one{Додата је {count} куповина} few{Додате су {count} куповине} other{Додато је {count} куповина}}",
+  "portfolioImportSkipped": "{count, plural, one{Прескочен је {count} ред} few{Прескочена су {count} реда} other{Прескочено је {count} редова}}"
 }

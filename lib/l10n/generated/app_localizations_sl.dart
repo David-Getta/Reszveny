@@ -1757,4 +1757,43 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get peersTitle => 'Podobna podjetja';
+
+  @override
+  String get portfolioExport => 'Izvozi v CSV';
+
+  @override
+  String get portfolioImport => 'Uvozi iz CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Prilepite en nakup na vrstico: borzna oznaka, količina, cena, valuta, datum (LLLL-MM-DD). Stolpci so lahko ločeni z vejicami, podpičji ali tabulatorji; naslovna vrstica ni obvezna.';
+
+  @override
+  String get portfolioImportButton => 'Uvozi';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodanih je $count nakupov',
+      few: 'Dodani so $count nakupi',
+      two: 'Dodana sta $count nakupa',
+      one: 'Dodan je $count nakup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Preskočenih je $count vrstic',
+      few: 'Preskočene so $count vrstice',
+      two: 'Preskočeni sta $count vrstici',
+      one: 'Preskočena je $count vrstica',
+    );
+    return '$_temp0';
+  }
 }

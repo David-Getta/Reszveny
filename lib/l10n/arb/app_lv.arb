@@ -465,5 +465,11 @@
   "notesHint": "Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?",
   "notesInfo": "Saglabāts tikai šajā ierīcē. AI analīze ņem vērā jūsu piezīmes.",
   "notesSaved": "Saglabāts {date}",
-  "peersTitle": "Līdzīgi uzņēmumi"
+  "peersTitle": "Līdzīgi uzņēmumi",
+  "portfolioExport": "Eksportēt kā CSV",
+  "portfolioImport": "Importēt no CSV",
+  "portfolioImportHint": "Ielīmējiet vienu pirkumu katrā rindā: akcijas simbols, daudzums, cena, valūta, datums (GGGG-MM-DD). Kolonnas var atdalīt ar komatiem, semikoliem vai tabulatoriem; galvenes rinda nav obligāta.",
+  "portfolioImportButton": "Importēt",
+  "portfolioImported": "{count, plural, zero{Pievienoti {count} pirkumi} one{Pievienots {count} pirkums} other{Pievienoti {count} pirkumi}}",
+  "portfolioImportSkipped": "{count, plural, zero{Izlaistas {count} rindas} one{Izlaista {count} rinda} other{Izlaistas {count} rindas}}"
 }

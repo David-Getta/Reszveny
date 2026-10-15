@@ -1706,4 +1706,39 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get peersTitle => 'Ширкатҳои монанд';
+
+  @override
+  String get portfolioExport => 'Содирот ба CSV';
+
+  @override
+  String get portfolioImport => 'Воридот аз CSV';
+
+  @override
+  String get portfolioImportHint =>
+      'Дар ҳар сатр як харидро гузоред: тикер, миқдор, нарх, асъор, сана (СССС-ММ-РР). Сутунҳоро бо вергул, нуқтавергул ё табулятсия ҷудо кардан мумкин аст; сатри сарлавҳа ҳатмӣ нест.';
+
+  @override
+  String get portfolioImportButton => 'Ворид кардан';
+
+  @override
+  String portfolioImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count харид илова шуд',
+      one: '1 харид илова шуд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portfolioImportSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сатр гузаронида шуд',
+      one: '1 сатр гузаронида шуд',
+    );
+    return '$_temp0';
+  }
 }

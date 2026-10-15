@@ -465,5 +465,11 @@
   "notesHint": "¿Por qué la compraste, qué estás vigilando, qué te haría venderla?",
   "notesInfo": "Se guarda solo en este dispositivo. El análisis con IA tiene en cuenta tus notas.",
   "notesSaved": "Guardado {date}",
-  "peersTitle": "Empresas similares"
+  "peersTitle": "Empresas similares",
+  "portfolioExport": "Exportar como CSV",
+  "portfolioImport": "Importar desde CSV",
+  "portfolioImportHint": "Pega una compra por línea: símbolo, cantidad, precio, divisa, fecha (AAAA-MM-DD). Las columnas pueden separarse con comas, puntos y comas o tabulaciones; la fila de encabezado es opcional.",
+  "portfolioImportButton": "Importar",
+  "portfolioImported": "{count, plural, =1{Se ha añadido 1 compra} other{Se han añadido {count} compras}}",
+  "portfolioImportSkipped": "{count, plural, =1{Se ha omitido 1 línea} other{Se han omitido {count} líneas}}"
 }
