@@ -1785,4 +1785,11 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'We dey check your portfolio…';
+
+  @override
+  String get digestTitle => 'Weekly summary for email';
+
+  @override
+  String get digestHint =>
+      'Every Monday: how your favourites and portfolio waka last week, and when their next results go come out.';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI 會全面審視整個投資組合：集中度、行業及貨幣風險、持倉股票的共同風險，以及股息。用 1 次分析。",
   "portfolioReviewButton": "診斷我的投資組合",
   "portfolioReviewAgain": "重新診斷",
-  "portfolioReviewWorking": "正在診斷投資組合…"
+  "portfolioReviewWorking": "正在診斷投資組合…",
+  "digestTitle": "每週電郵摘要",
+  "digestHint": "逢星期一：你的收藏及投資組合上週的走勢，以及即將公佈業績的日期。"
 }

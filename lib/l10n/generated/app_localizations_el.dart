@@ -1793,4 +1793,11 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ανάλυση του χαρτοφυλακίου σας…';
+
+  @override
+  String get digestTitle => 'Εβδομαδιαία σύνοψη μέσω email';
+
+  @override
+  String get digestHint =>
+      'Κάθε Δευτέρα: πώς κινήθηκαν τα αγαπημένα και το χαρτοφυλάκιό σας την προηγούμενη εβδομάδα, και οι επερχόμενες ημερομηνίες αποτελεσμάτων τους.';
 }

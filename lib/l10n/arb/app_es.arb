@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "La IA analiza toda tu cartera: concentración, exposición a sectores y divisas, riesgos que comparten tus acciones y dividendos. Usa 1 análisis.",
   "portfolioReviewButton": "Revisar mi cartera",
   "portfolioReviewAgain": "Volver a revisar",
-  "portfolioReviewWorking": "Revisando tu cartera…"
+  "portfolioReviewWorking": "Revisando tu cartera…",
+  "digestTitle": "Resumen semanal por correo",
+  "digestHint": "Cada lunes: cómo se movieron tus favoritos y tu cartera la semana pasada, y sus próximas fechas de resultados."
 }

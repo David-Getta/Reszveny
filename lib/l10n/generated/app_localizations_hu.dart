@@ -1790,4 +1790,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'A portfóliód elemzése folyamatban…';
+
+  @override
+  String get digestTitle => 'Heti összefoglaló e-mailben';
+
+  @override
+  String get digestHint =>
+      'Hétfőnként: hogyan mozogtak a kedvenceid és a portfóliód részvényei az előző héten, és mikor jönnek a gyorsjelentéseik.';
 }

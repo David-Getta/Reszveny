@@ -1786,4 +1786,11 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'तपाईंको पोर्टफोलियो समीक्षा हुँदै…';
+
+  @override
+  String get digestTitle => 'इमेलमार्फत साप्ताहिक सारांश';
+
+  @override
+  String get digestHint =>
+      'हरेक सोमबार: गत हप्ता तपाईंका मनपर्ने र पोर्टफोलियो कसरी चले, र तिनका आगामी नतिजा मितिहरू।';
 }

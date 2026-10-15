@@ -1790,4 +1790,11 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Tiri kuongorora potiforiyo yako…';
+
+  @override
+  String get digestTitle => 'Pfupiso yevhiki ne-email';
+
+  @override
+  String get digestHint =>
+      'Muvhuro wega wega: mafambiro akaita zvaunofarira nepotiforiyo yako vhiki rapfuura, nemazuva anotevera emhedzisiro yazvo.';
 }

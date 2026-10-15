@@ -1791,4 +1791,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Sinusuri ang iyong portfolio…';
+
+  @override
+  String get digestTitle => 'Lingguhang buod sa email';
+
+  @override
+  String get digestHint =>
+      'Tuwing Lunes: kung paano gumalaw ang iyong mga paborito at portfolio noong nakaraang linggo, at ang kanilang mga paparating na petsa ng resulta.';
 }

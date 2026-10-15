@@ -1797,4 +1797,11 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ginaanalisa ang imo portfolio…';
+
+  @override
+  String get digestTitle => 'Semanal nga summary paagi sa email';
+
+  @override
+  String get digestHint =>
+      'Kada Lunes: kon paano naghulag ang imo mga paborito kag portfolio sang nagligad nga semana, kag ang ila masunod nga mga petsa sang resulta.';
 }

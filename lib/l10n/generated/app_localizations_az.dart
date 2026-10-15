@@ -1786,4 +1786,11 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfeliniz təhlil edilir…';
+
+  @override
+  String get digestTitle => 'E-poçtla həftəlik xülasə';
+
+  @override
+  String get digestHint =>
+      'Hər bazar ertəsi: seçilmişləriniz və portfeliniz keçən həftə necə dəyişdi və onların qarşıdakı hesabat tarixləri.';
 }

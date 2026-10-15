@@ -1788,4 +1788,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfelingiz tahlil qilinmoqda…';
+
+  @override
+  String get digestTitle => 'Elektron pochta orqali haftalik xulosa';
+
+  @override
+  String get digestHint =>
+      'Har dushanba: sevimlilaringiz va portfelingiz oʻtgan hafta qanday oʻzgargani hamda ularning yaqinlashayotgan hisobot sanalari.';
 }

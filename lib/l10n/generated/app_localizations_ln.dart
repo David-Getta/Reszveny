@@ -1795,4 +1795,11 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'Tozali kosala analyse ya portefeuille na yo…';
+
+  @override
+  String get digestTitle => 'Bokuse ya pɔsɔ na e-mail';
+
+  @override
+  String get digestHint =>
+      'Mokolo ya yambo nyonso: ndenge oyo olingaka mpe portefeuille na yo etambolaki na pɔsɔ eleki, mpe mikolo ya ba résultats oyo ezali koya.';
 }

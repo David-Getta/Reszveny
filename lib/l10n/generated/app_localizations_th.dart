@@ -1761,4 +1761,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'กำลังวิเคราะห์พอร์ตโฟลิโอของคุณ…';
+
+  @override
+  String get digestTitle => 'สรุปรายสัปดาห์ทางอีเมล';
+
+  @override
+  String get digestHint =>
+      'ทุกวันจันทร์: ความเคลื่อนไหวของรายการโปรดและพอร์ตโฟลิโอของคุณในสัปดาห์ที่ผ่านมา และวันประกาศผลประกอบการที่กำลังจะมาถึง';
 }

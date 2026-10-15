@@ -1787,4 +1787,11 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'আপোনাৰ প\'ৰ্টফ\'লিঅ\' পৰ্যালোচনা কৰি থকা হৈছে…';
+
+  @override
+  String get digestTitle => 'ইমেইলত সাপ্তাহিক সাৰাংশ';
+
+  @override
+  String get digestHint =>
+      'প্ৰতি সোমবাৰে: যোৱা সপ্তাহত আপোনাৰ প্ৰিয় আৰু প\'ৰ্টফ\'লিঅ\' কেনেকৈ সলনি হ\'ল, আৰু সিহঁতৰ আগন্তুক ফলাফলৰ তাৰিখ।';
 }

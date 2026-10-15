@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Az AI átnézi az egész portfóliódat: koncentráció, szektor- és devizakitettség, a részvényeid közös kockázatai és az osztalék. 1 elemzést fogyaszt.",
   "portfolioReviewButton": "Elemezd a portfóliómat",
   "portfolioReviewAgain": "Új elemzés",
-  "portfolioReviewWorking": "A portfóliód elemzése folyamatban…"
+  "portfolioReviewWorking": "A portfóliód elemzése folyamatban…",
+  "digestTitle": "Heti összefoglaló e-mailben",
+  "digestHint": "Hétfőnként: hogyan mozogtak a kedvenceid és a portfóliód részvényei az előző héten, és mikor jönnek a gyorsjelentéseik."
 }

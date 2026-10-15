@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI e lebelela potefolio ya gago yotlhe: go phuthegela ga madi mo lefelong le le lengwe, go ikaega ka makala a dikgwebo le madi a dinaga, dikotsi tse dishere tsa gago di di abelanang, le dikarolo tsa poelo. E dirisa tshekatsheko e le nngwe.",
   "portfolioReviewButton": "Sekaseka potefolio ya me",
   "portfolioReviewAgain": "Sekaseka gape",
-  "portfolioReviewWorking": "Re sekaseka potefolio ya gago…"
+  "portfolioReviewWorking": "Re sekaseka potefolio ya gago…",
+  "digestTitle": "Kakaretso ya beke ka imeile",
+  "digestHint": "Mosupologo mongwe le mongwe: ka fa tse o di ratang le potefolio ya gago di tsamaileng ka teng mo bekeng e e fetileng, le malatsi a a tlang a dipoelo tsa tsone."
 }

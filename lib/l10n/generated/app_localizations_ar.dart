@@ -1828,4 +1828,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'جارٍ مراجعة محفظتك…';
+
+  @override
+  String get digestTitle => 'ملخص أسبوعي عبر البريد الإلكتروني';
+
+  @override
+  String get digestHint =>
+      'كل يوم اثنين: أداء مفضلتك ومحفظتك خلال الأسبوع الماضي، ومواعيد نتائجها القادمة.';
 }

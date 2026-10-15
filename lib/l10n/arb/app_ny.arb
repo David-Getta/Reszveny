@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI imaona masheya anu onse: momwe ndalama zanu zasonkhanira pamalo amodzi, kudalira magawo a bizinesi ndi ndalama zakunja, zoopsa zomwe masheya anu amagawana, ndi magawo a phindu. Kumagwiritsa ntchito kusanthula 1.",
   "portfolioReviewButton": "Santhulani masheya anga",
   "portfolioReviewAgain": "Santhulani kachiwiri",
-  "portfolioReviewWorking": "Tikusanthula masheya anu…"
+  "portfolioReviewWorking": "Tikusanthula masheya anu…",
+  "digestTitle": "Chidule cha sabata pa imelo",
+  "digestHint": "Lolemba lililonse: momwe zokondedwa zanu ndi masheya anu zinayendera sabata yatha, ndi masiku a zotsatira zawo omwe akubwera."
 }

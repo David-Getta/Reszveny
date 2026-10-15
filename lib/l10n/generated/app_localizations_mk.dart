@@ -1804,4 +1804,11 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Го анализираме вашето портфолио…';
+
+  @override
+  String get digestTitle => 'Неделно резиме по е-пошта';
+
+  @override
+  String get digestHint =>
+      'Секој понеделник: како се движеа вашите омилени и портфолиото минатата недела и нивните претстојни датуми на резултати.';
 }

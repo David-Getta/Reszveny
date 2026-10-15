@@ -1798,4 +1798,11 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Dinihina ny kitapom-bolanao…';
+
+  @override
+  String get digestTitle => 'Famintinana isan-kerinandro amin\'ny mailaka';
+
+  @override
+  String get digestHint =>
+      'Isaky ny alatsinainy: ny fivoaran\'ny ankafizinao sy ny kitapom-bolanao tamin\'ny herinandro lasa, ary ny daty hivoahan\'ny vokatra manaraka.';
 }

@@ -1843,4 +1843,11 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analizowanie portfela…';
+
+  @override
+  String get digestTitle => 'Cotygodniowe podsumowanie e-mailem';
+
+  @override
+  String get digestHint =>
+      'W każdy poniedziałek: jak w zeszłym tygodniu zmieniały się Twoje ulubione i portfel oraz najbliższe daty ich wyników.';
 }

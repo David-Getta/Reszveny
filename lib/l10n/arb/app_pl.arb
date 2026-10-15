@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI przegląda cały Twój portfel: koncentrację, ekspozycję na sektory i waluty, ryzyka wspólne dla Twoich akcji oraz dywidendy. Zużywa 1 analizę.",
   "portfolioReviewButton": "Przeanalizuj mój portfel",
   "portfolioReviewAgain": "Przeanalizuj ponownie",
-  "portfolioReviewWorking": "Analizowanie portfela…"
+  "portfolioReviewWorking": "Analizowanie portfela…",
+  "digestTitle": "Cotygodniowe podsumowanie e-mailem",
+  "digestHint": "W każdy poniedziałek: jak w zeszłym tygodniu zmieniały się Twoje ulubione i portfel oraz najbliższe daty ich wyników."
 }

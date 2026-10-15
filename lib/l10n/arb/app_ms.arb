@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI menyemak keseluruhan portfolio anda: penumpuan, pendedahan sektor dan mata wang, risiko yang dikongsi oleh saham anda, serta dividen. Menggunakan 1 analisis.",
   "portfolioReviewButton": "Semak portfolio saya",
   "portfolioReviewAgain": "Semak semula",
-  "portfolioReviewWorking": "Menyemak portfolio anda…"
+  "portfolioReviewWorking": "Menyemak portfolio anda…",
+  "digestTitle": "Ringkasan mingguan melalui e-mel",
+  "digestHint": "Setiap Isnin: pergerakan kegemaran dan portfolio anda minggu lalu, serta tarikh keputusan suku tahunan yang akan datang."
 }

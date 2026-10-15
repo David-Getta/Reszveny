@@ -1780,4 +1780,11 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ina ƴeewa aksiyoŋ maa…';
+
+  @override
+  String get digestTitle => 'Tonngol yontere e iimeel';
+
+  @override
+  String get digestHint =>
+      'Altine kala: no cuɓaaɗe maa e aksiyoŋ maa njahri yontere ɓennunde nde, e ñalɗi ngalluuji maɓɓe garooɗi.';
 }

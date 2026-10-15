@@ -1787,4 +1787,11 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Mariksa portofolio anjeun…';
+
+  @override
+  String get digestTitle => 'Ringkesan mingguan ngaliwatan surélék';
+
+  @override
+  String get digestHint =>
+      'Unggal Senén: kumaha obahna paporit jeung portofolio anjeun minggu kamari, sarta tanggal laporan kuartalan nu bakal datang.';
 }

@@ -1780,4 +1780,11 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Na-enyocha portfolio gị…';
+
+  @override
+  String get digestTitle => 'Nchịkọta izu ụka site na email';
+
+  @override
+  String get digestHint =>
+      'Mọnde ọ bụla: otú ọkacha mmasị gị na portfolio gị si gaa n\'izu gara aga, na ụbọchị nsonaazụ ha na-abịa.';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI na-enyocha portfolio gị niile: otú ego gị si gbakọta n'otu ebe, ngalaba na ego mba ọzọ ị dabere na ha, ihe ize ndụ ndị stock gị nwekọrọ, na dividend. Na-eji nyocha 1.",
   "portfolioReviewButton": "Nyochaa portfolio m",
   "portfolioReviewAgain": "Nyochaa ọzọ",
-  "portfolioReviewWorking": "Na-enyocha portfolio gị…"
+  "portfolioReviewWorking": "Na-enyocha portfolio gị…",
+  "digestTitle": "Nchịkọta izu ụka site na email",
+  "digestHint": "Mọnde ọ bụla: otú ọkacha mmasị gị na portfolio gị si gaa n'izu gara aga, na ụbọchị nsonaazụ ha na-abịa."
 }

@@ -1808,4 +1808,11 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Revisando a túa carteira…';
+
+  @override
+  String get digestTitle => 'Resumo semanal por correo electrónico';
+
+  @override
+  String get digestHint =>
+      'Cada luns: como se moveron os teus favoritos e a túa carteira a semana pasada, e as súas próximas datas de resultados.';
 }

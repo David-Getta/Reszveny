@@ -1786,4 +1786,11 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Din portfölj analyseras…';
+
+  @override
+  String get digestTitle => 'Veckosammanfattning via e-post';
+
+  @override
+  String get digestHint =>
+      'Varje måndag: hur dina favoriter och din portfölj rörde sig förra veckan, och deras kommande rapportdatum.';
 }

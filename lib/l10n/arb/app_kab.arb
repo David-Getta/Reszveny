@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI ad yesleḍ aqrab-ik akk: tagrumma n tedrimt, iḥricen d tedrimin, ugur yemcabin n yisehmen-ik, d tfayda n yisehmen. Yesseqdac 1 n tesleḍt.",
   "portfolioReviewButton": "Sleḍ aqrab-iw",
   "portfolioReviewAgain": "Ales tasleḍt",
-  "portfolioReviewWorking": "Tasleḍt n uqrab-ik…"
+  "portfolioReviewWorking": "Tasleḍt n uqrab-ik…",
+  "digestTitle": "Agzul n yal ddurt s imayl",
+  "digestHint": "Yal Letnayen: amek llan ismenyifen-ik d uqrab-ik deg ddurt yezrin, d wazemz n yigmaḍ-nsen i d-iteddun."
 }

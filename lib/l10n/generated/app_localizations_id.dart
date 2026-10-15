@@ -1781,4 +1781,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Meninjau portofolio Anda…';
+
+  @override
+  String get digestTitle => 'Ringkasan mingguan lewat email';
+
+  @override
+  String get digestHint =>
+      'Setiap Senin: pergerakan favorit dan portofolio Anda minggu lalu, serta jadwal laporan kuartalan mendatang.';
 }

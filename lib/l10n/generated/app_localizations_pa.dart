@@ -1781,4 +1781,11 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਦੀ ਸਮੀਖਿਆ ਹੋ ਰਹੀ ਹੈ…';
+
+  @override
+  String get digestTitle => 'ਈਮੇਲ ਰਾਹੀਂ ਹਫ਼ਤਾਵਾਰੀ ਸਾਰ';
+
+  @override
+  String get digestHint =>
+      'ਹਰ ਸੋਮਵਾਰ: ਪਿਛਲੇ ਹਫ਼ਤੇ ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਅਤੇ ਪੋਰਟਫ਼ੋਲੀਓ ਕਿਵੇਂ ਚੱਲੇ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਨਤੀਜਿਆਂ ਦੀਆਂ ਆਉਣ ਵਾਲੀਆਂ ਤਾਰੀਖਾਂ।';
 }

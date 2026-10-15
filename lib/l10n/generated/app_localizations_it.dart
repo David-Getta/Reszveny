@@ -1790,4 +1790,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analisi del portafoglio in corso…';
+
+  @override
+  String get digestTitle => 'Riepilogo settimanale via email';
+
+  @override
+  String get digestHint =>
+      'Ogni lunedì: come si sono mossi i tuoi preferiti e il tuo portafoglio la settimana scorsa e le prossime date dei risultati.';
 }

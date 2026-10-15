@@ -1786,4 +1786,11 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Mriksa portofoliomu…';
+
+  @override
+  String get digestTitle => 'Ringkesan mingguan liwat email';
+
+  @override
+  String get digestHint =>
+      'Saben Senin: obahé favorit lan portofolio sampeyan minggu kepungkur, uga tanggal laporan kuartalan sing bakal teka.';
 }

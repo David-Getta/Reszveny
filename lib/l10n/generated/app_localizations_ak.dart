@@ -1784,4 +1784,11 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ɛrehwehwɛ wo nkyɛfa mu…';
+
+  @override
+  String get digestTitle => 'Nnawɔtwe biara nsɛm tiawa wɔ email so';
+
+  @override
+  String get digestHint =>
+      'Dwoda biara: sɛnea nea wopɛ ne wo nkyɛfa kɔɔ so nnawɔtwe a atwam no, ne da a wɔbɛda wɔn akontaabu adi.';
 }

@@ -1791,4 +1791,11 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Turiko turasesangura ishoramari ryawe…';
+
+  @override
+  String get digestTitle => 'Incamake ya buri ndwi kuri imeyili';
+
+  @override
+  String get digestHint =>
+      'Buri wa mbere: ingene ivyo ukunda n\'ishoramari ryawe vyagenze mu ndwi iheze, n\'amatariki y\'ivyavuye mu gihembwe biri imbere.';
 }

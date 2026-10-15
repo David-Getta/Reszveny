@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI hukagua jalada lako lote la hisa: mrundikano, utegemezi kwa sekta na sarafu, hatari zinazoshirikiwa na hisa zako, na gawio. Hutumia uchambuzi 1.",
   "portfolioReviewButton": "Chambua jalada langu la hisa",
   "portfolioReviewAgain": "Chambua tena",
-  "portfolioReviewWorking": "Inachambua jalada lako la hisa…"
+  "portfolioReviewWorking": "Inachambua jalada lako la hisa…",
+  "digestTitle": "Muhtasari wa kila wiki kwa barua pepe",
+  "digestHint": "Kila Jumatatu: jinsi vipendwa vyako na jalada lako la hisa vilivyoenda wiki iliyopita, na tarehe zijazo za matokeo yao."
 }

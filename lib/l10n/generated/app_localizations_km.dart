@@ -1769,4 +1769,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'កំពុងពិនិត្យផលប័ត្ររបស់អ្នក…';
+
+  @override
+  String get digestTitle => 'សេចក្ដីសង្ខេបប្រចាំសប្ដាហ៍តាមអ៊ីមែល';
+
+  @override
+  String get digestHint =>
+      'រៀងរាល់ថ្ងៃច័ន្ទ៖ ចំណូលចិត្ត និងផលប័ត្ររបស់អ្នកប្រែប្រួលយ៉ាងណាកាលពីសប្ដាហ៍មុន និងកាលបរិច្ឆេទប្រកាសលទ្ធផលខាងមុខ។';
 }

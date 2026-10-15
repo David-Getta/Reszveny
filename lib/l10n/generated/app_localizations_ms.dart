@@ -1789,4 +1789,11 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Menyemak portfolio anda…';
+
+  @override
+  String get digestTitle => 'Ringkasan mingguan melalui e-mel';
+
+  @override
+  String get digestHint =>
+      'Setiap Isnin: pergerakan kegemaran dan portfolio anda minggu lalu, serta tarikh keputusan suku tahunan yang akan datang.';
 }

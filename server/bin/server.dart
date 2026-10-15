@@ -23,7 +23,8 @@ import 'package:whatstock_server/src/stripe.dart';
 /// APPLE_BUNDLE_ID, GOOGLE_SERVICE_ACCOUNT_JSON (a szolgáltatásfiók JSON-kulcsa), GOOGLE_PACKAGE_NAME,
 /// GOOGLE_RTDN_TOKEN (a Play értesítések push-címének titkos `token` paramétere),
 /// TRIAL_PER_IP_DAY (10): egy IP-címről naponta ennyi új próbaidő (0 = nincs korlát),
-/// ALERT_CHECK_MINUTES (10): a szerver ilyen gyakran nézi a belépett fiókok riasztásait (0 = ki).
+/// ALERT_CHECK_MINUTES (10): a szerver ilyen gyakran nézi a belépett fiókok riasztásait (0 = ki),
+/// DIGEST_CHECK_MINUTES (60): ilyen gyakran nézi, kinek esedékes a hétfői heti összefoglaló (0 = ki).
 Future<void> main() async {
   final env = Platform.environment;
   final anthropic = env['ANTHROPIC_API_KEY'] ?? '';
@@ -75,6 +76,8 @@ Future<void> main() async {
   // Szerver oldali riasztásfigyelés (e-mail értesítéssel) a belépett fiókok riasztásaira.
   final alertMinutes = int.tryParse(env['ALERT_CHECK_MINUTES'] ?? '') ?? 10;
   if (alertMinutes > 0) api.alertWatcher.start(Duration(minutes: alertMinutes));
+  final digestMinutes = int.tryParse(env['DIGEST_CHECK_MINUTES'] ?? '') ?? 60;
+  if (digestMinutes > 0) api.digestSender.start(Duration(minutes: digestMinutes));
   stdout.writeln(
     'WhatStock backend fut: http://${server.address.host}:${server.port} (verify: ${verifier.runtimeType}, '
     'meghívókódok: ${invites.enabled ? invites.length : 'nincs, nyitott'})',

@@ -1794,4 +1794,11 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'S’està revisant la teva cartera…';
+
+  @override
+  String get digestTitle => 'Resum setmanal per correu electrònic';
+
+  @override
+  String get digestHint =>
+      'Cada dilluns: com s\'han mogut els teus favorits i la teva cartera la setmana passada, i les properes dates de resultats.';
 }

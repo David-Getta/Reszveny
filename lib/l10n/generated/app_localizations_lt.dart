@@ -1841,4 +1841,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analizuojamas jūsų portfelis…';
+
+  @override
+  String get digestTitle => 'Savaitės suvestinė el. paštu';
+
+  @override
+  String get digestHint =>
+      'Kiekvieną pirmadienį: kaip praėjusią savaitę judėjo jūsų mėgstamiausi ir portfelis bei artimiausios jų rezultatų datos.';
 }

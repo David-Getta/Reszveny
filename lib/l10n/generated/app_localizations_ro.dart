@@ -1817,4 +1817,11 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Se analizează portofoliul…';
+
+  @override
+  String get digestTitle => 'Rezumat săptămânal prin e-mail';
+
+  @override
+  String get digestHint =>
+      'În fiecare luni: cum au evoluat favoritele și portofoliul tău săptămâna trecută și datele viitoare ale rezultatelor lor.';
 }

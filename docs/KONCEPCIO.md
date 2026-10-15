@@ -203,6 +203,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5w | Szinkron az e-mailes fiókkal: portfólió, kedvencek, riasztások, jegyzetek minden eszközön (az utolsó írás nyer; első belépéskor és ütközéskor unió, hogy semmi ne vesszen el) | ✅ kész |
 | 5x | Portfólió értékalakulása grafikonon (napi záróárakból, a vételek dátumától, a befektetett összeg szintjével); a nagy számok tömören a tengelyen | ✅ kész |
 | 5y | AI-portfólióelemzés: az egész portfólió (koncentráció, szektor-, ország- és devizakitettség, közös kockázatok, osztalék, megfontolandó szempontok) egy rövid elemzésnyi keretért; a legutóbbi a készüléken marad | ✅ kész |
+| 5z | Heti összefoglaló e-mailben (bekapcsolható): hétfő reggel a portfólió és a kedvencek heti mozgása, és a következő két hét gyorsjelentései | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
 

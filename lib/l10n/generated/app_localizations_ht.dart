@@ -1784,4 +1784,11 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'N ap analize pòtfèy ou…';
+
+  @override
+  String get digestTitle => 'Rezime chak semèn pa imèl';
+
+  @override
+  String get digestHint =>
+      'Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo.';
 }

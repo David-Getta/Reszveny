@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Die AI kyk na jou hele portefeulje: konsentrasie, sektor- en valuta-blootstelling, risiko’s wat jou aandele deel, en dividende. Gebruik 1 ontleding.",
   "portfolioReviewButton": "Ontleed my portefeulje",
   "portfolioReviewAgain": "Ontleed weer",
-  "portfolioReviewWorking": "Jou portefeulje word ontleed…"
+  "portfolioReviewWorking": "Jou portefeulje word ontleed…",
+  "digestTitle": "Weeklikse opsomming per e-pos",
+  "digestHint": "Elke Maandag: hoe jou gunstelinge en portefeulje verlede week beweeg het, en hul komende resultaatdatums."
 }

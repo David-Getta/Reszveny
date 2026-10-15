@@ -1840,4 +1840,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analyzujem vaše portfólio…';
+
+  @override
+  String get digestTitle => 'Týždenný súhrn e-mailom';
+
+  @override
+  String get digestHint =>
+      'Každý pondelok: ako sa minulý týždeň vyvíjali vaše obľúbené a portfólio a najbližšie dátumy ich výsledkov.';
 }

@@ -1792,4 +1792,11 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ವಿಮರ್ಶಿಸಲಾಗುತ್ತಿದೆ…';
+
+  @override
+  String get digestTitle => 'ಇಮೇಲ್ ಮೂಲಕ ವಾರದ ಸಾರಾಂಶ';
+
+  @override
+  String get digestHint =>
+      'ಪ್ರತಿ ಸೋಮವಾರ: ಕಳೆದ ವಾರ ನಿಮ್ಮ ಮೆಚ್ಚಿನವುಗಳು ಮತ್ತು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಹೇಗೆ ಚಲಿಸಿದವು ಮತ್ತು ಅವುಗಳ ಮುಂಬರುವ ಫಲಿತಾಂಶ ದಿನಾಂಕಗಳು.';
 }

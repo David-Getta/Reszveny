@@ -1786,4 +1786,11 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Inachambua jalada lako la hisa…';
+
+  @override
+  String get digestTitle => 'Muhtasari wa kila wiki kwa barua pepe';
+
+  @override
+  String get digestHint =>
+      'Kila Jumatatu: jinsi vipendwa vyako na jalada lako la hisa vilivyoenda wiki iliyopita, na tarehe zijazo za matokeo yao.';
 }

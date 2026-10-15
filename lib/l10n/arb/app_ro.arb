@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI analizează întregul tău portofoliu: concentrarea, expunerea pe sectoare și valute, riscurile comune ale acțiunilor tale și dividendele. Folosește 1 analiză.",
   "portfolioReviewButton": "Analizează-mi portofoliul",
   "portfolioReviewAgain": "Analizează din nou",
-  "portfolioReviewWorking": "Se analizează portofoliul…"
+  "portfolioReviewWorking": "Se analizează portofoliul…",
+  "digestTitle": "Rezumat săptămânal prin e-mail",
+  "digestHint": "În fiecare luni: cum au evoluat favoritele și portofoliul tău săptămâna trecută și datele viitoare ale rezultatelor lor."
 }

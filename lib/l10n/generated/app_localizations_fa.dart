@@ -1784,4 +1784,11 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'در حال بررسی سبد سهام شما…';
+
+  @override
+  String get digestTitle => 'خلاصه هفتگی از طریق ایمیل';
+
+  @override
+  String get digestHint =>
+      'هر دوشنبه: عملکرد علاقه‌مندی‌ها و سبد سهام شما در هفته گذشته و تاریخ‌های پیش‌روی اعلام نتایج آن‌ها.';
 }

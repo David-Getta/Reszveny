@@ -1782,4 +1782,11 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'I ka aksiyɔn kɛsu bɛ ka sɛgɛsɛgɛ…';
+
+  @override
+  String get digestTitle => 'Dɔgɔkun kunnafoni surun imɛli fɛ';
+
+  @override
+  String get digestHint =>
+      'Ntɛnɛn o ntɛnɛn: i ka diyanyelenw ni i ka aksiyɔn kɛsu tun bɛ cogo min dɔgɔkun tɛmɛnen na, ani u ka jatebɔ don nataw.';
 }

@@ -1786,4 +1786,11 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'আপনার পোর্টফোলিও পর্যালোচনা করা হচ্ছে…';
+
+  @override
+  String get digestTitle => 'ইমেলে সাপ্তাহিক সারাংশ';
+
+  @override
+  String get digestHint =>
+      'প্রতি সোমবার: গত সপ্তাহে আপনার পছন্দের তালিকা ও পোর্টফোলিও কেমন চলেছে, আর সেগুলোর আসন্ন ফলাফলের তারিখ।';
 }

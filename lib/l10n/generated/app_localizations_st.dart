@@ -1795,4 +1795,11 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Re hlahloba potefolio ya hao…';
+
+  @override
+  String get digestTitle => 'Kakaretso ya beke ka imeile';
+
+  @override
+  String get digestHint =>
+      'Mantaha o mong le o mong: kamoo tseo o di ratang le potefolio ya hao di tsamaileng kateng bekeng e fetileng, le matsatsi a tlang a diphetho tsa tsona.';
 }

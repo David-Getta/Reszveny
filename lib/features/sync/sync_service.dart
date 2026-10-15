@@ -116,6 +116,7 @@ class SyncService extends ChangeNotifier {
     'v': 1,
     'lang': ?language?.call(),
     'email_alerts': preferences.emailAlerts,
+    'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'alerts': [for (final a in alerts.alerts) a.toJson()],
@@ -163,6 +164,7 @@ class SyncService extends ChangeNotifier {
       'v': 1,
       'lang': ?(local['lang'] ?? remote['lang']),
       'email_alerts': local['email_alerts'] ?? remote['email_alerts'] ?? true,
+      'weekly_digest': local['weekly_digest'] ?? remote['weekly_digest'] ?? false,
       'favorites': {
         for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
       }.toList(),
@@ -182,6 +184,7 @@ class SyncService extends ChangeNotifier {
       ];
       await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
       await preferences.setEmailAlerts(data['email_alerts'] != false);
+      await preferences.setWeeklyDigest(data['weekly_digest'] == true);
       await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
       await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
       await notes.replaceAll({

@@ -1785,4 +1785,11 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Nĩtũrathuthuria hisa ciaku…';
+
+  @override
+  String get digestTitle => 'Ũhinĩ wa o kiumia na email';
+
+  @override
+  String get digestHint =>
+      'O Mũmatũ: ũrĩa iria wendete na hisa ciaku ciathiire kiumia kĩrĩa gĩthirĩte, na mĩthenya ĩrĩa ĩrooka ya maumĩrĩra mao.';
 }

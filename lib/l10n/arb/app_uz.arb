@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI butun portfelingizni koʻrib chiqadi: jamlanish, soha va valyuta xavfi, aksiyalaringizning umumiy xavflari va dividendlar. 1 ta tahlil sarflanadi.",
   "portfolioReviewButton": "Portfelimni tahlil qilish",
   "portfolioReviewAgain": "Qayta tahlil qilish",
-  "portfolioReviewWorking": "Portfelingiz tahlil qilinmoqda…"
+  "portfolioReviewWorking": "Portfelingiz tahlil qilinmoqda…",
+  "digestTitle": "Elektron pochta orqali haftalik xulosa",
+  "digestHint": "Har dushanba: sevimlilaringiz va portfelingiz oʻtgan hafta qanday oʻzgargani hamda ularning yaqinlashayotgan hisobot sanalari."
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI xem xét toàn bộ danh mục của bạn: mức độ tập trung, mức phơi nhiễm theo ngành và tiền tệ, rủi ro chung giữa các cổ phiếu của bạn và cổ tức. Dùng 1 lượt phân tích.",
   "portfolioReviewButton": "Đánh giá danh mục của tôi",
   "portfolioReviewAgain": "Đánh giá lại",
-  "portfolioReviewWorking": "Đang đánh giá danh mục của bạn…"
+  "portfolioReviewWorking": "Đang đánh giá danh mục của bạn…",
+  "digestTitle": "Tóm tắt hằng tuần qua email",
+  "digestHint": "Mỗi thứ Hai: mục yêu thích và danh mục của bạn biến động ra sao trong tuần trước, cùng ngày công bố kết quả kinh doanh sắp tới."
 }

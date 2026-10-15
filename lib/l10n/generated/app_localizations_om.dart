@@ -1792,4 +1792,11 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Poortfooliyoon kee xiinxalamaa jira…';
+
+  @override
+  String get digestTitle => 'Cuunfaa torbanii imeeliin';
+
+  @override
+  String get digestHint =>
+      'Wiixata hunda: filatamoonni kee fi poortfooliyoon kee torban darbe akkamitti akka socho\'an, akkasumas guyyoota bu\'aa isaanii dhufan.';
 }

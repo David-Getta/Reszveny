@@ -1711,6 +1711,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => '正在诊断投资组合…';
+
+  @override
+  String get digestTitle => '每周邮件摘要';
+
+  @override
+  String get digestHint => '每周一：你的收藏和投资组合上周的走势，以及即将公布财报的日期。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3418,4 +3424,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioReviewWorking => '正在診斷投資組合…';
+
+  @override
+  String get digestTitle => '每週電郵摘要';
+
+  @override
+  String get digestHint => '逢星期一：你的收藏及投資組合上週的走勢，以及即將公佈業績的日期。';
 }

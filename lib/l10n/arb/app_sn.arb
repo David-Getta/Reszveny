@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI inoongorora potiforiyo yako yose: kuunganidzwa kwemari panzvimbo imwe, kuvimba nemapazi ebhizinesi nemari dzekunze, njodzi dzinogovaniwa nemasheya ako, uye zvikamu zveprofiti. Inoshandisa ongororo 1.",
   "portfolioReviewButton": "Ongorora potiforiyo yangu",
   "portfolioReviewAgain": "Ongorora zvakare",
-  "portfolioReviewWorking": "Tiri kuongorora potiforiyo yako…"
+  "portfolioReviewWorking": "Tiri kuongorora potiforiyo yako…",
+  "digestTitle": "Pfupiso yevhiki ne-email",
+  "digestHint": "Muvhuro wega wega: mafambiro akaita zvaunofarira nepotiforiyo yako vhiki rapfuura, nemazuva anotevera emhedzisiro yazvo."
 }

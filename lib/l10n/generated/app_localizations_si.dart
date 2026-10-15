@@ -1785,4 +1785,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ඔබේ කළඹ සමාලෝචනය කරමින්…';
+
+  @override
+  String get digestTitle => 'ඊමේල් මගින් සතිපතා සාරාංශය';
+
+  @override
+  String get digestHint =>
+      'සෑම සඳුදාවකම: පසුගිය සතියේ ඔබේ ප්‍රියතම සහ කළඹ චලනය වූ ආකාරය සහ ඒවායේ ඉදිරි ප්‍රතිඵල දින.';
 }

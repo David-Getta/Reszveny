@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI mriksa kabèh portofoliomu: konsentrasi, gumantungé marang sektor lan mata uang, risiko sing padha ing saham-sahammu, lan dividen. Nggunakake 1 analisis.",
   "portfolioReviewButton": "Priksa portofolioku",
   "portfolioReviewAgain": "Priksa maneh",
-  "portfolioReviewWorking": "Mriksa portofoliomu…"
+  "portfolioReviewWorking": "Mriksa portofoliomu…",
+  "digestTitle": "Ringkesan mingguan liwat email",
+  "digestHint": "Saben Senin: obahé favorit lan portofolio sampeyan minggu kepungkur, uga tanggal laporan kuartalan sing bakal teka."
 }

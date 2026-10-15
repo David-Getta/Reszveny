@@ -1796,4 +1796,11 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portafolioykita t\'aqwichkan…';
+
+  @override
+  String get digestTitle => 'Sapa semana pisichasqa willakuy correowan';
+
+  @override
+  String get digestHint =>
+      'Sapa lunes: munasqaykikuna, portafolioykipas qayna semanapi imayna kuyurirqan, hinallataq hamuq willakuyninkunapa p\'unchawninkuna.';
 }

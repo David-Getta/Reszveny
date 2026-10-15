@@ -1791,4 +1791,11 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ojehesaʼỹijohína nde cartera…';
+
+  @override
+  String get digestTitle => 'Arapokõindy ñemombyky ñanduti veve rupive';
+
+  @override
+  String get digestHint =>
+      'Arakõi ñavõ: mbaʼéichapa oho ne ojeguerohoryvéva ha ne cartera arapokõindy ohasavaʼekuépe, ha umi resultado ára oúva.';
 }

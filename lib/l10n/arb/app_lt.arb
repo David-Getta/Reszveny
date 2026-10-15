@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "DI peržiūri visą jūsų portfelį: koncentraciją, priklausomybę nuo sektorių ir valiutų, bendras jūsų akcijų rizikas ir dividendus. Sunaudoja 1 analizę.",
   "portfolioReviewButton": "Analizuoti mano portfelį",
   "portfolioReviewAgain": "Analizuoti iš naujo",
-  "portfolioReviewWorking": "Analizuojamas jūsų portfelis…"
+  "portfolioReviewWorking": "Analizuojamas jūsų portfelis…",
+  "digestTitle": "Savaitės suvestinė el. paštu",
+  "digestHint": "Kiekvieną pirmadienį: kaip praėjusią savaitę judėjo jūsų mėgstamiausi ir portfelis bei artimiausios jų rezultatų datos."
 }

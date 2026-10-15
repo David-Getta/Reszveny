@@ -1782,4 +1782,11 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'राउर पोर्टफ़ोलियो के समीक्षा हो रहल बा…';
+
+  @override
+  String get digestTitle => 'ईमेल से हफ़्तावार सारांश';
+
+  @override
+  String get digestHint =>
+      'हर सोमवार: पिछला हफ़्ता राउर पसंदीदा आ पोर्टफ़ोलियो कइसे चलल, आ ओकनी के आवे वाला नतीजा के तारीख।';
 }

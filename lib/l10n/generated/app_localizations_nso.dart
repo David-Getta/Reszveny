@@ -1797,4 +1797,11 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Re sekaseka photefolio ya gago…';
+
+  @override
+  String get digestTitle => 'Kakaretšo ya beke ka imeile';
+
+  @override
+  String get digestHint =>
+      'Mošupologo o mongwe le o mongwe: ka fao tše o di ratago le photefolio ya gago di sepetšego ka gona bekeng ye e fetilego, le matšatši a dipoelo a a tlago.';
 }

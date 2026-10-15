@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI bütün portfelinizə baxır: konsentrasiya, sektor və valyuta asılılığı, səhmlərinizin ortaq riskləri və dividendlər. 1 təhlil sərf edir.",
   "portfolioReviewButton": "Portfelimi təhlil et",
   "portfolioReviewAgain": "Yenidən təhlil et",
-  "portfolioReviewWorking": "Portfeliniz təhlil edilir…"
+  "portfolioReviewWorking": "Portfeliniz təhlil edilir…",
+  "digestTitle": "E-poçtla həftəlik xülasə",
+  "digestHint": "Hər bazar ertəsi: seçilmişləriniz və portfeliniz keçən həftə necə dəyişdi və onların qarşıdakı hesabat tarixləri."
 }

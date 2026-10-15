@@ -1793,4 +1793,11 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ձեր պորտֆելը վերլուծվում է…';
+
+  @override
+  String get digestTitle => 'Շաբաթական ամփոփում էլ. փոստով';
+
+  @override
+  String get digestHint =>
+      'Ամեն երկուշաբթի՝ ինչպես են անցյալ շաբաթ շարժվել ձեր ընտրյալներն ու պորտֆելը, և նրանց արդյունքների մոտակա ամսաթվերը։';
 }

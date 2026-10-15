@@ -1790,4 +1790,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Revisando tu cartera…';
+
+  @override
+  String get digestTitle => 'Resumen semanal por correo';
+
+  @override
+  String get digestHint =>
+      'Cada lunes: cómo se movieron tus favoritos y tu cartera la semana pasada, y sus próximas fechas de resultados.';
 }

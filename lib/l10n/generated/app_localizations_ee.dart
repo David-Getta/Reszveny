@@ -1789,4 +1789,11 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Míele wò akpawo dzrom me…';
+
+  @override
+  String get digestTitle => 'Kwasiɖa sia kwasiɖa ƒe nyakpɔkpɔ le email dzi';
+
+  @override
+  String get digestHint =>
+      'Dzoɖagbe ɖesiaɖe: alesi wò lɔlɔ̃tɔwo kple wò akpawo yi le kwasiɖa si va yi me, kple woƒe akɔntabubu ŋkeke siwo gbɔna.';
 }

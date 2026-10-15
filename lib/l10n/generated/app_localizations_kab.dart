@@ -1784,4 +1784,11 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Tasleḍt n uqrab-ik…';
+
+  @override
+  String get digestTitle => 'Agzul n yal ddurt s imayl';
+
+  @override
+  String get digestHint =>
+      'Yal Letnayen: amek llan ismenyifen-ik d uqrab-ik deg ddurt yezrin, d wazemz n yigmaḍ-nsen i d-iteddun.';
 }

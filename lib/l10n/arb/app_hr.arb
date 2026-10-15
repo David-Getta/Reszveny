@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI pregledava cijeli vaš portfelj: koncentraciju, izloženost sektorima i valutama, zajedničke rizike vaših dionica i dividende. Troši 1 analizu.",
   "portfolioReviewButton": "Analiziraj moj portfelj",
   "portfolioReviewAgain": "Analiziraj ponovno",
-  "portfolioReviewWorking": "Analiziramo vaš portfelj…"
+  "portfolioReviewWorking": "Analiziramo vaš portfelj…",
+  "digestTitle": "Tjedni sažetak e-poštom",
+  "digestHint": "Svakog ponedjeljka: kako su se vaši favoriti i portfelj kretali prošlog tjedna te njihovi nadolazeći datumi rezultata."
 }

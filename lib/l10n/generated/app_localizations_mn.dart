@@ -1786,4 +1786,11 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Таны портфолиог шинжилж байна…';
+
+  @override
+  String get digestTitle => 'Имэйлээр долоо хоногийн тойм';
+
+  @override
+  String get digestHint =>
+      'Даваа гараг бүр: таны дуртай хувьцаа болон портфолио өнгөрсөн долоо хоногт хэрхэн хөдөлсөн, мөн удахгүй гарах тайлангийн огноо.';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Di AI go look your whole portfolio: how your money gather for one place, how sector and currency fit affect am, risk wey your stocks share, and dividend. E go use 1 analysis.",
   "portfolioReviewButton": "Check my portfolio",
   "portfolioReviewAgain": "Check am again",
-  "portfolioReviewWorking": "We dey check your portfolio…"
+  "portfolioReviewWorking": "We dey check your portfolio…",
+  "digestTitle": "Weekly summary for email",
+  "digestHint": "Every Monday: how your favourites and portfolio waka last week, and when their next results go come out."
 }

@@ -1842,4 +1842,11 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analiziramo vaš portfelj …';
+
+  @override
+  String get digestTitle => 'Tedenski povzetek po e-pošti';
+
+  @override
+  String get digestHint =>
+      'Vsak ponedeljek: kako so se prejšnji teden gibali vaši priljubljeni in portfelj ter njihovi prihajajoči datumi rezultatov.';
 }

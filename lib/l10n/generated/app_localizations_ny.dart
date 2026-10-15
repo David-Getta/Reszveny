@@ -1791,4 +1791,11 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Tikusanthula masheya anu…';
+
+  @override
+  String get digestTitle => 'Chidule cha sabata pa imelo';
+
+  @override
+  String get digestHint =>
+      'Lolemba lililonse: momwe zokondedwa zanu ndi masheya anu zinayendera sabata yatha, ndi masiku a zotsatira zawo omwe akubwera.';
 }

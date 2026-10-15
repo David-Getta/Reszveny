@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "De AI bekijkt je hele portefeuille: concentratie, blootstelling aan sectoren en valuta, risico’s die je aandelen delen, en dividend. Kost 1 analyse.",
   "portfolioReviewButton": "Mijn portefeuille analyseren",
   "portfolioReviewAgain": "Opnieuw analyseren",
-  "portfolioReviewWorking": "Je portefeuille wordt geanalyseerd…"
+  "portfolioReviewWorking": "Je portefeuille wordt geanalyseerd…",
+  "digestTitle": "Wekelijks overzicht per e-mail",
+  "digestHint": "Elke maandag: hoe je favorieten en portefeuille vorige week bewogen, en wanneer hun volgende kwartaalcijfers komen."
 }

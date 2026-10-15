@@ -1793,4 +1793,11 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Sihlalutya ipotifoliyo yakho…';
+
+  @override
+  String get digestTitle => 'Isishwankathelo seveki nge-imeyile';
+
+  @override
+  String get digestHint =>
+      'Rhoqo ngoMvulo: indlela ezithandwayo zakho nepotifoliyo yakho eziye zahamba ngayo kwiveki ephelileyo, kunye nemihla ezayo yeziphumo zazo.';
 }

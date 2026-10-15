@@ -1789,4 +1789,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Jou portefeulje word ontleed…';
+
+  @override
+  String get digestTitle => 'Weeklikse opsomming per e-pos';
+
+  @override
+  String get digestHint =>
+      'Elke Maandag: hoe jou gunstelinge en portefeulje verlede week beweeg het, en hul komende resultaatdatums.';
 }

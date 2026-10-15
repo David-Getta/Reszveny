@@ -1796,4 +1796,11 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Hi xopaxopa phothifoliyo ya wena…';
+
+  @override
+  String get digestTitle => 'Nkatsakanyo wa vhiki hi imeyili';
+
+  @override
+  String get digestHint =>
+      'Musumbuluko wun\'wana ni wun\'wana: ndlela leyi leswi u swi rhandzaka ni phothifoliyo ya wena swi fambeke ha yona evhikini leyi hundzeke, ni masiku lama taka ya mbuyelo wa swona.';
 }

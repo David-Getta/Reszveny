@@ -1778,4 +1778,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'သင့်ပေါ့ဖိုလီယိုကို သုံးသပ်နေသည်…';
+
+  @override
+  String get digestTitle => 'အီးမေးလ်ဖြင့် အပတ်စဉ် အနှစ်ချုပ်';
+
+  @override
+  String get digestHint =>
+      'တနင်္လာနေ့တိုင်း- ပြီးခဲ့သည့်အပတ်က သင့်အကြိုက်ဆုံးများနှင့် ပေါ့ဖိုလီယို မည်သို့ ပြောင်းလဲခဲ့သည်နှင့် ၎င်းတို့၏ လာမည့် ရလဒ်ထုတ်ပြန်ရက်များ။';
 }

@@ -1788,4 +1788,11 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfolyoya te tê analîzkirin…';
+
+  @override
+  String get digestTitle => 'Kurteya heftane bi e-nameyê';
+
+  @override
+  String get digestHint =>
+      'Her duşem: bijareyên te û portfolyoya te hefteya borî çawa tevgeriyan, û dîrokên encamên wan ên pêşerojê.';
 }

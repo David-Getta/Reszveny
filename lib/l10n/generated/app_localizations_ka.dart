@@ -1787,4 +1787,11 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'თქვენი პორტფელი ანალიზდება…';
+
+  @override
+  String get digestTitle => 'ყოველკვირეული შეჯამება ელფოსტით';
+
+  @override
+  String get digestHint =>
+      'ყოველ ორშაბათს: როგორ შეიცვალა თქვენი რჩეულები და პორტფელი გასულ კვირას და მათი შედეგების მომავალი თარიღები.';
 }

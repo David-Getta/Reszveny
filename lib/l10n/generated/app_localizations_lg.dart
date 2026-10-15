@@ -1795,4 +1795,11 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Tukebera emigabo gyo…';
+
+  @override
+  String get digestTitle => 'Ebifunze bya wiiki ku email';
+
+  @override
+  String get digestHint =>
+      'Buli Mmande: engeri by\'oyagala n\'emigabo gyo gye byatambulamu wiiki ewedde, n\'ennaku z\'ebivudde mu kitundu ky\'omwaka ebijja.';
 }

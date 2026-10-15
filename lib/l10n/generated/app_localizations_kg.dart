@@ -1792,4 +1792,11 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'Tuke sala analyse ya portefeuille na nge…';
+
+  @override
+  String get digestTitle => 'Bunkufi ya konso mposo na e-mail';
+
+  @override
+  String get digestHint =>
+      'Konso Kilumbu ya ntete: mutindu bizolwa na nge ye portefeuille na nge kusalaka na mposo yina me luta, ye bilumbu ya ba résultats yina ke kwisa.';
 }

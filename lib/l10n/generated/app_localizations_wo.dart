@@ -1780,4 +1780,11 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ñu ngi saytu sa aksiyoŋ yi…';
+
+  @override
+  String get digestTitle => 'Tënk bu ayu-bés ci imeel';
+
+  @override
+  String get digestHint =>
+      'Altine bu nekk: naka la yi nga gënal ak sa aksiyoŋ yi demee ci ayu-bés bi weesu, ak bési njureef yi ñuy ñëw.';
 }

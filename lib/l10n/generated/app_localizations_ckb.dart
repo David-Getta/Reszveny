@@ -1786,4 +1786,11 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'پۆرتفۆلیۆکەت شیکار دەکرێت…';
+
+  @override
+  String get digestTitle => 'پوختەی هەفتانە بە ئیمەیڵ';
+
+  @override
+  String get digestHint =>
+      'هەموو دووشەممەیەک: دڵخوازەکانت و پۆرتفۆلیۆکەت هەفتەی ڕابردوو چۆن جووڵان، و بەروارە داهاتووەکانی ئەنجامەکانیان.';
 }

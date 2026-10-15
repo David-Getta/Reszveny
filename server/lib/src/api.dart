@@ -10,6 +10,7 @@ import 'package:shelf_router/shelf_router.dart';
 import 'admin_page.dart';
 import 'alert_watcher.dart';
 import 'db.dart';
+import 'digest.dart';
 import 'invites.dart';
 import 'mailer.dart';
 import 'plans.dart';
@@ -525,6 +526,72 @@ class Api {
     final dp = j is Map ? j['dp'] : null;
     if (c is! num || c <= 0) return null;
     return (price: c.toDouble(), changePercent: dp is num ? dp.toDouble() : null);
+  }
+
+  /// A heti összefoglaló küldője. Twelve Data kulccsal a heti változást is
+  /// kiszámolja (és a lekérdezések között szünetet tart az ingyenes keret miatt);
+  /// nélküle csak a legutóbbi árat írja.
+  late final DigestSender digestSender = DigestSender(
+    store: store,
+    mailer: mailer,
+    week: _weekMove,
+    earnings: _earningsDate,
+    pause: twelveDataApiKey.isEmpty ? const Duration(seconds: 1) : const Duration(seconds: 8),
+  );
+
+  Future<WeekMove?> _weekMove(String symbol) async {
+    if (twelveDataApiKey.isNotEmpty) {
+      try {
+        final res = await _client
+            .get(
+              Uri.parse('$twelveDataBaseUrl/time_series').replace(
+                queryParameters: {'symbol': symbol, 'interval': '1day', 'outputsize': '12', 'apikey': twelveDataApiKey},
+              ),
+            )
+            .timeout(const Duration(seconds: 20));
+        final m = weekMoveFromTimeSeries(jsonDecode(res.body));
+        if (m != null) return m;
+      } catch (_) {}
+    }
+    final q = await _finnhubQuote(symbol);
+    return q == null ? null : (price: q.price, weekChange: null, currency: null);
+  }
+
+  /// Twelve Data `time_series` válaszból (újabb elöl) a legutóbbi záróár és a
+  /// legalább hét nappal korábbi utolsó záróárhoz mért változás.
+  static WeekMove? weekMoveFromTimeSeries(Object? j) {
+    if (j is! Map || j['status'] != 'ok' || j['values'] is! List) return null;
+    final rows = <(DateTime, double)>[
+      for (final r in (j['values'] as List).whereType<Map>())
+        if ((DateTime.tryParse('${r['datetime']}'), double.tryParse('${r['close']}')) case (final d?, final c?)) (d, c),
+    ]..sort((a, b) => b.$1.compareTo(a.$1));
+    if (rows.isEmpty || rows.first.$2 <= 0) return null;
+    final last = rows.first;
+    final cutoff = last.$1.subtract(const Duration(days: 7));
+    final base = rows.where((r) => !r.$1.isAfter(cutoff)).firstOrNull;
+    final meta = j['meta'];
+    return (
+      price: last.$2,
+      weekChange: base == null || base.$2 <= 0 ? null : (last.$2 / base.$2 - 1) * 100,
+      currency: meta is Map && meta['currency'] is String ? meta['currency'] as String : null,
+    );
+  }
+
+  Future<DateTime?> _earningsDate(String symbol, DateTime from, DateTime to) async {
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    final res = await _client
+        .get(
+          Uri.parse('$finnhubBaseUrl/calendar/earnings')
+              .replace(queryParameters: {'symbol': symbol, 'from': d(from), 'to': d(to)}),
+          headers: {'X-Finnhub-Token': finnhubApiKey},
+        )
+        .timeout(const Duration(seconds: 15));
+    if (res.statusCode != 200) return null;
+    final j = jsonDecode(res.body);
+    final list = j is Map ? j['earningsCalendar'] : null;
+    if (list is! List) return null;
+    final dates = [for (final e in list.whereType<Map>()) ?DateTime.tryParse('${e['date']}')]..sort();
+    return dates.firstOrNull;
   }
 
   // ---- Szinkron (e-mailes fiókhoz) ----

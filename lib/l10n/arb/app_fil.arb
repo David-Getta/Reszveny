@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Sinusuri ng AI ang buo mong portfolio: konsentrasyon, exposure sa sektor at currency, mga panganib na magkakapareho ang iyong mga stock, at dibidendo. Gumagamit ng 1 pagsusuri.",
   "portfolioReviewButton": "Suriin ang portfolio ko",
   "portfolioReviewAgain": "Suriin muli",
-  "portfolioReviewWorking": "Sinusuri ang iyong portfolio…"
+  "portfolioReviewWorking": "Sinusuri ang iyong portfolio…",
+  "digestTitle": "Lingguhang buod sa email",
+  "digestHint": "Tuwing Lunes: kung paano gumalaw ang iyong mga paborito at portfolio noong nakaraang linggo, at ang kanilang mga paparating na petsa ng resulta."
 }

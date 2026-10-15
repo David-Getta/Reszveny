@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Ginatan-aw sang AI ang bug-os mo nga portfolio: konsentrasyon, exposure sa sektor kag kwarta, mga risgo nga pareho sang imo mga stock, kag dibidendo. Nagagamit sang 1 ka analisis.",
   "portfolioReviewButton": "Analisaha ang akon portfolio",
   "portfolioReviewAgain": "Analisaha liwat",
-  "portfolioReviewWorking": "Ginaanalisa ang imo portfolio…"
+  "portfolioReviewWorking": "Ginaanalisa ang imo portfolio…",
+  "digestTitle": "Semanal nga summary paagi sa email",
+  "digestHint": "Kada Lunes: kon paano naghulag ang imo mga paborito kag portfolio sang nagligad nga semana, kag ang ila masunod nga mga petsa sang resulta."
 }

@@ -1794,4 +1794,11 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'உங்கள் போர்ட்ஃபோலியோ மதிப்பாய்வு செய்யப்படுகிறது…';
+
+  @override
+  String get digestTitle => 'மின்னஞ்சலில் வாராந்திரச் சுருக்கம்';
+
+  @override
+  String get digestHint =>
+      'ஒவ்வொரு திங்களும்: கடந்த வாரம் உங்கள் பிடித்தவையும் போர்ட்ஃபோலியோவும் எப்படி நகர்ந்தன, அவற்றின் வரவிருக்கும் முடிவுத் தேதிகள்.';
 }

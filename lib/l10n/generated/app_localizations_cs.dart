@@ -1836,4 +1836,11 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analyzuji vaše portfolio…';
+
+  @override
+  String get digestTitle => 'Týdenní souhrn e-mailem';
+
+  @override
+  String get digestHint =>
+      'Každé pondělí: jak se minulý týden vyvíjely vaše oblíbené a portfolio a nejbližší data jejich výsledků.';
 }

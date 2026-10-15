@@ -1786,4 +1786,11 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Портфейлът се анализира…';
+
+  @override
+  String get digestTitle => 'Седмично обобщение по имейл';
+
+  @override
+  String get digestHint =>
+      'Всеки понеделник: как са се движили любимите ви и портфейлът ви през изминалата седмица и предстоящите дати на резултатите им.';
 }

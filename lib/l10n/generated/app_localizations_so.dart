@@ -1792,4 +1792,11 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfoliyadaada waa la eegayaa…';
+
+  @override
+  String get digestTitle => 'Soo koobid toddobaadle ah iimaylka';
+
+  @override
+  String get digestHint =>
+      'Isniin kasta: sida ay u dhaqaaqeen kuwa aad jeceshahay iyo portfoliyadaada toddobaadkii hore, iyo taariikhaha natiijooyinkooda soo socda.';
 }

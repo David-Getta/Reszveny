@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Die KI prüft das gesamte Portfolio: Konzentration, Sektor- und Währungsanteile, Risiken, die die Aktien gemeinsam haben, sowie Dividenden. Verbraucht 1 Analyse.",
   "portfolioReviewButton": "Mein Portfolio analysieren",
   "portfolioReviewAgain": "Erneut analysieren",
-  "portfolioReviewWorking": "Portfolio wird analysiert…"
+  "portfolioReviewWorking": "Portfolio wird analysiert…",
+  "digestTitle": "Wöchentliche Zusammenfassung per E-Mail",
+  "digestHint": "Jeden Montag: wie sich deine Favoriten und dein Portfolio letzte Woche entwickelt haben und ihre nächsten Termine für Quartalszahlen."
 }

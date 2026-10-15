@@ -1779,4 +1779,11 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ستاسو پورټفولیو څېړل کېږي…';
+
+  @override
+  String get digestTitle => 'د برېښنالیک له لارې اوونیز لنډیز';
+
+  @override
+  String get digestHint =>
+      'هره دوشنبه: ستاسو خوښې او پورټفولیو تېره اوونۍ څنګه وخوځېدل، او د هغوی د راتلونکو پایلو نېټې.';
 }

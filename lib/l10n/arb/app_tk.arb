@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI tutuş portfeliňize seredýär: jemlenmä, pudak we walýuta töwekgelçiligine, paýnamalaryňyzyň umumy töwekgelçiliklerine we diwidendlere. 1 seljerme sarp edýär.",
   "portfolioReviewButton": "Portfelimi seljer",
   "portfolioReviewAgain": "Täzeden seljer",
-  "portfolioReviewWorking": "Portfeliňiz seljerilýär…"
+  "portfolioReviewWorking": "Portfeliňiz seljerilýär…",
+  "digestTitle": "E-poçta arkaly hepdelik jemleme",
+  "digestHint": "Her duşenbe: saýlananlaryňyz we portfeliňiz geçen hepde nähili üýtgedi we olaryň ýakynlaşýan hasabat seneleri."
 }

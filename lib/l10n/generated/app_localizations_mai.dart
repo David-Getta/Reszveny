@@ -1781,4 +1781,11 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'अहाँक पोर्टफ़ोलियोक समीक्षा भऽ रहल अछि…';
+
+  @override
+  String get digestTitle => 'ईमेलसँ साप्ताहिक सारांश';
+
+  @override
+  String get digestHint =>
+      'प्रत्येक सोम: पछिला सप्ताह अहाँक पसंदीदा आ पोर्टफ़ोलियो केना चलल, आ ओकर आगामी परिणामक तिथि।';
 }

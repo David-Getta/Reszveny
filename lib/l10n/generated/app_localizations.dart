@@ -3246,6 +3246,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reviewing your portfolio…'**
   String get portfolioReviewWorking;
+
+  /// Settings switch (signed in): a weekly e-mail summary every Monday.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly summary by e-mail'**
+  String get digestTitle;
+
+  /// No description provided for @digestHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Every Monday: how your favorites and portfolio moved last week, and their upcoming results dates.'**
+  String get digestHint;
 }
 
 class _AppLocalizationsDelegate

@@ -1780,4 +1780,11 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'توهان جي پورٽ فوليو جو جائزو ورتو پيو وڃي…';
+
+  @override
+  String get digestTitle => 'اي ميل ذريعي هفتيوار خلاصو';
+
+  @override
+  String get digestHint =>
+      'هر سومر: گذريل هفتي توهان جا پسنديده ۽ پورٽ فوليو ڪيئن هليا، ۽ انهن جي ايندڙ نتيجن جون تاريخون.';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Tan-awon sa AI ang imong tibuok portfolio: konsentrasyon, exposure sa sektor ug salapi, mga risgo nga gipaambit sa imong mga stock, ug dibidendo. Mogamit og 1 ka pagtuki.",
   "portfolioReviewButton": "Tukia ang akong portfolio",
   "portfolioReviewAgain": "Tukia pag-usab",
-  "portfolioReviewWorking": "Gituki ang imong portfolio…"
+  "portfolioReviewWorking": "Gituki ang imong portfolio…",
+  "digestTitle": "Senemanang summary pinaagi sa email",
+  "digestHint": "Matag Lunes: giunsa paglihok sa imong mga paborito ug portfolio sa miaging semana, ug ang ilang umaabot nga mga petsa sa resulta."
 }

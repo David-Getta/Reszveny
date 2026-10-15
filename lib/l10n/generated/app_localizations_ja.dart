@@ -1730,4 +1730,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ポートフォリオを診断中…';
+
+  @override
+  String get digestTitle => '週間サマリーをメールで受け取る';
+
+  @override
+  String get digestHint => '毎週月曜日：お気に入りとポートフォリオの先週の値動きと、今後の決算発表日をお届けします。';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI:n går igenom hela din portfölj: koncentration, sektor- och valutaexponering, risker som dina aktier har gemensamt och utdelningar. Använder 1 analys.",
   "portfolioReviewButton": "Analysera min portfölj",
   "portfolioReviewAgain": "Analysera igen",
-  "portfolioReviewWorking": "Din portfölj analyseras…"
+  "portfolioReviewWorking": "Din portfölj analyseras…",
+  "digestTitle": "Veckosammanfattning via e-post",
+  "digestHint": "Varje måndag: hur dina favoriter och din portfölj rörde sig förra veckan, och deras kommande rapportdatum."
 }

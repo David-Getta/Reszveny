@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Jeren'ny AI manontolo ny kitapom-bolanao: ny fifantohana, ny fiankinana amin'ny sehatra sy ny vola, ny loza iraisan'ny petrabolanao, ary ny tombom-barotra zaraina. Mampiasa 1 fandalinana.",
   "portfolioReviewButton": "Dinihina ny kitapom-bolako",
   "portfolioReviewAgain": "Dinihina indray",
-  "portfolioReviewWorking": "Dinihina ny kitapom-bolanao…"
+  "portfolioReviewWorking": "Dinihina ny kitapom-bolanao…",
+  "digestTitle": "Famintinana isan-kerinandro amin'ny mailaka",
+  "digestHint": "Isaky ny alatsinainy: ny fivoaran'ny ankafizinao sy ny kitapom-bolanao tamin'ny herinandro lasa, ary ny daty hivoahan'ny vokatra manaraka."
 }

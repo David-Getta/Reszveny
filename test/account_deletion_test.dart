@@ -247,6 +247,16 @@ void main() {
     expect(terms, findsOneWidget);
     expect(find.text('Privacy Policy'), findsOneWidget);
 
+    // Belépve a heti összefoglaló e-mail bekapcsolható (alapból ki).
+    final digest = find.byKey(const ValueKey('weekly-digest'));
+    await tester.scrollUntilVisible(digest, -300, scrollable: find.byType(Scrollable).last);
+    expect(find.text('Weekly summary by e-mail'), findsOneWidget);
+    expect(s.preferences.weeklyDigest, isFalse);
+    await tester.tap(digest);
+    await tester.pumpAndSettle();
+    expect(s.preferences.weeklyDigest, isTrue);
+    expect(s.sync!.snapshot()['weekly_digest'], isTrue);
+
     final delete = find.text('Delete account');
     await tester.scrollUntilVisible(delete, -300, scrollable: find.byType(Scrollable).last);
     await tester.tap(delete);

@@ -1780,4 +1780,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Đang đánh giá danh mục của bạn…';
+
+  @override
+  String get digestTitle => 'Tóm tắt hằng tuần qua email';
+
+  @override
+  String get digestHint =>
+      'Mỗi thứ Hai: mục yêu thích và danh mục của bạn biến động ra sao trong tuần trước, cùng ngày công bố kết quả kinh doanh sắp tới.';
 }

@@ -1790,4 +1790,11 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Tudi tukonkonona portefeuille webe…';
+
+  @override
+  String get digestTitle => 'Bikole bia lumingu ku e-mail';
+
+  @override
+  String get digestHint =>
+      'Dituku dionso dia kumpala dia lumingu: mudi biudi musue ne portefeuille webe bienze mu lumingu luakapita, ne matuku a mapeta alualua.';
 }

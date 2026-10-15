@@ -1782,4 +1782,11 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Портфелегез анализлана…';
+
+  @override
+  String get digestTitle => 'Электрон почта аша атналык җыелма';
+
+  @override
+  String get digestHint =>
+      'Һәр дүшәмбе: сайланмаларыгыз һәм портфелегез узган атнада ничек үзгәрде, һәм аларның якындагы хисап көннәре.';
 }

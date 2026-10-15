@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI isuzuma ishoramari ryawe ryose: kwegeranya amafaranga ahantu hamwe, kwishingikiriza ku nzego z'ubucuruzi n'amafaranga y'amahanga, ingaruka imigabane yawe ihuriyeho, n'inyungu ku migabane. Rikoresha isesengura 1.",
   "portfolioReviewButton": "Sesengura ishoramari ryanjye",
   "portfolioReviewAgain": "Ongera usesengure",
-  "portfolioReviewWorking": "Turimo gusesengura ishoramari ryawe…"
+  "portfolioReviewWorking": "Turimo gusesengura ishoramari ryawe…",
+  "digestTitle": "Incamake ya buri cyumweru kuri imeri",
+  "digestHint": "Buri wa Mbere: uko ibyo ukunda n'ishoramari ryawe byagenze mu cyumweru gishize, n'amatariki y'ibyavuye mu gihembwe ari imbere."
 }

@@ -1782,4 +1782,11 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'તમારા પોર્ટફોલિયોની સમીક્ષા થઈ રહી છે…';
+
+  @override
+  String get digestTitle => 'ઇમેઇલ દ્વારા સાપ્તાહિક સારાંશ';
+
+  @override
+  String get digestHint =>
+      'દર સોમવારે: ગયા અઠવાડિયે તમારા મનપસંદ અને પોર્ટફોલિયો કેવા રહ્યા, અને તેમનાં આગામી પરિણામોની તારીખો.';
 }

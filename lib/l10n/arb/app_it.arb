@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "L’IA esamina il tuo intero portafoglio: concentrazione, esposizione a settori e valute, rischi comuni ai tuoi titoli e dividendi. Usa 1 analisi.",
   "portfolioReviewButton": "Analizza il mio portafoglio",
   "portfolioReviewAgain": "Analizza di nuovo",
-  "portfolioReviewWorking": "Analisi del portafoglio in corso…"
+  "portfolioReviewWorking": "Analisi del portafoglio in corso…",
+  "digestTitle": "Riepilogo settimanale via email",
+  "digestHint": "Ogni lunedì: come si sono mossi i tuoi preferiti e il tuo portafoglio la settimana scorsa e le prossime date dei risultati."
 }

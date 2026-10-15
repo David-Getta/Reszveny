@@ -1785,4 +1785,11 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Porteføljen din analyseres…';
+
+  @override
+  String get digestTitle => 'Ukentlig oppsummering på e-post';
+
+  @override
+  String get digestHint =>
+      'Hver mandag: hvordan favorittene og porteføljen din beveget seg forrige uke, og kommende resultatdatoer.';
 }

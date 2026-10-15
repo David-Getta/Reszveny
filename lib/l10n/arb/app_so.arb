@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI waxay eegtaa portfoliyadaada oo dhan: isku-uruursanaanta, ku-tiirsanaanta qaybaha iyo lacagaha, khataraha ay saamiyadaadu wadaagaan, iyo faa'iidada saamiyada. Waxay isticmaashaa 1 falanqayn.",
   "portfolioReviewButton": "Dib u eeg portfoliyadayda",
   "portfolioReviewAgain": "Mar kale dib u eeg",
-  "portfolioReviewWorking": "Portfoliyadaada waa la eegayaa…"
+  "portfolioReviewWorking": "Portfoliyadaada waa la eegayaa…",
+  "digestTitle": "Soo koobid toddobaadle ah iimaylka",
+  "digestHint": "Isniin kasta: sida ay u dhaqaaqeen kuwa aad jeceshahay iyo portfoliyadaada toddobaadkii hore, iyo taariikhaha natiijooyinkooda soo socda."
 }

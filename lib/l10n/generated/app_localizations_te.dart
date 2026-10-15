@@ -1791,4 +1791,11 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'మీ పోర్ట్‌ఫోలియో సమీక్షించబడుతోంది…';
+
+  @override
+  String get digestTitle => 'ఇమెయిల్ ద్వారా వారపు సారాంశం';
+
+  @override
+  String get digestHint =>
+      'ప్రతి సోమవారం: గత వారం మీ ఇష్టమైనవి, పోర్ట్‌ఫోలియో ఎలా కదిలాయి, వాటి రాబోయే ఫలితాల తేదీలు.';
 }

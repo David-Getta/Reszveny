@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI’en gennemgår hele din portefølje: koncentration, sektor- og valutaeksponering, risici dine aktier har til fælles, og udbytte. Bruger 1 analyse.",
   "portfolioReviewButton": "Analysér min portefølje",
   "portfolioReviewAgain": "Analysér igen",
-  "portfolioReviewWorking": "Din portefølje analyseres…"
+  "portfolioReviewWorking": "Din portefølje analyseres…",
+  "digestTitle": "Ugentligt overblik på e-mail",
+  "digestHint": "Hver mandag: hvordan dine favoritter og din portefølje bevægede sig i sidste uge, og deres kommende regnskabsdatoer."
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI shqyrton gjithë portofolin tënd: përqendrimin, ekspozimin ndaj sektorëve dhe monedhave, rreziqet e përbashkëta të aksioneve të tua dhe dividentët. Përdor 1 analizë.",
   "portfolioReviewButton": "Analizo portofolin tim",
   "portfolioReviewAgain": "Analizo përsëri",
-  "portfolioReviewWorking": "Duke analizuar portofolin tënd…"
+  "portfolioReviewWorking": "Duke analizuar portofolin tënd…",
+  "digestTitle": "Përmbledhje javore me email",
+  "digestHint": "Çdo të hënë: si lëvizën të preferuarat dhe portofoli juaj javën e kaluar, si dhe datat e ardhshme të rezultateve të tyre."
 }

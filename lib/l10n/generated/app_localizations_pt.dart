@@ -1791,4 +1791,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Revisando sua carteira…';
+
+  @override
+  String get digestTitle => 'Resumo semanal por e-mail';
+
+  @override
+  String get digestHint =>
+      'Toda segunda-feira: como seus favoritos e sua carteira se movimentaram na semana passada e as próximas datas de resultados.';
 }

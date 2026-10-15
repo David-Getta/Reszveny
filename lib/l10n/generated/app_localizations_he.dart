@@ -1781,4 +1781,11 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'סוקרים את תיק ההשקעות שלך…';
+
+  @override
+  String get digestTitle => 'סיכום שבועי במייל';
+
+  @override
+  String get digestHint =>
+      'בכל יום שני: איך זזו המועדפים ותיק ההשקעות שלך בשבוע שעבר, ומועדי הדוחות הקרובים שלהם.';
 }

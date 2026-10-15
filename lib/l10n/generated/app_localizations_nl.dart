@@ -1790,4 +1790,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Je portefeuille wordt geanalyseerd…';
+
+  @override
+  String get digestTitle => 'Wekelijks overzicht per e-mail';
+
+  @override
+  String get digestHint =>
+      'Elke maandag: hoe je favorieten en portefeuille vorige week bewogen, en wanneer hun volgende kwartaalcijfers komen.';
 }

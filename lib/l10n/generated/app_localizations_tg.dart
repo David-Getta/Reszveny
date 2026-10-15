@@ -1787,4 +1787,11 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Портфели шумо таҳлил мешавад…';
+
+  @override
+  String get digestTitle => 'Хулосаи ҳафтаина тавассути почтаи электронӣ';
+
+  @override
+  String get digestHint =>
+      'Ҳар душанбе: интихобшудаҳо ва портфели шумо ҳафтаи гузашта чӣ гуна тағйир ёфтанд ва санаҳои навбатии натиҷаҳои онҳо.';
 }

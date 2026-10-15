@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI prejde celé vaše portfólio: koncentráciu, expozíciu voči sektorom a menám, riziká spoločné pre vaše akcie a dividendy. Spotrebuje 1 analýzu.",
   "portfolioReviewButton": "Analyzovať moje portfólio",
   "portfolioReviewAgain": "Analyzovať znova",
-  "portfolioReviewWorking": "Analyzujem vaše portfólio…"
+  "portfolioReviewWorking": "Analyzujem vaše portfólio…",
+  "digestTitle": "Týždenný súhrn e-mailom",
+  "digestHint": "Každý pondelok: ako sa minulý týždeň vyvíjali vaše obľúbené a portfólio a najbližšie dátumy ich výsledkov."
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "A IA revisa toda a túa carteira: concentración, exposición a sectores e divisas, riscos que comparten as túas accións e dividendos. Usa 1 análise.",
   "portfolioReviewButton": "Revisar a miña carteira",
   "portfolioReviewAgain": "Revisar de novo",
-  "portfolioReviewWorking": "Revisando a túa carteira…"
+  "portfolioReviewWorking": "Revisando a túa carteira…",
+  "digestTitle": "Resumo semanal por correo electrónico",
+  "digestHint": "Cada luns: como se moveron os teus favoritos e a túa carteira a semana pasada, e as súas próximas datas de resultados."
 }

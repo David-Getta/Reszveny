@@ -1758,4 +1758,11 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ፖርትፎሊዮዎ እየተገመገመ ነው…';
+
+  @override
+  String get digestTitle => 'ሳምንታዊ ማጠቃለያ በኢሜይል';
+
+  @override
+  String get digestHint =>
+      'በየሰኞ፦ ተወዳጆችዎ እና ፖርትፎሊዮዎ ባለፈው ሳምንት እንዴት እንደተንቀሳቀሱ እና የሚመጡት የውጤት ቀኖቻቸው።';
 }

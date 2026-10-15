@@ -1772,4 +1772,11 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'D vɛɛsd f portfey…';
+
+  @override
+  String get digestTitle => 'Semen fãa koɛɛg-bãmb ne e-mail';
+
+  @override
+  String get digestHint =>
+      'Tɛnen fãa: a nong-n-yɩɩda la a portfey sẽn kẽng to-to semen sẽn loogã, la b ligd-yɛla rasem nins sẽn watã.';
 }

@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI ሙሉ ፖርትፎሊዮዎን ይገመግማል፦ የኢንቨስትመንት ክምችት፣ የዘርፍና የምንዛሪ ተጋላጭነት፣ አክሲዮኖችዎ የሚጋሯቸው ስጋቶች እና የትርፍ ድርሻ። 1 ትንተና ይጠቀማል።",
   "portfolioReviewButton": "ፖርትፎሊዮዬን ገምግም",
   "portfolioReviewAgain": "እንደገና ገምግም",
-  "portfolioReviewWorking": "ፖርትፎሊዮዎ እየተገመገመ ነው…"
+  "portfolioReviewWorking": "ፖርትፎሊዮዎ እየተገመገመ ነው…",
+  "digestTitle": "ሳምንታዊ ማጠቃለያ በኢሜይል",
+  "digestHint": "በየሰኞ፦ ተወዳጆችዎ እና ፖርትፎሊዮዎ ባለፈው ሳምንት እንዴት እንደተንቀሳቀሱ እና የሚመጡት የውጤት ቀኖቻቸው።"
 }

@@ -1792,4 +1792,11 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Duke analizuar portofolin tënd…';
+
+  @override
+  String get digestTitle => 'Përmbledhje javore me email';
+
+  @override
+  String get digestHint =>
+      'Çdo të hënë: si lëvizën të preferuarat dhe portofoli juaj javën e kaluar, si dhe datat e ardhshme të rezultateve të tyre.';
 }

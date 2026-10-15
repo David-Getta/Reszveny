@@ -137,6 +137,16 @@ következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén 
 riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
 `RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül).
 
+## Heti összefoglaló e-mailben
+
+Aki a Beállításokban (belépve) bekapcsolja, annak hétfő reggelente (6:00 UTC után) e-mail megy: a
+portfólió és a kedvencek részvényei (legfeljebb 15) a heti változással, csökkenő sorrendben, és
+melyiküknek jön gyorsjelentése a következő két hétben. A heti változást a Twelve Data napi záróáraiból
+számolja (`TWELVEDATA_API_KEY`; nélküle csak a legutóbbi Finnhub-ár kerül a levélbe); a
+lekérdezések között 8 másodperc szünetet tart az ingyenes keret miatt. A szerver
+`DIGEST_CHECK_MINUTES` percenként (alapból 60; 0 = ki) nézi, kinek esedékes; egy fióknak hat és fél
+napon belül nem megy újra (`digest_log` tábla). Nyelve a felhasználóé (magyar vagy angol).
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

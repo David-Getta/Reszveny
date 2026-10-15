@@ -1753,4 +1753,11 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ፖርትፎሊዮኹም ይትንተን ኣሎ…';
+
+  @override
+  String get digestTitle => 'ሰሙናዊ ጽማቕ ብኢመይል';
+
+  @override
+  String get digestHint =>
+      'ኩሉ ሰኑይ፦ ዝተፈተዉኹምን ፖርትፎሊዮኹምን ኣብ ዝሓለፈ ሰሙን ከመይ ከም ዝተንቀሳቐሱ፣ ከምኡውን ዝመጽእ ዕለታት ውጽኢቶም።';
 }

@@ -1788,4 +1788,11 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Портфелиңиз талданууда…';
+
+  @override
+  String get digestTitle => 'Электрондук почта аркылуу апталык сереп';
+
+  @override
+  String get digestHint =>
+      'Ар дүйшөмбү: тандалмаларыңыз жана портфелиңиз өткөн аптада кандай өзгөргөнү жана алардын алдыдагы отчет күндөрү.';
 }

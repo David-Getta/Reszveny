@@ -1764,4 +1764,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ກຳລັງກວດສອບພອດໂຟລິໂອຂອງທ່ານ…';
+
+  @override
+  String get digestTitle => 'ສະຫຼຸບປະຈຳອາທິດທາງອີເມວ';
+
+  @override
+  String get digestHint =>
+      'ທຸກວັນຈັນ: ລາຍການທີ່ມັກ ແລະ ພອດໂຟລິໂອຂອງທ່ານເຄື່ອນໄຫວແນວໃດໃນອາທິດແລ້ວ ແລະ ວັນປະກາດຜົນປະກອບການທີ່ຈະມາເຖິງ';
 }

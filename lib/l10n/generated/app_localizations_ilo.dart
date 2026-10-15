@@ -1800,4 +1800,11 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Sukimsukimaten ti portfolio-mo…';
+
+  @override
+  String get digestTitle => 'Linawas a pakabuklan babaen ti email';
+
+  @override
+  String get digestHint =>
+      'Tunggal Lunes: no kasano ti panaggaraw dagiti paboritom ken ti portfolio-m iti napalabas a lawas, ken dagiti umay a petsa ti resultada.';
 }

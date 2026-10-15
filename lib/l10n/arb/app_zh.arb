@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI 将全面审视整个投资组合：集中度、行业与货币敞口、持仓股票的共同风险以及股息。消耗 1 次分析。",
   "portfolioReviewButton": "诊断我的投资组合",
   "portfolioReviewAgain": "重新诊断",
-  "portfolioReviewWorking": "正在诊断投资组合…"
+  "portfolioReviewWorking": "正在诊断投资组合…",
+  "digestTitle": "每周邮件摘要",
+  "digestHint": "每周一：你的收藏和投资组合上周的走势，以及即将公布财报的日期。"
 }

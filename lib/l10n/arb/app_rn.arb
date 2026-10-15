@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI irasuzuma ishoramari ryawe ryose: ukwegeranira kw'amahera hamwe, ukwishimikiza ku mice y'ubudandaji n'amafaranga y'ibihugu, ingorane imigabane yawe isangiye, n'inyungu z'imigabane. Rikoresha isesangura 1.",
   "portfolioReviewButton": "Sesangura ishoramari ryanje",
   "portfolioReviewAgain": "Subira usesangure",
-  "portfolioReviewWorking": "Turiko turasesangura ishoramari ryawe…"
+  "portfolioReviewWorking": "Turiko turasesangura ishoramari ryawe…",
+  "digestTitle": "Incamake ya buri ndwi kuri imeyili",
+  "digestHint": "Buri wa mbere: ingene ivyo ukunda n'ishoramari ryawe vyagenze mu ndwi iheze, n'amatariki y'ivyavuye mu gihembwe biri imbere."
 }

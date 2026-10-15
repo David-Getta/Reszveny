@@ -1822,4 +1822,11 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analiziramo vaš portfolio…';
+
+  @override
+  String get digestTitle => 'Sedmični sažetak putem e-pošte';
+
+  @override
+  String get digestHint =>
+      'Svakog ponedjeljka: kako su se vaši favoriti i portfolio kretali prošle sedmice i njihovi predstojeći datumi rezultata.';
 }

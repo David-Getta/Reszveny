@@ -1785,4 +1785,11 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'آپ کے پورٹ فولیو کا جائزہ لیا جا رہا ہے…';
+
+  @override
+  String get digestTitle => 'ای میل کے ذریعے ہفتہ وار خلاصہ';
+
+  @override
+  String get digestHint =>
+      'ہر پیر: پچھلے ہفتے آپ کے پسندیدہ اور پورٹ فولیو کیسے چلے، اور ان کے آنے والے نتائج کی تاریخیں۔';
 }

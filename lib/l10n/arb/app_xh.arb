@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "I-AI ijonga ipotifoliyo yakho yonke: ukugxila kwemali kwindawo enye, ukuxhomekeka kumacandelo nakwiimali zamazwe, imingcipheko ekwabelwana ngayo zizabelo zakho, kunye nezahlulo zenzuzo. Isebenzisa uhlalutyo olu-1.",
   "portfolioReviewButton": "Hlalutya ipotifoliyo yam",
   "portfolioReviewAgain": "Hlalutya kwakhona",
-  "portfolioReviewWorking": "Sihlalutya ipotifoliyo yakho…"
+  "portfolioReviewWorking": "Sihlalutya ipotifoliyo yakho…",
+  "digestTitle": "Isishwankathelo seveki nge-imeyile",
+  "digestHint": "Rhoqo ngoMvulo: indlela ezithandwayo zakho nepotifoliyo yakho eziye zahamba ngayo kwiveki ephelileyo, kunye nemihla ezayo yeziphumo zazo."
 }

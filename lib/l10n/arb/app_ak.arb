@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI hwɛ wo nkyɛfa nyinaa: sɛnea wo sika aboa ano wɔ baabi koro, adwumayɛ mmeae ne sika ahorow a wo ho twe ho, asiane a wo nkyɛfa no nyinaa kyɛ, ne mfasoɔ a wonya. Ɛde nhwehwɛmu 1 di dwuma.",
   "portfolioReviewButton": "Hwehwɛ me nkyɛfa mu",
   "portfolioReviewAgain": "Hwehwɛ mu bio",
-  "portfolioReviewWorking": "Ɛrehwehwɛ wo nkyɛfa mu…"
+  "portfolioReviewWorking": "Ɛrehwehwɛ wo nkyɛfa mu…",
+  "digestTitle": "Nnawɔtwe biara nsɛm tiawa wɔ email so",
+  "digestHint": "Dwoda biara: sɛnea nea wopɛ ne wo nkyɛfa kɔɔ so nnawɔtwe a atwam no, ne da a wɔbɛda wɔn akontaabu adi."
 }

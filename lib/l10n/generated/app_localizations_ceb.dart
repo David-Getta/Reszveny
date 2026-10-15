@@ -1794,4 +1794,11 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Gituki ang imong portfolio…';
+
+  @override
+  String get digestTitle => 'Senemanang summary pinaagi sa email';
+
+  @override
+  String get digestHint =>
+      'Matag Lunes: giunsa paglihok sa imong mga paborito ug portfolio sa miaging semana, ug ang ilang umaabot nga mga petsa sa resulta.';
 }

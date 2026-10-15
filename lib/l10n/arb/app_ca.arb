@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "La IA analitza tota la teva cartera: concentració, exposició a sectors i divises, riscos que comparteixen les teves accions i dividends. Fa servir 1 anàlisi.",
   "portfolioReviewButton": "Revisar la meva cartera",
   "portfolioReviewAgain": "Tornar a revisar",
-  "portfolioReviewWorking": "S’està revisant la teva cartera…"
+  "portfolioReviewWorking": "S’està revisant la teva cartera…",
+  "digestTitle": "Resum setmanal per correu electrònic",
+  "digestHint": "Cada dilluns: com s'han mogut els teus favorits i la teva cartera la setmana passada, i les properes dates de resultats."
 }

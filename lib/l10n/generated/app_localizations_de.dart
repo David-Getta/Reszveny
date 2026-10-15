@@ -1796,4 +1796,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfolio wird analysiert…';
+
+  @override
+  String get digestTitle => 'Wöchentliche Zusammenfassung per E-Mail';
+
+  @override
+  String get digestHint =>
+      'Jeden Montag: wie sich deine Favoriten und dein Portfolio letzte Woche entwickelt haben und ihre nächsten Termine für Quartalszahlen.';
 }

@@ -1790,4 +1790,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Ana duba jakar hannun jarinka…';
+
+  @override
+  String get digestTitle => 'Taƙaitawar mako ta imel';
+
+  @override
+  String get digestHint =>
+      'Kowace Litinin: yadda abubuwan da ka fi so da jakar hannun jarinka suka motsa a makon da ya gabata, da kwanakin sakamakonsu masu zuwa.';
 }

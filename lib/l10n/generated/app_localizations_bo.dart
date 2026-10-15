@@ -1776,4 +1776,11 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་དབྱེ་ཞིབ་བྱེད་བཞིན་པ…';
+
+  @override
+  String get digestTitle => 'གློག་འཕྲིན་བརྒྱུད་གཟའ་འཁོར་རེའི་བསྡུས་དོན།';
+
+  @override
+  String get digestHint =>
+      'གཟའ་ཟླ་བ་རེ་རེར། ཁྱེད་ཀྱི་དགའ་མོས་དང་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་གཟའ་འཁོར་སྔ་མའི་འགྱུར་ལྡོག་དང་། དེ་དག་གི་གྲུབ་འབྲས་འཆར་རྒྱུའི་ཚེས་གྲངས།';
 }

@@ -1784,4 +1784,11 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'À ń ṣàyẹ̀wò àpò ìdókòwò rẹ…';
+
+  @override
+  String get digestTitle => 'Àkópọ̀ ọ̀sẹ̀ nípasẹ̀ ímeèlì';
+
+  @override
+  String get digestHint =>
+      'Ní gbogbo Ọjọ́ Ajé: bí àwọn ààyò rẹ àti àpò ìdókòwò rẹ ṣe lọ ní ọ̀sẹ̀ tó kọjá, àti àwọn ọjọ́ àbájáde wọn tó ń bọ̀.';
 }

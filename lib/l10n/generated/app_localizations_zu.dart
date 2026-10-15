@@ -1792,4 +1792,11 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Sihlaziya iphothifoliyo yakho…';
+
+  @override
+  String get digestTitle => 'Isifinyezo samasonto onke nge-imeyili';
+
+  @override
+  String get digestHint =>
+      'Njalo ngoMsombuluko: ukuthi izintandokazi zakho nephothifoliyo yakho kuhambe kanjani ngesonto eledlule, nezinsuku ezizayo zemiphumela yazo.';
 }

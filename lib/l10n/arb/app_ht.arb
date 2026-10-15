@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI a egzamine tout pòtfèy ou: konsantrasyon, ekspozisyon nan sektè ak lajan etranje, risk aksyon ou yo pataje, ak dividann. Sèvi ak 1 analiz.",
   "portfolioReviewButton": "Analize pòtfèy mwen",
   "portfolioReviewAgain": "Analize ankò",
-  "portfolioReviewWorking": "N ap analize pòtfèy ou…"
+  "portfolioReviewWorking": "N ap analize pòtfèy ou…",
+  "digestTitle": "Rezime chak semèn pa imèl",
+  "digestHint": "Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo."
 }

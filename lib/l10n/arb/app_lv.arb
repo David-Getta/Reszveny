@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI pārskata visu jūsu portfeli: koncentrāciju, nozaru un valūtu riskus, jūsu akciju kopīgos riskus un dividendes. Izmanto 1 analīzi.",
   "portfolioReviewButton": "Analizēt manu portfeli",
   "portfolioReviewAgain": "Analizēt vēlreiz",
-  "portfolioReviewWorking": "Analizējam jūsu portfeli…"
+  "portfolioReviewWorking": "Analizējam jūsu portfeli…",
+  "digestTitle": "Iknedēļas kopsavilkums e-pastā",
+  "digestHint": "Katru pirmdienu: kā pagājušajā nedēļā mainījās jūsu izlase un portfelis, kā arī to tuvākie rezultātu datumi."
 }

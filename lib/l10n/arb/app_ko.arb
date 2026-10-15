@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI가 포트폴리오 전체를 살펴봅니다: 집중도, 섹터·통화 노출, 보유 종목들의 공통 리스크, 배당. 분석 1회를 사용합니다.",
   "portfolioReviewButton": "내 포트폴리오 진단",
   "portfolioReviewAgain": "다시 진단",
-  "portfolioReviewWorking": "포트폴리오를 진단하는 중…"
+  "portfolioReviewWorking": "포트폴리오를 진단하는 중…",
+  "digestTitle": "이메일 주간 요약",
+  "digestHint": "매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다."
 }

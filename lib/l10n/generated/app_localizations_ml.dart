@@ -1793,4 +1793,11 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get portfolioReviewWorking =>
       'നിങ്ങളുടെ പോർട്ട്ഫോളിയോ അവലോകനം ചെയ്യുന്നു…';
+
+  @override
+  String get digestTitle => 'ഇമെയിൽ വഴി പ്രതിവാര സംഗ്രഹം';
+
+  @override
+  String get digestHint =>
+      'എല്ലാ തിങ്കളാഴ്ചയും: കഴിഞ്ഞ ആഴ്ച നിങ്ങളുടെ പ്രിയപ്പെട്ടവയും പോർട്ട്ഫോളിയോയും എങ്ങനെ നീങ്ങി, അവയുടെ വരാനിരിക്കുന്ന ഫല തീയതികളും.';
 }

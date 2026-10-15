@@ -1787,4 +1787,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Analysoidaan salkkuasi…';
+
+  @override
+  String get digestTitle => 'Viikkokooste sähköpostiin';
+
+  @override
+  String get digestHint =>
+      'Joka maanantai: miten suosikkisi ja salkkusi kehittyivät viime viikolla sekä niiden tulevat tulosjulkistuspäivät.';
 }

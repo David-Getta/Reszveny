@@ -144,14 +144,17 @@ void main() {
       {
         'alerts': [fired],
         'lang': 'en',
+        'weekly_digest': true,
       },
     );
     expect((m['alerts'] as List).single['triggered_at'], '2026-10-15T14:00:00Z');
     expect(m['lang'], 'hu');
     expect(m['email_alerts'], false);
+    expect(m['weekly_digest'], true, reason: 'opting in on another device carries over');
 
     SharedPreferences.setMockInitialValues({});
     final d = _Device(_Server());
     expect(d.sync.snapshot()['email_alerts'], true);
+    expect(d.sync.snapshot()['weekly_digest'], false, reason: 'the weekly e-mail is opt-in');
   });
 }

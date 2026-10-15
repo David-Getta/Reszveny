@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "I-AI ibheka iphothifoliyo yakho yonke: ukugxila kwemali endaweni eyodwa, ukuncika emikhakheni nasemalini yamazwe, izingozi ezabiwe ngamasheya akho, kanye nezabelo zenzuzo. Isebenzisa uhlaziyo olu-1.",
   "portfolioReviewButton": "Hlaziya iphothifoliyo yami",
   "portfolioReviewAgain": "Hlaziya kabusha",
-  "portfolioReviewWorking": "Sihlaziya iphothifoliyo yakho…"
+  "portfolioReviewWorking": "Sihlaziya iphothifoliyo yakho…",
+  "digestTitle": "Isifinyezo samasonto onke nge-imeyili",
+  "digestHint": "Njalo ngoMsombuluko: ukuthi izintandokazi zakho nephothifoliyo yakho kuhambe kanjani ngesonto eledlule, nezinsuku ezizayo zemiphumela yazo."
 }

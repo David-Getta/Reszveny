@@ -95,6 +95,10 @@ class Store {
         data TEXT NOT NULL,
         updated_at TEXT NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS digest_log (
+        user_id TEXT PRIMARY KEY,
+        sent_at TEXT NOT NULL
+      );
       CREATE TABLE IF NOT EXISTS trial_grants (
         ip_hash TEXT NOT NULL,
         created_at TEXT NOT NULL
@@ -272,6 +276,7 @@ class Store {
       _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM user_sync WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
@@ -525,6 +530,18 @@ class Store {
     ))
       (userId: r['user_id'] as String, email: r['email'] as String, data: r['data'] as String),
   ];
+
+  /// Mikor ment ki utoljára heti összefoglaló a fióknak (vagy `null`).
+  DateTime? lastDigest(String userId) {
+    final rows = _db.select('SELECT sent_at FROM digest_log WHERE user_id = ?', [userId]);
+    return rows.isEmpty ? null : DateTime.parse(rows.first['sent_at'] as String);
+  }
+
+  void markDigest(String userId) => _db.execute(
+    'INSERT INTO digest_log (user_id, sent_at) VALUES (?, ?) '
+    'ON CONFLICT(user_id) DO UPDATE SET sent_at = excluded.sent_at',
+    [userId, clock().toUtc().toIso8601String()],
+  );
 
   DateTime saveSyncData(String userId, String data) {
     final now = clock().toUtc();

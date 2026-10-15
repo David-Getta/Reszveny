@@ -1235,5 +1235,10 @@
   "portfolioReviewIntro": "The AI looks at your whole portfolio: concentration, sector and currency exposure, risks your stocks share, and dividends. Uses 1 analysis.",
   "portfolioReviewButton": "Review my portfolio",
   "portfolioReviewAgain": "Review again",
-  "portfolioReviewWorking": "Reviewing your portfolio…"
+  "portfolioReviewWorking": "Reviewing your portfolio…",
+  "digestTitle": "Weekly summary by e-mail",
+  "digestHint": "Every Monday: how your favorites and portfolio moved last week, and their upcoming results dates.",
+  "@digestTitle": {
+    "description": "Settings switch (signed in): a weekly e-mail summary every Monday."
+  }
 }

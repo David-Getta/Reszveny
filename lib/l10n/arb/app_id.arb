@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI meninjau seluruh portofolio Anda: konsentrasi, eksposur sektor dan mata uang, risiko yang sama-sama dimiliki saham Anda, serta dividen. Menggunakan 1 analisis.",
   "portfolioReviewButton": "Tinjau portofolio saya",
   "portfolioReviewAgain": "Tinjau ulang",
-  "portfolioReviewWorking": "Meninjau portofolio Anda…"
+  "portfolioReviewWorking": "Meninjau portofolio Anda…",
+  "digestTitle": "Ringkasan mingguan lewat email",
+  "digestHint": "Setiap Senin: pergerakan favorit dan portofolio Anda minggu lalu, serta jadwal laporan kuartalan mendatang."
 }

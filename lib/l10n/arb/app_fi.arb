@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Tekoäly käy läpi koko salkkusi: keskittymisen, toimiala- ja valuuttariskin, osakkeidesi yhteiset riskit ja osingot. Kuluttaa 1 analyysin.",
   "portfolioReviewButton": "Analysoi salkkuni",
   "portfolioReviewAgain": "Analysoi uudelleen",
-  "portfolioReviewWorking": "Analysoidaan salkkuasi…"
+  "portfolioReviewWorking": "Analysoidaan salkkuasi…",
+  "digestTitle": "Viikkokooste sähköpostiin",
+  "digestHint": "Joka maanantai: miten suosikkisi ja salkkusi kehittyivät viime viikolla sekä niiden tulevat tulosjulkistuspäivät."
 }

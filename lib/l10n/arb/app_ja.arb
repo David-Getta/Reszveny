@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI がポートフォリオ全体をチェックします：集中度、セクター・通貨のエクスポージャー、保有銘柄に共通するリスク、配当。分析を 1 回分使用します。",
   "portfolioReviewButton": "ポートフォリオを診断",
   "portfolioReviewAgain": "再診断",
-  "portfolioReviewWorking": "ポートフォリオを診断中…"
+  "portfolioReviewWorking": "ポートフォリオを診断中…",
+  "digestTitle": "週間サマリーをメールで受け取る",
+  "digestHint": "毎週月曜日：お気に入りとポートフォリオの先週の値動きと、今後の決算発表日をお届けします。"
 }

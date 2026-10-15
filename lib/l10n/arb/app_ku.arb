@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "AI li tevahiya portfolyoya te dinêre: kombûn, girêdana bi sektor û diravan re, xetereyên hevpar ên pişkên te, û parên qezencê. 1 analîz bi kar tîne.",
   "portfolioReviewButton": "Portfolyoya min analîz bike",
   "portfolioReviewAgain": "Ji nû ve analîz bike",
-  "portfolioReviewWorking": "Portfolyoya te tê analîzkirin…"
+  "portfolioReviewWorking": "Portfolyoya te tê analîzkirin…",
+  "digestTitle": "Kurteya heftane bi e-nameyê",
+  "digestHint": "Her duşem: bijareyên te û portfolyoya te hefteya borî çawa tevgeriyan, û dîrokên encamên wan ên pêşerojê."
 }

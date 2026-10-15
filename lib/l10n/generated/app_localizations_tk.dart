@@ -1784,4 +1784,11 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Portfeliňiz seljerilýär…';
+
+  @override
+  String get digestTitle => 'E-poçta arkaly hepdelik jemleme';
+
+  @override
+  String get digestHint =>
+      'Her duşenbe: saýlananlaryňyz we portfeliňiz geçen hepde nähili üýtgedi we olaryň ýakynlaşýan hasabat seneleri.';
 }

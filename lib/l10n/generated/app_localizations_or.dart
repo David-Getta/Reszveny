@@ -1783,4 +1783,11 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ସମୀକ୍ଷା ହେଉଛି…';
+
+  @override
+  String get digestTitle => 'ଇମେଲରେ ସାପ୍ତାହିକ ସାରାଂଶ';
+
+  @override
+  String get digestHint =>
+      'ପ୍ରତି ସୋମବାର: ଗତ ସପ୍ତାହରେ ଆପଣଙ୍କ ପସନ୍ଦ ଓ ପୋର୍ଟଫୋଲିଓ କିପରି ଗତି କଲା, ଏବଂ ସେଗୁଡ଼ିକର ଆଗାମୀ ଫଳାଫଳ ତାରିଖ।';
 }

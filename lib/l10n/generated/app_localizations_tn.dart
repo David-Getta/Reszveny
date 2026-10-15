@@ -1795,4 +1795,11 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Re sekaseka potefolio ya gago…';
+
+  @override
+  String get digestTitle => 'Kakaretso ya beke ka imeile';
+
+  @override
+  String get digestHint =>
+      'Mosupologo mongwe le mongwe: ka fa tse o di ratang le potefolio ya gago di tsamaileng ka teng mo bekeng e e fetileng, le malatsi a a tlang a dipoelo tsa tsone.';
 }

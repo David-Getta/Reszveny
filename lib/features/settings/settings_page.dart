@@ -145,7 +145,7 @@ class SettingsPage extends StatelessWidget {
                         ),
                         if (services.sync case final sync?)
                           ListenableBuilder(
-                            listenable: Listenable.merge([account, sync]),
+                            listenable: Listenable.merge([account, sync, services.preferences]),
                             builder: (context, _) => !account.isSignedIn
                                 ? const SizedBox.shrink()
                                 : Column(
@@ -178,6 +178,14 @@ class SettingsPage extends StatelessWidget {
                                                 onPressed: sync.syncNow,
                                                 child: Text(l10n.syncNow),
                                               ),
+                                      ),
+                                      SwitchListTile(
+                                        key: const ValueKey('weekly-digest'),
+                                        secondary: const Icon(Icons.mark_email_unread_outlined),
+                                        title: Text(l10n.digestTitle),
+                                        subtitle: Text(l10n.digestHint),
+                                        value: services.preferences.weeklyDigest,
+                                        onChanged: services.preferences.setWeeklyDigest,
                                       ),
                                     ],
                                   ),

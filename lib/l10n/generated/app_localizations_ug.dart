@@ -1788,4 +1788,11 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'مەبلەغ بىرىكمىڭىز تەھلىل قىلىنىۋاتىدۇ…';
+
+  @override
+  String get digestTitle => 'ئېلخەت ئارقىلىق ھەپتىلىك خۇلاسە';
+
+  @override
+  String get digestHint =>
+      'ھەر دۈشەنبە: يىغقۇچىڭىز ۋە مەبلەغ بىرىكمىڭىزنىڭ ئۆتكەن ھەپتىدىكى ئۆزگىرىشى ۋە ئۇلارنىڭ يېقىنقى نەتىجە ئېلان قىلىش چېسلالىرى.';
 }

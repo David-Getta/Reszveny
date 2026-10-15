@@ -484,5 +484,7 @@
   "portfolioReviewIntro": "Yapay zekâ tüm portföyünüze bakar: yoğunlaşma, sektör ve döviz riski, hisselerinizin ortak riskleri ve temettüler. 1 analiz kullanır.",
   "portfolioReviewButton": "Portföyümü analiz et",
   "portfolioReviewAgain": "Yeniden analiz et",
-  "portfolioReviewWorking": "Portföyünüz analiz ediliyor…"
+  "portfolioReviewWorking": "Portföyünüz analiz ediliyor…",
+  "digestTitle": "E-postayla haftalık özet",
+  "digestHint": "Her pazartesi: favorilerinizin ve portföyünüzün geçen hafta nasıl hareket ettiği ve yaklaşan bilanço tarihleri."
 }

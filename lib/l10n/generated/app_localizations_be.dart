@@ -1839,4 +1839,11 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Аналізуем ваш партфель…';
+
+  @override
+  String get digestTitle => 'Штотыднёвая зводка па электроннай пошце';
+
+  @override
+  String get digestHint =>
+      'Кожны панядзелак: як змяніліся вашы абраныя і партфель за мінулы тыдзень і бліжэйшыя даты іх справаздач.';
 }

@@ -1732,4 +1732,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => '포트폴리오를 진단하는 중…';
+
+  @override
+  String get digestTitle => '이메일 주간 요약';
+
+  @override
+  String get digestHint =>
+      '매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다.';
 }

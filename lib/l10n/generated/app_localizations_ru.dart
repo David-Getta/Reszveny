@@ -1841,4 +1841,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioReviewWorking => 'Анализируем ваш портфель…';
+
+  @override
+  String get digestTitle => 'Еженедельная сводка по электронной почте';
+
+  @override
+  String get digestHint =>
+      'Каждый понедельник: как за прошлую неделю изменились ваше избранное и портфель, и ближайшие даты их отчётности.';
 }
