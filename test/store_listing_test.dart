@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
-/// A bolti adatlapok (tool/store_listing/<kód>.json) a boltok korlátain belül
+/// A bolti adatlapok (`tool/store_listing/<kód>.json`) a boltok korlátain belül
 /// maradnak, és a fastlane-mappa naprakész (export.py után).
 void main() {
   final sources = Directory('tool/store_listing').listSync().whereType<File>().where((f) => f.path.endsWith('.json'));
