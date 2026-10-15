@@ -21,7 +21,12 @@ import 'quick_panel.dart';
 class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListener {
   DesktopIntegration();
 
-  static bool get isSupported => !kIsWeb && (Platform.isMacOS || Platform.isWindows || Platform.isLinux);
+  static bool get isSupported =>
+      debugSupportedOverride ?? (!kIsWeb && (Platform.isMacOS || Platform.isWindows || Platform.isLinux));
+
+  /// Tesztekhez (pl. a bolti képekhez telefonon és iPaden): felülírja az [isSupported] értékét.
+  @visibleForTesting
+  static bool? debugSupportedOverride;
 
   /// A normál (teljes) ablak mérete, hogy a gyorssávból vissza tudjunk váltani.
   static const Size defaultWindowSize = Size(1100, 760);

@@ -39,6 +39,7 @@ import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 import 'package:reszveny/features/stock_detail/widgets/outlook_view.dart';
+import 'package:reszveny/l10n/generated/app_localizations.dart';
 import 'package:reszveny/theme/app_theme.dart';
 import 'package:reszveny/widgets/collapsible.dart';
 
@@ -112,10 +113,14 @@ AppServices _services({
   bool invite = false,
   String? email,
   AnalysisChat? chat,
+  bool store = false,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
-  final config = backend ? const AppConfig(backendUrl: 'https://api.whatstock.app') : const AppConfig();
+  // A bolti képeken nincs „demó mód” sáv: a piaci adat itt is a minta, csak a jelzés marad el.
+  final config = backend
+      ? const AppConfig(backendUrl: 'https://api.whatstock.app')
+      : (store ? const AppConfig(finnhubApiKey: 'store-shots') : const AppConfig());
   return AppServices(
     portfolio: portfolio,
     alerts: alerts,
@@ -215,6 +220,169 @@ Future<void> _shot(WidgetTester tester, String name) async {
   });
 }
 
+/// A bolti képek nyelvei (`--dart-define=STORE_LANGS=en,hu`); üresen nincs bolti kép.
+final _storeLangs = [
+  for (final l in const String.fromEnvironment('STORE_LANGS').split(','))
+    if (l.trim().isNotEmpty && _outDir.isNotEmpty) l.trim(),
+];
+
+/// Bolti eszközméretek: a kép pixelben, a felület logikai méretben (a pixel / arány).
+typedef _StoreDevice = ({String name, Size pixels, double ratio});
+
+const List<_StoreDevice> _storeDevices = [
+  (name: 'iphone69', pixels: Size(1320, 2868), ratio: 3), // App Store 6,9"
+  (name: 'android', pixels: Size(1080, 2160), ratio: 2.5), // Google Play telefon (2:1)
+  (name: 'ipad13', pixels: Size(2064, 2752), ratio: 2), // App Store 13" iPad
+  (name: 'desktop', pixels: Size(2880, 1800), ratio: 2), // Mac App Store / Microsoft Store
+];
+
+/// A felirat (cím és alcím) a bolti kép tetején; tesztközben cserélhető.
+final _caption = ValueNotifier<(String, String)>(('', ''));
+
+Future<void> _setCaption(WidgetTester tester, String title, String body) async {
+  _caption.value = (title, body);
+  await tester.pump();
+}
+
+/// Az app egy keretben, felette a felirat; a háttér a márka sötét színe.
+Future<void> _pumpStore(WidgetTester tester, AppServices s, _StoreDevice d, String title, String body) async {
+  tester.view.physicalSize = d.pixels;
+  tester.view.devicePixelRatio = d.ratio;
+  addTearDown(tester.view.reset);
+  // Telefonon és iPaden nincs asztali gyorsbillentyű-tipp.
+  DesktopIntegration.debugSupportedOverride = d.name == 'desktop';
+  addTearDown(() => DesktopIntegration.debugSupportedOverride = null);
+  _caption.value = (title, body);
+  final logical = d.pixels / d.ratio;
+  final wide = logical.width > 700;
+  final pad = wide ? 48.0 : 22.0;
+  await tester.pumpWidget(
+    RepaintBoundary(
+      child: Directionality(
+        textDirection: TextDirection.ltr,
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0xFF2B2A28), Color(0xFF191917)],
+            ),
+          ),
+          padding: EdgeInsets.fromLTRB(pad, wide ? 40 : 34, pad, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              ValueListenableBuilder(
+                valueListenable: _caption,
+                builder: (context, c, _) => Column(
+                  children: [
+                    Text(
+                      c.$1,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.bold,
+                        fontSize: wide ? 40 : 30,
+                        height: 1.15,
+                        color: const Color(0xFFF0EEE6),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      c.$2,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: wide ? 20 : 16,
+                        height: 1.35,
+                        color: const Color(0xFFD9D6CE),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: wide ? 32 : 22),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(wide ? 18 : 30)),
+                    border: Border.all(color: const Color(0xFFD97757), width: 1.5),
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  child: LayoutBuilder(
+                    builder: (context, box) => MediaQuery(
+                      data: MediaQueryData(size: box.biggest, devicePixelRatio: d.ratio),
+                      child: WhatStockApp(services: s),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+  await tester.pumpAndSettle();
+  await tester.runAsync(() async {
+    final ctx = tester.element(find.byType(WhatStockApp));
+    for (final a in ['assets/branding/logo_128.png', 'assets/branding/logo_256.png']) {
+      await precacheImage(AssetImage(a), ctx);
+    }
+  });
+  await tester.pumpAndSettle();
+}
+
+Future<void> _storeShot(WidgetTester tester, _StoreDevice d, String name) async {
+  await tester.runAsync(() async {
+    final boundary = tester.firstRenderObject<RenderRepaintBoundary>(find.byType(RepaintBoundary).first);
+    final image = await boundary.toImage(pixelRatio: d.ratio);
+    final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
+    Directory('$_outDir/store').createSync(recursive: true);
+    File('$_outDir/store/$name.png').writeAsBytesSync(bytes!.buffer.asUint8List());
+  });
+}
+
+/// A minta-elemzés magyarul (a bolti képekhez); a többi nyelven angol marad.
+String _t(bool hu, String en) => hu ? (_huReport[en] ?? en) : en;
+
+const _huReport = <String, String>{
+  'Test headline': 'Az AI-gyorsítók piacán erős, de a növekedés lassul',
+  'Summary': 'Összefoglaló',
+  'NVIDIA dominates AI accelerators with ~80% share; growth is slowing from extreme levels.':
+      'Az NVIDIA ~80%-os részesedéssel uralja az AI-gyorsítók piacát; a növekedés a szélsőséges szintről lassul.',
+  'Recent news': 'Friss hírek',
+  'Risks and hidden factors': 'Kockázatok és rejtett tényezők',
+  'Where the price could go': 'Merre mehet az ár',
+  'Psychology: sentiment is euphoric; retail flows and options activity point to crowded positioning, which raises air-pocket risk on any guidance miss.': 'Pszichológia: a hangulat eufórikus; a kisbefektetői pénzek és az opciós aktivitás zsúfolt pozíciókra utalnak, így egy gyengébb előrejelzés hirtelen esést hozhat.',
+  'Sociology: AI adoption is now a mainstream cultural narrative; public-opinion-driven regulation (energy use, export policy) is the main social headwind.': 'Szociológia: az AI mára a fősodor része; a közvélemény nyomására jövő szabályozás (energiafelhasználás, exportpolitika) a fő társadalmi ellenszél.',
+  'Technicals and macro: price sits above the 50- and 200-day averages with support near 170; rate cuts would favour long-duration growth names.': 'Technikai kép és makró: az ár az 50 és 200 napos átlag felett van, támasz 170 körül; a kamatcsökkentés a növekedési részvényeknek kedvez.',
+  'Bull (~30%): guidance beat and China relief: 215–240 within 6–12 months.':
+      'Optimista (~30%): jobb előrejelzés és enyhülés Kínában: 215–240 USD 6–12 hónapon belül.',
+  'Base (~45%): growth normalises, multiple holds: 175–205.':
+      'Alap (~45%): a növekedés normalizálódik, az értékeltség marad: 175–205 USD.',
+  'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.':
+      'Pesszimista (~25%): a nagy felhőszolgáltatók visszafogják a beruházást: 130–160 USD.',
+  'Most likely: Base (~45%), because growth is slowing but upward earnings revisions support the multiple.': 'Legvalószínűbb: alap (~45%), mert a növekedés lassul, de a felfelé módosuló profitvárakozások tartják az értékeltséget.',
+  'What to watch': 'Mire figyelj',
+  'Data-center revenue growth below 20% q/q would weaken the base case.':
+      'Ha az adatközponti bevétel negyedéves növekedése 20% alá esik, az gyengíti az alapforgatókönyvet.',
+  '6–12 months': '6–12 hónap',
+  'Guidance beat and China relief.': 'Jobb előrejelzés és enyhülés Kínában.',
+  'Growth normalises, multiple holds.': 'A növekedés normalizálódik, az értékeltség marad.',
+  'Capex digestion at hyperscalers.': 'A felhőóriások visszafogják a beruházást.',
+  '200-day average': '200 napos átlag',
+  'round number': 'kerek szám',
+  'all-time high': 'történelmi csúcs',
+  'Q3 FY27 earnings': 'Gyorsjelentés (3. negyedév)',
+  'Ex-dividend date': 'Osztalék-fordulónap',
+  'GTC developer conference': 'GTC fejlesztői konferencia',
+  'AI demand narrative is strong, but positioning is crowded.':
+      'Az AI-kereslet története erős, de a pozíciók zsúfoltak.',
+  'Growth is slowing, but upward earnings revisions support the multiple.':
+      'A növekedés lassul, de a felfelé módosuló profitvárakozások tartják az értékeltséget.',
+};
+
 class _FakeAnalyst implements StockAnalyst {
   @override
   String get name => 'test';
@@ -224,137 +392,154 @@ class _FakeAnalyst implements StockAnalyst {
     StockDetails details, {
     String outputLanguage = 'English',
     AnalysisOptions options = const AnalysisOptions(),
-  }) async => StockReport(
-    symbol: details.symbol,
-    headline: 'Test headline',
-    sections: const [
-      ReportSection(
-        kind: ReportSectionKind.summary,
-        title: 'Summary',
-        paragraphs: ['NVIDIA dominates AI accelerators with ~80% share; growth is slowing from extreme levels.'],
-      ),
-      ReportSection(
-        kind: ReportSectionKind.news,
-        title: 'Recent news',
-        bullets: [
-          '2026-10-03: Q3 revenue guidance raised to \$62B.',
-          '2026-09-28: New export rules for China announced.',
-        ],
-      ),
-      ReportSection(
-        kind: ReportSectionKind.risks,
-        title: 'Risks and hidden factors',
-        bullets: ['Customer concentration: top 2 hyperscalers ≈ 40% of revenue.', 'Export controls on China.'],
-      ),
-      ReportSection(
-        kind: ReportSectionKind.outlook,
-        title: 'Where the price could go',
-        paragraphs: [
-          'Psychology: sentiment is euphoric; retail flows and options activity point to crowded positioning, which raises air-pocket risk on any guidance miss.',
-          'Sociology: AI adoption is now a mainstream cultural narrative; public-opinion-driven regulation (energy use, export policy) is the main social headwind.',
-          'Technicals and macro: price sits above the 50- and 200-day averages with support near 170; rate cuts would favour long-duration growth names.',
-        ],
-        bullets: [
-          'Bull (~30%): guidance beat and China relief: 215–240 within 6–12 months.',
-          'Base (~45%): growth normalises, multiple holds: 175–205.',
-          'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.',
-          'Most likely: Base (~45%), because growth is slowing but upward earnings revisions support the multiple.',
-        ],
-      ),
-      ReportSection(
-        kind: ReportSectionKind.longterm,
-        title: 'Long-term view: 3, 5 and 10 years',
-        paragraphs: [
-          'Over a decade the question is how long data-center spending keeps compounding and how much share custom chips '
-              'take. Base path: revenue growth slowing from ~60% to ~10% a year, net margin easing from 55% to 45%, and the '
-              'P/E drifting from 45 toward 20 as growth matures.',
-        ],
-        bullets: [
-          '3 years (2029): 170–300 USD, most likely about 235 USD, −9% to +60%, about −3% to +17% a year.',
-          '5 years (2031): 150–420 USD, most likely about 280 USD, −20% to +124%.',
-          '10 years (2036): 110–700 USD, most likely about 380 USD; the implied ~7% a year is close to the long-run market.',
-          'Main long-term risks: custom silicon at hyperscalers, a capex peak priced as permanent, export controls.',
-        ],
-      ),
-      ReportSection(
-        kind: ReportSectionKind.watch,
-        title: 'What to watch',
-        bullets: ['Data-center revenue growth below 20% q/q would weaken the base case.'],
-      ),
-    ],
-    sources: const [ReportSource(title: 'NVIDIA investor relations', url: 'https://investor.nvidia.com')],
-    generatedAt: DateTime.now(),
-    outlook: const ReportOutlook(
-      currentPrice: 187.6,
-      currency: 'USD',
-      scenarios: [
-        Scenario(
-          kind: ScenarioKind.bull,
-          probability: 30,
-          priceLow: 215,
-          priceHigh: 240,
-          horizon: '6–12 months',
-          summary: 'Guidance beat and China relief.',
+  }) async {
+    final hu = outputLanguage == 'Hungarian';
+    return StockReport(
+      symbol: details.symbol,
+      headline: _t(hu, 'Test headline'),
+      sections: [
+        ReportSection(
+          kind: ReportSectionKind.summary,
+          title: _t(hu, 'Summary'),
+          paragraphs: [
+            _t(hu, 'NVIDIA dominates AI accelerators with ~80% share; growth is slowing from extreme levels.'),
+          ],
         ),
-        Scenario(
-          kind: ScenarioKind.base,
-          probability: 45,
-          priceLow: 175,
-          priceHigh: 205,
-          horizon: '6–12 months',
-          summary: 'Growth normalises, multiple holds.',
+        ReportSection(
+          kind: ReportSectionKind.news,
+          title: _t(hu, 'Recent news'),
+          bullets: [
+            '2026-10-03: Q3 revenue guidance raised to \$62B.',
+            '2026-09-28: New export rules for China announced.',
+          ],
         ),
-        Scenario(
-          kind: ScenarioKind.bear,
-          probability: 25,
-          priceLow: 130,
-          priceHigh: 160,
-          horizon: '6–12 months',
-          summary: 'Capex digestion at hyperscalers.',
+        ReportSection(
+          kind: ReportSectionKind.risks,
+          title: _t(hu, 'Risks and hidden factors'),
+          bullets: ['Customer concentration: top 2 hyperscalers ≈ 40% of revenue.', 'Export controls on China.'],
+        ),
+        ReportSection(
+          kind: ReportSectionKind.outlook,
+          title: _t(hu, 'Where the price could go'),
+          paragraphs: [
+            _t(
+              hu,
+              'Psychology: sentiment is euphoric; retail flows and options activity point to crowded positioning, which raises air-pocket risk on any guidance miss.',
+            ),
+            _t(
+              hu,
+              'Sociology: AI adoption is now a mainstream cultural narrative; public-opinion-driven regulation (energy use, export policy) is the main social headwind.',
+            ),
+            _t(
+              hu,
+              'Technicals and macro: price sits above the 50- and 200-day averages with support near 170; rate cuts would favour long-duration growth names.',
+            ),
+          ],
+          bullets: [
+            _t(hu, 'Bull (~30%): guidance beat and China relief: 215–240 within 6–12 months.'),
+            _t(hu, 'Base (~45%): growth normalises, multiple holds: 175–205.'),
+            _t(hu, 'Bear (~25%): capex digestion at hyperscalers: 130–160; invalidates the bull case.'),
+            _t(
+              hu,
+              'Most likely: Base (~45%), because growth is slowing but upward earnings revisions support the multiple.',
+            ),
+          ],
+        ),
+        ReportSection(
+          kind: ReportSectionKind.longterm,
+          title: 'Long-term view: 3, 5 and 10 years',
+          paragraphs: [
+            'Over a decade the question is how long data-center spending keeps compounding and how much share custom chips '
+                'take. Base path: revenue growth slowing from ~60% to ~10% a year, net margin easing from 55% to 45%, and the '
+                'P/E drifting from 45 toward 20 as growth matures.',
+          ],
+          bullets: [
+            '3 years (2029): 170–300 USD, most likely about 235 USD, −9% to +60%, about −3% to +17% a year.',
+            '5 years (2031): 150–420 USD, most likely about 280 USD, −20% to +124%.',
+            '10 years (2036): 110–700 USD, most likely about 380 USD; the implied ~7% a year is close to the long-run market.',
+            'Main long-term risks: custom silicon at hyperscalers, a capex peak priced as permanent, export controls.',
+          ],
+        ),
+        ReportSection(
+          kind: ReportSectionKind.watch,
+          title: _t(hu, 'What to watch'),
+          bullets: [_t(hu, 'Data-center revenue growth below 20% q/q would weaken the base case.')],
         ),
       ],
-      keyLevels: [
-        KeyLevel(price: 170, kind: KeyLevelKind.support, label: '200-day average'),
-        KeyLevel(price: 200, kind: KeyLevelKind.anchor, label: 'round number'),
-        KeyLevel(price: 212, kind: KeyLevelKind.resistance, label: 'all-time high'),
-      ],
-      catalysts: [
-        Catalyst(date: '2026-11-19', event: 'Q3 FY27 earnings'),
-        Catalyst(date: '2026-12-05', event: 'Ex-dividend date'),
-        Catalyst(date: '2027-03', event: 'GTC developer conference'),
-      ],
-      marketMood: 1,
-      marketMoodReason: 'AI demand narrative is strong, but positioning is crowded.',
-      mostLikelyReason: 'Growth is slowing, but upward earnings revisions support the multiple.',
-      longTerm: LongTermOutlook(
-        summary: 'Long-run value depends on how long AI data-center spending compounds and how much share custom chips take.',
-        horizons: [
-          LongTermHorizon(
-            years: 3,
-            priceLow: 170,
-            priceHigh: 300,
-            priceLikely: 235,
-            basis: 'EPS 8.5–10.5 USD in 2029 × 22–28.',
-            confidence: Confidence.medium,
+      sources: [ReportSource(title: 'NVIDIA investor relations', url: 'https://investor.nvidia.com')],
+      generatedAt: DateTime.now(),
+      outlook: ReportOutlook(
+        currentPrice: 187.6,
+        currency: 'USD',
+        scenarios: [
+          Scenario(
+            kind: ScenarioKind.bull,
+            probability: 30,
+            priceLow: 215,
+            priceHigh: 240,
+            horizon: _t(hu, '6–12 months'),
+            summary: _t(hu, 'Guidance beat and China relief.'),
           ),
-          LongTermHorizon(
-            years: 5,
-            priceLow: 150,
-            priceHigh: 420,
-            priceLikely: 280,
-            basis: 'EPS 11–14 USD in 2031 × 15–30.',
+          Scenario(
+            kind: ScenarioKind.base,
+            probability: 45,
+            priceLow: 175,
+            priceHigh: 205,
+            horizon: _t(hu, '6–12 months'),
+            summary: _t(hu, 'Growth normalises, multiple holds.'),
           ),
-          LongTermHorizon(
-            years: 10,
-            priceLow: 110,
-            priceHigh: 700,
-            priceLikely: 380,
-            basis: 'EPS 18–26 USD in 2036 × 12–28; share lost to custom chips is the swing factor.',
+          Scenario(
+            kind: ScenarioKind.bear,
+            probability: 25,
+            priceLow: 130,
+            priceHigh: 160,
+            horizon: _t(hu, '6–12 months'),
+            summary: _t(hu, 'Capex digestion at hyperscalers.'),
           ),
         ],
+        keyLevels: [
+          KeyLevel(price: 170, kind: KeyLevelKind.support, label: _t(hu, '200-day average')),
+          KeyLevel(price: 200, kind: KeyLevelKind.anchor, label: _t(hu, 'round number')),
+          KeyLevel(price: 212, kind: KeyLevelKind.resistance, label: _t(hu, 'all-time high')),
+        ],
+        catalysts: [
+          Catalyst(date: '2026-11-19', event: _t(hu, 'Q3 FY27 earnings')),
+          Catalyst(date: '2026-12-05', event: _t(hu, 'Ex-dividend date')),
+          Catalyst(date: '2027-03', event: _t(hu, 'GTC developer conference')),
+        ],
+        marketMood: 1,
+        marketMoodReason: _t(hu, 'AI demand narrative is strong, but positioning is crowded.'),
+        mostLikelyReason: _t(hu, 'Growth is slowing, but upward earnings revisions support the multiple.'),
+        longTerm: LongTermOutlook(
+          summary: 'Long-run value depends on how long AI data-center spending compounds and how much share custom chips take.',
+          horizons: [
+            LongTermHorizon(
+              years: 3,
+              priceLow: 170,
+              priceHigh: 300,
+              priceLikely: 235,
+              basis: 'EPS 8.5–10.5 USD in 2029 × 22–28.',
+              confidence: Confidence.medium,
+            ),
+            LongTermHorizon(
+              years: 5,
+              priceLow: 150,
+              priceHigh: 420,
+              priceLikely: 280,
+              basis: 'EPS 11–14 USD in 2031 × 15–30.',
+            ),
+            LongTermHorizon(
+              years: 10,
+              priceLow: 110,
+              priceHigh: 700,
+              priceLikely: 380,
+              basis: 'EPS 18–26 USD in 2036 × 12–28; share lost to custom chips is the swing factor.',
+            ),
+          ],
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 void main() {
@@ -864,4 +1049,51 @@ void main() {
     await tester.pumpAndSettle();
     await _shot(tester, 'quick_bar');
   });
+
+  // ---- Bolti képernyőképek (5k) ----
+  // `flutter test --tags screenshot --dart-define=SHOTS=<mappa> --dart-define=STORE_LANGS=en,hu
+  //  test/screenshots` – nyelvenként és eszközönként három feliratos kép a boltok méreteiben.
+  for (final lang in _storeLangs) {
+    for (final device in _storeDevices) {
+      testWidgets('store ${device.name} $lang', (tester) async {
+        final l10n = lookupAppLocalizations(Locale(lang));
+        final s = _services(locale: Locale(lang), portfolio: _samplePortfolio(), alerts: _sampleAlerts(), store: true);
+        await _pumpStore(tester, s, device, l10n.onboardTitle1, l10n.onboardBody1);
+        await _storeShot(tester, device, '${lang}_${device.name}_1');
+
+        await _setCaption(tester, l10n.onboardTitle2, l10n.onboardBody2);
+        await tester.enterText(find.byType(TextField).first, 'NVDA');
+        await tester.testTextInput.receiveAction(TextInputAction.search);
+        await tester.pumpAndSettle();
+        // A lista lusta: lefelé görgetünk, amíg a gomb megjelenik.
+        final generate = find.text(l10n.aiGenerate);
+        for (var i = 0; i < 20 && generate.evaluate().isEmpty; i++) {
+          await tester.drag(find.byType(Scrollable).first, const Offset(0, -250));
+          await tester.pumpAndSettle();
+        }
+        await tester.ensureVisible(generate.first);
+        await tester.pumpAndSettle();
+        await tester.tap(generate.first);
+        await tester.pumpAndSettle();
+        final chart = find.byType(ScenarioChart);
+        for (var i = 0; i < 20 && chart.evaluate().isEmpty; i++) {
+          await tester.drag(find.byType(Scrollable).first, const Offset(0, -250));
+          await tester.pumpAndSettle();
+        }
+        Scrollable.ensureVisible(tester.element(chart), alignment: 0.05);
+        await tester.pumpAndSettle();
+        await _storeShot(tester, device, '${lang}_${device.name}_2');
+
+        await tester.tap(find.byType(BackButton).first);
+        await tester.pumpAndSettle();
+        await _setCaption(tester, l10n.onboardTitle3, l10n.onboardBody3);
+        // Széles elrendezésben az oldalsáv, telefonon az alsó sáv gombja.
+        final tab = find.text(l10n.portfolio);
+        await tester.tap(device.name == 'desktop' || device.name == 'ipad13' ? tab.first : tab.last);
+        await tester.pumpAndSettle();
+        await _storeShot(tester, device, '${lang}_${device.name}_3');
+        CollapseStore.instance.reset();
+      });
+    }
+  }
 }
