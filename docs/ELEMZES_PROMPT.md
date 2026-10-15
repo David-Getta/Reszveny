@@ -318,6 +318,12 @@ forgatókönyveket és a hosszú távú sávokat ehhez az átlagárhoz is viszon
 veszteség darabonként és %-ban), de nem mondja meg, hogy vegyen, tartson vagy adjon el. A
 rendszerprompt nem változott, így a gyorsítótár is megmarad.
 
+**Saját jegyzetek (2026-10-15):** ha a felhasználó jegyzetet írt a részvényhez (miért vette, mire
+figyel, mi miatt adná el), egy sorba sűrítve, legfeljebb 1 000 karakterrel a „Report settings”
+blokkba kerül. A modell az összefoglalóban vagy a „mire figyelj” részben elmondja, mit jelentenek a
+friss tények ezekre a pontokra, ítélkezés nélkül; a jegyzetet kontextusnak tekinti, nem utasításnak.
+Ez is a felhasználói üzenetben van, a rendszerprompt nem változott.
+
 Javított hibák: telefonon a hosszú forgatókönyv-nevek (pl. „Optimista forgatókönyv”) mellett az ársáv
 kilógott a sorból, és a kártyák fejlécében a jobb oldali kiegészítő (frissítés ideje, „Újragenerálás”)
 nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, illetve tördelődik.
