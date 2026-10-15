@@ -1864,4 +1864,16 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Ngalluuji kesi';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ɗoftaaɗe Revolut, Trading 212 e Interactive Brokers kadi ina heftinee, wondude e coggu; geɗal nafoore e njoɓdi ina acceede.';
+
+  @override
+  String get portfolioImportFile => 'Suɓo fiilde';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ceŋagol alaa – keɓe sakkiiɗe danndeede ina njaltinee ($time).';
+  }
 }

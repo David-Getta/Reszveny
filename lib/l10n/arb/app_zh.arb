@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "按年度已实现收益",
   "portfolioRealizedHint": "卖出优先与最早的买入匹配（FIFO），按今日汇率换算。报税时请以券商的结单为准。",
   "staleNewResults": "此分析之后已发布新的季度财报（{symbol}，{date}）。",
-  "newResultsBadge": "新财报"
+  "newResultsBadge": "新财报",
+  "portfolioImportBrokers": "也能识别 Revolut、Trading 212 和 Interactive Brokers 的导出文件，包括卖出记录；股息和入金会被跳过。",
+  "portfolioImportFile": "选择文件",
+  "offlineBanner": "无网络连接 – 正在显示上次保存的数据（{time}）。"
 }

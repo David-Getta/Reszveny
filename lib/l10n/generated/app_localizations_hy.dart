@@ -1877,4 +1877,16 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Նոր արդյունքներ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ճանաչվում են նաև Revolut-ի, Trading 212-ի և Interactive Brokers-ի արտահանումները՝ վաճառքների հետ միասին. շահաբաժիններն ու մուտքերը բաց են թողնվում։';
+
+  @override
+  String get portfolioImportFile => 'Ընտրել ֆայլ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Կապ չկա – ցուցադրվում են վերջին պահված տվյալները ($time)։';
+  }
 }

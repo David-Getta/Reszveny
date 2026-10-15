@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "רווח ממומש לפי שנה",
   "portfolioRealizedHint": "המכירות מותאמות תחילה לרכישות הוותיקות ביותר שלך (FIFO) ומומרות לפי שער החליפין של היום. לדוח המס יש להשתמש בדוח של הברוקר.",
   "staleNewResults": "מאז הניתוח הזה פורסם דוח רבעוני חדש ({symbol}, {date}).",
-  "newResultsBadge": "דוח חדש"
+  "newResultsBadge": "דוח חדש",
+  "portfolioImportBrokers": "גם קובצי ייצוא מ-Revolut, Trading 212 ו-Interactive Brokers מזוהים, כולל מכירות; דיבידנדים והפקדות מדולגים.",
+  "portfolioImportFile": "בחירת קובץ",
+  "offlineBanner": "אין חיבור – מוצגים הנתונים האחרונים שנשמרו ({time})."
 }

@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Realisert gevinst per år",
   "portfolioRealizedHint": "Salg avregnes først mot dine eldste kjøp (FIFO) og omregnes til dagens valutakurs. Bruk meglerens oppgave til skattemeldingen.",
   "staleNewResults": "Siden denne analysen er det publisert nye kvartalsresultater ({symbol}, {date}).",
-  "newResultsBadge": "Nye resultater"
+  "newResultsBadge": "Nye resultater",
+  "portfolioImportBrokers": "Eksporter fra Revolut, Trading 212 og Interactive Brokers gjenkjennes også, med salg; utbytte og innskudd hoppes over.",
+  "portfolioImportFile": "Velg en fil",
+  "offlineBanner": "Ingen tilkobling – viser sist lagrede data ({time})."
 }

@@ -1875,4 +1875,16 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Zotsatira zatsopano';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Zotumiza kunja zochokera ku Revolut, Trading 212 ndi Interactive Brokers zimadziwikanso, pamodzi ndi zogulitsa; gawo la phindu ndi ndalama zosungitsa zimadumphidwa.';
+
+  @override
+  String get portfolioImportFile => 'Sankhani fayilo';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Palibe intaneti – tikuwonetsa deta yomaliza yosungidwa ($time).';
+  }
 }

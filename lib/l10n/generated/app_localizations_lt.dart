@@ -1925,4 +1925,16 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nauji rezultatai';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Taip pat atpažįstami Revolut, Trading 212 ir Interactive Brokers eksportai, įskaitant pardavimus; dividendai ir įnašai praleidžiami.';
+
+  @override
+  String get portfolioImportFile => 'Pasirinkti failą';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Nėra ryšio – rodomi paskutiniai išsaugoti duomenys ($time).';
+  }
 }

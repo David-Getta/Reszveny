@@ -1870,4 +1870,16 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ئەنجامی نوێ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'هەناردەکانی Revolut، Trading 212 و Interactive Brokers یش لەگەڵ فرۆشتنەکان دەناسرێنەوە؛ قازانجی پشک و پارە دانان پشتگوێ دەخرێن.';
+
+  @override
+  String get portfolioImportFile => 'فایلێک هەڵبژێرە';
+
+  @override
+  String offlineBanner(String time) {
+    return 'پەیوەندی نییە – دوایین داتای پاشەکەوتکراو پیشان دەدرێت ($time).';
+  }
 }

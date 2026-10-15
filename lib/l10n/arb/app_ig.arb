@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Uru enwetara kwa afọ",
   "portfolioRealizedHint": "A na-ebu ụzọ jikọta ire na ihe ndị ochie ị zụrụ (FIFO), gbanwee ya n'ọnụego mgbanwe nke taa. Maka akụkọ ụtụ isi gị, jiri nkọwa ego onye ọrụ ahịa gị (broker).",
   "staleNewResults": "Nsonaazụ ọhụrụ nke nkeji ọnwa atọ apụtala kemgbe e mere nyocha a ({symbol}, {date}).",
-  "newResultsBadge": "Nsonaazụ ọhụrụ"
+  "newResultsBadge": "Nsonaazụ ọhụrụ",
+  "portfolioImportBrokers": "A na-amatakwa mbupụ sitere na Revolut, Trading 212 na Interactive Brokers, ya na ihe e rere; a na-awụfe dividend na ego e tinyere.",
+  "portfolioImportFile": "Họrọ faịlụ",
+  "offlineBanner": "Enweghị njikọ – a na-egosi data ikpeazụ echekwara ({time})."
 }

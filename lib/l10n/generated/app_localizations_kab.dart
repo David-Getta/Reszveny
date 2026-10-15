@@ -1868,4 +1868,16 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Igmaḍ imaynuten';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ttwassnen daɣen yisifeḍ n Revolut, Trading 212 d Interactive Brokers, s yizenzen; dividand d yidrimen yettwaserrsen ttwazeglen.';
+
+  @override
+  String get portfolioImportFile => 'Fren afaylu';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ulac tuqqna – sskanayen-d yisefka ineggura i yettwaskelsen ($time).';
+  }
 }

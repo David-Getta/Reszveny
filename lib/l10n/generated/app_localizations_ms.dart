@@ -1873,4 +1873,16 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Keputusan baharu';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Eksport daripada Revolut, Trading 212 dan Interactive Brokers juga dikenali, termasuk jualan; dividen dan deposit dilangkau.';
+
+  @override
+  String get portfolioImportFile => 'Pilih fail';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Tiada sambungan – memaparkan data yang terakhir disimpan ($time).';
+  }
 }

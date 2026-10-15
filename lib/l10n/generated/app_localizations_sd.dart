@@ -1864,4 +1864,16 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'نوان نتيجا';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut، Trading 212 ۽ Interactive Brokers جا ايڪسپورٽ به وڪري سميت سڃاتا وڃن ٿا؛ ڊيويڊنڊ ۽ جمع ٿيل رقم ڇڏي ڏني وڃي ٿي.';
+
+  @override
+  String get portfolioImportFile => 'فائل چونڊيو';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ڪنيڪشن ناهي – آخري محفوظ ڪيل ڊيٽا ڏيکاري پئي وڃي ($time).';
+  }
 }

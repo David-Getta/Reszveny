@@ -1864,4 +1864,16 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Njureef yu bees';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Dañu xam itam export yu Revolut, Trading 212 ak Interactive Brokers, ak njaay yi; dividand yi ak xaalis bi ñu dugal, dañu leen di bàyyi.';
+
+  @override
+  String get portfolioImportFile => 'Tànnal ab fichier';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Amul internet – ñu ngi wone xibaar yi ñu denc mujj ($time).';
+  }
 }

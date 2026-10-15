@@ -207,6 +207,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5aa | Portfólió összevetése az S&P 500-zal: mintha minden vétel összegét aznap indexalapba tetted volna (eladáskor ugyanannyit kivéve) | ✅ kész |
 | 5ab | Eladások rögzítése: FIFO bekerülési érték, realizált nyereség (évenként is, az adóbevalláshoz), lezárt pozíciók; a grafikon, a CSV, a szinkron és a heti e-mail is kezeli | ✅ kész |
 | 5ac | „Új gyorsjelentés” jelzés: ha egy mentett elemzés óta a cég gyorsjelentést tett közzé, a listában jelvény, megnyitáskor a frissítés-kérdés megemlíti | ✅ kész |
+| 5ad | Bróker-exportok importja (Revolut, Trading 212, Interactive Brokers) fájlból is, eladásokkal; osztalék- és befizetéssorok kihagyva, ismételt import nem duplikál | ✅ kész |
+| 5ae | Offline gyorsítótár: hálózat nélkül az utolsó ismert ár, profil, mutatók és grafikon látszik (legfeljebb 60 részvény), a részvény oldalán jelzéssel | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

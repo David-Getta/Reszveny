@@ -1879,4 +1879,16 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Résultats ya sika';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ba-export ya Revolut, Trading 212 mpe Interactive Brokers mpe eyebanaka, elongo na biteki; dividende mpe mbongo oyo etiamaki ezali kolekisama.';
+
+  @override
+  String get portfolioImportFile => 'Pona fisyé moko';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Connexion ezali te – tozali kolakisa ba-donnée ya nsuka oyo ebombamaki ($time).';
+  }
 }

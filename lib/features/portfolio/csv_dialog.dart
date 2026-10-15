@@ -1,3 +1,6 @@
+import 'dart:convert';
+
+import 'package:file_selector/file_selector.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -41,14 +44,22 @@ class PortfolioCsvMenu extends StatelessWidget {
   }
 }
 
-/// Importálás: a beillesztett sorok vételként kerülnek a portfólióba.
+/// Importálás: a beillesztett vagy fájlból beolvasott sorok vételként vagy
+/// eladásként kerülnek a portfólióba. A már meglévő, azonos tranzakciót (ugyanaz
+/// a ticker, darab, ár, dátum és irány) nem veszi fel újra, így ugyanaz a
+/// bróker-export kétszer is importálható.
 Future<void> showPortfolioImport(BuildContext context) async {
   final l10n = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
   final services = AppServices.of(context);
   final result = await showDialog<CsvImport>(context: context, builder: (_) => const _ImportDialog());
   if (result == null) return;
+  String key(String symbol, double q, double p, DateTime? d, bool sell) =>
+      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell';
+  final existing = {for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell)};
+  var added = 0;
   for (final l in result.lots) {
+    if (!existing.add(key(l.symbol, l.quantity, l.price, l.date, l.sell))) continue;
     await services.portfolio.add(
       symbol: l.symbol,
       quantity: l.quantity,
@@ -57,12 +68,13 @@ Future<void> showPortfolioImport(BuildContext context) async {
       date: l.date,
       sell: l.sell,
     );
+    added++;
   }
   messenger.showSnackBar(
     SnackBar(
       content: Text(
         [
-          l10n.portfolioImported(result.lots.length),
+          l10n.portfolioImported(added),
           if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
         ].join(' · '),
       ),
@@ -79,6 +91,29 @@ class _ImportDialog extends StatefulWidget {
 
 class _ImportDialogState extends State<_ImportDialog> {
   final _text = TextEditingController();
+
+  /// Egy bróker-export vagy saját CSV beolvasása fájlból a szövegmezőbe.
+  Future<void> _chooseFile() async {
+    try {
+      final file = await openFile(
+        acceptedTypeGroups: const [
+          XTypeGroup(
+            label: 'CSV',
+            extensions: ['csv', 'txt', 'tsv'],
+            uniformTypeIdentifiers: ['public.comma-separated-values-text', 'public.plain-text'],
+          ),
+        ],
+      );
+      if (file == null) return;
+      final bytes = await file.readAsBytes();
+      // UTF-8 (BOM nélkül), különben Latin-1 (régebbi Excel-exportok).
+      var text = utf8.decode(bytes, allowMalformed: true);
+      if (text.contains('\uFFFD')) text = latin1.decode(bytes);
+      _text.text = text.replaceFirst('\uFEFF', '');
+    } catch (_) {
+      // A fájlválasztó hibája (pl. nem támogatott platform): marad a beillesztés.
+    }
+  }
 
   @override
   void dispose() {
@@ -100,6 +135,15 @@ class _ImportDialogState extends State<_ImportDialog> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(l10n.portfolioImportHint, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
+              const SizedBox(height: 6),
+              Text(l10n.portfolioImportBrokers, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
+              const SizedBox(height: 8),
+              OutlinedButton.icon(
+                key: const ValueKey('portfolio-import-file'),
+                onPressed: _chooseFile,
+                icon: const Icon(Icons.upload_file_rounded, size: 18),
+                label: Text(l10n.portfolioImportFile),
+              ),
               const SizedBox(height: 10),
               TextField(
                 key: const ValueKey('portfolio-import-text'),

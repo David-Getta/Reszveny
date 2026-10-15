@@ -1874,4 +1874,16 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Új gyorsjelentés';
+
+  @override
+  String get portfolioImportBrokers =>
+      'A Revolut, a Trading 212 és az Interactive Brokers exportját is felismeri, az eladásokkal együtt; az osztalékot és a befizetést kihagyja.';
+
+  @override
+  String get portfolioImportFile => 'Fájl kiválasztása';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Nincs kapcsolat – a legutóbb mentett adatok látszanak ($time).';
+  }
 }

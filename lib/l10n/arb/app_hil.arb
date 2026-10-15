@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Narealisar nga ganansya kada tuig",
   "portfolioRealizedHint": "Ang mga pagbaligya ginapares anay sa imo pinakadaan nga mga ginbakal (FIFO), gin-convert sa palitan subong. Para sa imo tax return, gamita ang statement sang imo broker.",
   "staleNewResults": "Halin sining analisis, may bag-o nga quarterly nga resulta nga ginbantala ({symbol}, {date}).",
-  "newResultsBadge": "Bag-o nga resulta"
+  "newResultsBadge": "Bag-o nga resulta",
+  "portfolioImportBrokers": "Makilala man ang mga export halin sa Revolut, Trading 212 kag Interactive Brokers, upod ang mga ginbaligya; ginalaktawan ang mga dibidendo kag deposito.",
+  "portfolioImportFile": "Magpili sang file",
+  "offlineBanner": "Wala sing koneksyon – ginapakita ang katapusan nga na-save nga datos ({time})."
 }

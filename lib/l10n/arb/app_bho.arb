@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "साल के हिसाब से प्राप्त मुनाफ़ा",
   "portfolioRealizedHint": "बिक्री के पहिले रउआ सबसे पुरान खरीदारी से मिलावल जाला (FIFO), आज के विनिमय दर पर बदल के। टैक्स रिटर्न खातिर अपना ब्रोकर के स्टेटमेंट इस्तेमाल करीं।",
   "staleNewResults": "ई विश्लेषण के बाद नया तिमाही नतीजा आ गइल बा ({symbol}, {date})।",
-  "newResultsBadge": "नया नतीजा"
+  "newResultsBadge": "नया नतीजा",
+  "portfolioImportBrokers": "Revolut, Trading 212 आ Interactive Brokers के एक्सपोर्ट भी बिक्री समेत पहचानल जाला; लाभांश आ जमा छोड़ दिहल जाला।",
+  "portfolioImportFile": "फाइल चुनीं",
+  "offlineBanner": "कनेक्शन नइखे – पिछला बेर सहेजल डेटा देखावल जा रहल बा ({time})।"
 }

@@ -1871,4 +1871,16 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'নতুন ফলাফল';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 আৰু Interactive Brokers ৰ এক্সপৰ্টো বিক্ৰীসহ চিনাক্ত কৰা হয়; লভ্যাংশ আৰু জমা এৰি দিয়া হয়।';
+
+  @override
+  String get portfolioImportFile => 'এটা ফাইল বাছক';
+
+  @override
+  String offlineBanner(String time) {
+    return 'সংযোগ নাই – শেষবাৰ ছেভ কৰা ডেটা দেখুওৱা হৈছে ($time)।';
+  }
 }

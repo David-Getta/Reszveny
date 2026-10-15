@@ -1874,4 +1874,16 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Mhedzisiro itsva';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Zvinobviswa kubva kuRevolut, Trading 212 neInteractive Brokers zvinozivikanwawo, pamwe chete nezvatengeswa; dhividhendi nemari yakaiswa zvinosvetuka.';
+
+  @override
+  String get portfolioImportFile => 'Sarudza faira';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Hapana kubatana – kuri kuratidzwa data yekupedzisira yakachengetwa ($time).';
+  }
 }

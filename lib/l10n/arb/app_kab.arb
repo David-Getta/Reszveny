@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Rrbeḥ yettwaxedmen s useggas",
   "portfolioRealizedHint": "Aznuzu yettwaqqen qbel s tiɣin-ik tiqburin akk (FIFO), yettwabeddel s wazal n usnemlil n wass-a. I usmekti n tbaḍt, seqdec akaram n broker-ik.",
   "staleNewResults": "Seg tasleḍt-a, ffɣen-d yigmaḍ imaynuten n kraḍ wayyuren ({symbol}, {date}).",
-  "newResultsBadge": "Igmaḍ imaynuten"
+  "newResultsBadge": "Igmaḍ imaynuten",
+  "portfolioImportBrokers": "Ttwassnen daɣen yisifeḍ n Revolut, Trading 212 d Interactive Brokers, s yizenzen; dividand d yidrimen yettwaserrsen ttwazeglen.",
+  "portfolioImportFile": "Fren afaylu",
+  "offlineBanner": "Ulac tuqqna – sskanayen-d yisefka ineggura i yettwaskelsen ({time})."
 }

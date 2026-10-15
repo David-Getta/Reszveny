@@ -1870,4 +1870,16 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Жаңа есеп';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 және Interactive Brokers экспорттары да сатулармен бірге танылады; дивидендтер мен салымдар өткізіліп жіберіледі.';
+
+  @override
+  String get portfolioImportFile => 'Файл таңдау';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Байланыс жоқ – соңғы сақталған деректер көрсетілуде ($time).';
+  }
 }

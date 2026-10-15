@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "الأرباح المحققة حسب السنة",
   "portfolioRealizedHint": "تُطابَق المبيعات مع أقدم مشترياتك أولًا (FIFO)، وتُحوَّل بسعر الصرف الحالي. لإقرارك الضريبي، استخدم كشف حساب الوسيط.",
   "staleNewResults": "صدرت نتائج ربع سنوية جديدة منذ هذا التحليل ({symbol}، {date}).",
-  "newResultsBadge": "نتائج جديدة"
+  "newResultsBadge": "نتائج جديدة",
+  "portfolioImportBrokers": "يتم التعرف أيضًا على ملفات التصدير من Revolut وTrading 212 وInteractive Brokers، مع عمليات البيع؛ ويتم تخطي التوزيعات والإيداعات.",
+  "portfolioImportFile": "اختر ملفًا",
+  "offlineBanner": "لا يوجد اتصال – يتم عرض آخر بيانات محفوظة ({time})."
 }

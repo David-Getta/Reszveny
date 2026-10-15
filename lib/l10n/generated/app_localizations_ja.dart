@@ -1813,4 +1813,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get newResultsBadge => '新しい決算';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut、Trading 212、Interactive Brokers のエクスポートも売却を含めて認識されます。配当と入金はスキップされます。';
+
+  @override
+  String get portfolioImportFile => 'ファイルを選択';
+
+  @override
+  String offlineBanner(String time) {
+    return 'オフライン – 最後に保存したデータを表示しています（$time）。';
+  }
 }

@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Plus-values réalisées par année",
   "portfolioRealizedHint": "Les ventes sont imputées d’abord sur vos achats les plus anciens (FIFO) et converties au taux de change du jour. Pour votre déclaration d’impôts, utilisez le relevé de votre courtier.",
   "staleNewResults": "De nouveaux résultats trimestriels ont été publiés depuis cette analyse ({symbol}, {date}).",
-  "newResultsBadge": "Nouveaux résultats"
+  "newResultsBadge": "Nouveaux résultats",
+  "portfolioImportBrokers": "Les exports de Revolut, Trading 212 et Interactive Brokers sont aussi reconnus, ventes comprises ; les dividendes et les dépôts sont ignorés.",
+  "portfolioImportFile": "Choisir un fichier",
+  "offlineBanner": "Pas de connexion – affichage des dernières données enregistrées ({time})."
 }

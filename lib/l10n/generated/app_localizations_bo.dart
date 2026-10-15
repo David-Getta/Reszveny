@@ -1860,4 +1860,16 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'གྲུབ་འབྲས་གསར་པ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut དང་ Trading 212 དང་ Interactive Brokers ནས་ཕྱིར་འདྲེན་བྱས་པའི་ཡིག་ཆ་ཡང་བཙོང་བ་དང་བཅས་ངོས་འཛིན་བྱེད། ཁེ་བགོ་དང་དངུལ་འཇོག་ནི་བཞག་ནས་འགྲོ།';
+
+  @override
+  String get portfolioImportFile => 'ཡིག་ཆ་ཞིག་འདེམས།';
+
+  @override
+  String offlineBanner(String time) {
+    return 'འབྲེལ་མཐུད་མེད། – མཐའ་མར་ཉར་ཚགས་བྱས་པའི་གཞི་གྲངས་སྟོན་བཞིན་པ། ($time)';
+  }
 }

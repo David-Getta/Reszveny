@@ -1881,4 +1881,16 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Dipoelo tše mpsha';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Diromelwantle go tšwa go Revolut, Trading 212 le Interactive Brokers le tšona di a lemogwa, gotee le dithekišo; dividende le dipeeletšo di a tlogelwa.';
+
+  @override
+  String get portfolioImportFile => 'Kgetha faele';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ga go na kgokagano – go bontšhwa data ya mafelelo yeo e bolokilwego ($time).';
+  }
 }

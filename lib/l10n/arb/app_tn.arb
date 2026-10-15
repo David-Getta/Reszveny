@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Poelo e e bonweng ka ngwaga",
   "portfolioRealizedHint": "Dithekiso di simolola go tsamaisiwa le ditheko tsa gago tsa bogologolo (FIFO), di fetolwa ka tlhwatlhwa ya phetolo ya gompieno. Go tlhagisa lekgetho la gago, dirisa setatemente sa broker ya gago.",
   "staleNewResults": "Go tloga ka tshekatsheko eno, go phasaladitswe dipoelo tse dintšhwa tsa kotara ({symbol}, {date}).",
-  "newResultsBadge": "Dipoelo tse dintšhwa"
+  "newResultsBadge": "Dipoelo tse dintšhwa",
+  "portfolioImportBrokers": "Diromelwakuntle go tswa mo Revolut, Trading 212 le Interactive Brokers le tsone di a lemogwa, mmogo le dithekiso; dividende le dipolokelo di a tlolwa.",
+  "portfolioImportFile": "Tlhopha faele",
+  "offlineBanner": "Ga go na kgolagano – go bontshiwa data ya bofelo e e bolokilweng ({time})."
 }

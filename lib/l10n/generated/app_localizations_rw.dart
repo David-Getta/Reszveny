@@ -1876,4 +1876,16 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Ibyavuyemo bishya';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ibyoherejwe bivuye muri Revolut, Trading 212 na Interactive Brokers na byo biramenyekana, hamwe n\'ibyagurishijwe; inyungu ku migabane n\'amafaranga yashyizwemo birasimbukwa.';
+
+  @override
+  String get portfolioImportFile => 'Hitamo dosiye';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Nta murandasi – herekanwa amakuru aheruka kubikwa ($time).';
+  }
 }

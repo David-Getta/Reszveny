@@ -1864,4 +1864,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Kết quả mới';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Tệp xuất từ Revolut, Trading 212 và Interactive Brokers cũng được nhận diện, kèm cả giao dịch bán; cổ tức và tiền nạp được bỏ qua.';
+
+  @override
+  String get portfolioImportFile => 'Chọn tệp';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Không có kết nối – đang hiển thị dữ liệu đã lưu gần nhất ($time).';
+  }
 }

@@ -1872,4 +1872,16 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'يېڭى نەتىجە';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut، Trading 212 ۋە Interactive Brokers نىڭ چىقىرىلغان ھۆججەتلىرىمۇ سېتىشلار بىلەن بىللە تونۇلىدۇ؛ پايدا ئۈلۈشى ۋە ئامانەتلەر ئاتلاپ ئۆتۈلىدۇ.';
+
+  @override
+  String get portfolioImportFile => 'ھۆججەت تاللاش';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ئۇلىنىش يوق – ئەڭ ئاخىرقى ساقلانغان سانلىق مەلۇمات كۆرسىتىلىۋاتىدۇ ($time).';
+  }
 }

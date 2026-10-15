@@ -1882,4 +1882,16 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Vokatra vaovao';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Fantatra ihany koa ny fanondranana avy amin\'ny Revolut, Trading 212 ary Interactive Brokers, miaraka amin\'ny varotra; dinganina ny dividenda sy ny petrabola.';
+
+  @override
+  String get portfolioImportFile => 'Mifidiana rakitra';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Tsy misy fifandraisana – aseho ny angona voatahiry farany ($time).';
+  }
 }

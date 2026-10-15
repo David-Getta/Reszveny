@@ -1866,4 +1866,16 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Jatebɔ kura';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 ani Interactive Brokers ka bɔliw fana bɛ dɔn, feereliw fana; tɔnɔ tilaliw ni wari donniw bɛ to yen.';
+
+  @override
+  String get portfolioImportFile => 'Fisiye dɔ sugandi';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Jɛɲɔgɔnya tɛ yen – kunnafoni laban minnu marala, olu de bɛ yira ($time).';
+  }
 }

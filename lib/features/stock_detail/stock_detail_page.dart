@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../market_data/offline_banner.dart';
 import '../compare/compare_page.dart';
 import '../notes/notes_card.dart';
 import '../../app_services.dart';
@@ -184,6 +185,7 @@ class _DetailsBody extends StatelessWidget {
     String? err(DetailSection s) => d.errors[s] == null ? null : errorMessage(l10n, d.errors[s]!);
 
     final sections = <Widget>[
+      const OfflineBanner(),
       // Fejléc: név, ár, változás. Keskeny képernyőn (telefon) az ár a név alá
       // kerül, különben a hosszú árfolyam-megjegyzés összenyomná a cégnevet.
       Padding(

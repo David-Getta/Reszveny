@@ -1868,4 +1868,16 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Àbájáde tuntun';
+
+  @override
+  String get portfolioImportBrokers =>
+      'A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212 àti Interactive Brokers mọ̀, pẹ̀lú àwọn títà; a máa ń fo èrè ìpín àti owó ìfipamọ́ sílẹ̀.';
+
+  @override
+  String get portfolioImportFile => 'Yan fáìlì kan';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Kò sí ìsopọ̀ – à ń fi dátà tí a fipamọ́ kẹ́yìn hàn ($time).';
+  }
 }

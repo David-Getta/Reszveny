@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "ਸਾਲ ਅਨੁਸਾਰ ਪ੍ਰਾਪਤ ਮੁਨਾਫ਼ਾ",
   "portfolioRealizedHint": "ਵਿਕਰੀਆਂ ਨੂੰ ਪਹਿਲਾਂ ਤੁਹਾਡੀਆਂ ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਖ਼ਰੀਦਾਂ ਨਾਲ ਮਿਲਾਇਆ ਜਾਂਦਾ ਹੈ (FIFO), ਅੱਜ ਦੀ ਵਟਾਂਦਰਾ ਦਰ 'ਤੇ ਬਦਲ ਕੇ। ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਸਟੇਟਮੈਂਟ ਵਰਤੋ।",
   "staleNewResults": "ਇਸ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ਨਵੇਂ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਹੋਏ ਹਨ ({symbol}, {date})।",
-  "newResultsBadge": "ਨਵੇਂ ਨਤੀਜੇ"
+  "newResultsBadge": "ਨਵੇਂ ਨਤੀਜੇ",
+  "portfolioImportBrokers": "Revolut, Trading 212 ਅਤੇ Interactive Brokers ਦੇ ਐਕਸਪੋਰਟ ਵੀ ਵਿਕਰੀਆਂ ਸਮੇਤ ਪਛਾਣੇ ਜਾਂਦੇ ਹਨ; ਲਾਭਅੰਸ਼ ਅਤੇ ਜਮ੍ਹਾਂ ਛੱਡ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ।",
+  "portfolioImportFile": "ਫ਼ਾਈਲ ਚੁਣੋ",
+  "offlineBanner": "ਕੋਈ ਕਨੈਕਸ਼ਨ ਨਹੀਂ – ਆਖਰੀ ਵਾਰ ਸੰਭਾਲਿਆ ਡਾਟਾ ਦਿਖਾਇਆ ਜਾ ਰਿਹਾ ਹੈ ({time})।"
 }

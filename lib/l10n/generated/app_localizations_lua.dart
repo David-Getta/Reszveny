@@ -1874,4 +1874,16 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Mapeta mapia';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Bidi bimanyisha kabidi bintu bidi bipatuka mu Revolut, Trading 212 ne Interactive Brokers, pamue ne bisumbishibua; dividende ne makuta adibu batula bidi bishiyibua.';
+
+  @override
+  String get portfolioImportFile => 'Sungula fichier';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Kakuena connexion to – tudi tuleja mamanyisha a ndekelu akavua mabika ($time).';
+  }
 }

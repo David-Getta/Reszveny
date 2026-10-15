@@ -1865,4 +1865,16 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'नव परिणाम';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 आ Interactive Brokers क एक्सपोर्ट सेहो बिक्री सहित चिन्हल जाइत अछि; लाभांश आ जमा छोड़ि देल जाइत अछि।';
+
+  @override
+  String get portfolioImportFile => 'फाइल चुनू';
+
+  @override
+  String offlineBanner(String time) {
+    return 'कनेक्शन नहि अछि – अंतिम बेर सहेजल डेटा देखाओल जा रहल अछि ($time)।';
+  }
 }

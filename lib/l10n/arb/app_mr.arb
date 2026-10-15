@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "वर्षनिहाय प्राप्त नफा",
   "portfolioRealizedHint": "विक्री आधी तुमच्या सर्वात जुन्या खरेदीशी जुळवली जाते (FIFO), आजच्या विनिमय दराने रूपांतरित. कर विवरणपत्रासाठी तुमच्या ब्रोकरचे स्टेटमेंट वापरा.",
   "staleNewResults": "या विश्लेषणानंतर नवीन तिमाही निकाल जाहीर झाले आहेत ({symbol}, {date}).",
-  "newResultsBadge": "नवीन निकाल"
+  "newResultsBadge": "नवीन निकाल",
+  "portfolioImportBrokers": "Revolut, Trading 212 आणि Interactive Brokers चे एक्सपोर्टही विक्रीसह ओळखले जातात; लाभांश आणि जमा वगळले जातात.",
+  "portfolioImportFile": "फाइल निवडा",
+  "offlineBanner": "कनेक्शन नाही – शेवटचा जतन केलेला डेटा दाखवला जात आहे ({time})."
 }

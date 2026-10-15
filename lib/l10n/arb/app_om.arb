@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Bu'aa dhugoome waggaan",
   "portfolioRealizedHint": "Gurgurtaan jalqaba bittaawwan kee warra durii waliin walsimsiifama (FIFO), gatii jijjiirraa har'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa daldalaa (broker) kee fayyadami.",
   "staleNewResults": "Xiinxala kanaa booda bu'aan kurmaanaa haaraan maxxanfameera ({symbol}, {date}).",
-  "newResultsBadge": "Bu'aa haaraa"
+  "newResultsBadge": "Bu'aa haaraa",
+  "portfolioImportBrokers": "Ergiinsi Revolut, Trading 212 fi Interactive Brokers irraa dhufan gurgurtaa wajjin ni beekamu; qooda bu'aa fi kuusaan ni darbamu.",
+  "portfolioImportFile": "Faayilii filadhu",
+  "offlineBanner": "Walqunnamtiin hin jiru – odeeffannoon dhuma irratti olkaa'ame agarsiifamaa jira ({time})."
 }

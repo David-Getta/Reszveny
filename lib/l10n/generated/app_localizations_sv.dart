@@ -1870,4 +1870,16 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Ny rapport';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Exporter från Revolut, Trading 212 och Interactive Brokers känns också igen, med försäljningar; utdelningar och insättningar hoppas över.';
+
+  @override
+  String get portfolioImportFile => 'Välj en fil';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ingen anslutning – visar senast sparade data ($time).';
+  }
 }

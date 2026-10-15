@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Gerealiseerde winst per jaar",
   "portfolioRealizedHint": "Verkopen worden eerst gekoppeld aan je oudste aankopen (FIFO) en omgerekend tegen de wisselkoers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker.",
   "staleNewResults": "Sinds deze analyse zijn er nieuwe kwartaalcijfers gepubliceerd ({symbol}, {date}).",
-  "newResultsBadge": "Nieuwe cijfers"
+  "newResultsBadge": "Nieuwe cijfers",
+  "portfolioImportBrokers": "Exports van Revolut, Trading 212 en Interactive Brokers worden ook herkend, inclusief verkopen; dividenden en stortingen worden overgeslagen.",
+  "portfolioImportFile": "Kies een bestand",
+  "offlineBanner": "Geen verbinding – de laatst opgeslagen gegevens worden getoond ({time})."
 }

@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Guanys realitzats per any",
   "portfolioRealizedHint": "Les vendes s'assignen primer a les teves compres més antigues (FIFO) i es converteixen al tipus de canvi d'avui. Per a la declaració d'impostos, fes servir l'extracte del teu bròquer.",
   "staleNewResults": "Des d'aquesta anàlisi s'han publicat nous resultats trimestrals ({symbol}, {date}).",
-  "newResultsBadge": "Nous resultats"
+  "newResultsBadge": "Nous resultats",
+  "portfolioImportBrokers": "També es reconeixen les exportacions de Revolut, Trading 212 i Interactive Brokers, amb les vendes; els dividends i els ingressos s'ometen.",
+  "portfolioImportFile": "Tria un fitxer",
+  "offlineBanner": "Sense connexió – es mostren les últimes dades desades ({time})."
 }

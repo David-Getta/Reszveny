@@ -1871,4 +1871,16 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Laporan anyar';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ékspor ti Revolut, Trading 212 sareng Interactive Brokers ogé dikenal, kaasup penjualan; dividén sareng setoran dilangkungan.';
+
+  @override
+  String get portfolioImportFile => 'Pilih file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Teu aya sambungan – nembongkeun data anu panungtungan disimpen ($time).';
+  }
 }

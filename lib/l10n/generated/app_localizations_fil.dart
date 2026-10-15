@@ -1875,4 +1875,16 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Bagong resulta';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Nakikilala rin ang mga export mula sa Revolut, Trading 212 at Interactive Brokers, kasama ang mga benta; nilalaktawan ang mga dibidendo at deposito.';
+
+  @override
+  String get portfolioImportFile => 'Pumili ng file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Walang koneksyon – ipinapakita ang huling na-save na data ($time).';
+  }
 }

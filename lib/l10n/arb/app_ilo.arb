@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Narealisar a ganansia iti tinawen",
   "portfolioRealizedHint": "Dagiti panaglako ket umuna a maipada kadagiti kadaanan a gatangmo (FIFO), naikomberte iti exchange rate ita nga aldaw. Para iti tax return-mo, usaren ti statement ti brokermo.",
   "staleNewResults": "Manipud iti daytoy nga analisis, adda baro a quarterly a resulta a naipablaak ({symbol}, {date}).",
-  "newResultsBadge": "Baro a resulta"
+  "newResultsBadge": "Baro a resulta",
+  "portfolioImportBrokers": "Mabigbig met dagiti export manipud iti Revolut, Trading 212 ken Interactive Brokers, agraman dagiti nailako; malaksawan dagiti dibidendo ken deposito.",
+  "portfolioImportFile": "Agpili iti file",
+  "offlineBanner": "Awan ti koneksion – maipakpakita ti naudi a naidulin a datos ({time})."
 }

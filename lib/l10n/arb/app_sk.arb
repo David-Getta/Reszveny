@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Realizovaný zisk podľa rokov",
   "portfolioRealizedHint": "Predaje sa najprv priraďujú k vašim najstarším nákupom (FIFO) a prepočítavajú sa dnešným kurzom. Na daňové priznanie použite výpis od svojho brokera.",
   "staleNewResults": "Od tejto analýzy boli zverejnené nové štvrťročné výsledky ({symbol}, {date}).",
-  "newResultsBadge": "Nové výsledky"
+  "newResultsBadge": "Nové výsledky",
+  "portfolioImportBrokers": "Rozpoznávajú sa aj exporty z Revolut, Trading 212 a Interactive Brokers vrátane predajov; dividendy a vklady sa preskakujú.",
+  "portfolioImportFile": "Vybrať súbor",
+  "offlineBanner": "Bez pripojenia – zobrazujú sa naposledy uložené údaje ({time})."
 }

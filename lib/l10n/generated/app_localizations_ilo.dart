@@ -1884,4 +1884,16 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Baro a resulta';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Mabigbig met dagiti export manipud iti Revolut, Trading 212 ken Interactive Brokers, agraman dagiti nailako; malaksawan dagiti dibidendo ken deposito.';
+
+  @override
+  String get portfolioImportFile => 'Agpili iti file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Awan ti koneksion – maipakpakita ti naudi a naidulin a datos ($time).';
+  }
 }

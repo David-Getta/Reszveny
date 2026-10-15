@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "قازانجی بەدەستهاتوو بەپێی ساڵ",
   "portfolioRealizedHint": "فرۆشتنەکان سەرەتا لەگەڵ کۆنترین کڕینەکانت ڕێکدەخرێن (FIFO)، و بە نرخی ئاڵوگۆڕی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باج، کەشفی بڕۆکەرەکەت بەکاربهێنە.",
   "staleNewResults": "لە دوای ئەم شیکارییەوە ئەنجامی وەرزیی نوێ بڵاوکراوەتەوە ({symbol}، {date}).",
-  "newResultsBadge": "ئەنجامی نوێ"
+  "newResultsBadge": "ئەنجامی نوێ",
+  "portfolioImportBrokers": "هەناردەکانی Revolut، Trading 212 و Interactive Brokers یش لەگەڵ فرۆشتنەکان دەناسرێنەوە؛ قازانجی پشک و پارە دانان پشتگوێ دەخرێن.",
+  "portfolioImportFile": "فایلێک هەڵبژێرە",
+  "offlineBanner": "پەیوەندی نییە – دوایین داتای پاشەکەوتکراو پیشان دەدرێت ({time})."
 }

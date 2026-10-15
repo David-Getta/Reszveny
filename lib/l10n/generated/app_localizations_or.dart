@@ -1867,4 +1867,16 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ନୂଆ ଫଳାଫଳ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 ଏବଂ Interactive Brokers ର ଏକ୍ସପୋର୍ଟ ମଧ୍ୟ ବିକ୍ରି ସହିତ ଚିହ୍ନଟ ହୁଏ; ଲାଭାଂଶ ଏବଂ ଜମା ଛାଡ଼ି ଦିଆଯାଏ।';
+
+  @override
+  String get portfolioImportFile => 'ଏକ ଫାଇଲ ବାଛନ୍ତୁ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ସଂଯୋଗ ନାହିଁ – ଶେଷ ଥର ସେଭ୍ କରାଯାଇଥିବା ଡାଟା ଦେଖାଯାଉଛି ($time)।';
+  }
 }

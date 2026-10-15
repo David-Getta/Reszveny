@@ -1868,4 +1868,16 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Täze hasabat';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 we Interactive Brokers eksportlary hem satuwlar bilen bilelikde tanalýar; diwidendler we goýumlar geçilýär.';
+
+  @override
+  String get portfolioImportFile => 'Faýl saýla';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Baglanyşyk ýok – iň soňky ýatda saklanan maglumatlar görkezilýär ($time).';
+  }
 }

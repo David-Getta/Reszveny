@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Realisierte Gewinne nach Jahr",
   "portfolioRealizedHint": "Verkäufe werden zuerst mit den ältesten Käufen verrechnet (FIFO) und zum heutigen Wechselkurs umgerechnet. Für die Steuererklärung die Abrechnung des Brokers verwenden.",
   "staleNewResults": "Seit dieser Analyse wurden neue Quartalszahlen veröffentlicht ({symbol}, {date}).",
-  "newResultsBadge": "Neue Zahlen"
+  "newResultsBadge": "Neue Zahlen",
+  "portfolioImportBrokers": "Exporte von Revolut, Trading 212 und Interactive Brokers werden ebenfalls erkannt, inklusive Verkäufen; Dividenden und Einzahlungen werden übersprungen.",
+  "portfolioImportFile": "Datei auswählen",
+  "offlineBanner": "Keine Verbindung – es werden die zuletzt gespeicherten Daten angezeigt ({time})."
 }

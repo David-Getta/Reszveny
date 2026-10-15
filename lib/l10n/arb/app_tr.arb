@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Yıllara göre gerçekleşen kâr",
   "portfolioRealizedHint": "Satışlar önce en eski alışlarınızla eşleştirilir (FIFO) ve bugünkü döviz kuruyla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın.",
   "staleNewResults": "Bu analizden sonra yeni çeyrek bilançosu açıklandı ({symbol}, {date}).",
-  "newResultsBadge": "Yeni bilanço"
+  "newResultsBadge": "Yeni bilanço",
+  "portfolioImportBrokers": "Revolut, Trading 212 ve Interactive Brokers dışa aktarımları da satışlarla birlikte tanınır; temettüler ve para yatırmalar atlanır.",
+  "portfolioImportFile": "Dosya seç",
+  "offlineBanner": "Bağlantı yok – en son kaydedilen veriler gösteriliyor ({time})."
 }

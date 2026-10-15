@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "የተገኘ ትርፍ በዓመት",
   "portfolioRealizedHint": "ሽያጮች በመጀመሪያ ከቀደሙት ግዢዎችዎ ጋር ይዛመዳሉ (FIFO)፣ በዛሬው የምንዛሪ ተመን ይቀየራሉ። ለግብር ማስታወቂያዎ የደላላዎን መግለጫ ይጠቀሙ።",
   "staleNewResults": "ከዚህ ትንተና በኋላ አዲስ የሩብ ዓመት ውጤቶች ታትመዋል ({symbol}፣ {date})።",
-  "newResultsBadge": "አዲስ ውጤቶች"
+  "newResultsBadge": "አዲስ ውጤቶች",
+  "portfolioImportBrokers": "ከRevolut፣ Trading 212 እና Interactive Brokers የተላኩ ፋይሎችም ከሽያጮች ጋር ይታወቃሉ፤ የትርፍ ድርሻ እና ተቀማጭ ገንዘብ ይዘለላሉ።",
+  "portfolioImportFile": "ፋይል ይምረጡ",
+  "offlineBanner": "ግንኙነት የለም – ለመጨረሻ ጊዜ የተቀመጠው መረጃ እየታየ ነው ({time})።"
 }

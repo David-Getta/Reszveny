@@ -1927,4 +1927,16 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nowe wyniki';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Rozpoznawane są też eksporty z Revolut, Trading 212 i Interactive Brokers, łącznie ze sprzedażą; dywidendy i wpłaty są pomijane.';
+
+  @override
+  String get portfolioImportFile => 'Wybierz plik';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Brak połączenia – wyświetlane są ostatnio zapisane dane ($time).';
+  }
 }

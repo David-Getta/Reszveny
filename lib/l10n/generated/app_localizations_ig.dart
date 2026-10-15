@@ -1864,4 +1864,16 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nsonaazụ ọhụrụ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'A na-amatakwa mbupụ sitere na Revolut, Trading 212 na Interactive Brokers, ya na ihe e rere; a na-awụfe dividend na ego e tinyere.';
+
+  @override
+  String get portfolioImportFile => 'Họrọ faịlụ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Enweghị njikọ – a na-egosi data ikpeazụ echekwara ($time).';
+  }
 }

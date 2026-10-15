@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Wetin you make every year",
   "portfolioRealizedHint": "We dey match wetin you sell with the oldest ones wey you buy first (FIFO), and we change am with today exchange rate. For your tax return, use the statement from your broker.",
   "staleNewResults": "{symbol} don release new quarterly results since dis analysis ({date}).",
-  "newResultsBadge": "New results"
+  "newResultsBadge": "New results",
+  "portfolioImportBrokers": "E dey sabi exports from Revolut, Trading 212 and Interactive Brokers too, plus di sales; e dey skip dividend and deposit.",
+  "portfolioImportFile": "Choose file",
+  "offlineBanner": "No connection – we dey show di data wey we save last ({time})."
 }

@@ -1793,6 +1793,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get newResultsBadge => '新财报';
+
+  @override
+  String get portfolioImportBrokers =>
+      '也能识别 Revolut、Trading 212 和 Interactive Brokers 的导出文件，包括卖出记录；股息和入金会被跳过。';
+
+  @override
+  String get portfolioImportFile => '选择文件';
+
+  @override
+  String offlineBanner(String time) {
+    return '无网络连接 – 正在显示上次保存的数据（$time）。';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3582,4 +3594,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get newResultsBadge => '新業績';
+
+  @override
+  String get portfolioImportBrokers =>
+      '亦能識別 Revolut、Trading 212 及 Interactive Brokers 的匯出檔案，包括賣出記錄；股息及入金會略過。';
+
+  @override
+  String get portfolioImportFile => '選擇檔案';
+
+  @override
+  String offlineBanner(String time) {
+    return '沒有網絡連線 – 正在顯示上次儲存的數據（$time）。';
+  }
 }

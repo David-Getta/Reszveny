@@ -1881,4 +1881,16 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Bag-o nga resulta';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Makilala man ang mga export halin sa Revolut, Trading 212 kag Interactive Brokers, upod ang mga ginbaligya; ginalaktawan ang mga dibidendo kag deposito.';
+
+  @override
+  String get portfolioImportFile => 'Magpili sang file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Wala sing koneksyon – ginapakita ang katapusan nga na-save nga datos ($time).';
+  }
 }

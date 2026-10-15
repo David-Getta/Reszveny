@@ -1845,4 +1845,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ผลประกอบการใหม่';
+
+  @override
+  String get portfolioImportBrokers =>
+      'รองรับไฟล์ส่งออกจาก Revolut, Trading 212 และ Interactive Brokers ด้วย รวมถึงรายการขาย ส่วนเงินปันผลและการฝากเงินจะถูกข้าม';
+
+  @override
+  String get portfolioImportFile => 'เลือกไฟล์';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ไม่มีการเชื่อมต่อ – กำลังแสดงข้อมูลที่บันทึกไว้ล่าสุด ($time)';
+  }
 }

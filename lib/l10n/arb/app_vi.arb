@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Lãi đã thực hiện theo năm",
   "portfolioRealizedHint": "Các lần bán được khớp trước với những lần mua cũ nhất của bạn (FIFO), quy đổi theo tỷ giá hôm nay. Khi khai thuế, hãy dùng sao kê của công ty môi giới.",
   "staleNewResults": "Kể từ phân tích này, kết quả kinh doanh quý mới đã được công bố ({symbol}, {date}).",
-  "newResultsBadge": "Kết quả mới"
+  "newResultsBadge": "Kết quả mới",
+  "portfolioImportBrokers": "Tệp xuất từ Revolut, Trading 212 và Interactive Brokers cũng được nhận diện, kèm cả giao dịch bán; cổ tức và tiền nạp được bỏ qua.",
+  "portfolioImportFile": "Chọn tệp",
+  "offlineBanner": "Không có kết nối – đang hiển thị dữ liệu đã lưu gần nhất ({time})."
 }

@@ -1870,4 +1870,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Matokeo mapya';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Faili zilizotolewa kutoka Revolut, Trading 212 na Interactive Brokers pia zinatambuliwa, pamoja na mauzo; gawio na amana zinarukwa.';
+
+  @override
+  String get portfolioImportFile => 'Chagua faili';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Hakuna muunganisho – inaonyesha data iliyohifadhiwa mwisho ($time).';
+  }
 }

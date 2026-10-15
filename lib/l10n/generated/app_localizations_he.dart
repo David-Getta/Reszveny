@@ -1865,4 +1865,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'דוח חדש';
+
+  @override
+  String get portfolioImportBrokers =>
+      'גם קובצי ייצוא מ-Revolut, Trading 212 ו-Interactive Brokers מזוהים, כולל מכירות; דיבידנדים והפקדות מדולגים.';
+
+  @override
+  String get portfolioImportFile => 'בחירת קובץ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'אין חיבור – מוצגים הנתונים האחרונים שנשמרו ($time).';
+  }
 }

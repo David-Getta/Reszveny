@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Èrè tí a rí gbà lọ́dọọdún",
   "portfolioRealizedHint": "A máa ń kọ́kọ́ so títà mọ́ àwọn ìrajà rẹ tó pẹ́ jù lọ (FIFO), a sì ń yí i padà ní ìwọ̀n pàṣípààrọ̀ ti òní. Fún ìfisùn owó-orí rẹ, lo ìwé ìṣirò alágbàtà rẹ.",
   "staleNewResults": "Láti ìgbà ìtúpalẹ̀ yìí, àbájáde ìdámẹ́rin ọdún tuntun ti jáde ({symbol}, {date}).",
-  "newResultsBadge": "Àbájáde tuntun"
+  "newResultsBadge": "Àbájáde tuntun",
+  "portfolioImportBrokers": "A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212 àti Interactive Brokers mọ̀, pẹ̀lú àwọn títà; a máa ń fo èrè ìpín àti owó ìfipamọ́ sílẹ̀.",
+  "portfolioImportFile": "Yan fáìlì kan",
+  "offlineBanner": "Kò sí ìsopọ̀ – à ń fi dátà tí a fipamọ́ kẹ́yìn hàn ({time})."
 }

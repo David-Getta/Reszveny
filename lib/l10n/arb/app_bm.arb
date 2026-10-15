@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Tɔnɔ sɔrɔlen san o san",
   "portfolioRealizedHint": "Feereliw bɛ bɛn i ka sanni kɔrɔw ma fɔlɔ (FIFO), ka falen bi wari falen sɔngɔ la. I ka nisɔngɔ dantigɛli kama, i ka broker ka sɛbɛn baara.",
   "staleNewResults": "Kabini nin sɛgɛsɛgɛli kɛra, kalo saba jatebɔ kura bɔra ({symbol}, {date}).",
-  "newResultsBadge": "Jatebɔ kura"
+  "newResultsBadge": "Jatebɔ kura",
+  "portfolioImportBrokers": "Revolut, Trading 212 ani Interactive Brokers ka bɔliw fana bɛ dɔn, feereliw fana; tɔnɔ tilaliw ni wari donniw bɛ to yen.",
+  "portfolioImportFile": "Fisiye dɔ sugandi",
+  "offlineBanner": "Jɛɲɔgɔnya tɛ yen – kunnafoni laban minnu marala, olu de bɛ yira ({time})."
 }

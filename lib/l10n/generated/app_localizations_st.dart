@@ -1879,4 +1879,16 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Diphetho tse ntjha';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ho tsejoa le diromelwantle tse tswang ho Revolut, Trading 212 le Interactive Brokers, hammoho le thekiso; dividende le dipeheletso di a tlolwa.';
+
+  @override
+  String get portfolioImportFile => 'Kgetha faele';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ha ho kgokahano – ho bontshwa data ya ho qetela e bolokilweng ($time).';
+  }
 }

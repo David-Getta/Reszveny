@@ -1874,4 +1874,16 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nieuwe cijfers';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Exports van Revolut, Trading 212 en Interactive Brokers worden ook herkend, inclusief verkopen; dividenden en stortingen worden overgeslagen.';
+
+  @override
+  String get portfolioImportFile => 'Kies een bestand';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Geen verbinding – de laatst opgeslagen gegevens worden getoond ($time).';
+  }
 }

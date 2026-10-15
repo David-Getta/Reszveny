@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "বছৰ অনুসৰি বাস্তৱায়িত লাভ",
   "portfolioRealizedHint": "বিক্ৰীসমূহ প্ৰথমে আপোনাৰ আটাইতকৈ পুৰণি ক্ৰয়ৰ সৈতে মিলোৱা হয় (FIFO), আজিৰ বিনিময় হাৰত ৰূপান্তৰ কৰি। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰ'কাৰৰ বিবৃতি ব্যৱহাৰ কৰক।",
   "staleNewResults": "এই বিশ্লেষণৰ পিছত নতুন ত্ৰৈমাসিক ফলাফল প্ৰকাশ পাইছে ({symbol}, {date})।",
-  "newResultsBadge": "নতুন ফলাফল"
+  "newResultsBadge": "নতুন ফলাফল",
+  "portfolioImportBrokers": "Revolut, Trading 212 আৰু Interactive Brokers ৰ এক্সপৰ্টো বিক্ৰীসহ চিনাক্ত কৰা হয়; লভ্যাংশ আৰু জমা এৰি দিয়া হয়।",
+  "portfolioImportFile": "এটা ফাইল বাছক",
+  "offlineBanner": "সংযোগ নাই – শেষবাৰ ছেভ কৰা ডেটা দেখুওৱা হৈছে ({time})।"
 }

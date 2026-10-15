@@ -1906,4 +1906,16 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Novi rezultati';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Prepoznaju se i izvozi iz Revolut, Trading 212 i Interactive Brokers, zajedno s prodajama; dividende i uplate se preskaču.';
+
+  @override
+  String get portfolioImportFile => 'Odaberite datoteku';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Nema veze – prikazani su posljednji sačuvani podaci ($time).';
+  }
 }

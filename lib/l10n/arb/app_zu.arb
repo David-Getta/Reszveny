@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Inzuzo etholakele ngonyaka",
   "portfolioRealizedHint": "Okuthengisiwe kuqala kuqhathaniswe nokuthenga kwakho okudala kakhulu (FIFO), kuguqulwe ngezinga lokushintshaniswa kwemali lanamuhla. Embikweni wakho wentela, sebenzisa isitatimende somdayisi wakho (broker).",
   "staleNewResults": "Kusukela kulolu hlaziyo, kushicilelwe imiphumela emisha yekota ({symbol}, {date}).",
-  "newResultsBadge": "Imiphumela emisha"
+  "newResultsBadge": "Imiphumela emisha",
+  "portfolioImportBrokers": "Okuthunyelwa ngaphandle kwe-Revolut, Trading 212 ne-Interactive Brokers nakho kuyaqashelwa, kanye nokuthengisa; ama-dividend namadiphozithi ayeqiwa.",
+  "portfolioImportFile": "Khetha ifayela",
+  "offlineBanner": "Alukho uxhumano – kuboniswa idatha egcinwe ekugcineni ({time})."
 }

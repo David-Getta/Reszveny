@@ -1875,4 +1875,16 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'కొత్త ఫలితాలు';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212, Interactive Brokers ఎగుమతులు కూడా అమ్మకాలతో సహా గుర్తించబడతాయి; డివిడెండ్లు, డిపాజిట్లు దాటవేయబడతాయి.';
+
+  @override
+  String get portfolioImportFile => 'ఫైల్‌ను ఎంచుకోండి';
+
+  @override
+  String offlineBanner(String time) {
+    return 'కనెక్షన్ లేదు – చివరిగా సేవ్ చేసిన డేటా చూపబడుతోంది ($time).';
+  }
 }

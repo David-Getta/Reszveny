@@ -1872,4 +1872,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Yangi hisobot';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 va Interactive Brokers eksportlari ham sotuvlar bilan birga taniladi; dividendlar va depozitlar o‘tkazib yuboriladi.';
+
+  @override
+  String get portfolioImportFile => 'Fayl tanlash';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Aloqa yo‘q – oxirgi saqlangan ma’lumotlar ko‘rsatilmoqda ($time).';
+  }
 }

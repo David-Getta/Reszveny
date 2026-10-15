@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Natamong kita bawat taon",
   "portfolioRealizedHint": "Itinutugma muna ang mga pagbenta sa pinakaluma mong mga pagbili (FIFO), na-convert sa palitan ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker.",
   "staleNewResults": "May bagong quarterly na resulta na nailathala mula nang gawin ang pagsusuring ito ({symbol}, {date}).",
-  "newResultsBadge": "Bagong resulta"
+  "newResultsBadge": "Bagong resulta",
+  "portfolioImportBrokers": "Nakikilala rin ang mga export mula sa Revolut, Trading 212 at Interactive Brokers, kasama ang mga benta; nilalaktawan ang mga dibidendo at deposito.",
+  "portfolioImportFile": "Pumili ng file",
+  "offlineBanner": "Walang koneksyon – ipinapakita ang huling na-save na data ({time})."
 }

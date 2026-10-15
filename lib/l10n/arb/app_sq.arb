@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Fitimi i realizuar sipas viteve",
   "portfolioRealizedHint": "Shitjet përputhen fillimisht me blerjet tuaja më të vjetra (FIFO) dhe konvertohen me kursin e këmbimit të sotëm. Për deklaratën tatimore, përdorni pasqyrën e brokerit tuaj.",
   "staleNewResults": "Pas kësaj analize janë publikuar rezultate të reja tremujore ({symbol}, {date}).",
-  "newResultsBadge": "Rezultate të reja"
+  "newResultsBadge": "Rezultate të reja",
+  "portfolioImportBrokers": "Njihen edhe eksportet nga Revolut, Trading 212 dhe Interactive Brokers, bashkë me shitjet; dividendët dhe depozitat anashkalohen.",
+  "portfolioImportFile": "Zgjidh një skedar",
+  "offlineBanner": "Nuk ka lidhje – po shfaqen të dhënat e fundit të ruajtura ({time})."
 }

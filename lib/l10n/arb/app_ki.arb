@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Uumithio wa ma o mwaka",
   "portfolioRealizedHint": "Ũendia ũtwarithanagio mbere na ũgũri waku wa tene mũno (FIFO), ũkagarũrwo na thogora wa kũgarũra mbeca ũmũthĩ. Nĩ ũndũ wa ũhoro wa igooti, hũthĩra ripoti ya broker waku.",
   "staleNewResults": "Kuuma ũthuthuria ũyũ wathondekwo, maumĩrĩra merũ ma mĩeri ĩtatũ nĩmarutĩtwo ({symbol}, {date}).",
-  "newResultsBadge": "Maumĩrĩra merũ"
+  "newResultsBadge": "Maumĩrĩra merũ",
+  "portfolioImportBrokers": "Mĩthiĩ ya kuuma Revolut, Trading 212 na Interactive Brokers o nayo nĩ ĩmenyekaga, hamwe na wendia; dividend na mbeca iria ĩkĩrĩtwo nĩ itigagwo.",
+  "portfolioImportFile": "Thuura faĩlũ",
+  "offlineBanner": "Gũtirĩ connection – kũroonanio data ya kũrigĩrĩria ĩrĩa yaigirwo ({time})."
 }

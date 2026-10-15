@@ -1880,4 +1880,16 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Musuq lluqsiykuna';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212, Interactive Brokers nisqakunamanta exportasqakunatapas riqsinmi, rantikusqakunawan; dividendokunata, churasqa qullqitapas saqinmi.';
+
+  @override
+  String get portfolioImportFile => 'Huk archivota akllay';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Mana t\'inkiy kanchu – qhipa waqaychasqa datos rikuchikuchkan ($time).';
+  }
 }

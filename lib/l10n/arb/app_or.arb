@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "ବର୍ଷ ଅନୁଯାୟୀ ପ୍ରାପ୍ତ ଲାଭ",
   "portfolioRealizedHint": "ବିକ୍ରିକୁ ପ୍ରଥମେ ଆପଣଙ୍କ ସବୁଠାରୁ ପୁରୁଣା କ୍ରୟ ସହ ମେଳ କରାଯାଏ (FIFO), ଆଜିର ବିନିମୟ ଦରରେ ରୂପାନ୍ତରିତ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରଙ୍କ ବିବରଣୀ ବ୍ୟବହାର କରନ୍ତୁ।",
   "staleNewResults": "ଏହି ବିଶ୍ଳେଷଣ ପରେ ନୂଆ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶିତ ହୋଇଛି ({symbol}, {date})।",
-  "newResultsBadge": "ନୂଆ ଫଳାଫଳ"
+  "newResultsBadge": "ନୂଆ ଫଳାଫଳ",
+  "portfolioImportBrokers": "Revolut, Trading 212 ଏବଂ Interactive Brokers ର ଏକ୍ସପୋର୍ଟ ମଧ୍ୟ ବିକ୍ରି ସହିତ ଚିହ୍ନଟ ହୁଏ; ଲାଭାଂଶ ଏବଂ ଜମା ଛାଡ଼ି ଦିଆଯାଏ।",
+  "portfolioImportFile": "ଏକ ଫାଇଲ ବାଛନ୍ତୁ",
+  "offlineBanner": "ସଂଯୋଗ ନାହିଁ – ଶେଷ ଥର ସେଭ୍ କରାଯାଇଥିବା ଡାଟା ଦେଖାଯାଉଛି ({time})।"
 }

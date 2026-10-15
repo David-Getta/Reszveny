@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Keuntungan terealisasi per tahun",
   "portfolioRealizedHint": "Penjualan dicocokkan terlebih dahulu dengan pembelian tertua Anda (FIFO), dikonversi dengan kurs hari ini. Untuk pelaporan pajak, gunakan laporan dari broker Anda.",
   "staleNewResults": "Sejak analisis ini, laporan kuartalan baru telah terbit ({symbol}, {date}).",
-  "newResultsBadge": "Laporan baru"
+  "newResultsBadge": "Laporan baru",
+  "portfolioImportBrokers": "Ekspor dari Revolut, Trading 212, dan Interactive Brokers juga dikenali, termasuk penjualan; dividen dan setoran dilewati.",
+  "portfolioImportFile": "Pilih file",
+  "offlineBanner": "Tidak ada koneksi – menampilkan data yang terakhir disimpan ({time})."
 }

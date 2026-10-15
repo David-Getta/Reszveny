@@ -3384,6 +3384,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'New results'**
   String get newResultsBadge;
+
+  /// Note in the portfolio import dialog. Keep the broker names as they are.
+  ///
+  /// In en, this message translates to:
+  /// **'Exports from Revolut, Trading 212 and Interactive Brokers are recognised too, with sales; dividends and deposits are skipped.'**
+  String get portfolioImportBrokers;
+
+  /// Button in the portfolio import dialog: pick a CSV file instead of pasting.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a file'**
+  String get portfolioImportFile;
+
+  /// Banner on the stock page when there is no network and the last saved prices are shown.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection – showing the data saved on {time}.'**
+  String offlineBanner(String time);
 }
 
 class _AppLocalizationsDelegate

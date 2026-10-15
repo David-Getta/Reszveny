@@ -1871,4 +1871,16 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ახალი შედეგები';
+
+  @override
+  String get portfolioImportBrokers =>
+      'ასევე ამოიცნობა Revolut-ის, Trading 212-ისა და Interactive Brokers-ის ექსპორტები, გაყიდვების ჩათვლით; დივიდენდები და შენატანები გამოტოვებულია.';
+
+  @override
+  String get portfolioImportFile => 'აირჩიეთ ფაილი';
+
+  @override
+  String offlineBanner(String time) {
+    return 'კავშირი არ არის – ნაჩვენებია ბოლოს შენახული მონაცემები ($time).';
+  }
 }

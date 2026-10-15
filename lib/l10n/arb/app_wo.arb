@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Benefis bu wér at bu nekk",
   "portfolioRealizedHint": "Jaay yi dañuy jëkk a méngoo ak sa jënd yi gën a yàgg (FIFO), ñu soppi ko ci njëgu weccit xaalis bu tey. Ngir sa déclaration lempo, jëfandikool kayitu sa broker.",
   "staleNewResults": "Ci gannaaw saytu bii, njureef yu bees yu ñetti weer génn nañu ({symbol}, {date}).",
-  "newResultsBadge": "Njureef yu bees"
+  "newResultsBadge": "Njureef yu bees",
+  "portfolioImportBrokers": "Dañu xam itam export yu Revolut, Trading 212 ak Interactive Brokers, ak njaay yi; dividand yi ak xaalis bi ñu dugal, dañu leen di bàyyi.",
+  "portfolioImportFile": "Tànnal ab fichier",
+  "offlineBanner": "Amul internet – ñu ngi wone xibaar yi ñu denc mujj ({time})."
 }

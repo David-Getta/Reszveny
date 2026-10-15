@@ -1876,4 +1876,16 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Bu\'aa haaraa';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ergiinsi Revolut, Trading 212 fi Interactive Brokers irraa dhufan gurgurtaa wajjin ni beekamu; qooda bu\'aa fi kuusaan ni darbamu.';
+
+  @override
+  String get portfolioImportFile => 'Faayilii filadhu';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Walqunnamtiin hin jiru – odeeffannoon dhuma irratti olkaa\'ame agarsiifamaa jira ($time).';
+  }
 }

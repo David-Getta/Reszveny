@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Realizált nyereség évenként",
   "portfolioRealizedHint": "Az eladások a legrégebbi vételeidből fogynak (FIFO), a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatását használd.",
   "staleNewResults": "Az elemzés óta új gyorsjelentés jelent meg ({symbol}, {date}).",
-  "newResultsBadge": "Új gyorsjelentés"
+  "newResultsBadge": "Új gyorsjelentés",
+  "portfolioImportBrokers": "A Revolut, a Trading 212 és az Interactive Brokers exportját is felismeri, az eladásokkal együtt; az osztalékot és a befizetést kihagyja.",
+  "portfolioImportFile": "Fájl kiválasztása",
+  "offlineBanner": "Nincs kapcsolat – a legutóbb mentett adatok látszanak ({time})."
 }

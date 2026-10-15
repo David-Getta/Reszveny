@@ -1862,4 +1862,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ရလဒ်အသစ်';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut၊ Trading 212 နှင့် Interactive Brokers မှ ထုတ်ယူထားသော ဖိုင်များကိုလည်း ရောင်းချမှုများနှင့်အတူ မှတ်သိနိုင်သည်။ အမြတ်ဝေစုနှင့် ငွေသွင်းမှုများကို ကျော်သွားသည်။';
+
+  @override
+  String get portfolioImportFile => 'ဖိုင်ရွေးရန်';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ချိတ်ဆက်မှု မရှိပါ – နောက်ဆုံး သိမ်းထားသော ဒေတာကို ပြသနေသည် ($time)။';
+  }
 }

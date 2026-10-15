@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "वर्षक अनुसार प्राप्त लाभ",
   "portfolioRealizedHint": "बिक्रीकेँ पहिने अहाँक सभसँ पुरान खरीदारीसँ मिलाओल जाइत अछि (FIFO), आजुक विनिमय दरपर बदलि कऽ। कर रिटर्नक लेल अपन ब्रोकरक विवरण उपयोग करू।",
   "staleNewResults": "एहि विश्लेषणक बाद नव तिमाही परिणाम प्रकाशित भेल अछि ({symbol}, {date})।",
-  "newResultsBadge": "नव परिणाम"
+  "newResultsBadge": "नव परिणाम",
+  "portfolioImportBrokers": "Revolut, Trading 212 आ Interactive Brokers क एक्सपोर्ट सेहो बिक्री सहित चिन्हल जाइत अछि; लाभांश आ जमा छोड़ि देल जाइत अछि।",
+  "portfolioImportFile": "फाइल चुनू",
+  "offlineBanner": "कनेक्शन नहि अछि – अंतिम बेर सहेजल डेटा देखाओल जा रहल अछि ({time})।"
 }

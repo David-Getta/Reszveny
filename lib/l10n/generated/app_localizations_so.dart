@@ -1876,4 +1876,16 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Natiijooyin cusub';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Dhoofinta Revolut, Trading 212 iyo Interactive Brokers sidoo kale waa la aqoonsadaa, oo ay la socdaan iibka; qaybta faa\'iidada iyo dhigaalka waa laga boodaa.';
+
+  @override
+  String get portfolioImportFile => 'Dooro fayl';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Xiriir ma jiro – waxaa la muujinayaa xogtii ugu dambeysay ee la keydiyay ($time).';
+  }
 }

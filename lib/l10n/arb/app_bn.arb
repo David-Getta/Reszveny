@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "বছর অনুযায়ী আদায়কৃত লাভ",
   "portfolioRealizedHint": "বিক্রি প্রথমে আপনার সবচেয়ে পুরোনো ক্রয়ের সঙ্গে মেলানো হয় (FIFO), আজকের বিনিময় হারে রূপান্তর করে। কর রিটার্নের জন্য আপনার ব্রোকারের বিবরণী ব্যবহার করুন।",
   "staleNewResults": "এই বিশ্লেষণের পর নতুন ত্রৈমাসিক ফলাফল প্রকাশিত হয়েছে ({symbol}, {date})।",
-  "newResultsBadge": "নতুন ফলাফল"
+  "newResultsBadge": "নতুন ফলাফল",
+  "portfolioImportBrokers": "Revolut, Trading 212 ও Interactive Brokers-এর এক্সপোর্টও বিক্রিসহ চেনা যায়; ডিভিডেন্ড ও জমা বাদ দেওয়া হয়।",
+  "portfolioImportFile": "একটি ফাইল বেছে নিন",
+  "offlineBanner": "সংযোগ নেই – শেষ সংরক্ষিত ডেটা দেখানো হচ্ছে ({time})।"
 }

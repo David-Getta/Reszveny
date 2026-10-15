@@ -1879,4 +1879,16 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Dipoelo tse dintšhwa';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Diromelwakuntle go tswa mo Revolut, Trading 212 le Interactive Brokers le tsone di a lemogwa, mmogo le dithekiso; dividende le dipolokelo di a tlolwa.';
+
+  @override
+  String get portfolioImportFile => 'Tlhopha faele';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ga go na kgolagano – go bontshiwa data ya bofelo e e bolokilweng ($time).';
+  }
 }

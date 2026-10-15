@@ -1866,4 +1866,16 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Яңа хисап';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 һәм Interactive Brokers экспортлары да сатулар белән бергә таныла; дивидендлар һәм кертемнәр төшереп калдырыла.';
+
+  @override
+  String get portfolioImportFile => 'Файл сайлау';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Тоташу юк – соңгы сакланган мәгълүматлар күрсәтелә ($time).';
+  }
 }

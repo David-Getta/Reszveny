@@ -1878,4 +1878,16 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'புதிய முடிவுகள்';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212, Interactive Brokers ஏற்றுமதிகளும் விற்பனைகளுடன் அடையாளம் காணப்படும்; ஈவுத்தொகையும் வைப்புகளும் தவிர்க்கப்படும்.';
+
+  @override
+  String get portfolioImportFile => 'கோப்பைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String offlineBanner(String time) {
+    return 'இணைப்பு இல்லை – கடைசியாகச் சேமித்த தரவு காட்டப்படுகிறது ($time).';
+  }
 }

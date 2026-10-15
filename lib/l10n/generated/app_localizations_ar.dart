@@ -1912,4 +1912,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'نتائج جديدة';
+
+  @override
+  String get portfolioImportBrokers =>
+      'يتم التعرف أيضًا على ملفات التصدير من Revolut وTrading 212 وInteractive Brokers، مع عمليات البيع؛ ويتم تخطي التوزيعات والإيداعات.';
+
+  @override
+  String get portfolioImportFile => 'اختر ملفًا';
+
+  @override
+  String offlineBanner(String time) {
+    return 'لا يوجد اتصال – يتم عرض آخر بيانات محفوظة ($time).';
+  }
 }

@@ -1816,4 +1816,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get newResultsBadge => '새 실적';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212, Interactive Brokers의 내보내기 파일도 매도 내역과 함께 인식됩니다. 배당과 입금은 건너뜁니다.';
+
+  @override
+  String get portfolioImportFile => '파일 선택';
+
+  @override
+  String offlineBanner(String time) {
+    return '연결 없음 – 마지막으로 저장된 데이터를 표시합니다($time).';
+  }
 }

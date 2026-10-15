@@ -1848,4 +1848,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ຜົນປະກອບການໃໝ່';
+
+  @override
+  String get portfolioImportBrokers =>
+      'ການສົ່ງອອກຈາກ Revolut, Trading 212 ແລະ Interactive Brokers ກໍຖືກຮັບຮູ້ເຊັ່ນກັນ ລວມທັງການຂາຍ; ເງິນປັນຜົນ ແລະ ການຝາກເງິນຈະຖືກຂ້າມ.';
+
+  @override
+  String get portfolioImportFile => 'ເລືອກໄຟລ໌';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ບໍ່ມີການເຊື່ອມຕໍ່ – ກຳລັງສະແດງຂໍ້ມູນທີ່ບັນທຶກໄວ້ຫຼ້າສຸດ ($time)';
+  }
 }

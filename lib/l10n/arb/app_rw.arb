@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Inyungu zabonetse ku mwaka",
   "portfolioRealizedHint": "Ibyagurishijwe bibanza guhuzwa n'ibyo waguze kera cyane (FIFO), bigahindurwa ku gipimo cy'ivunjisha cy'uyu munsi. Ku imenyekanisha ry'umusoro, koresha raporo y'umuhuza wawe (broker).",
   "staleNewResults": "Kuva iri sesengura ryakorwa, ibyavuye mu gihembwe bishya byasohotse ({symbol}, {date}).",
-  "newResultsBadge": "Ibyavuyemo bishya"
+  "newResultsBadge": "Ibyavuyemo bishya",
+  "portfolioImportBrokers": "Ibyoherejwe bivuye muri Revolut, Trading 212 na Interactive Brokers na byo biramenyekana, hamwe n'ibyagurishijwe; inyungu ku migabane n'amafaranga yashyizwemo birasimbukwa.",
+  "portfolioImportFile": "Hitamo dosiye",
+  "offlineBanner": "Nta murandasi – herekanwa amakuru aheruka kubikwa ({time})."
 }

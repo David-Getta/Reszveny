@@ -1876,4 +1876,16 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ಹೊಸ ಫಲಿತಾಂಶಗಳು';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 ಮತ್ತು Interactive Brokers ನ ರಫ್ತುಗಳನ್ನೂ ಮಾರಾಟಗಳ ಸಹಿತ ಗುರುತಿಸಲಾಗುತ್ತದೆ; ಡಿವಿಡೆಂಡ್ ಮತ್ತು ಠೇವಣಿಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get portfolioImportFile => 'ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ಸಂಪರ್ಕವಿಲ್ಲ – ಕೊನೆಯದಾಗಿ ಉಳಿಸಿದ ಡೇಟಾವನ್ನು ತೋರಿಸಲಾಗುತ್ತಿದೆ ($time).';
+  }
 }

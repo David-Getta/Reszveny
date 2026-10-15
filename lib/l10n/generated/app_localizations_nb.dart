@@ -1869,4 +1869,16 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nye resultater';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Eksporter fra Revolut, Trading 212 og Interactive Brokers gjenkjennes også, med salg; utbytte og innskudd hoppes over.';
+
+  @override
+  String get portfolioImportFile => 'Velg en fil';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ingen tilkobling – viser sist lagrede data ($time).';
+  }
 }

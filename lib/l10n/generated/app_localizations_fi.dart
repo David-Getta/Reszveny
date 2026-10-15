@@ -1871,4 +1871,16 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Uudet tulokset';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Myös palveluiden Revolut, Trading 212 ja Interactive Brokers viennit tunnistetaan myynteineen; osingot ja talletukset ohitetaan.';
+
+  @override
+  String get portfolioImportFile => 'Valitse tiedosto';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ei yhteyttä – näytetään viimeksi tallennetut tiedot ($time).';
+  }
 }

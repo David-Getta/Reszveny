@@ -1877,4 +1877,16 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Iziphumo ezitsha';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Iithumelo eziphuma kwi-Revolut, Trading 212 kunye ne-Interactive Brokers nazo ziyaqondwa, kunye nokuthengisa; ii-dividend kunye needipozithi ziyatsitywa.';
+
+  @override
+  String get portfolioImportFile => 'Khetha ifayile';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Akukho qhagamshelo – kuboniswa idatha egcinwe ekugqibeleni ($time).';
+  }
 }

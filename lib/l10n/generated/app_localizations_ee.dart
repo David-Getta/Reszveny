@@ -1873,4 +1873,16 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Akɔntabubu yeye';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Wodzea Revolut, Trading 212 kple Interactive Brokers ƒe agbalẽ siwo wotso ɖe go hã, kple nusiwo wodzra; wogblea viɖemama kple ga siwo wotsɔ de ɖi ɖi.';
+
+  @override
+  String get portfolioImportFile => 'Tia faɛl aɖe';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Kadodo aɖeke meli o – nyatakaka siwo wodzra ɖo mlɛtɔ la ko le ɖeɖem fia ($time).';
+  }
 }

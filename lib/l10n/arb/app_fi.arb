@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Toteutuneet voitot vuosittain",
   "portfolioRealizedHint": "Myynnit kohdistetaan ensin vanhimpiin ostoihisi (FIFO), ja ne muunnetaan tämän päivän valuuttakurssilla. Käytä veroilmoituksessa välittäjäsi tiliotetta.",
   "staleNewResults": "Tämän analyysin jälkeen on julkaistu uusi osavuosikatsaus ({symbol}, {date}).",
-  "newResultsBadge": "Uudet tulokset"
+  "newResultsBadge": "Uudet tulokset",
+  "portfolioImportBrokers": "Myös palveluiden Revolut, Trading 212 ja Interactive Brokers viennit tunnistetaan myynteineen; osingot ja talletukset ohitetaan.",
+  "portfolioImportFile": "Valitse tiedosto",
+  "offlineBanner": "Ei yhteyttä – näytetään viimeksi tallennetut tiedot ({time})."
 }

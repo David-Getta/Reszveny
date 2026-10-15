@@ -1879,4 +1879,16 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Ebivudde ebipya';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ebifulumizibwa okuva mu Revolut, Trading 212 ne Interactive Brokers nabyo bitegeerebwa, nga mw\'otwalidde n\'ebyatundibwa; amagoba ku migabo n\'ensimbi ezateekebwamu bisuulibwa.';
+
+  @override
+  String get portfolioImportFile => 'Londa fayiro';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Tewali yintaneeti – data eyasembayo okuterekebwa y\'eragibwa ($time).';
+  }
 }

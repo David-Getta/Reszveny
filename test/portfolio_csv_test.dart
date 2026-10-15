@@ -46,6 +46,53 @@ void main() {
     expect(r.skipped, 2);
   });
 
+  test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {
+    final revolut = parsePortfolioCsv(
+      'Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate\n'
+      '2025-02-03T14:31:07.123Z,,CASH TOP-UP,,,USD 1000,USD,1.00\n'
+      '2025-02-03T14:35:12.456Z,AAPL,BUY - MARKET,2,USD 230.10,USD 460.20,USD,1.00\n'
+      '2025-05-15T09:01:00.000Z,AAPL,DIVIDEND,,,USD 0.50,USD,1.00\n'
+      '2025-09-01T15:00:00.000Z,AAPL,SELL - LIMIT,0.5,USD 240,USD 120,USD,1.00\n',
+    );
+    expect(revolut.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.date, l.sell)), [
+      ('AAPL', 2.0, 230.1, 'USD', DateTime(2025, 2, 3), false),
+      ('AAPL', 0.5, 240.0, 'USD', DateTime(2025, 9, 1), true),
+    ]);
+    expect(revolut.skipped, 0);
+
+    final t212 = parsePortfolioCsv(
+      'Action,Time,ISIN,Ticker,Name,No. of shares,Price / share,Currency (Price / share),Exchange rate,Total,'
+      'Currency (Total)\n'
+      'Deposit,2025-01-02 10:00:00,,,,,,,,500,EUR\n'
+      'Market buy,2025-01-02 10:05:11,US5949181045,MSFT,Microsoft,1.5,410.20,USD,1.04,592.10,EUR\n'
+      'Limit sell,2025-06-10 16:20:00,US5949181045,MSFT,Microsoft,0.5,450,USD,1.10,204.55,EUR\n',
+    );
+    expect(t212.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.sell)), [
+      ('MSFT', 1.5, 410.2, 'USD', false),
+      ('MSFT', 0.5, 450.0, 'USD', true),
+    ]);
+
+    final ibkr = parsePortfolioCsv(
+      'Statement,Header,Field Name,Field Value\n'
+      'Statement,Data,Period,"January 1, 2025 - December 31, 2025"\n'
+      'Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,Proceeds\n'
+      'Trades,Data,Order,Stocks,USD,NVDA,"2025-03-14, 10:31:12",10,120.5,-1205\n'
+      'Trades,Data,Order,Stocks,EUR,ASML,"2025-04-02, 09:00:01",-2,640.25,1280.5\n'
+      'Trades,SubTotal,,Stocks,USD,NVDA,,10,,-1205\n'
+      'Dividends,Header,Currency,Date,Description,Amount\n',
+    );
+    expect(ibkr.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.date, l.sell)), [
+      ('NVDA', 10.0, 120.5, 'USD', DateTime(2025, 3, 14), false),
+      ('ASML', 2.0, 640.25, 'EUR', DateTime(2025, 4, 2), true),
+    ]);
+    expect(ibkr.skipped, 0);
+  });
+
+  test('quoted fields keep their commas and quotes', () {
+    expect(splitCsvLine('a,"b, c",d', ','), ['a', 'b, c', 'd']);
+    expect(splitCsvLine('"x ""y""",1', ','), ['x "y"', '1']);
+  });
+
   test('export then import gives the same purchases back', () {
     const lots = [
       PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 199.99, currency: 'USD'),
@@ -88,5 +135,16 @@ void main() {
     await tester.pumpAndSettle();
     expect(shared.single, startsWith('symbol,quantity,price,currency,date,side\n'));
     expect(shared.single, contains('AAPL,10,180,USD,2025-03-14'));
+
+    // Ugyanaz még egyszer (pl. a teljes bróker-export újra): nem duplázódik.
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-import')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('portfolio-import-file')), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('portfolio-import-text')), shared.single);
+    await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots, hasLength(2));
   });
 }

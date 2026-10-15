@@ -1364,5 +1364,23 @@
   "newResultsBadge": "New results",
   "@newResultsBadge": {
     "description": "Small badge on a saved analysis in the list: the company has reported quarterly results since the analysis."
+  },
+  "portfolioImportBrokers": "Exports from Revolut, Trading 212 and Interactive Brokers are recognised too, with sales; dividends and deposits are skipped.",
+  "@portfolioImportBrokers": {
+    "description": "Note in the portfolio import dialog. Keep the broker names as they are."
+  },
+  "portfolioImportFile": "Choose a file",
+  "@portfolioImportFile": {
+    "description": "Button in the portfolio import dialog: pick a CSV file instead of pasting."
+  },
+  "offlineBanner": "No connection – showing the data saved on {time}.",
+  "@offlineBanner": {
+    "description": "Banner on the stock page when there is no network and the last saved prices are shown.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "Oct 15, 2026 09:12"
+      }
+    }
   }
 }

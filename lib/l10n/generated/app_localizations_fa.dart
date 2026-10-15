@@ -1868,4 +1868,16 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'نتایج جدید';
+
+  @override
+  String get portfolioImportBrokers =>
+      'خروجی‌های Revolut، Trading 212 و Interactive Brokers هم همراه با فروش‌ها شناسایی می‌شوند؛ سود نقدی و واریزها نادیده گرفته می‌شوند.';
+
+  @override
+  String get portfolioImportFile => 'انتخاب فایل';
+
+  @override
+  String offlineBanner(String time) {
+    return 'اتصال برقرار نیست – آخرین داده‌های ذخیره‌شده نمایش داده می‌شود ($time).';
+  }
 }

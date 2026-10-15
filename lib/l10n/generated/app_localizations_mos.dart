@@ -1856,4 +1856,16 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Ligd-yɛl paalse';
+
+  @override
+  String get portfolioImportBrokers =>
+      'B miẽ a Revolut, Trading 212 la Interactive Brokers sɛb-rãmba me, ne koosgã; dividãnd la ligd sẽn ning-b n ka kẽesd ye.';
+
+  @override
+  String get portfolioImportFile => 'Yãk fiise';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Kõneksõ ka be ye – d wilgdame bãngr sẽn yaa sɛɛb n bĩngame ($time).';
+  }
 }

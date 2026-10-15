@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Nafoore heɓaande e kala hitaande",
   "portfolioRealizedHint": "Yeeyuuji ina njaaɓndira adan e soodgol maa ɓurngol ƙiɗɗude (FIFO), waylaa e coggu beccol hannde. Ngam deftere lempo maa, huutoro ciimtol broker maa.",
   "staleNewResults": "Gila ndee ƴeewndo nde waɗaa, ngalluuji lebbi tati kesi njaltinaama ({symbol}, {date}).",
-  "newResultsBadge": "Ngalluuji kesi"
+  "newResultsBadge": "Ngalluuji kesi",
+  "portfolioImportBrokers": "Ɗoftaaɗe Revolut, Trading 212 e Interactive Brokers kadi ina heftinee, wondude e coggu; geɗal nafoore e njoɓdi ina acceede.",
+  "portfolioImportFile": "Suɓo fiilde",
+  "offlineBanner": "Ceŋagol alaa – keɓe sakkiiɗe danndeede ina njaltinee ({time})."
 }

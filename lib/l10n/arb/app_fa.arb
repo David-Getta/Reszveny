@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "سود محقق‌شده به تفکیک سال",
   "portfolioRealizedHint": "فروش‌ها ابتدا با قدیمی‌ترین خریدهای شما تطبیق داده می‌شوند (FIFO) و با نرخ ارز امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزار خود استفاده کنید.",
   "staleNewResults": "پس از این تحلیل، نتایج فصلی جدیدی منتشر شده است ({symbol}، {date}).",
-  "newResultsBadge": "نتایج جدید"
+  "newResultsBadge": "نتایج جدید",
+  "portfolioImportBrokers": "خروجی‌های Revolut، Trading 212 و Interactive Brokers هم همراه با فروش‌ها شناسایی می‌شوند؛ سود نقدی و واریزها نادیده گرفته می‌شوند.",
+  "portfolioImportFile": "انتخاب فایل",
+  "offlineBanner": "اتصال برقرار نیست – آخرین داده‌های ذخیره‌شده نمایش داده می‌شود ({time})."
 }

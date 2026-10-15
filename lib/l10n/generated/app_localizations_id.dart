@@ -1865,4 +1865,16 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Laporan baru';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ekspor dari Revolut, Trading 212, dan Interactive Brokers juga dikenali, termasuk penjualan; dividen dan setoran dilewati.';
+
+  @override
+  String get portfolioImportFile => 'Pilih file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Tidak ada koneksi – menampilkan data yang terakhir disimpan ($time).';
+  }
 }

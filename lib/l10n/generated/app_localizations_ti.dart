@@ -1837,4 +1837,16 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'ሓድሽ ውጽኢት';
+
+  @override
+  String get portfolioImportBrokers =>
+      'ካብ Revolut፣ Trading 212ን Interactive Brokersን ዝወጹ ፋይላት እውን ምስ መሸጣታት ይልለዩ፤ ብጽሒት ትርፍን ተቐማጢ ገንዘብን ይሕለፉ።';
+
+  @override
+  String get portfolioImportFile => 'ፋይል ምረጽ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'ርክብ የለን – እቲ ናይ መወዳእታ ዝተዓቀበ ሓበሬታ ይርአ ኣሎ ($time)።';
+  }
 }

@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "연도별 실현 손익",
   "portfolioRealizedHint": "매도는 가장 오래된 매수분부터 차감되며(FIFO), 오늘 환율로 환산됩니다. 세금 신고에는 증권사 거래 내역서를 사용하세요.",
   "staleNewResults": "이 분석 이후 새 분기 실적이 발표되었습니다({symbol}, {date}).",
-  "newResultsBadge": "새 실적"
+  "newResultsBadge": "새 실적",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers의 내보내기 파일도 매도 내역과 함께 인식됩니다. 배당과 입금은 건너뜁니다.",
+  "portfolioImportFile": "파일 선택",
+  "offlineBanner": "연결 없음 – 마지막으로 저장된 데이터를 표시합니다({time})."
 }

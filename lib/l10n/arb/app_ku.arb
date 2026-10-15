@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Qezenca bidestxistî li gorî salan",
   "portfolioRealizedHint": "Firotin pêşî bi kirînên te yên herî kevn re têne hevberkirin (FIFO), bi rêjeya danûstandinê ya îro têne guhertin. Ji bo daxuyaniya bacê, rapora brokerê xwe bikar bîne.",
   "staleNewResults": "Piştî vê analîzê encamên nû yên çaryekî hatin weşandin ({symbol}, {date}).",
-  "newResultsBadge": "Encamên nû"
+  "newResultsBadge": "Encamên nû",
+  "portfolioImportBrokers": "Derxistinên ji Revolut, Trading 212 û Interactive Brokers jî tên naskirin, bi firotinan re; dîvîdend û razandin tên derbaskirin.",
+  "portfolioImportFile": "Pelekê hilbijêre",
+  "offlineBanner": "Girêdan tune – daneyên dawî yên tomarkirî têne nîşandan ({time})."
 }

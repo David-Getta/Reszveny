@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Ganancias realizadas por año",
   "portfolioRealizedHint": "Las ventas se asignan primero a tus compras más antiguas (FIFO) y se convierten al tipo de cambio de hoy. Para tu declaración de impuestos, usa el extracto de tu bróker.",
   "staleNewResults": "Desde este análisis se han publicado nuevos resultados trimestrales ({symbol}, {date}).",
-  "newResultsBadge": "Nuevos resultados"
+  "newResultsBadge": "Nuevos resultados",
+  "portfolioImportBrokers": "También se reconocen las exportaciones de Revolut, Trading 212 e Interactive Brokers, con las ventas; los dividendos y los depósitos se omiten.",
+  "portfolioImportFile": "Elige un archivo",
+  "offlineBanner": "Sin conexión – se muestran los últimos datos guardados ({time})."
 }

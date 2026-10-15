@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "سال وار حاصل شدہ منافع",
   "portfolioRealizedHint": "فروخت کو پہلے آپ کی سب سے پرانی خریداریوں سے ملایا جاتا ہے (FIFO)، آج کی شرح مبادلہ پر تبدیل کر کے۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔",
   "staleNewResults": "اس تجزیے کے بعد نئے سہ ماہی نتائج جاری ہوئے ہیں ({symbol}، {date})۔",
-  "newResultsBadge": "نئے نتائج"
+  "newResultsBadge": "نئے نتائج",
+  "portfolioImportBrokers": "Revolut، Trading 212 اور Interactive Brokers کی ایکسپورٹ فائلیں بھی فروخت سمیت پہچانی جاتی ہیں؛ ڈیویڈنڈ اور جمع شدہ رقم چھوڑ دی جاتی ہے۔",
+  "portfolioImportFile": "فائل منتخب کریں",
+  "offlineBanner": "کنکشن نہیں ہے – آخری بار محفوظ کیا گیا ڈیٹا دکھایا جا رہا ہے ({time})۔"
 }

@@ -1866,4 +1866,16 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'नया नतीजा';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 आ Interactive Brokers के एक्सपोर्ट भी बिक्री समेत पहचानल जाला; लाभांश आ जमा छोड़ दिहल जाला।';
+
+  @override
+  String get portfolioImportFile => 'फाइल चुनीं';
+
+  @override
+  String offlineBanner(String time) {
+    return 'कनेक्शन नइखे – पिछला बेर सहेजल डेटा देखावल जा रहल बा ($time)।';
+  }
 }

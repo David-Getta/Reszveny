@@ -52,19 +52,161 @@ class CsvImport {
 final _symbol = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 final _currency = RegExp(r'^[A-Z]{3}$');
 
+/// Egy CSV-sor mezői: idézőjelek között az elválasztó és a `""` is lehet a mezőben.
+List<String> splitCsvLine(String line, String sep) {
+  final out = <String>[];
+  final b = StringBuffer();
+  var quoted = false;
+  for (var i = 0; i < line.length; i++) {
+    final c = line[i];
+    if (c == '"') {
+      if (quoted && i + 1 < line.length && line[i + 1] == '"') {
+        b.write('"');
+        i++;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (c == sep && !quoted) {
+      out.add(b.toString().trim());
+      b.clear();
+    } else {
+      b.write(c);
+    }
+  }
+  out.add(b.toString().trim());
+  return out;
+}
+
+String _separator(String line) => line.contains('\t') ? '\t' : (line.contains(';') ? ';' : ',');
+
+/// A bróker-exportok oszlopnevei (kisbetűvel, írásjelek és szóközök nélkül).
+const _roles = <String, Set<String>>{
+  'symbol': {'symbol', 'ticker'},
+  'quantity': {'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units'},
+  'price': {'price', 'pricepershare', 'priceshare', 'tprice', 'tradeprice', 'unitprice', 'shareprice'},
+  'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary'},
+  'date': {'date', 'time', 'datetime', 'tradedate'},
+  'side': {'type', 'action', 'side', 'buysell', 'transactiontype'},
+};
+
+/// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
+Map<String, int>? _header(List<String> cells) {
+  final found = <String, int>{};
+  for (final (i, c) in cells.indexed) {
+    final n = c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
+    for (final e in _roles.entries) {
+      if (!found.containsKey(e.key) && e.value.contains(n)) found[e.key] = i;
+    }
+  }
+  return found.containsKey('symbol') && found.containsKey('quantity') && found.containsKey('price') ? found : null;
+}
+
+/// Dátum a gyakori alakokban: `2024-03-14…`, `20240314`, `14/03/2024`, `14.03.2024`.
+DateTime? _date(String raw) {
+  final s = raw.trim();
+  final iso = RegExp(r'^(\d{4})-(\d{2})-(\d{2})').firstMatch(s);
+  if (iso != null) return DateTime.tryParse('${iso[1]}-${iso[2]}-${iso[3]}');
+  final compact = RegExp(r'^(\d{4})(\d{2})(\d{2})(\D|$)').firstMatch(s);
+  if (compact != null) return DateTime.tryParse('${compact[1]}-${compact[2]}-${compact[3]}');
+  final eu = RegExp(r'^(\d{1,2})[./](\d{1,2})[./](\d{4})').firstMatch(s);
+  if (eu != null) {
+    final d = int.parse(eu[1]!), m = int.parse(eu[2]!), y = int.parse(eu[3]!);
+    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return DateTime(y, m, d);
+  }
+  return null;
+}
+
+/// Ár, akár pénznemmel együtt („USD 182.50”, „182,50 EUR”): a szám és a pénznem.
+(double?, String?) _price(String raw) {
+  final ccy = RegExp(r'\b([A-Z]{3})\b').firstMatch(raw)?.group(1);
+  return (parseDecimal(raw.replaceAll(RegExp(r'[^0-9,.\-]'), '')), ccy);
+}
+
 /// Beillesztett sorok beolvasása, megengedően: a mezőelválasztó tabulátor,
-/// pontosvessző (ilyenkor a tizedesjel lehet vessző) vagy vessző; a fejléc
-/// elhagyható; a pénznem és a dátum is elhagyható (pénznem nélkül [defaultCurrency]).
-/// Eladás: a hatodik oszlop `sell` (vagy `s`), illetve negatív darabszám.
+/// pontosvessző (ilyenkor a tizedesjel lehet vessző) vagy vessző.
+///
+/// Ha van felismerhető fejlécsor (pl. a Revolut, a Trading 212 vagy az
+/// Interactive Brokers exportja), az oszlopok név szerint; a vételen és
+/// eladáson kívüli sorokat (osztalék, befizetés) csendben kihagyja. Fejléc
+/// nélkül a sorrend: `ticker, darab, ár, pénznem, dátum, side`; a pénznem és a
+/// dátum elhagyható (pénznem nélkül [defaultCurrency]). Eladás: `sell` a
+/// hatodik oszlopban, illetve negatív darabszám.
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
+  final lines = [
+    for (final l in text.split(RegExp(r'\r?\n')))
+      if (l.trim().isNotEmpty) l.trim(),
+  ];
+  // A fejléc nem mindig az első sor (pl. az IBKR kimutatásban szakaszok vannak).
+  for (final (i, line) in lines.take(30).indexed) {
+    final sep = _separator(line);
+    final h = _header(splitCsvLine(line, sep));
+    if (h != null) return _withHeader(lines.skip(i + 1), sep, h, splitCsvLine(line, sep), defaultCurrency);
+  }
+  return _positional(lines, defaultCurrency);
+}
+
+CsvImport _withHeader(
+  Iterable<String> lines,
+  String sep,
+  Map<String, int> col,
+  List<String> header,
+  String defaultCurrency,
+) {
+  final lots = <ImportedLot>[];
+  var skipped = 0;
+  String cell(List<String> f, String role) {
+    final i = col[role];
+    return i == null || i >= f.length ? '' : f[i];
+  }
+
+  // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…” sorok számítanak.
+  final sections = header.length > 1 && header[1].toLowerCase() == 'header';
+  for (final line in lines) {
+    final f = splitCsvLine(line, sections ? sep : _separator(line));
+    if (sections && (f.length < 2 || f[0] != header[0] || f[1].toLowerCase() != 'data')) continue;
+    // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
+    final side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
+        .toLowerCase();
+    final signed = parseDecimal(cell(f, 'quantity').replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+    bool? sell;
+    if (side.isEmpty) {
+      sell = signed != null && signed < 0;
+    } else if (side.contains('sell') || side == 's' || side == 'sld') {
+      sell = true;
+    } else if (side.contains('buy') || side == 'b' || side == 'bot') {
+      sell = false;
+    }
+    // Osztalék, befizetés, díj stb.: nem vétel és nem eladás.
+    if (sell == null) continue;
+    final symbol = cell(f, 'symbol').toUpperCase();
+    final quantity = signed?.abs();
+    final (price, priceCcy) = _price(cell(f, 'price'));
+    if (!_symbol.hasMatch(symbol) || quantity == null || quantity <= 0 || price == null || price <= 0) {
+      skipped++;
+      continue;
+    }
+    final ccyCell = cell(f, 'currency').toUpperCase();
+    final ccy = _currency.hasMatch(ccyCell) ? ccyCell : (priceCcy ?? defaultCurrency);
+    lots.add(
+      ImportedLot(
+        symbol: symbol,
+        quantity: quantity,
+        price: price,
+        currency: ccy,
+        date: _date(cell(f, 'date')),
+        sell: sell,
+      ),
+    );
+  }
+  return CsvImport(lots, skipped);
+}
+
+CsvImport _positional(List<String> lines, String defaultCurrency) {
   final lots = <ImportedLot>[];
   var skipped = 0;
   var first = true;
-  for (final raw in text.split(RegExp(r'\r?\n'))) {
-    final line = raw.trim();
-    if (line.isEmpty) continue;
-    final sep = line.contains('\t') ? '\t' : (line.contains(';') ? ';' : ',');
-    final f = [for (final c in line.split(sep)) c.trim().replaceAll('"', '')];
+  for (final line in lines) {
+    final f = splitCsvLine(line, _separator(line));
     final symbol = f.isNotEmpty ? f[0].toUpperCase() : '';
     final signed = f.length > 1 ? parseDecimal(f[1]) : null;
     final side = f.length > 5 ? f[5].toLowerCase() : '';
@@ -80,7 +222,7 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
     }
     first = false;
     final ccy = f.length > 3 && _currency.hasMatch(f[3].toUpperCase()) ? f[3].toUpperCase() : defaultCurrency;
-    final date = f.length > 4 ? DateTime.tryParse(f[4]) : null;
+    final date = f.length > 4 ? _date(f[4]) : null;
     lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date, sell: sell));
   }
   return CsvImport(lots, skipped);

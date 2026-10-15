@@ -1872,4 +1872,16 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Encamên nû';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Derxistinên ji Revolut, Trading 212 û Interactive Brokers jî tên naskirin, bi firotinan re; dîvîdend û razandin tên derbaskirin.';
+
+  @override
+  String get portfolioImportFile => 'Pelekê hilbijêre';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Girêdan tune – daneyên dawî yên tomarkirî têne nîşandan ($time).';
+  }
 }

@@ -1869,4 +1869,16 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'New results';
+
+  @override
+  String get portfolioImportBrokers =>
+      'E dey sabi exports from Revolut, Trading 212 and Interactive Brokers too, plus di sales; e dey skip dividend and deposit.';
+
+  @override
+  String get portfolioImportFile => 'Choose file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'No connection – we dey show di data wey we save last ($time).';
+  }
 }

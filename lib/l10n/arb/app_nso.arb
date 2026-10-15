@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Poelo ye e phethagetšego ka ngwaga",
   "portfolioRealizedHint": "Dithekišo di bapetšwa pele le direko tša gago tša kgale kudu (FIFO), di fetošwa ka sekala sa phetošo sa lehono. Bakeng sa pego ya gago ya motšhelo, šomiša setatamente sa poroukara ya gago.",
   "staleNewResults": "Go tloga ka tshekatsheko ye, go phatlaladitšwe dipoelo tše mpsha tša kotara ({symbol}, {date}).",
-  "newResultsBadge": "Dipoelo tše mpsha"
+  "newResultsBadge": "Dipoelo tše mpsha",
+  "portfolioImportBrokers": "Diromelwantle go tšwa go Revolut, Trading 212 le Interactive Brokers le tšona di a lemogwa, gotee le dithekišo; dividende le dipeeletšo di a tlogelwa.",
+  "portfolioImportFile": "Kgetha faele",
+  "offlineBanner": "Ga go na kgokagano – go bontšhwa data ya mafelelo yeo e bolokilwego ({time})."
 }

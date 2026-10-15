@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Keuntungan direalisasi mengikut tahun",
   "portfolioRealizedHint": "Jualan dipadankan dahulu dengan pembelian tertua anda (FIFO), ditukar pada kadar pertukaran hari ini. Untuk penyata cukai anda, gunakan penyata broker anda.",
   "staleNewResults": "Sejak analisis ini, keputusan suku tahunan baharu telah diterbitkan ({symbol}, {date}).",
-  "newResultsBadge": "Keputusan baharu"
+  "newResultsBadge": "Keputusan baharu",
+  "portfolioImportBrokers": "Eksport daripada Revolut, Trading 212 dan Interactive Brokers juga dikenali, termasuk jualan; dividen dan deposit dilangkau.",
+  "portfolioImportFile": "Pilih fail",
+  "offlineBanner": "Tiada sambungan – memaparkan data yang terakhir disimpan ({time})."
 }

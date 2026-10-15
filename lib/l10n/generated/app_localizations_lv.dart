@@ -1908,4 +1908,16 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Jauni rezultāti';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Tiek atpazīti arī Revolut, Trading 212 un Interactive Brokers eksporti, ieskaitot pārdošanas; dividendes un iemaksas tiek izlaistas.';
+
+  @override
+  String get portfolioImportFile => 'Izvēlēties failu';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Nav savienojuma – tiek rādīti pēdējie saglabātie dati ($time).';
+  }
 }

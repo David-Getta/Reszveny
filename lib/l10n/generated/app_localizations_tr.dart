@@ -1869,4 +1869,16 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Yeni bilanço';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212 ve Interactive Brokers dışa aktarımları da satışlarla birlikte tanınır; temettüler ve para yatırmalar atlanır.';
+
+  @override
+  String get portfolioImportFile => 'Dosya seç';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Bağlantı yok – en son kaydedilen veriler gösteriliyor ($time).';
+  }
 }

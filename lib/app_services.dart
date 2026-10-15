@@ -31,6 +31,7 @@ import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
 import 'features/events/events_service.dart';
 import 'features/fx/fx_service.dart';
+import 'features/market_data/caching_market_data_provider.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
@@ -178,8 +179,9 @@ class AppServices {
     // Backend-módban minden külső hívás a hitelesített kliensen, a szerveren át megy.
     final backend = config.hasBackend ? BackendClient(baseUrl: config.backend) : null;
     final client = backend?.authenticated;
+    // Valódi adatforrásnál offline gyorsítótárral: hálózat nélkül az utolsó ismert adat látszik.
     final MarketDataProvider marketData = config.hasFinnhubKey
-        ? FinnhubMarketDataProvider(config: config, client: client)
+        ? CachingMarketDataProvider(FinnhubMarketDataProvider(config: config, client: client))
         : DemoMarketDataProvider();
     late final AppServices services;
     services = AppServices(
@@ -263,6 +265,7 @@ class AppServices {
       await reports.clearCache();
       await notes.clear();
       await PortfolioReviewer.clearLast();
+      await CachingMarketDataProvider.clear();
     }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();

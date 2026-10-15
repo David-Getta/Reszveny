@@ -1880,4 +1880,16 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Mbuyelo lowuntshwa';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Swo humesiwa eka Revolut, Trading 212 na Interactive Brokers na swona swa tiveka, swin\'we ni leswi xavisiweke; dividende ni mali leyi vekiweke swa tlulamiwa.';
+
+  @override
+  String get portfolioImportFile => 'Hlawula fayili';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ku hava vuhlanganisi – ku kombisiwa data yo hetelela leyi hlayisiweke ($time).';
+  }
 }

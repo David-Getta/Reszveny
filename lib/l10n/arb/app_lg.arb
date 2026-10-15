@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Amagoba agafunise buli mwaka",
   "portfolioRealizedHint": "Ebitundiddwa bisooka kugeraageranyizibwa n'ebyo bye wasooka okugula (FIFO), nga bikyusiddwa ku muwendo gw'okuwaanyisa ensimbi ogw'olwaleero. Ku lipoota y'omusolo, kozesa sitetimenti ya broker wo.",
   "staleNewResults": "Okuva okwekenneenya kuno lwe kwakolebwa, ebivudde mu kitundu ky'omwaka ebipya bifulumiziddwa ({symbol}, {date}).",
-  "newResultsBadge": "Ebivudde ebipya"
+  "newResultsBadge": "Ebivudde ebipya",
+  "portfolioImportBrokers": "Ebifulumizibwa okuva mu Revolut, Trading 212 ne Interactive Brokers nabyo bitegeerebwa, nga mw'otwalidde n'ebyatundibwa; amagoba ku migabo n'ensimbi ezateekebwamu bisuulibwa.",
+  "portfolioImportFile": "Londa fayiro",
+  "offlineBanner": "Tewali yintaneeti – data eyasembayo okuterekebwa y'eragibwa ({time})."
 }

@@ -1871,4 +1871,16 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Натиҷаҳои нав';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Содироти Revolut, Trading 212 ва Interactive Brokers низ бо фурӯшҳо шинохта мешаванд; дивидендҳо ва воридоти пулӣ сарфи назар карда мешаванд.';
+
+  @override
+  String get portfolioImportFile => 'Интихоби файл';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Пайвастшавӣ нест – маълумоти охирин захирашуда нишон дода мешавад ($time).';
+  }
 }

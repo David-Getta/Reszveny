@@ -1875,4 +1875,16 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Resultado pyahu';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ojekuaa avei Revolut, Trading 212 ha Interactive Brokers exportación, ñemu ndive; dividendo ha depósito ojepoi.';
+
+  @override
+  String get portfolioImportFile => 'Eiporavo peteĩ archivo';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Ndaipóri ñanduti – ojehechauka umi mbaʼekuaarã oñeñongatu pahaguéva ($time).';
+  }
 }

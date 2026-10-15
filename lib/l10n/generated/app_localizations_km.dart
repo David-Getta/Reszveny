@@ -1853,4 +1853,16 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'លទ្ធផលថ្មី';
+
+  @override
+  String get portfolioImportBrokers =>
+      'ការនាំចេញពី Revolut, Trading 212 និង Interactive Brokers ក៏ត្រូវបានស្គាល់ដែរ រួមទាំងការលក់; ភាគលាភ និងការដាក់ប្រាក់ត្រូវបានរំលង។';
+
+  @override
+  String get portfolioImportFile => 'ជ្រើសរើសឯកសារ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'គ្មានការតភ្ជាប់ – កំពុងបង្ហាញទិន្នន័យដែលបានរក្សាទុកចុងក្រោយ ($time)។';
+  }
 }

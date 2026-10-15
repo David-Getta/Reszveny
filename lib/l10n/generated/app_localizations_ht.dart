@@ -1868,4 +1868,16 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Nouvo rezilta';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ekspòtasyon Revolut, Trading 212 ak Interactive Brokers rekonèt tou, ansanm ak vant yo; dividann ak depo yo sote.';
+
+  @override
+  String get portfolioImportFile => 'Chwazi yon fichye';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Pa gen koneksyon – n ap montre dènye done ki te anrejistre yo ($time).';
+  }
 }

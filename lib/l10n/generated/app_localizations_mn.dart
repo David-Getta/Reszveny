@@ -1870,4 +1870,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Шинэ тайлан';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Revolut, Trading 212, Interactive Brokers-ийн экспортыг мөн борлуулалттай нь хамт танина; ногдол ашиг болон орлогыг алгасна.';
+
+  @override
+  String get portfolioImportFile => 'Файл сонгох';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Холболт алга – хамгийн сүүлд хадгалсан өгөгдлийг харуулж байна ($time).';
+  }
 }

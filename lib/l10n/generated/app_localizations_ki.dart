@@ -1869,4 +1869,16 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Maumĩrĩra merũ';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Mĩthiĩ ya kuuma Revolut, Trading 212 na Interactive Brokers o nayo nĩ ĩmenyekaga, hamwe na wendia; dividend na mbeca iria ĩkĩrĩtwo nĩ itigagwo.';
+
+  @override
+  String get portfolioImportFile => 'Thuura faĩlũ';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Gũtirĩ connection – kũroonanio data ya kũrigĩrĩria ĩrĩa yaigirwo ($time).';
+  }
 }

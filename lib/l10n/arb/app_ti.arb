@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "ዝተረጋገጸ ትርፊ ብዓመት",
   "portfolioRealizedHint": "መሸጣታት መጀመርታ ምስ ዝበለጸ ዝኣረገ ዕድግታትኩም ይዛመዱ (FIFO)፣ ብናይ ሎሚ ናይ ገንዘብ ምልውዋጥ ዋጋ ይቕየሩ። ንናይ ግብሪ መግለጺኹም፣ ናይ ደላላኹም መግለጺ ተጠቐሙ።",
   "staleNewResults": "ድሕሪ እዚ ትንተና ሓድሽ ናይ ርብዒ ዓመት ውጽኢታት ተሓቲሙ ኣሎ ({symbol}፣ {date})።",
-  "newResultsBadge": "ሓድሽ ውጽኢት"
+  "newResultsBadge": "ሓድሽ ውጽኢት",
+  "portfolioImportBrokers": "ካብ Revolut፣ Trading 212ን Interactive Brokersን ዝወጹ ፋይላት እውን ምስ መሸጣታት ይልለዩ፤ ብጽሒት ትርፍን ተቐማጢ ገንዘብን ይሕለፉ።",
+  "portfolioImportFile": "ፋይል ምረጽ",
+  "offlineBanner": "ርክብ የለን – እቲ ናይ መወዳእታ ዝተዓቀበ ሓበሬታ ይርአ ኣሎ ({time})።"
 }

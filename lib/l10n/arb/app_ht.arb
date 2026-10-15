@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Benefis reyalize pa ane",
   "portfolioRealizedHint": "Nou matche lavant yo ak pi ansyen acha ou yo anvan (FIFO), konvèti nan to chanj jodi a. Pou deklarasyon taks ou, sèvi ak rapò koutye ou.",
   "staleNewResults": "Gen nouvo rezilta trimestriyèl ki pibliye depi analiz sa a ({symbol}, {date}).",
-  "newResultsBadge": "Nouvo rezilta"
+  "newResultsBadge": "Nouvo rezilta",
+  "portfolioImportBrokers": "Ekspòtasyon Revolut, Trading 212 ak Interactive Brokers rekonèt tou, ansanm ak vant yo; dividann ak depo yo sote.",
+  "portfolioImportFile": "Chwazi yon fichye",
+  "offlineBanner": "Pa gen koneksyon – n ap montre dènye done ki te anrejistre yo ({time})."
 }

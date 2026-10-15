@@ -1878,4 +1878,16 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Bag-ong resulta';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Mailhan usab ang mga export gikan sa Revolut, Trading 212 ug Interactive Brokers, apil ang mga gibaligya; ang mga dibidendo ug deposito laktawan.';
+
+  @override
+  String get portfolioImportFile => 'Pagpili og file';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Walay koneksyon – gipakita ang katapusang na-save nga datos ($time).';
+  }
 }

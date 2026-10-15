@@ -507,5 +507,8 @@
   "portfolioRealizedByYear": "Pundutso chaiyo pagore",
   "portfolioRealizedHint": "Zvatengeswa zvinotanga kuenzaniswa nezvawakatenga kare kare (FIFO), zvichishandurwa pamutengo wekuchinjana mari wanhasi. Pamushumo wako wemutero, shandisa chitatimende chebroker wako.",
   "staleNewResults": "Kubva paongororo iyi, mhedzisiro itsva yekota yaburitswa ({symbol}, {date}).",
-  "newResultsBadge": "Mhedzisiro itsva"
+  "newResultsBadge": "Mhedzisiro itsva",
+  "portfolioImportBrokers": "Zvinobviswa kubva kuRevolut, Trading 212 neInteractive Brokers zvinozivikanwawo, pamwe chete nezvatengeswa; dhividhendi nemari yakaiswa zvinosvetuka.",
+  "portfolioImportFile": "Sarudza faira",
+  "offlineBanner": "Hapana kubatana – kuri kuratidzwa data yekupedzisira yakachengetwa ({time})."
 }

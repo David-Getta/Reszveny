@@ -1874,4 +1874,16 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get newResultsBadge => 'Sabon sakamako';
+
+  @override
+  String get portfolioImportBrokers =>
+      'Ana kuma gane fitarwa daga Revolut, Trading 212 da Interactive Brokers, tare da sayarwa; ana tsallake rabon riba da ajiya.';
+
+  @override
+  String get portfolioImportFile => 'Zaɓi fayil';
+
+  @override
+  String offlineBanner(String time) {
+    return 'Babu haɗi – ana nuna bayanan da aka adana na ƙarshe ($time).';
+  }
 }
