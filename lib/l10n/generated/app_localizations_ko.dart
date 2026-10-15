@@ -1716,4 +1716,20 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioHistory => '평가액 추이';
+
+  @override
+  String get portfolioReviewTitle => 'AI 포트폴리오 진단';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI가 포트폴리오 전체를 살펴봅니다: 집중도, 섹터·통화 노출, 보유 종목들의 공통 리스크, 배당. 분석 1회를 사용합니다.';
+
+  @override
+  String get portfolioReviewButton => '내 포트폴리오 진단';
+
+  @override
+  String get portfolioReviewAgain => '다시 진단';
+
+  @override
+  String get portfolioReviewWorking => '포트폴리오를 진단하는 중…';
 }

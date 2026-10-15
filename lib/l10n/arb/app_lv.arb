@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-pasts, kad nostrādā brīdinājums",
   "alertEmailOn": "Ik pēc dažām minūtēm pārbaudām jūsu brīdinājumus un nosūtām jums e-pastu, pat ja lietotne ir aizvērta.",
   "alertEmailSignIn": "Pierakstieties ar savu e-pastu Iestatījumos, lai saņemtu brīdinājumus e-pastā, pat ja lietotne ir aizvērta.",
-  "portfolioHistory": "Vērtības izmaiņas"
+  "portfolioHistory": "Vērtības izmaiņas",
+  "portfolioReviewTitle": "Portfeļa AI analīze",
+  "portfolioReviewIntro": "AI pārskata visu jūsu portfeli: koncentrāciju, nozaru un valūtu riskus, jūsu akciju kopīgos riskus un dividendes. Izmanto 1 analīzi.",
+  "portfolioReviewButton": "Analizēt manu portfeli",
+  "portfolioReviewAgain": "Analizēt vēlreiz",
+  "portfolioReviewWorking": "Analizējam jūsu portfeli…"
 }

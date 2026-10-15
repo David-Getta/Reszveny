@@ -1770,4 +1770,20 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Үнэ цэнийн өөрчлөлт';
+
+  @override
+  String get portfolioReviewTitle => 'Портфолиогийн AI шинжилгээ';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI таны портфолиог бүхэлд нь хянана: төвлөрөл, салбар болон валютын эрсдэл, таны хувьцаануудын нийтлэг эрсдэл, ногдол ашиг. 1 шинжилгээ зарцуулна.';
+
+  @override
+  String get portfolioReviewButton => 'Миний портфолиог шинжлэх';
+
+  @override
+  String get portfolioReviewAgain => 'Дахин шинжлэх';
+
+  @override
+  String get portfolioReviewWorking => 'Таны портфолиог шинжилж байна…';
 }

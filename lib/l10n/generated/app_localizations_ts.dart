@@ -1780,4 +1780,20 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Nkoka hi ku famba ka nkarhi';
+
+  @override
+  String get portfolioReviewTitle => 'Nxopaxopo wa phothifoliyo hi AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI yi languta phothifoliyo ya wena hinkwayo: ku hlengeleteka ka mali endhawini yin\'we, ku titshega hi swiyenge ni mali ya matiko, makhombo lawa swiavelo swa wena swi ma avelanaka, ni swiavelo swa vuyelo. Yi tirhisa nxopaxopo wun\'we.';
+
+  @override
+  String get portfolioReviewButton => 'Xopaxopa phothifoliyo ya mina';
+
+  @override
+  String get portfolioReviewAgain => 'Xopaxopa nakambe';
+
+  @override
+  String get portfolioReviewWorking => 'Hi xopaxopa phothifoliyo ya wena…';
 }

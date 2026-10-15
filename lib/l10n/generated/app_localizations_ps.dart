@@ -1763,4 +1763,20 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'د ارزښت بدلون';
+
+  @override
+  String get portfolioReviewTitle => 'د پورټفولیو AI بیاکتنه';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ستاسو ټول پورټفولیو ګوري: تمرکز، د سکټورونو او اسعارو خطر، ستاسو د سهمونو ګډ خطرونه، او ګټه وېش. 1 تحلیل لګوي.';
+
+  @override
+  String get portfolioReviewButton => 'زما پورټفولیو وڅېړئ';
+
+  @override
+  String get portfolioReviewAgain => 'بیا یې وڅېړئ';
+
+  @override
+  String get portfolioReviewWorking => 'ستاسو پورټفولیو څېړل کېږي…';
 }

@@ -1777,4 +1777,20 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Արժեքի դինամիկա';
+
+  @override
+  String get portfolioReviewTitle => 'Պորտֆելի AI վերլուծություն';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI-ը դիտարկում է ձեր ամբողջ պորտֆելը՝ կենտրոնացում, ոլորտային և արժութային ռիսկեր, ձեր բաժնետոմսերի ընդհանուր ռիսկեր և շահաբաժիններ։ Օգտագործում է 1 վերլուծություն։';
+
+  @override
+  String get portfolioReviewButton => 'Վերլուծել իմ պորտֆելը';
+
+  @override
+  String get portfolioReviewAgain => 'Վերլուծել նորից';
+
+  @override
+  String get portfolioReviewWorking => 'Ձեր պորտֆելը վերլուծվում է…';
 }

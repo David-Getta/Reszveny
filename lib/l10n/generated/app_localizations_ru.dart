@@ -1825,4 +1825,20 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Динамика стоимости';
+
+  @override
+  String get portfolioReviewTitle => 'ИИ-анализ портфеля';
+
+  @override
+  String get portfolioReviewIntro =>
+      'ИИ изучает весь ваш портфель: концентрацию, зависимость от секторов и валют, общие риски ваших акций и дивиденды. Расходует 1 анализ.';
+
+  @override
+  String get portfolioReviewButton => 'Проанализировать мой портфель';
+
+  @override
+  String get portfolioReviewAgain => 'Проанализировать заново';
+
+  @override
+  String get portfolioReviewWorking => 'Анализируем ваш портфель…';
 }

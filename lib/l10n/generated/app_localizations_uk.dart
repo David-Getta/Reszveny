@@ -1823,4 +1823,20 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Динаміка вартості';
+
+  @override
+  String get portfolioReviewTitle => 'ШІ-аналіз портфеля';
+
+  @override
+  String get portfolioReviewIntro =>
+      'ШІ переглядає весь ваш портфель: концентрацію, залежність від секторів і валют, спільні ризики ваших акцій і дивіденди. Витрачає 1 аналіз.';
+
+  @override
+  String get portfolioReviewButton => 'Проаналізувати мій портфель';
+
+  @override
+  String get portfolioReviewAgain => 'Проаналізувати знову';
+
+  @override
+  String get portfolioReviewWorking => 'Аналізуємо ваш портфель…';
 }

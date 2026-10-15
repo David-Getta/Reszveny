@@ -1768,4 +1768,21 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'وقت کے ساتھ مالیت';
+
+  @override
+  String get portfolioReviewTitle => 'AI پورٹ فولیو جائزہ';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI آپ کے پورے پورٹ فولیو کا جائزہ لیتا ہے: ارتکاز، شعبوں اور کرنسیوں کا خطرہ، آپ کے شیئرز کے مشترکہ خطرات، اور ڈیویڈنڈ۔ 1 تجزیہ استعمال ہوتا ہے۔';
+
+  @override
+  String get portfolioReviewButton => 'میرے پورٹ فولیو کا جائزہ لیں';
+
+  @override
+  String get portfolioReviewAgain => 'دوبارہ جائزہ لیں';
+
+  @override
+  String get portfolioReviewWorking =>
+      'آپ کے پورٹ فولیو کا جائزہ لیا جا رہا ہے…';
 }

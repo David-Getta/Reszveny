@@ -479,5 +479,10 @@
   "alertEmailTitle": "Bildiriş işə düşəndə e-poçt",
   "alertEmailOn": "Bildirişlərinizi bir neçə dəqiqədən bir yoxlayırıq və tətbiq bağlı olsa belə, sizə e-poçt göndəririk.",
   "alertEmailSignIn": "Tətbiq bağlı olsa belə, bildirişləri e-poçtla almaq üçün Ayarlarda e-poçtunuzla daxil olun.",
-  "portfolioHistory": "Dəyərin dinamikası"
+  "portfolioHistory": "Dəyərin dinamikası",
+  "portfolioReviewTitle": "AI portfel təhlili",
+  "portfolioReviewIntro": "AI bütün portfelinizə baxır: konsentrasiya, sektor və valyuta asılılığı, səhmlərinizin ortaq riskləri və dividendlər. 1 təhlil sərf edir.",
+  "portfolioReviewButton": "Portfelimi təhlil et",
+  "portfolioReviewAgain": "Yenidən təhlil et",
+  "portfolioReviewWorking": "Portfeliniz təhlil edilir…"
 }

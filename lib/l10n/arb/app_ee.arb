@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail ne nuxlɔ̃ame aɖe va eme",
   "alertEmailOn": "Míekpɔa wò nuxlɔ̃amewo miniti ʋɛ aɖewo ɖesiaɖe eye míeɖoa e-mail wò, ne app la tu gɔ̃ hã.",
   "alertEmailSignIn": "Ge ɖe eme kple wò e-mail le Ɖoɖowo me be nàxɔ nuxlɔ̃amewo to e-mail dzi, ne app la tu gɔ̃ hã.",
-  "portfolioHistory": "Asi ƒe tɔtrɔ"
+  "portfolioHistory": "Asi ƒe tɔtrɔ",
+  "portfolioReviewTitle": "AI numekuku le akpawo ŋu",
+  "portfolioReviewIntro": "AI kpɔa wò akpawo katã: ne wò ga ƒo ƒu ɖe teƒe ɖeka, dɔwɔƒe ƒe akpawo kple gaƒomeviwo ƒe afɔku, afɔku siwo le wò akpawo katã ŋu, kple viɖe siwo nèxɔna. Exɔa numekuku 1.",
+  "portfolioReviewButton": "Dzro nye akpawo me",
+  "portfolioReviewAgain": "Gadzro me",
+  "portfolioReviewWorking": "Míele wò akpawo dzrom me…"
 }

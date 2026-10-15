@@ -479,5 +479,10 @@
   "alertEmailTitle": "Bildirishnoma ishga tushganda e-pochta",
   "alertEmailOn": "Bildirishnomalaringizni har bir necha daqiqada tekshiramiz va ilova yopiq boʻlsa ham sizga e-pochta yuboramiz.",
   "alertEmailSignIn": "Ilova yopiq boʻlsa ham bildirishnomalarni e-pochta orqali olish uchun Sozlamalarda e-pochtangiz bilan kiring.",
-  "portfolioHistory": "Qiymat dinamikasi"
+  "portfolioHistory": "Qiymat dinamikasi",
+  "portfolioReviewTitle": "Portfelning AI tahlili",
+  "portfolioReviewIntro": "AI butun portfelingizni koʻrib chiqadi: jamlanish, soha va valyuta xavfi, aksiyalaringizning umumiy xavflari va dividendlar. 1 ta tahlil sarflanadi.",
+  "portfolioReviewButton": "Portfelimni tahlil qilish",
+  "portfolioReviewAgain": "Qayta tahlil qilish",
+  "portfolioReviewWorking": "Portfelingiz tahlil qilinmoqda…"
 }

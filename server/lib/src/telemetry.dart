@@ -54,6 +54,7 @@ class TelemetryStore {
     'alert_created',
     'telemetry_on',
     'ask_question',
+    'portfolio_review',
   };
 
   /// Ennyi napig őrizzük a napi összesítést, illetve a napi aktív felhasználók

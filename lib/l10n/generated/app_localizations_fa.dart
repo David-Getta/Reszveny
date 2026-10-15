@@ -1768,4 +1768,20 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'روند ارزش';
+
+  @override
+  String get portfolioReviewTitle => 'بررسی سبد سهام با هوش مصنوعی';
+
+  @override
+  String get portfolioReviewIntro =>
+      'هوش مصنوعی کل سبد سهام شما را بررسی می‌کند: تمرکز، وابستگی به بخش‌ها و ارزها، ریسک‌های مشترک سهام‌تان و سود سهام. 1 تحلیل مصرف می‌کند.';
+
+  @override
+  String get portfolioReviewButton => 'بررسی سبد سهام من';
+
+  @override
+  String get portfolioReviewAgain => 'بررسی دوباره';
+
+  @override
+  String get portfolioReviewWorking => 'در حال بررسی سبد سهام شما…';
 }

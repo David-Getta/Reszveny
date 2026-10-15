@@ -479,5 +479,10 @@
   "alertEmailTitle": "Iimayl marka digniin dhacdo",
   "alertEmailOn": "Waxaan hubinnaa digniinahaaga dhowr daqiiqo kasta waxaana kuu soo dirnaa iimayl, xitaa marka app-ku xiran yahay.",
   "alertEmailSignIn": "Ku gal iimaylkaaga Dejinta si aad digniinaha ugu hesho iimayl, xitaa marka app-ku xiran yahay.",
-  "portfolioHistory": "Isbeddelka qiimaha"
+  "portfolioHistory": "Isbeddelka qiimaha",
+  "portfolioReviewTitle": "Dib-u-eegista portfoliyada AI",
+  "portfolioReviewIntro": "AI waxay eegtaa portfoliyadaada oo dhan: isku-uruursanaanta, ku-tiirsanaanta qaybaha iyo lacagaha, khataraha ay saamiyadaadu wadaagaan, iyo faa'iidada saamiyada. Waxay isticmaashaa 1 falanqayn.",
+  "portfolioReviewButton": "Dib u eeg portfoliyadayda",
+  "portfolioReviewAgain": "Mar kale dib u eeg",
+  "portfolioReviewWorking": "Portfoliyadaada waa la eegayaa…"
 }

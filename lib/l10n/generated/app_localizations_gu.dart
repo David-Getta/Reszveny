@@ -1766,4 +1766,20 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'સમય સાથે મૂલ્ય';
+
+  @override
+  String get portfolioReviewTitle => 'AI પોર્ટફોલિયો સમીક્ષા';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI તમારા આખા પોર્ટફોલિયોને તપાસે છે: કેન્દ્રીકરણ, ક્ષેત્ર અને ચલણનું જોખમ, તમારા શેરોના સહિયારા જોખમો અને ડિવિડન્ડ. 1 વિશ્લેષણ વપરાય છે.';
+
+  @override
+  String get portfolioReviewButton => 'મારા પોર્ટફોલિયોની સમીક્ષા કરો';
+
+  @override
+  String get portfolioReviewAgain => 'ફરી સમીક્ષા કરો';
+
+  @override
+  String get portfolioReviewWorking => 'તમારા પોર્ટફોલિયોની સમીક્ષા થઈ રહી છે…';
 }

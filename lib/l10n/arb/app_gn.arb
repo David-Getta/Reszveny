@@ -479,5 +479,10 @@
   "alertEmailTitle": "Correo maranduʼi ojehu jave",
   "alertEmailOn": "Rohechajey ne maranduʼi sapyʼaitépe ha romondo ndéve correo, tembiporuʼi oñembotýramo jepe.",
   "alertEmailSignIn": "Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe.",
-  "portfolioHistory": "Hepykue ñemoambue"
+  "portfolioHistory": "Hepykue ñemoambue",
+  "portfolioReviewTitle": "Cartera jehesaʼỹijo AI rupive",
+  "portfolioReviewIntro": "AI ohecha nde cartera tuichakue: mbaʼeichapa oñembyaty nde viru, sector ha korepoti ndive reñemboja, umi kyhyjerã ojoguáva ne acción-kuéra, ha dividendo. Oipuru 1 jehesaʼỹijo.",
+  "portfolioReviewButton": "Ehesaʼỹijo che cartera",
+  "portfolioReviewAgain": "Ehesaʼỹijo jey",
+  "portfolioReviewWorking": "Ojehesaʼỹijohína nde cartera…"
 }

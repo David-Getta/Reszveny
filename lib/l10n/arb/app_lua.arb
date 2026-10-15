@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail padi alerte ijuka",
   "alertEmailOn": "Tudi tutangila alerte yebe minite mikese yonso ne tukutumina e-mail, nansha padi application mukanga.",
   "alertEmailSignIn": "Buela ne e-mail webe mu Malongolola bua kupeta alerte ku e-mail, nansha padi application mukanga.",
-  "portfolioHistory": "Mushinga mu bikondo"
+  "portfolioHistory": "Mushinga mu bikondo",
+  "portfolioReviewTitle": "Dikonkonona dia portefeuille kudi AI",
+  "portfolioReviewIntro": "AI udi utangila portefeuille webe yonso: mushindu udi makuta asangisha muaba umue, bitupa bia mudimu ne makuta a matunga makuabu, njiwu idi ma-action ebe mabanye, ne ma-dividende. Udi uangata dikonkonona 1.",
+  "portfolioReviewButton": "Konkonona portefeuille wanyi",
+  "portfolioReviewAgain": "Konkonona kabidi",
+  "portfolioReviewWorking": "Tudi tukonkonona portefeuille webe…"
 }

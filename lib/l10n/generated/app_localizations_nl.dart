@@ -1774,4 +1774,20 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Waardeontwikkeling';
+
+  @override
+  String get portfolioReviewTitle => 'AI-portefeuilleanalyse';
+
+  @override
+  String get portfolioReviewIntro =>
+      'De AI bekijkt je hele portefeuille: concentratie, blootstelling aan sectoren en valuta, risico’s die je aandelen delen, en dividend. Kost 1 analyse.';
+
+  @override
+  String get portfolioReviewButton => 'Mijn portefeuille analyseren';
+
+  @override
+  String get portfolioReviewAgain => 'Opnieuw analyseren';
+
+  @override
+  String get portfolioReviewWorking => 'Je portefeuille wordt geanalyseerd…';
 }

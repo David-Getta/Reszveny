@@ -1772,4 +1772,20 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Nirx bi demê re';
+
+  @override
+  String get portfolioReviewTitle => 'Analîza portfolyoyê ya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI li tevahiya portfolyoya te dinêre: kombûn, girêdana bi sektor û diravan re, xetereyên hevpar ên pişkên te, û parên qezencê. 1 analîz bi kar tîne.';
+
+  @override
+  String get portfolioReviewButton => 'Portfolyoya min analîz bike';
+
+  @override
+  String get portfolioReviewAgain => 'Ji nû ve analîz bike';
+
+  @override
+  String get portfolioReviewWorking => 'Portfolyoya te tê analîzkirin…';
 }

@@ -1779,4 +1779,20 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Boleng ho ya ka nako';
+
+  @override
+  String get portfolioReviewTitle => 'Tlhahlobo ya potefolio ya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI e sheba potefolio ya hao kaofela: ho bokellwa ha chelete sebakeng se le seng, ho itshetleha ka makala le dichelete, dikotsi tseo dishere tsa hao di arolelanang tsona, le dikarolo tsa phaello. E sebedisa tlhahlobo e le nngwe.';
+
+  @override
+  String get portfolioReviewButton => 'Hlahloba potefolio ya ka';
+
+  @override
+  String get portfolioReviewAgain => 'Hlahloba hape';
+
+  @override
+  String get portfolioReviewWorking => 'Re hlahloba potefolio ya hao…';
 }

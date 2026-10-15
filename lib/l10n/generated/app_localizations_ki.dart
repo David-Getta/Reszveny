@@ -1769,4 +1769,20 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Thogora na ihinda';
+
+  @override
+  String get portfolioReviewTitle => 'Ũthuthuria wa AI wa hisa ciaku';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI nĩĩrarora hisa ciaku ciothe: ũrĩa mbeca ciũnganĩte handũ hamwe, mĩena ya biashara na mbeca cia mabũrũri, ũgwati ũrĩa hisa ciaku igwatanĩire, na gĩcunjĩ kĩa uumithio. Ũhũthagĩra ũthuthuria 1.';
+
+  @override
+  String get portfolioReviewButton => 'Thuthuria hisa ciakwa';
+
+  @override
+  String get portfolioReviewAgain => 'Thuthuria rĩngĩ';
+
+  @override
+  String get portfolioReviewWorking => 'Nĩtũrathuthuria hisa ciaku…';
 }

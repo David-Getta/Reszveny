@@ -479,5 +479,10 @@
   "alertEmailTitle": "I-imeyili uma isexwayiso senzeka",
   "alertEmailOn": "Sihlola izexwayiso zakho njalo emizuzwini embalwa futhi sikuthumelele i-imeyili, ngisho noma i-app ivaliwe.",
   "alertEmailSignIn": "Ngena ngemvume nge-imeyili yakho kuZilungiselelo ukuze uthole izexwayiso nge-imeyili, ngisho noma i-app ivaliwe.",
-  "portfolioHistory": "Inani ngokuhamba kwesikhathi"
+  "portfolioHistory": "Inani ngokuhamba kwesikhathi",
+  "portfolioReviewTitle": "Uhlaziyo lwephothifoliyo lwe-AI",
+  "portfolioReviewIntro": "I-AI ibheka iphothifoliyo yakho yonke: ukugxila kwemali endaweni eyodwa, ukuncika emikhakheni nasemalini yamazwe, izingozi ezabiwe ngamasheya akho, kanye nezabelo zenzuzo. Isebenzisa uhlaziyo olu-1.",
+  "portfolioReviewButton": "Hlaziya iphothifoliyo yami",
+  "portfolioReviewAgain": "Hlaziya kabusha",
+  "portfolioReviewWorking": "Sihlaziya iphothifoliyo yakho…"
 }

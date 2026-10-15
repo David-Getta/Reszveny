@@ -1768,4 +1768,20 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Gymmatyň üýtgeýşi';
+
+  @override
+  String get portfolioReviewTitle => 'Portfeliň AI seljermesi';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI tutuş portfeliňize seredýär: jemlenmä, pudak we walýuta töwekgelçiligine, paýnamalaryňyzyň umumy töwekgelçiliklerine we diwidendlere. 1 seljerme sarp edýär.';
+
+  @override
+  String get portfolioReviewButton => 'Portfelimi seljer';
+
+  @override
+  String get portfolioReviewAgain => 'Täzeden seljer';
+
+  @override
+  String get portfolioReviewWorking => 'Portfeliňiz seljerilýär…';
 }

@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail rĩrĩa ũmenyithia wakinya",
   "alertEmailOn": "Tũrorithagia imenyithia ciaku o ndagĩka nini na tũgakũtũmĩra e-mail, o na rĩrĩa app ĩhingĩtwo.",
   "alertEmailSignIn": "Toonya na e-mail yaku thĩinĩ wa Mĩtaratara nĩguo wamũkagĩre imenyithia na e-mail, o na rĩrĩa app ĩhingĩtwo.",
-  "portfolioHistory": "Thogora na ihinda"
+  "portfolioHistory": "Thogora na ihinda",
+  "portfolioReviewTitle": "Ũthuthuria wa AI wa hisa ciaku",
+  "portfolioReviewIntro": "AI nĩĩrarora hisa ciaku ciothe: ũrĩa mbeca ciũnganĩte handũ hamwe, mĩena ya biashara na mbeca cia mabũrũri, ũgwati ũrĩa hisa ciaku igwatanĩire, na gĩcunjĩ kĩa uumithio. Ũhũthagĩra ũthuthuria 1.",
+  "portfolioReviewButton": "Thuthuria hisa ciakwa",
+  "portfolioReviewAgain": "Thuthuria rĩngĩ",
+  "portfolioReviewWorking": "Nĩtũrathuthuria hisa ciaku…"
 }

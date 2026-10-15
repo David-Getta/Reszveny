@@ -1770,4 +1770,20 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'گۆڕانی بەها';
+
+  @override
+  String get portfolioReviewTitle => 'شیکاریی پۆرتفۆلیۆ بە AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI سەیری هەموو پۆرتفۆلیۆکەت دەکات: چڕبوونەوە، کەوتنە بەر مەترسیی کەرت و دراو، مەترسییە هاوبەشەکانی پشکەکانت، و قازانجی پشک. 1 شیکاری بەکاردەهێنێت.';
+
+  @override
+  String get portfolioReviewButton => 'پۆرتفۆلیۆکەم شیکار بکە';
+
+  @override
+  String get portfolioReviewAgain => 'دووبارە شیکار بکە';
+
+  @override
+  String get portfolioReviewWorking => 'پۆرتفۆلیۆکەت شیکار دەکرێت…';
 }

@@ -1753,4 +1753,20 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'តម្លៃតាមពេលវេលា';
+
+  @override
+  String get portfolioReviewTitle => 'ការពិនិត្យផលប័ត្រដោយ AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ពិនិត្យផលប័ត្រទាំងមូលរបស់អ្នក៖ ការប្រមូលផ្តុំ ហានិភ័យតាមវិស័យ និងរូបិយប័ណ្ណ ហានិភ័យរួមនៃភាគហ៊ុនរបស់អ្នក និងភាគលាភ។ ប្រើការវិភាគ 1 ដង។';
+
+  @override
+  String get portfolioReviewButton => 'ពិនិត្យផលប័ត្ររបស់ខ្ញុំ';
+
+  @override
+  String get portfolioReviewAgain => 'ពិនិត្យម្តងទៀត';
+
+  @override
+  String get portfolioReviewWorking => 'កំពុងពិនិត្យផលប័ត្ររបស់អ្នក…';
 }

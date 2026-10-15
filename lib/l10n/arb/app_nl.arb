@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail wanneer een alert afgaat",
   "alertEmailOn": "We controleren je alerts om de paar minuten en sturen je een e-mail, ook als de app gesloten is.",
   "alertEmailSignIn": "Log in met je e-mailadres bij Instellingen om alerts per e-mail te krijgen, ook als de app gesloten is.",
-  "portfolioHistory": "Waardeontwikkeling"
+  "portfolioHistory": "Waardeontwikkeling",
+  "portfolioReviewTitle": "AI-portefeuilleanalyse",
+  "portfolioReviewIntro": "De AI bekijkt je hele portefeuille: concentratie, blootstelling aan sectoren en valuta, risico’s die je aandelen delen, en dividend. Kost 1 analyse.",
+  "portfolioReviewButton": "Mijn portefeuille analyseren",
+  "portfolioReviewAgain": "Opnieuw analyseren",
+  "portfolioReviewWorking": "Je portefeuille wordt geanalyseerd…"
 }

@@ -1714,4 +1714,20 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioHistory => '評価額の推移';
+
+  @override
+  String get portfolioReviewTitle => 'AI ポートフォリオ診断';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI がポートフォリオ全体をチェックします：集中度、セクター・通貨のエクスポージャー、保有銘柄に共通するリスク、配当。分析を 1 回分使用します。';
+
+  @override
+  String get portfolioReviewButton => 'ポートフォリオを診断';
+
+  @override
+  String get portfolioReviewAgain => '再診断';
+
+  @override
+  String get portfolioReviewWorking => 'ポートフォリオを診断中…';
 }

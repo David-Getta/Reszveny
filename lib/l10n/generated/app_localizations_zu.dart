@@ -1776,4 +1776,20 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Inani ngokuhamba kwesikhathi';
+
+  @override
+  String get portfolioReviewTitle => 'Uhlaziyo lwephothifoliyo lwe-AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'I-AI ibheka iphothifoliyo yakho yonke: ukugxila kwemali endaweni eyodwa, ukuncika emikhakheni nasemalini yamazwe, izingozi ezabiwe ngamasheya akho, kanye nezabelo zenzuzo. Isebenzisa uhlaziyo olu-1.';
+
+  @override
+  String get portfolioReviewButton => 'Hlaziya iphothifoliyo yami';
+
+  @override
+  String get portfolioReviewAgain => 'Hlaziya kabusha';
+
+  @override
+  String get portfolioReviewWorking => 'Sihlaziya iphothifoliyo yakho…';
 }

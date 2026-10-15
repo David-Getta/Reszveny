@@ -1781,4 +1781,20 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Bili sa paglabay sang tion';
+
+  @override
+  String get portfolioReviewTitle => 'Analisis sang portfolio sang AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Ginatan-aw sang AI ang bug-os mo nga portfolio: konsentrasyon, exposure sa sektor kag kwarta, mga risgo nga pareho sang imo mga stock, kag dibidendo. Nagagamit sang 1 ka analisis.';
+
+  @override
+  String get portfolioReviewButton => 'Analisaha ang akon portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Analisaha liwat';
+
+  @override
+  String get portfolioReviewWorking => 'Ginaanalisa ang imo portfolio…';
 }

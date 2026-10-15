@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeile fa kitsiso e simolola",
   "alertEmailOn": "Re tlhatlhoba dikitsiso tsa gago metsotso e mengwe le e mengwe e le mmalwa mme re go romelela imeile, le fa app e tswalegile.",
   "alertEmailSignIn": "Tsena ka imeile ya gago mo Dithulaganyong gore o amogele dikitsiso ka imeile, le fa app e tswalegile.",
-  "portfolioHistory": "Boleng go ya ka nako"
+  "portfolioHistory": "Boleng go ya ka nako",
+  "portfolioReviewTitle": "Tshekatsheko ya potefolio ya AI",
+  "portfolioReviewIntro": "AI e lebelela potefolio ya gago yotlhe: go phuthegela ga madi mo lefelong le le lengwe, go ikaega ka makala a dikgwebo le madi a dinaga, dikotsi tse dishere tsa gago di di abelanang, le dikarolo tsa poelo. E dirisa tshekatsheko e le nngwe.",
+  "portfolioReviewButton": "Sekaseka potefolio ya me",
+  "portfolioReviewAgain": "Sekaseka gape",
+  "portfolioReviewWorking": "Re sekaseka potefolio ya gago…"
 }

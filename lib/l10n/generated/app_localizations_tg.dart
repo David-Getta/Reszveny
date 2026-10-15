@@ -1771,4 +1771,20 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Динамикаи арзиш';
+
+  @override
+  String get portfolioReviewTitle => 'Таҳлили портфел бо AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI тамоми портфели шуморо аз назар мегузаронад: тамаркуз, вобастагӣ ба соҳаҳо ва асъорҳо, хатарҳои умумии саҳмияҳои шумо ва дивидендҳо. 1 таҳлил сарф мешавад.';
+
+  @override
+  String get portfolioReviewButton => 'Таҳлили портфели ман';
+
+  @override
+  String get portfolioReviewAgain => 'Аз нав таҳлил кардан';
+
+  @override
+  String get portfolioReviewWorking => 'Портфели шумо таҳлил мешавад…';
 }

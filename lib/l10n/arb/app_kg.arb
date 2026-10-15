@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail ntangu nkebisu me salama",
   "alertEmailOn": "Beto ke tadilaka nkebisu na nge konso maminuti fyoti mpi beto ke tindila nge e-mail, ata kana application me kangama.",
   "alertEmailSignIn": "Kota na e-mail na nge na Paramètres sambu na kubaka nkebisu na e-mail, ata kana application me kangama.",
-  "portfolioHistory": "Ntalu na ntangu"
+  "portfolioHistory": "Ntalu na ntangu",
+  "portfolioReviewTitle": "Analyse ya portefeuille na AI",
+  "portfolioReviewIntro": "AI ke tala portefeuille na nge yonso: kuvukisa mbongo na kisika mosi, ba secteur ti ba mbongo ya nsi ya nzenza, ba kigonsa yina ba action na nge ke kabana, ti ba dividende. Isadilanga analyse 1.",
+  "portfolioReviewButton": "Sala analyse ya portefeuille na mono",
+  "portfolioReviewAgain": "Sala analyse diaka",
+  "portfolioReviewWorking": "Tuke sala analyse ya portefeuille na nge…"
 }

@@ -1823,4 +1823,20 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Дынаміка вартасці';
+
+  @override
+  String get portfolioReviewTitle => 'AI-аналіз партфеля';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI праглядае ўвесь ваш партфель: канцэнтрацыю, залежнасць ад сектараў і валют, агульныя рызыкі вашых акцый і дывідэнды. Выкарыстоўвае 1 аналіз.';
+
+  @override
+  String get portfolioReviewButton => 'Прааналізаваць мой партфель';
+
+  @override
+  String get portfolioReviewAgain => 'Прааналізаваць нанова';
+
+  @override
+  String get portfolioReviewWorking => 'Аналізуем ваш партфель…';
 }

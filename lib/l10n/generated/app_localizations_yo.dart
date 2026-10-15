@@ -1768,4 +1768,20 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Iye bí àkókò ṣe ń lọ';
+
+  @override
+  String get portfolioReviewTitle => 'Ìtúpalẹ̀ àpò ìdókòwò AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI máa ń wo gbogbo àpò ìdókòwò rẹ: bí owó rẹ ṣe kó jọ sí ibì kan, ìgbẹ́kẹ̀lé ẹ̀ka iṣẹ́ àti owó ilẹ̀ òkèèrè, àwọn ewu tí àwọn ìpín rẹ jọ ní, àti èrè ìpín. Ó ń lo ìtúpalẹ̀ 1.';
+
+  @override
+  String get portfolioReviewButton => 'Ṣàyẹ̀wò àpò ìdókòwò mi';
+
+  @override
+  String get portfolioReviewAgain => 'Tún ṣàyẹ̀wò';
+
+  @override
+  String get portfolioReviewWorking => 'À ń ṣàyẹ̀wò àpò ìdókòwò rẹ…';
 }

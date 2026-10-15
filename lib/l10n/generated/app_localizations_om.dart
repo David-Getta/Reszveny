@@ -1776,4 +1776,20 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Jijjiirama gatii';
+
+  @override
+  String get portfolioReviewTitle => 'Xiinxala poortfooliyoo AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI\'n poortfooliyoo kee guutuu ilaala: walitti qabamuu, saaxilamummaa damee fi maallaqaa, balaa aksiyoonni kee waliin qooddatan, fi qooda bu\'aa. Xiinxala 1 fayyadama.';
+
+  @override
+  String get portfolioReviewButton => 'Poortfooliyoo koo xiinxali';
+
+  @override
+  String get portfolioReviewAgain => 'Irra deebi\'ii xiinxali';
+
+  @override
+  String get portfolioReviewWorking => 'Poortfooliyoon kee xiinxalamaa jira…';
 }

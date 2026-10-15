@@ -1775,4 +1775,21 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'ಸಮಯದೊಂದಿಗೆ ಮೌಲ್ಯ';
+
+  @override
+  String get portfolioReviewTitle => 'AI ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ವಿಮರ್ಶೆ';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಪೋರ್ಟ್‌ಫೋಲಿಯೊವನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ: ಕೇಂದ್ರೀಕರಣ, ವಲಯ ಮತ್ತು ಕರೆನ್ಸಿ ಅಪಾಯ, ನಿಮ್ಮ ಷೇರುಗಳ ಸಾಮಾನ್ಯ ಅಪಾಯಗಳು ಮತ್ತು ಲಾಭಾಂಶ. 1 ವಿಶ್ಲೇಷಣೆ ಬಳಸುತ್ತದೆ.';
+
+  @override
+  String get portfolioReviewButton => 'ನನ್ನ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ವಿಮರ್ಶಿಸಿ';
+
+  @override
+  String get portfolioReviewAgain => 'ಮತ್ತೆ ವಿಮರ್ಶಿಸಿ';
+
+  @override
+  String get portfolioReviewWorking =>
+      'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ವಿಮರ್ಶಿಸಲಾಗುತ್ತಿದೆ…';
 }

@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mel apabila amaran dicetuskan",
   "alertEmailOn": "Kami menyemak amaran anda setiap beberapa minit dan menghantar e-mel kepada anda, walaupun aplikasi ditutup.",
   "alertEmailSignIn": "Log masuk dengan e-mel anda dalam Tetapan untuk menerima amaran melalui e-mel, walaupun aplikasi ditutup.",
-  "portfolioHistory": "Nilai mengikut masa"
+  "portfolioHistory": "Nilai mengikut masa",
+  "portfolioReviewTitle": "Semakan portfolio AI",
+  "portfolioReviewIntro": "AI menyemak keseluruhan portfolio anda: penumpuan, pendedahan sektor dan mata wang, risiko yang dikongsi oleh saham anda, serta dividen. Menggunakan 1 analisis.",
+  "portfolioReviewButton": "Semak portfolio saya",
+  "portfolioReviewAgain": "Semak semula",
+  "portfolioReviewWorking": "Menyemak portfolio anda…"
 }

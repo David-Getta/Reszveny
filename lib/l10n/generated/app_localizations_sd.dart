@@ -1763,4 +1763,21 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'وقت سان قدر';
+
+  @override
+  String get portfolioReviewTitle => 'AI پورٽ فوليو جائزو';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI توهان جو سڄو پورٽ فوليو ڏسي ٿو: ارتڪاز، شعبن ۽ ڪرنسين جو خطرو، توهان جي شيئرز جا گڏيل خطرا، ۽ ڊيويڊنڊ. 1 تجزيو خرچ ٿئي ٿو.';
+
+  @override
+  String get portfolioReviewButton => 'منهنجي پورٽ فوليو جو جائزو وٺو';
+
+  @override
+  String get portfolioReviewAgain => 'ٻيهر جائزو وٺو';
+
+  @override
+  String get portfolioReviewWorking =>
+      'توهان جي پورٽ فوليو جو جائزو ورتو پيو وڃي…';
 }

@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail ntango likebisi esali",
   "alertEmailOn": "Totalaka makebisi na yo nsima ya miniti moke nyɔnsɔ mpe totindelaka yo e-mail, ata soki application ekangami.",
   "alertEmailSignIn": "Kɔta na e-mail na yo na Ba-paramètre mpo na kozwa makebisi na e-mail, ata soki application ekangami.",
-  "portfolioHistory": "Motuya na ntango"
+  "portfolioHistory": "Motuya na ntango",
+  "portfolioReviewTitle": "Analyse ya portefeuille na AI",
+  "portfolioReviewIntro": "AI etalaka portefeuille na yo mobimba: koyangana ya mbongo na esika moko, bitape ya mombongo mpe mbongo ya bikolo, makama oyo ba-action na yo bakabolaka, mpe ba-dividende. Esalelaka analyse 1.",
+  "portfolioReviewButton": "Salá analyse ya portefeuille na ngai",
+  "portfolioReviewAgain": "Salá lisusu",
+  "portfolioReviewWorking": "Tozali kosala analyse ya portefeuille na yo…"
 }

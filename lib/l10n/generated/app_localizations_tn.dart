@@ -1779,4 +1779,20 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Boleng go ya ka nako';
+
+  @override
+  String get portfolioReviewTitle => 'Tshekatsheko ya potefolio ya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI e lebelela potefolio ya gago yotlhe: go phuthegela ga madi mo lefelong le le lengwe, go ikaega ka makala a dikgwebo le madi a dinaga, dikotsi tse dishere tsa gago di di abelanang, le dikarolo tsa poelo. E dirisa tshekatsheko e le nngwe.';
+
+  @override
+  String get portfolioReviewButton => 'Sekaseka potefolio ya me';
+
+  @override
+  String get portfolioReviewAgain => 'Sekaseka gape';
+
+  @override
+  String get portfolioReviewWorking => 'Re sekaseka potefolio ya gago…';
 }

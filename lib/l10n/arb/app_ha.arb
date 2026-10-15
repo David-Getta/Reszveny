@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imel idan faɗakarwa ta tashi",
   "alertEmailOn": "Muna duba faɗakarwarka bayan 'yan mintuna kuma mu aiko maka da imel, ko da manhajar a rufe take.",
   "alertEmailSignIn": "Shiga da imel ɗinka a Saituna don karɓar faɗakarwa ta imel, ko da manhajar a rufe take.",
-  "portfolioHistory": "Ƙima a tsawon lokaci"
+  "portfolioHistory": "Ƙima a tsawon lokaci",
+  "portfolioReviewTitle": "Nazarin jakar hannun jari ta AI",
+  "portfolioReviewIntro": "AI zai duba dukkan jakar hannun jarinka: tattarar jari wuri ɗaya, dogaro kan sassa da kuɗaɗe, haɗarin da hannayen jarinka suke tarayya, da riba. Yana amfani da nazari 1.",
+  "portfolioReviewButton": "Duba jakar hannun jarina",
+  "portfolioReviewAgain": "Sake dubawa",
+  "portfolioReviewWorking": "Ana duba jakar hannun jarinka…"
 }

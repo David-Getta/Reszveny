@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email quando scatta un avviso",
   "alertEmailOn": "Controlliamo i tuoi avvisi a intervalli di pochi minuti e ti inviamo un’email, anche quando l’app è chiusa.",
   "alertEmailSignIn": "Accedi con la tua email nelle Impostazioni per ricevere gli avvisi via email, anche quando l’app è chiusa.",
-  "portfolioHistory": "Andamento del valore"
+  "portfolioHistory": "Andamento del valore",
+  "portfolioReviewTitle": "Revisione del portafoglio con IA",
+  "portfolioReviewIntro": "L’IA esamina il tuo intero portafoglio: concentrazione, esposizione a settori e valute, rischi comuni ai tuoi titoli e dividendi. Usa 1 analisi.",
+  "portfolioReviewButton": "Analizza il mio portafoglio",
+  "portfolioReviewAgain": "Analizza di nuovo",
+  "portfolioReviewWorking": "Analisi del portafoglio in corso…"
 }

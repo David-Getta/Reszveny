@@ -479,5 +479,10 @@
   "alertEmailTitle": "Sähköposti, kun hälytys laukeaa",
   "alertEmailOn": "Tarkistamme hälytyksesi muutaman minuutin välein ja lähetämme sinulle sähköpostia, vaikka sovellus olisi suljettu.",
   "alertEmailSignIn": "Kirjaudu sisään sähköpostillasi Asetuksissa, niin saat hälytykset sähköpostiin, vaikka sovellus olisi suljettu.",
-  "portfolioHistory": "Arvon kehitys"
+  "portfolioHistory": "Arvon kehitys",
+  "portfolioReviewTitle": "Salkun tekoälyanalyysi",
+  "portfolioReviewIntro": "Tekoäly käy läpi koko salkkusi: keskittymisen, toimiala- ja valuuttariskin, osakkeidesi yhteiset riskit ja osingot. Kuluttaa 1 analyysin.",
+  "portfolioReviewButton": "Analysoi salkkuni",
+  "portfolioReviewAgain": "Analysoi uudelleen",
+  "portfolioReviewWorking": "Analysoidaan salkkuasi…"
 }

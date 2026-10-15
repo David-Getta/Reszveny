@@ -1770,4 +1770,21 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'মূল্যৰ গতিধাৰা';
+
+  @override
+  String get portfolioReviewTitle => 'AI প\'ৰ্টফ\'লিঅ\' পৰ্যালোচনা';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI-এ আপোনাৰ সমগ্ৰ প\'ৰ্টফ\'লিঅ\' চায়: কেন্দ্ৰীভৱন, খণ্ড আৰু মুদ্ৰাৰ ওপৰত নিৰ্ভৰশীলতা, আপোনাৰ শ্বেয়াৰবোৰৰ সাধাৰণ বিপদ, আৰু লভ্যাংশ। 1টা বিশ্লেষণ খৰচ হয়।';
+
+  @override
+  String get portfolioReviewButton => 'মোৰ প\'ৰ্টফ\'লিঅ\' পৰ্যালোচনা কৰক';
+
+  @override
+  String get portfolioReviewAgain => 'পুনৰ পৰ্যালোচনা কৰক';
+
+  @override
+  String get portfolioReviewWorking =>
+      'আপোনাৰ প\'ৰ্টফ\'লিঅ\' পৰ্যালোচনা কৰি থকা হৈছে…';
 }

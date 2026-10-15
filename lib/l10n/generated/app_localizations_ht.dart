@@ -1768,4 +1768,20 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Evolisyon valè';
+
+  @override
+  String get portfolioReviewTitle => 'Analiz pòtfèy ak AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI a egzamine tout pòtfèy ou: konsantrasyon, ekspozisyon nan sektè ak lajan etranje, risk aksyon ou yo pataje, ak dividann. Sèvi ak 1 analiz.';
+
+  @override
+  String get portfolioReviewButton => 'Analize pòtfèy mwen';
+
+  @override
+  String get portfolioReviewAgain => 'Analize ankò';
+
+  @override
+  String get portfolioReviewWorking => 'N ap analize pòtfèy ou…';
 }

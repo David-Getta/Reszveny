@@ -1774,4 +1774,20 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Evolución del valor';
+
+  @override
+  String get portfolioReviewTitle => 'Revisión de cartera con IA';
+
+  @override
+  String get portfolioReviewIntro =>
+      'La IA analiza toda tu cartera: concentración, exposición a sectores y divisas, riesgos que comparten tus acciones y dividendos. Usa 1 análisis.';
+
+  @override
+  String get portfolioReviewButton => 'Revisar mi cartera';
+
+  @override
+  String get portfolioReviewAgain => 'Volver a revisar';
+
+  @override
+  String get portfolioReviewWorking => 'Revisando tu cartera…';
 }

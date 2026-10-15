@@ -479,5 +479,10 @@
   "alertEmailTitle": "Mailaka rehefa mipoitra ny fanairana",
   "alertEmailOn": "Hamarininay isaky ny minitra vitsivitsy ny fanairanao ary handefasanay mailaka ianao, na dia mihidy aza ny fampiharana.",
   "alertEmailSignIn": "Midira amin'ny mailakao ao amin'ny Fikirakirana mba hahazoana fanairana amin'ny mailaka, na dia mihidy aza ny fampiharana.",
-  "portfolioHistory": "Fivoaran'ny sanda"
+  "portfolioHistory": "Fivoaran'ny sanda",
+  "portfolioReviewTitle": "Fandalinana ny kitapom-bola amin'ny AI",
+  "portfolioReviewIntro": "Jeren'ny AI manontolo ny kitapom-bolanao: ny fifantohana, ny fiankinana amin'ny sehatra sy ny vola, ny loza iraisan'ny petrabolanao, ary ny tombom-barotra zaraina. Mampiasa 1 fandalinana.",
+  "portfolioReviewButton": "Dinihina ny kitapom-bolako",
+  "portfolioReviewAgain": "Dinihina indray",
+  "portfolioReviewWorking": "Dinihina ny kitapom-bolanao…"
 }

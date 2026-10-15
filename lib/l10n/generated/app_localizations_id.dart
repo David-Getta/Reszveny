@@ -1765,4 +1765,20 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Nilai dari waktu ke waktu';
+
+  @override
+  String get portfolioReviewTitle => 'Tinjauan portofolio AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI meninjau seluruh portofolio Anda: konsentrasi, eksposur sektor dan mata uang, risiko yang sama-sama dimiliki saham Anda, serta dividen. Menggunakan 1 analisis.';
+
+  @override
+  String get portfolioReviewButton => 'Tinjau portofolio saya';
+
+  @override
+  String get portfolioReviewAgain => 'Tinjau ulang';
+
+  @override
+  String get portfolioReviewWorking => 'Meninjau portofolio Anda…';
 }

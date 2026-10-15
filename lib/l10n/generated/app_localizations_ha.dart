@@ -1774,4 +1774,20 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ƙima a tsawon lokaci';
+
+  @override
+  String get portfolioReviewTitle => 'Nazarin jakar hannun jari ta AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI zai duba dukkan jakar hannun jarinka: tattarar jari wuri ɗaya, dogaro kan sassa da kuɗaɗe, haɗarin da hannayen jarinka suke tarayya, da riba. Yana amfani da nazari 1.';
+
+  @override
+  String get portfolioReviewButton => 'Duba jakar hannun jarina';
+
+  @override
+  String get portfolioReviewAgain => 'Sake dubawa';
+
+  @override
+  String get portfolioReviewWorking => 'Ana duba jakar hannun jarinka…';
 }

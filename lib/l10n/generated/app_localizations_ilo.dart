@@ -1784,4 +1784,20 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Pateg iti panaglabas ti panawen';
+
+  @override
+  String get portfolioReviewTitle => 'Panangsukimat ti portfolio babaen ti AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Sukimaten ti AI ti intero a portfolio-mo: konsentrasion, pannakaibilang iti sektor ken kuarta, dagiti peggad a pagbibingayan dagiti stock-mo, ken dibidendo. Agusar iti 1 a panangsukimat.';
+
+  @override
+  String get portfolioReviewButton => 'Sukimaten ti portfolio-k';
+
+  @override
+  String get portfolioReviewAgain => 'Sukimaten manen';
+
+  @override
+  String get portfolioReviewWorking => 'Sukimsukimaten ti portfolio-mo…';
 }

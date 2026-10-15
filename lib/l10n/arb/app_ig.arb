@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email mgbe ọkwa malitere",
   "alertEmailOn": "Anyị na-elele ọkwa gị kwa nkeji ole na ole ma zitere gị email, ọbụlagodi mgbe emechiri app ahụ.",
   "alertEmailSignIn": "Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ.",
-  "portfolioHistory": "Uru ka oge na-aga"
+  "portfolioHistory": "Uru ka oge na-aga",
+  "portfolioReviewTitle": "Nyocha portfolio AI",
+  "portfolioReviewIntro": "AI na-enyocha portfolio gị niile: otú ego gị si gbakọta n'otu ebe, ngalaba na ego mba ọzọ ị dabere na ha, ihe ize ndụ ndị stock gị nwekọrọ, na dividend. Na-eji nyocha 1.",
+  "portfolioReviewButton": "Nyochaa portfolio m",
+  "portfolioReviewAgain": "Nyochaa ọzọ",
+  "portfolioReviewWorking": "Na-enyocha portfolio gị…"
 }

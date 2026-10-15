@@ -1770,4 +1770,20 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Thamani kwa muda';
+
+  @override
+  String get portfolioReviewTitle => 'Uchambuzi wa jalada la hisa kwa AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI hukagua jalada lako lote la hisa: mrundikano, utegemezi kwa sekta na sarafu, hatari zinazoshirikiwa na hisa zako, na gawio. Hutumia uchambuzi 1.';
+
+  @override
+  String get portfolioReviewButton => 'Chambua jalada langu la hisa';
+
+  @override
+  String get portfolioReviewAgain => 'Chambua tena';
+
+  @override
+  String get portfolioReviewWorking => 'Inachambua jalada lako la hisa…';
 }

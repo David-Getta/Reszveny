@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeyili iyo imenyesha ribaye",
   "alertEmailOn": "Tugenzura imenyesha ryawe buri minota mike tukakoherereza imeyili, n'igihe porogaramu ifunze.",
   "alertEmailSignIn": "Injira ukoresheje imeyili yawe muri Igenamiterere kugira ngo ubone imenyesha kuri imeyili, n'igihe porogaramu ifunze.",
-  "portfolioHistory": "Ihinduka ry'agaciro"
+  "portfolioHistory": "Ihinduka ry'agaciro",
+  "portfolioReviewTitle": "Isesengura ry'ishoramari rya AI",
+  "portfolioReviewIntro": "AI isuzuma ishoramari ryawe ryose: kwegeranya amafaranga ahantu hamwe, kwishingikiriza ku nzego z'ubucuruzi n'amafaranga y'amahanga, ingaruka imigabane yawe ihuriyeho, n'inyungu ku migabane. Rikoresha isesengura 1.",
+  "portfolioReviewButton": "Sesengura ishoramari ryanjye",
+  "portfolioReviewAgain": "Ongera usesengure",
+  "portfolioReviewWorking": "Turimo gusesengura ishoramari ryawe…"
 }

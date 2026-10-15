@@ -1774,4 +1774,20 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Értékalakulás';
+
+  @override
+  String get portfolioReviewTitle => 'AI-portfólióelemzés';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Az AI átnézi az egész portfóliódat: koncentráció, szektor- és devizakitettség, a részvényeid közös kockázatai és az osztalék. 1 elemzést fogyaszt.';
+
+  @override
+  String get portfolioReviewButton => 'Elemezd a portfóliómat';
+
+  @override
+  String get portfolioReviewAgain => 'Új elemzés';
+
+  @override
+  String get portfolioReviewWorking => 'A portfóliód elemzése folyamatban…';
 }

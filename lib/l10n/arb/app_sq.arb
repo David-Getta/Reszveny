@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email kur aktivizohet një alarm",
   "alertEmailOn": "I kontrollojmë alarmet tuaja çdo disa minuta dhe ju dërgojmë email, edhe kur aplikacioni është i mbyllur.",
   "alertEmailSignIn": "Hyni me email-in tuaj te Cilësimet për të marrë alarmet me email, edhe kur aplikacioni është i mbyllur.",
-  "portfolioHistory": "Ecuria e vlerës"
+  "portfolioHistory": "Ecuria e vlerës",
+  "portfolioReviewTitle": "Analiza e portofolit me AI",
+  "portfolioReviewIntro": "AI shqyrton gjithë portofolin tënd: përqendrimin, ekspozimin ndaj sektorëve dhe monedhave, rreziqet e përbashkëta të aksioneve të tua dhe dividentët. Përdor 1 analizë.",
+  "portfolioReviewButton": "Analizo portofolin tim",
+  "portfolioReviewAgain": "Analizo përsëri",
+  "portfolioReviewWorking": "Duke analizuar portofolin tënd…"
 }

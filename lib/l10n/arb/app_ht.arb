@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imèl lè yon alèt deklanche",
   "alertEmailOn": "Nou tcheke alèt ou yo chak kèk minit epi nou voye yon imèl ba ou, menm lè aplikasyon an fèmen.",
   "alertEmailSignIn": "Konekte ak imèl ou nan Paramèt pou w resevwa alèt yo pa imèl, menm lè aplikasyon an fèmen.",
-  "portfolioHistory": "Evolisyon valè"
+  "portfolioHistory": "Evolisyon valè",
+  "portfolioReviewTitle": "Analiz pòtfèy ak AI",
+  "portfolioReviewIntro": "AI a egzamine tout pòtfèy ou: konsantrasyon, ekspozisyon nan sektè ak lajan etranje, risk aksyon ou yo pataje, ak dividann. Sèvi ak 1 analiz.",
+  "portfolioReviewButton": "Analize pòtfèy mwen",
+  "portfolioReviewAgain": "Analize ankò",
+  "portfolioReviewWorking": "N ap analize pòtfèy ou…"
 }

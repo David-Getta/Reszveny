@@ -479,5 +479,10 @@
   "alertEmailTitle": "El. laiškas, kai suveikia įspėjimas",
   "alertEmailOn": "Kas kelias minutes tikriname jūsų įspėjimus ir siunčiame el. laišką, net kai programa uždaryta.",
   "alertEmailSignIn": "Prisijunkite el. paštu Nustatymuose, kad gautumėte įspėjimus el. paštu, net kai programa uždaryta.",
-  "portfolioHistory": "Vertės kitimas"
+  "portfolioHistory": "Vertės kitimas",
+  "portfolioReviewTitle": "Portfelio DI analizė",
+  "portfolioReviewIntro": "DI peržiūri visą jūsų portfelį: koncentraciją, priklausomybę nuo sektorių ir valiutų, bendras jūsų akcijų rizikas ir dividendus. Sunaudoja 1 analizę.",
+  "portfolioReviewButton": "Analizuoti mano portfelį",
+  "portfolioReviewAgain": "Analizuoti iš naujo",
+  "portfolioReviewWorking": "Analizuojamas jūsų portfelis…"
 }

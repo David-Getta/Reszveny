@@ -1771,4 +1771,20 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Nilai ti waktu ka waktu';
+
+  @override
+  String get portfolioReviewTitle => 'Tinjauan portofolio AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI mariksa sakabéh portofolio anjeun: konsentrasi, gumantungna kana séktor jeung mata uang, résiko anu sarua dina saham-saham anjeun, sarta dividen. Maké 1 analisis.';
+
+  @override
+  String get portfolioReviewButton => 'Pariksa portofolio abdi';
+
+  @override
+  String get portfolioReviewAgain => 'Pariksa deui';
+
+  @override
+  String get portfolioReviewWorking => 'Mariksa portofolio anjeun…';
 }

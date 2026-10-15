@@ -1745,4 +1745,20 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'มูลค่าตามช่วงเวลา';
+
+  @override
+  String get portfolioReviewTitle => 'วิเคราะห์พอร์ตโฟลิโอด้วย AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI จะตรวจดูพอร์ตโฟลิโอทั้งหมดของคุณ: การกระจุกตัว ความเสี่ยงด้านกลุ่มอุตสาหกรรมและสกุลเงิน ความเสี่ยงที่หุ้นของคุณมีร่วมกัน และเงินปันผล ใช้การวิเคราะห์ 1 ครั้ง';
+
+  @override
+  String get portfolioReviewButton => 'วิเคราะห์พอร์ตโฟลิโอของฉัน';
+
+  @override
+  String get portfolioReviewAgain => 'วิเคราะห์อีกครั้ง';
+
+  @override
+  String get portfolioReviewWorking => 'กำลังวิเคราะห์พอร์ตโฟลิโอของคุณ…';
 }

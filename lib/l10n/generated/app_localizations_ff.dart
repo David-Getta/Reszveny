@@ -1764,4 +1764,20 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Waylagol njaru';
+
+  @override
+  String get portfolioReviewTitle => 'Ƴeewndo AI aksiyoŋ am';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ina ƴeewa aksiyoŋ maa fof: hawrugol kaalis maa e nokku gooto, golle e kaalis ɗe ngonɗaa e mum\'en, bone ɗe aksiyoŋ maa kawri, e njeenaari. Ina huutoroo ƴeewndo 1.';
+
+  @override
+  String get portfolioReviewButton => 'Ƴeew aksiyoŋ am';
+
+  @override
+  String get portfolioReviewAgain => 'Ƴeew kadi';
+
+  @override
+  String get portfolioReviewWorking => 'Ina ƴeewa aksiyoŋ maa…';
 }

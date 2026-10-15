@@ -1764,4 +1764,20 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Njëg ci diir jamono';
+
+  @override
+  String get portfolioReviewTitle => 'Saytu AI ci sa aksiyoŋ yi';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI dina saytu sa aksiyoŋ yépp: ndax sa xaalis dajaloo na ci benn bérab, sektëer yi ak xaalisu réew yu wuute yi, loraange yi sa aksiyoŋ yi bokk, ak dividand yi. Dafay jël 1 saytu.';
+
+  @override
+  String get portfolioReviewButton => 'Saytul samay aksiyoŋ';
+
+  @override
+  String get portfolioReviewAgain => 'Saytuwaat';
+
+  @override
+  String get portfolioReviewWorking => 'Ñu ngi saytu sa aksiyoŋ yi…';
 }

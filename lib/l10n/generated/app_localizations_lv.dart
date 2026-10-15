@@ -1808,4 +1808,20 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Vērtības izmaiņas';
+
+  @override
+  String get portfolioReviewTitle => 'Portfeļa AI analīze';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI pārskata visu jūsu portfeli: koncentrāciju, nozaru un valūtu riskus, jūsu akciju kopīgos riskus un dividendes. Izmanto 1 analīzi.';
+
+  @override
+  String get portfolioReviewButton => 'Analizēt manu portfeli';
+
+  @override
+  String get portfolioReviewAgain => 'Analizēt vēlreiz';
+
+  @override
+  String get portfolioReviewWorking => 'Analizējam jūsu portfeli…';
 }

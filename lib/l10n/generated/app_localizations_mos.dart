@@ -1756,4 +1756,20 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Yõodã toeembo';
+
+  @override
+  String get portfolioReviewTitle => 'Portfey AI vɛɛsgo';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI na n gese f portfey zãngã fãa: f ligd sẽn tigim zĩig a yembre, tʋʋm-sullã la ligd buudã f sẽn tik-b, f aksiyõ-rãmbã sẽn tũud-taab yel-beedã, la tɩɩlgã. Rɩkda vɛɛsg a yembre.';
+
+  @override
+  String get portfolioReviewButton => 'Vɛɛs m portfey';
+
+  @override
+  String get portfolioReviewAgain => 'Le vɛɛse';
+
+  @override
+  String get portfolioReviewWorking => 'D vɛɛsd f portfey…';
 }

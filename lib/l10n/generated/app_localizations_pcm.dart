@@ -1769,4 +1769,20 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Value over time';
+
+  @override
+  String get portfolioReviewTitle => 'AI portfolio check';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Di AI go look your whole portfolio: how your money gather for one place, how sector and currency fit affect am, risk wey your stocks share, and dividend. E go use 1 analysis.';
+
+  @override
+  String get portfolioReviewButton => 'Check my portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Check am again';
+
+  @override
+  String get portfolioReviewWorking => 'We dey check your portfolio…';
 }

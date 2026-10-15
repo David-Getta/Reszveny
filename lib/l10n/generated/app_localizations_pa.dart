@@ -1765,4 +1765,20 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'ਸਮੇਂ ਨਾਲ ਮੁੱਲ';
+
+  @override
+  String get portfolioReviewTitle => 'AI ਪੋਰਟਫ਼ੋਲੀਓ ਸਮੀਖਿਆ';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ਤੁਹਾਡੇ ਪੂਰੇ ਪੋਰਟਫ਼ੋਲੀਓ ਨੂੰ ਦੇਖਦਾ ਹੈ: ਕੇਂਦਰੀਕਰਨ, ਸੈਕਟਰ ਅਤੇ ਮੁਦਰਾ ਦਾ ਜੋਖਮ, ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਦੇ ਸਾਂਝੇ ਜੋਖਮ ਅਤੇ ਲਾਭਅੰਸ਼। 1 ਵਿਸ਼ਲੇਸ਼ਣ ਲੱਗਦਾ ਹੈ।';
+
+  @override
+  String get portfolioReviewButton => 'ਮੇਰੇ ਪੋਰਟਫ਼ੋਲੀਓ ਦੀ ਸਮੀਖਿਆ ਕਰੋ';
+
+  @override
+  String get portfolioReviewAgain => 'ਮੁੜ ਸਮੀਖਿਆ ਕਰੋ';
+
+  @override
+  String get portfolioReviewWorking => 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਦੀ ਸਮੀਖਿਆ ਹੋ ਰਹੀ ਹੈ…';
 }

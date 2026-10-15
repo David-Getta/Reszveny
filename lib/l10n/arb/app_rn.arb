@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeyili igihe imenyesha ryashitse",
   "alertEmailOn": "Turasuzuma imenyesha ryawe buri minota mikeyi tukakurungikira imeyili, n'igihe porogarama yugaye.",
   "alertEmailSignIn": "Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n'igihe porogarama yugaye.",
-  "portfolioHistory": "Ihinduka ry'agaciro"
+  "portfolioHistory": "Ihinduka ry'agaciro",
+  "portfolioReviewTitle": "Isesangura ry'ishoramari rya AI",
+  "portfolioReviewIntro": "AI irasuzuma ishoramari ryawe ryose: ukwegeranira kw'amahera hamwe, ukwishimikiza ku mice y'ubudandaji n'amafaranga y'ibihugu, ingorane imigabane yawe isangiye, n'inyungu z'imigabane. Rikoresha isesangura 1.",
+  "portfolioReviewButton": "Sesangura ishoramari ryanje",
+  "portfolioReviewAgain": "Subira usesangure",
+  "portfolioReviewWorking": "Turiko turasesangura ishoramari ryawe…"
 }

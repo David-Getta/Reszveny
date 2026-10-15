@@ -346,3 +346,12 @@ nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, il
 
 Az önellenőrzés is bővült: egyeznek-e a mértékegységek és devizák, a százalékok a mostani árból
 jönnek-e, és minden katalizátor a mai nap utáni-e.
+
+## Portfólióelemzés (2026-10-15)
+
+Külön, rövid prompt (`PortfolioReviewer.systemPrompt`): a modell a pozíciók súlyát, szektorát,
+országát, devizáját, hozamát és néhány mutatóját kapja (webkeresés nélkül), és hat szekciót ír a
+felhasználó nyelvén: összkép, diverzifikáció, deviza, közös kockázatok, osztalék, megfontolandó
+szempontok – vételi/eladási tanács nélkül, azzal, hogy mitől függ egy esetleges változtatás.
+Strukturált JSON-kimenet (`output_config.format`), kb. 450–700 szó, egy rövid elemzésnyi keret
+(`x-whatstock-depth: brief`).

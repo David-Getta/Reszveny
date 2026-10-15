@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail quando um alerta dispara",
   "alertEmailOn": "Verificamos os seus alertas a cada poucos minutos e enviamos-lhe um e-mail, mesmo com a app fechada.",
   "alertEmailSignIn": "Inicie sessão com o seu e-mail nas Configurações para receber alertas por e-mail, mesmo com a app fechada.",
-  "portfolioHistory": "Evolução do valor"
+  "portfolioHistory": "Evolução do valor",
+  "portfolioReviewTitle": "Revisão da carteira com IA",
+  "portfolioReviewIntro": "A IA analisa toda a sua carteira: concentração, exposição a setores e moedas, riscos que suas ações têm em comum e dividendos. Usa 1 análise.",
+  "portfolioReviewButton": "Revisar minha carteira",
+  "portfolioReviewAgain": "Revisar novamente",
+  "portfolioReviewWorking": "Revisando sua carteira…"
 }

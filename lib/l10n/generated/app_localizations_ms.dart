@@ -1773,4 +1773,20 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Nilai mengikut masa';
+
+  @override
+  String get portfolioReviewTitle => 'Semakan portfolio AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI menyemak keseluruhan portfolio anda: penumpuan, pendedahan sektor dan mata wang, risiko yang dikongsi oleh saham anda, serta dividen. Menggunakan 1 analisis.';
+
+  @override
+  String get portfolioReviewButton => 'Semak portfolio saya';
+
+  @override
+  String get portfolioReviewAgain => 'Semak semula';
+
+  @override
+  String get portfolioReviewWorking => 'Menyemak portfolio anda…';
 }

@@ -1779,4 +1779,20 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Évolution de la valeur';
+
+  @override
+  String get portfolioReviewTitle => 'Revue du portefeuille par IA';
+
+  @override
+  String get portfolioReviewIntro =>
+      'L’IA examine l’ensemble de votre portefeuille : concentration, exposition sectorielle et aux devises, risques communs à vos actions et dividendes. Utilise 1 analyse.';
+
+  @override
+  String get portfolioReviewButton => 'Analyser mon portefeuille';
+
+  @override
+  String get portfolioReviewAgain => 'Analyser à nouveau';
+
+  @override
+  String get portfolioReviewWorking => 'Analyse de votre portefeuille…';
 }

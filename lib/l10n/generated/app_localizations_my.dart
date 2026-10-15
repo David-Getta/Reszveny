@@ -1762,4 +1762,20 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'အချိန်အလိုက် တန်ဖိုး';
+
+  @override
+  String get portfolioReviewTitle => 'AI ပေါ့ဖိုလီယို သုံးသပ်ချက်';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI က သင့်ပေါ့ဖိုလီယို တစ်ခုလုံးကို ကြည့်ရှုသည် – စုစည်းမှု၊ ကဏ္ဍနှင့် ငွေကြေး အန္တရာယ်၊ သင့်ရှယ်ယာများ မျှဝေထားသော အန္တရာယ်များနှင့် အမြတ်ဝေစု။ သုံးသပ်ချက် 1 ခု သုံးသည်။';
+
+  @override
+  String get portfolioReviewButton => 'ကျွန်ုပ်၏ ပေါ့ဖိုလီယိုကို သုံးသပ်ရန်';
+
+  @override
+  String get portfolioReviewAgain => 'ပြန်သုံးသပ်ရန်';
+
+  @override
+  String get portfolioReviewWorking => 'သင့်ပေါ့ဖိုလီယိုကို သုံးသပ်နေသည်…';
 }

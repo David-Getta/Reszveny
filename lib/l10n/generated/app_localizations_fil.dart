@@ -1775,4 +1775,20 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Halaga sa paglipas ng panahon';
+
+  @override
+  String get portfolioReviewTitle => 'Pagsusuri ng portfolio gamit ang AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Sinusuri ng AI ang buo mong portfolio: konsentrasyon, exposure sa sektor at currency, mga panganib na magkakapareho ang iyong mga stock, at dibidendo. Gumagamit ng 1 pagsusuri.';
+
+  @override
+  String get portfolioReviewButton => 'Suriin ang portfolio ko';
+
+  @override
+  String get portfolioReviewAgain => 'Suriin muli';
+
+  @override
+  String get portfolioReviewWorking => 'Sinusuri ang iyong portfolio…';
 }

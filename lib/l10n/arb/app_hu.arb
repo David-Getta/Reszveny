@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail, ha egy riasztás teljesül",
   "alertEmailOn": "Néhány percenként megnézzük a riasztásaidat, és e-mailben szólunk, akkor is, ha az app nincs megnyitva.",
   "alertEmailSignIn": "Lépj be az e-mail-címeddel a beállításokban, és e-mailben is szólunk, akkor is, ha az app nincs megnyitva.",
-  "portfolioHistory": "Értékalakulás"
+  "portfolioHistory": "Értékalakulás",
+  "portfolioReviewTitle": "AI-portfólióelemzés",
+  "portfolioReviewIntro": "Az AI átnézi az egész portfóliódat: koncentráció, szektor- és devizakitettség, a részvényeid közös kockázatai és az osztalék. 1 elemzést fogyaszt.",
+  "portfolioReviewButton": "Elemezd a portfóliómat",
+  "portfolioReviewAgain": "Új elemzés",
+  "portfolioReviewWorking": "A portfóliód elemzése folyamatban…"
 }

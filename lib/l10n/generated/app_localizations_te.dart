@@ -1775,4 +1775,20 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'కాలక్రమేణా విలువ';
+
+  @override
+  String get portfolioReviewTitle => 'AI పోర్ట్‌ఫోలియో సమీక్ష';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI మీ మొత్తం పోర్ట్‌ఫోలియోను పరిశీలిస్తుంది: కేంద్రీకరణ, రంగం మరియు కరెన్సీ ఎక్స్‌పోజర్, మీ షేర్లకు ఉమ్మడి నష్టభయాలు, డివిడెండ్లు. 1 విశ్లేషణను వినియోగిస్తుంది.';
+
+  @override
+  String get portfolioReviewButton => 'నా పోర్ట్‌ఫోలియోను సమీక్షించండి';
+
+  @override
+  String get portfolioReviewAgain => 'మళ్లీ సమీక్షించండి';
+
+  @override
+  String get portfolioReviewWorking => 'మీ పోర్ట్‌ఫోలియో సమీక్షించబడుతోంది…';
 }

@@ -1801,4 +1801,20 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Evoluția valorii';
+
+  @override
+  String get portfolioReviewTitle => 'Analiza portofoliului cu AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI analizează întregul tău portofoliu: concentrarea, expunerea pe sectoare și valute, riscurile comune ale acțiunilor tale și dividendele. Folosește 1 analiză.';
+
+  @override
+  String get portfolioReviewButton => 'Analizează-mi portofoliul';
+
+  @override
+  String get portfolioReviewAgain => 'Analizează din nou';
+
+  @override
+  String get portfolioReviewWorking => 'Se analizează portofoliul…';
 }

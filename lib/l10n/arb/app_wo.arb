@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeel bu artu am",
   "alertEmailOn": "Danuy seet say artu ay minit yu néew yu nekk te yónnee la imeel, su aplikasiyoŋ bi tëju sax.",
   "alertEmailSignIn": "Dugg ak sa imeel ci Tànneef ngir jot artu yi ci imeel, su aplikasiyoŋ bi tëju sax.",
-  "portfolioHistory": "Njëg ci diir jamono"
+  "portfolioHistory": "Njëg ci diir jamono",
+  "portfolioReviewTitle": "Saytu AI ci sa aksiyoŋ yi",
+  "portfolioReviewIntro": "AI dina saytu sa aksiyoŋ yépp: ndax sa xaalis dajaloo na ci benn bérab, sektëer yi ak xaalisu réew yu wuute yi, loraange yi sa aksiyoŋ yi bokk, ak dividand yi. Dafay jël 1 saytu.",
+  "portfolioReviewButton": "Saytul samay aksiyoŋ",
+  "portfolioReviewAgain": "Saytuwaat",
+  "portfolioReviewWorking": "Ñu ngi saytu sa aksiyoŋ yi…"
 }

@@ -479,5 +479,10 @@
   "alertEmailTitle": "提醒触发时发送电子邮件",
   "alertEmailOn": "我们每隔几分钟检查一次你的提醒，即使应用已关闭，也会给你发送电子邮件。",
   "alertEmailSignIn": "在设置中用电子邮件登录，即使应用已关闭，也能通过电子邮件收到提醒。",
-  "portfolioHistory": "市值走势"
+  "portfolioHistory": "市值走势",
+  "portfolioReviewTitle": "AI 投资组合诊断",
+  "portfolioReviewIntro": "AI 将全面审视整个投资组合：集中度、行业与货币敞口、持仓股票的共同风险以及股息。消耗 1 次分析。",
+  "portfolioReviewButton": "诊断我的投资组合",
+  "portfolioReviewAgain": "重新诊断",
+  "portfolioReviewWorking": "正在诊断投资组合…"
 }

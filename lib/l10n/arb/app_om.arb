@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeelii yeroo akeekkachiisni ka'u",
   "alertEmailOn": "Akeekkachiisa kee daqiiqaa muraasa hunda ni ilaalla, appiin cufaa ta'ee illee imeeliin siif ergina.",
   "alertEmailSignIn": "Appiin cufaa ta'ee illee akeekkachiisa imeeliin argachuuf, Qindaa'ina keessatti imeelii keetiin seeni.",
-  "portfolioHistory": "Jijjiirama gatii"
+  "portfolioHistory": "Jijjiirama gatii",
+  "portfolioReviewTitle": "Xiinxala poortfooliyoo AI",
+  "portfolioReviewIntro": "AI'n poortfooliyoo kee guutuu ilaala: walitti qabamuu, saaxilamummaa damee fi maallaqaa, balaa aksiyoonni kee waliin qooddatan, fi qooda bu'aa. Xiinxala 1 fayyadama.",
+  "portfolioReviewButton": "Poortfooliyoo koo xiinxali",
+  "portfolioReviewAgain": "Irra deebi'ii xiinxali",
+  "portfolioReviewWorking": "Poortfooliyoon kee xiinxalamaa jira…"
 }

@@ -1779,4 +1779,20 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Omuwendo mu biseera';
+
+  @override
+  String get portfolioReviewTitle => 'Okwekenneenya emigabo kwa AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI yeekenneenya emigabo gyo gyonna: engeri ssente zo gye zikuŋŋaanidde mu kifo kimu, ebitongole n\'ensimbi z\'ensi endala by\'oyimiriddeko, obulabe emigabo gyo bwe gigabana, n\'amagoba g\'emigabo. Kikozesa okwekenneenya 1.';
+
+  @override
+  String get portfolioReviewButton => 'Kebera emigabo gyange';
+
+  @override
+  String get portfolioReviewAgain => 'Kebera nate';
+
+  @override
+  String get portfolioReviewWorking => 'Tukebera emigabo gyo…';
 }

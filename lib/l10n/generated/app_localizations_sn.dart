@@ -1774,4 +1774,20 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Kukosha nekufamba kwenguva';
+
+  @override
+  String get portfolioReviewTitle => 'Ongororo yepotiforiyo yeAI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI inoongorora potiforiyo yako yose: kuunganidzwa kwemari panzvimbo imwe, kuvimba nemapazi ebhizinesi nemari dzekunze, njodzi dzinogovaniwa nemasheya ako, uye zvikamu zveprofiti. Inoshandisa ongororo 1.';
+
+  @override
+  String get portfolioReviewButton => 'Ongorora potiforiyo yangu';
+
+  @override
+  String get portfolioReviewAgain => 'Ongorora zvakare';
+
+  @override
+  String get portfolioReviewWorking => 'Tiri kuongorora potiforiyo yako…';
 }

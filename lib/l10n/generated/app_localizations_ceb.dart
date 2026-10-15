@@ -1778,4 +1778,20 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Bili sa paglabay sa panahon';
+
+  @override
+  String get portfolioReviewTitle => 'Pagtuki sa portfolio gamit ang AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Tan-awon sa AI ang imong tibuok portfolio: konsentrasyon, exposure sa sektor ug salapi, mga risgo nga gipaambit sa imong mga stock, ug dibidendo. Mogamit og 1 ka pagtuki.';
+
+  @override
+  String get portfolioReviewButton => 'Tukia ang akong portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Tukia pag-usab';
+
+  @override
+  String get portfolioReviewWorking => 'Gituki ang imong portfolio…';
 }

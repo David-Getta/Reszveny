@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail při spuštění upozornění",
   "alertEmailOn": "Vaše upozornění kontrolujeme každých pár minut a pošleme vám e-mail, i když je aplikace zavřená.",
   "alertEmailSignIn": "Přihlaste se e-mailem v Nastavení a upozornění vám budeme posílat e-mailem, i když je aplikace zavřená.",
-  "portfolioHistory": "Vývoj hodnoty"
+  "portfolioHistory": "Vývoj hodnoty",
+  "portfolioReviewTitle": "AI analýza portfolia",
+  "portfolioReviewIntro": "AI projde celé vaše portfolio: koncentraci, expozici vůči sektorům a měnám, rizika společná vašim akciím a dividendy. Spotřebuje 1 analýzu.",
+  "portfolioReviewButton": "Analyzovat moje portfolio",
+  "portfolioReviewAgain": "Analyzovat znovu",
+  "portfolioReviewWorking": "Analyzuji vaše portfolio…"
 }

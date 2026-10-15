@@ -1768,4 +1768,20 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Azal s wakud';
+
+  @override
+  String get portfolioReviewTitle => 'Tasleḍt n uqrab s AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ad yesleḍ aqrab-ik akk: tagrumma n tedrimt, iḥricen d tedrimin, ugur yemcabin n yisehmen-ik, d tfayda n yisehmen. Yesseqdac 1 n tesleḍt.';
+
+  @override
+  String get portfolioReviewButton => 'Sleḍ aqrab-iw';
+
+  @override
+  String get portfolioReviewAgain => 'Ales tasleḍt';
+
+  @override
+  String get portfolioReviewWorking => 'Tasleḍt n uqrab-ik…';
 }

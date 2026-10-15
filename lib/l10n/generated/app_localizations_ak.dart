@@ -1768,4 +1768,20 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ne bo nsakrae';
+
+  @override
+  String get portfolioReviewTitle => 'Wo nkyɛfa AI nhwehwɛmu';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI hwɛ wo nkyɛfa nyinaa: sɛnea wo sika aboa ano wɔ baabi koro, adwumayɛ mmeae ne sika ahorow a wo ho twe ho, asiane a wo nkyɛfa no nyinaa kyɛ, ne mfasoɔ a wonya. Ɛde nhwehwɛmu 1 di dwuma.';
+
+  @override
+  String get portfolioReviewButton => 'Hwehwɛ me nkyɛfa mu';
+
+  @override
+  String get portfolioReviewAgain => 'Hwehwɛ mu bio';
+
+  @override
+  String get portfolioReviewWorking => 'Ɛrehwehwɛ wo nkyɛfa mu…';
 }

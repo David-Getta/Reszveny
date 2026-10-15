@@ -1759,4 +1759,21 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'རིན་ཐང་གི་འགྱུར་ལྡོག';
+
+  @override
+  String get portfolioReviewTitle => 'མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་ AI དབྱེ་ཞིབ';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ཡིས་ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་ཧྲིལ་པོར་ལྟ་ཞིབ་བྱེད། མ་འཇོག་གཅིག་ཏུ་བསྡུས་པ། ལས་རིགས་དང་དངུལ་ལོར་བརྟེན་པ། ཁྱེད་ཀྱི་མ་ཤེར་ཚོར་མཉམ་དུ་ཡོད་པའི་ཉེན་ཁ། ཁེ་བགོ་བཅས། དབྱེ་ཞིབ་ 1 བེད་སྤྱོད།';
+
+  @override
+  String get portfolioReviewButton => 'ངའི་མ་འཇོག་ཚོགས་སྡེབ་དབྱེ་ཞིབ་བྱེད';
+
+  @override
+  String get portfolioReviewAgain => 'ཡང་བསྐྱར་དབྱེ་ཞིབ་བྱེད';
+
+  @override
+  String get portfolioReviewWorking =>
+      'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་དབྱེ་ཞིབ་བྱེད་བཞིན་པ…';
 }

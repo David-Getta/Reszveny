@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail no agtrigger ti alerto",
   "alertEmailOn": "Kitaenmi dagiti alertom iti tunggal sumagmamano a minuto ken ipatulodandaka iti e-mail, uray no nakarikep ti app.",
   "alertEmailSignIn": "Ag-sign in babaen ti e-mailmo iti Dagiti Setting tapno makaawat iti alerto babaen ti e-mail, uray no nakarikep ti app.",
-  "portfolioHistory": "Pateg iti panaglabas ti panawen"
+  "portfolioHistory": "Pateg iti panaglabas ti panawen",
+  "portfolioReviewTitle": "Panangsukimat ti portfolio babaen ti AI",
+  "portfolioReviewIntro": "Sukimaten ti AI ti intero a portfolio-mo: konsentrasion, pannakaibilang iti sektor ken kuarta, dagiti peggad a pagbibingayan dagiti stock-mo, ken dibidendo. Agusar iti 1 a panangsukimat.",
+  "portfolioReviewButton": "Sukimaten ti portfolio-k",
+  "portfolioReviewAgain": "Sukimaten manen",
+  "portfolioReviewWorking": "Sukimsukimaten ti portfolio-mo…"
 }

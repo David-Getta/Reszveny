@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail koosg gũusg sã n zĩndi",
   "alertEmailOn": "D gesdame f koosg gũusgã minit bilf fãa, la d tʋʋmd-f e-mail, baa aplikasiõ wã sã n pagda.",
   "alertEmailSignIn": "Kẽ ne f e-mail Seglgã pʋgẽ n paam koosg gũusgã e-mail pʋgẽ, baa aplikasiõ wã sã n pagda.",
-  "portfolioHistory": "Yõodã toeembo"
+  "portfolioHistory": "Yõodã toeembo",
+  "portfolioReviewTitle": "Portfey AI vɛɛsgo",
+  "portfolioReviewIntro": "AI na n gese f portfey zãngã fãa: f ligd sẽn tigim zĩig a yembre, tʋʋm-sullã la ligd buudã f sẽn tik-b, f aksiyõ-rãmbã sẽn tũud-taab yel-beedã, la tɩɩlgã. Rɩkda vɛɛsg a yembre.",
+  "portfolioReviewButton": "Vɛɛs m portfey",
+  "portfolioReviewAgain": "Le vɛɛse",
+  "portfolioReviewWorking": "D vɛɛsd f portfey…"
 }

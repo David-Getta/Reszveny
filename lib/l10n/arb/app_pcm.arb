@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail wen alert don trigger",
   "alertEmailOn": "We dey check your alerts every few minutes and we go e-mail you, even wen di app close.",
   "alertEmailSignIn": "Sign in with your e-mail for Settings make you dey get alerts for e-mail, even wen di app close.",
-  "portfolioHistory": "Value over time"
+  "portfolioHistory": "Value over time",
+  "portfolioReviewTitle": "AI portfolio check",
+  "portfolioReviewIntro": "Di AI go look your whole portfolio: how your money gather for one place, how sector and currency fit affect am, risk wey your stocks share, and dividend. E go use 1 analysis.",
+  "portfolioReviewButton": "Check my portfolio",
+  "portfolioReviewAgain": "Check am again",
+  "portfolioReviewWorking": "We dey check your portfolio…"
 }

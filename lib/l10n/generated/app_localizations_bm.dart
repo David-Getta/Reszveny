@@ -1766,4 +1766,20 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Sɔngɔ yɛlɛmali';
+
+  @override
+  String get portfolioReviewTitle => 'Aksiyɔn kɛsu AI sɛgɛsɛgɛli';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI bɛ i ka aksiyɔn kɛsu bɛɛ lajɛ: i ka wari cɛ̀tigɛlen bɛ yɔrɔ kelen na wa, sektɛriw ni wari suguyaw, farati minnu bɛ i ka aksiyɔnw bɛɛ la, ani tɔnɔ tilalenw. Sɛgɛsɛgɛli 1 bɛ ta.';
+
+  @override
+  String get portfolioReviewButton => 'N ka aksiyɔn kɛsu sɛgɛsɛgɛ';
+
+  @override
+  String get portfolioReviewAgain => 'A sɛgɛsɛgɛ tugun';
+
+  @override
+  String get portfolioReviewWorking => 'I ka aksiyɔn kɛsu bɛ ka sɛgɛsɛgɛ…';
 }

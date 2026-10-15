@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email nga okulabula kutuuse",
   "alertEmailOn": "Tukebera okulabula kwo buli ddakiika ntono era tukuweereza email, ne bwe kiba nti app eggaddwa.",
   "alertEmailSignIn": "Yingira n'email yo mu Nsengeka ofune okulabula ku email, ne bwe kiba nti app eggaddwa.",
-  "portfolioHistory": "Omuwendo mu biseera"
+  "portfolioHistory": "Omuwendo mu biseera",
+  "portfolioReviewTitle": "Okwekenneenya emigabo kwa AI",
+  "portfolioReviewIntro": "AI yeekenneenya emigabo gyo gyonna: engeri ssente zo gye zikuŋŋaanidde mu kifo kimu, ebitongole n'ensimbi z'ensi endala by'oyimiriddeko, obulabe emigabo gyo bwe gigabana, n'amagoba g'emigabo. Kikozesa okwekenneenya 1.",
+  "portfolioReviewButton": "Kebera emigabo gyange",
+  "portfolioReviewAgain": "Kebera nate",
+  "portfolioReviewWorking": "Tukebera emigabo gyo…"
 }

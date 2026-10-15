@@ -1775,4 +1775,20 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Mtengo pakapita nthawi';
+
+  @override
+  String get portfolioReviewTitle => 'Kusanthula masheya ndi AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI imaona masheya anu onse: momwe ndalama zanu zasonkhanira pamalo amodzi, kudalira magawo a bizinesi ndi ndalama zakunja, zoopsa zomwe masheya anu amagawana, ndi magawo a phindu. Kumagwiritsa ntchito kusanthula 1.';
+
+  @override
+  String get portfolioReviewButton => 'Santhulani masheya anga';
+
+  @override
+  String get portfolioReviewAgain => 'Santhulani kachiwiri';
+
+  @override
+  String get portfolioReviewWorking => 'Tikusanthula masheya anu…';
 }

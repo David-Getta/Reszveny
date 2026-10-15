@@ -479,5 +479,10 @@
   "alertEmailTitle": "Correo willachiy rikhurimuptin",
   "alertEmailOn": "Sapa iskay kimsa minutopi willachiykunaykita qhawayku, correotataq kachamuykiku, aplicación wisq'asqa kaptinpas.",
   "alertEmailSignIn": "Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq'asqa kaptinpas.",
-  "portfolioHistory": "Chaninpa tikrakuynin"
+  "portfolioHistory": "Chaninpa tikrakuynin",
+  "portfolioReviewTitle": "Portafolio AI t'aqwiy",
+  "portfolioReviewIntro": "AI llapan portafolioykita qhawan: qullqiyki huk ladollapi huñusqa kasqanta, sectorkunapi qullqi rikchaqkunapipas hapisqa kasqanta, acciónniykikunapa kaqlla riesgonkunata, dividendokunatapas. 1 t'aqwiyta llamk'achin.",
+  "portfolioReviewButton": "Portafolioyta t'aqwiy",
+  "portfolioReviewAgain": "Musuqmanta t'aqwiy",
+  "portfolioReviewWorking": "Portafolioykita t'aqwichkan…"
 }

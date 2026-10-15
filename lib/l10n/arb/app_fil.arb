@@ -479,5 +479,10 @@
   "alertEmailTitle": "Mag-email kapag na-trigger ang isang alerto",
   "alertEmailOn": "Sinusuri namin ang iyong mga alerto bawat ilang minuto at pinapadalhan ka ng email, kahit sarado ang app.",
   "alertEmailSignIn": "Mag-sign in gamit ang iyong email sa Mga setting para makatanggap ng mga alerto sa email, kahit sarado ang app.",
-  "portfolioHistory": "Halaga sa paglipas ng panahon"
+  "portfolioHistory": "Halaga sa paglipas ng panahon",
+  "portfolioReviewTitle": "Pagsusuri ng portfolio gamit ang AI",
+  "portfolioReviewIntro": "Sinusuri ng AI ang buo mong portfolio: konsentrasyon, exposure sa sektor at currency, mga panganib na magkakapareho ang iyong mga stock, at dibidendo. Gumagamit ng 1 pagsusuri.",
+  "portfolioReviewButton": "Suriin ang portfolio ko",
+  "portfolioReviewAgain": "Suriin muli",
+  "portfolioReviewWorking": "Sinusuri ang iyong portfolio…"
 }

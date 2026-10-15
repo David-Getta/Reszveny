@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imayl mi ara yekker yiwen walɣu",
   "alertEmailOn": "Nesenqad ilɣa-k yal kra n tesdatin, ad ak-d-nazen imayl, ula ma yella usnas yemdel.",
   "alertEmailSignIn": "Kcem s imayl-ik deg Iɣewwaṛen akken ad d-teṭṭfeḍ ilɣa s imayl, ula ma yella usnas yemdel.",
-  "portfolioHistory": "Azal s wakud"
+  "portfolioHistory": "Azal s wakud",
+  "portfolioReviewTitle": "Tasleḍt n uqrab s AI",
+  "portfolioReviewIntro": "AI ad yesleḍ aqrab-ik akk: tagrumma n tedrimt, iḥricen d tedrimin, ugur yemcabin n yisehmen-ik, d tfayda n yisehmen. Yesseqdac 1 n tesleḍt.",
+  "portfolioReviewButton": "Sleḍ aqrab-iw",
+  "portfolioReviewAgain": "Ales tasleḍt",
+  "portfolioReviewWorking": "Tasleḍt n uqrab-ik…"
 }

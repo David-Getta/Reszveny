@@ -1827,4 +1827,20 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Wartość w czasie';
+
+  @override
+  String get portfolioReviewTitle => 'Analiza portfela AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI przegląda cały Twój portfel: koncentrację, ekspozycję na sektory i waluty, ryzyka wspólne dla Twoich akcji oraz dywidendy. Zużywa 1 analizę.';
+
+  @override
+  String get portfolioReviewButton => 'Przeanalizuj mój portfel';
+
+  @override
+  String get portfolioReviewAgain => 'Przeanalizuj ponownie';
+
+  @override
+  String get portfolioReviewWorking => 'Analizowanie portfela…';
 }

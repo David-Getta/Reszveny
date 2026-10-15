@@ -1777,4 +1777,20 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ixabiso ngokuhamba kwexesha';
+
+  @override
+  String get portfolioReviewTitle => 'Uhlalutyo lwepotifoliyo lwe-AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'I-AI ijonga ipotifoliyo yakho yonke: ukugxila kwemali kwindawo enye, ukuxhomekeka kumacandelo nakwiimali zamazwe, imingcipheko ekwabelwana ngayo zizabelo zakho, kunye nezahlulo zenzuzo. Isebenzisa uhlalutyo olu-1.';
+
+  @override
+  String get portfolioReviewButton => 'Hlalutya ipotifoliyo yam';
+
+  @override
+  String get portfolioReviewAgain => 'Hlalutya kwakhona';
+
+  @override
+  String get portfolioReviewWorking => 'Sihlalutya ipotifoliyo yakho…';
 }

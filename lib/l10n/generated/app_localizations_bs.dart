@@ -1806,4 +1806,20 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Vrijednost kroz vrijeme';
+
+  @override
+  String get portfolioReviewTitle => 'AI analiza portfolija';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI pregleda cijeli vaš portfolio: koncentraciju, izloženost sektorima i valutama, zajedničke rizike vaših dionica i dividende. Troši 1 analizu.';
+
+  @override
+  String get portfolioReviewButton => 'Analiziraj moj portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Analiziraj ponovo';
+
+  @override
+  String get portfolioReviewWorking => 'Analiziramo vaš portfolio…';
 }

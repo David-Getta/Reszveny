@@ -1820,4 +1820,20 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Vývoj hodnoty';
+
+  @override
+  String get portfolioReviewTitle => 'AI analýza portfolia';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI projde celé vaše portfolio: koncentraci, expozici vůči sektorům a měnám, rizika společná vašim akciím a dividendy. Spotřebuje 1 analýzu.';
+
+  @override
+  String get portfolioReviewButton => 'Analyzovat moje portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Analyzovat znovu';
+
+  @override
+  String get portfolioReviewWorking => 'Analyzuji vaše portfolio…';
 }

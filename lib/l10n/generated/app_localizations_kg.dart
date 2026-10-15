@@ -1775,4 +1775,21 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ntalu na ntangu';
+
+  @override
+  String get portfolioReviewTitle => 'Analyse ya portefeuille na AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ke tala portefeuille na nge yonso: kuvukisa mbongo na kisika mosi, ba secteur ti ba mbongo ya nsi ya nzenza, ba kigonsa yina ba action na nge ke kabana, ti ba dividende. Isadilanga analyse 1.';
+
+  @override
+  String get portfolioReviewButton => 'Sala analyse ya portefeuille na mono';
+
+  @override
+  String get portfolioReviewAgain => 'Sala analyse diaka';
+
+  @override
+  String get portfolioReviewWorking =>
+      'Tuke sala analyse ya portefeuille na nge…';
 }

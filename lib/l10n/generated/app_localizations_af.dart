@@ -1773,4 +1773,20 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Waarde oor tyd';
+
+  @override
+  String get portfolioReviewTitle => 'AI-portefeuljeontleding';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Die AI kyk na jou hele portefeulje: konsentrasie, sektor- en valuta-blootstelling, risiko’s wat jou aandele deel, en dividende. Gebruik 1 ontleding.';
+
+  @override
+  String get portfolioReviewButton => 'Ontleed my portefeulje';
+
+  @override
+  String get portfolioReviewAgain => 'Ontleed weer';
+
+  @override
+  String get portfolioReviewWorking => 'Jou portefeulje word ontleed…';
 }

@@ -1765,4 +1765,21 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'समय के साथ मूल्य';
+
+  @override
+  String get portfolioReviewTitle => 'AI पोर्टफ़ोलियो समीक्षा';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI राउर पूरा पोर्टफ़ोलियो देखेला: केंद्रीकरण, सेक्टर आ मुद्रा के जोखिम, राउर शेयरन के साझा जोखिम, आ डिविडेंड। 1 विश्लेषण खरच होला।';
+
+  @override
+  String get portfolioReviewButton => 'हमार पोर्टफ़ोलियो के समीक्षा करीं';
+
+  @override
+  String get portfolioReviewAgain => 'फेर से समीक्षा करीं';
+
+  @override
+  String get portfolioReviewWorking =>
+      'राउर पोर्टफ़ोलियो के समीक्षा हो रहल बा…';
 }

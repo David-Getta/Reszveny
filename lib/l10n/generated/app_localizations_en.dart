@@ -1768,4 +1768,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Value over time';
+
+  @override
+  String get portfolioReviewTitle => 'AI portfolio review';
+
+  @override
+  String get portfolioReviewIntro =>
+      'The AI looks at your whole portfolio: concentration, sector and currency exposure, risks your stocks share, and dividends. Uses 1 analysis.';
+
+  @override
+  String get portfolioReviewButton => 'Review my portfolio';
+
+  @override
+  String get portfolioReviewAgain => 'Review again';
+
+  @override
+  String get portfolioReviewWorking => 'Reviewing your portfolio…';
 }

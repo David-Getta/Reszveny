@@ -1772,4 +1772,20 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Нарктын динамикасы';
+
+  @override
+  String get portfolioReviewTitle => 'Портфелдин AI талдоосу';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI бүт портфелиңизди карап чыгат: топтолуу, тармак жана валюта тобокелдиги, акцияларыңыздын жалпы тобокелдиктери жана дивиденддер. 1 талдоо жумшайт.';
+
+  @override
+  String get portfolioReviewButton => 'Портфелимди талдоо';
+
+  @override
+  String get portfolioReviewAgain => 'Кайра талдоо';
+
+  @override
+  String get portfolioReviewWorking => 'Портфелиңиз талданууда…';
 }

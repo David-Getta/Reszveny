@@ -479,5 +479,10 @@
   "alertEmailTitle": "アラート発動時にメールで通知",
   "alertEmailOn": "数分ごとにアラートを確認し、アプリを閉じていてもメールでお知らせします。",
   "alertEmailSignIn": "アプリを閉じていてもアラートをメールで受け取るには、設定からメールアドレスでサインインしてください。",
-  "portfolioHistory": "評価額の推移"
+  "portfolioHistory": "評価額の推移",
+  "portfolioReviewTitle": "AI ポートフォリオ診断",
+  "portfolioReviewIntro": "AI がポートフォリオ全体をチェックします：集中度、セクター・通貨のエクスポージャー、保有銘柄に共通するリスク、配当。分析を 1 回分使用します。",
+  "portfolioReviewButton": "ポートフォリオを診断",
+  "portfolioReviewAgain": "再診断",
+  "portfolioReviewWorking": "ポートフォリオを診断中…"
 }

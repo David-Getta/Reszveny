@@ -1782,4 +1782,20 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Fivoaran\'ny sanda';
+
+  @override
+  String get portfolioReviewTitle => 'Fandalinana ny kitapom-bola amin\'ny AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Jeren\'ny AI manontolo ny kitapom-bolanao: ny fifantohana, ny fiankinana amin\'ny sehatra sy ny vola, ny loza iraisan\'ny petrabolanao, ary ny tombom-barotra zaraina. Mampiasa 1 fandalinana.';
+
+  @override
+  String get portfolioReviewButton => 'Dinihina ny kitapom-bolako';
+
+  @override
+  String get portfolioReviewAgain => 'Dinihina indray';
+
+  @override
+  String get portfolioReviewWorking => 'Dinihina ny kitapom-bolanao…';
 }

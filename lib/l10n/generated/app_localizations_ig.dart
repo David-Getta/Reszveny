@@ -1764,4 +1764,20 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Uru ka oge na-aga';
+
+  @override
+  String get portfolioReviewTitle => 'Nyocha portfolio AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI na-enyocha portfolio gị niile: otú ego gị si gbakọta n\'otu ebe, ngalaba na ego mba ọzọ ị dabere na ha, ihe ize ndụ ndị stock gị nwekọrọ, na dividend. Na-eji nyocha 1.';
+
+  @override
+  String get portfolioReviewButton => 'Nyochaa portfolio m';
+
+  @override
+  String get portfolioReviewAgain => 'Nyochaa ọzọ';
+
+  @override
+  String get portfolioReviewWorking => 'Na-enyocha portfolio gị…';
 }

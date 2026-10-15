@@ -35,6 +35,7 @@ import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/notes/notes_store.dart';
+import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/portfolio_store.dart';
 import 'features/sync/sync_service.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
@@ -68,11 +69,15 @@ class AppServices {
     Telemetry? telemetry,
     AnalysisChat? chat,
     NotesStore? notes,
+    PortfolioReviewer? portfolioReviewer,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
        alerts = alerts ?? AlertStore(),
        notes = notes ?? NotesStore(),
+       portfolioReviewer =
+           portfolioReviewer ??
+           PortfolioReviewer(config: config, marketData: marketData, client: backend?.authenticated),
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
@@ -234,6 +239,9 @@ class AppServices {
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;
 
+  /// AI-portfólióelemzés.
+  final PortfolioReviewer portfolioReviewer;
+
   /// Szinkron az e-mailes fiókkal (backend-módban, belépve).
   late final SyncService? sync;
 
@@ -254,6 +262,7 @@ class AppServices {
       await preferences.clearPersonalData();
       await reports.clearCache();
       await notes.clear();
+      await PortfolioReviewer.clearLast();
     }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();

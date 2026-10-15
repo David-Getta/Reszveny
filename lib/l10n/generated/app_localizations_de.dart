@@ -1780,4 +1780,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Wertentwicklung';
+
+  @override
+  String get portfolioReviewTitle => 'KI-Portfolioanalyse';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Die KI prüft das gesamte Portfolio: Konzentration, Sektor- und Währungsanteile, Risiken, die die Aktien gemeinsam haben, sowie Dividenden. Verbraucht 1 Analyse.';
+
+  @override
+  String get portfolioReviewButton => 'Mein Portfolio analysieren';
+
+  @override
+  String get portfolioReviewAgain => 'Erneut analysieren';
+
+  @override
+  String get portfolioReviewWorking => 'Portfolio wird analysiert…';
 }

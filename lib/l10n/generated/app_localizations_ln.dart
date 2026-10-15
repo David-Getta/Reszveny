@@ -1778,4 +1778,21 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Motuya na ntango';
+
+  @override
+  String get portfolioReviewTitle => 'Analyse ya portefeuille na AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI etalaka portefeuille na yo mobimba: koyangana ya mbongo na esika moko, bitape ya mombongo mpe mbongo ya bikolo, makama oyo ba-action na yo bakabolaka, mpe ba-dividende. Esalelaka analyse 1.';
+
+  @override
+  String get portfolioReviewButton => 'Salá analyse ya portefeuille na ngai';
+
+  @override
+  String get portfolioReviewAgain => 'Salá lisusu';
+
+  @override
+  String get portfolioReviewWorking =>
+      'Tozali kosala analyse ya portefeuille na yo…';
 }

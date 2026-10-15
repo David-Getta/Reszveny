@@ -479,5 +479,10 @@
   "alertEmailTitle": "ማንቂያ ሲቀሰቀስ በኢሜይል አሳውቀኝ",
   "alertEmailOn": "ማንቂያዎችዎን በየጥቂት ደቂቃው እንፈትሻለን፤ መተግበሪያው ዝግ ቢሆንም በኢሜይል እናሳውቅዎታለን።",
   "alertEmailSignIn": "መተግበሪያው ዝግ ቢሆንም ማንቂያዎችን በኢሜይል ለማግኘት በቅንብሮች ውስጥ በኢሜይልዎ ይግቡ።",
-  "portfolioHistory": "የዋጋ ለውጥ"
+  "portfolioHistory": "የዋጋ ለውጥ",
+  "portfolioReviewTitle": "የፖርትፎሊዮ AI ትንተና",
+  "portfolioReviewIntro": "AI ሙሉ ፖርትፎሊዮዎን ይገመግማል፦ የኢንቨስትመንት ክምችት፣ የዘርፍና የምንዛሪ ተጋላጭነት፣ አክሲዮኖችዎ የሚጋሯቸው ስጋቶች እና የትርፍ ድርሻ። 1 ትንተና ይጠቀማል።",
+  "portfolioReviewButton": "ፖርትፎሊዮዬን ገምግም",
+  "portfolioReviewAgain": "እንደገና ገምግም",
+  "portfolioReviewWorking": "ፖርትፎሊዮዎ እየተገመገመ ነው…"
 }

@@ -1765,4 +1765,20 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'שווי לאורך זמן';
+
+  @override
+  String get portfolioReviewTitle => 'סקירת תיק השקעות ב-AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'ה-AI בוחן את כל תיק ההשקעות שלך: ריכוזיות, חשיפה לסקטורים ולמטבעות, סיכונים משותפים למניות שלך ודיבידנדים. מנצל ניתוח אחד.';
+
+  @override
+  String get portfolioReviewButton => 'סקירת התיק שלי';
+
+  @override
+  String get portfolioReviewAgain => 'סקירה מחדש';
+
+  @override
+  String get portfolioReviewWorking => 'סוקרים את תיק ההשקעות שלך…';
 }

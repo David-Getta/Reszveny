@@ -1766,4 +1766,20 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Кыйммәт динамикасы';
+
+  @override
+  String get portfolioReviewTitle => 'Портфельнең AI анализы';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI бөтен портфелегезне карый: тупланыш, тармак һәм валюта куркынычы, акцияләрегезнең уртак куркынычлары һәм дивидендлар. 1 анализ сарыф ителә.';
+
+  @override
+  String get portfolioReviewButton => 'Портфелемне анализлау';
+
+  @override
+  String get portfolioReviewAgain => 'Яңадан анализлау';
+
+  @override
+  String get portfolioReviewWorking => 'Портфелегез анализлана…';
 }

@@ -1777,4 +1777,20 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Εξέλιξη αξίας';
+
+  @override
+  String get portfolioReviewTitle => 'Ανάλυση χαρτοφυλακίου με AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Το AI εξετάζει ολόκληρο το χαρτοφυλάκιό σας: συγκέντρωση, έκθεση σε κλάδους και νομίσματα, κοινούς κινδύνους των μετοχών σας και μερίσματα. Χρησιμοποιεί 1 ανάλυση.';
+
+  @override
+  String get portfolioReviewButton => 'Ανάλυση του χαρτοφυλακίου μου';
+
+  @override
+  String get portfolioReviewAgain => 'Νέα ανάλυση';
+
+  @override
+  String get portfolioReviewWorking => 'Ανάλυση του χαρτοφυλακίου σας…';
 }

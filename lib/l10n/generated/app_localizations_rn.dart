@@ -1775,4 +1775,20 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ihinduka ry\'agaciro';
+
+  @override
+  String get portfolioReviewTitle => 'Isesangura ry\'ishoramari rya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI irasuzuma ishoramari ryawe ryose: ukwegeranira kw\'amahera hamwe, ukwishimikiza ku mice y\'ubudandaji n\'amafaranga y\'ibihugu, ingorane imigabane yawe isangiye, n\'inyungu z\'imigabane. Rikoresha isesangura 1.';
+
+  @override
+  String get portfolioReviewButton => 'Sesangura ishoramari ryanje';
+
+  @override
+  String get portfolioReviewAgain => 'Subira usesangure';
+
+  @override
+  String get portfolioReviewWorking => 'Turiko turasesangura ishoramari ryawe…';
 }

@@ -1770,4 +1770,20 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Värdeutveckling';
+
+  @override
+  String get portfolioReviewTitle => 'AI-portföljanalys';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI:n går igenom hela din portfölj: koncentration, sektor- och valutaexponering, risker som dina aktier har gemensamt och utdelningar. Använder 1 analys.';
+
+  @override
+  String get portfolioReviewButton => 'Analysera min portfölj';
+
+  @override
+  String get portfolioReviewAgain => 'Analysera igen';
+
+  @override
+  String get portfolioReviewWorking => 'Din portfölj analyseras…';
 }

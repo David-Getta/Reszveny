@@ -1781,4 +1781,20 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Boleng go ya ka nako';
+
+  @override
+  String get portfolioReviewTitle => 'Tshekatsheko ya photefolio ya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI e lebelela photefolio ya gago ka moka: go kgobokanywa ga tšhelete lefelong le tee, go ithekga ka makala le ditšhelete, dikotsi tšeo dišere tša gago di di abelanago, le dipoelo tša dišere. E šomiša tshekatsheko e 1.';
+
+  @override
+  String get portfolioReviewButton => 'Sekaseka photefolio ya ka';
+
+  @override
+  String get portfolioReviewAgain => 'Sekaseka gape';
+
+  @override
+  String get portfolioReviewWorking => 'Re sekaseka photefolio ya gago…';
 }

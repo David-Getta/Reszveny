@@ -1776,4 +1776,20 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ecuria e vlerës';
+
+  @override
+  String get portfolioReviewTitle => 'Analiza e portofolit me AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI shqyrton gjithë portofolin tënd: përqendrimin, ekspozimin ndaj sektorëve dhe monedhave, rreziqet e përbashkëta të aksioneve të tua dhe dividentët. Përdor 1 analizë.';
+
+  @override
+  String get portfolioReviewButton => 'Analizo portofolin tim';
+
+  @override
+  String get portfolioReviewAgain => 'Analizo përsëri';
+
+  @override
+  String get portfolioReviewWorking => 'Duke analizuar portofolin tënd…';
 }

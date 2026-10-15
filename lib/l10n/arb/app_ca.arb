@@ -479,5 +479,10 @@
   "alertEmailTitle": "Correu quan salti una alerta",
   "alertEmailOn": "Comprovem les teves alertes cada pocs minuts i t’enviem un correu, fins i tot amb l’app tancada.",
   "alertEmailSignIn": "Inicia la sessió amb el teu correu a Configuració per rebre les alertes per correu, fins i tot amb l’app tancada.",
-  "portfolioHistory": "Evolució del valor"
+  "portfolioHistory": "Evolució del valor",
+  "portfolioReviewTitle": "Revisió de la cartera amb IA",
+  "portfolioReviewIntro": "La IA analitza tota la teva cartera: concentració, exposició a sectors i divises, riscos que comparteixen les teves accions i dividends. Fa servir 1 anàlisi.",
+  "portfolioReviewButton": "Revisar la meva cartera",
+  "portfolioReviewAgain": "Tornar a revisar",
+  "portfolioReviewWorking": "S’està revisant la teva cartera…"
 }

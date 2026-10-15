@@ -1748,4 +1748,20 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'ມູນຄ່າຕາມເວລາ';
+
+  @override
+  String get portfolioReviewTitle => 'ການກວດສອບພອດໂຟລິໂອດ້ວຍ AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ຈະເບິ່ງພອດໂຟລິໂອທັງໝົດຂອງທ່ານ: ການກະຈຸກຕົວ, ຄວາມສ່ຽງດ້ານຂະແໜງ ແລະ ສະກຸນເງິນ, ຄວາມສ່ຽງທີ່ຫຸ້ນຂອງທ່ານມີຮ່ວມກັນ ແລະ ເງິນປັນຜົນ. ໃຊ້ການວິເຄາະ 1 ຄັ້ງ.';
+
+  @override
+  String get portfolioReviewButton => 'ກວດສອບພອດໂຟລິໂອຂອງຂ້ອຍ';
+
+  @override
+  String get portfolioReviewAgain => 'ກວດສອບອີກຄັ້ງ';
+
+  @override
+  String get portfolioReviewWorking => 'ກຳລັງກວດສອບພອດໂຟລິໂອຂອງທ່ານ…';
 }

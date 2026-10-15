@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email bere a kɔkɔbɔ bi ba mu",
   "alertEmailOn": "Yɛhwɛ wo kɔkɔbɔ simma kakra biara na yɛde email bɔ wo amanneɛ, sɛ app no to mu mpo a.",
   "alertEmailSignIn": "Fa wo email wura mu wɔ Nhyehyɛe mu na wunya kɔkɔbɔ wɔ email so, sɛ app no to mu mpo a.",
-  "portfolioHistory": "Ne bo nsakrae"
+  "portfolioHistory": "Ne bo nsakrae",
+  "portfolioReviewTitle": "Wo nkyɛfa AI nhwehwɛmu",
+  "portfolioReviewIntro": "AI hwɛ wo nkyɛfa nyinaa: sɛnea wo sika aboa ano wɔ baabi koro, adwumayɛ mmeae ne sika ahorow a wo ho twe ho, asiane a wo nkyɛfa no nyinaa kyɛ, ne mfasoɔ a wonya. Ɛde nhwehwɛmu 1 di dwuma.",
+  "portfolioReviewButton": "Hwehwɛ me nkyɛfa mu",
+  "portfolioReviewAgain": "Hwehwɛ mu bio",
+  "portfolioReviewWorking": "Ɛrehwehwɛ wo nkyɛfa mu…"
 }

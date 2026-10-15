@@ -1777,4 +1777,21 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'காலப்போக்கில் மதிப்பு';
+
+  @override
+  String get portfolioReviewTitle => 'AI போர்ட்ஃபோலியோ மதிப்பாய்வு';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI உங்கள் முழு போர்ட்ஃபோலியோவையும் பார்க்கிறது: குவிப்பு, துறை மற்றும் நாணய வெளிப்பாடு, உங்கள் பங்குகளின் பொதுவான அபாயங்கள், ஈவுத்தொகை. 1 பகுப்பாய்வைப் பயன்படுத்தும்.';
+
+  @override
+  String get portfolioReviewButton => 'என் போர்ட்ஃபோலியோவை மதிப்பாய்வு செய்';
+
+  @override
+  String get portfolioReviewAgain => 'மீண்டும் மதிப்பாய்வு செய்';
+
+  @override
+  String get portfolioReviewWorking =>
+      'உங்கள் போர்ட்ஃபோலியோ மதிப்பாய்வு செய்யப்படுகிறது…';
 }

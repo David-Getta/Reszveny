@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-post når et varsel utløses",
   "alertEmailOn": "Vi sjekker varslene dine med noen minutters mellomrom og sender deg en e-post, også når appen er lukket.",
   "alertEmailSignIn": "Logg inn med e-postadressen din under Innstillinger for å få varsler på e-post, også når appen er lukket.",
-  "portfolioHistory": "Verdiutvikling"
+  "portfolioHistory": "Verdiutvikling",
+  "portfolioReviewTitle": "AI-porteføljeanalyse",
+  "portfolioReviewIntro": "AI-en går gjennom hele porteføljen din: konsentrasjon, sektor- og valutaeksponering, risikoer aksjene dine har til felles, og utbytte. Bruker 1 analyse.",
+  "portfolioReviewButton": "Analyser porteføljen min",
+  "portfolioReviewAgain": "Analyser på nytt",
+  "portfolioReviewWorking": "Porteføljen din analyseres…"
 }

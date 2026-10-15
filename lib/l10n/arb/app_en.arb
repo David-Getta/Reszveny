@@ -1230,5 +1230,10 @@
   "portfolioHistory": "Value over time",
   "@portfolioHistory": {
     "description": "Title of the chart showing the total portfolio value over time."
-  }
+  },
+  "portfolioReviewTitle": "AI portfolio review",
+  "portfolioReviewIntro": "The AI looks at your whole portfolio: concentration, sector and currency exposure, risks your stocks share, and dividends. Uses 1 analysis.",
+  "portfolioReviewButton": "Review my portfolio",
+  "portfolioReviewAgain": "Review again",
+  "portfolioReviewWorking": "Reviewing your portfolio…"
 }

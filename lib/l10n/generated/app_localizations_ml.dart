@@ -1776,4 +1776,21 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'കാലക്രമേണയുള്ള മൂല്യം';
+
+  @override
+  String get portfolioReviewTitle => 'AI പോർട്ട്ഫോളിയോ അവലോകനം';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI നിങ്ങളുടെ മുഴുവൻ പോർട്ട്ഫോളിയോയും പരിശോധിക്കുന്നു: കേന്ദ്രീകരണം, മേഖലയും കറൻസിയും സംബന്ധിച്ച എക്സ്പോഷർ, നിങ്ങളുടെ ഓഹരികൾക്ക് പൊതുവായ അപകടസാധ്യതകൾ, ലാഭവിഹിതം. 1 വിശകലനം ഉപയോഗിക്കും.';
+
+  @override
+  String get portfolioReviewButton => 'എന്റെ പോർട്ട്ഫോളിയോ അവലോകനം ചെയ്യുക';
+
+  @override
+  String get portfolioReviewAgain => 'വീണ്ടും അവലോകനം ചെയ്യുക';
+
+  @override
+  String get portfolioReviewWorking =>
+      'നിങ്ങളുടെ പോർട്ട്ഫോളിയോ അവലോകനം ചെയ്യുന്നു…';
 }

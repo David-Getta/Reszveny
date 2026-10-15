@@ -1776,4 +1776,20 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Ihinduka ry\'agaciro';
+
+  @override
+  String get portfolioReviewTitle => 'Isesengura ry\'ishoramari rya AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI isuzuma ishoramari ryawe ryose: kwegeranya amafaranga ahantu hamwe, kwishingikiriza ku nzego z\'ubucuruzi n\'amafaranga y\'amahanga, ingaruka imigabane yawe ihuriyeho, n\'inyungu ku migabane. Rikoresha isesengura 1.';
+
+  @override
+  String get portfolioReviewButton => 'Sesengura ishoramari ryanjye';
+
+  @override
+  String get portfolioReviewAgain => 'Ongera usesengure';
+
+  @override
+  String get portfolioReviewWorking => 'Turimo gusesengura ishoramari ryawe…';
 }

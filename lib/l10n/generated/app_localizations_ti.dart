@@ -1737,4 +1737,20 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'ለውጢ ዋጋ';
+
+  @override
+  String get portfolioReviewTitle => 'ትንተና ፖርትፎሊዮ AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ንምሉእ ፖርትፎሊዮኹም ይርኢ፦ ምእካብ፣ ተቓላዕነት ንዘርፍታትን ባጤራታትን፣ ኣክስዮናትኩም ብሓባር ዘለዎም ሓደጋታት፣ ከምኡውን ኣታዊ ኣክስዮን። 1 ትንተና ይጥቀም።';
+
+  @override
+  String get portfolioReviewButton => 'ፖርትፎሊዮይ ተንትን';
+
+  @override
+  String get portfolioReviewAgain => 'ዳግማይ ተንትን';
+
+  @override
+  String get portfolioReviewWorking => 'ፖርትፎሊዮኹም ይትንተን ኣሎ…';
 }

@@ -1771,4 +1771,20 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Arvon kehitys';
+
+  @override
+  String get portfolioReviewTitle => 'Salkun tekoälyanalyysi';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Tekoäly käy läpi koko salkkusi: keskittymisen, toimiala- ja valuuttariskin, osakkeidesi yhteiset riskit ja osingot. Kuluttaa 1 analyysin.';
+
+  @override
+  String get portfolioReviewButton => 'Analysoi salkkuni';
+
+  @override
+  String get portfolioReviewAgain => 'Analysoi uudelleen';
+
+  @override
+  String get portfolioReviewWorking => 'Analysoidaan salkkuasi…';
 }

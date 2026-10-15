@@ -1742,4 +1742,20 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'የዋጋ ለውጥ';
+
+  @override
+  String get portfolioReviewTitle => 'የፖርትፎሊዮ AI ትንተና';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ሙሉ ፖርትፎሊዮዎን ይገመግማል፦ የኢንቨስትመንት ክምችት፣ የዘርፍና የምንዛሪ ተጋላጭነት፣ አክሲዮኖችዎ የሚጋሯቸው ስጋቶች እና የትርፍ ድርሻ። 1 ትንተና ይጠቀማል።';
+
+  @override
+  String get portfolioReviewButton => 'ፖርትፎሊዮዬን ገምግም';
+
+  @override
+  String get portfolioReviewAgain => 'እንደገና ገምግም';
+
+  @override
+  String get portfolioReviewWorking => 'ፖርትፎሊዮዎ እየተገመገመ ነው…';
 }

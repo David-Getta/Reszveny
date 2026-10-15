@@ -479,5 +479,10 @@
   "alertEmailTitle": "መጠንቀቕታ ክለዓል ከሎ ኢመይል",
   "alertEmailOn": "መጠንቀቕታታትኩም ኣብ ነፍሲ ወከፍ ውሑዳት ደቓይቕ ንፍትሽ፣ እቲ ኣፕ ዕጹው እንተኾነ እውን ብኢመይል ነፍልጠኩም።",
   "alertEmailSignIn": "እቲ ኣፕ ዕጹው እንተኾነ እውን መጠንቀቕታታት ብኢመይል ንምርካብ ኣብ ቅጥዕታት ብኢመይልኩም እተዉ።",
-  "portfolioHistory": "ለውጢ ዋጋ"
+  "portfolioHistory": "ለውጢ ዋጋ",
+  "portfolioReviewTitle": "ትንተና ፖርትፎሊዮ AI",
+  "portfolioReviewIntro": "AI ንምሉእ ፖርትፎሊዮኹም ይርኢ፦ ምእካብ፣ ተቓላዕነት ንዘርፍታትን ባጤራታትን፣ ኣክስዮናትኩም ብሓባር ዘለዎም ሓደጋታት፣ ከምኡውን ኣታዊ ኣክስዮን። 1 ትንተና ይጥቀም።",
+  "portfolioReviewButton": "ፖርትፎሊዮይ ተንትን",
+  "portfolioReviewAgain": "ዳግማይ ተንትን",
+  "portfolioReviewWorking": "ፖርትፎሊዮኹም ይትንተን ኣሎ…"
 }

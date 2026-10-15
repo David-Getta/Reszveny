@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-post när ett larm utlöses",
   "alertEmailOn": "Vi kontrollerar dina larm med några minuters mellanrum och skickar e-post till dig, även när appen är stängd.",
   "alertEmailSignIn": "Logga in med din e-postadress under Inställningar för att få larm via e-post, även när appen är stängd.",
-  "portfolioHistory": "Värdeutveckling"
+  "portfolioHistory": "Värdeutveckling",
+  "portfolioReviewTitle": "AI-portföljanalys",
+  "portfolioReviewIntro": "AI:n går igenom hela din portfölj: koncentration, sektor- och valutaexponering, risker som dina aktier har gemensamt och utdelningar. Använder 1 analys.",
+  "portfolioReviewButton": "Analysera min portfölj",
+  "portfolioReviewAgain": "Analysera igen",
+  "portfolioReviewWorking": "Din portfölj analyseras…"
 }

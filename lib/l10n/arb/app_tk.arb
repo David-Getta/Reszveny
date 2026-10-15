@@ -479,5 +479,10 @@
   "alertEmailTitle": "Duýduryş işlände e-poçta",
   "alertEmailOn": "Duýduryşlaryňyzy her birnäçe minutdan barlaýarys we programma ýapyk bolsa-da, size e-poçta iberýäris.",
   "alertEmailSignIn": "Programma ýapyk bolsa-da duýduryşlary e-poçta arkaly almak üçin Sazlamalarda e-poçtaňyz bilen giriň.",
-  "portfolioHistory": "Gymmatyň üýtgeýşi"
+  "portfolioHistory": "Gymmatyň üýtgeýşi",
+  "portfolioReviewTitle": "Portfeliň AI seljermesi",
+  "portfolioReviewIntro": "AI tutuş portfeliňize seredýär: jemlenmä, pudak we walýuta töwekgelçiligine, paýnamalaryňyzyň umumy töwekgelçiliklerine we diwidendlere. 1 seljerme sarp edýär.",
+  "portfolioReviewButton": "Portfelimi seljer",
+  "portfolioReviewAgain": "Täzeden seljer",
+  "portfolioReviewWorking": "Portfeliňiz seljerilýär…"
 }

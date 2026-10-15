@@ -1764,4 +1764,20 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Biến động giá trị';
+
+  @override
+  String get portfolioReviewTitle => 'Đánh giá danh mục bằng AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI xem xét toàn bộ danh mục của bạn: mức độ tập trung, mức phơi nhiễm theo ngành và tiền tệ, rủi ro chung giữa các cổ phiếu của bạn và cổ tức. Dùng 1 lượt phân tích.';
+
+  @override
+  String get portfolioReviewButton => 'Đánh giá danh mục của tôi';
+
+  @override
+  String get portfolioReviewAgain => 'Đánh giá lại';
+
+  @override
+  String get portfolioReviewWorking => 'Đang đánh giá danh mục của bạn…';
 }

@@ -1775,4 +1775,20 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Hepykue ñemoambue';
+
+  @override
+  String get portfolioReviewTitle => 'Cartera jehesaʼỹijo AI rupive';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ohecha nde cartera tuichakue: mbaʼeichapa oñembyaty nde viru, sector ha korepoti ndive reñemboja, umi kyhyjerã ojoguáva ne acción-kuéra, ha dividendo. Oipuru 1 jehesaʼỹijo.';
+
+  @override
+  String get portfolioReviewButton => 'Ehesaʼỹijo che cartera';
+
+  @override
+  String get portfolioReviewAgain => 'Ehesaʼỹijo jey';
+
+  @override
+  String get portfolioReviewWorking => 'Ojehesaʼỹijohína nde cartera…';
 }

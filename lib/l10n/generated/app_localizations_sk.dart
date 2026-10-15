@@ -1824,4 +1824,20 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Vývoj hodnoty';
+
+  @override
+  String get portfolioReviewTitle => 'AI analýza portfólia';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI prejde celé vaše portfólio: koncentráciu, expozíciu voči sektorom a menám, riziká spoločné pre vaše akcie a dividendy. Spotrebuje 1 analýzu.';
+
+  @override
+  String get portfolioReviewButton => 'Analyzovať moje portfólio';
+
+  @override
+  String get portfolioReviewAgain => 'Analyzovať znova';
+
+  @override
+  String get portfolioReviewWorking => 'Analyzujem vaše portfólio…';
 }

@@ -1774,4 +1774,20 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Mushinga mu bikondo';
+
+  @override
+  String get portfolioReviewTitle => 'Dikonkonona dia portefeuille kudi AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI udi utangila portefeuille webe yonso: mushindu udi makuta asangisha muaba umue, bitupa bia mudimu ne makuta a matunga makuabu, njiwu idi ma-action ebe mabanye, ne ma-dividende. Udi uangata dikonkonona 1.';
+
+  @override
+  String get portfolioReviewButton => 'Konkonona portefeuille wanyi';
+
+  @override
+  String get portfolioReviewAgain => 'Konkonona kabidi';
+
+  @override
+  String get portfolioReviewWorking => 'Tudi tukonkonona portefeuille webe…';
 }

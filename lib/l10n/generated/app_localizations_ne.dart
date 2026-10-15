@@ -1770,4 +1770,20 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'समयसँगै मूल्य';
+
+  @override
+  String get portfolioReviewTitle => 'AI पोर्टफोलियो समीक्षा';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ले तपाईंको सम्पूर्ण पोर्टफोलियो हेर्छ: केन्द्रीकरण, क्षेत्र र मुद्राको जोखिम, तपाईंका सेयरहरूका साझा जोखिम र लाभांश। 1 विश्लेषण खर्च हुन्छ।';
+
+  @override
+  String get portfolioReviewButton => 'मेरो पोर्टफोलियो समीक्षा गर्नुहोस्';
+
+  @override
+  String get portfolioReviewAgain => 'फेरि समीक्षा गर्नुहोस्';
+
+  @override
+  String get portfolioReviewWorking => 'तपाईंको पोर्टफोलियो समीक्षा हुँदै…';
 }

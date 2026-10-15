@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail când se declanșează o alertă",
   "alertEmailOn": "Îți verificăm alertele la câteva minute și îți trimitem un e-mail, chiar și când aplicația e închisă.",
   "alertEmailSignIn": "Conectează-te cu e-mailul tău în Setări ca să primești alertele pe e-mail, chiar și când aplicația e închisă.",
-  "portfolioHistory": "Evoluția valorii"
+  "portfolioHistory": "Evoluția valorii",
+  "portfolioReviewTitle": "Analiza portofoliului cu AI",
+  "portfolioReviewIntro": "AI analizează întregul tău portofoliu: concentrarea, expunerea pe sectoare și valute, riscurile comune ale acțiunilor tale și dividendele. Folosește 1 analiză.",
+  "portfolioReviewButton": "Analizează-mi portofoliul",
+  "portfolioReviewAgain": "Analizează din nou",
+  "portfolioReviewWorking": "Se analizează portofoliul…"
 }

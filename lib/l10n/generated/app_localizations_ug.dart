@@ -1772,4 +1772,20 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'قىممەت ئۆزگىرىشى';
+
+  @override
+  String get portfolioReviewTitle => 'مەبلەغ بىرىكمىسىنىڭ AI تەھلىلى';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI پۈتكۈل مەبلەغ بىرىكمىڭىزنى كۆزدىن كەچۈرىدۇ: مەركەزلىشىش، ساھە ۋە پۇل تۈرى خەۋپى، پاي چەكلىرىڭىزنىڭ ئورتاق خەۋپلىرى ۋە پايدا ئۈلۈشى. 1 تەھلىل ئىشلىتىدۇ.';
+
+  @override
+  String get portfolioReviewButton => 'مەبلەغ بىرىكمەمنى تەھلىل قىلىش';
+
+  @override
+  String get portfolioReviewAgain => 'قايتا تەھلىل قىلىش';
+
+  @override
+  String get portfolioReviewWorking => 'مەبلەغ بىرىكمىڭىز تەھلىل قىلىنىۋاتىدۇ…';
 }

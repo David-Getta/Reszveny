@@ -1773,4 +1773,20 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Asi ƒe tɔtrɔ';
+
+  @override
+  String get portfolioReviewTitle => 'AI numekuku le akpawo ŋu';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI kpɔa wò akpawo katã: ne wò ga ƒo ƒu ɖe teƒe ɖeka, dɔwɔƒe ƒe akpawo kple gaƒomeviwo ƒe afɔku, afɔku siwo le wò akpawo katã ŋu, kple viɖe siwo nèxɔna. Exɔa numekuku 1.';
+
+  @override
+  String get portfolioReviewButton => 'Dzro nye akpawo me';
+
+  @override
+  String get portfolioReviewAgain => 'Gadzro me';
+
+  @override
+  String get portfolioReviewWorking => 'Míele wò akpawo dzrom me…';
 }

@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imeyili loko xitiviso xi tirha",
   "alertEmailOn": "Hi kambela switiviso swa wena endzhaku ka timinete ti nga ri tingani naswona hi ku rhumela imeyili, hambi loko app yi pfariwile.",
   "alertEmailSignIn": "Nghena hi imeyili ya wena eka Swiyimiso leswaku u kuma switiviso hi imeyili, hambi loko app yi pfariwile.",
-  "portfolioHistory": "Nkoka hi ku famba ka nkarhi"
+  "portfolioHistory": "Nkoka hi ku famba ka nkarhi",
+  "portfolioReviewTitle": "Nxopaxopo wa phothifoliyo hi AI",
+  "portfolioReviewIntro": "AI yi languta phothifoliyo ya wena hinkwayo: ku hlengeleteka ka mali endhawini yin'we, ku titshega hi swiyenge ni mali ya matiko, makhombo lawa swiavelo swa wena swi ma avelanaka, ni swiavelo swa vuyelo. Yi tirhisa nxopaxopo wun'we.",
+  "portfolioReviewButton": "Xopaxopa phothifoliyo ya mina",
+  "portfolioReviewAgain": "Xopaxopa nakambe",
+  "portfolioReviewWorking": "Hi xopaxopa phothifoliyo ya wena…"
 }

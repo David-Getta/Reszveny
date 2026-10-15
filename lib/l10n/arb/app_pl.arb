@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail po uruchomieniu alertu",
   "alertEmailOn": "Co kilka minut sprawdzamy Twoje alerty i wysyłamy Ci e-mail, nawet gdy aplikacja jest zamknięta.",
   "alertEmailSignIn": "Zaloguj się adresem e-mail w Ustawieniach, aby otrzymywać alerty e-mailem, nawet gdy aplikacja jest zamknięta.",
-  "portfolioHistory": "Wartość w czasie"
+  "portfolioHistory": "Wartość w czasie",
+  "portfolioReviewTitle": "Analiza portfela AI",
+  "portfolioReviewIntro": "AI przegląda cały Twój portfel: koncentrację, ekspozycję na sektory i waluty, ryzyka wspólne dla Twoich akcji oraz dywidendy. Zużywa 1 analizę.",
+  "portfolioReviewButton": "Przeanalizuj mój portfel",
+  "portfolioReviewAgain": "Przeanalizuj ponownie",
+  "portfolioReviewWorking": "Analizowanie portfela…"
 }

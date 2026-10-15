@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-mail so tintinol huɓɓii",
   "alertEmailOn": "Min ƴeewtata tintine maa hojomaaji seeɗa kala, min neldoo ma e-mail, hay so jaaɓnirgal ngal uddaama.",
   "alertEmailSignIn": "Seŋo e e-mail maa nder Teelte ngam heɓde tintine e e-mail, hay so jaaɓnirgal ngal uddaama.",
-  "portfolioHistory": "Waylagol njaru"
+  "portfolioHistory": "Waylagol njaru",
+  "portfolioReviewTitle": "Ƴeewndo AI aksiyoŋ am",
+  "portfolioReviewIntro": "AI ina ƴeewa aksiyoŋ maa fof: hawrugol kaalis maa e nokku gooto, golle e kaalis ɗe ngonɗaa e mum'en, bone ɗe aksiyoŋ maa kawri, e njeenaari. Ina huutoroo ƴeewndo 1.",
+  "portfolioReviewButton": "Ƴeew aksiyoŋ am",
+  "portfolioReviewAgain": "Ƴeew kadi",
+  "portfolioReviewWorking": "Ina ƴeewa aksiyoŋ maa…"
 }

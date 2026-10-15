@@ -479,5 +479,10 @@
   "alertEmailTitle": "I-imeyile xa isilumkiso sisebenza",
   "alertEmailOn": "Sijonga izilumkiso zakho rhoqo emva kwemizuzu embalwa size sikuthumelele i-imeyile, nokuba i-app ivaliwe.",
   "alertEmailSignIn": "Ngena nge-imeyile yakho kwiiSetingi ukuze ufumane izilumkiso nge-imeyile, nokuba i-app ivaliwe.",
-  "portfolioHistory": "Ixabiso ngokuhamba kwexesha"
+  "portfolioHistory": "Ixabiso ngokuhamba kwexesha",
+  "portfolioReviewTitle": "Uhlalutyo lwepotifoliyo lwe-AI",
+  "portfolioReviewIntro": "I-AI ijonga ipotifoliyo yakho yonke: ukugxila kwemali kwindawo enye, ukuxhomekeka kumacandelo nakwiimali zamazwe, imingcipheko ekwabelwana ngayo zizabelo zakho, kunye nezahlulo zenzuzo. Isebenzisa uhlalutyo olu-1.",
+  "portfolioReviewButton": "Hlalutya ipotifoliyo yam",
+  "portfolioReviewAgain": "Hlalutya kwakhona",
+  "portfolioReviewWorking": "Sihlalutya ipotifoliyo yakho…"
 }

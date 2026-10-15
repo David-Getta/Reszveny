@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-pos wanneer ’n waarskuwing afgaan",
   "alertEmailOn": "Ons gaan jou waarskuwings elke paar minute na en stuur vir jou ’n e-pos, selfs wanneer die app toe is.",
   "alertEmailSignIn": "Meld in Instellings met jou e-posadres aan om waarskuwings per e-pos te kry, selfs wanneer die app toe is.",
-  "portfolioHistory": "Waarde oor tyd"
+  "portfolioHistory": "Waarde oor tyd",
+  "portfolioReviewTitle": "AI-portefeuljeontleding",
+  "portfolioReviewIntro": "Die AI kyk na jou hele portefeulje: konsentrasie, sektor- en valuta-blootstelling, risiko’s wat jou aandele deel, en dividende. Gebruik 1 ontleding.",
+  "portfolioReviewButton": "Ontleed my portefeulje",
+  "portfolioReviewAgain": "Ontleed weer",
+  "portfolioReviewWorking": "Jou portefeulje word ontleed…"
 }

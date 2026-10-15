@@ -1770,4 +1770,20 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'সময়ের সাথে মূল্য';
+
+  @override
+  String get portfolioReviewTitle => 'AI পোর্টফোলিও পর্যালোচনা';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI আপনার পুরো পোর্টফোলিও দেখে: কেন্দ্রীভবন, খাত ও মুদ্রার ঝুঁকি, আপনার শেয়ারগুলোর অভিন্ন ঝুঁকি এবং লভ্যাংশ। 1টি বিশ্লেষণ খরচ হয়।';
+
+  @override
+  String get portfolioReviewButton => 'আমার পোর্টফোলিও পর্যালোচনা করুন';
+
+  @override
+  String get portfolioReviewAgain => 'আবার পর্যালোচনা করুন';
+
+  @override
+  String get portfolioReviewWorking => 'আপনার পোর্টফোলিও পর্যালোচনা করা হচ্ছে…';
 }

@@ -1812,4 +1812,20 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'تطور القيمة';
+
+  @override
+  String get portfolioReviewTitle => 'مراجعة المحفظة بالذكاء الاصطناعي';
+
+  @override
+  String get portfolioReviewIntro =>
+      'يفحص الذكاء الاصطناعي محفظتك بالكامل: التركّز، والتعرّض للقطاعات والعملات، والمخاطر المشتركة بين أسهمك، والتوزيعات. يستهلك تحليلاً واحداً.';
+
+  @override
+  String get portfolioReviewButton => 'راجِع محفظتي';
+
+  @override
+  String get portfolioReviewAgain => 'إعادة المراجعة';
+
+  @override
+  String get portfolioReviewWorking => 'جارٍ مراجعة محفظتك…';
 }

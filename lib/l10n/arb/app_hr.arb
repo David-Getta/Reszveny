@@ -479,5 +479,10 @@
   "alertEmailTitle": "E-pošta kad se obavijest aktivira",
   "alertEmailOn": "Vaše obavijesti provjeravamo svakih nekoliko minuta i šaljemo vam e-poštu, čak i kad je aplikacija zatvorena.",
   "alertEmailSignIn": "Prijavite se e-poštom u Postavkama da biste obavijesti primali e-poštom, čak i kad je aplikacija zatvorena.",
-  "portfolioHistory": "Kretanje vrijednosti"
+  "portfolioHistory": "Kretanje vrijednosti",
+  "portfolioReviewTitle": "AI analiza portfelja",
+  "portfolioReviewIntro": "AI pregledava cijeli vaš portfelj: koncentraciju, izloženost sektorima i valutama, zajedničke rizike vaših dionica i dividende. Troši 1 analizu.",
+  "portfolioReviewButton": "Analiziraj moj portfelj",
+  "portfolioReviewAgain": "Analiziraj ponovno",
+  "portfolioReviewWorking": "Analiziramo vaš portfelj…"
 }

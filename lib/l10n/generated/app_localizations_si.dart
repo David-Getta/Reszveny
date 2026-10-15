@@ -1769,4 +1769,20 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'කාලයත් සමඟ වටිනාකම';
+
+  @override
+  String get portfolioReviewTitle => 'AI කළඹ සමාලෝචනය';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI ඔබේ මුළු කළඹම පරීක්ෂා කරයි: සාන්ද්‍රණය, අංශ හා මුදල් ඒකක අවදානම, ඔබේ කොටස්වලට පොදු අවදානම් සහ ලාභාංශ. විශ්ලේෂණ 1ක් වැය වේ.';
+
+  @override
+  String get portfolioReviewButton => 'මගේ කළඹ සමාලෝචනය කරන්න';
+
+  @override
+  String get portfolioReviewAgain => 'නැවත සමාලෝචනය කරන්න';
+
+  @override
+  String get portfolioReviewWorking => 'ඔබේ කළඹ සමාලෝචනය කරමින්…';
 }

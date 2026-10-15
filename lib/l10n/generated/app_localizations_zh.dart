@@ -1695,6 +1695,22 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioHistory => '市值走势';
+
+  @override
+  String get portfolioReviewTitle => 'AI 投资组合诊断';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI 将全面审视整个投资组合：集中度、行业与货币敞口、持仓股票的共同风险以及股息。消耗 1 次分析。';
+
+  @override
+  String get portfolioReviewButton => '诊断我的投资组合';
+
+  @override
+  String get portfolioReviewAgain => '重新诊断';
+
+  @override
+  String get portfolioReviewWorking => '正在诊断投资组合…';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3386,4 +3402,20 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioHistory => '市值走勢';
+
+  @override
+  String get portfolioReviewTitle => 'AI 投資組合診斷';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI 會全面審視整個投資組合：集中度、行業及貨幣風險、持倉股票的共同風險，以及股息。用 1 次分析。';
+
+  @override
+  String get portfolioReviewButton => '診斷我的投資組合';
+
+  @override
+  String get portfolioReviewAgain => '重新診斷';
+
+  @override
+  String get portfolioReviewWorking => '正在診斷投資組合…';
 }

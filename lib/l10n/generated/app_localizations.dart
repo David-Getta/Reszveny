@@ -3216,6 +3216,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Value over time'**
   String get portfolioHistory;
+
+  /// No description provided for @portfolioReviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI portfolio review'**
+  String get portfolioReviewTitle;
+
+  /// No description provided for @portfolioReviewIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI looks at your whole portfolio: concentration, sector and currency exposure, risks your stocks share, and dividends. Uses 1 analysis.'**
+  String get portfolioReviewIntro;
+
+  /// No description provided for @portfolioReviewButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Review my portfolio'**
+  String get portfolioReviewButton;
+
+  /// No description provided for @portfolioReviewAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Review again'**
+  String get portfolioReviewAgain;
+
+  /// No description provided for @portfolioReviewWorking.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewing your portfolio…'**
+  String get portfolioReviewWorking;
 }
 
 class _AppLocalizationsDelegate

@@ -479,5 +479,10 @@
   "alertEmailTitle": "Barua pepe arifa ikitimia",
   "alertEmailOn": "Tunakagua arifa zako kila baada ya dakika chache na kukutumia barua pepe, hata programu ikiwa imefungwa.",
   "alertEmailSignIn": "Ingia kwa barua pepe yako katika Mipangilio ili upate arifa kwa barua pepe, hata programu ikiwa imefungwa.",
-  "portfolioHistory": "Thamani kwa muda"
+  "portfolioHistory": "Thamani kwa muda",
+  "portfolioReviewTitle": "Uchambuzi wa jalada la hisa kwa AI",
+  "portfolioReviewIntro": "AI hukagua jalada lako lote la hisa: mrundikano, utegemezi kwa sekta na sarafu, hatari zinazoshirikiwa na hisa zako, na gawio. Hutumia uchambuzi 1.",
+  "portfolioReviewButton": "Chambua jalada langu la hisa",
+  "portfolioReviewAgain": "Chambua tena",
+  "portfolioReviewWorking": "Inachambua jalada lako la hisa…"
 }

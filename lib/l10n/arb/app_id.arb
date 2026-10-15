@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email saat peringatan terpicu",
   "alertEmailOn": "Kami memeriksa peringatan Anda setiap beberapa menit dan mengirimi Anda email, bahkan saat aplikasi ditutup.",
   "alertEmailSignIn": "Masuk dengan email Anda di Pengaturan untuk menerima peringatan lewat email, bahkan saat aplikasi ditutup.",
-  "portfolioHistory": "Nilai dari waktu ke waktu"
+  "portfolioHistory": "Nilai dari waktu ke waktu",
+  "portfolioReviewTitle": "Tinjauan portofolio AI",
+  "portfolioReviewIntro": "AI meninjau seluruh portofolio Anda: konsentrasi, eksposur sektor dan mata uang, risiko yang sama-sama dimiliki saham Anda, serta dividen. Menggunakan 1 analisis.",
+  "portfolioReviewButton": "Tinjau portofolio saya",
+  "portfolioReviewAgain": "Tinjau ulang",
+  "portfolioReviewWorking": "Meninjau portofolio Anda…"
 }

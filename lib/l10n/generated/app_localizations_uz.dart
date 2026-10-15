@@ -1772,4 +1772,20 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Qiymat dinamikasi';
+
+  @override
+  String get portfolioReviewTitle => 'Portfelning AI tahlili';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI butun portfelingizni koʻrib chiqadi: jamlanish, soha va valyuta xavfi, aksiyalaringizning umumiy xavflari va dividendlar. 1 ta tahlil sarflanadi.';
+
+  @override
+  String get portfolioReviewButton => 'Portfelimni tahlil qilish';
+
+  @override
+  String get portfolioReviewAgain => 'Qayta tahlil qilish';
+
+  @override
+  String get portfolioReviewWorking => 'Portfelingiz tahlil qilinmoqda…';
 }

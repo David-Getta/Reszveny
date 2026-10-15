@@ -479,5 +479,10 @@
   "alertEmailTitle": "Imelo chidziwitso chikayambika",
   "alertEmailOn": "Timafufuza zidziwitso zanu pakapita mphindi zingapo ndikukutumizirani imelo, ngakhale pulogalamu itatsekedwa.",
   "alertEmailSignIn": "Lowani ndi imelo yanu mu Zokonda kuti mulandire zidziwitso pa imelo, ngakhale pulogalamu itatsekedwa.",
-  "portfolioHistory": "Mtengo pakapita nthawi"
+  "portfolioHistory": "Mtengo pakapita nthawi",
+  "portfolioReviewTitle": "Kusanthula masheya ndi AI",
+  "portfolioReviewIntro": "AI imaona masheya anu onse: momwe ndalama zanu zasonkhanira pamalo amodzi, kudalira magawo a bizinesi ndi ndalama zakunja, zoopsa zomwe masheya anu amagawana, ndi magawo a phindu. Kumagwiritsa ntchito kusanthula 1.",
+  "portfolioReviewButton": "Santhulani masheya anga",
+  "portfolioReviewAgain": "Santhulani kachiwiri",
+  "portfolioReviewWorking": "Tikusanthula masheya anu…"
 }

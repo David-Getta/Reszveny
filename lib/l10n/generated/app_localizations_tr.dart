@@ -1769,4 +1769,20 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Değer gelişimi';
+
+  @override
+  String get portfolioReviewTitle => 'Yapay zekâ portföy analizi';
+
+  @override
+  String get portfolioReviewIntro =>
+      'Yapay zekâ tüm portföyünüze bakar: yoğunlaşma, sektör ve döviz riski, hisselerinizin ortak riskleri ve temettüler. 1 analiz kullanır.';
+
+  @override
+  String get portfolioReviewButton => 'Portföyümü analiz et';
+
+  @override
+  String get portfolioReviewAgain => 'Yeniden analiz et';
+
+  @override
+  String get portfolioReviewWorking => 'Portföyünüz analiz ediliyor…';
 }

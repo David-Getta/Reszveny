@@ -479,5 +479,10 @@
   "alertEmailTitle": "Gửi email khi cảnh báo được kích hoạt",
   "alertEmailOn": "Chúng tôi kiểm tra cảnh báo của bạn vài phút một lần và gửi email cho bạn, kể cả khi ứng dụng đã đóng.",
   "alertEmailSignIn": "Đăng nhập bằng email trong Cài đặt để nhận cảnh báo qua email, kể cả khi ứng dụng đã đóng.",
-  "portfolioHistory": "Biến động giá trị"
+  "portfolioHistory": "Biến động giá trị",
+  "portfolioReviewTitle": "Đánh giá danh mục bằng AI",
+  "portfolioReviewIntro": "AI xem xét toàn bộ danh mục của bạn: mức độ tập trung, mức phơi nhiễm theo ngành và tiền tệ, rủi ro chung giữa các cổ phiếu của bạn và cổ tức. Dùng 1 lượt phân tích.",
+  "portfolioReviewButton": "Đánh giá danh mục của tôi",
+  "portfolioReviewAgain": "Đánh giá lại",
+  "portfolioReviewWorking": "Đang đánh giá danh mục của bạn…"
 }

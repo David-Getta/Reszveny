@@ -1769,4 +1769,20 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Verdiutvikling';
+
+  @override
+  String get portfolioReviewTitle => 'AI-porteføljeanalyse';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI-en går gjennom hele porteføljen din: konsentrasjon, sektor- og valutaeksponering, risikoer aksjene dine har til felles, og utbytte. Bruker 1 analyse.';
+
+  @override
+  String get portfolioReviewButton => 'Analyser porteføljen min';
+
+  @override
+  String get portfolioReviewAgain => 'Analyser på nytt';
+
+  @override
+  String get portfolioReviewWorking => 'Porteføljen din analyseres…';
 }

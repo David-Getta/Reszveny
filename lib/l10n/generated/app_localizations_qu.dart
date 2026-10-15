@@ -1780,4 +1780,20 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Chaninpa tikrakuynin';
+
+  @override
+  String get portfolioReviewTitle => 'Portafolio AI t\'aqwiy';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI llapan portafolioykita qhawan: qullqiyki huk ladollapi huñusqa kasqanta, sectorkunapi qullqi rikchaqkunapipas hapisqa kasqanta, acciónniykikunapa kaqlla riesgonkunata, dividendokunatapas. 1 t\'aqwiyta llamk\'achin.';
+
+  @override
+  String get portfolioReviewButton => 'Portafolioyta t\'aqwiy';
+
+  @override
+  String get portfolioReviewAgain => 'Musuqmanta t\'aqwiy';
+
+  @override
+  String get portfolioReviewWorking => 'Portafolioykita t\'aqwichkan…';
 }

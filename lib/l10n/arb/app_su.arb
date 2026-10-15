@@ -479,5 +479,10 @@
   "alertEmailTitle": "Email nalika béwara aktip",
   "alertEmailOn": "Kami mariksa béwara anjeun unggal sababaraha menit sareng ngirim email ka anjeun, sanajan aplikasina ditutup.",
   "alertEmailSignIn": "Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup.",
-  "portfolioHistory": "Nilai ti waktu ka waktu"
+  "portfolioHistory": "Nilai ti waktu ka waktu",
+  "portfolioReviewTitle": "Tinjauan portofolio AI",
+  "portfolioReviewIntro": "AI mariksa sakabéh portofolio anjeun: konsentrasi, gumantungna kana séktor jeung mata uang, résiko anu sarua dina saham-saham anjeun, sarta dividen. Maké 1 analisis.",
+  "portfolioReviewButton": "Pariksa portofolio abdi",
+  "portfolioReviewAgain": "Pariksa deui",
+  "portfolioReviewWorking": "Mariksa portofolio anjeun…"
 }

@@ -1764,4 +1764,21 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'समयक संग मूल्य';
+
+  @override
+  String get portfolioReviewTitle => 'AI पोर्टफ़ोलियो समीक्षा';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI अहाँक पूरा पोर्टफ़ोलियो देखैत अछि: केंद्रीकरण, सेक्टर आ मुद्राक जोखिम, अहाँक शेयरक साझा जोखिम, आ लाभांश। 1 विश्लेषण खर्च होइत अछि।';
+
+  @override
+  String get portfolioReviewButton => 'हमर पोर्टफ़ोलियोक समीक्षा करू';
+
+  @override
+  String get portfolioReviewAgain => 'फेरसँ समीक्षा करू';
+
+  @override
+  String get portfolioReviewWorking =>
+      'अहाँक पोर्टफ़ोलियोक समीक्षा भऽ रहल अछि…';
 }

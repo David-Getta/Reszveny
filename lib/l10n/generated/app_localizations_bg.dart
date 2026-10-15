@@ -1770,4 +1770,20 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Стойност във времето';
+
+  @override
+  String get portfolioReviewTitle => 'AI анализ на портфейла';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI преглежда целия портфейл: концентрация, експозиция към сектори и валути, общите рискове на акциите и дивидентите. Използва 1 анализ.';
+
+  @override
+  String get portfolioReviewButton => 'Анализирай портфейла ми';
+
+  @override
+  String get portfolioReviewAgain => 'Анализирай отново';
+
+  @override
+  String get portfolioReviewWorking => 'Портфейлът се анализира…';
 }

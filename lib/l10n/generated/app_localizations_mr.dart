@@ -1768,4 +1768,21 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'कालानुसार मूल्य';
+
+  @override
+  String get portfolioReviewTitle => 'AI पोर्टफोलिओ आढावा';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI तुमचा संपूर्ण पोर्टफोलिओ तपासते: केंद्रीकरण, क्षेत्र आणि चलन जोखीम, तुमच्या शेअर्सच्या समान जोखमी आणि लाभांश. 1 विश्लेषण वापरले जाते.';
+
+  @override
+  String get portfolioReviewButton => 'माझ्या पोर्टफोलिओचा आढावा घ्या';
+
+  @override
+  String get portfolioReviewAgain => 'पुन्हा आढावा घ्या';
+
+  @override
+  String get portfolioReviewWorking =>
+      'तुमच्या पोर्टफोलिओचा आढावा घेतला जात आहे…';
 }

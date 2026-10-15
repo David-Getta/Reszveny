@@ -1771,4 +1771,20 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'ღირებულების დინამიკა';
+
+  @override
+  String get portfolioReviewTitle => 'პორტფელის AI ანალიზი';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI განიხილავს თქვენს მთლიან პორტფელს: კონცენტრაციას, სექტორულ და სავალუტო რისკს, თქვენი აქციების საერთო რისკებს და დივიდენდებს. იყენებს 1 ანალიზს.';
+
+  @override
+  String get portfolioReviewButton => 'ჩემი პორტფელის ანალიზი';
+
+  @override
+  String get portfolioReviewAgain => 'ხელახლა გაანალიზება';
+
+  @override
+  String get portfolioReviewWorking => 'თქვენი პორტფელი ანალიზდება…';
 }

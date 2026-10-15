@@ -1825,4 +1825,20 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Vertės kitimas';
+
+  @override
+  String get portfolioReviewTitle => 'Portfelio DI analizė';
+
+  @override
+  String get portfolioReviewIntro =>
+      'DI peržiūri visą jūsų portfelį: koncentraciją, priklausomybę nuo sektorių ir valiutų, bendras jūsų akcijų rizikas ir dividendus. Sunaudoja 1 analizę.';
+
+  @override
+  String get portfolioReviewButton => 'Analizuoti mano portfelį';
+
+  @override
+  String get portfolioReviewAgain => 'Analizuoti iš naujo';
+
+  @override
+  String get portfolioReviewWorking => 'Analizuojamas jūsų portfelis…';
 }

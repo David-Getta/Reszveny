@@ -1776,4 +1776,20 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioHistory => 'Isbeddelka qiimaha';
+
+  @override
+  String get portfolioReviewTitle => 'Dib-u-eegista portfoliyada AI';
+
+  @override
+  String get portfolioReviewIntro =>
+      'AI waxay eegtaa portfoliyadaada oo dhan: isku-uruursanaanta, ku-tiirsanaanta qaybaha iyo lacagaha, khataraha ay saamiyadaadu wadaagaan, iyo faa\'iidada saamiyada. Waxay isticmaashaa 1 falanqayn.';
+
+  @override
+  String get portfolioReviewButton => 'Dib u eeg portfoliyadayda';
+
+  @override
+  String get portfolioReviewAgain => 'Mar kale dib u eeg';
+
+  @override
+  String get portfolioReviewWorking => 'Portfoliyadaada waa la eegayaa…';
 }
