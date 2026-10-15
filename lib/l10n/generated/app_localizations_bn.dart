@@ -1740,4 +1740,20 @@ class AppLocalizationsBn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'পোর্টফোলিও, পছন্দের তালিকা, দামের সতর্কতা ও নোট আপনার সব ডিভাইসে সিঙ্ক হয়।';
+
+  @override
+  String syncLast(String time) {
+    return 'শেষ সিঙ্ক: $time';
+  }
+
+  @override
+  String get syncNow => 'এখনই সিঙ্ক করুন';
+
+  @override
+  String get syncFailed =>
+      'সিঙ্ক ব্যর্থ হয়েছে। এটি স্বয়ংক্রিয়ভাবে আবার চেষ্টা করবে।';
 }

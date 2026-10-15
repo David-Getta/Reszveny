@@ -1211,5 +1211,17 @@
         "type": "int"
       }
     }
+  },
+  "syncInfo": "Portfolio, favorites, price alerts and notes are synced across your devices.",
+  "syncLast": "Last synced {time}",
+  "syncNow": "Sync now",
+  "syncFailed": "Sync failed. It will try again automatically.",
+  "@syncLast": {
+    "description": "When the data was last synced with the account; time is a formatted date and time.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }

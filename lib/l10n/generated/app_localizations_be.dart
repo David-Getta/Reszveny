@@ -1793,4 +1793,20 @@ class AppLocalizationsBe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Партфель, абранае, цэнавыя апавяшчэнні і нататкі сінхранізуюцца на ўсіх вашых прыладах.';
+
+  @override
+  String syncLast(String time) {
+    return 'Апошняя сінхранізацыя: $time';
+  }
+
+  @override
+  String get syncNow => 'Сінхранізаваць зараз';
+
+  @override
+  String get syncFailed =>
+      'Не ўдалося сінхранізаваць. Спроба паўторыцца аўтаматычна.';
 }

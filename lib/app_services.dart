@@ -36,6 +36,7 @@ import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_store.dart';
+import 'features/sync/sync_service.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
 import 'features/updates/update_service.dart';
@@ -97,6 +98,17 @@ class AppServices {
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
     // Play, demó tartalékkal, amíg nincs felvett termék), asztali gépen és
     // weben böngészős fizetés a fiókhoz (Stripe), backend nélkül demó bolt.
+    // Szinkron az e-mailes fiókkal (backend-módban).
+    sync = (b0 == null || account == null)
+        ? null
+        : SyncService(
+            backend: b0,
+            account: account!,
+            preferences: preferences,
+            portfolio: this.portfolio,
+            alerts: this.alerts,
+            notes: this.notes,
+          );
     final acc = account;
     this.billing =
         billing ??
@@ -220,6 +232,9 @@ class AppServices {
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;
+
+  /// Szinkron az e-mailes fiókkal (backend-módban, belépve).
+  late final SyncService? sync;
 
   /// Közelgő gyorsjelentések és az elemzések eseményei.
   late final EventsService events;

@@ -59,6 +59,17 @@ class NotesStore extends ChangeNotifier {
     await _save();
   }
 
+  Map<String, StockNote> get all => Map.unmodifiable(_notes);
+
+  /// Az összes jegyzet cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAll(Map<String, StockNote> notes) async {
+    _notes
+      ..clear()
+      ..addAll(notes);
+    notifyListeners();
+    await _save();
+  }
+
   Future<void> clear() async {
     _notes.clear();
     notifyListeners();

@@ -1778,4 +1778,20 @@ class AppLocalizationsLv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.';
+
+  @override
+  String syncLast(String time) {
+    return 'Pēdējā sinhronizācija: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinhronizēt tūlīt';
+
+  @override
+  String get syncFailed =>
+      'Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz.';
 }

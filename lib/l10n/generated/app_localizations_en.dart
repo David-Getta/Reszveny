@@ -1739,4 +1739,19 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, favorites, price alerts and notes are synced across your devices.';
+
+  @override
+  String syncLast(String time) {
+    return 'Last synced $time';
+  }
+
+  @override
+  String get syncNow => 'Sync now';
+
+  @override
+  String get syncFailed => 'Sync failed. It will try again automatically.';
 }

@@ -1746,4 +1746,20 @@ class AppLocalizationsZu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Iphothifoliyo, izintandokazi, izexwayiso zentengo namanothi kuvumelaniswa kuwo wonke amadivayisi akho.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ukuvumelanisa kokugcina: $time';
+  }
+
+  @override
+  String get syncNow => 'Vumelanisa manje';
+
+  @override
+  String get syncFailed =>
+      'Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo.';
 }

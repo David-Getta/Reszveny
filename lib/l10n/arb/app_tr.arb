@@ -471,5 +471,9 @@
   "portfolioImportHint": "Her satıra bir alış yapıştır: hisse sembolü, adet, fiyat, para birimi, tarih (YYYY-AA-GG). Sütunlar virgül, noktalı virgül veya sekmeyle ayrılabilir; başlık satırı isteğe bağlıdır.",
   "portfolioImportButton": "İçe aktar",
   "portfolioImported": "{count, plural, =1{1 alış eklendi} other{{count} alış eklendi}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 satır atlandı} other{{count} satır atlandı}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 satır atlandı} other{{count} satır atlandı}}",
+  "syncInfo": "Portföy, favoriler, fiyat alarmları ve notlar tüm cihazlarınızda senkronize edilir.",
+  "syncLast": "Son senkronizasyon: {time}",
+  "syncNow": "Şimdi senkronize et",
+  "syncFailed": "Senkronizasyon başarısız oldu. Otomatik olarak yeniden denenecek."
 }

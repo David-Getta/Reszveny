@@ -471,5 +471,9 @@
   "portfolioImportHint": "Namathisela okuthengiwe okukodwa emugqeni ngamunye: uphawu lwe-ticker, inani, intengo, imali, usuku (YYYY-MM-DD). Amakholomu angahlukaniswa ngokhefana, ngamasemikholoni noma ngamathebhu; umugqa wezihloko awuphoqelekile.",
   "portfolioImportButton": "Ngenisa",
   "portfolioImported": "{count, plural, =1{Kwengezwe okuthengiwe okukodwa} other{Kwengezwe okuthengiwe okungu-{count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Kweqiwe umugqa owodwa} other{Kweqiwe imigqa engu-{count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{Kweqiwe umugqa owodwa} other{Kweqiwe imigqa engu-{count}}}",
+  "syncInfo": "Iphothifoliyo, izintandokazi, izexwayiso zentengo namanothi kuvumelaniswa kuwo wonke amadivayisi akho.",
+  "syncLast": "Ukuvumelanisa kokugcina: {time}",
+  "syncNow": "Vumelanisa manje",
+  "syncFailed": "Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo."
 }

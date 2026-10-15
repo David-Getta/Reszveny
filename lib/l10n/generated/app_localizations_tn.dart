@@ -1749,4 +1749,20 @@ class AppLocalizationsTn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Potefolio, tse o di ratang, dikitsiso tsa tlhwatlhwa le dintlha di a tsamaisanngwa mo didirisiweng tsotlhe tsa gago.';
+
+  @override
+  String syncLast(String time) {
+    return 'Go tsamaisanya ga bofelo: $time';
+  }
+
+  @override
+  String get syncNow => 'Tsamaisanya jaanong';
+
+  @override
+  String get syncFailed =>
+      'Go tsamaisanya go paletswe. Go tla lekwa gape ka boiketsetso.';
 }

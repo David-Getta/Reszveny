@@ -471,5 +471,9 @@
   "portfolioImportHint": "Emboja peteĩ jejogua peteĩteĩ línea-pe: símbolo, mboýpa, hepykue, pirapire, ára (AAAA-MM-DD). Umi columna ikatu oñembojaʼo coma, punto y coma térã tabulación rupive; línea ñepyrũ ndahaʼéi tekotevẽ.",
   "portfolioImportButton": "Egueru",
   "portfolioImported": "{count, plural, =1{Oñembojoaju 1 jejogua} other{Oñembojoaju {count} jejogua}}",
-  "portfolioImportSkipped": "{count, plural, =1{Ojeheja 1 línea} other{Ojeheja {count} línea}}"
+  "portfolioImportSkipped": "{count, plural, =1{Ojeheja 1 línea} other{Ojeheja {count} línea}}",
+  "syncInfo": "Cartera, ojeguerohoryvéva, tepy maranduʼi ha jehaipyre ojoja opa ne mbaʼeʼokápe.",
+  "syncLast": "Sincronización pahaguápe: {time}",
+  "syncNow": "Sincroniza koʼág̃a",
+  "syncFailed": "Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva."
 }

@@ -1794,4 +1794,20 @@ class AppLocalizationsSk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfólio, obľúbené, cenové upozornenia a poznámky sa synchronizujú na všetkých vašich zariadeniach.';
+
+  @override
+  String syncLast(String time) {
+    return 'Posledná synchronizácia: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchronizovať teraz';
+
+  @override
+  String get syncFailed =>
+      'Synchronizácia zlyhala. Automaticky sa skúsi znova.';
 }

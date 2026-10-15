@@ -1745,4 +1745,20 @@ class AppLocalizationsKg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefeuille, bizolwa, nkebisu za ntalu ye ba note ke vandaka mpila mosi na bisadilu na nge yonso.';
+
+  @override
+  String syncLast(String time) {
+    return 'Synchronisation ya nsuka: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchroniser ntangu yai';
+
+  @override
+  String get syncFailed =>
+      'Synchronisation me lemba. Yo ta meka diaka yo mosi.';
 }

@@ -1690,4 +1690,18 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo => '포트폴리오, 즐겨찾기, 가격 알림, 메모가 모든 기기에서 동기화됩니다.';
+
+  @override
+  String syncLast(String time) {
+    return '마지막 동기화: $time';
+  }
+
+  @override
+  String get syncNow => '지금 동기화';
+
+  @override
+  String get syncFailed => '동기화하지 못했습니다. 자동으로 다시 시도합니다.';
 }

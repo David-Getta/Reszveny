@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ning raab a ye sẽ fãa pʋgẽ: aksiõ bãnde (ticker), sõor, ligdi, ligd buudu, raar (YYYY-MM-DD). Tõe n welg kolon-rãmbã ne virgil, pwẽ-virgil bɩ tab; zug sẽ-pɛɛlgã pa tilae ye.",
   "portfolioImportButton": "Kẽes",
   "portfolioImported": "{count, plural, =1{B paasa raab a yembre} other{B paasa raaba {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{B bas sẽ a yembre} other{B bas sẽ-rãmb {count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{B bas sẽ a yembre} other{B bas sẽ-rãmb {count}}}",
+  "syncInfo": "Portfey, nong-n-yɩɩda, koosg gũusgo la gʋlsgo yaa a yembr f aparɛy fãa zugu.",
+  "syncLast": "Sync sẽn yaa sɛɛbo: {time}",
+  "syncNow": "Sync masã",
+  "syncFailed": "Sync pa tõog ye. A na n le maan a meng."
 }

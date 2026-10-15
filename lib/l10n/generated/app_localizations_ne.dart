@@ -1741,4 +1741,19 @@ class AppLocalizationsNe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'पोर्टफोलियो, मनपर्ने, मूल्य अलर्ट र टिपोटहरू तपाईंका सबै डिभाइसमा सिंक हुन्छन्।';
+
+  @override
+  String syncLast(String time) {
+    return 'अन्तिम सिंक: $time';
+  }
+
+  @override
+  String get syncNow => 'अहिले सिंक गर्नुहोस्';
+
+  @override
+  String get syncFailed => 'सिंक असफल भयो। यो स्वतः फेरि प्रयास हुनेछ।';
 }

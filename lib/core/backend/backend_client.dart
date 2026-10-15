@@ -312,6 +312,29 @@ class BackendClient {
     return _decode(res)['url'] as String;
   }
 
+  /// `GET /v1/sync` → a fiók szinkronizált adatai és az utolsó írás ideje.
+  Future<({Map<String, dynamic>? data, DateTime? updatedAt})> getSync() async {
+    final res = await _authorized((h) => _inner.get(Uri.parse('$baseUrl/v1/sync'), headers: h));
+    final j = _decode(res);
+    final data = j['data'];
+    return (
+      data: data is Map ? data.cast<String, dynamic>() : null,
+      updatedAt: DateTime.tryParse(j['updated_at'] as String? ?? ''),
+    );
+  }
+
+  /// `PUT /v1/sync` → a teljes adatcsomag mentése; a válasz a szerver ideje.
+  Future<DateTime> putSync(Map<String, dynamic> data) async {
+    final res = await _authorized(
+      (h) => _inner.put(
+        Uri.parse('$baseUrl/v1/sync'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode({'data': data}),
+      ),
+    );
+    return DateTime.parse(_decode(res)['updated_at'] as String);
+  }
+
   /// `POST /v1/telemetry` → névtelen eseményszámok és hibajelentések (csak a
   /// felhasználó hozzájárulásával küldjük).
   Future<void> sendTelemetry(Map<String, dynamic> batch) async {

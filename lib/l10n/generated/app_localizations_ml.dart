@@ -1746,4 +1746,20 @@ class AppLocalizationsMl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'പോർട്ട്ഫോളിയോ, പ്രിയപ്പെട്ടവ, വില അലേർട്ടുകൾ, കുറിപ്പുകൾ എന്നിവ നിങ്ങളുടെ എല്ലാ ഉപകരണങ്ങളിലും സമന്വയിപ്പിക്കപ്പെടുന്നു.';
+
+  @override
+  String syncLast(String time) {
+    return 'അവസാനം സമന്വയിപ്പിച്ചത്: $time';
+  }
+
+  @override
+  String get syncNow => 'ഇപ്പോൾ സമന്വയിപ്പിക്കുക';
+
+  @override
+  String get syncFailed =>
+      'സമന്വയിപ്പിക്കൽ പരാജയപ്പെട്ടു. ഇത് സ്വയമേവ വീണ്ടും ശ്രമിക്കും.';
 }

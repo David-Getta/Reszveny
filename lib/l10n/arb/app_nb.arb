@@ -471,5 +471,9 @@
   "portfolioImportHint": "Lim inn ett kjøp per linje: ticker, antall, pris, valuta, dato (ÅÅÅÅ-MM-DD). Kolonnene kan skilles med komma, semikolon eller tabulator; overskriftsraden er valgfri.",
   "portfolioImportButton": "Importer",
   "portfolioImported": "{count, plural, =1{1 kjøp lagt til} other{{count} kjøp lagt til}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 linje hoppet over} other{{count} linjer hoppet over}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 linje hoppet over} other{{count} linjer hoppet over}}",
+  "syncInfo": "Portefølje, favoritter, kursvarsler og notater synkroniseres på alle enhetene dine.",
+  "syncLast": "Sist synkronisert {time}",
+  "syncNow": "Synkroniser nå",
+  "syncFailed": "Synkroniseringen mislyktes. Det prøves automatisk på nytt."
 }

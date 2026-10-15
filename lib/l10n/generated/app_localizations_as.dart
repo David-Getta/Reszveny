@@ -1740,4 +1740,20 @@ class AppLocalizationsAs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'প\'ৰ্টফ\'লিঅ\', প্ৰিয়, দামৰ সতৰ্কবাণী আৰু টোকাসমূহ আপোনাৰ সকলো ডিভাইচত ছিংক হয়।';
+
+  @override
+  String syncLast(String time) {
+    return 'শেষবাৰ ছিংক: $time';
+  }
+
+  @override
+  String get syncNow => 'এতিয়া ছিংক কৰক';
+
+  @override
+  String get syncFailed =>
+      'ছিংক বিফল হ\'ল। ই স্বয়ংক্ৰিয়ভাৱে পুনৰ চেষ্টা কৰিব।';
 }

@@ -1744,4 +1744,20 @@ class AppLocalizationsNl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefeuille, favorieten, koersalerts en notities worden op al je apparaten gesynchroniseerd.';
+
+  @override
+  String syncLast(String time) {
+    return 'Laatst gesynchroniseerd $time';
+  }
+
+  @override
+  String get syncNow => 'Nu synchroniseren';
+
+  @override
+  String get syncFailed =>
+      'Synchronisatie mislukt. Er wordt automatisch opnieuw geprobeerd.';
 }

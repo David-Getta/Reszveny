@@ -1793,4 +1793,20 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфель, обране, цінові сповіщення та нотатки синхронізуються на всіх ваших пристроях.';
+
+  @override
+  String syncLast(String time) {
+    return 'Остання синхронізація: $time';
+  }
+
+  @override
+  String get syncNow => 'Синхронізувати зараз';
+
+  @override
+  String get syncFailed =>
+      'Не вдалося синхронізувати. Повторна спроба відбудеться автоматично.';
 }

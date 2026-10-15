@@ -1745,4 +1745,19 @@ class AppLocalizationsSn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Potiforiyo, zvaunofarira, zviziviso zvemutengo nezvinyorwa zvinowiriraniswa pamidziyo yako yese.';
+
+  @override
+  String syncLast(String time) {
+    return 'Kuwiriranisa kwekupedzisira: $time';
+  }
+
+  @override
+  String get syncNow => 'Wiriranisa izvozvi';
+
+  @override
+  String get syncFailed => 'Kuwiriranisa kwatadza. Kuchaedza zvakare kwega.';
 }

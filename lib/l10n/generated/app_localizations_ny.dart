@@ -1746,4 +1746,19 @@ class AppLocalizationsNy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Masheya anu, zokondedwa, zidziwitso za mtengo ndi zolemba zimalumikizidwa pa zipangizo zanu zonse.';
+
+  @override
+  String syncLast(String time) {
+    return 'Kulumikiza komaliza: $time';
+  }
+
+  @override
+  String get syncNow => 'Lumikizani tsopano';
+
+  @override
+  String get syncFailed => 'Kulumikiza kwalephera. Kudzayesanso kokha.';
 }

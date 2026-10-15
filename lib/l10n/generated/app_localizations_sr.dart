@@ -1777,4 +1777,20 @@ class AppLocalizationsSr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфолио, омиљено, обавештења о цени и белешке синхронизују се на свим вашим уређајима.';
+
+  @override
+  String syncLast(String time) {
+    return 'Последња синхронизација: $time';
+  }
+
+  @override
+  String get syncNow => 'Синхронизуј сада';
+
+  @override
+  String get syncFailed =>
+      'Синхронизација није успела. Аутоматски ће се покушати поново.';
 }

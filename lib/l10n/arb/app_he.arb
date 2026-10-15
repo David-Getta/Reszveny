@@ -471,5 +471,9 @@
   "portfolioImportHint": "יש להדביק רכישה אחת בכל שורה: סימול המניה, כמות, מחיר, מטבע, תאריך (YYYY-MM-DD). אפשר להפריד בין העמודות בפסיקים, בנקודה-פסיק או בטאבים; שורת הכותרת אינה חובה.",
   "portfolioImportButton": "ייבוא",
   "portfolioImported": "{count, plural, =1{נוספה רכישה אחת} other{נוספו {count} רכישות}}",
-  "portfolioImportSkipped": "{count, plural, =1{שורה אחת דולגה} other{{count} שורות דולגו}}"
+  "portfolioImportSkipped": "{count, plural, =1{שורה אחת דולגה} other{{count} שורות דולגו}}",
+  "syncInfo": "תיק ההשקעות, המועדפים, התראות המחיר וההערות מסונכרנים בכל המכשירים שלך.",
+  "syncLast": "סונכרן לאחרונה {time}",
+  "syncNow": "סנכרון עכשיו",
+  "syncFailed": "הסנכרון נכשל. ייעשה ניסיון חוזר באופן אוטומטי."
 }

@@ -177,6 +177,8 @@ class Api {
       ..get('/admin', _adminLogin)
       ..post('/admin', _adminStats)
       ..get('/admin/stats.json', _adminStatsJson)
+      ..get('/v1/sync', _getSync)
+      ..put('/v1/sync', _putSync)
       ..get('/v1/referral', _referral)
       ..post('/v1/referral/redeem', _redeemReferral)
       ..delete('/v1/account', _deleteAccount)
@@ -248,7 +250,7 @@ class Api {
           'access-control-allow-headers':
               'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
               'x-whatstock-depth, $inviteHeader',
-          'access-control-allow-methods': 'GET, POST, DELETE, OPTIONS',
+          'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
         final res = await inner(req);
@@ -502,6 +504,37 @@ class Api {
     if (!_isAdmin(_token(r))) return _error(403, 'forbidden');
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
     return _json(telemetry.stats(days: days));
+  }
+
+  // ---- Szinkron (e-mailes fiókhoz) ----
+
+  /// A szinkronizált adatok legnagyobb mérete.
+  static const syncMaxBytes = 512 * 1024;
+
+  Future<Response> _getSync(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final s = store.syncData(uid);
+    return _json({'data': s == null ? null : jsonDecode(s.data), 'updated_at': s?.updatedAt.toIso8601String()});
+  }
+
+  /// A teljes adatcsomag felülírása (az utolsó írás nyer; az összefésülést az app végzi).
+  Future<Response> _putSync(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
+    final raw = await r.readAsString();
+    if (raw.length > syncMaxBytes) return _error(413, 'too_large');
+    final Object? body;
+    try {
+      body = jsonDecode(raw);
+    } catch (_) {
+      return _error(400, 'bad_request');
+    }
+    final data = body is Map ? body['data'] : null;
+    if (data is! Map) return _error(400, 'bad_request');
+    final at = store.saveSyncData(uid, jsonEncode(data));
+    return _json({'updated_at': at.toIso8601String()});
   }
 
   // ---- Ajánlói program ----

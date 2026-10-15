@@ -471,5 +471,9 @@
   "portfolioImportHint": "Teekamu ekyaguliddwa kimu ku buli lunyiriri: akabonero ka ticker, omuwendo, bbeeyi, ensimbi, olunaku (YYYY-MM-DD). Empagi ziyinza okwawulwamu koma, semikolon oba tab; olunyiriri lw'emitwe si lwa tteeka.",
   "portfolioImportButton": "Yingiza",
   "portfolioImported": "{count, plural, =1{Ekyaguliddwa 1 kyongeddwako} other{Ebyaguliddwa {count} byongeddwako}}",
-  "portfolioImportSkipped": "{count, plural, =1{Olunyiriri 1 lubuukiddwa} other{Ennyiriri {count} zibuukiddwa}}"
+  "portfolioImportSkipped": "{count, plural, =1{Olunyiriri 1 lubuukiddwa} other{Ennyiriri {count} zibuukiddwa}}",
+  "syncInfo": "Emigabo gyo, by'oyagala, okulabula ku bbeeyi n'ebiwandiiko bikwatagana ku byuma byo byonna.",
+  "syncLast": "Okukwataganya okusembayo: {time}",
+  "syncNow": "Kwataganya kati",
+  "syncFailed": "Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka."
 }

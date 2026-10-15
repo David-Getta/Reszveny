@@ -1747,4 +1747,20 @@ class AppLocalizationsXh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ipotifoliyo, ezithandwayo, izilumkiso zamaxabiso namanqaku zingqamaniswa kuzo zonke izixhobo zakho.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ukungqamanisa kokugqibela: $time';
+  }
+
+  @override
+  String get syncNow => 'Ngqamanisa ngoku';
+
+  @override
+  String get syncFailed =>
+      'Ukungqamanisa kusilele. Kuza kuzama kwakhona ngokuzenzekelayo.';
 }

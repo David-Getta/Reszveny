@@ -1746,4 +1746,20 @@ class AppLocalizationsOm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Poortfooliyoon, filatamoon, akeekkachiisni gatii fi yaadannoon meeshaalee kee hunda irratti walsimsiifamu.';
+
+  @override
+  String syncLast(String time) {
+    return 'Walsimsiisa dhumaa: $time';
+  }
+
+  @override
+  String get syncNow => 'Amma walsimsiisi';
+
+  @override
+  String get syncFailed =>
+      'Walsimsiisuun hin milkoofne. Ofumaan irra deebi\'ee yaala.';
 }

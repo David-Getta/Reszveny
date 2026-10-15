@@ -1750,4 +1750,20 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, Favoriten, Kursalarme und Notizen werden auf all deinen Geräten synchronisiert.';
+
+  @override
+  String syncLast(String time) {
+    return 'Zuletzt synchronisiert: $time';
+  }
+
+  @override
+  String get syncNow => 'Jetzt synchronisieren';
+
+  @override
+  String get syncFailed =>
+      'Synchronisierung fehlgeschlagen. Es wird automatisch erneut versucht.';
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "Kole yon acha pa liy: senbòl, kantite, pri, deviz, dat (AAAA-MM-JJ). Kolòn yo ka separe ak vigil, pwen vigil oswa tab; liy tèt la pa obligatwa.",
   "portfolioImportButton": "Enpòte",
   "portfolioImported": "{count, plural, =1{Nou ajoute 1 acha} other{Nou ajoute {count} acha}}",
-  "portfolioImportSkipped": "{count, plural, =1{Nou sote 1 liy} other{Nou sote {count} liy}}"
+  "portfolioImportSkipped": "{count, plural, =1{Nou sote 1 liy} other{Nou sote {count} liy}}",
+  "syncInfo": "Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.",
+  "syncLast": "Dènye senkronizasyon: {time}",
+  "syncNow": "Senkronize kounye a",
+  "syncFailed": "Senkronizasyon an echwe. L ap eseye ankò otomatikman."
 }

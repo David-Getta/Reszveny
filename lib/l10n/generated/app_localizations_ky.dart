@@ -1742,4 +1742,20 @@ class AppLocalizationsKy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфель, тандалмалар, баа эскертмелери жана жазуулар бардык түзмөктөрүңүздө шайкештирилет.';
+
+  @override
+  String syncLast(String time) {
+    return 'Акыркы шайкештирүү: $time';
+  }
+
+  @override
+  String get syncNow => 'Азыр шайкештирүү';
+
+  @override
+  String get syncFailed =>
+      'Шайкештирүү ишке ашкан жок. Кайра автоматтык түрдө аракет кылынат.';
 }

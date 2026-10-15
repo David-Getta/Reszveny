@@ -235,6 +235,15 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => json == null ? p.remove(_hotkeyKey) : p.setString(_hotkeyKey, jsonEncode(json)));
   }
 
+  /// A kedvencek cseréje (szinkronkor a fiók adataira).
+  Future<void> setFavorites(List<String> symbols) async {
+    _favorites
+      ..clear()
+      ..addAll(symbols.map((s) => s.toUpperCase()));
+    notifyListeners();
+    await _save((p) => p.setStringList(_favoritesKey, _favorites));
+  }
+
   /// A személyes listák (kedvencek, előzmények) törlése; a beállítások maradnak.
   Future<void> clearPersonalData() async {
     _favorites.clear();

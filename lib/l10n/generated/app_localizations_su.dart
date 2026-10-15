@@ -1741,4 +1741,20 @@ class AppLocalizationsSu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portofolio, paporit, béwara harga, jeung catetan disingkronkeun di sadaya parangkat anjeun.';
+
+  @override
+  String syncLast(String time) {
+    return 'Panungtungan disingkronkeun $time';
+  }
+
+  @override
+  String get syncNow => 'Singkronkeun ayeuna';
+
+  @override
+  String get syncFailed =>
+      'Singkronisasi gagal. Bakal dicobian deui sacara otomatis.';
 }

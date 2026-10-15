@@ -268,7 +268,7 @@ void main() {
 
     expect(server.calls, contains('DELETE /v1/account Bearer tok1'));
     expect(find.text('Your account has been deleted.'), findsOneWidget);
-    expect(find.text('Not signed in'), findsOneWidget);
+    expect(find.text('Not signed in', skipOffstage: false), findsOneWidget);
     // A helyi adatok törlését kikapcsolta: a portfólió megmaradt.
     expect(s.portfolio.positions, hasLength(1));
   });

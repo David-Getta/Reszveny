@@ -1737,4 +1737,19 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'પોર્ટફોલિયો, મનપસંદ, ભાવ અલર્ટ અને નોંધો તમારા બધા ડિવાઇસ પર સિંક થાય છે.';
+
+  @override
+  String syncLast(String time) {
+    return 'છેલ્લે સિંક: $time';
+  }
+
+  @override
+  String get syncNow => 'હમણાં સિંક કરો';
+
+  @override
+  String get syncFailed => 'સિંક નિષ્ફળ થયું. તે આપમેળે ફરી પ્રયાસ કરશે.';
 }

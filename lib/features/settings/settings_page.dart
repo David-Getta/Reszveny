@@ -8,6 +8,7 @@ import '../../widgets/hotkey_hint.dart';
 import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/desktop/desktop_integration.dart';
+import '../../core/util/formatters.dart';
 import '../analysis/analysis_options.dart';
 import '../billing/plan.dart';
 import '../fx/fx_service.dart';
@@ -142,6 +143,45 @@ class SettingsPage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        if (services.sync case final sync?)
+                          ListenableBuilder(
+                            listenable: Listenable.merge([account, sync]),
+                            builder: (context, _) => !account.isSignedIn
+                                ? const SizedBox.shrink()
+                                : Column(
+                                    children: [
+                                      const Divider(height: 1),
+                                      ListTile(
+                                        key: const ValueKey('sync-tile'),
+                                        leading: const Icon(Icons.sync_rounded),
+                                        title: Text(l10n.syncInfo),
+                                        subtitle: sync.failed
+                                            ? Text(l10n.syncFailed, style: TextStyle(color: p.negative))
+                                            : sync.lastSynced == null
+                                            ? null
+                                            : Text(
+                                                l10n.syncLast(
+                                                  Fmt(
+                                                    Localizations.localeOf(context).toString(),
+                                                    na: l10n.notAvailable,
+                                                  ).dateTime(sync.lastSynced),
+                                                ),
+                                              ),
+                                        trailing: sync.busy
+                                            ? const SizedBox(
+                                                width: 20,
+                                                height: 20,
+                                                child: CircularProgressIndicator(strokeWidth: 2),
+                                              )
+                                            : TextButton(
+                                                key: const ValueKey('sync-now'),
+                                                onPressed: sync.syncNow,
+                                                child: Text(l10n.syncNow),
+                                              ),
+                                      ),
+                                    ],
+                                  ),
+                          ),
                         const Divider(height: 1),
                         ListTile(
                           leading: Icon(Icons.delete_forever_outlined, color: p.negative),

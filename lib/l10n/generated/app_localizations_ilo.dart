@@ -1754,4 +1754,20 @@ class AppLocalizationsIlo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ti portfolio, dagiti paborito, dagiti alerto ti presio ken dagiti nota ket mai-sync iti amin a devicem.';
+
+  @override
+  String syncLast(String time) {
+    return 'Naudi a na-sync $time';
+  }
+
+  @override
+  String get syncNow => 'I-sync itan';
+
+  @override
+  String get syncFailed =>
+      'Saan a nagballigi ti pag-sync. Automatiko a padasenna manen.';
 }

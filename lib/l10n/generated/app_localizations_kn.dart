@@ -1745,4 +1745,20 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ಪೋರ್ಟ್‌ಫೋಲಿಯೊ, ಮೆಚ್ಚಿನವುಗಳು, ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳು ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಸಿಂಕ್ ಆಗುತ್ತವೆ.';
+
+  @override
+  String syncLast(String time) {
+    return 'ಕೊನೆಯ ಸಿಂಕ್: $time';
+  }
+
+  @override
+  String get syncNow => 'ಈಗ ಸಿಂಕ್ ಮಾಡಿ';
+
+  @override
+  String get syncFailed =>
+      'ಸಿಂಕ್ ವಿಫಲವಾಗಿದೆ. ಇದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತದೆ.';
 }

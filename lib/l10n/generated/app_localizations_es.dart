@@ -1744,4 +1744,20 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'La cartera, los favoritos, las alertas de precio y las notas se sincronizan en todos tus dispositivos.';
+
+  @override
+  String syncLast(String time) {
+    return 'Última sincronización: $time';
+  }
+
+  @override
+  String get syncNow => 'Sincronizar ahora';
+
+  @override
+  String get syncFailed =>
+      'No se pudo sincronizar. Se volverá a intentar automáticamente.';
 }

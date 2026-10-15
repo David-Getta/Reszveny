@@ -1743,4 +1743,20 @@ class AppLocalizationsEe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Wò akpawo, lɔlɔ̃tɔwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo sɔ le wò mɔ̃wo katã dzi.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sync mamlɛtɔ: $time';
+  }
+
+  @override
+  String get syncNow => 'Sync fifia';
+
+  @override
+  String get syncFailed =>
+      'Sync mete ŋu o. Agagbugbɔ adze agbagba le eɖokui si.';
 }

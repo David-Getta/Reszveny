@@ -1737,4 +1737,20 @@ class AppLocalizationsDa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefølje, favoritter, kursalarmer og noter synkroniseres på alle dine enheder.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sidst synkroniseret $time';
+  }
+
+  @override
+  String get syncNow => 'Synkroniser nu';
+
+  @override
+  String get syncFailed =>
+      'Synkroniseringen mislykkedes. Der prøves automatisk igen.';
 }

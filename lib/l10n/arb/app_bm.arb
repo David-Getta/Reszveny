@@ -471,5 +471,9 @@
   "portfolioImportHint": "San kelen bila sira kelen kelen kan: aksiyɔn taamasiyɛn, hakɛ, sɔngɔ, wari suguya, don (YYYY-MM-DD). Kolɔnw bɛ se ka faran ni virgule, point-virgule walima tabulation ye; kunkan sira tɛ wajibi ye.",
   "portfolioImportButton": "Don",
   "portfolioImported": "{count, plural, =1{San 1 farala a kan} other{San {count} farala a kan}}",
-  "portfolioImportSkipped": "{count, plural, =1{Sira 1 tɛmɛna} other{Sira {count} tɛmɛna}}"
+  "portfolioImportSkipped": "{count, plural, =1{Sira 1 tɛmɛna} other{Sira {count} tɛmɛna}}",
+  "syncInfo": "Aksiyɔn kɛsu, diyanyelenw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ kɛ kelen ye i ka minɛnw bɛɛ kan.",
+  "syncLast": "Sync laban: {time}",
+  "syncNow": "Sync sisan",
+  "syncFailed": "Sync ma se ka kɛ. A bɛ segin ka a kɛ a yɛrɛ ma."
 }

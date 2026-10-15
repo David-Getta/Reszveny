@@ -471,5 +471,9 @@
   "portfolioImportHint": "Pega unha compra por liña: símbolo, cantidade, prezo, moeda, data (AAAA-MM-DD). As columnas poden separarse con comas, puntos e comas ou tabulacións; a fila de cabeceira é opcional.",
   "portfolioImportButton": "Importar",
   "portfolioImported": "{count, plural, one{Engadiuse {count} compra} other{Engadíronse {count} compras}}",
-  "portfolioImportSkipped": "{count, plural, one{Omitiuse {count} liña} other{Omitíronse {count} liñas}}"
+  "portfolioImportSkipped": "{count, plural, one{Omitiuse {count} liña} other{Omitíronse {count} liñas}}",
+  "syncInfo": "A carteira, os favoritos, as alertas de prezo e as notas sincronízanse en todos os teus dispositivos.",
+  "syncLast": "Última sincronización: {time}",
+  "syncNow": "Sincronizar agora",
+  "syncFailed": "Non se puido sincronizar. Volverase tentar automaticamente."
 }

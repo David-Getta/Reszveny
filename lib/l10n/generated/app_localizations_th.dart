@@ -1716,4 +1716,19 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'พอร์ตโฟลิโอ รายการโปรด การแจ้งเตือนราคา และบันทึกจะซิงค์ในทุกอุปกรณ์ของคุณ';
+
+  @override
+  String syncLast(String time) {
+    return 'ซิงค์ล่าสุด $time';
+  }
+
+  @override
+  String get syncNow => 'ซิงค์เลย';
+
+  @override
+  String get syncFailed => 'ซิงค์ไม่สำเร็จ ระบบจะลองอีกครั้งโดยอัตโนมัติ';
 }

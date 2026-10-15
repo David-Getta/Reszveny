@@ -1746,4 +1746,20 @@ class AppLocalizationsSq extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portofoli, të preferuarat, alarmet e çmimit dhe shënimet sinkronizohen në të gjitha pajisjet tuaja.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sinkronizimi i fundit: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkronizo tani';
+
+  @override
+  String get syncFailed =>
+      'Sinkronizimi dështoi. Do të provohet përsëri automatikisht.';
 }

@@ -1790,4 +1790,20 @@ class AppLocalizationsCs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, oblíbené, cenová upozornění a poznámky se synchronizují na všech vašich zařízeních.';
+
+  @override
+  String syncLast(String time) {
+    return 'Poslední synchronizace: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchronizovat nyní';
+
+  @override
+  String get syncFailed =>
+      'Synchronizace se nezdařila. Automaticky se zkusí znovu.';
 }

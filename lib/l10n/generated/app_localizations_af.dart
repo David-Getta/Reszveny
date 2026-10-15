@@ -1743,4 +1743,20 @@ class AppLocalizationsAf extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefeulje, gunstelinge, pryswaarskuwings en notas word op al jou toestelle gesinkroniseer.';
+
+  @override
+  String syncLast(String time) {
+    return 'Laas gesinkroniseer $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkroniseer nou';
+
+  @override
+  String get syncFailed =>
+      'Sinkronisering het misluk. Dit sal outomaties weer probeer.';
 }

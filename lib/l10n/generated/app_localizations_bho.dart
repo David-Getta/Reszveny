@@ -1736,4 +1736,19 @@ class AppLocalizationsBho extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'पोर्टफ़ोलियो, पसंदीदा, दाम अलर्ट आ नोट राउर सब डिवाइस पर सिंक होला।';
+
+  @override
+  String syncLast(String time) {
+    return 'पिछला सिंक: $time';
+  }
+
+  @override
+  String get syncNow => 'अबहीं सिंक करीं';
+
+  @override
+  String get syncFailed => 'सिंक ना हो पाइल। ई अपने आप फेर कोसिस करी।';
 }

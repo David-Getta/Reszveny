@@ -471,5 +471,9 @@
   "portfolioImportHint": "प्रति पाँती एकटा खरीदारी साटू: टिकर, संख्या, मूल्य, मुद्रा, तिथि (YYYY-MM-DD)। स्तम्भ कॉमा, सेमीकोलन वा टैब सँ अलग भ' सकैत अछि; शीर्ष पाँती वैकल्पिक अछि।",
   "portfolioImportButton": "आयात करू",
   "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ल गेल} other{{count} खरीदारी जोड़ल गेल}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 पाँती छोड़ल गेल} other{{count} पाँती छोड़ल गेल}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 पाँती छोड़ल गेल} other{{count} पाँती छोड़ल गेल}}",
+  "syncInfo": "पोर्टफ़ोलियो, पसंदीदा, दाम अलर्ट आ नोट अहाँक सभ डिवाइस पर सिंक होइत अछि।",
+  "syncLast": "अंतिम सिंक: {time}",
+  "syncNow": "एखन सिंक करू",
+  "syncFailed": "सिंक नहि भ' सकल। ई अपने-आप फेर प्रयास करत।"
 }

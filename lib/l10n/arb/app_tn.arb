@@ -471,5 +471,9 @@
   "portfolioImportHint": "Kgomaretsa theko e le nngwe mo moleng mongwe le mongwe: ticker, palo, tlhwatlhwa, mofuta wa madi, letlha (YYYY-MM-DD). Dikholomo di ka kgaoganngwa ka dikhoma, disemikholone kgotsa di-tab; mola wa ditlhogo ga se wa kgapeletso.",
   "portfolioImportButton": "Tsenya",
   "portfolioImported": "{count, plural, =1{Go okeditswe theko e le nngwe} other{Go okeditswe ditheko di le {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Go tlodilwe mola o le mongwe} other{Go tlodilwe mela e le {count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{Go tlodilwe mola o le mongwe} other{Go tlodilwe mela e le {count}}}",
+  "syncInfo": "Potefolio, tse o di ratang, dikitsiso tsa tlhwatlhwa le dintlha di a tsamaisanngwa mo didirisiweng tsotlhe tsa gago.",
+  "syncLast": "Go tsamaisanya ga bofelo: {time}",
+  "syncNow": "Tsamaisanya jaanong",
+  "syncFailed": "Go tsamaisanya go paletswe. Go tla lekwa gape ka boiketsetso."
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "ہر سطر میں ایک خریداری پیسٹ کریں: ٹکر، مقدار، قیمت، کرنسی، تاریخ (YYYY-MM-DD)۔ کالموں کو کوما، سیمی کولن یا ٹیب سے الگ کیا جا سکتا ہے؛ ہیڈر کی سطر اختیاری ہے۔",
   "portfolioImportButton": "امپورٹ کریں",
   "portfolioImported": "{count, plural, =1{1 خریداری شامل کر دی گئی} other{{count} خریداریاں شامل کر دی گئیں}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 سطر چھوڑ دی گئی} other{{count} سطریں چھوڑ دی گئیں}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 سطر چھوڑ دی گئی} other{{count} سطریں چھوڑ دی گئیں}}",
+  "syncInfo": "پورٹ فولیو، پسندیدہ، قیمت کے الرٹس اور نوٹس آپ کے تمام آلات پر سنک ہوتے ہیں۔",
+  "syncLast": "آخری سنک: {time}",
+  "syncNow": "ابھی سنک کریں",
+  "syncFailed": "سنک ناکام ہو گیا۔ یہ خود بخود دوبارہ کوشش کرے گا۔"
 }

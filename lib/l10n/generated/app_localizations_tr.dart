@@ -1739,4 +1739,20 @@ class AppLocalizationsTr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portföy, favoriler, fiyat alarmları ve notlar tüm cihazlarınızda senkronize edilir.';
+
+  @override
+  String syncLast(String time) {
+    return 'Son senkronizasyon: $time';
+  }
+
+  @override
+  String get syncNow => 'Şimdi senkronize et';
+
+  @override
+  String get syncFailed =>
+      'Senkronizasyon başarısız oldu. Otomatik olarak yeniden denenecek.';
 }

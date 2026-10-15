@@ -1741,4 +1741,20 @@ class AppLocalizationsKa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'პორტფელი, რჩეულები, ფასის შეტყობინებები და ჩანაწერები სინქრონიზდება ყველა თქვენს მოწყობილობაზე.';
+
+  @override
+  String syncLast(String time) {
+    return 'ბოლო სინქრონიზაცია: $time';
+  }
+
+  @override
+  String get syncNow => 'სინქრონიზაცია ახლა';
+
+  @override
+  String get syncFailed =>
+      'სინქრონიზაცია ვერ მოხერხდა. ხელახლა ცდა ავტომატურად მოხდება.';
 }

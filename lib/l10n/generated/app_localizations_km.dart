@@ -1723,4 +1723,20 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ផលប័ត្រ ចំណូលចិត្ត ការជូនដំណឹងតម្លៃ និងកំណត់ចំណាំ ត្រូវបានធ្វើសមកាលកម្មនៅលើឧបករណ៍ទាំងអស់របស់អ្នក។';
+
+  @override
+  String syncLast(String time) {
+    return 'ធ្វើសមកាលកម្មចុងក្រោយ៖ $time';
+  }
+
+  @override
+  String get syncNow => 'ធ្វើសមកាលកម្មឥឡូវ';
+
+  @override
+  String get syncFailed =>
+      'ការធ្វើសមកាលកម្មបានបរាជ័យ។ វានឹងព្យាយាមម្តងទៀតដោយស្វ័យប្រវត្តិ។';
 }

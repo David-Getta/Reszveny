@@ -1739,4 +1739,19 @@ class AppLocalizationsAk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Wo nkyɛfa, nea wopɛ, bo ho kɔkɔbɔ ne wo nkyerɛwee yɛ pɛ wɔ wo mfiri nyinaa so.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sync a etwa to: $time';
+  }
+
+  @override
+  String get syncNow => 'Sync seesei';
+
+  @override
+  String get syncFailed => 'Sync no anyɛ yie. Ɛbɛsan abɔ mmɔden bio ankasa.';
 }

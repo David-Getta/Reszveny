@@ -471,5 +471,9 @@
   "portfolioImportHint": "Wklej jeden zakup w każdym wierszu: symbol giełdowy, liczba, cena, waluta, data (RRRR-MM-DD). Kolumny mogą być rozdzielone przecinkami, średnikami lub tabulatorami; wiersz nagłówka jest opcjonalny.",
   "portfolioImportButton": "Importuj",
   "portfolioImported": "{count, plural, one{Dodano {count} zakup} few{Dodano {count} zakupy} many{Dodano {count} zakupów} other{Dodano {count} zakupu}}",
-  "portfolioImportSkipped": "{count, plural, one{Pominięto {count} wiersz} few{Pominięto {count} wiersze} many{Pominięto {count} wierszy} other{Pominięto {count} wiersza}}"
+  "portfolioImportSkipped": "{count, plural, one{Pominięto {count} wiersz} few{Pominięto {count} wiersze} many{Pominięto {count} wierszy} other{Pominięto {count} wiersza}}",
+  "syncInfo": "Portfel, ulubione, alerty cenowe i notatki są synchronizowane na wszystkich Twoich urządzeniach.",
+  "syncLast": "Ostatnia synchronizacja: {time}",
+  "syncNow": "Synchronizuj teraz",
+  "syncFailed": "Synchronizacja nie powiodła się. Ponowna próba nastąpi automatycznie."
 }

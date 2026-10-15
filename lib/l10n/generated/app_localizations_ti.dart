@@ -1708,4 +1708,19 @@ class AppLocalizationsTi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ፖርትፎሊዮ፣ ዝተፈተዉ፣ መጠንቀቕታታት ዋጋን ማስታወሻታትን ኣብ ኩሉ መሳርሒታትኩም ይሰማምዑ።';
+
+  @override
+  String syncLast(String time) {
+    return 'ናይ መወዳእታ ምስምማዕ፦ $time';
+  }
+
+  @override
+  String get syncNow => 'ሕጂ ኣሰማምዕ';
+
+  @override
+  String get syncFailed => 'ምስምማዕ ኣይተዓወተን። ብኣውቶማቲክ እንደገና ክፍተን እዩ።';
 }

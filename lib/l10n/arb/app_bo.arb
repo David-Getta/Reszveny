@@ -471,5 +471,9 @@
   "portfolioImportHint": "ཕྲེང་རེ་རེར་ཉོ་སྒྲུབ་རེ་སྦྱོར་རོགས། ཧུར་ཁག་ཨང་རྟགས། གྲངས་ཀ། རིན་གོང་། དངུལ་ལོར། ཚེས་གྲངས། (YYYY-MM-DD) ཀ་བ་རྣམས་ , དང་ ; ཡང་ན་ tab ཡིས་ཁ་འབྱེད་ཆོག མགོ་བྱང་གི་ཕྲེང་ནི་གདམ་ཀ་ཡིན།",
   "portfolioImportButton": "ནང་འདྲེན།",
   "portfolioImported": "{count, plural, other{ཉོ་སྒྲུབ་ {count} ཁ་སྣོན་བྱས་ཟིན།}}",
-  "portfolioImportSkipped": "{count, plural, other{ཕྲེང་ {count} མཆོང་ཟིན།}}"
+  "portfolioImportSkipped": "{count, plural, other{ཕྲེང་ {count} མཆོང་ཟིན།}}",
+  "syncInfo": "མ་འཇོག་ཚོགས་སྡེབ་དང་། དགའ་མོས། གོང་ཚད་ཉེན་བརྡ། ཟིན་ཐོ་བཅས་ཁྱེད་ཀྱི་སྒྲིག་ཆས་ཚང་མར་མཉམ་སྒྲིག་བྱེད།",
+  "syncLast": "མཐའ་མའི་མཉམ་སྒྲིག: {time}",
+  "syncNow": "ད་ལྟ་མཉམ་སྒྲིག",
+  "syncFailed": "མཉམ་སྒྲིག་མ་ཐུབ། རང་འགུལ་གྱིས་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ངེས།"
 }

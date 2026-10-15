@@ -1735,4 +1735,19 @@ class AppLocalizationsFf extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Aksiyoŋ maa, cuɓaaɗe maa, tintine coggu e binndi maa ko gooto e kala kaɓirgol maa.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sync sakkitiiɗo: $time';
+  }
+
+  @override
+  String get syncNow => 'Sync jooni';
+
+  @override
+  String get syncFailed => 'Sync roŋkii. Ɗum fuɗɗittoto kam e hoore mum.';
 }

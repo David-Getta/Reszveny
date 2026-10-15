@@ -1742,4 +1742,20 @@ class AppLocalizationsUz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfel, sevimlilar, narx bildirishnomalari va qaydlar barcha qurilmalaringizda sinxronlanadi.';
+
+  @override
+  String syncLast(String time) {
+    return 'Oxirgi sinxronlash: $time';
+  }
+
+  @override
+  String get syncNow => 'Hozir sinxronlash';
+
+  @override
+  String get syncFailed =>
+      'Sinxronlab bo‘lmadi. Avtomatik ravishda qayta urinib ko‘riladi.';
 }

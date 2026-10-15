@@ -1772,4 +1772,19 @@ class AppLocalizationsRo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portofoliul, favoritele, alertele de preț și notițele sunt sincronizate pe toate dispozitivele tale.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ultima sincronizare: $time';
+  }
+
+  @override
+  String get syncNow => 'Sincronizează acum';
+
+  @override
+  String get syncFailed => 'Sincronizarea a eșuat. Se va reîncerca automat.';
 }

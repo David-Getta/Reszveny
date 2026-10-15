@@ -1748,4 +1748,20 @@ class AppLocalizationsCeb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ang portfolio, mga paborito, mga alerto sa presyo ug mga nota gi-sync sa tanan nimong device.';
+
+  @override
+  String syncLast(String time) {
+    return 'Katapusang na-sync $time';
+  }
+
+  @override
+  String get syncNow => 'I-sync karon';
+
+  @override
+  String get syncFailed =>
+      'Napakyas ang pag-sync. Mosulay kini pag-usab nga awtomatiko.';
 }

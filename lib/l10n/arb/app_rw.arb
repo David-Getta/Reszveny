@@ -471,5 +471,9 @@
   "portfolioImportHint": "Omekamo ikintu kimwe waguze kuri buri murongo: ticker, ingano, igiciro, ifaranga, itariki (YYYY-MM-DD). Inkingi zishobora gutandukanywa n'akitso, akabago n'akitso cyangwa tab; umurongo w'imitwe si itegeko.",
   "portfolioImportButton": "Injiza",
   "portfolioImported": "{count, plural, =1{Hongewemo icyaguzwe 1} other{Hongewemo ibyaguzwe {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Umurongo 1 wasimbutswe} other{Imirongo {count} yasimbutswe}}"
+  "portfolioImportSkipped": "{count, plural, =1{Umurongo 1 wasimbutswe} other{Imirongo {count} yasimbutswe}}",
+  "syncInfo": "Ishoramari, ibyo ukunda, imenyesha ry'ibiciro n'ibyo wanditse bihuzwa ku bikoresho byawe byose.",
+  "syncLast": "Ihuza riheruka: {time}",
+  "syncNow": "Huza ubu",
+  "syncFailed": "Guhuza byanze. Bizongera kugerageza ubwabyo."
 }

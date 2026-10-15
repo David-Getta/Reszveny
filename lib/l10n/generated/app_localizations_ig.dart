@@ -1735,4 +1735,19 @@ class AppLocalizationsIg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'A na-emekọrịta portfolio, ọkacha mmasị, ọkwa ọnụahịa na ndetu gị na ngwaọrụ gị niile.';
+
+  @override
+  String syncLast(String time) {
+    return 'Mmekọrịta ikpeazụ: $time';
+  }
+
+  @override
+  String get syncNow => 'Mekọrịta ugbu a';
+
+  @override
+  String get syncFailed => 'Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka.';
 }

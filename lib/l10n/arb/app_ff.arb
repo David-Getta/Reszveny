@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ɓortin soodaare wootere e kala diidol: kod aksiyoŋ, keewal, coggu, ceede, ñalnde (YYYY-MM-DD). Kolonuuji ina mbaawi seerndeede ko virgule, point-virgule walla tabulation; diidol tiitoonde ngol ko suɓaade.",
   "portfolioImportButton": "Naatnu",
   "portfolioImported": "{count, plural, =1{Soodaare 1 ɓeydaama} other{Soodaaje {count} ɓeydaama}}",
-  "portfolioImportSkipped": "{count, plural, =1{Diidol 1 acciraama} other{Diidi {count} acciraama}}"
+  "portfolioImportSkipped": "{count, plural, =1{Diidol 1 acciraama} other{Diidi {count} acciraama}}",
+  "syncInfo": "Aksiyoŋ maa, cuɓaaɗe maa, tintine coggu e binndi maa ko gooto e kala kaɓirgol maa.",
+  "syncLast": "Sync sakkitiiɗo: {time}",
+  "syncNow": "Sync jooni",
+  "syncFailed": "Sync roŋkii. Ɗum fuɗɗittoto kam e hoore mum."
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ĩkĩra ũgũri ũmwe o mũhari-inĩ: ticker ya hisa, mũigana, thogora, mbeca, tarehe (YYYY-MM-DD). Mĩhari ĩrũgamĩte no yamũranio na koma, semicolon kana tab; mũhari wa kĩongo ti wa bata.",
   "portfolioImportButton": "Ingĩria",
   "portfolioImported": "{count, plural, =1{Ũgũri 1 nĩ wongereirwo} other{Ũgũri {count} nĩ wongereirwo}}",
-  "portfolioImportSkipped": "{count, plural, =1{Mũhari 1 nĩ wagũrũkwo} other{Mĩhari {count} nĩ yagũrũkwo}}"
+  "portfolioImportSkipped": "{count, plural, =1{Mũhari 1 nĩ wagũrũkwo} other{Mĩhari {count} nĩ yagũrũkwo}}",
+  "syncInfo": "Hisa ciaku, iria wendete, imenyithia cia thogora na maandĩko ikoragwo o ũndũ ũmwe harĩ indo ciaku ciothe.",
+  "syncLast": "Sync ya kũrigĩrĩria: {time}",
+  "syncNow": "Sync rĩu",
+  "syncFailed": "Sync ndĩnahota. Nĩ ĩkũgeria rĩngĩ yo nyene."
 }

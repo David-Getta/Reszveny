@@ -1735,4 +1735,20 @@ class AppLocalizationsId extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portofolio, favorit, peringatan harga, dan catatan disinkronkan di semua perangkat Anda.';
+
+  @override
+  String syncLast(String time) {
+    return 'Terakhir disinkronkan $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkronkan sekarang';
+
+  @override
+  String get syncFailed =>
+      'Sinkronisasi gagal. Akan dicoba lagi secara otomatis.';
 }

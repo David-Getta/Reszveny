@@ -1745,4 +1745,20 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'పోర్ట్‌ఫోలియో, ఇష్టమైనవి, ధర హెచ్చరికలు మరియు గమనికలు మీ అన్ని పరికరాల్లో సింక్ అవుతాయి.';
+
+  @override
+  String syncLast(String time) {
+    return 'చివరి సింక్: $time';
+  }
+
+  @override
+  String get syncNow => 'ఇప్పుడే సింక్ చేయండి';
+
+  @override
+  String get syncFailed =>
+      'సింక్ విఫలమైంది. ఇది ఆటోమేటిక్‌గా మళ్లీ ప్రయత్నిస్తుంది.';
 }

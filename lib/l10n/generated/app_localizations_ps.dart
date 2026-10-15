@@ -1734,4 +1734,19 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'پورټفولیو، خوښې، د بیې خبرتیاوې او یادښتونه ستاسو په ټولو وسیلو کې همغږي کېږي.';
+
+  @override
+  String syncLast(String time) {
+    return 'وروستی همغږي: $time';
+  }
+
+  @override
+  String get syncNow => 'اوس همغږي کړئ';
+
+  @override
+  String get syncFailed => 'همغږي ناکامه شوه. په اتومات ډول به بیا هڅه وشي.';
 }

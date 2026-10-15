@@ -471,5 +471,9 @@
   "portfolioImportHint": "I-paste ang usa ka pagpalit matag linya: simbolo sa ticker, gidaghanon, presyo, currency, petsa (YYYY-MM-DD). Ang mga kolum mahimong bulagon sa comma, semicolon o tab; opsyonal ang header nga linya.",
   "portfolioImportButton": "I-import",
   "portfolioImported": "{count, plural, =1{Nadugang ang 1 ka pagpalit} other{Nadugang ang {count} ka pagpalit}}",
-  "portfolioImportSkipped": "{count, plural, =1{Gilaktawan ang 1 ka linya} other{Gilaktawan ang {count} ka linya}}"
+  "portfolioImportSkipped": "{count, plural, =1{Gilaktawan ang 1 ka linya} other{Gilaktawan ang {count} ka linya}}",
+  "syncInfo": "Ang portfolio, mga paborito, mga alerto sa presyo ug mga nota gi-sync sa tanan nimong device.",
+  "syncLast": "Katapusang na-sync {time}",
+  "syncNow": "I-sync karon",
+  "syncFailed": "Napakyas ang pag-sync. Mosulay kini pag-usab nga awtomatiko."
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "Tampal satu pembelian setiap baris: ticker, kuantiti, harga, mata wang, tarikh (TTTT-BB-HH). Lajur boleh dipisahkan dengan koma, koma bertitik atau tab; baris pengepala adalah pilihan.",
   "portfolioImportButton": "Import",
   "portfolioImported": "{count, plural, =1{1 pembelian ditambah} other{{count} pembelian ditambah}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 baris dilangkau} other{{count} baris dilangkau}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 baris dilangkau} other{{count} baris dilangkau}}",
+  "syncInfo": "Portfolio, kegemaran, amaran harga dan nota disegerakkan merentas semua peranti anda.",
+  "syncLast": "Kali terakhir disegerakkan {time}",
+  "syncNow": "Segerakkan sekarang",
+  "syncFailed": "Penyegerakan gagal. Ia akan cuba lagi secara automatik."
 }

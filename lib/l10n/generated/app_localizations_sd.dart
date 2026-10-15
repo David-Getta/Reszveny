@@ -1734,4 +1734,19 @@ class AppLocalizationsSd extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'پورٽ فوليو، پسنديده، قيمت جا الرٽ ۽ نوٽس توهان جي سڀني ڊوائيسن تي سنڪ ٿين ٿا.';
+
+  @override
+  String syncLast(String time) {
+    return 'آخري سنڪ: $time';
+  }
+
+  @override
+  String get syncNow => 'هاڻي سنڪ ڪريو';
+
+  @override
+  String get syncFailed => 'سنڪ ناڪام ٿيو. اهو پاڻمرادو ٻيهر ڪوشش ڪندو.';
 }

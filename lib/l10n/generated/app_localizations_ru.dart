@@ -1795,4 +1795,20 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфель, избранное, ценовые оповещения и заметки синхронизируются на всех ваших устройствах.';
+
+  @override
+  String syncLast(String time) {
+    return 'Последняя синхронизация: $time';
+  }
+
+  @override
+  String get syncNow => 'Синхронизировать сейчас';
+
+  @override
+  String get syncFailed =>
+      'Не удалось синхронизировать. Повторная попытка будет выполнена автоматически.';
 }

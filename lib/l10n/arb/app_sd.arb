@@ -471,5 +471,9 @@
   "portfolioImportHint": "هر قطار ۾ هڪ خريداري پيسٽ ڪريو: ٽڪر، مقدار، قيمت، ڪرنسي، تاريخ (YYYY-MM-DD). ڪالم ڪاما، سيمي ڪالن يا ٽيب سان الڳ ٿي سگهن ٿا؛ هيڊر واري قطار اختياري آهي.",
   "portfolioImportButton": "امپورٽ ڪريو",
   "portfolioImported": "{count, plural, =1{1 خريداري شامل ڪئي وئي} other{{count} خريداريون شامل ڪيون ويون}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 قطار ڇڏي وئي} other{{count} قطارون ڇڏيون ويون}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 قطار ڇڏي وئي} other{{count} قطارون ڇڏيون ويون}}",
+  "syncInfo": "پورٽ فوليو، پسنديده، قيمت جا الرٽ ۽ نوٽس توهان جي سڀني ڊوائيسن تي سنڪ ٿين ٿا.",
+  "syncLast": "آخري سنڪ: {time}",
+  "syncNow": "هاڻي سنڪ ڪريو",
+  "syncFailed": "سنڪ ناڪام ٿيو. اهو پاڻمرادو ٻيهر ڪوشش ڪندو."
 }

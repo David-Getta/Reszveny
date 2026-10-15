@@ -471,5 +471,9 @@
   "portfolioImportHint": "ਹਰ ਲਾਈਨ ਵਿੱਚ ਇੱਕ ਖ਼ਰੀਦ ਪੇਸਟ ਕਰੋ: ਟਿਕਰ, ਮਾਤਰਾ, ਕੀਮਤ, ਮੁਦਰਾ, ਮਿਤੀ (YYYY-MM-DD)। ਕਾਲਮ ਕੌਮੇ, ਸੈਮੀਕੋਲਨ ਜਾਂ ਟੈਬ ਨਾਲ ਵੱਖ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ; ਸਿਰਲੇਖ ਵਾਲੀ ਲਾਈਨ ਵਿਕਲਪਿਕ ਹੈ।",
   "portfolioImportButton": "ਆਯਾਤ ਕਰੋ",
   "portfolioImported": "{count, plural, =1{1 ਖ਼ਰੀਦ ਜੋੜੀ ਗਈ} other{{count} ਖ਼ਰੀਦਾਂ ਜੋੜੀਆਂ ਗਈਆਂ}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 ਲਾਈਨ ਛੱਡੀ ਗਈ} other{{count} ਲਾਈਨਾਂ ਛੱਡੀਆਂ ਗਈਆਂ}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 ਲਾਈਨ ਛੱਡੀ ਗਈ} other{{count} ਲਾਈਨਾਂ ਛੱਡੀਆਂ ਗਈਆਂ}}",
+  "syncInfo": "ਪੋਰਟਫ਼ੋਲੀਓ, ਮਨਪਸੰਦ, ਕੀਮਤ ਅਲਰਟ ਅਤੇ ਨੋਟ ਤੁਹਾਡੀਆਂ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ’ਤੇ ਸਿੰਕ ਹੁੰਦੇ ਹਨ।",
+  "syncLast": "ਆਖਰੀ ਸਿੰਕ: {time}",
+  "syncNow": "ਹੁਣੇ ਸਿੰਕ ਕਰੋ",
+  "syncFailed": "ਸਿੰਕ ਅਸਫਲ ਰਿਹਾ। ਇਹ ਆਪਣੇ ਆਪ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ।"
 }

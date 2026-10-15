@@ -1776,4 +1776,20 @@ class AppLocalizationsBs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, favoriti, obavještenja o cijeni i bilješke sinhronizuju se na svim vašim uređajima.';
+
+  @override
+  String syncLast(String time) {
+    return 'Posljednja sinhronizacija: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinhronizuj sada';
+
+  @override
+  String get syncFailed =>
+      'Sinhronizacija nije uspjela. Automatski će se pokušati ponovo.';
 }

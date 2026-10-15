@@ -471,5 +471,9 @@
   "portfolioImportHint": "प्रत्येक पङ्क्तिमा एउटा खरिद टाँस्नुहोस्: टिकर, परिमाण, मूल्य, मुद्रा, मिति (YYYY-MM-DD)। स्तम्भहरू अल्पविराम, अर्धविराम वा ट्याबले छुट्याउन सकिन्छ; शीर्ष पङ्क्ति ऐच्छिक हो।",
   "portfolioImportButton": "आयात गर्नुहोस्",
   "portfolioImported": "{count, plural, =1{1 खरिद थपियो} other{{count} खरिद थपिए}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 पङ्क्ति छोडियो} other{{count} पङ्क्ति छोडिए}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 पङ्क्ति छोडियो} other{{count} पङ्क्ति छोडिए}}",
+  "syncInfo": "पोर्टफोलियो, मनपर्ने, मूल्य अलर्ट र टिपोटहरू तपाईंका सबै डिभाइसमा सिंक हुन्छन्।",
+  "syncLast": "अन्तिम सिंक: {time}",
+  "syncNow": "अहिले सिंक गर्नुहोस्",
+  "syncFailed": "सिंक असफल भयो। यो स्वतः फेरि प्रयास हुनेछ।"
 }

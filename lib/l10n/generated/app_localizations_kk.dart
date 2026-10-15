@@ -1740,4 +1740,20 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфель, таңдаулылар, баға ескертулері және жазбалар барлық құрылғыларыңызда синхрондалады.';
+
+  @override
+  String syncLast(String time) {
+    return 'Соңғы синхрондау: $time';
+  }
+
+  @override
+  String get syncNow => 'Қазір синхрондау';
+
+  @override
+  String get syncFailed =>
+      'Синхрондау сәтсіз аяқталды. Автоматты түрде қайта әрекет жасалады.';
 }

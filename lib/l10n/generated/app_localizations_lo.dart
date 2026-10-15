@@ -1719,4 +1719,19 @@ class AppLocalizationsLo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ພອດໂຟລິໂອ, ລາຍການທີ່ມັກ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກ ຈະຊິງຄ໌ໃນທຸກອຸປະກອນຂອງທ່ານ';
+
+  @override
+  String syncLast(String time) {
+    return 'ຊິງຄ໌ຫຼ້າສຸດ $time';
+  }
+
+  @override
+  String get syncNow => 'ຊິງຄ໌ດຽວນີ້';
+
+  @override
+  String get syncFailed => 'ຊິງຄ໌ບໍ່ສຳເລັດ. ຈະລອງໃໝ່ອັດຕະໂນມັດ';
 }

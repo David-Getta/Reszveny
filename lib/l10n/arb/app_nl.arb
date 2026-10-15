@@ -471,5 +471,9 @@
   "portfolioImportHint": "Plak één aankoop per regel: ticker, aantal, prijs, valuta, datum (JJJJ-MM-DD). Kolommen mogen gescheiden zijn door komma's, puntkomma's of tabs; de kopregel is optioneel.",
   "portfolioImportButton": "Importeren",
   "portfolioImported": "{count, plural, =1{1 aankoop toegevoegd} other{{count} aankopen toegevoegd}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 regel overgeslagen} other{{count} regels overgeslagen}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 regel overgeslagen} other{{count} regels overgeslagen}}",
+  "syncInfo": "Portefeuille, favorieten, koersalerts en notities worden op al je apparaten gesynchroniseerd.",
+  "syncLast": "Laatst gesynchroniseerd {time}",
+  "syncNow": "Nu synchroniseren",
+  "syncFailed": "Synchronisatie mislukt. Er wordt automatisch opnieuw geprobeerd."
 }

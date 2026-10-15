@@ -471,5 +471,9 @@
   "portfolioImportHint": "Matani chogula chimodzi pa mzere uliwonse: ticker, kuchuluka, mtengo, ndalama, tsiku (YYYY-MM-DD). Mizati ingalekanitsidwe ndi koma, semikoloni kapena tabu; mzere wa mitu ndi wosankha.",
   "portfolioImportButton": "Lowetsani",
   "portfolioImported": "{count, plural, =1{Chogula 1 chawonjezedwa} other{Zogula {count} zawonjezedwa}}",
-  "portfolioImportSkipped": "{count, plural, =1{Mzere 1 wadumphidwa} other{Mizere {count} yadumphidwa}}"
+  "portfolioImportSkipped": "{count, plural, =1{Mzere 1 wadumphidwa} other{Mizere {count} yadumphidwa}}",
+  "syncInfo": "Masheya anu, zokondedwa, zidziwitso za mtengo ndi zolemba zimalumikizidwa pa zipangizo zanu zonse.",
+  "syncLast": "Kulumikiza komaliza: {time}",
+  "syncNow": "Lumikizani tsopano",
+  "syncFailed": "Kulumikiza kwalephera. Kudzayesanso kokha."
 }

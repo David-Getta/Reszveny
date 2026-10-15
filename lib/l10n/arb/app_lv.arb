@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ielīmējiet vienu pirkumu katrā rindā: akcijas simbols, daudzums, cena, valūta, datums (GGGG-MM-DD). Kolonnas var atdalīt ar komatiem, semikoliem vai tabulatoriem; galvenes rinda nav obligāta.",
   "portfolioImportButton": "Importēt",
   "portfolioImported": "{count, plural, zero{Pievienoti {count} pirkumi} one{Pievienots {count} pirkums} other{Pievienoti {count} pirkumi}}",
-  "portfolioImportSkipped": "{count, plural, zero{Izlaistas {count} rindas} one{Izlaista {count} rinda} other{Izlaistas {count} rindas}}"
+  "portfolioImportSkipped": "{count, plural, zero{Izlaistas {count} rindas} one{Izlaista {count} rinda} other{Izlaistas {count} rindas}}",
+  "syncInfo": "Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.",
+  "syncLast": "Pēdējā sinhronizācija: {time}",
+  "syncNow": "Sinhronizēt tūlīt",
+  "syncFailed": "Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz."
 }

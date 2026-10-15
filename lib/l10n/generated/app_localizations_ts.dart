@@ -1750,4 +1750,20 @@ class AppLocalizationsTs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Phothifoliyo, leswi u swi rhandzaka, switiviso swa nxavo na tinotsi swi fambelanisiwa eka switirhisiwa swa wena hinkwaswo.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ku fambelanisa ko hetelela: $time';
+  }
+
+  @override
+  String get syncNow => 'Fambelanisa sweswi';
+
+  @override
+  String get syncFailed =>
+      'Ku fambelanisa ku tsandzekile. Ku ta ringetiwa nakambe hi ku tiendlekela.';
 }

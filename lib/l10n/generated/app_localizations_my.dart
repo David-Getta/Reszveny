@@ -1733,4 +1733,19 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ပေါ့ဖိုလီယို၊ အကြိုက်ဆုံးများ၊ ဈေးနှုန်း သတိပေးချက်များနှင့် မှတ်စုများကို သင့်စက်အားလုံးတွင် စင့်ခ်လုပ်ထားသည်။';
+
+  @override
+  String syncLast(String time) {
+    return 'နောက်ဆုံး စင့်ခ်လုပ်ချိန် $time';
+  }
+
+  @override
+  String get syncNow => 'ယခု စင့်ခ်လုပ်ရန်';
+
+  @override
+  String get syncFailed => 'စင့်ခ်လုပ်၍ မရပါ။ အလိုအလျောက် ထပ်မံကြိုးစားပါမည်။';
 }

@@ -1744,4 +1744,20 @@ class AppLocalizationsIt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portafoglio, preferiti, avvisi di prezzo e note sono sincronizzati su tutti i tuoi dispositivi.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ultima sincronizzazione: $time';
+  }
+
+  @override
+  String get syncNow => 'Sincronizza ora';
+
+  @override
+  String get syncFailed =>
+      'Sincronizzazione non riuscita. Verrà ritentata automaticamente.';
 }

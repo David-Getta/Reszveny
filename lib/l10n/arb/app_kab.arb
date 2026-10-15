@@ -471,5 +471,9 @@
   "portfolioImportHint": "Senṭeḍ tiɣin, yiwet deg yal izirig: azamul n uksyun, tanecta, ssuma, tadrimt, azemz (YYYY-MM-DD). Tigejda zemrent ad ttwafrqent s tfeṛḍin, s tneqqiḍin-tfeṛḍin neɣ s tabulation; izirig n uqerru d afrayan.",
   "portfolioImportButton": "Kter",
   "portfolioImported": "{count, plural, =1{Tettwarna-d 1 n tɣin} other{Ttwarnant-d {count} n tɣin}}",
-  "portfolioImportSkipped": "{count, plural, =1{Yettwazgel 1 n yizirig} other{Ttwazeglen {count} n yizirigen}}"
+  "portfolioImportSkipped": "{count, plural, =1{Yettwazgel 1 n yizirig} other{Ttwazeglen {count} n yizirigen}}",
+  "syncInfo": "Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.",
+  "syncLast": "Amtawi aneggaru: {time}",
+  "syncNow": "Mtawi tura",
+  "syncFailed": "Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman."
 }

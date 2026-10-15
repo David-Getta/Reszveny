@@ -90,6 +90,11 @@ class Store {
         created_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS helper_calls_user ON helper_calls(user_id, created_at);
+      CREATE TABLE IF NOT EXISTS user_sync (
+        user_id TEXT PRIMARY KEY,
+        data TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      );
       CREATE TABLE IF NOT EXISTS trial_grants (
         ip_hash TEXT NOT NULL,
         created_at TEXT NOT NULL
@@ -266,6 +271,7 @@ class Store {
       _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM user_sync WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
@@ -503,6 +509,23 @@ class Store {
     _db.execute('DELETE FROM helper_calls WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
+  }
+
+  /// A fiók szinkronizált adatai (portfólió, kedvencek, riasztások, jegyzetek), vagy `null`.
+  ({String data, DateTime updatedAt})? syncData(String userId) {
+    final rows = _db.select('SELECT data, updated_at FROM user_sync WHERE user_id = ?', [userId]);
+    if (rows.isEmpty) return null;
+    return (data: rows.first['data'] as String, updatedAt: DateTime.parse(rows.first['updated_at'] as String));
+  }
+
+  DateTime saveSyncData(String userId, String data) {
+    final now = clock().toUtc();
+    _db.execute(
+      'INSERT INTO user_sync (user_id, data, updated_at) VALUES (?, ?, ?) '
+      'ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at',
+      [userId, data, now.toIso8601String()],
+    );
+    return now;
   }
 
   /// Ennyi próbaidő indult erről a (hash-elt) IP-címről [since] óta.

@@ -471,5 +471,9 @@
   "portfolioImportHint": "हर लाइन में एगो खरीदारी पेस्ट करीं: टिकर सिंबल, मात्रा, दाम, मुद्रा, तारीख (YYYY-MM-DD)। कॉलम कॉमा, सेमीकोलन भा टैब से अलग हो सकेला; हेडर लाइन जरूरी नइखे।",
   "portfolioImportButton": "आयात करीं",
   "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ल गइल} other{{count} खरीदारी जोड़ल गइल}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 लाइन छोड़ल गइल} other{{count} लाइन छोड़ल गइल}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 लाइन छोड़ल गइल} other{{count} लाइन छोड़ल गइल}}",
+  "syncInfo": "पोर्टफ़ोलियो, पसंदीदा, दाम अलर्ट आ नोट राउर सब डिवाइस पर सिंक होला।",
+  "syncLast": "पिछला सिंक: {time}",
+  "syncNow": "अबहीं सिंक करीं",
+  "syncFailed": "सिंक ना हो पाइल। ई अपने आप फेर कोसिस करी।"
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "Tempelake siji tukon saben baris: kode saham, jumlah, rega, mata uang, tanggal (YYYY-MM-DD). Kolom bisa dipisah nganggo koma, titik koma utawa tab; baris irah-irahan ora wajib.",
   "portfolioImportButton": "Impor",
   "portfolioImported": "{count, plural, =1{1 tukon wis ditambahake} other{{count} tukon wis ditambahake}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 baris dilewati} other{{count} baris dilewati}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 baris dilewati} other{{count} baris dilewati}}",
+  "syncInfo": "Portofolio, favorit, pèngetan rega, lan cathetan disinkronaké ing kabèh piranti sampeyan.",
+  "syncLast": "Pungkasan disinkronaké {time}",
+  "syncNow": "Sinkronaké saiki",
+  "syncFailed": "Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis."
 }

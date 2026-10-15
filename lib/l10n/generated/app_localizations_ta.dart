@@ -1748,4 +1748,19 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'போர்ட்ஃபோலியோ, பிடித்தவை, விலை எச்சரிக்கைகள், குறிப்புகள் ஆகியவை உங்கள் எல்லாச் சாதனங்களிலும் ஒத்திசைக்கப்படும்.';
+
+  @override
+  String syncLast(String time) {
+    return 'கடைசியாக ஒத்திசைத்தது: $time';
+  }
+
+  @override
+  String get syncNow => 'இப்போது ஒத்திசை';
+
+  @override
+  String get syncFailed => 'ஒத்திசைக்க முடியவில்லை. தானாகவே மீண்டும் முயலும்.';
 }

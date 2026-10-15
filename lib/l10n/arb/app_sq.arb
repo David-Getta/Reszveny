@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ngjit një blerje për rresht: simboli i aksionit, sasia, çmimi, monedha, data (VVVV-MM-DD). Kolonat mund të ndahen me presje, pikëpresje ose tabulacione; rreshti i titujve është opsional.",
   "portfolioImportButton": "Importo",
   "portfolioImported": "{count, plural, =1{U shtua 1 blerje} other{U shtuan {count} blerje}}",
-  "portfolioImportSkipped": "{count, plural, =1{U anashkalua 1 rresht} other{U anashkaluan {count} rreshta}}"
+  "portfolioImportSkipped": "{count, plural, =1{U anashkalua 1 rresht} other{U anashkaluan {count} rreshta}}",
+  "syncInfo": "Portofoli, të preferuarat, alarmet e çmimit dhe shënimet sinkronizohen në të gjitha pajisjet tuaja.",
+  "syncLast": "Sinkronizimi i fundit: {time}",
+  "syncNow": "Sinkronizo tani",
+  "syncFailed": "Sinkronizimi dështoi. Do të provohet përsëri automatikisht."
 }

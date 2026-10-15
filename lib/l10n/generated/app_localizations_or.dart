@@ -1737,4 +1737,20 @@ class AppLocalizationsOr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ପୋର୍ଟଫୋଲିଓ, ପସନ୍ଦ, ଦର ଆଲର୍ଟ ଓ ନୋଟ୍ ଆପଣଙ୍କ ସମସ୍ତ ଡିଭାଇସରେ ସିଙ୍କ ହୁଏ।';
+
+  @override
+  String syncLast(String time) {
+    return 'ଶେଷ ସିଙ୍କ: $time';
+  }
+
+  @override
+  String get syncNow => 'ବର୍ତ୍ତମାନ ସିଙ୍କ କରନ୍ତୁ';
+
+  @override
+  String get syncFailed =>
+      'ସିଙ୍କ ବିଫଳ ହେଲା। ଏହା ସ୍ୱୟଂଚାଳିତ ଭାବେ ପୁଣି ଚେଷ୍ଟା କରିବ।';
 }

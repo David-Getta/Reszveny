@@ -471,5 +471,9 @@
   "portfolioImportHint": "Apetaho fividianana iray isaky ny andalana: ticker, isa, vidiny, vola, daty (YYYY-MM-DD). Azo saraina amin'ny faingo, teboka misy faingo na tabulation ny tsanganana; tsy voatery ny andalana lohateny.",
   "portfolioImportButton": "Ampidiro",
   "portfolioImported": "{count, plural, =1{Nampiana fividianana 1} other{Nampiana fividianana {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Nadingana andalana 1} other{Nadingana andalana {count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{Nadingana andalana 1} other{Nadingana andalana {count}}}",
+  "syncInfo": "Ampifanarahina amin'ny fitaovanao rehetra ny kitapom-bola, ny ankafizina, ny fanairana vidiny ary ny naoty.",
+  "syncLast": "Fampifanarahana farany: {time}",
+  "syncNow": "Ampifanaraho izao",
+  "syncFailed": "Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy."
 }

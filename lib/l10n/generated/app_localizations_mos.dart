@@ -1727,4 +1727,19 @@ class AppLocalizationsMos extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfey, nong-n-yɩɩda, koosg gũusgo la gʋlsgo yaa a yembr f aparɛy fãa zugu.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sync sẽn yaa sɛɛbo: $time';
+  }
+
+  @override
+  String get syncNow => 'Sync masã';
+
+  @override
+  String get syncFailed => 'Sync pa tõog ye. A na n le maan a meng.';
 }

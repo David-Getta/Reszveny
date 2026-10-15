@@ -471,5 +471,9 @@
   "portfolioImportHint": "Prilepite en nakup na vrstico: borzna oznaka, količina, cena, valuta, datum (LLLL-MM-DD). Stolpci so lahko ločeni z vejicami, podpičji ali tabulatorji; naslovna vrstica ni obvezna.",
   "portfolioImportButton": "Uvozi",
   "portfolioImported": "{count, plural, one{Dodan je {count} nakup} two{Dodana sta {count} nakupa} few{Dodani so {count} nakupi} other{Dodanih je {count} nakupov}}",
-  "portfolioImportSkipped": "{count, plural, one{Preskočena je {count} vrstica} two{Preskočeni sta {count} vrstici} few{Preskočene so {count} vrstice} other{Preskočenih je {count} vrstic}}"
+  "portfolioImportSkipped": "{count, plural, one{Preskočena je {count} vrstica} two{Preskočeni sta {count} vrstici} few{Preskočene so {count} vrstice} other{Preskočenih je {count} vrstic}}",
+  "syncInfo": "Portfelj, priljubljene, cenovna opozorila in zapiski se sinhronizirajo v vseh vaših napravah.",
+  "syncLast": "Zadnja sinhronizacija: {time}",
+  "syncNow": "Sinhroniziraj zdaj",
+  "syncFailed": "Sinhronizacija ni uspela. Samodejno se bo poskusila znova."
 }

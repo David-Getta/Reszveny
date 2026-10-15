@@ -1749,4 +1749,20 @@ class AppLocalizationsSt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Potefolio, tseo o di ratang, ditsebiso tsa theko le dintlha di a sinkronaeswa disebedisweng tsohle tsa hao.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ho sinkronaesa ha ho qetela: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkronaesa hona joale';
+
+  @override
+  String get syncFailed =>
+      'Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso.';
 }

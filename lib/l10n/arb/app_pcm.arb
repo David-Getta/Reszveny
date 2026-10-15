@@ -471,5 +471,9 @@
   "portfolioImportHint": "Paste one tin wey you buy for each line: ticker, quantity, price, currency, date (YYYY-MM-DD). You fit use comma, semicolon or tab separate di columns; di header line no dey compulsory.",
   "portfolioImportButton": "Import",
   "portfolioImported": "{count, plural, one{We don add {count} tin wey you buy} other{We don add {count} tins wey you buy}}",
-  "portfolioImportSkipped": "{count, plural, one{We skip {count} line} other{We skip {count} lines}}"
+  "portfolioImportSkipped": "{count, plural, one{We skip {count} line} other{We skip {count} lines}}",
+  "syncInfo": "Portfolio, favourites, price alerts and notes dey sync for all your devices.",
+  "syncLast": "Last sync {time}",
+  "syncNow": "Sync now",
+  "syncFailed": "Sync no work. E go try again by imsef."
 }

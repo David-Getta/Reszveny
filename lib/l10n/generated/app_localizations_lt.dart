@@ -1795,4 +1795,20 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfelis, mėgstamiausi, kainos įspėjimai ir užrašai sinchronizuojami visuose jūsų įrenginiuose.';
+
+  @override
+  String syncLast(String time) {
+    return 'Paskutinį kartą sinchronizuota $time';
+  }
+
+  @override
+  String get syncNow => 'Sinchronizuoti dabar';
+
+  @override
+  String get syncFailed =>
+      'Sinchronizuoti nepavyko. Bus automatiškai bandoma dar kartą.';
 }

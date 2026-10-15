@@ -471,5 +471,9 @@
   "portfolioImportHint": "Vložte jeden nákup na řádek: ticker, množství, cena, měna, datum (RRRR-MM-DD). Sloupce mohou být oddělené čárkami, středníky nebo tabulátory; řádek se záhlavím je nepovinný.",
   "portfolioImportButton": "Importovat",
   "portfolioImported": "{count, plural, =1{Přidán 1 nákup} few{Přidány {count} nákupy} many{Přidáno {count} nákupu} other{Přidáno {count} nákupů}}",
-  "portfolioImportSkipped": "{count, plural, =1{Přeskočen 1 řádek} few{Přeskočeny {count} řádky} many{Přeskočeno {count} řádku} other{Přeskočeno {count} řádků}}"
+  "portfolioImportSkipped": "{count, plural, =1{Přeskočen 1 řádek} few{Přeskočeny {count} řádky} many{Přeskočeno {count} řádku} other{Přeskočeno {count} řádků}}",
+  "syncInfo": "Portfolio, oblíbené, cenová upozornění a poznámky se synchronizují na všech vašich zařízeních.",
+  "syncLast": "Poslední synchronizace: {time}",
+  "syncNow": "Synchronizovat nyní",
+  "syncFailed": "Synchronizace se nezdařila. Automaticky se zkusí znovu."
 }

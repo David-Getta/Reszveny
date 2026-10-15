@@ -1744,4 +1744,20 @@ class AppLocalizationsLua extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefeuille, biudi musue, alerte ya mushinga ne mifundu bidi bimue ku bintu biebe bionso.';
+
+  @override
+  String syncLast(String time) {
+    return 'Synchronisation ya ndekelu: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchroniser katataka';
+
+  @override
+  String get syncFailed =>
+      'Synchronisation kayena mienze to. Neyikebe kabidi yoyi nkayayi.';
 }

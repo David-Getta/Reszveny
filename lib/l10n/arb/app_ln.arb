@@ -471,5 +471,9 @@
   "portfolioImportHint": "Tya esombi moko na molɔngɔ mokomoko: elembo ya ticker, motángo, ntalo, mbɔngɔ, mokɔlɔ (YYYY-MM-DD). Ba-colonne ekoki kokabwana na virgule, point-virgule to tabulation; molɔngɔ ya motó ezali na ntina te.",
   "portfolioImportButton": "Kotisa",
   "portfolioImported": "{count, plural, =1{Esombi 1 ebakisami} other{Bosombi {count} ebakisami}}",
-  "portfolioImportSkipped": "{count, plural, =1{Molɔngɔ 1 etikalaki} other{Milɔngɔ {count} etikalaki}}"
+  "portfolioImportSkipped": "{count, plural, =1{Molɔngɔ 1 etikalaki} other{Milɔngɔ {count} etikalaki}}",
+  "syncInfo": "Portefeuille, oyo olingaka, makebisi ya ntalo mpe ba note ezali ndenge moko na bisaleli na yo nyɔnsɔ.",
+  "syncLast": "Synchronisation ya nsuka: {time}",
+  "syncNow": "Synchroniser sikoyo",
+  "syncFailed": "Synchronisation ekoki te. Ekomeka lisusu yango moko."
 }

@@ -471,5 +471,9 @@
   "portfolioImportHint": "Tula kisumbi kimosi na konso ndonga: kidimbu kia ticker, kiteso, ntalu, mbongo, kilumbu (YYYY-MM-DD). Bakolonne lenda kabwana na virgule, point-virgule to tabulation; ndonga ya ntu ke ya mfunu ve.",
   "portfolioImportButton": "Kotisa",
   "portfolioImported": "{count, plural, =1{Kisumbi 1 me kota} other{Bisumbi {count} me kota}}",
-  "portfolioImportSkipped": "{count, plural, =1{Ndonga 1 me bikama} other{Bandonga {count} me bikama}}"
+  "portfolioImportSkipped": "{count, plural, =1{Ndonga 1 me bikama} other{Bandonga {count} me bikama}}",
+  "syncInfo": "Portefeuille, bizolwa, nkebisu za ntalu ye ba note ke vandaka mpila mosi na bisadilu na nge yonso.",
+  "syncLast": "Synchronisation ya nsuka: {time}",
+  "syncNow": "Synchroniser ntangu yai",
+  "syncFailed": "Synchronisation me lemba. Yo ta meka diaka yo mosi."
 }

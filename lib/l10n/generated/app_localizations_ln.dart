@@ -1748,4 +1748,20 @@ class AppLocalizationsLn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portefeuille, oyo olingaka, makebisi ya ntalo mpe ba note ezali ndenge moko na bisaleli na yo nyɔnsɔ.';
+
+  @override
+  String syncLast(String time) {
+    return 'Synchronisation ya nsuka: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchroniser sikoyo';
+
+  @override
+  String get syncFailed =>
+      'Synchronisation ekoki te. Ekomeka lisusu yango moko.';
 }

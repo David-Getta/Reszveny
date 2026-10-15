@@ -471,5 +471,9 @@
   "portfolioImportHint": "દરેક લાઇનમાં એક ખરીદી પેસ્ટ કરો: ટિકર સિમ્બોલ, જથ્થો, કિંમત, ચલણ, તારીખ (YYYY-MM-DD). કૉલમને અલ્પવિરામ, અર્ધવિરામ અથવા ટૅબથી અલગ કરી શકાય છે; હેડર લાઇન વૈકલ્પિક છે.",
   "portfolioImportButton": "આયાત કરો",
   "portfolioImported": "{count, plural, =1{1 ખરીદી ઉમેરાઈ} other{{count} ખરીદીઓ ઉમેરાઈ}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 લાઇન છોડી દેવાઈ} other{{count} લાઇન છોડી દેવાઈ}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 લાઇન છોડી દેવાઈ} other{{count} લાઇન છોડી દેવાઈ}}",
+  "syncInfo": "પોર્ટફોલિયો, મનપસંદ, ભાવ અલર્ટ અને નોંધો તમારા બધા ડિવાઇસ પર સિંક થાય છે.",
+  "syncLast": "છેલ્લે સિંક: {time}",
+  "syncNow": "હમણાં સિંક કરો",
+  "syncFailed": "સિંક નિષ્ફળ થયું. તે આપમેળે ફરી પ્રયાસ કરશે."
 }

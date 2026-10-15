@@ -3168,6 +3168,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 line skipped} other{{count} lines skipped}}'**
   String portfolioImportSkipped(int count);
+
+  /// No description provided for @syncInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio, favorites, price alerts and notes are synced across your devices.'**
+  String get syncInfo;
+
+  /// When the data was last synced with the account; time is a formatted date and time.
+  ///
+  /// In en, this message translates to:
+  /// **'Last synced {time}'**
+  String syncLast(String time);
+
+  /// No description provided for @syncNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync now'**
+  String get syncNow;
+
+  /// No description provided for @syncFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync failed. It will try again automatically.'**
+  String get syncFailed;
 }
 
 class _AppLocalizationsDelegate

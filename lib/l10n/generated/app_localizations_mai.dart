@@ -1735,4 +1735,19 @@ class AppLocalizationsMai extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'पोर्टफ़ोलियो, पसंदीदा, दाम अलर्ट आ नोट अहाँक सभ डिवाइस पर सिंक होइत अछि।';
+
+  @override
+  String syncLast(String time) {
+    return 'अंतिम सिंक: $time';
+  }
+
+  @override
+  String get syncNow => 'एखन सिंक करू';
+
+  @override
+  String get syncFailed => 'सिंक नहि भ\' सकल। ई अपने-आप फेर प्रयास करत।';
 }

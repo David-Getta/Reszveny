@@ -1741,4 +1741,19 @@ class AppLocalizationsMn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфолио, дуртай, үнийн сэрэмжлүүлэг болон тэмдэглэл таны бүх төхөөрөмж дээр синк хийгддэг.';
+
+  @override
+  String syncLast(String time) {
+    return 'Сүүлд синк хийсэн: $time';
+  }
+
+  @override
+  String get syncNow => 'Одоо синк хийх';
+
+  @override
+  String get syncFailed => 'Синк хийж чадсангүй. Автоматаар дахин оролдоно.';
 }

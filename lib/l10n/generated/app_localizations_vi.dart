@@ -1734,4 +1734,20 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.';
+
+  @override
+  String syncLast(String time) {
+    return 'Đồng bộ hóa lần cuối $time';
+  }
+
+  @override
+  String get syncNow => 'Đồng bộ hóa ngay';
+
+  @override
+  String get syncFailed =>
+      'Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại.';
 }

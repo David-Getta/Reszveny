@@ -1729,4 +1729,20 @@ class AppLocalizationsBo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'མ་འཇོག་ཚོགས་སྡེབ་དང་། དགའ་མོས། གོང་ཚད་ཉེན་བརྡ། ཟིན་ཐོ་བཅས་ཁྱེད་ཀྱི་སྒྲིག་ཆས་ཚང་མར་མཉམ་སྒྲིག་བྱེད།';
+
+  @override
+  String syncLast(String time) {
+    return 'མཐའ་མའི་མཉམ་སྒྲིག: $time';
+  }
+
+  @override
+  String get syncNow => 'ད་ལྟ་མཉམ་སྒྲིག';
+
+  @override
+  String get syncFailed =>
+      'མཉམ་སྒྲིག་མ་ཐུབ། རང་འགུལ་གྱིས་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ངེས།';
 }

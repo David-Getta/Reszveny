@@ -471,5 +471,9 @@
   "portfolioImportHint": "Plak een aankoop per reël: aandeelkode, hoeveelheid, prys, geldeenheid, datum (JJJJ-MM-DD). Kolomme kan deur kommas, kommapunte of tabs geskei word; die opskrifreël is opsioneel.",
   "portfolioImportButton": "Voer in",
   "portfolioImported": "{count, plural, =1{1 aankoop bygevoeg} other{{count} aankope bygevoeg}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 reël oorgeslaan} other{{count} reëls oorgeslaan}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 reël oorgeslaan} other{{count} reëls oorgeslaan}}",
+  "syncInfo": "Portefeulje, gunstelinge, pryswaarskuwings en notas word op al jou toestelle gesinkroniseer.",
+  "syncLast": "Laas gesinkroniseer {time}",
+  "syncNow": "Sinkroniseer nou",
+  "syncFailed": "Sinkronisering het misluk. Dit sal outomaties weer probeer."
 }

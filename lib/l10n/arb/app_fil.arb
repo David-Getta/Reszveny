@@ -471,5 +471,9 @@
   "portfolioImportHint": "Mag-paste ng isang pagbili bawat linya: ticker symbol, dami, presyo, currency, petsa (YYYY-MM-DD). Maaaring paghiwalayin ang mga column ng kuwit, semicolon o tab; opsyonal ang header row.",
   "portfolioImportButton": "I-import",
   "portfolioImported": "{count, plural, =1{Naidagdag ang 1 pagbili} other{Naidagdag ang {count} pagbili}}",
-  "portfolioImportSkipped": "{count, plural, =1{Nilaktawan ang 1 linya} other{Nilaktawan ang {count} linya}}"
+  "portfolioImportSkipped": "{count, plural, =1{Nilaktawan ang 1 linya} other{Nilaktawan ang {count} linya}}",
+  "syncInfo": "Naka-sync sa lahat ng iyong device ang portfolio, mga paborito, mga alerto sa presyo at mga tala.",
+  "syncLast": "Huling na-sync {time}",
+  "syncNow": "I-sync ngayon",
+  "syncFailed": "Hindi na-sync. Awtomatiko itong susubukang muli."
 }

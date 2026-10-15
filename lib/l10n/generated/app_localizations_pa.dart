@@ -1736,4 +1736,19 @@ class AppLocalizationsPa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ਪੋਰਟਫ਼ੋਲੀਓ, ਮਨਪਸੰਦ, ਕੀਮਤ ਅਲਰਟ ਅਤੇ ਨੋਟ ਤੁਹਾਡੀਆਂ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ’ਤੇ ਸਿੰਕ ਹੁੰਦੇ ਹਨ।';
+
+  @override
+  String syncLast(String time) {
+    return 'ਆਖਰੀ ਸਿੰਕ: $time';
+  }
+
+  @override
+  String get syncNow => 'ਹੁਣੇ ਸਿੰਕ ਕਰੋ';
+
+  @override
+  String get syncFailed => 'ਸਿੰਕ ਅਸਫਲ ਰਿਹਾ। ਇਹ ਆਪਣੇ ਆਪ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ।';
 }

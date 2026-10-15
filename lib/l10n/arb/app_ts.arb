@@ -471,5 +471,9 @@
   "portfolioImportHint": "Namarheta xixaviwa xin'we eka layini yin'wana na yin'wana: ticker, nhlayo, nxavo, muxaka wa mali, siku (YYYY-MM-DD). Tikholomo ti nga hambanisiwa hi tikhoma, tisemikholoni kumbe ti-tab; layini ya tinhloko a yi bohi.",
   "portfolioImportButton": "Nghenisa",
   "portfolioImported": "{count, plural, =1{Ku engeteriwe xixaviwa xin'we} other{Ku engeteriwe swixaviwa swa {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Ku tluriwe layini yin'we} other{Ku tluriwe tilayini ta {count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{Ku tluriwe layini yin'we} other{Ku tluriwe tilayini ta {count}}}",
+  "syncInfo": "Phothifoliyo, leswi u swi rhandzaka, switiviso swa nxavo na tinotsi swi fambelanisiwa eka switirhisiwa swa wena hinkwaswo.",
+  "syncLast": "Ku fambelanisa ko hetelela: {time}",
+  "syncNow": "Fambelanisa sweswi",
+  "syncFailed": "Ku fambelanisa ku tsandzekile. Ku ta ringetiwa nakambe hi ku tiendlekela."
 }

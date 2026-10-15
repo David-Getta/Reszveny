@@ -1749,4 +1749,20 @@ class AppLocalizationsLg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Emigabo gyo, by\'oyagala, okulabula ku bbeeyi n\'ebiwandiiko bikwatagana ku byuma byo byonna.';
+
+  @override
+  String syncLast(String time) {
+    return 'Okukwataganya okusembayo: $time';
+  }
+
+  @override
+  String get syncNow => 'Kwataganya kati';
+
+  @override
+  String get syncFailed =>
+      'Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka.';
 }

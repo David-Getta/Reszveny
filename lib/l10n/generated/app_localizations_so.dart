@@ -1746,4 +1746,20 @@ class AppLocalizationsSo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfoliyada, kuwa la jecel yahay, digniinaha qiimaha iyo qoraallada waxaa lagu waafajiyaa dhammaan qalabkaaga.';
+
+  @override
+  String syncLast(String time) {
+    return 'Waafajintii u dambeysay: $time';
+  }
+
+  @override
+  String get syncNow => 'Hadda waafaji';
+
+  @override
+  String get syncFailed =>
+      'Waafajintu way fashilantay. Si toos ah ayay dib isugu dayi doontaa.';
 }

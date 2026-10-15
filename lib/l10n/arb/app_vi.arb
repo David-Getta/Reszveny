@@ -471,5 +471,9 @@
   "portfolioImportHint": "Dán mỗi dòng một lần mua: mã cổ phiếu, số lượng, giá, tiền tệ, ngày (YYYY-MM-DD). Các cột có thể phân tách bằng dấu phẩy, dấu chấm phẩy hoặc tab; dòng tiêu đề là tùy chọn.",
   "portfolioImportButton": "Nhập",
   "portfolioImported": "{count, plural, =1{Đã thêm 1 lần mua} other{Đã thêm {count} lần mua}}",
-  "portfolioImportSkipped": "{count, plural, =1{Đã bỏ qua 1 dòng} other{Đã bỏ qua {count} dòng}}"
+  "portfolioImportSkipped": "{count, plural, =1{Đã bỏ qua 1 dòng} other{Đã bỏ qua {count} dòng}}",
+  "syncInfo": "Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.",
+  "syncLast": "Đồng bộ hóa lần cuối {time}",
+  "syncNow": "Đồng bộ hóa ngay",
+  "syncFailed": "Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại."
 }

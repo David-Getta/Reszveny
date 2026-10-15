@@ -159,6 +159,14 @@ class AlertStore extends ChangeNotifier {
     return alert;
   }
 
+  /// Az összes riasztás cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAll(List<PriceAlert> alerts) async {
+    _alerts
+      ..clear()
+      ..addAll(alerts);
+    await _changed();
+  }
+
   /// Minden riasztás törlése (fióktörléskor, ha a felhasználó ezt is kéri).
   Future<void> clear() async {
     _alerts.clear();

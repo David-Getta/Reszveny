@@ -1738,4 +1738,20 @@ class AppLocalizationsTk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfel, saýlananlar, baha duýduryşlary we bellikler ähli enjamlaryňyzda sinhronlanýar.';
+
+  @override
+  String syncLast(String time) {
+    return 'Soňky sinhronlama: $time';
+  }
+
+  @override
+  String get syncNow => 'Häzir sinhronla';
+
+  @override
+  String get syncFailed =>
+      'Sinhronlamak başartmady. Awtomatik usulda täzeden synanyşylar.';
 }

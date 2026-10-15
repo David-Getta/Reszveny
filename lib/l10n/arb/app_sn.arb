@@ -471,5 +471,9 @@
   "portfolioImportHint": "Namira chinhu chimwe chawakatenga pamutsara mumwe nemumwe: ticker, huwandu, mutengo, mari, zuva (YYYY-MM-DD). Makoramu anogona kuparadzaniswa nemakoma, semikoroni kana tabhu; mutsara wemisoro hausi wekumanikidzwa.",
   "portfolioImportButton": "Pinza",
   "portfolioImported": "{count, plural, =1{Chinhu 1 chawakatenga chawedzerwa} other{Zvinhu {count} zvawakatenga zvawedzerwa}}",
-  "portfolioImportSkipped": "{count, plural, =1{Mutsara 1 wasvetwa} other{Mitsara {count} yasvetwa}}"
+  "portfolioImportSkipped": "{count, plural, =1{Mutsara 1 wasvetwa} other{Mitsara {count} yasvetwa}}",
+  "syncInfo": "Potiforiyo, zvaunofarira, zviziviso zvemutengo nezvinyorwa zvinowiriraniswa pamidziyo yako yese.",
+  "syncLast": "Kuwiriranisa kwekupedzisira: {time}",
+  "syncNow": "Wiriranisa izvozvi",
+  "syncFailed": "Kuwiriranisa kwatadza. Kuchaedza zvakare kwega."
 }

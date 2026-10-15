@@ -471,5 +471,9 @@
   "portfolioImportHint": "Collez un achat par ligne : symbole, quantité, prix, devise, date (AAAA-MM-JJ). Les colonnes peuvent être séparées par des virgules, des points-virgules ou des tabulations ; la ligne d’en-tête est facultative.",
   "portfolioImportButton": "Importer",
   "portfolioImported": "{count, plural, =1{1 achat ajouté} other{{count} achats ajoutés}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 ligne ignorée} other{{count} lignes ignorées}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 ligne ignorée} other{{count} lignes ignorées}}",
+  "syncInfo": "Le portefeuille, les favoris, les alertes de cours et les notes sont synchronisés sur tous vos appareils.",
+  "syncLast": "Dernière synchronisation : {time}",
+  "syncNow": "Synchroniser maintenant",
+  "syncFailed": "Échec de la synchronisation. Une nouvelle tentative aura lieu automatiquement."
 }

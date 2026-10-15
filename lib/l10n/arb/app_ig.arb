@@ -471,5 +471,9 @@
   "portfolioImportHint": "Mado otu ihe ị zụrụ n'ahịrị ọ bụla: akara ticker, ọnụ ọgụgụ, ọnụ ahịa, ego, ụbọchị (YYYY-MM-DD). Enwere ike iji rịkọm, semikọlọn ma ọ bụ tab kewaa kọlụm; ahịrị isiokwu bụ nhọrọ.",
   "portfolioImportButton": "Bubata",
   "portfolioImported": "{count, plural, =1{Agbakwunyere ihe ịzụrụ 1} other{Agbakwunyere ihe ịzụrụ {count}}}",
-  "portfolioImportSkipped": "{count, plural, =1{Awụfere ahịrị 1} other{Awụfere ahịrị {count}}}"
+  "portfolioImportSkipped": "{count, plural, =1{Awụfere ahịrị 1} other{Awụfere ahịrị {count}}}",
+  "syncInfo": "A na-emekọrịta portfolio, ọkacha mmasị, ọkwa ọnụahịa na ndetu gị na ngwaọrụ gị niile.",
+  "syncLast": "Mmekọrịta ikpeazụ: {time}",
+  "syncNow": "Mekọrịta ugbu a",
+  "syncFailed": "Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka."
 }

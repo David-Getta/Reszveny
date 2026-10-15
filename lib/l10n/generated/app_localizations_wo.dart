@@ -1735,4 +1735,19 @@ class AppLocalizationsWo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Sa aksiyoŋ yi, yi nga gënal, artu njëg yi ak say notu ñoo yem ci say masin yépp.';
+
+  @override
+  String syncLast(String time) {
+    return 'Synchro mujj: $time';
+  }
+
+  @override
+  String get syncNow => 'Synchro léegi';
+
+  @override
+  String get syncFailed => 'Synchro bi antuwul. Dina jéemaat boppam.';
 }

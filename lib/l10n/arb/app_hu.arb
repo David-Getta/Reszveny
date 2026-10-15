@@ -471,5 +471,9 @@
   "portfolioImportHint": "Soronként egy vétel: ticker, darabszám, ár, pénznem, dátum (ÉÉÉÉ-HH-NN). Az oszlopokat vessző, pontosvessző vagy tabulátor választhatja el; a fejléc elhagyható.",
   "portfolioImportButton": "Importálás",
   "portfolioImported": "{count, plural, =1{1 vétel hozzáadva} other{{count} vétel hozzáadva}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 sor kihagyva} other{{count} sor kihagyva}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 sor kihagyva} other{{count} sor kihagyva}}",
+  "syncInfo": "A portfólió, a kedvencek, az árfolyam-riasztások és a jegyzetek minden eszközödön ugyanazok.",
+  "syncLast": "Utolsó szinkron: {time}",
+  "syncNow": "Szinkron most",
+  "syncFailed": "A szinkron nem sikerült. Később automatikusan újrapróbálja."
 }

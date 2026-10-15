@@ -471,5 +471,9 @@
   "portfolioImportHint": "Har bir qatorga bitta xaridni joylang: tiker, miqdor, narx, valyuta, sana (YYYY-OO-KK). Ustunlar vergul, nuqtali vergul yoki tab bilan ajratilishi mumkin; sarlavha qatori ixtiyoriy.",
   "portfolioImportButton": "Import qilish",
   "portfolioImported": "{count, plural, =1{1 ta xarid qoʻshildi} other{{count} ta xarid qoʻshildi}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 ta qator oʻtkazib yuborildi} other{{count} ta qator oʻtkazib yuborildi}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 ta qator oʻtkazib yuborildi} other{{count} ta qator oʻtkazib yuborildi}}",
+  "syncInfo": "Portfel, sevimlilar, narx bildirishnomalari va qaydlar barcha qurilmalaringizda sinxronlanadi.",
+  "syncLast": "Oxirgi sinxronlash: {time}",
+  "syncNow": "Hozir sinxronlash",
+  "syncFailed": "Sinxronlab bo‘lmadi. Avtomatik ravishda qayta urinib ko‘riladi."
 }

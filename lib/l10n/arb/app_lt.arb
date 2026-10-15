@@ -471,5 +471,9 @@
   "portfolioImportHint": "Įklijuokite po vieną pirkimą eilutėje: akcijos simbolis, kiekis, kaina, valiuta, data (MMMM-MM-DD). Stulpeliai gali būti atskirti kableliais, kabliataškiais arba tabuliacijos ženklais; antraštės eilutė neprivaloma.",
   "portfolioImportButton": "Importuoti",
   "portfolioImported": "{count, plural, one{Pridėtas {count} pirkimas} few{Pridėti {count} pirkimai} many{Pridėta {count} pirkimo} other{Pridėta {count} pirkimų}}",
-  "portfolioImportSkipped": "{count, plural, one{Praleista {count} eilutė} few{Praleistos {count} eilutės} many{Praleista {count} eilutės} other{Praleista {count} eilučių}}"
+  "portfolioImportSkipped": "{count, plural, one{Praleista {count} eilutė} few{Praleistos {count} eilutės} many{Praleista {count} eilutės} other{Praleista {count} eilučių}}",
+  "syncInfo": "Portfelis, mėgstamiausi, kainos įspėjimai ir užrašai sinchronizuojami visuose jūsų įrenginiuose.",
+  "syncLast": "Paskutinį kartą sinchronizuota {time}",
+  "syncNow": "Sinchronizuoti dabar",
+  "syncFailed": "Sinchronizuoti nepavyko. Bus automatiškai bandoma dar kartą."
 }

@@ -1713,4 +1713,19 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'ፖርትፎሊዮ፣ ተወዳጆች፣ የዋጋ ማንቂያዎች እና ማስታወሻዎች በሁሉም መሣሪያዎችዎ ላይ ይሰምራሉ።';
+
+  @override
+  String syncLast(String time) {
+    return 'ለመጨረሻ ጊዜ የሰመረው፦ $time';
+  }
+
+  @override
+  String get syncNow => 'አሁን አስምር';
+
+  @override
+  String get syncFailed => 'ማስመር አልተሳካም። በራስ-ሰር እንደገና ይሞከራል።';
 }

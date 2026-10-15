@@ -1746,4 +1746,19 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Naka-sync sa lahat ng iyong device ang portfolio, mga paborito, mga alerto sa presyo at mga tala.';
+
+  @override
+  String syncLast(String time) {
+    return 'Huling na-sync $time';
+  }
+
+  @override
+  String get syncNow => 'I-sync ngayon';
+
+  @override
+  String get syncFailed => 'Hindi na-sync. Awtomatiko itong susubukang muli.';
 }

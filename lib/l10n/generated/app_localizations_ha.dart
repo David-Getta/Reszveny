@@ -1745,4 +1745,19 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ana daidaita jakar hannun jari, abubuwan da aka fi so, faɗakarwar farashi da bayanai a duk na\'urorinka.';
+
+  @override
+  String syncLast(String time) {
+    return 'Daidaitawa ta ƙarshe: $time';
+  }
+
+  @override
+  String get syncNow => 'Daidaita yanzu';
+
+  @override
+  String get syncFailed => 'Daidaitawa ta gaza. Za a sake gwadawa ta atomatik.';
 }

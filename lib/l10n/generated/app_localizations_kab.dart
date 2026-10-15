@@ -1738,4 +1738,20 @@ class AppLocalizationsKab extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.';
+
+  @override
+  String syncLast(String time) {
+    return 'Amtawi aneggaru: $time';
+  }
+
+  @override
+  String get syncNow => 'Mtawi tura';
+
+  @override
+  String get syncFailed =>
+      'Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman.';
 }

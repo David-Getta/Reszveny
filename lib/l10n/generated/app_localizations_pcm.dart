@@ -1740,4 +1740,19 @@ class AppLocalizationsPcm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, favourites, price alerts and notes dey sync for all your devices.';
+
+  @override
+  String syncLast(String time) {
+    return 'Last sync $time';
+  }
+
+  @override
+  String get syncNow => 'Sync now';
+
+  @override
+  String get syncFailed => 'Sync no work. E go try again by imsef.';
 }

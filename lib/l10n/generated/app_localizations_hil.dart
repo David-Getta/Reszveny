@@ -1751,4 +1751,20 @@ class AppLocalizationsHil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ang portfolio, mga paborito, mga alerto sa presyo kag mga nota gina-sync sa tanan mo nga device.';
+
+  @override
+  String syncLast(String time) {
+    return 'Katapusan nga na-sync $time';
+  }
+
+  @override
+  String get syncNow => 'I-sync subong';
+
+  @override
+  String get syncFailed =>
+      'Napaslawan ang pag-sync. Tilawan liwat ini sing awtomatiko.';
 }

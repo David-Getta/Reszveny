@@ -1741,4 +1741,20 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Salkku, suosikit, kurssihälytykset ja muistiinpanot synkronoidaan kaikille laitteillesi.';
+
+  @override
+  String syncLast(String time) {
+    return 'Synkronoitu viimeksi $time';
+  }
+
+  @override
+  String get syncNow => 'Synkronoi nyt';
+
+  @override
+  String get syncFailed =>
+      'Synkronointi epäonnistui. Sitä yritetään automaattisesti uudelleen.';
 }

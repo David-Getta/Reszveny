@@ -471,5 +471,9 @@
   "portfolioImportHint": "ኣብ ነፍሲ ወከፍ መስመር ሓደ ዕድጊ ለጥፍ፦ ምልክት ኣክሲዮን፣ ብዝሒ፣ ዋጋ፣ ባጤራ፣ ዕለት (YYYY-MM-DD)። ዓንድታት ብኮማ፣ ሰሚኮሎን ወይ ታብ ክፈላለዩ ይኽእሉ፤ መስመር ኣርእስቲ ግዴታ ኣይኮነን።",
   "portfolioImportButton": "ኣእቱ",
   "portfolioImported": "{count, plural, =1{1 ዕድጊ ተወሲኹ} other{{count} ዕድግታት ተወሲኾም}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 መስመር ተዘሊሉ} other{{count} መስመራት ተዘሊሎም}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 መስመር ተዘሊሉ} other{{count} መስመራት ተዘሊሎም}}",
+  "syncInfo": "ፖርትፎሊዮ፣ ዝተፈተዉ፣ መጠንቀቕታታት ዋጋን ማስታወሻታትን ኣብ ኩሉ መሳርሒታትኩም ይሰማምዑ።",
+  "syncLast": "ናይ መወዳእታ ምስምማዕ፦ {time}",
+  "syncNow": "ሕጂ ኣሰማምዕ",
+  "syncFailed": "ምስምማዕ ኣይተዓወተን። ብኣውቶማቲክ እንደገና ክፍተን እዩ።"
 }

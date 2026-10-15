@@ -1739,4 +1739,19 @@ class AppLocalizationsUr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'پورٹ فولیو، پسندیدہ، قیمت کے الرٹس اور نوٹس آپ کے تمام آلات پر سنک ہوتے ہیں۔';
+
+  @override
+  String syncLast(String time) {
+    return 'آخری سنک: $time';
+  }
+
+  @override
+  String get syncNow => 'ابھی سنک کریں';
+
+  @override
+  String get syncFailed => 'سنک ناکام ہو گیا۔ یہ خود بخود دوبارہ کوشش کرے گا۔';
 }

@@ -1752,4 +1752,20 @@ class AppLocalizationsMg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ampifanarahina amin\'ny fitaovanao rehetra ny kitapom-bola, ny ankafizina, ny fanairana vidiny ary ny naoty.';
+
+  @override
+  String syncLast(String time) {
+    return 'Fampifanarahana farany: $time';
+  }
+
+  @override
+  String get syncNow => 'Ampifanaraho izao';
+
+  @override
+  String get syncFailed =>
+      'Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy.';
 }

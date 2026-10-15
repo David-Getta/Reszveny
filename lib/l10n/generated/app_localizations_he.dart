@@ -1736,4 +1736,19 @@ class AppLocalizationsHe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'תיק ההשקעות, המועדפים, התראות המחיר וההערות מסונכרנים בכל המכשירים שלך.';
+
+  @override
+  String syncLast(String time) {
+    return 'סונכרן לאחרונה $time';
+  }
+
+  @override
+  String get syncNow => 'סנכרון עכשיו';
+
+  @override
+  String get syncFailed => 'הסנכרון נכשל. ייעשה ניסיון חוזר באופן אוטומטי.';
 }

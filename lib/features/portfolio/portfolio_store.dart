@@ -141,6 +141,15 @@ class PortfolioStore extends ChangeNotifier {
     return lot;
   }
 
+  /// Az összes vétel cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAll(List<PortfolioLot> lots) async {
+    _lots
+      ..clear()
+      ..addAll(lots);
+    notifyListeners();
+    await _save();
+  }
+
   /// Minden vétel törlése (fióktörléskor, ha a felhasználó ezt is kéri).
   Future<void> clear() async {
     _lots.clear();

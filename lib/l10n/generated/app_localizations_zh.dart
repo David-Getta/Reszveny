@@ -1669,6 +1669,20 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo => '投资组合、收藏、价格提醒和笔记会在你的所有设备间同步。';
+
+  @override
+  String syncLast(String time) {
+    return '上次同步：$time';
+  }
+
+  @override
+  String get syncNow => '立即同步';
+
+  @override
+  String get syncFailed => '同步失败，将自动重试。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3334,4 +3348,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo => '投資組合、收藏、價格提示及筆記會在你的所有裝置之間同步。';
+
+  @override
+  String syncLast(String time) {
+    return '上次同步：$time';
+  }
+
+  @override
+  String get syncNow => '立即同步';
+
+  @override
+  String get syncFailed => '同步失敗，系統會自動重試。';
 }

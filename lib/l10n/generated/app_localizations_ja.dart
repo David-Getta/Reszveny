@@ -1687,4 +1687,18 @@ class AppLocalizationsJa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo => 'ポートフォリオ、お気に入り、価格アラート、メモはすべてのデバイスで同期されます。';
+
+  @override
+  String syncLast(String time) {
+    return '最終同期：$time';
+  }
+
+  @override
+  String get syncNow => '今すぐ同期';
+
+  @override
+  String get syncFailed => '同期できませんでした。自動的に再試行します。';
 }

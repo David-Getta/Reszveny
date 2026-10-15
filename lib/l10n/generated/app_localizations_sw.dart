@@ -1740,4 +1740,20 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Jalada la hisa, vipendwa, arifa za bei na madokezo husawazishwa kwenye vifaa vyako vyote.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ilisawazishwa mwisho $time';
+  }
+
+  @override
+  String get syncNow => 'Sawazisha sasa';
+
+  @override
+  String get syncFailed =>
+      'Imeshindwa kusawazisha. Itajaribu tena kiotomatiki.';
 }

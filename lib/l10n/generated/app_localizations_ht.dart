@@ -1738,4 +1738,20 @@ class AppLocalizationsHt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.';
+
+  @override
+  String syncLast(String time) {
+    return 'Dènye senkronizasyon: $time';
+  }
+
+  @override
+  String get syncNow => 'Senkronize kounye a';
+
+  @override
+  String get syncFailed =>
+      'Senkronizasyon an echwe. L ap eseye ankò otomatikman.';
 }

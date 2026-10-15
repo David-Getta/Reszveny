@@ -1739,4 +1739,19 @@ class AppLocalizationsMr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'पोर्टफोलिओ, आवडते, किंमत सूचना आणि नोंदी तुमच्या सर्व डिव्हाइसवर सिंक होतात.';
+
+  @override
+  String syncLast(String time) {
+    return 'शेवटचे सिंक: $time';
+  }
+
+  @override
+  String get syncNow => 'आता सिंक करा';
+
+  @override
+  String get syncFailed => 'सिंक अयशस्वी झाले. ते आपोआप पुन्हा प्रयत्न करेल.';
 }

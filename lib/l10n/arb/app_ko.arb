@@ -471,5 +471,9 @@
   "portfolioImportHint": "한 줄에 매수 1건씩 붙여 넣으세요: 티커 심볼, 수량, 가격, 통화, 날짜(YYYY-MM-DD). 열은 쉼표, 세미콜론 또는 탭으로 구분할 수 있으며, 머리글 행은 선택 사항입니다.",
   "portfolioImportButton": "가져오기",
   "portfolioImported": "{count, plural, =1{매수 1건이 추가되었습니다} other{매수 {count}건이 추가되었습니다}}",
-  "portfolioImportSkipped": "{count, plural, =1{1줄을 건너뛰었습니다} other{{count}줄을 건너뛰었습니다}}"
+  "portfolioImportSkipped": "{count, plural, =1{1줄을 건너뛰었습니다} other{{count}줄을 건너뛰었습니다}}",
+  "syncInfo": "포트폴리오, 즐겨찾기, 가격 알림, 메모가 모든 기기에서 동기화됩니다.",
+  "syncLast": "마지막 동기화: {time}",
+  "syncNow": "지금 동기화",
+  "syncFailed": "동기화하지 못했습니다. 자동으로 다시 시도합니다."
 }

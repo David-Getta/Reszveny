@@ -1747,4 +1747,20 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Պորտֆելը, ընտրյալները, գնային ծանուցումները և նշումները համաժամացվում են ձեր բոլոր սարքերում։';
+
+  @override
+  String syncLast(String time) {
+    return 'Վերջին համաժամացումը՝ $time';
+  }
+
+  @override
+  String get syncNow => 'Համաժամացնել հիմա';
+
+  @override
+  String get syncFailed =>
+      'Չհաջողվեց համաժամացնել։ Կրկին փորձ կարվի ավտոմատ կերպով։';
 }

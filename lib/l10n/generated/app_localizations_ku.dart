@@ -1742,4 +1742,20 @@ class AppLocalizationsKu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolyo, bijare, hişyariyên bihayê û not li ser hemû amûrên te têne hevdemkirin.';
+
+  @override
+  String syncLast(String time) {
+    return 'Hevdemkirina dawî: $time';
+  }
+
+  @override
+  String get syncNow => 'Niha hevdem bike';
+
+  @override
+  String get syncFailed =>
+      'Hevdemkirin bi ser neket. Ew ê bi xweber dîsa biceribîne.';
 }

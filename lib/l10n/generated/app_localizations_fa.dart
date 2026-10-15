@@ -1738,4 +1738,20 @@ class AppLocalizationsFa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'سبد سهام، علاقه‌مندی‌ها، هشدارهای قیمت و یادداشت‌ها در همه دستگاه‌های شما همگام‌سازی می‌شوند.';
+
+  @override
+  String syncLast(String time) {
+    return 'آخرین همگام‌سازی: $time';
+  }
+
+  @override
+  String get syncNow => 'همگام‌سازی اکنون';
+
+  @override
+  String get syncFailed =>
+      'همگام‌سازی ناموفق بود. به‌طور خودکار دوباره تلاش می‌شود.';
 }

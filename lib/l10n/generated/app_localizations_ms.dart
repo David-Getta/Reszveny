@@ -1743,4 +1743,20 @@ class AppLocalizationsMs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfolio, kegemaran, amaran harga dan nota disegerakkan merentas semua peranti anda.';
+
+  @override
+  String syncLast(String time) {
+    return 'Kali terakhir disegerakkan $time';
+  }
+
+  @override
+  String get syncNow => 'Segerakkan sekarang';
+
+  @override
+  String get syncFailed =>
+      'Penyegerakan gagal. Ia akan cuba lagi secara automatik.';
 }

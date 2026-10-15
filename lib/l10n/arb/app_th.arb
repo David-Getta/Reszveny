@@ -471,5 +471,9 @@
   "portfolioImportHint": "วางรายการซื้อบรรทัดละหนึ่งรายการ: ชื่อย่อหุ้น, จำนวน, ราคา, สกุลเงิน, วันที่ (YYYY-MM-DD) คอลัมน์คั่นได้ด้วยจุลภาค อัฒภาค หรือแท็บ ส่วนแถวหัวตารางจะมีหรือไม่มีก็ได้",
   "portfolioImportButton": "นำเข้า",
   "portfolioImported": "{count, plural, other{เพิ่มรายการซื้อ {count} รายการแล้ว}}",
-  "portfolioImportSkipped": "{count, plural, other{ข้าม {count} บรรทัด}}"
+  "portfolioImportSkipped": "{count, plural, other{ข้าม {count} บรรทัด}}",
+  "syncInfo": "พอร์ตโฟลิโอ รายการโปรด การแจ้งเตือนราคา และบันทึกจะซิงค์ในทุกอุปกรณ์ของคุณ",
+  "syncLast": "ซิงค์ล่าสุด {time}",
+  "syncNow": "ซิงค์เลย",
+  "syncFailed": "ซิงค์ไม่สำเร็จ ระบบจะลองอีกครั้งโดยอัตโนมัติ"
 }

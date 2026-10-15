@@ -471,5 +471,9 @@
   "portfolioImportHint": "ວາງການຊື້ໜຶ່ງລາຍການຕໍ່ແຖວ: ສັນຍາລັກຮຸ້ນ, ຈຳນວນ, ລາຄາ, ສະກຸນເງິນ, ວັນທີ (YYYY-MM-DD). ຖັນສາມາດແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ (,), ຈຸດໂຄ່ງ (;) ຫຼື ແທັບ; ແຖວຫົວຂໍ້ບໍ່ບັງຄັບ.",
   "portfolioImportButton": "ນຳເຂົ້າ",
   "portfolioImported": "{count, plural, other{ເພີ່ມການຊື້ {count} ລາຍການແລ້ວ}}",
-  "portfolioImportSkipped": "{count, plural, other{ຂ້າມ {count} ແຖວແລ້ວ}}"
+  "portfolioImportSkipped": "{count, plural, other{ຂ້າມ {count} ແຖວແລ້ວ}}",
+  "syncInfo": "ພອດໂຟລິໂອ, ລາຍການທີ່ມັກ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກ ຈະຊິງຄ໌ໃນທຸກອຸປະກອນຂອງທ່ານ",
+  "syncLast": "ຊິງຄ໌ຫຼ້າສຸດ {time}",
+  "syncNow": "ຊິງຄ໌ດຽວນີ້",
+  "syncFailed": "ຊິງຄ໌ບໍ່ສຳເລັດ. ຈະລອງໃໝ່ອັດຕະໂນມັດ"
 }

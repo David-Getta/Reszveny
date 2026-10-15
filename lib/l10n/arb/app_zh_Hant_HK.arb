@@ -471,5 +471,9 @@
   "portfolioImportHint": "每行貼上一筆買入：股票代號、數量、價格、貨幣、日期（YYYY-MM-DD）。各欄可用逗號、分號或定位字元分隔；標題行可省略。",
   "portfolioImportButton": "匯入",
   "portfolioImported": "{count, plural, =1{已加入 1 筆買入} other{已加入 {count} 筆買入}}",
-  "portfolioImportSkipped": "{count, plural, =1{已略過 1 行} other{已略過 {count} 行}}"
+  "portfolioImportSkipped": "{count, plural, =1{已略過 1 行} other{已略過 {count} 行}}",
+  "syncInfo": "投資組合、收藏、價格提示及筆記會在你的所有裝置之間同步。",
+  "syncLast": "上次同步：{time}",
+  "syncNow": "立即同步",
+  "syncFailed": "同步失敗，系統會自動重試。"
 }

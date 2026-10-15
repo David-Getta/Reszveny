@@ -471,5 +471,9 @@
   "portfolioImportHint": "Lipește câte o cumpărare pe linie: ticker, cantitate, preț, monedă, dată (AAAA-LL-ZZ). Coloanele pot fi separate prin virgule, punct și virgulă sau taburi; rândul de antet este opțional.",
   "portfolioImportButton": "Importă",
   "portfolioImported": "{count, plural, one{A fost adăugată {count} cumpărare} few{Au fost adăugate {count} cumpărări} other{Au fost adăugate {count} de cumpărări}}",
-  "portfolioImportSkipped": "{count, plural, one{A fost omisă {count} linie} few{Au fost omise {count} linii} other{Au fost omise {count} de linii}}"
+  "portfolioImportSkipped": "{count, plural, one{A fost omisă {count} linie} few{Au fost omise {count} linii} other{Au fost omise {count} de linii}}",
+  "syncInfo": "Portofoliul, favoritele, alertele de preț și notițele sunt sincronizate pe toate dispozitivele tale.",
+  "syncLast": "Ultima sincronizare: {time}",
+  "syncNow": "Sincronizează acum",
+  "syncFailed": "Sincronizarea a eșuat. Se va reîncerca automat."
 }

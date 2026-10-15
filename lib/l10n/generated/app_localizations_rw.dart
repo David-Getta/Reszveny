@@ -1747,4 +1747,19 @@ class AppLocalizationsRw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Ishoramari, ibyo ukunda, imenyesha ry\'ibiciro n\'ibyo wanditse bihuzwa ku bikoresho byawe byose.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ihuza riheruka: $time';
+  }
+
+  @override
+  String get syncNow => 'Huza ubu';
+
+  @override
+  String get syncFailed => 'Guhuza byanze. Bizongera kugerageza ubwabyo.';
 }

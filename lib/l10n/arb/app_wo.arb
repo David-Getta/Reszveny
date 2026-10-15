@@ -471,5 +471,9 @@
   "portfolioImportHint": "Taqal benn jënd ci bépp rëdd: màndargay aksiyoŋ, lim, njëg, xeetu xaalis, bés (YYYY-MM-DD). Mën nañu xàjjale kolon yi ak wirgil, pwen-wirgil walla tab; rëddu bopp bi war-ul.",
   "portfolioImportButton": "Duggal",
   "portfolioImported": "{count, plural, =1{Yokk nañu 1 jënd} other{Yokk nañu {count} jënd}}",
-  "portfolioImportSkipped": "{count, plural, =1{Wacc nañu 1 rëdd} other{Wacc nañu {count} rëdd}}"
+  "portfolioImportSkipped": "{count, plural, =1{Wacc nañu 1 rëdd} other{Wacc nañu {count} rëdd}}",
+  "syncInfo": "Sa aksiyoŋ yi, yi nga gënal, artu njëg yi ak say notu ñoo yem ci say masin yépp.",
+  "syncLast": "Synchro mujj: {time}",
+  "syncNow": "Synchro léegi",
+  "syncFailed": "Synchro bi antuwul. Dina jéemaat boppam."
 }

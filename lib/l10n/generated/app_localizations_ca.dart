@@ -1748,4 +1748,20 @@ class AppLocalizationsCa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'La cartera, els favorits, les alertes de preu i les notes se sincronitzen a tots els teus dispositius.';
+
+  @override
+  String syncLast(String time) {
+    return 'Última sincronització: $time';
+  }
+
+  @override
+  String get syncNow => 'Sincronitza ara';
+
+  @override
+  String get syncFailed =>
+      'No s\'ha pogut sincronitzar. Es tornarà a provar automàticament.';
 }

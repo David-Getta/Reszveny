@@ -471,5 +471,9 @@
   "portfolioImportHint": "Hər sətirdə bir alış yapışdırın: tiker, miqdar, qiymət, valyuta, tarix (İİİİ-AA-GG). Sütunlar vergül, nöqtəli vergül və ya tabla ayrıla bilər; başlıq sətri məcburi deyil.",
   "portfolioImportButton": "İdxal et",
   "portfolioImported": "{count, plural, =1{1 alış əlavə olundu} other{{count} alış əlavə olundu}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 sətir ötürüldü} other{{count} sətir ötürüldü}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 sətir ötürüldü} other{{count} sətir ötürüldü}}",
+  "syncInfo": "Portfel, seçilmişlər, qiymət bildirişləri və qeydlər bütün cihazlarınızda sinxronlaşdırılır.",
+  "syncLast": "Son sinxronizasiya: {time}",
+  "syncNow": "İndi sinxronlaşdır",
+  "syncFailed": "Sinxronizasiya alınmadı. Avtomatik olaraq yenidən cəhd ediləcək."
 }

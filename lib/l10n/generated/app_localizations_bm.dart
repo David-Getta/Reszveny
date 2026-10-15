@@ -1737,4 +1737,19 @@ class AppLocalizationsBm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Aksiyɔn kɛsu, diyanyelenw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ kɛ kelen ye i ka minɛnw bɛɛ kan.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sync laban: $time';
+  }
+
+  @override
+  String get syncNow => 'Sync sisan';
+
+  @override
+  String get syncFailed => 'Sync ma se ka kɛ. A bɛ segin ka a kɛ a yɛrɛ ma.';
 }

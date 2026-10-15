@@ -1796,4 +1796,20 @@ class AppLocalizationsSl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfelj, priljubljene, cenovna opozorila in zapiski se sinhronizirajo v vseh vaših napravah.';
+
+  @override
+  String syncLast(String time) {
+    return 'Zadnja sinhronizacija: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinhroniziraj zdaj';
+
+  @override
+  String get syncFailed =>
+      'Sinhronizacija ni uspela. Samodejno se bo poskusila znova.';
 }

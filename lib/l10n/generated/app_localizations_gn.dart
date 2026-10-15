@@ -1746,4 +1746,19 @@ class AppLocalizationsGn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Cartera, ojeguerohoryvéva, tepy maranduʼi ha jehaipyre ojoja opa ne mbaʼeʼokápe.';
+
+  @override
+  String syncLast(String time) {
+    return 'Sincronización pahaguápe: $time';
+  }
+
+  @override
+  String get syncNow => 'Sincroniza koʼág̃a';
+
+  @override
+  String get syncFailed => 'Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva.';
 }

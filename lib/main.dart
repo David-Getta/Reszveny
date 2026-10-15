@@ -58,6 +58,8 @@ Future<void> main() async {
   AppLifecycleListener(onHide: telemetry.flush, onDetach: telemetry.flush);
   runApp(WhatStockApp(services: services));
   telemetry.track('app_open');
+  // Belépett fióknál a portfólió, a kedvencek, a riasztások és a jegyzetek szinkronja.
+  services.sync?.start();
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
   // Backend-módban a szerver szerinti csomag és keret átvétele.

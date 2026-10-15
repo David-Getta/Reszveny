@@ -1744,4 +1744,20 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'A portfólió, a kedvencek, az árfolyam-riasztások és a jegyzetek minden eszközödön ugyanazok.';
+
+  @override
+  String syncLast(String time) {
+    return 'Utolsó szinkron: $time';
+  }
+
+  @override
+  String get syncNow => 'Szinkron most';
+
+  @override
+  String get syncFailed =>
+      'A szinkron nem sikerült. Később automatikusan újrapróbálja.';
 }

@@ -1783,4 +1783,19 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'تتم مزامنة المحفظة والمفضلة وتنبيهات السعر والملاحظات على جميع أجهزتك.';
+
+  @override
+  String syncLast(String time) {
+    return 'آخر مزامنة $time';
+  }
+
+  @override
+  String get syncNow => 'مزامنة الآن';
+
+  @override
+  String get syncFailed => 'تعذّرت المزامنة. ستتم إعادة المحاولة تلقائيًا.';
 }

@@ -1740,4 +1740,20 @@ class AppLocalizationsSv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.';
+
+  @override
+  String syncLast(String time) {
+    return 'Senast synkroniserad $time';
+  }
+
+  @override
+  String get syncNow => 'Synkronisera nu';
+
+  @override
+  String get syncFailed =>
+      'Synkroniseringen misslyckades. Ett nytt försök görs automatiskt.';
 }

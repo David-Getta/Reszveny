@@ -1758,4 +1758,20 @@ class AppLocalizationsMk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфолиото, омилените, ценовните известувања и белешките се синхронизираат на сите ваши уреди.';
+
+  @override
+  String syncLast(String time) {
+    return 'Последна синхронизација: $time';
+  }
+
+  @override
+  String get syncNow => 'Синхронизирај сега';
+
+  @override
+  String get syncFailed =>
+      'Синхронизацијата не успеа. Автоматски ќе се обиде повторно.';
 }

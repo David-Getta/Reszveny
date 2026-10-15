@@ -1739,4 +1739,20 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'කළඹ, ප්‍රියතම, මිල ඇඟවීම් සහ සටහන් ඔබේ සියලු උපාංගවල සමමුහුර්ත වේ.';
+
+  @override
+  String syncLast(String time) {
+    return 'අවසන් සමමුහුර්තය: $time';
+  }
+
+  @override
+  String get syncNow => 'දැන් සමමුහුර්ත කරන්න';
+
+  @override
+  String get syncFailed =>
+      'සමමුහුර්ත කිරීම අසාර්ථක විය. එය ස්වයංක්‍රීයව නැවත උත්සාහ කරනු ඇත.';
 }

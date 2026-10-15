@@ -1740,4 +1740,20 @@ class AppLocalizationsBg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфейлът, любимите, ценовите известия и бележките се синхронизират на всичките ви устройства.';
+
+  @override
+  String syncLast(String time) {
+    return 'Последна синхронизация: $time';
+  }
+
+  @override
+  String get syncNow => 'Синхронизиране сега';
+
+  @override
+  String get syncFailed =>
+      'Синхронизирането не бе успешно. Ще бъде опитано отново автоматично.';
 }

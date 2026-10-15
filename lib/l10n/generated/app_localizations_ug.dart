@@ -1742,4 +1742,20 @@ class AppLocalizationsUg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'مەبلەغ بىرىكمىسى، يىغقۇچ، باھا ئاگاھلاندۇرۇشلىرى ۋە خاتىرىلەر بارلىق ئۈسكۈنىلىرىڭىزدە قەدەمداشلىنىدۇ.';
+
+  @override
+  String syncLast(String time) {
+    return 'ئاخىرقى قەدەمداشلاش: $time';
+  }
+
+  @override
+  String get syncNow => 'ھازىر قەدەمداشلا';
+
+  @override
+  String get syncFailed =>
+      'قەدەمداشلاش مەغلۇپ بولدى. ئاپتوماتىك قايتا سىنايدۇ.';
 }

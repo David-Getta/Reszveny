@@ -1750,4 +1750,20 @@ class AppLocalizationsQu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portafolio, munasqakuna, chanin willachiykuna, qillqasqakunapas llapan equipoykikunapi kaqllam.';
+
+  @override
+  String syncLast(String time) {
+    return 'Qhipa sincronización: $time';
+  }
+
+  @override
+  String get syncNow => 'Kunan sincronizay';
+
+  @override
+  String get syncFailed =>
+      'Mana sincronizayta atikurqanchu. Kikillanmanta yapamanta kallpachakunqa.';
 }

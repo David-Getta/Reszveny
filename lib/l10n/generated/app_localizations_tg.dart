@@ -1741,4 +1741,20 @@ class AppLocalizationsTg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфел, интихобшудаҳо, огоҳиҳои нарх ва қайдҳо дар ҳамаи дастгоҳҳои шумо ҳамоҳанг карда мешаванд.';
+
+  @override
+  String syncLast(String time) {
+    return 'Ҳамоҳангсозии охирин: $time';
+  }
+
+  @override
+  String get syncNow => 'Ҳозир ҳамоҳанг кардан';
+
+  @override
+  String get syncFailed =>
+      'Ҳамоҳангсозӣ иҷро нашуд. Ба таври худкор дубора кӯшиш карда мешавад.';
 }

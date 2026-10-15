@@ -471,5 +471,9 @@
   "portfolioImportHint": "Klistra in ett köp per rad: ticker, antal, pris, valuta, datum (ÅÅÅÅ-MM-DD). Kolumnerna kan avgränsas med komma, semikolon eller tabb; rubrikraden är valfri.",
   "portfolioImportButton": "Importera",
   "portfolioImported": "{count, plural, =1{1 köp har lagts till} other{{count} köp har lagts till}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 rad hoppades över} other{{count} rader hoppades över}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 rad hoppades över} other{{count} rader hoppades över}}",
+  "syncInfo": "Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.",
+  "syncLast": "Senast synkroniserad {time}",
+  "syncNow": "Synkronisera nu",
+  "syncFailed": "Synkroniseringen misslyckades. Ett nytt försök görs automatiskt."
 }

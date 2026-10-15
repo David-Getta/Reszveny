@@ -1740,4 +1740,20 @@ class AppLocalizationsAz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portfel, seçilmişlər, qiymət bildirişləri və qeydlər bütün cihazlarınızda sinxronlaşdırılır.';
+
+  @override
+  String syncLast(String time) {
+    return 'Son sinxronizasiya: $time';
+  }
+
+  @override
+  String get syncNow => 'İndi sinxronlaşdır';
+
+  @override
+  String get syncFailed =>
+      'Sinxronizasiya alınmadı. Avtomatik olaraq yenidən cəhd ediləcək.';
 }

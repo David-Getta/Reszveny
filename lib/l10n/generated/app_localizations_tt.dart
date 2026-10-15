@@ -1736,4 +1736,20 @@ class AppLocalizationsTt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Портфель, сайланмалар, бәя искәртүләре һәм язмалар бөтен җайланмаларыгызда синхронлаштырыла.';
+
+  @override
+  String syncLast(String time) {
+    return 'Соңгы синхронлаштыру: $time';
+  }
+
+  @override
+  String get syncNow => 'Хәзер синхронлаштыру';
+
+  @override
+  String get syncFailed =>
+      'Синхронлаштырып булмады. Автомат рәвештә кабат омтылыш ясалачак.';
 }

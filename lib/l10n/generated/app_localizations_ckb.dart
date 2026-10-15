@@ -1740,4 +1740,20 @@ class AppLocalizationsCkb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'پۆرتفۆلیۆ، دڵخوازەکان، ئاگادارکەرەوەکانی نرخ و تێبینییەکان لەسەر هەموو ئامێرەکانت هاوکات دەکرێن.';
+
+  @override
+  String syncLast(String time) {
+    return 'دوایین هاوکاتکردن: $time';
+  }
+
+  @override
+  String get syncNow => 'ئێستا هاوکات بکە';
+
+  @override
+  String get syncFailed =>
+      'هاوکاتکردن سەرکەوتوو نەبوو. بە شێوەی خۆکار دووبارە هەوڵ دەدرێتەوە.';
 }

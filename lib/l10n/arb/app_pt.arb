@@ -471,5 +471,9 @@
   "portfolioImportHint": "Cole uma compra por linha: ticker, quantidade, preço, moeda, data (AAAA-MM-DD). As colunas podem ser separadas por vírgulas, ponto e vírgula ou tabulações; a linha de cabeçalho é opcional.",
   "portfolioImportButton": "Importar",
   "portfolioImported": "{count, plural, =1{1 compra adicionada} other{{count} compras adicionadas}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 linha ignorada} other{{count} linhas ignoradas}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 linha ignorada} other{{count} linhas ignoradas}}",
+  "syncInfo": "A carteira, os favoritos, os alertas de preço e as notas são sincronizados em todos os seus dispositivos.",
+  "syncLast": "Última sincronização: {time}",
+  "syncNow": "Sincronizar agora",
+  "syncFailed": "Falha na sincronização. Uma nova tentativa será feita automaticamente."
 }

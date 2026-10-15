@@ -122,6 +122,13 @@ vásárolni tud). Állítható: `TRIAL_PER_IP_DAY` (0 = nincs korlát). Túl ala
 mobilszolgáltatók sok felhasználót egy közös címen engednek ki. A címet csak hash-elve, két napig
 tároljuk.
 
+## Szinkron
+
+E-mailes belépés után az app a portfóliót, a kedvenceket, a riasztásokat és a jegyzeteket a
+szerveren tárolt fiókcsomaggal szinkronizálja (`GET`/`PUT /v1/sync`, legfeljebb 512 KB). Csak
+e-mailes fiók írhat; a fiók törlésekor ez is törlődik. Az adatkezelési tájékoztatóba ezt is bele
+kell írni (portfólió és jegyzetek a szerveren, ha a felhasználó belép).
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes

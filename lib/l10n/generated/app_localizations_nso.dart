@@ -1751,4 +1751,20 @@ class AppLocalizationsNso extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Photefolio, tše di ratwago, ditemošo tša theko le dintlha di sinkronaišwa didirišweng tša gago ka moka.';
+
+  @override
+  String syncLast(String time) {
+    return 'Go sinkronaiša ga mafelelo: $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkronaiša bjale';
+
+  @override
+  String get syncFailed =>
+      'Go sinkronaiša go paletšwe. Go tla lekwa gape ka go itiriša.';
 }

@@ -1747,4 +1747,20 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Το χαρτοφυλάκιο, τα αγαπημένα, οι ειδοποιήσεις τιμής και οι σημειώσεις συγχρονίζονται σε όλες τις συσκευές σας.';
+
+  @override
+  String syncLast(String time) {
+    return 'Τελευταίος συγχρονισμός: $time';
+  }
+
+  @override
+  String get syncNow => 'Συγχρονισμός τώρα';
+
+  @override
+  String get syncFailed =>
+      'Ο συγχρονισμός απέτυχε. Θα γίνει αυτόματα νέα προσπάθεια.';
 }

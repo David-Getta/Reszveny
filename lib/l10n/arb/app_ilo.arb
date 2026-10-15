@@ -471,5 +471,9 @@
   "portfolioImportHint": "I-paste ti maysa a gatang iti tunggal linia: simbolo ti ticker, bilang, presio, currency, petsa (YYYY-MM-DD). Mabalin a mapagsisina dagiti kolum babaen ti comma, semicolon wenno tab; opsional ti linia ti header.",
   "portfolioImportButton": "I-import",
   "portfolioImported": "{count, plural, =1{Nainayon ti 1 a gatang} other{Nainayon ti {count} a gatang}}",
-  "portfolioImportSkipped": "{count, plural, =1{Nalaktawan ti 1 a linia} other{Nalaktawan ti {count} a linia}}"
+  "portfolioImportSkipped": "{count, plural, =1{Nalaktawan ti 1 a linia} other{Nalaktawan ti {count} a linia}}",
+  "syncInfo": "Ti portfolio, dagiti paborito, dagiti alerto ti presio ken dagiti nota ket mai-sync iti amin a devicem.",
+  "syncLast": "Naudi a na-sync {time}",
+  "syncNow": "I-sync itan",
+  "syncFailed": "Saan a nagballigi ti pag-sync. Automatiko a padasenna manen."
 }

@@ -1740,4 +1740,20 @@ class AppLocalizationsJv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get syncInfo =>
+      'Portofolio, favorit, pèngetan rega, lan cathetan disinkronaké ing kabèh piranti sampeyan.';
+
+  @override
+  String syncLast(String time) {
+    return 'Pungkasan disinkronaké $time';
+  }
+
+  @override
+  String get syncNow => 'Sinkronaké saiki';
+
+  @override
+  String get syncFailed =>
+      'Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis.';
 }

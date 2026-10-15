@@ -471,5 +471,9 @@
   "portfolioImportHint": "Sarara tokkotti bittaa tokko maxxansi: mallattoo aksiyoonaa, baay'ina, gatii, maallaqa, guyyaa (YYYY-MM-DD). Utubaawwan qoodduu, qoodduu-tuqaa ykn tab'n addaan baafamuu danda'u; sararri mataduree dirqama miti.",
   "portfolioImportButton": "Galchi",
   "portfolioImported": "{count, plural, =1{Bittaan 1 dabalameera} other{Bittaawwan {count} dabalamaniiru}}",
-  "portfolioImportSkipped": "{count, plural, =1{Sararri 1 darbameera} other{Sararoonni {count} darbamaniiru}}"
+  "portfolioImportSkipped": "{count, plural, =1{Sararri 1 darbameera} other{Sararoonni {count} darbamaniiru}}",
+  "syncInfo": "Poortfooliyoon, filatamoon, akeekkachiisni gatii fi yaadannoon meeshaalee kee hunda irratti walsimsiifamu.",
+  "syncLast": "Walsimsiisa dhumaa: {time}",
+  "syncNow": "Amma walsimsiisi",
+  "syncFailed": "Walsimsiisuun hin milkoofne. Ofumaan irra deebi'ee yaala."
 }

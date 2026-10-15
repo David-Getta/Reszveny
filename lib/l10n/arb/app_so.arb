@@ -471,5 +471,9 @@
   "portfolioImportHint": "Ku dheji hal iibsasho saf kasta: astaanta saamiga, tirada, qiimaha, lacagta, taariikhda (YYYY-MM-DD). Tiirarka waxaa lagu kala saari karaa hakad, hakad-joog ama tab; safka cinwaanku waa ikhtiyaari.",
   "portfolioImportButton": "Soo deji",
   "portfolioImported": "{count, plural, =1{1 iibsasho ayaa lagu daray} other{{count} iibsasho ayaa lagu daray}}",
-  "portfolioImportSkipped": "{count, plural, =1{1 saf ayaa laga booday} other{{count} saf ayaa laga booday}}"
+  "portfolioImportSkipped": "{count, plural, =1{1 saf ayaa laga booday} other{{count} saf ayaa laga booday}}",
+  "syncInfo": "Portfoliyada, kuwa la jecel yahay, digniinaha qiimaha iyo qoraallada waxaa lagu waafajiyaa dhammaan qalabkaaga.",
+  "syncLast": "Waafajintii u dambeysay: {time}",
+  "syncNow": "Hadda waafaji",
+  "syncFailed": "Waafajintu way fashilantay. Si toos ah ayay dib isugu dayi doontaa."
 }
