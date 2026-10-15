@@ -1,0 +1,34 @@
+Fotografiere eine Aktie und erfahre alles über sie.
+
+Ein Firmenlogo am Schaufenster, ein Screenshot deiner Broker-App, die Kurstabelle einer Zeitung oder eine alte Aktienurkunde: WhatStock erkennt die Aktie und zeigt in Sekunden Kurs, Chart und wichtige Kennzahlen. Danach erklärt eine unabhängige KI-Analyse sie so, wie es ein guter Finanzjournalist tun würde – verständlich und in deiner Sprache.
+
+WAS DIE ANALYSE ABDECKT
+• Was das Unternehmen macht und was die Aktie wirklich bewegt
+• Bewertung im Vergleich zur eigenen Historie und zu Wettbewerbern
+• Risiken, aktuelle Nachrichten und der nächste Termin für Quartalszahlen
+• Drei Szenarien – Bull, Basis und Bear – und wie wahrscheinlich jedes davon wirkt
+• Das stärkste Gegenargument, damit du beide Seiten siehst
+• Quellen für die verwendeten Fakten
+Du wählst die Tiefe (kurz, standard oder ausführlich) und das Niveau (Einsteiger oder erfahren). Danach kannst du Rückfragen zur Analyse stellen.
+
+IM BLICK BEHALTEN
+• Favoriten und letzte Suchen, mit den Analysen auf deinem Gerät gespeichert
+• Was sich seit der letzten Analyse geändert hat – auf einen Blick
+• Bis zu drei Aktien nebeneinander vergleichen
+• Portfolio: Käufe, Gewinne, Dividenden, Wertentwicklung, Währungsumrechnung sowie CSV-Import und -Export
+• KI-Portfoliocheck: Konzentration, Sektor- und Währungsrisiko, gemeinsame Risiken
+• Kursalarme – auch per E-Mail, wenn die App geschlossen ist
+• Anstehende Termine für Quartalszahlen deiner Aktien und eine wöchentliche Zusammenfassung per E-Mail
+• Eigene Notizen zu jeder Aktie
+• Melde dich mit deiner E-Mail an, damit alles auf all deinen Geräten synchron bleibt
+
+AUF DEINEM COMPUTER
+Auf Mac und Windows sitzt WhatStock in der Menüleiste bzw. im Infobereich: Drück das Tastenkürzel von überall, gib einen Ticker ein oder füge einen Screenshot ein – und die Analyse öffnet sich.
+
+120 SPRACHEN
+Die App und die Analysen gibt es in 120 Sprachen.
+
+AUSPROBIEREN
+Die ersten Analysen sind kostenlos. Danach geht es mit einem Abo oder einem Analysepaket weiter.
+
+WhatStock bietet Informationen, keine Anlageberatung. Die App kennt deine Situation, deine Ziele und deine steuerliche Lage nicht, deshalb beschreibt sie Vor- und Nachteile und Szenarien, statt dir zu sagen, was du kaufen oder verkaufen sollst. Marktdaten können verzögert sein.

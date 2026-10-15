@@ -1,0 +1,34 @@
+Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.
+
+Logo công ty trên mặt tiền cửa hàng, ảnh chụp màn hình ứng dụng môi giới của bạn, bảng giá chứng khoán trên báo hay một giấy chứng nhận cổ phần cũ: WhatStock nhận diện cổ phiếu và hiển thị giá, biểu đồ cùng các chỉ số chính chỉ trong vài giây. Sau đó, một bản phân tích AI độc lập sẽ giải thích như một nhà báo tài chính giỏi – dễ hiểu và bằng ngôn ngữ của bạn.
+
+PHÂN TÍCH BAO GỒM NHỮNG GÌ
+• Công ty làm gì và điều gì thực sự tác động đến cổ phiếu
+• Định giá so với lịch sử của chính nó và các công ty cùng ngành
+• Rủi ro, tin tức mới nhất và ngày công bố kết quả kinh doanh tiếp theo
+• Ba kịch bản – lạc quan, cơ sở và bi quan – kèm khả năng xảy ra của từng kịch bản
+• Lập luận phản biện mạnh nhất, để bạn thấy cả hai mặt
+• Nguồn của các dữ kiện được sử dụng
+Bạn chọn độ sâu (ngắn gọn, tiêu chuẩn hoặc chuyên sâu) và trình độ (mới bắt đầu hoặc có kinh nghiệm). Sau đó, bạn có thể đặt thêm câu hỏi về bản phân tích.
+
+THEO DÕI DỄ DÀNG
+• Yêu thích và tìm kiếm gần đây, các bản phân tích được lưu trên thiết bị của bạn
+• Những gì đã thay đổi kể từ lần phân tích trước, chỉ trong nháy mắt
+• So sánh tối đa ba cổ phiếu cạnh nhau
+• Danh mục: giao dịch mua, lãi lỗ, cổ tức, giá trị theo thời gian, quy đổi tiền tệ, nhập và xuất CSV
+• Đánh giá danh mục bằng AI: mức độ tập trung, tỷ trọng theo ngành và tiền tệ, rủi ro chung
+• Cảnh báo giá – cả qua email khi ứng dụng đã đóng
+• Ngày công bố kết quả sắp tới của các cổ phiếu của bạn, và bản tóm tắt hằng tuần qua email
+• Ghi chú riêng cho từng cổ phiếu
+• Đăng nhập bằng email để đồng bộ mọi thứ trên tất cả thiết bị của bạn
+
+TRÊN MÁY TÍNH
+Trên Mac và Windows, WhatStock nằm trên thanh menu hoặc khay hệ thống: nhấn phím tắt từ bất kỳ đâu, nhập mã cổ phiếu hoặc dán ảnh chụp màn hình, và bản phân tích sẽ mở ra.
+
+120 NGÔN NGỮ
+Ứng dụng và các bản phân tích có sẵn bằng 120 ngôn ngữ.
+
+DÙNG THỬ
+Những bản phân tích đầu tiên được miễn phí. Sau đó, bạn có thể tiếp tục với gói đăng ký hoặc gói phân tích.
+
+WhatStock cung cấp thông tin, không phải lời khuyên đầu tư. Ứng dụng không biết hoàn cảnh, mục tiêu hay tình hình thuế của bạn, vì vậy nó mô tả ưu nhược điểm và các kịch bản thay vì bảo bạn nên mua hay bán gì. Dữ liệu thị trường có thể bị chậm.

@@ -205,7 +205,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5y | AI-portfólióelemzés: az egész portfólió (koncentráció, szektor-, ország- és devizakitettség, közös kockázatok, osztalék, megfontolandó szempontok) egy rövid elemzésnyi keretért; a legutóbbi a készüléken marad | ✅ kész |
 | 5z | Heti összefoglaló e-mailben (bekapcsolható): hétfő reggel a portfólió és a kedvencek heti mozgása, és a következő két hét gyorsjelentései | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
-| 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | ⬜ |
+| 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 
 **Nem kód, a tulajdonos intézi:** vállalkozási forma és adószám, könyvelő; Apple Developer (99 USD/év),
 Google Play Console (25 USD), Stripe, Anthropic Console (költéskorláttal), Resend, domain; piaci adat

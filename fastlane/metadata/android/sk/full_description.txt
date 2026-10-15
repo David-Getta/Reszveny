@@ -1,0 +1,34 @@
+Odfoťte akciu a zistite o nej všetko.
+
+Logo firmy na výklade, snímka obrazovky z vašej brokerskej aplikácie, kurzový lístok v novinách alebo starý akciový certifikát: WhatStock rozpozná akciu a za pár sekúnd ukáže jej cenu, graf a kľúčové ukazovatele. Potom ju nezávislá AI analýza vysvetlí tak, ako by to urobil dobrý finančný novinár – zrozumiteľne a vo vašom jazyku.
+
+ČO ANALÝZA POKRÝVA
+• Čím sa firma zaoberá a čo skutočne hýbe akciou
+• Ocenenie v porovnaní s vlastnou históriou a konkurenciou
+• Riziká, aktuálne správy a dátum najbližších výsledkov
+• Tri scenáre – optimistický, základný a pesimistický – s odhadom pravdepodobnosti každého
+• Najsilnejší protiargument, aby ste videli obe strany
+• Zdroje použitých faktov
+Hĺbku (stručná, štandardná alebo podrobná) aj úroveň (začiatočník alebo skúsený) si vyberáte sami. Potom sa môžete na analýzu doplňujúco pýtať.
+
+MAJTE PREHĽAD
+• Obľúbené a nedávne vyhľadávania, analýzy uložené vo vašom zariadení
+• Čo sa zmenilo od poslednej analýzy, na prvý pohľad
+• Porovnanie až troch akcií vedľa seba
+• Portfólio: nákupy, zisky, dividendy, vývoj hodnoty, prepočet mien a import a export CSV
+• AI kontrola portfólia: koncentrácia, expozícia voči sektorom a menám, spoločné riziká
+• Cenové upozornenia – aj e-mailom, keď je aplikácia zatvorená
+• Nadchádzajúce termíny výsledkov vašich akcií a týždenný súhrn e-mailom
+• Vlastné poznámky ku každej akcii
+• Prihláste sa e-mailom a všetko sa synchronizuje na všetkých vašich zariadeniach
+
+NA POČÍTAČI
+Na Macu a vo Windows sídli WhatStock v paneli ponúk alebo v systémovej lište: odkiaľkoľvek stlačte skratku, zadajte ticker alebo vložte snímku obrazovky a analýza sa otvorí.
+
+120 JAZYKOV
+Aplikácia aj analýzy sú dostupné v 120 jazykoch.
+
+VYSKÚŠAJTE
+Prvé analýzy sú zadarmo. Potom môžete pokračovať s predplatným alebo balíkom analýz.
+
+WhatStock poskytuje informácie, nie investičné poradenstvo. Nepozná vašu situáciu, ciele ani daňové postavenie, preto namiesto toho, aby vám radil, čo kúpiť alebo predať, opisuje výhody, nevýhody a scenáre. Trhové údaje môžu byť oneskorené.

@@ -1,0 +1,34 @@
+Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.
+
+Logo ng kumpanya sa harap ng tindahan, screenshot ng iyong brokerage app, stock table sa diyaryo o lumang stock certificate: kinikilala ng WhatStock ang stock at ipinapakita ang presyo, chart at mahahalagang numero nito sa loob ng ilang segundo. Pagkatapos, ipinapaliwanag ito ng isang independiyenteng pagsusuri ng AI gaya ng gagawin ng isang mahusay na financial journalist: sa simpleng pananalita at sa iyong wika.
+
+ANG SAKLAW NG PAGSUSURI
+• Ano ang ginagawa ng kumpanya at ano talaga ang nagpapagalaw sa stock
+• Valuation kumpara sa sarili nitong kasaysayan at sa mga kakumpitensya
+• Mga panganib, pinakabagong balita at ang petsa ng susunod na resulta
+• Tatlong senaryo – optimista, batayan at pesimista – at kung gaano kalamang ang bawat isa
+• Ang pinakamatibay na kontra-argumento, para makita mo ang dalawang panig
+• Mga sanggunian para sa mga datos na ginagamit nito
+Ikaw ang pipili ng lalim (maikli, karaniwan o malalim) at antas (baguhan o may karanasan). Pagkatapos, puwede kang magtanong pa tungkol sa pagsusuri.
+
+SUBAYBAYAN
+• Mga Paborito at kamakailang paghahanap, naka-save sa iyong device ang mga pagsusuri
+• Ano ang nagbago mula sa huling pagsusuri, sa isang tingin
+• Paghambingin ang hanggang tatlong stock nang magkatabi
+• Portfolio: mga binili, kita, dividend, halaga sa paglipas ng panahon, pagpapalit ng pera at CSV import at export
+• Pagsusuri ng portfolio gamit ang AI: konsentrasyon, exposure sa sektor at currency, magkakaparehong panganib
+• Mga alerto sa presyo – pati sa e-mail kahit sarado ang app
+• Mga paparating na petsa ng resulta ng iyong mga stock, at lingguhang buod sa e-mail
+• Sarili mong mga tala sa bawat stock
+• Mag-sign in gamit ang iyong e-mail para naka-sync ang lahat sa lahat ng iyong device
+
+SA IYONG COMPUTER
+Sa Mac at Windows, nasa menu bar o system tray ang WhatStock: pindutin ang shortcut kahit saan, mag-type ng ticker o mag-paste ng screenshot, at bubukas ang pagsusuri.
+
+120 WIKA
+Available ang app at ang mga pagsusuri sa 120 wika.
+
+SUBUKAN ITO
+Libre ang mga unang pagsusuri. Pagkatapos nito, puwede kang magpatuloy gamit ang subscription o analysis pack.
+
+Nagbibigay ang WhatStock ng impormasyon, hindi payo sa pamumuhunan. Hindi nito alam ang iyong sitwasyon, mga layunin o kalagayan sa buwis, kaya inilalarawan nito ang mga kalamangan at kahinaan at mga senaryo sa halip na sabihin sa iyo kung ano ang bibilhin o ibebenta. Maaaring naantala ang market data.

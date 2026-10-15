@@ -1,0 +1,34 @@
+Photograph a stock and learn everything about it.
+
+A company logo on a shop front, a screenshot of your brokerage app, a newspaper's stock table or an old share certificate: WhatStock recognises the stock and shows its price, chart and key figures in seconds. Then an independent AI analysis explains it the way a good financial journalist would, in plain language and in your language.
+
+WHAT THE ANALYSIS COVERS
+• What the company does and what really moves the stock
+• Valuation compared with its own history and its peers
+• Risks, recent news and the next results date
+• Three scenarios – bull, base and bear – with how likely each one looks
+• The strongest counter-argument, so you see both sides
+• Sources for the facts it uses
+You choose the depth (brief, standard or deep) and the level (beginner or experienced). Afterwards you can ask follow-up questions about the analysis.
+
+KEEP TRACK
+• Favorites and recent searches, with the analyses saved on your device
+• What changed since the last analysis, at a glance
+• Compare up to three stocks side by side
+• Portfolio: purchases, gains, dividends, value over time, currency conversion and CSV import and export
+• AI portfolio review: concentration, sector and currency exposure, shared risks
+• Price alerts – also by e-mail when the app is closed
+• Upcoming results dates for your stocks, and a weekly summary by e-mail
+• Your own notes on each stock
+• Sign in with your e-mail to keep everything in sync on all your devices
+
+ON YOUR COMPUTER
+On Mac and Windows, WhatStock lives in the menu bar or system tray: press the shortcut from anywhere, type a ticker or paste a screenshot, and the analysis opens.
+
+120 LANGUAGES
+The app and the analyses are available in 120 languages.
+
+TRY IT
+The first analyses are free. After that, a subscription or an analysis pack keeps it going.
+
+WhatStock gives information, not investment advice. It does not know your situation, goals or tax position, so it describes trade-offs and scenarios rather than telling you what to buy or sell. Market data may be delayed.

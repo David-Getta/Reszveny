@@ -1,0 +1,34 @@
+Fotózz le egy részvényt, és tudj meg róla mindent.
+
+Egy céglogó a kirakaton, egy képernyőfotó a bróker-appodból, egy újság árfolyamtáblája vagy egy régi részvényokirat: a WhatStock felismeri a részvényt, és másodpercek alatt megmutatja az árfolyamát, a grafikonját és a fő mutatóit. Utána egy független AI-elemzés úgy magyarázza el, ahogy egy jó gazdasági újságíró tenné: közérthetően, a te nyelveden.
+
+MIT VIZSGÁL AZ ELEMZÉS
+• Mivel foglalkozik a cég, és mi mozgatja valójában a részvényt
+• Az értékeltség a saját múltjához és a versenytársakhoz képest
+• A kockázatok, a friss hírek és a következő gyorsjelentés dátuma
+• Három forgatókönyv – optimista, alap és pesszimista – azzal, melyik mennyire valószínű
+• A legerősebb ellenérv, hogy mindkét oldalt lásd
+• A felhasznált tények forrásai
+Te választod meg a mélységet (rövid, normál vagy alapos) és a szintet (kezdő vagy tapasztalt). Utána kérdezhetsz is az elemzésről.
+
+KÖVESD NYOMON
+• Kedvencek és legutóbbi keresések, az elemzések a készülékeden mentve
+• Egy pillantásra, mi változott az előző elemzés óta
+• Akár három részvény összehasonlítása egymás mellett
+• Portfólió: vételek, hozam, osztalék, értékalakulás, átváltás és CSV-import és -export
+• AI-portfólióelemzés: koncentráció, szektor- és devizakitettség, közös kockázatok
+• Árfolyam-riasztások – csukott appnál e-mailben is
+• A részvényeid következő gyorsjelentései, és heti összefoglaló e-mailben
+• Saját jegyzetek minden részvényhez
+• Lépj be az e-mail-címeddel, és minden eszközödön ugyanaz lesz minden
+
+A SZÁMÍTÓGÉPEDEN
+Macen és Windowson a WhatStock a menüsorban vagy a tálcán vár: nyomd meg a gyorsbillentyűt bárhol, írj be egy tickert vagy illessz be egy képernyőfotót, és megnyílik az elemzés.
+
+120 NYELV
+Az app és az elemzések 120 nyelven érhetők el.
+
+PRÓBÁLD KI
+Az első elemzések ingyenesek. Utána előfizetéssel vagy elemzéscsomaggal folytathatod.
+
+A WhatStock tájékoztat, nem ad befektetési tanácsot. Nem ismeri a helyzetedet, a céljaidat és az adózásodat, ezért mérlegelési szempontokat és forgatókönyveket mutat ahelyett, hogy megmondaná, mit vegyél vagy adj el. A piaci adatok késhetnek.

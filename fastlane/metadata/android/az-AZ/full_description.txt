@@ -1,0 +1,34 @@
+Səhmin şəklini çəkin və onun haqqında hər şeyi öyrənin.
+
+Mağaza vitrinindəki şirkət loqosu, broker tətbiqinizin ekran görüntüsü, qəzetdəki səhm cədvəli və ya köhnə səhm sertifikatı: WhatStock səhmi tanıyır və saniyələr ərzində onun qiymətini, qrafikini və əsas göstəricilərini göstərir. Sonra müstəqil AI təhlili onu yaxşı maliyyə jurnalistinin edəcəyi kimi izah edir – sadə dildə və sizin dilinizdə.
+
+TƏHLİL NƏLƏRİ ƏHATƏ EDİR
+• Şirkət nə ilə məşğul olur və səhmi əslində nə hərəkətə gətirir
+• Öz tarixi və rəqibləri ilə müqayisədə dəyərləndirmə
+• Risklər, son xəbərlər və növbəti hesabat tarixi
+• Üç ssenari – optimist, əsas və pessimist – hər birinin nə qədər ehtimal olunduğu ilə
+• Ən güclü əks-arqument ki, hər iki tərəfi görəsiniz
+• İstifadə olunan faktların mənbələri
+Dərinliyi (qısa, standart və ya ətraflı) və səviyyəni (başlanğıc və ya təcrübəli) siz seçirsiniz. Sonra təhlil barədə əlavə suallar verə bilərsiniz.
+
+İZLƏYİN
+• Seçilmişlər və son axtarışlar, təhlillər cihazınızda saxlanılır
+• Son təhlildən bəri nəyin dəyişdiyi – bir baxışda
+• Üç səhmə qədər yan-yana müqayisə
+• Portfel: alışlar, gəlir, dividendlər, dəyərin zamanla dəyişməsi, valyuta çevirmə, CSV idxalı və ixracı
+• AI portfel təhlili: konsentrasiya, sektor və valyuta asılılığı, ortaq risklər
+• Qiymət bildirişləri – tətbiq bağlı olanda e-poçtla da
+• Səhmləriniz üçün qarşıdakı hesabat tarixləri və həftəlik e-poçt xülasəsi
+• Hər səhm üzrə öz qeydləriniz
+• Hər şeyi bütün cihazlarınızda sinxron saxlamaq üçün e-poçtunuzla daxil olun
+
+KOMPÜTERİNİZDƏ
+Mac və Windows-da WhatStock menyu panelində və ya sistem tepsisində yerləşir: istənilən yerdən qısayolu basın, tikeri yazın və ya ekran görüntüsünü yapışdırın – təhlil açılır.
+
+120 DİL
+Tətbiq və təhlillər 120 dildə mövcuddur.
+
+SINAYIN
+İlk təhlillər pulsuzdur. Sonra abunəlik və ya təhlil paketi ilə davam edə bilərsiniz.
+
+WhatStock məlumat verir, investisiya məsləhəti vermir. O, vəziyyətinizi, məqsədlərinizi və vergi vəziyyətinizi bilmir, ona görə də nə almalı və ya satmalı olduğunuzu demək əvəzinə üstünlükləri, çatışmazlıqları və ssenariləri təsvir edir. Bazar məlumatları gecikə bilər.

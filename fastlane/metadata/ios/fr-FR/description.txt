@@ -1,0 +1,34 @@
+Photographiez une action et apprenez tout sur elle.
+
+Le logo d'une entreprise sur une devanture, une capture d'écran de votre application de courtage, le tableau des cours d'un journal ou un ancien titre d'action : WhatStock reconnaît l'action et affiche en quelques secondes son cours, son graphique et ses chiffres clés. Puis une analyse IA indépendante vous l'explique comme le ferait un bon journaliste financier : simplement et dans votre langue.
+
+CE QUE COUVRE L'ANALYSE
+• Ce que fait l'entreprise et ce qui fait vraiment bouger l'action
+• La valorisation par rapport à son propre historique et à ses concurrents
+• Les risques, l'actualité récente et la date des prochains résultats
+• Trois scénarios – haussier, central et baissier – avec la probabilité de chacun
+• Le contre-argument le plus solide, pour voir les deux côtés
+• Les sources des faits utilisés
+Vous choisissez la profondeur (brève, standard ou approfondie) et le niveau (débutant ou expérimenté). Vous pouvez ensuite poser des questions de suivi sur l'analyse.
+
+SUIVEZ VOS ACTIONS
+• Favoris et recherches récentes, avec les analyses enregistrées sur votre appareil
+• Ce qui a changé depuis la dernière analyse, en un coup d'œil
+• Comparez jusqu'à trois actions côte à côte
+• Portefeuille : achats, plus-values, dividendes, évolution de la valeur, conversion de devises et import/export CSV
+• Revue du portefeuille par IA : concentration, exposition sectorielle et aux devises, risques communs
+• Alertes de cours – aussi par e-mail quand l'application est fermée
+• Prochaines dates de résultats de vos actions et un récapitulatif hebdomadaire par e-mail
+• Vos propres notes sur chaque action
+• Connectez-vous avec votre e-mail pour tout synchroniser sur tous vos appareils
+
+SUR VOTRE ORDINATEUR
+Sur Mac et Windows, WhatStock se loge dans la barre des menus ou la zone de notification : appuyez sur le raccourci où que vous soyez, saisissez un ticker ou collez une capture d'écran, et l'analyse s'ouvre.
+
+120 LANGUES
+L'application et les analyses sont disponibles en 120 langues.
+
+ESSAYEZ
+Les premières analyses sont gratuites. Ensuite, un abonnement ou un pack d'analyses prend le relais.
+
+WhatStock fournit des informations, pas des conseils en investissement. L'application ne connaît ni votre situation, ni vos objectifs, ni votre fiscalité : elle décrit donc des avantages, des inconvénients et des scénarios plutôt que de vous dire quoi acheter ou vendre. Les données de marché peuvent être différées.

@@ -1,0 +1,1 @@
+investimentos,carteira,dividendos,bolsa,B3,mercado,alerta de preço,ticker,cotação,balanço

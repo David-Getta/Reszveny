@@ -1,0 +1,34 @@
+Aksiyani suratga oling va u haqida hamma narsani bilib oling.
+
+Doʻkon peshtoqidagi kompaniya logotipi, broker ilovangizdan skrinshot, gazetadagi aksiyalar jadvali yoki eski aksiya sertifikati: WhatStock aksiyani taniydi va bir necha soniyada uning narxi, grafigi va asosiy koʻrsatkichlarini koʻrsatadi. Soʻng mustaqil AI tahlili uni yaxshi moliyaviy jurnalist kabi tushuntirib beradi – sodda tilda va oʻz tilingizda.
+
+TAHLIL NIMALARNI QAMRAYDI
+• Kompaniya nima bilan shugʻullanadi va aksiyani aslida nima harakatlantiradi
+• Oʻz tarixi va raqobatchilarga nisbatan baholash
+• Xatarlar, soʻnggi yangiliklar va keyingi hisobot sanasi
+• Uchta ssenariy – optimistik, asosiy va pessimistik – har birining ehtimoli bilan
+• Eng kuchli qarshi dalil, ikkala tomonni ham koʻrishingiz uchun
+• Foydalanilgan faktlar manbalari
+Chuqurlikni (qisqa, standart yoki batafsil) va darajani (boshlovchi yoki tajribali) oʻzingiz tanlaysiz. Keyin tahlil boʻyicha qoʻshimcha savollar berishingiz mumkin.
+
+NAZORATDA TUTING
+• Sevimlilar va soʻnggi qidiruvlar, tahlillar qurilmangizda saqlanadi
+• Oxirgi tahlildan beri nima oʻzgargani – bir qarashda
+• Uchtagacha aksiyani yonma-yon solishtirish
+• Portfel: xaridlar, daromad, dividendlar, vaqt boʻyicha qiymat, valyuta konvertatsiyasi hamda CSV import va eksport
+• Portfelni AI bilan koʻrib chiqish: jamlanish, sohalar va valyutalar ulushi, umumiy xatarlar
+• Narx bildirishnomalari – ilova yopiq boʻlsa, e-pochta orqali ham
+• Aksiyalaringizning yaqinlashayotgan hisobot sanalari va e-pochta orqali haftalik xulosa
+• Har bir aksiya boʻyicha oʻz qaydlaringiz
+• E-pochtangiz bilan kiring – hammasi barcha qurilmalaringizda sinxronlanadi
+
+KOMPYUTERINGIZDA
+Mac va Windowsda WhatStock menyu satrida yoki tizim panelida turadi: istalgan joydan tezkor tugmalarni bosing, tiker kiriting yoki skrinshotni joylang – tahlil ochiladi.
+
+120 TIL
+Ilova va tahlillar 120 tilda mavjud.
+
+SINAB KOʻRING
+Dastlabki tahlillar bepul. Keyin obuna yoki tahlillar toʻplami bilan davom etishingiz mumkin.
+
+WhatStock maʼlumot beradi, investitsiya maslahatini emas. U sizning vaziyatingiz, maqsadlaringiz yoki soliq holatingizni bilmaydi, shuning uchun nima sotib olish yoki sotishni aytish oʻrniga afzallik va kamchiliklarni hamda ssenariylarni tasvirlaydi. Bozor maʼlumotlari kechikishi mumkin.

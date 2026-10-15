@@ -1,0 +1,34 @@
+Fotografera en aktie och lär dig allt om den.
+
+En företagslogga på ett skyltfönster, en skärmbild från din mäklarapp, en tidnings kurstabell eller ett gammalt aktiebrev: WhatStock känner igen aktien och visar kurs, diagram och nyckeltal på några sekunder. Sedan förklarar en oberoende AI-analys den som en bra ekonomijournalist skulle göra – begripligt och på ditt språk.
+
+DET HÄR TAR ANALYSEN UPP
+• Vad bolaget gör och vad som verkligen driver aktien
+• Värderingen jämfört med bolagets egen historik och konkurrenterna
+• Risker, senaste nyheterna och datum för nästa rapport
+• Tre scenarier – positivt, bas- och negativt – och hur sannolikt vart och ett verkar
+• Det starkaste motargumentet, så att du ser båda sidor
+• Källor för de fakta som används
+Du väljer djup (kort, standard eller fördjupad) och nivå (nybörjare eller erfaren). Efteråt kan du ställa följdfrågor om analysen.
+
+HÅLL KOLL
+• Favoriter och senaste sökningar, med analyserna sparade på din enhet
+• Vad som har ändrats sedan förra analysen, i en överblick
+• Jämför upp till tre aktier sida vid sida
+• Portfölj: köp, avkastning, utdelningar, värde över tid, valutaomräkning samt import och export av CSV
+• AI-genomgång av portföljen: koncentration, sektor- och valutaexponering, gemensamma risker
+• Kurslarm – även via e-post när appen är stängd
+• Kommande rapportdatum för dina aktier och en veckosammanfattning via e-post
+• Egna anteckningar om varje aktie
+• Logga in med din e-post så synkas allt på alla dina enheter
+
+PÅ DATORN
+På Mac och Windows finns WhatStock i menyraden eller systemfältet: tryck på kortkommandot var du än är, skriv en ticker eller klistra in en skärmbild, så öppnas analysen.
+
+120 SPRÅK
+Appen och analyserna finns på 120 språk.
+
+PROVA
+De första analyserna är gratis. Sedan fortsätter du med en prenumeration eller ett analyspaket.
+
+WhatStock ger information, inte investeringsrådgivning. Appen känner inte till din situation, dina mål eller din skattesituation, så den beskriver för- och nackdelar och scenarier i stället för att säga vad du ska köpa eller sälja. Marknadsdata kan vara fördröjda.
