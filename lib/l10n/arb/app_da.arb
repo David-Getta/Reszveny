@@ -478,5 +478,6 @@
   "syncFailed": "Synkroniseringen mislykkedes. Der prøves automatisk igen.",
   "alertEmailTitle": "E-mail når en alarm udløses",
   "alertEmailOn": "Vi tjekker dine alarmer med få minutters mellemrum og sender dig en e-mail, også når appen er lukket.",
-  "alertEmailSignIn": "Log ind med din e-mail under Indstillinger for at få alarmer på e-mail, også når appen er lukket."
+  "alertEmailSignIn": "Log ind med din e-mail under Indstillinger for at få alarmer på e-mail, også når appen er lukket.",
+  "portfolioHistory": "Værdiudvikling"
 }

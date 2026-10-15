@@ -1821,4 +1821,7 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Prihláste sa e-mailom v Nastaveniach a upozornenia vám budeme posielať e-mailom, aj keď je aplikácia zatvorená.';
+
+  @override
+  String get portfolioHistory => 'Vývoj hodnoty';
 }

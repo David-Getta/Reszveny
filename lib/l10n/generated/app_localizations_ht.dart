@@ -1765,4 +1765,7 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Konekte ak imèl ou nan Paramèt pou w resevwa alèt yo pa imèl, menm lè aplikasyon an fèmen.';
+
+  @override
+  String get portfolioHistory => 'Evolisyon valè';
 }

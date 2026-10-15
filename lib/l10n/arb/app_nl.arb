@@ -478,5 +478,6 @@
   "syncFailed": "Synchronisatie mislukt. Er wordt automatisch opnieuw geprobeerd.",
   "alertEmailTitle": "E-mail wanneer een alert afgaat",
   "alertEmailOn": "We controleren je alerts om de paar minuten en sturen je een e-mail, ook als de app gesloten is.",
-  "alertEmailSignIn": "Log in met je e-mailadres bij Instellingen om alerts per e-mail te krijgen, ook als de app gesloten is."
+  "alertEmailSignIn": "Log in met je e-mailadres bij Instellingen om alerts per e-mail te krijgen, ook als de app gesloten is.",
+  "portfolioHistory": "Waardeontwikkeling"
 }

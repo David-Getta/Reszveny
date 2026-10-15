@@ -1771,4 +1771,7 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Pinda neemail yako muMarongero kuti uwane zviziviso neemail, kunyange app yakavharwa.';
+
+  @override
+  String get portfolioHistory => 'Kukosha nekufamba kwenguva';
 }

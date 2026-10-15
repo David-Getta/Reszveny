@@ -478,5 +478,6 @@
   "syncFailed": "Imeshindwa kusawazisha. Itajaribu tena kiotomatiki.",
   "alertEmailTitle": "Barua pepe arifa ikitimia",
   "alertEmailOn": "Tunakagua arifa zako kila baada ya dakika chache na kukutumia barua pepe, hata programu ikiwa imefungwa.",
-  "alertEmailSignIn": "Ingia kwa barua pepe yako katika Mipangilio ili upate arifa kwa barua pepe, hata programu ikiwa imefungwa."
+  "alertEmailSignIn": "Ingia kwa barua pepe yako katika Mipangilio ili upate arifa kwa barua pepe, hata programu ikiwa imefungwa.",
+  "portfolioHistory": "Thamani kwa muda"
 }

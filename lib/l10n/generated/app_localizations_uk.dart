@@ -1820,4 +1820,7 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Увійдіть з електронною поштою в Налаштуваннях, щоб отримувати сповіщення на пошту, навіть коли застосунок закрито.';
+
+  @override
+  String get portfolioHistory => 'Динаміка вартості';
 }

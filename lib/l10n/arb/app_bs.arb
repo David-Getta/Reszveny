@@ -478,5 +478,6 @@
   "syncFailed": "Sinhronizacija nije uspjela. Automatski će se pokušati ponovo.",
   "alertEmailTitle": "E-mail kada se obavještenje aktivira",
   "alertEmailOn": "Provjeravamo vaša obavještenja svakih nekoliko minuta i šaljemo vam e-mail, čak i kada je aplikacija zatvorena.",
-  "alertEmailSignIn": "Prijavite se e-mailom u Postavkama da dobijate obavještenja e-mailom, čak i kada je aplikacija zatvorena."
+  "alertEmailSignIn": "Prijavite se e-mailom u Postavkama da dobijate obavještenja e-mailom, čak i kada je aplikacija zatvorena.",
+  "portfolioHistory": "Vrijednost kroz vrijeme"
 }

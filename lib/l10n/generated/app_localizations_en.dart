@@ -1765,4 +1765,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed.';
+
+  @override
+  String get portfolioHistory => 'Value over time';
 }

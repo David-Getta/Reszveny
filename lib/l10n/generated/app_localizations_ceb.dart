@@ -1775,4 +1775,7 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Mag-sign in gamit ang imong e-mail sa Mga Setting aron makadawat og mga alerto pinaagi sa e-mail, bisan sirado ang app.';
+
+  @override
+  String get portfolioHistory => 'Bili sa paglabay sa panahon';
 }

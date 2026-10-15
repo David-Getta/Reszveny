@@ -1767,4 +1767,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'لە ڕێکخستنەکان بە ئیمەیڵەکەت بچۆ ژوورەوە بۆ ئەوەی ئاگادارکەرەوەکان بە ئیمەیڵ وەربگریت، تەنانەت کاتێک ئەپەکە داخراوە.';
+
+  @override
+  String get portfolioHistory => 'گۆڕانی بەها';
 }

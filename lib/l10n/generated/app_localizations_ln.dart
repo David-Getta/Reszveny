@@ -1775,4 +1775,7 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kɔta na e-mail na yo na Ba-paramètre mpo na kozwa makebisi na e-mail, ata soki application ekangami.';
+
+  @override
+  String get portfolioHistory => 'Motuya na ntango';
 }

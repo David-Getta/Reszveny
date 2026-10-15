@@ -1777,4 +1777,7 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq\'asqa kaptinpas.';
+
+  @override
+  String get portfolioHistory => 'Chaninpa tikrakuynin';
 }

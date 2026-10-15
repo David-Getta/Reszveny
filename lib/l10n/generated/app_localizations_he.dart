@@ -1762,4 +1762,7 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'כדי לקבל התראות באימייל גם כשהאפליקציה סגורה, יש להיכנס עם כתובת האימייל שלך בהגדרות.';
+
+  @override
+  String get portfolioHistory => 'שווי לאורך זמן';
 }

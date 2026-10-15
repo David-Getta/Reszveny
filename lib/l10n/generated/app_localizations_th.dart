@@ -1742,4 +1742,7 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ลงชื่อเข้าใช้ด้วยอีเมลของคุณในการตั้งค่าเพื่อรับการแจ้งเตือนทางอีเมล แม้แอปจะปิดอยู่';
+
+  @override
+  String get portfolioHistory => 'มูลค่าตามช่วงเวลา';
 }

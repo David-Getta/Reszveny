@@ -1773,4 +1773,7 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ngena ngemvume nge-imeyili yakho kuZilungiselelo ukuze uthole izexwayiso nge-imeyili, ngisho noma i-app ivaliwe.';
+
+  @override
+  String get portfolioHistory => 'Inani ngokuhamba kwesikhathi';
 }

@@ -478,5 +478,6 @@
   "syncFailed": "同步失敗，系統會自動重試。",
   "alertEmailTitle": "提示觸發時發送電郵",
   "alertEmailOn": "我們每隔幾分鐘檢查一次你的提示，即使程式已關閉，也會以電郵通知你。",
-  "alertEmailSignIn": "在設定中以電郵登入，即使程式已關閉，也能以電郵收到提示。"
+  "alertEmailSignIn": "在設定中以電郵登入，即使程式已關閉，也能以電郵收到提示。",
+  "portfolioHistory": "市值走勢"
 }

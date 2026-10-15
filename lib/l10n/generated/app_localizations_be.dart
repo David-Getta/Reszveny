@@ -1820,4 +1820,7 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Увайдзіце праз электронную пошту ў Наладах, каб атрымліваць апавяшчэнні па электроннай пошце, нават калі праграма закрыта.';
+
+  @override
+  String get portfolioHistory => 'Дынаміка вартасці';
 }

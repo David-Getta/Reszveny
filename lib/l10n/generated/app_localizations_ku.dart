@@ -1769,4 +1769,7 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Di Mîhengan de bi e-nameya xwe têkeve da ku hişyariyan bi e-nameyê bistînî, heta dema ku sepan girtî be jî.';
+
+  @override
+  String get portfolioHistory => 'Nirx bi demê re';
 }

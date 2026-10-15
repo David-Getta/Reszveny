@@ -1765,4 +1765,7 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'अ‍ॅप बंद असतानाही ई-मेलवर सूचना मिळवण्यासाठी सेटिंग्जमध्ये तुमच्या ई-मेलने साइन इन करा.';
+
+  @override
+  String get portfolioHistory => 'कालानुसार मूल्य';
 }

@@ -1770,4 +1770,7 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ge ɖe eme kple wò e-mail le Ɖoɖowo me be nàxɔ nuxlɔ̃amewo to e-mail dzi, ne app la tu gɔ̃ hã.';
+
+  @override
+  String get portfolioHistory => 'Asi ƒe tɔtrɔ';
 }

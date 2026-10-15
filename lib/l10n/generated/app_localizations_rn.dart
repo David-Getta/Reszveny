@@ -1772,4 +1772,7 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n\'igihe porogarama yugaye.';
+
+  @override
+  String get portfolioHistory => 'Ihinduka ry\'agaciro';
 }

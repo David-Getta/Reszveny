@@ -1773,4 +1773,7 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ku gal iimaylkaaga Dejinta si aad digniinaha ugu hesho iimayl, xitaa marka app-ku xiran yahay.';
+
+  @override
+  String get portfolioHistory => 'Isbeddelka qiimaha';
 }

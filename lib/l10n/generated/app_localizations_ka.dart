@@ -1768,4 +1768,7 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'შედით ელფოსტით პარამეტრებში, რომ შეტყობინებები ელფოსტით მიიღოთ, მაშინაც კი, როცა აპი დახურულია.';
+
+  @override
+  String get portfolioHistory => 'ღირებულების დინამიკა';
 }

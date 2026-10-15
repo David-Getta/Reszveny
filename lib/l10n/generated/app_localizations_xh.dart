@@ -1774,4 +1774,7 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ngena nge-imeyile yakho kwiiSetingi ukuze ufumane izilumkiso nge-imeyile, nokuba i-app ivaliwe.';
+
+  @override
+  String get portfolioHistory => 'Ixabiso ngokuhamba kwexesha';
 }

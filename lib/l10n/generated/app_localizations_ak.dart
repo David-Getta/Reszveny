@@ -1765,4 +1765,7 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Fa wo email wura mu wɔ Nhyehyɛe mu na wunya kɔkɔbɔ wɔ email so, sɛ app no to mu mpo a.';
+
+  @override
+  String get portfolioHistory => 'Ne bo nsakrae';
 }

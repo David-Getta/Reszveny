@@ -1764,4 +1764,7 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Log ind med din e-mail under Indstillinger for at få alarmer på e-mail, også når appen er lukket.';
+
+  @override
+  String get portfolioHistory => 'Værdiudvikling';
 }

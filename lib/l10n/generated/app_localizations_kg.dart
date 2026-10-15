@@ -1772,4 +1772,7 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kota na e-mail na nge na Paramètres sambu na kubaka nkebisu na e-mail, ata kana application me kangama.';
+
+  @override
+  String get portfolioHistory => 'Ntalu na ntangu';
 }

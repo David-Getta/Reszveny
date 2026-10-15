@@ -1774,4 +1774,7 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Մուտք գործեք ձեր էլ. փոստով Կարգավորումներում՝ ծանուցումները էլ. փոստով ստանալու համար, նույնիսկ երբ հավելվածը փակ է։';
+
+  @override
+  String get portfolioHistory => 'Արժեքի դինամիկա';
 }

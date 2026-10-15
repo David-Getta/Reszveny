@@ -1761,4 +1761,7 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Dugg ak sa imeel ci Tànneef ngir jot artu yi ci imeel, su aplikasiyoŋ bi tëju sax.';
+
+  @override
+  String get portfolioHistory => 'Njëg ci diir jamono';
 }

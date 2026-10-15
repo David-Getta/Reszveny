@@ -478,5 +478,6 @@
   "syncFailed": "Mana sincronizayta atikurqanchu. Kikillanmanta yapamanta kallpachakunqa.",
   "alertEmailTitle": "Correo willachiy rikhurimuptin",
   "alertEmailOn": "Sapa iskay kimsa minutopi willachiykunaykita qhawayku, correotataq kachamuykiku, aplicación wisq'asqa kaptinpas.",
-  "alertEmailSignIn": "Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq'asqa kaptinpas."
+  "alertEmailSignIn": "Allichaykunapi correoykiwan yaykuy, willachiykunata correopi chaskinaykipaq, aplicación wisq'asqa kaptinpas.",
+  "portfolioHistory": "Chaninpa tikrakuynin"
 }

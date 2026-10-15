@@ -1767,4 +1767,7 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'এপ বন্ধ থাকিলেও ই-মেইলত সতৰ্কবাণী পাবলৈ ছেটিংছত আপোনাৰ ই-মেইলেৰে ছাইন ইন কৰক।';
+
+  @override
+  String get portfolioHistory => 'মূল্যৰ গতিধাৰা';
 }

@@ -1772,4 +1772,7 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Lowani ndi imelo yanu mu Zokonda kuti mulandire zidziwitso pa imelo, ngakhale pulogalamu itatsekedwa.';
+
+  @override
+  String get portfolioHistory => 'Mtengo pakapita nthawi';
 }

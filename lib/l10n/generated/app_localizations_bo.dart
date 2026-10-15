@@ -1756,4 +1756,7 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ཉེར་སྤྱོད་ཁ་བརྒྱབ་ཡོད་ཀྱང་ཉེན་བརྡ་གློག་འཕྲིན་ཐོག་ཐོབ་པར་སྒྲིག་འགོད་ནང་ཁྱེད་ཀྱི་གློག་འཕྲིན་གྱིས་ནང་འཛུལ་གནང་།';
+
+  @override
+  String get portfolioHistory => 'རིན་ཐང་གི་འགྱུར་ལྡོག';
 }

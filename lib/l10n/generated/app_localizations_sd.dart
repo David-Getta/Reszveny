@@ -1760,4 +1760,7 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ايپ بند هجڻ جي باوجود اي ميل ذريعي الرٽ حاصل ڪرڻ لاءِ سيٽنگن ۾ پنهنجي اي ميل سان سائن ان ڪريو.';
+
+  @override
+  String get portfolioHistory => 'وقت سان قدر';
 }

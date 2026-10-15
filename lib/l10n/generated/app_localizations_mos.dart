@@ -1753,4 +1753,7 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kẽ ne f e-mail Seglgã pʋgẽ n paam koosg gũusgã e-mail pʋgẽ, baa aplikasiõ wã sã n pagda.';
+
+  @override
+  String get portfolioHistory => 'Yõodã toeembo';
 }

@@ -1771,4 +1771,7 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Buela ne e-mail webe mu Malongolola bua kupeta alerte ku e-mail, nansha padi application mukanga.';
+
+  @override
+  String get portfolioHistory => 'Mushinga mu bikondo';
 }

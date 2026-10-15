@@ -1760,4 +1760,7 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'د دې لپاره چې خبرتیاوې په برېښنالیک ترلاسه کړئ، حتی کله چې اپ تړل شوی وي، په تنظیماتو کې په خپل برېښنالیک ننوځئ.';
+
+  @override
+  String get portfolioHistory => 'د ارزښت بدلون';
 }

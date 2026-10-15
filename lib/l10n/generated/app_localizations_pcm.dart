@@ -1766,4 +1766,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Sign in with your e-mail for Settings make you dey get alerts for e-mail, even wen di app close.';
+
+  @override
+  String get portfolioHistory => 'Value over time';
 }

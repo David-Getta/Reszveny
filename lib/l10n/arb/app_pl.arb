@@ -478,5 +478,6 @@
   "syncFailed": "Synchronizacja nie powiodła się. Ponowna próba nastąpi automatycznie.",
   "alertEmailTitle": "E-mail po uruchomieniu alertu",
   "alertEmailOn": "Co kilka minut sprawdzamy Twoje alerty i wysyłamy Ci e-mail, nawet gdy aplikacja jest zamknięta.",
-  "alertEmailSignIn": "Zaloguj się adresem e-mail w Ustawieniach, aby otrzymywać alerty e-mailem, nawet gdy aplikacja jest zamknięta."
+  "alertEmailSignIn": "Zaloguj się adresem e-mail w Ustawieniach, aby otrzymywać alerty e-mailem, nawet gdy aplikacja jest zamknięta.",
+  "portfolioHistory": "Wartość w czasie"
 }

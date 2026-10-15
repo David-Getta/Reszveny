@@ -478,5 +478,6 @@
   "syncFailed": "Synchronisation me lemba. Yo ta meka diaka yo mosi.",
   "alertEmailTitle": "E-mail ntangu nkebisu me salama",
   "alertEmailOn": "Beto ke tadilaka nkebisu na nge konso maminuti fyoti mpi beto ke tindila nge e-mail, ata kana application me kangama.",
-  "alertEmailSignIn": "Kota na e-mail na nge na Paramètres sambu na kubaka nkebisu na e-mail, ata kana application me kangama."
+  "alertEmailSignIn": "Kota na e-mail na nge na Paramètres sambu na kubaka nkebisu na e-mail, ata kana application me kangama.",
+  "portfolioHistory": "Ntalu na ntangu"
 }

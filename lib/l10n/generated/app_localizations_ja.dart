@@ -1711,4 +1711,7 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'アプリを閉じていてもアラートをメールで受け取るには、設定からメールアドレスでサインインしてください。';
+
+  @override
+  String get portfolioHistory => '評価額の推移';
 }

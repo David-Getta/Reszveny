@@ -1767,4 +1767,7 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Logga in med din e-postadress under Inställningar för att få larm via e-post, även när appen är stängd.';
+
+  @override
+  String get portfolioHistory => 'Värdeutveckling';
 }

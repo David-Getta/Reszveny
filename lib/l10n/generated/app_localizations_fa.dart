@@ -1765,4 +1765,7 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'برای دریافت هشدارها با ایمیل، حتی وقتی برنامه بسته است، در تنظیمات با ایمیل خود وارد شوید.';
+
+  @override
+  String get portfolioHistory => 'روند ارزش';
 }

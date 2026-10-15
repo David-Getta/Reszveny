@@ -1768,4 +1768,7 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup.';
+
+  @override
+  String get portfolioHistory => 'Nilai ti waktu ka waktu';
 }

@@ -1745,4 +1745,7 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວຂອງທ່ານໃນການຕັ້ງຄ່າ ເພື່ອຮັບການແຈ້ງເຕືອນທາງອີເມວ ເຖິງແມ່ນວ່າແອັບຈະປິດຢູ່ກໍຕາມ';
+
+  @override
+  String get portfolioHistory => 'ມູນຄ່າຕາມເວລາ';
 }

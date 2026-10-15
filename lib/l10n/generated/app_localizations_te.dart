@@ -1772,4 +1772,7 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'యాప్ మూసి ఉన్నా ఈమెయిల్ ద్వారా హెచ్చరికలు పొందడానికి సెట్టింగ్‌లలో మీ ఈమెయిల్‌తో సైన్ ఇన్ చేయండి.';
+
+  @override
+  String get portfolioHistory => 'కాలక్రమేణా విలువ';
 }

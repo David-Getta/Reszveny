@@ -1798,4 +1798,7 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Conectează-te cu e-mailul tău în Setări ca să primești alertele pe e-mail, chiar și când aplicația e închisă.';
+
+  @override
+  String get portfolioHistory => 'Evoluția valorii';
 }

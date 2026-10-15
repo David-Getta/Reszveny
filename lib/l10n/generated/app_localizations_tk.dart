@@ -1765,4 +1765,7 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Programma ýapyk bolsa-da duýduryşlary e-poçta arkaly almak üçin Sazlamalarda e-poçtaňyz bilen giriň.';
+
+  @override
+  String get portfolioHistory => 'Gymmatyň üýtgeýşi';
 }

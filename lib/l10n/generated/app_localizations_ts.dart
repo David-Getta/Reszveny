@@ -1777,4 +1777,7 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Nghena hi imeyili ya wena eka Swiyimiso leswaku u kuma switiviso hi imeyili, hambi loko app yi pfariwile.';
+
+  @override
+  String get portfolioHistory => 'Nkoka hi ku famba ka nkarhi';
 }

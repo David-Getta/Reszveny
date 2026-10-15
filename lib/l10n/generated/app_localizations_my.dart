@@ -1759,4 +1759,7 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'အက်ပ်ပိတ်ထားသော်လည်း သတိပေးချက်များကို အီးမေးလ်ဖြင့် ရရှိရန် ဆက်တင်များတွင် သင့်အီးမေးလ်ဖြင့် လက်မှတ်ထိုးဝင်ပါ။';
+
+  @override
+  String get portfolioHistory => 'အချိန်အလိုက် တန်ဖိုး';
 }

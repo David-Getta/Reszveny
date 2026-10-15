@@ -1779,4 +1779,7 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Midira amin\'ny mailakao ao amin\'ny Fikirakirana mba hahazoana fanairana amin\'ny mailaka, na dia mihidy aza ny fampiharana.';
+
+  @override
+  String get portfolioHistory => 'Fivoaran\'ny sanda';
 }

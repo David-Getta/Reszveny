@@ -1767,4 +1767,7 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Mlebu nganggo email sampeyan ing Setelan supaya nampa pèngetan liwat email, sanajan aplikasi ditutup.';
+
+  @override
+  String get portfolioHistory => 'Nilai saka wektu ke wektu';
 }

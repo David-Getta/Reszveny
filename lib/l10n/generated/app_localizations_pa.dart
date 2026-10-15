@@ -1762,4 +1762,7 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ਐਪ ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਈਮੇਲ ਰਾਹੀਂ ਅਲਰਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਆਪਣੀ ਈਮੇਲ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।';
+
+  @override
+  String get portfolioHistory => 'ਸਮੇਂ ਨਾਲ ਮੁੱਲ';
 }

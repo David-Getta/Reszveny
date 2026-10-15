@@ -478,5 +478,6 @@
   "syncFailed": "Guhuza vyanse. Bizosubira kugerageza vyonyene.",
   "alertEmailTitle": "Imeyili igihe imenyesha ryashitse",
   "alertEmailOn": "Turasuzuma imenyesha ryawe buri minota mikeyi tukakurungikira imeyili, n'igihe porogarama yugaye.",
-  "alertEmailSignIn": "Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n'igihe porogarama yugaye."
+  "alertEmailSignIn": "Injira ukoresheje imeyili yawe mu Vyo gutunganya kugira uronke imenyesha kuri imeyili, n'igihe porogarama yugaye.",
+  "portfolioHistory": "Ihinduka ry'agaciro"
 }

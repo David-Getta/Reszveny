@@ -1804,4 +1804,7 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Prijavite se e-poštom u Postavkama da biste obavijesti primali e-poštom, čak i kad je aplikacija zatvorena.';
+
+  @override
+  String get portfolioHistory => 'Kretanje vrijednosti';
 }

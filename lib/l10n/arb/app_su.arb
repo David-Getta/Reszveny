@@ -478,5 +478,6 @@
   "syncFailed": "Singkronisasi gagal. Bakal dicobian deui sacara otomatis.",
   "alertEmailTitle": "Email nalika béwara aktip",
   "alertEmailOn": "Kami mariksa béwara anjeun unggal sababaraha menit sareng ngirim email ka anjeun, sanajan aplikasina ditutup.",
-  "alertEmailSignIn": "Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup."
+  "alertEmailSignIn": "Asup nganggo email anjeun dina Setélan pikeun nampi béwara ku email, sanajan aplikasina ditutup.",
+  "portfolioHistory": "Nilai ti waktu ka waktu"
 }

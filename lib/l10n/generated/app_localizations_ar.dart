@@ -1809,4 +1809,7 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'سجّل الدخول ببريدك الإلكتروني في الإعدادات لتصلك التنبيهات بالبريد الإلكتروني، حتى عندما يكون التطبيق مغلقًا.';
+
+  @override
+  String get portfolioHistory => 'تطور القيمة';
 }

@@ -478,5 +478,6 @@
   "syncFailed": "Sinhronlamak başartmady. Awtomatik usulda täzeden synanyşylar.",
   "alertEmailTitle": "Duýduryş işlände e-poçta",
   "alertEmailOn": "Duýduryşlaryňyzy her birnäçe minutdan barlaýarys we programma ýapyk bolsa-da, size e-poçta iberýäris.",
-  "alertEmailSignIn": "Programma ýapyk bolsa-da duýduryşlary e-poçta arkaly almak üçin Sazlamalarda e-poçtaňyz bilen giriň."
+  "alertEmailSignIn": "Programma ýapyk bolsa-da duýduryşlary e-poçta arkaly almak üçin Sazlamalarda e-poçtaňyz bilen giriň.",
+  "portfolioHistory": "Gymmatyň üýtgeýşi"
 }

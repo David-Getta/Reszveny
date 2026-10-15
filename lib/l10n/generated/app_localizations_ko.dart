@@ -1713,4 +1713,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get alertEmailSignIn => '앱이 닫혀 있어도 이메일로 알림을 받으려면 설정에서 이메일로 로그인하세요.';
+
+  @override
+  String get portfolioHistory => '평가액 추이';
 }

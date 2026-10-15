@@ -1761,4 +1761,7 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Đăng nhập bằng email trong Cài đặt để nhận cảnh báo qua email, kể cả khi ứng dụng đã đóng.';
+
+  @override
+  String get portfolioHistory => 'Biến động giá trị';
 }

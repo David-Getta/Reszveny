@@ -1773,4 +1773,7 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Hyni me email-in tuaj te Cilësimet për të marrë alarmet me email, edhe kur aplikacioni është i mbyllur.';
+
+  @override
+  String get portfolioHistory => 'Ecuria e vlerës';
 }

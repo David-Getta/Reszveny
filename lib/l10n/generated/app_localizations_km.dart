@@ -1750,4 +1750,7 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ចូលគណនីដោយប្រើអ៊ីមែលរបស់អ្នកនៅក្នុងការកំណត់ ដើម្បីទទួលការជូនដំណឹងតាមអ៊ីមែល ទោះបីកម្មវិធីបិទក៏ដោយ។';
+
+  @override
+  String get portfolioHistory => 'តម្លៃតាមពេលវេលា';
 }

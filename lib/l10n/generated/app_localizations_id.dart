@@ -1762,4 +1762,7 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Masuk dengan email Anda di Pengaturan untuk menerima peringatan lewat email, bahkan saat aplikasi ditutup.';
+
+  @override
+  String get portfolioHistory => 'Nilai dari waktu ke waktu';
 }

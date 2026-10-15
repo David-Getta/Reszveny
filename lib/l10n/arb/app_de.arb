@@ -478,5 +478,6 @@
   "syncFailed": "Synchronisierung fehlgeschlagen. Es wird automatisch erneut versucht.",
   "alertEmailTitle": "E-Mail bei ausgelöstem Alarm",
   "alertEmailOn": "Wir prüfen deine Alarme alle paar Minuten und schicken dir eine E-Mail – auch wenn die App geschlossen ist.",
-  "alertEmailSignIn": "Melde dich in den Einstellungen mit deiner E-Mail an, um Alarme per E-Mail zu erhalten – auch wenn die App geschlossen ist."
+  "alertEmailSignIn": "Melde dich in den Einstellungen mit deiner E-Mail an, um Alarme per E-Mail zu erhalten – auch wenn die App geschlossen ist.",
+  "portfolioHistory": "Wertentwicklung"
 }

@@ -1767,4 +1767,7 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Қолданба жабық тұрса да ескертулерді электрондық пошта арқылы алу үшін Параметрлерде электрондық поштаңызбен кіріңіз.';
+
+  @override
+  String get portfolioHistory => 'Құн динамикасы';
 }

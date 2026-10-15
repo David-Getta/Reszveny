@@ -1767,4 +1767,7 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Tətbiq bağlı olsa belə, bildirişləri e-poçtla almaq üçün Ayarlarda e-poçtunuzla daxil olun.';
+
+  @override
+  String get portfolioHistory => 'Dəyərin dinamikası';
 }

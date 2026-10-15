@@ -478,5 +478,6 @@
   "syncFailed": "Ku fambelanisa ku tsandzekile. Ku ta ringetiwa nakambe hi ku tiendlekela.",
   "alertEmailTitle": "Imeyili loko xitiviso xi tirha",
   "alertEmailOn": "Hi kambela switiviso swa wena endzhaku ka timinete ti nga ri tingani naswona hi ku rhumela imeyili, hambi loko app yi pfariwile.",
-  "alertEmailSignIn": "Nghena hi imeyili ya wena eka Swiyimiso leswaku u kuma switiviso hi imeyili, hambi loko app yi pfariwile."
+  "alertEmailSignIn": "Nghena hi imeyili ya wena eka Swiyimiso leswaku u kuma switiviso hi imeyili, hambi loko app yi pfariwile.",
+  "portfolioHistory": "Nkoka hi ku famba ka nkarhi"
 }

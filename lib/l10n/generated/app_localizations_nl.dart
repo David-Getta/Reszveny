@@ -1771,4 +1771,7 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Log in met je e-mailadres bij Instellingen om alerts per e-mail te krijgen, ook als de app gesloten is.';
+
+  @override
+  String get portfolioHistory => 'Waardeontwikkeling';
 }

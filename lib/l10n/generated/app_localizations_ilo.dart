@@ -1781,4 +1781,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ag-sign in babaen ti e-mailmo iti Dagiti Setting tapno makaawat iti alerto babaen ti e-mail, uray no nakarikep ti app.';
+
+  @override
+  String get portfolioHistory => 'Pateg iti panaglabas ti panawen';
 }

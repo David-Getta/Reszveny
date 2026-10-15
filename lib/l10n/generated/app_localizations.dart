@@ -3210,6 +3210,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed.'**
   String get alertEmailSignIn;
+
+  /// Title of the chart showing the total portfolio value over time.
+  ///
+  /// In en, this message translates to:
+  /// **'Value over time'**
+  String get portfolioHistory;
 }
 
 class _AppLocalizationsDelegate

@@ -478,5 +478,6 @@
   "syncFailed": "Non se puido sincronizar. Volverase tentar automaticamente.",
   "alertEmailTitle": "Correo cando salte unha alerta",
   "alertEmailOn": "Revisamos as túas alertas cada poucos minutos e envíamosche un correo, mesmo coa aplicación pechada.",
-  "alertEmailSignIn": "Inicia sesión co teu correo en Configuración para recibir as alertas por correo, mesmo coa aplicación pechada."
+  "alertEmailSignIn": "Inicia sesión co teu correo en Configuración para recibir as alertas por correo, mesmo coa aplicación pechada.",
+  "portfolioHistory": "Evolución do valor"
 }

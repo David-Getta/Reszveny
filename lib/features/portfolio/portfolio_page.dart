@@ -7,6 +7,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import 'csv_dialog.dart';
+import 'portfolio_history.dart';
 import 'portfolio_store.dart';
 import 'portfolio_valuation.dart';
 
@@ -222,6 +223,7 @@ class _PortfolioBody extends StatelessWidget {
                       ),
                     ),
                   ),
+                PortfolioHistoryCard(snapshot: s),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
                   child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),

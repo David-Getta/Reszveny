@@ -1822,4 +1822,7 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Prisijunkite el. paštu Nustatymuose, kad gautumėte įspėjimus el. paštu, net kai programa uždaryta.';
+
+  @override
+  String get portfolioHistory => 'Vertės kitimas';
 }

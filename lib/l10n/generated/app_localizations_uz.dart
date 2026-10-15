@@ -1769,4 +1769,7 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ilova yopiq boʻlsa ham bildirishnomalarni e-pochta orqali olish uchun Sozlamalarda e-pochtangiz bilan kiring.';
+
+  @override
+  String get portfolioHistory => 'Qiymat dinamikasi';
 }

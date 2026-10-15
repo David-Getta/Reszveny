@@ -1789,4 +1789,7 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Inicia sesión co teu correo en Configuración para recibir as alertas por correo, mesmo coa aplicación pechada.';
+
+  @override
+  String get portfolioHistory => 'Evolución do valor';
 }

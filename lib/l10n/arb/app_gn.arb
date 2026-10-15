@@ -478,5 +478,6 @@
   "syncFailed": "Ndaikatúi oñesincroniza. Oñehaʼã jeýta ijeheguíva.",
   "alertEmailTitle": "Correo maranduʼi ojehu jave",
   "alertEmailOn": "Rohechajey ne maranduʼi sapyʼaitépe ha romondo ndéve correo, tembiporuʼi oñembotýramo jepe.",
-  "alertEmailSignIn": "Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe."
+  "alertEmailSignIn": "Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe.",
+  "portfolioHistory": "Hepykue ñemoambue"
 }

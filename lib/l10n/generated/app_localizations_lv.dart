@@ -1805,4 +1805,7 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Pierakstieties ar savu e-pastu Iestatījumos, lai saņemtu brīdinājumus e-pastā, pat ja lietotne ir aizvērta.';
+
+  @override
+  String get portfolioHistory => 'Vērtības izmaiņas';
 }

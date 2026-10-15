@@ -1804,4 +1804,7 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Пријавите се имејлом у Подешавањима да бисте обавештења добијали имејлом, чак и када је апликација затворена.';
+
+  @override
+  String get portfolioHistory => 'Кретање вредности';
 }

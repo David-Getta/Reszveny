@@ -1761,4 +1761,7 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Seŋo e e-mail maa nder Teelte ngam heɓde tintine e e-mail, hay so jaaɓnirgal ngal uddaama.';
+
+  @override
+  String get portfolioHistory => 'Waylagol njaru';
 }

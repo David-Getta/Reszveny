@@ -1767,4 +1767,7 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Ingia kwa barua pepe yako katika Mipangilio ili upate arifa kwa barua pepe, hata programu ikiwa imefungwa.';
+
+  @override
+  String get portfolioHistory => 'Thamani kwa muda';
 }

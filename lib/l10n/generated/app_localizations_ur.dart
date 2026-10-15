@@ -1765,4 +1765,7 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ایپ بند ہونے پر بھی ای میل کے ذریعے الرٹس پانے کے لیے ترتیبات میں اپنے ای میل سے سائن ان کریں۔';
+
+  @override
+  String get portfolioHistory => 'وقت کے ساتھ مالیت';
 }

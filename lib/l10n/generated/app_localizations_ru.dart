@@ -1822,4 +1822,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Войдите по электронной почте в Настройках, чтобы получать оповещения на почту, даже когда приложение закрыто.';
+
+  @override
+  String get portfolioHistory => 'Динамика стоимости';
 }

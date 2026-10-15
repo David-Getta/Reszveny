@@ -1817,4 +1817,7 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Přihlaste se e-mailem v Nastavení a upozornění vám budeme posílat e-mailem, i když je aplikace zavřená.';
+
+  @override
+  String get portfolioHistory => 'Vývoj hodnoty';
 }

@@ -1772,4 +1772,7 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Eike ne correo reheve Ñembohekópe reguereko hag̃ua maranduʼi correo rupive, tembiporuʼi oñembotýramo jepe.';
+
+  @override
+  String get portfolioHistory => 'Hepykue ñemoambue';
 }

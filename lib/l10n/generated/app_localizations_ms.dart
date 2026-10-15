@@ -1770,4 +1770,7 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Log masuk dengan e-mel anda dalam Tetapan untuk menerima amaran melalui e-mel, walaupun aplikasi ditutup.';
+
+  @override
+  String get portfolioHistory => 'Nilai mengikut masa';
 }

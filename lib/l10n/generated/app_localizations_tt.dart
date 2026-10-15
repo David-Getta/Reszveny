@@ -1763,4 +1763,7 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Кушымта ябык булса да искәртүләрне электрон почта аша алу өчен Көйләүләрдә электрон почтагыз белән керегез.';
+
+  @override
+  String get portfolioHistory => 'Кыйммәт динамикасы';
 }

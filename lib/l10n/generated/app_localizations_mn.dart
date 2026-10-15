@@ -1767,4 +1767,7 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Апп хаалттай байсан ч сэрэмжлүүлгийг имэйлээр авахын тулд Тохиргоонд имэйлээрээ нэвтэрнэ үү.';
+
+  @override
+  String get portfolioHistory => 'Үнэ цэнийн өөрчлөлт';
 }

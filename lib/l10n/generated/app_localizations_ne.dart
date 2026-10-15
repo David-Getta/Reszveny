@@ -1767,4 +1767,7 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'एप बन्द हुँदा पनि इमेलमा अलर्ट पाउन सेटिङहरूमा आफ्नो इमेलबाट साइन इन गर्नुहोस्।';
+
+  @override
+  String get portfolioHistory => 'समयसँगै मूल्य';
 }

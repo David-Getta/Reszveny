@@ -1771,4 +1771,7 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Accedi con la tua email nelle Impostazioni per ricevere gli avvisi via email, anche quando l’app è chiusa.';
+
+  @override
+  String get portfolioHistory => 'Andamento del valore';
 }

@@ -1772,4 +1772,7 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Inicie sessão com o seu e-mail nas Configurações para receber alertas por e-mail, mesmo com a app fechada.';
+
+  @override
+  String get portfolioHistory => 'Evolução do valor';
 }

@@ -1766,4 +1766,7 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Uygulama kapalıyken bile alarmları e-postayla almak için Ayarlar’dan e-posta adresinizle giriş yapın.';
+
+  @override
+  String get portfolioHistory => 'Değer gelişimi';
 }

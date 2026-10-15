@@ -1771,4 +1771,7 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Shiga da imel ɗinka a Saituna don karɓar faɗakarwa ta imel, ko da manhajar a rufe take.';
+
+  @override
+  String get portfolioHistory => 'Ƙima a tsawon lokaci';
 }

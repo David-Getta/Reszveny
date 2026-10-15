@@ -478,5 +478,6 @@
   "syncFailed": "Synkronointi epäonnistui. Sitä yritetään automaattisesti uudelleen.",
   "alertEmailTitle": "Sähköposti, kun hälytys laukeaa",
   "alertEmailOn": "Tarkistamme hälytyksesi muutaman minuutin välein ja lähetämme sinulle sähköpostia, vaikka sovellus olisi suljettu.",
-  "alertEmailSignIn": "Kirjaudu sisään sähköpostillasi Asetuksissa, niin saat hälytykset sähköpostiin, vaikka sovellus olisi suljettu."
+  "alertEmailSignIn": "Kirjaudu sisään sähköpostillasi Asetuksissa, niin saat hälytykset sähköpostiin, vaikka sovellus olisi suljettu.",
+  "portfolioHistory": "Arvon kehitys"
 }

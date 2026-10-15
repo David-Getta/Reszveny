@@ -1766,4 +1766,7 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Toonya na e-mail yaku thĩinĩ wa Mĩtaratara nĩguo wamũkagĩre imenyithia na e-mail, o na rĩrĩa app ĩhingĩtwo.';
+
+  @override
+  String get portfolioHistory => 'Thogora na ihinda';
 }

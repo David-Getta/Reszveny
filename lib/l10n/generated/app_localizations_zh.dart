@@ -1692,6 +1692,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get alertEmailSignIn => '在设置中用电子邮件登录，即使应用已关闭，也能通过电子邮件收到提醒。';
+
+  @override
+  String get portfolioHistory => '市值走势';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3380,4 +3383,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get alertEmailSignIn => '在設定中以電郵登入，即使程式已關閉，也能以電郵收到提示。';
+
+  @override
+  String get portfolioHistory => '市值走勢';
 }

@@ -478,5 +478,6 @@
   "syncFailed": "Okukwataganya kulemye. Kujja kuddamu okugezaako kwokka.",
   "alertEmailTitle": "Email nga okulabula kutuuse",
   "alertEmailOn": "Tukebera okulabula kwo buli ddakiika ntono era tukuweereza email, ne bwe kiba nti app eggaddwa.",
-  "alertEmailSignIn": "Yingira n'email yo mu Nsengeka ofune okulabula ku email, ne bwe kiba nti app eggaddwa."
+  "alertEmailSignIn": "Yingira n'email yo mu Nsengeka ofune okulabula ku email, ne bwe kiba nti app eggaddwa.",
+  "portfolioHistory": "Omuwendo mu biseera"
 }

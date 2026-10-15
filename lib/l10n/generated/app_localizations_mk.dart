@@ -1785,4 +1785,7 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Најавете се со вашата е-пошта во Поставки за да добивате известувања по е-пошта, дури и кога апликацијата е затворена.';
+
+  @override
+  String get portfolioHistory => 'Вредност низ времето';
 }

@@ -478,5 +478,6 @@
   "syncFailed": "Walsimsiisuun hin milkoofne. Ofumaan irra deebi'ee yaala.",
   "alertEmailTitle": "Imeelii yeroo akeekkachiisni ka'u",
   "alertEmailOn": "Akeekkachiisa kee daqiiqaa muraasa hunda ni ilaalla, appiin cufaa ta'ee illee imeeliin siif ergina.",
-  "alertEmailSignIn": "Appiin cufaa ta'ee illee akeekkachiisa imeeliin argachuuf, Qindaa'ina keessatti imeelii keetiin seeni."
+  "alertEmailSignIn": "Appiin cufaa ta'ee illee akeekkachiisa imeeliin argachuuf, Qindaa'ina keessatti imeelii keetiin seeni.",
+  "portfolioHistory": "Jijjiirama gatii"
 }

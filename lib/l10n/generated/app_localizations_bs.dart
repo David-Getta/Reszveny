@@ -1803,4 +1803,7 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Prijavite se e-mailom u Postavkama da dobijate obavještenja e-mailom, čak i kada je aplikacija zatvorena.';
+
+  @override
+  String get portfolioHistory => 'Vrijednost kroz vrijeme';
 }

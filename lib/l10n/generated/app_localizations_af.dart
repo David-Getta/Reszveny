@@ -1770,4 +1770,7 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Meld in Instellings met jou e-posadres aan om waarskuwings per e-pos te kry, selfs wanneer die app toe is.';
+
+  @override
+  String get portfolioHistory => 'Waarde oor tyd';
 }

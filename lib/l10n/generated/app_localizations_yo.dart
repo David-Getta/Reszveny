@@ -1765,4 +1765,7 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Wọlé pẹ̀lú ímeèlì rẹ nínú Ètò láti máa gba ìkìlọ̀ nípasẹ̀ ímeèlì, kódà nígbà tí áàpù bá ti pa.';
+
+  @override
+  String get portfolioHistory => 'Iye bí àkókò ṣe ń lọ';
 }

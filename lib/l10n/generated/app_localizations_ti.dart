@@ -1734,4 +1734,7 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'እቲ ኣፕ ዕጹው እንተኾነ እውን መጠንቀቕታታት ብኢመይል ንምርካብ ኣብ ቅጥዕታት ብኢመይልኩም እተዉ።';
+
+  @override
+  String get portfolioHistory => 'ለውጢ ዋጋ';
 }

@@ -478,5 +478,6 @@
   "syncFailed": "A szinkron nem sikerült. Később automatikusan újrapróbálja.",
   "alertEmailTitle": "E-mail, ha egy riasztás teljesül",
   "alertEmailOn": "Néhány percenként megnézzük a riasztásaidat, és e-mailben szólunk, akkor is, ha az app nincs megnyitva.",
-  "alertEmailSignIn": "Lépj be az e-mail-címeddel a beállításokban, és e-mailben is szólunk, akkor is, ha az app nincs megnyitva."
+  "alertEmailSignIn": "Lépj be az e-mail-címeddel a beállításokban, és e-mailben is szólunk, akkor is, ha az app nincs megnyitva.",
+  "portfolioHistory": "Értékalakulás"
 }

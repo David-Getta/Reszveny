@@ -478,5 +478,6 @@
   "syncFailed": "Synchronisation ekoki te. Ekomeka lisusu yango moko.",
   "alertEmailTitle": "E-mail ntango likebisi esali",
   "alertEmailOn": "Totalaka makebisi na yo nsima ya miniti moke nyɔnsɔ mpe totindelaka yo e-mail, ata soki application ekangami.",
-  "alertEmailSignIn": "Kɔta na e-mail na yo na Ba-paramètre mpo na kozwa makebisi na e-mail, ata soki application ekangami."
+  "alertEmailSignIn": "Kɔta na e-mail na yo na Ba-paramètre mpo na kozwa makebisi na e-mail, ata soki application ekangami.",
+  "portfolioHistory": "Motuya na ntango"
 }

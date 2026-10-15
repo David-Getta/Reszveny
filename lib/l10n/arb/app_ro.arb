@@ -478,5 +478,6 @@
   "syncFailed": "Sincronizarea a eșuat. Se va reîncerca automat.",
   "alertEmailTitle": "E-mail când se declanșează o alertă",
   "alertEmailOn": "Îți verificăm alertele la câteva minute și îți trimitem un e-mail, chiar și când aplicația e închisă.",
-  "alertEmailSignIn": "Conectează-te cu e-mailul tău în Setări ca să primești alertele pe e-mail, chiar și când aplicația e închisă."
+  "alertEmailSignIn": "Conectează-te cu e-mailul tău în Setări ca să primești alertele pe e-mail, chiar și când aplicația e închisă.",
+  "portfolioHistory": "Evoluția valorii"
 }

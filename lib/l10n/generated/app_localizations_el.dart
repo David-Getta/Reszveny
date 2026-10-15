@@ -1774,4 +1774,7 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Συνδεθείτε με το email σας στις Ρυθμίσεις για να λαμβάνετε ειδοποιήσεις μέσω email, ακόμη και όταν η εφαρμογή είναι κλειστή.';
+
+  @override
+  String get portfolioHistory => 'Εξέλιξη αξίας';
 }

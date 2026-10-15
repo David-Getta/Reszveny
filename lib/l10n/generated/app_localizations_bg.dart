@@ -1767,4 +1767,7 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Влезте с имейла си от Настройки, за да получавате известията по имейл, дори когато приложението е затворено.';
+
+  @override
+  String get portfolioHistory => 'Стойност във времето';
 }

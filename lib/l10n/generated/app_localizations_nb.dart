@@ -1766,4 +1766,7 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Logg inn med e-postadressen din under Innstillinger for å få varsler på e-post, også når appen er lukket.';
+
+  @override
+  String get portfolioHistory => 'Verdiutvikling';
 }

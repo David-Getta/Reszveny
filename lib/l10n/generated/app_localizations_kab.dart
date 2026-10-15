@@ -1765,4 +1765,7 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kcem s imayl-ik deg Iɣewwaṛen akken ad d-teṭṭfeḍ ilɣa s imayl, ula ma yella usnas yemdel.';
+
+  @override
+  String get portfolioHistory => 'Azal s wakud';
 }

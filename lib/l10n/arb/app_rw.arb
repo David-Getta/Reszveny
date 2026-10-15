@@ -478,5 +478,6 @@
   "syncFailed": "Guhuza byanze. Bizongera kugerageza ubwabyo.",
   "alertEmailTitle": "Imeyili iyo imenyesha ribaye",
   "alertEmailOn": "Tugenzura imenyesha ryawe buri minota mike tukakoherereza imeyili, n'igihe porogaramu ifunze.",
-  "alertEmailSignIn": "Injira ukoresheje imeyili yawe muri Igenamiterere kugira ngo ubone imenyesha kuri imeyili, n'igihe porogaramu ifunze."
+  "alertEmailSignIn": "Injira ukoresheje imeyili yawe muri Igenamiterere kugira ngo ubone imenyesha kuri imeyili, n'igihe porogaramu ifunze.",
+  "portfolioHistory": "Ihinduka ry'agaciro"
 }

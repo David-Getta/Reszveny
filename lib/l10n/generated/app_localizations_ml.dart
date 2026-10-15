@@ -1773,4 +1773,7 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ആപ്പ് അടച്ചിരിക്കുമ്പോഴും ഇമെയിൽ വഴി അലേർട്ടുകൾ ലഭിക്കാൻ ക്രമീകരണത്തിൽ നിങ്ങളുടെ ഇമെയിൽ ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക.';
+
+  @override
+  String get portfolioHistory => 'കാലക്രമേണയുള്ള മൂല്യം';
 }

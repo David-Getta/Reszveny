@@ -1739,4 +1739,7 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'መተግበሪያው ዝግ ቢሆንም ማንቂያዎችን በኢሜይል ለማግኘት በቅንብሮች ውስጥ በኢሜይልዎ ይግቡ።';
+
+  @override
+  String get portfolioHistory => 'የዋጋ ለውጥ';
 }

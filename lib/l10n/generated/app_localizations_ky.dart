@@ -1769,4 +1769,7 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Колдонмо жабык турса да эскертмелерди электрондук почта аркылуу алуу үчүн Жөндөөлөрдөн электрондук почтаңыз менен кириңиз.';
+
+  @override
+  String get portfolioHistory => 'Нарктын динамикасы';
 }

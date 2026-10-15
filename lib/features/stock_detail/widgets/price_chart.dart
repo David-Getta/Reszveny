@@ -22,7 +22,14 @@ class ChartLevel {
 /// vonal és pont követi a görbét, felette az adott nap dátumával és árával,
 /// mint az Apple Részvények appjában.
 class PriceChart extends StatefulWidget {
-  const PriceChart({super.key, required this.history, required this.fmt, this.currency, this.levels = const []});
+  const PriceChart({
+    super.key,
+    required this.history,
+    required this.fmt,
+    this.currency,
+    this.levels = const [],
+    this.showChange = true,
+  });
 
   final PriceHistory history;
   final Fmt fmt;
@@ -30,6 +37,10 @@ class PriceChart extends StatefulWidget {
 
   /// Kiemelt árszintek; a látható ársávtól nagyon távoliak nem jelennek meg.
   final List<ChartLevel> levels;
+
+  /// Az időszak %-os változása a fejlécben (a portfóliónál félrevezető lenne,
+  /// mert a közbeni vételek is benne vannak).
+  final bool showChange;
 
   @override
   State<PriceChart> createState() => _PriceChartState();
@@ -109,7 +120,7 @@ class _PriceChartState extends State<PriceChart> {
                 ],
               ),
             ),
-            if (change != null)
+            if (change != null && widget.showChange)
               Text(
                 widget.fmt.percent(change, withSign: true),
                 style: theme.textTheme.titleMedium?.copyWith(color: color),
@@ -234,6 +245,9 @@ class _LinePainter extends CustomPainter {
 
   static const rightPad = 56.0;
 
+  /// Tengelyfelirat: nagy számnál tömören (1,2M), hogy elférjen.
+  String _axis(double v) => v.abs() >= 100000 ? fmt.compact(v) : fmt.number(v, decimals: v.abs() < 10 ? 2 : 0);
+
   /// A vízszintes helyhez (x) legközelebb eső pont indexe – idő szerint, mert a
   /// pontok az idő arányában helyezkednek el (hétvégi hézagokkal).
   static int indexAt(double x, double width, List<PricePoint> points) {
@@ -291,10 +305,7 @@ class _LinePainter extends CustomPainter {
       canvas.drawLine(Offset(0, y), Offset(w, y), gridPaint);
       final value = max - span * i / 2;
       final tp = TextPainter(
-        text: TextSpan(
-          text: fmt.number(value, decimals: value.abs() < 10 ? 2 : 0),
-          style: labelStyle,
-        ),
+        text: TextSpan(text: _axis(value), style: labelStyle),
         textDirection: TextDirection.ltr,
       )..layout(maxWidth: rightPad - 6);
       tp.paint(canvas, Offset(w + 6, y - tp.height / 2));
@@ -311,7 +322,7 @@ class _LinePainter extends CustomPainter {
       }
       final tp = TextPainter(
         text: TextSpan(
-          text: '${l.label} ${fmt.number(l.price, decimals: l.price.abs() < 10 ? 2 : 0)}',
+          text: '${l.label} ${_axis(l.price)}',
           style: labelStyle.copyWith(color: l.color, fontWeight: FontWeight.w700),
         ),
         textDirection: TextDirection.ltr,

@@ -1764,4 +1764,7 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ଆପ ବନ୍ଦ ଥିଲେ ମଧ୍ୟ ଇମେଲରେ ଆଲର୍ଟ ପାଇବା ପାଇଁ ସେଟିଂସରେ ଆପଣଙ୍କ ଇମେଲ ସହ ସାଇନ ଇନ କରନ୍ତୁ।';
+
+  @override
+  String get portfolioHistory => 'ସମୟ ସହ ମୂଲ୍ୟ';
 }

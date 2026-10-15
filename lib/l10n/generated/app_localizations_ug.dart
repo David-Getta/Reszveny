@@ -1769,4 +1769,7 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ئەپ تاقاق تۇرسىمۇ ئاگاھلاندۇرۇشلارنى ئېلخەت ئارقىلىق تاپشۇرۇۋېلىش ئۈچۈن تەڭشەكتە ئېلخېتىڭىز بىلەن كىرىڭ.';
+
+  @override
+  String get portfolioHistory => 'قىممەت ئۆزگىرىشى';
 }

@@ -1778,4 +1778,7 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Mag-sign in gamit ang imo e-mail sa Mga setting para makabaton sang mga alerto paagi sa e-mail, bisan sirado ang app.';
+
+  @override
+  String get portfolioHistory => 'Bili sa paglabay sang tion';
 }

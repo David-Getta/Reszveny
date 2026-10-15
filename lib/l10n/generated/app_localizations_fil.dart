@@ -1772,4 +1772,7 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Mag-sign in gamit ang iyong email sa Mga setting para makatanggap ng mga alerto sa email, kahit sarado ang app.';
+
+  @override
+  String get portfolioHistory => 'Halaga sa paglipas ng panahon';
 }

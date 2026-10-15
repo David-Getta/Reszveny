@@ -1773,4 +1773,7 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Appiin cufaa ta\'ee illee akeekkachiisa imeeliin argachuuf, Qindaa\'ina keessatti imeelii keetiin seeni.';
+
+  @override
+  String get portfolioHistory => 'Jijjiirama gatii';
 }

@@ -1768,4 +1768,7 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kirjaudu sisään sähköpostillasi Asetuksissa, niin saat hälytykset sähköpostiin, vaikka sovellus olisi suljettu.';
+
+  @override
+  String get portfolioHistory => 'Arvon kehitys';
 }

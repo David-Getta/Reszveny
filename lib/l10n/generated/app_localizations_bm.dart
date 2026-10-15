@@ -1763,4 +1763,7 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Don ni i ka e-mail ye Labɛnw kɔnɔ walasa ka lasɔminiw sɔrɔ e-mail fɛ, hali ni aplikasiyɔn datugulen don.';
+
+  @override
+  String get portfolioHistory => 'Sɔngɔ yɛlɛmali';
 }

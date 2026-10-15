@@ -478,5 +478,6 @@
   "syncFailed": "Daidaitawa ta gaza. Za a sake gwadawa ta atomatik.",
   "alertEmailTitle": "Imel idan faɗakarwa ta tashi",
   "alertEmailOn": "Muna duba faɗakarwarka bayan 'yan mintuna kuma mu aiko maka da imel, ko da manhajar a rufe take.",
-  "alertEmailSignIn": "Shiga da imel ɗinka a Saituna don karɓar faɗakarwa ta imel, ko da manhajar a rufe take."
+  "alertEmailSignIn": "Shiga da imel ɗinka a Saituna don karɓar faɗakarwa ta imel, ko da manhajar a rufe take.",
+  "portfolioHistory": "Ƙima a tsawon lokaci"
 }

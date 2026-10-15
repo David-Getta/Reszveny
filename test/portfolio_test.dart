@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/core/models/price_history.dart';
+import 'package:reszveny/features/portfolio/portfolio_history.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/analysis/analysis_options.dart';
@@ -229,5 +231,32 @@ void main() {
     expect(find.text('Total value'), findsOneWidget);
     expect(find.text('2,314.50 USD'), findsWidgets);
     expect(find.text('Positions'), findsOneWidget);
+  });
+
+  test('portfolio value over time: lots count from their purchase day, last known close, converted', () {
+    PriceHistory h(String s, List<double> closes) => PriceHistory(
+      symbol: s,
+      points: [for (final (i, c) in closes.indexed) PricePoint(time: DateTime(2026, 1, 1 + i), close: c)],
+    );
+    final value = portfolioValueHistory(
+      [
+        PortfolioLot(id: 'a', symbol: 'AAA', quantity: 2, price: 10, currency: 'USD', date: DateTime(2026, 1, 1)),
+        PortfolioLot(id: 'b', symbol: 'BBB', quantity: 1, price: 100, currency: 'EUR', date: DateTime(2026, 1, 3)),
+      ],
+      {
+        'AAA': h('AAA', [10, 11, 12, 13]),
+        // A BBB-nek a 4. napon nincs ára: az előző záróár marad.
+        'BBB': PriceHistory(
+          symbol: 'BBB',
+          points: [
+            PricePoint(time: DateTime(2026, 1, 2), close: 100),
+            PricePoint(time: DateTime(2026, 1, 3), close: 110),
+          ],
+        ),
+      },
+      (c) => c == 'EUR' ? 2.0 : 1.0,
+    )!;
+    expect(value.points.map((p) => (p.time.day, p.close)), [(1, 20.0), (2, 22.0), (3, 24.0 + 220), (4, 26.0 + 220)]);
+    expect(portfolioValueHistory(const [], const {}, (_) => 1), isNull);
   });
 }

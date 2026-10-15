@@ -1226,5 +1226,9 @@
   },
   "alertEmailTitle": "E-mail when an alert triggers",
   "alertEmailOn": "We check your alerts every few minutes and e-mail you, even when the app is closed.",
-  "alertEmailSignIn": "Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed."
+  "alertEmailSignIn": "Sign in with your e-mail in Settings to get alerts by e-mail, even when the app is closed.",
+  "portfolioHistory": "Value over time",
+  "@portfolioHistory": {
+    "description": "Title of the chart showing the total portfolio value over time."
+  }
 }

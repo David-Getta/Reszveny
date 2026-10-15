@@ -1761,4 +1761,7 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ऐप बंद रहलो पर ई-मेलसँ अलर्ट पेबाक लेल सेटिंग्समे अपन ई-मेलसँ साइन इन करू।';
+
+  @override
+  String get portfolioHistory => 'समयक संग मूल्य';
 }

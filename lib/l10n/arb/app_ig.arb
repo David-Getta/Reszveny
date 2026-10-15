@@ -478,5 +478,6 @@
   "syncFailed": "Mmekọrịta adaghị. Ọ ga-anwa ọzọ na-akpaghị aka.",
   "alertEmailTitle": "Email mgbe ọkwa malitere",
   "alertEmailOn": "Anyị na-elele ọkwa gị kwa nkeji ole na ole ma zitere gị email, ọbụlagodi mgbe emechiri app ahụ.",
-  "alertEmailSignIn": "Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ."
+  "alertEmailSignIn": "Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ.",
+  "portfolioHistory": "Uru ka oge na-aga"
 }

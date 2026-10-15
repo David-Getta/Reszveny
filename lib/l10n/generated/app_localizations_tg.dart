@@ -1768,4 +1768,7 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Барои гирифтани огоҳиҳо тавассути почтаи электронӣ, ҳатто вақте ки барнома баста аст, дар Танзимот бо почтаи электронии худ ворид шавед.';
+
+  @override
+  String get portfolioHistory => 'Динамикаи арзиш';
 }

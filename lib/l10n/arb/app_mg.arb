@@ -478,5 +478,6 @@
   "syncFailed": "Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy.",
   "alertEmailTitle": "Mailaka rehefa mipoitra ny fanairana",
   "alertEmailOn": "Hamarininay isaky ny minitra vitsivitsy ny fanairanao ary handefasanay mailaka ianao, na dia mihidy aza ny fampiharana.",
-  "alertEmailSignIn": "Midira amin'ny mailakao ao amin'ny Fikirakirana mba hahazoana fanairana amin'ny mailaka, na dia mihidy aza ny fampiharana."
+  "alertEmailSignIn": "Midira amin'ny mailakao ao amin'ny Fikirakirana mba hahazoana fanairana amin'ny mailaka, na dia mihidy aza ny fampiharana.",
+  "portfolioHistory": "Fivoaran'ny sanda"
 }

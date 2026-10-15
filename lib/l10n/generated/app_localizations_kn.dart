@@ -1772,4 +1772,7 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ಆ್ಯಪ್ ಮುಚ್ಚಿದ್ದರೂ ಇಮೇಲ್ ಮೂಲಕ ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯಲು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ಇಮೇಲ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.';
+
+  @override
+  String get portfolioHistory => 'ಸಮಯದೊಂದಿಗೆ ಮೌಲ್ಯ';
 }

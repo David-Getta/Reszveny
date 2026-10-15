@@ -1778,4 +1778,7 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Tsena ka imeile ya gago go Dipeakanyo gore o hwetše ditemošo ka imeile, le ge app e tswaletšwe.';
+
+  @override
+  String get portfolioHistory => 'Boleng go ya ka nako';
 }

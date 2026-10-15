@@ -1776,4 +1776,7 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Kena ka imeile ya hao ho Ditlhophiso hore o fumane ditsebiso ka imeile, leha app e kwetswe.';
+
+  @override
+  String get portfolioHistory => 'Boleng ho ya ka nako';
 }

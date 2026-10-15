@@ -1763,4 +1763,7 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ઍપ બંધ હોય ત્યારે પણ ઈ-મેઇલ પર અલર્ટ મેળવવા સેટિંગમાં તમારા ઈ-મેઇલથી સાઇન ઇન કરો.';
+
+  @override
+  String get portfolioHistory => 'સમય સાથે મૂલ્ય';
 }

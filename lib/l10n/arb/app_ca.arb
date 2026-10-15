@@ -478,5 +478,6 @@
   "syncFailed": "No s'ha pogut sincronitzar. Es tornarà a provar automàticament.",
   "alertEmailTitle": "Correu quan salti una alerta",
   "alertEmailOn": "Comprovem les teves alertes cada pocs minuts i t’enviem un correu, fins i tot amb l’app tancada.",
-  "alertEmailSignIn": "Inicia la sessió amb el teu correu a Configuració per rebre les alertes per correu, fins i tot amb l’app tancada."
+  "alertEmailSignIn": "Inicia la sessió amb el teu correu a Configuració per rebre les alertes per correu, fins i tot amb l’app tancada.",
+  "portfolioHistory": "Evolució del valor"
 }

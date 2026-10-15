@@ -478,5 +478,6 @@
   "syncFailed": "Hevdemkirin bi ser neket. Ew ê bi xweber dîsa biceribîne.",
   "alertEmailTitle": "E-name dema hişyariyek çêdibe",
   "alertEmailOn": "Em her çend deqeyan hişyariyên te kontrol dikin û ji te re e-name dişînin, heta dema ku sepan girtî be jî.",
-  "alertEmailSignIn": "Di Mîhengan de bi e-nameya xwe têkeve da ku hişyariyan bi e-nameyê bistînî, heta dema ku sepan girtî be jî."
+  "alertEmailSignIn": "Di Mîhengan de bi e-nameya xwe têkeve da ku hişyariyan bi e-nameyê bistînî, heta dema ku sepan girtî be jî.",
+  "portfolioHistory": "Nirx bi demê re"
 }

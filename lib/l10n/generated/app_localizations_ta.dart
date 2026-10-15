@@ -1774,4 +1774,7 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ஆப் மூடியிருந்தாலும் எச்சரிக்கைகளை மின்னஞ்சலில் பெற, அமைப்புகளில் உங்கள் மின்னஞ்சல் மூலம் உள்நுழையவும்.';
+
+  @override
+  String get portfolioHistory => 'காலப்போக்கில் மதிப்பு';
 }

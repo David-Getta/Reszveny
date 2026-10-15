@@ -1775,4 +1775,7 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Inicia la sessió amb el teu correu a Configuració per rebre les alertes per correu, fins i tot amb l’app tancada.';
+
+  @override
+  String get portfolioHistory => 'Evolució del valor';
 }

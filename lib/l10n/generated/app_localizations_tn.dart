@@ -1776,4 +1776,7 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Tsena ka imeile ya gago mo Dithulaganyong gore o amogele dikitsiso ka imeile, le fa app e tswalegile.';
+
+  @override
+  String get portfolioHistory => 'Boleng go ya ka nako';
 }

@@ -1762,4 +1762,7 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'ऐप बंद रहलो पर ई-मेल से अलर्ट पावे खातिर सेटिंग्स में अपना ई-मेल से साइन इन करीं।';
+
+  @override
+  String get portfolioHistory => 'समय के साथ मूल्य';
 }

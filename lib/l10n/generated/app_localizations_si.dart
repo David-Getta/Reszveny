@@ -1766,4 +1766,7 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'යෙදුම වසා ඇති විට පවා ඊමේල් මගින් ඇඟවීම් ලබා ගැනීමට සැකසීම් තුළ ඔබේ ඊමේල් සමඟ පුරන්න.';
+
+  @override
+  String get portfolioHistory => 'කාලයත් සමඟ වටිනාකම';
 }

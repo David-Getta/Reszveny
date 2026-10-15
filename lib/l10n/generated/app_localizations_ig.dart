@@ -1761,4 +1761,7 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Jiri email gị banye na Ntọala ka ị nweta ọkwa site na email, ọbụlagodi mgbe emechiri app ahụ.';
+
+  @override
+  String get portfolioHistory => 'Uru ka oge na-aga';
 }

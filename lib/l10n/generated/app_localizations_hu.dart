@@ -1771,4 +1771,7 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get alertEmailSignIn =>
       'Lépj be az e-mail-címeddel a beállításokban, és e-mailben is szólunk, akkor is, ha az app nincs megnyitva.';
+
+  @override
+  String get portfolioHistory => 'Értékalakulás';
 }
