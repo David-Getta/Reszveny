@@ -1802,4 +1802,81 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get digestHint =>
       'Buli Mmande: engeri by\'oyagala n\'emigabo gyo gye byatambulamu wiiki ewedde, n\'ennaku z\'ebivudde mu kitundu ky\'omwaka ebijja.';
+
+  @override
+  String get benchmarkTitle => 'Okugeraageranya ne S&P 500';
+
+  @override
+  String get benchmarkYours => 'By\'wagula';
+
+  @override
+  String get benchmarkIndex => 'Ssente ze zimu mu S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Kisinga index ebitundu ku kikumi $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Kiri emabega wa index ebitundu ku kikumi $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Nga buli kye wagula ssente zaakyo zaateekebwa mu S&P 500 index fund ku lunaku lwe lumu. Amagoba agagabanyizibwa tegazingiddwamu; amagoba ag\'emabega tegalagula ag\'omu maaso.';
+
+  @override
+  String get portfolioSell => 'Tunda';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Tunda $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ebbeeyi y\'okutunda buli mugabo ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Olunaku lw\'okutunda';
+
+  @override
+  String get portfolioSellAll => 'Gyonna';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Olina $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Watunda';
+
+  @override
+  String get portfolioRealized => 'Amagoba agafunise';
+
+  @override
+  String get portfolioClosed => 'Emigabo gye watunda gyonna';
+
+  @override
+  String get portfolioClosedNote => 'Emigabo gyonna gyatundiddwa';
+
+  @override
+  String get portfolioTransactions => 'Bye wagula ne bye watunda';
+
+  @override
+  String get portfolioRealizedByYear => 'Amagoba agafunise buli mwaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ebitundiddwa bisooka kugeraageranyizibwa n\'ebyo bye wasooka okugula (FIFO), nga bikyusiddwa ku muwendo gw\'okuwaanyisa ensimbi ogw\'olwaleero. Ku lipoota y\'omusolo, kozesa sitetimenti ya broker wo.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Okuva okwekenneenya kuno lwe kwakolebwa, ebivudde mu kitundu ky\'omwaka ebipya bifulumiziddwa ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ebivudde ebipya';
 }

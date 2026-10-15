@@ -53,9 +53,23 @@ class PortfolioSnapshot {
     required this.cost,
     required this.dayGain,
     this.annualDividend = 0,
+    this.realized = 0,
+    this.closed = const [],
+    this.realizedByYear = const {},
   });
 
+  /// A realizált nyereség az eladás éve szerint, az összesítés pénznemében
+  /// (dátum nélküli eladás: `null` kulcs).
+  final Map<int?, double> realizedByYear;
+
   final String currency;
+
+  /// Az eladásokon elért (realizált) nyereség az összesítés pénznemében,
+  /// a lezárt pozíciókkal együtt.
+  final double realized;
+
+  /// A teljesen eladott pozíciók és realizált nyereségük az összesítés pénznemében.
+  final List<({Position position, double? realized})> closed;
 
   /// Várható éves osztalék az összesítés pénznemében (az utolsó éves osztalék alapján).
   final double annualDividend;
@@ -85,12 +99,30 @@ class PortfolioSnapshot {
     required double? Function(String from, String to) rate,
     required String currency,
     Map<String, double> dividends = const {},
+    List<Position> closed = const [],
   }) {
     final rows = <PositionValue>[];
-    var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0;
+    var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0;
+    double? rateOf(String c) => c == currency ? 1.0 : rate(c, currency);
+    final closedRows = <({Position position, double? realized})>[];
+    final byYear = <int?, double>{};
+    void addRealized(Position p, double? r) {
+      if (r == null) return;
+      realized += p.realizedGain * r;
+      for (final e in p.realizedByYear.entries) {
+        byYear[e.key] = (byYear[e.key] ?? 0) + e.value * r;
+      }
+    }
+
+    for (final p in closed) {
+      final r = rateOf(p.currency);
+      addRealized(p, r);
+      closedRows.add((position: p, realized: r == null ? null : p.realizedGain * r));
+    }
     for (final p in positions) {
       final q = quotes[p.symbol];
-      final r = p.currency == currency ? 1.0 : rate(p.currency, currency);
+      final r = rateOf(p.currency);
+      addRealized(p, r);
       final row = PositionValue(
         position: p,
         price: q?.price,
@@ -123,6 +155,9 @@ class PortfolioSnapshot {
       cost: cost,
       dayGain: day,
       annualDividend: dividend,
+      realized: realized,
+      closed: closedRows,
+      realizedByYear: byYear,
     );
   }
 
@@ -133,6 +168,7 @@ class PortfolioSnapshot {
     required MarketDataProvider marketData,
     required FxService fx,
     required String currency,
+    List<Position> closed = const [],
   }) async {
     final quotes = <String, StockQuote>{};
     final rates = <String, double>{};
@@ -161,9 +197,19 @@ class PortfolioSnapshot {
     await Future.wait([
       for (final p in positions) quote(p.symbol),
       for (final s in {for (final p in positions) p.symbol}) dividend(s),
-      for (final c in {for (final p in positions) p.currency}.where((c) => c != currency)) fxRate(c),
+      for (final c in {
+        for (final p in [...positions, ...closed]) p.currency,
+      }.where((c) => c != currency))
+        fxRate(c),
     ]);
-    return compute(positions, quotes: quotes, rate: (from, _) => rates[from], currency: currency, dividends: dividends);
+    return compute(
+      positions,
+      quotes: quotes,
+      rate: (from, _) => rates[from],
+      currency: currency,
+      dividends: dividends,
+      closed: closed,
+    );
   }
 
   /// Az összesítés pénzneme: a megjelenítési pénznem, különben a pozíciók

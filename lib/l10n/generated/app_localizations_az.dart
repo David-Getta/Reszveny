@@ -1793,4 +1793,81 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get digestHint =>
       'Hər bazar ertəsi: seçilmişləriniz və portfeliniz keçən həftə necə dəyişdi və onların qarşıdakı hesabat tarixləri.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 ilə müqayisə';
+
+  @override
+  String get benchmarkYours => 'Alışlarınız';
+
+  @override
+  String get benchmarkIndex => 'Eyni məbləğ S&P 500-də';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'İndeksdən $points faiz bəndi yaxşı';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'İndeksdən $points faiz bəndi geri';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Sanki hər alışınız eyni gün S&P 500 indeks fonduna yatırılıb. Dividendlər daxil deyil; keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır.';
+
+  @override
+  String get portfolioSell => 'Sat';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol sat';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Səhm başına satış qiyməti ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Satış tarixi';
+
+  @override
+  String get portfolioSellAll => 'Hamısı';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Sizdə $quantity var';
+  }
+
+  @override
+  String get portfolioSold => 'Satıldı';
+
+  @override
+  String get portfolioRealized => 'Reallaşmış';
+
+  @override
+  String get portfolioClosed => 'Bağlı mövqelər';
+
+  @override
+  String get portfolioClosedNote => 'Bütün səhmlər satılıb';
+
+  @override
+  String get portfolioTransactions => 'Əməliyyatlar';
+
+  @override
+  String get portfolioRealizedByYear => 'İllər üzrə reallaşmış mənfəət';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Satışlar əvvəlcə ən köhnə alışlarınızla uyğunlaşdırılır (FIFO) və bugünkü məzənnə ilə çevrilir. Vergi bəyannaməsi üçün brokerinizin hesabatından istifadə edin.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Bu təhlildən sonra yeni rüblük hesabat dərc olunub ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Yeni hesabat';
 }

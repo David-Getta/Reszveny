@@ -3258,6 +3258,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Every Monday: how your favorites and portfolio moved last week, and their upcoming results dates.'**
   String get digestHint;
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'Compared with the S&P 500'**
+  String get benchmarkTitle;
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'Your purchases'**
+  String get benchmarkYours;
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'Same amounts in the S&P 500'**
+  String get benchmarkIndex;
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'{points} percentage points better than the index'**
+  String benchmarkAhead(String points);
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'{points} percentage points behind the index'**
+  String benchmarkBehind(String points);
+
+  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
+  ///
+  /// In en, this message translates to:
+  /// **'As if each purchase had gone into an S&P 500 index fund on the same day. Dividends not included; past returns do not predict future ones.'**
+  String get benchmarkHint;
+
+  /// Button: record a sale of shares in the portfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Sell'**
+  String get portfolioSell;
+
+  /// Dialog title for recording a sale.
+  ///
+  /// In en, this message translates to:
+  /// **'Sell {symbol}'**
+  String portfolioSellTitle(String symbol);
+
+  /// Field label in the sale dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Sale price per share ({currency})'**
+  String portfolioSellPrice(String currency);
+
+  /// Field label in the sale dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Sale date'**
+  String get portfolioSellDate;
+
+  /// Small button in the quantity field of the sale dialog: fill in all held shares.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get portfolioSellAll;
+
+  /// Error under the quantity field when selling more shares than held.
+  ///
+  /// In en, this message translates to:
+  /// **'You hold {quantity}'**
+  String portfolioSellTooMany(String quantity);
+
+  /// Prefix of a sale in the transaction list, e.g. 'Sold 5 × 231.45 USD'.
+  ///
+  /// In en, this message translates to:
+  /// **'Sold'**
+  String get portfolioSold;
+
+  /// Label: realized gain or loss from sales (short, sits next to 'Gain/loss').
+  ///
+  /// In en, this message translates to:
+  /// **'Realized'**
+  String get portfolioRealized;
+
+  /// Portfolio page section: positions whose shares were all sold.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed positions'**
+  String get portfolioClosed;
+
+  /// Subtitle of a closed position.
+  ///
+  /// In en, this message translates to:
+  /// **'All shares sold'**
+  String get portfolioClosedNote;
+
+  /// Title/button: the list of purchases and sales of a stock.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get portfolioTransactions;
+
+  /// Portfolio page section title: realized gains/losses from sales, one row per year.
+  ///
+  /// In en, this message translates to:
+  /// **'Realized gains by year'**
+  String get portfolioRealizedByYear;
+
+  /// Note under the yearly realized gains.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales are matched to your oldest purchases first (FIFO), converted at today\'s exchange rate. For your tax return, use your broker\'s statement.'**
+  String get portfolioRealizedHint;
+
+  /// Line in the dialog shown when opening an older saved analysis: the company has reported quarterly results since.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} has published new quarterly results since this analysis ({date}).'**
+  String staleNewResults(String symbol, String date);
+
+  /// Small badge on a saved analysis in the list: the company has reported quarterly results since the analysis.
+  ///
+  /// In en, this message translates to:
+  /// **'New results'**
+  String get newResultsBadge;
 }
 
 class _AppLocalizationsDelegate

@@ -66,13 +66,20 @@ class DigestSender {
   static ({List<String> portfolio, List<String> favorites, Map<String, String> currencies}) symbolsOf(
     Map<String, dynamic> data,
   ) {
-    final portfolio = <String>[], currencies = <String, String>{};
+    // A még birtokolt darabszám tickerenként (vétel +, eladás −); a teljesen
+    // eladott részvény kimarad.
+    final held = <String, double>{}, currencies = <String, String>{};
     for (final l in (data['lots'] as List? ?? const [])) {
-      if (l is! Map || l['symbol'] is! String) continue;
+      if (l is! Map || l['symbol'] is! String || l['quantity'] is! num) continue;
       final s = (l['symbol'] as String).toUpperCase();
-      if (!portfolio.contains(s)) portfolio.add(s);
+      final q = (l['quantity'] as num).toDouble();
+      held[s] = (held[s] ?? 0) + (l['side'] == 'sell' ? -q : q);
       if (l['currency'] is String) currencies[s] ??= l['currency'] as String;
     }
+    final portfolio = [
+      for (final e in held.entries)
+        if (e.value > 1e-9) e.key,
+    ];
     final favorites = <String>[
       for (final f in (data['favorites'] as List? ?? const []))
         if (f is String && !portfolio.contains(f.toUpperCase())) f.toUpperCase(),

@@ -1765,4 +1765,81 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get digestHint =>
       'በየሰኞ፦ ተወዳጆችዎ እና ፖርትፎሊዮዎ ባለፈው ሳምንት እንዴት እንደተንቀሳቀሱ እና የሚመጡት የውጤት ቀኖቻቸው።';
+
+  @override
+  String get benchmarkTitle => 'ከS&P 500 ጋር ሲነጻጸር';
+
+  @override
+  String get benchmarkYours => 'የእርስዎ ግዢዎች';
+
+  @override
+  String get benchmarkIndex => 'ተመሳሳይ መጠን በS&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ከኢንዴክሱ በ$points የመቶኛ ነጥብ የተሻለ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ከኢንዴክሱ በ$points የመቶኛ ነጥብ ያነሰ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'እያንዳንዱ ግዢ በዚያው ቀን በS&P 500 ኢንዴክስ ፈንድ ውስጥ ኢንቨስት እንደተደረገ ተደርጎ። የትርፍ ድርሻ አልተካተተም፤ ያለፈ ተመላሽ የወደፊቱን አይተነብይም።';
+
+  @override
+  String get portfolioSell => 'ሽጥ';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol ሽጥ';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'የሽያጭ ዋጋ በአክሲዮን ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'የሽያጭ ቀን';
+
+  @override
+  String get portfolioSellAll => 'ሁሉም';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'የያዙት $quantity ነው';
+  }
+
+  @override
+  String get portfolioSold => 'ተሽጧል';
+
+  @override
+  String get portfolioRealized => 'የተገኘ';
+
+  @override
+  String get portfolioClosed => 'የተዘጉ ይዞታዎች';
+
+  @override
+  String get portfolioClosedNote => 'ሁሉም አክሲዮኖች ተሸጠዋል';
+
+  @override
+  String get portfolioTransactions => 'ግብይቶች';
+
+  @override
+  String get portfolioRealizedByYear => 'የተገኘ ትርፍ በዓመት';
+
+  @override
+  String get portfolioRealizedHint =>
+      'ሽያጮች በመጀመሪያ ከቀደሙት ግዢዎችዎ ጋር ይዛመዳሉ (FIFO)፣ በዛሬው የምንዛሪ ተመን ይቀየራሉ። ለግብር ማስታወቂያዎ የደላላዎን መግለጫ ይጠቀሙ።';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ከዚህ ትንተና በኋላ አዲስ የሩብ ዓመት ውጤቶች ታትመዋል ($symbol፣ $date)።';
+  }
+
+  @override
+  String get newResultsBadge => 'አዲስ ውጤቶች';
 }

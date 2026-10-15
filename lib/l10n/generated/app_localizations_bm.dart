@@ -1789,4 +1789,81 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get digestHint =>
       'Ntɛnɛn o ntɛnɛn: i ka diyanyelenw ni i ka aksiyɔn kɛsu tun bɛ cogo min dɔgɔkun tɛmɛnen na, ani u ka jatebɔ don nataw.';
+
+  @override
+  String get benchmarkTitle => 'Ni S&P 500 sanga';
+
+  @override
+  String get benchmarkYours => 'I ka sanniw';
+
+  @override
+  String get benchmarkIndex => 'Wari kelen in S&P 500 kɔnɔ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ka fisa ni indɛkisi ye ni pursantazi pwɛn $points ye';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ka dɔgɔ ni indɛkisi ye ni pursantazi pwɛn $points ye';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'I n\'a fɔ i ka sanni kelen kelen bɛɛ wari donna S&P 500 indɛkisi fɔn na o don kelen in. Tɔnɔ tilalenw ma jate; tɛmɛnen tɔnɔ tɛ nata tɔnɔ fɔ ka kɔn.';
+
+  @override
+  String get portfolioSell => 'Feere';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol feere';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Aksiyɔn kelen feereli sɔngɔ ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Feereli don';
+
+  @override
+  String get portfolioSellAll => 'A bɛɛ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'I bolo ye $quantity ye';
+  }
+
+  @override
+  String get portfolioSold => 'Feerelen';
+
+  @override
+  String get portfolioRealized => 'Tɔnɔ sɔrɔlen';
+
+  @override
+  String get portfolioClosed => 'Aksiyɔn feerelenw';
+
+  @override
+  String get portfolioClosedNote => 'Aksiyɔnw bɛɛ feerela';
+
+  @override
+  String get portfolioTransactions => 'Sanniw ni feereliw';
+
+  @override
+  String get portfolioRealizedByYear => 'Tɔnɔ sɔrɔlen san o san';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Feereliw bɛ bɛn i ka sanni kɔrɔw ma fɔlɔ (FIFO), ka falen bi wari falen sɔngɔ la. I ka nisɔngɔ dantigɛli kama, i ka broker ka sɛbɛn baara.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kabini nin sɛgɛsɛgɛli kɛra, kalo saba jatebɔ kura bɔra ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Jatebɔ kura';
 }

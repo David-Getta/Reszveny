@@ -1787,4 +1787,81 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get digestHint =>
       'Altine bu nekk: naka la yi nga gënal ak sa aksiyoŋ yi demee ci ayu-bés bi weesu, ak bési njureef yi ñuy ñëw.';
+
+  @override
+  String get benchmarkTitle => 'Méngale ak S&P 500';
+
+  @override
+  String get benchmarkYours => 'Li nga jënd';
+
+  @override
+  String get benchmarkIndex => 'Xaalis bu mel noonu ci S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Gën indeks bi ak $points poñ ci téeméer';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ci gannaaw indeks bi ak $points poñ ci téeméer';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ni ku xaalisu bépp jënd duggoon ci benn fonds indeks S&P 500 ci bés boobu. Dividende yi bokkuñu ci; njariñ yu weesu wonewul yu ëllëg.';
+
+  @override
+  String get portfolioSell => 'Jaay';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Jaay $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Njëgu jaay aksiyoŋ bu nekk ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Bisu jaay';
+
+  @override
+  String get portfolioSellAll => 'Lépp';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Am nga $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Jaaye';
+
+  @override
+  String get portfolioRealized => 'Benefis bu wér';
+
+  @override
+  String get portfolioClosed => 'Aksiyoŋ yi nga jaay';
+
+  @override
+  String get portfolioClosedNote => 'Jaay nga aksiyoŋ yi yépp';
+
+  @override
+  String get portfolioTransactions => 'Jënd ak jaay';
+
+  @override
+  String get portfolioRealizedByYear => 'Benefis bu wér at bu nekk';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Jaay yi dañuy jëkk a méngoo ak sa jënd yi gën a yàgg (FIFO), ñu soppi ko ci njëgu weccit xaalis bu tey. Ngir sa déclaration lempo, jëfandikool kayitu sa broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ci gannaaw saytu bii, njureef yu bees yu ñetti weer génn nañu ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Njureef yu bees';
 }

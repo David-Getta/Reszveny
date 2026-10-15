@@ -1800,4 +1800,81 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get digestHint =>
       'Κάθε Δευτέρα: πώς κινήθηκαν τα αγαπημένα και το χαρτοφυλάκιό σας την προηγούμενη εβδομάδα, και οι επερχόμενες ημερομηνίες αποτελεσμάτων τους.';
+
+  @override
+  String get benchmarkTitle => 'Σύγκριση με τον S&P 500';
+
+  @override
+  String get benchmarkYours => 'Οι αγορές σας';
+
+  @override
+  String get benchmarkIndex => 'Ίδια ποσά στον S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points ποσοστιαίες μονάδες καλύτερα από τον δείκτη';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points ποσοστιαίες μονάδες πίσω από τον δείκτη';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Σαν να είχε επενδυθεί κάθε αγορά την ίδια μέρα σε ένα αμοιβαίο κεφάλαιο δείκτη S&P 500. Χωρίς μερίσματα· οι παρελθούσες αποδόσεις δεν προβλέπουν τις μελλοντικές.';
+
+  @override
+  String get portfolioSell => 'Πώληση';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Πώληση $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Τιμή πώλησης ανά μετοχή ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ημερομηνία πώλησης';
+
+  @override
+  String get portfolioSellAll => 'Όλες';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Έχετε $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Πωλήθηκαν';
+
+  @override
+  String get portfolioRealized => 'Πραγματοποιημένο';
+
+  @override
+  String get portfolioClosed => 'Κλειστές θέσεις';
+
+  @override
+  String get portfolioClosedNote => 'Όλες οι μετοχές πωλήθηκαν';
+
+  @override
+  String get portfolioTransactions => 'Συναλλαγές';
+
+  @override
+  String get portfolioRealizedByYear => 'Πραγματοποιημένα κέρδη ανά έτος';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Οι πωλήσεις αντιστοιχίζονται πρώτα με τις παλαιότερες αγορές σας (FIFO) και μετατρέπονται με τη σημερινή ισοτιμία. Για τη φορολογική σας δήλωση, χρησιμοποιήστε την κατάσταση του χρηματιστή σας.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Μετά από αυτή την ανάλυση δημοσιεύτηκαν νέα τριμηνιαία αποτελέσματα ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Νέα αποτελέσματα';
 }

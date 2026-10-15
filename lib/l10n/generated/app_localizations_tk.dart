@@ -1791,4 +1791,81 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get digestHint =>
       'Her duşenbe: saýlananlaryňyz we portfeliňiz geçen hepde nähili üýtgedi we olaryň ýakynlaşýan hasabat seneleri.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 bilen deňeşdirme';
+
+  @override
+  String get benchmarkYours => 'Satyn alanlaryňyz';
+
+  @override
+  String get benchmarkIndex => 'Şol möçber S&P 500-de';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Indeksden $points göterim bendi gowy';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Indeksden $points göterim bendi yzda';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Her satyn alyş şol gün S&P 500 indeks gaznasyna goýlan ýaly. Diwidendsiz; geçmişdäki girdeji geljegi çaklamaýar.';
+
+  @override
+  String get portfolioSell => 'Sat';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol sat';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Bir paýnamanyň satuw bahasy ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Satylan senesi';
+
+  @override
+  String get portfolioSellAll => 'Hemmesi';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Sizde $quantity bar';
+  }
+
+  @override
+  String get portfolioSold => 'Satyldy';
+
+  @override
+  String get portfolioRealized => 'Gazanylan';
+
+  @override
+  String get portfolioClosed => 'Ýapyk pozisiýalar';
+
+  @override
+  String get portfolioClosedNote => 'Ähli paýnamalar satyldy';
+
+  @override
+  String get portfolioTransactions => 'Amallar';
+
+  @override
+  String get portfolioRealizedByYear => 'Ýyllar boýunça gazanylan peýda';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Satuwlar ilki bilen iň köne satyn alyşlaryňyz bilen deňeşdirilýär (FIFO) we şu günüň walýuta hümmeti boýunça öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Bu seljermeden soň täze çärýek hasabaty çap edildi ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Täze hasabat';
 }

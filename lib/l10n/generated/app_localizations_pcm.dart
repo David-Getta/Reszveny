@@ -1792,4 +1792,81 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get digestHint =>
       'Every Monday: how your favourites and portfolio waka last week, and when their next results go come out.';
+
+  @override
+  String get benchmarkTitle => 'Compare am with S&P 500';
+
+  @override
+  String get benchmarkYours => 'Wetin you buy';
+
+  @override
+  String get benchmarkIndex => 'Same moni for S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points percentage points pass di index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points percentage points behind di index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Like say every moni wey you take buy, you put am for S&P 500 index fund dat same day. Dividend no dey inside; how e perform before no mean say na so e go be for future.';
+
+  @override
+  String get portfolioSell => 'Sell';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sell $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Price wey you sell each share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Day wey you sell';
+
+  @override
+  String get portfolioSellAll => 'All';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'You get $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Sold';
+
+  @override
+  String get portfolioRealized => 'Wetin you make';
+
+  @override
+  String get portfolioClosed => 'Stocks wey you don sell';
+
+  @override
+  String get portfolioClosedNote => 'You don sell all the shares';
+
+  @override
+  String get portfolioTransactions => 'Buy and sell';
+
+  @override
+  String get portfolioRealizedByYear => 'Wetin you make every year';
+
+  @override
+  String get portfolioRealizedHint =>
+      'We dey match wetin you sell with the oldest ones wey you buy first (FIFO), and we change am with today exchange rate. For your tax return, use the statement from your broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return '$symbol don release new quarterly results since dis analysis ($date).';
+  }
+
+  @override
+  String get newResultsBadge => 'New results';
 }

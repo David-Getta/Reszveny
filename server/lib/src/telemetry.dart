@@ -176,7 +176,19 @@ class TelemetryStore {
     Map<String, int> grouped(String sql) => {
       for (final r in _db.select(sql, [from])) r['k'] as String: r['n'] as int,
     };
+    int count(String sql) => _db.select(sql).first['n'] as int;
     return {
+      // Fiókok és bekapcsolt funkciók (a szinkronizált adatokból, pillanatnyi állapot).
+      'accounts': {
+        'email': count('SELECT COUNT(*) AS n FROM users WHERE email IS NOT NULL'),
+        'synced': count('SELECT COUNT(*) AS n FROM user_sync'),
+        'weekly_digest': count(
+          "SELECT COUNT(*) AS n FROM user_sync WHERE replace(data, ' ', '') LIKE '%\"weekly_digest\":true%'",
+        ),
+        'email_alerts_off': count(
+          "SELECT COUNT(*) AS n FROM user_sync WHERE replace(data, ' ', '') LIKE '%\"email_alerts\":false%'",
+        ),
+      },
       'days': rows,
       'platforms': grouped('SELECT platform AS k, COUNT(*) AS n FROM daily_users WHERE day >= ? GROUP BY platform'),
       'versions': grouped(

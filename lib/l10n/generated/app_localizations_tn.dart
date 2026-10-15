@@ -1802,4 +1802,81 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get digestHint =>
       'Mosupologo mongwe le mongwe: ka fa tse o di ratang le potefolio ya gago di tsamaileng ka teng mo bekeng e e fetileng, le malatsi a a tlang a dipoelo tsa tsone.';
+
+  @override
+  String get benchmarkTitle => 'Fa e bapisiwa le S&P 500';
+
+  @override
+  String get benchmarkYours => 'Tse o di rekileng';
+
+  @override
+  String get benchmarkIndex => 'Madi a a tshwanang mo S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Botoka go feta index ka dintlha tsa phesente tse $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Kwa morago ga index ka dintlha tsa phesente tse $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Jaaka e kete theko nngwe le nngwe e beeleditswe mo S&P 500 index fund ka letsatsi leo. Ga go akaretswe dipoelo tsa seabe; dipoelo tsa maloba ga di bolelele pele tsa isago.';
+
+  @override
+  String get portfolioSell => 'Rekisa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Rekisa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Tlhwatlhwa ya go rekisa ka shere ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Letlha la thekiso';
+
+  @override
+  String get portfolioSellAll => 'Tsotlhe';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'O na le $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'E rekisitswe';
+
+  @override
+  String get portfolioRealized => 'E bonweng';
+
+  @override
+  String get portfolioClosed => 'Dishere tse di rekisitsweng';
+
+  @override
+  String get portfolioClosedNote => 'Dishere tsotlhe di rekisitswe';
+
+  @override
+  String get portfolioTransactions => 'Ditheko le dithekiso';
+
+  @override
+  String get portfolioRealizedByYear => 'Poelo e e bonweng ka ngwaga';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Dithekiso di simolola go tsamaisiwa le ditheko tsa gago tsa bogologolo (FIFO), di fetolwa ka tlhwatlhwa ya phetolo ya gompieno. Go tlhagisa lekgetho la gago, dirisa setatemente sa broker ya gago.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Go tloga ka tshekatsheko eno, go phasaladitswe dipoelo tse dintšhwa tsa kotara ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Dipoelo tse dintšhwa';
 }

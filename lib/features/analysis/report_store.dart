@@ -112,7 +112,15 @@ class ReportStore extends ChangeNotifier {
 
   DateTime Function() clock = DateTime.now;
 
-  bool isStale(StockReport r) => clock().difference(r.generatedAt) >= staleAfter;
+  bool isStale(StockReport r) => clock().difference(r.generatedAt) >= staleAfter || hasNewResults(r);
+
+  /// Igaz, ha az elemzés óta megjelent a cég következő gyorsjelentése (a
+  /// jelentés napja után egy nappal már biztosan kint van).
+  bool hasNewResults(StockReport r) {
+    final e = r.nextEarnings;
+    if (e == null || !e.isAfter(r.generatedAt.subtract(const Duration(days: 1)))) return false;
+    return !clock().isBefore(DateTime(e.year, e.month, e.day).add(const Duration(days: 1)));
+  }
 
   /// Igaz, ha a mentett elemzés régi, és még nem döntött róla a felhasználó:
   /// ilyenkor a kártya megkérdezi, kell-e új.
@@ -253,11 +261,14 @@ class ReportStore extends ChangeNotifier {
     notifyListeners();
     try {
       final extras = await _loadExtras(symbol);
-      final r = await analyst.analyze(
+      final analyzed = await analyst.analyze(
         extras == null ? details : details.withExtras(extras),
         outputLanguage: outputLanguage,
         options: options,
       );
+      // A következő gyorsjelentés napját megjegyezzük: ha eltelik, jelezzük,
+      // hogy az elemzés még a friss eredmények előtt készült.
+      final r = analyzed.withNextEarnings(analyzed.nextEarnings ?? (extras ?? details.extras)?.nextEarnings?.date);
       // A felváltott elemzést megőrizzük az összevetéshez (azonos nyelven).
       final old = _reports[symbol];
       final keepOld = old != null && (old.language == null || r.language == null || old.language == r.language)

@@ -112,7 +112,14 @@ void main() {
 
   test('symbols: portfolio first, favorites without duplicates, at most 15', () {
     final s = DigestSender.symbolsOf({
-      'lots': [lot('aapl', 'USD'), lot('AAPL', 'USD'), lot('OTP', 'HUF')],
+      'lots': [
+        lot('aapl', 'USD'),
+        lot('AAPL', 'USD'),
+        lot('OTP', 'HUF'),
+        // A teljesen eladott TSLA már nem része a portfóliónak.
+        lot('TSLA', 'USD'),
+        {...lot('TSLA', 'USD'), 'side': 'sell'},
+      ],
       'favorites': ['AAPL', 'MSFT', for (var i = 0; i < 20; i++) 'X$i'],
     });
     expect(s.portfolio, ['AAPL', 'OTP']);

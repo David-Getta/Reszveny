@@ -1835,4 +1835,81 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get digestHint =>
       'كل يوم اثنين: أداء مفضلتك ومحفظتك خلال الأسبوع الماضي، ومواعيد نتائجها القادمة.';
+
+  @override
+  String get benchmarkTitle => 'مقارنة بمؤشر S&P 500';
+
+  @override
+  String get benchmarkYours => 'مشترياتك';
+
+  @override
+  String get benchmarkIndex => 'المبالغ نفسها في S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'أفضل من المؤشر بـ $points نقطة مئوية';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'أقل من المؤشر بـ $points نقطة مئوية';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'كما لو أن كل عملية شراء استُثمرت في صندوق مؤشر S&P 500 في اليوم نفسه. لا تشمل توزيعات الأرباح؛ العوائد السابقة لا تتنبأ بالعوائد المستقبلية.';
+
+  @override
+  String get portfolioSell => 'بيع';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'بيع $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'سعر بيع السهم ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'تاريخ البيع';
+
+  @override
+  String get portfolioSellAll => 'الكل';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'تملك $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'بيع';
+
+  @override
+  String get portfolioRealized => 'المحقق';
+
+  @override
+  String get portfolioClosed => 'المراكز المغلقة';
+
+  @override
+  String get portfolioClosedNote => 'تم بيع جميع الأسهم';
+
+  @override
+  String get portfolioTransactions => 'المعاملات';
+
+  @override
+  String get portfolioRealizedByYear => 'الأرباح المحققة حسب السنة';
+
+  @override
+  String get portfolioRealizedHint =>
+      'تُطابَق المبيعات مع أقدم مشترياتك أولًا (FIFO)، وتُحوَّل بسعر الصرف الحالي. لإقرارك الضريبي، استخدم كشف حساب الوسيط.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'صدرت نتائج ربع سنوية جديدة منذ هذا التحليل ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'نتائج جديدة';
 }

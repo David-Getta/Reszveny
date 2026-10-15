@@ -1798,4 +1798,81 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get digestHint =>
       'ప్రతి సోమవారం: గత వారం మీ ఇష్టమైనవి, పోర్ట్‌ఫోలియో ఎలా కదిలాయి, వాటి రాబోయే ఫలితాల తేదీలు.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500తో పోలిక';
+
+  @override
+  String get benchmarkYours => 'మీ కొనుగోళ్లు';
+
+  @override
+  String get benchmarkIndex => 'అదే మొత్తం S&P 500లో';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'సూచీ కంటే $points శాతం పాయింట్లు మెరుగు';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'సూచీ కంటే $points శాతం పాయింట్లు వెనుక';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ప్రతి కొనుగోలు మొత్తాన్ని అదే రోజు S&P 500 ఇండెక్స్ ఫండ్‌లో పెట్టుబడి పెట్టినట్లుగా. డివిడెండ్లు చేర్చలేదు; గత రాబడులు భవిష్యత్ రాబడులను అంచనా వేయవు.';
+
+  @override
+  String get portfolioSell => 'అమ్ము';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol అమ్ము';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ఒక్కో షేరు అమ్మకపు ధర ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'అమ్మకపు తేదీ';
+
+  @override
+  String get portfolioSellAll => 'అన్నీ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'మీ వద్ద $quantity ఉన్నాయి';
+  }
+
+  @override
+  String get portfolioSold => 'అమ్మారు';
+
+  @override
+  String get portfolioRealized => 'వాస్తవిక';
+
+  @override
+  String get portfolioClosed => 'మూసివేసిన పొజిషన్లు';
+
+  @override
+  String get portfolioClosedNote => 'అన్ని షేర్లు అమ్మేశారు';
+
+  @override
+  String get portfolioTransactions => 'లావాదేవీలు';
+
+  @override
+  String get portfolioRealizedByYear => 'సంవత్సరాల వారీగా వాస్తవిక లాభం';
+
+  @override
+  String get portfolioRealizedHint =>
+      'అమ్మకాలు ముందుగా మీ అత్యంత పాత కొనుగోళ్లతో సరిపోల్చబడతాయి (FIFO), నేటి మారకపు రేటులో మార్చబడతాయి. పన్ను రిటర్న్ కోసం మీ బ్రోకర్ స్టేట్‌మెంట్‌ను ఉపయోగించండి.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ఈ విశ్లేషణ తర్వాత కొత్త త్రైమాసిక ఫలితాలు విడుదలయ్యాయి ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'కొత్త ఫలితాలు';
 }

@@ -1771,4 +1771,81 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get digestHint =>
       'ທຸກວັນຈັນ: ລາຍການທີ່ມັກ ແລະ ພອດໂຟລິໂອຂອງທ່ານເຄື່ອນໄຫວແນວໃດໃນອາທິດແລ້ວ ແລະ ວັນປະກາດຜົນປະກອບການທີ່ຈະມາເຖິງ';
+
+  @override
+  String get benchmarkTitle => 'ທຽບກັບ S&P 500';
+
+  @override
+  String get benchmarkYours => 'ການຊື້ຂອງທ່ານ';
+
+  @override
+  String get benchmarkIndex => 'ຈຳນວນດຽວກັນໃນ S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ດີກວ່າດັດຊະນີ $points ຈຸດເປີເຊັນ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ຕ່ຳກວ່າດັດຊະນີ $points ຈຸດເປີເຊັນ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ຄືກັບວ່າການຊື້ແຕ່ລະຄັ້ງໄດ້ລົງທຶນໃນກອງທຶນດັດຊະນີ S&P 500 ໃນມື້ດຽວກັນ. ບໍ່ລວມເງິນປັນຜົນ; ຜົນຕອບແທນໃນອະດີດບໍ່ໄດ້ຄາດຄະເນອະນາຄົດ.';
+
+  @override
+  String get portfolioSell => 'ຂາຍ';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'ຂາຍ $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ລາຄາຂາຍຕໍ່ຮຸ້ນ ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'ວັນທີຂາຍ';
+
+  @override
+  String get portfolioSellAll => 'ທັງໝົດ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'ທ່ານມີ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'ຂາຍແລ້ວ';
+
+  @override
+  String get portfolioRealized => 'ທີ່ເກີດຂຶ້ນຈິງ';
+
+  @override
+  String get portfolioClosed => 'ຮຸ້ນທີ່ປິດແລ້ວ';
+
+  @override
+  String get portfolioClosedNote => 'ຂາຍຮຸ້ນທັງໝົດແລ້ວ';
+
+  @override
+  String get portfolioTransactions => 'ທຸລະກຳ';
+
+  @override
+  String get portfolioRealizedByYear => 'ກຳໄລທີ່ເກີດຂຶ້ນຈິງຕາມປີ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'ການຂາຍຈະຖືກຈັບຄູ່ກັບການຊື້ທີ່ເກົ່າທີ່ສຸດຂອງທ່ານກ່ອນ (FIFO), ແປງຕາມອັດຕາແລກປ່ຽນຂອງມື້ນີ້. ສຳລັບການຍື່ນພາສີ, ໃຫ້ໃຊ້ໃບແຈ້ງຍອດຈາກນາຍໜ້າຂອງທ່ານ.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ຫຼັງຈາກການວິເຄາະນີ້ ໄດ້ມີການປະກາດຜົນປະກອບການປະຈຳໄຕມາດໃໝ່ ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'ຜົນປະກອບການໃໝ່';
 }

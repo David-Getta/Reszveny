@@ -1799,4 +1799,81 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get digestHint =>
       'Konso Kilumbu ya ntete: mutindu bizolwa na nge ye portefeuille na nge kusalaka na mposo yina me luta, ye bilumbu ya ba résultats yina ke kwisa.';
+
+  @override
+  String get benchmarkTitle => 'Kufwanikisa ti S&P 500';
+
+  @override
+  String get benchmarkYours => 'Bima nge sumbaka';
+
+  @override
+  String get benchmarkIndex => 'Mbongo mosi na S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Mbote kuluta indice na ba point ya pourcentage $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Na nima ya indice na ba point ya pourcentage $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Bonso nde mbongo ya konso kisumbu tulamaka na fonds indiciel S&P 500 na kilumbu yina mosi. Ba dividende kele ve; mbote ya ntama ke songa ve ya ntangu ke kwisa.';
+
+  @override
+  String get portfolioSell => 'Teka';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Teka $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ntalu ya kuteka action mosi ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Kilumbu kia kuteka';
+
+  @override
+  String get portfolioSellAll => 'Yonso';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Nge kele ti $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Me tekama';
+
+  @override
+  String get portfolioRealized => 'Mbakulu ya kieleka';
+
+  @override
+  String get portfolioClosed => 'Position ya kukangama';
+
+  @override
+  String get portfolioClosedNote => 'Ba action yonso me tekama';
+
+  @override
+  String get portfolioTransactions => 'Kusumba ti kuteka';
+
+  @override
+  String get portfolioRealizedByYear => 'Mbakulu ya kieleka na mvula';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Bo ke tadila ntete kuteka ti kusumba na nge ya ntama kibeni (FIFO), bo me soba yo na ntalu ya nsobolo ya bubu yai. Sambu na mukanda ya mpaku, sadila mukanda ya broker na nge.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Banda analyse yai, ba résultats ya mpa ya trimestre me basika ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Résultats ya mpa';
 }

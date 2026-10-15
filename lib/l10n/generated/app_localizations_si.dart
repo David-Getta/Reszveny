@@ -1792,4 +1792,81 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get digestHint =>
       'සෑම සඳුදාවකම: පසුගිය සතියේ ඔබේ ප්‍රියතම සහ කළඹ චලනය වූ ආකාරය සහ ඒවායේ ඉදිරි ප්‍රතිඵල දින.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 සමඟ සැසඳීම';
+
+  @override
+  String get benchmarkYours => 'ඔබේ මිලදී ගැනීම්';
+
+  @override
+  String get benchmarkIndex => 'එම මුදල S&P 500 හි';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'දර්ශකයට වඩා ප්‍රතිශත ලක්ෂ්‍ය $pointsක් හොඳයි';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'දර්ශකයට වඩා ප්‍රතිශත ලක්ෂ්‍ය $pointsක් පසුපසින්';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'එක් එක් මිලදී ගැනීමේ මුදල එදිනම S&P 500 දර්ශක අරමුදලක ආයෝජනය කළා සේ. ලාභාංශ ඇතුළත් නොවේ; අතීත ප්‍රතිලාභ අනාගත ප්‍රතිලාභ පුරෝකථනය නොකරයි.';
+
+  @override
+  String get portfolioSell => 'විකුණන්න';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol විකුණන්න';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'කොටසක විකුණුම් මිල ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'විකුණූ දිනය';
+
+  @override
+  String get portfolioSellAll => 'සියල්ල';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'ඔබ සතුව $quantity ඇත';
+  }
+
+  @override
+  String get portfolioSold => 'විකුණන ලදී';
+
+  @override
+  String get portfolioRealized => 'ලැබූ';
+
+  @override
+  String get portfolioClosed => 'වසා දැමූ ස්ථාන';
+
+  @override
+  String get portfolioClosedNote => 'සියලු කොටස් විකුණා ඇත';
+
+  @override
+  String get portfolioTransactions => 'ගනුදෙනු';
+
+  @override
+  String get portfolioRealizedByYear => 'වසර අනුව ලැබූ ලාභය';
+
+  @override
+  String get portfolioRealizedHint =>
+      'විකුණුම් පළමුව ඔබේ පැරණිතම මිලදී ගැනීම් සමඟ ගළපනු ලැබේ (FIFO), අද විනිමය අනුපාතයට පරිවර්තනය කර. බදු වාර්තාව සඳහා ඔබේ තැරැව්කරුගේ ප්‍රකාශය භාවිත කරන්න.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'මෙම විශ්ලේෂණයෙන් පසු නව කාර්තුමය ප්‍රතිඵල ප්‍රකාශයට පත් කර ඇත ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'නව ප්‍රතිඵල';
 }

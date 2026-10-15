@@ -1798,4 +1798,81 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get digestHint =>
       'Lolemba lililonse: momwe zokondedwa zanu ndi masheya anu zinayendera sabata yatha, ndi masiku a zotsatira zawo omwe akubwera.';
+
+  @override
+  String get benchmarkTitle => 'Poyerekeza ndi S&P 500';
+
+  @override
+  String get benchmarkYours => 'Zomwe munagula';
+
+  @override
+  String get benchmarkIndex => 'Ndalama zomwezo mu S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Bwino kuposa index ndi mapointi a peresenti $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Kumbuyo kwa index ndi mapointi a peresenti $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ngati kuti chilichonse chomwe munagula chinayikidwa mu S&P 500 index fund tsiku lomwelo. Popanda magawo a phindu; phindu lakale siliwonetsa phindu la mtsogolo.';
+
+  @override
+  String get portfolioSell => 'Gulitsani';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Gulitsani $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Mtengo wogulitsira pa sheya iliyonse ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Tsiku logulitsa';
+
+  @override
+  String get portfolioSellAll => 'Zonse';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Muli ndi $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Zagulitsidwa';
+
+  @override
+  String get portfolioRealized => 'Phindu lenileni';
+
+  @override
+  String get portfolioClosed => 'Masheya ogulitsidwa onse';
+
+  @override
+  String get portfolioClosedNote => 'Masheya onse agulitsidwa';
+
+  @override
+  String get portfolioTransactions => 'Zogula ndi zogulitsa';
+
+  @override
+  String get portfolioRealizedByYear => 'Phindu lenileni pa chaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Zogulitsa zimayamba kufananizidwa ndi zogula zanu zakale kwambiri (FIFO), kusinthidwa pa mtengo wosinthira ndalama wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kuyambira kusanthula kumeneku, zotsatira zatsopano za kotala zasindikizidwa ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Zotsatira zatsopano';
 }

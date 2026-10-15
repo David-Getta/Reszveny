@@ -1801,4 +1801,81 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get digestHint =>
       'ஒவ்வொரு திங்களும்: கடந்த வாரம் உங்கள் பிடித்தவையும் போர்ட்ஃபோலியோவும் எப்படி நகர்ந்தன, அவற்றின் வரவிருக்கும் முடிவுத் தேதிகள்.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 உடன் ஒப்பீடு';
+
+  @override
+  String get benchmarkYours => 'உங்கள் வாங்குதல்கள்';
+
+  @override
+  String get benchmarkIndex => 'அதே தொகை S&P 500-இல்';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'குறியீட்டை விட $points சதவீதப் புள்ளிகள் சிறப்பு';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'குறியீட்டை விட $points சதவீதப் புள்ளிகள் பின்னால்';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ஒவ்வொரு வாங்குதலின் தொகையும் அதே நாளில் S&P 500 குறியீட்டு நிதியில் முதலீடு செய்யப்பட்டது போல. ஈவுத்தொகை சேர்க்கப்படவில்லை; கடந்தகால வருமானம் எதிர்கால வருமானத்தைக் கணிக்காது.';
+
+  @override
+  String get portfolioSell => 'விற்';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol விற்';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ஒரு பங்கின் விற்பனை விலை ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'விற்ற தேதி';
+
+  @override
+  String get portfolioSellAll => 'அனைத்தும்';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'உங்களிடம் $quantity உள்ளது';
+  }
+
+  @override
+  String get portfolioSold => 'விற்றது';
+
+  @override
+  String get portfolioRealized => 'ஈட்டியது';
+
+  @override
+  String get portfolioClosed => 'மூடிய நிலைகள்';
+
+  @override
+  String get portfolioClosedNote => 'அனைத்து பங்குகளும் விற்கப்பட்டன';
+
+  @override
+  String get portfolioTransactions => 'பரிவர்த்தனைகள்';
+
+  @override
+  String get portfolioRealizedByYear => 'ஆண்டுவாரியாக ஈட்டிய லாபம்';
+
+  @override
+  String get portfolioRealizedHint =>
+      'விற்பனைகள் முதலில் உங்கள் மிகப் பழைய வாங்குதல்களுடன் பொருத்தப்படுகின்றன (FIFO), இன்றைய மாற்று விகிதத்தில் மாற்றப்படுகின்றன. வரி தாக்கலுக்கு உங்கள் தரகரின் அறிக்கையைப் பயன்படுத்தவும்.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'இந்தப் பகுப்பாய்வுக்குப் பிறகு புதிய காலாண்டு முடிவுகள் வெளியாகியுள்ளன ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'புதிய முடிவுகள்';
 }

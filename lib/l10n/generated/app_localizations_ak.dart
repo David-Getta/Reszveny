@@ -1791,4 +1791,81 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get digestHint =>
       'Dwoda biara: sɛnea nea wopɛ ne wo nkyɛfa kɔɔ so nnawɔtwe a atwam no, ne da a wɔbɛda wɔn akontaabu adi.';
+
+  @override
+  String get benchmarkTitle => 'Ɛne S&P 500 a wɔde toto ho';
+
+  @override
+  String get benchmarkYours => 'Nea wotɔe';
+
+  @override
+  String get benchmarkIndex => 'Sika koro no ara wɔ S&P 500 mu';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ɛye sen index no ɔha mu nkyɛmu $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ɛka index no akyi ɔha mu nkyɛmu $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Te sɛ nea wode nneɛma a wotɔe biara sika hyɛɛ S&P 500 index fund mu da koro no ara. Mfaso a wɔkyɛ (dividend) nka ho; mfaso a atwam nkyerɛ daakye de.';
+
+  @override
+  String get portfolioSell => 'Tɔn';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Tɔn $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Kyɛfa biara tɔn bo ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Da a wotɔn';
+
+  @override
+  String get portfolioSellAll => 'Ne nyinaa';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Wowɔ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Watɔn';
+
+  @override
+  String get portfolioRealized => 'Mfaso a wonyae';
+
+  @override
+  String get portfolioClosed => 'Nkyɛfa a woatɔn';
+
+  @override
+  String get portfolioClosedNote => 'Woatɔn kyɛfa no nyinaa';
+
+  @override
+  String get portfolioTransactions => 'Adetɔ ne adetɔn';
+
+  @override
+  String get portfolioRealizedByYear => 'Mfaso a wonyae afe biara';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Wɔde nea wotɔn no hyia w\'adetɔ a edi kan no ho kan (FIFO), na wɔsesa no ɛnnɛ sika sesa bo so. Fa wo broker no krataa di dwuma ma w\'apoobɔ ho nsɛm.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Wɔayi akontaabu foforo a ɛfa abosome mmiɛnsa ho adi fi bere a wɔyɛɛ nhwehwɛmu yi ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Akontaabu foforo';
 }

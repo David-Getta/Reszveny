@@ -1800,4 +1800,81 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get digestHint =>
       'Ամեն երկուշաբթի՝ ինչպես են անցյալ շաբաթ շարժվել ձեր ընտրյալներն ու պորտֆելը, և նրանց արդյունքների մոտակա ամսաթվերը։';
+
+  @override
+  String get benchmarkTitle => 'Համեմատած S&P 500-ի հետ';
+
+  @override
+  String get benchmarkYours => 'Ձեր գնումները';
+
+  @override
+  String get benchmarkIndex => 'Նույն գումարները S&P 500-ում';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ինդեքսից $points տոկոսային կետով լավ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ինդեքսից $points տոկոսային կետով հետ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Կարծես յուրաքանչյուր գնում նույն օրը ներդրված լիներ S&P 500 ինդեքսային ֆոնդում։ Առանց շահաբաժինների․ անցյալ եկամտաբերությունը չի կանխատեսում ապագան։';
+
+  @override
+  String get portfolioSell => 'Վաճառել';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Վաճառել $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Մեկ բաժնետոմսի վաճառքի գին ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Վաճառքի ամսաթիվ';
+
+  @override
+  String get portfolioSellAll => 'Բոլորը';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Դուք ունեք $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Վաճառված';
+
+  @override
+  String get portfolioRealized => 'Իրացված';
+
+  @override
+  String get portfolioClosed => 'Փակված դիրքեր';
+
+  @override
+  String get portfolioClosedNote => 'Բոլոր բաժնետոմսերը վաճառված են';
+
+  @override
+  String get portfolioTransactions => 'Գործարքներ';
+
+  @override
+  String get portfolioRealizedByYear => 'Իրացված շահույթ ըստ տարիների';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Վաճառքները նախ համադրվում են ձեր ամենահին գնումների հետ (FIFO) և փոխարկվում այսօրվա փոխարժեքով։ Հարկային հայտարարագրի համար օգտագործեք ձեր բրոքերի քաղվածքը։';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Այս վերլուծությունից հետո հրապարակվել են եռամսյակային նոր արդյունքներ ($symbol, $date)։';
+  }
+
+  @override
+  String get newResultsBadge => 'Նոր արդյունքներ';
 }

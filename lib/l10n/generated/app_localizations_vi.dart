@@ -1787,4 +1787,81 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get digestHint =>
       'Mỗi thứ Hai: mục yêu thích và danh mục của bạn biến động ra sao trong tuần trước, cùng ngày công bố kết quả kinh doanh sắp tới.';
+
+  @override
+  String get benchmarkTitle => 'So với S&P 500';
+
+  @override
+  String get benchmarkYours => 'Khoản mua của bạn';
+
+  @override
+  String get benchmarkIndex => 'Cùng số tiền vào S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Cao hơn chỉ số $points điểm phần trăm';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Thấp hơn chỉ số $points điểm phần trăm';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Như thể mỗi khoản mua được đầu tư vào một quỹ chỉ số S&P 500 trong cùng ngày. Không tính cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.';
+
+  @override
+  String get portfolioSell => 'Bán';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Bán $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Giá bán mỗi cổ phiếu ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ngày bán';
+
+  @override
+  String get portfolioSellAll => 'Tất cả';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Bạn đang giữ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Đã bán';
+
+  @override
+  String get portfolioRealized => 'Đã thực hiện';
+
+  @override
+  String get portfolioClosed => 'Vị thế đã đóng';
+
+  @override
+  String get portfolioClosedNote => 'Đã bán hết cổ phiếu';
+
+  @override
+  String get portfolioTransactions => 'Giao dịch';
+
+  @override
+  String get portfolioRealizedByYear => 'Lãi đã thực hiện theo năm';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Các lần bán được khớp trước với những lần mua cũ nhất của bạn (FIFO), quy đổi theo tỷ giá hôm nay. Khi khai thuế, hãy dùng sao kê của công ty môi giới.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kể từ phân tích này, kết quả kinh doanh quý mới đã được công bố ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Kết quả mới';
 }

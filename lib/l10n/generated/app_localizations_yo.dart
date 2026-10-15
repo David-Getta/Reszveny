@@ -1791,4 +1791,81 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get digestHint =>
       'Ní gbogbo Ọjọ́ Ajé: bí àwọn ààyò rẹ àti àpò ìdókòwò rẹ ṣe lọ ní ọ̀sẹ̀ tó kọjá, àti àwọn ọjọ́ àbájáde wọn tó ń bọ̀.';
+
+  @override
+  String get benchmarkTitle => 'Ìfiwéra pẹ̀lú S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ohun tí o rà';
+
+  @override
+  String get benchmarkIndex => 'Iye kan náà nínú S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ó dára ju atọ́ka lọ ní ààmì ìdá-ọgọ́rùn-ún $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ó wà lẹ́yìn atọ́ka ní ààmì ìdá-ọgọ́rùn-ún $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Bí ẹni pé owó ọjà kọ̀ọ̀kan tí o rà ni a fi sínú owó-àkójọ atọ́ka S&P 500 ní ọjọ́ kan náà. Kò kan èrè ìpín; èrè àtẹ̀yìnwá kò sọ tẹ́lẹ̀ èrè ọjọ́ iwájú.';
+
+  @override
+  String get portfolioSell => 'Tà á';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ta $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Iye owó títà fún ìpín kọ̀ọ̀kan ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ọjọ́ títà';
+
+  @override
+  String get portfolioSellAll => 'Gbogbo rẹ̀';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ìpín $quantity ni o ní';
+  }
+
+  @override
+  String get portfolioSold => 'Títà';
+
+  @override
+  String get portfolioRealized => 'Tí a rí gbà';
+
+  @override
+  String get portfolioClosed => 'Àwọn ohun ìní tí a ti tà';
+
+  @override
+  String get portfolioClosedNote => 'Gbogbo ìpín ni a ti tà';
+
+  @override
+  String get portfolioTransactions => 'Àwọn ìdúnàdúrà';
+
+  @override
+  String get portfolioRealizedByYear => 'Èrè tí a rí gbà lọ́dọọdún';
+
+  @override
+  String get portfolioRealizedHint =>
+      'A máa ń kọ́kọ́ so títà mọ́ àwọn ìrajà rẹ tó pẹ́ jù lọ (FIFO), a sì ń yí i padà ní ìwọ̀n pàṣípààrọ̀ ti òní. Fún ìfisùn owó-orí rẹ, lo ìwé ìṣirò alágbàtà rẹ.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Láti ìgbà ìtúpalẹ̀ yìí, àbájáde ìdámẹ́rin ọdún tuntun ti jáde ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Àbájáde tuntun';
 }

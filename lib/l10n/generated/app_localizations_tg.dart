@@ -1794,4 +1794,81 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get digestHint =>
       'Ҳар душанбе: интихобшудаҳо ва портфели шумо ҳафтаи гузашта чӣ гуна тағйир ёфтанд ва санаҳои навбатии натиҷаҳои онҳо.';
+
+  @override
+  String get benchmarkTitle => 'Муқоиса бо S&P 500';
+
+  @override
+  String get benchmarkYours => 'Харидҳои шумо';
+
+  @override
+  String get benchmarkIndex => 'Ҳамон маблағҳо дар S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Аз индекс $points банди фоизӣ беҳтар';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Аз индекс $points банди фоизӣ қафо';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Гӯё ҳар як харид дар ҳамон рӯз ба фонди индексии S&P 500 гузошта шуда бошад. Бе дивидендҳо; даромади гузашта даромади ояндаро пешгӯӣ намекунад.';
+
+  @override
+  String get portfolioSell => 'Фурӯш';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Фурӯхтани $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Нархи фурӯши як саҳмия ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Санаи фурӯш';
+
+  @override
+  String get portfolioSellAll => 'Ҳама';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Шумо $quantity доред';
+  }
+
+  @override
+  String get portfolioSold => 'Фурӯхта шуд';
+
+  @override
+  String get portfolioRealized => 'Воқеӣ';
+
+  @override
+  String get portfolioClosed => 'Мавқеъҳои пӯшида';
+
+  @override
+  String get portfolioClosedNote => 'Ҳамаи саҳмияҳо фурӯхта шуданд';
+
+  @override
+  String get portfolioTransactions => 'Амалиётҳо';
+
+  @override
+  String get portfolioRealizedByYear => 'Фоидаи воқеӣ аз рӯи солҳо';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Фурӯшҳо аввал бо харидҳои қадимтарини шумо мувофиқ карда мешаванд (FIFO) ва бо қурби имрӯза табдил дода мешаванд. Барои эъломияи андоз аз ҳисоботи брокери худ истифода баред.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Пас аз ин таҳлил натиҷаҳои нави семоҳа нашр шуданд ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Натиҷаҳои нав';
 }

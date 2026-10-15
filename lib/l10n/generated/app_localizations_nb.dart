@@ -1792,4 +1792,81 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get digestHint =>
       'Hver mandag: hvordan favorittene og porteføljen din beveget seg forrige uke, og kommende resultatdatoer.';
+
+  @override
+  String get benchmarkTitle => 'Sammenlignet med S&P 500';
+
+  @override
+  String get benchmarkYours => 'Dine kjøp';
+
+  @override
+  String get benchmarkIndex => 'Samme beløp i S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points prosentpoeng bedre enn indeksen';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points prosentpoeng bak indeksen';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Som om hvert kjøp var investert i et S&P 500-indeksfond samme dag. Utbytte ikke medregnet; historisk avkastning forutsier ikke fremtidig avkastning.';
+
+  @override
+  String get portfolioSell => 'Selg';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Selg $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Salgspris per aksje ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Salgsdato';
+
+  @override
+  String get portfolioSellAll => 'Alle';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Du har $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Solgt';
+
+  @override
+  String get portfolioRealized => 'Realisert';
+
+  @override
+  String get portfolioClosed => 'Lukkede posisjoner';
+
+  @override
+  String get portfolioClosedNote => 'Alle aksjer solgt';
+
+  @override
+  String get portfolioTransactions => 'Transaksjoner';
+
+  @override
+  String get portfolioRealizedByYear => 'Realisert gevinst per år';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Salg avregnes først mot dine eldste kjøp (FIFO) og omregnes til dagens valutakurs. Bruk meglerens oppgave til skattemeldingen.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Siden denne analysen er det publisert nye kvartalsresultater ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nye resultater';
 }

@@ -1795,4 +1795,81 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get digestHint =>
       'Ар дүйшөмбү: тандалмаларыңыз жана портфелиңиз өткөн аптада кандай өзгөргөнү жана алардын алдыдагы отчет күндөрү.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 менен салыштыруу';
+
+  @override
+  String get benchmarkYours => 'Сатып алууларыңыз';
+
+  @override
+  String get benchmarkIndex => 'Ошол эле суммалар S&P 500дө';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Индекстен $points пайыздык пунктка жакшы';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Индекстен $points пайыздык пунктка артта';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ар бир сатып алуу ошол эле күнү S&P 500 индекстик фондуна салынгандай. Дивиденддер кошулган эмес; өткөн киреше келечекти алдын ала айтпайт.';
+
+  @override
+  String get portfolioSell => 'Сатуу';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol сатуу';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Бир акциянын сатуу баасы ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Сатылган күн';
+
+  @override
+  String get portfolioSellAll => 'Баары';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Сизде $quantity бар';
+  }
+
+  @override
+  String get portfolioSold => 'Сатылды';
+
+  @override
+  String get portfolioRealized => 'Ишке ашкан';
+
+  @override
+  String get portfolioClosed => 'Жабык позициялар';
+
+  @override
+  String get portfolioClosedNote => 'Бардык акциялар сатылды';
+
+  @override
+  String get portfolioTransactions => 'Транзакциялар';
+
+  @override
+  String get portfolioRealizedByYear => 'Жылдар боюнча ишке ашкан пайда';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Сатуулар алгач эң эски сатып алууларыңыз менен дал келтирилет (FIFO) жана бүгүнкү алмашуу курсу менен которулат. Салык декларациясы үчүн брокериңиздин көчүрмөсүн колдонуңуз.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Бул талдоодон кийин жаңы чейректик отчет жарыяланды ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Жаңы отчет';
 }

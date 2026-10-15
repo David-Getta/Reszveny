@@ -1800,4 +1800,81 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get digestHint =>
       'എല്ലാ തിങ്കളാഴ്ചയും: കഴിഞ്ഞ ആഴ്ച നിങ്ങളുടെ പ്രിയപ്പെട്ടവയും പോർട്ട്ഫോളിയോയും എങ്ങനെ നീങ്ങി, അവയുടെ വരാനിരിക്കുന്ന ഫല തീയതികളും.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500-മായി താരതമ്യം';
+
+  @override
+  String get benchmarkYours => 'നിങ്ങളുടെ വാങ്ങലുകൾ';
+
+  @override
+  String get benchmarkIndex => 'അതേ തുക S&P 500-ൽ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'സൂചികയെക്കാൾ $points ശതമാന പോയിന്റ് മികച്ചത്';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'സൂചികയെക്കാൾ $points ശതമാന പോയിന്റ് പിന്നിൽ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ഓരോ വാങ്ങലിന്റെയും തുക അതേ ദിവസം ഒരു S&P 500 ഇൻഡക്സ് ഫണ്ടിൽ നിക്ഷേപിച്ചിരുന്നെങ്കിൽ എന്നപോലെ. ലാഭവിഹിതം ഉൾപ്പെടുത്തിയിട്ടില്ല; മുൻകാല വരുമാനം ഭാവി വരുമാനം പ്രവചിക്കുന്നില്ല.';
+
+  @override
+  String get portfolioSell => 'വിൽക്കുക';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol വിൽക്കുക';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ഓഹരിയൊന്നിന്റെ വിൽപ്പന വില ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'വിറ്റ തീയതി';
+
+  @override
+  String get portfolioSellAll => 'എല്ലാം';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'നിങ്ങളുടെ പക്കൽ $quantity ഉണ്ട്';
+  }
+
+  @override
+  String get portfolioSold => 'വിറ്റു';
+
+  @override
+  String get portfolioRealized => 'ലഭിച്ചത്';
+
+  @override
+  String get portfolioClosed => 'ക്ലോസ് ചെയ്ത പൊസിഷനുകൾ';
+
+  @override
+  String get portfolioClosedNote => 'എല്ലാ ഓഹരികളും വിറ്റു';
+
+  @override
+  String get portfolioTransactions => 'ഇടപാടുകൾ';
+
+  @override
+  String get portfolioRealizedByYear => 'വർഷം തിരിച്ച് ലഭിച്ച ലാഭം';
+
+  @override
+  String get portfolioRealizedHint =>
+      'വിൽപ്പനകൾ ആദ്യം നിങ്ങളുടെ ഏറ്റവും പഴയ വാങ്ങലുകളുമായി പൊരുത്തപ്പെടുത്തുന്നു (FIFO), ഇന്നത്തെ വിനിമയ നിരക്കിൽ മാറ്റുന്നു. നികുതി റിട്ടേണിന് നിങ്ങളുടെ ബ്രോക്കറുടെ സ്റ്റേറ്റ്മെന്റ് ഉപയോഗിക്കുക.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ഈ വിശകലനത്തിനുശേഷം പുതിയ ത്രൈമാസ ഫലങ്ങൾ പ്രസിദ്ധീകരിച്ചു ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'പുതിയ ഫലങ്ങൾ';
 }

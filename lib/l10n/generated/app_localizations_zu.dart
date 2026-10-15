@@ -1799,4 +1799,81 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get digestHint =>
       'Njalo ngoMsombuluko: ukuthi izintandokazi zakho nephothifoliyo yakho kuhambe kanjani ngesonto eledlule, nezinsuku ezizayo zemiphumela yazo.';
+
+  @override
+  String get benchmarkTitle => 'Uma kuqhathaniswa ne-S&P 500';
+
+  @override
+  String get benchmarkYours => 'Okuthengile';
+
+  @override
+  String get benchmarkIndex => 'Imali efanayo ku-S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ngcono kune-index ngamaphuzu amaphesenti angu-$points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ngemuva kwe-index ngamaphuzu amaphesenti angu-$points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kungathi imali yokuthenga ngakunye ityalwe esikhwameni se-index se-S&P 500 ngalolo suku. Izabelo azifakiwe; imbuyiselo yesikhathi esedlule ayibikezeli eyesikhathi esizayo.';
+
+  @override
+  String get portfolioSell => 'Thengisa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Thengisa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Intengo yokuthengisa yesheya ngalinye ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Usuku lokuthengisa';
+
+  @override
+  String get portfolioSellAll => 'Konke';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Unakho $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Kuthengisiwe';
+
+  @override
+  String get portfolioRealized => 'Okutholakele';
+
+  @override
+  String get portfolioClosed => 'Okuthengiswe konke';
+
+  @override
+  String get portfolioClosedNote => 'Wonke amasheya athengisiwe';
+
+  @override
+  String get portfolioTransactions => 'Ukuthenga nokuthengisa';
+
+  @override
+  String get portfolioRealizedByYear => 'Inzuzo etholakele ngonyaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Okuthengisiwe kuqala kuqhathaniswe nokuthenga kwakho okudala kakhulu (FIFO), kuguqulwe ngezinga lokushintshaniswa kwemali lanamuhla. Embikweni wakho wentela, sebenzisa isitatimende somdayisi wakho (broker).';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kusukela kulolu hlaziyo, kushicilelwe imiphumela emisha yekota ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Imiphumela emisha';
 }

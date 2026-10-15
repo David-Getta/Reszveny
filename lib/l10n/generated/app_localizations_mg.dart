@@ -1805,4 +1805,81 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get digestHint =>
       'Isaky ny alatsinainy: ny fivoaran\'ny ankafizinao sy ny kitapom-bolanao tamin\'ny herinandro lasa, ary ny daty hivoahan\'ny vokatra manaraka.';
+
+  @override
+  String get benchmarkTitle => 'Ampitahaina amin\'ny S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ny novidinao';
+
+  @override
+  String get benchmarkIndex => 'Vola mitovy amin\'ny S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Mihoatra ny index $points isa isan-jato';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ambany noho ny index $points isa isan-jato';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Toy ny hoe napetraka tao amin\'ny tahirim-bola index S&P 500 tamin\'io andro io ihany ny vidin\'ny fividianana tsirairay. Tsy tafiditra ny dividende; ny tombony taloha tsy maminavina ny ho avy.';
+
+  @override
+  String get portfolioSell => 'Amidy';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Amidy ny $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Vidim-pivarotana isaky ny aksiona ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Daty nivarotana';
+
+  @override
+  String get portfolioSellAll => 'Rehetra';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity no anananao';
+  }
+
+  @override
+  String get portfolioSold => 'Namidy';
+
+  @override
+  String get portfolioRealized => 'Tena azo';
+
+  @override
+  String get portfolioClosed => 'Fananana efa namidy';
+
+  @override
+  String get portfolioClosedNote => 'Efa namidy ny aksiona rehetra';
+
+  @override
+  String get portfolioTransactions => 'Fividianana sy fivarotana';
+
+  @override
+  String get portfolioRealizedByYear => 'Tombony tena azo isan-taona';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ampifandraisina amin\'ny fividiananao tranainy indrindra aloha ny fivarotana (FIFO), novaina araka ny sandam-bola androany. Ho an\'ny fanambaranao hetra, ampiasao ny tatitra avy amin\'ny broker-nao.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Nisy vokatra telovolana vaovao navoaka taorian\'ity fanadihadiana ity ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Vokatra vaovao';
 }

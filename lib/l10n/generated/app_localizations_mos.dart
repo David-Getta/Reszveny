@@ -1779,4 +1779,81 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get digestHint =>
       'Tɛnen fãa: a nong-n-yɩɩda la a portfey sẽn kẽng to-to semen sẽn loogã, la b ligd-yɛla rasem nins sẽn watã.';
+
+  @override
+  String get benchmarkTitle => 'Makr ne S&P 500';
+
+  @override
+  String get benchmarkYours => 'Bũmb ning f sẽn da';
+
+  @override
+  String get benchmarkIndex => 'Ligd a yembr S&P 500 pʋgẽ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Yɩɩda indɛks wã ne pursantaaz poẽn $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Be indɛks wã poorẽ ne pursantaaz poẽn $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Wa f sẽn da bũmb fãa ligdã ra kẽe S&P 500 indɛks fõon pʋgẽ rasem kãng zug bal. Dividand ka be ye; yʋʋm sẽn loogã yõod pa wilgd beoog yõod ye.';
+
+  @override
+  String get portfolioSell => 'Koose';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Koose $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Aksiõ fãa koosg ligdi ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Koosgã daare';
+
+  @override
+  String get portfolioSellAll => 'Fãa';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Y tara $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'B koosa';
+
+  @override
+  String get portfolioRealized => 'Nafa sẽn paame';
+
+  @override
+  String get portfolioClosed => 'Aksiõ sẽn koos fãa';
+
+  @override
+  String get portfolioClosedNote => 'Aksiõ wã fãa koosame';
+
+  @override
+  String get portfolioTransactions => 'Raaba la koosgo';
+
+  @override
+  String get portfolioRealizedByYear => 'Nafa sẽn paame yʋʋm fãa';
+
+  @override
+  String get portfolioRealizedHint =>
+      'B sẽn koosã, b sɩngda n zĩndgda ne f raab kʋdemdã (FIFO), n lebg ne rũndã ligd teedgo. Lampo sebrã yĩnga, tʋm ne f broker sebrã.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Hal sẽn maan vaeesg kãngã, b yiisa ligd-yɛl paalse ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ligd-yɛl paalse';
 }

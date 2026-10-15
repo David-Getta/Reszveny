@@ -1793,4 +1793,81 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get digestHint =>
       'Әр дүйсенбі: таңдаулыларыңыз бен портфеліңіз өткен аптада қалай өзгергені және олардың алдағы есеп күндері.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500-мен салыстыру';
+
+  @override
+  String get benchmarkYours => 'Сатып алуларыңыз';
+
+  @override
+  String get benchmarkIndex => 'Сол сомалар S&P 500-де';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Индекстен $points пайыздық тармаққа жақсы';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Индекстен $points пайыздық тармаққа артта';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Әр сатып алу сол күні S&P 500 индекстік қорына салынғандай. Дивидендтерсіз; өткен табыстылық болашақты болжамайды.';
+
+  @override
+  String get portfolioSell => 'Сату';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol сату';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Бір акцияның сату бағасы ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Сату күні';
+
+  @override
+  String get portfolioSellAll => 'Барлығы';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Сізде $quantity бар';
+  }
+
+  @override
+  String get portfolioSold => 'Сатылды';
+
+  @override
+  String get portfolioRealized => 'Іске асқан';
+
+  @override
+  String get portfolioClosed => 'Жабық позициялар';
+
+  @override
+  String get portfolioClosedNote => 'Барлық акция сатылды';
+
+  @override
+  String get portfolioTransactions => 'Операциялар';
+
+  @override
+  String get portfolioRealizedByYear => 'Жылдар бойынша іске асқан пайда';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Сатулар алдымен ең ескі сатып алуларыңызбен сәйкестендіріледі (FIFO) және бүгінгі айырбас бағамы бойынша есептеледі. Салық декларациясы үшін брокеріңіздің үзінді көшірмесін пайдаланыңыз.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Осы талдаудан кейін жаңа тоқсандық есеп жарияланды ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Жаңа есеп';
 }

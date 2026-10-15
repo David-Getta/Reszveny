@@ -1736,4 +1736,81 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get digestHint => '毎週月曜日：お気に入りとポートフォリオの先週の値動きと、今後の決算発表日をお届けします。';
+
+  @override
+  String get benchmarkTitle => 'S&P 500との比較';
+
+  @override
+  String get benchmarkYours => 'あなたの購入';
+
+  @override
+  String get benchmarkIndex => '同額をS&P 500に';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '指数を$pointsポイント上回る';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '指数を$pointsポイント下回る';
+  }
+
+  @override
+  String get benchmarkHint =>
+      '各購入額を同じ日にS&P 500インデックスファンドに投資した場合との比較です。配当は含みません。過去のリターンは将来のリターンを示すものではありません。';
+
+  @override
+  String get portfolioSell => '売却';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbolを売却';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return '1株あたりの売却価格（$currency）';
+  }
+
+  @override
+  String get portfolioSellDate => '売却日';
+
+  @override
+  String get portfolioSellAll => 'すべて';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '保有数は$quantityです';
+  }
+
+  @override
+  String get portfolioSold => '売却';
+
+  @override
+  String get portfolioRealized => '実現損益';
+
+  @override
+  String get portfolioClosed => '売却済み銘柄';
+
+  @override
+  String get portfolioClosedNote => '全株売却済み';
+
+  @override
+  String get portfolioTransactions => '取引履歴';
+
+  @override
+  String get portfolioRealizedByYear => '年別の実現損益';
+
+  @override
+  String get portfolioRealizedHint =>
+      '売却は古い購入分から順に充当され（FIFO）、本日の為替レートで換算されます。確定申告には証券会社の取引報告書をご利用ください。';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'この分析の後、新しい四半期決算が発表されました（$symbol、$date）。';
+  }
+
+  @override
+  String get newResultsBadge => '新しい決算';
 }

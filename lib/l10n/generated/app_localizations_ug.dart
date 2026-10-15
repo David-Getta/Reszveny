@@ -1795,4 +1795,81 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get digestHint =>
       'ھەر دۈشەنبە: يىغقۇچىڭىز ۋە مەبلەغ بىرىكمىڭىزنىڭ ئۆتكەن ھەپتىدىكى ئۆزگىرىشى ۋە ئۇلارنىڭ يېقىنقى نەتىجە ئېلان قىلىش چېسلالىرى.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 بىلەن سېلىشتۇرۇش';
+
+  @override
+  String get benchmarkYours => 'سېتىۋالغانلىرىڭىز';
+
+  @override
+  String get benchmarkIndex => 'ئوخشاش سومما S&P 500 دە';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'كۆرسەتكۈچتىن $points پىرسەنت نۇقتا ياخشى';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'كۆرسەتكۈچتىن $points پىرسەنت نۇقتا ئارقىدا';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'خۇددى ھەر بىر سېتىۋېلىش شۇ كۈنىلا S&P 500 كۆرسەتكۈچ فوندىغا سېلىنغاندەك. پايدا ئۈلۈشى ھېسابلانمىغان؛ ئۆتمۈشتىكى پايدا كەلگۈسىنى ئالدىن بەلگىلىمەيدۇ.';
+
+  @override
+  String get portfolioSell => 'سېتىش';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol نى سېتىش';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ھەر پاينىڭ سېتىش باھاسى ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'سېتىلغان ۋاقىت';
+
+  @override
+  String get portfolioSellAll => 'ھەممىسى';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'سىزدە $quantity بار';
+  }
+
+  @override
+  String get portfolioSold => 'سېتىلدى';
+
+  @override
+  String get portfolioRealized => 'ئەمەلگە ئاشقان';
+
+  @override
+  String get portfolioClosed => 'تاقالغان پايلار';
+
+  @override
+  String get portfolioClosedNote => 'بارلىق پايلار سېتىلدى';
+
+  @override
+  String get portfolioTransactions => 'سودىلار';
+
+  @override
+  String get portfolioRealizedByYear => 'يىللار بويىچە ئەمەلگە ئاشقان پايدا';
+
+  @override
+  String get portfolioRealizedHint =>
+      'سېتىشلار ئالدى بىلەن ئەڭ كونا سېتىۋېلىشلىرىڭىز بىلەن ماسلاشتۇرۇلىدۇ (FIFO)، بۈگۈنكى پېرېۋوت نىسبىتى بويىچە ئايلاندۇرۇلىدۇ. باج دوكلاتى ئۈچۈن ۋاسىتىچىڭىزنىڭ ھېسابات جەدۋىلىنى ئىشلىتىڭ.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'بۇ تەھلىلدىن كېيىن يېڭى پەسىللىك نەتىجە ئېلان قىلىندى ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'يېڭى نەتىجە';
 }

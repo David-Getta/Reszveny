@@ -1794,4 +1794,81 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get digestHint =>
       'ყოველ ორშაბათს: როგორ შეიცვალა თქვენი რჩეულები და პორტფელი გასულ კვირას და მათი შედეგების მომავალი თარიღები.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500-თან შედარება';
+
+  @override
+  String get benchmarkYours => 'თქვენი შენაძენი';
+
+  @override
+  String get benchmarkIndex => 'იგივე თანხები S&P 500-ში';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ინდექსზე $points პროცენტული პუნქტით უკეთესი';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ინდექსს $points პროცენტული პუნქტით ჩამორჩება';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'თითქოს ყოველი შენაძენი იმავე დღეს S&P 500-ის ინდექსურ ფონდში ჩადებულიყო. დივიდენდების გარეშე; წარსული შემოსავლიანობა მომავალს არ წინასწარმეტყველებს.';
+
+  @override
+  String get portfolioSell => 'გაყიდვა';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol-ის გაყიდვა';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ერთი აქციის გაყიდვის ფასი ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'გაყიდვის თარიღი';
+
+  @override
+  String get portfolioSellAll => 'ყველა';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'გაქვთ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'გაიყიდა';
+
+  @override
+  String get portfolioRealized => 'რეალიზებული';
+
+  @override
+  String get portfolioClosed => 'დახურული პოზიციები';
+
+  @override
+  String get portfolioClosedNote => 'ყველა აქცია გაყიდულია';
+
+  @override
+  String get portfolioTransactions => 'ტრანზაქციები';
+
+  @override
+  String get portfolioRealizedByYear => 'რეალიზებული მოგება წლების მიხედვით';
+
+  @override
+  String get portfolioRealizedHint =>
+      'გაყიდვები ჯერ თქვენს უძველეს შენაძენებს უთავსდება (FIFO) და დღევანდელი გაცვლითი კურსით გადაიანგარიშება. საგადასახადო დეკლარაციისთვის გამოიყენეთ თქვენი ბროკერის ამონაწერი.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ამ ანალიზის შემდეგ გამოქვეყნდა ახალი კვარტალური შედეგები ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'ახალი შედეგები';
 }

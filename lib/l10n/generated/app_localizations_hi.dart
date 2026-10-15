@@ -1792,4 +1792,81 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get digestHint =>
       'हर सोमवार: पिछले हफ़्ते आपके पसंदीदा और पोर्टफ़ोलियो का हाल कैसा रहा, और उनके आने वाले नतीजों की तारीखें।';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 से तुलना';
+
+  @override
+  String get benchmarkYours => 'आपकी खरीदारी';
+
+  @override
+  String get benchmarkIndex => 'उतनी ही राशि S&P 500 में';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'इंडेक्स से $points प्रतिशत अंक बेहतर';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'इंडेक्स से $points प्रतिशत अंक पीछे';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'मानो हर खरीदारी की राशि उसी दिन S&P 500 इंडेक्स फ़ंड में लगाई गई हो। लाभांश शामिल नहीं; पिछला रिटर्न भविष्य के रिटर्न का संकेत नहीं देता।';
+
+  @override
+  String get portfolioSell => 'बेचें';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol बेचें';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'प्रति शेयर बिक्री मूल्य ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'बिक्री की तारीख';
+
+  @override
+  String get portfolioSellAll => 'सभी';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'आपके पास $quantity हैं';
+  }
+
+  @override
+  String get portfolioSold => 'बेचा';
+
+  @override
+  String get portfolioRealized => 'प्राप्त';
+
+  @override
+  String get portfolioClosed => 'बंद पोज़िशन';
+
+  @override
+  String get portfolioClosedNote => 'सभी शेयर बेचे गए';
+
+  @override
+  String get portfolioTransactions => 'लेन-देन';
+
+  @override
+  String get portfolioRealizedByYear => 'वर्ष के अनुसार प्राप्त लाभ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'बिक्री को पहले आपकी सबसे पुरानी खरीदारियों से मिलाया जाता है (FIFO), आज की विनिमय दर पर बदलकर। टैक्स रिटर्न के लिए अपने ब्रोकर के स्टेटमेंट का उपयोग करें।';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'इस विश्लेषण के बाद नए तिमाही नतीजे जारी हुए हैं ($symbol, $date)।';
+  }
+
+  @override
+  String get newResultsBadge => 'नए नतीजे';
 }

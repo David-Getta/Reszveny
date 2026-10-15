@@ -1798,4 +1798,81 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get digestHint =>
       'Buri wa mbere: ingene ivyo ukunda n\'ishoramari ryawe vyagenze mu ndwi iheze, n\'amatariki y\'ivyavuye mu gihembwe biri imbere.';
+
+  @override
+  String get benchmarkTitle => 'Ugereranije na S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ivyo waguze';
+
+  @override
+  String get benchmarkIndex => 'Amahera angana muri S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Iruta index ku manota y\'ijana $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Iri inyuma ya index ku manota y\'ijana $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Nk\'aho amahera ya buri kiguzi yashowe muri S&P 500 index fund uwo musi nyene. Inyungu zigabanywa ntizirimwo; inyungu zo hambere ntiziraguza izo muri kazoza.';
+
+  @override
+  String get portfolioSell => 'Gurisha';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Gurisha $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Igiciro co kugurisha buri mugabane ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Itarike y\'ukugurisha';
+
+  @override
+  String get portfolioSellAll => 'Vyose';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ufise $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Vyagurishijwe';
+
+  @override
+  String get portfolioRealized => 'Ivyabonetse';
+
+  @override
+  String get portfolioClosed => 'Imigabane wagurishije yose';
+
+  @override
+  String get portfolioClosedNote => 'Imigabane yose yagurishijwe';
+
+  @override
+  String get portfolioTransactions => 'Ivyaguzwe n\'ivyagurishijwe';
+
+  @override
+  String get portfolioRealizedByYear => 'Inyungu zabonetse ku mwaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ivyagurishijwe bibanza guhuzwa n\'ivyo waguze kera kuruta (FIFO), bigahindurwa ku giciro c\'ivunjisha c\'uyu munsi. Ku bijanye n\'imenyekanisha ry\'ikori, koresha icemezo c\'umuhuza wawe (broker).';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kuva iri suzuma ryakorwa, ivyavuye mu gihembwe bishasha vyarasohotse ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ivyavuye bishasha';
 }

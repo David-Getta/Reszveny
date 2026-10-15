@@ -1801,4 +1801,81 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get digestHint =>
       'Cada dilluns: com s\'han mogut els teus favorits i la teva cartera la setmana passada, i les properes dates de resultats.';
+
+  @override
+  String get benchmarkTitle => 'Comparat amb l\'S&P 500';
+
+  @override
+  String get benchmarkYours => 'Les teves compres';
+
+  @override
+  String get benchmarkIndex => 'Mateixos imports a l\'S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points punts percentuals millor que l\'índex';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points punts percentuals per sota de l\'índex';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Com si cada compra s\'hagués invertit el mateix dia en un fons indexat a l\'S&P 500. Sense dividends; les rendibilitats passades no prediuen les futures.';
+
+  @override
+  String get portfolioSell => 'Ven';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ven $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Preu de venda per acció ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Data de venda';
+
+  @override
+  String get portfolioSellAll => 'Tot';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'En tens $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Venda';
+
+  @override
+  String get portfolioRealized => 'Realitzat';
+
+  @override
+  String get portfolioClosed => 'Posicions tancades';
+
+  @override
+  String get portfolioClosedNote => 'Totes les accions venudes';
+
+  @override
+  String get portfolioTransactions => 'Transaccions';
+
+  @override
+  String get portfolioRealizedByYear => 'Guanys realitzats per any';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Les vendes s\'assignen primer a les teves compres més antigues (FIFO) i es converteixen al tipus de canvi d\'avui. Per a la declaració d\'impostos, fes servir l\'extracte del teu bròquer.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Des d\'aquesta anàlisi s\'han publicat nous resultats trimestrals ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nous resultats';
 }

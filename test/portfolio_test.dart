@@ -36,6 +36,48 @@ void main() {
       expect(store.positions.map((p) => p.symbol), ['OTP', 'AAPL']);
     });
 
+    test('sales use the oldest purchases first: realized gain, remaining cost, closed positions', () async {
+      final store = PortfolioStore();
+      await store.add(symbol: 'AAPL', quantity: 10, price: 100, currency: 'USD', date: DateTime(2025, 1, 10));
+      await store.add(symbol: 'AAPL', quantity: 10, price: 150, currency: 'USD', date: DateTime(2025, 6, 1));
+      await store.add(
+        symbol: 'AAPL',
+        quantity: 15,
+        price: 200,
+        currency: 'USD',
+        date: DateTime(2026, 2, 1),
+        sell: true,
+      );
+      await store.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD', date: DateTime(2025, 3, 1));
+      await store.add(symbol: 'MSFT', quantity: 2, price: 380, currency: 'USD', date: DateTime(2025, 9, 1), sell: true);
+      final aapl = store.positionOf('AAPL')!;
+      // 10 db 100-on és 5 db 150-en kelt el 200-ért: (100 × 10) + (50 × 5).
+      expect(aapl.realizedGain, 1250);
+      expect(aapl.quantity, 5);
+      expect(aapl.cost, 750);
+      expect(aapl.averageCost, 150);
+      expect(aapl.firstDate, DateTime(2025, 6, 1));
+      expect(store.positionOf('MSFT'), isNull, reason: 'fully sold');
+      expect(store.closedPositions.single.realizedGain, -40);
+      // Az eladás is megmarad újraindítás után.
+      final reloaded = await PortfolioStore.load();
+      expect(reloaded.lots.where((l) => l.sell).length, 2);
+      expect(reloaded.positionOf('AAPL')!.quantity, 5);
+
+      final s = PortfolioSnapshot.compute(
+        store.positions,
+        quotes: {'AAPL': const StockQuote(symbol: 'AAPL', price: 210, change: 0)},
+        rate: (_, _) => 1,
+        currency: 'USD',
+        closed: store.closedPositions,
+      );
+      expect(s.realized, 1250 - 40);
+      // Évenként: az AAPL-eladás 2026-os, az MSFT-é 2025-ös.
+      expect(s.realizedByYear, {2026: 1250, 2025: -40});
+      expect(s.closed.single.realized, -40);
+      expect(s.cost, 750);
+    });
+
     test('purchases survive a restart, and removing one updates the position', () async {
       final store = PortfolioStore();
       final first = await store.add(symbol: 'NVDA', quantity: 2, price: 100, currency: 'USD');
@@ -258,5 +300,114 @@ void main() {
     )!;
     expect(value.points.map((p) => (p.time.day, p.close)), [(1, 20.0), (2, 22.0), (3, 24.0 + 220), (4, 26.0 + 220)]);
     expect(portfolioValueHistory(const [], const {}, (_) => 1), isNull);
+  });
+
+  test('S&P 500 comparison: each purchase amount goes into the index on its own day', () {
+    PriceHistory h(String s, List<double> closes) => PriceHistory(
+      symbol: s,
+      points: [for (final (i, c) in closes.indexed) PricePoint(time: DateTime(2026, 1, 1 + i), close: c)],
+    );
+    final b = benchmarkComparison(
+      [
+        // 2 × 10 USD az 1. napon (index 100), 1 × 100 EUR (= 200) a 3. napon (index 125).
+        PortfolioLot(id: 'a', symbol: 'AAA', quantity: 2, price: 10, currency: 'USD', date: DateTime(2026, 1, 1)),
+        PortfolioLot(id: 'b', symbol: 'BBB', quantity: 1, price: 100, currency: 'EUR', date: DateTime(2026, 1, 3)),
+        // Árfolyam nélküli pozíció kimarad.
+        PortfolioLot(id: 'c', symbol: 'CCC', quantity: 5, price: 1, currency: 'USD'),
+      ],
+      {
+        'AAA': h('AAA', [10, 11, 12, 15]),
+        'BBB': h('BBB', [100, 100, 110, 120]),
+      },
+      h('SPY', [100, 110, 125, 150]),
+      (c) => c == 'EUR' ? 2.0 : 1.0,
+    )!;
+    expect(b.invested, 220);
+    expect(b.portfolioValue, 2 * 15 + 120 * 2);
+    expect(b.benchmarkValue, closeTo(20 * 1.5 + 200 * 1.2, 1e-9));
+    expect(b.portfolioGain, closeTo((270 / 220 - 1) * 100, 1e-9));
+    expect(b.difference, closeTo(0, 1e-9));
+    expect(benchmarkComparison(const [], const {}, h('SPY', [1, 2]), (_) => 1), isNull);
+  });
+
+  test('value over time and the S&P 500 comparison count sales from their day', () {
+    PriceHistory h(String s, List<double> closes) => PriceHistory(
+      symbol: s,
+      points: [for (final (i, c) in closes.indexed) PricePoint(time: DateTime(2026, 1, 1 + i), close: c)],
+    );
+    final lots = [
+      PortfolioLot(id: 'a', symbol: 'AAA', quantity: 4, price: 10, currency: 'USD', date: DateTime(2026, 1, 1)),
+      PortfolioLot(
+        id: 's',
+        symbol: 'AAA',
+        quantity: 3,
+        price: 12,
+        currency: 'USD',
+        date: DateTime(2026, 1, 3),
+        sell: true,
+      ),
+    ];
+    final histories = {
+      'AAA': h('AAA', [10, 11, 12, 20]),
+    };
+    final value = portfolioValueHistory(lots, histories, (_) => 1)!;
+    expect(value.points.map((p) => p.close), [40.0, 44.0, 12.0, 20.0]);
+    // 40-et fektetett be (index 100); a 3. napon 36-ot vett ki (index 120).
+    final b = benchmarkComparison(lots, histories, h('SPY', [100, 110, 120, 150]), (_) => 1)!;
+    expect(b.invested, 40);
+    expect(b.portfolioValue, 20 + 36);
+    expect(b.benchmarkValue, closeTo((40 / 100 - 36 / 120) * 150 + 36, 1e-9));
+  });
+
+  testWidgets('selling from the portfolio page: part, then the rest; the position closes with its realized gain', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    expect(find.text('Sell AAPL'), findsOneWidget);
+    // Többet nem lehet eladni, mint amennyi van.
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '12');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(find.text('You hold 10'), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '4');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '250');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 6);
+    expect(find.textContaining('Sold 4'), findsOneWidget);
+    expect(find.text('Realized: +200.00 USD'), findsOneWidget);
+
+    // A maradék: a „Mind” gomb kitölti a darabszámot.
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('lot-sell-all')));
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '190');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.positionOf('AAPL'), isNull);
+    expect(find.byKey(const ValueKey('position-sell')), findsNothing, reason: 'nothing left to sell');
+    // A lap bezárása a háttérre koppintva.
+    await tester.tapAt(const Offset(600, 40));
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const ValueKey('portfolio-closed')), findsOneWidget);
+    expect(find.text('Closed positions'), findsOneWidget);
+    // 4 × 50 − 6 × 10 = 140
+    expect(find.text('+140.00 USD'), findsWidgets);
+    expect(find.byKey(const ValueKey('portfolio-realized')), findsOneWidget);
+    expect(find.text('Realized gains by year'), findsOneWidget);
   });
 }

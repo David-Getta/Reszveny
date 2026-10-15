@@ -1848,4 +1848,81 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get digestHint =>
       'Каждый понедельник: как за прошлую неделю изменились ваше избранное и портфель, и ближайшие даты их отчётности.';
+
+  @override
+  String get benchmarkTitle => 'Сравнение с S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ваши покупки';
+
+  @override
+  String get benchmarkIndex => 'Те же суммы в S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'На $points п. п. лучше индекса';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'На $points п. п. отстаёт от индекса';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Как если бы каждая покупка была вложена в индексный фонд S&P 500 в тот же день. Без учёта дивидендов; прошлая доходность не предсказывает будущую.';
+
+  @override
+  String get portfolioSell => 'Продать';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Продать $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Цена продажи за акцию ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Дата продажи';
+
+  @override
+  String get portfolioSellAll => 'Все';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'У вас $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Продано';
+
+  @override
+  String get portfolioRealized => 'Реализовано';
+
+  @override
+  String get portfolioClosed => 'Закрытые позиции';
+
+  @override
+  String get portfolioClosedNote => 'Все акции проданы';
+
+  @override
+  String get portfolioTransactions => 'Сделки';
+
+  @override
+  String get portfolioRealizedByYear => 'Реализованная прибыль по годам';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Продажи сначала сопоставляются с самыми ранними покупками (FIFO) и пересчитываются по сегодняшнему курсу. Для налоговой декларации используйте выписку брокера.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'После этого анализа вышла новая квартальная отчётность ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Новая отчётность';
 }

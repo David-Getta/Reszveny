@@ -1717,6 +1717,82 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get digestHint => '每周一：你的收藏和投资组合上周的走势，以及即将公布财报的日期。';
+
+  @override
+  String get benchmarkTitle => '与 S&P 500 对比';
+
+  @override
+  String get benchmarkYours => '您的买入';
+
+  @override
+  String get benchmarkIndex => '同等金额买入 S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '比指数高 $points 个百分点';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '比指数低 $points 个百分点';
+  }
+
+  @override
+  String get benchmarkHint => '假设每笔买入金额在同一天投入 S&P 500 指数基金。不含股息；过往收益不代表未来收益。';
+
+  @override
+  String get portfolioSell => '卖出';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '卖出 $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return '每股卖出价格（$currency）';
+  }
+
+  @override
+  String get portfolioSellDate => '卖出日期';
+
+  @override
+  String get portfolioSellAll => '全部';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '仅持有 $quantity';
+  }
+
+  @override
+  String get portfolioSold => '卖出';
+
+  @override
+  String get portfolioRealized => '已实现';
+
+  @override
+  String get portfolioClosed => '已清仓';
+
+  @override
+  String get portfolioClosedNote => '已全部卖出';
+
+  @override
+  String get portfolioTransactions => '交易记录';
+
+  @override
+  String get portfolioRealizedByYear => '按年度已实现收益';
+
+  @override
+  String get portfolioRealizedHint =>
+      '卖出优先与最早的买入匹配（FIFO），按今日汇率换算。报税时请以券商的结单为准。';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return '此分析之后已发布新的季度财报（$symbol，$date）。';
+  }
+
+  @override
+  String get newResultsBadge => '新财报';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3430,4 +3506,80 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get digestHint => '逢星期一：你的收藏及投資組合上週的走勢，以及即將公佈業績的日期。';
+
+  @override
+  String get benchmarkTitle => '與 S&P 500 比較';
+
+  @override
+  String get benchmarkYours => '你的買入';
+
+  @override
+  String get benchmarkIndex => '同等金額買入 S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '比指數高 $points 個百分點';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '比指數低 $points 個百分點';
+  }
+
+  @override
+  String get benchmarkHint => '假設每筆買入金額於同一天投入 S&P 500 指數基金。不包括股息；過往回報不代表將來回報。';
+
+  @override
+  String get portfolioSell => '賣出';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '賣出 $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return '每股賣出價格（$currency）';
+  }
+
+  @override
+  String get portfolioSellDate => '賣出日期';
+
+  @override
+  String get portfolioSellAll => '全部';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '只持有 $quantity';
+  }
+
+  @override
+  String get portfolioSold => '賣出';
+
+  @override
+  String get portfolioRealized => '已實現';
+
+  @override
+  String get portfolioClosed => '已清倉';
+
+  @override
+  String get portfolioClosedNote => '已全部賣出';
+
+  @override
+  String get portfolioTransactions => '交易記錄';
+
+  @override
+  String get portfolioRealizedByYear => '按年度已實現收益';
+
+  @override
+  String get portfolioRealizedHint =>
+      '賣出優先與最早的買入配對（FIFO），按今日匯率換算。報稅時請以經紀的結單為準。';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return '此分析之後已公佈新一季業績（$symbol，$date）。';
+  }
+
+  @override
+  String get newResultsBadge => '新業績';
 }

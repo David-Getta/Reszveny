@@ -1788,4 +1788,81 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get digestHint =>
       'प्रत्येक सोम: पछिला सप्ताह अहाँक पसंदीदा आ पोर्टफ़ोलियो केना चलल, आ ओकर आगामी परिणामक तिथि।';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 सँ तुलना';
+
+  @override
+  String get benchmarkYours => 'अहाँक खरीद';
+
+  @override
+  String get benchmarkIndex => 'ओतबे राशि S&P 500 मे';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'इंडेक्ससँ $points प्रतिशत अंक नीक';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'इंडेक्ससँ $points प्रतिशत अंक पाछाँ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'जेना प्रत्येक खरीदक राशि ओही दिन S&P 500 इंडेक्स फंड मे लगाओल गेल हो। लाभांश सम्मिलित नहि; पछिला रिटर्न भविष्यक रिटर्नक अनुमान नहि दैत अछि।';
+
+  @override
+  String get portfolioSell => 'बेचू';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol बेचू';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'प्रति शेयर बिक्री दाम ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'बिक्रीक तिथि';
+
+  @override
+  String get portfolioSellAll => 'सभ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'अहाँ लग $quantity अछि';
+  }
+
+  @override
+  String get portfolioSold => 'बेचल';
+
+  @override
+  String get portfolioRealized => 'प्राप्त';
+
+  @override
+  String get portfolioClosed => 'बंद पोजीशन';
+
+  @override
+  String get portfolioClosedNote => 'सभ शेयर बेचल गेल';
+
+  @override
+  String get portfolioTransactions => 'लेन-देन';
+
+  @override
+  String get portfolioRealizedByYear => 'वर्षक अनुसार प्राप्त लाभ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'बिक्रीकेँ पहिने अहाँक सभसँ पुरान खरीदारीसँ मिलाओल जाइत अछि (FIFO), आजुक विनिमय दरपर बदलि कऽ। कर रिटर्नक लेल अपन ब्रोकरक विवरण उपयोग करू।';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'एहि विश्लेषणक बाद नव तिमाही परिणाम प्रकाशित भेल अछि ($symbol, $date)।';
+  }
+
+  @override
+  String get newResultsBadge => 'नव परिणाम';
 }

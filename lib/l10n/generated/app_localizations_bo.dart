@@ -1783,4 +1783,81 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get digestHint =>
       'གཟའ་ཟླ་བ་རེ་རེར། ཁྱེད་ཀྱི་དགའ་མོས་དང་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་གཟའ་འཁོར་སྔ་མའི་འགྱུར་ལྡོག་དང་། དེ་དག་གི་གྲུབ་འབྲས་འཆར་རྒྱུའི་ཚེས་གྲངས།';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 དང་བསྡུར་བ།';
+
+  @override
+  String get benchmarkYours => 'ཁྱེད་ཀྱི་ཉོ་ཚོང་།';
+
+  @override
+  String get benchmarkIndex => 'དངུལ་གྲངས་གཅིག་པ་ S&P 500 ནང་།';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'སྟོན་གྲངས་ལས་བརྒྱ་ཆའི་ཚག་ $points ལེགས་པ།';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'སྟོན་གྲངས་ལས་བརྒྱ་ཆའི་ཚག་ $points རྗེས་ལུས།';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ཉོ་ཚོང་རེ་རེའི་དངུལ་ཉིན་གཅིག་པར་ S&P 500 སྟོན་གྲངས་མ་དངུལ་ནང་མ་འཇོག་བྱས་པ་ལྟར། ཁེ་བགོས་མི་ཚུད། སྔོན་གྱི་ཁེ་སྤོགས་ཀྱིས་མ་འོངས་པའི་ཁེ་སྤོགས་སྔོན་དཔག་མི་བྱེད།';
+
+  @override
+  String get portfolioSell => 'འཚོང';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol འཚོང';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ཧུར་ཁག་རེའི་འཚོང་གོང ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'འཚོང་བའི་ཚེས་གྲངས';
+
+  @override
+  String get portfolioSellAll => 'ཚང་མ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'ཁྱེད་ལ་ $quantity ཡོད';
+  }
+
+  @override
+  String get portfolioSold => 'བཙོངས་ཟིན';
+
+  @override
+  String get portfolioRealized => 'ལག་ཐོབ';
+
+  @override
+  String get portfolioClosed => 'མཇུག་སྒྲིལ་ཟིན་པའི་ཧུར་ཁག';
+
+  @override
+  String get portfolioClosedNote => 'ཧུར་ཁག་ཚང་མ་བཙོངས་ཟིན';
+
+  @override
+  String get portfolioTransactions => 'ཉོ་འཚོང';
+
+  @override
+  String get portfolioRealizedByYear => 'ལོ་རེའི་ལག་ཐོབ་ཁེ་སྤོགས';
+
+  @override
+  String get portfolioRealizedHint =>
+      'འཚོང་བ་དེ་དང་པོར་ཁྱེད་ཀྱི་ཉོ་སྒྲུབ་རྙིང་ཤོས་དང་མཐུན་སྒྲིག་བྱེད (FIFO)། དེ་རིང་གི་དངུལ་བརྗེའི་ཐང་ཚད་ལྟར་བསྒྱུར་ཡོད། ཁྲལ་འབབ་ཞུ་ཐོའི་ཆེད་དུ་ཁྱེད་ཀྱི་བར་མིའི་གསལ་ཐོ་བེད་སྤྱོད་གནང་།';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'དབྱེ་ཞིབ་འདི་བྱས་རྗེས་ཟླ་གསུམ་གྲུབ་འབྲས་གསར་པ་སྤེལ་ཟིན། ($symbol, $date)';
+  }
+
+  @override
+  String get newResultsBadge => 'གྲུབ་འབྲས་གསར་པ';
 }

@@ -12,9 +12,27 @@ class StockReport {
     this.language,
     this.outlook,
     this.promptVersion,
+    this.nextEarnings,
   });
 
   final String symbol;
+
+  /// A következő gyorsjelentés napja az elemzés idején (ha ismert): ha azóta
+  /// eltelt, az elemzés még a friss eredmények előtt készült.
+  final DateTime? nextEarnings;
+
+  /// Ugyanez az elemzés a következő gyorsjelentés napjával.
+  StockReport withNextEarnings(DateTime? date) => StockReport(
+    symbol: symbol,
+    headline: headline,
+    sections: sections,
+    generatedAt: generatedAt,
+    sources: sources,
+    language: language,
+    outlook: outlook,
+    promptVersion: promptVersion,
+    nextEarnings: date,
+  );
 
   /// Egy-két mondatos lényeg (TL;DR).
   final String headline;
@@ -41,6 +59,7 @@ class StockReport {
     'language': language,
     if (outlook != null) 'outlook_data': outlook!.toJson(),
     'prompt_version': ?promptVersion,
+    if (nextEarnings != null) 'next_earnings': nextEarnings!.toIso8601String().substring(0, 10),
   };
 
   factory StockReport.fromJson(Map<String, dynamic> j) => StockReport(
@@ -58,6 +77,7 @@ class StockReport {
         ? ReportOutlook.fromJson((j['outlook_data'] as Map).cast<String, dynamic>())
         : null,
     promptVersion: j['prompt_version'] as String?,
+    nextEarnings: DateTime.tryParse(j['next_earnings'] as String? ?? ''),
   );
 }
 

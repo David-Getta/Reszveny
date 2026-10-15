@@ -17,27 +17,34 @@ double? parseDecimal(String input) {
   return double.tryParse(s.replaceAll(',', '.'));
 }
 
-/// Vétel rögzítése: darabszám, darabonkénti ár (a jelenlegi árral kitöltve) és
-/// dátum. `true`-val tér vissza, ha a vétel bekerült a portfólióba.
+/// Vétel (vagy [sellMax] megadásával eladás) rögzítése: darabszám,
+/// darabonkénti ár (a jelenlegi árral kitöltve) és dátum. `true`-val tér
+/// vissza, ha a tranzakció bekerült a portfólióba.
 Future<bool> showAddLotDialog(
   BuildContext context, {
   required String symbol,
   required String currency,
   double? currentPrice,
+  double? sellMax,
 }) async {
   final added = await showDialog<bool>(
     context: context,
-    builder: (_) => _AddLotDialog(symbol: symbol, currency: currency, currentPrice: currentPrice),
+    builder: (_) => _AddLotDialog(symbol: symbol, currency: currency, currentPrice: currentPrice, sellMax: sellMax),
   );
   return added ?? false;
 }
 
 class _AddLotDialog extends StatefulWidget {
-  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice});
+  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.sellMax});
 
   final String symbol;
   final String currency;
   final double? currentPrice;
+
+  /// Eladásnál a birtokolt darabszám (ennél többet nem lehet eladni).
+  final double? sellMax;
+
+  bool get sell => sellMax != null;
 
   @override
   State<_AddLotDialog> createState() => _AddLotDialogState();
@@ -54,10 +61,12 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   void initState() {
     super.initState();
     final p = widget.currentPrice;
-    _price = TextEditingController(
-      text: p == null ? '' : (p == p.roundToDouble() ? p.toStringAsFixed(0) : p.toStringAsFixed(p < 1 ? 4 : 2)),
-    );
+    _price = TextEditingController(text: p == null ? '' : _plain(p));
   }
+
+  /// Szám a beviteli mezőbe (pont tizedesjellel, amit a [parseDecimal] is elfogad).
+  static String _plain(double v) =>
+      v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2).replaceAll(RegExp(r'0+$'), '');
 
   @override
   void dispose() {
@@ -76,13 +85,19 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     final l10n = AppLocalizations.of(context);
     final q = parseDecimal(_quantity.text);
     final p = parseDecimal(_price.text);
+    final max = widget.sellMax;
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     setState(() {
-      _quantityError = q == null || q <= 0 ? l10n.portfolioInvalidNumber : null;
+      _quantityError = q == null || q <= 0
+          ? l10n.portfolioInvalidNumber
+          : (max != null && q > max + 1e-9
+                ? l10n.portfolioSellTooMany(fmt.number(max, decimals: max == max.roundToDouble() ? 0 : 4))
+                : null);
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
     });
     if (_quantityError != null || _priceError != null) return;
     await AppServices.of(context).portfolio
-        .add(symbol: widget.symbol, quantity: q!, price: p!, currency: widget.currency, date: _date);
+        .add(symbol: widget.symbol, quantity: q!, price: p!, currency: widget.currency, date: _date, sell: widget.sell);
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -93,7 +108,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     const numberKeyboard = TextInputType.numberWithOptions(decimal: true);
     return AlertDialog(
-      title: Text(l10n.portfolioAddTitle(widget.symbol)),
+      title: Text(widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
       content: SizedBox(
         width: 360,
         child: Column(
@@ -105,7 +120,18 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               controller: _quantity,
               autofocus: true,
               keyboardType: numberKeyboard,
-              decoration: InputDecoration(labelText: l10n.portfolioQuantity, errorText: _quantityError),
+              decoration: InputDecoration(
+                labelText: l10n.portfolioQuantity,
+                errorText: _quantityError,
+                // Eladásnál a birtokolt darabszám, egy koppintással kitölthető.
+                suffix: widget.sellMax == null
+                    ? null
+                    : InkWell(
+                        key: const ValueKey('lot-sell-all'),
+                        onTap: () => _quantity.text = _plain(widget.sellMax!),
+                        child: Text(l10n.portfolioSellAll, style: TextStyle(color: p.accent)),
+                      ),
+              ),
               onSubmitted: (_) => _submit(),
             ),
             const SizedBox(height: 12),
@@ -113,7 +139,12 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               key: const ValueKey('lot-price'),
               controller: _price,
               keyboardType: numberKeyboard,
-              decoration: InputDecoration(labelText: l10n.portfolioBuyPrice(widget.currency), errorText: _priceError),
+              decoration: InputDecoration(
+                labelText: widget.sell
+                    ? l10n.portfolioSellPrice(widget.currency)
+                    : l10n.portfolioBuyPrice(widget.currency),
+                errorText: _priceError,
+              ),
               onSubmitted: (_) => _submit(),
             ),
             const SizedBox(height: 12),
@@ -127,7 +158,10 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     Icon(Icons.event_outlined, size: 18, color: p.muted),
                     const SizedBox(width: 8),
                     Expanded(
-                      child: Text(l10n.portfolioBuyDate, style: TextStyle(color: p.muted)),
+                      child: Text(
+                        widget.sell ? l10n.portfolioSellDate : l10n.portfolioBuyDate,
+                        style: TextStyle(color: p.muted),
+                      ),
                     ),
                     Text(fmt.date(_date), style: const TextStyle(fontWeight: FontWeight.w600)),
                   ],
@@ -139,7 +173,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       ),
       actions: [
         TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
-        FilledButton(onPressed: _submit, child: Text(l10n.portfolioAdd)),
+        FilledButton(
+          key: const ValueKey('lot-submit'),
+          onPressed: _submit,
+          child: Text(widget.sell ? l10n.portfolioSell : l10n.portfolioAdd),
+        ),
       ],
     );
   }

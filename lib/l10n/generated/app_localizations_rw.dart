@@ -1799,4 +1799,81 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get digestHint =>
       'Buri wa Mbere: uko ibyo ukunda n\'ishoramari ryawe byagenze mu cyumweru gishize, n\'amatariki y\'ibyavuye mu gihembwe ari imbere.';
+
+  @override
+  String get benchmarkTitle => 'Ugereranyije na S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ibyo waguze';
+
+  @override
+  String get benchmarkIndex => 'Amafaranga angana muri S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Iruta index ku manota ya ijanisha $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Iri inyuma ya index ku manota ya ijanisha $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Nk\'aho amafaranga ya buri kigura yashowe muri S&P 500 index fund uwo munsi nyine. Inyungu zigabanywa ntizibariwemo; inyungu zo mu bihe byashize ntiziteganya iz\'ejo hazaza.';
+
+  @override
+  String get portfolioSell => 'Gurisha';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Gurisha $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Igiciro cyo kugurisha buri mugabane ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Itariki yo kugurisha';
+
+  @override
+  String get portfolioSellAll => 'Byose';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ufite $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Byagurishijwe';
+
+  @override
+  String get portfolioRealized => 'Ibyabonetse';
+
+  @override
+  String get portfolioClosed => 'Imigabane wagurishije yose';
+
+  @override
+  String get portfolioClosedNote => 'Imigabane yose yagurishijwe';
+
+  @override
+  String get portfolioTransactions => 'Ibyaguzwe n\'ibyagurishijwe';
+
+  @override
+  String get portfolioRealizedByYear => 'Inyungu zabonetse ku mwaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ibyagurishijwe bibanza guhuzwa n\'ibyo waguze kera cyane (FIFO), bigahindurwa ku gipimo cy\'ivunjisha cy\'uyu munsi. Ku imenyekanisha ry\'umusoro, koresha raporo y\'umuhuza wawe (broker).';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kuva iri sesengura ryakorwa, ibyavuye mu gihembwe bishya byasohotse ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ibyavuyemo bishya';
 }

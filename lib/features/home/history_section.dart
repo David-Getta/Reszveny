@@ -200,6 +200,22 @@ class SavedAnalysisTile extends StatelessWidget {
       title: Row(
         children: [
           Text(r.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+          // Az elemzés óta megjelent a cég gyorsjelentése.
+          if (services.reports.hasNewResults(r)) ...[
+            const SizedBox(width: 8),
+            Container(
+              key: ValueKey('new-results-${r.symbol}'),
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+              decoration: BoxDecoration(
+                color: p.accent.withValues(alpha: 0.15),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: Text(
+                l10n.newResultsBadge,
+                style: theme.textTheme.labelSmall?.copyWith(color: p.accent, fontWeight: FontWeight.w600),
+              ),
+            ),
+          ],
           const SizedBox(width: 8),
           Expanded(
             child: Text(

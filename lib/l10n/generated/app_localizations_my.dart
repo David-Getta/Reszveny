@@ -1785,4 +1785,81 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get digestHint =>
       'တနင်္လာနေ့တိုင်း- ပြီးခဲ့သည့်အပတ်က သင့်အကြိုက်ဆုံးများနှင့် ပေါ့ဖိုလီယို မည်သို့ ပြောင်းလဲခဲ့သည်နှင့် ၎င်းတို့၏ လာမည့် ရလဒ်ထုတ်ပြန်ရက်များ။';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 နှင့် နှိုင်းယှဉ်ချက်';
+
+  @override
+  String get benchmarkYours => 'သင့်ဝယ်ယူမှုများ';
+
+  @override
+  String get benchmarkIndex => 'S&P 500 တွင် တူညီသောပမာဏ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'အညွှန်းကိန်းထက် ရာခိုင်နှုန်းမှတ် $points ပိုကောင်း';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'အညွှန်းကိန်းထက် ရာခိုင်နှုန်းမှတ် $points နောက်ကျ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ဝယ်ယူမှုတိုင်းကို တစ်နေ့တည်းတွင် S&P 500 အညွှန်းကိန်းရန်ပုံငွေထဲ ရင်းနှီးခဲ့သကဲ့သို့ တွက်ချက်ထားသည်။ အမြတ်ဝေစု မပါဝင်ပါ။ အတိတ်အမြတ်နှုန်းသည် အနာဂတ်အမြတ်နှုန်းကို ခန့်မှန်းမပေးပါ။';
+
+  @override
+  String get portfolioSell => 'ရောင်းရန်';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol ရောင်းရန်';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'တစ်ရှယ်ယာလျှင် ရောင်းဈေး ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'ရောင်းသည့် ရက်စွဲ';
+
+  @override
+  String get portfolioSellAll => 'အားလုံး';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'သင့်တွင် $quantity ရှိသည်';
+  }
+
+  @override
+  String get portfolioSold => 'ရောင်းပြီး';
+
+  @override
+  String get portfolioRealized => 'ရရှိပြီး';
+
+  @override
+  String get portfolioClosed => 'ပိတ်ပြီး ကိုင်ဆောင်မှုများ';
+
+  @override
+  String get portfolioClosedNote => 'ရှယ်ယာအားလုံး ရောင်းပြီး';
+
+  @override
+  String get portfolioTransactions => 'အရောင်းအဝယ်များ';
+
+  @override
+  String get portfolioRealizedByYear => 'နှစ်အလိုက် ရရှိပြီး အမြတ်';
+
+  @override
+  String get portfolioRealizedHint =>
+      'ရောင်းချမှုများကို သင်၏ အဟောင်းဆုံး ဝယ်ယူမှုများနှင့် ဦးစွာ တွဲဖက်သည် (FIFO)၊ ယနေ့ ငွေလဲနှုန်းဖြင့် ပြောင်းလဲထားသည်။ အခွန်ဆောင်ရန်အတွက် သင့်ပွဲစား၏ ရှင်းတမ်းကို အသုံးပြုပါ။';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ဤခွဲခြမ်းစိတ်ဖြာမှုနောက်ပိုင်း သုံးလပတ်ရလဒ်အသစ် ထုတ်ပြန်ခဲ့သည် ($symbol, $date)။';
+  }
+
+  @override
+  String get newResultsBadge => 'ရလဒ်အသစ်';
 }

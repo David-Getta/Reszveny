@@ -204,6 +204,9 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5x | Portfólió értékalakulása grafikonon (napi záróárakból, a vételek dátumától, a befektetett összeg szintjével); a nagy számok tömören a tengelyen | ✅ kész |
 | 5y | AI-portfólióelemzés: az egész portfólió (koncentráció, szektor-, ország- és devizakitettség, közös kockázatok, osztalék, megfontolandó szempontok) egy rövid elemzésnyi keretért; a legutóbbi a készüléken marad | ✅ kész |
 | 5z | Heti összefoglaló e-mailben (bekapcsolható): hétfő reggel a portfólió és a kedvencek heti mozgása, és a következő két hét gyorsjelentései | ✅ kész |
+| 5aa | Portfólió összevetése az S&P 500-zal: mintha minden vétel összegét aznap indexalapba tetted volna (eladáskor ugyanannyit kivéve) | ✅ kész |
+| 5ab | Eladások rögzítése: FIFO bekerülési érték, realizált nyereség (évenként is, az adóbevalláshoz), lezárt pozíciók; a grafikon, a CSV, a szinkron és a heti e-mail is kezeli | ✅ kész |
+| 5ac | „Új gyorsjelentés” jelzés: ha egy mentett elemzés óta a cég gyorsjelentést tett közzé, a listában jelvény, megnyitáskor a frissítés-kérdés megemlíti | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

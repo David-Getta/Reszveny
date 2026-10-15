@@ -67,6 +67,11 @@ String adminStatsPage(Map<String, dynamic> stats) {
     ('Elemzések (30 nap)', '${sum('analyses')}'),
     ('Vásárlások (30 nap)', '${sum('purchases')}'),
     ('Csomagválasztó (30 nap)', '${sumEvent('paywall_view')}'),
+    if (stats['accounts'] case final Map a) ...[
+      ('E-mailes fiókok', '${a['email']}'),
+      ('Szinkronizált fiókok', '${a['synced']}'),
+      ('Heti összefoglaló', '${a['weekly_digest']}'),
+    ],
   ];
   final b = StringBuffer()
     ..write('<main><h1>WhatStock statisztika</h1>')

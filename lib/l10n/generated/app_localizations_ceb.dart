@@ -1801,4 +1801,81 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get digestHint =>
       'Matag Lunes: giunsa paglihok sa imong mga paborito ug portfolio sa miaging semana, ug ang ilang umaabot nga mga petsa sa resulta.';
+
+  @override
+  String get benchmarkTitle => 'Itandi sa S&P 500';
+
+  @override
+  String get benchmarkYours => 'Imong mga gipalit';
+
+  @override
+  String get benchmarkIndex => 'Parehas nga kantidad sa S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points ka percentage point nga mas maayo kaysa index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points ka percentage point nga ubos sa index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ingon nga ang matag palit gibutang sa usa ka S&P 500 index fund sa samang adlaw. Wala giapil ang dibidendo; ang nangaging kita dili magtagna sa umaabot.';
+
+  @override
+  String get portfolioSell => 'Ibaligya';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ibaligya ang $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Presyo sa pagbaligya matag share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Petsa sa pagbaligya';
+
+  @override
+  String get portfolioSellAll => 'Tanan';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Naa kay $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Gibaligya';
+
+  @override
+  String get portfolioRealized => 'Narealisar';
+
+  @override
+  String get portfolioClosed => 'Sirado nga mga posisyon';
+
+  @override
+  String get portfolioClosedNote => 'Nabaligya na ang tanang share';
+
+  @override
+  String get portfolioTransactions => 'Mga transaksyon';
+
+  @override
+  String get portfolioRealizedByYear => 'Narealisar nga ganansya matag tuig';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ang mga pagbaligya ipares una sa imong pinakaunang mga pagpalit (FIFO), gi-convert sa exchange rate karon. Para sa imong tax return, gamita ang statement sa imong broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Sukad niining pagtuki, may bag-ong quarterly nga resulta nga gipatik ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Bag-ong resulta';
 }

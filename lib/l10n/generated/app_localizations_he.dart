@@ -1788,4 +1788,81 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get digestHint =>
       'בכל יום שני: איך זזו המועדפים ותיק ההשקעות שלך בשבוע שעבר, ומועדי הדוחות הקרובים שלהם.';
+
+  @override
+  String get benchmarkTitle => 'בהשוואה ל-S&P 500';
+
+  @override
+  String get benchmarkYours => 'הרכישות שלך';
+
+  @override
+  String get benchmarkIndex => 'אותם סכומים ב-S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'טוב מהמדד ב-$points נקודות אחוז';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'מפגר אחרי המדד ב-$points נקודות אחוז';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'כאילו כל רכישה הושקעה באותו יום בקרן מחקה של S&P 500. ללא דיבידנדים; תשואות עבר אינן מנבאות תשואות עתידיות.';
+
+  @override
+  String get portfolioSell => 'מכירה';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'מכירת $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'מחיר מכירה למניה ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'תאריך המכירה';
+
+  @override
+  String get portfolioSellAll => 'הכול';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'ברשותך $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'נמכרו';
+
+  @override
+  String get portfolioRealized => 'ממומש';
+
+  @override
+  String get portfolioClosed => 'פוזיציות סגורות';
+
+  @override
+  String get portfolioClosedNote => 'כל המניות נמכרו';
+
+  @override
+  String get portfolioTransactions => 'עסקאות';
+
+  @override
+  String get portfolioRealizedByYear => 'רווח ממומש לפי שנה';
+
+  @override
+  String get portfolioRealizedHint =>
+      'המכירות מותאמות תחילה לרכישות הוותיקות ביותר שלך (FIFO) ומומרות לפי שער החליפין של היום. לדוח המס יש להשתמש בדוח של הברוקר.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'מאז הניתוח הזה פורסם דוח רבעוני חדש ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'דוח חדש';
 }

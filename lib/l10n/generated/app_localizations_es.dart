@@ -1797,4 +1797,81 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get digestHint =>
       'Cada lunes: cómo se movieron tus favoritos y tu cartera la semana pasada, y sus próximas fechas de resultados.';
+
+  @override
+  String get benchmarkTitle => 'Comparado con el S&P 500';
+
+  @override
+  String get benchmarkYours => 'Tus compras';
+
+  @override
+  String get benchmarkIndex => 'Mismos importes en el S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points puntos porcentuales mejor que el índice';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points puntos porcentuales por debajo del índice';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Como si cada compra se hubiera invertido el mismo día en un fondo indexado al S&P 500. Sin dividendos; las rentabilidades pasadas no predicen las futuras.';
+
+  @override
+  String get portfolioSell => 'Vender';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Vender $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Precio de venta por acción ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Fecha de venta';
+
+  @override
+  String get portfolioSellAll => 'Todas';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Tienes $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Venta';
+
+  @override
+  String get portfolioRealized => 'Realizado';
+
+  @override
+  String get portfolioClosed => 'Posiciones cerradas';
+
+  @override
+  String get portfolioClosedNote => 'Todas las acciones vendidas';
+
+  @override
+  String get portfolioTransactions => 'Transacciones';
+
+  @override
+  String get portfolioRealizedByYear => 'Ganancias realizadas por año';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Las ventas se asignan primero a tus compras más antiguas (FIFO) y se convierten al tipo de cambio de hoy. Para tu declaración de impuestos, usa el extracto de tu bróker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Desde este análisis se han publicado nuevos resultados trimestrales ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nuevos resultados';
 }

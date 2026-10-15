@@ -1739,4 +1739,81 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get digestHint =>
       '매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500과 비교';
+
+  @override
+  String get benchmarkYours => '내 매수';
+
+  @override
+  String get benchmarkIndex => '같은 금액을 S&P 500에';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '지수보다 $points%p 높음';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '지수보다 $points%p 낮음';
+  }
+
+  @override
+  String get benchmarkHint =>
+      '각 매수 금액을 같은 날 S&P 500 인덱스 펀드에 투자했다고 가정한 결과입니다. 배당금 제외. 과거 수익률이 미래 수익률을 보장하지 않습니다.';
+
+  @override
+  String get portfolioSell => '매도';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol 매도';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return '주당 매도 가격($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => '매도일';
+
+  @override
+  String get portfolioSellAll => '전체';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity주 보유 중';
+  }
+
+  @override
+  String get portfolioSold => '매도';
+
+  @override
+  String get portfolioRealized => '실현';
+
+  @override
+  String get portfolioClosed => '청산된 종목';
+
+  @override
+  String get portfolioClosedNote => '전량 매도됨';
+
+  @override
+  String get portfolioTransactions => '거래 내역';
+
+  @override
+  String get portfolioRealizedByYear => '연도별 실현 손익';
+
+  @override
+  String get portfolioRealizedHint =>
+      '매도는 가장 오래된 매수분부터 차감되며(FIFO), 오늘 환율로 환산됩니다. 세금 신고에는 증권사 거래 내역서를 사용하세요.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return '이 분석 이후 새 분기 실적이 발표되었습니다($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => '새 실적';
 }

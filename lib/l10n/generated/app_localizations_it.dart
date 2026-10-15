@@ -1797,4 +1797,81 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get digestHint =>
       'Ogni lunedì: come si sono mossi i tuoi preferiti e il tuo portafoglio la settimana scorsa e le prossime date dei risultati.';
+
+  @override
+  String get benchmarkTitle => 'Confronto con l\'S&P 500';
+
+  @override
+  String get benchmarkYours => 'I tuoi acquisti';
+
+  @override
+  String get benchmarkIndex => 'Stessi importi nell\'S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points punti percentuali meglio dell\'indice';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points punti percentuali sotto l\'indice';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Come se ogni acquisto fosse stato investito lo stesso giorno in un fondo indicizzato all\'S&P 500. Dividendi esclusi; i rendimenti passati non prevedono quelli futuri.';
+
+  @override
+  String get portfolioSell => 'Vendi';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Vendi $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Prezzo di vendita per azione ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Data di vendita';
+
+  @override
+  String get portfolioSellAll => 'Tutte';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ne possiedi $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Vendita';
+
+  @override
+  String get portfolioRealized => 'Realizzato';
+
+  @override
+  String get portfolioClosed => 'Posizioni chiuse';
+
+  @override
+  String get portfolioClosedNote => 'Tutte le azioni vendute';
+
+  @override
+  String get portfolioTransactions => 'Transazioni';
+
+  @override
+  String get portfolioRealizedByYear => 'Guadagni realizzati per anno';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Le vendite vengono abbinate prima agli acquisti più vecchi (FIFO) e convertite al tasso di cambio di oggi. Per la dichiarazione dei redditi, usa l’estratto conto del tuo broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Dopo questa analisi sono stati pubblicati nuovi risultati trimestrali ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nuovi risultati';
 }

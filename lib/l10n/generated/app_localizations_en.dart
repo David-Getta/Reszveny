@@ -1791,4 +1791,81 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get digestHint =>
       'Every Monday: how your favorites and portfolio moved last week, and their upcoming results dates.';
+
+  @override
+  String get benchmarkTitle => 'Compared with the S&P 500';
+
+  @override
+  String get benchmarkYours => 'Your purchases';
+
+  @override
+  String get benchmarkIndex => 'Same amounts in the S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points percentage points better than the index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points percentage points behind the index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'As if each purchase had gone into an S&P 500 index fund on the same day. Dividends not included; past returns do not predict future ones.';
+
+  @override
+  String get portfolioSell => 'Sell';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sell $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Sale price per share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Sale date';
+
+  @override
+  String get portfolioSellAll => 'All';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'You hold $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Sold';
+
+  @override
+  String get portfolioRealized => 'Realized';
+
+  @override
+  String get portfolioClosed => 'Closed positions';
+
+  @override
+  String get portfolioClosedNote => 'All shares sold';
+
+  @override
+  String get portfolioTransactions => 'Transactions';
+
+  @override
+  String get portfolioRealizedByYear => 'Realized gains by year';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Sales are matched to your oldest purchases first (FIFO), converted at today\'s exchange rate. For your tax return, use your broker\'s statement.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return '$symbol has published new quarterly results since this analysis ($date).';
+  }
+
+  @override
+  String get newResultsBadge => 'New results';
 }

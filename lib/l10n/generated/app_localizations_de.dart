@@ -1803,4 +1803,81 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get digestHint =>
       'Jeden Montag: wie sich deine Favoriten und dein Portfolio letzte Woche entwickelt haben und ihre nächsten Termine für Quartalszahlen.';
+
+  @override
+  String get benchmarkTitle => 'Im Vergleich zum S&P 500';
+
+  @override
+  String get benchmarkYours => 'Deine Käufe';
+
+  @override
+  String get benchmarkIndex => 'Gleiche Beträge im S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points Prozentpunkte besser als der Index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points Prozentpunkte hinter dem Index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Als wäre jeder Kauf am selben Tag in einen Indexfonds auf den S&P 500 geflossen. Ohne Dividenden; vergangene Renditen sagen keine zukünftigen voraus.';
+
+  @override
+  String get portfolioSell => 'Verkaufen';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol verkaufen';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Verkaufspreis pro Aktie ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Verkaufsdatum';
+
+  @override
+  String get portfolioSellAll => 'Alle';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Bestand: $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Verkauft';
+
+  @override
+  String get portfolioRealized => 'Realisiert';
+
+  @override
+  String get portfolioClosed => 'Geschlossene Positionen';
+
+  @override
+  String get portfolioClosedNote => 'Alle Aktien verkauft';
+
+  @override
+  String get portfolioTransactions => 'Transaktionen';
+
+  @override
+  String get portfolioRealizedByYear => 'Realisierte Gewinne nach Jahr';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Verkäufe werden zuerst mit den ältesten Käufen verrechnet (FIFO) und zum heutigen Wechselkurs umgerechnet. Für die Steuererklärung die Abrechnung des Brokers verwenden.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Seit dieser Analyse wurden neue Quartalszahlen veröffentlicht ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Neue Zahlen';
 }

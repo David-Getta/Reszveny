@@ -11,8 +11,9 @@ import 'portfolio_valuation.dart';
 
 /// A portfólió értékének története napi záróárakból: minden napon a már
 /// megvett darabok (a vétel dátumától) × az aznapi (vagy utolsó ismert) záróár,
-/// átváltva az összesítés pénznemébe (a mai árfolyammal). Dátum nélküli vétel
-/// az elejétől számít. `null`, ha nincs legalább két pont.
+/// átváltva az összesítés pénznemébe (a mai árfolyammal); az eladások a dátumuktól
+/// csökkentik a darabszámot. Dátum nélküli tranzakció az elejétől számít. `null`,
+/// ha nincs legalább két pont.
 PriceHistory? portfolioValueHistory(
   List<PortfolioLot> lots,
   Map<String, PriceHistory> histories,
@@ -28,8 +29,9 @@ PriceHistory? portfolioValueHistory(
     for (final s in {for (final l in usable) l.symbol})
       for (final p in histories[s]!.points) day(p.time),
   }.toList()..sort();
-  final dated = [for (final l in usable) l.date].whereType<DateTime>();
-  final start = usable.any((l) => l.date == null) || dated.isEmpty
+  final buys = usable.where((l) => !l.sell);
+  final dated = [for (final l in buys) l.date].whereType<DateTime>();
+  final start = buys.any((l) => l.date == null) || dated.isEmpty
       ? days.first
       : dated.map(day).reduce((a, b) => a.isBefore(b) ? a : b);
 
@@ -48,19 +50,97 @@ PriceHistory? portfolioValueHistory(
       idx[s] = i;
     }
     if (d.isBefore(start)) continue;
-    var value = 0.0;
-    var any = false;
+    // Tickerenként az aznap birtokolt darabszám (vételek − eladások, legalább 0).
+    final held = <String, double>{};
+    final ccy = <String, String>{};
     for (final l in usable) {
       if (l.date != null && day(l.date!).isAfter(d)) continue;
-      final close = last[l.symbol];
+      held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
+      ccy[l.symbol] = l.currency;
+    }
+    var value = 0.0;
+    var any = false;
+    for (final e in held.entries) {
+      final close = last[e.key];
       if (close == null) continue;
-      value += l.quantity * close * rate(l.currency)!;
+      value += (e.value < 0 ? 0 : e.value) * close * rate(ccy[e.key]!)!;
       any = true;
     }
     if (any) points.add(PricePoint(time: d, close: value));
   }
   return points.length < 2 ? null : PriceHistory(symbol: 'PORTFOLIO', points: points);
 }
+
+/// A portfólió és az S&P 500 összevetése: mintha minden vétel összegét a vétel
+/// napján egy S&P 500 indexkövető alapba (SPY) tetted volna, és minden eladáskor
+/// ugyanannyi pénzt vettél volna ki belőle. Mindkét oldal vagyona a megmaradt
+/// befektetés értéke plusz az eladásokból kapott pénz; a hozam a befektetett
+/// összegre vetítve, ugyanazzal a mai árfolyammal átváltva, így a deviza nem torzít.
+class BenchmarkComparison {
+  const BenchmarkComparison({required this.invested, required this.portfolioValue, required this.benchmarkValue});
+
+  final double invested;
+  final double portfolioValue;
+  final double benchmarkValue;
+
+  double get portfolioGain => (portfolioValue / invested - 1) * 100;
+  double get benchmarkGain => (benchmarkValue / invested - 1) * 100;
+
+  /// Százalékpontban: pozitív, ha a portfólió jobban ment.
+  double get difference => portfolioGain - benchmarkGain;
+}
+
+/// `null`, ha nincs összevethető vétel vagy index-adat.
+BenchmarkComparison? benchmarkComparison(
+  List<PortfolioLot> lots,
+  Map<String, PriceHistory> histories,
+  PriceHistory index,
+  double? Function(String currency) rate,
+) {
+  DateTime day(DateTime t) => DateTime(t.year, t.month, t.day);
+  final idx = index.points;
+  if (idx.length < 2) return null;
+  final first = idx.first.time;
+  // Az adott napig utolsó ismert indexár (a sorozat előtti napra az első).
+  double indexAt(DateTime d) {
+    var v = idx.first.close;
+    for (final p in idx) {
+      if (day(p.time).isAfter(d)) break;
+      v = p.close;
+    }
+    return v;
+  }
+
+  var invested = 0.0, cash = 0.0, units = 0.0;
+  final held = <String, double>{};
+  final lastValue = <String, double>{};
+  for (final l in lots) {
+    final r = rate(l.currency);
+    final pts = histories[l.symbol]?.points;
+    if (r == null || pts == null || pts.isEmpty) continue;
+    final amount = l.quantity * l.price * r;
+    final at = indexAt(day(l.date ?? first));
+    if (amount <= 0 || at <= 0) continue;
+    held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
+    lastValue[l.symbol] = pts.last.close * r;
+    if (l.sell) {
+      cash += amount;
+      units -= amount / at;
+    } else {
+      invested += amount;
+      units += amount / at;
+    }
+  }
+  if (invested <= 0) return null;
+  var value = cash;
+  for (final e in held.entries) {
+    if (e.value > 0) value += e.value * lastValue[e.key]!;
+  }
+  return BenchmarkComparison(invested: invested, portfolioValue: value, benchmarkValue: units * idx.last.close + cash);
+}
+
+/// Az összevetés indexe: S&P 500 indexkövető ETF.
+const benchmarkSymbol = 'SPY';
 
 /// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
 /// időtáv-választóval, a befektetett összeg szaggatott vonalával.
@@ -75,17 +155,24 @@ class PortfolioHistoryCard extends StatefulWidget {
 
 class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   String? _key;
-  Future<PriceHistory?>? _future;
+  Future<(PriceHistory?, BenchmarkComparison?)>? _future;
 
-  Future<PriceHistory?> _load(AppServices services) async {
+  Future<(PriceHistory?, BenchmarkComparison?)> _load(AppServices services) async {
     final lots = services.portfolio.lots;
     final histories = <String, PriceHistory>{};
+    PriceHistory? index;
     await Future.wait([
       for (final s in {for (final l in lots) l.symbol})
         services.marketData.history(s).then((h) => histories[s] = h).then((_) {}, onError: (Object _) {}),
+      services.marketData.history(benchmarkSymbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
     ]);
     final rates = <String, double>{for (final r in widget.snapshot.rows) r.position.currency: ?r.rate};
-    return portfolioValueHistory(lots, histories, (c) => c == widget.snapshot.currency ? 1.0 : rates[c]);
+    double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
+    final i = index;
+    return (
+      portfolioValueHistory(lots, histories, rate),
+      i == null ? null : benchmarkComparison(lots, histories, i, rate),
+    );
   }
 
   @override
@@ -100,11 +187,12 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
       _key = key;
       _future = _load(services);
     }
-    return FutureBuilder<PriceHistory?>(
+    return FutureBuilder<(PriceHistory?, BenchmarkComparison?)>(
       future: _future,
       builder: (context, snap) {
-        final h = snap.data;
+        final (h, bench) = snap.data ?? (null, null);
         if (h == null) return const SizedBox.shrink();
+        Color tone(double v) => v >= 0 ? p.positive : p.negative;
         return Card(
           key: const ValueKey('portfolio-history'),
           child: Padding(
@@ -121,6 +209,49 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                   showChange: false,
                   levels: [ChartLevel(price: widget.snapshot.cost, label: l10n.portfolioInvested, color: p.muted)],
                 ),
+                if (bench != null) ...[
+                  const SizedBox(height: 14),
+                  Text(l10n.benchmarkTitle, style: theme.textTheme.titleSmall),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    key: const ValueKey('portfolio-benchmark'),
+                    spacing: 28,
+                    runSpacing: 8,
+                    children: [
+                      for (final (label, value) in [
+                        (l10n.benchmarkYours, bench.portfolioValue),
+                        (l10n.benchmarkIndex, bench.benchmarkValue),
+                      ])
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                            const SizedBox(height: 2),
+                            Text(
+                              fmt.percent((value / bench.invested - 1) * 100, withSign: true),
+                              style: theme.textTheme.titleSmall?.copyWith(
+                                color: tone(value - bench.invested),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                            Text(
+                              fmt.money(value, widget.snapshot.currency),
+                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                            ),
+                          ],
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    bench.difference >= 0
+                        ? l10n.benchmarkAhead(fmt.number(bench.difference, decimals: 1))
+                        : l10n.benchmarkBehind(fmt.number(-bench.difference, decimals: 1)),
+                    style: theme.textTheme.bodyMedium?.copyWith(color: tone(bench.difference)),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(l10n.benchmarkHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                ],
               ],
             ),
           ),

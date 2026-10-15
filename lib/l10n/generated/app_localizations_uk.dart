@@ -1846,4 +1846,81 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get digestHint =>
       'Щопонеділка: як змінилися ваше обране та портфель за минулий тиждень і найближчі дати їхньої звітності.';
+
+  @override
+  String get benchmarkTitle => 'Порівняння з S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ваші покупки';
+
+  @override
+  String get benchmarkIndex => 'Ті самі суми в S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'На $points в. п. краще за індекс';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'На $points в. п. відстає від індексу';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ніби кожну покупку того ж дня вкладено в індексний фонд S&P 500. Без урахування дивідендів; минула дохідність не передбачає майбутньої.';
+
+  @override
+  String get portfolioSell => 'Продати';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Продати $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ціна продажу за акцію ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Дата продажу';
+
+  @override
+  String get portfolioSellAll => 'Усі';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'У вас $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Продано';
+
+  @override
+  String get portfolioRealized => 'Реалізовано';
+
+  @override
+  String get portfolioClosed => 'Закриті позиції';
+
+  @override
+  String get portfolioClosedNote => 'Усі акції продано';
+
+  @override
+  String get portfolioTransactions => 'Операції';
+
+  @override
+  String get portfolioRealizedByYear => 'Реалізований прибуток за роками';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Продажі спершу зіставляються з найдавнішими покупками (FIFO) і перераховуються за сьогоднішнім курсом. Для податкової декларації використовуйте виписку свого брокера.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Після цього аналізу вийшла нова квартальна звітність ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Нова звітність';
 }

@@ -1787,4 +1787,81 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get digestHint =>
       'Altine kala: no cuɓaaɗe maa e aksiyoŋ maa njahri yontere ɓennunde nde, e ñalɗi ngalluuji maɓɓe garooɗi.';
+
+  @override
+  String get benchmarkTitle => 'Fondaade e S&P 500';
+
+  @override
+  String get benchmarkYours => 'Coodgu maa';
+
+  @override
+  String get benchmarkIndex => 'Kaalis gooto e S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ɓuri indeks oo pursantaas $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ina rewi indeks oo pursantaas $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Wano si ceede coodgu kala waɗaa e fonds indeks S&P 500 e ñalawma gooto oo. Dividende naatiraaka; ngañaari ɓennuɗi hollataa ngañaari garooji.';
+
+  @override
+  String get portfolioSell => 'Yeeyu';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Yeeyu $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Coggu yeeyugol kala aksiyoŋ ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ñalnde yeeyugol';
+
+  @override
+  String get portfolioSellAll => 'Fof';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'A jogii $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Yeeyaama';
+
+  @override
+  String get portfolioRealized => 'Nafoore heɓaande';
+
+  @override
+  String get portfolioClosed => 'Aksiyoŋ yeeyaaɗe';
+
+  @override
+  String get portfolioClosedNote => 'Aksiyoŋ fof yeeyaama';
+
+  @override
+  String get portfolioTransactions => 'Soodgol e yeeyugol';
+
+  @override
+  String get portfolioRealizedByYear => 'Nafoore heɓaande e kala hitaande';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Yeeyuuji ina njaaɓndira adan e soodgol maa ɓurngol ƙiɗɗude (FIFO), waylaa e coggu beccol hannde. Ngam deftere lempo maa, huutoro ciimtol broker maa.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Gila ndee ƴeewndo nde waɗaa, ngalluuji lebbi tati kesi njaltinaama ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ngalluuji kesi';
 }

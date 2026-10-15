@@ -1787,4 +1787,81 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get digestHint =>
       'هر سومر: گذريل هفتي توهان جا پسنديده ۽ پورٽ فوليو ڪيئن هليا، ۽ انهن جي ايندڙ نتيجن جون تاريخون.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 سان ڀيٽ';
+
+  @override
+  String get benchmarkYours => 'توهان جون خريداريون';
+
+  @override
+  String get benchmarkIndex => 'ساڳي رقم S&P 500 ۾';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'انڊيڪس کان $points سيڪڙو پوائنٽ بهتر';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'انڊيڪس کان $points سيڪڙو پوائنٽ پوئتي';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ڄڻ ته هر خريداري جي رقم ساڳئي ڏينهن S&P 500 انڊيڪس فنڊ ۾ سيڙپ ڪئي وئي هجي. ڊيويڊنڊ شامل ناهي؛ ماضي جو موٽ مستقبل جي اڳڪٿي نٿو ڪري.';
+
+  @override
+  String get portfolioSell => 'وڪرو ڪريو';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol وڪرو ڪريو';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'في شيئر وڪري قيمت ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'وڪري جي تاريخ';
+
+  @override
+  String get portfolioSellAll => 'سڀ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'توهان وٽ $quantity آهن';
+  }
+
+  @override
+  String get portfolioSold => 'وڪرو ٿيو';
+
+  @override
+  String get portfolioRealized => 'حاصل ٿيل';
+
+  @override
+  String get portfolioClosed => 'بند پوزيشنون';
+
+  @override
+  String get portfolioClosedNote => 'سڀ شيئر وڪرو ٿي ويا';
+
+  @override
+  String get portfolioTransactions => 'ليڻ دين';
+
+  @override
+  String get portfolioRealizedByYear => 'سال وار حاصل ٿيل نفعو';
+
+  @override
+  String get portfolioRealizedHint =>
+      'وڪرو پهريان توهان جي سڀ کان پراڻين خريدارين سان ملايو ويندو آهي (FIFO)، اڄ جي مٽاسٽا جي شرح تي تبديل ڪري. ٽيڪس ريٽرن لاءِ پنهنجي بروڪر جو بيان استعمال ڪريو.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'هن تجزيي کان پوءِ نوان ٽماهي نتيجا جاري ٿيا آهن ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'نوان نتيجا';
 }

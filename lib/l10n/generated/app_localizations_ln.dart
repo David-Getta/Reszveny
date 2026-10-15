@@ -1802,4 +1802,81 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get digestHint =>
       'Mokolo ya yambo nyonso: ndenge oyo olingaka mpe portefeuille na yo etambolaki na pɔsɔ eleki, mpe mikolo ya ba résultats oyo ezali koya.';
+
+  @override
+  String get benchmarkTitle => 'Kokokanisa na S&P 500';
+
+  @override
+  String get benchmarkYours => 'Biloko osombaki';
+
+  @override
+  String get benchmarkIndex => 'Mbɔngɔ moko na S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Eleki indice na ba points ya pourcentage $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ezali nsima ya indice na ba points ya pourcentage $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Lokola mbɔngɔ ya esombeli moko na moko etiamaki na fonds indiciel S&P 500 na mokolo yango moko. Ba dividendes ezali te; matomba ya kala elakisaka te oyo ya mikolo ezali koya.';
+
+  @override
+  String get portfolioSell => 'Teka';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Teka $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ntalo ya koteka action moko ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Mokɔlɔ ya koteka';
+
+  @override
+  String get portfolioSellAll => 'Nyonso';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ozali na $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Etekami';
+
+  @override
+  String get portfolioRealized => 'Litomba ya solo';
+
+  @override
+  String get portfolioClosed => 'Ba-position oyo ekangami';
+
+  @override
+  String get portfolioClosedNote => 'Ba-action nyonso etekami';
+
+  @override
+  String get portfolioTransactions => 'Bosombi mpe boteki';
+
+  @override
+  String get portfolioRealizedByYear => 'Litomba ya solo na mbula';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Boteki ekokanisamaka liboso na bosombi na yo ya kala koleka (FIFO), ebongolami na motuya ya mbongo ya lelo. Mpo na declaration ya mpako, salelá rapɔrɔ ya broker na yo.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Banda analyse oyo, ba résultats ya sika ya trimestre ebimi ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Résultats ya sika';
 }

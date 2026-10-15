@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_report.dart';
+import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 
@@ -26,7 +27,24 @@ Future<bool?> askStaleChoice(BuildContext context, StockReport report) {
     builder: (context) => AlertDialog(
       icon: const Icon(Icons.update_rounded),
       title: Text(l10n.staleTitle),
-      content: Text(l10n.staleBody(analysisAgeText(l10n, report.generatedAt))),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (services.reports.hasNewResults(report)) ...[
+            Text(
+              l10n.staleNewResults(
+                report.symbol,
+                Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable).date(report.nextEarnings),
+              ),
+              key: const ValueKey('stale-new-results'),
+              style: TextStyle(color: AppPalette.of(context).accent, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 10),
+          ],
+          Text(l10n.staleBody(analysisAgeText(l10n, report.generatedAt))),
+        ],
+      ),
       actions: [
         TextButton(
           key: const ValueKey('stale-keep'),

@@ -1797,4 +1797,81 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get digestHint =>
       'Elke maandag: hoe je favorieten en portefeuille vorige week bewogen, en wanneer hun volgende kwartaalcijfers komen.';
+
+  @override
+  String get benchmarkTitle => 'Vergeleken met de S&P 500';
+
+  @override
+  String get benchmarkYours => 'Jouw aankopen';
+
+  @override
+  String get benchmarkIndex => 'Zelfde bedragen in de S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points procentpunt beter dan de index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points procentpunt achter op de index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Alsof elke aankoop op dezelfde dag in een S&P 500-indexfonds was gestoken. Zonder dividend; rendementen uit het verleden voorspellen geen toekomstige.';
+
+  @override
+  String get portfolioSell => 'Verkopen';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol verkopen';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Verkoopprijs per aandeel ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Verkoopdatum';
+
+  @override
+  String get portfolioSellAll => 'Alle';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Je hebt $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Verkocht';
+
+  @override
+  String get portfolioRealized => 'Gerealiseerd';
+
+  @override
+  String get portfolioClosed => 'Gesloten posities';
+
+  @override
+  String get portfolioClosedNote => 'Alle aandelen verkocht';
+
+  @override
+  String get portfolioTransactions => 'Transacties';
+
+  @override
+  String get portfolioRealizedByYear => 'Gerealiseerde winst per jaar';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Verkopen worden eerst gekoppeld aan je oudste aankopen (FIFO) en omgerekend tegen de wisselkoers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Sinds deze analyse zijn er nieuwe kwartaalcijfers gepubliceerd ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nieuwe cijfers';
 }

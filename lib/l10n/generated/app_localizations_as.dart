@@ -1794,4 +1794,81 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get digestHint =>
       'প্ৰতি সোমবাৰে: যোৱা সপ্তাহত আপোনাৰ প্ৰিয় আৰু প\'ৰ্টফ\'লিঅ\' কেনেকৈ সলনি হ\'ল, আৰু সিহঁতৰ আগন্তুক ফলাফলৰ তাৰিখ।';
+
+  @override
+  String get benchmarkTitle => 'S&P 500ৰ সৈতে তুলনা';
+
+  @override
+  String get benchmarkYours => 'আপোনাৰ ক্ৰয়';
+
+  @override
+  String get benchmarkIndex => 'S&P 500ত একে পৰিমাণ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'সূচকাংকতকৈ $points শতাংশ বিন্দু ভাল';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'সূচকাংকতকৈ $points শতাংশ বিন্দু পিছপৰি';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'যেন প্ৰতিটো ক্ৰয়ৰ ধন একেটা দিনতে S&P 500 ইণ্ডেক্স ফাণ্ডত বিনিয়োগ কৰা হৈছিল। লভ্যাংশ অন্তৰ্ভুক্ত নহয়; অতীতৰ ৰিটাৰ্নে ভৱিষ্যতৰ ৰিটাৰ্নৰ পূৰ্বাভাস নিদিয়ে।';
+
+  @override
+  String get portfolioSell => 'বিক্ৰী';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol বিক্ৰী কৰক';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'প্ৰতি শ্বেয়াৰৰ বিক্ৰী মূল্য ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'বিক্ৰীৰ তাৰিখ';
+
+  @override
+  String get portfolioSellAll => 'সকলো';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'আপোনাৰ $quantity আছে';
+  }
+
+  @override
+  String get portfolioSold => 'বিক্ৰীত';
+
+  @override
+  String get portfolioRealized => 'বাস্তৱায়িত';
+
+  @override
+  String get portfolioClosed => 'বন্ধ পজিচন';
+
+  @override
+  String get portfolioClosedNote => 'সকলো শ্বেয়াৰ বিক্ৰী কৰা হৈছে';
+
+  @override
+  String get portfolioTransactions => 'লেনদেন';
+
+  @override
+  String get portfolioRealizedByYear => 'বছৰ অনুসৰি বাস্তৱায়িত লাভ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'বিক্ৰীসমূহ প্ৰথমে আপোনাৰ আটাইতকৈ পুৰণি ক্ৰয়ৰ সৈতে মিলোৱা হয় (FIFO), আজিৰ বিনিময় হাৰত ৰূপান্তৰ কৰি। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰ\'কাৰৰ বিবৃতি ব্যৱহাৰ কৰক।';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'এই বিশ্লেষণৰ পিছত নতুন ত্ৰৈমাসিক ফলাফল প্ৰকাশ পাইছে ($symbol, $date)।';
+  }
+
+  @override
+  String get newResultsBadge => 'নতুন ফলাফল';
 }

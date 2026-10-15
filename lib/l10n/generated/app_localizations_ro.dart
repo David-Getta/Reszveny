@@ -1824,4 +1824,81 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get digestHint =>
       'În fiecare luni: cum au evoluat favoritele și portofoliul tău săptămâna trecută și datele viitoare ale rezultatelor lor.';
+
+  @override
+  String get benchmarkTitle => 'Comparație cu S&P 500';
+
+  @override
+  String get benchmarkYours => 'Achizițiile tale';
+
+  @override
+  String get benchmarkIndex => 'Aceleași sume în S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Cu $points puncte procentuale peste indice';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Cu $points puncte procentuale sub indice';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ca și cum fiecare achiziție ar fi fost investită în aceeași zi într-un fond indexat pe S&P 500. Fără dividende; randamentele trecute nu prezic randamentele viitoare.';
+
+  @override
+  String get portfolioSell => 'Vinde';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Vinde $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Preț de vânzare pe acțiune ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Data vânzării';
+
+  @override
+  String get portfolioSellAll => 'Toate';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Deții $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Vândut';
+
+  @override
+  String get portfolioRealized => 'Realizat';
+
+  @override
+  String get portfolioClosed => 'Poziții închise';
+
+  @override
+  String get portfolioClosedNote => 'Toate acțiunile vândute';
+
+  @override
+  String get portfolioTransactions => 'Tranzacții';
+
+  @override
+  String get portfolioRealizedByYear => 'Câștiguri realizate pe ani';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Vânzările sunt asociate mai întâi celor mai vechi cumpărări (FIFO) și convertite la cursul de schimb de azi. Pentru declarația fiscală, folosește extrasul brokerului tău.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'De la această analiză au fost publicate noi rezultate trimestriale ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Rezultate noi';
 }

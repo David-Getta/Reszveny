@@ -33,7 +33,11 @@ class PositionCard extends StatelessWidget {
         String qty(double v) => fmt.number(v, decimals: v == v.roundToDouble() ? 0 : 4);
         return SectionCard(
           title: l10n.portfolioYourPosition,
-          trailing: TextButton(onPressed: () => showPurchasesSheet(context, pos), child: Text(l10n.portfolioPurchases)),
+          trailing: TextButton(
+            key: const ValueKey('position-transactions'),
+            onPressed: () => showPurchasesSheet(context, pos, currentPrice: q?.price),
+            child: Text(l10n.portfolioTransactions),
+          ),
           child: Wrap(
             spacing: 28,
             runSpacing: 12,
@@ -60,6 +64,12 @@ class PositionCard extends StatelessWidget {
                 value: fmt.money(pos.cost, ccy),
                 sub: l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false)),
               ),
+              if (pos.hasSales)
+                _Figure(
+                  label: l10n.portfolioRealized,
+                  value: fmt.money(pos.realizedGain, ccy, withSign: true),
+                  color: gainColor(p, pos.realizedGain),
+                ),
             ],
           ),
         );

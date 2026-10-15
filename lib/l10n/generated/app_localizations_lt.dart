@@ -1848,4 +1848,81 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get digestHint =>
       'Kiekvieną pirmadienį: kaip praėjusią savaitę judėjo jūsų mėgstamiausi ir portfelis bei artimiausios jų rezultatų datos.';
+
+  @override
+  String get benchmarkTitle => 'Palyginti su S&P 500';
+
+  @override
+  String get benchmarkYours => 'Jūsų pirkimai';
+
+  @override
+  String get benchmarkIndex => 'Tos pačios sumos S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points proc. p. geriau nei indeksas';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points proc. p. atsilieka nuo indekso';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Tarsi kiekvienas pirkimas tą pačią dieną būtų investuotas į S&P 500 indekso fondą. Be dividendų; ankstesnė grąža nenuspėja būsimos.';
+
+  @override
+  String get portfolioSell => 'Parduoti';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Parduoti $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Akcijos pardavimo kaina ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Pardavimo data';
+
+  @override
+  String get portfolioSellAll => 'Visas';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Turite $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Parduota';
+
+  @override
+  String get portfolioRealized => 'Realizuota';
+
+  @override
+  String get portfolioClosed => 'Uždarytos pozicijos';
+
+  @override
+  String get portfolioClosedNote => 'Visos akcijos parduotos';
+
+  @override
+  String get portfolioTransactions => 'Operacijos';
+
+  @override
+  String get portfolioRealizedByYear => 'Realizuotas pelnas pagal metus';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Pardavimai pirmiausia priskiriami seniausiems jūsų pirkimams (FIFO) ir perskaičiuojami pagal šiandienos valiutos kursą. Mokesčių deklaracijai naudokite savo brokerio išrašą.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Po šios analizės paskelbti nauji ketvirčio rezultatai ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nauji rezultatai';
 }

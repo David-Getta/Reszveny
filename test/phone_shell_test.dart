@@ -131,7 +131,12 @@ void main() {
     expect(find.text('Regenerate'), findsOneWidget);
   });
 
-  Future<void> pumpWithOld(WidgetTester tester, {int days = 3, List<String> more = const []}) async {
+  Future<void> pumpWithOld(
+    WidgetTester tester, {
+    int days = 3,
+    List<String> more = const [],
+    DateTime? msftEarnings,
+  }) async {
     _phone(tester);
     final values = <String, Object>{};
     for (final (i, symbol) in ['MSFT', ...more].indexed) {
@@ -140,6 +145,7 @@ void main() {
         headline: symbol == 'MSFT' ? 'Old but saved' : 'Headline $symbol',
         sections: const [],
         generatedAt: DateTime.now().subtract(Duration(days: days, minutes: i)),
+        nextEarnings: symbol == 'MSFT' ? msftEarnings : null,
       );
       values['report_$symbol'] = jsonEncode(r.toJson());
     }
@@ -167,6 +173,21 @@ void main() {
     expect(find.text('Microsoft Corporation'), findsWidgets);
     expect(find.text('Old but saved'), findsOneWidget);
     expect(find.byKey(const ValueKey('stale-prompt')), findsNothing);
+  });
+
+  testWidgets('quarterly results since the analysis: a badge in the list and a line in the question', (tester) async {
+    final day = DateTime.now().subtract(const Duration(days: 2));
+    await pumpWithOld(tester, msftEarnings: DateTime(day.year, day.month, day.day));
+    expect(find.byKey(const ValueKey('new-results-MSFT')), findsOneWidget);
+    expect(find.text('New results'), findsOneWidget);
+    await tapSaved(tester, 'MSFT');
+    expect(find.byKey(const ValueKey('stale-new-results')), findsOneWidget);
+    expect(find.textContaining('MSFT has published new quarterly results since this analysis'), findsOneWidget);
+  });
+
+  testWidgets('results still to come: no badge', (tester) async {
+    await pumpWithOld(tester, msftEarnings: DateTime.now().add(const Duration(days: 5)));
+    expect(find.byKey(const ValueKey('new-results-MSFT')), findsNothing);
   });
 
   testWidgets('an analysis older than 12 hours: "make a new one" opens the stock and generates it', (tester) async {

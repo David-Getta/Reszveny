@@ -94,7 +94,8 @@ class DemoMarketDataProvider extends MarketDataProvider {
   @override
   Future<PriceHistory> history(String symbol, {int years = 5}) async {
     await _wait();
-    _check(symbol);
+    // Az indexkövető ETF-ek (piacok sáv, portfólió-összevetés) sorozata is minta.
+    if (!const {'SPY', 'QQQ', 'DIA'}.contains(symbol)) _check(symbol);
     final last = (await quote(symbol)).price;
     // Determinisztikus, bolyongás-szerű minta-sorozat, ami a mai árnál végződik.
     final days = years * 252;

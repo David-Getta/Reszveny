@@ -1791,4 +1791,81 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get digestHint =>
       'هر دوشنبه: عملکرد علاقه‌مندی‌ها و سبد سهام شما در هفته گذشته و تاریخ‌های پیش‌روی اعلام نتایج آن‌ها.';
+
+  @override
+  String get benchmarkTitle => 'مقایسه با S&P 500';
+
+  @override
+  String get benchmarkYours => 'خریدهای شما';
+
+  @override
+  String get benchmarkIndex => 'همان مبالغ در S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points واحد درصد بهتر از شاخص';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points واحد درصد عقب‌تر از شاخص';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'گویی هر خرید در همان روز در یک صندوق شاخصی S&P 500 سرمایه‌گذاری شده بود. بدون سود نقدی؛ بازده گذشته بازده آینده را پیش‌بینی نمی‌کند.';
+
+  @override
+  String get portfolioSell => 'فروش';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'فروش $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'قیمت فروش هر سهم ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'تاریخ فروش';
+
+  @override
+  String get portfolioSellAll => 'همه';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity سهم دارید';
+  }
+
+  @override
+  String get portfolioSold => 'فروش';
+
+  @override
+  String get portfolioRealized => 'محقق‌شده';
+
+  @override
+  String get portfolioClosed => 'موقعیت‌های بسته';
+
+  @override
+  String get portfolioClosedNote => 'همه سهام فروخته شد';
+
+  @override
+  String get portfolioTransactions => 'تراکنش‌ها';
+
+  @override
+  String get portfolioRealizedByYear => 'سود محقق‌شده به تفکیک سال';
+
+  @override
+  String get portfolioRealizedHint =>
+      'فروش‌ها ابتدا با قدیمی‌ترین خریدهای شما تطبیق داده می‌شوند (FIFO) و با نرخ ارز امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزار خود استفاده کنید.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'پس از این تحلیل، نتایج فصلی جدیدی منتشر شده است ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'نتایج جدید';
 }

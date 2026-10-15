@@ -1829,4 +1829,81 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get digestHint =>
       'Svakog ponedjeljka: kako su se vaši favoriti i portfolio kretali prošle sedmice i njihovi predstojeći datumi rezultata.';
+
+  @override
+  String get benchmarkTitle => 'Poređenje sa S&P 500';
+
+  @override
+  String get benchmarkYours => 'Vaše kupovine';
+
+  @override
+  String get benchmarkIndex => 'Isti iznosi u S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points procentnih poena bolje od indeksa';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points procentnih poena iza indeksa';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kao da je svaka kupovina istog dana uložena u S&P 500 indeksni fond. Bez dividendi; prošli prinosi ne predviđaju buduće.';
+
+  @override
+  String get portfolioSell => 'Prodaj';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Prodaj $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Prodajna cijena po dionici ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Datum prodaje';
+
+  @override
+  String get portfolioSellAll => 'Sve';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Imate $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Prodano';
+
+  @override
+  String get portfolioRealized => 'Ostvareno';
+
+  @override
+  String get portfolioClosed => 'Zatvorene pozicije';
+
+  @override
+  String get portfolioClosedNote => 'Sve dionice prodane';
+
+  @override
+  String get portfolioTransactions => 'Transakcije';
+
+  @override
+  String get portfolioRealizedByYear => 'Ostvarena dobit po godinama';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Prodaje se prvo uparuju s vašim najstarijim kupovinama (FIFO) i preračunavaju po današnjem kursu. Za poresku prijavu koristite izvod svog brokera.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Od ove analize objavljeni su novi kvartalni rezultati ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Novi rezultati';
 }

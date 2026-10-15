@@ -1,14 +1,22 @@
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'portfolio_store.dart';
 
-/// A portfólió vételei CSV-ben (táblázatkezelőbe, másik appba):
-/// `symbol,quantity,price,currency,date`, ponttal mint tizedesjel.
+/// A portfólió tranzakciói CSV-ben (táblázatkezelőbe, másik appba):
+/// `symbol,quantity,price,currency,date,side`, ponttal mint tizedesjel; a `side`
+/// `buy` vagy `sell`.
 String portfolioCsv(List<PortfolioLot> lots) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
-  final b = StringBuffer('symbol,quantity,price,currency,date\n');
+  final b = StringBuffer('symbol,quantity,price,currency,date,side\n');
   for (final l in lots) {
     b.writeln(
-      [l.symbol, n(l.quantity), n(l.price), l.currency, l.date?.toIso8601String().substring(0, 10) ?? ''].join(','),
+      [
+        l.symbol,
+        n(l.quantity),
+        n(l.price),
+        l.currency,
+        l.date?.toIso8601String().substring(0, 10) ?? '',
+        l.sell ? 'sell' : 'buy',
+      ].join(','),
     );
   }
   return b.toString();
@@ -22,6 +30,7 @@ class ImportedLot {
     required this.price,
     required this.currency,
     this.date,
+    this.sell = false,
   });
 
   final String symbol;
@@ -29,6 +38,7 @@ class ImportedLot {
   final double price;
   final String currency;
   final DateTime? date;
+  final bool sell;
 }
 
 /// A beolvasás eredménye: a jó sorok és a kihagyottak száma.
@@ -45,6 +55,7 @@ final _currency = RegExp(r'^[A-Z]{3}$');
 /// Beillesztett sorok beolvasása, megengedően: a mezőelválasztó tabulátor,
 /// pontosvessző (ilyenkor a tizedesjel lehet vessző) vagy vessző; a fejléc
 /// elhagyható; a pénznem és a dátum is elhagyható (pénznem nélkül [defaultCurrency]).
+/// Eladás: a hatodik oszlop `sell` (vagy `s`), illetve negatív darabszám.
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
   final lots = <ImportedLot>[];
   var skipped = 0;
@@ -55,7 +66,10 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
     final sep = line.contains('\t') ? '\t' : (line.contains(';') ? ';' : ',');
     final f = [for (final c in line.split(sep)) c.trim().replaceAll('"', '')];
     final symbol = f.isNotEmpty ? f[0].toUpperCase() : '';
-    final quantity = f.length > 1 ? parseDecimal(f[1]) : null;
+    final signed = f.length > 1 ? parseDecimal(f[1]) : null;
+    final side = f.length > 5 ? f[5].toLowerCase() : '';
+    final sell = (signed != null && signed < 0) || side == 'sell' || side == 's';
+    final quantity = signed?.abs();
     final price = f.length > 2 ? parseDecimal(f[2]) : null;
     final ok = _symbol.hasMatch(symbol) && quantity != null && quantity > 0 && price != null && price > 0;
     if (!ok) {
@@ -67,7 +81,7 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
     first = false;
     final ccy = f.length > 3 && _currency.hasMatch(f[3].toUpperCase()) ? f[3].toUpperCase() : defaultCurrency;
     final date = f.length > 4 ? DateTime.tryParse(f[4]) : null;
-    lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date));
+    lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date, sell: sell));
   }
   return CsvImport(lots, skipped);
 }

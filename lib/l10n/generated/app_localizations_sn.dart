@@ -1797,4 +1797,81 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get digestHint =>
       'Muvhuro wega wega: mafambiro akaita zvaunofarira nepotiforiyo yako vhiki rapfuura, nemazuva anotevera emhedzisiro yazvo.';
+
+  @override
+  String get benchmarkTitle => 'Kuenzaniswa neS&P 500';
+
+  @override
+  String get benchmarkYours => 'Zvawakatenga';
+
+  @override
+  String get benchmarkIndex => 'Mari imwe chete muS&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Zvirinani pane index nemapoinzi epasenti $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Kumashure kwe index nemapoinzi epasenti $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Sekunge mari yechinhu chimwe nechimwe chawakatenga yakaiswa muS&P 500 index fund pazuva rimwe chete iroro. Madividend haana kuverengerwa; purofiti yakare haifanotauri yeramangwana.';
+
+  @override
+  String get portfolioSell => 'Tengesa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Tengesa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Mutengo wekutengesa pasheya ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Zuva rekutengesa';
+
+  @override
+  String get portfolioSellAll => 'Ese';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Une $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Zvatengeswa';
+
+  @override
+  String get portfolioRealized => 'Pundutso chaiyo';
+
+  @override
+  String get portfolioClosed => 'Masheya akatengeswa ese';
+
+  @override
+  String get portfolioClosedNote => 'Masheya ese akatengeswa';
+
+  @override
+  String get portfolioTransactions => 'Zvakatengwa nezvakatengeswa';
+
+  @override
+  String get portfolioRealizedByYear => 'Pundutso chaiyo pagore';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Zvatengeswa zvinotanga kuenzaniswa nezvawakatenga kare kare (FIFO), zvichishandurwa pamutengo wekuchinjana mari wanhasi. Pamushumo wako wemutero, shandisa chitatimende chebroker wako.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kubva paongororo iyi, mhedzisiro itsva yekota yaburitswa ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Mhedzisiro itsva';
 }

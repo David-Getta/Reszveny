@@ -1795,4 +1795,81 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get digestHint =>
       'Her duşem: bijareyên te û portfolyoya te hefteya borî çawa tevgeriyan, û dîrokên encamên wan ên pêşerojê.';
+
+  @override
+  String get benchmarkTitle => 'Li gorî S&P 500';
+
+  @override
+  String get benchmarkYours => 'Kirînên te';
+
+  @override
+  String get benchmarkIndex => 'Heman mîqdar di S&P 500 de';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points xalên sedî ji îndeksê baştir';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points xalên sedî li pişt îndeksê';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Wekî ku her kirîn di heman rojê de li fonek îndeksa S&P 500 hatibe veberhênan. Dabeşên qazancê ne tê de; vegerên berê pêşerojê pêşbînî nakin.';
+
+  @override
+  String get portfolioSell => 'Bifiroşe';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol bifiroşe';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Bihayê firotinê ji bo her pişkê ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Dîroka firotinê';
+
+  @override
+  String get portfolioSellAll => 'Hemû';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity li ba te hene';
+  }
+
+  @override
+  String get portfolioSold => 'Hate firotin';
+
+  @override
+  String get portfolioRealized => 'Bidestxistî';
+
+  @override
+  String get portfolioClosed => 'Pozîsyonên girtî';
+
+  @override
+  String get portfolioClosedNote => 'Hemû pişk hatin firotin';
+
+  @override
+  String get portfolioTransactions => 'Danûstandin';
+
+  @override
+  String get portfolioRealizedByYear => 'Qezenca bidestxistî li gorî salan';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Firotin pêşî bi kirînên te yên herî kevn re têne hevberkirin (FIFO), bi rêjeya danûstandinê ya îro têne guhertin. Ji bo daxuyaniya bacê, rapora brokerê xwe bikar bîne.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Piştî vê analîzê encamên nû yên çaryekî hatin weşandin ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Encamên nû';
 }

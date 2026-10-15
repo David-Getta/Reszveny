@@ -1802,4 +1802,81 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get digestHint =>
       'Chaque lundi : l\'évolution de vos favoris et de votre portefeuille la semaine passée, et leurs prochaines dates de résultats.';
+
+  @override
+  String get benchmarkTitle => 'Comparaison avec le S&P 500';
+
+  @override
+  String get benchmarkYours => 'Vos achats';
+
+  @override
+  String get benchmarkIndex => 'Mêmes montants dans le S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points points de pourcentage de mieux que l\'indice';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points points de pourcentage de retard sur l\'indice';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Comme si chaque achat avait été placé le même jour dans un fonds indiciel S&P 500. Hors dividendes ; les performances passées ne préjugent pas des performances futures.';
+
+  @override
+  String get portfolioSell => 'Vendre';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Vendre $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Prix de vente par action ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Date de vente';
+
+  @override
+  String get portfolioSellAll => 'Tout';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Vous en détenez $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Vendu';
+
+  @override
+  String get portfolioRealized => 'Réalisé';
+
+  @override
+  String get portfolioClosed => 'Positions clôturées';
+
+  @override
+  String get portfolioClosedNote => 'Toutes les actions vendues';
+
+  @override
+  String get portfolioTransactions => 'Transactions';
+
+  @override
+  String get portfolioRealizedByYear => 'Plus-values réalisées par année';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Les ventes sont imputées d’abord sur vos achats les plus anciens (FIFO) et converties au taux de change du jour. Pour votre déclaration d’impôts, utilisez le relevé de votre courtier.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'De nouveaux résultats trimestriels ont été publiés depuis cette analyse ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nouveaux résultats';
 }

@@ -1800,4 +1800,81 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get digestHint =>
       'Rhoqo ngoMvulo: indlela ezithandwayo zakho nepotifoliyo yakho eziye zahamba ngayo kwiveki ephelileyo, kunye nemihla ezayo yeziphumo zazo.';
+
+  @override
+  String get benchmarkTitle => 'Xa kuthelekiswa ne-S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ozithengileyo';
+
+  @override
+  String get benchmarkIndex => 'Imali efanayo kwi-S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ngcono kune-index ngamanqaku epesenti angama-$points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Emva kwe-index ngamanqaku epesenti angama-$points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ngokungathi imali yento nganye oyithengileyo ityalwe kwi-S&P 500 index fund ngaloo mini. Izabelo zengeniso azibandakanywanga; inzuzo yangaphambili ayiqikeleli eyexesha elizayo.';
+
+  @override
+  String get portfolioSell => 'Thengisa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Thengisa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ixabiso lokuthengisa ngesabelo ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Umhla wokuthengisa';
+
+  @override
+  String get portfolioSellAll => 'Zonke';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Unazo $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Kuthengisiwe';
+
+  @override
+  String get portfolioRealized => 'Efunyenweyo';
+
+  @override
+  String get portfolioClosed => 'Iipozishini ezivaliweyo';
+
+  @override
+  String get portfolioClosedNote => 'Zonke izabelo zithengisiwe';
+
+  @override
+  String get portfolioTransactions => 'Iintengiselwano';
+
+  @override
+  String get portfolioRealizedByYear => 'Inzuzo efunyenweyo ngonyaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ezithengisiweyo zidityaniswa kuqala nezona zinto zindala uzithengileyo (FIFO), ziguqulwe ngexabiso lotshintshiselwano lanamhlanje. Kwingxelo yerhafu, sebenzisa ingxelo yebroker yakho.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ukususela kolu hlalutyo, kupapashwe iziphumo ezitsha zekota ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Iziphumo ezitsha';
 }

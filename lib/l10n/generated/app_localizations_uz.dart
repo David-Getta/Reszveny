@@ -1795,4 +1795,81 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get digestHint =>
       'Har dushanba: sevimlilaringiz va portfelingiz oʻtgan hafta qanday oʻzgargani hamda ularning yaqinlashayotgan hisobot sanalari.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 bilan taqqoslash';
+
+  @override
+  String get benchmarkYours => 'Xaridlaringiz';
+
+  @override
+  String get benchmarkIndex => 'Shu summalar S&P 500da';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Indeksdan $points foiz punkt yaxshiroq';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Indeksdan $points foiz punkt ortda';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Goʻyo har bir xarid oʻsha kuni S&P 500 indeks fondiga kiritilgandek. Dividendlarsiz; oʻtgan daromad kelajakdagi daromadni bashorat qilmaydi.';
+
+  @override
+  String get portfolioSell => 'Sotish';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol sotish';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Bir aksiyaning sotish narxi ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Sotish sanasi';
+
+  @override
+  String get portfolioSellAll => 'Hammasi';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Sizda $quantity bor';
+  }
+
+  @override
+  String get portfolioSold => 'Sotildi';
+
+  @override
+  String get portfolioRealized => 'Amalga oshgan';
+
+  @override
+  String get portfolioClosed => 'Yopilgan pozitsiyalar';
+
+  @override
+  String get portfolioClosedNote => 'Barcha aksiyalar sotilgan';
+
+  @override
+  String get portfolioTransactions => 'Operatsiyalar';
+
+  @override
+  String get portfolioRealizedByYear => 'Yillar boʻyicha amalga oshgan foyda';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Sotuvlar avval eng eski xaridlaringiz bilan moslashtiriladi (FIFO) va bugungi valyuta kursida hisoblanadi. Soliq deklaratsiyasi uchun brokeringiz koʻchirmasidan foydalaning.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ushbu tahlildan keyin yangi choraklik hisobot eʼlon qilindi ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Yangi hisobot';
 }

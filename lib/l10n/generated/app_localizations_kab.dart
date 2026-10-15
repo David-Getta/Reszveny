@@ -1791,4 +1791,81 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get digestHint =>
       'Yal Letnayen: amek llan ismenyifen-ik d uqrab-ik deg ddurt yezrin, d wazemz n yigmaḍ-nsen i d-iteddun.';
+
+  @override
+  String get benchmarkTitle => 'Asnemhel d S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ayen i d-tuɣeḍ';
+
+  @override
+  String get benchmarkIndex => 'Idrimen-nni deg S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Yif amatar s $points n yiqqiḍen n ufmiḍi';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Deffir n umatar s $points n yiqqiḍen n ufmiḍi';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Am akken yal taɣuct tettwasers ass-nni kan deg ufus n umatar S&P 500. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen.';
+
+  @override
+  String get portfolioSell => 'Zenz';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Zenz $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ssuma n uznuzu n yal aksyun ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Azemz n uznuzu';
+
+  @override
+  String get portfolioSellAll => 'Akk';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Tesεiḍ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Yettwazenz';
+
+  @override
+  String get portfolioRealized => 'Yettwaxedmen';
+
+  @override
+  String get portfolioClosed => 'Iksyunen yettwazenzen';
+
+  @override
+  String get portfolioClosedNote => 'Akk aksyunen ttwazenzen';
+
+  @override
+  String get portfolioTransactions => 'Tiɣin d uznuzu';
+
+  @override
+  String get portfolioRealizedByYear => 'Rrbeḥ yettwaxedmen s useggas';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Aznuzu yettwaqqen qbel s tiɣin-ik tiqburin akk (FIFO), yettwabeddel s wazal n usnemlil n wass-a. I usmekti n tbaḍt, seqdec akaram n broker-ik.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Seg tasleḍt-a, ffɣen-d yigmaḍ imaynuten n kraḍ wayyuren ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Igmaḍ imaynuten';
 }

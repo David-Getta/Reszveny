@@ -1786,4 +1786,81 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get digestHint =>
       'هره دوشنبه: ستاسو خوښې او پورټفولیو تېره اوونۍ څنګه وخوځېدل، او د هغوی د راتلونکو پایلو نېټې.';
+
+  @override
+  String get benchmarkTitle => 'د S&P 500 سره پرتله';
+
+  @override
+  String get benchmarkYours => 'ستاسو پېرودنې';
+
+  @override
+  String get benchmarkIndex => 'همدا اندازه په S&P 500 کې';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'له شاخص څخه $points سلنه ټکي ښه';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'له شاخص څخه $points سلنه ټکي وروسته';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'لکه هره پېرودنه چې په همغه ورځ د S&P 500 شاخص فنډ کې پانګونه شوې وي. ګټه‌وېش نه دی شامل؛ تېره ګټه د راتلونکې ګټې وړاندوینه نه کوي.';
+
+  @override
+  String get portfolioSell => 'وپلورئ';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol وپلورئ';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'د هرې ونډې د پلور بیه ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'د پلور نېټه';
+
+  @override
+  String get portfolioSellAll => 'ټول';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'تاسو $quantity لرئ';
+  }
+
+  @override
+  String get portfolioSold => 'وپلورل شو';
+
+  @override
+  String get portfolioRealized => 'تحقق شوې';
+
+  @override
+  String get portfolioClosed => 'تړل شوي پوزیشنونه';
+
+  @override
+  String get portfolioClosedNote => 'ټولې ونډې وپلورل شوې';
+
+  @override
+  String get portfolioTransactions => 'راکړې ورکړې';
+
+  @override
+  String get portfolioRealizedByYear => 'په کلونو تحقق شوې ګټه';
+
+  @override
+  String get portfolioRealizedHint =>
+      'پلورونه لومړی ستاسو له تر ټولو زړو پېرودونو سره سمون ورکول کېږي (FIFO)، د نن ورځې د اسعارو په نرخ اړول کېږي. د مالیې د اظهارنامې لپاره د خپل بروکر بیان وکاروئ.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'له دې تحلیل وروسته نوې درې میاشتنۍ پایلې خپرې شوې دي ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'نوې پایلې';
 }

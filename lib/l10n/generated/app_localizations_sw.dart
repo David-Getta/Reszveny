@@ -1793,4 +1793,81 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get digestHint =>
       'Kila Jumatatu: jinsi vipendwa vyako na jalada lako la hisa vilivyoenda wiki iliyopita, na tarehe zijazo za matokeo yao.';
+
+  @override
+  String get benchmarkTitle => 'Ikilinganishwa na S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ununuzi wako';
+
+  @override
+  String get benchmarkIndex => 'Kiasi sawa katika S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Bora kuliko fahirisi kwa pointi $points za asilimia';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Nyuma ya fahirisi kwa pointi $points za asilimia';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kana kwamba kila ununuzi uliwekezwa katika mfuko wa fahirisi wa S&P 500 siku hiyo hiyo. Gawio halijajumuishwa; mapato ya zamani hayatabiri ya baadaye.';
+
+  @override
+  String get portfolioSell => 'Uza';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Uza $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Bei ya kuuza kwa kila hisa ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Tarehe ya kuuza';
+
+  @override
+  String get portfolioSellAll => 'Zote';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Una $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Umeuza';
+
+  @override
+  String get portfolioRealized => 'Halisi';
+
+  @override
+  String get portfolioClosed => 'Nafasi zilizofungwa';
+
+  @override
+  String get portfolioClosedNote => 'Hisa zote zimeuzwa';
+
+  @override
+  String get portfolioTransactions => 'Miamala';
+
+  @override
+  String get portfolioRealizedByYear => 'Faida halisi kwa mwaka';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Mauzo hulinganishwa kwanza na ununuzi wako wa zamani zaidi (FIFO), na kubadilishwa kwa kiwango cha ubadilishaji cha leo. Kwa ripoti yako ya kodi, tumia taarifa ya dalali wako.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Tangu uchambuzi huu, matokeo mapya ya robo mwaka yamechapishwa ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Matokeo mapya';
 }

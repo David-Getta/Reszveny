@@ -1797,4 +1797,81 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get digestHint =>
       'Dituku dionso dia kumpala dia lumingu: mudi biudi musue ne portefeuille webe bienze mu lumingu luakapita, ne matuku a mapeta alualua.';
+
+  @override
+  String get benchmarkTitle => 'Kufuanyikija ne S&P 500';
+
+  @override
+  String get benchmarkYours => 'Bintu biuvua musumbe';
+
+  @override
+  String get benchmarkIndex => 'Makuta amue mu S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Bimpe kupita indice ku ma points a pourcentage $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Panyima pa indice ku ma points a pourcentage $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Bu muvua makuta a tshintu tshionso tshiuvua musumbe muteke mu fonds indiciel wa S&P 500 dituku dimue adi. Ma dividendes kaena mu bualu; bipeta bia kale kabiena bileja bia matuku atshilualua to.';
+
+  @override
+  String get portfolioSell => 'Sumbisha';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sumbisha $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Mushinga wa kusumbisha action umue ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Dituku dia kusumbisha';
+
+  @override
+  String get portfolioSellAll => 'Yonso';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Udi ne $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Musumbisha';
+
+  @override
+  String get portfolioRealized => 'Dipeta dia bushuwa';
+
+  @override
+  String get portfolioClosed => 'Position mijibule';
+
+  @override
+  String get portfolioClosedNote => 'Action yonso mmisumbisha';
+
+  @override
+  String get portfolioTransactions => 'Kusumba ne kusumbisha';
+
+  @override
+  String get portfolioRealizedByYear => 'Dipeta dia bushuwa ku tshidimu';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Bisumbisha bidi bitangidibua kumpala ne biuvua musumbe bia kale menemene (FIFO), bishintulula ku mushinga wa dishintuluija dia lelu. Bua mukanda wa bitadi, enza mudimu ne mukanda wa broker webe.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kubangila ku dikonkonona edi, mapeta mapia a ngondo isatu mmapatuke ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Mapeta mapia';
 }

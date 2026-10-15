@@ -676,6 +676,44 @@ void main() {
     await _shot(tester, 'portfolio_phone_hu');
   });
 
+  testWidgets('selling shares on a phone (hungarian)', (tester) async {
+    final portfolio = _samplePortfolio();
+    await portfolio.add(
+      symbol: 'MSFT',
+      quantity: 4,
+      price: 560,
+      currency: 'USD',
+      date: DateTime(2026, 9, 2),
+      sell: true,
+    );
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final menu = find.byKey(const ValueKey('position-menu-AAPL'));
+    for (var i = 0; i < 20 && menu.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '6');
+    await tester.pumpAndSettle();
+    await _shot(tester, 'sell_dialog_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'transactions_phone_hu');
+    await tester.tapAt(const Offset(215, 40));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -2000));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'closed_positions_phone_hu');
+  });
+
   testWidgets('detail with own position', (tester) async {
     await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 900));
     await tester.enterText(find.byType(TextField), 'AAPL');

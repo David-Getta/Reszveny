@@ -1799,4 +1799,81 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get digestHint =>
       'Isniin kasta: sida ay u dhaqaaqeen kuwa aad jeceshahay iyo portfoliyadaada toddobaadkii hore, iyo taariikhaha natiijooyinkooda soo socda.';
+
+  @override
+  String get benchmarkTitle => 'Marka la barbardhigo S&P 500';
+
+  @override
+  String get benchmarkYours => 'Iibsadaada';
+
+  @override
+  String get benchmarkIndex => 'Isla lacagta S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points dhibcood oo boqolkiiba ka fiican tusmada';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points dhibcood oo boqolkiiba ka dambeeya tusmada';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Sidii in iibsasho kasta lagu maalgeliyey sanduuqa tusmada S&P 500 isla maalintaas. Saami-qaybsiga kuma jiro; soo-celintii hore ma saadaalinayso tan mustaqbalka.';
+
+  @override
+  String get portfolioSell => 'Iibi';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Iibi $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Qiimaha iibka saamigiiba ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Taariikhda iibka';
+
+  @override
+  String get portfolioSellAll => 'Dhammaan';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Waxaad haysataa $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'La iibiyay';
+
+  @override
+  String get portfolioRealized => 'La xaqiijiyay';
+
+  @override
+  String get portfolioClosed => 'Haysashooyin xiran';
+
+  @override
+  String get portfolioClosedNote => 'Dhammaan saamiyada waa la iibiyay';
+
+  @override
+  String get portfolioTransactions => 'Macaamilada';
+
+  @override
+  String get portfolioRealizedByYear => 'Faa\'iidada la xaqiijiyay sannadkiiba';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Iibabka marka hore waxaa lala jaanqaadaa iibsashooyinkaaga ugu da\'da weyn (FIFO), waxaana lagu beddelaa sicirka sarrifka maanta. Canshuur celintaada, isticmaal warbixinta dillaalkaaga.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Tan iyo falanqayntan, natiijooyin rubuc sanadeed oo cusub ayaa la daabacay ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Natiijooyin cusub';
 }

@@ -1797,4 +1797,81 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get digestHint =>
       'Kowace Litinin: yadda abubuwan da ka fi so da jakar hannun jarinka suka motsa a makon da ya gabata, da kwanakin sakamakonsu masu zuwa.';
+
+  @override
+  String get benchmarkTitle => 'Kwatanta da S&P 500';
+
+  @override
+  String get benchmarkYours => 'Siyayyarka';
+
+  @override
+  String get benchmarkIndex => 'Kuɗi ɗaya a S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ya fi ma\'auni da maki kashi $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ya gaza ma\'auni da maki kashi $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kamar an saka kuɗin kowace siyayya a asusun ma\'aunin S&P 500 a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba.';
+
+  @override
+  String get portfolioSell => 'Sayar';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sayar da $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Farashin sayarwa na kowane hannun jari ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ranar sayarwa';
+
+  @override
+  String get portfolioSellAll => 'Duka';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Kuna da $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'An sayar';
+
+  @override
+  String get portfolioRealized => 'Na zahiri';
+
+  @override
+  String get portfolioClosed => 'Rufaffun matsayi';
+
+  @override
+  String get portfolioClosedNote => 'An sayar da duk hannun jari';
+
+  @override
+  String get portfolioTransactions => 'Ma\'amaloli';
+
+  @override
+  String get portfolioRealizedByYear => 'Ribar na zahiri kowace shekara';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ana daidaita sayarwa da tsofaffin sayayyarku tukuna (FIFO), an canza a farashin musaya na yau. Don bayanin harajinku, yi amfani da takardar bayanin dillalinku.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Tun bayan wannan nazari, an fitar da sabon sakamakon kwata ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Sabon sakamako';
 }

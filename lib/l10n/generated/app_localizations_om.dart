@@ -1799,4 +1799,81 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get digestHint =>
       'Wiixata hunda: filatamoonni kee fi poortfooliyoon kee torban darbe akkamitti akka socho\'an, akkasumas guyyoota bu\'aa isaanii dhufan.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 waliin wal bira qabame';
+
+  @override
+  String get benchmarkYours => 'Bittaawwan kee';
+
+  @override
+  String get benchmarkIndex => 'Maallaqa walfakkaatu S&P 500 keessatti';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Indeeksii caalaa qabxii dhibbeentaa ${points}n wayya';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Indeeksii irraa qabxii dhibbeentaa ${points}n duubatti hafe';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Akka waan bittaan hundi guyyuma sana fandii indeeksii S&P 500 keessatti invastii godhameetti. Diviidendii hin dabalatu; bu\'aan darbe bu\'aa gara fuulduraa hin tilmaamu.';
+
+  @override
+  String get portfolioSell => 'Gurguri';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol gurguri';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Gatii gurgurtaa aksiyoona tokkoo ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Guyyaa gurgurtaa';
+
+  @override
+  String get portfolioSellAll => 'Hunda';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity qabda';
+  }
+
+  @override
+  String get portfolioSold => 'Gurgurame';
+
+  @override
+  String get portfolioRealized => 'Kan dhugoome';
+
+  @override
+  String get portfolioClosed => 'Qabiyyeewwan cufaman';
+
+  @override
+  String get portfolioClosedNote => 'Aksiyoonni hundi gurguramaniiru';
+
+  @override
+  String get portfolioTransactions => 'Bittaa fi gurgurtaa';
+
+  @override
+  String get portfolioRealizedByYear => 'Bu\'aa dhugoome waggaan';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Gurgurtaan jalqaba bittaawwan kee warra durii waliin walsimsiifama (FIFO), gatii jijjiirraa har\'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa daldalaa (broker) kee fayyadami.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Xiinxala kanaa booda bu\'aan kurmaanaa haaraan maxxanfameera ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Bu\'aa haaraa';
 }

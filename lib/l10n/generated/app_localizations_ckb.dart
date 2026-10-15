@@ -1793,4 +1793,81 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get digestHint =>
       'هەموو دووشەممەیەک: دڵخوازەکانت و پۆرتفۆلیۆکەت هەفتەی ڕابردوو چۆن جووڵان، و بەروارە داهاتووەکانی ئەنجامەکانیان.';
+
+  @override
+  String get benchmarkTitle => 'بەراورد لەگەڵ S&P 500';
+
+  @override
+  String get benchmarkYours => 'کڕینەکانت';
+
+  @override
+  String get benchmarkIndex => 'هەمان بڕ لە S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points خاڵی سەدی باشترە لە ئیندێکسەکە';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points خاڵی سەدی لە دوای ئیندێکسەکەیە';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'وەک ئەوەی هەر کڕینێک لە هەمان ڕۆژدا لە سندوقێکی ئیندێکسی S&P 500 وەبەرهێنرابێت. قازانجی پشک لەخۆناگرێت؛ گەڕانەوەی ڕابردوو پێشبینی داهاتوو ناکات.';
+
+  @override
+  String get portfolioSell => 'فرۆشتن';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'فرۆشتنی $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'نرخی فرۆشتنی هەر پشکێک ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'بەرواری فرۆشتن';
+
+  @override
+  String get portfolioSellAll => 'هەموو';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity پشکت هەیە';
+  }
+
+  @override
+  String get portfolioSold => 'فرۆشرا';
+
+  @override
+  String get portfolioRealized => 'بەدەستهاتوو';
+
+  @override
+  String get portfolioClosed => 'پۆزیشنە داخراوەکان';
+
+  @override
+  String get portfolioClosedNote => 'هەموو پشکەکان فرۆشران';
+
+  @override
+  String get portfolioTransactions => 'مامەڵەکان';
+
+  @override
+  String get portfolioRealizedByYear => 'قازانجی بەدەستهاتوو بەپێی ساڵ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'فرۆشتنەکان سەرەتا لەگەڵ کۆنترین کڕینەکانت ڕێکدەخرێن (FIFO)، و بە نرخی ئاڵوگۆڕی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باج، کەشفی بڕۆکەرەکەت بەکاربهێنە.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'لە دوای ئەم شیکارییەوە ئەنجامی وەرزیی نوێ بڵاوکراوەتەوە ($symbol، $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'ئەنجامی نوێ';
 }

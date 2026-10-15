@@ -1793,4 +1793,81 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get digestHint =>
       'Даваа гараг бүр: таны дуртай хувьцаа болон портфолио өнгөрсөн долоо хоногт хэрхэн хөдөлсөн, мөн удахгүй гарах тайлангийн огноо.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500-тай харьцуулахад';
+
+  @override
+  String get benchmarkYours => 'Таны худалдан авалт';
+
+  @override
+  String get benchmarkIndex => 'Ижил дүн S&P 500-д';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Индексээс $points хувийн пунктээр илүү';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Индексээс $points хувийн пунктээр хоцорсон';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Худалдан авалт бүрийг тухайн өдөр нь S&P 500 индекс санд хөрөнгө оруулсан мэтээр тооцов. Ногдол ашиг ороогүй; өнгөрсөн өгөөж ирээдүйн өгөөжийг таамаглахгүй.';
+
+  @override
+  String get portfolioSell => 'Зарах';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol зарах';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Нэгж хувьцааны зарсан үнэ ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Зарсан огноо';
+
+  @override
+  String get portfolioSellAll => 'Бүгд';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Танд $quantity байна';
+  }
+
+  @override
+  String get portfolioSold => 'Зарсан';
+
+  @override
+  String get portfolioRealized => 'Бодит';
+
+  @override
+  String get portfolioClosed => 'Хаагдсан эзэмшил';
+
+  @override
+  String get portfolioClosedNote => 'Бүх хувьцааг зарсан';
+
+  @override
+  String get portfolioTransactions => 'Гүйлгээ';
+
+  @override
+  String get portfolioRealizedByYear => 'Жилээр бодит ашиг';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Борлуулалтыг эхлээд таны хамгийн эртний худалдан авалттай тулгана (FIFO), өнөөдрийн ханшаар хөрвүүлнэ. Татварын тайландаа брокерийнхоо хуулгыг ашиглана уу.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Энэ шинжилгээнээс хойш улирлын шинэ тайлан гарсан ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Шинэ тайлан';
 }

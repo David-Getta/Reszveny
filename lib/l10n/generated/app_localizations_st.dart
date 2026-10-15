@@ -1802,4 +1802,81 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get digestHint =>
       'Mantaha o mong le o mong: kamoo tseo o di ratang le potefolio ya hao di tsamaileng kateng bekeng e fetileng, le matsatsi a tlang a diphetho tsa tsona.';
+
+  @override
+  String get benchmarkTitle => 'Ha ho bapiswa le S&P 500';
+
+  @override
+  String get benchmarkYours => 'Tseo o di rekileng';
+
+  @override
+  String get benchmarkIndex => 'Chelete e tshwanang ho S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ho feta index ka dintlha tsa phesente tse $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Ka morao ho index ka dintlha tsa phesente tse $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Jwalokaha eka theko ka nngwe e tsetetswe ho S&P 500 index fund ka lona letsatsi leo. Ha ho kenyeleditswe karolo ya phaello; diphaello tsa nako e fetileng ha di bolele esale pele tsa nako e tlang.';
+
+  @override
+  String get portfolioSell => 'Rekisa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Rekisa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Theko ya ho rekisa ka shere ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Letsatsi la thekiso';
+
+  @override
+  String get portfolioSellAll => 'Tsohle';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'O na le $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'E rekisitswe';
+
+  @override
+  String get portfolioRealized => 'E fumanehileng';
+
+  @override
+  String get portfolioClosed => 'Dishere tse rekisitsweng';
+
+  @override
+  String get portfolioClosedNote => 'Dishere tsohle di rekisitswe';
+
+  @override
+  String get portfolioTransactions => 'Ditheko le dithekiso';
+
+  @override
+  String get portfolioRealizedByYear => 'Phaello e fumanehileng ka selemo';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Dithekiso di qala ho bapiswa le ditheko tsa hao tsa kgale ka ho fetisisa (FIFO), di fetolwa ka sekgahla sa phapanyetsano sa kajeno. Bakeng sa tlaleho ya hao ya lekgetho, sebedisa setatemente sa broker ya hao.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ho tloha tlhahlobong ena, ho phatlaladitswe diphetho tse ntjha tsa kotara ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Diphetho tse ntjha';
 }

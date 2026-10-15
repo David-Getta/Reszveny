@@ -1796,4 +1796,81 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get digestHint =>
       'Setiap Isnin: pergerakan kegemaran dan portfolio anda minggu lalu, serta tarikh keputusan suku tahunan yang akan datang.';
+
+  @override
+  String get benchmarkTitle => 'Berbanding S&P 500';
+
+  @override
+  String get benchmarkYours => 'Belian anda';
+
+  @override
+  String get benchmarkIndex => 'Jumlah sama dalam S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points mata peratusan lebih baik daripada indeks';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points mata peratusan di belakang indeks';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Seolah-olah setiap belian dilaburkan dalam dana indeks S&P 500 pada hari yang sama. Tidak termasuk dividen; pulangan lalu tidak meramalkan pulangan masa depan.';
+
+  @override
+  String get portfolioSell => 'Jual';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Jual $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Harga jualan sesaham ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Tarikh jualan';
+
+  @override
+  String get portfolioSellAll => 'Semua';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Anda memegang $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Dijual';
+
+  @override
+  String get portfolioRealized => 'Direalisasi';
+
+  @override
+  String get portfolioClosed => 'Pegangan ditutup';
+
+  @override
+  String get portfolioClosedNote => 'Semua saham dijual';
+
+  @override
+  String get portfolioTransactions => 'Transaksi';
+
+  @override
+  String get portfolioRealizedByYear => 'Keuntungan direalisasi mengikut tahun';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Jualan dipadankan dahulu dengan pembelian tertua anda (FIFO), ditukar pada kadar pertukaran hari ini. Untuk penyata cukai anda, gunakan penyata broker anda.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Sejak analisis ini, keputusan suku tahunan baharu telah diterbitkan ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Keputusan baharu';
 }

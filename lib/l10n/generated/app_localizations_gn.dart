@@ -1798,4 +1798,81 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get digestHint =>
       'Arakõi ñavõ: mbaʼéichapa oho ne ojeguerohoryvéva ha ne cartera arapokõindy ohasavaʼekuépe, ha umi resultado ára oúva.';
+
+  @override
+  String get benchmarkTitle => 'Ojeporombojoja S&P 500 ndive';
+
+  @override
+  String get benchmarkYours => 'Ne jogua';
+
+  @override
+  String get benchmarkIndex => 'Upéichagua viru S&P 500-pe';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points punto porcentual iporãve índice-gui';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points punto porcentual oĩ índice rapykuévo';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Peteĩteĩ ne jogua viru ojemoĩramoguáicha peteĩ fondo indexado S&P 500-pe upe ára berõ. Ndoikéi dividendo; ganancia ohasaramoguare ndohechaukái tenonderãgua.';
+
+  @override
+  String get portfolioSell => 'Ñemu';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ñemu $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Tepy ñemu peteĩteĩ acción ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ñemu arange';
+
+  @override
+  String get portfolioSellAll => 'Opavave';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ereguereko $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Ñemu';
+
+  @override
+  String get portfolioRealized => 'Ojehupytýva';
+
+  @override
+  String get portfolioClosed => 'Ereguerekóva oñemuva';
+
+  @override
+  String get portfolioClosedNote => 'Opaite acción oñemuma';
+
+  @override
+  String get portfolioTransactions => 'Jejogua ha ñemu';
+
+  @override
+  String get portfolioRealizedByYear => 'Ganancia ojehupytýva ary ary';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ñemu oñembojoja raẽ ne jejogua tujavéva ndive (FIFO), oñemoambuéva ko árape cambio repýpe. Ne declaración de impuestos-rã, eipuru nde bróker extracto.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ko ñehesaʼỹijo rire, oñemoherakuã resultado trimestral pyahu ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Resultado pyahu';
 }

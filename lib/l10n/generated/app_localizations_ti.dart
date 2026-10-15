@@ -1760,4 +1760,81 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get digestHint =>
       'ኩሉ ሰኑይ፦ ዝተፈተዉኹምን ፖርትፎሊዮኹምን ኣብ ዝሓለፈ ሰሙን ከመይ ከም ዝተንቀሳቐሱ፣ ከምኡውን ዝመጽእ ዕለታት ውጽኢቶም።';
+
+  @override
+  String get benchmarkTitle => 'ምስ S&P 500 ክነጻጸር';
+
+  @override
+  String get benchmarkYours => 'ዝዓደግኩምዎ';
+
+  @override
+  String get benchmarkIndex => 'ተመሳሳሊ መጠን ኣብ S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ካብ ኢንዴክስ ብ$points ነጥቢ ሚእታዊት ዝሓሸ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ካብ ኢንዴክስ ብ$points ነጥቢ ሚእታዊት ዝተረፈ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ነፍሲ ወከፍ ዕድጊ ኣብታ ሓንቲ መዓልቲ ኣብ S&P 500 ኢንዴክስ ፈንድ ከም ዝተወፈረ ጌርካ። ትርፊ ኣክሲዮን ኣይተሓወሰን፤ ዝሓለፈ እቶት ናይ መጻኢ ኣይትንብን።';
+
+  @override
+  String get portfolioSell => 'ሽጥ';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol ሽጥ';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ዋጋ መሸጣ ንሓደ ኣክሲዮን ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'ዕለት መሸጣ';
+
+  @override
+  String get portfolioSellAll => 'ኩሉ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity ኣለኩም';
+  }
+
+  @override
+  String get portfolioSold => 'ተሸይጡ';
+
+  @override
+  String get portfolioRealized => 'ዝተረጋገጸ';
+
+  @override
+  String get portfolioClosed => 'ዝተዓጸዉ ዋንነታት';
+
+  @override
+  String get portfolioClosedNote => 'ኩሉ ኣክሲዮናት ተሸይጡ';
+
+  @override
+  String get portfolioTransactions => 'ልውውጣት';
+
+  @override
+  String get portfolioRealizedByYear => 'ዝተረጋገጸ ትርፊ ብዓመት';
+
+  @override
+  String get portfolioRealizedHint =>
+      'መሸጣታት መጀመርታ ምስ ዝበለጸ ዝኣረገ ዕድግታትኩም ይዛመዱ (FIFO)፣ ብናይ ሎሚ ናይ ገንዘብ ምልውዋጥ ዋጋ ይቕየሩ። ንናይ ግብሪ መግለጺኹም፣ ናይ ደላላኹም መግለጺ ተጠቐሙ።';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ድሕሪ እዚ ትንተና ሓድሽ ናይ ርብዒ ዓመት ውጽኢታት ተሓቲሙ ኣሎ ($symbol፣ $date)።';
+  }
+
+  @override
+  String get newResultsBadge => 'ሓድሽ ውጽኢት';
 }

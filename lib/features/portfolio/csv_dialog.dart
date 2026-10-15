@@ -55,6 +55,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
       price: l.price,
       currency: l.currency,
       date: l.date,
+      sell: l.sell,
     );
   }
   messenger.showSnackBar(

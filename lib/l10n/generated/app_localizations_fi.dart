@@ -1794,4 +1794,81 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get digestHint =>
       'Joka maanantai: miten suosikkisi ja salkkusi kehittyivät viime viikolla sekä niiden tulevat tulosjulkistuspäivät.';
+
+  @override
+  String get benchmarkTitle => 'Verrattuna S&P 500:aan';
+
+  @override
+  String get benchmarkYours => 'Omat ostosi';
+
+  @override
+  String get benchmarkIndex => 'Samat summat S&P 500:ssa';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points prosenttiyksikköä indeksiä parempi';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points prosenttiyksikköä indeksistä jäljessä';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Ikään kuin jokainen osto olisi sijoitettu samana päivänä S&P 500 -indeksirahastoon. Ilman osinkoja; aiempi tuotto ei ennusta tulevaa.';
+
+  @override
+  String get portfolioSell => 'Myy';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Myy $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Myyntihinta per osake ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Myyntipäivä';
+
+  @override
+  String get portfolioSellAll => 'Kaikki';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Omistat $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Myyty';
+
+  @override
+  String get portfolioRealized => 'Toteutunut';
+
+  @override
+  String get portfolioClosed => 'Suljetut omistukset';
+
+  @override
+  String get portfolioClosedNote => 'Kaikki osakkeet myyty';
+
+  @override
+  String get portfolioTransactions => 'Tapahtumat';
+
+  @override
+  String get portfolioRealizedByYear => 'Toteutuneet voitot vuosittain';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Myynnit kohdistetaan ensin vanhimpiin ostoihisi (FIFO), ja ne muunnetaan tämän päivän valuuttakurssilla. Käytä veroilmoituksessa välittäjäsi tiliotetta.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Tämän analyysin jälkeen on julkaistu uusi osavuosikatsaus ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Uudet tulokset';
 }

@@ -6,6 +6,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
 import 'portfolio_history.dart';
 import 'portfolio_review_card.dart';
@@ -52,6 +53,7 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
             marketData: services.marketData,
             fx: services.fx,
             currency: currency,
+            closed: services.portfolio.closedPositions,
           ).then((s) => _last = s);
         }
         return FutureBuilder<PortfolioSnapshot>(
@@ -193,6 +195,13 @@ class _PortfolioBody extends StatelessWidget {
                               color: gainColor(p, s.gain),
                             ),
                             _Stat(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            if (s.realized != 0 || s.closed.isNotEmpty)
+                              _Stat(
+                                key: const ValueKey('portfolio-realized'),
+                                label: l10n.portfolioRealized,
+                                value: fmt.money(s.realized, ccy, withSign: true),
+                                color: gainColor(p, s.realized),
+                              ),
                             if (s.annualDividend > 0)
                               _Stat(
                                 key: const ValueKey('portfolio-dividends'),
@@ -226,20 +235,96 @@ class _PortfolioBody extends StatelessWidget {
                   ),
                 PortfolioHistoryCard(snapshot: s),
                 PortfolioReviewCard(snapshot: s),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
-                  child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                ),
-                Card(
-                  child: Column(
-                    children: [
-                      for (final (i, r) in s.rows.indexed) ...[
-                        if (i > 0) const Divider(height: 1),
-                        _PositionTile(row: r, fmt: fmt, onOpenSymbol: onOpenSymbol),
-                      ],
-                    ],
+                if (s.rows.isNotEmpty) ...[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
+                    child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                   ),
-                ),
+                  Card(
+                    child: Column(
+                      children: [
+                        for (final (i, r) in s.rows.indexed) ...[
+                          if (i > 0) const Divider(height: 1),
+                          _PositionTile(row: r, fmt: fmt, onOpenSymbol: onOpenSymbol),
+                        ],
+                      ],
+                    ),
+                  ),
+                ],
+                if (s.realizedByYear.isNotEmpty) ...[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
+                    child: Text(
+                      l10n.portfolioRealizedByYear,
+                      style: theme.textTheme.labelLarge?.copyWith(color: p.muted),
+                    ),
+                  ),
+                  Card(
+                    key: const ValueKey('portfolio-realized-years'),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          for (final e
+                              in (s.realizedByYear.entries.toList()
+                                ..sort((a, b) => (b.key ?? 0).compareTo(a.key ?? 0))))
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(child: Text(e.key == null ? l10n.notAvailable : '${e.key}')),
+                                  Text(
+                                    fmt.money(e.value, ccy, withSign: true),
+                                    style: TextStyle(color: gainColor(p, e.value), fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          const SizedBox(height: 4),
+                          Text(l10n.portfolioRealizedHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+                if (s.closed.isNotEmpty) ...[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
+                    child: Text(l10n.portfolioClosed, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+                  ),
+                  Card(
+                    key: const ValueKey('portfolio-closed'),
+                    child: Column(
+                      children: [
+                        for (final (i, c) in s.closed.indexed) ...[
+                          if (i > 0) const Divider(height: 1),
+                          ListTile(
+                            title: Text(c.position.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                            subtitle: Text(l10n.portfolioClosedNote),
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  fmt.money(c.realized, ccy, withSign: true),
+                                  style: TextStyle(color: gainColor(p, c.realized), fontWeight: FontWeight.w600),
+                                ),
+                                IconButton(
+                                  tooltip: l10n.portfolioTransactions,
+                                  icon: Icon(Icons.more_vert_rounded, color: p.muted),
+                                  onPressed: () => showPurchasesSheet(context, c.position),
+                                ),
+                              ],
+                            ),
+                            onTap: () => onOpenSymbol(
+                              StockCandidate(symbol: c.position.symbol, companyName: c.position.symbol, confidence: 1),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 12),
                 if (s.hasExcluded)
                   Padding(
@@ -421,9 +506,10 @@ class _PositionTile extends StatelessWidget {
               ],
             ),
             IconButton(
-              tooltip: l10n.portfolioPurchases,
+              key: ValueKey('position-menu-${pos.symbol}'),
+              tooltip: l10n.portfolioTransactions,
               icon: Icon(Icons.more_vert_rounded, color: p.muted),
-              onPressed: () => showPurchasesSheet(context, pos),
+              onPressed: () => showPurchasesSheet(context, pos, currentPrice: row.price),
             ),
           ],
         ),
@@ -432,51 +518,87 @@ class _PositionTile extends StatelessWidget {
   }
 }
 
-/// Egy pozíció vételei törlés-gombbal.
-Future<void> showPurchasesSheet(BuildContext context, Position position) {
+/// Egy pozíció tranzakciói (vételek és eladások) törlés-gombbal, fölöttük az
+/// eladás gombja (ha még van birtokolt darab) és a realizált nyereség.
+Future<void> showPurchasesSheet(BuildContext context, Position position, {double? currentPrice}) {
   return showModalBottomSheet<void>(
     context: context,
     showDragHandle: true,
+    isScrollControlled: true,
     builder: (context) {
       final l10n = AppLocalizations.of(context);
       final services = AppServices.of(context);
       final p = AppPalette.of(context);
       final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+      String qty(double q) => fmt.number(q, decimals: q == q.roundToDouble() ? 0 : 4);
       return ListenableBuilder(
         listenable: services.portfolio,
         builder: (context, _) {
           final lots = services.portfolio.lots.where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
+          final now = Position(symbol: position.symbol, currency: position.currency, lots: lots);
           return SafeArea(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
-                  child: Text(
-                    '${position.symbol} · ${l10n.portfolioPurchases}',
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
-                ),
-                for (final lot in lots)
-                  ListTile(
-                    leading: Icon(Icons.receipt_long_outlined, color: p.muted),
-                    title: Text(
-                      '${fmt.number(lot.quantity, decimals: lot.quantity == lot.quantity.roundToDouble() ? 0 : 4)} × '
-                      '${fmt.money(lot.price, lot.currency)}',
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.8),
+              child: ListView(
+                shrinkWrap: true,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            '${position.symbol} · ${l10n.portfolioTransactions}',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                        ),
+                        if (!now.isClosed)
+                          FilledButton.tonalIcon(
+                            key: const ValueKey('position-sell'),
+                            onPressed: () => showAddLotDialog(
+                              context,
+                              symbol: position.symbol,
+                              currency: position.currency,
+                              currentPrice: currentPrice,
+                              sellMax: now.quantity,
+                            ),
+                            icon: const Icon(Icons.sell_outlined, size: 18),
+                            label: Text(l10n.portfolioSell),
+                          ),
+                      ],
                     ),
-                    subtitle: lot.date == null ? null : Text(fmt.date(lot.date)),
-                    trailing: TextButton.icon(
-                      onPressed: () => services.portfolio.remove(lot.id),
-                      icon: const Icon(Icons.delete_outline_rounded, size: 18),
-                      label: Text(l10n.portfolioRemove),
-                      style: TextButton.styleFrom(foregroundColor: p.negative),
-                    ),
                   ),
-                if (lots.isEmpty) Padding(padding: const EdgeInsets.all(20), child: Text(l10n.portfolioEmpty)),
-                const SizedBox(height: 12),
-              ],
+                  if (now.hasSales)
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+                      child: Text(
+                        '${l10n.portfolioRealized}: ${fmt.money(now.realizedGain, now.currency, withSign: true)}',
+                        style: TextStyle(color: gainColor(p, now.realizedGain), fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                  for (final lot in lots)
+                    ListTile(
+                      key: ValueKey('lot-${lot.id}'),
+                      leading: Icon(
+                        lot.sell ? Icons.sell_outlined : Icons.receipt_long_outlined,
+                        color: lot.sell ? p.accent : p.muted,
+                      ),
+                      title: Text(
+                        '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.money(lot.price, lot.currency)}',
+                      ),
+                      subtitle: lot.date == null ? null : Text(fmt.date(lot.date)),
+                      trailing: TextButton.icon(
+                        onPressed: () => services.portfolio.remove(lot.id),
+                        icon: const Icon(Icons.delete_outline_rounded, size: 18),
+                        label: Text(l10n.portfolioRemove),
+                        style: TextButton.styleFrom(foregroundColor: p.negative),
+                      ),
+                    ),
+                  if (lots.isEmpty) Padding(padding: const EdgeInsets.all(20), child: Text(l10n.portfolioEmpty)),
+                  const SizedBox(height: 12),
+                ],
+              ),
             ),
           );
         },
@@ -502,7 +624,8 @@ class PortfolioSummaryCard extends StatelessWidget {
     return ListenableBuilder(
       listenable: services.portfolio,
       builder: (context, _) {
-        if (services.portfolio.isEmpty) return const SizedBox.shrink();
+        // Csak ha van még birtokolt részvény (a lezártak a portfólió oldalon látszanak).
+        if (services.portfolio.positions.isEmpty) return const SizedBox.shrink();
         return Padding(
           padding: const EdgeInsets.only(top: 24),
           child: PortfolioSnapshotBuilder(

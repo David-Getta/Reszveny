@@ -1776,4 +1776,81 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get digestHint =>
       'រៀងរាល់ថ្ងៃច័ន្ទ៖ ចំណូលចិត្ត និងផលប័ត្ររបស់អ្នកប្រែប្រួលយ៉ាងណាកាលពីសប្ដាហ៍មុន និងកាលបរិច្ឆេទប្រកាសលទ្ធផលខាងមុខ។';
+
+  @override
+  String get benchmarkTitle => 'ប្រៀបធៀបជាមួយ S&P 500';
+
+  @override
+  String get benchmarkYours => 'ការទិញរបស់អ្នក';
+
+  @override
+  String get benchmarkIndex => 'ចំនួនដូចគ្នាក្នុង S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ល្អជាងសន្ទស្សន៍ $points ពិន្ទុភាគរយ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ទាបជាងសន្ទស្សន៍ $points ពិន្ទុភាគរយ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ដូចជាការទិញនីមួយៗត្រូវបានវិនិយោគក្នុងមូលនិធិសន្ទស្សន៍ S&P 500 នៅថ្ងៃដដែល។ មិនរាប់បញ្ចូលភាគលាភ; ផលចំណេញកន្លងមកមិនព្យាករណ៍ផលចំណេញនាពេលអនាគតទេ។';
+
+  @override
+  String get portfolioSell => 'លក់';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'លក់ $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'តម្លៃលក់ក្នុងមួយភាគហ៊ុន ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'កាលបរិច្ឆេទលក់';
+
+  @override
+  String get portfolioSellAll => 'ទាំងអស់';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'អ្នកមាន $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'បានលក់';
+
+  @override
+  String get portfolioRealized => 'បានសម្រេច';
+
+  @override
+  String get portfolioClosed => 'ការកាន់កាប់ដែលបានបិទ';
+
+  @override
+  String get portfolioClosedNote => 'បានលក់ភាគហ៊ុនទាំងអស់';
+
+  @override
+  String get portfolioTransactions => 'ប្រតិបត្តិការ';
+
+  @override
+  String get portfolioRealizedByYear => 'ប្រាក់ចំណេញបានសម្រេចតាមឆ្នាំ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'ការលក់ត្រូវបានផ្គូផ្គងជាមួយការទិញចាស់បំផុតរបស់អ្នកជាមុន (FIFO) ហើយបម្លែងតាមអត្រាប្តូរប្រាក់ថ្ងៃនេះ។ សម្រាប់ការប្រកាសពន្ធ សូមប្រើរបាយការណ៍ពីឈ្មួញកណ្តាលរបស់អ្នក។';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'លទ្ធផលប្រចាំត្រីមាសថ្មីត្រូវបានប្រកាសចាប់តាំងពីការវិភាគនេះ ($symbol, $date)។';
+  }
+
+  @override
+  String get newResultsBadge => 'លទ្ធផលថ្មី';
 }

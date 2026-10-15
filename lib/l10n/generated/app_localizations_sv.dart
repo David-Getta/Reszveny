@@ -1793,4 +1793,81 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get digestHint =>
       'Varje måndag: hur dina favoriter och din portfölj rörde sig förra veckan, och deras kommande rapportdatum.';
+
+  @override
+  String get benchmarkTitle => 'Jämfört med S&P 500';
+
+  @override
+  String get benchmarkYours => 'Dina köp';
+
+  @override
+  String get benchmarkIndex => 'Samma belopp i S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points procentenheter bättre än index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points procentenheter efter index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Som om varje köp hade investerats i en S&P 500-indexfond samma dag. Utdelningar ej medräknade; historisk avkastning förutsäger inte framtida.';
+
+  @override
+  String get portfolioSell => 'Sälj';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sälj $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Försäljningspris per aktie ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Säljdatum';
+
+  @override
+  String get portfolioSellAll => 'Alla';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Du har $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Sålt';
+
+  @override
+  String get portfolioRealized => 'Realiserat';
+
+  @override
+  String get portfolioClosed => 'Avslutade innehav';
+
+  @override
+  String get portfolioClosedNote => 'Alla aktier sålda';
+
+  @override
+  String get portfolioTransactions => 'Transaktioner';
+
+  @override
+  String get portfolioRealizedByYear => 'Realiserad vinst per år';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Försäljningar avräknas först mot dina äldsta köp (FIFO) och räknas om till dagens växelkurs. Använd din mäklares årsbesked till deklarationen.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Sedan den här analysen har en ny kvartalsrapport publicerats ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Ny rapport';
 }

@@ -118,6 +118,9 @@ void main() {
     await tester.tap(find.text('Portfolio').first);
     await tester.pumpAndSettle();
     expect(find.text('AI portfolio review'), findsOneWidget);
+    // Az értékalakulás alatt az S&P 500-összevetés.
+    expect(find.byKey(const ValueKey('portfolio-benchmark')), findsOneWidget);
+    expect(find.text('Same amounts in the S&P 500'), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('portfolio-review-run')));
     await tester.pumpAndSettle();
 

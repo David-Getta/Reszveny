@@ -1847,4 +1847,81 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get digestHint =>
       'Každý pondelok: ako sa minulý týždeň vyvíjali vaše obľúbené a portfólio a najbližšie dátumy ich výsledkov.';
+
+  @override
+  String get benchmarkTitle => 'Porovnanie s S&P 500';
+
+  @override
+  String get benchmarkYours => 'Vaše nákupy';
+
+  @override
+  String get benchmarkIndex => 'Rovnaké sumy v S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'O $points p. b. lepšie ako index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'O $points p. b. za indexom';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Akoby bol každý nákup v ten istý deň vložený do indexového fondu S&P 500. Bez dividend; minulé výnosy nepredpovedajú budúce.';
+
+  @override
+  String get portfolioSell => 'Predať';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Predať $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Predajná cena za akciu ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Dátum predaja';
+
+  @override
+  String get portfolioSellAll => 'Všetky';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Držíte $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Predané';
+
+  @override
+  String get portfolioRealized => 'Realizované';
+
+  @override
+  String get portfolioClosed => 'Uzavreté pozície';
+
+  @override
+  String get portfolioClosedNote => 'Všetky akcie predané';
+
+  @override
+  String get portfolioTransactions => 'Transakcie';
+
+  @override
+  String get portfolioRealizedByYear => 'Realizovaný zisk podľa rokov';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Predaje sa najprv priraďujú k vašim najstarším nákupom (FIFO) a prepočítavajú sa dnešným kurzom. Na daňové priznanie použite výpis od svojho brokera.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Od tejto analýzy boli zverejnené nové štvrťročné výsledky ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nové výsledky';
 }

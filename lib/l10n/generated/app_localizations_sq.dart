@@ -1799,4 +1799,81 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get digestHint =>
       'Çdo të hënë: si lëvizën të preferuarat dhe portofoli juaj javën e kaluar, si dhe datat e ardhshme të rezultateve të tyre.';
+
+  @override
+  String get benchmarkTitle => 'Krahasuar me S&P 500';
+
+  @override
+  String get benchmarkYours => 'Blerjet tuaja';
+
+  @override
+  String get benchmarkIndex => 'Të njëjtat shuma në S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points pikë përqindjeje më mirë se indeksi';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points pikë përqindjeje pas indeksit';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Sikur çdo blerje të ishte investuar në një fond indeksi S&P 500 në të njëjtën ditë. Pa dividendë; kthimet e kaluara nuk parashikojnë ato të ardhshme.';
+
+  @override
+  String get portfolioSell => 'Shit';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Shit $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Çmimi i shitjes për aksion ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Data e shitjes';
+
+  @override
+  String get portfolioSellAll => 'Të gjitha';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Keni $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Shitur';
+
+  @override
+  String get portfolioRealized => 'Realizuar';
+
+  @override
+  String get portfolioClosed => 'Pozicionet e mbyllura';
+
+  @override
+  String get portfolioClosedNote => 'Të gjitha aksionet u shitën';
+
+  @override
+  String get portfolioTransactions => 'Transaksionet';
+
+  @override
+  String get portfolioRealizedByYear => 'Fitimi i realizuar sipas viteve';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Shitjet përputhen fillimisht me blerjet tuaja më të vjetra (FIFO) dhe konvertohen me kursin e këmbimit të sotëm. Për deklaratën tatimore, përdorni pasqyrën e brokerit tuaj.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Pas kësaj analize janë publikuar rezultate të reja tremujore ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Rezultate të reja';
 }

@@ -1798,4 +1798,81 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get digestHint =>
       'Tuwing Lunes: kung paano gumalaw ang iyong mga paborito at portfolio noong nakaraang linggo, at ang kanilang mga paparating na petsa ng resulta.';
+
+  @override
+  String get benchmarkTitle => 'Kumpara sa S&P 500';
+
+  @override
+  String get benchmarkYours => 'Iyong mga binili';
+
+  @override
+  String get benchmarkIndex => 'Parehong halaga sa S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points percentage point na mas mahusay kaysa sa index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points percentage point na mas mababa sa index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Na para bang inilagay ang bawat binili sa isang S&P 500 index fund sa parehong araw. Hindi kasama ang dibidendo; hindi hinuhulaan ng nakaraang kita ang hinaharap.';
+
+  @override
+  String get portfolioSell => 'Ibenta';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ibenta ang $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Presyo ng pagbenta bawat share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Petsa ng pagbenta';
+
+  @override
+  String get portfolioSellAll => 'Lahat';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'May $quantity ka';
+  }
+
+  @override
+  String get portfolioSold => 'Nabenta';
+
+  @override
+  String get portfolioRealized => 'Natamo';
+
+  @override
+  String get portfolioClosed => 'Mga saradong posisyon';
+
+  @override
+  String get portfolioClosedNote => 'Naibenta na ang lahat ng share';
+
+  @override
+  String get portfolioTransactions => 'Mga transaksyon';
+
+  @override
+  String get portfolioRealizedByYear => 'Natamong kita bawat taon';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Itinutugma muna ang mga pagbenta sa pinakaluma mong mga pagbili (FIFO), na-convert sa palitan ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'May bagong quarterly na resulta na nailathala mula nang gawin ang pagsusuring ito ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Bagong resulta';
 }

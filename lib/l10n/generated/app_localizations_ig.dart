@@ -1787,4 +1787,81 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get digestHint =>
       'Mọnde ọ bụla: otú ọkacha mmasị gị na portfolio gị si gaa n\'izu gara aga, na ụbọchị nsonaazụ ha na-abịa.';
+
+  @override
+  String get benchmarkTitle => 'Atụnyere S&P 500';
+
+  @override
+  String get benchmarkYours => 'Ihe ị zụrụ';
+
+  @override
+  String get benchmarkIndex => 'Otu ego ahụ na S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Ka ndeksi mma site na pasentị $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Nọ n\'azụ ndeksi site na pasentị $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Dị ka a ga-asị na etinyere ego nke ọ bụla ịzụrụ n\'ego ndeksi S&P 500 n\'otu ụbọchị ahụ. Etinyeghị dividend; uru gara aga anaghị ebu amụma uru ga-abịa.';
+
+  @override
+  String get portfolioSell => 'Ree';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ree $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Ọnụahịa ire kwa share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Ụbọchị ire';
+
+  @override
+  String get portfolioSellAll => 'Ha niile';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'I nwere $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'E rere';
+
+  @override
+  String get portfolioRealized => 'Uru enwetara';
+
+  @override
+  String get portfolioClosed => 'Ihe ndị ị rechara';
+
+  @override
+  String get portfolioClosedNote => 'E rechaala share niile';
+
+  @override
+  String get portfolioTransactions => 'Azụmahịa';
+
+  @override
+  String get portfolioRealizedByYear => 'Uru enwetara kwa afọ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'A na-ebu ụzọ jikọta ire na ihe ndị ochie ị zụrụ (FIFO), gbanwee ya n\'ọnụego mgbanwe nke taa. Maka akụkọ ụtụ isi gị, jiri nkọwa ego onye ọrụ ahịa gị (broker).';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Nsonaazụ ọhụrụ nke nkeji ọnwa atọ apụtala kemgbe e mere nyocha a ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nsonaazụ ọhụrụ';
 }

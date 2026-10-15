@@ -1804,4 +1804,81 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get digestHint =>
       'Kada Lunes: kon paano naghulag ang imo mga paborito kag portfolio sang nagligad nga semana, kag ang ila masunod nga mga petsa sang resulta.';
+
+  @override
+  String get benchmarkTitle => 'Kumparar sa S&P 500';
+
+  @override
+  String get benchmarkYours => 'Imo mga ginbakal';
+
+  @override
+  String get benchmarkIndex => 'Pareho nga kantidad sa S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points ka percentage point nga mas maayo sang sa index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points ka percentage point nga kubos sa index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Subong nga ang kada bakal gin-invest sa isa ka S&P 500 index fund sa amo man nga adlaw. Wala labot ang dibidendo; ang nagligad nga ganansya indi nagatagna sang palaabuton.';
+
+  @override
+  String get portfolioSell => 'Ibaligya';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ibaligya ang $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Presyo sang pagbaligya kada share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Petsa sang pagbaligya';
+
+  @override
+  String get portfolioSellAll => 'Tanan';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'May $quantity ka';
+  }
+
+  @override
+  String get portfolioSold => 'Ginbaligya';
+
+  @override
+  String get portfolioRealized => 'Narealisar';
+
+  @override
+  String get portfolioClosed => 'Mga sarado nga posisyon';
+
+  @override
+  String get portfolioClosedNote => 'Nabaligya na ang tanan nga share';
+
+  @override
+  String get portfolioTransactions => 'Mga transaksyon';
+
+  @override
+  String get portfolioRealizedByYear => 'Narealisar nga ganansya kada tuig';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Ang mga pagbaligya ginapares anay sa imo pinakadaan nga mga ginbakal (FIFO), gin-convert sa palitan subong. Para sa imo tax return, gamita ang statement sang imo broker.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Halin sining analisis, may bag-o nga quarterly nga resulta nga ginbantala ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Bag-o nga resulta';
 }

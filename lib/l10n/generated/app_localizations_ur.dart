@@ -1792,4 +1792,81 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get digestHint =>
       'ہر پیر: پچھلے ہفتے آپ کے پسندیدہ اور پورٹ فولیو کیسے چلے، اور ان کے آنے والے نتائج کی تاریخیں۔';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 سے موازنہ';
+
+  @override
+  String get benchmarkYours => 'آپ کی خریداریاں';
+
+  @override
+  String get benchmarkIndex => 'اتنی ہی رقم S&P 500 میں';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'انڈیکس سے $points فیصد پوائنٹس بہتر';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'انڈیکس سے $points فیصد پوائنٹس پیچھے';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'گویا ہر خریداری کی رقم اسی دن S&P 500 انڈیکس فنڈ میں لگائی گئی ہو۔ ڈیویڈنڈ شامل نہیں؛ ماضی کا منافع مستقبل کے منافع کی پیش گوئی نہیں کرتا۔';
+
+  @override
+  String get portfolioSell => 'فروخت کریں';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol فروخت کریں';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'فی شیئر فروخت قیمت ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'فروخت کی تاریخ';
+
+  @override
+  String get portfolioSellAll => 'سب';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'آپ کے پاس $quantity ہیں';
+  }
+
+  @override
+  String get portfolioSold => 'فروخت شدہ';
+
+  @override
+  String get portfolioRealized => 'حاصل شدہ';
+
+  @override
+  String get portfolioClosed => 'بند پوزیشنز';
+
+  @override
+  String get portfolioClosedNote => 'تمام شیئرز فروخت ہو گئے';
+
+  @override
+  String get portfolioTransactions => 'لین دین';
+
+  @override
+  String get portfolioRealizedByYear => 'سال وار حاصل شدہ منافع';
+
+  @override
+  String get portfolioRealizedHint =>
+      'فروخت کو پہلے آپ کی سب سے پرانی خریداریوں سے ملایا جاتا ہے (FIFO)، آج کی شرح مبادلہ پر تبدیل کر کے۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'اس تجزیے کے بعد نئے سہ ماہی نتائج جاری ہوئے ہیں ($symbol، $date)۔';
+  }
+
+  @override
+  String get newResultsBadge => 'نئے نتائج';
 }

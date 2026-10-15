@@ -1803,4 +1803,81 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get digestHint =>
       'Sapa lunes: munasqaykikuna, portafolioykipas qayna semanapi imayna kuyurirqan, hinallataq hamuq willakuyninkunapa p\'unchawninkuna.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500-wan tupachisqa';
+
+  @override
+  String get benchmarkYours => 'Rantisqaykikuna';
+
+  @override
+  String get benchmarkIndex => 'Kikin qullqi S&P 500-pi';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Índicemanta $points punto porcentual aswan allin';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Índicemanta $points punto porcentual qhipapi';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Sapa rantiyniyki qullqin chay p\'unchawllataq S&P 500 índice fondopi churasqa kanman hina. Dividendokuna mana yapasqachu; ñawpa gananciaqa mana hamuq gananciata willanchu.';
+
+  @override
+  String get portfolioSell => 'Rantikuy';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol rantikuy';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Sapa accionpa rantikusqa chanin ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Rantikusqa p\'unchaw';
+
+  @override
+  String get portfolioSellAll => 'Llapan';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity kapusunki';
+  }
+
+  @override
+  String get portfolioSold => 'Rantikusqa';
+
+  @override
+  String get portfolioRealized => 'Chiqaqpi';
+
+  @override
+  String get portfolioClosed => 'Wichq\'asqa posicionkuna';
+
+  @override
+  String get portfolioClosedNote => 'Llapan accionkuna rantikusqa';
+
+  @override
+  String get portfolioTransactions => 'Rantiy rantikuy';
+
+  @override
+  String get portfolioRealizedByYear => 'Watapi chiqaqpi ganancia';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Rantikusqakunaqa ñawpaqta aswan ñawpa rantisqaykikunawan tupachisqa (FIFO), kunan p\'unchawpa cambionwan tikrasqa. Impuesto willakuynikipaq, brókerniykipa extractonta llamk\'achiy.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Kay t\'aqwiy ruwasqa qhipaman, kimsa killapi musuq lluqsiykuna willakun ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Musuq lluqsiykuna';
 }

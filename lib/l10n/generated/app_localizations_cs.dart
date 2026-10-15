@@ -1843,4 +1843,81 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get digestHint =>
       'Každé pondělí: jak se minulý týden vyvíjely vaše oblíbené a portfolio a nejbližší data jejich výsledků.';
+
+  @override
+  String get benchmarkTitle => 'Srovnání s S&P 500';
+
+  @override
+  String get benchmarkYours => 'Vaše nákupy';
+
+  @override
+  String get benchmarkIndex => 'Stejné částky v S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'O $points p. b. lépe než index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'O $points p. b. za indexem';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Jako by každý nákup byl týž den vložen do indexového fondu S&P 500. Bez dividend; minulé výnosy nepředpovídají budoucí.';
+
+  @override
+  String get portfolioSell => 'Prodat';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Prodat $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Prodejní cena za akcii ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Datum prodeje';
+
+  @override
+  String get portfolioSellAll => 'Vše';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Držíte $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Prodáno';
+
+  @override
+  String get portfolioRealized => 'Realizováno';
+
+  @override
+  String get portfolioClosed => 'Uzavřené pozice';
+
+  @override
+  String get portfolioClosedNote => 'Všechny akcie prodány';
+
+  @override
+  String get portfolioTransactions => 'Transakce';
+
+  @override
+  String get portfolioRealizedByYear => 'Realizovaný zisk podle let';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Prodeje se párují nejprve s vašimi nejstaršími nákupy (FIFO) a přepočítávají se dnešním kurzem. Pro daňové přiznání použijte výpis od svého brokera.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Od této analýzy byly zveřejněny nové čtvrtletní výsledky ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nové výsledky';
 }

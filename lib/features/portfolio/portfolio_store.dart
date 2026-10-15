@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// Egy vétel: hány darab, milyen áron (a részvény saját pénznemében), mikor.
+/// Egy tranzakció: vétel (vagy [sell] esetén eladás) – hány darab, milyen
+/// áron (a részvény saját pénznemében), mikor.
 class PortfolioLot {
   const PortfolioLot({
     required this.id,
@@ -12,18 +13,26 @@ class PortfolioLot {
     required this.price,
     required this.currency,
     this.date,
+    this.sell = false,
   });
 
   final String id;
   final String symbol;
   final double quantity;
 
-  /// Darabonkénti vételár a részvény pénznemében.
+  /// Darabonkénti vétel- vagy eladási ár a részvény pénznemében.
   final double price;
   final String currency;
   final DateTime? date;
 
+  /// Eladás (a darabszám ilyenkor is pozitív).
+  final bool sell;
+
+  /// Vételnél a bekerülési érték, eladásnál a bevétel.
   double get cost => quantity * price;
+
+  /// A birtokolt darabszám változása: vételnél +, eladásnál −.
+  double get signedQuantity => sell ? -quantity : quantity;
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -32,6 +41,7 @@ class PortfolioLot {
     'price': price,
     'currency': currency,
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
+    if (sell) 'side': 'sell',
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -45,31 +55,96 @@ class PortfolioLot {
       price: p.toDouble(),
       currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
       date: DateTime.tryParse(j['date'] as String? ?? ''),
+      sell: j['side'] == 'sell',
     );
   }
 }
 
-/// Egy részvény összes vétele együtt: darabszám, bekerülési érték, átlagár.
+typedef _Fifo = ({
+  List<({double quantity, double price, DateTime? date})> open,
+  double realized,
+  double sold,
+  Map<int?, double> byYear,
+});
+
+/// Egy részvény összes tranzakciója együtt. Az eladások a legrégebbi vételeket
+/// fogyasztják (FIFO): a megmaradt darabok adják a darabszámot és a bekerülési
+/// értéket, az eladott darabok nyeresége a realizált nyereség.
 class Position {
-  const Position({required this.symbol, required this.currency, required this.lots});
+  Position({required this.symbol, required this.currency, required this.lots});
 
   final String symbol;
   final String currency;
+
+  /// Minden tranzakció (vétel és eladás).
   final List<PortfolioLot> lots;
 
-  double get quantity => lots.fold(0, (s, l) => s + l.quantity);
-  double get cost => lots.fold(0, (s, l) => s + l.cost);
+  late final _Fifo _fifo = _compute();
 
-  /// Mennyiséggel súlyozott átlagos vételár.
-  double get averageCost => quantity == 0 ? 0 : cost / quantity;
+  _Fifo _compute() {
+    // Időrend: dátum nélküli vétel a legelején, dátum nélküli eladás a végén;
+    // azonos napon a vétel előbb.
+    int order(PortfolioLot a, PortfolioLot b) {
+      final da = a.date ?? (a.sell ? DateTime(9999) : DateTime(0));
+      final db = b.date ?? (b.sell ? DateTime(9999) : DateTime(0));
+      final c = da.compareTo(db);
+      if (c != 0) return c;
+      return (a.sell ? 1 : 0) - (b.sell ? 1 : 0);
+    }
+
+    final open = <({double quantity, double price, DateTime? date})>[];
+    var realized = 0.0, sold = 0.0;
+    final byYear = <int?, double>{};
+    for (final t in [...lots]..sort(order)) {
+      if (!t.sell) {
+        open.add((quantity: t.quantity, price: t.price, date: t.date));
+        continue;
+      }
+      var left = t.quantity;
+      while (left > 1e-9 && open.isNotEmpty) {
+        final first = open.first;
+        final take = left < first.quantity ? left : first.quantity;
+        realized += take * (t.price - first.price);
+        byYear[t.date?.year] = (byYear[t.date?.year] ?? 0) + take * (t.price - first.price);
+        sold += take;
+        left -= take;
+        if (first.quantity - take <= 1e-9) {
+          open.removeAt(0);
+        } else {
+          open[0] = (quantity: first.quantity - take, price: first.price, date: first.date);
+        }
+      }
+    }
+    return (open: open, realized: realized, sold: sold, byYear: byYear);
+  }
+
+  /// A még birtokolt darabszám.
+  double get quantity => _fifo.open.fold(0, (s, l) => s + l.quantity);
+
+  /// A birtokolt darabok bekerülési értéke.
+  double get cost => _fifo.open.fold(0, (s, l) => s + l.quantity * l.price);
+
+  /// Az eladásokon elért (realizált) nyereség a részvény pénznemében.
+  double get realizedGain => _fifo.realized;
+
+  /// A realizált nyereség az eladás éve szerint (dátum nélküli eladás: `null`).
+  Map<int?, double> get realizedByYear => _fifo.byYear;
+
+  bool get hasSales => lots.any((l) => l.sell);
+
+  /// Lezárt pozíció: mindent eladott.
+  bool get isClosed => quantity <= 1e-9;
+
+  /// Mennyiséggel súlyozott átlagos vételár (a birtokolt darabokra).
+  double get averageCost => quantity <= 1e-9 ? 0 : cost / quantity;
 
   DateTime? get firstDate {
-    final dates = [for (final l in lots) ?l.date]..sort();
+    final dates = [for (final l in _fifo.open) ?l.date]..sort();
     return dates.firstOrNull;
   }
 
   DateTime? get lastDate {
-    final dates = [for (final l in lots) ?l.date]..sort();
+    final dates = [for (final l in _fifo.open) ?l.date]..sort();
     return dates.lastOrNull;
   }
 }
@@ -104,14 +179,24 @@ class PortfolioStore extends ChangeNotifier {
     ];
   }
 
-  /// Részvényenként összevont pozíciók, a legnagyobb bekerülési értékkel elöl.
-  List<Position> get positions {
+  /// Részvényenként összevont, még birtokolt pozíciók, a legnagyobb bekerülési értékkel elöl.
+  List<Position> get positions => [
+    for (final p in _all)
+      if (!p.isClosed) p,
+  ]..sort((a, b) => b.cost.compareTo(a.cost));
+
+  /// Teljesen eladott pozíciók (a realizált nyereségükkel).
+  List<Position> get closedPositions => [
+    for (final p in _all)
+      if (p.isClosed) p,
+  ];
+
+  List<Position> get _all {
     final bySymbol = <String, List<PortfolioLot>>{};
     for (final l in _lots) {
       bySymbol.putIfAbsent(l.symbol, () => []).add(l);
     }
-    return [for (final e in bySymbol.entries) Position(symbol: e.key, currency: e.value.first.currency, lots: e.value)]
-      ..sort((a, b) => b.cost.compareTo(a.cost));
+    return [for (final e in bySymbol.entries) Position(symbol: e.key, currency: e.value.first.currency, lots: e.value)];
   }
 
   Position? positionOf(String symbol) {
@@ -125,6 +210,7 @@ class PortfolioStore extends ChangeNotifier {
     required double price,
     required String currency,
     DateTime? date,
+    bool sell = false,
   }) async {
     final s = symbol.trim().toUpperCase();
     final lot = PortfolioLot(
@@ -134,6 +220,7 @@ class PortfolioStore extends ChangeNotifier {
       price: price,
       currency: currency.toUpperCase(),
       date: date,
+      sell: sell,
     );
     _lots.add(lot);
     notifyListeners();

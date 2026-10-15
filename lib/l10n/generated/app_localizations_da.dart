@@ -1790,4 +1790,81 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get digestHint =>
       'Hver mandag: hvordan dine favoritter og din portefølje bevægede sig i sidste uge, og deres kommende regnskabsdatoer.';
+
+  @override
+  String get benchmarkTitle => 'Sammenlignet med S&P 500';
+
+  @override
+  String get benchmarkYours => 'Dine køb';
+
+  @override
+  String get benchmarkIndex => 'Samme beløb i S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points procentpoint bedre end indekset';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points procentpoint efter indekset';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Som om hvert køb var investeret i en S&P 500-indeksfond samme dag. Udbytte ikke medregnet; tidligere afkast forudsiger ikke fremtidige.';
+
+  @override
+  String get portfolioSell => 'Sælg';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Sælg $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Salgspris pr. aktie ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Salgsdato';
+
+  @override
+  String get portfolioSellAll => 'Alle';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Du har $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Solgt';
+
+  @override
+  String get portfolioRealized => 'Realiseret';
+
+  @override
+  String get portfolioClosed => 'Lukkede positioner';
+
+  @override
+  String get portfolioClosedNote => 'Alle aktier solgt';
+
+  @override
+  String get portfolioTransactions => 'Transaktioner';
+
+  @override
+  String get portfolioRealizedByYear => 'Realiseret gevinst pr. år';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Salg modregnes først i dine ældste køb (FIFO) og omregnes til dagens valutakurs. Brug din mæglers opgørelse til selvangivelsen.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Siden denne analyse er der offentliggjort nyt kvartalsregnskab ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nyt regnskab';
 }

@@ -1793,4 +1793,81 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get digestHint =>
       'Saben Senin: obahé favorit lan portofolio sampeyan minggu kepungkur, uga tanggal laporan kuartalan sing bakal teka.';
+
+  @override
+  String get benchmarkTitle => 'Dibandhingake karo S&P 500';
+
+  @override
+  String get benchmarkYours => 'Tumbasan sampeyan';
+
+  @override
+  String get benchmarkIndex => 'Jumlah padha ing S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points poin persentase luwih apik tinimbang indeks';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points poin persentase ing ngisor indeks';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kaya-kaya saben tumbasan diinvestasekake menyang reksa dana indeks S&P 500 ing dina sing padha. Tanpa dividen; asil kepungkur ora bisa kanggo ngramal asil ing mbesuk.';
+
+  @override
+  String get portfolioSell => 'Dol';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Dol $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Rega dodolan saben saham ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Tanggal adol';
+
+  @override
+  String get portfolioSellAll => 'Kabeh';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Sampeyan duwe $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Didol';
+
+  @override
+  String get portfolioRealized => 'Terealisasi';
+
+  @override
+  String get portfolioClosed => 'Posisi ditutup';
+
+  @override
+  String get portfolioClosedNote => 'Kabeh saham wis didol';
+
+  @override
+  String get portfolioTransactions => 'Transaksi';
+
+  @override
+  String get portfolioRealizedByYear => 'Bathi terealisasi saben taun';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Dodolan dicocogake dhisik karo tukon sing paling lawas (FIFO), diowahi nganggo kurs dina iki. Kanggo laporan pajeg, gunakake laporan saka broker sampeyan.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Wiwit analisis iki, laporan kuartalan anyar wis metu ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Laporan anyar';
 }

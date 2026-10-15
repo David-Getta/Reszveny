@@ -1790,4 +1790,81 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get digestHint =>
       'ପ୍ରତି ସୋମବାର: ଗତ ସପ୍ତାହରେ ଆପଣଙ୍କ ପସନ୍ଦ ଓ ପୋର୍ଟଫୋଲିଓ କିପରି ଗତି କଲା, ଏବଂ ସେଗୁଡ଼ିକର ଆଗାମୀ ଫଳାଫଳ ତାରିଖ।';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 ସହ ତୁଳନା';
+
+  @override
+  String get benchmarkYours => 'ଆପଣଙ୍କ କ୍ରୟ';
+
+  @override
+  String get benchmarkIndex => 'ସମାନ ରାଶି S&P 500ରେ';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ସୂଚକାଙ୍କଠାରୁ $points ପ୍ରତିଶତ ପଏଣ୍ଟ ଭଲ';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ସୂଚକାଙ୍କଠାରୁ $points ପ୍ରତିଶତ ପଏଣ୍ଟ ପଛରେ';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'ଯେପରି ପ୍ରତ୍ୟେକ କ୍ରୟର ରାଶି ସେହି ଦିନ ଏକ S&P 500 ଇଣ୍ଡେକ୍ସ ଫଣ୍ଡରେ ନିବେଶ କରାଯାଇଥିଲା। ଲାଭାଂଶ ଅନ୍ତର୍ଭୁକ୍ତ ନୁହେଁ; ଅତୀତର ରିଟର୍ଣ୍ଣ ଭବିଷ୍ୟତର ପୂର୍ବାନୁମାନ କରେ ନାହିଁ।';
+
+  @override
+  String get portfolioSell => 'ବିକ୍ରି କରନ୍ତୁ';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol ବିକ୍ରି କରନ୍ତୁ';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ପ୍ରତି ସେୟାର ବିକ୍ରି ଦର ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'ବିକ୍ରି ତାରିଖ';
+
+  @override
+  String get portfolioSellAll => 'ସମସ୍ତ';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'ଆପଣଙ୍କ ପାଖରେ $quantity ଅଛି';
+  }
+
+  @override
+  String get portfolioSold => 'ବିକ୍ରି ହେଲା';
+
+  @override
+  String get portfolioRealized => 'ପ୍ରାପ୍ତ';
+
+  @override
+  String get portfolioClosed => 'ବନ୍ଦ ପୋଜିସନ';
+
+  @override
+  String get portfolioClosedNote => 'ସମସ୍ତ ସେୟାର ବିକ୍ରି ହୋଇଛି';
+
+  @override
+  String get portfolioTransactions => 'କାରବାର';
+
+  @override
+  String get portfolioRealizedByYear => 'ବର୍ଷ ଅନୁଯାୟୀ ପ୍ରାପ୍ତ ଲାଭ';
+
+  @override
+  String get portfolioRealizedHint =>
+      'ବିକ୍ରିକୁ ପ୍ରଥମେ ଆପଣଙ୍କ ସବୁଠାରୁ ପୁରୁଣା କ୍ରୟ ସହ ମେଳ କରାଯାଏ (FIFO), ଆଜିର ବିନିମୟ ଦରରେ ରୂପାନ୍ତରିତ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରଙ୍କ ବିବରଣୀ ବ୍ୟବହାର କରନ୍ତୁ।';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'ଏହି ବିଶ୍ଳେଷଣ ପରେ ନୂଆ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶିତ ହୋଇଛି ($symbol, $date)।';
+  }
+
+  @override
+  String get newResultsBadge => 'ନୂଆ ଫଳାଫଳ';
 }

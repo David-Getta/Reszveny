@@ -1803,4 +1803,81 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get digestHint =>
       'Musumbuluko wun\'wana ni wun\'wana: ndlela leyi leswi u swi rhandzaka ni phothifoliyo ya wena swi fambeke ha yona evhikini leyi hundzeke, ni masiku lama taka ya mbuyelo wa swona.';
+
+  @override
+  String get benchmarkTitle => 'Loko ku pimanisiwa na S&P 500';
+
+  @override
+  String get benchmarkYours => 'Leswi u swi xaveke';
+
+  @override
+  String get benchmarkIndex => 'Mali leyi fanaka eka S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Swi antswa ku tlula index hi tiphoyinti ta phesente ta $points';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Endzhaku ka index hi tiphoyinti ta phesente ta $points';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Onge mali ya xixavo xin\'wana na xin\'wana yi vekiwile eka S&P 500 index fund hi siku rero. A swi katsi mbuyelo wa swiavelo; mbuyelo wa khale a wu vhumbhi wa nkarhi lowu taka.';
+
+  @override
+  String get portfolioSell => 'Xavisa';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Xavisa $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Nxavo wo xavisa hi xere ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Siku ro xavisa';
+
+  @override
+  String get portfolioSellAll => 'Hinkwaswo';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'U na $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Swi xavisiwile';
+
+  @override
+  String get portfolioRealized => 'Mbuyelo wa xiviri';
+
+  @override
+  String get portfolioClosed => 'Tixere leti xavisiweke';
+
+  @override
+  String get portfolioClosedNote => 'Tixere hinkwato ti xavisiwile';
+
+  @override
+  String get portfolioTransactions => 'Swixaviwa ni swixavisiwa';
+
+  @override
+  String get portfolioRealizedByYear => 'Mbuyelo wa xiviri hi lembe';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Swixavisiwa swi sungula ku fambisiwa ni swixaviwa swa wena swa khale ngopfu (FIFO), swi cinciwa hi mpimo wa ku cincana mali wa namuntlha. Eka xiviko xa wena xa xibalo, tirhisa xitatimende xa broker ya wena.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Ku sukela eka nxopaxopo lowu, ku humesiwile mbuyelo lowuntshwa wa kotara ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Mbuyelo lowuntshwa';
 }

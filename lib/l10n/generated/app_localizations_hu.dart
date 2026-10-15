@@ -1797,4 +1797,81 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get digestHint =>
       'Hétfőnként: hogyan mozogtak a kedvenceid és a portfóliód részvényei az előző héten, és mikor jönnek a gyorsjelentéseik.';
+
+  @override
+  String get benchmarkTitle => 'Összevetés az S&P 500-zal';
+
+  @override
+  String get benchmarkYours => 'A te vételeid';
+
+  @override
+  String get benchmarkIndex => 'Ugyanez az S&P 500-ban';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points százalékponttal jobb az indexnél';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points százalékponttal elmarad az indextől';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Mintha minden vételed összegét ugyanazon a napon egy S&P 500 indexalapba tetted volna. Osztalék nélkül; a múltbeli hozam nem jelzi előre a jövőbelit.';
+
+  @override
+  String get portfolioSell => 'Eladás';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol eladása';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Darabonkénti eladási ár ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Eladás dátuma';
+
+  @override
+  String get portfolioSellAll => 'Mind';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return '$quantity darabod van';
+  }
+
+  @override
+  String get portfolioSold => 'Eladva';
+
+  @override
+  String get portfolioRealized => 'Realizált';
+
+  @override
+  String get portfolioClosed => 'Lezárt pozíciók';
+
+  @override
+  String get portfolioClosedNote => 'Minden darabot eladtál';
+
+  @override
+  String get portfolioTransactions => 'Tranzakciók';
+
+  @override
+  String get portfolioRealizedByYear => 'Realizált nyereség évenként';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Az eladások a legrégebbi vételeidből fogynak (FIFO), a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatását használd.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Az elemzés óta új gyorsjelentés jelent meg ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Új gyorsjelentés';
 }

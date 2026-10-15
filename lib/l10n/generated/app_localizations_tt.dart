@@ -1789,4 +1789,81 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get digestHint =>
       'Һәр дүшәмбе: сайланмаларыгыз һәм портфелегез узган атнада ничек үзгәрде, һәм аларның якындагы хисап көннәре.';
+
+  @override
+  String get benchmarkTitle => 'S&P 500 белән чагыштыру';
+
+  @override
+  String get benchmarkYours => 'Сатып алуларыгыз';
+
+  @override
+  String get benchmarkIndex => 'Шул ук суммалар S&P 500-дә';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'Индекстан $points процент пунктка яхшырак';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'Индекстан $points процент пунктка калыша';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Әйтерсең лә һәр сатып алу шул ук көнне S&P 500 индекс фондына салынган. Дивидендларсыз; үткән керем киләчәкне фаразламый.';
+
+  @override
+  String get portfolioSell => 'Сату';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return '$symbol сату';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Бер акциянең сату бәясе ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Сату датасы';
+
+  @override
+  String get portfolioSellAll => 'Барысы';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Сездә $quantity бар';
+  }
+
+  @override
+  String get portfolioSold => 'Сатылды';
+
+  @override
+  String get portfolioRealized => 'Реальләшкән';
+
+  @override
+  String get portfolioClosed => 'Ябык позицияләр';
+
+  @override
+  String get portfolioClosedNote => 'Барлык акцияләр сатылды';
+
+  @override
+  String get portfolioTransactions => 'Операцияләр';
+
+  @override
+  String get portfolioRealizedByYear => 'Еллар буенча реальләшкән табыш';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Сатулар башта иң иске сатып алуларыгыз белән чагыштырыла (FIFO) һәм бүгенге алмашу курсы буенча күчерелә. Салым декларациясе өчен брокерыгызның өземтәсен кулланыгыз.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Бу анализдан соң яңа квартал хисабы басылды ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Яңа хисап';
 }

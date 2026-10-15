@@ -1807,4 +1807,81 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get digestHint =>
       'Tunggal Lunes: no kasano ti panaggaraw dagiti paboritom ken ti portfolio-m iti napalabas a lawas, ken dagiti umay a petsa ti resultada.';
+
+  @override
+  String get benchmarkTitle => 'Naikompara iti S&P 500';
+
+  @override
+  String get benchmarkYours => 'Dagiti ginatangmo';
+
+  @override
+  String get benchmarkIndex => 'Isu met laeng a gatad iti S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points a percentage point a nasaysayaat ngem ti index';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points a percentage point a nababbaba ngem ti index';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Kasla la naipuonan ti tunggal gatang iti S&P 500 index fund iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan.';
+
+  @override
+  String get portfolioSell => 'Ilako';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Ilako ti $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Presio ti panaglako iti tunggal share ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Petsa ti panaglako';
+
+  @override
+  String get portfolioSellAll => 'Amin';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Adda $quantity kenka';
+  }
+
+  @override
+  String get portfolioSold => 'Nailako';
+
+  @override
+  String get portfolioRealized => 'Narealisar';
+
+  @override
+  String get portfolioClosed => 'Dagiti nairikep a posision';
+
+  @override
+  String get portfolioClosedNote => 'Nailako aminen dagiti share';
+
+  @override
+  String get portfolioTransactions => 'Dagiti transaksion';
+
+  @override
+  String get portfolioRealizedByYear => 'Narealisar a ganansia iti tinawen';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Dagiti panaglako ket umuna a maipada kadagiti kadaanan a gatangmo (FIFO), naikomberte iti exchange rate ita nga aldaw. Para iti tax return-mo, usaren ti statement ti brokermo.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Manipud iti daytoy nga analisis, adda baro a quarterly a resulta a naipablaak ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Baro a resulta';
 }

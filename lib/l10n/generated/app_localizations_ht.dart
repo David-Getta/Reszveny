@@ -1791,4 +1791,81 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get digestHint =>
       'Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo.';
+
+  @override
+  String get benchmarkTitle => 'Konpare ak S&P 500';
+
+  @override
+  String get benchmarkYours => 'Acha ou yo';
+
+  @override
+  String get benchmarkIndex => 'Menm kantite nan S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points pwen pousantaj pi bon pase endèks la';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points pwen pousantaj dèyè endèks la';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Tankou si chak acha te envesti nan yon fon endèks S&P 500 menm jou a. San dividann; rannman pase pa predi rannman nan lavni.';
+
+  @override
+  String get portfolioSell => 'Vann';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Vann $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Pri vant pa aksyon ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Dat vant';
+
+  @override
+  String get portfolioSellAll => 'Tout';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Ou genyen $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Vandi';
+
+  @override
+  String get portfolioRealized => 'Reyalize';
+
+  @override
+  String get portfolioClosed => 'Pozisyon fèmen';
+
+  @override
+  String get portfolioClosedNote => 'Tout aksyon yo vann';
+
+  @override
+  String get portfolioTransactions => 'Tranzaksyon';
+
+  @override
+  String get portfolioRealizedByYear => 'Benefis reyalize pa ane';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Nou matche lavant yo ak pi ansyen acha ou yo anvan (FIFO), konvèti nan to chanj jodi a. Pou deklarasyon taks ou, sèvi ak rapò koutye ou.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Gen nouvo rezilta trimestriyèl ki pibliye depi analiz sa a ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nouvo rezilta';
 }

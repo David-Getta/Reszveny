@@ -1768,4 +1768,81 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get digestHint =>
       'ทุกวันจันทร์: ความเคลื่อนไหวของรายการโปรดและพอร์ตโฟลิโอของคุณในสัปดาห์ที่ผ่านมา และวันประกาศผลประกอบการที่กำลังจะมาถึง';
+
+  @override
+  String get benchmarkTitle => 'เทียบกับ S&P 500';
+
+  @override
+  String get benchmarkYours => 'การซื้อของคุณ';
+
+  @override
+  String get benchmarkIndex => 'ยอดเดียวกันใน S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return 'ดีกว่าดัชนี $points จุดเปอร์เซ็นต์';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return 'ต่ำกว่าดัชนี $points จุดเปอร์เซ็นต์';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'เสมือนว่าการซื้อแต่ละครั้งนำไปลงทุนในกองทุนดัชนี S&P 500 ในวันเดียวกัน ไม่รวมเงินปันผล ผลตอบแทนในอดีตไม่ได้บ่งชี้ผลตอบแทนในอนาคต';
+
+  @override
+  String get portfolioSell => 'ขาย';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'ขาย $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'ราคาขายต่อหุ้น ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'วันที่ขาย';
+
+  @override
+  String get portfolioSellAll => 'ทั้งหมด';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'คุณถือ $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'ขาย';
+
+  @override
+  String get portfolioRealized => 'รับรู้แล้ว';
+
+  @override
+  String get portfolioClosed => 'หุ้นที่ปิดสถานะแล้ว';
+
+  @override
+  String get portfolioClosedNote => 'ขายหุ้นทั้งหมดแล้ว';
+
+  @override
+  String get portfolioTransactions => 'รายการซื้อขาย';
+
+  @override
+  String get portfolioRealizedByYear => 'กำไรที่รับรู้แล้วรายปี';
+
+  @override
+  String get portfolioRealizedHint =>
+      'การขายจะจับคู่กับการซื้อที่เก่าที่สุดของคุณก่อน (FIFO) และแปลงค่าด้วยอัตราแลกเปลี่ยนของวันนี้ สำหรับการยื่นภาษี โปรดใช้รายงานจากโบรกเกอร์ของคุณ';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'หลังจากการวิเคราะห์นี้ มีการประกาศผลประกอบการรายไตรมาสใหม่แล้ว ($symbol, $date)';
+  }
+
+  @override
+  String get newResultsBadge => 'ผลประกอบการใหม่';
 }

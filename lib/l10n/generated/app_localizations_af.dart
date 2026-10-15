@@ -1796,4 +1796,81 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get digestHint =>
       'Elke Maandag: hoe jou gunstelinge en portefeulje verlede week beweeg het, en hul komende resultaatdatums.';
+
+  @override
+  String get benchmarkTitle => 'Vergeleke met die S&P 500';
+
+  @override
+  String get benchmarkYours => 'Jou aankope';
+
+  @override
+  String get benchmarkIndex => 'Dieselfde bedrae in S&P 500';
+
+  @override
+  String benchmarkAhead(String points) {
+    return '$points persentasiepunte beter as die indeks';
+  }
+
+  @override
+  String benchmarkBehind(String points) {
+    return '$points persentasiepunte agter die indeks';
+  }
+
+  @override
+  String get benchmarkHint =>
+      'Asof elke aankoop op dieselfde dag in \'n S&P 500-indeksfonds belê is. Dividende nie ingesluit nie; vorige opbrengste voorspel nie toekomstige opbrengste nie.';
+
+  @override
+  String get portfolioSell => 'Verkoop';
+
+  @override
+  String portfolioSellTitle(String symbol) {
+    return 'Verkoop $symbol';
+  }
+
+  @override
+  String portfolioSellPrice(String currency) {
+    return 'Verkoopprys per aandeel ($currency)';
+  }
+
+  @override
+  String get portfolioSellDate => 'Verkoopdatum';
+
+  @override
+  String get portfolioSellAll => 'Alles';
+
+  @override
+  String portfolioSellTooMany(String quantity) {
+    return 'Jy hou $quantity';
+  }
+
+  @override
+  String get portfolioSold => 'Verkoop';
+
+  @override
+  String get portfolioRealized => 'Gerealiseer';
+
+  @override
+  String get portfolioClosed => 'Geslote posisies';
+
+  @override
+  String get portfolioClosedNote => 'Alle aandele verkoop';
+
+  @override
+  String get portfolioTransactions => 'Transaksies';
+
+  @override
+  String get portfolioRealizedByYear => 'Gerealiseerde wins per jaar';
+
+  @override
+  String get portfolioRealizedHint =>
+      'Verkope word eers teen jou oudste aankope afgespeel (FIFO), omgeskakel teen vandag se wisselkoers. Gebruik jou makelaar se staat vir jou belastingopgawe.';
+
+  @override
+  String staleNewResults(String symbol, String date) {
+    return 'Sedert hierdie ontleding is nuwe kwartaalresultate gepubliseer ($symbol, $date).';
+  }
+
+  @override
+  String get newResultsBadge => 'Nuwe resultate';
 }

@@ -131,6 +131,17 @@ void main() {
     expect(today['analyses'], 1);
   });
 
+  test('account and feature counts: e-mail accounts, synced data, weekly summary subscribers', () async {
+    final (a, _) = store.createAnonymousUser(null);
+    final (b, _) = store.createAnonymousUser(null);
+    store
+      ..setEmail(a, 'a@example.com')
+      ..setEmail(b, 'b@example.com')
+      ..saveSyncData(a, jsonEncode({'weekly_digest': true, 'email_alerts': false}))
+      ..saveSyncData(b, jsonEncode({'weekly_digest': false}));
+    expect((await stats())['accounts'], {'email': 2, 'synced': 2, 'weekly_digest': 1, 'email_alerts_off': 1});
+  });
+
   test('telemetry needs a signed-in app', () async {
     expect((await raw('POST', '/v1/telemetry', body: {'events': {}})).statusCode, 401);
   });
