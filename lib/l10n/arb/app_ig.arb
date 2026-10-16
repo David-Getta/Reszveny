@@ -605,5 +605,14 @@
   "allocationSectors": "Ngalaba",
   "allocationCurrencies": "Ego",
   "compareReturn1y": "Uru afọ 1",
-  "compareFromHigh": "Site na kachasị elu n'izu 52"
+  "compareFromHigh": "Site na kachasị elu n'izu 52",
+  "briefAutoTitle": "Nchịkọta kwa ụbọchị kwa ụtụtụ",
+  "briefAutoSubtitle": "A na-eme “Taa na ngwa ahịa gị” na-akpaghị aka mgbe elekere 7:00 nke ụtụtụ gachara ka ngwa ahụ na-arụ ọrụ; na kọmputa, ọkwa ga-agwa gị. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.",
+  "targetsButton": "Nkesa ebumnuche",
+  "targetsTitle": "Nkesa ebumnuche",
+  "targetsHint": "Debe òkè nke pọtụfoliyo nke òkè ọ bụla kwesịrị inwe. Hapụ oghere ahụ efu ma ọ bụrụ na ebumnuche adịghị. Mgbe ahụ ngwa ahụ ga-egosi ihe ị ga-azụ ma ọ bụ ree iji ruo ebe ahụ.",
+  "targetsSum": "Ngụkọta: {percent}",
+  "rebalanceBuy": "Zụta ≈ {amount}",
+  "rebalanceSell": "Ree ≈ {amount}",
+  "rebalanceOk": "Ọ ruru ebumnuche"
 }

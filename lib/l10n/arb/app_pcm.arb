@@ -605,5 +605,14 @@
   "allocationSectors": "Sectors",
   "allocationCurrencies": "Currencies",
   "compareReturn1y": "1-year return",
-  "compareFromHigh": "From di highest for 52 weeks"
+  "compareFromHigh": "From di highest for 52 weeks",
+  "briefAutoTitle": "Daily summary every morning",
+  "briefAutoSubtitle": "“Today with your stocks” go make itself after 7am as long as the app dey run; for computer, notification go tell you. E dey use your daily question limit, no be analysis.",
+  "targetsButton": "Target share",
+  "targetsTitle": "Target share",
+  "targetsHint": "Set how much of di portfolio each stock suppose get. Leave di box empty if no target. Di app go show you wetin to buy or sell to reach am.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Buy ≈ {amount}",
+  "rebalanceSell": "Sell ≈ {amount}",
+  "rebalanceOk": "E don reach target"
 }

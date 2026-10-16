@@ -2231,4 +2231,39 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'ໄລຍະຫ່າງຈາກສູງສຸດໃນຮອບ 52 ອາທິດ';
+
+  @override
+  String get briefAutoTitle => 'ສະຫຼຸບປະຈຳວັນທຸກເຊົ້າ';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“ມື້ນີ້ກັບຫຸ້ນຂອງທ່ານ” ຈະຖືກສ້າງອັດຕະໂນມັດຫຼັງ 7:00 ໂມງເຊົ້າ ໃນຂະນະທີ່ແອັບເປີດຢູ່; ໃນຄອມພິວເຕີ ການແຈ້ງເຕືອນຈະບອກທ່ານ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String get targetsButton => 'ສັດສ່ວນເປົ້າໝາຍ';
+
+  @override
+  String get targetsTitle => 'ສັດສ່ວນເປົ້າໝາຍ';
+
+  @override
+  String get targetsHint =>
+      'ກຳນົດວ່າແຕ່ລະຮຸ້ນຄວນມີສ່ວນແບ່ງເທົ່າໃດໃນພອດໂຟລິໂອ. ປ່ອຍຊ່ອງໃຫ້ຫວ່າງຖ້າບໍ່ມີເປົ້າໝາຍ. ຈາກນັ້ນແອັບຈະສະແດງວ່າຕ້ອງຊື້ ຫຼື ຂາຍຫຍັງເພື່ອໄປເຖິງເປົ້າໝາຍ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ລວມ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ຊື້ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ຂາຍ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ຕາມເປົ້າໝາຍ';
 }

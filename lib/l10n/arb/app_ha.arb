@@ -605,5 +605,14 @@
   "allocationSectors": "Sassa",
   "allocationCurrencies": "Kuɗaɗe",
   "compareReturn1y": "Riba ta shekara 1",
-  "compareFromHigh": "Daga mafi girma a makonni 52"
+  "compareFromHigh": "Daga mafi girma a makonni 52",
+  "briefAutoTitle": "Taƙaitaccen bayani na yau da kullum kowace safiya",
+  "briefAutoSubtitle": "Ana yin “Yau tare da hannun jarinka” kai tsaye bayan ƙarfe 7:00 na safe muddin manhajar tana aiki; a kwamfuta, sanarwa za ta sanar da kai. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.",
+  "targetsButton": "Rabon kaso da ake so",
+  "targetsTitle": "Rabon kaso da ake so",
+  "targetsHint": "Saita kason fayil ɗin jari da kowane hannun jari zai samu. Bar filin babu komai idan babu manufa. Daga nan manhajar za ta nuna abin da za a saya ko a sayar don isa can.",
+  "targetsSum": "Jimilla: {percent}",
+  "rebalanceBuy": "Saya ≈ {amount}",
+  "rebalanceSell": "Sayar ≈ {amount}",
+  "rebalanceOk": "Ya kai manufa"
 }

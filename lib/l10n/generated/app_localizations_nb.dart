@@ -2257,4 +2257,39 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Fra 52-ukers høyeste';
+
+  @override
+  String get briefAutoTitle => 'Daglig sammendrag hver morgen';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«I dag med aksjene dine» lages automatisk etter kl. 07.00 mens appen kjører; på datamaskiner får du beskjed med et varsel. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
+
+  @override
+  String get targetsButton => 'Målfordeling';
+
+  @override
+  String get targetsTitle => 'Målfordeling';
+
+  @override
+  String get targetsHint =>
+      'Angi hvor stor andel av porteføljen hver aksje skal ha. La feltet stå tomt for ingen mål. Appen viser deretter hva du bør kjøpe eller selge for å komme dit.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Totalt: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kjøp ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Selg ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'På mål';
 }

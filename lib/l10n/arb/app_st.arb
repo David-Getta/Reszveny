@@ -605,5 +605,14 @@
   "allocationSectors": "Makala",
   "allocationCurrencies": "Ditjhelete",
   "compareReturn1y": "Poelo ya selemo se 1",
-  "compareFromHigh": "Ho tloha bophahamong ba dibeke tse 52"
+  "compareFromHigh": "Ho tloha bophahamong ba dibeke tse 52",
+  "briefAutoTitle": "Kakaretso ya letsatsi le letsatsi hoseng ho hong le ho hong",
+  "briefAutoSubtitle": "“Kajeno le diabo tsa hao” e iketsa ka boyona ka mora 7:00 hoseng ha app e ntse e sebetsa; dikhomphutheng, tsebiso e tla o tsebisa. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.",
+  "targetsButton": "Kabo e lebeletsweng",
+  "targetsTitle": "Kabo e lebeletsweng",
+  "targetsHint": "Beha hore sehere ka seng se lokela ho ba le karolo e kae ya potefolio. Siya lebokose le se na letho haeba ho se sepheo. Ka mora moo app e tla bontsha seo o lokelang ho se reka kapa ho se rekisa.",
+  "targetsSum": "Kakaretso: {percent}",
+  "rebalanceBuy": "Reka ≈ {amount}",
+  "rebalanceSell": "Rekisa ≈ {amount}",
+  "rebalanceOk": "Sepheong"
 }

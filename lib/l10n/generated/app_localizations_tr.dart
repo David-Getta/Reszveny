@@ -2256,4 +2256,39 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 haftalık en yüksekten uzaklık';
+
+  @override
+  String get briefAutoTitle => 'Her sabah günlük özet';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Bugün hisselerinle”, uygulama çalıştığı sürece saat 7.00’den sonra otomatik olarak hazırlanır; bilgisayarlarda bir bildirim seni haberdar eder. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
+
+  @override
+  String get targetsButton => 'Hedef dağılım';
+
+  @override
+  String get targetsTitle => 'Hedef dağılım';
+
+  @override
+  String get targetsHint =>
+      'Her hissenin portföyde ne kadar pay alması gerektiğini belirleyin. Hedef yoksa alanı boş bırakın. Uygulama ardından hedefe ulaşmak için neyi alıp satmanız gerektiğini gösterir.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Toplam: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Al ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sat ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Hedefte';
 }

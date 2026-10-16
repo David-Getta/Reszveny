@@ -2260,4 +2260,39 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Tso Kwasiɖa 52 ƒe asi kɔkɔtɔ gbɔ';
+
+  @override
+  String get briefAutoTitle => 'Ŋkekea ƒe nyakpɔkpɔ ŋdi sia ŋdi';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Egbe kple wò stockwo” wɔa eɖokui ŋdi 7:00 megbe esime app la le dɔ wɔm; le kɔmpiuta dzi la, nyanana aɖe gblɔnɛ na wò. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
+
+  @override
+  String get targetsButton => 'Taɖodzinu ƒe mama';
+
+  @override
+  String get targetsTitle => 'Taɖodzinu ƒe mama';
+
+  @override
+  String get targetsHint =>
+      'Ɖo akpa si wòle be akpa ɖesiaɖe naxɔ le portfolio la me. Gblẽ teƒea ɖi ƒuƒlu ne taɖodzinu meli o. Emegbe app la afia nu si wòle be nàƒle alo nàdzra be nàɖo afima.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Katã: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Ƒle ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Dzra ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ɖo taɖodzinu';
 }

@@ -2249,4 +2249,39 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 ပတ် အမြင့်ဆုံးမှ ကွာဟချက်';
+
+  @override
+  String get briefAutoTitle => 'နံနက်တိုင်း နေ့စဉ်အကျဉ်းချုပ်';
+
+  @override
+  String get briefAutoSubtitle =>
+      'အက်ပ်ဖွင့်ထားစဉ် နံနက် 7:00 နာရီနောက်ပိုင်း “ယနေ့ သင့်ရှယ်ယာများ” ကို အလိုအလျောက် ပြုလုပ်ပေးပါသည်။ ကွန်ပျူတာများတွင် အကြောင်းကြားချက်က အသိပေးပါမည်။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String get targetsButton => 'ပစ်မှတ်ခွဲဝေမှု';
+
+  @override
+  String get targetsTitle => 'ပစ်မှတ်ခွဲဝေမှု';
+
+  @override
+  String get targetsHint =>
+      'ရှယ်ယာတစ်ခုစီသည် ပိုတ်ဖိုလီယို၏ မည်မျှအချိုးရှိသင့်သည်ကို သတ်မှတ်ပါ။ ပစ်မှတ်မရှိပါက အကွက်ကို ဗလာထားပါ။ ထို့နောက် ရောက်ရှိရန် ဘာဝယ်ရမည် သို့မဟုတ် ရောင်းရမည်ကို အက်ပ်က ပြပါမည်။';
+
+  @override
+  String targetsSum(String percent) {
+    return 'စုစုပေါင်း- $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ဝယ်ရန် ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ရောင်းရန် ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ပစ်မှတ်အတိုင်း';
 }

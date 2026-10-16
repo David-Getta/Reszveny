@@ -2256,4 +2256,39 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Firi Nnawɔtwe 52 bo kɛse';
+
+  @override
+  String get briefAutoTitle => 'Nsɛm tiaa da biara anɔpa';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Ɛnnɛ ne wo stocks” yɛ ne ho ankasa anɔpa 7:00 akyi bere a app no reyɛ adwuma; kɔmputa so no, nkaebɔ bɛma woahu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
+
+  @override
+  String get targetsButton => 'Botaeɛ nkyekyɛmu';
+
+  @override
+  String get targetsTitle => 'Botaeɛ nkyekyɛmu';
+
+  @override
+  String get targetsHint =>
+      'Kyerɛ ɔfa a nkyɛfa biara nsa bɛka wɔ portfolio no mu. Gyaw beaeɛ no hunu sɛ wonni botaeɛ biara a. Afei app no bɛkyerɛ deɛ ɛsɛ sɛ wotɔ anaa wotɔn na woadu hɔ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Ne nyinaa: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Tɔ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Tɔn ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Edu botaeɛ so';
 }

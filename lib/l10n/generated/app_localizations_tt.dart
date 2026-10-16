@@ -2254,4 +2254,39 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 атналык максимумнан ераклык';
+
+  @override
+  String get briefAutoTitle => 'Һәр иртә көндәлек йомгак';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Бүген акцияләрегез белән» кушымта эшләгәндә сәгать 7:00 дән соң автоматик рәвештә әзерләнә; компьютерларда бу хакта хәбәрнамә күренә. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
+
+  @override
+  String get targetsButton => 'Максатлы бүленеш';
+
+  @override
+  String get targetsTitle => 'Максатлы бүленеш';
+
+  @override
+  String get targetsHint =>
+      'Һәр акция портфельнең күпме өлешен алырга тиешлеген билгеләгез. Максат булмаса, кырны буш калдырыгыз. Аннары кушымта анда ирешү өчен нәрсә сатып алырга яки сатарга кирәклеген күрсәтә.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Барлыгы: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Сатып алу ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Сату ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Максатка туры килә';
 }

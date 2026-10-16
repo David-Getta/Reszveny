@@ -2258,4 +2258,39 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Saka paling dhuwur 52 minggu';
+
+  @override
+  String get briefAutoTitle => 'Ringkesan saben dina saben esuk';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Dina iki karo saham sampeyan” digawe otomatis sawise jam 07.00 salawase aplikasi mlaku; ing komputer, notifikasi bakal ngabari sampeyan. Nggunakake watesan pitakon saben dina, dudu analisis.';
+
+  @override
+  String get targetsButton => 'Alokasi target';
+
+  @override
+  String get targetsTitle => 'Alokasi target';
+
+  @override
+  String get targetsHint =>
+      'Temtokake bagean portofolio sing kudu diduweni saben saham. Kosongake kolom yen ora ana target. Banjur aplikasi nuduhake apa sing kudu dituku utawa didol supaya tekan kana.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Gunggung: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Tuku ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Dol ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Pas target';
 }

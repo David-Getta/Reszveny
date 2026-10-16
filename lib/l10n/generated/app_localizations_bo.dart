@@ -2246,4 +2246,39 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'གཟའ་འཁོར་ 52 ནང་གི་མཐོ་ཤོས་ལས་ཐག་རིང་ཚད';
+
+  @override
+  String get briefAutoTitle => 'ཞོགས་པ་རེ་རེར་ཉིན་རེའི་བསྡུས་དོན།';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ཉེར་སྤྱོད་འཁོར་བཞིན་པའི་སྐབས་ཞོགས་པའི་ཆུ་ཚོད་7:00རྗེས་སུ་“དེ་རིང་ཁྱེད་ཀྱི་ཚོང་ཤེར།” རང་འགུལ་གྱིས་བཟོ་གི་ཡོད། གློག་ཀླད་སྟེང་བརྡ་ཐོ་ཞིག་གིས་ཁྱེད་ལ་བརྡ་སྤྲོད། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String get targetsButton => 'དམིགས་ཡུལ་བགོ་འགྲེམས';
+
+  @override
+  String get targetsTitle => 'དམིགས་ཡུལ་བགོ་འགྲེམས';
+
+  @override
+  String get targetsHint =>
+      'ཧུར་ཁག་རེ་རེར་མ་འཛུགས་ཁྱོན་ནས་ཆ་ཤས་ག་ཚོད་ཡོད་དགོས་པ་གཏན་འཁེལ་གནང་། དམིགས་ཡུལ་མེད་ན་ས་སྟོང་པར་བཞག། དེ་ནས་ཉེར་སྤྱོད་ཀྱིས་དེར་སླེབས་ཆེད་ཉོ་དགོས་པའམ་འཚོང་དགོས་པ་གང་ཡིན་སྟོན་གྱི་རེད།';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ཁྱོན་བསྡོམས་: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ཉོ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'འཚོང ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'དམིགས་ཡུལ་ཐོག';
 }

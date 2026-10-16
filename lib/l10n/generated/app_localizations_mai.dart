@@ -2250,4 +2250,39 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-सप्ताहक उच्चतमसँ दूरी';
+
+  @override
+  String get briefAutoTitle => 'सभ भोर दैनिक सारांश';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ऐप चलैत रहला पर भोर 7:00 बजेक बाद “आइ अहाँक शेयरक संग” अपने-आप तैयार भऽ जाइत अछि; कंप्यूटर पर एकटा सूचना अहाँकेँ बता दैत अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String get targetsButton => 'लक्ष्य आवंटन';
+
+  @override
+  String get targetsTitle => 'लक्ष्य आवंटन';
+
+  @override
+  String get targetsHint =>
+      'तय करू जे पोर्टफोलियोमे प्रत्येक शेयरक कतेक हिस्सा होएबाक चाही। लक्ष्य नहि होअए त खाना खाली छोड़ि दिअ। तकर बाद ऐप देखाओत जे ओतए पहुँचबाक लेल की कीनब वा बेचब अछि।';
+
+  @override
+  String targetsSum(String percent) {
+    return 'कुल: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'कीनू ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'बेचू ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'लक्ष्य पर';
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorit",
   "allocationCurrencies": "Valuutat",
   "compareReturn1y": "1 vuoden tuotto",
-  "compareFromHigh": "Etäisyys 52 viikon ylimmästä"
+  "compareFromHigh": "Etäisyys 52 viikon ylimmästä",
+  "briefAutoTitle": "Päivän yhteenveto joka aamu",
+  "briefAutoSubtitle": "”Tänään osakkeidesi kanssa” luodaan automaattisesti klo 7.00 jälkeen, kun sovellus on käynnissä; tietokoneilla siitä kertoo ilmoitus. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
+  "targetsButton": "Tavoitejakauma",
+  "targetsTitle": "Tavoitejakauma",
+  "targetsHint": "Määritä, kuinka suuri osuus salkusta kullakin osakkeella pitäisi olla. Jätä kenttä tyhjäksi, jos tavoitetta ei ole. Sovellus näyttää sitten, mitä pitää ostaa tai myydä tavoitteen saavuttamiseksi.",
+  "targetsSum": "Yhteensä: {percent}",
+  "rebalanceBuy": "Osta ≈ {amount}",
+  "rebalanceSell": "Myy ≈ {amount}",
+  "rebalanceOk": "Tavoitteessa"
 }

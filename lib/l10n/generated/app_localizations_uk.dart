@@ -2321,4 +2321,39 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Від максимуму за 52 тижні';
+
+  @override
+  String get briefAutoTitle => 'Щоденне зведення щоранку';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Сьогодні з вашими акціями» створюється автоматично після 7:00, поки застосунок працює; на комп’ютерах про це повідомить сповіщення. Витрачається денний ліміт запитань, а не аналіз.';
+
+  @override
+  String get targetsButton => 'Цільова структура';
+
+  @override
+  String get targetsTitle => 'Цільова структура';
+
+  @override
+  String get targetsHint =>
+      'Укажіть, яку частку портфеля має займати кожна акція. Залиште поле порожнім, якщо цілі немає. Застосунок покаже, що купити чи продати, щоб її досягти.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Разом: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Купити ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Продати ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Відповідає цілі';
 }

@@ -2269,4 +2269,40 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ho tloha bophahamong ba dibeke tse 52';
+
+  @override
+  String get briefAutoTitle =>
+      'Kakaretso ya letsatsi le letsatsi hoseng ho hong le ho hong';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Kajeno le diabo tsa hao” e iketsa ka boyona ka mora 7:00 hoseng ha app e ntse e sebetsa; dikhomphutheng, tsebiso e tla o tsebisa. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
+
+  @override
+  String get targetsButton => 'Kabo e lebeletsweng';
+
+  @override
+  String get targetsTitle => 'Kabo e lebeletsweng';
+
+  @override
+  String get targetsHint =>
+      'Beha hore sehere ka seng se lokela ho ba le karolo e kae ya potefolio. Siya lebokose le se na letho haeba ho se sepheo. Ka mora moo app e tla bontsha seo o lokelang ho se reka kapa ho se rekisa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Kakaretso: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Reka ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Rekisa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Sepheong';
 }

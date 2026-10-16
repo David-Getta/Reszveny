@@ -2250,4 +2250,39 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Cách mức cao nhất 52 tuần';
+
+  @override
+  String get briefAutoTitle => 'Tóm tắt hằng ngày mỗi sáng';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Hôm nay với cổ phiếu của bạn” được tự động tạo sau 7:00 sáng khi ứng dụng đang chạy; trên máy tính, một thông báo sẽ cho bạn biết. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
+
+  @override
+  String get targetsButton => 'Phân bổ mục tiêu';
+
+  @override
+  String get targetsTitle => 'Phân bổ mục tiêu';
+
+  @override
+  String get targetsHint =>
+      'Đặt tỷ trọng trong danh mục mà mỗi cổ phiếu nên có. Để trống nếu không có mục tiêu. Sau đó ứng dụng sẽ cho biết cần mua hoặc bán gì để đạt được.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Tổng: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Mua ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Bán ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Đạt mục tiêu';
 }

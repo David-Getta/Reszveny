@@ -2256,4 +2256,39 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 ہفتوں کی بلند ترین سطح سے فاصلہ';
+
+  @override
+  String get briefAutoTitle => 'ہر صبح روزانہ خلاصہ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'جب تک ایپ چل رہی ہو، صبح 7:00 بجے کے بعد “آج آپ کے شیئرز کے ساتھ” خود بخود تیار ہو جاتا ہے؛ کمپیوٹر پر ایک اطلاع آپ کو بتا دیتی ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
+
+  @override
+  String get targetsButton => 'ہدفی تقسیم';
+
+  @override
+  String get targetsTitle => 'ہدفی تقسیم';
+
+  @override
+  String get targetsHint =>
+      'طے کریں کہ ہر حصص کو پورٹ فولیو کا کتنا حصہ ملنا چاہیے۔ کوئی ہدف نہ ہو تو خانہ خالی چھوڑ دیں۔ پھر ایپ دکھائے گی کہ وہاں پہنچنے کے لیے کیا خریدنا یا فروخت کرنا ہے۔';
+
+  @override
+  String targetsSum(String percent) {
+    return 'کل: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'خریدیں ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'فروخت کریں ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ہدف پر';
 }

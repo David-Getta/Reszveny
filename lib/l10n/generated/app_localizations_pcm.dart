@@ -2256,4 +2256,39 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'From di highest for 52 weeks';
+
+  @override
+  String get briefAutoTitle => 'Daily summary every morning';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Today with your stocks” go make itself after 7am as long as the app dey run; for computer, notification go tell you. E dey use your daily question limit, no be analysis.';
+
+  @override
+  String get targetsButton => 'Target share';
+
+  @override
+  String get targetsTitle => 'Target share';
+
+  @override
+  String get targetsHint =>
+      'Set how much of di portfolio each stock suppose get. Leave di box empty if no target. Di app go show you wetin to buy or sell to reach am.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Buy ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sell ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'E don reach target';
 }

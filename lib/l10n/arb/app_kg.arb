@@ -605,5 +605,14 @@
   "allocationSectors": "Secteurs",
   "allocationCurrencies": "Mbongo",
   "compareReturn1y": "Mbote ya mvula 1",
-  "compareFromHigh": "Katuka na ntalu ya zulu ya lumingu 52"
+  "compareFromHigh": "Katuka na ntalu ya zulu ya lumingu 52",
+  "briefAutoTitle": "Nsoki ya konso kilumbu konso suka",
+  "briefAutoSubtitle": "“Bubu ti bisikisu na nge” ke salamaka yo mosi na nima ya 7:00 ya suka ntangu application ke sala; na baordinatere, nsangu mosi ta zabisa nge. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.",
+  "targetsButton": "Nkabulu ya lukanu",
+  "targetsTitle": "Nkabulu ya lukanu",
+  "targetsHint": "Tula ndambu ya portfolio yina konso action fwete baka. Bika kisika mpamba kana lukanu kele ve. Na nima, app ta monisa nki ya kusumba to ya kuteka sambu na kukuma kuna.",
+  "targetsSum": "Yonso: {percent}",
+  "rebalanceBuy": "Sumba ≈ {amount}",
+  "rebalanceSell": "Teka ≈ {amount}",
+  "rebalanceOk": "Na lukanu"
 }

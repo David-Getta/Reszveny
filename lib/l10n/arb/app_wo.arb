@@ -605,5 +605,14 @@
   "allocationSectors": "Sektëer yi",
   "allocationCurrencies": "Xaalis yi",
   "compareReturn1y": "Njariñ ci 1 at",
-  "compareFromHigh": "Ci gëna kawe ci 52 ayu-bés"
+  "compareFromHigh": "Ci gëna kawe ci 52 ayu-bés",
+  "briefAutoTitle": "Tënk bu bés bu nekk, suba su nekk",
+  "briefAutoSubtitle": "“Tey ak sa aksiyoŋ yi” dafay defaru boppam ginnaaw 7:00 suba bi diggante bi app bi di dox; ci ordinaatëer yi, ab yégle dina la ko xamal. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.",
+  "targetsButton": "Séddale bu ñu bëgg",
+  "targetsTitle": "Séddale bu ñu bëgg",
+  "targetsHint": "Tànnal ñaata wàll ci portefeuille bi la aksiyoŋ bu nekk war a am. Bàyyil barab bi mu des su amul jubluwaay. Aplikasioŋ bi dina la won li nga war a jënd walla jaay.",
+  "targetsSum": "Lépp: {percent}",
+  "rebalanceBuy": "Jënd ≈ {amount}",
+  "rebalanceSell": "Jaay ≈ {amount}",
+  "rebalanceOk": "Ci jubluwaay bi"
 }

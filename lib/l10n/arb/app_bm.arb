@@ -605,5 +605,14 @@
   "allocationSectors": "Baara fanw",
   "allocationCurrencies": "Wariw",
   "compareReturn1y": "San 1 tɔnɔ",
-  "compareFromHigh": "Ka bɔ Dɔgɔkun 52 sɔngɔ sanfɛla la"
+  "compareFromHigh": "Ka bɔ Dɔgɔkun 52 sɔngɔ sanfɛla la",
+  "briefAutoTitle": "Don o don kuntaman sɔgɔma o sɔgɔma",
+  "briefAutoSubtitle": "“Bi ni i ka aksiyɔnw” bɛ dilan a yɛrɛ ma sɔgɔma 7:00 kɔfɛ ni app bɛ baara la; ɔridinatɛri kan, ladɔnniyali bɛ a fɔ i ye. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.",
+  "targetsButton": "Laɲini tilacogo",
+  "targetsTitle": "Laɲini tilacogo",
+  "targetsHint": "A sigi aksiyɔn kelen-kelen bɛɛ ka kan ka portfolio tilayɔrɔ hakɛ min sɔrɔ. Ni laɲini tɛ, yɔrɔ to lankolon. O kɔ, app bɛna a jira min ka kan ka san walima ka feere walasa ka se o ma.",
+  "targetsSum": "Bɛɛ lajɛlen: {percent}",
+  "rebalanceBuy": "San ≈ {amount}",
+  "rebalanceSell": "Feere ≈ {amount}",
+  "rebalanceOk": "A sera laɲini ma"
 }

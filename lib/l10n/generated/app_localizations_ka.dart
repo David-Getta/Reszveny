@@ -2257,4 +2257,39 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'დაშორება 52-კვირიანი მაქსიმუმიდან';
+
+  @override
+  String get briefAutoTitle => 'დღიური შეჯამება ყოველ დილით';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„დღეს თქვენს აქციებთან ერთად“ ავტომატურად იქმნება 7:00-ის შემდეგ, სანამ აპი მუშაობს; კომპიუტერებზე ამის შესახებ შეტყობინება გაცნობებთ. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
+
+  @override
+  String get targetsButton => 'სამიზნე განაწილება';
+
+  @override
+  String get targetsTitle => 'სამიზნე განაწილება';
+
+  @override
+  String get targetsHint =>
+      'მიუთითეთ, პორტფელის რა წილი უნდა ეკავოს თითოეულ აქციას. თუ მიზანი არ გაქვთ, ველი ცარიელი დატოვეთ. შემდეგ აპი გაჩვენებთ, რა უნდა იყიდოთ ან გაყიდოთ იქ მისაღწევად.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'სულ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ყიდვა ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'გაყიდვა ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'მიზანშია';
 }

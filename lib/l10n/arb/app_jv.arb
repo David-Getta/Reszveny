@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Mata uang",
   "compareReturn1y": "Asil 1 taun",
-  "compareFromHigh": "Saka paling dhuwur 52 minggu"
+  "compareFromHigh": "Saka paling dhuwur 52 minggu",
+  "briefAutoTitle": "Ringkesan saben dina saben esuk",
+  "briefAutoSubtitle": "“Dina iki karo saham sampeyan” digawe otomatis sawise jam 07.00 salawase aplikasi mlaku; ing komputer, notifikasi bakal ngabari sampeyan. Nggunakake watesan pitakon saben dina, dudu analisis.",
+  "targetsButton": "Alokasi target",
+  "targetsTitle": "Alokasi target",
+  "targetsHint": "Temtokake bagean portofolio sing kudu diduweni saben saham. Kosongake kolom yen ora ana target. Banjur aplikasi nuduhake apa sing kudu dituku utawa didol supaya tekan kana.",
+  "targetsSum": "Gunggung: {percent}",
+  "rebalanceBuy": "Tuku ≈ {amount}",
+  "rebalanceSell": "Dol ≈ {amount}",
+  "rebalanceOk": "Pas target"
 }

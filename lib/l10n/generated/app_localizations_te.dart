@@ -2262,4 +2262,39 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-వారాల గరిష్ఠం నుండి దూరం';
+
+  @override
+  String get briefAutoTitle => 'ప్రతి ఉదయం రోజువారీ సారాంశం';
+
+  @override
+  String get briefAutoSubtitle =>
+      'యాప్ నడుస్తున్నప్పుడు ఉదయం 7:00 తర్వాత “ఈరోజు మీ షేర్లతో” ఆటోమేటిక్‌గా సిద్ధమవుతుంది; కంప్యూటర్లలో ఒక నోటిఫికేషన్ మీకు తెలియజేస్తుంది. ఇది మీ రోజువారీ ప్రశ్నల పరిమితి నుంచి వెళ్తుంది, ఎలాంటి విశ్లేషణనూ వాడదు.';
+
+  @override
+  String get targetsButton => 'లక్ష్య కేటాయింపు';
+
+  @override
+  String get targetsTitle => 'లక్ష్య కేటాయింపు';
+
+  @override
+  String get targetsHint =>
+      'పోర్ట్‌ఫోలియోలో ప్రతి షేరుకు ఎంత వాటా ఉండాలో సెట్ చేయండి. లక్ష్యం లేకపోతే ఫీల్డ్‌ను ఖాళీగా వదిలేయండి. ఆ తర్వాత అక్కడికి చేరడానికి ఏమి కొనాలో లేదా అమ్మాలో యాప్ చూపిస్తుంది.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'మొత్తం: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'కొను ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'అమ్ము ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'లక్ష్యంలో';
 }

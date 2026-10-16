@@ -69,4 +69,6 @@ Future<void> main() async {
   services.alertMonitor.start();
   // Gyorsjelentés előtti napon értesítés (asztali gépen).
   if (SystemNotifier.isSupported) services.earningsReminder.start();
+  // Reggeli összefoglaló (ha a felhasználó bekapcsolta).
+  services.morningBrief.start();
 }

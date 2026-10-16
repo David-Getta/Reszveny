@@ -2252,4 +2252,39 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 हप्ता के सबसे ऊँच से दूरी';
+
+  @override
+  String get briefAutoTitle => 'हर बिहान रोज के सारांश';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ऐप चलत रहे तब बिहान 7:00 बजे के बाद “आज रउआ शेयर संगे” अपने-आप बन जाला; कंप्यूटर पर एगो सूचना रउआ के बता देले। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String get targetsButton => 'लक्ष्य बँटवारा';
+
+  @override
+  String get targetsTitle => 'लक्ष्य बँटवारा';
+
+  @override
+  String get targetsHint =>
+      'तय करीं कि पोर्टफोलियो में हर शेयर के केतना हिस्सा होखे के चाहीं। लक्ष्य ना होखे त खाना खाली छोड़ दीं। फेर ऐप देखाई कि उहाँ पहुँचे खातिर का खरीदे के बा भा बेचे के बा।';
+
+  @override
+  String targetsSum(String percent) {
+    return 'कुल: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'खरीदीं ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'बेचीं ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'लक्ष्य पर';
 }

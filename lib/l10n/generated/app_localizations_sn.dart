@@ -2262,4 +2262,39 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kubva pakakwirira pamavhiki 52';
+
+  @override
+  String get briefAutoTitle => 'Pfupiso yezuva nezuva mangwanani ega ega';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Nhasi nemasheya ako” inozvigadzira pachayo mushure ma7:00 mangwanani app ichiri kushanda; pamakombiyuta, chiziviso chinokuzivisa. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
+
+  @override
+  String get targetsButton => 'Kugoverwa kunodiwa';
+
+  @override
+  String get targetsTitle => 'Kugoverwa kunodiwa';
+
+  @override
+  String get targetsHint =>
+      'Isa chikamu chepotifoliyo chinofanira kuva nesheya imwe neimwe. Siya nzvimbo isina chinhu kana pasina chinangwa. App ichakuratidza zvekutenga kana kutengesa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Zvese pamwe: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Tenga ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Tengesa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Pachinangwa';
 }

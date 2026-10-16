@@ -605,5 +605,14 @@
   "allocationSectors": "Setores",
   "allocationCurrencies": "Moedas",
   "compareReturn1y": "Retorno em 1 ano",
-  "compareFromHigh": "Desde o máximo de 52 semanas"
+  "compareFromHigh": "Desde o máximo de 52 semanas",
+  "briefAutoTitle": "Resumo diário toda manhã",
+  "briefAutoSubtitle": "“Hoje com as suas ações” é criado automaticamente após as 7h enquanto o app está em execução; nos computadores, uma notificação avisa você. Usa o seu limite diário de perguntas, não uma análise.",
+  "targetsButton": "Distribuição-alvo",
+  "targetsTitle": "Distribuição-alvo",
+  "targetsHint": "Defina a parcela da carteira que cada ação deve ter. Deixe o campo vazio para não definir meta. O app mostra então o que comprar ou vender para chegar lá.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Comprar ≈ {amount}",
+  "rebalanceSell": "Vender ≈ {amount}",
+  "rebalanceOk": "Na meta"
 }

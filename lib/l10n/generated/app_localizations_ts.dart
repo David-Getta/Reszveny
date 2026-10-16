@@ -2271,4 +2271,40 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ku suka eka ehenhla ka mavhiki ya 52';
+
+  @override
+  String get briefAutoTitle =>
+      'Nkatsakanyo ya siku na siku nimixo yin’wana ni yin’wana';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Namuntlha ni swiavelo swa wena” yi tiendlela hi yoxe endzhaku ka 7:00 nimixo loko app yi ri karhi yi tirha; eka tikhompyuta, xitiviso xi ta ku tivisa. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
+
+  @override
+  String get targetsButton => 'Ku avanyisa loku lavekaka';
+
+  @override
+  String get targetsTitle => 'Ku avanyisa loku lavekaka';
+
+  @override
+  String get targetsHint =>
+      'Veka leswaku xere yin\'wana na yin\'wana yi fanele ku va na xiphemu xo fika kwihi xa potifoliyo. Siya ndhawu yi ri hava nchumu loko ku nga ri na xikongomelo. Endzhaku ka sweswo app yi ta ku komba leswi u faneleke ku swi xava kumbe ku swi xavisa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Hinkwaswo: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Xava ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Xavisa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Eka xikongomelo';
 }

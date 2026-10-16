@@ -704,6 +704,12 @@ void main() {
     await tester.tap(find.byType(PortfolioSummaryCard));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_phone_hu');
+    // Célarányokkal: mit kellene venni vagy eladni.
+    await s.preferences.setTargets({'OTP': 25, 'AAPL': 25, 'NVDA': 25, 'MSFT': 25});
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const ValueKey('target-MSFT')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_targets_phone_hu');
   });
 
   testWidgets('selling shares on a phone (hungarian)', (tester) async {

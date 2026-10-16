@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Currency",
   "compareReturn1y": "1 ka tuig nga ganansya",
-  "compareFromHigh": "Gikan sa pinakataas sa 52 ka semana"
+  "compareFromHigh": "Gikan sa pinakataas sa 52 ka semana",
+  "briefAutoTitle": "Adlaw-adlaw nga summary matag buntag",
+  "briefAutoSubtitle": "Ang “Karon uban sa imong mga stock” awtomatikong mahimo human sa 7:00 sa buntag samtang nagdagan ang app; sa mga kompyuter, usa ka notipikasyon ang mopahibalo nimo. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.",
+  "targetsButton": "Target nga alokasyon",
+  "targetsTitle": "Target nga alokasyon",
+  "targetsHint": "Itakda kung pila ka bahin sa portfolio ang angay sa matag stock. Biyai nga blangko ang field kung walay target. Unya ipakita sa app kung unsa ang paliton o ibaligya aron makaabot didto.",
+  "targetsSum": "Kinatibuk-an: {percent}",
+  "rebalanceBuy": "Palita ≈ {amount}",
+  "rebalanceSell": "Ibaligya ≈ {amount}",
+  "rebalanceOk": "Naa sa target"
 }

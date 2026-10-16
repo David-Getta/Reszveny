@@ -605,5 +605,14 @@
   "allocationSectors": "Sektori",
   "allocationCurrencies": "Valute",
   "compareReturn1y": "Prinos za 1 godinu",
-  "compareFromHigh": "Od 52-tjednog maksimuma"
+  "compareFromHigh": "Od 52-tjednog maksimuma",
+  "briefAutoTitle": "Dnevni sažetak svako jutro",
+  "briefAutoSubtitle": "„Danas s vašim dionicama“ izrađuje se automatski nakon 7:00 dok aplikacija radi; na računalima stiže obavijest. Troši vaše dnevno ograničenje pitanja, ne analizu.",
+  "targetsButton": "Ciljna raspodjela",
+  "targetsTitle": "Ciljna raspodjela",
+  "targetsHint": "Odredite koliki udio portfelja treba imati svaka dionica. Ostavite polje prazno ako nema cilja. Aplikacija će zatim pokazati što treba kupiti ili prodati da biste to postigli.",
+  "targetsSum": "Ukupno: {percent}",
+  "rebalanceBuy": "Kupi ≈ {amount}",
+  "rebalanceSell": "Prodaj ≈ {amount}",
+  "rebalanceOk": "Na cilju"
 }

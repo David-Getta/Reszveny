@@ -2261,4 +2261,39 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Dari tertinggi 52 minggu';
+
+  @override
+  String get briefAutoTitle => 'Ringkasan harian setiap pagi';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Hari ini dengan saham anda” dibuat secara automatik selepas pukul 7:00 pagi selagi aplikasi berjalan; pada komputer, pemberitahuan akan memaklumkan anda. Menggunakan had soalan harian anda, bukan analisis.';
+
+  @override
+  String get targetsButton => 'Peruntukan sasaran';
+
+  @override
+  String get targetsTitle => 'Peruntukan sasaran';
+
+  @override
+  String get targetsHint =>
+      'Tetapkan bahagian portfolio yang patut dimiliki setiap saham. Biarkan medan kosong jika tiada sasaran. Aplikasi kemudian menunjukkan apa yang perlu dibeli atau dijual untuk mencapainya.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jumlah: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Beli ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Jual ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Menepati sasaran';
 }

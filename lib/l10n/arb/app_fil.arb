@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Currency",
   "compareReturn1y": "1-taong kita",
-  "compareFromHigh": "Mula sa 52-linggong pinakamataas"
+  "compareFromHigh": "Mula sa 52-linggong pinakamataas",
+  "briefAutoTitle": "Pang-araw-araw na buod tuwing umaga",
+  "briefAutoSubtitle": "Awtomatikong ginagawa ang “Ngayon kasama ang iyong mga stock” pagkalipas ng 7:00 ng umaga habang tumatakbo ang app; sa mga computer, may notification na magsasabi sa iyo. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.",
+  "targetsButton": "Target na hatian",
+  "targetsTitle": "Target na hatian",
+  "targetsHint": "Itakda kung gaano kalaking bahagi ng portfolio ang dapat sa bawat stock. Iwanang blangko ang field kung walang target. Ipapakita ng app kung ano ang bibilhin o ibebenta para maabot ito.",
+  "targetsSum": "Kabuuan: {percent}",
+  "rebalanceBuy": "Bumili ≈ {amount}",
+  "rebalanceSell": "Ibenta ≈ {amount}",
+  "rebalanceOk": "Nasa target"
 }

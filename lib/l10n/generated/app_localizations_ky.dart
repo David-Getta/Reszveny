@@ -2259,4 +2259,39 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 жумалык максимумдан аралык';
+
+  @override
+  String get briefAutoTitle => 'Күн сайын эртең менен күнүмдүк корутунду';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Бүгүн акцияларыңыз менен» колдонмо иштеп турганда саат 7:00дөн кийин автоматтык түрдө даярдалат; компьютерлерде бул тууралуу билдирме чыгат. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
+
+  @override
+  String get targetsButton => 'Максаттуу бөлүштүрүү';
+
+  @override
+  String get targetsTitle => 'Максаттуу бөлүштүрүү';
+
+  @override
+  String get targetsHint =>
+      'Ар бир акция портфелдин канча үлүшүн ээлеши керектигин белгилеңиз. Максат жок болсо, талааны бош калтырыңыз. Андан кийин колдонмо ага жетүү үчүн эмнени сатып алуу же сатуу керектигин көрсөтөт.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Бардыгы: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Сатып алуу ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Сатуу ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Максатта';
 }

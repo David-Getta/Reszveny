@@ -605,5 +605,14 @@
   "allocationSectors": "ዘርፍታት",
   "allocationCurrencies": "ባጤራታት",
   "compareReturn1y": "ናይ 1 ዓመት መኽሰብ",
-  "compareFromHigh": "ካብ ናይ 52 ሰሙን ዝለዓለ ርሕቀት"
+  "compareFromHigh": "ካብ ናይ 52 ሰሙን ዝለዓለ ርሕቀት",
+  "briefAutoTitle": "ዕለታዊ ጽማቝ ኩሉ ንግሆ",
+  "briefAutoSubtitle": "«ሎሚ ምስ ኣክስዮናትኩም» እቲ መተግበሪ ክሰርሕ ከሎ ድሕሪ ሰዓት 7:00 ናይ ንግሆ ባዕሉ ይዳሎ፤ ኣብ ኮምፒተራት መልእኽቲ ክሕብረኩም እዩ። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።",
+  "targetsButton": "ዕላማ ምምቕራሕ",
+  "targetsTitle": "ዕላማ ምምቕራሕ",
+  "targetsHint": "ነፍሲ ወከፍ ኣክስዮን ክንደይ ክፋል ፖርትፎልዮ ክህልዎ ከም ዘለዎ ኣቐምጡ። ዕላማ እንተ ዘየለ ቦታ ባዶ ግደፍዎ። ድሕሪኡ እቲ ኣፕ እንታይ ክትዕድጉ ወይ ክትሸጡ ከም ዘለኩም የርእየኩም።",
+  "targetsSum": "ድምር፡ {percent}",
+  "rebalanceBuy": "ዕደግ ≈ {amount}",
+  "rebalanceSell": "ሽጥ ≈ {amount}",
+  "rebalanceOk": "ኣብ ዕላማ"
 }

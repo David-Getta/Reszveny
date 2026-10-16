@@ -2249,4 +2249,39 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'מרחק משיא 52 שבועות';
+
+  @override
+  String get briefAutoTitle => 'סיכום יומי בכל בוקר';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“היום עם המניות שלך” נוצר אוטומטית אחרי 7:00 בבוקר כל עוד האפליקציה פועלת; במחשבים תופיע התראה. נספר במכסת השאלות היומית שלך, לא כניתוח.';
+
+  @override
+  String get targetsButton => 'פיזור יעד';
+
+  @override
+  String get targetsTitle => 'פיזור יעד';
+
+  @override
+  String get targetsHint =>
+      'קבעו איזה חלק מהתיק כל מניה צריכה לתפוס. השאירו שדה ריק אם אין יעד. האפליקציה תציג אז מה לקנות או למכור כדי להגיע לשם.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'סה״כ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'קנייה ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'מכירה ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ביעד';
 }

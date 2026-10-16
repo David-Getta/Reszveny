@@ -2267,4 +2267,39 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ukusuka kweliphezulu leeveki ezi-52';
+
+  @override
+  String get briefAutoTitle => 'Isishwankathelo semihla ngemihla ntsasa nganye';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Namhlanje nezabelo zakho” senziwa ngokuzenzekelayo emva kwe-7:00 kusasa xa i-app isasebenza; kwiikhompyutha, isaziso siya kukwazisa. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
+
+  @override
+  String get targetsButton => 'Ulwabiwo ekujoliswe kulo';
+
+  @override
+  String get targetsTitle => 'Ulwabiwo ekujoliswe kulo';
+
+  @override
+  String get targetsHint =>
+      'Misela ukuba isabelo ngasinye kufuneka sibe nesiqephu esingakanani sepotfoliyo. Shiya indawo ingenanto ukuba akukho njongo. Emva koko i-app iza kubonisa into ofanele uyithenge okanye uyithengise.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Iyonke: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Thenga ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Thengisa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Kwinjongo';
 }

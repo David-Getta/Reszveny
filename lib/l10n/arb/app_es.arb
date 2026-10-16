@@ -605,5 +605,14 @@
   "allocationSectors": "Sectores",
   "allocationCurrencies": "Divisas",
   "compareReturn1y": "Rentabilidad a 1 año",
-  "compareFromHigh": "Desde el máximo de 52 semanas"
+  "compareFromHigh": "Desde el máximo de 52 semanas",
+  "briefAutoTitle": "Resumen diario cada mañana",
+  "briefAutoSubtitle": "«Hoy con tus acciones» se crea automáticamente después de las 7:00 mientras la app está en ejecución; en los ordenadores te avisa una notificación. Usa tu límite diario de preguntas, no un análisis.",
+  "targetsButton": "Distribución objetivo",
+  "targetsTitle": "Distribución objetivo",
+  "targetsHint": "Indica qué parte de la cartera debe tener cada acción. Deja el campo vacío si no hay objetivo. La app te mostrará qué comprar o vender para llegar ahí.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Comprar ≈ {amount}",
+  "rebalanceSell": "Vender ≈ {amount}",
+  "rebalanceOk": "En objetivo"
 }

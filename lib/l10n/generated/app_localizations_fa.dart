@@ -2253,4 +2253,39 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'فاصله از بیشترین قیمت 52 هفته';
+
+  @override
+  String get briefAutoTitle => 'خلاصهٔ روزانه هر صبح';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«امروز با سهام شما» تا وقتی برنامه در حال اجراست، بعد از ساعت 7:00 صبح خودکار ساخته می‌شود؛ در رایانه‌ها یک اعلان به شما خبر می‌دهد. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
+
+  @override
+  String get targetsButton => 'ترکیب هدف';
+
+  @override
+  String get targetsTitle => 'ترکیب هدف';
+
+  @override
+  String get targetsHint =>
+      'مشخص کنید هر سهم چه سهمی از سبد داشته باشد. برای نداشتن هدف، فیلد را خالی بگذارید. سپس برنامه نشان می‌دهد برای رسیدن به آن چه باید بخرید یا بفروشید.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'مجموع: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'خرید ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'فروش ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'مطابق هدف';
 }

@@ -2256,4 +2256,39 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 hepdäniň iň ýokarysyndan aralyk';
+
+  @override
+  String get briefAutoTitle => 'Her irden gündelik jemleme';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Şu gün paýnamalaryňyz bilen” programma işläp durka sagat 7:00-dan soň awtomatik taýýarlanýar; kompýuterlerde bildiriş size habar berer. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
+
+  @override
+  String get targetsButton => 'Maksatly paýlanyş';
+
+  @override
+  String get targetsTitle => 'Maksatly paýlanyş';
+
+  @override
+  String get targetsHint =>
+      'Her paýnamanyň portfeliň näçe paýyny eýelemelidigini belläň. Maksat ýok bolsa, meýdany boş goýuň. Soňra programma oňa ýetmek üçin näme satyn almalydygyny ýa-da satmalydygyny görkezer.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jemi: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Satyn al ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sat ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Maksada laýyk';
 }

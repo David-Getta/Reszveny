@@ -2265,4 +2265,39 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Από το υψηλό 52 εβδομάδων';
+
+  @override
+  String get briefAutoTitle => 'Ημερήσια σύνοψη κάθε πρωί';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Το «Σήμερα με τις μετοχές σας» δημιουργείται αυτόματα μετά τις 7:00 π.μ. όσο η εφαρμογή εκτελείται· στους υπολογιστές θα ενημερωθείτε με μια ειδοποίηση. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
+
+  @override
+  String get targetsButton => 'Στόχος κατανομής';
+
+  @override
+  String get targetsTitle => 'Στόχος κατανομής';
+
+  @override
+  String get targetsHint =>
+      'Ορίστε τι μερίδιο του χαρτοφυλακίου πρέπει να έχει κάθε μετοχή. Αφήστε το πεδίο κενό για κανέναν στόχο. Η εφαρμογή θα δείξει έπειτα τι πρέπει να αγοράσετε ή να πουλήσετε για να φτάσετε εκεί.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Σύνολο: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Αγορά ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Πώληση ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Εντός στόχου';
 }

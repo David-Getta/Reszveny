@@ -605,5 +605,14 @@
   "allocationSectors": "Sectors",
   "allocationCurrencies": "Divises",
   "compareReturn1y": "Rendiment a 1 any",
-  "compareFromHigh": "Des del màxim de 52 setmanes"
+  "compareFromHigh": "Des del màxim de 52 setmanes",
+  "briefAutoTitle": "Resum diari cada matí",
+  "briefAutoSubtitle": "«Avui amb les teves accions» es crea automàticament després de les 7:00 mentre l’app està en marxa; als ordinadors t’ho indica una notificació. Fa servir el teu límit diari de preguntes, no una anàlisi.",
+  "targetsButton": "Distribució objectiu",
+  "targetsTitle": "Distribució objectiu",
+  "targetsHint": "Indica quina part de la cartera ha de tenir cada acció. Deixa el camp buit si no hi ha objectiu. L'app et mostrarà què has de comprar o vendre per arribar-hi.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Compra ≈ {amount}",
+  "rebalanceSell": "Ven ≈ {amount}",
+  "rebalanceOk": "A l'objectiu"
 }

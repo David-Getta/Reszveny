@@ -2317,4 +2317,39 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ад максімуму за 52 тыдні';
+
+  @override
+  String get briefAutoTitle => 'Штодзённая зводка кожную раніцу';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Сёння з вашымі акцыямі» ствараецца аўтаматычна пасля 7:00, пакуль праграма працуе; на камп’ютарах пра гэта паведаміць апавяшчэнне. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
+
+  @override
+  String get targetsButton => 'Мэтавае размеркаванне';
+
+  @override
+  String get targetsTitle => 'Мэтавае размеркаванне';
+
+  @override
+  String get targetsHint =>
+      'Укажыце, якую долю партфеля павінна займаць кожная акцыя. Пакіньце поле пустым, калі мэты няма. Пасля праграма пакажа, што трэба купіць або прадаць, каб гэтага дасягнуць.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Разам: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Купіць ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Прадаць ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Адпавядае мэце';
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Magawo",
   "allocationCurrencies": "Ndalama",
   "compareReturn1y": "Phindu la chaka 1",
-  "compareFromHigh": "Kuchokera pamwamba pa masabata 52"
+  "compareFromHigh": "Kuchokera pamwamba pa masabata 52",
+  "briefAutoTitle": "Chidule cha tsiku ndi tsiku m’mawa uliwonse",
+  "briefAutoSubtitle": "“Lero ndi masheya anu” chimapangidwa chokha pambuyo pa 7:00 m’mawa pamene pulogalamuyo ikugwira ntchito; pa makompyuta, chidziwitso chidzakuuzani. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.",
+  "targetsButton": "Kagawidwe kofunidwa",
+  "targetsTitle": "Kagawidwe kofunidwa",
+  "targetsHint": "Ikani gawo la potifoliyo lomwe sheya iliyonse iyenera kukhala nalo. Siyani malo opanda kanthu ngati palibe cholinga. Pulogalamuyo idzakuwonetsani zomwe mungagule kapena kugulitsa.",
+  "targetsSum": "Zonse: {percent}",
+  "rebalanceBuy": "Gulani ≈ {amount}",
+  "rebalanceSell": "Gulitsani ≈ {amount}",
+  "rebalanceOk": "Pa cholinga"
 }

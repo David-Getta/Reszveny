@@ -605,5 +605,14 @@
   "allocationSectors": "Sektörler",
   "allocationCurrencies": "Dövizler",
   "compareReturn1y": "1 yıllık getiri",
-  "compareFromHigh": "52 haftalık en yüksekten uzaklık"
+  "compareFromHigh": "52 haftalık en yüksekten uzaklık",
+  "briefAutoTitle": "Her sabah günlük özet",
+  "briefAutoSubtitle": "“Bugün hisselerinle”, uygulama çalıştığı sürece saat 7.00’den sonra otomatik olarak hazırlanır; bilgisayarlarda bir bildirim seni haberdar eder. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
+  "targetsButton": "Hedef dağılım",
+  "targetsTitle": "Hedef dağılım",
+  "targetsHint": "Her hissenin portföyde ne kadar pay alması gerektiğini belirleyin. Hedef yoksa alanı boş bırakın. Uygulama ardından hedefe ulaşmak için neyi alıp satmanız gerektiğini gösterir.",
+  "targetsSum": "Toplam: {percent}",
+  "rebalanceBuy": "Al ≈ {amount}",
+  "rebalanceSell": "Sat ≈ {amount}",
+  "rebalanceOk": "Hedefte"
 }

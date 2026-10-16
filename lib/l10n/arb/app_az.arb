@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorlar",
   "allocationCurrencies": "Valyutalar",
   "compareReturn1y": "1 illik gəlirlilik",
-  "compareFromHigh": "52 həftəlik maksimumdan məsafə"
+  "compareFromHigh": "52 həftəlik maksimumdan məsafə",
+  "briefAutoTitle": "Hər səhər gündəlik xülasə",
+  "briefAutoSubtitle": "«Bu gün səhmlərinizlə» tətbiq işlədikcə saat 7:00-dan sonra avtomatik hazırlanır; kompüterlərdə bildiriş sizə xəbər verir. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
+  "targetsButton": "Hədəf bölgüsü",
+  "targetsTitle": "Hədəf bölgüsü",
+  "targetsHint": "Hər səhmin portfelin hansı payını tutmalı olduğunu təyin edin. Hədəf yoxdursa, sahəni boş saxlayın. Tətbiq sonra ora çatmaq üçün nəyi almaq və ya satmaq lazım olduğunu göstərəcək.",
+  "targetsSum": "Cəmi: {percent}",
+  "rebalanceBuy": "Al ≈ {amount}",
+  "rebalanceSell": "Sat ≈ {amount}",
+  "rebalanceOk": "Hədəfdə"
 }

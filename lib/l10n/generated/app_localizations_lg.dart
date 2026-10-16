@@ -2267,4 +2267,39 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Okuva ku waggulu mu wiiki 52';
+
+  @override
+  String get briefAutoTitle => 'Ebifunze bya buli lunaku buli ku makya';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Leero ne sitoowa zo” kyekolera kyokka oluvannyuma lwa 7:00 ku makya nga app ekola; ku kompyuta, obubaka bujja kukutegeeza. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
+
+  @override
+  String get targetsButton => 'Engabanya ey\'ekigendererwa';
+
+  @override
+  String get targetsTitle => 'Engabanya ey\'ekigendererwa';
+
+  @override
+  String get targetsHint =>
+      'Teekawo kitundu ki ekya portfolio buli mugabo kye gulina okuba nakyo. Leka ekifo nga kikalu bwe wataba kigendererwa. Oluvannyuma app ejja kukulaga ky\'olina okugula oba okutunda okutuuka eyo.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Byonna awamu: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Gula ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Tunda ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Kituuse ku kigendererwa';
 }

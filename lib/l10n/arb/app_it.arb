@@ -605,5 +605,14 @@
   "allocationSectors": "Settori",
   "allocationCurrencies": "Valute",
   "compareReturn1y": "Rendimento a 1 anno",
-  "compareFromHigh": "Distanza dal massimo a 52 settimane"
+  "compareFromHigh": "Distanza dal massimo a 52 settimane",
+  "briefAutoTitle": "Riepilogo giornaliero ogni mattina",
+  "briefAutoSubtitle": "«Oggi con le tue azioni» viene creato automaticamente dopo le 7:00 mentre l’app è in esecuzione; sui computer te lo segnala una notifica. Usa il tuo limite giornaliero di domande, non un’analisi.",
+  "targetsButton": "Ripartizione obiettivo",
+  "targetsTitle": "Ripartizione obiettivo",
+  "targetsHint": "Imposta quale quota del portafoglio deve avere ogni azione. Lascia il campo vuoto per nessun obiettivo. L'app mostrerà poi cosa comprare o vendere per arrivarci.",
+  "targetsSum": "Totale: {percent}",
+  "rebalanceBuy": "Compra ≈ {amount}",
+  "rebalanceSell": "Vendi ≈ {amount}",
+  "rebalanceOk": "In linea"
 }

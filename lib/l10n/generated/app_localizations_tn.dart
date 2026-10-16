@@ -2271,4 +2271,40 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Go tswa mo bogodimong jwa dibeke di le 52';
+
+  @override
+  String get briefAutoTitle =>
+      'Tshosobanyo ya letsatsi le letsatsi mo mosong mongwe le mongwe';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Gompieno le dishere tsa gago” e itirela ka boyone morago ga 7:00 mo mosong fa app e ntse e dira; mo dikhomputareng, kitsiso e tla go itsise. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
+
+  @override
+  String get targetsButton => 'Kabo e e batlwang';
+
+  @override
+  String get targetsTitle => 'Kabo e e batlwang';
+
+  @override
+  String get targetsHint =>
+      'Tlhoma gore sere sengwe le sengwe se tshwanetse go nna le karolo e kae ya potefolio. Tlogela lefelo le le lolea fa go se na maikaelelo. Morago app e tla go bontsha se o tshwanetseng go se reka kgotsa go se rekisa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Palogotlhe: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Reka ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Rekisa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Mo maikaelelong';
 }

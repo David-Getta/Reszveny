@@ -2263,4 +2263,39 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Mula sa 52-linggong pinakamataas';
+
+  @override
+  String get briefAutoTitle => 'Pang-araw-araw na buod tuwing umaga';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Awtomatikong ginagawa ang “Ngayon kasama ang iyong mga stock” pagkalipas ng 7:00 ng umaga habang tumatakbo ang app; sa mga computer, may notification na magsasabi sa iyo. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
+
+  @override
+  String get targetsButton => 'Target na hatian';
+
+  @override
+  String get targetsTitle => 'Target na hatian';
+
+  @override
+  String get targetsHint =>
+      'Itakda kung gaano kalaking bahagi ng portfolio ang dapat sa bawat stock. Iwanang blangko ang field kung walang target. Ipapakita ng app kung ano ang bibilhin o ibebenta para maabot ito.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Kabuuan: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Bumili ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ibenta ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Nasa target';
 }

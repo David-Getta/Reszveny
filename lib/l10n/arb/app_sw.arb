@@ -605,5 +605,14 @@
   "allocationSectors": "Sekta",
   "allocationCurrencies": "Sarafu",
   "compareReturn1y": "Faida ya mwaka 1",
-  "compareFromHigh": "Kutoka juu ya wiki 52"
+  "compareFromHigh": "Kutoka juu ya wiki 52",
+  "briefAutoTitle": "Muhtasari wa kila siku kila asubuhi",
+  "briefAutoSubtitle": "“Leo na hisa zako” huandaliwa kiotomatiki baada ya 7:00 asubuhi wakati programu inaendelea kufanya kazi; kwenye kompyuta, arifa itakujulisha. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.",
+  "targetsButton": "Mgawanyo lengwa",
+  "targetsTitle": "Mgawanyo lengwa",
+  "targetsHint": "Weka sehemu ya jalada ambayo kila hisa inapaswa kuwa nayo. Acha sehemu wazi ikiwa hakuna lengo. Kisha programu itaonyesha cha kununua au kuuza ili kufika hapo.",
+  "targetsSum": "Jumla: {percent}",
+  "rebalanceBuy": "Nunua ≈ {amount}",
+  "rebalanceSell": "Uza ≈ {amount}",
+  "rebalanceOk": "Imefikia lengo"
 }

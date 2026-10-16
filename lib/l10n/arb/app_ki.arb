@@ -605,5 +605,14 @@
   "allocationSectors": "Sekta",
   "allocationCurrencies": "Mbeca",
   "compareReturn1y": "Uumithio wa mwaka 1",
-  "compareFromHigh": "Kuuma thogora wa igũrũ mũno (ciumia 52)"
+  "compareFromHigh": "Kuuma thogora wa igũrũ mũno (ciumia 52)",
+  "briefAutoTitle": "Ũhoro mũkuhĩ wa o mũthenya o rũciinĩ",
+  "briefAutoSubtitle": "“Ũmũthĩ na hisa ciaku” ĩthondekaga yo nyene thutha wa 7:00 rũciinĩ rĩrĩa app ĩrarũta wĩra; kombiuta-inĩ, ũhoro wa kũmenyithia nĩ ũgũkwĩra. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
+  "targetsButton": "Ũgayanio wa muoroto",
+  "targetsTitle": "Ũgayanio wa muoroto",
+  "targetsHint": "Ĩkĩra gĩcunjĩ kĩa portfolio kĩrĩa o hisa ĩmwe yagĩrĩirũo nĩ kũgĩa nakĩo. Tiga handũ hau hatarĩ kĩndũ angĩkorwo ndũrĩ na muoroto. Thuutha ũcio app nĩĩkuonania kĩrĩa ũgũthogora kana wendie nĩguo ũkinye hau.",
+  "targetsSum": "Hamwe: {percent}",
+  "rebalanceBuy": "Gũra ≈ {amount}",
+  "rebalanceSell": "Endia ≈ {amount}",
+  "rebalanceOk": "Nĩ gũkinyĩte muoroto"
 }

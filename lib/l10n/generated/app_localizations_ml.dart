@@ -2265,4 +2265,39 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 ആഴ്ചയിലെ ഉയർന്ന നിലയിൽ നിന്നുള്ള അകലം';
+
+  @override
+  String get briefAutoTitle => 'എല്ലാ രാവിലെയും ദൈനംദിന സംഗ്രഹം';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ആപ്പ് പ്രവർത്തിക്കുമ്പോൾ രാവിലെ 7:00-ന് ശേഷം “ഇന്ന് നിങ്ങളുടെ ഓഹരികളോടൊപ്പം” സ്വയമേവ തയ്യാറാകും; കമ്പ്യൂട്ടറുകളിൽ ഒരു അറിയിപ്പ് നിങ്ങളെ അറിയിക്കും. ഇത് നിങ്ങളുടെ ദൈനംദിന ചോദ്യ പരിധിയിൽ നിന്നാണ്, വിശകലനം ഉപയോഗിക്കില്ല.';
+
+  @override
+  String get targetsButton => 'ലക്ഷ്യ വിന്യാസം';
+
+  @override
+  String get targetsTitle => 'ലക്ഷ്യ വിന്യാസം';
+
+  @override
+  String get targetsHint =>
+      'പോർട്ട്ഫോളിയോയിൽ ഓരോ ഓഹരിക്കും എത്ര പങ്ക് വേണമെന്ന് സജ്ജമാക്കുക. ലക്ഷ്യമില്ലെങ്കിൽ ഫീൽഡ് ശൂന്യമായി വിടുക. അവിടെ എത്താൻ എന്ത് വാങ്ങണം അല്ലെങ്കിൽ വിൽക്കണം എന്ന് ആപ്പ് കാണിക്കും.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ആകെ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'വാങ്ങുക ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'വിൽക്കുക ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ലക്ഷ്യത്തിൽ';
 }

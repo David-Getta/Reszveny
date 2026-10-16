@@ -2266,4 +2266,39 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-வார உச்சத்திலிருந்து தூரம்';
+
+  @override
+  String get briefAutoTitle => 'ஒவ்வொரு காலையும் தினசரி சுருக்கம்';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ஆப் இயங்கும்போது காலை 7:00 மணிக்குப் பிறகு “இன்று உங்கள் பங்குகளுடன்” தானாகவே தயாராகும்; கணினிகளில் ஓர் அறிவிப்பு உங்களுக்குத் தெரிவிக்கும். இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
+
+  @override
+  String get targetsButton => 'இலக்கு பங்கீடு';
+
+  @override
+  String get targetsTitle => 'இலக்கு பங்கீடு';
+
+  @override
+  String get targetsHint =>
+      'ஒவ்வொரு பங்கும் போர்ட்ஃபோலியோவில் எவ்வளவு பங்கு பெற வேண்டும் என அமைக்கவும். இலக்கு இல்லையெனில் புலத்தைக் காலியாக விடவும். பின்னர் அங்கு செல்ல என்ன வாங்க அல்லது விற்க வேண்டும் என்பதை ஆப் காட்டும்.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'மொத்தம்: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'வாங்கு ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'விற் ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'இலக்கில்';
 }

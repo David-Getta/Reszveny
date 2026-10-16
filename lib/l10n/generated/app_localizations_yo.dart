@@ -2255,4 +2255,39 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Láti ga jùlọ ní ọ̀sẹ̀ 52';
+
+  @override
+  String get briefAutoTitle => 'Àkópọ̀ ojoojúmọ́ ní òwúrọ̀ kọ̀ọ̀kan';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Lónìí pẹ̀lú àwọn ìpín rẹ” máa ń ṣe ara rẹ̀ lẹ́yìn 7:00 òwúrọ̀ nígbà tí áàpù náà bá ń ṣiṣẹ́; lórí kọ̀ǹpútà, ìfitónilétí kan yóò sọ fún ọ. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String get targetsButton => 'Ìpínkiri àfojúsùn';
+
+  @override
+  String get targetsTitle => 'Ìpínkiri àfojúsùn';
+
+  @override
+  String get targetsHint =>
+      'Ṣètò iye ìpín àpò-ìdókòwò tí ìpín kọ̀ọ̀kan yẹ kí ó ní. Fi àyè sílẹ̀ ní òfo bí kò bá sí àfojúsùn. Lẹ́yìn náà áàpù yóò fi ohun tí o yẹ kí o rà tàbí tà hàn.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Àpapọ̀: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Rà á ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Tà á ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ó wà ní àfojúsùn';
 }

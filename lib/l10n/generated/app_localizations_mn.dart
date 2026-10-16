@@ -2257,4 +2257,39 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 долоо хоногийн дээдээс зай';
+
+  @override
+  String get briefAutoTitle => 'Өглөө бүр өдрийн тойм';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Өнөөдөр таны хувьцаатай» нь апп ажиллаж байх үед 7:00 цагаас хойш автоматаар бэлтгэгдэнэ; компьютер дээр мэдэгдлээр танд мэдэгдэнэ. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
+
+  @override
+  String get targetsButton => 'Зорилтот хуваарилалт';
+
+  @override
+  String get targetsTitle => 'Зорилтот хуваарилалт';
+
+  @override
+  String get targetsHint =>
+      'Хувьцаа бүр багцын хэдэн хувийг эзлэх ёстойг тохируулна уу. Зорилт байхгүй бол талбарыг хоосон үлдээнэ үү. Дараа нь апп юу худалдан авах эсвэл зарахыг харуулна.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Нийт: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Авах ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Зарах ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Зорилтод хүрсэн';
 }

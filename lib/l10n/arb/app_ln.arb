@@ -605,5 +605,14 @@
   "allocationSectors": "Ba-secteur",
   "allocationCurrencies": "Mbɔngɔ",
   "compareReturn1y": "Litomba ya mbula 1",
-  "compareFromHigh": "Uta likolo ya pɔsɔ 52"
+  "compareFromHigh": "Uta likolo ya pɔsɔ 52",
+  "briefAutoTitle": "Bokuse ya mokolo na mokolo ntɔngɔ nyonso",
+  "briefAutoSubtitle": "“Lelo na misolo na yo” esalemaka yango moko nsima ya 7:00 ya ntɔngɔ ntango application ezali kosala; na baordinatɛrɛ, liyebisi moko ekoyebisa yo. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
+  "targetsButton": "Bokaboli ya mokano",
+  "targetsTitle": "Bokaboli ya mokano",
+  "targetsHint": "Tyá ndambo ya portfolio oyo action moko na moko esengeli kozala na yango. Tiká esika mpamba soki mokano ezali te. Na sima, app ekolakisa nini osengeli kosomba to koteka mpo na kokóma kuna.",
+  "targetsSum": "Nyonso: {percent}",
+  "rebalanceBuy": "Somba ≈ {amount}",
+  "rebalanceSell": "Teka ≈ {amount}",
+  "rebalanceOk": "Ekoki mokano"
 }

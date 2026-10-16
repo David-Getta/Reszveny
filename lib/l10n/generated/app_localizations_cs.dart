@@ -2313,4 +2313,39 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Od 52týdenního maxima';
+
+  @override
+  String get briefAutoTitle => 'Denní shrnutí každé ráno';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Dnes s vašimi akciemi“ se vytvoří automaticky po 7:00, dokud aplikace běží; na počítačích vás upozorní oznámení. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
+
+  @override
+  String get targetsButton => 'Cílové rozložení';
+
+  @override
+  String get targetsTitle => 'Cílové rozložení';
+
+  @override
+  String get targetsHint =>
+      'Nastavte, jaký podíl portfolia má mít každá akcie. Pokud cíl nechcete, nechte pole prázdné. Aplikace pak ukáže, co je potřeba koupit nebo prodat, abyste ho dosáhli.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Celkem: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Koupit ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Prodat ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Odpovídá cíli';
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Amacandelo",
   "allocationCurrencies": "Iimali",
   "compareReturn1y": "Imbuyekezo yonyaka o-1",
-  "compareFromHigh": "Ukusuka kweliphezulu leeveki ezi-52"
+  "compareFromHigh": "Ukusuka kweliphezulu leeveki ezi-52",
+  "briefAutoTitle": "Isishwankathelo semihla ngemihla ntsasa nganye",
+  "briefAutoSubtitle": "“Namhlanje nezabelo zakho” senziwa ngokuzenzekelayo emva kwe-7:00 kusasa xa i-app isasebenza; kwiikhompyutha, isaziso siya kukwazisa. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
+  "targetsButton": "Ulwabiwo ekujoliswe kulo",
+  "targetsTitle": "Ulwabiwo ekujoliswe kulo",
+  "targetsHint": "Misela ukuba isabelo ngasinye kufuneka sibe nesiqephu esingakanani sepotfoliyo. Shiya indawo ingenanto ukuba akukho njongo. Emva koko i-app iza kubonisa into ofanele uyithenge okanye uyithengise.",
+  "targetsSum": "Iyonke: {percent}",
+  "rebalanceBuy": "Thenga ≈ {amount}",
+  "rebalanceSell": "Thengisa ≈ {amount}",
+  "rebalanceOk": "Kwinjongo"
 }

@@ -2219,4 +2219,39 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'ካብ ናይ 52 ሰሙን ዝለዓለ ርሕቀት';
+
+  @override
+  String get briefAutoTitle => 'ዕለታዊ ጽማቝ ኩሉ ንግሆ';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«ሎሚ ምስ ኣክስዮናትኩም» እቲ መተግበሪ ክሰርሕ ከሎ ድሕሪ ሰዓት 7:00 ናይ ንግሆ ባዕሉ ይዳሎ፤ ኣብ ኮምፒተራት መልእኽቲ ክሕብረኩም እዩ። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
+
+  @override
+  String get targetsButton => 'ዕላማ ምምቕራሕ';
+
+  @override
+  String get targetsTitle => 'ዕላማ ምምቕራሕ';
+
+  @override
+  String get targetsHint =>
+      'ነፍሲ ወከፍ ኣክስዮን ክንደይ ክፋል ፖርትፎልዮ ክህልዎ ከም ዘለዎ ኣቐምጡ። ዕላማ እንተ ዘየለ ቦታ ባዶ ግደፍዎ። ድሕሪኡ እቲ ኣፕ እንታይ ክትዕድጉ ወይ ክትሸጡ ከም ዘለኩም የርእየኩም።';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ድምር፡ $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ዕደግ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ሽጥ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ኣብ ዕላማ';
 }

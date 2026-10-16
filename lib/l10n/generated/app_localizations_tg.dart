@@ -2258,4 +2258,39 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Аз баландтарин дар 52 ҳафта';
+
+  @override
+  String get briefAutoTitle => 'Хулосаи ҳаррӯза ҳар саҳар';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Имрӯз бо саҳмияҳои шумо» то даме ки барнома кор мекунад, баъд аз соати 7:00 худкор омода мешавад; дар компютерҳо огоҳинома шуморо хабардор мекунад. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
+
+  @override
+  String get targetsButton => 'Тақсимоти мақсаднок';
+
+  @override
+  String get targetsTitle => 'Тақсимоти мақсаднок';
+
+  @override
+  String get targetsHint =>
+      'Муайян кунед, ки ҳар саҳмия бояд чӣ қадар ҳиссаи портфелро дошта бошад. Агар мақсад набошад, майдонро холӣ гузоред. Сипас барнома нишон медиҳад, ки барои расидан ба он чӣ харидан ё фурӯхтан лозим аст.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Ҳамагӣ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Харид ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Фурӯш ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Мувофиқи мақсад';
 }

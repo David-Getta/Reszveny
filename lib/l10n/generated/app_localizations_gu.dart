@@ -2252,4 +2252,39 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-સપ્તાહની ઊંચી સપાટીથી અંતર';
+
+  @override
+  String get briefAutoTitle => 'દરરોજ સવારે દૈનિક સારાંશ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ઍપ ચાલુ હોય ત્યારે સવારે 7:00 વાગ્યા પછી “આજે તમારા શેર સાથે” આપમેળે તૈયાર થાય છે; કમ્પ્યુટર પર એક સૂચના તમને જાણ કરે છે. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String get targetsButton => 'લક્ષ્ય ફાળવણી';
+
+  @override
+  String get targetsTitle => 'લક્ષ્ય ફાળવણી';
+
+  @override
+  String get targetsHint =>
+      'પોર્ટફોલિયોમાં દરેક શેરનો કેટલો હિસ્સો હોવો જોઈએ તે નક્કી કરો. લક્ષ્ય ન હોય તો ખાનું ખાલી રાખો. પછી ઍપ બતાવશે કે ત્યાં પહોંચવા શું ખરીદવું કે વેચવું.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'કુલ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ખરીદો ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'વેચો ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'લક્ષ્ય પર';
 }

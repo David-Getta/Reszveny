@@ -605,5 +605,14 @@
   "allocationSectors": "Dameewwan",
   "allocationCurrencies": "Maallaqa",
   "compareReturn1y": "Bu'aa waggaa 1",
-  "compareFromHigh": "Ol'aanaa torban 52 irraa fageenya"
+  "compareFromHigh": "Ol'aanaa torban 52 irraa fageenya",
+  "briefAutoTitle": "Cuunfaa guyyaa ganama hunda",
+  "briefAutoSubtitle": "“Har’a aksiyoonota kee waliin” yeroo appiin hojjechaa jirutti 7:00 ganamaa booda ofumaan qophaa’a; kompiitara irratti beeksisni sitti hima. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.",
+  "targetsButton": "Qoqqoodinsa galmaa",
+  "targetsTitle": "Qoqqoodinsa galmaa",
+  "targetsHint": "Aksiyoonni tokkoon tokkoon isaa qooda poortfooliyoo hammam qabaachuu akka qabu murteessi. Galmi yoo hin jiraanne dirree duwwaa dhiisi. Appichi booda maal bituu ykn gurguruu akka qabdu si agarsiisa.",
+  "targetsSum": "Waliigala: {percent}",
+  "rebalanceBuy": "Bitadhu ≈ {amount}",
+  "rebalanceSell": "Gurguri ≈ {amount}",
+  "rebalanceOk": "Galma irra"
 }

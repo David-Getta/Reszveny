@@ -2266,4 +2266,39 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Des del màxim de 52 setmanes';
+
+  @override
+  String get briefAutoTitle => 'Resum diari cada matí';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Avui amb les teves accions» es crea automàticament després de les 7:00 mentre l’app està en marxa; als ordinadors t’ho indica una notificació. Fa servir el teu límit diari de preguntes, no una anàlisi.';
+
+  @override
+  String get targetsButton => 'Distribució objectiu';
+
+  @override
+  String get targetsTitle => 'Distribució objectiu';
+
+  @override
+  String get targetsHint =>
+      'Indica quina part de la cartera ha de tenir cada acció. Deixa el camp buit si no hi ha objectiu. L\'app et mostrarà què has de comprar o vendre per arribar-hi.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Compra ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ven ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'A l\'objectiu';
 }

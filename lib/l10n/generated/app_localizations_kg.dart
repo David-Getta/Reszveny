@@ -2264,4 +2264,39 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Katuka na ntalu ya zulu ya lumingu 52';
+
+  @override
+  String get briefAutoTitle => 'Nsoki ya konso kilumbu konso suka';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Bubu ti bisikisu na nge” ke salamaka yo mosi na nima ya 7:00 ya suka ntangu application ke sala; na baordinatere, nsangu mosi ta zabisa nge. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
+
+  @override
+  String get targetsButton => 'Nkabulu ya lukanu';
+
+  @override
+  String get targetsTitle => 'Nkabulu ya lukanu';
+
+  @override
+  String get targetsHint =>
+      'Tula ndambu ya portfolio yina konso action fwete baka. Bika kisika mpamba kana lukanu kele ve. Na nima, app ta monisa nki ya kusumba to ya kuteka sambu na kukuma kuna.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Yonso: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Sumba ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Teka ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Na lukanu';
 }

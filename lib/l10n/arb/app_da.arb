@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorer",
   "allocationCurrencies": "Valutaer",
   "compareReturn1y": "1-års afkast",
-  "compareFromHigh": "Fra 52-ugers højeste"
+  "compareFromHigh": "Fra 52-ugers højeste",
+  "briefAutoTitle": "Dagligt resumé hver morgen",
+  "briefAutoSubtitle": "“I dag med dine aktier” laves automatisk efter kl. 7.00, mens appen kører; på computere giver en notifikation dig besked. Det bruger af din daglige spørgsmålskvote, ikke en analyse.",
+  "targetsButton": "Målfordeling",
+  "targetsTitle": "Målfordeling",
+  "targetsHint": "Angiv, hvor stor en andel af porteføljen hver aktie skal have. Lad feltet stå tomt for intet mål. Appen viser derefter, hvad du skal købe eller sælge for at nå dertil.",
+  "targetsSum": "I alt: {percent}",
+  "rebalanceBuy": "Køb ≈ {amount}",
+  "rebalanceSell": "Sælg ≈ {amount}",
+  "rebalanceOk": "På mål"
 }

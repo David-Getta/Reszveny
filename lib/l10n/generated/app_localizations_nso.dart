@@ -2271,4 +2271,39 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Go tšwa go ya godimo ya dibeke tše 52';
+
+  @override
+  String get briefAutoTitle => 'Kakaretšo ya letšatši ka letšatši mesong yohle';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Lehono le dišere tša gago” e dirwa ka boyona ka morago ga 7:00 mesong ge app e šoma; dikhomphuthareng, tsebišo e tla go tsebiša. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
+
+  @override
+  String get targetsButton => 'Kabo ya nepo';
+
+  @override
+  String get targetsTitle => 'Kabo ya nepo';
+
+  @override
+  String get targetsHint =>
+      'Bea gore šere ye nngwe le ye nngwe e swanetše go ba le karolo ye kae ya potefolio. Tlogela lepokisi le se na selo ge go se na nepo. Ka morago app e tla bontšha seo o swanetšego go se reka goba go se rekiša.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Palomoka: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Reka ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Rekiša ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Go nepo';
 }

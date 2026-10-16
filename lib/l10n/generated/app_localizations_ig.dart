@@ -2252,4 +2252,39 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Site na kachasị elu n\'izu 52';
+
+  @override
+  String get briefAutoTitle => 'Nchịkọta kwa ụbọchị kwa ụtụtụ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'A na-eme “Taa na ngwa ahịa gị” na-akpaghị aka mgbe elekere 7:00 nke ụtụtụ gachara ka ngwa ahụ na-arụ ọrụ; na kọmputa, ọkwa ga-agwa gị. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String get targetsButton => 'Nkesa ebumnuche';
+
+  @override
+  String get targetsTitle => 'Nkesa ebumnuche';
+
+  @override
+  String get targetsHint =>
+      'Debe òkè nke pọtụfoliyo nke òkè ọ bụla kwesịrị inwe. Hapụ oghere ahụ efu ma ọ bụrụ na ebumnuche adịghị. Mgbe ahụ ngwa ahụ ga-egosi ihe ị ga-azụ ma ọ bụ ree iji ruo ebe ahụ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Ngụkọta: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Zụta ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ree ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ọ ruru ebumnuche';
 }

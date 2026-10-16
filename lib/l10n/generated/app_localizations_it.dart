@@ -2262,4 +2262,39 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Distanza dal massimo a 52 settimane';
+
+  @override
+  String get briefAutoTitle => 'Riepilogo giornaliero ogni mattina';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Oggi con le tue azioni» viene creato automaticamente dopo le 7:00 mentre l’app è in esecuzione; sui computer te lo segnala una notifica. Usa il tuo limite giornaliero di domande, non un’analisi.';
+
+  @override
+  String get targetsButton => 'Ripartizione obiettivo';
+
+  @override
+  String get targetsTitle => 'Ripartizione obiettivo';
+
+  @override
+  String get targetsHint =>
+      'Imposta quale quota del portafoglio deve avere ogni azione. Lascia il campo vuoto per nessun obiettivo. L\'app mostrerà poi cosa comprare o vendere per arrivarci.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Totale: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Compra ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Vendi ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'In linea';
 }

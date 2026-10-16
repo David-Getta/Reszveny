@@ -2255,4 +2255,39 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Si afellay n 52 n yimalasen';
+
+  @override
+  String get briefAutoTitle => 'Agzul n yal ass yal taṣebḥit';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Ass-a d tigemmi-k» yettwaxdam s wudem awurman deffir 7:00 n tṣebḥit mi ara yeddu wesnas; ɣef yiselkimen, yiwen n ulɣu ad k-yessalel. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
+
+  @override
+  String get targetsButton => 'Beṭṭu n yiswi';
+
+  @override
+  String get targetsTitle => 'Beṭṭu n yiswi';
+
+  @override
+  String get targetsHint =>
+      'Sbadu acḥal n uḥric seg upurtfulyu ara yesεu yal iksyun. Eǧǧ urti d ilem ma ulac iswi. Syin asnas ad ak-d-yesken d acu ara taɣeḍ neɣ ara tzenzeḍ akken ad tawḍeḍ ɣer din.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Asemday: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Aɣ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Zenz ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Deg yiswi';
 }

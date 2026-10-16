@@ -2320,4 +2320,39 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'От максимума за 52 недели';
+
+  @override
+  String get briefAutoTitle => 'Ежедневная сводка каждое утро';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Сегодня с вашими акциями» создаётся автоматически после 7:00, пока приложение запущено; на компьютерах об этом сообщит уведомление. Расходуется дневной лимит вопросов, а не анализ.';
+
+  @override
+  String get targetsButton => 'Целевая структура';
+
+  @override
+  String get targetsTitle => 'Целевая структура';
+
+  @override
+  String get targetsHint =>
+      'Укажите, какую долю портфеля должна занимать каждая акция. Оставьте поле пустым, если цели нет. Приложение покажет, что купить или продать, чтобы её достичь.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Итого: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Купить ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Продать ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Соответствует цели';
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Currency",
   "compareReturn1y": "Ganansia iti 1 a tawen",
-  "compareFromHigh": "Manipud iti kangatuan iti 52 a lawas"
+  "compareFromHigh": "Manipud iti kangatuan iti 52 a lawas",
+  "briefAutoTitle": "Inaldaw a pakabuklan iti tunggal bigat",
+  "briefAutoSubtitle": "Ti “Ita nga aldaw kadagiti stock-mo” ket automatiko a maaramid kalpasan ti 7:00 iti bigat bayat nga agtartaray ti app; kadagiti kompiuter, maysa a pakaammo ti mangipakaammo kenka. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.",
+  "targetsButton": "Target a panangbingay",
+  "targetsTitle": "Target a panangbingay",
+  "targetsHint": "Ikeddeng no mano a paset ti portfolio ti rumbeng nga adda iti tunggal stock. Baybayan a blangko ti field no awan ti target. Kalpasanna, ipakita ti app no ania ti gatangen wenno ilako tapno makadanon sadiay.",
+  "targetsSum": "Dagup: {percent}",
+  "rebalanceBuy": "Gumatang ≈ {amount}",
+  "rebalanceSell": "Ilako ≈ {amount}",
+  "rebalanceOk": "Adda iti target"
 }

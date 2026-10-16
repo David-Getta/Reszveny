@@ -2248,4 +2248,39 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 هفتن جي وڌ ۾ وڌ کان فاصلو';
+
+  @override
+  String get briefAutoTitle => 'هر صبح روزانو خلاصو';
+
+  @override
+  String get briefAutoSubtitle =>
+      'جيستائين ايپ هلندي رهي، صبح 7:00 وڳي کان پوءِ “اڄ توهان جي شيئرن سان” پاڻمرادو تيار ٿي ويندو آهي؛ ڪمپيوٽرن تي هڪ اطلاع توهان کي ٻڌائيندي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String get targetsButton => 'هدف واري ورهاست';
+
+  @override
+  String get targetsTitle => 'هدف واري ورهاست';
+
+  @override
+  String get targetsHint =>
+      'مقرر ڪريو ته هر شيئر کي پورٽفوليو جو ڪيترو حصو هئڻ گهرجي. جيڪڏهن ڪو هدف ناهي ته خانو خالي ڇڏيو. پوءِ ايپ ڏيکاريندي ته اتي پهچڻ لاءِ ڇا خريد ڪجي يا وڪرو ڪجي.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ڪل: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'خريد ڪريو ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'وڪرو ڪريو ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'هدف تي';
 }

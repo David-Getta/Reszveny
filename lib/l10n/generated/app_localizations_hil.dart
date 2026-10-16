@@ -2270,4 +2270,39 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Halin sa pinakataas sa 52 ka semana';
+
+  @override
+  String get briefAutoTitle => 'Adlaw-adlaw nga buod kada aga';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Ang “Subong upod ang imo mga stock” awtomatiko nga mahimo pagkatapos sang 7:00 sang aga samtang nagadalagan ang app; sa mga kompyuter, may notipikasyon nga magapahibalo sa imo. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
+
+  @override
+  String get targetsButton => 'Target nga pagbahin';
+
+  @override
+  String get targetsTitle => 'Target nga pagbahin';
+
+  @override
+  String get targetsHint =>
+      'Itakda kon pila ka bahin sang portfolio ang dapat sa kada stock. Bayai nga blangko ang field kon wala sing target. Dayon ipakita sang app kon ano ang baklon ukon ibaligya agod makalab-ot didto.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Kabilugan: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Bakla ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ibaligya ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ara sa target';
 }

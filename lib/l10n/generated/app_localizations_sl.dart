@@ -2319,4 +2319,39 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Od najvišjega tečaja v 52 tednih';
+
+  @override
+  String get briefAutoTitle => 'Dnevni povzetek vsako jutro';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Danes z vašimi delnicami“ se samodejno pripravi po 7.00, dokler aplikacija teče; na računalnikih prejmete obvestilo. Porabi vašo dnevno omejitev vprašanj, ne analize.';
+
+  @override
+  String get targetsButton => 'Ciljna razporeditev';
+
+  @override
+  String get targetsTitle => 'Ciljna razporeditev';
+
+  @override
+  String get targetsHint =>
+      'Določite, kolikšen delež portfelja naj ima vsaka delnica. Prazno polje pomeni brez cilja. Aplikacija nato pokaže, kaj kupiti ali prodati, da ga dosežete.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Skupaj: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kupi ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Prodaj ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Na cilju';
 }

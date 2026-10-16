@@ -605,5 +605,14 @@
   "allocationSectors": "Mabazi",
   "allocationCurrencies": "Mari",
   "compareReturn1y": "Purofiti yegore 1",
-  "compareFromHigh": "Kubva pakakwirira pamavhiki 52"
+  "compareFromHigh": "Kubva pakakwirira pamavhiki 52",
+  "briefAutoTitle": "Pfupiso yezuva nezuva mangwanani ega ega",
+  "briefAutoSubtitle": "“Nhasi nemasheya ako” inozvigadzira pachayo mushure ma7:00 mangwanani app ichiri kushanda; pamakombiyuta, chiziviso chinokuzivisa. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.",
+  "targetsButton": "Kugoverwa kunodiwa",
+  "targetsTitle": "Kugoverwa kunodiwa",
+  "targetsHint": "Isa chikamu chepotifoliyo chinofanira kuva nesheya imwe neimwe. Siya nzvimbo isina chinhu kana pasina chinangwa. App ichakuratidza zvekutenga kana kutengesa.",
+  "targetsSum": "Zvese pamwe: {percent}",
+  "rebalanceBuy": "Tenga ≈ {amount}",
+  "rebalanceSell": "Tengesa ≈ {amount}",
+  "rebalanceOk": "Pachinangwa"
 }

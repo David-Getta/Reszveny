@@ -2251,4 +2251,39 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Diga ɓurɗum toowde e yonte 52';
+
+  @override
+  String get briefAutoTitle => 'Ciimtol ñalnde kala subaka';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Hannde e aksiyonji maa” ina waɗee hoore mum caggal 7:00 subaka tuma nde jaaɓnirgal ngal ina golloo; e ordinateeruuji, tintinol maa humpito ma. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
+
+  @override
+  String get targetsButton => 'Peccugol faandaare';
+
+  @override
+  String get targetsTitle => 'Peccugol faandaare';
+
+  @override
+  String get targetsHint =>
+      'Holle feccere portfolio nde aksiyon kala foti heɓde. Accu nokku oo meho so faandaare alaa. Caggal ɗuum app oo hollete ko foti soodeede walla yeeyeede ngam yettaade ɗoon.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Fof: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Soodu ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Yeeyu ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'E faandaare';
 }

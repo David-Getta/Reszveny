@@ -605,5 +605,14 @@
   "allocationSectors": "Secteurs",
   "allocationCurrencies": "Mfranga",
   "compareReturn1y": "Diakalenga dia tshidimu 1",
-  "compareFromHigh": "Kumbukila ku mushinga wa kuulu wa mingu 52"
+  "compareFromHigh": "Kumbukila ku mushinga wa kuulu wa mingu 52",
+  "briefAutoTitle": "Mukusa wa dituku dionso dinda dionso",
+  "briefAutoSubtitle": "“Lelu ne bintu biebe bia mu tshisumbu” bidi bienzeka nkayabi panyima pa 7:00 wa mu dinda padi application wenza mudimu; ku ordinatêre, dimanyisha nedikuambile. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.",
+  "targetsButton": "Diabanya dia tshipatshila",
+  "targetsTitle": "Diabanya dia tshipatshila",
+  "targetsHint": "Teka tshitupa tshia portfolio tshidi action yonso ne bua kupeta. Shiya muaba mutupu bikala kakuyi tshipatshila. Pashishe app neikuleje tshia kusumba anyi kusumbisha bua kufika kuoku.",
+  "targetsSum": "Bionso: {percent}",
+  "rebalanceBuy": "Sumba ≈ {amount}",
+  "rebalanceSell": "Sumbisha ≈ {amount}",
+  "rebalanceOk": "Mufike ku tshipatshila"
 }

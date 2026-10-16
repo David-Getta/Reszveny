@@ -605,5 +605,14 @@
   "allocationSectors": "Ebitundu",
   "allocationCurrencies": "Ensimbi",
   "compareReturn1y": "Amagoba g'omwaka 1",
-  "compareFromHigh": "Okuva ku waggulu mu wiiki 52"
+  "compareFromHigh": "Okuva ku waggulu mu wiiki 52",
+  "briefAutoTitle": "Ebifunze bya buli lunaku buli ku makya",
+  "briefAutoSubtitle": "“Leero ne sitoowa zo” kyekolera kyokka oluvannyuma lwa 7:00 ku makya nga app ekola; ku kompyuta, obubaka bujja kukutegeeza. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
+  "targetsButton": "Engabanya ey'ekigendererwa",
+  "targetsTitle": "Engabanya ey'ekigendererwa",
+  "targetsHint": "Teekawo kitundu ki ekya portfolio buli mugabo kye gulina okuba nakyo. Leka ekifo nga kikalu bwe wataba kigendererwa. Oluvannyuma app ejja kukulaga ky'olina okugula oba okutunda okutuuka eyo.",
+  "targetsSum": "Byonna awamu: {percent}",
+  "rebalanceBuy": "Gula ≈ {amount}",
+  "rebalanceSell": "Tunda ≈ {amount}",
+  "rebalanceOk": "Kituuse ku kigendererwa"
 }

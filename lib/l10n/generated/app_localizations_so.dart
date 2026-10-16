@@ -2263,4 +2263,39 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Masaafada ugu sarreeya 52 toddobaad';
+
+  @override
+  String get briefAutoTitle => 'Soo koobid maalinle subax kasta';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Maanta iyo saamiyadaada” si toos ah ayaa loo diyaariyaa 7:00 subaxnimo kadib inta app-ku shaqaynayo; kombiyuutarrada, ogeysiis ayaa kuu sheegaya. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String get targetsButton => 'Qaybinta hadafka';
+
+  @override
+  String get targetsTitle => 'Qaybinta hadafka';
+
+  @override
+  String get targetsHint =>
+      'Dooro inta qayb ee faylka maalgashiga ah ee saami kasta ay tahay inuu yeesho. Bannaan ka tag goobta haddii aanu jirin hadaf. Abka ayaa markaas ku tusaya waxa la iibsado ama la iibiyo si loo gaaro.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Wadarta: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Iibso ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Iibi ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Hadafka waa la gaaray';
 }

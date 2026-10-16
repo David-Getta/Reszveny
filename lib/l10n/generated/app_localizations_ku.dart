@@ -2258,4 +2258,39 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ji bilindtirîna 52 hefteyan';
+
+  @override
+  String get briefAutoTitle => 'Kurteya rojane her sibê';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Îro bi pişkên te re” piştî saet 7:00an bi xweber tê amadekirin heta ku sepan dixebite; li ser komputeran agahdariyek te agahdar dike. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
+
+  @override
+  String get targetsButton => 'Dabeşkirina armanc';
+
+  @override
+  String get targetsTitle => 'Dabeşkirina armanc';
+
+  @override
+  String get targetsHint =>
+      'Diyar bike ku divê her pişk çi qas para portfoliyoyê hebe. Heke armanc tune be, qadê vala bihêle. Paşê sepan nîşan dide ku ji bo gihîştina wê divê tu çi bikirî an bifiroşî.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Tevahî: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Bikire ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Bifiroşe ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Li ser armancê';
 }

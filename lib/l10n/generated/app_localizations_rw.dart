@@ -2265,4 +2265,39 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kuva hejuru mu byumweru 52';
+
+  @override
+  String get briefAutoTitle => 'Incamake ya buri munsi buri gitondo';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Uyu munsi n’imigabane yawe” ikorwa ubwayo nyuma ya 7:00 za mu gitondo igihe porogaramu irimo gukora; kuri mudasobwa, imenyesha rizakubwira. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.';
+
+  @override
+  String get targetsButton => 'Ikwirakwizwa rigamijwe';
+
+  @override
+  String get targetsTitle => 'Ikwirakwizwa rigamijwe';
+
+  @override
+  String get targetsHint =>
+      'Shyiraho igice cy\'umutungo buri mugabane ukwiye kugira. Siga umwanya ari ubusa niba nta ntego. Porogaramu izakwereka icyo ugomba kugura cyangwa kugurisha.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Igiteranyo: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Gura ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Gurisha ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ku ntego';
 }

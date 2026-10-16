@@ -2255,4 +2255,39 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-সপ্তাহৰ সৰ্বোচ্চৰ পৰা দূৰত্ব';
+
+  @override
+  String get briefAutoTitle => 'প্ৰতিদিনে ৰাতিপুৱা দৈনিক সাৰাংশ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'এপটো চলি থকালৈকে ৰাতিপুৱা 7:00ৰ পিছত “আজি আপোনাৰ শ্বেয়াৰসমূহ” নিজে নিজে প্ৰস্তুত হয়; কম্পিউটাৰত এটা জাননীয়ে আপোনাক জনায়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String get targetsButton => 'লক্ষ্য বিতৰণ';
+
+  @override
+  String get targetsTitle => 'লক্ষ্য বিতৰণ';
+
+  @override
+  String get targetsHint =>
+      'প\'ৰ্টফলিঅ\'ৰ কিমান অংশ প্ৰতিটো শ্বেয়াৰে পাব লাগে, সেয়া নিৰ্ধাৰণ কৰক। লক্ষ্য নাথাকিলে ঘৰটো খালী ৰাখক। তাৰ পিছত এপটোৱে তালৈ পাবলৈ কি কিনিব বা বিক্ৰী কৰিব লাগিব দেখুৱাব।';
+
+  @override
+  String targetsSum(String percent) {
+    return 'মুঠ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'কিনক ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'বিক্ৰী ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'লক্ষ্যত আছে';
 }

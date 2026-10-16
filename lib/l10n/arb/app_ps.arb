@@ -605,5 +605,14 @@
   "allocationSectors": "سکتورونه",
   "allocationCurrencies": "اسعار",
   "compareReturn1y": "د 1 کال عاید",
-  "compareFromHigh": "د 52 اونیو له لوړې بیې واټن"
+  "compareFromHigh": "د 52 اونیو له لوړې بیې واټن",
+  "briefAutoTitle": "هر سهار ورځنی لنډیز",
+  "briefAutoSubtitle": "«نن ستاسو له ونډو سره» تر هغه چې اپ چلېږي، د سهار له 7:00 بجو وروسته پخپله جوړېږي؛ په کمپیوټرونو کې یوه خبرتیا تاسو ته خبر درکوي. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.",
+  "targetsButton": "د هدف وېش",
+  "targetsTitle": "د هدف وېش",
+  "targetsHint": "وټاکئ چې هره ونډه باید د پورټفولیو څومره برخه ولري. که هدف نه وي، خونه تشه پرېږدئ. بیا اپ ښيي چې هلته د رسېدو لپاره څه واخلئ یا وپلورئ.",
+  "targetsSum": "ټول: {percent}",
+  "rebalanceBuy": "واخلئ ≈ {amount}",
+  "rebalanceSell": "وپلورئ ≈ {amount}",
+  "rebalanceOk": "په هدف کې"
 }

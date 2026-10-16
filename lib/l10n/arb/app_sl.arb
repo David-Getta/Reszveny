@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorji",
   "allocationCurrencies": "Valute",
   "compareReturn1y": "Donos v 1 letu",
-  "compareFromHigh": "Od najvišjega tečaja v 52 tednih"
+  "compareFromHigh": "Od najvišjega tečaja v 52 tednih",
+  "briefAutoTitle": "Dnevni povzetek vsako jutro",
+  "briefAutoSubtitle": "„Danes z vašimi delnicami“ se samodejno pripravi po 7.00, dokler aplikacija teče; na računalnikih prejmete obvestilo. Porabi vašo dnevno omejitev vprašanj, ne analize.",
+  "targetsButton": "Ciljna razporeditev",
+  "targetsTitle": "Ciljna razporeditev",
+  "targetsHint": "Določite, kolikšen delež portfelja naj ima vsaka delnica. Prazno polje pomeni brez cilja. Aplikacija nato pokaže, kaj kupiti ali prodati, da ga dosežete.",
+  "targetsSum": "Skupaj: {percent}",
+  "rebalanceBuy": "Kupi ≈ {amount}",
+  "rebalanceSell": "Prodaj ≈ {amount}",
+  "rebalanceOk": "Na cilju"
 }

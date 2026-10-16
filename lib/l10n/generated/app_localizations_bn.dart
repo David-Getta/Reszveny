@@ -2255,4 +2255,39 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-সপ্তাহের সর্বোচ্চ থেকে দূরত্ব';
+
+  @override
+  String get briefAutoTitle => 'প্রতিদিন সকালে দৈনিক সারাংশ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'অ্যাপ চালু থাকা অবস্থায় সকাল 7:00টার পর “আজ আপনার শেয়ারগুলোর সাথে” নিজে থেকেই তৈরি হয়; কম্পিউটারে একটি বিজ্ঞপ্তি আপনাকে জানায়। এটি আপনার দৈনিক প্রশ্নের সীমা থেকে যায়, কোনো বিশ্লেষণ খরচ হয় না।';
+
+  @override
+  String get targetsButton => 'লক্ষ্য বণ্টন';
+
+  @override
+  String get targetsTitle => 'লক্ষ্য বণ্টন';
+
+  @override
+  String get targetsHint =>
+      'পোর্টফোলিওর কত অংশ প্রতিটি শেয়ারের থাকা উচিত তা নির্ধারণ করুন। লক্ষ্য না থাকলে ঘরটি ফাঁকা রাখুন। এরপর অ্যাপটি দেখাবে সেখানে পৌঁছাতে কী কিনতে বা বিক্রি করতে হবে।';
+
+  @override
+  String targetsSum(String percent) {
+    return 'মোট: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'কিনুন ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'বিক্রি করুন ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'লক্ষ্যে আছে';
 }

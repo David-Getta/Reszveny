@@ -2263,4 +2263,39 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Nga maksimumi 52-javor';
+
+  @override
+  String get briefAutoTitle => 'Përmbledhje ditore çdo mëngjes';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Sot me aksionet tuaja” krijohet automatikisht pas orës 7:00 sa kohë që aplikacioni është në punë; në kompjuterë do të shfaqet një njoftim. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
+
+  @override
+  String get targetsButton => 'Shpërndarja e synuar';
+
+  @override
+  String get targetsTitle => 'Shpërndarja e synuar';
+
+  @override
+  String get targetsHint =>
+      'Cakto sa pjesë të portofolit duhet të ketë çdo aksion. Lëre fushën bosh nëse nuk ka synim. Aplikacioni më pas tregon çfarë të blesh ose të shesësh për të arritur atje.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Gjithsej: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Bli ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Shit ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Në synim';
 }

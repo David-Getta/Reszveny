@@ -2263,4 +2263,39 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 ವಾರಗಳ ಗರಿಷ್ಠದಿಂದ ಅಂತರ';
+
+  @override
+  String get briefAutoTitle => 'ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ ದೈನಂದಿನ ಸಾರಾಂಶ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ಆ್ಯಪ್ ಚಾಲನೆಯಲ್ಲಿರುವಾಗ ಬೆಳಿಗ್ಗೆ 7:00ರ ನಂತರ “ಇಂದು ನಿಮ್ಮ ಷೇರುಗಳೊಂದಿಗೆ” ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಿದ್ಧವಾಗುತ್ತದೆ; ಕಂಪ್ಯೂಟರ್‌ಗಳಲ್ಲಿ ಅಧಿಸೂಚನೆಯೊಂದು ನಿಮಗೆ ತಿಳಿಸುತ್ತದೆ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
+
+  @override
+  String get targetsButton => 'ಗುರಿ ಹಂಚಿಕೆ';
+
+  @override
+  String get targetsTitle => 'ಗುರಿ ಹಂಚಿಕೆ';
+
+  @override
+  String get targetsHint =>
+      'ಪೋರ್ಟ್‌ಫೋಲಿಯೊದಲ್ಲಿ ಪ್ರತಿಯೊಂದು ಷೇರಿಗೆ ಎಷ್ಟು ಪಾಲು ಇರಬೇಕು ಎಂದು ಹೊಂದಿಸಿ. ಗುರಿ ಇಲ್ಲದಿದ್ದರೆ ಕ್ಷೇತ್ರವನ್ನು ಖಾಲಿ ಬಿಡಿ. ನಂತರ ಅಲ್ಲಿಗೆ ತಲುಪಲು ಏನು ಖರೀದಿಸಬೇಕು ಅಥವಾ ಮಾರಾಟ ಮಾಡಬೇಕು ಎಂದು ಆ್ಯಪ್ ತೋರಿಸುತ್ತದೆ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ಒಟ್ಟು: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ಖರೀದಿಸಿ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ಮಾರಾಟ ಮಾಡಿ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ಗುರಿಯಲ್ಲಿದೆ';
 }

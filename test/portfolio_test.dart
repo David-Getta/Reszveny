@@ -462,4 +462,54 @@ void main() {
     expect(g.map((e) => e.label), ['USD', 'EUR']);
     expect(g.first.weight, closeTo(0.5, 1e-9));
   });
+
+  test('rebalancing: buy what is under its target, sell what is over it', () {
+    PositionValue row(String symbol, double w) => PositionValue(
+      position: Position(symbol: symbol, currency: 'USD', lots: const []),
+      weight: w,
+    );
+    final snap = PortfolioSnapshot(
+      currency: 'USD',
+      rows: [row('AAPL', 0.6), row('MSFT', 0.3), row('KO', 0.1)],
+      value: 10000,
+      cost: 8000,
+      dayGain: 0,
+    );
+    final plan = rebalancePlan(snap, {'AAPL': 40, 'MSFT': 40});
+    expect(plan.map((p) => p.symbol), ['AAPL', 'MSFT'], reason: 'largest move first; KO has no target');
+    expect(plan[0].amount, closeTo(-2000, 1e-6));
+    expect(plan[1].amount, closeTo(1000, 1e-6));
+    expect(rebalancePlan(snap, const {}), isEmpty);
+  });
+
+  testWidgets('target allocation: set targets, then see what to buy or sell', (tester) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('targets-edit')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('target-field-AAPL')), '50');
+    await tester.enterText(find.byKey(const ValueKey('target-field-MSFT')), '50');
+    await tester.pumpAndSettle();
+    expect(find.text('Total: 100.0%'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('targets-save')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.targets, {'AAPL': 50.0, 'MSFT': 50.0});
+    // Az AAPL súlya nagyobb (2314,5 vs 1024,6 USD): eladni kell belőle, a MSFT-ből venni.
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('target-AAPL')), matching: find.textContaining('Sell ≈ ')),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('target-MSFT')), matching: find.textContaining('Buy ≈ ')),
+      findsOneWidget,
+    );
+  });
 }

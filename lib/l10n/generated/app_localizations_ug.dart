@@ -2259,4 +2259,39 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 ھەپتىلىك ئەڭ يۇقىرىدىن ئارىلىق';
+
+  @override
+  String get briefAutoTitle => 'ھەر ئەتىگەن كۈندىلىك خۇلاسە';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«بۈگۈن پايچېكلىرىڭىز بىلەن» ئەپ ئىجرا بولۇۋاتقاندا ئەتىگەن سائەت 7:00 دىن كېيىن ئاپتوماتىك تەييارلىنىدۇ؛ كومپيۇتېرلاردا بىر ئۇقتۇرۇش سىزگە خەۋەر قىلىدۇ. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
+
+  @override
+  String get targetsButton => 'نىشان تەقسىمات';
+
+  @override
+  String get targetsTitle => 'نىشان تەقسىمات';
+
+  @override
+  String get targetsHint =>
+      'ھەر بىر پاينىڭ پورتفېلدىن قانچىلىك ئۈلۈش ئېلىشى كېرەكلىكىنى بەلگىلەڭ. نىشان بولمىسا رامكىنى بوش قالدۇرۇڭ. ئاندىن ئەپ ئۇنىڭغا يېتىش ئۈچۈن نېمە سېتىۋېلىش ياكى سېتىش كېرەكلىكىنى كۆرسىتىدۇ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'جەمئىي: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'سېتىۋېلىش ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'سېتىش ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'نىشاندا';
 }

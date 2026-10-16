@@ -605,5 +605,14 @@
   "allocationSectors": "Afa",
   "allocationCurrencies": "Sika ahodoɔ",
   "compareReturn1y": "Mfe 1 mfaso",
-  "compareFromHigh": "Firi Nnawɔtwe 52 bo kɛse"
+  "compareFromHigh": "Firi Nnawɔtwe 52 bo kɛse",
+  "briefAutoTitle": "Nsɛm tiaa da biara anɔpa",
+  "briefAutoSubtitle": "“Ɛnnɛ ne wo stocks” yɛ ne ho ankasa anɔpa 7:00 akyi bere a app no reyɛ adwuma; kɔmputa so no, nkaebɔ bɛma woahu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
+  "targetsButton": "Botaeɛ nkyekyɛmu",
+  "targetsTitle": "Botaeɛ nkyekyɛmu",
+  "targetsHint": "Kyerɛ ɔfa a nkyɛfa biara nsa bɛka wɔ portfolio no mu. Gyaw beaeɛ no hunu sɛ wonni botaeɛ biara a. Afei app no bɛkyerɛ deɛ ɛsɛ sɛ wotɔ anaa wotɔn na woadu hɔ.",
+  "targetsSum": "Ne nyinaa: {percent}",
+  "rebalanceBuy": "Tɔ ≈ {amount}",
+  "rebalanceSell": "Tɔn ≈ {amount}",
+  "rebalanceOk": "Edu botaeɛ so"
 }

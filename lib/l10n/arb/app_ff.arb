@@ -605,5 +605,14 @@
   "allocationSectors": "Fannuuji",
   "allocationCurrencies": "Ceede",
   "compareReturn1y": "Ñeeñal hitaande 1",
-  "compareFromHigh": "Diga ɓurɗum toowde e yonte 52"
+  "compareFromHigh": "Diga ɓurɗum toowde e yonte 52",
+  "briefAutoTitle": "Ciimtol ñalnde kala subaka",
+  "briefAutoSubtitle": "“Hannde e aksiyonji maa” ina waɗee hoore mum caggal 7:00 subaka tuma nde jaaɓnirgal ngal ina golloo; e ordinateeruuji, tintinol maa humpito ma. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.",
+  "targetsButton": "Peccugol faandaare",
+  "targetsTitle": "Peccugol faandaare",
+  "targetsHint": "Holle feccere portfolio nde aksiyon kala foti heɓde. Accu nokku oo meho so faandaare alaa. Caggal ɗuum app oo hollete ko foti soodeede walla yeeyeede ngam yettaade ɗoon.",
+  "targetsSum": "Fof: {percent}",
+  "rebalanceBuy": "Soodu ≈ {amount}",
+  "rebalanceSell": "Yeeyu ≈ {amount}",
+  "rebalanceOk": "E faandaare"
 }

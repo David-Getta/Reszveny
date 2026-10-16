@@ -237,7 +237,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(rows: s.rows, fmt: fmt),
+                if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(snapshot: s, fmt: fmt),
                 PortfolioHistoryCard(snapshot: s),
                 PortfolioReviewCard(snapshot: s),
                 if (s.rows.isNotEmpty) ...[
@@ -402,10 +402,12 @@ List<({String label, double weight})> groupWeights(List<PositionValue> rows, Str
 
 /// A megoszlás kártyája: pozíciók, szektorok vagy devizák szerint.
 class AllocationCard extends StatefulWidget {
-  const AllocationCard({super.key, required this.rows, required this.fmt});
+  const AllocationCard({super.key, required this.snapshot, required this.fmt});
 
-  final List<PositionValue> rows;
+  final PortfolioSnapshot snapshot;
   final Fmt fmt;
+
+  List<PositionValue> get rows => snapshot.rows;
 
   @override
   State<AllocationCard> createState() => _AllocationCardState();
@@ -456,9 +458,12 @@ class _AllocationCardState extends State<AllocationCard> {
             ),
             const SizedBox(height: 12),
             switch (_by) {
-              AllocationBy.positions => AllocationBar(
-                entries: groupWeights(widget.rows, (r) => r.position.symbol),
-                fmt: widget.fmt,
+              AllocationBy.positions => Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AllocationBar(entries: groupWeights(widget.rows, (r) => r.position.symbol), fmt: widget.fmt),
+                  _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
+                ],
               ),
               AllocationBy.currencies => AllocationBar(
                 entries: groupWeights(widget.rows, (r) => r.position.currency),
@@ -482,6 +487,201 @@ class _AllocationCardState extends State<AllocationCard> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Célarányok és újrasúlyozás: gomb a beállításukhoz, és ha vannak, pozíciónként
+/// a mostani és a cél arány, valamint mennyit kellene venni vagy eladni.
+class _Targets extends StatelessWidget {
+  const _Targets({required this.snapshot, required this.fmt});
+
+  final PortfolioSnapshot snapshot;
+  final Fmt fmt;
+
+  /// Ennél kisebb (százalékpontos) eltérésnél nincs teendő.
+  static const tolerance = 1.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final prefs = AppServices.of(context).preferences;
+    return ListenableBuilder(
+      listenable: prefs,
+      builder: (context, _) {
+        final plan = rebalancePlan(snapshot, prefs.targets);
+        final sum = plan.fold<double>(0, (a, b) => a + b.target);
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 8),
+            TextButton.icon(
+              key: const ValueKey('targets-edit'),
+              style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+              onPressed: () => showDialog<void>(
+                context: context,
+                builder: (_) => _TargetsDialog(rows: snapshot.rows, initial: prefs.targets),
+              ),
+              icon: const Icon(Icons.tune_rounded, size: 18),
+              label: Text(l10n.targetsButton),
+            ),
+            if (plan.isNotEmpty) ...[
+              for (final step in plan)
+                Padding(
+                  key: ValueKey('target-${step.symbol}'),
+                  padding: const EdgeInsets.symmetric(vertical: 3),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 64,
+                        child: Text(step.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                      ),
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Text(fmt.percent(step.current, decimals: 1), style: muted(theme, p)),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: Icon(Icons.arrow_forward_rounded, size: 12, color: p.muted),
+                            ),
+                            Text(fmt.percent(step.target, decimals: 1), style: muted(theme, p)),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        (step.target - step.current).abs() < tolerance
+                            ? l10n.rebalanceOk
+                            : step.amount > 0
+                            ? l10n.rebalanceBuy(fmt.money(step.amount, snapshot.currency))
+                            : l10n.rebalanceSell(fmt.money(-step.amount, snapshot.currency)),
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          fontWeight: FontWeight.w600,
+                          color: (step.target - step.current).abs() < tolerance
+                              ? p.muted
+                              : (step.amount > 0 ? p.positive : p.negative),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              if ((sum - 100).abs() >= 0.5)
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(l10n.targetsSum(fmt.percent(sum, decimals: 1)), style: muted(theme, p)),
+                ),
+            ],
+          ],
+        );
+      },
+    );
+  }
+
+  static TextStyle? muted(ThemeData theme, AppPalette p) => theme.textTheme.bodySmall?.copyWith(color: p.muted);
+}
+
+/// A célarányok megadása pozíciónként (üres mező: nincs cél).
+class _TargetsDialog extends StatefulWidget {
+  const _TargetsDialog({required this.rows, required this.initial});
+
+  final List<PositionValue> rows;
+  final Map<String, double> initial;
+
+  @override
+  State<_TargetsDialog> createState() => _TargetsDialogState();
+}
+
+class _TargetsDialogState extends State<_TargetsDialog> {
+  late final Map<String, TextEditingController> _fields = {
+    for (final r in widget.rows)
+      r.position.symbol: TextEditingController(
+        text: switch (widget.initial[r.position.symbol.toUpperCase()]) {
+          null => '',
+          final v => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString(),
+        },
+      ),
+  };
+
+  @override
+  void dispose() {
+    for (final c in _fields.values) {
+      c.dispose();
+    }
+    super.dispose();
+  }
+
+  Map<String, double> get _values => {
+    for (final e in _fields.entries)
+      if (parseDecimal(e.value.text) case final v? when v > 0 && v <= 100) e.key: v,
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final sum = _values.values.fold<double>(0, (a, b) => a + b);
+    return AlertDialog(
+      title: Text(l10n.targetsTitle),
+      content: SizedBox(
+        width: 380,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.targetsHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              const SizedBox(height: 8),
+              for (final r in widget.rows)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '${r.position.symbol}  (${fmt.percent(r.weight * 100, decimals: 1)})',
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 90,
+                        child: TextField(
+                          key: ValueKey('target-field-${r.position.symbol}'),
+                          controller: _fields[r.position.symbol],
+                          keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                          textAlign: TextAlign.end,
+                          decoration: const InputDecoration(suffixText: '%', isDense: true),
+                          onChanged: (_) => setState(() {}),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: 8),
+              Text(
+                l10n.targetsSum(fmt.percent(sum, decimals: 1)),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: (sum - 100).abs() < 0.5 || sum == 0 ? p.muted : p.negative,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        FilledButton(
+          key: const ValueKey('targets-save'),
+          onPressed: () async {
+            await AppServices.of(context).preferences.setTargets(_values);
+            if (context.mounted) Navigator.of(context).pop();
+          },
+          child: Text(l10n.ok),
+        ),
+      ],
     );
   }
 }

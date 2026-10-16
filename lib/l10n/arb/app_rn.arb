@@ -605,5 +605,14 @@
   "allocationSectors": "Inzego",
   "allocationCurrencies": "Amafaranga",
   "compareReturn1y": "Inyungu y'umwaka 1",
-  "compareFromHigh": "Kuva hejuru mu ndwi 52"
+  "compareFromHigh": "Kuva hejuru mu ndwi 52",
+  "briefAutoTitle": "Incamake ya buri munsi buri gitondo",
+  "briefAutoSubtitle": "“Uyu munsi n’imigabane yawe” ikorwa yonyene inyuma ya 7:00 z’igitondo igihe app iriko irakora; kuri orudinateri, ubumenyeshwa buzokumenyesha. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.",
+  "targetsButton": "Ugusaranganya kugambiriwe",
+  "targetsTitle": "Ugusaranganya kugambiriwe",
+  "targetsHint": "Shinga igice c'umutungo umugabane umwumwe ukwiye kugira. Siga ikibanza kitarimwo ikintu niba ata ntumbero. Hanyuma porogarama izokwereka ivyo ukwiye kugura canke kugurisha.",
+  "targetsSum": "Vyose hamwe: {percent}",
+  "rebalanceBuy": "Gura ≈ {amount}",
+  "rebalanceSell": "Gurisha ≈ {amount}",
+  "rebalanceOk": "Ku ntumbero"
 }

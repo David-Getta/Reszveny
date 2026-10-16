@@ -230,6 +230,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5ax | Akadálymentesség: az árfolyam- és portfólió-grafikon képernyőolvasóval felolvassa az időszakot, a kezdő és záró árat és a változást | ✅ kész |
 | 5ay | Összehasonlítás: 1 éves hozam (a magasabb kiemelve) és távolság az 52 hetes csúcstól | ✅ kész |
 | 5az | Asztali billentyűparancsok (Ctrl, macOS-en ⌘): K új keresés a keresőmezőbe, 2 portfólió, 3 riasztások, vessző beállítások; az oldalsávon halványan jelölve | ✅ kész |
+| 5ba | Reggeli összefoglaló (bekapcsolható): „A nap a részvényeiddel” reggel 7 után magától elkészül, amíg az app fut, és asztali értesítés jelzi az első mondatával | ✅ kész |
+| 5bb | Célarányok és újrasúlyozás: pozíciónként megadható cél %, a megoszlás kártyán a mostani → cél arány és mennyit kellene venni vagy eladni (1 százalékpont alatt „Célon”); szinkronnal és a mentésben is | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

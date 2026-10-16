@@ -605,5 +605,14 @@
   "allocationSectors": "Maphata",
   "allocationCurrencies": "Madi",
   "compareReturn1y": "Poelo ya ngwaga o 1",
-  "compareFromHigh": "Go tswa mo bogodimong jwa dibeke di le 52"
+  "compareFromHigh": "Go tswa mo bogodimong jwa dibeke di le 52",
+  "briefAutoTitle": "Tshosobanyo ya letsatsi le letsatsi mo mosong mongwe le mongwe",
+  "briefAutoSubtitle": "“Gompieno le dishere tsa gago” e itirela ka boyone morago ga 7:00 mo mosong fa app e ntse e dira; mo dikhomputareng, kitsiso e tla go itsise. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.",
+  "targetsButton": "Kabo e e batlwang",
+  "targetsTitle": "Kabo e e batlwang",
+  "targetsHint": "Tlhoma gore sere sengwe le sengwe se tshwanetse go nna le karolo e kae ya potefolio. Tlogela lefelo le le lolea fa go se na maikaelelo. Morago app e tla go bontsha se o tshwanetseng go se reka kgotsa go se rekisa.",
+  "targetsSum": "Palogotlhe: {percent}",
+  "rebalanceBuy": "Reka ≈ {amount}",
+  "rebalanceSell": "Rekisa ≈ {amount}",
+  "rebalanceOk": "Mo maikaelelong"
 }

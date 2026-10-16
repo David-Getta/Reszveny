@@ -223,3 +223,18 @@ class PortfolioSnapshot {
     return all.length == 1 ? all.first : 'USD';
   }
 }
+
+/// Egy pozíció újrasúlyozása: a mostani és a cél arány (%), és mennyit kellene
+/// venni (+) vagy eladni (−) a portfólió pénznemében.
+typedef RebalanceStep = ({String symbol, double current, double target, double amount});
+
+/// Újrasúlyozási terv a célarányokhoz (csak a céllal rendelkező pozíciók).
+/// A célt a teljes portfólió értékéhez mérjük.
+List<RebalanceStep> rebalancePlan(PortfolioSnapshot s, Map<String, double> targets) {
+  if (s.value <= 0) return const [];
+  return [
+    for (final r in s.rows)
+      if (targets[r.position.symbol.toUpperCase()] case final t?)
+        (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * s.value - r.weight * s.value),
+  ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
+}

@@ -2255,4 +2255,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'From 52-week high';
+
+  @override
+  String get briefAutoTitle => 'Daily summary every morning';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Today with your stocks” is made automatically after 7 am while the app is running; on computers a notification tells you. Uses your daily question allowance, not an analysis.';
+
+  @override
+  String get targetsButton => 'Target allocation';
+
+  @override
+  String get targetsTitle => 'Target allocation';
+
+  @override
+  String get targetsHint =>
+      'Set what share of the portfolio each stock should have. Leave a field empty for no target. The app then shows what to buy or sell to get there.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Buy ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sell ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'On target';
 }

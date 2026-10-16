@@ -2265,4 +2265,39 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kusuka kokuphezulu kwamasonto angu-52';
+
+  @override
+  String get briefAutoTitle => 'Isifinyezo sansuku zonke njalo ekuseni';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Namuhla namasheya akho” senziwa ngokuzenzakalelayo ngemva kuka-7:00 ekuseni ngesikhathi i-app isasebenza; kumakhompyutha, isaziso sizokwazisa. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
+
+  @override
+  String get targetsButton => 'Ukwabiwa okuhlosiwe';
+
+  @override
+  String get targetsTitle => 'Ukwabiwa okuhlosiwe';
+
+  @override
+  String get targetsHint =>
+      'Setha ukuthi isheya ngalinye kufanele libe nengxenye engakanani yephothifoliyo. Shiya inkambu ingenalutho uma kungekho umgomo. Bese uhlelo lokusebenza lukubonisa okufanele ukuthenge noma ukuthengise.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Isamba: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Thenga ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Thengisa ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Kumgomo';
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Sehatra",
   "allocationCurrencies": "Vola",
   "compareReturn1y": "Tombony 1 taona",
-  "compareFromHigh": "Avy amin'ny avo indrindra tao anatin'ny 52 herinandro"
+  "compareFromHigh": "Avy amin'ny avo indrindra tao anatin'ny 52 herinandro",
+  "briefAutoTitle": "Famintinana isan’andro isa-maraina",
+  "briefAutoSubtitle": "Ny “Anio miaraka amin’ny lozamanao” dia mamorona ho azy aorian’ny 7:00 maraina raha mbola mandeha ny app; amin’ny solosaina, misy fampandrenesana milaza aminao izany. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.",
+  "targetsButton": "Tanjona fizarana",
+  "targetsTitle": "Tanjona fizarana",
+  "targetsHint": "Farito hoe ohatrinona amin'ny portefeuille no anjaran'ny saha tsirairay. Avelao ho foana ny saha raha tsy misy tanjona. Asehon'ny app avy eo izay tokony hovidiana na hamidy.",
+  "targetsSum": "Totaly: {percent}",
+  "rebalanceBuy": "Vidio ≈ {amount}",
+  "rebalanceSell": "Amidy ≈ {amount}",
+  "rebalanceOk": "Mifanaraka amin'ny tanjona"
 }

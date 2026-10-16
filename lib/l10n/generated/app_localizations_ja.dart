@@ -2179,4 +2179,39 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52週高値からの乖離';
+
+  @override
+  String get briefAutoTitle => '毎朝のデイリーサマリー';
+
+  @override
+  String get briefAutoSubtitle =>
+      'アプリの起動中は、朝7時以降に「今日のあなたの銘柄」が自動で作成されます。パソコンでは通知でお知らせします。1日の質問回数を使い、分析回数は消費しません。';
+
+  @override
+  String get targetsButton => '目標構成';
+
+  @override
+  String get targetsTitle => '目標構成';
+
+  @override
+  String get targetsHint =>
+      '各銘柄がポートフォリオに占めるべき割合を設定します。目標がない場合は空欄のままにします。アプリが目標に近づけるために購入・売却すべき内容を表示します。';
+
+  @override
+  String targetsSum(String percent) {
+    return '合計：$percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return '購入 ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return '売却 ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => '目標どおり';
 }

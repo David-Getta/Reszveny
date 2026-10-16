@@ -2248,4 +2248,39 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'د 52 اونیو له لوړې بیې واټن';
+
+  @override
+  String get briefAutoTitle => 'هر سهار ورځنی لنډیز';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«نن ستاسو له ونډو سره» تر هغه چې اپ چلېږي، د سهار له 7:00 بجو وروسته پخپله جوړېږي؛ په کمپیوټرونو کې یوه خبرتیا تاسو ته خبر درکوي. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
+
+  @override
+  String get targetsButton => 'د هدف وېش';
+
+  @override
+  String get targetsTitle => 'د هدف وېش';
+
+  @override
+  String get targetsHint =>
+      'وټاکئ چې هره ونډه باید د پورټفولیو څومره برخه ولري. که هدف نه وي، خونه تشه پرېږدئ. بیا اپ ښيي چې هلته د رسېدو لپاره څه واخلئ یا وپلورئ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ټول: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'واخلئ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'وپلورئ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'په هدف کې';
 }

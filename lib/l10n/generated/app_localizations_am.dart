@@ -2224,4 +2224,39 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'ከ52 ሳምንት ከፍተኛ ያለው ርቀት';
+
+  @override
+  String get briefAutoTitle => 'በየማለዳው ዕለታዊ ማጠቃለያ';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«ዛሬ ከአክሲዮኖችዎ ጋር» መተግበሪያው እየሠራ ባለበት ጊዜ ከጠዋቱ 7:00 በኋላ በራሱ ይዘጋጃል፤ በኮምፒውተር ላይ ማሳወቂያ ያሳውቅዎታል። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
+
+  @override
+  String get targetsButton => 'የዒላማ ድልድል';
+
+  @override
+  String get targetsTitle => 'የዒላማ ድልድል';
+
+  @override
+  String get targetsHint =>
+      'እያንዳንዱ አክሲዮን ከፖርትፎሊዮው ምን ያህል ድርሻ እንዲኖረው ያስቀምጡ። ዒላማ ከሌለ መስኩን ባዶ ይተዉት። ከዚያ መተግበሪያው ዒላማውን ለመድረስ ምን መግዛት ወይም መሸጥ እንዳለብዎ ያሳያል።';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ጠቅላላ፦ $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ግዛ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ሽጥ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ዒላማ ላይ';
 }

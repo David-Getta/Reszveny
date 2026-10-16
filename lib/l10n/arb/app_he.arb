@@ -605,5 +605,14 @@
   "allocationSectors": "סקטורים",
   "allocationCurrencies": "מטבעות",
   "compareReturn1y": "תשואה לשנה",
-  "compareFromHigh": "מרחק משיא 52 שבועות"
+  "compareFromHigh": "מרחק משיא 52 שבועות",
+  "briefAutoTitle": "סיכום יומי בכל בוקר",
+  "briefAutoSubtitle": "“היום עם המניות שלך” נוצר אוטומטית אחרי 7:00 בבוקר כל עוד האפליקציה פועלת; במחשבים תופיע התראה. נספר במכסת השאלות היומית שלך, לא כניתוח.",
+  "targetsButton": "פיזור יעד",
+  "targetsTitle": "פיזור יעד",
+  "targetsHint": "קבעו איזה חלק מהתיק כל מניה צריכה לתפוס. השאירו שדה ריק אם אין יעד. האפליקציה תציג אז מה לקנות או למכור כדי להגיע לשם.",
+  "targetsSum": "סה״כ: {percent}",
+  "rebalanceBuy": "קנייה ≈ {amount}",
+  "rebalanceSell": "מכירה ≈ {amount}",
+  "rebalanceOk": "ביעד"
 }

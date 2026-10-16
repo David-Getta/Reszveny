@@ -605,5 +605,14 @@
   "allocationSectors": "Sektory",
   "allocationCurrencies": "Měny",
   "compareReturn1y": "Výnos za 1 rok",
-  "compareFromHigh": "Od 52týdenního maxima"
+  "compareFromHigh": "Od 52týdenního maxima",
+  "briefAutoTitle": "Denní shrnutí každé ráno",
+  "briefAutoSubtitle": "„Dnes s vašimi akciemi“ se vytvoří automaticky po 7:00, dokud aplikace běží; na počítačích vás upozorní oznámení. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.",
+  "targetsButton": "Cílové rozložení",
+  "targetsTitle": "Cílové rozložení",
+  "targetsHint": "Nastavte, jaký podíl portfolia má mít každá akcie. Pokud cíl nechcete, nechte pole prázdné. Aplikace pak ukáže, co je potřeba koupit nebo prodat, abyste ho dosáhli.",
+  "targetsSum": "Celkem: {percent}",
+  "rebalanceBuy": "Koupit ≈ {amount}",
+  "rebalanceSell": "Prodat ≈ {amount}",
+  "rebalanceOk": "Odpovídá cíli"
 }

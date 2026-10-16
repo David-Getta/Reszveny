@@ -605,5 +605,14 @@
   "allocationSectors": "Sektoren",
   "allocationCurrencies": "Währungen",
   "compareReturn1y": "1-Jahres-Rendite",
-  "compareFromHigh": "Abstand zum 52-Wochen-Hoch"
+  "compareFromHigh": "Abstand zum 52-Wochen-Hoch",
+  "briefAutoTitle": "Tägliche Zusammenfassung jeden Morgen",
+  "briefAutoSubtitle": "„Heute bei deinen Aktien“ wird nach 7 Uhr automatisch erstellt, solange die App läuft; auf Computern informiert dich eine Benachrichtigung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
+  "targetsButton": "Zielaufteilung",
+  "targetsTitle": "Zielaufteilung",
+  "targetsHint": "Festlegen, welchen Anteil am Portfolio jede Aktie haben soll. Leeres Feld: kein Ziel. Die App zeigt dann, was zu kaufen oder zu verkaufen ist, um dorthin zu kommen.",
+  "targetsSum": "Gesamt: {percent}",
+  "rebalanceBuy": "Kaufen ≈ {amount}",
+  "rebalanceSell": "Verkaufen ≈ {amount}",
+  "rebalanceOk": "Im Ziel"
 }

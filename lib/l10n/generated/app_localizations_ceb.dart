@@ -2266,4 +2266,39 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Gikan sa pinakataas sa 52 ka semana';
+
+  @override
+  String get briefAutoTitle => 'Adlaw-adlaw nga summary matag buntag';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Ang “Karon uban sa imong mga stock” awtomatikong mahimo human sa 7:00 sa buntag samtang nagdagan ang app; sa mga kompyuter, usa ka notipikasyon ang mopahibalo nimo. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
+
+  @override
+  String get targetsButton => 'Target nga alokasyon';
+
+  @override
+  String get targetsTitle => 'Target nga alokasyon';
+
+  @override
+  String get targetsHint =>
+      'Itakda kung pila ka bahin sa portfolio ang angay sa matag stock. Biyai nga blangko ang field kung walay target. Unya ipakita sa app kung unsa ang paliton o ibaligya aron makaabot didto.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Kinatibuk-an: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Palita ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ibaligya ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Naa sa target';
 }

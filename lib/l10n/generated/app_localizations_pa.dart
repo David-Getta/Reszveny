@@ -2252,4 +2252,39 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-ਹਫ਼ਤੇ ਦੇ ਉੱਚਤਮ ਤੋਂ ਦੂਰੀ';
+
+  @override
+  String get briefAutoTitle => 'ਹਰ ਸਵੇਰ ਰੋਜ਼ਾਨਾ ਸਾਰ';
+
+  @override
+  String get briefAutoSubtitle =>
+      'ਐਪ ਚੱਲਦੀ ਹੋਣ ’ਤੇ ਸਵੇਰੇ 7:00 ਵਜੇ ਤੋਂ ਬਾਅਦ “ਅੱਜ ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਨਾਲ” ਆਪਣੇ-ਆਪ ਤਿਆਰ ਹੋ ਜਾਂਦਾ ਹੈ; ਕੰਪਿਊਟਰ ’ਤੇ ਇੱਕ ਸੂਚਨਾ ਤੁਹਾਨੂੰ ਦੱਸਦੀ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
+
+  @override
+  String get targetsButton => 'ਟੀਚਾ ਵੰਡ';
+
+  @override
+  String get targetsTitle => 'ਟੀਚਾ ਵੰਡ';
+
+  @override
+  String get targetsHint =>
+      'ਤੈਅ ਕਰੋ ਕਿ ਹਰ ਸ਼ੇਅਰ ਨੂੰ ਪੋਰਟਫੋਲੀਓ ਦਾ ਕਿੰਨਾ ਹਿੱਸਾ ਮਿਲਣਾ ਚਾਹੀਦਾ ਹੈ। ਕੋਈ ਟੀਚਾ ਨਾ ਹੋਵੇ ਤਾਂ ਖਾਨਾ ਖਾਲੀ ਛੱਡੋ। ਫਿਰ ਐਪ ਦਿਖਾਏਗੀ ਕਿ ਉੱਥੇ ਪਹੁੰਚਣ ਲਈ ਕੀ ਖਰੀਦਣਾ ਜਾਂ ਵੇਚਣਾ ਹੈ।';
+
+  @override
+  String targetsSum(String percent) {
+    return 'ਕੁੱਲ: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ਖਰੀਦੋ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ਵੇਚੋ ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ਟੀਚੇ \'ਤੇ';
 }

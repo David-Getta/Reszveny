@@ -605,5 +605,14 @@
   "allocationSectors": "Waaxyaha",
   "allocationCurrencies": "Lacagaha",
   "compareReturn1y": "Faa'iidada 1 sano",
-  "compareFromHigh": "Masaafada ugu sarreeya 52 toddobaad"
+  "compareFromHigh": "Masaafada ugu sarreeya 52 toddobaad",
+  "briefAutoTitle": "Soo koobid maalinle subax kasta",
+  "briefAutoSubtitle": "“Maanta iyo saamiyadaada” si toos ah ayaa loo diyaariyaa 7:00 subaxnimo kadib inta app-ku shaqaynayo; kombiyuutarrada, ogeysiis ayaa kuu sheegaya. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.",
+  "targetsButton": "Qaybinta hadafka",
+  "targetsTitle": "Qaybinta hadafka",
+  "targetsHint": "Dooro inta qayb ee faylka maalgashiga ah ee saami kasta ay tahay inuu yeesho. Bannaan ka tag goobta haddii aanu jirin hadaf. Abka ayaa markaas ku tusaya waxa la iibsado ama la iibiyo si loo gaaro.",
+  "targetsSum": "Wadarta: {percent}",
+  "rebalanceBuy": "Iibso ≈ {amount}",
+  "rebalanceSell": "Iibi ≈ {amount}",
+  "rebalanceOk": "Hadafka waa la gaaray"
 }

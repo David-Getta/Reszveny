@@ -2257,4 +2257,39 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kuuma thogora wa igũrũ mũno (ciumia 52)';
+
+  @override
+  String get briefAutoTitle => 'Ũhoro mũkuhĩ wa o mũthenya o rũciinĩ';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Ũmũthĩ na hisa ciaku” ĩthondekaga yo nyene thutha wa 7:00 rũciinĩ rĩrĩa app ĩrarũta wĩra; kombiuta-inĩ, ũhoro wa kũmenyithia nĩ ũgũkwĩra. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String get targetsButton => 'Ũgayanio wa muoroto';
+
+  @override
+  String get targetsTitle => 'Ũgayanio wa muoroto';
+
+  @override
+  String get targetsHint =>
+      'Ĩkĩra gĩcunjĩ kĩa portfolio kĩrĩa o hisa ĩmwe yagĩrĩirũo nĩ kũgĩa nakĩo. Tiga handũ hau hatarĩ kĩndũ angĩkorwo ndũrĩ na muoroto. Thuutha ũcio app nĩĩkuonania kĩrĩa ũgũthogora kana wendie nĩguo ũkinye hau.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Hamwe: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Gũra ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Endia ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Nĩ gũkinyĩte muoroto';
 }

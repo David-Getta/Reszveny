@@ -605,5 +605,14 @@
   "allocationSectors": "セクター",
   "allocationCurrencies": "通貨",
   "compareReturn1y": "1年リターン",
-  "compareFromHigh": "52週高値からの乖離"
+  "compareFromHigh": "52週高値からの乖離",
+  "briefAutoTitle": "毎朝のデイリーサマリー",
+  "briefAutoSubtitle": "アプリの起動中は、朝7時以降に「今日のあなたの銘柄」が自動で作成されます。パソコンでは通知でお知らせします。1日の質問回数を使い、分析回数は消費しません。",
+  "targetsButton": "目標構成",
+  "targetsTitle": "目標構成",
+  "targetsHint": "各銘柄がポートフォリオに占めるべき割合を設定します。目標がない場合は空欄のままにします。アプリが目標に近づけるために購入・売却すべき内容を表示します。",
+  "targetsSum": "合計：{percent}",
+  "rebalanceBuy": "購入 ≈ {amount}",
+  "rebalanceSell": "売却 ≈ {amount}",
+  "rebalanceOk": "目標どおり"
 }

@@ -2320,4 +2320,39 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Od maksimum 52-tygodniowego';
+
+  @override
+  String get briefAutoTitle => 'Codzienne podsumowanie każdego ranka';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Dziś z Twoimi akcjami” powstaje automatycznie po 7:00, gdy aplikacja jest uruchomiona; na komputerach poinformuje Cię o tym powiadomienie. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
+
+  @override
+  String get targetsButton => 'Struktura docelowa';
+
+  @override
+  String get targetsTitle => 'Struktura docelowa';
+
+  @override
+  String get targetsHint =>
+      'Ustaw, jaką część portfela ma stanowić każda spółka. Puste pole oznacza brak celu. Aplikacja pokaże, co kupić lub sprzedać, aby go osiągnąć.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Razem: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kup ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sprzedaj ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Zgodnie z celem';
 }

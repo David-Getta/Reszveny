@@ -2258,4 +2258,39 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 həftəlik maksimumdan məsafə';
+
+  @override
+  String get briefAutoTitle => 'Hər səhər gündəlik xülasə';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Bu gün səhmlərinizlə» tətbiq işlədikcə saat 7:00-dan sonra avtomatik hazırlanır; kompüterlərdə bildiriş sizə xəbər verir. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
+
+  @override
+  String get targetsButton => 'Hədəf bölgüsü';
+
+  @override
+  String get targetsTitle => 'Hədəf bölgüsü';
+
+  @override
+  String get targetsHint =>
+      'Hər səhmin portfelin hansı payını tutmalı olduğunu təyin edin. Hədəf yoxdursa, sahəni boş saxlayın. Tətbiq sonra ora çatmaq üçün nəyi almaq və ya satmaq lazım olduğunu göstərəcək.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Cəmi: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Al ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sat ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Hədəfdə';
 }

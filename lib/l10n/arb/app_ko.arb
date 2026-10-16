@@ -605,5 +605,14 @@
   "allocationSectors": "섹터",
   "allocationCurrencies": "통화",
   "compareReturn1y": "1년 수익률",
-  "compareFromHigh": "52주 최고가 대비"
+  "compareFromHigh": "52주 최고가 대비",
+  "briefAutoTitle": "매일 아침 일일 요약",
+  "briefAutoSubtitle": "앱이 실행 중이면 오전 7시 이후 ‘오늘의 내 종목’이 자동으로 만들어집니다. 컴퓨터에서는 알림으로 알려 드립니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.",
+  "targetsButton": "목표 비중",
+  "targetsTitle": "목표 비중",
+  "targetsHint": "각 종목이 포트폴리오에서 차지할 비중을 설정하세요. 목표가 없으면 칸을 비워 두세요. 그러면 앱이 목표에 맞추려면 무엇을 매수하거나 매도해야 하는지 보여 줍니다.",
+  "targetsSum": "합계: {percent}",
+  "rebalanceBuy": "매수 ≈ {amount}",
+  "rebalanceSell": "매도 ≈ {amount}",
+  "rebalanceOk": "목표 도달"
 }

@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Currency",
   "compareReturn1y": "1 ka tuig nga ganansya",
-  "compareFromHigh": "Halin sa pinakataas sa 52 ka semana"
+  "compareFromHigh": "Halin sa pinakataas sa 52 ka semana",
+  "briefAutoTitle": "Adlaw-adlaw nga buod kada aga",
+  "briefAutoSubtitle": "Ang “Subong upod ang imo mga stock” awtomatiko nga mahimo pagkatapos sang 7:00 sang aga samtang nagadalagan ang app; sa mga kompyuter, may notipikasyon nga magapahibalo sa imo. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.",
+  "targetsButton": "Target nga pagbahin",
+  "targetsTitle": "Target nga pagbahin",
+  "targetsHint": "Itakda kon pila ka bahin sang portfolio ang dapat sa kada stock. Bayai nga blangko ang field kon wala sing target. Dayon ipakita sang app kon ano ang baklon ukon ibaligya agod makalab-ot didto.",
+  "targetsSum": "Kabilugan: {percent}",
+  "rebalanceBuy": "Bakla ≈ {amount}",
+  "rebalanceSell": "Ibaligya ≈ {amount}",
+  "rebalanceOk": "Ara sa target"
 }

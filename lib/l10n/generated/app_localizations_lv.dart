@@ -2296,4 +2296,39 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'No 52 nedēļu maksimuma';
+
+  @override
+  String get briefAutoTitle => 'Dienas kopsavilkums katru rītu';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Šodien ar jūsu akcijām“ tiek izveidots automātiski pēc plkst. 7.00, kamēr lietotne darbojas; datoros par to informē paziņojums. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
+
+  @override
+  String get targetsButton => 'Mērķa sadalījums';
+
+  @override
+  String get targetsTitle => 'Mērķa sadalījums';
+
+  @override
+  String get targetsHint =>
+      'Norādiet, kādu portfeļa daļu jāaizņem katrai akcijai. Atstājiet lauku tukšu, ja mērķa nav. Pēc tam lietotne parādīs, ko pirkt vai pārdot, lai to sasniegtu.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Kopā: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Pirkt ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Pārdot ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Atbilst mērķim';
 }

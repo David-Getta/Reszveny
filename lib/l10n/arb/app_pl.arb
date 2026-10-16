@@ -605,5 +605,14 @@
   "allocationSectors": "Sektory",
   "allocationCurrencies": "Waluty",
   "compareReturn1y": "Stopa zwrotu 1 rok",
-  "compareFromHigh": "Od maksimum 52-tygodniowego"
+  "compareFromHigh": "Od maksimum 52-tygodniowego",
+  "briefAutoTitle": "Codzienne podsumowanie każdego ranka",
+  "briefAutoSubtitle": "„Dziś z Twoimi akcjami” powstaje automatycznie po 7:00, gdy aplikacja jest uruchomiona; na komputerach poinformuje Cię o tym powiadomienie. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
+  "targetsButton": "Struktura docelowa",
+  "targetsTitle": "Struktura docelowa",
+  "targetsHint": "Ustaw, jaką część portfela ma stanowić każda spółka. Puste pole oznacza brak celu. Aplikacja pokaże, co kupić lub sprzedać, aby go osiągnąć.",
+  "targetsSum": "Razem: {percent}",
+  "rebalanceBuy": "Kup ≈ {amount}",
+  "rebalanceSell": "Sprzedaj ≈ {amount}",
+  "rebalanceOk": "Zgodnie z celem"
 }

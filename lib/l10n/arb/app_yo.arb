@@ -605,5 +605,14 @@
   "allocationSectors": "Ẹ̀ka",
   "allocationCurrencies": "Owó",
   "compareReturn1y": "Èrè ọdún 1",
-  "compareFromHigh": "Láti ga jùlọ ní ọ̀sẹ̀ 52"
+  "compareFromHigh": "Láti ga jùlọ ní ọ̀sẹ̀ 52",
+  "briefAutoTitle": "Àkópọ̀ ojoojúmọ́ ní òwúrọ̀ kọ̀ọ̀kan",
+  "briefAutoSubtitle": "“Lónìí pẹ̀lú àwọn ìpín rẹ” máa ń ṣe ara rẹ̀ lẹ́yìn 7:00 òwúrọ̀ nígbà tí áàpù náà bá ń ṣiṣẹ́; lórí kọ̀ǹpútà, ìfitónilétí kan yóò sọ fún ọ. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.",
+  "targetsButton": "Ìpínkiri àfojúsùn",
+  "targetsTitle": "Ìpínkiri àfojúsùn",
+  "targetsHint": "Ṣètò iye ìpín àpò-ìdókòwò tí ìpín kọ̀ọ̀kan yẹ kí ó ní. Fi àyè sílẹ̀ ní òfo bí kò bá sí àfojúsùn. Lẹ́yìn náà áàpù yóò fi ohun tí o yẹ kí o rà tàbí tà hàn.",
+  "targetsSum": "Àpapọ̀: {percent}",
+  "rebalanceBuy": "Rà á ≈ {amount}",
+  "rebalanceSell": "Tà á ≈ {amount}",
+  "rebalanceOk": "Ó wà ní àfojúsùn"
 }

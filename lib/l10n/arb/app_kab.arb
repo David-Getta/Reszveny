@@ -605,5 +605,14 @@
   "allocationSectors": "Igezdan",
   "allocationCurrencies": "Tidrimin",
   "compareReturn1y": "Afaris n 1 n useggas",
-  "compareFromHigh": "Si afellay n 52 n yimalasen"
+  "compareFromHigh": "Si afellay n 52 n yimalasen",
+  "briefAutoTitle": "Agzul n yal ass yal taṣebḥit",
+  "briefAutoSubtitle": "«Ass-a d tigemmi-k» yettwaxdam s wudem awurman deffir 7:00 n tṣebḥit mi ara yeddu wesnas; ɣef yiselkimen, yiwen n ulɣu ad k-yessalel. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.",
+  "targetsButton": "Beṭṭu n yiswi",
+  "targetsTitle": "Beṭṭu n yiswi",
+  "targetsHint": "Sbadu acḥal n uḥric seg upurtfulyu ara yesεu yal iksyun. Eǧǧ urti d ilem ma ulac iswi. Syin asnas ad ak-d-yesken d acu ara taɣeḍ neɣ ara tzenzeḍ akken ad tawḍeḍ ɣer din.",
+  "targetsSum": "Asemday: {percent}",
+  "rebalanceBuy": "Aɣ ≈ {amount}",
+  "rebalanceSell": "Zenz ≈ {amount}",
+  "rebalanceOk": "Deg yiswi"
 }

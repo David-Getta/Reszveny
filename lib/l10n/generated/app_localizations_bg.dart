@@ -2257,4 +2257,39 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'От 52-седмичния максимум';
+
+  @override
+  String get briefAutoTitle => 'Дневно резюме всяка сутрин';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Днес с вашите акции“ се създава автоматично след 7:00 ч., докато приложението работи; на компютри ще ви уведоми известие. Използва дневния ви лимит за въпроси, не анализ.';
+
+  @override
+  String get targetsButton => 'Целево разпределение';
+
+  @override
+  String get targetsTitle => 'Целево разпределение';
+
+  @override
+  String get targetsHint =>
+      'Задайте какъв дял от портфейла да заема всяка акция. Оставете полето празно, ако няма цел. След това приложението ще покаже какво да купите или продадете, за да стигнете дотам.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Общо: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Купи ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Продай ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Според целта';
 }

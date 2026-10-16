@@ -605,5 +605,14 @@
   "allocationSectors": "Sectoare",
   "allocationCurrencies": "Monede",
   "compareReturn1y": "Randament pe 1 an",
-  "compareFromHigh": "Față de maximul de 52 de săptămâni"
+  "compareFromHigh": "Față de maximul de 52 de săptămâni",
+  "briefAutoTitle": "Rezumat zilnic în fiecare dimineață",
+  "briefAutoSubtitle": "„Azi cu acțiunile tale” se creează automat după ora 7:00 cât timp aplicația rulează; pe computere te anunță o notificare. Folosește limita ta zilnică de întrebări, nu o analiză.",
+  "targetsButton": "Distribuție țintă",
+  "targetsTitle": "Distribuție țintă",
+  "targetsHint": "Setează ce pondere din portofoliu ar trebui să aibă fiecare acțiune. Lasă câmpul gol dacă nu există țintă. Aplicația îți arată apoi ce să cumperi sau să vinzi ca să ajungi acolo.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Cumpără ≈ {amount}",
+  "rebalanceSell": "Vinde ≈ {amount}",
+  "rebalanceOk": "La țintă"
 }

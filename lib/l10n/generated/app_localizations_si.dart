@@ -2254,4 +2254,39 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'සති 52 ඉහළමේ සිට දුර';
+
+  @override
+  String get briefAutoTitle => 'සෑම උදෑසනකම දෛනික සාරාංශය';
+
+  @override
+  String get briefAutoSubtitle =>
+      'යෙදුම ක්‍රියාත්මක වන අතරතුර උදේ 7:00න් පසු “අද ඔබේ කොටස් සමඟ” ස්වයංක්‍රීයව සකස් වේ; පරිගණකවල දැනුම්දීමක් ඔබට දන්වයි. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
+
+  @override
+  String get targetsButton => 'ඉලක්ක බෙදීම';
+
+  @override
+  String get targetsTitle => 'ඉලක්ක බෙදීම';
+
+  @override
+  String get targetsHint =>
+      'එක් එක් කොටසට කළඹෙන් කොපමණ කොටසක් තිබිය යුතුදැයි සකසන්න. ඉලක්කයක් නැත්නම් ක්ෂේත්‍රය හිස්ව තබන්න. එවිට එතැනට ළඟා වීමට මිලදී ගත යුත්තේ හෝ විකිණිය යුත්තේ කුමක්දැයි යෙදුම පෙන්වයි.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'එකතුව: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'මිලදී ගන්න ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'විකුණන්න ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ඉලක්කයේ';
 }

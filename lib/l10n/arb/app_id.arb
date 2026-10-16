@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Mata uang",
   "compareReturn1y": "Imbal hasil 1 tahun",
-  "compareFromHigh": "Dari tertinggi 52 minggu"
+  "compareFromHigh": "Dari tertinggi 52 minggu",
+  "briefAutoTitle": "Ringkasan harian setiap pagi",
+  "briefAutoSubtitle": "“Hari ini dengan saham Anda” dibuat otomatis setelah pukul 07.00 selama aplikasi berjalan; di komputer, notifikasi akan memberi tahu Anda. Memakai kuota pertanyaan harian Anda, bukan analisis.",
+  "targetsButton": "Alokasi target",
+  "targetsTitle": "Alokasi target",
+  "targetsHint": "Tetapkan porsi portofolio yang seharusnya dimiliki setiap saham. Biarkan kolom kosong jika tidak ada target. Aplikasi lalu menunjukkan apa yang perlu dibeli atau dijual untuk mencapainya.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Beli ≈ {amount}",
+  "rebalanceSell": "Jual ≈ {amount}",
+  "rebalanceOk": "Sesuai target"
 }

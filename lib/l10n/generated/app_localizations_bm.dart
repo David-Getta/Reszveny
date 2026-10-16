@@ -2254,4 +2254,39 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ka bɔ Dɔgɔkun 52 sɔngɔ sanfɛla la';
+
+  @override
+  String get briefAutoTitle => 'Don o don kuntaman sɔgɔma o sɔgɔma';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Bi ni i ka aksiyɔnw” bɛ dilan a yɛrɛ ma sɔgɔma 7:00 kɔfɛ ni app bɛ baara la; ɔridinatɛri kan, ladɔnniyali bɛ a fɔ i ye. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String get targetsButton => 'Laɲini tilacogo';
+
+  @override
+  String get targetsTitle => 'Laɲini tilacogo';
+
+  @override
+  String get targetsHint =>
+      'A sigi aksiyɔn kelen-kelen bɛɛ ka kan ka portfolio tilayɔrɔ hakɛ min sɔrɔ. Ni laɲini tɛ, yɔrɔ to lankolon. O kɔ, app bɛna a jira min ka kan ka san walima ka feere walasa ka se o ma.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Bɛɛ lajɛlen: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'San ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Feere ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'A sera laɲini ma';
 }

@@ -2243,4 +2243,39 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Sẽn yi yʋʋmd pʋgẽ yɩɩd fãa';
+
+  @override
+  String get briefAutoTitle => 'Daar fãa kibar-kɩɩbsã yibeoog fãa';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Rũndã ne f aksɩyõnã” maanda a menga yibeoog 7:00 poor tɩ app-ã ket n tʋmda; ordinatɛɛr-dãmb zugu, moonegr na n wilg-f. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
+
+  @override
+  String get targetsButton => 'Pʋɩɩbã sẽn data';
+
+  @override
+  String get targetsTitle => 'Pʋɩɩbã sẽn data';
+
+  @override
+  String get targetsHint =>
+      'Wilg aksiõ fãa sẽn segd n paam portfolio wã pʋɩɩr a wãna. Bas zĩigã vɩʋʋg sã n ka tar raabo. App wã na n wilga y sẽn segd n da bɩ n koose.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Gilli: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Da ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Koose ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ta raabã';
 }

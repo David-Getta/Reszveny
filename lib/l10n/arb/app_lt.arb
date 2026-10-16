@@ -605,5 +605,14 @@
   "allocationSectors": "Sektoriai",
   "allocationCurrencies": "Valiutos",
   "compareReturn1y": "1 metų grąža",
-  "compareFromHigh": "Nuo 52 savaičių maksimumo"
+  "compareFromHigh": "Nuo 52 savaičių maksimumo",
+  "briefAutoTitle": "Dienos santrauka kiekvieną rytą",
+  "briefAutoSubtitle": "„Šiandien su jūsų akcijomis“ sukuriama automatiškai po 7:00, kol programėlė veikia; kompiuteriuose jus informuos pranešimas. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
+  "targetsButton": "Tikslinis paskirstymas",
+  "targetsTitle": "Tikslinis paskirstymas",
+  "targetsHint": "Nustatykite, kokią portfelio dalį turėtų sudaryti kiekviena akcija. Palikite lauką tuščią, jei tikslo nėra. Tada programa parodys, ką reikia pirkti ar parduoti, kad jį pasiektumėte.",
+  "targetsSum": "Iš viso: {percent}",
+  "rebalanceBuy": "Pirkti ≈ {amount}",
+  "rebalanceSell": "Parduoti ≈ {amount}",
+  "rebalanceOk": "Atitinka tikslą"
 }

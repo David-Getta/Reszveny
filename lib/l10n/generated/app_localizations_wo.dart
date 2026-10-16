@@ -2251,4 +2251,39 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ci gëna kawe ci 52 ayu-bés';
+
+  @override
+  String get briefAutoTitle => 'Tënk bu bés bu nekk, suba su nekk';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Tey ak sa aksiyoŋ yi” dafay defaru boppam ginnaaw 7:00 suba bi diggante bi app bi di dox; ci ordinaatëer yi, ab yégle dina la ko xamal. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
+
+  @override
+  String get targetsButton => 'Séddale bu ñu bëgg';
+
+  @override
+  String get targetsTitle => 'Séddale bu ñu bëgg';
+
+  @override
+  String get targetsHint =>
+      'Tànnal ñaata wàll ci portefeuille bi la aksiyoŋ bu nekk war a am. Bàyyil barab bi mu des su amul jubluwaay. Aplikasioŋ bi dina la won li nga war a jënd walla jaay.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Lépp: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Jënd ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Jaay ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ci jubluwaay bi';
 }

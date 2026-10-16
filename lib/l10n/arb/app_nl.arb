@@ -605,5 +605,14 @@
   "allocationSectors": "Sectoren",
   "allocationCurrencies": "Valuta's",
   "compareReturn1y": "Rendement 1 jaar",
-  "compareFromHigh": "Vanaf 52-weeks hoog"
+  "compareFromHigh": "Vanaf 52-weeks hoog",
+  "briefAutoTitle": "Dagelijkse samenvatting elke ochtend",
+  "briefAutoSubtitle": "‘Vandaag met je aandelen’ wordt na 7.00 uur automatisch gemaakt zolang de app draait; op computers krijg je een melding. Gebruikt je dagelijkse vragentegoed, geen analyse.",
+  "targetsButton": "Doelverdeling",
+  "targetsTitle": "Doelverdeling",
+  "targetsHint": "Stel in welk deel van de portefeuille elk aandeel moet hebben. Laat een veld leeg voor geen doel. De app laat dan zien wat je moet kopen of verkopen om daar te komen.",
+  "targetsSum": "Totaal: {percent}",
+  "rebalanceBuy": "Kopen ≈ {amount}",
+  "rebalanceSell": "Verkopen ≈ {amount}",
+  "rebalanceOk": "Op doel"
 }

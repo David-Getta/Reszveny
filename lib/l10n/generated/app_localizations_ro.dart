@@ -2293,4 +2293,39 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Față de maximul de 52 de săptămâni';
+
+  @override
+  String get briefAutoTitle => 'Rezumat zilnic în fiecare dimineață';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Azi cu acțiunile tale” se creează automat după ora 7:00 cât timp aplicația rulează; pe computere te anunță o notificare. Folosește limita ta zilnică de întrebări, nu o analiză.';
+
+  @override
+  String get targetsButton => 'Distribuție țintă';
+
+  @override
+  String get targetsTitle => 'Distribuție țintă';
+
+  @override
+  String get targetsHint =>
+      'Setează ce pondere din portofoliu ar trebui să aibă fiecare acțiune. Lasă câmpul gol dacă nu există țintă. Aplicația îți arată apoi ce să cumperi sau să vinzi ca să ajungi acolo.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Cumpără ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Vinde ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'La țintă';
 }

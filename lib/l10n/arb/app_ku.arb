@@ -605,5 +605,14 @@
   "allocationSectors": "Sektor",
   "allocationCurrencies": "Dirav",
   "compareReturn1y": "Vegera 1 salî",
-  "compareFromHigh": "Ji bilindtirîna 52 hefteyan"
+  "compareFromHigh": "Ji bilindtirîna 52 hefteyan",
+  "briefAutoTitle": "Kurteya rojane her sibê",
+  "briefAutoSubtitle": "“Îro bi pişkên te re” piştî saet 7:00an bi xweber tê amadekirin heta ku sepan dixebite; li ser komputeran agahdariyek te agahdar dike. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
+  "targetsButton": "Dabeşkirina armanc",
+  "targetsTitle": "Dabeşkirina armanc",
+  "targetsHint": "Diyar bike ku divê her pişk çi qas para portfoliyoyê hebe. Heke armanc tune be, qadê vala bihêle. Paşê sepan nîşan dide ku ji bo gihîştina wê divê tu çi bikirî an bifiroşî.",
+  "targetsSum": "Tevahî: {percent}",
+  "rebalanceBuy": "Bikire ≈ {amount}",
+  "rebalanceSell": "Bifiroşe ≈ {amount}",
+  "rebalanceOk": "Li ser armancê"
 }

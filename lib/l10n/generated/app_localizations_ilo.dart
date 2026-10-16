@@ -2274,4 +2274,39 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Manipud iti kangatuan iti 52 a lawas';
+
+  @override
+  String get briefAutoTitle => 'Inaldaw a pakabuklan iti tunggal bigat';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Ti “Ita nga aldaw kadagiti stock-mo” ket automatiko a maaramid kalpasan ti 7:00 iti bigat bayat nga agtartaray ti app; kadagiti kompiuter, maysa a pakaammo ti mangipakaammo kenka. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
+
+  @override
+  String get targetsButton => 'Target a panangbingay';
+
+  @override
+  String get targetsTitle => 'Target a panangbingay';
+
+  @override
+  String get targetsHint =>
+      'Ikeddeng no mano a paset ti portfolio ti rumbeng nga adda iti tunggal stock. Baybayan a blangko ti field no awan ti target. Kalpasanna, ipakita ti app no ania ti gatangen wenno ilako tapno makadanon sadiay.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Dagup: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Gumatang ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ilako ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Adda iti target';
 }

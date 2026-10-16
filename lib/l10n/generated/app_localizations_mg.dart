@@ -2273,4 +2273,39 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get compareFromHigh =>
       'Avy amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
+
+  @override
+  String get briefAutoTitle => 'Famintinana isan’andro isa-maraina';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Ny “Anio miaraka amin’ny lozamanao” dia mamorona ho azy aorian’ny 7:00 maraina raha mbola mandeha ny app; amin’ny solosaina, misy fampandrenesana milaza aminao izany. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
+
+  @override
+  String get targetsButton => 'Tanjona fizarana';
+
+  @override
+  String get targetsTitle => 'Tanjona fizarana';
+
+  @override
+  String get targetsHint =>
+      'Farito hoe ohatrinona amin\'ny portefeuille no anjaran\'ny saha tsirairay. Avelao ho foana ny saha raha tsy misy tanjona. Asehon\'ny app avy eo izay tokony hovidiana na hamidy.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Totaly: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Vidio ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Amidy ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Mifanaraka amin\'ny tanjona';
 }

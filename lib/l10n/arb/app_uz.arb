@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorlar",
   "allocationCurrencies": "Valyutalar",
   "compareReturn1y": "1 yillik daromadlilik",
-  "compareFromHigh": "52 haftalik maksimumdan masofa"
+  "compareFromHigh": "52 haftalik maksimumdan masofa",
+  "briefAutoTitle": "Har tong kunlik xulosa",
+  "briefAutoSubtitle": "«Bugun aksiyalaringiz bilan» ilova ishlab turganda soat 7:00 dan keyin avtomatik tayyorlanadi; kompyuterlarda bu haqda bildirishnoma xabar beradi. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
+  "targetsButton": "Maqsadli taqsimot",
+  "targetsTitle": "Maqsadli taqsimot",
+  "targetsHint": "Har bir aksiya portfelning qancha ulushini egallashi kerakligini belgilang. Maqsad bo‘lmasa, maydonni bo‘sh qoldiring. Keyin ilova unga erishish uchun nimani sotib olish yoki sotish kerakligini ko‘rsatadi.",
+  "targetsSum": "Jami: {percent}",
+  "rebalanceBuy": "Sotib olish ≈ {amount}",
+  "rebalanceSell": "Sotish ≈ {amount}",
+  "rebalanceOk": "Maqsadda"
 }

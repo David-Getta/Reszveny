@@ -134,6 +134,7 @@ class SyncService extends ChangeNotifier {
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
+    if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
@@ -189,6 +190,8 @@ class SyncService extends ChangeNotifier {
         for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
       }.toList(),
       'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
+      // Célarányok: tickerenként a helyi nyer.
+      'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
       'alerts': alertsMerged,
       'notes': mergedNotes,
@@ -238,6 +241,7 @@ class SyncService extends ChangeNotifier {
     if (data['watch_lists'] is List) {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
     }
+    if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
     await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);

@@ -605,5 +605,14 @@
   "allocationSectors": "Sectores",
   "allocationCurrencies": "Moedas",
   "compareReturn1y": "Rendibilidade a 1 ano",
-  "compareFromHigh": "Desde o máximo de 52 semanas"
+  "compareFromHigh": "Desde o máximo de 52 semanas",
+  "briefAutoTitle": "Resumo diario cada mañá",
+  "briefAutoSubtitle": "«Hoxe coas túas accións» créase automaticamente despois das 7:00 mentres a app está en execución; nos ordenadores avísate unha notificación. Usa o teu límite diario de preguntas, non unha análise.",
+  "targetsButton": "Distribución obxectivo",
+  "targetsTitle": "Distribución obxectivo",
+  "targetsHint": "Indica que parte da carteira debe ter cada acción. Deixa o campo baleiro se non hai obxectivo. A app mostrará despois que comprar ou vender para chegar alí.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Comprar ≈ {amount}",
+  "rebalanceSell": "Vender ≈ {amount}",
+  "rebalanceOk": "No obxectivo"
 }

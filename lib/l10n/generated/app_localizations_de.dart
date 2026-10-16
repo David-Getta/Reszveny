@@ -2269,4 +2269,39 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Abstand zum 52-Wochen-Hoch';
+
+  @override
+  String get briefAutoTitle => 'Tägliche Zusammenfassung jeden Morgen';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Heute bei deinen Aktien“ wird nach 7 Uhr automatisch erstellt, solange die App läuft; auf Computern informiert dich eine Benachrichtigung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
+
+  @override
+  String get targetsButton => 'Zielaufteilung';
+
+  @override
+  String get targetsTitle => 'Zielaufteilung';
+
+  @override
+  String get targetsHint =>
+      'Festlegen, welchen Anteil am Portfolio jede Aktie haben soll. Leeres Feld: kein Ziel. Die App zeigt dann, was zu kaufen oder zu verkaufen ist, um dorthin zu kommen.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Gesamt: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kaufen ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Verkaufen ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Im Ziel';
 }

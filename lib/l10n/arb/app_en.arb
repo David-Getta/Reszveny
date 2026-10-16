@@ -1742,5 +1742,40 @@
   "compareFromHigh": "From 52-week high",
   "@compareFromHigh": {
     "description": "Row label in the stock comparison table: how far the price is below its 52-week high, in %."
-  }
+  },
+  "briefAutoTitle": "Daily summary every morning",
+  "@briefAutoTitle": {
+    "description": "Settings switch: the \"Today with your stocks\" AI summary is made automatically each morning."
+  },
+  "briefAutoSubtitle": "“Today with your stocks” is made automatically after 7 am while the app is running; on computers a notification tells you. Uses your daily question allowance, not an analysis.",
+  "targetsButton": "Target allocation",
+  "targetsTitle": "Target allocation",
+  "targetsHint": "Set what share of the portfolio each stock should have. Leave a field empty for no target. The app then shows what to buy or sell to get there.",
+  "targetsSum": "Total: {percent}",
+  "@targetsSum": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "rebalanceBuy": "Buy ≈ {amount}",
+  "@rebalanceBuy": {
+    "description": "How much more of a stock to buy to reach its target share; amount is formatted money.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "rebalanceSell": "Sell ≈ {amount}",
+  "@rebalanceSell": {
+    "description": "How much of a stock to sell to get down to its target share.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "rebalanceOk": "On target"
 }

@@ -2270,4 +2270,39 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 semanapi aswan hatunmanta karuynin';
+
+  @override
+  String get briefAutoTitle => 'Sapa p’unchay pisichasqa sapa tutamanta';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Kunan p’unchay acciónniykikunawan” kikinmanta ruwakun tutamanta 7:00 qhipanta app llamk’ashaqtin; computadorakunapi huk willakuy willasunki. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
+
+  @override
+  String get targetsButton => 'Munasqa rakiy';
+
+  @override
+  String get targetsTitle => 'Munasqa rakiy';
+
+  @override
+  String get targetsHint =>
+      'Sapa accionpaq portafoliomanta hayk\'a rakinta kananta churay. Mana munasqa kaptinqa, k\'itita ch\'usaqta saqiy. Chaymantaqa app rikuchinqa ima rantinata utaq rantikunata.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Llapan: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Rantiy ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Rantikuy ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Munasqapi';
 }

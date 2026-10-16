@@ -605,5 +605,14 @@
   "allocationSectors": "Sektorlar",
   "allocationCurrencies": "Walýutalar",
   "compareReturn1y": "1 ýyllyk girdejililik",
-  "compareFromHigh": "52 hepdäniň iň ýokarysyndan aralyk"
+  "compareFromHigh": "52 hepdäniň iň ýokarysyndan aralyk",
+  "briefAutoTitle": "Her irden gündelik jemleme",
+  "briefAutoSubtitle": "“Şu gün paýnamalaryňyz bilen” programma işläp durka sagat 7:00-dan soň awtomatik taýýarlanýar; kompýuterlerde bildiriş size habar berer. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
+  "targetsButton": "Maksatly paýlanyş",
+  "targetsTitle": "Maksatly paýlanyş",
+  "targetsHint": "Her paýnamanyň portfeliň näçe paýyny eýelemelidigini belläň. Maksat ýok bolsa, meýdany boş goýuň. Soňra programma oňa ýetmek üçin näme satyn almalydygyny ýa-da satmalydygyny görkezer.",
+  "targetsSum": "Jemi: {percent}",
+  "rebalanceBuy": "Satyn al ≈ {amount}",
+  "rebalanceSell": "Sat ≈ {amount}",
+  "rebalanceOk": "Maksada laýyk"
 }

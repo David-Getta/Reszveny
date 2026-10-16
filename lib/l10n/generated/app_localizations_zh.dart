@@ -2147,6 +2147,41 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get compareFromHigh => '距52周最高';
+
+  @override
+  String get briefAutoTitle => '每日早间摘要';
+
+  @override
+  String get briefAutoSubtitle =>
+      '应用运行期间，“今天你的股票”会在早上7点后自动生成；在电脑上会通过通知提醒你。占用每日提问次数，不消耗分析次数。';
+
+  @override
+  String get targetsButton => '目标配置';
+
+  @override
+  String get targetsTitle => '目标配置';
+
+  @override
+  String get targetsHint =>
+      '设置每只股票在投资组合中应占的比例。留空表示不设目标。应用随后会显示需要买入或卖出多少才能达到目标。';
+
+  @override
+  String targetsSum(String percent) {
+    return '合计：$percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return '买入 ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return '卖出 ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => '已达目标';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4290,4 +4325,39 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get compareFromHigh => '距52週高位';
+
+  @override
+  String get briefAutoTitle => '每日早晨摘要';
+
+  @override
+  String get briefAutoSubtitle =>
+      '應用程式運行期間，「今天你的股票」會在早上7時後自動產生；在電腦上會以通知提醒你。佔用每日提問次數，不消耗分析次數。';
+
+  @override
+  String get targetsButton => '目標配置';
+
+  @override
+  String get targetsTitle => '目標配置';
+
+  @override
+  String get targetsHint =>
+      '設定每隻股票在投資組合中應佔的比例。留空即不設目標。應用程式隨後會顯示需要買入或賣出多少才能達到目標。';
+
+  @override
+  String targetsSum(String percent) {
+    return '合計：$percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return '買入 ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return '賣出 ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => '已達目標';
 }

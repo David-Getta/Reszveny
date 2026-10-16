@@ -2228,4 +2228,39 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'ห่างจากสูงสุดรอบ 52 สัปดาห์';
+
+  @override
+  String get briefAutoTitle => 'สรุปประจำวันทุกเช้า';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“วันนี้กับหุ้นของคุณ” จะสร้างขึ้นอัตโนมัติหลัง 7:00 น. ขณะที่แอปทำงานอยู่ บนคอมพิวเตอร์จะมีการแจ้งเตือนให้ทราบ ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
+
+  @override
+  String get targetsButton => 'สัดส่วนเป้าหมาย';
+
+  @override
+  String get targetsTitle => 'สัดส่วนเป้าหมาย';
+
+  @override
+  String get targetsHint =>
+      'กำหนดว่าหุ้นแต่ละตัวควรมีสัดส่วนเท่าใดในพอร์ต เว้นช่องว่างไว้หากไม่มีเป้าหมาย จากนั้นแอปจะแสดงว่าควรซื้อหรือขายอะไรเพื่อไปถึงเป้าหมาย';
+
+  @override
+  String targetsSum(String percent) {
+    return 'รวม: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'ซื้อ ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'ขาย ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ตรงเป้าหมาย';
 }

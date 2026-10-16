@@ -2264,4 +2264,39 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kumbukila ku mushinga wa kuulu wa mingu 52';
+
+  @override
+  String get briefAutoTitle => 'Mukusa wa dituku dionso dinda dionso';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Lelu ne bintu biebe bia mu tshisumbu” bidi bienzeka nkayabi panyima pa 7:00 wa mu dinda padi application wenza mudimu; ku ordinatêre, dimanyisha nedikuambile. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
+
+  @override
+  String get targetsButton => 'Diabanya dia tshipatshila';
+
+  @override
+  String get targetsTitle => 'Diabanya dia tshipatshila';
+
+  @override
+  String get targetsHint =>
+      'Teka tshitupa tshia portfolio tshidi action yonso ne bua kupeta. Shiya muaba mutupu bikala kakuyi tshipatshila. Pashishe app neikuleje tshia kusumba anyi kusumbisha bua kufika kuoku.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Bionso: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Sumba ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sumbisha ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Mufike ku tshipatshila';
 }

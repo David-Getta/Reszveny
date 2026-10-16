@@ -605,5 +605,14 @@
   "allocationSectors": "Séktor",
   "allocationCurrencies": "Mata uang",
   "compareReturn1y": "Hasil 1 taun",
-  "compareFromHigh": "Ti pangluhurna 52 minggu"
+  "compareFromHigh": "Ti pangluhurna 52 minggu",
+  "briefAutoTitle": "Ringkesan unggal dinten unggal énjing",
+  "briefAutoSubtitle": "“Dinten ieu sareng saham anjeun” didamel otomatis saatos jam 07.00 salami aplikasi jalan; dina komputer, béwara bakal ngabéjaan anjeun. Nganggo wates patarosan sapopoé anjeun, sanés analisis.",
+  "targetsButton": "Alokasi target",
+  "targetsTitle": "Alokasi target",
+  "targetsHint": "Tangtukeun sabaraha bagian portopolio anu kedah dipiboga ku unggal saham. Antepkeun kolom kosong upami teu aya target. Aplikasi teras nembongkeun naon anu kedah dibeuli atanapi dijual.",
+  "targetsSum": "Jumlah: {percent}",
+  "rebalanceBuy": "Beuli ≈ {amount}",
+  "rebalanceSell": "Jual ≈ {amount}",
+  "rebalanceOk": "Saluyu target"
 }

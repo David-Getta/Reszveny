@@ -2260,4 +2260,39 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Vanaf 52-weke-hoogtepunt';
+
+  @override
+  String get briefAutoTitle => 'Daaglikse opsomming elke oggend';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Vandag met jou aandele” word ná 07:00 outomaties gemaak terwyl die app loop; op rekenaars laat ’n kennisgewing jou weet. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
+
+  @override
+  String get targetsButton => 'Teikentoewysing';
+
+  @override
+  String get targetsTitle => 'Teikentoewysing';
+
+  @override
+  String get targetsHint =>
+      'Stel watter deel van die portefeulje elke aandeel moet hê. Laat \'n veld leeg vir geen teiken. Die app wys dan wat jy moet koop of verkoop om daar te kom.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Totaal: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Koop ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Verkoop ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Op teiken';
 }

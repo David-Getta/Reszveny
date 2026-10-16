@@ -2260,4 +2260,39 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52 haftalik maksimumdan masofa';
+
+  @override
+  String get briefAutoTitle => 'Har tong kunlik xulosa';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Bugun aksiyalaringiz bilan» ilova ishlab turganda soat 7:00 dan keyin avtomatik tayyorlanadi; kompyuterlarda bu haqda bildirishnoma xabar beradi. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
+
+  @override
+  String get targetsButton => 'Maqsadli taqsimot';
+
+  @override
+  String get targetsTitle => 'Maqsadli taqsimot';
+
+  @override
+  String get targetsHint =>
+      'Har bir aksiya portfelning qancha ulushini egallashi kerakligini belgilang. Maqsad bo‘lmasa, maydonni bo‘sh qoldiring. Keyin ilova unga erishish uchun nimani sotib olish yoki sotish kerakligini ko‘rsatadi.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jami: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Sotib olish ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sotish ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Maqsadda';
 }

@@ -483,6 +483,14 @@ class _AnalysisSettings extends StatelessWidget {
                 value: prefs.counterArgument,
                 onChanged: prefs.setCounterArgument,
               ),
+              SwitchListTile(
+                key: const ValueKey('morning-brief'),
+                contentPadding: EdgeInsets.zero,
+                title: Text(l10n.briefAutoTitle),
+                subtitle: Text(l10n.briefAutoSubtitle, style: muted),
+                value: prefs.morningBrief,
+                onChanged: prefs.setMorningBrief,
+              ),
               const Divider(height: 1),
               ListTile(
                 contentPadding: EdgeInsets.zero,

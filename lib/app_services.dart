@@ -37,6 +37,7 @@ import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/news/daily_brief.dart';
+import 'features/news/morning_brief.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
@@ -104,6 +105,15 @@ class AppServices {
       marketData: marketData,
       notifier: alertNotifier ?? SystemNotifier(onClick: _openAlert),
       describe: describeAlertHit,
+    );
+    morningBrief = MorningBrief(
+      brief: brief,
+      news: news,
+      preferences: preferences,
+      notifier: alertMonitor.notifier,
+      language: () =>
+          SupportedLocales.languageFor(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)).englishName,
+      title: () => _l10n().$1.briefTitle,
     );
     earningsReminder = EarningsReminder(
       events: events,
@@ -282,6 +292,9 @@ class AppServices {
 
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtt.
   late final EarningsReminder earningsReminder;
+
+  /// Reggelente magától elkészülő napi összefoglaló (ha be van kapcsolva).
+  late final MorningBrief morningBrief;
 
   /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
   /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).

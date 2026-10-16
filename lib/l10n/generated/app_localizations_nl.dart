@@ -2261,4 +2261,39 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Vanaf 52-weeks hoog';
+
+  @override
+  String get briefAutoTitle => 'Dagelijkse samenvatting elke ochtend';
+
+  @override
+  String get briefAutoSubtitle =>
+      '‘Vandaag met je aandelen’ wordt na 7.00 uur automatisch gemaakt zolang de app draait; op computers krijg je een melding. Gebruikt je dagelijkse vragentegoed, geen analyse.';
+
+  @override
+  String get targetsButton => 'Doelverdeling';
+
+  @override
+  String get targetsTitle => 'Doelverdeling';
+
+  @override
+  String get targetsHint =>
+      'Stel in welk deel van de portefeuille elk aandeel moet hebben. Laat een veld leeg voor geen doel. De app laat dan zien wat je moet kopen of verkopen om daar te komen.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Totaal: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kopen ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Verkopen ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Op doel';
 }

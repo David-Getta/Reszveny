@@ -605,5 +605,14 @@
   "allocationSectors": "Sektore",
   "allocationCurrencies": "Valutas",
   "compareReturn1y": "1-jaar-opbrengs",
-  "compareFromHigh": "Vanaf 52-weke-hoogtepunt"
+  "compareFromHigh": "Vanaf 52-weke-hoogtepunt",
+  "briefAutoTitle": "Daaglikse opsomming elke oggend",
+  "briefAutoSubtitle": "“Vandag met jou aandele” word ná 07:00 outomaties gemaak terwyl die app loop; op rekenaars laat ’n kennisgewing jou weet. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.",
+  "targetsButton": "Teikentoewysing",
+  "targetsTitle": "Teikentoewysing",
+  "targetsHint": "Stel watter deel van die portefeulje elke aandeel moet hê. Laat 'n veld leeg vir geen teiken. Die app wys dan wat jy moet koop of verkoop om daar te kom.",
+  "targetsSum": "Totaal: {percent}",
+  "rebalanceBuy": "Koop ≈ {amount}",
+  "rebalanceSell": "Verkoop ≈ {amount}",
+  "rebalanceOk": "Op teiken"
 }

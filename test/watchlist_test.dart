@@ -131,6 +131,18 @@ void main() {
     ]);
   });
 
+  test('sync: targets per ticker, the local side wins', () {
+    final merged = SyncService.merge(
+      {
+        'targets': {'AAPL': 40},
+      },
+      {
+        'targets': {'AAPL': 30, 'MSFT': 20},
+      },
+    );
+    expect(merged['targets'], {'AAPL': 40.0, 'MSFT': 20.0});
+  });
+
   testWidgets('own lists on the favorites page: create one, add a stock, filter, remove from the list', (tester) async {
     tester.view.physicalSize = const Size(1200, 2400);
     tester.view.devicePixelRatio = 1;

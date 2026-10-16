@@ -2261,4 +2261,40 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Daga mafi girma a makonni 52';
+
+  @override
+  String get briefAutoTitle =>
+      'Taƙaitaccen bayani na yau da kullum kowace safiya';
+
+  @override
+  String get briefAutoSubtitle =>
+      'Ana yin “Yau tare da hannun jarinka” kai tsaye bayan ƙarfe 7:00 na safe muddin manhajar tana aiki; a kwamfuta, sanarwa za ta sanar da kai. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
+
+  @override
+  String get targetsButton => 'Rabon kaso da ake so';
+
+  @override
+  String get targetsTitle => 'Rabon kaso da ake so';
+
+  @override
+  String get targetsHint =>
+      'Saita kason fayil ɗin jari da kowane hannun jari zai samu. Bar filin babu komai idan babu manufa. Daga nan manhajar za ta nuna abin da za a saya ko a sayar don isa can.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jimilla: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Saya ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Sayar ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ya kai manufa';
 }

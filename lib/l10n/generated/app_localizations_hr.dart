@@ -2298,4 +2298,39 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Od 52-tjednog maksimuma';
+
+  @override
+  String get briefAutoTitle => 'Dnevni sažetak svako jutro';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Danas s vašim dionicama“ izrađuje se automatski nakon 7:00 dok aplikacija radi; na računalima stiže obavijest. Troši vaše dnevno ograničenje pitanja, ne analizu.';
+
+  @override
+  String get targetsButton => 'Ciljna raspodjela';
+
+  @override
+  String get targetsTitle => 'Ciljna raspodjela';
+
+  @override
+  String get targetsHint =>
+      'Odredite koliki udio portfelja treba imati svaka dionica. Ostavite polje prazno ako nema cilja. Aplikacija će zatim pokazati što treba kupiti ili prodati da biste to postigli.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Ukupno: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Kupi ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Prodaj ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Na cilju';
 }

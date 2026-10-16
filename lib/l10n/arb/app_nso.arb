@@ -605,5 +605,14 @@
   "allocationSectors": "Makala",
   "allocationCurrencies": "Ditšhelete",
   "compareReturn1y": "Poelo ya ngwaga o 1",
-  "compareFromHigh": "Go tšwa go ya godimo ya dibeke tše 52"
+  "compareFromHigh": "Go tšwa go ya godimo ya dibeke tše 52",
+  "briefAutoTitle": "Kakaretšo ya letšatši ka letšatši mesong yohle",
+  "briefAutoSubtitle": "“Lehono le dišere tša gago” e dirwa ka boyona ka morago ga 7:00 mesong ge app e šoma; dikhomphuthareng, tsebišo e tla go tsebiša. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.",
+  "targetsButton": "Kabo ya nepo",
+  "targetsTitle": "Kabo ya nepo",
+  "targetsHint": "Bea gore šere ye nngwe le ye nngwe e swanetše go ba le karolo ye kae ya potefolio. Tlogela lepokisi le se na selo ge go se na nepo. Ka morago app e tla bontšha seo o swanetšego go se reka goba go se rekiša.",
+  "targetsSum": "Palomoka: {percent}",
+  "rebalanceBuy": "Reka ≈ {amount}",
+  "rebalanceSell": "Rekiša ≈ {amount}",
+  "rebalanceOk": "Go nepo"
 }

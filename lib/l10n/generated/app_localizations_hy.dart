@@ -2264,4 +2264,39 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Հեռավորությունը 52 շաբաթվա առավելագույնից';
+
+  @override
+  String get briefAutoTitle => 'Օրվա ամփոփում ամեն առավոտ';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«Այսօր՝ ձեր բաժնետոմսերով»-ը պատրաստվում է ավտոմատ կերպով 7:00-ից հետո, քանի դեռ հավելվածն աշխատում է։ Համակարգիչներում ծանուցում կտեղեկացնի։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String get targetsButton => 'Թիրախային բաշխում';
+
+  @override
+  String get targetsTitle => 'Թիրախային բաշխում';
+
+  @override
+  String get targetsHint =>
+      'Նշեք, թե պորտֆելի որ մասը պետք է կազմի յուրաքանչյուր բաժնետոմս։ Թողեք դաշտը դատարկ, եթե թիրախ չկա։ Այնուհետև հավելվածը ցույց կտա, թե ինչ գնել կամ վաճառել այնտեղ հասնելու համար։';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Ընդամենը՝ $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Գնել ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Վաճառել ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Թիրախում է';
 }

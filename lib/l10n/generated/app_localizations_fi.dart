@@ -2258,4 +2258,39 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Etäisyys 52 viikon ylimmästä';
+
+  @override
+  String get briefAutoTitle => 'Päivän yhteenveto joka aamu';
+
+  @override
+  String get briefAutoSubtitle =>
+      '”Tänään osakkeidesi kanssa” luodaan automaattisesti klo 7.00 jälkeen, kun sovellus on käynnissä; tietokoneilla siitä kertoo ilmoitus. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String get targetsButton => 'Tavoitejakauma';
+
+  @override
+  String get targetsTitle => 'Tavoitejakauma';
+
+  @override
+  String get targetsHint =>
+      'Määritä, kuinka suuri osuus salkusta kullakin osakkeella pitäisi olla. Jätä kenttä tyhjäksi, jos tavoitetta ei ole. Sovellus näyttää sitten, mitä pitää ostaa tai myydä tavoitteen saavuttamiseksi.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Yhteensä: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Osta ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Myy ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Tavoitteessa';
 }

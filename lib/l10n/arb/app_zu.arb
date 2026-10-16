@@ -605,5 +605,14 @@
   "allocationSectors": "Imikhakha",
   "allocationCurrencies": "Izimali",
   "compareReturn1y": "Inzuzo yonyaka o-1",
-  "compareFromHigh": "Kusuka kokuphezulu kwamasonto angu-52"
+  "compareFromHigh": "Kusuka kokuphezulu kwamasonto angu-52",
+  "briefAutoTitle": "Isifinyezo sansuku zonke njalo ekuseni",
+  "briefAutoSubtitle": "“Namuhla namasheya akho” senziwa ngokuzenzakalelayo ngemva kuka-7:00 ekuseni ngesikhathi i-app isasebenza; kumakhompyutha, isaziso sizokwazisa. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
+  "targetsButton": "Ukwabiwa okuhlosiwe",
+  "targetsTitle": "Ukwabiwa okuhlosiwe",
+  "targetsHint": "Setha ukuthi isheya ngalinye kufanele libe nengxenye engakanani yephothifoliyo. Shiya inkambu ingenalutho uma kungekho umgomo. Bese uhlelo lokusebenza lukubonisa okufanele ukuthenge noma ukuthengise.",
+  "targetsSum": "Isamba: {percent}",
+  "rebalanceBuy": "Thenga ≈ {amount}",
+  "rebalanceSell": "Thengisa ≈ {amount}",
+  "rebalanceOk": "Kumgomo"
 }

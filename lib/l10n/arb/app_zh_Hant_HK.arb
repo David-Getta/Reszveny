@@ -605,5 +605,14 @@
   "allocationSectors": "板塊",
   "allocationCurrencies": "貨幣",
   "compareReturn1y": "1年回報",
-  "compareFromHigh": "距52週高位"
+  "compareFromHigh": "距52週高位",
+  "briefAutoTitle": "每日早晨摘要",
+  "briefAutoSubtitle": "應用程式運行期間，「今天你的股票」會在早上7時後自動產生；在電腦上會以通知提醒你。佔用每日提問次數，不消耗分析次數。",
+  "targetsButton": "目標配置",
+  "targetsTitle": "目標配置",
+  "targetsHint": "設定每隻股票在投資組合中應佔的比例。留空即不設目標。應用程式隨後會顯示需要買入或賣出多少才能達到目標。",
+  "targetsSum": "合計：{percent}",
+  "rebalanceBuy": "買入 ≈ {amount}",
+  "rebalanceSell": "賣出 ≈ {amount}",
+  "rebalanceOk": "已達目標"
 }

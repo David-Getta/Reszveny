@@ -2318,4 +2318,39 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Nuo 52 savaičių maksimumo';
+
+  @override
+  String get briefAutoTitle => 'Dienos santrauka kiekvieną rytą';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Šiandien su jūsų akcijomis“ sukuriama automatiškai po 7:00, kol programėlė veikia; kompiuteriuose jus informuos pranešimas. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
+
+  @override
+  String get targetsButton => 'Tikslinis paskirstymas';
+
+  @override
+  String get targetsTitle => 'Tikslinis paskirstymas';
+
+  @override
+  String get targetsHint =>
+      'Nustatykite, kokią portfelio dalį turėtų sudaryti kiekviena akcija. Palikite lauką tuščią, jei tikslo nėra. Tada programa parodys, ką reikia pirkti ar parduoti, kad jį pasiektumėte.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Iš viso: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Pirkti ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Parduoti ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Atitinka tikslą';
 }

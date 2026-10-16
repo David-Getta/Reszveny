@@ -2265,4 +2265,39 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ol\'aanaa torban 52 irraa fageenya';
+
+  @override
+  String get briefAutoTitle => 'Cuunfaa guyyaa ganama hunda';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Har’a aksiyoonota kee waliin” yeroo appiin hojjechaa jirutti 7:00 ganamaa booda ofumaan qophaa’a; kompiitara irratti beeksisni sitti hima. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
+
+  @override
+  String get targetsButton => 'Qoqqoodinsa galmaa';
+
+  @override
+  String get targetsTitle => 'Qoqqoodinsa galmaa';
+
+  @override
+  String get targetsHint =>
+      'Aksiyoonni tokkoon tokkoon isaa qooda poortfooliyoo hammam qabaachuu akka qabu murteessi. Galmi yoo hin jiraanne dirree duwwaa dhiisi. Appichi booda maal bituu ykn gurguruu akka qabdu si agarsiisa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Waliigala: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Bitadhu ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Gurguri ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Galma irra';
 }

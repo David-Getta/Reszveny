@@ -605,5 +605,14 @@
   "allocationSectors": "Sectorkuna",
   "allocationCurrencies": "Qullqikuna",
   "compareReturn1y": "1 watapi gananciay",
-  "compareFromHigh": "52 semanapi aswan hatunmanta karuynin"
+  "compareFromHigh": "52 semanapi aswan hatunmanta karuynin",
+  "briefAutoTitle": "Sapa p’unchay pisichasqa sapa tutamanta",
+  "briefAutoSubtitle": "“Kunan p’unchay acciónniykikunawan” kikinmanta ruwakun tutamanta 7:00 qhipanta app llamk’ashaqtin; computadorakunapi huk willakuy willasunki. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
+  "targetsButton": "Munasqa rakiy",
+  "targetsTitle": "Munasqa rakiy",
+  "targetsHint": "Sapa accionpaq portafoliomanta hayk'a rakinta kananta churay. Mana munasqa kaptinqa, k'itita ch'usaqta saqiy. Chaymantaqa app rikuchinqa ima rantinata utaq rantikunata.",
+  "targetsSum": "Llapan: {percent}",
+  "rebalanceBuy": "Rantiy ≈ {amount}",
+  "rebalanceSell": "Rantikuy ≈ {amount}",
+  "rebalanceOk": "Munasqapi"
 }

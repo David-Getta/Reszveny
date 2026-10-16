@@ -2268,4 +2268,39 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Uta likolo ya pɔsɔ 52';
+
+  @override
+  String get briefAutoTitle => 'Bokuse ya mokolo na mokolo ntɔngɔ nyonso';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Lelo na misolo na yo” esalemaka yango moko nsima ya 7:00 ya ntɔngɔ ntango application ezali kosala; na baordinatɛrɛ, liyebisi moko ekoyebisa yo. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
+
+  @override
+  String get targetsButton => 'Bokaboli ya mokano';
+
+  @override
+  String get targetsTitle => 'Bokaboli ya mokano';
+
+  @override
+  String get targetsHint =>
+      'Tyá ndambo ya portfolio oyo action moko na moko esengeli kozala na yango. Tiká esika mpamba soki mokano ezali te. Na sima, app ekolakisa nini osengeli kosomba to koteka mpo na kokóma kuna.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Nyonso: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Somba ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Teka ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Ekoki mokano';
 }

@@ -2306,4 +2306,39 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'البعد عن أعلى سعر في 52 أسبوعاً';
+
+  @override
+  String get briefAutoTitle => 'ملخص يومي كل صباح';
+
+  @override
+  String get briefAutoSubtitle =>
+      'يُعدّ «اليوم مع أسهمك» تلقائيًا بعد الساعة 7:00 صباحًا ما دام التطبيق يعمل، وعلى الحواسيب يُعلمك إشعار بذلك. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
+
+  @override
+  String get targetsButton => 'التوزيع المستهدف';
+
+  @override
+  String get targetsTitle => 'التوزيع المستهدف';
+
+  @override
+  String get targetsHint =>
+      'حدّد الحصة التي ينبغي أن يشغلها كل سهم من المحفظة. اترك الحقل فارغًا إن لم يكن هناك هدف. سيعرض التطبيق بعد ذلك ما يجب شراؤه أو بيعه للوصول إليها.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'الإجمالي: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'شراء ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'بيع ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'ضمن الهدف';
 }

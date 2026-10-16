@@ -605,5 +605,14 @@
   "allocationSectors": "Sektè",
   "allocationCurrencies": "Deviz",
   "compareReturn1y": "Rannman sou 1 an",
-  "compareFromHigh": "Distans ak pi wo sou 52 semèn"
+  "compareFromHigh": "Distans ak pi wo sou 52 semèn",
+  "briefAutoTitle": "Rezime chak jou chak maten",
+  "briefAutoSubtitle": "“Jodi a ak aksyon ou yo” fèt otomatikman apre 7:00 nan maten pandan aplikasyon an ap mache; sou òdinatè, yon notifikasyon fè ou konnen. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
+  "targetsButton": "Repatisyon sib",
+  "targetsTitle": "Repatisyon sib",
+  "targetsHint": "Mete ki pòsyon nan pòtfolyo a chak aksyon dwe genyen. Kite chan an vid si pa gen sib. Apre sa, aplikasyon an ap montre sa pou achte oswa vann pou rive la.",
+  "targetsSum": "Total: {percent}",
+  "rebalanceBuy": "Achte ≈ {amount}",
+  "rebalanceSell": "Vann ≈ {amount}",
+  "rebalanceOk": "Sou sib la"
 }

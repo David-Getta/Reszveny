@@ -27,8 +27,11 @@ class AppPreferences extends ChangeNotifier {
     this.emailAlerts = true,
     this.weeklyDigest = false,
     this.earningsReminders = true,
+    this.morningBrief = false,
     List<WatchList> watchLists = const [],
+    Map<String, double> targets = const {},
   }) : _lists = List.of(watchLists),
+       _targets = Map.of(targets),
        _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -53,6 +56,8 @@ class AppPreferences extends ChangeNotifier {
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
   static const _earningsRemindersKey = 'earnings_reminders';
+  static const _morningBriefKey = 'morning_brief';
+  static const _targetsKey = 'portfolio_targets';
   static const _listsKey = 'watch_lists';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
@@ -114,7 +119,40 @@ class AppPreferences extends ChangeNotifier {
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
   bool earningsReminders;
 
+  /// Reggelente magától elkészül a napi összefoglaló (amíg az app fut).
+  bool morningBrief;
+
   final List<WatchList> _lists;
+
+  final Map<String, double> _targets;
+
+  /// Célarányok a portfólióban (ticker → százalék).
+  Map<String, double> get targets => Map.unmodifiable(_targets);
+
+  Future<void> setTargets(Map<String, double> targets) async {
+    _targets
+      ..clear()
+      ..addAll({
+        for (final e in targets.entries)
+          if (e.value > 0 && e.value <= 100) e.key.toUpperCase(): e.value,
+      });
+    notifyListeners();
+    await _save((p) => p.setString(_targetsKey, jsonEncode(_targets)));
+  }
+
+  /// A tárolt célarányok beolvasása (hibás érték kimarad).
+  static Map<String, double> parseTargets(Object? raw) {
+    try {
+      final v = raw is String ? jsonDecode(raw) : raw;
+      return {
+        for (final e in (v is Map ? v : const {}).entries)
+          if (e.value is num && (e.value as num) > 0 && (e.value as num) <= 100)
+            '${e.key}'.toUpperCase(): (e.value as num).toDouble(),
+      };
+    } catch (_) {
+      return const {};
+    }
+  }
 
   /// Saját listák a kedvencek között (pl. „Tech”, „Osztalék”), létrehozási sorrendben.
   List<WatchList> get watchLists => List.unmodifiable(_lists);
@@ -159,7 +197,9 @@ class AppPreferences extends ChangeNotifier {
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
+        morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
+        targets: parseTargets(prefs.getString(_targetsKey)),
       );
     } catch (_) {
       return AppPreferences();
@@ -258,6 +298,13 @@ class AppPreferences extends ChangeNotifier {
   Future<void> _saveLists() async {
     notifyListeners();
     await _save((p) => p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()])));
+  }
+
+  Future<void> setMorningBrief(bool enabled) async {
+    if (morningBrief == enabled) return;
+    morningBrief = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_morningBriefKey, enabled));
   }
 
   Future<void> setEarningsReminders(bool enabled) async {
@@ -363,11 +410,13 @@ class AppPreferences extends ChangeNotifier {
     _favorites.clear();
     _recent = [];
     _lists.clear();
+    _targets.clear();
     notifyListeners();
     await _save((p) async {
       await p.remove(_favoritesKey);
       await p.remove(_recentKey);
       await p.remove(_listsKey);
+      await p.remove(_targetsKey);
     });
   }
 

@@ -2256,4 +2256,39 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get compareFromHigh => '52-आठवड्यांच्या उच्चांकापासून अंतर';
+
+  @override
+  String get briefAutoTitle => 'दररोज सकाळी दैनिक सारांश';
+
+  @override
+  String get briefAutoSubtitle =>
+      'अ‍ॅप सुरू असताना सकाळी 7:00 नंतर “आज तुमच्या शेअर्ससोबत” आपोआप तयार होतो; संगणकावर एक सूचना तुम्हाला कळवते. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही.';
+
+  @override
+  String get targetsButton => 'लक्ष्य वाटणी';
+
+  @override
+  String get targetsTitle => 'लक्ष्य वाटणी';
+
+  @override
+  String get targetsHint =>
+      'प्रत्येक शेअरला पोर्टफोलिओचा किती हिस्सा मिळावा ते ठरवा. लक्ष्य नसल्यास क्षेत्र रिकामे ठेवा. त्यानंतर ॲप तिथे पोहोचण्यासाठी काय खरेदी किंवा विक्री करावी ते दाखवेल.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'एकूण: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'खरेदी ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'विक्री ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'लक्ष्यावर';
 }

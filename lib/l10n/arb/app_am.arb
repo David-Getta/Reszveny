@@ -605,5 +605,14 @@
   "allocationSectors": "ዘርፎች",
   "allocationCurrencies": "ምንዛሬዎች",
   "compareReturn1y": "የ1 ዓመት ተመላሽ",
-  "compareFromHigh": "ከ52 ሳምንት ከፍተኛ ያለው ርቀት"
+  "compareFromHigh": "ከ52 ሳምንት ከፍተኛ ያለው ርቀት",
+  "briefAutoTitle": "በየማለዳው ዕለታዊ ማጠቃለያ",
+  "briefAutoSubtitle": "«ዛሬ ከአክሲዮኖችዎ ጋር» መተግበሪያው እየሠራ ባለበት ጊዜ ከጠዋቱ 7:00 በኋላ በራሱ ይዘጋጃል፤ በኮምፒውተር ላይ ማሳወቂያ ያሳውቅዎታል። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።",
+  "targetsButton": "የዒላማ ድልድል",
+  "targetsTitle": "የዒላማ ድልድል",
+  "targetsHint": "እያንዳንዱ አክሲዮን ከፖርትፎሊዮው ምን ያህል ድርሻ እንዲኖረው ያስቀምጡ። ዒላማ ከሌለ መስኩን ባዶ ይተዉት። ከዚያ መተግበሪያው ዒላማውን ለመድረስ ምን መግዛት ወይም መሸጥ እንዳለብዎ ያሳያል።",
+  "targetsSum": "ጠቅላላ፦ {percent}",
+  "rebalanceBuy": "ግዛ ≈ {amount}",
+  "rebalanceSell": "ሽጥ ≈ {amount}",
+  "rebalanceOk": "ዒላማ ላይ"
 }

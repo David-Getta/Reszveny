@@ -2300,4 +2300,39 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Од 52-недељног максимума';
+
+  @override
+  String get briefAutoTitle => 'Дневни преглед свако јутро';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„Данас са вашим акцијама“ прави се аутоматски после 7:00 док апликација ради; на рачунарима стиже обавештење. Троши ваше дневно ограничење питања, не анализу.';
+
+  @override
+  String get targetsButton => 'Циљна расподела';
+
+  @override
+  String get targetsTitle => 'Циљна расподела';
+
+  @override
+  String get targetsHint =>
+      'Подесите колики удео портфолија треба да има свака акција. Празно поље значи да нема циља. Апликација затим приказује шта да купите или продате да бисте стигли до циља.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Укупно: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Купи ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Продај ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'На циљу';
 }

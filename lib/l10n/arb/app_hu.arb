@@ -605,5 +605,14 @@
   "allocationSectors": "Szektorok",
   "allocationCurrencies": "Devizák",
   "compareReturn1y": "1 éves hozam",
-  "compareFromHigh": "Távolság az 52 hetes csúcstól"
+  "compareFromHigh": "Távolság az 52 hetes csúcstól",
+  "briefAutoTitle": "Napi összefoglaló minden reggel",
+  "briefAutoSubtitle": "„A nap a részvényeiddel” reggel 7 után magától elkészül, amíg az app fut; számítógépen értesítés jelzi. A napi kérdéskeretből megy, elemzést nem fogyaszt.",
+  "targetsButton": "Célarányok",
+  "targetsTitle": "Célarányok",
+  "targetsHint": "Add meg, mekkora részt kapjon a portfólióból egy-egy részvény. Üres mező: nincs cél. Az app ezután megmutatja, mit kellene venni vagy eladni hozzá.",
+  "targetsSum": "Összesen: {percent}",
+  "rebalanceBuy": "Vétel ≈ {amount}",
+  "rebalanceSell": "Eladás ≈ {amount}",
+  "rebalanceOk": "Célon"
 }

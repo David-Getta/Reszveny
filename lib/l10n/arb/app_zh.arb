@@ -605,5 +605,14 @@
   "allocationSectors": "板块",
   "allocationCurrencies": "货币",
   "compareReturn1y": "1年回报",
-  "compareFromHigh": "距52周最高"
+  "compareFromHigh": "距52周最高",
+  "briefAutoTitle": "每日早间摘要",
+  "briefAutoSubtitle": "应用运行期间，“今天你的股票”会在早上7点后自动生成；在电脑上会通过通知提醒你。占用每日提问次数，不消耗分析次数。",
+  "targetsButton": "目标配置",
+  "targetsTitle": "目标配置",
+  "targetsHint": "设置每只股票在投资组合中应占的比例。留空表示不设目标。应用随后会显示需要买入或卖出多少才能达到目标。",
+  "targetsSum": "合计：{percent}",
+  "rebalanceBuy": "买入 ≈ {amount}",
+  "rebalanceSell": "卖出 ≈ {amount}",
+  "rebalanceOk": "已达目标"
 }

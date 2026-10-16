@@ -2262,4 +2262,39 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Yvatevéva 52 arapokõindýpe guive';
+
+  @override
+  String get briefAutoTitle => 'Mbohysýi ára ha ára pyharevete';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Ko árape ne acción-kuéra ndive” ojejapo ijehegui 7:00 rire app omba’apo aja; computadora-pe peteĩ marandu he’íta ndéve. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
+
+  @override
+  String get targetsButton => 'Ñembojaʼo jehupytyrã';
+
+  @override
+  String get targetsTitle => 'Ñembojaʼo jehupytyrã';
+
+  @override
+  String get targetsHint =>
+      'Emoĩ mboýpa peteĩteĩ aksiõ oguerekovaʼerã portfolio-gui. Ejei ñemyenyhẽha nandi ndaipóriramo jehupytyrã. Upe rire app ohechaukáta mbaʼépa ejoguavaʼerã térã eñemuvaʼerã eguahẽ hag̃ua upépe.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Oĩmbáva: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Jogua ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Ñemu ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Jehupytyrãme';
 }

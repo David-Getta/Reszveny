@@ -605,5 +605,14 @@
   "allocationSectors": "Swiyenge",
   "allocationCurrencies": "Mali",
   "compareReturn1y": "Mbuyelo wa lembe ra 1",
-  "compareFromHigh": "Ku suka eka ehenhla ka mavhiki ya 52"
+  "compareFromHigh": "Ku suka eka ehenhla ka mavhiki ya 52",
+  "briefAutoTitle": "Nkatsakanyo ya siku na siku nimixo yin’wana ni yin’wana",
+  "briefAutoSubtitle": "“Namuntlha ni swiavelo swa wena” yi tiendlela hi yoxe endzhaku ka 7:00 nimixo loko app yi ri karhi yi tirha; eka tikhompyuta, xitiviso xi ta ku tivisa. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.",
+  "targetsButton": "Ku avanyisa loku lavekaka",
+  "targetsTitle": "Ku avanyisa loku lavekaka",
+  "targetsHint": "Veka leswaku xere yin'wana na yin'wana yi fanele ku va na xiphemu xo fika kwihi xa potifoliyo. Siya ndhawu yi ri hava nchumu loko ku nga ri na xikongomelo. Endzhaku ka sweswo app yi ta ku komba leswi u faneleke ku swi xava kumbe ku swi xavisa.",
+  "targetsSum": "Hinkwaswo: {percent}",
+  "rebalanceBuy": "Xava ≈ {amount}",
+  "rebalanceSell": "Xavisa ≈ {amount}",
+  "rebalanceOk": "Eka xikongomelo"
 }

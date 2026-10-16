@@ -2257,4 +2257,39 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kutoka juu ya wiki 52';
+
+  @override
+  String get briefAutoTitle => 'Muhtasari wa kila siku kila asubuhi';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Leo na hisa zako” huandaliwa kiotomatiki baada ya 7:00 asubuhi wakati programu inaendelea kufanya kazi; kwenye kompyuta, arifa itakujulisha. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
+
+  @override
+  String get targetsButton => 'Mgawanyo lengwa';
+
+  @override
+  String get targetsTitle => 'Mgawanyo lengwa';
+
+  @override
+  String get targetsHint =>
+      'Weka sehemu ya jalada ambayo kila hisa inapaswa kuwa nayo. Acha sehemu wazi ikiwa hakuna lengo. Kisha programu itaonyesha cha kununua au kuuza ili kufika hapo.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jumla: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Nunua ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Uza ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Imefikia lengo';
 }

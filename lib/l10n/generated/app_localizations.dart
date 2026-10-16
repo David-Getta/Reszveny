@@ -3972,6 +3972,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From 52-week high'**
   String get compareFromHigh;
+
+  /// Settings switch: the "Today with your stocks" AI summary is made automatically each morning.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily summary every morning'**
+  String get briefAutoTitle;
+
+  /// No description provided for @briefAutoSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'“Today with your stocks” is made automatically after 7 am while the app is running; on computers a notification tells you. Uses your daily question allowance, not an analysis.'**
+  String get briefAutoSubtitle;
+
+  /// No description provided for @targetsButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Target allocation'**
+  String get targetsButton;
+
+  /// No description provided for @targetsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Target allocation'**
+  String get targetsTitle;
+
+  /// No description provided for @targetsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Set what share of the portfolio each stock should have. Leave a field empty for no target. The app then shows what to buy or sell to get there.'**
+  String get targetsHint;
+
+  /// No description provided for @targetsSum.
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {percent}'**
+  String targetsSum(String percent);
+
+  /// How much more of a stock to buy to reach its target share; amount is formatted money.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy ≈ {amount}'**
+  String rebalanceBuy(String amount);
+
+  /// How much of a stock to sell to get down to its target share.
+  ///
+  /// In en, this message translates to:
+  /// **'Sell ≈ {amount}'**
+  String rebalanceSell(String amount);
+
+  /// No description provided for @rebalanceOk.
+  ///
+  /// In en, this message translates to:
+  /// **'On target'**
+  String get rebalanceOk;
 }
 
 class _AppLocalizationsDelegate

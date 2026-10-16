@@ -2257,4 +2257,39 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'دووری لە بەرزترینی 52 هەفتە';
+
+  @override
+  String get briefAutoTitle => 'پوختەی ڕۆژانە هەموو بەیانییەک';
+
+  @override
+  String get briefAutoSubtitle =>
+      '«ئەمڕۆ لەگەڵ پشکەکانت» دوای کاتژمێر 7:00ی بەیانی خۆکارانە ئامادە دەکرێت تا ئەپەکە کار دەکات؛ لەسەر کۆمپیوتەر ئاگادارکردنەوەیەک پێت دەڵێت. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
+
+  @override
+  String get targetsButton => 'دابەشبوونی ئامانج';
+
+  @override
+  String get targetsTitle => 'دابەشبوونی ئامانج';
+
+  @override
+  String get targetsHint =>
+      'دیاری بکە هەر پشکێک چەند بەشی پۆرتفۆلیۆکە بێت. ئەگەر ئامانجت نییە خانەکە بە بەتاڵی بهێڵەرەوە. پاشان ئەپەکە پیشانت دەدات چی بکڕیت یان بفرۆشیت بۆ گەیشتن بەوێ.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'کۆی گشتی: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'کڕین ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'فرۆشتن ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'لەسەر ئامانج';
 }

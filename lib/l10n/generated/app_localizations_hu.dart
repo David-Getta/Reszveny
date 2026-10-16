@@ -2262,4 +2262,39 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Távolság az 52 hetes csúcstól';
+
+  @override
+  String get briefAutoTitle => 'Napi összefoglaló minden reggel';
+
+  @override
+  String get briefAutoSubtitle =>
+      '„A nap a részvényeiddel” reggel 7 után magától elkészül, amíg az app fut; számítógépen értesítés jelzi. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
+
+  @override
+  String get targetsButton => 'Célarányok';
+
+  @override
+  String get targetsTitle => 'Célarányok';
+
+  @override
+  String get targetsHint =>
+      'Add meg, mekkora részt kapjon a portfólióból egy-egy részvény. Üres mező: nincs cél. Az app ezután megmutatja, mit kellene venni vagy eladni hozzá.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Összesen: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Vétel ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Eladás ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Célon';
 }

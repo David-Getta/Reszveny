@@ -2263,4 +2263,39 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Kuchokera pamwamba pa masabata 52';
+
+  @override
+  String get briefAutoTitle => 'Chidule cha tsiku ndi tsiku m’mawa uliwonse';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Lero ndi masheya anu” chimapangidwa chokha pambuyo pa 7:00 m’mawa pamene pulogalamuyo ikugwira ntchito; pa makompyuta, chidziwitso chidzakuuzani. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String get targetsButton => 'Kagawidwe kofunidwa';
+
+  @override
+  String get targetsTitle => 'Kagawidwe kofunidwa';
+
+  @override
+  String get targetsHint =>
+      'Ikani gawo la potifoliyo lomwe sheya iliyonse iyenera kukhala nalo. Siyani malo opanda kanthu ngati palibe cholinga. Pulogalamuyo idzakuwonetsani zomwe mungagule kapena kugulitsa.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Zonse: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Gulani ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Gulitsani ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Pa cholinga';
 }

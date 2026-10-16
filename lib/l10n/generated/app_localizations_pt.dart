@@ -2262,4 +2262,39 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Desde o máximo de 52 semanas';
+
+  @override
+  String get briefAutoTitle => 'Resumo diário toda manhã';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Hoje com as suas ações” é criado automaticamente após as 7h enquanto o app está em execução; nos computadores, uma notificação avisa você. Usa o seu limite diário de perguntas, não uma análise.';
+
+  @override
+  String get targetsButton => 'Distribuição-alvo';
+
+  @override
+  String get targetsTitle => 'Distribuição-alvo';
+
+  @override
+  String get targetsHint =>
+      'Defina a parcela da carteira que cada ação deve ter. Deixe o campo vazio para não definir meta. O app mostra então o que comprar ou vender para chegar lá.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Comprar ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Vender ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Na meta';
 }

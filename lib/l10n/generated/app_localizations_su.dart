@@ -2259,4 +2259,39 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Ti pangluhurna 52 minggu';
+
+  @override
+  String get briefAutoTitle => 'Ringkesan unggal dinten unggal énjing';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Dinten ieu sareng saham anjeun” didamel otomatis saatos jam 07.00 salami aplikasi jalan; dina komputer, béwara bakal ngabéjaan anjeun. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
+
+  @override
+  String get targetsButton => 'Alokasi target';
+
+  @override
+  String get targetsTitle => 'Alokasi target';
+
+  @override
+  String get targetsHint =>
+      'Tangtukeun sabaraha bagian portopolio anu kedah dipiboga ku unggal saham. Antepkeun kolom kosong upami teu aya target. Aplikasi teras nembongkeun naon anu kedah dibeuli atanapi dijual.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Jumlah: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Beuli ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Jual ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Saluyu target';
 }

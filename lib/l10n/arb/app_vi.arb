@@ -605,5 +605,14 @@
   "allocationSectors": "Lĩnh vực",
   "allocationCurrencies": "Tiền tệ",
   "compareReturn1y": "Lợi suất 1 năm",
-  "compareFromHigh": "Cách mức cao nhất 52 tuần"
+  "compareFromHigh": "Cách mức cao nhất 52 tuần",
+  "briefAutoTitle": "Tóm tắt hằng ngày mỗi sáng",
+  "briefAutoSubtitle": "“Hôm nay với cổ phiếu của bạn” được tự động tạo sau 7:00 sáng khi ứng dụng đang chạy; trên máy tính, một thông báo sẽ cho bạn biết. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
+  "targetsButton": "Phân bổ mục tiêu",
+  "targetsTitle": "Phân bổ mục tiêu",
+  "targetsHint": "Đặt tỷ trọng trong danh mục mà mỗi cổ phiếu nên có. Để trống nếu không có mục tiêu. Sau đó ứng dụng sẽ cho biết cần mua hoặc bán gì để đạt được.",
+  "targetsSum": "Tổng: {percent}",
+  "rebalanceBuy": "Mua ≈ {amount}",
+  "rebalanceSell": "Bán ≈ {amount}",
+  "rebalanceOk": "Đạt mục tiêu"
 }

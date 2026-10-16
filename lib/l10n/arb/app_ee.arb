@@ -605,5 +605,14 @@
   "allocationSectors": "Dɔwɔƒewo",
   "allocationCurrencies": "Ga ƒomeviwo",
   "compareReturn1y": "Ƒe 1 ƒe viɖe",
-  "compareFromHigh": "Tso Kwasiɖa 52 ƒe asi kɔkɔtɔ gbɔ"
+  "compareFromHigh": "Tso Kwasiɖa 52 ƒe asi kɔkɔtɔ gbɔ",
+  "briefAutoTitle": "Ŋkekea ƒe nyakpɔkpɔ ŋdi sia ŋdi",
+  "briefAutoSubtitle": "“Egbe kple wò stockwo” wɔa eɖokui ŋdi 7:00 megbe esime app la le dɔ wɔm; le kɔmpiuta dzi la, nyanana aɖe gblɔnɛ na wò. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.",
+  "targetsButton": "Taɖodzinu ƒe mama",
+  "targetsTitle": "Taɖodzinu ƒe mama",
+  "targetsHint": "Ɖo akpa si wòle be akpa ɖesiaɖe naxɔ le portfolio la me. Gblẽ teƒea ɖi ƒuƒlu ne taɖodzinu meli o. Emegbe app la afia nu si wòle be nàƒle alo nàdzra be nàɖo afima.",
+  "targetsSum": "Katã: {percent}",
+  "rebalanceBuy": "Ƒle ≈ {amount}",
+  "rebalanceSell": "Dzra ≈ {amount}",
+  "rebalanceOk": "Ɖo taɖodzinu"
 }

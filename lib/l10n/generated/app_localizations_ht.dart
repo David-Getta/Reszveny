@@ -2255,4 +2255,39 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get compareFromHigh => 'Distans ak pi wo sou 52 semèn';
+
+  @override
+  String get briefAutoTitle => 'Rezime chak jou chak maten';
+
+  @override
+  String get briefAutoSubtitle =>
+      '“Jodi a ak aksyon ou yo” fèt otomatikman apre 7:00 nan maten pandan aplikasyon an ap mache; sou òdinatè, yon notifikasyon fè ou konnen. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
+
+  @override
+  String get targetsButton => 'Repatisyon sib';
+
+  @override
+  String get targetsTitle => 'Repatisyon sib';
+
+  @override
+  String get targetsHint =>
+      'Mete ki pòsyon nan pòtfolyo a chak aksyon dwe genyen. Kite chan an vid si pa gen sib. Apre sa, aplikasyon an ap montre sa pou achte oswa vann pou rive la.';
+
+  @override
+  String targetsSum(String percent) {
+    return 'Total: $percent';
+  }
+
+  @override
+  String rebalanceBuy(String amount) {
+    return 'Achte ≈ $amount';
+  }
+
+  @override
+  String rebalanceSell(String amount) {
+    return 'Vann ≈ $amount';
+  }
+
+  @override
+  String get rebalanceOk => 'Sou sib la';
 }
