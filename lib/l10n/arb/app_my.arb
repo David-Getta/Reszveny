@@ -600,5 +600,8 @@
   "backupRestore": "အရန်မှ ပြန်ယူရန်",
   "backupRestoreHint": "ဖိုင်ထဲရှိသည်များကို ထည့်ပေါင်းသည်။ ယခုရှိပြီးသားများ မည်သည်မျှ မဖျက်ပါ။",
   "backupRestored": "အရန်ကို ပြန်ယူပြီးပါပြီ။",
-  "backupInvalid": "ဤဖိုင်သည် WhatStock အရန်ဖိုင် မဟုတ်ပါ။"
+  "backupInvalid": "ဤဖိုင်သည် WhatStock အရန်ဖိုင် မဟုတ်ပါ။",
+  "allocationPositions": "ရှယ်ယာ",
+  "allocationSectors": "ကဏ္ဍ",
+  "allocationCurrencies": "ငွေကြေး"
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Kgutlisa ho tswa polokelong ya tshehetso",
   "backupRestoreHint": "E eketsa se faeleng; ha ho letho leo o nang le lona hona jwale le hlakolwang.",
   "backupRestored": "Polokelo ya tshehetso e kgutlisitswe.",
-  "backupInvalid": "Faele ena hase polokelo ya tshehetso ya WhatStock."
+  "backupInvalid": "Faele ena hase polokelo ya tshehetso ya WhatStock.",
+  "allocationPositions": "Dishere",
+  "allocationSectors": "Makala",
+  "allocationCurrencies": "Ditjhelete"
 }

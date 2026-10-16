@@ -600,5 +600,8 @@
   "backupRestore": "الاستعادة من نسخة احتياطية",
   "backupRestoreHint": "يضيف ما في الملف؛ لن يُحذف شيء مما لديك الآن.",
   "backupRestored": "تمت استعادة النسخة الاحتياطية.",
-  "backupInvalid": "هذا الملف ليس نسخة احتياطية من WhatStock."
+  "backupInvalid": "هذا الملف ليس نسخة احتياطية من WhatStock.",
+  "allocationPositions": "الأسهم",
+  "allocationSectors": "القطاعات",
+  "allocationCurrencies": "العملات"
 }

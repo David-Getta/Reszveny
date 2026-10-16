@@ -600,5 +600,8 @@
   "backupRestore": "बैकअप से रीस्टोर करें",
   "backupRestoreHint": "फ़ाइल में जो है उसे जोड़ता है; आपके अभी के डेटा में से कुछ भी नहीं हटता।",
   "backupRestored": "बैकअप रीस्टोर हो गया।",
-  "backupInvalid": "यह फ़ाइल WhatStock बैकअप नहीं है।"
+  "backupInvalid": "यह फ़ाइल WhatStock बैकअप नहीं है।",
+  "allocationPositions": "शेयर",
+  "allocationSectors": "सेक्टर",
+  "allocationCurrencies": "मुद्राएँ"
 }

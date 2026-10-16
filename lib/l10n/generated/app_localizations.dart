@@ -3942,6 +3942,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This file is not a WhatStock backup.'**
   String get backupInvalid;
+
+  /// Segment of a toggle on the portfolio allocation card: split by individual stocks. Very short.
+  ///
+  /// In en, this message translates to:
+  /// **'Stocks'**
+  String get allocationPositions;
+
+  /// No description provided for @allocationSectors.
+  ///
+  /// In en, this message translates to:
+  /// **'Sectors'**
+  String get allocationSectors;
+
+  /// No description provided for @allocationCurrencies.
+  ///
+  /// In en, this message translates to:
+  /// **'Currencies'**
+  String get allocationCurrencies;
 }
 
 class _AppLocalizationsDelegate

@@ -2249,4 +2249,13 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fisye yai kele ve kopi ya kubumba ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Actions';
+
+  @override
+  String get allocationSectors => 'Secteurs';
+
+  @override
+  String get allocationCurrencies => 'Mbongo';
 }

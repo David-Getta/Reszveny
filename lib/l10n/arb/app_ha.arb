@@ -600,5 +600,8 @@
   "backupRestore": "Maido daga ajiya",
   "backupRestoreHint": "Yana ƙara abin da ke cikin fayil ɗin; ba za a goge komai daga abin da kake da shi yanzu ba.",
   "backupRestored": "An maido da ajiya.",
-  "backupInvalid": "Wannan fayil ba ajiyar WhatStock ba ce."
+  "backupInvalid": "Wannan fayil ba ajiyar WhatStock ba ce.",
+  "allocationPositions": "Hannun jari",
+  "allocationSectors": "Sassa",
+  "allocationCurrencies": "Kuɗaɗe"
 }

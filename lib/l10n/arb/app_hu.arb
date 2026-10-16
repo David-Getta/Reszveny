@@ -600,5 +600,8 @@
   "backupRestore": "Visszaállítás mentésből",
   "backupRestoreHint": "Hozzáadja, ami a fájlban van; a mostani adataidból semmi nem törlődik.",
   "backupRestored": "A mentés visszaállítva.",
-  "backupInvalid": "Ez a fájl nem WhatStock-mentés."
+  "backupInvalid": "Ez a fájl nem WhatStock-mentés.",
+  "allocationPositions": "Részvények",
+  "allocationSectors": "Szektorok",
+  "allocationCurrencies": "Devizák"
 }

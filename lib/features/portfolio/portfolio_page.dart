@@ -4,6 +4,7 @@ import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../../l10n/terms.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import 'add_lot_dialog.dart';
@@ -236,20 +237,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (s.rows.where((r) => r.weight > 0).length > 1)
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(18),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(l10n.portfolioAllocation, style: theme.textTheme.titleMedium),
-                          const SizedBox(height: 12),
-                          AllocationBar(rows: s.rows, fmt: fmt),
-                        ],
-                      ),
-                    ),
-                  ),
+                if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(rows: s.rows, fmt: fmt),
                 PortfolioHistoryCard(snapshot: s),
                 PortfolioReviewCard(snapshot: s),
                 if (s.rows.isNotEmpty) ...[
@@ -400,11 +388,109 @@ List<Color> allocationColors(AppPalette p) => [
   p.muted,
 ];
 
-/// Vízszintes, egymásra rakott sáv a pozíciók súlyával, alatta jelmagyarázat.
-class AllocationBar extends StatelessWidget {
-  const AllocationBar({super.key, required this.rows, required this.fmt});
+/// Mi szerint mutassuk a megoszlást.
+enum AllocationBy { positions, sectors, currencies }
+
+/// Súlyok csoportosítva (legnagyobb elöl); a [label] adja a csoport nevét.
+List<({String label, double weight})> groupWeights(List<PositionValue> rows, String Function(PositionValue) label) {
+  final sums = <String, double>{};
+  for (final r in rows.where((r) => r.weight > 0)) {
+    sums.update(label(r), (v) => v + r.weight, ifAbsent: () => r.weight);
+  }
+  return [for (final e in sums.entries) (label: e.key, weight: e.value)]..sort((a, b) => b.weight.compareTo(a.weight));
+}
+
+/// A megoszlás kártyája: pozíciók, szektorok vagy devizák szerint.
+class AllocationCard extends StatefulWidget {
+  const AllocationCard({super.key, required this.rows, required this.fmt});
 
   final List<PositionValue> rows;
+  final Fmt fmt;
+
+  @override
+  State<AllocationCard> createState() => _AllocationCardState();
+}
+
+class _AllocationCardState extends State<AllocationCard> {
+  AllocationBy _by = AllocationBy.positions;
+  Future<Map<String, String?>>? _sectors;
+
+  /// A szektorok a cégprofilokból (egyszer töltjük be, a gyorsítótárból jön).
+  Future<Map<String, String?>> _loadSectors() async {
+    final market = AppServices.of(context).marketData;
+    final symbols = {for (final r in widget.rows) r.position.symbol};
+    final entries = await Future.wait([
+      for (final s in symbols)
+        market.profile(s).then((p) => MapEntry(s, p.sector), onError: (Object _) => MapEntry<String, String?>(s, null)),
+    ]);
+    return Map.fromEntries(entries);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    final locale = Localizations.localeOf(context);
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l10n.portfolioAllocation, style: theme.textTheme.titleMedium),
+            const SizedBox(height: 10),
+            SegmentedButton<AllocationBy>(
+              key: const ValueKey('allocation-by'),
+              showSelectedIcon: false,
+              style: const ButtonStyle(visualDensity: VisualDensity.compact),
+              segments: [
+                ButtonSegment(value: AllocationBy.positions, label: Text(l10n.allocationPositions)),
+                ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
+                ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
+              ],
+              selected: {_by},
+              onSelectionChanged: (v) => setState(() {
+                _by = v.first;
+                if (_by == AllocationBy.sectors) _sectors ??= _loadSectors();
+              }),
+            ),
+            const SizedBox(height: 12),
+            switch (_by) {
+              AllocationBy.positions => AllocationBar(
+                entries: groupWeights(widget.rows, (r) => r.position.symbol),
+                fmt: widget.fmt,
+              ),
+              AllocationBy.currencies => AllocationBar(
+                entries: groupWeights(widget.rows, (r) => r.position.currency),
+                fmt: widget.fmt,
+              ),
+              AllocationBy.sectors => FutureBuilder<Map<String, String?>>(
+                future: _sectors,
+                builder: (context, snap) {
+                  final sectors = snap.data;
+                  if (sectors == null) return const LinearProgressIndicator();
+                  return AllocationBar(
+                    entries: groupWeights(
+                      widget.rows,
+                      (r) => Terms.industry(sectors[r.position.symbol], locale) ?? l10n.notAvailable,
+                    ),
+                    fmt: widget.fmt,
+                  );
+                },
+              ),
+            },
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Vízszintes, egymásra rakott sáv a súlyokkal, alatta jelmagyarázat.
+class AllocationBar extends StatelessWidget {
+  const AllocationBar({super.key, required this.entries, required this.fmt});
+
+  final List<({String label, double weight})> entries;
   final Fmt fmt;
 
   @override
@@ -412,7 +498,7 @@ class AllocationBar extends StatelessWidget {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final colors = allocationColors(p);
-    final weighted = rows.where((r) => r.weight > 0).toList();
+    final weighted = entries.where((e) => e.weight > 0).toList();
     Color colorAt(int i) => colors[i < colors.length - 1 ? i : colors.length - 1];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -423,9 +509,9 @@ class AllocationBar extends StatelessWidget {
             height: 14,
             child: Row(
               children: [
-                for (final (i, r) in weighted.indexed)
+                for (final (i, e) in weighted.indexed)
                   Expanded(
-                    flex: (r.weight * 1000).round().clamp(1, 1000),
+                    flex: (e.weight * 1000).round().clamp(1, 1000),
                     child: Container(
                       margin: EdgeInsetsDirectional.only(end: i < weighted.length - 1 ? 2 : 0),
                       color: colorAt(i),
@@ -440,7 +526,7 @@ class AllocationBar extends StatelessWidget {
           spacing: 14,
           runSpacing: 6,
           children: [
-            for (final (i, r) in weighted.indexed)
+            for (final (i, e) in weighted.indexed)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -450,10 +536,7 @@ class AllocationBar extends StatelessWidget {
                     decoration: BoxDecoration(color: colorAt(i), borderRadius: BorderRadius.circular(3)),
                   ),
                   const SizedBox(width: 6),
-                  Text(
-                    '${r.position.symbol} ${fmt.percent(r.weight * 100, decimals: 1)}',
-                    style: theme.textTheme.labelMedium,
-                  ),
+                  Text('${e.label} ${fmt.percent(e.weight * 100, decimals: 1)}', style: theme.textTheme.labelMedium),
                 ],
               ),
           ],

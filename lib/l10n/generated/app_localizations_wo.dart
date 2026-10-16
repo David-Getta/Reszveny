@@ -2236,4 +2236,13 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fiise bii du kaaraangeb WhatStock.';
+
+  @override
+  String get allocationPositions => 'Aksiyoŋ yi';
+
+  @override
+  String get allocationSectors => 'Sektëer yi';
+
+  @override
+  String get allocationCurrencies => 'Xaalis yi';
 }

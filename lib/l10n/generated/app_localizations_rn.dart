@@ -2249,4 +2249,13 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Iyi dosiye si ububiko bw\'ingoboka bwa WhatStock.';
+
+  @override
+  String get allocationPositions => 'Imigabane';
+
+  @override
+  String get allocationSectors => 'Inzego';
+
+  @override
+  String get allocationCurrencies => 'Amafaranga';
 }

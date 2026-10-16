@@ -2249,4 +2249,13 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Fichier eu ki mmukopi wa kulama wa WhatStock to.';
+
+  @override
+  String get allocationPositions => 'Actions';
+
+  @override
+  String get allocationSectors => 'Secteurs';
+
+  @override
+  String get allocationCurrencies => 'Mfranga';
 }

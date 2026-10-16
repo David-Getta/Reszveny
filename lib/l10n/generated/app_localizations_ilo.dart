@@ -2259,4 +2259,13 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Saan a WhatStock backup daytoy a file.';
+
+  @override
+  String get allocationPositions => 'Stock';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Currency';
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Vrati iz sigurnosne kopije",
   "backupRestoreHint": "Dodaje ono što je u datoteci; ništa od onoga što sada imate neće se izbrisati.",
   "backupRestored": "Sigurnosna kopija je vraćena.",
-  "backupInvalid": "Ova datoteka nije WhatStock sigurnosna kopija."
+  "backupInvalid": "Ova datoteka nije WhatStock sigurnosna kopija.",
+  "allocationPositions": "Dionice",
+  "allocationSectors": "Sektori",
+  "allocationCurrencies": "Valute"
 }

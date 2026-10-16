@@ -600,5 +600,8 @@
   "backupRestore": "ກູ້ຄືນຈາກການສຳຮອງຂໍ້ມູນ",
   "backupRestoreHint": "ເພີ່ມສິ່ງທີ່ຢູ່ໃນໄຟລ໌; ບໍ່ມີຫຍັງທີ່ທ່ານມີຢູ່ຕອນນີ້ຖືກລຶບ.",
   "backupRestored": "ກູ້ຄືນການສຳຮອງຂໍ້ມູນແລ້ວ.",
-  "backupInvalid": "ໄຟລ໌ນີ້ບໍ່ແມ່ນການສຳຮອງຂໍ້ມູນ WhatStock."
+  "backupInvalid": "ໄຟລ໌ນີ້ບໍ່ແມ່ນການສຳຮອງຂໍ້ມູນ WhatStock.",
+  "allocationPositions": "ຮຸ້ນ",
+  "allocationSectors": "ຂະແໜງ",
+  "allocationCurrencies": "ສະກຸນເງິນ"
 }

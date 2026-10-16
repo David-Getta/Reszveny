@@ -600,5 +600,8 @@
   "backupRestore": "Врати из резервне копије",
   "backupRestoreHint": "Додаје оно што је у датотеци; ништа од онога што сада имате се не брише.",
   "backupRestored": "Резервна копија је враћена.",
-  "backupInvalid": "Ова датотека није резервна копија апликације WhatStock."
+  "backupInvalid": "Ова датотека није резервна копија апликације WhatStock.",
+  "allocationPositions": "Акције",
+  "allocationSectors": "Сектори",
+  "allocationCurrencies": "Валуте"
 }

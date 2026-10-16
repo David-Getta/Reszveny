@@ -600,5 +600,8 @@
   "backupRestore": "Cookia kuuma mbaka-inĩ",
   "backupRestoreHint": "Yongerera kĩrĩa kĩrĩ thĩinĩ wa faili; gũtirĩ kĩndũ kĩa kĩrĩa ũrĩ nakĩo rĩu gĩgũthario.",
   "backupRestored": "Mbaka nĩĩcookio.",
-  "backupInvalid": "Faili ĩno ti mbaka ya WhatStock."
+  "backupInvalid": "Faili ĩno ti mbaka ya WhatStock.",
+  "allocationPositions": "Hisa",
+  "allocationSectors": "Sekta",
+  "allocationCurrencies": "Mbeca"
 }

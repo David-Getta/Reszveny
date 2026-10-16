@@ -600,5 +600,8 @@
   "backupRestore": "Zongisa uta na kopi ya kobomba",
   "backupRestoreHint": "Ebakisaka oyo ezali na fisyé; eloko moko te ya oyo ozali na yango sikoyo ekolongwa.",
   "backupRestored": "Kopi ya kobomba ezongisami.",
-  "backupInvalid": "Fisyé oyo ezali kopi ya kobomba ya WhatStock te."
+  "backupInvalid": "Fisyé oyo ezali kopi ya kobomba ya WhatStock te.",
+  "allocationPositions": "Ba-action",
+  "allocationSectors": "Ba-secteur",
+  "allocationCurrencies": "Mbɔngɔ"
 }

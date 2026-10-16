@@ -2247,4 +2247,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Este ficheiro não é uma cópia de segurança do WhatStock.';
+
+  @override
+  String get allocationPositions => 'Ações';
+
+  @override
+  String get allocationSectors => 'Setores';
+
+  @override
+  String get allocationCurrencies => 'Moedas';
 }

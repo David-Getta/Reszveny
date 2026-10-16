@@ -600,5 +600,8 @@
   "backupRestore": "बैकअपसँ वापस आनू",
   "backupRestoreHint": "फाइलमे जे अछि से जोड़ैत अछि; अहाँ लग एखन जे अछि ताहिमे सँ किछु नहि मेटाएत।",
   "backupRestored": "बैकअप वापस आबि गेल।",
-  "backupInvalid": "ई फाइल WhatStock बैकअप नहि अछि।"
+  "backupInvalid": "ई फाइल WhatStock बैकअप नहि अछि।",
+  "allocationPositions": "शेयर",
+  "allocationSectors": "सेक्टर",
+  "allocationCurrencies": "मुद्रा"
 }

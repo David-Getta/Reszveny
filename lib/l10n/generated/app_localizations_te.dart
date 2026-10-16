@@ -2247,4 +2247,13 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ఈ ఫైల్ WhatStock బ్యాకప్ కాదు.';
+
+  @override
+  String get allocationPositions => 'షేర్లు';
+
+  @override
+  String get allocationSectors => 'రంగాలు';
+
+  @override
+  String get allocationCurrencies => 'కరెన్సీలు';
 }

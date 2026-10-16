@@ -600,5 +600,8 @@
   "backupRestore": "Waqaychasqamanta kutichiy",
   "backupRestoreHint": "Archivopi kaqta yapan; kunan kapusqaykimanta manam imapas chinkachisqachu.",
   "backupRestored": "Waqaychasqa kutichisqa.",
-  "backupInvalid": "Kay archivoqa manam WhatStock waqaychasqachu."
+  "backupInvalid": "Kay archivoqa manam WhatStock waqaychasqachu.",
+  "allocationPositions": "Accionkuna",
+  "allocationSectors": "Sectorkuna",
+  "allocationCurrencies": "Qullqikuna"
 }

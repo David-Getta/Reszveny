@@ -600,5 +600,8 @@
   "backupRestore": "বেকআপৰ পৰা পুনৰুদ্ধাৰ কৰক",
   "backupRestoreHint": "ফাইলত যি আছে সেয়া যোগ কৰে; আপোনাৰ এতিয়াৰ একোৱেই মচা নহয়।",
   "backupRestored": "বেকআপ পুনৰুদ্ধাৰ কৰা হ'ল।",
-  "backupInvalid": "এই ফাইলটো WhatStock বেকআপ নহয়।"
+  "backupInvalid": "এই ফাইলটো WhatStock বেকআপ নহয়।",
+  "allocationPositions": "শ্বেয়াৰ",
+  "allocationSectors": "খণ্ড",
+  "allocationCurrencies": "মুদ্ৰা"
 }

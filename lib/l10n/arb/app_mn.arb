@@ -600,5 +600,8 @@
   "backupRestore": "Нөөцөөс сэргээх",
   "backupRestoreHint": "Файлд байгааг нэмнэ; одоо байгаа зүйлсээс юу ч устахгүй.",
   "backupRestored": "Нөөцийг сэргээлээ.",
-  "backupInvalid": "Энэ файл WhatStock-ийн нөөц биш байна."
+  "backupInvalid": "Энэ файл WhatStock-ийн нөөц биш байна.",
+  "allocationPositions": "Хувьцаа",
+  "allocationSectors": "Салбар",
+  "allocationCurrencies": "Валют"
 }

@@ -600,5 +600,8 @@
   "backupRestore": "बैकअप से वापस लाईं",
   "backupRestoreHint": "फाइल में जवन बा ओकरा के जोड़ेला; रउआ लगे अबहीं जवन बा ओह में से कुछुओ ना मिटी।",
   "backupRestored": "बैकअप वापस आ गइल।",
-  "backupInvalid": "ई फाइल WhatStock बैकअप ना ह।"
+  "backupInvalid": "ई फाइल WhatStock बैकअप ना ह।",
+  "allocationPositions": "शेयर",
+  "allocationSectors": "सेक्टर",
+  "allocationCurrencies": "मुद्रा"
 }

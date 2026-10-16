@@ -1728,5 +1728,11 @@
   "backupRestore": "Restore from a backup",
   "backupRestoreHint": "Adds what is in the file; nothing you have now is deleted.",
   "backupRestored": "Backup restored.",
-  "backupInvalid": "This file is not a WhatStock backup."
+  "backupInvalid": "This file is not a WhatStock backup.",
+  "allocationPositions": "Stocks",
+  "@allocationPositions": {
+    "description": "Segment of a toggle on the portfolio allocation card: split by individual stocks. Very short."
+  },
+  "allocationSectors": "Sectors",
+  "allocationCurrencies": "Currencies"
 }

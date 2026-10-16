@@ -600,5 +600,8 @@
   "backupRestore": "Buyisela kwikopi yokhuseleko",
   "backupRestoreHint": "Yongeza okukwifayile; akukho nto onayo ngoku icinywayo.",
   "backupRestored": "Ikopi yokhuseleko ibuyiselwe.",
-  "backupInvalid": "Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock."
+  "backupInvalid": "Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock.",
+  "allocationPositions": "Izabelo",
+  "allocationSectors": "Amacandelo",
+  "allocationCurrencies": "Iimali"
 }

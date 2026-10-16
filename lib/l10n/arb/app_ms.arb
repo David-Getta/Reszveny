@@ -600,5 +600,8 @@
   "backupRestore": "Pulihkan daripada sandaran",
   "backupRestoreHint": "Menambah kandungan fail; tiada apa-apa yang anda ada sekarang akan dipadam.",
   "backupRestored": "Sandaran dipulihkan.",
-  "backupInvalid": "Fail ini bukan sandaran WhatStock."
+  "backupInvalid": "Fail ini bukan sandaran WhatStock.",
+  "allocationPositions": "Saham",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Mata wang"
 }

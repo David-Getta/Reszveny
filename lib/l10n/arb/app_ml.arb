@@ -600,5 +600,8 @@
   "backupRestore": "ബാക്കപ്പിൽ നിന്ന് പുനഃസ്ഥാപിക്കുക",
   "backupRestoreHint": "ഫയലിലുള്ളത് ചേർക്കുന്നു; ഇപ്പോഴുള്ളതൊന്നും ഇല്ലാതാക്കില്ല.",
   "backupRestored": "ബാക്കപ്പ് പുനഃസ്ഥാപിച്ചു.",
-  "backupInvalid": "ഈ ഫയൽ ഒരു WhatStock ബാക്കപ്പ് അല്ല."
+  "backupInvalid": "ഈ ഫയൽ ഒരു WhatStock ബാക്കപ്പ് അല്ല.",
+  "allocationPositions": "ഓഹരികൾ",
+  "allocationSectors": "മേഖലകൾ",
+  "allocationCurrencies": "കറൻസികൾ"
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Pulihkan dari cadangan",
   "backupRestoreHint": "Menambahkan isi file; tidak ada data Anda saat ini yang dihapus.",
   "backupRestored": "Cadangan dipulihkan.",
-  "backupInvalid": "File ini bukan cadangan WhatStock."
+  "backupInvalid": "File ini bukan cadangan WhatStock.",
+  "allocationPositions": "Saham",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Mata uang"
 }

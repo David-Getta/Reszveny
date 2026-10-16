@@ -2251,4 +2251,13 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Aquest fitxer no és una còpia de seguretat de WhatStock.';
+
+  @override
+  String get allocationPositions => 'Accions';
+
+  @override
+  String get allocationSectors => 'Sectors';
+
+  @override
+  String get allocationCurrencies => 'Divises';
 }

@@ -600,5 +600,8 @@
   "backupRestore": "백업에서 복원",
   "backupRestoreHint": "파일에 있는 내용을 추가하며, 지금 있는 데이터는 하나도 삭제되지 않습니다.",
   "backupRestored": "백업을 복원했습니다.",
-  "backupInvalid": "이 파일은 WhatStock 백업이 아닙니다."
+  "backupInvalid": "이 파일은 WhatStock 백업이 아닙니다.",
+  "allocationPositions": "종목",
+  "allocationSectors": "섹터",
+  "allocationCurrencies": "통화"
 }

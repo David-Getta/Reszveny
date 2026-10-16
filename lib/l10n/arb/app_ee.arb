@@ -600,5 +600,8 @@
   "backupRestore": "Gbugbɔe tso kɔpi si wodzra ɖo me",
   "backupRestoreHint": "Etsɔa nu siwo le faɛl la me kpena ɖe eŋu; womatutu naneke le nu siwo le asiwò fifia la me o.",
   "backupRestored": "Wogbugbɔ kɔpi la vɛ.",
-  "backupInvalid": "Faɛl sia menye WhatStock kɔpi si wodzra ɖo o."
+  "backupInvalid": "Faɛl sia menye WhatStock kɔpi si wodzra ɖo o.",
+  "allocationPositions": "Akpawo",
+  "allocationSectors": "Dɔwɔƒewo",
+  "allocationCurrencies": "Ga ƒomeviwo"
 }

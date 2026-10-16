@@ -2245,4 +2245,13 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faɛl sia menye WhatStock kɔpi si wodzra ɖo o.';
+
+  @override
+  String get allocationPositions => 'Akpawo';
+
+  @override
+  String get allocationSectors => 'Dɔwɔƒewo';
+
+  @override
+  String get allocationCurrencies => 'Ga ƒomeviwo';
 }

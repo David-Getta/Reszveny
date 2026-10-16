@@ -2222,4 +2222,13 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ឯកសារនេះមិនមែនជាការបម្រុងទុក WhatStock ទេ។';
+
+  @override
+  String get allocationPositions => 'ភាគហ៊ុន';
+
+  @override
+  String get allocationSectors => 'វិស័យ';
+
+  @override
+  String get allocationCurrencies => 'រូបិយប័ណ្ណ';
 }

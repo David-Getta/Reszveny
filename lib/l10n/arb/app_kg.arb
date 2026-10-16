@@ -600,5 +600,8 @@
   "backupRestore": "Vutula katuka na kopi ya kubumba",
   "backupRestoreHint": "Yo ke yika yina kele na fisye; kima mosi ve ya nge ke na yo ntangu yai ta katuka.",
   "backupRestored": "Kopi ya kubumba me vutuka.",
-  "backupInvalid": "Fisye yai kele ve kopi ya kubumba ya WhatStock."
+  "backupInvalid": "Fisye yai kele ve kopi ya kubumba ya WhatStock.",
+  "allocationPositions": "Actions",
+  "allocationSectors": "Secteurs",
+  "allocationCurrencies": "Mbongo"
 }

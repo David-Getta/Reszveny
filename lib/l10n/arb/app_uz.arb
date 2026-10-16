@@ -600,5 +600,8 @@
   "backupRestore": "Zaxira nusxadan tiklash",
   "backupRestoreHint": "Fayldagi narsalarni qoʻshadi; hozirgi maʼlumotlaringizdan hech narsa oʻchirilmaydi.",
   "backupRestored": "Zaxira nusxa tiklandi.",
-  "backupInvalid": "Bu fayl WhatStock zaxira nusxasi emas."
+  "backupInvalid": "Bu fayl WhatStock zaxira nusxasi emas.",
+  "allocationPositions": "Aksiyalar",
+  "allocationSectors": "Sektorlar",
+  "allocationCurrencies": "Valyutalar"
 }

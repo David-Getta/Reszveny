@@ -2248,4 +2248,13 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ಈ ಫೈಲ್ WhatStock ಬ್ಯಾಕಪ್ ಅಲ್ಲ.';
+
+  @override
+  String get allocationPositions => 'ಷೇರುಗಳು';
+
+  @override
+  String get allocationSectors => 'ವಲಯಗಳು';
+
+  @override
+  String get allocationCurrencies => 'ಕರೆನ್ಸಿಗಳು';
 }

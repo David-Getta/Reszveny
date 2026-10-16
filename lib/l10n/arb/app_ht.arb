@@ -600,5 +600,8 @@
   "backupRestore": "Restore nan yon sovgad",
   "backupRestoreHint": "Li ajoute sa ki nan fichye a; anyen nan sa ou genyen kounye a p ap efase.",
   "backupRestored": "Sovgad la restore.",
-  "backupInvalid": "Fichye sa a se pa yon sovgad WhatStock."
+  "backupInvalid": "Fichye sa a se pa yon sovgad WhatStock.",
+  "allocationPositions": "Aksyon",
+  "allocationSectors": "Sektè",
+  "allocationCurrencies": "Deviz"
 }

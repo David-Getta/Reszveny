@@ -2252,4 +2252,13 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fayiro eno si kkopi ey\'obukuumi eya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Emigabo';
+
+  @override
+  String get allocationSectors => 'Ebitundu';
+
+  @override
+  String get allocationCurrencies => 'Ensimbi';
 }

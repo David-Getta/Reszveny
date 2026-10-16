@@ -2241,4 +2241,13 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Dis file no be WhatStock backup.';
+
+  @override
+  String get allocationPositions => 'Stocks';
+
+  @override
+  String get allocationSectors => 'Sectors';
+
+  @override
+  String get allocationCurrencies => 'Currencies';
 }

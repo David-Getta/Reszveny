@@ -2254,4 +2254,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Diese Datei ist kein WhatStock-Backup.';
+
+  @override
+  String get allocationPositions => 'Aktien';
+
+  @override
+  String get allocationSectors => 'Sektoren';
+
+  @override
+  String get allocationCurrencies => 'Währungen';
 }

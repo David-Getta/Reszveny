@@ -600,5 +600,8 @@
   "backupRestore": "Rikthe nga kopja rezervë",
   "backupRestoreHint": "Shton atë që është në skedar; asgjë nga ajo që keni tani nuk fshihet.",
   "backupRestored": "Kopja rezervë u rikthye.",
-  "backupInvalid": "Ky skedar nuk është kopje rezervë e WhatStock."
+  "backupInvalid": "Ky skedar nuk është kopje rezervë e WhatStock.",
+  "allocationPositions": "Aksionet",
+  "allocationSectors": "Sektorët",
+  "allocationCurrencies": "Monedhat"
 }

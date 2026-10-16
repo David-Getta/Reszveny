@@ -600,5 +600,8 @@
   "backupRestore": "ស្ដារពីការបម្រុងទុក",
   "backupRestoreHint": "បន្ថែមអ្វីដែលមានក្នុងឯកសារ គ្មានអ្វីដែលអ្នកមានឥឡូវនេះត្រូវបានលុបទេ។",
   "backupRestored": "បានស្ដារការបម្រុងទុក។",
-  "backupInvalid": "ឯកសារនេះមិនមែនជាការបម្រុងទុក WhatStock ទេ។"
+  "backupInvalid": "ឯកសារនេះមិនមែនជាការបម្រុងទុក WhatStock ទេ។",
+  "allocationPositions": "ភាគហ៊ុន",
+  "allocationSectors": "វិស័យ",
+  "allocationCurrencies": "រូបិយប័ណ្ណ"
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Khôi phục từ bản sao lưu",
   "backupRestoreHint": "Thêm nội dung trong tệp; không có gì bạn đang có bị xóa.",
   "backupRestored": "Đã khôi phục bản sao lưu.",
-  "backupInvalid": "Tệp này không phải bản sao lưu WhatStock."
+  "backupInvalid": "Tệp này không phải bản sao lưu WhatStock.",
+  "allocationPositions": "Cổ phiếu",
+  "allocationSectors": "Lĩnh vực",
+  "allocationCurrencies": "Tiền tệ"
 }

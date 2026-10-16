@@ -2233,4 +2233,13 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get backupInvalid => 'دا فایل د WhatStock بیک اپ نه دی.';
+
+  @override
+  String get allocationPositions => 'ونډې';
+
+  @override
+  String get allocationSectors => 'سکتورونه';
+
+  @override
+  String get allocationCurrencies => 'اسعار';
 }

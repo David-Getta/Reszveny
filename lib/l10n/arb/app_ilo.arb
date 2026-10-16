@@ -600,5 +600,8 @@
   "backupRestore": "I-restore manipud iti backup",
   "backupRestoreHint": "Inayonna ti adda iti file; awan ti maikkat kadagiti adda kenka ita.",
   "backupRestored": "Na-restore ti backup.",
-  "backupInvalid": "Saan a WhatStock backup daytoy a file."
+  "backupInvalid": "Saan a WhatStock backup daytoy a file.",
+  "allocationPositions": "Stock",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Currency"
 }

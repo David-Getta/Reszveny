@@ -600,5 +600,8 @@
   "backupRestore": "Restaurer une sauvegarde",
   "backupRestoreHint": "Ajoute le contenu du fichier ; rien de ce que vous avez actuellement n’est supprimé.",
   "backupRestored": "Sauvegarde restaurée.",
-  "backupInvalid": "Ce fichier n’est pas une sauvegarde WhatStock."
+  "backupInvalid": "Ce fichier n’est pas une sauvegarde WhatStock.",
+  "allocationPositions": "Actions",
+  "allocationSectors": "Secteurs",
+  "allocationCurrencies": "Devises"
 }

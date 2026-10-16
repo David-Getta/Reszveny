@@ -600,5 +600,8 @@
   "backupRestore": "Err-d seg uḥraz",
   "backupRestoreHint": "Yerennu ayen yellan deg ufaylu; ulac acu ara yettwakksen seg wayen i tesɛiḍ tura.",
   "backupRestored": "Aḥraz yuɣal-d.",
-  "backupInvalid": "Afaylu-a mačči d aḥraz n WhatStock."
+  "backupInvalid": "Afaylu-a mačči d aḥraz n WhatStock.",
+  "allocationPositions": "Iksyunen",
+  "allocationSectors": "Igezdan",
+  "allocationCurrencies": "Tidrimin"
 }

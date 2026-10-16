@@ -600,5 +600,8 @@
   "backupRestore": "Atjaunot no dublējuma",
   "backupRestoreHint": "Pievieno faila saturu; nekas no jūsu pašreizējiem datiem netiek dzēsts.",
   "backupRestored": "Dublējums atjaunots.",
-  "backupInvalid": "Šis fails nav WhatStock dublējums."
+  "backupInvalid": "Šis fails nav WhatStock dublējums.",
+  "allocationPositions": "Akcijas",
+  "allocationSectors": "Sektori",
+  "allocationCurrencies": "Valūtas"
 }

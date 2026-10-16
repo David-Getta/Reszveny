@@ -2305,4 +2305,13 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ten plik nie jest kopią zapasową WhatStock.';
+
+  @override
+  String get allocationPositions => 'Akcje';
+
+  @override
+  String get allocationSectors => 'Sektory';
+
+  @override
+  String get allocationCurrencies => 'Waluty';
 }

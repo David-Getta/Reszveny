@@ -2239,4 +2239,13 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get backupInvalid => 'මෙම ගොනුව WhatStock උපස්ථයක් නොවේ.';
+
+  @override
+  String get allocationPositions => 'කොටස්';
+
+  @override
+  String get allocationSectors => 'අංශ';
+
+  @override
+  String get allocationCurrencies => 'මුදල් ඒකක';
 }

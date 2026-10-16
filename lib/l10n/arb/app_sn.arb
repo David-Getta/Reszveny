@@ -600,5 +600,8 @@
   "backupRestore": "Dzorera kubva kubhakapu",
   "backupRestoreHint": "Inowedzera zviri mufaira; hapana chaunacho izvozvi chinodzimwa.",
   "backupRestored": "Bhakapu yadzorerwa.",
-  "backupInvalid": "Faira iyi haisi bhakapu yeWhatStock."
+  "backupInvalid": "Faira iyi haisi bhakapu yeWhatStock.",
+  "allocationPositions": "Masheya",
+  "allocationSectors": "Mabazi",
+  "allocationCurrencies": "Mari"
 }

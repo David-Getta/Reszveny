@@ -2257,4 +2257,13 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Tsy fitahirizana WhatStock ity rakitra ity.';
+
+  @override
+  String get allocationPositions => 'Anjara';
+
+  @override
+  String get allocationSectors => 'Sehatra';
+
+  @override
+  String get allocationCurrencies => 'Vola';
 }

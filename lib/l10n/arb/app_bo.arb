@@ -600,5 +600,8 @@
   "backupRestore": "གྲབས་ཉར་ནས་སླར་གསོ།",
   "backupRestoreHint": "ཡིག་ཆའི་ནང་ཡོད་པ་ཁ་སྣོན་བྱེད། ཁྱེད་ལ་ད་ལྟ་ཡོད་པ་གང་ཡང་མི་སུབ།",
   "backupRestored": "གྲབས་ཉར་སླར་གསོ་བྱས་ཟིན།",
-  "backupInvalid": "ཡིག་ཆ་འདི་ WhatStock གྱི་གྲབས་ཉར་མིན།"
+  "backupInvalid": "ཡིག་ཆ་འདི་ WhatStock གྱི་གྲབས་ཉར་མིན།",
+  "allocationPositions": "ཧུར་ཁག",
+  "allocationSectors": "སྡེ་ཚན",
+  "allocationCurrencies": "དངུལ་ལོར"
 }

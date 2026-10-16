@@ -600,5 +600,8 @@
   "backupRestore": "Kuusaa deebii irraa deebisi",
   "backupRestoreHint": "Waan faayilii keessa jiru ni dabala; waan amma qabdu keessaa homtuu hin haqamu.",
   "backupRestored": "Kuusaan deebii deebi'eera.",
-  "backupInvalid": "Faayiliin kun kuusaa deebii WhatStock miti."
+  "backupInvalid": "Faayiliin kun kuusaa deebii WhatStock miti.",
+  "allocationPositions": "Aksiyoona",
+  "allocationSectors": "Dameewwan",
+  "allocationCurrencies": "Maallaqa"
 }

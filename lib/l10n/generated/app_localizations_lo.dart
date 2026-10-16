@@ -2216,4 +2216,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ໄຟລ໌ນີ້ບໍ່ແມ່ນການສຳຮອງຂໍ້ມູນ WhatStock.';
+
+  @override
+  String get allocationPositions => 'ຮຸ້ນ';
+
+  @override
+  String get allocationSectors => 'ຂະແໜງ';
+
+  @override
+  String get allocationCurrencies => 'ສະກຸນເງິນ';
 }

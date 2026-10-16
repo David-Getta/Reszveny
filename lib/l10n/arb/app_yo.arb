@@ -600,5 +600,8 @@
   "backupRestore": "Dá padà láti ẹ̀dà ìpamọ́",
   "backupRestoreHint": "Ó ń fi ohun tó wà nínú fáìlì kún un; kò sí ohun tí o ní báyìí tí a ó pa rẹ́.",
   "backupRestored": "A ti dá ẹ̀dà ìpamọ́ padà.",
-  "backupInvalid": "Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock."
+  "backupInvalid": "Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock.",
+  "allocationPositions": "Ìpín",
+  "allocationSectors": "Ẹ̀ka",
+  "allocationCurrencies": "Owó"
 }

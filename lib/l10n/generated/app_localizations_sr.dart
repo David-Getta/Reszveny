@@ -2285,4 +2285,13 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Ова датотека није резервна копија апликације WhatStock.';
+
+  @override
+  String get allocationPositions => 'Акције';
+
+  @override
+  String get allocationSectors => 'Сектори';
+
+  @override
+  String get allocationCurrencies => 'Валуте';
 }

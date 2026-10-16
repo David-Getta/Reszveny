@@ -2241,4 +2241,13 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Saa fael yi nyɛ WhatStock akorae.';
+
+  @override
+  String get allocationPositions => 'Nkyɛfa';
+
+  @override
+  String get allocationSectors => 'Afa';
+
+  @override
+  String get allocationCurrencies => 'Sika ahodoɔ';
 }

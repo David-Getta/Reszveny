@@ -2242,4 +2242,13 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ئەم فایلە یەدەگی WhatStock نییە.';
+
+  @override
+  String get allocationPositions => 'پشکەکان';
+
+  @override
+  String get allocationSectors => 'کەرتەکان';
+
+  @override
+  String get allocationCurrencies => 'دراوەکان';
 }

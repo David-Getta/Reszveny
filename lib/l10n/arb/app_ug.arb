@@ -600,5 +600,8 @@
   "backupRestore": "زاپاستىن ئەسلىگە كەلتۈرۈش",
   "backupRestoreHint": "ھۆججەتتىكىلەرنى قوشىدۇ؛ ھازىر بار نەرسىلىرىڭىزدىن ھېچنېمە ئۆچۈرۈلمەيدۇ.",
   "backupRestored": "زاپاس ئەسلىگە كەلتۈرۈلدى.",
-  "backupInvalid": "بۇ ھۆججەت WhatStock زاپىسى ئەمەس."
+  "backupInvalid": "بۇ ھۆججەت WhatStock زاپىسى ئەمەس.",
+  "allocationPositions": "پايلار",
+  "allocationSectors": "ساھەلەر",
+  "allocationCurrencies": "پۇللار"
 }

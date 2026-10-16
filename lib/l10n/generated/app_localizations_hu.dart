@@ -2247,4 +2247,13 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ez a fájl nem WhatStock-mentés.';
+
+  @override
+  String get allocationPositions => 'Részvények';
+
+  @override
+  String get allocationSectors => 'Szektorok';
+
+  @override
+  String get allocationCurrencies => 'Devizák';
 }

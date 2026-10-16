@@ -2234,4 +2234,13 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get backupInvalid => 'הקובץ הזה אינו גיבוי של WhatStock.';
+
+  @override
+  String get allocationPositions => 'מניות';
+
+  @override
+  String get allocationSectors => 'סקטורים';
+
+  @override
+  String get allocationCurrencies => 'מטבעות';
 }

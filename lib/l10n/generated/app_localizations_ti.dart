@@ -2204,4 +2204,13 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get backupInvalid => 'እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።';
+
+  @override
+  String get allocationPositions => 'ኣክስዮናት';
+
+  @override
+  String get allocationSectors => 'ዘርፍታት';
+
+  @override
+  String get allocationCurrencies => 'ባጤራታት';
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Zzaawo okuva mu kkopi ey'obukuumi",
   "backupRestoreHint": "Kyongerako ebiri mu fayiro; tewali na kimu ky'olina kati ekijjibwawo.",
   "backupRestored": "Kkopi ey'obukuumi ezziddwawo.",
-  "backupInvalid": "Fayiro eno si kkopi ey'obukuumi eya WhatStock."
+  "backupInvalid": "Fayiro eno si kkopi ey'obukuumi eya WhatStock.",
+  "allocationPositions": "Emigabo",
+  "allocationSectors": "Ebitundu",
+  "allocationCurrencies": "Ensimbi"
 }

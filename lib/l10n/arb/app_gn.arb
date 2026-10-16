@@ -600,5 +600,8 @@
   "backupRestore": "Egueru jey ñongatupyre guive",
   "backupRestoreHint": "Ombojoapy oĩva archivo-pe; ndojeheʼói mbaʼeve ereko ko ágãva.",
   "backupRestored": "Ñongatupyre ojegueru jey.",
-  "backupInvalid": "Ko archivo ndahaʼéi WhatStock ñongatupyre."
+  "backupInvalid": "Ko archivo ndahaʼéi WhatStock ñongatupyre.",
+  "allocationPositions": "Aksiõkuéra",
+  "allocationSectors": "Sectorkuéra",
+  "allocationCurrencies": "Pirapire"
 }

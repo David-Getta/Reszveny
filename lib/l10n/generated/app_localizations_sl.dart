@@ -2304,4 +2304,13 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ta datoteka ni varnostna kopija WhatStock.';
+
+  @override
+  String get allocationPositions => 'Delnice';
+
+  @override
+  String get allocationSectors => 'Sektorji';
+
+  @override
+  String get allocationCurrencies => 'Valute';
 }

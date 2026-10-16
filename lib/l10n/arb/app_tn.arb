@@ -600,5 +600,8 @@
   "backupRestore": "Busetsa go tswa mo polokelong ya tshireletso",
   "backupRestoreHint": "E oketsa se se mo faeleng; ga go sepe se o nang le sone jaanong se se phimolwang.",
   "backupRestored": "Polokelo ya tshireletso e busitswe.",
-  "backupInvalid": "Faele eno ga se polokelo ya tshireletso ya WhatStock."
+  "backupInvalid": "Faele eno ga se polokelo ya tshireletso ya WhatStock.",
+  "allocationPositions": "Dishere",
+  "allocationSectors": "Maphata",
+  "allocationCurrencies": "Madi"
 }

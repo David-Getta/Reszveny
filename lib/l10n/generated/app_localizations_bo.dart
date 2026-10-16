@@ -2231,4 +2231,13 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ཡིག་ཆ་འདི་ WhatStock གྱི་གྲབས་ཉར་མིན།';
+
+  @override
+  String get allocationPositions => 'ཧུར་ཁག';
+
+  @override
+  String get allocationSectors => 'སྡེ་ཚན';
+
+  @override
+  String get allocationCurrencies => 'དངུལ་ལོར';
 }

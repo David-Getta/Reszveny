@@ -2249,4 +2249,13 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Այս ֆայլը WhatStock-ի պահուստային պատճեն չէ։';
+
+  @override
+  String get allocationPositions => 'Բաժնետոմսեր';
+
+  @override
+  String get allocationSectors => 'Ոլորտներ';
+
+  @override
+  String get allocationCurrencies => 'Արժույթներ';
 }

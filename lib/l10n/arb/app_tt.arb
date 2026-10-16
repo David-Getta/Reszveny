@@ -600,5 +600,8 @@
   "backupRestore": "Резерв күчермәдән торгызу",
   "backupRestoreHint": "Файлдагыны өсти; хәзерге мәгълүматларыгыздан бернәрсә дә бетерелми.",
   "backupRestored": "Резерв күчермә торгызылды.",
-  "backupInvalid": "Бу файл WhatStock резерв күчермәсе түгел."
+  "backupInvalid": "Бу файл WhatStock резерв күчермәсе түгел.",
+  "allocationPositions": "Акцияләр",
+  "allocationSectors": "Секторлар",
+  "allocationCurrencies": "Валюталар"
 }

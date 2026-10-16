@@ -600,5 +600,8 @@
   "backupRestore": "Obnovi iz varnostne kopije",
   "backupRestoreHint": "Doda vsebino datoteke; nič od tega, kar imate zdaj, se ne izbriše.",
   "backupRestored": "Varnostna kopija je obnovljena.",
-  "backupInvalid": "Ta datoteka ni varnostna kopija WhatStock."
+  "backupInvalid": "Ta datoteka ni varnostna kopija WhatStock.",
+  "allocationPositions": "Delnice",
+  "allocationSectors": "Sektorji",
+  "allocationCurrencies": "Valute"
 }

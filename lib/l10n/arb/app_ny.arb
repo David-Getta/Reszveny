@@ -600,5 +600,8 @@
   "backupRestore": "Bwezeretsani kuchokera ku zosunga",
   "backupRestoreHint": "Imawonjezera zomwe zili mu fayilo; palibe chomwe muli nacho tsopano chimene chichotsedwa.",
   "backupRestored": "Zosunga zabwezeretsedwa.",
-  "backupInvalid": "Fayilo iyi si zosunga za WhatStock."
+  "backupInvalid": "Fayilo iyi si zosunga za WhatStock.",
+  "allocationPositions": "Masheya",
+  "allocationSectors": "Magawo",
+  "allocationCurrencies": "Ndalama"
 }

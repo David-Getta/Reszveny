@@ -600,5 +600,8 @@
   "backupRestore": "له بیک اپ څخه بېرته راوړئ",
   "backupRestoreHint": "هغه څه زیاتوي چې په فایل کې دي؛ له هغه څه چې اوس لرئ هېڅ نه ړنګېږي.",
   "backupRestored": "بیک اپ بېرته راوړل شو.",
-  "backupInvalid": "دا فایل د WhatStock بیک اپ نه دی."
+  "backupInvalid": "دا فایل د WhatStock بیک اپ نه دی.",
+  "allocationPositions": "ونډې",
+  "allocationSectors": "سکتورونه",
+  "allocationCurrencies": "اسعار"
 }

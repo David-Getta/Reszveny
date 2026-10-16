@@ -2173,4 +2173,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get backupInvalid => '이 파일은 WhatStock 백업이 아닙니다.';
+
+  @override
+  String get allocationPositions => '종목';
+
+  @override
+  String get allocationSectors => '섹터';
+
+  @override
+  String get allocationCurrencies => '통화';
 }

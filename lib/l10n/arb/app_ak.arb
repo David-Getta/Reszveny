@@ -600,5 +600,8 @@
   "backupRestore": "San fa fi akorae mu",
   "backupRestoreHint": "Ɛde nea ɛwɔ fael no mu ka ho; wɔmpopa biribiara a wowɔ seesei.",
   "backupRestored": "Wɔasan de akorae no aba.",
-  "backupInvalid": "Saa fael yi nyɛ WhatStock akorae."
+  "backupInvalid": "Saa fael yi nyɛ WhatStock akorae.",
+  "allocationPositions": "Nkyɛfa",
+  "allocationSectors": "Afa",
+  "allocationCurrencies": "Sika ahodoɔ"
 }

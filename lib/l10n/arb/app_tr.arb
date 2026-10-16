@@ -600,5 +600,8 @@
   "backupRestore": "Yedekten geri yükle",
   "backupRestoreHint": "Dosyadakileri ekler; şu anki verilerinizden hiçbiri silinmez.",
   "backupRestored": "Yedek geri yüklendi.",
-  "backupInvalid": "Bu dosya bir WhatStock yedeği değil."
+  "backupInvalid": "Bu dosya bir WhatStock yedeği değil.",
+  "allocationPositions": "Hisseler",
+  "allocationSectors": "Sektörler",
+  "allocationCurrencies": "Dövizler"
 }

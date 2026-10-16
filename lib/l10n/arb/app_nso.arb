@@ -600,5 +600,8 @@
   "backupRestore": "Bušetša go tšwa polokelong ya thekgo",
   "backupRestoreHint": "E oketša seo se lego faeleng; ga go selo seo o nago le sona bjale se phumolwago.",
   "backupRestored": "Polokelo ya thekgo e bušeditšwe.",
-  "backupInvalid": "Faele ye ga se polokelo ya thekgo ya WhatStock."
+  "backupInvalid": "Faele ye ga se polokelo ya thekgo ya WhatStock.",
+  "allocationPositions": "Dišere",
+  "allocationSectors": "Makala",
+  "allocationCurrencies": "Ditšhelete"
 }

@@ -2302,4 +2302,13 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Tento súbor nie je záloha WhatStock.';
+
+  @override
+  String get allocationPositions => 'Akcie';
+
+  @override
+  String get allocationSectors => 'Sektory';
+
+  @override
+  String get allocationCurrencies => 'Meny';
 }

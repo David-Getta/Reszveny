@@ -2233,4 +2233,13 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get backupInvalid => 'هي فائل WhatStock بيڪ اپ ناهي.';
+
+  @override
+  String get allocationPositions => 'شيئرز';
+
+  @override
+  String get allocationSectors => 'شعبا';
+
+  @override
+  String get allocationCurrencies => 'ڪرنسيون';
 }

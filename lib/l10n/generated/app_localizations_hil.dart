@@ -2255,4 +2255,13 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ini nga file indi WhatStock backup.';
+
+  @override
+  String get allocationPositions => 'Mga stock';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Currency';
 }

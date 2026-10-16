@@ -600,5 +600,8 @@
   "backupRestore": "උපස්ථයෙන් ප්‍රතිසාධනය කරන්න",
   "backupRestoreHint": "ගොනුවේ ඇති දේ එක් කරයි; ඔබට දැන් ඇති කිසිවක් මකා නොදැමේ.",
   "backupRestored": "උපස්ථය ප්‍රතිසාධනය කළා.",
-  "backupInvalid": "මෙම ගොනුව WhatStock උපස්ථයක් නොවේ."
+  "backupInvalid": "මෙම ගොනුව WhatStock උපස්ථයක් නොවේ.",
+  "allocationPositions": "කොටස්",
+  "allocationSectors": "අංශ",
+  "allocationCurrencies": "මුදල් ඒකක"
 }

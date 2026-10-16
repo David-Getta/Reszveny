@@ -2252,4 +2252,13 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock.';
+
+  @override
+  String get allocationPositions => 'Izabelo';
+
+  @override
+  String get allocationSectors => 'Amacandelo';
+
+  @override
+  String get allocationCurrencies => 'Iimali';
 }

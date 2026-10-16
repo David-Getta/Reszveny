@@ -600,5 +600,8 @@
   "backupRestore": "Artir iwde e kopi danndaandi",
   "backupRestoreHint": "Ɓeydata ko woni e fiyannde ndee; alaa fus ko woodanaa jooni momtetee.",
   "backupRestored": "Kopi danndaandi ndi artiraama.",
-  "backupInvalid": "Ndee fiyannde wonaa kopi danndaandi WhatStock."
+  "backupInvalid": "Ndee fiyannde wonaa kopi danndaandi WhatStock.",
+  "allocationPositions": "Aksiyonji",
+  "allocationSectors": "Fannuuji",
+  "allocationCurrencies": "Ceede"
 }

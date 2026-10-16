@@ -600,5 +600,8 @@
   "backupRestore": "Ka soo celi nuqulka kaydka",
   "backupRestoreHint": "Waxay ku daraysaa waxa faylka ku jira; waxba lagama tirtirayo waxa aad hadda haysato.",
   "backupRestored": "Nuqulka kaydka waa la soo celiyay.",
-  "backupInvalid": "Faylkani maaha nuqul kayd ah oo WhatStock."
+  "backupInvalid": "Faylkani maaha nuqul kayd ah oo WhatStock.",
+  "allocationPositions": "Saamiyada",
+  "allocationSectors": "Waaxyaha",
+  "allocationCurrencies": "Lacagaha"
 }

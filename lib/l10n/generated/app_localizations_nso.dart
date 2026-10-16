@@ -2256,4 +2256,13 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faele ye ga se polokelo ya thekgo ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Dišere';
+
+  @override
+  String get allocationSectors => 'Makala';
+
+  @override
+  String get allocationCurrencies => 'Ditšhelete';
 }

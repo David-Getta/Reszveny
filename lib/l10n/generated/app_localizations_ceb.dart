@@ -2251,4 +2251,13 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Kini nga file dili WhatStock backup.';
+
+  @override
+  String get allocationPositions => 'Mga stock';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Currency';
 }

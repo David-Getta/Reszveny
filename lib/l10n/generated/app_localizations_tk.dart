@@ -2241,4 +2241,13 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Bu faýl WhatStock ätiýaçlyk nusgasy däl.';
+
+  @override
+  String get allocationPositions => 'Paýnamalar';
+
+  @override
+  String get allocationSectors => 'Sektorlar';
+
+  @override
+  String get allocationCurrencies => 'Walýutalar';
 }

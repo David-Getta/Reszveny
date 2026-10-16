@@ -2251,4 +2251,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ce fichier n’est pas une sauvegarde WhatStock.';
+
+  @override
+  String get allocationPositions => 'Actions';
+
+  @override
+  String get allocationSectors => 'Secteurs';
+
+  @override
+  String get allocationCurrencies => 'Devises';
 }

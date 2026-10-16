@@ -2281,4 +2281,13 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Šis fails nav WhatStock dublējums.';
+
+  @override
+  String get allocationPositions => 'Akcijas';
+
+  @override
+  String get allocationSectors => 'Sektori';
+
+  @override
+  String get allocationCurrencies => 'Valūtas';
 }

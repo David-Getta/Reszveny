@@ -2237,4 +2237,13 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ई फाइल WhatStock बैकअप ना ह।';
+
+  @override
+  String get allocationPositions => 'शेयर';
+
+  @override
+  String get allocationSectors => 'सेक्टर';
+
+  @override
+  String get allocationCurrencies => 'मुद्रा';
 }

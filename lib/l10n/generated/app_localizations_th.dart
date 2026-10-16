@@ -2213,4 +2213,13 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ไฟล์นี้ไม่ใช่ข้อมูลสำรองของ WhatStock';
+
+  @override
+  String get allocationPositions => 'หุ้น';
+
+  @override
+  String get allocationSectors => 'หมวดธุรกิจ';
+
+  @override
+  String get allocationCurrencies => 'สกุลเงิน';
 }

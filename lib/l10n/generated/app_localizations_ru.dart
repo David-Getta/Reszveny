@@ -2305,4 +2305,13 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Этот файл не является резервной копией WhatStock.';
+
+  @override
+  String get allocationPositions => 'Акции';
+
+  @override
+  String get allocationSectors => 'Секторы';
+
+  @override
+  String get allocationCurrencies => 'Валюты';
 }

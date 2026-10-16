@@ -600,5 +600,8 @@
   "backupRestore": "Камдык көчүрмөдөн калыбына келтирүү",
   "backupRestoreHint": "Файлдагыны кошот; азыркы маалыматтарыңыздан эч нерсе өчүрүлбөйт.",
   "backupRestored": "Камдык көчүрмө калыбына келтирилди.",
-  "backupInvalid": "Бул файл WhatStock камдык көчүрмөсү эмес."
+  "backupInvalid": "Бул файл WhatStock камдык көчүрмөсү эмес.",
+  "allocationPositions": "Акциялар",
+  "allocationSectors": "Секторлор",
+  "allocationCurrencies": "Валюталар"
 }

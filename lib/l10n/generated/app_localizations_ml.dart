@@ -2250,4 +2250,13 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ഈ ഫയൽ ഒരു WhatStock ബാക്കപ്പ് അല്ല.';
+
+  @override
+  String get allocationPositions => 'ഓഹരികൾ';
+
+  @override
+  String get allocationSectors => 'മേഖലകൾ';
+
+  @override
+  String get allocationCurrencies => 'കറൻസികൾ';
 }

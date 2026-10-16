@@ -600,5 +600,8 @@
   "backupRestore": "Vuyisa ku suka eka nkopi yo hlayisa",
   "backupRestoreHint": "Yi engetela leswi nga eka fayili; a ku na nchumu lowu u nga na wona sweswi lowu susiwaka.",
   "backupRestored": "Nkopi yo hlayisa yi vuyisiwile.",
-  "backupInvalid": "Fayili leyi a hi nkopi yo hlayisa ya WhatStock."
+  "backupInvalid": "Fayili leyi a hi nkopi yo hlayisa ya WhatStock.",
+  "allocationPositions": "Tixere",
+  "allocationSectors": "Swiyenge",
+  "allocationCurrencies": "Mali"
 }

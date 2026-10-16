@@ -600,5 +600,8 @@
   "backupRestore": "从备份恢复",
   "backupRestoreHint": "添加文件中的内容；不会删除您现有的任何数据。",
   "backupRestored": "备份已恢复。",
-  "backupInvalid": "此文件不是 WhatStock 备份。"
+  "backupInvalid": "此文件不是 WhatStock 备份。",
+  "allocationPositions": "个股",
+  "allocationSectors": "板块",
+  "allocationCurrencies": "货币"
 }

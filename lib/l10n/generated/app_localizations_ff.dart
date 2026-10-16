@@ -2236,4 +2236,13 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ndee fiyannde wonaa kopi danndaandi WhatStock.';
+
+  @override
+  String get allocationPositions => 'Aksiyonji';
+
+  @override
+  String get allocationSectors => 'Fannuuji';
+
+  @override
+  String get allocationCurrencies => 'Ceede';
 }

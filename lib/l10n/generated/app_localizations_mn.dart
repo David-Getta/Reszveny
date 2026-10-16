@@ -2242,4 +2242,13 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Энэ файл WhatStock-ийн нөөц биш байна.';
+
+  @override
+  String get allocationPositions => 'Хувьцаа';
+
+  @override
+  String get allocationSectors => 'Салбар';
+
+  @override
+  String get allocationCurrencies => 'Валют';
 }

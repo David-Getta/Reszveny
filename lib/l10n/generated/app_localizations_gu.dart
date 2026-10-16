@@ -2237,4 +2237,13 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get backupInvalid => 'આ ફાઇલ WhatStock બેકઅપ નથી.';
+
+  @override
+  String get allocationPositions => 'શેર';
+
+  @override
+  String get allocationSectors => 'સેક્ટર';
+
+  @override
+  String get allocationCurrencies => 'ચલણ';
 }

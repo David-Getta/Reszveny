@@ -2243,4 +2243,13 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ev pel ne paşekeyeke WhatStock e.';
+
+  @override
+  String get allocationPositions => 'Pişk';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Dirav';
 }

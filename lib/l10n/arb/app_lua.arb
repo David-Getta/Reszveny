@@ -600,5 +600,8 @@
   "backupRestore": "Pingaja ku kopi wa kulama",
   "backupRestoreHint": "Udi usakidila bidi mu fichier; kakuena tshintu tshia biudi nabi katataka tshidi tshijimina to.",
   "backupRestored": "Kopi wa kulama mmupingaja.",
-  "backupInvalid": "Fichier eu ki mmukopi wa kulama wa WhatStock to."
+  "backupInvalid": "Fichier eu ki mmukopi wa kulama wa WhatStock to.",
+  "allocationPositions": "Actions",
+  "allocationSectors": "Secteurs",
+  "allocationCurrencies": "Mfranga"
 }

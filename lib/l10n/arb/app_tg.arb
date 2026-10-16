@@ -600,5 +600,8 @@
   "backupRestore": "Барқарор кардан аз нусхаи эҳтиётӣ",
   "backupRestoreHint": "Он чиро, ки дар файл аст, илова мекунад; аз маълумоти ҳозираи шумо чизе нест намешавад.",
   "backupRestored": "Нусхаи эҳтиётӣ барқарор шуд.",
-  "backupInvalid": "Ин файл нусхаи эҳтиётии WhatStock нест."
+  "backupInvalid": "Ин файл нусхаи эҳтиётии WhatStock нест.",
+  "allocationPositions": "Саҳмияҳо",
+  "allocationSectors": "Секторҳо",
+  "allocationCurrencies": "Асъорҳо"
 }

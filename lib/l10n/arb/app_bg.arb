@@ -600,5 +600,8 @@
   "backupRestore": "Възстановяване от резервно копие",
   "backupRestoreHint": "Добавя съдържанието на файла; нищо от сегашните ви данни не се изтрива.",
   "backupRestored": "Резервното копие е възстановено.",
-  "backupInvalid": "Този файл не е резервно копие на WhatStock."
+  "backupInvalid": "Този файл не е резервно копие на WhatStock.",
+  "allocationPositions": "Акции",
+  "allocationSectors": "Сектори",
+  "allocationCurrencies": "Валути"
 }

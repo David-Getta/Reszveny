@@ -600,5 +600,8 @@
   "backupRestore": "Επαναφορά από αντίγραφο ασφαλείας",
   "backupRestoreHint": "Προσθέτει ό,τι υπάρχει στο αρχείο· τίποτα από όσα έχετε τώρα δεν διαγράφεται.",
   "backupRestored": "Το αντίγραφο ασφαλείας επαναφέρθηκε.",
-  "backupInvalid": "Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock."
+  "backupInvalid": "Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.",
+  "allocationPositions": "Μετοχές",
+  "allocationSectors": "Τομείς",
+  "allocationCurrencies": "Νομίσματα"
 }

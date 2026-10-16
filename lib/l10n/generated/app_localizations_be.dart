@@ -2302,4 +2302,13 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Гэты файл не з\'яўляецца рэзервовай копіяй WhatStock.';
+
+  @override
+  String get allocationPositions => 'Акцыі';
+
+  @override
+  String get allocationSectors => 'Сектары';
+
+  @override
+  String get allocationCurrencies => 'Валюты';
 }

@@ -2240,4 +2240,13 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fichye sa a se pa yon sovgad WhatStock.';
+
+  @override
+  String get allocationPositions => 'Aksyon';
+
+  @override
+  String get allocationSectors => 'Sektè';
+
+  @override
+  String get allocationCurrencies => 'Deviz';
 }

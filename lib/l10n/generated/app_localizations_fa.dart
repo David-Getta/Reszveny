@@ -2238,4 +2238,13 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'این فایل نسخهٔ پشتیبان WhatStock نیست.';
+
+  @override
+  String get allocationPositions => 'سهام';
+
+  @override
+  String get allocationSectors => 'بخش‌ها';
+
+  @override
+  String get allocationCurrencies => 'ارزها';
 }

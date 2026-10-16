@@ -2237,4 +2237,13 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faịlụ a abụghị ndabere WhatStock.';
+
+  @override
+  String get allocationPositions => 'Òkè';
+
+  @override
+  String get allocationSectors => 'Ngalaba';
+
+  @override
+  String get allocationCurrencies => 'Ego';
 }

@@ -2246,4 +2246,13 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fail ini bukan sandaran WhatStock.';
+
+  @override
+  String get allocationPositions => 'Saham';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Mata wang';
 }

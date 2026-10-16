@@ -600,5 +600,8 @@
   "backupRestore": "バックアップから復元",
   "backupRestoreHint": "ファイルの内容を追加します。現在のデータは何も削除されません。",
   "backupRestored": "バックアップを復元しました。",
-  "backupInvalid": "このファイルはWhatStockのバックアップではありません。"
+  "backupInvalid": "このファイルはWhatStockのバックアップではありません。",
+  "allocationPositions": "銘柄",
+  "allocationSectors": "セクター",
+  "allocationCurrencies": "通貨"
 }

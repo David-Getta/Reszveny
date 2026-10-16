@@ -2237,4 +2237,13 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ਇਹ ਫ਼ਾਈਲ WhatStock ਬੈਕਅੱਪ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String get allocationPositions => 'ਸ਼ੇਅਰ';
+
+  @override
+  String get allocationSectors => 'ਸੈਕਟਰ';
+
+  @override
+  String get allocationCurrencies => 'ਮੁਦਰਾਵਾਂ';
 }

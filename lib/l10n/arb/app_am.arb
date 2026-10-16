@@ -600,5 +600,8 @@
   "backupRestore": "ከምትኬ ወደነበረበት መልስ",
   "backupRestoreHint": "በፋይሉ ውስጥ ያለውን ያክላል፤ አሁን ካለዎት ምንም አይሰረዝም።",
   "backupRestored": "ምትኬው ወደነበረበት ተመልሷል።",
-  "backupInvalid": "ይህ ፋይል የWhatStock ምትኬ አይደለም።"
+  "backupInvalid": "ይህ ፋይል የWhatStock ምትኬ አይደለም።",
+  "allocationPositions": "አክሲዮኖች",
+  "allocationSectors": "ዘርፎች",
+  "allocationCurrencies": "ምንዛሬዎች"
 }

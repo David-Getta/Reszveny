@@ -2242,4 +2242,13 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faili ĩno ti mbaka ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Hisa';
+
+  @override
+  String get allocationSectors => 'Sekta';
+
+  @override
+  String get allocationCurrencies => 'Mbeca';
 }

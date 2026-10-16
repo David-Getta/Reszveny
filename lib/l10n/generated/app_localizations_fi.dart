@@ -2243,4 +2243,13 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Tämä tiedosto ei ole WhatStock-varmuuskopio.';
+
+  @override
+  String get allocationPositions => 'Osakkeet';
+
+  @override
+  String get allocationSectors => 'Sektorit';
+
+  @override
+  String get allocationCurrencies => 'Valuutat';
 }

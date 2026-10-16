@@ -2235,4 +2235,13 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Tệp này không phải bản sao lưu WhatStock.';
+
+  @override
+  String get allocationPositions => 'Cổ phiếu';
+
+  @override
+  String get allocationSectors => 'Lĩnh vực';
+
+  @override
+  String get allocationCurrencies => 'Tiền tệ';
 }

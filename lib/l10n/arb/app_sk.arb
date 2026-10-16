@@ -600,5 +600,8 @@
   "backupRestore": "Obnoviť zo zálohy",
   "backupRestoreHint": "Pridá to, čo je v súbore; nič z toho, čo máte teraz, sa nevymaže.",
   "backupRestored": "Záloha bola obnovená.",
-  "backupInvalid": "Tento súbor nie je záloha WhatStock."
+  "backupInvalid": "Tento súbor nie je záloha WhatStock.",
+  "allocationPositions": "Akcie",
+  "allocationSectors": "Sektory",
+  "allocationCurrencies": "Meny"
 }

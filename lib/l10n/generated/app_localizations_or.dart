@@ -2239,4 +2239,13 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ଏହି ଫାଇଲଟି WhatStock ବ୍ୟାକଅପ୍ ନୁହେଁ।';
+
+  @override
+  String get allocationPositions => 'ସେୟାର';
+
+  @override
+  String get allocationSectors => 'ସେକ୍ଟର';
+
+  @override
+  String get allocationCurrencies => 'ମୁଦ୍ରା';
 }

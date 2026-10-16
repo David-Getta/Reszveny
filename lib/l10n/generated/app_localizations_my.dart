@@ -2234,4 +2234,13 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ဤဖိုင်သည် WhatStock အရန်ဖိုင် မဟုတ်ပါ။';
+
+  @override
+  String get allocationPositions => 'ရှယ်ယာ';
+
+  @override
+  String get allocationSectors => 'ကဏ္ဍ';
+
+  @override
+  String get allocationCurrencies => 'ငွေကြေး';
 }

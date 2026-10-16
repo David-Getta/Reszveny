@@ -2247,4 +2247,13 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ko archivo ndahaʼéi WhatStock ñongatupyre.';
+
+  @override
+  String get allocationPositions => 'Aksiõkuéra';
+
+  @override
+  String get allocationSectors => 'Sectorkuéra';
+
+  @override
+  String get allocationCurrencies => 'Pirapire';
 }

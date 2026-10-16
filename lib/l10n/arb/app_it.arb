@@ -600,5 +600,8 @@
   "backupRestore": "Ripristina da un backup",
   "backupRestoreHint": "Aggiunge ciò che c’è nel file; non viene eliminato nulla di ciò che hai ora.",
   "backupRestored": "Backup ripristinato.",
-  "backupInvalid": "Questo file non è un backup di WhatStock."
+  "backupInvalid": "Questo file non è un backup di WhatStock.",
+  "allocationPositions": "Azioni",
+  "allocationSectors": "Settori",
+  "allocationCurrencies": "Valute"
 }

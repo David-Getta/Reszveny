@@ -2245,4 +2245,13 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Bu fayl WhatStock zaxira nusxasi emas.';
+
+  @override
+  String get allocationPositions => 'Aksiyalar';
+
+  @override
+  String get allocationSectors => 'Sektorlar';
+
+  @override
+  String get allocationCurrencies => 'Valyutalar';
 }

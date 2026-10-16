@@ -2298,4 +2298,13 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Tento soubor není záloha WhatStock.';
+
+  @override
+  String get allocationPositions => 'Akcie';
+
+  @override
+  String get allocationSectors => 'Sektory';
+
+  @override
+  String get allocationCurrencies => 'Měny';
 }

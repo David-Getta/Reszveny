@@ -600,5 +600,8 @@
   "backupRestore": "กู้คืนจากข้อมูลสำรอง",
   "backupRestoreHint": "เพิ่มสิ่งที่อยู่ในไฟล์ ข้อมูลที่คุณมีอยู่ตอนนี้จะไม่ถูกลบ",
   "backupRestored": "กู้คืนข้อมูลสำรองแล้ว",
-  "backupInvalid": "ไฟล์นี้ไม่ใช่ข้อมูลสำรองของ WhatStock"
+  "backupInvalid": "ไฟล์นี้ไม่ใช่ข้อมูลสำรองของ WhatStock",
+  "allocationPositions": "หุ้น",
+  "allocationSectors": "หมวดธุรกิจ",
+  "allocationCurrencies": "สกุลเงิน"
 }

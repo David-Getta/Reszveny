@@ -600,5 +600,8 @@
   "backupRestore": "Hamerina avy amin'ny fitahirizana",
   "backupRestoreHint": "Ampiana izay ao anaty rakitra; tsy misy fafana amin'izay anananao ankehitriny.",
   "backupRestored": "Naverina ny fitahirizana.",
-  "backupInvalid": "Tsy fitahirizana WhatStock ity rakitra ity."
+  "backupInvalid": "Tsy fitahirizana WhatStock ity rakitra ity.",
+  "allocationPositions": "Anjara",
+  "allocationSectors": "Sehatra",
+  "allocationCurrencies": "Vola"
 }

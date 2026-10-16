@@ -2239,4 +2239,13 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Nin fisiye tɛ WhatStock kopi lamaralen ye.';
+
+  @override
+  String get allocationPositions => 'Aksiyɔnw';
+
+  @override
+  String get allocationSectors => 'Baara fanw';
+
+  @override
+  String get allocationCurrencies => 'Wariw';
 }

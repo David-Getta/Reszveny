@@ -600,5 +600,8 @@
   "backupRestore": "Segin ka bɔ kopi lamaralen na",
   "backupRestoreHint": "A bɛ fisiye kɔnɔ fɛnw fara a kan; i bɛ fɛn minnu sɔrɔ sisan, olu si tɛna jɔsi.",
   "backupRestored": "Kopi lamaralen seginna.",
-  "backupInvalid": "Nin fisiye tɛ WhatStock kopi lamaralen ye."
+  "backupInvalid": "Nin fisiye tɛ WhatStock kopi lamaralen ye.",
+  "allocationPositions": "Aksiyɔnw",
+  "allocationSectors": "Baara fanw",
+  "allocationCurrencies": "Wariw"
 }

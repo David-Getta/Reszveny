@@ -600,5 +600,8 @@
   "backupRestore": "Weghachite site na ndabere",
   "backupRestoreHint": "Ọ na-agbakwunye ihe dị na faịlụ ahụ; ọ dịghị ihe ị nwere ugbu a a ga-ehichapụ.",
   "backupRestored": "Eweghachila ndabere.",
-  "backupInvalid": "Faịlụ a abụghị ndabere WhatStock."
+  "backupInvalid": "Faịlụ a abụghị ndabere WhatStock.",
+  "allocationPositions": "Òkè",
+  "allocationSectors": "Ngalaba",
+  "allocationCurrencies": "Ego"
 }

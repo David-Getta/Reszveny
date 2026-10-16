@@ -2248,4 +2248,13 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fayilo iyi si zosunga za WhatStock.';
+
+  @override
+  String get allocationPositions => 'Masheya';
+
+  @override
+  String get allocationSectors => 'Magawo';
+
+  @override
+  String get allocationCurrencies => 'Ndalama';
 }

@@ -226,6 +226,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5at | Kérdezz a portfólió-elemzésről: ugyanaz a rövid beszélgetés, mint a részvényelemzésnél (a napi kérdéskeretből) | ✅ kész |
 | 5au | Hozamok a grafikon alatt: 1 hét, 1 hónap, 3 hónap, idén (az előző év záróárától), 1 év, 5 év; a nem fedett időszak kimarad | ✅ kész |
 | 5av | Biztonsági mentés fájlba és visszaállítás (kedvencek, listák, portfólió, riasztások, jegyzetek) a Beállításokban; a visszaállítás összefésül, semmit nem töröl, kétszer sem duplikál | ✅ kész |
+| 5aw | Portfólió-megoszlás részvények, szektorok vagy devizák szerint (váltóval) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

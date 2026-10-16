@@ -600,5 +600,8 @@
   "backupRestore": "బ్యాకప్ నుండి పునరుద్ధరించు",
   "backupRestoreHint": "ఫైల్‌లో ఉన్నదాన్ని జోడిస్తుంది; ఇప్పుడు మీ వద్ద ఉన్నదేదీ తొలగించబడదు.",
   "backupRestored": "బ్యాకప్ పునరుద్ధరించబడింది.",
-  "backupInvalid": "ఈ ఫైల్ WhatStock బ్యాకప్ కాదు."
+  "backupInvalid": "ఈ ఫైల్ WhatStock బ్యాకప్ కాదు.",
+  "allocationPositions": "షేర్లు",
+  "allocationSectors": "రంగాలు",
+  "allocationCurrencies": "కరెన్సీలు"
 }

@@ -2255,4 +2255,13 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Kay archivoqa manam WhatStock waqaychasqachu.';
+
+  @override
+  String get allocationPositions => 'Accionkuna';
+
+  @override
+  String get allocationSectors => 'Sectorkuna';
+
+  @override
+  String get allocationCurrencies => 'Qullqikuna';
 }

@@ -2241,4 +2241,13 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Bu dosya bir WhatStock yedeği değil.';
+
+  @override
+  String get allocationPositions => 'Hisseler';
+
+  @override
+  String get allocationSectors => 'Sektörler';
+
+  @override
+  String get allocationCurrencies => 'Dövizler';
 }

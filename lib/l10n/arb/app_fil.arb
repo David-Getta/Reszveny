@@ -600,5 +600,8 @@
   "backupRestore": "I-restore mula sa backup",
   "backupRestoreHint": "Idinadagdag ang laman ng file; walang mabubura sa kung ano ang mayroon ka ngayon.",
   "backupRestored": "Na-restore ang backup.",
-  "backupInvalid": "Hindi WhatStock backup ang file na ito."
+  "backupInvalid": "Hindi WhatStock backup ang file na ito.",
+  "allocationPositions": "Mga stock",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Currency"
 }

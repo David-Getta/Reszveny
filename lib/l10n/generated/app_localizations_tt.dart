@@ -2239,4 +2239,13 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Бу файл WhatStock резерв күчермәсе түгел.';
+
+  @override
+  String get allocationPositions => 'Акцияләр';
+
+  @override
+  String get allocationSectors => 'Секторлар';
+
+  @override
+  String get allocationCurrencies => 'Валюталар';
 }

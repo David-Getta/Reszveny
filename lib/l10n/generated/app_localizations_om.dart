@@ -2250,4 +2250,13 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faayiliin kun kuusaa deebii WhatStock miti.';
+
+  @override
+  String get allocationPositions => 'Aksiyoona';
+
+  @override
+  String get allocationSectors => 'Dameewwan';
+
+  @override
+  String get allocationCurrencies => 'Maallaqa';
 }

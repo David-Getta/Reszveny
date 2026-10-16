@@ -600,5 +600,8 @@
   "backupRestore": "بیک اپ سے بحال کریں",
   "backupRestoreHint": "فائل میں موجود چیزیں شامل کرتا ہے؛ آپ کے پاس اس وقت موجود کچھ بھی حذف نہیں ہوتا۔",
   "backupRestored": "بیک اپ بحال ہو گیا۔",
-  "backupInvalid": "یہ فائل WhatStock بیک اپ نہیں ہے۔"
+  "backupInvalid": "یہ فائل WhatStock بیک اپ نہیں ہے۔",
+  "allocationPositions": "حصص",
+  "allocationSectors": "شعبے",
+  "allocationCurrencies": "کرنسیاں"
 }

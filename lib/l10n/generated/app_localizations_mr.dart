@@ -2241,4 +2241,13 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ही फाइल WhatStock बॅकअप नाही.';
+
+  @override
+  String get allocationPositions => 'शेअर्स';
+
+  @override
+  String get allocationSectors => 'क्षेत्रे';
+
+  @override
+  String get allocationCurrencies => 'चलने';
 }

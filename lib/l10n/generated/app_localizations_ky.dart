@@ -2244,4 +2244,13 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Бул файл WhatStock камдык көчүрмөсү эмес.';
+
+  @override
+  String get allocationPositions => 'Акциялар';
+
+  @override
+  String get allocationSectors => 'Секторлор';
+
+  @override
+  String get allocationCurrencies => 'Валюталар';
 }

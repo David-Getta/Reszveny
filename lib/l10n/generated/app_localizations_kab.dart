@@ -2240,4 +2240,13 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Afaylu-a mačči d aḥraz n WhatStock.';
+
+  @override
+  String get allocationPositions => 'Iksyunen';
+
+  @override
+  String get allocationSectors => 'Igezdan';
+
+  @override
+  String get allocationCurrencies => 'Tidrimin';
 }

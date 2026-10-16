@@ -600,5 +600,8 @@
   "backupRestore": "Ehtiyat nüsxədən bərpa et",
   "backupRestoreHint": "Fayldakıları əlavə edir; hazırkı məlumatlarınızdan heç nə silinmir.",
   "backupRestored": "Ehtiyat nüsxə bərpa edildi.",
-  "backupInvalid": "Bu fayl WhatStock ehtiyat nüsxəsi deyil."
+  "backupInvalid": "Bu fayl WhatStock ehtiyat nüsxəsi deyil.",
+  "allocationPositions": "Səhmlər",
+  "allocationSectors": "Sektorlar",
+  "allocationCurrencies": "Valyutalar"
 }

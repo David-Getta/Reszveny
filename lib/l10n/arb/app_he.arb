@@ -600,5 +600,8 @@
   "backupRestore": "שחזור מגיבוי",
   "backupRestoreHint": "מוסיף את מה שיש בקובץ; שום דבר ממה שיש לכם עכשיו לא נמחק.",
   "backupRestored": "הגיבוי שוחזר.",
-  "backupInvalid": "הקובץ הזה אינו גיבוי של WhatStock."
+  "backupInvalid": "הקובץ הזה אינו גיבוי של WhatStock.",
+  "allocationPositions": "מניות",
+  "allocationSectors": "סקטורים",
+  "allocationCurrencies": "מטבעות"
 }

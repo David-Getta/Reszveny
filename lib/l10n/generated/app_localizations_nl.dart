@@ -2246,4 +2246,13 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Dit bestand is geen WhatStock-back-up.';
+
+  @override
+  String get allocationPositions => 'Aandelen';
+
+  @override
+  String get allocationSectors => 'Sectoren';
+
+  @override
+  String get allocationCurrencies => 'Valuta\'s';
 }

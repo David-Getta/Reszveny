@@ -600,5 +600,8 @@
   "backupRestore": "Pulihaké saka cadhangan",
   "backupRestoreHint": "Nambahaké isiné file; ora ana sing kabusak saka data sampeyan saiki.",
   "backupRestored": "Cadhangan wis dipulihaké.",
-  "backupInvalid": "File iki dudu cadhangan WhatStock."
+  "backupInvalid": "File iki dudu cadhangan WhatStock.",
+  "allocationPositions": "Saham",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Mata uang"
 }

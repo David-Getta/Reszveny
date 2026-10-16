@@ -600,5 +600,8 @@
   "backupRestore": "بازیابی از نسخهٔ پشتیبان",
   "backupRestoreHint": "محتوای فایل را اضافه می‌کند؛ هیچ‌چیز از داده‌های فعلی شما حذف نمی‌شود.",
   "backupRestored": "نسخهٔ پشتیبان بازیابی شد.",
-  "backupInvalid": "این فایل نسخهٔ پشتیبان WhatStock نیست."
+  "backupInvalid": "این فایل نسخهٔ پشتیبان WhatStock نیست.",
+  "allocationPositions": "سهام",
+  "allocationSectors": "بخش‌ها",
+  "allocationCurrencies": "ارزها"
 }

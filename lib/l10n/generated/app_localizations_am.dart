@@ -2209,4 +2209,13 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ይህ ፋይል የWhatStock ምትኬ አይደለም።';
+
+  @override
+  String get allocationPositions => 'አክሲዮኖች';
+
+  @override
+  String get allocationSectors => 'ዘርፎች';
+
+  @override
+  String get allocationCurrencies => 'ምንዛሬዎች';
 }

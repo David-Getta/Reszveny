@@ -600,5 +600,8 @@
   "backupRestore": "Rejesha kutoka nakala rudufu",
   "backupRestoreHint": "Huongeza kilicho kwenye faili; hakuna ulicho nacho sasa kitakachofutwa.",
   "backupRestored": "Nakala rudufu imerejeshwa.",
-  "backupInvalid": "Faili hii si nakala rudufu ya WhatStock."
+  "backupInvalid": "Faili hii si nakala rudufu ya WhatStock.",
+  "allocationPositions": "Hisa",
+  "allocationSectors": "Sekta",
+  "allocationCurrencies": "Sarafu"
 }

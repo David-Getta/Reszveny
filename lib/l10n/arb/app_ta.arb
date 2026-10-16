@@ -600,5 +600,8 @@
   "backupRestore": "காப்புப்பிரதியிலிருந்து மீட்டெடு",
   "backupRestoreHint": "கோப்பில் உள்ளதைச் சேர்க்கும்; இப்போது உள்ள எதுவும் நீக்கப்படாது.",
   "backupRestored": "காப்புப்பிரதி மீட்டெடுக்கப்பட்டது.",
-  "backupInvalid": "இந்தக் கோப்பு WhatStock காப்புப்பிரதி அல்ல."
+  "backupInvalid": "இந்தக் கோப்பு WhatStock காப்புப்பிரதி அல்ல.",
+  "allocationPositions": "பங்குகள்",
+  "allocationSectors": "துறைகள்",
+  "allocationCurrencies": "நாணயங்கள்"
 }

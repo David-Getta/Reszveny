@@ -2253,4 +2253,13 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Fisyé oyo ezali kopi ya kobomba ya WhatStock te.';
+
+  @override
+  String get allocationPositions => 'Ba-action';
+
+  @override
+  String get allocationSectors => 'Ba-secteur';
+
+  @override
+  String get allocationCurrencies => 'Mbɔngɔ';
 }

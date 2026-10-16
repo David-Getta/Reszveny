@@ -600,5 +600,8 @@
   "backupRestore": "Ätiýaçlyk nusgadan dikelt",
   "backupRestoreHint": "Faýldakylary goşýar; häzirki zatlaryňyzdan hiç zat pozulmaýar.",
   "backupRestored": "Ätiýaçlyk nusga dikeldildi.",
-  "backupInvalid": "Bu faýl WhatStock ätiýaçlyk nusgasy däl."
+  "backupInvalid": "Bu faýl WhatStock ätiýaçlyk nusgasy däl.",
+  "allocationPositions": "Paýnamalar",
+  "allocationSectors": "Sektorlar",
+  "allocationCurrencies": "Walýutalar"
 }

@@ -2291,4 +2291,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'هذا الملف ليس نسخة احتياطية من WhatStock.';
+
+  @override
+  String get allocationPositions => 'الأسهم';
+
+  @override
+  String get allocationSectors => 'القطاعات';
+
+  @override
+  String get allocationCurrencies => 'العملات';
 }

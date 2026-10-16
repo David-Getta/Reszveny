@@ -2243,4 +2243,13 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ин файл нусхаи эҳтиётии WhatStock нест.';
+
+  @override
+  String get allocationPositions => 'Саҳмияҳо';
+
+  @override
+  String get allocationSectors => 'Секторҳо';
+
+  @override
+  String get allocationCurrencies => 'Асъорҳо';
 }

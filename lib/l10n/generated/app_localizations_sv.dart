@@ -2243,4 +2243,13 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Den här filen är inte en WhatStock-säkerhetskopia.';
+
+  @override
+  String get allocationPositions => 'Aktier';
+
+  @override
+  String get allocationSectors => 'Sektorer';
+
+  @override
+  String get allocationCurrencies => 'Valutor';
 }

@@ -2240,4 +2240,13 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock.';
+
+  @override
+  String get allocationPositions => 'Ìpín';
+
+  @override
+  String get allocationSectors => 'Ẹ̀ka';
+
+  @override
+  String get allocationCurrencies => 'Owó';
 }

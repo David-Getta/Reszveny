@@ -600,5 +600,8 @@
   "backupRestore": "Врати од резервна копија",
   "backupRestoreHint": "Се додава она што е во датотеката; ништо од сегашните податоци не се брише.",
   "backupRestored": "Резервната копија е вратена.",
-  "backupInvalid": "Оваа датотека не е резервна копија од WhatStock."
+  "backupInvalid": "Оваа датотека не е резервна копија од WhatStock.",
+  "allocationPositions": "Акции",
+  "allocationSectors": "Сектори",
+  "allocationCurrencies": "Валути"
 }

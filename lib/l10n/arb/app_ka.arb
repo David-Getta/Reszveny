@@ -600,5 +600,8 @@
   "backupRestore": "სარეზერვო ასლიდან აღდგენა",
   "backupRestoreHint": "ამატებს ფაილის შიგთავსს; თქვენი ამჟამინდელი მონაცემებიდან არაფერი იშლება.",
   "backupRestored": "სარეზერვო ასლი აღდგენილია.",
-  "backupInvalid": "ეს ფაილი WhatStock-ის სარეზერვო ასლი არ არის."
+  "backupInvalid": "ეს ფაილი WhatStock-ის სარეზერვო ასლი არ არის.",
+  "allocationPositions": "აქციები",
+  "allocationSectors": "სექტორები",
+  "allocationCurrencies": "ვალუტები"
 }

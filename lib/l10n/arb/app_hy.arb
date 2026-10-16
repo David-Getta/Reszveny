@@ -600,5 +600,8 @@
   "backupRestore": "Վերականգնել պահուստային պատճենից",
   "backupRestoreHint": "Ավելացնում է ֆայլում եղածը. ձեր ներկայիս տվյալներից ոչինչ չի ջնջվում։",
   "backupRestored": "Պահուստային պատճենը վերականգնվեց։",
-  "backupInvalid": "Այս ֆայլը WhatStock-ի պահուստային պատճեն չէ։"
+  "backupInvalid": "Այս ֆայլը WhatStock-ի պահուստային պատճեն չէ։",
+  "allocationPositions": "Բաժնետոմսեր",
+  "allocationSectors": "Ոլորտներ",
+  "allocationCurrencies": "Արժույթներ"
 }

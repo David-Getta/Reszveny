@@ -600,5 +600,8 @@
   "backupRestore": "Palauta varmuuskopiosta",
   "backupRestoreHint": "Lisää tiedoston sisällön; mitään nykyisistä tiedoistasi ei poisteta.",
   "backupRestored": "Varmuuskopio palautettu.",
-  "backupInvalid": "Tämä tiedosto ei ole WhatStock-varmuuskopio."
+  "backupInvalid": "Tämä tiedosto ei ole WhatStock-varmuuskopio.",
+  "allocationPositions": "Osakkeet",
+  "allocationSectors": "Sektorit",
+  "allocationCurrencies": "Valuutat"
 }

@@ -2283,4 +2283,13 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ova datoteka nije WhatStock sigurnosna kopija.';
+
+  @override
+  String get allocationPositions => 'Dionice';
+
+  @override
+  String get allocationSectors => 'Sektori';
+
+  @override
+  String get allocationCurrencies => 'Valute';
 }

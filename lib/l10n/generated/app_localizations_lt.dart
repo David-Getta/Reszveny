@@ -2303,4 +2303,13 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Šis failas nėra WhatStock atsarginė kopija.';
+
+  @override
+  String get allocationPositions => 'Akcijos';
+
+  @override
+  String get allocationSectors => 'Sektoriai';
+
+  @override
+  String get allocationCurrencies => 'Valiutos';
 }

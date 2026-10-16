@@ -600,5 +600,8 @@
   "backupRestore": "Atkurti iš atsarginės kopijos",
   "backupRestoreHint": "Prideda tai, kas yra faile; nieko iš dabartinių jūsų duomenų neištrinama.",
   "backupRestored": "Atsarginė kopija atkurta.",
-  "backupInvalid": "Šis failas nėra WhatStock atsarginė kopija."
+  "backupInvalid": "Šis failas nėra WhatStock atsarginė kopija.",
+  "allocationPositions": "Akcijos",
+  "allocationSectors": "Sektoriai",
+  "allocationCurrencies": "Valiutos"
 }

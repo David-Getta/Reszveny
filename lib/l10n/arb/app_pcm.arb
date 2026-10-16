@@ -600,5 +600,8 @@
   "backupRestore": "Restore from backup",
   "backupRestoreHint": "E go add wetin dey di file; nothing wey you get now go delete.",
   "backupRestored": "Backup don restore.",
-  "backupInvalid": "Dis file no be WhatStock backup."
+  "backupInvalid": "Dis file no be WhatStock backup.",
+  "allocationPositions": "Stocks",
+  "allocationSectors": "Sectors",
+  "allocationCurrencies": "Currencies"
 }

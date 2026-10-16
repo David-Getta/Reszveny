@@ -600,5 +600,8 @@
   "backupRestore": "Återställ från säkerhetskopia",
   "backupRestoreHint": "Lägger till det som finns i filen; inget du har nu raderas.",
   "backupRestored": "Säkerhetskopian har återställts.",
-  "backupInvalid": "Den här filen är inte en WhatStock-säkerhetskopia."
+  "backupInvalid": "Den här filen är inte en WhatStock-säkerhetskopia.",
+  "allocationPositions": "Aktier",
+  "allocationSectors": "Sektorer",
+  "allocationCurrencies": "Valutor"
 }

@@ -2246,4 +2246,13 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Wannan fayil ba ajiyar WhatStock ba ce.';
+
+  @override
+  String get allocationPositions => 'Hannun jari';
+
+  @override
+  String get allocationSectors => 'Sassa';
+
+  @override
+  String get allocationCurrencies => 'Kuɗaɗe';
 }

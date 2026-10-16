@@ -2243,4 +2243,13 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get backupInvalid => 'File iki dudu cadhangan WhatStock.';
+
+  @override
+  String get allocationPositions => 'Saham';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Mata uang';
 }

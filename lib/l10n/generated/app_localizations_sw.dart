@@ -2242,4 +2242,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faili hii si nakala rudufu ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Hisa';
+
+  @override
+  String get allocationSectors => 'Sekta';
+
+  @override
+  String get allocationCurrencies => 'Sarafu';
 }

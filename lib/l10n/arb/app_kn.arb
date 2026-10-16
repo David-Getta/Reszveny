@@ -600,5 +600,8 @@
   "backupRestore": "ಬ್ಯಾಕಪ್‌ನಿಂದ ಮರುಸ್ಥಾಪಿಸಿ",
   "backupRestoreHint": "ಫೈಲ್‌ನಲ್ಲಿರುವುದನ್ನು ಸೇರಿಸುತ್ತದೆ; ನಿಮ್ಮಲ್ಲಿ ಈಗ ಇರುವ ಯಾವುದೂ ಅಳಿಸಲ್ಪಡುವುದಿಲ್ಲ.",
   "backupRestored": "ಬ್ಯಾಕಪ್ ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ.",
-  "backupInvalid": "ಈ ಫೈಲ್ WhatStock ಬ್ಯಾಕಪ್ ಅಲ್ಲ."
+  "backupInvalid": "ಈ ಫೈಲ್ WhatStock ಬ್ಯಾಕಪ್ ಅಲ್ಲ.",
+  "allocationPositions": "ಷೇರುಗಳು",
+  "allocationSectors": "ವಲಯಗಳು",
+  "allocationCurrencies": "ಕರೆನ್ಸಿಗಳು"
 }

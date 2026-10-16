@@ -2242,4 +2242,13 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Denne filen er ikke en WhatStock-sikkerhetskopi.';
+
+  @override
+  String get allocationPositions => 'Aksjer';
+
+  @override
+  String get allocationSectors => 'Sektorer';
+
+  @override
+  String get allocationCurrencies => 'Valutaer';
 }

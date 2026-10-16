@@ -2254,4 +2254,13 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Faele ena hase polokelo ya tshehetso ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Dishere';
+
+  @override
+  String get allocationSectors => 'Makala';
+
+  @override
+  String get allocationCurrencies => 'Ditjhelete';
 }

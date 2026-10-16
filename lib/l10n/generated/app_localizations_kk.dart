@@ -2241,4 +2241,13 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Бұл файл WhatStock сақтық көшірмесі емес.';
+
+  @override
+  String get allocationPositions => 'Акциялар';
+
+  @override
+  String get allocationSectors => 'Секторлар';
+
+  @override
+  String get allocationCurrencies => 'Валюталар';
 }

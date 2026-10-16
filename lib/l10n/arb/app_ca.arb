@@ -600,5 +600,8 @@
   "backupRestore": "Restaura des d’una còpia de seguretat",
   "backupRestoreHint": "Afegeix el que hi ha al fitxer; no s’esborra res del que tens ara.",
   "backupRestored": "S’ha restaurat la còpia de seguretat.",
-  "backupInvalid": "Aquest fitxer no és una còpia de seguretat de WhatStock."
+  "backupInvalid": "Aquest fitxer no és una còpia de seguretat de WhatStock.",
+  "allocationPositions": "Accions",
+  "allocationSectors": "Sectors",
+  "allocationCurrencies": "Divises"
 }

@@ -600,5 +600,8 @@
   "backupRestore": "گەڕاندنەوە لە یەدەگ",
   "backupRestoreHint": "ئەوەی لە فایلەکەدایە زیاد دەکات؛ هیچ شتێک لەوەی ئێستا هەتە ناسڕێتەوە.",
   "backupRestored": "یەدەگەکە گەڕێندرایەوە.",
-  "backupInvalid": "ئەم فایلە یەدەگی WhatStock نییە."
+  "backupInvalid": "ئەم فایلە یەدەگی WhatStock نییە.",
+  "allocationPositions": "پشکەکان",
+  "allocationSectors": "کەرتەکان",
+  "allocationCurrencies": "دراوەکان"
 }

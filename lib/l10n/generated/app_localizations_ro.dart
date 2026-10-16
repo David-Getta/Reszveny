@@ -2278,4 +2278,13 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Acest fișier nu este un backup WhatStock.';
+
+  @override
+  String get allocationPositions => 'Acțiuni';
+
+  @override
+  String get allocationSectors => 'Sectoare';
+
+  @override
+  String get allocationCurrencies => 'Monede';
 }

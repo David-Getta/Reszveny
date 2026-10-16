@@ -600,5 +600,8 @@
   "backupRestore": "Herstellen uit back-up",
   "backupRestoreHint": "Voegt toe wat in het bestand staat; niets van wat je nu hebt wordt verwijderd.",
   "backupRestored": "Back-up hersteld.",
-  "backupInvalid": "Dit bestand is geen WhatStock-back-up."
+  "backupInvalid": "Dit bestand is geen WhatStock-back-up.",
+  "allocationPositions": "Aandelen",
+  "allocationSectors": "Sectoren",
+  "allocationCurrencies": "Valuta's"
 }

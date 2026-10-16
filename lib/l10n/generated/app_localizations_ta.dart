@@ -2251,4 +2251,13 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'இந்தக் கோப்பு WhatStock காப்புப்பிரதி அல்ல.';
+
+  @override
+  String get allocationPositions => 'பங்குகள்';
+
+  @override
+  String get allocationSectors => 'துறைகள்';
+
+  @override
+  String get allocationCurrencies => 'நாணயங்கள்';
 }

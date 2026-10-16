@@ -600,5 +600,8 @@
   "backupRestore": "Restaurează dintr-un backup",
   "backupRestoreHint": "Adaugă ce este în fișier; nimic din ce ai acum nu se șterge.",
   "backupRestored": "Backup restaurat.",
-  "backupInvalid": "Acest fișier nu este un backup WhatStock."
+  "backupInvalid": "Acest fișier nu este un backup WhatStock.",
+  "allocationPositions": "Acțiuni",
+  "allocationSectors": "Sectoare",
+  "allocationCurrencies": "Monede"
 }

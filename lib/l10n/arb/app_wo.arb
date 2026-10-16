@@ -600,5 +600,8 @@
   "backupRestore": "Delloo ci kaaraange bi",
   "backupRestoreHint": "Dafay yokk li nekk ci fiise bi; dara ci li nga am léegi duñu ko far.",
   "backupRestored": "Kaaraange bi delsi na.",
-  "backupInvalid": "Fiise bii du kaaraangeb WhatStock."
+  "backupInvalid": "Fiise bii du kaaraangeb WhatStock.",
+  "allocationPositions": "Aksiyoŋ yi",
+  "allocationSectors": "Sektëer yi",
+  "allocationCurrencies": "Xaalis yi"
 }

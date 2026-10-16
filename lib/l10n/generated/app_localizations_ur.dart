@@ -2241,4 +2241,13 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get backupInvalid => 'یہ فائل WhatStock بیک اپ نہیں ہے۔';
+
+  @override
+  String get allocationPositions => 'حصص';
+
+  @override
+  String get allocationSectors => 'شعبے';
+
+  @override
+  String get allocationCurrencies => 'کرنسیاں';
 }

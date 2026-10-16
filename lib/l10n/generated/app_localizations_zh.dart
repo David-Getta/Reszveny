@@ -2132,6 +2132,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get backupInvalid => '此文件不是 WhatStock 备份。';
+
+  @override
+  String get allocationPositions => '个股';
+
+  @override
+  String get allocationSectors => '板块';
+
+  @override
+  String get allocationCurrencies => '货币';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4260,4 +4269,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get backupInvalid => '此檔案並非 WhatStock 備份。';
+
+  @override
+  String get allocationPositions => '個股';
+
+  @override
+  String get allocationSectors => '板塊';
+
+  @override
+  String get allocationCurrencies => '貨幣';
 }

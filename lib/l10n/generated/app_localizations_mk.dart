@@ -2261,4 +2261,13 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Оваа датотека не е резервна копија од WhatStock.';
+
+  @override
+  String get allocationPositions => 'Акции';
+
+  @override
+  String get allocationSectors => 'Сектори';
+
+  @override
+  String get allocationCurrencies => 'Валути';
 }

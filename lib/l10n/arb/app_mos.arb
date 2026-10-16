@@ -600,5 +600,8 @@
   "backupRestore": "Lebg n yik sẽn bʋʋd n bilgã pʋgẽ",
   "backupRestoreHint": "A paasda bũmb ning sẽn be fiyiã pʋgẽ; bũmb ka na n yikd fo sẽn tar masã ye.",
   "backupRestored": "Sẽn bʋʋd n bilgã lebga.",
-  "backupInvalid": "Fiyie kãngã pa WhatStock bʋʋd n bilgi ye."
+  "backupInvalid": "Fiyie kãngã pa WhatStock bʋʋd n bilgi ye.",
+  "allocationPositions": "Aksiõ",
+  "allocationSectors": "Tʋʋm zĩise",
+  "allocationCurrencies": "Ligd buudu"
 }

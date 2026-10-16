@@ -600,5 +600,8 @@
   "backupRestore": "ब्याकअपबाट पुनर्स्थापना गर्नुहोस्",
   "backupRestoreHint": "फाइलमा भएको थपिन्छ; तपाईंसँग अहिले भएको केही पनि मेटिँदैन।",
   "backupRestored": "ब्याकअप पुनर्स्थापना भयो।",
-  "backupInvalid": "यो फाइल WhatStock ब्याकअप होइन।"
+  "backupInvalid": "यो फाइल WhatStock ब्याकअप होइन।",
+  "allocationPositions": "सेयर",
+  "allocationSectors": "क्षेत्र",
+  "allocationCurrencies": "मुद्रा"
 }

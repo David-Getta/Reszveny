@@ -600,5 +600,8 @@
   "backupRestore": "બેકઅપમાંથી રિસ્ટોર કરો",
   "backupRestoreHint": "ફાઇલમાં જે છે તે ઉમેરે છે; તમારી પાસે અત્યારે જે છે તેમાંથી કશું ડિલીટ થતું નથી.",
   "backupRestored": "બેકઅપ રિસ્ટોર થયો.",
-  "backupInvalid": "આ ફાઇલ WhatStock બેકઅપ નથી."
+  "backupInvalid": "આ ફાઇલ WhatStock બેકઅપ નથી.",
+  "allocationPositions": "શેર",
+  "allocationSectors": "સેક્ટર",
+  "allocationCurrencies": "ચલણ"
 }

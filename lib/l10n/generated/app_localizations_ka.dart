@@ -2242,4 +2242,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'ეს ფაილი WhatStock-ის სარეზერვო ასლი არ არის.';
+
+  @override
+  String get allocationPositions => 'აქციები';
+
+  @override
+  String get allocationSectors => 'სექტორები';
+
+  @override
+  String get allocationCurrencies => 'ვალუტები';
 }

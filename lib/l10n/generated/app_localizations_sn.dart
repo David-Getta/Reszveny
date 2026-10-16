@@ -2247,4 +2247,13 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Faira iyi haisi bhakapu yeWhatStock.';
+
+  @override
+  String get allocationPositions => 'Masheya';
+
+  @override
+  String get allocationSectors => 'Mabazi';
+
+  @override
+  String get allocationCurrencies => 'Mari';
 }

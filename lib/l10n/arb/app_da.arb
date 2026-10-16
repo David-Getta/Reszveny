@@ -600,5 +600,8 @@
   "backupRestore": "Gendan fra en sikkerhedskopi",
   "backupRestoreHint": "Tilføjer det, der er i filen; intet af det, du har nu, slettes.",
   "backupRestored": "Sikkerhedskopien er gendannet.",
-  "backupInvalid": "Denne fil er ikke en WhatStock-sikkerhedskopi."
+  "backupInvalid": "Denne fil er ikke en WhatStock-sikkerhedskopi.",
+  "allocationPositions": "Aktier",
+  "allocationSectors": "Sektorer",
+  "allocationCurrencies": "Valutaer"
 }

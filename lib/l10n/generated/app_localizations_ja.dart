@@ -2164,4 +2164,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get backupInvalid => 'このファイルはWhatStockのバックアップではありません。';
+
+  @override
+  String get allocationPositions => '銘柄';
+
+  @override
+  String get allocationSectors => 'セクター';
+
+  @override
+  String get allocationCurrencies => '通貨';
 }

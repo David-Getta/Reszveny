@@ -2237,4 +2237,13 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get backupInvalid => 'File ini bukan cadangan WhatStock.';
+
+  @override
+  String get allocationPositions => 'Saham';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Mata uang';
 }

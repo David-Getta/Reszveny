@@ -600,5 +600,8 @@
   "backupRestore": "Herstel vanaf ’n rugsteun",
   "backupRestoreHint": "Voeg by wat in die lêer is; niks wat jy nou het, word uitgevee nie.",
   "backupRestored": "Rugsteun herstel.",
-  "backupInvalid": "Hierdie lêer is nie ’n WhatStock-rugsteun nie."
+  "backupInvalid": "Hierdie lêer is nie ’n WhatStock-rugsteun nie.",
+  "allocationPositions": "Aandele",
+  "allocationSectors": "Sektore",
+  "allocationCurrencies": "Valutas"
 }

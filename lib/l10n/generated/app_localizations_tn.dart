@@ -2256,4 +2256,13 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Faele eno ga se polokelo ya tshireletso ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Dishere';
+
+  @override
+  String get allocationSectors => 'Maphata';
+
+  @override
+  String get allocationCurrencies => 'Madi';
 }

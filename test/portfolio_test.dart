@@ -424,4 +424,42 @@ void main() {
     );
     expect(ok.unknown, isFalse);
   });
+
+  testWidgets('allocation by stocks, sectors and currencies', (tester) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD');
+    await s.portfolio.add(symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('allocation-by')), findsOneWidget);
+    expect(find.textContaining(RegExp(r'^AAPL \d')), findsOneWidget);
+
+    await tester.tap(find.text('Currencies'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining(RegExp(r'^USD \d')), findsOneWidget);
+
+    await tester.tap(find.text('Sectors'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining(RegExp(r'^AAPL \d')), findsNothing);
+  });
+
+  test('weights grouped and summed, largest first', () {
+    PositionValue row(String symbol, String ccy, double w) => PositionValue(
+      position: Position(symbol: symbol, currency: ccy, lots: const []),
+      weight: w,
+    );
+    final g = groupWeights([
+      row('A', 'USD', 0.2),
+      row('B', 'EUR', 0.5),
+      row('C', 'USD', 0.3),
+    ], (r) => r.position.currency);
+    expect(g.map((e) => e.label), ['USD', 'EUR']);
+    expect(g.first.weight, closeTo(0.5, 1e-9));
+  });
 }

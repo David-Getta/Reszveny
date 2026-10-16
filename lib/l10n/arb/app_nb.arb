@@ -600,5 +600,8 @@
   "backupRestore": "Gjenopprett fra sikkerhetskopi",
   "backupRestoreHint": "Legger til det som er i filen; ingenting du har nå, blir slettet.",
   "backupRestored": "Sikkerhetskopien er gjenopprettet.",
-  "backupInvalid": "Denne filen er ikke en WhatStock-sikkerhetskopi."
+  "backupInvalid": "Denne filen er ikke en WhatStock-sikkerhetskopi.",
+  "allocationPositions": "Aksjer",
+  "allocationSectors": "Sektorer",
+  "allocationCurrencies": "Valutaer"
 }

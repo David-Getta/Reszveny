@@ -2250,4 +2250,13 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Iyi dosiye si kopi y\'inyongera ya WhatStock.';
+
+  @override
+  String get allocationPositions => 'Imigabane';
+
+  @override
+  String get allocationSectors => 'Inzego';
+
+  @override
+  String get allocationCurrencies => 'Amafaranga';
 }

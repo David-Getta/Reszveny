@@ -600,5 +600,8 @@
   "backupRestore": "بيڪ اپ مان بحال ڪريو",
   "backupRestoreHint": "فائل ۾ جيڪو آهي اهو شامل ڪري ٿو؛ توهان وٽ هن وقت جيڪو آهي ان مان ڪجهه به ڊليٽ نٿو ٿئي.",
   "backupRestored": "بيڪ اپ بحال ٿي ويو.",
-  "backupInvalid": "هي فائل WhatStock بيڪ اپ ناهي."
+  "backupInvalid": "هي فائل WhatStock بيڪ اپ ناهي.",
+  "allocationPositions": "شيئرز",
+  "allocationSectors": "شعبا",
+  "allocationCurrencies": "ڪرنسيون"
 }

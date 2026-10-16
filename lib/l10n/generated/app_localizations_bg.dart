@@ -2242,4 +2242,13 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Този файл не е резервно копие на WhatStock.';
+
+  @override
+  String get allocationPositions => 'Акции';
+
+  @override
+  String get allocationSectors => 'Сектори';
+
+  @override
+  String get allocationCurrencies => 'Валути';
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Pulihkeun tina cadangan",
   "backupRestoreHint": "Nambahkeun eusi file; euweuh nu dipiboga ayeuna anu dihapus.",
   "backupRestored": "Cadangan dipulihkeun.",
-  "backupInvalid": "File ieu sanés cadangan WhatStock."
+  "backupInvalid": "File ieu sanés cadangan WhatStock.",
+  "allocationPositions": "Saham",
+  "allocationSectors": "Séktor",
+  "allocationCurrencies": "Mata uang"
 }

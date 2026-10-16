@@ -600,5 +600,8 @@
   "backupRestore": "Аднавіць з рэзервовай копіі",
   "backupRestoreHint": "Дадае тое, што ёсць у файле; нічога з вашых цяперашніх даных не выдаляецца.",
   "backupRestored": "Рэзервовая копія адноўлена.",
-  "backupInvalid": "Гэты файл не з'яўляецца рэзервовай копіяй WhatStock."
+  "backupInvalid": "Гэты файл не з'яўляецца рэзервовай копіяй WhatStock.",
+  "allocationPositions": "Акцыі",
+  "allocationSectors": "Сектары",
+  "allocationCurrencies": "Валюты"
 }

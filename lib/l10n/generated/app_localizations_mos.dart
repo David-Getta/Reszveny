@@ -2228,4 +2228,13 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Fiyie kãngã pa WhatStock bʋʋd n bilgi ye.';
+
+  @override
+  String get allocationPositions => 'Aksiõ';
+
+  @override
+  String get allocationSectors => 'Tʋʋm zĩise';
+
+  @override
+  String get allocationCurrencies => 'Ligd buudu';
 }

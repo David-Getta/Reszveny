@@ -2248,4 +2248,13 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Hindi WhatStock backup ang file na ito.';
+
+  @override
+  String get allocationPositions => 'Mga stock';
+
+  @override
+  String get allocationSectors => 'Sektor';
+
+  @override
+  String get allocationCurrencies => 'Currency';
 }

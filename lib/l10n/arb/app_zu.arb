@@ -600,5 +600,8 @@
   "backupRestore": "Buyisela kusuka esipeleni",
   "backupRestoreHint": "Yengeza okusefayeleni; akukho lutho onalo manje olusulwayo.",
   "backupRestored": "Isipele sibuyiselwe.",
-  "backupInvalid": "Leli fayela akusona isipele se-WhatStock."
+  "backupInvalid": "Leli fayela akusona isipele se-WhatStock.",
+  "allocationPositions": "Amasheya",
+  "allocationSectors": "Imikhakha",
+  "allocationCurrencies": "Izimali"
 }

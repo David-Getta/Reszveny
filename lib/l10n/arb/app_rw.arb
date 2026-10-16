@@ -600,5 +600,8 @@
   "backupRestore": "Garura uvuye kuri kopi y'inyongera",
   "backupRestoreHint": "Yongeraho ibiri muri dosiye; nta na kimwe mu byo ufite ubu gisibwa.",
   "backupRestored": "Kopi y'inyongera yagaruwe.",
-  "backupInvalid": "Iyi dosiye si kopi y'inyongera ya WhatStock."
+  "backupInvalid": "Iyi dosiye si kopi y'inyongera ya WhatStock.",
+  "allocationPositions": "Imigabane",
+  "allocationSectors": "Inzego",
+  "allocationCurrencies": "Amafaranga"
 }

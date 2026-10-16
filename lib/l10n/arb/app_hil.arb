@@ -600,5 +600,8 @@
   "backupRestore": "I-restore halin sa backup",
   "backupRestoreHint": "Idugang ang yara sa file; wala sang mapapas sa imo yara subong.",
   "backupRestored": "Na-restore ang backup.",
-  "backupInvalid": "Ini nga file indi WhatStock backup."
+  "backupInvalid": "Ini nga file indi WhatStock backup.",
+  "allocationPositions": "Mga stock",
+  "allocationSectors": "Sektor",
+  "allocationCurrencies": "Currency"
 }

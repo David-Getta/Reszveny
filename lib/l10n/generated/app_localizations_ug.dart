@@ -2244,4 +2244,13 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get backupInvalid => 'بۇ ھۆججەت WhatStock زاپىسى ئەمەس.';
+
+  @override
+  String get allocationPositions => 'پايلار';
+
+  @override
+  String get allocationSectors => 'ساھەلەر';
+
+  @override
+  String get allocationCurrencies => 'پۇللار';
 }

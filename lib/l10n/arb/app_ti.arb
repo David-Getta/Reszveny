@@ -600,5 +600,8 @@
   "backupRestore": "ካብ ምትኪእ ቅዳሕ ምለስ",
   "backupRestoreHint": "ኣብቲ ፋይል ዘሎ ይውስኽ፤ ካብቲ ሕጂ ዘለኩም ዋላ ሓደ ኣይድምሰስን።",
   "backupRestored": "ምትኪእ ቅዳሕ ተመሊሱ።",
-  "backupInvalid": "እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።"
+  "backupInvalid": "እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።",
+  "allocationPositions": "ኣክስዮናት",
+  "allocationSectors": "ዘርፍታት",
+  "allocationCurrencies": "ባጤራታት"
 }

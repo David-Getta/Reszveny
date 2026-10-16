@@ -2250,4 +2250,13 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.';
+
+  @override
+  String get allocationPositions => 'Μετοχές';
+
+  @override
+  String get allocationSectors => 'Τομείς';
+
+  @override
+  String get allocationCurrencies => 'Νομίσματα';
 }

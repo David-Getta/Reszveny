@@ -600,5 +600,8 @@
   "backupRestore": "बॅकअपमधून पुनर्संचयित करा",
   "backupRestoreHint": "फाइलमधील माहिती जोडली जाते; तुमच्याकडे आता असलेले काहीही हटवले जात नाही.",
   "backupRestored": "बॅकअप पुनर्संचयित केला.",
-  "backupInvalid": "ही फाइल WhatStock बॅकअप नाही."
+  "backupInvalid": "ही फाइल WhatStock बॅकअप नाही.",
+  "allocationPositions": "शेअर्स",
+  "allocationSectors": "क्षेत्रे",
+  "allocationCurrencies": "चलने"
 }

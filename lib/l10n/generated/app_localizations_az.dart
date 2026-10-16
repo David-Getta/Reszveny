@@ -2243,4 +2243,13 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Bu fayl WhatStock ehtiyat nüsxəsi deyil.';
+
+  @override
+  String get allocationPositions => 'Səhmlər';
+
+  @override
+  String get allocationSectors => 'Sektorlar';
+
+  @override
+  String get allocationCurrencies => 'Valyutalar';
 }

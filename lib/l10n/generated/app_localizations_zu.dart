@@ -2250,4 +2250,13 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Leli fayela akusona isipele se-WhatStock.';
+
+  @override
+  String get allocationPositions => 'Amasheya';
+
+  @override
+  String get allocationSectors => 'Imikhakha';
+
+  @override
+  String get allocationCurrencies => 'Izimali';
 }

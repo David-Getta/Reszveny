@@ -600,5 +600,8 @@
   "backupRestore": "Garura bivuye mu bubiko bw'ingoboka",
   "backupRestoreHint": "Yongerako ibiri muri dosiye; nta na kimwe mu vyo ufise ubu gifutwa.",
   "backupRestored": "Ububiko bw'ingoboka bwagaruwe.",
-  "backupInvalid": "Iyi dosiye si ububiko bw'ingoboka bwa WhatStock."
+  "backupInvalid": "Iyi dosiye si ububiko bw'ingoboka bwa WhatStock.",
+  "allocationPositions": "Imigabane",
+  "allocationSectors": "Inzego",
+  "allocationCurrencies": "Amafaranga"
 }

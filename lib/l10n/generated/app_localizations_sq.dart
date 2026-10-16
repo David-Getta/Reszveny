@@ -2248,4 +2248,13 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Ky skedar nuk është kopje rezervë e WhatStock.';
+
+  @override
+  String get allocationPositions => 'Aksionet';
+
+  @override
+  String get allocationSectors => 'Sektorët';
+
+  @override
+  String get allocationCurrencies => 'Monedhat';
 }

@@ -600,5 +600,8 @@
   "backupRestore": "Сақтық көшірмеден қалпына келтіру",
   "backupRestoreHint": "Файлдағыны қосады; қазіргі деректеріңізден ештеңе жойылмайды.",
   "backupRestored": "Сақтық көшірме қалпына келтірілді.",
-  "backupInvalid": "Бұл файл WhatStock сақтық көшірмесі емес."
+  "backupInvalid": "Бұл файл WhatStock сақтық көшірмесі емес.",
+  "allocationPositions": "Акциялар",
+  "allocationSectors": "Секторлар",
+  "allocationCurrencies": "Валюталар"
 }

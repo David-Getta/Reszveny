@@ -2265,4 +2265,13 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get backupInvalid =>
       'Este ficheiro non é unha copia de seguranza de WhatStock.';
+
+  @override
+  String get allocationPositions => 'Accións';
+
+  @override
+  String get allocationSectors => 'Sectores';
+
+  @override
+  String get allocationCurrencies => 'Moedas';
 }

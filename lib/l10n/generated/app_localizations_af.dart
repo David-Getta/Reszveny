@@ -2245,4 +2245,13 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get backupInvalid => 'Hierdie lêer is nie ’n WhatStock-rugsteun nie.';
+
+  @override
+  String get allocationPositions => 'Aandele';
+
+  @override
+  String get allocationSectors => 'Sektore';
+
+  @override
+  String get allocationCurrencies => 'Valutas';
 }
