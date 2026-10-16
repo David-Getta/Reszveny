@@ -2255,4 +2255,10 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valuta\'s';
+
+  @override
+  String get compareReturn1y => 'Rendement 1 jaar';
+
+  @override
+  String get compareFromHigh => 'Vanaf 52-weeks hoog';
 }

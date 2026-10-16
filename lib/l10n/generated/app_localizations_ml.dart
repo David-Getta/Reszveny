@@ -2259,4 +2259,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'കറൻസികൾ';
+
+  @override
+  String get compareReturn1y => '1 വർഷത്തെ റിട്ടേൺ';
+
+  @override
+  String get compareFromHigh => '52 ആഴ്ചയിലെ ഉയർന്ന നിലയിൽ നിന്നുള്ള അകലം';
 }

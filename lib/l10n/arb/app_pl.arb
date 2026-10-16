@@ -603,5 +603,7 @@
   "backupInvalid": "Ten plik nie jest kopią zapasową WhatStock.",
   "allocationPositions": "Akcje",
   "allocationSectors": "Sektory",
-  "allocationCurrencies": "Waluty"
+  "allocationCurrencies": "Waluty",
+  "compareReturn1y": "Stopa zwrotu 1 rok",
+  "compareFromHigh": "Od maksimum 52-tygodniowego"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "ឯកសារនេះមិនមែនជាការបម្រុងទុក WhatStock ទេ។",
   "allocationPositions": "ភាគហ៊ុន",
   "allocationSectors": "វិស័យ",
-  "allocationCurrencies": "រូបិយប័ណ្ណ"
+  "allocationCurrencies": "រូបិយប័ណ្ណ",
+  "compareReturn1y": "ផលចំណេញ 1 ឆ្នាំ",
+  "compareFromHigh": "ចម្ងាយពីខ្ពស់បំផុត 52 សប្ដាហ៍"
 }

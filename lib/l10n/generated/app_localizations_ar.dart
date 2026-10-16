@@ -2300,4 +2300,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'العملات';
+
+  @override
+  String get compareReturn1y => 'العائد خلال سنة';
+
+  @override
+  String get compareFromHigh => 'البعد عن أعلى سعر في 52 أسبوعاً';
 }

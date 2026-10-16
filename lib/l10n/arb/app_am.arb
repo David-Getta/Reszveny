@@ -603,5 +603,7 @@
   "backupInvalid": "ይህ ፋይል የWhatStock ምትኬ አይደለም።",
   "allocationPositions": "አክሲዮኖች",
   "allocationSectors": "ዘርፎች",
-  "allocationCurrencies": "ምንዛሬዎች"
+  "allocationCurrencies": "ምንዛሬዎች",
+  "compareReturn1y": "የ1 ዓመት ተመላሽ",
+  "compareFromHigh": "ከ52 ሳምንት ከፍተኛ ያለው ርቀት"
 }

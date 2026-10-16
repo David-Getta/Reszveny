@@ -2225,4 +2225,10 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ສະກຸນເງິນ';
+
+  @override
+  String get compareReturn1y => 'ຜົນຕອບແທນ 1 ປີ';
+
+  @override
+  String get compareFromHigh => 'ໄລຍະຫ່າງຈາກສູງສຸດໃນຮອບ 52 ອາທິດ';
 }

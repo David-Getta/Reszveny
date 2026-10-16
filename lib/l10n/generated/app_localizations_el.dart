@@ -2259,4 +2259,10 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Νομίσματα';
+
+  @override
+  String get compareReturn1y => 'Απόδοση 1 έτους';
+
+  @override
+  String get compareFromHigh => 'Από το υψηλό 52 εβδομάδων';
 }

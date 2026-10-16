@@ -603,5 +603,7 @@
   "backupInvalid": "Faili ĩno ti mbaka ya WhatStock.",
   "allocationPositions": "Hisa",
   "allocationSectors": "Sekta",
-  "allocationCurrencies": "Mbeca"
+  "allocationCurrencies": "Mbeca",
+  "compareReturn1y": "Uumithio wa mwaka 1",
+  "compareFromHigh": "Kuuma thogora wa igũrũ mũno (ciumia 52)"
 }

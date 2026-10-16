@@ -3960,6 +3960,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Currencies'**
   String get allocationCurrencies;
+
+  /// Row label in the stock comparison table: price change over the last year.
+  ///
+  /// In en, this message translates to:
+  /// **'1-year return'**
+  String get compareReturn1y;
+
+  /// Row label in the stock comparison table: how far the price is below its 52-week high, in %.
+  ///
+  /// In en, this message translates to:
+  /// **'From 52-week high'**
+  String get compareFromHigh;
 }
 
 class _AppLocalizationsDelegate

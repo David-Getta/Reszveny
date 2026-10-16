@@ -2254,4 +2254,10 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ga ƒomeviwo';
+
+  @override
+  String get compareReturn1y => 'Ƒe 1 ƒe viɖe';
+
+  @override
+  String get compareFromHigh => 'Tso Kwasiɖa 52 ƒe asi kɔkɔtɔ gbɔ';
 }

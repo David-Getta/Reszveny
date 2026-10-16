@@ -603,5 +603,7 @@
   "backupInvalid": "Faayiliin kun kuusaa deebii WhatStock miti.",
   "allocationPositions": "Aksiyoona",
   "allocationSectors": "Dameewwan",
-  "allocationCurrencies": "Maallaqa"
+  "allocationCurrencies": "Maallaqa",
+  "compareReturn1y": "Bu'aa waggaa 1",
+  "compareFromHigh": "Ol'aanaa torban 52 irraa fageenya"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "بۇ ھۆججەت WhatStock زاپىسى ئەمەس.",
   "allocationPositions": "پايلار",
   "allocationSectors": "ساھەلەر",
-  "allocationCurrencies": "پۇللار"
+  "allocationCurrencies": "پۇللار",
+  "compareReturn1y": "1 يىللىق پايدا",
+  "compareFromHigh": "52 ھەپتىلىك ئەڭ يۇقىرىدىن ئارىلىق"
 }

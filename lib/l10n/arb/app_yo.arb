@@ -603,5 +603,7 @@
   "backupInvalid": "Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock.",
   "allocationPositions": "Ìpín",
   "allocationSectors": "Ẹ̀ka",
-  "allocationCurrencies": "Owó"
+  "allocationCurrencies": "Owó",
+  "compareReturn1y": "Èrè ọdún 1",
+  "compareFromHigh": "Láti ga jùlọ ní ọ̀sẹ̀ 52"
 }

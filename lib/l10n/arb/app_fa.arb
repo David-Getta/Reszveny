@@ -603,5 +603,7 @@
   "backupInvalid": "این فایل نسخهٔ پشتیبان WhatStock نیست.",
   "allocationPositions": "سهام",
   "allocationSectors": "بخش‌ها",
-  "allocationCurrencies": "ارزها"
+  "allocationCurrencies": "ارزها",
+  "compareReturn1y": "بازده 1 ساله",
+  "compareFromHigh": "فاصله از بیشترین قیمت 52 هفته"
 }

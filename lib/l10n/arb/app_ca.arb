@@ -603,5 +603,7 @@
   "backupInvalid": "Aquest fitxer no és una còpia de seguretat de WhatStock.",
   "allocationPositions": "Accions",
   "allocationSectors": "Sectors",
-  "allocationCurrencies": "Divises"
+  "allocationCurrencies": "Divises",
+  "compareReturn1y": "Rendiment a 1 any",
+  "compareFromHigh": "Des del màxim de 52 setmanes"
 }

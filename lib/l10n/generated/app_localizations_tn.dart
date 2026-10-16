@@ -2265,4 +2265,10 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Madi';
+
+  @override
+  String get compareReturn1y => 'Poelo ya ngwaga o 1';
+
+  @override
+  String get compareFromHigh => 'Go tswa mo bogodimong jwa dibeke di le 52';
 }

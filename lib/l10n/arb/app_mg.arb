@@ -603,5 +603,7 @@
   "backupInvalid": "Tsy fitahirizana WhatStock ity rakitra ity.",
   "allocationPositions": "Anjara",
   "allocationSectors": "Sehatra",
-  "allocationCurrencies": "Vola"
+  "allocationCurrencies": "Vola",
+  "compareReturn1y": "Tombony 1 taona",
+  "compareFromHigh": "Avy amin'ny avo indrindra tao anatin'ny 52 herinandro"
 }

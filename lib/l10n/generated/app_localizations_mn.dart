@@ -2251,4 +2251,10 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валют';
+
+  @override
+  String get compareReturn1y => '1 жилийн өгөөж';
+
+  @override
+  String get compareFromHigh => '52 долоо хоногийн дээдээс зай';
 }

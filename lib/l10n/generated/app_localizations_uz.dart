@@ -2254,4 +2254,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valyutalar';
+
+  @override
+  String get compareReturn1y => '1 yillik daromadlilik';
+
+  @override
+  String get compareFromHigh => '52 haftalik maksimumdan masofa';
 }

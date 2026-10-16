@@ -2243,4 +2243,10 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ငွေကြေး';
+
+  @override
+  String get compareReturn1y => '1 နှစ် အမြတ်';
+
+  @override
+  String get compareFromHigh => '52 ပတ် အမြင့်ဆုံးမှ ကွာဟချက်';
 }

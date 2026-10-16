@@ -603,5 +603,7 @@
   "backupInvalid": "Fail ini bukan sandaran WhatStock.",
   "allocationPositions": "Saham",
   "allocationSectors": "Sektor",
-  "allocationCurrencies": "Mata wang"
+  "allocationCurrencies": "Mata wang",
+  "compareReturn1y": "Pulangan 1 tahun",
+  "compareFromHigh": "Dari tertinggi 52 minggu"
 }

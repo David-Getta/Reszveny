@@ -2264,4 +2264,10 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Qullqikuna';
+
+  @override
+  String get compareReturn1y => '1 watapi gananciay';
+
+  @override
+  String get compareFromHigh => '52 semanapi aswan hatunmanta karuynin';
 }

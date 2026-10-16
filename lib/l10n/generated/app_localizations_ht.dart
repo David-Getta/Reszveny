@@ -2249,4 +2249,10 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Deviz';
+
+  @override
+  String get compareReturn1y => 'Rannman sou 1 an';
+
+  @override
+  String get compareFromHigh => 'Distans ak pi wo sou 52 semèn';
 }

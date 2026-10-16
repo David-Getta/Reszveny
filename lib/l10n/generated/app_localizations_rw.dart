@@ -2259,4 +2259,10 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Amafaranga';
+
+  @override
+  String get compareReturn1y => 'Inyungu y\'umwaka 1';
+
+  @override
+  String get compareFromHigh => 'Kuva hejuru mu byumweru 52';
 }

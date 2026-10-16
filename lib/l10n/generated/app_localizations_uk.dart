@@ -2315,4 +2315,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валюти';
+
+  @override
+  String get compareReturn1y => 'Дохідність за 1 рік';
+
+  @override
+  String get compareFromHigh => 'Від максимуму за 52 тижні';
 }

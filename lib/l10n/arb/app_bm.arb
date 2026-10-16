@@ -603,5 +603,7 @@
   "backupInvalid": "Nin fisiye tɛ WhatStock kopi lamaralen ye.",
   "allocationPositions": "Aksiyɔnw",
   "allocationSectors": "Baara fanw",
-  "allocationCurrencies": "Wariw"
+  "allocationCurrencies": "Wariw",
+  "compareReturn1y": "San 1 tɔnɔ",
+  "compareFromHigh": "Ka bɔ Dɔgɔkun 52 sɔngɔ sanfɛla la"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "Questo file non è un backup di WhatStock.",
   "allocationPositions": "Azioni",
   "allocationSectors": "Settori",
-  "allocationCurrencies": "Valute"
+  "allocationCurrencies": "Valute",
+  "compareReturn1y": "Rendimento a 1 anno",
+  "compareFromHigh": "Distanza dal massimo a 52 settimane"
 }

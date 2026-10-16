@@ -2312,4 +2312,10 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valiutos';
+
+  @override
+  String get compareReturn1y => '1 metų grąža';
+
+  @override
+  String get compareFromHigh => 'Nuo 52 savaičių maksimumo';
 }

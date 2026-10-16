@@ -603,5 +603,7 @@
   "backupInvalid": "Fichye sa a se pa yon sovgad WhatStock.",
   "allocationPositions": "Aksyon",
   "allocationSectors": "Sektè",
-  "allocationCurrencies": "Deviz"
+  "allocationCurrencies": "Deviz",
+  "compareReturn1y": "Rannman sou 1 an",
+  "compareFromHigh": "Distans ak pi wo sou 52 semèn"
 }

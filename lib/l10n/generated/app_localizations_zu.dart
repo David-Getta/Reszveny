@@ -2259,4 +2259,10 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Izimali';
+
+  @override
+  String get compareReturn1y => 'Inzuzo yonyaka o-1';
+
+  @override
+  String get compareFromHigh => 'Kusuka kokuphezulu kwamasonto angu-52';
 }

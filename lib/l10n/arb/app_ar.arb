@@ -603,5 +603,7 @@
   "backupInvalid": "هذا الملف ليس نسخة احتياطية من WhatStock.",
   "allocationPositions": "الأسهم",
   "allocationSectors": "القطاعات",
-  "allocationCurrencies": "العملات"
+  "allocationCurrencies": "العملات",
+  "compareReturn1y": "العائد خلال سنة",
+  "compareFromHigh": "البعد عن أعلى سعر في 52 أسبوعاً"
 }

@@ -2246,4 +2246,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mata uang';
+
+  @override
+  String get compareReturn1y => 'Imbal hasil 1 tahun';
+
+  @override
+  String get compareFromHigh => 'Dari tertinggi 52 minggu';
 }

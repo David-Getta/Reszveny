@@ -2246,4 +2246,10 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ego';
+
+  @override
+  String get compareReturn1y => 'Uru afọ 1';
+
+  @override
+  String get compareFromHigh => 'Site na kachasị elu n\'izu 52';
 }

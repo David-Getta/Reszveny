@@ -2249,4 +2249,10 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Owó';
+
+  @override
+  String get compareReturn1y => 'Èrè ọdún 1';
+
+  @override
+  String get compareFromHigh => 'Láti ga jùlọ ní ọ̀sẹ̀ 52';
 }

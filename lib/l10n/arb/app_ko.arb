@@ -603,5 +603,7 @@
   "backupInvalid": "이 파일은 WhatStock 백업이 아닙니다.",
   "allocationPositions": "종목",
   "allocationSectors": "섹터",
-  "allocationCurrencies": "통화"
+  "allocationCurrencies": "통화",
+  "compareReturn1y": "1년 수익률",
+  "compareFromHigh": "52주 최고가 대비"
 }

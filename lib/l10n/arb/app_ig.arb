@@ -603,5 +603,7 @@
   "backupInvalid": "Faịlụ a abụghị ndabere WhatStock.",
   "allocationPositions": "Òkè",
   "allocationSectors": "Ngalaba",
-  "allocationCurrencies": "Ego"
+  "allocationCurrencies": "Ego",
+  "compareReturn1y": "Uru afọ 1",
+  "compareFromHigh": "Site na kachasị elu n'izu 52"
 }

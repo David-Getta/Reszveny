@@ -2250,4 +2250,10 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Currencies';
+
+  @override
+  String get compareReturn1y => '1-year return';
+
+  @override
+  String get compareFromHigh => 'From di highest for 52 weeks';
 }

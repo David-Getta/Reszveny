@@ -2266,4 +2266,11 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Vola';
+
+  @override
+  String get compareReturn1y => 'Tombony 1 taona';
+
+  @override
+  String get compareFromHigh =>
+      'Avy amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
 }

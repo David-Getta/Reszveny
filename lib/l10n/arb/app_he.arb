@@ -603,5 +603,7 @@
   "backupInvalid": "הקובץ הזה אינו גיבוי של WhatStock.",
   "allocationPositions": "מניות",
   "allocationSectors": "סקטורים",
-  "allocationCurrencies": "מטבעות"
+  "allocationCurrencies": "מטבעות",
+  "compareReturn1y": "תשואה לשנה",
+  "compareFromHigh": "מרחק משיא 52 שבועות"
 }

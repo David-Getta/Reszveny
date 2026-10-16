@@ -603,5 +603,7 @@
   "backupInvalid": "Bu fayl WhatStock zaxira nusxasi emas.",
   "allocationPositions": "Aksiyalar",
   "allocationSectors": "Sektorlar",
-  "allocationCurrencies": "Valyutalar"
+  "allocationCurrencies": "Valyutalar",
+  "compareReturn1y": "1 yillik daromadlilik",
+  "compareFromHigh": "52 haftalik maksimumdan masofa"
 }

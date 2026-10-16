@@ -603,5 +603,7 @@
   "backupInvalid": "Fayilo iyi si zosunga za WhatStock.",
   "allocationPositions": "Masheya",
   "allocationSectors": "Magawo",
-  "allocationCurrencies": "Ndalama"
+  "allocationCurrencies": "Ndalama",
+  "compareReturn1y": "Phindu la chaka 1",
+  "compareFromHigh": "Kuchokera pamwamba pa masabata 52"
 }

@@ -2257,4 +2257,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ಕರೆನ್ಸಿಗಳು';
+
+  @override
+  String get compareReturn1y => '1 ವರ್ಷದ ಆದಾಯ';
+
+  @override
+  String get compareFromHigh => '52 ವಾರಗಳ ಗರಿಷ್ಠದಿಂದ ಅಂತರ';
 }

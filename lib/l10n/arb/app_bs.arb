@@ -603,5 +603,7 @@
   "backupInvalid": "Ovaj fajl nije WhatStock sigurnosna kopija.",
   "allocationPositions": "Dionice",
   "allocationSectors": "Sektori",
-  "allocationCurrencies": "Valute"
+  "allocationCurrencies": "Valute",
+  "compareReturn1y": "Prinos za 1 godinu",
+  "compareFromHigh": "Od 52-sedmičnog maksimuma"
 }

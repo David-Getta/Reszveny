@@ -2250,4 +2250,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'चलने';
+
+  @override
+  String get compareReturn1y => '1 वर्षाचा परतावा';
+
+  @override
+  String get compareFromHigh => '52-आठवड्यांच्या उच्चांकापासून अंतर';
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "এই ফাইলটো WhatStock বেকআপ নহয়।",
   "allocationPositions": "শ্বেয়াৰ",
   "allocationSectors": "খণ্ড",
-  "allocationCurrencies": "মুদ্ৰা"
+  "allocationCurrencies": "মুদ্ৰা",
+  "compareReturn1y": "1 বছৰৰ উভতি",
+  "compareFromHigh": "52-সপ্তাহৰ সৰ্বোচ্চৰ পৰা দূৰত্ব"
 }

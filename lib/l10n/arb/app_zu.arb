@@ -603,5 +603,7 @@
   "backupInvalid": "Leli fayela akusona isipele se-WhatStock.",
   "allocationPositions": "Amasheya",
   "allocationSectors": "Imikhakha",
-  "allocationCurrencies": "Izimali"
+  "allocationCurrencies": "Izimali",
+  "compareReturn1y": "Inzuzo yonyaka o-1",
+  "compareFromHigh": "Kusuka kokuphezulu kwamasonto angu-52"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "Faele ye ga se polokelo ya thekgo ya WhatStock.",
   "allocationPositions": "Dišere",
   "allocationSectors": "Makala",
-  "allocationCurrencies": "Ditšhelete"
+  "allocationCurrencies": "Ditšhelete",
+  "compareReturn1y": "Poelo ya ngwaga o 1",
+  "compareFromHigh": "Go tšwa go ya godimo ya dibeke tše 52"
 }

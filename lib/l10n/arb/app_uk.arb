@@ -603,5 +603,7 @@
   "backupInvalid": "Цей файл не є резервною копією WhatStock.",
   "allocationPositions": "Акції",
   "allocationSectors": "Сектори",
-  "allocationCurrencies": "Валюти"
+  "allocationCurrencies": "Валюти",
+  "compareReturn1y": "Дохідність за 1 рік",
+  "compareFromHigh": "Від максимуму за 52 тижні"
 }

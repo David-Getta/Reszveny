@@ -2250,4 +2250,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'کرنسیاں';
+
+  @override
+  String get compareReturn1y => '1 سالہ منافع';
+
+  @override
+  String get compareFromHigh => '52 ہفتوں کی بلند ترین سطح سے فاصلہ';
 }

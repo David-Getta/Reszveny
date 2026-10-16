@@ -2251,4 +2251,10 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valutaer';
+
+  @override
+  String get compareReturn1y => '1-års avkastning';
+
+  @override
+  String get compareFromHigh => 'Fra 52-ukers høyeste';
 }

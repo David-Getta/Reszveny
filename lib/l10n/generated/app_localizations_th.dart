@@ -2222,4 +2222,10 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'สกุลเงิน';
+
+  @override
+  String get compareReturn1y => 'ผลตอบแทน 1 ปี';
+
+  @override
+  String get compareFromHigh => 'ห่างจากสูงสุดรอบ 52 สัปดาห์';
 }

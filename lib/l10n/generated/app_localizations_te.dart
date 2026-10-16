@@ -2256,4 +2256,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'కరెన్సీలు';
+
+  @override
+  String get compareReturn1y => '1 సంవత్సర రాబడి';
+
+  @override
+  String get compareFromHigh => '52-వారాల గరిష్ఠం నుండి దూరం';
 }

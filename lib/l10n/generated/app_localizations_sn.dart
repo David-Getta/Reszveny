@@ -2256,4 +2256,10 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mari';
+
+  @override
+  String get compareReturn1y => 'Purofiti yegore 1';
+
+  @override
+  String get compareFromHigh => 'Kubva pakakwirira pamavhiki 52';
 }

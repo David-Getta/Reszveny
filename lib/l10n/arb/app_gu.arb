@@ -603,5 +603,7 @@
   "backupInvalid": "આ ફાઇલ WhatStock બેકઅપ નથી.",
   "allocationPositions": "શેર",
   "allocationSectors": "સેક્ટર",
-  "allocationCurrencies": "ચલણ"
+  "allocationCurrencies": "ચલણ",
+  "compareReturn1y": "1 વર્ષનું વળતર",
+  "compareFromHigh": "52-સપ્તાહની ઊંચી સપાટીથી અંતર"
 }

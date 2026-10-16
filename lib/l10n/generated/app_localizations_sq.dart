@@ -2257,4 +2257,10 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Monedhat';
+
+  @override
+  String get compareReturn1y => 'Kthimi 1-vjeçar';
+
+  @override
+  String get compareFromHigh => 'Nga maksimumi 52-javor';
 }

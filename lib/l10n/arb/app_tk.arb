@@ -603,5 +603,7 @@
   "backupInvalid": "Bu faýl WhatStock ätiýaçlyk nusgasy däl.",
   "allocationPositions": "Paýnamalar",
   "allocationSectors": "Sektorlar",
-  "allocationCurrencies": "Walýutalar"
+  "allocationCurrencies": "Walýutalar",
+  "compareReturn1y": "1 ýyllyk girdejililik",
+  "compareFromHigh": "52 hepdäniň iň ýokarysyndan aralyk"
 }

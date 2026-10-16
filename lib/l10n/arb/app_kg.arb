@@ -603,5 +603,7 @@
   "backupInvalid": "Fisye yai kele ve kopi ya kubumba ya WhatStock.",
   "allocationPositions": "Actions",
   "allocationSectors": "Secteurs",
-  "allocationCurrencies": "Mbongo"
+  "allocationCurrencies": "Mbongo",
+  "compareReturn1y": "Mbote ya mvula 1",
+  "compareFromHigh": "Katuka na ntalu ya zulu ya lumingu 52"
 }

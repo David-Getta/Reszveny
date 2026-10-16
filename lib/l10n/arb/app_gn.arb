@@ -603,5 +603,7 @@
   "backupInvalid": "Ko archivo ndahaʼéi WhatStock ñongatupyre.",
   "allocationPositions": "Aksiõkuéra",
   "allocationSectors": "Sectorkuéra",
-  "allocationCurrencies": "Pirapire"
+  "allocationCurrencies": "Pirapire",
+  "compareReturn1y": "Ary 1 ganancia",
+  "compareFromHigh": "Yvatevéva 52 arapokõindýpe guive"
 }

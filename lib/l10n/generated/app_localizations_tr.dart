@@ -2250,4 +2250,10 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Dövizler';
+
+  @override
+  String get compareReturn1y => '1 yıllık getiri';
+
+  @override
+  String get compareFromHigh => '52 haftalık en yüksekten uzaklık';
 }

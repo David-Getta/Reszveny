@@ -2247,4 +2247,10 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ارزها';
+
+  @override
+  String get compareReturn1y => 'بازده 1 ساله';
+
+  @override
+  String get compareFromHigh => 'فاصله از بیشترین قیمت 52 هفته';
 }

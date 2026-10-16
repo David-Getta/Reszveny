@@ -2246,4 +2246,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ਮੁਦਰਾਵਾਂ';
+
+  @override
+  String get compareReturn1y => '1 ਸਾਲ ਦਾ ਰਿਟਰਨ';
+
+  @override
+  String get compareFromHigh => '52-ਹਫ਼ਤੇ ਦੇ ਉੱਚਤਮ ਤੋਂ ਦੂਰੀ';
 }

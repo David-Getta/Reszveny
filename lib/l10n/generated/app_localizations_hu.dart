@@ -2256,4 +2256,10 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Devizák';
+
+  @override
+  String get compareReturn1y => '1 éves hozam';
+
+  @override
+  String get compareFromHigh => 'Távolság az 52 hetes csúcstól';
 }

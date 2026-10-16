@@ -2265,4 +2265,10 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ditšhelete';
+
+  @override
+  String get compareReturn1y => 'Poelo ya ngwaga o 1';
+
+  @override
+  String get compareFromHigh => 'Go tšwa go ya godimo ya dibeke tše 52';
 }

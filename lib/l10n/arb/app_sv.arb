@@ -603,5 +603,7 @@
   "backupInvalid": "Den här filen är inte en WhatStock-säkerhetskopia.",
   "allocationPositions": "Aktier",
   "allocationSectors": "Sektorer",
-  "allocationCurrencies": "Valutor"
+  "allocationCurrencies": "Valutor",
+  "compareReturn1y": "Avkastning 1 år",
+  "compareFromHigh": "Från 52-veckors högsta"
 }

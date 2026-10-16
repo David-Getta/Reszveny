@@ -2314,4 +2314,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валюты';
+
+  @override
+  String get compareReturn1y => 'Доходность за 1 год';
+
+  @override
+  String get compareFromHigh => 'От максимума за 52 недели';
 }

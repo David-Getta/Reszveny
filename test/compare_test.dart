@@ -51,6 +51,12 @@ void main() {
     final price = rows.first;
     expect(price.values[0], '231.45 USD');
     expect(price.best, isNull);
+    // Az 1 éves hozam az árfolyam-történetből; a magasabb nyer.
+    final ret = rows.firstWhere((r) => r.label == '1-year return');
+    expect(ret.values[0], startsWith('+'));
+    expect(ret.best, isNotNull);
+    final fromHigh = rows.firstWhere((r) => r.label == 'From 52-week high');
+    expect(fromHigh.values[0], '-2.44%'); // 231,45 / 237,23 − 1
   });
 
   testWidgets('compare from a stock page: pick a second stock, then remove one', (tester) async {

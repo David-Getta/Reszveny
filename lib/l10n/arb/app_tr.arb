@@ -603,5 +603,7 @@
   "backupInvalid": "Bu dosya bir WhatStock yedeği değil.",
   "allocationPositions": "Hisseler",
   "allocationSectors": "Sektörler",
-  "allocationCurrencies": "Dövizler"
+  "allocationCurrencies": "Dövizler",
+  "compareReturn1y": "1 yıllık getiri",
+  "compareFromHigh": "52 haftalık en yüksekten uzaklık"
 }

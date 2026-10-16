@@ -2251,4 +2251,10 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mbeca';
+
+  @override
+  String get compareReturn1y => 'Uumithio wa mwaka 1';
+
+  @override
+  String get compareFromHigh => 'Kuuma thogora wa igũrũ mũno (ciumia 52)';
 }

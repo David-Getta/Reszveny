@@ -603,5 +603,7 @@
   "backupInvalid": "ဤဖိုင်သည် WhatStock အရန်ဖိုင် မဟုတ်ပါ။",
   "allocationPositions": "ရှယ်ယာ",
   "allocationSectors": "ကဏ္ဍ",
-  "allocationCurrencies": "ငွေကြေး"
+  "allocationCurrencies": "ငွေကြေး",
+  "compareReturn1y": "1 နှစ် အမြတ်",
+  "compareFromHigh": "52 ပတ် အမြင့်ဆုံးမှ ကွာဟချက်"
 }

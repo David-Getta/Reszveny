@@ -603,5 +603,7 @@
   "backupInvalid": "Faele eno ga se polokelo ya tshireletso ya WhatStock.",
   "allocationPositions": "Dishere",
   "allocationSectors": "Maphata",
-  "allocationCurrencies": "Madi"
+  "allocationCurrencies": "Madi",
+  "compareReturn1y": "Poelo ya ngwaga o 1",
+  "compareFromHigh": "Go tswa mo bogodimong jwa dibeke di le 52"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "此文件不是 WhatStock 备份。",
   "allocationPositions": "个股",
   "allocationSectors": "板块",
-  "allocationCurrencies": "货币"
+  "allocationCurrencies": "货币",
+  "compareReturn1y": "1年回报",
+  "compareFromHigh": "距52周最高"
 }

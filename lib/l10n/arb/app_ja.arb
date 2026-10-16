@@ -603,5 +603,7 @@
   "backupInvalid": "このファイルはWhatStockのバックアップではありません。",
   "allocationPositions": "銘柄",
   "allocationSectors": "セクター",
-  "allocationCurrencies": "通貨"
+  "allocationCurrencies": "通貨",
+  "compareReturn1y": "1年リターン",
+  "compareFromHigh": "52週高値からの乖離"
 }

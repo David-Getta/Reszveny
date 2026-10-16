@@ -603,5 +603,7 @@
   "backupInvalid": "یہ فائل WhatStock بیک اپ نہیں ہے۔",
   "allocationPositions": "حصص",
   "allocationSectors": "شعبے",
-  "allocationCurrencies": "کرنسیاں"
+  "allocationCurrencies": "کرنسیاں",
+  "compareReturn1y": "1 سالہ منافع",
+  "compareFromHigh": "52 ہفتوں کی بلند ترین سطح سے فاصلہ"
 }

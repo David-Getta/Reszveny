@@ -2249,4 +2249,10 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valutaer';
+
+  @override
+  String get compareReturn1y => '1-års afkast';
+
+  @override
+  String get compareFromHigh => 'Fra 52-ugers højeste';
 }

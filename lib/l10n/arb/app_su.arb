@@ -603,5 +603,7 @@
   "backupInvalid": "File ieu sanés cadangan WhatStock.",
   "allocationPositions": "Saham",
   "allocationSectors": "Séktor",
-  "allocationCurrencies": "Mata uang"
+  "allocationCurrencies": "Mata uang",
+  "compareReturn1y": "Hasil 1 taun",
+  "compareFromHigh": "Ti pangluhurna 52 minggu"
 }

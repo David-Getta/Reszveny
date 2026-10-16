@@ -603,5 +603,7 @@
   "backupInvalid": "Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.",
   "allocationPositions": "Μετοχές",
   "allocationSectors": "Τομείς",
-  "allocationCurrencies": "Νομίσματα"
+  "allocationCurrencies": "Νομίσματα",
+  "compareReturn1y": "Απόδοση 1 έτους",
+  "compareFromHigh": "Από το υψηλό 52 εβδομάδων"
 }

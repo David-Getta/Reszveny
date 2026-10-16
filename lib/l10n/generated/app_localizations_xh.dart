@@ -2261,4 +2261,10 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Iimali';
+
+  @override
+  String get compareReturn1y => 'Imbuyekezo yonyaka o-1';
+
+  @override
+  String get compareFromHigh => 'Ukusuka kweliphezulu leeveki ezi-52';
 }

@@ -2259,4 +2259,10 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Maallaqa';
+
+  @override
+  String get compareReturn1y => 'Bu\'aa waggaa 1';
+
+  @override
+  String get compareFromHigh => 'Ol\'aanaa torban 52 irraa fageenya';
 }

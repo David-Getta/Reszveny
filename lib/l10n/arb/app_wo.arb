@@ -603,5 +603,7 @@
   "backupInvalid": "Fiise bii du kaaraangeb WhatStock.",
   "allocationPositions": "Aksiyoŋ yi",
   "allocationSectors": "Sektëer yi",
-  "allocationCurrencies": "Xaalis yi"
+  "allocationCurrencies": "Xaalis yi",
+  "compareReturn1y": "Njariñ ci 1 at",
+  "compareFromHigh": "Ci gëna kawe ci 52 ayu-bés"
 }

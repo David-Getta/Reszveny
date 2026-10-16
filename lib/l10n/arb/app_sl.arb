@@ -603,5 +603,7 @@
   "backupInvalid": "Ta datoteka ni varnostna kopija WhatStock.",
   "allocationPositions": "Delnice",
   "allocationSectors": "Sektorji",
-  "allocationCurrencies": "Valute"
+  "allocationCurrencies": "Valute",
+  "compareReturn1y": "Donos v 1 letu",
+  "compareFromHigh": "Od najvišjega tečaja v 52 tednih"
 }

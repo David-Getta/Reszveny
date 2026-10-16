@@ -2256,4 +2256,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valute';
+
+  @override
+  String get compareReturn1y => 'Rendimento a 1 anno';
+
+  @override
+  String get compareFromHigh => 'Distanza dal massimo a 52 settimane';
 }

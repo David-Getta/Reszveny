@@ -603,5 +603,7 @@
   "backupInvalid": "Tệp này không phải bản sao lưu WhatStock.",
   "allocationPositions": "Cổ phiếu",
   "allocationSectors": "Lĩnh vực",
-  "allocationCurrencies": "Tiền tệ"
+  "allocationCurrencies": "Tiền tệ",
+  "compareReturn1y": "Lợi suất 1 năm",
+  "compareFromHigh": "Cách mức cao nhất 52 tuần"
 }

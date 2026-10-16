@@ -2248,4 +2248,10 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валюталар';
+
+  @override
+  String get compareReturn1y => '1 еллык табышлылык';
+
+  @override
+  String get compareFromHigh => '52 атналык максимумнан ераклык';
 }

@@ -2290,4 +2290,10 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valūtas';
+
+  @override
+  String get compareReturn1y => '1 gada ienesīgums';
+
+  @override
+  String get compareFromHigh => 'No 52 nedēļu maksimuma';
 }

@@ -2307,4 +2307,10 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Měny';
+
+  @override
+  String get compareReturn1y => 'Výnos za 1 rok';
+
+  @override
+  String get compareFromHigh => 'Od 52týdenního maxima';
 }

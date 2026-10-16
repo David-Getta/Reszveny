@@ -603,5 +603,7 @@
   "backupInvalid": "ეს ფაილი WhatStock-ის სარეზერვო ასლი არ არის.",
   "allocationPositions": "აქციები",
   "allocationSectors": "სექტორები",
-  "allocationCurrencies": "ვალუტები"
+  "allocationCurrencies": "ვალუტები",
+  "compareReturn1y": "1-წლიანი შემოსავლიანობა",
+  "compareFromHigh": "დაშორება 52-კვირიანი მაქსიმუმიდან"
 }

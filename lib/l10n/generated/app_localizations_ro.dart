@@ -2287,4 +2287,10 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Monede';
+
+  @override
+  String get compareReturn1y => 'Randament pe 1 an';
+
+  @override
+  String get compareFromHigh => 'Față de maximul de 52 de săptămâni';
 }

@@ -2248,4 +2248,10 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'මුදල් ඒකක';
+
+  @override
+  String get compareReturn1y => 'වසර 1 ප්‍රතිලාභය';
+
+  @override
+  String get compareFromHigh => 'සති 52 ඉහළමේ සිට දුර';
 }

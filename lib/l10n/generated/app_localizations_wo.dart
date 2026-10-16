@@ -2245,4 +2245,10 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Xaalis yi';
+
+  @override
+  String get compareReturn1y => 'Njariñ ci 1 at';
+
+  @override
+  String get compareFromHigh => 'Ci gëna kawe ci 52 ayu-bés';
 }

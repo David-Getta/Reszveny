@@ -603,5 +603,7 @@
   "backupInvalid": "Ev pel ne paşekeyeke WhatStock e.",
   "allocationPositions": "Pişk",
   "allocationSectors": "Sektor",
-  "allocationCurrencies": "Dirav"
+  "allocationCurrencies": "Dirav",
+  "compareReturn1y": "Vegera 1 salî",
+  "compareFromHigh": "Ji bilindtirîna 52 hefteyan"
 }

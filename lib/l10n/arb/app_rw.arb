@@ -603,5 +603,7 @@
   "backupInvalid": "Iyi dosiye si kopi y'inyongera ya WhatStock.",
   "allocationPositions": "Imigabane",
   "allocationSectors": "Inzego",
-  "allocationCurrencies": "Amafaranga"
+  "allocationCurrencies": "Amafaranga",
+  "compareReturn1y": "Inyungu y'umwaka 1",
+  "compareFromHigh": "Kuva hejuru mu byumweru 52"
 }

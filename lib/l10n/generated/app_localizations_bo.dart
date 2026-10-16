@@ -2240,4 +2240,10 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'དངུལ་ལོར';
+
+  @override
+  String get compareReturn1y => 'ལོ་ 1 ནང་གི་ཁེ་ཕན';
+
+  @override
+  String get compareFromHigh => 'གཟའ་འཁོར་ 52 ནང་གི་མཐོ་ཤོས་ལས་ཐག་རིང་ཚད';
 }

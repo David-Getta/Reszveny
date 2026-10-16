@@ -603,5 +603,7 @@
   "backupInvalid": "Этот файл не является резервной копией WhatStock.",
   "allocationPositions": "Акции",
   "allocationSectors": "Секторы",
-  "allocationCurrencies": "Валюты"
+  "allocationCurrencies": "Валюты",
+  "compareReturn1y": "Доходность за 1 год",
+  "compareFromHigh": "От максимума за 52 недели"
 }

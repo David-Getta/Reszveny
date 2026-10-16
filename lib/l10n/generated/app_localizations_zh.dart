@@ -2141,6 +2141,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get allocationCurrencies => '货币';
+
+  @override
+  String get compareReturn1y => '1年回报';
+
+  @override
+  String get compareFromHigh => '距52周最高';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4278,4 +4284,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get allocationCurrencies => '貨幣';
+
+  @override
+  String get compareReturn1y => '1年回報';
+
+  @override
+  String get compareFromHigh => '距52週高位';
 }

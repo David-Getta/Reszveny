@@ -2245,4 +2245,10 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ceede';
+
+  @override
+  String get compareReturn1y => 'Ñeeñal hitaande 1';
+
+  @override
+  String get compareFromHigh => 'Diga ɓurɗum toowde e yonte 52';
 }

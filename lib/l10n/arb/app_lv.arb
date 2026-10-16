@@ -603,5 +603,7 @@
   "backupInvalid": "Šis fails nav WhatStock dublējums.",
   "allocationPositions": "Akcijas",
   "allocationSectors": "Sektori",
-  "allocationCurrencies": "Valūtas"
+  "allocationCurrencies": "Valūtas",
+  "compareReturn1y": "1 gada ienesīgums",
+  "compareFromHigh": "No 52 nedēļu maksimuma"
 }

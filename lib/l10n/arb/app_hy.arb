@@ -603,5 +603,7 @@
   "backupInvalid": "Այս ֆայլը WhatStock-ի պահուստային պատճեն չէ։",
   "allocationPositions": "Բաժնետոմսեր",
   "allocationSectors": "Ոլորտներ",
-  "allocationCurrencies": "Արժույթներ"
+  "allocationCurrencies": "Արժույթներ",
+  "compareReturn1y": "1 տարվա եկամտաբերություն",
+  "compareFromHigh": "Հեռավորությունը 52 շաբաթվա առավելագույնից"
 }

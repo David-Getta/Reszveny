@@ -2246,4 +2246,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ચલણ';
+
+  @override
+  String get compareReturn1y => '1 વર્ષનું વળતર';
+
+  @override
+  String get compareFromHigh => '52-સપ્તાહની ઊંચી સપાટીથી અંતર';
 }

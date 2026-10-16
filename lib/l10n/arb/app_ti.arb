@@ -603,5 +603,7 @@
   "backupInvalid": "እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።",
   "allocationPositions": "ኣክስዮናት",
   "allocationSectors": "ዘርፍታት",
-  "allocationCurrencies": "ባጤራታት"
+  "allocationCurrencies": "ባጤራታት",
+  "compareReturn1y": "ናይ 1 ዓመት መኽሰብ",
+  "compareFromHigh": "ካብ ናይ 52 ሰሙን ዝለዓለ ርሕቀት"
 }

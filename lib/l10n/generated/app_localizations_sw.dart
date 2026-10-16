@@ -2251,4 +2251,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Sarafu';
+
+  @override
+  String get compareReturn1y => 'Faida ya mwaka 1';
+
+  @override
+  String get compareFromHigh => 'Kutoka juu ya wiki 52';
 }

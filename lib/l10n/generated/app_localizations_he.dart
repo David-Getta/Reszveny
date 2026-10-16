@@ -2243,4 +2243,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'מטבעות';
+
+  @override
+  String get compareReturn1y => 'תשואה לשנה';
+
+  @override
+  String get compareFromHigh => 'מרחק משיא 52 שבועות';
 }

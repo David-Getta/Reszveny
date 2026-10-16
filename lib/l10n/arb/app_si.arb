@@ -603,5 +603,7 @@
   "backupInvalid": "මෙම ගොනුව WhatStock උපස්ථයක් නොවේ.",
   "allocationPositions": "කොටස්",
   "allocationSectors": "අංශ",
-  "allocationCurrencies": "මුදල් ඒකක"
+  "allocationCurrencies": "මුදල් ඒකක",
+  "compareReturn1y": "වසර 1 ප්‍රතිලාභය",
+  "compareFromHigh": "සති 52 ඉහළමේ සිට දුර"
 }

@@ -2252,4 +2252,10 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mata uang';
+
+  @override
+  String get compareReturn1y => 'Asil 1 taun';
+
+  @override
+  String get compareFromHigh => 'Saka paling dhuwur 52 minggu';
 }

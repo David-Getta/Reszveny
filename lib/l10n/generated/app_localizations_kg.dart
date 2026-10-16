@@ -2258,4 +2258,10 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mbongo';
+
+  @override
+  String get compareReturn1y => 'Mbote ya mvula 1';
+
+  @override
+  String get compareFromHigh => 'Katuka na ntalu ya zulu ya lumingu 52';
 }

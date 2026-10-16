@@ -2252,4 +2252,10 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Асъорҳо';
+
+  @override
+  String get compareReturn1y => 'Даромаднокии 1 сола';
+
+  @override
+  String get compareFromHigh => 'Аз баландтарин дар 52 ҳафта';
 }

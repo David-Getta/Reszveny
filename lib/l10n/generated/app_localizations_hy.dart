@@ -2258,4 +2258,10 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Արժույթներ';
+
+  @override
+  String get compareReturn1y => '1 տարվա եկամտաբերություն';
+
+  @override
+  String get compareFromHigh => 'Հեռավորությունը 52 շաբաթվա առավելագույնից';
 }

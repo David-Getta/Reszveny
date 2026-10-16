@@ -603,5 +603,7 @@
   "backupInvalid": "Оваа датотека не е резервна копија од WhatStock.",
   "allocationPositions": "Акции",
   "allocationSectors": "Сектори",
-  "allocationCurrencies": "Валути"
+  "allocationCurrencies": "Валути",
+  "compareReturn1y": "Принос за 1 година",
+  "compareFromHigh": "Од 52-неделниот максимум"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "دا فایل د WhatStock بیک اپ نه دی.",
   "allocationPositions": "ونډې",
   "allocationSectors": "سکتورونه",
-  "allocationCurrencies": "اسعار"
+  "allocationCurrencies": "اسعار",
+  "compareReturn1y": "د 1 کال عاید",
+  "compareFromHigh": "د 52 اونیو له لوړې بیې واټن"
 }

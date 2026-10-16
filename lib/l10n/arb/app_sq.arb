@@ -603,5 +603,7 @@
   "backupInvalid": "Ky skedar nuk është kopje rezervë e WhatStock.",
   "allocationPositions": "Aksionet",
   "allocationSectors": "Sektorët",
-  "allocationCurrencies": "Monedhat"
+  "allocationCurrencies": "Monedhat",
+  "compareReturn1y": "Kthimi 1-vjeçar",
+  "compareFromHigh": "Nga maksimumi 52-javor"
 }

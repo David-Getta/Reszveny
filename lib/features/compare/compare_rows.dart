@@ -1,7 +1,9 @@
 import '../../core/models/stock_details.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/util/formatters.dart';
+
 import '../../l10n/generated/app_localizations.dart';
+import '../analysis/price_stats.dart';
 
 /// Melyik irány a jobb egy mutatónál (a kiemeléshez); `none`: nincs kiemelés.
 enum Better { higher, lower, none }
@@ -57,6 +59,24 @@ List<CompareRow> buildCompareRows(AppLocalizations l10n, Fmt fmt, List<StockDeta
       Better.none,
     ),
     row(l10n.labelChange, [for (final d in stocks) d?.quote?.changePercent], signed, Better.none),
+    row(
+      l10n.compareReturn1y,
+      [for (final d in stocks) d?.history == null ? null : PriceStats.returnOver(d!.history!.points, 365)],
+      signed,
+      Better.higher,
+    ),
+    row(
+      l10n.compareFromHigh,
+      [
+        for (final d in stocks)
+          if (d?.quote?.price case final price? when (d!.metrics?.week52High ?? 0) > 0)
+            (price / d.metrics!.week52High! - 1) * 100
+          else
+            null,
+      ],
+      signed,
+      Better.none,
+    ),
     row(
       l10n.labelMarketCap,
       [for (final d in stocks) d?.profile?.marketCap],

@@ -603,5 +603,7 @@
   "backupInvalid": "Faira iyi haisi bhakapu yeWhatStock.",
   "allocationPositions": "Masheya",
   "allocationSectors": "Mabazi",
-  "allocationCurrencies": "Mari"
+  "allocationCurrencies": "Mari",
+  "compareReturn1y": "Purofiti yegore 1",
+  "compareFromHigh": "Kubva pakakwirira pamavhiki 52"
 }

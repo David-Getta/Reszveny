@@ -603,5 +603,7 @@
   "backupInvalid": "Wannan fayil ba ajiyar WhatStock ba ce.",
   "allocationPositions": "Hannun jari",
   "allocationSectors": "Sassa",
-  "allocationCurrencies": "Kuɗaɗe"
+  "allocationCurrencies": "Kuɗaɗe",
+  "compareReturn1y": "Riba ta shekara 1",
+  "compareFromHigh": "Daga mafi girma a makonni 52"
 }

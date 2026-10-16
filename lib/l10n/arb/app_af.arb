@@ -603,5 +603,7 @@
   "backupInvalid": "Hierdie lêer is nie ’n WhatStock-rugsteun nie.",
   "allocationPositions": "Aandele",
   "allocationSectors": "Sektore",
-  "allocationCurrencies": "Valutas"
+  "allocationCurrencies": "Valutas",
+  "compareReturn1y": "1-jaar-opbrengs",
+  "compareFromHigh": "Vanaf 52-weke-hoogtepunt"
 }

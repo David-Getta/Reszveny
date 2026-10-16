@@ -603,5 +603,7 @@
   "backupInvalid": "Šis failas nėra WhatStock atsarginė kopija.",
   "allocationPositions": "Akcijos",
   "allocationSectors": "Sektoriai",
-  "allocationCurrencies": "Valiutos"
+  "allocationCurrencies": "Valiutos",
+  "compareReturn1y": "1 metų grąža",
+  "compareFromHigh": "Nuo 52 savaičių maksimumo"
 }

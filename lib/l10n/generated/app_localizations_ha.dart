@@ -2255,4 +2255,10 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Kuɗaɗe';
+
+  @override
+  String get compareReturn1y => 'Riba ta shekara 1';
+
+  @override
+  String get compareFromHigh => 'Daga mafi girma a makonni 52';
 }

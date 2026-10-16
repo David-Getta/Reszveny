@@ -603,5 +603,7 @@
   "backupInvalid": "Dis file no be WhatStock backup.",
   "allocationPositions": "Stocks",
   "allocationSectors": "Sectors",
-  "allocationCurrencies": "Currencies"
+  "allocationCurrencies": "Currencies",
+  "compareReturn1y": "1-year return",
+  "compareFromHigh": "From di highest for 52 weeks"
 }

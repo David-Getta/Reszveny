@@ -2244,4 +2244,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Tiền tệ';
+
+  @override
+  String get compareReturn1y => 'Lợi suất 1 năm';
+
+  @override
+  String get compareFromHigh => 'Cách mức cao nhất 52 tuần';
 }

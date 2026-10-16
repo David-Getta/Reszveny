@@ -2218,4 +2218,10 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ምንዛሬዎች';
+
+  @override
+  String get compareReturn1y => 'የ1 ዓመት ተመላሽ';
+
+  @override
+  String get compareFromHigh => 'ከ52 ሳምንት ከፍተኛ ያለው ርቀት';
 }

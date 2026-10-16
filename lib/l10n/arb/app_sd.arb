@@ -603,5 +603,7 @@
   "backupInvalid": "هي فائل WhatStock بيڪ اپ ناهي.",
   "allocationPositions": "شيئرز",
   "allocationSectors": "شعبا",
-  "allocationCurrencies": "ڪرنسيون"
+  "allocationCurrencies": "ڪرنسيون",
+  "compareReturn1y": "1 سال جو منافعو",
+  "compareFromHigh": "52 هفتن جي وڌ ۾ وڌ کان فاصلو"
 }

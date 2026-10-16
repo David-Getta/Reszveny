@@ -2246,4 +2246,10 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'मुद्रा';
+
+  @override
+  String get compareReturn1y => '1 साल के रिटर्न';
+
+  @override
+  String get compareFromHigh => '52 हप्ता के सबसे ऊँच से दूरी';
 }

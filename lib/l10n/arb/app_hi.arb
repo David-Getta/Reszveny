@@ -603,5 +603,7 @@
   "backupInvalid": "यह फ़ाइल WhatStock बैकअप नहीं है।",
   "allocationPositions": "शेयर",
   "allocationSectors": "सेक्टर",
-  "allocationCurrencies": "मुद्राएँ"
+  "allocationCurrencies": "मुद्राएँ",
+  "compareReturn1y": "1 साल का रिटर्न",
+  "compareFromHigh": "52-सप्ताह उच्च से दूरी"
 }

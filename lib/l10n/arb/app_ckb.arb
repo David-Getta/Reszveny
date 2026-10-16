@@ -603,5 +603,7 @@
   "backupInvalid": "ئەم فایلە یەدەگی WhatStock نییە.",
   "allocationPositions": "پشکەکان",
   "allocationSectors": "کەرتەکان",
-  "allocationCurrencies": "دراوەکان"
+  "allocationCurrencies": "دراوەکان",
+  "compareReturn1y": "قازانجی 1 ساڵ",
+  "compareFromHigh": "دووری لە بەرزترینی 52 هەفتە"
 }

@@ -2182,4 +2182,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => '통화';
+
+  @override
+  String get compareReturn1y => '1년 수익률';
+
+  @override
+  String get compareFromHigh => '52주 최고가 대비';
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "Ini nga file indi WhatStock backup.",
   "allocationPositions": "Mga stock",
   "allocationSectors": "Sektor",
-  "allocationCurrencies": "Currency"
+  "allocationCurrencies": "Currency",
+  "compareReturn1y": "1 ka tuig nga ganansya",
+  "compareFromHigh": "Halin sa pinakataas sa 52 ka semana"
 }

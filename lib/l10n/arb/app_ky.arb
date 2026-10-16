@@ -603,5 +603,7 @@
   "backupInvalid": "Бул файл WhatStock камдык көчүрмөсү эмес.",
   "allocationPositions": "Акциялар",
   "allocationSectors": "Секторлор",
-  "allocationCurrencies": "Валюталар"
+  "allocationCurrencies": "Валюталар",
+  "compareReturn1y": "1 жылдык кирешелүүлүк",
+  "compareFromHigh": "52 жумалык максимумдан аралык"
 }

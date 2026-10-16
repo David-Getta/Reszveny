@@ -603,5 +603,7 @@
   "backupInvalid": "Ин файл нусхаи эҳтиётии WhatStock нест.",
   "allocationPositions": "Саҳмияҳо",
   "allocationSectors": "Секторҳо",
-  "allocationCurrencies": "Асъорҳо"
+  "allocationCurrencies": "Асъорҳо",
+  "compareReturn1y": "Даромаднокии 1 сола",
+  "compareFromHigh": "Аз баландтарин дар 52 ҳафта"
 }

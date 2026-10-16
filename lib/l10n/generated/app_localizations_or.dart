@@ -2248,4 +2248,10 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ମୁଦ୍ରା';
+
+  @override
+  String get compareReturn1y => '1 ବର୍ଷର ରିଟର୍ନ';
+
+  @override
+  String get compareFromHigh => '52-ସପ୍ତାହ ସର୍ବାଧିକଠାରୁ ଦୂରତା';
 }

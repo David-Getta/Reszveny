@@ -2237,4 +2237,10 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ligd buudu';
+
+  @override
+  String get compareReturn1y => 'Yʋʋm 1 yõodo';
+
+  @override
+  String get compareFromHigh => 'Sẽn yi yʋʋmd pʋgẽ yɩɩd fãa';
 }

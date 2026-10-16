@@ -603,5 +603,7 @@
   "backupInvalid": "Afaylu-a mačči d aḥraz n WhatStock.",
   "allocationPositions": "Iksyunen",
   "allocationSectors": "Igezdan",
-  "allocationCurrencies": "Tidrimin"
+  "allocationCurrencies": "Tidrimin",
+  "compareReturn1y": "Afaris n 1 n useggas",
+  "compareFromHigh": "Si afellay n 52 n yimalasen"
 }

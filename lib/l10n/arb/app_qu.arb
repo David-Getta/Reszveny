@@ -603,5 +603,7 @@
   "backupInvalid": "Kay archivoqa manam WhatStock waqaychasqachu.",
   "allocationPositions": "Accionkuna",
   "allocationSectors": "Sectorkuna",
-  "allocationCurrencies": "Qullqikuna"
+  "allocationCurrencies": "Qullqikuna",
+  "compareReturn1y": "1 watapi gananciay",
+  "compareFromHigh": "52 semanapi aswan hatunmanta karuynin"
 }

@@ -2260,4 +2260,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'நாணயங்கள்';
+
+  @override
+  String get compareReturn1y => '1 ஆண்டு வருமானம்';
+
+  @override
+  String get compareFromHigh => '52-வார உச்சத்திலிருந்து தூரம்';
 }

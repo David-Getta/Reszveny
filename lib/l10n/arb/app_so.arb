@@ -603,5 +603,7 @@
   "backupInvalid": "Faylkani maaha nuqul kayd ah oo WhatStock.",
   "allocationPositions": "Saamiyada",
   "allocationSectors": "Waaxyaha",
-  "allocationCurrencies": "Lacagaha"
+  "allocationCurrencies": "Lacagaha",
+  "compareReturn1y": "Faa'iidada 1 sano",
+  "compareFromHigh": "Masaafada ugu sarreeya 52 toddobaad"
 }

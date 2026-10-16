@@ -603,5 +603,7 @@
   "backupInvalid": "Fayili leyi a hi nkopi yo hlayisa ya WhatStock.",
   "allocationPositions": "Tixere",
   "allocationSectors": "Swiyenge",
-  "allocationCurrencies": "Mali"
+  "allocationCurrencies": "Mali",
+  "compareReturn1y": "Mbuyelo wa lembe ra 1",
+  "compareFromHigh": "Ku suka eka ehenhla ka mavhiki ya 52"
 }

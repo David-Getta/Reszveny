@@ -603,5 +603,7 @@
   "backupInvalid": "Dit bestand is geen WhatStock-back-up.",
   "allocationPositions": "Aandelen",
   "allocationSectors": "Sectoren",
-  "allocationCurrencies": "Valuta's"
+  "allocationCurrencies": "Valuta's",
+  "compareReturn1y": "Rendement 1 jaar",
+  "compareFromHigh": "Vanaf 52-weeks hoog"
 }

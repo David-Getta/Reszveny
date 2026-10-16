@@ -2262,4 +2262,10 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mbɔngɔ';
+
+  @override
+  String get compareReturn1y => 'Litomba ya mbula 1';
+
+  @override
+  String get compareFromHigh => 'Uta likolo ya pɔsɔ 52';
 }

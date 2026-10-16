@@ -603,5 +603,7 @@
   "backupInvalid": "இந்தக் கோப்பு WhatStock காப்புப்பிரதி அல்ல.",
   "allocationPositions": "பங்குகள்",
   "allocationSectors": "துறைகள்",
-  "allocationCurrencies": "நாணயங்கள்"
+  "allocationCurrencies": "நாணயங்கள்",
+  "compareReturn1y": "1 ஆண்டு வருமானம்",
+  "compareFromHigh": "52-வார உச்சத்திலிருந்து தூரம்"
 }

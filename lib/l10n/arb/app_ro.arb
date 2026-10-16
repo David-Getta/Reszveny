@@ -603,5 +603,7 @@
   "backupInvalid": "Acest fișier nu este un backup WhatStock.",
   "allocationPositions": "Acțiuni",
   "allocationSectors": "Sectoare",
-  "allocationCurrencies": "Monede"
+  "allocationCurrencies": "Monede",
+  "compareReturn1y": "Randament pe 1 an",
+  "compareFromHigh": "Față de maximul de 52 de săptămâni"
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "Hindi WhatStock backup ang file na ito.",
   "allocationPositions": "Mga stock",
   "allocationSectors": "Sektor",
-  "allocationCurrencies": "Currency"
+  "allocationCurrencies": "Currency",
+  "compareReturn1y": "1-taong kita",
+  "compareFromHigh": "Mula sa 52-linggong pinakamataas"
 }

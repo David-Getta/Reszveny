@@ -603,5 +603,7 @@
   "backupInvalid": "Tento súbor nie je záloha WhatStock.",
   "allocationPositions": "Akcie",
   "allocationSectors": "Sektory",
-  "allocationCurrencies": "Meny"
+  "allocationCurrencies": "Meny",
+  "compareReturn1y": "Výnos za 1 rok",
+  "compareFromHigh": "Od 52-týždňového maxima"
 }

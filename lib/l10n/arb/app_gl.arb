@@ -603,5 +603,7 @@
   "backupInvalid": "Este ficheiro non é unha copia de seguranza de WhatStock.",
   "allocationPositions": "Accións",
   "allocationSectors": "Sectores",
-  "allocationCurrencies": "Moedas"
+  "allocationCurrencies": "Moedas",
+  "compareReturn1y": "Rendibilidade a 1 ano",
+  "compareFromHigh": "Desde o máximo de 52 semanas"
 }

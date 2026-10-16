@@ -2264,4 +2264,10 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Currency';
+
+  @override
+  String get compareReturn1y => '1 ka tuig nga ganansya';
+
+  @override
+  String get compareFromHigh => 'Halin sa pinakataas sa 52 ka semana';
 }

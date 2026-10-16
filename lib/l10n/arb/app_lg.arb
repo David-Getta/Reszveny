@@ -603,5 +603,7 @@
   "backupInvalid": "Fayiro eno si kkopi ey'obukuumi eya WhatStock.",
   "allocationPositions": "Emigabo",
   "allocationSectors": "Ebitundu",
-  "allocationCurrencies": "Ensimbi"
+  "allocationCurrencies": "Ensimbi",
+  "compareReturn1y": "Amagoba g'omwaka 1",
+  "compareFromHigh": "Okuva ku waggulu mu wiiki 52"
 }

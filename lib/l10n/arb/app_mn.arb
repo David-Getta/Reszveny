@@ -603,5 +603,7 @@
   "backupInvalid": "Энэ файл WhatStock-ийн нөөц биш байна.",
   "allocationPositions": "Хувьцаа",
   "allocationSectors": "Салбар",
-  "allocationCurrencies": "Валют"
+  "allocationCurrencies": "Валют",
+  "compareReturn1y": "1 жилийн өгөөж",
+  "compareFromHigh": "52 долоо хоногийн дээдээс зай"
 }

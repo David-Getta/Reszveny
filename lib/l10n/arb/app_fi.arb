@@ -603,5 +603,7 @@
   "backupInvalid": "Tämä tiedosto ei ole WhatStock-varmuuskopio.",
   "allocationPositions": "Osakkeet",
   "allocationSectors": "Sektorit",
-  "allocationCurrencies": "Valuutat"
+  "allocationCurrencies": "Valuutat",
+  "compareReturn1y": "1 vuoden tuotto",
+  "compareFromHigh": "Etäisyys 52 viikon ylimmästä"
 }

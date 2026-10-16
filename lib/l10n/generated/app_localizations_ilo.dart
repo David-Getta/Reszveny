@@ -2268,4 +2268,10 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Currency';
+
+  @override
+  String get compareReturn1y => 'Ganansia iti 1 a tawen';
+
+  @override
+  String get compareFromHigh => 'Manipud iti kangatuan iti 52 a lawas';
 }

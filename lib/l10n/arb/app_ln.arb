@@ -603,5 +603,7 @@
   "backupInvalid": "Fisyé oyo ezali kopi ya kobomba ya WhatStock te.",
   "allocationPositions": "Ba-action",
   "allocationSectors": "Ba-secteur",
-  "allocationCurrencies": "Mbɔngɔ"
+  "allocationCurrencies": "Mbɔngɔ",
+  "compareReturn1y": "Litomba ya mbula 1",
+  "compareFromHigh": "Uta likolo ya pɔsɔ 52"
 }

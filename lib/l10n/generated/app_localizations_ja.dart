@@ -2173,4 +2173,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => '通貨';
+
+  @override
+  String get compareReturn1y => '1年リターン';
+
+  @override
+  String get compareFromHigh => '52週高値からの乖離';
 }

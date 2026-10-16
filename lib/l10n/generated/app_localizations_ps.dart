@@ -2242,4 +2242,10 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'اسعار';
+
+  @override
+  String get compareReturn1y => 'د 1 کال عاید';
+
+  @override
+  String get compareFromHigh => 'د 52 اونیو له لوړې بیې واټن';
 }

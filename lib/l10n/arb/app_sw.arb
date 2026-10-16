@@ -603,5 +603,7 @@
   "backupInvalid": "Faili hii si nakala rudufu ya WhatStock.",
   "allocationPositions": "Hisa",
   "allocationSectors": "Sekta",
-  "allocationCurrencies": "Sarafu"
+  "allocationCurrencies": "Sarafu",
+  "compareReturn1y": "Faida ya mwaka 1",
+  "compareFromHigh": "Kutoka juu ya wiki 52"
 }

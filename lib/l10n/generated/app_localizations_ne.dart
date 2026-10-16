@@ -2249,4 +2249,10 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'मुद्रा';
+
+  @override
+  String get compareReturn1y => '1 वर्षको प्रतिफल';
+
+  @override
+  String get compareFromHigh => '52 हप्ताको उच्चबाट दूरी';
 }

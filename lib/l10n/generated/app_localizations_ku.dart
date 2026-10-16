@@ -2252,4 +2252,10 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Dirav';
+
+  @override
+  String get compareReturn1y => 'Vegera 1 salî';
+
+  @override
+  String get compareFromHigh => 'Ji bilindtirîna 52 hefteyan';
 }

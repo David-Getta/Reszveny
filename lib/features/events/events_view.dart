@@ -5,6 +5,7 @@ import '../../core/models/stock_candidate.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/centered_scroll.dart';
 import 'events_service.dart';
 
 /// „Mikor?”: ma, holnap, N nap múlva.
@@ -172,44 +173,48 @@ class EventsPage extends StatelessWidget {
           final events = services.events.events;
           return RefreshIndicator(
             onRefresh: () => services.events.refresh(force: true),
-            child: ListView(
+            child: CenteredScroll(
+              maxWidth: 760,
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-              children: [
-                Text(l10n.eventsHint, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
-                const SizedBox(height: 12),
-                if (services.events.loading && events.isEmpty)
-                  const Padding(
-                    padding: EdgeInsets.all(24),
-                    child: Center(child: CircularProgressIndicator()),
-                  )
-                else if (events.isEmpty)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 24),
-                    child: Text(
-                      l10n.eventsEmpty,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: p.muted),
-                    ),
-                  )
-                else
-                  Card(
-                    margin: EdgeInsets.zero,
-                    child: Column(
-                      children: [
-                        for (final (i, e) in events.indexed) ...[
-                          if (i > 0) const Divider(height: 1),
-                          EventTile(
-                            event: e,
-                            onOpenSymbol: (c) {
-                              Navigator.of(context).pop();
-                              onOpenSymbol(c);
-                            },
-                          ),
+              builder: (context, padding) => ListView(
+                padding: padding,
+                children: [
+                  Text(l10n.eventsHint, style: theme.textTheme.bodyMedium?.copyWith(color: p.muted)),
+                  const SizedBox(height: 12),
+                  if (services.events.loading && events.isEmpty)
+                    const Padding(
+                      padding: EdgeInsets.all(24),
+                      child: Center(child: CircularProgressIndicator()),
+                    )
+                  else if (events.isEmpty)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      child: Text(
+                        l10n.eventsEmpty,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: p.muted),
+                      ),
+                    )
+                  else
+                    Card(
+                      margin: EdgeInsets.zero,
+                      child: Column(
+                        children: [
+                          for (final (i, e) in events.indexed) ...[
+                            if (i > 0) const Divider(height: 1),
+                            EventTile(
+                              event: e,
+                              onOpenSymbol: (c) {
+                                Navigator.of(context).pop();
+                                onOpenSymbol(c);
+                              },
+                            ),
+                          ],
                         ],
-                      ],
+                      ),
                     ),
-                  ),
-              ],
+                ],
+              ),
             ),
           );
         },

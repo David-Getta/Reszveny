@@ -2256,4 +2256,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Moedas';
+
+  @override
+  String get compareReturn1y => 'Retorno em 1 ano';
+
+  @override
+  String get compareFromHigh => 'Desde o máximo de 52 semanas';
 }

@@ -2231,4 +2231,10 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'រូបិយប័ណ្ណ';
+
+  @override
+  String get compareReturn1y => 'ផលចំណេញ 1 ឆ្នាំ';
+
+  @override
+  String get compareFromHigh => 'ចម្ងាយពីខ្ពស់បំផុត 52 សប្ដាហ៍';
 }

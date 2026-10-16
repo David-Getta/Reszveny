@@ -603,5 +603,7 @@
   "backupInvalid": "ഈ ഫയൽ ഒരു WhatStock ബാക്കപ്പ് അല്ല.",
   "allocationPositions": "ഓഹരികൾ",
   "allocationSectors": "മേഖലകൾ",
-  "allocationCurrencies": "കറൻസികൾ"
+  "allocationCurrencies": "കറൻസികൾ",
+  "compareReturn1y": "1 വർഷത്തെ റിട്ടേൺ",
+  "compareFromHigh": "52 ആഴ്ചയിലെ ഉയർന്ന നിലയിൽ നിന്നുള്ള അകലം"
 }

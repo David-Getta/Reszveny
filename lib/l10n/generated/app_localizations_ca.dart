@@ -2260,4 +2260,10 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Divises';
+
+  @override
+  String get compareReturn1y => 'Rendiment a 1 any';
+
+  @override
+  String get compareFromHigh => 'Des del màxim de 52 setmanes';
 }

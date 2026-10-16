@@ -2257,4 +2257,10 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Currency';
+
+  @override
+  String get compareReturn1y => '1-taong kita';
+
+  @override
+  String get compareFromHigh => 'Mula sa 52-linggong pinakamataas';
 }

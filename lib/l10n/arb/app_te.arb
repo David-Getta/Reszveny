@@ -603,5 +603,7 @@
   "backupInvalid": "ఈ ఫైల్ WhatStock బ్యాకప్ కాదు.",
   "allocationPositions": "షేర్లు",
   "allocationSectors": "రంగాలు",
-  "allocationCurrencies": "కరెన్సీలు"
+  "allocationCurrencies": "కరెన్సీలు",
+  "compareReturn1y": "1 సంవత్సర రాబడి",
+  "compareFromHigh": "52-వారాల గరిష్ఠం నుండి దూరం"
 }

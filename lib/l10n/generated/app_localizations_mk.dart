@@ -2270,4 +2270,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валути';
+
+  @override
+  String get compareReturn1y => 'Принос за 1 година';
+
+  @override
+  String get compareFromHigh => 'Од 52-неделниот максимум';
 }

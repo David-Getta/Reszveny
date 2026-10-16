@@ -603,5 +603,7 @@
   "backupInvalid": "ໄຟລ໌ນີ້ບໍ່ແມ່ນການສຳຮອງຂໍ້ມູນ WhatStock.",
   "allocationPositions": "ຮຸ້ນ",
   "allocationSectors": "ຂະແໜງ",
-  "allocationCurrencies": "ສະກຸນເງິນ"
+  "allocationCurrencies": "ສະກຸນເງິນ",
+  "compareReturn1y": "ຜົນຕອບແທນ 1 ປີ",
+  "compareFromHigh": "ໄລຍະຫ່າງຈາກສູງສຸດໃນຮອບ 52 ອາທິດ"
 }

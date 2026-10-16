@@ -603,5 +603,7 @@
   "backupInvalid": "Ez a fájl nem WhatStock-mentés.",
   "allocationPositions": "Részvények",
   "allocationSectors": "Szektorok",
-  "allocationCurrencies": "Devizák"
+  "allocationCurrencies": "Devizák",
+  "compareReturn1y": "1 éves hozam",
+  "compareFromHigh": "Távolság az 52 hetes csúcstól"
 }

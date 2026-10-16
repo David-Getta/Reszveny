@@ -2251,4 +2251,10 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валути';
+
+  @override
+  String get compareReturn1y => 'Доходност за 1 година';
+
+  @override
+  String get compareFromHigh => 'От 52-седмичния максимум';
 }

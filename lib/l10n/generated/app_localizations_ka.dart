@@ -2251,4 +2251,10 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ვალუტები';
+
+  @override
+  String get compareReturn1y => '1-წლიანი შემოსავლიანობა';
+
+  @override
+  String get compareFromHigh => 'დაშორება 52-კვირიანი მაქსიმუმიდან';
 }

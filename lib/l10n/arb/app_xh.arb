@@ -603,5 +603,7 @@
   "backupInvalid": "Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock.",
   "allocationPositions": "Izabelo",
   "allocationSectors": "Amacandelo",
-  "allocationCurrencies": "Iimali"
+  "allocationCurrencies": "Iimali",
+  "compareReturn1y": "Imbuyekezo yonyaka o-1",
+  "compareFromHigh": "Ukusuka kweliphezulu leeveki ezi-52"
 }

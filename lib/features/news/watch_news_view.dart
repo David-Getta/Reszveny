@@ -5,6 +5,7 @@ import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../analysis/stale_report.dart' show analysisAgeText;
 import 'watch_news.dart';
@@ -152,11 +153,15 @@ class WatchNewsPage extends StatelessWidget {
         listenable: services.news,
         builder: (context, _) => RefreshIndicator(
           onRefresh: () => services.news.refresh(force: true),
-          child: ListView.separated(
+          child: CenteredScroll(
+            maxWidth: 760,
             padding: const EdgeInsets.symmetric(vertical: 8),
-            itemCount: services.news.news.length,
-            separatorBuilder: (_, _) => const Divider(height: 1),
-            itemBuilder: (_, i) => WatchNewsTile(news: services.news.news[i], onOpenSymbol: onOpenSymbol),
+            builder: (context, padding) => ListView.separated(
+              padding: padding,
+              itemCount: services.news.news.length,
+              separatorBuilder: (_, _) => const Divider(height: 1),
+              itemBuilder: (_, i) => WatchNewsTile(news: services.news.news[i], onOpenSymbol: onOpenSymbol),
+            ),
           ),
         ),
       ),

@@ -2253,4 +2253,10 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'پۇللار';
+
+  @override
+  String get compareReturn1y => '1 يىللىق پايدا';
+
+  @override
+  String get compareFromHigh => '52 ھەپتىلىك ئەڭ يۇقىرىدىن ئارىلىق';
 }

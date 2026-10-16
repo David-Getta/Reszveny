@@ -2213,4 +2213,10 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ባጤራታት';
+
+  @override
+  String get compareReturn1y => 'ናይ 1 ዓመት መኽሰብ';
+
+  @override
+  String get compareFromHigh => 'ካብ ናይ 52 ሰሙን ዝለዓለ ርሕቀት';
 }

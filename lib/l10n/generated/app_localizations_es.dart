@@ -2256,4 +2256,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Divisas';
+
+  @override
+  String get compareReturn1y => 'Rentabilidad a 1 año';
+
+  @override
+  String get compareFromHigh => 'Desde el máximo de 52 semanas';
 }

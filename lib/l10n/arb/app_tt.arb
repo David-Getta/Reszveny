@@ -603,5 +603,7 @@
   "backupInvalid": "Бу файл WhatStock резерв күчермәсе түгел.",
   "allocationPositions": "Акцияләр",
   "allocationSectors": "Секторлар",
-  "allocationCurrencies": "Валюталар"
+  "allocationCurrencies": "Валюталар",
+  "compareReturn1y": "1 еллык табышлылык",
+  "compareFromHigh": "52 атналык максимумнан ераклык"
 }

@@ -1734,5 +1734,13 @@
     "description": "Segment of a toggle on the portfolio allocation card: split by individual stocks. Very short."
   },
   "allocationSectors": "Sectors",
-  "allocationCurrencies": "Currencies"
+  "allocationCurrencies": "Currencies",
+  "compareReturn1y": "1-year return",
+  "@compareReturn1y": {
+    "description": "Row label in the stock comparison table: price change over the last year."
+  },
+  "compareFromHigh": "From 52-week high",
+  "@compareFromHigh": {
+    "description": "Row label in the stock comparison table: how far the price is below its 52-week high, in %."
+  }
 }

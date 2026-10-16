@@ -2254,4 +2254,10 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valutas';
+
+  @override
+  String get compareReturn1y => '1-jaar-opbrengs';
+
+  @override
+  String get compareFromHigh => 'Vanaf 52-weke-hoogtepunt';
 }

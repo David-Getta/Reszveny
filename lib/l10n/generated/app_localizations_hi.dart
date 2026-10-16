@@ -2249,4 +2249,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'मुद्राएँ';
+
+  @override
+  String get compareReturn1y => '1 साल का रिटर्न';
+
+  @override
+  String get compareFromHigh => '52-सप्ताह उच्च से दूरी';
 }

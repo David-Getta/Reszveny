@@ -603,5 +603,7 @@
   "backupInvalid": "Saan a WhatStock backup daytoy a file.",
   "allocationPositions": "Stock",
   "allocationSectors": "Sektor",
-  "allocationCurrencies": "Currency"
+  "allocationCurrencies": "Currency",
+  "compareReturn1y": "Ganansia iti 1 a tawen",
+  "compareFromHigh": "Manipud iti kangatuan iti 52 a lawas"
 }

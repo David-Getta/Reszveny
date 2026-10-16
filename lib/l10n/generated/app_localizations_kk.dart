@@ -2250,4 +2250,10 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Валюталар';
+
+  @override
+  String get compareReturn1y => '1 жылдық табыстылық';
+
+  @override
+  String get compareFromHigh => '52 апталық максимумнан қашықтық';
 }

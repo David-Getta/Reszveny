@@ -2248,4 +2248,10 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Wariw';
+
+  @override
+  String get compareReturn1y => 'San 1 tɔnɔ';
+
+  @override
+  String get compareFromHigh => 'Ka bɔ Dɔgɔkun 52 sɔngɔ sanfɛla la';
 }

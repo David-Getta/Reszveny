@@ -603,5 +603,7 @@
   "backupInvalid": "ಈ ಫೈಲ್ WhatStock ಬ್ಯಾಕಪ್ ಅಲ್ಲ.",
   "allocationPositions": "ಷೇರುಗಳು",
   "allocationSectors": "ವಲಯಗಳು",
-  "allocationCurrencies": "ಕರೆನ್ಸಿಗಳು"
+  "allocationCurrencies": "ಕರೆನ್ಸಿಗಳು",
+  "compareReturn1y": "1 ವರ್ಷದ ಆದಾಯ",
+  "compareFromHigh": "52 ವಾರಗಳ ಗರಿಷ್ಠದಿಂದ ಅಂತರ"
 }

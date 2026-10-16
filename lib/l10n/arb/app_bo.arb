@@ -603,5 +603,7 @@
   "backupInvalid": "ཡིག་ཆ་འདི་ WhatStock གྱི་གྲབས་ཉར་མིན།",
   "allocationPositions": "ཧུར་ཁག",
   "allocationSectors": "སྡེ་ཚན",
-  "allocationCurrencies": "དངུལ་ལོར"
+  "allocationCurrencies": "དངུལ་ལོར",
+  "compareReturn1y": "ལོ་ 1 ནང་གི་ཁེ་ཕན",
+  "compareFromHigh": "གཟའ་འཁོར་ 52 ནང་གི་མཐོ་ཤོས་ལས་ཐག་རིང་ཚད"
 }

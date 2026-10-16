@@ -603,5 +603,7 @@
   "backupInvalid": "Diese Datei ist kein WhatStock-Backup.",
   "allocationPositions": "Aktien",
   "allocationSectors": "Sektoren",
-  "allocationCurrencies": "Währungen"
+  "allocationCurrencies": "Währungen",
+  "compareReturn1y": "1-Jahres-Rendite",
+  "compareFromHigh": "Abstand zum 52-Wochen-Hoch"
 }

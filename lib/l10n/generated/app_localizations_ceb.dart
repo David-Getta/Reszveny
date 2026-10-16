@@ -2260,4 +2260,10 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Currency';
+
+  @override
+  String get compareReturn1y => '1 ka tuig nga ganansya';
+
+  @override
+  String get compareFromHigh => 'Gikan sa pinakataas sa 52 ka semana';
 }

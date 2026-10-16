@@ -2255,4 +2255,10 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Mata wang';
+
+  @override
+  String get compareReturn1y => 'Pulangan 1 tahun';
+
+  @override
+  String get compareFromHigh => 'Dari tertinggi 52 minggu';
 }

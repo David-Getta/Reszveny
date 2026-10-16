@@ -2252,4 +2252,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Valuutat';
+
+  @override
+  String get compareReturn1y => '1 vuoden tuotto';
+
+  @override
+  String get compareFromHigh => 'Etäisyys 52 viikon ylimmästä';
 }

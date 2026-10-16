@@ -2261,4 +2261,10 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Ensimbi';
+
+  @override
+  String get compareReturn1y => 'Amagoba g\'omwaka 1';
+
+  @override
+  String get compareFromHigh => 'Okuva ku waggulu mu wiiki 52';
 }

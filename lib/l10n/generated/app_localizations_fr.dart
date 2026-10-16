@@ -2260,4 +2260,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'Devises';
+
+  @override
+  String get compareReturn1y => 'Rendement sur 1 an';
+
+  @override
+  String get compareFromHigh => 'Écart au plus haut sur 52 semaines';
 }

@@ -603,5 +603,7 @@
   "backupInvalid": "ई फाइल WhatStock बैकअप ना ह।",
   "allocationPositions": "शेयर",
   "allocationSectors": "सेक्टर",
-  "allocationCurrencies": "मुद्रा"
+  "allocationCurrencies": "मुद्रा",
+  "compareReturn1y": "1 साल के रिटर्न",
+  "compareFromHigh": "52 हप्ता के सबसे ऊँच से दूरी"
 }

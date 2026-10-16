@@ -603,5 +603,7 @@
   "backupInvalid": "Ndee fiyannde wonaa kopi danndaandi WhatStock.",
   "allocationPositions": "Aksiyonji",
   "allocationSectors": "Fannuuji",
-  "allocationCurrencies": "Ceede"
+  "allocationCurrencies": "Ceede",
+  "compareReturn1y": "Ñeeñal hitaande 1",
+  "compareFromHigh": "Diga ɓurɗum toowde e yonte 52"
 }

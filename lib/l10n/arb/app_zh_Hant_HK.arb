@@ -603,5 +603,7 @@
   "backupInvalid": "此檔案並非 WhatStock 備份。",
   "allocationPositions": "個股",
   "allocationSectors": "板塊",
-  "allocationCurrencies": "貨幣"
+  "allocationCurrencies": "貨幣",
+  "compareReturn1y": "1年回報",
+  "compareFromHigh": "距52週高位"
 }

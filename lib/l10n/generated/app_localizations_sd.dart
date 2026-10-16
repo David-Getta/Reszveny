@@ -2242,4 +2242,10 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get allocationCurrencies => 'ڪرنسيون';
+
+  @override
+  String get compareReturn1y => '1 سال جو منافعو';
+
+  @override
+  String get compareFromHigh => '52 هفتن جي وڌ ۾ وڌ کان فاصلو';
 }
