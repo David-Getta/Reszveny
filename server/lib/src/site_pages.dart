@@ -30,7 +30,7 @@ padding:14px;margin:16px 0;font-weight:600}
 padding:12px 22px;border-radius:12px;font-weight:700;margin:6px}.btn.alt{background:transparent;color:var(--accent);
 border:1.5px solid var(--accent)}
 .hero{text-align:center;padding:40px 0 10px}.hero h1{font-size:34px}.hero p{font-size:18px;color:var(--muted);margin:10px 0 0}
-.features{display:grid;gap:12px;margin-top:22px}.feature h2{font-size:18px;margin:0 0 4px}
+.features{display:grid;gap:12px;margin-top:22px}@media(min-width:620px){.features{grid-template-columns:1fr 1fr}}.feature h2{font-size:18px;margin:0 0 4px}
 .note{margin-top:10px;font-size:14px;color:var(--muted)}footer{margin-top:36px;text-align:center;font-size:13px;color:var(--muted)}
 footer a{color:var(--accent)}
 .plans{display:grid;gap:12px;margin-top:18px}@media(min-width:620px){.plans{grid-template-columns:1fr 1fr}}
@@ -168,8 +168,14 @@ const _site = {
     'f1': 'Elég egy brókerapp képernyője, egy újságcikk vagy egy céglogó: a WhatStock felismeri a részvényt, és megmutatja az árfolyamot, a grafikont és a fontos számokat.',
     'f2t': 'Percek alatt átlátod',
     'f2': 'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad arra, merre mehet az ár – forrásokkal, a te nyelveden.',
-    'f3t': 'Mindig képben leszel',
-    'f3': 'Kedvencek, portfólió és árfolyam-riasztások; az elemzéseid a készülékeden maradnak. 120 nyelven.',
+    'f3t': 'Kérdezz bármit',
+    'f3': 'Az elemzés után kérdezhetsz is: mit jelent egy kockázat, mi változtatná meg a kilátásokat, hogyan jött ki egy szám.',
+    'f4t': 'A portfóliód egy helyen',
+    'f4': 'Vedd fel a vételeidet kézzel, CSV-ből vagy egyszerűen a brókered képernyőképéből. Látod a nyereséget, az osztalékot, az összevetést az S&P 500-zal, és kérhetsz AI-elemzést az egész portfólióról.',
+    'f5t': 'Mindig képben leszel',
+    'f5': 'Napi AI-összefoglaló a részvényeid mozgásáról és híreiről, gyorsjelentés-naptár, árfolyam-riasztások (követő stoppal is) e-mailben és értesítésben.',
+    'f6t': 'A te nyelveden',
+    'f6': '120 nyelven, telefonon és számítógépen; a kedvenceid és a portfóliód minden eszközödön ugyanaz.',
     'download': 'Letöltés',
     'preview': 'Zárt előzetes: az app használatához meghívókód kell.',
     'disclaimer': 'A WhatStock tájékoztató jellegű, nem minősül befektetési tanácsadásnak.',
@@ -184,8 +190,14 @@ const _site = {
     'f1': 'A brokerage screen, a newspaper or a company logo is enough: WhatStock recognises the stock and shows its price, chart and key figures.',
     'f2t': 'Understand it in minutes',
     'f2': 'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.',
-    'f3t': 'Stay on top of it',
-    'f3': 'Favorites, portfolio and price alerts; your analyses stay on your device. In 120 languages.',
+    'f3t': 'Ask anything',
+    'f3': 'After the analysis you can ask follow-up questions: what a risk means, what would change the outlook, how a number was worked out.',
+    'f4t': 'Your portfolio in one place',
+    'f4': 'Add your purchases by hand, from a CSV or simply from a screenshot of your broker. See gains, dividends and a comparison with the S&P 500, and ask for an AI review of the whole portfolio.',
+    'f5t': 'Stay on top of it',
+    'f5': 'A daily AI summary of how your stocks moved and why, an earnings calendar, and price alerts (trailing stops too) by e-mail and notification.',
+    'f6t': 'In your language',
+    'f6': 'In 120 languages, on phone and computer; your favorites and portfolio are the same on every device.',
     'download': 'Download',
     'preview': 'Closed preview: you need an invite code to use the app.',
     'disclaimer': 'WhatStock is for information only and is not investment advice.',
@@ -226,7 +238,7 @@ String landingPage({
   }
   if (closedPreview) b.write('<div class="note">${_esc(t['preview'])}</div>');
   b.write('</div><div class="features">');
-  for (final i in [1, 2, 3]) {
+  for (final i in [1, 2, 3, 4, 5, 6]) {
     b.write('<div class="card feature"><h2>${_esc(t['f${i}t'])}</h2><div class="muted">${_esc(t['f$i'])}</div></div>');
   }
   b
