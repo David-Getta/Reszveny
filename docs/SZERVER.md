@@ -141,7 +141,7 @@ riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az 
 
 Aki a Beállításokban (belépve) bekapcsolja, annak hétfő reggelente (6:00 UTC után) e-mail megy: a
 portfólió és a kedvencek részvényei (legfeljebb 15) a heti változással, csökkenő sorrendben, és
-melyiküknek jön gyorsjelentése a következő két hétben. A heti változást a Twelve Data napi záróáraiból
+melyiküknek jön gyorsjelentése a következő két hétben. A hét öt legnagyobb mozgásához a Finnhub legfrissebb híre (cím és link) is bekerül. A heti változást a Twelve Data napi záróáraiból
 számolja (`TWELVEDATA_API_KEY`; nélküle csak a legutóbbi Finnhub-ár kerül a levélbe); a
 lekérdezések között 8 másodperc szünetet tart az ingyenes keret miatt. A szerver
 `DIGEST_CHECK_MINUTES` percenként (alapból 60; 0 = ki) nézi, kinek esedékes; egy fióknak hat és fél

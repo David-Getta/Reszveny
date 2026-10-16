@@ -11,6 +11,7 @@ void main() {
   late ConsoleMailer mailer;
   late DateTime now;
   late List<String> asked;
+  late List<String> newsAsked;
 
   // Hétfő, 2026. október 19., 7:00 UTC.
   final monday = DateTime.utc(2026, 10, 19, 7);
@@ -20,6 +21,7 @@ void main() {
     mailer = ConsoleMailer();
     now = monday;
     asked = [];
+    newsAsked = [];
     store.clock = () => now;
   });
 
@@ -38,6 +40,10 @@ void main() {
       return moves[s];
     },
     earnings: (s, from, to) async => s == 'MSFT' ? DateTime.utc(2026, 10, 28) : null,
+    headline: (s, from, to) async {
+      newsAsked.add(s);
+      return s == 'NVDA' ? (title: 'Nvidia beats estimates', url: 'https://news.test/nvda') : null;
+    },
     clock: () => now,
   );
 
@@ -88,6 +94,12 @@ void main() {
     expect(mail.text, contains('Gyorsjelentés a következő két hétben:\n  MSFT – okt. 28.'));
     expect(mail.text, contains('a heti adat nem volt elérhető'));
     expect(asked.toSet(), {'AAPL', 'NVDA', 'OTP', 'MSFT'});
+    // Hír csak a heti változással rendelkező, legnagyobb mozgásokhoz (az OTP-nek nincs).
+    expect(newsAsked.toSet(), {'NVDA', 'AAPL', 'MSFT'});
+    expect(
+      mail.text,
+      contains('Hírek a legnagyobb mozgásokhoz:\n  NVDA – Nvidia beats estimates\n    https://news.test/nvda\n'),
+    );
 
     // Egy órával később már nem megy ki újra.
     now = monday.add(const Duration(hours: 1));
@@ -144,5 +156,17 @@ void main() {
     expect(m.weekChange, closeTo(10, 1e-9));
     expect(m.currency, 'USD');
     expect(Api.weekMoveFromTimeSeries({'status': 'error'}), isNull);
+  });
+
+  test('the newest headline from a Finnhub company-news list', () {
+    expect(
+      Api.latestHeadline([
+        {'headline': 'Old', 'url': 'https://a', 'datetime': 100},
+        {'headline': ' New ', 'url': 'https://b', 'datetime': 200},
+        {'headline': '', 'url': 'https://c', 'datetime': 300},
+      ]),
+      (title: 'New', url: 'https://b'),
+    );
+    expect(Api.latestHeadline({'error': 'x'}), isNull);
   });
 }

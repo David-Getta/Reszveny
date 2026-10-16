@@ -536,6 +536,7 @@ class Api {
     mailer: mailer,
     week: _weekMove,
     earnings: _earningsDate,
+    headline: _latestHeadline,
     pause: twelveDataApiKey.isEmpty ? const Duration(seconds: 1) : const Duration(seconds: 8),
   );
 
@@ -575,6 +576,35 @@ class Api {
       weekChange: base == null || base.$2 <= 0 ? null : (last.$2 / base.$2 - 1) * 100,
       currency: meta is Map && meta['currency'] is String ? meta['currency'] as String : null,
     );
+  }
+
+  /// A Finnhub `/company-news` legfrissebb híre az időszakban.
+  Future<({String title, String url})?> _latestHeadline(String symbol, DateTime from, DateTime to) async {
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    final res = await _client
+        .get(
+          Uri.parse('$finnhubBaseUrl/company-news')
+              .replace(queryParameters: {'symbol': symbol, 'from': d(from), 'to': d(to)}),
+          headers: {'X-Finnhub-Token': finnhubApiKey},
+        )
+        .timeout(const Duration(seconds: 15));
+    if (res.statusCode != 200) return null;
+    return latestHeadline(jsonDecode(res.body));
+  }
+
+  /// A hírlistából a legfrissebb, címmel rendelkező hír.
+  static ({String title, String url})? latestHeadline(Object? j) {
+    if (j is! List) return null;
+    final items = [
+      for (final n in j.whereType<Map>())
+        if (n['headline'] is String && (n['headline'] as String).trim().isNotEmpty)
+          (
+            at: n['datetime'] is num ? (n['datetime'] as num).toInt() : 0,
+            title: (n['headline'] as String).trim(),
+            url: n['url'] is String ? n['url'] as String : '',
+          ),
+    ]..sort((a, b) => b.at.compareTo(a.at));
+    return items.isEmpty ? null : (title: items.first.title, url: items.first.url);
   }
 
   Future<DateTime?> _earningsDate(String symbol, DateTime from, DateTime to) async {

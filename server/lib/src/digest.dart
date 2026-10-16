@@ -14,6 +14,9 @@ typedef WeekLookup = Future<WeekMove?> Function(String symbol);
 /// A következő gyorsjelentés dátuma [from] és [to] között, vagy `null`.
 typedef EarningsLookup = Future<DateTime?> Function(String symbol, DateTime from, DateTime to);
 
+/// A részvény legfrissebb híre [from] és [to] között (cím és link), vagy `null`.
+typedef HeadlineLookup = Future<({String title, String url})?> Function(String symbol, DateTime from, DateTime to);
+
 /// Heti összefoglaló e-mail (bekapcsolható, `weekly_digest: true` a
 /// szinkronizált adatban): hétfő reggelente megírja, hogyan mozogtak az előző
 /// héten a portfólió és a kedvencek részvényei, és melyiküknek jön
@@ -24,6 +27,7 @@ class DigestSender {
     required this.mailer,
     required this.week,
     required this.earnings,
+    this.headline,
     this.pause = Duration.zero,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
@@ -32,6 +36,12 @@ class DigestSender {
   final Mailer mailer;
   final WeekLookup week;
   final EarningsLookup earnings;
+
+  /// Ha meg van adva, a hét legnagyobb mozgásai mellé a friss hír is bekerül.
+  final HeadlineLookup? headline;
+
+  /// Fiókonként legfeljebb ennyi hír (a legnagyobb heti mozgásokhoz).
+  static const maxHeadlines = 5;
 
   /// Szünet két piaci lekérdezés között (az ingyenes API-keretek miatt).
   final Duration pause;
@@ -131,13 +141,44 @@ class DigestSender {
           if (e != null) upcoming[s] = e;
         } catch (_) {}
       }
+      // A hírek csak a fiókonkénti legnagyobb heti mozgásokhoz kellenek.
+      final news = <String, ({String title, String url})?>{};
+      final weekAgo = now.subtract(const Duration(days: 7));
+      Future<({String title, String url})?> headlineOf(String sym) async {
+        final h = headline;
+        if (h == null) return null;
+        if (news.containsKey(sym)) return news[sym];
+        if (pause > Duration.zero) await Future<void>.delayed(pause);
+        try {
+          return news[sym] = await h(sym, weekAgo, now);
+        } catch (_) {
+          return news[sym] = null;
+        }
+      }
+
       var sent = 0;
       for (final acc in accounts) {
         final s = symbolsOf(acc.data);
+        final movers = [
+          for (final sym in [...s.portfolio, ...s.favorites])
+            if (moves[sym]?.weekChange != null) sym,
+        ]..sort((a, b) => moves[b]!.weekChange!.abs().compareTo(moves[a]!.weekChange!.abs()));
+        final heads = <String, ({String title, String url})>{};
+        for (final sym in movers.take(maxHeadlines)) {
+          if (await headlineOf(sym) case final h?) heads[sym] = h;
+        }
         List<DigestLine> lines(List<String> syms) => [
           for (final sym in syms)
             if (moves[sym] case final m?)
-              DigestLine(sym, m.price, m.weekChange, s.currencies[sym] ?? m.currency, upcoming[sym]),
+              DigestLine(
+                sym,
+                m.price,
+                m.weekChange,
+                s.currencies[sym] ?? m.currency,
+                upcoming[sym],
+                headline: heads[sym]?.title,
+                url: heads[sym]?.url,
+              ),
         ];
         final portfolio = lines(s.portfolio), favorites = lines(s.favorites);
         if (portfolio.isEmpty && favorites.isEmpty) continue;
@@ -230,6 +271,16 @@ class DigestSender {
       }
       b.writeln();
     }
+    final withNews = all.where((l) => l.headline != null).toList()
+      ..sort((a, b) => (b.weekChange ?? 0).abs().compareTo((a.weekChange ?? 0).abs()));
+    if (withNews.isNotEmpty) {
+      b.writeln(hu ? 'Hírek a legnagyobb mozgásokhoz:' : 'News behind the biggest moves:');
+      for (final l in withNews) {
+        b.writeln('  ${l.symbol} – ${l.headline}');
+        if (l.url != null && l.url!.isNotEmpty) b.writeln('    ${l.url}');
+      }
+      b.writeln();
+    }
     if (withChange.length < all.length) {
       b
         ..writeln(
@@ -256,7 +307,11 @@ class DigestSender {
 
 /// Egy részvény sora az összefoglalóban.
 class DigestLine {
-  const DigestLine(this.symbol, this.price, this.weekChange, this.currency, this.earnings);
+  const DigestLine(this.symbol, this.price, this.weekChange, this.currency, this.earnings, {this.headline, this.url});
+
+  /// A hét legfrissebb híre a részvényről (csak a legnagyobb mozgásoknál).
+  final String? headline;
+  final String? url;
 
   final String symbol;
   final double price;
