@@ -2145,4 +2145,51 @@ class AppLocalizationsKu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ji lûtkeyê $percent daket';
   }
+
+  @override
+  String get sectionInsiders => 'Danûstandinên însayderan';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kirîn',
+      one: '1 kirîn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count firotin',
+      one: '1 firotin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Safî: $shares pişk';
+  }
+
+  @override
+  String get insiderBuy => 'Kirî';
+
+  @override
+  String get insiderSell => 'Firotî';
+
+  @override
+  String get insiderHint =>
+      'Kirîn û firotinên rêveber û derhêneran li bazara vekirî di 90 rojên dawî de (SEC Form 4). Bikaranîna opsiyonan û xelatên pişkan nayên hesibandin.';
+
+  @override
+  String get insiderNone =>
+      'Di 90 rojên dawî de li bazara vekirî tu kirîn an firotina însayderan tune.';
+
+  @override
+  String get analystTrend => 'Nêrîn meh bi meh çawa guherîn';
 }

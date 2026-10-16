@@ -2146,4 +2146,51 @@ class AppLocalizationsKy extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol чокудан $percent түштү';
   }
+
+  @override
+  String get sectionInsiders => 'Инсайдердик бүтүмдөр';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сатып алуу',
+      one: '1 сатып алуу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сатуу',
+      one: '1 сатуу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Таза: $shares акция';
+  }
+
+  @override
+  String get insiderBuy => 'Сатып алынды';
+
+  @override
+  String get insiderSell => 'Сатылды';
+
+  @override
+  String get insiderHint =>
+      'Акыркы 90 күндө жетекчилер жана директорлор тарабынан ачык рынокто жасалган сатып алуулар жана сатуулар (SEC Form 4). Опциондорду аткаруу жана акция менен сыйлоо эсептелбейт.';
+
+  @override
+  String get insiderNone =>
+      'Акыркы 90 күндө ачык рынокто инсайдердик сатып алуу же сатуу болгон жок.';
+
+  @override
+  String get analystTrend => 'Пикирлер айдан айга кантип өзгөрдү';
 }

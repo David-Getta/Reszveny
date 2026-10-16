@@ -2153,4 +2153,51 @@ class AppLocalizationsFr extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol a reculé de $percent depuis son sommet';
   }
+
+  @override
+  String get sectionInsiders => 'Transactions d\'initiés';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count achats',
+      one: '1 achat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ventes',
+      one: '1 vente',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net : $shares actions';
+  }
+
+  @override
+  String get insiderBuy => 'Acheté';
+
+  @override
+  String get insiderSell => 'Vendu';
+
+  @override
+  String get insiderHint =>
+      'Achats et ventes sur le marché ouvert par les dirigeants et administrateurs au cours des 90 derniers jours (SEC Form 4). Les levées d\'options et attributions d\'actions ne sont pas prises en compte.';
+
+  @override
+  String get insiderNone =>
+      'Aucun achat ni vente d\'initiés sur le marché ouvert au cours des 90 derniers jours.';
+
+  @override
+  String get analystTrend => 'Évolution des avis, mois par mois';
 }

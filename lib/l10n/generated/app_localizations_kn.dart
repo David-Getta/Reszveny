@@ -2150,4 +2150,51 @@ class AppLocalizationsKn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ಗರಿಷ್ಠದಿಂದ $percent ಇಳಿದಿದೆ';
   }
+
+  @override
+  String get sectionInsiders => 'ಇನ್‌ಸೈಡರ್ ವಹಿವಾಟುಗಳು';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಖರೀದಿಗಳು',
+      one: '1 ಖರೀದಿ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಮಾರಾಟಗಳು',
+      one: '1 ಮಾರಾಟ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ನಿವ್ವಳ: $shares ಷೇರುಗಳು';
+  }
+
+  @override
+  String get insiderBuy => 'ಖರೀದಿ';
+
+  @override
+  String get insiderSell => 'ಮಾರಾಟ';
+
+  @override
+  String get insiderHint =>
+      'ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಾಹಕರು ಮತ್ತು ನಿರ್ದೇಶಕರು ಮುಕ್ತ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಮಾಡಿದ ಖರೀದಿ ಮತ್ತು ಮಾರಾಟಗಳು (SEC Form 4). ಆಯ್ಕೆ (option) ಬಳಕೆ ಮತ್ತು ಷೇರು ಪುರಸ್ಕಾರಗಳನ್ನು ಎಣಿಸಲಾಗುವುದಿಲ್ಲ.';
+
+  @override
+  String get insiderNone =>
+      'ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಯಾವುದೇ ಇನ್‌ಸೈಡರ್ ಖರೀದಿ ಅಥವಾ ಮಾರಾಟ ನಡೆದಿಲ್ಲ.';
+
+  @override
+  String get analystTrend => 'ತಿಂಗಳಿಂದ ತಿಂಗಳಿಗೆ ಅಭಿಪ್ರಾಯಗಳು ಹೇಗೆ ಬದಲಾದವು';
 }

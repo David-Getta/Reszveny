@@ -29,6 +29,7 @@ class InsiderSummary {
     required this.sells,
     required this.netShares,
     this.notable = const [],
+    this.openMarket = const [],
   });
 
   final int windowDays;
@@ -42,6 +43,10 @@ class InsiderSummary {
 
   /// A legnagyobb ügyletek (legfeljebb néhány).
   final List<InsiderTrade> notable;
+
+  /// A legnagyobb nyílt piaci vételek és eladások (a részvény oldalának
+  /// kártyájához; az opciólehívás és a juttatás nem számít).
+  final List<InsiderTrade> openMarket;
 
   Map<String, dynamic> toJson() => {
     'window_days': windowDays,

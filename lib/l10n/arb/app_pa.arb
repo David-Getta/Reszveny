@@ -575,5 +575,14 @@
   "alertTrailingHint": "ਕੀਮਤ ਦੇ ਨਾਲ ਉੱਪਰ ਚੱਲਦਾ ਹੈ: ਸੈੱਟ ਕਰਨ ਤੋਂ ਬਾਅਦ ਦੇ ਸਭ ਤੋਂ ਉੱਚੇ ਪੱਧਰ ਤੋਂ ਕੀਮਤ ਇੰਨੀ ਡਿੱਗਣ 'ਤੇ ਸੂਚਨਾ ਦਿੰਦਾ ਹੈ।",
   "alertDescTrailing": "ਸਿਖਰ ਤੋਂ {percent} ਗਿਰਾਵਟ",
   "alertTrailingPeak": "ਹੁਣ ਤੱਕ ਦਾ ਸਿਖਰ: {price}",
-  "alertHitTrailing": "{symbol} ਸਿਖਰ ਤੋਂ {percent} ਡਿੱਗਿਆ"
+  "alertHitTrailing": "{symbol} ਸਿਖਰ ਤੋਂ {percent} ਡਿੱਗਿਆ",
+  "sectionInsiders": "ਇਨਸਾਈਡਰ ਲੈਣ-ਦੇਣ",
+  "insiderBuys": "{count, plural, =1{1 ਖਰੀਦ} other{{count} ਖਰੀਦਾਂ}}",
+  "insiderSells": "{count, plural, =1{1 ਵਿਕਰੀ} other{{count} ਵਿਕਰੀਆਂ}}",
+  "insiderNet": "ਸ਼ੁੱਧ: {shares} ਸ਼ੇਅਰ",
+  "insiderBuy": "ਖਰੀਦੇ",
+  "insiderSell": "ਵੇਚੇ",
+  "insiderHint": "ਪਿਛਲੇ 90 ਦਿਨਾਂ ਵਿੱਚ ਕਾਰਜਕਾਰੀ ਅਧਿਕਾਰੀਆਂ ਅਤੇ ਡਾਇਰੈਕਟਰਾਂ ਵੱਲੋਂ ਖੁੱਲ੍ਹੇ ਬਾਜ਼ਾਰ ਵਿੱਚ ਕੀਤੀਆਂ ਖਰੀਦਾਂ ਅਤੇ ਵਿਕਰੀਆਂ (SEC Form 4)। ਆਪਸ਼ਨ ਵਰਤੋਂ ਅਤੇ ਸ਼ੇਅਰ ਇਨਾਮ ਗਿਣੇ ਨਹੀਂ ਜਾਂਦੇ।",
+  "insiderNone": "ਪਿਛਲੇ 90 ਦਿਨਾਂ ਵਿੱਚ ਖੁੱਲ੍ਹੇ ਬਾਜ਼ਾਰ ਵਿੱਚ ਕੋਈ ਇਨਸਾਈਡਰ ਖਰੀਦ ਜਾਂ ਵਿਕਰੀ ਨਹੀਂ।",
+  "analystTrend": "ਮਹੀਨਾ-ਦਰ-ਮਹੀਨਾ ਰਾਏ ਕਿਵੇਂ ਬਦਲੀ"
 }

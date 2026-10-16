@@ -101,6 +101,19 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return parseAnalysisExtras(symbol, calendar: cal, now: today).nextEarnings;
   }
 
+  /// A bennfentes ügyletek az elmúlt 90 napból (egy hívás), a részvény oldalához.
+  @override
+  Future<InsiderSummary?> insiders(String symbol, {DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    final r = await _get('/stock/insider-transactions', {
+      'symbol': symbol,
+      'from': d(today.subtract(const Duration(days: 90))),
+      'to': d(today),
+    });
+    return parseAnalysisExtras(symbol, insider: r, now: today).insider;
+  }
+
   /// Az EPS-történet és a gyorsjelentés-naptár (két hívás, egymástól függetlenül
   /// hibatűrően), a részvény oldalának „Gyorsjelentések” kártyájához.
   @override
@@ -170,6 +183,7 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
           sells: sells,
           netShares: net,
           notable: trades.take(5).toList(),
+          openMarket: trades.where((t) => t.code == 'P' || t.code == 'S').take(5).toList(),
         );
       }
     }
@@ -487,18 +501,34 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return FinancialStatements(symbol: symbol, years: unique);
   }
 
+  /// A legutóbbi havi összesítés; az előző (legfeljebb [consensusMonths] − 1) hónap a [AnalystConsensus.history]-ban.
   static AnalystConsensus? parseConsensus(List j) {
-    if (j.isEmpty) return null;
-    final latest = (j.first as Map).cast<String, dynamic>();
+    final months = [
+      for (final e in j.whereType<Map>())
+        AnalystConsensus(
+          period: _date(e['period']) ?? DateTime.now(),
+          strongBuy: (e['strongBuy'] as num?)?.toInt() ?? 0,
+          buy: (e['buy'] as num?)?.toInt() ?? 0,
+          hold: (e['hold'] as num?)?.toInt() ?? 0,
+          sell: (e['sell'] as num?)?.toInt() ?? 0,
+          strongSell: (e['strongSell'] as num?)?.toInt() ?? 0,
+        ),
+    ]..sort((a, b) => b.period.compareTo(a.period));
+    if (months.isEmpty) return null;
+    final l = months.first;
     return AnalystConsensus(
-      period: _date(latest['period']) ?? DateTime.now(),
-      strongBuy: (latest['strongBuy'] as num?)?.toInt() ?? 0,
-      buy: (latest['buy'] as num?)?.toInt() ?? 0,
-      hold: (latest['hold'] as num?)?.toInt() ?? 0,
-      sell: (latest['sell'] as num?)?.toInt() ?? 0,
-      strongSell: (latest['strongSell'] as num?)?.toInt() ?? 0,
+      period: l.period,
+      strongBuy: l.strongBuy,
+      buy: l.buy,
+      hold: l.hold,
+      sell: l.sell,
+      strongSell: l.strongSell,
+      history: months.skip(1).take(consensusMonths - 1).toList(),
     );
   }
+
+  /// Ennyi hónap látszik az elemzői vélemények alakulásán.
+  static const consensusMonths = 4;
 
   static double? _d(Object? v) {
     if (v == null) return null;

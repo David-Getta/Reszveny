@@ -575,5 +575,14 @@
   "alertTrailingHint": "Suit le cours à la hausse : l’alerte se déclenche quand le cours recule d’autant depuis son plus haut atteint depuis sa création.",
   "alertDescTrailing": "Recul de {percent} depuis le sommet",
   "alertTrailingPeak": "plus haut atteint : {price}",
-  "alertHitTrailing": "{symbol} a reculé de {percent} depuis son sommet"
+  "alertHitTrailing": "{symbol} a reculé de {percent} depuis son sommet",
+  "sectionInsiders": "Transactions d'initiés",
+  "insiderBuys": "{count, plural, =1{1 achat} other{{count} achats}}",
+  "insiderSells": "{count, plural, =1{1 vente} other{{count} ventes}}",
+  "insiderNet": "Net : {shares} actions",
+  "insiderBuy": "Acheté",
+  "insiderSell": "Vendu",
+  "insiderHint": "Achats et ventes sur le marché ouvert par les dirigeants et administrateurs au cours des 90 derniers jours (SEC Form 4). Les levées d'options et attributions d'actions ne sont pas prises en compte.",
+  "insiderNone": "Aucun achat ni vente d'initiés sur le marché ouvert au cours des 90 derniers jours.",
+  "analystTrend": "Évolution des avis, mois par mois"
 }

@@ -2181,4 +2181,54 @@ class AppLocalizationsBs extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol je pala za $percent od vrha';
   }
+
+  @override
+  String get sectionInsiders => 'Insajderske transakcije';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kupovina',
+      few: '$count kupovine',
+      one: '$count kupovina',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count prodaja',
+      few: '$count prodaje',
+      one: '$count prodaja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Neto: $shares dionica';
+  }
+
+  @override
+  String get insiderBuy => 'Kupljeno';
+
+  @override
+  String get insiderSell => 'Prodano';
+
+  @override
+  String get insiderHint =>
+      'Kupovine i prodaje na otvorenom tržištu od strane rukovodilaca i direktora u posljednjih 90 dana (SEC Form 4). Izvršenja opcija i dodjele dionica se ne računaju.';
+
+  @override
+  String get insiderNone =>
+      'Nema insajderskih kupovina ni prodaja na otvorenom tržištu u posljednjih 90 dana.';
+
+  @override
+  String get analystTrend =>
+      'Kako su se mišljenja mijenjala iz mjeseca u mjesec';
 }

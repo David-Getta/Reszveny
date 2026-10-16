@@ -575,5 +575,14 @@
   "alertTrailingHint": "दामक संग ऊपर चलैत अछि: सेट कएलाक बादक सभसँ ऊँच स्तरसँ दाम एतेक खसलापर सूचना दैत अछि।",
   "alertDescTrailing": "शिखरसँ {percent} खसब",
   "alertTrailingPeak": "एखन धरिक शिखर: {price}",
-  "alertHitTrailing": "{symbol} शिखरसँ {percent} खसल"
+  "alertHitTrailing": "{symbol} शिखरसँ {percent} खसल",
+  "sectionInsiders": "इनसाइडर लेनदेन",
+  "insiderBuys": "{count, plural, =1{1 खरीद} other{{count} खरीद}}",
+  "insiderSells": "{count, plural, =1{1 बिक्री} other{{count} बिक्री}}",
+  "insiderNet": "शुद्ध: {shares} शेयर",
+  "insiderBuy": "कीनल",
+  "insiderSell": "बेचल",
+  "insiderHint": "पछिला 90 दिनमे अधिकारी आ निदेशक द्वारा खुजल बजारमे कएल गेल खरीद आ बिक्री (SEC Form 4)। ऑप्शनक प्रयोग आ शेयर पुरस्कार नहि गनल जाइत अछि।",
+  "insiderNone": "पछिला 90 दिनमे खुजल बजारमे कोनो इनसाइडर खरीद वा बिक्री नहि भेल।",
+  "analystTrend": "मास-दर-मास राय कोना बदलल"
 }

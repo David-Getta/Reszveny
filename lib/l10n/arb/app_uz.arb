@@ -575,5 +575,14 @@
   "alertTrailingHint": "Narxni yuqoriga kuzatib boradi: oʻrnatilgandan beri eng yuqori darajasidan narx shuncha tushsa, xabar beradi.",
   "alertDescTrailing": "Choʻqqidan {percent} tushish",
   "alertTrailingPeak": "hozirgacha choʻqqi: {price}",
-  "alertHitTrailing": "{symbol} choʻqqidan {percent} ga tushdi"
+  "alertHitTrailing": "{symbol} choʻqqidan {percent} ga tushdi",
+  "sectionInsiders": "Insayderlar bitimlari",
+  "insiderBuys": "{count, plural, =1{1 ta xarid} other{{count} ta xarid}}",
+  "insiderSells": "{count, plural, =1{1 ta sotuv} other{{count} ta sotuv}}",
+  "insiderNet": "Sof: {shares} aksiya",
+  "insiderBuy": "Sotib oldi",
+  "insiderSell": "Sotdi",
+  "insiderHint": "So‘nggi 90 kunda rahbarlar va direktorlar tomonidan ochiq bozorda amalga oshirilgan xaridlar va sotuvlar (SEC Form 4). Opsionlarni amalga oshirish va mukofot aksiyalari hisobga olinmaydi.",
+  "insiderNone": "So‘nggi 90 kunda ochiq bozorda insayderlarning xaridi yoki sotuvi bo‘lmagan.",
+  "analystTrend": "Fikrlar oyma-oy qanday o'zgardi"
 }

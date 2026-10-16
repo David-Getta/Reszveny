@@ -575,5 +575,14 @@
   "alertTrailingHint": "Chaninta wichayninpi qatin: churasqaykimanta aswan hanaq chaninmanta kay chhikata uraykuptin willasunki.",
   "alertDescTrailing": "Aswan hanaqmanta {percent} uraykuy",
   "alertTrailingPeak": "kunankama aswan hanaq: {price}",
-  "alertHitTrailing": "{symbol} aswan hanaqninmanta {percent} uraykurqan"
+  "alertHitTrailing": "{symbol} aswan hanaqninmanta {percent} uraykurqan",
+  "sectionInsiders": "Ukhupi runakunapa rantinakuynin",
+  "insiderBuys": "{count, plural, =1{1 rantiy} other{{count} rantiykuna}}",
+  "insiderSells": "{count, plural, =1{1 rantikuy} other{{count} rantikuykuna}}",
+  "insiderNet": "Llapan: {shares} accionkuna",
+  "insiderBuy": "Rantirqan",
+  "insiderSell": "Rantikurqan",
+  "insiderHint": "Kamachiqkunapa umalliqkunapawan kichasqa qhatupi rantisqankuna rantikusqankunapas qhipa 90 p'unchawkunapi (SEC Form 4). Opcionkunata llamk'achiy, qusqa accionkunapas mana yupasqachu.",
+  "insiderNone": "Qhipa 90 p'unchawkunapi kichasqa qhatupi ukhupi runakunapa mana rantiynin nitaq rantikuynin kanchu.",
+  "analystTrend": "Imaynatam yuyaykuna killanmanta killanman tikrarqan"
 }

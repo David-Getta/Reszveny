@@ -575,5 +575,14 @@
   "alertTrailingHint": "Bihayê ber bi jor ve dişopîne: dema ku biha ji asta xwe ya herî bilind ji dema ku te ew danî ewqas dakeve, hişyar dike.",
   "alertDescTrailing": "{percent} daketin ji lûtkeyê",
   "alertTrailingPeak": "lûtke heta niha: {price}",
-  "alertHitTrailing": "{symbol} ji lûtkeyê {percent} daket"
+  "alertHitTrailing": "{symbol} ji lûtkeyê {percent} daket",
+  "sectionInsiders": "Danûstandinên însayderan",
+  "insiderBuys": "{count, plural, =1{1 kirîn} other{{count} kirîn}}",
+  "insiderSells": "{count, plural, =1{1 firotin} other{{count} firotin}}",
+  "insiderNet": "Safî: {shares} pişk",
+  "insiderBuy": "Kirî",
+  "insiderSell": "Firotî",
+  "insiderHint": "Kirîn û firotinên rêveber û derhêneran li bazara vekirî di 90 rojên dawî de (SEC Form 4). Bikaranîna opsiyonan û xelatên pişkan nayên hesibandin.",
+  "insiderNone": "Di 90 rojên dawî de li bazara vekirî tu kirîn an firotina însayderan tune.",
+  "analystTrend": "Nêrîn meh bi meh çawa guherîn"
 }

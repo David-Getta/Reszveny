@@ -575,5 +575,14 @@
   "alertTrailingHint": "Mengikut harga naik: makluman berbunyi apabila harga jatuh sebanyak ini dari paras tertinggi sejak anda menetapkannya.",
   "alertDescTrailing": "Jatuh {percent} dari puncak",
   "alertTrailingPeak": "puncak setakat ini: {price}",
-  "alertHitTrailing": "{symbol} jatuh {percent} dari puncak"
+  "alertHitTrailing": "{symbol} jatuh {percent} dari puncak",
+  "sectionInsiders": "Urus niaga orang dalam",
+  "insiderBuys": "{count, plural, =1{1 belian} other{{count} belian}}",
+  "insiderSells": "{count, plural, =1{1 jualan} other{{count} jualan}}",
+  "insiderNet": "Bersih: {shares} saham",
+  "insiderBuy": "Beli",
+  "insiderSell": "Jual",
+  "insiderHint": "Belian dan jualan pasaran terbuka oleh eksekutif dan pengarah dalam tempoh 90 hari lalu (SEC Form 4). Pelaksanaan opsyen dan anugerah saham tidak dikira.",
+  "insiderNone": "Tiada belian atau jualan pasaran terbuka oleh orang dalam dalam tempoh 90 hari lalu.",
+  "analystTrend": "Bagaimana pandangan berubah dari bulan ke bulan"
 }

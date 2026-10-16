@@ -575,5 +575,14 @@
   "alertTrailingHint": "Бааны өйдө карай ээрчийт: баа коюлгандан берки эң жогорку деңгээлинен ушунча түшсө, эскертет.",
   "alertDescTrailing": "Чокудан {percent} төмөндөө",
   "alertTrailingPeak": "азырга чейинки чоку: {price}",
-  "alertHitTrailing": "{symbol} чокудан {percent} түштү"
+  "alertHitTrailing": "{symbol} чокудан {percent} түштү",
+  "sectionInsiders": "Инсайдердик бүтүмдөр",
+  "insiderBuys": "{count, plural, =1{1 сатып алуу} other{{count} сатып алуу}}",
+  "insiderSells": "{count, plural, =1{1 сатуу} other{{count} сатуу}}",
+  "insiderNet": "Таза: {shares} акция",
+  "insiderBuy": "Сатып алынды",
+  "insiderSell": "Сатылды",
+  "insiderHint": "Акыркы 90 күндө жетекчилер жана директорлор тарабынан ачык рынокто жасалган сатып алуулар жана сатуулар (SEC Form 4). Опциондорду аткаруу жана акция менен сыйлоо эсептелбейт.",
+  "insiderNone": "Акыркы 90 күндө ачык рынокто инсайдердик сатып алуу же сатуу болгон жок.",
+  "analystTrend": "Пикирлер айдан айга кантип өзгөрдү"
 }

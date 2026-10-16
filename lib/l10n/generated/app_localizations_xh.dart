@@ -2153,4 +2153,51 @@ class AppLocalizationsXh extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yehle nge-$percent ukusuka encotsheni';
   }
+
+  @override
+  String get sectionInsiders => 'Urhwebo lwabangaphakathi';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ukuthenga $count',
+      one: 'ukuthenga 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ukuthengisa $count',
+      one: 'ukuthengisa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Iyonke: izabelo $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Uthengile';
+
+  @override
+  String get insiderSell => 'Uthengisile';
+
+  @override
+  String get insiderHint =>
+      'Ukuthenga nokuthengisa kwimarike evulekileyo okwenziwe ngabaphathi nabalawuli kwiintsuku ezingama-90 ezidlulileyo (SEC Form 4). Ukusetyenziswa kweenketho (options) nezabelo ezinikelweyo azibalwa.';
+
+  @override
+  String get insiderNone =>
+      'Akukho kuthenga okanye kuthengisa kwabangaphakathi kwimarike evulekileyo kwiintsuku ezingama-90 ezidlulileyo.';
+
+  @override
+  String get analystTrend => 'Indlela izimvo eziguquke ngayo inyanga nenyanga';
 }

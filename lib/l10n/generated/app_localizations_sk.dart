@@ -2200,4 +2200,55 @@ class AppLocalizationsSk extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol klesla o $percent od vrcholu';
   }
+
+  @override
+  String get sectionInsiders => 'Transakcie insiderov';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nákupov',
+      many: '$count nákupu',
+      few: '$count nákupy',
+      one: '1 nákup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count predajov',
+      many: '$count predaja',
+      few: '$count predaje',
+      one: '1 predaj',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Netto: $shares akcií';
+  }
+
+  @override
+  String get insiderBuy => 'Kúpené';
+
+  @override
+  String get insiderSell => 'Predané';
+
+  @override
+  String get insiderHint =>
+      'Nákupy a predaje na otvorenom trhu vykonané manažérmi a členmi predstavenstva za posledných 90 dní (SEC Form 4). Uplatnenie opcií a pridelené akcie sa nezapočítavajú.';
+
+  @override
+  String get insiderNone =>
+      'Za posledných 90 dní žiadne nákupy ani predaje insiderov na otvorenom trhu.';
+
+  @override
+  String get analystTrend => 'Ako sa názory menili mesiac po mesiaci';
 }

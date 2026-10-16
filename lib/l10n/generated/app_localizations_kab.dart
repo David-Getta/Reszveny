@@ -2142,4 +2142,51 @@ class AppLocalizationsKab extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yeɣli s $percent seg tqacuct';
   }
+
+  @override
+  String get sectionInsiders => 'Aɣ d uzenzi n yimdebbren';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aɣ: $count',
+      one: 'Aɣ: 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Azenzi: $count',
+      one: 'Azenzi: 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Ayen yeqqimen: $shares n yiksyunen';
+  }
+
+  @override
+  String get insiderBuy => 'Yuɣ';
+
+  @override
+  String get insiderSell => 'Yenza';
+
+  @override
+  String get insiderHint =>
+      'Aɣ d uzenzi deg ssuq yeldin sɣur imdebbren d yinemhalen deg 90 n wussan ineggura (SEC Form 4). Aseqdec n tixtiṛiyin d yiksyunen yettunefken ur ttwaḥesben ara.';
+
+  @override
+  String get insiderNone =>
+      'Ulac aɣ neɣ azenzi n yimdebbren deg ssuq yeldin deg 90 n wussan ineggura.';
+
+  @override
+  String get analystTrend => 'Amek i beddlent tmuɣliwin seg wayyur ɣer wayyur';
 }

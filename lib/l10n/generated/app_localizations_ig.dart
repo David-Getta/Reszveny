@@ -2139,4 +2139,51 @@ class AppLocalizationsIg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol dara $percent site n\'elu ya';
   }
+
+  @override
+  String get sectionInsiders => 'Azụmahịa ndị isi ụlọ ọrụ';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ịzụta $count',
+      one: 'ịzụta 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ire $count',
+      one: 'ire 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Ngụkọta: shares $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Zụtara';
+
+  @override
+  String get insiderSell => 'Rere';
+
+  @override
+  String get insiderHint =>
+      'Ịzụta na ire n\'ahịa mepere emepe nke ndị isi na ndị nduzi mere n\'ụbọchị 90 gara aga (SEC Form 4). Anaghị agụnye iji option na shares e nyere dị ka onyinye.';
+
+  @override
+  String get insiderNone =>
+      'Ọ dịghị ịzụta ma ọ bụ ire ndị isi n\'ahịa mepere emepe n\'ụbọchị 90 gara aga.';
+
+  @override
+  String get analystTrend => 'Otú echiche si gbanwee kwa ọnwa';
 }

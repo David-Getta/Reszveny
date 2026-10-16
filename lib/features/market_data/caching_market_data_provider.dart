@@ -165,4 +165,7 @@ class CachingMarketDataProvider extends MarketDataProvider {
 
   @override
   Future<EarningsOverview> earnings(String symbol) => inner.earnings(symbol);
+
+  @override
+  Future<InsiderSummary?> insiders(String symbol) => inner.insiders(symbol);
 }

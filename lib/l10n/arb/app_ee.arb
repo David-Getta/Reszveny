@@ -575,5 +575,14 @@
   "alertTrailingHint": "Edzia asixɔxɔ yome yi dzi: ena nyanya ne asixɔxɔ ɖiɖi alea tso eƒe kɔkɔƒe si wòɖo tso esime nèɖoe.",
   "alertDescTrailing": "{percent} ɖiɖi tso kɔkɔƒe",
   "alertTrailingPeak": "kɔkɔƒe va se ɖe fifia: {price}",
-  "alertHitTrailing": "{symbol} ɖiɖi {percent} tso eƒe kɔkɔƒe"
+  "alertHitTrailing": "{symbol} ɖiɖi {percent} tso eƒe kɔkɔƒe",
+  "sectionInsiders": "Kplɔlawo ƒe akpa ƒeƒle kple dzadzra",
+  "insiderBuys": "{count, plural, =1{ƒeƒle 1} other{ƒeƒle {count}}}",
+  "insiderSells": "{count, plural, =1{dzadzra 1} other{dzadzra {count}}}",
+  "insiderNet": "Esi susɔ: akpa {shares}",
+  "insiderBuy": "Eƒle",
+  "insiderSell": "Edzra",
+  "insiderHint": "Akpa siwo dɔwɔƒea ƒe kplɔlawo kple dzikpɔlawo ƒle alo dzra le asi me le ŋkeke 90 siwo va yi me (SEC Form 4). Míexlẽ option zazã kple akpa siwo wona wo abe nunana ene o.",
+  "insiderNone": "Kplɔlawo meƒle alo dzra akpa aɖeke le asi me le ŋkeke 90 siwo va yi me o.",
+  "analystTrend": "Alesi susuwo trɔ le ɣleti sia ɣleti me"
 }

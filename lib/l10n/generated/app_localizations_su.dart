@@ -2146,4 +2146,51 @@ class AppLocalizationsSu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol turun $percent ti puncak';
   }
+
+  @override
+  String get sectionInsiders => 'Transaksi urang jero';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pameseran',
+      one: '1 pameseran',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count penjualan',
+      one: '1 penjualan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Bersih: $shares saham';
+  }
+
+  @override
+  String get insiderBuy => 'Meuli';
+
+  @override
+  String get insiderSell => 'Ngajual';
+
+  @override
+  String get insiderHint =>
+      'Pameseran sareng penjualan di pasar kabuka ku eksekutif sareng diréktur dina 90 dinten panungtung (SEC Form 4). Palaksanaan opsi sareng hadiah saham henteu diitung.';
+
+  @override
+  String get insiderNone =>
+      'Teu aya pameseran atanapi penjualan urang jero di pasar kabuka dina 90 dinten panungtung.';
+
+  @override
+  String get analystTrend => 'Kumaha pamadegan robah ti bulan ka bulan';
 }

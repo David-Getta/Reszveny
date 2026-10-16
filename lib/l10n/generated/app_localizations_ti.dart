@@ -2107,4 +2107,51 @@ class AppLocalizationsTi extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ካብ ጫፉ $percent ወሪዱ';
   }
+
+  @override
+  String get sectionInsiders => 'ንግዲ ውሽጣውያን';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ዕድጊታት',
+      one: '1 ዕድጊት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መሸጣታት',
+      one: '1 መሸጣ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ጽሩይ: $shares ኣክሲዮናት';
+  }
+
+  @override
+  String get insiderBuy => 'ተዓዲጉ';
+
+  @override
+  String get insiderSell => 'ተሸይጡ';
+
+  @override
+  String get insiderHint =>
+      'ኣብ ዝሓለፉ 90 መዓልታት ብፈጸምትን ዳይረክተራትን ኣብ ክፉት ዕዳጋ ዝተገብሩ ዕድጊታትን መሸጣታትን (SEC Form 4)። ምትግባር ኦፕሽንን ሽልማት ኣክሲዮንን ኣይቑጸሩን።';
+
+  @override
+  String get insiderNone =>
+      'ኣብ ዝሓለፉ 90 መዓልታት ኣብ ክፉት ዕዳጋ ዝኾነ ዕድጊት ወይ መሸጣ ውሽጣውያን የለን።';
+
+  @override
+  String get analystTrend => 'ርእይቶታት ወርሒ ብወርሒ ከመይ ከም ዝተቐየሩ';
 }

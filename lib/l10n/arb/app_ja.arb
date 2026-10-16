@@ -575,5 +575,14 @@
   "alertTrailingHint": "価格の上昇に追随し、設定後の最高値からこの割合だけ下落したら通知します。",
   "alertDescTrailing": "高値から{percent}下落",
   "alertTrailingPeak": "これまでの高値：{price}",
-  "alertHitTrailing": "{symbol}は高値から{percent}下落しました"
+  "alertHitTrailing": "{symbol}は高値から{percent}下落しました",
+  "sectionInsiders": "インサイダー売買",
+  "insiderBuys": "{count, plural, =1{買い1件} other{買い{count}件}}",
+  "insiderSells": "{count, plural, =1{売り1件} other{売り{count}件}}",
+  "insiderNet": "差し引き：{shares}株",
+  "insiderBuy": "購入",
+  "insiderSell": "売却",
+  "insiderHint": "過去90日間に役員・取締役が公開市場で行った株式の購入と売却（SEC Form 4）。オプション行使や株式報酬は含みません。",
+  "insiderNone": "過去90日間、公開市場でのインサイダーによる購入・売却はありません。",
+  "analystTrend": "評価の月ごとの推移"
 }

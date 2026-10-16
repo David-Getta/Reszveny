@@ -575,5 +575,14 @@
   "alertTrailingHint": "Podąża za ceną w górę: alert włączy się, gdy cena spadnie o tyle od najwyższego poziomu od chwili ustawienia.",
   "alertDescTrailing": "Spadek o {percent} od szczytu",
   "alertTrailingPeak": "dotychczasowy szczyt: {price}",
-  "alertHitTrailing": "{symbol} spadł o {percent} od szczytu"
+  "alertHitTrailing": "{symbol} spadł o {percent} od szczytu",
+  "sectionInsiders": "Transakcje insiderów",
+  "insiderBuys": "{count, plural, =1{1 zakup} few{{count} zakupy} many{{count} zakupów} other{{count} zakupu}}",
+  "insiderSells": "{count, plural, =1{1 sprzedaż} few{{count} sprzedaże} many{{count} sprzedaży} other{{count} sprzedaży}}",
+  "insiderNet": "Netto: {shares} akcji",
+  "insiderBuy": "Kupno",
+  "insiderSell": "Sprzedaż",
+  "insiderHint": "Zakupy i sprzedaże na otwartym rynku dokonane przez członków zarządu i rady dyrektorów w ciągu ostatnich 90 dni (SEC Form 4). Wykonanie opcji i przyznane akcje nie są uwzględniane.",
+  "insiderNone": "Brak zakupów lub sprzedaży insiderów na otwartym rynku w ciągu ostatnich 90 dni.",
+  "analystTrend": "Jak zmieniały się opinie z miesiąca na miesiąc"
 }

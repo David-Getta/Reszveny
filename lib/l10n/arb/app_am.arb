@@ -575,5 +575,14 @@
   "alertTrailingHint": "ዋጋውን ወደ ላይ ይከተላል፦ ማንቂያውን ካዘጋጁበት ጊዜ ጀምሮ ከደረሰበት ከፍተኛ ደረጃ ዋጋው ይህን ያህል ሲወርድ ያሳውቃል።",
   "alertDescTrailing": "ከከፍተኛው {percent} ቅናሽ",
   "alertTrailingPeak": "እስካሁን ከፍተኛ፦ {price}",
-  "alertHitTrailing": "{symbol} ከከፍተኛው {percent} ወርዷል"
+  "alertHitTrailing": "{symbol} ከከፍተኛው {percent} ወርዷል",
+  "sectionInsiders": "የውስጥ አዋቂዎች ግብይት",
+  "insiderBuys": "{count, plural, =1{1 ግዢ} other{{count} ግዢዎች}}",
+  "insiderSells": "{count, plural, =1{1 ሽያጭ} other{{count} ሽያጮች}}",
+  "insiderNet": "የተጣራ: {shares} አክሲዮኖች",
+  "insiderBuy": "ገዛ",
+  "insiderSell": "ሸጠ",
+  "insiderHint": "ባለፉት 90 ቀናት በሥራ አስፈጻሚዎችና በዳይሬክተሮች በክፍት ገበያ የተደረጉ ግዢዎችና ሽያጮች (SEC Form 4)። የአማራጭ (option) አፈጻጸሞችና የአክሲዮን ሽልማቶች አይቆጠሩም።",
+  "insiderNone": "ባለፉት 90 ቀናት በክፍት ገበያ የውስጥ አዋቂዎች ግዢ ወይም ሽያጭ የለም።",
+  "analystTrend": "አስተያየቶች በየወሩ እንዴት እንደተለወጡ"
 }

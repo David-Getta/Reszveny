@@ -34,6 +34,9 @@ class _NoEarnings extends DemoMarketDataProvider {
 
   @override
   Future<EarningsOverview> earnings(String symbol) async => const EarningsOverview();
+
+  @override
+  Future<InsiderSummary?> insiders(String symbol) async => null;
 }
 
 AppServices _services(MarketDataProvider market) => AppServices(
@@ -105,9 +108,46 @@ void main() {
     expect(find.text('Expected EPS'), findsOneWidget);
   });
 
-  testWidgets('no earnings data: no card', (tester) async {
+  testWidgets('no earnings or insider data: no cards', (tester) async {
     await _openAapl(tester, _services(_NoEarnings()));
     expect(find.text('Apple Inc.'), findsWidgets);
     expect(find.byKey(const ValueKey('earnings-card')), findsNothing);
+    expect(find.byKey(const ValueKey('insiders-card')), findsNothing);
+  });
+
+  testWidgets('the insider trades card: purchases, sales, net and the largest open-market trades', (tester) async {
+    await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero)));
+    expect(find.byKey(const ValueKey('insiders-card')), findsOneWidget);
+    expect(find.text('Insider trades'), findsOneWidget);
+    expect(find.text('0 purchases'), findsOneWidget);
+    expect(find.text('3 sales'), findsOneWidget);
+    expect(find.text('Net: -42.00K shares'), findsOneWidget);
+    expect(find.text('Sold 30.00K'), findsOneWidget);
+    expect(find.text('Demo Insider'), findsOneWidget);
+    // Az elemzői vélemények alakulása: 3 korábbi hónap és a mostani.
+    expect(find.byKey(const ValueKey('consensus-trend')), findsOneWidget);
+    expect(find.text('How the views changed, month by month'), findsOneWidget);
+  });
+
+  test('Finnhub: open-market trades only (option exercises and awards left out)', () {
+    final s = FinnhubMarketDataProvider.parseAnalysisExtras(
+      'AAPL',
+      insider: {
+        'data': [
+          {'name': 'A', 'change': -50000, 'transactionCode': 'M', 'transactionDate': '2026-09-01'},
+          {'name': 'B', 'change': -20000, 'transactionCode': 'S', 'transactionDate': '2026-09-02'},
+          {
+            'name': 'C',
+            'change': 1000,
+            'transactionCode': 'P',
+            'transactionDate': '2026-09-03',
+            'transactionPrice': 200,
+          },
+        ],
+      },
+    ).insider!;
+    expect((s.buys, s.sells, s.netShares), (1, 1, -19000.0));
+    expect(s.openMarket.map((t) => t.name), ['B', 'C']);
+    expect(s.notable.first.name, 'A');
   });
 }

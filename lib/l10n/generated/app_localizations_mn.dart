@@ -2144,4 +2144,51 @@ class AppLocalizationsMn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol оргилоосоо $percent унлаа';
   }
+
+  @override
+  String get sectionInsiders => 'Дотоод этгээдийн арилжаа';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count худалдан авалт',
+      one: '1 худалдан авалт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count борлуулалт',
+      one: '1 борлуулалт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Цэвэр: $shares хувьцаа';
+  }
+
+  @override
+  String get insiderBuy => 'Авсан';
+
+  @override
+  String get insiderSell => 'Зарсан';
+
+  @override
+  String get insiderHint =>
+      'Сүүлийн 90 хоногт удирдах албан тушаалтан болон ТУЗ-ийн гишүүдийн нээлттэй зах зээл дээр хийсэн худалдан авалт, борлуулалт (SEC Form 4). Опцион хэрэгжүүлэлт болон хувьцааны шагналыг тооцохгүй.';
+
+  @override
+  String get insiderNone =>
+      'Сүүлийн 90 хоногт дотоод этгээдийн нээлттэй зах зээл дээрх худалдан авалт, борлуулалт байхгүй.';
+
+  @override
+  String get analystTrend => 'Санал бодол сар бүр хэрхэн өөрчлөгдсөн';
 }

@@ -790,6 +790,18 @@ void main() {
     await tester.ensureVisible(find.byKey(const ValueKey('earnings-card')));
     await tester.pumpAndSettle();
     await _shot(tester, 'earnings_phone_hu');
+    await tester.ensureVisible(find.byKey(const ValueKey('insiders-card')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'insiders_phone_hu');
+    final trend = find.byKey(const ValueKey('consensus-trend'));
+    for (var i = 0; i < 40 && trend.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(trend);
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 250));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'consensus_trend_phone_hu');
   });
 
   testWidgets('favorites page and news on a phone (hungarian)', (tester) async {

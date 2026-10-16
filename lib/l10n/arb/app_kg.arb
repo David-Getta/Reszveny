@@ -575,5 +575,14 @@
   "alertTrailingHint": "Yo ke landa ntalu na zulu: yo ke zabisa kana ntalu me kulumuka mpidina katuka na kitezo ya zulu kibeni banda ntangu nge tulaka yo.",
   "alertDescTrailing": "{percent} kukulumuka katuka na nsongi",
   "alertTrailingPeak": "nsongi tii ntangu yai: {price}",
-  "alertHitTrailing": "{symbol} ikulumukidi {percent} katuka na nsongi"
+  "alertHitTrailing": "{symbol} ikulumukidi {percent} katuka na nsongi",
+  "sectionInsiders": "Mumbongo ya bamfumu ya kompani",
+  "insiderBuys": "{count, plural, =1{1 kusumba} other{{count} kusumba}}",
+  "insiderSells": "{count, plural, =1{1 kuteka} other{{count} kuteka}}",
+  "insiderNet": "Yonso: action {shares}",
+  "insiderBuy": "Sumbaka",
+  "insiderSell": "Tekaka",
+  "insiderHint": "Kusumba ti kuteka na zandu ya kukangula ya bamfumu ti ba-directeur na bilumbu 90 ya me luta (SEC Form 4). Kusadila ba-option ti ba-action ya bo kepesa ve na kutanga.",
+  "insiderNone": "Kusumba to kuteka ya bamfumu na zandu ya kukangula ve na bilumbu 90 ya me luta.",
+  "analystTrend": "Mutindu mabanza me sobaka konso ngonda"
 }

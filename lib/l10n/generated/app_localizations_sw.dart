@@ -2144,4 +2144,51 @@ class AppLocalizationsSw extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol imeshuka $percent kutoka kilele';
   }
+
+  @override
+  String get sectionInsiders => 'Biashara ya watu wa ndani';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ununuzi $count',
+      one: 'ununuzi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mauzo $count',
+      one: 'mauzo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Halisi: hisa $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Alinunua';
+
+  @override
+  String get insiderSell => 'Aliuza';
+
+  @override
+  String get insiderHint =>
+      'Ununuzi na mauzo katika soko huria yaliyofanywa na watendaji na wakurugenzi katika siku 90 zilizopita (SEC Form 4). Utekelezaji wa chaguo (options) na hisa za tuzo hauhesabiwi.';
+
+  @override
+  String get insiderNone =>
+      'Hakuna ununuzi wala mauzo ya watu wa ndani katika soko huria katika siku 90 zilizopita.';
+
+  @override
+  String get analystTrend => 'Jinsi maoni yalivyobadilika mwezi baada ya mwezi';
 }

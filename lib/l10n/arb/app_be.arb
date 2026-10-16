@@ -575,5 +575,14 @@
   "alertTrailingHint": "Сочыць за цаной уверх: апавяшчае, калі цана ўпадзе на столькі ад найвышэйшага ўзроўню з моманту ўстаноўкі.",
   "alertDescTrailing": "Падзенне на {percent} ад піку",
   "alertTrailingPeak": "пік на дадзены момант: {price}",
-  "alertHitTrailing": "{symbol} упала на {percent} ад піку"
+  "alertHitTrailing": "{symbol} упала на {percent} ад піку",
+  "sectionInsiders": "Інсайдарскія здзелкі",
+  "insiderBuys": "{count, plural, one{{count} купля} few{{count} куплі} many{{count} купляў} other{{count} куплі}}",
+  "insiderSells": "{count, plural, one{{count} продаж} few{{count} продажы} many{{count} продажаў} other{{count} продажу}}",
+  "insiderNet": "Нета: {shares} акцый",
+  "insiderBuy": "Куплена",
+  "insiderSell": "Прададзена",
+  "insiderHint": "Купля і продаж на адкрытым рынку кіраўнікамі і дырэктарамі за апошнія 90 дзён (SEC Form 4). Выкананне апцыёнаў і ўзнагароды акцыямі не ўлічваюцца.",
+  "insiderNone": "За апошнія 90 дзён інсайдары не куплялі і не прадавалі акцыі на адкрытым рынку.",
+  "analystTrend": "Як змяняліся меркаванні месяц за месяцам"
 }

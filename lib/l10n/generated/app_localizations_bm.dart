@@ -2141,4 +2141,51 @@ class AppLocalizationsBm extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol jiginna $percent ka bɔ a sanfɛla la';
   }
+
+  @override
+  String get sectionInsiders => 'Ɲɛmɔgɔw ka aksiyɔn sanni ni feereli';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sanni $count',
+      one: 'sanni 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'feereli $count',
+      one: 'feereli 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'A tɔ: aksiyɔn $shares';
+  }
+
+  @override
+  String get insiderBuy => 'A sanna';
+
+  @override
+  String get insiderSell => 'A feerela';
+
+  @override
+  String get insiderHint =>
+      'Ɲɛmɔgɔw ni ɲɛmaaw ka sanni ni feereli sugu la tile 90 laban na (SEC Form 4). Option baarakɛli ni aksiyɔn sɔrɔlenw tɛ jate.';
+
+  @override
+  String get insiderNone =>
+      'Ɲɛmɔgɔw ma aksiyɔn san wala ka a feere sugu la tile 90 laban na.';
+
+  @override
+  String get analystTrend => 'Hakilinaw yɛlɛmana cogo min na kalo o kalo';
 }

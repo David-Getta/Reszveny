@@ -575,5 +575,14 @@
   "alertTrailingHint": "隨價格上升跟蹤：價格由設定以來的最高位回落此幅度時提醒。",
   "alertDescTrailing": "從高位回落 {percent}",
   "alertTrailingPeak": "至今最高：{price}",
-  "alertHitTrailing": "{symbol} 從高位回落 {percent}"
+  "alertHitTrailing": "{symbol} 從高位回落 {percent}",
+  "sectionInsiders": "內部人士交易",
+  "insiderBuys": "{count, plural, =1{1 宗買入} other{{count} 宗買入}}",
+  "insiderSells": "{count, plural, =1{1 宗賣出} other{{count} 宗賣出}}",
+  "insiderNet": "淨額：{shares} 股",
+  "insiderBuy": "買入",
+  "insiderSell": "賣出",
+  "insiderHint": "過去 90 日內行政人員及董事在公開市場的買賣（SEC Form 4）。不包括行使期權及股份獎勵。",
+  "insiderNone": "過去 90 日內沒有內部人士在公開市場買入或賣出。",
+  "analystTrend": "觀點逐月變化"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ngetutaké rega munggah: pènget muni yèn rega mudhun semono saka titik paling dhuwur wiwit kowé masang.",
   "alertDescTrailing": "Mudhun {percent} saka pucuk",
   "alertTrailingPeak": "pucuk nganti saiki: {price}",
-  "alertHitTrailing": "{symbol} mudhun {percent} saka pucuké"
+  "alertHitTrailing": "{symbol} mudhun {percent} saka pucuké",
+  "sectionInsiders": "Transaksi wong njero",
+  "insiderBuys": "{count, plural, =1{1 tukon} other{{count} tukon}}",
+  "insiderSells": "{count, plural, =1{1 dodolan} other{{count} dodolan}}",
+  "insiderNet": "Resik: {shares} saham",
+  "insiderBuy": "Dituku",
+  "insiderSell": "Didol",
+  "insiderHint": "Tukon lan dodolan ing pasar terbuka dening eksekutif lan direktur sajrone 90 dina pungkasan (SEC Form 4). Panggunaan opsi lan paweh saham ora diétung.",
+  "insiderNone": "Ora ana tukon utawa dodolan wong njero ing pasar terbuka sajrone 90 dina pungkasan.",
+  "analystTrend": "Kepiye panemu owah saben sasi"
 }

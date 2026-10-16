@@ -575,5 +575,14 @@
   "alertTrailingHint": "ଦର ଉପରକୁ ଗଲେ ପଛେ ପଛେ ଯାଏ: ସେଟ କରିବା ପରଠାରୁ ସର୍ବୋଚ୍ଚ ସ୍ତରରୁ ଦର ଏତିକି ଖସିଲେ ଜଣାଏ।",
   "alertDescTrailing": "ଶିଖରରୁ {percent} ଖସିବା",
   "alertTrailingPeak": "ଏପର୍ଯ୍ୟନ୍ତ ଶିଖର: {price}",
-  "alertHitTrailing": "{symbol} ଶିଖରରୁ {percent} ଖସିଲା"
+  "alertHitTrailing": "{symbol} ଶିଖରରୁ {percent} ଖସିଲା",
+  "sectionInsiders": "ଇନସାଇଡର କାରବାର",
+  "insiderBuys": "{count, plural, =1{1ଟି କ୍ରୟ} other{{count}ଟି କ୍ରୟ}}",
+  "insiderSells": "{count, plural, =1{1ଟି ବିକ୍ରୟ} other{{count}ଟି ବିକ୍ରୟ}}",
+  "insiderNet": "ନିଟ୍: {shares} ସେୟାର",
+  "insiderBuy": "କିଣିଲେ",
+  "insiderSell": "ବିକିଲେ",
+  "insiderHint": "ଗତ 90 ଦିନରେ କାର୍ଯ୍ୟନିର୍ବାହୀ ଓ ନିର୍ଦ୍ଦେଶକମାନଙ୍କ ଦ୍ୱାରା ଖୋଲା ବଜାରରେ କରାଯାଇଥିବା କ୍ରୟ ଓ ବିକ୍ରୟ (SEC Form 4)। ଅପସନ୍ ପ୍ରୟୋଗ ଓ ସେୟାର ପୁରସ୍କାର ଗଣନା କରାଯାଏ ନାହିଁ।",
+  "insiderNone": "ଗତ 90 ଦିନରେ ଖୋଲା ବଜାରରେ କୌଣସି ଇନସାଇଡର କ୍ରୟ କିମ୍ବା ବିକ୍ରୟ ନାହିଁ।",
+  "analystTrend": "ମାସକୁ ମାସ ମତାମତ କିପରି ବଦଳିଲା"
 }

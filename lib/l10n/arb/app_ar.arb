@@ -575,5 +575,14 @@
   "alertTrailingHint": "يتتبع السعر صعودًا: ينطلق التنبيه عندما ينخفض السعر بهذه النسبة عن أعلى مستوى بلغه منذ ضبطه.",
   "alertDescTrailing": "انخفاض {percent} عن الذروة",
   "alertTrailingPeak": "الذروة حتى الآن: {price}",
-  "alertHitTrailing": "انخفض {symbol} بنسبة {percent} عن ذروته"
+  "alertHitTrailing": "انخفض {symbol} بنسبة {percent} عن ذروته",
+  "sectionInsiders": "تداولات المطلعين",
+  "insiderBuys": "{count, plural, =1{عملية شراء واحدة} =2{عمليتا شراء} few{{count} عمليات شراء} many{{count} عملية شراء} other{{count} عملية شراء}}",
+  "insiderSells": "{count, plural, =1{عملية بيع واحدة} =2{عمليتا بيع} few{{count} عمليات بيع} many{{count} عملية بيع} other{{count} عملية بيع}}",
+  "insiderNet": "الصافي: {shares} سهم",
+  "insiderBuy": "اشترى",
+  "insiderSell": "باع",
+  "insiderHint": "عمليات الشراء والبيع في السوق المفتوحة من قبل المديرين التنفيذيين وأعضاء مجلس الإدارة خلال آخر 90 يومًا (SEC Form 4). لا تُحتسب ممارسة الخيارات ومنح الأسهم.",
+  "insiderNone": "لا توجد عمليات شراء أو بيع للمطلعين في السوق المفتوحة خلال آخر 90 يومًا.",
+  "analystTrend": "كيف تغيّرت الآراء شهرًا بعد شهر"
 }

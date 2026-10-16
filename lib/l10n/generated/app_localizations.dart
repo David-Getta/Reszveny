@@ -3792,6 +3792,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{symbol} fell {percent} from its peak'**
   String alertHitTrailing(String symbol, String percent);
+
+  /// Card title: shares bought and sold on the open market by the company's executives and directors.
+  ///
+  /// In en, this message translates to:
+  /// **'Insider trades'**
+  String get sectionInsiders;
+
+  /// No description provided for @insiderBuys.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 purchase} other{{count} purchases}}'**
+  String insiderBuys(int count);
+
+  /// No description provided for @insiderSells.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 sale} other{{count} sales}}'**
+  String insiderSells(int count);
+
+  /// Net number of shares insiders bought (+) or sold (−); shares is formatted like "−42K".
+  ///
+  /// In en, this message translates to:
+  /// **'Net: {shares} shares'**
+  String insiderNet(String shares);
+
+  /// No description provided for @insiderBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'Bought'**
+  String get insiderBuy;
+
+  /// No description provided for @insiderSell.
+  ///
+  /// In en, this message translates to:
+  /// **'Sold'**
+  String get insiderSell;
+
+  /// No description provided for @insiderHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Open-market purchases and sales by executives and directors in the last 90 days (SEC Form 4). Option exercises and share awards are not counted.'**
+  String get insiderHint;
+
+  /// No description provided for @insiderNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No open-market insider purchases or sales in the last 90 days.'**
+  String get insiderNone;
+
+  /// Caption above small stacked bars showing analysts' buy/hold/sell mix in each of the last months.
+  ///
+  /// In en, this message translates to:
+  /// **'How the views changed, month by month'**
+  String get analystTrend;
 }
 
 class _AppLocalizationsDelegate

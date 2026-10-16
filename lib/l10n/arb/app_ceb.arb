@@ -575,5 +575,14 @@
   "alertTrailingHint": "Mosunod sa presyo pataas: mopahibalo kung ang presyo mous-os niining kantidad gikan sa kinatas-ang lebel sukad gibutang nimo kini.",
   "alertDescTrailing": "{percent} pagkunhod gikan sa kinatas-an",
   "alertTrailingPeak": "kinatas-an hangtod karon: {price}",
-  "alertHitTrailing": "Mius-os ang {symbol} og {percent} gikan sa kinatas-an"
+  "alertHitTrailing": "Mius-os ang {symbol} og {percent} gikan sa kinatas-an",
+  "sectionInsiders": "Mga transaksyon sa insider",
+  "insiderBuys": "{count, plural, =1{1 ka pagpalit} other{{count} ka pagpalit}}",
+  "insiderSells": "{count, plural, =1{1 ka pagbaligya} other{{count} ka pagbaligya}}",
+  "insiderNet": "Net: {shares} ka share",
+  "insiderBuy": "Gipalit",
+  "insiderSell": "Gibaligya",
+  "insiderHint": "Mga pagpalit ug pagbaligya sa open market sa mga executive ug director sulod sa miaging 90 ka adlaw (SEC Form 4). Wala giihap ang paggamit sa option ug mga share award.",
+  "insiderNone": "Walay pagpalit o pagbaligya sa insider sa open market sulod sa miaging 90 ka adlaw.",
+  "analystTrend": "Giunsa pagbag-o sa mga panglantaw matag bulan"
 }

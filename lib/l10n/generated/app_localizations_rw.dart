@@ -2152,4 +2152,51 @@ class AppLocalizationsRw extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yamanutseho $percent kuva ku isonga';
   }
+
+  @override
+  String get sectionInsiders => 'Ubucuruzi bw\'abari imbere mu kigo';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kugura $count',
+      one: 'kugura 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kugurisha $count',
+      one: 'kugurisha 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Igisigaye: imigabane $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Yaguze';
+
+  @override
+  String get insiderSell => 'Yagurishije';
+
+  @override
+  String get insiderHint =>
+      'Kugura no kugurisha ku isoko rifunguye byakozwe n\'abayobozi n\'abagize inama y\'ubutegetsi mu minsi 90 ishize (SEC Form 4). Gukoresha uburenganzira bwo kugura (options) n\'imigabane yatanzwe nk\'ibihembo ntibibarwa.';
+
+  @override
+  String get insiderNone =>
+      'Nta kugura cyangwa kugurisha by\'abari imbere mu kigo ku isoko rifunguye mu minsi 90 ishize.';
+
+  @override
+  String get analystTrend => 'Uko ibitekerezo byahindutse buri kwezi';
 }

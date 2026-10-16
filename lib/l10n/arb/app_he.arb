@@ -575,5 +575,14 @@
   "alertTrailingHint": "עוקבת אחרי המחיר כלפי מעלה: ההתראה מופעלת כשהמחיר יורד בשיעור הזה מהשיא שלו מאז שהגדרת אותה.",
   "alertDescTrailing": "ירידה של {percent} מהשיא",
   "alertTrailingPeak": "השיא עד כה: {price}",
-  "alertHitTrailing": "{symbol} ירדה ב-{percent} מהשיא"
+  "alertHitTrailing": "{symbol} ירדה ב-{percent} מהשיא",
+  "sectionInsiders": "עסקאות בעלי עניין",
+  "insiderBuys": "{count, plural, =1{רכישה אחת} other{{count} רכישות}}",
+  "insiderSells": "{count, plural, =1{מכירה אחת} other{{count} מכירות}}",
+  "insiderNet": "נטו: {shares} מניות",
+  "insiderBuy": "נקנו",
+  "insiderSell": "נמכרו",
+  "insiderHint": "רכישות ומכירות בשוק הפתוח על ידי מנהלים ודירקטורים ב-90 הימים האחרונים (SEC Form 4). מימוש אופציות והענקות מניות אינם נכללים.",
+  "insiderNone": "אין רכישות או מכירות של בעלי עניין בשוק הפתוח ב-90 הימים האחרונים.",
+  "analystTrend": "איך השתנו הדעות מחודש לחודש"
 }

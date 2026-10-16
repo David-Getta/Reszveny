@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ọ na-eso ọnụahịa ka ọ na-arị elu: ọ ga-agwa gị mgbe ọnụahịa dara nke a site n'ọkwa kacha elu ya kemgbe i dobere ya.",
   "alertDescTrailing": "Ọdịda {percent} site n'elu",
   "alertTrailingPeak": "elu kacha ruo ugbu a: {price}",
-  "alertHitTrailing": "{symbol} dara {percent} site n'elu ya"
+  "alertHitTrailing": "{symbol} dara {percent} site n'elu ya",
+  "sectionInsiders": "Azụmahịa ndị isi ụlọ ọrụ",
+  "insiderBuys": "{count, plural, =1{ịzụta 1} other{ịzụta {count}}}",
+  "insiderSells": "{count, plural, =1{ire 1} other{ire {count}}}",
+  "insiderNet": "Ngụkọta: shares {shares}",
+  "insiderBuy": "Zụtara",
+  "insiderSell": "Rere",
+  "insiderHint": "Ịzụta na ire n'ahịa mepere emepe nke ndị isi na ndị nduzi mere n'ụbọchị 90 gara aga (SEC Form 4). Anaghị agụnye iji option na shares e nyere dị ka onyinye.",
+  "insiderNone": "Ọ dịghị ịzụta ma ọ bụ ire ndị isi n'ahịa mepere emepe n'ụbọchị 90 gara aga.",
+  "analystTrend": "Otú echiche si gbanwee kwa ọnwa"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "E dey follow price go up: e go alert you when price fall reach dis much from the highest point since you set am.",
   "alertDescTrailing": "{percent} fall from top",
   "alertTrailingPeak": "top so far: {price}",
-  "alertHitTrailing": "{symbol} don fall {percent} from top"
+  "alertHitTrailing": "{symbol} don fall {percent} from top",
+  "sectionInsiders": "Insider trade",
+  "insiderBuys": "{count, plural, =1{1 buy} other{{count} buy}}",
+  "insiderSells": "{count, plural, =1{1 sell} other{{count} sell}}",
+  "insiderNet": "Net: {shares} shares",
+  "insiderBuy": "Don buy",
+  "insiderSell": "Don sell",
+  "insiderHint": "Wetin oga dem and directors buy and sell for open market for di last 90 days (SEC Form 4). Option exercise and share award no dey inside.",
+  "insiderNone": "No insider buy or sell for open market for di last 90 days.",
+  "analystTrend": "How dia view take change, month by month"
 }

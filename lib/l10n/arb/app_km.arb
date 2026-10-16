@@ -575,5 +575,14 @@
   "alertTrailingHint": "តាមដានតម្លៃឡើងលើ៖ ជូនដំណឹងនៅពេលតម្លៃធ្លាក់ប៉ុណ្ណេះពីកម្រិតខ្ពស់បំផុតចាប់តាំងពីអ្នកកំណត់វា។",
   "alertDescTrailing": "ធ្លាក់ {percent} ពីកំពូល",
   "alertTrailingPeak": "កំពូលរហូតមកដល់ពេលនេះ៖ {price}",
-  "alertHitTrailing": "{symbol} បានធ្លាក់ {percent} ពីកំពូល"
+  "alertHitTrailing": "{symbol} បានធ្លាក់ {percent} ពីកំពូល",
+  "sectionInsiders": "ប្រតិបត្តិការអ្នកក្នុង",
+  "insiderBuys": "{count, plural, =1{ការទិញ 1} other{ការទិញ {count}}}",
+  "insiderSells": "{count, plural, =1{ការលក់ 1} other{ការលក់ {count}}}",
+  "insiderNet": "សុទ្ធ៖ {shares} ភាគហ៊ុន",
+  "insiderBuy": "បានទិញ",
+  "insiderSell": "បានលក់",
+  "insiderHint": "ការទិញ និងលក់នៅលើទីផ្សារបើកចំហដោយនាយកប្រតិបត្តិ និងអភិបាល ក្នុងរយៈពេល 90 ថ្ងៃចុងក្រោយ (SEC Form 4)។ ការប្រើប្រាស់ជម្រើស (option) និងការផ្តល់ភាគហ៊ុនជារង្វាន់ មិនត្រូវបានរាប់បញ្ចូលទេ។",
+  "insiderNone": "គ្មានការទិញ ឬលក់ដោយអ្នកក្នុងនៅលើទីផ្សារបើកចំហក្នុងរយៈពេល 90 ថ្ងៃចុងក្រោយទេ។",
+  "analystTrend": "របៀបដែលមតិបានផ្លាស់ប្តូរពីខែមួយទៅខែមួយ"
 }

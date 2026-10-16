@@ -575,5 +575,14 @@
   "alertTrailingHint": "Fiyatı yukarı doğru takip eder: fiyat, kurulduğundan beri ulaştığı en yüksek seviyeden bu kadar düştüğünde uyarır.",
   "alertDescTrailing": "Zirveden {percent} düşüş",
   "alertTrailingPeak": "şimdiye kadarki zirve: {price}",
-  "alertHitTrailing": "{symbol} zirveden {percent} düştü"
+  "alertHitTrailing": "{symbol} zirveden {percent} düştü",
+  "sectionInsiders": "İçeriden işlemler",
+  "insiderBuys": "{count, plural, =1{1 alım} other{{count} alım}}",
+  "insiderSells": "{count, plural, =1{1 satım} other{{count} satım}}",
+  "insiderNet": "Net: {shares} hisse",
+  "insiderBuy": "Aldı",
+  "insiderSell": "Sattı",
+  "insiderHint": "Son 90 günde yöneticiler ve yönetim kurulu üyelerinin açık piyasada yaptığı alım ve satımlar (SEC Form 4). Opsiyon kullanımları ve hisse ödülleri sayılmaz.",
+  "insiderNone": "Son 90 günde açık piyasada içeriden alım veya satım yok.",
+  "analystTrend": "Görüşlerin aydan aya değişimi"
 }

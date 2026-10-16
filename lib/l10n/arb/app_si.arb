@@ -575,5 +575,14 @@
   "alertTrailingHint": "මිල ඉහළ යන විට අනුගමනය කරයි: සැකසූ දා සිට ඉහළම මට්ටමේ සිට මිල මෙපමණ පහත වැටුණු විට දැනුම් දෙයි.",
   "alertDescTrailing": "උපරිමයෙන් {percent} පහත වැටීම",
   "alertTrailingPeak": "මෙතෙක් උපරිමය: {price}",
-  "alertHitTrailing": "{symbol} උපරිමයෙන් {percent}කින් පහත වැටුණි"
+  "alertHitTrailing": "{symbol} උපරිමයෙන් {percent}කින් පහත වැටුණි",
+  "sectionInsiders": "අභ්‍යන්තර ගනුදෙනු",
+  "insiderBuys": "{count, plural, =1{මිලදී ගැනීම් 1} other{මිලදී ගැනීම් {count}}}",
+  "insiderSells": "{count, plural, =1{විකුණුම් 1} other{විකුණුම් {count}}}",
+  "insiderNet": "ශුද්ධ: කොටස් {shares}",
+  "insiderBuy": "මිලදී ගත්තා",
+  "insiderSell": "විකුණුවා",
+  "insiderHint": "පසුගිය දින 90 තුළ විධායකයින් සහ අධ්‍යක්ෂවරුන් විවෘත වෙළඳපොළේ කළ මිලදී ගැනීම් සහ විකුණුම් (SEC Form 4). විකල්ප ක්‍රියාත්මක කිරීම් සහ කොටස් ප්‍රදාන ගණන් නොගැනේ.",
+  "insiderNone": "පසුගිය දින 90 තුළ විවෘත වෙළඳපොළේ අභ්‍යන්තර මිලදී ගැනීම් හෝ විකුණුම් නොමැත.",
+  "analystTrend": "මාසයෙන් මාසයට අදහස් වෙනස් වූ ආකාරය"
 }

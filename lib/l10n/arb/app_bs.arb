@@ -575,5 +575,14 @@
   "alertTrailingHint": "Prati cijenu naviše: upozorenje se oglasi kada cijena padne za ovoliko od najvišeg nivoa otkad ste ga postavili.",
   "alertDescTrailing": "Pad od {percent} od vrha",
   "alertTrailingPeak": "dosadašnji vrh: {price}",
-  "alertHitTrailing": "{symbol} je pala za {percent} od vrha"
+  "alertHitTrailing": "{symbol} je pala za {percent} od vrha",
+  "sectionInsiders": "Insajderske transakcije",
+  "insiderBuys": "{count, plural, one{{count} kupovina} few{{count} kupovine} other{{count} kupovina}}",
+  "insiderSells": "{count, plural, one{{count} prodaja} few{{count} prodaje} other{{count} prodaja}}",
+  "insiderNet": "Neto: {shares} dionica",
+  "insiderBuy": "Kupljeno",
+  "insiderSell": "Prodano",
+  "insiderHint": "Kupovine i prodaje na otvorenom tržištu od strane rukovodilaca i direktora u posljednjih 90 dana (SEC Form 4). Izvršenja opcija i dodjele dionica se ne računaju.",
+  "insiderNone": "Nema insajderskih kupovina ni prodaja na otvorenom tržištu u posljednjih 90 dana.",
+  "analystTrend": "Kako su se mišljenja mijenjala iz mjeseca u mjesec"
 }

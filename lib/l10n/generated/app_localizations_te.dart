@@ -2149,4 +2149,51 @@ class AppLocalizationsTe extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol గరిష్ఠం నుండి $percent పడింది';
   }
+
+  @override
+  String get sectionInsiders => 'ఇన్‌సైడర్ లావాదేవీలు';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count కొనుగోళ్లు',
+      one: '1 కొనుగోలు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అమ్మకాలు',
+      one: '1 అమ్మకం',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'నికరం: $shares షేర్లు';
+  }
+
+  @override
+  String get insiderBuy => 'కొన్నారు';
+
+  @override
+  String get insiderSell => 'అమ్మారు';
+
+  @override
+  String get insiderHint =>
+      'గత 90 రోజుల్లో ఎగ్జిక్యూటివ్‌లు, డైరెక్టర్లు ఓపెన్ మార్కెట్‌లో చేసిన కొనుగోళ్లు, అమ్మకాలు (SEC Form 4). ఆప్షన్ వినియోగాలు, షేర్ అవార్డులు లెక్కలోకి తీసుకోబడవు.';
+
+  @override
+  String get insiderNone =>
+      'గత 90 రోజుల్లో ఓపెన్ మార్కెట్‌లో ఇన్‌సైడర్ కొనుగోళ్లు లేదా అమ్మకాలు లేవు.';
+
+  @override
+  String get analystTrend => 'నెలనెలా అభిప్రాయాలు ఎలా మారాయి';
 }

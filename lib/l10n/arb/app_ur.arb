@@ -575,5 +575,14 @@
   "alertTrailingHint": "قیمت کے ساتھ اوپر چلتا ہے: سیٹ کرنے کے بعد کی بلند ترین سطح سے قیمت اتنی گرے تو اطلاع دیتا ہے۔",
   "alertDescTrailing": "چوٹی سے {percent} گراوٹ",
   "alertTrailingPeak": "اب تک کی چوٹی: {price}",
-  "alertHitTrailing": "{symbol} چوٹی سے {percent} گرا"
+  "alertHitTrailing": "{symbol} چوٹی سے {percent} گرا",
+  "sectionInsiders": "انسائیڈر لین دین",
+  "insiderBuys": "{count, plural, =1{1 خریداری} other{{count} خریداریاں}}",
+  "insiderSells": "{count, plural, =1{1 فروخت} other{{count} فروخت}}",
+  "insiderNet": "خالص: {shares} شیئرز",
+  "insiderBuy": "خریدے",
+  "insiderSell": "فروخت کیے",
+  "insiderHint": "گزشتہ 90 دنوں میں ایگزیکٹوز اور ڈائریکٹرز کی جانب سے اوپن مارکیٹ میں کی گئی خریداریاں اور فروخت (SEC Form 4)۔ آپشنز کا استعمال اور شیئر ایوارڈز شمار نہیں کیے جاتے۔",
+  "insiderNone": "گزشتہ 90 دنوں میں اوپن مارکیٹ میں کوئی انسائیڈر خریداری یا فروخت نہیں ہوئی۔",
+  "analystTrend": "ماہ بہ ماہ آراء کیسے بدلیں"
 }

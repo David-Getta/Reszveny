@@ -2142,4 +2142,51 @@ class AppLocalizationsBn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol শীর্ষ থেকে $percent নেমেছে';
   }
+
+  @override
+  String get sectionInsiders => 'ইনসাইডার লেনদেন';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি ক্রয়',
+      one: '1টি ক্রয়',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি বিক্রি',
+      one: '1টি বিক্রি',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'নিট: $shares শেয়ার';
+  }
+
+  @override
+  String get insiderBuy => 'কেনা হয়েছে';
+
+  @override
+  String get insiderSell => 'বিক্রি হয়েছে';
+
+  @override
+  String get insiderHint =>
+      'গত 90 দিনে নির্বাহী ও পরিচালকদের খোলা বাজারে ক্রয় ও বিক্রি (SEC Form 4)। অপশন প্রয়োগ ও শেয়ার পুরস্কার গণনা করা হয় না।';
+
+  @override
+  String get insiderNone =>
+      'গত 90 দিনে খোলা বাজারে কোনো ইনসাইডার ক্রয় বা বিক্রি হয়নি।';
+
+  @override
+  String get analystTrend => 'মাসে মাসে মতামত কীভাবে বদলেছে';
 }

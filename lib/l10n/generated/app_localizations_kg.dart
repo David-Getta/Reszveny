@@ -2151,4 +2151,51 @@ class AppLocalizationsKg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ikulumukidi $percent katuka na nsongi';
   }
+
+  @override
+  String get sectionInsiders => 'Mumbongo ya bamfumu ya kompani';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kusumba',
+      one: '1 kusumba',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kuteka',
+      one: '1 kuteka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Yonso: action $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Sumbaka';
+
+  @override
+  String get insiderSell => 'Tekaka';
+
+  @override
+  String get insiderHint =>
+      'Kusumba ti kuteka na zandu ya kukangula ya bamfumu ti ba-directeur na bilumbu 90 ya me luta (SEC Form 4). Kusadila ba-option ti ba-action ya bo kepesa ve na kutanga.';
+
+  @override
+  String get insiderNone =>
+      'Kusumba to kuteka ya bamfumu na zandu ya kukangula ve na bilumbu 90 ya me luta.';
+
+  @override
+  String get analystTrend => 'Mutindu mabanza me sobaka konso ngonda';
 }

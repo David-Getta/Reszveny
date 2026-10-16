@@ -575,5 +575,14 @@
   "alertTrailingHint": "Waxay la socotaa qiimaha kor u kaca: waxay ku ogeysiisaa marka qiimuhu intaas hoos uga dhaco heerkii ugu sarreeyay tan iyo markii aad dejisay.",
   "alertDescTrailing": "{percent} hoos u dhac heerka ugu sarreeya",
   "alertTrailingPeak": "heerka ugu sarreeya ilaa hadda: {price}",
-  "alertHitTrailing": "{symbol} wuxuu {percent} hoos uga dhacay heerkiisii ugu sarreeyay"
+  "alertHitTrailing": "{symbol} wuxuu {percent} hoos uga dhacay heerkiisii ugu sarreeyay",
+  "sectionInsiders": "Ganacsiga dadka gudaha",
+  "insiderBuys": "{count, plural, =1{1 iibsasho} other{{count} iibsasho}}",
+  "insiderSells": "{count, plural, =1{1 iibin} other{{count} iibin}}",
+  "insiderNet": "Saafi: {shares} saami",
+  "insiderBuy": "La iibsaday",
+  "insiderSell": "La iibiyay",
+  "insiderHint": "Iibsashada iyo iibinta suuqa furan ee ay sameeyeen maamulayaasha iyo agaasimayaasha 90-kii maalmood ee la soo dhaafay (SEC Form 4). Isticmaalka xulashooyinka (options) iyo saamiyada abaalmarinta lama tiriyo.",
+  "insiderNone": "Ma jiraan iibsasho ama iibin dadka gudaha ah oo suuqa furan ka dhacay 90-kii maalmood ee la soo dhaafay.",
+  "analystTrend": "Sida aragtiyuhu isu beddeleen bil ka bil"
 }

@@ -2137,4 +2137,51 @@ class AppLocalizationsVi extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol đã giảm $percent từ đỉnh';
   }
+
+  @override
+  String get sectionInsiders => 'Giao dịch nội bộ';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lần mua',
+      one: '1 lần mua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lần bán',
+      one: '1 lần bán',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Ròng: $shares cổ phiếu';
+  }
+
+  @override
+  String get insiderBuy => 'Đã mua';
+
+  @override
+  String get insiderSell => 'Đã bán';
+
+  @override
+  String get insiderHint =>
+      'Các giao dịch mua và bán trên thị trường mở của lãnh đạo và thành viên hội đồng quản trị trong 90 ngày qua (SEC Form 4). Không tính thực hiện quyền chọn và cổ phiếu thưởng.';
+
+  @override
+  String get insiderNone =>
+      'Không có giao dịch mua hoặc bán nội bộ trên thị trường mở trong 90 ngày qua.';
+
+  @override
+  String get analystTrend => 'Ý kiến thay đổi thế nào qua từng tháng';
 }

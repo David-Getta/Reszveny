@@ -575,5 +575,14 @@
   "alertTrailingHint": "Нархро ба боло пайгирӣ мекунад: вақте нарх аз сатҳи баландтарин пас аз гузоштанатон ин қадар поён фарояд, огоҳ мекунад.",
   "alertDescTrailing": "Афтиши {percent} аз авҷ",
   "alertTrailingPeak": "авҷи то ҳол: {price}",
-  "alertHitTrailing": "{symbol} аз авҷ {percent} поён фаромад"
+  "alertHitTrailing": "{symbol} аз авҷ {percent} поён фаромад",
+  "sectionInsiders": "Савдои инсайдерҳо",
+  "insiderBuys": "{count, plural, =1{1 харид} other{{count} харид}}",
+  "insiderSells": "{count, plural, =1{1 фурӯш} other{{count} фурӯш}}",
+  "insiderNet": "Соф: {shares} саҳмия",
+  "insiderBuy": "Харид",
+  "insiderSell": "Фурӯхт",
+  "insiderHint": "Хариду фурӯш дар бозори кушод аз ҷониби роҳбарон ва директорон дар 90 рӯзи охир (SEC Form 4). Иҷрои опсионҳо ва саҳмияҳои мукофотӣ ба ҳисоб гирифта намешаванд.",
+  "insiderNone": "Дар 90 рӯзи охир хариду фурӯши инсайдерҳо дар бозори кушод набуд.",
+  "analystTrend": "Андешаҳо моҳ ба моҳ чӣ тавр тағйир ёфтанд"
 }

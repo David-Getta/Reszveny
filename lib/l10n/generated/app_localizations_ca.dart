@@ -2152,4 +2152,51 @@ class AppLocalizationsCa extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ha caigut un $percent des del màxim';
   }
+
+  @override
+  String get sectionInsiders => 'Operacions d\'insiders';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count compres',
+      one: '1 compra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vendes',
+      one: '1 venda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares accions';
+  }
+
+  @override
+  String get insiderBuy => 'Comprat';
+
+  @override
+  String get insiderSell => 'Venut';
+
+  @override
+  String get insiderHint =>
+      'Compres i vendes al mercat obert de directius i consellers en els darrers 90 dies (SEC Form 4). No es compten l\'exercici d\'opcions ni les concessions d\'accions.';
+
+  @override
+  String get insiderNone =>
+      'Cap compra ni venda d\'insiders al mercat obert en els darrers 90 dies.';
+
+  @override
+  String get analystTrend => 'Com han canviat les opinions mes a mes';
 }

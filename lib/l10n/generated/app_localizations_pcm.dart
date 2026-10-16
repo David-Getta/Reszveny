@@ -2143,4 +2143,51 @@ class AppLocalizationsPcm extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol don fall $percent from top';
   }
+
+  @override
+  String get sectionInsiders => 'Insider trade';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count buy',
+      one: '1 buy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sell',
+      one: '1 sell',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares shares';
+  }
+
+  @override
+  String get insiderBuy => 'Don buy';
+
+  @override
+  String get insiderSell => 'Don sell';
+
+  @override
+  String get insiderHint =>
+      'Wetin oga dem and directors buy and sell for open market for di last 90 days (SEC Form 4). Option exercise and share award no dey inside.';
+
+  @override
+  String get insiderNone =>
+      'No insider buy or sell for open market for di last 90 days.';
+
+  @override
+  String get analystTrend => 'How dia view take change, month by month';
 }

@@ -2155,4 +2155,52 @@ class AppLocalizationsDe extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ist um $percent vom Hoch gefallen';
   }
+
+  @override
+  String get sectionInsiders => 'Insidertransaktionen';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Käufe',
+      one: '1 Kauf',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Verkäufe',
+      one: '1 Verkauf',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Netto: $shares Aktien';
+  }
+
+  @override
+  String get insiderBuy => 'Gekauft';
+
+  @override
+  String get insiderSell => 'Verkauft';
+
+  @override
+  String get insiderHint =>
+      'Käufe und Verkäufe von Vorständen und Direktoren am offenen Markt in den letzten 90 Tagen (SEC Form 4). Optionsausübungen und Aktienzuteilungen werden nicht berücksichtigt.';
+
+  @override
+  String get insiderNone =>
+      'Keine Insiderkäufe oder -verkäufe am offenen Markt in den letzten 90 Tagen.';
+
+  @override
+  String get analystTrend =>
+      'Wie sich die Einschätzungen Monat für Monat verändert haben';
 }

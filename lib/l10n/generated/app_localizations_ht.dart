@@ -2142,4 +2142,51 @@ class AppLocalizationsHt extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol desann $percent depi pik li';
   }
+
+  @override
+  String get sectionInsiders => 'Tranzaksyon moun anndan yo';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acha',
+      one: '1 acha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vant',
+      one: '1 vant',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Nèt: $shares aksyon';
+  }
+
+  @override
+  String get insiderBuy => 'Achte';
+
+  @override
+  String get insiderSell => 'Vann';
+
+  @override
+  String get insiderHint =>
+      'Acha ak vant sou mache ouvè pa dirijan ak administratè yo nan 90 dènye jou yo (SEC Form 4). Nou pa konte egzèsis opsyon ak aksyon yo bay kòm rekonpans.';
+
+  @override
+  String get insiderNone =>
+      'Pa gen acha oswa vant moun anndan sou mache ouvè nan 90 dènye jou yo.';
+
+  @override
+  String get analystTrend => 'Kijan opinyon yo chanje mwa apre mwa';
 }

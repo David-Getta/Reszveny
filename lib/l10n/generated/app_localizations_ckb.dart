@@ -2144,4 +2144,51 @@ class AppLocalizationsCkb extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol $percent لە لووتکە دابەزی';
   }
+
+  @override
+  String get sectionInsiders => 'مامەڵەی ناوخۆییەکان';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کڕین',
+      one: '1 کڕین',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count فرۆشتن',
+      one: '1 فرۆشتن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'پوختە: $shares پشک';
+  }
+
+  @override
+  String get insiderBuy => 'کڕدرا';
+
+  @override
+  String get insiderSell => 'فرۆشرا';
+
+  @override
+  String get insiderHint =>
+      'کڕین و فرۆشتنی بەڕێوەبەران و ئەندامانی ئەنجومەن لە بازاڕی کراوەدا لە 90 ڕۆژی ڕابردوودا (SEC Form 4). جێبەجێکردنی ئۆپشن و خەڵاتی پشک ناژمێردرێن.';
+
+  @override
+  String get insiderNone =>
+      'لە 90 ڕۆژی ڕابردوودا هیچ کڕین یان فرۆشتنێکی ناوخۆیی لە بازاڕی کراوەدا نەبووە.';
+
+  @override
+  String get analystTrend => 'بیروڕاکان چۆن مانگ بە مانگ گۆڕان';
 }

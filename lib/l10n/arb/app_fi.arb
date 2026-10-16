@@ -575,5 +575,14 @@
   "alertTrailingHint": "Seuraa hintaa ylöspäin: hälytys laukeaa, kun hinta laskee näin paljon korkeimmasta tasostaan asettamisen jälkeen.",
   "alertDescTrailing": "{percent} lasku huipusta",
   "alertTrailingPeak": "huippu tähän asti: {price}",
-  "alertHitTrailing": "{symbol} laski {percent} huipustaan"
+  "alertHitTrailing": "{symbol} laski {percent} huipustaan",
+  "sectionInsiders": "Sisäpiirikaupat",
+  "insiderBuys": "{count, plural, =1{1 osto} other{{count} ostoa}}",
+  "insiderSells": "{count, plural, =1{1 myynti} other{{count} myyntiä}}",
+  "insiderNet": "Netto: {shares} osaketta",
+  "insiderBuy": "Ostettu",
+  "insiderSell": "Myyty",
+  "insiderHint": "Johdon ja hallituksen jäsenten ostot ja myynnit avoimilla markkinoilla viimeisten 90 päivän aikana (SEC Form 4). Optioiden käyttöä ja osakepalkkioita ei lasketa.",
+  "insiderNone": "Ei sisäpiirin ostoja tai myyntejä avoimilla markkinoilla viimeisten 90 päivän aikana.",
+  "analystTrend": "Miten näkemykset muuttuivat kuukausittain"
 }

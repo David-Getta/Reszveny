@@ -7,6 +7,7 @@ class AnalystConsensus {
     this.hold = 0,
     this.sell = 0,
     this.strongSell = 0,
+    this.history = const [],
   });
 
   final DateTime period;
@@ -15,6 +16,9 @@ class AnalystConsensus {
   final int hold;
   final int sell;
   final int strongSell;
+
+  /// A korábbi hónapok (legújabb elöl, legfeljebb néhány) – az alakulás diagramjához.
+  final List<AnalystConsensus> history;
 
   int get total => strongBuy + buy + hold + sell + strongSell;
 

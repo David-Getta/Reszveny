@@ -575,5 +575,14 @@
   "alertTrailingHint": "Folgt dem Kurs nach oben: Der Alarm geht los, wenn der Kurs um so viel unter seinen Höchststand seit dem Einrichten fällt.",
   "alertDescTrailing": "{percent} Rückgang vom Hoch",
   "alertTrailingPeak": "bisheriges Hoch: {price}",
-  "alertHitTrailing": "{symbol} ist um {percent} vom Hoch gefallen"
+  "alertHitTrailing": "{symbol} ist um {percent} vom Hoch gefallen",
+  "sectionInsiders": "Insidertransaktionen",
+  "insiderBuys": "{count, plural, =1{1 Kauf} other{{count} Käufe}}",
+  "insiderSells": "{count, plural, =1{1 Verkauf} other{{count} Verkäufe}}",
+  "insiderNet": "Netto: {shares} Aktien",
+  "insiderBuy": "Gekauft",
+  "insiderSell": "Verkauft",
+  "insiderHint": "Käufe und Verkäufe von Vorständen und Direktoren am offenen Markt in den letzten 90 Tagen (SEC Form 4). Optionsausübungen und Aktienzuteilungen werden nicht berücksichtigt.",
+  "insiderNone": "Keine Insiderkäufe oder -verkäufe am offenen Markt in den letzten 90 Tagen.",
+  "analystTrend": "Wie sich die Einschätzungen Monat für Monat verändert haben"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "قيمت جي مٿي پٺيان هلي ٿو: جڏهن قيمت سيٽ ڪرڻ کان پوءِ واري سڀ کان مٿانهين سطح کان ايتري ڪري ته خبر ڏئي ٿو.",
   "alertDescTrailing": "چوٽيءَ کان {percent} ڪمي",
   "alertTrailingPeak": "هيستائين چوٽي: {price}",
-  "alertHitTrailing": "{symbol} چوٽيءَ کان {percent} ڪريو"
+  "alertHitTrailing": "{symbol} چوٽيءَ کان {percent} ڪريو",
+  "sectionInsiders": "اندروني ماڻهن جا سودا",
+  "insiderBuys": "{count, plural, =1{1 خريداري} other{{count} خريداريون}}",
+  "insiderSells": "{count, plural, =1{1 وڪرو} other{{count} وڪرا}}",
+  "insiderNet": "خالص: {shares} شيئر",
+  "insiderBuy": "خريد ڪيا",
+  "insiderSell": "وڪرو ڪيا",
+  "insiderHint": "گذريل 90 ڏينهن ۾ عملدارن ۽ ڊائريڪٽرن پاران کليل مارڪيٽ ۾ ڪيل خريداريون ۽ وڪرا (SEC Form 4). آپشن استعمال ۽ شيئر انعام شمار نه ٿيندا آهن.",
+  "insiderNone": "گذريل 90 ڏينهن ۾ کليل مارڪيٽ ۾ اندروني ماڻهن جي ڪا به خريداري يا وڪرو ناهي.",
+  "analystTrend": "راءِ مهيني به مهيني ڪيئن بدلي"
 }

@@ -2156,4 +2156,52 @@ class AppLocalizationsQu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol aswan hanaqninmanta $percent uraykurqan';
   }
+
+  @override
+  String get sectionInsiders => 'Ukhupi runakunapa rantinakuynin';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rantiykuna',
+      one: '1 rantiy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rantikuykuna',
+      one: '1 rantikuy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Llapan: $shares accionkuna';
+  }
+
+  @override
+  String get insiderBuy => 'Rantirqan';
+
+  @override
+  String get insiderSell => 'Rantikurqan';
+
+  @override
+  String get insiderHint =>
+      'Kamachiqkunapa umalliqkunapawan kichasqa qhatupi rantisqankuna rantikusqankunapas qhipa 90 p\'unchawkunapi (SEC Form 4). Opcionkunata llamk\'achiy, qusqa accionkunapas mana yupasqachu.';
+
+  @override
+  String get insiderNone =>
+      'Qhipa 90 p\'unchawkunapi kichasqa qhatupi ukhupi runakunapa mana rantiynin nitaq rantikuynin kanchu.';
+
+  @override
+  String get analystTrend =>
+      'Imaynatam yuyaykuna killanmanta killanman tikrarqan';
 }

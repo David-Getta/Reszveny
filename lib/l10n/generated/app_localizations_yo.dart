@@ -2142,4 +2142,51 @@ class AppLocalizationsYo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ti wálẹ̀ $percent láti òkè';
   }
+
+  @override
+  String get sectionInsiders => 'Káràkátà àwọn ará inú';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ìrà $count',
+      one: 'ìrà 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ìtà $count',
+      one: 'ìtà 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Àpapọ̀: ìpín $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Ó rà';
+
+  @override
+  String get insiderSell => 'Ó tà';
+
+  @override
+  String get insiderHint =>
+      'Ìrà àti ìtà ní ọjà gbangba láti ọwọ́ àwọn alákòóso àti olùdarí ní ọjọ́ 90 sẹ́yìn (SEC Form 4). A kò ka lílo àṣàyàn (options) àti ìpín ẹ̀bùn.';
+
+  @override
+  String get insiderNone =>
+      'Kò sí ìrà tàbí ìtà àwọn ará inú ní ọjà gbangba ní ọjọ́ 90 sẹ́yìn.';
+
+  @override
+  String get analystTrend => 'Bí èrò ṣe yí padà láti oṣù dé oṣù';
 }

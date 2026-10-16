@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ilandela ixabiso linyuka: ikwazisa xa ixabiso lisehla ngolu hlobo ukusuka kwelona nqanaba liphezulu ukusukela oko uyisetile.",
   "alertDescTrailing": "Ukwehla nge-{percent} ukusuka encotsheni",
   "alertTrailingPeak": "incopho ukuza kuthi ga ngoku: {price}",
-  "alertHitTrailing": "{symbol} yehle nge-{percent} ukusuka encotsheni"
+  "alertHitTrailing": "{symbol} yehle nge-{percent} ukusuka encotsheni",
+  "sectionInsiders": "Urhwebo lwabangaphakathi",
+  "insiderBuys": "{count, plural, =1{ukuthenga 1} other{ukuthenga {count}}}",
+  "insiderSells": "{count, plural, =1{ukuthengisa 1} other{ukuthengisa {count}}}",
+  "insiderNet": "Iyonke: izabelo {shares}",
+  "insiderBuy": "Uthengile",
+  "insiderSell": "Uthengisile",
+  "insiderHint": "Ukuthenga nokuthengisa kwimarike evulekileyo okwenziwe ngabaphathi nabalawuli kwiintsuku ezingama-90 ezidlulileyo (SEC Form 4). Ukusetyenziswa kweenketho (options) nezabelo ezinikelweyo azibalwa.",
+  "insiderNone": "Akukho kuthenga okanye kuthengisa kwabangaphakathi kwimarike evulekileyo kwiintsuku ezingama-90 ezidlulileyo.",
+  "analystTrend": "Indlela izimvo eziguquke ngayo inyanga nenyanga"
 }

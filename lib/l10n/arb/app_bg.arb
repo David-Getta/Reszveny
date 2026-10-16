@@ -575,5 +575,14 @@
   "alertTrailingHint": "Следва цената нагоре: известието се задейства, когато цената падне с толкова от най-високото си ниво след задаването му.",
   "alertDescTrailing": "Спад с {percent} от върха",
   "alertTrailingPeak": "връх досега: {price}",
-  "alertHitTrailing": "{symbol} падна с {percent} от върха си"
+  "alertHitTrailing": "{symbol} падна с {percent} от върха си",
+  "sectionInsiders": "Сделки на вътрешни лица",
+  "insiderBuys": "{count, plural, =1{1 покупка} other{{count} покупки}}",
+  "insiderSells": "{count, plural, =1{1 продажба} other{{count} продажби}}",
+  "insiderNet": "Нето: {shares} акции",
+  "insiderBuy": "Купени",
+  "insiderSell": "Продадени",
+  "insiderHint": "Покупки и продажби на открития пазар от ръководители и директори през последните 90 дни (SEC Form 4). Упражняването на опции и предоставените акции не се отчитат.",
+  "insiderNone": "Няма покупки или продажби на вътрешни лица на открития пазар през последните 90 дни.",
+  "analystTrend": "Как се промениха мненията месец по месец"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Sleduje cenu smerom nahor: upozornenie sa spustí, keď cena klesne o toľko od najvyššej úrovne od jeho nastavenia.",
   "alertDescTrailing": "Pokles o {percent} od vrcholu",
   "alertTrailingPeak": "doterajší vrchol: {price}",
-  "alertHitTrailing": "{symbol} klesla o {percent} od vrcholu"
+  "alertHitTrailing": "{symbol} klesla o {percent} od vrcholu",
+  "sectionInsiders": "Transakcie insiderov",
+  "insiderBuys": "{count, plural, =1{1 nákup} few{{count} nákupy} many{{count} nákupu} other{{count} nákupov}}",
+  "insiderSells": "{count, plural, =1{1 predaj} few{{count} predaje} many{{count} predaja} other{{count} predajov}}",
+  "insiderNet": "Netto: {shares} akcií",
+  "insiderBuy": "Kúpené",
+  "insiderSell": "Predané",
+  "insiderHint": "Nákupy a predaje na otvorenom trhu vykonané manažérmi a členmi predstavenstva za posledných 90 dní (SEC Form 4). Uplatnenie opcií a pridelené akcie sa nezapočítavajú.",
+  "insiderNone": "Za posledných 90 dní žiadne nákupy ani predaje insiderov na otvorenom trhu.",
+  "analystTrend": "Ako sa názory menili mesiac po mesiaci"
 }

@@ -2135,4 +2135,51 @@ class AppLocalizationsPs extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol له لوړې کچې $percent ښکته شو';
   }
+
+  @override
+  String get sectionInsiders => 'د داخلي کسانو معاملې';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پېرودونه',
+      one: '1 پېرود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پلورونه',
+      one: '1 پلور',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'خالص: $shares ونډې';
+  }
+
+  @override
+  String get insiderBuy => 'پېرل شوي';
+
+  @override
+  String get insiderSell => 'پلورل شوي';
+
+  @override
+  String get insiderHint =>
+      'په تېرو 90 ورځو کې د اجرايوي چارواکو او مدیرانو له خوا په پرانیستي بازار کې پېرودونه او پلورونه (SEC Form 4). د اختیارونو کارول او د ونډو جایزې نه شمېرل کېږي.';
+
+  @override
+  String get insiderNone =>
+      'په تېرو 90 ورځو کې په پرانیستي بازار کې د داخلي کسانو هېڅ پېرود یا پلور نه دی شوی.';
+
+  @override
+  String get analystTrend => 'نظرونه میاشت په میاشت څنګه بدل شول';
 }

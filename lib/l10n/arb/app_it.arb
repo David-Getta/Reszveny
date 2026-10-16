@@ -575,5 +575,14 @@
   "alertTrailingHint": "Segue il prezzo al rialzo: l’avviso scatta quando il prezzo scende di tanto dal suo massimo da quando l’hai impostato.",
   "alertDescTrailing": "Calo del {percent} dal massimo",
   "alertTrailingPeak": "massimo finora: {price}",
-  "alertHitTrailing": "{symbol} è sceso del {percent} dal massimo"
+  "alertHitTrailing": "{symbol} è sceso del {percent} dal massimo",
+  "sectionInsiders": "Internal dealing",
+  "insiderBuys": "{count, plural, =1{1 acquisto} other{{count} acquisti}}",
+  "insiderSells": "{count, plural, =1{1 vendita} other{{count} vendite}}",
+  "insiderNet": "Netto: {shares} azioni",
+  "insiderBuy": "Acquistate",
+  "insiderSell": "Vendute",
+  "insiderHint": "Acquisti e vendite sul mercato aperto da parte di dirigenti e amministratori negli ultimi 90 giorni (SEC Form 4). Esercizi di opzioni e assegnazioni di azioni non sono conteggiati.",
+  "insiderNone": "Nessun acquisto o vendita di insider sul mercato aperto negli ultimi 90 giorni.",
+  "analystTrend": "Come sono cambiati i giudizi mese per mese"
 }

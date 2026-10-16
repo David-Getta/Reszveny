@@ -109,6 +109,15 @@ class Fmt {
     }
   }
 
+  /// Rövid hónapnév (pl. „okt.”, „Oct”).
+  String monthShort(DateTime d) {
+    try {
+      return DateFormat.MMM(dateLocale).format(d);
+    } catch (_) {
+      return _two(d.month);
+    }
+  }
+
   String dateTime(DateTime? d) {
     if (d == null) return na;
     final local = d.toLocal();

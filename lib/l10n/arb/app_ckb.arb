@@ -575,5 +575,14 @@
   "alertTrailingHint": "بەدوای نرخدا بەرەو سەرەوە دەڕوات: ئاگادارت دەکاتەوە کاتێک نرخ ئەوەندە لە بەرزترین ئاستی لە کاتی دانانییەوە دادەبەزێت.",
   "alertDescTrailing": "دابەزینی {percent} لە لووتکە",
   "alertTrailingPeak": "لووتکە تا ئێستا: {price}",
-  "alertHitTrailing": "{symbol} {percent} لە لووتکە دابەزی"
+  "alertHitTrailing": "{symbol} {percent} لە لووتکە دابەزی",
+  "sectionInsiders": "مامەڵەی ناوخۆییەکان",
+  "insiderBuys": "{count, plural, =1{1 کڕین} other{{count} کڕین}}",
+  "insiderSells": "{count, plural, =1{1 فرۆشتن} other{{count} فرۆشتن}}",
+  "insiderNet": "پوختە: {shares} پشک",
+  "insiderBuy": "کڕدرا",
+  "insiderSell": "فرۆشرا",
+  "insiderHint": "کڕین و فرۆشتنی بەڕێوەبەران و ئەندامانی ئەنجومەن لە بازاڕی کراوەدا لە 90 ڕۆژی ڕابردوودا (SEC Form 4). جێبەجێکردنی ئۆپشن و خەڵاتی پشک ناژمێردرێن.",
+  "insiderNone": "لە 90 ڕۆژی ڕابردوودا هیچ کڕین یان فرۆشتنێکی ناوخۆیی لە بازاڕی کراوەدا نەبووە.",
+  "analystTrend": "بیروڕاکان چۆن مانگ بە مانگ گۆڕان"
 }

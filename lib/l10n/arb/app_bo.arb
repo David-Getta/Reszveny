@@ -575,5 +575,14 @@
   "alertTrailingHint": "གོང་ཚད་ཡར་འཕར་བའི་རྗེས་སུ་འབྲང་། སྒྲིག་པ་ནས་བཟུང་ཐོབ་པའི་གོང་ཚད་མཐོ་ཤོས་ནས་འདི་ཙམ་ཆག་ན་བརྡ་གཏོང་།",
   "alertDescTrailing": "ཡང་རྩེ་ནས་ {percent} ཆག",
   "alertTrailingPeak": "ད་བར་གྱི་ཡང་རྩེ: {price}",
-  "alertHitTrailing": "{symbol} ཡང་རྩེ་ནས་ {percent} ཆག་སོང་།"
+  "alertHitTrailing": "{symbol} ཡང་རྩེ་ནས་ {percent} ཆག་སོང་།",
+  "sectionInsiders": "ནང་ཁུལ་མིའི་ཉོ་འཚོང",
+  "insiderBuys": "{count, plural, =1{ཉོ་བ་ 1} other{ཉོ་བ་ {count}}}",
+  "insiderSells": "{count, plural, =1{འཚོང་བ་ 1} other{འཚོང་བ་ {count}}}",
+  "insiderNet": "ལྷག་མ། ཧུར་ཁག {shares}",
+  "insiderBuy": "ཉོས་པ",
+  "insiderSell": "བཙོངས་པ",
+  "insiderHint": "ཉིན་ 90 ནང་ལས་དོན་འགན་འཛིན་དང་འགོ་འཛིན་ཚོས་ཁ་ཕྱེ་ཚོང་ར་ནས་ཉོ་འཚོང་བྱས་པ། (SEC Form 4) འདེམས་ཆ་ལག་བསྟར་དང་ཧུར་ཁག་གི་བྱ་དགའ་མི་རྩིས།",
+  "insiderNone": "ཉིན་ 90 ནང་ཁ་ཕྱེ་ཚོང་ར་ནས་ནང་ཁུལ་མིའི་ཉོ་འཚོང་མེད།",
+  "analystTrend": "ཟླ་བ་རེ་རེར་བསམ་འཆར་ཇི་ལྟར་འགྱུར་བ།"
 }

@@ -2124,4 +2124,51 @@ class AppLocalizationsKm extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol បានធ្លាក់ $percent ពីកំពូល';
   }
+
+  @override
+  String get sectionInsiders => 'ប្រតិបត្តិការអ្នកក្នុង';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ការទិញ $count',
+      one: 'ការទិញ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ការលក់ $count',
+      one: 'ការលក់ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'សុទ្ធ៖ $shares ភាគហ៊ុន';
+  }
+
+  @override
+  String get insiderBuy => 'បានទិញ';
+
+  @override
+  String get insiderSell => 'បានលក់';
+
+  @override
+  String get insiderHint =>
+      'ការទិញ និងលក់នៅលើទីផ្សារបើកចំហដោយនាយកប្រតិបត្តិ និងអភិបាល ក្នុងរយៈពេល 90 ថ្ងៃចុងក្រោយ (SEC Form 4)។ ការប្រើប្រាស់ជម្រើស (option) និងការផ្តល់ភាគហ៊ុនជារង្វាន់ មិនត្រូវបានរាប់បញ្ចូលទេ។';
+
+  @override
+  String get insiderNone =>
+      'គ្មានការទិញ ឬលក់ដោយអ្នកក្នុងនៅលើទីផ្សារបើកចំហក្នុងរយៈពេល 90 ថ្ងៃចុងក្រោយទេ។';
+
+  @override
+  String get analystTrend => 'របៀបដែលមតិបានផ្លាស់ប្តូរពីខែមួយទៅខែមួយ';
 }

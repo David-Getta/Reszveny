@@ -2143,4 +2143,51 @@ class AppLocalizationsTr extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol zirveden $percent düştü';
   }
+
+  @override
+  String get sectionInsiders => 'İçeriden işlemler';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alım',
+      one: '1 alım',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count satım',
+      one: '1 satım',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares hisse';
+  }
+
+  @override
+  String get insiderBuy => 'Aldı';
+
+  @override
+  String get insiderSell => 'Sattı';
+
+  @override
+  String get insiderHint =>
+      'Son 90 günde yöneticiler ve yönetim kurulu üyelerinin açık piyasada yaptığı alım ve satımlar (SEC Form 4). Opsiyon kullanımları ve hisse ödülleri sayılmaz.';
+
+  @override
+  String get insiderNone =>
+      'Son 90 günde açık piyasada içeriden alım veya satım yok.';
+
+  @override
+  String get analystTrend => 'Görüşlerin aydan aya değişimi';
 }

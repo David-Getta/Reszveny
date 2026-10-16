@@ -575,5 +575,14 @@
   "alertTrailingHint": "Следует за ценой вверх: оповещение сработает, когда цена упадёт на столько от максимума с момента установки.",
   "alertDescTrailing": "Падение на {percent} от пика",
   "alertTrailingPeak": "пик на данный момент: {price}",
-  "alertHitTrailing": "{symbol} упала на {percent} от пика"
+  "alertHitTrailing": "{symbol} упала на {percent} от пика",
+  "sectionInsiders": "Сделки инсайдеров",
+  "insiderBuys": "{count, plural, =1{1 покупка} one{{count} покупка} few{{count} покупки} many{{count} покупок} other{{count} покупки}}",
+  "insiderSells": "{count, plural, =1{1 продажа} one{{count} продажа} few{{count} продажи} many{{count} продаж} other{{count} продажи}}",
+  "insiderNet": "Нетто: {shares} акций",
+  "insiderBuy": "Куплено",
+  "insiderSell": "Продано",
+  "insiderHint": "Покупки и продажи на открытом рынке руководителями и директорами за последние 90 дней (SEC Form 4). Исполнение опционов и наградные акции не учитываются.",
+  "insiderNone": "За последние 90 дней инсайдеры не покупали и не продавали акции на открытом рынке.",
+  "analystTrend": "Как менялись мнения месяц за месяцем"
 }

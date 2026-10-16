@@ -2115,4 +2115,51 @@ class AppLocalizationsTh extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ลดลง $percent จากจุดสูงสุด';
   }
+
+  @override
+  String get sectionInsiders => 'การซื้อขายของผู้บริหาร';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ซื้อ $count ครั้ง',
+      one: 'ซื้อ 1 ครั้ง',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ขาย $count ครั้ง',
+      one: 'ขาย 1 ครั้ง',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'สุทธิ: $shares หุ้น';
+  }
+
+  @override
+  String get insiderBuy => 'ซื้อ';
+
+  @override
+  String get insiderSell => 'ขาย';
+
+  @override
+  String get insiderHint =>
+      'การซื้อและขายในตลาดโดยผู้บริหารและกรรมการในช่วง 90 วันที่ผ่านมา (SEC Form 4) ไม่นับการใช้สิทธิออปชันและการให้หุ้นเป็นรางวัล';
+
+  @override
+  String get insiderNone =>
+      'ไม่มีการซื้อหรือขายในตลาดโดยผู้บริหารในช่วง 90 วันที่ผ่านมา';
+
+  @override
+  String get analystTrend => 'มุมมองเปลี่ยนไปอย่างไรในแต่ละเดือน';
 }

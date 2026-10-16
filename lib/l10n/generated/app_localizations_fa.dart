@@ -2140,4 +2140,51 @@ class AppLocalizationsFa extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol $percent از اوج افت کرد';
   }
+
+  @override
+  String get sectionInsiders => 'معاملات افراد مطلع';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خرید',
+      one: '1 خرید',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count فروش',
+      one: '1 فروش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'خالص: $shares سهم';
+  }
+
+  @override
+  String get insiderBuy => 'خرید';
+
+  @override
+  String get insiderSell => 'فروش';
+
+  @override
+  String get insiderHint =>
+      'خرید و فروش مدیران اجرایی و اعضای هیئت‌مدیره در بازار آزاد طی 90 روز گذشته (SEC Form 4). اعمال اختیار معامله و اعطای سهام محاسبه نمی‌شود.';
+
+  @override
+  String get insiderNone =>
+      'طی 90 روز گذشته هیچ خرید یا فروشی توسط افراد مطلع در بازار آزاد انجام نشده است.';
+
+  @override
+  String get analystTrend => 'تغییر دیدگاه‌ها ماه به ماه';
 }

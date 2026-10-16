@@ -2143,4 +2143,51 @@ class AppLocalizationsAk extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol atew $percent afi ne soro pɛn';
   }
+
+  @override
+  String get sectionInsiders => 'Adwumapanyin nkyɛfa adetɔ ne adetɔn';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'adetɔ $count',
+      one: 'adetɔ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'adetɔn $count',
+      one: 'adetɔn 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Nea ɛkae: nkyɛfa $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Tɔe';
+
+  @override
+  String get insiderSell => 'Tɔnee';
+
+  @override
+  String get insiderHint =>
+      'Adwumapanyinfo ne akwankyerɛfo nkyɛfa a wɔtɔɔ ne wɔtɔnee wɔ dwa so nnafua 90 a atwam yi mu (SEC Form 4). Yɛnkan option a wɔde dii dwuma ne nkyɛfa a wɔde maa wɔn akyɛde.';
+
+  @override
+  String get insiderNone =>
+      'Adwumapanyinfo ntɔɔ anaa wɔntɔnee nkyɛfa biara wɔ dwa so nnafua 90 a atwam yi mu.';
+
+  @override
+  String get analystTrend => 'Sɛnea adwene sesaa ɔsram biara';
 }

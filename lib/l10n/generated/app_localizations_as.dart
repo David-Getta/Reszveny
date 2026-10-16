@@ -2142,4 +2142,51 @@ class AppLocalizationsAs extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol শীৰ্ষৰ পৰা $percent নামিল';
   }
+
+  @override
+  String get sectionInsiders => 'ইনচাইডাৰ লেনদেন';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা ক্ৰয়',
+      one: '1টা ক্ৰয়',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা বিক্ৰী',
+      one: '1টা বিক্ৰী',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'নিট: $shares শ্বেয়াৰ';
+  }
+
+  @override
+  String get insiderBuy => 'কিনিলে';
+
+  @override
+  String get insiderSell => 'বিক্ৰী কৰিলে';
+
+  @override
+  String get insiderHint =>
+      'যোৱা 90 দিনত কাৰ্যবাহী বিষয়া আৰু সঞ্চালকসকলৰ মুকলি বজাৰত ক্ৰয় আৰু বিক্ৰী (SEC Form 4)। অপশ্বন প্ৰয়োগ আৰু শ্বেয়াৰ পুৰস্কাৰ গণনা কৰা নহয়।';
+
+  @override
+  String get insiderNone =>
+      'যোৱা 90 দিনত মুকলি বজাৰত কোনো ইনচাইডাৰ ক্ৰয় বা বিক্ৰী হোৱা নাই।';
+
+  @override
+  String get analystTrend => 'মাহে মাহে মতামত কেনেকৈ সলনি হ\'ল';
 }

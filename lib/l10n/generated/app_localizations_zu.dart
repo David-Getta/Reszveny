@@ -2152,4 +2152,51 @@ class AppLocalizationsZu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yehle ngo-$percent isuka esiqongweni';
   }
+
+  @override
+  String get sectionInsiders => 'Ukuhweba kwabangaphakathi';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ukuthenga $count',
+      one: 'ukuthenga 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ukuthengisa $count',
+      one: 'ukuthengisa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Isamba: amasheya $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Uthengile';
+
+  @override
+  String get insiderSell => 'Uthengisile';
+
+  @override
+  String get insiderHint =>
+      'Ukuthenga nokuthengisa emakethe evulekile okwenziwe yizikhulu nabaqondisi ezinsukwini ezingu-90 ezedlule (SEC Form 4). Ukusetshenziswa kwezinketho (options) namasheya anikezwayo akubalwa.';
+
+  @override
+  String get insiderNone =>
+      'Akukho kuthenga noma ukuthengisa kwabangaphakathi emakethe evulekile ezinsukwini ezingu-90 ezedlule.';
+
+  @override
+  String get analystTrend => 'Indlela imibono eshintshe ngayo inyanga nenyanga';
 }

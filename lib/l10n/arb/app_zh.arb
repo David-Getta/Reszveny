@@ -575,5 +575,14 @@
   "alertTrailingHint": "随价格上行跟踪：价格从设置以来的最高点回落此幅度时提醒。",
   "alertDescTrailing": "从高点回落 {percent}",
   "alertTrailingPeak": "目前最高：{price}",
-  "alertHitTrailing": "{symbol} 从高点回落 {percent}"
+  "alertHitTrailing": "{symbol} 从高点回落 {percent}",
+  "sectionInsiders": "内部人交易",
+  "insiderBuys": "{count, plural, =1{1 笔买入} other{{count} 笔买入}}",
+  "insiderSells": "{count, plural, =1{1 笔卖出} other{{count} 笔卖出}}",
+  "insiderNet": "净额：{shares} 股",
+  "insiderBuy": "买入",
+  "insiderSell": "卖出",
+  "insiderHint": "过去 90 天内高管和董事在公开市场的买入和卖出（SEC Form 4）。不包括期权行权和股票奖励。",
+  "insiderNone": "过去 90 天内没有内部人在公开市场买入或卖出。",
+  "analystTrend": "观点逐月变化"
 }

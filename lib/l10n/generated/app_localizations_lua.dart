@@ -2150,4 +2150,51 @@ class AppLocalizationsLua extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol mupueke $percent ku tshisongo';
   }
+
+  @override
+  String get sectionInsiders => 'Mushinga wa bakokeshi ba kompanyi';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusumba: $count',
+      one: 'Kusumba: 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusumbisha: $count',
+      one: 'Kusumbisha: 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Bionso: action $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Kusumba';
+
+  @override
+  String get insiderSell => 'Kusumbisha';
+
+  @override
+  String get insiderHint =>
+      'Kusumba ne kusumbisha mu tshisalu tshidi tshibuluke kua bakokeshi ne ba-directeur mu matuku 90 adi mapite (SEC Form 4). Kuenza mudimu ne ba-option ne ba-action badi bapesha bu difutu kabiena bibala to.';
+
+  @override
+  String get insiderNone =>
+      'Kakuena kusumba anyi kusumbisha kua bakokeshi mu tshisalu tshidi tshibuluke mu matuku 90 adi mapite to.';
+
+  @override
+  String get analystTrend => 'Mushindu udi meji mashintuluke ngondo ne ngondo';
 }

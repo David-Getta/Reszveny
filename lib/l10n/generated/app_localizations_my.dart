@@ -2136,4 +2136,51 @@ class AppLocalizationsMy extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol သည် အမြင့်ဆုံးမှ $percent ကျဆင်းသွားသည်';
   }
+
+  @override
+  String get sectionInsiders => 'အတွင်းလူ ရောင်းဝယ်မှုများ';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ဝယ်ယူမှု $count ခု',
+      one: 'ဝယ်ယူမှု 1 ခု',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ရောင်းချမှု $count ခု',
+      one: 'ရောင်းချမှု 1 ခု',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'အသားတင်: ရှယ်ယာ $shares';
+  }
+
+  @override
+  String get insiderBuy => 'ဝယ်ခဲ့';
+
+  @override
+  String get insiderSell => 'ရောင်းခဲ့';
+
+  @override
+  String get insiderHint =>
+      'ပြီးခဲ့သော 90 ရက်အတွင်း အမှုဆောင်များနှင့် ဒါရိုက်တာများ၏ ပွင့်လင်းဈေးကွက်ရှိ ဝယ်ယူမှုနှင့် ရောင်းချမှုများ (SEC Form 4)။ option အသုံးပြုမှုနှင့် ရှယ်ယာဆုချမှုများကို ထည့်မတွက်ပါ။';
+
+  @override
+  String get insiderNone =>
+      'ပြီးခဲ့သော 90 ရက်အတွင်း ပွင့်လင်းဈေးကွက်တွင် အတွင်းလူ ဝယ်ယူမှု သို့မဟုတ် ရောင်းချမှု မရှိပါ။';
+
+  @override
+  String get analystTrend => 'လအလိုက် သဘောထားများ ပြောင်းလဲပုံ';
 }

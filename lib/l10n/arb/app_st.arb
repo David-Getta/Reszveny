@@ -575,5 +575,14 @@
   "alertTrailingHint": "E latela theko ha e nyoloha: e o tsebisa ha theko e theoha ka hona ho tloha boemong bo hodimodimo ho tloha ha o e beile.",
   "alertDescTrailing": "Ho theoha ka {percent} ho tloha hodimodimo",
   "alertTrailingPeak": "hodimodimo ho fihlela jwale: {price}",
-  "alertHitTrailing": "{symbol} e theohile ka {percent} ho tloha hodimodimo"
+  "alertHitTrailing": "{symbol} e theohile ka {percent} ho tloha hodimodimo",
+  "sectionInsiders": "Kgwebo ya ba ka hare",
+  "insiderBuys": "{count, plural, =1{theko e 1} other{ditheko tse {count}}}",
+  "insiderSells": "{count, plural, =1{thekiso e 1} other{dithekiso tse {count}}}",
+  "insiderNet": "Kakaretso: dishere tse {shares}",
+  "insiderBuy": "Rekile",
+  "insiderSell": "Rekisitse",
+  "insiderHint": "Ditheko le dithekiso mmarakeng o bulehileng tse entsweng ke baokamedi le batsamaisi matsatsing a 90 a fetileng (SEC Form 4). Tshebediso ya dikgetho (options) le dishere tse fanweng ha di balwe.",
+  "insiderNone": "Ha ho ditheko kapa dithekiso tsa ba ka hare mmarakeng o bulehileng matsatsing a 90 a fetileng.",
+  "analystTrend": "Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi"
 }

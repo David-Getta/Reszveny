@@ -575,5 +575,14 @@
   "alertTrailingHint": "Segueix el preu a l’alça: l’alerta salta quan el preu cau aquest percentatge des del màxim assolit des que la vas crear.",
   "alertDescTrailing": "Caiguda del {percent} des del màxim",
   "alertTrailingPeak": "màxim fins ara: {price}",
-  "alertHitTrailing": "{symbol} ha caigut un {percent} des del màxim"
+  "alertHitTrailing": "{symbol} ha caigut un {percent} des del màxim",
+  "sectionInsiders": "Operacions d'insiders",
+  "insiderBuys": "{count, plural, =1{1 compra} other{{count} compres}}",
+  "insiderSells": "{count, plural, =1{1 venda} other{{count} vendes}}",
+  "insiderNet": "Net: {shares} accions",
+  "insiderBuy": "Comprat",
+  "insiderSell": "Venut",
+  "insiderHint": "Compres i vendes al mercat obert de directius i consellers en els darrers 90 dies (SEC Form 4). No es compten l'exercici d'opcions ni les concessions d'accions.",
+  "insiderNone": "Cap compra ni venda d'insiders al mercat obert en els darrers 90 dies.",
+  "analystTrend": "Com han canviat les opinions mes a mes"
 }

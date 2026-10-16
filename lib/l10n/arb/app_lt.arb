@@ -575,5 +575,14 @@
   "alertTrailingHint": "Seka kainą aukštyn: įspėja, kai kaina nukrinta tiek nuo aukščiausio lygio nuo nustatymo.",
   "alertDescTrailing": "{percent} kritimas nuo piko",
   "alertTrailingPeak": "pikas iki šiol: {price}",
-  "alertHitTrailing": "{symbol} nukrito {percent} nuo piko"
+  "alertHitTrailing": "{symbol} nukrito {percent} nuo piko",
+  "sectionInsiders": "Vadovų sandoriai",
+  "insiderBuys": "{count, plural, one{{count} pirkimas} few{{count} pirkimai} many{{count} pirkimo} other{{count} pirkimų}}",
+  "insiderSells": "{count, plural, one{{count} pardavimas} few{{count} pardavimai} many{{count} pardavimo} other{{count} pardavimų}}",
+  "insiderNet": "Grynai: {shares} akcijų",
+  "insiderBuy": "Nupirkta",
+  "insiderSell": "Parduota",
+  "insiderHint": "Vadovų ir direktorių pirkimai bei pardavimai atvirojoje rinkoje per pastarąsias 90 dienų (SEC Form 4). Opcionų realizavimas ir akcijų suteikimas neskaičiuojami.",
+  "insiderNone": "Per pastarąsias 90 dienų vadovai nepirko ir nepardavė akcijų atvirojoje rinkoje.",
+  "analystTrend": "Kaip keitėsi nuomonės kas mėnesį"
 }

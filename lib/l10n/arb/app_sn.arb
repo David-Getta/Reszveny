@@ -575,5 +575,14 @@
   "alertTrailingHint": "Inotevera mutengo uchikwira: inokuzivisa kana mutengo wadzika zvakadai kubva padanho repamusoro-soro kubva pawakaiseta.",
   "alertDescTrailing": "Kudzika ne-{percent} kubva pamusoro-soro",
   "alertTrailingPeak": "pamusoro-soro kusvika zvino: {price}",
-  "alertHitTrailing": "{symbol} yadzika ne-{percent} kubva pamusoro-soro"
+  "alertHitTrailing": "{symbol} yadzika ne-{percent} kubva pamusoro-soro",
+  "sectionInsiders": "Kutengeserana kwevari mukati",
+  "insiderBuys": "{count, plural, =1{kutenga 1} other{kutenga {count}}}",
+  "insiderSells": "{count, plural, =1{kutengesa 1} other{kutengesa {count}}}",
+  "insiderNet": "Zvasara: masheya {shares}",
+  "insiderBuy": "Akatenga",
+  "insiderSell": "Akatengesa",
+  "insiderHint": "Kutenga nekutengesa pamusika wakavhurika kwakaitwa nevakuru nemadhairekita mumazuva 90 apfuura (SEC Form 4). Kushandiswa kwema option nemasheya akapihwa hazvina kuverengwa.",
+  "insiderNone": "Hapana kutenga kana kutengesa kwevari mukati pamusika wakavhurika mumazuva 90 apfuura.",
+  "analystTrend": "Maonero akashanduka sei mwedzi nemwedzi"
 }

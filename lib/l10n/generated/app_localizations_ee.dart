@@ -2147,4 +2147,51 @@ class AppLocalizationsEe extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ɖiɖi $percent tso eƒe kɔkɔƒe';
   }
+
+  @override
+  String get sectionInsiders => 'Kplɔlawo ƒe akpa ƒeƒle kple dzadzra';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ƒeƒle $count',
+      one: 'ƒeƒle 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dzadzra $count',
+      one: 'dzadzra 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Esi susɔ: akpa $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Eƒle';
+
+  @override
+  String get insiderSell => 'Edzra';
+
+  @override
+  String get insiderHint =>
+      'Akpa siwo dɔwɔƒea ƒe kplɔlawo kple dzikpɔlawo ƒle alo dzra le asi me le ŋkeke 90 siwo va yi me (SEC Form 4). Míexlẽ option zazã kple akpa siwo wona wo abe nunana ene o.';
+
+  @override
+  String get insiderNone =>
+      'Kplɔlawo meƒle alo dzra akpa aɖeke le asi me le ŋkeke 90 siwo va yi me o.';
+
+  @override
+  String get analystTrend => 'Alesi susuwo trɔ le ɣleti sia ɣleti me';
 }

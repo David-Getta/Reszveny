@@ -2151,4 +2151,51 @@ class AppLocalizationsHy extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol-ն իջավ գագաթից $percent-ով';
   }
+
+  @override
+  String get sectionInsiders => 'Ինսայդերային գործարքներ';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count գնում',
+      one: '1 գնում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count վաճառք',
+      one: '1 վաճառք',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Զուտ՝ $shares բաժնետոմս';
+  }
+
+  @override
+  String get insiderBuy => 'Գնված';
+
+  @override
+  String get insiderSell => 'Վաճառված';
+
+  @override
+  String get insiderHint =>
+      'Ղեկավարների և տնօրենների գնումներն ու վաճառքները բաց շուկայում վերջին 90 օրվա ընթացքում (SEC Form 4)։ Օպցիոնների իրացումը և բաժնետոմսերի պարգևները չեն հաշվվում։';
+
+  @override
+  String get insiderNone =>
+      'Վերջին 90 օրվա ընթացքում բաց շուկայում ինսայդերային գնումներ կամ վաճառքներ չեն եղել։';
+
+  @override
+  String get analystTrend => 'Ինչպես են փոխվել կարծիքներն ամիս առ ամիս';
 }

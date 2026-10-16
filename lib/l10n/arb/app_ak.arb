@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ɛdi boɔ no akyi kɔ soro: ɛbɛbɔ wo amanneɛ sɛ boɔ no tew saa dodoɔ yi fi ne soro pɛn a ɛduruu firi bere a wosiee no.",
   "alertDescTrailing": "{percent} ntew fi soro pɛn",
   "alertTrailingPeak": "soro pɛn de besi seesei: {price}",
-  "alertHitTrailing": "{symbol} atew {percent} afi ne soro pɛn"
+  "alertHitTrailing": "{symbol} atew {percent} afi ne soro pɛn",
+  "sectionInsiders": "Adwumapanyin nkyɛfa adetɔ ne adetɔn",
+  "insiderBuys": "{count, plural, =1{adetɔ 1} other{adetɔ {count}}}",
+  "insiderSells": "{count, plural, =1{adetɔn 1} other{adetɔn {count}}}",
+  "insiderNet": "Nea ɛkae: nkyɛfa {shares}",
+  "insiderBuy": "Tɔe",
+  "insiderSell": "Tɔnee",
+  "insiderHint": "Adwumapanyinfo ne akwankyerɛfo nkyɛfa a wɔtɔɔ ne wɔtɔnee wɔ dwa so nnafua 90 a atwam yi mu (SEC Form 4). Yɛnkan option a wɔde dii dwuma ne nkyɛfa a wɔde maa wɔn akyɛde.",
+  "insiderNone": "Adwumapanyinfo ntɔɔ anaa wɔntɔnee nkyɛfa biara wɔ dwa so nnafua 90 a atwam yi mu.",
+  "analystTrend": "Sɛnea adwene sesaa ɔsram biara"
 }

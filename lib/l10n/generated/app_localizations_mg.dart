@@ -2159,4 +2159,51 @@ class AppLocalizationsMg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'Nidina $percent avy amin\'ny tampony ny $symbol';
   }
+
+  @override
+  String get sectionInsiders => 'Varotra nataon\'ny mpitantana';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fividianana',
+      one: '1 fividianana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fivarotana',
+      one: '1 fivarotana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Madio: $shares aksiona';
+  }
+
+  @override
+  String get insiderBuy => 'Nividy';
+
+  @override
+  String get insiderSell => 'Nivarotra';
+
+  @override
+  String get insiderHint =>
+      'Fividianana sy fivarotana teny an-tsena malalaka nataon\'ny mpitantana sy ny mpikambana ao amin\'ny filan-kevi-pitantanana tao anatin\'ny 90 andro farany (SEC Form 4). Tsy isaina ny fampiasana safidy (option) sy ny aksiona nomena.';
+
+  @override
+  String get insiderNone =>
+      'Tsy nisy fividianana na fivarotana nataon\'ny mpitantana teny an-tsena malalaka tao anatin\'ny 90 andro farany.';
+
+  @override
+  String get analystTrend => 'Ny fiovan\'ny hevitra isam-bolana';
 }

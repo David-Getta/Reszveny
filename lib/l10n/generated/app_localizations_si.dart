@@ -2141,4 +2141,51 @@ class AppLocalizationsSi extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol උපරිමයෙන් $percentකින් පහත වැටුණි';
   }
+
+  @override
+  String get sectionInsiders => 'අභ්‍යන්තර ගනුදෙනු';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'මිලදී ගැනීම් $count',
+      one: 'මිලදී ගැනීම් 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'විකුණුම් $count',
+      one: 'විකුණුම් 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ශුද්ධ: කොටස් $shares';
+  }
+
+  @override
+  String get insiderBuy => 'මිලදී ගත්තා';
+
+  @override
+  String get insiderSell => 'විකුණුවා';
+
+  @override
+  String get insiderHint =>
+      'පසුගිය දින 90 තුළ විධායකයින් සහ අධ්‍යක්ෂවරුන් විවෘත වෙළඳපොළේ කළ මිලදී ගැනීම් සහ විකුණුම් (SEC Form 4). විකල්ප ක්‍රියාත්මක කිරීම් සහ කොටස් ප්‍රදාන ගණන් නොගැනේ.';
+
+  @override
+  String get insiderNone =>
+      'පසුගිය දින 90 තුළ විවෘත වෙළඳපොළේ අභ්‍යන්තර මිලදී ගැනීම් හෝ විකුණුම් නොමැත.';
+
+  @override
+  String get analystTrend => 'මාසයෙන් මාසයට අදහස් වෙනස් වූ ආකාරය';
 }

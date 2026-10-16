@@ -575,5 +575,14 @@
   "alertTrailingHint": "가격 상승을 따라가다가, 설정 이후 최고점에서 이만큼 하락하면 알려 드립니다.",
   "alertDescTrailing": "고점 대비 {percent} 하락",
   "alertTrailingPeak": "현재까지 고점: {price}",
-  "alertHitTrailing": "{symbol}이(가) 고점 대비 {percent} 하락했습니다"
+  "alertHitTrailing": "{symbol}이(가) 고점 대비 {percent} 하락했습니다",
+  "sectionInsiders": "내부자 거래",
+  "insiderBuys": "{count, plural, =1{매수 1건} other{매수 {count}건}}",
+  "insiderSells": "{count, plural, =1{매도 1건} other{매도 {count}건}}",
+  "insiderNet": "순매매: {shares}주",
+  "insiderBuy": "매수",
+  "insiderSell": "매도",
+  "insiderHint": "최근 90일간 임원 및 이사의 공개 시장 매수·매도 (SEC Form 4). 스톡옵션 행사와 주식 보상은 포함되지 않습니다.",
+  "insiderNone": "최근 90일간 공개 시장에서의 내부자 매수 또는 매도가 없습니다.",
+  "analystTrend": "월별 의견 변화"
 }

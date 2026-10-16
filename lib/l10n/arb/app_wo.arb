@@ -575,5 +575,14 @@
   "alertTrailingHint": "Dafay topp njëg bi su yéegee: dina la xamal su njëg bi wàccee nii ci fa mu gën a kawe ba nga ko tëralee.",
   "alertDescTrailing": "Wàcc {percent} ci kaw ga",
   "alertTrailingPeak": "fa mu gën a kawe ba leegi: {price}",
-  "alertHitTrailing": "{symbol} wàcc na {percent} ci kaw ga"
+  "alertHitTrailing": "{symbol} wàcc na {percent} ci kaw ga",
+  "sectionInsiders": "Jënd ak jaay yu ñi ci biir",
+  "insiderBuys": "{count, plural, =1{1 jënd} other{{count} jënd}}",
+  "insiderSells": "{count, plural, =1{1 jaay} other{{count} jaay}}",
+  "insiderNet": "Lu des: {shares} aksiyoŋ",
+  "insiderBuy": "Jënd na",
+  "insiderSell": "Jaay na",
+  "insiderHint": "Jënd ak jaay ci marse bu ubbeeku yi njiit yi ak direktëer yi def ci 90 fan yu mujj yi (SEC Form 4). Jëfandikoo opsiyoŋ ak aksiyoŋ yu ñu jox bokkul ci.",
+  "insiderNone": "Amul benn jënd walla jaay bu ñi ci biir def ci marse bu ubbeeku ci 90 fan yu mujj yi.",
+  "analystTrend": "Naka la xalaat yi soppeekoo weer ak weer"
 }

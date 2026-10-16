@@ -2130,4 +2130,51 @@ class AppLocalizationsMos extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol siga $percent n yi a zʋʋgã';
   }
+
+  @override
+  String get sectionInsiders => 'Taoor-dãmbã raabo la koosgo';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'raabo $count',
+      one: 'raabo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'koosgo $count',
+      one: 'koosgo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: aksiõ $shares';
+  }
+
+  @override
+  String get insiderBuy => 'A raa';
+
+  @override
+  String get insiderSell => 'A koosa';
+
+  @override
+  String get insiderHint =>
+      'Sosaytã taoor-dãmbã la a gʋbgdbã raabo la koosgo raag pʋgẽ rasem 90 sẽn loogã (SEC Form 4). Opsiõ tʋʋmd la aksiõ kõobo pa kãadẽ ye.';
+
+  @override
+  String get insiderNone =>
+      'Taoor-dãmbã raabo bɩ koosgo pa be raag pʋgẽ rasem 90 sẽn loogã ye.';
+
+  @override
+  String get analystTrend => 'Tags rãmb sẽn tees kiuug fãa';
 }

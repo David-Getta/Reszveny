@@ -2201,4 +2201,55 @@ class AppLocalizationsLt extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol nukrito $percent nuo piko';
   }
+
+  @override
+  String get sectionInsiders => 'Vadovų sandoriai';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pirkimų',
+      many: '$count pirkimo',
+      few: '$count pirkimai',
+      one: '$count pirkimas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pardavimų',
+      many: '$count pardavimo',
+      few: '$count pardavimai',
+      one: '$count pardavimas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Grynai: $shares akcijų';
+  }
+
+  @override
+  String get insiderBuy => 'Nupirkta';
+
+  @override
+  String get insiderSell => 'Parduota';
+
+  @override
+  String get insiderHint =>
+      'Vadovų ir direktorių pirkimai bei pardavimai atvirojoje rinkoje per pastarąsias 90 dienų (SEC Form 4). Opcionų realizavimas ir akcijų suteikimas neskaičiuojami.';
+
+  @override
+  String get insiderNone =>
+      'Per pastarąsias 90 dienų vadovai nepirko ir nepardavė akcijų atvirojoje rinkoje.';
+
+  @override
+  String get analystTrend => 'Kaip keitėsi nuomonės kas mėnesį';
 }

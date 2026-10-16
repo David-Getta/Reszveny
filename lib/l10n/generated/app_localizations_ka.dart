@@ -2144,4 +2144,51 @@ class AppLocalizationsKa extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol პიკიდან $percent-ით ჩამოვიდა';
   }
+
+  @override
+  String get sectionInsiders => 'ინსაიდერული გარიგებები';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count შესყიდვა',
+      one: '1 შესყიდვა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count გაყიდვა',
+      one: '1 გაყიდვა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'წმინდა: $shares აქცია';
+  }
+
+  @override
+  String get insiderBuy => 'ნაყიდი';
+
+  @override
+  String get insiderSell => 'გაყიდული';
+
+  @override
+  String get insiderHint =>
+      'ხელმძღვანელებისა და დირექტორების შესყიდვები და გაყიდვები ღია ბაზარზე ბოლო 90 დღის განმავლობაში (SEC Form 4). ოფციონების განხორციელება და აქციებით დაჯილდოება არ ითვლება.';
+
+  @override
+  String get insiderNone =>
+      'ბოლო 90 დღის განმავლობაში ღია ბაზარზე ინსაიდერული შესყიდვები ან გაყიდვები არ ყოფილა.';
+
+  @override
+  String get analystTrend => 'როგორ იცვლებოდა შეფასებები თვიდან თვემდე';
 }

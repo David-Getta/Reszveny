@@ -575,5 +575,14 @@
   "alertTrailingHint": "ዋጋ ናብ ላዕሊ ይስዕብ፦ ካብ እትውስኖ ጀሚሩ ካብ ዝለዓለ ደረጃ ዋጋ ክንድዚ ምስ ዝወርድ የፍልጠካ።",
   "alertDescTrailing": "ካብ ጫፍ {percent} ምውራድ",
   "alertTrailingPeak": "ክሳብ ሕጂ ጫፍ፦ {price}",
-  "alertHitTrailing": "{symbol} ካብ ጫፉ {percent} ወሪዱ"
+  "alertHitTrailing": "{symbol} ካብ ጫፉ {percent} ወሪዱ",
+  "sectionInsiders": "ንግዲ ውሽጣውያን",
+  "insiderBuys": "{count, plural, =1{1 ዕድጊት} other{{count} ዕድጊታት}}",
+  "insiderSells": "{count, plural, =1{1 መሸጣ} other{{count} መሸጣታት}}",
+  "insiderNet": "ጽሩይ: {shares} ኣክሲዮናት",
+  "insiderBuy": "ተዓዲጉ",
+  "insiderSell": "ተሸይጡ",
+  "insiderHint": "ኣብ ዝሓለፉ 90 መዓልታት ብፈጸምትን ዳይረክተራትን ኣብ ክፉት ዕዳጋ ዝተገብሩ ዕድጊታትን መሸጣታትን (SEC Form 4)። ምትግባር ኦፕሽንን ሽልማት ኣክሲዮንን ኣይቑጸሩን።",
+  "insiderNone": "ኣብ ዝሓለፉ 90 መዓልታት ኣብ ክፉት ዕዳጋ ዝኾነ ዕድጊት ወይ መሸጣ ውሽጣውያን የለን።",
+  "analystTrend": "ርእይቶታት ወርሒ ብወርሒ ከመይ ከም ዝተቐየሩ"
 }

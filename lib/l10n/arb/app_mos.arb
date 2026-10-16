@@ -575,5 +575,14 @@
   "alertTrailingHint": "A pʋgd ligdã yɩkre: a wilgdame ligdã sã n sig woto n yi a zʋʋg ning a sẽn paam hal fo sẽn ning-a wã.",
   "alertDescTrailing": "Sigr {percent} n yi zʋʋgã",
   "alertTrailingPeak": "zʋʋg hal masã: {price}",
-  "alertHitTrailing": "{symbol} siga {percent} n yi a zʋʋgã"
+  "alertHitTrailing": "{symbol} siga {percent} n yi a zʋʋgã",
+  "sectionInsiders": "Taoor-dãmbã raabo la koosgo",
+  "insiderBuys": "{count, plural, =1{raabo 1} other{raabo {count}}}",
+  "insiderSells": "{count, plural, =1{koosgo 1} other{koosgo {count}}}",
+  "insiderNet": "Net: aksiõ {shares}",
+  "insiderBuy": "A raa",
+  "insiderSell": "A koosa",
+  "insiderHint": "Sosaytã taoor-dãmbã la a gʋbgdbã raabo la koosgo raag pʋgẽ rasem 90 sẽn loogã (SEC Form 4). Opsiõ tʋʋmd la aksiõ kõobo pa kãadẽ ye.",
+  "insiderNone": "Taoor-dãmbã raabo bɩ koosgo pa be raag pʋgẽ rasem 90 sẽn loogã ye.",
+  "analystTrend": "Tags rãmb sẽn tees kiuug fãa"
 }

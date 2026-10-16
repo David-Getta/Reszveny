@@ -575,5 +575,14 @@
   "alertTrailingHint": "A bɛ sɔngɔ tugu sanfɛ: a bɛ i kunnafoni ni sɔngɔ jiginna nin hakɛ ye ka bɔ a sanfɛla la k'a ta i y'a labɛn tuma.",
   "alertDescTrailing": "{percent} jigin ka bɔ sanfɛla la",
   "alertTrailingPeak": "sanfɛla ka se bi ma: {price}",
-  "alertHitTrailing": "{symbol} jiginna {percent} ka bɔ a sanfɛla la"
+  "alertHitTrailing": "{symbol} jiginna {percent} ka bɔ a sanfɛla la",
+  "sectionInsiders": "Ɲɛmɔgɔw ka aksiyɔn sanni ni feereli",
+  "insiderBuys": "{count, plural, =1{sanni 1} other{sanni {count}}}",
+  "insiderSells": "{count, plural, =1{feereli 1} other{feereli {count}}}",
+  "insiderNet": "A tɔ: aksiyɔn {shares}",
+  "insiderBuy": "A sanna",
+  "insiderSell": "A feerela",
+  "insiderHint": "Ɲɛmɔgɔw ni ɲɛmaaw ka sanni ni feereli sugu la tile 90 laban na (SEC Form 4). Option baarakɛli ni aksiyɔn sɔrɔlenw tɛ jate.",
+  "insiderNone": "Ɲɛmɔgɔw ma aksiyɔn san wala ka a feere sugu la tile 90 laban na.",
+  "analystTrend": "Hakilinaw yɛlɛmana cogo min na kalo o kalo"
 }

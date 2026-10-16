@@ -2150,4 +2150,51 @@ class AppLocalizationsSo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol wuxuu $percent hoos uga dhacay heerkiisii ugu sarreeyay';
   }
+
+  @override
+  String get sectionInsiders => 'Ganacsiga dadka gudaha';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iibsasho',
+      one: '1 iibsasho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iibin',
+      one: '1 iibin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Saafi: $shares saami';
+  }
+
+  @override
+  String get insiderBuy => 'La iibsaday';
+
+  @override
+  String get insiderSell => 'La iibiyay';
+
+  @override
+  String get insiderHint =>
+      'Iibsashada iyo iibinta suuqa furan ee ay sameeyeen maamulayaasha iyo agaasimayaasha 90-kii maalmood ee la soo dhaafay (SEC Form 4). Isticmaalka xulashooyinka (options) iyo saamiyada abaalmarinta lama tiriyo.';
+
+  @override
+  String get insiderNone =>
+      'Ma jiraan iibsasho ama iibin dadka gudaha ah oo suuqa furan ka dhacay 90-kii maalmood ee la soo dhaafay.';
+
+  @override
+  String get analystTrend => 'Sida aragtiyuhu isu beddeleen bil ka bil';
 }

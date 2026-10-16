@@ -2145,4 +2145,51 @@ class AppLocalizationsJv extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol mudhun $percent saka pucuké';
   }
+
+  @override
+  String get sectionInsiders => 'Transaksi wong njero';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tukon',
+      one: '1 tukon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodolan',
+      one: '1 dodolan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Resik: $shares saham';
+  }
+
+  @override
+  String get insiderBuy => 'Dituku';
+
+  @override
+  String get insiderSell => 'Didol';
+
+  @override
+  String get insiderHint =>
+      'Tukon lan dodolan ing pasar terbuka dening eksekutif lan direktur sajrone 90 dina pungkasan (SEC Form 4). Panggunaan opsi lan paweh saham ora diétung.';
+
+  @override
+  String get insiderNone =>
+      'Ora ana tukon utawa dodolan wong njero ing pasar terbuka sajrone 90 dina pungkasan.';
+
+  @override
+  String get analystTrend => 'Kepiye panemu owah saben sasi';
 }

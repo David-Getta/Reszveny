@@ -2204,4 +2204,55 @@ class AppLocalizationsUk extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol впала на $percent від піку';
   }
+
+  @override
+  String get sectionInsiders => 'Угоди інсайдерів';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count купівлі',
+      many: '$count купівель',
+      few: '$count купівлі',
+      one: '$count купівля',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count продажу',
+      many: '$count продажів',
+      few: '$count продажі',
+      one: '$count продаж',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Нетто: $shares акцій';
+  }
+
+  @override
+  String get insiderBuy => 'Куплено';
+
+  @override
+  String get insiderSell => 'Продано';
+
+  @override
+  String get insiderHint =>
+      'Купівлі та продажі на відкритому ринку керівниками й директорами за останні 90 днів (SEC Form 4). Виконання опціонів і нагородні акції не враховуються.';
+
+  @override
+  String get insiderNone =>
+      'За останні 90 днів інсайдери не купували й не продавали акції на відкритому ринку.';
+
+  @override
+  String get analystTrend => 'Як змінювалися думки місяць за місяцем';
 }

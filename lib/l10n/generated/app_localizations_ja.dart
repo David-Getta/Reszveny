@@ -2070,4 +2070,50 @@ class AppLocalizationsJa extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbolは高値から$percent下落しました';
   }
+
+  @override
+  String get sectionInsiders => 'インサイダー売買';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '買い$count件',
+      one: '買い1件',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '売り$count件',
+      one: '売り1件',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return '差し引き：$shares株';
+  }
+
+  @override
+  String get insiderBuy => '購入';
+
+  @override
+  String get insiderSell => '売却';
+
+  @override
+  String get insiderHint =>
+      '過去90日間に役員・取締役が公開市場で行った株式の購入と売却（SEC Form 4）。オプション行使や株式報酬は含みません。';
+
+  @override
+  String get insiderNone => '過去90日間、公開市場でのインサイダーによる購入・売却はありません。';
+
+  @override
+  String get analystTrend => '評価の月ごとの推移';
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "দামের সঙ্গে উপরে ওঠে: সেট করার পর থেকে সর্বোচ্চ স্তর থেকে দাম এতটা নামলে সতর্ক করে।",
   "alertDescTrailing": "শীর্ষ থেকে {percent} পতন",
   "alertTrailingPeak": "এ পর্যন্ত শীর্ষ: {price}",
-  "alertHitTrailing": "{symbol} শীর্ষ থেকে {percent} নেমেছে"
+  "alertHitTrailing": "{symbol} শীর্ষ থেকে {percent} নেমেছে",
+  "sectionInsiders": "ইনসাইডার লেনদেন",
+  "insiderBuys": "{count, plural, =1{1টি ক্রয়} other{{count}টি ক্রয়}}",
+  "insiderSells": "{count, plural, =1{1টি বিক্রি} other{{count}টি বিক্রি}}",
+  "insiderNet": "নিট: {shares} শেয়ার",
+  "insiderBuy": "কেনা হয়েছে",
+  "insiderSell": "বিক্রি হয়েছে",
+  "insiderHint": "গত 90 দিনে নির্বাহী ও পরিচালকদের খোলা বাজারে ক্রয় ও বিক্রি (SEC Form 4)। অপশন প্রয়োগ ও শেয়ার পুরস্কার গণনা করা হয় না।",
+  "insiderNone": "গত 90 দিনে খোলা বাজারে কোনো ইনসাইডার ক্রয় বা বিক্রি হয়নি।",
+  "analystTrend": "মাসে মাসে মতামত কীভাবে বদলেছে"
 }

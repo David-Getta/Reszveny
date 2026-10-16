@@ -91,7 +91,16 @@ void main() {
     expect(c!.total, 36);
     expect(c.period, DateTime(2026, 9, 1));
     expect(c.score, closeTo(4.08, 0.01));
+    expect(c.history.single.period, DateTime(2026, 8, 1));
     expect(FinnhubMarketDataProvider.parseConsensus([]), isNull);
+  });
+
+  test('parseConsensus: newest month first whatever the order, at most 4 months in all', () {
+    final c = FinnhubMarketDataProvider.parseConsensus([
+      for (var m = 3; m <= 9; m++) {'period': '2026-0$m-01', 'buy': m},
+    ])!;
+    expect(c.period, DateTime(2026, 9, 1));
+    expect(c.history.map((h) => h.period.month), [8, 7, 6]);
   });
 
   test('analysis extras: peers, insider summary, earnings surprises, next earnings', () {

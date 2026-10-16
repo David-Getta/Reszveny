@@ -2157,4 +2157,52 @@ class AppLocalizationsNso extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol e wetše ka $percent go tšwa godimodimo';
   }
+
+  @override
+  String get sectionInsiders => 'Kgwebo ya batho ba ka gare';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditheko tše $count',
+      one: 'theko e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dithekišo tše $count',
+      one: 'thekišo e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Palomoka: dišere tše $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Rekile';
+
+  @override
+  String get insiderSell => 'Rekišitše';
+
+  @override
+  String get insiderHint =>
+      'Ditheko le dithekišo mmarakeng wo o bulegilego tšeo di dirilwego ke balaodi le batsamaiši mo matšatšing a 90 a go feta (SEC Form 4). Go šomiša dikgetho (options) le dišere tšeo di filwego ga di balwe.';
+
+  @override
+  String get insiderNone =>
+      'Ga go na ditheko goba dithekišo tša batho ba ka gare mmarakeng wo o bulegilego mo matšatšing a 90 a go feta.';
+
+  @override
+  String get analystTrend =>
+      'Kamoo dikgopolo di fetogilego ka gona kgwedi le kgwedi';
 }

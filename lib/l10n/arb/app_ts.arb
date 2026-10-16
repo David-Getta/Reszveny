@@ -575,5 +575,14 @@
   "alertTrailingHint": "Yi landzela nxavo loko wu tlakuka: yi ku tivisa loko nxavo wu wela hi mpimo lowu ku suka eka xiyimo xa le henhla swinene ku sukela loko u yi veka.",
   "alertDescTrailing": "Ku wela hi {percent} ku suka ehenhla",
   "alertTrailingPeak": "le henhla ku fikela sweswi: {price}",
-  "alertHitTrailing": "{symbol} yi wele hi {percent} ku suka ehenhla"
+  "alertHitTrailing": "{symbol} yi wele hi {percent} ku suka ehenhla",
+  "sectionInsiders": "Mabindzu ya va le ndzeni",
+  "insiderBuys": "{count, plural, =1{ku xava 1} other{ku xava {count}}}",
+  "insiderSells": "{count, plural, =1{ku xavisa 1} other{ku xavisa {count}}}",
+  "insiderNet": "Hinkwaswo: tixere ta {shares}",
+  "insiderBuy": "U xavile",
+  "insiderSell": "U xavisile",
+  "insiderHint": "Ku xava na ku xavisa eka makete lowu pfulekeke loku endliweke hi varhangeri na vafambisi eka masiku ya 90 lama hundzeke (SEC Form 4). Ku tirhisa tiopxeni na tixere leti nyikiweke a swi hlayiwi.",
+  "insiderNone": "A ku na ku xava kumbe ku xavisa ka va le ndzeni eka makete lowu pfulekeke eka masiku ya 90 lama hundzeke.",
+  "analystTrend": "Ndlela leyi mavonelo ma cinceke ha yona n'hweti na n'hweti"
 }

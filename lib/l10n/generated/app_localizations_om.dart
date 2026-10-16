@@ -2152,4 +2152,51 @@ class AppLocalizationsOm extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ol\'aanaa isaa irraa $percent bu\'eera';
   }
+
+  @override
+  String get sectionInsiders => 'Daldala namoota keessaa';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'bittaa $count',
+      one: 'bittaa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'gurgurtaa $count',
+      one: 'gurgurtaa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Qulqulluu: aksiyoona $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Bitame';
+
+  @override
+  String get insiderSell => 'Gurgurame';
+
+  @override
+  String get insiderHint =>
+      'Bittaa fi gurgurtaa gabaa banaa irratti hoji-gaggeessitootaa fi daarektarootaan guyyoota 90 darban keessatti raawwataman (SEC Form 4). Fayyadamni filannoo (option) fi badhaasni aksiyoonaa hin lakkaa\'aman.';
+
+  @override
+  String get insiderNone =>
+      'Guyyoota 90 darban keessatti bittaan ykn gurgurtaan namoota keessaa gabaa banaa irratti hin jiru.';
+
+  @override
+  String get analystTrend => 'Akkaataa yaadni ji\'a ji\'aan jijjiirame';
 }

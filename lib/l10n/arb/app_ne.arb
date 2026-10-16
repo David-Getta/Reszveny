@@ -575,5 +575,14 @@
   "alertTrailingHint": "मूल्यलाई माथितिर पछ्याउँछ: सेट गरेदेखिको उच्चतम स्तरबाट मूल्य यति झरेमा सूचना दिन्छ।",
   "alertDescTrailing": "शिखरबाट {percent} गिरावट",
   "alertTrailingPeak": "हालसम्मको शिखर: {price}",
-  "alertHitTrailing": "{symbol} शिखरबाट {percent} झर्‍यो"
+  "alertHitTrailing": "{symbol} शिखरबाट {percent} झर्‍यो",
+  "sectionInsiders": "इनसाइडर कारोबार",
+  "insiderBuys": "{count, plural, =1{1 खरिद} other{{count} खरिद}}",
+  "insiderSells": "{count, plural, =1{1 बिक्री} other{{count} बिक्री}}",
+  "insiderNet": "खुद: {shares} शेयर",
+  "insiderBuy": "किनियो",
+  "insiderSell": "बेचियो",
+  "insiderHint": "पछिल्लो 90 दिनमा कार्यकारी अधिकारी र सञ्चालकहरूले खुला बजारमा गरेका खरिद र बिक्री (SEC Form 4)। अप्सन प्रयोग र शेयर पुरस्कार गणना गरिँदैन।",
+  "insiderNone": "पछिल्लो 90 दिनमा खुला बजारमा कुनै इनसाइडर खरिद वा बिक्री भएको छैन।",
+  "analystTrend": "महिनैपिच्छे राय कसरी बदलियो"
 }

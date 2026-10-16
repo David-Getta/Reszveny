@@ -575,5 +575,14 @@
   "alertTrailingHint": "Seko cenai augšup: brīdina, kad cena nokrītas par tik no augstākā līmeņa kopš iestatīšanas.",
   "alertDescTrailing": "{percent} kritums no virsotnes",
   "alertTrailingPeak": "līdzšinējā virsotne: {price}",
-  "alertHitTrailing": "{symbol} nokritās par {percent} no virsotnes"
+  "alertHitTrailing": "{symbol} nokritās par {percent} no virsotnes",
+  "sectionInsiders": "Insaideru darījumi",
+  "insiderBuys": "{count, plural, one{{count} pirkums} other{{count} pirkumi}}",
+  "insiderSells": "{count, plural, one{{count} pārdošana} other{{count} pārdošanas}}",
+  "insiderNet": "Neto: {shares} akcijas",
+  "insiderBuy": "Nopirkts",
+  "insiderSell": "Pārdots",
+  "insiderHint": "Vadītāju un direktoru pirkumi un pārdošanas atklātajā tirgū pēdējās 90 dienās (SEC Form 4). Opciju izmantošana un akciju piešķīrumi netiek ieskaitīti.",
+  "insiderNone": "Pēdējās 90 dienās atklātajā tirgū nav bijis insaideru pirkumu vai pārdošanu.",
+  "analystTrend": "Kā viedokļi mainījās mēnesi pa mēnesim"
 }

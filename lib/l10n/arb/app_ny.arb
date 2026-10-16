@@ -575,5 +575,14 @@
   "alertTrailingHint": "Imatsatira mtengo ukamakwera: imakudziwitsani mtengo ukatsika chonchi kuchokera pamlingo wapamwamba kwambiri kuyambira pamene mudaiyika.",
   "alertDescTrailing": "Kutsika kwa {percent} kuchokera pamwamba",
   "alertTrailingPeak": "pamwamba mpaka pano: {price}",
-  "alertHitTrailing": "{symbol} yatsika {percent} kuchokera pamwamba"
+  "alertHitTrailing": "{symbol} yatsika {percent} kuchokera pamwamba",
+  "sectionInsiders": "Malonda a anthu amkati",
+  "insiderBuys": "{count, plural, =1{kugula 1} other{kugula {count}}}",
+  "insiderSells": "{count, plural, =1{kugulitsa 1} other{kugulitsa {count}}}",
+  "insiderNet": "Zotsala: masheya {shares}",
+  "insiderBuy": "Anagula",
+  "insiderSell": "Anagulitsa",
+  "insiderHint": "Kugula ndi kugulitsa pamsika wotseguka kochitidwa ndi akuluakulu ndi otsogolera m'masiku 90 apitawa (SEC Form 4). Kugwiritsa ntchito ma option ndi masheya opatsidwa sikuwerengedwa.",
+  "insiderNone": "Palibe kugula kapena kugulitsa kwa anthu amkati pamsika wotseguka m'masiku 90 apitawa.",
+  "analystTrend": "Momwe malingaliro asinthira mwezi ndi mwezi"
 }

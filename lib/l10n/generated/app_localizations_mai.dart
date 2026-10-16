@@ -2137,4 +2137,51 @@ class AppLocalizationsMai extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol शिखरसँ $percent खसल';
   }
+
+  @override
+  String get sectionInsiders => 'इनसाइडर लेनदेन';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count खरीद',
+      one: '1 खरीद',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count बिक्री',
+      one: '1 बिक्री',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'शुद्ध: $shares शेयर';
+  }
+
+  @override
+  String get insiderBuy => 'कीनल';
+
+  @override
+  String get insiderSell => 'बेचल';
+
+  @override
+  String get insiderHint =>
+      'पछिला 90 दिनमे अधिकारी आ निदेशक द्वारा खुजल बजारमे कएल गेल खरीद आ बिक्री (SEC Form 4)। ऑप्शनक प्रयोग आ शेयर पुरस्कार नहि गनल जाइत अछि।';
+
+  @override
+  String get insiderNone =>
+      'पछिला 90 दिनमे खुजल बजारमे कोनो इनसाइडर खरीद वा बिक्री नहि भेल।';
+
+  @override
+  String get analystTrend => 'मास-दर-मास राय कोना बदलल';
 }

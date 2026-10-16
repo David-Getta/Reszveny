@@ -2203,4 +2203,55 @@ class AppLocalizationsPl extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol spadł o $percent od szczytu';
   }
+
+  @override
+  String get sectionInsiders => 'Transakcje insiderów';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zakupu',
+      many: '$count zakupów',
+      few: '$count zakupy',
+      one: '1 zakup',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sprzedaży',
+      many: '$count sprzedaży',
+      few: '$count sprzedaże',
+      one: '1 sprzedaż',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Netto: $shares akcji';
+  }
+
+  @override
+  String get insiderBuy => 'Kupno';
+
+  @override
+  String get insiderSell => 'Sprzedaż';
+
+  @override
+  String get insiderHint =>
+      'Zakupy i sprzedaże na otwartym rynku dokonane przez członków zarządu i rady dyrektorów w ciągu ostatnich 90 dni (SEC Form 4). Wykonanie opcji i przyznane akcje nie są uwzględniane.';
+
+  @override
+  String get insiderNone =>
+      'Brak zakupów lub sprzedaży insiderów na otwartym rynku w ciągu ostatnich 90 dni.';
+
+  @override
+  String get analystTrend => 'Jak zmieniały się opinie z miesiąca na miesiąc';
 }

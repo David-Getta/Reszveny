@@ -2183,4 +2183,51 @@ class AppLocalizationsLv extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol nokritās par $percent no virsotnes';
   }
+
+  @override
+  String get sectionInsiders => 'Insaideru darījumi';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pirkumi',
+      one: '$count pirkums',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pārdošanas',
+      one: '$count pārdošana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Neto: $shares akcijas';
+  }
+
+  @override
+  String get insiderBuy => 'Nopirkts';
+
+  @override
+  String get insiderSell => 'Pārdots';
+
+  @override
+  String get insiderHint =>
+      'Vadītāju un direktoru pirkumi un pārdošanas atklātajā tirgū pēdējās 90 dienās (SEC Form 4). Opciju izmantošana un akciju piešķīrumi netiek ieskaitīti.';
+
+  @override
+  String get insiderNone =>
+      'Pēdējās 90 dienās atklātajā tirgū nav bijis insaideru pirkumu vai pārdošanu.';
+
+  @override
+  String get analystTrend => 'Kā viedokļi mainījās mēnesi pa mēnesim';
 }

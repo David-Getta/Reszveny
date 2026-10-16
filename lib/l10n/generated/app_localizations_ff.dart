@@ -2138,4 +2138,51 @@ class AppLocalizationsFf extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol jippii $percent gila e toownde mum';
   }
+
+  @override
+  String get sectionInsiders => 'Coodgu e njeeyu hooreeɓe';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'coodgu $count',
+      one: 'coodgu 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'njeeyu $count',
+      one: 'njeeyu 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Heddiiɗum: aksiyoŋ $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Soodii';
+
+  @override
+  String get insiderSell => 'Yeeyii';
+
+  @override
+  String get insiderHint =>
+      'Coodgu e njeeyu hooreeɓe e jiiloyankooɓe e luumo udditiingo nder balɗe 90 ɓennuɗe (SEC Form 4). Huutoraade option e aksiyoŋ dokkaaɗe limtaaka.';
+
+  @override
+  String get insiderNone =>
+      'Alaa coodgu walla njeeyu hooreeɓe e luumo udditiingo nder balɗe 90 ɓennuɗe.';
+
+  @override
+  String get analystTrend => 'No miijooji ndi waylitorii lewru kala';
 }

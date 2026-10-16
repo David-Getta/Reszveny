@@ -2139,4 +2139,51 @@ class AppLocalizationsGu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ટોચથી $percent ઘટ્યો';
   }
+
+  @override
+  String get sectionInsiders => 'ઇનસાઇડર વ્યવહારો';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ખરીદી',
+      one: '1 ખરીદી',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count વેચાણ',
+      one: '1 વેચાણ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ચોખ્ખું: $shares શેર';
+  }
+
+  @override
+  String get insiderBuy => 'ખરીદ્યા';
+
+  @override
+  String get insiderSell => 'વેચ્યા';
+
+  @override
+  String get insiderHint =>
+      'છેલ્લા 90 દિવસમાં અધિકારીઓ અને ડિરેક્ટરો દ્વારા ખુલ્લા બજારમાં ખરીદી અને વેચાણ (SEC Form 4). ઓપ્શનનો ઉપયોગ અને શેર એવોર્ડ ગણવામાં આવતા નથી.';
+
+  @override
+  String get insiderNone =>
+      'છેલ્લા 90 દિવસમાં ખુલ્લા બજારમાં કોઈ ઇનસાઇડર ખરીદી કે વેચાણ નથી.';
+
+  @override
+  String get analystTrend => 'મહિને મહિને મંતવ્યો કેવી રીતે બદલાયા';
 }

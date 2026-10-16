@@ -84,6 +84,17 @@ class DemoMarketDataProvider extends MarketDataProvider {
         notable: [
           InsiderTrade(name: 'Demo Insider', date: now.subtract(const Duration(days: 20)), code: 'S', change: -30000),
         ],
+        openMarket: [
+          InsiderTrade(
+            name: 'Demo Insider',
+            date: now.subtract(const Duration(days: 20)),
+            code: 'S',
+            change: -30000,
+            price: 228.4,
+          ),
+          InsiderTrade(name: 'Sample Director', date: now.subtract(const Duration(days: 41)), code: 'S', change: -8000),
+          InsiderTrade(name: 'Example Officer', date: now.subtract(const Duration(days: 63)), code: 'S', change: -4000),
+        ],
       ),
       // Minta: négyből egyszer elmarad a várakozástól.
       earnings: [
@@ -478,13 +489,25 @@ class DemoMarketDataProvider extends MarketDataProvider {
   Future<AnalystConsensus?> consensus(String symbol) async {
     await _wait();
     _check(symbol);
+    final now = DateTime.now();
     return AnalystConsensus(
-      period: DateTime(DateTime.now().year, DateTime.now().month),
+      period: DateTime(now.year, now.month),
       strongBuy: 14,
       buy: 22,
       hold: 9,
       sell: 2,
       strongSell: 0,
+      // Minta: az utóbbi hónapokban lassan javuló vélemények.
+      history: [
+        for (var i = 1; i < 4; i++)
+          AnalystConsensus(
+            period: DateTime(now.year, now.month - i),
+            strongBuy: 14 - i * 2,
+            buy: 22 - i,
+            hold: 9 + i * 2,
+            sell: 2 + (i > 1 ? 1 : 0),
+          ),
+      ],
     );
   }
 }

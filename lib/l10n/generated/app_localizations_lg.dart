@@ -2154,4 +2154,51 @@ class AppLocalizationsLg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol kikkiridde $percent okuva ku ntikko';
   }
+
+  @override
+  String get sectionInsiders => 'Okugula n\'okutunda kw\'abakulu ba kkampuni';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'okugula $count',
+      one: 'okugula 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'okutunda $count',
+      one: 'okutunda 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Ekisigadde: emigabo $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Yagula';
+
+  @override
+  String get insiderSell => 'Yatunda';
+
+  @override
+  String get insiderHint =>
+      'Okugula n\'okutunda mu katale akaggule okw\'abakulu n\'abakungu mu nnaku 90 eziyise (SEC Form 4). Okukozesa option n\'emigabo egiweebwa ng\'ekirabo tebibalibwa.';
+
+  @override
+  String get insiderNone =>
+      'Tewali kugula oba kutunda kw\'abakulu mu katale akaggule mu nnaku 90 eziyise.';
+
+  @override
+  String get analystTrend => 'Endowooza bwe zakyuka buli mwezi';
 }

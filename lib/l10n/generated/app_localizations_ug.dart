@@ -2146,4 +2146,51 @@ class AppLocalizationsUg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol چوققىدىن $percent چۈشتى';
   }
+
+  @override
+  String get sectionInsiders => 'ئىچكى ئادەملەر سودىسى';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قېتىم سېتىۋېلىش',
+      one: '1 قېتىم سېتىۋېلىش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count قېتىم سېتىش',
+      one: '1 قېتىم سېتىش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ساپ: $shares پاي';
+  }
+
+  @override
+  String get insiderBuy => 'سېتىۋالدى';
+
+  @override
+  String get insiderSell => 'ساتتى';
+
+  @override
+  String get insiderHint =>
+      'يېقىنقى 90 كۈندە ئىجرائىيە ئەمەلدارلار ۋە دىرېكتورلارنىڭ ئوچۇق بازاردا قىلغان سېتىۋېلىش ۋە سېتىشلىرى (SEC Form 4). تاللاش ھوقۇقىنى ئىشلىتىش ۋە مۇكاپات پايلىرى ھېسابلانمايدۇ.';
+
+  @override
+  String get insiderNone =>
+      'يېقىنقى 90 كۈندە ئوچۇق بازاردا ئىچكى ئادەملەرنىڭ سېتىۋېلىش ياكى سېتىشى يوق.';
+
+  @override
+  String get analystTrend => 'پىكىرلەرنىڭ ئايمۇئاي ئۆزگىرىشى';
 }

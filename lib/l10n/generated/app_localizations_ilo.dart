@@ -2160,4 +2160,52 @@ class AppLocalizationsIlo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'Bimmaba ti $symbol iti $percent manipud iti kangatuan';
   }
+
+  @override
+  String get sectionInsiders => 'Dagiti transaksion ti insider';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a gatang',
+      one: '1 a gatang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a lako',
+      one: '1 a lako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares a share';
+  }
+
+  @override
+  String get insiderBuy => 'Ginatang';
+
+  @override
+  String get insiderSell => 'Inlako';
+
+  @override
+  String get insiderHint =>
+      'Dagiti gatang ken lako iti open market dagiti executive ken director iti napalabas a 90 nga aldaw (SEC Form 4). Saan a mabilang ti panangusar iti option ken dagiti share award.';
+
+  @override
+  String get insiderNone =>
+      'Awan ti gatang wenno lako ti insider iti open market iti napalabas a 90 nga aldaw.';
+
+  @override
+  String get analystTrend =>
+      'No kasano a nagbaliw dagiti panangmatmat iti binulan';
 }

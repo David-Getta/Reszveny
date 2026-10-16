@@ -40,6 +40,9 @@ abstract class MarketDataProvider {
   /// A következő gyorsjelentés (az eseménynaptárhoz); alapból az [analysisExtras]-ból.
   Future<UpcomingEarnings?> nextEarnings(String symbol) async => (await analysisExtras(symbol)).nextEarnings;
 
+  /// Bennfentes ügyletek (90 nap); alapból az [analysisExtras]-ból.
+  Future<InsiderSummary?> insiders(String symbol) async => (await analysisExtras(symbol)).insider;
+
   /// Az utolsó negyedévek EPS-e és a következő gyorsjelentés (a részvény
   /// oldalának kártyájához); alapból az [analysisExtras]-ból.
   Future<EarningsOverview> earnings(String symbol) async {

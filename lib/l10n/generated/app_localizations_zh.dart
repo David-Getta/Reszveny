@@ -2038,6 +2038,52 @@ class AppLocalizationsZh extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol 从高点回落 $percent';
   }
+
+  @override
+  String get sectionInsiders => '内部人交易';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 笔买入',
+      one: '1 笔买入',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 笔卖出',
+      one: '1 笔卖出',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return '净额：$shares 股';
+  }
+
+  @override
+  String get insiderBuy => '买入';
+
+  @override
+  String get insiderSell => '卖出';
+
+  @override
+  String get insiderHint =>
+      '过去 90 天内高管和董事在公开市场的买入和卖出（SEC Form 4）。不包括期权行权和股票奖励。';
+
+  @override
+  String get insiderNone => '过去 90 天内没有内部人在公开市场买入或卖出。';
+
+  @override
+  String get analystTrend => '观点逐月变化';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4073,4 +4119,49 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol 從高位回落 $percent';
   }
+
+  @override
+  String get sectionInsiders => '內部人士交易';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 宗買入',
+      one: '1 宗買入',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 宗賣出',
+      one: '1 宗賣出',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return '淨額：$shares 股';
+  }
+
+  @override
+  String get insiderBuy => '買入';
+
+  @override
+  String get insiderSell => '賣出';
+
+  @override
+  String get insiderHint => '過去 90 日內行政人員及董事在公開市場的買賣（SEC Form 4）。不包括行使期權及股份獎勵。';
+
+  @override
+  String get insiderNone => '過去 90 日內沒有內部人士在公開市場買入或賣出。';
+
+  @override
+  String get analystTrend => '觀點逐月變化';
 }

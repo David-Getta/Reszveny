@@ -575,5 +575,14 @@
   "alertTrailingHint": "باھانى يۇقىرىغا ئەگىشىدۇ: باھا تەڭشىگەندىن بۇيانقى ئەڭ يۇقىرى سەۋىيىسىدىن مۇشۇنچىلىك چۈشسە ئەسكەرتىدۇ.",
   "alertDescTrailing": "چوققىدىن {percent} چۈشۈش",
   "alertTrailingPeak": "ھازىرغىچە چوققا: {price}",
-  "alertHitTrailing": "{symbol} چوققىدىن {percent} چۈشتى"
+  "alertHitTrailing": "{symbol} چوققىدىن {percent} چۈشتى",
+  "sectionInsiders": "ئىچكى ئادەملەر سودىسى",
+  "insiderBuys": "{count, plural, =1{1 قېتىم سېتىۋېلىش} other{{count} قېتىم سېتىۋېلىش}}",
+  "insiderSells": "{count, plural, =1{1 قېتىم سېتىش} other{{count} قېتىم سېتىش}}",
+  "insiderNet": "ساپ: {shares} پاي",
+  "insiderBuy": "سېتىۋالدى",
+  "insiderSell": "ساتتى",
+  "insiderHint": "يېقىنقى 90 كۈندە ئىجرائىيە ئەمەلدارلار ۋە دىرېكتورلارنىڭ ئوچۇق بازاردا قىلغان سېتىۋېلىش ۋە سېتىشلىرى (SEC Form 4). تاللاش ھوقۇقىنى ئىشلىتىش ۋە مۇكاپات پايلىرى ھېسابلانمايدۇ.",
+  "insiderNone": "يېقىنقى 90 كۈندە ئوچۇق بازاردا ئىچكى ئادەملەرنىڭ سېتىۋېلىش ياكى سېتىشى يوق.",
+  "analystTrend": "پىكىرلەرنىڭ ئايمۇئاي ئۆزگىرىشى"
 }

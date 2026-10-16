@@ -575,5 +575,14 @@
   "alertTrailingHint": "E latela theko ge e rotoga: e go tsebiša ge theko e wela ka bokaakaa go tšwa maemong a godimodimo go tloga ge o e beile.",
   "alertDescTrailing": "Go wela ka {percent} go tšwa godimodimo",
   "alertTrailingPeak": "godimodimo go fihla bjale: {price}",
-  "alertHitTrailing": "{symbol} e wetše ka {percent} go tšwa godimodimo"
+  "alertHitTrailing": "{symbol} e wetše ka {percent} go tšwa godimodimo",
+  "sectionInsiders": "Kgwebo ya batho ba ka gare",
+  "insiderBuys": "{count, plural, =1{theko e 1} other{ditheko tše {count}}}",
+  "insiderSells": "{count, plural, =1{thekišo e 1} other{dithekišo tše {count}}}",
+  "insiderNet": "Palomoka: dišere tše {shares}",
+  "insiderBuy": "Rekile",
+  "insiderSell": "Rekišitše",
+  "insiderHint": "Ditheko le dithekišo mmarakeng wo o bulegilego tšeo di dirilwego ke balaodi le batsamaiši mo matšatšing a 90 a go feta (SEC Form 4). Go šomiša dikgetho (options) le dišere tšeo di filwego ga di balwe.",
+  "insiderNone": "Ga go na ditheko goba dithekišo tša batho ba ka gare mmarakeng wo o bulegilego mo matšatšing a 90 a go feta.",
+  "analystTrend": "Kamoo dikgopolo di fetogilego ka gona kgwedi le kgwedi"
 }

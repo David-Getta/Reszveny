@@ -2154,4 +2154,51 @@ class AppLocalizationsLn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ekiti $percent uta na nsɔngɛ';
   }
+
+  @override
+  String get sectionInsiders => 'Mombongo ya bakambi ya kompani';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kosomba',
+      one: '1 kosomba',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count koteka',
+      one: '1 koteka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Nyonso: ba-action $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Asombaki';
+
+  @override
+  String get insiderSell => 'Atekaki';
+
+  @override
+  String get insiderHint =>
+      'Kosomba mpe koteka na zando ya polele oyo bakambi mpe ba-directeur basalaki na mikolo 90 oyo eleki (SEC Form 4). Kosalela ba-option mpe ba-action oyo bapesi lokola mbano etángami te.';
+
+  @override
+  String get insiderNone =>
+      'Kosomba to koteka moko te ya bakambi na zando ya polele na mikolo 90 oyo eleki.';
+
+  @override
+  String get analystTrend => 'Ndenge makanisi ebongwanaki sanza na sanza';
 }

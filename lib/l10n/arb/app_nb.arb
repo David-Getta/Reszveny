@@ -575,5 +575,14 @@
   "alertTrailingHint": "Følger kursen oppover: varsler når kursen faller så mye fra det høyeste nivået siden du satte varselet.",
   "alertDescTrailing": "{percent} fall fra toppen",
   "alertTrailingPeak": "topp hittil: {price}",
-  "alertHitTrailing": "{symbol} falt {percent} fra toppen"
+  "alertHitTrailing": "{symbol} falt {percent} fra toppen",
+  "sectionInsiders": "Innsidehandler",
+  "insiderBuys": "{count, plural, =1{1 kjøp} other{{count} kjøp}}",
+  "insiderSells": "{count, plural, =1{1 salg} other{{count} salg}}",
+  "insiderNet": "Netto: {shares} aksjer",
+  "insiderBuy": "Kjøpte",
+  "insiderSell": "Solgte",
+  "insiderHint": "Kjøp og salg i det åpne markedet utført av ledere og styremedlemmer de siste 90 dagene (SEC Form 4). Utøvelse av opsjoner og aksjetildelinger telles ikke med.",
+  "insiderNone": "Ingen innsidekjøp eller -salg i det åpne markedet de siste 90 dagene.",
+  "analystTrend": "Slik har synene endret seg måned for måned"
 }

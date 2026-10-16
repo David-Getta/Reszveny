@@ -2136,4 +2136,51 @@ class AppLocalizationsHe extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ירדה ב-$percent מהשיא';
   }
+
+  @override
+  String get sectionInsiders => 'עסקאות בעלי עניין';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count רכישות',
+      one: 'רכישה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count מכירות',
+      one: 'מכירה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'נטו: $shares מניות';
+  }
+
+  @override
+  String get insiderBuy => 'נקנו';
+
+  @override
+  String get insiderSell => 'נמכרו';
+
+  @override
+  String get insiderHint =>
+      'רכישות ומכירות בשוק הפתוח על ידי מנהלים ודירקטורים ב-90 הימים האחרונים (SEC Form 4). מימוש אופציות והענקות מניות אינם נכללים.';
+
+  @override
+  String get insiderNone =>
+      'אין רכישות או מכירות של בעלי עניין בשוק הפתוח ב-90 הימים האחרונים.';
+
+  @override
+  String get analystTrend => 'איך השתנו הדעות מחודש לחודש';
 }

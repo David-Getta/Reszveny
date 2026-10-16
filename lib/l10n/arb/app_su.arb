@@ -575,5 +575,14 @@
   "alertTrailingHint": "Nuturkeun harga naék: béwara disada lamun harga turun sakitu ti titik pangluhurna saprak anjeun nyetél éta.",
   "alertDescTrailing": "Turun {percent} ti puncak",
   "alertTrailingPeak": "puncak nepi ka ayeuna: {price}",
-  "alertHitTrailing": "{symbol} turun {percent} ti puncak"
+  "alertHitTrailing": "{symbol} turun {percent} ti puncak",
+  "sectionInsiders": "Transaksi urang jero",
+  "insiderBuys": "{count, plural, =1{1 pameseran} other{{count} pameseran}}",
+  "insiderSells": "{count, plural, =1{1 penjualan} other{{count} penjualan}}",
+  "insiderNet": "Bersih: {shares} saham",
+  "insiderBuy": "Meuli",
+  "insiderSell": "Ngajual",
+  "insiderHint": "Pameseran sareng penjualan di pasar kabuka ku eksekutif sareng diréktur dina 90 dinten panungtung (SEC Form 4). Palaksanaan opsi sareng hadiah saham henteu diitung.",
+  "insiderNone": "Teu aya pameseran atanapi penjualan urang jero di pasar kabuka dina 90 dinten panungtung.",
+  "analystTrend": "Kumaha pamadegan robah ti bulan ka bulan"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ndjek çmimin lart: njoftimi aktivizohet kur çmimi bie kaq nga niveli më i lartë që kur e vendose.",
   "alertDescTrailing": "Rënie {percent} nga maja",
   "alertTrailingPeak": "maja deri tani: {price}",
-  "alertHitTrailing": "{symbol} ra {percent} nga maja"
+  "alertHitTrailing": "{symbol} ra {percent} nga maja",
+  "sectionInsiders": "Transaksionet e të brendshmëve",
+  "insiderBuys": "{count, plural, =1{1 blerje} other{{count} blerje}}",
+  "insiderSells": "{count, plural, =1{1 shitje} other{{count} shitje}}",
+  "insiderNet": "Neto: {shares} aksione",
+  "insiderBuy": "Bleu",
+  "insiderSell": "Shiti",
+  "insiderHint": "Blerje dhe shitje në tregun e hapur nga drejtuesit dhe anëtarët e bordit në 90 ditët e fundit (SEC Form 4). Ushtrimi i opsioneve dhe aksionet e dhuruara nuk llogariten.",
+  "insiderNone": "Asnjë blerje apo shitje e të brendshmëve në tregun e hapur në 90 ditët e fundit.",
+  "analystTrend": "Si ndryshuan opinionet muaj pas muaji"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Volg die prys op: die waarskuwing gaan af wanneer die prys soveel van sy hoogste punt daal sedert jy dit gestel het.",
   "alertDescTrailing": "{percent} daling van sy piek",
   "alertTrailingPeak": "piek tot dusver: {price}",
-  "alertHitTrailing": "{symbol} het {percent} van sy piek gedaal"
+  "alertHitTrailing": "{symbol} het {percent} van sy piek gedaal",
+  "sectionInsiders": "Insider-transaksies",
+  "insiderBuys": "{count, plural, =1{1 aankoop} other{{count} aankope}}",
+  "insiderSells": "{count, plural, =1{1 verkoop} other{{count} verkope}}",
+  "insiderNet": "Netto: {shares} aandele",
+  "insiderBuy": "Gekoop",
+  "insiderSell": "Verkoop",
+  "insiderHint": "Aankope en verkope op die ope mark deur bestuurders en direkteure in die afgelope 90 dae (SEC Form 4). Opsie-uitoefenings en aandeletoekennings word nie getel nie.",
+  "insiderNone": "Geen insider-aankope of -verkope op die ope mark in die afgelope 90 dae nie.",
+  "analystTrend": "Hoe die menings maand vir maand verander het"
 }

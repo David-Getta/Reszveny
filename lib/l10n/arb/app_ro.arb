@@ -575,5 +575,14 @@
   "alertTrailingHint": "Urmărește prețul în sus: alerta se declanșează când prețul scade atât de la cel mai înalt nivel atins de când ai setat-o.",
   "alertDescTrailing": "Scădere de {percent} de la vârf",
   "alertTrailingPeak": "vârf de până acum: {price}",
-  "alertHitTrailing": "{symbol} a scăzut cu {percent} de la vârf"
+  "alertHitTrailing": "{symbol} a scăzut cu {percent} de la vârf",
+  "sectionInsiders": "Tranzacții ale insiderilor",
+  "insiderBuys": "{count, plural, =1{1 achiziție} few{{count} achiziții} other{{count} de achiziții}}",
+  "insiderSells": "{count, plural, =1{1 vânzare} few{{count} vânzări} other{{count} de vânzări}}",
+  "insiderNet": "Net: {shares} acțiuni",
+  "insiderBuy": "Cumpărat",
+  "insiderSell": "Vândut",
+  "insiderHint": "Achiziții și vânzări pe piața liberă efectuate de directori și administratori în ultimele 90 de zile (SEC Form 4). Exercitarea opțiunilor și acordarea de acțiuni nu sunt incluse.",
+  "insiderNone": "Nicio achiziție sau vânzare a insiderilor pe piața liberă în ultimele 90 de zile.",
+  "analystTrend": "Cum s-au schimbat opiniile de la lună la lună"
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Бәяне өскә таба күзәтә: куйганнан бирле иң югары дәрәҗәсеннән бәя шулкадәр төшсә, хәбәр итә.",
   "alertDescTrailing": "Иң югарыдан {percent} төшү",
   "alertTrailingPeak": "хәзергә кадәр иң югары: {price}",
-  "alertHitTrailing": "{symbol} иң югары дәрәҗәсеннән {percent} төште"
+  "alertHitTrailing": "{symbol} иң югары дәрәҗәсеннән {percent} төште",
+  "sectionInsiders": "Инсайдерлар килешүләре",
+  "insiderBuys": "{count, plural, =1{1 сатып алу} other{{count} сатып алу}}",
+  "insiderSells": "{count, plural, =1{1 сату} other{{count} сату}}",
+  "insiderNet": "Саф: {shares} акция",
+  "insiderBuy": "Сатып алды",
+  "insiderSell": "Сатты",
+  "insiderHint": "Соңгы 90 көндә җитәкчеләр һәм директорлар тарафыннан ачык базарда сатып алу һәм сату (SEC Form 4). Опционнарны куллану һәм бүләк акцияләре исәпләнми.",
+  "insiderNone": "Соңгы 90 көндә ачык базарда инсайдерларның сатып алулары яки сатулары булмады.",
+  "analystTrend": "Фикерләр айдан-айга ничек үзгәрде"
 }

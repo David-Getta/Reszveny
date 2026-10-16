@@ -2135,4 +2135,51 @@ class AppLocalizationsSd extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol چوٽيءَ کان $percent ڪريو';
   }
+
+  @override
+  String get sectionInsiders => 'اندروني ماڻهن جا سودا';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خريداريون',
+      one: '1 خريداري',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count وڪرا',
+      one: '1 وڪرو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'خالص: $shares شيئر';
+  }
+
+  @override
+  String get insiderBuy => 'خريد ڪيا';
+
+  @override
+  String get insiderSell => 'وڪرو ڪيا';
+
+  @override
+  String get insiderHint =>
+      'گذريل 90 ڏينهن ۾ عملدارن ۽ ڊائريڪٽرن پاران کليل مارڪيٽ ۾ ڪيل خريداريون ۽ وڪرا (SEC Form 4). آپشن استعمال ۽ شيئر انعام شمار نه ٿيندا آهن.';
+
+  @override
+  String get insiderNone =>
+      'گذريل 90 ڏينهن ۾ کليل مارڪيٽ ۾ اندروني ماڻهن جي ڪا به خريداري يا وڪرو ناهي.';
+
+  @override
+  String get analystTrend => 'راءِ مهيني به مهيني ڪيئن بدلي';
 }

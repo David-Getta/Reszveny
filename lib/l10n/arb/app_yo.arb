@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ó ń tẹ̀lé iye owó bí ó ṣe ń gòkè: yóò sọ fún ọ nígbà tí iye owó bá wálẹ̀ tó báyìí láti ibi tó ga jùlọ láti ìgbà tí o ti ṣètò rẹ̀.",
   "alertDescTrailing": "Ìwálẹ̀ {percent} láti òkè",
   "alertTrailingPeak": "ibi tó ga jùlọ títí di ìsinsìnyí: {price}",
-  "alertHitTrailing": "{symbol} ti wálẹ̀ {percent} láti òkè"
+  "alertHitTrailing": "{symbol} ti wálẹ̀ {percent} láti òkè",
+  "sectionInsiders": "Káràkátà àwọn ará inú",
+  "insiderBuys": "{count, plural, =1{ìrà 1} other{ìrà {count}}}",
+  "insiderSells": "{count, plural, =1{ìtà 1} other{ìtà {count}}}",
+  "insiderNet": "Àpapọ̀: ìpín {shares}",
+  "insiderBuy": "Ó rà",
+  "insiderSell": "Ó tà",
+  "insiderHint": "Ìrà àti ìtà ní ọjà gbangba láti ọwọ́ àwọn alákòóso àti olùdarí ní ọjọ́ 90 sẹ́yìn (SEC Form 4). A kò ka lílo àṣàyàn (options) àti ìpín ẹ̀bùn.",
+  "insiderNone": "Kò sí ìrà tàbí ìtà àwọn ará inú ní ọjà gbangba ní ọjọ́ 90 sẹ́yìn.",
+  "analystTrend": "Bí èrò ṣe yí padà láti oṣù dé oṣù"
 }

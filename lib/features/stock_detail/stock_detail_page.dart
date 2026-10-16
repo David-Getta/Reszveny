@@ -23,6 +23,7 @@ import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
 import 'widgets/converted_price.dart';
 import 'widgets/earnings_card.dart';
+import 'widgets/insiders_card.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
@@ -438,6 +439,9 @@ class _DetailsBody extends StatelessWidget {
       // Gyorsjelentések: a következő és az utolsó negyedévek EPS-e
       EarningsCard(symbol: d.symbol),
 
+      // Bennfentes ügyletek (90 nap, nyílt piaci vételek és eladások)
+      InsidersCard(symbol: d.symbol, currency: cur),
+
       // Éves kimutatások
       SectionCard(
         title: l10n.sectionStatements,
@@ -638,6 +642,53 @@ class _ConsensusView extends StatelessWidget {
               ],
             ),
           ),
+        // Az elmúlt hónapok: hónaponként egy oszlop a vélemények arányával.
+        if (c.history.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          Text(l10n.analystTrend, style: theme.textTheme.bodySmall?.copyWith(color: palette.muted)),
+          const SizedBox(height: 8),
+          Row(
+            key: const ValueKey('consensus-trend'),
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              for (final m in [...c.history.reversed, c])
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 6),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4),
+                          child: SizedBox(
+                            height: 64,
+                            child: Column(
+                              children: [
+                                for (final (_, count, color) in [
+                                  (0, m.strongBuy, bars[0].$3),
+                                  (1, m.buy, bars[1].$3),
+                                  (2, m.hold, bars[2].$3),
+                                  (3, m.sell, bars[3].$3),
+                                  (4, m.strongSell, bars[4].$3),
+                                ])
+                                  if (count > 0)
+                                    Expanded(
+                                      flex: count,
+                                      child: Container(color: color),
+                                    ),
+                                if (m.total == 0) const Spacer(),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(fmt.monthShort(m.period), style: theme.textTheme.bodySmall),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        ],
       ],
     );
   }

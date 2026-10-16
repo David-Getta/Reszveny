@@ -575,5 +575,14 @@
   "alertTrailingHint": "Omoirũ tepy ojupívo: oikuaauka tepy oguejýramo kóichagua ijyvatevéva guive, remoĩ guive.",
   "alertDescTrailing": "{percent} guejy yvateguágui",
   "alertTrailingPeak": "yvatevéva koʼãga peve: {price}",
-  "alertHitTrailing": "{symbol} oguejy {percent} yvateguágui"
+  "alertHitTrailing": "{symbol} oguejy {percent} yvateguágui",
+  "sectionInsiders": "Mburuvichakuéra jejogua ha ñemu",
+  "insiderBuys": "{count, plural, =1{1 jejogua} other{{count} jejogua}}",
+  "insiderSells": "{count, plural, =1{1 ñemu} other{{count} ñemu}}",
+  "insiderNet": "Opytáva: {shares} acción",
+  "insiderBuy": "Ojogua",
+  "insiderSell": "Oñemu",
+  "insiderHint": "Mburuvicha ha director-kuéra jejogua ha ñemu ñemuha ijurujávape ko 90 ára ohasávape (SEC Form 4). Ndojeipapái opción jeporu ha acción ojeme'ẽva.",
+  "insiderNone": "Ndaipóri mburuvichakuéra jejogua ni ñemu ñemuha ijurujávape ko 90 ára ohasávape.",
+  "analystTrend": "Mbaʼéichapa oñemoambue umi temiandu jasy ha jasy"
 }

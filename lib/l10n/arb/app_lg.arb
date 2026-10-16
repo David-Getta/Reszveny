@@ -575,5 +575,14 @@
   "alertTrailingHint": "Egoberera bbeeyi ng'erinnya: ekumanyisa bbeeyi bw'ekka kino okuva ku ddaala lyayo erisinga waggulu bukyanga ogiteekawo.",
   "alertDescTrailing": "Okukka kwa {percent} okuva ku ntikko",
   "alertTrailingPeak": "entikko okutuuka kati: {price}",
-  "alertHitTrailing": "{symbol} kikkiridde {percent} okuva ku ntikko"
+  "alertHitTrailing": "{symbol} kikkiridde {percent} okuva ku ntikko",
+  "sectionInsiders": "Okugula n'okutunda kw'abakulu ba kkampuni",
+  "insiderBuys": "{count, plural, =1{okugula 1} other{okugula {count}}}",
+  "insiderSells": "{count, plural, =1{okutunda 1} other{okutunda {count}}}",
+  "insiderNet": "Ekisigadde: emigabo {shares}",
+  "insiderBuy": "Yagula",
+  "insiderSell": "Yatunda",
+  "insiderHint": "Okugula n'okutunda mu katale akaggule okw'abakulu n'abakungu mu nnaku 90 eziyise (SEC Form 4). Okukozesa option n'emigabo egiweebwa ng'ekirabo tebibalibwa.",
+  "insiderNone": "Tewali kugula oba kutunda kw'abakulu mu katale akaggule mu nnaku 90 eziyise.",
+  "analystTrend": "Endowooza bwe zakyuka buli mwezi"
 }

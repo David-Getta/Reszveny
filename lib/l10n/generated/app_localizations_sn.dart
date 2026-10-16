@@ -2149,4 +2149,51 @@ class AppLocalizationsSn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yadzika ne-$percent kubva pamusoro-soro';
   }
+
+  @override
+  String get sectionInsiders => 'Kutengeserana kwevari mukati';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kutenga $count',
+      one: 'kutenga 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kutengesa $count',
+      one: 'kutengesa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Zvasara: masheya $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Akatenga';
+
+  @override
+  String get insiderSell => 'Akatengesa';
+
+  @override
+  String get insiderHint =>
+      'Kutenga nekutengesa pamusika wakavhurika kwakaitwa nevakuru nemadhairekita mumazuva 90 apfuura (SEC Form 4). Kushandiswa kwema option nemasheya akapihwa hazvina kuverengwa.';
+
+  @override
+  String get insiderNone =>
+      'Hapana kutenga kana kutengesa kwevari mukati pamusika wakavhurika mumazuva 90 apfuura.';
+
+  @override
+  String get analystTrend => 'Maonero akashanduka sei mwedzi nemwedzi';
 }

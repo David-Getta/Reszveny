@@ -2144,4 +2144,51 @@ class AppLocalizationsKi extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol nĩyaikũrũka $percent kuuma gĩcũmbĩ-inĩ';
   }
+
+  @override
+  String get sectionInsiders => 'Ũgũri na wendia wa atongoria';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ũgũri $count',
+      one: 'ũgũri 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'wendia $count',
+      one: 'wendia 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Mũthia: hisa $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Ũgũri';
+
+  @override
+  String get insiderSell => 'Wendia';
+
+  @override
+  String get insiderHint =>
+      'Ũgũri na wendia thoko-inĩ ĩhingũre wa atongoria na ataarani mĩthenya 90 ĩrĩa ĩhĩtũku (SEC Form 4). Kũhũthĩra option na hisa iria ciheanĩtwo ta kĩheo ititaragwo.';
+
+  @override
+  String get insiderNone =>
+      'Gũtirĩ ũgũri kana wendia wa atongoria thoko-inĩ ĩhingũre mĩthenya 90 ĩrĩa ĩhĩtũku.';
+
+  @override
+  String get analystTrend => 'Ũrĩa mawoni maagarũrũkire o mweri';
 }

@@ -575,5 +575,14 @@
   "alertTrailingHint": "Elandaka ntalo ntango ezali komata: eyebisaka soki ntalo ekiti boye uta na esika na yango ya likolo koleka banda otiaki yango.",
   "alertDescTrailing": "Bokiti ya {percent} uta na nsɔngɛ",
   "alertTrailingPeak": "nsɔngɛ tii sikawa: {price}",
-  "alertHitTrailing": "{symbol} ekiti {percent} uta na nsɔngɛ"
+  "alertHitTrailing": "{symbol} ekiti {percent} uta na nsɔngɛ",
+  "sectionInsiders": "Mombongo ya bakambi ya kompani",
+  "insiderBuys": "{count, plural, =1{1 kosomba} other{{count} kosomba}}",
+  "insiderSells": "{count, plural, =1{1 koteka} other{{count} koteka}}",
+  "insiderNet": "Nyonso: ba-action {shares}",
+  "insiderBuy": "Asombaki",
+  "insiderSell": "Atekaki",
+  "insiderHint": "Kosomba mpe koteka na zando ya polele oyo bakambi mpe ba-directeur basalaki na mikolo 90 oyo eleki (SEC Form 4). Kosalela ba-option mpe ba-action oyo bapesi lokola mbano etángami te.",
+  "insiderNone": "Kosomba to koteka moko te ya bakambi na zando ya polele na mikolo 90 oyo eleki.",
+  "analystTrend": "Ndenge makanisi ebongwanaki sanza na sanza"
 }

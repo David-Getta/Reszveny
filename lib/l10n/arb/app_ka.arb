@@ -575,5 +575,14 @@
   "alertTrailingHint": "ფასს ზემოთ მიჰყვება: გაფრთხილება ჩაირთვება, როცა ფასი ამდენით ჩამოვა დაყენების შემდეგ მიღწეული უმაღლესი დონიდან.",
   "alertDescTrailing": "ვარდნა პიკიდან {percent}-ით",
   "alertTrailingPeak": "პიკი ჯერჯერობით: {price}",
-  "alertHitTrailing": "{symbol} პიკიდან {percent}-ით ჩამოვიდა"
+  "alertHitTrailing": "{symbol} პიკიდან {percent}-ით ჩამოვიდა",
+  "sectionInsiders": "ინსაიდერული გარიგებები",
+  "insiderBuys": "{count, plural, =1{1 შესყიდვა} other{{count} შესყიდვა}}",
+  "insiderSells": "{count, plural, =1{1 გაყიდვა} other{{count} გაყიდვა}}",
+  "insiderNet": "წმინდა: {shares} აქცია",
+  "insiderBuy": "ნაყიდი",
+  "insiderSell": "გაყიდული",
+  "insiderHint": "ხელმძღვანელებისა და დირექტორების შესყიდვები და გაყიდვები ღია ბაზარზე ბოლო 90 დღის განმავლობაში (SEC Form 4). ოფციონების განხორციელება და აქციებით დაჯილდოება არ ითვლება.",
+  "insiderNone": "ბოლო 90 დღის განმავლობაში ღია ბაზარზე ინსაიდერული შესყიდვები ან გაყიდვები არ ყოფილა.",
+  "analystTrend": "როგორ იცვლებოდა შეფასებები თვიდან თვემდე"
 }

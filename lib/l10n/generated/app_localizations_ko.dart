@@ -2079,4 +2079,50 @@ class AppLocalizationsKo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol이(가) 고점 대비 $percent 하락했습니다';
   }
+
+  @override
+  String get sectionInsiders => '내부자 거래';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '매수 $count건',
+      one: '매수 1건',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '매도 $count건',
+      one: '매도 1건',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return '순매매: $shares주';
+  }
+
+  @override
+  String get insiderBuy => '매수';
+
+  @override
+  String get insiderSell => '매도';
+
+  @override
+  String get insiderHint =>
+      '최근 90일간 임원 및 이사의 공개 시장 매수·매도 (SEC Form 4). 스톡옵션 행사와 주식 보상은 포함되지 않습니다.';
+
+  @override
+  String get insiderNone => '최근 90일간 공개 시장에서의 내부자 매수 또는 매도가 없습니다.';
+
+  @override
+  String get analystTrend => '월별 의견 변화';
 }

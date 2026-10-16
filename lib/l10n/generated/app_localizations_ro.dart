@@ -2178,4 +2178,53 @@ class AppLocalizationsRo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol a scăzut cu $percent de la vârf';
   }
+
+  @override
+  String get sectionInsiders => 'Tranzacții ale insiderilor';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de achiziții',
+      few: '$count achiziții',
+      one: '1 achiziție',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de vânzări',
+      few: '$count vânzări',
+      one: '1 vânzare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares acțiuni';
+  }
+
+  @override
+  String get insiderBuy => 'Cumpărat';
+
+  @override
+  String get insiderSell => 'Vândut';
+
+  @override
+  String get insiderHint =>
+      'Achiziții și vânzări pe piața liberă efectuate de directori și administratori în ultimele 90 de zile (SEC Form 4). Exercitarea opțiunilor și acordarea de acțiuni nu sunt incluse.';
+
+  @override
+  String get insiderNone =>
+      'Nicio achiziție sau vânzare a insiderilor pe piața liberă în ultimele 90 de zile.';
+
+  @override
+  String get analystTrend => 'Cum s-au schimbat opiniile de la lună la lună';
 }

@@ -2118,4 +2118,51 @@ class AppLocalizationsLo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ລົງ $percent ຈາກຈຸດສູງສຸດ';
   }
+
+  @override
+  String get sectionInsiders => 'ທຸລະກຳຂອງຄົນພາຍໃນ';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຊື້ $count ຄັ້ງ',
+      one: 'ຊື້ 1 ຄັ້ງ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຂາຍ $count ຄັ້ງ',
+      one: 'ຂາຍ 1 ຄັ້ງ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ສຸດທິ: $shares ຮຸ້ນ';
+  }
+
+  @override
+  String get insiderBuy => 'ຊື້';
+
+  @override
+  String get insiderSell => 'ຂາຍ';
+
+  @override
+  String get insiderHint =>
+      'ການຊື້ ແລະ ຂາຍໃນຕະຫຼາດເປີດໂດຍຜູ້ບໍລິຫານ ແລະ ກຳມະການ ໃນ 90 ວັນທີ່ຜ່ານມາ (SEC Form 4). ບໍ່ນັບການໃຊ້ສິດອອບຊັນ ແລະ ການມອບຮຸ້ນເປັນລາງວັນ.';
+
+  @override
+  String get insiderNone =>
+      'ບໍ່ມີການຊື້ ຫຼື ຂາຍຂອງຄົນພາຍໃນໃນຕະຫຼາດເປີດ ໃນ 90 ວັນທີ່ຜ່ານມາ.';
+
+  @override
+  String get analystTrend => 'ຄວາມເຫັນປ່ຽນແປງແນວໃດໃນແຕ່ລະເດືອນ';
 }

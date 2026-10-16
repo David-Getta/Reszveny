@@ -2153,4 +2153,51 @@ class AppLocalizationsCeb extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'Mius-os ang $symbol og $percent gikan sa kinatas-an';
   }
+
+  @override
+  String get sectionInsiders => 'Mga transaksyon sa insider';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka pagpalit',
+      one: '1 ka pagpalit',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka pagbaligya',
+      one: '1 ka pagbaligya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares ka share';
+  }
+
+  @override
+  String get insiderBuy => 'Gipalit';
+
+  @override
+  String get insiderSell => 'Gibaligya';
+
+  @override
+  String get insiderHint =>
+      'Mga pagpalit ug pagbaligya sa open market sa mga executive ug director sulod sa miaging 90 ka adlaw (SEC Form 4). Wala giihap ang paggamit sa option ug mga share award.';
+
+  @override
+  String get insiderNone =>
+      'Walay pagpalit o pagbaligya sa insider sa open market sulod sa miaging 90 ka adlaw.';
+
+  @override
+  String get analystTrend => 'Giunsa pagbag-o sa mga panglantaw matag bulan';
 }

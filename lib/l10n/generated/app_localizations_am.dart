@@ -2113,4 +2113,50 @@ class AppLocalizationsAm extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ከከፍተኛው $percent ወርዷል';
   }
+
+  @override
+  String get sectionInsiders => 'የውስጥ አዋቂዎች ግብይት';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ግዢዎች',
+      one: '1 ግዢ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ሽያጮች',
+      one: '1 ሽያጭ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'የተጣራ: $shares አክሲዮኖች';
+  }
+
+  @override
+  String get insiderBuy => 'ገዛ';
+
+  @override
+  String get insiderSell => 'ሸጠ';
+
+  @override
+  String get insiderHint =>
+      'ባለፉት 90 ቀናት በሥራ አስፈጻሚዎችና በዳይሬክተሮች በክፍት ገበያ የተደረጉ ግዢዎችና ሽያጮች (SEC Form 4)። የአማራጭ (option) አፈጻጸሞችና የአክሲዮን ሽልማቶች አይቆጠሩም።';
+
+  @override
+  String get insiderNone => 'ባለፉት 90 ቀናት በክፍት ገበያ የውስጥ አዋቂዎች ግዢ ወይም ሽያጭ የለም።';
+
+  @override
+  String get analystTrend => 'አስተያየቶች በየወሩ እንዴት እንደተለወጡ';
 }

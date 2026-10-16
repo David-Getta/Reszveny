@@ -2187,4 +2187,57 @@ class AppLocalizationsAr extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'انخفض $symbol بنسبة $percent عن ذروته';
   }
+
+  @override
+  String get sectionInsiders => 'تداولات المطلعين';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count عملية شراء',
+      many: '$count عملية شراء',
+      few: '$count عمليات شراء',
+      two: 'عمليتا شراء',
+      one: 'عملية شراء واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count عملية بيع',
+      many: '$count عملية بيع',
+      few: '$count عمليات بيع',
+      two: 'عمليتا بيع',
+      one: 'عملية بيع واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'الصافي: $shares سهم';
+  }
+
+  @override
+  String get insiderBuy => 'اشترى';
+
+  @override
+  String get insiderSell => 'باع';
+
+  @override
+  String get insiderHint =>
+      'عمليات الشراء والبيع في السوق المفتوحة من قبل المديرين التنفيذيين وأعضاء مجلس الإدارة خلال آخر 90 يومًا (SEC Form 4). لا تُحتسب ممارسة الخيارات ومنح الأسهم.';
+
+  @override
+  String get insiderNone =>
+      'لا توجد عمليات شراء أو بيع للمطلعين في السوق المفتوحة خلال آخر 90 يومًا.';
+
+  @override
+  String get analystTrend => 'كيف تغيّرت الآراء شهرًا بعد شهر';
 }

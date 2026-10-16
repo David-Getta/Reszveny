@@ -2154,4 +2154,52 @@ class AppLocalizationsSt extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol e theohile ka $percent ho tloha hodimodimo';
   }
+
+  @override
+  String get sectionInsiders => 'Kgwebo ya ba ka hare';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditheko tse $count',
+      one: 'theko e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dithekiso tse $count',
+      one: 'thekiso e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Kakaretso: dishere tse $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Rekile';
+
+  @override
+  String get insiderSell => 'Rekisitse';
+
+  @override
+  String get insiderHint =>
+      'Ditheko le dithekiso mmarakeng o bulehileng tse entsweng ke baokamedi le batsamaisi matsatsing a 90 a fetileng (SEC Form 4). Tshebediso ya dikgetho (options) le dishere tse fanweng ha di balwe.';
+
+  @override
+  String get insiderNone =>
+      'Ha ho ditheko kapa dithekiso tsa ba ka hare mmarakeng o bulehileng matsatsing a 90 a fetileng.';
+
+  @override
+  String get analystTrend =>
+      'Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi';
 }

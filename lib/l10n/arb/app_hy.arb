@@ -575,5 +575,14 @@
   "alertTrailingHint": "Հետևում է գնին դեպի վեր. ծանուցում է, երբ գինն այսքան իջնի սահմանելուց ի վեր հասած ամենաբարձր մակարդակից։",
   "alertDescTrailing": "Անկում գագաթից {percent}-ով",
   "alertTrailingPeak": "գագաթն առայժմ՝ {price}",
-  "alertHitTrailing": "{symbol}-ն իջավ գագաթից {percent}-ով"
+  "alertHitTrailing": "{symbol}-ն իջավ գագաթից {percent}-ով",
+  "sectionInsiders": "Ինսայդերային գործարքներ",
+  "insiderBuys": "{count, plural, =1{1 գնում} other{{count} գնում}}",
+  "insiderSells": "{count, plural, =1{1 վաճառք} other{{count} վաճառք}}",
+  "insiderNet": "Զուտ՝ {shares} բաժնետոմս",
+  "insiderBuy": "Գնված",
+  "insiderSell": "Վաճառված",
+  "insiderHint": "Ղեկավարների և տնօրենների գնումներն ու վաճառքները բաց շուկայում վերջին 90 օրվա ընթացքում (SEC Form 4)։ Օպցիոնների իրացումը և բաժնետոմսերի պարգևները չեն հաշվվում։",
+  "insiderNone": "Վերջին 90 օրվա ընթացքում բաց շուկայում ինսայդերային գնումներ կամ վաճառքներ չեն եղել։",
+  "analystTrend": "Ինչպես են փոխվել կարծիքներն ամիս առ ամիս"
 }

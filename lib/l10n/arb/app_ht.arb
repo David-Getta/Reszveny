@@ -575,5 +575,14 @@
   "alertTrailingHint": "Li swiv pri a lè l monte: alèt la sonnen lè pri a desann konsa depi pi wo nivo li te rive depi ou te mete l.",
   "alertDescTrailing": "Bès {percent} depi pik la",
   "alertTrailingPeak": "pik jiskaprezan: {price}",
-  "alertHitTrailing": "{symbol} desann {percent} depi pik li"
+  "alertHitTrailing": "{symbol} desann {percent} depi pik li",
+  "sectionInsiders": "Tranzaksyon moun anndan yo",
+  "insiderBuys": "{count, plural, =1{1 acha} other{{count} acha}}",
+  "insiderSells": "{count, plural, =1{1 vant} other{{count} vant}}",
+  "insiderNet": "Nèt: {shares} aksyon",
+  "insiderBuy": "Achte",
+  "insiderSell": "Vann",
+  "insiderHint": "Acha ak vant sou mache ouvè pa dirijan ak administratè yo nan 90 dènye jou yo (SEC Form 4). Nou pa konte egzèsis opsyon ak aksyon yo bay kòm rekonpans.",
+  "insiderNone": "Pa gen acha oswa vant moun anndan sou mache ouvè nan 90 dènye jou yo.",
+  "analystTrend": "Kijan opinyon yo chanje mwa apre mwa"
 }

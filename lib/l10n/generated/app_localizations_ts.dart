@@ -2157,4 +2157,52 @@ class AppLocalizationsTs extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yi wele hi $percent ku suka ehenhla';
   }
+
+  @override
+  String get sectionInsiders => 'Mabindzu ya va le ndzeni';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ku xava $count',
+      one: 'ku xava 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ku xavisa $count',
+      one: 'ku xavisa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Hinkwaswo: tixere ta $shares';
+  }
+
+  @override
+  String get insiderBuy => 'U xavile';
+
+  @override
+  String get insiderSell => 'U xavisile';
+
+  @override
+  String get insiderHint =>
+      'Ku xava na ku xavisa eka makete lowu pfulekeke loku endliweke hi varhangeri na vafambisi eka masiku ya 90 lama hundzeke (SEC Form 4). Ku tirhisa tiopxeni na tixere leti nyikiweke a swi hlayiwi.';
+
+  @override
+  String get insiderNone =>
+      'A ku na ku xava kumbe ku xavisa ka va le ndzeni eka makete lowu pfulekeke eka masiku ya 90 lama hundzeke.';
+
+  @override
+  String get analystTrend =>
+      'Ndlela leyi mavonelo ma cinceke ha yona n\'hweti na n\'hweti';
 }

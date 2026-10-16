@@ -575,5 +575,14 @@
   "alertTrailingHint": "ติดตามราคาขึ้นไป: แจ้งเตือนเมื่อราคาลดลงเท่านี้จากจุดสูงสุดนับตั้งแต่ตั้งค่า",
   "alertDescTrailing": "ลดลง {percent} จากจุดสูงสุด",
   "alertTrailingPeak": "สูงสุดจนถึงตอนนี้: {price}",
-  "alertHitTrailing": "{symbol} ลดลง {percent} จากจุดสูงสุด"
+  "alertHitTrailing": "{symbol} ลดลง {percent} จากจุดสูงสุด",
+  "sectionInsiders": "การซื้อขายของผู้บริหาร",
+  "insiderBuys": "{count, plural, =1{ซื้อ 1 ครั้ง} other{ซื้อ {count} ครั้ง}}",
+  "insiderSells": "{count, plural, =1{ขาย 1 ครั้ง} other{ขาย {count} ครั้ง}}",
+  "insiderNet": "สุทธิ: {shares} หุ้น",
+  "insiderBuy": "ซื้อ",
+  "insiderSell": "ขาย",
+  "insiderHint": "การซื้อและขายในตลาดโดยผู้บริหารและกรรมการในช่วง 90 วันที่ผ่านมา (SEC Form 4) ไม่นับการใช้สิทธิออปชันและการให้หุ้นเป็นรางวัล",
+  "insiderNone": "ไม่มีการซื้อหรือขายในตลาดโดยผู้บริหารในช่วง 90 วันที่ผ่านมา",
+  "analystTrend": "มุมมองเปลี่ยนไปอย่างไรในแต่ละเดือน"
 }

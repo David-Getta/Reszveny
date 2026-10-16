@@ -2150,4 +2150,51 @@ class AppLocalizationsFil extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'Bumaba ang $symbol nang $percent mula sa tuktok';
   }
+
+  @override
+  String get sectionInsiders => 'Mga transaksyon ng insider';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pagbili',
+      one: '1 pagbili',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pagbenta',
+      one: '1 pagbenta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Net: $shares share';
+  }
+
+  @override
+  String get insiderBuy => 'Bumili';
+
+  @override
+  String get insiderSell => 'Nagbenta';
+
+  @override
+  String get insiderHint =>
+      'Mga pagbili at pagbenta sa open market ng mga executive at director sa nakalipas na 90 araw (SEC Form 4). Hindi kasama ang paggamit ng option at mga share award.';
+
+  @override
+  String get insiderNone =>
+      'Walang pagbili o pagbenta ng insider sa open market sa nakalipas na 90 araw.';
+
+  @override
+  String get analystTrend => 'Paano nagbago ang mga pananaw bawat buwan';
 }

@@ -2148,4 +2148,51 @@ class AppLocalizationsHa extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ya faɗi $percent daga ƙolinsa';
   }
+
+  @override
+  String get sectionInsiders => 'Cinikin shugabannin kamfani';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'saye $count',
+      one: 'saye 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sayarwa $count',
+      one: 'sayarwa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Jimilla: hannun jari $shares';
+  }
+
+  @override
+  String get insiderBuy => 'An saya';
+
+  @override
+  String get insiderSell => 'An sayar';
+
+  @override
+  String get insiderHint =>
+      'Saye da sayarwar shugabanni da daraktoci a kasuwa a buɗe cikin kwanaki 90 da suka gabata (SEC Form 4). Ba a ƙidaya amfani da zaɓin hannun jari da kyautar hannun jari ba.';
+
+  @override
+  String get insiderNone =>
+      'Babu saye ko sayarwar shugabanni a kasuwa a buɗe cikin kwanaki 90 da suka gabata.';
+
+  @override
+  String get analystTrend => 'Yadda ra\'ayoyi suka sauya wata-wata';
 }

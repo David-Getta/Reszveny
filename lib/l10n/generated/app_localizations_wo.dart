@@ -2138,4 +2138,51 @@ class AppLocalizationsWo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol wàcc na $percent ci kaw ga';
   }
+
+  @override
+  String get sectionInsiders => 'Jënd ak jaay yu ñi ci biir';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jënd',
+      one: '1 jënd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jaay',
+      one: '1 jaay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Lu des: $shares aksiyoŋ';
+  }
+
+  @override
+  String get insiderBuy => 'Jënd na';
+
+  @override
+  String get insiderSell => 'Jaay na';
+
+  @override
+  String get insiderHint =>
+      'Jënd ak jaay ci marse bu ubbeeku yi njiit yi ak direktëer yi def ci 90 fan yu mujj yi (SEC Form 4). Jëfandikoo opsiyoŋ ak aksiyoŋ yu ñu jox bokkul ci.';
+
+  @override
+  String get insiderNone =>
+      'Amul benn jënd walla jaay bu ñi ci biir def ci marse bu ubbeeku ci 90 fan yu mujj yi.';
+
+  @override
+  String get analystTrend => 'Naka la xalaat yi soppeekoo weer ak weer';
 }

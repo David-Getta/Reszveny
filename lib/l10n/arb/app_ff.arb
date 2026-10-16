@@ -575,5 +575,14 @@
   "alertTrailingHint": "Ɗum rewa coggu ngu e dow: ɗum anndinta so coggu ngu jippii ɗuum gila e toownde mum ɓurnde gila nde a teeltii ɗum.",
   "alertDescTrailing": "{percent} jippagol gila toownde",
   "alertTrailingPeak": "toownde haa jooni: {price}",
-  "alertHitTrailing": "{symbol} jippii {percent} gila e toownde mum"
+  "alertHitTrailing": "{symbol} jippii {percent} gila e toownde mum",
+  "sectionInsiders": "Coodgu e njeeyu hooreeɓe",
+  "insiderBuys": "{count, plural, =1{coodgu 1} other{coodgu {count}}}",
+  "insiderSells": "{count, plural, =1{njeeyu 1} other{njeeyu {count}}}",
+  "insiderNet": "Heddiiɗum: aksiyoŋ {shares}",
+  "insiderBuy": "Soodii",
+  "insiderSell": "Yeeyii",
+  "insiderHint": "Coodgu e njeeyu hooreeɓe e jiiloyankooɓe e luumo udditiingo nder balɗe 90 ɓennuɗe (SEC Form 4). Huutoraade option e aksiyoŋ dokkaaɗe limtaaka.",
+  "insiderNone": "Alaa coodgu walla njeeyu hooreeɓe e luumo udditiingo nder balɗe 90 ɓennuɗe.",
+  "analystTrend": "No miijooji ndi waylitorii lewru kala"
 }

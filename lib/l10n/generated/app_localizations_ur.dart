@@ -2143,4 +2143,51 @@ class AppLocalizationsUr extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol چوٹی سے $percent گرا';
   }
+
+  @override
+  String get sectionInsiders => 'انسائیڈر لین دین';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خریداریاں',
+      one: '1 خریداری',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count فروخت',
+      one: '1 فروخت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'خالص: $shares شیئرز';
+  }
+
+  @override
+  String get insiderBuy => 'خریدے';
+
+  @override
+  String get insiderSell => 'فروخت کیے';
+
+  @override
+  String get insiderHint =>
+      'گزشتہ 90 دنوں میں ایگزیکٹوز اور ڈائریکٹرز کی جانب سے اوپن مارکیٹ میں کی گئی خریداریاں اور فروخت (SEC Form 4)۔ آپشنز کا استعمال اور شیئر ایوارڈز شمار نہیں کیے جاتے۔';
+
+  @override
+  String get insiderNone =>
+      'گزشتہ 90 دنوں میں اوپن مارکیٹ میں کوئی انسائیڈر خریداری یا فروخت نہیں ہوئی۔';
+
+  @override
+  String get analystTrend => 'ماہ بہ ماہ آراء کیسے بدلیں';
 }

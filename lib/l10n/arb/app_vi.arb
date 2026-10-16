@@ -575,5 +575,14 @@
   "alertTrailingHint": "Bám theo giá khi tăng: cảnh báo khi giá giảm chừng này so với mức cao nhất kể từ lúc bạn đặt.",
   "alertDescTrailing": "Giảm {percent} từ đỉnh",
   "alertTrailingPeak": "đỉnh đến nay: {price}",
-  "alertHitTrailing": "{symbol} đã giảm {percent} từ đỉnh"
+  "alertHitTrailing": "{symbol} đã giảm {percent} từ đỉnh",
+  "sectionInsiders": "Giao dịch nội bộ",
+  "insiderBuys": "{count, plural, =1{1 lần mua} other{{count} lần mua}}",
+  "insiderSells": "{count, plural, =1{1 lần bán} other{{count} lần bán}}",
+  "insiderNet": "Ròng: {shares} cổ phiếu",
+  "insiderBuy": "Đã mua",
+  "insiderSell": "Đã bán",
+  "insiderHint": "Các giao dịch mua và bán trên thị trường mở của lãnh đạo và thành viên hội đồng quản trị trong 90 ngày qua (SEC Form 4). Không tính thực hiện quyền chọn và cổ phiếu thưởng.",
+  "insiderNone": "Không có giao dịch mua hoặc bán nội bộ trên thị trường mở trong 90 ngày qua.",
+  "analystTrend": "Ý kiến thay đổi thế nào qua từng tháng"
 }

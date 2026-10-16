@@ -2145,4 +2145,51 @@ class AppLocalizationsTg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol аз авҷ $percent поён фаромад';
   }
+
+  @override
+  String get sectionInsiders => 'Савдои инсайдерҳо';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count харид',
+      one: '1 харид',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count фурӯш',
+      one: '1 фурӯш',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Соф: $shares саҳмия';
+  }
+
+  @override
+  String get insiderBuy => 'Харид';
+
+  @override
+  String get insiderSell => 'Фурӯхт';
+
+  @override
+  String get insiderHint =>
+      'Хариду фурӯш дар бозори кушод аз ҷониби роҳбарон ва директорон дар 90 рӯзи охир (SEC Form 4). Иҷрои опсионҳо ва саҳмияҳои мукофотӣ ба ҳисоб гирифта намешаванд.';
+
+  @override
+  String get insiderNone =>
+      'Дар 90 рӯзи охир хариду фурӯши инсайдерҳо дар бозори кушод набуд.';
+
+  @override
+  String get analystTrend => 'Андешаҳо моҳ ба моҳ чӣ тавр тағйир ёфтанд';
 }

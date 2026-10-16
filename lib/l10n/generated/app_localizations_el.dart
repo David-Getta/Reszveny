@@ -2151,4 +2151,51 @@ class AppLocalizationsEl extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return 'Η $symbol έπεσε $percent από την κορυφή';
   }
+
+  @override
+  String get sectionInsiders => 'Συναλλαγές εσωτερικών';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count αγορές',
+      one: '1 αγορά',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count πωλήσεις',
+      one: '1 πώληση',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Καθαρά: $shares μετοχές';
+  }
+
+  @override
+  String get insiderBuy => 'Αγορά';
+
+  @override
+  String get insiderSell => 'Πώληση';
+
+  @override
+  String get insiderHint =>
+      'Αγορές και πωλήσεις στην ανοιχτή αγορά από στελέχη και μέλη ΔΣ τις τελευταίες 90 ημέρες (SEC Form 4). Δεν υπολογίζονται ασκήσεις δικαιωμάτων προαίρεσης και παραχωρήσεις μετοχών.';
+
+  @override
+  String get insiderNone =>
+      'Καμία αγορά ή πώληση εσωτερικών στην ανοιχτή αγορά τις τελευταίες 90 ημέρες.';
+
+  @override
+  String get analystTrend => 'Πώς άλλαξαν οι απόψεις μήνα με τον μήνα';
 }

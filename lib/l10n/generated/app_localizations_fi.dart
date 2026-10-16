@@ -2145,4 +2145,51 @@ class AppLocalizationsFi extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol laski $percent huipustaan';
   }
+
+  @override
+  String get sectionInsiders => 'Sisäpiirikaupat';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ostoa',
+      one: '1 osto',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count myyntiä',
+      one: '1 myynti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Netto: $shares osaketta';
+  }
+
+  @override
+  String get insiderBuy => 'Ostettu';
+
+  @override
+  String get insiderSell => 'Myyty';
+
+  @override
+  String get insiderHint =>
+      'Johdon ja hallituksen jäsenten ostot ja myynnit avoimilla markkinoilla viimeisten 90 päivän aikana (SEC Form 4). Optioiden käyttöä ja osakepalkkioita ei lasketa.';
+
+  @override
+  String get insiderNone =>
+      'Ei sisäpiirin ostoja tai myyntejä avoimilla markkinoilla viimeisten 90 päivän aikana.';
+
+  @override
+  String get analystTrend => 'Miten näkemykset muuttuivat kuukausittain';
 }

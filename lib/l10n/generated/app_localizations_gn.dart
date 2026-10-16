@@ -2149,4 +2149,51 @@ class AppLocalizationsGn extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol oguejy $percent yvateguágui';
   }
+
+  @override
+  String get sectionInsiders => 'Mburuvichakuéra jejogua ha ñemu';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jejogua',
+      one: '1 jejogua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ñemu',
+      one: '1 ñemu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Opytáva: $shares acción';
+  }
+
+  @override
+  String get insiderBuy => 'Ojogua';
+
+  @override
+  String get insiderSell => 'Oñemu';
+
+  @override
+  String get insiderHint =>
+      'Mburuvicha ha director-kuéra jejogua ha ñemu ñemuha ijurujávape ko 90 ára ohasávape (SEC Form 4). Ndojeipapái opción jeporu ha acción ojeme\'ẽva.';
+
+  @override
+  String get insiderNone =>
+      'Ndaipóri mburuvichakuéra jejogua ni ñemu ñemuha ijurujávape ko 90 ára ohasávape.';
+
+  @override
+  String get analystTrend => 'Mbaʼéichapa oñemoambue umi temiandu jasy ha jasy';
 }

@@ -2149,4 +2149,51 @@ class AppLocalizationsHu extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol: $percent esés a csúcsról';
   }
+
+  @override
+  String get sectionInsiders => 'Bennfentes ügyletek';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vétel',
+      one: '1 vétel',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count eladás',
+      one: '1 eladás',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Nettó: $shares részvény';
+  }
+
+  @override
+  String get insiderBuy => 'Vett';
+
+  @override
+  String get insiderSell => 'Eladott';
+
+  @override
+  String get insiderHint =>
+      'A vezetők és az igazgatósági tagok nyílt piaci vételei és eladásai az elmúlt 90 napban (SEC Form 4). Az opciólehívás és a részvényjuttatás nem számít bele.';
+
+  @override
+  String get insiderNone =>
+      'Az elmúlt 90 napban nem volt bennfentes vétel vagy eladás a nyílt piacon.';
+
+  @override
+  String get analystTrend => 'Hogyan változtak a vélemények hónapról hónapra';
 }

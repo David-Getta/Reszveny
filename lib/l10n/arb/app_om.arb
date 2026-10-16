@@ -575,5 +575,14 @@
   "alertTrailingHint": "Gatii ol hordofa: erga qindeessitee as sadarkaa isaa ol'aanaa irraa gatiin hammana yoo bu'e si beeksisa.",
   "alertDescTrailing": "Ol'aanaa irraa {percent} bu'aa",
   "alertTrailingPeak": "ol'aanaa hanga ammaa: {price}",
-  "alertHitTrailing": "{symbol} ol'aanaa isaa irraa {percent} bu'eera"
+  "alertHitTrailing": "{symbol} ol'aanaa isaa irraa {percent} bu'eera",
+  "sectionInsiders": "Daldala namoota keessaa",
+  "insiderBuys": "{count, plural, =1{bittaa 1} other{bittaa {count}}}",
+  "insiderSells": "{count, plural, =1{gurgurtaa 1} other{gurgurtaa {count}}}",
+  "insiderNet": "Qulqulluu: aksiyoona {shares}",
+  "insiderBuy": "Bitame",
+  "insiderSell": "Gurgurame",
+  "insiderHint": "Bittaa fi gurgurtaa gabaa banaa irratti hoji-gaggeessitootaa fi daarektarootaan guyyoota 90 darban keessatti raawwataman (SEC Form 4). Fayyadamni filannoo (option) fi badhaasni aksiyoonaa hin lakkaa'aman.",
+  "insiderNone": "Guyyoota 90 darban keessatti bittaan ykn gurgurtaan namoota keessaa gabaa banaa irratti hin jiru.",
+  "analystTrend": "Akkaataa yaadni ji'a ji'aan jijjiirame"
 }

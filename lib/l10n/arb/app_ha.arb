@@ -575,5 +575,14 @@
   "alertTrailingHint": "Yana bin farashi sama: zai sanar idan farashi ya faɗi wannan adadin daga mafi girman matakinsa tun da ka saita shi.",
   "alertDescTrailing": "Faɗuwar {percent} daga ƙoli",
   "alertTrailingPeak": "ƙoli zuwa yanzu: {price}",
-  "alertHitTrailing": "{symbol} ya faɗi {percent} daga ƙolinsa"
+  "alertHitTrailing": "{symbol} ya faɗi {percent} daga ƙolinsa",
+  "sectionInsiders": "Cinikin shugabannin kamfani",
+  "insiderBuys": "{count, plural, =1{saye 1} other{saye {count}}}",
+  "insiderSells": "{count, plural, =1{sayarwa 1} other{sayarwa {count}}}",
+  "insiderNet": "Jimilla: hannun jari {shares}",
+  "insiderBuy": "An saya",
+  "insiderSell": "An sayar",
+  "insiderHint": "Saye da sayarwar shugabanni da daraktoci a kasuwa a buɗe cikin kwanaki 90 da suka gabata (SEC Form 4). Ba a ƙidaya amfani da zaɓin hannun jari da kyautar hannun jari ba.",
+  "insiderNone": "Babu saye ko sayarwar shugabanni a kasuwa a buɗe cikin kwanaki 90 da suka gabata.",
+  "analystTrend": "Yadda ra'ayoyi suka sauya wata-wata"
 }

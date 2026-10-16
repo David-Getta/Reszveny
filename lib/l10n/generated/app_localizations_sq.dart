@@ -2150,4 +2150,51 @@ class AppLocalizationsSq extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ra $percent nga maja';
   }
+
+  @override
+  String get sectionInsiders => 'Transaksionet e të brendshmëve';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count blerje',
+      one: '1 blerje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count shitje',
+      one: '1 shitje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Neto: $shares aksione';
+  }
+
+  @override
+  String get insiderBuy => 'Bleu';
+
+  @override
+  String get insiderSell => 'Shiti';
+
+  @override
+  String get insiderHint =>
+      'Blerje dhe shitje në tregun e hapur nga drejtuesit dhe anëtarët e bordit në 90 ditët e fundit (SEC Form 4). Ushtrimi i opsioneve dhe aksionet e dhuruara nuk llogariten.';
+
+  @override
+  String get insiderNone =>
+      'Asnjë blerje apo shitje e të brendshmëve në tregun e hapur në 90 ditët e fundit.';
+
+  @override
+  String get analystTrend => 'Si ndryshuan opinionet muaj pas muaji';
 }

@@ -2143,4 +2143,51 @@ class AppLocalizationsTk extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol iň ýokary derejesinden $percent düşdi';
   }
+
+  @override
+  String get sectionInsiders => 'Insaýderleriň amallary';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count satyn alyş',
+      one: '1 satyn alyş',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count satuw',
+      one: '1 satuw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Arassa: $shares paýnama';
+  }
+
+  @override
+  String get insiderBuy => 'Satyn aldy';
+
+  @override
+  String get insiderSell => 'Satdy';
+
+  @override
+  String get insiderHint =>
+      'Soňky 90 günde ýolbaşçylaryň we direktorlaryň açyk bazarda eden satyn alyşlary we satuwlary (SEC Form 4). Opsionlaryň ulanylmagy we sylag paýnamalary hasaba alynmaýar.';
+
+  @override
+  String get insiderNone =>
+      'Soňky 90 günde açyk bazarda insaýderleriň satyn alyşy ýa-da satuwy bolmady.';
+
+  @override
+  String get analystTrend => 'Pikirler aýba-aý nähili üýtgedi';
 }

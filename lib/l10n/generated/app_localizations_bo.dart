@@ -2133,4 +2133,51 @@ class AppLocalizationsBo extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol ཡང་རྩེ་ནས་ $percent ཆག་སོང་།';
   }
+
+  @override
+  String get sectionInsiders => 'ནང་ཁུལ་མིའི་ཉོ་འཚོང';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉོ་བ་ $count',
+      one: 'ཉོ་བ་ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'འཚོང་བ་ $count',
+      one: 'འཚོང་བ་ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'ལྷག་མ། ཧུར་ཁག $shares';
+  }
+
+  @override
+  String get insiderBuy => 'ཉོས་པ';
+
+  @override
+  String get insiderSell => 'བཙོངས་པ';
+
+  @override
+  String get insiderHint =>
+      'ཉིན་ 90 ནང་ལས་དོན་འགན་འཛིན་དང་འགོ་འཛིན་ཚོས་ཁ་ཕྱེ་ཚོང་ར་ནས་ཉོ་འཚོང་བྱས་པ། (SEC Form 4) འདེམས་ཆ་ལག་བསྟར་དང་ཧུར་ཁག་གི་བྱ་དགའ་མི་རྩིས།';
+
+  @override
+  String get insiderNone =>
+      'ཉིན་ 90 ནང་ཁ་ཕྱེ་ཚོང་ར་ནས་ནང་ཁུལ་མིའི་ཉོ་འཚོང་མེད།';
+
+  @override
+  String get analystTrend => 'ཟླ་བ་རེ་རེར་བསམ་འཆར་ཇི་ལྟར་འགྱུར་བ།';
 }

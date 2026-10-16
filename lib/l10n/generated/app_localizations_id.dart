@@ -2139,4 +2139,51 @@ class AppLocalizationsId extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol turun $percent dari puncaknya';
   }
+
+  @override
+  String get sectionInsiders => 'Transaksi orang dalam';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pembelian',
+      one: '1 pembelian',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count penjualan',
+      one: '1 penjualan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Bersih: $shares saham';
+  }
+
+  @override
+  String get insiderBuy => 'Dibeli';
+
+  @override
+  String get insiderSell => 'Dijual';
+
+  @override
+  String get insiderHint =>
+      'Pembelian dan penjualan di pasar terbuka oleh eksekutif dan direktur dalam 90 hari terakhir (SEC Form 4). Pelaksanaan opsi dan pemberian saham tidak dihitung.';
+
+  @override
+  String get insiderNone =>
+      'Tidak ada pembelian atau penjualan orang dalam di pasar terbuka dalam 90 hari terakhir.';
+
+  @override
+  String get analystTrend => 'Perubahan pandangan dari bulan ke bulan';
 }

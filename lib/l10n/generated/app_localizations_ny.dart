@@ -2150,4 +2150,51 @@ class AppLocalizationsNy extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol yatsika $percent kuchokera pamwamba';
   }
+
+  @override
+  String get sectionInsiders => 'Malonda a anthu amkati';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kugula $count',
+      one: 'kugula 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'kugulitsa $count',
+      one: 'kugulitsa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Zotsala: masheya $shares';
+  }
+
+  @override
+  String get insiderBuy => 'Anagula';
+
+  @override
+  String get insiderSell => 'Anagulitsa';
+
+  @override
+  String get insiderHint =>
+      'Kugula ndi kugulitsa pamsika wotseguka kochitidwa ndi akuluakulu ndi otsogolera m\'masiku 90 apitawa (SEC Form 4). Kugwiritsa ntchito ma option ndi masheya opatsidwa sikuwerengedwa.';
+
+  @override
+  String get insiderNone =>
+      'Palibe kugula kapena kugulitsa kwa anthu amkati pamsika wotseguka m\'masiku 90 apitawa.';
+
+  @override
+  String get analystTrend => 'Momwe malingaliro asinthira mwezi ndi mwezi';
 }

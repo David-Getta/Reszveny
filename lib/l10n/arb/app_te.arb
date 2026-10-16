@@ -575,5 +575,14 @@
   "alertTrailingHint": "ధరను పైకి అనుసరిస్తుంది: సెట్ చేసినప్పటి నుండి వచ్చిన అత్యధిక స్థాయి నుండి ధర ఇంత పడితే తెలియజేస్తుంది.",
   "alertDescTrailing": "గరిష్ఠం నుండి {percent} పతనం",
   "alertTrailingPeak": "ఇప్పటి వరకు గరిష్ఠం: {price}",
-  "alertHitTrailing": "{symbol} గరిష్ఠం నుండి {percent} పడింది"
+  "alertHitTrailing": "{symbol} గరిష్ఠం నుండి {percent} పడింది",
+  "sectionInsiders": "ఇన్‌సైడర్ లావాదేవీలు",
+  "insiderBuys": "{count, plural, =1{1 కొనుగోలు} other{{count} కొనుగోళ్లు}}",
+  "insiderSells": "{count, plural, =1{1 అమ్మకం} other{{count} అమ్మకాలు}}",
+  "insiderNet": "నికరం: {shares} షేర్లు",
+  "insiderBuy": "కొన్నారు",
+  "insiderSell": "అమ్మారు",
+  "insiderHint": "గత 90 రోజుల్లో ఎగ్జిక్యూటివ్‌లు, డైరెక్టర్లు ఓపెన్ మార్కెట్‌లో చేసిన కొనుగోళ్లు, అమ్మకాలు (SEC Form 4). ఆప్షన్ వినియోగాలు, షేర్ అవార్డులు లెక్కలోకి తీసుకోబడవు.",
+  "insiderNone": "గత 90 రోజుల్లో ఓపెన్ మార్కెట్‌లో ఇన్‌సైడర్ కొనుగోళ్లు లేదా అమ్మకాలు లేవు.",
+  "analystTrend": "నెలనెలా అభిప్రాయాలు ఎలా మారాయి"
 }

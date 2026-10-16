@@ -575,5 +575,14 @@
   "alertTrailingHint": "Acompanha o preço a subir: o alerta dispara quando o preço cai isto desde o ponto mais alto atingido após ser definido.",
   "alertDescTrailing": "Queda de {percent} desde o pico",
   "alertTrailingPeak": "pico até agora: {price}",
-  "alertHitTrailing": "{symbol} caiu {percent} desde o pico"
+  "alertHitTrailing": "{symbol} caiu {percent} desde o pico",
+  "sectionInsiders": "Negociações de insiders",
+  "insiderBuys": "{count, plural, =1{1 compra} other{{count} compras}}",
+  "insiderSells": "{count, plural, =1{1 venda} other{{count} vendas}}",
+  "insiderNet": "Líquido: {shares} ações",
+  "insiderBuy": "Comprou",
+  "insiderSell": "Vendeu",
+  "insiderHint": "Compras e vendas no mercado aberto por executivos e conselheiros nos últimos 90 dias (SEC Form 4). Exercícios de opções e concessões de ações não são contabilizados.",
+  "insiderNone": "Nenhuma compra ou venda de insiders no mercado aberto nos últimos 90 dias.",
+  "analystTrend": "Como as opiniões mudaram mês a mês"
 }

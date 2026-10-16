@@ -2144,4 +2144,51 @@ class AppLocalizationsSv extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol föll $percent från toppen';
   }
+
+  @override
+  String get sectionInsiders => 'Insynshandel';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count köp',
+      one: '1 köp',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count försäljningar',
+      one: '1 försäljning',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Netto: $shares aktier';
+  }
+
+  @override
+  String get insiderBuy => 'Köpte';
+
+  @override
+  String get insiderSell => 'Sålde';
+
+  @override
+  String get insiderHint =>
+      'Köp och försäljningar på öppna marknaden av ledande befattningshavare och styrelseledamöter de senaste 90 dagarna (SEC Form 4). Utnyttjade optioner och aktietilldelningar räknas inte.';
+
+  @override
+  String get insiderNone =>
+      'Inga insynsköp eller -försäljningar på öppna marknaden de senaste 90 dagarna.';
+
+  @override
+  String get analystTrend => 'Hur åsikterna har ändrats månad för månad';
 }

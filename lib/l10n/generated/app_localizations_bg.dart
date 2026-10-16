@@ -2144,4 +2144,51 @@ class AppLocalizationsBg extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol падна с $percent от върха си';
   }
+
+  @override
+  String get sectionInsiders => 'Сделки на вътрешни лица';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count покупки',
+      one: '1 покупка',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count продажби',
+      one: '1 продажба',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'Нето: $shares акции';
+  }
+
+  @override
+  String get insiderBuy => 'Купени';
+
+  @override
+  String get insiderSell => 'Продадени';
+
+  @override
+  String get insiderHint =>
+      'Покупки и продажби на открития пазар от ръководители и директори през последните 90 дни (SEC Form 4). Упражняването на опции и предоставените акции не се отчитат.';
+
+  @override
+  String get insiderNone =>
+      'Няма покупки или продажби на вътрешни лица на открития пазар през последните 90 дни.';
+
+  @override
+  String get analystTrend => 'Как се промениха мненията месец по месец';
 }

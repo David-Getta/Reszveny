@@ -2139,4 +2139,51 @@ class AppLocalizationsBho extends AppLocalizations {
   String alertHitTrailing(String symbol, String percent) {
     return '$symbol शिखर से $percent गिरल';
   }
+
+  @override
+  String get sectionInsiders => 'इनसाइडर लेनदेन';
+
+  @override
+  String insiderBuys(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count खरीद',
+      one: '1 खरीद',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderSells(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count बिक्री',
+      one: '1 बिक्री',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String insiderNet(String shares) {
+    return 'शुद्ध: $shares शेयर';
+  }
+
+  @override
+  String get insiderBuy => 'खरीदल';
+
+  @override
+  String get insiderSell => 'बेचल';
+
+  @override
+  String get insiderHint =>
+      'पिछला 90 दिन में अधिकारी आ निदेशक लोग के खुला बाजार में खरीद आ बिक्री (SEC Form 4)। ऑप्शन के इस्तेमाल आ शेयर इनाम के गिनती ना होला।';
+
+  @override
+  String get insiderNone =>
+      'पिछला 90 दिन में खुला बाजार में कवनो इनसाइडर खरीद भा बिक्री ना भइल।';
+
+  @override
+  String get analystTrend => 'महीना-दर-महीना राय कइसे बदलल';
 }

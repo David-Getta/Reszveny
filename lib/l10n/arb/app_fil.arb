@@ -575,5 +575,14 @@
   "alertTrailingHint": "Sinusundan ang presyo pataas: aabisuhan ka kapag bumaba ang presyo nang ganito mula sa pinakamataas nitong antas mula nang itakda mo ito.",
   "alertDescTrailing": "{percent} baba mula sa tuktok",
   "alertTrailingPeak": "tuktok sa ngayon: {price}",
-  "alertHitTrailing": "Bumaba ang {symbol} nang {percent} mula sa tuktok"
+  "alertHitTrailing": "Bumaba ang {symbol} nang {percent} mula sa tuktok",
+  "sectionInsiders": "Mga transaksyon ng insider",
+  "insiderBuys": "{count, plural, =1{1 pagbili} other{{count} pagbili}}",
+  "insiderSells": "{count, plural, =1{1 pagbenta} other{{count} pagbenta}}",
+  "insiderNet": "Net: {shares} share",
+  "insiderBuy": "Bumili",
+  "insiderSell": "Nagbenta",
+  "insiderHint": "Mga pagbili at pagbenta sa open market ng mga executive at director sa nakalipas na 90 araw (SEC Form 4). Hindi kasama ang paggamit ng option at mga share award.",
+  "insiderNone": "Walang pagbili o pagbenta ng insider sa open market sa nakalipas na 90 araw.",
+  "analystTrend": "Paano nagbago ang mga pananaw bawat buwan"
 }
