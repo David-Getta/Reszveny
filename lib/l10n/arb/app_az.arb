@@ -544,5 +544,6 @@
   "watchSortLosers": "Ən çox düşənlər əvvəl",
   "watchSortName": "Tikerə görə (A–Z)",
   "watchHint": "Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir.",
-  "analysisReady": "{symbol}: təhliliniz hazırdır."
+  "analysisReady": "{symbol}: təhliliniz hazırdır.",
+  "alertFromCost": "Orta alış qiymətinizə ({price}) görə:"
 }

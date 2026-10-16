@@ -2010,4 +2010,9 @@ class AppLocalizationsKi extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ũthuthuria waku nĩ mũhaarĩrie.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kuuma thogora-inĩ waku wa gatagatĩ wa kũgũra ($price):';
+  }
 }

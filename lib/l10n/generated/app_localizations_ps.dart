@@ -2002,4 +2002,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ستاسو شننه چمتو ده.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ستاسو د اخیستلو له منځني بیې ($price) څخه:';
+  }
 }

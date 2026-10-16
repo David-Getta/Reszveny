@@ -544,5 +544,6 @@
   "watchSortLosers": "Kadakkelan nga immababa umuna",
   "watchSortName": "Babaen ti ticker (A–Z)",
   "watchHint": "Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw.",
-  "analysisReady": "{symbol}: nakasagan ti panaganalisam."
+  "analysisReady": "{symbol}: nakasagan ti panaganalisam.",
+  "alertFromCost": "Manipud iti promedio a presio ti panaggatangmo ({price}):"
 }

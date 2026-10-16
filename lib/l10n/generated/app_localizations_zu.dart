@@ -2017,4 +2017,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ukuhlaziya kwakho sekulungile.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kusukela entengweni yakho emaphakathi yokuthenga ($price):';
+  }
 }

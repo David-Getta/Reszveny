@@ -1981,4 +1981,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ትንተናዎ ዝግጁ ነው።';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ከአማካይ የግዢ ዋጋዎ ($price) አንጻር፦';
+  }
 }

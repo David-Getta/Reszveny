@@ -544,5 +544,6 @@
   "watchSortLosers": "Leswi wileke ngopfu ku sungula",
   "watchSortName": "Hi ticker (A–Z)",
   "watchHint": "Koka xikhomo ku hlela nakambe, sindzisa eximatsini ku susa. Layini yi kombisa masiku ya 30 lama hundzeke.",
-  "analysisReady": "{symbol}: nxopaxopo wa wena wu lunghekile."
+  "analysisReady": "{symbol}: nxopaxopo wa wena wu lunghekile.",
+  "alertFromCost": "Ku suka eka nxavo wa wena wa le xikarhi wo xava ({price}):"
 }

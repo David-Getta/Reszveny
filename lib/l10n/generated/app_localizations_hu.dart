@@ -2015,4 +2015,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: elkészült az elemzés.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Az átlagos vételárad ($price) alapján:';
+  }
 }

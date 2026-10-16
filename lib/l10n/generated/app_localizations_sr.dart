@@ -2048,4 +2048,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ваша анализа је спремна.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'У односу на вашу просечну куповну цену ($price):';
+  }
 }

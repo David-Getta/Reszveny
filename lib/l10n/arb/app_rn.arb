@@ -544,5 +544,6 @@
   "watchSortLosers": "Ivyamanutse cane imbere",
   "watchSortName": "Ukurikije ticker (A–Z)",
   "watchHint": "Kwega igifashwa kugira usubire gutunganya, nyereza ibumoso kugira ukureko. Umurongo werekana imisi 30 iheze.",
-  "analysisReady": "{symbol}: isesengura ryawe ryateguwe."
+  "analysisReady": "{symbol}: isesengura ryawe ryateguwe.",
+  "alertFromCost": "Uhereye ku giciro cawe co kugura c'ikigereranyo ({price}):"
 }

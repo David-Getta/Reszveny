@@ -2009,4 +2009,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: আপনার বিশ্লেষণ প্রস্তুত।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'আপনার গড় ক্রয়মূল্য ($price) থেকে:';
+  }
 }

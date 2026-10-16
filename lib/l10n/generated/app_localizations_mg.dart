@@ -2023,4 +2023,9 @@ class AppLocalizationsMg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: vonona ny famakafakanao.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Araka ny vidiny antonony nividiananao ($price):';
+  }
 }

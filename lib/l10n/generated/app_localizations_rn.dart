@@ -2016,4 +2016,9 @@ class AppLocalizationsRn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: isesengura ryawe ryateguwe.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Uhereye ku giciro cawe co kugura c\'ikigereranyo ($price):';
+  }
 }

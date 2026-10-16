@@ -2012,4 +2012,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analîza te amade ye.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Li gorî bihayê kirînê yê navînî yê te ($price):';
+  }
 }

@@ -2010,4 +2010,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: your analysis don ready.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'From your average buy price ($price):';
+  }
 }

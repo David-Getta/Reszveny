@@ -2064,4 +2064,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ваш аналіз готовий.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Від вашої середньої ціни купівлі ($price):';
+  }
 }

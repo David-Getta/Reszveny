@@ -2019,4 +2019,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: andam na ang imong pagtuki.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Gikan sa imong kasagaran nga presyo sa pagpalit ($price):';
+  }
 }

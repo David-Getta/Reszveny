@@ -2015,4 +2015,9 @@ class AppLocalizationsLua extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: dikonkonona diebe didi dilongolola.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Bilondeshile mushinga webe wa pankatshi wa kusumba ($price):';
+  }
 }

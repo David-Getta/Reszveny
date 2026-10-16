@@ -2012,4 +2012,9 @@ class AppLocalizationsTg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: таҳлили шумо омода аст.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Аз нархи миёнаи харидатон ($price):';
+  }
 }

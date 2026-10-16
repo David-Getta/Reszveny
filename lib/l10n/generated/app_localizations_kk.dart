@@ -2011,4 +2011,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: талдауыңыз дайын.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Орташа сатып алу бағаңыздан ($price):';
+  }
 }

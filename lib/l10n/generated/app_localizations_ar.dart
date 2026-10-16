@@ -2051,4 +2051,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: تحليلك جاهز.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'بناءً على متوسط سعر شرائك ($price):';
+  }
 }

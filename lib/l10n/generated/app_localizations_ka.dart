@@ -2012,4 +2012,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: თქვენი ანალიზი მზადაა.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'თქვენი საშუალო შესყიდვის ფასიდან ($price):';
+  }
 }

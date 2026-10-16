@@ -544,5 +544,6 @@
   "watchSortLosers": "Labiausiai nukritę pirmiau",
   "watchSortName": "Pagal simbolį (A–Z)",
   "watchHint": "Vilkite rankenėlę, kad pakeistumėte tvarką, perbraukite kairėn, kad pašalintumėte. Linija rodo pastarąsias 30 dienų.",
-  "analysisReady": "{symbol}: jūsų analizė parengta."
+  "analysisReady": "{symbol}: jūsų analizė parengta.",
+  "alertFromCost": "Pagal jūsų vidutinę pirkimo kainą ({price}):"
 }

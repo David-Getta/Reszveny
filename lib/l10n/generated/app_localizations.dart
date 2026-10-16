@@ -3606,6 +3606,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{symbol}: your analysis is ready.'**
   String analysisReady(String symbol);
+
+  /// In the price alert dialog, above quick buttons (−20%, −10%, +10%…) that set the target relative to the user's average purchase price.
+  ///
+  /// In en, this message translates to:
+  /// **'From your average cost ({price}):'**
+  String alertFromCost(String price);
 }
 
 class _AppLocalizationsDelegate

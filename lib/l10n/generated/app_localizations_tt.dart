@@ -2007,4 +2007,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: анализыгыз әзер.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Уртача сатып алу бәягездән ($price):';
+  }
 }

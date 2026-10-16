@@ -2020,4 +2020,9 @@ class AppLocalizationsLn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: botaleli na yo esili.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kolanda ntalo na yo ya katikati ya kosomba ($price):';
+  }
 }

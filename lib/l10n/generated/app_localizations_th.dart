@@ -1984,4 +1984,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: การวิเคราะห์ของคุณพร้อมแล้ว';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'จากราคาซื้อเฉลี่ยของคุณ ($price):';
+  }
 }

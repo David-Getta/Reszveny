@@ -544,5 +544,6 @@
   "watchSortLosers": "Största förlorarna först",
   "watchSortName": "Efter ticker (A–Z)",
   "watchHint": "Dra i handtaget för att ändra ordning, svep åt vänster för att ta bort. Linjen visar de senaste 30 dagarna.",
-  "analysisReady": "{symbol}: din analys är klar."
+  "analysisReady": "{symbol}: din analys är klar.",
+  "alertFromCost": "Utifrån ditt genomsnittliga inköpspris ({price}):"
 }

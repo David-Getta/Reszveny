@@ -2022,4 +2022,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: tshekatsheko ya gago e loketše.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Go ya ka theko ya gago ya magareng ya go reka ($price):';
+  }
 }

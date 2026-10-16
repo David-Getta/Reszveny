@@ -2009,4 +2009,9 @@ class AppLocalizationsHt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analiz ou a pare.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Apati pri mwayen ou te achte a ($price):';
+  }
 }

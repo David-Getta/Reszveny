@@ -544,5 +544,6 @@
   "watchSortLosers": "Pinakadako nga pagnubo anay",
   "watchSortName": "Suno sa ticker (A–Z)",
   "watchHint": "Guyuda ang hawiran agod hanayon liwat, i-swipe pawala agod kuhaon. Ginapakita sang linya ang nagligad nga 30 ka adlaw.",
-  "analysisReady": "{symbol}: handa na ang imo pagtuki."
+  "analysisReady": "{symbol}: handa na ang imo pagtuki.",
+  "alertFromCost": "Halin sa imo average nga presyo sang pagbakal ({price}):"
 }

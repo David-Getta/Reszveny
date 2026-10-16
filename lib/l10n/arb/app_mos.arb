@@ -544,5 +544,6 @@
   "watchSortLosers": "Sẽn sig wʋsg n deng",
   "watchSortName": "Bãnde (A–Z)",
   "watchHint": "Dɩk n yãag gãnegrã n tik-y-yã, yãag-y goabg n yiis. Sulgã wilgda rasem 30 sẽn loogã.",
-  "analysisReady": "{symbol}: f vẽenegrã sõama."
+  "analysisReady": "{symbol}: f vẽenegrã sõama.",
+  "alertFromCost": "F sẽn da ne ligd sẽn yaa sʋka wã ({price}) zugu:"
 }

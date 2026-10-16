@@ -544,5 +544,6 @@
   "watchSortLosers": "Yên herî zêde daketine pêşî",
   "watchSortName": "Li gorî sembolê (A–Z)",
   "watchHint": "Destikê bikişîne da ku rêzê biguherînî, ber bi çepê ve bişemitîne da ku rakî. Xet 30 rojên dawî nîşan dide.",
-  "analysisReady": "{symbol}: analîza te amade ye."
+  "analysisReady": "{symbol}: analîza te amade ye.",
+  "alertFromCost": "Li gorî bihayê kirînê yê navînî yê te ({price}):"
 }

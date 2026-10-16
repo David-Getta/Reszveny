@@ -2011,4 +2011,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: uchambuzi wako uko tayari.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kutoka bei yako ya wastani ya kununua ($price):';
+  }
 }

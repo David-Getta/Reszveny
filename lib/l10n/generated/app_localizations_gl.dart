@@ -2033,4 +2033,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: a túa análise está lista.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Respecto ao teu prezo medio de compra ($price):';
+  }
 }

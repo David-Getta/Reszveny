@@ -2018,4 +2018,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: η ανάλυσή σας είναι έτοιμη.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Με βάση τη μέση τιμή αγοράς σας ($price):';
+  }
 }

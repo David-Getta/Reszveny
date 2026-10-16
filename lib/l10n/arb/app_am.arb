@@ -544,5 +544,6 @@
   "watchSortLosers": "ከፍተኛ ቅናሽ ያላቸው መጀመሪያ",
   "watchSortName": "በምልክት (A–Z)",
   "watchHint": "ቅደም ተከተሉን ለመቀየር መያዣውን ይጎትቱ፣ ለማስወገድ ወደ ግራ ያንሸራትቱ። መስመሩ ያለፉትን 30 ቀናት ያሳያል።",
-  "analysisReady": "{symbol}: ትንተናዎ ዝግጁ ነው።"
+  "analysisReady": "{symbol}: ትንተናዎ ዝግጁ ነው።",
+  "alertFromCost": "ከአማካይ የግዢ ዋጋዎ ({price}) አንጻር፦"
 }

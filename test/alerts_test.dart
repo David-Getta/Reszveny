@@ -81,6 +81,34 @@ void main() {
     expect(notifier.sent.length, 2);
   });
 
+  testWidgets('with an own position, quick targets from the average cost fill the alert', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Set price alert'));
+    await tester.pumpAndSettle();
+    expect(find.text('From your average cost (200.00 USD):'), findsOneWidget);
+    // +20% → 240 fölé.
+    await tester.tap(find.byKey(const ValueKey('alert-cost-20')));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, '240'), findsOneWidget);
+    // −10% → 180 alá (a feltétel is átvált).
+    await tester.tap(find.byKey(const ValueKey('alert-cost--10')));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, '180'), findsOneWidget);
+    await tester.tap(find.widgetWithText(FilledButton, 'Set alert'));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts.single.kind, AlertKind.below);
+    expect(s.alerts.alerts.single.value, 180);
+  });
+
   testWidgets('an alert set on the stock page fires with a localized message and opens the stock', (tester) async {
     final notifier = FakeNotifier();
     final s = services(notifier: notifier);

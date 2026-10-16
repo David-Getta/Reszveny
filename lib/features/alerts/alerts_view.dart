@@ -158,6 +158,32 @@ class _AlertDialogState extends State<_AlertDialog> {
               ),
               onSubmitted: (_) => _submit(),
             ),
+            // Saját pozíciónál gyors célárak az átlagos vételárhoz képest.
+            if (AppServices.of(context).portfolio.positionOf(widget.symbol) case final pos?
+                when pos.averageCost > 0 && (widget.currency == null || pos.currency == widget.currency)) ...[
+              const SizedBox(height: 12),
+              Text(
+                l10n.alertFromCost(fmt.price(pos.averageCost, pos.currency)),
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
+              ),
+              const SizedBox(height: 6),
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                children: [
+                  for (final pct in const [-20, -10, 10, 20, 50])
+                    ActionChip(
+                      key: ValueKey('alert-cost-$pct'),
+                      label: Text('${pct > 0 ? '+' : '−'}${pct.abs()}%'),
+                      visualDensity: VisualDensity.compact,
+                      onPressed: () => setState(() {
+                        _kind = pct > 0 ? AlertKind.above : AlertKind.below;
+                        _prefill(value: pos.averageCost * (1 + pct / 100));
+                      }),
+                    ),
+                ],
+              ),
+            ],
             const SizedBox(height: 12),
             Text(l10n.alertsNote, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
           ],

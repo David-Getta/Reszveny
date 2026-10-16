@@ -2009,4 +2009,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: derňewiňiz taýýar.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ortaça satyn alyş bahaňyzdan ($price):';
+  }
 }

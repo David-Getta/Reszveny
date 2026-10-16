@@ -2061,4 +2061,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: vaše analýza je hotová.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Vzhledem k vaší průměrné nákupní ceně ($price):';
+  }
 }

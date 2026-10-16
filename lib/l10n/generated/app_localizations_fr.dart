@@ -2020,4 +2020,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol : votre analyse est prête.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Par rapport à votre prix d’achat moyen ($price) :';
+  }
 }

@@ -2011,4 +2011,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: din analys är klar.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Utifrån ditt genomsnittliga inköpspris ($price):';
+  }
 }

@@ -2011,4 +2011,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: анализът ви е готов.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Спрямо средната ви покупна цена ($price):';
+  }
 }

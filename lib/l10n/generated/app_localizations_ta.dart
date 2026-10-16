@@ -2019,4 +2019,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: உங்கள் பகுப்பாய்வு தயார்.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'உங்கள் சராசரி வாங்கிய விலையிலிருந்து ($price):';
+  }
 }

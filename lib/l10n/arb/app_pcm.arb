@@ -544,5 +544,6 @@
   "watchSortLosers": "Wetin fall pass first",
   "watchSortName": "By ticker (A–Z)",
   "watchHint": "Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days.",
-  "analysisReady": "{symbol}: your analysis don ready."
+  "analysisReady": "{symbol}: your analysis don ready.",
+  "alertFromCost": "From your average buy price ({price}):"
 }

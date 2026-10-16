@@ -1975,4 +1975,9 @@ class AppLocalizationsTi extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol፦ ትንታነኹም ተዳልዩ ኣሎ።';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ካብ ማእከላይ ዋጋ ዕድጊትኩም ($price)፦';
+  }
 }

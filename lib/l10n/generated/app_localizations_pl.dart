@@ -2068,4 +2068,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: Twoja analiza jest gotowa.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Względem Twojej średniej ceny zakupu ($price):';
+  }
 }

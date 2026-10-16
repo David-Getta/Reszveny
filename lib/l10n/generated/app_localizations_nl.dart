@@ -2015,4 +2015,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: je analyse is klaar.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Op basis van je gemiddelde aankoopprijs ($price):';
+  }
 }

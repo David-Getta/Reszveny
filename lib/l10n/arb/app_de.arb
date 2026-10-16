@@ -544,5 +544,6 @@
   "watchSortLosers": "Größte Verlierer zuerst",
   "watchSortName": "Nach Ticker (A–Z)",
   "watchHint": "Zum Umsortieren den Griff ziehen, zum Entfernen nach links wischen. Die Linie zeigt die letzten 30 Tage.",
-  "analysisReady": "{symbol}: Deine Analyse ist fertig."
+  "analysisReady": "{symbol}: Deine Analyse ist fertig.",
+  "alertFromCost": "Bezogen auf deinen durchschnittlichen Kaufpreis ({price}):"
 }

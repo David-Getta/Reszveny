@@ -2014,4 +2014,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: jou ontleding is gereed.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Vanaf jou gemiddelde koste ($price):';
+  }
 }

@@ -2020,4 +2020,9 @@ class AppLocalizationsLg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: okwekenneenya kwo kuwedde.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Okusinziira ku bbeeyi yo eya wakati gye wagulirako ($price):';
+  }
 }

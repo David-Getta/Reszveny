@@ -544,5 +544,6 @@
   "watchSortLosers": "Legnagyobb esők elöl",
   "watchSortName": "Ticker szerint (A–Z)",
   "watchHint": "A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja.",
-  "analysisReady": "{symbol}: elkészült az elemzés."
+  "analysisReady": "{symbol}: elkészült az elemzés.",
+  "alertFromCost": "Az átlagos vételárad ({price}) alapján:"
 }

@@ -2011,4 +2011,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analisis sampeyan wis siyap.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Saka rega tuku rata-rata sampeyan ($price):';
+  }
 }

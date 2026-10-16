@@ -2021,4 +2021,9 @@ class AppLocalizationsTs extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nxopaxopo wa wena wu lunghekile.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ku suka eka nxavo wa wena wa le xikarhi wo xava ($price):';
+  }
 }

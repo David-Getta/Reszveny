@@ -2016,4 +2016,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: a sua análise está pronta.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Com base no seu preço médio de compra ($price):';
+  }
 }

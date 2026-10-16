@@ -544,5 +544,6 @@
   "watchSortLosers": "Ebyakka ennyo bisooke",
   "watchSortName": "Okusinziira ku ticker (A–Z)",
   "watchHint": "Walula ekikwatibwako okusengeka obulala, sikula ku kkono okuggyako. Olunyiriri lulaga ennaku 30 eziyise.",
-  "analysisReady": "{symbol}: okwekenneenya kwo kuwedde."
+  "analysisReady": "{symbol}: okwekenneenya kwo kuwedde.",
+  "alertFromCost": "Okusinziira ku bbeeyi yo eya wakati gye wagulirako ({price}):"
 }

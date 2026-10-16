@@ -2004,4 +2004,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: הניתוח שלך מוכן.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ביחס למחיר הקנייה הממוצע שלך ($price):';
+  }
 }

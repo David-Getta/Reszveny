@@ -2021,4 +2021,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: Deine Analyse ist fertig.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Bezogen auf deinen durchschnittlichen Kaufpreis ($price):';
+  }
 }

@@ -544,5 +544,6 @@
   "watchSortLosers": "Mudhun paling gedhé dhisik",
   "watchSortName": "Miturut kode saham (A–Z)",
   "watchHint": "Seret gagang kanggo ngurutaké manèh, gésér ngiwa kanggo mbusak. Garis nuduhaké 30 dina pungkasan.",
-  "analysisReady": "{symbol}: analisis sampeyan wis siyap."
+  "analysisReady": "{symbol}: analisis sampeyan wis siyap.",
+  "alertFromCost": "Saka rega tuku rata-rata sampeyan ({price}):"
 }

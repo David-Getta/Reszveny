@@ -2002,4 +2002,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: توهان جو تجزيو تيار آهي.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'توهان جي سراسري خريد قيمت ($price) کان:';
+  }
 }

@@ -2017,4 +2017,9 @@ class AppLocalizationsOm extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: xiinxalli kee qophaa\'eera.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Gatii bittaa giddugaleessa kee ($price) irraa:';
+  }
 }

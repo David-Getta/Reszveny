@@ -2012,4 +2012,9 @@ class AppLocalizationsSu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analisis anjeun parantos siap.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Tina harga beuli rata-rata anjeun ($price):';
+  }
 }

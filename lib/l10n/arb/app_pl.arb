@@ -544,5 +544,6 @@
   "watchSortLosers": "Największe spadki najpierw",
   "watchSortName": "Według tickera (A–Z)",
   "watchHint": "Przeciągnij uchwyt, aby zmienić kolejność, przesuń w lewo, aby usunąć. Linia pokazuje ostatnie 30 dni.",
-  "analysisReady": "{symbol}: Twoja analiza jest gotowa."
+  "analysisReady": "{symbol}: Twoja analiza jest gotowa.",
+  "alertFromCost": "Względem Twojej średniej ceny zakupu ({price}):"
 }

@@ -2015,4 +2015,9 @@ class AppLocalizationsSn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ongororo yako yagadzirira.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kubva pamutengo wako wepakati wekutenga ($price):';
+  }
 }

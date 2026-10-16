@@ -2003,4 +2003,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: သင့်ခွဲခြမ်းစိတ်ဖြာချက် အဆင်သင့်ဖြစ်ပါပြီ။';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'သင့်ပျမ်းမျှဝယ်ဈေး ($price) မှ -';
+  }
 }

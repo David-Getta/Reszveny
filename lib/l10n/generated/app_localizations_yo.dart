@@ -2009,4 +2009,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ìtúpalẹ̀ rẹ ti ṣetán.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Láti inú iye àròpin tí o fi rà á ($price):';
+  }
 }

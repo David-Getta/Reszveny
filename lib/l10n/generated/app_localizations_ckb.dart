@@ -2011,4 +2011,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: شیکارییەکەت ئامادەیە.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'بەپێی تێکڕای نرخی کڕینەکەت ($price):';
+  }
 }

@@ -2020,4 +2020,9 @@ class AppLocalizationsTn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: tshekatsheko ya gago e siametse.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Go tswa mo tlhwatlhweng ya gago ya magareng ya go reka ($price):';
+  }
 }

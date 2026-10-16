@@ -544,5 +544,6 @@
   "watchSortLosers": "Tse theohileng haholo pele",
   "watchSortName": "Ka ticker (A–Z)",
   "watchHint": "Hula sehokelo ho hlophisa bocha, sutumetsa ka ho le letshehadi ho tlosa. Mola o bontsha matsatsi a 30 a fetileng.",
-  "analysisReady": "{symbol}: manollo a hao o lokile."
+  "analysisReady": "{symbol}: manollo a hao o lokile.",
+  "alertFromCost": "Ho tswa theko ya hao e mahareng ya ho reka ({price}):"
 }

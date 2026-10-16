@@ -544,5 +544,6 @@
   "watchSortLosers": "الأكثر انخفاضًا أولًا",
   "watchSortName": "حسب رمز السهم (A–Z)",
   "watchHint": "اسحب المقبض لإعادة الترتيب، ومرّر لليسار للإزالة. يعرض الخط آخر 30 يومًا.",
-  "analysisReady": "{symbol}: تحليلك جاهز."
+  "analysisReady": "{symbol}: تحليلك جاهز.",
+  "alertFromCost": "بناءً على متوسط سعر شرائك ({price}):"
 }

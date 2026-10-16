@@ -544,5 +544,6 @@
   "watchSortLosers": "Yina me kulumuka mingi ntete",
   "watchSortName": "Na ticker (A–Z)",
   "watchHint": "Benda kisimbidilu sambu na kusoba ndonga, nyerula na lumoso sambu na kukatula. Mulongo ke monisa bilumbu 30 ya me luta.",
-  "analysisReady": "{symbol}: nsosa na nge me kuma ya kubuka."
+  "analysisReady": "{symbol}: nsosa na nge me kuma ya kubuka.",
+  "alertFromCost": "Na kutadila ntalu ya kati ya nge ya kusumba ({price}):"
 }

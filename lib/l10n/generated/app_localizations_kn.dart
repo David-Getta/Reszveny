@@ -2017,4 +2017,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆ ಸಿದ್ಧವಾಗಿದೆ.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ನಿಮ್ಮ ಸರಾಸರಿ ಖರೀದಿ ಬೆಲೆಯಿಂದ ($price):';
+  }
 }

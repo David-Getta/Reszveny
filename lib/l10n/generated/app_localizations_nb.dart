@@ -2010,4 +2010,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analysen din er klar.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ut fra din gjennomsnittlige kjøpspris ($price):';
+  }
 }

@@ -2014,4 +2014,9 @@ class AppLocalizationsEe extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: wò dzodzro la le klalo.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Le wò asi si nèxe le titina nu ($price):';
+  }
 }

@@ -2020,4 +2020,9 @@ class AppLocalizationsSt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: manollo a hao o lokile.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ho tswa theko ya hao e mahareng ya ho reka ($price):';
+  }
 }

@@ -1997,4 +1997,9 @@ class AppLocalizationsMos extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: f vẽenegrã sõama.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'F sẽn da ne ligd sẽn yaa sʋka wã ($price) zugu:';
+  }
 }

@@ -544,5 +544,6 @@
   "watchSortLosers": "Maiores baixadas primeiro",
   "watchSortName": "Por ticker (A–Z)",
   "watchHint": "Arrastra a asa para reordenar e esvara cara á esquerda para quitar. A liña mostra os últimos 30 días.",
-  "analysisReady": "{symbol}: a túa análise está lista."
+  "analysisReady": "{symbol}: a túa análise está lista.",
+  "alertFromCost": "Respecto ao teu prezo medio de compra ({price}):"
 }

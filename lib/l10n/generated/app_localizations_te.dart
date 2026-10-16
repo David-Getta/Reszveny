@@ -2016,4 +2016,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: మీ విశ్లేషణ సిద్ధంగా ఉంది.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'మీ సగటు కొనుగోలు ధర ($price) నుండి:';
+  }
 }

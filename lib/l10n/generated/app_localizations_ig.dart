@@ -2005,4 +2005,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nyocha gị adịla njikere.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Site na ọnụahịa nzụta nkezi gị ($price):';
+  }
 }

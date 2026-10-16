@@ -544,5 +544,6 @@
   "watchSortLosers": "Aswan urmaqkuna ñawpaqta",
   "watchSortName": "Ticker nisqaman hina (A–Z)",
   "watchHint": "Hapinata aysay ñiqichanapaq, lluq'iman llusiy hurqunapaq. Siqiqa qhipa 30 p'unchawkunata rikuchin.",
-  "analysisReady": "{symbol}: t'aqwiyniykiqa listoñam."
+  "analysisReady": "{symbol}: t'aqwiyniykiqa listoñam.",
+  "alertFromCost": "Chawpi rantisqayki chaninmanta ({price}):"
 }

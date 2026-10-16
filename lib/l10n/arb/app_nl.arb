@@ -544,5 +544,6 @@
   "watchSortLosers": "Grootste dalers eerst",
   "watchSortName": "Op ticker (A–Z)",
   "watchHint": "Sleep de greep om de volgorde te wijzigen, veeg naar links om te verwijderen. De lijn toont de afgelopen 30 dagen.",
-  "analysisReady": "{symbol}: je analyse is klaar."
+  "analysisReady": "{symbol}: je analyse is klaar.",
+  "alertFromCost": "Op basis van je gemiddelde aankoopprijs ({price}):"
 }

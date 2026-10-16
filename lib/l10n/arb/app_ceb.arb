@@ -544,5 +544,6 @@
   "watchSortLosers": "Pinakadako nga pagkanaog una",
   "watchSortName": "Sumala sa ticker (A–Z)",
   "watchHint": "Guyora ang kuptanan aron ihan-ay pag-usab, i-swipe pawala aron tangtangon. Ang linya nagpakita sa miaging 30 ka adlaw.",
-  "analysisReady": "{symbol}: andam na ang imong pagtuki."
+  "analysisReady": "{symbol}: andam na ang imong pagtuki.",
+  "alertFromCost": "Gikan sa imong kasagaran nga presyo sa pagpalit ({price}):"
 }

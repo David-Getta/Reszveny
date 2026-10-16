@@ -2006,4 +2006,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: रउआ विश्लेषण तइयार बा।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'रउआ औसत खरीद दाम ($price) से:';
+  }
 }

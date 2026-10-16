@@ -1948,4 +1948,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: 분석이 완료되었습니다.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return '평균 매수가($price) 기준:';
+  }
 }

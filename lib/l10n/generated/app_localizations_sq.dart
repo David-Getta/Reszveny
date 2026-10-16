@@ -2017,4 +2017,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analiza juaj është gati.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Nga çmimi juaj mesatar i blerjes ($price):';
+  }
 }

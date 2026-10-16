@@ -2016,4 +2016,9 @@ class AppLocalizationsNy extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: kusanthula kwanu kwakonzeka.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Kuchokera pa mtengo wanu wapakati wogulira ($price):';
+  }
 }

@@ -2007,4 +2007,9 @@ class AppLocalizationsBm extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: i ka sɛgɛsɛgɛli labɛnna.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'I ka sanni sɔngɔ cɛmancɛ ($price) ma:';
+  }
 }

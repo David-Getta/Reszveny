@@ -1993,4 +1993,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol៖ ការវិភាគរបស់អ្នករួចរាល់ហើយ។';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ពីតម្លៃទិញមធ្យមរបស់អ្នក ($price)៖';
+  }
 }

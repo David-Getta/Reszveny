@@ -2018,4 +2018,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol․ ձեր վերլուծությունը պատրաստ է։';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ձեր միջին գնման գնի ($price) համեմատ՝';
+  }
 }

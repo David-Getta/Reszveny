@@ -2008,4 +2008,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: تحلیل شما آماده است.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'بر اساس میانگین قیمت خرید شما ($price):';
+  }
 }

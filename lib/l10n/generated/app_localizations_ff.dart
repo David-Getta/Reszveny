@@ -2005,4 +2005,9 @@ class AppLocalizationsFf extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ƴeewndo maa ina heftii.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ummorde e coggu soodu maa hakkundeejo ($price):';
+  }
 }

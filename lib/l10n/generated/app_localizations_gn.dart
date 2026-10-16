@@ -2016,4 +2016,9 @@ class AppLocalizationsGn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nde jehesa\'ỹijo oĩma.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Nde jogua repy mbytépe ($price) ojehechaháicha:';
+  }
 }

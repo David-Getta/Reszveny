@@ -2009,4 +2009,9 @@ class AppLocalizationsAk extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: wo nhwehwɛmu no awie.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Fi wo sika a wotua no mfinimfini so ($price):';
+  }
 }

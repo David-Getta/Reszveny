@@ -544,5 +544,6 @@
   "watchSortLosers": "跌幅最大優先",
   "watchSortName": "按股票代號 (A–Z)",
   "watchHint": "拖動手柄可重新排序，向左滑動可移除。線條顯示最近 30 日。",
-  "analysisReady": "{symbol}：分析已完成。"
+  "analysisReady": "{symbol}：分析已完成。",
+  "alertFromCost": "按你的平均買入價（{price}）："
 }

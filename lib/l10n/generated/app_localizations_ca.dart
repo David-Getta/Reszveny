@@ -2019,4 +2019,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: la teva anàlisi està llesta.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Respecte al teu preu mitjà de compra ($price):';
+  }
 }

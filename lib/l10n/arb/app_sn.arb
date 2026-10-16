@@ -544,5 +544,6 @@
   "watchSortLosers": "Zvakadzika zvikuru kutanga",
   "watchSortName": "Nema ticker (A–Z)",
   "watchHint": "Dhonza mubato kuti urongazve, svaipa kuruboshwe kuti ubvise. Mutsara unoratidza mazuva 30 apfuura.",
-  "analysisReady": "{symbol}: ongororo yako yagadzirira."
+  "analysisReady": "{symbol}: ongororo yako yagadzirira.",
+  "alertFromCost": "Kubva pamutengo wako wepakati wekutenga ({price}):"
 }

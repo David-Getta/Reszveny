@@ -2005,4 +2005,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: bản phân tích của bạn đã sẵn sàng.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Dựa trên giá mua trung bình của bạn ($price):';
+  }
 }

@@ -2066,4 +2066,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: jūsų analizė parengta.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Pagal jūsų vidutinę pirkimo kainą ($price):';
+  }
 }

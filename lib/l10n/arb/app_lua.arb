@@ -544,5 +544,6 @@
   "watchSortLosers": "Bidi bipueke bikole kumpala",
   "watchSortName": "Bilondeshile ticker (A–Z)",
   "watchHint": "Koka tshikuatshilu bua kulongolola kabidi, sesa ku tshiakabadi bua kumbusha. Mulongo udi uleja matuku 30 adi apite.",
-  "analysisReady": "{symbol}: dikonkonona diebe didi dilongolola."
+  "analysisReady": "{symbol}: dikonkonona diebe didi dilongolola.",
+  "alertFromCost": "Bilondeshile mushinga webe wa pankatshi wa kusumba ({price}):"
 }

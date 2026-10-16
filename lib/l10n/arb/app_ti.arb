@@ -544,5 +544,6 @@
   "watchSortLosers": "ብዝያዳ ዝጎደሉ ቅድም",
   "watchSortName": "ብምልክት (A–Z)",
   "watchHint": "ስርዓት ንምቕያር መትሓዚ ስሓቦ፣ ንምእላይ ናብ ጸጋም ኣንሸራትት። መስመሩ ናይ ዝሓለፉ 30 መዓልታት የርኢ።",
-  "analysisReady": "{symbol}፦ ትንታነኹም ተዳልዩ ኣሎ።"
+  "analysisReady": "{symbol}፦ ትንታነኹም ተዳልዩ ኣሎ።",
+  "alertFromCost": "ካብ ማእከላይ ዋጋ ዕድጊትኩም ({price})፦"
 }

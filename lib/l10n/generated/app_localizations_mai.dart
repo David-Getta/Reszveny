@@ -2004,4 +2004,9 @@ class AppLocalizationsMai extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: अहाँक विश्लेषण तैयार अछि।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'अहाँक औसत खरीद मूल्य ($price) सँ:';
+  }
 }

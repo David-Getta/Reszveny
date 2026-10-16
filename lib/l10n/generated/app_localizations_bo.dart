@@ -2001,4 +2001,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ཁྱེད་ཀྱི་དབྱེ་ཞིབ་གྲ་སྒྲིག་ཡོད།';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ཁྱེད་ཀྱི་ཉོ་གོང་ཆ་སྙོམས ($price) ལ་གཞིགས་ནས།';
+  }
 }

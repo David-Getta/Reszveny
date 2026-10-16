@@ -544,5 +544,6 @@
   "watchSortLosers": "Pi gwo desann an premye",
   "watchSortName": "Pa senbòl (A–Z)",
   "watchHint": "Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo.",
-  "analysisReady": "{symbol}: analiz ou a pare."
+  "analysisReady": "{symbol}: analiz ou a pare.",
+  "alertFromCost": "Apati pri mwayen ou te achte a ({price}):"
 }

@@ -2006,4 +2006,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ਤੁਹਾਡਾ ਵਿਸ਼ਲੇਸ਼ਣ ਤਿਆਰ ਹੈ।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ਤੁਹਾਡੀ ਔਸਤ ਖ਼ਰੀਦ ਕੀਮਤ ($price) ਤੋਂ:';
+  }
 }

@@ -2018,4 +2018,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: uhlalutyo lwakho lulungile.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ukusuka kwixabiso lakho eliphakathi lokuthenga ($price):';
+  }
 }

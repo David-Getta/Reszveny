@@ -2017,4 +2017,9 @@ class AppLocalizationsKg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nsosa na nge me kuma ya kubuka.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Na kutadila ntalu ya kati ya nge ya kusumba ($price):';
+  }
 }

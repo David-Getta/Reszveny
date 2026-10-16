@@ -544,5 +544,6 @@
   "watchSortLosers": "Ny nidina indrindra aloha",
   "watchSortName": "Araka ny ticker (A–Z)",
   "watchHint": "Sintony ny tahony mba handaminana indray, ampitsoaho miankavia mba hanesorana. Ny tsipika dia mampiseho ny 30 andro farany.",
-  "analysisReady": "{symbol}: vonona ny famakafakanao."
+  "analysisReady": "{symbol}: vonona ny famakafakanao.",
+  "alertFromCost": "Araka ny vidiny antonony nividiananao ({price}):"
 }

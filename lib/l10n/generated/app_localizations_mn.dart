@@ -2011,4 +2011,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: таны шинжилгээ бэлэн боллоо.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Таны дундаж худалдан авсан үнээс ($price):';
+  }
 }

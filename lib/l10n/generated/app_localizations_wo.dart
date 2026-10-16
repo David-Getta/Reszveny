@@ -2005,4 +2005,9 @@ class AppLocalizationsWo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: sa xayma gi pare na.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Bu jëm ci sa njëgu jënd bu diggante ($price):';
+  }
 }

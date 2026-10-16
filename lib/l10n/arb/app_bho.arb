@@ -544,5 +544,6 @@
   "watchSortLosers": "सबसे गिरे वाला पहिले",
   "watchSortName": "टिकर से (A–Z)",
   "watchHint": "क्रम बदले खातिर हैंडल खींचीं, हटावे खातिर बाईं ओर स्वाइप करीं। रेखा पिछला 30 दिन देखावेले।",
-  "analysisReady": "{symbol}: रउआ विश्लेषण तइयार बा।"
+  "analysisReady": "{symbol}: रउआ विश्लेषण तइयार बा।",
+  "alertFromCost": "रउआ औसत खरीद दाम ({price}) से:"
 }

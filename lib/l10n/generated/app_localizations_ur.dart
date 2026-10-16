@@ -2010,4 +2010,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: آپ کا تجزیہ تیار ہے۔';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'آپ کی اوسط قیمتِ خرید ($price) سے:';
+  }
 }

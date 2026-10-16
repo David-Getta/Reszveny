@@ -544,5 +544,6 @@
   "watchSortLosers": "Největší pokles první",
   "watchSortName": "Podle tickeru (A–Z)",
   "watchHint": "Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní.",
-  "analysisReady": "{symbol}: vaše analýza je hotová."
+  "analysisReady": "{symbol}: vaše analýza je hotová.",
+  "alertFromCost": "Vzhledem k vaší průměrné nákupní ceně ({price}):"
 }

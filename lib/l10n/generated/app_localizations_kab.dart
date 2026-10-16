@@ -2009,4 +2009,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: tasledt-ik theggat.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Seg ssuma-k talemmast n uqḍiḍ ($price):';
+  }
 }

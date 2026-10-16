@@ -544,5 +544,6 @@
   "watchSortLosers": "הירידות הגדולות קודם",
   "watchSortName": "לפי סימול (A–Z)",
   "watchHint": "גררו את הידית כדי לסדר מחדש, החליקו שמאלה כדי להסיר. הקו מציג את 30 הימים האחרונים.",
-  "analysisReady": "{symbol}: הניתוח שלך מוכן."
+  "analysisReady": "{symbol}: הניתוח שלך מוכן.",
+  "alertFromCost": "ביחס למחיר הקנייה הממוצע שלך ({price}):"
 }

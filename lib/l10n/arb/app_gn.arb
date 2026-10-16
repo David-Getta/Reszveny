@@ -544,5 +544,6 @@
   "watchSortLosers": "Oguejyvéva raẽ",
   "watchSortName": "Símbolo rupi (A–Z)",
   "watchHint": "Emboguata pe jokoha emohenda jey hag̃ua, emosyryry asúpe embogue hag̃ua. Pe línea ohechauka 30 ára ohasava'ekue.",
-  "analysisReady": "{symbol}: nde jehesa'ỹijo oĩma."
+  "analysisReady": "{symbol}: nde jehesa'ỹijo oĩma.",
+  "alertFromCost": "Nde jogua repy mbytépe ({price}) ojehechaháicha:"
 }

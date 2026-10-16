@@ -2006,4 +2006,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: તમારું વિશ્લેષણ તૈયાર છે.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'તમારા સરેરાશ ખરીદ ભાવ ($price) પરથી:';
+  }
 }

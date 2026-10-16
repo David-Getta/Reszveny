@@ -1524,5 +1524,15 @@
         "example": "AAPL"
       }
     }
+  },
+  "alertFromCost": "From your average cost ({price}):",
+  "@alertFromCost": {
+    "description": "In the price alert dialog, above quick buttons (−20%, −10%, +10%…) that set the target relative to the user's average purchase price.",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "186.75 USD"
+      }
+    }
   }
 }

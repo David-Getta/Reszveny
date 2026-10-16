@@ -544,5 +544,6 @@
   "watchSortLosers": "Mafi faɗuwa farko",
   "watchSortName": "Ta ticker (A–Z)",
   "watchHint": "Ja maƙalli don sake tsarawa, goge zuwa hagu don cirewa. Layin yana nuna kwanaki 30 da suka gabata.",
-  "analysisReady": "{symbol}: nazarinka ya shirya."
+  "analysisReady": "{symbol}: nazarinka ya shirya.",
+  "alertFromCost": "Daga matsakaicin farashin siyanka ({price}):"
 }

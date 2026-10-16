@@ -544,5 +544,6 @@
   "watchSortLosers": "Lielākie kritumi vispirms",
   "watchSortName": "Pēc simbola (A–Z)",
   "watchHint": "Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas.",
-  "analysisReady": "{symbol}: jūsu analīze ir gatava."
+  "analysisReady": "{symbol}: jūsu analīze ir gatava.",
+  "alertFromCost": "No jūsu vidējās pirkšanas cenas ({price}):"
 }

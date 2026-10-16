@@ -2017,4 +2017,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: falanqaynta aad codsatay waa diyaar.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Marka laga eego celceliska qiimaha aad ku iibsatay ($price):';
+  }
 }

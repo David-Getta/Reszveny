@@ -2012,4 +2012,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analyysisi on valmis.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Keskimääräisestä ostohinnastasi ($price):';
+  }
 }

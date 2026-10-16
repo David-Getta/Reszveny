@@ -1911,6 +1911,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol：分析已完成。';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return '基于你的平均买入价（$price）：';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3818,5 +3823,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String analysisReady(String symbol) {
     return '$symbol：分析已完成。';
+  }
+
+  @override
+  String alertFromCost(String price) {
+    return '按你的平均買入價（$price）：';
   }
 }

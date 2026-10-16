@@ -2015,4 +2015,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: la tua analisi è pronta.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Rispetto al tuo prezzo medio di acquisto ($price):';
+  }
 }

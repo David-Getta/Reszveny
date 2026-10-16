@@ -544,5 +544,6 @@
   "watchSortLosers": "Minnu jiginna kosɛbɛ fɔlɔ",
   "watchSortName": "Taamasiyɛn kɔ (A–Z)",
   "watchHint": "Minɛnan sama walasa ka labɛnni yɛlɛma, i bolo sama numanbolo fɛ walasa ka bɔ. Juru bɛ tile 30 laban jira.",
-  "analysisReady": "{symbol}: i ka sɛgɛsɛgɛli labɛnna."
+  "analysisReady": "{symbol}: i ka sɛgɛsɛgɛli labɛnna.",
+  "alertFromCost": "I ka sanni sɔngɔ cɛmancɛ ({price}) ma:"
 }

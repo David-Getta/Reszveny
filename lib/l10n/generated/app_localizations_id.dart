@@ -2006,4 +2006,9 @@ class AppLocalizationsId extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analisis Anda sudah siap.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Dari harga beli rata-rata Anda ($price):';
+  }
 }

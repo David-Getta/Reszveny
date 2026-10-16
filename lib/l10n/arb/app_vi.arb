@@ -544,5 +544,6 @@
   "watchSortLosers": "Giảm mạnh nhất trước",
   "watchSortName": "Theo mã (A–Z)",
   "watchHint": "Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.",
-  "analysisReady": "{symbol}: bản phân tích của bạn đã sẵn sàng."
+  "analysisReady": "{symbol}: bản phân tích của bạn đã sẵn sàng.",
+  "alertFromCost": "Dựa trên giá mua trung bình của bạn ({price}):"
 }

@@ -2022,4 +2022,9 @@ class AppLocalizationsHil extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: handa na ang imo pagtuki.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Halin sa imo average nga presyo sang pagbakal ($price):';
+  }
 }

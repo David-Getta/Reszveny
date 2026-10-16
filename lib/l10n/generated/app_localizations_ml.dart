@@ -2018,4 +2018,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: നിങ്ങളുടെ വിശകലനം തയ്യാറാണ്.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'നിങ്ങളുടെ ശരാശരി വാങ്ങൽ വിലയിൽ നിന്ന് ($price):';
+  }
 }

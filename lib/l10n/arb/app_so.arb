@@ -544,5 +544,6 @@
   "watchSortLosers": "Kuwa ugu dhacay badan marka hore",
   "watchSortName": "Astaan ahaan (A–Z)",
   "watchHint": "Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay.",
-  "analysisReady": "{symbol}: falanqaynta aad codsatay waa diyaar."
+  "analysisReady": "{symbol}: falanqaynta aad codsatay waa diyaar.",
+  "alertFromCost": "Marka laga eego celceliska qiimaha aad ku iibsatay ({price}):"
 }

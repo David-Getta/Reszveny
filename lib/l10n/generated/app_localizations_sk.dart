@@ -2065,4 +2065,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: vaša analýza je hotová.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Vzhľadom na vašu priemernú nákupnú cenu ($price):';
+  }
 }

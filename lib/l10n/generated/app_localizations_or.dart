@@ -2008,4 +2008,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ପ୍ରସ୍ତୁତ।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ଆପଣଙ୍କ ହାରାହାରି କ୍ରୟ ମୂଲ୍ୟ ($price) ରୁ:';
+  }
 }

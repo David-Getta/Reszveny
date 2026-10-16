@@ -1987,4 +1987,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ການວິເຄາະຂອງທ່ານພ້ອມແລ້ວ.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ຈາກລາຄາຊື້ສະເລ່ຍຂອງທ່ານ ($price):';
+  }
 }

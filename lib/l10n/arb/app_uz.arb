@@ -544,5 +544,6 @@
   "watchSortLosers": "Eng koʻp tushganlar avval",
   "watchSortName": "Tiker boʻyicha (A–Z)",
   "watchHint": "Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi.",
-  "analysisReady": "{symbol}: tahlilingiz tayyor."
+  "analysisReady": "{symbol}: tahlilingiz tayyor.",
+  "alertFromCost": "O‘rtacha xarid narxingizdan ({price}):"
 }

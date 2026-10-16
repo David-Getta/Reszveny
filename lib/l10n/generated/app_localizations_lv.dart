@@ -2049,4 +2049,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: jūsu analīze ir gatava.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'No jūsu vidējās pirkšanas cenas ($price):';
+  }
 }

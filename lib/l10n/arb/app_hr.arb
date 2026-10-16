@@ -544,5 +544,6 @@
   "watchSortLosers": "Najveći pad prvo",
   "watchSortName": "Po tickeru (A–Z)",
   "watchHint": "Povucite ručicu za promjenu redoslijeda, prijeđite prstom ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana.",
-  "analysisReady": "{symbol}: vaša analiza je spremna."
+  "analysisReady": "{symbol}: vaša analiza je spremna.",
+  "alertFromCost": "U odnosu na vašu prosječnu kupovnu cijenu ({price}):"
 }

@@ -2021,4 +2021,9 @@ class AppLocalizationsQu extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: t\'aqwiyniykiqa listoñam.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Chawpi rantisqayki chaninmanta ($price):';
+  }
 }

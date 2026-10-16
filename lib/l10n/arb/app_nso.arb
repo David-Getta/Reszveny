@@ -544,5 +544,6 @@
   "watchSortLosers": "Tše di theogilego kudu pele",
   "watchSortName": "Ka ticker (A–Z)",
   "watchHint": "Goga seswaro go beakanya gape, kgoromeletša go le letshadi go tloša. Mothaladi o bontšha matšatši a 30 a go feta.",
-  "analysisReady": "{symbol}: tshekatsheko ya gago e loketše."
+  "analysisReady": "{symbol}: tshekatsheko ya gago e loketše.",
+  "alertFromCost": "Go ya ka theko ya gago ya magareng ya go reka ({price}):"
 }

@@ -2025,4 +2025,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nakasagan ti panaganalisam.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Manipud iti promedio a presio ti panaggatangmo ($price):';
+  }
 }

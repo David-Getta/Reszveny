@@ -2010,4 +2010,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analiziniz hazır.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Ortalama alış fiyatınıza ($price) göre:';
+  }
 }

@@ -2009,4 +2009,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: तपाईंको विश्लेषण तयार छ।';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'तपाईंको औसत खरिद मूल्य ($price) बाट:';
+  }
 }

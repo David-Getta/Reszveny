@@ -2015,4 +2015,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: nazarinka ya shirya.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Daga matsakaicin farashin siyanka ($price):';
+  }
 }

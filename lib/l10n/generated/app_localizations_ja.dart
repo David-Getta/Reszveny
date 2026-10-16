@@ -1940,4 +1940,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol：分析が完成しました。';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return '平均取得価格（$price）から：';
+  }
 }

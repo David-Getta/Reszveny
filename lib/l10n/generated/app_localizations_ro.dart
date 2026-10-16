@@ -2042,4 +2042,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: analiza ta este gata.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Față de prețul tău mediu de cumpărare ($price):';
+  }
 }

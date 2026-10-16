@@ -2009,4 +2009,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: ඔබගේ විශ්ලේෂණය සූදානම්.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ඔබේ සාමාන්‍ය මිලදී ගැනීමේ මිලෙන් ($price):';
+  }
 }

@@ -2016,4 +2016,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: handa na ang iyong pagsusuri.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'Batay sa iyong average na presyo ng pagbili ($price):';
+  }
 }

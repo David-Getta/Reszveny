@@ -2013,4 +2013,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String analysisReady(String symbol) {
     return '$symbol: تەھلىلىڭىز تەييار بولدى.';
   }
+
+  @override
+  String alertFromCost(String price) {
+    return 'ئوتتۇرىچە سېتىۋېلىش باھايىڭىزدىن ($price):';
+  }
 }
