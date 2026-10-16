@@ -293,6 +293,34 @@ class _AppShellState extends State<AppShell> {
     _currentNav?.push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: candidate)));
   }
 
+  /// Asztali billentyűparancsok (Ctrl, macOS-en ⌘): K új keresés, 1/2/3 kezdőlap,
+  /// portfólió, riasztások, vessző a beállítások.
+  Map<ShortcutActivator, VoidCallback> _shortcuts() {
+    void search() {
+      _goHome();
+      WidgetsBinding.instance.addPostFrameCallback((_) => HomePage.focusSearch.value++);
+    }
+
+    void openOnly(VoidCallback open) {
+      _goHome();
+      open();
+    }
+
+    final actions = <LogicalKeyboardKey, VoidCallback>{
+      LogicalKeyboardKey.keyK: search,
+      LogicalKeyboardKey.digit1: search,
+      LogicalKeyboardKey.digit2: () => openOnly(_openPortfolio),
+      LogicalKeyboardKey.digit3: () => openOnly(_openAlerts),
+      LogicalKeyboardKey.comma: () => openOnly(_openSettings),
+    };
+    return {
+      for (final e in actions.entries) ...{
+        SingleActivator(e.key, control: true): e.value,
+        SingleActivator(e.key, meta: true): e.value,
+      },
+    };
+  }
+
   void _goHome() {
     if (!_wide && _tab != 0) setState(() => _tab = 0);
     _navigatorKey.currentState?.popUntil((r) => r.isFirst);
@@ -353,19 +381,22 @@ class _AppShellState extends State<AppShell> {
               onPopInvokedWithResult: (didPop, _) {
                 if (!didPop) _onBack();
               },
-              child: Scaffold(
-                body: Row(
-                  children: [
-                    _Sidebar(
-                      onHome: _goHome,
-                      onNewSearch: _goHome,
-                      onOpenSymbol: _openSymbol,
-                      onOpenSettings: _openSettings,
-                      onOpenPortfolio: _openPortfolio,
-                      onOpenAlerts: _openAlerts,
-                    ),
-                    Expanded(child: content),
-                  ],
+              child: CallbackShortcuts(
+                bindings: _shortcuts(),
+                child: Scaffold(
+                  body: Row(
+                    children: [
+                      _Sidebar(
+                        onHome: _goHome,
+                        onNewSearch: _goHome,
+                        onOpenSymbol: _openSymbol,
+                        onOpenSettings: _openSettings,
+                        onOpenPortfolio: _openPortfolio,
+                        onOpenAlerts: _openAlerts,
+                      ),
+                      Expanded(child: content),
+                    ],
+                  ),
                 ),
               ),
             );
@@ -495,11 +526,27 @@ class _Sidebar extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
-            child: _SidebarButton(icon: Icons.add_rounded, label: l10n.newSearch, onTap: onNewSearch, accent: true),
+            child: _SidebarButton(
+              icon: Icons.add_rounded,
+              label: l10n.newSearch,
+              onTap: onNewSearch,
+              accent: true,
+              shortcut: 'K',
+            ),
           ),
-          _SidebarButton(icon: Icons.pie_chart_outline_rounded, label: l10n.portfolio, onTap: onOpenPortfolio),
-          _SidebarButton(icon: Icons.notifications_none_rounded, label: l10n.priceAlerts, onTap: onOpenAlerts),
-          _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings),
+          _SidebarButton(
+            icon: Icons.pie_chart_outline_rounded,
+            label: l10n.portfolio,
+            onTap: onOpenPortfolio,
+            shortcut: '2',
+          ),
+          _SidebarButton(
+            icon: Icons.notifications_none_rounded,
+            label: l10n.priceAlerts,
+            onTap: onOpenAlerts,
+            shortcut: '3',
+          ),
+          _SidebarButton(icon: Icons.tune_rounded, label: l10n.settings, onTap: onOpenSettings, shortcut: ','),
           const Padding(padding: EdgeInsets.fromLTRB(12, 8, 12, 0), child: UsageChip(compact: true)),
           const SizedBox(height: 8),
           Expanded(
@@ -561,6 +608,7 @@ class _SidebarButton extends StatelessWidget {
     required this.onTap,
     this.accent = false,
     this.muted = false,
+    this.shortcut,
   });
 
   final IconData icon;
@@ -568,6 +616,9 @@ class _SidebarButton extends StatelessWidget {
   final VoidCallback onTap;
   final bool accent;
   final bool muted;
+
+  /// A billentyűparancs betűje (pl. „K”), halványan a sor végén: macOS-en ⌘K, máshol Ctrl+K.
+  final String? shortcut;
 
   @override
   Widget build(BuildContext context) {
@@ -593,6 +644,11 @@ class _SidebarButton extends StatelessWidget {
                   style: TextStyle(color: color, fontWeight: accent ? FontWeight.w600 : FontWeight.w500),
                 ),
               ),
+              if (shortcut != null)
+                Text(
+                  defaultTargetPlatform == TargetPlatform.macOS ? '⌘$shortcut' : 'Ctrl+$shortcut',
+                  style: TextStyle(color: p.muted, fontSize: 11),
+                ),
             ],
           ),
         ),

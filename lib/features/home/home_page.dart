@@ -41,6 +41,9 @@ class HomePage extends StatefulWidget {
   /// Keskeny elrendezésben (nincs oldalsáv) a beállítások az AppBarban.
   final bool showAppBarActions;
 
+  /// Jelzés a keresőmező fókuszálására (billentyűparancsból); minden érték új kérés.
+  static final focusSearch = ValueNotifier<int>(0);
+
   @override
   State<HomePage> createState() => _HomePageState();
 }
@@ -67,10 +70,22 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     _query.addListener(_onQueryChanged);
+    HomePage.focusSearch.addListener(_focusSearch);
+  }
+
+  /// A keresőmező fókusza (a Ctrl/⌘+K billentyűparancshoz).
+  final _searchFocus = FocusNode();
+
+  void _focusSearch() {
+    if (!mounted) return;
+    _searchFocus.requestFocus();
+    _query.selection = TextSelection(baseOffset: 0, extentOffset: _query.text.length);
   }
 
   @override
   void dispose() {
+    HomePage.focusSearch.removeListener(_focusSearch);
+    _searchFocus.dispose();
     _debounce?.cancel();
     _query.removeListener(_onQueryChanged);
     _query.dispose();
@@ -293,6 +308,7 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 28),
                   SearchField(
                     controller: _query,
+                    focusNode: _searchFocus,
                     hint: l10n.searchHint,
                     autofocus: true,
                     enabled: !_busy,
