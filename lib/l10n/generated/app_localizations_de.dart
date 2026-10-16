@@ -2082,4 +2082,9 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Alle zu Favoriten hinzufügen ($count)';
+  }
 }

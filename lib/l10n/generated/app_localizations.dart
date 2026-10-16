@@ -3690,6 +3690,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A notification the day before your favorites or portfolio stocks report quarterly results'**
   String get earningsRemindersSubtitle;
+
+  /// Button under the list of stocks recognised in one photo; count is how many are not yet favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Add all to favorites ({count})'**
+  String addAllToFavorites(int count);
 }
 
 class _AppLocalizationsDelegate

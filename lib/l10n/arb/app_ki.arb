@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} nĩĩkũheana maumĩrĩra ma mĩeri ĩtatũ rũciũ",
   "earningsReminderToday": "{symbol} nĩĩraheana maumĩrĩra ma mĩeri ĩtatũ ũmũthĩ",
   "earningsRemindersTitle": "Kũririkania maumĩrĩra",
-  "earningsRemindersSubtitle": "Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ"
+  "earningsRemindersSubtitle": "Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ",
+  "addAllToFavorites": "Ongerera yothe harĩ iria wendete ({count})"
 }

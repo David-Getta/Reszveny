@@ -2128,4 +2128,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Уведомление за день до публикации квартальной отчётности по акциям из избранного или портфеля';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Добавить все в избранное ($count)';
+  }
 }

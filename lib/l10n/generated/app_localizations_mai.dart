@@ -2065,4 +2065,9 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'सभटा पसंदीदामे जोड़ू ($count)';
+  }
 }

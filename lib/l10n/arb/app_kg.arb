@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ta basisa ba résultats ya trimestre mbazi",
   "earningsReminderToday": "{symbol} ke basisa ba résultats ya trimestre bubu",
   "earningsRemindersTitle": "Kiyibusu ya ba résultats",
-  "earningsRemindersSubtitle": "Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre"
+  "earningsRemindersSubtitle": "Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre",
+  "addAllToFavorites": "Yika yonso mu bizolwa ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} izotangaza ivyavuye mu gihembwe ejo",
   "earningsReminderToday": "{symbol} iratangaza ivyavuye mu gihembwe uyu munsi",
   "earningsRemindersTitle": "Kwibutswa ivyavuye mu gihembwe",
-  "earningsRemindersSubtitle": "Imenyesha umunsi umwe imbere y'uko ivyo ukunda canke imigabane yo mu portfolio yawe bitangaza ivyavuye mu gihembwe"
+  "earningsRemindersSubtitle": "Imenyesha umunsi umwe imbere y'uko ivyo ukunda canke imigabane yo mu portfolio yawe bitangaza ivyavuye mu gihembwe",
+  "addAllToFavorites": "Shira vyose mu vyo ukunda ({count})"
 }

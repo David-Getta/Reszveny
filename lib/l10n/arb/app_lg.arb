@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} egenda kufulumya ebivudde mu kitundu ky'omwaka enkya",
   "earningsReminderToday": "{symbol} efulumya ebivudde mu kitundu ky'omwaka leero",
   "earningsRemindersTitle": "Okujjukiza ku bivudde",
-  "earningsRemindersSubtitle": "Obubaka olunaku lumu nga emigabo gy'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky'omwaka"
+  "earningsRemindersSubtitle": "Obubaka olunaku lumu nga emigabo gy'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky'omwaka",
+  "addAllToFavorites": "Byonna gattako ku by'oyagala ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} julkaisee osavuosikatsauksen huomenna",
   "earningsReminderToday": "{symbol} julkaisee osavuosikatsauksen tänään",
   "earningsRemindersTitle": "Tulosmuistutukset",
-  "earningsRemindersSubtitle": "Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen"
+  "earningsRemindersSubtitle": "Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen",
+  "addAllToFavorites": "Lisää kaikki suosikkeihin ({count})"
 }

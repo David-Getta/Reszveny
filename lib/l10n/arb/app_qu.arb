@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: paqarin kimsa killapa willakuynin",
   "earningsReminderToday": "{symbol}: kunan p'unchaw kimsa killapa willakuynin",
   "earningsRemindersTitle": "Willakuy yuyarichiykuna",
-  "earningsRemindersSubtitle": "Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p'unchaw ñawpaqta willachiy"
+  "earningsRemindersSubtitle": "Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p'unchaw ñawpaqta willachiy",
+  "addAllToFavorites": "Llapanta munasqakunaman yapay ({count})"
 }

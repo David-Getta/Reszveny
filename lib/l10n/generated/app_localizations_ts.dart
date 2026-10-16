@@ -2083,4 +2083,9 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Xitiviso siku rin\'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Engetela hinkwaswo eka leswi u swi rhandzaka ($count)';
+  }
 }

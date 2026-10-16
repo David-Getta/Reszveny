@@ -2072,4 +2072,9 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'En notis dagen innan dina favoriter eller portföljaktier släpper kvartalsrapport';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Lägg till alla i favoriter ($count)';
+  }
 }

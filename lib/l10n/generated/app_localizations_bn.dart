@@ -2070,4 +2070,9 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'সব পছন্দের তালিকায় যোগ করুন ($count)';
+  }
 }

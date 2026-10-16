@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} go release quarter result tumoro",
   "earningsReminderToday": "{symbol} go release quarter result today",
   "earningsRemindersTitle": "Result reminder",
-  "earningsRemindersSubtitle": "Notification one day before your favourites or portfolio stocks release quarter result"
+  "earningsRemindersSubtitle": "Notification one day before your favourites or portfolio stocks release quarter result",
+  "addAllToFavorites": "Add all of dem to favourites ({count})"
 }

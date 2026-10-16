@@ -2110,4 +2110,9 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Pievienot visas izlasei ($count)';
+  }
 }

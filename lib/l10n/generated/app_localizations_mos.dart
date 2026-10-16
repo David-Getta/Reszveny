@@ -2058,4 +2058,9 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Paas fãa nong-n-yɩɩda pʋgẽ ($count)';
+  }
 }

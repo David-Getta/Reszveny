@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ichaburitsa mhedzisiro yekota mangwana",
   "earningsReminderToday": "{symbol} ichaburitsa mhedzisiro yekota nhasi",
   "earningsRemindersTitle": "Zviyeuchidzo zvemhedzisiro",
-  "earningsRemindersSubtitle": "Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota"
+  "earningsRemindersSubtitle": "Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota",
+  "addAllToFavorites": "Wedzera zvese kune zvaunofarira ({count})"
 }

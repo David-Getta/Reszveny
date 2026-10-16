@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}क त्रैमासिक परिणाम काल्हि",
   "earningsReminderToday": "{symbol}क त्रैमासिक परिणाम आइ",
   "earningsRemindersTitle": "परिणाम रिमाइंडर",
-  "earningsRemindersSubtitle": "अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना"
+  "earningsRemindersSubtitle": "अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना",
+  "addAllToFavorites": "सभटा पसंदीदामे जोड़ू ({count})"
 }

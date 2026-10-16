@@ -2080,4 +2080,9 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Yongeza konke kwezithandwayo ($count)';
+  }
 }

@@ -2068,4 +2068,9 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'افزودن همه به علاقه‌مندی‌ها ($count)';
+  }
 }

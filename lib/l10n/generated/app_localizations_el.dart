@@ -2079,4 +2079,9 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ειδοποίηση μία μέρα πριν οι μετοχές από τα αγαπημένα ή το χαρτοφυλάκιό σας ανακοινώσουν τριμηνιαία αποτελέσματα';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Προσθήκη όλων στα αγαπημένα ($count)';
+  }
 }

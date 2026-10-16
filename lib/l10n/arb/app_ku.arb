@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} sibê encamên sêmehî eşkere dike",
   "earningsReminderToday": "{symbol} îro encamên sêmehî eşkere dike",
   "earningsRemindersTitle": "Bîranînên encaman",
-  "earningsRemindersSubtitle": "Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin"
+  "earningsRemindersSubtitle": "Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin",
+  "addAllToFavorites": "Hemûyan li bijareyan zêde bike ({count})"
 }

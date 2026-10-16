@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ጽባሕ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ",
   "earningsReminderToday": "{symbol} ሎሚ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ",
   "earningsRemindersTitle": "መዘኻኸሪ ውጽኢት",
-  "earningsRemindersSubtitle": "ዝተፈተዉ ወይ ናይ ፖርትፎሊዮኻ ኣክስዮናት ናይ ርብዒ ዓመት ውጽኢት ቅድሚ ምፍላጦም ሓደ መዓልቲ ዝመጽእ መፍለጢ"
+  "earningsRemindersSubtitle": "ዝተፈተዉ ወይ ናይ ፖርትፎሊዮኻ ኣክስዮናት ናይ ርብዒ ዓመት ውጽኢት ቅድሚ ምፍላጦም ሓደ መዓልቲ ዝመጽእ መፍለጢ",
+  "addAllToFavorites": "ኩሉ ናብ ዝተፈተዉ ወስኽ ({count})"
 }

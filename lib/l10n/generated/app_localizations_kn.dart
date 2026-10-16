@@ -2078,4 +2078,9 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ನಿಮ್ಮ ಮೆಚ್ಚಿನವುಗಳು ಅಥವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದ ಷೇರುಗಳು ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುವ ಹಿಂದಿನ ದಿನ ಅಧಿಸೂಚನೆ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ಎಲ್ಲವನ್ನೂ ಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸಿ ($count)';
+  }
 }

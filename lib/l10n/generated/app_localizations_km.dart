@@ -2053,4 +2053,9 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ការជូនដំណឹងមួយថ្ងៃមុនពេលភាគហ៊ុនក្នុងចំណូលចិត្ត ឬផលប័ត្ររបស់អ្នកប្រកាសលទ្ធផលប្រចាំត្រីមាស';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'បន្ថែមទាំងអស់ទៅចំណូលចិត្ត ($count)';
+  }
 }

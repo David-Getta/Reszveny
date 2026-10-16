@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: vokatra isan-telovolana rahampitso",
   "earningsReminderToday": "{symbol}: vokatra isan-telovolana anio",
   "earningsRemindersTitle": "Fampahatsiahivana vokatra",
-  "earningsRemindersSubtitle": "Fampandrenesana iray andro alohan'ny hamoahan'ny ankafizinao na ny tahiry ao amin'ny portfolio-nao ny vokatra isan-telovolana"
+  "earningsRemindersSubtitle": "Fampandrenesana iray andro alohan'ny hamoahan'ny ankafizinao na ny tahiry ao amin'ny portfolio-nao ny vokatra isan-telovolana",
+  "addAllToFavorites": "Ampio daholo amin'ny ankafizina ({count})"
 }

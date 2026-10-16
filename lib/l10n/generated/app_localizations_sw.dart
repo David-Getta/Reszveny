@@ -2072,4 +2072,9 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Arifa siku moja kabla hisa zako unazopenda au za jalada lako hazijatangaza matokeo ya robo mwaka';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ongeza zote kwenye vipendwa ($count)';
+  }
 }

@@ -2078,4 +2078,9 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Dhammaan ku dar kuwa la jecel yahay ($count)';
+  }
 }

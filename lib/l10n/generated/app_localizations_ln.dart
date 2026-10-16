@@ -2081,4 +2081,9 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Liyebisi mokolo moko liboso ba actions ya oyo olingaka to ya portefeuille na yo ebimisa ba résultats ya trimestre';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Bakisa nyonso na oyo olingaka ($count)';
+  }
 }

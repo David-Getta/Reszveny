@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} rytoj skelbia ketvirčio rezultatus",
   "earningsReminderToday": "{symbol} šiandien skelbia ketvirčio rezultatus",
   "earningsRemindersTitle": "Priminimai apie rezultatus",
-  "earningsRemindersSubtitle": "Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą"
+  "earningsRemindersSubtitle": "Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą",
+  "addAllToFavorites": "Pridėti visas į mėgstamiausius ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} yóò kéde àbájáde ìdámẹ́rin ọdún lọ́la",
   "earningsReminderToday": "{symbol} ń kéde àbájáde ìdámẹ́rin ọdún lónìí",
   "earningsRemindersTitle": "Ìránnilétí àbájáde",
-  "earningsRemindersSubtitle": "Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún"
+  "earningsRemindersSubtitle": "Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún",
+  "addAllToFavorites": "Fi gbogbo rẹ̀ kún àwọn ààyò ({count})"
 }

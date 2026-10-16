@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ຈະປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ອື່ນ",
   "earningsReminderToday": "{symbol} ປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ນີ້",
   "earningsRemindersTitle": "ການແຈ້ງເຕືອນຜົນປະກອບການ",
-  "earningsRemindersSubtitle": "ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ"
+  "earningsRemindersSubtitle": "ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ",
+  "addAllToFavorites": "ເພີ່ມທັງໝົດໃສ່ລາຍການທີ່ມັກ ({count})"
 }

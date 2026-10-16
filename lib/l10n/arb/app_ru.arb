@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} завтра публикует квартальную отчётность",
   "earningsReminderToday": "{symbol} сегодня публикует квартальную отчётность",
   "earningsRemindersTitle": "Напоминания об отчётности",
-  "earningsRemindersSubtitle": "Уведомление за день до публикации квартальной отчётности по акциям из избранного или портфеля"
+  "earningsRemindersSubtitle": "Уведомление за день до публикации квартальной отчётности по акциям из избранного или портфеля",
+  "addAllToFavorites": "Добавить все в избранное ({count})"
 }

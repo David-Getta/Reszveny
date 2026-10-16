@@ -2080,4 +2080,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Usa ka pahibalo usa ka adlaw sa dili pa ipahibalo sa imong mga paborito o stock sa portfolio ang ilang resulta sa quarter';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Idugang tanan sa mga paborito ($count)';
+  }
 }

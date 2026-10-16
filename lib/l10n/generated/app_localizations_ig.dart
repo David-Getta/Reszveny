@@ -2067,4 +2067,9 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ọkwa otu ụbọchị tupu òkè dị n\'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tinye ha niile n\'ọkacha mmasị ($count)';
+  }
 }

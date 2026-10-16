@@ -2075,4 +2075,9 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Gbeƒãɖeɖe ŋkeke ɖeka do ŋgɔ na esime wò lɔlɔ̃tɔwo alo wò portfolio me gadzraɖoƒenyawo naɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tsɔ wo katã kpe ɖe nye lɔlɔ̃tɔwo ŋu ($count)';
+  }
 }

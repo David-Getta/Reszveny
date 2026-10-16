@@ -2111,4 +2111,9 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Обавештење дан пре него што акције из омиљених или твог портфолија објаве кварталне резултате';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Додај све у омиљене ($count)';
+  }
 }

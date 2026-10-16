@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ले भोलि त्रैमासिक नतिजा सार्वजनिक गर्दैछ",
   "earningsReminderToday": "{symbol} ले आज त्रैमासिक नतिजा सार्वजनिक गर्दैछ",
   "earningsRemindersTitle": "नतिजा रिमाइन्डर",
-  "earningsRemindersSubtitle": "तपाईंका मनपर्ने वा पोर्टफोलियोका सेयरहरूले त्रैमासिक नतिजा सार्वजनिक गर्नुभन्दा एक दिनअघि सूचना"
+  "earningsRemindersSubtitle": "तपाईंका मनपर्ने वा पोर्टफोलियोका सेयरहरूले त्रैमासिक नतिजा सार्वजनिक गर्नुभन्दा एक दिनअघि सूचना",
+  "addAllToFavorites": "सबै मनपर्नेमा थप्नुहोस् ({count})"
 }

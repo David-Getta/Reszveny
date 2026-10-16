@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} sabah rüblük nəticələrini açıqlayır",
   "earningsReminderToday": "{symbol} bu gün rüblük nəticələrini açıqlayır",
   "earningsRemindersTitle": "Nəticə xatırlatmaları",
-  "earningsRemindersSubtitle": "Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş"
+  "earningsRemindersSubtitle": "Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş",
+  "addAllToFavorites": "Hamısını seçilmişlərə əlavə et ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} سڀاڻي ٽه ماهي نتيجا جاري ڪندي",
   "earningsReminderToday": "{symbol} اڄ ٽه ماهي نتيجا جاري ڪندي",
   "earningsRemindersTitle": "نتيجن جي ياد ڏياريندڙ",
-  "earningsRemindersSubtitle": "توهان جي پسنديده يا پورٽ فوليو جي شيئرن جا ٽه ماهي نتيجا جاري ٿيڻ کان هڪ ڏينهن اڳ اطلاع"
+  "earningsRemindersSubtitle": "توهان جي پسنديده يا پورٽ فوليو جي شيئرن جا ٽه ماهي نتيجا جاري ٿيڻ کان هڪ ڏينهن اڳ اطلاع",
+  "addAllToFavorites": "سڀ پسنديده ۾ شامل ڪريو ({count})"
 }

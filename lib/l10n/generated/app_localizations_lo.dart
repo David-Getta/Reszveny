@@ -2047,4 +2047,9 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ເພີ່ມທັງໝົດໃສ່ລາຍການທີ່ມັກ ($count)';
+  }
 }

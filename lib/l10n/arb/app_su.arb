@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ngumumkeun laporan kuartalan isukan",
   "earningsReminderToday": "{symbol} ngumumkeun laporan kuartalan poé ieu",
   "earningsRemindersTitle": "Panginget laporan",
-  "earningsRemindersSubtitle": "Béwara sapoé saméméh saham paporit atawa portofolio anjeun ngumumkeun laporan kuartalan"
+  "earningsRemindersSubtitle": "Béwara sapoé saméméh saham paporit atawa portofolio anjeun ngumumkeun laporan kuartalan",
+  "addAllToFavorites": "Tambahkeun sadayana ka paporit ({count})"
 }

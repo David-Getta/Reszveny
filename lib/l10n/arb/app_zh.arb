@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} 明天发布季度财报",
   "earningsReminderToday": "{symbol} 今天发布季度财报",
   "earningsRemindersTitle": "财报提醒",
-  "earningsRemindersSubtitle": "在你收藏或持仓的股票发布季度财报前一天发送通知"
+  "earningsRemindersSubtitle": "在你收藏或持仓的股票发布季度财报前一天发送通知",
+  "addAllToFavorites": "全部添加到收藏 ({count})"
 }

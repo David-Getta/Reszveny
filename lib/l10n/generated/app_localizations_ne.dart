@@ -2070,4 +2070,9 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'तपाईंका मनपर्ने वा पोर्टफोलियोका सेयरहरूले त्रैमासिक नतिजा सार्वजनिक गर्नुभन्दा एक दिनअघि सूचना';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'सबै मनपर्नेमा थप्नुहोस् ($count)';
+  }
 }

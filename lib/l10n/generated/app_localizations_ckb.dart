@@ -2072,4 +2072,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ئاگادارکردنەوەیەک ڕۆژێک پێش ئەوەی پشکەکانی دڵخوازەکانت یان پۆرتفۆلیۆکەت ئەنجامە وەرزییەکانیان ڕابگەیەنن';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'زیادکردنی هەموو بۆ دڵخوازەکان ($count)';
+  }
 }

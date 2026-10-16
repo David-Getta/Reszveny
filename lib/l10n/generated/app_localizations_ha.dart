@@ -2076,4 +2076,9 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ƙara duka zuwa abubuwan da aka fi so ($count)';
+  }
 }

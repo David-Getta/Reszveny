@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} jutri objavi četrtletne rezultate",
   "earningsReminderToday": "{symbol} danes objavi četrtletne rezultate",
   "earningsRemindersTitle": "Opomniki za rezultate",
-  "earningsRemindersSubtitle": "Obvestilo dan pred objavo četrtletnih rezultatov delnic iz priljubljenih ali tvojega portfelja"
+  "earningsRemindersSubtitle": "Obvestilo dan pred objavo četrtletnih rezultatov delnic iz priljubljenih ali tvojega portfelja",
+  "addAllToFavorites": "Dodaj vse med priljubljene ({count})"
 }

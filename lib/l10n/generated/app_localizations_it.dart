@@ -2076,4 +2076,9 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Una notifica il giorno prima che i titoli dei tuoi preferiti o del tuo portafoglio pubblichino i risultati trimestrali';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Aggiungi tutte ai preferiti ($count)';
+  }
 }

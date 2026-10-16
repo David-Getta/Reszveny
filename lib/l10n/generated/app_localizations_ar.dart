@@ -2112,4 +2112,9 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'إضافة الكل إلى المفضلة ($count)';
+  }
 }

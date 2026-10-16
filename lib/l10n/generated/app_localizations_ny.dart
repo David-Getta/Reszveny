@@ -2077,4 +2077,9 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Onjezani zonse ku zokondedwa ($count)';
+  }
 }

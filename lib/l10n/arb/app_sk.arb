@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} zajtra zverejní štvrťročné výsledky",
   "earningsReminderToday": "{symbol} dnes zverejní štvrťročné výsledky",
   "earningsRemindersTitle": "Pripomienky výsledkov",
-  "earningsRemindersSubtitle": "Upozornenie deň pred zverejnením štvrťročných výsledkov akcií z obľúbených alebo z tvojho portfólia"
+  "earningsRemindersSubtitle": "Upozornenie deň pred zverejnením štvrťročných výsledkov akcií z obľúbených alebo z tvojho portfólia",
+  "addAllToFavorites": "Pridať všetky do obľúbených ({count})"
 }

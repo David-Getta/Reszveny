@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} boru bu'aa kurmaanaa ifa baasa",
   "earningsReminderToday": "{symbol} har'a bu'aa kurmaanaa ifa baasa",
   "earningsRemindersTitle": "Yaadachiisa bu'aa",
-  "earningsRemindersSubtitle": "Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu'aa kurmaanaa ifa baasan"
+  "earningsRemindersSubtitle": "Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu'aa kurmaanaa ifa baasan",
+  "addAllToFavorites": "Hunda filatamootti dabali ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} maa yaltin ngalluuji lebbi tati jaango",
   "earningsReminderToday": "{symbol} ina yaltina ngalluuji lebbi tati hannde",
   "earningsRemindersTitle": "Siftorɗe ngalluuji",
-  "earningsRemindersSubtitle": "Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati"
+  "earningsRemindersSubtitle": "Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati",
+  "addAllToFavorites": "Ɓeydu fof e cuɓaaɗe ({count})"
 }

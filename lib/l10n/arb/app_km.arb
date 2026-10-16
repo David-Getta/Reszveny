@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} នឹងប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃស្អែក",
   "earningsReminderToday": "{symbol} ប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃនេះ",
   "earningsRemindersTitle": "ការរំលឹកលទ្ធផល",
-  "earningsRemindersSubtitle": "ការជូនដំណឹងមួយថ្ងៃមុនពេលភាគហ៊ុនក្នុងចំណូលចិត្ត ឬផលប័ត្ររបស់អ្នកប្រកាសលទ្ធផលប្រចាំត្រីមាស"
+  "earningsRemindersSubtitle": "ការជូនដំណឹងមួយថ្ងៃមុនពេលភាគហ៊ុនក្នុងចំណូលចិត្ត ឬផលប័ត្ររបស់អ្នកប្រកាសលទ្ធផលប្រចាំត្រីមាស",
+  "addAllToFavorites": "បន្ថែមទាំងអស់ទៅចំណូលចិត្ត ({count})"
 }

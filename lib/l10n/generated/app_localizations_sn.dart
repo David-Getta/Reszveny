@@ -2076,4 +2076,9 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Wedzera zvese kune zvaunofarira ($count)';
+  }
 }

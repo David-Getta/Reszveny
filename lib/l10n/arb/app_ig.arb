@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ga-ewepụta nsonaazụ nkeji ọnwa atọ echi",
   "earningsReminderToday": "{symbol} na-ewepụta nsonaazụ nkeji ọnwa atọ taa",
   "earningsRemindersTitle": "Ncheta nsonaazụ",
-  "earningsRemindersSubtitle": "Ọkwa otu ụbọchị tupu òkè dị n'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ"
+  "earningsRemindersSubtitle": "Ọkwa otu ụbọchị tupu òkè dị n'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ",
+  "addAllToFavorites": "Tinye ha niile n'ọkacha mmasị ({count})"
 }

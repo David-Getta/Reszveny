@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} આવતીકાલે ત્રિમાસિક પરિણામો જાહેર કરશે",
   "earningsReminderToday": "{symbol} આજે ત્રિમાસિક પરિણામો જાહેર કરશે",
   "earningsRemindersTitle": "પરિણામ રિમાઇન્ડર",
-  "earningsRemindersSubtitle": "તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના"
+  "earningsRemindersSubtitle": "તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના",
+  "addAllToFavorites": "બધા મનપસંદમાં ઉમેરો ({count})"
 }

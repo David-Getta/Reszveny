@@ -2105,4 +2105,9 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Adaugă toate la favorite ($count)';
+  }
 }

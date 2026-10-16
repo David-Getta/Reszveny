@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ikhipha imiphumela yekota kusasa",
   "earningsReminderToday": "{symbol} ikhipha imiphumela yekota namuhla",
   "earningsRemindersTitle": "Izikhumbuzi zemiphumela",
-  "earningsRemindersSubtitle": "Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota"
+  "earningsRemindersSubtitle": "Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota",
+  "addAllToFavorites": "Engeza konke kuzintandokazi ({count})"
 }

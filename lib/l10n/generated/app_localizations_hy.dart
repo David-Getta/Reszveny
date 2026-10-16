@@ -2079,4 +2079,9 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ծանուցում՝ ընտրյալների կամ պորտֆելի բաժնետոմսերի եռամսյակային արդյունքների հրապարակումից մեկ օր առաջ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ավելացնել բոլորը ընտրյալներում ($count)';
+  }
 }

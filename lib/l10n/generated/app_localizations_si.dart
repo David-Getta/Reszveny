@@ -2069,4 +2069,9 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ඔබේ ප්‍රියතම හෝ කළඹේ කොටස් කාර්තුමය ප්‍රතිඵල නිකුත් කිරීමට පෙර දින දැනුම්දීමක්';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'සියල්ල ප්‍රියතමවලට එක් කරන්න ($count)';
+  }
 }

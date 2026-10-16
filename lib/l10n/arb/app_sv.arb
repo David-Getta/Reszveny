@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} släpper kvartalsrapport i morgon",
   "earningsReminderToday": "{symbol} släpper kvartalsrapport i dag",
   "earningsRemindersTitle": "Rapportpåminnelser",
-  "earningsRemindersSubtitle": "En notis dagen innan dina favoriter eller portföljaktier släpper kvartalsrapport"
+  "earningsRemindersSubtitle": "En notis dagen innan dina favoriter eller portföljaktier släpper kvartalsrapport",
+  "addAllToFavorites": "Lägg till alla i favoriter ({count})"
 }

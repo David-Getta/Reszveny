@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} објавува квартални резултати утре",
   "earningsReminderToday": "{symbol} објавува квартални резултати денес",
   "earningsRemindersTitle": "Потсетници за резултати",
-  "earningsRemindersSubtitle": "Известување ден пред омилените или акциите од твоето портфолио да објават квартални резултати"
+  "earningsRemindersSubtitle": "Известување ден пред омилените или акциите од твоето портфолио да објават квартални резултати",
+  "addAllToFavorites": "Додај ги сите во омилени ({count})"
 }

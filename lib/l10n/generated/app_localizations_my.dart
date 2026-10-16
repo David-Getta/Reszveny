@@ -2065,4 +2065,9 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'သင်၏ အကြိုက်ဆုံးများ သို့မဟုတ် ပေါ့ဖိုလီယို ရှယ်ယာများ သုံးလပတ် ရလဒ် မကြေညာမီ တစ်ရက်အလိုတွင် အသိပေးချက်';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'အားလုံးကို အကြိုက်ဆုံးများသို့ ထည့်ရန် ($count)';
+  }
 }

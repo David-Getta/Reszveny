@@ -2035,4 +2035,9 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ዝተፈተዉ ወይ ናይ ፖርትፎሊዮኻ ኣክስዮናት ናይ ርብዒ ዓመት ውጽኢት ቅድሚ ምፍላጦም ሓደ መዓልቲ ዝመጽእ መፍለጢ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ኩሉ ናብ ዝተፈተዉ ወስኽ ($count)';
+  }
 }

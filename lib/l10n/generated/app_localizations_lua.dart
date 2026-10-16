@@ -2077,4 +2077,9 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Bueja yonso mu biudi musue ($count)';
+  }
 }

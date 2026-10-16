@@ -2072,4 +2072,9 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Известие ден преди акциите от любимите ви или от портфейла ви да обявят тримесечни резултати';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Добави всички към любими ($count)';
+  }
 }

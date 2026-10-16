@@ -2071,4 +2071,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Notification one day before your favourites or portfolio stocks release quarter result';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Add all of dem to favourites ($count)';
+  }
 }

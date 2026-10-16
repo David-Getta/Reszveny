@@ -2077,4 +2077,9 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Mind a kedvencekhez ($count)';
+  }
 }

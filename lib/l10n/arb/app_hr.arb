@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} sutra objavljuje kvartalne rezultate",
   "earningsReminderToday": "{symbol} danas objavljuje kvartalne rezultate",
   "earningsRemindersTitle": "Podsjetnici na rezultate",
-  "earningsRemindersSubtitle": "Obavijest dan prije nego što dionice iz tvojih favorita ili portfelja objave kvartalne rezultate"
+  "earningsRemindersSubtitle": "Obavijest dan prije nego što dionice iz tvojih favorita ili portfelja objave kvartalne rezultate",
+  "addAllToFavorites": "Dodaj sve u favorite ({count})"
 }

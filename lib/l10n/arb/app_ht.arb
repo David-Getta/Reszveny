@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ap pibliye rezilta trimestriyèl li demen",
   "earningsReminderToday": "{symbol} ap pibliye rezilta trimestriyèl li jodi a",
   "earningsRemindersTitle": "Rapèl rezilta",
-  "earningsRemindersSubtitle": "Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo"
+  "earningsRemindersSubtitle": "Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo",
+  "addAllToFavorites": "Ajoute tout nan favori ({count})"
 }

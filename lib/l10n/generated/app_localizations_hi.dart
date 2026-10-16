@@ -2070,4 +2070,9 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'आपके पसंदीदा या पोर्टफ़ोलियो के शेयरों के तिमाही नतीजों से एक दिन पहले सूचना';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'सभी पसंदीदा में जोड़ें ($count)';
+  }
 }

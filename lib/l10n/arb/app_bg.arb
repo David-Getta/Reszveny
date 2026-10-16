@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} обявява тримесечни резултати утре",
   "earningsReminderToday": "{symbol} обявява тримесечни резултати днес",
   "earningsRemindersTitle": "Напомняния за резултати",
-  "earningsRemindersSubtitle": "Известие ден преди акциите от любимите ви или от портфейла ви да обявят тримесечни резултати"
+  "earningsRemindersSubtitle": "Известие ден преди акциите от любимите ви или от портфейла ви да обявят тримесечни резултати",
+  "addAllToFavorites": "Добави всички към любими ({count})"
 }

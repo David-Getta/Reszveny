@@ -2071,4 +2071,9 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tümünü favorilere ekle ($count)';
+  }
 }

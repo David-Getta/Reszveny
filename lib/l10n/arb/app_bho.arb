@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: काल्ह तिमाही नतीजा",
   "earningsReminderToday": "{symbol}: आज तिमाही नतीजा",
   "earningsRemindersTitle": "नतीजा रिमाइंडर",
-  "earningsRemindersSubtitle": "राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना"
+  "earningsRemindersSubtitle": "राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना",
+  "addAllToFavorites": "सब पसंदीदा में जोड़ीं ({count})"
 }

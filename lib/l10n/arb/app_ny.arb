@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ilengeza zotsatira za kotala mawa",
   "earningsReminderToday": "{symbol} ilengeza zotsatira za kotala lero",
   "earningsRemindersTitle": "Zikumbutso za zotsatira",
-  "earningsRemindersSubtitle": "Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala"
+  "earningsRemindersSubtitle": "Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala",
+  "addAllToFavorites": "Onjezani zonse ku zokondedwa ({count})"
 }

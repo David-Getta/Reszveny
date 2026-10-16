@@ -2077,4 +2077,9 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Isang notification isang araw bago maglabas ng quarterly na resulta ang iyong mga paborito o stock sa portfolio';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Idagdag lahat sa mga paborito ($count)';
+  }
 }

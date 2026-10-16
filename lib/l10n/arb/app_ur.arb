@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} کل سہ ماہی نتائج جاری کرے گا",
   "earningsReminderToday": "{symbol} آج سہ ماہی نتائج جاری کرے گا",
   "earningsRemindersTitle": "نتائج کی یاد دہانیاں",
-  "earningsRemindersSubtitle": "آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع"
+  "earningsRemindersSubtitle": "آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع",
+  "addAllToFavorites": "سب پسندیدہ میں شامل کریں ({count})"
 }

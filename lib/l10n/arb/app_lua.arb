@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} neapatule mapeta a trimestre makelela",
   "earningsReminderToday": "{symbol} udi upatula mapeta a trimestre lelu",
   "earningsRemindersTitle": "Bivuluija bia mapeta",
-  "earningsRemindersSubtitle": "Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre"
+  "earningsRemindersSubtitle": "Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre",
+  "addAllToFavorites": "Bueja yonso mu biudi musue ({count})"
 }

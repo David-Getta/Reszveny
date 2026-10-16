@@ -2067,4 +2067,9 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'બધા મનપસંદમાં ઉમેરો ($count)';
+  }
 }

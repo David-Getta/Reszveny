@@ -2073,4 +2073,9 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Lisää kaikki suosikkeihin ($count)';
+  }
 }

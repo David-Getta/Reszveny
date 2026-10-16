@@ -2063,4 +2063,9 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'توهان جي پسنديده يا پورٽ فوليو جي شيئرن جا ٽه ماهي نتيجا جاري ٿيڻ کان هڪ ڏينهن اڳ اطلاع';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'سڀ پسنديده ۾ شامل ڪريو ($count)';
+  }
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} presenta resultados trimestrales mañana",
   "earningsReminderToday": "{symbol} presenta resultados trimestrales hoy",
   "earningsRemindersTitle": "Recordatorios de resultados",
-  "earningsRemindersSubtitle": "Una notificación el día antes de que las acciones de tus favoritos o tu cartera presenten resultados trimestrales"
+  "earningsRemindersSubtitle": "Una notificación el día antes de que las acciones de tus favoritos o tu cartera presenten resultados trimestrales",
+  "addAllToFavorites": "Añadir todos a favoritos ({count})"
 }

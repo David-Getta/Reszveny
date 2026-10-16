@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: སང་ཉིན་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས།",
   "earningsReminderToday": "{symbol}: དེ་རིང་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས།",
   "earningsRemindersTitle": "གྲུབ་འབྲས་དྲན་སྐུལ།",
-  "earningsRemindersSubtitle": "ཁྱེད་ཀྱི་དགའ་མོས་སམ་མ་འཛུགས་ཀྱི་ཚོང་ཀས་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས་མ་སྤེལ་གོང་ཉིན་གཅིག་ལ་བརྡ་ཐོ།"
+  "earningsRemindersSubtitle": "ཁྱེད་ཀྱི་དགའ་མོས་སམ་མ་འཛུགས་ཀྱི་ཚོང་ཀས་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས་མ་སྤེལ་གོང་ཉིན་གཅིག་ལ་བརྡ་ཐོ།",
+  "addAllToFavorites": "ཚང་མ་དགའ་མོས་སུ་སྣོན ({count})"
 }

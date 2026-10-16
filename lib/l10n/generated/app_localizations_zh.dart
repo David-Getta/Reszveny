@@ -1969,6 +1969,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get earningsRemindersSubtitle => '在你收藏或持仓的股票发布季度财报前一天发送通知';
+
+  @override
+  String addAllToFavorites(int count) {
+    return '全部添加到收藏 ($count)';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3935,4 +3940,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get earningsRemindersSubtitle => '在你收藏或持倉的股票公布季度業績前一日發出通知';
+
+  @override
+  String addAllToFavorites(int count) {
+    return '全部加入收藏 ($count)';
+  }
 }

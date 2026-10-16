@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} jutro publikuje wyniki kwartalne",
   "earningsReminderToday": "{symbol} dziś publikuje wyniki kwartalne",
   "earningsRemindersTitle": "Przypomnienia o wynikach",
-  "earningsRemindersSubtitle": "Powiadomienie dzień przed publikacją wyników kwartalnych spółek z ulubionych lub portfela"
+  "earningsRemindersSubtitle": "Powiadomienie dzień przed publikacją wyników kwartalnych spółek z ulubionych lub portfela",
+  "addAllToFavorites": "Dodaj wszystkie do ulubionych ({count})"
 }

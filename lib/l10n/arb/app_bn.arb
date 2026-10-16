@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} আগামীকাল ত্রৈমাসিক ফলাফল প্রকাশ করবে",
   "earningsReminderToday": "{symbol} আজ ত্রৈমাসিক ফলাফল প্রকাশ করবে",
   "earningsRemindersTitle": "ফলাফলের রিমাইন্ডার",
-  "earningsRemindersSubtitle": "আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি"
+  "earningsRemindersSubtitle": "আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি",
+  "addAllToFavorites": "সব পছন্দের তালিকায় যোগ করুন ({count})"
 }

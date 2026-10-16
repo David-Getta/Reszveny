@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} маргааш улирлын тайлангаа танилцуулна",
   "earningsReminderToday": "{symbol} өнөөдөр улирлын тайлангаа танилцуулна",
   "earningsRemindersTitle": "Тайлангийн сануулга",
-  "earningsRemindersSubtitle": "Дуртай болон багцын тань хувьцаа улирлын тайлангаа гаргахаас өмнөх өдөр мэдэгдэл ирнэ"
+  "earningsRemindersSubtitle": "Дуртай болон багцын тань хувьцаа улирлын тайлангаа гаргахаас өмнөх өдөр мэдэгдэл ирнэ",
+  "addAllToFavorites": "Бүгдийг дуртайд нэмэх ({count})"
 }

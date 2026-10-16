@@ -2083,4 +2083,9 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p\'unchaw ñawpaqta willachiy';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Llapanta munasqakunaman yapay ($count)';
+  }
 }

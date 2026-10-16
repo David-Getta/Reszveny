@@ -2073,4 +2073,9 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Огоҳинома як рӯз пеш аз он ки саҳмияҳои интихобшуда ё портфели шумо натиҷаҳои семоҳаро эълон кунанд';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Иловаи ҳама ба интихобшудаҳо ($count)';
+  }
 }

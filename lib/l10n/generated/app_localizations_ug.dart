@@ -2074,4 +2074,9 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'يىغقۇچىڭىزدىكى ياكى مەبلەغ بىرىكمىڭىزدىكى پاي چېكلىرى پەسىللىك نەتىجىسىنى ئېلان قىلىشتىن بىر كۈن بۇرۇن ئۇقتۇرۇش';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ھەممىنى يىغقۇچقا قوشۇش ($count)';
+  }
 }

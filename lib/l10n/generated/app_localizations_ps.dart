@@ -2063,4 +2063,9 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ټول خوښو ته ورزیات کړئ ($count)';
+  }
 }

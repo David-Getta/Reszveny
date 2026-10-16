@@ -2075,4 +2075,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Barchasini sevimlilarga qoʻshish ($count)';
+  }
 }

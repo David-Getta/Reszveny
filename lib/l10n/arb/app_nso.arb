@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: dipoelo tša kotara gosasa",
   "earningsReminderToday": "{symbol}: dipoelo tša kotara lehono",
   "earningsRemindersTitle": "Dikgopotšo tša dipoelo",
-  "earningsRemindersSubtitle": "Tsebišo letšatši pele tše di ratwago goba dišere tša potefolio ya gago di phatlalatša dipoelo tša kotara"
+  "earningsRemindersSubtitle": "Tsebišo letšatši pele tše di ratwago goba dišere tša potefolio ya gago di phatlalatša dipoelo tša kotara",
+  "addAllToFavorites": "Oketša tšohle go tše di ratwago ({count})"
 }

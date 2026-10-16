@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: kiuuy a tãab ligd-yɛla beoogo",
   "earningsReminderToday": "{symbol}: kiuuy a tãab ligd-yɛla rũndã",
   "earningsRemindersTitle": "Ligd-yɛla tẽegre",
-  "earningsRemindersSubtitle": "Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla"
+  "earningsRemindersSubtitle": "Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla",
+  "addAllToFavorites": "Paas fãa nong-n-yɩɩda pʋgẽ ({count})"
 }

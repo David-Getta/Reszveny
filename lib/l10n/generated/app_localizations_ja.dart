@@ -1999,4 +1999,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get earningsRemindersSubtitle => 'お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'すべてお気に入りに追加 ($count)';
+  }
 }

@@ -2070,4 +2070,9 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Rnu akk ɣer yismenyifen ($count)';
+  }
 }

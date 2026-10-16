@@ -2128,4 +2128,9 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Obvestilo dan pred objavo četrtletnih rezultatov delnic iz priljubljenih ali tvojega portfelja';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Dodaj vse med priljubljene ($count)';
+  }
 }

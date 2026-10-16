@@ -2072,4 +2072,9 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Дуртай болон багцын тань хувьцаа улирлын тайлангаа гаргахаас өмнөх өдөр мэдэгдэл ирнэ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Бүгдийг дуртайд нэмэх ($count)';
+  }
 }

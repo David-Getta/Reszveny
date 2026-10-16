@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} उद्या तिमाही निकाल जाहीर करणार",
   "earningsReminderToday": "{symbol} आज तिमाही निकाल जाहीर करणार",
   "earningsRemindersTitle": "निकाल स्मरणपत्रे",
-  "earningsRemindersSubtitle": "तुमचे आवडते किंवा पोर्टफोलिओमधील शेअर्स तिमाही निकाल जाहीर करण्याच्या आदल्या दिवशी सूचना"
+  "earningsRemindersSubtitle": "तुमचे आवडते किंवा पोर्टफोलिओमधील शेअर्स तिमाही निकाल जाहीर करण्याच्या आदल्या दिवशी सूचना",
+  "addAllToFavorites": "सर्व आवडत्यांमध्ये जोडा ({count})"
 }

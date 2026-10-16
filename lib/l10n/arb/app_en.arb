@@ -1594,5 +1594,14 @@
     }
   },
   "earningsRemindersTitle": "Results reminders",
-  "earningsRemindersSubtitle": "A notification the day before your favorites or portfolio stocks report quarterly results"
+  "earningsRemindersSubtitle": "A notification the day before your favorites or portfolio stocks report quarterly results",
+  "addAllToFavorites": "Add all to favorites ({count})",
+  "@addAllToFavorites": {
+    "description": "Button under the list of stocks recognised in one photo; count is how many are not yet favorites.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

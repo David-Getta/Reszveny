@@ -2079,4 +2079,9 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Engeza konke kuzintandokazi ($count)';
+  }
 }

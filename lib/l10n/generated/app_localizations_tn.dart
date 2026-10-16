@@ -2082,4 +2082,9 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Kitsiso letsatsi pele ga dishere tse o di ratang kgotsa tsa phothefolio ya gago di phasalatsa dipoelo tsa kotara';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tsenya tsotlhe mo go tse o di ratang ($count)';
+  }
 }

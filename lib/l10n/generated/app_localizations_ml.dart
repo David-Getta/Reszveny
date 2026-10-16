@@ -2079,4 +2079,9 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'നിങ്ങളുടെ പ്രിയപ്പെട്ടവയോ പോർട്ട്‌ഫോളിയോയിലെ ഓഹരികളോ ത്രൈമാസ ഫലങ്ങൾ പ്രസിദ്ധീകരിക്കുന്നതിന്റെ തലേദിവസം ഒരു അറിയിപ്പ്';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'എല്ലാം പ്രിയപ്പെട്ടവയിലേക്ക് ചേർക്കുക ($count)';
+  }
 }

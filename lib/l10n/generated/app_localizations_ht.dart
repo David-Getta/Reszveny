@@ -2070,4 +2070,9 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ajoute tout nan favori ($count)';
+  }
 }

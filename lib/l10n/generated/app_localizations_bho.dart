@@ -2067,4 +2067,9 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'सब पसंदीदा में जोड़ीं ($count)';
+  }
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: דוחות רבעוניים מחר",
   "earningsReminderToday": "{symbol}: דוחות רבעוניים היום",
   "earningsRemindersTitle": "תזכורות לדוחות רבעוניים",
-  "earningsRemindersSubtitle": "התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים"
+  "earningsRemindersSubtitle": "התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים",
+  "addAllToFavorites": "הוספת הכול למועדפים ({count})"
 }

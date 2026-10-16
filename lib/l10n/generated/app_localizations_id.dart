@@ -2067,4 +2067,9 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Notifikasi sehari sebelum saham di favorit atau portofoliomu merilis laporan kuartalan';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tambahkan semua ke favorit ($count)';
+  }
 }

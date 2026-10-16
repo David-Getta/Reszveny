@@ -2069,4 +2069,9 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ଆପଣଙ୍କ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓର ଷ୍ଟକ୍ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବାର ପୂର୍ବ ଦିନ ଏକ ବିଜ୍ଞପ୍ତି';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ସବୁ ପସନ୍ଦରେ ଯୋଡ଼ନ୍ତୁ ($count)';
+  }
 }

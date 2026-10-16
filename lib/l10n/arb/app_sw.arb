@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} inatangaza matokeo ya robo mwaka kesho",
   "earningsReminderToday": "{symbol} inatangaza matokeo ya robo mwaka leo",
   "earningsRemindersTitle": "Vikumbusho vya matokeo",
-  "earningsRemindersSubtitle": "Arifa siku moja kabla hisa zako unazopenda au za jalada lako hazijatangaza matokeo ya robo mwaka"
+  "earningsRemindersSubtitle": "Arifa siku moja kabla hisa zako unazopenda au za jalada lako hazijatangaza matokeo ya robo mwaka",
+  "addAllToFavorites": "Ongeza zote kwenye vipendwa ({count})"
 }

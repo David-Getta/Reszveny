@@ -2064,4 +2064,9 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'הוספת הכול למועדפים ($count)';
+  }
 }

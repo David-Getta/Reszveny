@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} yarın çeyreklik bilançosunu açıklıyor",
   "earningsReminderToday": "{symbol} bugün çeyreklik bilançosunu açıklıyor",
   "earningsRemindersTitle": "Bilanço hatırlatıcıları",
-  "earningsRemindersSubtitle": "Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim"
+  "earningsRemindersSubtitle": "Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim",
+  "addAllToFavorites": "Tümünü favorilere ekle ({count})"
 }

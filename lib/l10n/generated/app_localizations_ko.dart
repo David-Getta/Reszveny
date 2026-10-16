@@ -2008,4 +2008,9 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       '즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다';
+
+  @override
+  String addAllToFavorites(int count) {
+    return '모두 즐겨찾기에 추가($count)';
+  }
 }

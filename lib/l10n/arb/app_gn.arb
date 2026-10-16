@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ohechaukáta mbohapy jasy resultado koʼẽrõ",
   "earningsReminderToday": "{symbol} ohechauka mbohapy jasy resultado koʼága",
   "earningsRemindersTitle": "Resultado manduʼarã",
-  "earningsRemindersSubtitle": "Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado"
+  "earningsRemindersSubtitle": "Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado",
+  "addAllToFavorites": "Embojuaju opavave ojeguerohoryvévape ({count})"
 }

@@ -2084,4 +2084,9 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Tsebišo letšatši pele tše di ratwago goba dišere tša potefolio ya gago di phatlalatša dipoelo tša kotara';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Oketša tšohle go tše di ratwago ($count)';
+  }
 }

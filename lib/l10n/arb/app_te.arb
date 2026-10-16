@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} రేపు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది",
   "earningsReminderToday": "{symbol} ఈరోజు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది",
   "earningsRemindersTitle": "ఫలితాల రిమైండర్‌లు",
-  "earningsRemindersSubtitle": "మీ ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లు త్రైమాసిక ఫలితాలు ప్రకటించే ముందు రోజు ఒక నోటిఫికేషన్"
+  "earningsRemindersSubtitle": "మీ ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లు త్రైమాసిక ఫలితాలు ప్రకటించే ముందు రోజు ఒక నోటిఫికేషన్",
+  "addAllToFavorites": "అన్నీ ఇష్టమైనవాటికి జోడించండి ({count})"
 }

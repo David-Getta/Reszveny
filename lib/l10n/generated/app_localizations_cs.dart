@@ -2122,4 +2122,9 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Upozornění den předtím, než akcie z vašich oblíbených nebo portfolia zveřejní čtvrtletní výsledky';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Přidat vše do oblíbených ($count)';
+  }
 }

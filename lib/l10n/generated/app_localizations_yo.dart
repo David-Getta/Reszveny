@@ -2070,4 +2070,9 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Fi gbogbo rẹ̀ kún àwọn ààyò ($count)';
+  }
 }

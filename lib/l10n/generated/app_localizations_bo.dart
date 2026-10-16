@@ -2062,4 +2062,9 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ཁྱེད་ཀྱི་དགའ་མོས་སམ་མ་འཛུགས་ཀྱི་ཚོང་ཀས་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས་མ་སྤེལ་གོང་ཉིན་གཅིག་ལ་བརྡ་ཐོ།';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ཚང་མ་དགའ་མོས་སུ་སྣོན ($count)';
+  }
 }

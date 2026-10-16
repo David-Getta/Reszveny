@@ -2074,4 +2074,9 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Béwara sapoé saméméh saham paporit atawa portofolio anjeun ngumumkeun laporan kuartalan';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tambahkeun sadayana ka paporit ($count)';
+  }
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: holnap gyorsjelentés",
   "earningsReminderToday": "{symbol}: ma gyorsjelentés",
   "earningsRemindersTitle": "Gyorsjelentés-emlékeztető",
-  "earningsRemindersSubtitle": "Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon"
+  "earningsRemindersSubtitle": "Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon",
+  "addAllToFavorites": "Mind a kedvencekhez ({count})"
 }

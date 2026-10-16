@@ -2077,4 +2077,9 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'మీ ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లు త్రైమాసిక ఫలితాలు ప్రకటించే ముందు రోజు ఒక నోటిఫికేషన్';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'అన్నీ ఇష్టమైనవాటికి జోడించండి ($count)';
+  }
 }

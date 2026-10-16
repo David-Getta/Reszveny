@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "Ang {symbol} magapagwa sang resulta kada kwarter buwas",
   "earningsReminderToday": "Ang {symbol} magapagwa sang resulta kada kwarter subong",
   "earningsRemindersTitle": "Mga pahanumdom sa resulta",
-  "earningsRemindersSubtitle": "Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio"
+  "earningsRemindersSubtitle": "Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio",
+  "addAllToFavorites": "Idugang tanan sa mga paborito ({count})"
 }

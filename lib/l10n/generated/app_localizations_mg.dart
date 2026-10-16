@@ -2085,4 +2085,9 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Fampandrenesana iray andro alohan\'ny hamoahan\'ny ankafizinao na ny tahiry ao amin\'ny portfolio-nao ny vokatra isan-telovolana';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ampio daholo amin\'ny ankafizina ($count)';
+  }
 }

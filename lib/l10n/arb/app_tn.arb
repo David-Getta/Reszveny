@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} e phasalatsa dipoelo tsa kotara kamoso",
   "earningsReminderToday": "{symbol} e phasalatsa dipoelo tsa kotara gompieno",
   "earningsRemindersTitle": "Dikgakololo tsa dipoelo",
-  "earningsRemindersSubtitle": "Kitsiso letsatsi pele ga dishere tse o di ratang kgotsa tsa phothefolio ya gago di phasalatsa dipoelo tsa kotara"
+  "earningsRemindersSubtitle": "Kitsiso letsatsi pele ga dishere tse o di ratang kgotsa tsa phothefolio ya gago di phasalatsa dipoelo tsa kotara",
+  "addAllToFavorites": "Tsenya tsotlhe mo go tse o di ratang ({count})"
 }

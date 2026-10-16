@@ -2077,4 +2077,9 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Embojuaju opavave ojeguerohoryvévape ($count)';
+  }
 }

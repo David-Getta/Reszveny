@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} rapporteer môre kwartaalresultate",
   "earningsReminderToday": "{symbol} rapporteer vandag kwartaalresultate",
   "earningsRemindersTitle": "Resultaatherinneringe",
-  "earningsRemindersSubtitle": "’n Kennisgewing die dag voordat jou gunstelinge of portefeulje-aandele kwartaalresultate rapporteer"
+  "earningsRemindersSubtitle": "’n Kennisgewing die dag voordat jou gunstelinge of portefeulje-aandele kwartaalresultate rapporteer",
+  "addAllToFavorites": "Voeg almal by gunstelinge ({count})"
 }

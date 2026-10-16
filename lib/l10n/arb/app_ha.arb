@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} zai fitar da sakamakon kuɗi na kwata gobe",
   "earningsReminderToday": "{symbol} zai fitar da sakamakon kuɗi na kwata yau",
   "earningsRemindersTitle": "Tunatarwar sakamakon kuɗi",
-  "earningsRemindersSubtitle": "Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata"
+  "earningsRemindersSubtitle": "Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata",
+  "addAllToFavorites": "Ƙara duka zuwa abubuwan da aka fi so ({count})"
 }

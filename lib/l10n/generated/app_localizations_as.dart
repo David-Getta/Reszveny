@@ -2070,4 +2070,9 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'আপোনাৰ প্ৰিয় বা পৰ্টফ\'লিঅ\'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'সকলো প্ৰিয়ত যোগ কৰক ($count)';
+  }
 }

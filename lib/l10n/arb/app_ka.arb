@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ხვალ კვარტალურ შედეგებს აქვეყნებს",
   "earningsReminderToday": "{symbol} დღეს კვარტალურ შედეგებს აქვეყნებს",
   "earningsRemindersTitle": "შედეგების შეხსენებები",
-  "earningsRemindersSubtitle": "შეტყობინება ერთი დღით ადრე, სანამ შენი რჩეულების ან პორტფელის აქციები კვარტალურ შედეგებს გამოაქვეყნებს"
+  "earningsRemindersSubtitle": "შეტყობინება ერთი დღით ადრე, სანამ შენი რჩეულების ან პორტფელის აქციები კვარტალურ შედეგებს გამოაქვეყნებს",
+  "addAllToFavorites": "ყველას რჩეულებში დამატება ({count})"
 }

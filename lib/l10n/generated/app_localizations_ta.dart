@@ -2081,4 +2081,9 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'உங்கள் பிடித்தவை அல்லது போர்ட்ஃபோலியோ பங்குகள் காலாண்டு முடிவுகளை வெளியிடுவதற்கு முந்தைய நாள் ஒரு அறிவிப்பு';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'அனைத்தையும் பிடித்தவற்றில் சேர் ($count)';
+  }
 }

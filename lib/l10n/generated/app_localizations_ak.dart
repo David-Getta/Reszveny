@@ -2071,4 +2071,9 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Fa ne nyinaa ka nea mepɛ ho ($count)';
+  }
 }

@@ -2066,4 +2066,9 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Yokk yépp ci yi ma gënal ($count)';
+  }
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren azekka",
   "earningsReminderToday": "{symbol} ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren ass-a",
   "earningsRemindersTitle": "Asmekti n yigmaḍ",
-  "earningsRemindersSubtitle": "Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren"
+  "earningsRemindersSubtitle": "Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren",
+  "addAllToFavorites": "Rnu akk ɣer yismenyifen ({count})"
 }

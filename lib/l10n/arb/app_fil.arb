@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "Maglalabas ang {symbol} ng quarterly na resulta bukas",
   "earningsReminderToday": "Maglalabas ang {symbol} ng quarterly na resulta ngayon",
   "earningsRemindersTitle": "Mga paalala sa resulta",
-  "earningsRemindersSubtitle": "Isang notification isang araw bago maglabas ng quarterly na resulta ang iyong mga paborito o stock sa portfolio"
+  "earningsRemindersSubtitle": "Isang notification isang araw bago maglabas ng quarterly na resulta ang iyong mga paborito o stock sa portfolio",
+  "addAllToFavorites": "Idagdag lahat sa mga paborito ({count})"
 }

@@ -2073,4 +2073,9 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Hemûyan li bijareyan zêde bike ($count)';
+  }
 }

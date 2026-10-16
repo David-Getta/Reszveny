@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} e phatlalatsa diphetho tsa kotara hosane",
   "earningsReminderToday": "{symbol} e phatlalatsa diphetho tsa kotara kajeno",
   "earningsRemindersTitle": "Dikgopotso tsa diphetho",
-  "earningsRemindersSubtitle": "Tsebiso letsatsi pele ho ha dishere tseo o di ratang kapa tsa phothefolio ya hao di phatlalatsa diphetho tsa kotara"
+  "earningsRemindersSubtitle": "Tsebiso letsatsi pele ho ha dishere tseo o di ratang kapa tsa phothefolio ya hao di phatlalatsa diphetho tsa kotara",
+  "addAllToFavorites": "Kenya tsohle ho tseo o di ratang ({count})"
 }

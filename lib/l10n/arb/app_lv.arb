@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} rīt publicē ceturkšņa rezultātus",
   "earningsReminderToday": "{symbol} šodien publicē ceturkšņa rezultātus",
   "earningsRemindersTitle": "Atgādinājumi par rezultātiem",
-  "earningsRemindersSubtitle": "Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas"
+  "earningsRemindersSubtitle": "Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas",
+  "addAllToFavorites": "Pievienot visas izlasei ({count})"
 }

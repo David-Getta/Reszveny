@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} фардо натиҷаҳои семоҳаро эълон мекунад",
   "earningsReminderToday": "{symbol} имрӯз натиҷаҳои семоҳаро эълон мекунад",
   "earningsRemindersTitle": "Ёдраскуниҳои натиҷаҳо",
-  "earningsRemindersSubtitle": "Огоҳинома як рӯз пеш аз он ки саҳмияҳои интихобшуда ё портфели шумо натиҷаҳои семоҳаро эълон кунанд"
+  "earningsRemindersSubtitle": "Огоҳинома як рӯз пеш аз он ки саҳмияҳои интихобшуда ё портфели шумо натиҷаҳои семоҳаро эълон кунанд",
+  "addAllToFavorites": "Иловаи ҳама ба интихобшудаҳо ({count})"
 }

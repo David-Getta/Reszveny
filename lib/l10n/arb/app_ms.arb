@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} mengumumkan keputusan suku tahunan esok",
   "earningsReminderToday": "{symbol} mengumumkan keputusan suku tahunan hari ini",
   "earningsRemindersTitle": "Peringatan keputusan",
-  "earningsRemindersSubtitle": "Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan"
+  "earningsRemindersSubtitle": "Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan",
+  "addAllToFavorites": "Tambah semua ke kegemaran ({count})"
 }

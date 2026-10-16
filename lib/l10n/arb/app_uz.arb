@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ertaga choraklik natijalarini e’lon qiladi",
   "earningsReminderToday": "{symbol} bugun choraklik natijalarini e’lon qiladi",
   "earningsRemindersTitle": "Natijalar eslatmalari",
-  "earningsRemindersSubtitle": "Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma"
+  "earningsRemindersSubtitle": "Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma",
+  "addAllToFavorites": "Barchasini sevimlilarga qoʻshish ({count})"
 }

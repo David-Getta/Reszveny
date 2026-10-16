@@ -2065,4 +2065,9 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Thêm tất cả vào yêu thích ($count)';
+  }
 }

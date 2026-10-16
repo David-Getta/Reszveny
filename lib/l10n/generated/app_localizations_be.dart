@@ -2125,4 +2125,9 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Апавяшчэнне за дзень да таго, як акцыі з вашага абранага або партфеля апублікуюць квартальныя вынікі';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Дадаць усе ў абранае ($count)';
+  }
 }

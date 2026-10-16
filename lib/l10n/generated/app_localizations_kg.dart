@@ -2078,4 +2078,9 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Yika yonso mu bizolwa ($count)';
+  }
 }

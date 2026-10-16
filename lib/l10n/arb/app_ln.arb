@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ekobimisa ba résultats ya trimestre lobi",
   "earningsReminderToday": "{symbol} ezali kobimisa ba résultats ya trimestre lelo",
   "earningsRemindersTitle": "Bokundolisi ya ba résultats",
-  "earningsRemindersSubtitle": "Liyebisi mokolo moko liboso ba actions ya oyo olingaka to ya portefeuille na yo ebimisa ba résultats ya trimestre"
+  "earningsRemindersSubtitle": "Liyebisi mokolo moko liboso ba actions ya oyo olingaka to ya portefeuille na yo ebimisa ba résultats ya trimestre",
+  "addAllToFavorites": "Bakisa nyonso na oyo olingaka ({count})"
 }

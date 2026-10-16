@@ -2069,4 +2069,9 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'U bɛɛ fara diyanyelenw kan ($count)';
+  }
 }

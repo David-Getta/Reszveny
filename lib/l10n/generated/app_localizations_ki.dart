@@ -2072,4 +2072,9 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ongerera yothe harĩ iria wendete ($count)';
+  }
 }

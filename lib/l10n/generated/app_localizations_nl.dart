@@ -2076,4 +2076,9 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Een melding de dag voordat je favorieten of portefeuilleaandelen kwartaalcijfers publiceren';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Alle toevoegen aan favorieten ($count)';
+  }
 }

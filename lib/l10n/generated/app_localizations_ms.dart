@@ -2076,4 +2076,9 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Tambah semua ke kegemaran ($count)';
+  }
 }

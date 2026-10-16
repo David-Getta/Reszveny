@@ -2072,4 +2072,9 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'შეტყობინება ერთი დღით ადრე, სანამ შენი რჩეულების ან პორტფელის აქციები კვარტალურ შედეგებს გამოაქვეყნებს';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ყველას რჩეულებში დამატება ($count)';
+  }
 }

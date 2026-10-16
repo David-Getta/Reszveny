@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} publică mâine rezultatele trimestriale",
   "earningsReminderToday": "{symbol} publică azi rezultatele trimestriale",
   "earningsRemindersTitle": "Mementouri pentru rezultate",
-  "earningsRemindersSubtitle": "O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale"
+  "earningsRemindersSubtitle": "O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale",
+  "addAllToFavorites": "Adaugă toate la favorite ({count})"
 }

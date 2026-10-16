@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} завтра публікує квартальні результати",
   "earningsReminderToday": "{symbol} сьогодні публікує квартальні результати",
   "earningsRemindersTitle": "Нагадування про результати",
-  "earningsRemindersSubtitle": "Сповіщення за день до того, як акції з обраного або портфеля опублікують квартальні результати"
+  "earningsRemindersSubtitle": "Сповіщення за день до того, як акції з обраного або портфеля опублікують квартальні результати",
+  "addAllToFavorites": "Додати всі до обраного ({count})"
 }

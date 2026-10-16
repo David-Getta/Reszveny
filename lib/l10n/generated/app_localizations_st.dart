@@ -2081,4 +2081,9 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Tsebiso letsatsi pele ho ha dishere tseo o di ratang kapa tsa phothefolio ya hao di phatlalatsa diphetho tsa kotara';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Kenya tsohle ho tseo o di ratang ($count)';
+  }
 }

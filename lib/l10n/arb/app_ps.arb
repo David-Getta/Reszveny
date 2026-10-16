@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} سبا درېمیاشتنۍ پایلې خپروي",
   "earningsReminderToday": "{symbol} نن درېمیاشتنۍ پایلې خپروي",
   "earningsRemindersTitle": "د پایلو یادونې",
-  "earningsRemindersSubtitle": "ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا"
+  "earningsRemindersSubtitle": "ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا",
+  "addAllToFavorites": "ټول خوښو ته ورزیات کړئ ({count})"
 }

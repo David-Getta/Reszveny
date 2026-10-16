@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}は明日、四半期決算を発表します",
   "earningsReminderToday": "{symbol}は本日、四半期決算を発表します",
   "earningsRemindersTitle": "決算リマインダー",
-  "earningsRemindersSubtitle": "お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します"
+  "earningsRemindersSubtitle": "お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します",
+  "addAllToFavorites": "すべてお気に入りに追加 ({count})"
 }

@@ -2070,4 +2070,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'A notification the day before your favorites or portfolio stocks report quarterly results';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Add all to favorites ($count)';
+  }
 }

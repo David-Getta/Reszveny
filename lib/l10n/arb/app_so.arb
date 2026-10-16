@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} wuxuu berri soo bandhigayaa natiijooyinka rubuc-sanadeedka",
   "earningsReminderToday": "{symbol} wuxuu maanta soo bandhigayaa natiijooyinka rubuc-sanadeedka",
   "earningsRemindersTitle": "Xasuusinta natiijooyinka",
-  "earningsRemindersSubtitle": "Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka"
+  "earningsRemindersSubtitle": "Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka",
+  "addAllToFavorites": "Dhammaan ku dar kuwa la jecel yahay ({count})"
 }

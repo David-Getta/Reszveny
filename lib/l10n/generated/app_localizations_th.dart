@@ -2044,4 +2044,9 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'แจ้งเตือนล่วงหน้าหนึ่งวันก่อนที่หุ้นในรายการโปรดหรือพอร์ตของคุณจะประกาศผลประกอบการรายไตรมาส';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'เพิ่มทั้งหมดในรายการโปรด ($count)';
+  }
 }

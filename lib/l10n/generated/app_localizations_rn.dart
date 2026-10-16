@@ -2077,4 +2077,9 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Imenyesha umunsi umwe imbere y\'uko ivyo ukunda canke imigabane yo mu portfolio yawe bitangaza ivyavuye mu gihembwe';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Shira vyose mu vyo ukunda ($count)';
+  }
 }

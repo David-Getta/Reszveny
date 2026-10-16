@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} bɛ kalo saba jatebɔ jira sini",
   "earningsReminderToday": "{symbol} bɛ kalo saba jatebɔ jira bi",
   "earningsRemindersTitle": "Jatebɔ hakilijiginw",
-  "earningsRemindersSubtitle": "Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ"
+  "earningsRemindersSubtitle": "Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ",
+  "addAllToFavorites": "U bɛɛ fara diyanyelenw kan ({count})"
 }

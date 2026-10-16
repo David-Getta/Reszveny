@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} فردا نتایج فصلی را اعلام می‌کند",
   "earningsReminderToday": "{symbol} امروز نتایج فصلی را اعلام می‌کند",
   "earningsRemindersTitle": "یادآور نتایج",
-  "earningsRemindersSubtitle": "اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند"
+  "earningsRemindersSubtitle": "اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند",
+  "addAllToFavorites": "افزودن همه به علاقه‌مندی‌ها ({count})"
 }

@@ -2087,4 +2087,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Pakaammo iti aldaw sakbay nga iwaragawag dagiti stock iti paboritom wenno portfoliom ti kada-kuarter a resultada';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Inayon amin kadagiti paborito ($count)';
+  }
 }

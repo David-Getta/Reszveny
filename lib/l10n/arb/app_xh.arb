@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ikhupha iziphumo zekota ngomso",
   "earningsReminderToday": "{symbol} ikhupha iziphumo zekota namhlanje",
   "earningsRemindersTitle": "Izikhumbuzi zeziphumo",
-  "earningsRemindersSubtitle": "Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota"
+  "earningsRemindersSubtitle": "Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota",
+  "addAllToFavorites": "Yongeza konke kwezithandwayo ({count})"
 }

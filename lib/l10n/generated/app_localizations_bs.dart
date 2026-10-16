@@ -2108,4 +2108,9 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Obavještenje dan prije nego što dionice iz vaših favorita ili portfolija objave kvartalne rezultate';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Dodaj sve u favorite ($count)';
+  }
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} legger frem kvartalsresultat i morgen",
   "earningsReminderToday": "{symbol} legger frem kvartalsresultat i dag",
   "earningsRemindersTitle": "Resultatpåminnelser",
-  "earningsRemindersSubtitle": "Et varsel dagen før favorittene dine eller aksjene i porteføljen din legger frem kvartalsresultat"
+  "earningsRemindersSubtitle": "Et varsel dagen før favorittene dine eller aksjene i porteføljen din legger frem kvartalsresultat",
+  "addAllToFavorites": "Legg alle til i favoritter ({count})"
 }

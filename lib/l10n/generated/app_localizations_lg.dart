@@ -2081,4 +2081,9 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Obubaka olunaku lumu nga emigabo gy\'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky\'omwaka';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Byonna gattako ku by\'oyagala ($count)';
+  }
 }

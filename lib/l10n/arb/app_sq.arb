@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} publikon rezultatet tremujore nesër",
   "earningsReminderToday": "{symbol} publikon rezultatet tremujore sot",
   "earningsRemindersTitle": "Kujtues për rezultatet",
-  "earningsRemindersSubtitle": "Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore"
+  "earningsRemindersSubtitle": "Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore",
+  "addAllToFavorites": "Shtoji të gjitha te të preferuarat ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} හෙට කාර්තුමය ප්‍රතිඵල නිකුත් කරයි",
   "earningsReminderToday": "{symbol} අද කාර්තුමය ප්‍රතිඵල නිකුත් කරයි",
   "earningsRemindersTitle": "ප්‍රතිඵල සිහිකැඳවීම්",
-  "earningsRemindersSubtitle": "ඔබේ ප්‍රියතම හෝ කළඹේ කොටස් කාර්තුමය ප්‍රතිඵල නිකුත් කිරීමට පෙර දින දැනුම්දීමක්"
+  "earningsRemindersSubtitle": "ඔබේ ප්‍රියතම හෝ කළඹේ කොටස් කාර්තුමය ප්‍රතිඵල නිකුත් කිරීමට පෙර දින දැනුම්දීමක්",
+  "addAllToFavorites": "සියල්ල ප්‍රියතමවලට එක් කරන්න ({count})"
 }

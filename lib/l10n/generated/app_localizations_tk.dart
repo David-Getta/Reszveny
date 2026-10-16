@@ -2071,4 +2071,9 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ählisini saýlananlara goş ($count)';
+  }
 }

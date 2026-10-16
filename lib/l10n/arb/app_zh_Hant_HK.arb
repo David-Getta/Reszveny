@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} 明日公布季度業績",
   "earningsReminderToday": "{symbol} 今日公布季度業績",
   "earningsRemindersTitle": "業績提示",
-  "earningsRemindersSubtitle": "在你收藏或持倉的股票公布季度業績前一日發出通知"
+  "earningsRemindersSubtitle": "在你收藏或持倉的股票公布季度業績前一日發出通知",
+  "addAllToFavorites": "全部加入收藏 ({count})"
 }

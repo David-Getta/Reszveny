@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} yi humesa mbuyelo wa kotara mundzuku",
   "earningsReminderToday": "{symbol} yi humesa mbuyelo wa kotara namuntlha",
   "earningsRemindersTitle": "Swotsundzuxo swa mbuyelo",
-  "earningsRemindersSubtitle": "Xitiviso siku rin'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara"
+  "earningsRemindersSubtitle": "Xitiviso siku rin'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara",
+  "addAllToFavorites": "Engetela hinkwaswo eka leswi u swi rhandzaka ({count})"
 }

@@ -2066,4 +2066,9 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Ɓeydu fof e cuɓaaɗe ($count)';
+  }
 }

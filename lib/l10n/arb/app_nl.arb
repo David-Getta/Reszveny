@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} publiceert morgen kwartaalcijfers",
   "earningsReminderToday": "{symbol} publiceert vandaag kwartaalcijfers",
   "earningsRemindersTitle": "Herinnering kwartaalcijfers",
-  "earningsRemindersSubtitle": "Een melding de dag voordat je favorieten of portefeuilleaandelen kwartaalcijfers publiceren"
+  "earningsRemindersSubtitle": "Een melding de dag voordat je favorieten of portefeuilleaandelen kwartaalcijfers publiceren",
+  "addAllToFavorites": "Alle toevoegen aan favorieten ({count})"
 }

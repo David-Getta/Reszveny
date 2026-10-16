@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ਕੱਲ੍ਹ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ",
   "earningsReminderToday": "{symbol} ਅੱਜ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ",
   "earningsRemindersTitle": "ਨਤੀਜਿਆਂ ਦੀ ਯਾਦ-ਦਹਾਨੀ",
-  "earningsRemindersSubtitle": "ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ"
+  "earningsRemindersSubtitle": "ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ",
+  "addAllToFavorites": "ਸਾਰੇ ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ ({count})"
 }

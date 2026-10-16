@@ -2071,4 +2071,9 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'سب پسندیدہ میں شامل کریں ($count)';
+  }
 }

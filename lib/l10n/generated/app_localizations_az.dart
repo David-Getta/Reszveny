@@ -2073,4 +2073,9 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Hamısını seçilmişlərə əlavə et ($count)';
+  }
 }

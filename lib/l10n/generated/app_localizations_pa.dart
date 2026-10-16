@@ -2067,4 +2067,9 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ਸਾਰੇ ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ ($count)';
+  }
 }

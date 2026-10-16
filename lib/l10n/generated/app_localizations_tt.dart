@@ -2069,4 +2069,9 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Сайланмаларыгыздагы яки портфелегездәге акцияләр квартал нәтиҗәләрен игълан итүдән бер көн алдан белдерү';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Барысын да сайланмаларга өстәү ($count)';
+  }
 }

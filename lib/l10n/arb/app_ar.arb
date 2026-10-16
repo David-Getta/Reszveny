@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} يعلن نتائجه الفصلية غدًا",
   "earningsReminderToday": "{symbol} يعلن نتائجه الفصلية اليوم",
   "earningsRemindersTitle": "تذكيرات النتائج",
-  "earningsRemindersSubtitle": "إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية"
+  "earningsRemindersSubtitle": "إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية",
+  "addAllToFavorites": "إضافة الكل إلى المفضلة ({count})"
 }

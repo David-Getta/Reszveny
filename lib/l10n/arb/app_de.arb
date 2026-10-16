@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} legt morgen Quartalszahlen vor",
   "earningsReminderToday": "{symbol} legt heute Quartalszahlen vor",
   "earningsRemindersTitle": "Erinnerung an Quartalszahlen",
-  "earningsRemindersSubtitle": "Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen"
+  "earningsRemindersSubtitle": "Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen",
+  "addAllToFavorites": "Alle zu Favoriten hinzufügen ({count})"
 }

@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} dina génne njureefam yu ñetti weer ëllëg",
   "earningsReminderToday": "{symbol} dina génne njureefam yu ñetti weer tey",
   "earningsRemindersTitle": "Fàttali njureef",
-  "earningsRemindersSubtitle": "Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer"
+  "earningsRemindersSubtitle": "Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer",
+  "addAllToFavorites": "Yokk yépp ci yi ma gënal ({count})"
 }

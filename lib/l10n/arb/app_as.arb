@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol}: কাইলৈ ত্ৰৈমাসিক ফলাফল",
   "earningsReminderToday": "{symbol}: আজি ত্ৰৈমাসিক ফলাফল",
   "earningsRemindersTitle": "ফলাফলৰ সোঁৱৰণী",
-  "earningsRemindersSubtitle": "আপোনাৰ প্ৰিয় বা পৰ্টফ'লিঅ'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী"
+  "earningsRemindersSubtitle": "আপোনাৰ প্ৰিয় বা পৰ্টফ'লিঅ'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী",
+  "addAllToFavorites": "সকলো প্ৰিয়ত যোগ কৰক ({count})"
 }

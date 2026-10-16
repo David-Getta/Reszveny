@@ -2041,4 +2041,9 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'ተወዳጆችዎ ወይም የፖርትፎሊዮዎ አክሲዮኖች የሩብ ዓመት ውጤታቸውን ከማሳወቃቸው አንድ ቀን በፊት ማሳወቂያ';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'ሁሉንም ወደ ተወዳጆች አክል ($count)';
+  }
 }

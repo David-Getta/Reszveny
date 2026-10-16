@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} କାଲି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ",
   "earningsReminderToday": "{symbol} ଆଜି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ",
   "earningsRemindersTitle": "ଫଳାଫଳ ସ୍ମାରକ",
-  "earningsRemindersSubtitle": "ଆପଣଙ୍କ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓର ଷ୍ଟକ୍ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବାର ପୂର୍ବ ଦିନ ଏକ ବିଜ୍ଞପ୍ତି"
+  "earningsRemindersSubtitle": "ଆପଣଙ୍କ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓର ଷ୍ଟକ୍ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବାର ପୂର୍ବ ଦିନ ଏକ ବିଜ୍ଞପ୍ତି",
+  "addAllToFavorites": "ସବୁ ପସନ୍ଦରେ ଯୋଡ଼ନ୍ତୁ ({count})"
 }

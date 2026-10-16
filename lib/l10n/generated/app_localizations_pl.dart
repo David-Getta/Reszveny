@@ -2129,4 +2129,9 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Powiadomienie dzień przed publikacją wyników kwartalnych spółek z ulubionych lub portfela';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Dodaj wszystkie do ulubionych ($count)';
+  }
 }

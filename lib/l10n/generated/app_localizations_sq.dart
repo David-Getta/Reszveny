@@ -2078,4 +2078,9 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Shtoji të gjitha te të preferuarat ($count)';
+  }
 }

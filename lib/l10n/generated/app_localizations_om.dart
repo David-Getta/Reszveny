@@ -2079,4 +2079,9 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu\'aa kurmaanaa ifa baasan';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Hunda filatamootti dabali ($count)';
+  }
 }

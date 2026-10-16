@@ -2074,4 +2074,9 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Тандалмаларыңыздагы же портфелиңиздеги акциялар чейректик натыйжаларын жарыялаардан бир күн мурун билдирме';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Баарын тандалмаларга кошуу ($count)';
+  }
 }

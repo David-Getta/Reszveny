@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} ertir çärýeklik netijelerini yglan edýär",
   "earningsReminderToday": "{symbol} şu gün çärýeklik netijelerini yglan edýär",
   "earningsRemindersTitle": "Netije ýatlatmalary",
-  "earningsRemindersSubtitle": "Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş"
+  "earningsRemindersSubtitle": "Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş",
+  "addAllToFavorites": "Ählisini saýlananlara goş ({count})"
 }

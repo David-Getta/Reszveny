@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} bɛda n’abosome mmiɛnsa akontaabu adi ɔkyena",
   "earningsReminderToday": "{symbol} da n’abosome mmiɛnsa akontaabu adi ɛnnɛ",
   "earningsRemindersTitle": "Akontaabu ho nkaebɔ",
-  "earningsRemindersSubtitle": "Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi"
+  "earningsRemindersSubtitle": "Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi",
+  "addAllToFavorites": "Fa ne nyinaa ka nea mepɛ ho ({count})"
 }

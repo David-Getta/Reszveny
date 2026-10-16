@@ -2127,4 +2127,9 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Pridėti visas į mėgstamiausius ($count)';
+  }
 }

@@ -2084,4 +2084,9 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get earningsRemindersSubtitle =>
       'Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio';
+
+  @override
+  String addAllToFavorites(int count) {
+    return 'Idugang tanan sa mga paborito ($count)';
+  }
 }

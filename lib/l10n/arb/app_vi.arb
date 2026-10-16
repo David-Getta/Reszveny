@@ -558,5 +558,6 @@
   "earningsReminderTomorrow": "{symbol} công bố kết quả kinh doanh quý vào ngày mai",
   "earningsReminderToday": "{symbol} công bố kết quả kinh doanh quý hôm nay",
   "earningsRemindersTitle": "Nhắc kết quả kinh doanh",
-  "earningsRemindersSubtitle": "Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý"
+  "earningsRemindersSubtitle": "Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý",
+  "addAllToFavorites": "Thêm tất cả vào yêu thích ({count})"
 }
