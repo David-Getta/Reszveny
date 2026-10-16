@@ -584,5 +584,12 @@
   "insiderSell": "Vendute",
   "insiderHint": "Acquisti e vendite sul mercato aperto da parte di dirigenti e amministratori negli ultimi 90 giorni (SEC Form 4). Esercizi di opzioni e assegnazioni di azioni non sono conteggiati.",
   "insiderNone": "Nessun acquisto o vendita di insider sul mercato aperto negli ultimi 90 giorni.",
-  "analystTrend": "Come sono cambiati i giudizi mese per mese"
+  "analystTrend": "Come sono cambiati i giudizi mese per mese",
+  "watchListAll": "Tutte",
+  "watchListNew": "Nuova lista",
+  "watchListName": "Nome della lista",
+  "watchListRename": "Rinomina lista",
+  "watchListDelete": "Elimina lista",
+  "watchListAddTo": "Aggiungi a una lista",
+  "watchListEmpty": "Ancora nessuna azione in questa lista. Tocca il pulsante lista accanto a un'azione per aggiungerla."
 }

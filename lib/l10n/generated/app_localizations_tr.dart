@@ -2190,4 +2190,26 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get analystTrend => 'Görüşlerin aydan aya değişimi';
+
+  @override
+  String get watchListAll => 'Tümü';
+
+  @override
+  String get watchListNew => 'Yeni liste';
+
+  @override
+  String get watchListName => 'Liste adı';
+
+  @override
+  String get watchListRename => 'Listeyi yeniden adlandır';
+
+  @override
+  String get watchListDelete => 'Listeyi sil';
+
+  @override
+  String get watchListAddTo => 'Listeye ekle';
+
+  @override
+  String get watchListEmpty =>
+      'Bu listede henüz hisse yok. Eklemek için hissenin yanındaki liste düğmesine dokun.';
 }

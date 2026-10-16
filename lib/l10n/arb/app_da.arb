@@ -584,5 +584,12 @@
   "insiderSell": "Solgt",
   "insiderHint": "Køb og salg på det åbne marked foretaget af ledere og bestyrelsesmedlemmer inden for de seneste 90 dage (SEC Form 4). Udnyttelse af optioner og tildelte aktier medregnes ikke.",
   "insiderNone": "Ingen insiderkøb eller -salg på det åbne marked inden for de seneste 90 dage.",
-  "analystTrend": "Sådan har holdningerne ændret sig måned for måned"
+  "analystTrend": "Sådan har holdningerne ændret sig måned for måned",
+  "watchListAll": "Alle",
+  "watchListNew": "Ny liste",
+  "watchListName": "Listenavn",
+  "watchListRename": "Omdøb liste",
+  "watchListDelete": "Slet liste",
+  "watchListAddTo": "Føj til en liste",
+  "watchListEmpty": "Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den."
 }

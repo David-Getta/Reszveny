@@ -2227,4 +2227,26 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get analystTrend => 'Cum s-au schimbat opiniile de la lună la lună';
+
+  @override
+  String get watchListAll => 'Toate';
+
+  @override
+  String get watchListNew => 'Listă nouă';
+
+  @override
+  String get watchListName => 'Numele listei';
+
+  @override
+  String get watchListRename => 'Redenumește lista';
+
+  @override
+  String get watchListDelete => 'Șterge lista';
+
+  @override
+  String get watchListAddTo => 'Adaugă într-o listă';
+
+  @override
+  String get watchListEmpty =>
+      'Încă nu există acțiuni în această listă. Atinge butonul de listă de lângă o acțiune pentru a o adăuga.';
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Sålde",
   "insiderHint": "Köp och försäljningar på öppna marknaden av ledande befattningshavare och styrelseledamöter de senaste 90 dagarna (SEC Form 4). Utnyttjade optioner och aktietilldelningar räknas inte.",
   "insiderNone": "Inga insynsköp eller -försäljningar på öppna marknaden de senaste 90 dagarna.",
-  "analystTrend": "Hur åsikterna har ändrats månad för månad"
+  "analystTrend": "Hur åsikterna har ändrats månad för månad",
+  "watchListAll": "Alla",
+  "watchListNew": "Ny lista",
+  "watchListName": "Listnamn",
+  "watchListRename": "Byt namn på listan",
+  "watchListDelete": "Ta bort listan",
+  "watchListAddTo": "Lägg till i en lista",
+  "watchListEmpty": "Inga aktier i den här listan ännu. Tryck på listknappen bredvid en aktie för att lägga till den."
 }

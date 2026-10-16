@@ -2188,4 +2188,26 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get analystTrend => 'මාසයෙන් මාසයට අදහස් වෙනස් වූ ආකාරය';
+
+  @override
+  String get watchListAll => 'සියල්ල';
+
+  @override
+  String get watchListNew => 'නව ලැයිස්තුව';
+
+  @override
+  String get watchListName => 'ලැයිස්තුවේ නම';
+
+  @override
+  String get watchListRename => 'ලැයිස්තුව නැවත නම් කරන්න';
+
+  @override
+  String get watchListDelete => 'ලැයිස්තුව මකන්න';
+
+  @override
+  String get watchListAddTo => 'ලැයිස්තුවකට එක් කරන්න';
+
+  @override
+  String get watchListEmpty =>
+      'මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.';
 }

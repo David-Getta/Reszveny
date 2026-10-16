@@ -584,5 +584,12 @@
   "insiderSell": "A koosa",
   "insiderHint": "Sosaytã taoor-dãmbã la a gʋbgdbã raabo la koosgo raag pʋgẽ rasem 90 sẽn loogã (SEC Form 4). Opsiõ tʋʋmd la aksiõ kõobo pa kãadẽ ye.",
   "insiderNone": "Taoor-dãmbã raabo bɩ koosgo pa be raag pʋgẽ rasem 90 sẽn loogã ye.",
-  "analystTrend": "Tags rãmb sẽn tees kiuug fãa"
+  "analystTrend": "Tags rãmb sẽn tees kiuug fãa",
+  "watchListAll": "Fãa",
+  "watchListNew": "Liste paalga",
+  "watchListName": "Listã yʋʋre",
+  "watchListRename": "Toeem listã yʋʋre",
+  "watchListDelete": "Yiis listã",
+  "watchListAddTo": "Paas liste pʋgẽ",
+  "watchListEmpty": "Aksyõ ka be liste-kãngã pʋgẽ ye. Ningi listã butõ wã sẽn be aksyõã taobã n paas-a."
 }

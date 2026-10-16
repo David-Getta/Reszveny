@@ -2186,4 +2186,26 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get analystTrend => 'ਮਹੀਨਾ-ਦਰ-ਮਹੀਨਾ ਰਾਏ ਕਿਵੇਂ ਬਦਲੀ';
+
+  @override
+  String get watchListAll => 'ਸਾਰੇ';
+
+  @override
+  String get watchListNew => 'ਨਵੀਂ ਸੂਚੀ';
+
+  @override
+  String get watchListName => 'ਸੂਚੀ ਦਾ ਨਾਮ';
+
+  @override
+  String get watchListRename => 'ਸੂਚੀ ਦਾ ਨਾਮ ਬਦਲੋ';
+
+  @override
+  String get watchListDelete => 'ਸੂਚੀ ਮਿਟਾਓ';
+
+  @override
+  String get watchListAddTo => 'ਸੂਚੀ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get watchListEmpty =>
+      'ਇਸ ਸੂਚੀ ਵਿੱਚ ਅਜੇ ਕੋਈ ਸ਼ੇਅਰ ਨਹੀਂ ਹੈ। ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਸ਼ੇਅਰ ਦੇ ਕੋਲ ਸੂਚੀ ਬਟਨ \'ਤੇ ਟੈਪ ਕਰੋ।';
 }

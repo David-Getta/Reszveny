@@ -584,5 +584,12 @@
   "insiderSell": "ተሸይጡ",
   "insiderHint": "ኣብ ዝሓለፉ 90 መዓልታት ብፈጸምትን ዳይረክተራትን ኣብ ክፉት ዕዳጋ ዝተገብሩ ዕድጊታትን መሸጣታትን (SEC Form 4)። ምትግባር ኦፕሽንን ሽልማት ኣክሲዮንን ኣይቑጸሩን።",
   "insiderNone": "ኣብ ዝሓለፉ 90 መዓልታት ኣብ ክፉት ዕዳጋ ዝኾነ ዕድጊት ወይ መሸጣ ውሽጣውያን የለን።",
-  "analystTrend": "ርእይቶታት ወርሒ ብወርሒ ከመይ ከም ዝተቐየሩ"
+  "analystTrend": "ርእይቶታት ወርሒ ብወርሒ ከመይ ከም ዝተቐየሩ",
+  "watchListAll": "ኩሉ",
+  "watchListNew": "ሓድሽ ዝርዝር",
+  "watchListName": "ስም ዝርዝር",
+  "watchListRename": "ስም ዝርዝር ቀይር",
+  "watchListDelete": "ዝርዝር ደምስስ",
+  "watchListAddTo": "ናብ ዝርዝር ወስኽ",
+  "watchListEmpty": "ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።"
 }

@@ -2190,4 +2190,26 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Sɛnea adwene sesaa ɔsram biara';
+
+  @override
+  String get watchListAll => 'Ne nyinaa';
+
+  @override
+  String get watchListNew => 'Nhyehyɛe foforo';
+
+  @override
+  String get watchListName => 'Nhyehyɛe no din';
+
+  @override
+  String get watchListRename => 'Sesa nhyehyɛe no din';
+
+  @override
+  String get watchListDelete => 'Yi nhyehyɛe no fi hɔ';
+
+  @override
+  String get watchListAddTo => 'Fa ka nhyehyɛe bi ho';
+
+  @override
+  String get watchListEmpty =>
+      'Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho.';
 }

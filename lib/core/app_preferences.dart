@@ -27,7 +27,9 @@ class AppPreferences extends ChangeNotifier {
     this.emailAlerts = true,
     this.weeklyDigest = false,
     this.earningsReminders = true,
-  }) : _recent = List.of(recent),
+    List<WatchList> watchLists = const [],
+  }) : _lists = List.of(watchLists),
+       _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
   }
@@ -51,6 +53,11 @@ class AppPreferences extends ChangeNotifier {
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
   static const _earningsRemindersKey = 'earnings_reminders';
+  static const _listsKey = 'watch_lists';
+
+  /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
+  static const maxLists = 20;
+  static const maxListName = 30;
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -107,6 +114,17 @@ class AppPreferences extends ChangeNotifier {
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
   bool earningsReminders;
 
+  final List<WatchList> _lists;
+
+  /// Saját listák a kedvencek között (pl. „Tech”, „Osztalék”), létrehozási sorrendben.
+  List<WatchList> get watchLists => List.unmodifiable(_lists);
+
+  /// Mely saját listákon van rajta a részvény.
+  List<String> listsOf(String symbol) => [
+    for (final l in _lists)
+      if (l.symbols.contains(symbol.toUpperCase())) l.name,
+  ];
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -141,6 +159,7 @@ class AppPreferences extends ChangeNotifier {
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
+        watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
       );
     } catch (_) {
       return AppPreferences();
@@ -183,6 +202,62 @@ class AppPreferences extends ChangeNotifier {
     weeklyDigest = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_weeklyDigestKey, enabled));
+  }
+
+  /// Új saját lista; `false`, ha a név üres, foglalt vagy elérte a [maxLists]-et.
+  Future<bool> addWatchList(String name) async {
+    final n = name.trim();
+    if (n.isEmpty || n.length > maxListName || _lists.length >= maxLists || _listNamed(n) != null) return false;
+    _lists.add(WatchList(name: n));
+    await _saveLists();
+    return true;
+  }
+
+  Future<bool> renameWatchList(String from, String to) async {
+    final l = _listNamed(from), n = to.trim();
+    if (l == null || n.isEmpty || n.length > maxListName) return false;
+    final other = _listNamed(n);
+    if (other != null && other != l) return false;
+    _lists[_lists.indexOf(l)] = WatchList(name: n, symbols: l.symbols);
+    await _saveLists();
+    return true;
+  }
+
+  Future<void> removeWatchList(String name) async {
+    _lists.removeWhere((l) => l.name.toLowerCase() == name.toLowerCase());
+    await _saveLists();
+  }
+
+  /// Részvény fel- vagy levétele egy saját listáról; felvételkor kedvenc is lesz.
+  Future<void> toggleInList(String name, String symbol) async {
+    final l = _listNamed(name), s = symbol.trim().toUpperCase();
+    if (l == null || s.isEmpty) return;
+    final symbols = [...l.symbols];
+    if (!symbols.remove(s)) {
+      symbols.add(s);
+      if (!_favorites.contains(s)) {
+        _favorites.insert(0, s);
+        await _save((p) => p.setStringList(_favoritesKey, _favorites));
+      }
+    }
+    _lists[_lists.indexOf(l)] = WatchList(name: l.name, symbols: symbols);
+    await _saveLists();
+  }
+
+  /// Az összes saját lista cseréje (szinkronkor a fiók adataira).
+  Future<void> setWatchLists(List<WatchList> lists) async {
+    _lists
+      ..clear()
+      ..addAll(lists.take(maxLists));
+    await _saveLists();
+  }
+
+  WatchList? _listNamed(String name) =>
+      _lists.where((l) => l.name.toLowerCase() == name.trim().toLowerCase()).firstOrNull;
+
+  Future<void> _saveLists() async {
+    notifyListeners();
+    await _save((p) => p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()])));
   }
 
   Future<void> setEarningsReminders(bool enabled) async {
@@ -287,10 +362,12 @@ class AppPreferences extends ChangeNotifier {
   Future<void> clearPersonalData() async {
     _favorites.clear();
     _recent = [];
+    _lists.clear();
     notifyListeners();
     await _save((p) async {
       await p.remove(_favoritesKey);
       await p.remove(_recentKey);
+      await p.remove(_listsKey);
     });
   }
 
@@ -305,6 +382,38 @@ class AppPreferences extends ChangeNotifier {
       await write(await SharedPreferences.getInstance());
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
+    }
+  }
+}
+
+/// Egy saját lista a kedvencek között: név és tickerek (a felvétel sorrendjében).
+class WatchList {
+  const WatchList({required this.name, this.symbols = const []});
+
+  final String name;
+  final List<String> symbols;
+
+  Map<String, dynamic> toJson() => {'name': name, 'symbols': symbols};
+
+  static WatchList? fromJson(Object? j) {
+    if (j is! Map || j['name'] is! String || (j['name'] as String).trim().isEmpty) return null;
+    return WatchList(
+      name: (j['name'] as String).trim(),
+      symbols: [
+        for (final s in (j['symbols'] is List ? j['symbols'] as List : const []))
+          if (s is String && s.trim().isNotEmpty) s.trim().toUpperCase(),
+      ],
+    );
+  }
+
+  /// A tárolt JSON-lista beolvasása; a hibás tételeket kihagyja.
+  static List<WatchList> parseAll(String? raw) {
+    if (raw == null) return const [];
+    try {
+      final v = jsonDecode(raw);
+      return [for (final e in (v is List ? v : const [])) ?fromJson(e)];
+    } catch (_) {
+      return const [];
     }
   }
 }

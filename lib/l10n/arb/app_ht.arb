@@ -584,5 +584,12 @@
   "insiderSell": "Vann",
   "insiderHint": "Acha ak vant sou mache ouvè pa dirijan ak administratè yo nan 90 dènye jou yo (SEC Form 4). Nou pa konte egzèsis opsyon ak aksyon yo bay kòm rekonpans.",
   "insiderNone": "Pa gen acha oswa vant moun anndan sou mache ouvè nan 90 dènye jou yo.",
-  "analystTrend": "Kijan opinyon yo chanje mwa apre mwa"
+  "analystTrend": "Kijan opinyon yo chanje mwa apre mwa",
+  "watchListAll": "Tout",
+  "watchListNew": "Nouvo lis",
+  "watchListName": "Non lis la",
+  "watchListRename": "Chanje non lis la",
+  "watchListDelete": "Efase lis la",
+  "watchListAddTo": "Ajoute nan yon lis",
+  "watchListEmpty": "Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l."
 }

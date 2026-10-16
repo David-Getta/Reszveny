@@ -584,5 +584,12 @@
   "insiderSell": "Atekaki",
   "insiderHint": "Kosomba mpe koteka na zando ya polele oyo bakambi mpe ba-directeur basalaki na mikolo 90 oyo eleki (SEC Form 4). Kosalela ba-option mpe ba-action oyo bapesi lokola mbano etángami te.",
   "insiderNone": "Kosomba to koteka moko te ya bakambi na zando ya polele na mikolo 90 oyo eleki.",
-  "analystTrend": "Ndenge makanisi ebongwanaki sanza na sanza"
+  "analystTrend": "Ndenge makanisi ebongwanaki sanza na sanza",
+  "watchListAll": "Nyonso",
+  "watchListNew": "Liste ya sika",
+  "watchListName": "Nkombo ya liste",
+  "watchListRename": "Bongola nkombo ya liste",
+  "watchListDelete": "Longola liste",
+  "watchListAddTo": "Bakisa na liste",
+  "watchListEmpty": "Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango."
 }

@@ -2182,4 +2182,26 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get analystTrend => 'نظرونه میاشت په میاشت څنګه بدل شول';
+
+  @override
+  String get watchListAll => 'ټول';
+
+  @override
+  String get watchListNew => 'نوی لېست';
+
+  @override
+  String get watchListName => 'د لېست نوم';
+
+  @override
+  String get watchListRename => 'د لېست نوم بدل کړئ';
+
+  @override
+  String get watchListDelete => 'لېست ړنګ کړئ';
+
+  @override
+  String get watchListAddTo => 'لېست ته ورزیات کړئ';
+
+  @override
+  String get watchListEmpty =>
+      'په دې لېست کې لا تر اوسه هېڅ ونډه نشته. د ورزیاتولو لپاره د ونډې تر څنګ د لېست تڼۍ ټک کړئ.';
 }

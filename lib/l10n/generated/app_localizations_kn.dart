@@ -2197,4 +2197,26 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get analystTrend => 'ತಿಂಗಳಿಂದ ತಿಂಗಳಿಗೆ ಅಭಿಪ್ರಾಯಗಳು ಹೇಗೆ ಬದಲಾದವು';
+
+  @override
+  String get watchListAll => 'ಎಲ್ಲಾ';
+
+  @override
+  String get watchListNew => 'ಹೊಸ ಪಟ್ಟಿ';
+
+  @override
+  String get watchListName => 'ಪಟ್ಟಿಯ ಹೆಸರು';
+
+  @override
+  String get watchListRename => 'ಪಟ್ಟಿಯನ್ನು ಮರುಹೆಸರಿಸಿ';
+
+  @override
+  String get watchListDelete => 'ಪಟ್ಟಿಯನ್ನು ಅಳಿಸಿ';
+
+  @override
+  String get watchListAddTo => 'ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ';
+
+  @override
+  String get watchListEmpty =>
+      'ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಇನ್ನೂ ಯಾವುದೇ ಷೇರುಗಳಿಲ್ಲ. ಸೇರಿಸಲು ಷೇರಿನ ಪಕ್ಕದಲ್ಲಿರುವ ಪಟ್ಟಿ ಬಟನ್ ಟ್ಯಾಪ್ ಮಾಡಿ.';
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Tekaka",
   "insiderHint": "Kusumba ti kuteka na zandu ya kukangula ya bamfumu ti ba-directeur na bilumbu 90 ya me luta (SEC Form 4). Kusadila ba-option ti ba-action ya bo kepesa ve na kutanga.",
   "insiderNone": "Kusumba to kuteka ya bamfumu na zandu ya kukangula ve na bilumbu 90 ya me luta.",
-  "analystTrend": "Mutindu mabanza me sobaka konso ngonda"
+  "analystTrend": "Mutindu mabanza me sobaka konso ngonda",
+  "watchListAll": "Yonso",
+  "watchListNew": "Lisiti ya mpa",
+  "watchListName": "Zina ya lisiti",
+  "watchListRename": "Soba zina ya lisiti",
+  "watchListDelete": "Katula lisiti",
+  "watchListAddTo": "Yika na lisiti",
+  "watchListEmpty": "Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo."
 }

@@ -2198,4 +2198,26 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get analystTrend => 'ഓരോ മാസവും അഭിപ്രായങ്ങൾ എങ്ങനെ മാറി';
+
+  @override
+  String get watchListAll => 'എല്ലാം';
+
+  @override
+  String get watchListNew => 'പുതിയ ലിസ്റ്റ്';
+
+  @override
+  String get watchListName => 'ലിസ്റ്റിന്റെ പേര്';
+
+  @override
+  String get watchListRename => 'ലിസ്റ്റിന്റെ പേര് മാറ്റുക';
+
+  @override
+  String get watchListDelete => 'ലിസ്റ്റ് ഇല്ലാതാക്കുക';
+
+  @override
+  String get watchListAddTo => 'ലിസ്റ്റിലേക്ക് ചേർക്കുക';
+
+  @override
+  String get watchListEmpty =>
+      'ഈ ലിസ്റ്റിൽ ഇതുവരെ ഓഹരികളൊന്നുമില്ല. ചേർക്കാൻ ഓഹരിയുടെ അടുത്തുള്ള ലിസ്റ്റ് ബട്ടൺ ടാപ്പ് ചെയ്യുക.';
 }

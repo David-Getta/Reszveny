@@ -584,5 +584,12 @@
   "insiderSell": "Yeeyii",
   "insiderHint": "Coodgu e njeeyu hooreeɓe e jiiloyankooɓe e luumo udditiingo nder balɗe 90 ɓennuɗe (SEC Form 4). Huutoraade option e aksiyoŋ dokkaaɗe limtaaka.",
   "insiderNone": "Alaa coodgu walla njeeyu hooreeɓe e luumo udditiingo nder balɗe 90 ɓennuɗe.",
-  "analystTrend": "No miijooji ndi waylitorii lewru kala"
+  "analystTrend": "No miijooji ndi waylitorii lewru kala",
+  "watchListAll": "Fof",
+  "watchListNew": "Doggol kesol",
+  "watchListName": "Innde doggol",
+  "watchListRename": "Waylu innde doggol",
+  "watchListDelete": "Momtu doggol",
+  "watchListAddTo": "Ɓeydu e doggol",
+  "watchListEmpty": "Alaa hay sitok e ndee doggol tawo. Ñoƒƒu butoŋ doggol takko sitok ngam ɓeydude ɗum."
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Firotî",
   "insiderHint": "Kirîn û firotinên rêveber û derhêneran li bazara vekirî di 90 rojên dawî de (SEC Form 4). Bikaranîna opsiyonan û xelatên pişkan nayên hesibandin.",
   "insiderNone": "Di 90 rojên dawî de li bazara vekirî tu kirîn an firotina însayderan tune.",
-  "analystTrend": "Nêrîn meh bi meh çawa guherîn"
+  "analystTrend": "Nêrîn meh bi meh çawa guherîn",
+  "watchListAll": "Hemû",
+  "watchListNew": "Lîsteya nû",
+  "watchListName": "Navê lîsteyê",
+  "watchListRename": "Navê lîsteyê biguherîne",
+  "watchListDelete": "Lîsteyê jê bibe",
+  "watchListAddTo": "Li lîsteyekê zêde bike",
+  "watchListEmpty": "Hîn di vê lîsteyê de tu pişk tune ne. Ji bo zêdekirinê, li bişkoka lîsteyê ya li kêleka pişkê bitikîne."
 }

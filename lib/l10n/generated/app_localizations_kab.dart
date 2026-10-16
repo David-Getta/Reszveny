@@ -2189,4 +2189,26 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get analystTrend => 'Amek i beddlent tmuɣliwin seg wayyur ɣer wayyur';
+
+  @override
+  String get watchListAll => 'Akk';
+
+  @override
+  String get watchListNew => 'Tabdart tamaynut';
+
+  @override
+  String get watchListName => 'Isem n tebdart';
+
+  @override
+  String get watchListRename => 'Snifel isem n tebdart';
+
+  @override
+  String get watchListDelete => 'Kkes tabdart';
+
+  @override
+  String get watchListAddTo => 'Rnu ɣer tebdart';
+
+  @override
+  String get watchListEmpty =>
+      'Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ.';
 }

@@ -222,6 +222,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5ap | Követő stop riasztás („Esés a csúcsról”): a riasztás óta elért legmagasabb árhoz képest X%-os esésnél szól; a csúcs az appban és a szerveren is frissül (szinkronnál a magasabb marad), a szint a grafikonon is látszik, e-mailben is megy | ✅ kész |
 | 5aq | Bennfentes ügyletek kártya a részvény oldalán: a vezetők nyílt piaci vételei és eladásai 90 napra (darab, nettó részvényszám, a legnagyobb ügyletek), az opciólehívás és a juttatás nélkül | ✅ kész |
 | 5ar | Elemzői vélemények alakulása: az Elemzők kártyán az utolsó 4 hónap vétel/tartás/eladás aránya oszlopokban | ✅ kész |
+| 5as | Saját listák a kedvencek között (pl. „Tech”, „Osztalék”): chipsor a Kedvencek oldalon, a részvény melletti gombbal listára tehető, átnevezés, törlés; a fiókkal szinkronizálva (név szerint összevonva) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

@@ -2253,4 +2253,26 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get analystTrend => 'Как менялись мнения месяц за месяцем';
+
+  @override
+  String get watchListAll => 'Все';
+
+  @override
+  String get watchListNew => 'Новый список';
+
+  @override
+  String get watchListName => 'Название списка';
+
+  @override
+  String get watchListRename => 'Переименовать список';
+
+  @override
+  String get watchListDelete => 'Удалить список';
+
+  @override
+  String get watchListAddTo => 'Добавить в список';
+
+  @override
+  String get watchListEmpty =>
+      'В этом списке пока нет акций. Нажмите кнопку списка рядом с акцией, чтобы добавить её.';
 }

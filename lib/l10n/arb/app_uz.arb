@@ -584,5 +584,12 @@
   "insiderSell": "Sotdi",
   "insiderHint": "So‘nggi 90 kunda rahbarlar va direktorlar tomonidan ochiq bozorda amalga oshirilgan xaridlar va sotuvlar (SEC Form 4). Opsionlarni amalga oshirish va mukofot aksiyalari hisobga olinmaydi.",
   "insiderNone": "So‘nggi 90 kunda ochiq bozorda insayderlarning xaridi yoki sotuvi bo‘lmagan.",
-  "analystTrend": "Fikrlar oyma-oy qanday o'zgardi"
+  "analystTrend": "Fikrlar oyma-oy qanday o'zgardi",
+  "watchListAll": "Hammasi",
+  "watchListNew": "Yangi roʻyxat",
+  "watchListName": "Roʻyxat nomi",
+  "watchListRename": "Roʻyxat nomini oʻzgartirish",
+  "watchListDelete": "Roʻyxatni oʻchirish",
+  "watchListAddTo": "Roʻyxatga qoʻshish",
+  "watchListEmpty": "Bu roʻyxatda hali aksiyalar yoʻq. Qoʻshish uchun aksiya yonidagi roʻyxat tugmasini bosing."
 }

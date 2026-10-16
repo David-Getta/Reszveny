@@ -2191,4 +2191,26 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get analystTrend => 'Санал бодол сар бүр хэрхэн өөрчлөгдсөн';
+
+  @override
+  String get watchListAll => 'Бүгд';
+
+  @override
+  String get watchListNew => 'Шинэ жагсаалт';
+
+  @override
+  String get watchListName => 'Жагсаалтын нэр';
+
+  @override
+  String get watchListRename => 'Жагсаалтын нэрийг өөрчлөх';
+
+  @override
+  String get watchListDelete => 'Жагсаалт устгах';
+
+  @override
+  String get watchListAddTo => 'Жагсаалтад нэмэх';
+
+  @override
+  String get watchListEmpty =>
+      'Энэ жагсаалтад одоогоор хувьцаа алга. Нэмэхийн тулд хувьцааны хажууд байгаа жагсаалтын товчийг дарна уу.';
 }

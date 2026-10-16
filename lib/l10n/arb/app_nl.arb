@@ -584,5 +584,12 @@
   "insiderSell": "Verkocht",
   "insiderHint": "Aankopen en verkopen op de open markt door bestuurders en commissarissen in de afgelopen 90 dagen (SEC Form 4). Uitgeoefende opties en toegekende aandelen tellen niet mee.",
   "insiderNone": "Geen insideraankopen of -verkopen op de open markt in de afgelopen 90 dagen.",
-  "analystTrend": "Hoe de meningen maand na maand veranderden"
+  "analystTrend": "Hoe de meningen maand na maand veranderden",
+  "watchListAll": "Alle",
+  "watchListNew": "Nieuwe lijst",
+  "watchListName": "Naam van lijst",
+  "watchListRename": "Lijst hernoemen",
+  "watchListDelete": "Lijst verwijderen",
+  "watchListAddTo": "Aan lijst toevoegen",
+  "watchListEmpty": "Nog geen aandelen in deze lijst. Tik op de lijstknop naast een aandeel om het toe te voegen."
 }

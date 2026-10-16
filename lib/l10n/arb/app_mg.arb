@@ -584,5 +584,12 @@
   "insiderSell": "Nivarotra",
   "insiderHint": "Fividianana sy fivarotana teny an-tsena malalaka nataon'ny mpitantana sy ny mpikambana ao amin'ny filan-kevi-pitantanana tao anatin'ny 90 andro farany (SEC Form 4). Tsy isaina ny fampiasana safidy (option) sy ny aksiona nomena.",
   "insiderNone": "Tsy nisy fividianana na fivarotana nataon'ny mpitantana teny an-tsena malalaka tao anatin'ny 90 andro farany.",
-  "analystTrend": "Ny fiovan'ny hevitra isam-bolana"
+  "analystTrend": "Ny fiovan'ny hevitra isam-bolana",
+  "watchListAll": "Rehetra",
+  "watchListNew": "Lisitra vaovao",
+  "watchListName": "Anaran'ny lisitra",
+  "watchListRename": "Ovay ny anaran'ny lisitra",
+  "watchListDelete": "Fafao ny lisitra",
+  "watchListAddTo": "Ampio amin'ny lisitra",
+  "watchListEmpty": "Mbola tsy misy anjara ato amin'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin'ny anjara iray mba hanampiana azy."
 }

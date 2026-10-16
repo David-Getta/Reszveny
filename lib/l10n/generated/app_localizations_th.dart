@@ -2162,4 +2162,26 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get analystTrend => 'มุมมองเปลี่ยนไปอย่างไรในแต่ละเดือน';
+
+  @override
+  String get watchListAll => 'ทั้งหมด';
+
+  @override
+  String get watchListNew => 'รายการใหม่';
+
+  @override
+  String get watchListName => 'ชื่อรายการ';
+
+  @override
+  String get watchListRename => 'เปลี่ยนชื่อรายการ';
+
+  @override
+  String get watchListDelete => 'ลบรายการ';
+
+  @override
+  String get watchListAddTo => 'เพิ่มลงในรายการ';
+
+  @override
+  String get watchListEmpty =>
+      'ยังไม่มีหุ้นในรายการนี้ แตะปุ่มรายการข้างหุ้นเพื่อเพิ่ม';
 }

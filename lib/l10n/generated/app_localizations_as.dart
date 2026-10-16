@@ -2189,4 +2189,26 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get analystTrend => 'মাহে মাহে মতামত কেনেকৈ সলনি হ\'ল';
+
+  @override
+  String get watchListAll => 'সকলো';
+
+  @override
+  String get watchListNew => 'নতুন তালিকা';
+
+  @override
+  String get watchListName => 'তালিকাৰ নাম';
+
+  @override
+  String get watchListRename => 'তালিকাৰ নাম সলনি কৰক';
+
+  @override
+  String get watchListDelete => 'তালিকা মচক';
+
+  @override
+  String get watchListAddTo => 'তালিকাত যোগ কৰক';
+
+  @override
+  String get watchListEmpty =>
+      'এই তালিকাত এতিয়াও কোনো শ্বেয়াৰ নাই। যোগ কৰিবলৈ শ্বেয়াৰৰ কাষৰ তালিকা বুটামটো টিপক।';
 }

@@ -2204,4 +2204,26 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get analystTrend => 'Paano nagbag-o ang mga panan-awan kada bulan';
+
+  @override
+  String get watchListAll => 'Tanan';
+
+  @override
+  String get watchListNew => 'Bag-o nga listahan';
+
+  @override
+  String get watchListName => 'Ngalan sang listahan';
+
+  @override
+  String get watchListRename => 'Ilisan ang ngalan sang listahan';
+
+  @override
+  String get watchListDelete => 'Panason ang listahan';
+
+  @override
+  String get watchListAddTo => 'Idugang sa listahan';
+
+  @override
+  String get watchListEmpty =>
+      'Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini.';
 }

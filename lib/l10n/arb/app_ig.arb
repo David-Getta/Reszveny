@@ -584,5 +584,12 @@
   "insiderSell": "Rere",
   "insiderHint": "Ịzụta na ire n'ahịa mepere emepe nke ndị isi na ndị nduzi mere n'ụbọchị 90 gara aga (SEC Form 4). Anaghị agụnye iji option na shares e nyere dị ka onyinye.",
   "insiderNone": "Ọ dịghị ịzụta ma ọ bụ ire ndị isi n'ahịa mepere emepe n'ụbọchị 90 gara aga.",
-  "analystTrend": "Otú echiche si gbanwee kwa ọnwa"
+  "analystTrend": "Otú echiche si gbanwee kwa ọnwa",
+  "watchListAll": "Ha niile",
+  "watchListNew": "Ndepụta ọhụrụ",
+  "watchListName": "Aha ndepụta",
+  "watchListRename": "Gbanwee aha ndepụta",
+  "watchListDelete": "Hichapụ ndepụta",
+  "watchListAddTo": "Tinye na ndepụta",
+  "watchListEmpty": "Enweghị òkè ọ bụla na ndepụta a ka ugbu a. Pịa bọtịnụ ndepụta dị n'akụkụ òkè iji tinye ya."
 }

@@ -584,5 +584,12 @@
   "insiderSell": "La iibiyay",
   "insiderHint": "Iibsashada iyo iibinta suuqa furan ee ay sameeyeen maamulayaasha iyo agaasimayaasha 90-kii maalmood ee la soo dhaafay (SEC Form 4). Isticmaalka xulashooyinka (options) iyo saamiyada abaalmarinta lama tiriyo.",
   "insiderNone": "Ma jiraan iibsasho ama iibin dadka gudaha ah oo suuqa furan ka dhacay 90-kii maalmood ee la soo dhaafay.",
-  "analystTrend": "Sida aragtiyuhu isu beddeleen bil ka bil"
+  "analystTrend": "Sida aragtiyuhu isu beddeleen bil ka bil",
+  "watchListAll": "Dhammaan",
+  "watchListNew": "Liis cusub",
+  "watchListName": "Magaca liiska",
+  "watchListRename": "Beddel magaca liiska",
+  "watchListDelete": "Tirtir liiska",
+  "watchListAddTo": "Ku dar liis",
+  "watchListEmpty": "Liiskan weli saami kuma jiro. Taabo badhanka liiska ee ku xiga saamiga si aad ugu darto."
 }

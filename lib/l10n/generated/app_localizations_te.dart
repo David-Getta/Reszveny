@@ -2196,4 +2196,26 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get analystTrend => 'నెలనెలా అభిప్రాయాలు ఎలా మారాయి';
+
+  @override
+  String get watchListAll => 'అన్నీ';
+
+  @override
+  String get watchListNew => 'కొత్త జాబితా';
+
+  @override
+  String get watchListName => 'జాబితా పేరు';
+
+  @override
+  String get watchListRename => 'జాబితా పేరు మార్చండి';
+
+  @override
+  String get watchListDelete => 'జాబితాను తొలగించండి';
+
+  @override
+  String get watchListAddTo => 'జాబితాకు జోడించండి';
+
+  @override
+  String get watchListEmpty =>
+      'ఈ జాబితాలో ఇంకా స్టాక్‌లు లేవు. జోడించడానికి స్టాక్ పక్కన ఉన్న జాబితా బటన్‌ను నొక్కండి.';
 }

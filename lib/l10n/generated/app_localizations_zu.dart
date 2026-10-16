@@ -2199,4 +2199,26 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get analystTrend => 'Indlela imibono eshintshe ngayo inyanga nenyanga';
+
+  @override
+  String get watchListAll => 'Konke';
+
+  @override
+  String get watchListNew => 'Uhlu olusha';
+
+  @override
+  String get watchListName => 'Igama lohlu';
+
+  @override
+  String get watchListRename => 'Qamba kabusha uhlu';
+
+  @override
+  String get watchListDelete => 'Susa uhlu';
+
+  @override
+  String get watchListAddTo => 'Engeza ohlwini';
+
+  @override
+  String get watchListEmpty =>
+      'Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze.';
 }

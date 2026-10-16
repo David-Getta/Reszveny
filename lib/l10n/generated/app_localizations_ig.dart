@@ -2186,4 +2186,26 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get analystTrend => 'Otú echiche si gbanwee kwa ọnwa';
+
+  @override
+  String get watchListAll => 'Ha niile';
+
+  @override
+  String get watchListNew => 'Ndepụta ọhụrụ';
+
+  @override
+  String get watchListName => 'Aha ndepụta';
+
+  @override
+  String get watchListRename => 'Gbanwee aha ndepụta';
+
+  @override
+  String get watchListDelete => 'Hichapụ ndepụta';
+
+  @override
+  String get watchListAddTo => 'Tinye na ndepụta';
+
+  @override
+  String get watchListEmpty =>
+      'Enweghị òkè ọ bụla na ndepụta a ka ugbu a. Pịa bọtịnụ ndepụta dị n\'akụkụ òkè iji tinye ya.';
 }

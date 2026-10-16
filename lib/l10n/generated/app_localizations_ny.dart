@@ -2197,4 +2197,26 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get analystTrend => 'Momwe malingaliro asinthira mwezi ndi mwezi';
+
+  @override
+  String get watchListAll => 'Zonse';
+
+  @override
+  String get watchListNew => 'Mndandanda watsopano';
+
+  @override
+  String get watchListName => 'Dzina la mndandanda';
+
+  @override
+  String get watchListRename => 'Sinthani dzina la mndandanda';
+
+  @override
+  String get watchListDelete => 'Chotsani mndandanda';
+
+  @override
+  String get watchListAddTo => 'Onjezani ku mndandanda';
+
+  @override
+  String get watchListEmpty =>
+      'Palibe masheya pa mndandandawu pano. Dinani batani la mndandanda pafupi ndi sheya kuti muwonjezere.';
 }

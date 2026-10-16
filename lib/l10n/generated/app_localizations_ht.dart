@@ -2189,4 +2189,26 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get analystTrend => 'Kijan opinyon yo chanje mwa apre mwa';
+
+  @override
+  String get watchListAll => 'Tout';
+
+  @override
+  String get watchListNew => 'Nouvo lis';
+
+  @override
+  String get watchListName => 'Non lis la';
+
+  @override
+  String get watchListRename => 'Chanje non lis la';
+
+  @override
+  String get watchListDelete => 'Efase lis la';
+
+  @override
+  String get watchListAddTo => 'Ajoute nan yon lis';
+
+  @override
+  String get watchListEmpty =>
+      'Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l.';
 }

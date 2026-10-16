@@ -2192,4 +2192,26 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get analystTrend => 'Андешаҳо моҳ ба моҳ чӣ тавр тағйир ёфтанд';
+
+  @override
+  String get watchListAll => 'Ҳама';
+
+  @override
+  String get watchListNew => 'Рӯйхати нав';
+
+  @override
+  String get watchListName => 'Номи рӯйхат';
+
+  @override
+  String get watchListRename => 'Тағйири номи рӯйхат';
+
+  @override
+  String get watchListDelete => 'Нест кардани рӯйхат';
+
+  @override
+  String get watchListAddTo => 'Илова ба рӯйхат';
+
+  @override
+  String get watchListEmpty =>
+      'Дар ин рӯйхат ҳоло саҳмия нест. Барои илова кардан тугмаи рӯйхатро дар паҳлӯи саҳмия пахш кунед.';
 }

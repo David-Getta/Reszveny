@@ -2116,4 +2116,25 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get analystTrend => '評価の月ごとの推移';
+
+  @override
+  String get watchListAll => 'すべて';
+
+  @override
+  String get watchListNew => '新しいリスト';
+
+  @override
+  String get watchListName => 'リスト名';
+
+  @override
+  String get watchListRename => 'リスト名を変更';
+
+  @override
+  String get watchListDelete => 'リストを削除';
+
+  @override
+  String get watchListAddTo => 'リストに追加';
+
+  @override
+  String get watchListEmpty => 'このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。';
 }

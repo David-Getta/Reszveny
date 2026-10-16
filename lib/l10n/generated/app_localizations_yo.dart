@@ -2189,4 +2189,26 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get analystTrend => 'Bí èrò ṣe yí padà láti oṣù dé oṣù';
+
+  @override
+  String get watchListAll => 'Gbogbo';
+
+  @override
+  String get watchListNew => 'Àkójọ tuntun';
+
+  @override
+  String get watchListName => 'Orúkọ àkójọ';
+
+  @override
+  String get watchListRename => 'Yí orúkọ àkójọ padà';
+
+  @override
+  String get watchListDelete => 'Pa àkójọ rẹ́';
+
+  @override
+  String get watchListAddTo => 'Fi kún àkójọ';
+
+  @override
+  String get watchListEmpty =>
+      'Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un.';
 }

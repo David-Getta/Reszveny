@@ -584,5 +584,12 @@
   "insiderSell": "Prodano",
   "insiderHint": "Nakupi in prodaje na odprtem trgu, ki so jih opravili vodilni in direktorji v zadnjih 90 dneh (SEC Form 4). Uveljavljanje opcij in dodeljene delnice niso vključeni.",
   "insiderNone": "V zadnjih 90 dneh ni bilo nakupov ali prodaj notranjih oseb na odprtem trgu.",
-  "analystTrend": "Kako so se mnenja spreminjala iz meseca v mesec"
+  "analystTrend": "Kako so se mnenja spreminjala iz meseca v mesec",
+  "watchListAll": "Vse",
+  "watchListNew": "Nov seznam",
+  "watchListName": "Ime seznama",
+  "watchListRename": "Preimenuj seznam",
+  "watchListDelete": "Izbriši seznam",
+  "watchListAddTo": "Dodaj na seznam",
+  "watchListEmpty": "Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici."
 }

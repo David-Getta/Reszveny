@@ -2182,4 +2182,26 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get analystTrend => 'راءِ مهيني به مهيني ڪيئن بدلي';
+
+  @override
+  String get watchListAll => 'سڀ';
+
+  @override
+  String get watchListNew => 'نئين فهرست';
+
+  @override
+  String get watchListName => 'فهرست جو نالو';
+
+  @override
+  String get watchListRename => 'فهرست جو نالو بدلايو';
+
+  @override
+  String get watchListDelete => 'فهرست ڊاهيو';
+
+  @override
+  String get watchListAddTo => 'فهرست ۾ شامل ڪريو';
+
+  @override
+  String get watchListEmpty =>
+      'هن فهرست ۾ اڃا ڪو به شيئر ناهي. شامل ڪرڻ لاءِ شيئر جي ڀرسان فهرست بٽڻ تي ٽيپ ڪريو.';
 }

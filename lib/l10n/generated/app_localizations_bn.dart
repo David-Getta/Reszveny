@@ -2189,4 +2189,26 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get analystTrend => 'মাসে মাসে মতামত কীভাবে বদলেছে';
+
+  @override
+  String get watchListAll => 'সব';
+
+  @override
+  String get watchListNew => 'নতুন তালিকা';
+
+  @override
+  String get watchListName => 'তালিকার নাম';
+
+  @override
+  String get watchListRename => 'তালিকার নাম বদলান';
+
+  @override
+  String get watchListDelete => 'তালিকা মুছুন';
+
+  @override
+  String get watchListAddTo => 'তালিকায় যোগ করুন';
+
+  @override
+  String get watchListEmpty =>
+      'এই তালিকায় এখনও কোনো শেয়ার নেই। যোগ করতে শেয়ারের পাশের তালিকা বোতামে ট্যাপ করুন।';
 }

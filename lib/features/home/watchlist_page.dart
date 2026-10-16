@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
+import '../../core/app_preferences.dart';
 import '../../core/models/price_history.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
@@ -15,7 +16,8 @@ enum WatchSort { own, gainers, losers, name }
 
 /// A kedvencek teljes listája: ár, napi változás és 30 napos mini-grafikon.
 /// Saját sorrendben húzással átrendezhető, elhúzva törölhető (visszavonható);
-/// a napi változás vagy a név szerint is rendezhető.
+/// a napi változás vagy a név szerint is rendezhető. Saját listák (pl. „Tech”)
+/// a chipsorban: a részvény melletti gombbal kerül listára.
 class WatchlistPage extends StatefulWidget {
   const WatchlistPage({super.key, required this.onOpenSymbol});
 
@@ -27,6 +29,9 @@ class WatchlistPage extends StatefulWidget {
 
 class _WatchlistPageState extends State<WatchlistPage> {
   WatchSort _sort = WatchSort.own;
+
+  /// A kiválasztott saját lista neve, vagy `null`: az összes kedvenc.
+  String? _list;
   final Map<String, Future<StockQuote>> _quotes = {};
   final Map<String, Future<PriceHistory>> _histories = {};
   final Map<String, StockQuote> _loaded = {};
@@ -62,6 +67,20 @@ class _WatchlistPageState extends State<WatchlistPage> {
     final prefs = AppServices.of(context).preferences;
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
+    // Saját listában elhúzva csak a listáról kerül le.
+    final list = _list;
+    if (list != null) {
+      await prefs.toggleInList(list, symbol);
+      messenger
+        ..hideCurrentSnackBar()
+        ..showSnackBar(
+          SnackBar(
+            content: Text('$symbol · $list'),
+            action: SnackBarAction(label: l10n.undo, onPressed: () => prefs.toggleInList(list, symbol)),
+          ),
+        );
+      return;
+    }
     final before = prefs.favorites;
     await prefs.toggleFavorite(symbol);
     messenger
@@ -72,6 +91,74 @@ class _WatchlistPageState extends State<WatchlistPage> {
           action: SnackBarAction(label: l10n.undo, onPressed: () => prefs.setFavorites(before)),
         ),
       );
+  }
+
+  /// Lista neve egy kis ablakban (új listához vagy átnevezéshez).
+  Future<String?> _askListName({String initial = ''}) async {
+    final name = await showDialog<String>(
+      context: context,
+      builder: (_) => _ListNameDialog(initial: initial),
+    );
+    return name?.trim().isEmpty ?? true ? null : name!.trim();
+  }
+
+  Future<void> _newList({String? withSymbol}) async {
+    final prefs = AppServices.of(context).preferences;
+    final name = await _askListName();
+    if (name == null || !await prefs.addWatchList(name)) return;
+    if (withSymbol != null) await prefs.toggleInList(name, withSymbol);
+    if (mounted && withSymbol == null) setState(() => _list = name);
+  }
+
+  /// „Listához adás”: a részvény saját listái pipával, és új lista.
+  Future<void> _addToList(String symbol) async {
+    final l10n = AppLocalizations.of(context);
+    final prefs = AppServices.of(context).preferences;
+    final create = await showModalBottomSheet<bool>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: ListenableBuilder(
+          listenable: prefs,
+          builder: (context, _) => ListView(
+            shrinkWrap: true,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+                child: Text('$symbol · ${l10n.watchListAddTo}', style: Theme.of(context).textTheme.titleMedium),
+              ),
+              for (final l in prefs.watchLists)
+                CheckboxListTile(
+                  key: ValueKey('watch-in-${l.name}'),
+                  value: l.symbols.contains(symbol),
+                  title: Text(l.name),
+                  onChanged: (_) => prefs.toggleInList(l.name, symbol),
+                ),
+              ListTile(
+                key: const ValueKey('watch-in-new'),
+                leading: const Icon(Icons.add_rounded),
+                title: Text(l10n.watchListNew),
+                onTap: () => Navigator.of(context).pop(true),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (create == true && mounted) await _newList(withSymbol: symbol);
+  }
+
+  Future<void> _listMenu(String action) async {
+    final prefs = AppServices.of(context).preferences;
+    final list = _list;
+    if (list == null) return;
+    if (action == 'rename') {
+      final name = await _askListName(initial: list);
+      if (name != null && await prefs.renameWatchList(list, name) && mounted) setState(() => _list = name);
+    } else {
+      await prefs.removeWatchList(list);
+      if (mounted) setState(() => _list = null);
+    }
   }
 
   @override
@@ -102,6 +189,23 @@ class _WatchlistPageState extends State<WatchlistPage> {
                 PopupMenuItem(key: ValueKey('watch-sort-${v.name}'), value: v, child: Text(label)),
             ],
           ),
+          if (_list != null)
+            PopupMenuButton<String>(
+              key: const ValueKey('watch-list-menu'),
+              onSelected: _listMenu,
+              itemBuilder: (_) => [
+                PopupMenuItem(
+                  key: const ValueKey('watch-list-rename'),
+                  value: 'rename',
+                  child: Text(l10n.watchListRename),
+                ),
+                PopupMenuItem(
+                  key: const ValueKey('watch-list-delete'),
+                  value: 'delete',
+                  child: Text(l10n.watchListDelete),
+                ),
+              ],
+            ),
           const SizedBox(width: 4),
         ],
       ),
@@ -121,7 +225,12 @@ class _WatchlistPageState extends State<WatchlistPage> {
               ),
             );
           }
-          final list = _sorted(favorites);
+          final lists = services.preferences.watchLists;
+          final current = lists.where((l) => l.name == _list).firstOrNull;
+          if (_list != null && current == null) _list = null;
+          final list = _sorted(current?.symbols ?? favorites);
+          // Saját listában a sorrend a felvételé, ott nincs húzás.
+          final reorder = _sort == WatchSort.own && current == null;
           Widget row(int i, String s) => Dismissible(
             key: ValueKey('watch-$s'),
             direction: DismissDirection.endToStart,
@@ -137,26 +246,80 @@ class _WatchlistPageState extends State<WatchlistPage> {
               quote: _quote(s),
               history: _history(s),
               onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
-              trailing: _sort == WatchSort.own
-                  ? ReorderableDragStartListener(
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    key: ValueKey('watch-addto-$s'),
+                    tooltip: l10n.watchListAddTo,
+                    visualDensity: VisualDensity.compact,
+                    icon: Icon(
+                      services.preferences.listsOf(s).isEmpty
+                          ? Icons.playlist_add_rounded
+                          : Icons.playlist_add_check_rounded,
+                      color: p.muted,
+                    ),
+                    onPressed: () => _addToList(s),
+                  ),
+                  if (reorder)
+                    ReorderableDragStartListener(
                       index: i,
                       child: Padding(
                         padding: const EdgeInsets.all(8),
                         child: Icon(Icons.drag_handle_rounded, color: p.muted),
                       ),
-                    )
-                  : null,
+                    ),
+                ],
+              ),
             ),
           );
-          final hint = Padding(
-            padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
-            child: Text(l10n.watchHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+          final hint = Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Saját listák: „Mind”, a listák, és új lista.
+              SingleChildScrollView(
+                key: const ValueKey('watch-lists'),
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                child: Row(
+                  children: [
+                    for (final (name, label) in [(null, l10n.watchListAll), for (final l in lists) (l.name, l.name)])
+                      Padding(
+                        padding: const EdgeInsetsDirectional.only(end: 8),
+                        child: ChoiceChip(
+                          key: ValueKey('watch-list-${name ?? '*'}'),
+                          label: Text(label),
+                          selected: _list == name,
+                          onSelected: (_) => setState(() => _list = name),
+                        ),
+                      ),
+                    ActionChip(
+                      key: const ValueKey('watch-list-new'),
+                      avatar: const Icon(Icons.add_rounded, size: 18),
+                      label: Text(l10n.watchListNew),
+                      onPressed: _newList,
+                    ),
+                  ],
+                ),
+              ),
+              // Saját listában nincs húzás: ott csak az üres lista kap magyarázatot.
+              if (current == null || current.symbols.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
+                  child: Text(
+                    current == null ? l10n.watchHint : l10n.watchListEmpty,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                )
+              else
+                const SizedBox(height: 8),
+            ],
           );
           // Teljes szélességű görgetés (görgetősáv a szélen), középre igazított sorokkal.
           return CenteredScroll(
             maxWidth: 760,
             padding: EdgeInsets.zero,
-            builder: (context, padding) => _sort == WatchSort.own
+            builder: (context, padding) => reorder
                 ? ReorderableListView.builder(
                     buildDefaultDragHandles: false,
                     padding: padding,
@@ -173,6 +336,49 @@ class _WatchlistPageState extends State<WatchlistPage> {
           );
         },
       ),
+    );
+  }
+}
+
+class _ListNameDialog extends StatefulWidget {
+  const _ListNameDialog({required this.initial});
+
+  final String initial;
+
+  @override
+  State<_ListNameDialog> createState() => _ListNameDialogState();
+}
+
+class _ListNameDialogState extends State<_ListNameDialog> {
+  late final _controller = TextEditingController(text: widget.initial);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return AlertDialog(
+      title: Text(widget.initial.isEmpty ? l10n.watchListNew : l10n.watchListRename),
+      content: TextField(
+        key: const ValueKey('watch-list-name'),
+        controller: _controller,
+        autofocus: true,
+        maxLength: AppPreferences.maxListName,
+        decoration: InputDecoration(labelText: l10n.watchListName),
+        onSubmitted: (v) => Navigator.of(context).pop(v),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        FilledButton(
+          key: const ValueKey('watch-list-ok'),
+          onPressed: () => Navigator.of(context).pop(_controller.text),
+          child: Text(l10n.ok),
+        ),
+      ],
     );
   }
 }

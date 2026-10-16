@@ -2197,4 +2197,26 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ingene ivyiyumviro vyahindutse uko ukwezi kuje';
+
+  @override
+  String get watchListAll => 'Vyose';
+
+  @override
+  String get watchListNew => 'Urutonde rushasha';
+
+  @override
+  String get watchListName => 'Izina ry\'urutonde';
+
+  @override
+  String get watchListRename => 'Hindura izina ry\'urutonde';
+
+  @override
+  String get watchListDelete => 'Futa urutonde';
+
+  @override
+  String get watchListAddTo => 'Shira ku rutonde';
+
+  @override
+  String get watchListEmpty =>
+      'Nta migabane iri kuri uru rutonde ubu. Fyonda akabuto k\'urutonde kari iruhande y\'umugabane kugira uwushireko.';
 }

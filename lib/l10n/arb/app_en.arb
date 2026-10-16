@@ -1703,5 +1703,15 @@
   "analystTrend": "How the views changed, month by month",
   "@analystTrend": {
     "description": "Caption above small stacked bars showing analysts' buy/hold/sell mix in each of the last months."
-  }
+  },
+  "watchListAll": "All",
+  "@watchListAll": {
+    "description": "Chip on the favorites page showing all favorites (not just one of the user's own lists)."
+  },
+  "watchListNew": "New list",
+  "watchListName": "List name",
+  "watchListRename": "Rename list",
+  "watchListDelete": "Delete list",
+  "watchListAddTo": "Add to a list",
+  "watchListEmpty": "No stocks in this list yet. Tap the list button next to a stock to add it."
 }

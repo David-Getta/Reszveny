@@ -584,5 +584,12 @@
   "insiderSell": "Yatunda",
   "insiderHint": "Okugula n'okutunda mu katale akaggule okw'abakulu n'abakungu mu nnaku 90 eziyise (SEC Form 4). Okukozesa option n'emigabo egiweebwa ng'ekirabo tebibalibwa.",
   "insiderNone": "Tewali kugula oba kutunda kw'abakulu mu katale akaggule mu nnaku 90 eziyise.",
-  "analystTrend": "Endowooza bwe zakyuka buli mwezi"
+  "analystTrend": "Endowooza bwe zakyuka buli mwezi",
+  "watchListAll": "Byonna",
+  "watchListNew": "Olukalala olupya",
+  "watchListName": "Erinnya ly'olukalala",
+  "watchListRename": "Kyusa erinnya ly'olukalala",
+  "watchListDelete": "Sazaamu olukalala",
+  "watchListAddTo": "Gattako ku lukalala",
+  "watchListEmpty": "Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly'olukalala eriri okumpi ne sitoka okugigattako."
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Vendido",
   "insiderHint": "Compras e vendas no mercado aberto de directivos e conselleiros nos últimos 90 días (SEC Form 4). Non se contan o exercicio de opcións nin as concesións de accións.",
   "insiderNone": "Sen compras nin vendas de insiders no mercado aberto nos últimos 90 días.",
-  "analystTrend": "Como cambiaron as opinións mes a mes"
+  "analystTrend": "Como cambiaron as opinións mes a mes",
+  "watchListAll": "Todas",
+  "watchListNew": "Nova lista",
+  "watchListName": "Nome da lista",
+  "watchListRename": "Renomear a lista",
+  "watchListDelete": "Eliminar a lista",
+  "watchListAddTo": "Engadir a unha lista",
+  "watchListEmpty": "Aínda non hai accións nesta lista. Toca o botón de lista xunto a unha acción para engadila."
 }

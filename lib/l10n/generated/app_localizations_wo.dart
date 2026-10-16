@@ -2185,4 +2185,26 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get analystTrend => 'Naka la xalaat yi soppeekoo weer ak weer';
+
+  @override
+  String get watchListAll => 'Yépp';
+
+  @override
+  String get watchListNew => 'Limm bu bees';
+
+  @override
+  String get watchListName => 'Turu limm bi';
+
+  @override
+  String get watchListRename => 'Soppi turu limm bi';
+
+  @override
+  String get watchListDelete => 'Far limm bi';
+
+  @override
+  String get watchListAddTo => 'Yokk ci limm';
+
+  @override
+  String get watchListEmpty =>
+      'Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko.';
 }

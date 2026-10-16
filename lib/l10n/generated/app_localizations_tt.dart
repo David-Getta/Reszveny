@@ -2188,4 +2188,26 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get analystTrend => 'Фикерләр айдан-айга ничек үзгәрде';
+
+  @override
+  String get watchListAll => 'Барысы';
+
+  @override
+  String get watchListNew => 'Яңа исемлек';
+
+  @override
+  String get watchListName => 'Исемлек исеме';
+
+  @override
+  String get watchListRename => 'Исемлекнең исемен үзгәртү';
+
+  @override
+  String get watchListDelete => 'Исемлекне бетерү';
+
+  @override
+  String get watchListAddTo => 'Исемлеккә өстәү';
+
+  @override
+  String get watchListEmpty =>
+      'Бу исемлектә әлегә акцияләр юк. Өстәү өчен акция янындагы исемлек төймәсенә басыгыз.';
 }

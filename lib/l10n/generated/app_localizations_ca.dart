@@ -2199,4 +2199,26 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get analystTrend => 'Com han canviat les opinions mes a mes';
+
+  @override
+  String get watchListAll => 'Totes';
+
+  @override
+  String get watchListNew => 'Nova llista';
+
+  @override
+  String get watchListName => 'Nom de la llista';
+
+  @override
+  String get watchListRename => 'Canviar el nom de la llista';
+
+  @override
+  String get watchListDelete => 'Suprimir la llista';
+
+  @override
+  String get watchListAddTo => 'Afegir a una llista';
+
+  @override
+  String get watchListEmpty =>
+      'Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d\'una acció per afegir-la.';
 }

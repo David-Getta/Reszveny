@@ -2191,4 +2191,26 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get analystTrend => 'Как се промениха мненията месец по месец';
+
+  @override
+  String get watchListAll => 'Всички';
+
+  @override
+  String get watchListNew => 'Нов списък';
+
+  @override
+  String get watchListName => 'Име на списъка';
+
+  @override
+  String get watchListRename => 'Преименувай списъка';
+
+  @override
+  String get watchListDelete => 'Изтрий списъка';
+
+  @override
+  String get watchListAddTo => 'Добави към списък';
+
+  @override
+  String get watchListEmpty =>
+      'В този списък все още няма акции. Докоснете бутона за списък до акция, за да я добавите.';
 }

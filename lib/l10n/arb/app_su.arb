@@ -584,5 +584,12 @@
   "insiderSell": "Ngajual",
   "insiderHint": "Pameseran sareng penjualan di pasar kabuka ku eksekutif sareng diréktur dina 90 dinten panungtung (SEC Form 4). Palaksanaan opsi sareng hadiah saham henteu diitung.",
   "insiderNone": "Teu aya pameseran atanapi penjualan urang jero di pasar kabuka dina 90 dinten panungtung.",
-  "analystTrend": "Kumaha pamadegan robah ti bulan ka bulan"
+  "analystTrend": "Kumaha pamadegan robah ti bulan ka bulan",
+  "watchListAll": "Sadayana",
+  "watchListNew": "Daptar anyar",
+  "watchListName": "Ngaran daptar",
+  "watchListRename": "Ganti ngaran daptar",
+  "watchListDelete": "Hapus daptar",
+  "watchListAddTo": "Tambahkeun ka daptar",
+  "watchListEmpty": "Can aya saham dina daptar ieu. Toél tombol daptar di gigireun saham pikeun nambahkeunana."
 }

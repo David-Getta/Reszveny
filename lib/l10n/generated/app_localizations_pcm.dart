@@ -2190,4 +2190,26 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get analystTrend => 'How dia view take change, month by month';
+
+  @override
+  String get watchListAll => 'All';
+
+  @override
+  String get watchListNew => 'New list';
+
+  @override
+  String get watchListName => 'List name';
+
+  @override
+  String get watchListRename => 'Change list name';
+
+  @override
+  String get watchListDelete => 'Delete list';
+
+  @override
+  String get watchListAddTo => 'Add am to list';
+
+  @override
+  String get watchListEmpty =>
+      'No stock dey dis list yet. Tap di list button wey dey near any stock to add am.';
 }

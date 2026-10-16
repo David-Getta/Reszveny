@@ -584,5 +584,12 @@
   "insiderSell": "An sayar",
   "insiderHint": "Saye da sayarwar shugabanni da daraktoci a kasuwa a buɗe cikin kwanaki 90 da suka gabata (SEC Form 4). Ba a ƙidaya amfani da zaɓin hannun jari da kyautar hannun jari ba.",
   "insiderNone": "Babu saye ko sayarwar shugabanni a kasuwa a buɗe cikin kwanaki 90 da suka gabata.",
-  "analystTrend": "Yadda ra'ayoyi suka sauya wata-wata"
+  "analystTrend": "Yadda ra'ayoyi suka sauya wata-wata",
+  "watchListAll": "Duka",
+  "watchListNew": "Sabon jeri",
+  "watchListName": "Sunan jeri",
+  "watchListRename": "Sake sunan jeri",
+  "watchListDelete": "Share jeri",
+  "watchListAddTo": "Ƙara zuwa jeri",
+  "watchListEmpty": "Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi."
 }

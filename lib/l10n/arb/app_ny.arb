@@ -584,5 +584,12 @@
   "insiderSell": "Anagulitsa",
   "insiderHint": "Kugula ndi kugulitsa pamsika wotseguka kochitidwa ndi akuluakulu ndi otsogolera m'masiku 90 apitawa (SEC Form 4). Kugwiritsa ntchito ma option ndi masheya opatsidwa sikuwerengedwa.",
   "insiderNone": "Palibe kugula kapena kugulitsa kwa anthu amkati pamsika wotseguka m'masiku 90 apitawa.",
-  "analystTrend": "Momwe malingaliro asinthira mwezi ndi mwezi"
+  "analystTrend": "Momwe malingaliro asinthira mwezi ndi mwezi",
+  "watchListAll": "Zonse",
+  "watchListNew": "Mndandanda watsopano",
+  "watchListName": "Dzina la mndandanda",
+  "watchListRename": "Sinthani dzina la mndandanda",
+  "watchListDelete": "Chotsani mndandanda",
+  "watchListAddTo": "Onjezani ku mndandanda",
+  "watchListEmpty": "Palibe masheya pa mndandandawu pano. Dinani batani la mndandanda pafupi ndi sheya kuti muwonjezere."
 }

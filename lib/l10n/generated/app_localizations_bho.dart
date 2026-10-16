@@ -2186,4 +2186,26 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get analystTrend => 'महीना-दर-महीना राय कइसे बदलल';
+
+  @override
+  String get watchListAll => 'सब';
+
+  @override
+  String get watchListNew => 'नया सूची';
+
+  @override
+  String get watchListName => 'सूची के नाम';
+
+  @override
+  String get watchListRename => 'सूची के नाम बदलीं';
+
+  @override
+  String get watchListDelete => 'सूची मिटाईं';
+
+  @override
+  String get watchListAddTo => 'सूची में जोड़ीं';
+
+  @override
+  String get watchListEmpty =>
+      'एह सूची में अबहीं ले कवनो शेयर नइखे। जोड़े खातिर शेयर के बगल वाला सूची बटन दबाईं।';
 }

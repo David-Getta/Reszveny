@@ -2125,4 +2125,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get analystTrend => '월별 의견 변화';
+
+  @override
+  String get watchListAll => '전체';
+
+  @override
+  String get watchListNew => '새 목록';
+
+  @override
+  String get watchListName => '목록 이름';
+
+  @override
+  String get watchListRename => '목록 이름 변경';
+
+  @override
+  String get watchListDelete => '목록 삭제';
+
+  @override
+  String get watchListAddTo => '목록에 추가';
+
+  @override
+  String get watchListEmpty => '이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요.';
 }

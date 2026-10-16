@@ -2197,4 +2197,26 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get analystTrend => 'Paano nagbago ang mga pananaw bawat buwan';
+
+  @override
+  String get watchListAll => 'Lahat';
+
+  @override
+  String get watchListNew => 'Bagong listahan';
+
+  @override
+  String get watchListName => 'Pangalan ng listahan';
+
+  @override
+  String get watchListRename => 'Palitan ang pangalan ng listahan';
+
+  @override
+  String get watchListDelete => 'Burahin ang listahan';
+
+  @override
+  String get watchListAddTo => 'Idagdag sa listahan';
+
+  @override
+  String get watchListEmpty =>
+      'Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito.';
 }

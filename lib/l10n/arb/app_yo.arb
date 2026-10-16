@@ -584,5 +584,12 @@
   "insiderSell": "Ó tà",
   "insiderHint": "Ìrà àti ìtà ní ọjà gbangba láti ọwọ́ àwọn alákòóso àti olùdarí ní ọjọ́ 90 sẹ́yìn (SEC Form 4). A kò ka lílo àṣàyàn (options) àti ìpín ẹ̀bùn.",
   "insiderNone": "Kò sí ìrà tàbí ìtà àwọn ará inú ní ọjà gbangba ní ọjọ́ 90 sẹ́yìn.",
-  "analystTrend": "Bí èrò ṣe yí padà láti oṣù dé oṣù"
+  "analystTrend": "Bí èrò ṣe yí padà láti oṣù dé oṣù",
+  "watchListAll": "Gbogbo",
+  "watchListNew": "Àkójọ tuntun",
+  "watchListName": "Orúkọ àkójọ",
+  "watchListRename": "Yí orúkọ àkójọ padà",
+  "watchListDelete": "Pa àkójọ rẹ́",
+  "watchListAddTo": "Fi kún àkójọ",
+  "watchListEmpty": "Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un."
 }

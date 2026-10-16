@@ -2186,4 +2186,26 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get analystTrend => 'મહિને મહિને મંતવ્યો કેવી રીતે બદલાયા';
+
+  @override
+  String get watchListAll => 'બધા';
+
+  @override
+  String get watchListNew => 'નવી યાદી';
+
+  @override
+  String get watchListName => 'યાદીનું નામ';
+
+  @override
+  String get watchListRename => 'યાદીનું નામ બદલો';
+
+  @override
+  String get watchListDelete => 'યાદી કાઢી નાખો';
+
+  @override
+  String get watchListAddTo => 'યાદીમાં ઉમેરો';
+
+  @override
+  String get watchListEmpty =>
+      'આ યાદીમાં હજી કોઈ શેર નથી. ઉમેરવા માટે શેરની બાજુમાં આવેલા યાદી બટન પર ટૅપ કરો.';
 }

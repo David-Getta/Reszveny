@@ -2198,4 +2198,26 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get analystTrend => 'Πώς άλλαξαν οι απόψεις μήνα με τον μήνα';
+
+  @override
+  String get watchListAll => 'Όλες';
+
+  @override
+  String get watchListNew => 'Νέα λίστα';
+
+  @override
+  String get watchListName => 'Όνομα λίστας';
+
+  @override
+  String get watchListRename => 'Μετονομασία λίστας';
+
+  @override
+  String get watchListDelete => 'Διαγραφή λίστας';
+
+  @override
+  String get watchListAddTo => 'Προσθήκη σε λίστα';
+
+  @override
+  String get watchListEmpty =>
+      'Δεν υπάρχουν ακόμη μετοχές σε αυτήν τη λίστα. Πατήστε το κουμπί λίστας δίπλα σε μια μετοχή για να την προσθέσετε.';
 }

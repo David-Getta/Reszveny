@@ -2196,4 +2196,26 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get analystTrend => 'Mbaʼéichapa oñemoambue umi temiandu jasy ha jasy';
+
+  @override
+  String get watchListAll => 'Opavave';
+
+  @override
+  String get watchListNew => 'Lista pyahu';
+
+  @override
+  String get watchListName => 'Lista réra';
+
+  @override
+  String get watchListRename => 'Emoambue lista réra';
+
+  @override
+  String get watchListDelete => 'Embogue lista';
+
+  @override
+  String get watchListAddTo => 'Embojuaju peteĩ listape';
+
+  @override
+  String get watchListEmpty =>
+      'Ndaipóri gueteri acción ko listape. Ejopy lista votõ oĩva acción ykére embojuaju hag̃ua.';
 }

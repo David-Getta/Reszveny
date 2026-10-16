@@ -2194,4 +2194,26 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get analystTrend => 'Fikrlar oyma-oy qanday o\'zgardi';
+
+  @override
+  String get watchListAll => 'Hammasi';
+
+  @override
+  String get watchListNew => 'Yangi roʻyxat';
+
+  @override
+  String get watchListName => 'Roʻyxat nomi';
+
+  @override
+  String get watchListRename => 'Roʻyxat nomini oʻzgartirish';
+
+  @override
+  String get watchListDelete => 'Roʻyxatni oʻchirish';
+
+  @override
+  String get watchListAddTo => 'Roʻyxatga qoʻshish';
+
+  @override
+  String get watchListEmpty =>
+      'Bu roʻyxatda hali aksiyalar yoʻq. Qoʻshish uchun aksiya yonidagi roʻyxat tugmasini bosing.';
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Satdy",
   "insiderHint": "Soňky 90 günde ýolbaşçylaryň we direktorlaryň açyk bazarda eden satyn alyşlary we satuwlary (SEC Form 4). Opsionlaryň ulanylmagy we sylag paýnamalary hasaba alynmaýar.",
   "insiderNone": "Soňky 90 günde açyk bazarda insaýderleriň satyn alyşy ýa-da satuwy bolmady.",
-  "analystTrend": "Pikirler aýba-aý nähili üýtgedi"
+  "analystTrend": "Pikirler aýba-aý nähili üýtgedi",
+  "watchListAll": "Ählisi",
+  "watchListNew": "Täze sanaw",
+  "watchListName": "Sanawyň ady",
+  "watchListRename": "Sanawyň adyny üýtget",
+  "watchListDelete": "Sanawy poz",
+  "watchListAddTo": "Sanawa goş",
+  "watchListEmpty": "Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň."
 }

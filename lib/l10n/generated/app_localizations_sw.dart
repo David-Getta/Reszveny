@@ -2191,4 +2191,26 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get analystTrend => 'Jinsi maoni yalivyobadilika mwezi baada ya mwezi';
+
+  @override
+  String get watchListAll => 'Zote';
+
+  @override
+  String get watchListNew => 'Orodha mpya';
+
+  @override
+  String get watchListName => 'Jina la orodha';
+
+  @override
+  String get watchListRename => 'Badilisha jina la orodha';
+
+  @override
+  String get watchListDelete => 'Futa orodha';
+
+  @override
+  String get watchListAddTo => 'Ongeza kwenye orodha';
+
+  @override
+  String get watchListEmpty =>
+      'Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza.';
 }

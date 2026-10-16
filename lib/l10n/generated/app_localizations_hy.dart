@@ -2198,4 +2198,26 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ինչպես են փոխվել կարծիքներն ամիս առ ամիս';
+
+  @override
+  String get watchListAll => 'Բոլորը';
+
+  @override
+  String get watchListNew => 'Նոր ցուցակ';
+
+  @override
+  String get watchListName => 'Ցուցակի անունը';
+
+  @override
+  String get watchListRename => 'Վերանվանել ցուցակը';
+
+  @override
+  String get watchListDelete => 'Ջնջել ցուցակը';
+
+  @override
+  String get watchListAddTo => 'Ավելացնել ցուցակում';
+
+  @override
+  String get watchListEmpty =>
+      'Այս ցուցակում դեռ բաժնետոմսեր չկան։ Հպեք բաժնետոմսի կողքի ցուցակի կոճակին՝ այն ավելացնելու համար։';
 }

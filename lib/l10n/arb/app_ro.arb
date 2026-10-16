@@ -584,5 +584,12 @@
   "insiderSell": "Vândut",
   "insiderHint": "Achiziții și vânzări pe piața liberă efectuate de directori și administratori în ultimele 90 de zile (SEC Form 4). Exercitarea opțiunilor și acordarea de acțiuni nu sunt incluse.",
   "insiderNone": "Nicio achiziție sau vânzare a insiderilor pe piața liberă în ultimele 90 de zile.",
-  "analystTrend": "Cum s-au schimbat opiniile de la lună la lună"
+  "analystTrend": "Cum s-au schimbat opiniile de la lună la lună",
+  "watchListAll": "Toate",
+  "watchListNew": "Listă nouă",
+  "watchListName": "Numele listei",
+  "watchListRename": "Redenumește lista",
+  "watchListDelete": "Șterge lista",
+  "watchListAddTo": "Adaugă într-o listă",
+  "watchListEmpty": "Încă nu există acțiuni în această listă. Atinge butonul de listă de lângă o acțiune pentru a o adăuga."
 }

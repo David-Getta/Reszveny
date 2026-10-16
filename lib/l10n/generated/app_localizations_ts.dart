@@ -2205,4 +2205,26 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get analystTrend =>
       'Ndlela leyi mavonelo ma cinceke ha yona n\'hweti na n\'hweti';
+
+  @override
+  String get watchListAll => 'Hinkwaswo';
+
+  @override
+  String get watchListNew => 'Nxaxamelo leyintshwa';
+
+  @override
+  String get watchListName => 'Vito ra nxaxamelo';
+
+  @override
+  String get watchListRename => 'Cinca vito ra nxaxamelo';
+
+  @override
+  String get watchListDelete => 'Sula nxaxamelo';
+
+  @override
+  String get watchListAddTo => 'Engetela eka nxaxamelo';
+
+  @override
+  String get watchListEmpty =>
+      'A ku si na swiavelo eka nxaxamelo leyi. Tsindzela batheni ya nxaxamelo ekusuhi ni xiavelo ku xi engetela.';
 }

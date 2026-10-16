@@ -2180,4 +2180,26 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get analystTrend => 'ཟླ་བ་རེ་རེར་བསམ་འཆར་ཇི་ལྟར་འགྱུར་བ།';
+
+  @override
+  String get watchListAll => 'ཚང་མ';
+
+  @override
+  String get watchListNew => 'ཐོ་ཡིག་གསར་པ';
+
+  @override
+  String get watchListName => 'ཐོ་ཡིག་གི་མིང་';
+
+  @override
+  String get watchListRename => 'ཐོ་ཡིག་གི་མིང་བསྒྱུར';
+
+  @override
+  String get watchListDelete => 'ཐོ་ཡིག་སུབ';
+
+  @override
+  String get watchListAddTo => 'ཐོ་ཡིག་ལ་སྣོན';
+
+  @override
+  String get watchListEmpty =>
+      'ཐོ་ཡིག་འདིའི་ནང་ད་དུང་མ་འཛིན་མེད། སྣོན་པར་མ་འཛིན་གྱི་འགྲམ་གྱི་ཐོ་ཡིག་མཐེབ་གནོན་ལ་ཨེབ།';
 }

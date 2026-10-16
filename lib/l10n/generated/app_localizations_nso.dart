@@ -2205,4 +2205,26 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get analystTrend =>
       'Kamoo dikgopolo di fetogilego ka gona kgwedi le kgwedi';
+
+  @override
+  String get watchListAll => 'Tšohle';
+
+  @override
+  String get watchListNew => 'Lenaneo le leswa';
+
+  @override
+  String get watchListName => 'Leina la lenaneo';
+
+  @override
+  String get watchListRename => 'Fetoša leina la lenaneo';
+
+  @override
+  String get watchListDelete => 'Phumola lenaneo';
+
+  @override
+  String get watchListAddTo => 'Oketša lenaneong';
+
+  @override
+  String get watchListEmpty =>
+      'Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša.';
 }

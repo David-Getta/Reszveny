@@ -2193,4 +2193,26 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get analystTrend => 'Kumaha pamadegan robah ti bulan ka bulan';
+
+  @override
+  String get watchListAll => 'Sadayana';
+
+  @override
+  String get watchListNew => 'Daptar anyar';
+
+  @override
+  String get watchListName => 'Ngaran daptar';
+
+  @override
+  String get watchListRename => 'Ganti ngaran daptar';
+
+  @override
+  String get watchListDelete => 'Hapus daptar';
+
+  @override
+  String get watchListAddTo => 'Tambahkeun ka daptar';
+
+  @override
+  String get watchListEmpty =>
+      'Can aya saham dina daptar ieu. Toél tombol daptar di gigireun saham pikeun nambahkeunana.';
 }

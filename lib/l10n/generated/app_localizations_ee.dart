@@ -2194,4 +2194,26 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get analystTrend => 'Alesi susuwo trɔ le ɣleti sia ɣleti me';
+
+  @override
+  String get watchListAll => 'Wo katã';
+
+  @override
+  String get watchListNew => 'Xexlẽdzesi yeye';
+
+  @override
+  String get watchListName => 'Xexlẽdzesia ƒe ŋkɔ';
+
+  @override
+  String get watchListRename => 'Trɔ xexlẽdzesia ƒe ŋkɔ';
+
+  @override
+  String get watchListDelete => 'Tutu xexlẽdzesia ɖa';
+
+  @override
+  String get watchListAddTo => 'Tsɔe kpe ɖe xexlẽdzesi aɖe ŋu';
+
+  @override
+  String get watchListEmpty =>
+      'Sitɔk aɖeke mele xexlẽdzesi sia me haɖe o. Zi xexlẽdzesi ƒe dzesi si le sitɔk aɖe xa be nàtsɔe akpe ɖe eŋu.';
 }

@@ -2192,4 +2192,26 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get analystTrend => 'Nêrîn meh bi meh çawa guherîn';
+
+  @override
+  String get watchListAll => 'Hemû';
+
+  @override
+  String get watchListNew => 'Lîsteya nû';
+
+  @override
+  String get watchListName => 'Navê lîsteyê';
+
+  @override
+  String get watchListRename => 'Navê lîsteyê biguherîne';
+
+  @override
+  String get watchListDelete => 'Lîsteyê jê bibe';
+
+  @override
+  String get watchListAddTo => 'Li lîsteyekê zêde bike';
+
+  @override
+  String get watchListEmpty =>
+      'Hîn di vê lîsteyê de tu pişk tune ne. Ji bo zêdekirinê, li bişkoka lîsteyê ya li kêleka pişkê bitikîne.';
 }

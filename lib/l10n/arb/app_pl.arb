@@ -584,5 +584,12 @@
   "insiderSell": "Sprzedaż",
   "insiderHint": "Zakupy i sprzedaże na otwartym rynku dokonane przez członków zarządu i rady dyrektorów w ciągu ostatnich 90 dni (SEC Form 4). Wykonanie opcji i przyznane akcje nie są uwzględniane.",
   "insiderNone": "Brak zakupów lub sprzedaży insiderów na otwartym rynku w ciągu ostatnich 90 dni.",
-  "analystTrend": "Jak zmieniały się opinie z miesiąca na miesiąc"
+  "analystTrend": "Jak zmieniały się opinie z miesiąca na miesiąc",
+  "watchListAll": "Wszystkie",
+  "watchListNew": "Nowa lista",
+  "watchListName": "Nazwa listy",
+  "watchListRename": "Zmień nazwę listy",
+  "watchListDelete": "Usuń listę",
+  "watchListAddTo": "Dodaj do listy",
+  "watchListEmpty": "Na tej liście nie ma jeszcze akcji. Stuknij przycisk listy obok akcji, aby ją dodać."
 }

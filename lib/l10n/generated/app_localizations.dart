@@ -3846,6 +3846,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'How the views changed, month by month'**
   String get analystTrend;
+
+  /// Chip on the favorites page showing all favorites (not just one of the user's own lists).
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get watchListAll;
+
+  /// No description provided for @watchListNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New list'**
+  String get watchListNew;
+
+  /// No description provided for @watchListName.
+  ///
+  /// In en, this message translates to:
+  /// **'List name'**
+  String get watchListName;
+
+  /// No description provided for @watchListRename.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename list'**
+  String get watchListRename;
+
+  /// No description provided for @watchListDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete list'**
+  String get watchListDelete;
+
+  /// No description provided for @watchListAddTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to a list'**
+  String get watchListAddTo;
+
+  /// No description provided for @watchListEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No stocks in this list yet. Tap the list button next to a stock to add it.'**
+  String get watchListEmpty;
 }
 
 class _AppLocalizationsDelegate

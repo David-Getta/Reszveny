@@ -584,5 +584,12 @@
   "insiderSell": "Don sell",
   "insiderHint": "Wetin oga dem and directors buy and sell for open market for di last 90 days (SEC Form 4). Option exercise and share award no dey inside.",
   "insiderNone": "No insider buy or sell for open market for di last 90 days.",
-  "analystTrend": "How dia view take change, month by month"
+  "analystTrend": "How dia view take change, month by month",
+  "watchListAll": "All",
+  "watchListNew": "New list",
+  "watchListName": "List name",
+  "watchListRename": "Change list name",
+  "watchListDelete": "Delete list",
+  "watchListAddTo": "Add am to list",
+  "watchListEmpty": "No stock dey dis list yet. Tap di list button wey dey near any stock to add am."
 }

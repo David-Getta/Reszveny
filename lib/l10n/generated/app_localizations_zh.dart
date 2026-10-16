@@ -2084,6 +2084,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get analystTrend => '观点逐月变化';
+
+  @override
+  String get watchListAll => '全部';
+
+  @override
+  String get watchListNew => '新建列表';
+
+  @override
+  String get watchListName => '列表名称';
+
+  @override
+  String get watchListRename => '重命名列表';
+
+  @override
+  String get watchListDelete => '删除列表';
+
+  @override
+  String get watchListAddTo => '添加到列表';
+
+  @override
+  String get watchListEmpty => '此列表中还没有股票。点按股票旁的列表按钮即可添加。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4164,4 +4185,25 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get analystTrend => '觀點逐月變化';
+
+  @override
+  String get watchListAll => '全部';
+
+  @override
+  String get watchListNew => '新增清單';
+
+  @override
+  String get watchListName => '清單名稱';
+
+  @override
+  String get watchListRename => '重新命名清單';
+
+  @override
+  String get watchListDelete => '刪除清單';
+
+  @override
+  String get watchListAddTo => '加入清單';
+
+  @override
+  String get watchListEmpty => '此清單暫時未有股票。輕按股票旁的清單按鈕即可加入。';
 }

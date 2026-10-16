@@ -584,5 +584,12 @@
   "insiderSell": "Shiti",
   "insiderHint": "Blerje dhe shitje në tregun e hapur nga drejtuesit dhe anëtarët e bordit në 90 ditët e fundit (SEC Form 4). Ushtrimi i opsioneve dhe aksionet e dhuruara nuk llogariten.",
   "insiderNone": "Asnjë blerje apo shitje e të brendshmëve në tregun e hapur në 90 ditët e fundit.",
-  "analystTrend": "Si ndryshuan opinionet muaj pas muaji"
+  "analystTrend": "Si ndryshuan opinionet muaj pas muaji",
+  "watchListAll": "Të gjitha",
+  "watchListNew": "Listë e re",
+  "watchListName": "Emri i listës",
+  "watchListRename": "Riemërto listën",
+  "watchListDelete": "Fshi listën",
+  "watchListAddTo": "Shto në listë",
+  "watchListEmpty": "Ende nuk ka aksione në këtë listë. Prek butonin e listës pranë një aksioni për ta shtuar."
 }

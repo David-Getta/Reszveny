@@ -2195,4 +2195,26 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get analystTrend => 'Hoe de meningen maand na maand veranderden';
+
+  @override
+  String get watchListAll => 'Alle';
+
+  @override
+  String get watchListNew => 'Nieuwe lijst';
+
+  @override
+  String get watchListName => 'Naam van lijst';
+
+  @override
+  String get watchListRename => 'Lijst hernoemen';
+
+  @override
+  String get watchListDelete => 'Lijst verwijderen';
+
+  @override
+  String get watchListAddTo => 'Aan lijst toevoegen';
+
+  @override
+  String get watchListEmpty =>
+      'Nog geen aandelen in deze lijst. Tik op de lijstknop naast een aandeel om het toe te voegen.';
 }

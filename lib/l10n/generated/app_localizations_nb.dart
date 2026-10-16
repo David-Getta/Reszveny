@@ -2190,4 +2190,26 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get analystTrend => 'Slik har synene endret seg måned for måned';
+
+  @override
+  String get watchListAll => 'Alle';
+
+  @override
+  String get watchListNew => 'Ny liste';
+
+  @override
+  String get watchListName => 'Listenavn';
+
+  @override
+  String get watchListRename => 'Gi listen nytt navn';
+
+  @override
+  String get watchListDelete => 'Slett listen';
+
+  @override
+  String get watchListAddTo => 'Legg til i en liste';
+
+  @override
+  String get watchListEmpty =>
+      'Ingen aksjer i denne listen ennå. Trykk på listeknappen ved siden av en aksje for å legge den til.';
 }

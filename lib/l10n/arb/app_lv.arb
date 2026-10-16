@@ -584,5 +584,12 @@
   "insiderSell": "Pārdots",
   "insiderHint": "Vadītāju un direktoru pirkumi un pārdošanas atklātajā tirgū pēdējās 90 dienās (SEC Form 4). Opciju izmantošana un akciju piešķīrumi netiek ieskaitīti.",
   "insiderNone": "Pēdējās 90 dienās atklātajā tirgū nav bijis insaideru pirkumu vai pārdošanu.",
-  "analystTrend": "Kā viedokļi mainījās mēnesi pa mēnesim"
+  "analystTrend": "Kā viedokļi mainījās mēnesi pa mēnesim",
+  "watchListAll": "Visas",
+  "watchListNew": "Jauns saraksts",
+  "watchListName": "Saraksta nosaukums",
+  "watchListRename": "Pārdēvēt sarakstu",
+  "watchListDelete": "Dzēst sarakstu",
+  "watchListAddTo": "Pievienot sarakstam",
+  "watchListEmpty": "Šajā sarakstā vēl nav akciju. Pieskarieties saraksta pogai blakus akcijai, lai to pievienotu."
 }

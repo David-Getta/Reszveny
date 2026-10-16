@@ -2190,4 +2190,26 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get analystTrend => 'महिन्यागणिक मते कशी बदलली';
+
+  @override
+  String get watchListAll => 'सर्व';
+
+  @override
+  String get watchListNew => 'नवीन यादी';
+
+  @override
+  String get watchListName => 'यादीचे नाव';
+
+  @override
+  String get watchListRename => 'यादीचे नाव बदला';
+
+  @override
+  String get watchListDelete => 'यादी हटवा';
+
+  @override
+  String get watchListAddTo => 'यादीत जोडा';
+
+  @override
+  String get watchListEmpty =>
+      'या यादीत अद्याप कोणतेही शेअर नाहीत. जोडण्यासाठी शेअरच्या शेजारील यादी बटणावर टॅप करा.';
 }

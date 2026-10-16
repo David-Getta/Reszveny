@@ -584,5 +584,12 @@
   "insiderSell": "Uthengisile",
   "insiderHint": "Ukuthenga nokuthengisa kwimarike evulekileyo okwenziwe ngabaphathi nabalawuli kwiintsuku ezingama-90 ezidlulileyo (SEC Form 4). Ukusetyenziswa kweenketho (options) nezabelo ezinikelweyo azibalwa.",
   "insiderNone": "Akukho kuthenga okanye kuthengisa kwabangaphakathi kwimarike evulekileyo kwiintsuku ezingama-90 ezidlulileyo.",
-  "analystTrend": "Indlela izimvo eziguquke ngayo inyanga nenyanga"
+  "analystTrend": "Indlela izimvo eziguquke ngayo inyanga nenyanga",
+  "watchListAll": "Zonke",
+  "watchListNew": "Uluhlu olutsha",
+  "watchListName": "Igama loluhlu",
+  "watchListRename": "Thiya kwakhona uluhlu",
+  "watchListDelete": "Cima uluhlu",
+  "watchListAddTo": "Yongeza kuluhlu",
+  "watchListEmpty": "Akukho zabelo kolu luhlu okwangoku. Cofa iqhosha loluhlu ecaleni kwesabelo ukuze usongeze."
 }

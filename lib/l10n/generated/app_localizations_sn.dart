@@ -2196,4 +2196,26 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get analystTrend => 'Maonero akashanduka sei mwedzi nemwedzi';
+
+  @override
+  String get watchListAll => 'Zvese';
+
+  @override
+  String get watchListNew => 'Rondedzero itsva';
+
+  @override
+  String get watchListName => 'Zita rerondedzero';
+
+  @override
+  String get watchListRename => 'Chinja zita rerondedzero';
+
+  @override
+  String get watchListDelete => 'Dzima rondedzero';
+
+  @override
+  String get watchListAddTo => 'Wedzera kurondedzero';
+
+  @override
+  String get watchListEmpty =>
+      'Hapana masheya murondedzero iyi parizvino. Baya bhatani rerondedzero riri padyo nesheya kuti uriwedzere.';
 }

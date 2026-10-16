@@ -2188,4 +2188,26 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get analystTrend => 'ମାସକୁ ମାସ ମତାମତ କିପରି ବଦଳିଲା';
+
+  @override
+  String get watchListAll => 'ସବୁ';
+
+  @override
+  String get watchListNew => 'ନୂଆ ତାଲିକା';
+
+  @override
+  String get watchListName => 'ତାଲିକା ନାମ';
+
+  @override
+  String get watchListRename => 'ତାଲିକାର ନାମ ବଦଳାନ୍ତୁ';
+
+  @override
+  String get watchListDelete => 'ତାଲିକା ଡିଲିଟ କରନ୍ତୁ';
+
+  @override
+  String get watchListAddTo => 'ତାଲିକାରେ ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String get watchListEmpty =>
+      'ଏହି ତାଲିକାରେ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଷ୍ଟକ ନାହିଁ। ଯୋଡ଼ିବାକୁ ଷ୍ଟକ ପାଖରେ ଥିବା ତାଲିକା ବଟନରେ ଟାପ କରନ୍ତୁ।';
 }

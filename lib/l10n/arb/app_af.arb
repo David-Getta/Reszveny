@@ -584,5 +584,12 @@
   "insiderSell": "Verkoop",
   "insiderHint": "Aankope en verkope op die ope mark deur bestuurders en direkteure in die afgelope 90 dae (SEC Form 4). Opsie-uitoefenings en aandeletoekennings word nie getel nie.",
   "insiderNone": "Geen insider-aankope of -verkope op die ope mark in die afgelope 90 dae nie.",
-  "analystTrend": "Hoe die menings maand vir maand verander het"
+  "analystTrend": "Hoe die menings maand vir maand verander het",
+  "watchListAll": "Almal",
+  "watchListNew": "Nuwe lys",
+  "watchListName": "Lysnaam",
+  "watchListRename": "Hernoem lys",
+  "watchListDelete": "Skrap lys",
+  "watchListAddTo": "Voeg by 'n lys",
+  "watchListEmpty": "Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs 'n aandeel om dit by te voeg."
 }

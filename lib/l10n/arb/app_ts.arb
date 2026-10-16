@@ -584,5 +584,12 @@
   "insiderSell": "U xavisile",
   "insiderHint": "Ku xava na ku xavisa eka makete lowu pfulekeke loku endliweke hi varhangeri na vafambisi eka masiku ya 90 lama hundzeke (SEC Form 4). Ku tirhisa tiopxeni na tixere leti nyikiweke a swi hlayiwi.",
   "insiderNone": "A ku na ku xava kumbe ku xavisa ka va le ndzeni eka makete lowu pfulekeke eka masiku ya 90 lama hundzeke.",
-  "analystTrend": "Ndlela leyi mavonelo ma cinceke ha yona n'hweti na n'hweti"
+  "analystTrend": "Ndlela leyi mavonelo ma cinceke ha yona n'hweti na n'hweti",
+  "watchListAll": "Hinkwaswo",
+  "watchListNew": "Nxaxamelo leyintshwa",
+  "watchListName": "Vito ra nxaxamelo",
+  "watchListRename": "Cinca vito ra nxaxamelo",
+  "watchListDelete": "Sula nxaxamelo",
+  "watchListAddTo": "Engetela eka nxaxamelo",
+  "watchListEmpty": "A ku si na swiavelo eka nxaxamelo leyi. Tsindzela batheni ya nxaxamelo ekusuhi ni xiavelo ku xi engetela."
 }

@@ -2191,4 +2191,26 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get analystTrend => 'بیروڕاکان چۆن مانگ بە مانگ گۆڕان';
+
+  @override
+  String get watchListAll => 'هەموو';
+
+  @override
+  String get watchListNew => 'لیستی نوێ';
+
+  @override
+  String get watchListName => 'ناوی لیست';
+
+  @override
+  String get watchListRename => 'گۆڕینی ناوی لیست';
+
+  @override
+  String get watchListDelete => 'سڕینەوەی لیست';
+
+  @override
+  String get watchListAddTo => 'زیادکردن بۆ لیستێک';
+
+  @override
+  String get watchListEmpty =>
+      'هێشتا هیچ پشکێک لەم لیستەدا نییە. بۆ زیادکردن، دوگمەی لیست لە تەنیشت پشکەکە دابگرە.';
 }

@@ -2209,4 +2209,26 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Како се менуваа мислењата од месец во месец';
+
+  @override
+  String get watchListAll => 'Сите';
+
+  @override
+  String get watchListNew => 'Нова листа';
+
+  @override
+  String get watchListName => 'Име на листата';
+
+  @override
+  String get watchListRename => 'Преименувај листа';
+
+  @override
+  String get watchListDelete => 'Избриши листа';
+
+  @override
+  String get watchListAddTo => 'Додај во листа';
+
+  @override
+  String get watchListEmpty =>
+      'Во оваа листа сè уште нема акции. Допрете го копчето за листа до акцијата за да ја додадете.';
 }

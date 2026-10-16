@@ -2195,4 +2195,26 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get analystTrend => 'Yadda ra\'ayoyi suka sauya wata-wata';
+
+  @override
+  String get watchListAll => 'Duka';
+
+  @override
+  String get watchListNew => 'Sabon jeri';
+
+  @override
+  String get watchListName => 'Sunan jeri';
+
+  @override
+  String get watchListRename => 'Sake sunan jeri';
+
+  @override
+  String get watchListDelete => 'Share jeri';
+
+  @override
+  String get watchListAddTo => 'Ƙara zuwa jeri';
+
+  @override
+  String get watchListEmpty =>
+      'Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi.';
 }

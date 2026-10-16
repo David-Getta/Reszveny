@@ -2204,4 +2204,26 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get analystTrend =>
       'Imaynatam yuyaykuna killanmanta killanman tikrarqan';
+
+  @override
+  String get watchListAll => 'Llapan';
+
+  @override
+  String get watchListNew => 'Musuq lista';
+
+  @override
+  String get watchListName => 'Listap sutin';
+
+  @override
+  String get watchListRename => 'Listap sutinta tikray';
+
+  @override
+  String get watchListDelete => 'Listata qulluy';
+
+  @override
+  String get watchListAddTo => 'Listaman yapay';
+
+  @override
+  String get watchListEmpty =>
+      'Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit\'iy.';
 }

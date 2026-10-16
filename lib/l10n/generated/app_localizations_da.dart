@@ -2189,4 +2189,26 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get analystTrend =>
       'Sådan har holdningerne ændret sig måned for måned';
+
+  @override
+  String get watchListAll => 'Alle';
+
+  @override
+  String get watchListNew => 'Ny liste';
+
+  @override
+  String get watchListName => 'Listenavn';
+
+  @override
+  String get watchListRename => 'Omdøb liste';
+
+  @override
+  String get watchListDelete => 'Slet liste';
+
+  @override
+  String get watchListAddTo => 'Føj til en liste';
+
+  @override
+  String get watchListEmpty =>
+      'Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den.';
 }

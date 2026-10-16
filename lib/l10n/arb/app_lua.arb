@@ -584,5 +584,12 @@
   "insiderSell": "Kusumbisha",
   "insiderHint": "Kusumba ne kusumbisha mu tshisalu tshidi tshibuluke kua bakokeshi ne ba-directeur mu matuku 90 adi mapite (SEC Form 4). Kuenza mudimu ne ba-option ne ba-action badi bapesha bu difutu kabiena bibala to.",
   "insiderNone": "Kakuena kusumba anyi kusumbisha kua bakokeshi mu tshisalu tshidi tshibuluke mu matuku 90 adi mapite to.",
-  "analystTrend": "Mushindu udi meji mashintuluke ngondo ne ngondo"
+  "analystTrend": "Mushindu udi meji mashintuluke ngondo ne ngondo",
+  "watchListAll": "Yonso",
+  "watchListNew": "Liste mupiamupia",
+  "watchListName": "Dîna dia liste",
+  "watchListRename": "Shintulula dîna dia liste",
+  "watchListDelete": "Umbusha liste",
+  "watchListAddTo": "Bueja mu liste",
+  "watchListEmpty": "Kakuena aksio mu liste eu to. Tuta butɔ wa liste udi pabuipi ne aksio bua kuyibueja."
 }

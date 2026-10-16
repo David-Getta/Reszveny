@@ -2231,4 +2231,26 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get analystTrend =>
       'Kako su se mišljenja mijenjala iz mjeseca u mjesec';
+
+  @override
+  String get watchListAll => 'Sve';
+
+  @override
+  String get watchListNew => 'Nova lista';
+
+  @override
+  String get watchListName => 'Naziv liste';
+
+  @override
+  String get watchListRename => 'Preimenuj listu';
+
+  @override
+  String get watchListDelete => 'Izbriši listu';
+
+  @override
+  String get watchListAddTo => 'Dodaj na listu';
+
+  @override
+  String get watchListEmpty =>
+      'Na ovoj listi još nema dionica. Dodirnite dugme liste pored dionice da je dodate.';
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Jual",
   "insiderHint": "Belian dan jualan pasaran terbuka oleh eksekutif dan pengarah dalam tempoh 90 hari lalu (SEC Form 4). Pelaksanaan opsyen dan anugerah saham tidak dikira.",
   "insiderNone": "Tiada belian atau jualan pasaran terbuka oleh orang dalam dalam tempoh 90 hari lalu.",
-  "analystTrend": "Bagaimana pandangan berubah dari bulan ke bulan"
+  "analystTrend": "Bagaimana pandangan berubah dari bulan ke bulan",
+  "watchListAll": "Semua",
+  "watchListNew": "Senarai baharu",
+  "watchListName": "Nama senarai",
+  "watchListRename": "Namakan semula senarai",
+  "watchListDelete": "Padam senarai",
+  "watchListAddTo": "Tambah ke senarai",
+  "watchListEmpty": "Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya."
 }

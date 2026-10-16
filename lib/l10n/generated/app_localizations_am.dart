@@ -2159,4 +2159,26 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get analystTrend => 'አስተያየቶች በየወሩ እንዴት እንደተለወጡ';
+
+  @override
+  String get watchListAll => 'ሁሉም';
+
+  @override
+  String get watchListNew => 'አዲስ ዝርዝር';
+
+  @override
+  String get watchListName => 'የዝርዝር ስም';
+
+  @override
+  String get watchListRename => 'ዝርዝሩን እንደገና ሰይም';
+
+  @override
+  String get watchListDelete => 'ዝርዝሩን ሰርዝ';
+
+  @override
+  String get watchListAddTo => 'ወደ ዝርዝር አክል';
+
+  @override
+  String get watchListEmpty =>
+      'በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።';
 }

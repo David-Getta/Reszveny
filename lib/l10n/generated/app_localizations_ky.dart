@@ -2193,4 +2193,26 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get analystTrend => 'Пикирлер айдан айга кантип өзгөрдү';
+
+  @override
+  String get watchListAll => 'Баары';
+
+  @override
+  String get watchListNew => 'Жаңы тизме';
+
+  @override
+  String get watchListName => 'Тизменин аталышы';
+
+  @override
+  String get watchListRename => 'Тизменин атын өзгөртүү';
+
+  @override
+  String get watchListDelete => 'Тизмени өчүрүү';
+
+  @override
+  String get watchListAddTo => 'Тизмеге кошуу';
+
+  @override
+  String get watchListEmpty =>
+      'Бул тизмеде азырынча акциялар жок. Кошуу үчүн акциянын жанындагы тизме баскычын басыңыз.';
 }

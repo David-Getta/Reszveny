@@ -2240,4 +2240,26 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get analystTrend => 'كيف تغيّرت الآراء شهرًا بعد شهر';
+
+  @override
+  String get watchListAll => 'الكل';
+
+  @override
+  String get watchListNew => 'قائمة جديدة';
+
+  @override
+  String get watchListName => 'اسم القائمة';
+
+  @override
+  String get watchListRename => 'إعادة تسمية القائمة';
+
+  @override
+  String get watchListDelete => 'حذف القائمة';
+
+  @override
+  String get watchListAddTo => 'إضافة إلى قائمة';
+
+  @override
+  String get watchListEmpty =>
+      'لا توجد أسهم في هذه القائمة بعد. اضغط على زر القائمة بجانب السهم لإضافته.';
 }

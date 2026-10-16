@@ -2183,4 +2183,26 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get analystTrend => 'איך השתנו הדעות מחודש לחודש';
+
+  @override
+  String get watchListAll => 'הכול';
+
+  @override
+  String get watchListNew => 'רשימה חדשה';
+
+  @override
+  String get watchListName => 'שם הרשימה';
+
+  @override
+  String get watchListRename => 'שינוי שם הרשימה';
+
+  @override
+  String get watchListDelete => 'מחיקת הרשימה';
+
+  @override
+  String get watchListAddTo => 'הוספה לרשימה';
+
+  @override
+  String get watchListEmpty =>
+      'אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.';
 }

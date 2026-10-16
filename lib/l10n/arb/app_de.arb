@@ -584,5 +584,12 @@
   "insiderSell": "Verkauft",
   "insiderHint": "Käufe und Verkäufe von Vorständen und Direktoren am offenen Markt in den letzten 90 Tagen (SEC Form 4). Optionsausübungen und Aktienzuteilungen werden nicht berücksichtigt.",
   "insiderNone": "Keine Insiderkäufe oder -verkäufe am offenen Markt in den letzten 90 Tagen.",
-  "analystTrend": "Wie sich die Einschätzungen Monat für Monat verändert haben"
+  "analystTrend": "Wie sich die Einschätzungen Monat für Monat verändert haben",
+  "watchListAll": "Alle",
+  "watchListNew": "Neue Liste",
+  "watchListName": "Listenname",
+  "watchListRename": "Liste umbenennen",
+  "watchListDelete": "Liste löschen",
+  "watchListAddTo": "Zu einer Liste hinzufügen",
+  "watchListEmpty": "Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen."
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Đã bán",
   "insiderHint": "Các giao dịch mua và bán trên thị trường mở của lãnh đạo và thành viên hội đồng quản trị trong 90 ngày qua (SEC Form 4). Không tính thực hiện quyền chọn và cổ phiếu thưởng.",
   "insiderNone": "Không có giao dịch mua hoặc bán nội bộ trên thị trường mở trong 90 ngày qua.",
-  "analystTrend": "Ý kiến thay đổi thế nào qua từng tháng"
+  "analystTrend": "Ý kiến thay đổi thế nào qua từng tháng",
+  "watchListAll": "Tất cả",
+  "watchListNew": "Danh sách mới",
+  "watchListName": "Tên danh sách",
+  "watchListRename": "Đổi tên danh sách",
+  "watchListDelete": "Xóa danh sách",
+  "watchListAddTo": "Thêm vào danh sách",
+  "watchListEmpty": "Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm."
 }

@@ -2154,4 +2154,26 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get analystTrend => 'ርእይቶታት ወርሒ ብወርሒ ከመይ ከም ዝተቐየሩ';
+
+  @override
+  String get watchListAll => 'ኩሉ';
+
+  @override
+  String get watchListNew => 'ሓድሽ ዝርዝር';
+
+  @override
+  String get watchListName => 'ስም ዝርዝር';
+
+  @override
+  String get watchListRename => 'ስም ዝርዝር ቀይር';
+
+  @override
+  String get watchListDelete => 'ዝርዝር ደምስስ';
+
+  @override
+  String get watchListAddTo => 'ናብ ዝርዝር ወስኽ';
+
+  @override
+  String get watchListEmpty =>
+      'ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።';
 }

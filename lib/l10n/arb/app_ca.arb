@@ -584,5 +584,12 @@
   "insiderSell": "Venut",
   "insiderHint": "Compres i vendes al mercat obert de directius i consellers en els darrers 90 dies (SEC Form 4). No es compten l'exercici d'opcions ni les concessions d'accions.",
   "insiderNone": "Cap compra ni venda d'insiders al mercat obert en els darrers 90 dies.",
-  "analystTrend": "Com han canviat les opinions mes a mes"
+  "analystTrend": "Com han canviat les opinions mes a mes",
+  "watchListAll": "Totes",
+  "watchListNew": "Nova llista",
+  "watchListName": "Nom de la llista",
+  "watchListRename": "Canviar el nom de la llista",
+  "watchListDelete": "Suprimir la llista",
+  "watchListAddTo": "Afegir a una llista",
+  "watchListEmpty": "Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d'una acció per afegir-la."
 }

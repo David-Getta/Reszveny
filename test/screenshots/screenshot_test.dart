@@ -807,6 +807,10 @@ void main() {
   testWidgets('favorites page and news on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'));
     await s.preferences.setFavorites(['AAPL', 'MSFT', 'NVDA', 'OTP']);
+    await s.preferences.addWatchList('Tech');
+    await s.preferences.addWatchList('Osztalék');
+    await s.preferences.toggleInList('Tech', 'NVDA');
+    await s.preferences.toggleInList('Tech', 'MSFT');
     await pumpApp(tester, s, const Size(430, 1000));
     final news = find.byKey(const ValueKey('home-news'));
     for (var i = 0; i < 20 && news.evaluate().isEmpty; i++) {
@@ -824,6 +828,12 @@ void main() {
     await tester.tap(all);
     await tester.pumpAndSettle();
     await _shot(tester, 'watchlist_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('watch-list-Tech')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'watchlist_list_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'watchlist_addto_phone_hu');
   });
 
   testWidgets('detail with own position', (tester) async {

@@ -2191,4 +2191,26 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get analystTrend => 'როგორ იცვლებოდა შეფასებები თვიდან თვემდე';
+
+  @override
+  String get watchListAll => 'ყველა';
+
+  @override
+  String get watchListNew => 'ახალი სია';
+
+  @override
+  String get watchListName => 'სიის სახელი';
+
+  @override
+  String get watchListRename => 'სიის გადარქმევა';
+
+  @override
+  String get watchListDelete => 'სიის წაშლა';
+
+  @override
+  String get watchListAddTo => 'სიაში დამატება';
+
+  @override
+  String get watchListEmpty =>
+      'ამ სიაში ჯერ აქციები არ არის. დასამატებლად შეეხეთ სიის ღილაკს აქციის გვერდით.';
 }

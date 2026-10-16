@@ -2188,4 +2188,26 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get analystTrend => 'Hakilinaw yɛlɛmana cogo min na kalo o kalo';
+
+  @override
+  String get watchListAll => 'A bɛɛ';
+
+  @override
+  String get watchListNew => 'Lisi kura';
+
+  @override
+  String get watchListName => 'Lisi tɔgɔ';
+
+  @override
+  String get watchListRename => 'Lisi tɔgɔ yɛlɛma';
+
+  @override
+  String get watchListDelete => 'Lisi jɔsi';
+
+  @override
+  String get watchListAddTo => 'Fara lisi kan';
+
+  @override
+  String get watchListEmpty =>
+      'Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k\'a fara a kan.';
 }

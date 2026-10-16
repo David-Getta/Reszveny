@@ -2254,4 +2254,26 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get analystTrend => 'Jak zmieniały się opinie z miesiąca na miesiąc';
+
+  @override
+  String get watchListAll => 'Wszystkie';
+
+  @override
+  String get watchListNew => 'Nowa lista';
+
+  @override
+  String get watchListName => 'Nazwa listy';
+
+  @override
+  String get watchListRename => 'Zmień nazwę listy';
+
+  @override
+  String get watchListDelete => 'Usuń listę';
+
+  @override
+  String get watchListAddTo => 'Dodaj do listy';
+
+  @override
+  String get watchListEmpty =>
+      'Na tej liście nie ma jeszcze akcji. Stuknij przycisk listy obok akcji, aby ją dodać.';
 }

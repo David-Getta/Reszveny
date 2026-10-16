@@ -584,5 +584,12 @@
   "insiderSell": "Nagbenta",
   "insiderHint": "Mga pagbili at pagbenta sa open market ng mga executive at director sa nakalipas na 90 araw (SEC Form 4). Hindi kasama ang paggamit ng option at mga share award.",
   "insiderNone": "Walang pagbili o pagbenta ng insider sa open market sa nakalipas na 90 araw.",
-  "analystTrend": "Paano nagbago ang mga pananaw bawat buwan"
+  "analystTrend": "Paano nagbago ang mga pananaw bawat buwan",
+  "watchListAll": "Lahat",
+  "watchListNew": "Bagong listahan",
+  "watchListName": "Pangalan ng listahan",
+  "watchListRename": "Palitan ang pangalan ng listahan",
+  "watchListDelete": "Burahin ang listahan",
+  "watchListAddTo": "Idagdag sa listahan",
+  "watchListEmpty": "Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito."
 }

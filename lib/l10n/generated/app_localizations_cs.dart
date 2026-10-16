@@ -2247,4 +2247,26 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get analystTrend => 'Jak se názory měnily měsíc po měsíci';
+
+  @override
+  String get watchListAll => 'Vše';
+
+  @override
+  String get watchListNew => 'Nový seznam';
+
+  @override
+  String get watchListName => 'Název seznamu';
+
+  @override
+  String get watchListRename => 'Přejmenovat seznam';
+
+  @override
+  String get watchListDelete => 'Smazat seznam';
+
+  @override
+  String get watchListAddTo => 'Přidat do seznamu';
+
+  @override
+  String get watchListEmpty =>
+      'V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní.';
 }

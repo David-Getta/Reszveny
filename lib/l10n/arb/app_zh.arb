@@ -584,5 +584,12 @@
   "insiderSell": "卖出",
   "insiderHint": "过去 90 天内高管和董事在公开市场的买入和卖出（SEC Form 4）。不包括期权行权和股票奖励。",
   "insiderNone": "过去 90 天内没有内部人在公开市场买入或卖出。",
-  "analystTrend": "观点逐月变化"
+  "analystTrend": "观点逐月变化",
+  "watchListAll": "全部",
+  "watchListNew": "新建列表",
+  "watchListName": "列表名称",
+  "watchListRename": "重命名列表",
+  "watchListDelete": "删除列表",
+  "watchListAddTo": "添加到列表",
+  "watchListEmpty": "此列表中还没有股票。点按股票旁的列表按钮即可添加。"
 }

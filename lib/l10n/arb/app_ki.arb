@@ -584,5 +584,12 @@
   "insiderSell": "Wendia",
   "insiderHint": "Ũgũri na wendia thoko-inĩ ĩhingũre wa atongoria na ataarani mĩthenya 90 ĩrĩa ĩhĩtũku (SEC Form 4). Kũhũthĩra option na hisa iria ciheanĩtwo ta kĩheo ititaragwo.",
   "insiderNone": "Gũtirĩ ũgũri kana wendia wa atongoria thoko-inĩ ĩhingũre mĩthenya 90 ĩrĩa ĩhĩtũku.",
-  "analystTrend": "Ũrĩa mawoni maagarũrũkire o mweri"
+  "analystTrend": "Ũrĩa mawoni maagarũrũkire o mweri",
+  "watchListAll": "Ciothe",
+  "watchListNew": "Orodha njerũ",
+  "watchListName": "Rĩĩtwa rĩa orodha",
+  "watchListRename": "Garũra rĩĩtwa rĩa orodha",
+  "watchListDelete": "Ehereria orodha",
+  "watchListAddTo": "Ongerera orodha-inĩ",
+  "watchListEmpty": "Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere."
 }

@@ -584,5 +584,12 @@
   "insiderSell": "Oñemu",
   "insiderHint": "Mburuvicha ha director-kuéra jejogua ha ñemu ñemuha ijurujávape ko 90 ára ohasávape (SEC Form 4). Ndojeipapái opción jeporu ha acción ojeme'ẽva.",
   "insiderNone": "Ndaipóri mburuvichakuéra jejogua ni ñemu ñemuha ijurujávape ko 90 ára ohasávape.",
-  "analystTrend": "Mbaʼéichapa oñemoambue umi temiandu jasy ha jasy"
+  "analystTrend": "Mbaʼéichapa oñemoambue umi temiandu jasy ha jasy",
+  "watchListAll": "Opavave",
+  "watchListNew": "Lista pyahu",
+  "watchListName": "Lista réra",
+  "watchListRename": "Emoambue lista réra",
+  "watchListDelete": "Embogue lista",
+  "watchListAddTo": "Embojuaju peteĩ listape",
+  "watchListEmpty": "Ndaipóri gueteri acción ko listape. Ejopy lista votõ oĩva acción ykére embojuaju hag̃ua."
 }

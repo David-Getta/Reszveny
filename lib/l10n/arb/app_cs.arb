@@ -584,5 +584,12 @@
   "insiderSell": "Prodáno",
   "insiderHint": "Nákupy a prodeje vedoucích pracovníků a členů představenstva na otevřeném trhu za posledních 90 dní (SEC Form 4). Uplatnění opcí a přidělené akcie se nezapočítávají.",
   "insiderNone": "Za posledních 90 dní žádné insiderské nákupy ani prodeje na otevřeném trhu.",
-  "analystTrend": "Jak se názory měnily měsíc po měsíci"
+  "analystTrend": "Jak se názory měnily měsíc po měsíci",
+  "watchListAll": "Vše",
+  "watchListNew": "Nový seznam",
+  "watchListName": "Název seznamu",
+  "watchListRename": "Přejmenovat seznam",
+  "watchListDelete": "Smazat seznam",
+  "watchListAddTo": "Přidat do seznamu",
+  "watchListEmpty": "V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní."
 }

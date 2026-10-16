@@ -2201,4 +2201,26 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get analystTrend => 'Endowooza bwe zakyuka buli mwezi';
+
+  @override
+  String get watchListAll => 'Byonna';
+
+  @override
+  String get watchListNew => 'Olukalala olupya';
+
+  @override
+  String get watchListName => 'Erinnya ly\'olukalala';
+
+  @override
+  String get watchListRename => 'Kyusa erinnya ly\'olukalala';
+
+  @override
+  String get watchListDelete => 'Sazaamu olukalala';
+
+  @override
+  String get watchListAddTo => 'Gattako ku lukalala';
+
+  @override
+  String get watchListEmpty =>
+      'Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly\'olukalala eriri okumpi ne sitoka okugigattako.';
 }

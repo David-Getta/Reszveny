@@ -584,5 +584,12 @@
   "insiderSell": "Didol",
   "insiderHint": "Tukon lan dodolan ing pasar terbuka dening eksekutif lan direktur sajrone 90 dina pungkasan (SEC Form 4). Panggunaan opsi lan paweh saham ora diétung.",
   "insiderNone": "Ora ana tukon utawa dodolan wong njero ing pasar terbuka sajrone 90 dina pungkasan.",
-  "analystTrend": "Kepiye panemu owah saben sasi"
+  "analystTrend": "Kepiye panemu owah saben sasi",
+  "watchListAll": "Kabeh",
+  "watchListNew": "Dhaptar anyar",
+  "watchListName": "Jeneng dhaptar",
+  "watchListRename": "Ganti jeneng dhaptar",
+  "watchListDelete": "Busak dhaptar",
+  "watchListAddTo": "Tambahake menyang dhaptar",
+  "watchListEmpty": "Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké."
 }

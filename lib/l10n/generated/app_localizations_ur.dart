@@ -2190,4 +2190,26 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get analystTrend => 'ماہ بہ ماہ آراء کیسے بدلیں';
+
+  @override
+  String get watchListAll => 'سب';
+
+  @override
+  String get watchListNew => 'نئی فہرست';
+
+  @override
+  String get watchListName => 'فہرست کا نام';
+
+  @override
+  String get watchListRename => 'فہرست کا نام بدلیں';
+
+  @override
+  String get watchListDelete => 'فہرست حذف کریں';
+
+  @override
+  String get watchListAddTo => 'فہرست میں شامل کریں';
+
+  @override
+  String get watchListEmpty =>
+      'اس فہرست میں ابھی کوئی شیئر نہیں ہے۔ شامل کرنے کے لیے شیئر کے ساتھ فہرست بٹن پر ٹیپ کریں۔';
 }

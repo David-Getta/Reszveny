@@ -2252,4 +2252,26 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get analystTrend => 'Kaip keitėsi nuomonės kas mėnesį';
+
+  @override
+  String get watchListAll => 'Visos';
+
+  @override
+  String get watchListNew => 'Naujas sąrašas';
+
+  @override
+  String get watchListName => 'Sąrašo pavadinimas';
+
+  @override
+  String get watchListRename => 'Pervadinti sąrašą';
+
+  @override
+  String get watchListDelete => 'Ištrinti sąrašą';
+
+  @override
+  String get watchListAddTo => 'Pridėti į sąrašą';
+
+  @override
+  String get watchListEmpty =>
+      'Šiame sąraše dar nėra akcijų. Bakstelėkite sąrašo mygtuką šalia akcijos, kad ją pridėtumėte.';
 }

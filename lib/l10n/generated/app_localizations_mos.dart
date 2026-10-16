@@ -2177,4 +2177,26 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get analystTrend => 'Tags rãmb sẽn tees kiuug fãa';
+
+  @override
+  String get watchListAll => 'Fãa';
+
+  @override
+  String get watchListNew => 'Liste paalga';
+
+  @override
+  String get watchListName => 'Listã yʋʋre';
+
+  @override
+  String get watchListRename => 'Toeem listã yʋʋre';
+
+  @override
+  String get watchListDelete => 'Yiis listã';
+
+  @override
+  String get watchListAddTo => 'Paas liste pʋgẽ';
+
+  @override
+  String get watchListEmpty =>
+      'Aksyõ ka be liste-kãngã pʋgẽ ye. Ningi listã butõ wã sẽn be aksyõã taobã n paas-a.';
 }

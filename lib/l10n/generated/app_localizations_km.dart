@@ -2171,4 +2171,26 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get analystTrend => 'របៀបដែលមតិបានផ្លាស់ប្តូរពីខែមួយទៅខែមួយ';
+
+  @override
+  String get watchListAll => 'ទាំងអស់';
+
+  @override
+  String get watchListNew => 'បញ្ជីថ្មី';
+
+  @override
+  String get watchListName => 'ឈ្មោះបញ្ជី';
+
+  @override
+  String get watchListRename => 'ប្ដូរឈ្មោះបញ្ជី';
+
+  @override
+  String get watchListDelete => 'លុបបញ្ជី';
+
+  @override
+  String get watchListAddTo => 'បន្ថែមទៅបញ្ជី';
+
+  @override
+  String get watchListEmpty =>
+      'មិនទាន់មានភាគហ៊ុននៅក្នុងបញ្ជីនេះទេ។ ចុចប៊ូតុងបញ្ជីនៅក្បែរភាគហ៊ុនដើម្បីបន្ថែមវា។';
 }

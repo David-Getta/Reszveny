@@ -2196,4 +2196,26 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get analystTrend => 'Hogyan változtak a vélemények hónapról hónapra';
+
+  @override
+  String get watchListAll => 'Mind';
+
+  @override
+  String get watchListNew => 'Új lista';
+
+  @override
+  String get watchListName => 'A lista neve';
+
+  @override
+  String get watchListRename => 'Lista átnevezése';
+
+  @override
+  String get watchListDelete => 'Lista törlése';
+
+  @override
+  String get watchListAddTo => 'Listához adás';
+
+  @override
+  String get watchListEmpty =>
+      'Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.';
 }

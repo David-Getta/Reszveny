@@ -584,5 +584,12 @@
   "insiderSell": "Gibaligya",
   "insiderHint": "Mga pagpalit ug pagbaligya sa open market sa mga executive ug director sulod sa miaging 90 ka adlaw (SEC Form 4). Wala giihap ang paggamit sa option ug mga share award.",
   "insiderNone": "Walay pagpalit o pagbaligya sa insider sa open market sulod sa miaging 90 ka adlaw.",
-  "analystTrend": "Giunsa pagbag-o sa mga panglantaw matag bulan"
+  "analystTrend": "Giunsa pagbag-o sa mga panglantaw matag bulan",
+  "watchListAll": "Tanan",
+  "watchListNew": "Bag-ong lista",
+  "watchListName": "Ngalan sa lista",
+  "watchListRename": "Ilisi ang ngalan sa lista",
+  "watchListDelete": "Papasa ang lista",
+  "watchListAddTo": "Idugang sa usa ka lista",
+  "watchListEmpty": "Wala pay stock niining listaha. I-tap ang buton sa lista tupad sa stock aron idugang kini."
 }

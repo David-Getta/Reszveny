@@ -584,5 +584,12 @@
   "insiderSell": "Yagurishije",
   "insiderHint": "Kugura no kugurisha ku isoko rifunguye byakozwe n'abayobozi n'abagize inama y'ubutegetsi mu minsi 90 ishize (SEC Form 4). Gukoresha uburenganzira bwo kugura (options) n'imigabane yatanzwe nk'ibihembo ntibibarwa.",
   "insiderNone": "Nta kugura cyangwa kugurisha by'abari imbere mu kigo ku isoko rifunguye mu minsi 90 ishize.",
-  "analystTrend": "Uko ibitekerezo byahindutse buri kwezi"
+  "analystTrend": "Uko ibitekerezo byahindutse buri kwezi",
+  "watchListAll": "Byose",
+  "watchListNew": "Urutonde rushya",
+  "watchListName": "Izina ry'urutonde",
+  "watchListRename": "Hindura izina ry'urutonde",
+  "watchListDelete": "Siba urutonde",
+  "watchListAddTo": "Shyira ku rutonde",
+  "watchListEmpty": "Nta migabane iri kuri uru rutonde. Kanda buto y'urutonde iri iruhande rw'umugabane kugira ngo uwongereho."
 }

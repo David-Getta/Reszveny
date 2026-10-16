@@ -2200,4 +2200,26 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get analystTrend => 'Giunsa pagbag-o sa mga panglantaw matag bulan';
+
+  @override
+  String get watchListAll => 'Tanan';
+
+  @override
+  String get watchListNew => 'Bag-ong lista';
+
+  @override
+  String get watchListName => 'Ngalan sa lista';
+
+  @override
+  String get watchListRename => 'Ilisi ang ngalan sa lista';
+
+  @override
+  String get watchListDelete => 'Papasa ang lista';
+
+  @override
+  String get watchListAddTo => 'Idugang sa usa ka lista';
+
+  @override
+  String get watchListEmpty =>
+      'Wala pay stock niining listaha. I-tap ang buton sa lista tupad sa stock aron idugang kini.';
 }

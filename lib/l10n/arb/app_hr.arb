@@ -584,5 +584,12 @@
   "insiderSell": "Prodano",
   "insiderHint": "Kupnje i prodaje na otvorenom tržištu od strane uprave i direktora u posljednjih 90 dana (SEC Form 4). Izvršenja opcija i dodjele dionica ne ubrajaju se.",
   "insiderNone": "Nema insajderskih kupnji ni prodaja na otvorenom tržištu u posljednjih 90 dana.",
-  "analystTrend": "Kako su se mišljenja mijenjala iz mjeseca u mjesec"
+  "analystTrend": "Kako su se mišljenja mijenjala iz mjeseca u mjesec",
+  "watchListAll": "Sve",
+  "watchListNew": "Novi popis",
+  "watchListName": "Naziv popisa",
+  "watchListRename": "Preimenuj popis",
+  "watchListDelete": "Izbriši popis",
+  "watchListAddTo": "Dodaj na popis",
+  "watchListEmpty": "Na ovom popisu još nema dionica. Dodirnite gumb popisa pokraj dionice da biste je dodali."
 }

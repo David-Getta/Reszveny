@@ -2192,4 +2192,26 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get analystTrend => 'Miten näkemykset muuttuivat kuukausittain';
+
+  @override
+  String get watchListAll => 'Kaikki';
+
+  @override
+  String get watchListNew => 'Uusi lista';
+
+  @override
+  String get watchListName => 'Listan nimi';
+
+  @override
+  String get watchListRename => 'Nimeä lista uudelleen';
+
+  @override
+  String get watchListDelete => 'Poista lista';
+
+  @override
+  String get watchListAddTo => 'Lisää listaan';
+
+  @override
+  String get watchListEmpty =>
+      'Tällä listalla ei ole vielä osakkeita. Lisää osake napauttamalla sen vieressä olevaa listapainiketta.';
 }

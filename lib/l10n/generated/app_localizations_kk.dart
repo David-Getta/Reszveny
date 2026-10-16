@@ -2190,4 +2190,26 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Пікірлер ай сайын қалай өзгерді';
+
+  @override
+  String get watchListAll => 'Барлығы';
+
+  @override
+  String get watchListNew => 'Жаңа тізім';
+
+  @override
+  String get watchListName => 'Тізім атауы';
+
+  @override
+  String get watchListRename => 'Тізімнің атын өзгерту';
+
+  @override
+  String get watchListDelete => 'Тізімді жою';
+
+  @override
+  String get watchListAddTo => 'Тізімге қосу';
+
+  @override
+  String get watchListEmpty =>
+      'Бұл тізімде әзірге акциялар жоқ. Қосу үшін акцияның жанындағы тізім түймесін түртіңіз.';
 }

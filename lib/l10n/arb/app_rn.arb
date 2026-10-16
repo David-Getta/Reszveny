@@ -584,5 +584,12 @@
   "insiderSell": "Yagurishije",
   "insiderHint": "Ukugura n'ukugurisha ku isoko ryuguruye kwakozwe n'abayobozi n'abagize inama y'ubutegetsi mu misi 90 iheze (SEC Form 4). Ukuranguka uburenganzira bwo kugura (options) n'imigabane yatanzwe nk'impembo ntibiharurwa.",
   "insiderNone": "Nta kugura canke kugurisha kw'abari mu kigo ku isoko ryuguruye mu misi 90 iheze.",
-  "analystTrend": "Ingene ivyiyumviro vyahindutse uko ukwezi kuje"
+  "analystTrend": "Ingene ivyiyumviro vyahindutse uko ukwezi kuje",
+  "watchListAll": "Vyose",
+  "watchListNew": "Urutonde rushasha",
+  "watchListName": "Izina ry'urutonde",
+  "watchListRename": "Hindura izina ry'urutonde",
+  "watchListDelete": "Futa urutonde",
+  "watchListAddTo": "Shira ku rutonde",
+  "watchListEmpty": "Nta migabane iri kuri uru rutonde ubu. Fyonda akabuto k'urutonde kari iruhande y'umugabane kugira uwushireko."
 }

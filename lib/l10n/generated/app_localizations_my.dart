@@ -2183,4 +2183,26 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get analystTrend => 'လအလိုက် သဘောထားများ ပြောင်းလဲပုံ';
+
+  @override
+  String get watchListAll => 'အားလုံး';
+
+  @override
+  String get watchListNew => 'စာရင်းအသစ်';
+
+  @override
+  String get watchListName => 'စာရင်းအမည်';
+
+  @override
+  String get watchListRename => 'စာရင်းအမည်ပြောင်းရန်';
+
+  @override
+  String get watchListDelete => 'စာရင်းဖျက်ရန်';
+
+  @override
+  String get watchListAddTo => 'စာရင်းသို့ ထည့်ရန်';
+
+  @override
+  String get watchListEmpty =>
+      'ဤစာရင်းတွင် စတော့ မရှိသေးပါ။ ထည့်ရန် စတော့ဘေးရှိ စာရင်းခလုတ်ကို တို့ပါ။';
 }

@@ -2251,4 +2251,26 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ako sa názory menili mesiac po mesiaci';
+
+  @override
+  String get watchListAll => 'Všetky';
+
+  @override
+  String get watchListNew => 'Nový zoznam';
+
+  @override
+  String get watchListName => 'Názov zoznamu';
+
+  @override
+  String get watchListRename => 'Premenovať zoznam';
+
+  @override
+  String get watchListDelete => 'Odstrániť zoznam';
+
+  @override
+  String get watchListAddTo => 'Pridať do zoznamu';
+
+  @override
+  String get watchListEmpty =>
+      'V tomto zozname zatiaľ nie sú žiadne akcie. Akciu pridáte ťuknutím na tlačidlo zoznamu vedľa nej.';
 }

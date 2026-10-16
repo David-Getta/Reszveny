@@ -584,5 +584,12 @@
   "insiderSell": "Jaay na",
   "insiderHint": "Jënd ak jaay ci marse bu ubbeeku yi njiit yi ak direktëer yi def ci 90 fan yu mujj yi (SEC Form 4). Jëfandikoo opsiyoŋ ak aksiyoŋ yu ñu jox bokkul ci.",
   "insiderNone": "Amul benn jënd walla jaay bu ñi ci biir def ci marse bu ubbeeku ci 90 fan yu mujj yi.",
-  "analystTrend": "Naka la xalaat yi soppeekoo weer ak weer"
+  "analystTrend": "Naka la xalaat yi soppeekoo weer ak weer",
+  "watchListAll": "Yépp",
+  "watchListNew": "Limm bu bees",
+  "watchListName": "Turu limm bi",
+  "watchListRename": "Soppi turu limm bi",
+  "watchListDelete": "Far limm bi",
+  "watchListAddTo": "Yokk ci limm",
+  "watchListEmpty": "Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko."
 }

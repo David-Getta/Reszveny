@@ -584,5 +584,12 @@
   "insiderSell": "Uthengisile",
   "insiderHint": "Ukuthenga nokuthengisa emakethe evulekile okwenziwe yizikhulu nabaqondisi ezinsukwini ezingu-90 ezedlule (SEC Form 4). Ukusetshenziswa kwezinketho (options) namasheya anikezwayo akubalwa.",
   "insiderNone": "Akukho kuthenga noma ukuthengisa kwabangaphakathi emakethe evulekile ezinsukwini ezingu-90 ezedlule.",
-  "analystTrend": "Indlela imibono eshintshe ngayo inyanga nenyanga"
+  "analystTrend": "Indlela imibono eshintshe ngayo inyanga nenyanga",
+  "watchListAll": "Konke",
+  "watchListNew": "Uhlu olusha",
+  "watchListName": "Igama lohlu",
+  "watchListRename": "Qamba kabusha uhlu",
+  "watchListDelete": "Susa uhlu",
+  "watchListAddTo": "Engeza ohlwini",
+  "watchListEmpty": "Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze."
 }

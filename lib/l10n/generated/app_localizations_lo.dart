@@ -2165,4 +2165,26 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get analystTrend => 'ຄວາມເຫັນປ່ຽນແປງແນວໃດໃນແຕ່ລະເດືອນ';
+
+  @override
+  String get watchListAll => 'ທັງໝົດ';
+
+  @override
+  String get watchListNew => 'ລາຍການໃໝ່';
+
+  @override
+  String get watchListName => 'ຊື່ລາຍການ';
+
+  @override
+  String get watchListRename => 'ປ່ຽນຊື່ລາຍການ';
+
+  @override
+  String get watchListDelete => 'ລຶບລາຍການ';
+
+  @override
+  String get watchListAddTo => 'ເພີ່ມໃສ່ລາຍການ';
+
+  @override
+  String get watchListEmpty =>
+      'ຍັງບໍ່ມີຫຸ້ນໃນລາຍການນີ້. ແຕະປຸ່ມລາຍການຂ້າງຫຸ້ນເພື່ອເພີ່ມ.';
 }

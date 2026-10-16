@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/features/sync/sync_service.dart';
 import 'package:reszveny/features/home/watchlist_page.dart';
 
 import 'app_widget_test.dart' show services;
@@ -72,5 +74,101 @@ void main() {
     await gesture.up();
     await tester.pumpAndSettle();
     expect(s.preferences.favorites.first, 'OTP');
+  });
+
+  test('own lists: names unique (any case), adding a stock also makes it a favorite, restart keeps them', () async {
+    final p = AppPreferences(favorites: const ['MSFT']);
+    expect(await p.addWatchList(' Tech '), isTrue);
+    expect(await p.addWatchList('tech'), isFalse);
+    expect(await p.addWatchList(''), isFalse);
+    await p.toggleInList('Tech', 'nvda');
+    expect(p.watchLists.single.symbols, ['NVDA']);
+    expect(p.favorites, ['NVDA', 'MSFT']);
+    expect(p.listsOf('NVDA'), ['Tech']);
+    expect(await p.renameWatchList('Tech', 'Chips'), isTrue);
+    final loaded = await AppPreferences.load();
+    expect(loaded.watchLists.single.name, 'Chips');
+    expect(loaded.watchLists.single.symbols, ['NVDA']);
+    await loaded.toggleInList('Chips', 'NVDA');
+    expect(loaded.watchLists.single.symbols, isEmpty);
+    expect(loaded.favorites, contains('NVDA'), reason: 'leaving a list keeps the favorite');
+    await loaded.removeWatchList('chips');
+    expect(loaded.watchLists, isEmpty);
+  });
+
+  test('sync: lists merged by name, symbols united, local first', () {
+    final merged = SyncService.merge(
+      {
+        'watch_lists': [
+          {
+            'name': 'Tech',
+            'symbols': ['AAPL'],
+          },
+        ],
+      },
+      {
+        'watch_lists': [
+          {
+            'name': 'tech',
+            'symbols': ['NVDA', 'AAPL'],
+          },
+          {
+            'name': 'Dividend',
+            'symbols': ['KO'],
+          },
+        ],
+      },
+    );
+    expect(merged['watch_lists'], [
+      {
+        'name': 'Tech',
+        'symbols': ['AAPL', 'NVDA'],
+      },
+      {
+        'name': 'Dividend',
+        'symbols': ['KO'],
+      },
+    ]);
+  });
+
+  testWidgets('own lists on the favorites page: create one, add a stock, filter, remove from the list', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.preferences.setFavorites(['MSFT', 'AAPL', 'NVDA']);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+
+    // A részvény melletti gombbal: új lista, benne a részvénnyel.
+    await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-in-new')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('watch-list-name')), 'Chips');
+    await tester.tap(find.byKey(const ValueKey('watch-list-ok')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.watchLists.single.symbols, ['NVDA']);
+
+    // Szűrés a listára: csak az NVDA látszik; elhúzva csak a listáról kerül le.
+    await tester.tap(find.byKey(const ValueKey('watch-list-Chips')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('watch-NVDA')), findsOneWidget);
+    expect(find.byKey(const ValueKey('watch-MSFT')), findsNothing);
+    await tester.drag(find.byKey(const ValueKey('watch-NVDA')), const Offset(-600, 0));
+    await tester.pumpAndSettle();
+    expect(s.preferences.watchLists.single.symbols, isEmpty);
+    expect(s.preferences.favorites, contains('NVDA'));
+    expect(find.text('No stocks in this list yet. Tap the list button next to a stock to add it.'), findsOneWidget);
+
+    // Átnevezés és törlés a menüből.
+    await tester.tap(find.byKey(const ValueKey('watch-list-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-list-delete')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.watchLists, isEmpty);
+    expect(find.byKey(const ValueKey('watch-MSFT')), findsOneWidget);
   });
 }

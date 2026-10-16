@@ -584,5 +584,12 @@
   "insiderSell": "Rekisitse",
   "insiderHint": "Ditheko le dithekiso mmarakeng o bulehileng tse entsweng ke baokamedi le batsamaisi matsatsing a 90 a fetileng (SEC Form 4). Tshebediso ya dikgetho (options) le dishere tse fanweng ha di balwe.",
   "insiderNone": "Ha ho ditheko kapa dithekiso tsa ba ka hare mmarakeng o bulehileng matsatsing a 90 a fetileng.",
-  "analystTrend": "Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi"
+  "analystTrend": "Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi",
+  "watchListAll": "Tsohle",
+  "watchListNew": "Lenane le letjha",
+  "watchListName": "Lebitso la lenane",
+  "watchListRename": "Fetola lebitso la lenane",
+  "watchListDelete": "Hlakola lenane",
+  "watchListAddTo": "Kenya lenaneng",
+  "watchListEmpty": "Ha ho na ditoko lenaneng lena hajwale. Tobetsa konopo ya lenane pela setoko ho se kenya."
 }

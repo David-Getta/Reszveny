@@ -584,5 +584,12 @@
   "insiderSell": "Rantikurqan",
   "insiderHint": "Kamachiqkunapa umalliqkunapawan kichasqa qhatupi rantisqankuna rantikusqankunapas qhipa 90 p'unchawkunapi (SEC Form 4). Opcionkunata llamk'achiy, qusqa accionkunapas mana yupasqachu.",
   "insiderNone": "Qhipa 90 p'unchawkunapi kichasqa qhatupi ukhupi runakunapa mana rantiynin nitaq rantikuynin kanchu.",
-  "analystTrend": "Imaynatam yuyaykuna killanmanta killanman tikrarqan"
+  "analystTrend": "Imaynatam yuyaykuna killanmanta killanman tikrarqan",
+  "watchListAll": "Llapan",
+  "watchListNew": "Musuq lista",
+  "watchListName": "Listap sutin",
+  "watchListRename": "Listap sutinta tikray",
+  "watchListDelete": "Listata qulluy",
+  "watchListAddTo": "Listaman yapay",
+  "watchListEmpty": "Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit'iy."
 }

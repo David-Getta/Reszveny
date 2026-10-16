@@ -584,5 +584,12 @@
   "insiderSell": "Inlako",
   "insiderHint": "Dagiti gatang ken lako iti open market dagiti executive ken director iti napalabas a 90 nga aldaw (SEC Form 4). Saan a mabilang ti panangusar iti option ken dagiti share award.",
   "insiderNone": "Awan ti gatang wenno lako ti insider iti open market iti napalabas a 90 nga aldaw.",
-  "analystTrend": "No kasano a nagbaliw dagiti panangmatmat iti binulan"
+  "analystTrend": "No kasano a nagbaliw dagiti panangmatmat iti binulan",
+  "watchListAll": "Amin",
+  "watchListNew": "Baro a listaan",
+  "watchListName": "Nagan ti listaan",
+  "watchListRename": "Sukatan ti nagan ti listaan",
+  "watchListDelete": "Ikkaten ti listaan",
+  "watchListAddTo": "Inayon iti listaan",
+  "watchListEmpty": "Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta."
 }

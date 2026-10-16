@@ -2203,4 +2203,26 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get analystTrend =>
       'Wie sich die Einschätzungen Monat für Monat verändert haben';
+
+  @override
+  String get watchListAll => 'Alle';
+
+  @override
+  String get watchListNew => 'Neue Liste';
+
+  @override
+  String get watchListName => 'Listenname';
+
+  @override
+  String get watchListRename => 'Liste umbenennen';
+
+  @override
+  String get watchListDelete => 'Liste löschen';
+
+  @override
+  String get watchListAddTo => 'Zu einer Liste hinzufügen';
+
+  @override
+  String get watchListEmpty =>
+      'Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen.';
 }

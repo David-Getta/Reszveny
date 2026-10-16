@@ -584,5 +584,12 @@
   "insiderSell": "Edzra",
   "insiderHint": "Akpa siwo dɔwɔƒea ƒe kplɔlawo kple dzikpɔlawo ƒle alo dzra le asi me le ŋkeke 90 siwo va yi me (SEC Form 4). Míexlẽ option zazã kple akpa siwo wona wo abe nunana ene o.",
   "insiderNone": "Kplɔlawo meƒle alo dzra akpa aɖeke le asi me le ŋkeke 90 siwo va yi me o.",
-  "analystTrend": "Alesi susuwo trɔ le ɣleti sia ɣleti me"
+  "analystTrend": "Alesi susuwo trɔ le ɣleti sia ɣleti me",
+  "watchListAll": "Wo katã",
+  "watchListNew": "Xexlẽdzesi yeye",
+  "watchListName": "Xexlẽdzesia ƒe ŋkɔ",
+  "watchListRename": "Trɔ xexlẽdzesia ƒe ŋkɔ",
+  "watchListDelete": "Tutu xexlẽdzesia ɖa",
+  "watchListAddTo": "Tsɔe kpe ɖe xexlẽdzesi aɖe ŋu",
+  "watchListEmpty": "Sitɔk aɖeke mele xexlẽdzesi sia me haɖe o. Zi xexlẽdzesi ƒe dzesi si le sitɔk aɖe xa be nàtsɔe akpe ɖe eŋu."
 }

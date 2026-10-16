@@ -584,5 +584,12 @@
   "insiderSell": "Tɔnee",
   "insiderHint": "Adwumapanyinfo ne akwankyerɛfo nkyɛfa a wɔtɔɔ ne wɔtɔnee wɔ dwa so nnafua 90 a atwam yi mu (SEC Form 4). Yɛnkan option a wɔde dii dwuma ne nkyɛfa a wɔde maa wɔn akyɛde.",
   "insiderNone": "Adwumapanyinfo ntɔɔ anaa wɔntɔnee nkyɛfa biara wɔ dwa so nnafua 90 a atwam yi mu.",
-  "analystTrend": "Sɛnea adwene sesaa ɔsram biara"
+  "analystTrend": "Sɛnea adwene sesaa ɔsram biara",
+  "watchListAll": "Ne nyinaa",
+  "watchListNew": "Nhyehyɛe foforo",
+  "watchListName": "Nhyehyɛe no din",
+  "watchListRename": "Sesa nhyehyɛe no din",
+  "watchListDelete": "Yi nhyehyɛe no fi hɔ",
+  "watchListAddTo": "Fa ka nhyehyɛe bi ho",
+  "watchListEmpty": "Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho."
 }

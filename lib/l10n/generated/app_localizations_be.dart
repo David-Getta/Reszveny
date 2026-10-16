@@ -2250,4 +2250,26 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get analystTrend => 'Як змяняліся меркаванні месяц за месяцам';
+
+  @override
+  String get watchListAll => 'Усе';
+
+  @override
+  String get watchListNew => 'Новы спіс';
+
+  @override
+  String get watchListName => 'Назва спіса';
+
+  @override
+  String get watchListRename => 'Перайменаваць спіс';
+
+  @override
+  String get watchListDelete => 'Выдаліць спіс';
+
+  @override
+  String get watchListAddTo => 'Дадаць у спіс';
+
+  @override
+  String get watchListEmpty =>
+      'У гэтым спісе пакуль няма акцый. Націсніце кнопку спіса побач з акцыяй, каб дадаць яе.';
 }

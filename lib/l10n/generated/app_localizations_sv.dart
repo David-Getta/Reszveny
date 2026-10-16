@@ -2191,4 +2191,26 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get analystTrend => 'Hur åsikterna har ändrats månad för månad';
+
+  @override
+  String get watchListAll => 'Alla';
+
+  @override
+  String get watchListNew => 'Ny lista';
+
+  @override
+  String get watchListName => 'Listnamn';
+
+  @override
+  String get watchListRename => 'Byt namn på listan';
+
+  @override
+  String get watchListDelete => 'Ta bort listan';
+
+  @override
+  String get watchListAddTo => 'Lägg till i en lista';
+
+  @override
+  String get watchListEmpty =>
+      'Inga aktier i den här listan ännu. Tryck på listknappen bredvid en aktie för att lägga till den.';
 }

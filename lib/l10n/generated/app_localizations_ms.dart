@@ -2195,4 +2195,26 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get analystTrend => 'Bagaimana pandangan berubah dari bulan ke bulan';
+
+  @override
+  String get watchListAll => 'Semua';
+
+  @override
+  String get watchListNew => 'Senarai baharu';
+
+  @override
+  String get watchListName => 'Nama senarai';
+
+  @override
+  String get watchListRename => 'Namakan semula senarai';
+
+  @override
+  String get watchListDelete => 'Padam senarai';
+
+  @override
+  String get watchListAddTo => 'Tambah ke senarai';
+
+  @override
+  String get watchListEmpty =>
+      'Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya.';
 }

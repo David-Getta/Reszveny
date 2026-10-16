@@ -584,5 +584,12 @@
   "insiderSell": "Yenza",
   "insiderHint": "Aɣ d uzenzi deg ssuq yeldin sɣur imdebbren d yinemhalen deg 90 n wussan ineggura (SEC Form 4). Aseqdec n tixtiṛiyin d yiksyunen yettunefken ur ttwaḥesben ara.",
   "insiderNone": "Ulac aɣ neɣ azenzi n yimdebbren deg ssuq yeldin deg 90 n wussan ineggura.",
-  "analystTrend": "Amek i beddlent tmuɣliwin seg wayyur ɣer wayyur"
+  "analystTrend": "Amek i beddlent tmuɣliwin seg wayyur ɣer wayyur",
+  "watchListAll": "Akk",
+  "watchListNew": "Tabdart tamaynut",
+  "watchListName": "Isem n tebdart",
+  "watchListRename": "Snifel isem n tebdart",
+  "watchListDelete": "Kkes tabdart",
+  "watchListAddTo": "Rnu ɣer tebdart",
+  "watchListEmpty": "Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ."
 }

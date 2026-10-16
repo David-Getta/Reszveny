@@ -2199,4 +2199,26 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get analystTrend => 'Uko ibitekerezo byahindutse buri kwezi';
+
+  @override
+  String get watchListAll => 'Byose';
+
+  @override
+  String get watchListNew => 'Urutonde rushya';
+
+  @override
+  String get watchListName => 'Izina ry\'urutonde';
+
+  @override
+  String get watchListRename => 'Hindura izina ry\'urutonde';
+
+  @override
+  String get watchListDelete => 'Siba urutonde';
+
+  @override
+  String get watchListAddTo => 'Shyira ku rutonde';
+
+  @override
+  String get watchListEmpty =>
+      'Nta migabane iri kuri uru rutonde. Kanda buto y\'urutonde iri iruhande rw\'umugabane kugira ngo uwongereho.';
 }

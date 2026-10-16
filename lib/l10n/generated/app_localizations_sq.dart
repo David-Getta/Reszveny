@@ -2197,4 +2197,26 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get analystTrend => 'Si ndryshuan opinionet muaj pas muaji';
+
+  @override
+  String get watchListAll => 'Të gjitha';
+
+  @override
+  String get watchListNew => 'Listë e re';
+
+  @override
+  String get watchListName => 'Emri i listës';
+
+  @override
+  String get watchListRename => 'Riemërto listën';
+
+  @override
+  String get watchListDelete => 'Fshi listën';
+
+  @override
+  String get watchListAddTo => 'Shto në listë';
+
+  @override
+  String get watchListEmpty =>
+      'Ende nuk ka aksione në këtë listë. Prek butonin e listës pranë një aksioni për ta shtuar.';
 }

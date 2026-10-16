@@ -2199,4 +2199,26 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get analystTrend => 'Akkaataa yaadni ji\'a ji\'aan jijjiirame';
+
+  @override
+  String get watchListAll => 'Hunda';
+
+  @override
+  String get watchListNew => 'Tarree haaraa';
+
+  @override
+  String get watchListName => 'Maqaa tarree';
+
+  @override
+  String get watchListRename => 'Maqaa tarree jijjiiri';
+
+  @override
+  String get watchListDelete => 'Tarree haqi';
+
+  @override
+  String get watchListAddTo => 'Tarreetti dabali';
+
+  @override
+  String get watchListEmpty =>
+      'Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi.';
 }

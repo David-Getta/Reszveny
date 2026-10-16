@@ -584,5 +584,12 @@
   "insiderSell": "매도",
   "insiderHint": "최근 90일간 임원 및 이사의 공개 시장 매수·매도 (SEC Form 4). 스톡옵션 행사와 주식 보상은 포함되지 않습니다.",
   "insiderNone": "최근 90일간 공개 시장에서의 내부자 매수 또는 매도가 없습니다.",
-  "analystTrend": "월별 의견 변화"
+  "analystTrend": "월별 의견 변화",
+  "watchListAll": "전체",
+  "watchListNew": "새 목록",
+  "watchListName": "목록 이름",
+  "watchListRename": "목록 이름 변경",
+  "watchListDelete": "목록 삭제",
+  "watchListAddTo": "목록에 추가",
+  "watchListEmpty": "이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요."
 }

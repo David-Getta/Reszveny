@@ -2193,4 +2193,26 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get analystTrend => 'پىكىرلەرنىڭ ئايمۇئاي ئۆزگىرىشى';
+
+  @override
+  String get watchListAll => 'ھەممىسى';
+
+  @override
+  String get watchListNew => 'يېڭى تىزىملىك';
+
+  @override
+  String get watchListName => 'تىزىملىك نامى';
+
+  @override
+  String get watchListRename => 'تىزىملىك نامىنى ئۆزگەرتىش';
+
+  @override
+  String get watchListDelete => 'تىزىملىكنى ئۆچۈرۈش';
+
+  @override
+  String get watchListAddTo => 'تىزىملىككە قوشۇش';
+
+  @override
+  String get watchListEmpty =>
+      'بۇ تىزىملىكتە تېخى پاي چېكى يوق. قوشۇش ئۈچۈن پاي چېكىنىڭ يېنىدىكى تىزىملىك كۇنۇپكىسىنى چېكىڭ.';
 }

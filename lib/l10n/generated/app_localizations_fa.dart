@@ -2187,4 +2187,26 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get analystTrend => 'تغییر دیدگاه‌ها ماه به ماه';
+
+  @override
+  String get watchListAll => 'همه';
+
+  @override
+  String get watchListNew => 'فهرست جدید';
+
+  @override
+  String get watchListName => 'نام فهرست';
+
+  @override
+  String get watchListRename => 'تغییر نام فهرست';
+
+  @override
+  String get watchListDelete => 'حذف فهرست';
+
+  @override
+  String get watchListAddTo => 'افزودن به فهرست';
+
+  @override
+  String get watchListEmpty =>
+      'هنوز سهمی در این فهرست نیست. برای افزودن، روی دکمهٔ فهرست کنار سهم بزنید.';
 }

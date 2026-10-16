@@ -584,5 +584,12 @@
   "insiderSell": "Sattı",
   "insiderHint": "Son 90 günde yöneticiler ve yönetim kurulu üyelerinin açık piyasada yaptığı alım ve satımlar (SEC Form 4). Opsiyon kullanımları ve hisse ödülleri sayılmaz.",
   "insiderNone": "Son 90 günde açık piyasada içeriden alım veya satım yok.",
-  "analystTrend": "Görüşlerin aydan aya değişimi"
+  "analystTrend": "Görüşlerin aydan aya değişimi",
+  "watchListAll": "Tümü",
+  "watchListNew": "Yeni liste",
+  "watchListName": "Liste adı",
+  "watchListRename": "Listeyi yeniden adlandır",
+  "watchListDelete": "Listeyi sil",
+  "watchListAddTo": "Listeye ekle",
+  "watchListEmpty": "Bu listede henüz hisse yok. Eklemek için hissenin yanındaki liste düğmesine dokun."
 }

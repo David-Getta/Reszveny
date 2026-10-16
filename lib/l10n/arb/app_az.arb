@@ -584,5 +584,12 @@
   "insiderSell": "Satılıb",
   "insiderHint": "Son 90 gündə rəhbərlər və direktorlar tərəfindən açıq bazarda edilmiş alış və satışlar (SEC Form 4). Opsionların icrası və səhm mükafatları nəzərə alınmır.",
   "insiderNone": "Son 90 gündə açıq bazarda insayder alışı və ya satışı olmayıb.",
-  "analystTrend": "Rəylər aydan-aya necə dəyişdi"
+  "analystTrend": "Rəylər aydan-aya necə dəyişdi",
+  "watchListAll": "Hamısı",
+  "watchListNew": "Yeni siyahı",
+  "watchListName": "Siyahı adı",
+  "watchListRename": "Siyahının adını dəyiş",
+  "watchListDelete": "Siyahını sil",
+  "watchListAddTo": "Siyahıya əlavə et",
+  "watchListEmpty": "Bu siyahıda hələ səhm yoxdur. Əlavə etmək üçün səhmin yanındakı siyahı düyməsinə toxunun."
 }

@@ -2184,4 +2184,26 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ý kiến thay đổi thế nào qua từng tháng';
+
+  @override
+  String get watchListAll => 'Tất cả';
+
+  @override
+  String get watchListNew => 'Danh sách mới';
+
+  @override
+  String get watchListName => 'Tên danh sách';
+
+  @override
+  String get watchListRename => 'Đổi tên danh sách';
+
+  @override
+  String get watchListDelete => 'Xóa danh sách';
+
+  @override
+  String get watchListAddTo => 'Thêm vào danh sách';
+
+  @override
+  String get watchListEmpty =>
+      'Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.';
 }

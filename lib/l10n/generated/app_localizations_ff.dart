@@ -2185,4 +2185,26 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get analystTrend => 'No miijooji ndi waylitorii lewru kala';
+
+  @override
+  String get watchListAll => 'Fof';
+
+  @override
+  String get watchListNew => 'Doggol kesol';
+
+  @override
+  String get watchListName => 'Innde doggol';
+
+  @override
+  String get watchListRename => 'Waylu innde doggol';
+
+  @override
+  String get watchListDelete => 'Momtu doggol';
+
+  @override
+  String get watchListAddTo => 'Ɓeydu e doggol';
+
+  @override
+  String get watchListEmpty =>
+      'Alaa hay sitok e ndee doggol tawo. Ñoƒƒu butoŋ doggol takko sitok ngam ɓeydude ɗum.';
 }

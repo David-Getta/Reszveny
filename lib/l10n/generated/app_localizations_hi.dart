@@ -2189,4 +2189,26 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get analystTrend => 'महीने-दर-महीने राय कैसे बदली';
+
+  @override
+  String get watchListAll => 'सभी';
+
+  @override
+  String get watchListNew => 'नई सूची';
+
+  @override
+  String get watchListName => 'सूची का नाम';
+
+  @override
+  String get watchListRename => 'सूची का नाम बदलें';
+
+  @override
+  String get watchListDelete => 'सूची हटाएँ';
+
+  @override
+  String get watchListAddTo => 'सूची में जोड़ें';
+
+  @override
+  String get watchListEmpty =>
+      'इस सूची में अभी कोई शेयर नहीं है। जोड़ने के लिए शेयर के पास वाले सूची बटन पर टैप करें।';
 }

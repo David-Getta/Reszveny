@@ -2189,4 +2189,26 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get analystTrend => 'महिनैपिच्छे राय कसरी बदलियो';
+
+  @override
+  String get watchListAll => 'सबै';
+
+  @override
+  String get watchListNew => 'नयाँ सूची';
+
+  @override
+  String get watchListName => 'सूचीको नाम';
+
+  @override
+  String get watchListRename => 'सूचीको नाम बदल्नुहोस्';
+
+  @override
+  String get watchListDelete => 'सूची मेटाउनुहोस्';
+
+  @override
+  String get watchListAddTo => 'सूचीमा थप्नुहोस्';
+
+  @override
+  String get watchListEmpty =>
+      'यो सूचीमा अझै कुनै सेयर छैन। थप्न सेयरको छेउको सूची बटन ट्याप गर्नुहोस्।';
 }

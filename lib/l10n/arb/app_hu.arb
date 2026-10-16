@@ -584,5 +584,12 @@
   "insiderSell": "Eladott",
   "insiderHint": "A vezetők és az igazgatósági tagok nyílt piaci vételei és eladásai az elmúlt 90 napban (SEC Form 4). Az opciólehívás és a részvényjuttatás nem számít bele.",
   "insiderNone": "Az elmúlt 90 napban nem volt bennfentes vétel vagy eladás a nyílt piacon.",
-  "analystTrend": "Hogyan változtak a vélemények hónapról hónapra"
+  "analystTrend": "Hogyan változtak a vélemények hónapról hónapra",
+  "watchListAll": "Mind",
+  "watchListNew": "Új lista",
+  "watchListName": "A lista neve",
+  "watchListRename": "Lista átnevezése",
+  "watchListDelete": "Lista törlése",
+  "watchListAddTo": "Listához adás",
+  "watchListEmpty": "Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel."
 }

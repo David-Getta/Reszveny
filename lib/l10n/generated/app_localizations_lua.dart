@@ -2197,4 +2197,26 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get analystTrend => 'Mushindu udi meji mashintuluke ngondo ne ngondo';
+
+  @override
+  String get watchListAll => 'Yonso';
+
+  @override
+  String get watchListNew => 'Liste mupiamupia';
+
+  @override
+  String get watchListName => 'Dîna dia liste';
+
+  @override
+  String get watchListRename => 'Shintulula dîna dia liste';
+
+  @override
+  String get watchListDelete => 'Umbusha liste';
+
+  @override
+  String get watchListAddTo => 'Bueja mu liste';
+
+  @override
+  String get watchListEmpty =>
+      'Kakuena aksio mu liste eu to. Tuta butɔ wa liste udi pabuipi ne aksio bua kuyibueja.';
 }

@@ -2204,4 +2204,26 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get analystTrend =>
       'Kafa maikutlo a fetogileng ka teng kgwedi le kgwedi';
+
+  @override
+  String get watchListAll => 'Tsotlhe';
+
+  @override
+  String get watchListNew => 'Lenaane le lesha';
+
+  @override
+  String get watchListName => 'Leina la lenaane';
+
+  @override
+  String get watchListRename => 'Fetola leina la lenaane';
+
+  @override
+  String get watchListDelete => 'Phimola lenaane';
+
+  @override
+  String get watchListAddTo => 'Tsenya mo lenaaneng';
+
+  @override
+  String get watchListEmpty =>
+      'Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya.';
 }

@@ -2184,4 +2184,26 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get analystTrend => 'मास-दर-मास राय कोना बदलल';
+
+  @override
+  String get watchListAll => 'सभ';
+
+  @override
+  String get watchListNew => 'नव सूची';
+
+  @override
+  String get watchListName => 'सूचीक नाम';
+
+  @override
+  String get watchListRename => 'सूचीक नाम बदलू';
+
+  @override
+  String get watchListDelete => 'सूची मेटाउ';
+
+  @override
+  String get watchListAddTo => 'सूचीमे जोड़ू';
+
+  @override
+  String get watchListEmpty =>
+      'एहि सूचीमे एखन धरि कोनो शेयर नहि अछि। जोड़बाक लेल शेयरक बगलक सूची बटन दबाउ।';
 }

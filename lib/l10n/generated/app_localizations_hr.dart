@@ -2232,4 +2232,26 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get analystTrend =>
       'Kako su se mišljenja mijenjala iz mjeseca u mjesec';
+
+  @override
+  String get watchListAll => 'Sve';
+
+  @override
+  String get watchListNew => 'Novi popis';
+
+  @override
+  String get watchListName => 'Naziv popisa';
+
+  @override
+  String get watchListRename => 'Preimenuj popis';
+
+  @override
+  String get watchListDelete => 'Izbriši popis';
+
+  @override
+  String get watchListAddTo => 'Dodaj na popis';
+
+  @override
+  String get watchListEmpty =>
+      'Na ovom popisu još nema dionica. Dodirnite gumb popisa pokraj dionice da biste je dodali.';
 }

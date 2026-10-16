@@ -2255,4 +2255,26 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Як змінювалися думки місяць за місяцем';
+
+  @override
+  String get watchListAll => 'Усі';
+
+  @override
+  String get watchListNew => 'Новий список';
+
+  @override
+  String get watchListName => 'Назва списку';
+
+  @override
+  String get watchListRename => 'Перейменувати список';
+
+  @override
+  String get watchListDelete => 'Видалити список';
+
+  @override
+  String get watchListAddTo => 'Додати до списку';
+
+  @override
+  String get watchListEmpty =>
+      'У цьому списку ще немає акцій. Торкніться кнопки списку поруч з акцією, щоб додати її.';
 }

@@ -2200,4 +2200,26 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get analystTrend => 'மாதந்தோறும் கருத்துகள் எப்படி மாறின';
+
+  @override
+  String get watchListAll => 'அனைத்தும்';
+
+  @override
+  String get watchListNew => 'புதிய பட்டியல்';
+
+  @override
+  String get watchListName => 'பட்டியல் பெயர்';
+
+  @override
+  String get watchListRename => 'பட்டியலின் பெயரை மாற்று';
+
+  @override
+  String get watchListDelete => 'பட்டியலை நீக்கு';
+
+  @override
+  String get watchListAddTo => 'பட்டியலில் சேர்';
+
+  @override
+  String get watchListEmpty =>
+      'இந்தப் பட்டியலில் இன்னும் பங்குகள் இல்லை. சேர்க்க, பங்கின் அருகிலுள்ள பட்டியல் பொத்தானைத் தட்டவும்.';
 }

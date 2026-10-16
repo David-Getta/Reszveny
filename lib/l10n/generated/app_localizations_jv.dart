@@ -2192,4 +2192,26 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get analystTrend => 'Kepiye panemu owah saben sasi';
+
+  @override
+  String get watchListAll => 'Kabeh';
+
+  @override
+  String get watchListNew => 'Dhaptar anyar';
+
+  @override
+  String get watchListName => 'Jeneng dhaptar';
+
+  @override
+  String get watchListRename => 'Ganti jeneng dhaptar';
+
+  @override
+  String get watchListDelete => 'Busak dhaptar';
+
+  @override
+  String get watchListAddTo => 'Tambahake menyang dhaptar';
+
+  @override
+  String get watchListEmpty =>
+      'Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké.';
 }

@@ -2197,4 +2197,26 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get analystTrend => 'Sida aragtiyuhu isu beddeleen bil ka bil';
+
+  @override
+  String get watchListAll => 'Dhammaan';
+
+  @override
+  String get watchListNew => 'Liis cusub';
+
+  @override
+  String get watchListName => 'Magaca liiska';
+
+  @override
+  String get watchListRename => 'Beddel magaca liiska';
+
+  @override
+  String get watchListDelete => 'Tirtir liiska';
+
+  @override
+  String get watchListAddTo => 'Ku dar liis';
+
+  @override
+  String get watchListEmpty =>
+      'Liiskan weli saami kuma jiro. Taabo badhanka liiska ee ku xiga saamiga si aad ugu darto.';
 }

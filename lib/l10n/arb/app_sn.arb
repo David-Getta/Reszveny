@@ -584,5 +584,12 @@
   "insiderSell": "Akatengesa",
   "insiderHint": "Kutenga nekutengesa pamusika wakavhurika kwakaitwa nevakuru nemadhairekita mumazuva 90 apfuura (SEC Form 4). Kushandiswa kwema option nemasheya akapihwa hazvina kuverengwa.",
   "insiderNone": "Hapana kutenga kana kutengesa kwevari mukati pamusika wakavhurika mumazuva 90 apfuura.",
-  "analystTrend": "Maonero akashanduka sei mwedzi nemwedzi"
+  "analystTrend": "Maonero akashanduka sei mwedzi nemwedzi",
+  "watchListAll": "Zvese",
+  "watchListNew": "Rondedzero itsva",
+  "watchListName": "Zita rerondedzero",
+  "watchListRename": "Chinja zita rerondedzero",
+  "watchListDelete": "Dzima rondedzero",
+  "watchListAddTo": "Wedzera kurondedzero",
+  "watchListEmpty": "Hapana masheya murondedzero iyi parizvino. Baya bhatani rerondedzero riri padyo nesheya kuti uriwedzere."
 }

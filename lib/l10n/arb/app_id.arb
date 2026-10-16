@@ -584,5 +584,12 @@
   "insiderSell": "Dijual",
   "insiderHint": "Pembelian dan penjualan di pasar terbuka oleh eksekutif dan direktur dalam 90 hari terakhir (SEC Form 4). Pelaksanaan opsi dan pemberian saham tidak dihitung.",
   "insiderNone": "Tidak ada pembelian atau penjualan orang dalam di pasar terbuka dalam 90 hari terakhir.",
-  "analystTrend": "Perubahan pandangan dari bulan ke bulan"
+  "analystTrend": "Perubahan pandangan dari bulan ke bulan",
+  "watchListAll": "Semua",
+  "watchListNew": "Daftar baru",
+  "watchListName": "Nama daftar",
+  "watchListRename": "Ganti nama daftar",
+  "watchListDelete": "Hapus daftar",
+  "watchListAddTo": "Tambahkan ke daftar",
+  "watchListEmpty": "Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya."
 }

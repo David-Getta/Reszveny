@@ -584,5 +584,12 @@
   "insiderSell": "Myyty",
   "insiderHint": "Johdon ja hallituksen jäsenten ostot ja myynnit avoimilla markkinoilla viimeisten 90 päivän aikana (SEC Form 4). Optioiden käyttöä ja osakepalkkioita ei lasketa.",
   "insiderNone": "Ei sisäpiirin ostoja tai myyntejä avoimilla markkinoilla viimeisten 90 päivän aikana.",
-  "analystTrend": "Miten näkemykset muuttuivat kuukausittain"
+  "analystTrend": "Miten näkemykset muuttuivat kuukausittain",
+  "watchListAll": "Kaikki",
+  "watchListNew": "Uusi lista",
+  "watchListName": "Listan nimi",
+  "watchListRename": "Nimeä lista uudelleen",
+  "watchListDelete": "Poista lista",
+  "watchListAddTo": "Lisää listaan",
+  "watchListEmpty": "Tällä listalla ei ole vielä osakkeita. Lisää osake napauttamalla sen vieressä olevaa listapainiketta."
 }

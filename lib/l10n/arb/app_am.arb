@@ -584,5 +584,12 @@
   "insiderSell": "ሸጠ",
   "insiderHint": "ባለፉት 90 ቀናት በሥራ አስፈጻሚዎችና በዳይሬክተሮች በክፍት ገበያ የተደረጉ ግዢዎችና ሽያጮች (SEC Form 4)። የአማራጭ (option) አፈጻጸሞችና የአክሲዮን ሽልማቶች አይቆጠሩም።",
   "insiderNone": "ባለፉት 90 ቀናት በክፍት ገበያ የውስጥ አዋቂዎች ግዢ ወይም ሽያጭ የለም።",
-  "analystTrend": "አስተያየቶች በየወሩ እንዴት እንደተለወጡ"
+  "analystTrend": "አስተያየቶች በየወሩ እንዴት እንደተለወጡ",
+  "watchListAll": "ሁሉም",
+  "watchListNew": "አዲስ ዝርዝር",
+  "watchListName": "የዝርዝር ስም",
+  "watchListRename": "ዝርዝሩን እንደገና ሰይም",
+  "watchListDelete": "ዝርዝሩን ሰርዝ",
+  "watchListAddTo": "ወደ ዝርዝር አክል",
+  "watchListEmpty": "በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።"
 }

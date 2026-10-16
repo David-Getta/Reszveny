@@ -584,5 +584,12 @@
   "insiderSell": "A feerela",
   "insiderHint": "Ɲɛmɔgɔw ni ɲɛmaaw ka sanni ni feereli sugu la tile 90 laban na (SEC Form 4). Option baarakɛli ni aksiyɔn sɔrɔlenw tɛ jate.",
   "insiderNone": "Ɲɛmɔgɔw ma aksiyɔn san wala ka a feere sugu la tile 90 laban na.",
-  "analystTrend": "Hakilinaw yɛlɛmana cogo min na kalo o kalo"
+  "analystTrend": "Hakilinaw yɛlɛmana cogo min na kalo o kalo",
+  "watchListAll": "A bɛɛ",
+  "watchListNew": "Lisi kura",
+  "watchListName": "Lisi tɔgɔ",
+  "watchListRename": "Lisi tɔgɔ yɛlɛma",
+  "watchListDelete": "Lisi jɔsi",
+  "watchListAddTo": "Fara lisi kan",
+  "watchListEmpty": "Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k'a fara a kan."
 }

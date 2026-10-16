@@ -2190,4 +2190,26 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get analystTrend => 'Pikirler aýba-aý nähili üýtgedi';
+
+  @override
+  String get watchListAll => 'Ählisi';
+
+  @override
+  String get watchListNew => 'Täze sanaw';
+
+  @override
+  String get watchListName => 'Sanawyň ady';
+
+  @override
+  String get watchListRename => 'Sanawyň adyny üýtget';
+
+  @override
+  String get watchListDelete => 'Sanawy poz';
+
+  @override
+  String get watchListAddTo => 'Sanawa goş';
+
+  @override
+  String get watchListEmpty =>
+      'Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň.';
 }

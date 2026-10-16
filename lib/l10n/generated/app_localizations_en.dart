@@ -2189,4 +2189,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get analystTrend => 'How the views changed, month by month';
+
+  @override
+  String get watchListAll => 'All';
+
+  @override
+  String get watchListNew => 'New list';
+
+  @override
+  String get watchListName => 'List name';
+
+  @override
+  String get watchListRename => 'Rename list';
+
+  @override
+  String get watchListDelete => 'Delete list';
+
+  @override
+  String get watchListAddTo => 'Add to a list';
+
+  @override
+  String get watchListEmpty =>
+      'No stocks in this list yet. Tap the list button next to a stock to add it.';
 }

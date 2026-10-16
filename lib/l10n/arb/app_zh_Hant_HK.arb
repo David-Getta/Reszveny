@@ -584,5 +584,12 @@
   "insiderSell": "賣出",
   "insiderHint": "過去 90 日內行政人員及董事在公開市場的買賣（SEC Form 4）。不包括行使期權及股份獎勵。",
   "insiderNone": "過去 90 日內沒有內部人士在公開市場買入或賣出。",
-  "analystTrend": "觀點逐月變化"
+  "analystTrend": "觀點逐月變化",
+  "watchListAll": "全部",
+  "watchListNew": "新增清單",
+  "watchListName": "清單名稱",
+  "watchListRename": "重新命名清單",
+  "watchListDelete": "刪除清單",
+  "watchListAddTo": "加入清單",
+  "watchListEmpty": "此清單暫時未有股票。輕按股票旁的清單按鈕即可加入。"
 }

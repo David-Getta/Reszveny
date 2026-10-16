@@ -2192,4 +2192,26 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get analystTrend => 'Rəylər aydan-aya necə dəyişdi';
+
+  @override
+  String get watchListAll => 'Hamısı';
+
+  @override
+  String get watchListNew => 'Yeni siyahı';
+
+  @override
+  String get watchListName => 'Siyahı adı';
+
+  @override
+  String get watchListRename => 'Siyahının adını dəyiş';
+
+  @override
+  String get watchListDelete => 'Siyahını sil';
+
+  @override
+  String get watchListAddTo => 'Siyahıya əlavə et';
+
+  @override
+  String get watchListEmpty =>
+      'Bu siyahıda hələ səhm yoxdur. Əlavə etmək üçün səhmin yanındakı siyahı düyməsinə toxunun.';
 }

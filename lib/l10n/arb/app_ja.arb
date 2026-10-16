@@ -584,5 +584,12 @@
   "insiderSell": "売却",
   "insiderHint": "過去90日間に役員・取締役が公開市場で行った株式の購入と売却（SEC Form 4）。オプション行使や株式報酬は含みません。",
   "insiderNone": "過去90日間、公開市場でのインサイダーによる購入・売却はありません。",
-  "analystTrend": "評価の月ごとの推移"
+  "analystTrend": "評価の月ごとの推移",
+  "watchListAll": "すべて",
+  "watchListNew": "新しいリスト",
+  "watchListName": "リスト名",
+  "watchListRename": "リスト名を変更",
+  "watchListDelete": "リストを削除",
+  "watchListAddTo": "リストに追加",
+  "watchListEmpty": "このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。"
 }

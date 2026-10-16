@@ -584,5 +584,12 @@
   "insiderSell": "Gurgurame",
   "insiderHint": "Bittaa fi gurgurtaa gabaa banaa irratti hoji-gaggeessitootaa fi daarektarootaan guyyoota 90 darban keessatti raawwataman (SEC Form 4). Fayyadamni filannoo (option) fi badhaasni aksiyoonaa hin lakkaa'aman.",
   "insiderNone": "Guyyoota 90 darban keessatti bittaan ykn gurgurtaan namoota keessaa gabaa banaa irratti hin jiru.",
-  "analystTrend": "Akkaataa yaadni ji'a ji'aan jijjiirame"
+  "analystTrend": "Akkaataa yaadni ji'a ji'aan jijjiirame",
+  "watchListAll": "Hunda",
+  "watchListNew": "Tarree haaraa",
+  "watchListName": "Maqaa tarree",
+  "watchListRename": "Maqaa tarree jijjiiri",
+  "watchListDelete": "Tarree haqi",
+  "watchListAddTo": "Tarreetti dabali",
+  "watchListEmpty": "Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi."
 }

@@ -118,6 +118,7 @@ class SyncService extends ChangeNotifier {
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
+    'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
@@ -172,10 +173,26 @@ class SyncService extends ChangeNotifier {
       'favorites': {
         for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
       }.toList(),
+      'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
       'lots': byId(local['lots'], remote['lots']),
       'alerts': alertsMerged,
       'notes': mergedNotes,
     };
+  }
+
+  /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
+  /// helyiek elöl; azonos listánál a tickerek uniója.
+  static List<Map<String, dynamic>> _mergeLists(Object? local, Object? remote) {
+    final merged = <String, WatchList>{};
+    for (final raw in [...?(local as List?), ...?(remote as List?)]) {
+      final l = WatchList.fromJson(raw);
+      if (l == null) continue;
+      final prev = merged[l.name.toLowerCase()];
+      merged[l.name.toLowerCase()] = prev == null
+          ? l
+          : WatchList(name: prev.name, symbols: {...prev.symbols, ...l.symbols}.toList());
+    }
+    return [for (final l in merged.values) l.toJson()];
   }
 
   Future<void> _apply(Map<String, dynamic> data) async {
@@ -187,6 +204,10 @@ class SyncService extends ChangeNotifier {
           if (e is Map) e.cast<String, dynamic>(),
       ];
       await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
+      // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
+      if (data['watch_lists'] is List) {
+        await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
+      }
       await preferences.setEmailAlerts(data['email_alerts'] != false);
       await preferences.setWeeklyDigest(data['weekly_digest'] == true);
       await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);

@@ -2208,4 +2208,26 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get analystTrend =>
       'No kasano a nagbaliw dagiti panangmatmat iti binulan';
+
+  @override
+  String get watchListAll => 'Amin';
+
+  @override
+  String get watchListNew => 'Baro a listaan';
+
+  @override
+  String get watchListName => 'Nagan ti listaan';
+
+  @override
+  String get watchListRename => 'Sukatan ti nagan ti listaan';
+
+  @override
+  String get watchListDelete => 'Ikkaten ti listaan';
+
+  @override
+  String get watchListAddTo => 'Inayon iti listaan';
+
+  @override
+  String get watchListEmpty =>
+      'Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta.';
 }

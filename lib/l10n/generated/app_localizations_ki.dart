@@ -2191,4 +2191,26 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ũrĩa mawoni maagarũrũkire o mweri';
+
+  @override
+  String get watchListAll => 'Ciothe';
+
+  @override
+  String get watchListNew => 'Orodha njerũ';
+
+  @override
+  String get watchListName => 'Rĩĩtwa rĩa orodha';
+
+  @override
+  String get watchListRename => 'Garũra rĩĩtwa rĩa orodha';
+
+  @override
+  String get watchListDelete => 'Ehereria orodha';
+
+  @override
+  String get watchListAddTo => 'Ongerera orodha-inĩ';
+
+  @override
+  String get watchListEmpty =>
+      'Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere.';
 }

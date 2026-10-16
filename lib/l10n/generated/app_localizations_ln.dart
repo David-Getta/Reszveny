@@ -2201,4 +2201,26 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ndenge makanisi ebongwanaki sanza na sanza';
+
+  @override
+  String get watchListAll => 'Nyonso';
+
+  @override
+  String get watchListNew => 'Liste ya sika';
+
+  @override
+  String get watchListName => 'Nkombo ya liste';
+
+  @override
+  String get watchListRename => 'Bongola nkombo ya liste';
+
+  @override
+  String get watchListDelete => 'Longola liste';
+
+  @override
+  String get watchListAddTo => 'Bakisa na liste';
+
+  @override
+  String get watchListEmpty =>
+      'Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango.';
 }

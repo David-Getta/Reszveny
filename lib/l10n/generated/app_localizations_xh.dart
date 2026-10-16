@@ -2200,4 +2200,26 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get analystTrend => 'Indlela izimvo eziguquke ngayo inyanga nenyanga';
+
+  @override
+  String get watchListAll => 'Zonke';
+
+  @override
+  String get watchListNew => 'Uluhlu olutsha';
+
+  @override
+  String get watchListName => 'Igama loluhlu';
+
+  @override
+  String get watchListRename => 'Thiya kwakhona uluhlu';
+
+  @override
+  String get watchListDelete => 'Cima uluhlu';
+
+  @override
+  String get watchListAddTo => 'Yongeza kuluhlu';
+
+  @override
+  String get watchListEmpty =>
+      'Akukho zabelo kolu luhlu okwangoku. Cofa iqhosha loluhlu ecaleni kwesabelo ukuze usongeze.';
 }

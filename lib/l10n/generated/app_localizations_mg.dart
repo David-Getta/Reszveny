@@ -2206,4 +2206,26 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get analystTrend => 'Ny fiovan\'ny hevitra isam-bolana';
+
+  @override
+  String get watchListAll => 'Rehetra';
+
+  @override
+  String get watchListNew => 'Lisitra vaovao';
+
+  @override
+  String get watchListName => 'Anaran\'ny lisitra';
+
+  @override
+  String get watchListRename => 'Ovay ny anaran\'ny lisitra';
+
+  @override
+  String get watchListDelete => 'Fafao ny lisitra';
+
+  @override
+  String get watchListAddTo => 'Ampio amin\'ny lisitra';
+
+  @override
+  String get watchListEmpty =>
+      'Mbola tsy misy anjara ato amin\'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin\'ny anjara iray mba hanampiana azy.';
 }
